@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_f5908f5d-a577-4215-84d3-a2007c6fde43",
+    "originalId": "f5908f5d-a577-4215-84d3-a2007c6fde43",
+    "statement": "Paciente, sexo masculino, 32 anos, comparece à Unidade de Saúde da Família (USF) referindo um ferimento em região anterior de perna esquerda que surgiu dias após ajudar um amigo a cuidar de um jardim abandonado com vários tijolos, pela manhã. Refere que à noite do mesmo dia, sentiu apenas uma queimação e prurido na perna. No dia seguinte, apresentava lesão eritematosa com algumas vesículas, na perna esquerda. Após 3 dias, chega à USF com a seguinte lesão (Figura). Nega qualquer outro sintoma ou morbidade.\n\nQual o animal peçonhento mais provável de ter provocado a lesão descrita?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Escorpião Titius bahiensis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Escorpião Titius serrulatus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aranha Loxosceles spp.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aranha Phoneutria spp.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico e a imagem apresentada são típicos de loxoscelismo cutâneo, o acidente provocado pela aranha-marrom (Loxosceles spp.). \n\nA epidemiologia (trabalho com entulhos e tijolos) e a evolução clínica temporal são patognomônicas: a picada costuma ser imperceptível ou pouco dolorosa no momento, surgindo queimação e prurido horas depois. Com a evolução (24 a 72 horas), forma-se a clássica placa livedoide, demonstrada na imagem pela lesão com centro necrótico/isquêmico escurecido, entremeado por palidez e circundado por um halo eritemato-violáceo, decorrente da ação da esfingomielinase D presente no veneno, que promove vasculite e trombose tecidual.\n\nAnálise das alternativas:\n\na) Incorreta. Os acidentes por Tityus bahiensis (escorpião-marrom) provocam dor local intensa e imediata com parestesia, não cursando com a evolução insidiosa para placa livedoide e necrose cutânea.\n\nb) Incorreta. O Tityus serrulatus (escorpião-amarelo) também produz dor lancinante e imediata no local da picada, além de potenciais manifestações autonômicas sistêmicas (sudorese, vômitos, alterações hemodinâmicas), mas não causa lesão necrótica tardia.\n\nc) Correta. A Loxosceles spp. explica o início oligossintomático, o intervalo de dias até a procura pelo atendimento e o aspecto visual clássico da lesão necrótica com halo inflamatório violáceo visto na foto.\n\nd) Incorreta. O acidente por Phoneutria spp. (aranha-armadeira) é marcado por dor excruciante e imediata no momento da picada, com alterações locais discretas (como leve edema e eritema), sem necrose cutânea.\n\nPortanto, a alternativa correta é a letra C.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Animais Peçonhentos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/bf11041fdc7245997cf58def2cfab2fac7c50d54548706bbfa23ba032fdd79b5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f5908f5d-a577-4215-84d3-a2007c6fde43_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  },
+  {
+    "id": "AJUDA_f59ae1fd-d91e-4d0e-bb5a-2a48ff48a55e",
+    "originalId": "f59ae1fd-d91e-4d0e-bb5a-2a48ff48a55e",
+    "statement": "Recém-nascido de 11 dias de vida, com sexo fenotípico feminino, é levado à Unidade Básica de Saúde para avaliação de teste do pezinho alterado, com elevação significativa da 17-hidroxiprogesterona (17-OHP). A mãe relata que, desde o 7º dia de vida, a bebê apresenta vômitos em jato, letargia progressiva, diminuição da sucção e perda de peso significativa. Ao exame físico, a criança encontra-se letárgica, com mucosas secas, tempo de enchimento capilar aumentado, pressão arterial de 60x30mmHg e frequência cardíaca de 180bpm. Apresenta genitália ambígua caracterizada por clitoromegalia e fusão parcial dos grandes lábios, sem gônadas palpáveis e sem hepatomegalia. Não há consanguinidade nem história familiar de mortes neonatais ou malformações. Com base nas informações clínicas e laboratoriais, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de insensibilidade parcial aos andrógenos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiperplasia adrenal congênita por deficiência de 11β hidroxilase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hiperplasia adrenal congênita por deficiência de 21-hidroxilase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deficiência de 3β-hidroxiesteroide desidrogenase.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um recém-nascido de 11 dias com um quadro clássico de Hiperplasia Adrenal Congênita (HAC) na forma perdedora de sal. Os pontos fundamentais para o diagnóstico são:\n\n1. Teste do pezinho alterado: A elevação da 17-hidroxiprogesterona (17-OHP) é o marcador clássico da deficiência da enzima 21-hidroxilase.\n2. Crise adrenal (perda de sal): O início dos sintomas por volta do 7º ao 10º dia de vida com vômitos, desidratação grave, letargia e choque circulatório (hipotensão e taquicardia) indica a deficiência de aldosterona e cortisol.\n3. Virilização: A presença de genitália ambígua (clitoromegalia e fusão labial) em um bebê sem gônadas palpáveis (sugerindo sexo genético feminino 46,XX) aponta para o excesso de andrógenos intraútero.\n\nDiferenciação das alternativas:\n\na) Incorreta. A Síndrome de Insensibilidade Parcial aos Andrógenos ocorre em indivíduos com cariótipo 46,XY (geniticamente masculinos) que possuem defeitos nos receptores de testosterona. Não cursa com elevação de 17-OHP nem com crise de perda de sal (vômitos e choque), pois a função adrenal é normal.\n\nb) Incorreta. A deficiência de 11-beta-hidroxilase é a segunda causa mais comum de HAC e também causa virilização. No entanto, ela leva ao acúmulo de 11-desoxicorticosterona, um mineralocorticoide potente que geralmente causa hipertensão arterial e hipocalemia, e não a crise de perda de sal com hipotensão descrita no caso.\n\nc) Correta. A deficiência de 21-hidroxilase é responsável por cerca de 90 a 95% dos casos de HAC. A ausência dessa enzima impede a conversão de 17-OHP em 11-desoxicortisol (via do cortisol) e de progesterona em desoxicorticosterona (via da aldosterona). Ocorre um desvio metabólico para a produção de andrógenos, causando virilização em fetos femininos. A falta de aldosterona justifica a crise perdedora de sal com choque e desidratação na segunda semana de vida.\n\nd) Incorreta. A deficiência de 3-beta-hidroxiesteroide desidrogenase é rara e afeta a produção de todos os esteroides adrenais e gonadais. Em meninas, causa uma virilização leve (pelo acúmulo de DHEA). Embora possa causar perda de sal, o marcador principal no teste do pezinho para triagem populacional é especificamente a 17-OHP para a deficiência de 21-hidroxilase, que é muito mais prevalente e compatível com a gravidade do quadro exposto.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Hiperplasia Adrenal Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  },
+  {
+    "id": "AJUDA_f59eae94-b337-4bee-b818-1653a739b9f2",
+    "originalId": "f59eae94-b337-4bee-b818-1653a739b9f2",
+    "statement": "Paciente de 42 anos, do sexo feminino, procurou atendimento com queixa dor no peito, palpitações, tontura, sensação de fraqueza generalizada e dispneia após atividades físicas mais intensas. Ao exame, apresenta-se com bom estado geral, cooperativa. Ausculta pulmonar sem alterações. Ausculta cardíaca com ritmo regular em dois tempos, percebe-se um clique mesosistólico e um discreto sopro ao final da sístole mais audível no foco mitral. Diante desse quadro, qual a melhor intervenção terapêutica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas seguimento e observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Beta-bloqueador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Digitálicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ansiolítico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO QUADRO CLÍNICO\n\nO quadro clínico descrito — mulher de 42 anos com palpitações, dor torácica atípica, tontura e dispneia, associadas ao achado clássico de clique mesossistólico seguido de sopro telessistólico no foco mitral — é patognomônico do Prolapso da Valva Mitral (PVM). \n\nEmbora o PVM seja frequentemente assintomático e apresente um curso benigno na maioria dos pacientes, uma parcela dos indivíduos desenvolve a chamada \"síndrome do prolapso da valva mitral\", caracterizada por sintomas autonômicos e queixas como as apresentadas pela paciente.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Apenas seguimento e observação: Incorreta. Embora o seguimento clínico e a ecocardiografia periódica sejam indicados para todos os pacientes com PVM, esta paciente está sintomática. A conduta de apenas observar não aborda as queixas de palpitações e dor no peito que motivaram a consulta, sendo necessário intervir para melhora da qualidade de vida.\n\nb) Betabloqueador: Correta. Os betabloqueadores são a terapia de primeira linha para pacientes com prolapso de valva mitral que apresentam sintomas como palpitações, dor torácica atípica ou ansiedade. Eles atuam diminuindo o tônus adrenérgico, reduzindo a frequência cardíaca e controlando arritmias supraventriculares ou ventriculares frequentes, o que resulta no alívio eficaz dos sintomas descritos.\n\nc) Digitálicos: Incorreta. Os digitálicos (como a digoxina) são indicados principalmente para o controle da frequência cardíaca na fibrilação atrial ou no tratamento da insuficiência cardíaca com fração de ejeção reduzida. Não há evidência de insuficiência cardíaca ou arritmias que justifiquem o uso de digitálicos neste caso.\n\nd) Ansiolítico: Incorreta. Embora pacientes com PVM possam apresentar sintomas de ansiedade associados, o tratamento inicial deve focar no controle das manifestações cardiovasculares. Os ansiolíticos podem ser considerados em casos selecionados de forma adjuvante, mas não superam os betabloqueadores como a intervenção terapêutica de escolha para o quadro clínico apresentado.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  },
+  {
+    "id": "AJUDA_f59ef079-4839-46e4-8e72-4680b7eefa8b",
+    "originalId": "f59ef079-4839-46e4-8e72-4680b7eefa8b",
+    "statement": "A violência na adolescência representa um complexo desafio de saúde pública, com múltiplas camadas de determinantes que interagem de forma sinérgica. Considerando este cenário, qual combinação de elementos contextuais e psicossociais, frequentemente abordada no modelo ecológico da violência, é considerada um dos mais potentes preditores de risco para a participação, seja como perpetrador, vítima ou ambos, em comportamentos violentos entre adolescentes, exigindo uma abordagem multifacetada e intersetorial de prevenção e intervenção?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histórico de exposição a modelos parentais de agressão verbal e física na primeira infância, associado à privação socioeconômica persistente e à falta de acesso a serviços de saúde mental adequados, que impactam diretamente o desenvolvimento de habilidades de coping e regulação emocional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Participação em grupos de pares desviantes com normas antissociais, caracterizados pela desvalorização de regras e autoridades, e acesso facilitado a conteúdo online que glorificam a violência, o extremismo e a autoagressão, reforçando comportamentos de risco e dessensibilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Residência em comunidades com elevada desorganização social, como a ausência de instituições de apoio, a baixa coesão social e infraestrutura precária, coexistência de normas sociais que toleram ou até legitimam a agressão como forma de resolução de conflitos, e alta prevalência de acesso a meios letais, como armas de fogo, criando um ambiente propício para a escalada da violência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Déficits significativos em habilidades de resolução de conflitos e regulação emocional, agravados por uma história de transtornos de conduta não tratados negligenciados na infância e adolescência, e a presença de comorbidades psiquiátricas como depressão ou transtorno de estresse pós-traumático (PTSD), que aumentam a impulsividade e a reatividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A compreensão da violência na adolescência exige a análise sob a ótica do Modelo Ecológico, proposto pela Organização Mundial da Saúde (OMS), que examina a interação entre fatores individuais, relacionais, comunitários e sociais. A questão busca identificar qual combinação desses elementos é o preditor de risco mais potente para o envolvimento em comportamentos violentos.\n\nAlternativa A (Correta): Esta alternativa é a mais completa por abranger múltiplos níveis do modelo ecológico. O histórico de exposição a modelos parentais de agressão na primeira infância atua no nível relacional e individual, moldando a arquitetura cerebral e o aprendizado social. Quando associado à privação socioeconômica persistente (nível societal/comunitário) e à carência de suporte em saúde mental, cria-se um cenário de vulnerabilidade extrema. Esses fatores impactam o desenvolvimento do córtex pré-frontal e do sistema límbico, prejudicando as habilidades de coping (enfrentamento) e a regulação emocional, o que é fundamental para prevenir a transição de impulsos agressivos em atos de violência. A literatura médica e epidemiológica aponta as Experiências Adversas na Infância (ACEs) como os preditores mais robustos de comportamentos de risco na vida adulta e na adolescência.\n\nAlternativa B (Incorreta): Embora a influência de pares desviantes e o consumo de conteúdo violento online sejam fatores de risco significativos durante a adolescência, eles são frequentemente considerados fatores proximais ou mediadores. Ou seja, o adolescente que já possui uma vulnerabilidade prévia (como a descrita na alternativa A) tem maior probabilidade de se associar a esses grupos e de ser mais sensível a esses conteúdos. Portanto, não representam a raiz preditora mais potente de forma isolada.\n\nAlternativa C (Incorreta): Esta alternativa foca predominantemente nos níveis comunitário e societal (desorganização social, normas de legitimação da violência e acesso a armas). Embora esses elementos criem um ambiente facilitador para a escalada da violência e aumentem a letalidade dos conflitos, o modelo ecológico prioriza a interação entre o desenvolvimento individual/familiar e o meio. O ambiente comunitário é um catalisador, mas a base do risco muitas vezes é estabelecida precocemente no núcleo familiar e no desenvolvimento emocional.\n\nAlternativa D (Incorreta): Esta alternativa foca quase exclusivamente no nível individual e clínico. Déficits de regulação e transtornos mentais (como conduta, depressão e PTSD) são, em muitos casos, consequências ou manifestações de uma trajetória de vida marcada por traumas e falta de suporte. Embora sejam fatores de risco imediatos e necessitem de tratamento, a questão pede a combinação de elementos contextuais e psicossociais que atuam como preditores no modelo ecológico, e a alternativa A descreve as causas primordiais que levam aos quadros clínicos citados na D.\n\nEm resumo, a alternativa A é a correta, pois integra a dimensão temporal (primeira infância), o impacto no desenvolvimento biopsicossocial (regulação emocional) e os determinantes estruturais (pobreza e falta de acesso à saúde), refletindo com precisão a complexidade do modelo ecológico da violência.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  },
+  {
+    "id": "AJUDA_f5a068d7-dae1-4025-bde5-41c28e18711b",
+    "originalId": "f5a068d7-dae1-4025-bde5-41c28e18711b",
+    "statement": "Homem, 45 anos, procura pronto-socorro com episódio de hematúria macroscópica indolor, de início súbito, sem disúria ou febre. Nega dor lombar. Refere ser ex-tabagista, com carga de 30 maços-ano, e nega outras comorbidades. Ao exame físico, está em bom estado geral, sem dor à palpação abdominal e sem alterações nos genitais externos. Considerando o contexto apresentado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hematúria macroscópica indolor em paciente com histórico de tabagismo constitui sinal de alerta e deve ser investigada com cistoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O exame inicial de escolha deve ser sempre a ultrassonografia de rins e vias urinárias, sem necessidade de avaliação endoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A cistoscopia pode ser dispensada em pacientes mais jovens, devido à baixa probabilidade de neoplasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A causa mais comum de hematúria macroscópica indolor em adultos é glomerulopatia, especialmente na presença de tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O caso é de hematúria de origem glomerular, sendo possível encontrar eritrócitos na forma dismórfica, associados à proteinúria.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente em questão apresenta hematúria macroscópica indolor, de início súbito, em uma faixa etária de alerta (45 anos) e com carga tabágica significativa (30 maços-ano). Este é o cenário clássico que obriga o médico a investigar neoplasia do trato urinário, sendo o carcinoma urotelial (câncer de bexiga) a principal suspeita.\n\nAlternativa A (Correta): Hematúria macroscópica indolor em um paciente tabagista é um dos sinais de alerta mais importantes na urologia. O tabagismo é o principal fator de risco para o câncer de bexiga. De acordo com os protocolos das sociedades de urologia (como a AUA e a EAU), a investigação com cistoscopia é mandatária nesses casos para a visualização direta da mucosa vesical, permitindo o diagnóstico de tumores que podem ser omitidos por exames de imagem.\n\nAlternativa B (Incorreta): A ultrassonografia de rins e vias urinárias é um exame útil para avaliar o parênquima renal e hidronefrose, mas possui baixa sensibilidade para detectar tumores vesicais pequenos ou planos (como o carcinoma in situ). Portanto, ela não substitui a avaliação endoscópica (cistoscopia) na investigação de hematúria macroscópica em pacientes de risco.\n\nAlternativa C (Incorreta): A idade de 45 anos associada a uma carga tabágica elevada coloca o paciente em um grupo de alta probabilidade para neoplasia. As diretrizes recomendam a investigação completa em pacientes acima de 35 a 40 anos com hematúria macroscópica, independentemente de a idade ser considerada jovem em outros contextos.\n\nAlternativa D (Incorreta): A causa mais comum de hematúria macroscópica indolor em adultos com perfil de risco (idade e tabagismo) são as neoplasias urológicas. As glomerulopatias costumam se manifestar mais frequentemente com hematúria microscópica, proteinúria, edema ou hipertensão, e não estão diretamente ligadas ao tabagismo como fator causal primário.\n\nAlternativa E (Incorreta): O dismorfismo eritrocitário e a proteinúria são achados característicos de hematúria de origem glomerular (nefrológica). O quadro clínico de hematúria macroscópica súbita em um ex-fumante sugere fortemente uma origem urológica (extraglomerular), onde os eritrócitos são isomórficos (mantêm sua forma normal) e não costuma haver proteinúria isolada.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  },
+  {
+    "id": "AJUDA_f5a3801a-14a7-491d-aa25-3ede11036461",
+    "originalId": "f5a3801a-14a7-491d-aa25-3ede11036461",
+    "statement": "Menino, 8 anos de idade, aguardava atendimento na sala de espera de UPA, por apresentar febre e dor de garganta há 2 dias, quando escorregou da cadeira, com movimentos tônico-clônicos, perda de consciência e desvio do olhar para a direita. Foi levado rapidamente para a sala de emergência, foi medicado com diazepínico por via nasal, recebeu oxigênio por cateter nasal, e, após punção de acesso venoso e 5 minutos de crise, foi medicado IV. Permaneceu sonolento, respondendo ao seu nome e movimentando membros espontaneamente. Ao exame, foi diagnosticado amigdalite purulenta e recebeu penicilina cristalina IV. A mãe refere que apresentou crises convulsivas aos 2, 4 e aos 7 anos de idade, em quadros febris, fez avaliação neurológica, e recebeu alta sem medicação.\n\nA medicação administrada intranasal, o diagnóstico e a conduta indicada, são respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "midazolam; crise epilética; alta com prescrição de ácido valproico até avaliação neurológica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "lorazepam; crise epilética; pedido de transferência para leito hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "lorazepam; crise epilética; avaliação laboratorial com dosagem de glicemia, sódio, potássio, cálcio e magnésio e análise do líquido cefalorraquidiano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diazepam; convulsão febril; observação até recuperação de atividade habitual e aplicação de penicilina benzatina IM, antes da alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "midazolam; convulsão febril; encaminhamento para consulta com neurologista via UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o manejo agudo de crises convulsivas em pediatria, a diferenciação diagnóstica entre convulsão febril e epilepsia e a conduta terapêutica a longo prazo.\n\nAnálise das alternativas:\n\na) CORRETA: O midazolam é o benzodiazepínico de escolha para administração por vias não invasivas (intranasal ou bucal) devido à sua rápida absorção pela mucosa. O diagnóstico é de crise epiléptica (e não convulsão febril benigna), pois o paciente tem 8 anos, idade que ultrapassa o limite clássico da convulsão febril (6 meses a 5-6 anos). Além disso, a crise apresentou um componente focal (desvio do olhar para a direita), o que a classificaria como complexa. O histórico de múltiplas crises fora da idade comum sugere uma síndrome epiléptica (como a Epilepsia Genética com Crises Febris Plus – GEFS+), justificando o início de medicação anticonvulsivante (ácido valproico) e seguimento especializado.\n\nb) INCORRETA: O lorazepam é um excelente anticonvulsivante, mas sua via preferencial é a endovenosa. Embora existam estudos, ele não é a droga padrão para uso intranasal em protocolos de emergência pediátrica. Além disso, a conduta de apenas pedir transferência é incompleta diante da necessidade de manejo medicamentoso ambulatorial.\n\nc) INCORRETA: O lorazepam não é a droga de escolha para a via nasal. Quanto à conduta, a coleta de líquido cefalorraquidiano (LCR) e exames laboratoriais extensos seriam indicados se houvesse suspeita de meningite ou distúrbios metabólicos agudos. No caso, o paciente tem um foco infeccioso claro (amigdalite) e um histórico pregresso de crises, o que torna a punção lombar desnecessária no momento, dado que o nível de consciência está retornando ao normal (período pós-ictal).\n\nd) INCORRETA: O diazepam é classicamente utilizado pelas vias endovenosa ou retal; a via nasal não é a apresentação padrão para essa droga no cenário de emergência. O diagnóstico de \"convulsão febril\" está tecnicamente incorreto para uma criança de 8 anos, pois a definição da Sociedade Brasileira de Pediatria e da ILAE limita essa entidade até os 5 ou 6 anos de idade.\n\ne) INCORRETA: Embora o midazolam esteja correto para a via nasal, o diagnóstico de \"convulsão febril\" é inadequado para a idade de 8 anos. Além disso, em um paciente com crises recorrentes e início de tratamento medicamentoso, o encaminhamento apenas via Unidade Básica de Saúde (UBS), sem a orientação terapêutica imediata iniciada na alternativa \"a\", retardaria o controle do quadro.\n\nResumo dos pontos principais:\n1. Droga na emergência (sem acesso venoso): Midazolam intranasal ou bucal.\n2. Limite de idade para convulsão febril: Geralmente até os 5 anos (60 meses). Acima disso, crises desencadeadas por febre devem ser investigadas como epilepsia.\n3. Sinais de alerta: Crises focais (desvio de olhar) e ocorrência em crianças mais velhas aumentam a chance de epilepsia subjacente.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  },
+  {
+    "id": "AJUDA_f5ad0c7b-4aaf-49a0-a62f-736eadad73d9",
+    "originalId": "f5ad0c7b-4aaf-49a0-a62f-736eadad73d9",
+    "statement": "Adolescente de 12 anos é acompanhada no ambulatório de medicina de adolescentes por queixas alérgicas. Ela faz tratamento para rinite e asma, porém tem dificuldade de manter as medicações de uso crônico. Além disso, aos 5 anos, apresentou urticária ao ingerir amendoim e, desde então, mantém dieta isenta desse alimento por recomendação médica. Há dois dias, esteve em um jantar e, cerca de dez minutos após terminar de comer, iniciou rouquidão, dispneia, tosse e prurido associado a surgimento de urticas difusamente. Descobriu que o molho da carne que ingeriu continha amendoim e seus pais a levaram imediatamente ao serviço de emergência. Com as informações desse caso, conclui-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o fato de a paciente ter asma e rinite alérgicas não confere risco para ocorrência de anafilaxia por alimento, pois são entidades clínicas diferentes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o tempo de 10 minutos para o início dos sintomas descarta a reação anafilática, que usualmente leva mais tempo para se estabelecer",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pode ser necessário manter a paciente em observação prolongada, devido ao risco de reação bifásica em casos de anafilaxia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "manter a paciente sentada com os membros inferiores para baixo pode ajudar em casos graves devido ao risco de hipotensão",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma paciente de 12 anos com diagnóstico de asma e rinite (ambas mal controladas) que evoluiu com um quadro de anafilaxia após a ingestão acidental de amendoim. A anafilaxia é uma reação de hipersensibilidade sistêmica, grave e de início rápido, envolvendo simultaneamente dois ou mais sistemas (neste caso: respiratório, pele e anexos).\n\nAnálise das alternativas:\n\na) Incorreta. Ter asma, especialmente se não estiver sob controle adequado, é um dos maiores fatores de risco para a ocorrência de episódios graves e fatais de anafilaxia por alimentos. A asma preexistente aumenta a probabilidade de comprometimento respiratório severo durante a reação alérgica.\n\nb) Incorreta. A anafilaxia caracteriza-se justamente pela rapidez de instalação. Em reações alimentares mediadas por IgE, os sintomas costumam surgir de poucos minutos a duas horas após o contato. O início em 10 minutos é um marcador de gravidade e confirma a suspeita diagnóstica, não a descarta.\n\nc) Correta. A reação bifásica é a recorrência dos sinais e sintomas da anafilaxia após a melhora inicial, sem nova exposição ao alérgeno. Ela pode ocorrer em até 20% dos casos, geralmente nas primeiras horas (embora possa ocorrer em até 72 horas). Devido a esse risco, protocolos de emergência recomendam a observação hospitalar por um período que varia de 4 a 12 horas para casos típicos, podendo ser maior em casos graves.\n\nd) Incorreta. A conduta descrita é perigosa. Em pacientes com anafilaxia, deve-se priorizar o decúbito dorsal com elevação dos membros inferiores para favorecer o retorno venoso e manter o débito cardíaco. Manter a paciente sentada ou com as pernas para baixo pode causar uma queda súbita da pré-carga, levando ao que chamamos de síndrome do coração vazio e morte súbita.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  },
+  {
+    "id": "AJUDA_f5adab0f-75d5-4b47-9336-ce8853c60de6",
+    "originalId": "f5adab0f-75d5-4b47-9336-ce8853c60de6",
+    "statement": "Gestante de 30 semanas com sangramento vaginal e dor uterina é diagnosticada com descolamento prematuro de placenta. Qual é o próximo passo no manejo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar o início do trabalho de parto espontâneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administração de corticoides e considerar parto imediato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar antibióticos profiláticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar cesárea de urgência sem considerar idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O descolamento prematuro de placenta (DPP) é uma emergência obstétrica definida como a separação da placenta da parede uterina antes do nascimento do feto, em gestações com 20 ou mais semanas. O quadro clínico clássico, como descrito no enunciado, envolve dor abdominal (hipertonia uterina) e sangramento vaginal escuro.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Aguardar o início do trabalho de parto espontâneo é contraindicado no DPP. Devido ao alto risco de complicações graves, como choque hemorrágico materno, coagulopatia (CIVD) e óbito fetal, a conduta deve ser ativa para a interrupção da gestação assim que o diagnóstico for estabelecido e a paciente estiver estabilizada.\n\nAlternativa b) Correta. Em gestações pré-termo (como o caso de 30 semanas), se as condições maternas e fetais permitirem uma breve estabilização, a administração de corticosteroides (como betametasona ou dexametasona) é indicada para reduzir a morbimortalidade neonatal relacionada à prematuridade, especialmente a síndrome do desconforto respiratório. A indicação de parto imediato é a regra no DPP, sendo a via de parto decidida com base no estado hemodinâmico materno, bem-estar fetal e condições cervicais.\n\nAlternativa c) Incorreta. O uso de antibióticos profiláticos não faz parte do protocolo inicial de manejo do descolamento prematuro de placenta. A antibioticoterapia seria reservada para casos de rotura prematura de membranas associada ou suspeita de corioamnionite, o que não é o foco principal no manejo do DPP.\n\nAlternativa d) Incorreta. Embora o parto imediato seja a conduta correta, afirmar que deve ser realizada uma \"cesárea de urgência sem considerar a idade gestacional\" está incorreto por dois motivos: primeiro, a via de parto não é obrigatoriamente a cesariana; se o feto estiver morto ou se o parto vaginal for iminente e a mãe estiver estável, a via vaginal é preferível. Segundo, a idade gestacional de 30 semanas exige a consideração da maturidade pulmonar fetal, justificando o uso de corticoides se houver tempo hábil para a primeira dose antes da interrupção.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  },
+  {
+    "id": "AJUDA_f5b5d451-3a48-40ff-ac24-e552059fd870",
+    "originalId": "f5b5d451-3a48-40ff-ac24-e552059fd870",
+    "statement": "Menino de 2 anos com crise convulsiva tônico-clônica generalizada. Febre de 38,5 °C há dois dias. Exame físico normal após a crise. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Convulsão afebril primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Meningite bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Epilepsia mioclônica juvenil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Crise febril simples.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Encefalite viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta um menino de 2 anos com um quadro clássico de crise febril. Para chegarmos ao diagnóstico de crise febril simples, observamos os seguintes critérios presentes no enunciado: idade entre 6 meses e 5 anos, presença de febre (38,5 °C), crise do tipo tônico-clônica generalizada e exame físico normal após o evento (ausência de sinais de infecção do sistema nervoso central ou déficits neurológicos).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA: O diagnóstico de convulsão afebril primária é descartado pela presença clara de febre (38,5 °C) relatada há dois dias. Crises afebris ocorrem sem o estímulo da temperatura elevada e exigem investigação para epilepsia ou distúrbios metabólicos, o que não é o caso aqui.\n\nb) INCORRETA: A meningite bacteriana é um diagnóstico diferencial importante, mas improvável neste cenário. Na meningite, o paciente geralmente apresenta sinais de irritação meníngea (como rigidez de nuca), abaulamento de fontanela (em lactentes menores), prostração intensa ou alteração persistente do nível de consciência. O fato de o exame físico estar normal após a crise afasta essa hipótese.\n\nc) INCORRETA: A epilepsia mioclônica juvenil (EMJ) é uma síndrome epiléptica que se manifesta habitualmente na adolescência, entre os 12 e 18 anos. Caracteriza-se por abalos mioclônicos, principalmente ao despertar, e não por crises tônico-clônicas desencadeadas por febre em crianças pequenas.\n\nd) CORRETA: A crise febril simples é a causa mais comum de convulsões na infância. Os critérios incluem: idade entre 6 meses e 5 anos, crise de curta duração (menos de 15 minutos), natureza generalizada (tônico-clônica, como no caso), ocorrência única em 24 horas e ausência de infecção intracraniana. O paciente preenche todos esses requisitos.\n\ne) INCORRETA: A encefalite viral envolve a inflamação do parênquima cerebral. O quadro clínico costuma ser grave, com alterações persistentes do estado mental, confusão, irritabilidade extrema ou déficits neurológicos focais. O exame físico normal após o período pós-ictal imediato torna esse diagnóstico muito improvável.\n\nGABARITO: Letra (d).",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  },
+  {
+    "id": "AJUDA_f5b5f898-6b98-4f39-9004-6287f06b1567",
+    "originalId": "f5b5f898-6b98-4f39-9004-6287f06b1567",
+    "statement": "Homem de 52 anos, etilista crônico, cirrótico por hepatite C, é admitido no pronto-socorro com hematêmese volumosa e instabilidade hemodinâmica. A endoscopia digestiva alta mostra sangramento ativo de varizes esofágicas de grosso calibre.\nDiante desse caso, a conduta inicial mais apropriada será",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar propranolol oral imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "apenas iniciar reposição volêmica sem intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "indicar esplenectomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar cirurgia de derivação portossistêmica imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar ligadura elástica endoscópica das varizes.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descreve uma emergência médica: hemorragia digestiva alta varicosa em um paciente cirrótico com instabilidade hemodinâmica. O manejo desses casos deve focar na estabilização hemodinâmica, prevenção de complicações e controle do sangramento.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O propranolol é um betabloqueador não seletivo indicado para a profilaxia primária ou secundária de sangramentos por varizes. No momento de um sangramento agudo com instabilidade hemodinâmica, ele é absolutamente contraindicado, pois impede a taquicardia compensatória necessária para manter o débito cardíaco durante o choque hipovolêmico.\n\nAlternativa b: Incorreta. A reposição volêmica é um passo fundamental na ressuscitação do paciente, mas o uso da palavra \"apenas\" invalida a questão. A reposição isolada não interrompe o sangramento ativo; é necessário associar medidas de hemostasia para evitar o óbito por choque hemorrágico.\n\nAlternativa c: Incorreta. A esplenectomia não tem papel no tratamento agudo da hemorragia por varizes esofágicas. É um procedimento invasivo, com alta morbimortalidade em pacientes cirróticos e que não resolve o problema mecânico do sangramento nas varizes de grosso calibre no esôfago.\n\nAlternativa d: Incorreta. Shunts portossistêmicos cirúrgicos (derivações) são procedimentos de exceção e apresentam mortalidade elevadíssima quando realizados em caráter de urgência em pacientes com cirrose descompensada. Atualmente, se o tratamento endoscópico falhar, a preferência é pelo TIPS (shunt portossistêmico intra-hepático transjugular), uma técnica da radiologia intervencionista.\n\nAlternativa e: Correta. A ligadura elástica endoscópica é considerada o padrão-ouro para o tratamento hemostático das varizes esofágicas. Comparada à escleroterapia, a ligadura possui maior taxa de sucesso no controle do sangramento, menor índice de ressangramento e menos complicações. Deve ser realizada preferencialmente de forma precoce (nas primeiras 12 horas), associada ao uso de drogas vasoativas (como terlipressina) e antibioticoterapia profilática.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:16.510Z"
+  }
+]

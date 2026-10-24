@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_92dd6137-9e3b-44fb-bf61-b0d562388f74",
+    "originalId": "92dd6137-9e3b-44fb-bf61-b0d562388f74",
+    "statement": "Homem de 38 anos é admitido no pronto-socorro após convulsão tônico-clônica generalizada que durou cerca de 15 minutos, evoluindo com confusão mental e dor muscular intensa. Nas horas seguintes, passa a apresentar urina escura e redução importante do volume urinário. Os exames revelam creatinina de 2,3 mg/dL, potássio 6,0 mEq/L, cálcio 7,5 mg/dL e CPK de 15.000 U/L. O débito urinário nas últimas seis horas é de 0,2 mL/kg/h.\nQual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar furosemida em bolus para aumentar a diurese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar hidratação vigorosa com solução salina isotônica para manter diurese acima de 200 mL/h.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Restringir líquidos para evitar sobrecarga volêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever manitol para prevenção de necrose tubular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar bicarbonato de sódio oral para alcalinizar a urina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um paciente com rabdomiólise grave decorrente de uma convulsão prolongada. A destruição maciça de fibras musculares libera grandes quantidades de mioglobina, potássio, fosfato e creatinofosfoquinase (CPK) na circulação. A mioglobina é altamente nefrotóxica, causando lesão tubular direta e obstrução intratubular por cilindros pigmentares, o que justifica a lesão renal aguda (LRA) apresentada (elevação de creatinina, oligúria e urina escura).\n\nExplicação das alternativas:\n\na) Incorreta. O uso de diuréticos de alça, como a furosemida, não é a conduta inicial e não previne a lesão renal aguda na rabdomiólise. Eles podem ser utilizados posteriormente caso o paciente desenvolva sobrecarga de volume (edema agudo de pulmão) após a hidratação, mas o uso precoce sem reposição volêmica adequada pode piorar a função renal.\n\nb) Correta. A hidratação vigorosa com solução salina isotônica é a medida mais importante e deve ser iniciada o mais rápido possível. O objetivo é expandir o volume intravascular, aumentar o fluxo renal e diluir a mioglobina nos túbulos renais, facilitando sua excreção e evitando a formação de cilindros obstrutivos. O alvo terapêutico é manter um débito urinário elevado (geralmente entre 200 e 300 mL/h) até que os níveis de CPK caiam e a mioglobinúria desapareça.\n\nc) Incorreta. A restrição de líquidos é contraindicada neste momento. A baixa perfusão renal e a urina concentrada agravam a toxicidade da mioglobina e aceleram a falência renal.\n\nd) Incorreta. O uso de manitol é controverso na literatura e nunca deve ser a conduta inicial isolada. Ele só poderia ser considerado após a expansão volêmica estar completa, caso o débito urinário alvo não fosse atingido, mas as evidências de benefício real são limitadas.\n\ne) Incorreta. Embora a alcalinização urinária possa ser discutida para evitar a precipitação da mioglobina (que ocorre em meio ácido), ela deve ser feita com bicarbonato de sódio por via intravenosa, e não oral. Além disso, a alcalinização só é recomendada após a correção da volemia e se não houver hipocalcemia grave, uma vez que o bicarbonato pode reduzir ainda mais o cálcio iônico circulante (o paciente já apresenta cálcio baixo, de 7,5 mg/dL). A prioridade absoluta é a hidratação.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Epilepsias",
+      "Distúrbios do Potássio",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  },
+  {
+    "id": "AJUDA_92de3fb8-4735-45d6-8475-37086f4d0866",
+    "originalId": "92de3fb8-4735-45d6-8475-37086f4d0866",
+    "statement": "Paciente do sexo feminino, 42 anos, refere início de polaciúria e urgência miccional há 6 meses. Refere dor leve em hipogastro e perdas urinárias eventuais. Nega antecedentes pessoais, exceto 2 partos normais. Nega cirurgias prévias. A classe de medicamentos de primeira linha para o tratamento do caso em questão é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antimuscarínicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Quinolonas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Inibidores da recaptação da serotonina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alfabloqueadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Inibidores da 5 alfarredutase.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente em questão apresenta um quadro clínico clássico de síndrome da bexiga hiperativa, caracterizado por urgência miccional (desejo súbito e imperioso de urinar), polaciúria (aumento da frequência urinária) e urge-incontinência (perdas urinárias associadas à urgência). O tempo de evolução (6 meses) e a ausência de sinais de infecção aguda direcionam o diagnóstico para essa disfunção neuromuscular da bexiga.\n\nAbaixo, a análise detalhada das alternativas:\n\na) Correta. Os antimuscarínicos (como oxibutinina, tolterodina, solifenacina e darifenacina) agem bloqueando os receptores muscarínicos (principalmente o subtipo M3) no músculo detrusor da bexiga. Isso reduz as contrações involuntárias do detrusor, aumentando a capacidade vesical e diminuindo os sintomas de urgência e frequência. São considerados, junto aos agonistas beta-3-adrenérgicos (mirabegrona), a primeira linha de tratamento farmacológico para a bexiga hiperativa, após a falha de medidas comportamentais.\n\nb) Incorreta. As quinolonas são antibióticos. Embora uma infecção do trato urinário (ITU) possa causar sintomas de urgência e polaciúria, o quadro da paciente é crônico (6 meses) e não há descrição de disúria ou febre. O uso de antibióticos não é o tratamento para bexiga hiperativa.\n\nc) Incorreta. Os inibidores da recaptação da serotonina são utilizados principalmente no tratamento de transtornos depressivos e de ansiedade. No campo da uroginecologia, a duloxetina (um inibidor dual de serotonina e noradrenalina) é, por vezes, utilizada para o tratamento da incontinência urinária de esforço em alguns protocolos, mas não é a primeira linha para bexiga hiperativa/urgência.\n\nd) Incorreta. Os alfabloqueadores agem relaxando a musculatura lisa do colo vesical e da próstata. São utilizados primordialmente em pacientes do sexo masculino com sintomas obstrutivos decorrentes da hiperplasia prostática benigna (HPB). Não são o tratamento de escolha para urgência miccional em mulheres sem evidência de obstrução infravesical.\n\ne) Incorreta. Os inibidores da 5-alfarredutase (como a finasterida) atuam reduzindo o volume da glândula prostática por meio do bloqueio da conversão da testosterona em di-hidrotestosterona. Trata-se de uma medicação de uso exclusivo para homens com HPB, não possuindo indicação para o caso clínico de uma paciente do sexo feminino.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  },
+  {
+    "id": "AJUDA_92deba89-7d13-45b2-91db-f8227901fd35",
+    "originalId": "92deba89-7d13-45b2-91db-f8227901fd35",
+    "statement": "Considere a gasometria arterial em ar ambiente com os seguintes parâmetros: pH: 7,52; pO2: 94 mmHg; pCO2: 22 mmHg e bicarbonato: 20 mEq/L. Tal exame será encontrado com maior probabilidade em",
+    "options": [
+      {
+        "id": "A",
+        "text": "mulher com myasthenia gravis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "mulher com vômitos incoercíveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "jovem em tratamento de transtorno de ansiedade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "idoso usando altas doses de furosemida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "jovem com broncoespasmo grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DOS PARÂMETROS GASOMÉTRICOS:\n\n- pH: 7,52 (Valor de referência: 7,35 a 7,45). O pH está elevado, indicando ALCALEMIA.\n- pCO2: 22 mmHg (Valor de referência: 35 a 45 mmHg). A pCO2 está baixa, indicando ALCALOSE RESPIRATÓRIA.\n- HCO3 (bicarbonato): 20 mEq/L (Valor de referência: 22 a 26 mEq/L). O bicarbonato está discretamente baixo, o que representa uma tentativa inicial de compensação metabólica ou apenas uma redução aguda esperada.\n- pO2: 94 mmHg (Valor de referência: 80 a 100 mmHg). A oxigenação está normal.\n\nConclusão diagnóstica: Alcalose respiratória aguda. Esse distúrbio ocorre devido à hiperventilação alveolar (o paciente respira mais do que o necessário, \"lavando\" o gás carbônico).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A Myasthenia Gravis é uma doença da junção neuromuscular que causa fraqueza muscular. Quando acomete a musculatura respiratória, gera hipoventilação. O resultado gasométrico seria uma acidose respiratória (pCO2 elevada e pH baixo) por retenção de CO2, exatamente o oposto do quadro apresentado.\n\nb) Incorreta. Vômitos incoercíveis causam perda de suco gástrico, rico em ácido clorídrico (H+ e Cl-). Isso leva a uma alcalose metabólica, na qual encontraríamos pH elevado e bicarbonato (HCO3) elevado, e não pCO2 baixa como principal alteração.\n\nc) Correta. Pacientes com transtorno de ansiedade ou em crises de pânico frequentemente apresentam episódios de hiperventilação psicogênica. Ao aumentar a frequência respiratória sem necessidade metabólica, o paciente elimina CO2 em excesso, reduzindo a pCO2 e elevando o pH (alcalose respiratória). Como o parênquima pulmonar está íntegro, a pO2 permanece normal, exatamente como descrito no enunciado.\n\nd) Incorreta. O uso de diuréticos de alça (furosemida) em doses elevadas causa perda urinária de H+, potássio e cloro, além de contração de volume. Isso gera uma alcalose metabólica (pH alto e HCO3 alto), e não um distúrbio respiratório primário.\n\ne) Incorreta. No broncoespasmo grave (como na crise de asma grave), o paciente apresenta dificuldade extrema em movimentar o ar. O esperado seria encontrar hipoxemia (pO2 baixa) devido à alteração na relação ventilação-perfusão. Se o quadro evoluir para exaustão, haverá retenção de CO2 (acidose respiratória). Embora no início de uma crise leve possa haver uma fase de alcalose, o termo \"grave\" e a pO2 normal de 94 mmHg tornam esta opção incorreta frente à alternativa C.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  },
+  {
+    "id": "AJUDA_92e05571-13e6-411d-a3dc-cd61ef6a6995",
+    "originalId": "92e05571-13e6-411d-a3dc-cd61ef6a6995",
+    "statement": "Paciente com trauma colônico único atingido por arma de fogo, foi atendido uma hora após o incidente e hemodinamicamente estável. Cirurgia apresenta lesão de cólon sigmoide extensa (mais de 50% da circunferência colônica). A conduta mais adequada neste caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rafia da lesão com ileostomia de proteção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exteriorização da lesão em forma de colostomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sigmoidectomia com anastomose primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Rafia da lesão com colocação de dreno tubular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Rafia da lesão, colostomia de proteção e fístula mucosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nO caso descreve um trauma colônico penetrante (arma de fogo) em um paciente hemodinamicamente estável, atendido precocemente (apenas uma hora após o incidente). A lesão no cólon sigmoide é considerada complexa ou extensa, pois acomete mais de 50% da circunferência da alça.\n\nHistórica e tradicionalmente, as lesões de cólon eram tratadas com colostomia. Contudo, a evidência cirúrgica moderna e as diretrizes da AAST (American Association for the Surgery of Trauma) demonstram que, em pacientes estáveis e sem contaminação peritoneal maciça, o reparo primário é seguro e preferível.\n\nAnálise das alternativas:\n\na) Incorreta. A rafia (sutura) simples é contraindicada em lesões que envolvem mais de 50% da circunferência do cólon, pois o fechamento primário nesses casos resulta em estenose (estreitamento) importante da luz intestinal. A ileostomia de proteção não é rotina para traumas de cólon sigmoide em pacientes estáveis.\n\nb) Incorreta. A exteriorização da lesão como colostomia (manobra de Bloom) é uma técnica considerada obsoleta para a maioria dos casos de trauma em pacientes estáveis. Ela aumenta o tempo de internação e exige uma segunda cirurgia para reconstrução, sem oferecer benefícios superiores à anastomose primária neste cenário.\n\nc) Correta. Diante de uma lesão extensa (mais de 50% da circunferência), a conduta técnica correta é a ressecção do segmento afetado (sigmoidectomia). Como o paciente está hemodinamicamente estável, sem sinais de choque ou grande contaminação fecal, a reconstrução deve ser feita de forma imediata através da anastomose primária (unir as alças no mesmo tempo cirúrgico).\n\nd) Incorreta. Como mencionado, a rafia é inadequada para lesões extensas pelo risco de estenose. Além disso, o uso de drenos tubulares não previne deiscências de sutura no cólon e não substitui a necessidade de um tratamento definitivo da lesão.\n\ne) Incorreta. Esta alternativa descreve uma variação do procedimento de Hartmann ou de exclusão, que seria reservada para pacientes instáveis, com peritonite fecal grave ou múltiplas comorbidades. Em um paciente estável atendido em uma hora, essa conduta é excessivamente agressiva e desnecessária.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  },
+  {
+    "id": "AJUDA_92e071b7-99df-4fc3-9008-029a203c3d88",
+    "originalId": "92e071b7-99df-4fc3-9008-029a203c3d88",
+    "statement": "Criança, sexo masculino, 1 mês de vida, previamente hígida, é trazida à unidade de emergência após cair do trocador, há cerca de 30 minutos. Segundo a mãe, ela havia tirado a mão dele por alguns segundos para jogar a fralda no lixo e ele teria rolado e caído do trocador. Na admissão, o paciente estava inconsciente, sendo levado à sala de emergência. A seguir, os dados da avaliação sistematizada:\nA: pérvia\nB: murmúrio vesicular e expansibilidade diminuídos, FR de 8 irpm, SpO2 de 89% em ar ambiente;\nC: tempo de enchimento capilar < 1 segundo, pulsos presentes e simétricos, ausculta com 2BRNF sem sopros, PA de 108×70 mmHg;\nD: escala de coma de Glasgow 7, pupilas isofotorreagentes;\nE: hematoma subgaleal em região temporal direita.\n\nAssinale a alternativa que ilustra, corretamente, o suporte respiratório que deve ser prontamente instituído.",
+    "options": [],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso apresenta um lactente de 1 mês de vida com traumatismo cranioencefálico grave evidenciado por hematoma subgaleal, Escala de Coma de Glasgow 7 (via aérea desprotegida e indicação de intubação orotraqueal) e sinais de falência respiratória (bradipneia grave de 8 irpm, murmúrio vesicular diminuído e saturação de 89%). A pressão arterial elevada associada à bradipneia sugere hipertensão intracraniana. Na abordagem sistematizada inicial do trauma e emergência pediátrica, o manejo da via aérea e da oxigenação é prioritário para evitar hipoxemia e lesão cerebral secundária.\n\nAnálise das alternativas e imagens:\n\nAlternativa A (Incorreta): A imagem mostra um sistema de ventilação não invasiva / cateter nasal de alto fluxo com circuito de umidificação. Dispositivos de suporte ventilatório não invasivo são contraindicados em pacientes com rebaixamento do nível de consciência (Glasgow menor ou igual a 8), perda de reflexos de proteção de via aérea e insuficiência respiratória iminente, pelo alto risco de vômito e broncoaspiração.\n\nAlternativa B (Incorreta): A imagem ilustra uma cânula nasal tipo óculos (baixo fluxo). Este dispositivo fornece frações inspiradas de oxigênio baixas a moderadas e não supre a demanda de um paciente com bradipneia grave e hipoxemia em contexto de trauma neurológico.\n\nAlternativa C (Correta conforme o gabarito oficial): A imagem apresenta o uso de máscara facial com reservatório para oxigenioterapia em alto fluxo. Segundo o gabarito da banca, a administração imediata de oxigênio em alto fluxo a 100% por máscara facial é indicada na estabilização inicial e na pré-oxigenação da criança em sala de emergência.\n\nAlternativa D (Incorreta segundo o gabarito oficial): A imagem ilustra a ventilação com bolsa-válvula-máscara (BVM / Ambu) com técnica de vedação facial em C-E. Na prática clínica e nas diretrizes de suporte avançado (ATLS e PALS), a ventilação assistida com pressão positiva via BVM é a conduta clássica imediata para pacientes bradipneicos e inconscientes antes da intubação traqueal, porém a banca examinadora considerou a alternativa C como o gabarito definitivo.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Emergências Pediátricas",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  },
+  {
+    "id": "AJUDA_92e320cf-ae85-4e61-818e-13ecda3ef98e",
+    "originalId": "92e320cf-ae85-4e61-818e-13ecda3ef98e",
+    "statement": "No mês de maio de 2025, o Conselho Federal de Medicina (CFM) publicou a Resolução 2429/2025 que estabelece novos parâmetros para cirurgia bariátrica e metabólica no Brasil. De acordo com esta resolução, assinale verdadeiro (V) ou falso (F) e escolha a alternativa que representa a sequência CORRETA:\n\n( ) São contraindicações à cirurgia bariátrica e/ou metabólica: obesidade clinicamente controlável, paciente grávida e abuso de drogas ilícitas mal controlado.\n( ) As cirurgias reconhecidas pelo CFM como altamente recomendadas na maioria absoluta das situações clínicas são: o Bypass gástrico em Y de Roux e a gastrectomia vertical (sleeve gástrico)\n( ) O CFM não recomenda e não autoriza, em razão dos resultados insatisfatórios e do percentual proibitivo de complicações graves, a Cirurgia de Scopinaro e a Banda gástrica ajustável.\n( ) O balão intragástrico pode ser recomendado como tratamento endoscópico para obesidade em pacientes com restrição aos procedimentos cirúrgicos ou como preparo pré-operatório para cirurgia bariátrica ou metabólica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "VVFF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "VFVF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "VFFV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "VVVV.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a Resolução CFM 2.429/2025, que atualiza as normas para o tratamento cirúrgico da obesidade e doenças metabólicas no Brasil. Vamos analisar cada item individualmente:\n\nPrimeiro item (Verdadeiro): As contraindicações listadas são fundamentais para a segurança do paciente e o sucesso do tratamento. A obesidade clinicamente controlável significa que o paciente ainda responde bem ao tratamento conservador (dieta, exercícios e medicamentos), não justificando o risco cirúrgico. A gravidez contraindica o procedimento devido aos riscos nutricionais ao feto e às alterações fisiológicas da gestante. Já o abuso de drogas ilícitas mal controlado compromete a adesão ao acompanhamento pós-operatório rigoroso e aumenta o risco de complicações psicossociais e clínicas.\n\nSegundo item (Verdadeiro): O Bypass gástrico em Y de Roux e a gastrectomia vertical (sleeve) permanecem como as técnicas padrão-ouro na cirurgia bariátrica moderna. Ambas possuem amplo respaldo na literatura científica, apresentando perfis de segurança bem estabelecidos, resultados duradouros na perda de peso e alta eficácia na remissão de comorbidades como o diabetes tipo 2 e a hipertensão.\n\nTerceiro item (Verdadeiro): Esta é uma atualização importante da nova resolução. A cirurgia de Scopinaro (derivação biliopancreática clássica) caiu em desuso devido ao elevado risco de desnutrição proteico-calórica e deficiências vitamínicas graves. A banda gástrica ajustável, embora muito utilizada no passado, apresentou um alto índice de complicações tardias (como deslizamento e erosão da banda) e falha na manutenção do peso a longo prazo, levando o CFM a retirar sua recomendação/autorização para novos procedimentos.\n\nQuarto item (Verdadeiro): O balão intragástrico é uma ferramenta endoscópica reconhecida. Ele atua como um tratamento temporário para pacientes que possuem contraindicações temporárias à cirurgia ou, mais comumente, como uma \"ponte\" para a cirurgia em casos de obesidade extrema (superobesos). O objetivo no pré-operatório é reduzir o volume do fígado e o peso total, diminuindo o risco anestésico e as dificuldades técnicas durante o ato cirúrgico definitivo.\n\nDessa forma, todos os itens são verdadeiros, o que torna a sequência correta VVVV, correspondendo à alternativa (d).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Obesidade e Síndrome Metabólica",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  },
+  {
+    "id": "AJUDA_92e862d1-7e7d-4fd9-a084-c71c3c37b990",
+    "originalId": "92e862d1-7e7d-4fd9-a084-c71c3c37b990",
+    "statement": "A Síndrome de Recuperação Nutricional é caracterizada por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipergamaglobulinemia, eosinofilia e hipovolemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipogamaglobulinemia, eosinofilia e hipervolemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hipogamaglobulinemia, eosinofilia e hipovolemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipergamaglobulinemia, eosinofilia e hipervolemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipogamaglobulinemia, neutropenia e hipervolemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Síndrome de Recuperação Nutricional (SRN) representa um conjunto de sinais clínicos e laboratoriais que surgem durante a fase inicial de tratamento da desnutrição proteico-energética grave, geralmente na transição entre a fase de estabilização e a de crescimento rápido.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A síndrome é marcada pela hipogamaglobulinemia, e não pela hipergamaglobulinemia, uma vez que a síntese proteica (incluindo anticorpos) esteve gravemente comprometida. Além disso, ocorre hipervolemia por expansão do volume plasmático, e não hipovolemia.\n\nAlternativa b) Correta. Esta alternativa descreve os achados clássicos da Síndrome de Recuperação Nutricional:\n1. Hipogamaglobulinemia: Reflete a deficiência proteica prévia e a lenta retomada da produção de imunoglobulinas.\n2. Eosinofilia: É um achado hematológico característico e persistente durante o período de recuperação, muitas vezes independentemente da presença de infecções parasitárias.\n3. Hipervolemia: Durante a recuperação, há um aumento do volume intravascular e redistribuição de líquidos, o que pode levar ao aparecimento de edema e exige cautela para não sobrecarregar o sistema cardiovascular.\n\nAlternativa c) Incorreta. Embora a hipogamaglobulinemia e a eosinofilia estejam presentes, o termo hipovolemia está incorreto, pois o paciente apresenta uma tendência à expansão volêmica (hipervolemia).\n\nAlternativa d) Incorreta. O termo hipergamaglobulinemia está incorreto. Pacientes desnutridos graves apresentam baixa reserva proteica, resultando em baixos níveis de gamaglobulinas no início da recuperação.\n\nAlternativa e) Incorreta. Apesar de o paciente desnutrido poder apresentar diversas alterações hematológicas, a eosinofilia é o marcador clássico da Síndrome de Recuperação Nutricional descrito nos principais tratados de pediatria e nutrologia, e não a neutropenia.\n\nDica adicional: Não confunda a Síndrome de Recuperação Nutricional (que inclui achados como hepatomegalia, ascite e eosinofilia) com a Síndrome de Realimentação (Refeeding Syndrome), que é caracterizada por distúrbios hidroeletrolíticos graves, como hipofosfatemia, hipocalemia e hipomagnesemia. A questão foca especificamente nas alterações hematológicas e volêmicas da recuperação.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  },
+  {
+    "id": "AJUDA_92f26316-b384-4e60-8a45-665918d5a39b",
+    "originalId": "92f26316-b384-4e60-8a45-665918d5a39b",
+    "statement": "Um adolescente de 13 anos está em tratamento com metotrexato e corticoides para artrite idiopática juvenil. Durante a consulta, verifica-se que ele nunca recebeu a vacina contra febre amarela. A família está preocupada, pois planeja viajar para uma área rural em breve. Com base nas condições do paciente, a recomendação correta sobre a referida vacina contra febre amarela é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender temporariamente o corticoide e administrar a vacina em seguida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aplicar a vacina prontamente, considerando a iminente exposição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aguardar a suspensão do metotrexato e aplicar a vacina trinta dias após.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar a vacina apenas se houver confirmação de surto de febre amarela na área.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Contraindicar a vacina devido à imunossupressão, propor medidas de prevenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO:\n\nO ponto central desta questão é a segurança da vacinação com vírus vivos atenuados em pacientes imunocomprometidos. O adolescente em questão possui Artrite Idiopática Juvenil e faz uso de duas medicações que causam imunossupressão: o metotrexato e o corticoide. A vacina contra a febre amarela é composta por vírus vivo atenuado, o que exige um sistema imunológico íntegro para controlar a replicação viral e gerar imunidade sem causar doença.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa A: Incorreta. A suspensão isolada e imediata do corticoide não autoriza a vacinação. Para que um paciente que usou corticoide em doses imunossupressoras (geralmente acima de 2 mg/kg/dia ou 20 mg/dia por mais de 14 dias) possa receber vacinas de vírus vivos, é necessário aguardar pelo menos 30 dias após a interrupção. Além disso, a alternativa ignora a presença do metotrexato.\n\nAlternativa B: Incorreta. A aplicação imediata é perigosa. Em pacientes imunossuprimidos, existe o risco de doença viscerotrópica aguda associada à vacina, uma complicação grave e potencialmente fatal, na qual o vírus vacinal se replica de forma descontrolada, simulando a febre amarela selvagem.\n\nAlternativa C: Incorreta. Embora o metotrexato precise ser suspenso para a vacinação com vírus vivos, o prazo de 30 dias pode ser insuficiente dependendo do protocolo adotado (muitas diretrizes recomendam de um a três meses) e a conduta de aguardar apenas o metotrexato falha ao não considerar o tempo de recuperação imunológica após o uso de corticoides e a atividade da doença de base.\n\nAlternativa D: Incorreta. A ocorrência de um surto aumenta o risco epidemiológico da doença, mas não altera a contraindicação biológica. O risco de um evento adverso grave pela vacina em um paciente com este grau de imunossupressão permanece alto, independentemente da situação externa.\n\nAlternativa E: Correta. Esta é a conduta preconizada pelo Programa Nacional de Imunizações (PNI) e pela Sociedade Brasileira de Imunizações (SBIm). Pacientes em uso de drogas imunossupressoras, quimioterápicos (como o metotrexato) e corticoides em doses elevadas possuem contraindicação para a vacina de febre amarela. A orientação médica deve focar na prevenção de picadas (uso de repelentes, roupas compridas e evitar áreas de maior risco) e na emissão de um certificado médico de isenção de vacinação se a viagem for para locais que exijam o comprovante.\n\nRESUMO PARA ESTUDO:\n\nPacientes com doenças reumatológicas em uso de imunossupressores não devem receber vacinas de agentes vivos (Febre Amarela, Tríplice Viral, Varicela, BCG) devido ao risco de replicação viral exacerbada. Se a vacinação for estritamente necessária, ela deve ser planejada com a suspensão prévia das medicações por períodos que variam entre um e três meses, dependendo da droga, sempre sob supervisão do especialista.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Artrite Idopática Juvenil (AIJ)"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  },
+  {
+    "id": "AJUDA_92faa5ec-8c17-4495-9dc3-00004143aa68",
+    "originalId": "92faa5ec-8c17-4495-9dc3-00004143aa68",
+    "statement": "A infecção por Chlamydia trachomatis é uma das Infecções Sexualmente Transmissíveis (ISTs) mais comuns globalmente, especialmente entre jovens e adultos sexualmente ativos. A alternativa que melhor descreve a cervicite por Chlamydia trachomatis é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É caracterizada por secreção purulenta abundante e dor intensa ao exame pélvico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É uma infecção que sempre resulta em trabalho de parto prematuro e endometrite puerperal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Causa frequentemente febre alta e dor abdominal severa, necessitando de hospitalização imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A maioria dos casos é assintomática, mas pode apresentar edema e hiperemia do colo, além de sangramento pós-coito.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A infecção pela Chlamydia trachomatis é a causa bacteriana mais frequente de Infecções Sexualmente Transmissíveis (ISTs) no mundo. Sua principal característica clínica é o comportamento oligossintomático ou assintomático, o que representa um desafio para o diagnóstico e controle da transmissão. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. A secreção purulenta abundante e a dor intensa ao exame pélvico (como a dor à mobilização do colo uterino) são sinais mais sugestivos de infecção por Neisseria gonorrhoeae ou de uma evolução para Doença Inflamatória Pélvica (DIP). Na cervicite por clamídia, o conteúdo vaginal costuma ser menos exuberante, apresentando-se frequentemente como um aspecto mucopurulento discreto.\n\nAlternativa b) Incorreta. Em medicina, termos determinísticos como \"sempre\" geralmente tornam a alternativa errada. Embora a clamídia seja um fator de risco comprovado para desfechos obstétricos e perinatais negativos, como o trabalho de parto prematuro e a endometrite puerperal, essas complicações não ocorrem em todos os casos de infecção.\n\nAlternativa c) Incorreta. Febre alta e dor abdominal severa são sinais de alerta para complicações sistêmicas ou para o acometimento do trato genital superior (útero, tubas uterinas e peritônio), configurando a Doença Inflamatória Pélvica (DIP). A cervicite, por definição, é uma inflamação restrita ao colo do útero e, habitualmente, não causa sintomas sistêmicos graves ou necessidade de internação imediata.\n\nAlternativa d) Correta. Esta alternativa resume perfeitamente o perfil da infecção. Estima-se que cerca de 70% a 80% das mulheres infectadas não apresentem sintomas claros. Quando presentes, os sinais clínicos comuns incluem o edema da mucosa endocervical, a hiperemia (vermelhidão) e a friabilidade do colo do útero. Essa friabilidade torna o tecido sensível ao toque, o que explica o sangramento observado durante a coleta de exames citopatológicos ou após a relação sexual (sangramento pós-coito).",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cervicites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  },
+  {
+    "id": "AJUDA_92fc6e91-5752-42b1-8b4e-31875861cfea",
+    "originalId": "92fc6e91-5752-42b1-8b4e-31875861cfea",
+    "statement": "Primigesta, na 32ª semana de gestação, com diabetes gestacional controlada com dieta e exercício físico, refere perda de líquido amniótico confirmado no Pronto Atendimento. Dinâmica uterina ausente. Boa vitalidade fetal no momento, com peso fetal estimado de 2 kg. A conduta mais adequada, dentre as abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicação imediata de parto cesárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Observação materno-fetal, corticoterapia e antibioticoprofilaxia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Antibioticoprofilaxia seguida de parto cesárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indução de trabalho de parto com misoprostol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Corticoterapia por 48 horas seguida de parto cesárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nEstamos diante de um quadro de Ruptura Prematura de Membranas Ovulares (RPMAM) em uma gestante pré-termo (32 semanas). O diabetes gestacional está controlado apenas com dieta, o que indica baixo risco metabólico adicional no momento. Não há sinais de infecção (corioamnionite), o feto apresenta boa vitalidade e não há trabalho de parto iniciado (dinâmica ausente). \n\nO manejo da RPMAM pré-termo, especificamente entre 24 e 34 semanas de gestação, visa ao prolongamento da gravidez para reduzir as complicações da prematuridade, desde que não haja contraindicações.\n\nExplicação das alternativas:\n\na) Incorreta. Não há indicação de interrupção imediata da gestação. O feto possui 32 semanas e a vitalidade está preservada. A conduta imediata deve ser conservadora para permitir a maturação pulmonar fetal. Além disso, a cesárea não é a via de regra para esses casos, devendo ser reservada para indicações obstétricas habituais.\n\nb) Correta. Esta é a conduta clássica para a RPMAM entre 24 e 33 semanas e 6 dias. A observação visa detectar precocemente sinais de infecção ou sofrimento fetal. A corticoterapia (betametasona ou dexametasona) é fundamental para reduzir o risco de Síndrome do Desconforto Respiratório, hemorragia intraventricular e enterocolite necrotizante. A antibioticoprofilaxia (conhecida como antibioticoterapia de latência) é indicada para aumentar o período de latência (tempo entre a ruptura e o parto) e reduzir riscos infecciosos neonatais.\n\nc) Incorreta. Como mencionado, não há indicação de parto imediato (seja cesárea ou indução) em uma gestação de 32 semanas com feto estável e ausência de infecção. O benefício de ganhar tempo gestacional supera o risco de manter a bolsa rota sob vigilância.\n\nd) Incorreta. A indução do trabalho de parto com misoprostol seria considerada caso houvesse indicação de interrupção (como corioamnionite ou idade gestacional acima de 34-36 semanas, dependendo do protocolo de serviço) e o colo uterino fosse desfavorável. Às 32 semanas, a prioridade é a conduta conservadora.\n\ne) Incorreta. Embora a corticoterapia por 48 horas seja parte do tratamento, o erro da alternativa está em determinar o parto cesárea logo em seguida de forma programada. Na conduta conservadora, após o ciclo de corticoide e início dos antibióticos, a gestação deve ser mantida sob vigilância rigorosa até completar 34 semanas (ou 36 semanas em alguns protocolos), a menos que surjam sinais de infecção ou comprometimento fetal.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:16.892Z"
+  }
+]

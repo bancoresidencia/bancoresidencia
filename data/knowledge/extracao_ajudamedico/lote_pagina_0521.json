@@ -1,0 +1,520 @@
+[
+  {
+    "id": "AJUDA_91420d95-984b-4e95-9dd8-06a33943702f",
+    "originalId": "91420d95-984b-4e95-9dd8-06a33943702f",
+    "statement": "O gráfico abaixo apresenta o perfil farmacocinético de três diferentes tipos de insulina para o tratamento do diabetes.\n\nAs insulinas correspondentes às letras A, B e C, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glargina – NPH – regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lispro – glargina – regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "NPH – degludeca – lispro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lispro – NPH – glargina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questao avalia o conhecimento sobre o perfil farmacocinetico das diferentes formulacoes de insulina a partir da analise grafica de concentracao plasmatica em relacao ao tempo:\n\nCurva A: Apresenta absorcao muito rapida, pico precoce e acentuado, com curta duracao de acao. Trata-se do perfil caracteristico dos analogos de insulina de acao ultrarrapida (como Lispro, Aspart ou Glulisina), indicados para o controle glicemico pos-prandial.\n\nCurva B: Demonstra inicio de acao mais lento que a anterior, com pico intermediario evidente e duracao moderada (em torno de 12 a 18 horas). Esse comportamento e tipico da insulina de acao intermediaria NPH.\n\nCurva C: Apresenta liberacao lenta e continua, com perfil estavel e praticamente sem pico (\"flat\"), durando cerca de 24 horas. Corresponde aos analogos de insulina basal de longa duracao, como a Glargina, Detemir ou Degludeca.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A Glargina e uma insulina basal (representada na curva C) e nao possui o pico rapido da curva A. A insulina regular possui inicio mais lento que a Lispro, mas ainda tem pico evidente, nao correspondendo a curva C.\n\nAlternativa b: Incorreta. Embora a Lispro esteja corretamente associada a curva A, a Glargina nao apresenta o pico intermediario da curva B, e a insulina regular nao tem a duracao longa e estavel da curva C.\n\nAlternativa c: Incorreta. A NPH corresponde a curva B (acao intermediaria) e nao a curva A. A degludeca possui perfil basal (curva C) e a Lispro tem acao ultrarrapida (curva A).\n\nAlternativa d: Correta. Associa com precisao as tres curvas: A corresponde a Lispro (ultrarrapida com pico agudo), B corresponde a NPH (intermediaria com pico moderado) e C corresponde a Glargina (basal de longa duracao sem pico evidente).",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Diabetes Mellitus Tipo 2",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/0e03bd3340083c838f4645c0c8698b4a2e92439a92fed9831b3f4849c7a924ae.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_91420d95-984b-4e95-9dd8-06a33943702f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  },
+  {
+    "id": "AJUDA_9149365a-53e0-40d3-89a0-84d3f632c818",
+    "originalId": "9149365a-53e0-40d3-89a0-84d3f632c818",
+    "statement": "Com a alteração da legislação sobre esterilização voluntária no Brasil (2022) por meio da Lei nº 14.443/2022, chamada de Lei da Laqueadura, houve aumento da procura do procedimento nas unidades de saúde. Por conseguinte, a equipe da Estratégia Saúde da Família precisa conhecer essa nova realidade, a fim de orientar as pacientes. Em relação a essa Lei e suas alterações, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manteve a idade mínima de 25 anos para laqueadura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não há mais a exigência da autorização do cônjuge para a realização do procedimento de laqueadura (e vasectomia).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A laqueadura pode ser realizada durante o parto igual à lei anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se realizar o acompanhamento multiprofissional e o intervalo de 90 dias para manifestar por consentimento livre e esclarecido o desejo de realizar o procedimento de esterilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A laqueadura tubária pode ser realizada apenas se a paciente já possuir pelo menos 2 filhos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as atualizações trazidas pela Lei 14.443/2022, que alterou a Lei do Planejamento Familiar (Lei 9.263/1996) no Brasil. As mudanças visam desburocratizar o acesso aos métodos de esterilização voluntária.\n\nAlternativa A: Incorreta. A nova lei reduziu a idade mínima para a realização da laqueadura e da vasectomia de 25 para 21 anos.\n\nAlternativa B: Correta. Uma das mudanças mais significativas da Lei 14.443/2022 foi a revogação do dispositivo que exigia o consentimento expresso do cônjuge para a realização do procedimento de esterilização voluntária. Atualmente, a decisão cabe exclusivamente ao indivíduo, desde que respeitados os critérios de idade ou número de filhos.\n\nAlternativa C: Incorreta. A legislação anterior proibia a realização da laqueadura durante o período de parto ou abortamento (salvo em casos de risco de vida ou sucessivas cesarianas anteriores). A nova lei agora permite a esterilização durante o parto, desde que a paciente tenha manifestado sua vontade com pelo menos 60 dias de antecedência e que as condições médicas sejam favoráveis.\n\nAlternativa D: Incorreta. Embora o acompanhamento multiprofissional e o aconselhamento para evitar decisões precipitadas continuem sendo necessários, o intervalo mínimo entre a manifestação da vontade e o procedimento cirúrgico é de 60 dias, e não de 90 dias.\n\nAlternativa E: Incorreta. A lei estabelece critérios alternativos e não cumulativos: a esterilização pode ser feita por quem tem capacidade civil plena e idade mínima de 21 anos OU por quem possui, pelo menos, dois filhos vivos (neste último caso, independentemente da idade). Portanto, uma mulher de 22 anos sem filhos pode realizar o procedimento legalmente.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  },
+  {
+    "id": "AJUDA_914a2bc5-bfa1-41af-86d0-e38bf1d26b59",
+    "originalId": "914a2bc5-bfa1-41af-86d0-e38bf1d26b59",
+    "statement": "Considerando a sífilis com diagnóstico durante a gestação, em que situação a gestante é considerada inadequadamente tratada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quando a mesma é tratada 60 dias antes do parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quando ocorre queda de títulos do vdrl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quando o parceiro é tratado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quando o feto está no percentil 30.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quando o tratamento é feito com outra droga que não seja penicilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para que o tratamento da sífilis na gestante seja considerado adequado, visando à prevenção da sífilis congênita, o Ministério da Saúde estabelece critérios rígidos. O não cumprimento de qualquer um desses critérios caracteriza um tratamento inadequado.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O tratamento deve ser finalizado pelo menos 30 dias antes do parto para ser considerado adequado. Como a alternativa cita 60 dias antes, o critério de tempo foi respeitado; logo, o tratamento seria considerado adequado sob esse aspecto.\n\nAlternativa (b) Incorreta. A queda dos títulos nos testes não treponêmicos (como o VDRL) é o comportamento esperado após um tratamento bem-sucedido. É um sinal de resposta terapêutica adequada, e não de falha ou tratamento inadequado.\n\nAlternativa (c) Incorreta. Atualmente, de acordo com as diretrizes mais recentes do Ministério da Saúde (desde 2017), o tratamento do parceiro não é mais um critério para definir se a gestante foi adequadamente tratada para fins de notificação de sífilis congênita. O foco é o tratamento correto da mulher. De qualquer forma, tratar o parceiro é a conduta clínica correta para evitar a reinfecção da gestante.\n\nAlternativa (d) Incorreta. O percentil de crescimento fetal (no caso, percentil 30) é um parâmetro de avaliação do desenvolvimento do feto e não possui relação com os critérios de definição de tratamento adequado para a sífilis.\n\nAlternativa (e) Correta. A penicilina G benzatina é a única droga capaz de atravessar a barreira placentária em concentrações terapêuticas suficientes para tratar o feto. Qualquer outro esquema terapêutico realizado com antibióticos diferentes da penicilina (como ceftriaxona, eritromicina ou azitromicina) é considerado tratamento inadequado para a gestante, independentemente da queda dos títulos de VDRL na mãe, pois não garante o tratamento do feto.\n\nResumo dos critérios de tratamento adequado na gestação:\n1. Administração de penicilina G benzatina.\n2. Dose adequada ao estágio clínico da sífilis.\n3. Tratamento iniciado e finalizado pelo menos 30 dias antes do parto.\n4. Esquema terapêutico documentado no prontuário ou cartão da gestante.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  },
+  {
+    "id": "AJUDA_914f1136-a05d-4aba-a4d4-94556f8323cb",
+    "originalId": "914f1136-a05d-4aba-a4d4-94556f8323cb",
+    "statement": "Durante uma Tireoidectomia devemos ter atenção cuidadosa com um nervo específico. Qual seu nome?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nervo Trigêmeo;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nervo Alveolar Inferior;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nervo Vago;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nervo Laríngeo Recorrente;",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A tireoidectomia exige disseccao anatomica minuciosa da regiao cervical anterior para prevenir lesoes iatrogenicas, sendo a preservacao das paratireoides e das estruturas nervosas laringeas um dos passos mais criticos do procedimento.\n\nAnalise das alternativas:\n\na) Incorreta. O Nervo Trigemeo (V par craniano) e responsavel pela sensibilidade da face e motricidade dos musculos da mastigacao. Sua topografia e estritamente craniofacial, nao tendo relacao anatomica com o campo cirurgico cervical da tireoide.\n\nb) Incorreta. O Nervo Alveolar Inferior e um ramo da divisao mandibular do nervo trigemeo (V3). Ele percorre o canal mandibular para inervar a arcada dentaria inferior e regiao mentoniana, sem conexao com o leito tireoidiano.\n\nc) Incorreta. O Nervo Vago (X par craniano) desce pelo pescoco no interior da bainha carotidea, lateralmente a glandula tireoide, entre a arteria carotida comum e a veia jugular interna. Embora emita os ramos laringeos, o tronco principal do vago fica protegido na bainha vascular e nao representa a estrutura de maior risco direto de manipulacao durante a resseccao glandular.\n\nd) Correta. O Nervo Laringeo Recorrente (ramo do nervo vago) ascende no sulco traqueoesofagico e tem intima relacao com a face posterior dos lobos tireoidianos, com os ramos da arteria tireoidica inferior e com o ligamento de Berry. E responsavel pela inervacao motora de quase todos os musculos intrinsecos da laringe (exceto o cricotireoideo). A lesao unilateral leva a paralisia da prega vocal ipsilateral com rouquidao, enquanto a lesao bilateral pode causar obstrucao grave da via aerea por fechamento glotico, exigindo traqueostomia imediata.\n\nGabarito: Letra d.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  },
+  {
+    "id": "AJUDA_91538711-f244-4e9c-99ec-bcc94218a222",
+    "originalId": "91538711-f244-4e9c-99ec-bcc94218a222",
+    "statement": "Paciente, sexo feminino, 52 anos de idade, chegou ao consultório para consulta de rotina. Nega história familiar para doença arterial coronária. Sobre doenças de base, relata ter dislipidemia, porém não faz uso de medicação. Nega tabagismo e queixas cardiológicas. Ela trouxe um Doppler de carótidas e vertebrais, solicitado pela ginecologista para avaliação de possibilidade de reposição hormonal devido à menopausa (THM).\nCom base na Diretriz Brasileira sobre a Saúde Cardiovascular no Climatério e na Menopausa – 2024, atribua V (verdadeiro) ou F (falso) às afirmativas a seguir.\n\n( ) A SBC, FEBRASGO e a SOBRAC posicionam-se contra a adoção de implantes hormonais manipulados ou outros hormônios bioidênticos manipulados e modulação hormonal.\n( ) Embora a diretriz cite o aumento da espessura médio intinal carotídea como fator adicional de risco, a medida deixou de ser estimulada pela última atualização da Sociedade Brasileira de Cardiologia.\n( ) O risco de câncer de mama associado a THM é elevado, com mais de 1 caso adicional por 1000 mulheres por ano.\n( ) O início da terapia na “janela de oportunidade”, que seria tempo de menopausa menor que 5 anos e/ou menos de 60 anos de idade, é considerado cardioproteror.\n( ) O início da terapia de THM fora da “janela de oportunidade” deve ser evitada pelo aumento expressivo de risco cardiovascular e eventos cardioembólicos.\n\nAssinale a alternativa que contém, de cima para baixo, a sequência correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "V, F, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, F, V, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "F, F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nEsta questão aborda as recomendações mais recentes da Diretriz Brasileira sobre a Saúde Cardiovascular no Climatério e na Menopausa (2024), um tema recorrente e atualizado que exige atenção do candidato aos novos posicionamentos das sociedades brasileiras (SBC, FEBRASGO e SOBRAC).\n\nAnálise detalhada de cada item:\n\n(V) A SBC, FEBRASGO e a SOBRAC posicionam-se contra a adoção de implantes hormonais manipulados...: Verdadeiro. As sociedades médicas brasileiras são enfáticas ao contraindicar o uso de implantes hormonais (os chamados \"chips da beleza\") e fórmulas manipuladas sem registro na ANVISA, devido à falta de evidências de segurança, falta de padronização nas doses e riscos de efeitos colaterais graves.\n\n(V) Embora a diretriz cite o aumento da espessura médio íntimal carotídea... a medida deixou de ser estimulada pela última atualização da SBC: Verdadeiro. Embora o espessamento médio-íntimal (EMI) esteja correlacionado ao risco cardiovascular, a Diretriz Brasileira de Prevenção Cardiovascular da SBC deixou de recomendar sua medida rotineira como reestratificador de risco, pois não altera a conduta clínica na maioria dos casos. A presença de placa carotídea (aterosclerose subclínica) é o que de fato reestratifica a paciente para o alto risco.\n\n(F) O risco de câncer de mama associado à THM é elevado, com mais de 1 caso adicional por 1000 mulheres por ano: Falso. De acordo com os dados das principais diretrizes, o risco absoluto de câncer de mama associado à Terapia de Reposição Hormonal (TRH) é considerado baixo, sendo geralmente inferior a 1 caso adicional por 1000 mulheres por ano de uso. Frequentemente, esse risco é comparável a fatores de estilo de vida, como sedentarismo ou consumo excessivo de álcool.\n\n(F) O início da terapia na “janela de oportunidade”... é considerado cardioprotetor: Falso. Este é um ponto de atenção importante. Embora o conceito de \"janela de oportunidade\" exista (mulheres com menos de 60 anos ou menos de 10 anos de menopausa), a diretriz atual não recomenda a THM com o objetivo primário de cardioproteção. A indicação deve ser clínica (sintomas vasomotores, urogenitais ou prevenção de osteoporose). O início precoce diminui os riscos cardiovasculares em comparação ao início tardio, mas não deve ser prescrito exclusivamente para \"proteger o coração\".\n\n(V) O início da terapia de THM fora da “janela de oportunidade” deve ser evitado pelo aumento expressivo de risco cardiovascular e eventos cardioembólicos: Verdadeiro. Quando a THM é iniciada em mulheres com mais de 60 anos ou após 10-20 anos do início da menopausa, os riscos de eventos tromboembólicos, acidente vascular cerebral (AVC) e infarto agudo do miocárdio superam significativamente os benefícios, devido ao processo de aterosclerose já estabelecido nos vasos.\n\nConclusão:\nA alternativa correta é a letra (b), com a sequência V, V, F, F, V. A questão exige que o aluno saiba diferenciar os riscos e benefícios da janela de oportunidade e as proibições éticas recentes sobre implantes hormonais.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  },
+  {
+    "id": "AJUDA_91600f73-33ad-4e74-bd12-ff12460b331f",
+    "originalId": "91600f73-33ad-4e74-bd12-ff12460b331f",
+    "statement": "Paciente feminina, de 25 anos, veio à UBS para a segunda consulta de pré-natal, com 12 semanas de gestação, conforme a data da última menstruação. O exame obstétrico foi normal. Os exames de acompanhamento indicaram teste treponêmico (TT) positivo e teste não treponêmico (TNT) negativo. Os demais exames apresentaram resultados dentro dos padrões da normalidade. Não havia histórico de sífilis. Estava em um relacionamento fixo quando engravidou, mas rompeu com o parceiro e não tem mantido contato sexual com ele ou com outro parceiro. Com base no quadro, qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratar com benzilpenicilina benzatina 1,2 milhões UI em cada glúteo, intramuscular, semanal, por 3 semanas, e repetir TT e TNT mensalmente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tratar com benzilpenicilina benzatina 1,2 milhões UI em cada glúteo, intramuscular, em dose única, e repetir TT e TNT trimestralmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir TT e TNT mensalmente e tratar com benzilpenicilina benzatina 1,2 milhões UI em cada glúteo, semanal, por 3 semanas se positivar o TNT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir TNT por outra técnica; se positivo, tratar com 1 dose de benzilpenicilina benzatina 1,2 milhões UI, intramuscular, em dose única, em cada glúteo, e repetir TNT trimestralmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Quadro Clínico:\nEstamos diante de uma gestante de 12 semanas que apresenta discordância nos exames de rastreio para sífilis: Teste Treponêmico (TT) positivo e Teste Não Treponêmico (TNT, como o VDRL) negativo. Em pacientes que nunca foram tratados anteriormente, essa situação pode representar duas condições principais: uma sífilis primária muito recente (em que o teste treponêmico positiva primeiro) ou, mais comumente, uma sífilis latente tardia ou de duração ignorada (na qual os títulos do TNT podem cair a níveis indetectáveis com o passar dos anos, mas o teste treponêmico permanece reagente pelo resto da vida).\n\nConduta na Gestação:\nDe acordo com as diretrizes do Ministério da Saúde e protocolos de obstetrícia, em gestantes com teste treponêmico reagente e sem histórico de tratamento prévio documentado, deve-se considerar a paciente como infectada. Como não é possível determinar o tempo de evolução da doença, ela é classificada como sífilis latente de duração ignorada. O objetivo primordial é a prevenção da sífilis congênita.\n\nAlternativa (a) Correta: Esta é a conduta padrão. Para sífilis de duração ignorada ou latente tardia, o esquema terapêutico é de 3 doses de benzilpenicilina benzatina de 2,4 milhões de UI (aplicando-se 1,2 milhão em cada glúteo), com intervalo semanal entre as doses (total de 7,2 milhões de UI). Além disso, o controle de cura (seguimento sorológico com TNT) em gestantes deve ser obrigatoriamente mensal para assegurar a queda dos títulos e monitorar possíveis reinfecções até o momento do parto.\n\nAlternativa (b) Incorreta: O esquema de dose única (2,4 milhões de UI) é reservado para casos de sífilis primária, secundária ou latente recente (com menos de um ano de infecção). Como não há histórico e o TNT é negativo, assume-se a duração ignorada, exigindo 3 doses. Além disso, o acompanhamento trimestral é indicado para adultos fora do período gestacional; em gestantes, o seguimento deve ser mensal.\n\nAlternativa (c) Incorreta: No contexto da gestação, a conduta de \"esperar e observar\" (repetir exames para ver se o TNT positiva) é considerada negligente. O risco de transmissão vertical é alto e as consequências para o feto são graves. Diante de um TT positivo sem tratamento prévio, a gestante deve ser tratada imediatamente.\n\nAlternativa (d) Incorreta: Repetir o TNT por outra técnica não altera a conduta clínica, pois o teste treponêmico positivo já indica exposição ao Treponema pallidum. O tratamento com dose única é insuficiente para casos de duração ignorada e o seguimento trimestral não é o protocolo adequado para o pré-natal.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  },
+  {
+    "id": "AJUDA_916ca6c9-4c35-40bb-944d-eacc04a18f5a",
+    "originalId": "916ca6c9-4c35-40bb-944d-eacc04a18f5a",
+    "statement": "Após o diagnóstico de dissecção aórtica tipo B, um paciente foi internado na UTI para controle rigoroso da hipertensão arterial. Manteve-se com a pressão sistólica abaixo de 120 mmHg através de infusão endovenosa de nitroprussiato de sódio e propanolol. Iniciou quadro de sonolência e náuseas 48 horas após o início da terapia, gerando a suspeita da intoxicação por tiocianato, metabólito do nitroprussiato de sódio. Diante da suspeita de intoxicação por tiocianato, assinale a alternativa que apresenta, corretamente, o antídoto que deve ser administrado nesse momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flumazenil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hidroxicobalamina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Naloxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Riboflavina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tiamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O nitroprussiato de sódio é um potente vasodilatador utilizado em emergências hipertensivas, como na dissecção aórtica. Sua molécula é composta por um centro de ferro rodeado por cinco grupos de cianeto. Durante seu metabolismo, o cianeto é liberado e, no fígado, a enzima rodanase o converte em tiocianato (utilizando o tiossulfato como doador de enxofre). O tiocianato é então excretado pelos rins. A intoxicação pode ocorrer por acúmulo de cianeto (quadro agudo com acidose metabólica) ou por acúmulo de tiocianato (quadro subagudo, geralmente após 48-72 h de infusão ou em pacientes com insuficiência renal, cursando com náuseas, confusão mental e sonolência).\n\nAnálise das alternativas:\n\na) Flumazenil: Incorreta. É um antagonista específico dos receptores benzodiazepínicos. É utilizado para reverter a sedação ou a depressão respiratória causada por intoxicação por drogas como diazepam ou midazolam, não possuindo ação sobre metabólitos do nitroprussiato.\n\nb) Hidroxicobalamina: Correta. A hidroxicobalamina (vitamina B12a) é o antídoto de escolha na suspeita de intoxicação relacionada ao nitroprussiato. Ela age ligando-se ao cianeto para formar cianocobalamina, que é uma substância atóxica e facilmente excretada pela urina. Embora a questão cite o tiocianato, a hidroxicobalamina é a terapia padrão-ouro para o manejo das toxicidades decorrentes da degradação do nitroprussiato de sódio em ambiente de terapia intensiva.\n\nc) Naloxona: Incorreta. É um antagonista de receptores opioides. É indicada para reverter quadros de overdose por opioides (morfina, fentanil, heroína), caracterizados clinicamente por miose puntiforme, depressão respiratória e coma.\n\nd) Riboflavina: Incorreta. A riboflavina é a vitamina B2. Não possui papel no tratamento de intoxicações por cianeto ou tiocianato. Sua deficiência clínica causa lesões em mucosas e dermatite seborreica.\n\ne) Tiamina: Incorreta. A tiamina é a vitamina B1. É fundamental no tratamento da encefalopatia de Wernicke e do beribéri, mas não atua como antídoto para os subprodutos do nitroprussiato de sódio.\n\nGabarito: Letra (b).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Hipertensão Arterial Sistêmica",
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  },
+  {
+    "id": "AJUDA_916d2a32-cf65-4466-8992-e9ea0c821e93",
+    "originalId": "916d2a32-cf65-4466-8992-e9ea0c821e93",
+    "statement": "Homem de 52 anos é atendido na UBS em consulta de rotina e manifesta o desejo de discutir a obesidade. Ele controla o peso desde criança e lembra-se de ter feito sua primeira dieta aos 10 anos. O menor peso na idade adulta foi de 91 kg, e o mais alto de 139 kg. Relata ter ganhado e perdido pelo menos 25 kg em várias ocasiões ao longo da vida. O peso atual é 110 kg. Refere que tem reduzido diligentemente a ingestão calórica e estima consumir cerca de 1.800 kcal por dia; passeia com o cachorro várias vezes por semana. Ele está mantendo seu peso, mas deseja perder mais e mantê-lo a longo prazo. Não há uso de medicamento. Ao exame físico: pressão arterial: 120 x 85 mmHg; altura: 175 cm; peso: 110 kg; a obesidade está distribuída preferencialmente na parte inferior do corpo; não há estigmas de hipercortisolismo. Exames séricos atuais: glicemia de jejum: 90 mg/dL; perfil da tireoide: normal. O gasto energético basal estimado é de 1.940 kcal/dia. Medidas dietéticas e de mudança de hábitos são iniciadas.\nConstitui a próxima intervenção adicional de maior utilidade a ser recomendada para esse paciente atingir seus objetivos de perda de peso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "encaminhamento para cirurgia bariátrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "encaminhamento ao psicólogo para terapia comportamental-dialética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "início de um programa de exercícios de intensidade moderada, com meta de 200 minutos semanais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "prescrição de um inibidor de apetite catecolaminérgico para promover restrição calórica adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "revisão da dieta para garantir que ele esteja consumindo altas quantidades de proteína de alto valor nutricional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente em questão apresenta obesidade grau II (IMC de 35,9 kg/m²) com histórico de efeito sanfona (perda e ganho de peso recorrentes) desde a infância. Ele relata uma ingestão calórica de 1.800 kcal/dia, que é inferior ao seu gasto energético basal estimado (1.940 kcal/dia), mas seu peso está estabilizado (platô). Este é um cenário clássico de adaptação metabólica, onde o corpo reduz o gasto energético em resposta a dietas restritivas crônicas. O desafio principal não é apenas perder peso, mas manter a perda a longo prazo e superar o platô metabólico.\n\nExplicação das alternativas:\n\nAlternativa (a) Incorreta: Embora o paciente tenha um IMC de 35,9 kg/m², o que poderia qualificá-lo para cirurgia bariátrica caso houvesse comorbidades graves (como diabetes tipo 2, apneia do sono ou hipertensão resistente), o exame físico e os exames laboratoriais mostram que ele está metabolicamente estável (glicemia normal, pressão arterial controlada e sem medicamentos). Além disso, a cirurgia é geralmente considerada após a falha documentada do tratamento clínico otimizado, que ainda pode ser intensificado com atividade física estruturada.\n\nAlternativa (b) Incorreta: A terapia comportamental-dialética é uma abordagem específica voltada principalmente para transtornos de personalidade (como o transtorno borderline) ou transtornos alimentares graves, como a compulsão alimentar. Embora o apoio psicológico seja útil na obesidade, não há evidências no enunciado de que o paciente sofra de um transtorno que exija especificamente essa modalidade de terapia como a \"próxima intervenção de maior utilidade\".\n\nAlternativa (c) Correta: O exercício físico desempenha um papel fundamental, não tanto na perda de peso isolada, mas crucialmente na manutenção do peso perdido e na superação do platô metabólico. Para indivíduos que buscam manutenção de peso a longo prazo e melhora da composição corporal, as diretrizes sugerem um volume de atividade física superior ao da população geral (frequentemente entre 200 a 300 minutos por semana). Como o paciente já consome menos calorias do que seu metabolismo basal e o peso está estagnado, aumentar o gasto energético através de um programa estruturado de exercícios é a intervenção mais lógica e eficaz para aumentar o déficit calórico sem precisar reduzir ainda mais a comida, o que poderia piorar a adaptação metabólica.\n\nAlternativa (d) Incorreta: Inibidores de apetite catecolaminérgicos (como a dietilpropiona ou anfepramona) visam reduzir a ingestão calórica. No entanto, o paciente já relata uma ingestão de 1.800 kcal, que é baixa para um homem de 110 kg. O problema atual não parece ser o excesso de fome ou a incapacidade de restringir calorias, mas sim o baixo gasto energético e o platô. O uso de medicação pode ser considerado no futuro, mas o aumento da atividade física é prioridade para a saúde metabólica e manutenção do peso.\n\nAlternativa (e) Incorreta: Embora o ajuste de macronutrientes (como aumentar a proteína) possa ajudar na saciedade e na preservação da massa magra, o enunciado foca na \"próxima intervenção adicional de maior utilidade\" para atingir os objetivos de longo prazo. O aumento do gasto energético via exercício físico tem um impacto muito mais robusto na reversão do platô metabólico e na manutenção do peso em comparação com ajustes finos na proporção de proteínas da dieta, dado que ele já pratica uma restrição calórica diligente.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  },
+  {
+    "id": "AJUDA_9172ffd4-7af0-48aa-883f-2a3be161621d",
+    "originalId": "9172ffd4-7af0-48aa-883f-2a3be161621d",
+    "statement": "Um paciente portador do vírus HIV apresenta febre e hepatoesplenomegalia de origem desconhecida. Como é oriundo de área endêmica para leishmaniose, aventou se a hipótese de reativação da mesma. Nesse caso, é correto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sorologia não é o método mais apropriado para afastar o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Portadores de HIV não tem risco aumentado de reativação de leishmaniose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Métodos sorológicos têm baixa sensibilidade mas são muito específicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A visualização de formas amastigotas nos exames anatomopatológicos são de fácil diferenciação pela coloração hematoxilina eosina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A pancitopenia diferencia de outros diagnósticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A coinfecção entre HIV e leishmaniose visceral (LV) representa um desafio diagnóstico e terapêutico. Em pacientes imunossuprimidos, a lógica diagnóstica muda substancialmente em relação aos pacientes imunocompetentes devido à falha na resposta imune.\n\nAlternativa A (Correta): Em indivíduos vivendo com HIV, a resposta imune humoral, que é a produção de anticorpos, está frequentemente prejudicada. Por esse motivo, os testes sorológicos (como o teste rápido rK39 ou a imunofluorescência indireta) apresentam uma sensibilidade muito menor nessa população. Como o risco de resultados falso-negativos é alto, a sorologia não é um método confiável para excluir (afastar) a suspeita diagnóstica. Nesses casos, a investigação deve prosseguir obrigatoriamente para métodos parasitológicos diretos, como o aspirado de medula óssea.\n\nAlternativa B (Incorreta): O HIV é um dos principais fatores de risco conhecidos para o desenvolvimento de leishmaniose clínica. A queda dos linfócitos T CD4+ compromete a imunidade celular necessária para conter o parasita, aumentando significativamente tanto o risco de novas infecções quanto o de reativação de infecções latentes.\n\nAlternativa C (Incorreta): O problema principal da sorologia no paciente com HIV é a baixa sensibilidade (capacidade de detectar os doentes). Embora a especificidade possa ser mantida, a alternativa não justifica o manejo clínico correto, pois o foco no paciente imunossuprimido com suspeita de leishmaniose é que a sorologia negativa não encerra a investigação.\n\nAlternativa D (Incorreta): A visualização de formas amastigotas em cortes histológicos corados por hematoxilina-eosina (HE) é difícil. As estruturas são muito pequenas e podem ser facilmente confundidas com outros patógenos intracelulares, especialmente o Histoplasma capsulatum, que também é comum em pacientes com HIV. Para uma diferenciação segura, são necessárias colorações específicas, como Giemsa ou Wright, que evidenciam o cinetoplasto da Leishmania.\n\nAlternativa E (Incorreta): A pancitopenia é um achado clássico da leishmaniose visceral, ocorrendo por infiltração da medula óssea e pelo hiperesplenismo. Contudo, ela não é um fator diferenciador, pois diversas outras condições oportunistas no contexto do HIV, como a histoplasmose disseminada, a tuberculose miliar e a micobacteriose disseminada, também podem se apresentar com febre, hepatoesplenomegalia e pancitopenia.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas",
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  },
+  {
+    "id": "AJUDA_91734dfa-ad7a-4bc8-a71e-543d12908dea",
+    "originalId": "91734dfa-ad7a-4bc8-a71e-543d12908dea",
+    "statement": "Homem, 47 anos de idade, possui antecedente de síndrome do túnel de carpo unilateral à direita. Procura o ambulatório por queixa de dispneia aos médios esforços. Relata despertar noturno por desconforto respiratório, que melhora com a ortostase. Consome de forma crônica 8 latas de cerveja por dia. Ao exame físico, apresenta bom estado geral, corado, hidratado. Auscultas cardíaca e pulmonar sem alterações. Abdome normotenso, indolor, presença de refluxo hepatojugular. Edema de membros inferiores bilateral.\n\n• Exames laboratoriais:\nHb: 10,8 g/dL\nLeucócitos: 4.400/mm3\nPlaquetas: 164 mil/mm3\nTGO/AST: 48 U/L\nTGP/ALT: 36 U/L\nAlbumina: 3,6 g/dL\nINR: 1,0\nTTPa R: 0,9\nBilirrubina total: 0,6 mg/dL\nFosfatase alcalina: 187 U/L\nGGT: 318 U/L\nSaturação transferrina: 32%\nFerritina: 997 ng/mL\n\nEcodopplercardiograma com estresse: fração de ejeção ventricular de 43%, volume diastólico de ventrículo esquerdo aumentado, ventrículo direito e átrios de tamanho normal, ausência de espessamento de septo, ausência de hipocinesia segmentar induzida por estresse farmacológico. Com relação ao caso clínico apresentado, assinale a alternativa que indica o diagnóstico pertinente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amiloidose subtipo ATTR.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cardiomiopatia alcóolica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cardiomiopatia cirrótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hemocromatose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um homem de 47 anos com sinais e sintomas clássicos de Insuficiência Cardíaca congestiva (dispneia paroxística noturna, refluxo hepatojugular e edema de membros inferiores). O ecocardiograma demonstra um padrão de miocardiopatia dilatada, caracterizado por aumento do volume diastólico do ventrículo esquerdo e redução da fração de ejeção (43%), sem alterações segmentares isquêmicas.\n\nAlternativa A (Incorreta): A amiloidose cardíaca, especialmente pelo subtipo ATTR, frequentemente se associa à síndrome do túnel do carpo (que costuma ser bilateral). No entanto, o padrão ecocardiográfico típico da amiloidose é o restritivo/infiltrativo, cursando com espessamento miocárdico evidente (aspecto hipertrófico concêntrico) e biatrial aumentado. O ecocardiograma deste paciente descreve expressamente a ausência de espessamento septal e átrios normais, afastando essa hipótese.\n\nAlternativa B (Correta): O paciente apresenta consumo crônico e pesado de álcool (8 latas de cerveja por dia) e elevação acentuada de GGT (318 U/L). A cardiomiopatia alcoólica é uma forma de cardiomiopatia dilatada de origem tóxica, caracterizada pelo remodelamento e dilatação das câmaras cardíacas esquerdas com disfunção sistólica difusa, exatamente o perfil apresentado no ecocardiograma.\n\nAlternativa C (Incorreta): A cardiomiopatia cirrótica ocorre no contexto de cirrose hepática bem estabelecida. O paciente não apresenta estigmas clínicos de hepatopatia crônica, e suas provas de função de síntese hepática estão preservadas (albumina de 3,6 g/dL, INR de 1,0 e bilirrubina normal). Além disso, a cardiomiopatia cirrótica classicamente cursa com função sistólica de repouso normal ou hiperdinâmica, manifestando-se principalmente sob estresse ou como disfunção diastólica.\n\nAlternativa D (Incorreta): A hemocromatose hereditária pode acometer o miocárdio, evoluindo de um padrão restritivo inicial para dilatado. Contudo, a saturação de transferrina encontra-se em 32% (normal), o que afasta sobrecarga de ferro primária. O aumento isolado da ferritina (997 ng/mL) neste contexto é decorrente do próprio etilismo e do estado inflamatório, atuando como reagente de fase aguda.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cardiomiopatias",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:17:11.680Z"
+  }
+]

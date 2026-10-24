@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_72981ca9-ab25-4000-b3a4-b108e2f954eb",
+    "originalId": "72981ca9-ab25-4000-b3a4-b108e2f954eb",
+    "statement": "Adolescente, sexo feminino, 15 anos de idade, após tentativa de suicídio com ingestão de comprimidos de \"uso controlado de sua avó\", apresentou parada cardiorrespiratória na chegada à sala de emergência. Durante a reanimação cardiopulmonar, ocorrendo já há 3 minutos, sem sucesso, o monitor identificou um traçado com uma frequência de cerca de 130 batimentos por minuto, com complexo QRS de duração de 0,12 segundos, com morfologia bizarra e distorcida e ausência de ondas P identificáveis. Sobre a conduta mais adequada, trata-se de um ritmo que pode ser responsivo",
+    "options": [
+      {
+        "id": "A",
+        "text": "ao uso de atropina, que deve ser imediatamente administrada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "à administração imediata de adrenalina antes de qualquer terapia elétrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "à desfibrilação (choque no modo não sincronizado), que deve imediatamente ser realizada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "à cardioversão (choque no modo sincronizado), que deve imediatamente ser realizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma adolescente em parada cardiorrespiratória (PCR) após ingestão medicamentosa. A descrição do monitor (frequência de 130 bpm, QRS largo de 0,12 s, morfologia bizarra e ausência de onda P) define o ritmo de taquicardia ventricular. Como a paciente está em PCR, trata-se de uma taquicardia ventricular sem pulso (TVSP).\n\nAlternativa a: Incorreta. A atropina é indicada para o manejo de bradicardias sintomáticas em pacientes que possuem pulso. Ela foi retirada dos algoritmos de PCR da American Heart Association (AHA) por não demonstrar benefício em casos de assistolia ou atividade elétrica sem pulso, e não tem qualquer indicação em ritmos taquicárdicos.\n\nAlternativa b: Incorreta. No protocolo de Suporte Avançado de Vida Cardiovascular (ACLS), para ritmos chocáveis (TVSP e fibrilação ventricular), a prioridade absoluta é o choque. A adrenalina só deve ser administrada caso o ritmo persista após o segundo choque. Iniciar a droga antes da terapia elétrica em um ritmo chocável reduz as chances de retorno à circulação espontânea.\n\nAlternativa c: Correta. A taquicardia ventricular sem pulso (TVSP) é um ritmo chocável. O tratamento imediato e definitivo para esse ritmo em uma situação de PCR é a desfibrilação, que utiliza o choque em modo não sincronizado. O objetivo é despolarizar o miocárdio de forma global para permitir que o marcapasso fisiológico retome o comando do coração.\n\nAlternativa d: Incorreta. A cardioversão elétrica sincronizada é o tratamento para taquiarritmias em pacientes que possuem pulso, mas apresentam sinais de instabilidade hemodinâmica. Na PCR (paciente sem pulso), o aparelho teria dificuldade em detectar a onda R para sincronizar o disparo, e o atraso na entrega da energia é contraindicado. Por isso, na parada, o choque é sempre não sincronizado (desfibrilação).",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias",
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  },
+  {
+    "id": "AJUDA_729e0081-8f57-4a7d-adcd-06dbc79963f7",
+    "originalId": "729e0081-8f57-4a7d-adcd-06dbc79963f7",
+    "statement": "Durante atendimento a um paciente politraumatizado, foi identificado desconforto respiratório moderado, FR 30, sat O2 93% em ar ambiente. No exame físico, possuía expansão torácica assimétrica e murmúrio vesicular abolido em hemitórax esquerdo. Diante da necessidade de uma drenagem torácica. O melhor local para a inserção do dreno, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "no 2° espaço intercostal na linha hemiclavicular à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "no 5° espaço intercostal na linha hemiclavicular à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "no 5° espaço intercostal na linha axilar média à direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "no 5° espaço intercostal na linha axilar média à esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "no 3° espaço intercostal na linha axilar média à direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve um paciente politraumatizado com insuficiência respiratória (taquipneia e hipóxia) associada a sinais de comprometimento do espaço pleural à esquerda (expansão assimétrica e murmúrio ausente). Estes achados indicam a presença de pneumotórax ou hemotórax traumático. A conduta definitiva e padrão-ouro para o tratamento dessas condições no cenário de trauma é a drenagem torácica fechada (em selo d'água).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): O 2º espaço intercostal na linha hemiclavicular era tradicionalmente recomendado para a descompressão por agulha (toracocentese de alívio) no pneumotórax hipertensivo. No entanto, a questão pede o local para a inserção do dreno de tórax (procedimento definitivo). Além disso, o ATLS 10ª edição recomenda que mesmo a descompressão por agulha seja feita preferencialmente no 4º ou 5º espaço intercostal em adultos, devido à menor espessura da parede torácica nessa região.\n\nAlternativa B (Incorreta): Embora o 5º espaço intercostal seja a altura correta, a linha hemiclavicular é inadequada para drenagem tubular. A inserção nesta linha aumenta drasticamente o risco de lesão da artéria mamária interna, do precórdio (coração) e resulta em um posicionamento estético e funcionalmente ruim para o dreno.\n\nAlternativa C (Incorreta): Esta alternativa apresenta um erro de lateralidade. O exame físico demonstrou murmúrio vesicular abolido no hemitórax esquerdo. Drenar o lado direito seria um erro grave, tratando o lado sadio e ignorando a patologia.\n\nAlternativa D (Correta): O local ideal para a inserção do dreno de tórax é o chamado Triângulo de Segurança. Este espaço é delimitado pela borda anterior do músculo latíssimo do dorso, borda lateral do músculo peitoral maior e uma linha horizontal na altura do mamilo (que corresponde aproximadamente ao 5º espaço intercostal). A inserção entre a linha axilar anterior e média minimiza riscos de lesões em órgãos vitais e grandes vasos, além de garantir uma drenagem eficiente. Como a patologia é à esquerda, este é o local de escolha.\n\nAlternativa E (Incorreta): O 3º espaço intercostal está acima da zona de segurança recomendada, aumentando o risco de atingir estruturas superiores ou músculos peitorais mais densos. Além disso, o erro de lateralidade (lado direito) invalida a opção, já que o problema clínico está localizado à esquerda.\n\nDICA DE PROVA: Para drenagem torácica de luxo no trauma, lembre-se sempre do 5º Espaço Intercostal, entre as linhas axilar anterior e média, no lado acometido. A inserção deve ser feita rente à borda superior da costela inferior para proteger o feixe vasculonervoso intercostal (que corre na borda inferior da costela superior).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  },
+  {
+    "id": "AJUDA_72a4457b-8d4c-4295-8507-c19f3fe36c1f",
+    "originalId": "72a4457b-8d4c-4295-8507-c19f3fe36c1f",
+    "statement": "Mulher, 69 anos, com cirrose por doença hepática esteatótica associada à disfunção metabólica, diabetes e dislipidemia. É levada ao pronto atendimento por quadro súbito de confusão mental e hemiparesia à direita. Nega sangramentos, dor abdominal, náuseas ou vômitos. Faz uso regular de Carvedilol, Metformina e Sinvastatina. Exame físico: desorientada no tempo e no espaço; força muscular grau 4 em membro superior e inferior direitos. Sinais de ascite de moderado volume.\nQual avaliação complementar é a mais indicada para o esclarecimento do quadro neuropsiquiátrico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gasometria arterial e eletrólitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eletroencefalograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dosagem de amônia sérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tomografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto central desta questão é a presença de um déficit neurológico focal súbito (hemiparesia à direita) associado a confusão mental em uma paciente com múltiplos fatores de risco cardiovascular (idade, diabetes e dislipidemia). Embora a paciente seja cirrótica, a encefalopatia hepática classicamente se manifesta com alterações difusas e simétricas (desorientação, sonolência, asteríxis), e não com déficits motores localizados. A combinação de início agudo e déficit focal impõe a investigação imediata de um Acidente Vascular Cerebral (AVC) ou outra lesão estrutural aguda intracraniana.\n\nAnálise das alternativas:\n\na) Incorreta. Gasometria arterial e dosagem de eletrólitos são úteis para identificar distúrbios hidroeletrolíticos e acidobásicos que provocam encefalopatia metabólica difusa. No entanto, essas alterações não explicam a hemiparesia focal observada no exame físico.\n\nb) Incorreta. O eletroencefalograma pode identificar crises epilépticas não convulsivas ou padrões de encefalopatia (como ondas trifásicas), mas não é o exame inicial prioritário diante de um quadro agudo com sinal de localização neurológica, cuja prioridade é descartar lesão encefálica estrutural.\n\nc) Incorreta. A dosagem de amônia sérica não é necessária para o diagnóstico de encefalopatia hepática, que é eminentemente clínico e apresenta baixa correlação com os níveis séricos de amônia. Além disso, a hiperamonemia causa disfunção cerebral difusa, não justificando o déficit motor focal.\n\nd) Correta. A tomografia de crânio sem contraste é o exame inicial de escolha para qualquer paciente com déficit neurológico focal agudo. Ela permite diferenciar rapidamente o AVC isquêmico do hemorrágico e descartar outras lesões estruturais, como o hematoma subdural, complicação comum em cirróticos devido a coagulopatia e risco aumentado de quedas.\n\nGabarito: Alternativa d.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática",
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  },
+  {
+    "id": "AJUDA_72aefdb7-b65d-48a3-8cad-480fe07d80ea",
+    "originalId": "72aefdb7-b65d-48a3-8cad-480fe07d80ea",
+    "statement": "Paciente masculino, de 35 anos, veio à Emergência por apresentar dor intensa no flanco esquerdo e febre há 2 dias. Iniciou com cefalexina há 24 horas. Ao exame físico, apresentava punho-percussão positiva à esquerda. Exame qualitativo de urina demonstrou leucocitúria e bacteriúria. Hemograma indicou leucocitose (com desvio à esquerda); a creatinina estava normal. Tomografia computadorizada de abdômen revelou cálculo de 1,2 cm em ureter médio à esquerda, com dilatação pieloureteral e sinais de edema perirrenal à esquerda. Qual a conduta inicial mais adequada, além da analgesia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desobstrução com cateter duplo J ou nefrostomia percutânea",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Troca imediata do antibiótico e observação clínica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coleta de material para nova urocultura e observação clínica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Litotripsia extracorpórea",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO paciente apresenta um quadro clássico de pielonefrite obstrutiva, uma das principais urgências em urologia. Temos a evidência de uma obstrução ureteral por cálculo de 1,2 cm (com dilatação pieloureteral e edema perirrenal na tomografia) associada a sinais claros de infecção sistêmica (febre, dor intensa e leucocitose com desvio à esquerda). Quando há pus sob pressão em um sistema urinário obstruído, o risco de evolução para sepse e choque séptico é altíssimo.\n\nPor que a alternativa (a) está correta?\n\nA conduta imediata e mandatória diante de uma pielonefrite obstrutiva é a descompressão da via urinária. O antibiótico isolado não consegue penetrar de forma eficaz em um sistema coletor sob alta pressão e sem fluxo. A drenagem deve ser realizada o mais rápido possível por meio da passagem de um cateter ureteral duplo J (via retrógrada) ou por uma nefrostomia percutânea (via anterógrada), dependendo da disponibilidade do serviço e das condições clínicas do paciente. Isso permite a drenagem da urina infectada e a estabilização do quadro para posterior tratamento definitivo do cálculo.\n\nAnálise das alternativas incorretas:\n\nAlternativa (b): A troca do antibiótico é necessária, uma vez que a cefalexina é uma cefalosporina de primeira geração com cobertura limitada para os principais patógenos da pielonefrite, e o paciente não apresentou melhora. No entanto, a observação clínica é contraindicada. Sem a desobstrução, o foco infeccioso permanece fechado, e o paciente corre risco de vida.\n\nAlternativa (c): A coleta de culturas (urocultura e hemoculturas) é parte do protocolo de manejo de infecções graves, mas a observação clínica isolada é insuficiente e perigosa. O diagnóstico de obstrução infectada já foi selado pelos exames de imagem e laboratoriais, exigindo intervenção cirúrgica imediata para drenagem.\n\nAlternativa (d): A Litotripsia Extracorpórea por Ondas de Choque (LECO) é formalmente contraindicada na vigência de infecção urinária ativa ou sepse. Além de não garantir a descompressão imediata (pois os fragmentos poderiam manter a obstrução), o procedimento pode disseminar bactérias na corrente sanguínea devido às ondas de pressão. O cálculo só deve ser tratado após a resolução do quadro infeccioso e estabilização do paciente.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  },
+  {
+    "id": "AJUDA_72b22011-52e8-4e40-bf34-863c792f57b5",
+    "originalId": "72b22011-52e8-4e40-bf34-863c792f57b5",
+    "statement": "O Levantamento Rápido de Índices para Aedes aegypti (LIRAé uma metodologia utilizada para monitorar a infestação predial pelo vetor da Dengue, Zika e Chikungunya. Para um município ser classificado como em situação de \"Risco de Surto\", o Índice de Infestação Predial (IIP) deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 1% e 3,9%, indicando uma situação de alerta, onde há condições favoráveis para o início da transmissão, mas ainda passível de controle focal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Superior a 3,9%, indicando que a cada 100 imóveis pesquisados, 4 ou mais apresentam focos do mosquito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Superior a 10%, pois a transmissão sustentada de arboviroses só ocorre quando a densidade vetorial atinge níveis extremamente elevados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inferior a 1%, indicando que a infestação está controlada e o risco de transmissão viral é desprezível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Levantamento Rápido de Índices para Aedes aegypti (LIRAa) é uma estratégia fundamental de saúde pública para o monitoramento das arboviroses no Brasil. O principal indicador analisado é o Índice de Infestação Predial (IIP), que quantifica a relação percentual entre o número de imóveis positivos para larvas de Aedes aegypti e o total de imóveis pesquisados. O Ministério da Saúde estabelece três níveis de classificação para esse índice:\n\n1. Satisfatório: IIP abaixo de 1%.\n2. Alerta: IIP de 1,0% a 3,9%.\n3. Risco de Surto: IIP superior a 3,9%.\n\nAnálise das alternativas:\n\nAlternativa (a) INCORRETA: O intervalo entre 1% e 3,9% define a situação de Alerta. Nesse cenário, o gestor público deve intensificar as ações de controle, mas o município ainda não atingiu o patamar técnico considerado como risco iminente de surto.\n\nAlternativa (b) CORRETA: Conforme os critérios técnicos do LIRAa, o município entra em situação de Risco de Surto quando o IIP é superior a 3,9%. Matematicamente, se o índice ultrapassa 3,9%, significa que pelo menos 4 em cada 100 imóveis (ou 4%) possuem focos do mosquito, indicando uma alta densidade vetorial que facilita a disseminação rápida dos vírus da Dengue, Zika e Chikungunya.\n\nAlternativa (c) INCORRETA: O valor de 10% não é o parâmetro utilizado para definir risco de surto. A classificação de risco ocorre em níveis muito mais baixos (acima de 3,9%) para permitir que as autoridades de saúde intervenham antes que a densidade vetorial atinja níveis extremos e incontroláveis.\n\nAlternativa (d) INCORRETA: Um IIP inferior a 1% é classificado como Satisfatório. Embora não signifique ausência total de risco (visto que a presença do vetor e o fluxo de pessoas infectadas podem gerar casos isolados), indica que a infestação está sob controle e o risco de uma epidemia generalizada é baixo no momento da medição.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Vigilância em Saúde",
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  },
+  {
+    "id": "AJUDA_72b36f85-65ac-4eb6-93bc-143bf380b2e1",
+    "originalId": "72b36f85-65ac-4eb6-93bc-143bf380b2e1",
+    "statement": "Mulher de 35 anos, que apresentou citologia alterada com colo de aspecto macroscópico normal, realizou colposcopia e biópsia de colo uterino cujo resultado foi de carcinoma escamoso invasivo moderadamente diferenciado. A conduta após esse laudo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "indicar cirurgia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "repetir a biópsia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar radioterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar estadiamento",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso apresenta uma paciente com diagnóstico histopatológico de carcinoma escamoso invasivo do colo do útero, confirmado por biópsia após colposcopia. Diante de um diagnóstico de câncer invasor, o próximo passo fundamental e obrigatório na propedêutica oncológica é determinar a extensão da doença para planejar o tratamento.\n\nAlternativa a: Incorreta. A indicação cirúrgica depende exclusivamente do estádio em que a doença se encontra. Procedimentos como a histerectomia radical (cirurgia de Wertheim-Meigs) são reservados para estádios iniciais (geralmente do IA2 ao IIA1). Se a doença for classificada como localmente avançada (estádio IIB em diante), o tratamento de escolha é a quimiorradioterapia, e a cirurgia primária é contraindicada. Portanto, não se pode indicar cirurgia sem o estadiamento prévio.\n\nAlternativa b: Incorreta. A biópsia já foi realizada e o resultado foi conclusivo para carcinoma invasivo moderadamente diferenciado. Não há indicação clínica para repetir um exame que já confirmou a patologia, o que apenas atrasaria o início do tratamento.\n\nAlternativa c: Incorreta. Assim como a cirurgia, a radioterapia (associada ou não à quimioterapia) é uma modalidade terapêutica. Sua indicação depende do estadiamento. Ela pode ser o tratamento principal em casos avançados ou uma terapia adjuvante após a cirurgia em casos com fatores de risco. Iniciar o tratamento sem saber a extensão da neoplasia é uma conduta inadequada.\n\nAlternativa d: Correta. O estadiamento é a conduta imediata após a confirmação diagnóstica de câncer de colo uterino. Segundo a Federação Internacional de Ginecologia e Obstetrícia (FIGO), o estadiamento permite avaliar o tamanho do tumor, a profundidade da invasão e o envolvimento de estruturas adjacentes (como paramétrios, vagina, bexiga ou reto) e linfonodos. Somente após essa avaliação é possível definir se a paciente seguirá para tratamento cirúrgico ou radioterápico.\n\nA alternativa correta é a letra (d).",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  },
+  {
+    "id": "AJUDA_72bcc577-2a40-48a6-b6bd-8cf4af361bf2",
+    "originalId": "72bcc577-2a40-48a6-b6bd-8cf4af361bf2",
+    "statement": "Em um paciente com insuficiência cardíaca descompensada e hipoperfusão periférica refratária à terapia inicial com diuréticos, indique a droga vasoativa de escolha que possui efeito inotrópico positivo puro, sem ação vasoconstritora significativa:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dobutamina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Noradrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dopamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Vasopressina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O cenário descrito refere-se a um paciente com Insuficiência Cardíaca Descompensada (ICD) que apresenta sinais de baixo débito cardíaco (hipoperfusão periférica), caracterizando o perfil hemodinâmico frequentemente chamado de \"frio\". Quando a terapia inicial com diuréticos não é suficiente para restaurar a perfusão, é necessário o suporte com drogas inotrópicas para melhorar a contratilidade miocárdica e o débito cardíaco.\n\na) Dobutamina: Alternativa correta. É a droga de escolha para o suporte inotrópico na insuficiência cardíaca agudamente descompensada com baixo débito. Ela atua predominantemente como agonista dos receptores beta-1 adrenérgicos, aumentando a força de contração (inotropismo) e a frequência cardíaca (cronotropismo). Embora possua alguma atividade em receptores beta-2 (que pode causar leve vasodilatação periférica) e alfa-1, seu efeito clínico resultante é o aumento do débito cardíaco com redução ou manutenção da resistência vascular sistêmica, sem promover vasoconstrição significativa nas doses terapêuticas usuais.\n\nb) Noradrenalina: Incorreta. A noradrenalina é um potente agonista alfa-1 adrenérgico, o que resulta em vasoconstrição periférica intensa. Embora possua efeito beta-1 (inotrópico), sua principal indicação é no choque distributivo (como o choque séptico) para elevar a pressão arterial média através do aumento da resistência vascular sistêmica, e não para o tratamento isolado da disfunção sistólica na insuficiência cardíaca.\n\nc) Dopamina: Incorreta. A dopamina possui efeitos dose-dependentes. Em doses intermediárias, tem efeito beta-1 inotrópico, mas em doses mais elevadas apresenta um efeito alfa-1 predominante, causando vasoconstrição significativa. Além disso, está associada a um maior risco de arritmias em comparação à dobutamina em pacientes com insuficiência cardíaca.\n\nd) Adrenalina: Incorreta. A adrenalina é um agonista adrenérgico potente e não seletivo (age em receptores alfa-1, beta-1 e beta-2). Embora aumente fortemente a contratilidade cardíaca, seu efeito alfa-1 causa vasoconstrição importante, o que aumenta a pós-carga do ventrículo esquerdo, podendo ser prejudicial em um coração já falido. Seu uso é reservado para situações de choque refratário ou parada cardiorrespiratória.\n\ne) Vasopressina: Incorreta. A vasopressina atua nos receptores V1 da musculatura lisa vascular, promovendo vasoconstrição pura. Ela não possui nenhum efeito inotrópico positivo, sendo utilizada em estados de choque com vasoplegia intensa para aumentar a resistência vascular sistêmica.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  },
+  {
+    "id": "AJUDA_72c34899-133a-45e9-8ad8-7dd38269e9ae",
+    "originalId": "72c34899-133a-45e9-8ad8-7dd38269e9ae",
+    "statement": "Sobre as anemias, relacione as colunas e assinale a sequência correspondente:\n\n(1) Anemia hemolítica.\n(2) Anemia megaloblástica.\n(3) Anemia normocítica e normocrômica.\n\n( ) Deficiência precoce de ferro.\n( ) Deficiência de cobalamina.\n( ) Hemoglobinúria paroxística noturna.\n( ) Doença maligna.\n( ) Deficiência de folato.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 - 2 - 3 - 2 - 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3 - 2 - 1 - 3 - 2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "3 - 1 - 2 - 2 - 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2 - 3 - 1 - 1 - 3.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos correlacionar a fisiopatologia e a morfologia das anemias com suas causas específicas. A classificação morfológica (tamanho e cor das hemácias) é o primeiro passo na investigação diagnóstica.\n\nAnálise das correlações:\n\n(3) Deficiência precoce de ferro: No estágio inicial da ferropenia, o organismo utiliza as reservas de ferro, mas ainda consegue produzir hemácias de tamanho e coloração normais. Somente com a progressão da deficiência é que a anemia se torna classicamente microcítica e hipocrômica. Portanto, na fase precoce, ela é normocítica e normocrômica.\n\n(2) Deficiência de cobalamina: A cobalamina (vitamina B12) é essencial para a síntese de DNA. Sua carência leva a um defeito na maturação do núcleo em relação ao citoplasma das células precursoras do sangue, resultando em hemácias grandes e imaturas. Este é o quadro clássico de anemia megaloblástica.\n\n(1) Hemoglobinúria paroxística noturna (HPN): É uma doença clonal adquirida da célula-tronco hematopoiética, caracterizada pela ausência de proteínas protetoras na membrana dos glóbulos vermelhos, o que os torna vulneráveis à destruição pelo sistema complemento. É, fundamentalmente, uma anemia hemolítica crônica.\n\n(3) Doença maligna: Anemias associadas a neoplasias ou doenças crônicas geralmente apresentam-se como normocíticas e normocrômicas. Isso ocorre devido a processos inflamatórios que dificultam a utilização do ferro e reduzem a produção de eritropoietina, ou por infiltração medular (mieloftise).\n\n(2) Deficiência de folato: Assim como a vitamina B12, o ácido fólico é crucial para a síntese de DNA. Sua deficiência impede a divisão celular adequada na medula óssea, causando anemia megaloblástica (macrocitose com neutrófilos hipersegmentados).\n\nAnálise das alternativas:\n\na) Incorreta. Classifica a deficiência precoce de ferro como hemolítica (1) e doenças malignas como megaloblásticas (2), o que é fisiopatologicamente incorreto.\n\nb) Correta. Segue a sequência exata das correlações clínicas: 3 (Normocítica/Normocrômica) - 2 (Megaloblástica) - 1 (Hemolítica) - 3 (Normocítica/Normocrômica) - 2 (Megaloblástica).\n\nc) Incorreta. Associa a deficiência de cobalamina à hemólise (1) e a HPN à anemia megaloblástica (2), invertendo conceitos fundamentais da hematologia.\n\nd) Incorreta. Inicia classificando a deficiência precoce de ferro como megaloblástica (2) e a deficiência de cobalamina como normocítica (3), o que não condiz com os achados laboratoriais dessas patologias.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  },
+  {
+    "id": "AJUDA_72d5cf68-ed52-4d51-aea4-4abe389bcd56",
+    "originalId": "72d5cf68-ed52-4d51-aea4-4abe389bcd56",
+    "statement": "Adolescente de 15 anos, sexo feminino, procurou o serviço ambulatorial acompanhada de seus pais que estão preocupados com sua magreza. Na anamnese relatam que a filha apresenta medo extremo da obesidade, analisa todas as calorias dos alimentos que vai ingerir e está sempre procurando sites de alimentação na internet com objetivo de manter o peso abaixo de 40kg. Ao exame físico: emagrecida, hipocorada, peso 39 kg, escore Z-3, altura 1,58 cm, IMC=15,5, TAX: 36° C, PA: 100X65 mmHg, FC: 48 bpm, Estadiamento de TANNER M4P4. Qual a hipótese diagnostica mais provável:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ortorexia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neofobia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anorexia nervosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Adolescência normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma adolescente de 15 anos com sinais claros de um transtorno alimentar grave. Os pontos fundamentais para o diagnóstico são: a restrição voluntária da ingestão calórica, o medo intenso de ganhar peso (fobia de obesidade), a busca por um peso corporal significativamente abaixo do esperado para a idade e altura (alvo de 40 kg, resultando em IMC de 15,5 e escore Z de -3) e a presença de repercussões clínicas da desnutrição, como a bradicardia (frequência cardíaca de 48 bpm).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA: A ortorexia é caracterizada pela obsessão patológica por alimentos considerados puros, saudáveis ou biologicamente corretos. Embora o indivíduo monitore o que come, o foco principal não é necessariamente o emagrecimento ou o medo da obesidade, mas sim a qualidade e a pureza da dieta. No caso descrito, o objetivo central da paciente é a perda de peso extrema e a manutenção de um peso muito baixo.\n\nb) INCORRETA: A neofobia alimentar é o medo ou a recusa de experimentar alimentos novos ou desconhecidos. É um comportamento comum na infância e faz parte do desenvolvimento seletivo, mas não envolve distorção da imagem corporal, medo de engordar ou perda de peso patológica acompanhada de bradicardia.\n\nc) CORRETA: A anorexia nervosa é o diagnóstico que preenche todos os critérios apresentados. Segundo o DSM-5, os critérios incluem a restrição da ingestão energética levando a um peso corporal significativamente baixo, medo intenso de ganhar peso ou de se tornar gordo e perturbação no modo como o próprio peso ou a forma corporal são vivenciados. A bradicardia (48 bpm) é um achado clássico no exame físico desses pacientes, decorrente de uma adaptação do sistema nervoso autônomo ao estado de inanição para poupar energia. O IMC de 15,5 e o escore Z de -3 classificam a paciente em um estado de magreza acentuada/grave.\n\nd) INCORRETA: A adolescência normal envolve mudanças corporais e preocupações estéticas, porém nunca atinge níveis de desnutrição grave (escore Z de -3), obsessão por calorias com o objetivo de manter um peso abaixo do saudável e alterações vitais como a bradicardia. O desenvolvimento puberal Tanner M4P4 indica que a paciente está em estágio avançado de maturação sexual, mas isso não exclui a patologia nutricional e psiquiátrica instalada.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Transtornos Alimentares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  },
+  {
+    "id": "AJUDA_72dbc146-7d2d-4bd1-8e2a-f2322ce1a4c5",
+    "originalId": "72dbc146-7d2d-4bd1-8e2a-f2322ce1a4c5",
+    "statement": "Mulher, 30 anos, apresenta, há cinco anos, quadro de tosse produtiva e múltiplas internações por infecções respiratórias. No momento, está afebril e sem exacerbação do quadro. Exame físico: crepitações e sibilos em bases. Radiografia do tórax: aspecto de “trilho de trem”. Considerando a principal hipótese diagnóstica, pode-se afirmar que em uma TC do tórax, desta paciente, se observaria provavelmente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "árvore em brotamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "calcificação em casca de ovo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "placas pleurais difusas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "imagem do anel de sinete",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — mulher jovem com tosse produtiva crônica, infecções respiratórias de repetição e o sinal do \"trilho de trem\" na radiografia de tórax — é clássico para o diagnóstico de bronquiectasias. As bronquiectasias são dilatações irreversíveis dos brônquios decorrentes de ciclos repetidos de inflamação e infecção.\n\nAnálise das alternativas:\n\na) Incorreta. O padrão de \"árvore em brotamento\" na tomografia computadorizada (TC) de tórax representa o preenchimento de bronquíolos terminais e respiratórios por secreção (muco, pus ou sangue). Embora possa estar presente em pacientes com bronquiectasias durante episódios de exacerbação infecciosa, é um sinal de doença de pequenas vias aéreas (bronquiolite infecciosa), sendo muito comum na tuberculose de disseminação broncogênica, e não o achado definidor da dilatação brônquica em si.\n\nb) Incorreta. A \"calcificação em casca de ovo\" (eggshell calcification) refere-se à calcificação periférica de linfonodos hilares ou mediastinais. É um achado radiológico característico da silicose, uma pneumoconiose causada pela inalação de poeira de sílica, não possuindo relação com o quadro de bronquiectasias.\n\nc) Incorreta. Placas pleurais difusas, muitas vezes calcificadas, são marcadores de exposição prévia ao asbesto (amianto). Estão relacionadas à asbestose ou ao risco de mesotelioma, e não explicam a dilatação brônquica e a tosse produtiva crônica descritas no caso.\n\nd) Correta. O sinal do \"anel de sinete\" é o achado tomográfico patognomônico das bronquiectasias. Ele ocorre quando o diâmetro da luz brônquica é maior que o diâmetro da artéria pulmonar adjacente (em condições normais, eles possuem tamanhos semelhantes). Na imagem, o brônquio dilatado e cheio de ar assemelha-se ao aro de um anel, enquanto a artéria, menor e opacificada, assemelha-se à pedra ou joia do anel.\n\nAssociação diagnóstica:\n- Radiografia: Sinal do trilho de trem (paredes brônquicas espessadas e paralelas).\n- Tomografia: Sinal do anel de sinete (bronquiectasia cilíndrica na qual o brônquio é maior que o vaso).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:32.208Z"
+  }
+]

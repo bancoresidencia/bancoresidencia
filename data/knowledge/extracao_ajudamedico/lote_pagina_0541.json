@@ -1,0 +1,508 @@
+[
+  {
+    "id": "AJUDA_97804dc2-725f-4efe-8f30-76538f8383e0",
+    "originalId": "97804dc2-725f-4efe-8f30-76538f8383e0",
+    "statement": "Dentre as situações a seguir, aquela em que o recém-nascido tem dois critérios para icterícia patológica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "RN a termo, icterícia desde 37 horas de vida, bilirrubina total = 4 mg/dl, bilirrubina indireta = 3,1 mg/dl;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "RN prematuro, 6º dia de vida, bilirrubina total = 3 mg/dl, bilirrubina indireta = 2,2 mg/dl;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "RN a termo, icterícia desde 12 horas de vida, bilirrubina total = 2 mg/dl, bilirrubina indireta = 0,8 mg/dl;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "RN prematuro, 39 horas de vida, bilirrubina total = 8 mg/dl, aumento de bilirrubina em seis horas = 0,1 mg/dl/hora;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "RN prematuro, grupo sanguíneo/RH: RN = O+ e mãe =A+, ictérico no 12º dia de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para identificar a alternativa correta, devemos recordar os critérios que definem a icterícia como patológica no período neonatal. Os principais são: 1) Início precoce (antes de 24 horas de vida); 2) Velocidade de aumento da bilirrubina total (BT) superior a 0,5 mg/dL/hora; 3) Bilirrubina direta (BD) superior a 1,0 mg/dL (se BT < 5) ou superior a 20% da BT (se BT > 5); 4) Icterícia prolongada (mais de 8 dias no recém-nascido a termo ou 14 dias no prematuro); 5) Níveis de BT acima do percentil 95 para a idade cronológica no nomograma de Bhutani.\n\nAnálise das alternativas:\n\na) Incorreta. Um recém-nascido (RN) a termo com 37 horas de vida está fora do período de icterícia precoce. A bilirrubina direta (BD) é calculada subtraindo-se a indireta da total: 4 - 3,1 = 0,9 mg/dL. Como a BD é inferior a 1,0 mg/dL, não há critério de colestase. Não há critérios patológicos aqui.\n\nb) Incorreta. No 6º dia de vida de um prematuro, a icterícia costuma ser fisiológica. A BD é de 0,8 mg/dL (3 - 2,2 = 0,8), o que é normal (abaixo de 1,0 mg/dL). Os níveis de BT (3 mg/dL) estão muito baixos para serem considerados patológicos.\n\nc) Correta. Esta alternativa apresenta dois critérios:\n1. Icterícia precoce: o RN tem apenas 12 horas de vida (toda icterícia antes de 24 h é patológica).\n2. Aumento da bilirrubina direta: o cálculo BT (2 mg/dL) - BI (0,8 mg/dL) resulta em uma BD de 1,2 mg/dL. Como a BT é menor que 5 mg/dL, qualquer valor de BD acima de 1,0 mg/dL é considerado patológico (sinal de colestase).\n\nd) Incorreta. Com 39 horas de vida, o RN não tem icterícia precoce. O valor de BT de 8 mg/dL para um prematuro nessa idade geralmente está dentro da normalidade ou em zona de baixo risco. A velocidade de aumento de 0,1 mg/dL/hora está bem abaixo do limite patológico de 0,5 mg/dL/hora.\n\ne) Incorreta. Primeiro, não há incompatibilidade sanguínea ABO neste caso, pois a mãe é do tipo A e o RN é do tipo O (a incompatibilidade ocorre quando a mãe é O e o filho é A ou B). Segundo, em prematuros, a icterícia pode durar até 14 dias sem ser considerada prolongada ou patológica. Portanto, o 12º dia ainda está dentro do esperado para a fisiologia da prematuridade.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  },
+  {
+    "id": "AJUDA_97877524-76ee-4405-952b-847eeda9d7a1",
+    "originalId": "97877524-76ee-4405-952b-847eeda9d7a1",
+    "statement": "Uma mulher de 25 anos chega ao ambulatório com um exame de farmácia demonstrando gravidez. Ainda não realizou ultrassonografia e, pela data da última menstruação, estaria com aproximadamente 8 semanas de gestação.\nAo toque, nota-se um amolecimento acentuado no istmo, que configuraria o sinal de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hegar;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Piskacek;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Osiander;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nobile-Budin;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Puzos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda os sinais de probabilidade de gravidez, especificamente as alterações uterinas e vaginais detectadas ao exame físico no primeiro trimestre.\n\nA alternativa (a) está correta. O sinal de Hegar consiste no amolecimento da região do istmo uterino (a zona de transição entre o corpo e o colo do útero). Ao realizar o toque bimanual, o examinador percebe uma flexibilidade aumentada nessa região, o que muitas vezes dá a sensação de que o corpo do útero e o colo são estruturas independentes. É um dos sinais mais clássicos de probabilidade de gestação, surgindo geralmente entre a 6ª e a 8ª semana.\n\nA alternativa (b) está incorreta. O sinal de Piskacek refere-se a uma assimetria do útero à palpação. Isso ocorre devido à implantação do ovo em um dos cornos uterinos, fazendo com que um lado do útero se apresente mais abaulado ou proeminente que o outro.\n\nA alternativa (c) está incorreta. O sinal de Osiander é a percepção do pulso da artéria vaginal através dos fundos de saco laterais da vagina. Esse aumento da pulsatilidade decorre da intensa vascularização pélvica no início da gestação.\n\nA alternativa (d) está incorreta. O sinal de Nobile-Budin é caracterizado pelo preenchimento dos fundos de saco vaginais pelo útero. Conforme a gestação progride, o útero assume uma forma mais globosa e amolecida, tornando-se palpável através dos fundos de saco laterais e anterior da vagina.\n\nA alternativa (e) está incorreta. O sinal de Puzos, também conhecido como rechaço fetal intrauterino, é o sinal do toque vaginal em que, ao empurrar o feto através do fundo de saco, ele se desloca no líquido amniótico e retorna batendo na ponta dos dedos do examinador. É um sinal de probabilidade que costuma aparecer mais tardiamente, a partir do quarto mês de gestação.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  },
+  {
+    "id": "AJUDA_978f05c3-0f3e-459a-b4a8-69fdc25ca768",
+    "originalId": "978f05c3-0f3e-459a-b4a8-69fdc25ca768",
+    "statement": "Em relação à prova de função pulmonar completa, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A relação VEF1/CVF < 0,70 pós-broncodilatador indica padrão obstrutivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico de restrição é feito apenas pela redução da relação VEF1/CVF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A prova broncodilatadora é considerada positiva quando há aumento do VEF1 ≥ 5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A diminuição isolada da DLCO indica padrão obstrutivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A hiperresponsividade brônquica é confirmada pela ausência de reversibilidade após broncodilatador.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a) Correta. O critério clássico para definir a presença de um distúrbio ventilatório obstrutivo (como na DPOC ou asma) é a redução da relação VEF1/CVF. De acordo com os consensos internacionais (GOLD) e as diretrizes brasileiras, um valor pós-broncodilatador abaixo de 0,70 (ou abaixo do limite inferior da normalidade) confirma a obstrução ao fluxo aéreo.\n\nAlternativa b) Incorreta. O diagnóstico de um padrão restritivo não é feito pela redução da relação VEF1/CVF. Pelo contrário, na restrição, essa relação costuma estar normal ou até aumentada. A suspeita de restrição na espirometria ocorre quando há redução da Capacidade Vital Forçada (CVF), mas a confirmação diagnóstica exige a medida dos volumes pulmonares estáticos, especificamente a demonstração de uma Capacidade Pulmonar Total (CPT) abaixo do esperado.\n\nAlternativa c) Incorreta. A prova broncodilatadora é considerada positiva quando ocorre um aumento no VEF1 ou na CVF de, pelo menos, 12% em relação ao valor pré-broncodilatador, acompanhado de um aumento absoluto de, no mínimo, 200 ml. O valor de 5% mencionado na alternativa é insuficiente para os critérios diagnósticos atuais.\n\nAlternativa d) Incorreta. A diminuição isolada da DLCO (Capacidade de Difusão do Monóxido de Carbono) não indica padrão obstrutivo. A DLCO avalia a integridade da membrana alveolocapilar e a troca gasosa. Ela pode estar reduzida em doenças intersticiais (restritivas), no enfisema (obstrutivo) ou em doenças vasculares pulmonares (como hipertensão pulmonar), mas a caracterização do padrão ventilatório depende dos fluxos e volumes espirométricos.\n\nAlternativa e) Incorreta. A hiperresponsividade brônquica é caracterizada pela tendência das vias aéreas de se contraírem exageradamente em resposta a estímulos. Ela é confirmada por testes de broncoprovocação (como o teste da metacolina ou histamina), nos quais se observa uma queda no VEF1, e não pela ausência de reversibilidade após o broncodilatador. A presença de reversibilidade significativa após o broncodilatador é o que sugere, clinicamente, a existência de hiperresponsividade (comum na asma).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  },
+  {
+    "id": "AJUDA_979313c4-3a00-4530-90cc-64e9285b261b",
+    "originalId": "979313c4-3a00-4530-90cc-64e9285b261b",
+    "statement": "Mulher de 56 anos vai ao Pronto Socorro queixando-se de mal estar e hiporexia há três dias. Nega outras queixas. É portadora de cirrose hepática por hepatite C crônica, Faz uso de furosemida, espironolactona e carvedilol. Ao exame físico, PA 104/64mmHg, FC 55bpm, Tax 36,2°C. O exame do abdome apresenta submacicez dos flancos, a palpação é indolor e revela normotensão. EXAMES DE LABORATÓRIO: leucócitos 6.780/mm³; creatinina 1,6mg/dL (valor basal 0,7mg/dL); ureia 54mg/dL; proteína C reativa 4mg/L. Assinale a alternativa que apresenta uma conduta inicial INADEQUADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de albumina pela via IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrição de terlipressina pela via IV",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realização de paracentese diagnóstica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspensão do carvedilol",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta cirrose hepática e um quadro de Lesão Renal Aguda (LRA), definida pelo aumento da creatinina de 0,7 mg/dL para 1,6 mg/dL (mais que o dobro do valor basal). Diante de um paciente cirrótico com piora da função renal, a conduta inicial deve focar em identificar a causa (pré-renal, infecciosa ou Síndrome Hepatorrenal) e remover fatores desencadeantes.\n\nA alternativa (a) está correta como conduta inicial. A expansão volêmica com albumina (na dose de 1 g/kg/dia por 48 horas) é o passo fundamental para diferenciar a insuficiência renal pré-renal da Síndrome Hepatorrenal (SHR). Se a função renal melhorar após a albumina, confirma-se a causa pré-renal.\n\nA alternativa (b) apresenta a conduta INADEQUADA e é o gabarito. A terlipressina, associada à albumina, é o tratamento de escolha para a Síndrome Hepatorrenal tipo AKI. No entanto, o diagnóstico de SHR é de exclusão. Antes de iniciar o vasoconstritor, é obrigatório suspender diuréticos e realizar o teste de expansão com albumina por dois dias. Portanto, prescrever terlipressina de imediato, sem antes tentar a expansão volêmica e excluir outras causas, está incorreto.\n\nA alternativa (c) está correta como conduta inicial. Todo paciente cirrótico que interna com complicações (como lesão renal ou mal-estar) deve ser submetido à paracentese diagnóstica, mesmo na ausência de dor abdominal ou febre. Isso é necessário para excluir a Peritonite Bacteriana Espontânea (PBE), que é um importante gatilho para a piora renal no cirrótico.\n\nA alternativa (d) está correta como conduta inicial. Em casos de Lesão Renal Aguda, deve-se suspender drogas que possam reduzir a perfusão renal ou agravar a hipotensão. O carvedilol (betabloqueador) e os diuréticos (furosemida e espironolactona) devem ser interrompidos para tentar restaurar a estabilidade hemodinâmica e a filtração glomerular.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Cirrose Hepática",
+      "Síndrome Hepatorrenal e Hepatopulmonar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  },
+  {
+    "id": "AJUDA_97970c2a-435a-4ea5-9a5c-0b01e7b23e6d",
+    "originalId": "97970c2a-435a-4ea5-9a5c-0b01e7b23e6d",
+    "statement": "Mulher, 72 anos, hipertensa e com fibrilação atrial crônica, procura atendimento devido dispneia progressiva há 5 dias. Refere perda de peso, tremores finos e agitação nos últimos meses. Exame físico: FC: 128 bpm, PA: 150×80 mmHg, FR: 24 ipm, SatO2 96% em ar ambiente, T: 37,6°C, consciente e orientada, sem estertores pulmonares ou sinais de congestão periférica. Exames complementares: Hb: 13,4 g/dL, leucócitos: 9 000/mm³, plaquetas: 228 000/mm³, ureia: 52 mg/dL, creatinina: 1,1mg/dL, troponina ultrassensível: negativa, TSH < 0,01 µUI/mL, T4 livre: 3,4 ng/dL (VR 0,8 - 1,8), pH: 7,37, pCO2: 42 mmHg, HCO2: 23 mEq/L, BE 1.\nQual é a melhor opção para controle inicial da frequência cardíaca nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esmolol via endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Metoprolol via endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Propranolol via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Atenolol via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente apresenta um quadro de tireotoxicose descompensando uma fibrilação atrial crônica com alta resposta ventricular (frequência cardíaca de 128 bpm), confirmado pela clínica de perda de peso, agitação e tremores associada ao TSH suprimido e T4 livre elevado. A paciente está hemodinamicamente estável e consciente, sem sinais de choque ou insuficiência cardíaca congestiva descompensada, o que permite o tratamento por via oral.\n\nAlternativa a: Incorreta. O esmolol por via endovenosa é um fármaco de ação ultracurta reservado para situações de emergência médica, como tempestade tireoidiana grave com instabilidade hemodinâmica ou pacientes internados em UTI sem condições de usar a via oral.\n\nAlternativa b: Incorreta. O metoprolol por via endovenosa também fica restrito a casos de instabilidade clínica ou impossibilidade do uso do trato gastrointestinal. Além disso, por ser um betabloqueador cardiosseletivo (beta-1), não possui a propriedade de reduzir a conversão periférica dos hormônios tireoidianos.\n\nAlternativa c: Correta. O propranolol por via oral é a medicação de escolha no manejo da tireotoxicose em pacientes clinicamente estáveis. Por ser um betabloqueador não seletivo, controla com rapidez e eficácia os sintomas hiperadrenérgicos (taquicardia, tremores, agitação) e apresenta o benefício adicional de inibir a enzima 5-desiodase periférica, reduzindo a conversão de T4 no hormônio metabolicamente ativo T3.\n\nAlternativa d: Incorreta. O atenolol é um betabloqueador beta-1 seletivo. Embora possa ser usado por via oral para controle de frequência cardíaca, não possui a capacidade de bloquear a conversão periférica de T4 em T3, sendo inferior ao propranolol no contexto específico do hipertireoidismo.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Tireoide",
+      "Taquiarritmias",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  },
+  {
+    "id": "AJUDA_979b4d3a-ff34-4dec-a03d-bb485a63a013",
+    "originalId": "979b4d3a-ff34-4dec-a03d-bb485a63a013",
+    "statement": "Assinale a alternativa que apresenta os fatores que favorecem a perpetuação das fístulas do trato digestivo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "anemia, fístulas com alto débito, obstrução a jusante e fístulas crônicas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "desnutrição, doença inflamatória intestinal, obstrução à montante e trajeto curto da fístula",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "fístulas agudas, com baixo débito, obstrução a jusante e com múltiplas abordagens",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "infecção no local da fístula, doença inflamatória intestinal, fístulas agudas e com baixo débito",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "desnutrição, fístulas labiadas, localizadas no trato digestivo baixo e obstrução à montante",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O fechamento espontâneo de uma fístula digestiva depende de diversos fatores clínicos, biológicos e anatômicos. Quando esses fatores são desfavoráveis, ocorre a perpetuação do trajeto fistuloso. Um mnemônico muito utilizado na cirurgia para lembrar-se desses fatores dificultadores é o FRIEND (Corpo Estranho, Radiação, Infecção/Inflamação, Epitelização, Neoplasia e Obstrução Distal).\n\nAlternativa a: Esta é a alternativa correta. A anemia reduz a oxigenação tecidual periférica, o que prejudica a fibroplasia e a síntese de colágeno essenciais para a cicatrização. Fístulas de alto débito (geralmente definidas como aquelas com volume superior a 500 ml em 24 horas) mantêm um fluxo constante e volumoso que impede o colabamento e a obliteração do trajeto. A obstrução a jusante (ou distal) é um dos fatores mais críticos, pois aumenta a pressão intraluminal e desvia o conteúdo obrigatoriamente pelo trajeto da fístula. Por fim, fístulas crônicas tendem a desenvolver epitelização do trajeto (comunicação pele-mucosa), o que impede a granulação e o fechamento espontâneo.\n\nAlternativa b: Incorreta. O erro principal reside no termo obstrução a montante. Obstruções que ocorrem antes da fístula no trânsito intestinal tendem a diminuir o fluxo de secreções que passa pelo orifício fistuloso, o que não impede o fechamento. O fator que perpetua a fístula é a obstrução a jusante (distal). Embora a desnutrição, a doença inflamatória intestinal e o trajeto curto (menor que 2 cm) dificultem o fechamento, a alternativa está errada pelo fator mecânico citado.\n\nAlternativa c: Incorreta. Fístulas agudas e com baixo débito (geralmente menor que 200 ml em 24 horas) apresentam, na verdade, um excelente prognóstico para o fechamento espontâneo com tratamento clínico. Fatores de perpetuação seriam a cronicidade e o alto débito.\n\nAlternativa d: Incorreta. Embora a infecção local e a doença inflamatória intestinal sejam fatores que dificultam a cicatrização, as fístulas agudas e de baixo débito são condições favoráveis ao encerramento do quadro, o que invalida a alternativa como um grupo de fatores de perpetuação.\n\nAlternativa e: Incorreta. Fístulas localizadas no trato digestivo baixo (como fístulas colônicas) costumam ter menor débito e maior taxa de fechamento espontâneo do que fístulas proximais (como jejunais altas). Além disso, o termo obstrução a montante está novamente incorreto, pois apenas a obstrução distal impede o fluxo normal e mantém a fístula aberta. As fístulas labiadas são aquelas em que a mucosa intestinal está em contato direto com a pele, o que de fato impede o fechamento espontâneo, mas os outros termos tornam a alternativa errada.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  },
+  {
+    "id": "AJUDA_97acd6bf-19e1-4469-a633-5911504a02ac",
+    "originalId": "97acd6bf-19e1-4469-a633-5911504a02ac",
+    "statement": "Um Médico de Saúde da Família discute com sua equipe a alta prevalência de resistência antimicrobiana em infecções comunitárias na sua área de abrangência. Ele propõe uma abordagem baseada no conceito de Saúde Única (One Health) para compreender o problema. Indique o fator que, segundo essa abordagem, é um pilar do problema global da resistência antimicrobiana:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A interação gênica restrita às microbiotas intraespecíficas, impedindo a troca de genes entre espécies.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso massivo de antimicrobianos limitado ao tratamento de infecções exclusivamente no homem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A falta de estudos integrados que considerem simultaneamente a interação da tríade humanos, animais e ecossistemas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A diminuição da mobilidade humana global, que tem isolado os genes de resistência em nichos específicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A erradicação de doenças infecciosas emergentes, que aumentou a pressão seletiva sobre bactérias comensais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O conceito de Saúde Única (One Health) reconhece que a saúde humana, a saúde animal e a saúde ambiental (ecossistemas) estão intrinsecamente ligadas e são interdependentes. No contexto da resistência antimicrobiana, esse conceito é fundamental porque os microrganismos e seus genes de resistência circulam livremente entre esses três domínios.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A resistência antimicrobiana é agravada justamente pela capacidade das bactérias de realizar a transferência horizontal de genes. Isso significa que a troca de material genético de resistência ocorre frequentemente entre diferentes espécies bacterianas, e não de forma restrita a microbiotas intraespecíficas.\n\nAlternativa (b) Incorreta. O uso massivo de antimicrobianos não se limita aos humanos. De fato, uma proporção imensa do uso global de antibióticos ocorre na medicina veterinária e na agropecuária (seja para tratamento, prevenção ou como promotores de crescimento), o que impacta diretamente a saúde pública humana através da cadeia alimentar e do contato ambiental.\n\nAlternativa (c) Correta. A essência da Saúde Única é a integração. O pilar do problema global reside no fato de que, por muito tempo, as intervenções e estudos foram feitos de forma isolada em cada setor. A compreensão de que a resistência flui entre humanos, animais e o ambiente exige uma abordagem coordenada e integrada entre médicos, veterinários, biólogos e gestores ambientais, o que ainda é um desafio a ser plenamente alcançado.\n\nAlternativa (d) Incorreta. A mobilidade humana global aumentou drasticamente nas últimas décadas. Esse aumento da conectividade facilita a rápida disseminação de bactérias multirresistentes de um continente para outro em poucas horas, impedindo o isolamento de genes de resistência em nichos específicos.\n\nAlternativa (e) Incorreta. Doenças infecciosas emergentes não foram erradicadas; pelo contrário, o surgimento de novos patógenos é uma ameaça constante. Além disso, a pressão seletiva sobre as bactérias decorre do uso excessivo e inadequado de antibióticos em diversos cenários, e não da erradicação de doenças.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  },
+  {
+    "id": "AJUDA_97af69d0-8413-4bc0-b702-e485df9df978",
+    "originalId": "97af69d0-8413-4bc0-b702-e485df9df978",
+    "statement": "A principal medida de frequência que permite avaliar a velocidade de ocorrência de novos casos de uma doença em uma população é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Incidência cumulativa – taxa de mortalidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Risco atribuível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Razão de chances.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O conceito central desta questão é a diferença entre os indicadores de frequência de doenças: prevalência e incidência.\n\nAlternativa a: Incorreta. A prevalência mede a quantidade total de casos existentes (casos novos somados aos casos antigos) em um determinado ponto ou período no tempo. Ela funciona como um retrato momentâneo da situação de saúde de uma população e não permite avaliar a velocidade de surgimento de novos eventos, pois é influenciada pela duração da doença.\n\nAlternativa b: Correta. A incidência é a medida epidemiológica que contabiliza apenas os casos novos que surgem em uma população sob risco durante um intervalo de tempo definido. Por acompanhar a transição do estado de saúde para o estado de doença, a incidência é o indicador que expressa a velocidade de ocorrência de novos casos e o risco de adoecimento. A taxa de mortalidade é, tecnicamente, uma medida de incidência de óbitos, também refletindo a velocidade com que esse evento ocorre.\n\nAlternativa c: Incorreta. O risco atribuível não é uma medida de frequência primária, mas sim uma medida de impacto. Ele representa a diferença entre a incidência observada nos expostos a um fator e a incidência nos não expostos, quantificando o excesso de casos que pode ser atribuído exclusivamente àquele fator de risco.\n\nAlternativa d: Incorreta. A razão de chances (Odds Ratio) é uma medida de associação, e não de frequência. Ela é amplamente utilizada em estudos de caso-controle para comparar a chance de exposição entre o grupo de doentes e o grupo de não doentes. Ela não mede a velocidade de aparecimento de novos casos na população geral.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  },
+  {
+    "id": "AJUDA_97b15fc9-0020-4a8a-b6f1-525b0796d55c",
+    "originalId": "97b15fc9-0020-4a8a-b6f1-525b0796d55c",
+    "statement": "Homem, 62 anos, portador de insuficiência cardíaca congestiva (ICC) sintomática, pouco controlada e hipertensão arterial sistêmica (HAS), não medicada, procura ajuda médica por apresentar hérnia incisional sintomática. Diante da indicação de tratamento cirúrgico para correção desta hérnia, o médico cirurgião solicita ao anestesista uma avaliação do risco cirúrgico, segundo o consagrado sistema de classificação da American Society of Anesthesiologists (ASA). Com base nas informações do enunciado, esse paciente está estratificado como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ASA 2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ASA 1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ASA 4",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ASA 3",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação do estado físico da Sociedade Americana de Anestesiologia (ASA) é uma ferramenta utilizada para quantificar o risco perioperatório com base nas comorbidades do paciente. Para responder a essa questão, devemos focar na gravidade e no controle das patologias mencionadas: Insuficiência Cardíaca Congestiva (ICC) sintomática e pouco controlada, além de Hipertensão Arterial Sistêmica (HAS) não medicada.\n\nAlternativa a) Incorreta. O ASA 2 é reservado para pacientes com doença sistêmica leve, sem limitações funcionais. Exemplos clássicos incluem fumantes, pacientes com hipertensão arterial bem controlada ou diabetes controlado apenas com dieta ou medicação oral. O paciente do enunciado possui sintomas cardíacos e falta de controle clínico, o que ultrapassa essa categoria.\n\nAlternativa b) Incorreta. O ASA 1 define o paciente perfeitamente saudável, não fumante, sem uso de medicamentos e sem doenças crônicas. O histórico de ICC e HAS exclui totalmente essa possibilidade.\n\nAlternativa c) Correta. O ASA 4 é definido como um paciente que apresenta uma doença sistêmica grave que constitui uma ameaça constante à vida. A insuficiência cardíaca congestiva sintomática e mal controlada é um dos exemplos mais citados na literatura para esta classificação. Isso ocorre porque a falência cardíaca descompensada representa um risco de morte iminente, que persiste independentemente da realização ou não do procedimento cirúrgico. Outros exemplos seriam o infarto agudo do miocárdio ocorrido há menos de 3 meses ou doença renal terminal sem diálise regular.\n\nAlternativa d) Incorreta. O ASA 3 é destinado a pacientes com doença sistêmica grave que gera limitação funcional, mas que não representa uma ameaça constante à vida. Um paciente com ICC estável, compensada e sob controle medicamentoso seria classificado como ASA 3. O termo \"pouco controlada\" e a presença de sintomas ativos são os divisores de águas que elevam o risco deste paciente para o nível 4.\n\nGabarito: Alternativa (c).",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  },
+  {
+    "id": "AJUDA_97b4146c-ab2b-4df2-947d-4f59cfea5cc2",
+    "originalId": "97b4146c-ab2b-4df2-947d-4f59cfea5cc2",
+    "statement": "Homem de 67 anos de idade está internado em UTI devido a choque séptico de foco pulmonar, em tratamento há um dia com meropenem e vancomicina. Nas últimas 48 horas, apresentou elevação de Cr de 0,9 para 2,5 mg/dL e redução do débito urinário para 0,2 mL/kg/h nas últimas 24 horas. AP: IC com fração de ejeção de 25%, HAS e DM2. Exames laboratoriais: urina 1 com cilindros granulosos e células epiteliais tubulares; fração de excreção de sódio: 3,1%; pH: 7,22; pCO2: 27 mmHg; bicarbonato: 12 mEq/L; Na: 135 mEq/L; Cl: 112 mEq/L; lactato: 5,5 mmol/L; albumina: 2,4 mg/dL.\n\nOs diagnósticos são acidose metabólica",
+    "options": [
+      {
+        "id": "A",
+        "text": "normoclorêmica e alcalose metabólica, IRA estágio 3 de etiologia hemodinâmica e droga-induzida por vancomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "com ânion-gap aumentado, IRA estágio 2 de etiologia isquêmica e droga-induzida por vancomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hiperclorêmica e acidose respiratória, IRA estágio 2 de etiologia hemodinâmica e associada a sepse.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "normoclorêmica e acidose hiperclorêmica, IRA estágio 3 de etiologia isquêmica e associada a sepse.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender essa questão, devemos analisar separadamente a função renal e o distúrbio acidobásico do paciente.\n\nAnálise da Insuficiência Renal Aguda (IRA):\n\n1. Estadiamento (Critérios KDIGO): O paciente apresenta Cr de 2,5 mg/dL (partindo de 0,9 mg/dL, um aumento de 2,7 vezes) e, crucialmente, um débito urinário de 0,2 mL/kg/h nas últimas 24 horas. Segundo a classificação KDIGO, um débito urinário menor que 0,3 mL/kg/h por 24 horas ou mais define o Estágio 3 da IRA.\n2. Etiologia: A presença de cilindros granulosos, células epiteliais tubulares na urina e uma Fração de Excreção de Sódio (FeNa) de 3,1% (maior que 1%) são marcadores clássicos de Necrose Tubular Aguda (NTA). O contexto de choque séptico e a insuficiência cardíaca grave (fração de ejeção de 25%) indicam que a causa é mista: isquêmica (pela má perfusão) e associada à sepse. O uso de vancomicina por apenas um dia é um tempo muito curto para justificar uma lesão nefrotóxica por essa droga.\n\nAnálise do Distúrbio Acidobásico:\n\n1. Acidose Metabólica: O pH de 7,22 e o bicarbonato de 12 mEq/L confirmam uma acidose metabólica.\n2. Anion Gap (AG): O cálculo do AG é Na - (Cl + HCO3). AG = 135 - (112 + 12) = 11. À primeira vista, parece normal (normoclorêmica), mas devemos corrigir pela albumina baixa (2,4 g/dL). A cada 1 g/dL que a albumina cai abaixo de 4,0 g/dL, o AG \"normal\" reduz-se em 2,5. AG corrigido = AG medido + 2,5 x (4,0 - albumina) = 11 + 2,5 x (1,6) = 15. Um AG de 15 é elevado, caracterizando uma acidose com anion gap elevado (causada pelo lactato de 5,5 e pela uremia).\n3. Hipercloremia: O cloro de 112 mEq/L está claramente elevado (valor de referência até 106 mEq/L). Isso indica que existe, concomitantemente, uma acidose hiperclorêmica, muito comum após a ressuscitação volêmica com soro fisiológico 0,9% em pacientes sépticos. Portanto, há um distúrbio misto: acidose metabólica com AG elevado (normoclorêmica) e hiperclorêmica.\n\nAnálise das Alternativas:\n\na) Incorreta. Não há evidência de alcalose metabólica (o bicarbonato está baixo e o pH está ácido). O tempo de exposição à vancomicina (1 dia) torna a causa induzida pela droga improvável comparada ao choque.\n\nb) Incorreta. Embora haja AG aumentado (normoclorêmica), o paciente está no Estágio 3 da IRA devido ao débito urinário de 0,2 mL/kg/h por 24 h, e não no Estágio 2. Novamente, a vancomicina é uma causa improvável em 24 h de uso.\n\nc) Incorreta. O pCO2 de 27 mmHg para um HCO3 de 12 mEq/L indica uma resposta respiratória compensatória adequada (conforme a fórmula de Winter: 1,5 x 12 + 8 = 26 +/- 2), e não uma acidose respiratória (que exigiria um pCO2 elevado). O estágio da IRA é 3.\n\nd) Correta. O paciente apresenta acidose metabólica mista (com AG elevado pelo lactato/uremia e hiperclorêmica pelo cloro elevado), IRA estágio 3 (pelo critério de débito urinário) e a etiologia é NTA por isquemia (choque e IC) e sepse.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Distúrbios Ácido-Básicos",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:24.634Z"
+  }
+]

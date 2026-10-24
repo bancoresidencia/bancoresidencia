@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_bda691d2-2221-45c1-8691-e7103b97820e",
+    "originalId": "bda691d2-2221-45c1-8691-e7103b97820e",
+    "statement": "Um paciente de 62 anos, com histórico de hipertensão e diabetes, é atendido em pronto-socorro de um município do interior por um médico plantonista.\nDiante da suspeita de síndrome coronariana aguda, o profissional aciona, por telemedicina, um cardiologista de referência em hospital da capital, que orienta condutas diagnósticas e terapêuticas. Durante o processo, algumas condutas são adotadas pelo médico local sem registro detalhado das orientações recebidas do especialista remoto. O paciente evolui para complicações, e a família questiona judicialmente quem deve ser responsabilizado pelo desfecho.\nConsiderando os princípios éticos e legais aplicáveis à pratica médica, qual é a interpretação correta em relação à responsabilidade profissional nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A responsabilidade recai exclusivamente sobre o médico local, especialmente porque não registrou detalhadamente as orientações recebidas do especialista remoto e, também, por ser o executor das condutas por ter contato físico com o paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A responsabilidade é apenas do especialista remoto, pois foi ele quem definiu a conduta terapêutica diante do quadro clínico suspeito em razão de ter sido acionado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ambos os médicos têm responsabilidade assistencial, devendo responder de forma solidária pela qualidade do atendimento, cada um dentro de sua esfera de atuação e decisão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Uma vez que a orientação foi remota e sem exame físico presencial, a atuação do especialista tem caráter consultivo e, em regra, não estabelece vínculo assistencial direto, não gerando sua responsabilidade pelo desfecho.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A resolução dessa questão exige o conhecimento das normas éticas e legais que regem a telemedicina no Brasil, fundamentadas principalmente na Resolução do Conselho Federal de Medicina (CFM) nº 2.314/2022.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a falha no registro detalhado das orientações seja uma infração ética e dificulte a defesa do médico local, a responsabilidade não é exclusiva dele. Na interconsulta por telemedicina, o especialista que fornece as orientações também assume responsabilidade técnica sobre o que foi prescrito ou sugerido. A execução física do procedimento não anula a responsabilidade intelectual do especialista remoto.\n\nAlternativa b) Incorreta. O médico que está presencialmente com o paciente detém a autonomia clínica para decidir se as orientações do especialista são aplicáveis à realidade imediata do paciente. Ele não é um mero executor passivo; ele deve avaliar a segurança das condutas sugeridas. Portanto, a responsabilidade não pode ser atribuída apenas ao médico remoto.\n\nAlternativa c) Correta. Este é o entendimento atual estabelecido pelo CFM. Na teleinterconsulta (quando dois médicos trocam informações sobre um caso), ambos compartilham a responsabilidade assistencial. O médico assistente (local) é responsável pela execução e pelo acompanhamento direto, enquanto o médico consultor (remoto) responde pela qualidade e precisão das orientações técnicas fornecidas. Ambos respondem de forma solidária pelo desfecho, respeitando-se a parcela de atuação de cada um no processo.\n\nAlternativa d) Incorreta. A orientação remota estabelece, sim, um vínculo profissional e assistencial. O fato de não haver exame físico presencial por parte do especialista não o isenta de responsabilidade, uma vez que suas decisões influenciaram diretamente o manejo do paciente. O especialista, ao aceitar o caso via telemedicina, assume o dever de zelar pela correção técnica de suas instruções.\n\nResumo didático: Na prática da telemedicina, a responsabilidade médica é compartilhada. O médico local responde pelas ações executadas e pela escolha de seguir as orientações, e o médico remoto responde pelas orientações técnicas fornecidas. Em caso de complicações, a justiça e os conselhos de ética avaliam a conduta de ambos dentro de suas respectivas esferas de decisão.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  },
+  {
+    "id": "AJUDA_bdb22a28-0eea-4968-8f53-e7f5fdb4082f",
+    "originalId": "bdb22a28-0eea-4968-8f53-e7f5fdb4082f",
+    "statement": "Paciente, sexo feminino, 35 anos, que após cirurgia abdominal apresenta um abaulamento na região da cicatriz cirúrgica, acompanhado de dor e sensação de peso. O tipo de hérnia mais provável e o principal fator de risco associado são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia umbilical, com obesidade como principal fator de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hérnia de spiegel, com gravidez como principal fator de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hérnia incisional, com infecção do sítio cirúrgico como principal fator de risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hérnia epigástrica, com ascite como principal fator de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Comentário da questão:\n\nO ponto-chave para a resolução desta questão é a localização do abaulamento: a região da cicatriz cirúrgica. Por definição, qualquer hérnia que se desenvolva através de uma fraqueza ou falha na cicatrização de uma incisão cirúrgica prévia é classificada como hérnia incisional.\n\nAlternativa a) Incorreta. A hérnia umbilical localiza-se especificamente no anel umbilical. Embora a obesidade seja um fator de risco sistêmico para o desenvolvimento de hérnias devido ao aumento da pressão intra-abdominal, o relato de surgimento sobre uma cicatriz cirúrgica direciona o diagnóstico para o tipo incisional, e não umbilical.\n\nAlternativa b) Incorreta. A hérnia de Spiegel é um defeito que ocorre na linha semilunar, na borda lateral do músculo reto abdominal. É uma hérnia rara e não tem relação direta com cicatrizes cirúrgicas prévias. A gravidez aumenta a pressão abdominal, mas não é o fator principal para este tipo específico.\n\nAlternativa c) Correta. A hérnia incisional é a complicação tardia mais comum de incisões abdominais. Ocorre devido ao fechamento inadequado ou à má cicatrização da aponeurose. A infecção do sítio cirúrgico é amplamente reconhecida na literatura médica como o principal fator de risco local, pois os processos inflamatórios e enzimáticos da infecção destroem o colágeno e comprometem a integridade dos tecidos e da sutura, levando à deiscência aponeurótica.\n\nAlternativa d) Incorreta. A hérnia epigástrica ocorre na linha alba, no espaço entre o apêndice xifoide e o umbigo. Embora a ascite seja um fator de risco importante para o surgimento ou complicação de hérnias (como a umbilical em pacientes cirróticos), ela não define a etiologia de uma hérnia que surge especificamente sobre uma cicatriz de cirurgia anterior.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  },
+  {
+    "id": "AJUDA_bdcdeeb4-7d4d-4c72-9fb7-6594acb56a07",
+    "originalId": "bdcdeeb4-7d4d-4c72-9fb7-6594acb56a07",
+    "statement": "Gestante foi ao pré-natal com resultado de sorologia para toxoplasmose realizada na 18ª semana de gestação, demonstrado na imagem (IgG: Reagente / IgM: Não reagente). Assinale a alternativa CORRETA de acordo com as diretrizes brasileiras.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O resultado da Avidez de IgG não é importante para definir a conduta. Aguardar resultado da amniocentese para iniciar tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avidez de IgG, evidencia infecção antiga. Encaminhar para o pré-natal de risco habitual para acompanhamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O resultado da Avidez de IgG não modifica a conduta. Iniciar tratamento com sulfadiazina, pirimetamina e ácido folínico, até resultado de amniocentese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avidez de IgG evidencia infecção antiga. Realizar amniocentese, se PCR positivo, iniciar tratamento com sulfadiazina, pirimetamina e ácido folínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Perfil Sorológico:\nO resultado apresentado (IgG reagente e IgM não reagente) em uma gestante na 18ª semana de gestação indica uma infecção crônica, ou seja, uma infecção ocorrida previamente à gestação. O IgG positivo marca a memória imunológica, enquanto o IgM negativo afasta uma infecção aguda recente.\n\nInterpretação da Conduta:\nDe acordo com o Protocolo de Notificação e Investigação da Toxoplasmose Gestacional e Congênita do Ministério da Saúde, gestantes com esse perfil sorológico são consideradas imunes. Portanto, não há risco de transmissão vertical do parasita nesta gestação, não sendo necessários novos exames sorológicos para toxoplasmose, testes de avidez, procedimentos invasivos ou terapias medicamentosas.\n\nExplicação das Alternativas:\n\nAlternativa (a) Incorreta: O teste de avidez de IgG é indicado apenas quando o IgM é reagente (especialmente se identificado antes de 16 semanas), para diferenciar infecção aguda recente de infecção antiga. No caso de IgM não reagente, a avidez é desnecessária. Não há indicação de amniocentese ou tratamento, pois não há suspeita de infecção ativa.\n\nAlternativa (b) Correta: O perfil IgG reagente e IgM não reagente confirma imunidade (infecção antiga). Como não existe risco para o feto, a paciente deve ser tranquilizada e mantida no pré-natal de risco habitual (baixo risco).\n\nAlternativa (c) Incorreta: O esquema terapêutico com sulfadiazina, pirimetamina e ácido folínico (esquema tríplice) é utilizado apenas em casos de infecção fetal confirmada (via amniocentese/PCR) ou em casos de alta suspeita de infecção aguda materna após a 18ª semana. Aqui, a sorologia descarta infecção aguda.\n\nAlternativa (d) Incorreta: Embora identifique corretamente que se trata de uma infecção antiga, a alternativa propõe erroneamente a realização de amniocentese e tratamento. Procedimentos invasivos e medicamentos com potencial toxicidade (como a pirimetamina) são contraindicados para gestantes imunes.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Infecções Congênitas na Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  },
+  {
+    "id": "AJUDA_bdd3116a-1c52-48dd-81e8-1f629f38b588",
+    "originalId": "bdd3116a-1c52-48dd-81e8-1f629f38b588",
+    "statement": "Paciente de 54 anos, previamente hígido, procura a emergência com dor torácica pleurítica há 12 horas e dispneia aos esforços moderados. PA 122x76 mmHg, FC 92 bpm, SatO2 95% em ar ambiente, FR 20 irpm, sem sinais de choque ou síncope. Exame físico sem achados relevantes. D-dímero elevado e angiotomografia de tórax mostram trombo em ramos segmentares da artéria pulmonar direita, sem sinais de sobrecarga importante de ventrículo direito. Troponina e BNP normais. Calculado o sPESI, o escore é 0. O paciente tem boa rede de apoio, entende as orientações e não tem contraindicações à anticoagulação oral. Qual a conduta mais adequada segundo as evidências e diretrizes atuais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação em UTI e trombólise sistêmica com alteplase, pois todo TEP confirmado deve ser considerado de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação em enfermaria com heparina não fracionada em bomba de infusão e posterior transição para varfarina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alta hospitalar contraindicada, pois todo TEP exige pelo menos 72 horas de observação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anticoagulação ambulatorial com anticoagulante oral direto e seguimento precoce, pois se trata de TEP de baixo risco (sPESI 0).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Colocação de filtro de veia cava inferior sem anticoagulação, pois o risco de sangramento é desconhecido.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta um paciente com Tromboembolismo Pulmonar (TEP) agudo que deve ser estratificado para definir a conduta. Os pontos-chave são:\n1. Estabilidade hemodinâmica: PA normal e ausência de sinais de choque classificam o TEP, inicialmente, como não sendo de alto risco.\n2. Marcadores e exames de imagem: Troponina e BNP normais, associados à ausência de sobrecarga de ventrículo direito na angiotomografia, excluem o risco intermediário.\n3. Escore de gravidade: O sPESI (Simplified Pulmonary Embolism Severity Index) igual a 0 indica baixíssimo risco de mortalidade em 30 dias (cerca de 1%).\n4. Critérios sociais: O paciente tem boa rede de apoio e compreende as orientações, o que é fundamental para a segurança do tratamento domiciliar.\n\nSegundo as diretrizes da Sociedade Europeia de Cardiologia (ESC) e da Sociedade Brasileira de Cardiologia, pacientes com TEP de baixo risco (sPESI 0), sem disfunção de VD e com condições sociofamiliares adequadas, podem receber alta precoce (em menos de 24 horas) ou até mesmo tratamento inteiramente ambulatorial.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A trombólise sistêmica é indicada apenas para o TEP de alto risco (instabilidade hemodinâmica/choque obstrutivo). O paciente em questão está estável.\n\nAlternativa b) Incorreta. Embora a internação em enfermaria tenha sido o padrão por muito tempo, as evidências atuais demonstram que o tratamento ambulatorial é seguro para o baixo risco. Além disso, os anticoagulantes orais diretos (como rivaroxabana ou apixabana) são preferíveis à combinação heparina/varfarina pela facilidade posológica e menor necessidade de monitorização.\n\nAlternativa c) Incorreta. Não existe a obrigatoriedade de 72 horas de observação para todos os casos. Pacientes de baixo risco que preenchem critérios de segurança (como os critérios de Hestia ou sPESI 0) podem ser liberados rapidamente.\n\nAlternativa d) Correta. Esta é a conduta preconizada para o TEP de baixo risco. O uso de Anticoagulantes Orais Diretos (DOACs) dispensa a ponte com heparina parenteral em muitos esquemas e permite um tratamento domiciliar seguro, desde que haja seguimento médico precoce garantido.\n\nAlternativa e) Incorreta. O filtro de veia cava inferior é reservado para casos em que existe contraindicação absoluta à anticoagulação ou quando ocorre falha terapêutica (novo embolismo mesmo com anticoagulação adequada). O enunciado afirma explicitamente que o paciente não tem contraindicações.\n\nGABARITO: LETRA D",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  },
+  {
+    "id": "AJUDA_bdd46150-feb5-448b-b12d-88dd79cca6c6",
+    "originalId": "bdd46150-feb5-448b-b12d-88dd79cca6c6",
+    "statement": "Homem de 50 anos apresenta hipertensão arterial sistêmica (HAS) de difícil controle há alguns anos, em tratamento irregular. É atendido na emergência com quadro súbito de dispneia progressiva de forte intensidade, estertores em “maré montante” das bases aos ápices e escarro róseo. Nega história pregressa de doença coronariana e tabagismo. A PA era de 220x140mmHg e a frequência cardíaca (FC) de 130bpm, com ritmo regular. O diagnóstico e a melhor conduta terapêutica, além de iniciar O2, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "edema agudo de pulmão / indicar nitratos e digitálicos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "edema agudo de pulmão / indicar diuréticos e nitratos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "embolia pulmonar / heparinização plena",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "embolia pulmonar / indicar trombolíticos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO paciente apresenta um quadro clássico de Emergência Hipertensiva manifestada como Edema Agudo de Pulmão (EAP). Os elementos fundamentais para o diagnóstico são a hipertensão arterial severa (220/140 mmHg), a dispneia súbita de forte intensidade e o exame físico com estertores crepitantes em maré montante (indicando que o líquido está subindo das bases em direção aos ápices pulmonares). O escarro róseo é um sinal patognomônico de edema alveolar de origem cardiogênica, decorrente do extravasamento de fluido e hemácias para os alvéolos.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. O diagnóstico de edema agudo de pulmão está correto, porém a conduta terapêutica peca na indicação de digitálicos. A digoxina e outros digitálicos possuem início de ação lento e não exercem papel no manejo agudo da emergência hipertensiva ou do edema agudo. Eles seriam cogitados apenas se houvesse uma arritmia supraventricular (como fibrilação atrial) com alta resposta ventricular associada, o que não é o caso, já que o ritmo é regular.\n\nAlternativa b) Correta. O diagnóstico é Edema Agudo de Pulmão. A conduta terapêutica padrão envolve a redução imediata da pré-carga e da pós-carga. Os nitratos (como nitroglicerina ou nitroprussiato de sódio) são fundamentais por serem vasodilatadores potentes e de ação rápida, reduzindo a pressão arterial e aliviando a congestão pulmonar. Os diuréticos de alça (furosemida) são essenciais tanto pelo seu efeito venodilatador inicial quanto pela ação diurética posterior, ajudando a reduzir o volume circulante.\n\nAlternativa c) Incorreta. A embolia pulmonar (tromboembolismo venoso) manifesta-se tipicamente com dispneia e dor torácica, mas não costuma apresentar estertores em maré montante ou escarro róseo (sinais de congestão alveolar esquerda). Além disso, o quadro de hipertensão extrema (220/140 mmHg) aponta diretamente para uma etiologia hipertensiva/cardiogênica. No TEP grave, a tendência é a hipotensão por falência do ventrículo direito.\n\nAlternativa d) Incorreta. Assim como na alternativa anterior, o diagnóstico de embolia pulmonar não condiz com os achados clínicos de congestão pulmonar bilateral e hipertensão severa. O uso de trombolíticos é restrito a casos de TEP de alto risco com instabilidade hemodinâmica (choque obstrutivo), o que é o oposto do quadro de pico hipertensivo apresentado pelo paciente.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  },
+  {
+    "id": "AJUDA_bdd852f4-4f6b-4221-a662-24fd7a871d49",
+    "originalId": "bdd852f4-4f6b-4221-a662-24fd7a871d49",
+    "statement": "A estenose hipertrófica de piloro (EHP) apresenta-se com vômitos não biliosos em jato. Sobre a semiologia abdominal e achados diagnósticos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A palpação da \"oliva pilórica\", uma massa firme, móvel e indolor no epigástrio ou quadrante superior direito, é patognomônica, sendo melhor percebida logo após o vômito com o estômago vazio e a musculatura abdominal relaxada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "As ondas peristálticas visíveis (Kussmaul) progridem da esquerda para a direita no epigástrio, mas são um sinal tardio e inespecífico, presente na maioria dos casos de refluxo gastroesofágico grave, não auxiliando no diagnóstico diferencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O exame físico é pouco sensível, sendo a ultrassonografia abdominal mandatória em todos os casos, diagnosticando EHP quando a espessura da camada muscular do piloro é menor que 2 mm e o comprimento do canal pilórico menor que 10 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O sinal de Dance (fossa ilíaca direita vazia) é característico da EHP, indicando a migração do piloro hipertrofiado para o hipocôndrio direito e a ausência de gás no ceco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): A oliva pilórica é o achado clássico da estenose hipertrófica do piloro (EHP) e é considerada um sinal patognomônico. Ela corresponde ao músculo pilórico espessado. A técnica correta de palpação exige que o examinador esteja calmo e a musculatura abdominal do lactente esteja relaxada. O momento logo após o vômito é ideal porque o estômago foi descomprimido e a criança geralmente apresenta um período de relaxamento ou exaustão, facilitando a identificação da massa firme e móvel no andar superior do abdome.\n\nAlternativa B (Incorreta): As ondas peristálticas visíveis, que se deslocam da esquerda para a direita, refletem a luta do estômago contra a obstrução pilórica. Embora possam não estar presentes em fases muito iniciais, elas são um sinal importante de obstrução de saída gástrica e auxiliam significativamente no diagnóstico diferencial, não sendo um achado esperado no refluxo gastroesofágico (DRGE), onde não há obstrução mecânica ao esvaziamento.\n\nAlternativa C (Incorreta): Embora a ultrassonografia seja o padrão-ouro atual pela sua alta sensibilidade e especificidade, o exame físico é muito sensível em mãos experientes. Os valores diagnósticos citados na alternativa estão incorretos: a EHP é confirmada quando a espessura da musculatura pilórica é maior ou igual a 3 mm (ou 4 mm em alguns protocolos) e o comprimento do canal pilórico é maior ou igual a 14-17 mm. Os valores de 2 mm e 10 mm são considerados normais para a anatomia infantil.\n\nAlternativa D (Incorreta): O sinal de Dance é característico da intussuscepção intestinal (invaginação intestinal). Ele ocorre porque a massa intussusceptada progride pelo cólon, deixando a fossa ilíaca direita com uma sensação de vazio à palpação. Não existe relação entre esse sinal e a migração do piloro na EHP. No caso da estenose do piloro, o problema é puramente a hipertrofia muscular local no canal pilórico.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  },
+  {
+    "id": "AJUDA_bde22ec1-d389-440a-a7f6-f20c3f6940fa",
+    "originalId": "bde22ec1-d389-440a-a7f6-f20c3f6940fa",
+    "statement": "Leia o caso a seguir.\n\nA.S.D, 65 anos, feminino, vem à consulta médica, na Unidade Básica de Saúde, queixando-se de pigarro matinal e dispneia aos médios esforços. Hipertensa há dez anos, hipotireoidismo há cinco anos. Sedentária, tabagista 35 maços/ano. Sem história familiar relevante. Filha que a acompanha mostra-se preocupada com o tabagismo da mãe, solicitando apoio para essa demanda.\n\nCom base no relato, a conduta adequada para o caso em questão compreende encaminhamento para o grupo de cessação tabágica e",
+    "options": [
+      {
+        "id": "A",
+        "text": "rastreio para DPOC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "prescrição de beta agonista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "TC de tórax de baixa dosagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "prescrição de antimuscarínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente tem 65 anos e uma carga tabágica expressiva de 35 maços/ano. Esses dois fatores, associados ao fato de ser fumante ativa, colocam-na em um grupo de alto risco para o desenvolvimento de neoplasia pulmonar. Além disso, ela apresenta sintomas respiratórios (pigarro e dispneia) que exigem investigação.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O rastreio universal da DPOC em pacientes assintomáticos não é recomendado pelas principais diretrizes (como a USPSTF). No caso de pacientes sintomáticos, como esta senhora, o termo correto seria investigação diagnóstica por meio da espirometria, e não rastreio. Embora a espirometria seja necessária para avaliar a dispneia e o pigarro, a prioridade de rastreamento preventivo em termos de mortalidade para essa carga tabágica específica é a neoplasia de pulmão.\n\nAlternativa (b) Incorreta. Não se deve prescrever broncodilatadores (como beta-agonistas) de forma empírica sem antes realizar um diagnóstico funcional respiratório. A dispneia aos médios esforços em uma paciente hipertensa e tabagista pode ter causas pulmonares, cardíacas ou até mesmo estar relacionada ao sedentarismo e ao hipotireoidismo.\n\nAlternativa (c) Correta. De acordo com as diretrizes atuais (como as da USPSTF e da Sociedade Brasileira de Pneumologia e Tisiologia), o rastreamento de câncer de pulmão está indicado para adultos entre 50 e 80 anos que tenham uma carga tabágica de 20 maços/ano ou mais e que sejam fumantes ativos ou tenham parado nos últimos 15 anos. A paciente cumpre todos os critérios: tem 65 anos e 35 maços/ano. O exame de escolha é a tomografia computadorizada (TC) de tórax de baixa dosagem de radiação, anualmente. Esta intervenção tem impacto direto na redução da mortalidade específica por câncer de pulmão.\n\nAlternativa (d) Incorreta. Assim como na alternativa B, a prescrição de antimuscarínicos (outro tipo de broncodilatador) sem a confirmação de uma doença obstrutiva (como a DPOC) por meio de espirometria é uma conduta inadequada e precipitada.\n\nResumo da conduta:\nDiante de uma paciente de 65 anos com carga tabágica de 35 maços/ano, a prioridade de rastreamento oncológico é a TC de tórax de baixa dosagem. Simultaneamente, deve-se proceder com a investigação diagnóstica da dispneia (espirometria e avaliação cardiovascular) e o apoio à cessação tabágica já mencionado no enunciado.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  },
+  {
+    "id": "AJUDA_bde4230d-5e0f-4e26-a3d5-93eac05998ce",
+    "originalId": "bde4230d-5e0f-4e26-a3d5-93eac05998ce",
+    "statement": "Paciente de 54 anos, com história de dor torácica súbita, evoluindo com perda de consciência em casa. Os familiares iniciaram manobras de reanimação cardiopulmonar. O SAMU chegou após 6 minutos e evidenciou a presença do DEA do ritmo de fibrilação ventricular.\n\nDurante o atendimento, após o 1o choque e manutenção das compressões torácicas, qual é a conduta adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar atropina EV 1 mg imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar trombólise empírica por possível infarto agudo do miocárdico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Interromper compressões para intubação orotraqueal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter RCP por 2 minutos, sem checar pulso, e administrar adrenalina EV a cada 3–5 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o protocolo de Suporte Avançado de Vida Cardiovascular (ACLS) da American Heart Association (AHA) para o manejo de ritmos chocáveis, como a fibrilação ventricular (FV).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A atropina foi removida das diretrizes de ressuscitação cardiopulmonar (RCP) para parada cardiorrespiratória (PCR) há mais de uma década. Ela não possui indicação no tratamento da fibrilação ventricular, sendo utilizada atualmente apenas em contextos de bradicardias sintomáticas com pulso.\n\nAlternativa b) Incorreta. A trombólise empírica não faz parte do manejo padrão imediato durante a PCR, mesmo em casos em que o infarto agudo do miocárdio é a causa provável. O tratamento de escolha para a FV é a desfibrilação precoce e compressões de alta qualidade. A trombólise só é considerada em cenários muito específicos, como suspeita fundamentada de tromboembolismo pulmonar, e não como conduta de rotina após o primeiro choque.\n\nAlternativa c) Incorreta. Uma das regras de ouro do ACLS é minimizar interrupções nas compressões torácicas. A intubação orotraqueal é considerada um procedimento secundário em relação às compressões e à desfibrilação. Caso seja decidida a abordagem da via aérea, ela deve ser feita sem interromper as compressões ou com uma pausa máxima de 10 segundos, nunca sendo o motivo para interromper o ciclo de reanimação logo após um choque.\n\nAlternativa d) Correta. Após a administração de um choque, a orientação é o reinício imediato das compressões torácicas por 2 minutos (5 ciclos de 30:2 ou compressões contínuas se houver via aérea avançada), sem realizar checagem de pulso ou de ritmo cardíaco logo após a desfibrilação. A checagem só ocorre ao final dos 2 minutos de RCP. Quanto à adrenalina, no protocolo de ritmos chocáveis (FV/TVSP), ela deve ser administrada na dose de 1 mg a cada 3 a 5 minutos, iniciando-se preferencialmente após o segundo choque. A alternativa descreve corretamente a dinâmica do ciclo e o intervalo da medicação conforme preconizado pelas diretrizes internacionais.\n\nResumo da conduta na FV:\n1. Identificação do ritmo chocável e aplicação do choque.\n2. RCP imediata por 2 minutos (sem checar pulso).\n3. Acesso venoso ou intraósseo.\n4. Checagem de ritmo após 2 minutos. Se persistir FV, segundo choque e reinício da RCP com administração de adrenalina.\n5. Nova checagem após 2 minutos. Se persistir FV, terceiro choque e administração de antiarrítmico (amiodarona ou lidocaína).",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Parada Cardiorrespiratória (PCR)",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  },
+  {
+    "id": "AJUDA_bdebae91-6946-4e84-ac28-8f554564264b",
+    "originalId": "bdebae91-6946-4e84-ac28-8f554564264b",
+    "statement": "Paciente melhora da crise de asma após tratamento adequado, com melhora da saturação. Ao dar alta, você confirma que a técnica está correta. No entanto, mãe relata que nos últimos 3 meses precisou ir ao pronto socorro 3 vezes devido crise de tosse, principalmente ao jogar futebol. Diante do caso descrito, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O paciente apresenta asma controlada e não tem indicação de aumento da medicação no momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O paciente apresenta asma parcialmente controlada, sendo indicado modificar o tratamento para associação de corticoide e beta agonista de longa duração para otimizar o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O paciente apresenta asma não controlada, sendo indicado otimizar o tratamento adicionando imunobiológico para melhor controle dos sintomas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O paciente apresenta asma não controlada, sendo indicado modificar o tratamento para associação de corticoide e beta agonista de longa duração para melhor controle dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a classificação do controle da asma e a conduta terapêutica subsequente, baseando-se nas diretrizes globais (como as da GINA – Global Initiative for Asthma).\n\nAnálise do quadro clínico:\nO paciente apresenta dois marcadores principais de falta de controle:\n1. Limitação de atividades: Tosse ao jogar futebol indica que a asma está interferindo na vida diária.\n2. Exacerbações frequentes: Três idas ao pronto-socorro nos últimos três meses indicam um alto risco de novas crises e falha no tratamento de manutenção atual.\n\nDe acordo com os critérios de controle (que avaliam sintomas diurnos, despertares noturnos, necessidade de medicação de resgate e limitação de atividades), a presença de sintomas que limitam o esforço físico e o histórico de exacerbações graves classificam a asma deste paciente como não controlada.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O paciente não está controlado. A asma é considerada controlada apenas quando não há sintomas noturnos, as limitações de atividades são inexistentes e os sintomas diurnos e o uso de resgate ocorrem, no máximo, duas vezes por semana.\n\nAlternativa b) Incorreta. Embora a conduta medicamentosa (associação de corticoide e LABA) esteja no caminho certo para o escalonamento, a classificação de asma parcialmente controlada é insuficiente para um paciente que teve três exacerbações com necessidade de pronto-socorro em um curto intervalo de tempo.\n\nAlternativa c) Incorreta. O uso de imunobiológicos (como anti-IgE ou anti-IL5) é reservado para o Passo 5 do tratamento (asma grave de difícil controle), após o paciente já estar em uso de doses altas de corticoide inalatório associado a LABA, sem sucesso. Não se inicia imunobiológico antes de otimizar a terapia convencional.\n\nAlternativa d) Correta. O paciente é classificado como tendo asma não controlada devido à frequência de crises recentes e à limitação em atividades físicas (futebol). A conduta preconizada para o escalonamento do tratamento (step-up) é associar o corticoide inalatório (CI) a um beta-2-agonista de longa duração (LABA), visando estabilizar a inflamação das vias aéreas e prevenir novos episódios de broncoespasmo.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  },
+  {
+    "id": "AJUDA_bdf248d3-a6ce-4090-926b-635701d1dc09",
+    "originalId": "bdf248d3-a6ce-4090-926b-635701d1dc09",
+    "statement": "Recém-nascido a termo com 12 horas de vida apresenta cianose refratária e desconforto respiratório progressivo. História de sofrimento fetal durante o trabalho de parto. Gasometria arterial pré-ductal mostra saturação de 75% e pós-ductal de 68%. Ecocardiograma revela pressões na artéria pulmonar superiores às pressões sistêmicas com shunt direito-esquerdo pelo canal arterial. Determine a estratégia terapêutica vasodilatadora específica recomendada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sildenafil oral na dose de 1 mg/kg a cada 8 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tolazolina endovenosa em infusão contínua de 2 mg/kg/hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prostaciclina nebulizada na dose de 50 mcg/kg a cada 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Óxido nítrico inalatório iniciando com 20 ppm e reduzindo para 5 ppm.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Bosentana oral na dose de 2 mg/kg duas vezes ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um recém-nascido a termo com Hipertensão Pulmonar Persistente do Recém-Nascido (HPPRN). Os sinais clássicos apresentados são a cianose refratária à oferta de oxigênio, a diferença significativa de saturação pré- e pós-ductal (maior do que 5% a 10%, indicando shunt direita-esquerda pelo canal arterial) e a confirmação ecocardiográfica de pressões pulmonares superiores às sistêmicas. O objetivo do tratamento é reduzir a resistência vascular pulmonar sem causar hipotensão sistêmica.\n\nAlternativa a: Incorreta. O sildenafil é um inibidor da fosfodiesterase-5 que promove vasodilatação pulmonar ao aumentar o GMPc. Embora seja uma opção terapêutica, ele é geralmente utilizado como terapia adjuvante em casos refratários ou em serviços de saúde que não dispõem de óxido nítrico. Não é a terapia de primeira escolha para um RN com quadro agudo e grave.\n\nAlternativa b: Incorreta. A tolazolina é um vasodilatador não seletivo que foi muito utilizado no passado. Entretanto, seu uso caiu em desuso na neonatologia moderna devido à falta de seletividade pulmonar, causando hipotensão sistêmica grave, além de efeitos colaterais como hemorragia digestiva e oligúria.\n\nAlternativa c: Incorreta. A prostaciclina (ou seus análogos) pode ser utilizada de forma inalada como terapia de resgate em casos de falha ao tratamento convencional, mas não é a recomendação inicial padrão. A dose e o intervalo citados também não correspondem aos protocolos de primeira linha para HPPRN.\n\nAlternativa d: Correta. O óxido nítrico inalatório (ONi) é o tratamento padrão-ouro para a HPPRN. Sua principal vantagem é a seletividade: por ser inalado, ele promove vasodilatação apenas nos alvéolos ventilados, melhorando a relação ventilação-perfusão. Além disso, ao atingir a corrente sanguínea, liga-se rapidamente à hemoglobina e é inativado, o que evita a vasodilatação sistêmica e a hipotensão. A dose inicial recomendada pela literatura é de 20 ppm (partes por milhão).\n\nAlternativa e: Incorreta. A bosentana é um antagonista dos receptores de endotelina, utilizada principalmente no tratamento da hipertensão arterial pulmonar crônica em adultos e crianças maiores. Não tem indicação no manejo agudo da hipertensão pulmonar persistente neonatal nas primeiras horas de vida.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Outros Distúrbios do Período Neonatal",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:34.625Z"
+  }
+]

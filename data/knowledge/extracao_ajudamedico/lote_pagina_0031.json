@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_08164eac-5245-4e8f-b79f-da79b7550911",
+    "originalId": "08164eac-5245-4e8f-b79f-da79b7550911",
+    "statement": "Um menino de 4 anos está sendo atendido no pronto-socorro com provável diagnóstico de amigdalite estreptocócica. Ao exame físico, apresenta frequência cardíaca de 140 bpm, frequência respiratória de 30 ipm, pressão arterial de 65 x 40 mmHg e tempo de perfusão periférica de 4 segundos. A conduta médica imediata apropriada para este paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar cultura de orofaringe para documentar infecção estreptocócica e prescrever amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar paciente para sala de emergência, administrar expansão com soro fisiológico 20 mL/kg e primeira dose de antibiótico intravenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar antitérmico e penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colher hemograma, proteína C reativa e culturas, e aguardar o resultado para definir conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um menino de 4 anos com um quadro infeccioso (provável amigdalite) associado a sinais claros de instabilidade hemodinâmica. A frequência cardíaca elevada (140 bpm), o tempo de perfusão periférica prolongado (4 segundos) e, principalmente, a pressão arterial sistólica de 65 mmHg (abaixo do limite inferior para a idade, que seria cerca de 78 mmHg pela fórmula 70 + [2 x idade]) configuram um quadro de choque séptico.\n\nAlternativa a: Incorreta. Embora a cultura de orofaringe e o uso de amoxicilina sejam condutas adequadas para uma amigdalite estreptocócica comum, o paciente em questão apresenta sinais de choque. Priorizar exames diagnósticos locais e antibioticoterapia oral em um paciente instável retarda o tratamento de suporte vital necessário.\n\nAlternativa b: Correta. O paciente apresenta choque séptico e deve ser manejado imediatamente na sala de emergência. A conduta prioritária envolve a estabilização hemodinâmica com expansão volêmica imediata (soro fisiológico a 20 mL/kg) para restaurar a perfusão tecidual e a administração precoce de antibiótico intravenoso (na primeira hora), visando ao controle do foco infeccioso que desencadeou o choque.\n\nAlternativa c: Incorreta. O uso de antitérmicos e penicilina benzatina (administração intramuscular) é indicado para faringoamigdalites em pacientes estáveis. Em um quadro de choque, a absorção de medicamentos por via intramuscular é errática devido à má perfusão, e essa conduta ignora a necessidade crítica de reposição volêmica.\n\nAlternativa d: Incorreta. No choque séptico, o tratamento deve ser instituído com base no reconhecimento clínico (a \"hora de ouro\"). Aguardar resultados de exames laboratoriais (hemograma e PCR) para iniciar a conduta aumenta significativamente a mortalidade. A coleta de culturas é importante, mas deve ser feita rapidamente, sem atrasar a expansão volêmica e a primeira dose do antibiótico.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Emergências Pediátricas",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:23.833Z"
+  },
+  {
+    "id": "AJUDA_081a25d1-5656-4cfc-85bc-2a85387ce7ac",
+    "originalId": "081a25d1-5656-4cfc-85bc-2a85387ce7ac",
+    "statement": "Pode-se afirmar que na osteomielite hematogênica aguda, o exame de imagem mais sensível para o diagnóstico diferencial com neoplasia musculoesquelética é a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "cintilografia óssea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "radiografia simples",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ressonância magnética",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "tomografia computadorizada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c) ressonância magnética.\n\nA osteomielite hematogênica aguda e as neoplasias musculoesqueléticas (como o sarcoma de Ewing ou o osteossarcoma) podem apresentar quadros clínicos e radiológicos iniciais muito semelhantes, incluindo dor, aumento de volume local e sinais sistêmicos. Por isso, a escolha do exame de imagem deve priorizar aquele com maior capacidade de detalhamento anatômico e sensibilidade para alterações precoces.\n\na) Incorreta. A cintilografia óssea (geralmente com tecnécio-99m) possui alta sensibilidade para detectar aumento do metabolismo ósseo, sendo útil para localizar processos inflamatórios ou tumorais em estágios iniciais. No entanto, sua especificidade é baixa. Ela mostra hipercaptação (pontos quentes) tanto em processos infecciosos quanto em neoplasias, o que dificulta o diagnóstico diferencial preciso entre as duas condições apenas por este método.\n\nb) Incorreta. A radiografia simples é sempre o exame inicial, mas sua sensibilidade na fase aguda da osteomielite é muito baixa. Alterações ósseas só se tornam visíveis após 7 a 14 dias do início da infecção, quando já ocorreu perda de pelo menos 30% a 50% da massa óssea. Em neoplasias, os achados também podem ser sutis no início, não sendo o exame ideal para o diferencial precoce e sensível.\n\nc) Correta. A ressonância magnética (RM) é considerada o padrão-ouro e o exame mais sensível para o diagnóstico de osteomielite aguda, podendo detectar alterações medulares em apenas 3 a 5 dias após o início dos sintomas. Sua grande vantagem no diagnóstico diferencial com neoplasias reside na alta resolução de contraste para tecidos moles e medula óssea. A RM permite avaliar a extensão da lesão, a presença de coleções (abscessos de Brodie ou subperiosteais) e as características da massa tumoral ou do edema perilesional, facilitando a distinção entre um processo infeccioso e uma lesão neoplásica.\n\nd) Incorreta. A tomografia computadorizada (TC) é excelente para avaliar a arquitetura cortical do osso, detectar sequestros ósseos (osso necrótico), calcificações e destruição óssea detalhada. Contudo, para a detecção precoce de alterações na medula óssea e para o estudo detalhado das partes moles adjacentes — fundamentais para diferenciar infecção de tumor —, a TC é inferior à ressonância magnética. Além disso, envolve radiação ionizante, o que é uma desvantagem, especialmente em pacientes pediátricos, que são o público-alvo principal da osteomielite hematogênica aguda.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Oncologia Ortopédica e Osteomielite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:23.833Z"
+  },
+  {
+    "id": "AJUDA_081a970c-aa65-42a6-9681-89483eda9658",
+    "originalId": "081a970c-aa65-42a6-9681-89483eda9658",
+    "statement": "Mulher de 62 anos de idade está em admissão hospitalar na enfermaria devido a pneumonia adquirida na comunidade, em tratamento com ceftriaxona, azitromicina e hidrocortisona. A paciente nega comorbidades, apresenta glicemia capilar na admissão da madrugada de 125 mg/dL e, na manhã, em jejum, de 110 mg/dL. Ela não tem história prévia de diabetes melito e não possui hemoglobina glicada medida. De acordo com a Diretriz da Sociedade Brasileira de Diabetes de 2025, a monitorização da glicemia",
+    "options": [
+      {
+        "id": "A",
+        "text": "não deve ser realizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "deve ser realizada com medidas diárias antes do café da manhã e antes do jantar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "deve ser realizada com medidas diárias antes de todas as refeições.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deve ser realizada com medidas antes de refeições e 2 horas após refeições.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "deve ser realizada com medidas a cada 4 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Tema: Hiperglicemia hospitalar e monitorização glicêmica segundo a Diretriz da Sociedade Brasileira de Diabetes (SBD).\n\nA paciente em questão não possui diagnóstico prévio de diabetes melito, mas está internada em enfermaria e faz uso de corticoterapia sistêmica (hidrocortisona), além de apresentar glicemias de triagem limítrofes (125 mg/dL e 110 mg/dL). O uso de glicocorticoides é uma das principais causas de hiperglicemia hospitalar em pacientes sem histórico prévio de diabetes. Segundo a Diretriz da SBD, pacientes sem diagnóstico de diabetes em uso de corticoides ou com glicemia de admissão entre 110 e 140 mg/dL devem ser monitorizados inicialmente de forma simplificada por 24 a 48 horas.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A monitorização é obrigatória devido ao risco elevado de hiperglicemia induzida por corticoide e pelos valores admissionais limítrofes, uma vez que a hiperglicemia hospitalar não tratada está associada a piores desfechos clínicos.\n\nAlternativa B - Correta. Para pacientes sem diagnóstico prévio de diabetes que iniciam corticoterapia ou apresentam risco de hiperglicemia, a SBD orienta a triagem com duas medidas capilares ao dia (tipicamente antes do café da manhã e antes do jantar/ao deitar) durante 24 a 48 horas. Se os valores permanecerem inferiores a 140 mg/dL, o rastreio pode ser suspenso; se houver valores a partir de 140 mg/dL, confirma-se hiperglicemia hospitalar e amplia-se a monitorização.\n\nAlternativa C - Incorreta. O esquema de 4 medidas ao dia (antes de todas as refeições principais e ao deitar) é reservado para pacientes com diagnóstico prévio conhecido de diabetes ou para aqueles que já confirmaram hiperglicemia hospitalar e necessitam de insulinoterapia. Não é a conduta inicial de triagem para não diabéticos.\n\nAlternativa D - Incorreta. A monitorização pré e pós-prandial (2 horas após as refeições) é um esquema intensivo voltado para ajustes finos de insulina rápida/ultrarrápida no contexto ambulatorial ou em gestantes, não sendo a conduta padrão de enfermaria.\n\nAlternativa E - Incorreta. Medidas a cada 4 horas são reservadas para pacientes críticos em unidade de terapia intensiva, em uso de bomba de infusão contínua de insulina venosa ou sob nutrição enteral/parenteral contínua em jejum oral.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Pneumonias Bacterianas",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:23.833Z"
+  },
+  {
+    "id": "AJUDA_081efd0b-68c5-49af-bb55-7a93b38756d0",
+    "originalId": "081efd0b-68c5-49af-bb55-7a93b38756d0",
+    "statement": "Paciente do sexo masculino, 35 anos, foi submetido à hernioplastia inguinal direita, por via laparoscópica, pela técnica transabdominal pré-peritoneal. A cirurgia evoluiu sem intercorrências, e o paciente recebeu alta no 1º pós-operatório. No primeiro retorno ambulatorial, após 7 dias da cirurgia, o paciente referia dor inguinal e em face medial de coxa direita, sendo prescritos analgésicos simples para controle álgico. O paciente retorna 6 semanas após a cirurgia, com as mesmas queixas a despeito dos analgésicos prescritos. Ao exame físico, região inguinal direita sem abaulamentos, hematomas ou sinais de recidiva. O provável fator responsável pela dor e a terapia inicial mais adequada no momento são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso de grampos cirúrgicos em região lateral aos vasos epigástricos e abaixo do trato ileopúbico; gabapentina via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "ligadura inadvertida dos vasos gonadais; ultrassom Doppler de testículos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "migração da tela cirúrgica para região abdominal; tomografia de abdome com contraste endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "seroma adjacente à tela cirúrgica; punção guiada por ultrassom.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Nesta questão, abordamos uma complicação clássica após hernioplastias laparoscópicas (como a técnica TAPP): a dor neuropática crônica por lesão nervosa intraoperatória. Para compreender o caso, é fundamental o conhecimento da anatomia da região inguinal vista por via posterior, especificamente o conceito do Triângulo da Dor.\n\nO Triângulo da Dor é delimitado superiormente pelo trato ileopúbico e medialmente pelos vasos gonadais (ou ducto deferente). Dentro deste espaço, situam-se nervos sensitivos importantes: o nervo cutâneo femoral lateral, o ramo femoral do nervo genitofemoral e o nervo femoral. A fixação da tela com grampos ou tachas abaixo do trato ileopúbico e lateralmente aos vasos epigástricos e vasos gonadais frequentemente resulta em lesão ou aprisionamento desses nervos, manifestando-se como dor ou parestesia na região inguinal e face anterior/medial da coxa.\n\nAlternativa (a) Correta: A localização descrita (lateral aos vasos epigástricos e abaixo do trato ileopúbico) corresponde exatamente à área de risco para lesão nervosa (Triângulo da Dor). Como a dor persiste por 6 semanas e possui características neuropáticas, o tratamento inicial deve ser conservador com o uso de neuromoduladores, sendo a gabapentina ou a pregabalina as opções de primeira linha para controle álgico antes de se considerar qualquer intervenção cirúrgica para retirada de grampos.\n\nAlternativa (b) Incorreta: A ligadura dos vasos gonadais poderia causar dor testicular ou atrofia testicular a longo prazo, mas não explicaria a dor irradiada para a face medial da coxa. Além disso, o ultrassom Doppler de testículos não é a conduta inicial para dor com características nitidamente neuropáticas no pós-operatório de hérnia.\n\nAlternativa (c) Incorreta: A migração da tela é uma complicação rara e geralmente ocorre em prazos mais longos, não sendo a causa provável de dor iniciada precocemente no pós-operatório. O quadro clínico de dor em trajeto nervoso é muito mais sugestivo de trauma direto pelos grampos. A tomografia de abdome não é o exame de escolha inicial para esta suspeita.\n\nAlternativa (d) Incorreta: O seroma é uma coleção fluida comum, mas o enunciado afirma que ao exame físico a região inguinal não apresentava abaulamentos. Além disso, a punção de coleções sobre a tela cirúrgica é contraindicada como conduta inicial pelo alto risco de infecção da prótese, devendo ser reservada apenas para casos de suspeita de infecção ou grandes coleções sintomáticas. A dor por seroma seria local e por efeito de massa, não irradiada para a coxa.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:23.833Z"
+  },
+  {
+    "id": "AJUDA_082c968c-6f4d-40da-80c5-a289a32dc50f",
+    "originalId": "082c968c-6f4d-40da-80c5-a289a32dc50f",
+    "statement": "Com base nas recomendações da Sociedade Brasileira de Diabetes (SBD) 2024, analise as afirmativas a seguir e assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glicemia de jejum, HbA1c e TTGO são os primeiros testes de rastreamento de DM2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É recomendado utilizar como ponto de corte de glicemia no teste de tolerância à glicose oral (TTGO) de1h ≥ 209 mg/dl para diagnóstico de DM2 e ≥ 155 mg/dl para detecção de pré diabetes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O teste de tolerância à glicose oral (TTGO) com glicemia de 1h ≥ 200 mg/dL é recomendado para diagnóstico de diabetes mellitus e é superior ao teste de tolerância à glicose oral (TTGO) de 2h em termos de praticidade e desempenho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para diagnóstico de diabetes mellitus, é suficiente a presença de glicemia de jejum ≥ 126 mg/dL em apenas uma amostra de sangue, sem necessidade de confirmação, na presença de sintomas típicos de hiperglicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. Embora a glicemia de jejum, a hemoglobina glicada (HbA1c) e o teste de tolerância à glicose oral (TTGO) de 2 horas sejam exames válidos para o diagnóstico, as diretrizes de rastreamento da Sociedade Brasileira de Diabetes (SBD) priorizam inicialmente a glicemia de jejum e a HbA1c devido à maior praticidade e ao menor custo operacional em comparação ao TTGO, que é frequentemente utilizado como teste confirmatório ou em casos de risco específico.\n\nAlternativa B: Correta. Esta alternativa reflete a principal atualização das diretrizes da SBD 2024, que passou a adotar o posicionamento da International Diabetes Federation (IDF) sobre a glicemia de 1 hora no TTGO. Estudos robustos demonstraram que o valor de 1 hora é um preditor mais sensível de risco cardiovascular e da progressão da doença. Os novos pontos de corte estabelecidos são: glicemia de 1h maior ou igual a 155 mg/dL para detecção de pré-diabetes (ou hiperglicemia intermediária) e glicemia de 1h maior ou igual a 209 mg/dL para o diagnóstico de DM2.\n\nAlternativa C: Incorreta. O valor de corte para diagnóstico de diabetes mellitus tipo 2 no teste de 1 hora, conforme a atualização de 2024, é maior ou igual a 209 mg/dL, e não 200 mg/dL. Embora o teste de 1 hora seja mais prático que o de 2 horas (reduzindo o tempo de espera do paciente), o valor numérico citado na alternativa está incorreto.\n\nAlternativa D: Incorreta. Para o diagnóstico de diabetes mellitus em uma única amostra (sem necessidade de repetição), os critérios da SBD exigem a presença de sintomas inequívocos de hiperglicemia (poliúria, polidipsia, perda de peso) associados a uma glicemia aleatória (colhida a qualquer hora, independentemente do jejum) maior ou igual a 200 mg/dL. Quando o teste utilizado é a glicemia de jejum (maior ou igual a 126 mg/dL) ou a HbA1c (maior ou igual a 6,5%), a recomendação padrão é a confirmação com uma segunda amostra ou a presença de dois testes diferentes alterados na mesma amostra.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:23.833Z"
+  },
+  {
+    "id": "AJUDA_0846027f-75dc-44b3-a0ce-0b03508b465a",
+    "originalId": "0846027f-75dc-44b3-a0ce-0b03508b465a",
+    "statement": "A territorialização é um pressuposto fundamental da Estratégia Saúde da Família (ESF) e da APS. Em termos de planejamento e gestão, a territorialização significa:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Delimitar áreas geográficas restritas para que os profissionais de saúde possam se concentrar no atendimento clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Concentrar os recursos financeiros nos territórios com maior número de habitantes, visando à otimização da escala de atendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reconhecer e analisar as características socioeconômicas, ambientais e epidemiológicas de uma área delimitada para orientar o planejamento local das ações de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Restringir o acesso dos usuários apenas à Unidade Básica de Saúde (UBS) de sua área de moradia, garantindo a exclusividade do atendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Determinar que todas as ações de saúde sejam realizadas exclusivamente dentro da UBS, sem a necessidade de visitas domiciliares ou trabalho de campo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A territorialização na Atenção Primária à Saúde (APS) e na Estratégia Saúde da Família (ESF) vai muito além da simples divisão cartográfica de uma região. Ela é entendida como a compreensão do território vivo, onde as relações sociais, econômicas e culturais ocorrem e influenciam o processo saúde-doença.\n\nAlternativa (a) Incorreta. O objetivo da territorialização não é concentrar o profissional apenas no atendimento clínico individual. Pelo contrário, ela busca ampliar o olhar para além do consultório, permitindo ações de vigilância em saúde, promoção e prevenção baseadas no contexto coletivo e nos determinantes sociais.\n\nAlternativa (b) Incorreta. A gestão e o planejamento no SUS baseiam-se no princípio da equidade e não apenas na densidade populacional ou otimização de escala. Os recursos e as estratégias devem ser direcionados conforme as necessidades e vulnerabilidades de cada território, priorizando quem mais precisa.\n\nAlternativa (c) Correta. Esta alternativa define com precisão o papel da territorialização. Territorializar significa apropriar-se das características específicas de uma área delimitada (perfil epidemiológico, condições de saneamento, riscos ambientais, dinâmica social) para que a equipe possa diagnosticar problemas e planejar ações de saúde que respondam às demandas reais daquela comunidade. É a base para o planejamento ascendente.\n\nAlternativa (d) Incorreta. Embora a territorialização favoreça o vínculo e a adstrição de clientela a uma unidade de referência, o conceito não visa restringir o acesso ou garantir exclusividade de forma punitiva. O foco é a organização do cuidado, a responsabilidade sanitária da equipe sobre aquela população e a garantia de continuidade da assistência.\n\nAlternativa (e) Incorreta. Uma das principais características da ESF é justamente a atuação fora dos muros da Unidade Básica de Saúde. O trabalho de campo, as visitas domiciliares dos Agentes Comunitários de Saúde e da equipe multiprofissional são ferramentas essenciais da territorialização, e não algo a ser descartado.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:23.833Z"
+  },
+  {
+    "id": "AJUDA_0857fd60-3970-4cde-ae5c-f7ce7b98d608",
+    "originalId": "0857fd60-3970-4cde-ae5c-f7ce7b98d608",
+    "statement": "Homem de 64 anos, com adenocarcinoma de reto médio, tocável a 5 cm da borda anal, sem metástases à distância, estádio T3N1. Qual conduta é mais alinhada ao manejo atual?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressecção endoscópica transanal mais radioquimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Radioterapia pélvica exclusiva, sem cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quimiorradioterapia neoadjuvante seguida de ressecção retal com excisão total do mesorreto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Retossigmoidectomia seguida de quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quimioterapia sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um adenocarcinoma de reto médio (localizado a 5 cm da borda anal) em estádio localmente avançado, classificado como T3N1M0 (Estádio III). Para o câncer de reto, o manejo de tumores que invadem além da camada muscular (T3/T4) ou que apresentam acometimento linfonodal (N+) exige uma abordagem multimodal.\n\nAlternativa (a) Incorreta: A ressecção transanal (seja endoscópica ou microcirúrgica) é reservada estritamente para tumores em estádio muito inicial, especificamente T1N0, com características de baixo risco histológico. No estádio T3N1, há invasão da gordura perirretal e presença de metástase linfonodal, exigindo cirurgia radical com linfadenectomia.\n\nAlternativa (b) Incorreta: A radioterapia isolada e exclusiva não é o tratamento padrão com intenção curativa para o estádio T3N1. A cirurgia continua sendo o pilar do tratamento. A estratégia de não realizar cirurgia (Watch and Wait) é uma opção experimental e altamente selecionada apenas para pacientes que apresentam resposta clínica completa após a neoadjuvância, e não uma conduta inicial definida no diagnóstico.\n\nAlternativa (c) Correta: Esta é a conduta padrão-ouro atual para o câncer de reto localmente avançado (Estádios II e III). A quimiorradioterapia neoadjuvante tem como objetivos reduzir o tamanho do tumor (downsizing), diminuir o estádio (downstaging), aumentar as taxas de preservação esfincteriana e, principalmente, reduzir as taxas de recidiva local. A Excisão Total do Mesorreto (ETM) é a técnica cirúrgica obrigatória, pois remove o compartimento gorduroso e linfonodal onde o tumor tem maior probabilidade de disseminação local.\n\nAlternativa (d) Incorreta: A cirurgia seguida de quimioterapia/radioterapia adjuvante era o padrão há décadas. No entanto, estudos clássicos demonstraram que realizar a radioquimioterapia antes da cirurgia (neoadjuvância) é superior em termos de controle local da doença e possui um perfil de efeitos colaterais significativamente menor do que o tratamento realizado após a operação.\n\nAlternativa (e) Incorreta: A quimioterapia sistêmica isolada é indicada primariamente para casos de doença metastática (Estádio IV). Embora existam protocolos modernos de Neoadjuvância Total (TNT) que antecipam a quimioterapia sistêmica, eles ainda são combinados com radioterapia e seguidos de avaliação para cirurgia, não sendo a quimioterapia utilizada como modalidade única em tumores T3N1 com proposta curativa.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": 89.84378859546382,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:23.833Z"
+  },
+  {
+    "id": "AJUDA_085d491d-62c4-446f-a614-d061a109aa6f",
+    "originalId": "085d491d-62c4-446f-a614-d061a109aa6f",
+    "statement": "Com base na Política Nacional de Enfrentamento à Violência contra a Mulher, considerando os princípios do SUS e as diretrizes da Política Nacional de Atenção Integral à Saúde da Mulher, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A violência contra a mulher deve ser tratada como um problema isolado da saúde, com foco exclusivo no atendimento clínico individualizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O enfrentamento à violência contra a mulher exige o reconhecimento de suas múltiplas determinantes sociais e deve ser conduzido por ações intersetoriais e multidimensionais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A dimensão de gênero não deve ser considerada nos protocolos clínicos, pois compromete a imparcialidade do atendimento médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As ações de combate à violência contra a mulher devem ser restritas à esfera da segurança pública, sem envolvimento dos serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa (a) Incorreta. A violência contra a mulher não deve ser vista como um problema isolado da saúde, nem limitada ao atendimento clínico individualizado. De acordo com o princípio da integralidade do SUS, o cuidado deve considerar a paciente em sua totalidade, reconhecendo que a violência possui raízes biopsicossociais que exigem um olhar ampliado para além da lesão física ou do sintoma imediato.\n\nAlternativa (b) Correta. Esta alternativa está em perfeita consonância com a Política Nacional de Enfrentamento à Violência contra a Mulher. A violência é reconhecida como um fenômeno complexo, enraizado em determinantes sociais, culturais e históricos de desigualdade. Por isso, o combate eficaz depende da intersetorialidade, ou seja, da articulação entre diferentes áreas, como saúde, assistência social, segurança pública e justiça, além de uma abordagem multidimensional que acolha todas as necessidades da vítima.\n\nAlternativa (c) Incorreta. A dimensão de gênero é uma categoria de análise fundamental para a saúde pública. Compreender as relações de poder e as desigualdades entre homens e mulheres é essencial para que o médico e a equipe de saúde identifiquem situações de vulnerabilidade e risco. Ignorar o gênero nos protocolos clínicos prejudica a precisão do diagnóstico social e a implementação de medidas preventivas adequadas.\n\nAlternativa (d) Incorreta. O setor da saúde é porta de entrada preferencial e estratégica para mulheres em situação de violência. As diretrizes nacionais estabelecem que os serviços de saúde possuem responsabilidades cruciais, que incluem o acolhimento, o tratamento das consequências físicas e psíquicas, a profilaxia de infecções sexualmente transmissíveis e da gravidez indesejada, além da notificação compulsória dos casos, não podendo estas ser restritas apenas à esfera policial ou jurídica.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:23.833Z"
+  },
+  {
+    "id": "AJUDA_0863ebc7-105f-4f36-95d1-77458314322a",
+    "originalId": "0863ebc7-105f-4f36-95d1-77458314322a",
+    "statement": "O NordICC trial (NEJM 2022) avaliou o rastreamento de câncer colorretal por colonoscopia em cerca de 85 mil adultos (50–64 anos). Após 10 anos, a análise Intention-to-Treat (ITT) — que considera todos os participantes conforme sua randomização inicial, mesmo sem adesão — mostrou redução da incidência (0,98% vs 1,20%; RR 0,82) mas não redução significativa da mortalidade (0,28% vs 0,31%; RR 0,90). Já a análise Per-Protocol (PP) — que considera apenas os que realizaram a colonoscopia — demonstrou reduções mais expressivas, inclusive de mortalidade por câncer colorretal (0,15% vs 0,30%; RR 0,50). Com base na interpretação adequada das análises ITT e PP, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O ITT perde validade em razão da baixa adesão, sendo o PP mais adequado para avaliar resultados, já que reflete apenas quem de fato foi submetido ao exame.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O ITT representa a efetividade de oferecer a colonoscopia em nível populacional, com impacto modesto; já o PP mostra a eficácia do exame em quem aderiu, com benefícios mais consistentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O benefício em PP é suficiente para afirmar que o rastreamento com colonoscopia reduz mortalidade populacional, mesmo que o ITT não tenha mostrado significância estatística.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de duas análises distintas compromete a interpretação, pois ITT e PP fornecem mensagens divergentes, o que enfraquece a aplicabilidade do estudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A forma como o estudo foi conduzido não garante validade metodológica, uma vez que a randomização não elimina viés quando há baixa adesão ao exame.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender essa questão, é fundamental diferenciar dois conceitos centrais em epidemiologia clínica e bioestatística: Intention-to-Treat (ITT) e Per-Protocol (PP).\n\nA análise ITT (Intenção de Tratar) mantém os participantes nos grupos para os quais foram sorteados originalmente, independentemente de terem recebido a intervenção ou de terem aderido ao protocolo. Ela preserva a aleatorização e evita o viés de seleção, respondendo à pergunta: \"Qual é o impacto de oferecer essa estratégia na prática real (populacional)?\". Por isso, a ITT reflete a EFETIVIDADE. No NordICC trial, a baixa adesão (apenas 42% realizaram a colonoscopia) diluiu o efeito da intervenção na análise ITT, resultando em um impacto modesto na incidência e sem significância estatística na mortalidade em 10 anos.\n\nA análise PP (Por Protocolo) considera apenas aqueles que de fato seguiram o protocolo (neste caso, quem fez o exame). Ela avalia o potencial intrínseco do método, respondendo à pergunta: \"Qual é o benefício para quem realmente realiza o procedimento?\". Por isso, a PP reflete a EFICÁCIA. No estudo, quem de fato fez a colonoscopia teve uma redução de 50% no risco de morte por câncer colorretal.\n\nAnálise das alternativas:\n\na) Incorreta. A análise ITT não perde a validade; ela é o padrão-ouro para ensaios clínicos randomizados porque mantém o equilíbrio das variáveis (conhecidas e desconhecidas) entre os grupos. Desprezar o ITT em favor do PP introduz viés de seleção, pois quem decide fazer o exame costuma ter um perfil de saúde diferente de quem não faz.\n\nb) Correta. Esta alternativa define perfeitamente os papéis das análises. O ITT mostra que, ao implementar um programa de rastreamento em que muitos não comparecem, o benefício populacional (efetividade) é menor. O PP mostra que a colonoscopia em si é uma ferramenta poderosa (eficácia) quando o paciente adere ao procedimento.\n\nc) Incorreta. Para afirmar que uma estratégia reduz a mortalidade populacional, a análise ITT deve ser estatisticamente significativa. O resultado PP serve para gerar hipóteses e entender o potencial do método, mas não pode ser transposto diretamente para a saúde pública sem considerar a taxa de adesão.\n\nd) Incorreta. O uso de ambas as análises é complementar e enriquecedor. Elas não enfraquecem o estudo, mas ajudam a explicar por que o resultado global foi modesto: não foi por falha do exame em si, mas pela baixa taxa de sua realização pelos convidados.\n\ne) Incorreta. A randomização garante a validade interna do estudo. O problema da baixa adesão afeta o poder estatístico e a magnitude do efeito observado, mas não invalida o método científico empregado. O ITT foi desenhado justamente para lidar com o fato de que, na vida real, nem todos aderem ao tratamento proposto.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:23.833Z"
+  },
+  {
+    "id": "AJUDA_08674645-dd64-42f3-8b09-71d3fda69b7c",
+    "originalId": "08674645-dd64-42f3-8b09-71d3fda69b7c",
+    "statement": "Paciente de 43 anos, sexo feminino, internada em enfermaria de cirurgia. Refere icterícia, colúria e acolia, iniciadas há 72 horas. Paciente nega tabagismo, comorbidades ou episódios semelhantes previamente. Exame físico: ictérica (três cruzes em quatro), dor à palpação profunda de hipocôndrio direito; frequência cardíaca de 83 batimentos por minuto; pressão arterial de 123 por 76 milímetros de mercúrio; temperatura axilar de 37,4 graus Celsius. Ultrassonografia de abdome: presença de múltiplas imagens móveis e arredondadas, de 0,5 a 1 centímetro de diâmetro, e dilatação de vias biliares intra e extra-hepáticas. Exames laboratoriais: \n\nNesse momento, quais são, respectivamente, o diagnóstico sindrômico e o exame complementar mais indicados para prosseguir à investigação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome colestática sem colangite; tomografia de abdome com contraste venoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome colestática com colangite; ressonância nuclear magnética de vias biliares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome colestática sem colangite; ressonância nuclear magnética de vias biliares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome colestática com colangite; colangiopancreatografia retrógrada endoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente apresenta icterícia, colúria (urina escura) e acolia (fezes claras), o que caracteriza classicamente uma síndrome colestática. O exame físico confirma a icterícia (3+/4+) e dor no hipocôndrio direito. A ultrassonografia revela cálculos na vesícula biliar (colelitíase) e dilatação das vias biliares intra e extra-hepáticas, sugerindo que um cálculo pode ter migrado para o colédoco (coledocolitíase), causando a obstrução.\n\nAnálise dos exames laboratoriais (imagem):\nOs resultados reforçam o diagnóstico de síndrome colestática devido à elevação importante da Bilirubina Direta (5,1 mg/dL), da Fosfatase Alcalina (760 U/L) e da Gama GT (900 U/L). Não há sinais de colangite aguda (infecção das vias biliares), pois a paciente está afebril (37,4 graus Celsius), hemodinamicamente estável e os exames laboratoriais mostram leucócitos totais (9.000/mL) e bastões (3%) dentro da normalidade, sem evidência de resposta inflamatória sistêmica.\n\nEscolha do exame complementar:\nEmbora a ultrassonografia tenha mostrado a dilatação das vias biliares, ela não visualizou o cálculo no colédoco. Como a paciente não tem colangite, o próximo passo deve ser um exame de imagem não invasivo com alta sensibilidade para confirmar a coledocolitíase. A Ressonância Nuclear Magnética (Colangiorressonância) é o padrão-ouro para essa investigação diagnóstica, pois permite visualizar toda a árvore biliar com precisão.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. Embora o diagnóstico sindrômico de síndrome colestática sem colangite esteja correto, a tomografia de abdome tem sensibilidade inferior à ressonância para identificar cálculos pequenos nas vias biliares, não sendo o exame de escolha para essa investigação.\n\nAlternativa b) Incorreta. O diagnóstico de colangite está incorreto porque a paciente não apresenta a Tríade de Charcot completa (falta febre com calafrios) e não possui leucocitose ou desvio à esquerda nos exames laboratoriais.\n\nAlternativa c) Correta. A paciente apresenta síndrome colestática (icterícia obstrutiva) sem sinais clínicos ou laboratoriais de colangite (infecção). O exame mais indicado para prosseguir a investigação e confirmar o local e a causa da obstrução de forma não invasiva é a ressonância nuclear magnética de vias biliares (colangiorressonância).\n\nAlternativa d) Incorreta. Como mencionado, não há critérios para colangite. Além disso, a colangiopancreatografia retrógrada endoscópica (CPRE) é um procedimento invasivo e com riscos (como pancreatite), devendo ser reservado para casos com diagnóstico confirmado ou quando há necessidade de intervenção terapêutica imediata, como na colangite grave.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": 92.78492747333253,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ebc4d339ac69c803fda85af389a380e6015a8525ca7f6cdf6b97bd2649a53c68.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_08674645-dd64-42f3-8b09-71d3fda69b7c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:24.328Z"
+  }
+]

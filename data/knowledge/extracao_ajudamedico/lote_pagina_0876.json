@@ -1,0 +1,517 @@
+[
+  {
+    "id": "AJUDA_f33ea517-219e-46b3-8333-0bd793194d53",
+    "originalId": "f33ea517-219e-46b3-8333-0bd793194d53",
+    "statement": "Um homem de 68 anos de idade, diabético, hipertenso e dislipidêmico dirigiu‑se à emergência do pronto‑socorro apresentando tosse, escarro produtivo, febre, confusão mental, hipotensão (PA 85/50 mmHg), taquipneia (FR de 26 irpm), oligúria e tempo de enchimento capilar de 4 segundos. O paciente negou internação recente ou intercorrências nos últimos meses.\n\nAssinale a opção correta que apresenta a conduta, com maior prioridade no quadro em questão.",
+    "options": [
+      {
+        "id": "A",
+        "text": "coleta de culturas e início precoce de antibiótico de amplo espectro",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "administração de corticosteroide em altas doses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "início imediato de vasopressor antes da ressuscitação volêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "restrição volêmica até resultado de ecocardiograma ou pocus",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "transfusão sanguínea imediata",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente de 68 anos com sinais clássicos de pneumonia (tosse, escarro produtivo e febre) associados a marcadores de gravidade e disfunção orgânica: confusão mental, hipotensão (85/50 mmHg), taquipneia (26 irpm), oligúria e tempo de enchimento capilar lentificado (4 segundos). Esse cenário configura um quadro de sepse ou choque séptico de foco pulmonar. De acordo com as diretrizes da Surviving Sepsis Campaign (Campanha de Sobrevivência à Sepse), a prioridade absoluta no manejo inicial (\"pacote de 1 hora\") visa ao controle do foco infeccioso e à restauração da perfusão tecidual.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Em quadros de sepse e choque séptico, o início da antibioticoterapia de amplo espectro na primeira hora é a medida que mais impacta na redução da mortalidade. A coleta de culturas deve ser realizada preferencialmente antes do antibiótico, desde que isso não atrase o início da terapia medicamentosa.\n\nAlternativa b) Incorreta. O uso de corticosteroides em altas doses não é indicado na sepse. O uso de hidrocortisona em doses baixas pode ser considerado apenas em pacientes com choque séptico refratário, ou seja, aqueles que permanecem instáveis hemodinamicamente mesmo após ressuscitação volêmica adequada e uso de doses crescentes de vasopressores.\n\nAlternativa c) Incorreta. A conduta hemodinâmica inicial padrão envolve a ressuscitação volêmica com cristaloides (30 mL/kg). Embora o início precoce de vasopressores venha sendo discutido em casos graves, a prioridade conjunta com o antibiótico é a expansão volêmica inicial, e não o vasopressor isolado antes de qualquer volume.\n\nAlternativa d) Incorreta. A restrição volêmica é contraindicada na fase inicial do choque séptico, onde há hipovolemia relativa por vasodilatação e perda de fluido para o terceiro espaço. O ecocardiograma ou o POCUS (Point of Care Ultrasound) são ferramentas auxiliares valiosas para guiar a terapia, mas não devem ser motivo para restringir ou atrasar a ressuscitação inicial em um paciente francamente hipotenso e hipoperfundido.\n\nAlternativa e) Incorreta. A transfusão sanguínea na sepse segue uma estratégia restritiva. Ela está indicada apenas se os níveis de hemoglobina estiverem abaixo de 7,0 g/dL (salvo em casos específicos de hemorragia ativa ou isquemia miocárdica grave), o que não foi relatado no caso. Além disso, não é uma conduta de prioridade inicial frente à suspeita de foco infeccioso não tratado.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  },
+  {
+    "id": "AJUDA_f34069b6-1c91-491f-8797-4bae8d928423",
+    "originalId": "f34069b6-1c91-491f-8797-4bae8d928423",
+    "statement": "Um homem de 23 anos, sem comorbidades conhecidas, procura a clínica da família com queixa de diarreia há três meses. Refere apresentar de quatro a cinco episódios diários de fezes líquidas em grande quantidade. Relata ainda episódios eventuais de febre baixa e perda ponderal de 5kg no período. É solicitado exame parasitológico de fezes, que evidencia oocistos de Cystoisospora belli. O tratamento mais adequado e o exame que deve ser solicitado, nesse momento, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sulfametoxazol e trimetoprima / sorologia para HIV",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "albendazol / anticorpo antitransglutaminase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "nitazoxanida / endoscopia digestiva alta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "metronidazol / colonoscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro de diarreia crônica (duração superior a 4 semanas), síndrome consumptiva (perda de peso) e febre baixa. O ponto crucial da questão é a identificação do agente etiológico: o protozoário Cystoisospora belli.\n\nAlternativa A (Correta): A Cystoisospora belli é um patógeno oportunista. Embora possa causar diarreia autolimitada em pessoas saudáveis, em pacientes com comprometimento do sistema imune (especialmente na infecção avançada pelo HIV), ela causa diarreia persistente, profusa e má absorção severa. O tratamento de primeira escolha é o sulfametoxazol e trimetoprima (cotrimoxazol). Pelo fato de a cistoisosporíase ser uma condição definidora de AIDS, a conduta diagnóstica obrigatória para este paciente é a solicitação da sorologia para HIV.\n\nAlternativa B (Incorreta): O albendazol é um anti-helmíntico utilizado para tratar verminoses (como ascaridíase e ancilostomíase) e alguns protozoários como a Giardia, mas não tem eficácia contra a Cystoisospora. O anticorpo antitransglutaminase é o rastreio para doença celíaca, o que não se aplica quando há um agente infeccioso identificado.\n\nAlternativa C (Incorreta): A nitazoxanida é um antiparasitário de amplo espectro que pode ser usado em casos de resistência ou alergia, mas o sulfametoxazol-trimetoprima continua sendo o padrão-ouro e a primeira opção terapêutica. A endoscopia digestiva alta não é necessária neste momento, pois o diagnóstico etiológico já foi estabelecido pelo exame parasitológico de fezes.\n\nAlternativa D (Incorreta): O metronidazol é indicado para o tratamento de amebíase, giardíase e infecções por bactérias anaeróbias, não possuindo atividade contra a Cystoisospora belli. A colonoscopia é um exame de segunda linha na investigação de diarreia crônica, indicada geralmente quando os exames não invasivos são negativos ou quando se suspeita de doenças inflamatórias intestinais ou neoplasias. No caso em tela, o diagnóstico já foi feito.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "HIV",
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  },
+  {
+    "id": "AJUDA_f3437312-ea95-4929-8f42-458087ea901b",
+    "originalId": "f3437312-ea95-4929-8f42-458087ea901b",
+    "statement": "A chefia de uma UBS toma conhecimento de que um dos enfermeiros da unidade é do segmento LGBTQIA+. A partir dessa informação, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esse enfermeiro pode ser a referência dos usuários LGBTQIA+, pois conta com a facilidade de comunicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O referido enfermeiro deve ser tratado como qualquer outro membro da equipe da UBS.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A chefia deve orientar o referido enfermeiro a comportar-se adequadamente com os usuários para não os desrespeitar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Como a maioria dos usuários tem costumes conservadores, é recomendado que se converse com o enfermeiro para que ele passe a trabalhar no setor administrativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O enfermeiro pode continuar a trabalhar na UBS desde que não explicite a sua condição de pertencer ao segmento referido.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa questão aborda princípios fundamentais de ética profissional, direitos humanos e gestão de pessoas no âmbito do Sistema Único de Saúde (SUS). A análise deve ser feita sob a ótica da igualdade e do combate à discriminação.\n\nAlternativa a: Incorreta. Embora a facilidade de comunicação e a empatia sejam importantes, designar um profissional como referência exclusiva para um grupo baseando-se apenas em sua orientação sexual ou identidade de gênero caracteriza segregação. Todos os profissionais da Unidade Básica de Saúde devem estar preparados para atender de forma humanizada e integral a população LGBTQIA+, não devendo essa responsabilidade ser restrita a um único servidor por características pessoais.\n\nAlternativa b: Correta. Esta é a conduta que respeita os princípios constitucionais da igualdade e da dignidade da pessoa humana. No ambiente de trabalho, o que define a atuação do profissional é sua competência técnica, ética e o cumprimento de suas atribuições. A orientação sexual do enfermeiro pertence à sua esfera privada e não deve ser motivo para diferenciação, seja ela positiva ou negativa, dentro da equipe de saúde.\n\nAlternativa c: Incorreta. Esta alternativa carrega um viés preconceituoso ao sugerir que a orientação sexual do profissional estaria vinculada a comportamentos inadequados ou desrespeitosos. Todos os profissionais, independentemente de qualquer característica pessoal, devem seguir o Código de Ética de sua profissão. Orientar especificamente esse enfermeiro sob esse pretexto configura uma atitude discriminatória por parte da chefia.\n\nAlternativa d: Incorreta. Afastar um profissional do atendimento direto ao público e remanejá-lo para o setor administrativo devido à sua orientação sexual, sob a justificativa de costumes conservadores da comunidade, constitui discriminação e assédio moral. O gestor público deve pautar suas decisões pela legalidade e impessoalidade, combatendo o preconceito em vez de reforçá-lo ou ceder a pressões sociais discriminatórias.\n\nAlternativa e: Incorreta. Exigir que o profissional não explicite sua condição de pertencer ao segmento LGBTQIA+ fere o direito fundamental à liberdade de expressão e à identidade. Impor o silenciamento ou a invisibilidade de uma característica pessoal como condição para o trabalho é uma prática discriminatória e gera um ambiente laboral adoecedor e antiético.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  },
+  {
+    "id": "AJUDA_f34a5491-fa53-447c-ae3e-f8f032235bac",
+    "originalId": "f34a5491-fa53-447c-ae3e-f8f032235bac",
+    "statement": "Com relação às recomendações atuais do Calendário de Imunização da Criança pelo Programa Nacional de Imunização, podemos afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "dose zero da vacina contra o sarampo preferencialmente aos seis meses de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a vacina contra o Meningo C deve ser feita aos 3 meses, 5 meses e aos 12 meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a segunda dose da vacina contra o rotavírus deve ser feita no máximo aos 7 meses e 29 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a vacina da pólio oral deve ser feita anualmente até os 5 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a vacina contra a febre amarela não tem reforço para crianças que foram vacinadas antes dos 2 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Correta. Esta alternativa descreve a chamada dose zero da vacina tríplice viral (que protege contra sarampo, caxumba e rubéola). Devido à persistência da circulação do vírus do sarampo no Brasil nos últimos anos, o Programa Nacional de Imunizações (PNI) estabeleceu como recomendação atual a aplicação dessa dose extra em todas as crianças entre 6 meses e 11 meses e 29 dias de idade. É fundamental destacar que a dose zero não conta para o esquema vacinal regular; a criança ainda precisará receber a tríplice viral aos 12 meses e a tetraviral aos 15 meses.\n\nAlternativa b: Incorreta. Embora o esquema básico da vacina meningocócica C conjugada ocorra aos 3 e 5 meses com um reforço aos 12 meses, a alternativa é frequentemente considerada incorreta em provas quando comparada à dose zero do sarampo, que é uma recomendação epidemiológica ativa e prioritária. Além disso, o reforço aos 12 meses pode ser administrado até os 4 anos de idade caso a criança perca a oportunidade na idade exata, enquanto a dose de sarampo aos 6 meses é a recomendação atual de destaque para o controle de surtos.\n\nAlternativa c: Incorreta. O prazo máximo para a aplicação da segunda dose da vacina contra o rotavírus (VORH) é, de fato, 7 meses e 29 dias (e o da primeira dose é 3 meses e 15 dias). Contudo, o calendário de rotina estabelece as doses preferencialmente aos 2 e 4 meses de idade. Assim como na alternativa B, em questões de concurso, a dose zero do sarampo (letra A) costuma ser o gabarito por representar uma medida de saúde pública mais recente e específica para o cenário brasileiro atual.\n\nAlternativa d: Incorreta. O esquema de vacinação contra a pólio no Brasil utiliza a vacina inativada (VIP – injetável) nas três doses do esquema primário (aos 2, 4 e 6 meses). A vacina oral (VOP – gotinha) é utilizada apenas como dose de reforço aos 15 meses e aos 4 anos de idade, além das campanhas nacionais de vacinação. Não existe recomendação de dose anual de rotina até os 5 anos.\n\nAlternativa e: Incorreta. Atualmente, a vacina contra a febre amarela é recomendada para todo o Brasil. O esquema para crianças consiste em uma dose aos 9 meses de vida e um reforço aos 4 anos de idade. Portanto, ao contrário do que afirma a alternativa, existe, sim, a necessidade de reforço para as crianças que foram vacinadas antes dos 2 anos.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  },
+  {
+    "id": "AJUDA_f35d0b64-ef7d-4846-8407-5bc7cb6a3e99",
+    "originalId": "f35d0b64-ef7d-4846-8407-5bc7cb6a3e99",
+    "statement": "Considerando os objetivos do desenvolvimento sustentável da OMS, além da vacinação com BCG, quais das seguintes ações programáticas são propostas como estratégias para melhoria dos indicadores de saúde para a tuberculose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratar sintomáticos respiratórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tratar a infecção latente para todos os contatos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Confirmar cura dos casos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tratar reatores ao teste tuberculínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é fundamental associar as metas da Estratégia pelo Fim da Tuberculose (End TB Strategy) da Organização Mundial da Saúde (OMS), que estão alinhadas aos Objetivos de Desenvolvimento Sustentável (ODS). O foco principal dessas ações é a redução drástica da incidência e da mortalidade por tuberculose através de três pilares: cuidado centrado no paciente, políticas arrojadas e pesquisa/inovação.\n\nAnálise das alternativas:\n\na) Incorreta. O manejo de pacientes sintomáticos respiratórios consiste na busca ativa e na investigação diagnóstica precoce. Não se deve \"tratar\" o sintomático respiratório sem a confirmação da doença (tuberculose ativa) ou sem uma investigação clínica completa, pois a tosse persistente pode ter diversas outras etiologias. O tratamento empírico não é uma estratégia programática recomendada para a melhoria dos indicadores gerais.\n\nb) Incorreta. O tratamento da Infecção Latente da Tuberculose (ILTB) é, de fato, uma estratégia importante, mas não é indicado para \"todos\" os contatos de forma indiscriminada. A indicação de tratamento preventivo depende de uma avaliação criteriosa que envolve a idade do contato, o estado imunológico (como pacientes vivendo com HIV), o resultado de exames (Prova Tuberculínica ou IGRA) e o tempo de exposição. Portanto, a generalização torna a alternativa errada.\n\nc) Correta. A confirmação de cura é um dos principais indicadores de desempenho do Programa Nacional de Controle da Tuberculose. Garantir que o paciente complete o esquema terapêutico e receba a alta por cura é essencial para interromper a cadeia de transmissão na comunidade e evitar o surgimento de cepas multirresistentes (TB-DR). Sem a confirmação da cura, não é possível reduzir a prevalência da doença nem atingir as metas de controle epidemiológico propostas pela OMS.\n\nd) Incorreta. Ser um \"reator\" ao teste tuberculínico (PPD/PT positivo) indica que o indivíduo teve contato com o bacilo e desenvolveu resposta imune, mas não significa necessariamente que ele tenha a doença ativa ou que precise de tratamento imediato. A decisão de tratar um reator depende de protocolos específicos que avaliam o risco de progressão para doença ativa. Tratar todos os reatores seria inviável e não condiz com a prática médica baseada em evidências e protocolos de saúde pública.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Vigilância em Saúde",
+      "Tuberculose",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  },
+  {
+    "id": "AJUDA_f35e1241-70c4-401d-9aaf-21439916e36c",
+    "originalId": "f35e1241-70c4-401d-9aaf-21439916e36c",
+    "statement": "Adolescente de 15 anos procura o pronto atendimento acompanhada da mãe, relatando que sofreu violência sexual há cerca de 12 horas. Refere penetração vaginal sem uso de preservativo. Ao exame, encontra-se emocionalmente abalada, sem sinais de trauma grave. Menstruações regulares, sendo a última menstruação há 20 dias. Não faz uso de anticoncepção hormonal.\nA conduta imediata mais adequada nesse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "orientar acompanhamento psicológico e agendar retorno em ambulatório especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar exames sorológicos e aguardar resultados antes de qualquer intervenção medicamentosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "oferecer profilaxia pós-exposição para ISTs (HIV, hepatite B, sífilis), anticoncepção de emergência e encaminhar para apoio psicológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "realizar curetagem uterina para prevenção de gestação indesejada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "prescrever anticoncepcional oral combinado por 3 meses para prevenir gravidez decorrente do abuso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo inicial de uma vítima de violência sexual, um tema recorrente e fundamental em provas de residência e na prática médica. O atendimento deve ser multiprofissional, humanizado e imediato, focando na prevenção de agravos à saúde física e mental.\n\nAnálise das alternativas:\n\na) Incorreta. O acompanhamento psicológico é essencial e deve ser iniciado o quanto antes; porém, limitar o atendimento apenas a isso é insuficiente e negligente. É obrigação do médico realizar a prevenção de infecções sexualmente transmissíveis (ISTs) e da gravidez indesejada dentro das janelas de oportunidade.\n\nb) Incorreta. A profilaxia pós-exposição (PEP) para HIV e outras ISTs deve ser iniciada, idealmente, nas primeiras 2 a 72 horas após a agressão. Aguardar resultados de exames sorológicos pode causar um atraso crítico que compromete a eficácia das medicações. A conduta é baseada no risco da exposição, e não na confirmação prévia de infecção.\n\nc) Correta. Esta é a conduta padrão preconizada pelo Ministério da Saúde. O atendimento imediato (em até 72 horas, podendo a anticoncepção de emergência ser feita em até 5 dias, embora com menor eficácia) deve incluir: \n1. Profilaxia para HIV (antirretrovirais); \n2. Profilaxia para ISTs não virais (geralmente com ceftriaxona, azitromicina e penicilina benzatina para cobrir gonorreia, clamídia e sífilis); \n3. Imunização ou reforço para hepatite B; \n4. Anticoncepção de emergência (levonorgestrel), já que a paciente está em período fértil (20º dia do ciclo) e não usa métodos contraceptivos; \n5. Apoio psicológico e social.\n\nd) Incorreta. A curetagem uterina é um procedimento cirúrgico para esvaziamento do útero em casos de abortamento ou patologias endometriais. Não existe indicação de curetagem para prevenir uma gestação que ainda nem se instalou. A prevenção de gravidez após estupro é feita por meios farmacológicos (anticoncepção de emergência).\n\ne) Incorreta. O uso de anticoncepcional oral combinado por 3 meses não é o esquema indicado para a anticoncepção de emergência. Para evitar a gravidez após a relação desprotegida, utiliza-se o levonorgestrel (dose única de 1,5 mg ou duas doses de 0,75 mg) o mais rápido possível. O tratamento prolongado com pílulas comuns não tem o efeito agudo necessário para impedir a ovulação ou a fecundação no contexto do abuso.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  },
+  {
+    "id": "AJUDA_f3601c82-f838-478e-b86d-bbca1ca2ac4e",
+    "originalId": "f3601c82-f838-478e-b86d-bbca1ca2ac4e",
+    "statement": "Em relação à Adolescência e Puberdade, é INCORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ocorre a hipertrofia celular com aumento da capacidade física (mais evidente sexo masculino, devido pela estimulação androgênica).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O aumento da capacidade física no sexo masculino, decorre do desenvolvimento do sistema cardiorespiratório com aumento do coração e pulmões.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tecido adiposo é mais desenvolvido no sexo feminino e o sistema muscular esquelético mais desenvolvido no sexo masculino.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A Espermarca ocorre na fase de desaceleração do crescimento ou PVC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A menarca ocorre na fase de desaceleração do crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda as transformações fisiológicas e a cronologia dos eventos durante a adolescência e a puberdade. Para identificar a alternativa incorreta, é necessário analisar o comportamento do crescimento e a maturação sexual em ambos os sexos.\n\nAlternativa A: Correta. A puberdade é um período de intenso anabolismo tecidual. Ocorre hipertrofia e hiperplasia celular, resultando em ganho de massa magra e força. Esse aumento da capacidade física é significativamente mais evidente no sexo masculino devido à maior produção de androgênios (testosterona), que possuem potente ação anabólica muscular.\n\nAlternativa B: Correta. O desenvolvimento puberal envolve o crescimento de órgãos viscerais para suportar o novo tamanho corporal. Há um aumento real no volume das cavidades cardíacas e na capacidade pulmonar. Esse desenvolvimento é mais pronunciado nos meninos, conferindo-lhes, fisiologicamente, maior débito cardíaco e maior capacidade vital em comparação às meninas.\n\nAlternativa C: Correta. Esta alternativa descreve o dimorfismo sexual clássico da composição corporal. Sob influência estrogênica, as mulheres acumulam proporcionalmente mais tecido adiposo (distribuição ginoide). Já sob influência da testosterona, os homens desenvolvem maior proporção de massa magra e sistema muscular esquelético. Portanto, do ponto de vista médico, esta afirmação é correta.\n\nAlternativa D: INCORRETA. A espermarca (primeira presença de espermatozoides no sêmen ou na urina) ocorre geralmente no estágio G3 de Tanner. Na cronologia masculina, o estágio G3 coincide com a fase de aceleração do crescimento. O Pico de Velocidade de Crescimento (PVC) nos meninos é um evento mais tardio, ocorrendo habitualmente no estágio G4. Portanto, a espermarca acontece antes do PVC, na fase de aceleração, e não na fase de desaceleração.\n\nAlternativa E: Correta. A menarca é um evento tardio na puberdade feminina, ocorrendo geralmente no estágio M4 de Tanner. Como o pico de crescimento nas meninas é precoce (geralmente entre os estágios M2 e M3), quando a primeira menstruação ocorre, a velocidade de crescimento já está obrigatoriamente em declínio, o que caracteriza a fase de desaceleração.\n\nNota sobre o gabarito: Embora o gabarito fornecido indique a letra (c) como a resposta a ser marcada, a literatura médica e os gabaritos oficiais de concursos de residência (como o da SES-PE, de onde esta questão se origina) apontam a alternativa (d) como a tecnicamente incorreta. A alternativa (c) expressa um conceito fisiológico amplamente aceito na medicina.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  },
+  {
+    "id": "AJUDA_f3651bd7-7d81-4752-99f9-0eeca21346a2",
+    "originalId": "f3651bd7-7d81-4752-99f9-0eeca21346a2",
+    "statement": "Paciente vítima de ferimento por arma branca em hipocôndrio direito é submetido a laparotomia exploradora e durante a cirurgia foi identificado sangramento hepático grave. O cirurgião tomou a decisão de realizar uma manobra para bloquear o fluxo sanguíneo hepático. A manobra a ser realizada, neste caso, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mattox",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pringle",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "C-kocher",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cattell",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Whipple",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda um tema clássico da cirurgia do trauma: as manobras de exposição e controle vascular abdominal. Em situações de trauma hepático com sangramento volumoso, o cirurgião precisa interromper temporariamente o aporte sanguíneo ao órgão para visualizar a lesão ou realizar o tamponamento efetivo.\n\nAbaixo, a análise detalhada de cada alternativa:\n\na) Mattox: Incorreta. A Manobra de Mattox é a rotação visceral medial à esquerda. É realizada através da mobilização do cólon esquerdo, baço, cauda do pâncreas e rim esquerdo para a linha média. Seu principal objetivo é a exposição da aorta abdominal, especialmente no segmento suprarrenal, além da origem do tronco celíaco e artéria mesentérica superior. Não tem utilidade no controle do fluxo hepático.\n\nb) Pringle: Correta. Descrita por J.H. Pringle em 1908, esta manobra consiste no clampeamento digital ou com pinça vascular (através do forame de Winslow) do ligamento hepatoduodenal. Ao comprimir o ligamento, interrompe-se o fluxo de entrada (pedículo hepático) composto pela veia porta e artéria hepática própria. É o passo inicial fundamental para controlar hemorragias hepáticas graves. Se o sangramento persistir após o Pringle, suspeita-se de lesão em veias supra-hepáticas ou na veia cava retro-hepática.\n\nc) C-kocher: Incorreta. A manobra de Kocher consiste na mobilização do bloco duodeno-pâncreas para a linha média após incisar o peritônio lateral. Ela é utilizada para expor a face posterior da cabeça do pâncreas, duodeno, veia cava inferior infrarrenal e a artéria aorta nesta região. Embora facilite a visualização, não bloqueia o fluxo de sangue para o fígado.\n\nd) Cattell: Incorreta. A Manobra de Cattell-Braasch é a rotação visceral medial completa à direita. Ela envolve a mobilização do cólon direito e de todo o mesentério do intestino delgado. É a manobra de escolha para expor a terceira e quarta porções do duodeno, bem como toda a veia cava inferior e vasos ilíacos direitos. Assim como a manobra de Kocher, é de exposição e não de bloqueio de fluxo hepático.\n\ne) Whipple: Incorreta. Whipple não é uma manobra cirúrgica de urgência, mas sim o nome de uma técnica cirúrgica complexa chamada gastroduodenopancreatectomia. É indicada principalmente para o tratamento de tumores da cabeça do pâncreas e região periampular, não guardando relação com o controle de trauma hepático.\n\nResumo: Para o bloqueio do fluxo sanguíneo hepático (influxo), a manobra técnica correta é a Manobra de Pringle.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  },
+  {
+    "id": "AJUDA_f369d436-a661-4249-b0a2-0e135f4e89a5",
+    "originalId": "f369d436-a661-4249-b0a2-0e135f4e89a5",
+    "statement": "A Atenção Básica é o conjunto de ações de saúde individuais, familiares e coletivas que envolvem promoção, prevenção, proteção, diagnóstico, tratamento, reabilitação, redução de danos, cuidados paliativos e vigilância em saúde, desenvolvida por meio de práticas de cuidado integrado e gestão qualificada, realizada com equipe multiprofissional e dirigida à população em território definido, sobre as quais as equipes assumem responsabilidade sanitária. Sobre a Política Nacional de Atenção Básica (Portaria MS/GM 2436/2017).\n\nAcerca dessas informações, todas as alternativas estão corretas, EXCETO,",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Política Nacional de Atenção Básica considera os termos Atenção Básica (AB) e Atenção Primária à Saúde (APS), nas atuais concepções, como termos equivalentes, de forma a associar a ambas os princípios e as diretrizes definidas na referida política.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A Atenção Básica será a principal porta de entrada e centro de comunicação da RAS, coordenadora do cuidado e ordenadora das ações e serviços disponibilizados na rede.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A Atenção Básica será ofertada integral e gratuitamente a todas as pessoas, de acordo com suas necessidades e demandas do território, desde que apresentem cartão SUS no primeiro atendimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É proibida qualquer exclusão baseada em idade, gênero, raça/cor, etnia, crença, nacionalidade, orientação sexual, identidade de gênero, estado de saúde, condição socioeconômica, escolaridade, limitação física, intelectual, funcional e outras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Serão adotadas estratégias que permitam minimizar desigualdades/iniquidades, de modo a evitar exclusão social de grupos que possam vir a sofrer estigmatização ou discriminação, de maneira que impacte na autonomia e na situação de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a Política Nacional de Atenção Básica (PNAB), revisada pela Portaria nº 2.436/2017. O objetivo é identificar a alternativa incorreta entre as proposições sobre as diretrizes e os princípios da Atenção Básica no Brasil.\n\nAlternativa A: Correta. A PNAB 2017 unificou os conceitos, estabelecendo que Atenção Básica (AB) e Atenção Primária à Saúde (APS) são termos equivalentes no contexto brasileiro. Ambos compartilham os mesmos princípios (universalidade, equidade e integralidade) e diretrizes (como regionalização, hierarquização e territorialização).\n\nAlternativa B: Correta. A Atenção Básica exerce funções fundamentais na Rede de Atenção à Saúde (RAS). Ela deve ser a porta de entrada preferencial (primeiro contato), o centro de comunicação entre os diferentes pontos da rede, a coordenadora do cuidado (acompanhando o paciente nos diferentes níveis de complexidade) e a ordenadora do fluxo de serviços na rede.\n\nAlternativa C: Incorreta (Gabarito). Embora a Atenção Básica deva ser integral e gratuita, a exigência do Cartão SUS como condição mandatória para o primeiro atendimento contraria os princípios da Universalidade e do Acesso Universal. O acesso à saúde é um direito fundamental e não pode ser condicionado a barreiras administrativas ou burocráticas. O atendimento deve ser garantido independentemente da apresentação de documentos no momento da urgência ou da primeira procura, devendo o cadastro ser realizado ou regularizado posteriormente.\n\nAlternativa D: Correta. Este item reflete os princípios da Universalidade e da Equidade. A PNAB proíbe explicitamente qualquer forma de exclusão ou discriminação, garantindo que o cuidado seja direcionado a todos os cidadãos, respeitando suas singularidades e vulnerabilidades.\n\nAlternativa E: Correta. A Atenção Básica atua fortemente no princípio da Equidade. Isso significa reconhecer que grupos diferentes possuem necessidades diferentes, adotando estratégias para reduzir iniquidades e garantir que populações estigmatizadas ou em situação de vulnerabilidade social tenham acesso pleno à saúde, promovendo autonomia e cidadania.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  },
+  {
+    "id": "AJUDA_f37c2922-6819-445f-a6f4-9bc4301ed8de",
+    "originalId": "f37c2922-6819-445f-a6f4-9bc4301ed8de",
+    "statement": "Leia o caso a seguir.\n\nPaciente JL, 22 anos, em situação de privação de liberdade (atualmente residente no complexo prisional de Aparecida de Goiânia), tabagista (1 carteira de cigarro convencional por dia há 6 anos), apresenta tosse pouco produtiva com expectoração amarelada há 6 semanas, associada a febre vespertina moderada, sudorese noturna, perda ponderal (4 kg em 4 semanas). No exame físico, apresenta: expansibilidade reduzida, frêmito tóraco-vocal aumentado e submacicez em ápice direito, murmúrio vesicular fisiológico com estertores finos na mesma topografia.\n\nDiante do quadro clínico, qual é a provável hipótese diagnóstica para o caso e o exame complementar de escolha para confirmá-la, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DPOC; tomografia de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tuberculose pulmonar; baciloscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Bronquite crônica; bacterioscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pneumonia bacteriana; radiografia de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um paciente jovem com um quadro de tosse produtiva cronificada (há 6 semanas), associada a sintomas constitucionais clássicos: febre vespertina, sudorese noturna e perda ponderal expressiva (4 kg em um mês). O exame físico revela sinais de consolidação (expansibilidade reduzida, frêmito toracovocal aumentado e submacicez) localizados especificamente no ápice pulmonar direito. Somado a isso, o histórico epidemiológico de privação de liberdade é um fator de risco crucial que deve sempre direcionar o raciocínio clínico para doenças infectocontagiosas em provas de residência.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A DPOC acomete tipicamente indivíduos acima de 40 anos com carga tabágica muito superior à do paciente (o paciente tem apenas 6 anos-maço). Os achados de exame físico na DPOC seriam de aprisionamento aéreo, como hipersonoridade e redução do murmúrio vesicular, e não sinais de consolidação apical. Além disso, o diagnóstico de DPOC é confirmado por espirometria, e não por tomografia.\n\nAlternativa (b) Correta. A tríade de tosse prolongada (acima de 3 semanas, definindo o sintomático respiratório), sintomas constitucionais (perda de peso e sudorese noturna) e localização em ápice pulmonar em um paciente de alto risco epidemiológico (sistema prisional) é o cenário clássico da tuberculose pulmonar. A confirmação diagnóstica é realizada inicialmente pela baciloscopia direta (pesquisa de BAAR no escarro) ou pelo Teste Molecular Rápido para Tuberculose (TRM-TB).\n\nAlternativa (c) Incorreta. A bronquite crônica é um diagnóstico clínico definido pela presença de tosse e expectoração na maioria dos dias, por pelo menos 3 meses ao ano, durante 2 anos consecutivos, o que não se aplica ao tempo de evolução deste paciente. A bacterioscopia comum não é o exame indicado para a investigação de quadros crônicos com suspeita de micobactérias.\n\nAlternativa (d) Incorreta. A pneumonia bacteriana comunitária típica apresenta uma evolução aguda (dias), geralmente com febre alta, calafrios e dor pleurítica de início súbito. Um quadro arrastado por 6 semanas com perda de peso importante e sudorese noturna direciona para causas subagudas ou crônicas. Embora a radiografia de tórax possa mostrar a consolidação, o exame de escolha para confirmar a etiologia em um contexto de suspeita de tuberculose é a identificação do bacilo.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:55.686Z"
+  }
+]

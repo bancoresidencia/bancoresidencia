@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_091f8d49-6a81-4626-a468-63888cf2c093",
+    "originalId": "091f8d49-6a81-4626-a468-63888cf2c093",
+    "statement": "Mulher de 55 anos, nuligesta, menopausada há 7 anos, sem comorbidades, sem antecedentes familiares de câncer, comparece em retorno de consulta ginecológica para checar exames solicitados. Exame físico realizado há 15 dias sem alterações dignas de nota. Exames laboratoriais de rotina normais. Laudo da mamografia descreve área de assimetria focal em região central no terço profundo de mama direita, BI RADS 0. Paciente refere que última mamografia realizada foi há 5 anos e não tem as grafias guardadas. Qual a conduta mais apropriada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar biópsia de mama por agulha grossa dirigida por imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tranquilizar a paciente e agendar seguimento anual com mamografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar compressão localizada e ultrassonografia de mama.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Agendar retorno em 6 meses com mamografia somente da mama direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto central para resolver esta questão é o entendimento da classificação BI-RADS (Breast Imaging-Reporting and Data System). O laudo descreve um BI-RADS 0, o que significa que o exame é considerado \"incompleto\".\n\nNa categoria BI-RADS 0, a avaliação mamográfica inicial não é suficiente para concluir o diagnóstico. Isso ocorre geralmente por achados inconclusivos que necessitam de avaliação adicional, seja por novas incidências mamográficas, manobras especiais (como compressão localizada ou ampliação), comparação com exames anteriores ou realização de ultrassonografia. Como a paciente não possui os exames anteriores para comparação, a conduta obrigatória é prosseguir com a investigação por imagem para que o achado seja reclassificado em uma categoria definitiva (1, 2, 3, 4 ou 5).\n\nAnálise das alternativas:\n\na) Incorreta. A biópsia de fragmento (core biopsy) é indicada para achados suspeitos, geralmente classificados como BI-RADS 4 ou 5. Realizar uma biópsia em um achado BI-RADS 0 é uma conduta precoce, pois o nódulo ou lesão ainda não foi adequadamente caracterizado. Muitas assimetrias focais desaparecem após a manobra de compressão localizada, revelando-se apenas sobreposição de tecido glandular normal.\n\nb) Incorreta. A categoria BI-RADS 0 exige uma ação imediata de complementação diagnóstica. Tranquilizar a paciente e manter o seguimento anual só seria possível se o achado fosse classificado como BI-RADS 1 (normal) ou 2 (achados certamente benignos) após a complementação.\n\nc) Correta. Esta é a conduta padrão para um BI-RADS 0 com achado de assimetria focal. A compressão localizada serve para descolar o tecido mamário e verificar se a imagem persiste (caracterizando uma lesão real) ou se \"espalha\" (caracterizando apenas sobreposição de parênquima). A ultrassonografia é o exame complementar de escolha para avaliar a natureza do achado (se sólido ou cístico) em áreas de assimetria ou densidades focais, ajudando na classificação final.\n\nd) Incorreta. O seguimento semestral é a conduta preconizada para achados BI-RADS 3 (provavelmente benignos). No entanto, para classificar algo como BI-RADS 3, é necessário primeiro esgotar a avaliação diagnóstica inicial. Não se pode deixar um exame classificado como BI-RADS 0 em observação por seis meses sem antes definir o que o achado representa.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  },
+  {
+    "id": "AJUDA_091fd598-c265-4325-b252-96aab375c0ad",
+    "originalId": "091fd598-c265-4325-b252-96aab375c0ad",
+    "statement": "A.L.C., 28 anos de idade, sexo feminino, comparece à consulta com queixa de dor de garganta há 3 dias, associada a febrícula intermitente (temperatura axilar máxima relatada de 37.7°C), tosse seca e dificuldade para engolir. Nega coriza, obstrução nasal ou outros sintomas respiratórios. Ao exame físico, observa-se tonsilas palatinas de tamanho habitual com exsudato purulento abundante, sem adenomegalia cervical palpável. A conduta adequada e sua justificativa para este caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar antibiótico empírico com penicilina benzatina, pois a ausência de sintomas respiratórios sugere que a infecção é estreptocócica, carecendo de tratamento precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar teste rápido para Streptococcus pyogenes (RADT) para confirmar a necessidade de antibiótico, já que o diagnóstico clinico nem sempre é preciso, e o RADT pode evitar tratamentos desnecessários",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prescrever antibioticoterapia empírica com amoxicilina-clavunato e anti-inflamatório oral, ambos no primeiro momento, considerando a presença de exsudato tonsilar purulento, que pode evoluir para complicações, como abscesso peritonsilar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tratar a paciente com anti-inflamatório oral e gargarejo com benzidamina colutório para alívio, já que o quadro clínico é autolimitado e provavelmente de etiologia viral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nPara definir a conduta em casos de faringoamigdalite, a ferramenta mais utilizada na prática médica são os Critérios de Centor Modificados. Eles auxiliam o médico a estimar a probabilidade de a infecção ser causada pelo Streptococcus pyogenes (estreptococo do grupo A) e a decidir sobre a necessidade de testes ou tratamento.\n\nAplicação dos Critérios de Centor na paciente:\n1. Febre (maior que 38 graus): 0 pontos (a paciente apresenta febrícula de 37,7 graus).\n2. Presença de exsudato ou edema nas tonsilas: +1 ponto (há exsudato purulento abundante).\n3. Adenomegalia cervical anterior dolorosa: 0 pontos (ausente ao exame físico).\n4. Ausência de tosse: 0 pontos (a paciente apresenta tosse seca, o que é um forte preditor de etiologia viral).\n5. Idade (15 a 44 anos): 0 pontos.\n\nA pontuação total da paciente é de apenas 1 ponto. Em adultos, quando a pontuação é 0 ou 1, a probabilidade de infecção estreptocócica é muito baixa (inferior a 10%). De acordo com as diretrizes da Sociedade Americana de Doenças Infecciosas (IDSA) e outros consensos mundiais, nesses casos não se recomenda o uso de antibióticos nem a realização de testes rápidos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O enunciado afirma que a paciente tem tosse seca. A presença de tosse é justamente um sintoma respiratório que sugere etiologia viral, e não bacteriana. Portanto, a justificativa da alternativa contradiz os dados do caso clínico.\n\nAlternativa b) Incorreta. Embora o teste rápido (RADT) seja uma excelente ferramenta para confirmar o diagnóstico, ele não é indicado para pacientes com escore de Centor baixo (0 ou 1). Nesses casos, a probabilidade pré-teste é tão pequena que o rastreio não se justifica economicamente e não altera a conduta de observação e tratamento sintomático.\n\nAlternativa c) Incorreta. O exsudato purulento não é exclusivo de infecções bacterianas, podendo ocorrer em faringites por adenovírus, Epstein-Barr (mononucleose) e outros vírus. Além disso, o Streptococcus pyogenes é universalmente sensível à penicilina; o uso de amoxicilina-clavulanato seria desnecessário (espectro excessivo), pois o mecanismo de resistência por betalactamase não se aplica a esse patógeno na orofaringe.\n\nAlternativa d) Correta. A presença de tosse seca, associada à febre baixa e à ausência de linfonodomegalias, aponta para uma etiologia viral. O tratamento correto para faringites virais é puramente sintomático (analgésicos, anti-inflamatórios e hidratação), uma vez que a doença é autolimitada e o uso de antibióticos não previne complicações nesses casos, além de expor a paciente a riscos desnecessários.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  },
+  {
+    "id": "AJUDA_0921fa2e-27bd-448f-90ac-1d9f89e36d0c",
+    "originalId": "0921fa2e-27bd-448f-90ac-1d9f89e36d0c",
+    "statement": "Com relação aos aspectos éticos dos direitos reprodutivos, especificamente nas situações de reprodução assistida, qual alternativa está INCORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A gestação compartilhada em união homoafetiva feminina pode ser realizada, situação em que o embrião obtido da fecundação do oócito de uma mulher é transferido para o útero de sua parceira que não apresentava infertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não existe vedação ao uso das técnicas de reprodução assistida para relacionamentos homoafetivos e pessoas solteiras, mas deve ser respeitado o direito à objeção de consciência por parte do médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O número total de embriões produzidos em laboratório deve ser comunicado ao casal para que decidam quantos embriões serão transferidos a fresco, de acordo com os limites referentes à idade da mulher; os excedentes viáveis podem ser criopreservados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os embriões criopreservados com mais de dez anos poderão ser descartados, se essa for a vontade expressa dos pacientes, ou doados para pesquisas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda as normas éticas do Conselho Federal de Medicina (CFM) sobre Reprodução Assistida (Resolução CFM nº 2.320/2022) e a Lei de Biossegurança. A alternativa incorreta deve ser assinalada.\n\nAlternativa a: Está correta. A gestação compartilhada é permitida expressamente pelo CFM para uniões homoafetivas femininas. Nesse procedimento, os óvulos de uma das parceiras são fecundados e transferidos para o útero da outra, sem que haja necessidade de diagnóstico prévio de infertilidade.\n\nAlternativa b: Está correta. As técnicas de reprodução assistida podem ser utilizadas por casais homoafetivos e pessoas solteiras. O médico, por sua vez, pode exercer seu direito à objeção de consciência e se recusar a realizar o procedimento por convicções éticas ou morais, desde que não se trate de urgência e haja outro profissional habilitado para o atendimento.\n\nAlternativa c: Está correta. Os pacientes devem ser informados sobre o total de embriões obtidos e decidem quantos serão transferidos a fresco, respeitando os limites estabelecidos pelo CFM de acordo com a faixa etária feminina (até 2 embriões para mulheres até 37 anos e até 3 embriões para mulheres acima de 37 anos), com criopreservação dos excedentes viáveis.\n\nAlternativa d: Está INCORRETA (gabarito). O prazo para que os embriões criopreservados possam ser descartados por vontade expressa dos pacientes ou doados para pesquisas científicas (conforme a Lei de Biossegurança nº 11.105/2005 e normas do CFM) é de 3 anos, e não de 10 anos. O descarte também é permitido em caso de abandono pelo mesmo período de 3 anos.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Infertilidade Conjugal",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  },
+  {
+    "id": "AJUDA_092a1d01-d4fb-41f3-958a-35e8e2b96297",
+    "originalId": "092a1d01-d4fb-41f3-958a-35e8e2b96297",
+    "statement": "Puerpera de duas semanas pós-parto da entrada em setor de urgência apresentando: dor intensa em mama direita, ingurgitamento mamário, hiperemia de grande parte da mama, edema, mas sem ponto de flutuação, febre de 39º C. Qual a melhor conduta a ser tomada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não interromper a amamentação, proceder o esvaziamento da mama, iniciar antibioticoterapia de amplo espectro e orientar uso de soutien de sustentação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Orientar a suspensão da amamentação, orientar aplicação de bolsa de água morna, prescrever antiinflamatórios e orientar evitar o uso de soutien.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever gentamicina 80 mg de 8/8h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar punção mamária às cegas procurando lojas de abscessos, proceder ordenha manual desprezando o leite retirado, prescrever cabergolina 01 comprimido de 12/12 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE CLÍNICA:\n\nO caso clínico apresenta uma puérpera com febre alta (39 graus Celsius), dor intensa, sinais inflamatórios locais (hiperemia e edema) e ingurgitamento mamário. A informação crucial para a definição da conduta é a AUSÊNCIA DE PONTO DE FLUTUAÇÃO, o que caracteriza o quadro como mastite puerperal e não como abscesso mamário já formado. A mastite é um processo infeccioso do parênquima mamário, geralmente causado pelo Staphylococcus aureus, que ocorre com frequência entre a segunda e a terceira semana após o parto.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (CORRETA): O tratamento da mastite puerperal baseia-se no tripé: esvaziamento mamário, antibioticoterapia e medidas de suporte. A manutenção da amamentação é fundamental, pois a sucção do bebê é o método mais eficaz de esvaziar a mama, tratando a estase láctea que favorece a proliferação bacteriana. O antibiótico deve ser iniciado devido à febre e aos sintomas sistêmicos, sendo a cefalexina ou a dicloxacilina as escolhas iniciais mais comuns (amplo espectro para Gram-positivos). O uso de sutiã de sustentação ajuda a reduzir a dor por diminuir a tração nos ligamentos mamários.\n\nAlternativa B (INCORRETA): A suspensão da amamentação é contraindicada. Parar de amamentar causa maior estase de leite, o que agrava a infecção e aumenta drasticamente a chance de a mastite evoluir para um abscesso. Além disso, não usar sutiã de sustentação aumenta o desconforto da paciente devido ao peso da mama inflamada.\n\nAlternativa C (INCORRETA): A gentamicina é um aminoglicosídeo com excelente ação contra bactérias Gram-negativas. No entanto, o principal agente etiológico da mastite é o Staphylococcus aureus, que é uma bactéria Gram-positiva. Portanto, a gentamicina não é o antibiótico de primeira escolha para esse tratamento.\n\nAlternativa D (INCORRETA): A punção às cegas não deve ser realizada; se houver dúvida sobre a existência de um abscesso (quando não há flutuação clara), o exame de escolha é a ultrassonografia de mamas. O leite da mama com mastite é seguro para o bebê e não deve ser desprezado. A cabergolina é um medicamento utilizado para a inibição farmacológica da lactação, o que não é o objetivo no tratamento da mastite puerperal, onde se deseja manter o aleitamento materno.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Doenças Benignas da Mama",
+      "Infecção Puerperal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  },
+  {
+    "id": "AJUDA_092c7f9f-1dc2-4844-b73f-0d4097a0ca67",
+    "originalId": "092c7f9f-1dc2-4844-b73f-0d4097a0ca67",
+    "statement": "A Vigilância Epidemiológica no Brasil opera de forma descentralizada, com responsabilidades compartilhadas. Sobre o fluxo de notificação compulsória e a organização do sistema, assinale a alternativa correta conforme a legislação vigente e as diretrizes do Ministério da Saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A notificação imediata (em até 24 horas) é exigida para todas as doenças constantes na Lista Nacional de Notificação Compulsória, devendo ser feita diretamente ao Ministério da Saúde, ignorando as instâncias municipais e estaduais para agilizar a resposta federal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A notificação compulsória deve ser realizada à autoridade de saúde local (municipal) por profissionais de saúde ou responsáveis por estabelecimentos públicos e privados, sendo que a ausência de casos de doenças de notificação compulsória na semana epidemiológica exige a \"notificação negativa\" para confirmar que o sistema está alerta e evitar a subnotificação por omissão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O Sinan (Sistema de Informação de Agravos de Notificação) é alimentado exclusivamente por dados provenientes de internações hospitalares (AIH) e óbitos (DO), não permitindo a inserção de casos suspeitos identificados na atenção primária que não evoluíram para gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vigilância sentinela baseia-se na notificação universal de todos os casos suspeitos de determinada doença em todo o território nacional, visando a erradicação completa do agravo por meio do isolamento de todos os doentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa correta: (b)\n\nA alternativa (b) está correta, pois reflete as normas da Portaria de Consolidação nº 4/2017 do Ministério da Saúde. A notificação compulsória é obrigatória para médicos, outros profissionais de saúde ou responsáveis por estabelecimentos de saúde, públicos ou privados. O fluxo padrão é o envio da informação à autoridade de saúde local (Secretaria Municipal de Saúde). O conceito de notificação negativa é essencial para a vigilância: quando não ocorre nenhum caso de doença da lista nacional na semana epidemiológica, a unidade de saúde deve registrar essa ausência. Isso demonstra que o sistema de vigilância está ativo e atento, evitando o silêncio epidemiológico por falha na comunicação.\n\nA alternativa (a) está incorreta, porque a notificação imediata (em até 24 horas) não se aplica a todas as doenças da lista nacional. Muitas doenças possuem periodicidade de notificação semanal. Além disso, a notificação deve respeitar a hierarquia e a descentralização do SUS, não devendo ignorar as esferas municipal e estadual, exceto em fluxos específicos pré-estabelecidos para situações de extrema urgência, mas nunca como regra de ignorar as instâncias locais.\n\nA alternativa (c) está incorreta, pois o Sinan (Sistema de Informação de Agravos de Notificação) é alimentado primariamente pelas fichas de notificação individual e de investigação preenchidas em qualquer nível de atenção, incluindo a atenção primária. O sistema é desenhado justamente para captar casos suspeitos, independentemente de internação. O Sinan não deve ser confundido com o SIH (Sistema de Informações Hospitalares), que trata das AIHs, ou com o SIM (Sistema de Informações sobre Mortalidade), que trata das Declarações de Óbito (DO).\n\nA alternativa (d) está incorreta, porque a vigilância sentinela não visa à notificação universal. Pelo contrário, ela utiliza unidades de saúde estrategicamente selecionadas (unidades-sentinela) para monitorar determinados agravos ou patógenos de forma amostral, permitindo observar tendências e o comportamento de doenças sem a necessidade de coletar dados de todos os serviços de saúde do país. A notificação de todos os casos suspeitos em território nacional é característica da Notificação Universal, aplicada às doenças da Lista Nacional de Notificação Compulsória.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde",
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  },
+  {
+    "id": "AJUDA_092c9fdf-37b0-4c03-ae68-6b7f36187011",
+    "originalId": "092c9fdf-37b0-4c03-ae68-6b7f36187011",
+    "statement": "O câncer de mama é o tipo que mais acomete as mulheres no Brasil. Para identificação de sinais e sintomas suspeitos, o Ministério da Saúde recomenda que os seguintes sinais e sintomas sejam considerados como de referência urgente para serviços de diagnóstico mamário:",
+    "options": [
+      {
+        "id": "A",
+        "text": "qualquer nódulo mamário em mulheres com mais de 30 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "lesão eczematosa da pele que responde a tratamentos tópicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "nódulo mamário em mulheres com mais de 30 anos, que persistem por mais de um ciclo menstrual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "presença de linfadenopatia submandibular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "mamas de médio volume e pendulares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão exige o conhecimento das Diretrizes para a Detecção Precoce do Câncer de Mama no Brasil, publicadas pelo Ministério da Saúde e pelo INCA. O foco é identificar os sinais de alerta que exigem a \"Referência Urgente\", ou seja, o encaminhamento prioritário para confirmação diagnóstica.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): Nem \"qualquer\" nódulo em mulheres acima de 30 anos é considerado urgência imediata segundo o protocolo. Muitas mulheres nessa faixa etária apresentam nódulos de origem funcional ou cística que podem regredir espontaneamente. A diretriz exige o critério de persistência para evitar sobrecarga desnecessária no sistema com casos nitidamente benignos.\n\nAlternativa B (Incorreta): O sinal de alerta para o câncer de mama (especificamente a Doença de Paget do mamilo) é justamente a lesão eczematosa que NÃO responde a tratamentos tópicos. Se a lesão responde e cicatriza com o uso de cremes, a provável etiologia é dermatite de contato ou processo inflamatório simples, e não neoplasia.\n\nAlternativa C (Correta): Esta alternativa reproduz fielmente um dos critérios de referência urgente do Ministério da Saúde. Em mulheres acima de 30 anos, um nódulo que persiste por mais de um ciclo menstrual deixa de ser considerado uma provável variação hormonal comum e deve ser investigado prontamente com exames de imagem e/ou biópsia.\n\nAlternativa D (Incorreta): A drenagem linfática da mama ocorre para os linfonodos axilares e supraclaviculares. Linfadenopatia submandibular está relacionada a processos infecciosos ou neoplásicos da face, boca e orofaringe, não sendo um sinal de disseminação de câncer de mama.\n\nAlternativa E (Incorreta): O volume das mamas e a ptose (mamas pendulares) são características anatômicas individuais relacionadas à idade, paridade e composição gordurosa, não possuindo qualquer valor clínico para suspeição de malignidade.\n\nSinais de alerta para Referência Urgente (Resumo do Ministério da Saúde):\n\n1. Nódulo endurecido e fixo ou que vem aumentando de tamanho, em mulheres com mais de 50 anos.\n2. Nódulo mamário em mulheres com mais de 30 anos, que persistem por mais de um ciclo menstrual.\n3. Descarga papilar espontânea, unilateral, sanguinolenta ou do tipo \"água de rocha\".\n4. Lesão eczematosa da pele que não responde a tratamentos tópicos.\n5. Linfadenopatia axilar ou supraclavicular palpável.\n6. Alterações na superfície da mama (retração cutânea, edema com aspecto de \"casca de laranja\", abaulamentos).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  },
+  {
+    "id": "AJUDA_09337544-093d-4ed5-a539-c34f42a8a969",
+    "originalId": "09337544-093d-4ed5-a539-c34f42a8a969",
+    "statement": "Uma paciente de 18 anos chega à emergência do hospital referindo ter sido vítima de violência sexual há 2 horas em uma festa. Relata que, no ato, houve penetração. Ela desconhece o agressor, o qual não usou preservativo.\nA abordagem inicial deve incluir:",
+    "options": [
+      {
+        "id": "A",
+        "text": "atendimento inicial exclusivo por médico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "encaminhamento da paciente primeiramente ao instituto médico legal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "encaminhamento da paciente para realizar boletim de ocorrência antes do atendimento médico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "início de profilaxia para as doenças sexualmente transmissíveis e prevenção de gravidez em até 5 dias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "avaliação do estado geral de saúde, orientação e proteção contra doenças de transmissão sexual, prevenção de gravidez e coleta de materiais biológicos ou outros indícios materiais que permitam a identificação do agressor.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda o protocolo de atendimento integral às vítimas de violência sexual, um tema recorrente em provas de residência e de extrema importância na prática médica. A conduta deve ser imediata, multidisciplinar e centrada na dignidade da paciente, seguindo as diretrizes da Lei 12.845/2013 e do Ministério da Saúde.\n\nAnalise das alternativas:\n\nAlternativa a) Incorreta. O atendimento à vítima de violência sexual não deve ser exclusivo do médico. Ele deve ser obrigatoriamente multidisciplinar, envolvendo profissionais da enfermagem, psicologia e serviço social, visando o suporte físico, emocional e social da paciente.\n\nAlternativa b) Incorreta. O atendimento médico é emergencial e deve ser a prioridade absoluta. A paciente não precisa ir ao Instituto Médico-Legal (IML) antes de ser atendida no hospital. Atualmente, os serviços de saúde estão capacitados e autorizados a realizar a coleta de vestígios durante o próprio atendimento clínico para preservar a cadeia de custódia.\n\nAlternativa c) Incorreta. A exigência de Boletim de Ocorrência (BO) para o atendimento médico é ilegal. O acesso ao serviço de saúde é um direito fundamental e não depende de denúncia policial prévia. O médico tem o dever de prestar assistência imediata independentemente de providências jurídicas.\n\nAlternativa d) Incorreta. Embora a anticoncepção de emergência possa ser feita em até 5 dias (120 horas), a eficácia é significativamente maior quando administrada nas primeiras 72 horas. Além disso, a profilaxia para ISTs e, especialmente, a profilaxia pós-exposição (PEP) para o HIV devem ser iniciadas o mais precocemente possível, preferencialmente nas primeiras horas e no máximo até 72 horas após o ocorrido. Esta alternativa também ignora a coleta de provas e o suporte psicossocial.\n\nAlternativa e) Correta. Esta alternativa descreve os pilares do atendimento humanizado e completo: 1) Avaliação clínica do estado geral (lesões físicas e saúde mental); 2) Orientação e profilaxia para ISTs e HIV; 3) Anticoncepção de emergência para evitar gravidez decorrente do estupro; 4) Coleta de material biológico (sêmen, secreções, DNA) e preservação de vestígios que auxiliem na identificação do agressor, respeitando o desejo da paciente.\n\nGabarito: Letra (e).",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  },
+  {
+    "id": "AJUDA_0935612d-d22e-43e1-b3f7-9861822c2747",
+    "originalId": "0935612d-d22e-43e1-b3f7-9861822c2747",
+    "statement": "Uma mulher de 54 anos, IMC 31 kg/m², procura atendimento após exames de rotina. Ela apresenta glicemia de jejum de 112 mg/dL em duas ocasiões e HbA1c de 6,0%. Relata sedentarismo, hipertensão em tratamento, histórico familiar de diabetes tipo 2 em primeiro grau e antecedente de diabetes gestacional. Circunferência abdominal de 108 cm. Não apresenta sintomas clássicos de hiperglicemia.\nCom base na Diretriz da SBD 2025, qual seria a conduta mais adequada para esta paciente com pré-diabetes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas mudanças no estilo de vida (atividade física regular + perda de peso de 5–7%).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mudanças no estilo de vida e introdução de metformina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas acompanhamento da glicemia e HbA1c, sem intervenção imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Início de metformina isoladamente, sem necessidade de mudanças no estilo de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta o diagnóstico de pré-diabetes, comprovado por duas dosagens de glicemia de jejum entre 100 e 125 mg/dL (112 mg/dL) e hemoglobina glicada entre 5,7% e 6,4% (6,0%). Segundo a Diretriz da Sociedade Brasileira de Diabetes (SBD), a abordagem do pré-diabetes envolve a estratificação de risco para progressão ao diabetes mellitus tipo 2 (DM2) e a definição da melhor estratégia de prevenção.\n\nAlternativa A - Incorreta. As mudanças no estilo de vida (MEV), com foco em perda ponderal de 5% a 7% e atividade física de pelo menos 150 minutos por semana, são a base do tratamento para todo paciente pré-diabético. No entanto, a conduta apenas com MEV torna-se insuficiente para pacientes com perfil de alto risco, nos quais a farmacoterapia adjuvante está indicada.\n\nAlternativa B - Correta. A Diretriz da SBD recomenda associar a metformina às mudanças no estilo de vida para pacientes com pré-diabetes que apresentem alto risco de conversão para DM2. Os principais critérios para início de metformina incluem: idade menor que 60 anos, IMC maior ou igual a 35 kg/m² ou histórico de diabetes mellitus gestacional. A paciente tem 54 anos e antecedente de diabetes gestacional, preenchendo critérios claros para a associação de metformina com MEV.\n\nAlternativa C - Incorreta. A conduta puramente expectante não é recomendada, pois o pré-diabetes é um estado de risco cardiometabólico elevado e com taxa significativa de conversão para DM2 franco, exigindo intervenção ativa imediata.\n\nAlternativa D - Incorreta. A metformina não deve ser prescrita isoladamente sem a orientação e implementação de mudanças de hábitos. As alterações de estilo de vida demonstraram superioridade ou sinergismo na redução da incidência de DM2 quando comparadas ao uso isolado de medicação, atuando o fármaco como terapia complementar.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Obesidade e Síndrome Metabólica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  },
+  {
+    "id": "AJUDA_0935849c-de4a-4c91-9922-1d5c6cc5a6b1",
+    "originalId": "0935849c-de4a-4c91-9922-1d5c6cc5a6b1",
+    "statement": "Mulher, 28 anos, com diabetes mellitus tipo 1, apresenta poliúria, polidipsia, náuseas e vômitos há 48 horas. Interrompeu a administração de insulina regular há dois dias devido a um episódio de gastroenterite. Exame físico: desidratada, respiração de Kussmaul e hálito cetônico. Sinais vitais: PA= 90x50 mmHg, FC= 120 bpm, FR= 28 irpm, SpO2= 96% em ar ambiente. Laboratório: glicose sérica= 480 mg/dL (VR: 70-99), pH arterial= 7,15 (VR: 7,35-7,45), bicarbonato= 10 mEq/L (VR: 22-28), cetonas séricas positivas, sódio= 142 mEq/L (VR: 135-145), cloro= 100 mEq/L (VR: 98-106), potássio= 4,0 mEq/L (VR: 3,5-5,0). Qual é a conduta inicial mais adequada para o manejo deste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de bicarbonato de sódio intravenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administração de insulina subcutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administração de solução fisiológica 0,9% intravenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Administração de insulina intravenosa contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico e Discussão:\n\nO quadro clínico e laboratorial apresentado é clássico de Cetoacidose Diabética (CAD), uma complicação aguda grave do Diabetes Mellitus Tipo 1. A tríade diagnóstica está presente: hiperglicemia (480 mg/dL), acidose metabólica com anion gap elevado (pH 7,15 e bicarbonato 10 mEq/L) e cetonemia/cetonúria. O fator desencadeante foi a interrupção da insulinoterapia associada a um quadro infeccioso (gastroenterite).\n\nA prioridade absoluta no manejo inicial da CAD, especialmente em uma paciente que apresenta sinais de choque hipovolêmico ou desidratação grave (hipotensão de 90 x 50 mmHg e taquicardia de 120 bpm), é a reposição volêmica. A expansão com cristaloides visa restaurar o volume intravascular, melhorar a perfusão tecidual e auxiliar na redução da glicemia por meio da diluição e do aumento da excreção renal de glicose.\n\nAnálise das Alternativas:\n\na) Incorreta. O uso de bicarbonato de sódio na CAD é um tema controverso e, segundo as principais diretrizes (como as da Sociedade Brasileira de Diabetes e da ADA), só está indicado se o pH arterial for inferior a 6,9. No caso clínico, o pH é 7,15; portanto, o bicarbonato não deve ser administrado, pois pode acarretar riscos como hipocalemia, acidose paradoxal do sistema nervoso central e edema cerebral.\n\nb) Incorreta. A via subcutânea não é a preferencial no manejo da CAD em ambiente hospitalar, especialmente em casos moderados a graves com instabilidade hemodinâmica. Além disso, a administração de insulina nunca deve preceder o início da reposição volêmica, pois a insulina promove a entrada de glicose e água para o meio intracelular, o que poderia agravar ainda mais o colapso circulatório se o volume intravascular não for reposto primeiro.\n\nc) Correta. A administração de solução fisiológica a 0,9% intravenosa é o primeiro passo fundamental. A paciente apresenta sinais claros de depleção de volume e hipotensão. O objetivo inicial é a expansão rápida (geralmente 15 a 20 mL/kg na primeira hora) para estabilização hemodinâmica antes de se iniciar a insulinoterapia.\n\nd) Incorreta. Embora a insulina regular intravenosa contínua seja o padrão-ouro para o tratamento da CAD após a estabilização inicial, ela não é a conduta inicial mais adequada para este caso específico devido à hipotensão. Além disso, antes de iniciar a insulina, é fundamental avaliar os níveis de potássio sérico. Se o potássio estivesse abaixo de 3,3 mEq/L, a insulina deveria ser postergada até a reposição do eletrólito para evitar arritmias e parada cardiorrespiratória. Como a paciente está hipotensa, a prioridade máxima é a volemia.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  },
+  {
+    "id": "AJUDA_09407821-11b5-4e6a-8f1e-d36dffadc8f4",
+    "originalId": "09407821-11b5-4e6a-8f1e-d36dffadc8f4",
+    "statement": "Mulher de 45 anos comparece à UBS para acompanhamento de rotina. É saudável, sem comorbidades e não faz uso de medicamentos. Relata dieta rica em ultraprocessados, pouco tempo para atividade física e histórico familiar de diabetes mellitus tipo 2. Qual é a melhor conduta do médico de família neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar exames laboratoriais extensos, incluindo TSH, função renal e perfil hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Focar o atendimento na escuta qualificada, orientação sobre estilo de vida e rastreamento direcionado conforme risco individual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para endocrinologista para prevenção do diabetes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar exames apenas se houver sintomas ou alterações físicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das respostas anteriores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os princípios fundamentais da Medicina de Família e Comunidade e da Atenção Primária à Saúde, focando em promoção da saúde, prevenção de doenças e racionalização diagnóstica.\n\nAlternativa A: Incorreta. Solicitar um \"check-up\" com exames laboratoriais extensos (TSH, função renal, perfil hepático) em uma paciente jovem e assintomática sem justificativa clínica específica vai contra as evidências científicas. Essa prática aumenta o risco de achados incidentais sem relevância clínica (incidentalomas), levando a intervenções desnecessárias e ansiedade, o que caracteriza falha na prevenção quaternária.\n\nAlternativa B: Correta. Esta é a conduta padrão na Atenção Primária. A escuta qualificada permite entender o contexto de vida da paciente. A orientação sobre estilo de vida atua diretamente nos fatores de risco modificáveis relatados (dieta e sedentarismo). O rastreamento deve ser direcionado e baseado em evidências: para uma mulher de 45 anos com histórico familiar de diabetes e hábitos inadequados, a triagem para diabetes mellitus (como glicemia de jejum ou HbA1c) e a aferição da pressão arterial são indicadas, além do rastreamento oncológico pertinente à idade (como o preventivo do colo do útero).\n\nAlternativa C: Incorreta. O manejo de fatores de risco metabólicos e a prevenção primária de doenças crônicas não transmissíveis são responsabilidades do médico generalista/de família. Não há qualquer critério de gravidade ou complexidade que justifique o encaminhamento ao endocrinologista neste momento.\n\nAlternativa D: Incorreta. Embora devamos evitar excessos, a medicina preventiva preconiza que certas condições devem ser rastreadas mesmo em pacientes assintomáticos, visando o diagnóstico precoce (prevenção secundária). No caso dela, a idade e os hábitos justificam o rastreamento de algumas patologias silenciosas, como hipertensão e diabetes.\n\nAlternativa E: Incorreta. A alternativa B descreve perfeitamente a abordagem integral e centrada na pessoa.",
+    "exam": "UFRB",
+    "year": 2026,
+    "banca": "UFRB",
+    "uf": "BA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35674e2a8fdd600c4528186d032722b2534d565f8659f6d532a9977d76ec6035.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2f3a30ed0fd307a6a4fadc82fa84bd78995407514592af81b25948bee1e5d79f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:55.466Z"
+  }
+]

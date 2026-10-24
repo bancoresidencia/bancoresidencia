@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_35003a45-5cec-415d-99c1-35f831492a4a",
+    "originalId": "35003a45-5cec-415d-99c1-35f831492a4a",
+    "statement": "Homem 40 anos, com história pregressa de asma, chega à emergência queixando dispneia ao falar. Ao exame fala frases, prefere ficar sentado, utiliza musculatura acessória, frequência respiratória 27 irpm/mim, frequência cardíaca 115 bpm, saturação em ar ambiente 92%, apresentando sibilos expiratórios difusos, P.F.E. > 50 % do predito utilizando formula European Respiratory Society/ Nunn & Gregg). \n\nQual a classificação da exacerbação e conduta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Leve. Administrar Beta 2 agonistas de curta ação inalatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Leve. Beta2 agonista de curta ação inalatórios, considerar ipratrópio, fornecer corticoide oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Moderada. Administrar beta 2 agonistas de curta ação inalatórios, fornecer corticoide oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Moderada. Administrar beta 2 agonistas de curta ação inalatórios, considerar ipratrópio, controlar oxigênio para manter saturação entre 93 e 95 % e fornecer corticoide oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Grave. Administrar Beta 2 agonista de ação curta inalatórios e ipratrópio, controlar oxigênio para manter saturação entre 93 e 95%, fornecer corticoide EV, considerar magnésio EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para classificar a gravidade de uma exacerbação de asma, utilizamos parâmetros clínicos e funcionais. No caso apresentado, o paciente apresenta fala em frases (não apenas palavras isoladas), prefere a posição sentada, utiliza musculatura acessória, possui frequência respiratória de 27 irpm e frequência cardíaca de 115 bpm. Além disso, a saturação de oxigênio é de 92% e o Pico de Fluxo Expiratório (PFE) é maior que 50% do predito.\n\nDe acordo com as diretrizes do GINA (Global Initiative for Asthma) e da Sociedade Brasileira de Pneumologia e Tisiologia, esses achados classificam a crise como MODERADA. Na crise leve, geralmente não há uso de musculatura acessória, a frequência cardíaca é menor que 100 bpm e a saturação costuma estar normal. Na crise grave, o paciente fala apenas palavras, a frequência respiratória é maior que 30 irpm, a frequência cardíaca é maior que 120 bpm e o PFE é menor ou igual a 50%.\n\nO manejo da crise moderada no ambiente de emergência baseia-se em:\n1. Beta-2 agonista de curta ação (SABA): Base do tratamento para broncodilatação rápida.\n2. Brometo de ipratrópio: Quando associado ao SABA nas crises moderadas e graves, reduz as taxas de internação hospitalar.\n3. Oxigenioterapia: O alvo de saturação deve ser mantido entre 93% e 95% para garantir a oxigenação tecidual sem os riscos de hiperóxia.\n4. Corticoterapia sistêmica: Essencial para tratar a inflamação. A via oral é preferencial por ter eficácia equivalente à via intravenosa em crises moderadas, com menor custo e maior facilidade de administração.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A classificação não é leve. O paciente apresenta sinais de esforço respiratório (musculatura acessória) e taquicardia, o que exige uma classificação superior e conduta mais abrangente.\n\nAlternativa b: Incorreta. Embora a conduta sugerida seja adequada para o quadro, a classificação inicial como leve invalida a alternativa.\n\nAlternativa c: Incorreta. Apesar de a classificação como moderada estar correta, a alternativa d é considerada mais completa por incluir o alvo de saturação de oxigênio e a indicação do ipratrópio, conforme os protocolos de manejo hospitalar.\n\nAlternativa d: Correta. Identifica corretamente a gravidade como moderada e descreve os quatro pilares do tratamento na emergência: SABA, ipratrópio, controle rigoroso da oxigenação e corticoide oral.\n\nAlternativa e: Incorreta. O paciente não preenche critérios para crise grave (como FC > 120 bpm, FR > 30 irpm ou saturação < 90%). O uso de magnésio intravenoso e corticoides por via parenteral é reservado para casos graves ou que não respondem ao tratamento inicial na primeira hora.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  },
+  {
+    "id": "AJUDA_350abf9c-9a05-43d3-a244-2a3f63cc83a2",
+    "originalId": "350abf9c-9a05-43d3-a244-2a3f63cc83a2",
+    "statement": "A pancreatite é uma condição inflamatória do pâncreas, um órgão vital responsável pela produção de enzimas digestivas e hormônios como a insulina. Essa inflamação pode ocorrer de forma aguda, com sintomas súbitos e intensos, ou crônica, caracterizada por episódios recorrentes e danos progressivos ao órgão. Assim, avalie as proposições:\n\nI. Durante o exame físico, é possível encontrar dor abdominal intensa e difusa, além de sinais de distensão abdominal e alterações nos sinais vitais, como febre e taquicardia.\nII. O exame físico de um paciente com Pancreatite Aguda sempre revela sinais típicos e específicos, como dor localizada exclusivamente na região epigástrica.\nIII. Todos os pacientes com Pancreatite Aguda apresentarão icterícia visível, com esclera amarelada, independentemente da gravidade da condição.\n\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DAS PROPOSIÇÕES:\n\nPROPOSIÇÃO I: ESTÁ CORRETA. A pancreatite aguda manifesta-se classicamente com dor abdominal súbita e intensa, predominantemente no andar superior do abdome. Embora a descrição típica seja a dor em epigástrio com irradiação para o dorso (em barra), a dor pode ser difusa. A distensão abdominal é um achado comum e decorre do íleo paralítico (parada do trânsito intestinal) induzido pela inflamação retroperitoneal. Além disso, a pancreatite gera uma resposta inflamatória sistêmica, o que justifica as alterações nos sinais vitais, como taquicardia e febre, que inclusive fazem parte dos critérios de avaliação de gravidade.\n\nPROPOSIÇÃO II: ESTÁ INCORRETA. No contexto clínico, o uso de termos como \"sempre\" e \"exclusivamente\" geralmente invalida uma afirmação. O exame físico da pancreatite aguda é variável e não apresenta apenas sinais específicos. A dor não é exclusiva da região epigástrica, podendo localizar-se nos hipocôndrios ou ser generalizada. Além disso, sinais clássicos descritos em livros, como os sinais de Cullen (equimose periumbilical) e Grey-Turner (equimose em flancos), são raros e aparecem apenas em casos graves de pancreatite necro-hemorrágica, não sendo, portanto, achados constantes.\n\nPROPOSIÇÃO III: ESTÁ INCORRETA. A icterícia (coloração amarelada da pele e mucosas) não está presente em todos os pacientes. Ela é um achado sugestivo de pancreatite de etiologia biliar, ocorrendo quando há obstrução do ducto colédoco por um cálculo ou por compressão extrínseca devido ao edema na cabeça do pâncreas. Pacientes com pancreatite causada por álcool, hipertrigliceridemia ou medicamentos, por exemplo, muitas vezes não apresentam icterícia se não houver comprometimento da via biliar associado.\n\nCONCLUSÃO: Apenas a proposição I está correta, o que torna a alternativa (b) a resposta correta da questão.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  },
+  {
+    "id": "AJUDA_350bb6b9-336d-4d1b-bf66-5c311435bfc7",
+    "originalId": "350bb6b9-336d-4d1b-bf66-5c311435bfc7",
+    "statement": "Considerando a confecção de um plano terapêutico para pessoa idosa com osteoartrite na Atenção Primária à Saúde, qual das falas médicas a seguir está de acordo com uma abordagem ancorada na entrevista motivacional?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como seu profissional de saúde, eu realmente acho que você deve se exercitar diariamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Há muitas maneiras de se exercitar. Você poderia caminhar, andar de bicicleta, nadar ou ir a uma academia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Você diz que o tempo é uma barreira para você se exercitar. Quais ideias você tem para encaixar a atividade física em sua rotina diária?",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Você diz que não tem tempo para se exercitar, mas o exercício é tão importante para suas articulações que você deve tirar um tempo para isso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder corretamente a essa questão, é necessário compreender os princípios da Entrevista Motivacional (EM), uma estratégia de comunicação clínica utilizada para auxiliar pacientes a mudarem comportamentos de saúde. A EM foca na colaboração, na autonomia do paciente e na evocação de suas próprias ideias, evitando o reflexo de correção (o impulso do médico de dizer ao paciente o que ele deve fazer).\n\nAlternativa a: Incorreta. Esta fala é centrada na autoridade do profissional e utiliza o reflexo de correção. Ao dizer \"Eu acho que você deve\", o médico assume uma postura diretiva e prescritiva, o que frequentemente gera resistência no paciente e ignora o protagonismo do indivíduo no seu próprio cuidado.\n\nAlternativa b: Incorreta. Embora o médico apresente opções, ele está oferecendo soluções prontas de forma unilateral. Na abordagem motivacional, o objetivo é que o paciente identifique quais atividades seriam viáveis para ele. Fornecer uma lista de sugestões sem antes explorar as preferências do paciente é uma abordagem de aconselhamento tradicional, não de Entrevista Motivacional.\n\nAlternativa c: Correta. Esta alternativa demonstra o uso de duas ferramentas centrais da Entrevista Motivacional: a escuta reflexiva e a pergunta aberta. O médico primeiro valida a barreira relatada pelo paciente (falta de tempo) e, em seguida, utiliza uma pergunta que evoca as próprias soluções do paciente. Isso fortalece a autonomia e a autoeficácia, incentivando o idoso a pensar em como superar seus próprios obstáculos para realizar a atividade física necessária no manejo da osteoartrite.\n\nAlternativa d: Incorreta. O uso da conjunção adversativa \"mas\" invalida a percepção do paciente sobre suas dificuldades. Ao confrontar o paciente com o argumento de que ele deve tirar um tempo por causa da importância do exercício, o médico cria uma barreira na comunicação e adota uma postura moralizante, o que costuma ser contraproducente para a mudança de comportamento na Atenção Primária à Saúde.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  },
+  {
+    "id": "AJUDA_350d940e-e802-4369-a504-25c124841026",
+    "originalId": "350d940e-e802-4369-a504-25c124841026",
+    "statement": "Uma ferramenta da abordagem familiar sistêmica é",
+    "options": [
+      {
+        "id": "A",
+        "text": "o plano terapêutico singular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o ciclo de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o diagnóstico de demanda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a educação popular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A abordagem familiar sistêmica entende a família como um sistema dinâmico, em que o que acontece com um membro afeta todos os outros. Para operacionalizar essa visão na prática clínica, especialmente na Medicina de Família e Comunidade, utilizam-se ferramentas específicas que ajudam a entender a estrutura, o contexto e o momento vivido pelo grupo.\n\nAlternativa (a) Incorreta: O Plano Terapêutico Singular (PTS) é um conjunto de propostas de condutas terapêuticas articuladas para um sujeito individual ou coletivo, geralmente em situações de maior complexidade. É uma ferramenta da Clínica Ampliada e de gestão do cuidado multiprofissional, e não uma ferramenta exclusiva ou definidora da abordagem sistêmica familiar.\n\nAlternativa (b) Correta: O Ciclo de Vida Familiar é uma das ferramentas fundamentais da abordagem sistêmica. Ele descreve as etapas previsíveis de desenvolvimento pelas quais a maioria das famílias passa (como o acasalamento, o nascimento dos filhos, a adolescência, o \"ninho vazio\" e o estágio tardio da vida). Cada etapa exige mudanças nos papéis e nas regras familiares, gerando crises normativas que podem estar relacionadas ao processo de adoecimento. Conhecer o ciclo de vida ajuda o médico a antecipar conflitos e entender o contexto do paciente.\n\nAlternativa (c) Incorreta: O diagnóstico de demanda é um conceito administrativo e clínico geral que se refere à identificação das necessidades de saúde apresentadas pelos usuários que procuram o serviço. Não se trata de uma ferramenta específica para a análise da dinâmica ou da estrutura familiar sob a ótica sistêmica.\n\nAlternativa (d) Incorreta: A Educação Popular em Saúde é uma orientação pedagógica e política que valoriza o saber do usuário e busca a transformação social e a participação comunitária. Embora seja um princípio importante na Atenção Primária, não é classificada como uma ferramenta técnica da abordagem familiar sistêmica (como seriam o Genograma, o Ecomapa ou o APGAR familiar).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  },
+  {
+    "id": "AJUDA_3519aa13-54f3-4fd9-b7bb-5b626980fd9a",
+    "originalId": "3519aa13-54f3-4fd9-b7bb-5b626980fd9a",
+    "statement": "Gestante de 18 semanas, com história prévia de pielonefrite na gestação anterior, apresenta urocultura positiva para E. coli (10⁵ UFC/mL), assintomática.\n\nApós tratamento adequado, a principal conduta adicional indicada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta sem seguimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Profilaxia antibiótica contínua até o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uroculturas de controle periódicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ultrassonografia renal seriada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Internação para antibioticoterapia venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve uma gestante com Bacteriúria Assintomática (BA), definida pelo crescimento de pelo menos 10^5 UFC/mL de uma única bactéria em paciente sem sintomas urinários. Na gestação, o rastreio e o tratamento da BA são obrigatórios devido ao alto risco de progressão para pielonefrite (infecção urinária alta), que está associada a complicações graves como trabalho de parto prematuro, ruptura prematura de membranas e restrição de crescimento fetal.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A alta sem seguimento é contraindicada. Gestantes que apresentaram um episódio de bacteriúria assintomática apresentam alto índice de recorrência (cerca de 30% dos casos). O acompanhamento rigoroso é fundamental para garantir que a urina permaneça estéril até o final da gestação.\n\nAlternativa b) Incorreta. A profilaxia antibiótica contínua (uso diário de antibiótico em dose subterapêutica até o parto) é geralmente reservada para gestantes que apresentam infecções urinárias de repetição na gestação atual (dois ou mais episódios de bacteriúria assintomática ou cistite) ou após um episódio de pielonefrite na gestação atual. Embora a paciente tenha histórico de pielonefrite em gravidez anterior, a conduta inicial após o primeiro episódio de BA nesta gestação é o tratamento seguido de vigilância.\n\nAlternativa c) Correta. Após o tratamento adequado da bacteriúria assintomática na gestante, as diretrizes nacionais e internacionais recomendam a realização de uma urocultura de controle (teste de cura) cerca de 7 a 14 dias após o término do tratamento. Se negativa, a paciente deve realizar uroculturas periódicas (mensais) até o final da gravidez, pois o risco de nova colonização e progressão para infecção sistêmica permanece alto durante todo o período gestacional.\n\nAlternativa d) Incorreta. A ultrassonografia renal não faz parte do acompanhamento de rotina da bacteriúria assintomática. Esse exame é indicado em casos de pielonefrite que não apresentam melhora clínica após 48 a 72 horas de antibioticoterapia adequada, visando excluir complicações como abscessos renais, hidronefrose severa ou cálculos coraliformes.\n\nAlternativa e) Incorreta. O tratamento da bacteriúria assintomática é feito por via oral e em regime ambulatorial. A internação para antibioticoterapia venosa é indicada para casos de pielonefrite, especialmente a partir do segundo trimestre, ou quando a paciente apresenta sinais de sepse, vômitos que impedem a ingestão de medicamentos ou instabilidade hemodinâmica.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "ITU - Infecção do Trato Urinário",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  },
+  {
+    "id": "AJUDA_351a335d-a7c4-4850-9303-99bea98dee1d",
+    "originalId": "351a335d-a7c4-4850-9303-99bea98dee1d",
+    "statement": "Uma criança de 9 meses apresenta perímetro cefálico no p97, mas desde o nascimento acompanha esse canal de crescimento sem desvio. Tem fontanela anterior aberta e desenvolvimento neurológico normal. Nesse momento, a melhor conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar ressonância nuclear magnética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para avaliação neuropediátrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar ultrassonografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar tomografia computadorizada de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Considerar variante normal e manter seguimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O ponto fundamental para a resolução desta questão é a análise da curva de crescimento do perímetro cefálico (PC). Na pediatria, mais importante do que um valor isolado em um gráfico é a tendência de crescimento ao longo do tempo.\n\nA criança apresenta um PC no percentil 97 (p97), o que a caracteriza como macrocefálica (geralmente definido como PC acima do p95 ou 2 desvios-padrão). No entanto, o enunciado destaca três informações cruciais:\n1. O crescimento acompanha o mesmo canal (p97) desde o nascimento, ou seja, não houve aceleração ou \"salto\" de percentis.\n2. O desenvolvimento neuropsicomotor é normal.\n3. O exame físico (fontanela anterior aberta e sem menção a sinais de hipertensão intracraniana) é normal.\n\nQuando uma criança é constitucionalmente grande, mas mantém seu canal de crescimento de forma harmônica e possui desenvolvimento normal, a principal hipótese é de macrocefalia familiar ou constitucional, que são variantes da normalidade.\n\nAnálise das alternativas:\n\na) Incorreta. A ressonância magnética é um exame de alto custo e complexidade, que em lactentes geralmente requer sedação. Ela estaria indicada se houvesse sinais de alerta, como atraso no desenvolvimento, sinais de hipertensão intracraniana ou uma mudança súbita na curva de crescimento.\n\nb) Incorreta. O encaminhamento ao especialista deve ocorrer quando há dúvida diagnóstica ou sinais de patologia neurológica. O pediatra generalista deve estar apto a identificar que uma curva estável com desenvolvimento normal permite o seguimento na atenção primária.\n\nc) Incorreta. Embora a ultrassonografia de crânio seja um exame acessível e sem radiação (aproveitando a fontanela aberta), ela é desnecessária neste momento clínico. O acompanhamento da curva de crescimento é o \"padrão-ouro\" para descartar hidrocefalia ou outras coleções intracranianas em expansão. Se o crescimento é estável, a chance de patologia cirúrgica é mínima.\n\nd) Incorreta. A tomografia computadorizada utiliza radiação ionizante e não deve ser utilizada como triagem para macrocefalia estável e assintomática, devido aos riscos a longo prazo para o tecido cerebral em desenvolvimento.\n\ne) Correta. Diante de uma curva de crescimento paralela aos percentis de normalidade (mesmo que no limite superior), sem sinais de desvio e com exame neurológico adequado para a idade, a conduta correta é tranquilizar a família e manter o seguimento clínico de rotina nas consultas de puericultura. Caso o PC começasse a cruzar percentis para cima (ex.: passar do p97 para muito acima dele), aí sim seria necessária investigação por imagem.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  },
+  {
+    "id": "AJUDA_351dc24b-cc26-4e36-ba86-2af7117fd346",
+    "originalId": "351dc24b-cc26-4e36-ba86-2af7117fd346",
+    "statement": "Criança de 3 meses de vida, sexo feminino, comparece pela terceira vez a um pronto atendimento, por apresentar cansaço e sudorese após as mamadas. A acompanhante relata que não tem notado ganho de peso satisfatório, apesar de observar que o lactente, que está em aleitamento materno exclusivo, suga bem o seio materno. No exame físico, lactente com regular estado geral, pulsos periféricos debilmente palpáveis, acianótico, hidratado, com esforço respiratório leve, frequência cardíaca de 170 bpm, Pressão arterial 120/80 mmhg em membro superior direito, fígado a 4 cm reborda costal direita, frequência respiratória de 70 irpm, murmúrio vesicular fisiológico.\nDiante do caso clínico, qual a PRINCIPAL hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência cardíaca por provável coarctação da aorta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Insuficiência cardíaca por provável cardiopatia congênita cianogênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Insuficiência cardíaca por provável quadro de anemia congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Insuficiência cardíaca compensada por provável sepse neonatal tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE CLÍNICA DO CASO\n\nO quadro clínico descreve um lactente de 3 meses com sinais clássicos de Insuficiência Cardíaca (IC): cansaço e sudorese às mamadas (equivalente à dispneia aos esforços no adulto), baixo ganho ponderal, taquicardia (170 bpm), taquipneia (70 irpm) e hepatomegalia (fígado a 4 cm do rebordo costal direito). Dois dados no exame físico são patognomônicos para o diagnóstico: a hipertensão arterial no membro superior (120/80 mmHg é um valor muito elevado para um lactente de 3 meses) e a palpação de pulsos periféricos débeis.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA coarctação da aorta é uma cardiopatia congênita acianótica caracterizada pelo estreitamento da luz da aorta, geralmente próximo ao canal arterial. Esse estreitamento cria uma obstrução ao fluxo sanguíneo para a parte inferior do corpo. Como consequência, ocorre hipertensão nos membros superiores (antes da obstrução) e pulsos reduzidos ou ausentes nos membros inferiores. O ventrículo esquerdo sofre uma sobrecarga de pressão para vencer essa obstrução, levando à insuficiência cardíaca congestiva, o que explica a hepatomegalia e o desconforto respiratório observados na criança.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ INCORRETA?\n\nO enunciado afirma explicitamente que a criança está acianótica. As cardiopatias congênitas cianogênicas (como Transposição das Grandes Artérias ou Tetralogia de Fallot) manifestam-se primariamente com hipoxemia e coloração azulada de mucosas e extremidades, o que não condiz com o exame físico relatado. Além disso, a hipertensão em membros superiores não é um achado típico dessas patologias.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ INCORRETA?\n\nEmbora uma anemia grave possa causar insuficiência cardíaca de alto débito, ela não explicaria a hipertensão arterial de 120/80 mmHg em um lactente. Na anemia, o esperado seria encontrar palidez cutâneo-mucosa importante e, frequentemente, uma pressão arterial normal ou sistólica levemente divergente devido à hiperdinamia, mas nunca uma hipertensão localizada ou sistêmica tão marcada associada a pulsos débeis.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ INCORRETA?\n\nA sepse neonatal tardia ou do lactente costuma cursar com sinais de toxemia, febre ou hipotermia, e instabilidade hemodinâmica que tende à hipotensão ou choque (extremidades frias, tempo de enchimento capilar lentificado), e não hipertensão arterial. Além disso, o quadro de cansaço às mamadas e baixo ganho de peso há algum tempo sugere uma patologia crônica/estrutural cardíaca, e não um quadro infeccioso agudo. O termo insuficiência cardíaca compensada também está incorreto, pois o paciente apresenta sinais claros de descompensação (hepatomegalia e taquipneia).",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente",
+      "Insuficiência Cardíaca",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  },
+  {
+    "id": "AJUDA_352b593f-203b-4b81-89d8-8a0fdda8eba3",
+    "originalId": "352b593f-203b-4b81-89d8-8a0fdda8eba3",
+    "statement": "Paciente, 25 anos de idade, nuligesta e sexualmente ativa, vem ao consultório para consulta ginecológica de rotina. Ela relata que sua menarca ocorreu aos 12 anos de idade e iniciou sua vida sexual aos 18 anos de idade. Costuma usar preservativo com frequência, mas está preocupada por nunca ter se vacinado contra o HPV.\nEm relação a esse caso, considere as afirmativas a seguir.\n\nI. A principal etiologia do câncer de colo uterino é a infecção causada pelo HPV, sendo a vacina imprescindível na sua prevenção.\nII. A citologia oncótica é indispensável para o rastreio de câncer de colo uterino e lesões causadas pelo HPV, mesmo em mulheres vacinadas.\nIII. Recomenda-se que a vacinação contra o HPV seja realizada antes do início da vida sexual, no entanto, a vacina também previne a infecção pelo vírus em pessoas sexualmente ativas.\nIV. Como a exposição repetida aumenta a imunidade contra o HPV, mulheres acima de 26 anos de idade não necessitam realizar a vacinação.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nAfirmativa I (Correta): A infecção persistente por subtipos oncogênicos do Papilomavírus Humano (HPV) é o fator etiológico necessário em praticamente 100% dos casos de câncer de colo uterino. Os tipos 16 e 18 são responsáveis por cerca de 70% desses casos. A vacinação é a estratégia de prevenção primária mais eficaz, pois induz a produção de anticorpos neutralizantes que impedem a entrada do vírus nas células da camada basal do epitélio.\n\nAfirmativa II (Correta): A vacinação não substitui o rastreio citológico (Papanicolau). Isso ocorre porque a vacina disponível no SUS (quadrivalente) protege contra os tipos 16 e 18 (alto risco) e 6 e 11 (baixo risco), mas não cobre todos os outros subtipos oncogênicos existentes. Além disso, a paciente pode ter sido exposta a outros tipos virais antes ou após a vacinação. Portanto, o rastreio citológico permanece como prevenção secundária indispensável.\n\nAfirmativa III (Correta): O cenário ideal para a vacinação é antes da sexarca (exposição ao vírus), quando a resposta imunogênica é máxima e a paciente ainda é \"naïve\" (virgem de exposição). Contudo, a vacina é recomendada e eficaz também para pessoas sexualmente ativas. Nesses casos, mesmo que a mulher já tenha tido contato com um tipo de HPV, a vacina oferece proteção contra os demais subtipos contidos no imunizante aos quais ela ainda não foi exposta, além de poder reduzir o risco de reinfecção ou recidivas de lesões.\n\nAfirmativa IV (Incorreta): A afirmação possui dois erros conceituais graves. Primeiro, a exposição repetida ao HPV não gera uma \"imunidade natural\" robusta ou protetora na maioria das pessoas; ao contrário, a persistência viral é o que leva às lesões pré-neoplásicas. Segundo, não existe uma idade limite de 26 anos que torne a vacina desnecessária. Embora o Ministério da Saúde priorize a faixa etária de 9 a 14 anos no Programa Nacional de Imunização (PNI), órgãos como a FEBRASGO e a ACIP recomendam a vacinação em regimes de \"catch-up\" para adultos jovens e mulheres até 45 anos (estratégia \"off-label\" ou via rede privada), pois o benefício clínico de proteção individual persiste.\n\nCONCLUSÃO:\n\nEstão corretas as afirmativas I, II e III. A afirmativa IV está tecnicamente errada ao sugerir que a exposição aumenta a imunidade e que a vacinação é desnecessária após os 26 anos.\n\nAlternativa correta: Letra (d).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  },
+  {
+    "id": "AJUDA_352d02d0-8e48-4704-b203-b399a7fe2b3c",
+    "originalId": "352d02d0-8e48-4704-b203-b399a7fe2b3c",
+    "statement": "Paciente de 20 anos chega à consulta ginecológica queixando-se de corrimento vaginal malcheiroso e em grande quantidade. Relata surgimento do quadro após o período menstrual, tendo o corrimento coloração acinzentada e odor fétido intenso. Nega prurido ou sintomas associados. \nO agente etiológico mais provável do quadro é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "candida albicans.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "gardnerella vaginalis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "treponema pallidum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "trichomonas vaginalis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nO quadro descrito apresenta os elementos clássicos da vaginose bacteriana: corrimento homogêneo, acinzentado, de odor fétido (frequentemente descrito como odor de peixe podre) e ausência de sinais inflamatórios, como prurido ou dor. A queixa de surgimento ou piora após a menstruação ocorre porque o sangue menstrual possui pH básico, o que favorece a volatilização de aminas (como cadaverina e putrescina) produzidas pelas bactérias anaeróbias, intensificando o odor fétido.\n\nAlternativa (a) incorreta: A *Candida albicans* é o agente da candidíase vulvovaginal. O corrimento característico dessa condição é branco, aderente e grumoso, frequentemente comparado a leite coalhado ou nata. Diferente do caso relatado, a candidíase cursa com prurido intenso, hiperemia (vermelhidão) e edema vulvar, e não costuma apresentar odor fétido.\n\nAlternativa (b) correta: A *Gardnerella vaginalis* é a principal bactéria associada à vaginose bacteriana, uma disbiose em que há redução dos lactobacilos acidófilos (flora de Döderlein) e proliferação de bactérias anaeróbias. O diagnóstico clínico é realizado por meio dos critérios de Amsel, nos quais a presença de corrimento acinzentado, pH vaginal maior que 4,5, teste do \"whiff\" positivo (odor de aminas ao adicionar KOH) e presença de \"clue cells\" (células-alvo) na microscopia confirmam a patologia.\n\nAlternativa (c) incorreta: O *Treponema pallidum* é a espiroqueta causadora da sífilis. Na sífilis primária, a manifestação clássica é o cancro duro, uma úlcera genital indolor e com bordas endurecidas. Na sífilis secundária, ocorrem manifestações sistêmicas e cutâneo-mucosas. O agente não está relacionado a quadros de corrimento vaginal com as características descritas.\n\nAlternativa (d) incorreta: O *Trichomonas vaginalis* é um protozoário causador da tricomoníase, uma infecção sexualmente transmissível. Embora o corrimento possa ser volumoso e malcheiroso, sua coloração típica é amarelo-esverdeada e sua consistência é bolhosa. Além disso, ao contrário da vaginose bacteriana, a tricomoníase é uma vaginite verdadeira que causa inflamação intensa, frequentemente apresentando prurido e o sinal do \"colo em framboesa\" (colpite focal) ao exame físico.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  },
+  {
+    "id": "AJUDA_3535cf73-9395-414c-9e05-2ffd24d5270b",
+    "originalId": "3535cf73-9395-414c-9e05-2ffd24d5270b",
+    "statement": "Qual instrumento metodológico é utilizado em vigilância epidemiológica para definir a existência ou não de uma epidemia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comparação da prevalência com municípios vizinhos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Comparação da incidência com municípios vizinhos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Busca ativa de casos utilizando visitas domiciliares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Construção de um diagrama de controle.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para definir a ocorrência de uma epidemia, a vigilância epidemiológica precisa determinar se o número de casos de uma doença excede significativamente o esperado para uma determinada região e período de tempo. O instrumento metodológico clássico para essa análise é o Diagrama de Controle, também denominado Canal Endêmico.\n\nAbaixo, a análise das alternativas:\n\nAlternativa a) Incorreta. A prevalência mede o número total de casos (novos e antigos) em um determinado momento, sendo um indicador mais útil para o planejamento de saúde em doenças crônicas. Epidemias são caracterizadas pelo aumento súbito de casos novos; portanto, utiliza-se a incidência. Além disso, a definição de epidemia baseia-se no histórico da própria localidade, e não necessariamente na comparação com municípios vizinhos, que podem ter realidades epidemiológicas distintas.\n\nAlternativa b) Incorreta. Embora a incidência seja o indicador correto para monitorar surtos, a simples comparação com municípios vizinhos não define uma epidemia. Uma cidade pode apresentar uma incidência maior que a vizinha e ainda estar dentro de seu nível endêmico habitual. O que caracteriza a epidemia é o aumento de casos acima do esperado para aquela população específica, considerando sua própria série histórica.\n\nAlternativa c) Incorreta. A busca ativa é uma estratégia operacional em que profissionais de saúde vão a campo (como em visitas domiciliares) para encontrar casos que não foram notificados espontaneamente. É uma ferramenta importante durante a investigação de um surto ou para doenças em fase de erradicação, mas não é o instrumento metodológico que estabelece estatisticamente o limiar epidêmico.\n\nAlternativa d) Correta. O Diagrama de Controle é um gráfico construído com dados da incidência de uma doença em uma localidade, geralmente coletados nos últimos 7 a 10 anos. Por meio de cálculos estatísticos (como média e desvio padrão ou mediana e quartis), define-se um corredor endêmico que representa a variação esperada da doença. Quando a incidência do período atual ultrapassa o limite superior desse diagrama, tecnicamente confirma-se a existência de uma epidemia.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Vigilância em Saúde",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:29.103Z"
+  }
+]

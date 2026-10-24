@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_d60b6c9e-a3b5-4e8d-9a4a-57162372e340",
+    "originalId": "d60b6c9e-a3b5-4e8d-9a4a-57162372e340",
+    "statement": "Funcionalmente, uma ferida aguda deve passar pelas fases de cicatrização para resultar em reparação completa e mantida. Uma dessas fases representa uma tentativa de limitar o dano mediante interrupção do sangramento, selamento da superfície da ferida e remoção do tecido necrótico, dos resíduos estranhos e das bactérias com aumento da permeabilidade vascular. Nessa fase, ocorre migração de células para a ferida por quimiotaxia, secreção de citocinas e fatores de crescimento na ferida, além de ativação das células migratórias. Trata-se da fase de",
+    "options": [
+      {
+        "id": "A",
+        "text": "proliferação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "maturação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "inflamação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "granulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "contração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "FASE INFLAMATÓRIA DA CICATRIZAÇÃO\n\nA cicatrização de feridas é um processo dinâmico dividido didaticamente em três fases principais que se sobrepõem: inflamatória, proliferativa e de maturação (ou remodelamento). O enunciado descreve as características clássicas da FASE INFLAMATÓRIA.\n\nEsta fase inicia-se imediatamente após a lesão e tem dois objetivos principais. O primeiro é a hemostasia, que envolve a interrupção do sangramento por meio da vasoconstrição inicial e da ativação da cascata de coagulação. O segundo é a fase defensiva ou de limpeza, na qual ocorre o aumento da permeabilidade vascular para permitir que células de defesa cheguem ao local por quimiotaxia. Os neutrófilos chegam primeiro para combater bactérias, seguidos pelos macrófagos, que são as células-chave: eles removem o tecido necrótico (desbridamento autolítico) e secretam citocinas e fatores de crescimento que recrutam as células das próximas fases.\n\nAnálise das alternativas:\n\nAlternativa (a) INCORRETA: A fase de proliferação ocorre após a fase inflamatória. Seu objetivo é o fechamento da ferida e a reconstrução do tecido. É caracterizada pela fibroplasia (produção de colágeno por fibroblastos), angiogênese (formação de novos vasos) e epitelização.\n\nAlternativa (b) INCORRETA: A maturação, ou remodelamento, é a fase final e mais longa. Nela, ocorre a reorganização das fibras de colágeno e a substituição do colágeno tipo III pelo colágeno tipo I, visando aumentar a força tensil da cicatriz. Não envolve a limpeza inicial ou a hemostasia.\n\nAlternativa (c) CORRETA: Conforme descrito no enunciado, a fase inflamatória é a resposta inicial ao dano, englobando os fenômenos vasculares (interrupção do sangramento e aumento da permeabilidade) e celulares (quimiotaxia, remoção de resíduos e secreção de citocinas) necessários para preparar o leito da ferida para a reparação.\n\nAlternativa (d) INCORRETA: A granulação não é uma fase isolada, mas um evento que ocorre dentro da fase de proliferação. O tecido de granulação é composto por novos capilares e matriz extracelular, servindo de suporte para a cicatrização.\n\nAlternativa (e) INCORRETA: A contração da ferida é um fenômeno mediado por miofibroblastos que ocorre principalmente durante a fase proliferativa para reduzir a extensão da área aberta. Não é o processo responsável pela remoção de bactérias ou interrupção de sangramento.\n\nGABARITO: Letra (c).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  },
+  {
+    "id": "AJUDA_d60ca3bb-dd6b-4672-8320-5d59117850d0",
+    "originalId": "d60ca3bb-dd6b-4672-8320-5d59117850d0",
+    "statement": "Adulto com dor local intensa e sudorese discreta após provável picada por escorpião; sem vômitos, sem convulsões e sem instabilidade hemodinâmica. Diante do caso, considere as afirmativas a seguir e assinale V para as verdadeiras e F para as falsas.\n(__) Analgesia adequada (incluindo bloqueio local, quando disponível) e compressas frias podem ser utilizadas no manejo da dor local.\n(__) Soro antiescorpiônico é indicado quando há manifestações sistêmicas ou gravidade moderada/grave.\n(__) Garroteamento e incisões locais ajudam a limitar a difusão e são recomendados nas primeiras horas.\n(__) Observação clínica e reavaliação seriada nas primeiras horas são pertinentes, com orientação de sinais de alerta e retorno.\nAssinale a sequência CORRETA de respostas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V – V – V – F",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V – V – F – V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F – V – F – V",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "V – F – F – V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das assertivas:\n\nPrimeira assertiva (Falsa): O manejo da dor local no escorpionismo envolve o uso de analgésicos e, nos casos de dor intensa, o bloqueio anestésico local com lidocaína a 2% sem vasoconstritor. Entretanto, o erro da alternativa reside na indicação de compressas frias. No acidente escorpiônico, recomenda-se o uso de compressas mornas, pois o calor ajuda no alívio da dor, enquanto o frio pode acentuar o desconforto e a vasoconstrição.\n\nSegunda assertiva (Verdadeira): O soro antiescorpiônico (SAEsc) ou o soro antiaracnídico (SAAr) tem indicação específica conforme a gravidade do quadro. Casos leves (apenas dor e parestesia local) não necessitam de soroterapia. A indicação de antiveneno é mandatória em casos moderados (com sintomas sistêmicos leves, como vômitos ocasionais e sudorese discreta) e graves (com manifestações sistêmicas graves, como vômitos profusos, insuficiência cardíaca, edema agudo de pulmão e choque).\n\nTerceira assertiva (Falsa): Em qualquer acidente por animal peçonhento, o uso de garroteamento (torniquete), incisões no local da picada, sucção do veneno ou aplicação de substâncias externas é terminantemente contraindicado. Essas práticas não impedem a circulação do veneno e aumentam drasticamente o risco de complicações como infecções, necrose e lesões vasculares ou nervosas.\n\nQuarta assertiva (Verdadeira): A observação clínica é fundamental. Pacientes com acidentes aparentemente leves devem permanecer em observação por um período de 6 a 12 horas, pois a progressão para quadros sistêmicos pode ocorrer de forma rápida, especialmente nas primeiras horas após a picada. A orientação sobre sinais de alerta no momento da alta é uma boa prática médica essencial.\n\nConclusão: A sequência correta é F - V - F - V.\n\nAlternativa correta: Letra (c).",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Animais Peçonhentos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  },
+  {
+    "id": "AJUDA_d618c503-d318-4d78-9ab4-f45715508cbd",
+    "originalId": "d618c503-d318-4d78-9ab4-f45715508cbd",
+    "statement": "O uso de tecnologias de energia para hemostasia e dissecção é onipresente na cirurgia moderna. Sobre os mecanismos de ação e riscos associados ao bisturi harmônico (ultrassônico) e ao eletrocautério monopolar, registre V, para as afirmativas verdadeiras, e F, para as falsas:\n\n(__) O bisturi harmônico realiza corte e coagulação através da vibração mecânica de alta frequência (55.500 Hz), desnaturando proteínas por transferência de energia mecânica para térmica, operando em temperaturas menores que o eletrocautério, o que reduz o dano térmico lateral.\n(__) No eletrocautério monopolar, a corrente elétrica flui do gerador para o instrumento ativo, atravessa o corpo do paciente e retorna ao gerador através da placa de dispersão; o risco de queimadura na placa ocorre se houver descolamento parcial, aumentando a densidade de corrente naquele ponto.\n(__) O efeito de \"acoplamento capacitivo\" (capacitive coupling) é um risco exclusivo do bisturi bipolar, onde a corrente é induzida em outros condutores próximos, podendo causar queimaduras viscerais inadvertidas fora do campo de visão.\n(__) O bisturi harmônico não interfere em marca-passos cardíacos pois não utiliza corrente elétrica para atravessar o tecido, diferentemente do monopolar, que exige cuidados como uso no modo bipolar ou colocação da placa longe do dispositivo cardíaco.\n\nApós análise, assinale a alternativa que apresenta a sequência correta dos itens acima, de cima para baixo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ITEM 1: VERDADEIRO. O bisturi harmônico (ou ultrassônico) funciona convertendo energia elétrica em vibração mecânica de alta frequência, geralmente 55.500 Hz. Essa vibração rompe as ligações de hidrogênio das proteínas, criando um coágulo proteico que sela os vasos. Uma vantagem crucial é que ele opera em temperaturas mais baixas (entre 50 graus e 100 graus Celsius) em comparação ao eletrocautério, que pode ultrapassar 150 graus Celsius. Isso resulta em um dano térmico lateral significativamente menor nos tecidos adjacentes.\n\nITEM 2: VERDADEIRO. No modo monopolar, o circuito elétrico é composto pelo gerador, o eletrodo ativo (caneta), o corpo do paciente e a placa de retorno (dispersiva). A segurança da placa depende da sua grande área de superfície, o que mantém a densidade de corrente baixa e evita o aquecimento da pele. Se a placa descolar parcialmente, a corrente se concentra em uma área menor, aumentando a densidade de energia e causando queimaduras graves no local do contato remanescente.\n\nITEM 3: FALSO. O acoplamento capacitivo é um risco associado ao eletrocautério monopolar, e não ao bisturi bipolar ou harmônico. Ele ocorre quando a corrente elétrica do eletrodo ativo induz uma corrente em um condutor próximo (como um trocarte metálico ou outro instrumento) através de um material isolante íntegro, criando um capacitor. Se esse condutor induzido tocar um órgão (como o intestino) fora do campo de visão do cirurgião, pode causar uma lesão inadvertida. O bisturi harmônico não apresenta esse risco por não transferir corrente elétrica para o tecido.\n\nITEM 4: VERDADEIRO. O bisturi harmônico é seguro para pacientes com marca-passos ou desfibriladores implantáveis porque sua energia é mecânica (ultrassônica) e não flui corrente elétrica pelo corpo do paciente. Já o eletrocautério monopolar gera interferência eletromagnética que pode desregular ou danificar esses dispositivos. Em pacientes com marca-passo, quando o uso de eletroenergia é necessário, recomenda-se o uso do modo bipolar (onde a corrente flui apenas entre as pontas da pinça) ou cuidados rigorosos com a posição da placa e trajetos da corrente longe do coração.\n\nANÁLISE DAS ALTERNATIVAS:\nA sequência correta das afirmativas é Verdadeiro, Verdadeiro, Falso, Verdadeiro (V, V, F, V). Portanto, a alternativa correta é a letra D.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  },
+  {
+    "id": "AJUDA_d62ad683-c499-4a61-85c2-590692ad16cc",
+    "originalId": "d62ad683-c499-4a61-85c2-590692ad16cc",
+    "statement": "Sobre o diabetes insipidus, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diabetes insipidus nefrogênico é causado pela incapacidade do hipotálamo de secretar vasopressina para atuar sobre um rim normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A polidipsia primária é um distúrbio causado pela ausência primária de produção de vasopressina.\nC) Níveis de ácido úrico superiores a 5 mg/dL podem ajudar a diferenciar o diabetes insipidus de polidipsia primária.\nd) O diabetes insipidus nefrogênico ocorre comumente em pacientes com isquemia cerebral grave e pode indicar morte encefálica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Níveis de ácido úrico superiores a 5 mg/dL podem ajudar a diferenciar o diabetes insipidus de polidipsia primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O diabetes insipidus nefrogênico ocorre comumente em pacientes com isquemia cerebral grave e pode indicar morte encefálica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A (Incorreta): A falha na síntese ou secreção de vasopressina (ADH) pelo hipotálamo e neuro-hipófise define o diabetes insipidus central. O diabetes insipidus nefrogênico decorre da resistência dos túbulos coletores renais à ação do ADH, mantendo a secreção hipotalâmica normal ou até elevada.\n\nAlternativa B (Incorreta): A polidipsia primária é um distúrbio caracterizado pela ingestão compulsiva ou excessiva de líquidos, com capacidade de síntese e liberação de ADH preservada. O ADH encontra-se apenas suprimido fisiologicamente em resposta à hipoosmolaridade plasmática gerada pelo excesso de água livre.\n\nAlternativa C (Correta): O ácido úrico sérico é um parâmetro bioquímico útil para diferenciar diabetes insipidus de polidipsia primária. No diabetes insipidus, a perda contínua de água livre promove uma leve contração do volume extracelular, o que estimula a reabsorção proximal de urato, elevando seus níveis plasmáticos acima de 5 mg/dL. Na polidipsia primária, a discreta hipervolemia inibe a reabsorção proximal de ácido úrico, mantendo-o tipicamente abaixo de 5 mg/dL.\n\nAlternativa D (Incorreta): O diabetes insipidus associado a lesões neurológicas graves, trauma cranioencefálico e morte encefálica é do tipo central, decorrente da interrupção do fluxo sanguíneo e necrose do eixo hipotálamo-hipofisário. O tipo nefrogênico está relacionado a causas que afetam diretamente o rim, como uso de lítio, hipocalemia, hipercalcemia e nefropatias tubulointersticiais.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Distúrbios do Sódio",
+      "Hipófise"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  },
+  {
+    "id": "AJUDA_d6328145-487b-4afe-9b04-9847108766a1",
+    "originalId": "d6328145-487b-4afe-9b04-9847108766a1",
+    "statement": "Criança de 6 anos de idade, sexo feminino, previamente hígida, cartão vacinal em dia, é internada por apresentar, há 5 dias, quadro de febre, 39°C, tosse produtiva, dor abdominal. Após sua internação, o médico pediatra que a atendeu auscultou som bronquial no terço médio do hemitórax direito e frequência respiratória de 45irpm com esforço leve. A MELHOR conduta para este caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar penicilina cristalina para tratamento de pneumonia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "solicitar tomografia de tórax para avaliar complicação de uma pneumonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar ultrassonografia abdome para afastar apendicite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar oxacilina + gentamicina para tratamento de pneumonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nTemos uma paciente de 6 anos com quadro de febre alta, tosse produtiva e dor abdominal. Ao exame físico, a presença de som bronquial (sopro tubário) no terço médio do hemitórax direito é um sinal clássico de consolidação pulmonar. Além disso, a frequência respiratória de 45 irpm caracteriza taquipneia para a idade (o limite para crianças acima de 5 anos é de 20 a 25 irpm), o que, associado ao esforço respiratório, indica a necessidade de internação para suporte e tratamento venoso. Vale destacar que a dor abdominal em crianças com pneumonia é um achado comum, decorrente da irritação diafragmática em processos inflamatórios de lobos inferiores ou médios.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O agente etiológico mais comum da pneumonia bacteriana típica em crianças previamente hígidas e vacinadas é o Streptococcus pneumoniae (pneumococo). Para pacientes que necessitam de internação hospitalar, a penicilina G cristalina é o tratamento de escolha por via intravenosa, apresentando excelente eficácia contra o pneumococo.\n\nAlternativa b) Incorreta. A tomografia de tórax não é um exame de rotina inicial para o diagnóstico de pneumonia ou para a avaliação de complicações em um quadro agudo de apenas 5 dias sem sinais de falha terapêutica. O diagnóstico é clínico e pode ser auxiliado pela radiografia de tórax simples ou ultrassonografia de tórax.\n\nAlternativa c) Incorreta. Embora a criança apresente dor abdominal, os sinais respiratórios (tosse, taquipneia, esforço e alteração na ausculta pulmonar) direcionam o diagnóstico para o tórax. A dor abdominal é referida. Solicitar ultrassonografia de abdome antes de tratar a causa pulmonar evidente seria um erro de propedêutica.\n\nAlternativa d) Incorreta. O esquema oxacilina e gentamicina não é indicado como primeira linha para pneumonia comunitária típica em crianças hígidas. A oxacilina seria reservada para suspeita de Staphylococcus aureus (comum em complicações ou pós-influenza) e a gentamicina tem baixa penetração no parênquima pulmonar e não é o fármaco ideal para o tratamento do pneumococo.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  },
+  {
+    "id": "AJUDA_d6343314-62c3-4e02-bca1-d626e9cfb87f",
+    "originalId": "d6343314-62c3-4e02-bca1-d626e9cfb87f",
+    "statement": "Pré-escolar, sexo masculino, com 2 anos e 2 meses, iniciou quadro de diarreia aquosa hoje pela manhã, sem febre. Seus 2 irmãos, de 6 e 9 anos, começaram a apresentar vômitos durante a madrugada. Família relata que, há 3 dias, retornaram de um passeio em um parque com várias piscinas, onde outras crianças apresentavam os mesmos sintomas. Considerando os agentes etiológicos mais prováveis no contexto epidemiológico desse caso, seus mecanismos fisiopatológicos e seu manejo, assinale a afirmativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "E. coli enterotoxigênica é um agente relacionado a esse tipo de quadro, e o uso de antibioticoterapia por via oral, por 5 dias, é recomendado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rotavírus é o agente mais relacionado aos quadros graves de desidratação, e esse agente não se relaciona com evolução para quadros de diarreia persistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Shigella flexneri é, possivelmente, o agente mais relacionado ao quadro dessas crianças, relacionado à ingestão de alimentos contaminados ou insuficientemente cozidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Norovírus e Adenovírus são, possivelmente, os agentes mais prováveis causadores desse quadro diarreico nessas crianças, e o tratamento pode incluir uso de antieméticos para controle do vômito e manutenção da hidratação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Giardia é o agente mais provavelmente relacionado aos quadros que evoluem com diarreia sanguinolenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nO cenário descreve um surto de gastroenterite aguda em um grupo familiar e comunitário (parque com piscinas), caracterizado por vômitos e diarreia aquosa, sem febre, acometendo diferentes faixas etárias (2, 6 e 9 anos). Esse padrão epidemiológico de transmissão rápida em locais públicos e a presença marcante de vômitos sugerem fortemente uma etiologia viral.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. A *E. coli* enterotoxigênica (ETEC) é a principal causa da \"diarreia do viajante\". Embora cause diarreia aquosa, a conduta inicial na pediatria para quadros de diarreia aguda sem sinais de gravidade ou desidratação grave é a reidratação e manutenção da dieta, não sendo indicado o uso de antibioticoterapia de rotina. O uso indiscriminado de antibióticos pode prolongar o estado de portador e aumentar a resistência bacteriana.\n\nAlternativa b) Incorreta. O Rotavírus é, de fato, uma causa importante de diarreia grave e desidratação em lactentes não vacinados. No entanto, a afirmação de que ele não se relaciona com a evolução para diarreia persistente está errada. Qualquer processo infeccioso que cause lesão na mucosa intestinal e perda de bordadura em escova (levando à deficiência secundária de lactase) pode resultar em diarreia persistente (duração superior a 14 dias). Além disso, o cenário de surto em piscinas envolvendo crianças mais velhas é mais típico do Norovírus.\n\nAlternativa c) Incorreta. A *Shigella flexneri* é um agente causador de disenteria (diarreia inflamatória com sangue, muco e pus), frequentemente acompanhada de febre alta e sintomas sistêmicos importantes (como crises convulsivas em crianças). O quadro descrito é de diarreia aquosa e vômitos, sem febre, o que afasta essa hipótese.\n\nAlternativa d) Correta. O Norovírus é atualmente a principal causa de surtos de gastroenterite viral em todas as idades, sendo muito comum em ambientes fechados ou de uso comum, como navios, escolas e parques aquáticos (devido à sua resistência ambiental). O Adenovírus entérico (sorotipos 40 e 41) é a segunda causa viral mais comum em crianças. O manejo desses quadros é baseado no suporte clínico: reidratação oral e, se houver vômitos persistentes que impeçam a ingestão de líquidos, o uso criterioso de antieméticos (como a ondansetrona) é recomendado pelas diretrizes atuais para facilitar a reidratação oral e evitar a necessidade de hidratação venosa.\n\nAlternativa e) Incorreta. A *Giardia lamblia* é um protozoário que causa, tipicamente, diarreia de caráter mais crônico ou persistente, com fezes gordurosas (esteatorreia), flatulência e distensão abdominal, mas raramente causa diarreia sanguinolenta. Os agentes clássicos de diarreia sanguinolenta (disenteria) são bactérias como *Shigella*, *Campylobacter*, *E. coli* enteroinvasiva e a *E. coli* entero-hemorrágica, ou o protozoário *Entamoeba histolytica*.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  },
+  {
+    "id": "AJUDA_d64008ef-2497-4348-aba9-f0e5ac687af1",
+    "originalId": "d64008ef-2497-4348-aba9-f0e5ac687af1",
+    "statement": "Paciente de 29 anos, usuária de Dispositivo Intrauterino (DIU) medicado com levonorgestrel há 2 anos, procurou atendimento com queixa clínica de corrimento vaginal esbranquiçado, sem prurido, mas com odor desagradável que piora quando tem relações sexuais. Tem namorado e este não tem queixa clínica alguma. O exame ginecológico demonstrou DIU bem posicionado e conteúdo vaginal de aspecto leitoso, com poucas bolhas. Em relação a essa situação clínica, assinale a alternativa que apresenta a afirmação CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve se tratar de vaginose por Actinomyces sp., pois é usuária de DIU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O quadro clínico e o exame físico são sugestivos de vaginose bacteriana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deve-se solicitar bacterioscópico e cultura de conteúdo vaginal, com coleta de conteúdo do fio do DIU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O quadro é sugestivo de vaginite mista (candidíase e vaginose bacteriana).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um quadro clínico clássico de vaginose bacteriana. Os principais pontos que levam a esse diagnóstico são o corrimento de aspecto leitoso (homogêneo), a ausência de sinais inflamatórios, como o prurido, e o odor desagradável que se intensifica após a relação sexual. Esse fenômeno ocorre porque o sêmen, que tem pH alcalino, volatiliza as aminas produzidas pelas bactérias anaeróbias presentes na vaginose, liberando o odor característico (conhecido como teste das aminas positivo ou \"whiff test\").\n\nAnálise das alternativas:\n\na) Incorreta. O Actinomyces sp. é um microrganismo que pode colonizar o trato genital de usuárias de DIU, podendo ser um achado incidental em exames de citologia oncótica (Papanicolaou). No entanto, em pacientes assintomáticas, não requer tratamento. Ele não é o agente causador da vaginose bacteriana e sua presença clínica costuma estar associada a quadros de doença inflamatória pélvica (DIP) ou abscessos, e não a esse tipo de corrimento leitoso e fétido.\n\nb) Correta. O quadro clínico e o exame físico descritos são altamente sugestivos de vaginose bacteriana, que é a causa mais comum de corrimento vaginal com odor. O diagnóstico é baseado nos Critérios de Amsel, nos quais a paciente apresenta ao menos três dos seguintes: 1. Conteúdo vaginal homogêneo e branco-acinzentado; 2. pH vaginal maior que 4,5; 3. Teste das aminas positivo (odor fétido ao adicionar KOH 10% ou após o coito); 4. Presença de \"clue cells\" (células-alvo) na microscopia a fresco.\n\nc) Incorreta. O diagnóstico de vaginose bacteriana é clínico ou por bacterioscopia com coloração de Gram (Escore de Nugent). A cultura de conteúdo vaginal não é indicada nem recomendada, pois a Gardnerella vaginalis (principal marcador da vaginose) pode estar presente na flora vaginal normal de até 50% das mulheres assintomáticas. A coleta de material do fio do DIU também não possui indicação técnica para essa queixa.\n\nd) Incorreta. Não há elementos na descrição que sugiram vaginite mista, especificamente a candidíase. A candidíase se manifesta tipicamente com prurido intenso (que a paciente nega) e corrimento esbranquiçado aderido em grumos, com aspecto de leite coalhado, geralmente sem odor fétido. A presença de poucas bolhas e odor pós-coito reforça apenas o diagnóstico de vaginose.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  },
+  {
+    "id": "AJUDA_d6452dc0-a53d-4d7a-9d30-e028b66daf80",
+    "originalId": "d6452dc0-a53d-4d7a-9d30-e028b66daf80",
+    "statement": "Paciente do sexo masculino, obeso, 58 anos, apresenta quadro de dor tipo cólica em HD, irradiada para o dorso, associada a náuseas e vômitos, após ingesta de alimento rico em gordura. Traz consigo USG de abdome, realizada há 1 ano, que evidencia vesícula biliar contendo cálculos. Está internado há 3 dias, sob tratamento clínico e evoluiu neste período com presença de icterícia. No momento o paciente se encontra em BEG, lúcido e orientado, eupneico, afebril e normotenso. Seu abdome é plano, flácido, pouco doloroso à palpação profunda no HD, sem plastrão palpável. Aceita dieta oral. Sua avaliação laboratorial evidenciou leucograma com 11.000 leucócitos, PCR: 45mg/dl, bilirrubinas totais: 4,2mg/dl, bilirrubina direta: 3.4mg/dl, fosfatase alcalina: 250mg/dl e gamaGT: 380mg/dl. Sobre o caso, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caso a ultrassonografia de controle evidencie dilatação da via biliar principal, o próximo passo seria a tomografia com contraste venoso devido a sua ótima sensibilidade e especificidade para avaliação de complicações no colédoco distal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Já que o paciente não apresenta critérios de risco para obstrução de via biliar, a melhor conduta para o caso é a colecistectomia laparoscópica sem colangiografia intra-operatória e seguimento ambulatorial da icterícia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caso a ultrassonografia de controle evidencie dilatação das vias biliares, uma opção bastante adequada é a realização de abordagem endoscópica com ultrassom endoscópica e possível CPRE, sem necessidade de investigação prévia com ressonância magnética.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A emergente técnica de exploração endoscópica da via biliar concomitante com colecistectomia laparoscópica no mesmo tempo anestésico foi abandonada devido à elevada incidência de pancreatite pós CPRE nesses casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nTrata-se de um paciente de 58 anos, obeso, com diagnóstico prévio de colelitíase, que apresenta quadro de cólica biliar clássica evoluindo com icterícia obstrutiva (predomínio de bilirrubina direta e elevação de enzimas canaliculares - FA e GGT). O quadro sugere fortemente a migração de um cálculo da vesícula para a via biliar principal (coledocolitíase).\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A tomografia computadorizada (TC) de abdome possui baixa sensibilidade para a identificação de cálculos biliares, uma vez que muitos são isodensos em relação à bile. Para a avaliação do colédoco distal e pesquisa de microcálculos, a ressonância magnética (colangiorressonância) ou o ultrassom endoscópico são muito superiores à TC.\n\nAlternativa B (Incorreta): O paciente apresenta critérios de alto risco para coledocolitíase. Segundo os consensos atuais (como o da ASGE), uma bilirrubina total acima de 4 mg/dl associada à dilatação da via biliar ou à presença de cálculo no colédoco ao ultrassom coloca o paciente em alta probabilidade de obstrução. Portanto, realizar a colecistectomia sem investigar ou tratar a via biliar seria uma conduta inadequada, com alto risco de permanência do cálculo e complicações pós-operatórias.\n\nAlternativa C (Correta): Caso a ultrassonografia confirme a dilatação das vias biliares, reforça-se a suspeita de coledocolitíase. O ultrassom endoscópico (ecoendoscopia) é um excelente exame para avaliação da via biliar distal, com sensibilidade e especificidade próximas a 100%. Caso o cálculo seja confirmado durante o procedimento, a CPRE (colangiopancreatografia retrógrada endoscópica) pode ser realizada na sequência para a retirada do cálculo, dispensando a necessidade de colangiorressonância prévia.\n\nAlternativa D (Incorreta): A técnica de tratamento simultâneo (colecistectomia laparoscópica associada à exploração da via biliar ou CPRE no mesmo tempo anestésico, às vezes chamada de Rendez-vous) não foi abandonada. Pelo contrário, é uma estratégia válida que pode diminuir o tempo de internação e, no caso específico do Rendez-vous (passagem de fio-guia por via anterógrada durante a cirurgia), até reduz o risco de pancreatite pós-CPRE por facilitar o acesso à via biliar sem traumatismo excessivo da papila duodenal.\n\nGabarito: Alternativa (c).",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  },
+  {
+    "id": "AJUDA_d64fe9e6-0008-4496-be49-e348ade75ed2",
+    "originalId": "d64fe9e6-0008-4496-be49-e348ade75ed2",
+    "statement": "Paciente do sexo feminino de 28 anos procura atendimento por crises recorrentes de cefaleia há 2 anos. Refere dor unilateral, pulsátil, de forte intensidade, acompanhada de náuseas, fotofobia e fonofobia. As crises duram entre 12 e 24 horas e ocorrem 4 a 5 vezes por mês, impactando suas atividades laborais. Ela relata que analgésicos simples e anti-inflamatórios aliviam parcialmente os sintomas, mas não previnem a recorrência. O exame neurológico está normal.\n\nConsiderando o caso descrito, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cefaleia descrita corresponde a uma cefaleia tensional, caracterizada por dor bilateral em peso ou aperto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento de escolha para prevenir crises é o uso diário de triptanos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento profilático pode incluir betabloqueadores, antidepressivos tricíclicos ou anticonvulsivantes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O exame neurológico geralmente é alterado durante as crises de enxaqueca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O uso de anti-inflamatórios não é recomendado para tratamento das crises agudas de enxaqueca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico: O quadro clínico descrito é clássico de enxaqueca (migrânea). A paciente apresenta dor unilateral, pulsátil, de forte intensidade, acompanhada de sintomas autonômicos (náuseas, fotofobia e fonofobia). O fato de as crises durarem entre 12 e 24 horas e ocorrerem de 4 a 5 vezes por mês, impactando a vida laboral, preenche os critérios para o diagnóstico e indica a necessidade de tratamento profilático.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A cefaleia tensional apresenta-se tipicamente como uma dor bilateral, de caráter compressivo (em aperto ou peso), de intensidade leve a moderada e, geralmente, não vem acompanhada de náuseas, vômitos ou fotofobia/fonofobia intensas.\n\nAlternativa B: Incorreta. Os triptanos (como sumatriptano e naratriptano) são medicações de escolha para o tratamento agudo (abortivo) das crises moderadas a graves. Eles não devem ser usados diariamente para prevenção, pois o uso excessivo (mais de 10 dias por mês) pode causar cefaleia por uso excessivo de medicamentos (efeito rebote).\n\nAlternativa C: Correta. O tratamento profilático é indicado quando o paciente apresenta crises frequentes (geralmente mais de 3 ou 4 episódios por mês) ou quando a dor é muito incapacitante. As classes farmacológicas de primeira linha incluem betabloqueadores (como propranolol e atenolol), antidepressivos tricíclicos (como amitriptilina e nortriptilina) e anticonvulsivantes (como topiramato e valproato).\n\nAlternativa D: Incorreta. Nas cefaleias primárias, como a enxaqueca e a tensional, o exame neurológico é caracteristicamente normal. A presença de qualquer alteração focal ou sinal neurológico durante o exame físico é um sinal de alerta (red flag) que obriga a investigação de causas secundárias por meio de exames de imagem.\n\nAlternativa E: Incorreta. Os anti-inflamatórios não esteroidais (AINEs), como o naproxeno, ibuprofeno e cetoprofeno, são medicamentos de primeira linha e altamente recomendados para o tratamento das crises agudas de enxaqueca, especialmente naquelas de intensidade leve a moderada.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  },
+  {
+    "id": "AJUDA_d657f50a-3ea9-4718-96b4-3a470d123c28",
+    "originalId": "d657f50a-3ea9-4718-96b4-3a470d123c28",
+    "statement": "Paciente masculino, 45 anos, agricultor, morador de uma área rural no interior do Rio Grande do Sul. História Clínica: O paciente foi atendido em um hospital de campanha três semanas após uma enchente que devastou sua comunidade. Ele relata múltiplos problemas de saúde desde que foi deslocado para um abrigo temporário superlotado. Nos últimos sete dias, desenvolveu diarreia aquosa, associada a dores abdominais e vômitos. Além disso, descreve episódios de febre intermitente, cefaleia e dor retro-orbitária. O paciente também apresenta uma lesão puntiforme no pé direito, resultado de uma ferida causada por um pedaço de metal enferrujado durante a enchente. Relata, ainda, dores musculares e cãibras nos últimos dias. Sua esposa, que está no mesmo abrigo, desenvolveu sintomas respiratórios agudos. Ele expressa preocupação com a segurança das filhas adolescentes, temendo violência sexual no abrigo.\nExames Físicos: -PA: 90/60 mmHg -FC:105 bpm -Temperatura:38,4°C. Ao exame físico revela desidratação moderada, abdome doloroso à palpação difusa, lesão puntiforme com eritema e edema no pé direito, além de icterícia leve. História de Saúde: Paciente hipertenso, em uso irregular de medicamentos. Tem histórico de episódios anteriores de dengue, mas nunca apresentou hepatite ou outra doença infecciosa crônica.\n\nAs condições de vida em abrigos temporários superlotados e a exposição a águas contaminadas aumentam o risco de doenças parasitárias. Qual das seguintes opções é a medida preventiva mais eficaz para evitar doenças parasitárias no contexto de desastres naturais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de vermífugos profiláticos a toda a população afetada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fornecimento de água potável e instalação de sistemas de saneamento adequados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Isolamento dos pacientes sintomáticos em áreas separadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desinfecção periódica de alimentos e utensílios de cozinha no abrigo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nA questão descreve um cenário clássico de pós-desastre natural (enchente), em que o paciente apresenta sintomas sugestivos de múltiplas patologias, como leptospirose (febre, dor muscular, icterícia e histórico de exposição a águas de alagamento), dengue (cefaleia, dor retro-orbitária) e gastroenterite aguda. O foco do enunciado, contudo, é a prevenção de doenças parasitárias em ambientes de abrigos temporários e áreas impactadas por inundações.\n\nAlternativa a: Incorreta. A administração de vermífugos de forma profilática para toda a população não é recomendada como medida de primeira linha em desastres. Sem a correção das condições ambientais, os indivíduos seriam rapidamente reinfectados. Além disso, o uso indiscriminado de medicamentos não substitui as intervenções de engenharia sanitária e educação em saúde.\n\nAlternativa b: Correta. O fornecimento de água potável e a instalação de sistemas de saneamento (estratégia WASH — Water, Sanitation and Hygiene) constituem a medida preventiva mais eficaz e de maior impacto em saúde pública. Essas ações interrompem o ciclo de transmissão fecal-oral, que é a principal via de disseminação de protozoários e helmintos em situações de aglomeração e precariedade higiênica. Sem água limpa e destino adequado para os dejetos, outras medidas tornam-se ineficazes.\n\nAlternativa c: Incorreta. O isolamento de pacientes é uma medida voltada para doenças de transmissão respiratória ou por contato direto altamente infectante. As doenças parasitárias intestinais geralmente dependem da contaminação do ambiente (água e solo) por dejetos humanos para infectar novos hospedeiros. Portanto, isolar o indivíduo sintomático não impede a propagação se o saneamento do local for inadequado.\n\nAlternativa d: Incorreta. A desinfecção de alimentos e utensílios é uma medida complementar importante, mas secundária. Ela é dependente da existência de água tratada para ser realizada adequadamente. Se não houver controle da potabilidade da água e do destino do esgoto (conforme citado na alternativa b), o risco de recontaminação contínua dos alimentos e do ambiente permanece extremamente alto.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:40.398Z"
+  }
+]

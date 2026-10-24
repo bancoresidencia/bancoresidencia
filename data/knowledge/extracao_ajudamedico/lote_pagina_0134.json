@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_24a7da7f-81e9-408f-912f-ca1faa711b75",
+    "originalId": "24a7da7f-81e9-408f-912f-ca1faa711b75",
+    "statement": "Pode-se afirmar que a perda auditiva induzida por ruído, é caracteriza por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "apresentar padrão audiométrico misto",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "poder estar associada ou não a substâncias químicas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ser apenas unilateral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "progressão maior da perda nos primeiros cinco anos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Perda Auditiva Induzida por Ruído (PAIR) é uma patologia crônica e irreversível que atinge as células ciliadas da cóclea devido à exposição prolongada a níveis elevados de pressão sonora. Abaixo, analisamos cada alternativa para compreender as características dessa condição:\n\nAlternativa a) Incorreta. A PAIR caracteriza-se por ser uma perda auditiva do tipo sensorineural (ou neurossensorial), pois o dano ocorre diretamente nas estruturas da orelha interna (cóclea). O padrão misto envolveria também uma alteração na condução do som (orelha externa ou média), o que não é o caso da PAIR.\n\nAlternativa b) Correta. A PAIR pode ocorrer isoladamente devido ao ruído, mas é amplamente reconhecido na medicina do trabalho que a exposição concomitante a determinadas substâncias químicas ototóxicas (como solventes orgânicos, metais pesados e gases asfixiantes) pode potencializar o dano auditivo. Portanto, a perda pode estar associada ou não a esses agentes químicos.\n\nAlternativa c) Incorreta. Uma das características fundamentais da PAIR é a bilateralidade. Por ser uma exposição ambiental/ocupacional geralmente difusa, ela costuma afetar ambos os ouvidos de forma simétrica. Perdas puramente unilaterais devem levantar a suspeita de outras etiologias, como traumas acústicos agudos, tumores ou infecções.\n\nAlternativa d) Incorreta. Embora a PAIR progrida enquanto houver exposição ao ruído, a literatura clássica e as diretrizes de saúde ocupacional indicam que o ritmo de progressão da perda é maior nos primeiros 10 a 15 anos de exposição, e não especificamente nos primeiros cinco anos. Após esse período inicial de maior perda, o aumento dos limiares auditivos tende a ser mais lento.\n\nEm resumo, a PAIR é uma perda auditiva sensorineural, tipicamente bilateral, irreversível, que apresenta um entalhe audiométrico característico (geralmente em 3, 4 ou 6 kHz) e que pode sofrer influência sinérgica de substâncias químicas presentes no ambiente de trabalho.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras",
+      "Otoneurologia, Vertigens e Audiologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  },
+  {
+    "id": "AJUDA_24ab0315-0eec-4ab4-aec4-8701bef20891",
+    "originalId": "24ab0315-0eec-4ab4-aec4-8701bef20891",
+    "statement": "Homem, 28 anos, é trazido ao pronto-socorro por amigos após apresentar agitação extrema, taquicardia, sudorese profusa, hipertensão arterial (PA 180/110 mmHg), midríase, episódios de alucinações visuais e pensamentos paranoides. Relata ter consumido uma quantidade significativa de cocaína aproximadamente uma hora antes. O paciente também apresenta tremores, náuseas e dificuldade de fala. Não há sinais de febre ou de trauma. Considerando o caso apresentado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os usuários de cocaína têm menor risco de apresentar distonia aguda induzida por antipsicóticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para controle da hipertensão, é indicado utilizar propranolol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quando há risco de heteroagressão, em que a via parenteral seja necessária, diazepam intramuscular é a medicação de escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Devido à ação GABAérgica, os benzodiazepínicos são a primeira escolha para reduzir a agitação psicomotora e o risco de heteroagressividade, por antagonizar os efeitos estimulantes da cocaína.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de uma síndrome simpaticomimética decorrente de intoxicação aguda por cocaína, caracterizada por hiperestimulação do sistema nervoso central e cardiovascular.\n\nAlternativa A - Incorreta. O risco de distonia aguda e de outros efeitos extrapiramidais é maior em usuários de cocaína quando expostos a antipsicóticos, devido à intensa desregulação do sistema dopaminérgico. Além disso, o uso de antipsicóticos nessa condição deve ser evitado ou muito cauteloso, pois eles reduzem o limiar convulsígeno e interferem na termorregulação.\n\nAlternativa B - Incorreta. O uso de betabloqueadores não seletivos ou puros, como o propranolol, é contraindicado na intoxicação por cocaína. Isso se deve ao efeito de estimulação alfa-adrenérgica sem oposição: ao bloquear os receptores beta-2 (vasodilatadores), o excesso de catecolaminas atua livremente sobre os receptores alfa-1 (vasoconstritores), podendo precipitar crises hipertensivas graves, espasmo coronariano e infarto agudo do miocárdio.\n\nAlternativa C - Incorreta. O diazepam apresenta absorção lenta, errática e imprevisível quando administrado por via intramuscular, além de causar dor local. Quando a via intramuscular é estritamente necessária para a contenção farmacológica de um paciente agitado, o midazolam é o benzodiazepínico de escolha devido à sua excelente absorção e início de ação rápido.\n\nAlternativa D - Correta. Os benzodiazepínicos atuam potencializando o neurotransmissor GABA, o principal inibidor do sistema nervoso central. Essa ação farmacológica modula e reduz a hiperatividade simpática induzida pela cocaína, sendo a terapia de primeira linha para tratar a agitação psicomotora, a hipertensão, a taquicardia e prevenir a ocorrência de convulsões.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Dependência Química",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  },
+  {
+    "id": "AJUDA_24ba6c88-48c7-4022-83d7-398429d19fbb",
+    "originalId": "24ba6c88-48c7-4022-83d7-398429d19fbb",
+    "statement": "Um adulto hígido de 28 anos de idade compareceu ao pronto atendimento devido a uma mordedura de um cão. O paciente compareceu ao hospital 8 horas após o acidente e informou que o animal era de seu vizinho. O homem não apresentou qualquer mudança clínica recente, estava sob vigilância em domicilio e não possuía comprovação vacinal. A ferida estava localizada na mão esquerda, e se mostrava profunda e com exposição de tecido subcutâneo.\nEm relação às condutas menos prioritárias e seguimento no pós‑alta, assinale a opção mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não há necessidade de profilaxia antitetânica se o paciente já recebeu vacina há mais de 10 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Há necessidade de soro antirrábico e vacina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não há necessidade de soro antirrábico no momento, porém é prudente a vacinação profilática para raiva humana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não há indicação de soro nem de vacina antirrábica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Há necessidade de soro antirrábico no momento, porém não de vacinação para raiva humana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nPaciente de 28 anos com ferimento profundo na mão esquerda (área de risco/extremidade) causado por cão conhecido e passível de observação.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A profilaxia antitetânica é fundamental em ferimentos profundos ou com tecido desvitalizado. Segundo o Ministério da Saúde, se o paciente recebeu a última dose da vacina há mais de 5 anos em ferimentos de alto risco (ou há mais de 10 anos em ferimentos leves), há indicação de reforço vacinal. Portanto, dizer que não há necessidade após 10 anos está incorreto.\n\nAlternativa B (Incorreta): O soro antirrábico (imunoglobulina) não é indicado de imediato quando o animal é passível de observação, mesmo em acidentes graves (ferimentos nas mãos, cabeça ou profundos). O protocolo recomenda iniciar o esquema vacinal e observar o animal. O soro só seria indicado se o animal morresse, desaparecesse ou apresentasse sinais de raiva durante o período de observação.\n\nAlternativa C (Correta): Esta alternativa está em perfeita consonância com o protocolo do Ministério da Saúde para profilaxia da raiva humana. Em ferimentos considerados graves (como feridas profundas ou localizadas nas mãos e pés) causados por cães ou gatos que podem ser observados, a conduta correta é: iniciar o esquema profilático com 2 doses de vacina (nos dias 0 e 3) e observar o animal por 10 dias. Se o animal permanecer sadio após esse período, o tratamento é encerrado. Não há necessidade de soro (imunoglobulina) no momento inicial.\n\nAlternativa D (Incorreta): Devido à localização (mão) e à profundidade do ferimento (exposição de tecido subcutâneo), o acidente é classificado como grave. Em acidentes graves, não se deve apenas observar o animal sem iniciar nenhuma medida; é necessário começar a vacinação imediatamente enquanto se aguarda a evolução do animal.\n\nAlternativa E (Incorreta): Clinicamente, o soro antirrábico nunca é administrado isoladamente sem a vacina. Além disso, conforme explicado na alternativa B, o soro não é a conduta inicial para animais observáveis que aparentam estar hígidos no momento do acidente.\n\nResumo do Protocolo de Raiva (Ministério da Saúde):\n- Ferimento leve + animal observável: Apenas observar o animal por 10 dias.\n- Ferimento grave (mãos, cabeça, profundo) + animal observável: Iniciar vacina (2 doses) e observar o animal por 10 dias.\n- Se o animal adoecer, morrer ou desaparecer: Completar o esquema vacinal e aplicar soro/imunoglobulina.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  },
+  {
+    "id": "AJUDA_24c5c954-badf-4008-b836-e4ca785834d7",
+    "originalId": "24c5c954-badf-4008-b836-e4ca785834d7",
+    "statement": "Paciente de 30 anos, portadora de síndrome dos ovários policísticos (SOP), deseja engravidar. Está em uso de anticoncepcional combinado (ACO) e espironolactona.\nQuanto às recomendações pré-gestacionais apropriadas a essa paciente, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente não deve engravidar, pois tem alto risco de complicações gestacionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se suspender o ACO, manter a espironolactona e iniciar ácido fólico, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se suspender o ACO, manter a espironolactona, iniciar ácido fólico e realizar GTT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se suspender o ACO e a espironolactona, iniciar ácido fólico e realizar GTT.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para analisar esta questão sobre aconselhamento pré-gestacional em pacientes com síndrome dos ovários policísticos (SOP), devemos focar na segurança medicamentosa e no rastreamento de riscos metabólicos associados à condição.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a SOP esteja associada a um maior risco de complicações como diabetes gestacional, pré-eclâmpsia e parto prematuro, ela não é uma contraindicação à gestação. Com o acompanhamento pré-natal adequado e controle metabólico, a paciente pode ter uma gestação segura.\n\nb) Incorreta. A manutenção da espironolactona é o erro principal desta alternativa. A espironolactona é um antagonista da aldosterona com efeito antiandrogênico. Se utilizada durante a gestação, existe o risco teórico de feminização de fetos masculinos devido ao bloqueio dos receptores de androgênio. Portanto, deve ser suspensa antes de a paciente começar a tentar engravidar.\n\nc) Incorreta. Assim como na alternativa anterior, o erro reside em manter a espironolactona. Além disso, embora mencione corretamente o ácido fólico e o Teste Oral de Tolerância à Glicose (GTT/TOTG), a falha na segurança farmacológica invalida a opção.\n\nd) Correta. Esta alternativa contempla todos os pilares do planejamento pré-gestacional para esta paciente:\n1. Suspensão do ACO: necessária para permitir o retorno dos ciclos ovulatórios (embora a paciente com SOP possa necessitar de indução da ovulação caso haja anovulação crônica).\n2. Suspensão da espironolactona: medida de segurança para evitar teratogenicidade e interferência na genitália fetal.\n3. Início do ácido fólico: recomendação universal para prevenção de defeitos do tubo neural, idealmente iniciada pelo menos 30 dias antes da concepção.\n4. Realização do GTT (TOTG): pacientes com SOP possuem uma prevalência elevada de resistência insulínica e intolerância à glicose. O rastreamento de diabetes mellitus tipo 2 ou pré-diabetes deve ser feito antes da gestação, pois essas condições aumentam significativamente o risco de malformações e complicações obstétricas.\n\nResumo do raciocínio:\nO manejo pré-gestacional da SOP exige a interrupção de drogas potencialmente teratogênicas (espironolactona), a suplementação vitamínica padrão (ácido fólico) e a avaliação metabólica rigorosa (GTT) devido ao perfil de risco cardiovascular e glicêmico inerente à síndrome.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  },
+  {
+    "id": "AJUDA_24eb9e62-9b6c-4aae-98fb-775753a20181",
+    "originalId": "24eb9e62-9b6c-4aae-98fb-775753a20181",
+    "statement": "Homem de 20 anos comparece à consulta em uma unidade de saúde da família apresentando dor escrotal de grande intensidade, do lado direito, de início súbito, há cerca de duas horas. Apresenta-se com náuseas, referindo vontade de vomitar. Refere que o escroto está “inchado e vermelho”. Ao exame, o escroto do lado direito apresenta textura bastante firme e mais elevado que o contralateral. Em relação ao quadro, o diagnóstico clínico e a conduta a ser seguida, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "massa cística extratesticular inflamada / prescrever anti-inflamatórios por três a cinco dias, repouso e compressa morna local",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "epididimite / antibioticoterapia por sete dias, com repouso absoluto para preservação da espermatogênese",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "torção de testículo / cirurgia a ser feita em caráter emergencial, para evitar perda do testículo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "orquite com formação de abscesso / antibioticoterapia com elevação do testículo afetado",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO caso clínico apresenta um paciente jovem com dor escrotal de início súbito e grande intensidade, associada a náuseas e vômitos. Esses sintomas, somados ao achado de testículo elevado e firme ao exame físico, compõem a apresentação clássica da torção testicular (ou torção do cordão espermático). A elevação do testículo ocorre devido ao encurtamento do cordão espermático ao ser torcido. Trata-se de uma emergência urológica, pois a isquemia prolongada pode levar à necrose e à perda definitiva do órgão em poucas horas.\n\nAnálise das alternativas:\n\na) Incorreta. Massas císticas (como espermatoceles ou hidroceles) geralmente são indolores ou causam apenas desconforto leve e crônico. O quadro de início súbito com náuseas e alterações importantes na topografia testicular não condiz com uma massa cística inflamada. Além disso, o tratamento proposto (anti-inflamatórios e compressas) seria catastrófico diante de uma torção, resultando na perda do testículo.\n\nb) Incorreta. A epididimite é o principal diagnóstico diferencial, mas costuma ter um início mais gradual da dor (ao longo de horas ou dias) e pode estar acompanhada de febre ou sintomas urinários. No exame físico da epididimite, o sinal de Prehn (alívio da dor ao elevar o testículo) costuma ser positivo, enquanto na torção ele é negativo (a dor não melhora ou piora). O quadro de início súbito e a posição elevada do testículo favorecem fortemente a torção em vez da infecção.\n\nc) Correta. A torção de testículo é a principal hipótese em pacientes jovens com dor súbita e intensa. A conduta é a exploração cirúrgica de emergência. O tempo é o fator determinante para o sucesso: se operado em até 6 horas, a taxa de preservação do testículo é superior a 90%. Durante a cirurgia, deve-se realizar a detorção e a fixação de ambos os testículos (orquidopexia bilateral), pois a malformação anatômica que permite a torção costuma ser bilateral.\n\nd) Incorreta. A orquite e a formação de abscessos são complicações de processos infecciosos que demandam mais tempo para se desenvolver. Não explicariam uma dor tão intensa de início há apenas duas horas. O tratamento de um abscesso escrotal geralmente requer drenagem cirúrgica associada a antibióticos, e não apenas o manejo conservador sugerido na alternativa. Além disso, a elevação do testículo na torção é um achado anatômico patológico, não uma conduta terapêutica.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  },
+  {
+    "id": "AJUDA_24f66bf3-39b2-4579-a8a4-a5a73f3508f4",
+    "originalId": "24f66bf3-39b2-4579-a8a4-a5a73f3508f4",
+    "statement": "Paciente dá entrada na sala de emergência referindo dispneia intensa e desconforto torácico. Ao monitorar paciente percebemos PA 160/70, FC 160bpm, FR 32, sat 88%, na ausculta pulmonar pre sença de estertores crepitantes até terço médio bi lateral. Realizado eletrocardiograma, percebemos ausência da onda P e ritmo irregular. Diante do quadro clínico e da interpretação eletrocardiográfica, qual a melhor conduta a ser tomada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cardioversão elétrica com 50J no desfibrilador mo nofásico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cardioversão elétrica com 200J no desfibrilador monofásico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar manobra vagal se o paciente não respon der infusão de adenosina 6mg EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Investigar causas secundárias que possam estar levando ao aumento da frequência cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Amiodarona dose de ataque, seguido da dose ma nutenção 1mg/min nas primeiras 6 horas e 0,5mg/min nas próximas 18h.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta uma taquiarritmia (frequência cardíaca de 160 bpm) associada a sinais claros de instabilidade clínica. De acordo com os protocolos de Suporte Avançado de Vida Cardiovascular (ACLS), os sinais de instabilidade em vigência de taquicardia são: hipotensão, alteração súbita do nível de consciência, sinais de choque, dor torácica isquêmica ou insuficiência cardíaca aguda.\n\nNo caso descrito, o paciente apresenta dispneia intensa, saturação de 88% e estertores crepitantes até o terço médio pulmonar, o que caracteriza um quadro de Edema Agudo de Pulmão (insuficiência cardíaca aguda). Portanto, trata-se de uma taquiarritmia instável.\n\nINTERPRETAÇÃO ELETROCARDIOGRÁFICA\n\nA ausência de onda P combinada com um ritmo irregular é o achado clássico da Fibrilação Atrial (FA). Como a frequência cardíaca está elevada, temos uma Fibrilação Atrial com alta resposta ventricular.\n\nCONDUTA\n\nPara qualquer taquiarritmia instável, a conduta imediata é a Cardioversão Elétrica Sincronizada. No caso específico da Fibrilação Atrial, as diretrizes recomendam iniciar com cargas mais altas. Se o desfibrilador for monofásico, a carga recomendada é de 200 Joules. Se fosse bifásico, a carga inicial seria de 120 a 200 Joules.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. A carga de 50J no desfibrilador monofásico é considerada baixa para a Fibrilação Atrial. Cargas menores (50J a 100J) podem ser utilizadas inicialmente em arritmias como o Flutter Atrial ou Taquicardia Supraventricular, mas a FA exige maior energia para a reversão.\n\nb) CORRETA. Conforme as diretrizes do ACLS, a Fibrilação Atrial instável deve ser tratada com cardioversão elétrica sincronizada imediata. Em aparelhos monofásicos, a dose inicial padrão é de 200J.\n\nc) INCORRETA. Manobra vagal e adenosina são condutas indicadas para taquicardias de complexo QRS estreito e ritmo REGULAR (como a taquicardia por reentrada nodal). O ritmo do paciente é irregular, e a instabilidade clínica contraindica a perda de tempo com medidas farmacológicas ou manobras físicas antes da eletricidade.\n\nd) INCORRETA. Embora a investigação de causas secundárias (como sepse, desidratação ou anemia) seja importante em pacientes estáveis com taquicardia sinusal, o paciente em questão está instável e apresenta um ritmo de Fibrilação Atrial. A prioridade absoluta é a estabilização hemodinâmica através da cardioversão.\n\ne) INCORRETA. A amiodarona é um antiarrítmico que poderia ser utilizado para controle de ritmo em pacientes ESTÁVEIS ou como suporte após tentativas de cardioversão elétrica. Diante de sinais de edema agudo de pulmão (instabilidade), a terapia elétrica precede qualquer tentativa de reversão química. Além disso, a infusão de amiodarona demora a fazer efeito, e o paciente necessita de intervenção imediata.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Taquiarritmias",
+      "Eletrocardiograma",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  },
+  {
+    "id": "AJUDA_24f98a60-c816-4f5c-9ec8-d5fd9532789e",
+    "originalId": "24f98a60-c816-4f5c-9ec8-d5fd9532789e",
+    "statement": "Qual a causa mais frequente de anemia microcítica e hipocrômica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemólise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inflamação crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deficiência de ferro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deficiência de vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação morfológica das anemias é fundamental para o raciocínio clínico e baseia-se nos índices hematimétricos do hemograma, principalmente no Volume Corpuscular Médio (VCM) e na Hemoglobina Corpuscular Média (HCM). Uma anemia é chamada de microcítica quando as hemácias são menores que o normal (VCM baixo) e hipocrômica quando possuem menos hemoglobina (HCM baixo).\n\nAlternativa (a) Incorreta: As anemias hemolíticas são causadas pela destruição acelerada das hemácias. Geralmente, elas se apresentam como anemias normocíticas e normocrômicas. Em muitos casos, podem até ser macrocíticas devido à reticulocitose compensatória (aumento de hemácias jovens, que são maiores, na circulação).\n\nAlternativa (b) Incorreta: A anemia de doença crônica, associada a processos inflamatórios, infecciosos ou neoplásicos, é classicamente normocítica e normocrômica. Embora cerca de 20 a 30% dos pacientes possam evoluir com microcitose em quadros prolongados, ela não é a causa mais comum desse padrão.\n\nAlternativa (c) Correta: A anemia ferropriva (por deficiência de ferro) é a causa mais comum de anemia em todo o mundo, afetando bilhões de pessoas. O ferro é um elemento essencial para a produção do grupo heme da hemoglobina. Sem ferro suficiente, a medula produz hemácias pequenas e pálidas, caracterizando o padrão microcítico e hipocrômico clássico. Outras causas de microcitose incluem as talassemias e a anemia sideroblástica, mas a ferropriva permanece no topo da frequência epidemiológica.\n\nAlternativa (d) Incorreta: A deficiência de vitamina B12 (cobalamina) leva a um defeito na síntese de DNA, resultando em anemia megaloblástica. O padrão morfológico típico aqui é o oposto da questão: trata-se de uma anemia macrocítica, com VCM frequentemente acima de 110 fL.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  },
+  {
+    "id": "AJUDA_24fcb7b4-e6f6-45d4-817a-d45dbbc06652",
+    "originalId": "24fcb7b4-e6f6-45d4-817a-d45dbbc06652",
+    "statement": "Um recém‑nascido a termo era filho de uma mãe que foi diagnosticada com sífilis, durante a gestação. A genitora realizou um teste rápido positivo no 1º trimestre, com VDRL 1:64, e foi tratada com três doses de penicilina benzatina 2.400.000 U, com a aplicação de uma dose por semana. Exames maternos para o 2º trimestre: VDRL 1:8; exames maternos para o 3º trimestre: VDRL 1:4; e, no parto: VDRL 1:8. O parceiro foi tratado adequadamente, e a gestante não apresentou sinais clínicos da doença durante o pré‑natal. O recém‑nascido nasceu assintomático, com VDRL 1:4. \n\nCom base nesse caso clínico hipotético, é correto afirmar que se trata de",
+    "options": [
+      {
+        "id": "A",
+        "text": "uma criança exposta à sífilis, já que a mãe apresentou tratamento adequado durante a gestação, sendo necessário, então, realizar a radiografia de ossos longos e a punção lombar com VDRL no líquor ainda na maternidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "uma criança exposta à sífilis, já que a mãe apresentou tratamento adequado durante a gestação, com indicação de penicilina benzatina dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "uma criança exposta à sífilis, já que a mãe apresentou tratamento adequado durante a gestação, sem a necessidade de exames adicionais ou tratamento imediato, devendo ser realizada a coleta de VDRL com um mês de vida para seguimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "uma criança com sífilis congênita, pois o tratamento materno foi inadequado, sendo necessários a radiografia de ossos longos, a punção lombar com VDRL e o tratamento com penicilina cristalina por dez dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "uma criança com sífilis congênita, já que a mãe apresentou tratamento inadequado durante a gestação, sendo necessárias a radiografia de ossos longos, a punção lombar com VDRL e a penicilina procaína por dez dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, o primeiro passo é avaliar se o tratamento materno durante a gestação foi adequado. Segundo os protocolos do Ministério da Saúde, o tratamento da gestante é considerado adequado quando: 1) é realizado com penicilina benzatina; 2) o esquema terapêutico é completo e adequado para o estágio clínico da doença; 3) foi iniciado até 30 dias antes do parto; 4) há documentação de queda dos títulos de VDRL; 5) o risco de reinfecção foi avaliado (tratamento do parceiro).\n\nNo caso clínico apresentado, a mãe recebeu três doses de penicilina benzatina ainda no primeiro trimestre, o que é o esquema correto para sífilis de duração ignorada ou latente tardia. O parceiro foi tratado e houve uma queda significativa nos títulos de VDRL (de 1:64 para 1:4 e 1:8 no parto), caracterizando uma resposta imunológica satisfatória. Portanto, o tratamento materno foi adequado.\n\nO segundo passo é avaliar o recém-nascido. Ele nasceu assintomático e seu VDRL (1:4) não é maior que o título materno no momento do parto (1:8). De acordo com o protocolo, quando a mãe foi adequadamente tratada e o recém-nascido é assintomático com VDRL menor, igual ou até uma diluição maior que o materno, ele é classificado como criança exposta à sífilis, e não como sífilis congênita.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Embora classifique corretamente o bebê como exposto, a conduta está errada. Para crianças expostas de mães adequadamente tratadas, que estão assintomáticas e com VDRL não reagente ou menor que o materno, não há indicação de realizar exames invasivos, como punção lombar ou radiografias de ossos longos, na maternidade.\n\nAlternativa (b) Incorreta: A classificação de exposta está correta, mas não se indica penicilina benzatina de rotina para esses casos. O tratamento com dose única de penicilina benzatina só seria considerado se houvesse impossibilidade de garantir o acompanhamento da criança, o que não é a conduta padrão preferencial.\n\nAlternativa (c) Correta: Esta alternativa reflete exatamente o protocolo atual. Como a mãe teve tratamento adequado e o recém-nascido está assintomático com VDRL menor que o materno, ele é apenas uma criança exposta. Não são necessários exames complementares imediatos ou tratamento, devendo ser realizado o seguimento ambulatorial com consultas e coleta de VDRL seriado (geralmente com 1, 3, 6, 12 e 18 meses).\n\nAlternativa (d) Incorreta: A alternativa afirma erroneamente que o tratamento materno foi inadequado. Como o tratamento foi adequado, a criança não é diagnosticada com sífilis congênita apenas pelo histórico, e a investigação laboratorial extensa e o tratamento com penicilina cristalina por dez dias não se aplicam a este cenário.\n\nAlternativa (e) Incorreta: Assim como a anterior, erra ao julgar o tratamento materno como inadequado. Além disso, a penicilina procaína não seria a indicação correta caso houvesse alteração no líquor (neurossífilis), situação em que a penicilina cristalina é obrigatória.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  },
+  {
+    "id": "AJUDA_250a166f-9584-4b51-8fea-bdaa69dbf588",
+    "originalId": "250a166f-9584-4b51-8fea-bdaa69dbf588",
+    "statement": "Paciente masculino, 42 anos, apresenta lesão pigmentada na face dorsal do antebraço direito, referindo que há cerca de 8 meses percebeu aumento progressivo do tamanho e surgimento de áreas mais escuras. Ao exame, observa-se lesão de aproximadamente 7 mm, assimétrica, com bordas irregulares, variação de coloração e aspecto nodular em um dos polos. Considerando os critérios clínicos e as indicações para biópsia de lesões cutâneas pigmentadas, a conduta inicial mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "proceder biópsia por raspagem (shaving) para evitar cicatriz inestética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar biópsia incisional com punch de 2 mm na borda menos pigmentada da lesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "observar a evolução da lesão por três meses antes de indicar qualquer procedimento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar ressecção ampla com margens oncológicas definitivas, dispensando biópsia diagnóstica prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar biópsia excisional com margens estreitas, incluindo toda a lesão e estendendo a profundidade até a gordura subcutânea.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de suspeita de melanoma cutâneo, fundamentado no mnemônico ABCDE: Assimetria (lesão assimétrica), Bordas irregulares, Cor variada (áreas mais escuras), Diâmetro maior que 6 mm (apresenta 7 mm) e Evolução (aumento progressivo em 8 meses). O aspecto nodular em um dos polos reforça a urgência diagnóstica.\n\nAlternativa (a) incorreta: A biópsia por raspagem (shaving) é formalmente contraindicada na suspeita de melanoma. Esse método costuma realizar um corte superficial que pode seccionar a base da lesão, impedindo a medida correta da espessura de invasão (Índice de Breslow). O Breslow é o principal fator prognóstico e o parâmetro que define as margens da cirurgia definitiva.\n\nAlternativa (b) incorreta: A biópsia incisional (retirada de apenas uma parte da lesão) só deve ser considerada em lesões muito extensas ou em locais anatomicamente sensíveis onde a exérese total inicial causaria grande deformidade. Como a lesão tem apenas 7 mm e está no antebraço, a biópsia excisional é perfeitamente viável e preferível. Além disso, um punch de 2 mm é pequeno demais para garantir uma amostragem adequada em casos de malignidade.\n\nAlternativa (c) incorreta: A observação clínica é inadequada para lesões que já apresentam critérios de malignidade e crescimento documentado. O retardo no diagnóstico do melanoma compromete diretamente a sobrevida do paciente, pois permite a progressão local e a disseminação metastática.\n\nAlternativa (d) incorreta: Não se deve realizar a ressecção com margens oncológicas definitivas (que podem variar de 1 cm a 2 cm de margem lateral) antes de um diagnóstico histopatológico e da medida do Índice de Breslow. Margens amplas realizadas de imediato podem resultar em cirurgias desnecessariamente mutilantes ou em fechamentos complexos (retalhos/enxertos) que podem dificultar a reintervenção ou a identificação do linfonodo sentinela, se este for necessário.\n\nAlternativa (e) correta: A biópsia excisional é o padrão-ouro para o diagnóstico de lesões pigmentadas suspeitas de melanoma. Ela deve ser realizada com margens estreitas (1 a 3 mm de pele sã) e incluir obrigatoriamente a gordura subcutânea. Esse procedimento permite que o patologista analise a arquitetura completa da lesão e determine com precisão a profundidade de invasão, permitindo o planejamento correto do tratamento definitivo subsequente.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  },
+  {
+    "id": "AJUDA_251bacc3-7726-4194-aa2c-525026146e48",
+    "originalId": "251bacc3-7726-4194-aa2c-525026146e48",
+    "statement": "Homem, 65 anos, procura avaliação médica após detecção de níveis pressóricos elevados em exame de triagem. Assintomático. Exame físico: FC: 92 bpm, PA: 152x76 mmHg. Ictus cordis palpável no sexto espaço intercostal, na linha axilar anterior esquerda, com extensão de aproximadamente 3 polpas digitais. Ritmo cardíaco regular em 2 tempos, sopro mesossistólico 1+/6+ no segundo espaço intercostal esquerdo e sopro holodiastólico 3+/4+ em padrão decrescente audível na borda esternal esquerda junto ao terceiro e quarto espaços intercostais.\nQuais são as alterações fisiopatológicas esperadas nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução do volume de ejeção e hipertrofia excêntrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução do volume de ejeção e hipertrofia concêntrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento do volume de ejeção e hipertrofia concêntrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento do volume de ejeção e hipertrofia excêntrica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico do caso:\nOs achados do exame físico indicam o diagnóstico de Insuficiência Aórtica (IAo) crônica:\n1. Pressão de pulso alargada (152x76 mmHg, diferença de 76 mmHg), típica de estados hiperdinâmicos por regurgitação aórtica.\n2. Ictus cordis desviado para a esquerda e para baixo (6º espaço intercostal na linha axilar anterior) e aumentado em extensão (3 polpas digitais), traduzindo dilatação do ventrículo esquerdo (VE).\n3. Sopro holodiastólico decrescente na borda esternal esquerda (foco aórtico acessório), patognomônico de insuficiência aórtica.\n4. Sopro mesossistólico em base, decorrente de hiperfluxo sistólico transvalvar aórtico.\n\nFisiopatologia:\nNa insuficiência aórtica crônica, o VE recebe o volume proveniente do átrio esquerdo somado ao volume que refluiu da aorta durante a diástole, gerando uma sobrecarga volumétrica crônica. Para acomodar esse maior volume diastólico final mantendo pressões de enchimento aceitáveis, o miocárdio sofre hipertrofia excêntrica (adição de sarcômeros em série e dilatação cavitária). Para manter o débito cardíaco anterógrado efetivo para os tecidos, o VE precisa ejetar um volume sistólico total significativamente aumentado a cada contração.\n\nAnálise das alternativas:\n\na) Incorreta. O volume de ejeção total está aumentado para compensar a fração regurgitante. Uma queda do volume de ejeção só ocorreria em estágios terminais com disfunção miocárdica grave, o que não condiz com um paciente assintomático e hiperdinâmico.\n\nb) Incorreta. O volume de ejeção está aumentado e o padrão de remodelamento na sobrecarga de volume é a hipertrofia excêntrica. A hipertrofia concêntrica é típica de sobrecargas de pressão, como na estenose aórtica e na hipertensão arterial de longa data.\n\nc) Incorreta. Embora o volume de ejeção esteja aumentado, a hipertrofia gerada pela sobrecarga de volume da insuficiência aórtica é excêntrica (com dilatação da cavidade ventricular), e não concêntrica.\n\nd) Correta. A insuficiência aórtica promove sobrecarga de volume, levando ao aumento do volume de ejeção sistólico total (mecanismo de Frank-Starling e compensação do refluxo) e à hipertrofia excêntrica do ventrículo esquerdo.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:11.474Z"
+  }
+]

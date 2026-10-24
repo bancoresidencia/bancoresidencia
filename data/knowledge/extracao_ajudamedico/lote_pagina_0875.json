@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_f2ed218d-226e-4566-a3ad-a958c00b6464",
+    "originalId": "f2ed218d-226e-4566-a3ad-a958c00b6464",
+    "statement": "Mulher de 64 anos apresenta quadro de fraqueza e lombalgia há 4 meses. Emagreceu 4 kg no período. Está descorada e a avaliação laboratorial mostra hemoglobina: 7,5 g/dL, cálcio sérico elevado e creatinina sérica: 2,1 mg/dL. A radiografia de coluna vertebral mostra rarefação óssea. O exame com maior probabilidade de orientar o diagnóstico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eletroforese de proteínas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ultrassonografia de rins e vias urinárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Eletroforese de hemoglobina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mutação do gene JAK2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cintilografia óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso apresenta uma paciente idosa com a clássica tétrade clínica do Mieloma Múltiplo, frequentemente lembrada pelo acrônimo CRAB:\nC (Cálcio): Hipercalcemia (cálcio sérico elevado).\nR (Renal): Insuficiência renal (creatinina de 2,1 mg/dL).\nA (Anemia): Hemoglobina de 7,5 g/dL (quadro de fraqueza e descoramento).\nB (Bone/Osso): Lesões ósseas (lombalgia e rarefação óssea ao raio X).\n\nO Mieloma Múltiplo é uma neoplasia de plasmócitos que produzem imunoglobulinas monoclonais. Diante dessa suspeita, o primeiro passo laboratorial para identificar a presença dessa proteína anômala é a pesquisa do pico monoclonal.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) CORRETA. A eletroforese de proteínas (seja sérica ou urinária) é o exame inicial de triagem para o Mieloma Múltiplo. Ela permite identificar o componente monoclonal (pico monoclonal), geralmente na região das gamaglobulinas, que é fundamental para o diagnóstico da doença.\n\nb) INCORRETA. Embora a paciente apresente alteração da função renal, a ultrassonografia de rins e vias urinárias serve para avaliar obstruções ou morfologia renal, mas não diagnostica a causa-base (nefropatia por cilindros ou amiloidose) associada ao mieloma.\n\nc) INCORRETA. A eletroforese de hemoglobina é utilizada para o diagnóstico de hemoglobinopatias, como a anemia falciforme ou talassemias. No caso descrito, a anemia é do tipo normocítica e normocrômica, decorrente da infiltração da medula óssea pelos plasmócitos e da doença renal crônica.\n\nd) INCORRETA. A mutação do gene JAK2 está associada a neoplasias mieloproliferativas, como policitemia vera, trombocitemia essencial e mielofibrose primária. Não possui relação com o Mieloma Múltiplo.\n\ne) INCORRETA. Esta é uma \"pegadinha\" comum. A cintilografia óssea detecta atividade osteoblástica (formação de osso novo). No Mieloma Múltiplo, as lesões são predominantemente osteolíticas (destruição óssea pura), sem reação osteoblástica. Por isso, a cintilografia costuma ser negativa (falso-negativo), sendo preferível o inventário radiológico convencional, a tomografia ou a ressonância magnética.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Mieloma Múltiplo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  },
+  {
+    "id": "AJUDA_f2f4da07-5467-406c-afb8-c407ca809788",
+    "originalId": "f2f4da07-5467-406c-afb8-c407ca809788",
+    "statement": "Recém nascido com 7 dias de vida, retorna em ambulatório com relato de cansaço as mamadas. No exame físico observa-se desconforto respiratório, tiragem inter e subcostal, palidez, pulsos femorais ausentes, perfusão periférica diminuída, taquicardia e hepatomegalia. Observa-se ainda pressão aumentada em membros superiores quando comparado a aferição em membros inferiores.\n• ECG: hipertrofia do VD com ÂQRS desviado para direita.\n• Radiografia do tórax: cardiomegalia e congestão venosa pulmonar estão presentes.\nAnte o exposto o diagnostico provável, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Persistência de canal arterial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transposição de grandes artérias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "CIV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "CIA",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Coarctação da aorta",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO\n\nO caso clínico descreve um recém-nascido de 7 dias que apresenta um quadro de Insuficiência Cardíaca Congestiva (ICC) e choque cardiogênico. O elemento fundamental para o diagnóstico reside no exame físico: a ausência de pulsos femorais em contraste com pulsos palpáveis em membros superiores, além da diferença de pressão arterial entre os segmentos cefálico e podálico. No período neonatal, a Coarctação da Aorta é considerada uma cardiopatia congênita dependente do canal arterial. A descompensação súbita por volta do 7º dia de vida ocorre justamente devido ao fechamento fisiológico do canal arterial (ductus arteriosus), que anteriormente permitia o fluxo sanguíneo para a aorta descendente, contornando a obstrução.\n\nO achado de hipertrofia de Ventrículo Direito (VD) no ECG em recém-nascidos com coarctação justifica-se porque, na vida fetal, o VD é a câmara que supre a aorta descendente. Diante de uma obstrução fixa, o VD exerce maior pressão contra a resistência da coarctação, gerando a hipertrofia observada precocemente.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA: A Persistência do Canal Arterial (PCA) em bebês a termo geralmente causa um shunt esquerda-direita. Os sinais clássicos são o sopro contínuo (\"em maquinaria\") e pulsos amplos (em martelo d'água) em todos os quatro membros, devido à queda da pressão diastólica por \"roubo\" de fluxo para a artéria pulmonar. Não causa redução de pulsos em membros inferiores.\n\nb) INCORRETA: A Transposição das Grandes Artérias (TGA) é a cardiopatia cianótica mais comum no período neonatal imediato. Manifesta-se com cianose central intensa e progressiva nas primeiras horas de vida, sem melhora com oxigenioterapia. Embora possa haver insuficiência cardíaca, não há discrepância de pulsos ou de pressão arterial entre membros.\n\nc) INCORRETA: A Comunicação Interventricular (CIV) é a cardiopatia congênita mais frequente, mas raramente causa sintomas na primeira semana de vida. Isso ocorre porque a resistência vascular pulmonar ainda está alta, o que limita o volume do shunt. O quadro de ICC costuma surgir após a 4ª semana, e os pulsos femorais estariam normais.\n\nd) INCORRETA: A Comunicação Interatrial (CIA) é geralmente assintomática na infância. Quando apresenta sinais, nota-se o desdobramento fixo da segunda bulha cardíaca. É uma patologia de hiperfluxo pulmonar que não causa obstrução sistêmica ou diferença de pressão entre membros.\n\ne) CORRETA: A Coarctação da Aorta (forma crítica ou pré-ductal) explica todo o quadro. A obstrução da aorta, geralmente próxima à inserção do canal arterial, impede a perfusão sistêmica adequada para a porção inferior do corpo. Com o fechamento do canal ao final da primeira semana, a resistência à ejeção ventricular aumenta bruscamente, levando à ICC, choque e a característica ausência de pulsos femorais com hipertensão em membros superiores.\n\nDICA DE PROVA\nSempre que uma questão apresentar um recém-nascido que \"estava bem\" e subitamente desenvolve choque ou insuficiência cardíaca por volta do 7º dia de vida, com diferença de pulsos e pressão entre braços e pernas, o diagnóstico é Coarctação da Aorta. O fechamento do canal arterial é o evento desencadeante da crise.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  },
+  {
+    "id": "AJUDA_f306fa1f-fe00-46a1-b989-a83531a55cce",
+    "originalId": "f306fa1f-fe00-46a1-b989-a83531a55cce",
+    "statement": "O Brasil vive um processo de transição nutricional rápido e complexo. Ao analisar o perfil epidemiológico nutricional de crianças e adolescentes brasileiros nas últimas três décadas, observa-se um fenômeno de \"dupla carga\" de má nutrição. Com base no processo de transição nutricional e no perfil epidemiológico nutricional de crianças e adolescentes no Brasil, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A desnutrição crônica (baixa estatura para idade) foi erradicada em todas as regiões do país, persistindo apenas a obesidade como problema de saúde pública, restrita às classes de maior renda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A transição nutricional caracterizou-se pela substituição da deficiência de micronutrientes (fome oculta) pela obesidade, de modo que a anemia ferropriva e a hipovitaminose A deixaram de ser problemas prevalentes no cenário nacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Houve uma redução expressiva da prevalência de desnutrição aguda (baixo peso para idade e baixo peso para altura) e um aumento acelerado da prevalência de sobrepeso e obesidade em todas as faixas etárias e classes sociais, configurando uma epidemia de doenças crônicas não transmissíveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O perfil epidemiológico mantém-se estável, com altas taxas de desnutrição energético-proteica grave (Marasmo e Kwashiorkor) predominando sobre a obesidade, que ainda é um fenômeno raro na população pediátrica de baixa renda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O processo de transição nutricional no Brasil é caracterizado por mudanças drásticas nos padrões de saúde e alimentação, refletindo a evolução socioeconômica do país. Esse fenômeno envolve a redução das doenças carenciais e o aumento expressivo dos problemas relacionados ao excesso de peso.\n\nAlternativa A: Incorreta. A desnutrição crônica (baixa estatura para a idade), embora tenha apresentado uma queda histórica significativa no Brasil, ainda não foi erradicada. Ela persiste em bolsões de vulnerabilidade, especialmente nas regiões Norte e Nordeste e em populações indígenas. Além disso, a obesidade não é restrita às classes de maior renda; pelo contrário, observa-se um crescimento acelerado da obesidade nas classes sociais mais baixas, devido ao maior consumo de alimentos ultraprocessados, que possuem alta densidade energética e baixo custo.\n\nAlternativa B: Incorreta. A transição nutricional não eliminou a chamada \"fome oculta\". Apesar do aumento da obesidade, as deficiências de micronutrientes continuam sendo um desafio de saúde pública. A anemia ferropriva e a hipovitaminose A ainda apresentam prevalências relevantes na população pediátrica brasileira, coexistindo muitas vezes com o excesso de peso no mesmo indivíduo ou família (dupla carga de má nutrição).\n\nAlternativa C: Correta. Esta alternativa descreve perfeitamente o cenário epidemiológico atual. Nas últimas décadas, o Brasil conseguiu reduzir de forma expressiva a desnutrição aguda (baixo peso para a altura) e o baixo peso para a idade por meio de políticas públicas e melhoria do saneamento. Em contrapartida, houve um aumento galopante do sobrepeso e da obesidade em todos os estratos sociais e faixas etárias, o que contribui diretamente para o aumento precoce de doenças crônicas não transmissíveis (DCNT), como diabetes tipo 2 e hipertensão arterial, ainda na infância e adolescência.\n\nAlternativa D: Incorreta. O perfil nutricional brasileiro é extremamente dinâmico, e não estável. As formas graves de desnutrição energético-proteica (marasmo e Kwashiorkor), que eram comuns em décadas passadas, tornaram-se raras no cenário nacional atual. A obesidade deixou de ser um fenômeno de elite e tornou-se onipresente, afetando severamente a população de baixa renda.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Obesidade na Infância e na Adolescência",
+      "Desnutrição na Infância",
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  },
+  {
+    "id": "AJUDA_f31aae4b-a0ea-47e2-aac9-5ff3efed141f",
+    "originalId": "f31aae4b-a0ea-47e2-aac9-5ff3efed141f",
+    "statement": "De acordo com a Constituição Federal de 1988, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Faz parte dos objetivos da seguridade social a uniformidade e equivalência dos benefícios e serviços às populações urbanas e rurais, incluídas as comunidades indígenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O Sistema Único de Saúde será financiado com recursos do orçamento exclusivamente da União.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As instituições privadas poderão participar de forma complementar do Sistema Único de Saúde, segundo diretrizes próprias, tendo preferência as entidades filantrópicas e as sem fins lucrativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É vedada em qualquer hipótese a participação de empresas ou capitais estrangeiros na assistência à saúde no país.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) - Correta: Esta alternativa reflete o disposto no Artigo 194 da Constituição Federal de 1988, parágrafo único, inciso II. A Seguridade Social, que engloba a Saúde, a Previdência e a Assistência Social, tem como um de seus objetivos a uniformidade e equivalência dos benefícios e serviços prestados tanto às populações urbanas quanto às rurais. A inclusão das comunidades indígenas está em consonância com os princípios da universalidade e da equidade previstos na Carta Magna e na legislação infraconstitucional (como o Subsistema de Saúde Indígena inserido na Lei 8.080/90).\n\nAlternativa (b) - Incorreta: O financiamento do Sistema Único de Saúde não é exclusivo da União. De acordo com o Artigo 198, parágrafo 1º, da Constituição, o SUS é financiado com recursos do orçamento da seguridade social da União, dos Estados, do Distrito Federal e dos Municípios, além de outras fontes. Trata-se de um financiamento tripartite (ou quadripartite, considerando o DF).\n\nAlternativa (c) - Incorreta: Embora as instituições privadas possam participar do SUS de forma complementar e as entidades filantrópicas tenham, de fato, preferência, elas não seguem diretrizes próprias. O Artigo 199, parágrafo 1º, estabelece que essa participação deve ocorrer mediante contrato de direito público ou convênio, observando as diretrizes do próprio Sistema Único de Saúde, e não as normas particulares da instituição privada.\n\nAlternativa (d) - Incorreta: A redação original do Artigo 199, parágrafo 3º, da Constituição previa a vedação da participação direta ou indireta de empresas ou capitais estrangeiros na assistência à saúde, salvo nos casos previstos em lei. Atualmente, a Lei 13.097/2015 alterou a Lei 8.080/90 para permitir amplamente a participação de capital estrangeiro em hospitais, clínicas e ações de saúde. Portanto, o erro está na expressão \"em qualquer hipótese\", já que existem exceções legais consolidadas.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  },
+  {
+    "id": "AJUDA_f31b1111-aae2-41d3-ab18-fbe0af689d70",
+    "originalId": "f31b1111-aae2-41d3-ab18-fbe0af689d70",
+    "statement": "Um paciente de 70 anos de idade, em acompanhamento por hiperplasia prostática benigna, em uso irregular de doxazosina, chegou ao pronto-socorro com bexigoma. Com base nessa situação hipotética, assinale a alternativa que apresenta a sequência de atendimento adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar punção suprapúbica de alívio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "passagem de sonda vesical de alívio, caso não seja efetiva a passagem de sonda vesical de demora; e, caso não se obtenha sucesso, realizar a punção suprapúbica de alívio",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "aumentar a dose de doxazosina e encaminhar ao urologista",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "passagem de sonda vesical de demora e, caso não se obtenha sucesso, realizar cistostomia por punção, para permitir um rápido esvaziamento da bexiga prevenindo ex vacum",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "passagem de sonda vesical de alívio e, caso não seja efetivo, realizar cistostomia cirúrgica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve uma Retenção Urinária Aguda (RUA), popularmente conhecida como bexigoma, em um paciente idoso com Hiperplasia Prostática Benigna (HPB). O manejo fundamental em situações de emergência urológica como esta é o esvaziamento imediato da bexiga para alívio da dor e prevenção de complicações renais.\n\nAbaixo, a análise de cada alternativa:\n\nAlternativa a) Incorreta. A punção suprapúbica é um procedimento invasivo. Na prática médica, deve-se sempre priorizar o método menos invasivo primeiro, que é a tentativa de cateterismo (sondagem) pela via uretral. A punção só é indicada quando há contraindicação ou insucesso na via uretral.\n\nAlternativa b) Correta. Esta alternativa descreve a hierarquia correta do atendimento. O primeiro passo é a tentativa de descompressão por via uretral. Caso a anatomia do paciente (neste caso, o aumento da próstata) impeça a progressão da sonda de demora ou de alívio, o médico deve partir para a via suprapúbica (punção) para garantir a drenagem da urina. \n\nAlternativa c) Incorreta. O uso de alfabloqueadores como a doxazosina faz parte do tratamento crônico da HPB para melhorar o fluxo urinário, mas não resolve uma retenção aguda instalada. Um paciente com bexigoma apresenta dor intensa e risco de lesão vesical e renal, necessitando de intervenção física imediata (drenagem) e não apenas medicamentosa.\n\nAlternativa d) Incorreta. O erro desta alternativa reside na justificativa final. O esvaziamento rápido da bexiga em grandes volumes não previne o fenômeno \"ex vacuo\"; pelo contrário, a descompressão súbita de uma bexiga muito distendida pode causar a \"hematúria ex vacuo\", que é o sangramento da mucosa vesical provocado pelo rompimento de pequenos vasos após a queda brusca da pressão intravesical.\n\nAlternativa e) Incorreta. Embora a tentativa inicial de sondagem de alívio esteja correta, a cistostomia cirúrgica é um procedimento mais complexo e invasivo, geralmente realizado em ambiente cirúrgico. No pronto-socorro, diante da impossibilidade de sondagem uretral, a punção suprapúbica de alívio é a conduta imediata mais segura e simples antes de se considerar uma intervenção cirúrgica definitiva.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  },
+  {
+    "id": "AJUDA_f31c743f-50d4-4e3b-bfb2-49bf608245b0",
+    "originalId": "f31c743f-50d4-4e3b-bfb2-49bf608245b0",
+    "statement": "Homem de 55 anos vai ao consultório com os resultados de exames. Interrompeu o etilismo há três meses; fazia o uso de 760g de álcool por semana. Nega internações ou doenças prévias conhecidas. Nega aumento de volume abdominal, sangramento digestivo ou episódios de confusão mental. ULTRASSONOGRAFIA DO ABDOME: fígado de dimensões reduzidas, superfície irregular e nodular, e parênquima com aumento difuso da ecogenicidade. A veia porta apresenta diâmetro aumentado. Esplenomegalia leve. Ausência de líquido livre na cavidade abdominal. EXAMES DE LABORATÓRIO: hemoglobina 13g/dL; leucócitos totais 4.100/mm³; plaquetas 152.000/mm³. ELASTOGRAFIA HEPÁTICA: medida da rigidez hepática pela elastografia transitória de 26 kPa. Assinale a alternativa CORRETA sobre o caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A medida da rigidez hepática deve ser repetida a cada dois anos, desde que o paciente não apresente descompensações no intervalo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A prescrição de betabloqueadores não-seletivos está indicada para a prevenção de descompensação clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Não há indicação para o rastreio endoscópico de varizes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O resultado obtido revela cirrose hepática descompensada, com hipertensão portal clinicamente significativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro: O paciente apresenta sinais clínicos, laboratoriais e de imagem de hepatopatia crônica avançada. O ultrassom mostra alterações morfológicas hepáticas (superfície irregular e nodular) e sinais indiretos de hipertensão portal (esplenomegalia e aumento do diâmetro da veia porta). A elastografia hepática de 26 kPa confirma o diagnóstico de cirrose com Hipertensão Portal Clinicamente Significativa (HPCS), definida por valores acima de 20-25 kPa. Como o paciente nega ascite, sangramento ou encefalopatia, a cirrose é classificada como compensada.\n\nAlternativa a - Incorreta: Em pacientes com cirrose já estabelecida e rigidez hepática elevada (26 kPa), o foco do acompanhamento não é a repetição bienal da elastografia para fins diagnósticos. O manejo deve focar na vigilância de complicações, como o rastreio de carcinoma hepatocelular com ultrassonografia a cada 6 meses e o manejo da hipertensão portal para evitar a descompensação.\n\nAlternativa b - Correta: Conforme as diretrizes do Consenso de Baveno VII, pacientes com Doença Hepática Crônica Avançada Compensada que possuem rigidez hepática pela elastografia transitória maior que 25 kPa têm diagnóstico de Hipertensão Portal Clinicamente Significativa (HPCS). Nesses casos, está indicado o início de betabloqueadores não seletivos (preferencialmente o carvedilol) para prevenir a primeira descompensação clínica (principalmente o aparecimento de ascite) e reduzir a mortalidade, independentemente da realização de endoscopia prévia.\n\nAlternativa c - Incorreta: O rastreio endoscópico para varizes esofágicas só poderia ser dispensado se o paciente preenchesse os critérios de Baveno VI/VII (rigidez hepática menor que 20 kPa E plaquetas maiores que 150.000/mm³). Embora o paciente tenha plaquetas de 152.000/mm³, sua rigidez hepática é de 26 kPa, ultrapassando o limite de segurança. Portanto, se não for optado pelo início imediato do betabloqueador pelo critério de elastografia > 25 kPa, a endoscopia estaria indicada.\n\nAlternativa d - Incorreta: O termo descompensada refere-se à presença de complicações clínicas manifestas, como ascite, hemorragia digestiva varicosa ou encefalopatia hepática. O enunciado deixa claro que o paciente nega tais eventos e o ultrassom confirma a ausência de líquido livre na cavidade abdominal. Portanto, trata-se de cirrose compensada com hipertensão portal clinicamente significativa.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  },
+  {
+    "id": "AJUDA_f32b815e-8511-4db2-afae-9433e76a4a51",
+    "originalId": "f32b815e-8511-4db2-afae-9433e76a4a51",
+    "statement": "Uma mulher de 52 anos, sem sintomas, comparece para avaliação de rotina. Não possui comorbidades e nunca realizou colonoscopia. Segundo o Tratado de Medicina de Família e Comunidade (Gusso & Lopes), qual é a melhor recomendação para o rastreamento de câncer colorretal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não há necessidade de rastreamento, pois não há antecedentes familiares de câncer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar rastreamento aos 60 anos com colonoscopia a cada 10 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar rastreamento aos 50 anos, podendo utilizar pesquisa de sangue oculto nas fezes anual ou colonoscopia a cada 10 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar colonoscopia apenas se houver sintomas gastrointestinais, como dor abdominal ou alteração do hábito intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das respostas anteriores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O câncer colorretal (CCR) é uma das neoplasias mais comuns, e o rastreamento é fundamental para a redução da mortalidade, pois permite a identificação de lesões precursoras (pólipos adenomatosos) ou o diagnóstico da doença em estágios iniciais e curáveis.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A ausência de histórico familiar não elimina a necessidade de rastreamento. Aproximadamente 70% a 80% dos casos de câncer colorretal são esporádicos, ocorrendo em pacientes sem antecedentes familiares ou fatores de risco hereditários conhecidos. Portanto, o rastreamento é universal para a população a partir de uma determinada idade.\n\nAlternativa b) Incorreta. A idade de 60 anos é considerada tardia para o início do rastreamento na população geral. As diretrizes estabelecidas no Tratado de Medicina de Família e Comunidade (Gusso e Lopes), alinhadas com recomendações do Ministério da Saúde e diversas sociedades científicas, preconizam o início aos 50 anos para indivíduos de risco habitual.\n\nAlternativa c) Correta. Esta alternativa descreve a conduta padrão para o paciente de risco habitual (assintomático e sem histórico familiar). O rastreamento deve começar aos 50 anos. As duas principais estratégias utilizadas na atenção primária são a Pesquisa de Sangue Oculto nas Fezes (PSOF), que deve ser realizada anualmente, ou a colonoscopia, que, se estiver normal, pode ser repetida a cada 10 anos. Outras opções aceitáveis incluem a retossigmoidoscopia a cada 5 anos.\n\nAlternativa d) Incorreta. O conceito de rastreamento aplica-se especificamente a indivíduos assintomáticos. Quando um paciente apresenta dor abdominal, alteração do hábito intestinal, anemia ferropriva ou sangramento retal, a solicitação de exames deixa de ser uma medida de rastreamento e passa a ser uma investigação diagnóstica para avaliar sintomas presentes.\n\nAlternativa e) Incorreta. A alternativa (c) atende perfeitamente aos critérios técnicos e bibliográficos exigidos pela questão.\n\nEm resumo, para a paciente de 52 anos em questão, que nunca realizou exames prévios, a recomendação correta é iniciar imediatamente o rastreamento, seguindo os protocolos de idade (a partir dos 50 anos) e periodicidade (anual para sangue oculto ou decenal para colonoscopia).",
+    "exam": "UFRB",
+    "year": 2026,
+    "banca": "UFRB",
+    "uf": "BA",
+    "tags": [
+      "Medicina de Família e Comunidade",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35674e2a8fdd600c4528186d032722b2534d565f8659f6d532a9977d76ec6035.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2f3a30ed0fd307a6a4fadc82fa84bd78995407514592af81b25948bee1e5d79f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  },
+  {
+    "id": "AJUDA_f3360df3-501b-4eeb-8e75-b0e1b8616417",
+    "originalId": "f3360df3-501b-4eeb-8e75-b0e1b8616417",
+    "statement": "Paciente, sexo masculino, 22 anos de idade, vítima de espancamento, é levado ao Pronto-Socorro cerca de 2 horas após o evento. Encontra-se pálido, sudorético, taquicárdico, FC 128 bpm, e com PA 90/58 mmHg, apresentando múltiplos hematomas em tórax e abdome, além de dor difusa. Está confuso, com tempo de enchimento capilar prolongado (4 segundos) e extremidades frias. Gasometria inicial revela pH 7,28, lactato 4,8 mmol/L, glicemia 178 mg/dL e potássio sérico de 3,2 mEq/L. Apresenta ainda temperatura de 35,6 °C e débito urinário reduzido (12 mL/h). Após reposição volêmica inicial com cristaloides e controle hemostático das lesões superficiais, o paciente evolui com melhora parcial dos sinais vitais: PA 110/70 mmHg, FC 104 bpm, extremidades mais aquecidas e diurese crescente para 0,7 mL/kg/h ao final de 4 horas. O lactato cai para 2,6 mmol/L e a temperatura se normaliza.\n\nIndique a alternativa que descreve corretamente as modificações da fase de catabolismo agudo do trauma:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mobilização de substratos energéticos e balanço nitrogenado negativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Predomínio de síntese proteica e armazenamento de energia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento da secreção de insulina e diminuição do consumo de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retenção de glicose e formação de corpos cetônicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um paciente politraumatizado que se encontrava inicialmente em choque (fase de refluxo ou Ebb phase) e que, após reanimação volêmica adequada, evolui para a fase de fluxo (Flow phase), caracterizada pelo hipermetabolismo e catabolismo agudo da Resposta Endócrina, Metabólica e Imunológica ao Trauma (REMIT).\n\nAnálise das alternativas:\n\na) Correta. Na fase de catabolismo agudo do trauma (fase de fluxo), há intensa liberação de hormônios contrarreguladores (cortisol, glucagon e catecolaminas) e citocinas inflamatórias. Esse ambiente hormonal promove a mobilização de substratos por meio da lipólise, glicogenólise e proteólise muscular. O aumento da degradação de proteínas musculares para fornecer aminoácidos à gliconeogênese hepática e à síntese de proteínas de fase aguda eleva a excreção urinária de ureia, gerando um balanço nitrogenado negativo.\n\nb) Incorreta. O predomínio de síntese proteica e reconstituição das reservas energéticas ocorre apenas na fase anabólica ou de convalescença, que se instala dias a semanas após a resolução do estresse inicial. No catabolismo agudo, o processo predominante é a quebra de tecidos e reservas.\n\nc) Incorreta. Durante a resposta aguda ao estresse há aumento do consumo de oxigênio (hipermetabolismo) e desenvolvimento de resistência periférica à ação da insulina, mantendo a glicose disponível preferencialmente para tecidos dependentes dela, como o sistema nervoso central e células inflamatórias.\n\nd) Incorreta. Ocorre hiperglicemia devido ao aumento da produção hepática de glicose (gliconeogênese e glicogenólise), e não por mera retenção. Além disso, ao contrário do jejum não complicado, no trauma agudo a cetogênese é suprimida ou significativamente reduzida pela presença de níveis basais de insulina e pelo perfil hormonal do estresse cirúrgico.\n\nPortanto, a alternativa correta é a letra a.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Trauma",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  },
+  {
+    "id": "AJUDA_f3394bd9-8d54-4f3d-9ed2-c78e3e716707",
+    "originalId": "f3394bd9-8d54-4f3d-9ed2-c78e3e716707",
+    "statement": "Uma mulher de 60 anos com histórico de diabetes mellitus apresenta obstipação grave. Ao realizar manometria anorretal, foi identificado um padrão de dissinergia do assoalho pélvico. A melhor opção de tratamento a ser considerada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "início de metformina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "biofeedback.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "cirurgia para ressecção intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "suplementação de fibras.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um quadro clássico de distúrbio evacuatório (obstipação de saída) causado por dissinergia do assoalho pélvico, confirmado por manometria anorretal. Nesse distúrbio, ocorre uma falha de coordenação: o paciente faz esforço evacuatório, mas o músculo puborretal e o esfíncter anal externo se contraem paradoxalmente ou não relaxam o suficiente para permitir a passagem das fezes.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A metformina é um agente antidiabético da classe das biguanidas. Embora um de seus efeitos colaterais comuns seja a diarreia, ela não é utilizada terapeuticamente para tratar obstipação e não tem nenhuma ação na coordenação motora dos músculos do assoalho pélvico.\n\nAlternativa b) Correta. O biofeedback é o tratamento de escolha (padrão-ouro) para a dissinergia do assoalho pélvico. É uma terapia de reeducação neuromuscular que utiliza sensores (pressão ou eletromiografia) para fornecer ao paciente um retorno visual ou sonoro de sua atividade muscular. Assim, o paciente aprende a relaxar a musculatura pélvica e a coordenar o esforço de propulsão abdominal durante a evacuação. Apresenta resultados superiores ao uso de laxantes e fibras nesta patologia.\n\nAlternativa c) Incorreta. A ressecção intestinal (como a colectomia subtotal) é reservada para casos graves e refratários de inércia colônica (constipação de trânsito lento) e apenas após a exclusão de disfunções do assoalho pélvico. Realizar cirurgia em um paciente com dissinergia é contraindicado, pois o problema reside na \"saída\" (reto/ânus) e não no cólon; a cirurgia não resolveria a obstrução funcional e poderia piorar o quadro clínico.\n\nAlternativa d) Incorreta. A suplementação de fibras é a conduta inicial para a constipação funcional simples. No entanto, em pacientes com dissinergia do assoalho pélvico, o aumento da ingesta de fibras muitas vezes é ineficaz e pode até piorar sintomas como distensão abdominal e dor, já que o paciente continua incapaz de expelir o bolo fecal devido à obstrução funcional na musculatura pélvica.\n\nEm resumo, diante do diagnóstico manométrico de dissinergia, a terapia comportamental com biofeedback é a conduta mais eficaz e indicada.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  },
+  {
+    "id": "AJUDA_f33d125c-4960-4bc8-af3a-302e656730c2",
+    "originalId": "f33d125c-4960-4bc8-af3a-302e656730c2",
+    "statement": "Um menino de 1 ano é levado ao pronto-socorro com dor abdominal, vômitos e diarreia. Os exames laboratoriais revelaram anemia hemolítica microangiopática, trombocitopenia e insuficiência renal aguda. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome hemolítico-urêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Púrpura de Henoch-Schönlein.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Glomerulonefrite pós-estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lúpus eritematoso sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta a tríade clássica da Síndrome Hemolítico-Urêmica (SHU), que é composta por: 1) Anemia hemolítica microangiopática (caracterizada pela presença de esquizócitos no sangue periférico); 2) Trombocitopenia (queda do número de plaquetas por consumo); e 3) Insuficiência renal aguda.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Correta. A Síndrome Hemolítico-Urêmica é a causa mais comum de insuficiência renal aguda em crianças pequenas, especialmente após um quadro de pródromo gastrointestinal (dor abdominal, vômitos e diarreia, muitas vezes sanguinolenta). A forma típica é causada pela toxina Shiga, produzida pela bactéria *Escherichia coli* (sorotipo O157:H7). O quadro clínico e laboratorial do paciente de 1 ano descrito na questão é patognomônico para esta síndrome.\n\nAlternativa b) Incorreta. A Púrpura de Henoch-Schönlein (ou Vasculite por IgA) também se manifesta com dor abdominal e pode cursar com hematúria/nefrite. No entanto, sua marca registrada é a púrpura palpável, principalmente em membros inferiores e nádegas. Além disso, na Púrpura de Henoch-Schönlein, os níveis de plaquetas estão normais ou até elevados, diferindo da trombocitopenia observada na SHU.\n\nAlternativa c) Incorreta. A Glomerulonefrite Pós-Estreptocócica (GNPE) manifesta-se tipicamente como uma síndrome nefrítica (hematúria, edema e hipertensão) após uma infecção de faringe ou pele por *Streptococcus pyogenes*. Embora cause insuficiência renal, ela não evolui com anemia hemolítica microangiopática nem com queda importante de plaquetas.\n\nAlternativa d) Incorreta. O Lúpus Eritematoso Sistêmico (LES) é uma doença autoimune multissistêmica que pode causar anemia e nefrite, mas é extremamente raro em uma criança de apenas 1 ano de idade. O quadro agudo pós-diarreia direciona o diagnóstico especificamente para a SHU, e não para uma doença autoimune crônica como o LES.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Diarreia",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:49.346Z"
+  }
+]

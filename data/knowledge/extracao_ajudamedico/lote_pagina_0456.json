@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_80f12627-e2e3-4570-9d85-7aecb0a1f664",
+    "originalId": "80f12627-e2e3-4570-9d85-7aecb0a1f664",
+    "statement": "Qual característica histológica define um diagnóstico de pré eclâmpsia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endoteliose glomerular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Glomeruloesclerose segmentar e focal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Expansão mesangial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sinéquias nos glomérulos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a) Endoteliose glomerular.\n\nA pré-eclâmpsia é uma síndrome multissistêmica caracterizada por disfunção endotelial generalizada. No rim, essa condição manifesta-se de forma muito específica através da endoteliose glomerular, considerada a lesão histopatológica clássica e patognomônica da doença. Essa alteração consiste no inchamento (edema) das células endoteliais dos capilares glomerulares, o que leva à redução do lúmen (espaço interno) desses vasos e à perda das fenestrações endoteliais. Como resultado, há uma diminuição na filtração glomerular e o surgimento de proteinúria. É uma lesão tipicamente reversível após o parto.\n\nExplicação das demais alternativas:\n\nb) Glomeruloesclerose segmentar e focal (GESF): Esta é uma forma de nefropatia que envolve a cicatrização (esclerose) de partes de alguns glomérulos. Embora possa causar proteinúria maciça, é uma doença renal primária ou secundária a outras condições crônicas, não sendo a lesão característica da pré-eclâmpsia aguda.\n\nc) Expansão mesangial: Refere-se ao aumento da matriz ou do número de células no mesângio (tecido de sustentação do glomérulo). Essa alteração é comumente encontrada na nefropatia diabética ou em certas glomerulonefrites, mas não define o quadro histológico da pré-eclâmpsia.\n\nd) Sinéquias nos glomérulos: As sinéquias são adesões entre o tufo glomerular e a cápsula de Bowman. Elas ocorrem em processos inflamatórios ou cicatriciais, como na própria glomeruloesclerose segmentar e focal, e indicam lesão estrutural permanente, diferindo da endoteliose glomerular da pré-eclâmpsia, que é um processo de edema celular e disfunção endotelial.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  },
+  {
+    "id": "AJUDA_80f14065-9de7-4f8d-9a7b-45be030c5a37",
+    "originalId": "80f14065-9de7-4f8d-9a7b-45be030c5a37",
+    "statement": "Mãe de menina de 7 anos, em consulta na Unidade Básica de Saúde (UBS), relata preocupação por a filha ser a menor de sua sala de aula. Nega intercorrências nos períodos gestacional e neonatal. Nega internações ou uso de medicações contínuas. Exame físico sem alterações, estágio de desenvolvimento de Tanner Mamas M1 e pelos pubianos P1; peso de 19 quilogramas (z -1); estatura de 1,07 metros (-3 < z < -2) com alvo de 1,50 metros (z -2); índice de massa corporal de 16,6 quilogramas por metro quadrado (0 < z < +1); relação entre segmento superior e segmento inferior de 1,02 (valor de referência para a idade: 1 a 1,3). Em consulta com 6 anos e 8 meses, apresentava peso de 17 quilogramas (-2 < z < -1); estatura de 1,05 metros (-3 < z < -2); índice de massa corporal de 15,4 quilogramas por metro quadrado (z 0), quando foi realizado cálculo de idade óssea compatível com 5 anos e 10 meses.\nA hipótese diagnóstica adequada para o caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "acondroplasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "síndrome de Turner.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "baixa estatura familiar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "atraso constitucional do crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para analisar esta questão, devemos observar os dados antropométricos e o histórico da paciente. A menina apresenta uma estatura atual de 1,07 metro, o que a coloca entre os escores Z -2 e -3. O dado fundamental é o seu alvo genético (estatura-alvo) de 1,50 metro, que corresponde exatamente ao escore Z -2. Isso indica que a criança está crescendo dentro ou muito próxima do seu potencial familiar.\n\nAbaixo, a análise de cada alternativa:\n\na) Incorreta. A acondroplasia é a causa mais comum de nanismo desproporcional. Ela se caracteriza pelo encurtamento dos membros (rizomelia) em relação ao tronco. No caso descrito, a relação entre os segmentos superior e inferior é de 1,02, o que é considerado normal para a idade de 7 anos (referência de 1 a 1,3). Portanto, o crescimento é proporcional, o que afasta displasias ósseas como a acondroplasia.\n\nb) Incorreta. A síndrome de Turner deve sempre ser considerada em meninas com baixa estatura, mas geralmente apresenta uma velocidade de crescimento nitidamente deficitária e pode vir acompanhada de estigmas físicos (como pescoço alado, tórax em escudo ou implantação baixa das orelhas), que estão ausentes nesta paciente. Além disso, a estatura da menina é compatível com o canal de crescimento da família.\n\nc) Correta. A baixa estatura familiar é a hipótese diagnóstica principal quando a criança apresenta estatura abaixo do percentil 3 (escore Z -2), mas mantém uma velocidade de crescimento normal e sua altura é condizente com o alvo genético dos pais. Embora a idade óssea possa ser ocasionalmente um pouco atrasada, a característica marcante é que a curva de crescimento da criança acompanha o padrão familiar desde cedo. O fato de a estatura da paciente (entre Z -2 e Z -3) estar muito próxima do seu alvo genético (Z -2) ratifica essa alternativa.\n\nd) Incorreta. O atraso constitucional do crescimento e da puberdade (ACCP) caracteriza-se por um atraso mais significativo da idade óssea (geralmente superior a 2 anos de diferença em relação à idade cronológica) e por uma desaceleração do crescimento nos primeiros anos de vida, com posterior normalização da velocidade. No ACCP, a criança costuma estar temporariamente abaixo do seu alvo genético, \"recuperando\" a altura durante uma puberdade que também ocorre mais tarde do que a média. Nesta questão, o atraso da idade óssea é leve (apenas 10 meses) e a estatura já está alinhada ao potencial genético familiar.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": 63.268002093241414,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  },
+  {
+    "id": "AJUDA_80f16309-c37e-4d55-b4e5-c6d28aa5f8f1",
+    "originalId": "80f16309-c37e-4d55-b4e5-c6d28aa5f8f1",
+    "statement": "Paciente do sexo masculino, de 48 anos, apresenta quadro de perda ponderal não intencional, palpitações e intolerância ao calor nos últimos três meses. Exame físico mostra nódulo palpável em lobo direito da tireoide, de cerca de 2,5cm, indolor, além de taquicardia em repouso (110bpm). Os exames laboratoriais revelam TSH suprimido e T4 livre elevado. Realizada cintilografia de tireoide, que revelou captação aumentada no nódulo do lobo direito, com supressão do parênquima tireoidiano adjacente. Qual é o diagnóstico MAIS PROVÁVEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carcinoma papilífero da tireoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença de Graves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença de Plummer.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tireoidite subaguda de De Quervain.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresenta um paciente com tireotoxicose clara (perda ponderal, palpitações, intolerância ao calor, taquicardia, TSH suprimido e T4 livre elevado). O ponto fundamental para o diagnóstico etiológico reside no exame físico e no resultado da cintilografia de tireoide.\n\nAnálise das alternativas:\n\na) Incorreta. O carcinoma papilífero é o tumor maligno mais comum da tireoide, porém ele costuma se apresentar como um nódulo frio na cintilografia (sem captação do radiotraçador) e raramente causa hipertireoidismo. No caso descrito, o nódulo é hiperfuncionante (quente).\n\nb) Incorreta. A Doença de Graves é a causa mais comum de hipertireoidismo, mas sua apresentação clássica na cintilografia é de uma captação aumentada de forma difusa e homogênea por toda a glândula, e não concentrada em um único nódulo. Além disso, costuma cursar com bócio difuso e, em muitos casos, manifestações extratireoidianas, como a oftalmopatia.\n\nc) Correta. A Doença de Plummer, também conhecida como adenoma tóxico, caracteriza-se pela presença de um único nódulo autônomo que produz hormônios tireoidianos em excesso. Esse excesso de hormônio inibe a secreção de TSH pela hipófise, o que, por consequência, deixa o restante do parênquima tireoidiano (sadio) \"em repouso\" ou suprimido. Na cintilografia, isso se traduz exatamente como descrito: hipercaptação no nódulo e supressão do restante da glândula.\n\nd) Incorreta. A tireoidite subaguda de De Quervain manifesta-se tipicamente com dor cervical intensa, febre e sintomas de tireotoxicose por liberação de hormônios pré-formados devido à inflamação. Contudo, na fase de tireotoxicose desta doença, a cintilografia mostra uma captação muito baixa ou nula (inferior a 1% a 2%), pois as células foliculares estão inflamadas e incapazes de captar o iodo. No caso em questão, há uma área de captação aumentada.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  },
+  {
+    "id": "AJUDA_80fadad4-1129-4310-8ce0-d7dd02155789",
+    "originalId": "80fadad4-1129-4310-8ce0-d7dd02155789",
+    "statement": "Paciente de 68 anos apresenta sintomas de Acidente Vascular Cerebral Isquêmico (AVCI) há 2horas. Tomografia de Crânio (TC) sem sinais de hemorragia. Qual o principal critério de inclusão para trombólise endovenosa com Alteplase(t-PA)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Janela terapêutica de até 6 horas do início dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Início claro dos sintomas de AVCI isquêmico há ≤4,5horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pontuação na escala NIHSS igual ou superior a 20.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ausência de hipodensidade em mais de 1/3 do território da artéria cerebral média (sinal da insula).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os critérios fundamentais para a indicação de trombólise endovenosa no Acidente Vascular Cerebral Isquêmico (AVCI) agudo, um dos temas mais recorrentes em provas de residência e na prática de emergência.\n\nAlternativa a: Incorreta. A janela terapêutica padrão para a administração de alteplase (rt-PA) por via endovenosa é de até 4,5 horas do início dos sintomas. O período de 6 horas é frequentemente associado à janela clássica para a realização de trombectomia mecânica, e não para a trombólise química isolada.\n\nAlternativa b: Correta. O principal critério de inclusão temporal para a trombólise endovenosa é o início dos sintomas em um período menor ou igual a 4,5 horas. Este intervalo foi consolidado por grandes estudos (como o ECASS III) e é adotado pelas principais diretrizes nacionais e internacionais. Como o paciente do caso apresenta 2 horas de evolução e tomografia sem sangue, ele está dentro do período ideal para o tratamento.\n\nAlternativa c: Incorreta. A escala NIHSS é utilizada para quantificar o déficit neurológico, mas não há uma exigência de que a pontuação seja maior ou igual a 20 para realizar o procedimento. Pelo contrário, pacientes com NIHSS muito elevado (geralmente acima de 25) possuem um risco aumentado de transformação hemorrágica pós-trombólise. O critério de inclusão exige apenas um déficit neurológico mensurável que seja considerado clinicamente significativo.\n\nAlternativa d: Incorreta. A descrição de hipodensidade em mais de 1/3 do território da artéria cerebral média (ACM) é, na verdade, um critério de EXCLUSÃO (contraindicação) radiológica. A presença desse sinal sugere que o tecido cerebral já sofreu um infarto estabelecido, o que aumenta drasticamente o risco de sangramento e reduz o benefício da medicação. O sinal da fita insular (apagamento do córtex da ínsula) é um sinal precoce de isquemia, mas o limite para não trombolisar é justamente a extensão maior que 1/3 do território da ACM.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  },
+  {
+    "id": "AJUDA_80fc05bc-9c9d-407b-b74f-49fbaae5257f",
+    "originalId": "80fc05bc-9c9d-407b-b74f-49fbaae5257f",
+    "statement": "André, 3 anos de idade, há 4 dias apresenta febre 38ºC, associada a tosse + anorexia + dor abdominal, com boa diurese e evacuações ausentes nas últimas 24h. Chega ao Pronto Socorro em bom estado geral, corada, hidratada, FR = 42 ipm, FC = 114 bpm, Sat O₂ = 94%, T 37,8ºC. Na ausculta pulmonar há diminuição do murmúrio vesicular em base esquerda, com estertores esparsos, sem sibilos. Fez radiografia de tórax tem consolidação em lobo inferior esquerda, sem acometimento pleural. A conduta mais indicada ao quadro apresentado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "internação hospitalar e administração de penicilina cristalina e gentamicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "internação hospitalar e administração de oxacilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "internação hospitalar e administração de ceftriaxona e claritromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prescrição de ceftriaxona IM a ser realizada diariamente no serviço de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "prescrição de amoxicilina VO e reavaliação em 72h",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O caso clínico descreve uma criança de 3 anos com Pneumonia Adquirida na Comunidade (PAC). André apresenta febre, tosse e taquipneia (frequência respiratória de 42 ipm, sendo que o limite para sua idade é de 40 ipm). A dor abdominal relatada é um sintoma clássico em pneumonias de lobos inferiores em pediatria, ocorrendo devido à irritação do diafragma. O exame físico e a radiografia confirmam a consolidação no lobo inferior esquerdo, sem complicações como derrame pleural.\n\nA decisão entre tratamento ambulatorial ou hospitalar baseia-se na presença de sinais de gravidade. Os critérios para internação incluem: idade inferior a 2 meses, desconforto respiratório grave (presença de tiragem subcostal, batimento de asa do nariz ou gemência), saturação de oxigênio abaixo de 92%, incapacidade de manter hidratação ou aceitar via oral, sinais de sepse ou presença de complicações radiológicas (como derrame pleural volumoso). Como o paciente está em bom estado geral, hidratado, sem sinais de esforço respiratório e com saturação de 94%, o tratamento deve ser realizado em domicílio.\n\nAlternativa a: Incorreta. A internação hospitalar não está indicada para este perfil de paciente. Além disso, a associação de penicilina cristalina com gentamicina é geralmente utilizada em infecções neonatais ou quadros graves com suspeita de germes gram-negativos, não sendo o padrão para PAC em crianças desta faixa etária.\n\nAlternativa b: Incorreta. A oxacilina é um antibiótico direcionado para o Staphylococcus aureus. Suspeita-se desse agente em casos de pneumonia com rápida evolução clínica, sinais de gravidade extrema ou presença de pneumatoceles e abscessos na radiografia, o que não condiz com o quadro de André.\n\nAlternativa c: Incorreta. A combinação de ceftriaxona e claritromicina (um macrolídeo) é reservada para casos de pneumonia grave que exigem internação ou quando há suspeita de germes atípicos. Germes atípicos são mais comuns em crianças maiores e adolescentes, e o quadro clínico atual sugere uma etiologia bacteriana típica.\n\nAlternativa d: Incorreta. O uso de antibiótico injetável como a ceftriaxona via intramuscular poderia ser considerado se houvesse intolerância à via oral (vômitos persistentes) ou incerteza quanto à adesão ao tratamento, mas a via oral é preferencial quando o paciente tem condições clínicas para tal.\n\nAlternativa e: Correta. De acordo com as diretrizes da Sociedade Brasileira de Pediatria e da Organização Mundial da Saúde, a amoxicilina por via oral é a primeira escolha para o tratamento ambulatorial da PAC bacteriana não grave em crianças. Ela oferece excelente cobertura contra o Streptococcus pneumoniae (pneumococo), que é o principal agente etiológico. A recomendação de reavaliação em 72 horas é o padrão de segurança para garantir que houve resposta clínica satisfatória ao antibiótico.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  },
+  {
+    "id": "AJUDA_81035153-cf06-42ce-95a4-09a3ab63deae",
+    "originalId": "81035153-cf06-42ce-95a4-09a3ab63deae",
+    "statement": "D.M.O. nasceu de parto natural com 30 semanas e 1100Kg, Apgar 8 e 9. Foi encaminhado à UTI neonatal onde evoluiu, com 6h de vida, com desconforto respiratório, sendo acoplado à VNI e realizado RX de tórax, apresentando infiltrado. Com 48h de vida foi realizado ecocardiograma que evidenciou PCA com repercussão. Quais achados corroboram com esse diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diminuição dos pulsos periféricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Padrão radiológico de hipofluxo pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Câmaras direitas aumentadas ao ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento da amplitude dos pulsos periféricos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Persistência do Canal Arterial (PCA) é uma das cardiopatias congênitas mais comuns em prematuros, especialmente naqueles com peso inferior a 1.500 g e idade gestacional abaixo de 32 semanas, como o caso apresentado (30 semanas e 1.100 g). A fisiopatologia envolve um \"shunt\" (desvio) de sangue da esquerda para a direita, ou seja, da aorta para a artéria pulmonar, devido à queda da resistência vascular pulmonar após o nascimento.\n\nAnálise das alternativas:\n\na) Incorreta. Na PCA com repercussão hemodinâmica, ocorre o fenômeno do \"roubo diastólico\", em que parte do sangue que deveria seguir para a circulação sistêmica durante a diástole escapa para a artéria pulmonar através do canal arterial. Isso causa uma queda na pressão arterial diastólica, resultando em pulsos amplos (saltitantes ou em martelo-d'água), e não diminuídos. Pulsos diminuídos são característicos de estados de baixo débito cardíaco ou obstruções, como na coarctação da aorta (em membros inferiores).\n\nb) Incorreta. Como o sangue é desviado da aorta (circulação sistêmica) para a artéria pulmonar, há um hiperfluxo pulmonar. Radiologicamente, isso se traduz por um aumento da trama vascular pulmonar, cardiomegalia e, por vezes, sinais de edema pulmonar, e não hipofluxo.\n\nc) Incorreta. O desvio de sangue ocorre da aorta para a artéria pulmonar. Esse sangue extra retorna pelas veias pulmonares diretamente para o átrio esquerdo e, depois, para o ventrículo esquerdo. Portanto, a sobrecarga de volume na PCA ocorre nas câmaras esquerdas (átrio e ventrículo esquerdos), que se apresentam dilatadas ao ecocardiograma. O aumento de câmaras direitas é mais comum em comunicações interatriais (CIA) ou em casos avançados de hipertensão pulmonar.\n\nd) Correta. Este é o achado clínico clássico da PCA com repercussão. Devido à queda da pressão diastólica (pelo desvio de sangue para os pulmões) e à manutenção ou aumento da pressão sistólica (pelo aumento compensatório do volume de ejeção do ventrículo esquerdo), ocorre um aumento da pressão de pulso (diferença entre sistólica e diastólica). Clinicamente, isso é percebido como pulsos periféricos amplos, de fácil palpação e rápidos (pulsos céleres).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  },
+  {
+    "id": "AJUDA_810ac9af-5d00-4cbe-bbd0-0d65676ba451",
+    "originalId": "810ac9af-5d00-4cbe-bbd0-0d65676ba451",
+    "statement": "Escolar, sexo feminino, com 8 anos e 9 meses de idade, é levada à consulta pediátrica pelos pais, preocupados com o aparecimento de um pequeno nódulo palpável na região mamária esquerda há cerca de 1 mês. Não há relato de outras modificações no corpo, como pelos pubianos ou axilares, odor axilar. A velocidade de crescimento do último anos foi de 5 cm/ano. A estatura para idade está no escore-Z +1,2. A menina apresenta bom desenvolvimento cognitivo, e o exame físico não revela qualquer alteração. Qual é a conduta inicial mais apropriada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tranquilizar os pais, explicando que o aparecimento de broto mamário aos 8 anos e 9 mês está dentro da faixa de normalidade para o início da puberdade em meninas, e agendar reavaliação clínica em 6 a 12 meses para monitoramento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar imediatamente exames hormonais (LH, FSH, estradiol) e idade óssea para investigação de puberdade precoce central, dada a preocupação dos pais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar ultrassonografia pélvica para avaliar o volume uterino e ovariano, um indicador precoce de puberdade acelerada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar a investigação de exposição a estrógenos exógenos no ambiente doméstico, pois o aparecimento de broto mamário isolado pode ser causado por fatores ambientais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar a paciente para avaliação com endocrinologista pediátrico, considerando que qualquer sinal puberal antes dos 9 anos exige investigação especializada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ponto fundamental para resolver esta questão é o conhecimento dos marcos cronológicos da puberdade normal. Em meninas, a puberdade é considerada fisiológica (normal) quando se inicia entre os 8 e 13 anos de idade. O primeiro sinal clínico costuma ser a telarca (aparecimento do broto mamário), que corresponde ao estágio M2 de Tanner.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A paciente tem 8 anos e 9 meses, portanto, está acima da idade-limite de 8 anos para o diagnóstico de puberdade precoce. Além disso, a velocidade de crescimento está normal (5 cm/ano), não há avanço estatural desproporcional (Escore-Z +1,2) e não há outros sinais de virilização ou avanço puberal rápido. A conduta inicial correta é a orientação familiar e a observação clínica periódica para garantir que a progressão ocorra em ritmo habitual.\n\nAlternativa b) Incorreta. A dosagem de hormônios como LH, FSH e estradiol, bem como a solicitação de idade óssea, seriam indicadas caso a paciente apresentasse telarca antes dos 8 anos de idade (caracterizando puberdade precoce) ou se houvesse sinais de progressão muito rápida, o que não é o caso relatado.\n\nAlternativa c) Incorreta. A ultrassonografia pélvica é um exame complementar utilizado na investigação de puberdade precoce confirmada ou suspeita para avaliar o volume uterino e ovariano. Como a paciente iniciou a puberdade na idade correta, esse exame é desnecessário no momento inicial.\n\nAlternativa d) Incorreta. Embora a exposição a estrógenos exógenos (cremes, medicamentos, alimentos contaminados) possa causar telarca isolada, isso é mais comumente investigado em crianças muito jovens, abaixo dos 2 ou 3 anos, ou quando o quadro clínico é atípico para a idade. Na faixa etária da paciente (quase 9 anos), o desenvolvimento mamário é esperado como um processo endógeno fisiológico.\n\nAlternativa e) Incorreta. A investigação especializada por endocrinologista pediátrico é necessária quando o início dos sinais puberais ocorre antes dos 8 anos em meninas. Como o desenvolvimento começou aos 8 anos e 9 meses, o pediatra geral pode realizar o acompanhamento inicial, pois o quadro está dentro da normalidade cronológica.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  },
+  {
+    "id": "AJUDA_810c333a-0f34-48fb-b637-740d2cd0b484",
+    "originalId": "810c333a-0f34-48fb-b637-740d2cd0b484",
+    "statement": "Pedro Paulo, um homem de 41 anos, foi admitido no pronto-socorro após sofrer queimaduras extensas em um incêndio no seu local de trabalho. Ele apresentava queimaduras de segundo grau que cobriam aproximadamente 45% de sua superfície corporal total (SCT). O paciente pesava 70 kg e estava consciente e lúcido, mas sentia dor intensa e desconforto. Os sinais vitais eram: frequência cardíaca: 120 bpm; pressão arterial de 100/60 mmHg; frequência respiratória de 24 ipm e saturação de oxigênio de 94% em ar ambiente. Seu médico decidiu iniciar a reanimação hídrica imediatamente.\nA melhor abordagem inicial para a reanimação hídrica de Pedro Paulo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "administrar 2 ml/kg/%SCT de solução de Ringer Lactato nas primeiras 24 horas, dividindo o volume total igualmente ao longo do período;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administrar 8 ml/kg/%SCT de solução cristaloide de NaCl a 0,9% nas primeiras 24 horas, com um ajuste para cada %SCT adicional acima de 50%;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "administrar 6 ml/kg/%SCT de solução de Ringer Lactato nas primeiras 24 horas, com um ajuste de 10% para cada grau adicional de queimadura acima do segundo grau;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "administrar 4 ml/kg/%SCT de solução de Ringer Lactato nas primeiras 24 horas, dividindo o volume total em duas metades: uma nas primeiras 8 horas e a outra nas 16 horas seguintes;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "administrar 4 ml/kg/%SCT de solução coloidal de albumina nas primeiras 24 horas, dividindo o volume total em duas metades: uma nas primeiras 8 horas e a outra nas 16 horas seguintes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A reanimação hídrica em pacientes grandes queimados é uma das intervenções mais críticas nas primeiras horas após o trauma para prevenir o choque hipovolêmico e a falência orgânica. O parâmetro padrão-ouro utilizado mundialmente e frequentemente cobrado em concursos é a Fórmula de Parkland.\n\nA alternativa (d) está correta, pois apresenta os três pilares da reanimação hídrica inicial: o volume (4 mL/kg/%SCQ), a solução (Ringer Lactato) e o tempo de administração (metade do volume nas primeiras 8 horas e a outra metade nas 16 horas seguintes). É importante ressaltar que o tempo de 8 horas deve ser contado a partir do momento do acidente, e não da chegada ao hospital. O Ringer Lactato é o cristaloide de escolha por possuir uma composição eletrolítica mais próxima da fisiológica, reduzindo o risco de acidose hiperclorêmica em grandes infusões.\n\nA alternativa (a) está incorreta. Embora edições recentes do ATLS (10ª edição) sugiram iniciar a reanimação com 2 mL/kg/%SCQ em adultos para minimizar o risco de edema excessivo e complicações como a síndrome compartimental abdominal, a alternativa erra gravemente na dinâmica de infusão. O volume nunca deve ser dividido igualmente em 24 horas; a necessidade hídrica é muito maior nas primeiras 8 horas devido ao pico de permeabilidade capilar e à perda de fluidos.\n\nA alternativa (b) está incorreta. O volume de 8 mL/kg/%SCQ é considerado excessivo para o protocolo inicial em adultos, podendo levar a complicações graves como edema pulmonar. Além disso, o soro fisiológico (NaCl 0,9%) não é a solução preferencial para grandes volumes em queimados.\n\nA alternativa (c) está incorreta. Não existe uma fórmula-padrão na literatura de emergência que utilize o valor de 6 mL/kg/%SCQ associado a ajustes percentuais baseados no grau da queimadura para a reanimação volêmica inicial.\n\nA alternativa (e) está incorreta. O uso de coloides, como a albumina, é contraindicado nas primeiras horas (fase de ressuscitação precoce). Devido ao aumento maciço da permeabilidade capilar causado pela lesão térmica, a albumina administrada precocemente extravasaria para o espaço intersticial, aumentando a pressão oncótica no interstício e piorando o edema tecidual. O uso de coloides costuma ser considerado apenas após as primeiras 12 a 24 horas do trauma, quando a integridade capilar começa a ser restabelecida.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  },
+  {
+    "id": "AJUDA_811722a8-2a46-417e-8f55-23251bcc3c6f",
+    "originalId": "811722a8-2a46-417e-8f55-23251bcc3c6f",
+    "statement": "Lactente de 11 meses, sexo masculino, com febre (38 – 38,5 graus), tosse, coriza e recusa alimentar. Não tem doenças de base e nunca fez uso de antibióticos. No exame físico, estava em bom estado geral, eupneico, com hiperemia de orofaringe. A otoscopia apresentava abaulamento da membrana timpânica bilateralmente.\n\nPara esse paciente, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "cefalosporina oral de terceira geração, como escolha inicial de antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "anti-inflamatório, por via oral, para tratar a dor e o desconforto da criança, devendo-se evitar o uso de antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a amoxicilina, por via oral, é o antibiótico de escolha para o tratamento dessa condição, independentemente de qual vacina contra o pneumococo a criança tenha recebido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a aplicação de corticosteroide tópico tem sido recomendada para uma eficaz analgesia local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "uma miringotomia para alívio da dor e coleta de material para identificação do agente etiológico deve ser realizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um caso clássico de Otite Média Aguda (OMA) em um lactente de 11 meses. O diagnóstico de OMA é clínico, fundamentado na presença de efusão na orelha média (identificada pelo abaulamento da membrana timpânica na otoscopia) associada a sinais de inflamação aguda, como febre e dor (a recusa alimentar no lactente é frequentemente um equivalente de otalgia).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Cefalosporinas de terceira geração não são indicadas como escolha inicial para o tratamento de OMA em pacientes sem histórico de falha terapêutica ou sem alergia grave à penicilina. O tratamento empírico deve priorizar a cobertura dos patógenos mais comuns (Streptococcus pneumoniae, Haemophilus influenzae não tipável e Moraxella catarrhalis), sendo a amoxicilina o fármaco de eleição por sua eficácia e espectro direcionado.\n\nAlternativa b: Incorreta. A estratégia de observação clínica (espera vigilante por 48 a 72 horas) sem uso imediato de antibióticos é reservada para crianças acima de 2 anos com sintomas leves ou crianças de 6 meses a 2 anos com quadro unilateral e leve. Para lactentes menores de 2 anos com acometimento bilateral, como este paciente de 11 meses, as principais diretrizes nacionais e internacionais (SBP e AAP) recomendam a prescrição imediata de antibioticoterapia devido ao maior risco de complicações e falha na resolução espontânea.\n\nAlternativa c: Correta. A amoxicilina por via oral é o padrão-ouro para o início do tratamento da OMA. Embora as vacinas pneumocócicas conjugadas tenham reduzido a incidência de doenças causadas por certos sorotipos, o S. pneumoniae e o H. influenzae continuam sendo os principais agentes etiológicos. A escolha da amoxicilina independe do status vacinal na abordagem inicial, especialmente em crianças que não utilizaram antibióticos nos últimos 30 dias e não apresentam conjuntivite purulenta concomitante.\n\nAlternativa d: Incorreta. O uso de corticosteroides tópicos no conduto auditivo não possui evidência científica que sustente sua eficácia na analgesia ou no tratamento da OMA. A membrana timpânica íntegra impede que a medicação tópica atinja a orelha média. O controle da dor deve ser realizado com analgésicos sistêmicos, como paracetamol ou ibuprofeno.\n\nAlternativa e: Incorreta. A miringotomia é um procedimento cirúrgico invasivo indicado apenas em casos selecionados, como dor refratária ao tratamento clínico, complicações intratemporais ou intracranianas, neonatos com sepse ou pacientes imunodeprimidos para coleta de cultura. Não é uma conduta de primeira linha para um quadro simples de OMA em paciente com bom estado geral.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  },
+  {
+    "id": "AJUDA_8119f6a2-4f73-474d-9c2d-6cad6c8b2275",
+    "originalId": "8119f6a2-4f73-474d-9c2d-6cad6c8b2275",
+    "statement": "Uma menina de 8 anos é trazida ao consultório com queixa de lesões urticariformes recorrentes, que surgem diariamente nos últimos 3 meses. As lesões aparecem de forma espontânea, sem desencadeantes identificáveis, são pruriginosas e desaparecem dentro de 24 horas sem deixar cicatrizes. A paciente não apresenta angioedema nem outros sintomas sistêmicos, como febre ou perda de peso. A família relata que ela não usa novos medicamentos ou produtos, e não há exposição evidente a alérgenos ambientais. O exame físico é normal, exceto pelas lesões urticariformes. Exames laboratoriais básicos (hemograma, função hepática, renal e tireoidiana) são normais. Qual é a conduta mais adequada para o manejo desta criança com urticária crônica espontânea?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar corticosteroides orais em doses baixas para o controle prolongado da urticária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever anti-histamínicos de segunda geração em dose padrão, com possibilidade de escalonamento de dose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar testes cutâneos para alergias ambientais e alimentares para identificar o agente desencadeante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar imunossupressores como metotrexato ou ciclosporina, devido à refratariedade ao tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico: O quadro clínico descrito de lesões urticariformes que surgem espontaneamente e persistem por mais de seis semanas (no caso, três meses) define o diagnóstico de Urticária Crônica Espontânea (UCE). Em crianças, assim como em adultos, a UCE raramente está associada a causas externas identificáveis ou doenças sistêmicas graves quando o exame físico e os exames laboratoriais básicos são normais.\n\nAlternativa B (Correta): Segundo as diretrizes mundiais (EAACI/GA2LEN/WAO), a primeira linha de tratamento para a UCE são os anti-histamínicos H1 de segunda geração em dose padrão (ex.: cetirizina, desloratadina, fexofenadina). Eles são preferidos por não serem sedativos e apresentarem melhor perfil de segurança. Se os sintomas persistirem após 2 a 4 semanas, a conduta recomendada é a otimização da dose, podendo chegar ao escalonamento (em pediatria, o aumento da dose deve ser feito com cautela e monitoramento).\n\nAlternativa A (Incorreta): Os corticosteroides orais não devem ser usados para controle prolongado da urticária crônica. Seu uso é restrito a cursos curtos (máximo de 3 a 7 dias) apenas para o controle de exacerbações graves. O uso crônico, mesmo em doses baixas, acarreta riscos significativos, especialmente em crianças, como prejuízo no crescimento, ganho de peso e supressão do eixo adrenal.\n\nAlternativa C (Incorreta): Na UCE, a fisiopatologia é geralmente autorreativa ou autoimune, e não uma reação alérgica tipo I (mediada por IgE) a agentes externos. Testes cutâneos ou sorológicos para alimentos e alérgenos ambientais de forma rotineira são desaconselhados, pois raramente identificam a causa e podem levar a dietas restritivas desnecessárias que prejudicam o desenvolvimento da criança.\n\nAlternativa D (Incorreta): Imunossupressores como a ciclosporina são considerados terapias de quarta linha, reservados apenas para casos graves e absolutamente refratários ao tratamento com anti-histamínicos em dose otimizada e ao uso de imunobiológicos (omalizumabe). Iniciar o manejo com essas drogas sem antes tentar a terapia padrão está incorreto.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:29.065Z"
+  }
+]

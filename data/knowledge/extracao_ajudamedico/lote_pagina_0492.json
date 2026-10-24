@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_89b4b7c0-b488-4f31-a85f-be0b81d024e1",
+    "originalId": "89b4b7c0-b488-4f31-a85f-be0b81d024e1",
+    "statement": "Paciente portador de cirrose por vírus C, apresentando ascite refrataria com necessidade de paracenteses de alivio recorrentes evoluindo com piora do padrão da encefalopatia e dispneia. Realizada paracentese de alivio e diagnostica com saída de cerca de 6L de liquido castanho. Analise do liquido com 273 PMN/ mm3. O diagnóstico mais provável nesse caso é de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peritonite secundaria",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Peritonite bacteriana espontânea",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Bacteriascite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Agudização da cirrose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ascite neoplásica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O diagnóstico de Peritonite Bacteriana Espontânea (PBE) fundamenta-se na análise do líquido ascítico, sendo definido pela presença de uma contagem de polimorfonucleares (PMN) igual ou superior a 250 células/mm³. No caso clínico descrito, o paciente apresenta 273 PMN/mm³, o que confirma a condição. Além disso, a piora da encefalopatia hepática é uma manifestação clínica frequente e, muitas vezes, o único sinal de um processo infeccioso em pacientes cirróticos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A peritonite secundária é sugerida quando há uma fonte intra-abdominal de infecção, como a perfuração de uma víscera oca. Ela costuma apresentar contagens de PMN extremamente elevadas, frequentemente acima de 10.000/mm³, e critérios bioquímicos específicos no líquido ascítico, como níveis muito baixos de glicose e LDH elevado, o que não foi relatado.\n\nAlternativa b) Correta. É o diagnóstico mais provável, pois o paciente é cirrótico conhecido e apresenta sinais sistêmicos de descompensação (encefalopatia e dispneia). O resultado da paracentese com 273 PMN/mm³ ultrapassa o limite de 250 células/mm³, estabelecendo o diagnóstico de PBE, que é a infecção bacteriana mais comum nessa população.\n\nAlternativa c) Incorreta. A bacteriascite é caracterizada pelo achado de cultura positiva no líquido ascítico, porém com uma contagem de polimorfonucleares inferior a 250/mm³. Como o valor encontrado foi 273/mm³, o quadro já se classifica como peritonite.\n\nAlternativa d) Incorreta. Agudização da cirrose é um termo genérico para qualquer descompensação do quadro clínico. Embora a PBE seja um gatilho para a agudização, a questão solicita o diagnóstico específico baseado no achado laboratorial da paracentese.\n\nAlternativa e) Incorreta. Na ascite neoplásica, a contagem de PMN costuma ser baixa, com predomínio de células mononucleares (linfócitos). Além disso, o líquido geralmente apresenta proteínas totais elevadas e a confirmação é feita pela citologia oncótica positiva, o que não se correlaciona com o quadro de um cirrótico por vírus C com neutrofilia no líquido.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.868Z"
+  },
+  {
+    "id": "AJUDA_89beadfb-c4dd-4e9d-8cd2-11468d41ba64",
+    "originalId": "89beadfb-c4dd-4e9d-8cd2-11468d41ba64",
+    "statement": "Na primeira consulta de rotina de um recém-nascido de 20 dias de vida, a mãe refere estar preocupada, pois acha que seu bebê é estrábico. A criança nasceu a termo de parto vaginal com aplicação de fórceps, boletim de Apgar de 7 no 1º minuto e 9 no 5º minuto, com peso de 2.980 g. Está em aleitamento materno exclusivo. Durante a consulta, a médica teve a oportunidade de observar dois momentos em que o paciente apresentou um desvio ocular convergente, bilateral e simultâneo, com duração de cerca de 3 segundos. Não foi observado nistagmo, as pupilas mostraram-se isocóricas e fotorreagentes e o teste do reflexo vermelho executado, durante a consulta, estava presente bilateralmente. O restante do exame clínico não revelou alterações significativas. Neste momento, a conduta frente à preocupação materna é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar ao oftalmologista pediátrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar ultrassonografia transfontanela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar exame de fundo de olho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observar clinicamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um recém-nascido de 20 dias com episódios intermitentes e breves de desvio ocular convergente (estrabismo). Para resolver essa questão, é fundamental conhecer o desenvolvimento visual normal na infância.\n\nO estrabismo intermitente é considerado um achado fisiológico nos primeiros meses de vida, especificamente até os 4 a 6 meses de idade. Isso ocorre devido à imaturidade do sistema nervoso central e da coordenação dos músculos extraoculares, que ainda não possuem o controle fino necessário para manter o alinhamento ocular binocular constante. \n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O encaminhamento ao oftalmologista pediátrico seria indicado se o desvio fosse fixo (constante), se houvesse alteração no teste do reflexo vermelho, se o estrabismo persistisse após os 6 meses de vida ou se houvesse outros sinais de alerta neurológico. No caso apresentado, o desvio é intermitente e o exame físico é normal.\n\nAlternativa b) Incorreta. A ultrassonografia transfontanela é um exame de imagem utilizado para avaliar estruturas cerebrais em recém-nascidos, buscando hemorragias, malformações ou hidrocefalia. O quadro descrito é puramente funcional e esperado para a idade, sem sinais de hipertensão intracraniana ou déficits neurológicos que justifiquem o exame.\n\nAlternativa c) Incorreta. O exame de fundo de olho (mapeamento de retina) é um exame especializado. Na atenção primária, o médico realizou o teste do reflexo vermelho (Teste do Olhinho), que estava normal bilateralmente. Isso afasta as principais causas orgânicas graves que exigiriam avaliação imediata do fundo de olho, como o retinoblastoma ou catarata congênita.\n\nAlternativa d) Correta. Como o paciente tem apenas 20 dias de vida, apresenta desvios intermitentes e curtos, possui reflexo fotomotor preservado e teste do reflexo vermelho normal, a conduta correta é a observação clínica e a orientação materna. Deve-se explicar à mãe que essa condição é comum pela imaturidade do bebê e que a tendência é a resolução espontânea com o passar dos meses. Caso o desvio se torne permanente ou persista além do primeiro semestre de vida, uma reavaliação será necessária.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.868Z"
+  },
+  {
+    "id": "AJUDA_89c42ed9-f267-4148-b87e-fb4093ea6676",
+    "originalId": "89c42ed9-f267-4148-b87e-fb4093ea6676",
+    "statement": "Menino de 1 ano é levado pelos pais para consulta de puericultura em Unidade Básica de Saúde. Eles referem preocupação com a vacina tríplice viral e informam que a criança apresentou reações leves após receber aplicações de outras vacinas. Relatam também que, pesquisando sobre o tema em redes sociais, assistiram a vídeos que associavam a vacina tríplice viral ao desenvolvimento do transtorno do espectro autista (TEA). Receosos, hesitam em imunizar o filho.\nQual é a abordagem a ser realizada com esses pais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Explicar que há baixa ocorrência de TEA em crianças vacinadas e encaminhar paciente para a atualização vacinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orientar sobre a importância das vacinas e reforçar a superioridade de seus benefícios em relação à possibilidade de TEA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pesquisar sintomas preditores de TEA na criança e, em caso de resultado negativo, continuar o protocolo de vacinação segura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acolher a preocupação dos familiares e fornecer informações sobre a ausência de associação entre TEA e vacinas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Tema central: hesitação vacinal e comunicação médico-família.\n\nA questão aborda um cenário frequente na puericultura: pais hesitantes por desinformação nas redes sociais. A abordagem recomendada pela OMS, pela Sociedade Brasileira de Pediatria e pela literatura de comunicação em saúde tem dois pilares:\n\n1. Acolher a preocupação, com escuta ativa, empatia e sem julgamento. Confrontar ou desqualificar os pais tende a reforçar a hesitação e romper o vínculo.\n2. Fornecer informação correta, baseada em evidências.\n\nO mito da associação entre a vacina tríplice viral (sarampo, caxumba e rubéola) e o autismo surgiu em 1998, com o artigo de Andrew Wakefield na revista The Lancet. O estudo tinha apenas 12 crianças, apresentava fraude de dados e conflito de interesses não declarado. Foi retratado em 2010, e Wakefield perdeu o registro médico. Desde então, grandes estudos de coorte e metanálises, com milhões de crianças, demonstraram ausência de associação entre vacinas e TEA. Um exemplo é a coorte dinamarquesa de Hviid (2019), com mais de 650 mil crianças, que não encontrou aumento de risco nem em subgrupos suscetíveis.\n\nO fato de os sinais de TEA costumarem ser percebidos entre 12 e 18 meses, mesma faixa da aplicação da tríplice viral, explica a falsa percepção de causalidade: é uma coincidência temporal. Quanto às reações leves prévias (febre, dor local), elas não contraindicam a vacinação.\n\nAnálise das alternativas:\n\na) Incorreta. Dizer que há \"baixa ocorrência de TEA em crianças vacinadas\" sugere que existe algum risco, ainda que pequeno, atribuível à vacina. Isso reforça indiretamente o mito. Além disso, a alternativa pula o acolhimento e parte direto para o encaminhamento.\n\nb) Incorreta. Falar em \"superioridade dos benefícios em relação à possibilidade de TEA\" admite que o TEA seria um efeito adverso possível da vacina, o que é falso. O correto é afirmar que não há associação, e não fazer uma análise de risco-benefício envolvendo o autismo.\n\nc) Incorreta. Rastrear sinais de TEA como condição para vacinar legitima a ideia de que a vacina poderia desencadear ou piorar o autismo. TEA não é contraindicação à tríplice viral. O rastreio do desenvolvimento, inclusive o M-CHAT aos 16-30 meses, faz parte da puericultura de rotina, independentemente da vacinação.\n\nd) Correta. Combina o acolhimento empático da preocupação dos pais com informação baseada em evidências sobre a inexistência de associação entre vacinas e TEA. É a estratégia mais eficaz para reverter a hesitação vacinal e manter o vínculo com a família, permitindo a vacinação.\n\nResposta: alternativa D.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Imunizações",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.868Z"
+  },
+  {
+    "id": "AJUDA_89c4f6ec-2caf-4b9a-aa1d-5370af0f03a6",
+    "originalId": "89c4f6ec-2caf-4b9a-aa1d-5370af0f03a6",
+    "statement": "Paciente masculino, de 30 anos, que havia retornado de viagem ao Cerrado (Goiás), foi diagnosticado com febre amarela. À avaliação inicial, apresentava vômitos, diarreia e dor abdominal. Os exames laboratoriais revelaram AST de 580 U/l, creatinina de 1,4 mg/dl e plaquetas de 45.000/mm3. Com base nas informações, qual a classificação da febre amarela?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Forma hepatorrenal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Forma leve",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Forma moderada",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Forma grave",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação clínica da febre amarela é fundamental para o manejo adequado do paciente e baseia-se na intensidade dos sintomas e nas alterações laboratoriais. De acordo com o Guia de Vigilância em Saúde do Ministério da Saúde, a doença pode ser dividida em quatro formas principais: leve, moderada, grave e maligna.\n\nAnálise dos dados do paciente:\nO paciente apresenta sintomas gastrointestinais importantes (vômitos, diarreia e dor abdominal). Do ponto de vista laboratorial, possui uma AST de 580 U/L (elevada, mas abaixo de 1000 U/L), creatinina de 1,4 mg/dL (discretamente alterada) e plaquetopenia significativa (45.000/mm³).\n\nAnálise das alternativas:\n\na) Incorreta. A forma hepatorrenal, também conhecida como forma maligna, é o quadro mais dramático da doença. Caracteriza-se por icterícia intensa, manifestações hemorrágicas graves, oligúria ou anúria (insuficiência renal aguda grave) e alterações laboratoriais extremas, como transaminases frequentemente acima de 2000 U/L e uremia elevada. O paciente em questão ainda não apresenta esse grau de falência orgânica.\n\nb) Incorreta. A forma leve é caracterizada por sintomas inespecíficos, como febre, cefaleia e mialgia, sem a presença de icterícia, vômitos persistentes ou alterações laboratoriais significativas de órgãos-alvo. A presença de dor abdominal intensa e plaquetopenia de 45.000/mm³ retira o paciente desta classificação.\n\nc) Correta. A forma moderada é definida pela presença de febre, cefaleia e sintomas gastrointestinais mais evidentes (como vômitos e dor abdominal). Laboratorialmente, observa-se elevação das transaminases (geralmente entre 500 e 1000 U/L) e plaquetopenia. O quadro descrito se encaixa perfeitamente nesta categoria, pois os níveis de AST (580 U/L) e a sintomatologia abdominal são característicos dessa fase intermediária, antes da progressão para formas francamente graves.\n\nd) Incorreta. A forma grave é marcada pela tríade clássica de icterícia, oligúria e fenômenos hemorrágicos. Laboratorialmente, espera-se uma elevação mais acentuada das transaminases (frequentemente AST ou ALT acima de 1000 U/L) e alterações mais profundas da função renal e da coagulação. Embora o paciente tenha plaquetopenia, ele ainda não preenche os critérios de disfunção orgânica grave ou icterícia franca descritos nos protocolos para essa classificação.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.868Z"
+  },
+  {
+    "id": "AJUDA_89c59240-09b8-485c-8e9d-489f9f407619",
+    "originalId": "89c59240-09b8-485c-8e9d-489f9f407619",
+    "statement": "Pré-escolar, cinco anos de idade, do sexo feminino, chega à emergência pediátrica acompanhada de sua mãe, que refere que a menina há dois dias parece estar com o “rosto mais inchado” e mal-estar. Exame físico: bom estado geral, com edema bipalpebral; ausculta cardíaca normal; PA: 130x90mmHg; ausculta pulmonar: estertores subcrepitantes em bases; abdome normotenso; fígado: 2cm do rebordo costal direito; membros inferiores: edema 2+/4+ e pequenas lesões crostosas. Exames laboratoriais: exame de urina: densidade 1025; pH 5,5; leucócitos 12/campo, hemácias 50/campo, albumina +. Ureia 12mg/dl e creatinina 0,4mg/dl. Radiografia de tórax: aumento discreto de área cardíaca. A hipótese diagnóstica mais provável e o tratamento inicial para o caso, são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pielonefrite / antibiótico venoso;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome nefrótica / prednisona via oral;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome nefrótica / antibiótico devido à possibilidade de peritonite bacteriana espontânea;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome nefrítica / restrição hídrica, diurético, avaliar a necessidade de anti-hipertensivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\n\nO caso descreve uma criança de cinco anos com a tríade clássica da síndrome nefrítica: edema (palpebral e de membros inferiores), hipertensão arterial (130x90 mmHg é um valor significativamente elevado para essa faixa etária) e hematúria (50 hemácias por campo no exame de urina). A presença de lesões crostosas na pele é um dado fundamental, pois sugere uma piodermite prévia, apontando para a Glomerulonefrite Difusa Aguda (GNDA) pós-estreptocócica como principal etiologia. Os achados de estertores pulmonares, fígado palpável a 2 cm do rebordo costal e aumento da área cardíaca no raio X indicam que a criança apresenta sinais de sobrecarga de volume (congestão volêmica), que é a principal complicação da queda da filtração glomerular nesta síndrome.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A pielonefrite é uma infecção do trato urinário superior que se manifesta tipicamente com febre alta, dor lombar e queda do estado geral. Embora possa haver leucocitúria e hematúria, ela não evolui com a tríade nefrítica (edema, hipertensão e hematúria) nem com sinais de congestão sistêmica.\n\nAlternativa b) Incorreta. A síndrome nefrótica se caracteriza por edema acentuado, mas sua marca laboratorial é a proteinúria maciça (normalmente 3+ ou 4+ no exame de urina) e hipoalbuminemia severa. No caso clínico, a proteinúria é discreta (apenas 1+) e a presença de hipertensão e hematúria glomerular direciona o diagnóstico para síndrome nefrítica.\n\nAlternativa c) Incorreta. Esta alternativa erra no diagnóstico (não é síndrome nefrótica) e na conduta. O uso de antibióticos na síndrome nefrótica só ocorreria em complicações específicas, como a peritonite bacteriana espontânea, que se manifestaria com dor abdominal, febre e ascite, sintomas ausentes no caso.\n\nAlternativa d) Correta. O diagnóstico é de síndrome nefrítica. O tratamento fundamental nessa fase aguda visa controlar a hipervolemia, que é a causa da hipertensão e da congestão pulmonar. As medidas iniciais incluem restrição hídrica, dieta hipossódica e uso de diuréticos de alça (como a furosemida) para promover a excreção de sódio e água. O uso de anti-hipertensivos deve ser avaliado caso a pressão arterial não normalize apenas com a diureticoterapia.\n\nGabarito: Alternativa d.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.868Z"
+  },
+  {
+    "id": "AJUDA_89c9a24e-3c01-489e-9628-74245fd46137",
+    "originalId": "89c9a24e-3c01-489e-9628-74245fd46137",
+    "statement": "Paciente masculino, 70 anos, procura o pronto-socorro com queixa de estar evacuando sangue há aproximadamente 1 semana Refere que o sangue é de coloração vermelho vivo, observada no papel higiênico e às vezes gotejando no vaso sanitário. Nega dor abdominal, alteração do hábito intestinal, perda de peso ou outros sintomas associados. Ao exame físico, apresenta-se em bom estado geral, normocorado, hidratado, com abdome normotenso e indolor à palpação. Qual das alternativas abaixo descreve a causa da hemorragia digestiva e o exame diagnóstico mais adequado para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diverticulose - colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neoplasia colorretal - tomografia computadorizada de abdome e pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Duodenite enantematosa - endoscopia digestiva alta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hemorroidas - retossigmoidoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico de hemorragia digestiva baixa de provável origem orificial. O paciente é um idoso com sangramento vermelho-vivo, caracterizado por manchas no papel higiênico e gotejamento no vaso sanitário, sem sintomas sistêmicos ou dor.\n\nAlternativa a) Incorreta. A diverticulose é a principal causa de hemorragia digestiva baixa volumosa em idosos. No entanto, o sangramento diverticular costuma ser arterial, súbito, de volume moderado a grande e geralmente indolor, não se manifestando tipicamente como pequenos vestígios no papel higiênico ou gotejamento crônico por uma semana.\n\nAlternativa b) Incorreta. Embora a neoplasia colorretal seja um diagnóstico diferencial importante em pacientes de 70 anos, ela costuma vir acompanhada de sinais de alerta como perda de peso, anemia, alteração do hábito intestinal (constipação ou diarreia) ou fezes em fita. Além disso, a tomografia computadorizada não é o exame de escolha para o diagnóstico inicial de câncer de intestino, sendo a colonoscopia o padrão-ouro para visualização e biópsia.\n\nAlternativa c) Incorreta. A duodenite enantematosa causaria uma hemorragia digestiva alta. Nesses casos, o sangue passaria por todo o trato gastrointestinal, sofrendo digestão e manifestando-se como melena (fezes escuras, pastosas e com odor fétido) ou através de hematêmese (vômitos com sangue). O sangue vermelho-vivo e isolado no papel higiênico indica uma fonte muito baixa, próxima ao ânus.\n\nAlternativa d) Correta. A descrição de sangue vermelho-vivo que pinga no vaso ou aparece no papel higiênico após a evacuação, sem dor associada, é a apresentação típica de hemorroidas internas. Para o diagnóstico dessas lesões e avaliação da mucosa retal distal, a retossigmoidoscopia (ou anoscopia) é um exame inicial adequado, rápido e capaz de identificar a causa orificial. Embora o rastreio de câncer colorretal com colonoscopia seja indicado para este paciente devido à idade, a alternativa descreve corretamente a etiologia e o exame focado na queixa imediata.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Hemorragia Digestiva Baixa",
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.868Z"
+  },
+  {
+    "id": "AJUDA_89d4b732-00fd-4253-bce2-72d5e019073a",
+    "originalId": "89d4b732-00fd-4253-bce2-72d5e019073a",
+    "statement": "Sobre a Lei N° 8.080, de 19 de setembro de 1990, que dispõe sobre as condições para a promoção, proteção e recuperação da saúde, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Um dos objetivos do SUS é a execução de ações de pesquisas epidemiológicas para melhor manejo de campanhas de prevenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O conjunto de ações e serviços de saúde, prestados por órgãos e instituições públicas e privadas, constitui o Sistema Único de Saúde (SUS), fiscalizado pelo Poder Público.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O dever do Estado de garantir a saúde consiste na formulação de políticas econômicas e sociais que visem à prevenção de doenças e no estabelecimento de condições que assegurem acesso à população de baixa renda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estão incluídas no campo de atuação do SUS a execução de ações: de vigilância sanitária e epidemiológica; de saúde do trabalhador; de assistência terapêutica integral, inclusive farmacêutica; de saúde bucal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Lei nº 8.080, de 1990, conhecida como a primeira Lei Orgânica da Saúde, detalha a organização e o funcionamento do Sistema Único de Saúde (SUS). Abaixo, a análise detalhada de cada alternativa:\n\nALTERNATIVA A (INCORRETA): Os objetivos do SUS estão definidos no artigo 5º da lei e são três: I) a identificação e divulgação dos fatores condicionantes e determinantes da saúde; II) a formulação de política de saúde destinada a promover, nos campos econômico e social, a redução de riscos de doenças; III) a assistência às pessoas por intermédio de ações de promoção, proteção e recuperação da saúde. Embora o SUS realize pesquisas epidemiológicas, elas fazem parte de suas competências e do campo de atuação, mas não estão listadas como um dos objetivos primordiais do artigo 5º.\n\nALTERNATIVA B (INCORRETA): De acordo com o artigo 4º, o SUS é constituído pelo conjunto de ações e serviços de saúde prestados por órgãos e instituições públicas federais, estaduais e municipais, da Administração direta e indireta e das fundações mantidas pelo Poder Público. A iniciativa privada não \"constitui\" o SUS da mesma forma que o setor público; ela pode participar do sistema apenas de forma complementar, quando as disponibilidades do setor público forem insuficientes, mediante contrato ou convênio (artigo 4º, parágrafo 2º).\n\nALTERNATIVA C (INCORRETA): Esta alternativa fere o princípio constitucional e legal da universalidade. O artigo 2º, parágrafo 1º, estabelece que o dever do Estado consiste na formulação de políticas que assegurem o acesso universal e igualitário, e não restrito à população de baixa renda. O SUS é um sistema para todos os cidadãos brasileiros, independentemente da condição socioeconômica.\n\nALTERNATIVA D (CORRETA): Esta alternativa está em perfeita consonância com o artigo 6º, inciso I, da Lei nº 8.080/1990. O campo de atuação do SUS envolve, obrigatoriamente, a execução de ações de vigilância sanitária, vigilância epidemiológica, saúde do trabalhador e assistência terapêutica integral, inclusive farmacêutica. É importante ressaltar que a \"saúde bucal\" foi explicitamente incluída no texto do artigo 6º, inciso I (alínea e), pela Lei nº 14.572, de 2023, consolidando legalmente o que já era preconizado pelas políticas públicas de saúde brasileiras.\n\nGABARITO: LETRA D.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.868Z"
+  },
+  {
+    "id": "AJUDA_89de7c38-59f7-4574-8dc9-f2fbbd1f85d2",
+    "originalId": "89de7c38-59f7-4574-8dc9-f2fbbd1f85d2",
+    "statement": "Homem, 60 anos de idade, etilista crônico, dá entrada no PS apresentando queixa de coloração amarelada na pele e nos olhos. Ao exame físico, apresenta PA de 140x90 mmHg, FC de 78 bpm, FR 16 ipm, saturação de oxigênio de 98%, temperatura axila de 35,6ºC, icterícia em pele e escleras 3+/4+. Foram solicitados exames laboratoriais, que evidenciaram Hb 11,1 g/dL, Leucócitos 4450 células/mm³, Plaquetas 90 mil/mm³, Albumina 2,9 g/dL, INR 1,6, TGO 210, TGP 95, Fosfatase alcalina 56, Gama GT 112, bilirrubinas totais 4,7 (BD 3,6, BI 1,1).\n\nQuais sinais de exame físico são esperados encontrar nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sinal de Murphy, Sinal do Piparote e Acantose Nigricans.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tríade de Charcot, Semicírculo de Skoda e Nódulo de Virchow.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Eritema palmar, Teleangiectasia, Ginecomastia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Atrofia testicular, Macicez móvel e Giordano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente em questão é um homem de 60 anos, etilista crônico, que apresenta um quadro clássico de hepatopatia crônica, muito provavelmente cirrose hepática de etiologia alcoólica. As evidências laboratoriais que sustentam esse diagnóstico são:\n1. Inversão da relação TGO/TGP (AST/ALT): O valor de TGO (210) é mais que o dobro da TGP (95), padrão típico da agressão hepática pelo álcool.\n2. Sinais de insuficiência hepatocelular: Queda da albumina (2,9 g/dL) e alargamento do INR (1,6).\n3. Sinais de hipertensão portal: Plaquetopenia (90.000/mm³), sugerindo hiperesplenismo.\n4. Icterícia às custas de bilirrubina direta, indicando dificuldade de excreção biliar pela desestruturação do parênquima hepático.\n\nAvaliação das Alternativas:\n\na) Incorreta. O sinal de Murphy é indicativo de colecistite aguda (interrupção da inspiração à palpação do ponto cístico). O sinal do piparote indica ascite volumosa, que até poderia estar presente, mas a acantose nigricans é um sinal de resistência insulínica ou neoplasia oculta, não sendo um estigma clássico de cirrose.\n\nb) Incorreta. A tríade de Charcot (febre, icterícia e dor abdominal) indica colangite aguda, o que não condiz com o quadro afebril do paciente. O semicírculo de Skoda é encontrado na percussão do tórax em casos de derrame pleural. O nódulo de Virchow (supraclavicular esquerdo) sugere metástase de neoplasias abdominais, especialmente gástrica.\n\nc) Correta. Estas três manifestações são conhecidas como estigmas de hepatopatia crônica. O eritema palmar e as telangiectasias (spider angiomas) ocorrem devido a alterações na vasculatura e ao hiperestrogenismo (o fígado doente não consegue metabolizar o estrogênio). A ginecomastia também é decorrente desse desequilíbrio hormonal (aumento da relação estrogênio/testosterona), comum em pacientes cirróticos, especialmente alcoólatras.\n\nd) Incorreta. Embora a atrofia testicular e a macicez móvel (sinal de ascite) possam ser encontradas em cirróticos, o sinal de Giordano (dor à punho-percussão lombar) é indicativo de pielonefrite ou litíase urinária, não tendo relação com o quadro hepático descrito.\n\nConclusão:\nO examinador busca identificar o conhecimento do aluno sobre os estigmas periféricos de insuficiência hepática e hiperestrogenismo. A alternativa C reúne os sinais físicos mais específicos para o diagnóstico de cirrose hepática no exame físico.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.868Z"
+  },
+  {
+    "id": "AJUDA_89e62ab2-302a-4464-8d28-edc4f29a86b0",
+    "originalId": "89e62ab2-302a-4464-8d28-edc4f29a86b0",
+    "statement": "Mulher de 48 anos está em seguimento ambulatorial devido a quadro de poliartrite simétrica de grandes e pequenas articulações iniciada há 6 meses. Exames complementares evidenciando parâmetros de atividade inflamatória elevados e fator reumatóide fortemente positivo. Diante do principal diagnóstico neste caso, qual das medicações abaixo é considerada modificadora do curso da doença:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ciclofosfamida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Naproxeno",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Azatioprina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidroxicloroquina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Pregabalina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado (mulher de 48 anos, poliartrite simétrica de grandes e pequenas articulações com duração superior a 6 semanas, fator reumatoide positivo e provas de atividade inflamatória elevadas) é diagnóstico de Artrite Reumatoide (AR). O tratamento da AR baseia-se no uso das Drogas Modificadoras do Curso da Doença (DMARDs ou MMCDs), que têm a capacidade de reduzir a atividade inflamatória, prevenir a erosão óssea e evitar a incapacidade funcional.\n\nAbaixo, a análise de cada alternativa:\n\na) Ciclofosfamida: Incorreta. É um agente alquilante citotóxico potente, utilizado em casos graves de lúpus eritematoso sistêmico ou vasculites sistêmicas. Na Artrite Reumatoide, seu uso é excepcional, reservado apenas para complicações extra-articulares muito graves, como a vasculite reumatoide sistêmica, não sendo considerada uma droga modificadora padrão para o quadro articular.\n\nb) Naproxeno: Incorreta. O naproxeno é um anti-inflamatório não esteroide (AINE). Embora seja útil no controle sintomático inicial da dor e do edema articular, os AINEs não têm a capacidade de interferir na progressão da doença ou evitar o dano radiológico (erosões). Portanto, não são modificadores do curso da doença.\n\nc) Azatioprina: Incorreta. É um imunossupressor que pode ser utilizado em diversas doenças autoimunes, mas não faz parte do grupo principal de drogas modificadoras de primeira ou segunda linha para a artrite reumatoide. Seu papel na AR é limitado e geralmente focado em manifestações extra-articulares específicas.\n\nd) Hidroxicloroquina: Correta. É classificada como uma Droga Modificadora do Curso da Doença (DMARD) sintética convencional. É indicada para casos de AR com baixa atividade de doença ou como parte da \"terapia tripla\" (associada ao metotrexato e à sulfassalazina). Entre as opções listadas, é a única droga consagrada no manejo da AR com o objetivo de modificar o curso natural da patologia.\n\ne) Pregabalina: Incorreta. É um modulador de canais de cálcio utilizado principalmente para dor neuropática e fibromialgia. Não possui efeito anti-inflamatório e não atua no mecanismo fisiopatológico da Artrite Reumatoide, servindo apenas como adjuvante no manejo de dor crônica, se necessário.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Artrite Reumatoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.868Z"
+  },
+  {
+    "id": "AJUDA_89e64416-824d-49d7-a0aa-faf55c2e6fd3",
+    "originalId": "89e64416-824d-49d7-a0aa-faf55c2e6fd3",
+    "statement": "Uma criança de 8 anos é atendida no ambulatório geral de pediatria devido a baixo rendimento escolar. Há 3 meses, vem sendo observadas dificuldades como falta de atenção nos afazeres escolares e domésticos, dificuldade em manter a concentração durante as atividades de lazer e nas aulas de educação física, além de dificuldade em seguir instruções e concluir os deveres. A mãe relata que o comportamento desatento é frequente e que a criança rotineiramente perde objetos e se distrai facilmente com estímulos externos. O pré natal e parto foram sem intercorrências e não tem antecedentes familiares de doenças neurológicas. O exame neurológico não tem sinais de focalização. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar metilfenidato 30 minutos antes de ir para escola.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter seguimento e solicitar relatórios acadêmicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar eletroencefalograma com fotoestimulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar carbamazepina e checar níveis séricos no retorno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito sugere a hipótese de Transtorno de Déficit de Atenção e Hiperatividade (TDAH). No entanto, para a confirmação diagnóstica segundo os critérios do DSM-5, é necessário que os sintomas de desatenção e/ou hiperatividade-impulsividade estejam presentes por, no mínimo, 6 meses, em pelo menos dois ambientes diferentes (como casa e escola), e que causem prejuízo funcional.\n\nAlternativa a) Incorreta. O uso de estimulantes, como o metilfenidato, é indicado apenas após a confirmação diagnóstica. No caso apresentado, a criança apresenta sintomas há apenas 3 meses, o que não preenche o critério temporal de 6 meses exigido pelo DSM-5. Além disso, o diagnóstico de TDAH é clínico e requer uma avaliação abrangente antes do início da farmacoterapia.\n\nAlternativa b) Correta. Esta é a conduta mais adequada no momento por dois motivos principais: 1) O tempo de evolução dos sintomas (3 meses) é insuficiente para o diagnóstico definitivo, exigindo acompanhamento (seguimento) para observar a persistência do quadro; 2) Para o diagnóstico de TDAH, os sintomas devem manifestar-se em múltiplos contextos. Solicitar relatórios acadêmicos é fundamental para documentar o comportamento da criança no ambiente escolar e confirmar se a desatenção é onipresente.\n\nAlternativa c) Incorreta. O eletroencefalograma (EEG) não faz parte da investigação rotineira do TDAH. Ele seria indicado apenas se houvesse suspeita de crises epilépticas, como crises de ausência, que podem simular episódios de desatenção. Contudo, o relato de perda de objetos e dificuldade em seguir instruções aponta mais para um transtorno neurobiológico do desenvolvimento do que para eventos paroxísticos.\n\nAlternativa d) Incorreta. A carbamazepina é um anticonvulsivante e estabilizador de humor, não sendo utilizada no tratamento do TDAH. Além disso, iniciar qualquer medicação psicotrópica sem um diagnóstico firmado e sem o preenchimento dos critérios clínicos e temporais é uma conduta inadequada.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:39.869Z"
+  }
+]

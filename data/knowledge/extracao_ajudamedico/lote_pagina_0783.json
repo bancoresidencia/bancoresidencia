@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_da849feb-bf0a-40c4-906c-7ade69e36145",
+    "originalId": "da849feb-bf0a-40c4-906c-7ade69e36145",
+    "statement": "Homem, 40 anos, tabagista, usuário e com dependência ao álcool, apresenta tosse perda de peso e sudorese noturna. Baciloscopia positiva. Inicia tratamento com RHZE. Após 2 semanas, houve melhora parcial dos sintomais iniciais e iniciou quadro sugestivo de neuropatia periférica. Qual medida deve ser instituída para o tratamento deste quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uso piridoxina (vitamina B6);",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Uso de sulfametoxazol-trimetoprim;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspensão imediata da rifampicina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso de ácido folínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O paciente em questão iniciou o tratamento padrão para tuberculose com o esquema RHZE (Rifampicina, Isoniazida, Pirazinamida e Etambutol) e desenvolveu neuropatia periférica. Esse é um efeito adverso clássico da isoniazida, que compete com a piridoxina (vitamina B6) e aumenta sua excreção renal, levando à carência dessa vitamina e consequente lesão neural. Pacientes com etilismo crônico, desnutrição, diabetes mellitus ou gestantes apresentam risco aumentado para essa complicação.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): O tratamento e a profilaxia da neuropatia periférica induzida pela isoniazida são feitos com a reposição de piridoxina (vitamina B6), geralmente na dose de 50 mg/dia para tratamento (ou doses menores para profilaxia em grupos de risco), sem a necessidade de suspender o esquema tuberculostático.\n\nAlternativa B (Incorreta): O sulfametoxazol-trimetoprim é um antimicrobiano indicado para outras patologias e profilaxias (como para Pneumocystis jirovecii), não tendo nenhum papel no manejo da neuropatia periférica.\n\nAlternativa C (Incorreta): A rifampicina não é a responsável pela neuropatia periférica (a causa é a isoniazida). Além disso, os efeitos adversos mais comuns da rifampicina são alterações gastrointestinais, hepatotoxicidade, reações imunoalérgicas e urina alaranjada. Não há indicação de suspensão do esquema diante de neuropatia responsiva à piridoxina.\n\nAlternativa D (Incorreta): O ácido folínico é utilizado para resgate e redução de toxicidade de antifolatos (como metotrexato e pirimetamina), não atuando no mecanismo de neurotoxicidade induzido pela isoniazida, que envolve especificamente a vitamina B6.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Dependência Química",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:32.670Z"
+  },
+  {
+    "id": "AJUDA_da886e97-a544-486d-9a60-65a9f85481be",
+    "originalId": "da886e97-a544-486d-9a60-65a9f85481be",
+    "statement": "Secundigesta de 30 anos, com 33 semanas, chega ao pronto-socorro com queixa de forte dor de cabeça, dor em abdome superior e distúrbio visual (prováveis escotomas) desde o dia anterior pela manhã. Ao exame físico: PA: 160x110 mmHg (em duas aferições, intervalo de 30 minutos), edema importante em membros inferiores, ausculta fetal BCF presente, vitalidade fetal preservada. Exames: proteinúria de 24h: 3,2 g/24h, plaquetas: 80.000/mm³, TGO/TGP: elevadas 3 vezes, DHL: elevado, creatinina sérica: 1,5 mg/dL. A avaliação desse caso indica o diagnóstico de",
+    "options": [
+      {
+        "id": "A",
+        "text": "pré-eclâmpsia sem sinais de gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pré-eclâmpsia com sinais de gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "síndrome HELLP.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "hipertensão gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente apresenta um quadro de pré-eclâmpsia, definido pela hipertensão arterial (PA 160x110 mmHg) associada a proteinúria significativa (3,2 g/24h) em gestante com mais de 20 semanas de idade gestacional. O quadro é agravado por sintomas de iminência de eclâmpsia (cefaleia e escotomas) e dor em abdome superior, que sugere distensão da cápsula de Glisson (envolvimento hepático). Os exames laboratoriais revelam disfunção de múltiplos órgãos, incluindo insuficiência renal (creatinina 1,5 mg/dL).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O quadro é claramente de gravidade devido aos níveis pressóricos (PA diastólica maior ou igual a 110 mmHg), aos sintomas neurológicos e visualização de alterações laboratoriais severas, como plaquetopenia e elevação de creatinina.\n\nAlternativa b) Incorreta. Embora a paciente tenha uma pré-eclâmpsia com sinais de gravidade, os achados laboratoriais preenchem critérios específicos para um diagnóstico mais preciso e sindrômico, que é solicitado em questões de provas de residência quando a tríade laboratorial está completa.\n\nAlternativa c) Correta. O diagnóstico é de Síndrome HELLP, que é uma forma grave de pré-eclâmpsia caracterizada por três achados fundamentais presentes no caso: 1) Hemólise, indicada pelo DHL (LDH) elevado; 2) Elevação de enzimas hepáticas (TGO e TGP elevadas em 3 vezes o valor normal); 3) Plaquetopenia (plaquetas abaixo de 100.000/mm3, no caso, 80.000/mm3).\n\nAlternativa d) Incorreta. A hipertensão gestacional é definida apenas pelo aumento da pressão arterial após a 20ª semana de gestação em paciente previamente normotensa, sem a presença de proteinúria ou sinais de disfunção orgânica.\n\nAlternativa e) Incorreta. A eclâmpsia caracteriza-se pela presença de convulsões tônico-clônicas generalizadas em uma gestante com pré-eclâmpsia, o que não ocorreu no relato clínico apresentado.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:32.670Z"
+  },
+  {
+    "id": "AJUDA_da8a17f9-5082-4e33-8b80-a829fb9797c2",
+    "originalId": "da8a17f9-5082-4e33-8b80-a829fb9797c2",
+    "statement": "Com relação ao mecanismo de ação da furosemida, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a intensidade da sua atuação na alça de Henle não depende pela filtração glomerular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "em dose máxima pode levar à excreção de até 20 a 25 por cento do sódio filtrado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "seu mecanismo de ação também envolve a inibição da anidrase carbônica na porção espessa da alça de Henle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "promove a reabsorção de cálcio podendo levar a hipercalcemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tem ação diurética por bloqueio da reabsorção de água, sódio e cloro no néfron distal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da questão sobre a Furosemida:\n\nA furosemida é o protótipo dos diuréticos de alça, caracterizada por sua alta eficácia e potência. Para compreender a questão, devemos lembrar que seu sítio de ação é o segmento ascendente espesso da alça de Henle, onde ela bloqueia a proteína transportadora Na+/K+/2Cl- (NKCC2).\n\nAlternativa A (Incorreta): A furosemida circula ligada quase totalmente à albumina, o que impede que ela seja filtrada livremente pelo glomérulo. Sua chegada à luz do túbulo (onde ela precisa estar para agir) ocorre através da secreção ativa por transportadores de ácidos orgânicos no túbulo proximal. Portanto, a eficácia do fármaco depende da integridade da função renal e do fluxo sanguíneo renal para que a droga atinja seu local de ação.\n\nAlternativa B (Correta): Este item descreve por que a furosemida é chamada de diurético de teto alto. A alça de Henle é responsável pela reabsorção de aproximadamente 25% da carga de sódio filtrada pelo glomérulo. Ao inibir o transportador NKCC2, a furosemida impede essa reabsorção massiva, podendo levar a uma excreção fracional de sódio de até 20 a 25%. Isso a torna muito mais potente que os tiazídicos, que atuam no túbulo distal, onde a capacidade de reabsorção de sódio é bem menor (cerca de 5 a 10%).\n\nAlternativa C (Incorreta): A inibição da anidrase carbônica é o mecanismo de ação da acetazolamida, que atua predominantemente no túbulo proximal. O mecanismo fundamental da furosemida é a inibição do co-transportador Na+/K+/2Cl- no segmento ascendente espesso da alça.\n\nAlternativa D (Incorreta): Pelo contrário, a furosemida aumenta a excreção urinária de cálcio (causa calciúria). Em condições normais, o transporte de potássio na alça de Henle gera uma voltagem positiva no lúmen que favorece a reabsorção paracelular de cálcio e magnésio. Quando a furosemida bloqueia esse transporte, esse gradiente elétrico é perdido, e o cálcio deixa de ser reabsorvido, sendo eliminado na urina. Por essa razão, a furosemida pode ser usada no tratamento de emergência da hipercalcemia perigosa.\n\nAlternativa E (Incorreta): A furosemida atua na porção espessa da alça de Henle, que faz parte do segmento diluidor do néfron, mas não é considerada néfron distal. O néfron distal compreende o túbulo contorcido distal e os ductos coletores, onde atuam, respectivamente, os diuréticos tiazídicos e os poupadores de potássio. Além disso, a furosemida bloqueia a reabsorção de solutos, e a diurese de água é uma consequência osmótica dessa perda de eletrólitos.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Túbulo-Interstício Renal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:32.670Z"
+  },
+  {
+    "id": "AJUDA_da8ec631-7c5b-46db-b8ec-3d5025259a4a",
+    "originalId": "da8ec631-7c5b-46db-b8ec-3d5025259a4a",
+    "statement": "Paciente de 68 anos, refere aparecimento de nódulo de tireoide há cerca de 15 anos com crescimento muito lento. Refere que nos últimos 3 meses a região cervical anterior vem aumentando muito de tamanho e se tornando muito endurecida Refere também quadro de dispneia progressiva Nega história familiar de câncer de tireoide. Moradora de Jacaraípe, costuma se alimentar de peixes e mariscos com frequência. Ao exame palpamos aumento difuso da glândula tireoide com consistência pétrea e não conseguimos identificar bem a traqueia. O médico suspeitou de uma neoplasia maligna da glândula tireoide. Dentre as possibilidades, qual a neoplasia maligna mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carcinoma medular de tireoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Carcinoma papilífero de tireoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Carcinoma anaplásico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Bócio endêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO quadro descreve uma paciente de 68 anos com um nódulo de tireoide antigo (15 anos de evolução lenta) que subitamente, nos últimos 3 meses, apresentou crescimento acelerado, consistência pétrea e sintomas de compressão de vias aéreas (dispneia e dificuldade de identificar a traqueia). Essa apresentação é o sinal de alerta clássico para o carcinoma anaplásico.\n\nPor que a alternativa (c) é a correta?\nO carcinoma anaplásico é o tumor de tireoide mais agressivo e ocorre predominantemente em pacientes idosos. É comum que ele se desenvolva a partir de um bócio multinodular pré-existente ou de um carcinoma diferenciado prévio que sofreu desdiferenciação. Sua marca registrada é o crescimento em questão de semanas ou poucos meses, com invasão local massiva de estruturas cervicais, o que explica a consistência endurecida e o quadro respiratório obstrutivo por compressão da traqueia.\n\nPor que as outras alternativas estão incorretas?\n\nAlternativa (a): O carcinoma medular deriva das células C (parafoliculares). Embora possa ser agressivo e apresentar metástases, ele não é o tumor que tipicamente causa esse crescimento explosivo e invasão local súbita em bócios de longa data em pacientes idosos.\n\nAlternativa (b): O carcinoma papilífero é o tipo mais comum de câncer de tireoide e geralmente apresenta crescimento muito lento e excelente prognóstico. Ele não condiz com a evolução rápida de 3 meses e a gravidade dos sintomas compressivos relatados.\n\nAlternativa (d): O bócio endêmico é uma patologia benigna relacionada à deficiência crônica de iodo na dieta. Embora a paciente tenha um bócio prévio de 15 anos, o bócio endêmico isolado não justifica o endurecimento pétreo nem o crescimento acelerado recente, que são sinais claros de uma neoplasia maligna indiferenciada.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:32.670Z"
+  },
+  {
+    "id": "AJUDA_da8f0de2-24c5-47a0-a838-7ed208aec62e",
+    "originalId": "da8f0de2-24c5-47a0-a838-7ed208aec62e",
+    "statement": "Primigesta, 24 anos, com 36 semanas, portadora de Diabetes Mellitus tipo 1 desde os 10 anos de idade e nefropatia diabética há 5 anos. Paciente retorna à consulta de pré-natal referindo controle glicêmico satisfatório, porém com episódios de mal-estar geral, tonturas e sudorese, que melhoram com alimentação, há uma semana. Nega episódios de perda de consciência. Refere adequada adesão ao plano nutricional e à insulinoterapia prescritos. Em uso de análogos de insulinas NPH e Asparte desde o inicio da gestação. Exame físico geral e obstétrico normais. Ganho de peso semanal de 100 g. Hoje, a ultrassonografia evidenciou peso fetal estimado no percentil 9, índice de pulsatilidade da artéria umbilical no percentil 100 e da artéria cerebral média no percentil 2, maior bolsão de liquido amniótico de 4 cm, perfil biofisico fetal de 8 em 8. A análise do perfil glicêmico da última semana está demonstrada no quadro a seguir: Além do ajuste de insulinas e vigilância de bem-estar fetal, com que idade gestacional deve ser programada a resolução de sua gestação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "39 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "37 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Imediatamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "38 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda um cenário clínico crítico na obstetrícia de alto risco: a insuficiência placentária em uma gestante com diabetes mellitus tipo 1 e nefropatia. A análise deve ser feita integrando o quadro clínico materno, os dados laboratoriais e a avaliação da vitalidade fetal.\n\nO ponto principal do quadro clínico é a ocorrência de hipoglicemias frequentes no terceiro trimestre em uma paciente anteriormente controlada. Como observado na imagem do perfil glicêmico, há vários valores circulados abaixo da normalidade na madrugada (48, 54, 56, 62 mg/dL) e valores baixos no período pré-prandial. Na gestante diabética, a ocorrência de hipoglicemias inexplicadas ou a redução súbita da necessidade de insulina é um marcador clássico de insuficiência placentária grave. Isso ocorre porque a placenta, ao entrar em falência (senescência), diminui a produção de hormônios contrainsulínicos, como o lactogênio placentário humano e o cortisol, levando a um excesso relativo da insulina administrada.\n\nDo ponto de vista fetal, a ultrassonografia revela um feto pequeno para a idade gestacional (peso no percentil 9). O Doppler da artéria umbilical no percentil 100 indica resistência aumentada ao fluxo sanguíneo na placenta. Simultaneamente, o Doppler da artéria cerebral média no percentil 2 indica uma vasodilatação compensatória (queda da resistência) para priorizar o fluxo sanguíneo para o cérebro. Esse conjunto de achados define a centralização fetal.\n\nCom 36 semanas de gestação, diante de evidências clínicas de falência placentária (hipoglicemias maternas) e evidências doplervelocimétricas de sofrimento fetal crônico (centralização), a conduta segura é a interrupção da gestação, uma vez que o risco de óbito fetal intraútero supera os riscos da prematuridade tardia.\n\nAlternativa a) Incorreta. Aguardar 39 semanas é a conduta para gestantes com diabetes bem controlado e sem complicações. No caso, há sinais claros de descompensação da unidade fetoplacentária.\n\nAlternativa b) Incorreta. Embora 37 semanas seja o limite para o termo, a centralização fetal e a falência placentária clínica já estão presentes às 36 semanas, não havendo benefício em retardar o parto por mais uma semana.\n\nAlternativa c) Correta. A resolução imediata é indicada pela associação de idade gestacional (36 semanas), feto com restrição de crescimento, Doppler com sinais de centralização e quadro materno sugestivo de exaustão placentária.\n\nAlternativa d) Incorreta. O adiamento para 38 semanas aumenta significativamente o risco de morte fetal, dado que os mecanismos de compensação fetal (centralização) e a função hormonal placentária já demonstram sinais de esgotamento.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Restrição de Crescimento Fetal e Óbito Fetal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/d8aae77a98c7da948a3d76301b4d178d29137c67785f16f564ad126f8b34cdd7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_da8f0de2-24c5-47a0-a838-7ed208aec62e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:33.139Z"
+  },
+  {
+    "id": "AJUDA_da92daa6-6caf-4e4c-81ce-14eed6071e7c",
+    "originalId": "da92daa6-6caf-4e4c-81ce-14eed6071e7c",
+    "statement": "Qual fármaco reduz a morbimortalidade no portador de insuficiência cardíaca?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Espironolactona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Furosemida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indapamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidroclorotiazida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tratamento da insuficiência cardíaca com fração de ejeção reduzida (ICFEr) baseia-se em pilares terapêuticos que não apenas aliviam sintomas, mas também bloqueiam os sistemas neuro-hormonais responsáveis pelo remodelamento cardíaco progressivo, reduzindo assim as taxas de hospitalização e morte.\n\nAlternativa (a) Correta. A espironolactona é um antagonista do receptor mineralocorticoide (antagonista da aldosterona). Grandes estudos clínicos, como o RALES e o EMPHASIS-HF, demonstraram que a adição deste fármaco ao tratamento padrão reduz significativamente a morbimortalidade em pacientes com insuficiência cardíaca. Ela atua combatendo a fibrose miocárdica e o remodelamento adverso causados pelo excesso de aldosterona, sendo parte fundamental da terapia tripla ou quádrupla preconizada pelas diretrizes atuais.\n\nAlternativa (b) Incorreta. A furosemida é um diurético de alça amplamente utilizado na prática clínica. Entretanto, seu papel é estritamente sintomático. Ela promove a eliminação de volume e alivia a congestão (edema e dispneia), mas não possui evidências de que reduza a mortalidade a longo prazo ou que impeça a progressão da doença cardíaca.\n\nAlternativa (c) Incorreta. A indapamida é um diurético tiazídico-símile. Sua principal indicação é o tratamento da hipertensão arterial sistêmica. No contexto da insuficiência cardíaca, não há comprovação de que o uso isolado desse fármaco resulte em benefício de sobrevida ou redução de eventos graves.\n\nAlternativa (d) Incorreta. A hidroclorotiazida é um diurético tiazídico clássico. Assim como os demais diuréticos mencionados (exceto a espironolactona), ela atua no manejo do balanço hídrico e controle de sintomas congestivos em casos leves, mas não faz parte do grupo de medicamentos que modificam o desfecho clínico de morbimortalidade na insuficiência cardíaca.\n\nEm resumo, os fármacos que comprovadamente reduzem a mortalidade na ICFEr incluem os betabloqueadores, os inibidores da enzima conversora de angiotensina (IECA) ou bloqueadores dos receptores de angiotensina (BRA) ou inibidores da neprilisina e do receptor de angiotensina (INRA), os antagonistas do receptor mineralocorticoide (espironolactona) e os inibidores do cotransportador sódio-glicose 2 (SGLT2i).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:33.139Z"
+  },
+  {
+    "id": "AJUDA_da993a48-8d4f-4407-9bbc-1f90f3721a35",
+    "originalId": "da993a48-8d4f-4407-9bbc-1f90f3721a35",
+    "statement": "Pode-se afirmar, em relação às Políticas Públicas de Saúde para os Povos Indígenas, que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "os distritos sanitários especiais indígenas (DSEI), polos-base e equipes multidisciplinares de saúde indígena são estruturas fora do SUS e, por isso, não são regidos pelos princípios da integralidade, hierarquização e controle social",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "devem ser planejadas intervenções que contemplem a emergência das causas externas (acidentes, violências, etc) e doenças crônicas não transmissíveis, como obesidade, HAS e DM",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o direito à saúde é garantido pelo órgão tutor (Fundação Nacional do Índio – Funai), por meio do modelo de equipe volante de saúde (EVS)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "entre as causas de bons resultados desta política de atenção à saúde indígena, estão a baixa rotatividade dos profissionais de saúde e os bons índices nutricionais",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda as Políticas Públicas de Saúde voltadas aos Povos Indígenas, com foco no Subsistema de Atenção à Saúde Indígena (SasiSUS). Vamos analisar cada alternativa:\n\nAlternativa (a) Incorreta: Os Distritos Sanitários Especiais Indígenas (DSEIs), os polos-base e as equipes multidisciplinares não são estruturas fora do SUS. Pelo contrário, o SasiSUS foi criado pela Lei nº 9.836/1999 (Lei Arouca) justamente como uma parte integrante do Sistema Único de Saúde. Como tal, ele é obrigatoriamente regido pelos princípios doutrinários de universalidade, equidade e integralidade, além dos princípios organizativos, como a descentralização, a hierarquização e o controle social (que é muito forte na saúde indígena por meio dos conselhos locais e distritais).\n\nAlternativa (b) Correta: Atualmente, os povos indígenas passam por uma transição epidemiológica. Embora as doenças infectocontagiosas ainda sejam prevalentes, observa-se um aumento expressivo das causas externas (como acidentes e violência) e de doenças crônicas não transmissíveis (DCNT). Mudanças no estilo de vida, o sedentarismo e a introdução de alimentos ultraprocessados nas aldeias levaram ao surgimento de obesidade, hipertensão arterial sistêmica (HAS) e diabetes mellitus (DM), exigindo que as políticas públicas se adaptem a essa nova realidade.\n\nAlternativa (c) Incorreta: Historicamente, a saúde indígena já esteve sob responsabilidade da Funai, mas isso mudou com a criação do SasiSUS. Atualmente, a gestão da saúde indígena é de responsabilidade do Ministério da Saúde, especificamente por meio da Secretaria de Saúde Indígena (Sesai). A Funai permanece com atribuições relacionadas à demarcação de terras e à proteção de direitos civis, mas não é o órgão gestor da saúde. Além disso, o modelo prioritário é o de equipes multidisciplinares fixas nos DSEIs, e não apenas equipes volantes.\n\nAlternativa (d) Incorreta: Esta alternativa apresenta uma visão que não condiz com a realidade prática da saúde indígena no Brasil. Infelizmente, um dos maiores desafios do SasiSUS é a alta rotatividade dos profissionais de saúde, motivada por condições geográficas de difícil acesso, isolamento e questões contratuais. Além disso, os índices nutricionais ainda são motivo de preocupação, com a prevalência de desnutrição infantil em diversas etnias e o crescimento da obesidade em adultos, longe de serem considerados \"bons índices\" generalizados.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:33.139Z"
+  },
+  {
+    "id": "AJUDA_da9ccca0-f356-466a-8a7b-73e5631c8d68",
+    "originalId": "da9ccca0-f356-466a-8a7b-73e5631c8d68",
+    "statement": "A fisiopatologia da resposta inflamatória no paciente grave evoluiu do modelo clássico SIRS/CARS para o conceito mais amplo de REMIT (Resposta Imunológica do Hospedeiro ao Trauma/Infecção). Sobre esses conceitos, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O REMIT descreve uma resposta simultânea e desregulada composta por ativação pró-inflamatória (SIRS) e anti-inflamatória (CARS), que podem coexistir desde o início do insulto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O SIRS representa exclusivamente uma resposta anti-inflamatória tardia, enquanto o CARS é a fase inicial pró-inflamatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O modelo atual considera que o paciente alterna rigidamente entre SIRS e CARS, sem sobreposição entre as fases.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O CARS é caracterizado por hiperinflamação sistêmica, liberação maciça de citocinas e disfunção endotelial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O REMIT foi abandonado e substituído pelo uso exclusivo dos critérios clínicos de SIRS para diagnóstico de sepse.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, é fundamental entender a evolução do pensamento sobre a imunologia do paciente crítico. Antigamente, acreditava-se que o corpo passava por fases sequenciais: primeiro uma tempestade inflamatória (SIRS) e, somente após a sua resolução, uma fase de compensação anti-inflamatória (CARS). Hoje, o conceito de REMIT (Resposta Endócrino, Metabólica e Imunológica ao Trauma) mostra que esse processo é muito mais complexo, dinâmico e concomitante.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Esta alternativa reflete a visão moderna da imunologia. Ao sofrer um insulto grave (trauma ou infecção), o organismo dispara imediatamente mecanismos para combater o agressor (pró-inflamatórios) e, ao mesmo tempo, mecanismos para limitar o dano aos próprios tecidos (anti-inflamatórios). Essa coexistência e o desequilíbrio entre essas forças (o chamado PICS - Síndrome de Inflamação Persistente, Imunossupressão e Catabolismo) definem o estado do paciente grave.\n\nAlternativa B (Incorreta): A alternativa inverte os conceitos. O SIRS (Systemic Inflammatory Response Syndrome) refere-se à inflamação (pró), e o CARS (Compensatory Anti-inflammatory Response Syndrome) refere-se à anti-inflamação.\n\nAlternativa C (Incorreta): O modelo atual refuta a rigidez. Não existe uma alternância estrita como se fosse um interruptor de \"liga e desliga\". O que ocorre é uma sobreposição constante, onde a intensidade de cada resposta varia conforme a genética do paciente, a carga do insulto e o tempo de evolução.\n\nAlternativa D (Incorreta): A descrição de hiperinflamação, liberação de citocinas (como TNF-alfa e IL-1) e disfunção endotelial pertence ao SIRS. O CARS é caracterizado justamente pelo contrário: imunossupressão, anergia linfocitária e liberação de citocinas anti-inflamatórias (como IL-10).\n\nAlternativa E (Incorreta): Pelo contrário, o conceito de REMIT e as novas definições de Sepse (Sepsis-3) afastaram-se do uso exclusivo dos critérios de SIRS, que são muito inespecíficos. O foco moderno está na disfunção orgânica secundária a uma resposta desregulada do hospedeiro, exatamente o que o conceito de REMIT descreve.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:33.139Z"
+  },
+  {
+    "id": "AJUDA_da9f5a92-5539-42c3-98d6-b3f546cb0dbc",
+    "originalId": "da9f5a92-5539-42c3-98d6-b3f546cb0dbc",
+    "statement": "Qual a causa mais comum de anemia ferropriva em crianças no segundo ano de vida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infecções recorrentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deficiência de ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Consumo excessivo de leite de vaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Doença celiac.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Talassemia minor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nA anemia ferropriva é a carência nutricional de maior prevalência na infância, apresentando um pico de incidência entre os 6 e 24 meses de idade. Nesse período, a rapidez do crescimento corporal demanda um aporte elevado de ferro, que muitas vezes não é suprido pela dieta. No segundo ano de vida, o principal fator etiológico está relacionado a erros alimentares.\n\nAlternativa a: Incorreta. Infecções recorrentes ou processos inflamatórios crônicos podem levar à chamada anemia de doença crônica. Nesses casos, ocorre um aumento da hepcidina, que bloqueia a liberação de ferro dos estoques e sua absorção intestinal. Embora possa coexistir com a carência nutricional, não é a causa mais comum de anemia ferropriva nesta faixa etária.\n\nAlternativa b: Incorreta. A deficiência de ácido fólico causa anemia megaloblástica, que se caracteriza por ser uma anemia macrocítica (aumento do volume corpuscular médio - VCM). A anemia ferropriva, por outro lado, é classicamente microcítica e hipocrômica.\n\nAlternativa c: Correta. O consumo excessivo de leite de vaca in natura ou em pó é o principal fator de risco no segundo ano de vida. O leite de vaca é pobre em ferro e o pouco mineral presente possui baixíssima biodisponibilidade (absorção de apenas 10%, contra 50% do leite materno). Além disso, o alto consumo de leite gera saciedade, fazendo com que a criança deixe de ingerir alimentos sólidos ricos em ferro, como carnes e leguminosas. Outro fator importante é que o leite de vaca pode causar micro-hemorragias na mucosa intestinal de crianças pequenas, aumentando a perda oculta de ferro nas fezes.\n\nAlternativa d: Incorreta. A doença celíaca é uma causa importante de má absorção de ferro e deve ser investigada em casos de anemia ferropriva refratária ao tratamento oral ou que não apresenta justificativa dietética evidente. No entanto, sua prevalência na população geral é muito menor do que a anemia causada por erros alimentares.\n\nAlternativa e: Incorreta. A talassemia minor é uma hemoglobinopatia genética que resulta em microcitose e hipocromia, podendo ser confundida com a anemia ferropriva no hemograma. Contudo, na talassemia os estoques de ferro (ferritina e ferro sérico) estão normais ou elevados, e a patologia não se trata de uma deficiência de ferro, mas de um defeito na produção das cadeias de globina.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:33.139Z"
+  },
+  {
+    "id": "AJUDA_daa3489d-8c4d-4ba6-9991-984b3fd791e3",
+    "originalId": "daa3489d-8c4d-4ba6-9991-984b3fd791e3",
+    "statement": "Paciente do sexo masculino, 18 anos, chega ao pronto atendimento com dor abdominal em mesogástrio e epigástrio, de início insidioso e caráter progressivo, associada a náuseas e hiporexia. A evolução do quadro tem cerca de 24 horas. Ao exame físico, a dor abdominal é exacerbada pela tosse, há discreta diferença de temperatura entre a região axilar e a retal (+1,2 °C), além de dor à palpação profunda em região inferior direita do abdome. Exames laboratoriais mostram leucócitos 14.000/mm³ com 80% de neutrófilos, além de sumário de urina com 6 piócitos/campo.\nCom base no quadro clínico e laboratorial, qual achado clínico complementa o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dor à punho-percussão na região lombar à direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Crepitação na parede abdominal associada à presença de gás.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dor à palpação no hipocôndrio direito durante inspiração profunda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dor à descompressão entre a espinha ilíaca ântero superior e o umbigo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO paciente apresenta um quadro clássico de apendicite aguda. Os pontos-chave são: dor de início insidioso que migra do epigástrio para a região inferior direita (cronologia de Murphy), presença de náuseas e hiporexia, dor exacerbada pela tosse (sinal de Dunphy) e a dissociação térmica axilo-retal acima de 1,0 grau Celsius (sinal de Dieulafoy), que sugere processo inflamatório intra-abdominal. Os exames laboratoriais mostram leucocitose com desvio à esquerda (80 por cento de neutrófilos). A presença de 6 piócitos no sedimento urinário é um achado frequente na apendicite por irritação ureteral ou vesical direta pelo apêndice inflamado (especialmente em apêndices de localização pélvica ou retrocecal), não devendo confundir o examinador com um quadro de infecção urinária primária.\n\nAnálise das Alternativas:\n\nAlternativa a: Incorreta. A dor à punho-percussão na região lombar, conhecida como sinal de Giordano, é típica de quadros de pielonefrite aguda. Embora o paciente apresente uma leve alteração no sumário de urina, a história clínica de dor migratória e o exame físico com dor em fossa ilíaca direita são muito mais sugestivos de apendicite.\n\nAlternativa b: Incorreta. A presença de crepitação e gás na parede abdominal indica infecções necrotizantes de tecidos moles (como fasciite necrotizante ou gangrena gasosa) ou, em casos raros, perfuração de víscera oca com enfisema subcutâneo, o que não condiz com a apresentação clínica de apendicite inicial.\n\nAlternativa c: Incorreta. A dor à palpação no hipocôndrio direito durante a inspiração profunda define o sinal de Murphy. Este sinal é indicativo de colecistite aguda, uma condição que se manifesta com dor no quadrante superior direito do abdome, diferentemente do caso em questão.\n\nAlternativa d: Correta. A alternativa descreve a pesquisa do sinal de Blumberg no ponto de McBurney. O ponto de McBurney localiza-se na união do terço externo com os dois terços internos de uma linha imaginária entre a espinha ilíaca ântero-superior direita e o umbigo. A dor à descompressão brusca nessa região é um achado clássico de irritação peritoneal, fundamental para o diagnóstico clínico de apendicite aguda.\n\nGabarito: Letra d.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:33.139Z"
+  }
+]

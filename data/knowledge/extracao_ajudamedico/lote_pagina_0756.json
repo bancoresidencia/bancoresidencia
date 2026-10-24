@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_d2c31d0b-0f27-4c66-a353-56632a6c85a9",
+    "originalId": "d2c31d0b-0f27-4c66-a353-56632a6c85a9",
+    "statement": "Gestante (G5P4A0C0) no termo e em trabalho de parto foi levada à maternidade pelo SAMU. Ela foi prontamente assistida pela equipe, mas o bebê nasceu durante o trajeto. Ao chegar na maternidade, o bebê encontrava-se em bom estado, pesando 4.250 g, e a placenta foi dequitada assim que a puérpera deu entrada no hospital. No momento, ela não apresenta queixas além de dor na região do períneo. Ao exame físico: mucosas: coradas; edema: ¼+ em membros inferiores; PA: 100 × 70 mmHg; pulso: 99 bpm, SatO2 97%, útero palpável: 2 cm acima da cicatriz umbilical, com tônus diminuído; laceração perineal: grau II com sangramento discreto; sangramento vaginal em pequena quantidade. Considerando os dados clínicos apresentados, a conduta imediata é solicitar",
+    "options": [
+      {
+        "id": "A",
+        "text": "acesso venoso central, iniciar infusão de solução cristaloide e realizar a sutura da laceração perineal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dois acessos venosos calibrosos, iniciar infusão de solução coloide, ocitocina em bolus e ácido tranexâmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dois acessos venosos calibrosos, iniciar infusão de solução cristaloide, ocitocina em bolus e ácido tranexâmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "acesso venoso central, iniciar infusão de solução cristaloide e realizar curagem uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A análise do caso clínico revela uma puérpera com fatores de risco importantes para hemorragia pós-parto (HPP): multiparidade (G5P4) e macrossomia fetal (bebê de 4.250 g). O exame físico confirma o diagnóstico de atonia uterina, evidenciado pelo útero palpável acima da cicatriz umbilical e com tônus diminuído. Embora a pressão arterial e a frequência cardíaca ainda estejam em níveis aceitáveis, a conduta diante da atonia uterina deve ser imediata para evitar o choque hipovolêmico.\n\nO manejo inicial da HPP (frequentemente chamado de Quarto Período ou Hora de Ouro) segue protocolos de ressuscitação volêmica e controle da causa do sangramento.\n\nExplicação das alternativas:\n\nAlternativa (a) INCORRETA: O acesso venoso central não é a via de escolha inicial em situações de emergência hemorrágica; preferem-se dois acessos periféricos calibrosos (G14 ou G16), que permitem uma infusão de volume mais rápida. Além disso, a prioridade é tratar a atonia uterina, e não a sutura da laceração de segundo grau, que apresenta sangramento discreto.\n\nAlternativa (b) INCORRETA: O erro principal desta alternativa está na indicação de solução coloide. Os protocolos internacionais (PHEALS, OMS) e nacionais recomendam o uso de cristaloides (Ringer Lactato ou Soro Fisiológico) para a reposição volêmica inicial. Coloides não demonstraram superioridade e podem estar associados a maiores riscos de complicações.\n\nAlternativa (c) CORRETA: Esta alternativa descreve os passos fundamentais do protocolo de manejo da HPP por atonia uterina. \n1. Dois acessos venosos calibrosos: essenciais para infusão rápida de fluidos e medicações. \n2. Solução cristaloide: padrão-ouro para reposição volêmica inicial. \n3. Ocitocina: é a droga de primeira escolha para promover a contração uterina na atonia. \n4. Ácido Tranexâmico: de acordo com o estudo WOMAN, deve ser administrado precocemente (preferencialmente nas primeiras 3 horas) em casos de HPP para reduzir a mortalidade por sangramento.\n\nAlternativa (d) INCORRETA: Novamente, o acesso venoso central está incorreto como medida imediata. A curagem uterina (extração manual de restos) é indicada quando há suspeita de retenção placentária ou restos ovulares, mas o quadro descrito foca claramente na atonia (tônus diminuído). A estabilização hemodinâmica e o uso de uterotônicos precedem manobras invasivas como a curagem, a menos que a placenta estivesse retida.\n\nEm resumo, diante de uma atonia uterina clínica, a conduta é garantir acesso venoso periférico, iniciar infusão de cristaloide, administrar ocitocina (droga de primeira linha) e associar o ácido tranexâmico para controle da fibrinólise e redução do sangramento.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  },
+  {
+    "id": "AJUDA_d2d5792d-6744-4b37-9a6a-f741bb72b6df",
+    "originalId": "d2d5792d-6744-4b37-9a6a-f741bb72b6df",
+    "statement": "R.B.A., 29 anos, GII PI 1N (há 2 anos) A0, idade gestacional de 12 semanas, vem à consulta de pré-natal questionando sobre as vacinas necessárias na gestação e no pós-parto. Trouxe sorologias realizadas há uma semana: rubéola IgG e IgM não reagentes, HBsAg não reagente e anti-HBs reagente. Tipagem sanguínea Rh negativo; esposo Rh positivo. Refere não ter tomado vacina da rubéola; ao se verificar cartão de vacina, é identificada vacina DTPa na gestação anterior. Assinale a alternativa que apresenta informação correta sobre o caso descrito.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Há necessidade de tomar a vacina contra febre amarela nesta gestação, mesmo que não esteja em área endêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não há necessidade de tomar nova dose de DTPa (difteria, tétano e coqueluche acelular), por registro de dose anterior há menos de 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se vacinar com a vacina contra influenza após as vinte semanas de idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se administrar a imunoglobulina anti-D a partir do segundo trimestre de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve-se administrar a vacina tríplice viral no puerpério.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Resumo do caso: gestante de 12 semanas, suscetível à rubéola (IgG e IgM não reagentes), imune à hepatite B (anti-HBs reagente), Rh negativo com parceiro Rh positivo, e com DTPa na gestação anterior. A resposta correta é a letra (e).\n\na) Incorreta. A vacina contra febre amarela é de vírus vivo atenuado e, em gestantes, é em geral contraindicada. Só se considera a vacinação quando há risco real de infecção, como residência ou deslocamento para área endêmica ou com surto, e a decisão é individualizada. Não se vacina quando a gestante não está em área de risco.\n\nb) Incorreta. Cada gestação exige uma dose de dTpa, independentemente de doses anteriores. A dose deve ser dada entre 20 e 36 semanas (o Ministério da Saúde permite até o parto) para transferir anticorpos contra coqueluche ao recém-nascido. Se a gestante não tiver esquema primário completo de dT, completa-se o esquema com dT e dTpa. A dose da gestação anterior não dispensa a atual. Observe que a vacina na gestação é a dTpa (formulação de adulto), e não a DTPa.\n\nc) Incorreta. A vacina contra influenza é recomendada a toda gestante em qualquer idade gestacional, na época da campanha sazonal. Não há restrição a \"após 20 semanas\". A vacina inativada é segura.\n\nd) Incorreta. A imunoglobulina anti-D é indicada em gestante Rh negativo não sensibilizada (Coombs indireto negativo), com parceiro Rh positivo ou desconhecido, na profilaxia a partir de 28 semanas (início do terceiro trimestre). Repete-se após o parto, em até 72 horas, se o recém-nascido for Rh positivo. Também se usa em eventos sensibilizantes, como aborto, sangramento ou procedimentos invasivos. Não se indica no segundo trimestre de rotina.\n\ne) Correta. A paciente é suscetível à rubéola. A tríplice viral (sarampo, caxumba e rubéola) é de vírus vivo atenuado e é contraindicada na gestação, por risco teórico de síndrome da rubéola congênita. Por isso, deve ser aplicada no puerpério imediato, ainda na maternidade antes da alta. É compatível com a amamentação. Deve-se evitar gravidez por 30 dias após a vacina. A administração de imunoglobulina anti-D não contraindica a vacina no puerpério, mas pode reduzir a resposta imune. Por isso, se houver dúvida, orienta-se checar a soroconversão após cerca de 3 meses.\n\nPonto-chave: vacinas de vírus vivo (tríplice viral, varicela, febre amarela em geral) são evitadas na gestação e feitas no puerpério quando indicadas. As vacinas inativadas, como influenza, dTpa e hepatite B, são seguras.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas na Gestação",
+      "Pré-Natal",
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  },
+  {
+    "id": "AJUDA_d2d6f21b-0d36-4ceb-8afa-d80c0f3ae169",
+    "originalId": "d2d6f21b-0d36-4ceb-8afa-d80c0f3ae169",
+    "statement": "A mortalidade infantil é um importante indicador de desenvolvimento de uma sociedade. No Japão, por exemplo, os valores são de menos de 3 óbitos em menores de 1 ano a cada mil nascidos vivos. O Mundo e o Brasil têm experimentado uma redução nestas taxas no último ano. A mortalidade infantil no Brasil situa-se em torno de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "23.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "7,5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "12,5.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "17.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "20,5.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Taxa de Mortalidade Infantil (TMI) é um indicador sensível que reflete as condições de vida, saúde e desenvolvimento socioeconômico de uma população. Ela é calculada dividindo-se o número de óbitos em crianças menores de um ano pelo número de nascidos vivos no mesmo período e local, multiplicando-se o resultado por mil. Nas últimas décadas, o Brasil apresentou uma redução consistente desse índice, embora em ritmo mais lento nos últimos anos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O valor de 23 óbitos por mil nascidos vivos refere-se ao perfil epidemiológico do Brasil do início dos anos 2000 (aproximadamente entre 2003 e 2004). O país já superou essa fase de transição há bastante tempo.\n\nAlternativa b) Incorreta. O índice de 7,5 é considerado muito baixo e não condiz com a média nacional brasileira. Esse valor é mais próximo do observado em países muito desenvolvidos ou em cidades brasileiras específicas com altíssimo Índice de Desenvolvimento Humano (IDH). O Japão, citado no enunciado, possui taxas ainda menores (abaixo de 3).\n\nAlternativa c) Correta. Segundo os dados mais recentes do Ministério da Saúde (DATASUS) e do IBGE, a mortalidade infantil no Brasil tem se mantido estabilizada na faixa entre 12 e 13 óbitos por mil nascidos vivos. Portanto, o valor de 12,5 é a estimativa mais precisa e atualizada solicitada pela questão.\n\nAlternativa d) Incorreta. A taxa de 17 óbitos por mil nascidos vivos foi registrada no Brasil por volta de 2010. Desde então, as políticas de atenção básica e melhorias no saneamento permitiram uma redução adicional desse número.\n\nAlternativa e) Incorreta. O valor de 20,5 representa a realidade brasileira da metade da década de 2000 (por volta de 2006). Atualmente, os indicadores nacionais estão significativamente abaixo desse patamar.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  },
+  {
+    "id": "AJUDA_d2d83112-c85e-40fa-9562-139a67668dde",
+    "originalId": "d2d83112-c85e-40fa-9562-139a67668dde",
+    "statement": "Homem, 70 anos de idade, é atendido no PS com quadro de cefaleia holocraniana em aperto, constante, de intensidade 3/10, que melhora pouco com analgésicos comuns, iniciado há cinco semanas. Além disso, acha que está mais lento e com dificuldade para falar. A esposa diz também que há 1 semana o paciente está mais apático. O exame neurológico mostra que o paciente está apático, respondendo às perguntas lentamente com monossílabos, com hemiparesia grau 4 em hemicorpo direito, com reflexos vivos e reflexo cutâneo-plantar em extensão à direita. Qual é o diagnóstico mais provável e o exame indicado para investigação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hematoma subdural esquerdo; tomografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Meningioma parietal esquerdo; tomografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Meningioma parietal direito; ressonância magnética de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hematoma cerebral à direita; ressonância magnética de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um paciente idoso (70 anos) com um quadro de evolução subaguda (cinco semanas), caracterizado por cefaleia persistente e alterações neuropsiquiátricas (apatia e lentificação), culminando em um déficit motor focal (hemiparesia à direita).\n\nO ponto-chave para a localização neuroanatômica é o déficit motor: se o paciente apresenta hemiparesia e sinais de liberação piramidal (reflexos vivos e sinal de Babinski) no lado direito, a lesão obrigatoriamente encontra-se no hemisfério cerebral esquerdo.\n\nA hipótese diagnóstica principal para um idoso com cefaleia de início recente, mudança de comportamento e déficit focal de instalação gradual é o Hematoma Subdural Crônico (HSDC). O HSDC ocorre frequentemente após traumas leves (muitas vezes esquecidos pelo paciente) devido à fragilidade das veias em ponte e ao espaço aumentado pela atrofia cerebral senil.\n\nAnálise das alternativas:\n\na) Correta. O déficit à direita indica lesão no hemisfério esquerdo. O quadro de evolução em cinco semanas com cefaleia e alteração de comportamento é clássico do hematoma subdural crônico no idoso. A tomografia de crânio é o exame de escolha inicial pela rapidez, disponibilidade e alta sensibilidade para detectar coleções extra-axiais.\n\nb) Incorreta. Embora um meningioma (tumor benigno) pudesse causar sintomas compressivos à esquerda, o quadro de cinco semanas com rápida progressão para apatia e déficit motor em um idoso torna o hematoma subdural uma hipótese muito mais provável e comum na prática de pronto-socorro. Além disso, a alternativa A descreve a patologia que melhor se correlaciona com o quadro clínico típico de \"pseudodemência\" ou flutuação do nível de consciência no idoso.\n\nc) Incorreta. Existe um erro de localização anatômica. Se o déficit motor (hemiparesia) é no hemicorpo direito, a lesão não pode estar no lado direito do cérebro, mas sim no lado esquerdo (contralateral).\n\nd) Incorreta. Novamente, há erro de localização (a lesão deve ser à esquerda). Além disso, um \"hematoma cerebral\" (intraparenquimatoso) costuma ter uma instalação súbita (quadro de AVC hemorrágico), e não uma evolução arrastada de cinco semanas como descrito no enunciado. A ressonância magnética, embora excelente, não é o primeiro exame indicado na urgência se a tomografia estiver disponível.\n\nConclusão: Diante de um idoso com déficit focal contralateral e sintomas de hipertensão intracraniana de evolução subaguda, o diagnóstico de Hematoma Subdural Esquerdo deve ser a primeira suspeita, sendo a Tomografia de Crânio o exame indicado para confirmação.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  },
+  {
+    "id": "AJUDA_d2dd5bdc-2534-400f-b037-dfde11f1c35a",
+    "originalId": "d2dd5bdc-2534-400f-b037-dfde11f1c35a",
+    "statement": "Uma adolescente de 13 anos de idade apresenta dor abdominal recorrente há quatro meses, associada à perda ponderal e febre. Nesse caso, a conduta inicial mais apropriada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "considerar distúrbio funcional e iniciar suporte psicológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "conversar com os familiares e evitar exames complementares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar exames para investigação de causa orgânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "iniciar dieta pobre em FODMAPs.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar tratamento empírico com probióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve uma adolescente com dor abdominal crônica recorrente (há quatro meses), mas que apresenta sintomas sistêmicos associados: perda de peso e febre. Esses dois achados são considerados sinais de alerta, também conhecidos como sinais de alarme ou red flags.\n\nNa abordagem de dores abdominais em crianças e adolescentes, o principal desafio é diferenciar a dor funcional (como a dispepsia funcional ou a Síndrome do Intestino Irritável) de uma dor de causa orgânica (como doença inflamatória intestinal, infecções crônicas, doença celíaca ou neoplasias). A presença de febre, perda ponderal, desaceleração do crescimento, sangramento gastrointestinal ou dor que desperta o paciente à noite aponta fortemente para uma etiologia orgânica.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora os distúrbios funcionais sejam comuns nessa faixa etária, eles são diagnósticos de exclusão ou baseados nos Critérios de Roma e não costumam cursar com febre ou perda de peso. Ignorar os sinais de alerta e focar apenas no suporte psicológico pode atrasar um diagnóstico grave.\n\nAlternativa B: Incorreta. Conversar com a família é parte da anamnese, mas, diante de sinais de alarme, a abstenção de exames complementares é uma conduta tecnicamente inadequada e perigosa.\n\nAlternativa C: Correta. Esta é a conduta inicial mais apropriada. A presença de sinais de alerta exige a solicitação de exames laboratoriais e/ou de imagem (como hemograma, marcadores inflamatórios, triagem para doença celíaca, calprotectina fecal ou ultrassonografia) para investigar uma patologia de base.\n\nAlternativa D: Incorreta. A dieta pobre em FODMAPs é uma estratégia terapêutica para pacientes com Síndrome do Intestino Irritável. Ela não deve ser iniciada antes de uma investigação diagnóstica adequada, especialmente quando há suspeita de doença orgânica.\n\nAlternativa E: Incorreta. O uso empírico de probióticos não tem indicação clínica para tratar dor abdominal associada a febre e perda de peso. O foco deve ser a descoberta da etiologia dos sintomas.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Febre na Pediatria",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  },
+  {
+    "id": "AJUDA_d2fc4839-a5d9-467d-b20f-1dd0b93ad903",
+    "originalId": "d2fc4839-a5d9-467d-b20f-1dd0b93ad903",
+    "statement": "A reanimação de controle de danos (Damage Control Resuscitation) preconiza estratégias específicas para evitar a tríade letal no trauma grave. Analise as afirmativas a seguir sobre os protocolos atuais de transfusão maciça e reanimação:\n\nI. A transfusão maciça deve almejar uma proporção de 1:1:1 entre concentrado de hemácias, plasma fresco congelado e plaquetas, mimetizando o sangue total para prevenir coagulopatia dilucional.\nII. A hipotensão permissiva (alvo de PAS 80-90 mmHg) é indicada em traumas penetrantes sem lesão cerebral traumática (TCE), para minimizar o rompimento de coágulos formados até o controle cirúrgico da hemorragia.\nIII. O uso de ácido tranexâmico deve ser iniciado preferencialmente nas primeiras 3 horas após o trauma, na dose de 1g em 10 minutos seguido de 1g em 8 horas, conforme estudo CRASH-2.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão aborda o conceito de Reanimação de Controle de Danos (Damage Control Resuscitation – DCR), um pilar fundamental no atendimento ao trauma grave. O objetivo principal da DCR é evitar ou reverter a tríade letal (acidose metabólica, hipotermia e coagulopatia).\n\nAnálise das afirmativas:\n\nItem I. CORRETO. Tradicionalmente, a reposição volêmica no trauma era feita com grandes volumes de cristaloides, o que levava à coagulopatia dilucional. Os protocolos de transfusão maciça atuais, baseados em estudos como o PROPPR, recomendam a reposição equilibrada de hemácias, plasma e plaquetas na proporção de 1:1:1. O objetivo é mimetizar a composição do sangue total perdido e garantir que fatores de coagulação e plaquetas sejam repostos precocemente, combatendo a coagulopatia traumática.\n\nItem II. CORRETO. A hipotensão permissiva consiste em manter a pressão arterial sistólica (PAS) em níveis limítrofes (geralmente entre 80 e 90 mmHg) até que o sangramento seja controlado cirurgicamente. O raciocínio é que pressões mais elevadas podem \"deslocar\" coágulos recém-formados (fenômeno conhecido como \"popping the clot\") e aumentar o sangramento. Esta estratégia é indicada principalmente em traumas penetrantes. É fundamental lembrar que ela é contraindicada em pacientes com traumatismo cranioencefálico (TCE), em que a pressão de perfusão cerebral deve ser preservada com níveis de pressão arterial mais altos.\n\nItem III. CORRETO. O uso do ácido tranexâmico (antifibrinolítico) é uma recomendação padrão baseada no estudo CRASH-2. O protocolo consiste na administração de 1 g de ataque (em 10 minutos) seguido de 1 g em infusão contínua por 8 horas. Para que haja benefício na redução da mortalidade por sangramento, a primeira dose deve ser administrada o mais precocemente possível, obrigatoriamente dentro das primeiras 3 horas após o trauma. O uso após 3 horas está associado a piores desfechos.\n\nConclusão: Como todas as afirmativas estão tecnicamente corretas e seguem os protocolos internacionais de trauma (como o ATLS 10ª edição e diretrizes europeias), a alternativa correta é a C.\n\nGabarito: Alternativa (c).",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  },
+  {
+    "id": "AJUDA_d2fe03a8-157f-4d1e-b4fe-01a506199fb9",
+    "originalId": "d2fe03a8-157f-4d1e-b4fe-01a506199fb9",
+    "statement": "Lactente com 7 m de idade apresentando exantema máculo papular, predominantemente em tronco, precedido de febre alta há 2 dias. Mãe nega prurido e refere que a criança mantém bom estado geral. Após 24h ocorre melhora do exantema. No exame físico, é observado pequenos linfonodos occipitais. O diagnóstico provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exantema Subito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Doença de Kawasaki.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rubéola.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico do exantema súbito, também conhecido como roséola infantum. A principal pista diagnóstica para esta patologia é a cronologia dos sintomas: uma febre alta que desaparece subitamente (em crise), seguida imediatamente pelo surgimento de um exantema maculopapular que se inicia preferencialmente no tronco.\n\nAlternativa a: Incorreta. O sarampo apresenta um quadro clínico muito mais grave, com prostração importante e sintomas catarrais intensos, como tosse, coriza e conjuntivite com fotofobia. No sarampo, a febre não desaparece para o surgimento do exantema; pelo contrário, ela atinge seu pico quando as manchas aparecem. O exantema do sarampo tem progressão craniocaudal lenta e dura cerca de 5 a 7 dias.\n\nAlternativa b: Correta. O exantema súbito, causado pelos herpes-vírus humanos tipos 6 e 7, acomete principalmente lactentes na faixa etária do paciente (7 meses). A característica patognomônica é a febre alta que cessa bruscamente, dando lugar a um exantema maculopapular rosado, não pruriginoso, que começa no tronco e pode se espalhar para pescoço e membros. A criança mantém bom estado geral apesar da febre alta e o exantema desaparece rapidamente, geralmente em 24 a 48 horas.\n\nAlternativa c: Incorreta. A doença de Kawasaki é uma vasculite sistêmica que exige, por critério diagnóstico, a presença de febre alta por pelo menos 5 dias. Além disso, manifesta-se com outros sinais ausentes no caso, como conjuntivite bilateral não purulenta, alterações na cavidade oral (língua em framboesa, fissuras labiais), alterações em extremidades e linfonodopatia cervical geralmente unilateral e volumosa (maior que 1,5 cm).\n\nAlternativa d: Incorreta. Na rubéola, a febre costuma ser baixa ou até ausente, e o exantema surge simultaneamente aos sintomas sistêmicos, não após o desaparecimento da febre. Embora a presença de linfonodos occipitais e retroauriculares seja uma marca da rubéola, essa característica também pode ser encontrada em outros exantemas virais, incluindo o exantema súbito. O padrão de febre que desaparece para o exantema aparecer é o que define a questão a favor da alternativa B.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  },
+  {
+    "id": "AJUDA_d30d732b-7c79-4cfd-8bd8-39519cfa7a8f",
+    "originalId": "d30d732b-7c79-4cfd-8bd8-39519cfa7a8f",
+    "statement": "A Ventilação com Pressão Positiva (VPP) é uma técnica essencial na reanimação neonatal, especialmente em recém-nascidos que apresentam dificuldade respiratória ou apneia. A frequência recomendada de ventilações por minuto durante a VPP em recém-nascidos é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 a 40 ventilações por minuto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "20 a 40 ventilações por minuto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "60 a 80 ventilações por minuto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "40 a 60 ventilações por minuto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "CONTEÚDO TÉCNICO E EXPLICAÇÃO DA QUESTÃO\n\nA Ventilação com Pressão Positiva (VPP) é considerada o procedimento mais importante e efetivo na reanimação do recém-nascido em sala de parto. O objetivo principal é promover a expansão pulmonar e garantir a troca gasosa adequada para reverter a hipoxemia e a bradicardia. Segundo as diretrizes da Sociedade Brasileira de Pediatria (SBP) e do Programa de Reanimação Neonatal (PRN), a VPP deve ser iniciada se o recém-nascido apresentar apneia, respiração irregular (gasping) ou frequência cardíaca inferior a 100 batimentos por minuto após os cuidados iniciais.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. Uma frequência de 30 a 40 ventilações por minuto é considerada baixa para a necessidade fisiológica de um neonato em reanimação. Essa taxa pode não ser suficiente para atingir o volume-minuto necessário para a recuperação do paciente.\n\nAlternativa b) Incorreta. Esta faixa é ainda mais lenta que a anterior e não mimetiza a frequência respiratória fisiológica de um recém-nascido, sendo ineficaz para estabelecer uma capacidade residual funcional adequada durante a reanimação inicial.\n\nAlternativa c) Incorreta. Frequências de 60 a 80 ventilações por minuto são excessivas. Ventilar muito rápido diminui o tempo expiratório, o que pode levar ao aprisionamento de ar (auto-PEEP), risco de pneumotórax e redução do débito cardíaco devido ao aumento da pressão intratorácica.\n\nAlternativa d) CORRETA. A recomendação oficial das diretrizes nacionais e internacionais é realizar de 40 a 60 ventilações por minuto. Para manter esse ritmo, o socorrista deve utilizar a regra mnemônica Aperta - Solta - Solta. O ato de apertar o balão (balão autoinflável ou ventilador em T) corresponde à inspiração, e o comando solta-solta garante um tempo expiratório adequado, permitindo a saída do ar e evitando lesões pulmonares.\n\nGABARITO: Letra D.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  },
+  {
+    "id": "AJUDA_d311983b-acc3-4436-91eb-c4b3c63f7b82",
+    "originalId": "d311983b-acc3-4436-91eb-c4b3c63f7b82",
+    "statement": "Complicações típicas da pancreatite crônica incluem",
+    "options": [
+      {
+        "id": "A",
+        "text": "diabetes mellitus, insuficiência exócrina e pseudocistos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "esplenomegalia e hipertensão portal pré-hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pancreatoblastoma e colangite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ascite quilosa e cirrose hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A pancreatite crônica é uma doença inflamatória progressiva que resulta na substituição do parênquima pancreático por tecido fibrótico, levando à perda definitiva das funções exócrina e endócrina do órgão, além de complicações estruturais.\n\nAlternativa A: Correta. Esta alternativa descreve as complicações clássicas da doença. A insuficiência exócrina ocorre pela destruição das células acinares, reduzindo a produção de enzimas digestivas e causando esteatorreia (diarreia gordurosa). O diabetes mellitus surge pela destruição das ilhotas de Langerhans (insuficiência endócrina). Os pseudocistos são coleções fluidas delimitadas por tecido de granulação ou fibrose, sendo a complicação estrutural mais comum da pancreatite crônica e aguda.\n\nAlternativa B: Incorreta. Embora a pancreatite crônica possa causar a trombose da veia esplênica, o que gera uma hipertensão portal segmentar (ou esquerda) e esplenomegalia, esta é uma complicação específica e menos frequente do que a insuficiência funcional descrita na alternativa A. O termo hipertensão portal pré-hepática é mais amplo e geralmente associado à trombose da veia porta.\n\nAlternativa C: Incorreta. O pancreatoblastoma é um tumor maligno raro que acomete majoritariamente crianças, não tendo relação direta com a pancreatite crônica do adulto (que é fator de risco para o adenocarcinoma ductal do pâncreas). A colangite aguda pode ocorrer se houver compressão do ducto colédoco pela cabeça do pâncreas fibrótica, mas não é considerada uma complicação típica ou definidora da patologia.\n\nAlternativa D: Incorreta. A ascite associada à pancreatite é geralmente a ascite pancreática (rica em amilase por ruptura ductal) e não a ascite quilosa (rica em linfa). A cirrose hepática é uma doença distinta; embora ambas possam compartilhar a mesma etiologia (etilismo crônico), a cirrose não é uma complicação da pancreatite crônica.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  },
+  {
+    "id": "AJUDA_d311f5b6-4201-4934-971d-abc87cbab531",
+    "originalId": "d311f5b6-4201-4934-971d-abc87cbab531",
+    "statement": "Paciente de 64 anos foi submetido a colectomia direita por tumor de cólon. O laudo anatomopatológico revela: adenocarcinoma moderadamente diferenciado, pT3 N0 (pN0), margens cirúrgicas livres, porém foram identificados apenas 8 linfonodos no espécime. Não há perfuração nem obstrução. Considerando as recomendações de estadiamento e conduta adjuvante, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O estadiamento pN0 é definitivo e, como não houve fatores de alto risco, o paciente não deve receber quimioterapia adjuvante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A amostragem de 8 linfonodos é considerada adequada; o paciente deve ser avaliado apenas por vigilância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A amostragem de <12 linfonodos torna o estadiamento subótimo; o paciente deve ser considerado de alto risco para recidiva e, portanto, discutir quimioterapia adjuvante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deve ser realizada nova cirurgia para ressecção adicional de mesentério visando alcançar >=12 linfonodos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A presença de <12 linfonodos exige radioterapia adjuvante obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O estadiamento adequado do câncer de cólon exige a análise de, no mínimo, 12 linfonodos no espécime cirúrgico. Esse número é preconizado pelas principais diretrizes mundiais (como AJCC e NCCN) para garantir que a ausência de metástases (pN0) seja fidedigna. Quando o patologista identifica menos de 12 linfonodos, existe um risco real de subestadiamento, ou seja, o paciente pode ter metástases que não foram detectadas por falha na amostragem.\n\nAnálise das alternativas:\n\na) Incorreta. O estadiamento pN0 não é considerado definitivo se a amostragem foi de apenas 8 linfonodos. A amostragem insuficiente é, por si só, um fator de alto risco no Estádio II (T3N0), o que invalida a afirmação de que o paciente não deve receber quimioterapia.\n\nb) Incorreta. A amostragem de 8 linfonodos é considerada inadequada. O padrão-ouro de 12 linfonodos serve para assegurar que a probabilidade de comprometimento linfonodal oculto seja mínima. Portanto, a vigilância isolada pode ser arriscada sem considerar o tratamento adjuvante.\n\nc) Correta. A presença de menos de 12 linfonodos é um critério clássico de alto risco para o Estádio II do câncer de cólon. Outros fatores de risco incluem tumor T4, obstrução intestinal, perfuração, invasão angiolinfática ou perineural e histologia pouco diferenciada. Nesses casos, a quimioterapia adjuvante deve ser obrigatoriamente discutida com o paciente, pois há benefício potencial em reduzir a recidiva.\n\nd) Incorreta. Não existe indicação de reoperação apenas para ampliar a contagem linfonodal. Uma vez que o tumor principal foi retirado com margens livres, a conduta para mitigar o risco de um estadiamento possivelmente incompleto é o tratamento sistêmico com quimioterapia, e não uma nova intervenção cirúrgica no mesentério.\n\ne) Incorreta. A radioterapia não faz parte do tratamento padrão adjuvante para o câncer de cólon (cólon direito, transverso ou esquerdo). A radioterapia é reservada predominantemente para o câncer de reto ou em situações muito específicas de invasão de estruturas adjacentes fixas. O tratamento complementar indicado para risco de recidiva linfonodal no cólon é a quimioterapia.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:59.681Z"
+  }
+]

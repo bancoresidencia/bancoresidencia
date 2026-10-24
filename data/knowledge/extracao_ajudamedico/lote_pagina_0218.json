@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_3bdef2ce-d2bc-4541-8af1-0ade918e4054",
+    "originalId": "3bdef2ce-d2bc-4541-8af1-0ade918e4054",
+    "statement": "Mulher, 81 anos, apresentou nas últimas semanas três episódios de perda súbita da consciência após levantar-se. Nega tontura, escurecimento da visão ou dor precordial. Antecedentes pessoais: hipertensão arterial em uso de hidroclorotiazida e losartana, osteoporose em uso de composto de cálcio e vitamina D. Exame físico: PA 168x70 mmHg; FC 72 bpm. Ausculta cardíaca: sopro sistólico em diamante em focos da base. Ausculta pulmonar limpa. Solicitado ecocardiograma. O achado esperado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estenose aórtica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Insuficiência aórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Insuficiência mitral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dilatação da raiz da aorta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente de 81 anos apresenta episódios de síncope (perda bruta de consciência), o que compõe a tríade clássica da estenose aórtica (composta por síncope, angina e dispneia). O dado fundamental do exame físico é a descrição do sopro sistólico em diamante nos focos da base (foco aórtico e aórtico acessório). Esse sopro ejetivo, do tipo crescendo-decrescendo, ocorre devido à passagem turbulenta do sangue através de uma valva aórtica que não abre adequadamente, geralmente por calcificação degenerativa senil.\n\nExplicação das alternativas:\n\na) Correta. A estenose aórtica é a valvulopatia mais prevalente em idosos. A síncope ocorre porque a obstrução fixa ao fluxo de saída do ventrículo esquerdo impede o aumento adequado do débito cardíaco em resposta a demandas fisiológicas ou mudanças de posição, resultando em hipoperfusão cerebral. O ecocardiograma é o exame indicado para confirmar a redução da abertura valvar, medir o gradiente de pressão entre o ventrículo e a aorta e calcular a área valvar.\n\nb) Incorreta. A insuficiência aórtica produz um sopro tipicamente diastólico, do tipo aspirativo, e não sistólico. Embora a paciente apresente uma pressão de pulso alargada (168x70 mmHg), que é comum na insuficiência aórtica, a descrição do sopro em diamante é patognomônica de um processo ejetivo/obstrutivo.\n\nc) Incorreta. O sopro da insuficiência mitral é caracterizado por ser holossistólico (ocupa toda a sístole com intensidade constante), sendo melhor audível no foco mitral (ápice cardíaco) e com frequente irradiação para a axila, o que diverge do sopro em diamante na base descrito no caso.\n\nd) Incorreta. A dilatação da raiz da aorta pode levar a uma insuficiência aórtica secundária, mas não é a causa primária de um sopro sistólico ejetivo. Diante de uma paciente idosa com síncope e sopro de ejeção, a principal suspeita clínica que deve ser confirmada pelo ecocardiograma é a estenose da valva.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Síncope",
+      "Semiologia Cardíaca",
+      "Saúde do Idoso",
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  },
+  {
+    "id": "AJUDA_3beb44d0-90a8-4b42-b374-fa2c7e7893c3",
+    "originalId": "3beb44d0-90a8-4b42-b374-fa2c7e7893c3",
+    "statement": "Um paciente de 21 anos, com histórico de diabetes mellitus tipo 1, é trazido ao pronto-socorro apresentando respiração de Kussmaul, desidratação e dor abdominal intensa. Os exames laboratoriais revelam glicemia de 450 mg/dL, cetonas urinárias positivas, gasometria arterial com pH = 7,21 ; HCO3 - 17, Na+ = 138 mEq/L.; Cloro 100 mEq/L., PCO2 = 24 mmHg, configurando um quadro de cetoacidose diabética (CAD). Considerando a abordagem clínica atual para o diagnóstico e tratamento da CAD, qual é a conduta mais apropriada que deve ser adotada imediatamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar a administração de insulina intravenosa, seguida de reposição de bicarbonato de sódio para corrigir a acidose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever líquidos isotônicos para reidratação, seguido da introdução lenta de insulina intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar a infusão de bicarbonato de sódio 8,4%, cerca de 1,3 mEq/ kg /peso, em cerca de 2 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar terapia com metformina em associação com insulina para controle glicêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar soluções salinas hiposmolares para a reidratação e monitorar apenas a glicemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descrito apresenta os critérios diagnósticos para cetoacidose diabética (CAD): glicemia superior a 250 mg/dL, acidose metabólica (pH menor que 7,30 e bicarbonato menor que 18 mEq/L) e presença de cetonas urinárias. O paciente manifesta respiração de Kussmaul e dor abdominal, que são sinais clássicos dessa condição. O tratamento imediato deve focar na tríade: reidratação volêmica, correção de eletrólitos (principalmente o potássio) e insulinoterapia.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A administração de insulina é fundamental, porém o uso de bicarbonato de sódio é contraindicado para este paciente. O consenso atual (ADA e SBD) recomenda bicarbonato apenas se o pH arterial for inferior a 6,9. Em pH de 7,21, o bicarbonato pode causar hipocalemia grave, acidose paradoxal no sistema nervoso central e atrasar a recuperação.\n\nAlternativa b: Correta. Esta é a conduta padrão-ouro. O manejo inicial da CAD exige a reposição volêmica rápida com soluções isotônicas (como o soro fisiológico 0,9%) para restaurar a perfusão tecidual e reduzir os hormônios contrarreguladores. A insulina intravenosa deve ser iniciada logo após, visando interromper a cetogênese e normalizar a glicemia, sempre atentando para os níveis de potássio antes de iniciar a infusão.\n\nAlternativa c: Incorreta. Pelo mesmo motivo da alternativa A, não há indicação clínica para infusão de bicarbonato de sódio com um pH de 7,21. A correção da acidose ocorre naturalmente com a hidratação e a insulinoterapia adequadas.\n\nAlternativa d: Incorreta. A metformina é uma medicação de uso oral para o tratamento crônico do diabetes tipo 2. Ela é absolutamente contraindicada em situações de acidose metabólica aguda e instabilidade, devido ao alto risco de desenvolvimento de acidose lática associada. O tratamento da CAD deve ser feito exclusivamente com insulina de ação rápida.\n\nAlternativa e: Incorreta. Apesar de o gabarito indicado na questão ser a letra (e), esta alternativa apresenta erros técnicos segundo os protocolos médicos vigentes. Primeiramente, a reidratação inicial deve ser feita com soluções isotônicas (0,9%) e não hiposmolares, para evitar uma queda muito rápida da osmolaridade plasmática, o que aumenta o risco de edema cerebral. Segundo, o monitoramento deve ser rigoroso e incluir obrigatoriamente potássio, pH, bicarbonato e hiato aniônico (*anion gap*), e nunca ser limitado apenas à glicemia, que costuma normalizar muito antes da resolução da acidose.\n\nObservação: Há um equívoco no gabarito oficial informado para esta questão, sendo a alternativa (b) a única que descreve a conduta médica correta e segura para o caso.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  },
+  {
+    "id": "AJUDA_3bfe26a0-b513-4fad-bf0f-293069fe9aac",
+    "originalId": "3bfe26a0-b513-4fad-bf0f-293069fe9aac",
+    "statement": "Paciente de 45 anos, cadeirante, com lesão medular traumática há 10 anos, comparece à Unidade Básica de Saúde (UBS) para consulta de rotina. Relata dificuldade para acessar a unidade devido à ausência de rampas e sanitários acessíveis. Informa ainda que, ao solicitar consulta com oftalmologista para avaliação de catarata, foi orientado de que deveria aguardar a fila de regulação, sem atendimento prioritário em razão da deficiência. Diante dessa situação, a conduta mais adequada da equipe de saúde é",
+    "options": [
+      {
+        "id": "A",
+        "text": "garantir o atendimento durante a consulta, encaminhar o paciente para avaliação oftalmológica e orientá-lo a registrar manifestação junto à Ouvidoria sobre as dificuldades de acesso encontradas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "registrar as dificuldades de acesso no prontuário, encaminhar o paciente para consulta especializada e informar à gestão sobre a necessidade de adequação da estrutura física da unidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "assegurar atendimento acessível, comunicar à gestão as barreiras arquitetônicas identificadas e orientar o paciente quanto aos fluxos de acesso aos serviços especializados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "garantir atendimento acessível, comunicar à gestão a existência de barreiras arquitetônicas e encaminhar o paciente para consulta especializada, observando os fluxos assistenciais estabelecidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "assegurar atendimento prioritário e acessível, adotar as medidas cabíveis para reduzir as barreiras ao atendimento e comunicar à gestão a necessidade de adequação da acessibilidade da unidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Tema central: direitos da pessoa com deficiência, acessibilidade e atendimento prioritário no SUS. Base legal: Lei Brasileira de Inclusão (Lei 13.146/2015, Estatuto da Pessoa com Deficiência), Lei 10.048/2000 (prioridade de atendimento), Lei 10.098/2000 (acessibilidade) e diretrizes da Política Nacional de Saúde da Pessoa com Deficiência.\n\nPontos-chave do caso:\n1. O paciente tem deficiência física (paraplegia ou tetraplegia por lesão medular) e, por lei, tem direito a atendimento prioritário em serviços de saúde. Isso inclui o acesso a especialidades e exames, e não só a ordem de chamada na recepção.\n2. A UBS apresenta barreiras arquitetônicas (ausência de rampas e de sanitários acessíveis). Isso é uma forma de discriminação por omissão de acessibilidade, prevista na LBI.\n3. A resposta \"aguarde a fila de regulação, sem prioridade\" contraria o direito de prioridade. A equipe deve reconhecer a prioridade e adotar medidas para efetivá-la, por exemplo sinalizando a condição na solicitação de encaminhamento.\n4. A equipe tem o dever de agir de imediato dentro do que lhe cabe (atendimento acessível, adaptações possíveis, apoio no acesso) e de comunicar a gestão para a adequação estrutural definitiva.\n\nAnálise das alternativas:\n\na) Incorreta. Transfere ao paciente a responsabilidade de denunciar na Ouvidoria. A Ouvidoria é um canal legítimo, mas o dever de agir é da equipe e da gestão. Também não menciona prioridade nem adoção de medidas para reduzir as barreiras.\n\nb) Incorreta. Registrar em prontuário, encaminhar e informar a gestão são atitudes válidas, mas insuficientes. Não garante atendimento prioritário nem acessível no momento, e o encaminhamento ocorre sem reconhecer a prioridade.\n\nc) Incorreta. Apenas \"orienta quanto aos fluxos\", o que mantém o paciente na fila comum e não assegura prioridade. Também é passiva diante da barreira.\n\nd) Incorreta. É a mais próxima da correta, mas manda observar os fluxos assistenciais estabelecidos sem prioridade. Isso perpetua a situação descrita (fila sem prioridade). Falta o atendimento prioritário e a ação ativa para reduzir as barreiras.\n\ne) Correta. É a única que reúne os três elementos exigidos: atendimento prioritário e acessível (direito legal), medidas cabíveis para reduzir as barreiras de imediato (por exemplo atender em local acessível, auxiliar no acesso, adaptar o fluxo) e comunicação à gestão da necessidade de adequação estrutural.\n\nResumo: diante de violação de direitos da pessoa com deficiência, a equipe deve garantir prioridade e acessibilidade, minimizar as barreiras no que for possível e acionar a gestão para a solução definitiva. Gabarito: E.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  },
+  {
+    "id": "AJUDA_3c012e6a-2171-4379-b89c-f4fab371ac4d",
+    "originalId": "3c012e6a-2171-4379-b89c-f4fab371ac4d",
+    "statement": "Sobre as vacinas que podem ser utilizadas na gestação, considere as afirmativas a seguir.\nI. Vírus sincicial respiratório.\nII. Sarampo.\nIII. HPV.\nIV. Hepatite B.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\n\nPara compreender essa questão, o candidato deve dominar o conceito fundamental de imunização na gestação: como regra geral, vacinas de agentes vivos atenuados são contraindicadas, enquanto vacinas de agentes inativados, toxoides ou partículas isoladas são permitidas e, em alguns casos, obrigatórias.\n\nAnálise detalhada das afirmativas:\n\nI. Vírus Sincicial Respiratório (VSR): CORRETA. Esta é uma atualização recente e muito importante para provas de residência. A vacina contra o VSR (comercialmente conhecida como Abrysvo) foi aprovada para uso em gestantes entre a 24ª e a 36ª semana de gestação. O objetivo é a transferência transplacentária de anticorpos para proteger o recém-nascido contra bronquiolite e pneumonia nos primeiros meses de vida.\n\nII. Sarampo: INCORRETA. A vacina contra o sarampo (geralmente aplicada na forma da Tríplice Viral - SRC) é composta por vírus vivos atenuados. Por haver um risco teórico de infecção fetal pelo vírus vacinal, ela é formalmente contraindicada durante toda a gestação. Caso uma mulher em idade fértil seja vacinada, recomenda-se evitar a gravidez por pelo menos 30 dias.\n\nIII. HPV: INCORRETA. Embora a vacina contra o HPV não seja composta por vírus vivos (ela utiliza partículas semelhantes a vírus - VLPs), as diretrizes atuais do Ministério da Saúde e de sociedades médicas não recomendam o seu início durante a gestação por falta de dados robustos de segurança nessa população específica. Se a mulher engravidar durante o esquema vacinal, as doses restantes devem ser adiadas para o período pós-parto.\n\nIV. Hepatite B: CORRETA. É uma vacina de antígeno de superfície (HBsAg) recombinante, portanto, inativada. É segura e recomendada para todas as gestantes que não possuem comprovação vacinal prévia ou sorologia positiva (anti-HBs positivo). O esquema é feito em três doses e visa prevenir a transmissão vertical do vírus da Hepatite B, que possui alto risco de cronificação no recém-nascido.\n\nAnálise das alternativas:\n\nAs afirmativas corretas são a I e a IV.\n\nAlternativa a) Incorreta. O sarampo (II) é contraindicado.\nAlternativa b) CORRETA. Contempla o VSR (I) e a Hepatite B (IV).\nAlternativa c) Incorreta. O HPV (III) não é recomendado na gestação.\nAlternativa d) Incorreta. Inclui sarampo (II) e HPV (III), ambas incorretas para o período gestacional.\nAlternativa e) Incorreta. Inclui sarampo (II) e HPV (III).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Imunizações",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  },
+  {
+    "id": "AJUDA_3c11e5bf-698d-4ad5-8de5-b505c7458027",
+    "originalId": "3c11e5bf-698d-4ad5-8de5-b505c7458027",
+    "statement": "Menino de 15 anos de idade apresenta surdez genética neurossensorial em altas frequências acompanhada de nefrite progressiva.\nA síndrome genética que deve ser considerada é a de",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pendred.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alport.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Usher.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Waardenburg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito, que associa surdez neurossensorial e nefrite progressiva em um paciente jovem, é a apresentação clássica da Síndrome de Alport. Esta patologia é causada por defeitos genéticos na síntese das cadeias do colágeno tipo IV, que é um componente estrutural essencial das membranas basais presentes nos rins (membrana basal glomerular), na cóclea e nos olhos.\n\nAbaixo, a análise de cada alternativa:\n\nAlternativa A - Incorreta: A Síndrome de Pendred é uma desordem genética que causa perda auditiva neurossensorial precocemente, mas sua principal associação extracoclear é com disfunções da tireoide, como o bócio e, eventualmente, o hipotireoidismo. Não há relato de comprometimento renal progressivo nesta síndrome.\n\nAlternativa B - Correta: A Síndrome de Alport manifesta-se tipicamente na infância ou adolescência com hematúria persistente, evoluindo para proteinúria e falência renal progressiva (nefrite). A perda auditiva é neurossensorial, bilateral e costuma afetar inicialmente as frequências mais altas (agudas). Em muitos casos, também ocorrem alterações oculares, como o lenticone anterior. A forma mais comum de herança é a ligada ao cromossomo X, o que explica a maior gravidade dos sintomas no sexo masculino.\n\nAlternativa C - Incorreta: A Síndrome de Usher caracteriza-se pela combinação de perda auditiva neurossensorial e deficiência visual progressiva causada pela retinite pigmentar. É uma das principais causas de surdocegueira hereditária, porém não cursa com glomerulopatia ou nefrite.\n\nAlternativa D - Incorreta: A Síndrome de Waardenburg é uma condição que envolve perda auditiva neurossensorial associada a distúrbios de pigmentação. Os sinais clínicos incluem o topete branco (poliose), íris de cores diferentes (heterocromia), manchas claras na pele e distopia canthorum (afastamento do canto interno dos olhos). Não possui relação com doença renal progressiva.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  },
+  {
+    "id": "AJUDA_3c1f695e-ee61-4f77-b8ae-003c113479a1",
+    "originalId": "3c1f695e-ee61-4f77-b8ae-003c113479a1",
+    "statement": "Gestante, 34 anos, 12 semanas de gestação, G3P2, relata surgimento de lesões pouco dolorosas na região vulvar há 15 dias. Ao exame físico, observam-se múltiplas lesões papulopustulosas e comedões abertos e fechados na região vulvar e perineal, sem sinais de abscesso, fístulas, confluências ou celulite. O diagnóstico mais provável é de _____________. A conduta inicial mais apropriada para o caso deve incluir antibioticoterapia _____________. \n\nAssinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "options": [
+      {
+        "id": "A",
+        "text": "acne vulgar – oral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "acne vulgar – tópica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hidradenite supurativa – oral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hidradenite supurativa – tópica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Gabarito: Alternativa D\n\nComentário clínico:\nO caso descreve uma gestante com lesões foliculares (pápulas, pústulas e comedões) em área intertriginosa rica em glândulas apócrinas (região vulvar e perineal). Este quadro clínico é característico de hidradenite supurativa, também denominada acne inversa. Como a paciente apresenta lesões isoladas, sem formação de fístulas, abscessos, confluências ou cicatrizes retráteis, o quadro é classificado como Estágio I de Hurley (doença leve). A conduta inicial padrão para o estágio I consiste na antibioticoterapia tópica (como a clindamicina a 1%), opção eficaz e com excelente perfil de segurança no período gestacional.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A acne vulgar acomete preferencialmente áreas seborreicas como face, dorso e tórax anterior, e não a região genital/perineal. Além disso, a via oral não é a conduta inicial de escolha para formas leves.\n\nAlternativa B - Incorreta. Embora a via tópica seja adequada para lesões superficiais e isoladas, o diagnóstico de acne vulgar é incorreto para o acometimento vulvoperineal descrito.\n\nAlternativa C - Incorreta. O diagnóstico de hidradenite supurativa está correto, porém a antibioticoterapia sistêmica (oral) é reservada para estágios mais avançados (Hurley II e III) ou para casos que falharam à terapia tópica. Ademais, classes orais frequentemente utilizadas, como as tetraciclinas, são contraindicadas na gestação.\n\nAlternativa D - Correta. Acometimento vulvar e perineal com comedões e lesões papulopustulosas sela o diagnóstico de hidradenite supurativa. Por se tratar de um quadro leve (Hurley I) e em uma gestante de primeiro trimestre, a conduta inicial mais apropriada é a antibioticoterapia tópica.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Doenças de Vulva e Vagina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  },
+  {
+    "id": "AJUDA_3c264055-cab3-4c7e-bbf8-91558f17baf6",
+    "originalId": "3c264055-cab3-4c7e-bbf8-91558f17baf6",
+    "statement": "A abordagem de “Uma Só Saúde” (ou “Saúde Única”) reconhece a conexão entre a saúde humana, animal, vegetal e ambiental. Além disso, propõe a colaboração entre diferentes setores para enfrentar desafios globais. Qual das seguintes alternativas representa corretamente essa abordagem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A promoção da saúde deve ser centrada apenas em humanos, sem considerar a saúde animal ou ambiental;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A colaboração entre disciplinas é irrelevante para combater problemas globais de saúde;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A abordagem de “Uma Só Saúde” integra a saúde humana, animal, vegetal e ambiental para encontrar soluções sustentáveis e colaborativas;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A “Uma Só Saúde” sugere que tanto a saúde de humanos quanto a de animais são completamente independentes entre si.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A abordagem de Saúde Única (One Health) é um modelo transdisciplinar e integrado que reconhece que a saúde dos seres humanos, dos animais domésticos e silvestres, das plantas e do meio ambiente estão estreitamente relacionadas e são interdependentes. Este conceito é fundamental na saúde pública moderna para a prevenção de zoonoses, controle de resistência antimicrobiana e garantia da segurança alimentar.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A promoção da saúde na visão de Saúde Única rompe com o modelo puramente antropocêntrico. Ela entende que não é possível garantir a saúde humana de forma isolada se os ecossistemas estiverem degradados ou se houver desequilíbrios na saúde animal, que frequentemente atuam como sentinelas ou fontes de patógenos.\n\nAlternativa b: Incorreta. A colaboração entre diferentes disciplinas e setores é o pilar principal desta estratégia. Problemas complexos, como pandemias e mudanças climáticas, exigem a atuação conjunta de médicos, veterinários, biólogos, engenheiros ambientais e outros profissionais para serem solucionados.\n\nAlternativa c: Correta. Esta alternativa define com precisão a essência da Saúde Única. O foco está na integração entre os quatro eixos (humano, animal, vegetal e ambiental) para buscar o equilíbrio do ecossistema e encontrar soluções colaborativas e sustentáveis para os desafios de saúde global.\n\nAlternativa d: Incorreta. A premissa fundamental da Saúde Única é justamente a interdependência. Cerca de 60 por cento das doenças infecciosas humanas conhecidas e 75 por cento das doenças infecciosas emergentes são de origem zoonótica, o que demonstra que a saúde humana e a animal estão profundamente conectadas.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  },
+  {
+    "id": "AJUDA_3c3c9403-f405-4883-9eef-fe125b8ec9c8",
+    "originalId": "3c3c9403-f405-4883-9eef-fe125b8ec9c8",
+    "statement": "Paciente de 65 anos, sexo masculino, comparece ao consultório trazendo o resultado de exame de ultrassonografia do abdome que foi realizada para controle de cálculo renal, cujo resultado evidenciou nódulo hipoecogênico localizado no lobo esquerdo do fígado, de 3,2cm de diâmetro. O laudo do ultrassonografista sugere hemangioma. Durante a consulta, o paciente não manifestou nenhuma queixa e relatou que ingere bebidas alcoólicas quase diariamente há vários anos. Em relação a essa situação, qual deve ser a conduta MAIS ADEQUADA neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Informar o paciente que o hemangioma é lesão benigna e não será necessário realização de acompanhamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Informar o paciente que o hemangioma é lesão benigna mas que será necessário realização de acompanhamento com ultrassonografia a cada seis meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar biópsia hepática guiada por ultrassom do nódulo hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar exame de imagem com contraste venoso, exames laboratoriais para avaliação da função hepática e dosagem de alfa-fetoproteína.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO ponto central desta questão é o manejo de um achado incidental de nódulo hepático em um paciente com fator de risco importante para hepatopatia crônica. Embora o laudo da ultrassonografia sugira um hemangioma, o paciente é um homem de 65 anos com histórico de etilismo crônico diário, o que o coloca em alto risco para cirrose e, consequentemente, Carcinoma Hepatocelular (CHC). \n\nNa ultrassonografia, o hemangioma típico é caracterizado como uma lesão hiperecogênica, bem delimitada e homogênea. O nódulo descrito é hipoecogênico, o que foge ao padrão clássico e aumenta a necessidade de investigação. Além disso, em pacientes com risco para cirrose, qualquer nódulo sólido deve ser investigado com exames de imagem dinâmicos (com contraste) para avaliar o padrão de vascularização.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): Não se pode afirmar que a lesão é benigna baseando-se apenas em uma ultrassonografia sugestiva, especialmente em um paciente etilista. O diagnóstico diferencial com o carcinoma hepatocelular é obrigatório neste contexto. Tranquilizar o paciente sem investigação adicional seria um erro grave de conduta.\n\nAlternativa B (Incorreta): O acompanhamento com ultrassonografia só seria uma opção se o diagnóstico de uma lesão benigna já estivesse firmado ou se o nódulo fosse muito pequeno (geralmente menor que 1 cm) em pacientes sem fatores de risco. No caso de um nódulo de 3,2 cm em um paciente com risco de hepatopatia, o diagnóstico deve ser esclarecido prontamente.\n\nAlternativa C (Incorreta): A biópsia hepática não é o primeiro passo na investigação de nódulos hepáticos. Devido ao risco de sangramento e de disseminação tumoral (seeding), a biópsia é reservada para casos onde os exames de imagem com contraste (Tomografia ou Ressonância) são inconclusivos. O Carcinoma Hepatocelular pode ser diagnosticado apenas por métodos de imagem se apresentar o padrão de realce arterial seguido de lavagem (wash-out).\n\nAlternativa D (Correta): Esta é a conduta preconizada pelos protocolos internacionais (como o AASLD e EASL). Diante de um nódulo hepático em paciente com risco para cirrose (etilismo crônico), é necessário realizar um exame de imagem com contraste venoso (Tomografia Computadorizada ou Ressonância Magnética) para observar o comportamento vascular da lesão. A avaliação laboratorial da função hepática busca identificar sinais de cirrose subjacente, e a dosagem de alfa-fetoproteína serve como marcador tumoral auxiliar na investigação de Carcinoma Hepatocelular.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  },
+  {
+    "id": "AJUDA_3c3cf947-c0ff-465c-9c4b-a35958e5e261",
+    "originalId": "3c3cf947-c0ff-465c-9c4b-a35958e5e261",
+    "statement": "Homem de 23 anos, portador de anemia falciforme, é submetido a esplenectomia eletiva.\n\nDurante o procedimento, a estrutura vascular que deve ser cuidadosamente preservada para manter o suprimento arterial do estômago ao se ressecar parte do hilo esplênico é a artéria",
+    "options": [
+      {
+        "id": "A",
+        "text": "esplênica proximal (tronco esplênico).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "gastroepiploica direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "gástrica esquerda (coronária gástrica).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "gastroepiploica esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "pancreática dorsal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão avalia o conhecimento da anatomia cirúrgica do andar superior do abdome, especificamente as relações vasculares entre o baço e o estômago durante o procedimento de esplenectomia. \n\nA artéria esplênica percorre a borda superior do pâncreas em direção ao hilo esplênico. Próximo ao hilo e dentro do ligamento gastroesplênico, ela emite os vasos gástricos curtos e a artéria gastroepiploica esquerda (gastro-omental esquerda), que descem ao longo da grande curvatura gástrica para supri-la. Durante a abordagem do hilo esplênico, a artéria gastroepiploica esquerda deve ser identificada e preservada para assegurar o suprimento sanguíneo da grande curvatura gástrica.\n\nAnálise das alternativas:\n\na) Incorreta. A artéria esplênica proximal localiza-se no retroperitônio, longe do hilo, e sua ligadura é um passo padrão na esplenectomia total, não sendo a estrutura hilar preservada para manter a irrigação gástrica.\n\nb) Incorreta. A artéria gastroepiploica direita é ramo da artéria gastroduodenal (ramo da artéria hepática comum) e localiza-se na porção distal e inferior da grande curvatura gástrica, distante da região anatômica do hilo esplênico.\n\nc) Incorreta. A artéria gástrica esquerda (ou coronária gástrica) origina-se diretamente do tronco celíaco e distribui-se pela pequena curvatura gástrica, na porção superior e medial do abdome, sem relação de contiguidade com o hilo esplênico.\n\nd) Correta. A artéria gastroepiploica esquerda origina-se da porção terminal da artéria esplênica no hilo esplênico e segue pelo ligamento gastroesplênico para irrigar a grande curvatura do estômago. Por estar diretamente associada ao hilo esplênico, exige cuidado específico na dissecção para sua preservação.\n\ne) Incorreta. A artéria pancreática dorsal nasce geralmente da porção proximal ou média da artéria esplênica (ou do tronco celíaco) e é responsável pela irrigação do parênquima pancreático, sem exercer papel no suprimento sanguíneo do estômago.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  },
+  {
+    "id": "AJUDA_3c3de4ab-9e89-47a3-a29c-fa7f539fe821",
+    "originalId": "3c3de4ab-9e89-47a3-a29c-fa7f539fe821",
+    "statement": "Assinale a alternativa que contém procedimentos adequados para pessoas diabéticas com alto risco de desenvolver úlceras nos pés.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Evitar protetor solar e caminhadas longas, e lavar cuidadosamente os pés.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Evitar andar descalço, aquecedores de pés e o uso de sapatos novos durante tempo prolongado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cuidar da higiene dos pés, com retirada de pele e cutículas, usar sapatos novos e manter os pés aquecidos no inverno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prevenir traumas externos, usar sapatos novos e caminhar diariamente por, pelo menos, uma hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Usar antibióticos preventivamente, manter os pés aquecidos, mesmo no verão, e evitar uso de protetor solar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "CONTEÚDO E ANÁLISE DA QUESTÃO\n\nO tema central desta questão é a prevenção do pé diabético, uma das complicações mais graves do diabetes mellitus. Em pacientes de alto risco (aqueles que apresentam neuropatia sensorial, doença arterial periférica ou deformidades), a perda da sensibilidade protetora faz com que pequenos traumas evoluam para úlceras crônicas e amputações.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: Lavar os pés cuidadosamente faz parte da higiene, mas a recomendação sobre evitar protetor solar é irrelevante para a prevenção de úlceras diabéticas. O foco preventivo deve estar na proteção contra traumas mecânicos e térmicos.\n\nAlternativa (b) CORRETA: Esta alternativa lista três cuidados fundamentais baseados nas diretrizes de manejo do pé diabético:\n1. Evitar andar descalço: Devido à neuropatia, o paciente pode pisar em objetos perfurantes ou cortantes e não perceber, gerando uma porta de entrada para infecções.\n2. Evitar aquecedores de pés: A perda da sensibilidade térmica impede que o paciente perceba temperaturas excessivas, o que frequentemente causa queimaduras graves por bolsas de água quente ou aquecedores.\n3. Evitar o uso de sapatos novos por tempo prolongado: Sapatos novos são rígidos e podem criar pontos de pressão ou fricção. A recomendação é usá-los gradualmente (1 a 2 horas por dia) até que se moldem ao pé.\n\nAlternativa (c) INCORRETA: A retirada de cutículas e \"peles\" (calosidades) não deve ser feita pelo próprio paciente ou em salões de beleza comuns. O manuseio inadequado de instrumentos cortantes é uma causa frequente de lesões que evoluem para úlceras. Esses cuidados devem ser realizados por profissionais de saúde ou podólogos especializados.\n\nAlternativa (d) INCORRETA: Embora o exercício seja importante para o controle do diabetes, para pacientes de alto risco de úlceras, caminhadas longas sem calçados adequados e sem inspeção rigorosa podem ser prejudiciais. Além disso, o erro persiste na recomendação de usar sapatos novos sem o cuidado da adaptação gradual.\n\nAlternativa (e) INCORRETA: Não há indicação para o uso de antibióticos preventivos; o uso de antibióticos só deve ocorrer em casos de infecção estabelecida para evitar resistência bacteriana. Manter os pés aquecidos no verão é desnecessário e o conselho sobre protetor solar não possui relação direta com a fisiopatologia das úlceras plantares.\n\nDICA PARA A PROVA\nLembre-se sempre de que a prevenção no pé diabético baseia-se no tripé: inspeção diária (pelo paciente ou familiar), proteção contra traumas (não andar descalço e calçados adequados) e controle de fatores de risco (glicemia e higiene). Qualquer alternativa que sugira procedimentos invasivos caseiros (cortar calos) ou exposição a riscos térmicos ou mecânicos deve ser descartada.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:47.860Z"
+  }
+]

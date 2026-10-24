@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_82077ecb-6065-41e4-9b41-b5285d39a5aa",
+    "originalId": "82077ecb-6065-41e4-9b41-b5285d39a5aa",
+    "statement": "Paciente sexo feminino, 20 anos, vem em consulta com queixa de corrimento vaginal de início há 5 dias. Refere ser de coloração esbranquiçada, às vezes amarelada, odor desagradável, principalmente próximo da menstruação. Nega prurido vaginal e dispareunia, notou leve hiperemia vaginal. Nunca teve quadro anteriormente. Refere uso regular de anticoncepcional, menstruações regulares. G1P1C0A0 (G: gestação, P: parto, C: cesárea, A: aborto), relação sexual ativa com parceiro fixo sem uso de preservativo. Ao exame especular nota-se vulva sem alterações, colo uterino sem alterações, com secreção amarelo/esverdeada, homogênea e em grande quantidade. Analisando o caso clínico, qual dos seguintes testes/exames auxilia no diagnóstico de vaginose bacteriana nesta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Teste de Schiller.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste das aminas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Citopatológico de colo uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico de vaginose bacteriana (VB) é essencialmente clínico e baseado nos critérios de Amsel. Para confirmar o diagnóstico, a paciente deve preencher pelo menos três dos quatro seguintes critérios: 1) Corrimento branco-acinzentado, homogêneo e fino; 2) pH vaginal superior a 4,5; 3) Teste das aminas positivo; 4) Presença de *clue cells* (células-pista) na microscopia a fresco.\n\nAnálise das alternativas:\n\na) Incorreta. O Teste de Schiller consiste na aplicação de uma solução iodada (Lugol) no colo uterino durante o exame ginecológico. Ele serve para identificar áreas ricas em glicogênio (que coram em castanho) e áreas suspeitas de lesões pré-neoplásicas (que não coram). Não possui utilidade no diagnóstico de infecções vaginais ou vaginose.\n\nb) Incorreta. A Colposcopia é um exame complementar indicado para a avaliação detalhada do trato genital inferior (colo, vagina e vulva) quando há alterações no exame citopatológico ou suspeita de malignidade. Não é um método diagnóstico para corrimentos vaginais infecciosos.\n\nc) Correta. O Teste das aminas (ou *whiff test*) é realizado adicionando-se uma gota de hidróxido de potássio (KOH) a 10% sobre a secreção vaginal coletada. Se houver liberação de um odor fétido (semelhante a peixe podre), o teste é considerado positivo. Esse odor ocorre devido à volatilização de aminas (como putrescina e cadaverina) produzidas por bactérias anaeróbias presentes na vaginose bacteriana. É um dos pilares do diagnóstico clínico.\n\nd) Incorreta. O exame citopatológico (Papanicolau) é um teste de rastreamento para o câncer de colo do útero e suas lesões precursoras. Embora o laudo possa mencionar a flora bacteriana sugestiva de vaginose, ele não é o método padrão nem o mais rápido para o diagnóstico clínico da patologia em questão no momento da consulta.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  },
+  {
+    "id": "AJUDA_8209bd0f-70a9-46ff-892a-d5d27bc0d004",
+    "originalId": "8209bd0f-70a9-46ff-892a-d5d27bc0d004",
+    "statement": "Ao participar de um treinamento sobre testes rápidos para Tuberculose em crianças, foi dito que o poder de acurácia de um teste era alto, quando:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a probabilidade de um teste dar um resultado negativo para pessoas que não possuem a doença ou condição em questão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a capacidade do teste de identificar corretamente indivíduos que possuem a condição de interesse, ou seja, a probabilidade de um resultado positivo dado que a pessoa está doente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a probabilidade ou condição de um item, pessoa ou sistema antes de uma intervenção, avaliação ou teste, servindo como linha de base para medir mudanças futuras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a proporção total de acertos, verdadeiros positivos e verdadeiros negativos, em relação a todos os indivíduos testados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "a probabilidade de um resultado positivo ser verdadeiro, indicando a chance de um indivíduo realmente ter a doença ou condição.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A acurácia é um parâmetro estatístico que define a exatidão global de um teste diagnóstico. Ela indica a proporção de todos os resultados que estão corretos, sejam eles positivos ou negativos, em relação ao total de indivíduos avaliados.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. Esta é a definição de Especificidade. A especificidade mede a capacidade do teste de dar um resultado negativo em pessoas que efetivamente não possuem a doença (verdadeiros negativos).\n\nAlternativa B - Incorreta. Esta é a definição de Sensibilidade. A sensibilidade mede a capacidade do teste de identificar corretamente as pessoas que possuem a doença, ou seja, a probabilidade de um resultado ser positivo quando a doença está presente (verdadeiros positivos).\n\nAlternativa C - Incorreta. Esta alternativa descreve o conceito de Linha de Base (Baseline) ou Probabilidade Pré-teste. Trata-se da condição inicial do paciente ou de uma população antes de qualquer intervenção ou exame, servindo como ponto de comparação, mas não define a acurácia de um teste.\n\nAlternativa D - Correta. A acurácia representa o desempenho geral do teste. Ela é calculada pela soma de todos os acertos (Verdadeiros Positivos + Verdadeiros Negativos) dividida pelo número total de indivíduos testados. Portanto, indica a proporção total de acertos do exame.\n\nAlternativa E - Incorreta. Esta é a definição de Valor Preditivo Positivo (VPP). O VPP indica a probabilidade de um indivíduo estar realmente doente após ter recebido um resultado positivo no teste. Diferentemente da acurácia, o VPP é fortemente influenciado pela prevalência da doença na população estudada.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  },
+  {
+    "id": "AJUDA_8213327d-56a3-482d-873a-3bbe779578b4",
+    "originalId": "8213327d-56a3-482d-873a-3bbe779578b4",
+    "statement": "Considerando as características das cefaleias, relacione a Coluna 1 à Coluna 2, associando cada tipo de cefaleia à sua descrição, caso esteja disponível.\n\nColuna 1\n1. Migrânea.\n2. Cefaleia tipo tensional.\n3. Cefaleias trigêmino-autonômicas.\n4. Cefaleia em salvas.\n\nColuna 2\n( ) Cefaleia isenta de manifestações associadas, como vômito, latejamento ou agravamento com movimentos.\n( ) Dor profunda, retro-orbital, intensidade excruciante, não flutuante e de característica explosiva.\n( ) Crises repetidas de cefaleia, unilateral e latejante, com duração de 4 a 72 horas em pacientes com exame físico normal.\n\nA ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 – 1 – 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3 – 4 – 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2 – 4 – 1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "2 – 3 – 4.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver a questão, é necessário correlacionar os critérios clínicos diagnósticos das principais cefaleias primárias com suas descrições:\n\n1. Primeira descrição: \"Cefaleia isenta de manifestações associadas, como vômito, latejamento ou agravamento com movimentos.\"\nCorresponde à Cefaleia tipo tensional (número 2). É caracterizada por dor em aperto ou pressão, intensidade leve a moderada, bilateral, que não se agrava por atividade física rotineira e não apresenta náuseas, vômitos ou sintomas autonômicos associados.\n\n2. Segunda descrição: \"Dor profunda, retro-orbital, intensidade excruciante, não flutuante e de característica explosiva.\"\nCorresponde à Cefaleia em salvas (número 4). É uma das formas mais graves e incapacitantes de cefaleia primária, com dor estritamente unilateral, periorbital/retro-orbital, de intensidade extrema (\"excruciante\") e duração típica de 15 a 180 minutos.\n\n3. Terceira descrição: \"Crises repetidas de cefaleia, unilateral e latejante, com duração de 4 a 72 horas em pacientes com exame físico normal.\"\nCorresponde à Migrânea (número 1). Os critérios clássicos da enxaqueca incluem dor unilateral, caráter pulsátil ou latejante, intensidade moderada a grave, agravada por esforço físico e com duração típica de 4 a 72 horas quando não tratada.\n\nA sequência correta é 2 – 4 – 1.\n\nAnálise das alternativas:\n\na) Incorreta. Aponta a cefaleia em salvas (4) como sendo isenta de sintomas e de dor não latejante/sem piora, o que é falso, pois a cefaleia em salvas é extremamente intensa e acompanhada de disfunção autonômica.\nb) Incorreta. Associa a primeira lacuna às cefaleias trigêmino-autonômicas (3), grupo que obrigatoriamente apresenta sintomas autonômicos parassimpáticos eferentes cranianos (como lacrimejamento e rinorreia).\nc) Correta. Estabelece a sequência precisa associando a cefaleia tipo tensional (2), cefaleia em salvas (4) e migrânea (1).\nd) Incorreta. Erra a ordem na segunda e terceira descrições, invertendo conceitos e aplicando a cefaleia em salvas (4) para a definição de migrânea (1).\n\nGabarito: Alternativa c.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  },
+  {
+    "id": "AJUDA_82174540-2bd7-45f2-af3b-8fffde790450",
+    "originalId": "82174540-2bd7-45f2-af3b-8fffde790450",
+    "statement": "O diâmetro de insinuação da apresentação cefálica fletida e da apresentação pélvica é, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "ocipitobregmatico e bituberoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ocipitofrontal e bitrocanterico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ocipitomentoneiro e bitrocanterico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "biparietal e bitrocanterico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "ocipitofrontal e bituberoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para responder a essa questão, é necessário conhecer os principais diâmetros fetais que se apresentam ao estreito superior da bacia materna durante o mecanismo de parto. A insinuação, ou encastramento, é definida como a passagem do maior diâmetro transverso da apresentação pelo estreito superior da pelve.\n\nNa apresentação cefálica fletida, a cabeça do feto está em flexão máxima sobre o tronco. O diâmetro transverso que deve atravessar o plano de entrada da bacia para que ocorra a insinuação é o diâmetro biparietal, que mede aproximadamente 9,5 cm. É importante destacar que, embora o diâmetro suboccipitobregmático seja o diâmetro anteroposterior que se oferece ao canal de parto na flexão total, o diâmetro de insinuação clássico é o biparietal.\n\nNa apresentação pélvica, o polo que se insinua é o pélvico (nádegas). O diâmetro de referência para a insinuação nessa posição é o diâmetro bitrocantérico, que corresponde à distância entre os dois trocânteres maiores do fêmur fetal, medindo também cerca de 9,5 cm.\n\nAnálise das alternativas:\n\na) Incorreta. O diâmetro suboccipitobregmático é o diâmetro anteroposterior da cabeça fletida. Já o bituberoso é um diâmetro da bacia materna (distância entre as tuberosidades isquiáticas no estreito inferior), e não um diâmetro fetal de insinuação.\n\nb) Incorreta. O diâmetro occipitofrontal (11 cm) é o diâmetro de insinuação da apresentação cefálica defletida de 1º grau (apresentação de bregma), onde a flexão não é completa.\n\nc) Incorreta. O diâmetro occipitomentoniano (13,5 cm) é o maior diâmetro da cabeça fetal e caracteriza a insinuação na apresentação cefálica defletida de 2º grau (apresentação de fronte).\n\nd) Correta. Identifica com precisão o diâmetro biparietal como o diâmetro de insinuação na apresentação cefálica fletida e o diâmetro bitrocantérico como o diâmetro de insinuação na apresentação pélvica.\n\ne) Incorreta. Combina o diâmetro occipitofrontal (próprio da deflexão de 1º grau) com o diâmetro bituberoso (pertencente à anatomia da pelve materna).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  },
+  {
+    "id": "AJUDA_82190330-8363-4df6-9412-1c12cc3080fe",
+    "originalId": "82190330-8363-4df6-9412-1c12cc3080fe",
+    "statement": "A respeito do processo de lactação, assinale a alternativa que descreve a função da prolactina no puerpério.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estímulo da síntese e da secreção de leite pelas células alveolares da mama",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estímulo da descida do leite por contração das células mioepiteliais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Redução progressiva da produção de leite com estímulo da sucção",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibição da ejeção do leite por redução da contratilidade alveolar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O processo de lactação é coordenado principalmente por dois hormônios distintos: a prolactina e a ocitocina. Para responder corretamente a essa questão, é fundamental diferenciar a produção da ejeção do leite.\n\nAlternativa a: Correta. A prolactina é um hormônio secretado pela adeno-hipófise (hipófise anterior). Sua principal função no puerpério é a lactogênese e a galactopoese. Ela atua nos receptores das células epiteliais alveolares da glândula mamária, estimulando a síntese dos componentes do leite (proteínas, gorduras e carboidratos) e sua secreção para o interior dos alvéolos.\n\nAlternativa b: Incorreta. A função de estimular a descida (ejeção) do leite por meio da contração das células mioepiteliais que envolvem os alvéolos mamários é da ocitocina, e não da prolactina. A ocitocina é liberada pela neuro-hipófise em resposta ao estímulo de sucção do mamilo.\n\nAlternativa c: Incorreta. O estímulo da sucção causa o efeito inverso: ele promove um arco reflexo que inibe a dopamina (fator inibidor da prolactina) no hipotálamo, resultando em maiores níveis de prolactina e, consequentemente, no aumento e manutenção da produção de leite.\n\nAlternativa d: Incorreta. A prolactina não inibe a ejeção do leite. Ela é a responsável por garantir que haja leite produzido para ser ejetado. A inibição da lactação geralmente ocorre por falta de esvaziamento mamário ou por ação de fármacos agonistas dopaminérgicos, mas não é uma função fisiológica da prolactina.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  },
+  {
+    "id": "AJUDA_8227af36-1c5d-41c5-bbde-326e66128700",
+    "originalId": "8227af36-1c5d-41c5-bbde-326e66128700",
+    "statement": "Um homem de 47 anos de idade, fumante há 30 anos e com histórico de consumo de bebidas alcoólicas destiladas, apresenta uma úlcera dolorosa na língua há 3 meses. Relata que a lesão não cicatriza e está aumentando de tamanho. Além disso, nota dificuldade para engolir e dor referida no ouvido. Ao exame físico, observa-se uma úlcera irregular na borda lateral da língua, com margens endurecidas e base infiltrada. Não há linfonodos cervicais palpáveis.\nO diagnóstico provável e o tratamento inicial mais adequado para esse paciente são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "adenoma; ressecção com anestesia local;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "candidíase oral; iniciar tratamento antifúngico tópico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ulceração traumática; recomendações de higiene oral rigorosa e acompanhamento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "líquen plano oral; encaminhar para biópsia e tratamento com corticosteroides tópicos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "carcinoma espinocelular; biópsia da lesão, estadiamento e tratamento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de alerta para malignidade na cavidade oral. Os principais fatores de risco estão presentes: idade (embora jovem, o tempo de exposição é alto), tabagismo crônico (30 anos) e consumo de álcool destilado. A descrição da lesão é patognomônica de um processo invasivo: úlcera de longa duração (3 meses), que não cicatriza, com crescimento progressivo, bordas endurecidas e base infiltrada. A dor referida no ouvido (otalgia reflexa) e a dificuldade para engolir (disfagia) sugerem infiltração de tecidos profundos e possível comprometimento de ramos nervosos.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. O adenoma é uma neoplasia benigna de origem glandular. Geralmente se manifesta como um nódulo submucoso, de crescimento lento e sem ulceração primária. Além disso, o tratamento de uma lesão suspeita nunca deve ser a ressecção imediata com anestesia local sem um diagnóstico histopatológico prévio e estadiamento adequado.\n\nb) INCORRETA. A candidíase oral (infecção fúngica) manifesta-se comumente como placas esbranquiçadas que podem ser removidas por raspagem (forma pseudomembranosa) ou áreas eritematosas (forma atrófica). Não se apresenta como uma úlcera única, endurecida e infiltrada com meses de evolução em um paciente fumante.\n\nc) INCORRETA. Embora úlceras traumáticas sejam comuns, elas tendem a cicatrizar em até 14 dias após a remoção do agente causal (como um dente quebrado ou prótese desajustada). Diante de uma úlcera que persiste por mais de 15 dias, a biópsia é obrigatória. Tratar apenas com higiene e acompanhamento retardaria o diagnóstico de uma neoplasia maligna.\n\nd) INCORRETA. O líquen plano é uma doença inflamatória crônica, frequentemente bilateral, que pode apresentar estrias esbranquiçadas (estrias de Wickham) ou áreas erosivas. Embora o líquen plano erosivo possa causar dor, a descrição de \"margens endurecidas e base infiltrada\" em um paciente com alto consumo de tabaco e álcool direciona fortemente para o carcinoma, e não para uma doença autoimune/inflamatória.\n\ne) CORRETA. O carcinoma espinocelular (CEC) é responsável por mais de 90% dos cânceres de boca. A localização na borda lateral da língua é a mais frequente. O manejo padrão para qualquer lesão com características de malignidade (endurecimento, infiltração, persistência) consiste em: realizar biópsia incisional para confirmação diagnóstica, proceder ao estadiamento clínico e por imagem (para avaliar extensão local e linfonodos) e, em seguida, definir o tratamento, que, na maioria dos casos operáveis da cavidade oral, é cirúrgico (ressecção da lesão com margens e, frequentemente, esvaziamento cervical).",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Neoplasias Benignas e Malignas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  },
+  {
+    "id": "AJUDA_82285ccd-4680-4a3a-8cbd-a3998abc9dd9",
+    "originalId": "82285ccd-4680-4a3a-8cbd-a3998abc9dd9",
+    "statement": "A vacinação contra o HPV foi incorporada ao SUS em 2014, como estratégia adicional de prevenção primária ao câncer de colo uterino.\nDe acordo com o calendário nacional atual de imunização, como deve ser prescrita a vacina quadrivalente do HPV (4HPV) para uma criança hígida de 9 anos de idade que irá tomá-la pelo SUS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esquema de 0 e 2 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Esquema de 0 e 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Esquema de 0, 2 e 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dose única.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Dose única aos 9 anos e nova dose de reforço aos 16 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda uma atualização recente e muito importante do Programa Nacional de Imunizações (PNI) do Ministério da Saúde.\n\nEm abril de 2024, o Brasil adotou a estratégia de dose única para a vacinação contra o HPV em substituição ao esquema anterior de duas doses. Essa decisão seguiu recomendações da Organização Mundial da Saúde (OMS) e estudos que comprovam a eficácia de apenas uma dose na proteção contra os principais tipos de câncer causados pelo vírus em indivíduos hígidos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O esquema de 0 e 2 meses não faz parte das recomendações atuais ou anteriores do SUS para crianças hígidas de 9 anos.\n\nAlternativa b) Incorreta. Este era o esquema oficial utilizado até o início de 2024 (duas doses com intervalo de 6 meses). Com a nova nota técnica do Ministério da Saúde, este esquema foi descontinuado para a população geral de 9 a 14 anos, passando a ser recomendada apenas uma dose.\n\nAlternativa c) Incorreta. O esquema de três doses (0, 2 e 6 meses) é reservado para grupos especiais de pacientes imunossuprimidos (pessoas vivendo com HIV/Aids, transplantados de órgãos sólidos ou medula óssea e pacientes oncológicos) na faixa etária de 9 a 45 anos.\n\nAlternativa d) Correta. Conforme a Nota Técnica nº 41/2024-DPNI/SVSA/MS, a vacina quadrivalente contra o HPV passou a ser administrada em dose única para meninos e meninas de 9 a 14 anos de idade no SUS. O objetivo da mudança é aumentar a adesão à vacinação e expandir a cobertura vacinal.\n\nAlternativa e) Incorreta. Não existe recomendação de dose de reforço aos 16 anos para quem iniciou o esquema conforme as diretrizes atuais do PNI. A dose única aplicada entre 9 e 14 anos é considerada suficiente para a proteção a longo prazo em indivíduos imunocompetentes.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  },
+  {
+    "id": "AJUDA_822a945f-b302-49c5-8fe2-59240ce9a32b",
+    "originalId": "822a945f-b302-49c5-8fe2-59240ce9a32b",
+    "statement": "Paulo tem 4 meses e 15 dias, e Carlos tem 10 meses e 15 dias. Paulo localiza som, rola na mesa de exame, faz busca ativa de objetos e os leva à boca, porém não os transfere de uma mão para outra. Carlos senta-se sem apoio, busca e transfere objetos de uma mão para outra, não brinca de “esconde, achou” e nem consegue duplicar sílabas. Considerando os achados descritos para as idades de Paulo e Carlos, conforme proposto na Caderneta da Criança do Ministério da Saúde, como são avaliados os seus desenvolvimentos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paulo e Carlos apresentam desenvolvimentos normais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paulo apresenta desenvolvimento normal, e Carlos apresenta provável atraso no desenvolvimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Paulo e Carlos apresentam provável atraso no desenvolvimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paulo apresenta atraso no desenvolvimento, e Carlos apresenta desenvolvimento normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar os marcos do desenvolvimento infantil estabelecidos pela Caderneta da Criança do Ministério da Saúde para cada uma das idades citadas.\n\nAnálise de Paulo (4 meses e 15 dias):\nPaulo está na faixa etária que compreende os 4 meses até os 6 meses incompletos. Segundo os marcos do desenvolvimento:\n1. Localizar o som: esperado aos 4 meses. Paulo realiza.\n2. Rolar: esperado entre 4 e 6 meses. Paulo realiza.\n3. Busca ativa de objetos e levá-los à boca: esperado aos 4 meses. Paulo realiza.\n4. Transferir objetos de uma mão para outra: este é um marco esperado para os 6 meses de idade.\nComo Paulo realiza todos os marcos esperados para sua idade atual (4 meses) e a falta da transferência de objetos é normal, já que ele ainda não atingiu os 6 meses, seu desenvolvimento é considerado normal.\n\nAnálise de Carlos (10 meses e 15 dias):\nCarlos está na faixa etária dos 9 meses até 1 ano incompleto. Segundo os marcos do desenvolvimento para esta fase:\n1. Sentar-se sem apoio: esperado aos 6-9 meses. Carlos realiza.\n2. Transferir objetos de uma mão para outra: esperado aos 6 meses. Carlos realiza.\n3. Brincar de esconde-achou: marco social e cognitivo esperado aos 9 meses. Carlos NÃO realiza.\n4. Duplicar sílabas (ex.: dada, mama, papa): marco de linguagem esperado aos 9 meses. Carlos NÃO realiza.\nDe acordo com o Ministério da Saúde, quando uma criança apresenta a ausência de um ou mais marcos para sua faixa etária (neste caso, os marcos de 9 meses), a classificação é de Provável Atraso no Desenvolvimento.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Apenas Paulo tem desenvolvimento normal. Carlos falhou em marcos essenciais de linguagem e interação social esperados para sua idade.\n\nAlternativa (b) Correta. Paulo cumpre todos os marcos para os 4 meses (não sendo obrigado a transferir objetos ainda). Carlos apresenta ausência de marcos que deveriam estar presentes aos 9 meses (esconde-achou e duplicar sílabas), o que caracteriza provável atraso.\n\nAlternativa (c) Incorreta. Paulo não apresenta atraso, pois as habilidades que ele possui são compatíveis com seus 4 meses e 15 dias.\n\nAlternativa (d) Incorreta. Esta alternativa inverte a situação clínica dos pacientes, atribuindo erroneamente o atraso a Paulo e a normalidade a Carlos.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  },
+  {
+    "id": "AJUDA_82338940-1526-4ba7-8a1d-c8b9437c4861",
+    "originalId": "82338940-1526-4ba7-8a1d-c8b9437c4861",
+    "statement": "Criança do sexo masculino, previamente hígida, 3 anos e 6 meses de idade, foi levada ao pronto‑socorro com quadro de febre há 5 dias, persistente e associada à irritabilidade. No segundo dia de febre, evoluiu com hiperemia conjuntival bilateral não exsudativa e exantema máculo‑papular difuso, inicialmente no tronco. No quarto dia de sintomas, o cuidador notou fissuras nos lábios e edema em mãos. Ao exame físico, observou‑se adenomegalia cervical.\n\nConsiderando esse caso clínico hipotético, assinale a opção que apresenta a principal hipótese diagnóstica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "poliarterite nodosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "escarlatina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença de Behçet",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sarampo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "doença de Kawasaki",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão apresenta um caso clássico de doença de Kawasaki (DK), uma vasculite sistêmica de pequenos e médios vasos que afeta predominantemente crianças menores de 5 anos. O diagnóstico é essencialmente clínico e baseia-se na presença de febre persistente por 5 ou mais dias, associada a pelo menos 4 dos 5 critérios diagnósticos principais.\n\nAnálise dos critérios presentes no caso:\n1. Febre por 5 dias (presente).\n2. Alterações nas extremidades: edema de mãos (presente).\n3. Exantema polimorfo: maculopapular difuso (presente).\n4. Hiperemia conjuntival bilateral não exsudativa (presente).\n5. Alterações labiais e da cavidade oral: fissuras labiais (presentes).\n6. Linfadenopatia cervical, geralmente unilateral e > 1,5 cm (presente).\n\nO paciente preenche todos os requisitos para o diagnóstico de doença de Kawasaki completa.\n\nAnálise das alternativas:\n\na) Incorreta. A poliarterite nodosa (PAN) é uma vasculite que também acomete vasos de médio calibre, mas é rara na infância e sua apresentação clínica costuma envolver livedo reticularis, nódulos subcutâneos, mialgia e hipertensão renal, não seguindo o padrão de febre alta com critérios mucocutâneos específicos da DK.\n\nb) Incorreta. A escarlatina apresenta febre e exantema, porém o exantema é micropapular (aspecto de lixa), há presença de faringite exsudativa, sinais de Filatov e de Pastia, e não costuma cursar com conjuntivite ou edema de extremidades.\n\nc) Incorreta. A doença de Behçet é caracterizada por úlceras orais recorrentes, úlceras genitais e uveíte. Não é uma doença febril aguda exantemática típica da primeira infância.\n\nd) Incorreta. O sarampo cursa com febre e exantema maculopapular de progressão craniocaudal, mas é acompanhado por sintomas catarrais intensos (tosse, coriza e conjuntivite com exsudato/fotofobia) e pelas manchas de Koplik na mucosa oral, o que difere da conjuntivite seca e das alterações de extremidades da DK.\n\ne) Correta. A descrição clínica é o \"padrão-ouro\" para o diagnóstico da doença de Kawasaki, respeitando o tempo de febre e a presença dos demais critérios diagnósticos (conjuntivite não purulenta, alterações orais, edema de mãos, exantema e adenomegalia). É a principal causa de cardiopatia adquirida em crianças em países desenvolvidos devido ao risco de aneurismas de artérias coronárias.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  },
+  {
+    "id": "AJUDA_823b85ee-3d92-40a1-a14b-1edd2345ab65",
+    "originalId": "823b85ee-3d92-40a1-a14b-1edd2345ab65",
+    "statement": "Uma paciente de 29 anos investiga infertilidade e oligomenorreia. Exames mostram Prolactina sérica de 85 ng/mL (Valor de referência < 25 ng/mL). A ressonância magnética de sela túrcica não evidencia adenomas. A paciente é assintomática do ponto de vista neurológico e nega uso de medicamentos. Diante da discordância clínico-laboratorial e de imagem (hiperprolactinemia sem tumor visível e com poucos sintomas para o nível hormonal), assinale a alternativa correta sobre a investigação diagnóstica adicional necessária.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se solicitar a pesquisa de macroprolactina (precipitação com polietilenoglicol - PEG), pois a presença de complexos de prolactina ligados a imunoglobulinas (IgG) pode elevar falsamente os níveis séricos medidos sem exercer atividade biológica significativa in vivo (\"big-big prolactin\").",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A etiologia é certamente hipotireoidismo primário subclínico, devendo-se solicitar TSH e T4 livre, pois o TRH elevado estimula os lactotrofos hipofisários, e a correção tireoidiana dispensará o tratamento direto da prolactina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico provável é o \"Efeito Gancho\" (Hook Effect), onde níveis excessivamente altos de prolactina saturam os anticorpos do ensaio laboratorial, resultando em uma leitura falsamente baixa, devendo-se repetir o exame com diluição da amostra.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A paciente deve ser tratada empiricamente com agonistas dopaminérgicos (Cabergolina) em dose alta, assumindo-se a presença de um microadenoma não visualizado na ressonância (microadenoma oculto), até a normalização dos níveis para restaurar a fertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda um cenário clássico de discordância entre os níveis de prolactina, a clínica da paciente e os achados de imagem, exigindo o conhecimento sobre as armadilhas laboratoriais na dosagem hormonal.\n\nAlternativa A (Correta): Quando há um aumento da prolactina (geralmente entre 30 e 100 ng/mL) em pacientes assintomáticas ou com poucos sintomas, e a ressonância magnética não mostra adenomas, a principal suspeita deve ser a macroprolactinemia. A macroprolactina (ou \"big-big prolactin\") é um complexo formado pela prolactina ligada a anticorpos IgG. Esse complexo tem alto peso molecular e baixa atividade biológica, mas é detectado pela maioria dos ensaios laboratoriais comuns, gerando um resultado falsamente elevado. A pesquisa é feita por meio da precipitação com polietilenoglicol (PEG). Se, após a precipitação, os níveis de prolactina livre forem normais, confirma-se que a elevação era por macroprolactina, o que não requer tratamento medicamentoso.\n\nAlternativa B (Incorreta): Embora o hipotireoidismo primário seja uma causa fisiopatológica de hiperprolactinemia (o TRH elevado estimula os lactotrofos), a questão foca na discordância laboratorial e de imagem. Além disso, o hipotireoidismo costuma cursar com sintomas clínicos sistêmicos e a alternativa afirma que a etiologia é \"certamente\" esta, o que é um erro conceitual antes de excluir interferências laboratoriais mais prováveis para o quadro descrito.\n\nAlternativa C (Incorreta): O \"efeito gancho\" (hook effect) ocorre em situações opostas. Ele acontece quando há níveis extremamente elevados de prolactina (geralmente > 5.000 ou 10.000 ng/mL, comuns em grandes macroadenomas), que saturam os anticorpos do ensaio, resultando em uma leitura falsamente baixa (ex.: o exame mostra 100 ng/mL, mas o real é 20.000 ng/mL). Na questão, a ressonância é normal, o que descarta a presença de um tumor gigante que pudesse causar o efeito gancho.\n\nAlternativa D (Incorreta): O tratamento empírico com agonistas dopaminérgicos em dose alta não é recomendado sem a confirmação de que a prolactina dosada é biologicamente ativa. Se a paciente tiver macroprolactinemia, o tratamento com cabergolina será desnecessário e exporia a paciente a efeitos colaterais sem benefício, já que a macroprolactina não causa infertilidade ou oligomenorreia (nesses casos, a causa dos sintomas deve ser investigada em outras etiologias, como a síndrome dos ovários policísticos).\n\nResumo: Diante de hiperprolactinemia com poucos sintomas e ressonância magnética normal, o primeiro passo é excluir a macroprolactina por meio do teste com PEG.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Hipófise"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:01.878Z"
+  }
+]

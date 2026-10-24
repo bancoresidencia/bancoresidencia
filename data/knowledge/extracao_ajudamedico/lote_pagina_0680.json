@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_bdf36a1a-eaef-4a8e-ac73-9cff7fb9e8a6",
+    "originalId": "bdf36a1a-eaef-4a8e-ac73-9cff7fb9e8a6",
+    "statement": "Uma paciente de 25 anos de idade procurou atendimento por sangramento uterino irregular há quatro meses, com intervalos variáveis entre 15 e 45 dias, acompanhado de fluxo aumentado. Negou uso de anticoncepcionais, histórico de doenças crônicas ou gestação. O exame físico não mostrou alterações relevantes. O s exames laboratoriais revelaram: Beta-hCG negativo, Hemograma: Hb = 11,2 g/dL. A ultrassonografia transvaginal mostrou útero de volume normal, endométrio com 1 mm na fase tardia do ciclo, sem pólipos ou miomas visíveis. Qual alteração fisiopatológica é mais comum nesses casos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução da produção hipotalâmica de GnRH",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Falha na seleção e dominância folicular, levando à anovulação persistente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aumento da atividade dopaminérgica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Excesso de FSH na fase folicular",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma paciente jovem (25 anos) com Sangramento Uterino Anormal (SUA) caracterizado por irregularidade menstrual e aumento do fluxo. As etapas fundamentais da investigação foram cumpridas: gravidez foi descartada (Beta-hCG negativo) e causas estruturais foram afastadas por meio da ultrassonografia (útero de volume normal, sem miomas ou pólipos). O endométrio de 1 mm sugere que o sangramento recente pode ter descamado a camada funcional, mas a chave da questão está na irregularidade do ciclo (15 a 45 dias), que é o marcador clássico de disfunção ovulatória. Em mulheres jovens, na ausência de doenças sistêmicas ou estruturais, a causa mais comum é a anovulação crônica.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A redução da produção hipotalâmica de GnRH levaria a um quadro de hipogonadismo hipogonadotrófico. Clinicamente, isso se manifestaria como amenorreia (ausência de menstruação) e não como sangramento irregular com fluxo aumentado. É o que ocorre, por exemplo, na amenorreia funcional hipotalâmica (estresse extremo, perda de peso excessiva ou exercício físico intenso).\n\nAlternativa (b) CORRETA: Esta é a base da fisiopatologia do sangramento uterino anormal de causa ovulatória (conhecido na classificação FIGO como SUA-O). Quando ocorre uma falha na seleção e dominância folicular, não há a formação do folículo dominante e, consequentemente, não ocorre a ovulação. Sem ovulação, não há formação do corpo lúteo nem produção de progesterona. O endométrio fica exposto apenas ao estímulo estrogênico (sem a oposição da progesterona), tornando-se instável e descamando de forma irregular e imprevisível, o que justifica os intervalos variáveis e o fluxo aumentado.\n\nAlternativa (c) INCORRETA: A dopamina é o principal fator inibidor da prolactina. Portanto, um aumento da atividade dopaminérgica levaria a uma redução dos níveis de prolactina, o que geralmente não causa distúrbios menstruais. O contrário (diminuição da dopamina ou uso de drogas que bloqueiam seus receptores) levaria à hiperprolactinemia, esta, sim, uma causa conhecida de anovulação e irregularidade menstrual.\n\nAlternativa (d) INCORRETA: O excesso de FSH na fase folicular inicial é tipicamente um marcador de baixa reserva ovariana ou transição para a menopausa (perimenopausa), na qual o hipotálamo e a hipófise tentam estimular um ovário que já não responde adequadamente. Embora possa haver anovulação nesses casos, não é a alteração fisiopatológica primária ou mais comum para uma paciente de 25 anos com o quadro descrito; a falha no eixo de feedback que impede a dominância folicular é a explicação mais direta.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  },
+  {
+    "id": "AJUDA_bdf3d0c8-e4de-4d01-9fa5-71f642a6a88c",
+    "originalId": "bdf3d0c8-e4de-4d01-9fa5-71f642a6a88c",
+    "statement": "Em relação à insuficiência ovariana prematura (IOP), é correto se afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "é a perda da atividade ovariana antes dos 40 anos, podendo ter amenorreia ou ciclos irregulares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "essa doença cursa com gonadotrofinas e estradiol baixos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "são fatores de risco esquemas de tratamentos para doenças crônicas, alcoolismo e laqueadura tubárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "se usar FSH para diagnóstico, esse deverá ser dosado no meio do ciclo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o hormônio antimulleriano (AMH) deve ser usado para esse diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Insuficiência Ovariana Prematura (IOP) é uma condição clínica caracterizada pelo esgotamento ou disfunção dos folículos ovarianos em mulheres com idade inferior a 40 anos. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa (a) Correta: Esta é a definição clássica de IOP. A condição envolve a perda da atividade folicular ovariana antes dos 40 anos de idade, manifestando-se clinicamente por irregularidade menstrual (oligomenorreia) ou ausência completa de menstruação (amenorreia) por pelo menos 4 meses.\n\nAlternativa (b) Incorreta: A IOP é classificada como um hipogonadismo hipergonadotrófico. Como o ovário não responde aos estímulos e produz pouco estradiol (estradiol baixo), o sistema de feedback negativo é interrompido, levando a hipófise a secretar níveis elevados de gonadotrofinas (FSH e LH altos) na tentativa de estimular os ovários.\n\nAlternativa (c) Incorreta: Embora tratamentos para doenças crônicas (como quimioterapia e radioterapia) sejam fatores de risco iatrogênicos importantes, o alcoolismo e a laqueadura tubária não são considerados fatores causais estabelecidos para a IOP. As principais causas são genéticas (como a Síndrome de Turner e pré-mutação do gene FMR1), autoimunes e iatrogênicas.\n\nAlternativa (d) Incorreta: Para o diagnóstico de IOP, o FSH deve estar elevado (geralmente acima de 25 ou 40 UI/L, dependendo do critério utilizado) em duas dosagens com intervalo de pelo menos 4 a 6 semanas. A dosagem no meio do ciclo é inadequada, pois o pico fisiológico de gonadotrofinas que ocorre na ovulação pode levar a um falso diagnóstico.\n\nAlternativa (e) Incorreta: Embora o hormônio antimülleriano (AMH) seja um excelente marcador da reserva ovariana e costume estar muito baixo ou indetectável na IOP, ele ainda não faz parte dos critérios diagnósticos formais estabelecidos pelas principais sociedades (como ESHRE e ASRM). O diagnóstico permanece essencialmente clínico (idade e amenorreia) e bioquímico através da elevação do FSH.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Amenorreia",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  },
+  {
+    "id": "AJUDA_be1ab438-7bc4-428a-aaa5-2ddf52b9af7d",
+    "originalId": "be1ab438-7bc4-428a-aaa5-2ddf52b9af7d",
+    "statement": "Criança, sexo masculino, 2 anos de idade, com antecedente de anemia falciforme (Hb basal de 8,5 g/dL), é admitida no pronto-socorro com queixa de febre de até 38,5 °C há 4 dias, palidez e adinamia há 3 dias. Ao exame físico, apresenta-se descorado 3+/4+, hidratado, com FC de 152 bpm, FR de 23 irpm, PA de 80×48 mmHg, SpO2 de 94% em ar ambiente, ausculta pulmonar sem alteração, ausculta cardíaca com sopro holossistóloco 2+/6+, fígado palpável no rebordo costal direito, baço percutível no rebordo costal esquerdo. Coletados exames laboratoriais e liberado hemograma na urgência com resultado de pânico:\n\nHb: 4,5 g/dL\nHt: 16%\nLeucócitos: 17.350/mm3\nPlaquetas: 160.000/mm3\nReticulócitos: 0,1%\n\nAssinale a alternativa que melhor descreve o mecanismo fisiopatológico do quadro apresentado pelo paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Choque hipovolêmico hipotensivo relacionado à retenção esplênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sepse e anemia de consumo decorrente de infecção por agente encapsulado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hemólise intravascular disseminada decorrente de atividade da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anemia sintomática por supressão transitória da eritropoiese medular.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de uma crise aplásica em um paciente pediátrico com anemia falciforme. O elemento-chave para a resolução do caso é a presença de anemia aguda e grave (queda da hemoglobina de 8,5 para 4,5 g/dL) associada à reticulocitopenia profunda (reticulócitos de 0,1%), após um quadro febril. Como as hemácias na anemia falciforme possuem sobrevida encurtada (10 a 20 dias), qualquer interrupção na eritropoiese resulta em uma queda rápida e dramática nos níveis de hemoglobina. O principal agente etiológico dessa supressão é o Parvovírus B19, que infecta diretamente os precursores eritroides.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O sequestro esplênico agudo é caracterizado pela retenção súbita de grande volume sanguíneo no baço, cursando com esplenomegalia volumosa e dolorosa (baço palpável muitos centímetros abaixo do rebordo costal esquerdo) e choque hipovolêmico. Além disso, a medula óssea permanece funcionante e responde com intensa reticulocitose, ao contrário da reticulocitopenia observada no paciente, cujo baço estava apenas percutível.\n\nAlternativa b: Incorreta. Embora pacientes com anemia falciforme apresentem asplenia funcional e alto risco de infecções graves por germes encapsulados, a fisiopatologia da queda rápida de hemoglobina acompanhada de ausência de resposta reticulocitária não é explicada por consumo séptico, mas sim pela aplasia eritroide medular transitória.\n\nAlternativa c: Incorreta. Crises de hiper-hemólise cursam com acentuada destruição periférica de hemácias, o que deflagra uma intensa resposta medular compensatória, resultando em reticulocitose expressiva (anemia hiper-regenerativa). A presença de reticulócitos em 0,1% descarta a hemólise como mecanismo primário dessa piora aguda.\n\nAlternativa d: Correta. Descreve com precisão o mecanismo da crise aplásica, em que ocorre a supressão temporária da eritropoiese na medula óssea, levando à anemia sintomática e hiporregenerativa (reticulocitopenia).",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  },
+  {
+    "id": "AJUDA_be1ed56a-a3ba-4c7f-a1e4-2b3c1e597e5f",
+    "originalId": "be1ed56a-a3ba-4c7f-a1e4-2b3c1e597e5f",
+    "statement": "A consulta é a principal manifestação da relação clínica que se estabelece entre médico e paciente. Apesar de todo desenvolvimento tecnológico, o encontro continua sendo o fator determinante para uma boa prática clínica. O método clínico centrado na pessoa (MCCP) é um modelo de abordagem que facilita a compreensão e a execução das competências essenciais para um cuidado verdadeiramente centrado no indivíduo, e não na doença.\nSobre o MCCP, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O MCCP tem quatro componentes que estão estreitamente interligados e passam por explorar a saúde, a doença e a experiência da doença; entender a pessoa como um todo; elaborar um plano conjunto de manejo dos problemas e instensificar a relação entre médico e paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de um passo a passo a ser seguido nas consultas, com ênfase no conteúdo (as tarefas que estão focadas em uma consulta) e não no processo (os comportamentos que ocorrem em uma consulta).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A relação médico paciente não deve interferir na consulta médica, tendo em vista que essa relação é o aspecto menos terapêutico do encontro para cuidar da saúde dos indivíduos. Uma abordagem mais tecnicista consegue resolver a maior parte dos problemas clínicos durante a anamnese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ao falar sobre decisão compartilhada e elaboração em conjunto de um plano de manejo dos problemas, acaba- -se assumindo um papel paternalista na relação médico paciente, que deve ser evitado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Doença e Experiência da doença são termos equivalentes, que exploram a experiência pessoal e subjetiva de estar doente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nO Método Clínico Centrado na Pessoa (MCCP) é a ferramenta fundamental da Medicina de Família e Comunidade e da Atenção Primária moderna, visando transferir o foco da patologia (biomédico) para o sujeito que sofre.\n\nAnálise das alternativas:\n\nAlternativa A (CORRETA): Esta alternativa descreve com precisão a estrutura atualizada do MCCP (proposta por Stewart e colaboradores nas edições mais recentes). O método é composto por 4 componentes interdependentes: 1) Explorar a saúde, a doença (disease) e a experiência da doença (illness – o que o paciente sente); 2) Entender a pessoa como um todo (contexto individual, familiar e social); 3) Elaborar um plano conjunto de manejo (estabelecimento de metas e prioridades comuns entre médico e paciente); e 4) Intensificar a relação entre médico e paciente (fortalecer o vínculo e a confiança).\n\nAlternativa B (INCORRETA): O MCCP não é um protocolo rígido ou \"passo a passo\" linear. Ao contrário do modelo biomédico tradicional, ele valoriza profundamente o processo (a forma como a interação ocorre, a empatia, a escuta ativa) tanto quanto o conteúdo (o diagnóstico em si). O foco no processo é justamente o que permite a individualização do cuidado.\n\nAlternativa C (INCORRETA): A afirmação é o oposto da filosofia do MCCP. A relação médico-paciente é considerada o aspecto mais terapêutico do encontro clínico (o conceito de \"médico como fármaco\"). Uma abordagem puramente tecnicista ignora as dimensões psicossociais e subjetivas que frequentemente são a causa real da busca por assistência.\n\nAlternativa D (INCORRETA): A decisão compartilhada é o antídoto ao paternalismo médico. No modelo paternalista, o médico decide sozinho o que é melhor para o paciente. Na elaboração conjunta do plano de manejo, o médico contribui com o saber técnico e o paciente com seus valores, preferências e realidades, promovendo a autonomia e a adesão ao tratamento.\n\nAlternativa E (INCORRETA): No MCCP, esses conceitos são distintos. \"Doença\" (disease) refere-se à alteração fisiológica ou estrutural, à patologia sob a ótica médica. \"Experiência da doença\" (illness) refere-se a como o indivíduo vive aquela condição, incluindo seus sentimentos, ideias sobre a causa, efeitos no funcionamento diário e expectativas de melhora (o acrônimo SIFE/FIFE).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  },
+  {
+    "id": "AJUDA_be285f98-4b7d-441a-8ab5-c318a5500672",
+    "originalId": "be285f98-4b7d-441a-8ab5-c318a5500672",
+    "statement": "O Brasil Sorridente é um programa de assistência odontológica, criado em 2004, que apresenta diretrizes nacionais de saúde bucal, integradas na Política Nacional de Saúde Bucal. Um de seus componentes é o Serviço de Especialidades em Saúde Bucal – SESB.\nAssinale a alternativa correta no que se refere a um dos parâmetros mínimos de funcionamento do SESB.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As equipes devem ter um auxiliar ou técnico de saúde bucal, com carga horária semanal mínima de 20 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nenhum profissional pode ter carga horária individual menor que 10 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O número mínimo de especialidades odontológicas ofertadas é 3.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todos os SESB devem ter, pelo menos, 3 cirurgiões-dentistas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todos os SESB devem funcionar até as 21 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Programa Brasil Sorridente, parte da Política Nacional de Saúde Bucal, estruturou a rede de atenção em saúde bucal no SUS. O Serviço de Especialidades em Saúde Bucal (SESB), comumente materializado nos Centros de Especialidades Odontológicas (CEO), possui regras específicas de funcionamento e composição.\n\nAbaixo, a análise detalhada das alternativas:\n\n**a) Incorreta.** Embora a presença de Auxiliares de Saúde Bucal (ASB) ou Técnicos de Saúde Bucal (TSB) seja obrigatória para auxiliar os cirurgiões-dentistas, a regulamentação não estabelece uma carga horária individual mínima de exatamente 20 horas para esses profissionais como regra geral de funcionamento. A carga horária total da equipe deve ser compatível com o tipo de CEO e o número de consultórios (equipos).\n\n**b) Incorreta.** Não existe uma determinação na Política Nacional de Saúde Bucal que proíba profissionais de terem carga horária menor que 10 horas. Em geral, as cargas horárias são organizadas em turnos de 4, 8 ou 20 horas, mas o parâmetro de \"mínimo de 10 horas\" não consta nos requisitos normativos do SESB.\n\n**c) Correta.** De acordo com as diretrizes de implantação dos Centros de Especialidades Odontológicas (que compõem o SESB), para que uma unidade seja habilitada e receba recursos federais, ela deve ofertar um elenco mínimo de especialidades. Embora os CEOs mais comuns (Tipo I, II e III) devam obrigatoriamente ofertar 5 áreas (Periodontia, Endodontia, Cirurgia Oral Menor, Estomatologia e Atendimento a Pacientes com Necessidades Especiais), em termos de organização de serviços especializados de menor porte ou em contextos específicos de implantação do SESB, o parâmetro mínimo aceitável para caracterizar a assistência secundária é a oferta de, pelo menos, 3 especialidades odontológicas.\n\n**d) Incorreta.** O parâmetro para o dimensionamento dos CEOs é baseado no número de consultórios odontológicos (equipos) e na carga horária semanal total, não necessariamente no número absoluto de indivíduos contratados. Um CEO Tipo I, por exemplo, deve possuir no mínimo 3 equipes (consultórios), mas o número de dentistas pode variar conforme a distribuição da carga horária (ex.: vários dentistas de 20h preenchendo as vagas).\n\n**e) Incorreta.** Não há obrigatoriedade de funcionamento até às 21 horas. A carga horária padrão exigida para o funcionamento dos Centros de Especialidades Odontológicas é de 40 horas semanais, geralmente distribuídas em horário comercial. A extensão do horário noturno é uma decisão da gestão local (municipal ou estadual) e não um parâmetro mínimo nacional.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  },
+  {
+    "id": "AJUDA_be2c5254-53a1-4c97-981c-c5f3f70d27e8",
+    "originalId": "be2c5254-53a1-4c97-981c-c5f3f70d27e8",
+    "statement": "Um homem de 35 anos, diagnosticado com transtorno dissociativo de identidade, apresenta dois estados distintos de personalidade recorrentes que controlam alternadamente sua consciência e comportamento. Refere amnésia durante transições entre os estados. Analise o mecanismo psicopatológico central que caracteriza este transtorno:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fragmentação da memória anterógrada vinculada a evento traumático único autolimitado sem ruptura de identidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ruptura da identidade com presença de dois ou mais estados de personalidade distintos assumindo controle da consciência com descontinuidade do senso de si mesmo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Perda de memória retrograda seletiva relacionada a conteúdo psicologicamente inaceitável sem alteração da identidade pessoal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dissociação transitória induzida por estresse agudo com recuperação completa da identidade após cessação do agente estressor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Despersonalização primária com estranhamento em relação ao próprio self, mantendo continuidade da identidade pessoal e estrutura de personalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Transtorno Dissociativo de Identidade (TDI), anteriormente chamado de transtorno de múltiplas personalidades, é uma condição psiquiátrica complexa definida pela fragmentação da identidade em vez de uma proliferação de personalidades separadas. Abaixo, analisamos cada alternativa:\n\nAlternativa a) Incorreta. A fragmentação da memória vinculada a um evento traumático único sem ruptura da identidade descreve melhor a Amnésia Dissociativa. No TDI, o fenômeno central é obrigatoriamente a coexistência de estados de personalidade distintos, e não apenas uma falha de memória isolada.\n\nAlternativa b) Correta. Esta alternativa reflete exatamente os critérios diagnósticos do DSM-5 para o TDI. O transtorno é caracterizado por uma ruptura da identidade, manifestada por dois ou mais estados de personalidade distintos (em algumas culturas, descrita como uma experiência de possessão). Essa ruptura envolve uma descontinuidade acentuada no senso do \"eu\" e no senso de controle sobre as próprias ações (agência), acompanhada por lacunas recorrentes na recordação de eventos cotidianos, informações pessoais importantes e/ou eventos traumáticos.\n\nAlternativa c) Incorreta. A perda de memória retrógrada seletiva focada em conteúdos psicologicamente inaceitáveis ou traumáticos define a Amnésia Dissociativa. O enunciado especifica que o paciente possui \"dois estados distintos de personalidade\", o que invalida a afirmação de que não há alteração da identidade pessoal.\n\nAlternativa d) Incorreta. Dissociações transitórias induzidas por estresse agudo podem ocorrer em diversos quadros, como no Transtorno de Estresse Agudo ou no Transtorno de Personalidade Borderline. O TDI é uma condição estrutural e crônica da personalidade, geralmente com raízes em traumas graves e persistentes na infância, não sendo uma reação passageira com recuperação imediata após o fim do estressor.\n\nAlternativa e) Incorreta. A despersonalização primária refere-se ao Transtorno de Despersonalização/Desrealização, no qual o indivíduo se sente como um observador externo de seus próprios processos mentais ou de seu corpo (estranhamento). Diferente do TDI, nesse transtorno, a continuidade da identidade pessoal e o exame de realidade permanecem intactos; o paciente sabe quem é, apenas se sente \"estranho\" ou desconectado de si mesmo.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  },
+  {
+    "id": "AJUDA_be326e84-1242-49c8-abca-b234213b7f90",
+    "originalId": "be326e84-1242-49c8-abca-b234213b7f90",
+    "statement": "Homem de 83 anos de idade, em consulta de rotina, apresenta perda de peso não intencional de 6 kg em seis meses, sensação de redução da energia e fadiga aos mínimos esforços. AP: DPOC, DM2, hipoacusia, osteoartrose e utiliza oito medicações ao dia. Exame físico: P: 54 kg; IMC: 17,9 kg/m2; caminha com passos curtos e gastou 33 segundos para percorrer 4,6 metros; não consegue subir um lance de escada; índice de Katz com 5 dependências para atividades básicas de vida diária; MEEM 19 pontos (abaixo do recomendado para escolaridade); escala de depressão geriátrica 9 pontos; inabilidade de levantar-se cinco vezes da cadeira sem ajuda dos braços.\n\nO diagnóstico de síndrome da fragilidade nesse paciente é devido a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "MEEM, diagnóstico de quatro doenças, inabilidade de levantar-se da cadeira sem ajuda dos braços e não conseguir subir um lance de escada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "perda de peso não intencional, velocidade de marcha reduzida, redução do nível de energia e fadiga e não conseguir subir um lance de escada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "IMC, utilizar mais que cinco medicações ao dia, resultado da escala de depressão geriátrica e diagnóstico de quatro doenças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "redução do nível de energia e fadiga, índice de Katz, MEEM e velocidade de marcha reduzida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a essa questão, devemos aplicar os critérios do Fenótipo de Fragilidade de Fried, que é o modelo mais utilizado mundialmente para o diagnóstico clínico da síndrome da fragilidade no idoso. Linda Fried definiu cinco critérios objetivos, e a presença de três ou mais deles confirma o diagnóstico.\n\nOs cinco critérios de Fried são:\n1. Perda de peso não intencional (mais de 4,5 kg ou 5% do peso corporal no último ano).\n2. Exaustão autorreferida (fadiga ou baixa energia).\n3. Redução da força de preensão palmar (medida por dinamometria ou avaliada indiretamente pela dificuldade em levantar-se da cadeira).\n4. Baixa velocidade de marcha (lentidão ao caminhar).\n5. Baixo nível de atividade física (sedentarismo ou limitação importante para atividades físicas).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O Mini-Exame do Estado Mental (MEEM) avalia o déficit cognitivo, e o diagnóstico de múltiplas doenças refere-se a comorbidades/multimorbidade. Embora o declínio cognitivo e as doenças crônicas possam contribuir para a fragilidade, eles não são critérios diagnósticos do fenótipo de Fried.\n\nAlternativa b) Correta. Esta alternativa lista exatamente os elementos que compõem o fenótipo de Fried presentes no caso clínico: a perda de peso não intencional (6 kg em 6 meses), a velocidade de marcha reduzida (levou 33 segundos para percorrer 4,6 metros, o que é extremamente lento), a redução do nível de energia/fadiga (relatada pelo paciente) e a dificuldade em subir escadas (que reflete o baixo nível de atividade física ou a fraqueza muscular). Como o paciente apresenta esses critérios, o diagnóstico de fragilidade está estabelecido.\n\nAlternativa c) Incorreta. O Índice de Massa Corporal (IMC) baixo, a polifarmácia (uso de oito medicações), a escala de depressão geriátrica alterada e o número de doenças são fatores de risco, marcadores de vulnerabilidade ou consequências da fragilidade, mas não fazem parte dos critérios diagnósticos do fenótipo de Fried.\n\nAlternativa d) Incorreta. Embora cite a fadiga e a velocidade de marcha, esta alternativa inclui o Índice de Katz (que avalia dependência funcional em atividades básicas de vida diária) e o MEEM (cognição). É fundamental diferenciar fragilidade de incapacidade funcional (Katz) e de demência (MEEM), embora essas condições frequentemente coexistam no idoso frágil.\n\nConclusão: O diagnóstico da síndrome da fragilidade é clínico e baseia-se na identificação de critérios de declínio fisiológico e reserva funcional reduzida, conforme descrito na alternativa B.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  },
+  {
+    "id": "AJUDA_be38ca8d-f216-49dd-8905-735c78885fb9",
+    "originalId": "be38ca8d-f216-49dd-8905-735c78885fb9",
+    "statement": "Mulher, 34 anos de idade, IIG II Partos normais, refere estar em tratamento de transtorno bipolar há 2 anos, em uso de lamotrigina. Qual é o método contraceptivo mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Medroxiprogesterona trimestral",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Etinilestradiol e desogestrel",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estradiol e nomegestrol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diafragma",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ponto central desta questão é a interação farmacológica entre a lamotrigina, um estabilizador de humor e anticonvulsivante, e os hormônios contraceptivos, especificamente os estrogênios.\n\nAlternativa (a): CORRETA. A medroxiprogesterona trimestral é um método contraceptivo composto exclusivamente por progestagênio. Ao contrário dos estrogênios, os métodos contendo apenas progestagênio não induzem de forma significativa o metabolismo da lamotrigina. Assim, este método é seguro para a paciente, pois não reduz os níveis séricos do medicamento, garantindo a manutenção da estabilidade do tratamento do transtorno bipolar.\n\nAlternativa (b): INCORRETA. O etinilestradiol, presente na maioria dos anticoncepcionais combinados, é um potente indutor das enzimas de glicuronidação (especialmente a UGT1A4) que metabolizam a lamotrigina. O uso de contraceptivos combinados pode reduzir os níveis plasmáticos de lamotrigina em até 50%, o que aumenta significativamente o risco de recaídas psiquiátricas ou crises convulsivas.\n\nAlternativa (c): INCORRETA. Embora o estradiol seja quimicamente diferente do etinilestradiol, ele também promove a indução do metabolismo da lamotrigina, levando à redução de sua eficácia terapêutica. Portanto, qualquer método hormonal combinado (estrogênio + progestagênio) deve ser evitado nesta paciente.\n\nAlternativa (d): INCORRETA. O diafragma é um método de barreira e não apresenta interações medicamentosas. Contudo, possui uma eficácia contraceptiva menor (maior taxa de falha no uso típico) quando comparado aos métodos hormonais injetáveis ou de longa duração. Em questões de prova, busca-se o método que ofereça o melhor equilíbrio entre segurança (ausência de interação) e alta eficácia, o que torna a medroxiprogesterona a escolha mais adequada.\n\nEm resumo: O estrogênio reduz os níveis de lamotrigina no sangue. Por isso, em pacientes que usam lamotrigina, deve-se priorizar métodos sem estrogênio, como progestagênios isolados (injetável trimestral, implante, minipílula), DIU de cobre ou DIU de levonorgestrel.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  },
+  {
+    "id": "AJUDA_be418459-ee3e-4757-a79f-77ab4e843048",
+    "originalId": "be418459-ee3e-4757-a79f-77ab4e843048",
+    "statement": "Segundo dados do Ministério da Saúde, a febre do vírus Oropouche é uma doença causada por um arbovírus (vírus transmitido por artrópodes) do gênero Orthobunyavirus, da família Peribunyaviridae. O Orthobunyavirus oropoucheense (OROV) foi isolado pela primeira vez no Brasil em 1960, a partir de amostra de sangue de uma bicho-preguiça (Bradypus tridactylus) capturada durante a construção da rodovia Belém-Brasília. Desde então, casos isolados e surtos foram relatados no Brasil, principalmente nos estados da região Amazônica. Também já foram relatados casos e surtos em outros países das Américas Central e do Sul. Em relação à Vigilância Epidemiológica da Febre do Vírus Oropouche, podemos afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É Doença de notificação imediata em todo território nacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "É doença de notificação obrigatória, mas não imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente os surtos devem ser notificados e investigados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não é agravo de notificação obrigatória na região extra-amazônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA febre do vírus Oropouche é uma arbovirose que tem ganhado grande destaque no cenário epidemiológico brasileiro recente devido ao aumento expressivo do número de casos e à sua expansão geográfica para fora da região amazônica.\n\nAlternativa a: Está correta. Conforme as normativas vigentes do Ministério da Saúde e as atualizações na Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública, a febre de Oropouche é classificada como um agravo de notificação compulsória imediata (dentro de 24 horas). Essa comunicação deve ser feita às secretarias municipal e estadual e ao Ministério da Saúde. O objetivo da rapidez é permitir a pronta investigação epidemiológica e a implementação de medidas de controle vetorial para conter a disseminação do vírus, especialmente em áreas sem registro prévio da doença.\n\nAlternativa b: Está incorreta. A notificação não é apenas obrigatória de forma regular ou semanal, mas sim imediata. O prazo de 24 horas é o critério que define a estratégia de vigilância para doenças com alto potencial epidêmico e necessidade de resposta rápida das autoridades sanitárias.\n\nAlternativa c: Está incorreta. A vigilância epidemiológica exige a notificação de cada caso suspeito individualmente. Esperar pela ocorrência de um surto (caracterizado por um agrupamento de casos acima do esperado) para realizar a notificação impediria a detecção precoce da circulação viral e a adoção de medidas preventivas oportunas.\n\nAlternativa d: Está incorreta. A obrigatoriedade de notificação imediata aplica-se a todo o território nacional, sem distinção regional. Embora o vírus tenha sido historicamente endêmico na região amazônica, o registro recente de casos em diversos estados das regiões Nordeste, Sudeste e Sul consolidou a necessidade de uma vigilância ativa e uniforme em todo o Brasil.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Vigilância em Saúde",
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  },
+  {
+    "id": "AJUDA_be4b51d7-96f8-4d03-988e-a2bf93d860cc",
+    "originalId": "be4b51d7-96f8-4d03-988e-a2bf93d860cc",
+    "statement": "Uma criança com 15 meses de idade é levada por sua mãe a uma unidade de pronto atendimento, com história de ter apresentado febre de 39°C por cinco dias, rinorreia, discreta recusa alimentar e presença de \"manchas vermelhas\" no corpo. Ao exame físico está ativa, bom estado geral, temperatura axilar de 36,8°C, discreta hiperemia de faringe e conjuntiva, presença de exantema róseo no tronco e se iniciando em pescoço. O diagnóstico provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exantema súbito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Rubéola.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exantema infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Escarlatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico do exantema súbito, também conhecido como roséola infantum, causado principalmente pelo herpesvírus humano tipo 6 (HHV-6).\n\nAnálise do caso clínico:\nO ponto-chave para o diagnóstico é a cronologia dos sintomas. A criança apresentou febre alta (39 graus) por vários dias e, assim que a febre desapareceu (defervescência), surgiu o exantema. Além disso, o fato de a criança estar em bom estado geral apesar da febre alta anterior e o exantema iniciar-se pelo tronco são características típicas desta patologia, que acomete predominantemente lactentes (6 a 18 meses).\n\nAnálise das alternativas:\n\na) Incorreta. No sarampo, o exantema surge no pico da febre, e não após o seu desaparecimento. O quadro clínico costuma ser mais grave, com tosse intensa, coriza importante, conjuntivite com fotofobia e manchas de Koplik na mucosa oral. O exantema do sarampo tem progressão cefalocaudal.\n\nb) Correta. O exantema súbito caracteriza-se por febre alta que dura de 3 a 5 dias e desaparece subitamente, seguida pelo surgimento de um exantema maculopapular róseo que começa no tronco e pescoço, podendo se espalhar para os membros e face. A criança geralmente mantém um bom estado geral.\n\nc) Incorreta. A rubéola costuma apresentar febre baixa ou ausente, acompanhada de linfadenopatia retroauricular, occipital e cervical posterior. O exantema é cefalocaudal e surge simultaneamente aos sintomas gerais, não após a febre sumir.\n\nd) Incorreta. O eritema infeccioso (causado pelo parvovírus B19) geralmente não apresenta uma fase de febre alta prodrômica. Sua característica marcante é a face esbofeteada, seguida por um exantema rendilhado nos membros e tronco que pode recidivar com calor ou exercícios.\n\ne) Incorreta. A escarlatina é causada pela toxina do *Streptococcus pyogenes*. O quadro inclui faringite exsudativa, febre alta e o exantema tem aspecto de lixa (micropapular), surgindo em áreas de dobra (sinal de Pastia) e poupando a região perioral (sinal de Filatov), acompanhado de língua em morango. O exantema não aparece apenas após a febre cessar.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:42.390Z"
+  }
+]

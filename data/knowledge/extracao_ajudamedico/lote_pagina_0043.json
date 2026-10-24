@@ -1,0 +1,533 @@
+[
+  {
+    "id": "AJUDA_0b09181a-bb35-49d9-8425-5badfaa060cc",
+    "originalId": "0b09181a-bb35-49d9-8425-5badfaa060cc",
+    "statement": "O acrônimo PICO é uma ferramenta utilizada para estruturar uma pergunta de pesquisa, principalmente para revisões sistemáticas. O que a letra 'O' representa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observação (o tipo de dado a ser observado).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Organização (a estrutura do estudo).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Outcome (desfecho ou resultado de interesse).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Originalidade (a novidade da pergunta de pesquisa).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A estratégia PICO é o pilar fundamental da Medicina Baseada em Evidências (MBE) para a formulação de perguntas clínicas estruturadas. Essa ferramenta auxilia o pesquisador ou o clínico a identificar os componentes essenciais de uma dúvida para facilitar a busca por evidências científicas de qualidade.\n\nO acrônimo PICO é subdividido da seguinte forma:\n\nP (Paciente, População ou Problema): Define as características do grupo de pacientes, como idade, sexo ou a condição clínica específica.\nI (Intervenção): Refere-se à conduta que se pretende avaliar, podendo ser um novo medicamento, uma cirurgia, um teste diagnóstico ou uma exposição.\nC (Comparação): É o grupo controle ou a intervenção padrão com a qual a nova intervenção será comparada (ex.: placebo ou o tratamento atual de escolha).\nO (Outcome): Significa o desfecho ou resultado clínico de interesse.\n\nAnálise das alternativas:\n\na) Incorreta. O termo Observação não faz parte da estratégia PICO. Embora a observação seja um método de coleta de dados em diversos tipos de estudos, a letra O é reservada para o resultado final esperado.\n\nb) Incorreta. Organização refere-se à logística ou ao delineamento estrutural do estudo, mas não é um componente da pergunta de pesquisa no modelo PICO.\n\nc) Correta. A letra O representa o Outcome, termo em inglês que se traduz como desfecho ou resultado. É a variável que será medida para verificar a eficácia ou a segurança da intervenção estudada, como, por exemplo, a taxa de mortalidade, o tempo de internação ou a melhora de um sintoma.\n\nd) Incorreta. A originalidade é um critério de avaliação de relevância de uma pesquisa (como nos critérios FINER), mas não faz parte dos componentes da estrutura PICO.\n\ne) Incorreta, visto que a alternativa C preenche corretamente o significado técnico do acrônimo dentro da metodologia científica.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:18.629Z"
+  },
+  {
+    "id": "AJUDA_0b0c7d1c-8ce7-4c5b-b2c5-17e765b997c7",
+    "originalId": "0b0c7d1c-8ce7-4c5b-b2c5-17e765b997c7",
+    "statement": "Sobre as adaptações fisiológicas maternas da pele e estruturas relacionadas à gravidez, considere as afirmativas a seguir.\nI. Coloração azulada/arroxeada da vagina e do colo do útero são alterações anatômicas precoces importantes no diagnóstico da gravidez.\nII. Os granulomas piogênicos não precisam ser excisados durante a gravidez, pois, geralmente, ocorre a resolução espontânea após o parto.\nIII. O hirsutismo aumenta durante a gravidez.\nIV. O prurido, em mulheres grávidas, não é fisiológico.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nPara compreender as alterações fisiológicas do organismo materno, é fundamental diferenciar o que faz parte da adaptação hormonal e vascular esperada daquilo que representa uma patologia. Vamos analisar cada afirmativa da questão:\n\nAfirmativa I (Correta): A coloração azulada ou arroxeada da mucosa vaginal e do colo do útero é conhecida classicamente como Sinal de Chadwick (ou Sinal de Jacquemier). Essa alteração ocorre devido ao intenso aumento da vascularização e congestão venosa na região pélvica, estimulada pelos hormônios esteroides (estrogênio). É um dos sinais de probabilidade de gravidez e surge precocemente, por volta da 6ª a 8ª semana.\n\nAfirmativa II (Correta): O granuloma piogênico, também chamado de \"hemangioma lobular capilar\" ou \"tumor gravídico da gengiva\" (quando localizado na cavidade oral), é uma lesão vascular benigna comum na gestação. Devido à influência hormonal e ao aumento do volume sanguíneo, essas lesões podem surgir ou crescer. A conduta padrão é expectante e conservadora, pois a maioria apresenta regressão espontânea após o parto, quando os níveis hormonais retornam ao basal. A excisão cirúrgica é reservada apenas para casos de sangramento persistente ou dor extrema.\n\nAfirmativa III (Correta): Durante a gestação, ocorre uma mudança no ciclo folicular. Os altos níveis de androgênios (fisiologicamente elevados na gravidez) e alterações no metabolismo do cortisol levam a uma fase anágena (crescimento) prolongada dos pelos. Isso resulta em hirsutismo (aumento de pelos em áreas dependentes de androgênios), frequentemente observado na face e no abdome. Após o parto, essa tendência se inverte, levando muitas vezes ao eflúvio telógeno (queda acentuada de cabelo).\n\nAfirmativa IV (Incorreta): O prurido (coceira) na gestação é um sintoma complexo. Embora o prurido leve e localizado (como no abdome devido ao estiramento da pele) possa ser considerado comum, a afirmação de que ele \"não é fisiológico\" está incorreta no contexto da questão porque o prurido pode, sim, ser de origem fisiológica (xerose cutânea ou estiramento das fibras colágenas). No entanto, o examinador busca aqui a distinção entre o prurido comum e as dermatoses específicas da gravidez (como a colestase intra-hepática ou a PUPPP). Como o leve prurido gravídico por distensão tecidual é uma adaptação comum, a afirmação de que ele NUNCA é fisiológico torna-se falsa.\n\nAnálise das Alternativas:\nA alternativa (d) está correta porque valida as afirmativas I, II e III. A afirmativa IV é a única incorreta, pois desconsidera o prurido decorrente das alterações adaptativas da própria derme e epiderme durante a expansão uterina.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:18.629Z"
+  },
+  {
+    "id": "AJUDA_0b0d2ea9-3f6e-4def-8777-89acba4fbfcb",
+    "originalId": "0b0d2ea9-3f6e-4def-8777-89acba4fbfcb",
+    "statement": "B.C.G., 36 anos, GII PI (1N) A0, idade gestacional de 11 semanas, sem comorbidades, deu entrada no pronto-socorro obstétrico com queixa de sangramento vaginal escuro, além de náuseas e vômitos. Ao exame especular: sangue escuro, coletado em fundo de saco posterior, em quantidade moderada. Toque vaginal bimanual: colo amolecido, impérvio, fundo uterino na altura da cicatriz umbilical. Abdome: dor à descompressão brusca negativa. Paciente sem exame de imagem prévio nesta gestação. Solicitado beta HCG quantitativo: 300.000 mUI/mL. \nDe acordo com o caso, assinale a alternativa que apresenta o diagnóstico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aborto incompleto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mola hidatiforme.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Gestação gemelar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Óbito embrionário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aborto completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado é clássico para o diagnóstico de mola hidatiforme, uma forma de Doença Trofoblástica Gestacional. Os principais pontos que fundamentam essa conclusão são:\n\n1. Altura uterina incompatível com a idade gestacional: A paciente está com 11 semanas de gestação, mas o fundo uterino atinge a cicatriz umbilical, o que normalmente só ocorre por volta da 20ª semana. Esse crescimento uterino acelerado e desproporcional é um sinal clínico marcante da mola hidatiforme.\n\n2. Níveis de beta-hCG excessivamente elevados: O valor de 300.000 mUI/mL está muito acima dos níveis fisiológicos esperados para 11 semanas, refletindo a proliferação trofoblástica exacerbada.\n\n3. Sintomatologia: O sangramento vaginal escuro (muitas vezes descrito como \"em suco de ameixa\") e a presença de náuseas e vômitos intensos (hiperemese) são manifestações comuns devido aos altos níveis de hCG circulante.\n\n4. Exame físico: O colo uterino impérvio (fechado) e a ausência de dor à descompressão brusca ajudam a afastar quadros de abortamento em curso ou abdome agudo, respectivamente.\n\nAnálise das alternativas:\n\na) Incorreta. No aborto incompleto, o colo uterino estaria pérvio (aberto) devido à passagem de restos ovulares, e o tamanho do útero seria compatível ou menor do que o esperado para a idade gestacional.\n\nb) Correta. A mola hidatiforme explica perfeitamente a tríade de sangramento vaginal, útero muito maior que o esperado para a idade gestacional e níveis de beta-hCG extremamente elevados, além da exacerbação de sintomas gravídicos como náuseas e vômitos.\n\nc) Incorreta. Embora uma gestação gemelar possa cursar com útero maior e beta-hCG mais alto que uma gestação única, a discrepância raramente é tão severa (útero no umbigo com 11 semanas) e não costuma causar sangramento vaginal escuro com colo fechado nesta fase.\n\nd) Incorreta. No óbito embrionário, o volume uterino seria menor ou igual ao esperado para a idade gestacional e os níveis de beta-hCG estariam em declínio ou baixos para a idade gestacional.\n\ne) Incorreta. No aborto completo, o útero estaria contraído, de tamanho reduzido e vazio, com o sangramento em fase de resolução, o que é incompatível com o fundo uterino na cicatriz umbilical e o beta-hCG de 300.000 mUI/mL.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:18.629Z"
+  },
+  {
+    "id": "AJUDA_0b0dae41-6078-40cd-9a5e-6d4069fe42fe",
+    "originalId": "0b0dae41-6078-40cd-9a5e-6d4069fe42fe",
+    "statement": "Paciente de 28 anos, quadro de dor abdominal em região epigástrica há 18 horas com piora após às refeições. Nega uso de medicamentos e uso de substâncias. Ao exame, apresenta frequência cardíaca de 120 bpm, pressão arterial de 130 x 80 mmHg, dor à palpação difusa abdominal, sem irritação peritonial. Exames mostraram leucocitose 24.000 leuc/mm3, 6% bastão, amilase 1200 U/L. Em relação à conduta a ser tomada está CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A reintrodução alimentar precoce via oral (quando tolerada) ou enteral reduz a incidência de complicações infecciosas e mortalidade da patologia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Está indicado o uso de antibióticos de largo espectro devido leucocitose com desvio à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A pancreatite biliar está relacionada à migração de cálculos da vesícula para o duodeno, sendo necessária a realização de colangiorressonância para definição etiológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nas pancreatites leves devemos colher amilase diária para guiar a reintrodução de dieta e programar alta hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da questão:\nO quadro clínico de dor epigástrica de forte intensidade associado a uma amilase significativamente elevada (1200 U/L) confirma o diagnóstico de Pancreatite Aguda. O paciente apresenta sinais de resposta inflamatória sistêmica (taquicardia de 120 bpm e leucocitose de 24.000), o que exige manejo imediato focado em hidratação venosa e definição da estratégia nutricional.\n\nAlternativa A (Correta):\nA conduta nutricional na pancreatite aguda é um dos pilares do tratamento moderno. A recomendação atual é a reintrodução precoce da dieta. Em casos leves, a dieta oral deve ser iniciada assim que o paciente tolerar (ausência de dor e presença de fome). Em casos mais graves, a nutrição enteral é preferível ao jejum prolongado ou à nutrição parenteral. A presença de nutrientes no lúmen intestinal mantém a integridade da barreira mucosa, o que impede a translocação de bactérias do intestino para os tecidos pancreáticos. Isso reduz a incidência de necrose infectada, complicações sistêmicas e a mortalidade geral.\n\nAlternativa B (Incorreta):\nO uso de antibióticos profiláticos não é recomendado na pancreatite aguda, independentemente da gravidade ou do grau de leucocitose inicial. A leucocitose e o desvio à esquerda observados nas primeiras horas são reflexos da Síndrome de Resposta Inflamatória Sistêmica (SIRS) e não indicam necessariamente uma infecção bacteriana. O uso de antibióticos deve ser reservado para infecções extrapancreáticas (como pneumonia ou infecção urinária) ou quando há suspeita/confirmação de necrose pancreática infectada, o que geralmente ocorre após a segunda ou terceira semana de doença.\n\nAlternativa C (Incorreta):\nA pancreatite biliar é causada pela passagem ou impactação de cálculos provenientes da vesícula biliar na via biliar comum. O exame inicial de escolha para investigar a etiologia biliar é a ultrassonografia de abdome superior, visando identificar colelitíase ou dilatação de vias biliares. A colangiorressonância é um exame de segunda linha, indicado apenas quando os exames iniciais são inconclusivos e persiste a suspeita de cálculos na via biliar (coledocolitíase).\n\nAlternativa D (Incorreta):\nOs níveis de amilase e lipase são fundamentais para o diagnóstico, mas não servem para monitorar a evolução da doença ou guiar a alta. Essas enzimas não possuem valor prognóstico e sua queda não se correlaciona necessariamente com a melhora clínica. A reintrodução da dieta e a programação da alta devem ser baseadas puramente em critérios clínicos, como o controle da dor, ausência de vômitos e a aceitação alimentar pelo paciente.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": 55.80549204171814,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:18.629Z"
+  },
+  {
+    "id": "AJUDA_0b132259-79a6-418b-ba81-44e1b4190b15",
+    "originalId": "0b132259-79a6-418b-ba81-44e1b4190b15",
+    "statement": "Mulher 19 anos, sem comorbidades, afebril, com queixa de disuria e polaciuria. Nega dor lombar, sintomas ginecológicos ou gestação. Qual conduta recomendada no atendimento de emergência?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar EAS para avaliar início de tratamento com antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aguardar urinocultura para iniciar tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar EAS e ultrassonografia para avaliação na unidade de saúde básica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar antibioticoterapia de curta duração sem coleta de exames.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Não tratar bacteriúria assintomática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso:\nO quadro clínico descrito — mulher jovem, hígida, com sintomas clássicos do trato urinário inferior (disúria e polaciúria) e sem sinais de alarme (febre, dor lombar ou gravidez) — define um caso típico de cistite aguda não complicada. Em situações como esta, a probabilidade diagnóstica apenas pela anamnese é superior a 90%, o que dispensa a necessidade de exames complementares laboratoriais ou de imagem.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Em mulheres com sintomas típicos de cistite e sem fatores de risco para complicações, o diagnóstico é clínico. Solicitar o EAS (Elementos Anormais e Sedimento) apenas para confirmar o que a clínica já indica gera custos desnecessários e atrasa o início da terapia.\n\nAlternativa b) Incorreta. A urinocultura não é indicada rotineiramente na cistite não complicada. Ela é reservada para casos de suspeita de pielonefrite, gestantes, homens, crianças, idosos, sintomas recorrentes ou falha no tratamento inicial. Além disso, retardar o tratamento aguardando o resultado (que leva de 48 a 72 horas) prolonga o sofrimento da paciente.\n\nAlternativa c) Incorreta. A ultrassonografia não faz parte da propedêutica inicial da infecção urinária baixa. Exames de imagem são indicados apenas em casos de infecções de repetição, suspeita de cálculos, obstruções ou quando não há melhora clínica após o tratamento adequado, visando identificar alterações anatômicas.\n\nAlternativa d) Correta. A conduta recomendada pelas principais diretrizes (como as da Febrasgo e da Sociedade Brasileira de Infectologia) para cistite não complicada em mulheres jovens é o tratamento empírico imediato. O uso de antibióticos de curta duração (como a nitrofurantoína por 5 dias ou fosfomicina em dose única) é eficaz, apresenta menos efeitos colaterais e reduz o risco de indução de resistência bacteriana em comparação a ciclos longos.\n\nAlternativa e) Incorreta. A paciente não apresenta bacteriúria assintomática, pois ela é claramente sintomática (apresenta queixas urinárias). A bacteriúria assintomática ocorre quando há crescimento bacteriano na urina sem que a paciente sinta nada, e sua triagem e tratamento só são indicados em gestantes e pacientes que realizarão procedimentos urológicos com risco de sangramento de mucosa.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:18.629Z"
+  },
+  {
+    "id": "AJUDA_0b145865-be81-4a83-b9ca-12d3eb2c80b2",
+    "originalId": "0b145865-be81-4a83-b9ca-12d3eb2c80b2",
+    "statement": "No tratamento de infecção do trato urinário em gestantes, o antibiótico de escolha é considerado seguro em boa parte da gestação, mas deve ser evitado próximo ao termo devido ao risco de anemia hemolítica neonatal é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefalexina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ciprofloxacino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sulfametoxazol-trimetoprima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doxiciclina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nitrofurantoína.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O tratamento de Infecções do Trato Urinário (ITU) em gestantes exige cautela na escolha do antibiótico para garantir a eficácia terapêutica e a segurança fetal. A questão aborda uma contraindicação específica relacionada ao período final da gestação.\n\na) Cefalexina: É uma cefalosporina de primeira geração amplamente utilizada e considerada segura durante todos os trimestres da gestação. É uma das opções de primeira linha para o tratamento de cistite e bacteriúria assintomática em grávidas, não apresentando risco de anemia hemolítica neonatal.\n\nb) Ciprofloxacino: Pertence à classe das quinolonas. Seu uso é geralmente evitado na gestação devido a estudos em animais que demonstraram risco de artropatia e danos às cartilagens de crescimento em fetos. Não é a droga de escolha e seu perfil de toxicidade não corresponde ao descrito no enunciado.\n\nc) Sulfametoxazol-trimetoprima: Este antibiótico deve ser evitado no primeiro trimestre (pelo risco de interferência no metabolismo do ácido fólico e malformações) e no terceiro trimestre, próximo ao parto. No final da gestação, o risco associado às sulfas é o de kernicterus (encefalopatia bilirrubínica), pois a droga compete com a bilirrubina pela ligação à albumina, e não primariamente o de anemia hemolítica.\n\nd) Doxiciclina: Faz parte da classe das tetraciclinas. É contraindicada durante a gestação (especialmente após o primeiro trimestre) porque pode causar coloração amarelada permanente nos dentes do bebê e interferir no crescimento ósseo fetal.\n\ne) Nitrofurantoína: Esta é a alternativa correta. A nitrofurantoína é um dos antibióticos de primeira escolha para o tratamento de ITUs baixas na gestação. Entretanto, seu uso é contraindicado próximo ao termo (geralmente após a 37ª semana) e durante o trabalho de parto. Isso ocorre porque o medicamento pode induzir anemia hemolítica no recém-nascido devido à imaturidade dos sistemas enzimáticos das hemácias fetais (deficiência fisiológica de glutationa peroxidase), tornando-as suscetíveis ao estresse oxidativo provocado pela droga.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:18.629Z"
+  },
+  {
+    "id": "AJUDA_0b14d7cf-e60e-44b1-98c3-b163b4f785d4",
+    "originalId": "0b14d7cf-e60e-44b1-98c3-b163b4f785d4",
+    "statement": "Leia o caso a seguir.\n\nUma mulher de 38 anos foi diagnosticada recentemente com tuberculose pulmonar bacilífera, iniciando tratamento supervisionado na unidade de saúde. Seu esposo, de 42 anos, comparece ao serviço de referência como contactante domiciliar, relatando nenhum sintoma respiratório e bom estado geral. Ele não possui comorbidades, teste para HIV negativo e apresenta vacinação BCG na infância.\n\nQual é a conduta para esse contactante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar PPD e, se o resultado for <5 mm, iniciar tratamento preventivo com isoniazida 300 mg por 6 meses e reavaliar mensalmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar radiografia de tórax e teste imunológico (PPD ou IGRA); se TB ativa for excluída e o teste for positivo, iniciar tratamento da infecção latente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Acompanhar clinicamente por 6 meses e solicitar radiografia de tórax se surgirem sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar exame de escarro para BAAR e, se negativo, manter seguimento de sintomas por 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A investigação de contatos de pacientes com tuberculose pulmonar bacilífera é uma das principais estratégias para o controle da doença. O objetivo central é identificar precocemente novos casos de tuberculose ativa e diagnosticar a Infecção Latente por Tuberculose (ILTB) para realizar o tratamento preventivo.\n\nA alternativa (b) está correta, porque segue rigorosamente o protocolo do Ministério da Saúde. Para um contato domiciliar de caso bacilífero, mesmo que assintomático, a conduta inicial envolve a exclusão de TB ativa. Isso é feito pela anamnese e pela radiografia de tórax. Uma vez descartada a doença ativa, deve-se realizar o teste imunológico (PPD ou IGRA). Se esse teste for positivo (no caso do PPD, um resultado maior ou igual a 5 mm para contatos), e o paciente não tiver sintomas nem alterações radiológicas, está indicado o tratamento da infecção latente para evitar que ele adoeça no futuro.\n\nA alternativa (a) está incorreta, porque inverte a interpretação do PPD. O tratamento da infecção latente é indicado para aqueles que são reatores ao teste (PPD maior ou igual a 5 mm em contatos). Se o resultado for menor que 5 mm em um adulto imunocompetente, ele é considerado não-reator, e a conduta padrão não prevê o início imediato de isoniazida, mas sim a reavaliação ou alta, dependendo do tempo de exposição.\n\nA alternativa (c) está incorreta, pois assume uma postura passiva. O contato de um paciente bacilífero (que elimina bacilos no escarro) possui alto risco de ter sido infectado. A conduta deve ser ativa, realizando exames de triagem para ILTB de imediato, e não apenas aguardar o surgimento de sintomas, o que permitiria a progressão de uma possível infecção para doença transmissível.\n\nA alternativa (d) está incorreta, porque o exame de escarro (BAAR) não é o exame de escolha para triagem de contatos assintomáticos. A baciloscopia é utilizada no diagnóstico de tuberculose-doença em pacientes que apresentam tosse e produção de escarro. Como o paciente está em bom estado geral e sem sintomas respiratórios, a investigação deve focar em testes imunológicos para identificar a infecção latente.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:18.629Z"
+  },
+  {
+    "id": "AJUDA_0b17b1cc-92b9-47a8-8324-ebc70572e11d",
+    "originalId": "0b17b1cc-92b9-47a8-8324-ebc70572e11d",
+    "statement": "Paciente de 58 anos, com cirrose hepática por hepatite C, é submetido a transplante hepático ortotópico. Durante o intraoperatório, apresenta sangramento difuso, e os exames laboratoriais convencionais (TAP/RNI e TTP) mostram prolongamento moderado dos tempos, sem clara correlação com a gravidade do sangramento. O anestesista solicita uma tromboelastografia (TEG), que revela: tempo R prolongado, tempo K normal, ângulo α normal, amplitude máxima normal e LY30 < 1%. Com base nesses achados, qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de plasma fresco congelado (PFC), pois o tempo R prolongado sugere deficiência de fatores de coagulação da fase inicial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Transfusão de plaquetas, pois a amplitude máxima representa a agregação plaquetária, e o sangramento indica trombocitopenia funcional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nenhuma conduta específica, pois o TEG está normal e o sangramento deve ser contido com ligaduras vasculares cirúrgicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Início de antifibrinolítico (ácido tranexâmico), pois o LY30 está aumentado, indicando lise precoce do coágulo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administração de crioprecipitado, pois o tempo K está alterado, indicando deficiência de fibrinogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A tromboelastografia (TEG) é uma ferramenta de monitorização à beira do leito que avalia de forma dinâmica todas as fases da coagulação, desde a formação inicial de fibrina até a lise do coágulo. Para resolver a questão, devemos correlacionar cada parâmetro do exame com o componente da coagulação que ele representa:\n\n1. Tempo R (Tempo de Reação): Representa o tempo necessário para o início da formação de fibrina. Depende diretamente dos fatores de coagulação plasmáticos. Na imagem fornecida, observa-se que a linha de base permanece reta por um longo período (cerca de 20 minutos) antes de o coágulo começar a se formar, o que caracteriza visualmente o Tempo R prolongado.\n\n2. Tempo K e Ângulo alfa: Avaliam a cinética de formação do coágulo e sua velocidade de fortalecimento, dependendo fundamentalmente do fibrinogênio.\n\n3. Amplitude Máxima (MA): Representa a força máxima do coágulo e depende em cerca de 80% da função e número de plaquetas.\n\n4. LY30: Avalia a porcentagem de lise do coágulo 30 minutos após a amplitude máxima ser atingida. Valores abaixo de 3% a 7,5% (dependendo da referência) são considerados normais.\n\nAnálise das alternativas:\n\nAlternativa a: Está correta. O prolongamento isolado do tempo R indica uma deficiência ou inibição dos fatores de coagulação da via intrínseca, extrínseca ou comum. No contexto de transplante hepático e sangramento difuso, a conduta apropriada é a reposição de fatores através do Plasma Fresco Congelado (PFC) ou concentrado de complexo protrombínico.\n\nAlternativa b: Está incorreta. A Amplitude Máxima (MA) está normal segundo o enunciado, o que demonstra que a interação entre plaquetas e fibrinogênio está preservada para garantir a estabilidade do coágulo. Não há indicação de transfusão de plaquetas baseada neste perfil de TEG.\n\nAlternativa c: Está incorreta. O exame não está normal; o tempo R prolongado, associado ao sangramento difuso (em \"baba\"), confirma uma coagulopatia de consumo ou deficiência que precisa de correção clínica, além da revisão cirúrgica.\n\nAlternativa d: Está incorreta. O LY30 menor que 1% indica que não há hiperfibrinólise. O uso de antifibrinolíticos como o ácido tranexâmico ou épsilon-aminocaproico é indicado quando o LY30 está aumentado (curva do TEG fechando rapidamente após atingir a MA).\n\nAlternativa e: Está incorreta. O enunciado informa que o tempo K está normal. O crioprecipitado (rico em fibrinogênio) seria a conduta de escolha caso o tempo K estivesse prolongado ou o ângulo alfa estivesse reduzido.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Transplante Hepático e Hepatite Fulminante",
+      "Perioperatório",
+      "Medicina Transfusional",
+      "Cirrose Hepática",
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/4c2dffb33e9c6d45b2a7ce01c68ddb42a13b94102236a1a1f7e90f169e440882.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_0b17b1cc-92b9-47a8-8324-ebc70572e11d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:19.006Z"
+  },
+  {
+    "id": "AJUDA_0b19bd8e-8db8-49a0-a718-62054b777430",
+    "originalId": "0b19bd8e-8db8-49a0-a718-62054b777430",
+    "statement": "M.R.S, 16 anos, compareceu ao pronto-socorro acompanhado pela mãe, com queixa de tosse persistente e falta de ar, especialmente à noite e durante a prática de exercícios físicos. Os sintomas se iniciaram há cerca de 6 meses e têm se tornado mais frequentes e intensos. A mãe relata que o paciente acorda algumas noites com tosse, o que o impede de ter uma boa noite de sono. O paciente nega tabagismo, febre, dor no peito, perda de peso ou outros sintomas sistêmicos. Após consulta com a clínica médica foi requisitada uma espirometria com prova broncodilatadora (b.d.) cujo resultado se apresenta abaixo. Em relação ao diagnóstico marque a alternativa correta.\n\nResultados:\nCPT 100%\nCRF 104%\nVR 120%\nCVF 90%\nVEF1 35% pré b.d / 75% pós b.d",
+    "options": [
+      {
+        "id": "A",
+        "text": "O uso frequente de β2-agonistas de curta ação não é associado com aumento da mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alguns diagnósticos diferenciais são a bronquiolite obliterante, a doença pulmonar obstrutiva crônica e fibrose cística.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Os β2-Agonistas de longa ação (LABAs) apresentam duração de ação de cerca de 12 horas e são recomendados para uso como monoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pacientes com diagnóstico no início da vida adulta deve-se descartar causas secundárias como uso de medicamentos (betabloqueadores, AAS e IECAs).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A sua fisiopatologia evidencia a inflamação crônica das vias aéreas mais comumente de natureza linfocítica, sendo a infiltração mastocitária também frequente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa questão foi anulada.\nAnálise do quadro clínico e espirométrico: O paciente apresenta sintomas clássicos de asma brônquica, como tosse e dispneia com piora noturna e ao exercício físico. A espirometria revela um distúrbio ventilatório obstrutivo grave no pré-broncodilatador (VEF1 de 35%), que apresenta uma reversibilidade marcante após o uso da medicação (VEF1 de 75%). Esse aumento absoluto de 40% no VEF1 confirma o diagnóstico de asma, superando em muito os critérios de variação mínima de 12% e 200 ml exigidos para positividade da prova broncodilatadora.\n\nAlternativa (a) Incorreta: O uso excessivo de beta-2-agonistas de curta ação (SABA), como o salbutamol ou fenoterol, está comprovadamente associado ao aumento do risco de exacerbações graves e à mortalidade. As diretrizes modernas (GINA) desencorajam o uso de SABA isolado, preconizando o uso de corticoide inalatório mesmo no resgate.\n\nAlternativa (b) Correta: Na investigação de doenças que cursam com obstrução ao fluxo aéreo, é essencial considerar diagnósticos diferenciais. Em jovens, a fibrose cística e a bronquiolite obliterante (frequentemente pós-infecciosa) são importantes. Embora a DPOC seja uma doença de pacientes mais velhos e tabagistas, ela compõe o grupo principal de diagnósticos diferenciais de obstrução crônica ao fluxo aéreo.\n\nAlternativa (c) Incorreta: Os LABAs (beta-2-agonistas de longa ação) possuem, em geral, duração de 12 a 24 horas, mas são formalmente contraindicados como monoterapia no tratamento da asma. O seu uso sem a associação de um corticoide inalatório aumenta significativamente o risco de morte súbita e crises fatais.\n\nAlternativa (d) Incorreta: Embora o uso de betabloqueadores e anti-inflamatórios não esteroidais (como AAS) possa exacerbar a asma, o foco no diagnóstico em jovens e adultos jovens é a diferenciação clínica e funcional, e não apenas o descarte de causas medicamentosas secundárias. Além disso, os IECAs costumam causar tosse seca por acúmulo de bradicinina, mas raramente causam obstrução brônquica verdadeira com resposta ao broncodilatador.\n\nAlternativa (e) Incorreta: A fisiopatologia clássica da asma envolve uma inflamação crônica das vias aéreas que é predominantemente eosinofílica e mediada por linfócitos T auxiliares do tipo 2 (Th2), além de mastócitos e outras células. Dizer que a natureza é comumente linfocítica (de forma genérica) está incorreto no contexto da descrição típica da asma atópica.\n\nSobre a imagem associada: O gráfico mostra uma curva fluxo-volume. Na parte superior (alça expiratória), observa-se que, em casos de obstrução como o deste paciente, a curva tende a ficar côncava (comprimida para baixo), indicando a limitação ao fluxo aéreo durante a expiração forçada. Os pontos CPT (Capacidade Pulmonar Total) e VR (Volume Residual) marcam os limites de volume de ar que os pulmões podem comportar. Na asma, pode haver aumento do VR por aprisionamento aéreo.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/db205613263941fbd4a8e25137eefe9600daed5f9c09c41829b420d3cd5976a7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_0b19bd8e-8db8-49a0-a718-62054b777430_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:19.449Z"
+  },
+  {
+    "id": "AJUDA_0b32010a-69f7-4428-92a1-5fd6a0fb8344",
+    "originalId": "0b32010a-69f7-4428-92a1-5fd6a0fb8344",
+    "statement": "Criança de 5 anos, com diagnóstico prévio de asma, procura atendimento pois anda com dificuldade para realizar as atividades físicas da escola (acontecem 3x/semana), acorda 1 ou 2 vezes a noite com chiado no peito com necessidade de medicação de resgate. Está em uso de corticoide inalatório há 4 semanas. Ao exame físico: bom estado geral, com sibilos esparsos, sem desconforto respiratório e saturação de oxigênio 96%. Qual a melhor terapêutica para esse paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Associar antileucotrienos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar a dose do corticoide",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Associar beta-agonista de ação prolongada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender corticoide inalatório e iniciar antileucotrienos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nA questão descreve uma criança de 5 anos com asma não controlada. Os critérios para essa classificação incluem a frequência de sintomas diurnos (limitação de atividades físicas 3 vezes por semana) e a presença de sintomas noturnos (despertares 1 a 2 vezes por semana com necessidade de resgate). O paciente já está em uso de corticoide inalatório (CI) em dose baixa (Etapa 2 do tratamento) e não obteve controle após 4 semanas.\n\nDe acordo com as diretrizes da GINA (Global Initiative for Asthma), o manejo da asma é dividido por faixas etárias. Para crianças de 5 anos ou menos, a conduta na falha da Etapa 2 é o avanço para a Etapa 3.\n\nExplicação das Alternativas:\n\nAlternativa (a) Incorreta: O uso de antileucotrienos (como o montelucaste) é uma opção terapêutica para a asma, mas na faixa etária de 5 anos ou menos, a preferência na Etapa 3 é a otimização da dose do corticoide inalatório. A associação de antileucotrieno é considerada uma alternativa, mas não a primeira escolha em relação ao aumento da dose do corticoide.\n\nAlternativa (b) Correta: Esta é a conduta padrão para crianças de 5 anos ou menos que permanecem sintomáticas em uso de dose baixa de corticoide inalatório. O próximo passo (Etapa 3) consiste em dobrar a dose baixa de corticoide inalatório (passando para dose média) para buscar o controle inflamatório. É a opção mais segura e com maior evidência de eficácia para esta idade específica.\n\nAlternativa (c) Incorreta: A associação de beta-agonista de ação prolongada (LABA), como o salmeterol ou formoterol, associada ao corticoide inalatório, é a conduta de escolha para a Etapa 3 em crianças com 6 anos ou mais e adultos. Para crianças de 5 anos ou menos, os LABAs não são recomendados como primeira linha devido à escassez de estudos sobre segurança e eficácia nessa faixa etária.\n\nAlternativa (d) Incorreta: Nunca se deve suspender o corticoide inalatório em um paciente que apresenta sintomas de asma não controlada. O corticoide é o pilar do tratamento por tratar a inflamação subjacente. Substituí-lo por antileucotrienos isoladamente seria um retrocesso terapêutico, pois os antileucotrienos são menos eficazes que os corticoides inalatórios no controle da doença.\n\nResumo: Em pediatria, o ponto de corte de 6 anos é fundamental. Para pacientes de 5 anos ou menos, a progressão do tratamento foca no ajuste de dose do corticoide inalatório antes de considerar associações. Portanto, aumentar a dose do corticoide é a melhor terapêutica.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:19.449Z"
+  }
+]

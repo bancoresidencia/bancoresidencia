@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_413ebf63-9e2a-4306-8944-3fe32951a148",
+    "originalId": "413ebf63-9e2a-4306-8944-3fe32951a148",
+    "statement": "Homem de 62 anos, com artrose de joelhos bilaterais e insuficiência cardíaca, chega à emergência sudoreico, agitado e taquipneico. A família relata que ele vem fazendo uso de analgesia para as dores ao deambular e, hoje, apresentou vômito com sangue, após o café da manhã. Os sinais vitais são FC = 105, PA = 80x45mmHg, FR = 25irpm, além de estar afebril. O primeiro passo para o manejo desse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "acesso venoso calibroso para infusão de volume",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "arteriografia para embolização de vaso sangrante",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "endoscopia digestiva para clipagem do vaso sangrante",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sonda nasogástrica para esvaziamento e para lavagem com salina fria do estômago",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro clássico de hemorragia digestiva alta (hematêmese após uso de analgésicos, provavelmente anti-inflamatórios não esteroidais para artrose), evoluindo com choque hipovolêmico. Os sinais de instabilidade hemodinâmica são claros: hipotensão arterial (80x45 mmHg), taquicardia (105 bpm), taquipneia, sudorese e agitação (sinal de hipoperfusão cerebral).\n\nDiante de qualquer paciente com hemorragia digestiva grave e instabilidade, a prioridade absoluta segue os preceitos do suporte avançado de vida: estabilização hemodinâmica antes de qualquer investigação diagnóstica ou tratamento definitivo da fonte do sangramento.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): O primeiro passo no manejo de um paciente em choque hipovolêmico por sangramento é garantir o \"C\" da reanimação (Circulação). Isso é feito através da obtenção de dois acessos venosos periféricos calibrosos (preferencialmente agulhas de calibre 14 ou 16) para a infusão rápida de cristaloides e, se necessário, hemoderivados. Sem a reposição de volume, o paciente corre risco iminente de parada cardiorrespiratória por hipovolemia extrema.\n\nAlternativa B (INCORRETA): A arteriografia com embolização é uma medida terapêutica de exceção. Ela é reservada para casos em que a endoscopia não consegue identificar ou controlar o sangramento, ou quando o paciente não tem condições cirúrgicas. Jamais seria o primeiro passo em um paciente instável que ainda não recebeu volume.\n\nAlternativa C (INCORRETA): A endoscopia digestiva alta é, de fato, o exame de escolha para diagnóstico e tratamento da hemorragia digestiva alta. No entanto, ela deve ser realizada preferencialmente após a estabilização hemodinâmica do paciente. Tentar realizar o procedimento em um paciente com pressão arterial de 80x45 mmHg aumenta drasticamente o risco de complicações anestésicas e cardiovasculares. Primeiro estabilizamos, depois realizamos a endoscopia.\n\nAlternativa D (INCORRETA): O uso de sonda nasogástrica para lavagem com soro gelado é uma prática antiga que não demonstrou benefício na interrupção do sangramento ou na melhora do prognóstico. Além disso, o esvaziamento gástrico por sonda não substitui a necessidade de estabilização volêmica imediata. Atualmente, a sonda é pouco utilizada, servindo às vezes apenas para avaliar se o sangramento ainda está ativo em casos de dúvida, o que não é o caso deste paciente que já apresentou hematêmese clara.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  },
+  {
+    "id": "AJUDA_41553135-7c04-4446-89db-f3a9abf1b1ae",
+    "originalId": "41553135-7c04-4446-89db-f3a9abf1b1ae",
+    "statement": "Dr. Marcos atende em uma comunidade isolada do interior do Amazonas. Um de seus comunitários, Sr. Miqueias, 35 anos, etilista crônico, iniciou quadro de tosse, febre nortuna, sudorese e perda de aproximadamente 15kg nos últimos 2 meses. Foi solicitada baciloscopia para tuberculose que resultara positivo. Considerando os contatos próximos de Sr. Miquéias, a informação de que em todo o país há indisponibilidade por tempo indeterminado da prova tuberculínica e que não está disponível o exame Interferon Gamma Release Assay (IGRA), assinale a seguir qual dos contatos do paciente-índice deverá receber tratamento prioritário para infecção latente da tuberculose:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maria, 65 anos, mãe, diabética e hipertensa, com tosse há 15 dias, radiografia de tórax suspeita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sandreia, 15 anos, filha, sem comorbidades, assintomática, radiografia de tórax sem alterações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Malaquias, 24 anos, pessoa vivendo com HIV/aids (PVHA), assintomático, radiografia de tórax sem alterações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sandra, 24 anos, esposa de Miquéias, gestante de 32 semanas, assintomática, não realizou radiografia de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a conduta frente aos contatos de um paciente com Tuberculose (TB) pulmonar bacilífera em um cenário de escassez de insumos diagnósticos (Prova Tuberculínica – PT e IGRA). O objetivo é identificar quem deve receber o tratamento da Infecção Latente da Tuberculose (ILTB) de forma prioritária.\n\nO primeiro passo na avaliação de qualquer contato de TB é excluir a doença ativa. Para isso, avaliamos a presença de sintomas e realizamos a radiografia de tórax. Uma vez excluída a TB ativa, avalia-se a indicação de tratamento da ILTB.\n\nAlternativa (a) Incorreta: Maria apresenta sintomas (tosse há 15 dias) e uma radiografia de tórax suspeita. Nestas condições, a principal hipótese é que ela já tenha desenvolvido a Tuberculose-Doença (TB ativa). O tratamento para ILTB (monoterapia) é formalmente contraindicado para quem tem suspeita de doença ativa, pois pode induzir resistência bacteriana. Maria deve prosseguir a investigação com coleta de escarro e, se confirmado, iniciar o esquema terapêutico completo (RIPE).\n\nAlternativa (b) Incorreta: Sandreia é uma adolescente saudável e assintomática. Em situações normais, ela precisaria realizar a PT ou IGRA para verificar se foi infectada. Na ausência desses exames e sendo ela imunocompetente, ela não entra nos grupos de prioridade absoluta para tratamento empírico da ILTB sem o teste de infecção, ao contrário de grupos de maior risco de progressão.\n\nAlternativa (c) Correta: Malaquias é uma Pessoa Vivendo com HIV (PVHA). Este grupo é o de maior risco para progressão de uma infecção latente para a forma ativa e grave da doença. Segundo as diretrizes do Ministério da Saúde, na indisponibilidade da PT ou do IGRA, o tratamento da ILTB está indicado para PVHA que sejam contatos de casos de TB pulmonar bacilífera, desde que a doença ativa tenha sido excluída. Como Malaquias está assintomático e tem radiografia de tórax normal, a doença ativa foi devidamente excluída, tornando-o o candidato ideal para o tratamento preventivo prioritário.\n\nAlternativa (d) Incorreta: Sandra é gestante e está assintomática. No entanto, ela não realizou a radiografia de tórax. Para indicar o tratamento da ILTB, é obrigatória a realização do raio X de tórax para descartar lesões sugestivas de TB ativa, mesmo em gestantes (com a devida proteção abdominal). Além disso, em um cenário de escassez de recursos, a prioridade de tratamento preventivo sem teste de infecção recai sobre as PVHA antes das gestantes sem outras comorbidades.\n\nEm resumo, diante da falta de PT e IGRA, priorizamos o tratamento da ILTB para os contatos com maior risco de adoecimento (como as PVHA) logo após descartarmos TB ativa por meio de sintomas e radiografia de tórax. Por isso, a alternativa (c) é a correta.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Tuberculose",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  },
+  {
+    "id": "AJUDA_415953e6-5de6-4b39-a96a-511bdafded1f",
+    "originalId": "415953e6-5de6-4b39-a96a-511bdafded1f",
+    "statement": "Mulher, 39 anos de idade, faz seguimento ambulatorial por lúpus eritematoso sistêmico com uso de prednisona, hidroxicloroquina e azatioprina. Foi admitida na enfermaria com queixa de dispneia aos médios esforços, tosse, náuseas e vômitos há 4 semanas. Exame físico: PA de 120x80 mmHg, FC de 108 bpm, FR de 26 ipm, saturação de oxigênio de 88%, temperatura axilar de 38,5 °C; sem anormalidades nas auscultas cardíaca e respiratória; abdome com hepatimetria de 13 cm e fígado doloroso à palpação, espaço de Traube submaciço, baço palpável logo abaixo do rebordo costal; sem outras anormalidades. Assinale a alternativa que possui as duas melhores hipóteses diagnósticas que, isoladamente, podem ocasionar o quadro clínico atual da paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Linfoma ou doença de Still.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tuberculose ou histoplasmose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sarcoidose ou pneumocistose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Endocardite ou doença de Gaucher.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta uma paciente de 39 anos com Lúpus Eritematoso Sistêmico (LES) em regime de imunossupressão tripla (prednisona, azatioprina e hidroxicloroquina). Ela desenvolve um quadro subagudo (4 semanas) de febre, sintomas respiratórios (tosse, dispneia e hipoxemia importante com saturação de 88%) e sinais de comprometimento sistêmico do sistema reticuloendotelial (hepatomegalia dolorosa e esplenomegalia). O ponto-chave é identificar doenças que causem, simultaneamente, comprometimento pulmonar e hepatoesplênico em um hospedeiro imunocomprometido.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o linfoma possa causar febre, hepatoesplenomegalia e sintomas respiratórios, a doença de Still do adulto é um diagnóstico de exclusão caracterizado por febre alta, artrite e exantema evanescente. Em uma paciente já diagnosticada com LES e sob imunossupressão, a principal preocupação deve ser com doenças oportunistas ou disseminação de infecções granulomatosas, tornando a doença de Still uma hipótese muito pouco provável para explicar o quadro de insuficiência respiratória aguda.\n\nAlternativa b) Correta. Esta é a alternativa que melhor explica o quadro. Tanto a tuberculose (em sua forma miliar/disseminada) quanto a histoplasmose (em sua forma disseminada aguda/subaguda) são doenças granulomatosas que ocorrem com frequência em pacientes imunossuprimidos. Ambas explicam a febre prolongada, a dispneia com hipoxemia e tosse (muitas vezes com ausculta pulmonar limpa no início, como descrito) e a disseminação para fígado e baço, causando a hepatoesplenomegalia observada no exame físico.\n\nAlternativa c) Incorreta. A pneumocistose (Pneumocystis jirovecii) é uma causa clássica de dispneia progressiva e hipoxemia com ausculta pulmonar normal em imunossuprimidos. No entanto, a pneumocistose é uma infecção restrita aos pulmões e não causa hepatoesplenomegalia. A sarcoidose pode causar ambos, mas o quadro agudo de febre e hipoxemia grave sugere mais fortemente uma etiologia infecciosa em uma paciente já lúpica.\n\nAlternativa d) Incorreta. A endocardite infecciosa poderia causar febre e fenômenos embólicos pulmonares, mas a hepatoesplenomegalia maciça não é o achado clínico predominante esperado. A doença de Gaucher é uma doença de depósito de caráter genético e crônico, que causa hepatoesplenomegalia e citopenias, mas não se manifesta como um quadro febril agudo/subagudo com insuficiência respiratória em uma paciente adulta previamente hígida quanto a essa patologia.\n\nConclusão: Diante de uma paciente imunossuprimida com febre, sintomas respiratórios e hepatoesplenomegalia, deve-se sempre suspeitar de doenças granulomatosas disseminadas, sendo a tuberculose e a histoplasmose as principais hipóteses diagnósticas.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Micoses Invasivas",
+      "Hepatoesplenomegalias Infecciosas",
+      "Tuberculose"
+    ],
+    "difficulty": 89.84378859546382,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  },
+  {
+    "id": "AJUDA_415a7d89-4c7f-4576-9ca5-360fc25e105f",
+    "originalId": "415a7d89-4c7f-4576-9ca5-360fc25e105f",
+    "statement": "Primigesta de 34 anos, procura a maternidade com três contrações a cada 10 minutos. Ao exame vaginal, o colo uterino está curto, amolecido e dilatado em 6 cm. Há saída ativa de líquido amniótico via vaginal. A vitalidade fetal encontra-se preservada. A data da última menstruação é incerta. No cartão obstétrico, há registro de dois laudos de ultrassonografia: um realizado com 11 semanas, cuja idade gestacional corrigida é de 36 semanas e 4 dias, e outro realizado com 31 semanas, indicando 33 semanas e 6 dias. Também há anotação de um swab vaginal/anal negativo para Estreptococo agalactiae positivo colhido há 6 semanas. Demais exames pré-natais normais.\nQual a conduta mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Corticosteroide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atosiban.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Penicilina cristalina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questao, o primeiro passo e determinar a Idade Gestacional (IG) correta. Pela regra obstetrica, a ultrassonografia do primeiro trimestre (11 semanas) e a mais confiavel para datar a gestacao. Portanto, a paciente encontra-se com 36 semanas e 4 dias (trabalho de parto prematuro tardio) com bolsa rota e dilatacao avancada (6 cm).\n\nQuanto a profilaxia intraparto para o Estreptococo do Grupo B (GBS): a cultura por swab tem validade de apenas 5 semanas. Como a coleta ocorreu ha 6 semanas, o status de GBS e considerado desconhecido no momento da admissao. Diante de trabalho de parto prematuro (idade gestacional menor que 37 semanas) com status de GBS desconhecido, a profilaxia antibiotica intraparto esta formalmente indicada.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A corticoterapia para maturacao pulmonar fetal e classicamente indicada entre 24 e 34 semanas. Embora alguns protocolos discutam o uso no prematuro tardio, nao ha indicacao de tocolise para aguardar o efeito da droga nesta idade gestacional com trabalho de parto ja em fase ativa e avancada (6 cm).\n\nAlternativa b: Incorreta. O atosiban e uma droga tocolitica. A inibicao do trabalho de parto (tocolise) nao e recomendada a partir de 34 semanas de gestacao, pois os riscos materno-fetais associados a tocolise superam os beneficios da postergacao do parto no prematuro tardio. Alem disso, a presenca de bolsa rota e dilatacao de 6 cm contraindica o procedimento.\n\nAlternativa c: Incorreta. O sulfato de magnesio para neuroprotecao fetal esta indicado apenas em ameacas de parto prematuro com menos de 32 semanas de idade gestacional.\n\nAlternativa d: Correta. A penicilina cristalina (ou penicilina G potassica) e o esquema de primeira escolha para a profilaxia intraparto da sepse neonatal precoce por GBS, indicada aqui pelo trabalho de parto com idade gestacional menor que 37 semanas associado a cultura de GBS expirada (status desconhecido).",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Prematuridade e Trabalho de Parto Prematuro",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  },
+  {
+    "id": "AJUDA_415d1400-ca24-4722-914a-ac00df9fce8c",
+    "originalId": "415d1400-ca24-4722-914a-ac00df9fce8c",
+    "statement": "Com relação às patologias mais comuns entre os brasileiros, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não há evidências de que hábitos saudáveis e uma alimentação equilibrada influenciam o surgimento de Alzheimer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O Brasil ocupa o terceiro lugar mundial em número de casos de depressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico de Acidente Vascular Cerebral (AVC) é estabelecido por meio da avaliação clínica do paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A hipertensão manifesta-se com sinais evidentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: Existe farta evidência científica demonstrando que fatores de risco modificáveis, como sedentarismo, tabagismo, obesidade, diabetes e hipertensão, influenciam diretamente o risco de desenvolvimento de demências, incluindo a doença de Alzheimer. Uma dieta equilibrada (como a dieta mediterrânea) e hábitos saudáveis são considerados fatores protetores cognitivos.\n\nAlternativa (b) Incorreta: Embora o Brasil apresente altos índices de transtornos mentais, os dados da Organização Mundial da Saúde (OMS) apontam que o país lidera o ranking mundial em prevalência de transtornos de ansiedade. No caso da depressão, o Brasil possui a maior prevalência da América Latina, mas não ocupa a terceira posição mundial em números absolutos ou proporcionais de forma consolidada em relatórios epidemiológicos globais recentes.\n\nAlternativa (c) Correta: O diagnóstico de acidente vascular cerebral (AVC) é eminentemente clínico, fundamentado na identificação de um déficit neurológico focal de início súbito (como hemiparesia, desvio de rima facial ou afasia). Os exames de imagem, como a tomografia computadorizada de crânio, são exames complementares essenciais para diferenciar a natureza do evento (isquêmico ou hemorrágico) e guiar a conduta terapêutica, mas o diagnóstico da síndrome neurológica em si ocorre à beira do leito.\n\nAlternativa (d) Incorreta: A hipertensão arterial sistêmica é conhecida como uma \"doença silenciosa\", pois na grande maioria dos casos é assintomática por longos períodos. Sinais e sintomas (como cefaleia, tontura ou borramento visual) geralmente só surgem em crises hipertensivas graves ou quando já existe lesão de órgão-alvo estabelecida.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  },
+  {
+    "id": "AJUDA_41611c12-02fd-4c08-8692-4e6c08e0c36f",
+    "originalId": "41611c12-02fd-4c08-8692-4e6c08e0c36f",
+    "statement": "Pré-escolar, três anos de idade, previamente hígido, é levado à emergência pelos pais por apresentar petéquias em tronco e membros inferiores e equimoses generalizadas, surgidas há 48 horas. Os pais relatam que a criança apresentou quadro gripal recente, já resolvido. Ao exame físico, o paciente apresenta-se ativo, sorridente, sem outros sinais de sangramento além das petéquias e equimoses. O hemograma revela plaquetopenia - 15.000/mm³ com os demais parâmetros hematológicos (hemoglobina, leucócitos) dentro da normalidade. Qual é a CONDUTA INICIAL MAIS APROPRIADA para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar imunoglobulina humana intravenosa (IVIG) e avaliar alta hospitalar após elevação das plaquetas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar corticoterapia com prednisolona 2mg/Kg/dia e internar para observação por 72 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter observação clínica ambulatorial e orientar os pais sobre sinais de alerta e cuidados gerais, como evitar esportes de contato",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar transfusão de plaquetas para prosseguir com aspirado de medula ósea para confirmar o diagnóstico e iniciar o tratamento",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de Púrpura Trombocitopênica Imune (PTI) na infância. Trata-se de uma criança previamente hígida, com história recente de infecção viral, que apresenta sangramento cutâneo isolado (petéquias e equimoses), bom estado geral e plaquetopenia isolada no hemograma, sem alterações nas outras linhagens celulares.\n\nNa PTI pediátrica, o foco do tratamento não é o valor absoluto das plaquetas, mas sim a presença e a gravidade dos sintomas hemorrágicos. \n\nExplicação das alternativas:\n\na) Incorreta. A imunoglobulina humana intravenosa (IVIG) é uma opção de tratamento eficaz para elevar rapidamente os níveis de plaquetas, porém é reservada para casos com sangramentos mucosos (púrpura úmida) ou sangramentos graves. Em pacientes com manifestações apenas cutâneas, o uso de IVIG não é a conduta inicial mandatória, devido aos custos e efeitos colaterais.\n\nb) Incorreta. A corticoterapia (como a prednisolona) é uma opção terapêutica para PTI, mas, assim como a IVIG, é indicada prioritariamente em casos de sangramento persistente ou quando há necessidade de elevar as plaquetas por risco hemorrágico aumentado. Além disso, na PTI típica da infância, a internação hospitalar para observação nem sempre é necessária se os pais forem bem orientados e o paciente estiver estável.\n\nc) Correta. De acordo com os consensos atuais (como o da Sociedade Brasileira de Pediatria e o da American Society of Hematology), a conduta inicial para crianças com PTI que apresentam apenas sintomas cutâneos (petéquias e equimoses), independentemente da contagem de plaquetas, é a observação clínica e conduta expectante. A maioria dos casos na infância é autolimitada e regride espontaneamente. As orientações sobre evitar esportes de contato e monitorar sinais de alerta (sangramentos em mucosas, hematúria, sangramento gastrointestinal) são fundamentais.\n\nd) Incorreta. A transfusão de plaquetas é raramente indicada na PTI, pois os anticorpos presentes no paciente destruirão as plaquetas transfundidas rapidamente; ela é reservada apenas para hemorragias com risco de morte. O aspirado de medula óssea não é necessário em casos típicos (plaquetopenia isolada, exame físico normal e ausência de sintomas constitucionais). Ele seria solicitado apenas se houvesse dúvidas diagnósticas, como suspeita de leucemia (presença de blastos, anemia ou leucopenia associadas).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  },
+  {
+    "id": "AJUDA_4174f8ab-3380-4e3e-9bfd-e0b033de3aab",
+    "originalId": "4174f8ab-3380-4e3e-9bfd-e0b033de3aab",
+    "statement": "Será realizada uma segmentectomia hepática em um paciente com hepatocarcinoma localizado. O cirurgião principal é canhoto, e sua equipe deve preparar a mesa de instrumentação cirúrgica de forma ergonômica e segura para o procedimento. O instrumentador, destro e acostumado com cirurgiões destros, organiza o material como de rotina.\n\nDas medidas indicadas a seguir, aquela que representa a adequação correta da montagem da mesa para o cirurgião canhoto, nesse tipo de cirurgia, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "manter a disposição padrão, com instrumentos especiais voltados para a parte inferior da mesa de instrumentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o(s) bisturi(s), tesouras, fios e porta-agulhas devem ser dispostos à esquerda da mesa de instrumentos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "colocar todos os instrumentos simetricamente no centro da mesa para uso indiferente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dispor os afastadores e pinças especiais à esquerda da mesa de instrumentos, respeitando-se a dominância do cirurgião.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a ergonomia e a organização do ambiente cirúrgico, focando especificamente na adaptação da mesa de instrumentação para atender à dominância manual do cirurgião principal. A organização eficiente da mesa é fundamental para a fluidez do tempo cirúrgico e para a segurança do paciente.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Manter a disposição padrão ignora a ergonomia necessária para um cirurgião canhoto. A disposição padrão é desenhada para facilitar o alcance de cirurgiões destros. Manter essa configuração forçaria o instrumentador a realizar movimentos cruzados ou desnecessários para entregar os materiais na mão dominante do cirurgião, aumentando o risco de acidentes e lentificando o procedimento.\n\nAlternativa (b) Correta: Na técnica cirúrgica, os instrumentos de diérese (bisturis e tesouras) e de síntese (porta-agulhas e fios) são os que exigem maior precisão e são manipulados prioritariamente pela mão dominante do cirurgião. Para um cirurgião canhoto, o fluxo de entrega deve ser invertido em relação ao padrão destro. Dispor esses materiais à esquerda da mesa de instrumentos (considerando a perspectiva do instrumentador, que está de frente para a mesa e entrega o material para o cirurgião posicionado adequadamente) facilita a entrega direta na mão esquerda do operador, otimizando a ergonomia e a agilidade.\n\nAlternativa (c) Incorreta: A organização da mesa cirúrgica deve seguir uma lógica funcional e temporal (tempos cirúrgicos: diérese, hemostasia, preensão e síntese). Colocar todos os instrumentos no centro de forma simétrica descaracteriza a setorização necessária, dificultando a localização rápida do instrumental pelo próprio instrumentador e gerando desorganização durante a cirurgia.\n\nAlternativa (d) Incorreta: Embora mencione o respeito à dominância do cirurgião, esta alternativa foca em afastadores e pinças especiais. Afastadores são instrumentos de exposição, frequentemente manuseados por assistentes ou pela mão não dominante do cirurgião. A prioridade de inversão para a lateralidade do cirurgião deve ser dada aos instrumentos de corte (diérese) e sutura (síntese), que são os instrumentos de ação principal da mão dominante, conforme descrito corretamente na alternativa (b).\n\nEm resumo, a adequação da mesa para um cirurgião canhoto exige que os instrumentos de maior precisão e uso constante pela mão dominante sejam posicionados de forma a espelhar a montagem tradicional, garantindo que o instrumentador entregue o material de forma direta e segura.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  },
+  {
+    "id": "AJUDA_417bd114-3705-4836-816d-ddc8f055771f",
+    "originalId": "417bd114-3705-4836-816d-ddc8f055771f",
+    "statement": "Paciente masculino, de 45 anos, consultou por apresentar uma lesão de pele na região dorsal do antebraço direito, que vinha crescendo lentamente nos últimos meses. Ao exame, a lesão era assimétrica, com mais de 6 mm de diâmetro, bordas irregulares e diversas cores. Qual o principal fator de risco para o desenvolvimento desse tipo de lesão cutânea?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exposição crônica ao sol sem proteção solar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Histórico familiar de câncer de pele",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Consumo excessivo de alimentos ricos em gordura",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tabagismo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Questão:\nA descrição da lesão (assimetria, bordas irregulares, diversas cores e diâmetro maior que 6 mm) remete diretamente à regra do ABCDE, utilizada para a triagem clínica do melanoma cutâneo. O melanoma é uma neoplasia maligna que se origina nos melanócitos e possui alto potencial metastático se não diagnosticada precocemente.\n\nAlternativa a: Correta. A radiação ultravioleta (UV), proveniente da exposição solar desprotegida, é o principal fator de risco ambiental para o desenvolvimento do melanoma e de outros cânceres de pele. A radiação UV causa danos cumulativos ao DNA das células da pele e promove mutações em genes críticos de controle celular. Tanto a exposição solar intermitente com episódios de queimaduras na infância quanto a exposição crônica ao longo da vida são determinantes para o surgimento da doença.\n\nAlternativa b: Incorreta. Embora o histórico familiar seja um fator de risco importante e indique predisposição genética (como mutações no gene CDKN2A), ele responde por apenas cerca de 5% a 10% dos casos de melanoma. A exposição solar é o fator mais abrangente e significativo na população geral.\n\nAlternativa c: Incorreta. Não existe relação causal ou epidemiológica estabelecida entre o consumo de alimentos ricos em gordura e o desenvolvimento de melanoma cutâneo. Fatores dietéticos não são considerados fatores de risco principais para este tipo de câncer.\n\nAlternativa d: Incorreta. O tabagismo é um fator de risco clássico para diversos outros tipos de câncer, como os de pulmão, bexiga e trato aerodigestivo, além de estar associado ao carcinoma espinocelular de pele. No entanto, não é o fator principal relacionado ao surgimento do melanoma descrito no quadro clínico.\n\nGabarito: Alternativa (a).",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  },
+  {
+    "id": "AJUDA_418712e4-bad3-43c4-9739-55843bc88ea7",
+    "originalId": "418712e4-bad3-43c4-9739-55843bc88ea7",
+    "statement": "Assinale a alternativa que apresenta a ordem de prevalência dos tumores na população brasileira, com exceção dos tumores de pele.",
+    "options": [
+      {
+        "id": "A",
+        "text": "nos homens, próstata, pulmão e colorretal; e, nas mulheres, mama, colorretal e colo do útero",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nos homens, próstata, colorretal e pulmão; e, nas mulheres, mama, colo do útero e colorretal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "nos homens, próstata, colorretal e pulmão; e, nas mulheres, mama, colorretal e colo do útero",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "nos homens, colorretal, próstata e pulmão; e, nas mulheres, colorretal mama e colo do útero",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "nos homens, próstata, pulmão e gástrico; e, nas mulheres, mama, colo do útero e pulmão",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão exige o conhecimento das estimativas epidemiológicas de incidência de câncer no Brasil, publicadas periodicamente pelo Instituto Nacional de Câncer (INCA). Para o triênio atual (2023-2025), houve uma consolidação da transição epidemiológica, na qual os cânceres associados ao estilo de vida e dieta (como o colorretal) ganharam posições frente a outros tipos.\n\nAlternativa a) Incorreta. No sexo masculino, o câncer de pulmão não é o segundo mais prevalente. Atualmente, o câncer colorretal ocupa a segunda posição, deixando o de pulmão em terceiro lugar. A sequência para as mulheres apresentada nesta alternativa está correta (mama, colorretal e colo do útero), mas o erro no grupo masculino a invalida.\n\nAlternativa b) Incorreta. Embora a ordem para os homens esteja correta (próstata, colorretal e pulmão), a ordem para as mulheres está desatualizada. Historicamente, o câncer de colo do útero já foi o segundo mais comum, mas, nas estimativas nacionais mais recentes, ele foi ultrapassado pelo câncer colorretal, ocupando agora a terceira posição.\n\nAlternativa c) Correta. Esta alternativa reflete os dados atuais do INCA para a população brasileira, excetuando-se o câncer de pele não melanoma. No sexo masculino, a sequência é: 1. Próstata; 2. Colorretal; 3. Pulmão. No sexo feminino, a sequência é: 1. Mama; 2. Colorretal; 3. Colo do útero. É fundamental notar que o câncer colorretal subiu para o segundo lugar em ambos os sexos, o que é uma tendência em populações com mudanças nos hábitos alimentares e aumento do sedentarismo.\n\nAlternativa d) Incorreta. O câncer colorretal não é o tumor de maior prevalência no Brasil. Os cânceres de próstata e mama continuam sendo, isoladamente, os de maior incidência em homens e mulheres, respectivamente.\n\nAlternativa e) Incorreta. O câncer gástrico (estômago) e o de pulmão (no caso das mulheres) não estão entre os três mais incidentes na média nacional brasileira. O câncer de estômago apresentou queda nas últimas décadas, enquanto o de pulmão, nas mulheres, embora venha crescendo, ainda ocupa a quarta posição, atrás do colo do útero.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  },
+  {
+    "id": "AJUDA_418d3e0b-e700-4f2c-ae40-f7f207d58355",
+    "originalId": "418d3e0b-e700-4f2c-ae40-f7f207d58355",
+    "statement": "Uma mulher de 42 anos, em surto agudo de esquizofrenia, relata transformação profunda de sua vivência temporal. Descreve que o tempo parece encolhido, não passa normalmente, e que experimenta fragmentação completa de sua percepção do fluxo temporal junto com vivências de estranhamento radical do tempo passado e futuro. Refere ainda perda de controle sobre sua percepção temporal, como se alguém externo controlasse o passar do tempo. Analise o mecanismo fisiopatológico subjacente a essa alteração da vivência temporal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alteração da vivência do tempo característica de depressão grave, na qual a lentificação enorme das atividades acompanha compressão temporal subjetiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Desarticulação e quebra do aspecto natural pré-reflexivo que caracteriza a vivência normal do tempo, marcada por fragmentação da percepção do fluir temporal e vivências anormais relacionadas a delírios.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Transtorno do tempo vinculado ao transtorno obsessivo-compulsivo, no qual há bloqueio ritualístico das atividades gerando falsa percepção de fluxo temporal anormal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aceleração extrema da velocidade temporal subjetiva com impressão de que o tempo passa rapidamente demais, típica de estados maníacos franco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alteração de cenestesia e percepção de movimento corporal que interfere secundariamente na vivência do fluxo temporal de forma independente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico descreve uma paciente em surto de esquizofrenia com graves alterações na cronognosia (percepção do tempo). As queixas de tempo encolhido, fragmentação do fluxo e a sensação de controle externo sobre o tempo são marcos de uma desestruturação psicopatológica profunda, típica do espectro psicótico e da desarticulação da consciência do eu.\n\nAlternativa a: Incorreta. Na depressão grave, o paciente comumente sente que o tempo estagnou ou flui de forma extremamente lenta (lentificação do tempo subjetivo). No entanto, não há habitualmente a fragmentação da percepção temporal ou a vivência de que o tempo é controlado por terceiros, características que são específicas da desorganização psicótica.\n\nAlternativa b: Correta. Esta alternativa utiliza conceitos da psicopatologia fenomenológica. Na esquizofrenia, ocorre a quebra da continuidade da consciência e da vivência do tempo pré-reflexivo (aquele que sentimos intuitivamente, sem precisar pensar sobre ele). O fluxo temporal deixa de ser contínuo e torna-se fragmentado ou \"aos saltos\". Além disso, o relato de que o tempo é controlado externamente reflete as vivências de passividade e os delírios de controle, em que a fronteira entre o eu e o mundo externo está rompida.\n\nAlternativa c: Incorreta. No Transtorno Obsessivo-Compulsivo (TOC), o paciente pode ter a sensação de que o tempo é insuficiente devido ao tempo gasto com rituais e verificações. Contudo, a estrutura fundamental da percepção do tempo permanece intacta; não há fragmentação ou perda do controle sobre a percepção do fluxo temporal como ocorre na psicose.\n\nAlternativa d: Incorreta. A aceleração extrema da velocidade temporal subjetiva é uma característica clássica dos estados maníacos (Transtorno Bipolar). Nesses casos, o paciente sente que o tempo passa muito rápido (taquipsiquia), acompanhando a aceleração do pensamento e da fala, o que difere do quadro de fragmentação e estranhamento radical descrito pela paciente.\n\nAlternativa e: Incorreta. Cenestesia refere-se à percepção sensorial interna do corpo (sensações viscerais ou proprioceptivas). Embora pacientes esquizofrênicos possam apresentar alucinações cenestésicas, a descrição da questão foca primariamente na desarticulação da temporalidade e não em uma alteração da percepção do movimento corporal que afetaria o tempo de forma secundária.\n\nEm resumo, a alternativa B descreve com precisão a desestruturação do fluxo temporal que ocorre na esquizofrenia, em que a naturalidade do \"passar do tempo\" é substituída por uma percepção fragmentada e delirante.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Psicopatologia",
+      "Transtornos Psicóticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:26.739Z"
+  }
+]

@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_de3028da-458d-422a-819a-a722f41b24be",
+    "originalId": "de3028da-458d-422a-819a-a722f41b24be",
+    "statement": "Uma jovem de 25 anos foi submetida à mamoplastia redutora com colocação de prótese mamária. Retorna ao ambulatório devido à queixa e dificuldade de cicatrização, sendo evidenciada deiscência parcial de parte da ferida operatória. Qual dos fatores a seguir deve ser suspeitado como possível causa da inibição da cicatrização da ferida operatória?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertensão arterial sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de analgésicos no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infecção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mobilização precoce dos membros superiores no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deficiência de vitamina B6.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Resposta correta: letra C (infecção).\n\nConceito-chave: a cicatrização depende de fatores locais e sistêmicos. A infecção é o principal fator local que inibe o processo. Em uma paciente jovem submetida a cirurgia com implante (corpo estranho), a infecção do sítio cirúrgico deve ser a primeira suspeita diante de deiscência parcial. As bactérias prolongam a fase inflamatória, competem por oxigênio e nutrientes, degradam colágeno por meio de proteases e metaloproteinases e impedem a epitelização e a angiogênese. A prótese serve de substrato para formação de biofilme, o que aumenta o risco. Outros fatores locais importantes são isquemia (comum em mamoplastias redutoras, por tensão e comprometimento vascular do pedículo ou dos retalhos), hematoma, seroma, tensão excessiva na sutura e tabagismo.\n\nAnálise das alternativas:\n\na) Incorreta. A hipertensão arterial isoladamente, em uma jovem de 25 anos e sem lesão vascular, não é a causa clássica de deficiência cicatricial. Os distúrbios que prejudicam a cicatrização por comprometer a perfusão são principalmente diabetes, doença arterial periférica e vasculopatias graves. Além disso, a hipertensão não é o fator a ser suspeitado primeiro neste caso.\n\nb) Incorreta. Analgésicos comuns (dipirona, paracetamol, opioides) não inibem significativamente a cicatrização. O que interfere são os corticoides sistêmicos, quimioterápicos e, em uso prolongado e em altas doses, possivelmente os AINEs. O enunciado fala apenas de \"analgésicos\" de forma genérica, o que não configura causa provável.\n\nc) Correta. Infecção é a causa mais comum e relevante de falha cicatricial, sobretudo com material protético. Deve-se examinar a ferida (eritema, calor, secreção purulenta, dor, febre), coletar cultura, realizar desbridamento e drenagem se necessário e iniciar antibioticoterapia dirigida. Em casos refratários, pode ser necessário retirar o implante.\n\nd) Incorreta. A mobilização precoce dos membros superiores não é fator de inibição da cicatrização. Movimentos amplos e bruscos podem aumentar a tensão sobre a sutura, mas a mobilização gradual e precoce é recomendada para prevenir rigidez do ombro e não é a causa suspeita aqui.\n\ne) Incorreta. A deficiência de vitamina B6 (piridoxina) não é classicamente associada a distúrbio da cicatrização. As deficiências relevantes são de vitamina C (essencial para a hidroxilação de prolina e lisina na síntese de colágeno, causando escorbuto), vitamina A, zinco, ferro e proteínas. Além disso, a deficiência de B6 é rara em paciente jovem e saudável.\n\nResumo: diante de deiscência após cirurgia com implante, pense primeiro em infecção, hematoma, seroma e isquemia. Fatores sistêmicos (diabetes, desnutrição, corticoides, tabagismo, deficiência de vitamina C e zinco) vêm depois.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cicatrização de Feridas",
+      "Cirurgia Plástica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  },
+  {
+    "id": "AJUDA_de310dd8-c28c-43fd-92f9-3b0f78f055f9",
+    "originalId": "de310dd8-c28c-43fd-92f9-3b0f78f055f9",
+    "statement": "Mulher de 55 anos, G2P2 (cesarianas), refere ausência de menstruação há cinco anos. Procura o ambulatório de ginecologia com queixas de secura vaginal e desconforto genital na relação sexual desde então. O exame físico demonstra atrofia genital com discreta secreção vaginal hialina. \nQual das alternativas explica a alteração que leva ao quadro clínico descrito acima?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alargamento progressivo do introito",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução do nível local de glicogênio",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aumento significativo do pH vaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento da população de lactobacilo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aumento das ectopias cervicais",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — mulher de 55 anos, na pós-menopausa há cinco anos, apresentando secura vaginal, dispareunia (dor no coito) e sinais de atrofia ao exame físico — é característico da Síndrome Geniturinária da Menopausa. A base dessa condição é a deficiência estrogênica.\n\nAbaixo, a análise de cada alternativa:\n\nAlternativa (a) Incorreta: O hipoestrogenismo leva à perda de colágeno, vascularização e elasticidade dos tecidos vaginais. O resultado é o estreitamento (estenose) e encurtamento do canal vaginal e do introito, e não o seu alargamento. O alargamento costuma estar associado à multiparidade e lacerações de parto, não à atrofia hormonal.\n\nAlternativa (b) Correta: O estrogênio é fundamental para a proliferação e maturação das células do epitélio escamoso vaginal. Essas células maduras são ricas em glicogênio. Com a queda dos níveis de estrogênio na menopausa, o epitélio torna-se delgado (atrófico) e ocorre uma redução drástica nos níveis locais de glicogênio. Essa é a alteração celular primária que explica a fragilidade da mucosa e a sintomatologia de secura e desconforto.\n\nAlternativa (c) Incorreta: Na menopausa, ocorre de fato uma alteração do pH vaginal, mas ele se torna mais alcalino (aumenta, geralmente ficando acima de 5,0). No entanto, o aumento do pH é uma consequência da falta de glicogênio e lactobacilos, e não a causa primária da atrofia ou da secura relatada pela paciente. O foco da fisiopatologia da atrofia é a alteração tecidual e metabólica celular (glicogênio).\n\nAlternativa (d) Incorreta: Ocorre uma redução da população de lactobacilos. Como os lactobacilos dependem do glicogênio (que está reduzido) para realizar a fermentação e produzir ácido lático, eles não conseguem se manter em níveis adequados. A diminuição desses microrganismos é o que permite o aumento do pH vaginal e a colonização por flora mista ou patogênica.\n\nAlternativa (e) Incorreta: As ectopias cervicais (presença de epitélio colunar na ectocérvice) são dependentes de altos níveis de estrogênio (comuns em mulheres em idade fértil, usuárias de anticoncepcionais orais ou gestantes). Na menopausa, devido ao hipoestrogenismo, a junção escamocolunar (JEC) migra para dentro do canal endocervical, desaparecendo a ectopia.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  },
+  {
+    "id": "AJUDA_de378b4b-6121-4c88-bfe6-a116da9ef749",
+    "originalId": "de378b4b-6121-4c88-bfe6-a116da9ef749",
+    "statement": "Assinale a alternativa correta.\nO \"craniotabes ou craniomalácia\" é um sinal precoce de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pelagra.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Beribéri.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Escorbuto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Raquitismo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Kwashiorkor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O craniotabes (ou craniomalácia) refere-se ao amolecimento e afinamento dos ossos do crânio, sendo observado principalmente nos ossos occipital e parietal. Durante o exame físico, ao pressionar essas áreas com o dedo, o examinador percebe uma sensação de recuo e retorno elástico, comparada à deformação de uma bola de pingue-pongue. Esse achado decorre da falha na mineralização da matriz óssea em áreas de crescimento rápido.\n\nAlternativa (a) Incorreta. A pelagra é a doença causada pela deficiência de niacina (vitamina B3). Suas manifestações clássicas compõem a tríade dos \"3 Ds\": dermatite (especialmente em áreas expostas ao sol), diarreia e demência. Não apresenta o craniotabes como característica clínica.\n\nAlternativa (b) Incorreta. O beribéri é resultante da deficiência de tiamina (vitamina B1). Pode se manifestar na forma seca (predomínio de sintomas neurológicos, como polineurite) ou na forma úmida (predomínio de sintomas cardiovasculares, como insuficiência cardíaca de alto débito e edema), mas não afeta a mineralização óssea craniana.\n\nAlternativa (c) Incorreta. O escorbuto é causado pela deficiência de vitamina C (ácido ascórbico), essencial para a síntese de colágeno. Embora cause alterações ósseas e dor (como o descolamento subperiosteal), seus sinais mais típicos são hemorragias (gengivorragia, petéquias), fragilidade capilar e atraso na cicatrização, e não o craniotabes.\n\nAlternativa (d) Correta. O raquitismo é uma doença da placa de crescimento em crianças, geralmente causada pela deficiência de vitamina D, que leva à absorção inadequada de cálcio e fósforo. Isso resulta em uma mineralização deficiente do osso recém-formado. O craniotabes é considerado um dos sinais clínicos mais precoces do raquitismo, aparecendo nos primeiros meses de vida do lactente, antes mesmo de outras deformidades ósseas mais conhecidas, como o rosário raquítico ou o arqueamento dos membros.\n\nAlternativa (e) Incorreta. O Kwashiorkor é uma forma de desnutrição proteico-energética grave em que há deficiência predominante de proteínas, apesar de uma ingestão calórica que pode ser aceitável. Caracteriza-se por edema (devido à hipoalbuminemia), hepatomegalia, alterações na pele e cabelos, mas não está associado primariamente ao amolecimento dos ossos cranianos por falha de mineralização.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  },
+  {
+    "id": "AJUDA_de39c159-7ffa-48dd-8290-0c1e37e4f2a9",
+    "originalId": "de39c159-7ffa-48dd-8290-0c1e37e4f2a9",
+    "statement": "Gestante, 17 anos, primigesta, realizou pré-natal com 7 consultas, sem comorbidades. No 1º trimestre, apresentou teste rápido reagente para sífilis. Na Unidade em que fazia o pré-natal, solicitou-se Veneral Disease Research Laboratory (VDRL), com título de 1/128, sendo realizado tratamento com penicilina benzatina 2.400.000 UI intramuscular, em 3 doses, com intervalo de 1 semana. Após o término do tratamento, foram realizados controles de VDRL: 1/64 e 1/16 (2 meses antes do parto). RN, nascido de parto normal, com idade gestacional de 39 semanas. Na maternidade, os exames foram: VDRL materno: 1/32; VDRL do RN: 1/16; hemoglobina 15 g/dL; hematócrito 40%; leucócitos 11.000/mm³; bastonetes 1%; segmentados 16%; linfócitos 66%; monócitos 15%; eosinófilos 2%; plaquetas 190.000/mm³. Líquor: ligeiramente turvo e xantocrômico; células: 20/mm³; hemácias: 100/mm³; proteínas: 140 mg/dL; glicose: 45 mg/dL. VDRL no líquor não reagente. Radiografia membros inferiores com sinal de Winberger.\n\nEm face do exposto, qual é a conduta correta para o RN?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Penicilina procaína 50.000 UI/kg/dose, intramuscular, durante 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Penicilina cristalina 50.000 UI/kg/dose, intravenoso, durante 10 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Penicilina G benzatina 50.000 UI/kg, intramuscular, dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alta da maternidade, sem antibioticoterapia, com VDRL em 1 mês.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alta da maternidade, sem antibioticoterapia, com controle de teste treponêmico em 1 mês.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar o cenário materno e os achados clínicos e laboratoriais do recém-nascido (RN), conforme as diretrizes do Ministério da Saúde para o manejo da sífilis congênita.\n\n1. Avaliação Materna: A gestante foi tratada adequadamente com três doses de penicilina benzatina. No entanto, o VDRL materno no momento do parto (1/32) foi superior ao último exame realizado dois meses antes (1/16). Embora não tenha havido um aumento de duas diluições (o que confirmaria reinfecção), o RN apresenta alterações nos exames complementares que definem o diagnóstico de sífilis congênita.\n\n2. Avaliação do Recém-nascido:\n- VDRL do RN: 1/16 (menor que o materno, o que, por si só, não fecha o diagnóstico).\n- Radiografia de membros inferiores: Presença do sinal de Wimberger (erosão da porção medial da metáfise proximal da tíbia). Este sinal é altamente sugestivo de sífilis congênita.\n- Líquor: Apresenta celularidade de 20 células/mm³ e proteínas de 140 mg/dL. Em neonatos, valores acima de 15 a 25 células/mm³ e proteínas acima de 120 a 150 mg/dL são considerados alterados em protocolos de sífilis, indicando neurosífilis ou a necessidade de tratamento sistêmico pleno. O líquor turvo e xantocrômico reforça a alteração.\n\nDiagnóstico: Sífilis congênita com alteração liquórica e radiológica.\n\nAnálise das alternativas:\n\na) Incorreta. A penicilina procaína poderia ser uma opção para o tratamento de sífilis congênita sem alteração liquórica (embora a cristalina seja preferível), mas o tempo de tratamento está errado. O tratamento deve durar, obrigatoriamente, 10 dias, e não 7 dias.\n\nb) Correta. Diante de um RN com alterações clínicas, radiológicas ou laboratoriais (especialmente no líquor), a conduta correta é o tratamento com penicilina G cristalina na dose de 50.000 UI/kg/dose. O esquema deve ser feito por via intravenosa durante 10 dias. A penicilina cristalina é a única com penetração adequada no sistema nervoso central para tratar a neurosífilis (sugerida pela alteração bioquímica e celular do líquor).\n\nc) Incorreta. A penicilina benzatina em dose única é reservada apenas para RNs assintomáticos, com todos os exames complementares normais (incluindo radiografia e líquor) e VDRL não reagente ou com títulos baixos, cujas mães foram tratadas de forma inadequada ou nos casos em que o tratamento materno não pôde ser verificado. Não se aplica a este caso, que é sintomático.\n\nd) Incorreta. É impossível dar alta sem tratamento para um RN que apresenta alterações radiológicas patognomônicas (sinal de Wimberger) e alterações no líquor, pois a sífilis congênita não tratada pode levar a sequelas graves e permanentes.\n\ne) Incorreta. O teste treponêmico no recém-nascido não tem valor diagnóstico imediato, pois os anticorpos IgG maternos atravessam a placenta e podem permanecer reagentes no bebê por até 18 meses, sem que isso signifique infecção ativa no RN. A conduta deve ser baseada nos testes não treponêmicos (VDRL) e na clínica.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  },
+  {
+    "id": "AJUDA_de3bd00d-834c-461c-aeec-d73004ea3f12",
+    "originalId": "de3bd00d-834c-461c-aeec-d73004ea3f12",
+    "statement": "Segundo a classificação de Hinchey, qual o achado característico do Estágio III da diverticulite complicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abscesso pericólico pequeno, confinado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Peritonite purulenta generalizada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Abscesso pélvico bloqueado, grande.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Peritonite fecal generalizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fístula colovesical com abscesso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A classificação de Hinchey é o sistema mais utilizado para estadiar a gravidade da diverticulite aguda complicada e orientar a conduta terapêutica. Para responder corretamente à questão, é necessário conhecer os quatro estágios da classificação original:\n\nHinchey I: Presença de abscesso pericólico ou mesentérico pequeno e localizado, confinado à região próxima ao segmento inflamado do cólon.\n\nHinchey II: Presença de abscesso pélvico, retroperitoneal ou à distância, mas que ainda permanece bloqueado ou confinado.\n\nHinchey III: Caracteriza-se por peritonite purulenta generalizada. Neste estágio, ocorre a ruptura de um abscesso ou do próprio divertículo para a cavidade abdominal, resultando em pus espalhado por todo o peritônio, porém sem comunicação livre persistente com a luz do cólon (sem fezes).\n\nHinchey IV: Caracteriza-se por peritonite fecal generalizada. Ocorre a perfuração livre do cólon, permitindo o extravasamento de fezes para a cavidade peritoneal.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O abscesso pericólico confinado é o achado típico do Estágio I de Hinchey.\n\nAlternativa (b) Correta: A peritonite purulenta generalizada é a definição exata e o achado característico do Estágio III.\n\nAlternativa (c) Incorreta: Abscessos pélvicos ou retroperitoneais bloqueados, mesmo que grandes, pertencem ao Estágio II de Hinchey.\n\nAlternativa (d) Incorreta: A peritonite fecal generalizada, com presença de fezes na cavidade, define o Estágio IV.\n\nAlternativa (e) Incorreta: Embora a fístula colovesical seja uma complicação possível da doença diverticular, ela não faz parte da classificação de Hinchey, que foca na classificação de processos perfurativos agudos e abscessos.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  },
+  {
+    "id": "AJUDA_de3d0cd9-6e8c-4872-916c-69d4d9d231c1",
+    "originalId": "de3d0cd9-6e8c-4872-916c-69d4d9d231c1",
+    "statement": "Homem de 42 anos, pescador que mora próximo a um lago, é atendido em uma unidade básica de saúde (UBS) no norte de Minas Gerais. Ele relata dor abdominal intermitente, cansaço, febre baixa, hiporexia, episódios de diarreia há cerca de um mês e áreas de prurido em membros inferiores. No exame físico, apresenta hepatoesplenomegalia e distensão abdominal. Nos membros inferiores há lesões sugestivas de estrófulos. O hemograma mostra eosinofilia. Aguarda resultado de exame parasitológico de fezes pelo método Kato-Katz. \n\nNesse caso, qual deverá ser a conduta de acordo com o resultado do exame?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se o resultado for positivo, tratar o paciente com metronidazol e notificar ao SINAN.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Se o resultado for positivo, solicitar ensaio imunoenzimático (ELISA) para detecção de anticorpos IgG e confirmação da atividade da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se o resultado for positivo, tratar o paciente com praziquantel e notificar no sistema de informação do programa específico da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Se o resultado for negativo, solicitar método de sedimentação espontânea de fezes (Hoffman) para descartar a principal hipótese diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro clássico de esquistossomose mansoni. Os principais indícios são: procedência de área endêmica (norte de Minas Gerais), ocupação de risco (pescador em lago), histórico de prurido em membros inferiores (dermatite cercariana), sintomas digestivos, hepatoesplenomegalia (sugerindo evolução para a forma hepatoesplênica ou hepatointestinal) e a presença de eosinofilia no hemograma. O exame de Kato-Katz solicitado é o padrão-ouro para o diagnóstico parasitológico e a quantificação da carga parasitária desta helmintose.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): O metronidazol é um antibiótico e antiparasitário indicado para o tratamento de protozoários (como Giardia lamblia e Entamoeba histolytica) e bactérias anaeróbias. Ele não possui eficácia contra o Schistosoma mansoni.\n\nAlternativa B (Incorreta): Se o resultado do Kato-Katz for positivo, o diagnóstico de certeza está estabelecido pela visualização direta dos ovos do parasita, o que indica infecção ativa. O teste ELISA para detecção de anticorpos IgG é útil em áreas não endêmicas ou para triagem, mas não serve para confirmar a \"atividade\" da doença após um parasitológico positivo, pois os anticorpos podem persistir mesmo após a cura.\n\nAlternativa C (Correta): O tratamento de escolha para a esquistossomose é o praziquantel (dose única de 50 mg/kg para adultos). Além disso, por se tratar de uma doença de relevância epidemiológica, o caso deve ser notificado. Em áreas endêmicas, a notificação e o acompanhamento são realizados por meio do SISPCE (Sistema de Informação do Programa de Vigilância e Controle da Esquistossomose), enquanto casos graves ou em áreas não endêmicas são notificados ao SINAN.\n\nAlternativa D (Incorreta): O método de Hoffman (sedimentação espontânea) é um exame genérico para diversos helmintos e protozoários, porém possui sensibilidade significativamente inferior ao método de Kato-Katz para a detecção de ovos de Schistosoma mansoni. Um resultado negativo no Kato-Katz em um paciente com alta suspeita clínica exigiria a repetição do exame com mais lâminas ou outros métodos diagnósticos mais sensíveis (como biópsia retal ou métodos imunológicos), e não a realização do método de Hoffman para \"descartar\" a hipótese.\n\nGabarito: Letra (c).",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Hepatoesplenomegalias Infecciosas",
+      "Parasitoses",
+      "Atenção Primária à Saúde",
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  },
+  {
+    "id": "AJUDA_de42fd02-2a8e-4fc3-a48c-e8cb226a43a8",
+    "originalId": "de42fd02-2a8e-4fc3-a48c-e8cb226a43a8",
+    "statement": "Em relação à nutrição enteral no pós-operatório, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve ser iniciada somente após o 5º dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É contraindicada em pacientes intubados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve ser iniciada precocemente quando possível, idealmente nas primeiras 24–48h.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aumenta a taxa de fístulas intestinais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "É preferível à nutrição parenteral por manter a integridade da barreira mucosa e reduzir a translocação bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. O início da nutrição enteral não deve ser postergado até o 5º dia. O jejum prolongado no pós-operatório está associado ao aumento da resistência insulínica, à perda de massa magra e ao maior risco de infecções. As diretrizes atuais recomendam o início o mais rápido possível para evitar a desnutrição hospitalar.\n\nAlternativa b: Incorreta. A intubação orotraqueal não é contraindicação para a nutrição enteral. Pelo contrário, pacientes em ventilação mecânica e em estado grave devem receber suporte nutricional precoce, geralmente por sonda nasoenteral ou nasogástrica, para reduzir o catabolismo e melhorar o prognóstico.\n\nAlternativa c: Correta. De acordo com protocolos de recuperação acelerada, como o ACERTO (Aceleração da Recuperação Total Pós-Operatória) e o ERAS (Enhanced Recovery After Surgery), a nutrição enteral deve ser iniciada precocemente, idealmente dentro das primeiras 24 a 48 horas após a cirurgia. Essa prática mantém o trofismo intestinal, modula a resposta inflamatória e reduz as taxas de complicações e o tempo de internação.\n\nAlternativa d: Incorreta. Não há evidências de que a introdução precoce da dieta enteral aumente o risco de fístulas intestinais ou deiscências de anastomoses. Pelo contrário, o aporte adequado de nutrientes é fundamental para a síntese de colágeno e para o processo de cicatrização.\n\nAlternativa e: Incorreta (para fins de gabarito desta questão). Embora o texto desta alternativa apresente uma afirmação fisiologicamente verdadeira — a nutrição enteral é superior à parenteral por preservar a barreira mucosa e evitar a translocação bacteriana —, a alternativa (c) é considerada a resposta mais específica para a conduta de manejo no pós-operatório imediato, focando no tempo de início da dieta. Vale ressaltar que, em algumas provas de concursos médicos, afirmações como a da letra (e) também podem ser dadas como corretas devido ao seu embasamento teórico sólido, mas no contexto desta questão, a cronologia do início (24-48h) é o ponto central.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  },
+  {
+    "id": "AJUDA_de5d6ab8-5236-4521-88ab-76285dfab01b",
+    "originalId": "de5d6ab8-5236-4521-88ab-76285dfab01b",
+    "statement": "O Tromboembolismo Pulmonar (TEP) é uma complicação grave em pacientes cirúrgicos. O diagnóstico rápido e a intervenção precisa são cruciais para a sobrevida. Em um paciente no 3º dia pós-operatório de artroplastia de quadril que apresenta dispneia súbita, taquicardia e dor pleurítica, com Angio-TC confirmando falhas de enchimento em artérias pulmonares segmentares, hemodinamicamente estável. Assinale a alternativa que indica a conduta terapêutica inicial adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Início imediato de anticoagulação plena, preferencialmente com heparina de baixo peso molecular (enoxaparina) ou heparina não fracionada, salvo contraindicação absoluta de sangramento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Embolectomia cirúrgica de urgência, pois a presença de trombos em artérias segmentares indica falha da profilaxia e necessidade de remoção mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trombólise sistêmica com alteplase (rtPA) como primeira escolha para dissolver o coágulo rapidamente, dado o risco iminente de colapso circulatório em qualquer TEP confirmado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Implante de filtro de veia cava inferior como monoterapia inicial, para prevenir a migração de novos êmbolos antes de iniciar qualquer anticoagulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Tromboembolismo Pulmonar (TEP) é classificado principalmente pela estabilidade hemodinâmica do paciente, o que direciona a conduta terapêutica. No caso clínico apresentado, o paciente está hemodinamicamente estável, apesar do quadro clínico e da confirmação diagnóstica por angio-TC.\n\nAlternativa A (Correta): Para pacientes com TEP confirmado e estabilidade hemodinâmica (normotensos), a base do tratamento é a anticoagulação plena. Ela interrompe a progressão do coágulo e permite que o próprio sistema fibrinolítico do corpo atue. A heparina de baixo peso molecular (enoxaparina) é frequentemente preferida pela sua previsibilidade, mas a heparina não fracionada também é uma opção válida, especialmente se houver risco iminente de necessidade de reversão ou cirurgia, devido à sua meia-vida curta.\n\nAlternativa B (Incorreta): A embolectomia cirúrgica é uma intervenção invasiva reservada para casos de TEP de alto risco (instabilidade hemodinâmica) nos quais a trombólise química é contraindicada ou falhou. Não há indicação para remoção mecânica em um paciente estável com trombos apenas em artérias segmentares.\n\nAlternativa C (Incorreta): A trombólise sistêmica (como o uso de alteplase) é indicada apenas para o TEP de alto risco, definido pela presença de choque obstrutivo ou hipotensão arterial persistente (TEP maciço). Em pacientes estáveis, o risco de sangramento grave decorrente da trombólise supera os benefícios. Além disso, no 3º dia pós-operatório de uma grande cirurgia ortopédica, o risco de hemorragia grave seria altíssimo.\n\nAlternativa D (Incorreta): O implante de filtro de veia cava inferior não é a terapia de primeira escolha. Ele está indicado apenas em situações específicas, como quando há contraindicação absoluta à anticoagulação plena ou quando ocorre recorrência do TEP mesmo na vigência de anticoagulação adequada. O tratamento padrão inicial deve sempre ser a medicação anticoagulante, quando possível.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  },
+  {
+    "id": "AJUDA_de5e154e-b6a0-46a6-a178-1ed7f6e53e58",
+    "originalId": "de5e154e-b6a0-46a6-a178-1ed7f6e53e58",
+    "statement": "Homem, 62 anos de idade, portador de adenocarcinoma de pâncreas metastático, encontra-se em seguimento domiciliar em cuidados paliativos com seu médico de família. Relata dor abdominal intensa em queimação, em faixa na região epigástrica, associada a hipoestesia e alodínia ao toque. Faz uso de morfina oral em dose otimizada, mas persiste com dor limitante. O paciente está lúcido, deseja permanecer em casa e conta com suporte familiar. Qual é a conduta para o controle da dor nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar progressivamente a dose da morfina oral até atingir analgesia completa, orientando paciente sobre necessidade de uso de laxantes para constipação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar rotação de opioides, substituindo a morfina por oxicodona, e associar anti inflamatório não esteroidal ao tratamento farmacológico para ampliar o controle da dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter o uso de morfina na dose atual e associar adjuvante específico para dor neuropática, como gabapentina ou duloxetina, visando controle do componente refratário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Interromper temporariamente o manejo domiciliar e considerar a realização de bloqueio de plexo celíaco para analgesia mais duradoura em neoplasia pancreática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um paciente com câncer de pâncreas apresentando dor oncológica com características neuropáticas bem definidas. Os termos queimação, hipoestesia (diminuição da sensibilidade) e alodínia (dor causada por estímulos que normalmente não provocariam dor, como o toque) indicam que há comprometimento de estruturas nervosas, seja por infiltração tumoral ou compressão de plexos.\n\nAlternativa a: Incorreta. O enunciado informa que a dose de morfina já está otimizada. Em casos de dor neuropática, os opioides isoladamente costumam ter eficácia limitada. O aumento indiscriminado da dose, sem tratar o componente neuropático, pode levar à toxicidade (como sedação excessiva, mioclonias e constipação grave) sem atingir o controle álgico satisfatório.\n\nAlternativa b: Incorreta. A rotação de opioides (trocar morfina por oxicodona, por exemplo) é uma estratégia utilizada quando o paciente apresenta efeitos colaterais intoleráveis ou quando não se atinge analgesia mesmo com doses altas. No entanto, o acréscimo de anti-inflamatórios não esteroidais (AINEs) é mais indicado para dor óssea ou inflamatória, não sendo o tratamento de escolha para os sintomas de alodínia e queimação descritos.\n\nAlternativa c: Correta. De acordo com a escada analgésica da Organização Mundial da Saúde (OMS), para dores com componente neuropático, é fundamental a associação de fármacos adjuvantes. A gabapentina (anticonvulsivante) e a duloxetina (antidepressivo inibidor da recaptação de serotonina e noradrenalina) agem modulando a transmissão da dor no sistema nervoso central e periférico, sendo as medicações de primeira linha para tratar a queimação e a alodínia.\n\nAlternativa d: Incorreta. O bloqueio do plexo celíaco é uma técnica intervencionista eficaz para dor visceral em câncer de pâncreas e pode ser considerada em casos refratários. Contudo, o paciente deseja permanecer no domicílio e está lúcido. O próximo passo lógico e menos invasivo dentro do manejo farmacológico é a introdução de adjuvantes. A realização do bloqueio exigiria deslocamento e internação, contrariando a preferência atual do paciente antes de se esgotarem as opções medicamentosas domiciliares.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Síndromes Dolorosas Crônicas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  },
+  {
+    "id": "AJUDA_de5e5453-dc9e-4976-8330-f3dcf41efae9",
+    "originalId": "de5e5453-dc9e-4976-8330-f3dcf41efae9",
+    "statement": "B., 25 anos, vem à consulta com queixa de \"descamação\" nos seus joelhos, cotovelos e couro cabeludo. Ao exame físico, o médico observa placas eritematosas bem definidas de 4 a 5cm de diâmetro, recobertas por escamas prateadas que, ao serem destacadas, expõem focos hemorrágicos em ponta de alfinete que mancham a superfície eritematosa brilhante. Durante a anamnese, a paciente conta que as lesões surgiram após ter iniciado o uso de uma medicação. Abaixo, qual das medicações listadas está associada ao surgimento desse tipo de lesão?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prednisona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lítio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Metoclopramida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidroclorotiazida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descrito — placas eritematosas com escamas prateadas em áreas de extensão (cotovelos e joelhos) e no couro cabeludo — é patognomônico de psoríase vulgar (em placas). O sinal semiológico detalhado (\"focos hemorrágicos em ponta de alfinete\" ao destacar a escama) é o Sinal de Auspitz, também conhecido como Sinal do Orvalho Sangrento, que ocorre devido à exposição das papilas dérmicas hipertrofiadas e de seus capilares dilatados.\n\nA questão foca nos gatilhos medicamentosos que podem desencadear ou exacerbar a psoríase.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Prednisona: Incorreta. O uso de corticosteroides sistêmicos (como a prednisona) é geralmente contraindicado na psoríase estável. O perigo não reside no surgimento inicial das placas, mas sim na sua interrupção. A retirada do corticoide sistêmico pode causar um \"efeito rebote\" grave, transformando uma psoríase em placas em uma forma muito mais severa e sistêmica: a psoríase pustulosa.\n\nb) Lítio: Correta. O lítio, utilizado no tratamento do transtorno bipolar, é um dos medicamentos mais classicamente associados ao desencadeamento ou agravamento da psoríase. Ele interfere na sinalização intracelular (via inositol e cálcio) e na diferenciação dos queratinócitos. Além do lítio, outros medicamentos frequentemente cobrados em provas como gatilhos para psoríase são: betabloqueadores, antimaláricos (cloroquina), anti-inflamatórios não esteroides (AINEs) e inibidores da ECA.\n\nc) Metoclopramida: Incorreta. Trata-se de um agente procinético e antiemético que atua como antagonista dos receptores de dopamina. Não possui associação farmacológica conhecida com o desencadeamento de lesões psoriásicas.\n\nd) Hidroclorotiazida: Incorreta. Embora a hidroclorotiazida possa estar associada a reações de fotossensibilidade e ao lúpus eritematoso cutâneo subagudo induzido por drogas, ela não é listada como um gatilho clássico ou principal para o surgimento de psoríase em placas.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Dermatoses Papuloescamosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:40.196Z"
+  }
+]

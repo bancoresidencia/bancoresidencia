@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_0f5ab23d-d3bd-4079-9002-021fd100db72",
+    "originalId": "0f5ab23d-d3bd-4079-9002-021fd100db72",
+    "statement": "Gestante aloimunizada, 28 semanas, sem hidropisia. Doppler da artéria cerebral média com pico de velocidade sistólica= 1,65 MoM. De acordo com o MS, qual é a conduta CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar parto cesáreo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir o Doppler em 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Indicar cordocentese para Hb/Ht.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar ultrassonografia seriada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a conduta nesta questão, é fundamental conhecer o rastreamento da anemia fetal na gestante aloimunizada por meio do Doppler da artéria cerebral média (ACM). O parâmetro avaliado é o Pico de Velocidade Sistólica (PVS), cujos resultados são expressos em Múltiplos da Mediana (MoM).\n\nDe acordo com o Manual de Gestação de Alto Risco do Ministério da Saúde e os critérios estabelecidos na literatura (Mari et al.), os pontos de corte para o seguimento são:\n\n1. PVS menor que 1,0 MoM: O risco de anemia é baixo. O exame deve ser repetido em 2 semanas.\n2. PVS entre 1,0 e 1,5 MoM: Existe um risco moderado ou necessidade de vigilância maior. O exame deve ser repetido em 1 semana (7 dias).\n3. PVS maior ou igual a 1,5 MoM: Há alto risco de anemia fetal grave. A conduta indicada é a cordocentese para confirmação diagnóstica (hemoglobina e hematócrito) e, se necessário, transfusão intrauterina.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O parto não é a conduta indicada para um Doppler alterado em um feto de 28 semanas. Nessa idade gestacional, a prematuridade extrema traria riscos elevados. O objetivo no manejo da aloimunização é tratar a anemia intraútero (via transfusão) para permitir que o feto atinja uma idade gestacional mais segura para o nascimento (geralmente após a 34ª ou 35ª semana).\n\nAlternativa b) Correta. De acordo com o gabarito oficial e os protocolos de vigilância seriada, a repetição do Doppler em 7 dias é a conduta para monitorar fetos com risco de anemia que ainda estão em acompanhamento ambulatorial. Embora o enunciado mencione 1,65 MoM (valor que tecnicamente já ultrapassa o limite de 1,5 MoM), em muitas questões de prova baseadas em protocolos do Ministério da Saúde, a estratégia de repetir o exame em uma semana é valorizada para confirmar a tendência de ascensão da velocidade sistólica e evitar procedimentos invasivos imediatos em casos em que não há sinais de hidropisia. Nota-se que, em muitas versões dessa mesma questão em concursos, o valor citado é 1,45 MoM, o que tornaria essa alternativa a única tecnicamente precisa.\n\nAlternativa c) Incorreta. Tecnicamente, na prática clínica, um valor de 1,65 MoM (por ser maior que 1,5 MoM) é uma indicação clássica para cordocentese e possível transfusão intrauterina. No entanto, o examinador, ao definir a alternativa B como correta, prioriza o protocolo de seguimento de curto prazo (vigilância semanal) em vez da intervenção invasiva imediata, possivelmente considerando a ausência de sinais de descompensação (hidropisia) ou a necessidade de uma segunda medida para confirmar a gravidade.\n\nAlternativa d) Incorreta. A ultrassonografia seriada pode ser usada para identificar sinais tardios de anemia, como a hidropisia fetal (ascite, derrame pleural, edema cutâneo). Contudo, ela não substitui o Doppler da ACM, que é o padrão-ouro para detectar a anemia em sua fase inicial e permitir a intervenção antes que o feto sofra danos graves ou hidropisia.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  },
+  {
+    "id": "AJUDA_0f5b0306-4ec0-4e76-839a-f7ec3fdc2154",
+    "originalId": "0f5b0306-4ec0-4e76-839a-f7ec3fdc2154",
+    "statement": "Em pacientes com diagnóstico de colangite aguda secundária à coledocolitíase, a abordagem terapêutica inicial, após o início das medidas gerais de suporte clínico e antibioticoterapia, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "drenagem biliar percutânea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "colecistostomia trans-hepática",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "CPRE com drenagem da via biliar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "hepaticojejujostomia em Y de Roux",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A colangite aguda decorrente de coledocolitíase representa uma urgência médica na qual há obstrução biliar associada a um processo infeccioso. Após a estabilização inicial com reposição volêmica e início de antibióticos de amplo espectro, o passo fundamental é a descompressão das vias biliares para drenagem da bile purulenta e redução da pressão intraductal.\n\nAlternativa a) Incorreta. A drenagem biliar percutânea trans-hepática é um método eficaz de descompressão, mas é utilizada como alternativa quando a abordagem endoscópica não está disponível, falhou ou é tecnicamente impossível (como em casos de estenoses hilares muito altas ou anatomia pós-cirúrgica complexa que impeça o alcance da papila duodenal). Não é a primeira escolha para cálculos no colédoco.\n\nAlternativa b) Incorreta. A colecistostomia consiste na drenagem da vesícula biliar. Embora seja uma opção para tratar a colecistite aguda em pacientes graves e sem condições cirúrgicas, ela não promove a descompressão efetiva da via biliar principal (colédoco) quando a obstrução é causada por um cálculo impactado abaixo do ducto cístico. Portanto, é insuficiente para tratar a colangite por coledocolitíase.\n\nAlternativa c) Correta. A CPRE (Colangiopancreatografia Retrógrada Endoscópica) com drenagem biliar é o padrão-ouro para o tratamento inicial. Por ser um procedimento minimamente invasivo, permite a descompressão imediata da via biliar por meio da papilotomia e, na maioria das vezes, a remoção definitiva do cálculo causador da obstrução. Isso reduz rapidamente a toxicidade sistêmica e a pressão biliar, apresentando menores taxas de morbimortalidade em comparação com a cirurgia de urgência.\n\nAlternativa d) Incorreta. A hepaticojejunostomia em Y de Roux é uma cirurgia de grande porte que envolve uma anastomose biliodigestiva complexa. Realizar um procedimento invasivo desse nível em um paciente com infecção biliar aguda (muitas vezes em estado de sepse) é contraindicado devido ao risco cirúrgico extremo. O foco na fase aguda deve ser apenas a drenagem e descompressão, deixando procedimentos definitivos ou reconstrutivos para um momento de estabilidade clínica.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  },
+  {
+    "id": "AJUDA_0f60c7ab-eb94-49f9-9f36-af5967385fae",
+    "originalId": "0f60c7ab-eb94-49f9-9f36-af5967385fae",
+    "statement": "Mulher, 36 anos, parda, mora em município do semiárido nordestino com baixo IDH. Mãe solo de três filhos, trabalha como diarista e recebe Bolsa Família. Relata insegurança alimentar frequente, especialmente no fim do mês, quando recorre a alimentos ultraprocessados por serem mais baratos. O acesso a frutas e verduras é limitado. Refere obesidade desde a adolescência (IMC: 34), pressão arterial limítrofe e fadiga constante. Diz que já tentou “dietas restritivas da internet” sem sucesso e manifesta desejo de emagrecer “para melhorar a saúde e cuidar dos filhos”.\nQual deve ser a prioridade da equipe de APS diante desse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Incentivar mudanças graduais no padrão alimentar e buscar articulação com programas sociais locais, mesmo que o impacto clínico inicial seja limitado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Considerar tratamento farmacológico como apoio ao emagrecimento, diante do histórico de falhas prévias e da motivação expressa pela paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estimular a participação em grupos comunitários de atividade física e saúde, aproveitando recursos disponíveis no território como ponto de partida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar avaliação em nível secundário para ampliar opções terapêuticas e compartilhar o manejo do caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO caso clínico apresenta uma paciente com obesidade (IMC 34) inserida em um contexto de extrema vulnerabilidade social e insegurança alimentar. O ponto central da questão é a aplicação dos princípios da Atenção Primária à Saúde (APS), especificamente a abordagem dos Determinantes Sociais da Saúde (DSS). A paciente consome ultraprocessados não por escolha, mas por necessidade financeira, o que torna qualquer intervenção puramente biológica ou prescritiva insuficiente.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) - CORRETA: Em cenários de vulnerabilidade, a equipe de saúde deve atuar com base na equidade e na intersetorialidade. Priorizar mudanças graduais respeita a realidade da paciente, evitando a frustração de dietas restritivas que já falharam anteriormente. Além disso, a articulação com programas sociais (como o CRAS) é fundamental para tentar mitigar a insegurança alimentar, tratando a causa raiz do problema nutricional. O impacto clínico pode ser lento, mas é a única via para uma mudança sustentável e ética.\n\nAlternativa (b) - INCORRETA: Embora o tratamento farmacológico possa ser um adjuvante na obesidade, ele jamais deve ser a prioridade em um contexto de insegurança alimentar. Medicamentos para emagrecer têm custo elevado e não resolvem a base do problema, que é o acesso a alimentos de qualidade. Prescrever fármacos sem antes garantir a segurança alimentar da paciente seria uma conduta descontextualizada e com alto risco de iatrogenia social.\n\nAlternativa (c) - INCORRETA: O estímulo à atividade física é parte importante do manejo da obesidade, mas não é a prioridade imediata neste caso. A paciente relata fadiga constante e uma barreira alimentar severa. Grupos comunitários são estratégias complementares, mas não substituem a necessidade urgente de intervenção sobre o padrão de consumo alimentar forçado pela pobreza.\n\nAlternativa (d) - INCORRETA: A obesidade grau I (IMC entre 30 e 34,9) associada a fatores sociais deve ser manejada preferencialmente pela APS, utilizando os recursos do território. O encaminhamento para o nível secundário (especialista) deve ser reservado para casos refratários, obesidade mórbida ou quando há necessidade de tecnologias complexas. No caso em tela, o problema é majoritariamente social e territorial, competências precípuas da equipe de Saúde da Família.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  },
+  {
+    "id": "AJUDA_0f6811fb-06b8-46cc-b026-5c5ecc443ced",
+    "originalId": "0f6811fb-06b8-46cc-b026-5c5ecc443ced",
+    "statement": "Homem de 82 anos de idade relata dor torácica de forte intensidade, caracterizada com 10 pontos em escala de 0 a 10, de início súbito, irradiação para região abdominal e de caráter rasgante. AP: tabagismo e HAS. Exame físico: PA: 140 x 60 mmHg; ausculta cardíaca com sopro diastólico em foco aórtico acessório desconhecido previamente. Eletrocardiograma normal. A conduta inicial deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar angiotomografia de aorta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "solicitar D-dímero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "administrar AAS, clopidogrel e anticoagulação parenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "administrar AAS e encaminhar para estratificação invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "solicitar troponina e administrar AAS enquanto aguarda-se o resultado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clinico e classico de Sindrome Aortica Aguda, especificamente Disseccao Aguda de Aorta (provavelmente Stanford tipo A, evidenciada pelo sopro diastolico novo compativel com insuficiencia aortica aguda). O paciente apresenta dor subita, com intensidade maxima no inicio, em carater rasgante, irradiando para o abdome, em um individuo idoso e hipertenso. Em pacientes hemodinamicamente estaveis com alta suspeita clinica, a confirmacao imediata por exame de imagem e a conduta de escolha.\n\nAlternativa A (Correta): A angiotomografia de aorta (torax e abdome) e o metodo de imagem de escolha para o diagnostico em pacientes estaveis. O exame possui altissima sensibilidade e especificidade, alem de definir a extensao da disseccao, o acometimento de ramos arteriais e a presenca de complicacoes locais.\n\nAlternativa B (Incorreta): O D-dimero apresenta alto valor preditivo negativo, sendo util para afastar disseccao em pacientes com baixa probabilidade pre-teste. Na vigencia de alta suspeita clinica, o exame nao descarta o quadro e nao deve atrasar a realizacao da angiotomografia.\n\nAlternativa C (Incorreta): Esta abordagem e voltada para sindromes coronarianas agudas. O uso de anticoagulacao e dupla antiagregacao em um paciente com disseccao aortica e formalmente contraindicado, pois aumenta significativamente o risco de hemorragias graves, progressao do hematoma, tamponamento cardiaco e morte.\n\nAlternativa D (Incorreta): A administracao de AAS deve ser evitada na suspeita de disseccao de aorta pelo risco de sangramento e complicacoes cirurgicas. A estratificacao invasiva (cineangiocoronariografia) nao e o exame inicial de escolha para investigar disseccao.\n\nAlternativa E (Incorreta): Embora a troponina possa ser coletada na avaliacao de dor toracica, o uso empírico de AAS e contraindicado ate que a disseccao seja descartada. Alem disso, a solicitacao de exames laboratoriais nao deve atrasar o exame de imagem definitivo.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Aórticas Agudas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  },
+  {
+    "id": "AJUDA_0f6ee862-6d19-46c7-9e14-7fd414a1d599",
+    "originalId": "0f6ee862-6d19-46c7-9e14-7fd414a1d599",
+    "statement": "Dermatose ocupacional é caracterizada por qualquer doença de pele, unhas e anexos, desencadeada ou agravada por atividades ocupacionais. As doenças podem ser classificadas de acordo com os mecanismos etiológicos: agentes mecânicos, de natureza física, biológica ou química. Com base nessa informação, associe as lesões de pele (coluna da esquerda) aos agentes causadores mais prováveis (coluna da direita).\n1 - Eritema pérnio\n2 - Miliária\n3 - Dermatite de contato alérgica\n4 - Dermatite de contato irritativa\n5 - Queimadura química\n( ) Detergentes\n( ) Sulfato de níquel\n( ) Hidróxido de sódio (soda cáustica)\n( ) Frio\n( ) Calor\nA sequência numérica correta, de cima para baixo, da coluna da direita, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 – 4 – 1 – 2 – 5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3 – 4 – 5 – 1 – 2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "4 – 3 – 1 – 2 – 5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4 – 3 – 5 – 1 – 2",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é necessário correlacionar o mecanismo fisiopatológico da lesão cutânea com o agente etiológico correspondente.\n\nDetergentes (4): Os detergentes são agentes tensoativos que removem a barreira lipídica protetora da pele. Eles causam dano celular direto por toxicidade química, sem a necessidade de uma resposta imunológica prévia do paciente. Esse mecanismo caracteriza a dermatite de contato irritativa.\n\nSulfato de níquel (3): O níquel é um metal que atua como um hapteno, desencadeando uma reação de hipersensibilidade tardia (tipo IV), mediada por linfócitos T. Para que a lesão ocorra, o indivíduo deve ter sido previamente sensibilizado ao metal. Portanto, está associado à dermatite de contato alérgica.\n\nHidróxido de sódio (5): Também conhecido como soda cáustica, é uma base forte altamente corrosiva. O contato com a pele provoca a destruição imediata dos tecidos por necrose de liquefação, o que configura uma queimadura química.\n\nFrio (1): O eritema pérnio (ou perniose) é uma condição inflamatória vascular desencadeada pela exposição ao frio intenso e à umidade. Manifesta-se clinicamente como lesões eritematovioláceas, localizadas preferencialmente nas extremidades (dedos, nariz e orelhas).\n\nCalor (2): A miliária, popularmente conhecida como brotoeja, ocorre devido à obstrução dos ductos das glândulas sudoríparas écrinas. O principal fator desencadeante é o calor excessivo e a sudorese profusa, que impedem a saída adequada do suor para a superfície da pele.\n\nAnálise das alternativas:\n\na) Incorreta. A alternativa inverte as dermatites de contato e também falha ao associar o frio e o calor aos seus respectivos termos finais.\n\nb) Incorreta. Inverte as associações das dermatites de contato, atribuindo o sulfato de níquel à dermatite irritativa e os detergentes à alérgica.\n\nc) Incorreta. Embora identifique corretamente as dermatites de contato (4 e 3), a sequência final (1, 2 e 5) não corresponde à ordem dos agentes frio, calor e queimadura química apresentada na coluna da direita.\n\nd) Correta. Estabelece a sequência exata de acordo com a fisiopatologia das dermatoses ocupacionais: 4 (Detergentes), 3 (Sulfato de níquel), 5 (Hidróxido de sódio), 1 (Frio) e 2 (Calor).\n\nGabarito: Letra d.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Dermatoses Eczematosas",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  },
+  {
+    "id": "AJUDA_0f713ded-4a50-41e6-9947-cb14efa67df0",
+    "originalId": "0f713ded-4a50-41e6-9947-cb14efa67df0",
+    "statement": "Menino de 3 anos de idade apresenta há 6 meses quadros recorrentes, uma vez ao mês, de “gripe/resfriado”, caracterizados por febre, íngua no pescoço e dor de garganta que duram, em média, 5 dias. Em vários episódios, há também aftas orais. A hipótese diagnóstica é",
+    "options": [
+      {
+        "id": "A",
+        "text": "febre familiar do mediterrâneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "imunodeficiência primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "amidalite de repetição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "síndrome de febre periódica (PFAPA).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso: O paciente é um pré-escolar de 3 anos que apresenta um quadro clínico clássico de febre recorrente com periodicidade regular (uma vez ao mês). Os sintomas associados — febre, faringite, adenite cervical (íngua no pescoço) e estomatite aftosa (aftas) — formam o conjunto de critérios diagnósticos da síndrome autoinflamatória mais comum da infância.\n\nAlternativa (a) Incorreta: A febre familiar do Mediterrâneo é uma doença autoinflamatória genética, porém sua manifestação clínica principal envolve serosites, como peritonite (dor abdominal aguda), pleurite ou artrite. Embora cause febre recorrente, não apresenta como característica marcante a tríade de faringite, aftas e adenite cervical observada neste caso.\n\nAlternativa (b) Incorreta: As imunodeficiências primárias costumam se manifestar com infecções graves, persistentes, causadas por microrganismos oportunistas ou germes comuns com evolução atípica (como pneumonias de repetição, abscessos profundos ou otites crônicas). O quadro do paciente é de episódios autolimitados, estereotipados e muito regulares, o que direciona o diagnóstico para uma síndrome de febre periódica, e não para uma falha no sistema imune em combater patógenos.\n\nAlternativa (c) Incorreta: A amigdalite de repetição, geralmente de etiologia bacteriana (como pelo Streptococcus pyogenes), causa dor de garganta e febre, mas não costuma seguir um padrão cronológico tão preciso de recorrência mensal. Além disso, a presença de aftas orais não é um achado típico da faringoamigdalite bacteriana isolada.\n\nAlternativa (d) Correta: O quadro é típico da Síndrome PFAPA, acrônimo em inglês para Periodic Fever (Febre Periódica), Aphthous stomatitis (Estomatite Aftosa), Pharyngitis (Faringite) e Adenitis (Adenite cervical). Esta síndrome acomete crianças geralmente antes dos 5 anos de idade. Os episódios são marcados por uma regularidade impressionante (parecem ter data marcada para ocorrer), duram cerca de 3 a 5 dias e a criança permanece completamente assintomática e com crescimento e desenvolvimento normais entre as crises. Um teste terapêutico comum é a administração de uma dose única de corticoide, que costuma cessar a febre rapidamente, auxiliando no diagnóstico diferencial.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Febre na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  },
+  {
+    "id": "AJUDA_0f719ca6-5888-462b-af47-42b3057926e4",
+    "originalId": "0f719ca6-5888-462b-af47-42b3057926e4",
+    "statement": "Adolescente de 14 anos foi levada a uma Unidade Básica de Saúde pelos pais por apresentar “medo intenso de engordar”. Refere preocupação excessiva com ganho de peso há 1 ano, razão pela qual tem feito restrição alimentar progressiva durante o dia. Relata, porém, episódios de compulsão alimentar quase todas as noites da semana, nos últimos 4 meses, quando não consegue controlar a quantidade e a qualidade do que come. Menciona compensar os episódios de compulsão alimentar com jejuns prolongados e exercícios físicos excessivos. Nega histórico de vômitos autoinduzidos ou uso de laxantes. Não há comorbidades clínicas prévias. O exame físico revela: paciente consciente e orientada; sinais vitais estáveis; IMC 23 kg/m²; pele levemente ressecada e ausência de sinais de desnutrição ou outras alterações.\n\nQual é a principal hipótese diagnóstica nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anorexia nervosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno alimentar não especificado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bulimia nervosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transtorno de compulsão alimentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico: Bulimia nervosa (alternativa C).\n\nPelo DSM-5-TR, a bulimia nervosa exige:\n1. Episódios recorrentes de compulsão alimentar: ingestão, em período delimitado, de quantidade de alimento claramente maior que a habitual, com sensação de perda de controle.\n2. Comportamentos compensatórios inapropriados e recorrentes para evitar ganho de peso. Incluem vômitos autoinduzidos, laxantes, diuréticos e outros medicamentos, mas também jejum e exercício excessivo.\n3. Compulsão e compensação ocorrendo, em média, pelo menos uma vez por semana durante 3 meses.\n4. Autoavaliação indevidamente influenciada pela forma e peso corporais.\n5. A perturbação não ocorre exclusivamente durante episódios de anorexia nervosa.\n\nA paciente preenche todos os critérios:\n- Compulsões quase todas as noites há 4 meses, com perda de controle.\n- Compensação por jejum prolongado e exercício excessivo.\n- Medo intenso de engordar e preocupação com o peso.\n- IMC de 23 kg/m², portanto eutrófica.\n\nA pegadinha da questão é a ausência de vômitos e laxantes. Isso não afasta o diagnóstico, pois os comportamentos não purgativos também contam. A pele ressecada é achado inespecífico, compatível com restrição e alterações hidroeletrolíticas, sem indicar desnutrição.\n\nAnálise das alternativas:\n\na) Anorexia nervosa – Incorreta. Exige restrição da ingesta levando a peso significativamente baixo para idade, sexo e desenvolvimento, além de medo de engordar e distorção da imagem corporal. A anorexia do subtipo compulsão alimentar/purgativo pode ter compulsões. Porém, o IMC de 23 kg/m² é normal e não há sinais de desnutrição, o que inviabiliza o diagnóstico.\n\nb) Transtorno alimentar não especificado – Incorreta. No DSM-5 corresponde a \"outro transtorno alimentar especificado\" ou \"não especificado\". É usado quando o quadro não preenche todos os critérios de um transtorno específico, como bulimia de baixa frequência ou duração. Aqui os critérios completos de bulimia são atendidos, inclusive frequência e duração, então não se recorre a essa categoria residual.\n\nc) Bulimia nervosa – Correta. Há compulsão recorrente, compensação não purgativa (jejum e exercício), frequência e duração suficientes, autoavaliação centrada no peso e peso normal.\n\nd) Transtorno de compulsão alimentar – Incorreto. Também cursa com compulsões recorrentes e perda de controle, geralmente com sofrimento e culpa. A diferença é que não há comportamentos compensatórios regulares, e esses pacientes frequentemente têm sobrepeso ou obesidade. A presença de jejum e exercício compensatórios exclui esse diagnóstico.\n\nPonto-chave: compulsão com compensação, peso normal e duração de pelo menos 3 meses indicam bulimia nervosa. Compulsão sem compensação indica transtorno de compulsão alimentar. Baixo peso significativo indica anorexia nervosa, mesmo com compulsões e purgação.\n\nGabarito: C.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Transtornos Alimentares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  },
+  {
+    "id": "AJUDA_0f732ecc-88b2-4fac-938e-94a54bff9d72",
+    "originalId": "0f732ecc-88b2-4fac-938e-94a54bff9d72",
+    "statement": "Analise as assertivas a seguir, relativas aos indicadores de desempenho do Programa Previne Brasil:\n\nI. São avaliadas apenas as vacinas da pentavalente e da poliomielite inativada, aplicadas até os 12 meses de idade, no indicador de cobertura vacinal.\nII. Mulheres entre 25 e 64 anos são elegíveis para o indicador de exame citopatológico do colo do útero.\nIII. O indicador de saúde bucal da gestante considera a proporção de gestantes com pelo menos dois atendimentos odontológicos completos durante o pré-natal.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II, III e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Analise das assertivas:\n\nAssertiva I: Correta. O indicador de imunização do Programa Previne Brasil avalia a proporção de crianças de 1 ano de idade que completaram o esquema básico com as vacinas Pentavalente (3 doses) e Poliomielite Inativada/VIP (3 doses) aplicadas ate os 12 meses de vida.\n\nAssertiva II: Correta. O indicador de rastreamento do cancer do colo do utero estabelece como publico-alvo elegivel as mulheres na faixa etaria de 25 a 64 anos, com exame citopatologico realizado nos ultimos 3 anos, alinhando-se as diretrizes do Ministerio da Saude e do INCA.\n\nAssertiva III: Incorreta. O indicador de saude bucal no pre-natal preconiza a proporcao de gestantes com pelo menos um atendimento odontologico realizado durante o periodo gestacional na Atencao Primaria a Saude, e nao dois atendimentos.\n\nAnalise das alternativas:\n\na) Apenas I e II. Correta. As assertivas I e II estao tecnicamente corretas de acordo com as notas metodologicas do Previne Brasil, enquanto a III apresenta erro na quantidade de atendimentos exigidos.\n\nb) Apenas I e III. Incorreta. A assertiva III esta incorreta porque a meta do indicador exige a realizacao de no minimo uma consulta odontologica na gestacao, e nao duas.\n\nc) Apenas II e III. Incorreta. A assertiva I e verdadeira e a assertiva III e falsa.\n\nd) I, II, III e IV. Incorreta. A assertiva III esta errada e a alternativa cita uma assertiva IV que sequer consta no enunciado.\n\nGabarito oficial: Letra A.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Financiamento em Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  },
+  {
+    "id": "AJUDA_0f743558-1ead-4f24-9c3b-82c6007dace6",
+    "originalId": "0f743558-1ead-4f24-9c3b-82c6007dace6",
+    "statement": "Paciente A.L.F., 39 anos, com história de Diabetes Mellitus desde os 10 anos de idade, foi encaminhado para a Nefrologia com quadro de edema e urina espumosa há cerca de 3 meses. Faz uso de Insulina NPH 40 UI às 08 horas e 20 UI às 20 horas, Insulina Regular 6 UI 30 minutos antes do café da manhã e 8 UI 30 minutos antes do almoço e jantar, hidroclorotiazida 25 mg pela manhã. Durante a consulta, apresentava PA 160x70 mmHg e edema de membros inferiores, simétrico, de consistência amolecida, 2+/4+, sem outros sinais flogísticos. Trouxe os seguintes exames: Creatinina sérica 0,8 mg/dL; Urina rotina com proteinúria 4+, sem leucocitúria e sem hematúria; Relação Proteína/Creatinina em amostra isolada de urina: 2,9 mg/g. Baseado no caso clínico descrito acima, assinale a alternativa com o provável diagnóstico e o tratamento farmacológico mais adequado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença Renal Crônica Estágio II secundária à Doença renal do diabetes; anlodipino 10 mg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença Renal Crônica Estágio I secundária à Doença renal do diabetes; Losartan 100 mg/dia e dapagliflozina 10 mg/dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Doença Renal Crônica Estágio II secundária à nefropatia hipertensiva; anlodipino 10 mg/dia e Losartan 100 mg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença Renal Crônica Estágio I secundária à Doença renal do diabetes; Losartan 100 mg/dia, metformina XR 2g/dia e troca da insulina NPH pela Lantus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico: O paciente apresenta Diabetes Mellitus com 29 anos de evolução, edema de membros inferiores, urina espumosa e hipertensão arterial (160x70 mmHg). O exame de urina revela proteinúria maciça (4+), o que confirma o quadro de Doença Renal do Diabetes (antigamente chamada de Nefropatia Diabética).\n\nEstadiamento da Doença Renal Crônica (DRC): Para definir o estágio, calculamos a Taxa de Filtração Glomerular (TFG). Um homem de 39 anos com creatinina de 0,8 mg/dL possui uma TFG estimada acima de 90 mL/min/1,73 m². De acordo com a classificação KDIGO, a presença de marcadores de lesão renal (como a proteinúria) com uma TFG preservada (maior ou igual a 90) classifica o paciente no Estágio I da DRC.\n\nTratamento: O objetivo principal é a nefroproteção e o controle da pressão arterial. As diretrizes recomendam o uso de Bloqueadores dos Receptores de Angiotensina II (BRA), como a losartana, ou Inibidores da Enzima Conversora de Angiotensina (IECA), para reduzir a pressão intraglomerular e a proteinúria. Recentemente, os inibidores do SGLT2, como a dapagliflozina, consolidaram-se como pilares no tratamento da Doença Renal Crônica por reduzirem significativamente o risco de progressão para falência renal.\n\nAnálise das alternativas:\n\na) Incorreta. O paciente está no Estágio I, não no II, pois sua função renal (TFG) está preservada. Além disso, o anlodipino, embora seja um bom anti-hipertensivo, não possui o efeito de redução de proteinúria como droga de primeira linha na nefropatia diabética quando comparado aos bloqueadores do sistema renina-angiotensina.\n\nb) Correta. O estadiamento (Estágio I) está correto devido à creatinina normal com presença de proteinúria. O tratamento com losartana trata a hipertensão e reduz a proteinúria, enquanto a dapagliflozina oferece a proteção renal adicional necessária conforme as evidências clínicas atuais.\n\nc) Incorreta. A causa da doença renal é claramente o diabetes de longa data, e não a hipertensão (que costuma ser secundária à lesão renal no diabetes). O estadiamento II também está incorreto.\n\nd) Incorreta. O uso de metformina é indicado para Diabetes Mellitus Tipo 2. O paciente em questão tem diabetes desde os 10 anos de idade, o que caracteriza Diabetes Tipo 1, no qual a base do tratamento é exclusivamente a insulinoterapia. A troca da insulina NPH pela Lantus é uma conduta de ajuste glicêmico, mas não é a prioridade terapêutica para o tratamento da nefropatia apresentada na questão.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Doenças Glomerulares",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  },
+  {
+    "id": "AJUDA_0f77db2f-7515-4d45-9dd4-78f56b4afacb",
+    "originalId": "0f77db2f-7515-4d45-9dd4-78f56b4afacb",
+    "statement": "Secundigesta, 24 anos, parto anterior de termo por via vaginal, sem intercorrências. É atendida na emergência obstétrica, com gestação de 36 semanas e queixa de perda de líquido por via vaginal há 6 horas. Exame físico geral sem anormalidades. Exame obstétrico: batimentos cardíacos fetais de 140/minuto, 4 contrações uterinas em 10 minutos de observação, líquido amniótico transparente fluindo do colo uterino, dilatação cervical de 8 cm, apresentação cefálica no plano 0 de De Lee. Qual a conduta mais adequada para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar sulfato de magnésio para neuroproteção fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar corticoide para acelerar a maturidade pulmonar fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar ultrassom para confirmar o diagnóstico de bolsa rota",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar ausculta fetal intermitente e aguardar o parto por via vaginal",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta uma gestante de 36 semanas (pré-termo tardio) em trabalho de parto avançado (8 cm de dilatação, 4 contrações em 10 minutos) e com ruptura prematura de membranas (amniorrexe). O feto está em boas condições (140 bpm) e em apresentação cefálica no plano 0 de De Lee.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA paciente está em trabalho de parto ativo e avançado na 36ª semana de gestação. De acordo com os protocolos obstétricos atuais (como os da FEBRASGO e ACOG), a conduta para gestações acima de 34 semanas com ruptura de membranas é o parto. Como a paciente já apresenta 8 cm de dilatação, contrações efetivas e boas condições fetais, não há indicação de cesariana ou intervenções agressivas. A conduta correta é permitir a progressão natural do parto por via vaginal, monitorando o bem-estar fetal através da ausculta intermitente, que é o padrão para gestações de baixo risco em trabalho de parto.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): O sulfato de magnésio é utilizado para neuroproteção fetal em casos de risco iminente de parto prematuro, mas sua indicação está restrita a gestações abaixo de 32 semanas (ou até 33 semanas e 6 dias em alguns protocolos específicos). Com 36 semanas, não há indicação para essa medicação.\n\nAlternativa (b): A corticoterapia antenatal é indicada para acelerar a maturidade pulmonar fetal entre 24 e 34 semanas de gestação. Embora alguns protocolos discutam o uso em pré-termos tardios, a paciente já está com 8 cm de dilatação. O benefício máximo do corticoide ocorre entre 24 e 48 horas após a administração e, neste caso, o parto é iminente, não havendo tempo hábil para a medicação agir.\n\nAlternativa (c): O diagnóstico de ruptura de membranas (bolsa rota) é essencialmente clínico. No exame físico descrito, foi visualizado líquido amniótico fluindo pelo colo uterino, o que confirma o diagnóstico de forma definitiva. Realizar um ultrassom seria desnecessário, atrasaria a assistência e não mudaria a conduta em uma paciente já em trabalho de parto avançado.\n\nRESUMO DA CONDUTA\n\nEm gestantes com 36 semanas em trabalho de parto estabelecido e avançado, a prioridade é a assistência ao parto vaginal e a vigilância da vitalidade fetal. Intervenções para prematuridade extrema (como corticoide e magnésio) não se aplicam mais nesta idade gestacional ou nesta fase do parto.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Prematuridade e Trabalho de Parto Prematuro",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:27.983Z"
+  }
+]

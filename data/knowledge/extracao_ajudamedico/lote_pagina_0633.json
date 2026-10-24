@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_b0fa5969-c3cc-4dc7-b28d-3907498fa66a",
+    "originalId": "b0fa5969-c3cc-4dc7-b28d-3907498fa66a",
+    "statement": "Um paciente do sexo masculino de 37 anos de idade, portador de doença de Crohn, atualmente em uso de adalimumabe 40 mg em infusões quinzenais com bom controle de atividade de doença, perdeu seu cartão de vacinação e comparece ao centro de referência de imunobiológicos para atualização vacinal. Esse paciente pode ser vacinado com todas alternativas a seguir, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "meningocócica C em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "HPV tetravalente em três doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hepatite B em três doses e com volume dobrado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dengue tetravalente em duas doses.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo de imunização em um paciente imunossuprimido pelo uso de adalimumabe, um anticorpo monoclonal anti-TNF-alfa. O ponto central para resolver essa questão é o conhecimento de que pacientes em uso de terapias biológicas (imunobiológicos) não podem receber vacinas compostas por agentes vivos atenuados (sejam vírus ou bactérias), devido ao risco de replicação do agente vacinal e desenvolvimento da doença em um organismo com a imunidade celular comprometida.\n\nAlternativa (a) Incorreta: A vacina meningocócica C é uma vacina conjugada (inativada). Ela não contém agentes vivos e, portanto, é segura e indicada para pacientes imunossuprimidos, que possuem maior risco de doenças invasivas por meningococo.\n\nAlternativa (b) Incorreta: A vacina contra o HPV (Papilomavírus Humano) é uma vacina recombinante, composta apenas por proteínas do capsídeo viral (VLP – partículas semelhantes a vírus), sem material genético. Ela pode ser administrada com segurança em pacientes imunocomprometidos. No CRIE (Centro de Referência para Imunobiológicos Especiais), essa vacina é disponibilizada para pacientes imunossuprimidos até os 45 anos de idade.\n\nAlternativa (c) Incorreta: A vacina da hepatite B é uma vacina recombinante (inativada). Como pacientes em uso de imunossupressores tendem a apresentar uma resposta vacinal inferior à população geral, os protocolos recomendam o uso de dose com volume dobrado e esquema específico para tentar garantir a soroconversão necessária para a proteção.\n\nAlternativa (d) Correta (Exceção): As vacinas disponíveis contra a dengue (tanto a Dengvaxia quanto a Qdenga) são compostas por vírus vivos atenuados. O uso de adalimumabe e outros anti-TNF constitui uma contraindicação formal e absoluta à administração de vacinas de agentes vivos, pelo risco de infecção disseminada pelo vírus vacinal. Para que este paciente pudesse receber tal vacina, a medicação precisaria ser suspensa por um período prolongado (geralmente 3 meses), o que não é o caso do enunciado, que cita o paciente em uso atual e frequente.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Intestinal",
+      "Imunizações"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:39.836Z"
+  },
+  {
+    "id": "AJUDA_b10323b5-4eda-45f7-abe5-0f3c3e4bf82b",
+    "originalId": "b10323b5-4eda-45f7-abe5-0f3c3e4bf82b",
+    "statement": "Paciente, 41 anos, vítima de politrauma com traumatismo crânioencefálico grave há 48h. Encontra-se em UTI, em ventilação mecânica. Nas últimas 24h: suspensão de sedação e analgesia com tempo >5 meias-vidas, sem disfunção hepatorrenal limitante do “washout”. Temperatura central 36,2 ºC, PAS 110 mmHg (noradrenalina baixa), Na+ 142, K+ 4,3, glicemia 128 mg/dL, pH 7,38, PaO2/FiO2 280. Tomografia de crânio: edema difuso com hérnia subfalcina; sem hematoma expansivo. Exame neurológico atual: coma arresponsivo (GCS 3T), pupilas midriáticas sem fotorreação, ausência de reflexos corneanos, oculocefálico/oculovestibular, tosse e náusea; sem movimentos a dor.\n\nPara concluir o diagnóstico de morte encefálica no Brasil, assinale a alternativa que descreve corretamente o conjunto de requisitos e passos obrigatórios.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Um único exame clínico por qualquer médico + teste de apneia com PaCO2 ≥50 mmHg; exame complementar é dispensável em adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dois exames clínicos por médicos diferentes documentando ausência de consciência; a presença de algum reflexo troncoencefálico não impede o diagnóstico; exame complementar é opcional se o teste de apneia for concluído.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dois exames clínicos independentes por médicos habilitados (não vinculados à equipe transplantadora), comprovando coma arresponsivo e ausência de todos os reflexos de tronco, + teste de apneia com PaCO2 ≥55 mmHg (ou aumento ≥10 mmHg sobre o basal) sem esforço respiratório, após exclusão de confundidores e realização de pelo menos um exame complementar que demonstre ausência de atividade/perfusão cerebral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aguardar 24 h e repetir um único exame clínico; se a TC mostrar hérnia, o teste de apneia é desnecessário e o diagnóstico pode ser firmado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Um exame clínico + teste farmacológico com atropina; se não houver resposta cronotrópica, confirma-se morte encefálica, independentemente de exames complementares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os critérios legais e técnicos para o diagnóstico de morte encefálica (ME) no Brasil, fundamentados na Resolução do Conselho Federal de Medicina (CFM) número 2.173 de 2017. O caso clínico demonstra um paciente com todos os pré-requisitos preenchidos: lesão encefálica conhecida e irreversível, ausência de sedativos e distúrbios metabólicos (washout de 5 meias-vidas), estabilidade hemodinâmica (PAS 110 mmHg) e temperatura central acima de 35 graus Celsius.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. No Brasil, é obrigatória a realização de dois exames clínicos por médicos diferentes. O exame complementar é uma exigência legal para todos os casos, independentemente da idade. Além disso, o alvo de PaCO2 no teste de apneia deve ser igual ou superior a 55 mmHg para validar a ausência de estímulo respiratório.\n\nAlternativa b: Incorreta. A presença de qualquer reflexo de tronco encefálico (como o fotomotor, corneano ou de tosse) impede o diagnóstico de morte encefálica. O exame complementar é obrigatório por lei no Brasil, não sendo uma opção do examinador.\n\nAlternativa c: Correta. Esta alternativa descreve com precisão o protocolo brasileiro. O processo exige: 1) Dois exames clínicos independentes realizados por médicos especificamente capacitados e que não participem da equipe de transplante; 2) Um teste de apneia que confirme a ausência de movimentos respiratórios com PaCO2 final igual ou superior a 55 mmHg; 3) Um exame complementar (como arteriografia, eletroencefalograma ou doppler transcraniano) que demonstre ausência de atividade ou perfusão cerebral. Tudo isso deve ocorrer após a exclusão de fatores confundidores.\n\nAlternativa d: Incorreta. Não existe a possibilidade de firmar o diagnóstico apenas por achados de imagem ou aguardando o tempo de 24 horas sem seguir as etapas rígidas do protocolo. O teste de apneia é obrigatório e não pode ser dispensado por presença de hérnia na tomografia.\n\nAlternativa e: Incorreta. O teste farmacológico com atropina (utilizado antigamente para avaliar a resposta do nervo vago) não faz mais parte do protocolo obrigatório definido pelo CFM para o diagnóstico de morte encefálica. A realização do exame complementar é indispensável para a conclusão do laudo no Brasil.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Coma e Alterações da Consciência",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:39.836Z"
+  },
+  {
+    "id": "AJUDA_b11088f4-34ea-43ea-8b50-90f91eb6fd9d",
+    "originalId": "b11088f4-34ea-43ea-8b50-90f91eb6fd9d",
+    "statement": "Gestante de 30 anos, II gesta, I para, na primeira consulta da assistência pré-natal, realizou testes rápidos e o de sífilis foi positivo. Trouxe, na consulta seguinte, os exames solicitados, entre eles, o VDRL de 1/4. Considerando o exposto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve tratar-se de falso positivo, pois é título baixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pode ser uma cicatriz sorológica e não precisa ser tratada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Devia ter iniciado o tratamento na primeira consulta, mesmo antes do VDRL.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O companheiro deveria ter sido tratado na primeira consulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O tratamento, por ser título baixo, é com 1 dose de penicilina benzatina de 2.400.000.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto central desta questão é o manejo da sífilis na gestação, seguindo a estratégia de \"ver e tratar\" preconizada pelo Ministério da Saúde para prevenir a sífilis congênita.\n\nPor que a alternativa (C) está correta?\nDe acordo com os protocolos vigentes, diante de uma gestante com teste treponemal positivo (como o teste rápido realizado na primeira consulta), o tratamento com penicilina benzatina deve ser iniciado imediatamente. Não se deve aguardar o resultado do teste não treponemal (VDRL) para começar a terapia, pois qualquer atraso aumenta o risco de transmissão vertical do *Treponema pallidum* para o feto. O VDRL solicitado serve para o seguimento do tratamento e controle de cura, mas não deve ser um pré-requisito para o início da medicação em gestantes.\n\nAnálise das alternativas incorretas:\n\nAlternativa (a): Incorreta. Títulos baixos no VDRL (como 1/1, 1/2 ou 1/4) não indicam necessariamente um falso-positivo. Quando o teste treponemal (teste rápido) é positivo e o VDRL também é reagente (em qualquer titulação), o diagnóstico de sífilis está confirmado. O falso-positivo no VDRL geralmente ocorre quando o teste rápido é negativo.\n\nAlternativa (b): Incorreta. Para considerar um resultado como \"cicatriz sorológica\", a paciente precisaria ter um histórico documentado de tratamento anterior adequado e uma queda sustentada nos títulos do VDRL. Na ausência dessa comprovação durante o pré-natal, a conduta segura é tratar a gestante como um caso de sífilis ativa para proteger o bebê.\n\nAlternativa (d): Incorreta. O tratamento do parceiro é essencial para evitar a reinfecção da gestante, mas a prioridade absoluta e a conduta imediata na primeira consulta, baseada no teste rápido positivo, é o início do tratamento da própria gestante. Além disso, o parceiro deve ser idealmente testado e tratado conforme o seu próprio resultado e estágio da doença.\n\nAlternativa (e): Incorreta. A escolha da dose (1 dose ou 3 doses de 2.400.000 UI) não depende do valor do título do VDRL, mas sim do estágio clínico da sífilis. Se a paciente não apresenta sintomas (sífilis latente) e não se sabe há quanto tempo ela foi infectada (duração ignorada), o protocolo exige o tratamento com 3 doses semanais de penicilina benzatina. A dose única é reservada apenas para sífilis primária, secundária ou latente recente (com menos de um ano de evolução).",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:39.836Z"
+  },
+  {
+    "id": "AJUDA_b11364ad-96cd-44f5-ae52-650b06939a1b",
+    "originalId": "b11364ad-96cd-44f5-ae52-650b06939a1b",
+    "statement": "Mulher de 67 anos refere fadiga progressiva nos últimos meses. Previamente hígida, histerectomizada há 25 anos por miomatose uterina, sem uso de medicações.\n\nExames laboratoriais: hemoglobina: 9,2 g/dL (VR: 12–16); hematócrito: 29% (36–46); VCM: 72 fL (80–96); HCM: 24 pg (27–33); RDW: 16,2% (11,5–14,5); ferritina: 8 ng/mL (30–300); ferro sérico: 32 µg/dL (50–160); transferrina: 360 mg/dL (200–360); saturação da transferrina: 9% (20–50); plaquetas: 280.000/µL (150.000–400.000); TP: 12,3 s (11,0–13,5); INR: 1,0 (0,8–1,2); TTPa: 30 s (25–35); creatinina: 0,8 mg/dL (0,6–1,1); AST: 22 U/L (< 40); ALT: 20 U/L (< 40); BT: 0,7 mg/dL (< 1,2).\n\nExames endoscópicos e de tomografia:\n• Cistos hepáticos e renais esparsos; linfangiomas císticos retroperitoneais de até 1 cm;\n• Hérnia de hiato tipo III, com 8 cm. Sem evidências de sangramento ativo ou recente. Ausência de varizes ou lesões ulceradas evidentes em estômago e duodeno;\n• Mucosa colônica normal; três pólipos ressecados, com laudo histológico de adenoma tubular sem displasia.\n\nQual é a hipótese mais provável para explicar a anemia neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sangramento oculto por angiodisplasias de delgado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Úlceras de Cameron associadas à hérnia de hiato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hemorragia crônica proveniente de pólipos adenomatosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sangramento oculto secundário a linfangioma retroperitoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anemia da doença crônica relacionada a cistos hepatorrenais múltiplos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nA paciente apresenta uma anemia microcítica e hipocrômica (VCM 72 fL, HCM 24 pg) com RDW elevado, associada a um perfil de ferro característico de ferropenia: ferritina muito baixa (8 ng/mL), ferro sérico baixo e baixa saturação de transferrina. Em uma mulher de 67 anos (pós-menopausa e histerectomizada), a principal suspeita para anemia ferropriva é a perda crônica de sangue pelo trato gastrointestinal.\n\nO exame endoscópico revelou uma hérnia de hiato volumosa (8 cm), do tipo III (mista). Esse achado é a chave para o diagnóstico, pois grandes hérnias hiatais estão classicamente associadas às úlceras de Cameron.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: Embora as angiodisplasias de delgado sejam causas de sangramento oculto e anemia ferropriva, especialmente em idosos, elas costumam ser consideradas após a exclusão de causas óbvias no estômago e cólon. A presença de uma hérnia de hiato de 8 cm aponta para uma etiologia mais provável e anatômica no trato superior.\n\nAlternativa (b) Correta: As úlceras de Cameron são lesões lineares, erosões ou ulcerações localizadas nas pregas da mucosa gástrica, no nível em que o estômago é comprimido pelo diafragma em pacientes com grandes hérnias de hiato. O trauma mecânico da respiração, a fricção da mucosa e a isquemia local levam ao sangramento crônico e oculto, resultando em anemia ferropriva. Frequentemente, essas lesões não são visualizadas em uma endoscopia de rotina se não houver uma busca ativa ou se a hérnia não estiver totalmente herniada no momento do exame.\n\nAlternativa (c) Incorreta: Foram encontrados apenas três pólipos adenomatosos tubulares sem displasia. Pólipos pequenos e sem características de malignidade ou grandes dimensões raramente são a fonte de uma perda hemorrágica crônica tão significativa a ponto de gerar anemia grave (Hb 9,2 g/dL), a menos que sejam volumosos ou ulcerados.\n\nAlternativa (d) Incorreta: Linfangiomas retroperitoneais são malformações do sistema linfático. Eles são benignos e, por estarem localizados no espaço retroperitoneal (fora do lúmen intestinal), não causam perda de sangue nas fezes nem anemia ferropriva por sangramento oculto.\n\nAlternativa (e) Incorreta: O perfil laboratorial é de ferropenia absoluta (ferritina 8 ng/mL). Na anemia de doença crônica, a ferritina costuma estar normal ou elevada (reagente de fase aguda) e o ferro fica \"sequestrado\" nos macrófagos, o que não condiz com os exames apresentados. Além disso, cistos hepatorrenais simples e linfangiomas pequenos não costumam gerar resposta inflamatória sistêmica suficiente para causar anemia de doença crônica.\n\nCONCLUSÃO\nA presença de uma hérnia de hiato volumosa em uma paciente com anemia ferropriva, sem outras lesões expansivas ou ulceradas óbvias na endoscopia e colonoscopia, torna as úlceras de Cameron a hipótese diagnóstica mais provável.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:39.836Z"
+  },
+  {
+    "id": "AJUDA_b11e4874-701b-4820-9741-7bd39cd99723",
+    "originalId": "b11e4874-701b-4820-9741-7bd39cd99723",
+    "statement": "Paciente do sexo masculino, 62 anos, com quadro de dor abdominal, febre e leucocitose. Ao exame físico, PA 90 x 60 mmHg e FC 110 bpm, com dor à palpação difusa do abdome e descompressão brusca positiva. A tomografia computadoriza apresenta divertículos em cólon sigmoide e espessamento de sua parede, além de grande quantidade de líquido livre no abdome. A melhor conduta neste caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "dieta oral sem resíduos, antibioticoterapia de amplo espectro e repetir tomografia computadorizada em 72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "antibioticoterapia e punção guiada por radiointervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "antibioticoterapia e cirurgia de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "colonoscopia, pois não é possível afastar câncer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "jejum, dieta parenteral, antibioticoterapia e observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresenta um paciente com diverticulite aguda complicada, caracterizada por sinais de peritonite generalizada (dor difusa e descompressão brusca positiva) e instabilidade hemodinâmica (hipotensão e taquicardia). A tomografia computadorizada confirma a presença de divertículos e líquido livre em grande quantidade no abdome. De acordo com a classificação de Hinchey, este cenário corresponde ao estágio III (peritonite purulenta) ou IV (peritonite fecal), ambos configurando uma emergência cirúrgica.\n\nAlternativa a: Incorreta. O manejo conservador com dieta e antibióticos é reservado para diverticulites não complicadas (Hinchey 0 ou Ia). O paciente em questão apresenta sinais óbvios de perfuração para a cavidade abdominal livre e choque, o que contraindica a conduta expectante.\n\nAlternativa b: Incorreta. A drenagem percutânea guiada por imagem é a conduta de escolha para o estágio II de Hinchey, que se caracteriza por abscessos pélvicos ou retroperitoneais volumosos e localizados. Quando o líquido é livre e difuso com sinais de peritonite generalizada, a punção é insuficiente para o controle do foco infeccioso.\n\nAlternativa c: Correta. A presença de peritonite generalizada e instabilidade hemodinâmica exige intervenção cirúrgica imediata para limpeza da cavidade e controle da fonte de contaminação, acompanhada de antibioticoterapia de amplo espectro. O procedimento clássico é a cirurgia de Hartmann (sigmoidectomia, colostomia terminal e fechamento do coto retal), embora a anastomose primária com derivação possa ser considerada em casos específicos.\n\nAlternativa d: Incorreta. A colonoscopia é formalmente contraindicada na fase aguda da diverticulite devido ao risco elevado de perfuração por insuflação de ar em uma alça intestinal inflamada e fragilizada. O rastreio para câncer colorretal deve ser realizado apenas 6 a 8 semanas após a resolução do quadro inflamatório.\n\nAlternativa e: Incorreta. O suporte clínico com jejum e nutrição parenteral não substitui a necessidade de intervenção cirúrgica em um abdome agudo perfurativo com sepse de foco abdominal. Atrasar a cirurgia nestas circunstâncias aumenta significativamente a morbimortalidade do paciente.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:39.836Z"
+  },
+  {
+    "id": "AJUDA_b1341da9-4f2b-4d2a-9e22-391f5d3a409a",
+    "originalId": "b1341da9-4f2b-4d2a-9e22-391f5d3a409a",
+    "statement": "Antes da implantação de um novo teste de triagem neonatal, uma equipe analisa se o exame possui boa sensibilidade e especificidade, além de custo viável. Esse processo caracteriza",
+    "options": [
+      {
+        "id": "A",
+        "text": "auditoria em saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "avaliação de tecnologias em saúde (ATS).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "pesquisa clínica experimental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "controle de qualidade laboratorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alternativa correta é a (b).\n\nA questão descreve o processo de tomada de decisão para a incorporação de uma nova ferramenta no sistema de saúde, especificamente um teste de triagem neonatal. O processo que engloba a análise sistemática da acurácia clínica (sensibilidade e especificidade), da segurança e do impacto econômico (custo e viabilidade) é denominado Avaliação de Tecnologias em Saúde (ATS). A ATS serve para orientar gestores sobre o valor de uma tecnologia em relação às já existentes, garantindo que a implementação seja baseada em evidências e sustentável financeiramente.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A auditoria em saúde é um processo de verificação realizado geralmente após ou durante a execução dos serviços. Ela busca conferir se os processos estão seguindo as normas estabelecidas e se os recursos estão sendo utilizados de forma correta e honesta, não se ocupando da análise prévia de incorporação de novas tecnologias.\n\nAlternativa b: Correta. A ATS é exatamente o estudo das implicações técnicas, clínicas e socioeconômicas de uma tecnologia em saúde (que pode ser um medicamento, equipamento ou programa de rastreamento). Ao analisar sensibilidade, especificidade e custo antes da implantação, a equipe cumpre os pilares fundamentais da ATS para subsidiar uma decisão de saúde pública.\n\nAlternativa c: Incorreta. A pesquisa clínica experimental foca na geração de novos conhecimentos e na testagem de hipóteses (como em ensaios clínicos) para verificar segurança e eficácia. Embora a ATS utilize os dados gerados pelas pesquisas clínicas, o processo de análise de viabilidade e impacto para implementação em um sistema de saúde é uma etapa posterior de gestão.\n\nAlternativa d: Incorreta. O controle de qualidade laboratorial envolve procedimentos técnicos rotineiros para assegurar que os resultados dos exames sejam precisos e reprodutíveis no dia a dia do laboratório. É uma etapa de manutenção operacional e não um estudo de viabilidade para a adoção de uma nova tecnologia de triagem.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:39.836Z"
+  },
+  {
+    "id": "AJUDA_b1371788-0024-4763-a006-2c968af6370a",
+    "originalId": "b1371788-0024-4763-a006-2c968af6370a",
+    "statement": "A classificação para a asma em um paciente que apresenta sintomas diurnos mais de duas vezes por semana, mas menos de uma vez por dia, e desperta à noite com sintomas mais de duas vezes por mês é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asma intermitente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Asma persistente leve.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Asma persistente moderada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Asma persistente moderada a grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para classificar a gravidade da asma em um paciente que ainda não iniciou o tratamento de manutenção, avaliamos a frequência dos sintomas diurnos, a frequência dos despertares noturnos, a necessidade de medicação de resgate e, quando disponível, a função pulmonar (VEF1 ou PFE).\n\nAnálise das alternativas:\n\na) Incorreta. Na asma intermitente, os sintomas diurnos ocorrem, no máximo, 2 vezes por semana e os despertares noturnos ocorrem, no máximo, 2 vezes por mês. O paciente do enunciado apresenta sintomas diurnos mais de 2 vezes por semana e despertares noturnos mais de 2 vezes por mês, o que exclui esta classificação.\n\nb) Correta. A asma persistente leve é caracterizada por sintomas diurnos que ocorrem mais de 2 vezes por semana, mas não todos os dias (menos de uma vez ao dia). Quanto aos despertares noturnos, eles ocorrem mais de 2 vezes por mês, mas menos de uma vez por semana. Os dados fornecidos pela questão preenchem exatamente esses critérios.\n\nc) Incorreta. Para que a asma seja classificada como persistente moderada, o paciente deve apresentar sintomas diurnos diariamente ou despertares noturnos mais de uma vez por semana. O enunciado afirma que os sintomas diurnos ocorrem menos de uma vez por dia.\n\nd) Incorreta. A asma grave é definida por sintomas diários e contínuos, com despertares noturnos frequentes (quase todas as noites) e limitação das atividades físicas. O quadro descrito é significativamente menos intenso do que o esperado para asma moderada a grave.\n\nResumo dos critérios para Asma Persistente Leve:\nSintomas diurnos: > 2 vezes por semana, mas < 1 vez por dia.\nSintomas noturnos: > 2 vezes por mês, mas < 1 vez por semana.\nFunção pulmonar: VEF1 ou PFE maior ou igual a 80% do previsto.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:39.836Z"
+  },
+  {
+    "id": "AJUDA_b1392c98-18bb-4cca-98e4-ef10fd110ac1",
+    "originalId": "b1392c98-18bb-4cca-98e4-ef10fd110ac1",
+    "statement": "A imagem abaixo foi publicada pelo Sistema de Estimativas de Emissões e Remoções de Gases de Efeito Estufa (SEEG), ligado ao Observatório do Clima, e retrata as emissões desses gases por município e macrorregião brasileira, nos últimos 10 anos. A figura também discrimina os principais setores emissores desses mesmos gases, em cada município. Com base nas informações apresentadas, e nos seus conhecimentos sobre esse problema, assinale a alternativa que melhor as interpreta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A região campeã na emissão de gases de efeito estufa é a região norte, devido às emissões ligadas à mineração, o processamento industrial e o transporte dos minérios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os estados campeões na emissão de gases de efeito estufa são Minas Gerais e São Paulo porque são os estados com maior malha de transporte rodoviário e mais industrializados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No Brasil, grande parte das emissões de gases de efeito estufa advém das queimadas da região amazônica, voltadas para a criação de gado de corte e plantio de soja.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Globalmente, o Brasil equilibra a emissão anual de gases de efeito estufa com a remoção desses mesmos gases, por meio de suas florestas e plantações.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da imagem: O mapa apresenta a Emissão Bruta Total de gases de efeito estufa por macrorregião brasileira. A região Norte aparece como a maior emissora, com 625,5 milhões de toneladas de CO2 equivalente (tCO2e). A legenda de cores indica que, na região Norte e em boa parte do Centro-Oeste, o setor mais emissor é a Mudança de uso da terra e florestas (representada por pontos verdes), o que remete ao desmatamento.\n\nAlternativa a: Incorreta. Embora a região Norte seja a maior emissora conforme o mapa (625,5 milhões), a justificativa está errada. O principal fator de emissão nessa região, sinalizado pela cor verde no mapa, é a mudança de uso da terra e florestas (desmatamento), e não a mineração ou o processamento industrial.\n\nAlternativa b: Incorreta. Os dados do mapa mostram que a emissão da região Norte é superior à da região Sudeste (396,2 milhões), onde se localizam SP e MG. No perfil de emissões brasileiro, o impacto do desmatamento e da agropecuária supera o das atividades industriais e de transporte rodoviário em volume total de gases de efeito estufa.\n\nAlternativa c: Correta. Esta alternativa interpreta fielmente os dados. O mapa mostra a região Norte como líder em emissões. A legenda associa os pontos verdes predominantes nessa área à Mudança de uso da terra e florestas. No contexto brasileiro, isso ocorre majoritariamente pela retirada da cobertura vegetal original (muitas vezes via queimadas) para a expansão da fronteira agrícola, especificamente para a pecuária extensiva e o cultivo de grãos como a soja.\n\nAlternativa d: Incorreta. O Brasil não equilibra suas emissões com a remoção. Os números de emissão bruta expostos no mapa são muito altos. Apesar de possuir grandes áreas florestais, o ritmo de degradação e as emissões de outros setores impedem que o país seja neutro em carbono atualmente; pelo contrário, o Brasil figura entre os maiores emissores globais devido, principalmente, ao uso da terra.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5466291d5dddc059e3841d12c9024f27647d1666757ff19e0926e21ee4d89892.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b1392c98-18bb-4cca-98e4-ef10fd110ac1_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:40.338Z"
+  },
+  {
+    "id": "AJUDA_b13df540-7609-4939-b134-019859ba7fb0",
+    "originalId": "b13df540-7609-4939-b134-019859ba7fb0",
+    "statement": "Gestante de 38 anos, G3PC1A1, com 38 semanas de gestação, comparece a um pronto atendimento referindo sangramento vaginal, iniciado há 1 hora. Ela descreve o sangramento como moderado, de cor vermelho vivo, e afirma que iniciou após um episódio de forte dor abdominal. Relata que, desde então, o útero permanece “muito duro” e que percebeu redução dos movimentos fetais. Nega perda de líquido. A paciente possui histórico de hipertensão gestacional na gravidez atual. Ao exame físico, mostra-se pálida, com PA 150 x 95 mmHg e FC 105 bpm. O abdome está doloroso à palpação, com hipertonia uterina. Identifica-se batimento cardíaco fetal variando de 100 a 110 bpm de forma sustentada. A inspeção especular revela moderada quantidade de sangue vermelho vivo no fundo vaginal.\n\nQual é a conduta imediata nessa situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Interromper a gestação pela via de parto mais rápida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Confirmar a localização placentária por ultrassonografia obstétrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar perfil biofísico fetal com monitorização dos sinais vitais maternos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar a indução do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Trata-se de um quadro clássico de descolamento prematuro de placenta (DPP). Os dados que sustentam o diagnóstico são:\n\n- Sangramento vaginal vermelho vivo de início súbito, precedido de dor abdominal intensa.\n- Hipertonia uterina persistente (\"útero muito duro\"), achado característico do DPP.\n- Fator de risco importante: síndrome hipertensiva na gestação (principal fator de risco para DPP), além de idade materna avançada e multiparidade.\n- Sinais de repercussão materna: palidez e taquicardia (FC 105 bpm). A PA de 150 x 95 mmHg pode mascarar a hipovolemia, pois a paciente é hipertensa.\n- Sofrimento fetal: redução dos movimentos fetais e bradicardia fetal sustentada (100-110 bpm).\n\nO diagnóstico do DPP é clínico. Com feto vivo, viável (38 semanas) e em sofrimento, a conduta é interromper imediatamente a gestação pela via mais rápida. Na maioria dos casos é a cesariana, salvo se o parto vaginal for iminente (dilatação completa, polo cefálico baixo). Paralelamente, devem-se adotar medidas de suporte:\n\n- dois acessos venosos calibrosos e reposição volêmica;\n- tipagem sanguínea e reserva de hemoderivados;\n- coagulograma e fibrinogênio, pelo risco de coagulação intravascular disseminada;\n- sondagem vesical para controle de diurese;\n- amniotomia, que reduz a pressão intrauterina e a passagem de tromboplastina para a circulação materna.\n\nAnálise das alternativas:\n\na) CORRETA. Feto vivo, a termo e com sinais de sofrimento, em mãe com sinais de instabilidade hemodinâmica, exige resolução imediata da gestação. A via é a mais rápida possível, geralmente a cesariana. Cada minuto de atraso aumenta o risco de óbito fetal, hemorragia materna, coagulopatia e útero de Couvelaire.\n\nb) INCORRETA. O diagnóstico de DPP é clínico. A ultrassonografia tem baixa sensibilidade para detectar o hematoma retroplacentário, e um exame normal não afasta o diagnóstico. Ela seria útil na suspeita de placenta prévia, que cursa com sangramento indolor, útero de tônus normal e geralmente sem sofrimento fetal, o que não é o caso. Realizar o exame nesse contexto apenas atrasa a conduta.\n\nc) INCORRETA. O perfil biofísico fetal é usado na avaliação da vitalidade em gestações de risco sem urgência. Aqui o sofrimento fetal já está evidente pela bradicardia sustentada. Monitorizar sem intervir retarda a resolução e piora o prognóstico materno-fetal.\n\nd) INCORRETA. A indução do trabalho de parto é um processo lento, de horas, incompatível com um feto em sofrimento e uma mãe com instabilidade hemodinâmica. O parto vaginal só é aceitável no DPP quando é iminente ou quando o feto já está morto e a mãe estável. Neste último caso, a amniotomia e a ocitocina podem acelerar o processo.\n\nPonto-chave: no DPP com feto vivo e viável, a conduta é a interrupção imediata da gestação pela via mais rápida, geralmente a cesariana, associada a estabilização materna e vigilância de coagulopatia.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vitalidade Fetal",
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:40.338Z"
+  },
+  {
+    "id": "AJUDA_b13dfa68-701f-4e50-9b00-9e27f1ca2313",
+    "originalId": "b13dfa68-701f-4e50-9b00-9e27f1ca2313",
+    "statement": "Na prática da clínica cirúrgica o diagnóstico de tumores é muito frequente. A respeito dos conceitos básicos que envolvem esse grupo de doenças, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Displasias são caracterizadas por pleomorfismo, ou seja, a perda da uniformidade das células de seu padrão arquitetural de forma e tamanho. Quando a displasia é de alto grau, envolve toda a espessura do epitélio sem invadir a membrana basal e é também chamada de carcinoma in situ.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tumores ou neoplasias são massas anormais de tecido, cujo crescimento excede e é descoordenado com o tecido normal. São caracterizados pela perda da resposta aos mecanismos de controle de crescimento e, portanto, são sempre considerados malignos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A obtenção de amostra tecidual ou celular para diagnóstico pode variar de acordo com o tumor a ser estudado. Amostras obtidas por PAAF (punção aspirativa por agulha fina) ou esfregaço de Papanicolaou permitem diagnóstico histológico, enquanto as biópsias excisionais e incisionais fazem diagnóstico citológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Metaplasias são respostas celulares de adaptação à agressão em que há substituição irreversível de um tipo celular por outro de linhagem diferente da original. É o que ocorre, por exemplo, na metaplasia intestinal do Esôfago de Barret.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a): CORRETA. A displasia é caracterizada por um crescimento desordenado do epitélio, apresentando pleomorfismo celular (variação de tamanho e forma), perda da uniformidade e da orientação arquitetural. Quando essas alterações citológicas e arquiteturais atingem toda a espessura do epitélio, mas permanecem limitadas pela membrana basal, sem invadir o estroma subjacente, o termo técnico utilizado é carcinoma in situ.\n\nAlternativa (b): INCORRETA. O erro da alternativa reside na afirmação de que as neoplasias são sempre consideradas malignas. Por definição, neoplasias são massas anormais de tecido com crescimento autônomo e excessivo; porém, elas podem ser classificadas como benignas (quando permanecem localizadas e não invadem tecidos adjacentes) ou malignas (câncer, com capacidade de invasão e metástase).\n\nAlternativa (c): INCORRETA. Os conceitos de diagnóstico estão invertidos. A PAAF (punção aspirativa por agulha fina) e o preventivo (Papanicolaou) obtêm células isoladas ou pequenos grupos de células, o que possibilita o diagnóstico citológico. As biópsias incisionais e excisionais, por fornecerem um fragmento de tecido com sua estrutura preservada, permitem a análise da arquitetura tecidual, possibilitando o diagnóstico histológico.\n\nAlternativa (d): INCORRETA. A metaplasia é uma alteração adaptativa reversível, e não irreversível. Nela, um tipo celular adulto (epitelial ou mesenquimal) é substituído por outro tipo celular adulto da mesma linhagem que seja mais resistente à agressão sofrida. No esôfago de Barrett, o epitélio escamoso estratificado (normal do esôfago) é substituído pelo epitélio colunar intestinal devido à agressão crônica do refluxo ácido, mas o processo pode regredir se a agressão for cessada.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:40.339Z"
+  }
+]

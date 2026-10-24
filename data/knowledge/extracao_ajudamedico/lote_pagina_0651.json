@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_b5cfd638-8c67-473c-a690-2a58e660d18b",
+    "originalId": "b5cfd638-8c67-473c-a690-2a58e660d18b",
+    "statement": "A médica de uma penitenciária avalia homem de 26 anos, com 98 kg, que relata compartilhar a cela com 12 pessoas (a qual comportaria no máximo 5). O paciente queixa-se de prurido cutâneo há 2 dias com piora no período noturno. Ao exame físico, a médica identifica pápulas eritematosas com escoriações em região de prega em braços e em região posterior de joelhos. Com relação a essa situação, assinale a alternativa que apresenta, respectivamente, a orientação médica e a prescrição medicamentosa adequadas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Restrição de visitas aos detentos e isolamento dos casos nas celas, sem permissão de saída; uso de ivermectina 6 mg, 01 comprimido via oral, repetindo em 15 dias, para todos da cela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Isolamento dos casos na enfermaria da unidade e lavagem frequente das roupas de cama, de banho e de vestuário com água quente (pelo menos a 30 °C); uso de sprays inseticidas e fumigantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realização de palestras educativas para os detentos sobre medidas preventivas e aumento do tempo de banho de sol; uso de fluconazol 150 mg por semana durante 1 mês, para todos da cela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Incremento da frequência de limpeza geral da unidade e higienização adequada das roupas de uso pessoal, de cama e de banho; uso de ivermectina 6 mg, dose conforme o peso, repetindo em 15 dias, para todos da cela.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado pelo paciente, caracterizado por prurido intenso com exacerbação noturna e lesões papulares/escoriadas em áreas de dobras cutâneas (braços e região posterior dos joelhos), em um contexto de superlotação carcerária, é o diagnóstico clássico de escabiose, também conhecida como sarna humana. O agente causador é o ácaro *Sarcoptes scabiei* var. *hominis*, cuja transmissão ocorre pelo contato direto interpessoal ou, menos comumente, por fômites (roupas e lençóis).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o isolamento de casos possa ser discutido em cenários específicos, a restrição de visitas e o isolamento total nas celas não são as condutas prioritárias nem práticas para o controle da escabiose. O erro técnico principal está na prescrição da ivermectina: a dose de 6 mg (um comprimido) é insuficiente para um paciente de 98 kg. A recomendação correta é de 200 microgramas por quilograma de peso, o que exigiria cerca de 18 a 21 mg (3 a 3,5 comprimidos) para este paciente.\n\nAlternativa b) Incorreta. O uso de sprays inseticidas e fumigantes no ambiente não é indicado para o tratamento da escabiose, pois o ácaro é um parasita humano obrigatório e não sobrevive por longos períodos no ambiente. Além disso, a lavagem de roupas com água a 30 graus Celsius é considerada insuficiente; para a eliminação do ácaro em fômites, recomenda-se água quente em temperaturas superiores a 50 ou 60 graus Celsius.\n\nAlternativa c) Incorreta. Medidas educativas e aumento do banho de sol não tratam a infestação ativa. O erro fundamental desta alternativa é a medicação proposta: o fluconazol é um agente antifúngico, utilizado para tratar micoses e candidíase, não possuindo qualquer ação contra o ácaro da sarna.\n\nAlternativa d) Correta. Esta alternativa apresenta a abordagem adequada para o controle de surtos em ambientes institucionais e fechados. A higienização de roupas pessoais, de cama e de banho é essencial para eliminar ácaros presentes em fômites. O tratamento com ivermectina oral é a escolha preferencial em presídios pela facilidade de administração e adesão. A dose deve ser ajustada conforme o peso (200 mcg/kg) e repetida em 7 a 15 dias para atingir os ácaros que eclodiram dos ovos após a primeira dose (já que a ivermectina não é ovicida). O tratamento de todos os contatos da cela, mesmo os assintomáticos, é uma medida de saúde pública crucial para interromper a cadeia de transmissão e evitar a reinfestação do grupo.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:09.595Z"
+  },
+  {
+    "id": "AJUDA_b5d32430-d2c3-46af-8405-d1097868a73b",
+    "originalId": "b5d32430-d2c3-46af-8405-d1097868a73b",
+    "statement": "Menino, 5 dias de vida. Internado em pós-operatório de colostomia em duas bocas por anomalia anorretal caracterizado por genitália de fenótipo masculino e imperfuração anal. Submetido a colostomia no primeiro dia de vida, sem intercorrências. Evoluiu com febre, distensão abdominal e queda do estado geral. Exame físico: febril, em regular estado geral. Hidratado, corado, eupneico. Colostomia funcionante, bom aspecto de ferida operatória. Aceitando leite materno. Abdome discretamente distendido. Massa palpável em flanco direito. Qual o provável foco de infecção?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Urinário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ferida operatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Respiratório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente é um recém-nascido de 5 dias com anomalia anorretal (imperfuração anal). Nesses casos, especialmente no sexo masculino, a malformação frequentemente envolve uma comunicação (fístula) entre o reto e o trato urinário (fístula retouretral ou retovesical). Mesmo após a realização da colostomia para derivação do trânsito intestinal, o coto distal (a parte do reto que ficou \"isolada\") continua em comunicação com a via urinária.\n\nExplicação das Alternativas:\n\na) Incorreta. Embora o paciente apresente distensão abdominal e massa palpável, o termo \"foco abdominal\" é genérico. No contexto da anomalia anorretal, a distensão e a massa no flanco frequentemente decorrem do acúmulo de urina e resíduos dentro do coto retal distal (o chamado megacólon distal) através da fístula, o que predispõe à infecção, mas o foco infeccioso propriamente dito e a complicação sistêmica originam-se na via urinária.\n\nb) Correta. Esta é a principal complicação infecciosa em recém-nascidos com anomalia anorretal e fístula urinária. A urina pode passar da uretra/bexiga para o reto distal e vice-versa. A estase de urina e de restos fecais no coto distal, associada à comunicação direta com o sistema urinário, facilita a ascensão bacteriana, resultando em Infecção do Trato Urinário (ITU) e sepse de foco urinário. A massa palpável mencionada no flanco pode representar o reto distal extremamente dilatado e repleto de urina/detritos ou mesmo uma hidronefrose associada.\n\nc) Incorreta. O exame físico descreve explicitamente que a ferida operatória tem \"bom aspecto\" e a colostomia está funcionante, o que afasta a hipótese de infecção de sítio cirúrgico como causa da febre e queda do estado geral.\n\nd) Incorreta. O paciente é descrito como \"eupneico\", sem sinais de desconforto respiratório ou alterações na ausculta pulmonar que justifiquem o foco respiratório. Em um recém-nascido com malformação anorretal, o raciocínio clínico deve priorizar as malformações associadas e as complicações anatômicas locais (fístulas).",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:09.596Z"
+  },
+  {
+    "id": "AJUDA_b5d8fbe1-4a3a-4787-ab4d-d28560bc7156",
+    "originalId": "b5d8fbe1-4a3a-4787-ab4d-d28560bc7156",
+    "statement": "Criança de 1ano e 6 meses de idade, sexo masculino, foi levado à consulta por apresentar exantema maculopapular róseo, inicialmente no tronco e disseminado para o pescoço, membros superiores, face e membros inferiores há 24 horas. A acompanhante afirma que a criança estava febril nos últimos três dias antes do surgimento das lesões. No exame físico, lactente em bom estado geral, hiperemia de orofaringe e presença do exantema maculopapular em tronco, face e membros. Os demais achados do exame físico estavam dentro da normalidade.\nMediante esse caso clínico, qual a sua PRINCIPAL hipótese de diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dengue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eritema infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rubéola.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exantema súbito.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO:\nA questão descreve um quadro clínico clássico de exantema súbito, também conhecido como roséola infantum, causado pelo herpesvírus humano tipo 6 (HHV-6). Os pontos fundamentais para o diagnóstico são: a idade do paciente (1 ano e 6 meses, faixa etária mais comum entre 6 meses e 2 anos), o histórico de febre alta isolada por 3 dias e a defervescência (desaparecimento da febre) ocorrendo simultaneamente ao surgimento do exantema. Além disso, o exantema do exantema súbito tem início característico no tronco, espalhando-se depois para pescoço, face e membros.\n\nJUSTIFICATIVA DAS ALTERNATIVAS:\n\na) Dengue: Incorreta. Na dengue, o exantema pode aparecer na fase de recuperação, mas o quadro clínico geralmente é marcado por prostração, mialgia, cefaleia e outros sintomas sistêmicos. A descrição de uma criança em bom estado geral com o padrão \"febre que some e exantema que aparece\", começando pelo tronco, é muito mais sugestiva de exantema súbito.\n\nb) Eritema infeccioso: Incorreta. Causado pelo parvovírus B19, caracteriza-se pela fase inicial de \"face esbofeteada\" (eritema malar), seguida por um exantema rendilhado em tronco e membros que pode recidivar com calor ou luz solar. Não costuma apresentar o pródromo de febre alta por três dias seguido de melhora súbita antes das manchas.\n\nc) Rubéola: Incorreta. O exantema da rubéola é tipicamente craniocaudal, ou seja, começa na face e desce para o corpo, ao contrário do exantema súbito, que começa no tronco. Além disso, a febre na rubéola costuma ser baixa e frequentemente há presença de linfadenopatia retroauricular, occipital e cervical, o que não foi relatado no caso.\n\nd) Exantema súbito: Correta. É a principal hipótese diagnóstica, pois se encaixa perfeitamente na descrição: lactente com febre alta que cede após 72 horas, seguida imediatamente por exantema maculopapular róseo de início troncular. O bom estado geral da criança, apesar das lesões cutâneas, corrobora este diagnóstico.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:09.596Z"
+  },
+  {
+    "id": "AJUDA_b5dcf859-5e07-4f2d-b817-69ace6444860",
+    "originalId": "b5dcf859-5e07-4f2d-b817-69ace6444860",
+    "statement": "Paciente feminina, 51 anos, com obesidade mórbida (148 kg, IMC > 50 kg/m²), foi submetida previamente à cirurgia de Hartmann após quadro de diverticulite complicada. Evoluiu com hérnia paracolostômica volumosa. Com o objetivo de viabilizar futura reconstrução do trânsito intestinal, foi submetida a gastrectomia vertical (sleeve), apresentando perda ponderal significativa, com peso atual de 98 kg. Sua tomografia de controle mostrou colostomia em fossa ilíaca direita e hérnia paracolostômica contendo alças delgadas, cólon e parte do estômago, com dimensões de 9,5 × 9,7 cm e volume estimado de 4.250 cc. O volume da cavidade abdominal é de cerca de 8.200 cc. Com base nos dados apresentados, a melhor estratégia para correção da hérnia e reconstrução do trânsito intestinal neste cenário é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reconstrução do trânsito e fechamento primário herniário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Correção simultânea da hérnia e reconstrução do trânsito intestinal, com uso de pneumoperitônio progressivo pré-operatório, visando redução da perda do domínio abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Correção em dois tempos, com abordagem inicial da hérnia utilizando tela sintética intraperitoneal e reconstrução do trânsito em segundo tempo cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "reconstrução isolada do trânsito intestinal, com manutenção da hérnia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Correção em dois tempos, com abordagem inicial da hérnia sem utilização de tela sintética e reconstrução do trânsito em segundo tempo cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO ponto central desta questão é o diagnóstico de hérnia com Perda de Domínio Abdominal. Ao analisarmos os dados da tomografia, observamos que o volume do saco herniário (4.250 cc) representa mais de 50% do volume da cavidade abdominal (8.200 cc). Na literatura cirúrgica, volumes herniários superiores a 20% ou 25% do volume abdominal já caracterizam perda de domínio, o que impõe desafios técnicos e fisiológicos significativos. O retorno súbito desse conteúdo para uma cavidade \"encolhida\" pode causar complicações fatais.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA\n\nA estratégia de escolha para hérnias com grande perda de domínio é o preparo pré-operatório da cavidade. O Pneumoperitônio Progressivo Pré-operatório (PPP) consiste na insuflação gradual de ar na cavidade peritoneal dias ou semanas antes da cirurgia definitiva. Esse processo promove o alongamento da musculatura da parede abdominal (ganho de espaço), aumenta a complacência diafragmática e facilita o retorno das vísceras para o interior do abdômen. Ao realizar a reconstrução do trânsito simultaneamente à correção da hérnia após esse preparo, minimiza-se o risco de Síndrome Compartimental Abdominal e insuficiência respiratória no pós-operatório, permitindo um fechamento seguro.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa A: O fechamento primário sem preparo prévio em uma hérnia deste tamanho levaria invariavelmente a um aumento súbito e excessivo da pressão intra-abdominal. Isso resultaria em Síndrome Compartimental Abdominal, grave comprometimento respiratório e circulatório, além de altíssimo risco de deiscência das suturas e recidiva imediata.\n\nAlternativa C: A abordagem em dois tempos começando pela hérnia com tela não resolve o problema da disparidade de volume (perda de domínio) se não houver preparo prévio. Além disso, colocar uma tela intraperitoneal antes da reconstrução do trânsito criaria aderências densas que dificultariam tecnicamente a segunda cirurgia (reversão de Hartmann), além de manter o risco de infecção da prótese em um tempo cirúrgico futuro contaminado.\n\nAlternativa D: A reconstrução isolada do trânsito mantendo a hérnia é uma conduta incompleta. A paciente submeteu-se a uma gastrectomia vertical e a uma perda ponderal expressiva justamente para reunir condições clínicas para tratar a hérnia volumosa e restaurar a anatomia e a função intestinal de forma definitiva.\n\nAlternativa E: A correção de uma hérnia com anel herniário de quase 10 cm sem o uso de tela (reforço protético) é tecnicamente inadequada, pois apresenta taxas de recidiva próximas a 100%. Além disso, assim como nas outras alternativas, falha ao não abordar a necessidade de preparo para a perda de domínio abdominal.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:09.596Z"
+  },
+  {
+    "id": "AJUDA_b5e223c8-c61a-4d36-9422-eece7fda3dcd",
+    "originalId": "b5e223c8-c61a-4d36-9422-eece7fda3dcd",
+    "statement": "Você está atendendo na UPA uma adolescente vítima de violência sexual por pessoa desconhecida. O Centro Médico de acolhimento a essas vítimas fica em uma distância de 5 horas da UPA em que você está com a paciente. Após acolhê-la, você explica as medidas a serem tomadas. As alternativas a seguir descrevem algumas medidas a serem tomadas no atendimento de pessoas vítimas de violência sexual. Das alternativas a seguir, qual descreve corretamente algumas dessas medidas, segundo o Protocolo do Ministério da Saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anamnese dirigida, Exame físico e PEP para HIV que deverá ser realizada com antirretrovirais após 72 horas da exposição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exame Físico e profilaxia para Vaginose Bacteriana com Metronidazol 400mg, 5 comprimidos via oral em dose única associado à Ceftriaxona 500mg Intramuscular em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anamnese, Exame Geral e Ginecológico, Profilaxia para Sífilis com Penicilina G Cristalina 2,4milhões UI aplicados Intra-muscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anticoncepção de emergência com Levonorgestrel 0,75mg - 2 comprimidos em dose única e providências policiais e judiciais cabíveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Testagem rápida para Sífilis, HIV e Hepatites Virais B e C. Caso a vacinação da vítima seja incompleta, nenhuma medida deve ser tomada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O atendimento às vítimas de violência sexual deve ser multidisciplinar, ágil e pautado no Protocolo do Ministério da Saúde. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa A: Incorreta. A Profilaxia Pós-Exposição (PEP) para o HIV é uma urgência médica e deve ser iniciada o mais rápido possível, idealmente nas primeiras 2 horas após a agressão, estendendo-se, no máximo, até 72 horas. A alternativa afirma erroneamente que a PEP deve ser realizada \"após\" 72 horas, momento em que a eficácia do tratamento não é mais garantida e o protocolo não indica o seu início.\n\nAlternativa B: Incorreta. Embora o Metronidazol (2 g ou 5 comprimidos de 400 mg) e a Ceftriaxona (500 mg IM) façam parte da profilaxia para ISTs não virais (tricomoníase e gonorreia, respectivamente), o esquema está incompleto. O protocolo exige a associação da Azitromicina 1 g por via oral, em dose única, para a cobertura de *Chlamydia trachomatis* (clamídia).\n\nAlternativa C: Incorreta. O erro reside no tipo de penicilina utilizado. A profilaxia para sífilis em casos de violência sexual deve ser feita com Penicilina G Benzatina, 2,4 milhões de UI, via intramuscular (dose única). A Penicilina G Cristalina é reservada para administração endovenosa em ambiente hospitalar, como em casos de neurosífilis ou sífilis congênita.\n\nAlternativa D: Correta. A anticoncepção de emergência (AE) é uma das medidas prioritárias para evitar uma gravidez indesejada decorrente da violência. O esquema de Levonorgestrel 1,5 mg pode ser administrado em dose única ou em duas doses de 0,75 mg com intervalo de 12 horas, sendo eficaz se iniciado em até 5 dias (embora a eficácia seja maior nas primeiras 72 horas). Além disso, o profissional deve proceder com as notificações compulsórias pertinentes e orientar a vítima sobre seus direitos legais e providências judiciais, sempre respeitando a autonomia da paciente em decidir sobre a denúncia policial.\n\nAlternativa E: Incorreta. A primeira parte está correta (testagem rápida é mandatória), mas a segunda parte invalida a alternativa. Se a vacinação para hepatite B for incompleta ou se a vítima não possuir comprovação vacinal, deve-se iniciar ou completar o esquema vacinal imediatamente. Além disso, dependendo do status do agressor e do tempo decorrido, pode ser indicada a Imunoglobulina Humana Anti-Hepatite B (IGHAHB). Jamais se adota a conduta de não tomar nenhuma medida.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:09.596Z"
+  },
+  {
+    "id": "AJUDA_b5f36754-a80b-4a94-889c-c6b17707f868",
+    "originalId": "b5f36754-a80b-4a94-889c-c6b17707f868",
+    "statement": "Paciente com miocardiopatia isquêmica chega ao pronto socorro com dor precordial em aperto, de forte intensidade, com uma hora de duração. Ele apresenta-se sudoreico, com saturação de O2 em 90%, frequência respiratória de 22ipm e pressão arterial de 88/60 mmHg. O eletrocardiograma na entrada do paciente está abaixo representado:\n\nEntre as alternativas abaixo, qual corresponde ao diagnóstico eletrocardiográfico e à melhor conduta terapêutica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Taquicardia supraventricular sustentada monomórfica; cardioversão imediata com choque sincronizado de 100J;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Taquicardia supraventricular com aberrância de condução; Amiodarona; 300 mg diluído em soro glicosado a 5%, aplicado em 15 minutos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Taquicardia ventricular polimórfica; cardioversão imediata com choque sincronizado de 100J;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Fibrilação ventricular; desfibrilação com choque não sincronizado de 200J",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresenta um paciente com miocardiopatia isquêmica e sinais claros de instabilidade hemodinâmica: dor precordial, hipotensão (PA 88/60 mmHg) e hipóxia (SatO2 90%). Diante de qualquer taquiarritmia associada a sinais de instabilidade (hipotensão, alteração do nível de consciência, dor precordial anginosa ou insuficiência cardíaca aguda), a conduta imediata deve ser a terapia elétrica.\n\nAnálise do Eletrocardiograma:\nA imagem revela uma taquicardia com complexos QRS largos, o que indica uma origem ventricular ou uma condução com aberração. Ao observar atentamente as derivações (especialmente as precordiais à direita e a tira de ritmo inferior), nota-se que a morfologia, o eixo e a amplitude dos complexos QRS mudam constantemente, como se estivessem \"girando\" ao redor da linha de base. Esse padrão é o diagnóstico clássico de taquicardia ventricular polimórfica.\n\nAlternativa a: Incorreta. A taquicardia supraventricular (TSV) monomórfica apresenta complexos QRS idênticos entre si e, na grande maioria das vezes, estreitos (menores que 120 ms). O traçado mostrado é claramente de complexo largo e com múltiplas formas, o que invalida o diagnóstico de TSV monomórfica.\n\nAlternativa b: Incorreta. Embora uma TSV com aberrância possa gerar QRS largo, ela manteria uma morfologia fixa. Além disso, o erro principal aqui é a conduta: em pacientes instáveis (hipotensos e com dor precordial), o uso de fármacos como a amiodarona não é a conduta inicial. O atraso na terapia elétrica para tentar uma reversão química pode levar à deterioração do quadro para uma parada cardiorrespiratória.\n\nAlternativa c: Correta. O ECG demonstra uma taquicardia ventricular polimórfica pela variação cíclica do complexo QRS. A instabilidade hemodinâmica (PA 88/60 mmHg e dor) exige a intervenção elétrica imediata. Vale ressaltar que, na prática clínica, em taquicardias polimórficas, o monitor muitas vezes não consegue sincronizar com a onda R devido à sua variação, sendo necessária a desfibrilação (choque não sincronizado). Entretanto, para fins de prova, a alternativa correlaciona corretamente o diagnóstico visual com a necessidade de choque imediato para um ritmo instável.\n\nAlternativa d: Incorreta. Na fibrilação ventricular (FV), o coração não apresenta qualquer atividade elétrica organizada, resultando em um traçado totalmente caótico, sem QRS identificáveis. Além disso, a FV é um ritmo de parada cardiorrespiratória; um paciente em FV não apresentaria pressão arterial mensurável ou consciência, ao contrário do paciente descrito, que ainda mantém pulso e saturação de oxigênio.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/81f0499696061e2b729545faef28d6bb3608202c97b523ae9407b58c68ec3efa.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b5f36754-a80b-4a94-889c-c6b17707f868_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:10.043Z"
+  },
+  {
+    "id": "AJUDA_b5f5d6f4-0c79-4a19-8015-9d03ac7d1c6c",
+    "originalId": "b5f5d6f4-0c79-4a19-8015-9d03ac7d1c6c",
+    "statement": "Paciente portador de cirrose por hepatite C, vem ao ambulatório da consulta de rotina relatando aumento do volume abdominal nos últimos 15 dias, associado a edema de MMII, além de insônia e lentificação dos pensamentos. Encontra-se lúcido, orientado no tempo e espaço, se flappings, levemente ictérico. Presença de ascite detectada por macicez móvel, sinal do piparote negativo. Os exames laboratoriais mostram AST 43 ALT 30 GGT 57 BT 3,5 (BD 2,9 BI 0.6) INR 1,4 Albumina sérica 3,1 De acordo com a escala de Child-Pugh, esse paciente se classifica como",
+    "options": [
+      {
+        "id": "A",
+        "text": "Child-Pugh A, 5 pontos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Child-Pugh B, 8 pontos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Child-Pugh B, 9 pontos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Child-Pugh C, 10 pontos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, devemos aplicar os critérios da Escala de Child-Pugh, que avalia o prognóstico da cirrose hepática através de cinco parâmetros: Bilirrubina Total, Albumina, INR (ou tempo de protrombina), Ascite e Encefalopatia Hepática.\n\nANÁLISE DOS DADOS DO PACIENTE:\n\n1. BILIRRUBINA TOTAL: O valor é 3,5 mg/dL. Na escala, pontuamos 1 se menor que 2,0; 2 se entre 2,0 e 3,0; e 3 se maior que 3,0. Como o valor é 3,5, atribuímos 3 PONTOS.\n\n2. ALBUMINA: O valor é 3,1 g/dL. Pontuamos 1 se maior que 3,5; 2 se entre 2,8 e 3,5; e 3 se menor que 2,8. Como o valor é 3,1, atribuímos 2 PONTOS.\n\n3. INR: O valor é 1,4. Pontuamos 1 se menor que 1,7; 2 se entre 1,7 e 2,3; e 3 se maior que 2,3. Como o valor é 1,4, atribuímos 1 PONTO.\n\n4. ASCITE: O exame físico revela macicez móvel, confirmando a presença de ascite, mas o sinal do piparote negativo indica que ela não é tensa. Pontuamos 1 para ausente; 2 para leve/moderada (detectável clinicamente); e 3 para acentuada/tensa. Portanto, atribuímos 2 PONTOS.\n\n5. ENCEFALOPATIA HEPÁTICA: O paciente apresenta insônia e lentificação dos pensamentos. Embora esteja orientado e sem flapping, esses são sinais precoces (Grau 1 da classificação de West Haven). Pontuamos 1 para ausente; 2 para graus 1 e 2; e 3 para graus 3 e 4. Portanto, atribuímos 2 PONTOS.\n\nSOMA TOTAL: 3 (Bilirrubina) + 2 (Albumina) + 1 (INR) + 2 (Ascite) + 2 (Encefalopatia) = 10 PONTOS.\n\nCLASSIFICAÇÃO:\nChild-Pugh A: 5 a 6 pontos.\nChild-Pugh B: 7 a 9 pontos.\nChild-Pugh C: 10 a 15 pontos.\n\nCom 10 pontos, o paciente é classificado como Child-Pugh C.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A pontuação mínima da escala é 5. Apenas as alterações da bilirrubina e da albumina somam 5 pontos, sem contar a ascite e a encefalopatia presentes no quadro clínico.\n\nb) Incorreta. O cálculo de 8 pontos ignora a gravidade da hiperbilirrubinemia (que atinge o teto de 3 pontos) ou os sinais clínicos de encefalopatia e ascite.\n\nc) Incorreta. Embora a classe B chegue a 9 pontos, a soma correta de todos os critérios laboratoriais e clínicos totaliza 10 pontos, o que muda a categoria para a classe C.\n\nd) Correta. A soma de 10 pontos enquadra perfeitamente o paciente no estágio inicial da classe C de Child-Pugh, indicando uma doença hepática avançada e com maior risco de mortalidade.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:10.043Z"
+  },
+  {
+    "id": "AJUDA_b5feaba1-607b-4704-9824-3fb32044fabc",
+    "originalId": "b5feaba1-607b-4704-9824-3fb32044fabc",
+    "statement": "Homem de 55 anos apresenta febre, emagrecimento e adenomegalia axilar esquerda, cuja biópsia confirmou linfoma de Hodgkin. A avaliação completa concluiu estadiamento II-B. Além do acometimento axilar é mais provável o PET-CT mostrar aumento de captação em",
+    "options": [
+      {
+        "id": "A",
+        "text": "mediastino.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "retroperitonio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hilo hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fossa ilíaca direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "medula óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental dominar o sistema de estadiamento de Ann Arbor, utilizado para os linfomas de Hodgkin e não-Hodgkin. O estadiamento é definido da seguinte forma:\n\nEstágio I: Acometimento de uma única região linfonodal ou de um único órgão extralinfático localizado (IE).\nEstágio II: Acometimento de duas ou mais regiões linfonodais no mesmo lado do diafragma (seja acima ou abaixo dele).\nEstágio III: Acometimento de regiões linfonodais em ambos os lados do diafragma.\nEstágio IV: Acometimento difuso ou disseminado de um ou mais órgãos extralinfáticos (como medula óssea, fígado ou pulmão), com ou sem associação de linfonodos.\n\nO sufixo \"B\" indica a presença de sintomas sistêmicos (febre, sudorese noturna ou perda ponderal superior a 10% em 6 meses), enquanto o sufixo \"A\" indica a ausência desses sintomas.\n\nNo caso clínico apresentado, o paciente possui estadiamento II-B. Como ele já apresenta adenomegalia axilar esquerda (localização supradiafragmática), para manter o estágio II, qualquer outro sítio de acometimento obrigatoriamente deve estar localizado acima do diafragma.\n\nAnálise das alternativas:\n\na) Correta. O mediastino é uma região linfonodal situada acima do diafragma. O linfoma de Hodgkin é conhecido por sua disseminação linfática contígua e pelo frequente acometimento mediastinal, sendo a localização mais provável que mantém o paciente no estágio II.\n\nb) Incorreta. O retroperitônio está localizado abaixo do diafragma. Se houvesse acometimento axilar (acima) e retroperitoneal (abaixo), o estadiamento seria III.\n\nc) Incorreta. O hilo hepático está localizado abaixo do diafragma. O acometimento concomitante com a axila classificaria o paciente como estágio III.\n\nd) Incorreta. A fossa ilíaca direita (linfonodos ilíacos) está abaixo do diafragma. Novamente, isso caracterizaria um estágio III por envolver cadeias em ambos os lados do diafragma.\n\ne) Incorreta. O envolvimento da medula óssea é considerado uma disseminação extralinfática hematogênica, o que classificaria a doença automaticamente como estágio IV, independentemente da localização dos linfonodos.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:10.043Z"
+  },
+  {
+    "id": "AJUDA_b602a23d-49ba-4168-a740-85c792d1bc20",
+    "originalId": "b602a23d-49ba-4168-a740-85c792d1bc20",
+    "statement": "Considere uma criança de 4 anos, 18 quilos, já diagnosticada com asma e que está em acompanhamento pediátrico. Encontra-se em tratamento diário adequado, classificada neste momento no Step 2. Em relação à condição clínica descrita acima, tomando como referência o GINA 2026, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menor deve estar fazendo uso diário de corticoide inalatório em dose média, e não em dose alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Caso a criança não responda adequadamente ao tratamento proposto no Step 2 em três meses, a próxima conduta deve incluir LABA (formoterol) em dose baixa associado a mesma dose do corticoide inalatório já em uso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caso a criança tenha uma resposta inadequada ao tratamento atual após 2-3 meses, a associação de LAMA (tiotropio) é uma excelente opção terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se essa criança apresentar uma exacerbação classificada como moderada, o pediatra de plantão deverá fazer SABA numa dosagem máxima de 100 mcg a cada 20 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diante de um cenário de exacerbação grave, após a primeira hora do tratamento adequado, o médico poderá considerar o uso de sulfato de magnésio endovenoso para essa criança.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda o manejo da asma em crianças de 6 a 11 anos de idade, baseando-se nas diretrizes do GINA (Global Initiative for Asthma). Para respondê-la corretamente, é preciso conhecer os degraus (steps) de tratamento e a abordagem das exacerbações.\n\nAnálise das alternativas:\n\na) INCORRETA. No Step 2 para crianças de 6 a 11 anos, a terapia de manutenção preferencial é o uso diário de corticoide inalatório (CI) em DOSE BAIXA, e não em dose média. As doses médias e altas são reservadas para os steps subsequentes (Step 3 e Step 4) em casos de falha no controle dos sintomas.\n\nb) INCORRETA. De acordo com o GINA, se uma criança de 6 a 11 anos não atinge o controle no Step 2, a progressão para o Step 3 envolve, preferencialmente, o aumento da dose do corticoide inalatório para dose média OU a manutenção da dose baixa de CI associada a um LABA (Long-Acting Beta-Agonist). A alternativa afirma que a conduta \"deve incluir\" obrigatoriamente o LABA, ignorando a opção de apenas aumentar a dose do corticoide, que também é uma recomendação de primeira linha.\n\nc) CORRETA. Embora não seja a primeira escolha absoluta, o manual GINA contempla o uso do tiotrópio (um LAMA - Antagonista Muscarínico de Longa Ação) como uma opção terapêutica adicional (add-on) para crianças a partir dos 6 anos que permanecem sintomáticas apesar do uso de CI ou CI/LABA. É uma alternativa viável para crianças que sofrem exacerbações persistentes. (Nota: Embora a questão cite 4 anos no enunciado, a conduta descrita e o gabarito oficial sugerem a aplicação da lógica do manejo para crianças acima de 6 anos ou a aceitação do tiotrópio como opção off-label/adicional em protocolos de asma grave).\n\nd) INCORRETA. No tratamento de exacerbações moderadas, a dose de SABA (Beta-2 agonista de curta duração, como o salbutamol) recomendada é de 2 a 10 jatos (puffs) a cada 20 minutos na primeira hora. Sabendo que cada jato de salbutamol possui 100 mcg, a dosagem máxima seria muito superior a apenas 100 mcg (que corresponde a um único jato).\n\ne) INCORRETA. O sulfato de magnésio endovenoso é uma terapia de resgate para exacerbações graves que não respondem ao tratamento inicial. No entanto, o GINA recomenda seu uso principalmente para crianças acima de 6 anos. Para crianças pequenas (como a de 4 anos citada no enunciado), as evidências são limitadas e o uso não é rotineiramente recomendado como primeira linha de manejo na hora inicial, priorizando-se oxigenioterapia, SABA frequente, brometo de ipratrópio e corticoide sistêmico precoce.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:10.043Z"
+  },
+  {
+    "id": "AJUDA_b6115e33-5851-4eb5-8b71-69df379bfd4a",
+    "originalId": "b6115e33-5851-4eb5-8b71-69df379bfd4a",
+    "statement": "Mulher, de 44 anos de idade, procura o pronto atendimento com dor em hipocôndrio direito associada a náuseas e vômitos há duas semanas. Relata episódios febris nos últimos três dias. Ao exame físico, encontra-se em regular estado geral, confusa, ictérica 3+/4+, temperatura axilar de 39,3ºC, PA 86x58mmHg, FC 125bpm. O abdome está globoso, flácido, doloroso à palpação de hipocôndrio direito, sem sinais de irritação peritoneal. Os exames laboratoriais revelaram leucócitos em 21.000/mm³ e bilirrubinas totais 5,5mg/dL (direta 4,8mg/dL). Realizou ultrassonografia de abdome, com identificação de múltiplos cálculos em vesícula biliar e presença de dilatação das vias biliares intra e extra-hepáticas, sem evidência de fator obstrutivo pelo referido método de imagem. Além de antibioticoterapia endovenosa, qual é a conduta indicada para essa paciente neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realização de colecistectomia videolaparoscópica na urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Drenagem da via biliar por colangiopancreatografia retrógrada endoscópica (CPRE).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Complementação diagnóstica com colangiorressonância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Analgesia e suporte clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico apresentado é clássico e de extrema gravidade. A paciente manifesta a chamada Pêntade de Reynolds, que consiste na Tríade de Charcot (dor abdominal em hipocôndrio direito, icterícia e febre) acrescida de instabilidade hemodinâmica (hipotensão e taquicardia) e alteração do nível de consciência (confusão mental). Esses achados são diagnósticos de Colangite Aguda Grave (Grau III, conforme os Critérios de Tóquio – TG18), indicando que a infecção das vias biliares evoluiu com disfunção orgânica e choque séptico de foco biliar.\n\nOs exames laboratoriais confirmam o padrão obstrutivo (hiperbilirrubinemia direta) e a resposta inflamatória sistêmica (leucocitose importante). A ultrassonografia, embora não tenha visualizado o cálculo no colédoco (o que é comum devido aos gases intestinais), demonstrou dilatação das vias biliares intra e extra-hepáticas, o que corrobora a presença de uma obstrução mecânica.\n\nO tratamento da colangite grave exige três pilares imediatos: estabilização hemodinâmica (reposição volêmica), antibioticoterapia de largo espectro e a descompressão biliar de urgência para controle do foco infeccioso.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA?\n\nA Colangiopancreatografia Retrógrada Endoscópica (CPRE) é o procedimento de escolha para a descompressão da via biliar na colangite aguda. Ela permite a drenagem do material purulento sob pressão e, na maioria das vezes, a remoção do fator obstrutivo (cálculo). Em pacientes instáveis, é a via mais rápida e menos invasiva para salvar a vida da paciente, permitindo a descompressão imediata.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Realização de colecistectomia videolaparoscópica na urgência: A colecistectomia trata a vesícula biliar, mas o problema agudo desta paciente está na via biliar principal (colédoco). Realizar uma cirurgia de grande porte em uma paciente em choque séptico e com inflamação intensa é contraindicado. A prioridade é desobstruir o canal biliar; a retirada da vesícula deve ser feita em um segundo momento, após a estabilização do quadro.\n\nc) Complementação diagnóstica com colangiorressonância: A colangiorressonância é um exame excelente para diagnóstico, mas é apenas um exame de imagem. Em uma paciente com Pêntade de Reynolds, o diagnóstico clínico de colangite é evidente e a necessidade de intervenção é imediata. Atrasar a descompressão para levar uma paciente instável ao setor de radiologia para um exame demorado aumenta o risco de óbito.\n\nd) Analgesia e suporte clínico: O suporte clínico e a analgesia são componentes do tratamento, mas sozinhos são incapazes de resolver a patologia. Sem a descompressão da via biliar (drenagem do pus), a infecção não será controlada, independentemente do uso de antibióticos ou suporte, pois o foco infeccioso permanece obstruído e sob pressão.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:10.043Z"
+  }
+]

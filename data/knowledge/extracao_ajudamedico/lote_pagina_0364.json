@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_64ca52fa-53ae-4e9b-a762-c4bf25d0e6bf",
+    "originalId": "64ca52fa-53ae-4e9b-a762-c4bf25d0e6bf",
+    "statement": "No lactente com tetralogia de Fallot, as crises hipoxêmicas normalmente decorrem de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperfluxo pulmonar pelo ducto arterioso patente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipofluxo pulmonar por estenose infundibular da artéria pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Shunt E-D pelo defeito de septo interventricular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução do débito cardíaco pela baixa muscularização do VD.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Tetralogia de Fallot é a cardiopatia congênita cianótica mais comum após o primeiro ano de vida e é composta por quatro achados anatômicos: comunicação interventricular (CIV), estenose pulmonar (geralmente infundibular), dextroposição da aorta (aorta em cavaleiro) e hipertrofia do ventrículo direito. A compreensão da crise hipoxêmica, também chamada de crise de cianose ou spell, passa diretamente pelo entendimento da dinâmica do fluxo sanguíneo entre o coração e o pulmão.\n\nAlternativa a: Está incorreta. Na Tetralogia de Fallot, o fluxo pulmonar é cronicamente diminuído pela estenose. A presença de um ducto arterioso patente (canal arterial) é, na verdade, um mecanismo compensatório que ajuda a levar sangue para os pulmões em recém-nascidos com obstrução grave. O hiperfluxo não é o causador da crise hipoxêmica; ao contrário, o fechamento fisiológico do ducto arterioso no período neonatal pode precipitar cianose grave.\n\nAlternativa b: Está correta. A crise hipoxêmica ocorre quando há uma redução aguda e acentuada do fluxo sanguíneo pulmonar (hipofluxo). O principal mecanismo é o espasmo da musculatura infundibular do ventrículo direito. O infundíbulo é a região de saída do ventrículo para a artéria pulmonar; quando essa musculatura sofre um espasmo, a obstrução se torna quase completa. Como resultado, o sangue venoso que deveria ir para os pulmões encontra uma resistência altíssima e acaba sendo desviado pela CIV diretamente para a aorta (shunt direita-esquerda), caindo na circulação sistêmica sem ser oxigenado.\n\nAlternativa c: Está incorreta. O shunt esquerda-direita é característico de cardiopatias acianóticas, como a CIV isolada ou a comunicação interatrial (CIA), onde o sangue oxigenado retorna aos pulmões. Na Tetralogia de Fallot, a pressão no ventrículo direito é igual ou superior à do ventrículo esquerdo devido à estenose pulmonar, o que inverte o sentido do shunt para direita-esquerda durante as crises, gerando a hipoxemia.\n\nAlternativa d: Está incorreta. Uma das características definidoras da Tetralogia de Fallot é justamente a hipertrofia do ventrículo direito, ou seja, um aumento da sua massa muscular. O ventrículo direito precisa trabalhar contra uma grande obstrução (a estenose pulmonar), o que o torna mais musculoso. Não há baixa muscularização; o problema não é a força de contração do músculo em si, mas sim a barreira física (estenose) que impede o sangue de chegar aos pulmões.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:34.824Z"
+  },
+  {
+    "id": "AJUDA_64d0b91d-506d-4433-9f13-596a23467a1d",
+    "originalId": "64d0b91d-506d-4433-9f13-596a23467a1d",
+    "statement": "O metotrexato é um dos fármacos para tratamento da artrite reumatoide. Os efeitos adversos mais frequentemente observados são anemia, neutropenia, náuseas e vômitos, mucosite e elevação de enzimas hepáticas. A fim de minimizar efeitos adversos, sugere-se associação do metotrexato com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "vitamina C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "carbonato de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "vitamina D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a).\n\nO metotrexato é o medicamento de primeira escolha no tratamento da artrite reumatoide. Seu mecanismo de ação principal é o antagonismo do ácido fólico, ocorrendo por meio da inibição da enzima di-hidrofolato redutase. Essa enzima é responsável por converter o di-hidrofolato em tetra-hidrofolato (a forma ativa do folato), que é essencial para a síntese de purinas e pirimidinas, bases necessárias para a replicação do DNA e divisão celular.\n\nComo o metotrexato bloqueia essa via, tecidos com alta taxa de renovação celular são frequentemente afetados, o que explica os efeitos colaterais clássicos: mucosite (lesões na mucosa oral e gastrointestinal) e toxicidade medular (anemia, neutropenia). Além disso, o fármaco pode causar elevação de enzimas hepáticas (hepatotoxicidade).\n\nAnálise das alternativas:\n\nAlternativa (a): Correta. A suplementação com ácido fólico é a conduta padrão recomendada por diretrizes nacionais e internacionais (como as da Sociedade Brasileira de Reumatologia e do ACR). A reposição de folato ajuda a manter as reservas celulares e reduz significativamente a incidência de náuseas, vômitos, úlceras orais e elevação de enzimas hepáticas, além de prevenir complicações hematológicas, sem comprometer a eficácia do metotrexato no controle da inflamação articular.\n\nAlternativa (b): Incorreta. A vitamina C (ácido ascórbico) possui propriedades antioxidantes e participa da síntese de colágeno, mas não interfere na via metabólica do folato ou na prevenção da toxicidade causada pelo metotrexato.\n\nAlternativa (c): Incorreta. O carbonato de cálcio é utilizado para a saúde óssea e prevenção de osteoporose, condição comum em pacientes com doenças inflamatórias crônicas ou em uso de corticoides, mas não possui papel na mitigação dos efeitos colaterais específicos do metotrexato.\n\nAlternativa (d): Incorreta. A vitamina D é fundamental para o metabolismo ósseo e modulação do sistema imune, sendo frequentemente suplementada em pacientes reumatológicos, mas sua indicação não visa reduzir os efeitos adversos descritos no enunciado.\n\nAlternativa (e): Incorreta. O magnésio não apresenta interação farmacodinâmica com o metotrexato que justifique seu uso para reduzir náuseas, mucosite ou toxicidade medular.\n\nEm suma, a reposição de ácido fólico é a estratégia farmacológica essencial para aumentar a tolerância e a segurança do tratamento com metotrexato.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Artrite Reumatoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:34.824Z"
+  },
+  {
+    "id": "AJUDA_64d494e9-53b4-4701-8c74-ab3746d15e0f",
+    "originalId": "64d494e9-53b4-4701-8c74-ab3746d15e0f",
+    "statement": "Paciente de 45 anos, portador de artrite reumatoide grave, ajuíza ação judicial contra o Estado para obter imunobiológico de alto custo prescrito por reumatologista da rede privada. O medicamento não integra os Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) do Sistema Único de Saúde (SUS), nem foi incorporado após avaliação da Comissão Nacional de Incorporação de Tecnologias no SUS (Conitec). Após o indeferimento do pedido administrativo, o juiz concede tutela provisória com base exclusivamente em laudo médico particular. À luz do direito sanitário e da jurisprudência sobre a judicialização da saúde, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A existência de prescrição médica fundamentada e de registro sanitário na ANVISA é suficiente para impor ao Estado o fornecimento do medicamento, independentemente de sua incorporação ao SUS ou da existência de alternativas terapêuticas disponíveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O fornecimento judicial de medicamento não incorporado ao SUS depende da análise do caso concreto, observando, entre outros aspectos, a existência de evidências científicas de eficácia, o registro sanitário na ANVISA, a inexistência de alternativa terapêutica incorporada ao SUS e os demais critérios estabelecidos pela jurisprudência dos tribunais superiores.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A ausência de incorporação do medicamento pela Conitec impede, por si só, seu fornecimento por decisão judicial, uma vez que a avaliação técnico-científica substitui a apreciação jurisdicional da controvérsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A decisão judicial deve se limitar à verificação da existência de prescrição médica e da incapacidade financeira do paciente, não cabendo ao Poder Judiciário analisar critérios técnicos relacionados à incorporação de tecnologias ou às políticas públicas de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O fornecimento judicial de medicamentos não incorporados ao SUS somente é admissível quando houver manifestação favorável prévia da Conitec ou revisão administrativa dos Protocolos Clínicos e Diretrizes Terapêuticas (PCDT).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O tema é a judicialização da saúde e o fornecimento de medicamentos não incorporados ao SUS. A jurisprudência de referência é o Tema 106 do STJ (REsp 1.657.156/RJ), o Tema 6 do STF (RE 566.471) e o Tema 1.234 do STF. Também pesam a Lei 12.401/2011, que criou a Conitec e o rito de incorporação, e o art. 19-Q da Lei 8.080/90.\n\nPontos principais da jurisprudência:\n\n- O STJ (Tema 106) fixou requisitos cumulativos para o fornecimento de medicamento não incorporado: (1) comprovação, por laudo médico fundamentado e circunstanciado, da imprescindibilidade ou necessidade do medicamento e da ineficácia dos fármacos fornecidos pelo SUS; (2) incapacidade financeira de arcar com o custo; (3) registro na ANVISA.\n- O STF (Tema 6) estabeleceu que o Estado não é, em regra, obrigado a fornecer medicamento experimental ou sem registro na ANVISA. Para os de alto custo não incorporados, exigiu a demonstração de requisitos adicionais: negativa administrativa, ausência de alternativa terapêutica no SUS e evidências de eficácia e segurança.\n- O STF (Tema 1.234) tratou das ações de medicamentos não incorporados e fixou parâmetros de competência e de análise. Entre eles estão a observância dos critérios técnicos, a análise do ato administrativo de não incorporação pela Conitec e o uso de apoio técnico, como os NATJUS, no lugar do laudo particular isolado.\n- A decisão não pode se basear exclusivamente em laudo particular. É preciso avaliar o caso concreto, com base em evidências científicas e nos requisitos fixados pelos tribunais superiores.\n\nAnálise das alternativas:\n\na) Incorreta. Prescrição e registro na ANVISA não bastam. Também é preciso demonstrar a imprescindibilidade do medicamento, a inexistência de alternativa no SUS, a hipossuficiência e a evidência científica. A expressão \"independentemente de alternativas terapêuticas\" contraria o Tema 106 do STJ.\n\nb) Correta. Resume o entendimento atual: análise do caso concreto, com evidências de eficácia, registro na ANVISA, ausência de alternativa incorporada ao SUS e demais requisitos jurisprudenciais. Isso inclui a necessidade de uma avaliação técnica mais robusta do que o laudo particular isolado.\n\nc) Incorreta. A não incorporação pela Conitec não impede de forma absoluta o fornecimento judicial. O Judiciário pode atuar em caráter excepcional, desde que os requisitos sejam preenchidos. O controle judicial do ato administrativo é possível, e a avaliação da Conitec não substitui a jurisdição (art. 5º, XXXV, da CF).\n\nd) Incorreta. Prescrição e incapacidade financeira são necessárias, mas insuficientes. O juiz deve verificar os critérios técnicos, como eficácia, registro e alternativas, e considerar o impacto nas políticas públicas. Afirmar que o Judiciário não pode analisá-los é um erro.\n\ne) Incorreta. Não se exige manifestação favorável prévia da Conitec nem revisão do PCDT. Exigir isso seria impedir o controle judicial. O que se admite é a análise excepcional quando houver mora irrazoável na avaliação, ilegalidade do ato de não incorporação ou outros fundamentos reconhecidos pela jurisprudência.\n\nConclusão: a alternativa correta é a letra B. Na prática, em casos como a artrite reumatoide grave, o médico deve documentar a falha terapêutica com os DMARDs e biológicos disponíveis no PCDT, a gravidade e as evidências que sustentam o fármaco escolhido.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:34.824Z"
+  },
+  {
+    "id": "AJUDA_64d9af38-9fc3-4384-b1d9-52d04a95bc36",
+    "originalId": "64d9af38-9fc3-4384-b1d9-52d04a95bc36",
+    "statement": "Lactente de 40 dias de vida, do sexo feminino, é levada para consulta por sua mãe. A criança tem história de icterícia e colúria progressivas desde a segunda semana de vida. Está em aleitamento materno, com boa aceitação e ganho ponderal, porém regurgita muito. A mãe relata que as fezes da bebê estão muito claras (acolia). O exame físico revela: paciente em bom estado geral; eutrófica; fígado de consistência firme, não nodular ou doloroso, a 3 cm do rebordo costal; baço a 1 cm do rebordo costal esquerdo. \n\nTendo em vista essa situação, assinale a alternativa que contém, respectivamente, a principal hipótese diagnóstica e a conduta adequada para o caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Icterícia não obstrutiva prolongada, com bom ganho ponderal; solicitar gama-GT e aminotransferases.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Icterícia obstrutiva prolongada por doença metabólica; substituir leite materno por fórmula e solicitar função hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Icterícia não obstrutiva prolongada, relacionada ao aleitamento materno, com evolução benigna; adotar conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Icterícia obstrutiva prolongada por atresia biliar; encaminhar a criança urgentemente para avaliação diagnóstica e tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um lactente de 40 dias com um quadro clássico de colestase neonatal. Os pontos-chave para o diagnóstico são:\n1. Início da icterícia após a primeira semana de vida (característica de icterícia patológica).\n2. Presença de colúria (urina escura) e acolia fecal (fezes claras), que indicam hiperbilirrubinemia direta (obstrutiva).\n3. Exame físico com hepatomegalia de consistência firme e esplenomegalia, sugerindo doença hepatobiliar estabelecida.\n4. Bom estado geral e ganho ponderal, o que paradoxalmente é comum nas fases iniciais da atresia de vias biliares.\n\nDIAGNÓSTICO DIFERENCIAL E ANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. A presença de colúria e acolia fecal define obrigatoriamente uma icterícia do tipo obstrutiva (colestática), e não \"não obstrutiva\". Embora a dosagem de gama-GT e aminotransferases faça parte da investigação, o foco principal deve ser a exclusão de causas cirúrgicas urgentes.\n\nAlternativa B: Incorreta. Embora doenças metabólicas possam causar icterícia obstrutiva, elas geralmente se manifestam com comprometimento do estado geral e dificuldade de ganho de peso. Além disso, nunca se deve suspender o aleitamento materno para investigar colestase neonatal sem uma justificativa específica e comprovada.\n\nAlternativa C: Incorreta. A icterícia relacionada ao aleitamento materno (icterícia do leite materno) ocorre por aumento da bilirrubina indireta. Ela não causa colúria nem acolia fecal. Adotar conduta expectante diante de um lactente com fezes acólicas é um erro grave, pois retarda o diagnóstico de patologias que exigem intervenção rápida.\n\nAlternativa D: Correta. A atresia de vias biliares (AVB) é a principal causa de colestase neonatal com indicação cirúrgica. O quadro de icterícia progressiva, colúria e acolia fecal em um lactente que parece \"saudável\" é a apresentação clássica. A urgência no encaminhamento é fundamental porque o sucesso do tratamento cirúrgico (Portoenterostomia de Kasai) é inversamente proporcional à idade do paciente, apresentando melhores resultados quando realizado antes dos 60 dias de vida. Como o paciente já tem 40 dias, o tempo para diagnóstico e intervenção é extremamente curto.\n\nDestaque: Em qualquer lactente com icterícia além de 14 dias de vida, é obrigatório avaliar a cor das fezes e dosar as frações de bilirrubina. A presença de componente obstrutivo (bilirrubina direta elevada) exige investigação imediata para atresia biliar.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Cirurgia Infantil",
+      "Vesícula e Vias Biliares",
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:34.824Z"
+  },
+  {
+    "id": "AJUDA_64da563c-79d6-4ed0-99d5-7c854894bb74",
+    "originalId": "64da563c-79d6-4ed0-99d5-7c854894bb74",
+    "statement": "Homem, 58 anos, refere exteriorização volumosa e irredutível de tecido pelo ânus, com sangramentos esporádicos, prurido e sensação de “massa” que piora ao evacuar (figura). Já realizou dieta rica em fibras, hidratação, laxativos osmóticos e medidas comportamentais sem melhora. Exame proctológico mostra prolapso circunferencial persistente com volumoso componente cutâneo externo. Colonoscopia recente normal.  \n\nQual é a melhor abordagem terapêutica neste cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar desarterialização hemorroidária guiada por Doppler com mucopexia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar hemorroidopexia grampeada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar hemorroidectomia excisional com ressecção dos pedículos principais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar esclerose dos mamilos hemorroidários com laser de diodo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente com doença hemorroidária avançada de grau IV, caracterizada por prolapso permanente, irredutível e associado a um volumoso componente externo cutâneo. Na imagem clínica fornecida, observa-se nitidamente a exteriorização circunferencial de tecido mucoso e perianal congesto e edemaciado, que não se reduz espontaneamente nem manualmente. Diante da falha do tratamento clínico e da magnitude da lesão, a indicação cirúrgica é mandatória.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A desarterialização hemorroidária transanal guiada por Doppler com mucopexia (técnica THD) é um procedimento não excisional indicado principalmente para hemorroidas internas de graus II e III com queixa predominante de sangramento. Ela não é eficaz para ressecar o excesso de pele e o componente externo volumoso característicos do grau IV.\n\nAlternativa b: Incorreta. A hemorroidopexia grampeada (PPH) realiza a ressecção circunferencial de mucosa retal acima da linha pectínea para reposicionar o tecido prolapsado. Essa técnica trata exclusivamente o prolapso mucoso interno e não atua sobre os mamilos externos e plicomas cutâneos volumosos, resultando em insatisfação estética, sintomas residuais e alto índice de falha terapêutica neste perfil de paciente.\n\nAlternativa c: Correta. A hemorroidectomia excisional clássica (seja pela técnica aberta de Milligan-Morgan ou fechada de Ferguson) permanece como o padrão-ouro para o tratamento da doença hemorroidária de grau IV e para casos com grande acometimento externo. É a única abordagem capaz de ressecar de forma completa e definitiva os coxins vasculares hipertrofiados, os pedículos principais e todo o componente cutâneo redundante evidenciado na imagem.\n\nAlternativa d: Incorreta. O uso de laser de diodo (hemorroidoplastia a laser) consiste em ablação térmica direcionada aos mamilos internos em graus iniciais ou moderados (I a III selecionados). Não tem indicação nem capacidade de corrigir prolapsos circunferenciais fixos de grande volume e com extenso excedente de pele.\n\nPortanto, a conduta mais adequada é a hemorroidectomia excisional.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/154af415dcc3438f3ec3da7c57b9fb0fcc604816c67371f426043c6de11c29b9.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_64da563c-79d6-4ed0-99d5-7c854894bb74_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:35.235Z"
+  },
+  {
+    "id": "AJUDA_64df3959-1124-46f0-aa02-94c1e4b6428d",
+    "originalId": "64df3959-1124-46f0-aa02-94c1e4b6428d",
+    "statement": "A melhor propedêutica para diagnosticar a incontinência urinária feminina é o(a)",
+    "options": [
+      {
+        "id": "A",
+        "text": "uretrocistografia miccional com correntinha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ressonância magnética com contraste de indigo carmim.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "teste urodinâmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ultrassonografia do trígono vesical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "radiografia com contraste a base de iodo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: A uretrocistografia com correntinha foi um exame muito utilizado no passado para avaliar o ângulo uretrovesical e a mobilidade do colo da bexiga. Entretanto, trata-se de uma avaliação predominantemente anatômica e não funcional. Com a evolução dos métodos diagnósticos, esse exame caiu em desuso, pois não consegue reproduzir fielmente a fisiopatologia da perda urinária.\n\nAlternativa (b) Incorreta: O índigo-carmim é um corante utilizado geralmente em cirurgias para identificar fístulas ou confirmar a patência dos ureteres, não sendo o contraste utilizado em exames de ressonância magnética (que utiliza o gadolínio). Além disso, a ressonância magnética não é o método de escolha para o diagnóstico primário de incontinência urinária funcional.\n\nAlternativa (c) Correta: O teste urodinâmico é considerado o padrão-ouro para a avaliação funcional do trato urinário inferior. Ele permite ao examinador analisar a fase de enchimento (cistometria) e a fase de esvaziamento (estudo fluxo-pressão), sendo essencial para diferenciar a incontinência urinária de esforço, a bexiga hiperativa (urgência) e a incontinência mista. É fundamental para a programação cirúrgica e para casos em que o diagnóstico clínico é incerto.\n\nAlternativa (d) Incorreta: A ultrassonografia pode ser útil para medir o resíduo pós-miccional ou avaliar a anatomia das paredes vesicais, mas não fornece dados sobre a pressão intravesical ou a dinâmica da uretra durante o esforço, o que a torna insuficiente para o diagnóstico definitivo da incontinência.\n\nAlternativa (e) Incorreta: Exames radiográficos simples ou contrastados com iodo (como a urografia excretora) focam na morfologia do sistema urinário e na detecção de cálculos ou obstruções. Eles não possuem a capacidade técnica de avaliar a funcionalidade e as pressões envolvidas no mecanismo de continência urinária feminina.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:35.235Z"
+  },
+  {
+    "id": "AJUDA_64dfbf4f-5689-4e97-8603-7383df50a64f",
+    "originalId": "64dfbf4f-5689-4e97-8603-7383df50a64f",
+    "statement": "Durante a realização de uma laparoscopia, o cirurgião opta pela Técnica de Hasson para a criação do pneumoperitônio. Sobre a técnica, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O trocarte é passado obrigatoriamente com a utilização de mandril.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A insuflação rápida do pneumoperitônio não apresenta riscos hemodinâmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O pneumoperitônio é insuflado antes da inserção do trocarte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oferece maior controle pela inserção direta do trocarte, o que diminui os riscos de insuflação rápida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Técnica de Hasson, também conhecida como laparoscopia aberta, é um dos métodos para a criação do pneumoperitônio e acesso à cavidade abdominal. Diferentemente da técnica fechada (com agulha de Veress), a técnica de Hasson envolve a dissecação por planos sob visão direta.\n\nAnálise das alternativas:\n\na) Incorreta. Na técnica de Hasson, utiliza-se obrigatoriamente um trocarte rombo (ponta romba). Como a cavidade já foi aberta por dissecação e o peritônio já foi incidido sob visão direta, não há necessidade de um mandril pontiagudo ou cortante para perfurar os tecidos, o que é uma das principais medidas de segurança do método.\n\nb) Incorreta. A insuflação rápida do pneumoperitônio sempre apresenta riscos hemodinâmicos, independentemente da técnica de acesso. O aumento súbito da pressão intra-abdominal pode causar estimulação vagal (levando a bradicardia ou arritmias), além de diminuir o retorno venoso e o débito cardíaco.\n\nc) Incorreta. Esta descrição refere-se à técnica fechada ou clássica, na qual se utiliza a agulha de Veress para insuflar o abdome antes da introdução do primeiro trocarte. Na técnica de Hasson, o trocarte é posicionado na cavidade aberta e fixado à aponeurose antes de se iniciar a insuflação de CO2.\n\nd) Correta. A principal vantagem da técnica de Hasson é o controle visual direto. Ao dissecar os tecidos (pele, tecido subcutâneo, aponeurose e peritônio) antes de introduzir o trocarte, o cirurgião elimina a entrada \"às cegas\". Isso reduz drasticamente o risco de lesões inadvertidas em grandes vasos e vísceras, além de permitir um controle mais preciso do posicionamento do dispositivo antes de iniciar a insuflação. Embora a alternativa mencione a \"insuflação rápida\", o foco principal é que o controle direto no acesso minimiza as complicações mecânicas e permite monitorar melhor a resposta do paciente ao início do pneumoperitônio.\n\nResumo: A técnica de Hasson é o padrão-ouro para segurança em pacientes com cirurgias abdominais prévias (devido ao risco de adesões) e para evitar lesões vasculares graves no acesso inicial, pois substitui a perfuração cega pela dissecação anatômica.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:35.235Z"
+  },
+  {
+    "id": "AJUDA_64e24b77-2bd1-41ae-966b-cba995b4f63c",
+    "originalId": "64e24b77-2bd1-41ae-966b-cba995b4f63c",
+    "statement": "Tercigesta, 24 anos, realiza suas consultas de pré-natal em ambulatório de alto risco, devido doença hemolítica perinatal na segunda gestação. Apresenta tipagem sanguínea Rh negativo e o esposo Rh positivo. Para a avaliação do grau de anemia fetal, qual exame deve ser solicitado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cordocentese na 28ª semana de gestação e repetir na 36ª semana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teste de Coombs indireto e dosagem espectrofotométrica da bilirubina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doppler da artéria cerebral média na 18ª semana e repetir semanalmente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Teste de Coombs indireto e cardiotocografia mensal até o momento do parto",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo da gestante já sensibilizada pelo fator Rh (isoimunização). A paciente é tercigesta com histórico de doença hemolítica perinatal em gestação anterior, o que a coloca em um grupo de alto risco para o desenvolvimento de anemia fetal precoce e grave nesta gestação.\n\nAlternativa a) Incorreta. A cordocentese é considerada o padrão-ouro para o diagnóstico definitivo e para o tratamento (transfusão intrauterina) da anemia fetal, pois permite a dosagem direta da hemoglobina. Entretanto, por ser um método invasivo, apresenta riscos como perda fetal, ruptura de membranas e agravamento da sensibilização materna. Por isso, não é utilizada como exame de rastreamento ou avaliação inicial seriada, sendo indicada apenas quando testes não invasivos sugerem anemia moderada ou grave.\n\nAlternativa b) Incorreta. O teste de Coombs indireto é fundamental para o diagnóstico inicial da sensibilização em gestantes Rh-negativas. Contudo, em pacientes que já tiveram filhos com doença hemolítica perinatal, os títulos do Coombs indireto não guardam correlação confiável com a gravidade da anemia no feto atual. A dosagem espectrofotométrica da bilirubina no líquido amniótico (análise pelo Gráfico de Liley) foi o método padrão por décadas, mas, por ser invasiva (amniocentese) e menos precisa que as técnicas atuais, tornou-se obsoleta na prática clínica moderna.\n\nAlternativa c) Correta. O Doppler da artéria cerebral média (ACM) para medir o pico de velocidade sistólica (PVS) é, atualmente, o método de escolha para a avaliação não invasiva da anemia fetal. O princípio baseia-se no fato de que o feto anêmico aumenta o seu débito cardíaco e apresenta um sangue menos viscoso, o que resulta em um aumento da velocidade do fluxo sanguíneo nas artérias cerebrais. Valores de PVS acima de 1,5 múltiplo da mediana (MoM) para a idade gestacional indicam alta probabilidade de anemia fetal grave. Em pacientes com antecedentes graves, o seguimento deve iniciar precocemente (por volta de 18 semanas) e ser repetido periodicamente (geralmente semanal ou quinzenalmente).\n\nAlternativa d) Incorreta. Como já discutido, o Coombs indireto tem valor limitado no seguimento de casos já sensibilizados com histórico de doença hemolítica. A cardiotocografia é um exame que avalia a vitalidade fetal de forma aguda e é utilizada no acompanhamento de diversas patologias obstétricas, mas não tem sensibilidade ou especificidade para graduar ou detectar precocemente a anemia fetal decorrente da isoimunização.\n\nEm resumo, para uma gestante Rh-negativa já sensibilizada e com histórico obstétrico de doença hemolítica, a propedêutica de escolha para monitorar a anemia fetal é a avaliação seriada do pico de velocidade sistólica da artéria cerebral média via Doppler.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:35.235Z"
+  },
+  {
+    "id": "AJUDA_64e4afbe-31f3-4860-9cb9-fce72746d23c",
+    "originalId": "64e4afbe-31f3-4860-9cb9-fce72746d23c",
+    "statement": "Em relação à leptospirose, analise as assertivas a seguir:\n\nI. A penetração do Leptospira ocorre apenas a partir de lesões de pele imersa por longos períodos em água contaminada.\nII. O período de incubação pode variar de 1 a 30 dias e normalmente ocorre entre 7 e 14 dias após a exposição a situações de risco.\nIII. A antibioticoterapia está indicada em qualquer período da doença, mas sua eficácia costuma ser maior na 1ª semana do início dos sintomas.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS ASSERTIVAS:\n\nASSERTIVA I - INCORRETA: O erro desta assertiva está na palavra \"apenas\". A bactéria do gênero Leptospira possui grande capacidade de invasão. Ela pode penetrar no organismo humano não apenas por meio de lesões ou escoriações na pele, mas também através das mucosas (como a conjuntiva ocular, mucosa nasal e oral) e até mesmo através da pele íntegra, desde que esta esteja macerada (amolecida) devido ao contato prolongado com água ou lama contaminada.\n\nASSERTIVA II - CORRETA: O período de incubação da leptospirose é classicamente definido entre 1 e 30 dias após a exposição ao agente. Na prática clínica e epidemiológica, a grande maioria dos casos manifesta sintomas em um intervalo de 7 a 14 dias, o que torna a assertiva correta conforme os protocolos do Ministério da Saúde.\n\nASSERTIVA III - CORRETA: A indicação de antibióticos é válida para qualquer fase da doença. Na fase precoce (primeiros 7 dias), utilizam-se geralmente doxiciclina ou amoxicilina para evitar a progressão para a fase tardia. Na fase tardia (fase imune/hospitalar), o tratamento com penicilina G cristalina, ampicilina ou ceftriaxona é indicado para reduzir a gravidade e a duração das complicações (como a síndrome de Weil). De fato, a eficácia na interrupção do processo fisiopatológico é significativamente maior quando o tratamento é iniciado precocemente, na primeira semana.\n\nCONCLUSÃO: Como apenas as afirmações II e III estão corretas, o gabarito é a letra (c).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Leptospirose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:35.235Z"
+  },
+  {
+    "id": "AJUDA_64e58455-49f8-4edf-914f-be244dc1ebc7",
+    "originalId": "64e58455-49f8-4edf-914f-be244dc1ebc7",
+    "statement": "Menino, 18 dias, é trazido à Unidade Básica de Saúde (UBS) para primeira avaliação após o nascimento. Nasceu de parto normal, a termo, sem intercorrências, peso = 3,050g, comprimento = 49cm. Em uso de leite materno exclusivo. O desenvolvimento e o crescimento estão normais, porém o pediatra percebeu que a criança estava ictérica. Foi solicitado dosagem de bilirrubina total e frações. Pode-se afirmar que a conduta adotada foi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "correta, devido à possibilidade de que esse aumento leve à lesão hepática",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "precipitada, uma vez que a icterícia nesta idade ainda é considerada fisiológica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "adequada, estando dentro do período de corte para avaliar colestase",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "incorreta, pois nesta idade não existe o risco da ocorrência de kernicterus",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso apresenta um recém-nascido a termo, com 18 dias de vida, com icterícia persistente. Em pediatria, define-se como icterícia prolongada aquela que persiste por mais de 14 dias no recém-nascido a termo (ou mais de 21 dias no pré-termo). Diante desse quadro, a conduta clínica mandatória é a dosagem de bilirrubinas totais e frações.\n\nAlternativa a) Incorreta. Embora a colestase (aumento da bilirrubina direta) possa evoluir para lesão hepática, cirrose e necessidade de transplante, a justificativa médica para a conduta é a triagem diagnóstica obrigatória para diferenciar causas benignas de causas graves que exigem intervenção precoce.\n\nAlternativa b) Incorreta. A icterícia fisiológica do recém-nascido a termo surge após as primeiras 24 horas de vida, atinge o pico entre o 3º e o 5º dia e desaparece, no máximo, até o 10º ou o 12º dia. Aos 18 dias de vida, a icterícia nunca deve ser considerada fisiológica sem investigação prévia; ela é classificada como icterícia prolongada ou tardia.\n\nAlternativa c) Correta. A conduta é adequada e segue rigorosamente os protocolos da Sociedade Brasileira de Pediatria e de hepatologia pediátrica. Todo bebê que permanece ictérico após 2 semanas de vida deve ter suas bilirrubinas dosadas para descartar colestase neonatal. O objetivo principal é o diagnóstico precoce da atresia de vias biliares, uma urgência cirúrgica cujo sucesso do tratamento (cirurgia de Kasai) é significativamente maior quando realizado antes dos 60 dias de vida.\n\nAlternativa d) Incorreta. A afirmação está duplamente errada. Primeiro, a conduta de solicitar o exame é correta. Segundo, embora o risco de kernicterus (encefalopatia pela bilirrubina indireta) seja muito mais crítico na primeira semana de vida devido à permeabilidade da barreira hematoencefálica e aos níveis mais altos de bilirrubina, o foco da investigação aos 18 dias é a identificação de hiperbilirrubinemia direta (colestase), que possui riscos e complicações diferentes do kernicterus.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:35.235Z"
+  }
+]

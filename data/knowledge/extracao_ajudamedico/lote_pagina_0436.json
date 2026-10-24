@@ -1,0 +1,516 @@
+[
+  {
+    "id": "AJUDA_7a1ee126-3910-41c1-8950-1c24540826f4",
+    "originalId": "7a1ee126-3910-41c1-8950-1c24540826f4",
+    "statement": "Homem de 40 anos, com dor epigástrica em queimação, realiza endoscopia digestiva, que mostra uma úlcera péptica duodenal e teste da urease positivo. A principal indicação do uso de antibióticos para erradicar o H. pylori nesse paciente é por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "evitar o risco de neoplasia futura",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reduzir muito a sintomatologia péptica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "reduzir drasticamente a recorrência da lesão",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "acelerar significativamente a cicatrização da lesão",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Essa questão aborda o manejo da doença ulcerosa péptica associada à infecção pelo Helicobacter pylori, um dos temas mais recorrentes em provas de gastroenterologia. O ponto central aqui é entender qual é o maior benefício clínico a longo prazo da erradicação da bactéria em um paciente com úlcera duodenal.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Embora o Helicobacter pylori seja classificado como um carcinógeno do tipo I e sua erradicação ajude na prevenção do câncer gástrico (especialmente o adenocarcinoma e o linfoma MALT), essa não é a principal indicação clínica no contexto específico de uma úlcera duodenal ativa. Curiosamente, pacientes com úlcera duodenal tendem a ter uma gastrite de predomínio antral com hipersecreção ácida, o que, estatisticamente, confere um risco menor de desenvolvimento de câncer gástrico em comparação com pacientes que apresentam gastrite atrófica de corpo.\n\nAlternativa (b) Incorreta. A redução da sintomatologia aguda (dor epigástrica) é obtida principalmente com o uso de inibidores da bomba de prótons (IBPs), que diminuem a acidez gástrica e permitem o alívio imediato. Os antibióticos atuam na causa bacteriana, mas não são os responsáveis diretos pelo alívio rápido da dor.\n\nAlternativa (c) Correta. Antes da descoberta do H. pylori, a úlcera péptica era considerada uma doença crônica com altas taxas de recidiva (de 70% a 80% em um ano). A erradicação da bactéria altera a história natural da doença, reduzindo as taxas de recorrência para menos de 10%. Portanto, o principal objetivo do uso de antibióticos neste cenário é garantir a cura definitiva e evitar que a lesão retorne.\n\nAlternativa (d) Incorreta. O processo de cicatrização da úlcera é mediado fundamentalmente pelo controle do pH gástrico. Os IBPs são os agentes mais eficazes para acelerar a cicatrização. A erradicação do H. pylori é fundamental para que a úlcera permaneça cicatrizada após a suspensão do tratamento antissecretor, mas não é o fator que acelera significativamente a velocidade de fechamento da ferida na fase aguda.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:15.913Z"
+  },
+  {
+    "id": "AJUDA_7a20c90f-8635-4093-8f77-9a1256eafe42",
+    "originalId": "7a20c90f-8635-4093-8f77-9a1256eafe42",
+    "statement": "Helena, mulher cis, 56 anos, é levada ao pronto atendimento devido a episódio de fraqueza súbita em membro inferior direito, que dificultou a marcha, há cerca de 6 horas, evoluindo com crises convulsivas. O acompanhante informa que a paciente é acompanhada em UBS por hipertensão arterial, dislipidemia e diabetes mellitus, com antecedente de AVE isquêmico há 8 anos, do qual se recuperou sem déficits. Ao exame neurológico, apresenta Glasgow 14, déficit neurológico focal restrito a membro inferior direito, preservando força nos demais membros, sem alteração de fala, com reflexos pupilares normais, sem desvio de rima labial e ausência de sinais de irritação meníngea. Sinais vitais estáveis, exceto temperatura axilar de 37,7°C. Teste rápido para HIV na admissão foi reagente. Realizada RM de crânio abaixo.\n\nO diagnóstico mais provável para este caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "AVE isquêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "neurotoxoplasmose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "tuberculoma cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "linfoma primário do SNC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "abscesso bacteriano cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta uma paciente HIV-positiva com quadro de déficit neurológico focal agudo e crise convulsiva. A análise deve integrar os achados clínicos e a imagem de ressonância magnética (RM) para definir a hipótese mais provável.\n\nAnálise da Imagem de RM:\nA imagem mostra uma volumosa lesão expansiva no hemisfério cerebral esquerdo, localizada na região frontal interna/paracentral. Observa-se um realce anelar pelo contraste (característico de lesões com necrose central) e um extenso edema vasogênico perilesional (área hipointensa ao redor). Um detalhe semiótico fundamental na imagem é o sinal do alvo excêntrico (um pequeno nódulo de realce junto à parede interna da lesão), que é altamente sugestivo de neurotoxoplasmose.\n\nAnálise das Alternativas:\n\na) Incorreta. Embora a paciente tenha fatores de risco cardiovascular (HAS, DM, dislipidemia) e história de AVE prévio, a imagem de RM é incompatível com um insulto isquêmico agudo. No AVE isquêmico agudo, não há formação de realce anelar nem efeito de massa tão proeminente com edema vasogênico imediato; a imagem típica seria de uma área de restrição à difusão em território vascular.\n\nb) Correta. A neurotoxoplasmose é a infecção oportunista do sistema nervoso central mais comum em pacientes com AIDS. Clinicamente, manifesta-se com febre, cefaleia, crises convulsivas e déficits focais (o déficit restrito ao membro inferior direito justifica-se pela localização da lesão na face medial do hemisfério esquerdo, área correspondente à perna no homúnculo de Penfield). O padrão de realce anelar com o \"sinal do alvo excêntrico\" na RM é o achado clássico que sela o diagnóstico.\n\nc) Incorreta. O tuberculoma cerebral pode se apresentar como lesão expansiva em pacientes imunossuprimidos, mas geralmente possui um curso clínico mais arrastado e o realce tende a ser mais heterogêneo ou em \"alvo central\", sem a especificidade do alvo excêntrico da toxoplasmose. Além disso, a prevalência da neurotoxoplasmose nesse cenário epidemiológico é significativamente maior.\n\nd) Incorreta. O linfoma primário do SNC é o principal diferencial da neurotoxoplasmose em pacientes HIV-positivos. No entanto, o linfoma costuma apresentar realce sólido e homogêneo, frequentemente acometendo o corpo caloso ou regiões periventriculares. Embora possa apresentar realce anelar, a presença do sinal do alvo excêntrico e a localização da lesão favorecem fortemente a toxoplasmose.\n\ne) Incorreta. Um abscesso bacteriano piogênico apresenta realce anelar e edema, de forma muito semelhante à imagem mostrada. Contudo, em uma paciente com diagnóstico de HIV recém-revelado e quadro neurológico focal, a etiologia por *Toxoplasma gondii* é estatisticamente muito mais provável do que uma infecção bacteriana inespecífica, a menos que houvesse um foco infeccioso evidente (como endocardite ou sinusite).",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/d31b9fddd8e99cf0bbd0873975ba6d9a3f1f835caf3c8a58be3042cc1a9598fb.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_7a20c90f-8635-4093-8f77-9a1256eafe42_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:16.336Z"
+  },
+  {
+    "id": "AJUDA_7a2c38bd-7af2-4d39-b070-292245c288f1",
+    "originalId": "7a2c38bd-7af2-4d39-b070-292245c288f1",
+    "statement": "Assinale a alternativa que descreve corretamente a fisiopatologia da anemia ferropriva.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deficiência de ferro leva à anemia macrocítica megaloblástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Saturação de transferrina está elevada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ferritina sérica está reduzida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ferro sérico elevado e capacidade de ligação diminuída.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A medula óssea apresenta hiperplasia eritroide com estoques de ferro aumentados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A anemia ferropriva é a anemia mais comum no mundo e decorre da falta de ferro para a síntese da hemoglobina. O processo ocorre de forma gradual: primeiro há o esgotamento dos estoques de reserva, seguido pela queda do ferro circulante e, finalmente, pela redução da produção de hemácias, que se tornam menores (microcíticas) e mais pálidas (hipocrômicas).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A deficiência de ferro causa anemia microcítica (VCM baixo) e hipocrômica (HCM baixo). A anemia macrocítica megaloblástica está associada à deficiência de vitamina B12 ou de ácido fólico, que afetam a síntese de DNA.\n\nAlternativa b) Incorreta. Na anemia ferropriva, a saturação de transferrina está diminuída (geralmente abaixo de 16%). Como há pouco ferro disponível para ser transportado, a porcentagem de \"vagas\" ocupadas na proteína transportadora (transferrina) é baixa.\n\nAlternativa c) Correta. A ferritina é a principal proteína de reserva de ferro no organismo. Sua redução é o marcador mais precoce e específico da deficiência de ferro, refletindo fielmente que os estoques corporais estão exauridos.\n\nAlternativa d) Incorreta. Os achados típicos são exatamente o oposto: o ferro sérico está reduzido e a capacidade total de ligação do ferro (TIBC) está elevada. O organismo aumenta a produção de transferrina na tentativa de captar o máximo de ferro possível, aumentando a capacidade de ligação.\n\nAlternativa e) Incorreta. Na anemia ferropriva, os estoques de ferro na medula óssea (avaliados pela coloração de Perls) estão ausentes ou muito reduzidos. Embora possa haver uma tentativa inicial de compensação, a falta de substrato (ferro) impede uma hiperplasia eritroide eficaz. Além disso, a característica definidora é a falta de ferro estocado, não o seu aumento.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:16.336Z"
+  },
+  {
+    "id": "AJUDA_7a3610c8-5184-4694-9e40-162dd0adee89",
+    "originalId": "7a3610c8-5184-4694-9e40-162dd0adee89",
+    "statement": "As Infecções do Trato Urinário (ITU) complicadas e a pielonefrite aguda podem levar à urosepse e requerem manejo agressivo, muitas vezes cirúrgico ou intervencionista. Um paciente diabético apresenta febre persistente, dor lombar e piora clínica apesar de 72 horas de antibioticoterapia adequada para pielonefrite. A tomografia computadorizada mostra um abscesso perirrenal de 5 cm. Assinale a alternativa que indica a conduta apropriada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nefrectomia total de urgência, pois a presença de abscesso perirrenal indica destruição irreversível do parênquima renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manutenção do mesmo esquema antibiótico por mais 14 dias, pois abscessos perirrenais de 5 cm costumam reabsorver apenas com tratamento clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Troca empírica do antibiótico para antifúngico sistêmico, assumindo superinfecção por Candida, sem necessidade de drenagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Drenagem percutânea guiada por imagem ou drenagem cirúrgica do abscesso, mantendo a antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão aborda as complicações de uma Pielonefrite Aguda, especificamente a formação de um abscesso perirrenal. O reconhecimento precoce e a intervenção adequada são fundamentais para evitar a progressão para urossepse e perda da função renal.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A nefrectomia total (retirada do rim) é uma medida extrema e de última instância. Ela é reservada para casos de destruição total do parênquima renal, rins que não funcionam mais ou em situações específicas de pielonefrite enfisematosa grave que não respondem a outras medidas. No caso de um abscesso de 5 cm, deve-se tentar primeiro a preservação do órgão através da drenagem.\n\nAlternativa b) Incorreta. Embora abscessos muito pequenos (geralmente menores que 3 cm) possam eventualmente responder apenas à antibioticoterapia, o paciente em questão apresenta um abscesso de 5 cm e, mais importante, apresenta falha terapêutica após 72 horas de antibióticos adequados. Manter a mesma conduta diante de uma piora clínica e uma coleção significativa é um erro técnico.\n\nAlternativa c) Incorreta. Não há elementos no quadro que justifiquem a troca empírica para antifúngicos como conduta principal. Embora pacientes diabéticos tenham maior risco de infecções fúngicas, a prioridade absoluta diante de uma coleção purulenta de 5 cm é a drenagem (controle de foco), independentemente do agente etiológico.\n\nAlternativa d) Correta. Esta é a conduta padrão-ouro. Quando um paciente com pielonefrite não melhora após 48 a 72 horas de antibioticoterapia correta, deve-se investigar complicações por meio de imagem (como a tomografia realizada). Identificado um abscesso maior que 3-5 cm ou que cause persistência dos sintomas, a drenagem é mandatória. A via percutânea guiada por imagem (ultrassonografia ou tomografia) é a preferencial por ser menos invasiva que a drenagem cirúrgica aberta. A antibioticoterapia deve ser mantida e ajustada conforme os resultados das culturas do material drenado.\n\nRESUMO DIDÁTICO:\n- Pielonefrite que não melhora em 72h: Solicitar Tomografia Computadorizada.\n- Abscesso renal/perirrenal < 3 cm: Pode-se tentar tratamento apenas com antibióticos.\n- Abscesso renal/perirrenal > 3 a 5 cm ou paciente grave: Antibiótico + Drenagem (preferencialmente percutânea).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Urologia",
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:16.336Z"
+  },
+  {
+    "id": "AJUDA_7a47a333-aede-42a7-8d48-130790ec8900",
+    "originalId": "7a47a333-aede-42a7-8d48-130790ec8900",
+    "statement": "Caso Clínico: Homem de 22 anos, sofre ferimento por arma branca (faca) em região periumbilical, com as alças do intestino delgado exteriorizadas. Chegou ao Pronto Atendimento estável e hemodinamicamente normotenso. Qual a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia emergencial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "TC e observação em enfermaria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antibioticoterapia e jejum por 24 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sutura da pele sob anestesia local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alta ambulatorial com curativo compressivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um ferimento por arma branca em região periumbilical com evisceração (exposição de alças do intestino delgado). De acordo com os protocolos do ATLS (Advanced Trauma Life Support) e as diretrizes da SBAIT (Sociedade Brasileira de Atendimento Integrado ao Traumatizado), a conduta no trauma abdominal penetrante é bem estabelecida.\n\nExistem indicações absolutas de laparotomia imediata em ferimentos por arma branca no abdômen, que são:\n1. Instabilidade hemodinâmica (hipotensão ou choque).\n2. Sinais de peritonite (dor à descompressão brusca, defesa abdominal).\n3. Evisceração.\n4. Sangramento digestivo alto ou baixo (indicando lesão de víscera oca).\n\nMesmo que o paciente esteja hemodinamicamente estável e normotenso, a simples presença da evisceração torna a cirurgia obrigatória.\n\nAlternativa (a) Correta: A laparotomia emergencial (ou exploradora) é a conduta de escolha. A evisceração confirma a violação da aponeurose e do peritônio, associando-se a um índice de quase 80% de lesões intra-abdominais que necessitam de reparo cirúrgico. Além disso, a própria alça exteriorizada precisa ser avaliada quanto à viabilidade e a cavidade deve ser exaustivamente lavada.\n\nAlternativa (b) Incorreta: A Tomografia Computadorizada (TC) é útil em pacientes estáveis onde há dúvida sobre a penetração do ferimento ou em casos selecionados de trauma em flanco ou dorso. Na presença de evisceração, a indicação cirúrgica já está selada, e atrasar o procedimento para realizar exames de imagem apenas aumenta o risco de contaminação e complicações.\n\nAlternativa (c) Incorreta: O jejum e a antibioticoterapia são medidas auxiliares e fazem parte do preparo pré-operatório, mas não constituem a conduta definitiva. O tratamento precisa ser mecânico (cirúrgico) para corrigir a lesão da parede e tratar possíveis lesões internas.\n\nAlternativa (d) Incorreta: A sutura apenas da pele (fechamento por planos superficiais) é um erro grave em trauma penetrante. Isso \"esconderia\" uma possível lesão de víscera oca, levando o paciente a desenvolver peritonite purulenta ou fecal, sepse e óbito em poucos dias.\n\nAlternativa (e) Incorreta: A alta ambulatorial é absolutamente contraindicada. O paciente sofreu um trauma grave com exposição de órgãos internos, exigindo internação imediata e intervenção cirúrgica de urgência.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:16.336Z"
+  },
+  {
+    "id": "AJUDA_7a4964e1-5e9c-4302-9a92-647c7d8971fa",
+    "originalId": "7a4964e1-5e9c-4302-9a92-647c7d8971fa",
+    "statement": "Paciente de 58 anos, apresentou sangramento pós menopausa e procurou seu ginecologista. Ao exame clínico foi observado pequeno sangramento escuro exteriorizando-se pelo orifício externo do colo, sem outras alterações. Qual a principal hipótese diagnóstica e qual exame complementar deve ser solicitado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperplasia endometrial, ultrassonografia pélvica transvaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Câncer de endométrio, histeroscopia diagnóstica com biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Endometrite crônica, cultura de secreção vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Câncer de colo uterino, colposcopia com biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Atrofia endometrial, ultrassonografia pélvica transvaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O sangramento na pós-menopausa é um sinal de alerta que sempre exige investigação para excluir malignidade, porém, estatisticamente, a causa mais frequente é benigna.\n\nAnálise das alternativas:\n\na) Incorreta. A hiperplasia endometrial é uma lesão precursora do câncer de endométrio e pode causar sangramento, mas não é a causa principal (mais comum) em termos epidemiológicos. O ultrassom é, de fato, um exame inicial adequado, mas a hipótese diagnóstica principal está incorreta.\n\nb) Incorreta. O câncer de endométrio é a patologia que mais tememos e que obrigatoriamente deve ser descartada, mas ele responde por apenas cerca de 10% dos casos de sangramento na pós-menopausa. Além disso, a histeroscopia com biópsia costuma ser indicada após um achado ultrassonográfico de endométrio espessado (geralmente acima de 4 ou 5 mm), não sendo o primeiro passo para todas as pacientes.\n\nc) Incorreta. A endometrite crônica é uma causa rara de sangramento nesta faixa etária e a cultura de secreção vaginal não é o método propedêutico para avaliação da cavidade uterina ou do endométrio.\n\nd) Incorreta. O câncer de colo uterino geralmente se manifesta com sangramento ao contato (sinusorragia) ou apresenta lesões visíveis ao exame especular. No caso clínico, o exame físico não revelou alterações no colo, e o sangue provém do orifício externo (origem intrauterina). A colposcopia avalia o colo e a vagina, não sendo o exame de escolha para sangramento de origem endometrial.\n\ne) Correta. A atrofia endometrial é a causa mais comum de sangramento na pós-menopausa, ocorrendo devido à fragilidade dos vasos sanguíneos em um endométrio muito fino pela carência estrogênica. Representa cerca de 60% a 80% dos casos. O exame complementar inicial padrão-ouro é a ultrassonografia transvaginal, que possui alto valor preditivo negativo: se o eco endometrial estiver fino (menor que 4 ou 5 mm, a depender da diretriz), a probabilidade de câncer é mínima, sugerindo atrofia e dispensando, inicialmente, procedimentos invasivos.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:16.336Z"
+  },
+  {
+    "id": "AJUDA_7a51f73f-230c-43a5-aa7c-0fb37f0910f5",
+    "originalId": "7a51f73f-230c-43a5-aa7c-0fb37f0910f5",
+    "statement": "Quanto ao tratamento dos miomas uterinos, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "À medida que as mulheres se aproximam da menopausa, a conduta expectante pode ser considerada naquelas pouco sintomáticas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mulheres com miomas e sangramento respondem bem com anti-inflamatórios não esteróides (AINE).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Como os agonistas do Gn-RH reduzem o volume dos miomas e o sangramento, eles podem ser prescritos por tempo indeterminado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A Após seis meses de uso dos agonistas do Gn-RH a perda de massa óssea é irreversível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Esta é a alternativa correta. Os miomas uterinos são neoplasias benignas dependentes de hormônios esteroides, principalmente o estrogênio. Com a chegada da menopausa, os níveis de estrogênio caem significativamente, o que costuma resultar na atrofia natural dos miomas e na cessação do sangramento uterino anormal. Por isso, para pacientes que estão próximas ao período da menopausa e apresentam sintomas leves ou pouco frequentes, a observação clínica (conduta expectante) é uma estratégia terapêutica segura e amplamente recomendada.\n\nAlternativa b: Esta alternativa está incorreta. Embora os anti-inflamatórios não esteroides (AINEs) possam ser utilizados para reduzir as cólicas (dismenorreia) e promover uma redução modesta no fluxo menstrual (cerca de 20% a 30%), eles não são considerados um tratamento de alta eficácia ou de escolha principal para miomas volumosos ou sangramentos persistentes. O controle adequado nesses casos geralmente exige intervenções hormonais ou cirúrgicas.\n\nAlternativa c: Esta alternativa está incorreta. Os agonistas do Gn-RH induzem um estado de hipoestrogenismo profundo, simulando uma menopausa medicamentosa. Devido aos graves efeitos colaterais a longo prazo, especialmente a perda significativa de densidade mineral óssea e sintomas vasomotores intensos, seu uso é limitado a períodos curtos, geralmente entre 3 a 6 meses. Eles são comumente empregados no preparo pré-operatório para reduzir o volume dos miomas e tratar a anemia.\n\nAlternativa d: Esta alternativa está incorreta. A perda de massa óssea decorrente do uso de agonistas do Gn-RH por um período de seis meses é, na maioria dos casos, reversível após a suspensão da medicação e a retomada da produção estrogênica ovariana. Além disso, a terapia de \"add-back\" (reposição de baixas doses hormonais durante o tratamento) pode ser utilizada para proteger o osso e minimizar sintomas, mas a afirmação de que a perda é irreversível após seis meses é clinicamente falsa.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:16.336Z"
+  },
+  {
+    "id": "AJUDA_7a5965ad-bfe7-4acf-9abe-83311bf36244",
+    "originalId": "7a5965ad-bfe7-4acf-9abe-83311bf36244",
+    "statement": "RN apresenta, ao exame físico, testículos tópicos e alteração, evidenciada na imagem a seguir:\n\nA origem dessa alteração se deve a",
+    "options": [
+      {
+        "id": "A",
+        "text": "persistência do conduto ônfalo-mesentérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fraqueza da parede abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "persistência do conduto peritônio-vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "hiperexcitabilidade do músculo cremaster.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A imagem apresenta um aumento de volume na região escrotal esquerda, compatível com uma hidrocele ou uma hérnia inguinal indireta. Em recém-nascidos e crianças, ambas as condições compartilham a mesma origem embriológica.\n\nAnálise das alternativas:\n\na) Incorreta. O conduto ônfalo-mesentérico liga o saco vitelino ao intestino médio durante a vida fetal. Sua persistência pode levar ao divertículo de Meckel, fístulas umbilicais ou cistos vitelinos, não tendo relação com a região escrotal.\n\nb) Incorreta. A fraqueza da parede abdominal (especificamente da fáscia transversalis no triângulo de Hesselbach) é a causa das hérnias inguinais diretas, que são comuns em adultos e idosos. Na pediatria, as hérnias são quase exclusivamente do tipo indireto.\n\nc) Correta. Durante o desenvolvimento fetal, o testículo migra do abdome para o escroto acompanhado por uma extensão do peritônio chamada processo vaginal (ou conduto peritoneovaginal). Normalmente, esse conduto se oblitera após a descida testicular. Quando ele permanece pérvio (aberto), permite a passagem de líquido peritoneal para o escroto (hidrocele comunicante) ou a protrusão de conteúdo abdominal, como alças intestinais (hérnia inguinal indireta). Como o enunciado afirma que os testículos são tópicos, a imagem reforça a presença de líquido ou conteúdo herniário ocupando o conduto que não fechou.\n\nd) Incorreta. A hiperexcitabilidade do músculo cremáster está relacionada ao reflexo cremastérico exacerbado, que causa o testículo retrátil. Nesse caso, o testículo é puxado para fora do escroto em direção ao canal inguinal, o que contradiz o enunciado que informa testículos tópicos (dentro do escroto).\n\nGabarito: Letra (c).",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/761e64dd5a0e8f6595202633c0405739c2db57ceb24c824d95dfd8dc5db87a56.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_7a5965ad-bfe7-4acf-9abe-83311bf36244_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:16.833Z"
+  },
+  {
+    "id": "AJUDA_7a6aad0b-a931-458b-a1f0-d192630d99c4",
+    "originalId": "7a6aad0b-a931-458b-a1f0-d192630d99c4",
+    "statement": "A epidemiologia analítica utiliza medidas de frequência e de associação para inferir relações causais e estimar o impacto de exposições sobre a ocorrência de doenças. Analise as afirmativas a seguir acerca desses conceitos:\n\nI. A Densidade de Incidência é uma medida de frequência mais adequada do que a Incidência Acumulada em coortes dinâmicas, pois utiliza, no denominador, a soma dos tempos individuais de observação (pessoa-tempo), permitindo lidar com perdas de seguimento e com diferentes tempos de entrada no estudo.\nII. Em situação epidemiológica estacionária, a Prevalência de uma doença é diretamente proporcional à sua Incidência e à duração média da doença; assim, a introdução de uma terapia que reduza a mortalidade sem promover a cura tende a aumentar a prevalência.\nIII. O Risco Atribuível Populacional (RAP) estima a proporção da incidência da doença, na população total, que pode ser atribuída à exposição a determinado fator de risco, sendo útil no planejamento em saúde pública ao indicar o impacto potencial da eliminação dessa exposição.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I: Esta afirmação está correta. Em epidemiologia, a Incidência Acumulada é uma proporção que assume que todos os indivíduos foram acompanhados durante todo o período do estudo. No entanto, em coortes dinâmicas, as pessoas entram e saem do estudo em momentos diferentes ou podem ser perdidas durante o seguimento. A Densidade de Incidência corrige essa limitação ao utilizar o denominador pessoa-tempo (soma dos períodos de tempo que cada indivíduo permaneceu sob risco e em observação), permitindo uma estimativa muito mais precisa da velocidade de ocorrência de novos casos.\n\nAfirmativa II: Esta afirmação está correta. Existe uma relação matemática fundamental que estabelece que a Prevalência (P) é o produto da Incidência (I) pela Duração média da doença (D), expressa como P = I x D. Em uma situação epidemiológica estável, qualquer fator que aumente a duração da doença sem alterar o número de novos casos (incidência) fará com que a prevalência suba. Terapias que evitam a morte (diminuem a mortalidade), mas não curam o paciente, fazem com que o indivíduo viva mais tempo com a enfermidade, aumentando o estoque de doentes na população.\n\nAfirmativa III: Esta afirmação está correta. O Risco Atribuível Populacional (RAP) quantifica o excesso de incidência de uma doença na população total que é decorrente da exposição a um fator de risco. Diferentemente do Risco Relativo, que foca na força da associação individual, o RAP é uma medida de impacto voltada para a saúde pública. Ele permite projetar qual seria a redução na incidência da doença na comunidade caso o fator de risco fosse completamente eliminado, sendo essencial para o planejamento de intervenções e alocação de recursos.\n\nJustificativa das alternativas:\n\na) Incorreta. A afirmativa III também é verdadeira e deve ser incluída.\nb) Incorreta. A afirmativa I também é verdadeira e deve ser incluída.\nc) Incorreta. As afirmativas II e III também são verdadeiras e devem ser incluídas.\nd) Correta. Todas as três afirmativas apresentam conceitos técnicos precisos sobre medidas de frequência e de impacto em epidemiologia analítica.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:16.833Z"
+  },
+  {
+    "id": "AJUDA_7a72d9cd-57d1-4f13-a807-3eed1a1b0414",
+    "originalId": "7a72d9cd-57d1-4f13-a807-3eed1a1b0414",
+    "statement": "Uma gestante de 20 semanas, moradora de área endêmica, chegou à admissão da maternidade com sinais e sintomas sugestivos de dengue.\nApós o exame clínico-obstétrico e laboratorial, a equipe de plantão resolveu internar e tratar a paciente, pois identificou corretamente o seguinte sinal de alarme:",
+    "options": [
+      {
+        "id": "A",
+        "text": "vômitos esporádicos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dor abdominal moderada;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipotensão postural e/ou lipotimia;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "diminuição progressiva do hematócrito;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "esplenomegalia 1 cm abaixo do rebordo costal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O manejo da dengue na gestação exige atenção redobrada, pois a gestante é classificada no grupo de risco (Grupo B). No entanto, a identificação de sinais de alarme eleva a categoria da paciente para o Grupo C, o que obriga a internação hospitalar para manejo clínico e monitorização rigorosa. De acordo com os protocolos do Ministério da Saúde e da Organização Mundial da Saúde, os sinais de alarme surgem geralmente na fase de defervescência da febre e indicam o início do extravasamento plasmático.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Para serem considerados sinais de alarme, os vômitos devem ser persistentes, e não apenas esporádicos. Vômitos persistentes são aqueles que impedem a aceitação da hidratação oral e contribuem para o desequilíbrio hidroeletrolítico.\n\nAlternativa b: Incorreta. A dor abdominal que caracteriza um sinal de alarme deve ser intensa e contínua. Dores moderadas, leves ou intermitentes são comuns em quadros virais, mas não são, isoladamente, critérios para internação imediata por gravidade no protocolo da dengue.\n\nAlternativa c: Correta. A hipotensão postural (queda da pressão arterial ao se levantar) e a lipotimia (sensação de desmaio) são manifestações precoces de hipovolemia por extravasamento plasmático. Esse sinal indica que o volume circulante está diminuindo, sendo um marcador crítico de que a paciente pode evoluir para o choque caso não receba hidratação venosa imediata.\n\nAlternativa d: Incorreta. O sinal de alarme clássico é o aumento progressivo do hematócrito, e não a sua diminuição. Esse aumento ocorre devido à hemoconcentração, que é a perda de plasma (parte líquida do sangue) para o espaço extravascular. A diminuição do hematócrito pode sugerir hemorragia oculta ou hemodiluição após hidratação excessiva, mas não é o sinal de alarme inicial esperado.\n\nAlternativa e: Incorreta. O critério de alarme relacionado ao exame físico abdominal é a hepatomegalia (aumento do fígado) dolorosa, palpável a mais de 2 cm do rebordo costal direito. A esplenomegalia (aumento do baço), especialmente discreta como a descrita, de 1 cm, não consta na lista oficial de sinais de alarme da dengue.\n\nPortanto, a hipotensão postural e/ou a lipotimia é o sinal clínico que exige a classificação da gestante no Grupo C e sua consequente internação.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:16.833Z"
+  }
+]

@@ -1,0 +1,488 @@
+[
+  {
+    "id": "AJUDA_59cd575f-e96d-46fd-84fb-d5e06b5bead8",
+    "originalId": "59cd575f-e96d-46fd-84fb-d5e06b5bead8",
+    "statement": "Homem de 40 anos de idade sofreu queda do telhado chocando o dorso à esquerda contra o solo e um anteparo pontiagudo. Exame físico: SatO2 oscilando entre 88% e 90% (cateter de O2 – 5 litros/minuto), ferimento aspirativo na parede torácica posterior esquerda. AP: etilista, usuário de crack.\n\nDe acordo com o protocolo de atendimento do ATLS, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O curativo oclusivo fechado em três pontas deve ser realizado de forma estéril, impedindo que o ar entre na expiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A drenagem torácica deve ser realizada no 4º ou 5º espaço intercostal esquerdo, entre as linhas axilares média e posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A descompressão com a agulha deve ser realizada no 4º ou 5º espaço intercostal esquerdo, anterior à linha axilar anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O curativo oclusivo fechado nas quatro pontas pode ser realizado, desde que o paciente tenha o tórax drenado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta um quadro de pneumotórax aberto, caracterizado pela presença de um ferimento aspirativo na parede torácica. Segundo o protocolo ATLS (*Advanced Trauma Life Support*), o tratamento inicial de um pneumotórax aberto consiste na aplicação de um curativo oclusivo fixado em apenas três lados (três pontas). Isso cria um efeito de válvula unidirecional que permite a saída do ar do espaço pleural durante a expiração, mas impede a entrada de ar durante a inspiração.\n\nAnalise das alternativas:\n\nAlternativa a) Incorreta. O curativo de três pontas tem como objetivo impedir a entrada de ar durante a inspiração e permitir que o ar escape do espaço pleural durante a expiração. A alternativa inverte a lógica fisiológica ao dizer que impede a entrada de ar na expiração.\n\nAlternativa b) Incorreta. De acordo com a 10ª edição do ATLS, a drenagem torácica deve ser realizada no 4º ou 5º espaço intercostal, entre as linhas axilar anterior e axilar média. A localização posterior à linha axilar média, como sugerido na alternativa, não é a recomendação padrão para a inserção do dreno de tórax.\n\nAlternativa c) Incorreta. A descompressão por agulha é o tratamento imediato para o pneumotórax hipertensivo, não para o pneumotórax aberto. No pneumotórax aberto, a conduta imediata é o curativo de três pontas seguido pela drenagem em selo d'água em um local diferente da ferida.\n\nAlternativa d) Correta. Esta é a conduta definitiva para o pneumotórax aberto. Após a estabilização inicial com o curativo de três pontas, o paciente deve ser submetido à drenagem torácica em selo d'água em um sítio cirúrgico separado da lesão original. Uma vez que o dreno de tórax esteja posicionado e funcionando adequadamente para retirar o ar e fluidos do espaço pleural, o ferimento aspirativo original pode ser totalmente ocluído (curativo de quatro pontas) para evitar a entrada de ar e contaminação, até que a ferida seja tratada cirurgicamente.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:23.942Z"
+  },
+  {
+    "id": "AJUDA_59dea817-e784-46c0-8cfe-dcebc3950fbb",
+    "originalId": "59dea817-e784-46c0-8cfe-dcebc3950fbb",
+    "statement": "Mulher, 49 anos de idade, está no primeiro pós-operatório de cirurgia de bypass gástrico para obesidade por videolaparoscopia. Ao exame físico, encontra-se descorada, com FC de 130 bpm, PA de 100×80 mmHg e FR de 23 irpm, SpO2 de 94%; abdome flácido e indolor à palpação, exceto nos locais das punções. Assinale a alternativa que apresenta a principal hipótese diagnóstica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia interna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atelectasia pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deiscência da anastomose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sangramento da anastomose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A paciente encontra-se no primeiro dia de pós-operatório (PO imediato) de bypass gástrico em Y de Roux e apresenta sinais típicos de choque hipovolêmico: taquicardia importante (FC de 130 bpm), palidez cutâneo-mucosa, taquipneia (FR de 23 irpm) e pressão de pulso convergente (PA 100x80 mmHg), associados a um abdome flácido e indolor. Em cirurgia bariátrica, uma frequência cardíaca mantida acima de 120 bpm no pós-operatório imediato é o sinal mais sensível de complicação grave, sendo hemorragia e fístula os principais diagnósticos diferenciais. Pelo tempo de evolução precoce e pela presença de descoramento sem dor abdominal, o sangramento é a hipótese diagnóstica primária.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A hérnia interna é uma complicação mais tardia do bypass gástrico (geralmente meses ou anos após o procedimento, decorrente da perda ponderal). Quando ocorre, cursa classicamente com dor abdominal em cólica de início súbito e sinais de obstrução intestinal, o que não condiz com o abdome flácido e indolor apresentado.\n\nAlternativa B - Incorreta. A atelectasia é a causa mais comum de febre nas primeiras 24 a 48 horas de pós-operatório e pode gerar taquipneia e discreta queda da saturação. No entanto, ela não justifica a taquicardia acentuada (130 bpm) associada à palidez cutânea e instabilidade hemodinâmica.\n\nAlternativa C - Incorreta. A deiscência de anastomose (fístula) é uma complicação temida que também cursa com taquicardia precoce, mas seu pico de incidência ocorre tipicamente entre o 3º e o 7º dia de pós-operatório. Além disso, costuma vir acompanhada de febre, dor abdominal progressiva e sinais de irritação peritoneal (abdome cirúrgico).\n\nAlternativa D - Correta. O sangramento da linha de grampos ou das anastomoses é uma complicação precoce, que ocorre tipicamente nas primeiras 24 horas. Pode se manifestar como sangramento intraluminal (hematêmese ou melena) ou extraluminal (hemoperitônio). O quadro clássico inclui sinais de hipovolemia (palidez, taquicardia e hipotensão) frequentemente com exame abdominal inocente (flácido e indolor), exatamente como descrito no caso clínico.\n\nGabarito: Letra D.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:23.942Z"
+  },
+  {
+    "id": "AJUDA_59e4df56-c647-4810-bac8-82c540b0ac4c",
+    "originalId": "59e4df56-c647-4810-bac8-82c540b0ac4c",
+    "statement": "Paciente, sexo masculino, 62 anos de idade, com antecedente de hipertensão arterial sistêmica e doença renal crônica estágio IIIb. Procura o pronto-socorro com queixa de dor torácica aguda retroesternal há 3 horas. O paciente nega dispneia, tosse ou febre. Refere que apresenta melhora discreta da dor quando se senta inclinado para frente. Ao exame físico, apresentou sinais vitais normais, bom estado geral, ausculta cardíaca e pulmonar sem alterações. Radiografia de tórax normal. O eletrocardiograma é apresentado a seguir: \n\nCom base nessas informações, assinale a alternativa que apresenta a conduta farmacológica adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alteplase intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prednisona por via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ibuprofeno por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Enoxaparina subcutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — dor torácica que melhora com a inclinação do tronco para a frente (posição pleurostótica ou de prece maometana) — é clássico de pericardite aguda. O eletrocardiograma confirma essa suspeita ao demonstrar um supradesnivelamento difuso do segmento ST com morfologia côncava (presente em quase todas as derivações, exceto aVR e V1) e, crucialmente, o infradesnivelamento do segmento PR (mais visível na derivação II), achado altamente específico para inflamação pericárdica.\n\nA escolha da conduta deve levar em conta as comorbidades do paciente. Embora o tratamento de primeira linha para pericardite aguda geralmente envolva anti-inflamatórios não esteroidais (AINEs) associados à colchicina, este paciente possui doença renal crônica (DRC) estágio IIIb.\n\nAnálise das alternativas:\n\na) Incorreta. O alteplase é um trombolítico indicado para o infarto agudo do miocárdio com supradesnivelamento de ST (IAMCSST). Apesar de haver supra de ST no eletrocardiograma, as características clínicas (dor posicional) e eletrocardiográficas (supra difuso e côncavo, infra de PR) apontam para pericardite. O uso de trombolíticos na pericardite é contraindicado, pois pode causar hemorragia para o espaço pericárdico e tamponamento cardíaco.\n\nb) Correta. Os corticoides, como a prednisona, são indicados como terapia de segunda linha na pericardite aguda quando há contraindicação formal ao uso de AINEs. Neste caso, a doença renal crônica estágio IIIb contraindica o uso de ibuprofeno ou aspirina em doses anti-inflamatórias, tornando a prednisona a opção adequada para o controle do processo inflamatório.\n\nc) Incorreta. O ibuprofeno é um AINE e seria a primeira escolha em pacientes com função renal preservada. No entanto, em pacientes com DRC estágio IIIb (taxa de filtração glomerular entre 30-44 mL/min), os AINEs devem ser evitados pelo risco de nefrotoxicidade e piora aguda da função renal.\n\nd) Incorreta. A enoxaparina é um anticoagulante utilizado em síndromes coronarianas agudas sem supra de ST ou para profilaxia/tratamento de tromboembolismo. Não tem papel no tratamento da pericardite e, assim como os trombolíticos, aumenta o risco de derrame pericárdico hemorrágico.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Eletrocardiograma",
+      "Pericardiopatias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/bd68e2e36ae16e76ead9f2a0f53e6ebe02f824b6d9eb36ba62aac9979e064e5b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_59e4df56-c647-4810-bac8-82c540b0ac4c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:24.860Z"
+  },
+  {
+    "id": "AJUDA_59e50a79-0377-4f5f-a9b1-d26a61a39cd1",
+    "originalId": "59e50a79-0377-4f5f-a9b1-d26a61a39cd1",
+    "statement": "Homem, 19 anos de idade, com antecedente de queda da motocicleta há 70 dias, com múltiplas fraturas de costelas à direita, contusão pulmonar, hemopneumotórax e trauma craniano grave. Tratado, na ocasião, com drenagem torácica à direita e ventilação mecânica por 17 dias. Recebeu alta hospitalar após 28 dias de internação, em bom estado geral. Retorna ao serviço de emergência com queixa de dispneia de instalação progressiva associada a cornagem. Ao exame clínico, saturação de 94%, frequência respiratória de 24 ipm, tiragem de fúrcula.\nQual é a hipótese diagnóstica mais provável e o tratamento imediato?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estenose de traqueia; intubação orotraqueal e ventilação invasiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estenose de traqueia; corticoesteroide endovenoso, inalação com adrenalina e ventilação não invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estenose de laringe; cricotireoidostomia e ventilação invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estenose de laringe; corticoesteroide e broncodilatadores inalatórios e ventilação não invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de obstrução de via aérea superior após um período de ventilação mecânica prolongada (17 dias). O intervalo de aproximadamente dois meses (70 dias desde o trauma) entre a extubação e o início dos sintomas é o período típico para a manifestação de estenose traqueal cicatricial. A presença de cornagem (estridor) e a tiragem de fúrcula são sinais inequívocos de obstrução alta grave, exigindo intervenção imediata para garantir a patência da via aérea.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nO diagnóstico de estenose de traqueia é o mais provável devido ao antecedente de intubação orotraqueal prolongada. A pressão exercida pelo balonete (cuff) da sonda sobre a mucosa traqueal pode causar isquemia, seguida de necrose e posterior cicatrização fibrótica, reduzindo a luz do órgão. Diante de um paciente com sinais de insuficiência respiratória obstrutiva (taquipneia, tiragem e cornagem), a conduta imediata é garantir uma via aérea segura. A intubação orotraqueal, embora tecnicamente difícil pela estenose (podendo exigir tubos de menor calibre), é a primeira tentativa diagnóstica e terapêutica para estabilização e ventilação invasiva.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (b): Embora o diagnóstico de estenose de traqueia esteja correto, o tratamento proposto é inadequado. Corticosteroides e inalação com adrenalina são eficazes no edema inflamatório agudo (como no crupe ou no edema pós-extubação imediato), mas não revertem uma estenose fibrótica/cicatricial já estabelecida. Além disso, a ventilação não invasiva (VNI) é contraindicada em casos de obstrução fixa de via aérea superior, pois a pressão positiva pode não vencer a barreira anatômica e retardar o controle definitivo da via aérea.\n\nAlternativa (c): A estenose de laringe é menos comum que a traqueal após intubação prolongada (que geralmente ocorre no nível do balonete ou do estoma da traqueostomia). Além disso, a cricotireoidostomia é um procedimento de exceção (via aérea cirúrgica de emergência) indicado apenas quando a intubação orotraqueal falha ou é impossível. A conduta inicial padrão deve ser a tentativa de intubação.\n\nAlternativa (d): Assim como na alternativa (b), os broncodilatadores agem na árvore brônquica inferior (pequenas vias aéreas) e não têm efeito sobre uma obstrução mecânica na laringe ou traqueia. Corticosteroides e VNI também não tratam a causa-base da obstrução cicatricial.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Trauma",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:24.860Z"
+  },
+  {
+    "id": "AJUDA_59f06a9a-18f3-4efc-9068-9d1a81980544",
+    "originalId": "59f06a9a-18f3-4efc-9068-9d1a81980544",
+    "statement": "Em decorrência das enchentes que assolaram o Rio Grande do Sul neste ano, o risco para acidentes ofídicos aumentou na população pediátrica. O tipo de acidente mais prevalente, nesse caso, é o:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laquético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Elapídico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Crotálico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Botrópico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO tema abordado é o ofidismo, especificamente a epidemiologia dos acidentes por serpentes peçonhentas no Brasil e no Rio Grande do Sul. O conhecimento da prevalência é fundamental para o manejo clínico e a escolha do soro antiofídico adequado.\n\nPOR QUE A ALTERNATIVA D ESTÁ CORRETA?\nO acidente botrópico, causado por serpentes do gênero Bothrops (como jararaca, jararacuçu, urutu), é o mais prevalente tanto no Brasil quanto no Rio Grande do Sul, correspondendo a cerca de 80% a 90% dos casos registrados. Essas serpentes adaptam-se bem a diversos ambientes e, em situações de enchentes, são deslocadas de seus hábitats naturais para áreas secas ou entulhos, aumentando o contato com a população humana, inclusive crianças. O quadro clínico é caracterizado por ação proteolítica (edema, dor, equimose), coagulante e hemorrágica local.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A (Laquético): As serpentes do gênero Lachesis (surucucu-pico-de-jaca) habitam tipicamente áreas de florestas tropicais úmidas, como a Amazônia e trechos da Mata Atlântica no Norte e Nordeste. Elas não existem nativamente no território do Rio Grande do Sul, o que torna esse tipo de acidente inexistente no estado.\n\nAlternativa B (Elapídico): Causado pelas corais verdadeiras (gênero Micrurus). Embora existam no Rio Grande do Sul, esses acidentes são extremamente raros (geralmente menos de 1% dos casos), pois são animais pouco agressivos, com hábitos fossoriais (vivem sob a terra ou folhagem) e possuem uma boca pequena que dificulta a picada.\n\nAlternativa C (Crotálico): Causado por cascavéis (gênero Crotalus). Representam a segunda causa de acidentes ofídicos no Brasil (cerca de 8% a 10%). Preferem ambientes mais secos e abertos. Embora ocorram no Rio Grande do Sul, sua incidência é significativamente menor que a dos acidentes botrópicos, especialmente em cenários de inundações, onde as jararacas são as protagonistas.\n\nRESUMO EPIDEMIOLÓGICO PARA PROVAS:\n1. Botrópico (Jararaca): Mais comum em todas as regiões (aprox. 90%).\n2. Crotálico (Cascavel): Segundo mais comum, maior letalidade.\n3. Laquético (Surucucu): Restrito a matas úmidas (Norte/Nordeste).\n4. Elapídico (Coral): Mais raro.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Animais Peçonhentos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:24.860Z"
+  },
+  {
+    "id": "AJUDA_5a0cde9c-d5f8-4a40-9f22-449aa5a7032d",
+    "originalId": "5a0cde9c-d5f8-4a40-9f22-449aa5a7032d",
+    "statement": "Assinale a alternativa CORRETA em relação aos marcos do desenvolvimento da criança:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aos 4 meses a criança é capaz de sentar-se para frente e apoiar-se com as mãos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aos 2 anos a criança é capaz de dar saltos curtos e alternar o apoio dos pés.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aos 18 meses a criança é capaz de levantar-se e se sentar com bom equilíbrio",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aos 12 meses a criança inicia o processo de apoiar-se nos pés e nas mãos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ALTERNATIVA A: INCORRETA. Aos 4 meses, os marcos motores principais são o controle cervical completo (a cabeça não pende mais para trás) e a capacidade de a criança elevar o peito apoiando-se nos antebraços quando em decúbito ventral. A habilidade de sentar-se para frente com apoio das mãos, conhecida como posição de tripé, é um marco típico dos 6 aos 7 meses de idade.\n\nALTERNATIVA B: INCORRETA. Aos 2 anos (24 meses), a criança é capaz de correr, chutar uma bola e saltar com os dois pés juntos. No entanto, alternar o apoio dos pés de forma coordenada em saltos ou manter o equilíbrio em um pé só são habilidades mais complexas, geralmente atingidas por volta dos 3 anos de idade.\n\nALTERNATIVA C: CORRETA. Aos 18 meses, a criança já consolidou a marcha independente (que geralmente ocorre entre 12 e 15 meses). Nesse estágio, ela apresenta maturidade motora suficiente para ter controle sobre o seu centro de gravidade, sendo capaz de se abaixar para pegar objetos, sentar-se em cadeiras baixas e levantar-se com bom equilíbrio e segurança.\n\nALTERNATIVA D: INCORRETA. O processo de apoiar-se nas mãos e nos pés (posição de \"urso\" ou preparação para o engatinhar) ocorre precocemente, geralmente entre os 8 e 10 meses. Aos 12 meses, o marco esperado é que a criança consiga ficar de pé (com ou sem apoio) e dê os primeiros passos, já em direção à marcha independente.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:24.860Z"
+  },
+  {
+    "id": "AJUDA_5a188f50-c8d6-40f1-80c1-e711d0e1bdb0",
+    "originalId": "5a188f50-c8d6-40f1-80c1-e711d0e1bdb0",
+    "statement": "A etiologia mais frequentemente associada à obstrução intestinal, atualmente, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "neoplasia intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hérnia inguinal encarcerada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "intussuscepção intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "volvo de sigmoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "aderência pós-operatória.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A obstrução intestinal é uma das principais causas de abdome agudo, e sua epidemiologia varia conforme o segmento intestinal acometido. Atualmente, a principal causa global de obstrução intestinal, considerando todo o trato digestivo, são as aderências (ou bridas) decorrentes de cirurgias prévias.\n\nAlternativa a) Incorreta. A neoplasia intestinal (especialmente o adenocarcinoma colorretal) é a causa número um de obstrução do intestino grosso (cólon). Contudo, como a obstrução do intestino delgado é muito mais frequente que a do grosso, as neoplasias não ocupam o primeiro lugar na estatística geral.\n\nAlternativa b) Incorreta. As hérnias da parede abdominal, como a inguinal e a femoral, já foram a causa principal de obstrução no passado. Com o avanço das técnicas cirúrgicas e o aumento do número de laparotomias, as hérnias passaram a ocupar o segundo lugar entre as causas de obstrução do intestino delgado, perdendo para as aderências.\n\nAlternativa c) Incorreta. A intussuscepção intestinal é uma causa frequente de obstrução na população pediátrica (especialmente entre 3 meses e 3 anos de idade). Em adultos, é uma condição rara e geralmente está associada a um ponto de indução patológico, como um tumor.\n\nAlternativa d) Incorreta. O volvo de sigmoide consiste na torção do intestino sobre seu próprio mesentério. Embora seja uma causa relevante de obstrução intestinal baixa (cólon), principalmente em idosos ou pacientes com megacólon (como no caso da doença de Chagas), sua frequência é muito inferior à das aderências.\n\nAlternativa e) Correta. As aderências pós-operatórias (bridas) são responsáveis por cerca de 60% a 75% de todos os casos de obstrução do intestino delgado. Como o intestino delgado é o local de cerca de 80% das obstruções mecânicas, as bridas consolidam-se como a etiologia mais frequente de obstrução intestinal na prática médica contemporânea.\n\nEm resumo, para provas de residência, deve-se memorizar:\n1. Causa mais comum de obstrução do intestino delgado: aderências (bridas).\n2. Causa mais comum de obstrução do intestino grosso: câncer colorretal.\n3. Causa mais comum de obstrução intestinal global: aderências (bridas).",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:24.860Z"
+  },
+  {
+    "id": "AJUDA_5a1c2a72-c9aa-4dcb-a929-5fa708671662",
+    "originalId": "5a1c2a72-c9aa-4dcb-a929-5fa708671662",
+    "statement": "Mulher, 39 anos de idade, 26 semanas de gestação, refere que notou aumento assimétrico das mamas ao longo do último mês. Ao exame, nota-se nodulação de aproximadamente 2,5 cm em junção de quadrantes inferiores de mama esquerda, profundo, pouco móvel, sem calor local. Neste caso, recomenda-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Punção aspirativa guiada por ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prosseguir investigação com mamografia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar tratamento com clindamicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reavaliar clinicamente em 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta uma gestante de 39 anos no segundo trimestre com um nódulo mamário palpável de 2,5 cm, profundo e pouco móvel, sem sinais flogísticos. Esse quadro clínico traz alta suspeita de malignidade (câncer de mama associado à gestação). Diante de uma lesão suspeita na gravidez, a investigação diagnóstica deve ser imediata e não protelada.\n\nAlternativa a: Incorreta. A Punção Aspirativa por Agulha Fina (PAAF) fornece apenas análise citológica, sendo insuficiente para o diagnóstico definitivo e para o estadiamento/planejamento de lesões sólidas suspeitas. O procedimento padrão-ouro para diagnóstico tecidual é a biópsia por agulha grossa (core biopsy), que possibilita o estudo histopatológico e a imuno-histoquímica. Além disso, a investigação por imagem é a etapa propedêutica inicial.\n\nAlternativa b: Correta. Diante de um nódulo suspeito na gestação, a investigação por imagem deve prosseguir. A mamografia é um método seguro durante a gravidez, desde que realizada com proteção de avental de chumbo abdominal, apresentando dose de radiação fetal desprezível. Ela é indispensável para rastrear microcalcificações suspeitas, avaliar a extensão locorregional e excluir lesões adicionais sincrônicas ou bilaterais.\n\nAlternativa c: Incorreta. A antibioticoterapia estaria indicada se houvesse suspeita de mastite ou abscesso mamário. O exame físico descarta sinais inflamatórios (ausência de calor local e hiperemia), e as características de fixação tecidual apontam para etiologia neoplásica.\n\nAlternativa d: Incorreta. Adotar conduta expectante frente a um nódulo de 2,5 cm pouco móvel em uma paciente de 39 anos retarda o diagnóstico e piora o prognóstico oncológico. Qualquer massa mamária dominante e persistente na gestação deve ser prontamente investigada.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:24.860Z"
+  },
+  {
+    "id": "AJUDA_5a1c52b5-1ef0-439e-b42c-af0c1fd477ad",
+    "originalId": "5a1c52b5-1ef0-439e-b42c-af0c1fd477ad",
+    "statement": "Criança, 8 meses, chega à unidade de emergência febril e com rinorreia abundante há três dias. Na consulta, está taquipneica e, ao exame inicial, chama a atenção a hipoxemia de 89% em ar ambiente e a sibilância difusa na ausculta pulmonar, sem sinais de hipoperfusão tecidual. O manejo inicial dessa criança deve considerar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Oxigenação com cateter nasal de baixo fluxo e fração inspirada de oxigênio de 100% inicialmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antibioticoterapia empírica com ampicilina intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Salbutamol inalado associado a corticosteroide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lavagem nasal com cloreto de sódio a 0,9% e oxigenação adequada.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado — lactente de 8 meses com pródromos de vias aéreas superiores (rinorreia e febre) evoluindo com taquipneia, sibilância difusa e hipoxemia — é clássico de Bronquiolite Viral Aguda (BVA), sendo o Vírus Sincicial Respiratório (VSR) o agente etiológico mais comum. O tratamento da BVA é fundamentalmente de suporte clínico.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O cateter nasal simples é um dispositivo de baixo fluxo que fornece uma fração inspirada de oxigênio (FiO2) variável e baixa, em torno de 24% a 40%, sendo incapaz de ofertar FiO2 a 100%. Além disso, não há indicação de hiperoxigenação; a meta é apenas manter a saturação de oxigênio em níveis seguros (geralmente acima de 90% a 92%).\n\nAlternativa b: Incorreta. A BVA é uma infecção de etiologia viral. O uso empírico de antibióticos não altera a evolução clínica e não é recomendado de rotina, devendo ser reservado exclusivamente para quadros com confirmação ou forte suspeita de coinfecção bacteriana.\n\nAlternativa c: Incorreta. Diretrizes pediátricas atuais contraindicam o uso rotineiro de broncodilatadores inalatórios (como o salbutamol) e corticosteroides sistêmicos. A fisiopatologia da BVA envolve edema de mucosa, acúmulo de muco e necrose do epitélio bronquiolar, e não o broncoespasmo muscular reversível, tornando essas medicações ineficazes para a redução do tempo de internamento ou melhora do desfecho.\n\nAlternativa d: Correta. Como os lactentes são respiradores nasais preferenciais, o acúmulo de secreção nasal piora acentuadamente o esforço respiratório, tornando a lavagem nasal com cloreto de sódio a 0,9% uma medida inicial essencial. Associado a isso, devido à saturação de 89% em ar ambiente, está indicada a oxigenoterapia para restabelecer a oxigenação tecidual adequada (SatO2 maior ou igual a 90-92%). O suporte ventilatório leve e a desobstrução de via aérea compõem o pilar do tratamento.\n\nGabarito: Letra d.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:24.860Z"
+  },
+  {
+    "id": "AJUDA_5a1cc40e-7997-463e-9b07-1269db066b29",
+    "originalId": "5a1cc40e-7997-463e-9b07-1269db066b29",
+    "statement": "Paciente do sexo masculino, 37 anos, relata que desde os 18 anos de idade apresenta episódios de cefaleia de forte intensidade, unilateral, pulsátil, localizada acima da órbita com duração aproximada de duas horas. A dor é de tal forma intensa que causa grande inquietude. Os episódios são acompanhados por rinorreia e vermelhidão ocular do mesmo lado da dor. Relata que estava há mais de 6 meses sem crises, mas elas voltaram a ocorrer nos últimos 2 meses, com um episódio a cada 4 ou 5 dias.\nSeria a conduta correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento para sinusite com antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar tratamento para migrânea com amitriptilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar tratamento para cefaleia em salvas com propranolol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar tratamento para cefaleia em salvas com verapamil.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um quadro clássico de Cefaleia em Salvas (uma cefaleia trigêmino-autonômica). Os elementos definidores são: paciente do sexo masculino, dor unilateral periorbital/supraorbital de forte intensidade, duração curta (15 a 180 minutos), agitação/inquietude motora durante o episódio, presença de sinais autonômicos ipsilaterais (rinorreia e vermelhidão ocular) e padrão episódico com períodos de remissão espontânea seguidos de novas salvas.\n\nAnálise das alternativas:\n\na) Incorreta. Sintomas como congestão e rinorreia ipsilaterais à dor fazem parte da disfunção autonômica da cefaleia em salvas e frequentemente geram confusão diagnóstica com rinossinusite. Contudo, a ausência de febre, secreção purulenta e a história de crises recorrentes e autolimitadas há quase 20 anos afastam o diagnóstico de sinusite bacteriana.\n\nb) Incorreta. Embora a migrânea seja unilateral e possa ser pulsátil, as crises duram tipicamente de 4 a 72 horas, o paciente geralmente busca repouso no escuro (piora com atividade física, ao contrário da inquietude da cefaleia em salvas) e os sintomas autonômicos não são tão exuberantes. A amitriptilina é uma opção profilática para migrânea e cefaleia do tipo tensional, não para cefaleia em salvas.\n\nc) Incorreta. Embora o diagnóstico de cefaleia em salvas esteja correto, o propranolol não possui evidência de eficácia no tratamento preventivo dessa condição, sendo classicamente indicado para a profilaxia da migrânea.\n\nd) Correta. O diagnóstico é de cefaleia em salvas e a droga de primeira escolha para a profilaxia (prevenção) das crises durante o período ativo é o verapamil, um bloqueador dos canais de cálcio. Como o paciente retornou ao período de atividade da doença (salva ativa), a introdução do verapamil é a conduta farmacológica preventiva padrão. O tratamento da crise aguda, por sua vez, seria realizado com oxigenoterapia a 100% sob máscara não reinalante e/ou triptanos por via subcutânea ou nasal.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:24.860Z"
+  }
+]

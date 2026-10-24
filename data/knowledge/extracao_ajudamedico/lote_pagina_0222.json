@@ -1,0 +1,534 @@
+[
+  {
+    "id": "AJUDA_3d85fbd3-fbeb-4329-8192-185c1bfb6a1b",
+    "originalId": "3d85fbd3-fbeb-4329-8192-185c1bfb6a1b",
+    "statement": "Adolescente de 13 anos apresenta lesões eritematosas em alvo (“target”), principalmente em dorso das mãos e pés, algumas com centro purpúrico. Há história de infecção respiratória recente por Mycoplasma pneumoniae. Não há comprometimento mucoso. Qual é a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar corticoide sistêmico imediatamente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever anti-histamínico e orientar acompanhamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar com urgência para internação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratar Mycoplasma pneumoniae e oferecer cuidados de suporte",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Indicar imunoglobulina endovenosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um adolescente com lesões clássicas de Eritema Multiforme (EM), caracterizadas como lesões em alvo ou \"íris\" (eritematosas com centro purpúrico ou vesiculoso). A localização em extremidades (dorso das mãos e dos pés) e a ausência de acometimento de mucosas definem o quadro como Eritema Multiforme Menor. O enunciado estabelece uma relação causal importante: a infecção recente por Mycoplasma pneumoniae, que é, ao lado do vírus Herpes Simplex (HSV), um dos principais gatilhos para o desenvolvimento do EM.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. O uso de corticoides sistêmicos no Eritema Multiforme é controverso. No caso do EM Menor (sem acometimento mucoso), eles geralmente não são indicados, pois a doença é autolimitada e o corticoide não altera significativamente a evolução, podendo, inclusive, mascarar infecções subjacentes.\n\nb) Incorreta. Embora o anti-histamínico possa ser usado para alívio sintomático (suporte) se houver prurido, a alternativa é incompleta. A questão fornece o gatilho específico (Mycoplasma pneumoniae), e o tratamento da infecção de base é fundamental para a resolução do quadro e a prevenção da progressão.\n\nc) Incorreta. A internação hospitalar é reservada para casos de Eritema Multiforme Maior (com acometimento de mucosas), nos quais há dor intensa, dificuldade de deglutição/hidratação ou necessidade de cuidados com feridas extensas. No EM Menor, o tratamento é ambulatorial.\n\nd) Correta. Esta é a conduta mais adequada. O Eritema Multiforme é uma reação de hipersensibilidade mediada por células a um antígeno. Ao identificar o Mycoplasma pneumoniae como o provável agente etiológico, o tratamento direcionado (geralmente com macrolídeos) é indicado para tratar a infecção respiratória. Associado a isso, oferecem-se cuidados de suporte (analgésicos e cuidados locais) para as lesões cutâneas, que tendem a regredir espontaneamente em 2 a 4 semanas.\n\ne) Incorreta. A imunoglobulina endovenosa (IVIG) é uma terapia de alta complexidade e custo, utilizada em casos graves de Síndrome de Stevens-Johnson ou Necrólise Epidérmica Tóxica (que são diagnósticos diferenciais distintos do EM), e não possui indicação no manejo do Eritema Multiforme Menor.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Farmacodermias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:16.410Z"
+  },
+  {
+    "id": "AJUDA_3d8b9675-146b-4074-ab30-a03650a24c7c",
+    "originalId": "3d8b9675-146b-4074-ab30-a03650a24c7c",
+    "statement": ". A anfotericina B (AmB) foi introduzida na prática clínica em 1959 e, por mais de 6 décadas, permaneceu como um importante medicamento salvador de vidas para uma ampla gama de doenças fúngicas endêmicas e oportunistas. No entanto, a formidável nefrotoxicidade da AmB, que se tornou um problema clínico maior nas décadas de 1980 e 1990 (...) criou uma necessidade médica urgente por alternativas de tratamento mais seguras, mas igualmente eficazes (...) incluindo a formulação complexo lipídico de anfotericina B (ABLC; Abelcet®)\n\nConsiderando a necessidade de prescrição desta proposta terapêutica para um paciente adolescente (Peso= 50Kg) conforme a seguinte recomendação farmacêutica: \n\nQual a alternativa CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se for realizado cálculo para dose de 1mg/Kg, a quantidade de medicação aspirada para posterior rediluição será 10ml.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A formulação descrita necessita reconstituição para ser aplicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se for realizado cálculo para dose de 3 mg/Kg, a quantidade de solução de dextrose 5% a ser rediluída será 150ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Conforme a recomendação farmacêutica, a medicação precisa ser rediluída em 20ml de solução de dextrose 5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Se for cálculo para dose de 4mg/Kg, será necessário reconstituir a medicação em 40ml de soro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige conhecimentos sobre farmacologia clínica, especificamente sobre o cálculo de doses e o preparo de medicamentos parenterais, utilizando as informações fornecidas no rótulo/guia do medicamento Abelcet (Complexo lipídico de Anfotericina B).\n\nAnálise dos dados da imagem:\nConcentração do frasco: 100 mg em 20 ml, o que resulta em 5 mg/ml (100 / 20 = 5).\nRecomendação de rediluição: Deve-se diluir em Dextrose 5% até atingir a concentração final de 2 mg/ml.\nDados do paciente: Peso = 50 kg.\n\nAnálise das alternativas:\n\na) CORRETA. Para uma dose de 1 mg/kg em um paciente de 50 kg, a dose total necessária é de 50 mg. Como o frasco possui uma concentração de 5 mg/ml (conforme calculado acima: 100 mg / 20 ml), o volume a ser aspirado do frasco é: 50 mg / 5 mg/ml = 10 ml.\n\nb) INCORRETA. Existe uma diferença técnica importante entre reconstituição e rediluição. A reconstituição ocorre quando transformamos um pó (liofilizado) em líquido. A imagem informa que o Abelcet já se apresenta na forma de \"suspensão\" (líquido com partículas). Portanto, ele não precisa de reconstituição, apenas de rediluição em soro glicosado (Dextrose 5%) antes da aplicação.\n\nc) INCORRETA. Para uma dose de 3 mg/kg em um paciente de 50 kg, a dose total é de 150 mg. Para atingir a concentração final recomendada de 2 mg/ml, o volume total da solução final deve ser de 75 ml (150 mg / 2 mg/ml = 75 ml). O valor de 150 ml citado na alternativa resultaria em uma concentração de 1 mg/ml, divergindo da recomendação da imagem.\n\nd) INCORRETA. A recomendação farmacêutica na imagem não estabelece um volume fixo de 20 ml para rediluição. O volume de diluente (Dextrose 5%) varia de acordo com a dose total calculada para o peso do paciente, visando sempre atingir a concentração final de 2 mg/ml.\n\ne) INCORRETA. Primeiro, o termo \"reconstituir\" está incorreto, como explicado na alternativa (b). Segundo, para uma dose de 4 mg/kg em 50 kg, a dose total é de 200 mg. Para manter a concentração de 2 mg/ml, o volume final total deveria ser de 100 ml (200 mg / 2 mg/ml = 100 ml), e não 40 ml. Além disso, a Anfotericina B é incompatível com soro fisiológico, devendo ser rediluída apenas em soro glicosado (Dextrose 5%).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Micoses Invasivas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5de08c1c7a1169420f3ee57a56ae360189af92953ae4ac943ec93acff356aae4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3d8b9675-146b-4074-ab30-a03650a24c7c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:16.781Z"
+  },
+  {
+    "id": "AJUDA_3d8da42b-bff6-44d6-950d-9a56a28be5db",
+    "originalId": "3d8da42b-bff6-44d6-950d-9a56a28be5db",
+    "statement": "Primigesta de 18 anos está, em 20.06.24, com 12 semanas de gestação. Ela apresenta a carteira de vacinação a seguir:\n\nA recomendação sobre a imunização nessa gravidez é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "terceira dose da dT; influenza; covid-19; a partir da 20ª semana, dTpa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "influenza; covid-19 (5ª dose); terceira dose da hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "terceiras doses da dT e da hepatite B; influenza; covid-19 (5ª dose).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "influenza e covid-19; 3ª dose da hepatite B; a partir da 20ª semana, a dTpa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a recomendação vacinal desta gestante, devemos analisar cada imunizante presente na imagem do cartão vacinal e confrontá-lo com o Calendário Nacional de Vacinação da Gestante do Ministério da Saúde.\n\nANÁLISE DO CARTÃO VACINAL DA PACIENTE (DATA ATUAL: 20/06/2024)\n\n1. Dupla Adulto (dT – Tétano e Difteria): A paciente possui duas doses registradas (jan/2020 e abr/2020). O esquema completo exige três doses. Como ela é gestante, a terceira dose deve ser obrigatoriamente a vacina dTpa.\n2. dTpa (Tríplice bacteriana acelular): Embora tenha uma dose em abr/2023, a norma técnica exige uma dose de dTpa em CADA gestação, a partir da 20ª semana, para garantir a transferência de anticorpos contra a coqueluche para o feto.\n3. Hepatite B: A paciente tem duas doses (jan/2020 e abr/2020). O esquema é composto por três doses (0, 1 e 6 meses). Falta, portanto, a terceira dose para completar o esquema.\n4. Influenza: A última dose foi em mai/2023. A vacina da influenza é anual. Como estamos em junho de 2024, ela deve receber a dose da campanha vigente.\n5. Covid-19: A última dose (4ª dose) foi em nov/2023. De acordo com as notas técnicas de 2024, gestantes fazem parte do grupo prioritário e devem receber uma dose de reforço se a última dose tiver ocorrido há mais de 6 meses. De novembro de 2023 a junho de 2024, já se passaram 7 meses.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Ao propor a terceira dose da dT e, separadamente, a dTpa, a alternativa cria uma redundância desnecessária. O mais importante é que a alternativa omite a necessidade da terceira dose da vacina contra hepatite B, que está incompleta.\n\nAlternativa b) Incorreta. Esta alternativa falha ao não mencionar a vacina dTpa. A vacina dTpa é obrigatória em toda gestação a partir da 20ª semana, independentemente do histórico vacinal prévio, visando à proteção do recém-nascido contra a coqueluche.\n\nAlternativa c) Incorreta. Assim como a alternativa anterior, esta opção ignora a recomendação da vacina dTpa, que é um pilar fundamental da imunização no pré-natal. Apenas completar os esquemas de dT e hepatite B não é suficiente para a conduta obstétrica padrão.\n\nAlternativa d) Correta. Esta é a conduta mais completa e adequada. Ela indica a vacinação contra influenza (anual) e Covid-19 (reforço necessário por terem se passado mais de 6 meses), orienta a completar o esquema de hepatite B com a 3ª dose faltante e programa a aplicação da dTpa a partir da 20ª semana. Vale ressaltar que a dose de dTpa aplicada na gestação servirá também para completar o esquema de três doses contra o tétano (2 doses de dT prévias + 1 dose de dTpa atual).",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/a01f55be249e9ed99110d806387aff12d2936803640df585977592f8ed41424a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3d8da42b-bff6-44d6-950d-9a56a28be5db_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:17.174Z"
+  },
+  {
+    "id": "AJUDA_3d913d08-a27b-458b-89c1-a051d920942e",
+    "originalId": "3d913d08-a27b-458b-89c1-a051d920942e",
+    "statement": "Paciente do sexo feminino, de 27 anos, apresenta-se ao pronto atendimento com história de cefaleia súbita (thunderclap) há 4 horas associada a rigidez de nuca e mal-estar geral. Realizou uma tomografia de crânio sem contraste com 4,5 horas do início dos sintomas que não apresentaram alterações. A indicação da investigação diagnóstica correta seria:",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar uma angiotomografia de vasos intra e extracranianos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar o tratamento com AINE endovenosos e reavaliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar uma angioressonância magnética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar uma punção lombar para pesquisa de hemácias persistentes e xantocromia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo diagnóstico da hemorragia subaracnoide (HSA) espontânea. A paciente apresenta o quadro clínico clássico: cefaleia em trovoada (*thunderclap*), que atinge o pico de intensidade em segundos ou poucos minutos, associada a sinais de irritação meníngea, como a rigidez de nuca.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A angiotomografia é um excelente exame para identificar a causa do sangramento, como um aneurisma, mas ela não tem a finalidade primordial de confirmar o diagnóstico de HSA caso a tomografia simples tenha sido negativa. O primeiro passo no fluxograma é confirmar a presença do sangramento no espaço subaracnoide, e não apenas visualizar a anatomia vascular.\n\nAlternativa b) Incorreta. Diante de uma cefaleia com sinais de alarme (*red flags*), como o pico de dor instantâneo e a rigidez de nuca, é obrigatório excluir causas secundárias graves e potencialmente fatais. Iniciar tratamento sintomático com anti-inflamatórios e apenas reavaliar, sem completar a investigação diagnóstica necessária, é uma conduta insegura e inadequada.\n\nAlternativa c) Incorreta. Assim como a angiotomografia, a angioressonância é focada no estudo da vasculatura. Ela é menos acessível na emergência, mais demorada e não substitui a necessidade de análise do líquido cefalorraquidiano (LCR) quando a tomografia inicial é inconclusiva perante uma suspeita clínica elevada.\n\nAlternativa d) Correta. De acordo com os protocolos clássicos e as principais diretrizes, se um paciente apresenta cefaleia súbita sugestiva de HSA e a tomografia de crânio sem contraste inicial é normal, o próximo passo obrigatório é a punção lombar. O objetivo é buscar hemácias persistentes (utilizando a técnica de comparação entre o primeiro e o último tubo para diferenciar de um acidente de punção) e a xantocromia. A xantocromia é a coloração amarelada do líquor decorrente da degradação da hemoglobina, que confirma o sangramento prévio no espaço subaracnoide.\n\nO gabarito é a alternativa (d).",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Acidentes Vasculares Cerebrais",
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:17.174Z"
+  },
+  {
+    "id": "AJUDA_3d951db6-1617-4d94-8f79-8cef9aee86ef",
+    "originalId": "3d951db6-1617-4d94-8f79-8cef9aee86ef",
+    "statement": "Jovem de 22 anos comparece à consulta com queixa de corrimento vaginal esbranquiçado e odor fétido que piora após a menstruação e o coito. Ao exame especular, nota-se conteúdo vaginal fluido, homogêneo, com bolhas discretas, além de um teste de Schiff (KOH a 10%) positivo e pH vaginal de 5,2. A microscopia do esfregaço a fresco revela a presença de *clue cells* (células-guia) e ausência de polimorfonucleares. \nDiante dos achados, para o diagnóstico dessa condição, assinale a conduta ou característica diagnóstica CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento de escolha inicial deve incluir o metronidazol por via oral, sendo obrigatória a convocação e o tratamento concomitante do parceiro sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença de *clue cells* associada ao pH elevado e teste do sopro positivo confirma o diagnóstico de tricomoníase vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O exame padrão-ouro para a confirmação diagnóstica definitiva e isolamento do agente etiológico principal é a cultura em meio de Thayer-Martin.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A condição descrita é uma disbiose caracterizada pela redução acentuada de lactobacilos e pelo supercrescimento de bactérias anaeróbias, dispensando o tratamento do parceiro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O achado microscópico clássico decorre da lise celular intensa mediada por hifas e pseudohifas de Cândida albicans.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma paciente com corrimento branco-acinzentado, homogêneo, odor fétido (que piora após coito e menstruação devido à alcalinização do meio), pH vaginal elevado (5,2) e teste de KOH (Schiff) positivo. A microscopia revela as clássicas clue cells (células-alvo ou células-guia) e a ausência de processo inflamatório (poucos polimorfonucleares). Este conjunto de achados preenche os Critérios de Amsel para o diagnóstico de Vaginose Bacteriana (VB).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora o metronidazol seja o tratamento de escolha, a Vaginose Bacteriana não é considerada uma Infecção Sexualmente Transmissível (IST), mas sim uma disbiose. Portanto, não é necessária a convocação nem o tratamento do parceiro sexual, conforme protocolos do Ministério da Saúde e da FEBRASGO.\n\nAlternativa b) Incorreta. A presença de clue cells, pH elevado e teste do sopro (KOH) positivo são critérios diagnósticos para Vaginose Bacteriana, e não para tricomoníase. Na tricomoníase, esperaríamos encontrar o protozoário móvel na microscopia a fresco e uma intensa resposta inflamatória (presença abundante de polimorfonucleares).\n\nAlternativa c) Incorreta. O diagnóstico de Vaginose Bacteriana é clínico e microscópico (Critérios de Amsel ou Escore de Nugent). A cultura não é o padrão-ouro porque os agentes envolvidos, como a Gardnerella vaginalis, podem fazer parte da flora vaginal normal de mulheres assintomáticas. O meio de Thayer-Martin é específico para o isolamento da Neisseria gonorrhoeae.\n\nAlternativa d) Correta. A Vaginose Bacteriana é definida exatamente como uma alteração da ecologia vaginal (disbiose), onde há uma substituição dos lactobacilos (produtores de peróxido de hidrogênio) por um crescimento excessivo de bactérias predominantemente anaeróbias (Gardnerella vaginalis, Mobiluncus sp, Prevotella sp, entre outras). Por não ser uma IST, o tratamento do parceiro é dispensado.\n\nAlternativa e) Incorreta. As clue cells são células epiteliais vaginais recobertas por cocobacilos aderidos à sua superfície, conferindo um aspecto pontilhado e bordas borradas. Hifas e pseudohifas são estruturas fúngicas características da Candidíase, que geralmente apresenta pH ácido (< 4,5), prurido intenso e corrimento em aspecto de \"leite coalhado\".",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:17.174Z"
+  },
+  {
+    "id": "AJUDA_3d9f37da-c7a0-4c16-9f62-74dededf4f45",
+    "originalId": "3d9f37da-c7a0-4c16-9f62-74dededf4f45",
+    "statement": "Gestante de 37 anos é atendida no pré-natal em consulta de rotina, apresentando-se com 26 semanas de gestação. Nega queixas obstétricas além de cansaço eventual. Está em uso de suplementação de ferro e traz exames laboratoriais conforme quadro abaixo, solicitados na consulta anterior.\n\nEm relação às condutas recomendadas para o caso descrito, analise as afirmativas e assinale a alternativa correta.\n\nI. Aumentar a dose da suplementação de ferro.\nII. Realizar ou atualizar vacina contra hepatite B.\nIII. Manter dieta, exercícios físicos e controle de hemoglicoteste (HGT).\nIV. Realizar tratamento de infecção urinária baixa.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise dos dados laboratoriais e condutas:\n\nHemoglobina (11,2 g/dL): Na gestação, considera-se anemia quando a hemoglobina está abaixo de 11 g/dL. Como o valor da paciente é 11,2 g/dL, ela não apresenta anemia, apenas as alterações fisiológicas da gravidez. Portanto, deve-se manter a suplementação profilática de ferro, e não aumentá-la para dose terapêutica. A afirmativa I está incorreta.\n\nSorologia para hepatite B (HBsAg não reagente e anti-HBs não reagente): O resultado indica que a paciente não tem a infecção (HBsAg negativo), mas também não possui imunidade (anti-HBs negativo). Toda gestante suscetível deve ser vacinada contra a hepatite B em qualquer trimestre da gestação. A afirmativa II está correta.\n\nGlicemia e TOTG 75 g (jejum: 91; 1 h: 168; 2 h: 153): De acordo com os critérios da Organização Mundial da Saúde e do Ministério da Saúde, o diagnóstico de diabetes mellitus gestacional (DMG) é feito se um ou mais valores estiverem alterados: jejum entre 92 e 125 mg/dL; 1 hora após sobrecarga maior ou igual a 180 mg/dL; ou 2 horas após sobrecarga maior ou igual a 153 mg/dL. Como o valor de 2 horas foi exatamente 153 mg/dL, o diagnóstico de DMG está confirmado. O tratamento inicial consiste em medidas não farmacológicas (dieta e exercícios) e monitorização glicêmica (HGT). A afirmativa III está correta.\n\nEQU e urocultura (muitos leucócitos, mas sem crescimento bacteriano): A presença de leucócitos no exame de urina (leucocitúria) isolada, com uma urocultura negativa, não autoriza o diagnóstico de infecção do trato urinário (ITU). Na gestação, tratamos a bacteriúria assintomática (urocultura positiva em paciente sem sintomas) ou a cistite/pielonefrite (sintomas clínicos). Sem crescimento bacteriano, não há indicação de antibioticoterapia. A afirmativa IV está incorreta.\n\nConclusão: Estão corretas apenas as afirmativas II e III. Portanto, a alternativa correta é a letra (c).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/84f06ada7eb48e8b558b8d54680edddfdc58c2c7f20b177d4faa82954765725e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3d9f37da-c7a0-4c16-9f62-74dededf4f45_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:17.454Z"
+  },
+  {
+    "id": "AJUDA_3da36a5e-579c-4efb-9408-978dc04666ea",
+    "originalId": "3da36a5e-579c-4efb-9408-978dc04666ea",
+    "statement": "Uma gestante de 38 anos, secundigesta e cardiopata, chega à emergência referindo cólicas intensas, sangramento vaginal em grande quantidade e sangue vivo. A idade gestacional, estabelecida pela ultrassonografia transvaginal realizada com 6 semanas, é de 9 semanas e 3 dias. Ao exame, o útero encontra-se aumentado de volume, amolecido, com colo entreaberto e saída de material ovular identificada no exame especular. A ultrassonografia mostra a presença de restos ovulares em grande quantidade.\nDiante desse quadro, a conduta deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "esvaziamento uterino por aspiração a vácuo ou curetagem;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "ocitocina venosa, 20 UI em 500 ml de soro fisiológico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "expectante, monitorando a pressão arterial e sangramento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "misoprostol retal na dose de 800 mcg em dose única;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realização de nova ultrassonografia transvaginal em 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma gestante de 9 semanas e 3 dias com sangramento vaginal volumoso, dor abdominal, colo uterino entreaberto e saída de material ovular. A ultrassonografia confirma a presença de restos ovulares. Esses achados são diagnósticos de Abortamento Incompleto. \n\nNo abortamento incompleto, parte dos produtos da concepção foi eliminada, mas parte permanece na cavidade uterina, o que impede a contração efetiva do miométrio e mantém o sangramento ativo, por vezes levando à instabilidade hemodinâmica. No caso em questão, a paciente já apresenta sangramento em grande quantidade, o que exige uma intervenção imediata para cessar a perda sanguínea e prevenir complicações como infecção (aborto infectado) ou choque hipovolêmico.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Correta: O esvaziamento uterino imediato é a conduta de escolha para o abortamento incompleto, especialmente quando há sangramento importante. A Aspiração Manual Intrauterina (AMIU) é preferível em gestações precoces (geralmente até 12 semanas) por ser menos traumática, mas a curetagem uterina também é uma opção válida. O objetivo é remover os restos ovulares para permitir a contração uterina e a hemostasia.\n\nAlternativa (b) Incorreta: A ocitocina promove a contração do miométrio, mas não é eficaz para promover a expulsão completa de restos ovulares em uma gestação de 9 semanas com colo já aberto e sangramento ativo. O uso isolado de uterotônicos não substitui a necessidade de esvaziamento mecânico neste cenário clínico.\n\nAlternativa (c) Incorreta: A conduta expectante só pode ser considerada em casos de abortamento espontâneo inicial quando a paciente está clinicamente estável, com sangramento mínimo e sem sinais de infecção, sob vigilância estrita. Diante de sangramento \"em grande quantidade\" e \"sangue vivo\", a conduta expectante é perigosa e contraindicada.\n\nAlternativa (d) Incorreta: O misoprostol (um análogo da prostaglandina E1) pode ser utilizado para o manejo clínico do abortamento (esvaziamento farmacológico), porém sua ação não é imediata. Em uma paciente com sangramento vaginal intenso, a conduta cirúrgica (aspiração ou curetagem) é superior por ser mais rápida e definitiva na resolução da hemorragia.\n\nAlternativa (e) Incorreta: A realização de uma nova ultrassonografia em 12 horas posterga desnecessariamente o tratamento de uma urgência hemorrágica. O diagnóstico já foi estabelecido pela clínica e pela ultrassonografia atual, que demonstrou restos em grande quantidade. Aguardar 12 horas aumenta o risco de choque hipovolêmico, especialmente em uma paciente cardiopata que possui menor reserva funcional para lidar com perdas sanguíneas agudas.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:17.454Z"
+  },
+  {
+    "id": "AJUDA_3db3d09f-1fee-41ae-aa5a-794541189976",
+    "originalId": "3db3d09f-1fee-41ae-aa5a-794541189976",
+    "statement": "J.C.S., 66 anos de idade, em acompanhamento na Atenção Primária à Saúde. Refere “ter emagrecido” há alguns meses mesmo sem dieta. Não há pesagens recentes no prontuário. Sem queixas sistêmicas relevantes. Frente a situações como essa, a abordagem do Médico de Família e Comunidade deve considerar que a perda de peso não intencional",
+    "options": [
+      {
+        "id": "A",
+        "text": "é esperada em idosos, desde que não ultrapasse a perda fisiológica de 3 kg por ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "em até 50% dos casos não é confirmada por registros prévios, familiares ou ajuste das roupas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "na maioria das vezes é causada por etiologia neoplásica maligna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é um dado da história que, por si só, antecipa o rastreamento de neoplasias malignas por idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A perda de peso não intencional em idosos é uma queixa frequente na Atenção Primária à Saúde e exige uma abordagem sistematizada. O primeiro passo diante desse relato, conforme demonstrado no caso clínico em que não há registros prévios, é confirmar se a perda de peso é real ou apenas uma percepção subjetiva do paciente.\n\nAlternativa (a) Incorreta: A perda de peso não intencional nunca deve ser encarada como um processo fisiológico ou esperado do envelhecimento. Embora ocorram mudanças na composição corporal com o avançar da idade (como a redução da massa magra), uma perda ponderal significativa e não voluntária é um sinal de alerta que exige investigação. Não existe um valor de 3 kg por ano que seja considerado normal nessas circunstâncias.\n\nAlternativa (b) Correta: Esta é uma característica fundamental da prática clínica. Estudos mostram que aproximadamente 50 por cento dos pacientes que relatam perda de peso não intencional não apresentam uma perda real quando confrontados com registros objetivos de peso, observação de familiares ou sinais indiretos, como o ajuste das roupas (o cinto ficando mais largo ou roupas folgadas). Por isso, a confirmação da perda (geralmente definida como a perda de mais de 5 por cento do peso corporal em 6 a 12 meses) é o passo inicial da propedêutica.\n\nAlternativa (c) Incorreta: Embora a neoplasia maligna seja uma preocupação importante e uma causa clássica, ela não é a etiologia na maioria das vezes. Causas não neoplásicas, como depressão (causa psiquiátrica muito comum), doenças gastrointestinais benignas, hipertireoidismo, medicações e fatores sociais (isolamento, dificuldade de acesso a alimentos) são frequentes. Em cerca de 25 por cento dos casos, mesmo após investigação extensa, nenhuma causa específica é encontrada.\n\nAlternativa (d) Incorreta: Existe uma diferença conceitual importante aqui. O rastreamento (screening) é realizado em pacientes assintomáticos. Quando o paciente apresenta um sintoma ou sinal, como a perda de peso, o que se inicia é uma investigação diagnóstica direcionada. Além disso, a perda de peso isolada, sem outros sintomas, deve primeiro ser confirmada e acompanhada por uma anamnese detalhada e exame físico antes da solicitação de uma bateria exaustiva de exames de imagem ou marcadores tumorais.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Saúde do Idoso",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:17.454Z"
+  },
+  {
+    "id": "AJUDA_3db8b6ec-5ff3-448f-b822-27a21cccab65",
+    "originalId": "3db8b6ec-5ff3-448f-b822-27a21cccab65",
+    "statement": "Homem de 70 anos, portador de hipertensão arterial e diabetes mellitus, apresenta quadro de vômitos de repetição há 10 dias. Relata baixa aceitação de dieta há cerca de 3 meses associada à perda ponderal de 10kg nesse período. Atualmente apresenta IMC 16kg/m2. Realizada endoscopia digestiva alta que identifica grande quantidade de resíduo gástrico e impossibilidade de ultrapassar o piloro devido à lesão estenosante. Biópsia de congelação evidenciou adenocarcinoma. Diante do quadro, qual a conduta nutricional pré-operatória ideal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sonda nasogástrica para descompressão gástrica e programar cirurgia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sonda nasogástrica com dieta imunomoduladora até reganho ponderal seguida de abordagem cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dieta por via oral conforme aceitação associada à dieta imunomoduladora por 5-7 dias, seguida de abordagem cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nutrição parenteral total por 7-10 dias, seguida de abordagem cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nutrição enteral por gastrostomia por 7-10 dias, seguida de abordagem cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente em questão apresenta um quadro de adenocarcinoma gástrico estenosante na região do piloro, resultando em obstrução do trato de saída gástrico (vômitos de repetição e resíduo gástrico à endoscopia). Além do diagnóstico neoplásico, há um estado de desnutrição grave, caracterizado pelo IMC de 16 kg/m² e perda ponderal significativa (10 kg em 3 meses). \n\nSegundo as diretrizes da Sociedade Europeia de Nutrição Clínica e Metabolismo (ESPEN) e da Sociedade Brasileira de Nutrição Parenteral e Enteral (BRASPEN), pacientes com desnutrição grave que serão submetidos a cirurgias de grande porte devem receber suporte nutricional pré-operatório por 7 a 14 dias, mesmo que isso implique o adiamento da cirurgia. \n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A) Incorreta. Embora a descompressão gástrica com sonda nasogástrica seja importante para o alívio dos sintomas obstrutivos, a realização da cirurgia de urgência sem a devida compensação nutricional em um paciente com IMC de 16 kg/m² está associada a altas taxas de complicações pós-operatórias, como deiscência de anastomoses, infecções e óbito.\n\nAlternativa B) Incorreta. A sonda nasogástrica (SNG) posicionada no estômago serve para descompressão, não para alimentação em casos de estenose pilórica, pois o conteúdo não passará para o duodeno. Além disso, o objetivo do suporte nutricional pré-operatório não é o reganho total do peso perdido (o que seria impossível em poucos dias), mas sim a melhora do balanço nitrogenado e da resposta metabólica ao estresse cirúrgico.\n\nAlternativa C) Incorreta. O paciente apresenta uma lesão estenosante que impede a passagem do endoscópio e causa vômitos de repetição. Portanto, a via oral não é viável para atingir as metas calórico-proteicas necessárias para a recuperação nutricional pré-operatória.\n\nAlternativa D) Correta. Diante da impossibilidade de utilizar o trato gastrointestinal de forma eficaz (devido à obstrução pilórica) e da necessidade imperativa de suporte nutricional devido à desnutrição grave, a Nutrição Parenteral Total (NPT) por 7 a 10 dias é a conduta ideal. Esse período é suficiente para melhorar os parâmetros metabólicos e reduzir os riscos cirúrgicos.\n\nAlternativa E) Incorreta. A gastrostomia não seria eficaz, pois a obstrução está no piloro; o alimento infundido no estômago permaneceria retido. A alternativa para nutrição enteral seria uma jejunostomia, porém, em um contexto de pré-operatório imediato de um paciente obstruído e gravemente desnutrido, a NPT é a via de escolha mais rápida e segura para a otimização metabólica sem a necessidade de um procedimento cirúrgico ou endoscópico invasivo adicional apenas para o acesso alimentar.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Perioperatório",
+      "Neoplasias do Estômago e do Esôfago",
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:17.454Z"
+  },
+  {
+    "id": "AJUDA_3dc0b2b7-f948-4505-a5fd-7db9bcac1864",
+    "originalId": "3dc0b2b7-f948-4505-a5fd-7db9bcac1864",
+    "statement": "Um homem de 55 anos de idade era tabagista já há 40 anos. Durante a consulta, ele manifestou desejo em parar de fumar, porém não referiu tentativas anteriores. Nos últimos 10 anos, tem fumado 30 cigarros por dia. O homem afirmou que fuma o primeiro cigarro imediatamente após acordar. Ele referiu que fuma mais frequentemente pela manhã e que tinha dificuldade para deixar de fumar o primeiro cigarro matinal. Além disso, ele citou que não considerava difícil evitar fumar em locais proibidos e que, quando estava doente, não fumava. \n\nCom base nesse caso clínico hipotético e utilizando a escala de Fagerstron, que avalia o grau de dependência química à nicotina, é correto afirmar que a pontuação e a classificação da dependência referente a esse paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "7 pontos, dependência BAIXA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "7 pontos, dependência ELEVADA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "7 pontos, dependência MODERADA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "8 pontos, dependência ELEVADA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "9 pontos, dependência MUITO ELEVADA.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos aplicar os critérios da Escala de Fagerström, que avalia o grau de dependência de nicotina por meio de seis perguntas específicas. Vamos pontuar o caso clínico passo a passo:\n\n1. Tempo após acordar para o primeiro cigarro: O paciente fuma imediatamente após acordar (menos de 5 minutos). Pontuação: 3 pontos.\n2. Dificuldade em não fumar em locais proibidos: O paciente afirmou que não considera difícil evitar fumar nesses locais. Pontuação: 0 pontos.\n3. Cigarro que mais traz satisfação (ou mais difícil de abandonar): O paciente relatou dificuldade para deixar o primeiro cigarro matinal. Pontuação: 1 ponto.\n4. Quantidade de cigarros por dia: O paciente fuma 30 cigarros por dia. A pontuação para 21 a 30 cigarros é de 2 pontos. Pontuação: 2 pontos.\n5. Fuma mais frequentemente pela manhã do que no resto do dia: O paciente confirmou que fuma mais pela manhã. Pontuação: 1 ponto.\n6. Fuma mesmo quando está doente e acamado: O paciente referiu que, quando estava doente, não fumava. Pontuação: 0 pontos.\n\nSoma total da pontuação: 3 + 0 + 1 + 2 + 1 + 0 = 7 pontos.\n\nA interpretação do escore de Fagerström é a seguinte:\n0 a 2 pontos: Dependência muito baixa.\n3 a 4 pontos: Dependência baixa.\n5 pontos: Dependência média/moderada.\n6 a 7 pontos: Dependência elevada.\n8 a 10 pontos: Dependência muito elevada.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O cálculo de 7 pontos está correto; porém, de acordo com a escala, 7 pontos correspondem à dependência elevada, e não à baixa. A dependência baixa situa-se entre 3 e 4 pontos.\n\nAlternativa B (Correta): O cálculo resulta em 7 pontos, e a classificação para essa pontuação é dependência elevada (escore de 6 a 7).\n\nAlternativa C (Incorreta): Embora o cálculo de 7 pontos esteja correto, a classificação moderada é atribuída especificamente à pontuação 5.\n\nAlternativa D (Incorreta): O cálculo da pontuação está errado. Para chegar a 8 pontos, o paciente precisaria, por exemplo, fumar mais de 30 cigarros por dia ou ter dificuldade em locais proibidos, o que não ocorre no relato.\n\nAlternativa E (Incorreta): A pontuação está incorreta. A classificação de dependência muito elevada é reservada para escores entre 8 e 10 pontos. O paciente atingiu 7 pontos.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:17.454Z"
+  }
+]

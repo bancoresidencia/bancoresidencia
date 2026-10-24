@@ -727,24 +727,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 ) : (
                   <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400 shrink-0" />
                 )}
-                <span>
-                  {isAnuladaQuestion
-                    ? 'Resolvida • Anulada'
-                    : previousIsCorrect
-                    ? `Resolvida • Acertou (${userAnswer})`
-                    : `Resolvida • Errou (${userAnswer})`}
-                </span>
-                {isAnswered && (
-                  <button
-                    type="button"
-                    onClick={handleStartReSolve}
-                    title="Resolver novamente esta questão"
-                    className="ml-1 inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-white dark:bg-zinc-900 border border-current hover:opacity-80 transition-all cursor-pointer shadow-2xs"
-                  >
-                    <RotateCcw className="w-2.5 h-2.5" />
-                    <span>Refazer</span>
-                  </button>
-                )}
+                <span>Resolvida</span>
+                <button
+                  type="button"
+                  onClick={handleStartReSolve}
+                  title="Resolver novamente esta questão"
+                  className="ml-1 inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-white dark:bg-zinc-900 border border-current hover:opacity-80 transition-all cursor-pointer shadow-2xs"
+                >
+                  <RotateCcw className="w-2.5 h-2.5" />
+                  <span>Refazer</span>
+                </button>
               </div>
             )}
 
@@ -1157,55 +1149,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 <span>{hasPreviousAnswer ? 'Resolver Novamente' : 'Resolver'}</span>
               </button>
             </div>
-          ) : (
-            /* Banner pós-resposta */
-            <div
-              className={`p-3.5 rounded-2xl flex flex-wrap items-center justify-between gap-3 text-xs font-bold border shadow-xs ${
-                isAnuladaQuestion
-                  ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 border-amber-200 dark:border-amber-800/60'
-                  : isUserCorrect
-                  ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/60'
-                  : 'bg-rose-50 dark:bg-rose-950/40 text-rose-800 dark:text-rose-300 border-rose-200 dark:border-rose-800/60'
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                {isAnuladaQuestion ? (
-                  <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
-                ) : isUserCorrect ? (
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                ) : (
-                  <XCircle className="w-4 h-4 text-rose-600 shrink-0" />
-                )}
-                <span>
-                  {isAnuladaQuestion
-                    ? 'Questão anulada pela banca. Pontuação creditada a todos os candidatos (não conta como erro).'
-                    : isUserCorrect
-                    ? 'Parabéns! Você acertou a questão!'
-                    : `Você errou esta questão. O gabarito oficial é Alternativa ${question.correctAnswer}.`}
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <button
-                  type="button"
-                  onClick={handleStartReSolve}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-current bg-white/70 dark:bg-zinc-900/70 hover:opacity-90 font-bold transition-all cursor-pointer shadow-2xs"
-                  title="Resolver esta questão novamente"
-                >
-                  <RotateCcw className="w-3 h-3" />
-                  <span>Refazer</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setShowCommentary(!showCommentary)}
-                  className="text-[11px] underline cursor-pointer hover:opacity-80"
-                >
-                  {showCommentary ? 'Recolher Gabarito' : 'Ver Comentário'}
-                </button>
-              </div>
-            </div>
-          )}
+          ) : null}
         </div>
       ) : (
         /* Questão Dissertativa */

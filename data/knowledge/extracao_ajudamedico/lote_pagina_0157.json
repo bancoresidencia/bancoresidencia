@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_2bb1bac1-071b-4452-b6c6-65916e564dea",
+    "originalId": "2bb1bac1-071b-4452-b6c6-65916e564dea",
+    "statement": "Uma gestante de 28 anos, G2P1, com 36 semanas de gestação, comparece à maternidade em trabalho de parto inicial. Durante a admissão, recusa formalmente a realização de cesariana, mesmo após explicações detalhadas, caso ocorra sofrimento fetal agudo, alegando convicções pessoais. O prontuário revela adequada capacidade de compreensão, ausência de transtorno mental e assinatura de termo de recusa informado. Algumas horas depois, o cardiotocograma passa a mostrar desacelerações tardias recorrentes, compatíveis com sofrimento fetal. Não há risco iminente de morte materna.\n\nÀ luz dos princípios éticos e bioéticos aplicáveis à obstetrícia no Brasil, a conduta eticamente mais adequada do obstetra é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar a cesariana imediatamente, priorizando o princípio da beneficência fetal, mesmo sem consentimento da gestante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar autorização judicial de urgência para realização da cesariana, uma vez que o direito à vida fetal se sobrepõe à autonomia materna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Respeitar a recusa da gestante, manter vigilância clínica rigorosa, registrar adequadamente a decisão e oferecer suporte contínuo, mesmo diante do sofrimento fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transferir a paciente para outra instituição para que outro profissional assuma a decisão, isentando-se de responsabilidade ética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sedar a paciente e proceder à cesariana, justificando a intervenção como estado de necessidade médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda um dos temas mais sensíveis da bioética obstétrica: o conflito entre a autonomia da gestante e a beneficência fetal. No Brasil, o principal balizador ético para essa situação é a Resolução do Conselho Federal de Medicina (CFM) nº 2.232/2019, que estabelece normas éticas para a recusa terapêutica por pacientes e o dever do médico diante de tais situações.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a beneficência fetal seja um valor importante, o médico não pode realizar uma cirurgia invasiva (cesariana) contra a vontade expressa de uma paciente capaz e bem informada. A autonomia da mulher sobre o próprio corpo é soberana nessas circunstâncias, desde que não haja risco iminente de morte para a própria mãe. Impor o procedimento configuraria uma violação ética e até legal.\n\nb) Incorreta. A busca por autorização judicial para intervir contra a vontade da gestante tem sido desencorajada tanto por diretrizes éticas quanto por entendimentos jurídicos recentes que priorizam a autonomia reprodutiva. O médico deve atuar dentro da relação médico-paciente e respeitar a decisão documentada, sem judicializar o parto de forma coercitiva.\n\nc) Correta. Esta alternativa reflete exatamente o que preconiza a Resolução CFM 2.232/2019. Se a gestante é plenamente capaz, compreende os riscos, foi devidamente informada e registrou sua recusa formalmente, o médico deve respeitar essa decisão. O dever do profissional passa a ser: garantir a melhor assistência possível dentro dos limites aceitos pela paciente, manter a vigilância clínica, registrar detalhadamente em prontuário e não abandonar a assistência, oferecendo suporte contínuo.\n\nd) Incorreta. A transferência de uma paciente em trabalho de parto com sofrimento fetal agudo para outra instituição apenas para \"isentar-se de responsabilidade\" é uma conduta antiética. Caracteriza abandono de paciente e expõe a gestante a riscos adicionais durante o transporte. O médico deve assumir o caso respeitando os limites impostos pela autonomia da paciente.\n\ne) Incorreta. Sedar uma paciente para realizar um procedimento que ela recusou conscientemente é uma violação gravíssima dos direitos humanos e da ética médica. O \"estado de necessidade\" não se aplica aqui para ignorar a recusa de uma paciente capaz; tal ato seria considerado uma violência obstétrica e agressão física.\n\nConclusão:\nO caso reforça que o direito à recusa terapêutica, quando exercido por paciente capaz e após esclarecimento de riscos, deve ser respeitado pelo médico, mesmo que a decisão resulte em dano ao feto, desde que a vida da gestante não esteja em risco imediato. A conduta ética foca no respeito à autonomia, no suporte clínico-assistencial e na documentação rigorosa do processo.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Vitalidade Fetal",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:28.543Z"
+  },
+  {
+    "id": "AJUDA_2bb85b07-a71b-41f0-bba7-4cb17febe33c",
+    "originalId": "2bb85b07-a71b-41f0-bba7-4cb17febe33c",
+    "statement": "Uma criança com suspeita de infecção por mononucleose apresenta fadiga intensa e linfadenopatia generalizada. Qual é o agente etiológico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Citomegalovírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Epstein-Barr vírus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Streptococcus pyogenes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Varicela-zoster vírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A mononucleose infecciosa é uma síndrome clínica clássica, caracterizada pela tríade de febre, faringite e linfadenopatia (especialmente em cadeias cervicais posteriores), frequentemente acompanhada de fadiga intensa e esplenomegalia.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O citomegalovírus (CMV) é a principal causa da chamada \"síndrome mononucleose-like\" (quadro semelhante à mononucleose), porém com anticorpos heterófilos negativos. Clinicamente, o CMV costuma causar menos faringite e linfadenopatia menos proeminente do que o vírus Epstein-Barr, sendo um agente menos frequente na apresentação clássica descrita.\n\nAlternativa (b) Correta. O vírus Epstein-Barr (EBV), um herpesvírus humano tipo 4, é o agente etiológico de mais de 90% dos casos de mononucleose infecciosa. Ele infecta as células do epitélio da orofaringe e os linfócitos B, resultando na resposta imune de linfócitos T citotóxicos (linfócitos atípicos no hemograma) e nos sintomas sistêmicos de fadiga e linfadenopatia generalizada mencionados na questão.\n\nAlternativa (c) Incorreta. O Streptococcus pyogenes (estreptococo do grupo A) é o principal agente da faringite bacteriana. Embora cause febre, dor de garganta e linfadenopatia cervical anterior, ele não provoca linfadenopatia generalizada nem a fadiga sistêmica prolongada e intensa característica da mononucleose. É, no entanto, um importante diagnóstico diferencial ou complicação secundária (coinfecção).\n\nAlternativa (d) Incorreta. O vírus varicela-zóster é o agente causador da catapora (varicela) e do cobreiro (herpes-zóster). A sua apresentação clínica típica envolve exantemas vesiculares cutâneos característicos, e não a síndrome de linfadenopatia generalizada e faringite persistente da mononucleose.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:28.543Z"
+  },
+  {
+    "id": "AJUDA_2bbc8835-0c9e-4d42-867c-f2cfadb6f0a5",
+    "originalId": "2bbc8835-0c9e-4d42-867c-f2cfadb6f0a5",
+    "statement": "Paciente masculino, de 67 anos, veio à Emergência por dor torácica típica em repouso, com início há 2 horas, que se irradiava para o braço esquerdo, acompanhada de sudorese. Em seu histórico, constavam hipertensão arterial e diabetes melito tipo 2. Todos os exames laboratoriais encontravam-se dentro dos limites da normalidade, exceto a troponina ultrassensível, discretamente aumentada (2,3 vezes o valor de referência). A eletrocardiografia realizada à admissão está reproduzida abaixo. Com base nas diretrizes atuais, qual a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Instituir tratamento clínico conservador e agendar teste ergométrico ambulatorial em 72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar dupla antiagregação plaquetária e anticoagulação e encaminhar o paciente para cinecoronariografia em até 72 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar apenas AAS e observar a evolução clínica, com dosagem de troponina em 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar trombólise com alteplase em razão da dor torácica e da troponina elevada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente de 67 anos apresenta um quadro clássico de síndrome coronariana aguda (SCA). Os elementos fundamentais para o diagnóstico são a dor torácica típica em repouso com irradiação e sudorese, associada a fatores de risco importantes como hipertensão arterial e diabetes melito. O exame laboratorial mostra uma troponina ultrassensível elevada (2,3 vezes o limite superior), o que confirma a presença de lesão miocárdica.\n\nAnálise do Eletrocardiograma (ECG):\n\nA imagem do ECG revela um ritmo sinusal, sem a presença de supradesnivelamento do segmento ST. No entanto, nota-se um infradesnivelamento do segmento ST, visível principalmente nas derivações laterais (I, aVL, V5 e V6) e possivelmente em parede inferior (II, III e aVF). Esse conjunto de achados clínicos, laboratoriais e eletrocardiográficos fecha o diagnóstico de Infarto Agudo do Miocárdio sem Supradesnivelamento do Segmento ST (IAMSSST).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O tratamento conservador com agendamento de teste ergométrico é contraindicado para pacientes com infarto agudo em fase inicial. O teste de esforço pode precipitar arritmias graves ou a oclusão total da artéria coronária em um paciente que já apresenta troponina positiva e instabilidade clínica.\n\nAlternativa b) Correta. Esta é a conduta preconizada pelas diretrizes da Sociedade Brasileira de Cardiologia e demais diretrizes internacionais (ESC/AHA). O tratamento inicial do IAMSSST baseia-se na estabilização do trombo e da placa aterosclerótica através da dupla antiagregação plaquetária (Aspirina associada a um inibidor do receptor P2Y12, como clopidogrel, ticagrelor ou prasugrel) e anticoagulação sistêmica (como enoxaparina ou heparina não fracionada). Por se tratar de um paciente de risco (pela elevação da troponina e presença de diabetes), ele deve ser submetido a uma estratégia invasiva (cinecoronariografia) durante a internação, geralmente em até 24 a 72 horas, para definir a anatomia e realizar a revascularização se necessário.\n\nAlternativa c) Incorreta. Iniciar apenas AAS é insuficiente para um paciente com diagnóstico confirmado de infarto. A dupla antiagregação e a anticoagulação são essenciais para reduzir a recorrência de eventos isquêmicos e a mortalidade. Além disso, como a troponina já está alterada no momento da admissão (coletada 2 horas após o início da dor), o diagnóstico já está estabelecido, não sendo correto apenas aguardar nova dosagem sem instituir a terapia completa.\n\nAlternativa d) Incorreta. A trombólise (uso de fibrinolíticos como alteplase, tenecteplase ou estreptoquinase) é indicada exclusivamente para o Infarto Agudo do Miocárdio COM Supradesnivelamento do Segmento ST (IAMCSST) quando a angioplastia primária não pode ser realizada em tempo hábil. No IAM SEM supra de ST, a trombólise não traz benefícios e está associada a um aumento significativo do risco de sangramentos graves e possível agravamento da oclusão coronariana.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/cfb6605e940787abf5c4d5e72e7a53de70238b044e327b1cac90e985c3728f06.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2bbc8835-0c9e-4d42-867c-f2cfadb6f0a5_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:28.941Z"
+  },
+  {
+    "id": "AJUDA_2bc0b325-cf42-4a15-829c-a19249dcd3c8",
+    "originalId": "2bc0b325-cf42-4a15-829c-a19249dcd3c8",
+    "statement": "Sobre o perfil epidemiológico da neoplasia sólido-pseudopapilar do pâncreas (Tumor de Frantz), assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ocorre predominantemente em homens acima de 60 anos, com comportamento altamente agressivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É mais comum em mulheres jovens, entre a segunda e terceira décadas de vida, com baixo potencial maligno.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "É o tumor pancreático mais comum na infância, predominando em meninos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apresenta incidência semelhante entre os sexos e costuma surgir em pacientes com pancreatite crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "É típico de pacientes idosos e está fortemente associado a mutações BRCA1/2.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Tumor de Frantz, ou neoplasia sólido-pseudopapilar do pâncreas, é uma patologia rara que frequentemente aparece em provas de residência devido ao seu perfil demográfico muito característico. Vamos analisar cada alternativa:\n\nAlternativa A: INCORRETA. O perfil descrito (homens idosos com comportamento agressivo) é mais sugestivo do adenocarcinoma ductal de pâncreas, que é o tumor pancreático mais comum. O Tumor de Frantz, ao contrário, tem crescimento lento e bom prognóstico na maioria dos casos.\n\nAlternativa B: CORRETA. Esta é a descrição clássica da epidemiologia do Tumor de Frantz. Cerca de 90% dos casos ocorrem em mulheres jovens, tipicamente entre os 20 e 30 anos de idade. Apesar de ser classificado como uma neoplasia epitelial maligna de baixo grau, ele possui baixo potencial de invasão e metástases, apresentando excelentes taxas de cura após a ressecção cirúrgica completa.\n\nAlternativa C: INCORRETA. Embora o Tumor de Frantz possa ocorrer em crianças, o tumor pancreático mais comum na infância é o pancreatoblastoma. Além disso, o Tumor de Frantz mantém a predominância feminina mesmo em faixas etárias mais baixas.\n\nAlternativa D: INCORRETA. Não há incidência semelhante entre os sexos; a disparidade em favor do sexo feminino é marcante (razão de aproximadamente 9:1). Também não existe associação descrita entre a patogênese deste tumor e quadros de pancreatite crônica.\n\nAlternativa E: INCORRETA. Pacientes idosos e mutações nos genes BRCA1/2 estão associados ao aumento do risco de adenocarcinoma de pâncreas, não ao Tumor de Frantz. A base genética do Tumor de Frantz está quase universalmente ligada a mutações no gene CTNNB1 (via da beta-catenina).",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:28.941Z"
+  },
+  {
+    "id": "AJUDA_2bc1ee68-b11d-4a6e-b099-2c4e7c31b942",
+    "originalId": "2bc1ee68-b11d-4a6e-b099-2c4e7c31b942",
+    "statement": "RN, sexo masculino, nascido de parto vaginal, com gravidez e parto sem intercorrências, IG de 38 semanas, peso ao nascimento de 3.125g e comprimento de 41 cm, apresentou, ainda na maternidade, retardo na eliminação de mecônio espontaneamente nas primeiras 48 horas de vida, além de distensão abdominal e vômitos. Observa-se ainda a deflação explosiva de gases e presença de fezes apenas diante do toque retal. Sobre este caso, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o diagnóstico de certeza da doença de Hirschsprung depende da não caracterização de células ganglionares nos plexos de Meissner e Auerbach.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a afecção manifesta-se em aproximadamente 1:25.000 recém-nascidos, sendo 4 vezes mais frequente no sexo feminino do que no masculino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o tratamento definitivo é sempre cirúrgico, com ressecção do segmento ganglionar e levantamento do segmento intestinal com inervação normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "como diagnósticos diferenciais, há erros alimentares, alterações endócrino-metabólicas, lesões orgânicas anorretais, mas nunca distúrbios psicogênicos e distúrbios neurológicos centrais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um recém-nascido com sinais clássicos de obstrução intestinal funcional, sugerindo fortemente a Doença de Hirschsprung, também conhecida como megacólon congênito. Os achados de atraso na eliminação de mecônio além das 48 horas de vida, distensão abdominal, vômitos e o sinal do toque retal positivo (saída explosiva de gases e fezes após a descompressão) são marcos desta patologia.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A Doença de Hirschsprung é caracterizada pela ausência congênita de células ganglionares nos plexos nervosos submucoso (Meissner) e mioentérico (Auerbach) em um segmento da parede intestinal. Essa aganglionose ocorre devido a uma falha na migração cefalocaudal das células da crista neural entre a 5ª e a 12ª semana de gestação. O diagnóstico de certeza (padrão-ouro) é estabelecido pela biópsia retal, que demonstra a ausência dessas células ganglionares e, frequentemente, a presença de fibras nervosas colinérgicas hipertróficas.\n\nAlternativa b) Incorreta. A incidência estimada da Doença de Hirschsprung é de aproximadamente 1 para cada 5.000 nascidos vivos. Além disso, a doença é predominantemente masculina, afetando cerca de 4 meninos para cada 1 menina.\n\nAlternativa c) Incorreta. O tratamento definitivo é cirúrgico, porém o procedimento consiste na ressecção do segmento aganglionar (a parte doente que não relaxa) e no abaixamento do segmento intestinal com inervação normal (ganglionar) para a região anorretal. A alternativa afirma de forma equivocada que a ressecção deve ser do segmento ganglionar.\n\nAlternativa d) Incorreta. No diagnóstico diferencial da constipação intestinal na infância e de quadros obstrutivos neonatais, devem ser considerados erros alimentares, causas metabólicas (como hipotireoidismo e fibrose cística), lesões anatômicas (como estenose anal) e também distúrbios neurológicos e psicogênicos. Embora a causa psicogênica não seja a principal hipótese em um recém-nascido de 48 horas, ela faz parte do diagnóstico diferencial da constipação em crianças maiores. O termo \"nunca\" invalida a alternativa na prática médica.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:28.941Z"
+  },
+  {
+    "id": "AJUDA_2bc25acf-3716-4648-ac10-d6cd9f4f70da",
+    "originalId": "2bc25acf-3716-4648-ac10-d6cd9f4f70da",
+    "statement": "Homem, 68 anos, com DPOC, diabetes mellitus e insuficiência renal crônica (ClCr 35 mL/min), interna por pneumonia associada à ventilação mecânica (PAV). No terceiro dia de internação, apresenta febre, secreção purulenta abundante no tubo orotraqueal e leucocitose. A gasometria mostra hipoxemia moderada. Foi iniciada terapia empírica com meropenem e vancomicina. Após 48h, o resultado de cultura de aspirado traqueal identificou Klebsiella pneumoniae, ESBL + e com sensibilidade plena aos carbapenêmicos, e hemoculturas negativas. O paciente apresenta melhora clínica e estabilidade hemodinâmica. Com base nos princípios de Stewardship Antimicrobiano, qual deve ser a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter meropenem e vancomicina por 14 dias, devido à gravidade do quadro inicial;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender vancomicina, manter meropenem em monoterapia ajustado à função renal e reavaliar tempo de tratamento total;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Descalonar meropenem para ceftriaxona, já que houve melhora clínica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender todos os antimicrobianos, já que as hemoculturas foram negativas;",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso aborda o conceito de Stewardship Antimicrobiano (gerenciamento e uso racional de antimicrobianos) no tratamento da Pneumonia Associada à Ventilação Mecânica (PAV).\n\nAlternativa A - Incorreta. Manter a vancomicina é inadequado porque a cultura identificou apenas um bacilo Gram-negativo e as hemoculturas foram negativas, afastando a necessidade de cobertura para Gram-positivos (como o MRSA). Além disso, o tempo fixo de 14 dias é excessivo; as diretrizes atuais recomendam cursos mais curtos de antibioticoterapia (em geral 7 dias) para pacientes com PAV que apresentam boa resposta clínica.\n\nAlternativa B - Correta. Representa com precisão as boas práticas de stewardship: suspende-se a vancomicina por desescalonamento (ausência de patógeno Gram-positivo), mantém-se o meropenem em monoterapia por ser o tratamento de escolha para enterobactérias produtoras de ESBL, realiza-se o ajuste de dose para a taxa de filtração glomerular do paciente (ClCr de 35 mL/min) a fim de evitar toxicidade, e reavalia-se a duração total do tratamento com foco no menor tempo eficaz possível.\n\nAlternativa C - Incorreta. As cepas produtoras de ESBL (Beta-lactamase de Espectro Estendido) conferem resistência a todas as cefalosporinas de primeira a quarta geração, incluindo a ceftriaxona, além de penicilinas e aztreonam. Trocar para ceftriaxona resultaria em falha terapêutica e recaída infecciosa.\n\nAlternativa D - Incorreta. A maioria dos pacientes com pneumonia não apresenta bacteremia; portanto, hemoculturas negativas não afastam a infecção pulmonar. O diagnóstico de PAV foi confirmado pela clínica, piora gasométrica e isolamento de patógeno representativo no aspirado traqueal, sendo mandatória a conclusão do tratamento direcionado.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Ventilação Mecânica",
+      "Pneumonias Bacterianas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:28.941Z"
+  },
+  {
+    "id": "AJUDA_2bd061fc-a3ac-4118-8ed5-8eafa441ba80",
+    "originalId": "2bd061fc-a3ac-4118-8ed5-8eafa441ba80",
+    "statement": "A hipoglicemia no período neonatal e na infância exige investigação etiológica precisa. Analise as afirmativas a seguir sobre o diagnóstico diferencial entre hiperinsulinismo congênito e deficiências hormonais:\n\nI.No hiperinsulinismo congênito, observa-se hipoglicemia hipocetótica (ausência de corpos cetônicos) e ácidos graxos livres plasmáticos baixos durante o episódio de hipoglicemia, devido ao efeito lipogênico e antilipolítico da insulina.\nII.A deficiência de hormônio do crescimento (GH) e cortisol cursa tipicamente com hipoglicemia cetótica, uma vez que a via da lipólise e cetogênese está intacta e é ativada na ausência da gliconeogênese hepática adequada.\nIII.A resposta glicêmica ao teste do glucagon é nula ou muito baixa no hiperinsulinismo, pois os estoques de glicogênio hepático estão depletados pela ação contínua da insulina, diferentemente das doenças de depósito de glicogênio.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA AFIRMATIVA I: ESTÁ CORRETA. A insulina é um hormônio predominantemente anabólico e, quando em excesso, exerce um forte efeito antilipolítico e anticetogênico. Isso ocorre porque a insulina inibe a enzima lipase sensível ao hormônio, impedindo a quebra de triglicerídeos em ácidos graxos livres. Além disso, ela bloqueia a entrada de ácidos graxos na mitocôndria para a formação de corpos cetônicos. Portanto, no hiperinsulinismo, durante o episódio de hipoglicemia, o organismo não consegue mobilizar gordura como fonte de energia alternativa, resultando em níveis baixos de ácidos graxos livres e ausência de cetonúria ou cetonemia (hipoglicemia hipocetótica).\n\nANÁLISE DA AFIRMATIVA II: ESTÁ CORRETA. O hormônio do crescimento (GH) e o cortisol são hormônios contrarreguladores essenciais para a manutenção da glicemia em períodos de jejum, estimulando a gliconeogênese e a glicogenólise. Na deficiência desses hormônios, o fígado falha em produzir glicose adequadamente. Diferente do que ocorre no hiperinsulinismo, aqui não há um bloqueio da lipólise. Pelo contrário, a baixa glicemia e a ausência de insulina elevada permitem que o corpo quebre gorduras para tentar obter energia, gerando corpos cetônicos. Por isso, essas deficiências hormonais cursam tipicamente com hipoglicemia cetótica.\n\nANÁLISE DA AFIRMATIVA III: ESTÁ INCORRETA. No hiperinsulinismo, a ação contínua da insulina promove o estoque excessivo de glicose sob a forma de glicogênio hepático. Ao contrário do que afirma o item, os estoques não estão depletados, mas sim aumentados. Por essa razão, o teste do glucagon (que estimula a conversão de glicogênio em glicose) apresenta uma resposta glicêmica exuberante e diagnóstica: a administração de glucagon provoca uma elevação rápida e significativa da glicemia (geralmente maior que 30 mg/dL), pois há muito glicogênio disponível para ser mobilizado. Uma resposta nula ou baixa ao glucagon seria esperada em condições de jejum prolongado extremo, desnutrição ou em algumas formas de doenças de depósito de glicogênio em que a enzima de liberação está ausente.\n\nCONCLUSÃO: Considerando que as afirmativas I e II estão tecnicamente corretas e a afirmativa III descreve o mecanismo inverso ao que ocorre na patologia, a alternativa correta é a letra (c).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Hipoglicemia no Paciente Não Diabético"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:28.941Z"
+  },
+  {
+    "id": "AJUDA_2bd5618d-4dbb-4fa7-95ec-d2731628c413",
+    "originalId": "2bd5618d-4dbb-4fa7-95ec-d2731628c413",
+    "statement": "Paciente com amenorreia há 12 semanas, foi a maternidade referindo sangramento vaginal. Ao exame ginecológico observou-se sangramento vaginal e ao toque vaginal o útero estava intrapélvico. À ultrassonografia transvaginal o eco endometrial mediu 5,3 mm. Não foi evidenciado saco gestacional intrauterino. O Beta HCG anotado no cartão de pré-natal era 3500 mlU/ml. O resultado do Beta HCG solicitado na maternidade foi 2000 mlU/ml. Qual a principal hipótese diagnóstica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abortamento retido",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Abortamento evitável",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Abortamento completo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Abortamento incompleto",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar os dados clínicos, laboratoriais e ultrassonográficos apresentados.\n\nAnálise do quadro clínico:\n1. Amenorreia e Sangramento: A paciente tem 12 semanas de amenorreia, o que sugere uma gestação de primeiro trimestre. O sangramento vaginal indica uma intercorrência gestacional.\n2. Exame Físico (Toque Vaginal): O útero encontra-se intrapélvico. Em uma gestação de 12 semanas, o útero normalmente já seria palpável acima da sínfise púbica. Um útero pequeno para a idade gestacional sugere que o conteúdo uterino já foi expelido ou que a gestação não se desenvolveu.\n3. Ultrassonografia: O eco endometrial de 5,3 mm é considerado fino. Na prática obstétrica, um eco endometrial menor que 10 mm (ou 15 mm, a depender do protocolo) após um sangramento gestacional é um sinal clássico de cavidade uterina vazia. Além disso, a ausência de saco gestacional confirma que não há mais produto conceptual no útero.\n4. Beta-hCG: Houve uma queda nos níveis de 3.500 mUI/mL para 2.000 mUI/mL. Níveis decrescentes de hCG confirmam uma gestação não evolutiva e em processo de resolução.\n\nAnálise das alternativas:\n\na) Abortamento retido: Incorreto. No abortamento retido, o produto da concepção (saco gestacional e/ou embrião sem batimentos) permanece dentro da cavidade uterina. O eco endometrial seria condizente com a presença desses tecidos, e não apresentaria um valor fino de 5,3 mm.\n\nb) Abortamento evitável (ou Ameaça de abortamento): Incorreto. Caracteriza-se por sangramento vaginal com colo uterino fechado, mas a gestação ainda é viável. A ultrassonografia mostraria um saco gestacional íntegro e, geralmente, um embrião com batimentos cardíacos presentes. O Beta-hCG tenderia a subir ou se manter estável, e não cair.\n\nc) Abortamento completo: Correto. É a expulsão total do conteúdo uterino. Os critérios que definem esta alternativa na questão são: o útero de tamanho normal (intrapélvico), a queda nos níveis de Beta-hCG e, fundamentalmente, o eco endometrial fino (5,3 mm) observado na ultrassonografia, indicando que não há restos ovulares.\n\nd) Abortamento incompleto: Incorreto. No abortamento incompleto, parte do conteúdo gestacional é expelido, mas ainda restam tecidos (restos ovulares) no útero. Nesses casos, a ultrassonografia revelaria um eco endometrial espessado (geralmente acima de 15 mm) e heterogêneo, diferente do eco de 5,3 mm relatado.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:28.941Z"
+  },
+  {
+    "id": "AJUDA_2bddc4ec-35ac-4ee0-ba64-bdcc23e7c965",
+    "originalId": "2bddc4ec-35ac-4ee0-ba64-bdcc23e7c965",
+    "statement": "Paciente do sexo feminino, 27 anos, é atendida em Unidade de Pronto Atendimento (UPA) com história de dor abdominal, com início em epigástrio há dois dias, contínua, sem fatores de melhora, associada a náuseas e perda de apetite, evoluindo para dor em fossa ilíaca direita há 1 dia e febre de 38,2 graus Celsius no dia do atendimento. Nega comorbidades, cirurgias prévias ou uso de medicações regulares. Relata que a última menstruação foi há 23 dias, e apresenta ciclos regulares de 28 dias. \nAo exame físico, apresenta regular estado geral, corada, desidratada uma cruz em quatro, eupneica, anictérica, acianótica; ausculta pulmonar e cardíaca sem alterações; ruídos hidroaéreos diminuídos, descompressão brusca dolorosa em quadrante inferior de abdome à direita.\nExames:\n\nConsiderando o diagnóstico mais provável, a conduta adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar antibioticoterapia empírica até resultado de exame de urocultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar tomografia computadorizada de abdome e iniciar metotrexato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar antibioticoterapia empírica e acompanhamento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar ultrassonografia de abdome e solicitar parecer cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de apendicite aguda. A sequência de dor que se inicia no epigástrio e migra para a fossa ilíaca direita (sinal de Kocher), acompanhada de anorexia, náuseas, febre e sinal de Blumberg positivo (descompressão brusca dolorosa), aponta fortemente para essa patologia. O hemograma confirma um processo infeccioso/inflamatório por meio da leucocitose com desvio à esquerda (presença de 7% de bastonetes).\n\nA presença de leucócitos e hemácias na urina, em um contexto de dor em fossa ilíaca direita, pode ocorrer pela proximidade do apêndice inflamado com o ureter ou a bexiga, causando uma inflamação reacional do trato urinário, o que não confirma necessariamente uma infecção urinária. O Beta-hCG negativo exclui gravidez ectópica, um importante diagnóstico diferencial em mulheres jovens.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora existam alterações no exame de urina, a clínica de dor migratória com sinais de irritação peritoneal é soberana para o diagnóstico de apendicite. Tratar apenas como infecção urinária retardaria o diagnóstico de uma urgência cirúrgica, podendo levar à perfuração e à peritonite.\n\nAlternativa b) Incorreta. O uso de metotrexato é indicado para o tratamento medicamentoso da gravidez ectópica íntegra em casos selecionados. Como o Beta-hCG da paciente é negativo, essa hipótese está descartada.\n\nAlternativa c) Incorreta. Diante de um quadro de abdome agudo inflamatório com sinais de peritonite (descompressão brusca dolorosa), o acompanhamento ambulatorial é contraindicado devido ao alto risco de complicações graves. O tratamento requer internação e, na maioria das vezes, intervenção cirúrgica.\n\nAlternativa d) Correta. Em mulheres em idade fértil, a realização de exames de imagem é recomendada para confirmar o diagnóstico e excluir diagnósticos diferenciais ginecológicos (como cistos ovarianos ou doença inflamatória pélvica). A ultrassonografia é frequentemente o exame inicial. Uma vez confirmada a suspeita de apendicite aguda, a avaliação da equipe de cirurgia é o passo definitivo para o tratamento, que consiste na apendicectomia.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/6267f5dec029376552f5b89946f958c6d25ebb6580e2f5d46199f98eed90c263.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2bddc4ec-35ac-4ee0-ba64-bdcc23e7c965_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:29.477Z"
+  },
+  {
+    "id": "AJUDA_2be0fa1b-40ec-442a-a703-44ee1d6a5c6a",
+    "originalId": "2be0fa1b-40ec-442a-a703-44ee1d6a5c6a",
+    "statement": "Criança de 6 meses apresenta irritabilidade, perda de apetite e febre baixa, além de gengivas avermelhadas. Qual é a causa provável desses sintomas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infecção urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Erupção dentária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Gripe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Otite média.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de um lactente de 6 meses. O ponto-chave para o diagnóstico é a associação da idade da criança com o sinal físico de gengivas avermelhadas.\n\nAlternativa a) Incorreta. Embora a infecção urinária seja uma causa comum de febre em lactentes, ela não provoca alterações gengivais. Geralmente, apresenta-se como febre sem foco definido ou com sintomas inespecíficos, como vômitos e recusa alimentar, mas sem sinais de inflamação local na cavidade oral.\n\nAlternativa b) Correta. Por volta dos 6 meses de vida, inicia-se habitualmente a erupção dos primeiros dentes decíduos (geralmente os incisivos centrais inferiores). Esse processo fisiológico causa inflamação gengival local, resultando em hiperemia (gengiva avermelhada), prurido e dor, o que justifica a irritabilidade e a diminuição temporária do apetite. A febre associada à dentição, quando presente, é baixa (febícula), raramente excedendo 38 graus Celsius.\n\nAlternativa c) Incorreta. A gripe (influenza) é uma infecção viral sistêmica que cursa obrigatoriamente com sintomas respiratórios, como tosse, coriza e obstrução nasal. Embora a irritabilidade e a febre estejam presentes, a alteração gengival isolada não faz parte do espectro clínico da doença.\n\nAlternativa d) Incorreta. A otite média aguda é uma causa frequente de choro e febre em lactentes, frequentemente precedida por um quadro gripal. O diagnóstico depende da visualização de abaulamento ou hiperemia da membrana timpânica via otoscopia. Não há relação clínica entre a inflamação do ouvido médio e a gengiva avermelhada.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:29.477Z"
+  }
+]

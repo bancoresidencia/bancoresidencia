@@ -1,0 +1,474 @@
+[
+  {
+    "id": "AJUDA_6d70892b-4f9e-40e7-9ee1-1f76a0ec53b5",
+    "originalId": "6d70892b-4f9e-40e7-9ee1-1f76a0ec53b5",
+    "statement": "Em um estudo clínico randomizado, a análise por intenção de tratar tem como principal vantagem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduzir viés de aferição",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar o poder estatístico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Preservar os benefícios da randomização",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Eliminar fatores de confusão residuais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Eliminar a necessidade de grupo controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise por Intenção de Tratar (ITT): Justificativa e Alternativas\n\nA análise por intenção de tratar é um princípio fundamental em ensaios clínicos randomizados. Ela estabelece que todos os pacientes alocados inicialmente em um grupo pelo sorteio devem ser analisados naquele grupo até o fim do estudo, independentemente de terem tomado a medicação corretamente, abandonado o protocolo ou apresentado efeitos colaterais.\n\nAlternativa (a) Incorreta: O viés de aferição refere-se a erros na forma como os dados são medidos ou coletados. A ferramenta principal para reduzir esse viés é o cegamento (ou mascaramento), que garante que quem avalia o desfecho não saiba qual tratamento o paciente recebeu, e não a análise por intenção de tratar.\n\nAlternativa (b) Incorreta: A análise por ITT geralmente diminui o poder estatístico do estudo em vez de aumentá-lo. Ao incluir no grupo de intervenção pacientes que não tomaram a medicação ou que tomaram doses incompletas, a diferença observada entre os grupos tende a diminuir (efeito de diluição). Isso torna o teste estatístico mais conservador, dificultando a demonstração de superioridade de uma droga.\n\nAlternativa (c) Correta: Esta é a principal vantagem e o motivo de existência da ITT. A randomização serve para criar grupos inicialmente comparáveis, equilibrando tanto os fatores de confusão conhecidos quanto os desconhecidos entre os braços do estudo. Se o pesquisador resolvesse analisar apenas quem seguiu o tratamento perfeitamente (análise per-protocolo), ele estaria analisando um grupo selecionado (quem tolera melhor a droga ou quem tem melhor saúde), o que destruiria a comparabilidade gerada pelo sorteio. A ITT preserva a integridade da randomização ao manter os grupos exatamente como foram formados no início.\n\nAlternativa (d) Incorreta: Embora a randomização seja o método mais eficaz para controlar fatores de confusão, a estatística raramente usa o termo \"eliminar\" de forma absoluta, pois sempre pode haver algum desequilíbrio residual por acaso. A ITT ajuda a manter o equilíbrio que a randomização já criou, mas o seu papel direto é evitar o viés de seleção após o início do tratamento.\n\nAlternativa (e) Incorreta: O grupo controle é indispensável para a validade interna de um ensaio clínico. A ITT não substitui a necessidade de um grupo controle; pelo contrário, ela é uma técnica estatística aplicada justamente para garantir que a comparação entre o grupo intervenção e o grupo controle seja a mais justa e imparcial possível.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  },
+  {
+    "id": "AJUDA_6d752777-f963-4533-b381-741220734608",
+    "originalId": "6d752777-f963-4533-b381-741220734608",
+    "statement": "Gestante com 7 semanas de atraso menstrual vem ao pronto-atendimento com queixa de dor em baixo ventre e sangramento vaginal. Realiza ultrassonografia transvaginal. Assinale a alternativa que corresponde ao diagnóstico e à conduta assertiva.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se o colo está fechado e o endométrio mede 10 mm, há abortamento incompleto, devendo internar para dilatação e curetagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Se o embrião tem 4 mm e não tem batimento, há aborto retido, devendo internar a gestante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se o sangramento é pequeno, mas há cólicas e o embrião está vivo, há um abortamento em curso e deve-se receitar a progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se o colo é fechado e o saco gestacional mede 21 mm, mas não tem embrião, há gestação anembrionada e pode ser realizada aspiração.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para a resolução desta questão, é necessário dominar os critérios diagnósticos das intercorrências do primeiro trimestre da gestação, baseando-se em achados clínicos e ultrassonográficos.\n\nAlternativa (a): Incorreta. No abortamento incompleto, o colo uterino geralmente encontra-se aberto e o conteúdo endometrial é heterogêneo e espessado (geralmente acima de 15 mm). Um endométrio de 10 mm com colo fechado está mais associado a um abortamento completo ou a uma fase muito inicial da gestação.\n\nAlternativa (b): Incorreta. Pelos critérios atuais (Sociedade de Radiologistas em Ultrassom - SRU), o diagnóstico de aborto retido por ausência de batimentos cardíacos só é definitivo se o comprimento cabeça-nádega (CCN) for igual ou superior a 7 mm. Com um embrião de 4 mm sem batimentos, o achado é inconclusivo, sendo obrigatória a repetição do exame em 7 a 10 dias para confirmar a viabilidade.\n\nAlternativa (c): Incorreta. O quadro descrito (sangramento, cólicas, colo fechado e embrião vivo) caracteriza uma ameaça de abortamento, e não um abortamento em curso. No abortamento em curso, o colo está aberto e a expulsão dos produtos concepcionais está ocorrendo. Além disso, o uso de progesterona na ameaça de abortamento é um tema de debate acadêmico, não sendo a conduta principal ou obrigatória em todos os protocolos.\n\nAlternativa (d): Correta. A gestação anembrionada é definida pela presença do saco gestacional sem a evidência de embrião em seu interior. Embora diretrizes internacionais mais conservadoras utilizem o marco de 25 mm para o diâmetro médio do saco gestacional (para evitar erros), muitos protocolos e bancos de questões de concursos ainda utilizam o patamar de 20 a 21 mm como diagnóstico, especialmente se não houver vesícula vitelina. Confirmado o diagnóstico de gestação não viável, a aspiração manual intrauterina (AMIU) ou a aspiração a vácuo são condutas assertivas e seguras.\n\nEm resumo, a alternativa (d) é a que melhor correlaciona o achado ultrassonográfico de um saco gestacional vazio acima de um limite crítico com o diagnóstico de gestação anembrionada e a respectiva possibilidade terapêutica de esvaziamento uterino.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  },
+  {
+    "id": "AJUDA_6d7542c5-b672-4316-b649-7c00694e98b5",
+    "originalId": "6d7542c5-b672-4316-b649-7c00694e98b5",
+    "statement": "O principal fator de risco para carcinoma endometrial é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de anticoncepcional oral combinado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infecção pelo HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obesidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O carcinoma de endométrio, especificamente o Tipo I (endometrioide), tem como base fisiopatológica a exposição prolongada ao estrogênio sem a contraposição adequada da progesterona.\n\nAlternativa a) Incorreta. Curiosamente, o tabagismo é considerado um fator de proteção para o desenvolvimento do câncer de endométrio. Isso ocorre porque o cigarro reduz os níveis séricos de estrogênio e pode antecipar a idade da menopausa, diminuindo o tempo de exposição endometrial ao hormônio. Obviamente, o tabagismo não é recomendado devido aos seus inúmeros riscos para outras neoplasias e doenças cardiovasculares.\n\nAlternativa b) Incorreta. O uso de anticoncepcionais orais combinados é um fator de proteção bem estabelecido. Como essas pílulas contêm progestagênios, eles mimetizam a fase lútea do ciclo menstrual, promovendo a atrofia ou a estabilização do endométrio e impedindo a proliferação desordenada causada pelo estrogênio isolado.\n\nAlternativa c) Incorreta. A infecção pelo HPV (Papilomavírus Humano) é o principal fator de risco para o câncer de colo do útero (câncer cervical). Não existe associação causal entre a infecção pelo HPV e o desenvolvimento do carcinoma de endométrio.\n\nAlternativa d) Correta. A obesidade é o principal fator de risco para o câncer de endométrio. O mecanismo ocorre através da conversão periférica de androstenediona em estrona (um tipo de estrogênio) pelo tecido adiposo, via enzima aromatase. Em mulheres obesas, especialmente nas pós-menopausadas que não ovulam (e, portanto, não produzem progesterona pelo corpo lúteo), o endométrio fica exposto a níveis elevados e constantes de estrogênio. Esse estímulo mitogênico contínuo leva à hiperplasia endometrial e, eventualmente, à transformação maligna. Além disso, a obesidade está associada à resistência insulínica, que também contribui para o crescimento celular endometrial.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  },
+  {
+    "id": "AJUDA_6d789c11-3e72-473e-acc5-eb7fc0056131",
+    "originalId": "6d789c11-3e72-473e-acc5-eb7fc0056131",
+    "statement": "Um município de 200.000 habitantes apresenta, nos últimos 5 anos, uma média histórica de 1.200 casos confirmados de dengue por ano, com picos sazonais bem definidos entre os meses de janeiro e abril. No mês de março do ano corrente, foram notificados 1.100 casos, número que segundo a vigilância epidemiológica do município se mantém dentro do limite superior do período sazonal histórico. Não houve isolamento de novo sorotipo viral nem aumento da letalidade. Diante desse cenário, a classificação epidemiológica CORRETA é um(a):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Surto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Epidemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Endemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pandemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão avalia a capacidade de classificar eventos epidemiológicos com base no comportamento temporal e na incidência de doenças em uma população delimitada, utilizando conceitos do Diagrama de Controle.\n\nNo cenário apresentado, o município possui histórico conhecido de dengue com padrão sazonal bem definido. Apesar de haver uma concentração expressiva de casos no mês de março (1.100 casos), o enunciado informa expressamente que o número se manteve dentro do limite superior do período sazonal histórico, sem ultrapassar o limiar epidêmico estabelecido para aquela localidade.\n\nAnálise das alternativas:\n\na) Incorreta. O surto é definido classicamente como uma epidemia de pequenas proporções, espacialmente restrita a uma área geográfica delimitada (como uma creche, um hospital, um bairro específico) ou com casos associados a uma fonte pontual comum. O enunciado trata de dados de um município inteiro mantidos dentro do limite histórico.\n\nb) Incorreta. A epidemia caracteriza-se pela ocorrência de um número de casos que ultrapassa nitidamente o limite superior do esperado (limiar epidêmico) para determinada região e período. Como os casos permaneceram dentro da faixa histórica esperada, não há caracterização de epidemia.\n\nc) Correta. A endemia é a presença contínua ou a ocorrência habitual de uma doença em uma determinada área geográfica, respeitando os níveis de incidência e variações sazonais historicamente esperados. Como os casos notificados estão dentro do limite superior previsto para o período sazonal histórico, a situação classifica-se como endêmica.\n\nd) Incorreta. A pandemia corresponde a uma epidemia de escala global, que afeta múltiplos continentes com transmissão sustentada entre as populações, o que foge completamente da análise de vigilância local apresentada.\n\ne) Incorreta. A situação clínica e epidemiológica está adequadamente contemplada pelo conceito de endemia na alternativa c.\n\nGabarito: alternativa c.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  },
+  {
+    "id": "AJUDA_6d79ee8c-6dd7-4971-82cf-ea87716efc3e",
+    "originalId": "6d79ee8c-6dd7-4971-82cf-ea87716efc3e",
+    "statement": "Criança, sexo masculino, 2 anos de idade, previamente hígida, iniciou quadro de coriza e febre de até 38 °C há três dias, com evolução para tosse seca, intensa e estridente há um dia. Paciente foi levado de madrugada à unidade de emergência devido à dificuldade para respirar há cerca de 30 minutos. Ao exame, foi notada tiragem subdiafragmática e de fúrcula, com dificuldade e ruído inspiratório, audível em repouso. Considerando a principal hipótese diagnóstica, assinale a alternativa cuja a imagem ilustra, corretamente, a posição anatômica da complicação apresentada pelo paciente e a representação fisiológica do acometimento respiratório.",
+    "options": [],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clinico apresentado — crianca de 2 anos com febre baixa e coriza ha tres dias, evoluindo com tosse metalica ou estridente (tosse de cachorro/crupal), desconforto respiratorio e estridor inspiratorio audivel em repouso — e tipico de laringotraqueobronquite aguda (crupe viral). \n\nA fisiopatologia central do crupe viral baseia-se na inflamacao e no edema da regiao subglotica da laringe e da porcao proximal da traqueia. Como a regiao subglotica e o ponto mais estreito da via aerea na faixa etaria pediatrica, o edema inflamatorio reduz significativamente o calibre da luz traqueal, provocando a obstrucao extratoracica que gera o estridor inspiratorio e a dificuldade respiratoria.\n\nAnalise das alternativas:\n\nAlternativa A: Incorreta. A imagem evidencia o preenchimento dos alveolos pulmonares por exsudato ou secrecoes, o que representa uma afeccao do parenquima pulmonar, tipica de pneumonias ou edema agudo de pulmao, e nao uma obstrucao de vias aereas superiores.\n\nAlternativa B: Correta. A imagem ilustra com precisao a regiao anatomica da laringe e traqueia superior (area subglotica). O detalhe ampliado mostra o estreitamento importante da luz da via aerea pelo edema da mucosa, configurando a base fisiopatologica do crupe viral e a representacao do sinal radiologico da torre ou do lapis.\n\nAlternativa C: Incorreta. A imagem demonstra uma via aerea inferior (bronquiolo) com espessamento da parede, broncoespasmo e rolhas de muco intrabronquicas. Essa alteracao e caracteristica de doencas obstrutivas das vias aereas inferiores, como asma ou bronquiolite viral aguda, cujo ruido tipico e o sibilo expiratorio, e nao o estridor inspiratorio.\n\nAlternativa D: Incorreta. A imagem retrata uma obstrucao localizada no nivel da carina ou bifurcacao dos bronquios principais, compativel com aspiracao de corpo estranho ou lesao expansiva traqueobronquica. No caso clinico, a presenca de prodromos virais e a sintomatologia classica apontam para doenca infecciosa de regiao subglotica (laringotraqueite), tornando a imagem anatomica inadequada.\n\nPortanto, a alternativa correta e a letra B.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  },
+  {
+    "id": "AJUDA_6d820de3-58ef-4549-a67e-aecc9f1c0bfe",
+    "originalId": "6d820de3-58ef-4549-a67e-aecc9f1c0bfe",
+    "statement": "Um homem de 68 anos, portador de insuficiência cardíaca com fração de ejeção reduzida (ICFER – FEVE 30%), internado por descompensação, apresenta melhora clínica após diurético venoso. Encontra-se em uso de carvedilol, enalapril e furosemida. Na reavaliação ambulatorial, mantém classe funcional II da NYHA. Segundo diretrizes mais recentes (2022-2023), qual a conduta adicional mais indicada para reduzir mortalidade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Substituição do enalapril por sacubitril/valsartana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inclusão de dapagliflozina ou empagliflozina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Troca do carvedilol por bisoprolol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Introdução de espironolactona.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O paciente em questão apresenta Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFER), com fração de ejeção de 30% e sintomas persistentes (classe funcional II da NYHA), mesmo após a estabilização clínica e o uso de dois pilares fundamentais: um inibidor da enzima conversora de angiotensina (enalapril) e um betabloqueador (carvedilol).\n\nSegundo as diretrizes atuais (AHA/ACC 2022 e SBC 2021), o tratamento medicamentoso da ICFER que reduz a mortalidade é composto por quatro pilares farmacológicos:\n1. Inibidor do sistema renina-angiotensina (IECA, BRA ou, preferencialmente, o INRA — sacubitril/valsartana).\n2. Betabloqueador (carvedilol, bisoprolol ou succinato de metoprolol).\n3. Antagonista do receptor mineralocorticoide (espironolactona).\n4. Inibidores do SGLT2 (dapagliflozina ou empagliflozina).\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A substituição do enalapril pelo sacubitril/valsartana (INRA) é recomendada para pacientes que permanecem sintomáticos para reduzir ainda mais a mortalidade e a hospitalização. Embora seja uma conduta correta no manejo crônico, em termos de sequência terapêutica e prioridade em questões de prova para pacientes com fração de ejeção inferior a 35%, a introdução da espironolactona é frequentemente tratada como o passo adicional imediato para completar a terapia tripla clássica antes da transição para os novos fármacos ou em conjunto com eles.\n\nAlternativa B (Incorreta): Os inibidores do SGLT2 (dapagliflozina e empagliflozina) são, de fato, o quarto pilar do tratamento e devem ser iniciados. Contudo, em um cenário de escalonamento terapêutico em que o paciente já usa IECA e betabloqueador, a espironolactona (alternativa D) possui evidência de redução de mortalidade muito robusta e consolidada há mais tempo para pacientes com esse perfil de fração de ejeção (estudo RALES), sendo tradicionalmente o próximo passo na conduta adicional.\n\nAlternativa C (Incorreta): Tanto o carvedilol quanto o bisoprolol são betabloqueadores de primeira linha com eficácia comprovada na redução de mortalidade na ICFER. A troca de um pelo outro não traz benefício adicional em sobrevivência, sendo indicada apenas em casos de intolerância específica ou necessidade de ajuste de perfil hemodinâmico.\n\nAlternativa D (Correta): A introdução da espironolactona é a conduta adicional mais indicada. De acordo com as diretrizes, para pacientes com ICFER sintomáticos (NYHA II–IV) e fração de ejeção menor ou igual a 35%, a adição de um antagonista do receptor mineralocorticoide é obrigatória (desde que a função renal e os níveis de potássio estejam adequados). Essa droga reduz significativamente a mortalidade global, a morte súbita e a necessidade de internação, completando o que historicamente se conhece como o \"tripé\" fundamental do tratamento antes da expansão para o quarteto terapêutico atual.\n\nGabarito: Letra D.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  },
+  {
+    "id": "AJUDA_6d86754d-f6f5-4ab4-8209-3d6cc86dd64a",
+    "originalId": "6d86754d-f6f5-4ab4-8209-3d6cc86dd64a",
+    "statement": "A profilaxia antibiótica cirúrgica tem como objetivo reduzir a carga microbiana tecidual no momento da incisão, prevenindo a infecção do sítio cirúrgico (ISC). Considerando os princípios farmacocinéticos dos antimicrobianos, a janela temporal de administração pré-incisional e as indicações de redosagem intraoperatória, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em cirurgias colorretais eletivas, o preparo mecânico do cólon associado a antibióticos orais não absorvíveis atua como medida adjuvante na redução da carga bacteriana, mas não substitui, de forma geral, a profilaxia antimicrobiana sistêmica por via endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vancomicina pode ser indicada como profilaxia em situações selecionadas, como em serviços com elevada prevalência de MRSA, devendo ser administrada por infusão lenta, iniciada com antecedência adequada para garantir concentrações teciduais eficazes no momento da incisão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A administração do antibiótico profilático deve ocorrer em intervalo fixo antes da incisão cirúrgica, independentemente da meia-vida do fármaco, da via de administração ou das características do procedimento realizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A redosagem intraoperatória do antibiótico profilático está restrita a quadros de instabilidade hemodinâmica importante, não sendo influenciada pela duração do ato cirúrgico nem pelo volume de perda sanguínea ocorrido.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ALTERNATIVA A - INCORRETA\nEmbora o preparo mecânico do cólon associado a antibióticos orais seja uma prática recomendada em cirurgias colorretais eletivas, esta alternativa foca em protocolos específicos de uma especialidade e no preparo do órgão. O enunciado solicita explicitamente que sejam considerados os princípios farmacocinéticos, a janela temporal de administração e a redosagem. A alternativa A não aborda esses conceitos farmacocinéticos de forma direta, como o comando da questão exige. Além disso, a tendência atual é o uso combinado de antibióticos orais e venosos, mas a questão busca a regra geral da dinâmica de administração.\n\nALTERNATIVA B - CORRETA\nEsta alternativa atende perfeitamente ao que foi solicitado no enunciado, relacionando a indicação do fármaco aos princípios farmacocinéticos e à janela temporal. A vancomicina possui uma farmacocinética particular: por ser um glicopeptídeo que pode causar a Síndrome do Homem Vermelho se infundida rapidamente, ela exige uma infusão lenta (geralmente entre 60 a 120 minutos). Devido a esse tempo de infusão e à sua distribuição tecidual, ela deve ter sua administração iniciada com maior antecedência (janela temporal estendida) em comparação aos betalactâmicos, para garantir que a concentração tecidual esteja no pico no momento da incisão. Sua indicação é correta para serviços com alta prevalência de MRSA.\n\nALTERNATIVA C - INCORRETA\nO intervalo de administração não deve ser fixo ou independente das características do fármaco. Pelo contrário, o momento ideal da aplicação é totalmente dependente da farmacocinética de cada droga. Antibióticos com meia-vida curta ou que exigem infusão lenta (como vancomicina e fluoroquinolonas) demandam tempos de início diferentes dos antibióticos de infusão rápida (como a cefazolina) para garantir a eficácia no momento da incisão.\n\nALTERNATIVA D - INCORRETA\nA redosagem intraoperatória não possui relação com a estabilidade hemodinâmica do paciente, mas sim com a manutenção dos níveis terapêuticos do antibiótico. Os critérios para redosagem são: 1) Duração do procedimento que ultrapasse o equivalente a duas meias-vidas do antibiótico utilizado; e 2) Perda sanguínea maciça (geralmente definida como superior a 1.500 ml em adultos), que promove a lavagem do fármaco do compartimento intravascular e tecidual.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  },
+  {
+    "id": "AJUDA_6d89c2e3-d696-4b39-a505-0361fee4c476",
+    "originalId": "6d89c2e3-d696-4b39-a505-0361fee4c476",
+    "statement": "No contexto do diagnóstico de sarampo em pediatria, a característica que melhor descreve os sinais de Koplik é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesões maculopapulares eritematosas difusas, presentes principalmente no tronco e membros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manchas descamativas hipercrômicas presentes nas regiões de flexura e dobras cutâneas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vesículas esparsas na mucosa oral, associadas a úlceras dolorosas e edema subjacente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pequenas áreas hipopigmentadas na mucosa oral, com bordas irregulares e inflamação subjacente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pápulas esbranquiçadas com halo eritematoso localizadas na mucosa oral, próximas aos molares.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O sinal de Koplik é considerado uma manifestação patognomônica do sarampo, o que significa que sua presença confirma o diagnóstico da doença. Ele surge tipicamente no final do período prodrômico (fase inicial de febre e mal-estar), precedendo o exantema cutâneo em cerca de 1 a 2 dias.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Esta descrição corresponde ao exantema (erupção cutânea) do sarampo, que se manifesta como lesões maculopapulares que começam na região retroauricular e na face, progredindo para o tronco e membros. O sinal de Koplik é um enantema, ou seja, ocorre na mucosa.\n\nAlternativa b) Incorreta. Manchas descamativas e hipercrômicas podem ser observadas na fase de convalescença do sarampo (fase de cura), mas não guardam relação com o sinal de Koplik, que ocorre na fase inicial. Além disso, a localização em flexuras não é característica da doença.\n\nAlternativa c) Incorreta. A presença de vesículas e úlceras dolorosas é característica de infecções como a gengivoestomatite herpética ou a herpangina (causada pelo vírus Coxsackie). As lesões de Koplik não são vesiculosas nem ulcerativas.\n\nAlternativa d) Incorreta. Embora mencione a mucosa oral, a descrição de áreas hipopigmentadas com bordas irregulares é vaga e não reflete a morfologia clássica do sinal de Koplik.\n\nAlternativa e) Correta. Esta é a descrição clássica do sinal de Koplik: pequenos pontos brancos ou branco-azulados (semelhantes a grãos de areia ou sal) sobre uma base intensamente eritematosa (halo vermelho). Eles se localizam preferencialmente na mucosa bucal, na altura do segundo molar superior, embora possam se espalhar por toda a mucosa oral em casos mais intensos. Eles tendem a desaparecer conforme o exantema cutâneo se torna evidente.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  },
+  {
+    "id": "AJUDA_6d9505ef-f060-47ff-80d6-99fa96380267",
+    "originalId": "6d9505ef-f060-47ff-80d6-99fa96380267",
+    "statement": "Paciente feminina, 6 anos, procura atendimento de emergência com queixa de dor, com edema de tornozelos há 6 dias, e aparecimento progressivo de lesões avermelhadas nas pernas e pés. Há 2 dias vem apresentando dor abdominal de moderada. História de quadro gripal há 2 semanas, autolimitado. Ao exame encontra-se em bom estado geral, sinais vitais preservados, dor leve à palpação difusa do abdome, púrpuras e petéquias palpáveis e membros inferiores e de artrite tornozelos. Sem outras alterações. Sobre a principal hipótese diagnóstica, assinale e alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meningococcemia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Púrpura Trombocitopênica Imune.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Febre Maculosa das Montanhas Rochosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Eritema nodoso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Purpura de Henoch-Schonlein.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro clínico apresentado é típico da Púrpura de Henoch-Schönlein (PHS), também conhecida como Vasculite por IgA. Trata-se da vasculite mais comum na infância, ocorrendo predominantemente em crianças entre 3 e 10 anos. O diagnóstico é essencialmente clínico e baseia-se na presença de púrpura palpável (obrigatório) associada a pelo menos um dos seguintes critérios: dor abdominal, artrite ou artralgia, e envolvimento renal. O relato de uma infecção de vias aéreas superiores precedente é um fator desencadeante clássico descrito em cerca de 50% dos casos.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. A meningococcemia é uma doença infecciosa grave e fulminante. Embora possa apresentar petéquias e púrpuras, o paciente evolui rapidamente com febre alta, sinais de sepse, instabilidade hemodinâmica e grave comprometimento do estado geral. A paciente do caso encontra-se em bom estado geral e com sinais vitais preservados, o que afasta essa hipótese.\n\nAlternativa b) Incorreta. A Púrpura Trombocitopênica Imune (PTI) caracteriza-se clinicamente por petéquias e equimoses decorrentes da baixa contagem de plaquetas. Diferente da PHS, as lesões da PTI não são palpáveis. Além disso, a PTI não costuma cursar com dor abdominal ou artrite.\n\nAlternativa c) Incorreta. A Febre Maculosa é uma doença febril aguda causada pela Rickettsia rickettsii. O exantema geralmente começa nos punhos e tornozelos, progredindo de forma centrípeta, e costuma ser acompanhado de febre alta, cefaleia intensa e mialgia importante, o que não condiz com a estabilidade clínica da paciente.\n\nAlternativa d) Incorreta. O eritema nodoso manifesta-se como nódulos subcutâneos eritematosos, firmes e muito dolorosos, localizados tipicamente na face anterior das pernas (região pré-tibial). Não se apresenta como púrpura palpável e não explica os sintomas abdominais.\n\nAlternativa e) Correta. A Púrpura de Henoch-Schönlein preenche todos os critérios do caso: paciente em idade escolar, antecedente de quadro gripal, púrpura palpável em membros inferiores (vasculite de pequenos vasos), artrite de tornozelos e dor abdominal decorrente de vasculite mesentérica. O bom estado geral reforça o caráter inflamatório e autolimitado da doença na maioria dos casos.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Púrpura de Henoch-Schönlein e Vasculite por IgA"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  },
+  {
+    "id": "AJUDA_6d9a0b5a-9517-44f1-a145-b71a313a62b3",
+    "originalId": "6d9a0b5a-9517-44f1-a145-b71a313a62b3",
+    "statement": "No contexto da Vigilância Epidemiológica, a identificação e manejo de Eventos Adversos Pós-Vacinação (EAPV) são cruciais para a segurança do programa. Diante de um paciente que apresenta um evento adverso considerado grave ou inusitado após a vacinação, a conduta imediata correta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Considerar o evento como coincidência temporal e não notificar, a menos que haja óbito confirmado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aguardar a resolução completa dos sintomas para realizar a notificação, a fim de classificar corretamente a gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Notificar o caso imediatamente ao sistema de vigilância (e-SUS Notifica/SI-EAVI), mesmo antes da confirmação da relação causal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Suspender definitivamente o esquema vacinal para todos os pacientes da unidade até que o lote seja periciado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O tema desta questão é a Farmacovigilância aplicada às vacinas, especificamente os Eventos Adversos Pós-Vacinação (EAPV). O objetivo principal da vigilância de EAPV é garantir a segurança das imunizações, permitindo que o Programa Nacional de Imunizações (PNI) monitore riscos e mantenha a confiança da população.\n\nA análise detalhada das alternativas revela o seguinte:\n\nAlternativa A (Incorreta): Um dos maiores erros na vigilância epidemiológica é a subnotificação. Jamais se deve assumir que um evento é mera coincidência sem uma investigação prévia. A notificação deve ser feita para qualquer evento clinicamente relevante que ocorra após a vacinação, independentemente de haver óbito ou não.\n\nAlternativa B (Incorreta): A notificação de eventos graves deve ser imediata (em geral, nas primeiras 24 a 48 horas após o atendimento). Esperar a resolução dos sintomas atrasa a investigação de campo, a coleta de exames laboratoriais necessários e a tomada de decisões de saúde pública, como a avaliação de lotes específicos.\n\nAlternativa C (Correta): Esta é a conduta padrão em vigilância. A notificação de um EAPV baseia-se na relação temporal (o evento ocorreu após a aplicação da vacina) e não na certeza da relação causal. A investigação subsequente é que determinará se o evento foi causado pela vacina, por um erro de imunização, se foi uma condição preexistente ou uma coincidência. O sistema oficial utilizado atualmente é o e-SUS Notifica (módulo de Eventos Adversos).\n\nAlternativa D (Incorreta): A suspensão de um esquema vacinal ou de um lote de vacina é uma medida administrativa extrema tomada por órgãos sanitários superiores (como o Ministério da Saúde ou a Anvisa) após análise técnica de múltiplos casos ou evidências de desvio de qualidade. O profissional na ponta deve notificar e tratar o paciente, mas não possui autonomia para suspender a vacinação de toda a unidade baseando-se em um caso isolado, o que poderia prejudicar a cobertura vacinal da região.\n\nResumo Didático: Diante de um evento adverso grave ou inusitado, a regra de ouro é: Notificar Suspeitas, Tratar o Paciente e Investigar a Causa. A notificação precoce é o que garante a segurança contínua das vacinas utilizadas no Brasil.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Vigilância em Saúde",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:02.540Z"
+  }
+]

@@ -1,0 +1,483 @@
+[
+  {
+    "id": "AJUDA_c7364dbc-2c26-483f-9a85-58e121cd3f47",
+    "originalId": "c7364dbc-2c26-483f-9a85-58e121cd3f47",
+    "statement": "Homem, 57 anos de idade, hipertenso e diabético há 12 anos em acompanhamento clínico regular, faz uso de captopril, metformina e glibenclamida, todos em dose máxima. Não tem outros antecedentes mórbidos relevantes. Há três dias apresenta náuseas, diarreia e inapetência, com vômitos. Refere febre de até 38,3 °C no período. Há 30 minutos queixou-se de mal-estar inespecífico e há 15 minutos apresentou convulsão tônico-clônica generalizada, quando foi trazido ao pronto-socorro.\nQual é a principal hipótese etiológica para o quadro convulsivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose metabólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acidente vascular encefálico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipopotassemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipoglicemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, devemos analisar o quadro clínico do paciente e as medicações em uso. O paciente é diabético de longa data e utiliza glibenclamida na dose máxima. A glibenclamida é uma sulfonilureia de segunda geração, um secretagogo de insulina que estimula as células beta do pâncreas de forma contínua, independentemente do nível glicêmico.\n\nO paciente apresenta um quadro de três dias de náuseas, vômitos, diarreia e inapetência (provável gastroenterite aguda). Esse cenário gera um descompasso crítico: a ingestão calórica foi drasticamente reduzida devido aos sintomas gastrointestinais, mas o paciente continuou sob o efeito de uma medicação que força a secreção de insulina. Esse é o cenário clássico para o desenvolvimento de hipoglicemia grave. A neuroglicopenia (falta de glicose no sistema nervoso central) é uma causa metabólica comum de crises convulsivas tônico-clônicas generalizadas em pacientes diabéticos.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o uso de metformina possa estar associado à acidose lática (especialmente se houver desidratação e lesão renal aguda secundária aos vômitos e diarreia), e a cetoacidose diabética também curse com acidose, a acidose metabólica isolada não é a causa mais comum de convulsão súbita neste contexto clínico quando comparada à hipoglicemia.\n\nb) Incorreta. Pacientes hipertensos e diabéticos possuem alto risco cardiovascular para Acidente Vascular Encefálico (AVE). No entanto, o início dos sintomas após um quadro infeccioso/gastrointestinal com baixa ingesta alimentar direciona o raciocínio para uma causa metabólica aguda, e não necessariamente para um evento isquêmico ou hemorrágico focal, que geralmente apresenta outros déficits neurológicos localizatórios antes ou após a crise.\n\nc) Incorreta. A perda de potássio por vômitos e diarreia pode causar hipopotassemia. Contudo, as manifestações clínicas típicas da hipopotassemia são fraqueza muscular, íleo paralítico e alterações eletrocardiográficas (como onda U e achatamento de onda T), e não convulsões. Distúrbios eletrolíticos que mais frequentemente causam convulsões são a hiponatremia e a hipocalcemia.\n\nd) Correta. A associação entre o uso de sulfonilureia (glibenclamida) em dose máxima e a baixa ingesta alimentar (devido a vômitos e inapetência) torna a hipoglicemia a hipótese diagnóstica principal e mais provável para a convulsão. É uma emergência médica que deve ser prontamente testada (glicemia capilar) e tratada com glicose endovenosa.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Epilepsias",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  },
+  {
+    "id": "AJUDA_c7381826-008b-4124-beee-455d120a74a3",
+    "originalId": "c7381826-008b-4124-beee-455d120a74a3",
+    "statement": "Leia o caso a seguir.\n\nHomem de 65 anos, assintomático, em consulta de rotina, apresentou ao toque retal uma próstata de aproximadamente 60 g com nódulo em lobo direito. PSA total: 1,5 ng/ml.\n\nA partir do caso apresentado, qual conduta deve ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar biópsia prostática guiada por ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Repetir PSA em 30 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar tratamento medicamentoso combinado (dutasterida e tansulosina).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar ressonância magnética com bobina endorretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ponto fundamental para resolver esta questão é entender que o rastreamento do câncer de próstata é baseado no binômio PSA (Antígeno Prostático Específico) e toque retal. Esses dois exames são complementares e não excludentes. Um toque retal alterado, com a presença de nódulo, endurecimento ou irregularidades, é uma indicação formal de biópsia, independentemente do valor do PSA.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. No caso apresentado, embora o PSA esteja em um nível considerado baixo (1,5 ng/ml), o exame físico revelou um nódulo prostático. Qualquer alteração suspeita ao toque retal exige a investigação histopatológica para descartar neoplasia maligna. A biópsia transretal guiada por ultrassonografia é o procedimento padrão para obter o diagnóstico definitivo.\n\nAlternativa b) Incorreta. Repetir o PSA não traria informações adicionais que mudassem a conduta frente ao achado físico. O problema aqui não é o valor laboratorial, mas sim a alteração anatômica detectada pelo médico. Postergar a investigação com um novo exame de sangue retardaria o diagnóstico de um possível tumor.\n\nAlternativa c) Incorreta. O tratamento medicamentoso com bloqueadores alfa-adrenérgicos (tansulosina) e inibidores da 5-alfa-redutase (dutasterida) é indicado para pacientes com hiperplasia prostática benigna (HPB) que apresentam sintomas urinários obstrutivos ou irritativos. O paciente em questão é assintomático. Além disso, não se deve iniciar tratamento para crescimento benigno antes de excluir malignidade em um paciente com nódulo palpável.\n\nAlternativa d) Incorreta. Atualmente, a Ressonância Magnética Multiparamétrica da próstata é uma excelente ferramenta para localização de lesões suspeitas e auxílio na biópsia (fusão de imagens). No entanto, o uso de \"bobina endorretal\" é considerado obsoleto na prática clínica moderna, sendo desconfortável e desnecessário com os aparelhos atuais de alto campo. Além disso, em provas de residência, o achado de nódulo ao toque retal direciona classicamente para a biópsia como o próximo passo definitivo.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  },
+  {
+    "id": "AJUDA_c7417ef3-ccfb-41c3-afed-635a5f0453fa",
+    "originalId": "c7417ef3-ccfb-41c3-afed-635a5f0453fa",
+    "statement": "Diversas adaptações fisiológicas durante a gestação modificam o metabolismo dos hormônios tireoidianos e podem aumentar a necessidade de ajuste da dose de levotiroxina em gestantes com hipotireoidismo prévio. Qual dos mecanismos a seguir está diretamente relacionado a essa adaptação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Elevação estrogênio-induzida da globulina ligadora de T4, reduzindo a fração livre de T4 e estimulando aumento compensatório da produção hormonal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Bloqueio do receptor de TSH pela ação do hCG, promovendo aumento transitório de TSH e redução de T4 livre nas primeiras semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Redução da depuração renal de iodo devido ao aumento do fluxo plasmático renal, reduzindo a disponibilidade dos hormônios tireoidianos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inativação de T3 livre em T3 reverso mediada pela atividade aumentada da desiodinase tipo 2 na placenta, especialmente no segundo trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA alternativa A é a correta. Durante a gestação, os elevados níveis de estrogênio estimulam o fígado a aumentar a síntese da globulina ligadora de tiroxina (TBG), que é a principal proteína de transporte dos hormônios tireoidianos. Com o aumento da TBG, uma maior quantidade de T4 se liga a essa proteína, reduzindo temporariamente a concentração de T4 livre (a fração biologicamente ativa). Em uma gestante com função tireoidiana normal, a hipófise detecta essa queda e aumenta o estímulo para que a tireoide produza mais hormônios, restabelecendo os níveis de T4 livre. Contudo, mulheres com hipotireoidismo prévio não possuem reserva funcional para esse aumento compensatório, sendo necessário o ajuste (aumento) da dose de levotiroxina exógena.\n\nA alternativa B está incorreta porque o hCG (gonadotrofina coriônica humana) tem uma estrutura molecular muito semelhante à do TSH, o que permite que ele se ligue e ESTIMULE os receptores de TSH na tireoide. Esse efeito ocorre principalmente no primeiro trimestre, levando a um aumento fisiológico do T4 livre e, consequentemente, a uma redução (supressão) dos níveis de TSH, e não ao seu aumento.\n\nA alternativa C está incorreta porque, na gestação, ocorre um AUMENTO da depuração renal de iodo. Isso acontece devido ao aumento do fluxo plasmático renal e da taxa de filtração glomerular. Como o iodo é excretado mais rapidamente pela urina, a disponibilidade do mineral para a glândula tireoide pode diminuir se não houver um aporte dietético adequado, mas o mecanismo fisiológico é de aumento da depuração, e não redução.\n\nA alternativa D está incorreta devido a um erro na identificação da enzima. A placenta possui altos níveis da desiodinase tipo 3 (D3), que é a enzima responsável pela inativação dos hormônios tireoidianos (convertendo T4 em T3 reverso e T3 em T2), atuando como uma barreira para proteger o feto de excessos de hormônio materno. A desiodinase tipo 2 (D2), mencionada na alternativa, possui a função oposta: ela ativa o hormônio, convertendo o T4 no T3 biologicamente ativo.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Tireoide",
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  },
+  {
+    "id": "AJUDA_c7440f74-110c-4700-a067-7f439f33c45c",
+    "originalId": "c7440f74-110c-4700-a067-7f439f33c45c",
+    "statement": "Em uma consulta de puericultura de um lactente de 12 meses, a mãe questiona sobre a necessidade de exames para investigação de anemia. Lactente em aleitamento materno misto (recebe leite de vaca integral em algumas mamadas) e com boa aceitação alimentar. Recebe ferro profilático na dose de 1 mg/kg desde o 3º mês de vida e vitamina D 600 UI/dia desde o nascimento e com bom ganho pondero-estatural. Qual a sua orientação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A triagem é indicada nessa faixa etária e devem ser colhidos, no mínimo: hemograma e ferritina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A triagem não está indicada para esse lactente pois ele já está recebendo ferro profilático",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A triagem é indicada nessa faixa etária e devem ser colhidos, no mínimo: hemograma, proteína C reativa e ferritina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pode ser realizada nessa faixa etária, mas deve ser decisão da família se deverá ser pedida ou não.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A triagem para anemia ferropriva e deficiência de ferro é recomendada de forma universal pela Sociedade Brasileira de Pediatria (SBP) aos 12 meses de idade para todos os lactentes. No caso descrito, o lactente apresenta um fator de risco adicional importante: o consumo de leite de vaca integral, que possui baixa biodisponibilidade de ferro e pode causar micro-hemorragias na mucosa intestinal, favorecendo a depleção dos estoques de ferro mesmo em pacientes que fazem uso de suplementação profilática.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o hemograma e a ferritina sejam os exames principais para avaliar a anemia e os estoques de ferro, a ferritina é uma proteína de fase aguda. Isso significa que seu valor pode aumentar na presença de qualquer processo inflamatório ou infeccioso, mesmo que leve ou subclínico, o que poderia mascarar uma deficiência de ferro real. Portanto, a ferritina não deve ser solicitada de forma isolada para triagem.\n\nAlternativa b) Incorreta. O fato de o lactente estar recebendo ferro profilático não anula a recomendação de triagem aos 12 meses. A dose profilática pode ser insuficiente se houver fatores de risco (como o uso de leite de vaca integral) ou erros na administração. A triagem nessa idade é essencial para detectar a ferropenia latente antes mesmo da instalação da anemia.\n\nAlternativa c) Correta. Segundo as diretrizes da SBP, a triagem laboratorial aos 12 meses deve incluir o hemograma e a ferritina. Para a correta interpretação da ferritina, é indispensável a solicitação concomitante de um marcador de inflamação, como a Proteína C Reativa (PCR). Se a PCR estiver elevada, o valor da ferritina não pode ser utilizado com segurança para diagnosticar deficiência de ferro. Se a PCR estiver normal, a ferritina reflete fielmente os estoques corporais de ferro.\n\nAlternativa d) Incorreta. A realização de triagem de anemia aos 12 meses é uma recomendação médica protocolar baseada em evidências de saúde pública, visto que a deficiência de ferro nessa fase crítica do desenvolvimento pode trazer prejuízos cognitivos e motores irreversíveis. Não é uma conduta opcional ou dependente apenas do desejo da família, mas sim uma prática de puericultura preventiva.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  },
+  {
+    "id": "AJUDA_c748f3d4-1267-4c80-a440-7fc3ef9e83bc",
+    "originalId": "c748f3d4-1267-4c80-a440-7fc3ef9e83bc",
+    "statement": "Homem, 58 anos, com diabetes mellitus tipo 2 há 12 anos, IAM há 3 anos, IMC 37 kg/m², circunferência abdominal 118 cm. Em uso de metformina 2.000 mg/dia, empagliflozina 25 mg/dia, atorvastatina 40 mg/dia, AAS 100 mg/dia e enalapril 20 mg/dia. Exames recentes: HbA1c 7,3%; eGFR (CKD-EPI) 56 mL/min/1,73m²; microalbuminúria 90 mg/g; PA 126x76 mmHg; perfil lipídico em metas. Refere dispneia aos grandes esforços e importante incômodo com o excesso de peso. Nega história pessoal ou familiar de carcinoma medular de tireoide ou MEN2. Não apresenta história de pancreatite. Segundo as diretrizes atuais de manejo do diabetes tipo 2, obesidade e risco cardiovascular, a conduta farmacológica MAIS adequada em relação ao uso de agonistas de GLP-1/GIP seria:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não há indicação de agonista de GLP-1, pois a HbA1c já está próxima da meta; deve-se priorizar apenas intensificação de dieta e exercício.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar tirzepatida (Mounjaro/Zepbound) com finalidade exclusiva de controle glicêmico, reservando a semaglutida apenas para pacientes com doença cardiovascular estabelecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar semaglutida em dose alvo para obesidade (2,4 mg SC 1x/semana), com objetivo de redução de peso e de risco de eventos cardiovasculares maiores, mesmo com HbA1c próxima da meta, podendo manter metformina e SGLT2i.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Substituir o inibidor de SGLT2 por semaglutida, uma vez que o uso combinado de SGLT2i com GLP-1 RA está contraindicado pelo risco aumentado de hipoglicemia e cetoacidose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Adiar o uso de tirzepatida ou semaglutida até queda do eGFR abaixo de 30 mL/min/1,73m², quando então esses fármacos passam a ser preferenciais sobre SGLT2i nos pacientes com doença cardiovascular estabelecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão apresenta um perfil de altíssimo risco cardiovascular: 58 anos, portador de Diabetes Mellitus tipo 2 (DM2) de longa data, com doença cardiovascular estabelecida (infarto agudo do miocárdio prévio), obesidade grau II (IMC 37 kg/m²) e doença renal crônica (eGFR 56 mL/min/1,73m² com microalbuminúria). Atualmente, ele já utiliza a terapia padrão-ouro inicial para esse perfil: metformina, um inibidor de SGLT2 (empagliflozina) e bloqueador do sistema renina-angiotensina (enalapril), além de estatina e antiagregante.\n\nO ponto central da questão é a indicação de um agonista do receptor de GLP-1 (ou coagonista GIP/GLP-1) em um paciente que, apesar de estar próximo da meta de HbA1c (7,3%), possui obesidade e alto risco de novos eventos cardiovasculares.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA: As diretrizes atuais da Sociedade Brasileira de Diabetes (SBD), da American Diabetes Association (ADA) e das sociedades de cardiologia recomendam o uso de fármacos com benefício cardiovascular comprovado (GLP-1 RA ou SGLT2i) em pacientes com doença aterosclerótica estabelecida, independentemente do valor da HbA1c inicial ou da meta. Além disso, o paciente tem obesidade e desejo de perda de peso, o que reforça a indicação da classe.\n\nb) INCORRETA: A tirzepatida (Mounjaro/Zepbound) demonstrou excelente eficácia tanto no controle glicêmico quanto na redução de peso (estudos SURPASS e SURMOUNT). No entanto, a semaglutida não deve ser \"reservada apenas para doença cardiovascular\"; ela é uma ferramenta potente para o tratamento da obesidade e do DM2 em diversos contextos. A escolha entre uma ou outra deve considerar disponibilidade, custo e metas individuais, mas a afirmação de que a semaglutida é restrita à doença cardiovascular está errada.\n\nc) CORRETA: Esta é a conduta mais alinhada com as evidências recentes. O estudo SELECT demonstrou que a semaglutida na dose de 2,4 mg (dose aprovada especificamente para obesidade) reduz significativamente o risco de eventos cardiovasculares maiores (MACE) em pacientes com sobrepeso ou obesidade e doença cardiovascular estabelecida, mesmo naqueles sem diabetes (e, por extensão, o benefício é consolidado em quem tem DM2). O fato de a HbA1c estar em 7,3% não contraindica a medicação; pelo contrário, o objetivo aqui é a redução do risco residual cardiovascular e o tratamento da obesidade. A associação de metformina, SGLT2i e GLP-1 RA é segura e recomendada para este perfil de paciente (benefício cardiovascular e renal aditivo).\n\nd) INCORRETA: Não existe contraindicação para o uso combinado de inibidores de SGLT2 e agonistas de GLP-1. Na verdade, essa combinação é altamente desejável em pacientes com alto risco cardiovascular e renal, pois possuem mecanismos de ação complementares. O risco de hipoglicemia com essas drogas é muito baixo (pois não estimulam a secreção de insulina de forma independente da glicose), e o GLP-1 RA não aumenta o risco de cetoacidose.\n\ne) INCORRETA: Não se deve adiar o uso dessas medicações. O inibidor de SGLT2 já está indicado e deve ser mantido para proteção renal e cardiovascular enquanto a eGFR permitir (geralmente até 20 mL/min/1,73m² para manutenção). Os agonistas de GLP-1 também podem ser usados com segurança em pacientes com eGFR de 56 mL/min/1,73m² e demonstraram proteção renal (estudo FLOW para semaglutida). Esperar a função renal piorar para iniciar o tratamento protetor é uma conduta inadequada na medicina preventiva.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Obesidade e Síndrome Metabólica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 21.76719548797244,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  },
+  {
+    "id": "AJUDA_c74b3eb1-8ba9-45f2-a0d3-45cf84433cec",
+    "originalId": "c74b3eb1-8ba9-45f2-a0d3-45cf84433cec",
+    "statement": "Paciente, 56 anos de idade, feminino, aposentada, queixa de dispneia e tosse produtiva há muito tempo. Relata piora da dispneia e sensação de abafamento torácico há 8 dias e da tosse produtiva (escarro mucoide) há 30 dias. Negou febre. Negou queixas de outros sistemas. Negou antecedente de doença pulmonar pessoal ou familiar. A paciente é tabagista 40a/maço e traz espirometria realizada há 6 meses com laudo de distúrbio ventilatório obstrutivo moderado e prova broncodilatadora negativa. Ao exame físico observou-se murmúrio vesicular diminuído e roncos discretos inspiratórios e expiratórios, ausência de outros achados pertinentes. Sinais vitais: frequência respiratória = 22 ipm, FC = 85 bpm, PA = 128/84 mmHg, oximetria de pulso em ar ambiente = 94%. Relata uso de tiotrópio e formoterol há 6 meses. Qual é o diagnóstico dessa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DPOC em tratamento, exacerbação leve.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "DPOC sem tratamento, estável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DPOC em tratamento, exacerbação moderada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "DPOC em tratamento, estável.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta uma paciente de 56 anos com carga tabágica expressiva (40 anos-maço) e sintomas respiratórios crônicos. O diagnóstico de Doença Pulmonar Obstrutiva Crônica (DPOC) é confirmado pela espirometria, que demonstra um distúrbio ventilatório obstrutivo (relação VEF1/CVF menor que 0,70) com prova broncodilatadora negativa, indicando obstrução não totalmente reversível ao fluxo aéreo.\n\nA paciente já está em tratamento farmacológico, fazendo uso de tiotrópio (um antagonista muscarínico de longa ação — LAMA) e formoterol (um beta-2-agonista de longa ação — LABA).\n\nO quadro atual de piora da dispneia, sensação de abafamento torácico e aumento da tosse com expectoração nos últimos 8 a 30 dias caracteriza uma exacerbação da DPOC. A exacerbação é definida clinicamente como um agravamento dos sintomas respiratórios que resulta em necessidade de terapia adicional.\n\nANÁLISE DAS ALTERNATIVAS\n\na) DPOC em tratamento, exacerbação leve.\nAlternativa correta. A paciente possui diagnóstico confirmado e já realiza tratamento medicamentoso com LAMA e LABA. A exacerbação é classificada como leve quando a paciente apresenta piora dos sintomas, mas mantém estabilidade hemodinâmica e respiratória relativa. No exame físico, a frequência respiratória de 22 ipm e a saturação de 94% em ar ambiente, associadas à ausência de febre ou sinais de insuficiência respiratória grave, corroboram a classificação de um quadro leve, que geralmente requer apenas o ajuste ou intensificação de broncodilatadores de curta ação.\n\nb) DPOC sem tratamento, estável.\nAlternativa incorreta. A paciente está em tratamento com tiotrópio e formoterol. Além disso, ela não está estável, pois relata piora aguda dos sintomas (dispneia e tosse) em relação ao seu padrão basal.\n\nc) DPOC em tratamento, exacerbação moderada.\nAlternativa incorreta. Embora a paciente esteja em tratamento e exacerbada, a classificação \"moderada\" costuma ser reservada para casos que exigem o uso de corticosteroides sistêmicos e/ou antibióticos, ou quando há uma alteração mais acentuada dos sinais vitais, o que não é o caso da paciente, que se mantém com boa saturação e frequência respiratória apenas discretamente aumentada.\n\nd) DPOC em tratamento, estável.\nAlternativa incorreta. Apesar de a paciente estar em tratamento, o termo \"estável\" não se aplica, pois há um relato claro de mudança no padrão basal de tosse e falta de ar nas últimas semanas, o que define o evento agudo (exacerbação).\n\nRESUMO DO DIAGNÓSTICO\n1. Doença: DPOC (Tabagismo + espirometria com obstrução fixa).\n2. Status: Em tratamento (Uso regular de LAMA e LABA).\n3. Evento atual: Exacerbação (Piora aguda da dispneia e tosse).\n4. Gravidade: Leve (Sinais vitais estáveis, oximetria adequada e ausência de sinais de gravidade).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  },
+  {
+    "id": "AJUDA_c751bcc9-2687-4428-ad58-a5bc0b9d8aac",
+    "originalId": "c751bcc9-2687-4428-ad58-a5bc0b9d8aac",
+    "statement": "A \"Lei dos Cuidados Inversos\", postulada por Julian Tudor Hart em 1971, descreve um fenômeno persistente na organização dos sistemas de saúde, inclusive no Brasil. A aplicação correta desse conceito na análise das desigualdades em saúde indica que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A disponibilidade de bons cuidados médicos tende a variar inversamente com a necessidade da população atendida, ou seja, as populações com maior carga de doença e vulnerabilidade social são justamente as que têm menos acesso a serviços de saúde de qualidade, devido à força das leis de mercado e à distribuição desigual de recursos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Os cuidados primários devem ser oferecidos inversamente à complexidade do caso, de modo que pacientes graves sejam atendidos na Unidade Básica de Saúde e pacientes leves sejam encaminhados aos hospitais terciários para evitar superlotação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O investimento financeiro em saúde deve ser inversamente proporcional à renda per capita da região, garantindo que municípios ricos recebam menos recursos federais para compensar sua alta arrecadação tributária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A mortalidade infantil varia inversamente com o nível de escolaridade materna, demonstrando que a educação é o único determinante social capaz de reverter as iniquidades em saúde independentemente da oferta de serviços.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CONCEITO GERAL:\n\nA Lei dos Cuidados Inversos foi formulada pelo médico britânico Julian Tudor Hart em 1971, por meio de um artigo no periódico The Lancet. O conceito central é uma crítica social e política à organização dos sistemas de saúde: ele postula que a disponibilidade de bons cuidados médicos tende a variar inversamente à necessidade da população atendida. Ou seja, as pessoas que mais precisam de assistência (as mais doentes e vulneráveis) são as que encontram mais barreiras de acesso e menor qualidade de serviço, enquanto as populações mais saudáveis e ricas concentram a maior oferta de recursos.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a): CORRETA. Esta alternativa traduz com precisão o pensamento de Tudor Hart. O autor argumenta que, em sociedades onde a saúde é tratada como mercadoria, os recursos (médicos, hospitais, tecnologia) migram para áreas de maior poder aquisitivo, onde a carga de doença costuma ser menor. Isso cria um abismo assistencial: quem tem maior carga de morbidade e piores determinantes sociais acaba desassistido pela má distribuição geográfica e financeira dos serviços.\n\nAlternativa (b): INCORRETA. Esta alternativa descreve uma organização disfuncional do fluxo assistencial que inverte a lógica da pirâmide de complexidade do SUS. O sistema correto prevê que a Atenção Primária (UBS) resolva a maioria dos problemas de saúde e que casos graves e complexos sejam referenciados para hospitais terciários. O enunciado da alternativa é apenas um erro de gestão e não se refere ao conceito epidemiológico da Lei dos Cuidados Inversos.\n\nAlternativa (c): INCORRETA. O investimento financeiro inversamente proporcional à renda seria uma medida de equidade para tentar corrigir as desigualdades. A Lei dos Cuidados Inversos, por outro lado, é a constatação do problema (a má distribuição) e não uma regra de repasse financeiro. O conceito descreve o fenômeno de exclusão, não uma fórmula de arrecadação tributária.\n\nAlternativa (d): INCORRETA. Embora a escolaridade materna seja um determinante social clássico da mortalidade infantil, o conceito de Tudor Hart foca especificamente na oferta e no acesso aos cuidados médicos. Além disso, no campo da saúde coletiva, é incorreto afirmar que um único determinante (educação) seja capaz de resolver iniquidades de forma isolada, independentemente da oferta de serviços de saúde. A saúde é um fenômeno multicausal.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  },
+  {
+    "id": "AJUDA_c75781b2-1d57-493c-a476-77ab20fbfbd8",
+    "originalId": "c75781b2-1d57-493c-a476-77ab20fbfbd8",
+    "statement": "A resposta orgânica ao trauma, também conhecida como REMIT (Resposta Endocrino, Metabólica e Imunológica ao Trauma), é um conjunto de reações que o organismo desenvolve para manter a homeostasia. Na fase inicial da REMIT ocorrem várias alterações metabólicas e imunológicas e, portanto, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A excreção de potássio na urina está reduzida devido à liberação aumentada de aldosterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A liberação do hormônio do crescimento está aumentada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O lactato produzido perifericamente é convertido em glicose devido ao processo de glicogênese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observa-se aumento da síntese da albumina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Resposta Endócrina, Metabólica e Imunológica ao Trauma (REMIT) representa o esforço do organismo para sobreviver à agressão, mobilizando substratos energéticos e mantendo a volemia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O trauma ativa o sistema renina-angiotensina-aldosterona. A aldosterona atua nos túbulos renais promovendo a reabsorção de sódio e água, mas sua ação implica obrigatoriamente a secreção (excreção) de potássio e íons de hidrogênio. Portanto, a excreção urinária de potássio está aumentada, e não reduzida.\n\nAlternativa b) Correta. Durante a fase inicial da REMIT (especialmente na fase de fluxo ou \"flow phase\"), ocorre um aumento na liberação dos hormônios contrarreguladores, que incluem o glucagon, as catecolaminas, o cortisol e o hormônio do crescimento (GH). O GH atua promovendo a lipólise e antagonizando a ação da insulina, contribuindo para o estado de hiperglicemia necessária para fornecer energia aos tecidos nobres e à cicatrização.\n\nAlternativa c) Incorreta. O processo descrito (conversão de lactato em glicose no fígado) é chamado de gliconeogênese (formação de nova glicose a partir de compostos não glicídicos, como lactato, aminoácidos e glicerol) por meio do Ciclo de Cori. A glicogênese, termo citado na alternativa, refere-se à síntese de glicogênio a partir da glicose para armazenamento, processo que está inibido durante a resposta aguda ao estresse.\n\nAlternativa d) Incorreta. A albumina é considerada uma proteína de fase aguda negativa. Durante a REMIT, o fígado prioriza a síntese de proteínas de fase aguda positiva (como proteína C-reativa, fibrinogênio e haptoglobina) em detrimento da albumina. Além disso, ocorre um aumento da permeabilidade vascular que favorece o escape da albumina para o meio extravascular, resultando na queda dos seus níveis séricos.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  },
+  {
+    "id": "AJUDA_c75a4aed-b6d8-4541-b0ee-e01a7e3b2e45",
+    "originalId": "c75a4aed-b6d8-4541-b0ee-e01a7e3b2e45",
+    "statement": "Uma mulher de 72 anos, hipertensa e diabética, procura o ambulatório de neurologia com queixa de fraqueza em braço esquerdo há cerca de um ano. Relata dificuldade cada vez maior de realizar atividades finas, como abotoar a blusa e escrever. À anamnese dirigida, refere episódios de engasgo e tosse ao se alimentar há dois meses. Ao exame, apresenta atrofia de musculatura tenar e miofasciculação em membro superior esquerdo, além de hiperreflexia patelar e clônus em membro inferior direito. O diagnóstico mais provável, nesse caso, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "mielopatia espondilótica cervical",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "acidente vascular encefálico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "esclerose lateral amiotrófica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "miastenia gravis",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma paciente idosa com fraqueza progressiva e insidiosa (um ano de evolução), associada a sinais claros de acometimento do primeiro neurônio motor (hiperreflexia e clônus) e do segundo neurônio motor (atrofia e fasciculações). A presença de disfagia (engasgos e tosse) indica acometimento bulbar, o que é fundamental para o raciocínio diagnóstico.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A mielopatia espondilótica cervical é uma causa comum de síndrome mista (segundo neurônio nos braços e primeiro neurônio nas pernas), porém ela é uma doença compressiva da medula espinal. Portanto, ela jamais explicaria os sintomas bulbares da paciente (engasgos e tosse), já que a compressão ocorre abaixo do tronco encefálico. Além disso, costuma cursar com alterações sensitivas, ausentes no relato.\n\nAlternativa (b) INCORRETA: O acidente vascular encefálico (AVE) apresenta-se com déficit neurológico de início súbito e agudo. O caso em questão descreve uma doença crônica e degenerativa, com piora progressiva ao longo de um ano, o que descarta a etiologia vascular.\n\nAlternativa (c) CORRETA: A Esclerose Lateral Amiotrófica (ELA) é a principal hipótese diagnóstica. Ela se caracteriza clinicamente pela coexistência de sinais de acometimento do neurônio motor superior (hiperreflexia, espasticidade, clônus) e do neurônio motor inferior (atrofia, fasciculações, fraqueza) em diferentes segmentos corporais (bulbar, cervical, torácico ou lombossacral). No caso, temos acometimento cervical (atrofia/fasciculação em braço), lombossacral (hiperreflexia/clônus em perna) e bulbar (disfagia), sem perda sensitiva, o que preenche os critérios clínicos para o diagnóstico.\n\nAlternativa (d) INCORRETA: A Miastenia Gravis é uma doença da junção neuromuscular que causa fadiga muscular flutuante, acometendo principalmente a musculatura extrínseca dos olhos, bulbar e membros. No entanto, a miastenia não causa sinais de neurônio motor superior (clônus e hiperreflexia) nem fasciculações ou atrofia muscular marcada no início do quadro.\n\nRESUMO DO DIAGNÓSTICO\nO diagnóstico de ELA é essencialmente clínico, baseado na soma de: 1. Sinais de neurônio motor superior; 2. Sinais de neurônio motor inferior; 3. Caráter progressivo; 4. Ausência de déficits sensitivos. A paciente apresenta todos esses elementos.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  },
+  {
+    "id": "AJUDA_c75b317e-579e-4158-89ce-118a30878eee",
+    "originalId": "c75b317e-579e-4158-89ce-118a30878eee",
+    "statement": "Você trabalha em um Núcleo Hospitalar de Epidemiologia. Assim que chega ao local de trabalho, você é informado sobre os casos a seguir que deram entrada no hospital nas últimas 12 horas. Assinale a alternativa que contém o caso a ser imediatamente notificado à Secretaria Municipal de Saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Homem, 29 anos, cozinheiro, que teve o dedo amputado durante a jornada de trabalho.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mulher, 40 anos, servidora pública, com teste de dengue NS1 positivo, sem história de viagem nos últimos 15 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adolescente, sexo masculino, 15 anos de idade, institucionalizado, com Elisa-IgM reagente para Zika.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Criança, 8 anos de idade, atendida por suspeita de hepatite A.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é necessário dominar a Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública, atualmente regida pela Portaria GM/MS nº 217, de 1º de março de 2023. O foco é distinguir os agravos que exigem notificação imediata (em até 24 horas) daqueles que permitem notificação semanal.\n\nAlternativa (a) - Correta. De acordo com os protocolos de Vigilância em Saúde do Trabalhador, os acidentes de trabalho são notificados de formas diferentes, dependendo da gravidade. Acidentes de trabalho graves (que resultam em mutilação, como a amputação descrita, ou que exigem internação hospitalar), acidentes fatais e aqueles ocorridos com crianças ou adolescentes devem ser notificados de forma imediata (em até 24 horas) ao gestor municipal de saúde. \n\nAlternativa (b) - Incorreta. A dengue é uma doença de notificação compulsória semanal para os casos confirmados ou suspeitos sem sinais de gravidade. A notificação da dengue só passa a ser imediata (24 horas) em casos de óbito com suspeita de dengue. Como o caso descreve apenas um teste positivo sem menção a óbito ou complicações graves, a notificação é semanal.\n\nAlternativa (c) - Incorreta. O zika vírus, assim como a dengue e a febre chikungunya, consta na lista de notificação compulsória semanal. A notificação imediata para zika ocorre em situações específicas, como óbitos suspeitos ou infecções em gestantes (embora o fluxo para gestantes possa variar em protocolos locais, a regra geral da lista nacional para o caso apresentado é semanal).\n\nAlternativa (d) - Incorreta. Todas as hepatites virais (A, B, C, D e E) são doenças de notificação compulsória semanal. Mesmo em crianças, a suspeita isolada de hepatite A não se enquadra nos critérios de notificação imediata de 24 horas, seguindo o fluxo de rotina das unidades de saúde.\n\nConclusão: O acidente de trabalho com amputação é considerado um acidente de trabalho grave, exigindo a comunicação imediata às autoridades sanitárias para fins de investigação epidemiológica e intervenção no ambiente laboral.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:17.437Z"
+  }
+]

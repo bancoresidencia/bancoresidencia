@@ -1,0 +1,521 @@
+[
+  {
+    "id": "AJUDA_60e67d75-7841-4584-ae81-2beb1f0357a8",
+    "originalId": "60e67d75-7841-4584-ae81-2beb1f0357a8",
+    "statement": "Paciente do sexo masculino, 32 anos, obeso e fumante, refere história de pirose e sensação de regurgitação ácida há muitos anos, evoluindo com episódios de dor torácica ocasional, fazendo uso intermitente de anti-ácidos por conta própria. Refere, ainda, episódios de rouquidão. Nega disfagia e hematêmese. Traz consigo à consulta, uma endoscopia digestiva alta solicitada pelo médico do posto de saúde que evidenciou presença da transição esôfago gástrica 3cm acima da impressão diafragmática além de 2 erosões em mucosa esofagiana que ocupam cerca de 75% da sua circunferência. Sobre o caso, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A evolução crônica e os achados endoscópicos fecham o diagnóstico de esôfago de Barrett, indicando a hiatoplastia laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A evolução crônica com dor torácica e os achados endoscópicos sugerem evolução para carcinoma escamocelular de esôfago, estando indicada a esofagectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os achados endoscópicos sugerem que a fundoplicatura laparoscópica será mais efetiva que o tratamento medicamentoso e comportamental para este paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os achados endoscópicos já são suficientes para fechar o diagnóstico e indicar o tratamento, excluído a necessidade de investigação com pHmetria e manometria esofagianas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para analisar esta questão, devemos observar os achados clínicos e endoscópicos do paciente. Ele apresenta sintomas típicos da doença do refluxo gastroesofágico (DRGE), como pirose e regurgitação, além de manifestações extraesofágicas (rouquidão) e dor torácica de origem não cardíaca. A endoscopia digestiva alta (EDA) revela uma hérnia de hiato de 3 cm e esofagite erosiva grave, pois as erosões ocupam cerca de 75% da circunferência esofagiana, o que a classifica como grau C ou D na classificação de Los Angeles.\n\nAlternativa A: Incorreta. O diagnóstico de esôfago de Barrett não pode ser feito apenas pela clínica ou visualização endoscópica. Ele exige obrigatoriamente a confirmação histológica por meio de biópsias que demonstrem a metaplasia intestinal (substituição do epitélio escamoso pelo colunar com células caliciformes). Os achados descritos sugerem esofagite erosiva, mas não confirmam Barrett.\n\nAlternativa B: Incorreta. O refluxo gastroesofágico crônico é um fator de risco para o adenocarcinoma de esôfago, e não para o carcinoma escamocelular (que está mais associado ao tabagismo e etilismo crônico). Além disso, o quadro descrito de erosões é compatível com esofagite péptica, e não há descrição de massa, ulceração vegetante ou sinais de malignidade na endoscopia.\n\nAlternativa C: Incorreta. Embora a fundoplicatura laparoscópica seja uma opção de tratamento, o tratamento inicial padrão para a DRGE consiste em medidas comportamentais e uso de inibidores de bomba de prótons (IBP). Estudos mostram que o tratamento medicamentoso é tão efetivo quanto o cirúrgico no controle dos sintomas na maioria dos pacientes. A cirurgia é reservada para casos de refratariedade, intolerância ao medicamento ou complicações específicas.\n\nAlternativa D: Correta. De acordo com o Consenso de Lyon, o diagnóstico de DRGE é confirmado de forma objetiva quando a endoscopia demonstra esofagite erosiva grave (graus C ou D de Los Angeles), esôfago de Barrett ou estenose péptica. Nesses casos, a evidência de dano mucoso pelo ácido é tão clara que se torna desnecessário realizar a pH-metria para confirmar a existência da doença. A manometria esofágica seria indicada apenas em um eventual planejamento cirúrgico para descartar distúrbios de motilidade, como a acalásia, mas não para fechar o diagnóstico de DRGE neste cenário.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:06.948Z"
+  },
+  {
+    "id": "AJUDA_60e80270-f375-4330-8723-df3d22e28008",
+    "originalId": "60e80270-f375-4330-8723-df3d22e28008",
+    "statement": "Adolescente de 13 anos refere cefaleia pulsátil unilateral associada a náuseas, fotofobia e fonofobia, com duração de 6 horas, sem sinais neurológicos focais. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefaleia tensional",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enxaqueca sem aura",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Enxaqueca com aura",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cefaleia em salvas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipertensão intracraniana benigna",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma paciente de 13 anos com um quadro clássico de enxaqueca sem aura, também conhecida como migrânea. Para chegar ao diagnóstico correto, devemos analisar os critérios diagnósticos da Sociedade Internacional de Cefaleias (IHS).\n\nAlternativa (a) Incorreta: A cefaleia tensional costuma ser bilateral, com caráter compressivo (em aperto ou pressão) e de intensidade leve a moderada. Diferente do relato, ela não costuma vir acompanhada de náuseas, e a presença simultânea de fotofobia e fonofobia é um critério de exclusão para esse diagnóstico.\n\nAlternativa (b) Correta: O quadro preenche os critérios para migrânea sem aura. Na população pediátrica e adolescente, a dor pode durar de 2 a 72 horas. Os critérios incluem pelo menos duas das seguintes características: localização unilateral (embora em crianças possa ser bilateral), caráter pulsátil, intensidade moderada a grave e piora com atividade física. Além disso, deve apresentar pelo menos um dos seguintes sintomas associados: náuseas/vômitos ou a combinação de fotofobia e fonofobia. A paciente apresenta localização unilateral, caráter pulsátil, náuseas, fotofobia e fonofobia, fechando o diagnóstico.\n\nAlternativa (c) Incorreta: A enxaqueca com aura exigiria a presença de sintomas neurológicos focais transitórios (como escotomas cintilantes, parestesias ou alterações de fala) que precedem ou acompanham a dor. O enunciado afirma explicitamente que não há sinais neurológicos focais.\n\nAlternativa (d) Incorreta: A cefaleia em salvas é extremamente rara nessa faixa etária. Caracteriza-se por crises de dor excruciante, estritamente unilateral, de curta duração (15 a 180 minutos), associada a sinais autonômicos ipsilaterais à dor, como lacrimejamento, congestão nasal, ptose ou miose.\n\nAlternativa (e) Incorreta: A hipertensão intracraniana benigna (pseudotumor cerebral) apresenta-se geralmente com cefaleia crônica diária ou persistente, muitas vezes associada a zumbido pulsátil, diplopia (por paralisia do VI par) e, fundamentalmente, papiledema no exame de fundo de olho, o que não condiz com a descrição de uma cefaleia episódica com características de enxaqueca.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Cefaleias na Infância",
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:06.948Z"
+  },
+  {
+    "id": "AJUDA_60e86150-9bac-4f65-9173-f981d3080efd",
+    "originalId": "60e86150-9bac-4f65-9173-f981d3080efd",
+    "statement": "Uma gestante de 10 semanas e 6 dias vem à consulta de pré-natal. Ela não apresenta fatores de risco ou queixas. Após a consulta, o médico agenda uma ultrassonografia para ser realizada em 1 semana. O tipo de ultrassonografia que ela deverá realizar é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obstétrica transvaginal com doppler das artérias ovarianas para ver a função do corpo lúteo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Morfológica de primeiro trimestre (medir a translucência nucal).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Morfológica do segundo trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstétrica para ver o fenômeno de centralização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, o ponto fundamental é realizar o cálculo da idade gestacional no momento em que o exame será realizado. A paciente está com 10 semanas e 6 dias e fará a ultrassonografia em 1 semana (7 dias). Portanto, no dia do exame, ela estará com 11 semanas e 6 dias.\n\nAlternativa a: Incorreta. O Doppler das artérias ovarianas para avaliar a função do corpo lúteo não é um exame de rotina no pré-natal. Além disso, por volta da 10ª à 12ª semana, ocorre a transição lúteo-placentária, momento em que a placenta assume a produção de progesterona, tornando a avaliação do corpo lúteo clinicamente irrelevante para o acompanhamento de uma gestação normal.\n\nAlternativa b: Correta. O exame indicado para este período é a ultrassonografia morfológica do primeiro trimestre. Ela deve ser realizada obrigatoriamente entre 11 semanas e 13 semanas e 6 dias (período em que o comprimento cabeça-nádega, ou CCN, mede entre 45 e 84 mm). O principal objetivo desse exame é o rastreamento de cromossomopatias (como a síndrome de Down) através da medida da translucência nucal, avaliação do osso nasal e do Doppler do ducto venoso. Como a paciente estará com 11 semanas e 6 dias, ela se encontra exatamente na janela ideal para este procedimento.\n\nAlternativa c: Incorreta. A ultrassonografia morfológica do segundo trimestre tem como objetivo a avaliação detalhada da anatomia fetal para identificar malformações estruturais. O período preconizado para sua realização é entre 20 e 24 semanas de gestação.\n\nAlternativa d: Incorreta. O fenômeno de centralização fetal é uma resposta hemodinâmica à hipóxia crônica (sofrimento fetal), na qual o sangue é priorizado para órgãos nobres, como o cérebro. Esse diagnóstico é feito através do Doppler (artérias umbilicais e cerebral média), sendo um exame indicado para gestações de alto risco, geralmente no terceiro trimestre, e não para uma triagem de rotina em uma gestante de baixo risco no primeiro trimestre.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:06.948Z"
+  },
+  {
+    "id": "AJUDA_60f33dcc-1836-4c4a-aabc-47792a04df33",
+    "originalId": "60f33dcc-1836-4c4a-aabc-47792a04df33",
+    "statement": "Homem, 42 anos de idade, teve queda de escada há 1 dia. Inicialmente, foi atendido na Unidade de Pronto Atendimento (UPA) e realizada a imobilização provisória. Após 24 horas, foi transferido para Serviço de Ortopedia. Ao exame físico do tornozelo e pé, apresentava dor e edema, conforme imagem a seguir:\n\nNa sequência foi realizada radiografia, que apresentou a seguinte imagem:\n\nCom base nessas informações, assinale a alternativa que apresenta a melhor conduta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução e bota gessada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução e fixador externo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Osteossíntese interna com placas e parafusos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Osteossíntese com haste intramedular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um trauma de alta energia (queda de escada), resultando em uma fratura da extremidade distal da tíbia com envolvimento da superfície articular, conhecida como fratura do pílon tibial.\n\nA análise da primeira imagem (exame físico) é fundamental: o paciente apresenta edema importante e flictenas (bolhas) hemorrágicas. Na ortopedia, o estado das partes moles dita o tempo da cirurgia. Realizar uma incisão cirúrgica sobre uma pele nessas condições acarreta um risco altíssimo de deiscência de sutura, necrose cutânea e infecção profunda (osteomielite).\n\nA radiografia confirma a complexidade da fratura, com cominuição articular e desalinhamento. O tratamento padrão para fraturas do pílon tibial com sofrimento de partes moles é o manejo em dois estágios (controle de danos).\n\nAlternativa a) Incorreta. A redução incruenta e o gesso não são adequados para fraturas articulares complexas e instáveis como esta. O gesso impediria a monitorização das flictenas e dificilmente manteria a redução anatômica necessária para a superfície articular.\n\nAlternativa b) Correta. Esta é a conduta inicial padrão. O fixador externo transarticular (ponteando o tornozelo) permite a estabilização óssea, restaura o comprimento do membro e promove o alinhamento grosseiro, enquanto se aguarda a melhora das condições da pele (geralmente de 7 a 21 dias). Somente após a pele cicatrizar e o edema diminuir (sinal da ruga positivo) é que se parte para a fixação definitiva.\n\nAlternativa c) Incorreta. A osteossíntese interna com placas e parafusos é o tratamento definitivo. No entanto, realizá-la de forma imediata neste paciente seria um erro técnico grave devido ao estado das partes moles. A cirurgia definitiva deve ser postergada até que o envelope de tecidos moles esteja recuperado.\n\nAlternativa d) Incorreta. As hastes intramedulares são preferencialmente utilizadas para fraturas da diáfise (corpo) do osso. Em fraturas do pílon (articulares), a placa é o material de escolha para permitir a reconstrução anatômica da articulação. Além disso, a contraindicação por conta das partes moles permaneceria a mesma.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Trauma Ortopédico",
+      "Fraturas e Luxações"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/bef8fe3f7f9df162911bafc2e443ee78f837a502371a9278835e4efd51e6a5b5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_60f33dcc-1836-4c4a-aabc-47792a04df33_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/3298a85ee2417d2a5702199a7e0973e588c2ae01884b8938f07ac3df743a937c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_60f33dcc-1836-4c4a-aabc-47792a04df33_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/f02b6072d7ed2df4b5e2c22e345b8154979099605ac96fdce1e7e17f062042e5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_60f33dcc-1836-4c4a-aabc-47792a04df33_img_2.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:08.245Z"
+  },
+  {
+    "id": "AJUDA_60f5ce38-63b7-4857-bf7d-ee3881c9240d",
+    "originalId": "60f5ce38-63b7-4857-bf7d-ee3881c9240d",
+    "statement": "Em um caso grave e raro de pancreatite hemorrágica, qual sinal semiológico pode ser esperado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rovsing",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Grey- Turner",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Blumberg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Jobert",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Charcot",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão exige o conhecimento de sinais clássicos do exame físico abdominal e sua associação com patologias específicas. No contexto da pancreatite aguda grave (necro-hemorrágica), ocorre extravasamento de sangue e enzimas pancreáticas para o espaço retroperitoneal.\n\nAlternativa a) Incorreta. O sinal de Rovsing é caracterizado pela dor referida na fossa ilíaca direita quando se realiza a compressão da fossa ilíaca esquerda. É um sinal clínico sugestivo de apendicite aguda.\n\nAlternativa b) Correta. O sinal de Grey-Turner consiste na presença de equimoses (manchas roxas) localizadas nos flancos. Esse achado é decorrente do sangramento retroperitoneal que disseca através das fáscias musculares até atingir o tecido subcutâneo lateral. É um sinal de gravidade e, embora raro, é clássico da pancreatite hemorrágica. Outro sinal relacionado é o sinal de Cullen (equimose periumbilical).\n\nAlternativa c) Incorreta. O sinal de Blumberg é a dor à descompressão súbita da parede abdominal, especificamente no ponto de McBurney. Indica irritação do peritônio parietal, sendo muito comum na apendicite aguda ou em casos de peritonite.\n\nAlternativa d) Incorreta. O sinal de Jobert é a presença de timpanismo à percussão na região do hipocôndrio direito (onde normalmente se encontra a macicez hepática). Esse sinal indica pneumoperitônio, geralmente causado pela perfuração de uma víscera oca, como no caso de úlceras pépticas perfuradas.\n\nAlternativa e) Incorreta. O nome Charcot está associado à tríade de Charcot, que consiste em dor no hipocôndrio direito, icterícia e febre com calafrios. É o conjunto de sintomas clássico da colangite aguda (infecção das vias biliares), não tendo relação direta com a hemorragia pancreática.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:08.245Z"
+  },
+  {
+    "id": "AJUDA_60f72de9-dd68-40dd-b71c-a910cf08cea0",
+    "originalId": "60f72de9-dd68-40dd-b71c-a910cf08cea0",
+    "statement": "RN nascido a termo, com 23 dias de vida, encontra-se ictérico. Genitora relata que percebeu os olhos amarelados na primeira semana de vida, porém, não buscou ajuda pois foi orientada pela vizinha a dar banho de sol. Há dois dias, percebeu que as fezes do filho estavam “pálidas”. Ao exame clínico, RN encontra-se com aspecto saudável, ictérico em Zona III, sem outros achados relevantes. Menor nasceu com 3 kg, e o peso atual é de 3,5 quilos.\nExames laboratoriais evidenciaram:\nBT= 14,5 mg/dL\nBI= 9,5 mg/dL\nSobre esse caso clínico, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por não termos o valor da bilirrubina direta, não podemos afirmar que se trata de uma Síndrome Colestática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pelo bom estado geral, atresia de vias biliares é uma hipótese diagnóstica improvável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Um ultrassom abdominal deve ser solicitado para confirmar ou afastar atresia de vias biliares extra-hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A Síndrome de Gilbert não é uma causa a ser considerada para esse paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Para esse caso em específico, a função tireoidiana não deverá fazer parte dos exames laboratoriais iniciais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nEstamos diante de um recém-nascido de 23 dias com icterícia persistente (além do período fisiológico). O ponto chave da questão é a interpretação laboratorial e clínica: BT 14,5 com BI 9,5 significa que a Bilirrubina Direta (BD) é de 5,0 mg/dL (BT menos BI). Isso configura colestase neonatal, pois a BD está acima de 1,0 mg/dL (ou >20% da BT). Além disso, a mãe relata acolia fecal (\"fezes pálidas\"), um sinal de alerta para obstrução biliar.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): Podemos afirmar com certeza que é uma Síndrome Colestática. O cálculo é simples: Bilirrubina Total (14,5) menos Bilirrubina Indireta (9,5) resulta em uma Bilirrubina Direta de 5,0 mg/dL. Qualquer valor de BD acima de 1,0 mg/dL em um recém-nascido é considerado patológico e define colestase.\n\nAlternativa B (Correta): Esta alternativa costuma gerar debates, mas clinicamente a Atresia de Vias Biliares (AVB) é a principal causa de colestase neonatal cirúrgica e, tipicamente, o lactente apresenta-se com bom estado geral e bom ganho ponderal nas semanas iniciais (como o caso mostra: ganhou 500g em 23 dias). No entanto, o enunciado da alternativa afirma que, \"pelo bom estado geral, a atresia é improvável\". Na verdade, o bom estado geral é CARACTERÍSTICO da AVB nas fases iniciais, o que torna a alternativa tecnicamente passível de discussão acadêmica, mas ela é considerada a correta pela banca por destacar que o bebê não parece \"doente\" (como em uma sepse ou erro inato do metabolismo), embora tenha uma patologia grave.\n\nAlternativa C (Incorreta): O ultrassom abdominal é um exame de triagem importante (pode mostrar o sinal do cordão triangular ou ausência de vesícula), mas ele sozinho NÃO confirma nem afasta definitivamente a Atresia de Vias Biliares. O padrão-ouro para o diagnóstico é a colangiografia intraoperatória ou, em alguns casos, a biópsia hepática que demonstra proliferação ductular.\n\nAlternativa D (Incorreta): A Síndrome de Gilbert causa especificamente aumento de Bilirrubina Indireta por uma deficiência parcial da enzima glicuroniltransferase. Como este paciente apresenta um aumento significativo de Bilirrubina Direta (5,0 mg/dL) e acolia fecal, o quadro é nitidamente obstrutivo/colestático, descartando Gilbert como causa do quadro atual.\n\nAlternativa E (Incorreta): O hipotireoidismo congênito é uma causa importante de icterícia prolongada no recém-nascido. Portanto, a avaliação da função tireoidiana (TSH e T4 livre) deve, obrigatoriamente, fazer parte da propedêutica inicial de qualquer RN com icterícia que ultrapassa os 14 dias de vida.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:08.245Z"
+  },
+  {
+    "id": "AJUDA_610ae703-415a-4d8d-863f-327c9cf079b5",
+    "originalId": "610ae703-415a-4d8d-863f-327c9cf079b5",
+    "statement": "Nas Américas, a hantavirose manifesta-se sob diferentes formas, desde doença febril aguda inespecífica até quadros pulmonares e cardiovasculares mais severos e característicos, podendo evoluir para a síndrome da angústia respiratória (SARA). Em relação a Hantaviros é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A doença é autolimitada e na maioria das vezes não necessitando de assistência hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No Brasil, até o momento não há variantes associadas a casos da síndrome cardiopulmonar por hantavírus (SCPH).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os equídeos, roedores como a capivara (Hydrochaeris hydrochaeris), e marsupiais, como o gambá, possuem importante participação no ciclo de transmissão da hantavirose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A infecção humana ocorre mais frequentemente pela inalação de aerossóis, formados a partir da urina, das fezes e da saliva de roedores infectados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O período de transmissibilidade do hantavírus no homem é bem conhecido, sendo que o período de maior viremia seria alguns dias após o aparecimento dos sinais e dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Incorreta: A hantavirose não pode ser considerada uma doença tipicamente autolimitada que dispense assistência hospitalar. Na verdade, a Síndrome Cardiopulmonar por Hantavírus (SCPH) é uma emergência médica com alta taxa de letalidade (variando de 30% a 50%), exigindo quase sempre monitorização em Unidade de Terapia Intensiva e suporte ventilatório devido à rápida evolução para insuficiência respiratória.\n\nAlternativa b) Incorreta: O Brasil é um dos países com maior registro de variantes associadas à Síndrome Cardiopulmonar por Hantavírus (SCPH). Entre as variantes identificadas no território brasileiro estão os vírus Araraquara, Juquitiba, Castelo dos Sonhos, Anajatuba e Laguna Negra, todos capazes de causar a forma cardiopulmonar grave da doença.\n\nAlternativa c) Incorreta: Os reservatórios naturais do hantavírus são especificamente pequenos roedores silvestres, principalmente das subfamílias Sigmodontinae e Arvicolinae. Equídeos, capivaras e gambás não fazem parte do ciclo epidemiológico de transmissão da hantavirose ao homem. A capivara, mencionada na alternativa, é o reservatório clássico da Febre Maculosa Brasileira.\n\nAlternativa d) Correta: Esta alternativa descreve o mecanismo principal de infecção humana. Os roedores infectados eliminam o vírus de forma persistente através da urina, fezes e saliva. Ao secarem, essas excretas misturam-se à poeira e formam aerossóis que, quando inalados por seres humanos em ambientes fechados ou durante a limpeza de locais contaminados, transmitem o vírus para o trato respiratório.\n\nAlternativa e) Incorreta: A transmissão entre seres humanos é um evento raríssimo e não é a regra na hantavirose (registrada quase exclusivamente para o vírus Andes na região da Argentina e do Chile). Além disso, a viremia é mais elevada no período inicial da doença (fase prodrômica) e tende a diminuir com a progressão dos sintomas e o surgimento da resposta imune, não sendo um período \"bem conhecido\" de transmissibilidade no homem.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Vigilância em Saúde",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:08.245Z"
+  },
+  {
+    "id": "AJUDA_61107af0-8259-4c21-b0c5-a1632d361108",
+    "originalId": "61107af0-8259-4c21-b0c5-a1632d361108",
+    "statement": "Mulher de 35 anos de idade procura avaliação de risco para câncer de mama. AP: nulípara, menarca aos 11 anos de idade. AF: câncer de mama em sua mãe aos 45 anos e na tia materna aos 50 anos.\nA conduta mais adequada, com base nas diretrizes FEBRASGO (2023), é realizar",
+    "options": [
+      {
+        "id": "A",
+        "text": "ultrassonografia anual e iniciar tamoxifeno como quimioprevenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "mamografia a cada 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "mamografia anual e iniciar tamoxifeno como quimioprevenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "teste genético (BRCA1/2, PALB2).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A paciente em questão apresenta critérios clínicos para a suspeita de uma síndrome de predisposição hereditária ao câncer de mama e ovário, conforme as diretrizes da FEBRASGO (2023). O principal sinal de alerta no caso é o diagnóstico de câncer de mama em uma parente de primeiro grau (mãe) antes dos 50 anos de idade (aos 45 anos), associado a outro caso na mesma linhagem familiar (tia materna).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A ultrassonografia mamária isolada não é a conduta de rastreamento recomendada para pacientes com este perfil de risco. Além disso, a quimioprevenção com tamoxifeno, embora possa ser discutida em pacientes de alto risco, não deve ser a conduta inicial antes de uma avaliação genética completa, que pode indicar medidas ainda mais assertivas, como cirurgias redutoras de risco.\n\nAlternativa b: Incorreta. O intervalo padrão para o rastreamento mamográfico, quando indicado, é anual. Não há recomendação nas diretrizes vigentes para a realização de mamografias de rotina a cada 6 meses como estratégia de rastreamento inicial.\n\nAlternativa c: Incorreta. Semelhante à alternativa a, a quimioprevenção com tamoxifeno é uma estratégia para redução de risco em mulheres com risco aumentado (calculado por modelos como o de Gail ou pela presença de lesões precursoras), mas em pacientes com forte histórico familiar de início precoce, a prioridade é a identificação de mutações germinativas que alteram drasticamente o manejo clínico e cirúrgico.\n\nAlternativa d: Correta. De acordo com as diretrizes da FEBRASGO (2023), o histórico de câncer de mama em parente de primeiro grau antes dos 50 anos é um critério para indicação de teste genético. A identificação de mutações em genes de alta penetrância, como BRCA1, BRCA2 e PALB2, é fundamental para personalizar o rastreamento, que nessas pacientes deve incluir a ressonância magnética das mamas e começar em idade mais jovem, além de possibilitar a discussão sobre cirurgias profiláticas (mastectomia e salpingo-oforectomia).",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:08.245Z"
+  },
+  {
+    "id": "AJUDA_611608ee-4489-4baf-8d59-2885132384d4",
+    "originalId": "611608ee-4489-4baf-8d59-2885132384d4",
+    "statement": "Um médico atua em uma UBS e, em sua área de cobertura, identifica a ocorrência de casos de sífilis congênita. Para entender a situação, ele notifica os casos no sistema de informação, investiga a situação das gestantes e dos parceiros e orienta as medidas de prevenção e controle.\nNo campo conceitual da vigilância em saúde, essa atuação caracteriza ações de vigilância",
+    "options": [
+      {
+        "id": "A",
+        "text": "sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ambiental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "das infecções sexualmente transmissíveis (IST).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "epidemiológica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "sexual e reprodutiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A resposta correta é a alternativa (d).\n\nA vigilância epidemiológica é definida como um conjunto de ações que proporciona o conhecimento, a detecção ou a prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde individual ou coletiva, com a finalidade de recomendar e adotar medidas de prevenção e controle de doenças ou agravos. No cenário descrito, o médico executa as funções clássicas dessa vigilância: a notificação (coleta de dados), a investigação dos casos e contatos (análise e processamento) e a orientação de medidas de controle (retroalimentação e intervenção).\n\nA alternativa (a) está incorreta porque a vigilância sanitária foca no controle de riscos relacionados à produção e circulação de bens e à prestação de serviços de interesse à saúde. Ela atua na fiscalização de alimentos, medicamentos, cosméticos e estabelecimentos, e não no monitoramento direto de casos de doenças infectocontagiosas em indivíduos.\n\nA alternativa (b) está incorreta porque a vigilância ambiental se dedica ao controle de fatores não biológicos do meio ambiente que podem interferir na saúde humana, como a qualidade da água, do ar e do solo, além do controle de vetores e hospedeiros intermediários.\n\nA alternativa (c) está incorreta pois, embora a sífilis seja uma IST, o termo \"Vigilância das IST\" não constitui um campo conceitual isolado nos pilares da vigilância em saúde. As ações de controle de infecções transmissíveis estão tecnicamente inseridas no escopo da vigilância epidemiológica.\n\nA alternativa (e) está incorreta porque, embora o tema envolva o ciclo gravídico e a saúde sexual, não existe um campo da vigilância em saúde com essa denominação específica nos manuais do Ministério da Saúde. A saúde sexual e reprodutiva é uma linha de cuidado assistencial, mas o monitoramento dos agravos a ela relacionados pertence à vigilância epidemiológica.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:08.245Z"
+  },
+  {
+    "id": "AJUDA_611b4670-0fe0-41e4-95c9-4b7d47e25fe5",
+    "originalId": "611b4670-0fe0-41e4-95c9-4b7d47e25fe5",
+    "statement": "Mulher de 68 anos, hipertensa e tabagista de longa data, com queixa crônica de claudicação de membro inferior esquerdo, vem ao pronto atendimento com intensa dor em membro inferior esquerdo, iniciada há 6 horas, principalmente em pé e panturrilha. Ao exame, observa-cianose do hálux esquerdo e ausência de pulsos poplíteo e distal à esquerda. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trombose venosa profunda aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trombose arterial aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tromboflebite superficial aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pré-diabético.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma paciente idosa (68 anos) com fatores de risco cardiovascular importantes (hipertensão e tabagismo) e uma história prévia sugestiva de Doença Arterial Obstrutiva Periférica (claudicação crônica). O quadro atual é de uma Isquemia Aguda de Membro Inferior, caracterizada por dor intensa de início súbito (há 6 horas), cianose (sinal de sofrimento tecidual) e ausência de pulsos (poplíteos e distais). Em pacientes com história prévia de claudicação, a causa mais comum de oclusão arterial aguda é a trombose de uma placa aterosclerótica preexistente.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Trombose venosa profunda aguda: Incorreta. A TVP manifesta-se tipicamente com edema (inchaço), dor à palpação muscular e empastamento da panturrilha. Diferente do quadro arterial, na TVP os pulsos distais costumam estar preservados. A cianose e a ausência de pulsos descritas são sinais clássicos de interrupção do fluxo arterial, não venoso.\n\nb) Trombose arterial aguda: Correta. O quadro clínico é soberano para o diagnóstico de oclusão arterial aguda. A história de claudicação crônica indica que a paciente já possuía uma estenose arterial por aterosclerose, sobre a qual ocorreu a formação de um trombo agudo, interrompendo totalmente o fluxo sanguíneo. A tríade de dor intensa, cianose e ausência de pulsos poplíteos e distais confirma a obstrução arterial no nível ou acima da artéria poplítea.\n\nc) Tromboflebite superficial aguda: Incorreta. A tromboflebite superficial caracteriza-se por um processo inflamatório em uma veia superficial, apresentando-se como um \"cordão\" venoso endurecido, hiperemiado (vermelho), quente e doloroso ao toque. Não causa ausência de pulsos nem isquemia grave do membro.\n\nd) Pré-diabético: Incorreta. O pré-diabetes é uma condição metabólica definida por níveis de glicemia intermediários entre o normal e o diabetes tipo 2. Embora o diabetes seja um fator de risco para doenças vasculares, \"pré-diabético\" não é um diagnóstico para um evento agudo de dor e ausência de pulsos em membro inferior.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:08.245Z"
+  }
+]

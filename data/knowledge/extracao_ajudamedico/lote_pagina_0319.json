@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_57d7edfa-79f1-4fbc-8363-4959fb8048b7",
+    "originalId": "57d7edfa-79f1-4fbc-8363-4959fb8048b7",
+    "statement": "Mulher de 70 anos queixa-se de empanzinamento epigástrico pós- prandial. Desconhece comorbidades e não faz uso de medicamentos. EXAMES DE LABORATÓRIO: vitamina B12 sérica 134pg/mL; gastrina sérica: >1.000pg/mL; anticorpo anti-célula parietal: reagente. Endoscopia digestiva alta: mucosa do corpo e fundo gástrico pálida e adelgaçada, com perda das pregas gástricas; a mucosa do antro está relativamente preservada. A biópsia da mucosa gástrica revela atrofia das glândulas oxínticas no corpo gástrico, associada a inflamatório linfoplasmocitário. O teste de urease para H. pylori é negativo. A mucosa antral está normal. A doença dessa paciente pode ser acompanhada de algumas complicações. Assinale a alternativa que NÃO apresenta uma complicação associada ao diagnóstico provável:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Polineuropatia periférica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de super-crescimento bacteriano do intestino delgado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tumor neuroendócrino gástrico tipo 1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Úlcera péptica gástrica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO:\nO quadro clínico descreve um caso clássico de Gastrite Atrófica Autoimune (também conhecida como Gastrite Tipo A). Os pontos-chave para o diagnóstico são:\n1. Localização: Acometimento restrito ao corpo e fundo gástrico (região das glândulas oxínticas), com preservação do antro.\n2. Laboratório: Presença de anticorpo anticélula parietal e deficiência severa de vitamina B12.\n3. Fisiopatologia: A destruição das células parietais leva à acloridria (ausência de ácido clorídrico). Sem o *feedback* negativo do ácido, as células G do antro produzem gastrina de forma maciça, explicando a hipergastrinemia acentuada (>1.000 pg/mL).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Polineuropatia periférica: Incorreta para o comando da questão. A deficiência de vitamina B12, resultante da perda do fator intrínseco (produzido pelas células parietais), causa danos neurológicos, incluindo degeneração combinada subaguda da medula e neuropatia periférica. Portanto, é uma complicação possível.\n\nb) Síndrome de supercrescimento bacteriano do intestino delgado: Incorreta para o comando da questão. O ácido gástrico atua como uma barreira natural contra a proliferação de bactérias ingeridas. Na acloridria da gastrite autoimune, essa barreira desaparece, facilitando a colonização excessiva do intestino delgado por bactérias (SIBO).\n\nc) Tumor neuroendócrino gástrico tipo 1: Incorreta para o comando da questão. A hipergastrinemia crônica e acentuada exerce um efeito trófico (estimulante) sobre as células *enterochromaffin-like* (ECL) do corpo gástrico. Isso leva à hiperplasia dessas células e pode evoluir para o surgimento de tumores neuroendócrinos (carcinoides) tipo 1, que costumam ser pequenos e múltiplos.\n\nd) Úlcera péptica gástrica: CORRETA (Alternativa que NÃO apresenta uma complicação). A formação de úlceras pépticas depende fundamentalmente da presença de ácido clorídrico (fisiopatologia resumida pelo aforismo \"sem ácido, não há úlcera\"). Como a paciente apresenta atrofia severa das células parietais e consequente acloridria, ela está virtualmente \"protegida\" contra o desenvolvimento de úlceras pépticas gástricas ou duodenais. Além disso, o teste para *H. pylori* (principal causa de úlceras) foi negativo.\n\nGABARITO: Letra (d).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  },
+  {
+    "id": "AJUDA_57d8806a-31da-4007-b409-ae2454ab18cb",
+    "originalId": "57d8806a-31da-4007-b409-ae2454ab18cb",
+    "statement": "Entre as atribuições da Vigilância Epidemiológica no SUS, qual das alternativas abaixo está correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fiscalização de estabelecimentos de saúde, como clínicas e hospitais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inspeção de medicamentos e cosméticos antes da comercialização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coleta, análise e interpretação sistemática de dados sobre saúde, com a finalidade de planejar, executar e avaliar medidas de saúde pública.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Controle de riscos ambientais relacionados à poluição do ar e da água.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Vigilância em Saúde no Sistema Único de Saúde (SUS) é estruturada em diferentes componentes, sendo fundamental diferenciar a Vigilância Epidemiológica da Sanitária e da Ambiental, com base na Lei Federal 8.080/1990.\n\nAlternativa A - Incorreta. A fiscalização de estabelecimentos de saúde, como clínicas, consultórios, laboratórios e hospitais, é atribuição da Vigilância Sanitária (VISA), cujo foco é eliminar, diminuir ou prevenir riscos decorrentes da prestação de serviços de interesse à saúde.\n\nAlternativa B - Incorreta. O controle, a inspeção e o registro de bens de consumo relacionados à saúde (como medicamentos, cosméticos, alimentos e saneantes), abrangendo todas as etapas da produção ao consumo, são competências da Vigilância Sanitária e da Anvisa.\n\nAlternativa C - Correta. A Vigilância Epidemiológica é definida legalmente como um conjunto de ações que proporciona o conhecimento, a detecção ou a prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde individual ou coletiva. O seu ciclo clássico consiste na coleta contínua de dados, processamento, análise e interpretação sistemática, com o objetivo de gerar informação para a tomada de decisão, planejamento, execução e avaliação de medidas de controle de doenças e agravos.\n\nAlternativa D - Incorreta. O monitoramento e o controle de riscos e fatores de estresse ambiental (poluição do ar, qualidade da água de consumo, contaminantes do solo e desastres naturais) são atribuições específicas da Vigilância em Saúde Ambiental.\n\nGabarito: Letra C.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  },
+  {
+    "id": "AJUDA_57e2f7a9-bfb5-4546-8e76-8547a1886233",
+    "originalId": "57e2f7a9-bfb5-4546-8e76-8547a1886233",
+    "statement": "Um paciente do sexo masculino, 30 anos, previamente saudável, procura o pronto atendimento com queixa de febre baixa, dor de cabeça, mialgia leve e exantema maculopapular pruriginoso que começou há 2 dias. Ele também relata dor nas articulações das mãos e pés, sem inchaço, além de hiperemia conjuntival, sem secreção. O paciente nega sangramentos ou manifestações gastrointestinais. Com base no quadro clínico, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dengue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Febre Chikungunya.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vírus Zika.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Leptospirose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Febre Amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico para a infecção pelo vírus Zika. Para diferenciar as principais arboviroses (dengue, zika e chikungunya) e outras doenças febris, devemos focar nos sinais patognomônicos e na intensidade dos sintomas.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Dengue: Incorreta. Na dengue, a febre costuma ser alta e de início súbito. A mialgia é intensa (dor no corpo e retro-orbitária) e o exantema, quando presente, costuma surgir mais tardiamente, por volta do quarto ou quinto dia, geralmente sem o prurido intenso relatado. A hiperemia conjuntival não é um achado típico da dengue.\n\nb) Febre Chikungunya: Incorreta. O marco da chikungunya é a dor articular (artralgia) intensa, muitas vezes incapacitante, frequentemente acompanhada de edema (artrite), o que o enunciado explicitamente nega ao dizer que não há inchaço. A febre também costuma ser mais elevada do que a descrita no caso.\n\nc) Vírus Zika: Correta. O vírus Zika apresenta-se tipicamente com febre baixa ou ausente, exantema maculopapular de início precoce (nas primeiras 24 a 48 horas), marcadamente pruriginoso. Outro sinal característico é a hiperemia conjuntival não purulenta (olhos vermelhos sem secreção), além de artralgia leve a moderada, muitas vezes afetando pequenas articulações de mãos e pés. O quadro clínico do paciente encaixa-se perfeitamente nesta descrição.\n\nd) Leptospirose: Incorreta. A fase precoce da leptospirose apresenta febre alta, cefaleia e mialgia muito intensa, especialmente nas panturrilhas. Embora possa haver sufusão conjuntival, o exantema pruriginoso não é uma característica comum, e o contexto epidemiológico geralmente envolve exposição a águas de enchente ou esgoto.\n\ne) Febre Amarela: Incorreta. É uma doença de gravidade maior, com febre alta, calafrios, mialgia generalizada e, em casos moderados a graves, evolução para icterícia, insuficiência renal e manifestações hemorrágicas. O quadro leve e pruriginoso do paciente não é compatível com febre amarela.\n\nRESUMO DIDÁTICO:\nAo suspeitar de Zika, busque o tripé: febre baixa + exantema pruriginoso precoce + hiperemia conjuntival (não purulenta). Se a dor articular fosse o sintoma dominante e com edema, pensaríamos em chikungunya. Se a febre fosse alta com dor retro-orbitária e mialgia intensa, pensaríamos em dengue.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  },
+  {
+    "id": "AJUDA_57e7952f-1977-4e09-ac67-c839a19e2276",
+    "originalId": "57e7952f-1977-4e09-ac67-c839a19e2276",
+    "statement": "Primigesta, 32 anos, em acompanhamento pré-natal, com 28 semanas de gestação, relata edema em membros inferiores ao final do dia e aumento progressivo da frequência urinária desde o início da gravidez. Sem outras queixas. Em uso regular de sulfato ferroso profilático. Sem comorbidades relatadas. Exame físico: Peso = 68Kg (IMC = 24,24Kg/m²); P.A. = 110x75mmHg; FC = 66bpm; ausculta cardíaca e respiratória sem alterações da normalidade; altura uterina = 29cm; feto longitudinal, cefálico, à esquerda; BCF = 148bpm. Não realizado toque vaginal. Considerando o caso relatado, é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A compressão uterina sobre a bexiga aumenta a sua capacidade volumétrica, levando à estase urinária e ao aumento da frequência miccional",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As alterações cardiovasculares da gestação levam ao aumento do tônus vascular generalizado e à redução do débito cardíaco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O aumento da diurese e da frequência urinária são consequências diretas do aumento da taxa de filtração glomerular e da redução da resistência vascular sistêmica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O edema em membros inferiores é causado pela compressão da veia uterina, que impedem o retorno venoso e ao aumento do volume sanguíneo circulante",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\nO quadro clínico descreve uma gestante saudável de 28 semanas (terceiro trimestre) com queixas clássicas de edema de membros inferiores ao final do dia e polaciúria (aumento da frequência urinária). Ambos os achados são considerados fisiológicos nesta fase da gestação, desde que os níveis pressóricos e os parâmetros laboratoriais estejam normais, como é o caso da paciente (PA 110 x 75 mmHg).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) INCORRETA. O crescimento do útero de fato exerce uma compressão mecânica sobre a bexiga, porém isso causa uma REDUÇÃO da sua capacidade volumétrica, e não um aumento. Com a capacidade reduzida, a bexiga atinge o limite de distensão com volumes menores de urina, levando ao aumento da frequência miccional.\n\nAlternativa b) INCORRETA. Na gestação normal, as alterações cardiovasculares são marcadas pela redução da resistência vascular sistêmica (vasodilatação) e pelo aumento do débito cardíaco (que aumenta entre 30% e 50%). O tônus vascular generalizado diminui por influência hormonal (principalmente progesterona e óxido nítrico) para acomodar o maior volume plasmático.\n\nAlternativa c) CORRETA. Desde o início da gestação, ocorre um aumento significativo do fluxo plasmático renal e, consequentemente, da Taxa de Filtração Glomerular (TFG), que chega a ser 50% superior aos níveis pré-gravídicos. Esse aumento da filtração, somado à queda da resistência vascular sistêmica, é o principal mecanismo fisiológico que explica o aumento da diurese e da frequência urinária relatados pela paciente.\n\nAlternativa d) INCORRETA. O edema de membros inferiores na gestante ocorre principalmente devido à compressão da VEIA CAVA INFERIOR e das VEIAS ILÍACAS pelo útero gravídico. Essa compressão mecânica dificulta o retorno venoso proveniente das pernas, aumentando a pressão hidrostática capilar e favorecendo o extravasamento de líquido para o espaço intersticial. A alternativa cita incorretamente a \"veia uterina\" como a causa desse bloqueio ao retorno venoso.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  },
+  {
+    "id": "AJUDA_57f72554-d933-48aa-909d-c84dffa4a68c",
+    "originalId": "57f72554-d933-48aa-909d-c84dffa4a68c",
+    "statement": "Casal comparece à consulta solicitando orientações sobre reserva ovariana pensando em uma futura gravidez. A mulher tem 36 anos de idade e teve duas gestações anteriores e uma delas resultou em abortamento no primeiro trimestre. Teve menarca aos 10 anos e utilizou contraceptivos orais por 12 anos. A mãe é hipertensa e teve menopausa espontânea aos 38 anos. O casal deve ser orientado de que, pelas informações coletadas, além da idade, é fator de risco, para baixa reserva ovariana, ter:",
+    "options": [
+      {
+        "id": "A",
+        "text": "menarca aos 10 anos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "história de abortamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "mãe com menopausa precoce",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "uso prolongado de contraceptivos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "RESERVA OVARIANA E FATORES DE RISCO\n\nA questão aborda a identificação de fatores clínicos que podem sinalizar uma redução da reserva ovariana em uma paciente que deseja gestar futuramente. A reserva ovariana representa a quantidade e a qualidade dos oócitos presentes nos ovários em um determinado momento da vida reprodutiva.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: A idade da menarca (neste caso, aos 10 anos) não é considerada um fator de risco para baixa reserva ovariana. O consumo de folículos ocorre de forma contínua desde a vida intrauterina por meio de um processo chamado atresia, que independe da ocorrência ou não de ciclos ovulatórios. Ter ciclos iniciados precocemente não esgota o estoque folicular de forma prematura e significativa em comparação ao processo natural de atresia.\n\nAlternativa (b) INCORRETA: O histórico de abortamento não está diretamente relacionado ao tamanho da reserva ovariana. O abortamento de primeiro trimestre é frequentemente causado por aneuploidias (alterações cromossômicas no embrião). Embora a incidência de abortamentos aumente com o avançar da idade (devido à queda da qualidade oocitária), o fato isolado de ter tido um abortamento anterior não é um preditor ou causa de baixa reserva.\n\nAlternativa (c) CORRETA: O componente genético é um dos principais determinantes do tempo de vida reprodutiva da mulher. A menopausa ocorrida aos 38 anos na mãe da paciente configura um quadro de Insuficiência Ovariana Prematura (menopausa antes dos 40 anos). Mulheres com histórico familiar de primeiro grau de menopausa precoce apresentam um risco significativamente maior de possuírem uma reserva ovariana reduzida para a idade cronológica, devido a polimorfismos ou mutações genéticas que aceleram a perda folicular.\n\nAlternativa (d) INCORRETA: O uso de contraceptivos orais, mesmo que por longos períodos (como os 12 anos citados), não interfere na reserva ovariana. Os anticoncepcionais inibem a ovulação por meio da supressão do eixo hipotálamo-hipófise, mas não interrompem o recrutamento inicial e a atresia folicular basal. Portanto, o uso dessas medicações não protege o estoque de óvulos nem acelera o seu desgaste.\n\nCONCLUSÃO:\nAlém da idade cronológica, a história familiar de falência ovariana precoce ou menopausa precoce é o dado clínico mais relevante na anamnese para suspeitar de uma reserva ovariana diminuída.\n\nGABARITO: Letra (c).",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  },
+  {
+    "id": "AJUDA_57f9bc0e-acef-4569-b159-62517d54f5af",
+    "originalId": "57f9bc0e-acef-4569-b159-62517d54f5af",
+    "statement": "Você, Médico, está atendendo na emergência psiquiátrica do Hospital Dr Adolfo Bezerra de Menezes (HABM) quando a enfermeira da triagem te chama para avaliar uma paciente. L.A.F. , sexo feminino de 42 anos, sem comorbidades prévias conhecidas além do diagnóstico psiquiátrico de depressão. A paciente procurou o atendimento assintomática, apenas para renovar a receita do seu medicamento antidepressivo. Na triagem foi aferida a pressão arterial de 190x120 mmHg. A pressão foi aferida nos 4 membros não apresentando diferença nas aferições. Considerando a nova diretriz brasileira de hipertensão arterial, atualizada em 2025, qual das seguintes alternativas classifica melhor esse evento e qual seria a conduta adequada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crise hipertensiva, com indicação do uso anti-hipertensivos imediatamente, com o objetivo de alcançar uma pressão arterial alvo menor do que 120x80mmHg nas primeiras 3 horas, devendo ser reavaliada a cada 1 hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Emergência hipertensiva, um quadro de provável dissecção de aorta. Prescrever anti hipertensivos imediatamente e manter níveis de pressão arterial sistólica abaixo de 140 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Urgência hipertensiva, orientar acompanhamento ambulatorial para investigação de hipertensão arterial sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Elevação importante da pressão arterial, definida por pressão arterial maior ou igual a 180x110 mmHg, sem evidência clínica de lesão de órgão alvo progressiva. Pode ser prescrito anti-hipertensivo oral e a paciente deve ser reavaliada clinicamente em até 7 dias com um alvo pressórico menor do que 160x100mmHg, sem necessidade de observação em unidade de emergência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a abordagem de pacientes com níveis pressóricos muito elevados (PA maior ou igual a 180x110 mmHg) na ausência de sintomas ou de lesão aguda de órgão-alvo (LOA), situação frequentemente classificada como Elevação Importante da Pressão Arterial (EIPA) ou pseudocrise hipertensiva.\n\nAlternativa a: Incorreta. A redução abrupta da pressão arterial para níveis normais (menor que 120x80 mmHg) em poucas horas é perigosa e contraindicada, pois pode comprometer a autorregulação do fluxo sanguíneo cerebral, coronariano e renal, precipitando eventos isquêmicos.\n\nAlternativa b: Incorreta. A emergência hipertensiva é caracterizada pela presença de lesão aguda e progressiva de órgão-alvo (como dissecção aórtica, AVE, SCA ou edema agudo de pulmão). A paciente é assintomática e não apresenta assimetria de pulsos ou de pressão entre os membros, afastando a hipótese de dissecção aguda de aorta.\n\nAlternativa c: Incorreta. O termo urgência hipertensiva tem sido cada vez mais desencorajado para pacientes totalmente assintomáticos sem lesão de órgão-alvo. Além disso, a conduta descrita na alternativa D é mais precisa, completa e condizente com as diretrizes mais recentes.\n\nAlternativa d: Correta. A paciente apresenta PA de 190x120 mmHg totalmente assintomática, caracterizando uma Elevação Importante da Pressão Arterial (EIPA) sem evidência de LOA aguda. Nesses casos, não há necessidade de exames de emergência ou internação/observação prolongada. A conduta adequada consiste no ajuste ou início de medicação anti-hipertensiva por via oral, liberação da paciente e encaminhamento para reavaliação clínica ambulatorial em até 7 dias, buscando uma meta intermediária de PA menor que 160x100 mmHg para garantir uma redução pressórica segura e gradual.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  },
+  {
+    "id": "AJUDA_5821c0ae-3ed9-4124-9c77-49d15e68d567",
+    "originalId": "5821c0ae-3ed9-4124-9c77-49d15e68d567",
+    "statement": "Embora a obstrução congênita das vias lacrimais excretoras (OCVLE) seja significativamente mais frequente que outras causas de acúmulo da lágrima nos lactentes, sinais e sintomas associados podem sugerir outros diagnósticos. Sobre essa temática, tão comum no consultório pediátrico, é mais correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "quando a obstrução da via lacrimal ocorre em suas porções mais proximais há acúmulo de secreção além de excesso de lágrima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "embora as obstruções das vias lacrimais ocorram mais frequentemente de forma bilateral, em 20% das vezes pode ser unilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "na obstrução da porção terminal da via lacrimal há estase da lágrima, acúmulo de secreção mucoide, mucopurulenta ou purulenta, e refluxo para os olhos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "um diagnóstico diferencial importante, pelo potencial de causar cegueira reversível, é o glaucoma congênito, que é caracterizado por lacrimejamento e fotofobia, mas sem blefaroespasmo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Comentário da Questão:\n\nAlternativa A (Incorreta): Nas obstruções proximais (pontos lacrimais ou canalículos), o principal sinal é o lacrimejamento (epífora) isolado. Para que ocorra o acúmulo de secreção mucopurulenta, é necessário que a lágrima chegue ao saco lacrimal e sofra estase. Como, nas obstruções proximais, a lágrima sequer atinge o saco lacrimal, a secreção costuma estar ausente ou ser mínima.\n\nAlternativa B (Incorreta): A obstrução congênita das vias lacrimais é predominantemente unilateral. Estima-se que a apresentação unilateral ocorra em cerca de 70% a 80% dos casos, enquanto a bilateralidade é observada em apenas 20% a 30% dos lactentes afetados. A alternativa inverteu essa proporção.\n\nAlternativa C (Correta): Esta alternativa descreve perfeitamente a fisiopatologia da obstrução distal (geralmente na válvula de Hasner). Quando a obstrução ocorre na porção terminal, a lágrima penetra no sistema, mas fica retida no saco lacrimal. Essa estase favorece a proliferação bacteriana, resultando em secreção mucoide ou purulenta. Ao pressionar a região do saco lacrimal, é comum observar o refluxo desse material para a superfície ocular, sinal clássico da condição.\n\nAlternativa D (Incorreta): O glaucoma congênito é, de fato, um diagnóstico diferencial crucial e uma emergência oftalmológica. No entanto, a descrição clínica clássica do glaucoma congênito é composta pela tríade: epífora (lacrimejamento), fotofobia e blefaroespasmo (contração involuntária das pálpebras). A afirmação de que não há blefaroespasmo torna a alternativa incorreta. Além disso, a cegueira pode ser irreversível se o tratamento for tardio, devido ao dano ao nervo óptico e ao aumento do diâmetro ocular (buftalmia).",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  },
+  {
+    "id": "AJUDA_5824589d-7b5a-46af-b9a1-a47a25f236e2",
+    "originalId": "5824589d-7b5a-46af-b9a1-a47a25f236e2",
+    "statement": "Eviscerações e eventrações são complicações potencialmente graves de procedimentos cirúrgicos por via laparotômica. Assinale a alternativa correta sobre esses eventos:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na evisceração, a cobertura das vísceras com compressas úmidas até a reabordagem está atualmente contraindicada por aumento de lesões de delgado na manipulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As complicações de sítio cirúrgico profundo têm associação com idade avançada, uso de anti inflamatórios não esteroidais e doença pulmonar subjacente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ao diagnóstico de deiscência de aponeurose, sua correção deve ser realizada imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A deiscência de aponeurose abdominal é diagnosticada inicialmente por saída de secreção purulenta pela ferida operatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O uso de cintas abdominais não interfere na incidência de eventrações e eviscerações, estando indicado para conforto e sensação de segurança do paciente no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "DEFINIÇÕES INICIAIS\nPara compreender a questão, é fundamental diferenciar os dois conceitos: a evisceração é uma complicação aguda, na qual ocorre a abertura de todos os planos da parede abdominal (incluindo a aponeurose) com a exteriorização de vísceras para o meio externo. A eventração (ou hérnia incisional) é uma complicação crônica, caracterizada pela saída de vísceras através de um defeito na aponeurose, mas que permanecem recobertas por pele e tecido subcutâneo íntegros.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A conduta imediata diante de uma evisceração é justamente a cobertura das vísceras com compressas úmidas (preferencialmente com soro fisiológico morno) e estéreis. Isso visa proteger as alças intestinais contra o ressecamento, hipotermia e traumas adicionais enquanto o paciente é preparado para a reabordagem cirúrgica de urgência. Não há contraindicação atual a essa manobra; ela é o padrão de cuidado inicial.\n\nAlternativa b) Incorreta. Embora a idade avançada e a doença pulmonar subjacente (que aumenta a pressão intra-abdominal devido à tosse crônica) sejam fatores de risco bem estabelecidos para deiscências de parede, o uso de anti-inflamatórios não esteroidais (AINEs) não é o principal fator farmacológico associado. O destaque na literatura médica para o prejuízo da cicatrização e aumento do risco de deiscência recai sobre o uso crônico de corticosteroides, quimioterápicos e imunossupressores.\n\nAlternativa c) Incorreta. A conduta depende do tipo de deiscência. Se for uma evisceração (aguda e completa), o tratamento é cirúrgico de urgência. No entanto, se o diagnóstico for de uma eventração (hérnia incisional crônica), a correção é planejada de forma eletiva, após a otimização das condições clínicas do paciente (perda de peso, controle de doenças crônicas, cessação do tabagismo). Nem toda deiscência aponeurótica exige \"correção imediata\" no sentido de emergência cirúrgica.\n\nAlternativa d) Incorreta. O sinal clínico patognomônico e mais precoce de uma deiscência de aponeurose oculta é a saída de secreção serossanguinolenta abundante pela ferida operatória, frequentemente descrita como secreção em \"água de carne\". A saída de secreção purulenta é indicativa de infecção do sítio cirúrgico (abscesso de parede), que pode até ser um fator contribuinte para a deiscência, mas não é o sinal diagnóstico inicial da falha aponeurótica em si.\n\nAlternativa e) Correta. Esta é uma pegadinha comum em provas de residência. Diversos estudos e meta-análises demonstram que o uso de cintas abdominais ou faixas elásticas no pós-operatório de grandes cirurgias abdominais não reduz a taxa de formação de hérnias incisionais ou eviscerações. O fechamento técnico adequado da aponeurose é o único fator protetor mecânico real. O uso desses acessórios é recomendado para melhorar o conforto do paciente, reduzir a dor ao tossir ou movimentar-se e conferir uma sensação psicológica de estabilidade (\"segurança\") da parede abdominal.\n\nGABARITO: Alternativa (e).",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  },
+  {
+    "id": "AJUDA_58262693-1c14-4525-8be4-a26bc8bf592c",
+    "originalId": "58262693-1c14-4525-8be4-a26bc8bf592c",
+    "statement": "Qual desenho de estudo é mais adequado para investigar fatores de risco raros?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ensaio clínico randomizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estudo de coorte prospectivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estudo de caso-controle.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Estudo transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. O ensaio clínico randomizado é um estudo experimental voltado para testar a eficácia de intervenções, como novos medicamentos ou procedimentos. Ele não é adequado para investigar fatores de risco porque, além de ter um custo muito elevado e longa duração, seria antiético expor indivíduos a fatores de risco conhecidos ou potenciais apenas para observar o surgimento de uma doença.\n\nAlternativa b: Incorreta. O estudo de coorte prospectivo acompanha grupos de pessoas expostas e não expostas ao longo do tempo. Embora seja o desenho ideal para observar a incidência de doenças, ele é considerado ineficiente para investigar eventos raros. Para que um fator de risco raro produza resultados estatisticamente significativos em uma coorte, seria necessária uma amostra populacional gigantesca e muitos anos de seguimento, o que torna o estudo extremamente caro e difícil de executar.\n\nAlternativa c: Correta. O estudo de caso-controle é o desenho de escolha para investigar doenças raras ou desfechos com longo período de latência. Ele funciona de forma retrospectiva: o pesquisador identifica os indivíduos que já apresentam a doença (casos) e os compara com indivíduos saudáveis (controles), buscando no passado a presença de fatores de risco. É um modelo rápido, de baixo custo e que exige um número reduzido de participantes, sendo a forma mais prática de associar fatores de risco a condições que não ocorrem com frequência na população.\n\nAlternativa d: Incorreta. O estudo transversal, também chamado de seccional, é como uma fotografia instantânea de uma população em um determinado momento. Como ele analisa a exposição e a doença simultaneamente, ele é muito útil para medir a prevalência de doenças comuns, mas falha ao tentar investigar fatores de risco ou doenças raras, pois a chance de encontrar esses eventos em um único recorte temporal é mínima. Além disso, ele não consegue estabelecer com clareza a relação de causalidade entre o fator e a doença.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  },
+  {
+    "id": "AJUDA_5833c5b5-5cde-4325-a81a-dc03df3f8849",
+    "originalId": "5833c5b5-5cde-4325-a81a-dc03df3f8849",
+    "statement": "Um paciente de 58 anos foi submetido a uma gastrectomia subtotal devido a um adenocarcinoma gástrico. Após a cirurgia, ele desenvolveu episódios frequentes de sudorese, palpitações, tonturas e diarreia após as refeições.\nEssa complicação pós-operatória está relacionada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ao desenvolvimento de diabetes mellitus tipo 2;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a uma trombose venosa profunda;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "à síndrome de dumping;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ao aumento da densidade óssea;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "à presença de úlcera alcalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO quadro clínico descrito — um paciente que realizou gastrectomia e apresenta sintomas de sudorese, palpitações, tonturas e diarreia logo após as refeições — é clássico de uma complicação frequente em cirurgias gástricas que envolvem a retirada ou bypass do piloro: a Síndrome de Dumping.\n\nA Síndrome de Dumping ocorre devido ao esvaziamento gástrico excessivamente rápido de um quimo hiperosmolar para dentro do intestino delgado. Isso resulta em um desvio de fluidos do compartimento intravascular para a luz intestinal (causando distensão abdominal e diarreia) e uma resposta vasomotora sistêmica (causando palpitações, tontura e sudorese).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. O desenvolvimento de diabetes mellitus tipo 2 não é uma complicação direta da gastrectomia. Na verdade, cirurgias gástricas (como o bypass gástrico) são frequentemente utilizadas no tratamento metabólico para melhorar ou levar à remissão do diabetes. Os sintomas de sudorese e palpitações no dumping podem simular uma hipoglicemia, mas a causa é a dinâmica do esvaziamento gástrico, não a fisiopatologia do DM2.\n\nb) Incorreta. A trombose venosa profunda (TVP) é uma complicação pós-operatória possível em qualquer cirurgia de grande porte devido à imobilização e ao estado pró-trombótico, mas seus sintomas clássicos são edema, dor e calor em membros inferiores, não tendo relação com a ingestão de alimentos.\n\nc) Correta. A Síndrome de Dumping é dividida em precoce (ocorre 15 a 30 minutos após a refeição) e tardia (1 a 3 horas após). O dumping precoce justifica os sintomas gastrointestinais (diarreia, dor abdominal) e vasomotores (taquicardia, sudorese) devido à rápida distensão do jejuno e liberação de hormônios gastrointestinais.\n\nd) Incorreta. Pacientes gastrectomizados tendem a apresentar, a longo prazo, uma diminuição da densidade óssea (osteopenia ou osteoporose) devido à má absorção de cálcio e vitamina D, e não um aumento.\n\ne) Incorreta. A úlcera alcalina (ou gastrite por refluxo alcalino) ocorre devido ao refluxo de secreções biliares e pancreáticas para o remanescente gástrico. Embora seja uma complicação pós-gastrectomia, o quadro clínico típico é de dor epigástrica contínua que não melhora com a alimentação e vômitos biliosos, sem os componentes sistêmicos vasomotores da Síndrome de Dumping.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:46:12.298Z"
+  }
+]

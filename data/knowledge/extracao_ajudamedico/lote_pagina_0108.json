@@ -1,0 +1,514 @@
+[
+  {
+    "id": "AJUDA_1d4346b1-fe89-4e71-8d0a-4f2aff95b16a",
+    "originalId": "1d4346b1-fe89-4e71-8d0a-4f2aff95b16a",
+    "statement": "Paciente de 20 anos, vítima de atropelamento com história de perda de consciência na cena do acidente, é trazido ao Pronto Socorro agitado, gritando muito. Ao exame clínico apresenta murmúrio vesicular audível claro bilateralmente, SpO2 98% em ar ambiente, PA 130x80 mmHg, FC: 80 bpm. Durante o exame físico evolui com rebaixamento do nível de consciência, deixa de falar, não abre os olhos e tem resposta motora de retirada à dor. A tomografia de crânio mostra a seguinte imagem:\nO diagnóstico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesão axonal difusa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hematoma subdural agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hematoma extradural.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hemorragia subaracnóidea traumática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve a evolução clássica de um hematoma extradural (ou epidural). O paciente apresenta o chamado intervalo lúcido: uma perda inicial de consciência seguida por um período de agitação e relativa lucidez, culminando em uma rápida deterioração neurológica à medida que o hematoma se expande e exerce efeito de massa.\n\nAnálise da imagem de tomografia:\nA imagem revela uma coleção hiperdensa (branca) com formato biconvexo ou lenticular na região temporoparietal direita. Essa morfologia é característica do hematoma extradural porque o sangramento (geralmente da artéria meníngea média) ocorre entre o crânio e a dura-máter. Como a dura-máter está fortemente aderida às suturas cranianas, o sangue fica \"represado\", conferindo esse formato de lente. Nota-se também um desvio importante das estruturas da linha média e compressão ventricular.\n\nAnálise das alternativas:\n\na) Incorreta. A Lesão Axonal Difusa (LAD) ocorre por mecanismos de desaceleração e cisalhamento das fibras nervosas. O quadro clínico típico é de coma imediato após o trauma. Na tomografia, a LAD costuma apresentar um exame inicialmente normal ou pequenos pontos hemorrágicos (petéquias) na transição entre a substância branca e cinzenta, corpo caloso ou tronco cerebral, o que difere totalmente da grande massa visualizada.\n\nb) Incorreta. O hematoma subdural agudo apresenta-se na tomografia como uma coleção hiperdensa em formato de crescente (côncavo-convexo). Diferente do extradural, o subdural não é limitado pelas suturas cranianas e tende a se espalhar por toda a convexidade do hemisfério cerebral.\n\nc) Correta. O diagnóstico de hematoma extradural é confirmado tanto pela história clínica (intervalo lúcido) quanto pelo achado tomográfico clássico de uma imagem hiperdensa biconvexa que não atravessa as suturas cranianas.\n\nd) Incorreta. A hemorragia subaracnoidea traumática é caracterizada pela presença de sangue nos sulcos cerebrais e nas cisternas da base. Ela não se apresenta como uma massa sólida biconvexa, mas sim como linhas hiperdensas que acompanham a anatomia da superfície do cérebro.\n\nGabarito: Alternativa (c).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Trauma",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/a392780e1edea3c4617a4566e27eebc6e1f7d9001f385bec4be532714197bd50.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1d4346b1-fe89-4e71-8d0a-4f2aff95b16a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:01.384Z"
+  },
+  {
+    "id": "AJUDA_1d56dada-17ad-4540-ba71-025fa1459dcb",
+    "originalId": "1d56dada-17ad-4540-ba71-025fa1459dcb",
+    "statement": "A principal complicação de pacientes com polidrâmnio no pós-parto é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hemorragia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "inversão uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "trombose venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda as complicações puerperais associadas ao polidrâmnio, que é o acúmulo excessivo de líquido amniótico durante a gestação. A lógica fisiopatológica para responder a essa pergunta reside na capacidade contrátil do útero após a saída do feto e da placenta.\n\nExplicação das alternativas:\n\na) Incorreta. Embora processos infecciosos como a corioamnionite possam estar associados a casos de ruptura prematura de membranas (que pode ocorrer em úteros sobredistendidos), a infecção não é a complicação principal ou mais diretamente ligada ao mecanismo mecânico do polidrâmnio no pós-parto imediato.\n\nb) Correta. O polidrâmnio provoca uma sobredistensão das fibras miometriais (músculo uterino). Após o nascimento, o útero que foi excessivamente esticado tem maior dificuldade para realizar a contração e a retração necessárias para a formação do \"globo de segurança de Pinard\". Essa falha contrátil é chamada de atonia uterina, que é a causa mais comum de hemorragia pós-parto. Portanto, a hemorragia é a principal complicação esperada devido à incapacidade do útero de ocluir os vasos sanguíneos no sítio de inserção placentária.\n\nc) Incorreta. A inversão uterina é uma complicação rara e grave que ocorre quando o fundo do útero se volta para dentro da cavidade ou chega a exteriorizar-se pelo canal de parto. Ela está mais associada à tração excessiva do cordão umbilical antes da dequitação placentária ou à pressão inadequada no fundo uterino (manobra de Credé), e não especificamente ao polidrâmnio.\n\nd) Incorreta. O ciclo gravídico-puerperal é, por natureza, um estado de hipercoagulabilidade, o que aumenta o risco de trombose venosa em qualquer paciente. Contudo, o polidrâmnio não é um fator de risco isolado que torne a trombose a complicação principal em comparação com o risco iminente de atonia uterina e hemorragia.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto",
+      "Alteração do Volume do Líquido Amniótico"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:01.384Z"
+  },
+  {
+    "id": "AJUDA_1d59fa1a-0396-4859-9708-da38d791c313",
+    "originalId": "1d59fa1a-0396-4859-9708-da38d791c313",
+    "statement": "Lactente de quatro meses é levado ao atendimento médico com relato de febre, tosse e cansaço há cinco dias. Ao exame físico identifica-se taquipnéia, crepitações finas bilaterais e retração subcostal e intercostal moderadas. Quanto ao quadro acima, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacina contra o vírus respiratório sincicial está indicada para as gestantes com o objetivo de proteger o bebê através da passagem transplacentária de anticorpos maternos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Deve receber vacina contra influenza, que tem como objetivo proteger esse lactente nos primeiros seis meses de vida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O lactente deverá ser vacinado contra Covid-19 aos seis meses somente se pertencer a grupos de risco para complicações",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quadro clinico sugere pneumonia viral cuja principal etiologia nessa idade é o vírus influenza",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico: O lactente de quatro meses apresenta sinais de desconforto respiratório agudo, com taquipneia, crepitações e retrações intercostais e subcostais. Esse quadro é altamente sugestivo de uma infecção respiratória viral baixa, sendo a Bronquiolite Viral Aguda a principal hipótese diagnóstica, podendo também ser classificado como uma pneumonia viral.\n\nAlternativa a (Correta): Esta alternativa aborda uma inovação recente na imunologia pediátrica. A vacina contra o Vírus Respiratório Sincicial (VRS), conhecida comercialmente como Abrysvo, foi aprovada para administração em gestantes (geralmente entre a 24ª e 36ª semana de gestação). O fundamento dessa estratégia é a imunização passiva: a mãe produz anticorpos IgG que atravessam a barreira placentária e protegem o recém-nascido e o lactente jovem nos primeiros meses de vida contra formas graves de doença respiratória causadas pelo VRS, que é o patógeno mais comum e perigoso nesta faixa etária.\n\nAlternativa b (Incorreta): A vacina contra a Influenza não está indicada para um lactente de quatro meses. Segundo o Calendário Nacional de Vacinação e as recomendações da Sociedade Brasileira de Pediatria, a vacina contra a gripe deve ser iniciada apenas a partir dos seis meses de idade.\n\nAlternativa c (Incorreta): A vacinação contra a Covid-19 para crianças a partir de seis meses de idade foi incorporada ao Programa Nacional de Imunizações (PNI) de forma universal para toda a faixa etária de seis meses a menores de cinco anos. Não há restrição apenas para grupos de risco; todas as crianças nessa idade devem ser vacinadas conforme o esquema vigente.\n\nAlternativa d (Incorreta): Embora o quadro seja sugestivo de uma pneumonia viral ou bronquiolite, a principal etiologia viral em lactentes desta idade é, de longe, o Vírus Respiratório Sincicial (VRS), e não o vírus Influenza. O VRS é responsável pela vasta maioria dos casos de sibilância e desconforto respiratório em menores de dois anos.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Imunizações",
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:01.384Z"
+  },
+  {
+    "id": "AJUDA_1d6ac182-2553-4a0b-83d6-6ac427dc24fe",
+    "originalId": "1d6ac182-2553-4a0b-83d6-6ac427dc24fe",
+    "statement": "Paciente 54 anos, tabagista, trabalhador rural, com quadro de dispneia, emagrecimento e tosse seca há 4 meses. Radiografia de tórax evidencia envolvimento pulmonar bilateral, para-hilar e simétrico, predomínio de lesões alveolares, poupando ápices e terços inferiores (imagem de \"asa de borboleta\"). Em relação ao caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dentre as hipóteses diagnosticas estão a paracoccidioidomicose que deve ser tratada com albendazol por 12 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico pode ser feito através de exame de escarro com pesquisa de fungos e bacilo álcool ácido resistente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico mais provável, considerando a descrição do exame de imagem, é tuberculose pulmonar e seu tratamento deve ser prontamente iniciado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em casos de paracoccidioidomicose o acometimento da supra renal é raro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um homem de 54 anos, trabalhador rural (exposição clássica ao solo), com sintomas respiratórios crônicos e perda ponderal. O achado radiográfico de infiltrado bilateral simétrico, para-hilar, poupando os ápices e as bases (imagem em \"asa de borboleta\"), é a descrição clássica da paracoccidioidomicose (PCM) em sua forma crônica do adulto. O principal desafio diagnóstico é a diferenciação com a tuberculose, que é a principal patologia diferencial no Brasil.\n\nALTERNATIVAS\n\na) Incorreta. Embora a paracoccidioidomicose seja uma hipótese diagnóstica correta para o caso, o tratamento indicado na alternativa está errado. O albendazol é um medicamento antiparasitário (usado para verminoses). O tratamento de escolha para casos leves a moderados de PCM é o itraconazol ou, como alternativa, a associação sulfametoxazol/trimetoprima (cotrimoxazol).\n\nb) Correta. O diagnóstico padrão-ouro da paracoccidioidomicose é a visualização do fungo (levedura com múltiplos brotamentos, assemelhando-se a uma \"roda de leme\") em exames de espécimes clínicos. O escarro é um material de fácil acesso onde se pode realizar a pesquisa direta de fungos e, obrigatoriamente, a pesquisa de bacilos álcool-ácido resistentes (BAAR) para descartar a tuberculose, que pode ser um diagnóstico diferencial ou uma coinfecção em cerca de 10% dos pacientes.\n\nc) Incorreta. A imagem em \"asa de borboleta\" (acometimento para-hilar e simétrico com preservação de ápices e bases) é muito mais característica da PCM do que da tuberculose. A tuberculose pulmonar no adulto tipicamente atinge os ápices e segmentos posteriores dos lobos superiores. Além disso, devido à toxicidade e duração dos tratamentos, deve-se buscar a confirmação diagnóstica antes de iniciar a terapêutica.\n\nd) Incorreta. O acometimento das glândulas suprarrenais na paracoccidioidomicose não é raro; pelo contrário, é uma das manifestações extrapulmonares mais comuns. Estudos de necropsia mostram envolvimento adrenal em até 50% dos casos. Embora muitos pacientes sejam assintomáticos do ponto de vista endócrino, a insuficiência adrenal clínica pode ocorrer e deve ser sempre investigada.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Micoses Invasivas",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:01.384Z"
+  },
+  {
+    "id": "AJUDA_1d6b27bc-da70-4ba4-b135-695eebdc1da3",
+    "originalId": "1d6b27bc-da70-4ba4-b135-695eebdc1da3",
+    "statement": "R.B.M., 28 anos, secundigesta, idade gestacional de 11 semanas, vem à segunda consulta de pré-natal com resultado de glicemia de jejum de 92mg/dL. Nega comorbidades. IMC 24 kg/m2.\nCom relação a esse caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de diabetes gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de “overt diabetes”.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deve-se solicitar TOTG com 24-28 semanas de idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se solicitar hemoglobina glicada, para complementação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve-se iniciar metformina como tratamento clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, devemos revisar os critérios diagnósticos de hiperglicemia na gestação durante o primeiro trimestre, conforme as recomendações da FEBRASGO e do Ministério da Saúde:\n\n1. Glicemia de jejum inferior a 92 mg/dL: Considerada normal no rastreio inicial. Esta paciente deverá realizar o Teste Oral de Tolerância à Glicose (TOTG 75g) entre 24 e 28 semanas de idade gestacional.\n\n2. Glicemia de jejum entre 92 e 125 mg/dL: Define o diagnóstico de Diabetes Melito Gestacional (DMG).\n\n3. Glicemia de jejum maior ou igual a 126 mg/dL ou Hemoglobina Glicada (HbA1c) maior ou igual a 6,5% ou Glicemia aleatória maior ou igual a 200 mg/dL com sintomas: Define o diagnóstico de Diabetes Melito pré-existente, tecnicamente chamado de \"overt diabetes\".\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. De acordo com os critérios brasileiros, um valor de 92 mg/dL classifica a gestante como portadora de Diabetes Gestacional. No entanto, o gabarito oficial fornecido aponta a alternativa B como a correta. Isso ocorre frequentemente em questões de prova onde há um erro de digitação no enunciado (o valor de glicemia pretendido pelo examinador provavelmente seria maior ou igual a 126 mg/dL) ou quando se deseja testar especificamente o conceito de \"overt diabetes\".\n\nAlternativa b) Correta (conforme gabarito). O termo \"overt diabetes\" refere-se ao diabetes diagnosticado durante a gestação, mas cujos níveis glicêmicos atingem os patamares de diagnóstico para diabetes fora do período gestacional. O critério padrão para essa classificação é uma glicemia de jejum maior ou igual a 126 mg/dL no primeiro trimestre.\n\nAlternativa c) Incorreta. A solicitação de TOTG entre 24-28 semanas é reservada exclusivamente para gestantes que apresentaram glicemia de jejum inicial normal (menor que 92 mg/dL). Como a paciente já apresenta uma alteração glicêmica (92 mg/dL), o diagnóstico de hiperglicemia na gestação já está firmado, tornando o TOTG desnecessário.\n\nAlternativa d) Incorreta. A hemoglobina glicada pode ser utilizada no rastreio inicial, mas, como a glicemia de jejum já foi realizada e apresenta valor diagnóstico (seja para DMG ou \"overt diabetes\", conforme o critério adotado), não há necessidade de complementação para fins diagnósticos.\n\nAlternativa e) Incorreta. O tratamento inicial para o diabetes na gestação consiste em mudanças no estilo de vida, incluindo orientação nutricional e atividade física. O tratamento farmacológico, seja com insulina (padrão-ouro) ou metformina (em casos selecionados), só deve ser iniciado se as metas glicêmicas não forem atingidas após 1 a 2 semanas de dieta e exercícios.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:01.384Z"
+  },
+  {
+    "id": "AJUDA_1d705106-67c0-4563-9828-50e070b7c86e",
+    "originalId": "1d705106-67c0-4563-9828-50e070b7c86e",
+    "statement": "Paciente de 17 anos procura consulta por ausência de menstruação desde a puberdade. Refere desenvolvimento mamário desde os 13 anos e presença de pelos pubianos normais. Nega galactorreia, hirsutismo ou sintomas vasomotores. Ao exame físico, a genitália externa apresenta-se normal. Ultrassonografia pélvica mostra útero ausente e ovários normais.\nO diagnóstico mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "síndrome de Mayer Rokitansky-Küster-Hauser.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "síndrome de Turner.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hiperprolactinemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "insuficiência ovariana prematura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "síndrome de Asherman.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, devemos analisar os marcos do desenvolvimento puberal e os achados do exame físico e de imagem. A paciente apresenta amenorreia primária (ausência de menstruação aos 17 anos), mas possui caracteres sexuais secundários presentes: o desenvolvimento mamário indica produção de estrogênio pelos ovários (eixo hipotálamo-hipófise-ovário funcional) e a presença de pelos pubianos normais indica ação de androgênios.\n\nO ponto crucial é o achado ultrassonográfico: útero ausente com ovários normais. Isso restringe o diagnóstico diferencial a anomalias dos ductos de Müller ou distúrbios de diferenciação sexual.\n\nAnálise das alternativas:\n\na) Correta. A Síndrome de Mayer-Rokitansky-Küster-Hauser (ou agenesia mülleriana) é caracterizada pela falha no desenvolvimento dos ductos de Müller, resultando em ausência ou hipoplasia grave do útero e dos dois terços superiores da vagina. Como os ovários têm origem embrionária distinta (cristas gonadais), eles são normais e funcionantes, o que explica o desenvolvimento das mamas e a presença de pelos. O cariótipo é 46,XX.\n\nb) Incorreta. A Síndrome de Turner (45,X) cursa tipicamente com disgenesia gonadal (ovários em fita). Sem ovários funcionais, não haveria produção de estrogênio, resultando em ausência de desenvolvimento mamário (infantilismo sexual). Além disso, o útero estaria presente, embora pudesse ser infantil.\n\nc) Incorreta. A hiperprolactinemia geralmente causa amenorreia secundária e galactorreia. Se fosse causa de amenorreia primária, seria por interferência no eixo hormonal, mas o útero estaria presente na ultrassonografia.\n\nd) Incorreta. Na insuficiência ovariana prematura, há falência dos ovários antes dos 40 anos. Se ocorresse antes da puberdade, a paciente não teria desenvolvimento mamário devido ao hipoestrogenismo. Em qualquer caso, o útero estaria presente ao exame de imagem.\n\ne) Incorreta. A Síndrome de Asherman refere-se a sinéquias (cicatrizes) dentro da cavidade uterina, geralmente após procedimentos como curetagens. É uma causa de amenorreia secundária. O útero estaria presente, embora com a cavidade obliterada.\n\nResumo: Diante de amenorreia primária com mamas presentes (estrogênio ok), pelos presentes (androgênios ok) e ausência de útero no exame de imagem, o diagnóstico é Síndrome de Mayer-Rokitansky-Küster-Hauser. Se os pelos fossem ausentes/escassos, o diagnóstico diferencial principal seria a Síndrome de Insensibilidade Androgênica (Morris), na qual os testículos estão presentes (em vez de ovários) e o cariótipo é 46,XY.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:01.384Z"
+  },
+  {
+    "id": "AJUDA_1d759ec9-2a50-44a6-9aa7-aef13900bb89",
+    "originalId": "1d759ec9-2a50-44a6-9aa7-aef13900bb89",
+    "statement": "Observe o diagrama seguinte, que representa o método clínico centrado na pessoa. \n\nA alternativa que correspondente ao componente interativo de número 2 é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "Explorando a saúde, a doença e a experiência da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Incorporando a prevenção e a promoção da saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elaborando um plano conjunto de manejo dos problemas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Intensificando a relação entre a pessoa e o médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Entendendo a pessoa como um todo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda os componentes fundamentais do Método Clínico Centrado na Pessoa (MCCP), sistematizado por Moira Stewart. O diagrama apresentado é a representação clássica de como esses componentes se inter-relacionam durante o atendimento médico.\n\nAlternativa a) Incorreta. Esta alternativa descreve o componente número 1. Ele foca na integração entre o processo biológico (doença/disease), o estado de saúde e a percepção subjetiva do paciente sobre seu sofrimento (experiência da doença/illness), que inclui sentimentos, ideias, efeitos na funcionalidade e expectativas.\n\nAlternativa b) Incorreta. Incorporar a prevenção e a promoção da saúde é um dos pilares do método de Stewart, mas não é o que está representado pelo número 2. Esse componente orienta o médico a aproveitar o encontro clínico para discutir hábitos de vida, rastreamentos e educação em saúde.\n\nAlternativa c) Incorreta. Esta descrição corresponde ao componente número 3. Nele, médico e paciente trabalham para encontrar um terreno comum, definindo conjuntamente quais são os problemas prioritários, estabelecendo metas para o tratamento e dividindo as responsabilidades de cada um no cuidado.\n\nAlternativa d) Incorreta. Este é o componente de número 4, representado pela chave na base do diagrama. Ele indica que a relação médico-pessoa é o alicerce que sustenta todos os outros passos, baseando-se na confiança, na empatia e na continuidade do cuidado ao longo do tempo.\n\nAlternativa e) Correta. O componente número 2 é Entendendo a pessoa como um todo. O diagrama evidencia isso ao colocar a pessoa e seus processos de saúde/doença dentro de molduras que representam o Contexto Próximo (família, trabalho, ciclo de vida) e o Contexto Remoto (comunidade, cultura, sistema de saúde, economia). O objetivo é compreender que o indivíduo não existe isoladamente e que seu contexto social e familiar influencia diretamente sua saúde.\n\nGabarito: Letra (e).",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/cc8ff3206dc93aceab0e6ead80f752b12e54768b015cee5f0c0b104be2b7083e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1d759ec9-2a50-44a6-9aa7-aef13900bb89_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:01.968Z"
+  },
+  {
+    "id": "AJUDA_1d77855b-6f1b-40a7-883e-8646a0b16122",
+    "originalId": "1d77855b-6f1b-40a7-883e-8646a0b16122",
+    "statement": "Criança de 2 anos de idade, admitida com relato de ter iniciado há cerca de 2 horas com sialorreia espessa, associado a irritabilidade. Ao exame físico, apresenta os seguintes sinais vitais: FC: 120 bpm FR: 30 ipm SatO2: 96% em ar ambiente com ausculta pulmonar normal; não foram visualizadas alterações à oroscopia. O pai tem dúvidas se a criança ingeriu algum objeto enquanto brincava. Realizada radiografia de tórax com a seguinte imagem: Qual a melhor conduta para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pela suspeita de ingestão de bateria, realizar endoscopia de emergência e retirada do objeto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Não há indicação de retirada endoscópica do objeto pois há a possibilidade que ele migre para o trato gastrointestinal baixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Está indicada ingestão de glicerina a fim de promover a proteção da mucosa esofágica e permitir a movimentação do corpo estranho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Independente do objeto, há indicação de retirada de urgência do corpo estranho, respeitando jejum para sedação e disponibilidade de vaga no centro cirúrgico para o procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico de uma criança com sialorreia súbita e irritabilidade é altamente sugestivo de impactação de corpo estranho no esôfago. Ao analisarmos a radiografia de tórax, observamos um objeto circular radiopaco em projeção esofágica superior. O detalhe fundamental na imagem é a presença do sinal do duplo contorno ou sinal do halo (uma borda concêntrica interna), que é a marca radiográfica característica de uma bateria de botão. Diferente de uma moeda, que possui densidade uniforme, a bateria no esôfago é uma emergência médica absoluta devido ao risco de necrose por liquefação e perfuração tecidual em poucas horas.\n\nAlternativa (a): Correta. A identificação do sinal do halo na radiografia confirma a suspeita de ingestão de bateria de botão. Quando esse objeto se aloja no esôfago, a umidade da mucosa fecha o circuito elétrico, levando à liberação de hidróxido de sódio e queimaduras químicas graves. A conduta deve ser a remoção imediata por via endoscópica, idealmente em menos de 2 horas após o diagnóstico, para prevenir complicações fatais como fístulas aortoesofágicas.\n\nAlternativa (b): Incorreta. A conduta expectante jamais deve ser adotada para baterias localizadas no esôfago. Enquanto corpos estranhos rombos e inertes (como moedas) em pacientes assintomáticos podem ser observados, a bateria exige intervenção imediata pelo seu alto potencial cáustico.\n\nAlternativa (c): Incorreta. O uso de glicerina não tem papel no manejo de corpos estranhos esofágicos. Embora protocolos internacionais recentes recomendem o uso de mel ou sucralfato como medida temporária em ambiente pré-hospitalar para retardar o dano tecidual pela bateria, isso serve apenas como ponte até a remoção endoscópica definitiva e não para promover a migração do objeto.\n\nAlternativa (d): Incorreta. A alternativa falha ao dizer que a conduta é a mesma, independentemente do objeto. Se o objeto fosse uma moeda, o jejum e a estabilidade do paciente poderiam permitir uma abordagem de urgência (até 24 horas). No entanto, para uma bateria de botão no esôfago, trata-se de uma emergência. O risco de dano esofágico iminente é tão alto que a remoção deve ser a mais rápida possível, priorizando a intubação em sequência rápida para proteger a via aérea e realizar o procedimento sem atrasos desnecessários pelo tempo de jejum.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Ingestão de corpo estranho",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/22ce2cc5895b30e923ec31a143898c7fef3018b21f1bd06d0d8f98e658147721.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1d77855b-6f1b-40a7-883e-8646a0b16122_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:02.238Z"
+  },
+  {
+    "id": "AJUDA_1d785aaf-231c-4400-b43c-f16f9f8c59d5",
+    "originalId": "1d785aaf-231c-4400-b43c-f16f9f8c59d5",
+    "statement": "Sobre a herança genética da acondroplasia, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de uma herança autossômica recessiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em 20% dos casos são mutações genéticas novas, ou seja, não herdadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acondroplasia homozigótica é considerada letal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O gene envolvido é o FGFR3, envolvido também na síndrome de Patau.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Acondroplasia é a forma mais comum de nanismo desproporcional e apresenta características genéticas muito específicas que são cobradas frequentemente em provas. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a (Incorreta): A acondroplasia segue um padrão de herança autossômica dominante. Isso significa que basta a presença de um único alelo mutado para que o indivíduo manifeste a condição. Se fosse recessiva, seriam necessárias duas cópias do gene alterado para a expressão do fenótipo, o que não ocorre neste caso.\n\nAlternativa b (Incorreta): A proporção apresentada está incorreta. Na realidade, cerca de 80% dos casos de acondroplasia são resultantes de mutações novas (de novo), ou seja, ocorrem em crianças cujos pais têm estatura normal. Essas mutações estão frequentemente associadas à idade paterna avançada. Apenas cerca de 20% dos casos são herdados de um genitor já afetado pela condição.\n\nAlternativa c (Correta): A acondroplasia homozigótica ocorre quando uma criança herda o alelo mutado de ambos os pais (ambos com acondroplasia). Esse quadro é invariavelmente fatal. O recém-nascido apresenta um encurtamento de membros extremamente severo e uma caixa torácica muito pequena (hipoplasia torácica), o que impede a expansão pulmonar adequada, levando ao óbito por insuficiência respiratória logo após o nascimento.\n\nAlternativa d (Incorreta): O gene causador da acondroplasia é, de fato, o FGFR3 (receptor 3 do fator de crescimento de fibroblastos), localizado no cromossomo 4. Entretanto, este gene não possui relação com a Síndrome de Patau. A Síndrome de Patau é uma anomalia cromossômica numérica caracterizada pela trissomia do cromossomo 13, enquanto a acondroplasia é uma doença monogênica decorrente de uma mutação pontual específica.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:02.238Z"
+  },
+  {
+    "id": "AJUDA_1d7923af-5d5d-49f1-9419-ee4c596163b6",
+    "originalId": "1d7923af-5d5d-49f1-9419-ee4c596163b6",
+    "statement": "Carlos é um adolescente de 12 anos trazido por sua mãe à UBS para atualização de seu cartão vacinal. A mãe relata que ficou 3 anos sem procurar a unidade de saúde pois ficou confusa com tantas informações negativas acerca das vacinas durante a pandemia de COVID-19. Em relação à atualização da vacinação de Carlos:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se o adolescente não recebeu nenhuma dose da vacina contra o HPV deve receber uma dose única.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Se o adolescente recebeu duas doses da tríplice viral, deve receber mais uma dose de reforço agora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caso o adolescente tenha recebido três doses da vacina contra hepatite B, nesse momento, deve receber um reforço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Caso o adolescente ainda não tenha recebido nenhuma dose da vacina de febre amarela até os 5 anos de idade, deve receber duas doses com intervalo de um mês entre elas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o Calendário Nacional de Vacinação do Adolescente, com foco em atualizações recentes do Ministério da Saúde que são temas recorrentes em provas de residência.\n\nAlternativa A (Correta): Esta alternativa reflete a atualização mais recente do Ministério da Saúde (Nota Técnica nº 41/2024). Desde abril de 2024, o Brasil adotou o esquema de dose única para a vacina contra o HPV (Papilomavírus Humano) para meninos e meninas de 9 a 14 anos de idade. O objetivo da mudança foi ampliar a cobertura vacinal e facilitar a logística, seguindo recomendações da Organização Mundial da Saúde (OMS). Portanto, se Carlos tem 12 anos e nunca foi vacinado, ele deve receber apenas uma dose agora.\n\nAlternativa B (Incorreta): De acordo com o Programa Nacional de Imunizações (PNI), a vacina tríplice viral (sarampo, caxumba e rubéola) deve ser administrada em duas doses para indivíduos de até 29 anos de idade. Se o adolescente já possui o registro de duas doses comprovadas no cartão vacinal, ele é considerado adequadamente imunizado e não necessita de reforço.\n\nAlternativa C (Incorreta): O esquema vacinal para a hepatite B consiste em três doses (geralmente no esquema 0, 1 e 6 meses). Para indivíduos imunocompetentes que completaram o esquema primário de três doses, não há recomendação de doses de reforço ao longo da vida, pois a vacina confere memória imunológica prolongada.\n\nAlternativa D (Incorreta): Para a vacina da febre amarela, a recomendação atual do Ministério da Saúde é de uma dose aos 9 meses e um reforço aos 4 anos de idade. No entanto, para pessoas a partir de 5 anos de idade que nunca foram vacinadas ou que não possuem comprovante vacinal, a indicação é de dose única para a vida toda. Não existe a indicação de duas doses com intervalo de um mês para esse grupo.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:02.238Z"
+  }
+]

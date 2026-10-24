@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_aa34d4cf-f6b8-4096-96de-103955051fc8",
+    "originalId": "aa34d4cf-f6b8-4096-96de-103955051fc8",
+    "statement": "Assinale a alternativa que indica, corretamente, características importante para que um ensaio clínico randomizado seja considerado como bem conduzido.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os grupos de comparação foram semelhantes em termos de características basais no início do estudo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A seleção de participantes tenha ocorrido a partir de um único centro de pesquisa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A análise tenha sido feita apenas a partir dos dados dos participantes que aderiram até o final do estudo aos tratamentos selecionados para os grupos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os resultados terem sido publicados em uma revista científica de alto impacto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A validade interna de um ensaio clínico randomizado depende fundamentalmente da minimização de vieses e da garantia de que os grupos comparados sejam estatisticamente equivalentes. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a (Correta): O principal objetivo da randomização é garantir que a única diferença sistemática entre os grupos seja a intervenção que está sendo testada. Quando o processo de sorteio é eficaz, os grupos de comparação apresentam características basais (como idade, sexo, comorbidades e gravidade da doença) muito semelhantes no início do acompanhamento. Isso permite concluir que qualquer diferença observada no desfecho final foi causada pela intervenção, e não por diferenças pré-existentes entre os participantes (fatores de confusão).\n\nAlternativa b (Incorreta): O fato de um estudo ser conduzido em um único centro não é uma marca de boa condução; pelo contrário, costuma ser uma limitação. Estudos unicêntricos têm menor validade externa, o que significa que seus resultados podem não ser aplicáveis a outras populações ou realidades clínicas. Estudos multicêntricos são preferíveis, pois aumentam a representatividade da amostra e a robustez dos dados.\n\nAlternativa c (Incorreta): Esta alternativa descreve a Análise por Protocolo. Em um ensaio clínico de alta qualidade, a análise preferencial é a por Intenção de Tratar (ITT – Intention-to-Treat). Na ITT, todos os pacientes sorteados são analisados nos seus grupos originais, mesmo que não tenham aderido ao tratamento ou tenham abandonado o estudo. Isso preserva os benefícios da randomização e reflete melhor a prática clínica real, onde nem todos os pacientes seguem as prescrições perfeitamente.\n\nAlternativa d (Incorreta): O prestígio ou o fator de impacto de uma revista científica não garantem a qualidade metodológica de um estudo específico. Embora revistas de alto impacto costumem ter processos de revisão por pares mais rigorosos, a qualidade de um ensaio clínico é avaliada pelo seu desenho, execução e transparência nos relatos, e não pelo veículo de publicação.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  },
+  {
+    "id": "AJUDA_aa3a8d96-30d0-4b13-a2d5-e12eaf78ddd3",
+    "originalId": "aa3a8d96-30d0-4b13-a2d5-e12eaf78ddd3",
+    "statement": "Mulher de 38 anos de idade foi trazida para a Unidade de Pronto Atendimento (UPA) onde você é o médico de plantão? O acompanhante refere que a mesma foi submetida a cirurgia bariátrica (não sabe qual a técnica operatória realizada) há 36 dias. Vem evoluindo com vômitos de repetição e precisou ser levada diversas vezes na mesma UPA para receber hidratação endovenosa. Na última semana apresentou fraqueza, parestesias nos pés e dores musculares. Há dois dias começou a reclamar que a visão estava ficando turva (SIC) e como acordou confusa no dia de hoje, o acompanhante a trouxe. Ao exame físico, apresentava se estável hemodinamicamente e com índice de 14 na Escala de Coma de Glasgow. Qual das alternativas abaixo está CORRETA, com relação ao quadro da paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A mesma deve receber hidratação endovenosa e ser encaminhada prontamente para um serviço terciário de urgência para realização de uma tomografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A fisiopatologia deste quadro está mais relacionada aos vômitos de repetição e não tanto ao tipo de cirurgia bariátrica realizada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "É prioritário tentar descobrir qual foi a técnica cirúrgica a qual a paciente foi submetida, pois depende disto para se chegar ao diagnóstico e assim tratar o quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pensando no diagnóstico de hipoglicemia secundária a provável síndrome de dumping, recomenda se infundir imediatamente solução glicosada endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — uma paciente jovem no pós-operatório de cirurgia bariátrica (36 dias) com história de vômitos persistentes, evoluindo com parestesia, fraqueza, visão turva e confusão mental — é clássico da Encefalopatia de Wernicke. Esta condição é causada pela deficiência de vitamina B1 (tiamina).\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora a paciente precise de cuidados, a prioridade absoluta não é a tomografia de crânio (que geralmente é normal na Encefalopatia de Wernicke), mas sim a reposição imediata de tiamina por via parenteral. O diagnóstico é essencialmente clínico, e o atraso no tratamento pode levar a danos neurológicos irreversíveis (Síndrome de Korsakoff).\n\nAlternativa B: Correta. A Encefalopatia de Wernicke após cirurgia bariátrica ocorre tipicamente entre a 2ª e a 12ª semana de pós-operatório. A causa principal não é a má absorção intestinal inerente à técnica (como o bypass), mas sim a depleção rápida dos estoques de tiamina (que duram apenas cerca de 2 a 3 semanas no organismo) devido aos vômitos de repetição e à baixa ingestão alimentar. Por isso, a técnica cirúrgica é menos relevante do que a presença de hiperêmese.\n\nAlternativa C: Incorreta. O diagnóstico de Encefalopatia de Wernicke baseia-se na tríade clínica (ataxia/fraqueza, alterações oculares e confusão mental) associada a um fator de risco (vômitos crônicos e cirurgia digestiva). Descobrir a técnica exata não deve atrasar o início do tratamento com tiamina, que é comum a qualquer paciente com essa suspeita.\n\nAlternativa D: Incorreta. Esta alternativa apresenta um erro grave de conduta. Embora a hipoglicemia possa ocorrer no dumping tardio, o quadro de confusão mental e sintomas neurológicos em uma paciente com vômitos sugere deficiência de tiamina. Administrar solução glicosada sem a reposição prévia de tiamina pode precipitar ou agravar drasticamente a Encefalopatia de Wernicke, pois o metabolismo da glicose consome os últimos estoques de vitamina B1 do organismo. Portanto, a regra é: tiamina sempre antes ou junto com a glicose.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Cirurgia Bariátrica e Metabólica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  },
+  {
+    "id": "AJUDA_aa4452a1-7dad-4c17-a365-a59c0b253122",
+    "originalId": "aa4452a1-7dad-4c17-a365-a59c0b253122",
+    "statement": "Um jovem paciente é vítima de acidente ofídico por uma serpente do gênero crotálico e desenvolve Injúria Renal Aguda (IRA) grave com urina escurecida. Qual é o mecanismo mais provável da etiologia dessa IRA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Efeito direto do veneno no rim.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rabdomiólise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Coagulopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome compartimental.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O acidente crotálico, causado por serpentes do gênero Crotalus (cascavel), apresenta um quadro clínico marcado por três ações principais do veneno: neurotóxica, miotóxica e coagulante. A complicação mais grave e principal causa de óbito nesses pacientes é a injúria renal aguda (IRA).\n\nAnálise das alternativas:\n\na) Incorreta. Apesar de existirem estudos que sugerem uma possível ação citotóxica direta do veneno sobre as células tubulares, esse mecanismo é considerado secundário. Na prática clínica e em provas de residência, o mecanismo indireto via toxicidade de pigmentos é o mais relevante e provável.\n\nb) Correta. A ação miotóxica sistêmica do veneno crotálico provoca a destruição das fibras musculares esqueléticas, processo conhecido como rabdomiólise. Essa destruição libera grandes quantidades de mioglobina na corrente sanguínea. A mioglobina é filtrada pelo glomérulo e torna-se altamente nefrotóxica, causando obstrução tubular e lesão tubular direta (necrose tubular aguda). A presença de mioglobina na urina (mioglobinúria) é a responsável pela coloração escura (urina de cor \"chá\" ou \"Coca-Cola\") descrita no enunciado.\n\nc) Incorreta. Embora o veneno crotálico possua uma ação coagulante que pode consumir o fibrinogênio e tornar o sangue incoagulável, esse fenômeno raramente é a causa da lesão renal neste cenário. A coagulopatia é muito mais intensa e associada a complicações hemorrágicas no acidente botrópico (jararaca).\n\nd) Incorreta. A síndrome compartimental ocorre devido ao edema intenso em compartimentos musculares fechados. O acidente por cascavel é caracterizado justamente por apresentar manifestações locais mínimas, com pouco ou nenhum edema no local da picada, ao contrário do acidente botrópico, que cursa com importante reação inflamatória local.\n\nEm resumo, diante de um acidente crotálico com urina escura e insuficiência renal, o diagnóstico fisiopatológico principal é a rabdomiólise com consequente deposição de mioglobina nos túbulos renais.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Animais Peçonhentos",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  },
+  {
+    "id": "AJUDA_aa46f217-508d-4502-ac08-8e273c3bc7a4",
+    "originalId": "aa46f217-508d-4502-ac08-8e273c3bc7a4",
+    "statement": "Um escolar de 8 anos de idade foi levado à emergência em razão de um quadro de indisposição, inapetência, cefaleia e edema periorbital. A médica, em sua anamnese, perguntou acerca de quedas, brigas na escola e sintomas associados, como queda de cabelo, febre, vômitos e síncope. A mãe negou quaisquer dos sintomas citados. Na história patológica pregressa, relatou infecção de garganta com frequência. Ao exame, a criança encontrava-se em bom estado geral, eupneica (FR = 20 irpm), eucárdica (FC = 100 bpm), com SatO2 = 98%, edema periorbital bilateralmente, de moderada intensidade, sem hiperemia, indolor, sem sinais de trauma. Verificaram-se pressão arterial acima do percentil 95 para a idade e exame simples de urina com hematúria presente.\n\nNo que se refere ao tratamento, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É preciso usar estatinas para o tratamento da dislipidemia severa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se fazer restrição hídrica e dietética.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O tratamento deve ser feito mediante internação e repouso absoluto, independentemente de complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se usar eritromicina preferencialmente em dose única de 600.000 U para crianças com menos de 25 kg e de 1.200.000 U para crianças com mais de 25 kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO:\nO quadro clínico apresentado pela criança de 8 anos caracteriza uma Síndrome Nefrítica, composta pela tríade clássica: edema, hipertensão arterial (percentil acima de 95) e hematúria. Considerando a história de infecções de garganta frequentes, o diagnóstico mais provável é de Glomerulonefrite Difusa Aguda (GNDA) pós-estreptocócica.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA:\nO tratamento da GNDA é essencialmente de suporte, focado no manejo da sobrecarga de volume causada pela diminuição da taxa de filtração glomerular. A restrição hídrica (balanço rigoroso) e a restrição dietética (principalmente de sódio/sal) são as medidas iniciais e fundamentais para controlar o edema e a pressão arterial. Se essas medidas não forem suficientes, utilizam-se diuréticos de alça (como a furosemida) e outros anti-hipertensivos.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ INCORRETA:\nO uso de estatinas para tratar dislipidemia severa é uma consideração em alguns casos de Síndrome Nefrótica (caracterizada por proteinúria maciça, hipoalbuminemia e edema intenso), e não da Síndrome Nefrítica/GNDA. Mesmo na Síndrome Nefrótica em pediatria, as estatinas não são o tratamento de primeira linha na fase aguda.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ INCORRETA:\nA internação é indicada apenas para casos que apresentam complicações, como hipertensão arterial grave, sinais de insuficiência cardíaca ou congestão volêmica importante e oligúria significativa. O termo \"independentemente de complicações\" torna a assertiva incorreta. Além disso, o repouso absoluto não é uma recomendação obrigatória para todos os pacientes, sendo o nível de atividade limitado pelo próprio estado geral da criança.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ INCORRETA:\nHá dois erros principais nesta alternativa. Primeiro, a dosagem citada (600.000 U e 1.200.000 U) refere-se à Penicilina G Benzatina, e não à Eritromicina. A eritromicina é administrada por via oral em várias doses diárias (mg/kg/dia). Segundo, a antibioticoterapia na GNDA tem como objetivo erradicar o estreptococo da orofaringe para interromper a cadeia de transmissão da cepa nefritogênica, mas ela não trata a lesão glomerular já estabelecida nem altera o curso clínico da glomerulonefrite.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  },
+  {
+    "id": "AJUDA_aa4715d2-c5b2-4c73-8df7-a881ab8853fa",
+    "originalId": "aa4715d2-c5b2-4c73-8df7-a881ab8853fa",
+    "statement": "Paciente masculino, 38 anos, com histórico de uso abusivo de álcool e cocaína, foi vítima de colisão de moto versus automóvel, sendo ejetado da motocicleta a cerca de 30 m a alta velocidade. Score de Glasgow 3, sangramento oral intenso, fratura exposta de fêmur direito distal com ferimento descolante e sangramento intenso no membro, múltiplas fraturas craniofaciais, além de sinais de choque hipovolêmico. Além das medidas de proteção da coluna para o transporte, das condutas iniciais abaixo, a mais apropriada no atendimento pré-hospitalar desse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máscara laríngea + acesso intraósseo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transfusão de plasma, hemácias e plaquetas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infusão agressiva de cristaloide para estabilização volêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Imobilizar perna; máscara de oxigênio de alto fluxo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Torniquete + intubação orotraqueal + transporte rápido.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda o atendimento inicial ao trauma grave no cenário pré-hospitalar, seguindo a sistematização do PHTLS (Prehospital Trauma Life Support) e do ATLS (Advanced Trauma Life Support). O paciente apresenta o que chamamos de politrauma com múltiplos riscos iminentes à vida.\n\nAnálise das alternativas:\n\na) Incorreta. A máscara laríngea é um dispositivo supraglótico que pode ser utilizado em situações de via aérea difícil ou quando a intubação falha. No entanto, o paciente apresenta sangramento oral intenso e Glasgow 3, o que torna a intubação orotraqueal a via aérea definitiva preferencial para proteger os pulmões da aspiração de sangue e garantir ventilação adequada. O acesso intraósseo é uma excelente via de infusão quando o acesso venoso periférico falha, mas não é a prioridade única frente ao sangramento exsanguinante.\n\nb) Incorreta. Embora a reposição com hemocomponentes (proporção 1:1:1) seja o padrão-ouro no choque hemorrágico grave (Protocolo de Transfusão Maciça), essa tecnologia ainda é escassa na maioria dos serviços pré-hospitalares brasileiros e não substitui a necessidade imediata de controle mecânico do sangramento e manejo da via aérea.\n\nc) Incorreta. A infusão agressiva de cristaloides (como soro fisiológico ou Ringer lactato) é atualmente contraindicada no trauma. O excesso de cristaloide pode causar a tríade da morte (acidose, coagulopatia e hipotermia), além de aumentar o sangramento ao \"lavar\" os fatores de coagulação e deslocar coágulos já formados pela elevação abrupta da pressão (hipotensão permissiva é a estratégia preferida).\n\nd) Incorreta. Uma máscara de oxigênio de alto fluxo é insuficiente para um paciente com Glasgow 3, que não possui reflexos de proteção de via aérea. Além disso, a simples imobilização da perna não é capaz de deter um sangramento intenso (exsanguinante) em uma fratura exposta de fêmur; nesses casos, o controle deve ser mais assertivo.\n\ne) Correta. Esta alternativa segue a prioridade do XABCDE do trauma. O \"X\" (Hemorragia Exsanguinante) deve ser tratado primeiro; em fraturas de membros com sangramento intenso que não cede com pressão direta, o torniquete é a conduta indicada. O \"A\" (Via Aérea) deve ser garantido com intubação orotraqueal, dada a gravidade neurológica (Glasgow 3) e o trauma craniofacial. Por fim, o transporte rápido (\"load and go\") é fundamental, pois este paciente necessita de intervenção cirúrgica definitiva (controle de danos) que só o ambiente hospitalar pode oferecer.\n\nPortanto, a alternativa (e) reflete as prioridades de salvar a vida e o membro do paciente de forma hierarquizada.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  },
+  {
+    "id": "AJUDA_aa517cab-49a5-4646-9c27-0a5ead0e8d06",
+    "originalId": "aa517cab-49a5-4646-9c27-0a5ead0e8d06",
+    "statement": "Sobre a Hipertensão Arterial Sistêmica, analise as sentenças:\n\n1. O diagnóstico pode ser confirmado pela MAPA (Monitorização Ambulatorial da Pressão Arterial) se houver suspeita de hipertensão do avental branco.\n2. A restrição de sódio na dieta e a perda de peso são medidas não farmacológicas eficazes para redução da pressão arterial.\n3. Os betabloqueadores são a primeira linha de tratamento anti-hipertensivo para prevenção de AVC em pacientes idosos sem outras comorbidades.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-F, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1-V, 2-V, 3-F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1-V, 2-F, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1-V, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das sentenças:\n\nSentença 1 (Verdadeira): A Monitorização Ambulatorial da Pressão Arterial (MAPA) é um dos exames de escolha para o diagnóstico de Hipertensão do Avental Branco. Esse fenômeno ocorre quando o paciente apresenta níveis pressóricos elevados apenas no ambiente médico, mas mantém níveis normais em suas atividades habituais. A MAPA, ao registrar as pressões durante 24 horas, permite descartar esse efeito e confirmar o diagnóstico de hipertensão arterial sistêmica.\n\nSentença 2 (Verdadeira): As mudanças no estilo de vida são a base do tratamento anti-hipertensivo. A redução da ingestão de sódio (sal de cozinha) e o controle do excesso de peso corporal (especialmente a gordura visceral) são medidas com alto grau de evidência científica para a redução significativa da pressão arterial, podendo inclusive adiar a necessidade de medicação em casos de pré-hipertensão ou hipertensão estágio 1 de baixo risco.\n\nSentença 3 (Falsa): Os betabloqueadores não são mais considerados fármacos de primeira linha para o tratamento inicial da hipertensão arterial em pacientes idosos sem comorbidades específicas (como insuficiência cardíaca, angina ou pós-infarto). Estudos mostram que, nesta população, os betabloqueadores são menos eficazes na prevenção de AVC e eventos cardiovasculares quando comparados a outras classes, como os diuréticos tiazídicos, os bloqueadores dos canais de cálcio, os IECA ou os BRA.\n\nAnálise das alternativas:\n\na) Incorreta. A sentença 1 é verdadeira, pois a MAPA é indicada para esclarecer discrepâncias entre a pressão de consultório e a de fora dele. A sentença 3 é falsa.\n\nb) Correta. As sentenças 1 e 2 estão corretas de acordo com as diretrizes nacionais e internacionais de hipertensão. A sentença 3 está corretamente classificada como falsa, pois o uso de betabloqueadores em idosos sem indicações específicas não é a conduta de primeira linha para proteção cerebrovascular.\n\nc) Incorreta. A sentença 2 é verdadeira, já que a restrição de sódio e a perda de peso são pilares terapêuticos. A sentença 3 é falsa.\n\nd) Incorreta. A sentença 3 está errada, o que invalida a alternativa. O tratamento inicial de primeira linha para o idoso hipertenso sem outras doenças costuma envolver tiazídicos ou bloqueadores de canais de cálcio.\n\nGabarito: Letra (b).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  },
+  {
+    "id": "AJUDA_aa53381e-0e5c-4c1d-8092-ab932df7b24d",
+    "originalId": "aa53381e-0e5c-4c1d-8092-ab932df7b24d",
+    "statement": "Leia o caso a seguir.\n\nPaciente de 47 anos, sexo feminino, procurou atendimento médico após uma queda e fratura do fêmur direito. O exame físico revelou uma tumoração no úmero esquerdo. Foram realizados exames laboratoriais e de imagem com o diagnóstico de tumor marrom.\n\nOutros achados radiográficos esperados no caso são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "reabsorção óssea subperiosteal nas falanges médias da mão e crânio com aspecto em “sal e pimenta”.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "zonas de Looser nos ossos longos e perda da diferenciação corticomedular nas falanges das mãos e pés.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "alargamento das metáfises de ossos longos e vértebras em “espinha de peixe”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "coluna “em bambu” e anquilose bilateral e simétrica das articulações sacroilíacas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta uma paciente com um tumor marrom, que é uma lesão óssea clássica do hiperparatireoidismo (seja ele primário, secundário ou terciário). O excesso de paratormônio (PTH) estimula a atividade osteoclástica, levando à reabsorção óssea, fibrose e hemorragia local (hemossiderina), que confere a cor acastanhada à lesão. Para resolver a questão, devemos identificar outras alterações radiográficas típicas do aumento crônico do PTH.\n\nAlternativa A (Correta): A reabsorção óssea subperiosteal é o achado radiográfico mais sensível e específico do hiperparatireoidismo, ocorrendo classicamente na face radial das falanges médias do segundo e terceiro quirodáctilos. O crânio em sal e pimenta refere-se a múltiplas pequenas áreas de lucência (desmineralização) entremeadas por áreas de esclerose, outra manifestação característica da doença.\n\nAlternativa B (Incorreta): As zonas de Looser (pseudofraturas) são bandas radiotransparentes transversais que ocorrem em áreas de estresse mecânico e são patognomônicas da osteomalácia (no adulto) ou raquitismo (na criança), condições marcadas pela deficiência de mineralização da matriz óssea, geralmente por falta de vitamina D.\n\nAlternativa C (Incorreta): O alargamento das metáfises é um achado típico do raquitismo, causado pelo acúmulo de matriz cartilaginosa não mineralizada na placa de crescimento. Já as vértebras em espinha de peixe (vértebras bicôncavas) ocorrem devido ao colapso da porção central dos corpos vertebrais pela pressão dos discos intervertebrais sobre o osso fragilizado, sendo comum na osteoporose grave ou osteomalácia.\n\nAlternativa D (Incorreta): A coluna em bambu (sindesmófitos marginais que fundem as vértebras) e a sacroiliíte bilateral e simétrica são os marcos radiográficos da espondilite anquilosante, uma doença inflamatória crônica autoimune, e não possuem relação fisiopatológica com o metabolismo do PTH ou com o tumor marrom.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  },
+  {
+    "id": "AJUDA_aa58eb90-ea7b-4bc1-948b-7286b4caca14",
+    "originalId": "aa58eb90-ea7b-4bc1-948b-7286b4caca14",
+    "statement": "Homem de 42 anos, previamente hígido, procura o pronto-socorro com história de icterícia há 10 dias, evoluindo nas últimas 24 horas com dor abdominal difusa e alteração do comportamento. Exame físico: confusão mental, icterícia intensa e fígado doloroso à palpação. Exames laboratoriais: AST: 2.600 U/L; ALT: 3.100 U/L; INR: 2,6; bilirrubina total: 14 mg/dL (direta 9,2 mg/dL). Ultrassonografia de abdome: fígado de dimensões reduzidas, sem dilatação de vias biliares. A respeito do caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "King’s College e escore de Clichy são utilizados para avaliação de indicação de transplante hepático em casos insuficiência hepática aguda fulminante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hepatite autoimune aguda é improvável, pois essa condição cursa com evolução crônica, com fibrose e cirrose e não se manifesta de forma fulminante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A pêntade de Reynolds causada por colangite aguda deve ser considerada, e deve ser feita colangiopancreatografia retrógrada endoscópica (CPRE) na urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Entre os antibióticos, a ceftriaxona é a principal causa de hepatite aguda e insuficiência hepática aguda fulminante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "No Brasil, o fator etiológico para a condição descrita é mais provavelmente associado à infecção por vírus de hepatite C ou ao consumo de álcool.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro clássico de Insuficiência Hepática Aguda (IHA), definida pela tríade: icterícia, coagulopatia (INR maior ou igual a 1,5) e encefalopatia hepática (confusão mental) em um indivíduo sem cirrose prévia. Os níveis altíssimos de transaminases (AST e ALT acima de 2.000 U/L) e o fígado de dimensões reduzidas ao ultrassom sugerem necrose maciça do parênquima hepático.\n\nAlternativa A (CORRETA): Diante de um quadro de IHA, a avaliação de prognóstico e a indicação de transplante hepático de urgência são fundamentais. Os critérios de King's College são os mais utilizados, separando os pacientes entre intoxicação por paracetamol e outras causas (sorologias, drogas, etc.). O escore de Clichy é outro modelo clássico que utiliza a concentração do Fator V de coagulação (geralmente abaixo de 20 a 30 por cento do normal) como principal marcador para indicação de transplante.\n\nAlternativa B (INCORRETA): A hepatite autoimune pode, em uma parcela significativa de casos, manifestar-se como uma hepatite aguda grave ou fulminante, não se restringindo apenas à evolução crônica com fibrose.\n\nAlternativa C (INCORRETA): A pêntade de Reynolds (dor, icterícia, febre, choque e confusão mental) refere-se à colangite aguda obstrutiva grave. No entanto, o ultrassom do paciente mostrou ausência de dilatação das vias biliares, e as transaminases na casa dos milhares são características de insulto hepatocelular direto (como hepatite viral ou química), e não de um padrão obstrutivo biliar.\n\nAlternativa D (INCORRETA): A ceftriaxona pode causar lama biliar (pseudolitíase), mas não é a principal causa de IHA. Entre os medicamentos, o paracetamol é a causa mais comum de IHA no mundo. Entre os antibióticos causadores de lesão hepática, a amoxicilina com clavulanato é frequentemente citada, mas raramente evolui para falência fulminante comparada a outras drogas como a isoniazida.\n\nAlternativa E (INCORRETA): No Brasil, o vírus da hepatite C quase nunca causa insuficiência hepática aguda; ele é tipicamente um agente de doença crônica. O álcool causa doença crônica (cirrose) ou hepatite alcoólica aguda sobre crônica. As principais causas de IHA no cenário brasileiro são as hepatites virais (vírus A e B) e as causas medicamentosas/induzidas por drogas.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transplante Hepático e Hepatite Fulminante"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  },
+  {
+    "id": "AJUDA_aa61e61a-8109-469e-9268-eb81270c60c2",
+    "originalId": "aa61e61a-8109-469e-9268-eb81270c60c2",
+    "statement": "Paciente, sexo masculino, 55 anos de idade, procura o ambulatório de cirurgia geral com queixa de ferida em perna direita há 4 meses após trauma contuso. O paciente relata que sofreu trauma contuso na região anterior da perna direita, que causou perda de pele. Nega dor ou outros sintomas no momento. Ao exame físico, bom estado geral; afebril; presença de ferida de cerca de 5x5cm na região ântero-lateral da perna direita, com perda da cobertura cutânea sem exposição óssea, sem sinais flogísticos, com leito avermelhado e algumas áreas esbranquiçadas, sem tecido necrótico. Diante desse caso clínico:\n\nDe acordo com as características da ferida deste paciente, neste momento, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As citocinas anti-inflamatórias estão em níveis elevados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A quantidade de metaloproteinases está em níveis elevados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O TNF-alfa diminui a produção das metaloproteinases.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quanto maior for a inflamação na ferida, maior é a probabilidade de cicatrização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta uma ferida que persiste por 4 meses, o que a caracteriza como uma ferida crônica. Em condições fisiológicas, uma ferida aguda deve progredir através das fases de hemostasia, inflamação, proliferação e remodelamento. Quando uma ferida não cicatriza em um período esperado (geralmente acima de 4 a 6 semanas), ela entra em um estado de estase, permanecendo \"travada\" em uma fase inflamatória prolongada e patológica.\n\nAnálise das alternativas:\n\nAlternativa A - INCORRETA: Nas feridas crônicas, o perfil de citocinas é predominantemente pró-inflamatório. Existe uma alta concentração de citocinas como Interleucina-1 (IL-1), Interleucina-6 (IL-6) e Fator de Necrose Tumoral Alfa (TNF-alfa). As citocinas anti-inflamatórias, que ajudariam a encerrar o processo inflamatório e iniciar a fase proliferativa, estão em níveis reduzidos.\n\nAlternativa B - CORRETA: Esta é a principal característica bioquímica das feridas crônicas. As Metaloproteinases de Matriz (MMPs) são enzimas que degradam os componentes da matriz extracelular. Em uma cicatrização normal, elas são necessárias para a limpeza do tecido lesado. Contudo, na ferida crônica, há um desequilíbrio: a quantidade de MMPs é muito elevada e supera a capacidade de seus inibidores naturais (conhecidos como TIMPs). O excesso de MMPs acaba destruindo não só o tecido morto, mas também a matriz extracelular saudável e os fatores de crescimento recém-produzidos, impedindo o fechamento da ferida.\n\nAlternativa C - INCORRETA: O TNF-alfa é um potente estimulador da produção de metaloproteinases. Ele age aumentando a expressão de genes que codificam as MMPs em macrófagos e fibroblastos. Portanto, o TNF-alfa aumenta, e não diminui, a produção dessas enzimas degradativas.\n\nAlternativa D - INCORRETA: A inflamação é uma etapa essencial para o início da cicatrização (fase inflamatória), mas ela deve ser limitada no tempo. Quando a inflamação é excessiva, persistente ou muito intensa, ela se torna deletéria ao tecido. Esse excesso de atividade inflamatória gera estresse oxidativo e proteólise exagerada, o que interrompe o processo de reparo e impede a formação do tecido de granulação saudável.\n\nConclusão:\n\nO quadro clínico de uma ferida de 4 meses sem sinais de infecção aguda, mas que não evolui para a cura, reflete um microambiente bioquímico hostil dominado pelo excesso de metaloproteinases, o que justifica a alternativa B.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  },
+  {
+    "id": "AJUDA_aa64e4f1-f399-449d-9a8c-1ad7dda05b5b",
+    "originalId": "aa64e4f1-f399-449d-9a8c-1ad7dda05b5b",
+    "statement": "O Mieloma Múltiplo é uma neoplasia de células plasmocitárias que acomete mais comumente indivíduos do sexo masculino em torno da sexta década. São achados clínicos e laboratoriais comumente encontrados no Mieloma Múltiplo, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia normocítica normocrômica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipercalcemia por lesões ósseas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Insuficiência renal por doença glomerular secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suscetibilidade a processos infecciosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aumento de fosfatase alcalina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O Mieloma Múltiplo (MM) é uma neoplasia maligna de plasmócitos que se proliferam na medula óssea, levando à produção de uma proteína monoclonal (Proteína M) e a uma série de disfunções orgânicas resumidas pelo acrônimo CRAB (Cálcio elevado, Renal, Anemia e Bone/Osso).\n\nAnálise das alternativas:\n\na) Anemia normocítica normocrômica: Está correta. É o achado hematológico mais comum no diagnóstico do Mieloma Múltiplo. Ocorre devido à infiltração da medula óssea por plasmócitos neoplásicos (mieloftise), além do efeito de citocinas inflamatórias que inibem a eritropoiese e, em estágios avançados, pela redução da produção de eritropoietina devido à insuficiência renal.\n\nb) Hipercalcemia por lesões ósseas: Está correta. A proliferação dos plasmócitos estimula a atividade osteoclástica (reabsorção óssea) e inibe a atividade osteoblástica. A destruição do tecido ósseo libera cálcio na circulação, resultando em hipercalcemia, que pode causar sintomas como desidratação, confusão mental e constipação.\n\nc) Insuficiência renal por doença glomerular secundária: Está correta. Embora a causa mais clássica de lesão renal no mieloma seja a \"nefropatia por cilindros\" (lesão tubular causada por cadeias leves de imunoglobulinas, as proteínas de Bence-Jones), o paciente também pode desenvolver doença glomerular secundária, como a amiloidose AL ou a doença de depósito de cadeias leves, que levam à síndrome nefrótica e à insuficiência renal.\n\nd) Suscetibilidade a processos infecciosos: Está correta. Os pacientes com MM apresentam uma imunodeficiência humoral significativa. Apesar da produção excessiva de uma imunoglobulina monoclonal, há uma redução na produção de anticorpos funcionais (hipogamaglobulinemia policlonal), o que aumenta drasticamente o risco de infecções, especialmente por bactérias encapsuladas (como Streptococcus pneumoniae).\n\ne) Aumento de fosfatase alcalina: Esta é a alternativa incorreta (Gabarito). Diferentemente de outras metástases ósseas ou doenças como a de Paget, as lesões ósseas no Mieloma Múltiplo são puramente líticas. Como há uma inibição dos osteoblastos (células que formam osso e produzem fosfatase alcalina), os níveis desta enzima costumam estar normais, mesmo na presença de destruição óssea extensa. O aumento da fosfatase alcalina só ocorreria em caso de fraturas em fase de consolidação, mas não é um achado típico da doença em si.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Mieloma Múltiplo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:25.085Z"
+  }
+]

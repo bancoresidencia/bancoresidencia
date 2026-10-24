@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_1f35fe94-7a23-48fb-9d78-b4e68a4d1dbe",
+    "originalId": "1f35fe94-7a23-48fb-9d78-b4e68a4d1dbe",
+    "statement": "Mulher de 63 anos com menopausa há 8 anos, relata secura, prurido e ardência vaginal, polaciúria, disúria e tenesmo vesical. Antecedente pessoal de tromboembolismo venoso pulmonar há 5 anos após contrair COVID 19. No exame ginecológico foi observada parede vaginal de coloração rósea pálida, diminuição do pregueamento vaginal e pequena quantidade de conteúdo incaracterístico, sem odor. Urina tipo I: exame sem alterações. Qual a conduta mais adequada para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Terapia hormonal combinada transdérmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estriol creme vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Metronidazol creme vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidratante vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico e o exame físico são típicos da Síndrome Geniturinária da Menopausa (SGM), decorrente do hipoestrogenismo pós-menopausa. A redução de estrogênio leva ao adelgaçamento do epitélio vaginal e do trato urinário baixo, causando secura, prurido, ardência e sintomas urinários irritativos (polaciúria, disúria, tenesmo). O exame de urina normal descarta infecção do trato urinário.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A terapia hormonal sistêmica (mesmo que por via transdérmica) é indicada para sintomas vasomotores intensos (fogachos) ou prevenção de osteoporose. Quando os sintomas são exclusivamente geniturinários, a preferência é sempre pelo tratamento tópico local, minimizando a exposição sistêmica, especialmente em uma paciente com histórico de tromboembolismo venoso.\n\nAlternativa b: Correta. O estrogênio tópico em baixas doses (como o estriol creme vaginal) é o padrão-ouro para o tratamento da SGM. Por apresentar absorção sistêmica mínima, possui excelente perfil de segurança e não aumenta o risco de novos eventos tromboembólicos, sendo seguro para pacientes com antecedente de trombose venosa que apresentam queixas locais.\n\nAlternativa c: Incorreta. O metronidazol é indicado para o tratamento de vaginose bacteriana e tricomoníase. A secreção descrita é incaracterística e sem odor, associada a sinais claros de atrofia, descartando infecção vaginal ativa.\n\nAlternativa d: Incorreta. Os hidratantes vaginais são alternativas não hormonais úteis para sintomas leves ou em casos de contraindicação absoluta aos estrogênios. No entanto, para uma paciente com queixas geniturinárias significativas e sem contraindicação ao uso tópico, o estrogênio local é a terapia de escolha por restaurar a mucosa, o pH e o trofismo vesicouretral de forma muito mais eficaz.\n\nGabarito definitivo: Letra B.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doenças de Vulva e Vagina",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  },
+  {
+    "id": "AJUDA_1f3cff2f-79b4-490f-b06f-0879f93df751",
+    "originalId": "1f3cff2f-79b4-490f-b06f-0879f93df751",
+    "statement": "Primigesta com 30 semanas de gestação, sem histórico de epilepsia, veio à UPA queixando-se de cefaleia e visão turva. À avaliação inicial, a pressão arterial era de 160/110 mmHg. Enquanto a enfermeira chamava o médico, a paciente teve uma convulsão tônico-clônica. Imediatamente recebeu 4,0 g de sulfato de magnésio intravenoso para tratamento de eclâmpsia, e o quadro foi estabilizado. Após 15 minutos, novo episódio convulsivo ocorreu. Em situações como essa, a conduta mais adequada para reduzir a chance de novas convulsões é administrar, por via intravenosa,",
+    "options": [
+      {
+        "id": "A",
+        "text": "diazepam (20 mg).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hidantal (50 mg).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sulfato de magnésio (2,0 g).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "fenobarbital (100 mg).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma paciente com quadro clássico de eclâmpsia (hipertensão arterial associada a convulsões tônico-clônicas na gestação). O sulfato de magnésio é a droga de escolha e padrão-ouro para o tratamento e prevenção de recorrências, sendo superior a qualquer anticonvulsivante comum, como fenitoína ou diazepam.\n\nAlternativa (c) - CORRETA: De acordo com os protocolos internacionais e nacionais (como os da FEBRASGO), o manejo da eclâmpsia inicia-se com uma dose de ataque de 4 g a 6 g de sulfato de magnésio. Se a paciente apresentar uma nova convulsão após a dose inicial de ataque, a conduta imediata e mais adequada é administrar um reforço (bolus adicional) de 2 g de sulfato de magnésio por via intravenosa, aplicado lentamente em 3 a 5 minutos. O objetivo é atingir níveis terapêuticos eficazes para estabilização da excitabilidade neuronal antes de considerar outras classes de drogas.\n\nAlternativa (a) - INCORRETA: O diazepam é considerado uma droga de segunda linha no manejo da eclâmpsia. Ele deve ser reservado apenas para casos de crises convulsivas refratárias ao uso correto do magnésio ou quando há contraindicação formal ao sulfato. O uso de benzodiazepínicos está associado a um maior risco de depressão respiratória materna e depressão do sistema nervoso central do recém-nascido (efeitos sedativos prolongados).\n\nAlternativa (b) - INCORRETA: A fenitoína (Hidantal) não é a droga de escolha na eclâmpsia. Estudos multicêntricos demonstraram que o sulfato de magnésio é significativamente mais eficaz que a fenitoína na prevenção de crises recorrentes. Além disso, a fenitoína exige monitorização cardíaca e possui uma janela terapêutica estreita, não sendo a conduta preconizada após a primeira falha do magnésio.\n\nAlternativa (d) - INCORRETA: O fenobarbital é um barbitúrico que não possui papel no manejo agudo inicial ou na recorrência imediata de crises de eclâmpsia. Seu uso está relacionado à sedação profunda e a potenciais efeitos adversos fetais, sem apresentar a eficácia do magnésio na fisiopatologia específica da hipertensão gestacional.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  },
+  {
+    "id": "AJUDA_1f3ec8ef-126b-4c64-b0bf-16f30b120abf",
+    "originalId": "1f3ec8ef-126b-4c64-b0bf-16f30b120abf",
+    "statement": "Um homem de 52 anos de idade, com histórico de hipertensão arterial há 10 anos, apresenta controle pressórico irregular. Relata uso esporádico de losartana 50mg/dia. No consultório, apresenta PA de 172/102mmHg em duas medidas, realizadas com técnica adequada, após repouso de 5 minutos. O ECG mostra sinais de hipertrofia ventricular esquerda. Os exames laboratoriais revelam creatinina: 1,6mg/dL e K: 5,2mEq/L. O paciente refere tabagismo e histórico familiar de infarto precoce.\nSobre a hipertensão arterial sistêmica nesse paciente, considere as afirmativas:\nI. A presença de hipertrofia ventricular esquerda no ECG caracteriza lesão em órgão-alvo da HAS.\nII. A associação de creatinina elevada e potássio alto pode sugerir doença renal crônica ou estenose de artéria renal.\nIII. O uso isolado de losartana em baixa dose é suficiente para controle pressórico nesse paciente de alto risco cardiovascular.\nIV. Esse paciente deve ter sua terapia otimizada com combinação de anti-hipertensivos e medidas de mudança de estilo de vida.\nEstão CORRETAS as afirmativas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas III e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas I, II e IV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I, II, III e IV",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I: Correta. A hipertrofia ventricular esquerda (HVE) detectada pelo eletrocardiograma é um dos principais critérios para definir a presença de lesão em órgão-alvo (LOA) no paciente hipertenso. Ela reflete a adaptação patológica do miocárdio à sobrecarga pressórica crônica e aumenta significativamente o risco de eventos cardiovasculares, como insuficiência cardíaca e arritmias.\n\nAfirmativa II: Correta. O valor de creatinina de 1,6 mg/dL está acima do limite de referência, indicando uma redução na taxa de filtração glomerular, o que é compatível com nefropatia hipertensiva ou outra forma de doença renal crônica (DRC). O potássio em 5,2 mEq/L (hipercalemia leve) corrobora a disfunção renal, pois a excreção de potássio fica prejudicada. Além disso, a combinação de insuficiência renal e hipertensão grave pode sugerir estenose de artéria renal, especialmente se houver piora aguda com o uso de bloqueadores do sistema renina-angiotensina.\n\nAfirmativa III: Incorreta. O paciente apresenta hipertensão estágio 2 (pelas diretrizes brasileiras, PA sistólica entre 160-179 mmHg e/ou diastólica entre 100-109 mmHg) e é classificado como de alto risco cardiovascular devido ao tabagismo, histórico familiar e presença de lesão em órgão-alvo (HVE e alteração renal). Para esses pacientes, a monoterapia com dose baixa de losartana (50 mg) é insuficiente. As diretrizes recomendam o uso de combinações de fármacos para atingir as metas terapêuticas.\n\nAfirmativa IV: Correta. Diante de um paciente de alto risco e com níveis pressóricos elevados, a conduta padrão é a otimização da terapia farmacológica, preferencialmente com a combinação de duas ou mais classes de anti-hipertensivos (como um BRA associado a um bloqueador de canal de cálcio ou diurético tiazídico). Além disso, intervenções não farmacológicas, como a cessação do tabagismo e controle dietético, são fundamentais para reduzir o risco global do paciente.\n\nConclusão: Estão corretas as afirmativas I, II e IV, o que torna a alternativa (c) a resposta correta.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  },
+  {
+    "id": "AJUDA_1f4a8537-f45d-4bc9-8f14-a268a3ae18dd",
+    "originalId": "1f4a8537-f45d-4bc9-8f14-a268a3ae18dd",
+    "statement": "Mesmo com diversas formas de apresentação, diabetes mellitus é hoje classificada em tipo 1 e tipo 2. Diabetes tipo 1 tem como uma das características universais",
+    "options": [
+      {
+        "id": "A",
+        "text": "sempre se manifesta na infância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estar associada com dislipidemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "necessidade de insulina para o tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ter fatores de risco amplamente conhecidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a questão, é necessário focar na fisiopatologia do Diabetes mellitus tipo 1 (DM1). O DM1 é caracterizado pela destruição autoimune das células-beta pancreáticas, o que leva a uma deficiência absoluta de insulina.\n\nAlternativa a: Incorreta. Embora o DM1 seja a forma mais comum de diabetes em crianças e adolescentes, ele não se manifesta exclusivamente nessa faixa etária. Existe uma forma de DM1 que surge em adultos, conhecida como LADA (Latent Autoimmune Diabetes in Adults), que possui um desenvolvimento mais lento, mas, ainda assim, é de base autoimune.\n\nAlternativa b: Incorreta. A dislipidemia é uma característica clássica e universal do Diabetes mellitus tipo 2 (DM2), estando frequentemente associada à síndrome metabólica, à resistência à insulina e à obesidade. No DM1, o perfil lipídico pode estar normal se o controle glicêmico for adequado.\n\nAlternativa c: Correta. Esta é a característica fundamental e universal do DM1. Devido à destruição das células-beta do pâncreas, o organismo perde a capacidade de produzir insulina. Sem esse hormônio, o paciente desenvolve cetoacidose diabética, uma condição potencialmente fatal. Portanto, a reposição exógena de insulina é vital e obrigatória para todos os pacientes com DM1 desde o diagnóstico.\n\nAlternativa d: Incorreta. Diferentemente do DM2, cujos fatores de risco são amplamente conhecidos e modificáveis (como obesidade, sedentarismo e dieta), os gatilhos ambientais que iniciam o processo autoimune no DM1 ainda não são totalmente compreendidos pela ciência. Embora existam marcadores genéticos associados (sistema HLA), não se conhece exatamente por que o sistema imunológico passa a atacar o próprio pâncreas em determinados indivíduos.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  },
+  {
+    "id": "AJUDA_1f729f51-271e-43c5-b09c-61ac6caadd95",
+    "originalId": "1f729f51-271e-43c5-b09c-61ac6caadd95",
+    "statement": "Paciente masculino, de 68 anos, procurou a UPA queixando-se de dificuldade extrema para urinar (apenas pequeno volume de urina era liberado com muito esforço), quadro iniciado no dia anterior. Informou ser tabagista com índice tabágico de 80 maços-ano. Desde os 50 anos, vinha observando enfraquecimento do jato urinário e aumento do número de vezes que acordava para urinar com a sensação de que não esvaziava a bexiga ao fim da micção. Negou febre ou ardência durante a micção. Trouxe resultado de exame de PSA solicitado na UBS. Ao exame físico, a palpação abdominal revelou bexiga distendida e sensível, e o toque retal, próstata aumentada de tamanho e de consistência firme, sem nódulos. A incidência do quadro clínico do paciente está relacionada com os seguintes fatores:",
+    "options": [
+      {
+        "id": "A",
+        "text": "idade, intensidade de sintomas prévios e nível do PSA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "idade, índice tabágico e nível do PSA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "índice tabágico, tamanho da próstata e IMC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tamanho da próstata, IMC e intensidade dos sintomas prévios.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA questão apresenta um caso clássico de Hiperplasia Prostática Benigna (HPB) que evoluiu para uma complicação comum: a retenção urinária aguda, evidenciada pelo \"bexigoma\" (bexiga distendida e sensível à palpação) e pela incapacidade de urinar. O objetivo é identificar quais fatores estão associados à incidência e à progressão dessa condição.\n\nAlternativa (a) Correta: Esta alternativa lista os três pilares fundamentais para a progressão da HPB e o risco de retenção urinária. 1) Idade: A prevalência da HPB aumenta progressivamente com o envelhecimento, sendo rara antes dos 40 anos e afetando a maioria dos homens acima de 60-70 anos. 2) Intensidade dos sintomas prévios: Pacientes com sintomas moderados a graves (geralmente avaliados pelo escore IPSS) possuem maior risco de complicações. 3) Nível do PSA: O Antígeno Prostático Específico, além do rastreio para o câncer, funciona como um marcador indireto do volume da próstata. Níveis de PSA acima de 1,5 ng/mL estão associados a próstatas maiores e a um risco significativamente maior de retenção urinária e à necessidade de cirurgia.\n\nAlternativa (b) Incorreta: O erro reside no \"índice tabágico\". Embora o tabagismo seja um fator de risco crucial para o câncer de bexiga e doenças cardiovasculares, não há evidência científica robusta que o correlacione como fator de risco para o desenvolvimento ou progressão da HPB. Alguns estudos sugerem até uma relação neutra ou inversamente proporcional, possivelmente devido a alterações hormonais, mas ele nunca é considerado um fator de incidência para o quadro clínico descrito.\n\nAlternativa (c) Incorreta: Novamente, o índice tabágico invalida a alternativa. Além disso, embora o IMC (obesidade) possa estar relacionado a uma maior prevalência de HPB devido a mecanismos de inflamação sistêmica e síndrome metabólica, ele não é um preditor tão forte para a incidência de retenção urinária quanto a idade e o nível do PSA.\n\nAlternativa (d) Incorreta: Embora o tamanho da próstata e a intensidade dos sintomas sejam fatores relevantes, a inclusão do IMC em detrimento da idade torna a alternativa menos precisa. A idade é o fator isolado mais importante para a ocorrência da HPB. Ademais, o PSA (citado na alternativa a) é o marcador laboratorial prático mais utilizado para prever o crescimento prostático e o desfecho clínico do paciente.\n\nResumo didático: Para provas de residência, lembre-se de que os preditores de progressão da HPB (maior chance de retenção aguda e cirurgia) são: idade avançada, PSA elevado (volume prostático maior que 30-40 mL) e sintomas urinários iniciais graves.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  },
+  {
+    "id": "AJUDA_1f826286-1bd9-47d2-8476-314eccb2aaa6",
+    "originalId": "1f826286-1bd9-47d2-8476-314eccb2aaa6",
+    "statement": "Gestante em uso de terapia para HIV, diagnosticado no inicio da gestação, é admitida em trabalho de parto, de termo. Em uso de terapia antirretroviral, que foi iniciada na segunda metade da gestação, mantendo Carga viral de 150 cópias. A partir de 4 semanas de vida deve-se introduzir sulfametoxazol + trimetoprima, com o objetivo de profilaxia",
+    "options": [
+      {
+        "id": "A",
+        "text": "de infecções pela Entamoeba histolytica, que nestas crianças pode evoluir para quadros invasivos com alta letalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "de infecções urinárias que podem causar cicatrizes renais, mesmo quando afebris, nestas crianças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "de doenças de pele e invasivas, como osteomielite, pelo Staphylococcus aureus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "contra o Pneumocystis jiroveci, doença que pode manifestar-se rapidamente, com alta letalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "de infecções por Chlamydia trachomatis, com potencial para quadro de pneumonia intersticial de evolução para insuficiência respiratória grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo do recém-nascido exposto ao HIV e a lógica por trás da quimioprofilaxia com sulfametoxazol-trimetoprima (SMZ-TMP).\n\nDe acordo com os protocolos do Ministério da Saúde, todo recém-nascido exposto ao HIV deve iniciar a profilaxia com SMZ-TMP a partir de 4 semanas (ou 30 dias) de vida. Esse prazo é respeitado para evitar o risco de *kernicterus* (icterícia nuclear), uma vez que as sulfonamidas podem deslocar a bilirrubina da albumina em neonatos muito jovens. A profilaxia é mantida até que a infecção pelo HIV seja descartada ou até que a criança complete um ano de idade, caso a infecção seja confirmada.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O SMZ-TMP não é utilizado para a profilaxia ou tratamento de *Entamoeba histolytica*. A amebíase é tratada tipicamente com nitroimidazólicos (como metronidazol) e não faz parte das preocupações centrais de infecções oportunistas em lactentes expostos ao HIV no primeiro ano de vida.\n\nAlternativa B: Incorreta. Embora o SMZ-TMP possa ser usado como profilaxia em crianças com infecções urinárias de repetição ou refluxo vesicoureteral, esse não é o motivo da sua indicação universal para filhos de mães que vivem com HIV. O foco aqui é a imunossupressão causada pelo vírus.\n\nAlternativa C: Incorreta. O *Staphylococcus aureus* é uma causa comum de infecções de pele e osteomielite, mas não se faz profilaxia medicamentosa prolongada para esse agente em lactentes expostos ao HIV. O SMZ-TMP tem ação contra o *S. aureus*, mas seu alvo principal nessa estratégia é outro.\n\nAlternativa D: Correta. A pneumonia por *Pneumocystis jirovecii* (antigamente chamado de *P. carinii*) é a infecção oportunista mais comum e grave em lactentes infectados pelo HIV que não recebem profilaxia. Ela apresenta um pico de incidência entre os 3 e 6 meses de vida e possui alta taxa de mortalidade se não prevenida ou tratada rapidamente. Por isso, a introdução do SMZ-TMP às 4 semanas de vida é uma medida crucial de saúde pública para proteger essas crianças enquanto seu status sorológico definitivo é investigado.\n\nAlternativa E: Incorreta. A *Chlamydia trachomatis* pode causar pneumonia intersticial e conjuntivite em recém-nascidos por transmissão vertical no parto vaginal. No entanto, o tratamento e a prevenção não envolvem o uso crônico de SMZ-TMP a partir da 4ª semana; o manejo é feito com macrolídeos (como eritromicina ou azitromicina) quando a infecção é diagnosticada ou suspeitada.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  },
+  {
+    "id": "AJUDA_1f87a95e-f3de-4b14-a3c6-0627ce4ade2f",
+    "originalId": "1f87a95e-f3de-4b14-a3c6-0627ce4ade2f",
+    "statement": "Homem de 75 anos é levado ao pronto atendimento com queixa de mal-estar inespecífico e astenia. É portador de Diabetes Melito-2, Insuficiência Cardíaca Congestiva com Fração de Ejeção do Ventrículo Esquerdo de 28%, Doença Renal Crônica 3bA2 (creatinina basal 1,5mg/dL, 37mL/min/1.73m²). Faz uso de furosemida 40mg ao dia, losartana 50mg 2x ao dia, espironolactona 25mg ao dia, carvedilol 25mg 2x ao dia, dapagliflozina 10mg ao dia e metformina 500mg 2x ao dia. Ao exame físico, PA 102/54mmHg, FC 56bpm. As mucosas estão coradas e desidratadas. AR, ACV, abdome: sem anormalidades. A Pressão Venosa Central estimada pelo exame do Pulso Venoso Jugular encontra-se normal. Abdome: sem anormalidades. EXAMES DE LABORATÓRIO: creatinina 2,2mg/dL; ureia 102mg/dL; potássio 6,1mEq/L; sódio 129mEq/L; bicarbonato 16mEq/L; glicemia 126mg/dL; lactato 1,2mEq/L. O eletrocardiograma desse paciente não revelou anormalidades. Assinale a alternativa que apresenta um tratamento inicial INADEQUADO para a hiperpotassemia nesse paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bicarbonato de sódio IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Furosemida IV",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Insulina e glicose IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Salbutamol inalatório",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, é necessário analisar o quadro clínico do paciente e identificar qual medida terapêutica para hiperpotassemia é contraindicada ou inadequada diante de suas condições específicas.\n\nO paciente apresenta uma hiperpotassemia moderada (K+ 6,1 mEq/L) associada a uma Lesão Renal Aguda sobre Doença Renal Crônica (elevação da creatinina de 1,5 para 2,2 mg/dL e ureia de 102 mg/dL). O dado fundamental do exame físico é a desidratação (mucosas desidratadas, PA 102/54 mmHg).\n\nAlternativa (a) Bicarbonato de sódio IV: Esta medida é considerada correta e adequada para este paciente. O uso de bicarbonato de sódio está indicado no tratamento da hiperpotassemia quando há acidose metabólica associada, o que é o caso deste paciente (bicarbonato sérico de 16 mEq/L). O bicarbonato promove a entrada de potássio para o meio intracelular através da troca por íons H+.\n\nAlternativa (b) Furosemida IV: Esta é a alternativa que apresenta o tratamento INADEQUADO. Embora a furosemida seja um diurético de alça que promove a espoliação urinária de potássio, ela só deve ser utilizada se o paciente tiver reserva funcional renal e, principalmente, se houver estabilidade volêmica ou sobrecarga de volume. O paciente em questão está clinicamente desidratado. O uso de diuréticos em um cenário de hipovolemia e Lesão Renal Aguda pré-renal agravará a desidratação, reduzirá ainda mais a perfusão renal e piorará a função renal, sendo ineficaz para tratar a hiperpotassemia neste contexto.\n\nAlternativa (c) Insulina e glicose IV: Esta medida está correta. É a chamada \"solução polarizante\", um dos pilares do tratamento agudo da hiperpotassemia. A insulina estimula a bomba sódio-potássio ATPase, promovendo o *shift* (deslocamento) do potássio do meio extracelular para o intracelular de forma rápida e segura.\n\nAlternativa (d) Salbutamol inalatório: Esta medida está correta. Assim como a insulina, os agonistas beta-2 adrenérgicos (como o salbutamol ou fenoterol) estimulam a entrada de potássio nas células. É uma terapia adjuvante útil na redução rápida dos níveis séricos de potássio.\n\nEm resumo, o foco da questão é identificar que a furosemida (um diurético) não deve ser administrada em um paciente com sinais claros de desidratação e possível insuficiência renal aguda pré-renal, mesmo que ele tenha hiperpotassemia. O tratamento inicial para este paciente deveria incluir a reposição volêmica cautelosa e medidas de *shift* intracelular.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  },
+  {
+    "id": "AJUDA_1f9d48f6-efaf-4e80-91d7-4042fae9617e",
+    "originalId": "1f9d48f6-efaf-4e80-91d7-4042fae9617e",
+    "statement": "Paciente 36 anos, obesa, em tratamento para depressão, uso de ACO e inibidor de GLP-1, evolui com dores na região superior do abdome e massa palpável. Tomografia computadorizada evidencia adenoma hepático de 14 cm envolvendo todo o lobo esquerdo. O cirurgião indicou hepatectomia esquerda anatômica e serão ressecados os seguintes seguimentos:",
+    "options": [
+      {
+        "id": "A",
+        "text": "II, IV e V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I, II e III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II, III, IVa e IVb",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "IVa, IVb, V e VI",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "II e III",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A anatomia cirúrgica do fígado é fundamentada na divisão de Couinaud, que utiliza a distribuição vascular (veia porta e artéria hepática) e a drenagem venosa (veias hepáticas) para dividir o órgão em oito segmentos funcionalmente independentes.\n\nPara a definição das hepatectomias, é fundamental diferenciar o fígado direito do fígado esquerdo. Essa divisão não ocorre no ligamento falciforme, mas sim na Linha de Cantlie, um plano imaginário que vai da veia cava inferior até a fossa da vesícula biliar. Tudo o que está à esquerda dessa linha compõe o hemifígado esquerdo.\n\nNa hepatectomia esquerda anatômica, o cirurgião remove todo o hemifígado esquerdo, o que compreende obrigatoriamente os segmentos II, III e IV. O segmento IV é subdividido em IVa (superior) e IVb (inferior, também chamado de lobo quadrado).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Os segmentos II e IV são do lado esquerdo, mas o segmento V pertence ao lobo direito (setor anterior direito).\n\nAlternativa b) Incorreta. O segmento I corresponde ao lobo caudado, que é anatomicamente independente e possui drenagem venosa própria diretamente para a veia cava. Embora possa ser retirado em hepatectomias complexas, ele não define a hepatectomia esquerda padrão. Além disso, a alternativa esquece o segmento IV.\n\nAlternativa c) Correta. A hepatectomia esquerda completa remove os segmentos II e III (que ficam à esquerda do ligamento falciforme) e o segmento IV (medial, situado entre o ligamento falciforme e a linha de Cantlie), incluindo suas subdivisões superior (IVa) e inferior (IVb).\n\nAlternativa d) Incorreta. Os segmentos V e VI fazem parte do hemifígado direito.\n\nAlternativa e) Incorreta. A retirada apenas dos segmentos II e III é chamada de lobectomia esquerda (ou segmentectomia lateral esquerda). Para ser considerada uma hepatectomia esquerda completa, o segmento IV deve ser incluído.\n\nContexto Clínico: O caso apresenta uma paciente com adenoma hepático volumoso (14 cm). Em mulheres, adenomas maiores que 5 cm têm indicação cirúrgica formal pelo risco de ruptura, hemoperitônio e transformação maligna. O uso de anticoncepcionais orais (ACO) é um fator de risco clássico para o desenvolvimento dessa neoplasia benigna.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  },
+  {
+    "id": "AJUDA_1f9f410f-d065-4dbf-955b-964f8cf046de",
+    "originalId": "1f9f410f-d065-4dbf-955b-964f8cf046de",
+    "statement": "Um homem de 55 anos, etilista e tabagista crônico, é admitido na sala de emergência devido à hematêmese volumosa, iniciada há duas horas. Evoluiu com sinais de choque hemorrágico. Logo à admissão, foi submetido à intubação orotraqueal em sequência rápida em decorrência do alto volume do sangramento. Deu-se continuidade ao atendimento com coleta de exames laboratoriais e acesso venoso central, solicitação de tipagem sanguínea de urgência e administração de drogas vasoativas (terlipressina). Mesmo após essas medidas, o paciente mantém sinais de sangramento ativo. Considerando a gravidade do quadro, a equipe discute sobre a melhor conduta nesse momento e opta pela aplicação do balão de Sengstaken-Blakemore.\nFrente a essa conduta e com base nos seus conhecimentos sobre essa alternativa de tratamento, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tamponamento com balão é contraindicado em casos de sangramento ativo devido à sua baixa eficácia no controle de sangramento de varizes de fundo gástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso do balão promove cessação do sangramento em mais de 85% dos casos, devendo ser aplicado com técnica adequada e por tempo determinado, para prevenção de complicações como a necrose esofágica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Por ser um método temporário, somente está indicado na falha do tratamento endoscópico definitivo que, nesse caso, deveria ser realizado nas duas primeiras horas da admissão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O principal prejuízo do uso do balão nesse momento é a impossibilidade de drenagem do conteúdo gástrico que poderia facilitar a endoscopia subsequente e auxiliar na estimativa da intensidade e persistência do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Por ser simples de aplicação e praticamente não associado a complicações graves, o balão pode ser aplicado por qualquer profissional de saúde, tampouco é necessária a presença de equipe endoscópica para a sua retirada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um paciente com hemorragia digestiva alta varicosa grave, evoluindo com choque hemorrágico e refratariedade às medidas iniciais (estabilização hemodinâmica e terlipressina). Diante da instabilidade, a passagem do balão de Sengstaken-Blakemore é indicada como uma \"terapia de ponte\". Abaixo, a análise detalhada das alternativas:\n\nAlternativa a) Incorreta. O sangramento ativo volumoso é justamente a principal indicação para o uso do balão. Ele é uma medida de resgate para estabilizar o paciente até que o tratamento definitivo (endoscopia ou TIPS) possa ser realizado. Embora seja mais eficaz para varizes esofágicas, o componente gástrico do balão também auxilia no controle de varizes de fundo gástrico.\n\nAlternativa b) Correta. O tamponamento mecânico com o balão de Sengstaken-Blakemore é extremamente eficaz para a hemostasia temporária, alcançando o controle do sangramento em 80% a 90% dos casos. Contudo, devido ao risco de isquemia tecidual por pressão, o tempo de insuflação deve ser controlado (idealmente não ultrapassando 24 horas) para prevenir a necrose esofágica e outras complicações graves.\n\nAlternativa c) Incorreta. O balão é, de fato, um método temporário. Entretanto, ele não está indicado \"somente\" na falha da endoscopia. Em situações de sangramento maciço e exsanguinante em que não há estabilidade hemodinâmica mínima para realizar o exame endoscópico de forma segura, o balão pode ser passado antes mesmo da tentativa de endoscopia. Além disso, o prazo recomendado para a endoscopia digestiva alta em casos de varizes é de até 12 horas da admissão, e não necessariamente 2 horas.\n\nAlternativa d) Incorreta. O balão de Sengstaken-Blakemore possui um lúmen específico para aspiração gástrica. Isso permite a drenagem do conteúdo hemático do estômago, o que ajuda a monitorar se o sangramento foi interrompido e facilita a visualização em uma endoscopia subsequente, além de reduzir o risco de broncoaspiração em pacientes não intubados (embora este paciente já esteja em via aérea definitiva).\n\nAlternativa e) Incorreta. A passagem do balão é um procedimento de alta complexidade e risco, devendo ser realizada por médicos treinados. As complicações podem ser fatais, como a ruptura esofágica ou o deslocamento do balão para a orofaringe, causando obstrução da via aérea. A retirada deve ser feita preferencialmente com uma equipe de endoscopia ou cirurgia de prontidão, dado o alto risco de ressangramento imediato após a desinsuflação.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  },
+  {
+    "id": "AJUDA_1fa4e227-28d6-4873-8059-59a1f4f47380",
+    "originalId": "1fa4e227-28d6-4873-8059-59a1f4f47380",
+    "statement": "Qual dos seguintes achados laboratoriais é mais indicativo de anemia hemolítica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da bilirrubina indireta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Diminuição da contagem de reticulócitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Presença de células em alvo no esfregaço de sangue periférico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento do nível de ferritina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A anemia hemolítica ocorre quando a sobrevida das hemácias é encurtada devido à sua destruição precoce, superando a capacidade de compensação da medula óssea. O diagnóstico laboratorial baseia-se em evidências de aumento da destruição eritrocitária e da produção compensatória de novas células.\n\nAlternativa a) Correta. A destruição das hemácias libera hemoglobina no plasma ou no sistema reticuloendotelial. O grupamento heme da hemoglobina é degradado em biliverdina e, em seguida, em bilirrubina indireta (não conjugada). Como o fígado tem uma capacidade limitada de conjugar esse excesso de pigmento rapidamente, os níveis sanguíneos de bilirrubina indireta se elevam, sendo este um dos marcadores cardinais de hemólise, juntamente com o aumento da enzima lactato desidrogenase (LDH) e a redução da haptoglobina.\n\nAlternativa b) Incorreta. Em resposta à anemia causada pela hemólise, a medula óssea saudável aumenta a produção de glóbulos vermelhos. Esse aumento é refletido pelo aumento da contagem de reticulócitos (reticulocitose), que são hemácias jovens recém-lançadas na circulação. Uma diminuição de reticulócitos sugere uma falha na produção medular (anemia hipoproliferativa).\n\nAlternativa c) Incorreta. As células em alvo (codócitos) surgem quando há um excesso de membrana em relação ao volume da célula. Elas são típicas de hemoglobinopatias (como Talassemias e Doença por Hemoglobina C), hepatopatias obstrutivas ou após esplenectomia. Embora possam estar presentes em algumas anemias que cursam com hemólise, elas não são um marcador geral ou tão indicativo do processo hemolítico quanto a elevação da bilirrubina indireta.\n\nAlternativa d) Incorreta. A ferritina é uma proteína que reflete os estoques de ferro no organismo e também atua como reagente de fase aguda em processos inflamatórios. Embora a hemólise crônica possa levar ao acúmulo de ferro e aumento da ferritina (especialmente se houver necessidade de múltiplas transfusões), ela não é um marcador agudo ou específico para o diagnóstico de anemia hemolítica. Níveis elevados são mais sugestivos de sobrecarga de ferro ou inflamação.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:12.144Z"
+  }
+]

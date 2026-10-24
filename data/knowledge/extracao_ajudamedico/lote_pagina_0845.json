@@ -1,0 +1,489 @@
+[
+  {
+    "id": "AJUDA_eaeb4f3c-4ef0-407a-88d5-54e7fb477ce7",
+    "originalId": "eaeb4f3c-4ef0-407a-88d5-54e7fb477ce7",
+    "statement": "Paciente de 15 anos sofre um afogamento. Com relação ao tratamento da hipotermia, que geralmente acompanha esse quadro, é correto afirmar que, no grau",
+    "options": [
+      {
+        "id": "A",
+        "text": "1, o tratamento preferencial é passivo, com ambiente aquecido, cobertores e retirada da roupa molhada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "2, o tratamento preferencial é passivo, com ambiente aquecido, cobertores e fluidos parenterais aquecidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3, o tratamento preferencial é feito com ECMO.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4, o tratamento preferencial é feito com toracotomia para aquecimento inicial da caixa torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A classificação da hipotermia em graus (frequentemente baseada no Sistema Suíço de Estadiamento) orienta a conduta terapêutica de acordo com a gravidade clínica do paciente. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A: Correta. No grau 1 (hipotermia leve, temperatura entre 32 e 35 graus Celsius), o paciente está consciente e apresenta tremores vigorosos. O manejo clínico baseia-se no reaquecimento externo passivo, que consiste em retirar a vítima do ambiente frio, remover roupas molhadas, secar o paciente e cobri-lo com mantas ou cobertores em um ambiente aquecido. Isso permite que o próprio metabolismo do paciente gere calor para a recuperação térmica.\n\nAlternativa B: Incorreta. No grau 2 (hipotermia moderada, temperatura entre 28 e 32 graus Celsius), o paciente apresenta alteração do nível de consciência (letargia) e os tremores desaparecem. O tratamento requer reaquecimento ativo externo (como mantas térmicas e ar aquecido) e pode incluir medidas ativas internas, como o uso de fluidos parenterais aquecidos (38 a 42 graus Celsius). Portanto, não é um tratamento puramente passivo.\n\nAlternativa C: Incorreta. No grau 3 (hipotermia grave, temperatura geralmente abaixo de 28 graus Celsius), o paciente está inconsciente, mas ainda possui sinais vitais presentes. O tratamento envolve medidas de reaquecimento interno ativo (lavagem peritoneal ou pleural com soro aquecido, fluidos intravenosos aquecidos e aquecimento de vias aéreas). A ECMO (Oxigenação por Membrana Extracorpórea) ou o suporte de vida extracorpóreo (ECLS) são considerados se houver instabilidade hemodinâmica grave ou falha nas medidas iniciais, mas não são a regra absoluta para todos os casos de grau 3 sem instabilidade extrema.\n\nAlternativa D: Incorreta. O grau 4 caracteriza-se pela hipotermia com parada cardiorrespiratória (ausência de sinais vitais). O tratamento preferencial de escolha para o reaquecimento nesses casos é o suporte de vida extracorpóreo (ECLS/ECMO), que permite o reaquecimento rápido e mantém a perfusão dos órgãos. A toracotomia para aquecimento interno é uma medida invasiva de exceção, reservada para situações em que o suporte extracorpóreo não está disponível e outras manobras de ressuscitação falharam.\n\nResumo da classificação:\n- Grau 1: Consciente, com tremores (Reaquecimento Passivo).\n- Grau 2: Consciência alterada, sem tremores (Reaquecimento Ativo Externo).\n- Grau 3: Inconsciente, com sinais vitais (Reaquecimento Ativo Interno).\n- Grau 4: Sem sinais vitais (ECMO/ECLS).",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  },
+  {
+    "id": "AJUDA_eaed768f-61a4-4b6c-9cc2-48ac6fb6462f",
+    "originalId": "eaed768f-61a4-4b6c-9cc2-48ac6fb6462f",
+    "statement": "Adolescente, 14 anos de idade, saudável, com vida sexual ativa, tem febre medida em 38,5 a 39 ºC há 2 dias e dor abdominal em cólicas, mais intensa na região epigástrica e hipocôndrio direito com irradiação para o dorso, entre as omoplatas. Tem diagnóstico de síndrome do intestino irritável há 2 meses, por períodos de cólicas abdominais, fezes líquidas ou semilíquidas, intercalados por períodos de acalmia. Ao exame está pálido, corado, anictérico, FC = 110 bpm, FR = 20 mrm, PA = 100/80 mmHg, Tec = 2 seg, Sat O2 97%. Ausculta cardíaca e pulmonar sem alterações. Abdome tenso e doloroso à palpação, RHA diminuídos, fígado palpável a 2,5 cm do RCD, baço no RCE, Giordano negativo.\nForam colhidos exames, e indicada a realização de ultrassonografia abdominal com provável diagnóstico de",
+    "options": [
+      {
+        "id": "A",
+        "text": "cólica biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "abscesso hepático amebiano.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "doença de Crohn.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "doença inflamatória pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito apresenta um adolescente com febre alta, dor em hipocôndrio direito e epigástrio irradiada para o dorso, associada à hepatomegalia (fígado palpável a 2,5 cm do rebordo costal direito). Um ponto fundamental na história é o diagnóstico de síndrome do intestino irritável há 2 meses, caracterizada por cólicas e fezes líquidas. Em pediatria e medicina tropical, esse antecedente de diarreia crônica ou intermitente deve levantar a suspeita de amebíase intestinal, que pode evoluir para a disseminação extraintestinal.\n\nA principal hipótese é o abscesso hepático amebiano. A *Entamoeba histolytica* pode migrar da mucosa intestinal para o fígado através do sistema porta. O quadro clássico envolve febre, dor no quadrante superior direito e hepatomegalia dolorosa. A ausência de icterícia (quadro anictérico) é comum nesses casos, diferenciando-os de obstruções biliares graves ou hepatites agudas.\n\nAnálise das alternativas:\n\na) Incorreta. A cólica biliar costuma ser afebril e não apresenta hepatomegalia ao exame físico. A febre alta (39 °C) sugere um processo infeccioso ou inflamatório sistêmico agudo, como um abscesso ou colecistite, mas a história intestinal prévia direciona para a etiologia amebiana.\n\nb) Correta. O abscesso hepático amebiano justifica a febre alta, a dor em hipocôndrio direito com irradiação para o dorso (devido à irritação diafragmática) e a hepatomegalia. O relato de diarreia nos meses anteriores, erroneamente diagnosticado como síndrome do intestino irritável, reforça a infecção prévia por *Entamoeba histolytica*.\n\nc) Incorreta. A apendicite aguda tipicamente apresenta dor que se inicia na região periumbilical e migra para a fossa ilíaca direita. Embora possa haver apresentações atípicas (apêndice retrocecal ascendente), a hepatomegalia e a dor irradiada para as omoplatas não são achados característicos.\n\nd) Incorreta. A doença de Crohn é uma doença inflamatória intestinal que pode causar dor abdominal, febre e diarreia. No entanto, o quadro agudo com febre alta e dor localizada em hipocôndrio direito com sinais de massa hepática (hepatomegalia) é muito mais sugestivo de uma complicação infecciosa piogênica ou amebiana do que de uma manifestação primária de Crohn.\n\ne) Incorreta. A doença inflamatória pélvica (DIP) pode causar dor em hipocôndrio direito quando associada à síndrome de Fitz-Hugh-Curtis (peri-hepatite). No entanto, a dor da DIP é predominantemente em baixo ventre (hipogástrio e anexos) e o paciente apresenta hepatomegalia real e uma história intestinal marcante que aponta para outra etiologia.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  },
+  {
+    "id": "AJUDA_eaef3c0c-132b-432f-9d3e-6990d0f22baf",
+    "originalId": "eaef3c0c-132b-432f-9d3e-6990d0f22baf",
+    "statement": "Paciente feminina, 65 anos, diabética há 15 anos hipertensa há 10 anos é acompanhada na Unidade Básica de Saúde (UBS). Foi triada pelo agente comunitário para realizar alguns exames para avaliar se ela apresenta Doença Renal Crônica (DRC). Em relação à triagem da DRC na UBS, assinale V para as afirmativas verdadeiras e F para as afirmativas falsas e em seguida assinale a alternativa que contem a sequência correta. \n( ) Os exames que podem ser solicitados para definir a existência da doença renal crônica são creatinina, albuminúria ou relação albumina/creatinina em amostra de urina e a ultrassonografia do aparelho urinário. \n( ) Os exames necessários para definir o estadiamento da DRC são ureia e creatinina. \n( ) Os pacientes classificados como DRC Grau 3A - A1 devem sempre ser encaminhados a um especialista nefrologista. \n( ) É de responsabilidade da Atenção Primária a realização de eventos de promoção e prevenção das doenças reais.",
+    "options": [
+      {
+        "id": "A",
+        "text": "F - F - V - V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V - V - V - F",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V - F - F - V",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F - F - F - V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Comentário sobre a questão:\n\nA primeira afirmativa é verdadeira. A Doença Renal Crônica (DRC) é caracterizada por anormalidades na estrutura ou função renal presentes por mais de três meses, com implicações para a saúde. Para o rastreamento e diagnóstico inicial, solicitamos a creatinina sérica (utilizada para estimar a Taxa de Filtração Glomerular – TFG), a albuminúria ou a relação albumina/creatinina (RAC) em amostra isolada de urina para verificar lesão renal, e exames de imagem, como a ultrassonografia de rins e vias urinárias, que podem demonstrar sinais de cronicidade, como redução do tamanho renal, cistos ou perda da diferenciação corticomedular.\n\nA segunda afirmativa é falsa. O estadiamento da DRC é realizado com base no sistema internacional KDIGO, que utiliza dois parâmetros: a Taxa de Filtração Glomerular (estimada a partir da creatinina sérica) e o grau de albuminúria (A1, A2 ou A3). A ureia é um marcador de escórias nitrogenadas importante na avaliação clínica de complicações e síndrome urêmica, mas não é um critério utilizado para definir o estágio da doença renal.\n\nA terceira afirmativa é falsa. Pacientes classificados no estágio 3A (TFG entre 45-59 mL/min) com albuminúria normal ou leve (A1) são considerados de baixo risco de progressão para perda total da função renal. De acordo com as diretrizes do Ministério da Saúde e da Sociedade Brasileira de Nefrologia, esses pacientes devem ser acompanhados e manejados pela própria equipe de Atenção Primária na UBS. O encaminhamento ao nefrologista é geralmente reservado para pacientes em estágios mais avançados (estágios 4 e 5), albuminúria grave (A3), progressão rápida da perda de função renal ou casos de difícil controle clínico.\n\nA quarta afirmativa é verdadeira. A Atenção Primária à Saúde é a coordenadora do cuidado e tem como uma de suas atribuições fundamentais a promoção da saúde e a prevenção de doenças. Como a hipertensão e o diabetes são as principais causas de insuficiência renal crônica no Brasil, o papel da UBS em prevenir esses agravos e realizar o diagnóstico precoce é essencial para reduzir a carga da doença na população.\n\nPortanto, a sequência correta é V - F - F - V, o que corresponde à alternativa C.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  },
+  {
+    "id": "AJUDA_eaf1e808-fcb4-4f2c-b9c5-435346614fa5",
+    "originalId": "eaf1e808-fcb4-4f2c-b9c5-435346614fa5",
+    "statement": "Gestante, fim do oitavo mês, chega chocada ao Setor de Emergência. Exame físico: pulso fino; FC = 140bpm; mucosas descoradas; pelo método não invasivo, não se conseguiu aferir a PAS. Segundo familiares, estava com sangramento genital há cerca de 10 dias, inicialmente leve, mas de intensidade crescente. Acamada desde o dia anterior, desmaiou ao se levantar pela manhã. Foi diagnosticada anemia aguda por hemorragia em decorrência de descolamento prematuro de placenta. Faleceu em seguida à cesariana, quando o feto foi retirado já morto, pesando 2.800 gramas. Pode-se afirmar que as causas básicas do óbito materno e do óbito fetal foram:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hemorragia genital materna para o óbito materno e a anóxia intrauterina para o óbito fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hemorragia genital materna para o óbito materno e o fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "descolamento prematuro de placenta para o óbito materno e o fetal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "descolamento prematuro de placenta para o óbito materno e a anóxia intrauterina para o óbito fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para identificar a causa básica do óbito, tanto materno quanto fetal, é necessário aplicar os conceitos de preenchimento da Declaração de Óbito estabelecidos pela Organização Mundial da Saúde. A causa básica é definida como a doença ou lesão que iniciou a cadeia de eventos patológicos que conduziram diretamente à morte.\n\nNo caso clínico apresentado, a paciente sofreu um Descolamento Prematuro de Placenta (DPP). Este evento foi o ponto de partida que desencadeou todas as complicações subsequentes: a hemorragia genital e o choque hipovolêmico na mãe, bem como a interrupção do aporte de oxigênio (anóxia) para o feto.\n\nAlternativa a: Incorreta. A hemorragia genital materna e a anóxia intrauterina são consideradas causas terminais ou imediatas, ou seja, são os mecanismos fisiopatológicos pelos quais a morte ocorreu. Elas são consequências do evento primário, que foi o descolamento da placenta.\n\nAlternativa b: Incorreta. Assim como na alternativa anterior, a hemorragia é uma manifestação decorrente da patologia principal. Além disso, embora a hemorragia materna impacte o feto, o termo técnico para o evento iniciador no feto, neste contexto, também remete ao problema placentário.\n\nAlternativa c: Correta. O Descolamento Prematuro de Placenta é a patologia inicial que desencadeou o sangramento materno progressivo, o choque e a morte da gestante. Simultaneamente, esse mesmo descolamento impediu a troca gasosa adequada para o feto, levando ao seu óbito. Portanto, o DPP é a causa básica para ambos os óbitos.\n\nAlternativa d: Incorreta. Esta alternativa mistura a causa básica (DPP) para o óbito materno com a causa imediata/mecanismo (anóxia) para o óbito fetal. Para fins de estatística epidemiológica e preenchimento correto de documentos médicos, deve-se priorizar a causa básica em ambos os casos, que é o descolamento prematuro de placenta.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Sagramento da Segunda Metade",
+      "Restrição de Crescimento Fetal e Óbito Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  },
+  {
+    "id": "AJUDA_eaf750fe-a9f8-4405-b99d-37adc2739fde",
+    "originalId": "eaf750fe-a9f8-4405-b99d-37adc2739fde",
+    "statement": "Uma mulher de 48 anos, com obesidade, é encaminhada ao ambulatório de clínica médica com queixa de cansaço. Refere início do quadro há cerca de um mês, com fadiga, irritabilidade, intolerância ao calor e tremor de extremidades, além de episódios recorrentes de palpitação e dor retroesternal. Um eletrocardiograma revela apenas taquicardia sinusal. Exames laboratoriais evidenciam TSH suprimido e T4 livre elevado. O exame físico da tireoide é normal. Foi realizada cintilografia de tireoide, que evidenciou hipocaptação do radionuclídeo em toda a glândula. A causa mais provável do quadro descrito é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tireotoxicose factícia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "doença de Graves",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tumor hipofisário",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "adenoma tóxico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso apresenta uma paciente com sinais e sintomas clássicos de tireotoxicose: taquicardia, tremores, intolerância ao calor, irritabilidade e palpitações. Os exames laboratoriais confirmam o estado de excesso de hormônios tireoidianos (TSH suprimido e T4 livre elevado). O ponto crucial para a resolução desta questão reside na combinação de dois achados: o exame físico da tireoide normal (ausência de bócio ou nódulos) e a cintilografia com hipocaptação (baixa captação do radionuclídeo).\n\nDiferencial de Tireotoxicose com Baixa Captação na Cintilografia:\nQuando a tireoide não capta o marcador, significa que ela não está produzindo hormônio ativamente. Isso ocorre basicamente em três situações: tireoidites (inflamação com liberação de hormônio estocado), uso de substâncias ricas em iodo (fenômeno Jod-Basedow) ou ingestão de hormônio tireoidiano exógeno (tireotoxicose factícia).\n\nANÁLISE DAS ALTERNATIVAS\n\na) Tireotoxicose factícia (Correta):\nEsta condição ocorre pela ingestão inadvertida ou proposital (muitas vezes para perda de peso, o que corrobora com o perfil de obesidade da paciente) de hormônios tireoidianos. O excesso de hormônio circulante faz um feedback negativo na hipófise, suprimindo o TSH. Sem o estímulo do TSH, a glândula tireoide da paciente para de trabalhar, o que explica o exame físico normal e a baixíssima captação na cintilografia. Outro marcador útil, embora não citado, seria a tireoglobulina baixa.\n\nb) Doença de Graves (Incorreta):\nA Doença de Graves é a causa mais comum de hipertireoidismo primário e decorre da ação de anticorpos que estimulam o receptor de TSH. Caracteriza-se por bócio difuso ao exame físico e, fundamentalmente, por uma hipercaptação difusa do radionuclídeo na cintilografia, o oposto do que foi descrito no caso.\n\nc) Tumor hipofisário (Incorreta):\nUm adenoma hipofisário produtor de TSH (TSHoma) causaria um hipertireoidismo secundário. Nesse caso, o TSH estaria elevado ou inapropriadamente normal, e não suprimido. Além disso, a tireoide apresentaria captação aumentada na cintilografia devido ao estímulo excessivo do TSH.\n\nd) Adenoma tóxico (Incorreta):\nTambém conhecido como Doença de Plummer, caracteriza-se pela presença de um nódulo autônomo que produz hormônio em excesso. No exame físico, seria palpável um nódulo tireoidiano. Na cintilografia, observaríamos uma área de hipercaptação focal (nódulo quente) com o restante da glândula suprimido, o que diverge da hipocaptação total relatada.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  },
+  {
+    "id": "AJUDA_eb0f758f-c3c9-4690-9d18-a8509dacacd7",
+    "originalId": "eb0f758f-c3c9-4690-9d18-a8509dacacd7",
+    "statement": "Um homem de 42 anos, previamente saudável, apresenta dor lombar esquerda súbita, intensa, em cólica, irradiada para fossa ilíaca, associada a náuseas e vômitos. Nega febre. Ao exame, está taquicárdico (FC 104 bpm), PA 135×80 mmHg, afebril, sem sinais de irritação peritoneal. Seus exames iniciais revelam hematúria +++, sem nitrito, sem leucocitúria importante no EAS, creatinina: 1,0 mg/dL e PCR normal. Foi submetido a ultrassom realizado na emergência que evidencia discreta hidronefrose esquerda, cálculo hiperecogênico no ureter proximal, sem sinais de obstrução grave ou complicação. A equipe cogita solicitar tomografia e questiona se é necessário ampliar a investigação laboratorial antes de definir a conduta. Sobre o caso descrito, qual deve ser o próximo passo na condução do caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar PCR seriada e hemoculturas para afastar pielonefrite oculta antes de definir conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar TC helicoidal sem contraste para confirmação diagnóstica e mensuração precisa do cálculo, pois é o exame de escolha após ultrassom inicial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar tamsulosina imediatamente e programar litotripsia extracorpórea (SWL) como tratamento definitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Optar por observação expectante com analgesia, já que cálculos ureterais proximais geralmente têm alta taxa de eliminação espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um homem de 42 anos com quadro típico de cólica nefrética aguda (dor lombar súbita, em cólica, irradiada para a região inguinal, acompanhada de náuseas e vômitos). Os exames físico e laboratorial iniciais afastam complicações imediatas graves, como insuficiência renal (creatinina normal) ou infecção sistêmica (ausência de febre, PCR normal e EAS sem sinais de infecção). O ultrassom de emergência confirmou a presença de um cálculo no ureter proximal, mas este exame possui limitações para o planejamento terapêutico definitivo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Não há indicação de solicitar hemoculturas ou PCR seriada neste momento. O paciente está afebril, hemodinamicamente estável e possui exames de triagem inflamatória (PCR) e urinária (EAS) normais para processo infeccioso. A conduta para afastar \"pielonefrite oculta\" em um paciente assintomático para infecção não faz parte do protocolo de cólica renal.\n\nAlternativa b: Correta. A tomografia computadorizada (TC) helicoidal sem contraste de abdome e pelve é o padrão-ouro (*gold standard*) para a avaliação de urolitíase na urgência. Embora o ultrassom tenha sugerido o cálculo, a TC é necessária para determinar com precisão o tamanho do cálculo (em milímetros), sua localização exata e sua densidade (unidades Hounsfield). Essas informações são cruciais para decidir entre o tratamento conservador (observação) ou a intervenção cirúrgica, pois o ultrassom frequentemente subestima ou superestima o tamanho do cálculo ureteral.\n\nAlternativa c: Incorreta. A conduta é prematura. A indicação de litotripsia extracorpórea por ondas de choque (LECO/SWL) ou qualquer outro procedimento intervencionista depende do tamanho e da densidade do cálculo, dados que o ultrassom não fornece com precisão. Além disso, a tansulosina (terapia expulsiva médica) tem sua maior eficácia comprovada em cálculos do ureter distal, e não necessariamente no proximal.\n\nAlternativa d: Incorreta. A taxa de eliminação espontânea de cálculos ureterais depende fundamentalmente do tamanho e da localização. Cálculos no ureter proximal têm taxas de eliminação espontânea significativamente menores do que cálculos no ureter distal. Sem a mensuração precisa por meio da tomografia, não é seguro optar apenas pela observação expectante, especialmente em cálculos localizados na porção superior do ureter.\n\nEm resumo, após a estabilização da dor e triagem inicial com ultrassom, a tomografia sem contraste é o próximo passo necessário para estratificar o risco e definir o melhor tratamento para o paciente.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  },
+  {
+    "id": "AJUDA_eb1099ad-a4e8-4b33-8867-37592b0bca62",
+    "originalId": "eb1099ad-a4e8-4b33-8867-37592b0bca62",
+    "statement": "Um homem de 70 anos, hipertenso e ex-tabagista, foi submetido a uma ressecção transuretral da próstata (RTU) devido a hiperplasia prostática benigna. No segundo dia de pós-operatório, começa a apresentar confusão mental com alternância entre períodos de agitação e sonolência. A avaliação inicial revela pressão arterial de 85/50 mmHg, frequência cardíaca de 120 bpm, e frequência respiratória de 28 irpm. A temperatura é de 39°C e a diurese foi de apenas 150 mL nas últimas 12 horas. O exame físico mostra sensibilidade suprapúbica e saída de urina turva pelo cateter vesical. Os exames laboratoriais indicam leucocitose de 17.000/mm³, creatinina de 2,4 mg/dL (basal 1,4 mg/dL) e lactato de 3,8 mmol/L. Com base no quadro clínico, qual é a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trocar o cateter vesical e observar a evolução clínica antes de acionar a Nefrologia para avaliação de terapia renal substitutiva (hemodiálise).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar reposição volêmica agressiva com cristaloides, coletar culturas e iniciar antibiótico empírico de amplo espectro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar diurético intravenoso para aumentar a diurese e evitar sobrecarga hídrica, visto que paciente é idoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar sedação contínua e ventilação mecânica preventiva para controle da agitação, para minimizar risco de broncoaspiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO paciente apresenta um quadro clássico de choque séptico com foco urinário (urossepse) no segundo dia de pós-operatório de uma ressecção transuretral da próstata (RTU). Os critérios diagnósticos de sepse e choque são evidentes: presença de infecção sugerida (cirurgia urológica recente, urina turva, febre e dor suprapúbica) associada a disfunções orgânicas agudas. As disfunções observadas são: alteração do nível de consciência (confusão mental/agitação), hipotensão (85/50 mmHg), disfunção renal (oligúria e aumento da creatinina acima de 0,3 mg/dL em relação ao valor basal) e hiperlactatemia (lactato de 3,8 mmol/L, indicando hipoperfusão tecidual).\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. Embora a manutenção de um cateter vesical pérvio seja importante no pós-operatório urológico, apenas trocar o cateter e observar é uma conduta passiva e inadequada para um paciente em estado crítico. A prioridade é a estabilização hemodinâmica e o tratamento da infecção. A avaliação da Nefrologia para hemodiálise não é a conduta inicial, pois a insuficiência renal é, neste momento, provavelmente de origem pré-renal devido ao choque.\n\nAlternativa b) Correta. Esta alternativa segue o protocolo de manejo inicial da sepse (pacote da primeira hora). Em pacientes com hipotensão e lactato elevado, deve-se iniciar a ressuscitação volêmica imediata com cristaloides (geralmente 30 mL/kg). Simultaneamente, é crucial coletar culturas (hemoculturas e urocultura) e iniciar a antibioticoterapia de amplo espectro o mais rápido possível para controlar o foco infeccioso, que é a causa primária do quadro.\n\nAlternativa c) Incorreta. O uso de diuréticos em um paciente com hipotensão arterial e sinais de choque é perigoso e contraindicado. A baixa diurese (oligúria) é uma resposta do organismo à baixa perfusão renal causada pela queda da pressão e pela sepse. Administrar diuréticos neste cenário reduziria ainda mais o volume intravascular, agravando o choque e a lesão renal aguda.\n\nAlternativa d) Incorreta. A sedação e a ventilação mecânica podem se tornar necessárias se o paciente evoluir com insuficiência respiratória ou se a agitação impedir o tratamento, mas não são a conduta inicial para o quadro de choque. Além disso, muitos fármacos sedativos podem causar vasodilatação e piorar drasticamente a hipotensão de um paciente que ainda não foi devidamente reanimado com fluidos.\n\nGabarito: Alternativa (b).",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Sepse",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  },
+  {
+    "id": "AJUDA_eb1683a6-c286-4a92-a51b-8bcaddc4c0be",
+    "originalId": "eb1683a6-c286-4a92-a51b-8bcaddc4c0be",
+    "statement": "Mulher, 42 anos de idade, foi encaminhada ao ambulatório de clínica médica para investigação de hipercalcemia. Está assintomática no momento e sem alterações ao exame físico. Apresenta os seguintes exames laboratoriais:\n\n- Cálcio Sérico: 11,0 mg/dL (Valor Normal: 8,5-10,5 mg/dL)\n- Fósforo: 3,0 mg/dL (Valor Normal: 2,5-4,5 mg/dL)\n- Albumina: 4,0 g/dL (Valor Normal: 3,5-5,0 g/dL)\n- Vitamina D: 27 ng/mL (Valor Normal: 20-50 ng/mL)\n- PTH (Hormônio Paratireoide): 96 pg/mL (Valor Normal: 10-65 pg/mL)\n- Excreção Urinária de Cálcio: 256 mg/dia (Valor Normal: 100-300 mg/dia)\n\nA etiologia mais provável do quadro de hipercalcemia apresentado pela paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipercalcemia da malignidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença granulomatosa crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hiperparatireoidismo primário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipercalcemia hipocalciúrica familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hiperparatireoidismo secundário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos seguir um raciocínio clínico baseado na fisiologia do metabolismo do cálcio. O ponto de partida é a identificação de uma hipercalcemia (11,0 mg/dL) associada a um PTH elevado (96 pg/mL). Em situações normais, o aumento do cálcio deveria inibir a secreção de PTH. Se o PTH está alto na presença de cálcio alto, estamos diante de uma hipercalcemia PTH-dependente.\n\nAnálise das alternativas:\n\na) Incorreta. Na hipercalcemia da malignidade (seja por metástases ósseas ou pela produção de proteína relacionada ao PTH — PTHrP), o PTH endógeno estará suprimido (níveis muito baixos), pois a glândula paratireoide responde ao excesso de cálcio interrompendo sua produção. Além disso, o cálcio costuma ser muito mais elevado e a paciente apresenta-se sintomática.\n\nb) Incorreta. Doenças granulomatosas (como sarcoidose ou tuberculose) causam hipercalcemia através da produção excessiva de vitamina D ativa (1,25-di-hidroxivitamina D) pelos macrófagos nos granulomas. Esse excesso de vitamina D aumenta a absorção intestinal de cálcio, o que, por sua vez, suprime a secreção de PTH.\n\nc) Correta. O hiperparatireoidismo primário (HPP) é a causa mais comum de hipercalcemia em pacientes ambulatoriais e assintomáticos. Caracteriza-se pela secreção autônoma de PTH (geralmente por um adenoma de paratireoide). Os exames mostram cálcio elevado e PTH elevado (ou inadequadamente normal). A excreção urinária de cálcio de 256 mg/dia (normal/alta) confirma o diagnóstico, demonstrando que o rim está filtrando e eliminando o excesso de cálcio.\n\nd) Incorreta. A hipercalcemia hipocalciúrica familiar (HHF) também apresenta cálcio elevado e PTH elevado/normal, assemelhando-se muito ao HPP. No entanto, a característica definidora da HHF é a baixa excreção de cálcio na urina (hipocalciúria), geralmente menor que 100 mg/dia ou uma fração de excreção de cálcio menor que 0,01. O valor de 256 mg/dia apresentado pela paciente exclui essa hipótese.\n\ne) Incorreta. O hiperparatireoidismo secundário ocorre como uma resposta compensatória a estados de hipocalcemia (comumente por deficiência grave de vitamina D ou doença renal crônica). Nele, o PTH está alto, mas o cálcio sérico está baixo ou no limite inferior da normalidade. No caso da questão, a paciente apresenta hipercalcemia, o que invalida essa alternativa.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  },
+  {
+    "id": "AJUDA_eb193b7a-4a2a-432d-b7ef-721db9a12552",
+    "originalId": "eb193b7a-4a2a-432d-b7ef-721db9a12552",
+    "statement": "Juliana, 30 anos, chega a um atendimento na Unidade Básica de Saúde para uma consulta de encaixe, referindo dores de cabeça há dois dias que se iniciaram ao realizar atividade física intensa. Trata-se de dor pulsátil, unilateral, sem irradiação. Vomitou três vezes e chegou a desmaiar. Conta que já teve sintomas semelhantes no período pré-menstrual, associados a náusea e fotofobia. Não houve melhora do quadro com uso de paracetamol e a paciente tem um trabalho muito importante à tarde, por isso resolveu buscar atendimento. Durante o exame físico, conta que é a pior dor de cabeça que já teve na vida. O exame apresenta PA155x90, rigidez de nuca e refere turvação da visão. Exame neurológico normal. Qual seria o melhor plano terapêutico nesse caso e por qual motivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Medicar com analgésicos mais potentes para que ela se recupere rápido e possa realizar sua atividade importante no trabalho, já que essa é a principal demanda da paciente, e deixar um retorno marcado para reavaliação e melhor manejo da enxaqueca;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Medicar com topiramato e encaminhar ao neurologista via ambulatorial, uma vez que se trata de uma enxaqueca de difícil controle;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para o serviço de urgência e emergência, uma vez que ela possui sinais de alarme para cefaleia secundária;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Acolher a paciente, entender como estão suas demandas e pressões no trabalho e propor um tratamento de manutenção para enxaqueca, além de avaliar sinais de depressão e ansiedade que possam estar contribuindo com os sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo clínico de cefaleias na Atenção Primária e a identificação de sinais de alerta (*red flags*) que indicam a necessidade de investigação urgente para afastar causas secundárias graves.\n\nAnálise do quadro clínico:\nEmbora a paciente tenha um histórico sugestivo de enxaqueca (dor pulsátil, unilateral, com náuseas e fotofobia no período pré-menstrual), a apresentação atual traz elementos de gravidade que mudam completamente a conduta:\n1. Início durante atividade física intensa.\n2. Descrição como \"a pior dor de cabeça da vida\" (cefaleia em trovoada ou *thunderclap*).\n3. Ocorrência de desmaio (síncope).\n4. Presença de rigidez de nuca ao exame físico (sinal meníngeo).\n5. Turvação visual.\n\nEsses achados são sinais clássicos de alerta (critérios SNOOP) e levantam a principal suspeita diagnóstica de Hemorragia Subaracnoide (HSA), uma emergência neurológica com alta morbimortalidade. Mesmo com o exame neurológico focal normal, a presença de rigidez de nuca e a intensidade da dor exigem avaliação imediata em ambiente hospitalar com tomografia de crânio e, se necessário, coleta de líquor.\n\nExplicação das alternativas:\n\nAlternativa (a) Incorreta. Priorizar a demanda administrativa/laboral da paciente em detrimento de sinais clínicos de gravidade é um erro grave de conduta. Medicar e liberar a paciente sem investigar a causa secundária coloca sua vida em risco, uma vez que analgésicos podem mascarar temporariamente os sintomas de uma hemorragia intracraniana.\n\nAlternativa (b) Incorreta. O topiramato é uma medicação para profilaxia (prevenção) de enxaqueca e não deve ser iniciado em um quadro agudo com sinais de alarme. O encaminhamento ambulatorial é inadequado, pois a paciente necessita de propedêutica de urgência.\n\nAlternativa (c) Correta. Diante de sinais de alarme como início súbito ao esforço, rigidez de nuca, síncope e a descrição de \"pior dor da vida\", a conduta imediata é o encaminhamento para um serviço de urgência e emergência para realização de exames de imagem e estabilização, visando excluir principalmente a Hemorragia Subaracnoide.\n\nAlternativa (d) Incorreta. Embora o acolhimento e a avaliação psicossocial sejam pilares da Atenção Primária, eles não devem postergar o manejo de uma condição potencialmente fatal. Atribuir sintomas neurológicos agudos e sinais meníngeos apenas a pressões no trabalho ou transtornos de ansiedade é um equívoco diagnóstico perigoso neste contexto.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  },
+  {
+    "id": "AJUDA_eb1ab2ca-5b3f-44d2-b10c-598ebd8b0ba5",
+    "originalId": "eb1ab2ca-5b3f-44d2-b10c-598ebd8b0ba5",
+    "statement": "Paciente de 43 anos comparece à urgência com relato de dor abdominal em hipocôndrio direito, pele amarelada e náuseas há 5 dias. Nega febre ou perda de peso. Refere colecistectomia videolaparoscópica há 3 anos. Exames evidenciam leucograma, enzimas hepáticas e amilase sem alterações; bilirrubinas elevadas às custas de fração direta e enzimas canaliculares elevadas. Frente à principal hipótese diagnóstica do quadro acima, podemos afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "devido à colecistectomia prévia, não podemos realizar CPRE nesse paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "devemos solicitar colangiorressonância como principal exame diagnóstico para esse paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "doenças hemolíticas são a principal etiologia do quadro clínico descrito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o início imediato de antibioticoterapia endovenosa está indicado, devido à presença de icterícia obstrutiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta uma síndrome ictérica de padrão obstrutivo (colestático), caracterizada por bilirrubina direta elevada e aumento das enzimas canaliculares (fosfatase alcalina e GGT), associada à dor em hipocôndrio direito. A ausência de febre e o leucograma normal afastam, no momento, um processo infeccioso agudo como colangite. A ausência de perda de peso e o início agudo sugerem uma etiologia benigna, sendo a principal hipótese diagnóstica a coledocolitíase (cálculo no colédoco), que pode ser residual ou formada primariamente no ducto após a colecistectomia realizada há 3 anos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A colecistectomia prévia não é contraindicação para a realização de CPRE (Colangiopancreatografia Retrógrada Endoscópica). Pelo contrário, a CPRE é frequentemente utilizada nesses pacientes tanto para o diagnóstico definitivo quanto para o tratamento (retirada do cálculo e papilotomia).\n\nAlternativa b) Correta. A colangiorressonância é considerada um excelente exame para o diagnóstico de coledocolitíase por ser um método não invasivo e possuir alta sensibilidade e especificidade (superior a 90%). Como o paciente não apresenta sinais de gravidade ou indicação imediata de intervenção terapêutica por CPRE (como colangite grave), a colangiorressonância é o exame de escolha para confirmar a obstrução e sua causa.\n\nAlternativa c) Incorreta. As doenças hemolíticas cursam com anemia e hiperbilirrubinemia às custas da fração indireta (não conjugada), pois há excesso de produção de bilirrubina antes da sua conjugação hepática. O caso descrito apresenta elevação da fração direta e de enzimas de colestase, o que indica uma obstrução ao fluxo biliar após o fígado.\n\nAlternativa d) Incorreta. A antibioticoterapia imediata é indicada nos casos de colangite aguda, em que há evidência de infecção das vias biliares. O paciente em questão está afebril e possui leucograma normal, não preenchendo critérios clínicos ou laboratoriais para o início de antibióticos neste momento. O foco inicial deve ser o diagnóstico da causa da obstrução.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:04.204Z"
+  }
+]

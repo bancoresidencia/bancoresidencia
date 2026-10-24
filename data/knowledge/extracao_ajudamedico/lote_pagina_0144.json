@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_27ba96d8-a62d-4a16-ad7b-df750ed2d003",
+    "originalId": "27ba96d8-a62d-4a16-ad7b-df750ed2d003",
+    "statement": "Paciente Masculino, 63 anos, diabético e hipertenso, submetido à colectomia esquerda eletiva (neoplasia de colon esquerdo). Devido à hemorragia acidental, a perda sanguínea estimada foi de 2300ml e o tempo cirúrgico se estendeu por 6 horas. Admitido em UTI para cuidados pós operatórios sob analgossedação, ventilação mecânica invasiva e uso de noradrenalina 0,3 mcg/kg/min. Cateter venoso central em veia jugular interna direita, linha arterial em artéria radial direita, mantido com colostomia e dreno de vigilância abdominal. Os dados hemodinâmicos referentes ás 4 primeiras horas em UTI estão representados abaixo. Qual seria a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Otimização de vasopressor, introdução de inotrópico, contactar cirurgião para avaliar reabordagem cirúrgica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Expansão volêmica com solução cristaloide, iniciar furosemida endovenosa para estímulo diurético e controle de glicemia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Expansão volêmica com solução cristaloide, avaliar necessidade de transfusão de hemocomponentes e otimização de vasopressor",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Expansão volêmica com solução coloide, avaliar necessidade transfusão de hemocomponentes e solicitar a presença do cirurgião",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um paciente em choque hemorrágico/hipovolêmico progressivo após uma perda sanguínea maciça de 2.300 ml em cirurgia de grande porte. A análise dos dados hemodinâmicos na tabela permite observar a deterioração do estado do paciente entre a admissão e a 4ª hora na UTI.\n\nAnálise dos Parâmetros Hemodinâmicos:\n\nFrequência Cardíaca (FC): Aumentou de 85 para 125 bpm, indicando uma tentativa compensatória de manter o débito cardíaco diante da queda do volume sistólico.\n\nPressão Arterial (PA): Houve queda progressiva (de 120/70 para 100/55 mmHg), mostrando que os mecanismos de compensação estão falhando.\n\nPressão Venosa Central (PVC): Caiu de 12 para 4 mmHg. A PVC baixa é um marcador clássico de hipovolemia (redução da pré-carga).\n\nDiurese: Reduziu de 0,5 para 0,2 ml/kg/h. Esta oligúria é pré-renal, refletindo a má perfusão dos rins devido ao choque.\n\nSaturação Venosa Central (ScvO2): Caiu de 79% para 58%. O valor normal é superior a 70%. Uma ScvO2 baixa indica que os tecidos estão extraindo mais oxigênio porque a oferta (DO2) está insuficiente.\n\nDelta CO2 (P(v-a)CO2): Aumentou de 6 para 10 mmHg. Valores acima de 6 mmHg indicam um estado de baixo fluxo ou baixo débito cardíaco, o que, neste contexto, é causado pela falta de volume.\n\nAnálise das Alternativas:\n\nAlternativa a: Incorreta. O uso de inotrópicos (como dobutamina) é indicado quando há disfunção contrátil do coração com volume adequado. No caso, o problema principal é a falta de volume (PVC de 4 mmHg). Aumentar a contratilidade sem corrigir a volemia não resolveria o choque.\n\nAlternativa b: Incorreta. O uso de furosemida em um paciente chocado e hipovolêmico é contraindicado, pois agravaria a desidratação intravascular e a hipotensão. A glicemia deve ser controlada, mas não é a prioridade imediata diante de um choque hemorrágico.\n\nAlternativa c: Correta. Esta é a conduta padrão. A expansão com cristaloides visa restaurar o volume intravascular (pré-carga). Como houve perda de 2,3 litros de sangue e a ScvO2 está baixa, a avaliação de transfusão de hemocomponentes é fundamental para melhorar a capacidade de transporte de oxigênio. A otimização do vasopressor (noradrenalina) ajuda a manter a pressão de perfusão enquanto o volume é reposto.\n\nAlternativa d: Incorreta. Embora a reposição volêmica seja necessária, os cristaloides são preferíveis aos coloides (como albuminas ou amidos) na ressuscitação inicial na maioria dos protocolos, devido ao perfil de segurança e custo. Além disso, a otimização hemodinâmica à beira-leito é mais urgente no momento do que apenas solicitar a presença do cirurgião.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Ventilação Mecânica",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/d3984eafc1f36cf3216c2556dbd5b50d7acb36d752d5bb73ebe389d860342b48.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_27ba96d8-a62d-4a16-ad7b-df750ed2d003_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.144Z"
+  },
+  {
+    "id": "AJUDA_27c21bd2-97b7-41cc-904a-a51ef117ffe9",
+    "originalId": "27c21bd2-97b7-41cc-904a-a51ef117ffe9",
+    "statement": "G.M.V., 37 anos, GIII PII 1C1N A0, IG 17 semanas, sem ultrassonografia prévia, deu entrada em PSO com quadro de sangramento vaginal escuro, em moderada quantidade, além de vômitos incoercíveis, taquicardia e fraqueza muscular. Ao exame físico: AU 20 cm; BCF inaudível; PA 170 x 90 mmHg, TV bimanual: colo amolecido, impérvio. Abdome: DB negativo. Paciente nega comorbidades.\nDe acordo com o caso clínico apresentado, assinale a alternativa que representa o diagnóstico e a complicação mais prováveis.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prenhez ectópica íntegra; síndrome hipertensiva gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aborto incompleto; hipertensão transitória da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aborto completo; hipertireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ameaça de aborto; hipotireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Mola hidatiforme completa; doença hipertensiva específica da gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO quadro clínico de G.M.V. apresenta elementos clássicos que direcionam para o diagnóstico de Doença Trofoblástica Gestacional, especificamente a Mola Hidatiforme Completa. Os principais achados são:\n\n1. Discrepância entre Altura Uterina e Idade Gestacional: A paciente tem 17 semanas de gestação, mas o útero mede 20 cm. O útero maior que o esperado para a idade gestacional é um sinal clássico de mola, devido à proliferação trofoblástica e à presença de coágulos.\n2. Sangramento vaginal escuro: Frequentemente descrito como \"em suco de ameixa\", é típico desta patologia.\n3. Vômitos incoercíveis: Ocorrem devido aos níveis extremamente elevados de beta-hCG, que superestimulam o centro do vômito.\n4. Hipertensão arterial precoce: O surgimento de pré-eclâmpsia (DHEG) antes das 20 semanas de gestação é um sinal patognomônico de mola hidatiforme. Em gestações normais, a hipertensão específica da gravidez só surge após a 20ª semana.\n5. BCF inaudível: Na mola completa, não há formação de tecido fetal ou anexos, justificando a ausência de batimentos.\n6. Taquicardia e fraqueza: Podem indicar tireotoxicose (hipertireoidismo secundário), já que a subunidade alfa do hCG é idêntica à do TSH, podendo estimular a tireoide.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A prenhez ectópica íntegra geralmente apresenta-se com atraso menstrual, dor pélvica e útero vazio ou menor que o esperado. Não justifica uma altura uterina de 20 cm nem o quadro de hipertensão severa.\n\nb) Incorreta. No abortamento incompleto, o colo uterino encontra-se aberto (pérvio) ao exame físico, e a altura uterina costuma ser menor do que a esperada para a idade gestacional, pois parte do conteúdo já foi expelido. Além disso, não há associação direta com hipertensão precoce.\n\nc) Incorreta. No abortamento completo, o útero já se encontra vazio, contraído e de tamanho reduzido, com o colo fechado e cessação ou diminuição importante do sangramento. O hipertireoidismo é uma complicação possível da mola, mas o diagnóstico de aborto não se sustenta.\n\nd) Incorreta. Na ameaça de abortamento, há sangramento vaginal com colo do útero fechado, porém a altura uterina é condizente com a idade gestacional e, obrigatoriamente, o feto está vivo (BCF presente). O hipotireoidismo não explicaria a taquicardia nem os outros sintomas agudos.\n\ne) Correta. A alternativa correlaciona perfeitamente os achados clínicos. A mola hidatiforme completa explica o crescimento uterino exagerado, os vômitos (pelo hCG alto) e o sangramento. A complicação apresentada (hipertensão arterial 170x90 mmHg antes das 20 semanas) define o diagnóstico de doença hipertensiva específica da gestação associada ao quadro molar.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.144Z"
+  },
+  {
+    "id": "AJUDA_27c34f54-fd22-40fe-8d8d-a3c24fff5262",
+    "originalId": "27c34f54-fd22-40fe-8d8d-a3c24fff5262",
+    "statement": "Mulher, de 27 anos de idade, comparece à Unidade Básica de Saúde para “fazer o preventivo”. Ela está assintomática, nunca teve sangramento vaginal anormal nem sangramento pós-coito e não está grávida. Relata vida sexual ativa desde os 17 anos de idade e nunca fez rastreamento para câncer do colo do útero.\n\nQual é a conduta adequada, segundo a diretriz do Ministério da Saúde de 2025?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar teste primário de DNA-HPV oncogênico agora e, se negativo, repetir em 5 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Coletar citologia oncótica (Papanicolau) anual, pois ela iniciou vida sexual há mais de 10 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar co-teste (citologia + DNA-HPV simultâneos) e repetir em 12 meses, se ambos vierem negativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adiar qualquer rastreamento até os 35 anos, pois abaixo dessa idade o risco de desenvolver câncer de colo de útero é irrelevante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DO PROFESSOR\n\nEsta questão aborda a importante atualização nas Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, publicada pelo Ministério da Saúde em 2024 para implementação em 2025. A principal mudança é a transição do modelo baseado exclusivamente na citologia oncótica (Papanicolaou) para o rastreamento primário baseado em testes moleculares de DNA-HPV.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Conforme as novas diretrizes de 2025, o método de escolha para o rastreamento em mulheres de 25 a 64 anos passa a ser o teste de DNA-HPV para tipos oncogênicos (alto risco). Devido à alta sensibilidade e ao elevado valor preditivo negativo desse teste, o intervalo recomendado entre os exames, caso o resultado seja negativo, é de 5 anos. Como a paciente tem 27 anos e nunca realizou rastreio, ela deve iniciar o processo imediatamente, seguindo este novo protocolo.\n\nAlternativa B (Incorreta): Esta alternativa reflete o modelo de rastreio antigo e ultrapassado. Mesmo nas diretrizes anteriores, a citologia era realizada anualmente apenas nos dois primeiros exames e, se normais, o intervalo passava a ser de 3 anos. Além disso, o tempo de início da vida sexual (10 anos, no caso da paciente) não é o critério utilizado para definir a periodicidade do rastreamento.\n\nAlternativa C (Incorreta): O coteste (realização simultânea de citologia e teste de HPV) é adotado em alguns protocolos internacionais, mas não é a recomendação do Ministério da Saúde para o rastreio populacional no Brasil em 2025. A estratégia nacional foca no teste de DNA-HPV como rastreio primário único; a citologia é utilizada apenas como uma etapa de triagem para as pacientes que testarem positivo para o HPV.\n\nAlternativa D (Incorreta): O início do rastreamento no Brasil é mantido aos 25 anos para mulheres que já iniciaram a vida sexual. Adiar o rastreio até os 35 anos aumentaria o risco de não detectar lesões precursoras de alto grau em tempo hábil, visto que o câncer do colo do útero é uma neoplasia com pico de incidência em idades produtivas e o processo de carcinogênese leva anos para se desenvolver.\n\nGabarito: Letra A.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.144Z"
+  },
+  {
+    "id": "AJUDA_27d03905-6ef6-4358-b365-8122352bccc5",
+    "originalId": "27d03905-6ef6-4358-b365-8122352bccc5",
+    "statement": "Mulher, 63 anos de idade, comparece ao ambulatório para consulta de rotina. No momento, está assintomática e relata estar urinando normalmente. Não teve nenhuma intercorrência no período. Tem história de hipertensão arterial sistêmica, diabetes mellitus tipo 2, e doença renal crônica estágio IIIb, estando em uso de enalapril 20 mg duas vezes por dia, anlodipino 10 mg/dia, hidroclorotiazida 25 mg/dia e espironolactona 25 mg/dia. Ao exame, apresenta FC: 66 bpm e PA: 138 x 86 mmHg. Tem crepitos discretos em bases de ambos os hemotóraces e discreto edema perimaleolar. Sem sinais de edema ou outras alterações ao exame físico dos demais aparelhos e sistemas. Os exames laboratoriais realizados há dois dias seguem abaixo. Foi solicitado um eletrocardiograma que pode ser visto na imagem a seguir. Além de orientar restrição de fósforo, potássio e sódio na dieta, outra conduta a ser adotada para o manejo crônico das comorbidades apresentadas pelo paciente é iniciar \n- Saturação de Transferrina: 32% (Normal: 20%-50%)\n- Ferritina: 582 ng/mL (Normal: 30-300 ng/mL)\n- Creatinina: 1,4 mg/dL (Normal: 0,6-1,1 mg/dL)\n- Taxa de Filtração Glomerular (eGFR): 42 mL/min./1,73 m² (Normal: > 60 mL/min./1,73 m²)\n- Ureia: 68 mg/dL (Normal: 10-38 mg/dL)\n- Potássio: 5,9 mEq/L (Normal: 3,5-5,0 mEq/L)\n- Sódio: 132 mEq/L (Normal: 135-145 mEq/L)\n- Bicarbonato Venoso: 18 mEq/L (Normal: 22-26 mEq/L)\n- Fósforo: 4,7 mg/dL (Normal: 2,5-4,5 mg/dL)\n- Ácido Úrico: 6,8 mg/dL (Normal: 3,5-7,2 mg/dL)\n- Glicose: 92 mg/dL (Normal: 70-99 mg/dL)\n- Hemoglobina Glicada (HbA1c): 6,8% (Normal: < 5,7%)\n- Relação Albumina/Creatinina (urina): 242 mg/g (Normal: < 30 mg/g)",
+    "options": [
+      {
+        "id": "A",
+        "text": "eritropoetina e sevelamer",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dapaglifozina e clonidina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "alopurinol e clonidina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "eritropoetina e dapaglifozina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "dapaglifozina e sevelamer.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um quadro de Doença Renal Crônica (DRC) estágio IIIb (eGFR 42 mL/min/1,73 m²), Diabetes Mellitus tipo 2 com albuminúria significativa (242 mg/g) e Hipertensão Arterial Sistêmica subcontrolada (138/86 mmHg), apesar do uso de quatro classes de anti-hipertensivos. Além disso, os exames laboratoriais e o eletrocardiograma (ECG) revelam complicações metabólicas.\n\nAnálise do Eletrocardiograma (ECG):\nA imagem mostra ondas T simétricas, pontiagudas e com base estreita, conhecidas como ondas T em tenda, visíveis principalmente nas derivações precordiais (V2 a V5). Esse achado é patognomônico de hipercalemia, o que corrobora o potássio sérico elevado de 5,9 mEq/L.\n\nIndicação da Dapagliflozina:\nOs inibidores do SGLT2 (como a dapagliflozina) tornaram-se pilares no tratamento da DRC em pacientes com diabetes e albuminúria. Eles oferecem nefroproteção (reduzem a progressão da perda de função renal) e cardioproteção, independentemente do controle glicêmico (que nesta paciente já está adequado, com HbA1c de 6,8%). Como a taxa de filtração glomerular da paciente é de 42 mL/min, o início dessa medicação está bem indicado.\n\nIndicação da Clonidina:\nO alvo pressórico para pacientes com DRC e diabetes é geralmente inferior a 130/80 mmHg. A paciente já utiliza enalapril, anlodipino, hidroclorotiazida e espironolactona, configurando um quadro de hipertensão resistente. A clonidina, um agonista alfa-2 central, surge como uma opção para auxiliar no alcance da meta pressórica.\n\nAnálise das alternativas:\n\na) Incorreta. Não há dados de hemoglobina que justifiquem o uso de eritropoetina (indicada geralmente se Hb < 10 g/dL após exclusão de outras causas de anemia). O sevelamer é um quelante de fósforo usado na hiperfosfatemia refratária à dieta; o fósforo da paciente (4,7 mg/dL) está apenas discretamente elevado, sendo a restrição dietética a conduta inicial.\n\nb) Correta. A dapagliflozina é indicada pela nefroproteção em pacientes com DM2 e DRC com albuminúria. A clonidina é utilizada para o controle adicional da pressão arterial, que permanece acima do alvo.\n\nc) Incorreta. O ácido úrico da paciente (6,8 mg/dL) está dentro da faixa de normalidade (até 7,2 mg/dL), não havendo indicação para alopurinol, que é reservado para casos de gota ou hiperuricemia importante.\n\nd) Incorreta. Embora a dapagliflozina esteja correta, não há evidência de anemia de doença renal que sustente o início de eritropoetina nesta questão.\n\ne) Incorreta. Novamente, a indicação de sevelamer é precoce para este cenário, onde o fósforo está pouco acima do limite e a orientação dietética (já mencionada no enunciado) é o primeiro passo. A clonidina é mais necessária para o controle da hipertensão resistente do que o quelante para esse nível de fósforo.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Hipertensão Arterial Sistêmica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/30b6d13590666d05a0a817b8762b5c00e7258826e392f87e3022507825d34db3.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_27d03905-6ef6-4358-b365-8122352bccc5_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.526Z"
+  },
+  {
+    "id": "AJUDA_27d08a27-3b35-46e5-b48c-7df3a047ec3c",
+    "originalId": "27d08a27-3b35-46e5-b48c-7df3a047ec3c",
+    "statement": "M.M.L; 2 anos, sexo feminino. Paciente dá entrada no Pronto Atendimento com quadro de diarreia de 5 dias de evolução, com fezes aquosas em grande volume, vários episódios ao dia. Mãe relata febre nos primeiros 2 dias; e quadro semelhante em toda família. \nAO EXAME: Hipocorado (1+/4+), anictérico, acianótico, mucosas secas, pulso aumentado, sedento, boa perfusão capilar, sem edemas. \nAparelho Cardiovascular: Rítmo cardíaco regular em 2 tempos, sem sopros. Frequência cardíaca: 120bpm \nAparelho respiratório: Murmúrio vesícular fisiológico, sem esforço \nAparelho digestivo: Abdome normotenso, indolor, sem massas ou visceromegalias, ruído hidroaéreo positivo. \nSobre o quadro clínico, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O paciente apresenta sinais de desidratação, com necessidade de terapia de reidratação oral no serviço de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O quadro clínico é provavelmente causado por um agente bacteriano, com necessidade de antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Devido ao tempo de evolução do quadro, deve-se iniciar dieta isenta de lactose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A administração de Zinco só está indicada, caso o quadro dure mais de 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico: \n\nO caso descreve uma criança de 2 anos com diarreia aguda (5 dias de evolução) de características não inflamatórias (aquosa, sem menção a sangue ou muco). Ao exame físico, a presença de mucosas secas, sede e aumento da frequência cardíaca (120 bpm no limite superior para a idade) classifica o paciente como tendo \"algum grau de desidratação\". De acordo com os protocolos do Ministério da Saúde e da OMS, este quadro se enquadra no Plano B de tratamento.\n\nExplicação das alternativas:\n\na) CORRETA. O paciente apresenta sinais clássicos de desidratação clínica (mucosas secas e sede). O manejo preconizado para crianças com algum grau de desidratação é o Plano B, que consiste na Terapia de Reidratação Oral (TRO) realizada sob supervisão no serviço de saúde, utilizando a Solução de Reidratação Oral (SRO) em doses pequenas e frequentes até que os sinais de desidratação desapareçam.\n\nb) INCORRETA. A maioria das diarreias agudas na infância tem etiologia viral (como rotavírus e norovírus), especialmente quando há quadro semelhante em outros membros da família e febre baixa/limitada ao início do quadro. Diarreias aquosas não indicam, rotineiramente, o uso de antibióticos. A antibioticoterapia seria considerada em casos específicos, como suspeita de cólera grave ou disenteria (presença de sangue nas fezes).\n\nc) INCORRETA. A restrição de lactose não deve ser feita de forma rotineira na diarreia aguda. A manutenção da dieta habitual, incluindo o aleitamento materno ou leites de rotina, é fundamental para a recuperação nutricional da mucosa intestinal. A dieta isenta de lactose só é indicada em casos raros de intolerância secundária persistente, o que não se caracteriza com apenas 5 dias de evolução.\n\nd) INCORRETA. O zinco é recomendado para todas as crianças com quadro de diarreia aguda, independentemente da duração ou do estado de hidratação. O zinco deve ser iniciado assim que o quadro começa e mantido por 10 a 14 dias, pois reduz a duração do episódio atual, a gravidade das fezes e a incidência de novos episódios nos meses seguintes. Portanto, não é necessário esperar 14 dias para prescrevê-lo.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Diarreia",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.526Z"
+  },
+  {
+    "id": "AJUDA_27d15696-4a48-4259-a712-0eae3e5ccebc",
+    "originalId": "27d15696-4a48-4259-a712-0eae3e5ccebc",
+    "statement": "Trabalhador rural, de 37 anos, veio à consulta queixando-se de dor em dedo do pé esquerdo há 2 semanas. Negou trauma ou comorbidades. Relatou episódios de diarreia recorrentes nos últimos meses. Ao exame físico, havia dor à palpação e à mobilização, edema e eritema do terceiro pododáctilo esquerdo, além de onicodistrofia e pitting ungueal em mãos e pés. Diante do quadro, assinale a alternativa que confirma o diagnóstico e aumenta a chance de acometimento axial.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fator reumatoide reagente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colite à biópsia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "HLA-B27 presente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pesquisa de fungo ungueal negativa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito apresenta elementos clássicos das espondiloartrites, mais especificamente da artrite psoriásica. O paciente apresenta dactilite (o chamado \"dedo em salsicha\", caracterizado pelo edema e eritema do terceiro pododáctilo), onicodistrofia e *pitting* ungueal (pequenas depressões na unha), que são sinais patognomônicos de psoríase ungueal e fortemente associados à artrite psoriásica. Além disso, a queixa de diarreia recorrente pode sugerir uma associação com doença inflamatória intestinal, que também faz parte do grupo das espondiloartrites.\n\nAnálise das alternativas:\n\na) Fator reumatoide reagente: Incorreta. As espondiloartrites são, por definição, soronegativas. A presença do fator reumatoide direcionaria o diagnóstico para artrite reumatoide, que tipicamente não causa dactilite nem as alterações ungueais descritas (*pitting*), além de raramente acometer as articulações interfalângicas distais.\n\nb) Colite à biópsia: Incorreta. Embora a presença de colite pudesse justificar a diarreia e confirmar uma doença inflamatória intestinal (como doença de Crohn ou retocolite ulcerativa) associada ao quadro articular, ela não é o principal marcador para predizer ou confirmar o acometimento axial (coluna e sacroilíacas) nesse contexto.\n\nc) HLA-B27 presente: Correta. O HLA-B27 é um marcador genético fortemente associado ao grupo das espondiloartrites. Nas formas de artrite psoriásica e outras espondiloartrites periféricas, a presença desse antígeno está diretamente relacionada a uma maior probabilidade de desenvolvimento de doença axial (sacroileíte e espondilite). Portanto, sua presença ajuda a classificar o paciente dentro do espectro das espondiloartrites e sinaliza o risco de evolução com dor inflamatória na coluna.\n\nd) Pesquisa de fungo ungueal negativa: Incorreta. A pesquisa negativa para fungos (micológico direto e cultura) ajudaria a excluir uma onicomicose, reforçando que a alteração da unha é decorrente da psoríase. No entanto, esse achado é apenas um critério de exclusão para diagnóstico diferencial e não possui nenhuma relação com o aumento da chance de acometimento da coluna (axial).",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Espondiloartrites"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.526Z"
+  },
+  {
+    "id": "AJUDA_27d58048-097f-49a8-bd50-11394d2b0ea1",
+    "originalId": "27d58048-097f-49a8-bd50-11394d2b0ea1",
+    "statement": "Paciente jovem do sexo masculino foi admitido em sua unidade hospitalar devido ao Tromboembolismo Pulmonar. No exame físico, foram observadas úlceras orais, foliculite difusa pelo corpo, olhos avermelhados sugerindo uveíte além de artrite nos joelhos. Qual alternativa abaixo representa a principal hipótese diagnóstica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome Anticorpo Antifosfolipídeo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sindrome de Sjögren.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Artrite Reumatóide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Behçet.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Poliarterite Nodosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A principal hipótese diagnóstica para o caso clínico apresentado é a Síndrome de Behçet. Esta patologia é classificada como uma vasculite de vasos de tamanhos variáveis (pequenos, médios e grandes) e tem como característica marcante o envolvimento tanto do sistema arterial quanto do sistema venoso, o que explica a ocorrência de tromboembolismo pulmonar (TEP) em um paciente jovem.\n\nAlternativa (d) CORRETA: A Síndrome de Behçet é definida clinicamente por um conjunto de manifestações que se encaixam perfeitamente no quadro do paciente. As úlceras orais recorrentes são o achado mais comum e obrigatório em muitos critérios diagnósticos. A foliculite (ou lesões papulopustulosas) e a artrite (geralmente de grandes articulações, como os joelhos) também são frequentes. A uveíte é uma manifestação ocular grave que pode levar à perda visual. Além disso, a Síndrome de Behçet é uma das poucas vasculites que cursam com alta incidência de trombose venosa profunda e embolia pulmonar, além de aneurismas de artéria pulmonar.\n\nAlternativa (a) INCORRETA: A Síndrome do Anticorpo Antifosfolipídeo (SAF) é uma causa importante de tromboses (arteriais e venosas) em pacientes jovens. No entanto, a SAF não explica as outras manifestações inflamatórias descritas, como a uveíte, a artrite e, principalmente, as úlceras orais e a foliculite. A SAF é um estado de hipercoagulabilidade e não uma vasculite inflamatória multissistêmica.\n\nAlternativa (b) INCORRETA: A Síndrome de Sjögren caracteriza-se primordialmente pela ceratoconjuntivite sicca (olhos secos) e xerostomia (boca seca) devido ao ataque autoimune às glândulas exócrinas. Embora possa haver artrite, ela não costuma causar uveíte (a inflamação no Sjögren é superficial, na córnea e conjuntiva por ressecamento) e não é uma causa típica de fenômenos tromboembólicos como o TEP.\n\nAlternativa (c) INCORRETA: A Artrite Reumatoide (AR) foca-se principalmente em pequenas articulações de forma simétrica e erosiva. Embora existam manifestações extra-articulares, as úlceras orais não são características da doença (exceto se causadas por medicamentos como o metotrexato). Além disso, a AR não apresenta uma associação direta e forte com uveíte anterior e eventos tromboembólicos agudos como manifestação inicial.\n\nAlternativa (e) INCORRETA: A Poliarterite Nodosa (PAN) é uma vasculite de vasos de médio calibre que classicamente poupa a circulação pulmonar e não costuma envolver o sistema venoso. Portanto, o TEP é uma manifestação extremamente improvável na PAN. Seus achados típicos incluem livedo reticularis, mononeurite múltipla, orquite e hipertensão renovascular, que não foram citados no caso.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.527Z"
+  },
+  {
+    "id": "AJUDA_27e0e235-0237-4a53-95e4-d0f11f0252fa",
+    "originalId": "27e0e235-0237-4a53-95e4-d0f11f0252fa",
+    "statement": "Em relação ao Acidente Vascular Cerebral (AVC), é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pressão arterial superior a 185/110 mmHg, a despeito do tratamento, não é contraindicação à trombólise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O ácido acetilsalicílico é o único agente antiplaquetário que se mostrou eficaz no tratamento agudo do acidente vascular cerebral isquêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A anticoagulação de rotina faz parte do tratamento primário da isquemia cerebral aterotrombótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A combinação de ácido acetilsalicílico e clopidogrel após um AVC minor não se mostrou benéfica na prevenção de um segundo AVC.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A (Incorreta): A pressão arterial persistentemente acima de 185/110 mmHg, refratária ao tratamento medicamentoso agudo, é uma contraindicação absoluta para a trombólise química com rtPA endovenoso. Realizar a trombólise com níveis tensionais acima desse limiar eleva expressivamente o risco de transformação hemorrágica intracraniana sintomática.\n\nAlternativa B (Correta): O ácido acetilsalicílico (AAS) é o agente antiplaquetário clássico que demonstrou benefício e eficácia isolada na fase aguda do AVC isquêmico para a população geral em grandes ensaios clínicos (como IST e CAST), promovendo redução na mortalidade e na recorrência precoce do evento quando iniciado nas primeiras 24 a 48 horas.\n\nAlternativa C (Incorreta): A anticoagulação de rotina não faz parte do tratamento agudo da isquemia aterotrombótica. O uso de anticoagulantes em dose plena nessa fase não melhora o prognóstico funcional neurológico e acarreta um risco aumentado de sangramentos intracranianos graves.\n\nAlternativa D (Incorreta): A combinação de AAS e clopidogrel (dupla antiagregação plaquetária) por período curto (21 a 90 dias) mostrou-se benéfica e superior à monoterapia na prevenção secundária precoce em pacientes com AVC minor (NIHSS menor ou igual a 3) e Ataque Isquêmico Transitório (AIT) de alto risco, conforme demonstrado nos estudos CHANCE e POINT.\n\nGabarito: Letra B.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.527Z"
+  },
+  {
+    "id": "AJUDA_2809fe98-d6b5-4f5c-aa8e-c9d64b560b36",
+    "originalId": "2809fe98-d6b5-4f5c-aa8e-c9d64b560b36",
+    "statement": "A Síndrome Antifosfolipídeo (SAF) é um distúrbio autoimune definido por características clínicas e laboratoriais, estas últimas representadas por níveis aumentados de anticorpos antifosfolipídeos. O diagnóstico da SAF requer que, ao menos, um critério clínico e um laboratorial sejam preenchidos. De acordo com essa afirmação, marque a opção correta sobre a SAF.",
+    "options": [
+      {
+        "id": "A",
+        "text": "São dois os anticorpos antifosfolipídeos que contribuem para o diagnóstico da SAF: Lúpus anticoagulante (LAC) e Anticardiolipina (ACL).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cerca de 50% dos casos de SAF cursam com Crescimento Intrauterino Restrito (CIR) e os outros 50% com pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento da SAF é realizado com enoxaparina 40mg SC por dia, durante toda a gravidez, não havendo indicação de complementação após o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os anticorpos antifosfolipídeos constituem uma classe diversa de anticorpos, com especificidade de ligação a fosfolipídeos de carga negativa encontrados nas superfícies das células.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Síndrome Antifosfolipídeo (SAF) é uma condição de caráter pró-trombótico de origem autoimune. Para o seu diagnóstico, seguimos os critérios de Sydney, que exigem a presença de pelo menos um critério clínico (trombose vascular ou morbidade gestacional específica) e um critério laboratorial.\n\nAlternativa (a) Incorreta: Os critérios laboratoriais para a SAF incluem três tipos de anticorpos, e não apenas dois. São eles: o lúpus anticoagulante (LAC), a anticardiolipina (ACL) IgG ou IgM em títulos moderados a altos, e o anticorpo anti-beta-2-glicoproteína I IgG ou IgM.\n\nAlternativa (b) Incorreta: Embora o crescimento intrauterino restrito (CIR) e a pré-eclâmpsia sejam complicações obstétricas associadas à SAF e façam parte dos critérios diagnósticos (quando levam ao parto prematuro antes de 34 semanas), não existe essa divisão estatística exata de 50% para cada. A síndrome pode se manifestar de diversas formas, incluindo perdas embrionárias recorrentes e óbitos fetais tardios.\n\nAlternativa (c) Incorreta: O tratamento varia conforme o histórico da paciente (se SAF obstétrica ou trombótica), mas a afirmação está errada principalmente ao dizer que não há indicação de complementação após o parto. O puerpério é o período de maior risco para eventos trombóticos, e a anticoagulação deve ser mantida por pelo menos 6 semanas após o nascimento. Além disso, o tratamento padrão na gestação geralmente associa o AAS em baixa dose à heparina (seja profilática ou terapêutica).\n\nAlternativa (d) Correta: Esta alternativa define com precisão a natureza dos anticorpos na SAF. Eles representam um grupo heterogêneo de autoanticorpos que têm afinidade por fosfolipídeos de carga negativa (aniônicos) ou por proteínas plasmáticas ligadas a esses fosfolipídeos localizados nas superfícies celulares (como endotélio e plaquetas). Essa ligação interfere na cascata de coagulação e na função celular, resultando no estado de hipercoagulabilidade característico da doença.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.527Z"
+  },
+  {
+    "id": "AJUDA_281209dd-3a3e-4dc5-b2dd-0c8e912e3a09",
+    "originalId": "281209dd-3a3e-4dc5-b2dd-0c8e912e3a09",
+    "statement": "Em uma reunião de equipe, a enfermeira da Unidade Básica de Saúde (UBS) informa que, apesar de estar conseguindo manter os atendimentos de rotina, no último mês percebeu aumento de atendimentos por desidratação leve, exaustão pelo calor e descompensação de doenças crônicas, e que suspeita estarem relacionadas à onda de calor que está ocorrendo no município.\n\nO plano de intervenção para a população do território adstrito dessa UBS consiste em",
+    "options": [
+      {
+        "id": "A",
+        "text": "separar o fluxo de atendimento da UBS para agilizar o atendimento da população atingida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "implementar hospital de campanha para atender a população por demanda espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "encaminhar as pessoas afetadas para hidratação parenteral a fim de evitar descompensação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "orientar hidratação, adaptação do domicílio, sinais de alerta, e monitoramento ativo dos susceptíveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão trata da resposta da Atenção Primária à Saúde (APS) a um evento climático extremo, a onda de calor. O cenário tem três pontos importantes:\n\n- A UBS está conseguindo manter a rotina, ou seja, não há colapso assistencial.\n- Os casos são de baixa gravidade: desidratação leve, exaustão pelo calor e descompensação de doenças crônicas.\n- O foco pedido é a população do território adstrito.\n\nIsso remete às atribuições da APS: promoção da saúde, prevenção, vigilância em saúde, busca ativa e acompanhamento longitudinal dos grupos vulneráveis. Os grupos mais suscetíveis ao calor são idosos, crianças pequenas, gestantes, acamados, pessoas com doenças cardiovasculares, renais, respiratórias ou com diabetes, pessoas em uso de diuréticos ou psicotrópicos, pessoas em situação de rua e trabalhadores expostos ao sol.\n\nAlternativa A – Incorreta. Separar o fluxo de atendimento é uma medida organizacional interna e reativa. Ela só atende quem já adoeceu e procurou a unidade. Além disso, o enunciado deixa claro que a UBS mantém a rotina sem sobrecarga. O plano pedido é para a população do território, e não para a porta de entrada da unidade.\n\nAlternativa B – Incorreta. Hospital de campanha é estrutura de contingência para situações de desastre com demanda que supera a capacidade instalada da rede. Não é o caso: os quadros são leves e a UBS não está sobrecarregada. A medida seria desproporcional e centrada no atendimento hospitalar por demanda espontânea, contrariando a lógica da APS.\n\nAlternativa C – Incorreta. A desidratação leve é tratada com hidratação oral, conforme o plano A ou B de hidratação. A via parenteral fica reservada para desidratação grave, intolerância oral ou instabilidade clínica. Encaminhar todos os afetados para hidratação venosa é tecnicamente inadequado, gera custos e riscos desnecessários e não previne novos casos.\n\nAlternativa D – Correta. Ela reúne as ações preconizadas para a APS diante de ondas de calor:\n\n- Orientar hidratação: aumentar a ingestão de água mesmo sem sede, com atenção especial a idosos, que têm a sede reduzida, e a crianças.\n- Adaptar o domicílio: ventilar os ambientes, evitar exposição solar nos horários de pico, usar roupas leves e buscar locais frescos.\n- Ensinar sinais de alerta: tontura, confusão, cefaleia, náuseas, cãibras, redução da diurese e hipertermia. Esses sinais indicam necessidade de procurar atendimento e permitem reconhecer precocemente a intermação.\n- Monitorar ativamente os suscetíveis: busca ativa e acompanhamento pelos agentes comunitários de saúde e pela equipe, ajustando medicações quando necessário (por exemplo, diuréticos).\n\nEssas são ações de promoção, prevenção e vigilância de base territorial e comunitária, exatamente o papel da APS.\n\nResposta: alternativa D.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:35.527Z"
+  }
+]

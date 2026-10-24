@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_6461d7df-51d5-47a5-bab8-693a7f4b4fde",
+    "originalId": "6461d7df-51d5-47a5-bab8-693a7f4b4fde",
+    "statement": "Paciente feminina de 78 anos, com 24 horas de evolução de dor e abaulamento progressivo em região inguinal direita. Apresentou também alguns episódios de vômitos e diminuição da eliminação de flatos. Antecedentes: neoplasia de mama há 30 anos, diabetes mellitus há 20 anos e tabagista de 40 maços por ano. Ao exame estava normotensa, eucárdica, afebril, eupneica. Índice de massa corporal de 35 quilogramas por metro quadrado. Abdome globoso, depressível, com abaulamento não redutível e desconforto à palpação em fossa ilíaca direita, com discreta hiperemia local e sem sinais de irritação peritoneal.\nResultados dos exames laboratoriais:\n\nA hipótese diagnóstica mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "isquemia mesentérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hérnia inguinal indireta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hérnia femoral encarcerada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "neoplasia de cólon obstrutiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: A paciente é uma idosa de 78 anos que apresenta um quadro clínico de obstrução intestinal (vômitos e diminuição da eliminação de flatos) associado a um achado crucial no exame físico: um abaulamento não redutível, doloroso e com hiperemia na região inguinal direita. Em mulheres idosas com este perfil, a principal suspeita deve ser uma hérnia da região crural/inguinal complicada.\n\nAlternativa a: Incorreta. A isquemia mesentérica aguda costuma cursar com dor abdominal súbita e muito intensa, classicamente descrita como desproporcional aos achados do exame físico (o abdome costuma estar depressível e sem sinais de irritação peritoneal inicialmente). Embora a paciente possua fatores de risco como diabetes e tabagismo, o achado de uma massa inguinal não redutível direciona o diagnóstico para uma patologia herniária.\n\nAlternativa b: Incorreta. A hérnia inguinal indireta é comum em ambos os sexos, mas a hérnia femoral é muito mais frequente em mulheres idosas do que em homens. Além disso, a hérnia femoral apresenta um risco de encarceramento e estrangulamento significativamente maior (cerca de 40%) devido à rigidez e estreiteza do canal femoral, o que explica a apresentação aguda e obstrutiva desta paciente.\n\nAlternativa c: Correta. A hérnia femoral ocorre quando o conteúdo abdominal protrui através do canal femoral, localizado abaixo do ligamento inguinal e medialmente aos vasos femorais. É o diagnóstico mais provável para uma paciente idosa, do sexo feminino, com abaulamento inguinal doloroso e sinais de obstrução intestinal. A hiperemia local citada no exame físico é um sinal de alerta para sofrimento isquêmico (estrangulamento) do conteúdo herniado, o que caracteriza uma emergência cirúrgica.\n\nAlternativa d: Incorreta. Uma neoplasia de cólon obstrutiva é uma causa importante de abdome agudo em idosos, mas o quadro seria de uma obstrução intestinal sem uma massa inguinal inflamatória associada. O abaulamento inguinal com sinais flogísticos (dor e hiperemia) é o marcador que define a etiologia herniária como a causa da obstrução.\n\nExames laboratoriais: A tabela mostra uma hemoglobina de 13 g/dL e leucócitos de 10.300/mL, ambos dentro da normalidade. O dado relevante é a creatinina elevada de 1,8 mg/dL (valor de referência até 1,3 mg/dL). Esse aumento sugere uma lesão renal aguda, provavelmente de etiologia pré-renal, causada pela desidratação decorrente dos episódios de vômitos e do sequestro de líquidos para o lúmen intestinal devido ao quadro obstrutivo.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": 72.92925448364754,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9cc463f523b4266ab9ad8ffc135321952a8a3c248a5205cf66ebcde1dd3a24d0.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_6461d7df-51d5-47a5-bab8-693a7f4b4fde_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:55.802Z"
+  },
+  {
+    "id": "AJUDA_64627b9a-42c3-4711-9004-bbaf25d4ca7a",
+    "originalId": "64627b9a-42c3-4711-9004-bbaf25d4ca7a",
+    "statement": "O diagnóstico clínico busca identificar a doença que acomete o paciente, sendo que, em muitos casos, os exames complementares auxiliam na confirmação ou exclusão de hipóteses diagnósticas. \nEm relação à validação de testes diagnósticos, a probabilidade de o paciente realmente ter a doença, considerando um resultado positivo já obtido no exame, chama-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "valor preditivo positivo do teste.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "probabilidade pré-teste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "especificidade do teste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sensibilidade do teste.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda conceitos fundamentais da epidemiologia clínica aplicados aos testes diagnósticos. Quando avaliamos a utilidade de um exame na prática médica, precisamos diferenciar as características intrínsecas do teste (sensibilidade e especificidade) dos valores preditivos, que nos fornecem a probabilidade real de doença após o resultado ser conhecido.\n\nAlternativa A: CORRETA. O Valor Preditivo Positivo (VPP) é exatamente a definição solicitada pelo enunciado: representa a probabilidade de um indivíduo estar realmente doente quando o resultado do seu teste é positivo. Diferente da sensibilidade e especificidade, que são fixas para o teste, o VPP é influenciado pela prevalência da doença na população; quanto maior a prevalência, maior será a confiança no resultado positivo.\n\nAlternativa B: INCORRETA. A probabilidade pré-teste é a chance de o paciente ter a doença antes mesmo da realização do exame. Ela é baseada na prevalência da patologia e nos achados clínicos iniciais (anamnese e exame físico). O enunciado foca na probabilidade após o conhecimento de um resultado positivo já obtido.\n\nAlternativa C: INCORRETA. A especificidade é a capacidade de um teste em identificar corretamente os indivíduos saudáveis, ou seja, a probabilidade de o teste ser negativo em quem não tem a doença. É uma medida da performance do teste em pessoas comprovadamente sadias, e não uma medida de probabilidade pós-teste para um resultado positivo.\n\nAlternativa D: INCORRETA. A sensibilidade é a capacidade de um teste em identificar corretamente os indivíduos doentes, ou seja, a probabilidade de o teste ser positivo em quem realmente tem a patologia. Embora a sensibilidade lide com resultados positivos, ela é calculada a partir de quem já sabemos que está doente. O Valor Preditivo Positivo, por outro lado, faz o caminho inverso: parte do resultado positivo para determinar a chance de o paciente estar doente.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:55.802Z"
+  },
+  {
+    "id": "AJUDA_646532df-a0a9-4d50-9aaa-59544dd5ad77",
+    "originalId": "646532df-a0a9-4d50-9aaa-59544dd5ad77",
+    "statement": "Mulher de 36 anos com histórico de DPOC, em uso de prednisona 10 mg/dia, há 2 anos, dá entrada no pronto atendimento com quadro de dor abdominal difusa associada a distensão e febre. A tomografia de abdome, realizada na admissão, evidenciou sinais de pneumoperitônio. Foi submetida à laparotomia exploradora com achado de úlcera duodenal perfurada, sendo submetida à duodenorrafia primária com confecção de patch omental. Durante a abordagem cirúrgica, apresentou quadro de hipotensão refratária à reposição volêmica, sendo necessário uso de drogas vasoativas. Evoluiu com manutenção da hipotensão no pós-operatório imediato, mantendo PA: 80 x 50 mmHg, hipoglicemia (glicemia capilar 56 mg/dL). A diurese também mostra-se diminuída, havendo hiponatremia (Na+ 128 mEq/L) com potássio sérico normal.\nCom base na hipótese diagnóstica mais provável, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um quadro de insuficiência adrenal primária, sendo indicada introdução de mineralocorticoide por via oral para controle hidroeletrolítico no pós-operatório imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de quadro de insuficiência adrenal aguda secundária à supressão de corticoterapia prolongada, sendo indicada terapia com hidrocortisona intravenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O uso prévio de prednisona impede a ocorrência de insuficiência adrenal no perioperatório, sendo a causa da hipotensão, muito provavelmente, séptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O teste de estimulação com ACTH precisa confirmar o diagnóstico antes de qualquer intervenção medicamentosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os níveis séricos de potássio, estando normais, afastam o diagnóstico de insuficiência adrenal aguda, tornando a insuficiência pituitária a principal hipótese.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO:\nA paciente apresenta um quadro clássico de Crise Adrenal Aguda desencadeada por um estresse metabólico grave (perfuração de víscera oca e cirurgia de grande porte) em uma pessoa com supressão crônica do eixo hipotálamo-hipófise-adrenal (HHA). O uso de prednisona em dose de 10 mg/dia por dois anos é mais do que suficiente para causar atrofia funcional das glândulas adrenais. Quando o organismo é submetido a um estresse, ele necessita de níveis elevados de cortisol (cortisol de estresse), que a paciente não consegue produzir. O resultado é o choque circulatório refratário a volume e a vasopressores, hipoglicemia e alterações eletrolíticas.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A insuficiência adrenal da paciente é classificada como secundária, pois decorre da supressão do ACTH pelo uso crônico de corticoide exógeno, e não de uma lesão direta na glândula adrenal (que seria a primária ou doença de Addison). Na insuficiência secundária, a zona glomerulosa da adrenal costuma ser preservada por ser regulada pelo sistema renina-angiotensina-aldosterona, e não pelo ACTH, tornando a reposição de mineralocorticoide geralmente desnecessária. Além disso, em vigência de choque, a via oral jamais deve ser a escolha inicial.\n\nAlternativa b) Correta. O quadro descreve perfeitamente a insuficiência adrenal aguda secundária. A supressão prolongada do eixo HHA impede a resposta fisiológica ao estresse cirúrgico. A hidrocortisona intravenosa é o tratamento de escolha, pois possui ação glicocorticoide rápida e também algum efeito mineralocorticoide em doses elevadas, sendo fundamental para reverter a hipotensão e a hipoglicemia.\n\nAlternativa c) Incorreta. O uso prévio de prednisona é o fator causal da insuficiência adrenal neste cenário, e não um fator protetor. Doses acima de 5 mg a 7,5 mg de prednisona por mais de três semanas já impõem risco de supressão do eixo. Embora a sepse possa contribuir para a hipotensão, a refratariedade às drogas vasoativas e a presença de hipoglicemia direcionam o diagnóstico para a crise adrenal.\n\nAlternativa d) Incorreta. A crise adrenal aguda é uma emergência médica com alta mortalidade. O tratamento deve ser instituído imediatamente com base na suspeita clínica, antes mesmo de qualquer confirmação laboratorial ou teste de estimulação com ACTH. Retardar a terapia para realizar testes diagnósticos pode ser fatal para o paciente.\n\nAlternativa e) Incorreta. Na insuficiência adrenal secundária (como a causada por corticoides), os níveis de potássio são tipicamente normais. Isso ocorre porque a produção de aldosterona (responsável pela excreção de potássio) é controlada principalmente pelo sistema renina-angiotensina e não depende do ACTH hipofisário. Portanto, o potássio normal não afasta o diagnóstico; ao contrário, ele ajuda a diferenciar a insuficiência adrenal secundária da primária (onde a hipercalemia é comum). Além disso, a insuficiência secundária é, por definição, uma forma de insuficiência do eixo que envolve a unidade pituitária-adrenal.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Adrenal",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:55.802Z"
+  },
+  {
+    "id": "AJUDA_646a161c-002a-4b0e-818d-0827bbeef1d9",
+    "originalId": "646a161c-002a-4b0e-818d-0827bbeef1d9",
+    "statement": "Puérpera, 26 anos, primípara, comparece ao hospital no terceiro dia após cesariana de urgência realizada devido à parada de progressão no trabalho de parto. Relata febre persistente desde o segundo dia pós-parto, atingindo 38,8 °C, além de dor abdominal difusa e loquiação fétida. Ao exame físico, observa-se útero hipoinvoluído e doloroso à palpação. Paciente está hemodinamicamente estável, sem sinais de choque séptico. Qual é a conduta inicial mais adequada para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar e aguardar resultados do hemograma e da hemocultura antes de iniciar antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antibioticoterapia empírica intravenosa com cobertura para bactérias aeróbias e anaeróbias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar USTV para avaliar retenção de restos placentários antes de iniciar o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever antibioticoterapia oral com ampicilina e acompanhar ambulatorialmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico e Contexto:\nO quadro clínico é clássico de endometrite puerperal, a causa mais frequente de infecção no puerpério, com risco aumentado após cesarianas de urgência intraparto. O diagnóstico é essencialmente clínico, baseado na tríade de febre (a partir do segundo ou terceiro dia pós-parto), útero hipoinvoluído e doloroso, e loquiação fétida.\n\nAnálise das alternativas:\n\nAlternativa a (Incorreta): O diagnóstico da endometrite é eminentemente clínico. Embora hemograma e hemoculturas possam ser colhidos, o início do tratamento antimicrobiano é urgente e jamais deve ser postergado para aguardar esses resultados, sob risco de evolução para sepse ou choque séptico.\n\nAlternativa b (Correta): A endometrite é uma infecção polimicrobiana e ascendente, envolvendo patógenos aeróbios e anaeróbios da flora genital e intestinal (como E. coli, estreptococos e Bacteroides sp.). Por isso, a conduta padrão é a internação hospitalar e o início imediato de antibioticoterapia empírica parenteral de amplo espectro, classicamente realizada com a associação de clindamicina e gentamicina.\n\nAlternativa c (Incorreta): A ultrassonografia transvaginal não é obrigatória para o início da conduta. O exame de imagem é reservado para casos de dúvida diagnóstica ou refratariedade ao tratamento clínico após 48 a 72 horas de antibióticos, com o objetivo de investigar abscessos pélvicos, hematomas infectados ou restos ovulares.\n\nAlternativa d (Incorreta): A infecção pós-operatória de cavidade uterina com febre alta e dor difusa exige internação hospitalar e medicação intravenosa. O tratamento por via oral em regime ambulatorial é contraindicado devido ao risco de falha terapêutica e disseminação da infecção. Além disso, a monoterapia com ampicilina não cobre adequadamente os germes anaeróbios produtores de beta-lactamase e bacilos gram-negativos.\n\nGabarito definitivo: Alternativa b.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:55.802Z"
+  },
+  {
+    "id": "AJUDA_646fce1a-1912-45d9-bb9c-57866c15a1f5",
+    "originalId": "646fce1a-1912-45d9-bb9c-57866c15a1f5",
+    "statement": "Qual é o principal fator que define uma Emergência Hipertensiva de acordo com as diretrizes brasileiras que deve estar associado a definição arbitrária da PAS >= 180mmHg e/ou PAD >=110mmhg ou até mesmo com valores menores?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O valor da Pressão Arterial somente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A gravidade dos sintomas associados, como cefaleia intensa ou tontura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A necessidade de tratamento imediato com medicação venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Situações clínicas sintomáticas com Lesões de órgão alvo aguda e progressiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A definição de Emergência Hipertensiva é um conceito fundamental na cardiologia e na medicina de emergência. De acordo com as Diretrizes Brasileiras de Hipertensão Arterial, o diagnóstico não se baseia apenas em números, mas sim na repercussão clínica imediata que esses níveis pressóricos elevados causam no organismo.\n\nPara diferenciar uma Emergência de uma Urgência Hipertensiva, o médico deve avaliar a presença de danos agudos a órgãos vitais. Enquanto na Urgência há uma elevação pressórica importante sem risco imediato de morte ou lesão de órgão-alvo, na Emergência a situação é crítica.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora valores de PAS ≥ 180 mmHg e PAD ≥ 110 mmHg sejam frequentemente usados como marcos para definir uma Crise Hipertensiva, o valor isolado não diferencia Urgência de Emergência. Um paciente pode apresentar níveis muito elevados (ex.: 220/120 mmHg) e estar assintomático ou com sintomas leves, configurando uma Urgência, enquanto outro, com valores menores (ex.: 170/100 mmHg em uma gestante com eclâmpsia), pode estar em uma Emergência Hipertensiva.\n\nAlternativa b: Incorreta. Cefaleia e tontura são sintomas inespecíficos. Eles podem estar presentes em casos de Pseudocrise Hipertensiva (onde a dor ou o estresse causam o aumento da pressão) ou em Urgências Hipertensivas. Na Emergência Hipertensiva, os sintomas são geralmente mais graves e específicos do órgão afetado, como dor precordial, dispneia súbita ou perda de força motora.\n\nAlternativa c: Incorreta. O uso de medicação venosa (como nitroprussiato de sódio ou nitroglicerina) e a internação em UTI constituem a conduta terapêutica padrão para a Emergência Hipertensiva. Portanto, a necessidade do tratamento é uma consequência do diagnóstico estabelecido, e não o critério que define a patologia.\n\nAlternativa d: Correta. Esta alternativa reflete exatamente o que preconizam as diretrizes nacionais e internacionais. O fator determinante de uma Emergência Hipertensiva é a presença de Lesão de Órgão-Alvo (LOA) aguda e progressiva. Exemplos clássicos incluem o Edema Agudo de Pulmão, o Infarto Agudo do Miocárdio, o Acidente Vascular Cerebral, a Dissecção Aguda de Aorta e a Encefalopatia Hipertensiva. Nesses casos, a redução da pressão deve ser imediata e controlada para preservar a função dos órgãos e a vida do paciente.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:55.802Z"
+  },
+  {
+    "id": "AJUDA_647e11c1-8aff-4eb1-a344-09fb1b98d072",
+    "originalId": "647e11c1-8aff-4eb1-a344-09fb1b98d072",
+    "statement": "Considerando um paciente de 62 anos de idade, com diagnóstico endoscópico de adenocarcinoma gástrico, FC = 84 bpm, FR = 18 irpm, saturação = 98%, sem sinais de metástases clinicas, assinale a alternativa que corresponde ao exame recomendado para estadiamento inicial.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tomografia de tórax, abdome e pelve",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Colonoscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ultrassom abdominal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "PET-CT obrigatório",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O diagnóstico de adenocarcinoma gástrico exige um estadiamento rigoroso para determinar a extensão da doença e a melhor estratégia de tratamento (curativa ou paliativa). O objetivo inicial é identificar a presença de metástases à distância, envolvimento linfonodal ou invasão de órgãos adjacentes.\n\nAlternativa (a): Correta. A tomografia computadorizada (TC) de tórax, abdome e pelve, preferencialmente com contraste venoso e oral, é o exame de escolha e o padrão-ouro para o estadiamento inicial. Ela permite avaliar de forma sistêmica os sítios mais comuns de disseminação, como pulmões, fígado, linfonodos retroperitoneais e a presença de ascite ou implantes peritoneais grosseiros. É o exame fundamental para a classificação TNM clínica inicial.\n\nAlternativa (b): Incorreta. A colonoscopia não faz parte do protocolo de rotina para o estadiamento do câncer gástrico. Ela seria solicitada apenas em situações específicas, como na suspeita de um segundo tumor primário (sincrônico) no intestino grosso ou se houvesse sinais clínicos de invasão do cólon pelo tumor gástrico ou por carcinomatose peritoneal.\n\nAlternativa (c): Incorreta. O ultrassom abdominal é um exame limitado para o estadiamento oncológico. Por ser operador-dependente e ter dificuldade de visualização de estruturas profundas devido aos gases intestinais, ele apresenta baixa sensibilidade para detectar linfonodos comprometidos e pequenas metástases peritoneais, sendo amplamente inferior à tomografia computadorizada.\n\nAlternativa (d): Incorreta. O PET-CT não é um exame obrigatório nem de primeira linha no estadiamento do câncer gástrico. Sua indicação é reservada para casos selecionados nos quais os exames de imagem convencionais (TC) são inconclusivos. Além disso, o adenocarcinoma gástrico, especialmente os subtipos difusos e de células em anel de sinete, frequentemente apresenta baixa avidez pelo radiotraçador (FDG), o que pode gerar resultados falsos-negativos.\n\nGabarito: Alternativa (a).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:55.802Z"
+  },
+  {
+    "id": "AJUDA_64833d03-de60-4ed4-b14d-d1e544ea8206",
+    "originalId": "64833d03-de60-4ed4-b14d-d1e544ea8206",
+    "statement": "Uma paciente de 52 anos de idade compareceu ao pronto-socorro com relato de que, há dois dias, iniciou quadro de dor em barra, em abdome superior, que irradia para as costas, com náuseas e vômitos associados, não aceitando dieta oral. À admissão, realizou exames laboratoriais que demonstraram Hb = 14 mg/dL, leuco = 19.500 cel/mm³, FAL = 150 U/L, GGT = 200 U/L, TGO = 300 U/L, TGP = 260 U/L, LDH = 500 U/L, BBT = 2,1 mg/dL, amilase = 890 U/L, lipase = 900 U/L e Ur = 130 mg/dL de Cr = 2,2 mg/dL. Fez ultrassonografia de abdome com diagnóstico de colelitíase com vesícula biliar não espessada e sem sinais aparentes de dilatação de vias biliares.\n\nDe acordo com esse caso clínico, é correto afirmar que, na classificação de gravidade da pancreatite aguda pela escala Ranson, trata-se de uma paciente com",
+    "options": [
+      {
+        "id": "A",
+        "text": "três pontos, que não é classificada como pancreatite grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "quatro pontos, que não é classificada como pancreatite grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "três pontos, que é considerada pancreatite grave.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "quatro pontos, que é classificada como pancreatite grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos primeiro identificar a etiologia da pancreatite aguda e, em seguida, aplicar os Critérios de Ranson específicos.\n\nA paciente apresenta colelitíase (pedras na vesícula) ao ultrassom e elevação de enzimas hepáticas (TGO, TGP, GGT, FAL), o que caracteriza uma pancreatite aguda biliar. Para a pancreatite de origem biliar, os pontos de corte dos Critérios de Ranson na admissão são diferentes dos da pancreatite alcoólica.\n\nCritérios de Ranson para Pancreatite Biliar (na admissão):\n1. Idade > 70 anos (A paciente tem 52 anos: 0 pontos)\n2. Leucócitos > 18.000/mm³ (A paciente tem 19.500: 1 ponto)\n3. Glicemia > 220 mg/dL (Não informada: 0 pontos)\n4. LDH > 400 U/L (A paciente tem 500: 1 ponto)\n5. AST (TGO) > 250 U/L (A paciente tem 300: 1 ponto)\n\nCálculo da pontuação:\nA paciente soma 3 pontos (leucocitose + LDH elevado + TGO elevada).\n\nClassificação de gravidade:\nDe acordo com os Critérios de Ranson, uma pontuação maior ou igual a 3 define o quadro como pancreatite aguda grave, indicando maior risco de complicações e mortalidade.\n\nAnálise das alternativas:\n\na) Incorreta. A pontuação está correta (três pontos); porém, na escala de Ranson, 3 pontos já classificam a pancreatite como grave.\n\nb) Incorreta. A pontuação correta é três, não quatro. Além disso, qualquer pontuação de quatro pontos seria obrigatoriamente classificada como grave.\n\nc) Correta. A paciente preenche exatamente três critérios na admissão (leucócitos, LDH e TGO). Pela classificação de Ranson, a presença de 3 ou mais critérios define o caso como pancreatite grave.\n\nd) Incorreta. A paciente não atinge quatro pontos com os dados fornecidos na admissão. Embora a ureia e a creatinina estejam elevadas (sugerindo gravidade clínica), os critérios de Ranson avaliam o aumento da ureia apenas após as primeiras 48 horas de evolução, e não isoladamente na admissão. Com os dados da entrada, somam-se apenas 3 pontos.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:55.802Z"
+  },
+  {
+    "id": "AJUDA_6483dfee-9faa-4fac-93a3-eb0a7740c268",
+    "originalId": "6483dfee-9faa-4fac-93a3-eb0a7740c268",
+    "statement": "Uma mulher de 18 anos de idade, sem antecedentes pessoais e familiares relevantes, dirigiu‑se ao pronto‑socorro de um hospital municipal com náusea, vômitos, diarreia líquida sem produtos patológicos, mialgia, sensação febril e astenia. Esse quadro teve início dois dias antes da admissão, com piora no dia atual, com sete episódios de fezes líquidas nas últimas 24 horas. A paciente relatou inapetência e dificuldade para ingerir líquidos e comprimidos. Ao exame físico: afebril; regular estado geral; levemente desidratada; bem perfundida e com extremidades quentes; abdome flácido; um pouco de dor à palpação profunda difusamente; sem sinais de peritonite; e sinais vitais marcando PA de 110 x 75 mmHg e FC de 87 bpm. Com base nessa situação hipotética, assinale a alternativa correta em relação à condução desse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente necessita de uma tomografia de abdome devido à suspeita de complicações associadas ao quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A paciente deve ser internada em regime de enfermaria com hidratação endovenosa, antibioticoterapia endovenosa com ceftriaxone e metronidazol e sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A paciente deve ser internada em regime de enfermaria com hidratação endovenosa, antibioticoterapia endovenosa com ceftriaxone em monoterapia e sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A paciente deve ser internada em regime de enfermaria com hidratação endovenosa e sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Deve ser realizado tratamento ambulatorial com hidratação oral, sintomáticos e sinais de alarme.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta é uma questão que aborda o manejo da gastroenterocolite aguda (GECA). Para resolvê-la, o candidato deve identificar a necessidade de hidratação e avaliar se a via oral é viável para o tratamento.\n\nAnálise clínica:\nA paciente apresenta um quadro clássico de gastroenterite aguda (náuseas, vômitos e diarreia líquida sem sangue ou muco). Apesar de estar hemodinamicamente estável (pressão arterial e frequência cardíaca normais) e apenas levemente desidratada, o ponto crucial do enunciado é a \"inapetência e dificuldade para ingerir líquidos e comprimidos\". Isso caracteriza uma intolerância oral, o que impede o tratamento ambulatorial imediato apenas com orientação de hidratação oral.\n\nAnálise das alternativas:\n\na) Incorreta. Não há sinais de abdome agudo cirúrgico, peritonite ou complicações que justifiquem a radiação e o custo de uma tomografia computadorizada. O diagnóstico é clínico e o quadro é compatível com uma condição autolimitada.\n\nb) Incorreta. A diarreia é líquida e sem produtos patológicos (sangue, muco ou pus), o que sugere etiologia viral ou por toxinas, não havendo indicação rotineira de antibioticoterapia. Além disso, o uso de ceftriaxona e metronidazol é um esquema de amplo espectro para infecções intra-abdominais graves, o que não é o caso de uma paciente estável e sem sinais de sepse.\n\nc) Incorreta. Pelos mesmos motivos da alternativa anterior, o uso de antibiótico (ceftriaxona em monoterapia) não está indicado para um quadro de diarreia aquosa simples em paciente imunocompetente e sem sinais de gravidade sistêmica.\n\nd) Correta. A internação (ou observação clínica em regime de enfermaria/pronto-socorro) justifica-se pela intolerância oral relatada (náuseas, vômitos e dificuldade de ingerir líquidos). Como ela não consegue se hidratar por conta própria e apresenta sinais de desidratação, a reposição volêmica deve ser feita por via endovenosa até que ela recupere a capacidade de ingestão oral e possa receber alta com segurança. O tratamento é de suporte, com hidratação e sintomáticos (antieméticos e analgésicos).\n\ne) Incorreta. Embora o tratamento ambulatorial seja o padrão para a maioria das gastroenterites, a queixa específica de \"dificuldade para ingerir líquidos e comprimidos\" torna a reidratação oral em domicílio insegura neste momento, aumentando o risco de progressão da desidratação e distúrbios hidroeletrolíticos. Ela precisa de estabilização inicial em ambiente hospitalar.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel"
+    ],
+    "difficulty": 38.463934691167154,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:55.802Z"
+  },
+  {
+    "id": "AJUDA_6488a952-551b-4ae9-b3cb-3182adcc9869",
+    "originalId": "6488a952-551b-4ae9-b3cb-3182adcc9869",
+    "statement": "Uma mulher de 64 anos previamente hígida apresenta há cerca de 1 mês cefaleia intensa que não cede com analgésicos comuns, febre baixa, quase diária. A biópsia de uma artéria craniana diagnosticou arterite de células gigantes, afecção na qual podem ocorrer as alterações abaixo, EXCETO",
+    "options": [
+      {
+        "id": "A",
+        "text": "perda súbita da visão monocular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "acometimento quase exclusivo em pessoas com mais de 50 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "claudicação mandibular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "inflamação restrita às artérias originadas do arco aórtico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "anemia e febre de origem obscura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Arterite de Células Gigantes (ACG), também conhecida como arterite temporal, é uma vasculite de grandes vasos que acomete predominantemente indivíduos idosos. A compreensão de suas manifestações clínicas e laboratoriais é fundamental para evitar complicações graves. Abaixo, analisamos cada alternativa:\n\nAlternativa (a): Incorreta para o enunciado (é uma característica da ACG). A perda súbita da visão monocular é a complicação mais temida da ACG. Ela ocorre devido à neuropatia óptica isquêmica anterior, causada pela inflamação e oclusão das artérias ciliares posteriores. É uma emergência médica que requer tratamento imediato com corticoides.\n\nAlternativa (b): Incorreta para o enunciado (é uma característica da ACG). A ACG é quase exclusivamente observada em pacientes com mais de 50 anos de idade. A incidência da doença aumenta progressivamente com o avançar da idade, sendo raríssima em indivíduos jovens.\n\nAlternativa (c): Incorreta para o enunciado (é uma característica da ACG). A claudicação mandibular, caracterizada por dor na mandíbula ao mastigar que melhora com o repouso, é um sintoma altamente específico para o diagnóstico de ACG. Ela reflete a isquemia dos músculos da mastigação (masseter e temporais) decorrente do acometimento das artérias facial e maxilar.\n\nAlternativa (d): Correta (alternativa a ser assinalada). Esta afirmação é falsa porque a inflamação na ACG NÃO é restrita às artérias originadas do arco aórtico. Embora os ramos da carótida externa (como a artéria temporal) sejam os mais frequentemente afetados, a doença pode envolver qualquer parte da aorta (aortite torácica ou abdominal) e seus ramos principais, incluindo vasos que suprem os membros inferiores e outras regiões sistêmicas. O termo \"restrita\" torna a alternativa incorreta do ponto de vista médico.\n\nAlternativa (e): Incorreta para o enunciado (é uma característica da ACG). A ACG frequentemente se manifesta como uma doença inflamatória sistêmica. Ela é uma causa importante de febre de origem obscura em idosos, muitas vezes acompanhada de sintomas constitucionais como perda de peso e mal-estar. Laboratorialmente, é comum encontrar anemia de doença crônica (normocítica e normocrômica) e uma elevação acentuada das provas de atividade inflamatória, como o VHS (velocidade de hemossedimentação).\n\nConclusão: A alternativa (d) é a única que apresenta um conceito incorreto sobre a distribuição anatômica da arterite de células gigantes.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:55.802Z"
+  },
+  {
+    "id": "AJUDA_648925aa-b96d-400e-a333-79fb2b931f89",
+    "originalId": "648925aa-b96d-400e-a333-79fb2b931f89",
+    "statement": "Paciente, sexo feminino, 25 anos de idade, retorna ao atendimento por quadro de tosse seca recorrente há alguns anos, com piora no tempo seco. Nega tabagismo. Não faz uso de medicação. Faz atividade física, mas não consegue fazer corrida e tem tosse ao final das atividades mais intensas. Ao exame físico, apresenta bom estado geral, eupneica, ausculta cardíaca e pulmonar sem alterações. Sem achados ao exame físico. Foi realizado o exame a seguir.\n\nCom base nesse quadro clínico e nesse exame, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ausência de sibilos, ao exame físico, afasta a possibilidade de asma, e a investigação deve incluir tomografia em expiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A espirometria demonstra um distúrbio obstrutivo restritivo leve, que não deve ser considerado asma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A espirometria mostra um padrão obstrutivo sem variação pós-broncodilatador, compatível com DPOC (doença pulmonar obstrutiva crônica).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A tosse seca, bem como sintomas induzidos pelo exercício, somados aos achados de hiperresponsividade das vias aéreas, vistos na espirometria, corroboram o diagnóstico de asma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Para confirmar o diagnóstico de asma, é necessária a dosagem de Imunoglobulina E (IgE).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nA questão apresenta um caso clínico clássico de asma brônquica em uma paciente jovem, com sintomas típicos (tosse seca recorrente, piora com gatilhos ambientais e induzida pelo exercício) e exame físico normal no momento da consulta, o que é muito comum em períodos intercríticos da doença.\n\nAnálise do Exame (Espirometria):\nAo observar a tabela e o gráfico de fluxo-volume, notamos os seguintes pontos fundamentais:\n1. Distúrbio Obstrutivo: A relação VEF1/CVF pré-broncodilatador (BD) é de 66,30%, que está abaixo do Limite Inferior da Normalidade (LIN = 73%). Isso caracteriza obstrução.\n2. Resposta Significativa ao Broncodilatador: O VEF1 apresenta um aumento de 24% (passando de 1,85L para 2,28L). O aumento absoluto foi de 430 ml. Como o critério de reversibilidade na espirometria é um aumento do VEF1 > 12% E > 200 ml em relação ao pré-BD, a prova é positiva para resposta ao broncodilatador.\n3. Curva Fluxo-Volume: A imagem mostra uma concavidade na alça expiratória (pré-BD), típica de obstrução, que melhora visivelmente após o uso do medicamento (pós-BD).\n\nAnálise das alternativas:\n\na) INCORRETA. A asma é uma doença variável. A ausência de sibilos no momento do exame físico não afasta o diagnóstico, pois a paciente pode estar assintomática no consultório. A propedêutica correta para investigação de asma é a espirometria, e não a tomografia.\n\nb) INCORRETA. A espirometria demonstra um distúrbio obstrutivo (pela queda da relação VEF1/CVF) e não restritivo. Além disso, a reversibilidade documentada é um dos pilares para o diagnóstico de asma.\n\nc) INCORRETA. Embora haja um padrão obstrutivo, o exame mostra uma variação pós-broncodilatador muito significativa (24% no VEF1). A DPOC é caracterizada por uma obstrução fixa (relação VEF1/CVF < 0,70 pós-broncodilatador) e geralmente acomete pacientes com histórico de tabagismo e idade mais avançada.\n\nd) CORRETA. Esta alternativa correlaciona perfeitamente a clínica da paciente (tosse seca, sintomas desencadeados por exercício e exposição ao tempo seco) com o achado espirométrico de obstrução variável/reversível. Na prática clínica, a demonstração de reversibilidade do fluxo aéreo ao broncodilatador confirma a hiperresponsividade/instabilidade das vias aéreas característica da asma.\n\ne) INCORRETA. O diagnóstico de asma é essencialmente clínico, apoiado pela demonstração de limitação variável do fluxo aéreo (espirometria). A dosagem de IgE pode auxiliar na identificação do fenótipo alérgico, mas não é um critério necessário para confirmar o diagnóstico da doença.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/176955fca7a390913b39c4e80d83c1ec6a7de53b8b6c0cd1e3c7db20075960dc.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_648925aa-b96d-400e-a333-79fb2b931f89_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/f4daf9dad37d0b63789ac70ca9897dbb492234beaa95be423f864bf4ce3ab571.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_648925aa-b96d-400e-a333-79fb2b931f89_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:56.563Z"
+  }
+]

@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_cbbfca49-fb42-4703-aee6-2da2e9f8fab1",
+    "originalId": "cbbfca49-fb42-4703-aee6-2da2e9f8fab1",
+    "statement": "Mulher de 28 anos queixa-se de dispneia aos esforços há três semanas. Apresentou picos febris de até 37,9°C, sudorese profusa durante as noites e perda de 3kg neste período. Nega ortopneia, dispneia paroxística noturna ou edema periférico. A tomografia do tórax revelou derrame pleural moderado à esquerda e linfonodomegalias mediastinais; o parênquima pulmonar não apresenta anormalidades, a área cardíaca está preservada e não há derrame pericárdico ou alteração do pericárdico. Realizou-se toracocentese diagnóstica. EXAMES DE LABORATÓRIO: Material - sangue: LDH 168U/L; proteínas totais 7,2g/dL. Material líquido pleural: aspecto límpido. LDH 60U/L; proteínas totais 2,4g/dL; células 134/mm³; hemácias ausentes; células atípicas: ausentes. Dentre as seguintes alternativas, assinale aquela que apresenta o diagnóstico diferencial MAIS PROVÁVEL nesse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência cardíaca congestiva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Linfoma",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Lupus eritematoso sistêmico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tuberculose pleural",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para a resolução desta questão, o primeiro passo é a diferenciação entre transudato e exsudato através da aplicação dos Critérios de Light nos resultados da toracocentese.\n\nAnálise do Líquido Pleural (Critérios de Light):\nUm líquido pleural é classificado como exsudato se apresentar pelo menos um dos seguintes critérios:\n1. Relação proteína pleural / proteína sérica superior a 0,5.\n2. Relação LDH pleural / LDH sérico superior a 0,6.\n3. LDH pleural superior a dois terços do limite superior da normalidade para o LDH sérico.\n\nCálculos para o caso:\n- Relação proteína: 2,4 dividido por 7,2 = 0,33 (abaixo de 0,5).\n- Relação LDH: 60 dividido por 168 = 0,35 (abaixo de 0,6).\n- O valor absoluto do LDH pleural (60 U/L) também é baixo.\n\nConclusão: O líquido pleural é um transudato.\n\nAnálise das Alternativas:\n\nAlternativa A - Insuficiência cardíaca congestiva: Incorreta. Embora a ICC seja a causa mais frequente de transudatos pleurais, o quadro clínico da paciente é totalmente divergente. Ela apresenta febre (37,9 °C), sudorese noturna profusa e perda de peso (sintomas constitucionais), além de linfonodomegalias mediastinais na tomografia. A ausência de sintomas típicos como ortopneia, edema e a descrição de uma área cardíaca normal na TC excluem esta hipótese.\n\nAlternativa B - Linfoma: Correta. O linfoma é o diagnóstico mais provável para uma paciente jovem com sintomas B (febre, perda de peso e sudorese noturna) e linfonodomegalias mediastinais. É importante notar que, embora neoplasias frequentemente causem exsudatos por invasão pleural direta, o linfoma pode gerar um transudato por um mecanismo indireto: a obstrução da drenagem linfática no mediastino pelos linfonodos aumentados. Como a pleura ainda não foi infiltrada por células malignas ou inflamatórias, o líquido acumulado mantém características de transudato.\n\nAlternativa C - Lúpus eritematoso sistêmico: Incorreta. O LES pode causar serosites (pleurite), mas o derrame pleural lúpico é classicamente um exsudato, acompanhado de outros sintomas sistêmicos (como artrite ou rash cutâneo) e não costuma cursar com linfonodomegalias mediastinais tão proeminentes quanto o linfoma.\n\nAlternativa D - Tuberculose pleural: Incorreta. A tuberculose pleural é uma causa muito comum de derrame em jovens, apresentando febre e perda de peso. No entanto, o líquido da tuberculose é obrigatoriamente um exsudato com alta concentração proteica e LDH elevado, geralmente com predomínio de linfócitos e ADA elevado. Os dados laboratoriais de transudato tornam este diagnóstico impossível neste caso.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Derrame Pleural",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.144Z"
+  },
+  {
+    "id": "AJUDA_cbc058de-4932-4932-b153-f9a896c3b557",
+    "originalId": "cbc058de-4932-4932-b153-f9a896c3b557",
+    "statement": "Paciente, sexo masculino, 35 anos de idade, trabalhador da construção civil, tabagista e, emagrecido, está em tratamento de tuberculose pulmonar há 2 meses. No entanto, não compareceu a consulta agendada no mês anterior e a equipe multidisciplinar informou que ele não retirou a medicação na farmácia. Paciente relata tosse seca ocasional, nega outros sintomas e confirmou que não usa o tratamento da tuberculose há 1 mês. Diante dessa situação clínica, qual é a conduta a ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar TRM-TB e prescrever o esquema RH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar pesquisa de fungo, cultura de escarro para Mycobacterium tuberculosis com teste de sensibilidade e prescrever o esquema RH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicita de BAAR no escarro e prescrever esquema RIPE.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar pesquisa de BAAR no escarro, TRM-TB, cultura de escarro para Mycobacterium tuberculosis com teste de sensibilidade e prescrever o esquema RIPE.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente com diagnóstico de tuberculose pulmonar que interrompeu o tratamento por mais de 30 dias (abandono de tratamento). Segundo as normas do Ministério da Saúde do Brasil, o abandono é configurado quando o paciente deixa de comparecer à unidade de saúde por mais de 30 dias após a data prevista para a retirada da medicação.\n\nDiante de um paciente que retorna após abandono, a conduta correta envolve dois pilares: o reinício do tratamento e a investigação de possível resistência bacilar, uma vez que o uso irregular da medicação é um dos principais fatores de risco para a seleção de cepas resistentes.\n\nAnálise das alternativas:\n\na) Incorreta. Solicitar apenas o TRM-TB (Teste Rápido Molecular para Tuberculose) é insuficiente para um caso de retorno após abandono, pois a cultura com teste de sensibilidade é obrigatória nesses casos para avaliar a resistência a outras drogas além da rifampicina. Além disso, o esquema RH (rifampicina e isoniazida) é a fase de manutenção; ao reiniciar o tratamento após abandono, deve-se utilizar o esquema RIPE (fase intensiva).\n\nb) Incorreta. A pesquisa de fungos não é a prioridade diagnóstica neste momento, pois o paciente tem diagnóstico confirmado de TB e o foco é o manejo do abandono. O esquema RH também está incorreto para o reinício, conforme explicado anteriormente.\n\nc) Incorreta. Embora o esquema RIPE e a pesquisa de BAAR (Bacilo Álcool-Ácido-Resistente) estejam indicados, a alternativa é incompleta. Em casos de retorno após abandono, é mandatória a realização de cultura com teste de sensibilidade e do TRM-TB, para identificar precocemente casos de tuberculose drogarresistente.\n\nd) Correta. Esta alternativa contempla rigorosamente o protocolo do Ministério da Saúde para pacientes que retornam após abandono de tratamento. Deve-se solicitar: \n1. Baciloscopia (BAAR): para avaliação da infectividade.\n2. TRM-TB: para detecção rápida de resistência à rifampicina.\n3. Cultura para Mycobacterium tuberculosis: padrão-ouro para diagnóstico e acompanhamento.\n4. Teste de Sensibilidade (TS): obrigatório em todos os casos de retratamento para identificar resistência aos fármacos do esquema básico.\nO esquema terapêutico a ser prescrito é o RIPE (rifampicina, isoniazida, pirazinamida e etambutol), reiniciando-se a fase intensiva do tratamento.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.144Z"
+  },
+  {
+    "id": "AJUDA_cbc27474-38ad-49d4-be29-f859a43644c9",
+    "originalId": "cbc27474-38ad-49d4-be29-f859a43644c9",
+    "statement": "Um ensaio clínico aleatorizado, duplamente encoberto e multicêntrico foi realizado para investigar a efetividade da trombectomia mecânica associada ao melhor tratamento clínico na redução da letalidade após o adoecimento com acidente vascular encefálico isquêmico (AVEI) com oclusão de grandes vasos e com “janela” de sintomas maior do que 8 horas e menor que 24 horas, em comparação com o uso apenas do melhor tratamento clínico. Na tabela a seguir são apresentados os resultados obtidos ao final do estudo, analisados por intenção de tratar.\n\nBaseado na tabela, analise as afirmativas a seguir:\nI) A diferença na letalidade pós-AVEI entre o grupo controle e o grupo submetido à trombectomia mecânica associada ao melhor tratamento clínico foi de 66,7%.\nII) A trombectomia mecânica associada ao melhor tratamento clínico possibilitou uma redução da letalidade pós-AVEI de 33,3% em relação ao grupo controle.\nIII) Dez pacientes diagnosticados com AVEI devem ser tratados com trombectomia mecânica associada ao melhor tratamento clínico para que uma morte seja evitada.\n\nPode-se afirmar que está(ão) correta(s) a(s) afirmativa(s):",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "II e III",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão de epidemiologia clínica, devemos extrair os dados da tabela e calcular os indicadores de risco e benefício.\n\nPasso 1: Cálculo da taxa de letalidade (incidência de óbitos) em cada grupo.\nGrupo Tratado: 105 óbitos em um total de 525 pacientes. Taxa = 105 / 525 = 0,20 (ou 20 por cento).\nGrupo Controle: 156 óbitos em um total de 520 pacientes. Taxa = 156 / 520 = 0,30 (ou 30 por cento).\n\nAnálise da afirmativa I: Incorreta.\nA diferença na letalidade entre os grupos é a Redução Absoluta do Risco (RAR). O cálculo é: Taxa do Controle menos Taxa do Tratado. Portanto: 30 por cento - 20 por cento = 10 por cento. A afirmativa afirma erroneamente que a diferença foi de 66,7 por cento.\n\nAnálise da afirmativa II: Correta.\nA redução da letalidade em relação ao grupo controle é a Redução do Risco Relativo (RRR). Ela indica quanto o tratamento reduziu o risco que já existia no grupo padrão. O cálculo é: (Taxa do Controle - Taxa do Tratado) / Taxa do Controle. Aplicando os valores: (0,30 - 0,20) / 0,30 = 0,10 / 0,30 = 0,333, o que equivale a 33,3 por cento.\n\nAnálise da afirmativa III: Correta.\nEsta afirmativa refere-se ao Número Necessário para Tratar (NNT), que define quantos pacientes precisam receber a intervenção para que um desfecho negativo seja evitado. O NNT é o inverso da Redução Absoluta do Risco (RAR). O cálculo é: NNT = 1 / RAR. Como a RAR encontrada foi de 10 por cento (ou 0,10 em números decimais), temos: NNT = 1 / 0,10 = 10. Isso confirma que é necessário tratar 10 pacientes para evitar um óbito.\n\nConclusão: Como as afirmativas II e III estão tecnicamente corretas de acordo com os cálculos epidemiológicos, a alternativa correta é a letra (d).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Estatística Médica",
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/620a8adbf1c2dfc5fe2a5e0f4c2a446e2357ca1cf895b4ec691b684c7162fea8.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_cbc27474-38ad-49d4-be29-f859a43644c9_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.609Z"
+  },
+  {
+    "id": "AJUDA_cbc6b7eb-745c-47f4-a6ed-e5e682a66a54",
+    "originalId": "cbc6b7eb-745c-47f4-a6ed-e5e682a66a54",
+    "statement": "As lesões vasculares em extremidades são uma preocupação crítica em casos de trauma, pois podem levar a complicações graves, incluindo choque hemorrágico e isquemia. Das situações clínicas a seguir, a que deve levantar a suspeita de lesão da artéria braquial é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Luxação do ombro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Presença de dor na região do pé após trauma contuso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fratura supracondiliana do úmero.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hemorragia ativa na coxa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nA questão aborda a correlação entre traumas ortopédicos e lesões vasculares específicas. Para responder corretamente, é necessário o conhecimento da anatomia vascular e sua relação com as estruturas ósseas adjacentes.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A luxação do ombro, especialmente a do tipo anterior, está classicamente associada a lesões da artéria axilar ou do nervo axilar. A artéria braquial tem seu início apenas após a borda inferior do músculo redondo maior, situando-se mais distalmente em relação à articulação do ombro.\n\nAlternativa (b) Incorreta: Sintomas ou traumas na região do pé estão relacionados à vascularização dos membros inferiores, como as artérias tibiais (anterior e posterior) e a artéria fibular. Não há qualquer conexão anatômica entre traumas no pé e a artéria braquial, que é exclusiva do membro superior.\n\nAlternativa (c) Correta: A fratura supracondiliana do úmero é uma lesão comum, especialmente na população pediátrica. Devido à proximidade anatômica, o fragmento ósseo proximal deslocado (geralmente em quedas com o cotovelo em extensão) pode comprimir, lacerar ou causar espasmo na artéria braquial, que passa anteriormente à região distal do úmero. Essa é uma situação de emergência, pois a interrupção do fluxo sanguíneo pode levar à isquemia aguda do antebraço e a complicações graves, como a Contratura Isquêmica de Volkmann.\n\nAlternativa (d) Incorreta: Uma hemorragia ativa na coxa indica lesão de vasos calibrosos do membro inferior, mais especificamente da artéria femoral (comum, superficial ou profunda). Assim como na alternativa (b), a topografia é incompatível com a artéria braquial.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Complicações do Trauma Ortopédico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.609Z"
+  },
+  {
+    "id": "AJUDA_cbc7467c-b3d5-45f2-8363-a87c57ecb0fb",
+    "originalId": "cbc7467c-b3d5-45f2-8363-a87c57ecb0fb",
+    "statement": "Após fortes chuvas e enchentes em uma comunidade ribeirinha, a UBS local registrou aumento de casos de febre, mialgia e icterícia leve em adultos, com histórico de contato com água de enchente contaminada. Dados epidemiológicos indicam uma incidência de 15 casos por 10.000 habitantes. Qual é a conduta mais adequada para a APS neste cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrição de antibióticos empíricos para todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Notificação imediata, tratamento dos casos, educação sanitária, prevenção de exposição e mobilização comunitária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhamento apenas dos casos graves para hospital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fechamento temporário da UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO-EPIDEMIOLÓGICO:\nO quadro descrito (febre, mialgia e icterícia leve após exposição a águas de enchente) é altamente sugestivo de Leptospirose. A incidência relatada de 15 casos por 10.000 habitantes configura um surto em uma área de risco. No contexto da Atenção Primária à Saúde (APS), a abordagem deve ser integral, unindo o cuidado individual (clínico) às ações de vigilância em saúde (coletivas).\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\nA conduta na APS diante de doenças de notificação compulsória e surtos infecciosos deve ser multifacetada:\n1. Notificação imediata: A leptospirose é uma doença de notificação compulsória. Em situações de surto, a rapidez da notificação permite que os órgãos de vigilância epidemiológica ajam para controlar a fonte de infecção.\n2. Tratamento dos casos: O manejo clínico oportuno reduz a morbidade e o risco de progressão para formas graves (Síndrome de Weil).\n3. Educação sanitária e prevenção de exposição: Instruir a população sobre como evitar o contato com água ou lama contaminada e como realizar a desinfecção de domicílios com hipoclorito de sódio.\n4. Mobilização comunitária: Fundamental para identificar novos casos e organizar a resposta local ao desastre ambiental.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): Embora o tratamento precoce seja indicado para casos suspeitos, a conduta da APS não pode se restringir apenas à prescrição de antibióticos. Uma abordagem puramente assistencialista ignora a necessidade de vigilância epidemiológica e as ações de saúde pública essenciais para conter o surto na comunidade.\n\nAlternativa (c): A APS tem um papel resolutivo e deve tratar os casos leves e moderados conforme os protocolos do Ministério da Saúde. O encaminhamento hospitalar é reservado para casos com sinais de alerta (insuficiência renal, hemorragia pulmonar, icterícia rubínica) ou gravidade. Além disso, focar apenas nos casos graves negligencia o controle epidemiológico da doença na comunidade.\n\nAlternativa (d): O fechamento da Unidade Básica de Saúde no momento de maior necessidade da população (após um desastre natural e durante um aumento de casos de doenças infecciosas) é uma medida tecnicamente inadequada e eticamente incorreta. A unidade deve, ao contrário, organizar seu fluxo de atendimento para absorver a demanda extra.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Atenção Primária à Saúde",
+      "Leptospirose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.609Z"
+  },
+  {
+    "id": "AJUDA_cbc8ca9f-e448-46df-a575-0c45ebb47bc1",
+    "originalId": "cbc8ca9f-e448-46df-a575-0c45ebb47bc1",
+    "statement": "Sobre cirurgia limpa, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É caracterizada pela ausência de penetração em tratos contaminados e sem sinais de inflamação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Inclui procedimentos com presença de pus, tecidos desvitalizados ou perfuração de víscera oca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É aquela em que ocorre penetração controlada em tratos contaminados (respiratório, gastrointestinal, urinário).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "São procedimentos em que há contaminação grosseira e necessidade de antibioticoterapia prolongada obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A classificação das feridas cirúrgicas de acordo com o potencial de contaminação é um tema fundamental na prática cirúrgica para determinar o risco de infecção e a necessidade de antibioticoprofilaxia.\n\nAlternativa (a) - Correta: As cirurgias limpas são realizadas em tecidos estéreis ou passíveis de descontaminação, na ausência de processo infeccioso ou inflamatório local. O critério definidor é que não ocorre a penetração nos tratos respiratório, digestório, genital ou urinário. Exemplos típicos incluem cirurgias cardíacas, neurocirurgias eletivas, herniorrafias e cirurgias ortopédicas eletivas de grande porte.\n\nAlternativa (b) - Incorreta: Esta descrição refere-se às cirurgias infectadas ou sujas. Elas são caracterizadas pela presença de processo infeccioso prévio (pus), tecidos desvitalizados/necróticos, feridas traumáticas com mais de 4 a 6 horas de evolução ou perfuração de vísceras ocas.\n\nAlternativa (c) - Incorreta: Esta é a definição de cirurgia potencialmente contaminada (ou limpa-contaminada). Nestes casos, o cirurgião penetra propositalmente e de forma controlada em tratos colonizados por microrganismos (respiratório, digestório ou urinário), mas sem que haja um processo inflamatório intenso ou falha técnica grosseira. Exemplos incluem a colecistectomia eletiva e a histerectomia.\n\nAlternativa (d) - Incorreta: Refere-se às cirurgias contaminadas. São procedimentos realizados em tecidos recentemente traumatizados e abertos, com inflamação aguda sem formação de pus, ou cirurgias onde houve falha técnica grosseira na assepsia ou extravasamento de conteúdo do trato gastrointestinal. Nessas situações, o risco de infecção é elevado.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.609Z"
+  },
+  {
+    "id": "AJUDA_cbc92635-b0b3-4d6d-999b-420ab7779b11",
+    "originalId": "cbc92635-b0b3-4d6d-999b-420ab7779b11",
+    "statement": "Uma criança de cinco anos de idade foi levada à unidade básica de saúde para atualização do calendário vacinal, que estava com o esquema da vacina DTP incompleto, com apenas duas doses aplicadas antes dos dois anos. Nesse caso, a conduta correta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "reiniciar todo o esquema desde a primeira dose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "utilizar apenas uma dose de reforço e encerrar o esquema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "suspender o esquema e aplicar dT na adolescência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "completar o esquema com a terceira dose e aplicar reforços conforme a idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O princípio fundamental do Programa Nacional de Imunizações (PNI) no Brasil é que dose dada é dose contada. Isso significa que, independentemente do tempo de atraso entre as doses, o esquema vacinal nunca deve ser reiniciado, apenas completado de onde parou.\n\nPara a vacina DTP (difteria, tétano e pertussis), o esquema básico preconizado consiste em três doses iniciais (comumente aplicadas aos 2, 4 e 6 meses de vida como parte da vacina pentavalente), seguidas de dois reforços (preferencialmente aos 15 meses e aos 4 anos de idade).\n\nAnálise das alternativas:\n\na) Incorreta. Reiniciar o esquema é uma conduta tecnicamente errada e desnecessária, pois o organismo mantém a memória imunológica das doses aplicadas anteriormente, mesmo que o intervalo tenha sido muito superior ao recomendado.\n\nb) Incorreta. Com apenas duas doses, a criança ainda não atingiu o patamar de proteção do esquema primário de imunização. Apenas um reforço não substitui a necessidade de completar as três doses básicas mais os reforços necessários para a manutenção da imunidade a longo prazo.\n\nc) Incorreta. A vacina dT (dupla tipo adulto, sem o componente da coqueluche) é indicada para crianças a partir de 7 anos de idade que não foram vacinadas ou que precisam de reforços. Aos 5 anos, a criança ainda deve receber o componente pertussis (coqueluche); por isso, a DTP continua sendo a vacina de escolha.\n\nd) Correta. Esta é a conduta que segue as normas do PNI. Deve-se aplicar a terceira dose para finalizar o esquema primário e, posteriormente, programar os reforços respeitando os intervalos mínimos (geralmente 6 meses após a terceira dose para o primeiro reforço). Como a criança tem 5 anos, ela deve completar o esquema para garantir a proteção efetiva contra as três doenças.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.609Z"
+  },
+  {
+    "id": "AJUDA_cbd04410-e1e0-43f6-ac99-2c6b95fa63ba",
+    "originalId": "cbd04410-e1e0-43f6-ac99-2c6b95fa63ba",
+    "statement": "Durante o parto, a avaliação dos planos de De Lee é uma ferramenta importante na construção do partograma. Desse modo, a apresentação fetal cefálica em",
+    "options": [
+      {
+        "id": "A",
+        "text": "+4 persistente indica cesárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "-3 indica possibilidade de locar fórcipe de alívio se for necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "0 é a posição ideal para os fórcipes de rotação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "-1 persistente indica utilização de ocitocina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "+3 indica que o parto está próximo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Os planos de De Lee são utilizados para medir a progressão do feto pelo canal de parto, tomando como ponto de referência zero (0) as espinhas isquiáticas da pelve materna. As posições acima das espinhas são negativas (-1 a -5) e abaixo são positivas (+1 a +5).\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. O plano +4 de De Lee indica que a apresentação fetal está muito baixa, praticamente no assoalho pélvico e próxima ao desprendimento. Nesse estágio, uma cesariana é tecnicamente difícil e arriscada devido ao encravamento profundo da cabeça, sendo o parto vaginal iminente ou auxiliado por vácuo/fórcipe a conduta habitual em caso de necessidade de abreviação.\n\nAlternativa b) Incorreta. O plano -3 indica que o feto ainda está muito alto na bacia (acima das espinhas isquiáticas). O uso de fórcipe é absolutamente contraindicado quando o feto não está devidamente encaixado. O fórcipe de alívio (ou de saída) exige, por definição, que a cabeça fetal esteja no plano +5, visível na fenda vulvar sem necessidade de afastar os lábios.\n\nAlternativa c) Incorreta. O plano 0 corresponde ao nível das espinhas isquiáticas. Embora o feto seja considerado \"insinuado\" ou \"encaixado\" nesse ponto, não é a posição ideal para fórcipes de rotação. Fórcipes aplicados no plano 0 são classificados como fórcipes médios e carregam maior risco de trauma materno e fetal. O ideal é que as rotações ocorram em planos mais baixos (+2 ou mais).\n\nAlternativa d) Incorreta. A persistência da apresentação no plano -1 (sem progressão) pode sugerir uma desproporção cefalopélvica (DCP) ou uma parada secundária da descida. A utilização de ocitocina não é uma indicação automática baseada apenas no plano; ela depende da avaliação da dinâmica uterina (se as contrações são efetivas ou não). Se a contratilidade for adequada e não houver descida, a suspeita de DCP aumenta, o que contraindicaria a ocitocina.\n\nAlternativa e) Correta. No plano +3 de De Lee, a parte mais baixa da apresentação fetal já ultrapassou em 3 centímetros as espinhas isquiáticas, encontrando-se profundamente no canal de parto e próxima ao assoalho pélvico. Isso indica que a fase de descida está avançada e o nascimento está muito próximo de ocorrer.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.609Z"
+  },
+  {
+    "id": "AJUDA_cbd3105b-12e1-4804-a99a-54365a529355",
+    "originalId": "cbd3105b-12e1-4804-a99a-54365a529355",
+    "statement": "Paciente masculino, 17 anos, com diagnóstico de retocolite ulcerativa há 12 meses e em abandono de tratamento recente vem à emergência apresentando desidratação, piora do estado geral, episódios frequentes de diarreia sanguinolenta, dor abdominal, perda de peso e febre. Qual é o diagnóstico mais provável e qual é a conduta terapêutica inicial recomendada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Atividade de doença com possibilidade de infecção bacteriana associada, sendo indicada internação para excluir complicações e avaliar necessidade de uso de antibióticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Atividade de doença e encaminhamento para nutricionista para dieta de exclusão de glúten e suporte nutricional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infecção por Clostridioides difficile e alta hospitalar com antidiarreicos e agentes antiespasmódicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tuberculose intestinal, sendo indicada a cirurgia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O paciente apresenta um quadro clínico clássico de crise grave de Retocolite Ulcerativa (RCU). O diagnóstico é sugerido pela história prévia da doença, pelo abandono do tratamento e pela presença de sinais de alerta, como diarreia sanguinolenta frequente, febre, dor abdominal, desidratação e perda de peso. De acordo com os critérios de Truelove e Witts, a ocorrência de mais de seis evacuações sanguinolentas por dia associada a sinais de toxicidade sistêmica (como febre e taquicardia) classifica o surto como grave, exigindo intervenção imediata.\n\nAlternativa (a) CORRETA: O diagnóstico é de exacerbação ou atividade da doença. Em pacientes com RCU que apresentam piora súbita, é obrigatória a internação hospitalar para suporte clínico (hidratação venosa, correção hidroeletrolítica) e início de corticoterapia sistêmica. Além disso, é fundamental excluir complicações agudas, como o megacólon tóxico, e investigar infecções associadas. Infecções por bactérias entéricas ou pelo Clostridioides difficile podem mimetizar ou desencadear crises de RCU, e o uso de antibióticos pode ser necessário se houver suspeita de infecção secundária ou sepse.\n\nAlternativa (b) INCORRETA: Embora o suporte nutricional seja parte do cuidado longitudinal, o paciente está em uma emergência médica com sinais de gravidade. A dieta de exclusão de glúten é o tratamento da doença celíaca e não possui indicação ou evidência de benefício no tratamento da Retocolite Ulcerativa. O encaminhamento ambulatorial para nutricionista é insuficiente para o quadro agudo descrito.\n\nAlternativa (c) INCORRETA: A infecção por Clostridioides difficile é, de fato, um diagnóstico diferencial importante e uma complicação comum em pacientes com doenças inflamatórias intestinais. No entanto, a conduta de dar alta hospitalar para um paciente com sinais de toxicidade sistêmica é incorreta. Além disso, o uso de antidiarreicos (como loperamida) e antiespasmódicos é formalmente contraindicado em crises graves de colite, pois essas medicações reduzem a motilidade intestinal e podem precipitar o megacólon tóxico.\n\nAlternativa (d) INCORRETA: A tuberculose intestinal é um diferencial comum para a Doença de Crohn, mas o paciente já tem diagnóstico firmado de RCU há 12 meses. Mesmo que houvesse suspeita de tuberculose, o tratamento inicial é farmacológico (esquema RIPE) e não cirúrgico. A cirurgia de urgência na RCU é reservada para complicações graves que não respondem ao tratamento clínico, como perfuração intestinal, hemorragia maciça ou megacólon tóxico refratário.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.609Z"
+  },
+  {
+    "id": "AJUDA_cbd65dc7-c073-483e-9411-359e4b6eecd7",
+    "originalId": "cbd65dc7-c073-483e-9411-359e4b6eecd7",
+    "statement": "Mulher de 38 anos, com diagnóstico prévio de hipotireoidismo em uso de levotiroxina, com exames recentes (TSH e T4 livre) dentro da normalidade, procura atendimento ambulatorial por fadiga intensa, perda de 4 kg nos últimos 2 meses e náuseas recorrentes.\nAo exame físico, destaca-se hiperpigmentação difusa da pele, mais evidente em áreas expostas ao Sol. Nega febre, tosse ou sudorese noturna.\nOs exames laboratoriais revelam:\n• sódio sérico de 128 mEq/L;\n• potássio de 6,1 mEq/L;\n• cortisol plasmático matinal de 2 µg/dL (valor de referência: 5–25 µg/dL);\n• hemoglobina de 13,2 g/dL;\n• leucócitos totais normais com eosinofilia leve (800/µL);\n• proteína C-reativa dentro da normalidade.\nCom base nesses achados, a fisiopatologia mais provável da condição apresentada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "a supressão crônica do eixo hipotálamo-hipófise-adrenal por uso de glicocorticoides exógenos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a destruição autoimune da adrenal com perda de secreção de glicocorticoides e mineralocorticoides.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a produção ectópica de ACTH por neoplasia neuroendócrina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a redução da secreção de ACTH pela hipófise anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o defeito congênito na conversão de colesterol em pregnenolona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico e laboratorial apresentado aponta diretamente para o diagnóstico de Insuficiência Adrenal Primária, também conhecida como Doença de Addison. A paciente apresenta a tríade clássica: sintomas de hipocortisolismo (fadiga, náuseas e perda de peso), sinais de deficiência de mineralocorticoides (hiponatremia e hipercalemia) e hiperpigmentação cutânea (sinal de elevação acentuada do ACTH).\n\nAlternativa a: Incorreta. O uso de glicocorticoides exógenos causa insuficiência adrenal secundária por supressão do eixo hipotálamo-hipófise-adrenal. Nesses casos, os níveis de ACTH estão baixos, o que impede a ocorrência de hiperpigmentação. Além disso, a secreção de mineralocorticoides (aldosterona) costuma ser preservada, pois é regulada principalmente pelo sistema renina-angiotensina-aldosterona e não pelo ACTH, o que justifica a ausência de hipercalemia na forma secundária.\n\nAlternativa b: Correta. A adrenalite autoimune é a causa mais comum de insuficiência adrenal primária. Ela resulta na destruição de todas as camadas do córtex adrenal, levando à deficiência de glicocorticoides (cortisol) e mineralocorticoides (aldosterona). A redução do cortisol retira o feedback negativo na hipófise, causando aumento do ACTH. O precursor do ACTH, a pró-opiomelanocortina (POMC), também gera o hormônio estimulador de melanócitos, resultando na hiperpigmentação observada. O fato de a paciente já possuir hipotireoidismo (provavelmente de Hashimoto) reforça a etiologia autoimune, sugerindo uma Síndrome Poliglandular Autoimune tipo 2.\n\nAlternativa c: Incorreta. A produção ectópica de ACTH, geralmente por tumores neuroendócrinos, leva à Síndrome de Cushing (excesso de cortisol) e não à insuficiência adrenal. Embora possa causar hiperpigmentação pelo excesso de ACTH, os achados de cortisol baixo, perda de peso e hipercalemia são incompatíveis com essa condição.\n\nAlternativa d: Incorreta. A redução da secreção de ACTH caracteriza a insuficiência adrenal secundária (origem hipofisária). Conforme mencionado na alternativa A, nesta condição o paciente não apresenta hiperpigmentação (pois o ACTH está baixo) e não costuma apresentar hipercalemia.\n\nAlternativa e: Incorreta. Defeitos congênitos na conversão de colesterol em pregnenolona representam formas raríssimas de hiperplasia adrenal congênita (como a hiperplasia lipoide). Essas condições manifestam-se tipicamente no período neonatal ou na primeira infância, com crises de perda de sal e distúrbios do desenvolvimento sexual, não sendo compatíveis com uma paciente de 38 anos que desenvolveu sintomas recentemente.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:44.609Z"
+  }
+]

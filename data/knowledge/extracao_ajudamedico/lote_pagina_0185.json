@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_33e1d9a4-6f00-41d8-b57a-26aedf348383",
+    "originalId": "33e1d9a4-6f00-41d8-b57a-26aedf348383",
+    "statement": "Homem de 69 anos, com antecedente de diabetes mellitus tipo 2 há 15 anos, procura o ambulatório queixando-se de episódios frequentes de tontura e visão borrada ao se levantar, especialmente pela manhã e após refeições volumosas. Refere dois episódios pré-sincopais na última semana, um deles ao sair do banho. Usa metformina 850 mg 2x/dia para controle do diabetes. Ao exame, apresenta PA após cinco minutos em decúbito de 138 x 84 mmHg e FC de 72 bpm; após três minutos em posição ortostática, PA: 108 x 70 mmHg e FC: 70 bpm. Ausculta cardíaca com bulhas rítmicas, normofonéticas, sem sopros. Ao exame neurológico, reflexos discretamente reduzidos nos tornozelos e sensibilidade vibratória diminuída nos pés, com força preservada.\n\nQual é o diagnóstico mais provável para os sintomas desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotensão ortostática neurogênica por neuropatia autonômica do diabetes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hipotensão ortostática não neurogênica induzida por metformina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síncope vasovagal desencadeada por banhos quentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Taquicardia Postural Ortostática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\n\nO paciente apresenta um quadro clássico de hipotensão ortostática (HO), definida tecnicamente pela queda da pressão arterial sistólica em pelo menos 20 mmHg ou da pressão arterial diastólica em pelo menos 10 mmHg dentro de três minutos após assumir a posição ortostática. No caso em questão, houve uma queda de 30 mmHg na sistólica (de 138 para 108 mmHg) e 14 mmHg na diastólica (de 84 para 70 mmHg), confirmando o diagnóstico de HO.\n\nO ponto-chave para diferenciar a etiologia é a resposta da frequência cardíaca (FC). Em condições normais ou em causas não neurogênicas (como desidratação), a queda da pressão arterial desencadeia um aumento compensatório da FC mediado pelos barorreflexos. Este paciente, no entanto, manteve a FC praticamente estável (72 para 70 bpm), evidenciando uma falha autonômica. Somado ao histórico de 15 anos de diabetes mellitus e aos achados de neuropatia periférica no exame físico (hiporreflexia e diminuição da sensibilidade vibratória), o diagnóstico se confirma como neuropatia autonômica diabética.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O paciente preenche os critérios para hipotensão ortostática. A ausência de taquicardia compensatória diante da queda pressórica caracteriza a natureza neurogênica do distúrbio. O diabetes de longa data é uma das causas mais comuns de disautonomia, afetando as fibras nervosas que controlam o tônus vascular e a resposta cardíaca. Sintomas que pioram pela manhã, após refeições (pela redistribuição de fluxo para o trato gastrointestinal) e após banhos quentes (pela vasodilatação periférica) são típicos dessa condição.\n\nAlternativa b) Incorreta. A metformina é um medicamento da classe das biguanidas que atua principalmente na resistência insulínica e na produção hepática de glicose, não possuindo efeito colateral conhecido de causar hipotensão ortostática. Além disso, se a causa fosse puramente medicamentosa ou hipovolêmica (não neurogênica), seria esperado um aumento reflexo da frequência cardíaca.\n\nAlternativa c) Incorreta. Embora o calor do banho possa ser um gatilho para a síncope vasovagal por promover vasodilatação, a síncope vasovagal é um evento reflexo episódico e geralmente precedido por pródromos autonômicos exuberantes (sudorese, náuseas, palidez). O quadro do paciente é crônico, reprodutível ao se levantar e o exame físico confirmou a hipotensão postural sustentada com falha na resposta cronotrópica, o que aponta para falência autonômica crônica e não um reflexo situacional isolado.\n\nAlternativa d) Incorreta. A Síndrome de Taquicardia Postural Ortostática (POTS) é caracterizada por um aumento excessivo da frequência cardíaca ao se levantar (geralmente um aumento superior a 30 bpm em adultos) na ausência de hipotensão ortostática significativa. O paciente em questão apresenta justamente o oposto: uma queda importante da pressão arterial sem o aumento esperado da frequência cardíaca. Além disso, a POTS é mais comum em mulheres jovens, diferindo do perfil epidemiológico deste paciente.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síncope",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:54.784Z"
+  },
+  {
+    "id": "AJUDA_33e40868-472e-4d89-bb1b-e1e17e1a8d95",
+    "originalId": "33e40868-472e-4d89-bb1b-e1e17e1a8d95",
+    "statement": "Um adolescente de 14 anos apresenta histórico de desatenção desde a infância, desempenho escolar irregular, irritabilidade, impulsividade e dificuldade significativa em organizar tarefas. A mãe relata que, nos últimos meses, o jovem passou a dormir tarde, usa telas até tarde e frequentemente perde horário da escola. Qual alternativa está correta a respeito do diagnóstico clínico de TDAH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico de TDAH em adolescentes deve ser baseado apenas no relato familiar, pois frequentemente o próprio jovem não reconhece seus sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para confirmar TDAH, é necessário que os sintomas tenham início após os 12 anos, quando a demanda escolar aumenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A investigação deve incluir avaliação da rotina de sono, uso de telas e presença de comorbidades como ansiedade e depressão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico de TDAH deve ser evitado na presença de dificuldades escolares, pois estas podem confundir a avaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O uso de escalas comportamentais substitui a avaliação clínica quando bem preenchidas por pais e professores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. O diagnóstico de TDAH deve ser multi-informado. Embora o relato dos pais e da escola seja fundamental, a autopercepção do adolescente também deve ser considerada durante a anamnese e o exame psíquico. O diagnóstico nunca deve ser baseado em apenas uma fonte de informação.\n\nAlternativa b) Incorreta. Segundo os critérios do DSM-5, vários sintomas de desatenção ou hiperatividade-impulsividade devem estar presentes antes dos 12 anos de idade. O surgimento de sintomas apenas após essa idade sugere a necessidade de investigar outros diagnósticos diferenciais.\n\nAlternativa c) Correta. O diagnóstico de TDAH é clínico e exige a exclusão de outras condições que podem mimetizar o quadro. A privação de sono e o uso excessivo de telas (comum em adolescentes) podem causar desatenção e irritabilidade. Além disso, o TDAH apresenta altas taxas de comorbidade com transtornos de ansiedade e depressão, que devem ser investigados sistematicamente para o manejo adequado.\n\nAlternativa d) Incorreta. As dificuldades escolares são evidências de prejuízo funcional, o que é um critério essencial para o diagnóstico de TDAH. Em vez de evitar o diagnóstico, essas dificuldades devem ser investigadas para verificar se são decorrentes do TDAH ou de transtornos específicos de aprendizagem (como dislexia).\n\nAlternativa e) Incorreta. As escalas comportamentais são ferramentas complementares úteis para triagem e monitoramento de sintomas, mas não possuem valor diagnóstico isolado. O diagnóstico de TDAH é soberanamente clínico, baseado na história detalhada e na observação direta do paciente.\n\nGabarito: Letra (c).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:54.784Z"
+  },
+  {
+    "id": "AJUDA_33e6a22b-84b1-475b-86f4-7f0723a84ed0",
+    "originalId": "33e6a22b-84b1-475b-86f4-7f0723a84ed0",
+    "statement": "No Brasil, a ética médica é normatizada pelo Conselho Federal de Medicina (CFM) desde 1957, em suas diferentes hierarquias normativas (Código de Ética Médica, Resoluções e Pareceres), e pelos Conselhos Regionais de Medicina (CRM). Segundo o Código De Ética Médica, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É concedido ao médico: ser perito ou auditor do próprio paciente, de pessoa de sua família ou de qualquer outra com a qual tenha relações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É vedado ao médico: liberar cópias do prontuário sob sua guarda, salvo quando autorizado, por escrito pelo paciente, para atender a ordem judicial ou para a sua própria defesa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "É permitido ao médico: revelar fato de que tenha conhecimento em virtude do exercício de sua profissão, salvo por motivo justo, dever legal ou consentimento, por escrito, do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O médico guardará sigilo a respeito das informações de que detenha conhecimento no desempenho de suas funções, sem exceção dos casos previstos em lei.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Incorreta. De acordo com o Artigo 93 do Código de Ética Médica (CEM), é expressamente vedado ao médico atuar como perito ou auditor de seu próprio paciente, de familiares ou de qualquer pessoa com quem mantenha relações que possam comprometer sua isenção e imparcialidade. O papel de assistência clínica é incompatível com o papel de peritagem/auditoria sobre a mesma pessoa.\n\nAlternativa b: Correta. Esta alternativa reflete o texto do Artigo 89 do CEM. O médico, na condição de guardião do prontuário, não pode liberar cópias do documento de forma indiscriminada. As únicas exceções permitidas pela norma ética são: quando houver autorização por escrito do próprio paciente, para o cumprimento de uma ordem judicial (direcionada ao juízo e não às partes) ou quando o documento for estritamente necessário para a própria defesa do médico em processos éticos ou judiciais.\n\nAlternativa c: Incorreta. Embora apresente as exceções corretas (motivo justo, dever legal ou consentimento), a redação inverte a regra ética. Segundo o Artigo 73 do CEM, é vedado ao médico revelar fato de que tenha conhecimento em virtude de sua profissão. O sigilo é a norma e o dever profissional; a revelação é a exceção que só se justifica nos casos citados. Afirmar que \"é permitido revelar, salvo...\" altera a natureza protetiva do sigilo médico.\n\nAlternativa d: Incorreta. O erro está na afirmação \"sem exceção dos casos previstos em lei\". O sigilo médico não é um valor absoluto acima da legislação vigente. O próprio Código de Ética Médica estabelece que o dever de sigilo cede diante de situações de dever legal (como a notificação compulsória de doenças ou comunicação de crimes de ação pública) e motivo justo (como a proteção da vida de terceiros). Portanto, existem, sim, exceções legais e éticas ao sigilo.\n\nGabarito: Letra B.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:54.784Z"
+  },
+  {
+    "id": "AJUDA_33f2ea99-6e80-4ceb-9331-bd37bac90084",
+    "originalId": "33f2ea99-6e80-4ceb-9331-bd37bac90084",
+    "statement": "Um homem de 68 anos, com câncer do reto médio, foi submetido a uma ressecção anterior baixa por via laparoscópica. Durante o procedimento, o cirurgião optou por ligadura do tronco da artéria mesentérica inferior (AMI) no seu pedículo proximal (high-tie) visando linfadenectomia oncológica. A anastomose colorretal foi feita sem interposição de colostomia. No 4o dia pós-operatório, o paciente evolui com dor abdominal localizada na fossa ilíaca esquerda, febre baixa, taquicardia e aumento de leucócitos; TC abdominal mostra sinais compatíveis com área focal de hipoperfusão do retossigmoide e aderências locais, sem pneumoperitônio livre.\n\nCom base na anatomia vascular colônica e nas melhores práticas para reduzir risco de isquemia anastomótica, assinale a alternativa correta para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A área mais crítica para isquemia após ligadura proximal da AMI é o ângulo esplênico (ponto de Griffiths), portanto a preservação da artéria retal superior não influenciaria significativamente a perfusão do retossigmoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O ponto de Sudeck corresponde à região da junção retossigmoide e pode sofrer isquemia quando a AMI é ligada proximalmente; para reduzir o risco de isquemia, recomenda-se, quando oncologicamente aceitável, preservar a artéria retal superior ou avaliar perfusão intraoperatória antes de confeccionar a anastomose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A circulação colateral via arco de Riolan é constante e suficientemente eficaz em todos os pacientes; por isso, a ligadura alta do AMI não aumenta de forma significativa o risco de isquemia na junção retossigmoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O ponto de Griffiths está localizado na junção retossigmoide (confundindo-se com Sudeck); por isso, qualquer manobra para preservar perfusão distal deve focar na artéria mesentérica superior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A presença de submucosa vascular extensa no reto torna o ponto de Sudeck praticamente indiferente para a decisão cirúrgica; portanto, a escolha entre high-tie e low-tie não altera a taxa de fístula anastomótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso aborda a vascularização colônica e as áreas de transição vascular (zonas de watershed ou divisores de águas), fundamentais para a cirurgia colorretal. Na ressecção anterior baixa, a ligadura proximal da artéria mesentérica inferior (high-tie) compromete o fluxo direto para seus ramos (artéria cólica esquerda, artérias sigmoideas e artéria retal superior), tornando o coto cólico dependente da circulação colateral.\n\nAnálise das alternativas:\n\na) Incorreta. O ponto de Griffiths localiza-se na flexura esplênica (anastomose entre artéria mesentérica superior e inferior). No entanto, o suprimento direto da junção retossigmoide e do reto superior provém da artéria retal superior (ramo terminal da artéria mesentérica inferior). Portanto, sua ligadura afeta sim de maneira determinante a perfusão do segmento retossigmoideo.\n\nb) Correta. O ponto crítico de Sudeck localiza-se na junção retossigmoide, correspondendo à transição entre a última artéria sigmoidea (sigmoidea ima) e a artéria retal superior. A ligadura alta da artéria mesentérica inferior pode tornar essa região vulnerável à isquemia se a circulação colateral marginal não for adequada. Para mitigar o risco de fístulas e deiscências por hipoperfusão, preconiza-se avaliar a viabilidade tecidual intraoperatória (por sangramento ativo das bordas, doppler ou angiografia com verde de indocianina) ou, quando oncológica e tecnicamente viável, optar pela preservação vascular distal (low-tie).\n\nc) Incorreta. O arco de Riolan e a artéria marginal de Drummond apresentam grande variabilidade anatômica e não estão presentes de forma completa ou eficaz em todos os indivíduos. Em pacientes idosos ou vasculopatas, essa rede colateral pode ser insuficiente para manter a pressão de perfusão ideal após ligadura alta da artéria mesentérica inferior.\n\nd) Incorreta. O ponto de Griffiths situa-se na flexura esplênica, enquanto o ponto de Sudeck situa-se na junção retossigmoide. A preservação da perfusão do reto distal depende fundamentalmente dos ramos das artérias ilíacas internas (artérias retais médias e inferiores), e não da artéria mesentérica superior.\n\ne) Incorreta. Embora o reto distal possua rica vascularização submucosa proveniente das artérias ilíacas internas, a transição retossigmoidea é uma área crítica e vulnerável. A técnica cirúrgica e o nível de ligadura vascular têm impacto direto na viabilidade tecidual e nas taxas de complicações isquêmicas anastomóticas.\n\nGabarito: Alternativa b.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Proctologia",
+      "Complicações Pós-Operatórias",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:54.784Z"
+  },
+  {
+    "id": "AJUDA_33f7531d-8f7a-4a64-acea-fcecb96e3a29",
+    "originalId": "33f7531d-8f7a-4a64-acea-fcecb96e3a29",
+    "statement": "Homem, seringueiro, 51 anos, residente em Estancia X, na área rural do município Y no Estado de São Paulo; é atendido na Unidade Básica de Saúde (UBS) com queixa de ter sido picado por uma cobra (com aparência de jararaca) no pé direito no dia 22/10/2024, há 45 minutos. Apresentou manifestação discreta como dor local, edema e parestesia. Houve piora da dor e do edema. A conduta correta do médico da UBS no dia 22/10/2024 deveria ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar o paciente imediatamente, por se tratar de um acidente ofídico grave, em evolução, para a unidade de referência para atendimento de acidentes por animais peçonhentos, que fica na Unidade Básica Central do município, distante há 3 km da UBS, pois o paciente deve receber 6 ampolas de soro antibotrópico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar o paciente imediatamente, por se tratar de um acidente ofídico leve, em evolução, para a unidade de referência para atendimento de acidentes por animais peçonhentos, que fica no Hospital de Referência da Regional de Saúde, distante há 30 km da UBS, pois o paciente deve receber 3 ampolas de soro antibotrópico;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar o paciente imediatamente, por se tratar de um acidente ofídico leve, em evolução, para a unidade de referência para atendimento de acidentes por animais peçonhentos, que fica no Hospital de Referência da Regional de Saúde, distante há 130 km da UBS, pois o paciente deve receber 12 ampolas de soro antibotrópico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar o paciente imediatamente, por se tratar de um acidente ofídico grave, em evolução, para a unidade de referência para atendimento de acidentes por animais peçonhentos, que fica na Unidade Básica Central do município, distante há 3 km da UBS, pois o paciente deve receber 8 ampolas de soro antibotrópico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente foi picado por uma serpente com características de jararaca (gênero Bothrops). O quadro clínico inicial apresenta dor, edema e parestesia localizados e discretos. No acidente botrópico, o veneno possui ações proteolítica (inflamatória local), coagulante e hemorrágica.\n\nCLASSIFICAÇÃO DE GRAVIDADE E TRATAMENTO\n\nA gravidade dos acidentes botrópicos é definida da seguinte forma:\n\n1. Leve: Dor e edema discretos, com ou sem alterações da coagulação, sem hemorragias sistêmicas. Tratamento: 2 a 4 ampolas de soro antibotrópico (SAB).\n2. Moderado: Dor e edema evidentes, podendo haver equimoses e hemorragias sistêmicas leves (gengivorragia). Tratamento: 4 a 8 ampolas de SAB.\n3. Grave: Edema endurecido e extenso, podendo haver bolhas, necrose, choque, oligúria ou hemorragias sistêmicas graves. Tratamento: 12 ampolas de SAB.\n\nO caso em questão descreve manifestações locais discretas em um curto intervalo de tempo (45 minutos), o que classifica o acidente como leve. O tratamento deve ser realizado em unidade hospitalar de referência para que o paciente seja monitorado quanto a reações alérgicas ao soro e complicações da picada.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O quadro não é classificado como grave, pois as manifestações descritas são discretas. Além disso, a dose de 6 ampolas é indicada para casos moderados, enquanto casos graves exigem 12 ampolas.\n\nAlternativa b) Correta. O acidente é classificado como leve por apresentar apenas manifestações locais discretas e ausência de sinais sistêmicos. A dose de 3 ampolas de soro antibotrópico está dentro do intervalo recomendado pelo Ministério da Saúde para casos leves (2 a 4 ampolas). O encaminhamento para um hospital de referência é a conduta padrão para administração de soroterapia específica.\n\nAlternativa c) Incorreta. Apesar de classificar corretamente como acidente leve, a quantidade de 12 ampolas é destinada exclusivamente aos casos graves. Além disso, o deslocamento por 130 km seria desnecessário se houvesse suporte adequado em distâncias menores.\n\nAlternativa d) Incorreta. O quadro clínico não sustenta a classificação de acidente grave. A dose de 8 ampolas mencionada é o limite superior para o tratamento de acidentes moderados, e não condiz com a conduta para casos graves.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Animais Peçonhentos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:54.784Z"
+  },
+  {
+    "id": "AJUDA_33ff70e2-de97-4214-a4bd-5cfc84a69c3a",
+    "originalId": "33ff70e2-de97-4214-a4bd-5cfc84a69c3a",
+    "statement": "É INCORRETO afirmar que, na interface entre saúde suplementar e Sistema Único de Saúde (SUS):",
+    "options": [
+      {
+        "id": "A",
+        "text": "A regulação busca equilibrar cobertura, qualidade e proteção do consumidor/usuário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A integração de informações entre sistemas pode qualificar vigilância e avaliação de desempenho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A existência de planos privados substitui o dever estatal de garantir universalidade no território.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A coordenação do cuidado pode ser fortalecida por arranjos regionais público-privados bem regulados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a relação entre a Saúde Suplementar (operadoras de planos de saúde) e o Sistema Único de Saúde (SUS). O ponto fundamental para resolvê-la é o entendimento da base constitucional do sistema de saúde brasileiro.\n\nAlternativa a) Correta. A regulação do setor, exercida primordialmente pela Agência Nacional de Saúde Suplementar (ANS), visa equilibrar o mercado. Ela atua para garantir que as operadoras cumpram o rol de procedimentos (cobertura), mantenham padrões técnicos e assistenciais (qualidade) e respeitem o Código de Defesa do Consumidor, protegendo o usuário de abusos.\n\nAlternativa b) Correta. A integração de dados entre o setor privado (como os dados de faturamento e atendimentos enviados à ANS) e o setor público permite que os gestores tenham uma visão epidemiológica completa. Isso qualifica a vigilância em saúde e permite avaliar o desempenho global do sistema nacional de saúde, facilitando o planejamento de políticas públicas.\n\nAlternativa c) Incorreta (Gabarito). Esta afirmação contraria a Constituição Federal de 1988. O Artigo 196 estabelece que a saúde é um direito de todos e um dever do Estado. A assistência à saúde é livre à iniciativa privada, mas possui caráter suplementar. Isso significa que a existência de planos de saúde jamais substitui ou desonera o Estado de seu dever de garantir o acesso universal, igualitário e integral a todos os cidadãos, independentemente de eles possuírem ou não assistência privada.\n\nAlternativa d) Correta. A coordenação do cuidado visa evitar a fragmentação da assistência. Em territórios onde existem arranjos regionais bem estruturados e regulados, a colaboração entre serviços públicos e privados (como no uso compartilhado de redes de alta complexidade ou sistemas de referência) pode fortalecer a linha de cuidado do paciente e otimizar o uso de recursos tecnológicos e financeiros.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Princípios e Diretrizes do SUS",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:54.784Z"
+  },
+  {
+    "id": "AJUDA_340981f0-bc83-4189-a3e2-8c519915a493",
+    "originalId": "340981f0-bc83-4189-a3e2-8c519915a493",
+    "statement": "Menina de 11 anos é levada pela mãe à consulta médica em Unidade Básica de Saúde (UBS), com história de cansaço, palidez cutânea e baixo rendimento escolar nos últimos 3 meses. Ao exame físico, mucosas hipocrômicas (três cruzes em quatro); palidez cutânea. Pulso radial: 104 batimentos por minuto, rítmico e cheio. Aparelho cardiovascular: sopro sistólico dois por seis. Restante do exame físico sem alterações. Mãe apresenta hemograma da menina realizado há 2 semanas: \n\nDiante do caso apresentado, assinale a alternativa mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Com base no HCM, a anemia pode ser classificada em normocítica, e o esfregaço de sangue periférico pode evidenciar anisocitose, eliptocitose e poiquilocitose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Considerando-se o resultado dos exames, pode-se iniciar tratamento com 4 miligramas por quilogramas por dia de ferro elementar, e espera-se aumento de reticulócitos em 4 a 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deve-se dosar o ferro sérico, por ser exame sensível e específico, atentando-se para o ritmo circadiano do ferro, cujos valores são mais elevados pela manhã.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A eosinofilia e a trombocitose observadas justificam o encaminhamento para hematologista, a fim de investigar causas de anemia e comprometimento esplênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico e laboratorial da paciente aponta para um diagnóstico clássico de anemia ferropriva. A hemoglobina de 8,4 g/dL confirma a anemia, enquanto o VCM de 62 fL indica microcitose e o HCM de 24 pg indica hipocromia. O RDW elevado (22%) demonstra anisocitose (variação no tamanho das hemácias), achado típico da carência de ferro.\n\nAnálise das alternativas:\n\na) Incorreta. A classificação quanto ao tamanho das hemácias (normocítica, microcítica ou macrocítica) é dada pelo VCM (Volume Corpuscular Médio) e não pelo HCM. Com um VCM de 62 fL (referência 80 a 98 fL), a anemia é classificada como microcítica. O HCM (Hemoglobina Corpuscular Média) avalia a cor (hipocromia ou normocromia).\n\nb) Correta. O tratamento da anemia ferropriva em crianças é realizado com a reposição de ferro elementar, em doses que variam de 3 a 6 mg/kg/dia. Portanto, 4 mg/kg/dia é uma conduta adequada. A resposta terapêutica inicial mais fidedigna é o aumento dos reticulócitos (reticulocitose), que ocorre precocemente, atingindo seu pico entre o 5º e o 10º dia após o início do tratamento (o intervalo de 4 a 7 dias citado na alternativa é aceito na literatura como o início dessa subida).\n\nc) Incorreta. O ferro sérico não é um bom exame para o diagnóstico isolado de deficiência de ferro, pois possui baixa sensibilidade e especificidade, sofrendo grandes variações diárias e por estados inflamatórios. O exame padrão-ouro para avaliar a reserva de ferro é a ferritina. Embora o ferro sérico realmente apresente um ritmo circadiano (mais alto pela manhã), essa característica não o torna o exame de escolha para o diagnóstico inicial.\n\nd) Incorreta. A trombocitose (plaquetas de 480.000/mm³) é um achado reativo extremamente comum na anemia ferropriva. A eosinofilia (10%) em uma criança atendida em UBS sugere a possibilidade de parasitoses intestinais (helmintíases), que são causas frequentes de perda crônica de sangue e ferro. Esses achados devem ser conduzidos pelo médico generalista ou pediatra na própria UBS, por meio do tratamento da anemia e da investigação de verminoses (exame parasitológico de fezes), não justificando o encaminhamento imediato ao hematologista.\n\nAssociação com a imagem:\nOs dados da tabela corroboram a anemia ferropriva: hemoglobina e hematócrito reduzidos; VCM, HCM e CHCM baixos (microcitose e hipocromia); e RDW significativamente elevado (anisocitose). A presença de eosinofilia e discreta trombocitose complementam o raciocínio clínico de uma causa espoliativa (provável parasitose) levando à ferropenia.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": 41.358293966692464,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/00b8020df13167f573cc2172ca7cd61cb1fe93fd447976b68b0889967b31ef47.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_340981f0-bc83-4189-a3e2-8c519915a493_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:55.400Z"
+  },
+  {
+    "id": "AJUDA_340a0e6a-6a88-48c6-b91a-d330b72df63c",
+    "originalId": "340a0e6a-6a88-48c6-b91a-d330b72df63c",
+    "statement": "Em atendimento na UBS, você atende um paciente no quinto dia pós operatório de colecistectomia aberta, apresenta um pouco de secreção serosa na incisão de Kocher, sem demais sinais e sintomas. O paciente ficou preocupado, relembrando as fases da cicatrização. A fase que o paciente se encontra, e conduta indicada são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "proliferativa (fibroplasia); retornar ao cirurgião geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reparativa (remodelação); prescrever colagenase 0,6U/g.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "exudativa (inflamatória); precrever Nimesulida 100mg de 12/12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "exudativa (inflamatória); indicar higienização com água e sabão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "proliferativa (fibroplasia); prescrever Cefalexina 500 mg 8/8horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental correlacionar a cronologia biológica da cicatrização com o manejo clínico da ferida operatória em nível de atenção primária.\n\nAnalise os pontos principais do quadro clínico: o paciente está no 5º dia pós-operatório (DPO), a secreção é serosa (líquida, transparente/amarelada, sem odor) e não existem sinais de infecção (pus, febre, calor ou vermelhidão intensa).\n\nAs fases da cicatrização dividem-se em:\n1. Fase Inflamatória ou Exsudativa: Ocorre geralmente do 1º ao 5º dia. É caracterizada pela liberação de exsudato e atuação de células de defesa (neutrófilos e macrófagos) para limpar a ferida.\n2. Fase Proliferativa ou Fibroplasia: Inicia-se por volta do 4º ou 5º dia e dura até 3 semanas. Focada na angiogênese e deposição de colágeno.\n3. Fase de Remodelação ou Maturação: Começa após a 3ª semana, onde há o realinhamento das fibras de colágeno.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): Embora o 5º dia marque o início da transição para a fase proliferativa, a presença de secreção serosa é o marco clássico da fase exsudativa. Além disso, não há indicação de encaminhamento ao cirurgião, pois trata-se de uma evolução fisiológica normal que pode ser acompanhada pelo médico da UBS.\n\nAlternativa B (Incorreta): A fase de remodelação ocorre muito mais tarde (após 21 dias). O uso de colagenase é indicado para o desbridamento químico de feridas com tecido necrótico ou esfacelos, o que não ocorre em uma incisão de colecistectomia de evolução limpa.\n\nAlternativa C (Incorreta): A identificação da fase está correta, mas a conduta médica é inadequada. O processo inflamatório inicial é fisiológico e necessário para a reparação do tecido. O uso desnecessário de anti-inflamatórios potentes como a Nimesulida poderia, em teoria, interferir na cascata de cicatrização, além de não haver queixa álgica que justifique a prescrição.\n\nAlternativa D (Correta): No 5º DPO, o paciente ainda apresenta características da fase inflamatória (também chamada de exsudativa devido à saída de fluido seroso). Como não há sinais de infecção, a conduta é expectante e orientadora: manter a higiene local com água e sabão e observar a evolução. Este é o manejo padrão para feridas cirúrgicas de baixo risco em cicatrização normal.\n\nAlternativa E (Incorreta): A presença de secreção serosa isolada não é critério para Infecção do Sítio Cirúrgico (ISC). O uso de antibióticos como a Cefalexina sem evidência de celulite ou purulência é uma prática inadequada que contribui para a resistência bacteriana.\n\nGabarito Oficial: Letra (D).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:55.400Z"
+  },
+  {
+    "id": "AJUDA_340ef61b-a5df-4b62-902e-83c7bf4bc829",
+    "originalId": "340ef61b-a5df-4b62-902e-83c7bf4bc829",
+    "statement": "52. A colposcopia é um exame complementar em ginecologia e tem alguns achados que são descritos e têm seus significados. Nesse contexto, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a zona de transformação significa uma camada de epitélio escamoso entre o epitélio colunar e o escamoso original e caracteriza um processo atípico pré-oncológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o epitélio aceto branco caracteriza lesão de alto grau, onde o ácido acético não coagula as proteínas celulares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "mosaico é uma lesão com aspecto de ladrilhos que, quando fino, sugere lesão de baixo grau ou epitélio metaplásico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "pontilhado é uma lesão que, quando fino, é compatível com lesão de alto grau.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "vasos atípicos são achados sugestivos de cervicite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A colposcopia avalia o colo uterino por meio de lentes de aumento após a aplicação de reagentes (ácido acético e Lugol), buscando identificar áreas suspeitas de malignidade ou pré-malignidade. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) INCORRETA: A zona de transformação (ZT) é a região do colo do útero onde o epitélio colunar (glandular) foi ou está sendo substituído pelo epitélio escamoso por meio do processo de metaplasia escamosa. Embora a maioria das lesões precursoras do câncer do colo uterino surja nesta zona, a ZT em si é um achado fisiológico e normal, e não um processo atípico pré-oncológico.\n\nAlternativa (b) INCORRETA: O epitélio acetobranco surge quando o ácido acético entra em contato com células que possuem alta densidade nuclear e maior quantidade de proteínas (típico de células displásicas). O ácido promove a coagulação reversível dessas proteínas celulares, o que impede a luz de atravessar o epitélio e de ser refletida pelos vasos, resultando na cor branca. A afirmação está errada ao dizer que o ácido não coagula as proteínas.\n\nAlternativa (c) CORRETA: O mosaico é um padrão vascular no qual os capilares terminais se organizam em campos que lembram ladrilhos ou pedras de calçamento. O mosaico é classificado em fino ou grosseiro. O mosaico fino possui vasos de pequeno calibre e distâncias regulares entre si, sendo um achado menor que sugere alterações benignas (como metaplasia) ou lesões de baixo grau (NIC 1).\n\nAlternativa (d) INCORRETA: O pontilhado é um achado vascular no qual os capilares aparecem como pontos vermelhos na superfície do epitélio. Assim como o mosaico, o pontilhado fino é considerado um achado colposcópico menor, compatível com lesões de baixo grau. O que sugere lesão de alto grau é o pontilhado grosseiro, caracterizado por pontos maiores, mais escuros e com espaçamento irregular.\n\nAlternativa (e) INCORRETA: Vasos atípicos são vasos sanguíneos com formas e trajetos irregulares (em saca-rolhas, vírgulas, grampos ou espaguete), que apresentam variações bruscas de calibre e não diminuem de tamanho conforme se ramificam. Esses achados são altamente suspeitos de carcinoma invasor, e não de cervicite (inflamação do colo), que geralmente apresenta vasos ramificados normais ou padrão pontilhado fino inflamatório.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:55.400Z"
+  },
+  {
+    "id": "AJUDA_3415aec1-9380-4644-be9d-f7a8e6198e64",
+    "originalId": "3415aec1-9380-4644-be9d-f7a8e6198e64",
+    "statement": "Mulher de 20 anos, procura a Unidade de Saúde da Família para iniciar Planejamento Familiar. Tem um filho de 6 anos e relata a ocorrência de um aborto. Após a gestação ficou hipertensa e, atualmente, apresenta um IMC: 30kg/m². Apresenta anticorpo antifosfolipídeo positivo, mas a doença está controlada. Ela deseja fazer laqueadura, pois a situação financeira não está nada fácil, só o esposo trabalha e diz que não pode engravidar, novamente, de jeito nenhum. Como Médico de Família e Comunidade desta Unidade qual conduta você indicaria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrição de pílula anticoncepcional apenas de progestágeno.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Indicação do dispositivo intrauterino (DIU) de cobre",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrição de anticoncepcional combinado oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar a paciente para laqueadura, pois esse é o seu desejo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os critérios de elegibilidade para métodos contraceptivos (da Organização Mundial da Saúde – OMS) e a legislação brasileira sobre esterilização voluntária.\n\nAnálise das alternativas:\n\na) Correta: A pílula de progestágeno isolado (minipílula) é uma opção segura para pacientes com contraindicações ao estrogênio. No caso clínico, a paciente apresenta múltiplos fatores de risco cardiovascular e trombótico: hipertensão arterial, obesidade (IMC 30) e a presença de anticorpos antifosfolipídeos. O estrogênio é o principal responsável pelo aumento do risco de eventos tromboembólicos e pela interferência na pressão arterial. Métodos apenas com progestágenos não possuem o mesmo impacto metabólico e circulatório, sendo classificados como seguros para hipertensas e obesas. Embora a presença de anticorpos antifosfolipídeos exija cautela, a ausência de estrogênio torna a alternativa (a) a mais viável entre as opções hormonais orais.\n\nb) Incorreta: Apesar de o DIU de cobre ser um método excelente por não ser hormonal e ser Categoria 1 da OMS para quase todas as condições citadas (incluindo anticorpo antifosfolipídeo positivo), o gabarito oficial aponta a pílula de progestágeno como a conduta indicada. Em provas de residência, isso pode ocorrer quando o examinador deseja focar na substituição do anticoncepcional combinado pelo de progestágeno isolado em pacientes de risco.\n\nc) Incorreta: O anticoncepcional combinado oral (ACO) é formalmente contraindicado para esta paciente. De acordo com os Critérios de Elegibilidade da OMS, a presença de anticorpos antifosfolipídeos (mesmo sem a síndrome clínica completa) classifica o uso de estrogênio como Categoria 4 (risco inaceitável à saúde), devido ao altíssimo risco de trombose arterial e venosa. Além disso, a hipertensão arterial também contraindica o uso de métodos combinados.\n\nd) Incorreta: Do ponto de vista legal (Lei nº 9.263/96, atualizada pela Lei nº 14.443/2022), a paciente não possui os requisitos para realizar a laqueadura tubária voluntária. A lei brasileira exige que o indivíduo tenha capacidade civil plena e pelo menos 21 anos de idade OU, pelo menos, dois filhos vivos. Como a paciente tem 20 anos e apenas um filho vivo, ela não cumpre os critérios legais para o procedimento, independentemente do seu desejo ou situação financeira. Note que a nova lei de 2022 reduziu a idade mínima de 25 para 21 anos e retirou a obrigatoriedade do consentimento do cônjuge, mas a paciente ainda não atingiu a idade mínima necessária.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar",
+      "Hipertensão Arterial Sistêmica",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:55.400Z"
+  }
+]

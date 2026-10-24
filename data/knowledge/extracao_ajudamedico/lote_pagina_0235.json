@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_419829af-723d-43b3-bdcc-302dc224d0be",
+    "originalId": "419829af-723d-43b3-bdcc-302dc224d0be",
+    "statement": "Mulher, 58 anos, hipertensa e obesa, procura o pronto-socorro com dor abdominal há 24 horas, localizada inicialmente no epigástrio e, nas últimas 8 horas, concentrada no hipocôndrio direito. Refere febre não aferida, náuseas e dois episódios de vômitos biliosos. Relata três episódios semelhantes nos últimos 6 meses, autolimitados, sempre após refeições volumosas. Nega colúria e acolia fecal. No exame físico na admissão apresenta: temperatura 38,3°C, frequência cardíaca 96 batimentos por minuto, pressão arterial 120/82 mmHg. Abdome globoso, doloroso à palpação profunda em hipocôndrio direito, sinal de Murphy presente, sem defesa difusa. Os exames laboratoriais evidenciam:\n• Leucócitos: 14900 mm3 (neutrófilos 84%)\n• Proteína C Reativa (PCR): 82 mg/L\n• Bilirrubina total: 2,1 mg/dL (Bilirrubina direta 1,4 mg/dL)\n• Aspartato aminotransferase (AST): 92 U/L\n• Alanina aminotransferase (ALT): 96 U/L\n• Fosfatase alcalina (FA): 210 U/L\n• Gama glutamil transferase (GGT): 220 U/L\n• O ultrassom abdominal mostrou vesícula distendida, parede espessada (5,2 mm), cálculo de 1,6 cm impactado no colo, líquido pericolecístico discreto. Colédoco medindo 8 mm, sem cálculo visível na via biliar. Durante a observação no pronto-socorro, a paciente mantém estabilidade hemodinâmica, com dor controlada por analgesia e sem sinais de sepse.\nQual é a conduta mais apropriada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibiótico + colecistectomia laparoscópica sem investigação adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antibiótico + investigação complementar da via biliar antes da colecistectomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Antibiótico + CPRE imediata seguida de colecistectomia laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antibiótico + colecistostomia percutânea guiada por imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente apresenta um quadro clássico de colecistite aguda, caracterizado por dor persistente em hipocôndrio direito, sinal de Murphy positivo, febre e leucocitose. O ultrassom confirma o diagnóstico ao demonstrar parede da vesícula espessada (5,2 mm), cálculo impactado e líquido pericolecístico. \n\nEntretanto, há elementos que sugerem a presença de um cálculo também na via biliar principal (colédoco): a dilatação do colédoco (8 mm), a elevação das enzimas canaliculares (FA e GGT) e a hiperbilirrubinemia discreta (bilirrubina total de 2,1 mg/dL). Segundo os critérios da ASGE (Sociedade Americana de Endoscopia Gastrointestinal), essa paciente se enquadra em um risco intermediário para coledocolitíase.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora a colecistectomia videolaparoscópica seja o tratamento definitivo para a colecistite, não se deve prosseguir sem investigação adicional da via biliar neste caso. A presença de colédoco dilatado e exames laboratoriais alterados indica risco de coledocolitíase. Operar sem investigar aumenta a chance de uma complicação pós-operatória, como a permanência de um cálculo no colédoco (coledocolitíase residual).\n\nAlternativa b) Correta. Por se tratar de uma paciente com risco intermediário para coledocolitíase (idade > 55 anos, colédoco dilatado e bioquímica hepática alterada), a conduta preconizada é a investigação da via biliar. Isso pode ser feito de forma pré-operatória, preferencialmente por métodos não invasivos, como a colangiorressonância ou a ecoendoscopia, ou de forma intraoperatória, através da colangiografia realizada durante a cirurgia. O objetivo é confirmar ou descartar cálculos no colédoco antes de finalizar o tratamento.\n\nAlternativa c) Incorreta. A CPRE (colangiopancreatografia retrógrada endoscópica) é um procedimento invasivo e com riscos (como pancreatite pós-CPRE). Ela é indicada diretamente apenas para pacientes de alto risco (cálculo visualizado no colédoco pelo ultrassom, bilirrubina total > 4 mg/dL ou quadro de colangite aguda). Como a paciente tem risco intermediário, a investigação deve começar por métodos menos invasivos.\n\nAlternativa d) Incorreta. A colecistostomia percutânea é um procedimento de exceção. Ela é reservada para pacientes com colecistite aguda grave (Grau III) que apresentam instabilidade hemodinâmica ou que possuem contraindicações cirúrgicas graves (pacientes muito enfermos que não suportariam uma anestesia geral). A paciente em questão está estável, com dor controlada e sem sinais de falência orgânica, sendo, portanto, candidata à cirurgia (colecistectomia).",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  },
+  {
+    "id": "AJUDA_41987edf-e0cf-4662-bba7-49eec75c58b1",
+    "originalId": "41987edf-e0cf-4662-bba7-49eec75c58b1",
+    "statement": "O cuidado centrado na pessoa e na família é um princípio que permeia a APS e a medicina de família e comunidade. Qual a principal diferença entre a abordagem do cuidado Centrado na Pessoa e a abordagem Centrada na Doença?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A abordagem centrada na doença considera o contexto epidemiológico, enquanto a centrada na pessoa foca apenas no indivíduo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A abordagem centrada na pessoa prioriza o tratamento farmacológico; a outra, a intervenção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A abordagem centrada na pessoa integra o contexto de vida (valores, crenças, cultura, família) e as prioridades do paciente no plano terapêutico, indo além dos sintomas e da fisiopatologia da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A abordagem centrada na doença é utilizada apenas no nível terciário, e a centrada na pessoa, apenas na APS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A abordagem centrada na pessoa é uma responsabilidade exclusiva do agente comunitário de saúde e a centrada na doença, exclusiva do médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a transição do modelo biomédico tradicional (centrado na doença) para o modelo biopsicossocial (centrado na pessoa), que é o alicerce da Atenção Primária à Saúde (APS) e da Medicina de Família e Comunidade.\n\nAlternativa (a) Incorreta: A afirmação inverte os conceitos. É a abordagem centrada na pessoa que amplia o olhar para além do indivíduo, considerando seu contexto social, familiar e comunitário. O modelo centrado na doença tende a ser reducionista, focando no órgão ou sistema afetado, muitas vezes desconsiderando o ambiente em que o paciente está inserido.\n\nAlternativa (b) Incorreta: O tipo de intervenção (farmacológica ou cirúrgica) é definido pela necessidade clínica e evidência científica, e não pela filosofia de cuidado. A diferença real está no processo de decisão: no cuidado centrado na pessoa, a escolha terapêutica é pactuada entre médico e paciente, levando em conta os riscos e benefícios sob a ótica da vida daquela pessoa.\n\nAlternativa (c) Correta: Esta alternativa define com precisão o Método Clínico Centrado na Pessoa (MCCP). Enquanto o modelo centrado na doença foca na \"disease\" (o processo fisiopatológico), o centrado na pessoa foca na \"illness\" (a experiência subjetiva do adoecer). Isso envolve entender os sentimentos do paciente, suas ideias sobre o que está acontecendo, o impacto da doença em sua funcionalidade e suas expectativas com o tratamento. O plano é compartilhado, integrando a técnica médica com a realidade biopsicossocial do paciente.\n\nAlternativa (d) Incorreta: O cuidado centrado na pessoa é, de fato, um princípio fundamental da APS, mas não é exclusivo dela. Ele deve ser buscado em todos os níveis de atenção (secundário e terciário) para humanizar a assistência. Da mesma forma, a abordagem centrada na doença ainda é muito presente na APS, embora o objetivo seja superá-la.\n\nAlternativa (e) Incorreta: O cuidado centrado na pessoa é uma diretriz para todos os profissionais de saúde e exige uma postura transdisciplinar. Não é responsabilidade exclusiva de uma categoria profissional. No caso do médico, o uso de ferramentas como o Método Clínico Centrado na Pessoa é uma competência técnica essencial para o exercício da medicina de excelência na atualidade.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  },
+  {
+    "id": "AJUDA_4198af83-3840-4ced-9c35-57b532527ce6",
+    "originalId": "4198af83-3840-4ced-9c35-57b532527ce6",
+    "statement": "O nível de prevenção caracterizado por ações que evitam práticas involuntariamente incorretas, como o Burnout em médicos, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção Primordial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevenção Secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prevenção Terciária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prevenção Quinquenária.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda os níveis de prevenção em saúde, um tema fundamental na Medicina Preventiva e Social. Recentemente, além dos níveis clássicos de Leavell e Clark, novos conceitos, como as prevenções quaternária e quinquenária, foram incorporados à literatura médica.\n\nAlternativa a: Incorreta. A Prevenção Primordial atua nos determinantes sociais da saúde. Seu objetivo é evitar que padrões sociais, econômicos e culturais que aumentam o risco de doenças se estabeleçam na população. Um exemplo seria a implementação de políticas públicas de saneamento básico ou leis de taxação de produtos ultraprocessados e tabaco. Ela não se refere ao desgaste do profissional de saúde.\n\nAlternativa b: Incorreta. A Prevenção Secundária foca no diagnóstico precoce e no tratamento imediato de patologias. Ela ocorre quando a doença já existe no indivíduo, mas está em fase inicial ou assintomática. O exemplo clássico são os exames de rastreamento (screening), como o exame de Papanicolau para câncer de colo do útero ou a mamografia.\n\nAlternativa c: Incorreta. A Prevenção Terciária visa reduzir as complicações, sequelas e incapacidades de doenças já estabelecidas e sintomáticas. O foco é a reabilitação do paciente para que ele recupere sua funcionalidade e qualidade de vida, como a fisioterapia após um acidente vascular cerebral (AVC) ou o uso de betabloqueadores após um infarto.\n\nAlternativa d: Correta. A Prevenção Quinquenária é um conceito proposto para proteger o próprio profissional de saúde. Ela consiste em estratégias para evitar o burnout e o esgotamento mental e físico dos médicos e demais cuidadores. O objetivo é prevenir práticas involuntariamente incorretas que surgem devido ao estresse crônico, à precarização do trabalho e à desassistência ao profissional. É o nível que busca garantir que quem cuida também receba cuidados e mantenha sua integridade.\n\nNota importante: Não confunda com a Prevenção Quaternária, que tem como objetivo detectar indivíduos em risco de intervenções médicas excessivas ou desnecessárias (medicalização excessiva) para protegê-los de iatrogenias. Enquanto a Quaternária foca no paciente, a Quinquenária foca na saúde do profissional.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  },
+  {
+    "id": "AJUDA_41a1213f-670c-40bf-b8db-58f8747b7a46",
+    "originalId": "41a1213f-670c-40bf-b8db-58f8747b7a46",
+    "statement": "A vigilância epidemiológica depende da identificação oportuna de agravos relevantes para a saúde pública e de sua notificação por profissionais médicos, tanto no SUS quanto no setor suplementar, sendo uma etapa indispensável para o desencadeamento de ações de controle, investigação e prevenção. \nCom base na normativa vigente sobre sistemas de notificação, uma condição que exige notificação imediata, realizada em até 24 horas após o atendimento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a tuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o sarampo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a dengue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública, regida atualmente pela Portaria de Consolidação nº 4/2017 do Ministério da Saúde (e suas atualizações periódicas). O examinador busca testar o conhecimento do candidato sobre a periodicidade da notificação: se semanal ou imediata (até 24 horas).\n\nAnálise das alternativas:\n\na) INCORRETA. A tuberculose é uma doença de notificação compulsória semanal. Por ser uma patologia crônica e de evolução lenta, o sistema de vigilância foca no acompanhamento do tratamento e no controle de contatos, não exigindo o desencadeamento de ações de bloqueio nas primeiras 24 horas após o diagnóstico clínico.\n\nb) CORRETA. O sarampo é uma doença exantemática viral de altíssima transmissibilidade e é alvo de programas de eliminação no Brasil. Devido ao potencial de causar surtos rápidos e graves, qualquer caso suspeito exige notificação imediata (em até 24 horas) para que as equipes de vigilância realizem a investigação epidemiológica e o bloqueio vacinal oportuno dos contatos, visando interromper a cadeia de transmissão.\n\nc) INCORRETA. Em situações rotineiras, a dengue é uma doença de notificação compulsória semanal. A notificação passa a ser imediata apenas em casos de óbitos suspeitos de dengue ou em situações epidemiológicas específicas e atípicas, o que não é a regra geral para o agravo listado de forma isolada na alternativa.\n\nd) INCORRETA. A infecção pelo HIV e a AIDS são condições de notificação compulsória semanal. Assim como a tuberculose, o monitoramento foca na tendência epidemiológica, vinculação ao tratamento e prevenção da transmissão vertical, não demandando ações de emergência em saúde pública no prazo de 24 horas após o atendimento inicial.\n\nResumo didático:\nAs notificações imediatas são reservadas para doenças com alto potencial de disseminação (como sarampo, poliomielite, raiva humana e febre amarela), doenças em processo de erradicação/eliminação ou eventos de saúde pública que representem risco iminente à coletividade. Doenças de curso crônico ou endêmicas com controle estabelecido costumam figurar na lista de notificação semanal.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  },
+  {
+    "id": "AJUDA_41a489b1-fcfc-48b8-ab3d-ba07f69e3b19",
+    "originalId": "41a489b1-fcfc-48b8-ab3d-ba07f69e3b19",
+    "statement": "Lactente masculino, de 2 meses, nascido a termo de parto vaginal sem intercorrências, foi trazido à Emergência por desconforto respiratório, quadro iniciado há 2 dias. A mãe informou ter percebido congestão nasal e tosse antes do surgimento de sinais de esforço respiratório. Negou febre e contato com pessoas com sintomas respiratórios. Ao exame físico, a criança encontrava-se em bom estado geral, com secreção mucopurulenta em ambos os olhos, boa perfusão periférica e leve tiragem subcostal; à ausculta pulmonar, constataram-se estertores crepitantes bilaterais. Radiografia de tórax revelou hiperinsuflação e opacidades intersticiais difusas. Leucograma não demonstrou leucocitose, mas mostrava eosinofilia (600 eosinófilos/mm³). Que tratamento, dentre os abaixo, é o mais indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lavagem nasal e ocular com soro fisiológico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nitazoxanida 15 mg/kg/dia, por via oral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amoxicilina 90 mg/kg/dia, por via oral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Azitromicina 20 mg/kg/dia, por via oral",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Essa questão apresenta o quadro clássico de Pneumonia Afebril do Lactente, causada principalmente pela bactéria Chlamydia trachomatis, adquirida pela criança durante a passagem pelo canal de parto.\n\nOs principais pontos que levam a esse diagnóstico são:\n1. Idade do paciente: Geralmente ocorre entre a 2ª e a 12ª semana de vida.\n2. Quadro clínico: Início insidioso, com tosse persistente (frequentemente descrita como tosse em \"staccato\"), congestão nasal, ausência de febre e bom estado geral.\n3. Achados de exame físico: Presença de conjuntivite mucopurulenta (que pode preceder ou ser simultânea ao quadro respiratório) e estertores crepitantes finos à ausculta pulmonar.\n4. Exames complementares: A radiografia de tórax com hiperinsuflação e infiltrado intersticial, somada ao hemograma com eosinofilia (aumento de eosinófilos), é patognomônica desse cenário clínico.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a lavagem nasal e a higiene ocular façam parte dos cuidados de suporte, elas não tratam a causa etiológica da pneumonia bacteriana por Chlamydia, sendo necessário o uso de antibióticos sistêmicos.\n\nb) Incorreta. A nitazoxanida é um agente antiparasitário e antiviral de amplo espectro, indicado para tratar protozoários, helmintos e certos vírus, mas não possui atividade contra a Chlamydia trachomatis.\n\nc) Incorreta. A amoxicilina é um betalactâmico eficaz contra o Streptococcus pneumoniae (causador da pneumonia típica). No entanto, a Chlamydia trachomatis é um patógeno intracelular que não possui parede celular de peptideoglicano típica, sendo intrinsecamente resistente aos betalactâmicos.\n\nd) Correta. O tratamento de escolha para a pneumonia por Chlamydia trachomatis são os macrolídeos. A azitromicina (20 mg/kg/dia por 3 dias ou 10 mg/kg/dia por 5 dias, dependendo do protocolo) ou a eritromicina (50 mg/kg/dia por 14 dias) são as drogas indicadas. O tratamento sistêmico é fundamental não apenas para a pneumonia, mas também para erradicar a colonização na nasofaringe e tratar a conjuntivite, prevenindo recorrências. Vale lembrar que o uso de macrolídeos em lactentes jovens requer vigilância para o risco de estenose hipertrófica do piloro.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  },
+  {
+    "id": "AJUDA_41afbd1b-02d1-403e-ad32-5703323f47ce",
+    "originalId": "41afbd1b-02d1-403e-ad32-5703323f47ce",
+    "statement": "Mulher, 56 anos, é submetida a mastectomia com esvaziamento axilar por câncer de mama. Após o procedimento, apresenta perda da sensibilidade da face medial do braço ipsilateral. Pode-se afirmar que o nervo lesado durante o ato cirúrgico foi o:",
+    "options": [
+      {
+        "id": "A",
+        "text": "torácico dorsal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "torácico longo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "intercostobraquial",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "peitoral medial",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda as complicações neurológicas possíveis após uma cirurgia de mastectomia com esvaziamento axilar. Para identificar o nervo lesado, é necessário correlacionar a função de cada estrutura nervosa da região axilar com o déficit apresentado pela paciente (perda de sensibilidade na face medial do braço).\n\nO nervo intercostobraquial é um ramo puramente sensitivo que se origina do segundo nervo intercostal (T2). Ele atravessa a gordura axilar e os linfonodos do nível II de Berg para fornecer sensibilidade à pele da axila e à porção medial e proximal do braço. Devido à sua localização anatômica, ele é o nervo mais frequentemente lesado ou sacrificado durante a linfadenectomia axilar, o que explica perfeitamente o quadro de anestesia ou parestesia na face medial do braço relatado.\n\nAnálise das alternativas:\n\na) Nervo toracodorsal: Incorreta. Este é um nervo motor responsável pela inervação do músculo latíssimo do dorso (grande dorsal). Uma lesão neste nervo resultaria em fraqueza para movimentos de adução, extensão e rotação interna do braço, mas não causaria alterações sensitivas cutâneas.\n\nb) Nervo torácico longo: Incorreta. Este nervo é motor e inerva o músculo serrátil anterior, que estabiliza a escápula contra a parede torácica. Sua lesão clássica resulta na escápula alada (proeminência da borda medial da escápula), sem perda de sensibilidade no braço.\n\nc) Nervo intercostobraquial: Correta. Conforme explicado, sua função é exclusivamente sensitiva para a região axilar e face medial do braço, sendo o nervo tipicamente afetado em procedimentos axilares que resultam no sintoma descrito.\n\nd) Nervo peitoral medial: Incorreta. É um nervo motor que inerva os músculos peitoral menor e peitoral maior. Sua lesão levaria à fraqueza ou atrofia desses músculos, não afetando a sensibilidade cutânea da face medial do braço.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  },
+  {
+    "id": "AJUDA_41b3951f-70e4-42b4-a02d-4193236d09d7",
+    "originalId": "41b3951f-70e4-42b4-a02d-4193236d09d7",
+    "statement": "Quando se fala de equidade enquanto princípio do Sistema Único de Saúde (SUS), está incluso o combate a desigualdades e iniquidades em saúde, que, para a população Negra, é resultado de um processo histórico nacional, que, atualmente, gera impacto socioeconômico e cultural inegável a essa população. Uma das iniciativas para garantir a equidade no cuidado em saúde da população negra no Brasil é a Política Nacional de Saúde Integral da População Negra (PNSIPN). Sobre a PNSIPN, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A população negra (pretos e pardos) brasileira é a mais dependente do SUS em comparação com as pessoas brancas e, portanto, são as pessoas que têm maior acesso à saúde nesse sistema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A autodeclaração do quesito raça/cor em bases de dados, cadastros e fichas de notificação, contribui para a melhor compreensão do panorama de saúde da população negra, permitindo planejamento, organização e gestão em saúde voltada para essa população.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Contempla, em sua diretriz, a inclusão dos temas \"Racismo e Saúde da População Negra\" e objetiva a inclusão do tema \"Combate às Discriminações de Gênero e Orientação Sexual” e sua interseccionalidade com a saúde da população negra, na formação de trabalhadoras(es) da saúde, no âmbito da graduação, sendo dispensável na educação permanente de trabalhadoras(es) e no exercício do controle social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Incentiva a produção de conhecimento científico e tecnológico em saúde da população negra, contudo não reconhece os saberes e práticas populares em saúde, incluindo os de religiões de matrizes africanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tem como objetivo garantir e ampliar acesso à saúde (ações e serviços) da população negra do campo e da floresta, principalmente populações quilombolas, e manter o acesso atual da população negra de áreas urbanas, o qual já é adequado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a Política Nacional de Saúde Integral da População Negra (PNSIPN), instituída em 2009, que tem como objetivo promover a saúde integral dessa população, priorizando a redução das desigualdades étnico-raciais e o combate ao racismo nas instituições e serviços do SUS.\n\nA alternativa (b) é a correta. A coleta do quesito raça/cor, por meio da autodeclaração, é uma ferramenta essencial de gestão e epidemiologia. Ela permite que o sistema de saúde identifique vulnerabilidades específicas, mapeie o perfil de morbimortalidade e produza indicadores que orientem a criação de políticas públicas eficazes e direcionadas. Sem esses dados, a desigualdade torna-se invisível para o planejamento estatal.\n\nPor que as outras alternativas estão incorretas:\n\na) Embora a população negra seja, estatisticamente, a que mais utiliza e depende exclusivamente do SUS, isso não significa que ela tenha o maior acesso. Pelo contrário, diversos estudos apontam que essa população enfrenta maiores barreiras institucionais, menor tempo de consulta e menor oferta de exames em comparação à população branca, fenômeno explicado pelo racismo institucional. Portanto, maior dependência não é sinônimo de maior acesso ou melhor cuidado.\n\nc) O erro desta alternativa reside no termo \"dispensável\". A PNSIPN estabelece que os temas de racismo e saúde da população negra devem ser transversais. Isso inclui não apenas a graduação, mas obrigatoriamente a educação permanente dos profissionais que já estão no serviço e o fortalecimento do controle social (conselhos de saúde), para que a comunidade possa fiscalizar e propor melhorias.\n\nd) A política faz exatamente o oposto do que afirma a alternativa. Um dos eixos da PNSIPN é o reconhecimento e a valorização dos saberes e práticas populares de saúde. Isso inclui o respeito e a integração com as comunidades de terreiro e religiões de matriz africana, entendendo-as como espaços de acolhimento, promoção de saúde e cura tradicional que devem ser articulados com a rede formal.\n\ne) A política visa, sim, garantir e ampliar o acesso das populações quilombolas e do campo, mas a afirmação de que o acesso da população negra urbana \"já é adequado\" é incorreta. A PNSIPN reconhece que a população negra, independentemente de onde resida, sofre com iniquidades em saúde decorrentes do processo histórico de marginalização e do racismo estrutural, necessitando de ações de melhoria em todos os contextos.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Princípios e Diretrizes do SUS",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  },
+  {
+    "id": "AJUDA_41b396e2-96c4-42a5-a49c-d43b3886d42f",
+    "originalId": "41b396e2-96c4-42a5-a49c-d43b3886d42f",
+    "statement": "Homem de 40 anos, internado há 10 dias em UTI, desenvolve pneumonia associada à ventilação mecânica. Qual esquema empírico é mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ceftriaxona + azitromicina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Amoxicilina-clavulanato",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Piperacilina-tazobactam + vancomicina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Levofloxacino isolado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ciprofloxacino isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um paciente com Pneumonia Associada à Ventilação Mecânica (PAV), definida como aquela que ocorre após 48 a 72 horas da intubação orotraqueal. Como o paciente está internado há 10 dias na UTI, classificamos a pneumonia como tardia. Em casos de PAV tardia, há um risco elevado de infecção por patógenos multirresistentes (MDR), como *Pseudomonas aeruginosa*, *Acinetobacter baumannii* e *Staphylococcus aureus* resistente à meticilina (MRSA). Portanto, o esquema empírico deve ser de amplo espectro.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O esquema de Ceftriaxona (cefalosporina de 3ª geração) associada à Azitromicina (macrolídeo) é indicado para Pneumonia Adquirida na Comunidade (PAC) em pacientes que necessitam de internação hospitalar. Esse esquema não possui cobertura contra *Pseudomonas aeruginosa* nem contra MRSA, sendo insuficiente para o cenário de UTI após 10 dias de internação.\n\nAlternativa b) Incorreta. A Amoxicilina-clavulanato é um antibiótico utilizado para infecções comunitárias, como sinusites, otites ou pneumonias leves/moderadas. Não apresenta espectro de ação contra os principais germes hospitalares de uma unidade de terapia intensiva.\n\nAlternativa c) Correta. Este é o esquema empírico adequado para PAV tardia ou com fatores de risco para multirresistência. A Piperacilina-tazobactam é um agente com excelente cobertura contra bactérias Gram-negativas, incluindo a *Pseudomonas aeruginosa*. A Vancomicina é adicionada para garantir a cobertura contra o *Staphylococcus aureus* resistente à meticilina (MRSA), frequentemente encontrado em ambientes de UTI.\n\nAlternativa d) Incorreta. Embora o Levofloxacino seja uma quinolona respiratória com certa atividade contra *Pseudomonas*, o seu uso de forma isolada (monoterapia) não é recomendado em pacientes críticos com 10 dias de internação, devido ao alto risco de resistência bacteriana e à falta de cobertura adequada para MRSA.\n\nAlternativa e) Incorreta. O Ciprofloxacino é uma quinolona com boa ação contra Gram-negativos (incluindo *Pseudomonas*), porém possui baixíssima atividade contra bactérias Gram-positivas, como o *Streptococcus pneumoniae* e o *Staphylococcus aureus*. Não deve ser utilizado como monoterapia no tratamento de pneumonias.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Ventilação Mecânica",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  },
+  {
+    "id": "AJUDA_41bd1a7e-594b-4527-a2de-1d568bdbbda0",
+    "originalId": "41bd1a7e-594b-4527-a2de-1d568bdbbda0",
+    "statement": "Homem de 68 anos com dor abdominal súbita, intensa, hipotensão e hematoquezia. Exame: abdome doloroso difusamente, sem defesa marcada.\n\nNesse caso, qual é a etiologia provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abdome agudo inflamatório por colecistite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Abdome agudo perfurativo por úlcera gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Abdome obstrutivo por bridas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Abdome hemorrágico por rotura de aneurisma de aorta.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente em questão é um idoso de 68 anos que apresenta um quadro de dor abdominal súbita e de forte intensidade, acompanhada de instabilidade hemodinâmica (hipotensão). Esses sinais, em conjunto com a hematoquezia (sangue vivo nas fezes), apontam para uma catástrofe vascular ou hemorrágica. A ausência de defesa abdominal marcada no exame físico inicial ajuda a afastar processos inflamatórios ou perfurativos com peritonite franca, sugerindo que o foco do problema pode ser retroperitoneal ou vascular.\n\nAlternativa (a) Incorreta: O abdome agudo inflamatório por colecistite aguda costuma apresentar dor localizada no hipocôndrio direito, de início mais gradual e associada a febre e ao sinal de Murphy positivo. A hipotensão súbita não é uma característica inicial da colecistite, surgindo apenas em quadros de choque séptico grave e tardio. A hematoquezia também não faz parte do quadro clínico habitual desta patologia.\n\nAlternativa (b) Incorreta: Embora o abdome agudo perfurativo por úlcera péptica cause dor súbita e intensa, ele tipicamente evolui com sinais precoces e marcantes de irritação peritoneal (abdome em tábua, com defesa e rigidez), o que contradiz o exame físico descrito. Além disso, a perfuração de vísceras ocas cursa com pneumoperitônio e não costuma causar hematoquezia imediata e hipotensão tão abrupta, a menos que haja uma hemorragia digestiva alta volumosa associada (que causaria melena ou hematêmese, não necessariamente hematoquezia isolada).\n\nAlternativa (c) Incorreta: O abdome agudo obstrutivo manifesta-se classicamente com dor em cólica, distensão abdominal, vômitos e parada da eliminação de flatos e fezes. As bridas (aderências) são a causa principal em pacientes com cirurgias prévias. Embora a obstrução possa evoluir com isquemia e choque, o início súbito com hipotensão severa e hematoquezia é muito mais sugestivo de uma etiologia vascular direta.\n\nAlternativa (d) Correta: A rotura de aneurisma de aorta abdominal (AAA) é uma emergência médica que deve ser sempre suspeitada em pacientes idosos com dor abdominal ou lombar súbita e hipotensão. O sangramento pode ocorrer para o espaço retroperitoneal, o que explica a dor intensa sem sinais iniciais de irritação peritoneal (sem defesa marcada). A hematoquezia, embora menos comum que a dor e a hipotensão, pode ocorrer devido a hipoperfusão intestinal (isquemia mesentérica não oclusiva secundária ao choque) ou, em casos específicos, por uma fístula aortoentérica. Pela gravidade e perfil epidemiológico, é a principal hipótese diagnóstica.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Abdome Agudo Hemorrágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  },
+  {
+    "id": "AJUDA_41c7f9eb-69c5-44d4-90a1-1efc6f2fe0d1",
+    "originalId": "41c7f9eb-69c5-44d4-90a1-1efc6f2fe0d1",
+    "statement": "A fisiopatogenia do infarto agudo do miocárdio envolve ruptura ou erosão da placa aterosclerótica com subsequente trombose coronariana. A característica histológica da placa aterosclerótica que confere maior vulnerabilidade à ruptura e está associada ao desenvolvimento de síndrome coronariana aguda é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calcificação extensa da placa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hemorragia intraplaca sem ruptura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Capa fibrosa fina e núcleo lipídico volumoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Capa fibrosa espessa e núcleo lipídico pequeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Comentário do Professor:\n\nO entendimento da morfologia da placa aterosclerótica é fundamental para compreender a transição da doença arterial coronariana estável para as síndromes coronarianas agudas (SCA). A questão aborda o conceito de placa vulnerável ou capa fibrosa fina (*Thin-Cap Fibroatheroma* - TCFA), que é o substrato patológico mais comum para a ruptura e subsequente trombose.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A calcificação extensa costuma ser um marcador de cronicidade da aterosclerose. Embora a presença de microcalcificações possa gerar pontos de estresse na placa, placas densamente calcificadas são, em geral, mais estáveis e menos propensas à ruptura aguda do que as placas ricas em lipídios e com pouco cálcio.\n\nAlternativa b) Incorreta. A hemorragia intraplaca ocorre devido à fragilidade dos novos vasos (neovascularização) que crescem para dentro da placa. Embora a hemorragia contribua para o crescimento rápido da placa e possa torná-la instável, o gatilho clássico para o infarto agudo do miocárdio com supra de ST é a ruptura da superfície da placa, expondo o conteúdo pró-trombótico à luz do vaso.\n\nAlternativa c) Correta. Esta é a descrição clássica da placa vulnerável. Uma capa fibrosa fina (geralmente com menos de 65 micra de espessura) possui pouca resistência mecânica. Quando associada a um núcleo lipídico volumoso e rico em células inflamatórias (que secretam metaloproteinases que degradam o colágeno), essa capa torna-se extremamente suscetível às forças de cisalhamento do fluxo sanguíneo, rompendo-se e desencadeando a cascata da coagulação.\n\nAlternativa d) Incorreta. Esta alternativa descreve as características de uma placa estável. Uma capa fibrosa espessa e um núcleo lipídico pequeno oferecem proteção contra a ruptura. Essas placas costumam causar obstruções fixas e crônicas, levando ao quadro de angina estável, mas raramente evoluem com eventos trombóticos agudos.\n\nGabarito: Letra (c).",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:33.398Z"
+  }
+]

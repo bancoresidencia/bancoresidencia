@@ -1,0 +1,520 @@
+[
+  {
+    "id": "AJUDA_68f700e6-31fd-4cc2-86e5-080481958445",
+    "originalId": "68f700e6-31fd-4cc2-86e5-080481958445",
+    "statement": "Adolescente de 17 anos de idade teve um resultado de citologia cervicovaginal mostrando lesão intraepitelial de baixo grau. Foi vacinada contra HPV há 6 meses e não usa preservativo. Não tem parceiro fixo. Deve ser orientada a",
+    "options": [
+      {
+        "id": "A",
+        "text": "cauterização química ou elétrica de lesões visíveis ao teste de Schiller.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ser vacinada contra HPV com vacina diferente da tomada anteriormente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "fazer colposcopia com pesquisa de HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fazer colposcopia com biopsia dirigida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "repetir a citologia em 12 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda a conduta clínica diante de um resultado de citologia oncótica (Papanicolaou) alterado em uma paciente adolescente. O ponto fundamental para a resolução é a idade da paciente (17 anos) e o tipo de lesão (LSIL).\n\nAnálise das alternativas:\n\na) Incorreta. A cauterização (química ou elétrica) é uma forma de tratamento destrutivo. Não se realiza tratamento de lesões cervicais baseado apenas em achados de citologia ou no teste de Schiller (que apenas indica áreas iodo-negativas). É necessário primeiro um diagnóstico histológico (biópsia) e, mesmo assim, a LSIL em adolescentes raramente exige tratamento imediato, pois a taxa de regressão espontânea é muito alta.\n\nb) Incorreta. A vacina contra o HPV é profilática, ou seja, serve para prevenir a infecção pelos tipos de vírus contidos na formulação antes que o contato ocorra. Ela não possui efeito terapêutico sobre lesões já existentes. Além disso, não há indicação de trocar de vacina ou reiniciar o esquema vacinal por causa de um resultado de LSIL.\n\nc) Incorreta. A colposcopia com pesquisa de HPV não é a conduta inicial para LSIL em pacientes menores de 25 anos. A pesquisa de HPV (captura híbrida ou PCR) não é recomendada para rastreamento ou seguimento nessa faixa etária, pois a prevalência de infecções transitórias pelo HPV é altíssima em jovens, o que geraria muitos resultados positivos sem significado clínico (baixo valor preditivo positivo).\n\nd) Incorreta. A colposcopia com biópsia dirigida é um procedimento invasivo indicado para lesões de alto grau (HSIL) ou em casos de persistência de lesões de baixo grau em mulheres acima de 25 anos. Em adolescentes de 17 anos, deve-se evitar procedimentos invasivos no colo uterino para prevenir sequelas obstétricas futuras e devido ao comportamento benigno da LSIL nessa idade.\n\ne) Correta. Em pacientes com menos de 25 anos, a conduta para lesão intraepitelial de baixo grau (LSIL) deve ser conservadora. Isso se deve ao fato de que cerca de 90% dessas lesões regridem espontaneamente nessa faixa etária e o risco de progressão para câncer cervical em adolescentes é praticamente nulo. De acordo com as diretrizes nacionais, o manejo clínico preconiza a repetição da citologia para acompanhamento. Embora as diretrizes mais recentes do INCA (2016) sugiram intervalos de até 3 anos para o rastreio em jovens, o intervalo de 12 meses é a resposta padrão em diversas bancas examinadoras para caracterizar a conduta de observação e repetição citológica em vez de encaminhamento para colposcopia imediata.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:43.580Z"
+  },
+  {
+    "id": "AJUDA_68fa7422-d887-4821-a410-441c113af089",
+    "originalId": "68fa7422-d887-4821-a410-441c113af089",
+    "statement": "Em relação à diverticulose colônica, analise as afirmativas abaixo:\nI. O nome correto das saculações é pseudodivertículo (ou falsos divertículos), já que só ocorre a herniação da camada serosa da parede colônica.\nII. O rastreio de câncer colorretal em pacientes com diverticulose colônica deve seguir as mesmas diretrizes da população geral.\nIII. Segmentos intestinais de menor pressão interior, como o cólon sigmoide, são mais propensos à formação de divertículos.\nIV. A ingesta de fibras é fator protetor à formação de divertículos colônicos.\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II e IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das Afirmativas:\n\nAfirmativa I (Incorreta): Embora os divertículos colônicos sejam tecnicamente chamados de pseudodivertículos ou \"falsos divertículos\", a justificativa da questão está errada. Eles recebem esse nome porque não envolvem todas as camadas da parede intestinal (diferente do divertículo de Meckel, que é um divertículo verdadeiro). Na diverticulose, ocorre a herniação da mucosa e da submucosa através da camada muscular, nos pontos onde os vasos sanguíneos (vasa recta) penetram na parede colônica. A serosa é a camada mais externa e não a que hernia.\n\nAfirmativa II (Correta): A presença de diverticulose não aumenta o risco de desenvolvimento de neoplasia colorretal. Trata-se de uma condição estrutural muito comum com o envelhecimento. Portanto, o protocolo de rastreio de câncer colorretal (início aos 45 anos para população de risco habitual, por exemplo) permanece exatamente o mesmo, independentemente de o paciente possuir ou não divertículos.\n\nAfirmativa III (Incorreta): O cólon sigmoide é o local mais acometido pela doença diverticular, porém a razão é oposta à descrita. O sigmoide é o segmento do cólon com o menor lúmen (raio mais estreito). De acordo com a Lei de Laplace, quanto menor o raio de um cilindro, maior é a pressão em sua parede. Logo, o sigmoide é o segmento de maior pressão intraluminal, o que favorece a saída da mucosa através da musculatura.\n\nAfirmativa IV (Correta): A baixa ingestão de fibras é um dos principais fatores de risco para a formação de divertículos. As fibras aumentam o volume fecal e retêm água, o que reduz a pressão intraluminal e facilita o trânsito intestinal. Dessa forma, uma dieta rica em fibras atua como um fator protetor contra a formação da diverticulose e contra episódios de diverticulite.\n\nConclusão: Estão corretas apenas as afirmações II e IV, o que torna a alternativa (c) a resposta correta.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:43.580Z"
+  },
+  {
+    "id": "AJUDA_68fd5c67-8387-494a-89d2-8547f4a88947",
+    "originalId": "68fd5c67-8387-494a-89d2-8547f4a88947",
+    "statement": "Um paciente com linfoma não-Hodgkin chega ao pronto-socorro com dor lombar intensa e perda de força nos membros inferiores, além de dificuldade para urinar. O exame fisico revela diminuição da sensibilidade e da força nos membros inferiores, com reflexos alterados. A conduta mais adequada para esse paciente deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Monitoramento clínico com observação de sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administração de quimioterapia de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radioterapia imediata para descompressão medular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Uso de diuréticos para reduzir edema medular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administração de antibióticos para tratar infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO E CONTEXTO:\nO quadro clínico descrito — dor lombar intensa, déficit motor (perda de força), déficit sensorial (diminuição da sensibilidade) e disfunção autonômica (dificuldade para urinar) em um paciente com histórico de neoplasia (linfoma) — define a Síndrome de Compressão Medular. Esta é uma das emergências oncológicas mais graves, pois a compressão mecânica e a isquemia da medula espinal podem levar à paraplegia irreversível em poucas horas ou dias se não houver intervenção rápida.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) Incorreta. A compressão medular é uma emergência que exige ação imediata. O monitoramento clínico e a observação são condutas passivas que permitem a progressão do dano neurológico, resultando em sequelas permanentes.\n\nAlternativa (b) Incorreta. Embora o linfoma seja um tumor frequentemente quimiossensível, a quimioterapia não é o tratamento de escolha para a descompressão aguda na fase de urgência. O tempo de resposta da quimioterapia é superior ao tempo de tolerância da medula à compressão. A descompressão deve ser mecânica (cirurgia) ou por radiação.\n\nAlternativa (c) Correta. A radioterapia imediata (geralmente associada a altas doses de corticosteroides, como a dexametasona) é o tratamento padrão para a compressão medular em tumores radiossensíveis, como os linfomas e mielomas. O objetivo é reduzir rapidamente o volume da massa tumoral que está comprimindo o espaço epidural, aliviando a pressão sobre a medula e preservando a função motora e esfincteriana. Em alguns casos selecionados, a cirurgia de descompressão também pode ser indicada antes da radioterapia.\n\nAlternativa (d) Incorreta. Diuréticos não tratam o edema medular de origem tumoral. O edema vasogênico associado à compressão neoplásica deve ser manejado com corticosteroides, que estabilizam a barreira hematomedular e reduzem o processo inflamatório local.\n\nAlternativa (e) Incorreta. O quadro clínico é puramente compressivo e neurológico. Não há sinais sugestivos de infecção (como febre, leucocitose ou sinais inflamatórios locais) que justifiquem o uso de antibióticos como conduta prioritária para a perda de força e sensibilidade relatadas.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:43.580Z"
+  },
+  {
+    "id": "AJUDA_690161f8-4368-4aa5-a692-06e5b5a3eca0",
+    "originalId": "690161f8-4368-4aa5-a692-06e5b5a3eca0",
+    "statement": "Médica de Família e Comunidade atende uma paciente que recebeu diagnóstico de esclerose múltipla recentemente, apresentando no momento apenas alteração visual. A abordagem revela uma pessoa que executa suas atividades rotineiras sem limitações, mas que está com medo de ficar acamada ou morrer antes de ver seu filho terminar a faculdade. Neste relato, não são explorados quais dimensões da experiência singular de adoecimento desta paciente, levando-se em consideração o primeiro componente do Método Clínico Centrado na Pessoa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sentimentos e função.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ideia e função.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ideia e expectativas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sentimentos e expectativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder corretamente a essa questão, é fundamental dominar o primeiro componente do Método Clínico Centrado na Pessoa (MCCP): explorando a saúde, a doença e a experiência da pessoa com a enfermidade. Para sistematizar a experiência do adoecimento, utilizamos o mnemônico SIFE (em português):\n\nSentimentos: os medos, as angústias e as preocupações do paciente.\nIdeias: o que o paciente pensa sobre o que está acontecendo (suas teorias sobre a causa ou a gravidade).\nFunção: como a doença impacta o dia a dia e as atividades rotineiras.\nExpectativas: o que o paciente espera da consulta, do médico ou do tratamento.\n\nAnalisando o relato do caso:\n1. Sentimentos: estão presentes quando o texto menciona que a paciente está \"com medo de ficar acamada ou morrer\".\n2. Função: está presente quando o texto informa que a paciente \"executa suas atividades rotineiras sem limitações\".\n3. Ideias: não são mencionadas. Não sabemos o que a paciente pensa sobre a esclerose múltipla ou qual a explicação dela para os sintomas.\n4. Expectativas: não são mencionadas. Não sabemos o que ela espera do acompanhamento médico ou qual o seu desejo em relação ao plano terapêutico.\n\nPortanto, as dimensões não exploradas são Ideias e Expectativas.\n\nAnálise das alternativas:\n\na) Sentimentos e função.\nIncorreta. Ambas as dimensões foram explicitamente descritas no texto (o medo e a manutenção das atividades rotineiras).\n\nb) Ideia e função.\nIncorreta. Embora a \"Ideia\" não tenha sido explorada, a \"Função\" foi abordada ao relatar que ela realiza suas atividades sem limitações.\n\nc) Ideia e expectativas.\nCorreta. O relato omite o que a paciente pensa sobre sua condição (Ideia) e o que ela deseja ou espera da assistência médica (Expectativas). Note que o desejo de ver o filho formado é uma motivação de vida ligada ao seu medo (sentimento), mas não define o que ela espera da conduta médica ou do futuro do tratamento em si.\n\nd) Sentimentos e expectativas.\nIncorreta. O \"sentimento\" foi abordado por meio do relato do medo da paciente. Apenas a \"expectativa\" ficou ausente.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:43.580Z"
+  },
+  {
+    "id": "AJUDA_69021e82-e849-4b88-a9a5-680db31a1108",
+    "originalId": "69021e82-e849-4b88-a9a5-680db31a1108",
+    "statement": "A indicação e a prescrição dos inibidores de aromatase em tratamento hormonal complementar no câncer de mama segundo a American Cancer Society, sendo ampliadas para outros diagnósticos em ginecologia, EXCETO",
+    "options": [
+      {
+        "id": "A",
+        "text": "endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indução da ovulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "fibroadenoma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "síndrome dos ovários policísticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "maturação sexual precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Os inibidores da aromatase (como o letrozol e o anastrozol) atuam bloqueando a enzima aromatase, responsável pela conversão de androgênios em estrogênios nos tecidos periféricos e no próprio parênquima mamário. Embora sua indicação clássica seja o tratamento do câncer de mama em mulheres na pós-menopausa, seu mecanismo de ação permite o uso em diversas condições ginecológicas em que a redução do estrogênio ou a manipulação do feedback hormonal é necessária.\n\nAlternativa (a) Endometriose: Incorreta. A endometriose é uma patologia estrogênio-dependente. Os inibidores da aromatase podem ser indicados, geralmente em casos de dor pélvica crônica refratária a outros tratamentos, pois reduzem a produção de estrogênio tanto sistêmica quanto local (dentro dos próprios focos de endometriose).\n\nAlternativa (b) Indução da ovulação: Incorreta. O letrozol é amplamente utilizado para indução da ovulação. Ao reduzir os níveis de estrogênio circulante, ele diminui o feedback negativo sobre a hipófise, o que resulta em um aumento endógeno do hormônio folículo-estimulante (FSH), estimulando o recrutamento de folículos ovarianos.\n\nAlternativa (c) Fibroadenoma: Correta. O fibroadenoma é uma lesão benigna da mama, muito comum em mulheres jovens. O seu manejo é essencialmente clínico, com observação e controle ecográfico, ou cirúrgico (exérese) em casos de crescimento acelerado ou desejo da paciente. Não há indicação de inibidores da aromatase para o tratamento ou controle de fibroadenomas.\n\nAlternativa (d) Síndrome dos ovários policísticos (SOP): Incorreta. Na SOP, os inibidores da aromatase (especialmente o letrozol) são considerados atualmente a primeira linha de tratamento para indução da ovulação em pacientes que desejam engravidar, superando o citrato de clomifeno em termos de taxas de nascidos vivos em pacientes com IMC elevado.\n\nAlternativa (e) Maturação sexual precoce: Incorreta. Em casos de puberdade precoce (especialmente na Síndrome de McCune-Albright), os inibidores da aromatase podem ser usados para retardar a maturação óssea. O estrogênio é o principal responsável pelo fechamento das epífises ósseas; ao inibir sua produção, ganha-se tempo para que a criança atinja uma estatura final mais adequada.\n\nGabarito: Letra (c).",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:43.580Z"
+  },
+  {
+    "id": "AJUDA_690bd210-5f37-4af3-8df3-7892b0419361",
+    "originalId": "690bd210-5f37-4af3-8df3-7892b0419361",
+    "statement": "Assinale a alternativa que representa o anti-hipertensivo contraindicado no tratamento da hipertensão em gestantes com pré-eclâmpsia.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidralazina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enalapril.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Metoprolol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anlodipino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Metildopa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alternativa correta é a letra b (Enalapril). Os inibidores da enzima conversora de angiotensina (IECA) e os bloqueadores do receptor de angiotensina II (BRA) são contraindicados na gestação.\n\nFundamento: o sistema renina-angiotensina-aldosterona é essencial para o desenvolvimento renal fetal e para a manutenção da perfusão renal do feto. Quando esses fármacos são usados, principalmente no 2º e no 3º trimestres, podem causar a chamada fetopatia por IECA/BRA. Ela inclui:\n- oligoâmnio e anúria fetal;\n- hipoplasia pulmonar;\n- disgenesia tubular renal e insuficiência renal neonatal;\n- hipoplasia da calvária e contraturas de membros;\n- hipotensão neonatal e óbito fetal ou neonatal.\n\nTambém há relatos de aumento de malformações cardiovasculares e do sistema nervoso central quando a exposição ocorre no 1º trimestre. Por isso, mulheres em idade fértil com desejo de engravidar devem trocar esses fármacos antes da concepção.\n\nAnálise das alternativas:\n\na) Hidralazina: vasodilatador arteriolar direto, seguro na gestação. É muito usado em crise hipertensiva (via intravenosa) na pré-eclâmpsia grave, e também por via oral como adjuvante. Seu uso é permitido, portanto está incorreta como resposta.\n\nb) Enalapril: IECA, contraindicado em qualquer fase da gestação pelos riscos fetais descritos. Alternativa correta.\n\nc) Metoprolol: betabloqueador cardiosseletivo, considerado aceitável na gestação. Pode ser usado com monitorização, pois alguns betabloqueadores, especialmente o atenolol, se associam a restrição de crescimento fetal. O atenolol é o mais evitado. Não é contraindicado.\n\nd) Anlodipino: bloqueador de canal de cálcio di-hidropiridínico, aceito na gestação. A nifedipina é a mais usada e mais estudada, mas o anlodipino também é considerado alternativa aceitável. Não é contraindicado.\n\ne) Metildopa: agonista alfa-2 central, é o fármaco de primeira linha clássica e com maior segurança comprovada a longo prazo na gestação. Está incorreta como resposta.\n\nResumo para a prova: na gestação, os anti-hipertensivos permitidos são metildopa, nifedipina/anlodipino, hidralazina e labetalol, e betabloqueadores com cautela. São proibidos IECA, BRA e inibidores diretos da renina. Os diuréticos em geral são evitados, pois reduzem o volume plasmático, mas não são formalmente proibidos em pacientes crônicas já em uso.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:43.580Z"
+  },
+  {
+    "id": "AJUDA_690fda8b-4b97-4340-82fa-82ae02c62380",
+    "originalId": "690fda8b-4b97-4340-82fa-82ae02c62380",
+    "statement": "Mulher de 29 anos, sexualmente ativa desde os 17 anos, sem comorbidades, comparece para consulta de rotina. Nunca realizou citologia oncótica. O teste de HPV de alto risco é positivo para HPV 16, e a citologia revela ASC-US. A colposcopia é satisfatória e não evidencia lesões.\n\nSegundo as diretrizes brasileiras atuais, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir citologia em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar conização diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir citologia e teste de HPV em 12 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar excisão da zona de transformação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar para radioterapia profilática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo de resultados anormais no rastreamento do câncer do colo do útero, integrando a citologia oncótica, o teste de HPV e a colposcopia, de acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA/Ministério da Saúde).\n\nAnálise do caso:\nPaciente de 29 anos com HPV 16 positivo (alto risco) e citologia com ASC-US (Células Escamosas Atípicas de Significado Indeterminado, possivelmente não neoplásicas). A colposcopia foi realizada e resultou satisfatória e negativa (sem lesões).\n\nExplicação das alternativas:\n\na) Repetir citologia em 6 meses.\nIncorreto. De acordo com as diretrizes de rastreamento apenas por citologia, a repetição em 6 meses para o achado de ASC-US é indicada para mulheres com 30 anos ou mais. Para mulheres entre 25 e 29 anos, o intervalo de repetição da citologia para ASC-US é de 12 meses. Além disso, como já foi realizado um teste de HPV 16 positivo e uma colposcopia negativa, o protocolo de seguimento é diferenciado.\n\nb) Realizar conização diagnóstica.\nIncorreto. A conização (ou biópsia por cirurgia de alta frequência/faca fria) é um procedimento invasivo indicado para casos de suspeita de lesões de alto grau que não foram totalmente visualizadas na colposcopia, ou em casos de discordância cito-histológica persistente (por exemplo, citologia de alto grau — HSIL — com colposcopia negativa repetida). Não há indicação para uma citologia de baixo grau (ASC-US) com colposcopia normal.\n\nc) Repetir citologia e teste de HPV em 12 meses.\nCorreto. Nas situações em que o teste de HPV de alto risco é positivo, mas a triagem colposcópica é negativa (não evidencia lesão), o risco imediato de uma lesão precursora é baixo. A conduta recomendada pelas diretrizes é o acompanhamento com novo co-teste (citologia + teste de HPV) em 12 meses. Esse prazo permite verificar se o sistema imunológico da paciente eliminou a infecção viral ou se a lesão se tornou clinicamente visível, evitando intervenções desnecessárias.\n\nd) Realizar excisão da zona de transformação.\nIncorreto. A excisão da zona de transformação (EZT) é um tratamento indicado para lesões intraepiteliais de alto grau (NIC 2 ou NIC 3) confirmadas por biópsia ou em protocolos de \"ver e tratar\" (quando a citologia de alto grau e a colposcopia sugerem fortemente lesão de alto grau). Não se aplica a uma paciente sem lesões visíveis à colposcopia.\n\ne) Encaminhar para radioterapia profilática.\nIncorreto. A radioterapia é uma modalidade de tratamento para câncer invasivo do colo do útero (carcinoma) e não é utilizada de forma \"profilática\" para infecções por HPV ou alterações citológicas leves. O manejo de lesões precursoras e alterações iniciais é sempre cirúrgico ou observacional.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:43.580Z"
+  },
+  {
+    "id": "AJUDA_69165edd-d938-4ba3-ae85-325c724a8826",
+    "originalId": "69165edd-d938-4ba3-ae85-325c724a8826",
+    "statement": "Mulher de 44 anos está em preparativos para realização de colecistectomia eletiva (videocirurgia) por colelitíase. No ultrassom pré-operatório, a vesícula biliar apresenta-se com 3 cálculos de 1,0 cm, com suas dimensões normais, sem espessamento da parede, sem presença de líquido pericoledociano; ducto colédoco de 4 mm de diâmetro. \n\nDe acordo com a classificação das cirurgias segundo o potencial de contaminação, a cirurgia proposta é classificada como",
+    "options": [
+      {
+        "id": "A",
+        "text": "limpa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "potencialmente contaminada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "contaminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "infectada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "séptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A classificação das cirurgias de acordo com o potencial de contaminação é um tema clássico em provas de residência e fundamental para a prática cirúrgica, pois orienta a necessidade de antibioticoprofilaxia ou antibioticoterapia. Essa classificação baseia-se na presença de microrganismos e no grau de invasão de tratos colonizados no momento da operação.\n\nA questão descreve uma colecistectomia videolaparoscópica eletiva em uma paciente com colelitíase (pedras na vesícula), sem sinais de inflamação aguda (parede normal, sem líquido pericoledociano).\n\nAnálise das alternativas:\n\na) limpa.\nIncorreta. Cirurgias limpas são aquelas realizadas em tecidos estéreis ou passíveis de descontaminação, na ausência de processo infeccioso ou inflamatório local, e que não penetram nos tratos digestório, respiratório, genital ou urinário. Exemplos comuns são a herniorrafia inguinal e a cirurgia cardíaca. Como a colecistectomia envolve a abertura ou manipulação do trato biliar (parte do sistema digestório), ela não pode ser classificada como limpa.\n\nb) potencialmente contaminada.\nCorreta. Esta categoria engloba cirurgias realizadas em tecidos colonizados por flora pouco numerosa ou em reservatórios de difícil descontaminação (como os tratos digestório, respiratório ou urinário), porém sob condições controladas, de forma eletiva e sem evidência de infecção ou inflamação aguda no local. A colecistectomia eletiva, na qual se entra no trato biliar sem que haja colecistite aguda ou supuração, é o exemplo clássico de cirurgia potencialmente contaminada.\n\nc) contaminada.\nIncorreta. Cirurgias contaminadas são aquelas em que ocorre uma falha técnica importante durante o ato cirúrgico, na presença de inflamação aguda sem pus (como uma colecistite aguda sem supuração), ou em feridas traumáticas abertas e recentes. No caso clínico, a vesícula apresenta dimensões e paredes normais, caracterizando um quadro crônico, e não agudo.\n\nd) infectada.\nIncorreta. Também chamada de cirurgia suja, é aquela realizada em tecidos com infecção clínica evidente, presença de pus, tecidos necróticos ou em casos de vísceras perfuradas (como uma peritonite por apendicite perfurada). O quadro da paciente é de colelitíase simples, sem sinais de infecção ativa.\n\ne) séptica.\nIncorreta. O termo séptica não faz parte da classificação oficial de feridas cirúrgicas (Limpa, Potencialmente Contaminada, Contaminada e Infectada/Suja). Frequentemente, na prática clínica, usa-se o termo para se referir a casos de infecção grave, mas, para fins de prova e classificação técnica, ele deve ser evitado.\n\nResumo do raciocínio:\nComo a cirurgia é eletiva (planejada), não há sinais de inflamação aguda (parede da vesícula normal) e haverá manipulação do trato biliar (sistema digestório colonizado), a classificação correta é Potencialmente Contaminada.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:43.580Z"
+  },
+  {
+    "id": "AJUDA_69233156-b0ca-45f8-a25e-3ef504628530",
+    "originalId": "69233156-b0ca-45f8-a25e-3ef504628530",
+    "statement": "Mulher de 58 anos, G5P4nA1, sexualmente ativa, última menstruação aos 51 anos, sem doenças prévias, não faz uso de terapia hormonal. Paciente relata perda de urina aos esforços há três anos, com impacto na sua qualidade de vida. Sem outras queixas urinárias e com hábito intestinal regular. Ao exame clínico, apresenta prolapso de parede vaginal anterior estádio 1 pela classificação do POP-Q hipermobilidade uretral. Com relação ao tratamento indicado, assinale a alternativa ERRADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A colporrafia anterior é o procedimento cirúrgico de escolha caso se opte pelo tratamento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "As modificações do estilo de vida associado à terapia comportamental reduzem a incontinência urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os exercícios com a musculatura do assoalho pélvico devem ser oferecidos como primeira linha de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se não houver resposta ao tratamento conservador, deve-se oferecer tratamento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A cirurgia de Sling-TOT é um procedimento cirúrgico que pode ser optado como tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o diagnóstico e a conduta na Incontinência Urinária de Esforço (IUE) em uma paciente no climatério. O quadro clínico de perda urinária aos esforços (como tossir, espirrar ou carregar peso), associado ao achado de hipermobilidade uretral ao exame físico, confirma o diagnóstico de IUE.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta/Gabarito): A colporrafia anterior (técnica de Kelly-Kennedy) é uma cirurgia indicada para a correção do prolapso da parede vaginal anterior (cistocele), mas apresenta baixas taxas de sucesso a longo prazo para o tratamento da Incontinência Urinária de Esforço propriamente dita. Atualmente, o padrão-ouro para o tratamento cirúrgico da IUE decorrente de hipermobilidade uretral são os slings de uretra média (TVT ou TOT). Portanto, dizer que a colporrafia é o procedimento de escolha para a incontinência está errado.\n\nAlternativa B (Correta): Modificações no estilo de vida, como perda de peso em pacientes obesas, redução da ingestão de cafeína, cessação do tabagismo e controle da ingestão hídrica, são medidas eficazes que ajudam a reduzir a frequência e a gravidade dos episódios de perda urinária.\n\nAlternativa C (Correta): O treinamento dos músculos do assoalho pélvico (exercícios de Kegel) é a primeira linha de tratamento para todas as mulheres com IUE. É um tratamento não invasivo, sem efeitos colaterais significativos e com alto nível de evidência científica em termos de melhora da qualidade de vida e cura clínica.\n\nAlternativa D (Correta): O tratamento da IUE é escalonado. Caso as medidas conservadoras (fisioterapia e mudança de hábitos) não apresentem resultados satisfatórios após um período adequado (geralmente 3 a 6 meses), o tratamento cirúrgico deve ser discutido com a paciente, levando em conta o impacto dos sintomas na sua rotina.\n\nAlternativa E (Correta): O Sling Transobturatório (TOT) é uma técnica de sling de uretra média amplamente utilizada e eficaz para o tratamento da IUE por hipermobilidade uretral, apresentando menores riscos de lesão vesical em comparação ao sling retropúbico (TVT). Como a paciente apresenta hipermobilidade uretral, o TOT é uma excelente opção cirúrgica.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:43.580Z"
+  },
+  {
+    "id": "AJUDA_693ee7c8-6cf5-4af1-8bae-f8150746181e",
+    "originalId": "693ee7c8-6cf5-4af1-8bae-f8150746181e",
+    "statement": "A imagem mostra um cisto de retenção em colo uterino (cisto de Naboth). Diante desta imagem, assinale a opção que evidencia a melhor conduta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "não há necessidade de manter investigação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "solicitar colposcopia com biópsia dirigida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "repetir USG em 15 dias para avaliar a evolução do cisto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar Ressonância Magnética de Pelve com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Os cistos de Naboth, também conhecidos como cistos de retenção cervical, são achados fisiológicos e extremamente comuns na prática ginecológica. Eles ocorrem devido à obstrução dos ductos das glândulas produtoras de muco do colo uterino (glândulas endocervicais) pelo epitélio escamoso durante o processo de metaplasia escamosa.\n\nNa imagem ultrassonográfica apresentada, observa-se uma estrutura anecoica (preta), arredondada, de paredes finas e bem definidas, localizada no estroma do colo uterino, o que é característico de um cisto de Naboth simples.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Por ser uma alteração benigna, fisiológica e geralmente assintomática, o cisto de Naboth não possui potencial de malignização nem relevância clínica. Portanto, o achado não requer qualquer intervenção, tratamento ou continuidade da investigação diagnóstica. O manejo é apenas a observação e orientação da paciente sobre a natureza benigna do achado.\n\nAlternativa b) Incorreta. A colposcopia com biópsia é um exame invasivo indicado para a investigação de lesões precursoras do câncer de colo uterino (identificadas no rastreio citopatológico) ou lesões visualmente suspeitas ao exame especular. Um cisto simples e isolado no ultrassom não justifica esse procedimento.\n\nAlternativa c) Incorreta. Não há necessidade de acompanhamento evolutivo em curto prazo (15 dias), pois a lesão é estática e benigna. Repetir exames desnecessariamente gera ansiedade na paciente e custos adicionais sem benefício clínico.\n\nAlternativa d) Incorreta. A Ressonância Magnética é um exame de alta complexidade e custo, reservada para o estadiamento de neoplasias malignas confirmadas ou avaliação de massas pélvicas complexas e duvidosas. Sua solicitação para avaliar um cisto de Naboth caracteriza conduta de excesso propedêutico.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/fabc6b888f2580d4b526ea46dcc9ebae06bc4735eeaf8dcf3d40702a93a579e0.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_693ee7c8-6cf5-4af1-8bae-f8150746181e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:44.072Z"
+  }
+]

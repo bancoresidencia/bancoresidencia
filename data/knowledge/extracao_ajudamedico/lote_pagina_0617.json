@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_acbcd007-c351-4a0d-b415-1dc72b3d3a72",
+    "originalId": "acbcd007-c351-4a0d-b415-1dc72b3d3a72",
+    "statement": "Homem de 66 anos de idade está em internação na unidade de terapia intensiva por sepse de foco pulmonar há três dias. Após suspender a sedação, o paciente evoluiu com agitação psicomotora, dificuldade de compreender comandos e manter a atenção, apesar de permanecer desperto. A medicação suspensa que apresenta associação com o quadro descrito é",
+    "options": [
+      {
+        "id": "A",
+        "text": "propofol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "quetamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dexmedetomidina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "midazolam.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "etomidato.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clinico apresentado — agitacao psicomotora, desatencao e dificuldade de compreensao em paciente desperto na UTI apos a suspensao da sedacao — e caracteristico de delirium (neste caso, na forma hiperativa ou mista). \n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. O propofol e um sedativo hipnotico nao benzodiazepinico de acao rapida. Segundo as diretrizes de sedacao e analgesia em UTI (PADIS Guidelines), o propofol e preferivel aos benzodiazepinicos exatamente por estar associado a menor tempo de ventilacao mecanica e menor risco de delirium.\n\nAlternativa b: Incorreta. A quetamina e um anestesico dissociativo antagonista de receptores NMDA. Embora possa causar fenomenos de emergencia (alucinacoes e agitacao breve ao despertar), nao e a principal droga implicada na genese do delirium persistente em pacientes sob sedacao continua na UTI.\n\nAlternativa c: Incorreta. A dexmedetomidina e um agonista alfa-2 adrenergico central que proporciona sedacao cooperativa, preservando o drive respiratorio. Ao contrario de causar delirium, seu uso esta associado a reducao na incidencia e duracao do delirium quando comparado aos benzodiazepinicos.\n\nAlternativa d: Correta. O midazolam e um benzodiazepinico amplamente conhecido como o principal fator de risco farmacologico independente para o desenvolvimento de delirium em pacientes criticamente enfermos. Seu uso em infusao continua altera a arquitetura do sono e gera metabolitos ativos que se acumulam (especialmente em idosos e doentes renais ou septicos), predispondo a disfuncao cerebral aguda ao desmame.\n\nAlternativa e: Incorreta. O etomidato e um hipnotico utilizado quase que exclusivamente para inducao em sequencia rapida de intubacao traqueal. Ele nao e indicado nem utilizado para sedacao continua na UTI devido ao risco de supressao da esteroidogenese adrenal.\n\nPortanto, a alternativa correta e a letra d.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Sepse",
+      "Coma e Alterações da Consciência",
+      "Ventilação Mecânica",
+      "Psicofarmacologia"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:55.326Z"
+  },
+  {
+    "id": "AJUDA_acc44813-413c-4100-9a3e-184f8fa7ab0f",
+    "originalId": "acc44813-413c-4100-9a3e-184f8fa7ab0f",
+    "statement": "Considerando uma puérpera com hepatite B (HbsAg positivo), qual a orientação adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter aleitamento materno e recém-nascido receber a vacina para hepatite B, conforme orientação do PNI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender aleitamento materno e recém-nascido receber a vacina para hepatite B, conforme orientação do PNI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter aleitamento materno e recém-nascido receber a vacina para hepatite B e imunoglobulina para hepatite B, conforme orientação do PNI.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Suspende aleitamento materno e recém-nascido recebe a vacina para hepatite B e imunoglobulina para hepatite B conforme orientação do PNI.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo do recém-nascido (RN) de mãe portadora do vírus da hepatite B (HBsAg-positiva), focando na prevenção da transmissão vertical e na recomendação sobre o aleitamento materno.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o aleitamento deva ser mantido, apenas a vacina não é suficiente para o RN de mãe HBsAg-positiva. De acordo com o Programa Nacional de Imunizações (PNI) e as diretrizes do Ministério da Saúde, esses recém-nascidos necessitam de profilaxia combinada (vacina + imunoglobulina).\n\nAlternativa b) Incorreta. O aleitamento materno NÃO está contraindicado na hepatite B. Além disso, a alternativa falha ao não mencionar a necessidade da imunoglobulina específica para o recém-nascido.\n\nAlternativa c) Correta. Esta é a conduta preconizada. O aleitamento materno é permitido e seguro, desde que o recém-nascido receba a profilaxia adequada nas primeiras horas de vida. A conduta padrão para filhos de mães HBsAg-positivas consiste na administração da primeira dose da vacina contra a hepatite B e da imunoglobulina humana anti-hepatite B (IGHAHB), idealmente nas primeiras 12 horas de vida (podendo ser feita até o 7º dia para a imunoglobulina, embora a eficácia seja maior quanto mais precoce).\n\nAlternativa d) Incorreta. A falha desta alternativa está na orientação de suspender o aleitamento materno. Estudos demonstram que a amamentação não oferece risco adicional de transmissão do vírus da hepatite B caso o esquema de imunização (vacina e imunoglobulina) seja realizado corretamente.\n\nResumo Didático: \nPara gestantes HBsAg-positivas, o objetivo é evitar a cronificação da doença no recém-nascido, que ocorre em até 90% dos casos de transmissão vertical sem profilaxia. A estratégia consiste em:\n1. Imunização passiva: imunoglobulina (IGHAHB) nas primeiras 12-24 horas.\n2. Imunização ativa: vacina contra a hepatite B (dose ao nascer) nas primeiras 12-24 horas.\n3. Aleitamento materno: liberado e incentivado. Não há restrição, mesmo que a mãe apresente fissuras mamárias, desde que a criança tenha recebido a profilaxia.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:55.326Z"
+  },
+  {
+    "id": "AJUDA_acd502b3-83b6-4b80-9233-52f309f6eeee",
+    "originalId": "acd502b3-83b6-4b80-9233-52f309f6eeee",
+    "statement": "Recém-nascido (RN) de mãe com VDRL 1:8 no momento do parto, sem registro de tratamento na gestação. VDRL do RN coletado no alojamento conjunto= 1:8; hemograma normal; radiografia de ossos longos normal; duas tentativas de coleta de líquor sem sucesso. Qual é a conduta a ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratar o RN com uma dose de penicilina G Benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar o tratamento do RN com penicilina G cristalina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar o tratamento do RN com penicilina G procaína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acompanhar a sorologia do RN para decidir o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Descartar sífilis neonatal, VDRL igual ao materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, o ponto fundamental é a avaliação da conduta frente a um recém-nascido (RN) cuja mãe não foi tratada para sífilis durante a gestação. Segundo o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde, o manejo depende do status de tratamento materno e dos exames do RN.\n\nAnálise do cenário:\nA mãe não foi tratada (tratamento inadequado). Diante disso, o RN deve ser submetido a uma investigação completa: VDRL de sangue periférico, hemograma, radiografia de ossos longos e punção lombar (líquor). No caso clínico, os exames realizados foram normais, porém o líquor não foi obtido após duas tentativas (líquor não coletado).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A penicilina G benzatina (dose única) é reservada para RNs assintomáticos, com todos os exames normais (incluindo líquor) e cujas mães foram adequadamente tratadas, mas que apresentam risco de reinfecção ou queda lenta de títulos. Não se aplica a filhos de mães não tratadas com líquor desconhecido.\n\nAlternativa (b) Correta: De acordo com as diretrizes do Ministério da Saúde, se a mãe não foi tratada ou foi tratada inadequadamente e não for possível realizar a avaliação liquórica ou se o líquor for alterado, o RN deve ser obrigatoriamente tratado com Penicilina G Cristalina por 10 dias. A penicilina cristalina é a droga de escolha pela sua capacidade de atravessar a barreira hematoencefálica em concentrações terapêuticas, garantindo o tratamento de uma eventual neurossífilis que não pôde ser descartada pela ausência da coleta do líquor.\n\nAlternativa (c) Incorreta: A penicilina G procaína poderia ser uma opção de tratamento por 10 dias se todos os exames estivessem normais, incluindo obrigatoriamente o líquor. Como o líquor não foi coletado, a procaína não é indicada, pois não atinge níveis terapêuticos adequados no sistema nervoso central.\n\nAlternativa (d) Incorreta: Não se pode apenas acompanhar a sorologia em um RN cuja mãe não foi tratada. A sífilis congênita tem riscos graves de sequelas e o tratamento deve ser iniciado imediatamente após o nascimento se houver critérios de investigação alterada ou incompleta.\n\nAlternativa (e) Incorreta: O VDRL do RN igual ao materno (1:8) em uma mãe não tratada confirma a necessidade de investigação e tratamento. Para descartar a necessidade de tratamento imediato (e apenas acompanhar), o VDRL do RN deveria ser negativo e a mãe deveria ter sido adequadamente tratada.\n\nResumo da conduta: Mãe inadequadamente tratada + Exames do RN normais + Líquor não coletado = Tratamento com Penicilina G Cristalina (venosa) por 10 dias.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:55.326Z"
+  },
+  {
+    "id": "AJUDA_ace3b1fc-a8bc-4ef0-a6aa-fa649d38f669",
+    "originalId": "ace3b1fc-a8bc-4ef0-a6aa-fa649d38f669",
+    "statement": "Um dos maiores destaques do Programa Nacional de Imunizações em nosso país é a existência dos Centros de Referência para Imunobiológicos Especiais, os CRIE, centros constituídos de infraestrutura e logística específicas, destinados ao atendimento de indivíduos portadores de quadros clínicos especiais. De acordo com as orientações mais atuais para a vacinação de uma criança com Síndrome de Down, sem cardiopatia, qual estratégia é recomendada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esquema com vacina conjugada para pneumococo 13-valente, seguida da vacina polissacarídica 23-valente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Esquema com vacina conjugada para pneumococo 10-valente, seguida da vacina polissacarídica 23-valente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Esquema de vacina anti-meningocócica ACWY no primeiro ano de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Esquema de vacina adsorvida difteria, tétano e pertussis acelular (DTPa) no primeiro ano de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Síndrome de Down é uma condição que predispõe a uma maior frequência e gravidade de infecções respiratórias, principalmente pneumonias, devido a alterações imunológicas (disfunção de células T e B) e fatores anatômicos. Por esse motivo, o Manual dos Centros de Referência para Imunobiológicos Especiais (CRIE) estabelece protocolos específicos para esses pacientes, focando na ampliação da proteção contra o Streptococcus pneumoniae.\n\nAlternativa a: Incorreta. A vacina pneumocócica conjugada 13-valente (VPC13) é disponibilizada no CRIE para grupos de alto risco específicos, como pacientes convivendo com HIV, asplenia anatômica ou funcional, transplantados, portadores de fístula liquórica e doenças oncológicas. A Síndrome de Down, isoladamente, não é uma indicação para a substituição da VPC10 (da rede básica) pela VPC13 no esquema inicial, a menos que existam outras comorbidades graves que se enquadrem nos critérios de imunodeficiência.\n\nAlternativa b: Correta. De acordo com o Manual do CRIE, para crianças com Síndrome de Down, a recomendação é manter o esquema de rotina do Programa Nacional de Imunizações com a vacina pneumocócica conjugada 10-valente (VPC10) e adicionar a vacina pneumocócica polissacarídica 23-valente (VPP23). A VPP23 deve ser administrada a partir dos 2 anos de idade, com uma segunda dose (reforço) após um intervalo de 5 anos. Essa estratégia visa ampliar o espectro de proteção contra mais sorotipos da bactéria.\n\nAlternativa c: Incorreta. A vacina meningocócica conjugada quadrivalente (ACWY) no primeiro ano de vida é indicada pelo CRIE apenas para pacientes com condições clínicas muito específicas, como hemoglobinúria paroxística noturna, asplenia ou deficiências de frações do complemento. Para crianças com Síndrome de Down sem essas condições, segue-se o calendário de rotina com a vacina meningocócica C.\n\nAlternativa d: Incorreta. A vacina DTPa (difteria, tétano e pertussis acelular) é recomendada para crianças com risco aumentado de desenvolver eventos adversos graves à vacina DTPw (células inteiras), como aquelas portadoras de doenças neurológicas crônicas, cardiopatias ou pneumopatias crônicas com risco de descompensação. Como o enunciado especifica que a criança não possui cardiopatia, não há indicação formal para o uso de DTPa em substituição à DTPw do esquema de rotina, a menos que ocorra um evento adverso subsequente às doses iniciais.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:55.326Z"
+  },
+  {
+    "id": "AJUDA_aceed0a4-0e6f-461c-9fe1-ff71a2e6bbde",
+    "originalId": "aceed0a4-0e6f-461c-9fe1-ff71a2e6bbde",
+    "statement": "Avalie as seguintes condições:\nI- Obesidade.\nII- Histerectomia.\nIII- Nuliparidade.\nIV- Idade avançada.\n\nQuais delas são consideradas fatores de risco para o prolapso de órgãos pélvicos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II, III e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas I, II e IV.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO prolapso de órgãos pélvicos (POP) é uma condição multifatorial resultante do enfraquecimento das estruturas de suporte da pelve, como fáscias, ligamentos e a musculatura do assoalho pélvico. Vamos analisar cada item proposto:\n\nI - Obesidade: CORRETA. O aumento do índice de massa corporal (IMC) gera um aumento crônico da pressão intra-abdominal. Essa pressão constante sobre o assoalho pélvico sobrecarrega os mecanismos de sustentação, favorecendo o desenvolvimento de prolapsos.\n\nII - Histerectomia: CORRETA. A retirada do útero envolve a secção de importantes ligamentos de sustentação apical, como os ligamentos uterossacros e cardinais. Se a cúpula vaginal não for adequadamente fixada durante o procedimento, há um risco aumentado de prolapso de cúpula vaginal a longo prazo.\n\nIII - Nuliparidade: INCORRETA. A nuliparidade (nunca ter parido) é, na verdade, um fator de proteção quando comparada à multiparidade. O principal fator de risco obstétrico para o prolapso é o parto vaginal, devido ao estiramento e a possíveis lesões neuromusculares e do tecido conjuntivo durante a passagem do feto. Portanto, quem nunca pariu tem menor risco estatístico de desenvolver a condição.\n\nIV - Idade avançada: CORRETA. O envelhecimento está associado à perda natural de tônus muscular e a alterações na síntese de colágeno, que se torna menos resistente. Além disso, o hipoestrogenismo típico da pós-menopausa causa atrofia dos tecidos urogenitais, enfraquecendo ainda mais o suporte pélvico.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. Além de I e IV, a histerectomia (II) também é um fator de risco reconhecido.\nb) Incorreta. A nuliparidade (III) não é fator de risco e a idade avançada (IV) foi omitida.\nc) Incorreta. Inclui a nuliparidade (III), que é fator de proteção, e omite a obesidade (I).\nd) Correta. Identifica adequadamente a obesidade, a histerectomia e a idade avançada como fatores que contribuem para o prolapso.\n\nGABARITO: Letra (d).",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:55.326Z"
+  },
+  {
+    "id": "AJUDA_acf5c9fc-b05f-4f7d-85c5-d2a48edc7b5a",
+    "originalId": "acf5c9fc-b05f-4f7d-85c5-d2a48edc7b5a",
+    "statement": "A Esferocitose Hereditária é a anemia hemolítica congênita mais comum por defeito de membrana. Um escolar de 8 anos apresenta anemia crônica, icterícia flutuante e esplenomegalia palpável a 4 cm do rebordo costal. O teste de Coombs direto é negativo. O hemograma mostra microesferócitos. Qual parâmetro hematimétrico do hemograma automatizado é altamente sugestivo desta condição e qual a complicação que pode exigir colecistectomia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O RDW (Red Cell Distribution Width) normal exclui a esferocitose, pois os esferócitos são homogêneos; a complicação cirúrgica frequente é a ruptura esplênica espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença de hemoglobina fetal (HbF) elevada na eletroforese é o marcador diagnóstico; a colecistectomia é indicada para prevenir o carcinoma de vesícula biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O Volume Corpuscular Médio (VCM) elevado (> 100 fL) é o principal marcador, devido à reticulocitose intensa; a complicação biliar mais comum é a colangite esclerosante primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A Concentração de Hemoglobina Corpuscular Média (CHCM) elevada (> 36 g/dL) é um marcador muito específico de esferocitose, refletindo a desidratação celular; a colelitíase (cálculos biliares de bilirrubinato de cálcio) é a complicação biliar frequente decorrente da hemólise crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o diagnóstico e as complicações da Esferocitose Hereditária (EH), uma patologia marcada pela deficiência de proteínas da membrana ou do citoesqueleto da hemácia (como anquirina, espectrina ou banda 3). Essa deficiência causa perda de fragmentos da membrana, transformando o disco bicôncavo em uma esfera com menor superfície, o que leva à hemólise no baço.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O RDW (índice que mede a variação de tamanho entre as hemácias) geralmente está elevado na esferocitose, refletindo a coexistência de microesferócitos (pequenos) e reticulócitos (grandes). Além disso, a ruptura esplênica espontânea é uma complicação rara, mais associada a infecções como a mononucleose; na EH, o problema principal do baço é o sequestro e a destruição das hemácias.\n\nAlternativa B: Incorreta. A elevação da hemoglobina fetal (HbF) é um marcador clássico de hemoglobinopatias, como as betatalassemias, e não da esferocitose. O risco biliar na EH não é o carcinoma de vesícula, mas sim a formação de cálculos devido à hiperbilirrubinemia crônica.\n\nAlternativa C: Incorreta. O Volume Corpuscular Médio (VCM) na esferocitose é tipicamente normal ou discretamente reduzido (devido aos microesferócitos). Embora a reticulocitose intensa possa elevar o VCM, esse não é o marcador principal. A colangite esclerosante primária é uma doença autoimune das vias biliares sem relação com anemias hemolíticas.\n\nAlternativa D: Correta. A Concentração de Hemoglobina Corpuscular Média (CHCM) elevada, frequentemente superior a 36 g/dL, é o achado mais sugestivo de esferocitose hereditária no hemograma automatizado. Isso ocorre porque a hemácia perde membrana e sofre desidratação, fazendo com que a hemoglobina fique muito concentrada dentro da célula esférica. Em relação à complicação, a hemólise crônica libera grandes quantidades de bilirrubina indireta, que é conjugada e excretada na bile. O excesso de bilirrubinato de cálcio precipita, formando cálculos biliares (colelitíase), sendo esta a complicação biliar mais comum que pode exigir intervenção cirúrgica (colecistectomia).\n\nGabarito: Letra D.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:55.326Z"
+  },
+  {
+    "id": "AJUDA_acfbc2bd-5aea-488e-a74f-da9dd2a216ae",
+    "originalId": "acfbc2bd-5aea-488e-a74f-da9dd2a216ae",
+    "statement": "Um homem de 39 anos procura atendimento ambulatorial por congestão nasal persistente e dor facial há 6 meses. Nas últimas semanas, passou a apresentar tosse com hemoptise e dispneia progressiva. Refere também febre baixa recorrente, fadiga e perda de 5 kg nesse período.\nAo exame físico, observam-se úlceras na mucosa nasal, estertores crepitantes difusos em ambos os pulmões e púrpura palpável nos membros inferiores. Os exames laboratoriais revelam anemia normocítica, creatinina de 2,3 mg/dL e hematúria com cilindros hemáticos. A radiografia de tórax evidencia múltiplos nódulos, alguns cavitados, associados a opacidades bilaterais em regiões hilo pulmonares.\nEsses achados sugerem, entre as hipóteses diagnósticas, uma vasculite primária associada a autoanticorpos dirigidos contra antígenos, que estão presentes no seguinte tipo celular:",
+    "options": [
+      {
+        "id": "A",
+        "text": "células parietais gástricas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pneumócitos tipo II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "neutrófilos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "plaquetas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "células da junção neuromuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO CASO\n\nO quadro clínico descrito é clássico de uma Granulomatose com Poliangiite (GPA), anteriormente conhecida como Granulomatose de Wegener. O paciente apresenta a tríade característica de acometimento dessa vasculite de pequenos vasos:\n\n1. Trato respiratório superior: Congestão nasal crônica, dor facial e úlceras na mucosa nasal.\n2. Trato respiratório inferior: Tosse, hemoptise, dispneia e achados radiológicos de nódulos cavitados.\n3. Acometimento renal: Insuficiência renal aguda (creatinina de 2,3 mg/dL) e sedimento urinário ativo (hematúria com cilindros hemáticos), indicando uma glomerulonefrite.\n\nAlém disso, a presença de púrpura palpável reforça o diagnóstico de vasculite sistêmica de pequenos vasos. A Granulomatose com Poliangiite faz parte do grupo das vasculites associadas ao ANCA (anticorpo anticitoplasma de neutrófilos). Esses autoanticorpos são direcionados contra antígenos presentes nos grânulos citoplasmáticos dos neutrófilos, como a proteinase 3 (PR3-ANCA, padrão c-ANCA) ou a mieloperoxidase (MPO-ANCA, padrão p-ANCA). No caso da GPA, o c-ANCA/anti-PR3 é o marcador mais específico.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. Anticorpos contra células parietais gástricas estão associados à gastrite atrófica autoimune e à anemia perniciosa, não tendo relação com vasculites sistêmicas ou quadros de síndrome pulmão-rim.\n\nb) INCORRETA. Embora o pulmão seja um órgão-alvo importante nesta patologia, os pneumócitos tipo II não são o alvo primário dos autoanticorpos nas vasculites. Na Síndrome de Goodpasture, por exemplo, o alvo é a membrana basal glomerular e alveolar, e não especificamente o pneumócito.\n\nc) CORRETA. Como descrito, a Granulomatose com Poliangiite é uma vasculite associada ao ANCA. O termo ANCA refere-se a anticorpos direcionados contra constituintes do citoplasma dos neutrófilos (especificamente a proteinase 3 e a mieloperoxidase).\n\nd) INCORRETA. Anticorpos contra plaquetas (como contra as glicoproteínas IIb/IIIa ou Ib/IX) são encontrados na Púrpura Trombocitopênica Imunológica (PTI), que se manifesta com trombocitopenia e sangramentos, mas não com o quadro de inflamação sistêmica, nódulos pulmonares e glomerulonefrite.\n\ne) INCORRETA. Anticorpos dirigidos contra componentes da junção neuromuscular (como o receptor de acetilcolina ou a quinase músculo-específica – MuSK) são típicos da Miastenia Gravis, que se manifesta com fraqueza muscular e fatigabilidade, sem envolvimento inflamatório multissistêmico.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Vasculites"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:55.326Z"
+  },
+  {
+    "id": "AJUDA_acfc5dd8-3795-40e3-a4a9-1f9bbccebe6e",
+    "originalId": "acfc5dd8-3795-40e3-a4a9-1f9bbccebe6e",
+    "statement": "Mulher, 70 anos de idade, com histórico de insuficiência cardíaca, foi admitida na UTI com choque cardiogênico após um infarto agudo do miocárdio. Exame físico: PA = 95/60 mmHg, FC = 110 bpm, FR = 25 irpm, SpO2 = 90% com máscara de oxigênio; extremidades frias, pele úmida e distensão jugular. Qual é a escolha mais adequada de agente inotrópico para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dopamina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Noradrenalina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dobutamina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Adrenalina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nA paciente apresenta um quadro clássico de choque cardiogênico após infarto agudo do miocárdio. Os achados de extremidades frias e pele úmida indicam baixa perfusão periférica (perfil frio), enquanto a distensão jugular e a baixa saturação de oxigênio (SpO2 90%) apontam para congestão sistêmica e pulmonar (perfil úmido). Esse é o perfil hemodinâmico C (frio e úmido), onde o objetivo principal é aumentar o débito cardíaco e reduzir as pressões de enchimento ventricular.\n\nAlternativa a) Incorreta. A dopamina já foi muito utilizada, mas caiu em desuso no choque cardiogênico. O estudo SOAP II demonstrou que a dopamina está associada a uma maior incidência de arritmias e maior mortalidade em comparação à noradrenalina em pacientes com choque cardiogênico. Em um contexto de infarto agudo do miocárdio, o potencial arritmogênico e o aumento do consumo de oxigênio pelo miocárdio tornam a dopamina uma escolha menos segura.\n\nAlternativa b) Incorreta. A noradrenalina é um vasopressor com ação predominante em receptores alfa-1, sendo a droga de escolha para restaurar a pressão arterial média em estados de choque com forte componente vasoplégico ou hipotensão grave (geralmente PAS abaixo de 80-90 mmHg). Embora possa ser associada no choque cardiogênico se a hipotensão for extrema, ela não resolve o problema primário de falência da bomba. Nesta paciente, com PA de 95/60 mmHg, o foco deve ser o inotropismo para melhorar o débito cardíaco.\n\nAlternativa c) Correta. A dobutamina é um agente inotrópico sintético com ação predominante em receptores beta-1 adrenérgicos. Ela aumenta a contratilidade miocárdica (inotropismo) e o volume sistólico, sendo a droga de primeira escolha no choque cardiogênico para pacientes que mantêm uma pressão arterial sistólica mínima (acima de 80-90 mmHg). Além do efeito inotrópico, possui leve ação beta-2, que pode promover vasodilatação periférica, auxiliando na redução da pós-carga e facilitando o esvaziamento ventricular.\n\nAlternativa d) Incorreta. A adrenalina possui potente ação alfa e beta adrenérgica. Seu uso no choque cardiogênico está associado a um aumento marcante do consumo de oxigênio miocárdico, taquicardia e elevação dos níveis de lactato sérico. É reservada para casos de choque refratário a outras medidas ou em situações de parada cardiorrespiratória, não sendo a primeira escolha para o manejo inicial deste caso de infarto.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:55.327Z"
+  },
+  {
+    "id": "AJUDA_ad1e0490-6297-4c10-a509-d3a20a92dcb3",
+    "originalId": "ad1e0490-6297-4c10-a509-d3a20a92dcb3",
+    "statement": "Mulher de 42 anos de idade apresenta febre e calafrios há dois dias. AP: câncer de mama em tratamento neoadjuvante com doxorrubicina e ciclofosfamida. Recebeu um ciclo de quimioterapia há sete dias. Exame físico: PA: 110 × 80 mmHg; FC: 100 bpm; SatO2 95%, T: 38,8 ºC.\nA hipótese diagnóstica e a conduta, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "dengue; administrar medicamentos sintomáticos e coletar sorologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "evento adverso associado ao quimioterápico; prescrever sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "neutropenia febril; coletar culturas e iniciar antibioticoterapia empírica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "infecção por influenza; realizar teste rápido e prescrever sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um caso clássico de neutropenia febril, uma das emergências oncológicas mais importantes na prática médica. A paciente está no sétimo dia após um ciclo de quimioterapia com doxorrubicina e ciclofosfamida, período conhecido como nadir hematológico, no qual ocorre a maior queda na contagem de células brancas (leucócitos e neutrófilos) devido à mielossupressão causada pelas drogas.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. Embora o Brasil seja um país endêmico para dengue e a paciente apresente febre, em oncologia a regra de ouro é que toda febre em paciente recém-quimiotratado deve ser considerada neutropenia febril até que se prove o contrário. Adotar uma conduta expectante com apenas sintomáticos em uma paciente potencialmente neutropênica pode levar ao choque séptico e ao óbito em poucas horas.\n\nAlternativa b: Incorreta. Eventos adversos infusionais ou reações agudas aos quimioterápicos costumam ocorrer durante a administração ou nas primeiras 24 a 48 horas. A febre que surge após sete dias é típica de complicações hematológicas (infecção secundária à queda de imunidade) e não de um efeito colateral direto da droga.\n\nAlternativa c: Correta. A paciente preenche os critérios clínicos para neutropenia febril: febre (temperatura maior que 38,3 graus Celsius ou 38,0 graus sustentada) e história recente de quimioterapia mielossupressora (nadir em 7 dias). A conduta correta é imediata: estabilização, coleta de exames laboratoriais (incluindo hemograma e culturas de sangue e urina) e o início precoce de antibioticoterapia empírica de amplo espectro (como o cefepime), visando cobrir principalmente patógenos Gram-negativos, como a Pseudomonas aeruginosa.\n\nAlternativa d: Incorreta. Infecções virais como a influenza podem ocorrer, mas o raciocínio clínico deve priorizar a condição de maior letalidade e especificidade para o contexto oncológico. O manejo de apenas sintomáticos é insuficiente e perigoso para uma paciente com provável falência medular transitória.\n\nEm resumo, diante de febre no período de nadir pós-quimioterapia, a conduta obrigatória é a investigação de neutropenia e o início imediato de antibióticos após a coleta de culturas.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:55.327Z"
+  },
+  {
+    "id": "AJUDA_ad3b2d02-d3d5-42b7-863b-bef8a795ac0e",
+    "originalId": "ad3b2d02-d3d5-42b7-863b-bef8a795ac0e",
+    "statement": "Criança, do sexo feminino, 5 anos de idade, apresenta dor e aumento do volume abdominal há 3 meses, acompanhados de febre intermitente e inapetência. Nascida de parto normal, sem intercorrências. Nega outras doenças. Ao exame físico, encontra-se em regular estado geral, descorada, eupneica, afebril, anictérica; PA de 100x60 mmHg, FC de 92 bpm, abdome com massa indolor palpável no flanco esquerdo. Genitais externos sem alterações.\n\n• Exames laboratoriais:\nHb: 8,4 g/dL\nLeucócitos: 6.200/mm³ sem desvio\nCreatinina: 0,44 mg/dL\nUreia: 0,28 mg/dL\nUrina tipo I: 1 milhão de hemácias/mL e 68.000 leucócitos/mL\n\nRessonância de abdome apresentada a seguir:\n\nEm relação ao caso apresentado, assinale a hipótese diagnóstica mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neuroblastoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hidronefrose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tumor de Wilms.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tumor ovariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma criança de 5 anos com uma massa abdominal volumosa e indolor no flanco esquerdo, associada a hematúria (1 milhão de hemácias/mL) e anemia (Hb: 8,4 g/dL). Essa descrição é clássica para as principais neoplasias abdominais da infância, sendo necessário o diagnóstico diferencial entre o Tumor de Wilms e o neuroblastoma.\n\nAnálise das alternativas:\n\na) Incorreto. O neuroblastoma é o principal diagnóstico diferencial, porém costuma acometer crianças mais jovens (geralmente abaixo dos 2 anos). Ao exame físico, a massa costuma ser endurecida, irregular e frequentemente ultrapassa a linha média. Na imagem, o neuroblastoma tende a envolver os vasos (encapsulamento), enquanto o Tumor de Wilms os desloca. Além disso, a hematúria é muito menos comum no neuroblastoma do que no tumor renal.\n\nb) Incorreto. A hidronefrose severa pode se apresentar como uma massa palpável, mas a imagem de ressonância magnética mostra uma massa sólida, heterogênea e com áreas de permeio, e não uma dilatação cística do sistema coletor preenchida por líquido (urina), que seria o padrão da hidronefrose.\n\nc) Correto. O Tumor de Wilms (nefroblastoma) é o tumor renal primário mais comum da infância, com pico de incidência entre 2 e 5 anos. A apresentação típica é de uma massa abdominal de crescimento lento, indolor e que não ultrapassa a linha média (como visto na imagem coronal da ressonância, onde a massa está restrita ao lado esquerdo). A hematúria, presente no exame de urina da paciente, reforça a origem renal da neoplasia. As imagens de ressonância magnética (axial, coronal e sagital) revelam uma grande massa sólida originada do rim esquerdo, substituindo quase todo o parênquima renal normal.\n\nd) Incorreto. Um tumor ovariano se manifestaria como uma massa pélvica ou no hipogástrio, e não no flanco. A ressonância magnética demonstra claramente que a origem da lesão é no andar superior/médio do abdome, ocupando o leito renal esquerdo, e não na região anexial.\n\nAssociação com a imagem:\nAs imagens de ressonância magnética mostram uma volumosa formação expansiva sólida e heterogênea no flanco esquerdo. Na imagem coronal (a segunda da sequência), observa-se o rim direito com aspecto normal e a massa à esquerda ocupando todo o espaço renal, sem cruzar a linha média da coluna vertebral, o que é um sinal radiológico muito sugestivo de Tumor de Wilms. Na imagem sagital (a primeira), nota-se como a massa comprime as estruturas adjacentes, mas mantém um contorno relativamente definido, característico desse tipo de tumor.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/264bf0025e09ad3761e1ff958d3afa9ea15833a6e6bef74b4e26d7090f68b051.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ad3b2d02-d3d5-42b7-863b-bef8a795ac0e_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/a4bc84a87a4ecf21b77d0fb70f0e0fa6261e2ccd529c5adfcbfdb1049adec2e5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ad3b2d02-d3d5-42b7-863b-bef8a795ac0e_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/25b070002908f837f88d787dedb90823218049e9a6e3e37034f693bb3c05edac.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ad3b2d02-d3d5-42b7-863b-bef8a795ac0e_img_2.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:56.782Z"
+  }
+]

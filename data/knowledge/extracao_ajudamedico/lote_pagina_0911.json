@@ -1,0 +1,477 @@
+[
+  {
+    "id": "AJUDA_fcd0d0a3-a9a6-4f18-86a4-5d249ffc38ee",
+    "originalId": "fcd0d0a3-a9a6-4f18-86a4-5d249ffc38ee",
+    "statement": "28. Paciente de 46 anos, com história de irregularidade menstrual há 1 ano, refere sangramento uterino intenso há 15 dias, retorna a Unidade Básica de Saúde por queixa de fadiga e tontura há 1 semana após a realização de exames laboratoriais. Ao exame físico: PA 102 x 64 mmHg, FC 110 bpm. Conjuntivas hipocoradas (++/4). Hidratada, afebril, eupneica. Ritmo cardíaco regular. Ausculta pulmonar sem alterações. Abdome com útero aumentado ao exame bimanual.\nExames complementares:\nHemoglobina = 8,4 g/dL.\nBeta-hCG negativo.\nUSG transvaginal: miomas intramurais múltiplos.\nDiante do diagnóstico, qual a melhor abordagem terapêutica inicial para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar histerectomia total de imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever antibiótico profilático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tratar com ácido tranexâmico ou anticoncepcionais hormonais, avaliar reposição de ferro e estabilizar paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Reorientar a paciente, pois o quadro é esperado na pré-menopausa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar reposição hormonal com estrogênio em gel transdérmico isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente apresenta um quadro de Sangramento Uterino Anormal (SUA) agudo, com repercussão hemodinâmica (taquicardia de 110 bpm) e anemia sintomática (hemoglobina de 8,4 g/dL). A presença de miomas intramurais e a negatividade do Beta-hCG direcionam o diagnóstico etiológico para leiomiomatose uterina (o \"L\" da classificação PALM-COEIN).\n\nAnálise das alternativas:\n\na) Incorreta. A histerectomia é um tratamento definitivo para a miomatose, mas não deve ser indicada de forma imediata em uma paciente com instabilidade hemodinâmica e anemia aguda. O primeiro passo é sempre a estabilização clínica e o controle do sangramento agudo por meios clínicos. Operar uma paciente anêmica e descompensada aumenta significativamente os riscos cirúrgicos.\n\nb) Incorreta. Não há qualquer indício de processo infeccioso (paciente afebril, sem dor abdominal aguda ou secreção purulenta). O uso de antibióticos não tem papel no manejo do sangramento uterino por miomas.\n\nc) Correta. Esta é a conduta preconizada para o manejo inicial do SUA agudo. O ácido tranexâmico atua na estabilização do coágulo (antifibrinolítico) e os anticoncepcionais hormonais (especialmente em doses mais altas no esquema de ataque) auxiliam no controle do fluxo. Paralelamente, é fundamental estabilizar a paciente com reposição volêmica, se necessário, e tratar a anemia ferropriva instalada.\n\nd) Incorreta. Embora a irregularidade menstrual seja comum na transição menopausal, um sangramento que leva à anemia grave e instabilidade hemodinâmica nunca deve ser considerado normal ou apenas \"esperado\". Trata-se de uma urgência médica que requer intervenção.\n\ne) Incorreta. O uso de estrogênio isolado, especialmente em gel transdérmico, não é o tratamento para sangramento agudo por miomatose. O estrogênio isolado pode, inclusive, estimular o crescimento endometrial e agravar o sangramento se não houver oposição de progestagênio. A terapia de reposição hormonal tem indicações específicas para sintomas climatéricos, o que não é o foco desta emergência.\n\nGabarito: Alternativa (c).",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.682Z"
+  },
+  {
+    "id": "AJUDA_fcd4a869-943d-4dae-9362-83a8c3b411cc",
+    "originalId": "fcd4a869-943d-4dae-9362-83a8c3b411cc",
+    "statement": "A Hiperplasia Adrenal Congênita (HAC) é um grupo de distúrbios genéticos que afetam a biossíntese de hormônios esteroides pelas glândulas adrenais. Dessa forma, avalie as afirmações como verdadeiras (V) ou falsas (F):\n\nI. A forma não clássica da HAC é detectada logo após o nascimento e se caracteriza por uma significativa perda de sal, levando a uma crise potencialmente letal que requer tratamento imediato.\nII. Na forma clássica da HAC por deficiência da 21-hidroxilase, a atividade enzimática da 21-hidroxilase é significativamente prejudicada, resultando em produção insuficiente de aldosterona e cortisol, o que pode levar à crise de perda de sal a partir do 8º dia de vida.\nIII. A menina afetada pela forma clássica da HAC pode apresentar genitália ambígua devido à virilização intrauterina, que pode variar desde clitoromegalia até uma genitália externa de aspecto masculino.\n\nAssim, a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F, V, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Afirmação I: Falsa. A forma não clássica da Hiperplasia Adrenal Congênita (HAC), também conhecida como forma de início tardio, não se manifesta com perda de sal nem é detectada logo após o nascimento por crises clínicas. Diferentemente da forma clássica, a atividade enzimática na forma não clássica é suficiente para manter a produção de cortisol e aldosterona em níveis basais. Os sintomas costumam surgir na infância ou adolescência e estão relacionados ao excesso de androgênios, como pubarca precoce, acne, hirsutismo e irregularidade menstrual. A crise de perda de sal é exclusiva da forma clássica perdedora de sal.\n\nAfirmação II: Verdadeira. Na forma clássica por deficiência da enzima 21-hidroxilase (responsável por cerca de 95% dos casos de HAC), ocorre um bloqueio severo na conversão de precursores em cortisol e aldosterona. A deficiência de aldosterona prejudica a reabsorção de sódio e a excreção de potássio e hidrogênio nos túbulos renais. Isso leva a uma crise de perda de sal, caracterizada por desidratação grave, hiponatremia e hipercalemia, que tipicamente se manifesta entre a primeira e a terceira semana de vida (geralmente a partir do 7º ou 8º dia).\n\nAfirmação III: Verdadeira. O bloqueio enzimático na via da 21-hidroxilase faz com que os precursores acumulados (como a 17-OH-progesterona) sejam desviados para a via de síntese dos androgênios adrenais. No feto do sexo feminino, o excesso de testosterona e androstenediona durante o período crítico da diferenciação genital (entre a 9ª e a 14ª semana de gestação) causa a virilização da genitália externa. O quadro pode variar desde uma leve clitoromegalia até a fusão completa das pregas labioescrotais e formação de um seio urogenital único, conferindo um aspecto masculino à genitália, embora os órgãos internos (útero e ovários) sejam preservados.\n\nAnálise das alternativas:\nA alternativa (a) está incorreta porque classifica a afirmação I como verdadeira e a III como falsa.\nA alternativa (b) está incorreta porque classifica a afirmação I como verdadeira e a II como falsa.\nA alternativa (c) está correta, pois identifica corretamente que apenas a afirmação I é falsa, enquanto a II e a III são verdadeiras.\nA alternativa (d) está incorreta porque classifica a afirmação II como falsa.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Hiperplasia Adrenal Congênita",
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.682Z"
+  },
+  {
+    "id": "AJUDA_fcd4e3d5-26da-4036-a571-3812ebc03825",
+    "originalId": "fcd4e3d5-26da-4036-a571-3812ebc03825",
+    "statement": "Menino, 5 anos de idade, é levado à UBS por quadro de lesão de pele há 2 meses. O médico fez o diagnóstico de molusco contagioso. Assinale a alternativa que apresenta a imagem compatível com o diagnóstico.",
+    "options": [],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico de molusco contagioso é clínico e baseia-se na morfologia característica das lesões cutâneas. Abaixo, analisamos cada alternativa conforme as imagens apresentadas:\n\nAlternativa (a) Incorreta: A imagem mostra pápulas de superfície rugosa, irregular e hiperceratósica (aspecto de couve-flor). Essas características são típicas da verruga vulgar, causada pelo papilomavírus humano (HPV), e não do molusco contagioso, que possui superfície lisa.\n\nAlternativa (b) Incorreta: A imagem exibe pequenas vesículas agrupadas sobre uma base eritematosa (avermelhada). Esse padrão é patognomônico de infecções pelo vírus herpes (seja herpes simples ou varicela-zóster), diferindo das pápulas sólidas do molusco.\n\nAlternativa (c) Correta: Esta imagem representa o quadro clássico do molusco contagioso, infecção viral causada por um poxvírus. As lesões são pápulas firmes, brilhantes, da cor da pele ou peroladas, com formato cupuliforme (em domo). O detalhe crucial para o diagnóstico é a presença de uma umbilicação central (pequena depressão no centro da pápula), visível em várias lesões da foto. É uma condição muito comum na pediatria, geralmente autolimitada, mas que pode exigir tratamento para evitar autoinoculação.\n\nAlternativa (d) Incorreta: A imagem mostra uma lesão única, ulcerada, com centro necrótico e halo inflamatório. Esse aspecto sugere condições como ectima (uma infecção bacteriana mais profunda) ou loxoscelismo (picada de aranha-marrom), não guardando relação com as pápulas múltiplas do molusco.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.682Z"
+  },
+  {
+    "id": "AJUDA_fcd7ab76-469d-4f2b-8754-7720374cc328",
+    "originalId": "fcd7ab76-469d-4f2b-8754-7720374cc328",
+    "statement": "Uma gestante de 29 anos, G2P1, com 32 semanas, apresenta perda de líquido claro há 3 horas, sem dor, sem sangramento e com movimentos fetais presentes. Ao exame: PA 110×70 mmHg, FC 90 bpm, temperatura 36,8°C. Toque vaginal não realizado. Especular confirma saída de líquido amniótico pela vagina. O feto está único, vivo, com BCF 140 bpm. Não há sinais de corioamnionite. Ultrassom mostra LAI reduzido e peso estimado adequado. Com base nas recomendações atuais para amniorrexe prematura pré-termo, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internar, iniciar corticoterapia para maturação pulmonar, antibiótico profilático e tocolítico por 48h para completar corticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internar, realizar corticoterapia e antibiótico profilático, manter vigilância materno-fetal e não usar tocolíticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Indicar interrupção imediata da gestação devido ao risco de infecção, independentemente da vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar apenas corticoterapia, sem antibiótico, pois este não reduz morbidade neonatal na APP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Liberar a paciente para acompanhamento ambulatorial se não houver sinais de corioamnionite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o manejo da amniorrexe prematura pré-termo (ruptura de membranas antes do início do trabalho de parto e antes de 37 semanas) em uma gestante de 32 semanas, sem sinais de infecção ou trabalho de parto.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): Embora a internação, a corticoterapia (para maturação pulmonar fetal) e a antibioticoterapia (para aumentar o período de latência e reduzir riscos infecciosos) estejam indicadas, o uso de tocolíticos na amniorrexe prematura é contraindicado pela maioria dos protocolos e diretrizes internacionais (como ACOG e Febrasgo). A tocólise pode mascarar sinais precoces de corioamnionite e não demonstrou benefício neonatal significativo nesse cenário, mesmo para completar o ciclo de corticoide.\n\nAlternativa B (Correta): Esta alternativa descreve a conduta padrão-ouro para o manejo expectante da amniorrexe prematura entre 24 e 34 semanas de gestação. A internação é necessária para vigilância rigorosa de sinais de infecção (corioamnionite) e vitalidade fetal. A corticoterapia reduz drasticamente a síndrome do desconforto respiratório, hemorragia intraventricular e enterocolite necrosante. O uso de antibióticos de latência (geralmente ampicilina e azitromicina/eritromicina) prolonga a gestação e reduz a morbidade neonatal. A não realização de tocólise é o diferencial correto nesta questão.\n\nAlternativa C (Incorreta): A interrupção imediata da gestação só estaria indicada se houvesse sinais de comprometimento da vitalidade fetal, corioamnionite ou se a gestação já tivesse ultrapassado 34 semanas. Às 32 semanas, o benefício do manejo expectante para ganho de maturidade fetal supera os riscos de infecção, desde que a paciente seja monitorada.\n\nAlternativa D (Incorreta): O uso de antibióticos é fundamental na amniorrexe prematura pré-termo. Diferentemente do trabalho de parto pré-termo com membranas íntegras (onde o antibiótico não é rotina), na ruptura de membranas ele comprovadamente aumenta o tempo de latência (tempo entre a ruptura e o parto) e reduz a incidência de infecções maternas e neonatais.\n\nAlternativa E (Incorreta): O manejo ambulatorial não é recomendado devido ao alto risco de complicações súbitas, como descolamento prematuro de placenta, compressão de cordão umbilical (pelo oligoâmnio) e evolução rápida para sepse materna por corioamnionite. A paciente deve permanecer internada até o parto.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.682Z"
+  },
+  {
+    "id": "AJUDA_fce5da4f-cc96-4dd0-995b-63375d7418d0",
+    "originalId": "fce5da4f-cc96-4dd0-995b-63375d7418d0",
+    "statement": "Nos últimos anos, tem-se percebido um aumento no número de casos de doença celíaca. \nSobre esta condição patológica, infere-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o diagnóstico definitivo é confirmado com a realização de biópsia do intestino delgado antes da retirada do glúten da alimentação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "deve-se retirar imediatamente o glúten da alimentação da criança, antes mesmo da realização de sorologia ou exame histopatológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a doença celíaca apresenta relação direta com exposição ambiental, sem predisposição individual relacionada à presença de certos antígenos HLA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "endoscopia digestiva alta pode evidenciar sinais característicos da doença, como hiperplasia de criptas, atrofia de vilosidades e infiltrados linfocitários intraepiteliais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. Embora a biópsia do intestino delgado seja tradicionalmente considerada o padrão-ouro, diretrizes internacionais modernas, como as da ESPGHAN para a população pediátrica, permitem o diagnóstico definitivo sem a realização de biópsia em casos específicos (pacientes sintomáticos com anticorpos antitransglutaminase IgA acima de 10 vezes o limite superior da normalidade e confirmação com anticorpo antiendomísio). Portanto, a afirmação de que a biópsia é indispensável para o diagnóstico definitivo em todos os casos não é mais universalmente verdadeira.\n\nAlternativa b: Incorreta. A retirada do glúten da alimentação nunca deve ser feita antes da investigação diagnóstica. Para que os testes de sorologia e a análise histopatológica sejam confiáveis, o paciente deve estar consumindo glúten. A retirada precoce da proteína leva à cicatrização da mucosa e à normalização dos anticorpos, o que pode gerar resultados falso-negativos e impedir o diagnóstico correto.\n\nAlternativa c: Incorreta. A doença celíaca possui uma base genética extremamente forte e obrigatória. Existe uma relação direta com a predisposição individual ligada aos antígenos de histocompatibilidade HLA-DQ2 (presente em cerca de 95% dos casos) e HLA-DQ8. A ausência desses alelos tem um valor preditivo negativo de quase 100%, sendo utilizada na prática clínica para excluir a possibilidade da doença em casos de dúvida diagnóstica.\n\nAlternativa d: Correta. O procedimento de endoscopia digestiva alta, quando associado à coleta de biópsias duodenais, permite evidenciar as alterações histológicas patognomônicas da doença celíaca. Essas alterações são classificadas pela escala de Marsh e incluem o aumento do infiltrado linfocitário intraepitelial (linfocitose), a hiperplasia das criptas (como resposta regenerativa) e a atrofia das vilosidades intestinais (causando a perda da superfície de absorção), que são os sinais característicos citados na alternativa.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Doença Celíaca em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.683Z"
+  },
+  {
+    "id": "AJUDA_fce6142a-7fe9-49be-8cb9-76b874db3fa0",
+    "originalId": "fce6142a-7fe9-49be-8cb9-76b874db3fa0",
+    "statement": "Paciente de 45 anos atendida na Unidade Básica de Saúde (UBS) com dor ocular. Referiu que estava realizando limpeza doméstica com alvejante e deixou atingir o olho, acidentalmente. Ao exame físico, foi observada presença de hiperemia intensa com opacidade da córnea e queimadura química da pálpebra superior do olho direito.\nQual é o correto manejo da paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrição de analgésico tópico e colírio lubrificante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lavagem dos olhos com solução de água boricada e curativo oclusivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lavagem ocular com solução fisiológica e avaliação imediata do especialista.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrição de colírio de corticoide tópico e avaliação precoce do especialista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "As queimaduras químicas oculares representam uma das poucas emergências verdadeiras na oftalmologia, nas quais o tempo decorrido entre o acidente e o início do tratamento é o principal determinante do prognóstico visual. O alvejante doméstico é geralmente uma substância alcalina. Substâncias alcalinas são particularmente perigosas porque promovem a necrose por liquefação, o que facilita a penetração profunda do produto nos tecidos oculares.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Prescrever apenas analgésicos e lubrificantes foca apenas no alívio de sintomas e ignora a necessidade crítica de interromper o dano tecidual causado pelo agente químico. Sem a lavagem adequada, a substância continua reagindo com o tecido ocular, agravando a lesão.\n\nAlternativa b: Incorreta. A lavagem com água boricada não é o padrão recomendado e não oferece vantagens sobre o soro fisiológico ou água limpa. Além disso, o curativo oclusivo é contraindicado no manejo inicial de queimaduras por substâncias cáusticas, pois pode aprisionar resíduos do produto contra o globo ocular e dificultar a reepitelização.\n\nAlternativa c: Correta. O primeiro passo no manejo de qualquer queimadura química ocular, seja no ambiente pré-hospitalar, seja na unidade de saúde, é a lavagem ocular copiosa e contínua com solução fisiológica (ou água corrente na falta desta). O objetivo é diluir a substância e normalizar o pH da superfície ocular. Como a paciente já apresenta sinais de gravidade, como opacidade da córnea (que sugere dano estromal ou isquemia) e queimadura palpebral, a avaliação imediata por um oftalmologista é indispensável para condutas avançadas e prevenção de sequelas graves.\n\nAlternativa d: Incorreta. Embora corticoides tópicos possam ser usados no tratamento especializado para controlar a inflamação e evitar simbléfaro, eles não são a conduta prioritária na atenção básica. A prioridade absoluta é a descontaminação por meio da lavagem. Além disso, o termo \"avaliação precoce\" é vago, enquanto o quadro de opacidade corneana exige urgência imediata.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Traumatismos Oculares"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.683Z"
+  },
+  {
+    "id": "AJUDA_fce74bdf-c7b7-4826-b18f-7d6c8a7d9e4c",
+    "originalId": "fce74bdf-c7b7-4826-b18f-7d6c8a7d9e4c",
+    "statement": "As doenças autoimunes pediátricas são um desafio, tanto em seu reconhecimento e diagnóstico, quanto pela forma de abordagem multifacetada. Em relação às doenças autoimunes que podem acometer crianças e adolescentes, está CORRETA a afirmação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dermatomiosite juvenil é prevalente em adolescentes do sexo masculino, e é diagnosticada a partir de lesões de pele e fraqueza muscular, podendo se correlacionar com câncer na vida adulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A hepatite autoimune e colangite esclerosante primária são diagnosticadas na maior porcentagem dos casos devido a quadro de complicações de cirrose hepática, como hemorragia digestiva e ascite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A tireoidite de Hashimoto (tireoidite autoimune) em crianças e adolescentes pode resultar em redução do crescimento, atraso no desenvolvimento esquelético e puberdade tardia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O lúpus eritematoso sistêmico tem quadro mais leve em crianças e adolescentes quando comparados a adultos e o comprometimento do sistema nervoso central é menos frequente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) INCORRETA: A dermatomiosite juvenil (DMJ) apresenta uma predominância no sexo feminino, e não no masculino. Outro ponto crucial é que, embora a dermatomiosite no adulto tenha uma forte associação com neoplasias malignas (síndrome paraneoplásica), essa correlação é extremamente rara na faixa etária pediátrica. O diagnóstico clínico baseia-se na fraqueza muscular proximal e simétrica associada a lesões cutâneas típicas, como o heliótropo e as pápulas de Gottron.\n\nAlternativa (b) INCORRETA: Apesar de a hepatite autoimune e a colangite esclerosante poderem se manifestar inicialmente com sinais de cirrose descompensada, a maior porcentagem dos casos em pediatria é diagnosticada em fases mais precoces. Os pacientes costumam apresentar quadros de hepatite aguda ou crônica insidiosa, caracterizados por fadiga, icterícia flutuante e elevação de transaminases, permitindo o diagnóstico antes que complicações graves como ascite e hemorragia digestiva por varizes esofágicas se estabeleçam.\n\nAlternativa (c) CORRETA: Esta afirmação descreve com precisão as repercussões endócrinas da tireoidite de Hashimoto, que é a causa mais comum de hipotireoidismo adquirido em crianças e adolescentes. A deficiência de hormônios tireoidianos impacta diretamente o crescimento linear, resultando em baixa estatura e redução da velocidade de crescimento. Além disso, há um atraso na maturação esquelética (idade óssea atrasada) e interferência no desenvolvimento puberal, geralmente manifestada como puberdade tardia.\n\nAlternativa (d) INCORRETA: O lúpus eritematoso sistêmico (LES) de início pediátrico é reconhecido por ser mais grave e agressivo do que a forma que acomete adultos. Em crianças e adolescentes, há uma maior incidência de envolvimento de órgãos vitais, sendo o comprometimento do sistema nervoso central e a nefrite lúpica mais frequentes e severos nessa população. O prognóstico em longo prazo depende muito do controle dessas manifestações graves precoces.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Reumatologia Pediátrica",
+      "Tireoide",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Hepatopatias Autoimunes"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.683Z"
+  },
+  {
+    "id": "AJUDA_fcea4431-f374-4f30-8526-e178afe59723",
+    "originalId": "fcea4431-f374-4f30-8526-e178afe59723",
+    "statement": "A amamentação com leite materno é fundamental m, porém algumas doenças virais contraindicam a amamentação. Em relação a amamentação em doenças virais, esta é contraindicada em em caso de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rubéola",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Caxumba",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Zica vírus",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tuberculose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "HTLV1 e HTLV2",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A amamentação é a estratégia isolada de maior impacto na redução da mortalidade infantil; porém, em situações específicas de risco de transmissão vertical de patógenos graves, ela deve ser interrompida. No Brasil, as recomendações do Ministério da Saúde são claras quanto às contraindicações absolutas.\n\nAlternativa a) Incorreta. A rubéola não contraindica o aleitamento materno. Embora o vírus possa ser isolado no leite, não há evidências de danos ao lactente por essa via, e a transmissão costuma ocorrer por via respiratória antes mesmo do diagnóstico clínico.\n\nAlternativa b) Incorreta. A caxumba (parotidite infecciosa) também não é uma contraindicação para amamentar. O vírus pode estar presente no leite, mas a transmissão por essa via não é considerada clinicamente significativa para o bebê.\n\nAlternativa c) Incorreta. No caso do vírus Zika, embora o genoma viral tenha sido detectado em amostras de leite materno, não há evidências documentadas de transmissão do vírus para o lactente por meio da amamentação. Por isso, órgãos como a OMS e o Ministério da Saúde recomendam a manutenção do aleitamento.\n\nAlternativa d) Incorreta. Esta alternativa apresenta dois erros principais no contexto da questão: primeiro, a tuberculose é uma doença bacteriana (causada pelo *Mycobacterium tuberculosis*) e não viral. Segundo, a amamentação não é contraindicada de forma absoluta. Se a mãe estiver em fase bacilífera (transmissível), ela deve amamentar usando máscara cirúrgica e higienizar as mãos, ou o leite deve ser ordenhado e oferecido ao bebê. O recém-nascido deve receber quimioprofilaxia primária conforme o protocolo nacional.\n\nAlternativa e) Correta. A infecção pelos vírus linfotrópicos de células T humanas tipos 1 e 2 (HTLV-1 e HTLV-2) é uma contraindicação absoluta e definitiva para a amamentação. O risco de transmissão vertical pelo leite materno é alto (estimado entre 15% e 25%) e a infecção pode levar ao desenvolvimento de patologias graves e incuráveis a longo prazo, como a leucemia/linfoma de células T do adulto (ATL) e a paraparesia espástica tropical (PET/HAM). No Brasil, mães soropositivas para HTLV devem ser orientadas a não amamentar e têm direito a receber fórmula infantil gratuitamente pelo SUS até, pelo menos, os 6 meses de vida da criança. Vale lembrar que a outra contraindicação viral absoluta no país é o HIV.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.683Z"
+  },
+  {
+    "id": "AJUDA_fcfa6708-820c-45ac-b611-8fc30e064f47",
+    "originalId": "fcfa6708-820c-45ac-b611-8fc30e064f47",
+    "statement": "Um homem de 68 anos procura o pronto-socorro por apresentar hematúria macroscópica indolor, iniciada há dois dias. Nega febre, disúria ou dor lombar. É tabagista de longa data. Ao exame físico, não há sinais de instabilidade hemodinâmica, e o abdome é inocente. O diagnóstico mais provável para este caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "nefrolitíase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cistite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "carcinoma urotelial de bexiga.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "glomerulonefrite aguda pós-estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tuberculose urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico que deve ser prontamente reconhecido na prática médica: homem idoso (68 anos), tabagista crônico e com hematúria macroscópica indolor. Na urologia, essa combinação de fatores é considerada câncer de bexiga (carcinoma urotelial) até que se prove o contrário. O tabagismo é o principal fator de risco, aumentando várias vezes a chance de desenvolvimento de tumores malignos no trato urinário.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. A nefrolitíase (cálculo renal) é uma causa frequente de hematúria, porém o quadro clínico típico é marcado pela cólica nefrética. Trata-se de uma dor lombar aguda, de forte intensidade, com irradiação para o flanco ou região inguinal, muitas vezes acompanhada de náuseas e vômitos. O enunciado deixa claro que a hematúria é indolor e que o abdome é inocente, o que torna este diagnóstico menos provável.\n\nb) INCORRETA. A cistite aguda é uma infecção do trato urinário inferior. Embora possa causar hematúria, ela vem obrigatoriamente acompanhada de sintomas irritativos miccionais, como disúria (dor ao urinar), polaciúria (aumento da frequência) e urgência miccional. O paciente nega esses sintomas e não apresenta febre, o que afasta a hipótese de infecção.\n\nc) CORRETA. O carcinoma urotelial de bexiga é a principal suspeita em pacientes idosos e tabagistas com hematúria macroscópica sem dor. O tabagismo permite que substâncias carcinogênicas sejam filtradas pelos rins e fiquem em contato prolongado com o epitélio da bexiga (urotélio). A hematúria é o sinal inicial em cerca de 85% a 90% dos casos e, por ser frequentemente intermitente, pode atrasar o diagnóstico se o médico não mantiver alto índice de suspeição.\n\nd) INCORRETA. A glomerulonefrite aguda pós-estreptocócica (GNPE) é uma patologia que acomete majoritariamente crianças e adolescentes após uma infecção de pele ou orofaringe. O quadro se manifesta como síndrome nefrítica, caracterizada por edema, hipertensão arterial e hematúria (frequentemente com aspecto de \"cor de chá\" ou \"Coca-Cola\"). Não é um diagnóstico compatível com a faixa etária e o histórico do paciente.\n\ne) INCORRETA. A tuberculose urinária pode causar hematúria e sintomas miccionais crônicos. Um achado clássico é a piúria estéril (leucócitos na urina com cultura comum negativa). No entanto, não é a causa mais comum ou provável neste cenário epidemiológico, devendo ser pensada apenas após a exclusão de neoplasias e infecções bacterianas comuns.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.683Z"
+  },
+  {
+    "id": "AJUDA_fd000919-f717-4ecc-b2d5-13df4e813594",
+    "originalId": "fd000919-f717-4ecc-b2d5-13df4e813594",
+    "statement": "No tratamento do status asmático, os beta-2 agonistas de curta duração constituem primeira linha terapêutica. O mecanismo de ação dos beta-2 agonistas que promove broncodilatação envolve ativação da adenilciclase, aumento do AMPc intracelular e subsequente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inibição direta dos receptores muscarínicos M3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bloqueio dos canais de potássio dependentes de voltagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estabilização de mastócitos com redução de liberação de histamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Relaxamento da musculatura lisa brônquica por redução do cálcio intracelular.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O mecanismo de ação dos beta-2 agonistas é um tema fundamental na farmacologia respiratória e frequentemente cobrado em provas. A sequência de eventos ocorre da seguinte forma:\n\n1. Ativação do Receptor: O beta-2 agonista se liga ao receptor beta-2 adrenérgico, que é um receptor acoplado à proteína G estimuladora (Gs) presente na membrana da célula muscular lisa brônquica.\n2. Via de Sinalização: Essa ligação ativa a enzima adenilciclase, que catalisa a conversão de ATP em AMP cíclico (AMPc).\n3. Efeito do AMPc: O aumento do AMPc intracelular ativa a Proteína Quinase A (PKA).\n4. Resultado Final: A PKA promove a fosforilação de diversas proteínas que resulta na redução da concentração de cálcio (Ca++) no citosol (por meio do sequestro para o retículo sarcoplasmático e efluxo para o meio extracelular) e na inibição da quinase da cadeia leve de miosina. Sem cálcio livre suficiente para ativar o complexo cálcio-calmodulina, a contração muscular é impedida, gerando o relaxamento da musculatura lisa e a consequente broncodilatação.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A inibição dos receptores muscarínicos M3 é o mecanismo de ação dos fármacos anticolinérgicos (ou antimuscarínicos), como o brometo de ipratrópio e o brometo de tiotrópio, e não dos beta-2 agonistas.\n\nAlternativa (b) Incorreta. Os beta-2 agonistas promovem a abertura de canais de potássio ativados por cálcio, o que leva à hiperpolarização da membrana celular (tornando a célula menos excitável). O bloqueio de canais de potássio teria o efeito oposto, favorecendo a despolarização.\n\nAlternativa (c) Incorreta. Embora os beta-2 agonistas possam apresentar algum efeito estabilizador sobre os mastócitos, reduzindo a liberação de mediadores inflamatórios, essa não é a via principal que explica a broncodilatação rápida e intensa necessária no tratamento do status asmático. O enunciado pede especificamente o mecanismo que promove a broncodilatação após o aumento do AMPc.\n\nAlternativa (d) Correta. Como descrito no mecanismo fisiológico, o aumento do AMPc leva à redução dos níveis de cálcio citoplasmático livre na célula muscular lisa. O cálcio é o íon determinante para a contração muscular; sua redução interrompe o ciclo de pontes cruzadas entre actina e miosina, resultando no relaxamento brônquico imediato.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:53.683Z"
+  }
+]

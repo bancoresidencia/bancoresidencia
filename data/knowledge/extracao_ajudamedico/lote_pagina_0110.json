@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_1db6d4b5-c325-4a33-9433-4b0e75805fa4",
+    "originalId": "1db6d4b5-c325-4a33-9433-4b0e75805fa4",
+    "statement": "Uma paciente de 24 anos de idade, apresenta -se em ambulatório de ginecologia com queixa de prurido e dor vaginais, associados a secreção abundante com aspecto grumoso branco. Ao exame clínico, observa-se o conteúdo vaginal aumentado com aspecto em grumos aderente às paredes vaginais. O exame do material apresenta: pH de 4; bacterioscopia (Gram) com aumento excessivo de Lactobacillus sp.; raros leucócitos; restos celulares (lise das células epiteliais). Não são identificados hifas ou esporos. Sobre o caso, assinale a alternativa que contém o tratamento vaginal mais adequado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ácido acético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Clotrimazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Probiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Bicarbonato de sódio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico e laboratorial apresentado é clássico de vaginose citolítica (também conhecida como citólise lactobacilar). Essa condição mimetiza a candidíase vulvovaginal pelos sintomas de prurido, dor e secreção branca grumosa aderente. Contudo, diferencia-se pela microscopia, que revela grande proliferação de Lactobacillus sp., ausência de estruturas fúngicas (hifas/esporos), pH vaginal excessivamente ácido (geralmente entre 3,5 e 4,5) e citólise (presença de restos celulares e núcleos nus devido à lise das células intermediárias induzida pela hiperacidez).\n\nAnálise das alternativas:\n\na) Incorreta. O ácido acético acidificaria ainda mais o meio vaginal, exacerbando a lise celular e agravando os sintomas, visto que a fisiopatologia da doença se deve justamente ao excesso de acidez.\n\nb) Incorreta. O clotrimazol é um antifúngico indicado para candidíase vulvovaginal. Como a microscopia descartou leveduras ou pseudohifas e confirmou a etiologia bacteriana com citólise, os antifúngicos não têm eficácia neste quadro.\n\nc) Incorreta. Os probióticos ginecológicos contêm habitualmente cepas de Lactobacillus. Administrá-los agravaria a proliferação excessiva dessas bactérias, piorando o quadro clínico.\n\nd) Correta. A conduta terapêutica na vaginose citolítica visa alcalinizar o ambiente vaginal, elevando o pH para níveis fisiológicos mais altos, o que inibe o crescimento excessivo dos lactobacilos e cessa a citólise epitelial. O uso de bicarbonato de sódio (em duchas ou banhos de assento) é o tratamento de escolha para o alívio e controle dos sintomas.\n\nGabarito: Alternativa d.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Doenças de Vulva e Vagina",
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:14.554Z"
+  },
+  {
+    "id": "AJUDA_1db7040b-a6c5-41f0-b35a-c8fb38438aa6",
+    "originalId": "1db7040b-a6c5-41f0-b35a-c8fb38438aa6",
+    "statement": "Homem, 45 anos, obeso (IMC 32 kg/m²), é submetido a artroplastia total de joelho direito. No 3º dia pós-operatório, apresenta dispneia súbita, taquicardia (FC: 110 bpm), saturação de oxigênio de 88% em ar ambiente e dor torácica pleurítica. Ao exame físico, nota-se edema assimétrico em membro inferior direito, com diferença de circunferência de 3 cm em relação ao contralateral. O paciente não recebeu profilaxia antitrombótica adequada no pré-operatório. A angiotomografia de tórax confirma embolia pulmonar bilateral e o ultrassom Doppler venoso evidencia trombose venosa profunda em veias poplítea e femoral superficial direitas.\nQual a conduta mais apropriada para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar trombólise sistêmica com alteplase seguida de anticoagulação com heparina de baixo peso molecular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar anticoagulação com heparina não fracionada endovenosa por 24 horas, seguida de varfarina por 3 meses, mantendo INR entre 2,0 - 3,0.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar rivaroxabana 15 mg de 12/12h por 21 dias, seguida de 20 mg 1x/dia por 3 a 6 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar dabigatrana 150 mg de 12/12h imediatamente, sem necessidade de anticoagulação parenteral prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um paciente com Tromboembolismo Venoso (TEV), cursando com Trombose Venosa Profunda (TVP) e Embolia Pulmonar (TEP), em pós-operatório recente de cirurgia ortopédica de grande porte. O paciente encontra-se hemodinamicamente estável (não há choque ou hipotensão persistente), caracterizando um TEP de risco não alto (intermediário ou baixo), no qual a base do tratamento é a anticoagulação plena.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A trombólise sistêmica está indicada apenas para o TEP de alto risco, definido pela presença de instabilidade hemodinâmica (hipotensão arterial persistente, choque obstrutivo ou necessidade de vasopressores). Como o paciente está estável e no 3º dia de pós-operatório de cirurgia ortopédica de grande porte, a trombólise é contraindicada pelo risco proibitivo de sangramento grave.\n\nAlternativa b: Incorreta. Ao optar pela varfarina, a heparina (seja não fracionada ou de baixo peso molecular) deve ser mantida por, no mínimo, 5 dias e apenas suspensa após o INR atingir a faixa terapêutica (2,0 a 3,0) em duas medidas consecutivas com intervalo de 24 horas. Descontinuar a heparina com apenas 24 horas deixaria o paciente desprotegido e exposto a um estado pró-trombótico transitório induzido pelo início da varfarina.\n\nAlternativa c: Correta. Os anticoagulantes orais diretos (DOACs) representam a primeira escolha no tratamento do TEV em pacientes hemodinamicamente estáveis. A rivaroxabana é aprovada como monoterapia oral desde o início, com a posologia clássica de 15 mg por via oral a cada 12 horas durante os primeiros 21 dias, seguida de 20 mg uma vez ao dia. A duração recomendada para um primeiro episódio associado a fator de risco cirúrgico transitório é de 3 a 6 meses.\n\nAlternativa d: Incorreta. Ao contrário da rivaroxabana e da apixabana, a dabigatrana (assim como a edoxabana) não pode ser iniciada imediatamente em monoterapia para o tratamento agudo do TEV. O protocolo exige uma fase inicial de anticoagulação parenteral (geralmente com heparina de baixo peso molecular) por pelo menos 5 a 10 dias antes da transição para a dabigatrana.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Hemostasia",
+      "Tromboembolismo Pulmonar (TEP)",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:14.554Z"
+  },
+  {
+    "id": "AJUDA_1db71281-f1ba-4d11-9081-6d72a0f35200",
+    "originalId": "1db71281-f1ba-4d11-9081-6d72a0f35200",
+    "statement": "Mulher de 27 anos, maratonista, IG 1P (vaginal há 7 anos), utilizava dispositivo intrauterino (DIU) liberador de progestagênio até 8 meses atrás, quando o retirou por desejo pessoal. Desde então permanece com seu treinamento habitual e utiliza preservativo como contraceptivo. Queixa-se de não ter apresentado fluxo menstrual desde a retirada do DIU. Exame de beta-hCG negativo. Foi medicada com medroxiprogesterona 10 mg ao dia por 10 dias, sem apresentar sangramento genital. Dosagem de FSH = 1,2 mUl/mL e de LH = 2,1 mUI/mL. Ressonância magnética de sela túrcica normal.\nA principal hipótese diagnóstica para a origem do quadro de amenorreia é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipófise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ovários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipotálamo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos seguir o raciocínio clínico da investigação das amenorreias secundárias:\n\n1. Exclusão de Gravidez: O beta-hCG é negativo, descartando gestação.\n\n2. Teste da Progesterona: A paciente utilizou medroxiprogesterona e não apresentou sangramento (teste negativo). Isso indica duas possibilidades: ou há um problema anatômico no trato de saída (útero/vagina) ou há uma deficiência de estrogênio (o endométrio não foi previamente \"preparado\" pelo estrogênio para descamar com a progesterona).\n\n3. Avaliação Hormonal (FSH e LH): Os níveis de FSH (1,2 mUI/mL) e LH (2,1 mUI/mL) estão baixos. Isso caracteriza um hipogonadismo hipogonadotrópico. Se a causa fosse ovariana, o FSH estaria elevado (hipogonadismo hipergonadotrópico). Se a causa fosse uterina, os níveis de FSH e LH estariam normais. Portanto, o problema é central (hipotálamo ou hipófise).\n\n4. Diferenciação Central (Hipotálamo vs. Hipófise): A ressonância magnética de sela túrcica está normal, o que afasta tumores ou lesões estruturais importantes na hipófise. O dado clínico fundamental é que a paciente é maratonista (atleta de alta performance). O exercício físico extenuante é uma causa clássica de amenorreia funcional hipotalâmica, na qual ocorre uma disfunção na secreção pulsátil do hormônio liberador de gonadotrofinas (GnRH) pelo hipotálamo.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a hipófise seja responsável pela secreção de FSH e LH (que estão baixos), a ressonância magnética normal e o perfil de atleta de elite direcionam a etiologia para o controle superior da hipófise, ou seja, para o hipotálamo.\n\nb) Incorreta. Se a falha fosse nos ovários (insuficiência ovariana prematura), a paciente teria um quadro de hipogonadismo hipergonadotrópico, com FSH e LH muito elevados, pois não haveria o feedback negativo do estrogênio sobre a hipófise.\n\nc) Correta. A amenorreia hipotalâmica funcional é comum em mulheres com gasto energético elevado, estresse físico ou baixo peso (tríade da mulher atleta). Nesses casos, o hipotálamo reduz a liberação de GnRH, resultando em baixos níveis de FSH e LH, o que impede a produção ovariana de estrogênio e, consequentemente, causa a ausência de sangramento no teste da progesterona.\n\nd) Incorreta. Se a origem fosse uterina (como na Síndrome de Asherman), a paciente também não sangraria no teste da progesterona, mas o seu eixo hormonal estaria intacto, apresentando níveis de FSH e LH dentro da normalidade. Além disso, a história de atleta não teria relação direta com uma causa uterina.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Ciclo Menstrual",
+      "Amenorreia"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:14.554Z"
+  },
+  {
+    "id": "AJUDA_1dbaa144-2fed-4504-a279-706bee1165ec",
+    "originalId": "1dbaa144-2fed-4504-a279-706bee1165ec",
+    "statement": "O princípio do SUS que se refere ao conjunto integrado e contínuo de ações e serviços preventivos e curativos, tanto individuais quanto coletivos, necessários para cada caso em todos os níveis de complexidade do sistema, é denominado de",
+    "options": [
+      {
+        "id": "A",
+        "text": "universalidade de acesso aos serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "preservação da autonomia das pessoas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "igualdade da assistência à saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "integralidade de assistência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "descentralização político-administrativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O enunciado descreve o conceito de Integralidade, um dos princípios doutrinários do Sistema Único de Saúde (SUS), conforme estabelecido na Lei Orgânica da Saúde (Lei nº 8.080/90).\n\nAbaixo, a análise detalhada de cada alternativa:\n\na) Incorreta. A Universalidade de acesso refere-se à garantia de que todos os cidadãos brasileiros, sem qualquer tipo de discriminação, têm direito às ações e serviços de saúde. É o princípio que torna a saúde um direito de todos e dever do Estado. O foco aqui é \"quem\" tem direito ao sistema, e não o \"que\" é ofertado.\n\nb) Incorreta. A preservação da autonomia das pessoas na defesa de sua integridade física e moral é um princípio que assegura ao paciente o direito de decidir sobre sua saúde, tratamentos e procedimentos, respeitando seus valores e crenças. É um preceito ético e de cidadania dentro do atendimento médico.\n\nc) Incorreta. A Igualdade da assistência à saúde determina que o sistema deve tratar todos os usuários de forma justa, sem privilégios ou preconceitos. Embora muito ligada ao conceito de equidade (dar mais a quem mais precisa), a igualdade foca na ausência de barreiras discriminatórias no atendimento.\n\nd) Correta. A Integralidade de assistência é definida exatamente como o conjunto articulado e contínuo de ações e serviços, preventivos e curativos, individuais e coletivos, exigidos para cada caso em todos os níveis de complexidade do sistema. Esse princípio considera o indivíduo como um todo, não apenas como uma patologia isolada, e garante que ele receba desde a promoção e prevenção na atenção primária até procedimentos de alta complexidade, conforme sua necessidade.\n\ne) Incorreta. A descentralização político-administrativa é um princípio organizativo do SUS. Ela se refere à redistribuição das responsabilidades e do poder de decisão entre os entes federados (União, Estados e Municípios), com ênfase na municipalização dos serviços para que a gestão esteja mais próxima da realidade da população.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:14.554Z"
+  },
+  {
+    "id": "AJUDA_1dbc2b70-9bd2-4331-818c-b7f87403e393",
+    "originalId": "1dbc2b70-9bd2-4331-818c-b7f87403e393",
+    "statement": "A tríade letal do trauma inclui:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotermia, hipoglicemia e coagulopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acidose, hipotermia e coagulopatia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Acidose, alcalose e hipotermia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipercalemia, acidose e hipotermia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipotensão permissiva, acidose e hipercalcemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Tríade Letal do Trauma representa um ciclo vicioso fisiopatológico que ocorre em pacientes com hemorragia grave e choque hipovolêmico. Esses três fatores interagem de forma sinérgica, em que um agrava o outro, aumentando drasticamente a mortalidade se não houver intervenção rápida por meio do controle de danos.\n\nComponentes da Tríade:\n\n1. Acidose Metabólica: Decorre da hipoperfusão tecidual. Sem oxigênio suficiente, as células passam a realizar metabolismo anaeróbio, produzindo ácido lático. O pH baixo reduz a eficácia dos fatores de coagulação e a força de contração do coração.\n\n2. Hipotermia: A perda de sangue e a exposição do paciente reduzem a capacidade do corpo de manter o calor. A hipotermia altera a função enzimática, prejudicando a cascata de coagulação e a adesão das plaquetas, mesmo que os níveis de fatores de coagulação estejam normais.\n\n3. Coagulopatia: O sangramento consome fatores de coagulação e plaquetas. A acidose e a hipotermia tornam esses fatores remanescentes disfuncionais. O resultado é o aumento do sangramento, que, por sua vez, piora o choque, a acidose e a hipotermia.\n\nAnálise das alternativas:\n\na) Incorreta. A hipoglicemia pode ocorrer em situações de estresse metabólico ou exaustão de reservas de glicogênio, mas não é um componente da tríade clássica do trauma.\n\nb) Correta. Esta alternativa descreve exatamente os três pilares que compõem a tríade letal: acidose, hipotermia e coagulopatia. Recentemente, alguns protocolos modernos incluem a hipocalcemia como um quarto elemento (formando o Diamante da Morte), mas, para fins de prova, a tríade clássica continua sendo a cobrada.\n\nc) Incorreta. A alcalose é o oposto da acidose. No trauma grave com choque, a tendência metabólica é a acidose devido ao acúmulo de lactato pela má perfusão.\n\nd) Incorreta. A hipercalemia (aumento do potássio no sangue) pode ser observada em traumas de esmagamento (rabdomiólise) ou após transfusões maciças, mas não faz parte da definição da tríade letal.\n\ne) Incorreta. A hipotensão permissiva é uma conduta médica (estratégia de ressuscitação) e não um componente patológico da tríade. Além disso, o trauma grave geralmente cursa com hipocalcemia (queda do cálcio, muitas vezes agravada pelo citrato das bolsas de sangue), e não hipercalcemia.\n\nGabarito: Alternativa (b).",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:14.554Z"
+  },
+  {
+    "id": "AJUDA_1dbefb57-5957-4d1c-b1f4-a8ba480de2d5",
+    "originalId": "1dbefb57-5957-4d1c-b1f4-a8ba480de2d5",
+    "statement": "Mulher de 42 anos procura atendimento médico após notar um nódulo indolor na região anterior do pescoço. O ultrassom de tireoide mostra nódulo sólido hipoecoico de 2,5 cm de diâmetro, localizado no lobo direito, com presença de microcalcificações e margens irregulares. A punção aspirativa por agulha fina (PAAF) é compatível com carcinoma papilífero de tireoide. Não há linfonodomegalias cervicais palpáveis, e a tomografia computadorizada da região cervical e tórax não evidencia metástases. O tratamento cirúrgico mais adequado para esta paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tireoidectomia total, sem necessidade de esvaziamento cervical, pois não há evidências clínicas ou radiológicas de linfonodos metastáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "lobectomia direita com istmectomia, pois o tumor é menor que 4 cm e não há metástases.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tireoidectomia parcial apenas, pois o carcinoma papilífero tem baixo potencial maligno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tireoidectomia total com esvaziamento cervical radical bilateral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nPaciente de 42 anos com Carcinoma Papilífero de Tireoide (CPT) confirmado por PAAF, apresentando nódulo de 2,5 cm (estadiamento T2) e ausência de linfonodomegalias ao exame físico e exames de imagem (cN0).\n\nAlternativa a: Esta é a conduta cirúrgica mais aceita e recomendada pelas diretrizes da American Thyroid Association (ATA) e da Sociedade Brasileira de Cirurgia de Cabeça e Pescoço para tumores maiores que 2 cm. A tireoidectomia total permite o tratamento de focos multicêntricos e o acompanhamento posterior com tireoglobulina e radioiodoterapia. Como a paciente é cN0 (pescoço clinicamente negativo), não há indicação de esvaziamento cervical radical ou lateral profilático.\n\nAlternativa b: A lobectomia com istmectomia é uma opção terapêutica em carcinomas papilíferos de baixo risco entre 1 cm e 4 cm, sem extensão extratireoidiana. No entanto, em provas de residência, a tireoidectomia total ainda é frequentemente considerada a resposta padrão para nódulos acima de 2 cm, pois facilita o seguimento oncológico e o uso de iodo radioativo se necessário.\n\nAlternativa c: A tireoidectomia parcial ou nodulectomia é considerada um tratamento insuficiente para o carcinoma papilífero. O CPT é frequentemente multicêntrico (ocorrendo em ambos os lobos) e a preservação de tecido tireoidiano contralateral dificulta a detecção de recidivas através do marcador tireoglobulina.\n\nAlternativa d: Esta alternativa, apontada pelo gabarito, propõe a tireoidectomia total associada ao esvaziamento cervical radical bilateral. Na prática médica atual, esta conduta é considerada incorreta e desproporcional para o caso descrito. O esvaziamento radical envolve a ressecção da veia jugular interna, do músculo esternocleidomastoideo e do nervo acessório, possuindo altíssima morbidade. Tal procedimento é reservado apenas para casos de doença linfonodal maciça e invasiva, não possuindo indicação em pacientes cN0 (sem evidências de metástases linfonodais). Se o gabarito oficial é a letra D, existe um provável erro na formulação da questão ou no gabarito divulgado, visto que a alternativa A representa a prática clínica correta.\n\nResumo da conduta: Para um Carcinoma Papilífero de 2,5 cm cN0, a cirurgia indicada é a tireoidectomia total (ou lobectomia em casos selecionados), sem necessidade de esvaziamento cervical radical.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:14.554Z"
+  },
+  {
+    "id": "AJUDA_1de9aeee-e5d9-4f54-a362-40da76e85b69",
+    "originalId": "1de9aeee-e5d9-4f54-a362-40da76e85b69",
+    "statement": "Sobre a hemorragia digestiva alta por úlcera péptica, assinale a alternativa que apresenta risco elevado de ressangramento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Úlcera Forrest IIc.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Úlcera na grande curvatura gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Úlcera na parede posterior do bulbo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Necessidade de transfusão de 3U de concentrado de hemácias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO manejo da hemorragia digestiva alta (HDA) por úlcera péptica exige o reconhecimento de fatores preditores de gravidade e de recidiva hemorrágica. Esses fatores podem ser clínicos, endoscópicos ou anatômicos.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: A classificação de Forrest é utilizada para definir o risco de ressangramento com base no aspecto endoscópico da úlcera. A Forrest IIc é caracterizada pela presença de manchas de hematina (fundo pigmentado) na base da úlcera. Essa classificação indica um baixo risco de ressangramento (aproximadamente 5% a 10%), não exigindo tratamento endoscópico, apenas terapia medicamentosa.\n\nAlternativa (b) INCORRETA: A localização da úlcera na grande curvatura gástrica não é considerada um fator de risco clássico para ressangramento. O local gástrico de maior risco é a pequena curvatura, devido à proximidade com a artéria gástrica esquerda.\n\nAlternativa (c) CORRETA: Esta é uma das correlações anatômicas mais importantes em provas de residência. Úlceras localizadas na parede posterior do bulbo duodenal apresentam um risco elevado de sangramento grave e ressangramento porque estão situadas exatamente sobre o trajeto da artéria gastroduodenal. Quando a úlcera erode este vaso de grande calibre, o sangramento costuma ser arterial, volumoso e de difícil controle definitivo apenas por endoscopia, aumentando as taxas de falha terapêutica e a necessidade de cirurgia ou embolização.\n\nAlternativa (d) INCORRETA: Embora a necessidade de transfusão sanguínea e a instabilidade hemodinâmica sejam marcadores de gravidade do episódio atual (utilizados em escores como Rockall e Blatchford), a literatura médica destaca que fatores anatômicos (como a localização da úlcera) e características endoscópicas (Forrest I, IIa e IIb) são preditores mais específicos de ressangramento do que o volume isolado de concentrado de hemácias transfundido, especialmente no valor de 3 unidades, que é comum em quadros de HDA moderada.\n\nRESUMO:\nO risco de ressangramento é maior em úlceras de parede posterior do bulbo duodenal (artéria gastroduodenal) e pequena curvatura gástrica (artéria gástrica esquerda), além das classificações Forrest Ia, Ib, IIa e IIb. Portanto, a alternativa (c) é a correta.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:14.554Z"
+  },
+  {
+    "id": "AJUDA_1df3d6b6-85e6-4b26-a023-296304f62680",
+    "originalId": "1df3d6b6-85e6-4b26-a023-296304f62680",
+    "statement": "Você está de plantão em um hospital que possui obstetra na retaguarda. Esse obstetra está realizando uma cesariana de urgência e pediu que você assumisse o cuidado de uma gestante no pré-parto até que ele termine o procedimento. Ao deixar o pré-parto, o obstetra solicitou a realização de uma cardiotocografia. Trata-se de uma gestante G3P2A0C0, com 40 semanas e 3 dias de gestação, em trabalho de parto induzido devido à rotura prematura das membranas. Ela está em uso de ocitocina administrada por bomba de infusão. O último toque foi realizado há cerca de 15 minutos, e o colo uterino estava pérvio para 8 cm. O líquido amniótico está claro. A cardiotocografia foi realizada a uma velocidade de 1 cm/minuto, conforme mostrado no traçado a seguir:\n\nCom base no quadro clínico e no traçado da cardiotocografia, assinale a alternativa que corresponde à conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender a ocitocina, manter a monitorização contínua e prescrever terbutalina subcutânea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar que o centro cirúrgico prepare outra sala de cesariana para que a paciente seja encaminhada assim que o obstetra estiver disponível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar a infusão de ocitocina e pedir que a paciente faça força para acelerar o nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há necessidade de condutas específicas, pois trata-se de uma cardiotocografia categoria I.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO E DO TRAÇADO\n\nA gestante em questão apresenta um quadro de indução de parto com ocitocina. Ao analisarmos o traçado da cardiotocografia (CTG), observamos dois pontos críticos:\n\n1. Dinâmica Uterina (parte inferior do gráfico): Há uma frequência excessiva de contrações, caracterizando polissistolia ou taquissistolia (mais de 5 contrações em 10 minutos). As contrações estão muito próximas umas das outras, o que reduz o tempo de relaxamento uterino e, consequentemente, prejudica a oxigenação placentária.\n\n2. Frequência Cardíaca Fetal (parte superior do gráfico): Observamos desacelerações tardias recorrentes, conhecidas como DIP II. Note que o ponto mais baixo da frequência cardíaca fetal (nadir) ocorre após o pico da contração uterina. Esse achado é um sinal clássico de hipóxia fetal por insuficiência uteroplacentária.\n\nDiante de um traçado Categoria II ou III com taquissistolia associada ao uso de ocitocina, a conduta imediata é a ressuscitação intrauterina conservadora.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): Esta é a conduta de primeira linha. A suspensão da ocitocina interrompe o estímulo excessivo ao útero. A monitorização contínua é essencial para avaliar a resposta fetal. O uso da terbutalina (um beta-agonista) serve para realizar a tocólise de emergência, promovendo o relaxamento do miométrio, o que interrompe a taquissistolia e permite a recuperação da oxigenação fetal antes de se decidir por uma intervenção cirúrgica imediata.\n\nAlternativa B (INCORRETA): Embora a preparação para uma cesariana possa ser necessária caso as medidas conservadoras falhem, a primeira atitude deve ser tentar reverter o quadro de sofrimento fetal agudo causado pela hiperestimulação uterina. Encaminhar para cesariana sem antes desligar a ocitocina e tentar a tocólise seria omitir o tratamento da causa base do problema.\n\nAlternativa C (INCORRETA): Aumentar a infusão de ocitocina em uma paciente que já apresenta taquissistolia e desacelerações tardias agravaria drasticamente a hipóxia fetal, podendo levar ao óbito fetal. Além disso, a paciente está com 8 cm de dilatação, e o esforço de puxo (valsalva) não deve ser estimulado antes do período expulsivo completo (10 cm).\n\nAlternativa D (INCORRETA): O traçado não é Categoria I. Para ser Categoria I, a cardiotocografia deveria apresentar linha de base normal, variabilidade moderada e ausência de desacelerações tardias ou variáveis. A presença de DIP II recorrente e taquissistolia classifica o exame como alterado, exigindo intervenção imediata.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/dd2b8112c9fd047e26419a042bbefe40b73ed254f69629a8a0251d9364d6c1dc.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1df3d6b6-85e6-4b26-a023-296304f62680_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:15.120Z"
+  },
+  {
+    "id": "AJUDA_1df44f0b-b518-4dd3-b7f4-7be5c4becf95",
+    "originalId": "1df44f0b-b518-4dd3-b7f4-7be5c4becf95",
+    "statement": "Uma paciente com suspeita de câncer de mama, após achado suspeito em mamografia na UBS, necessita de biópsia e de acompanhamento oncológico. A UBS, entretanto, não realiza esses procedimentos, e a equipe deve encaminhar a paciente conforme o fluxo regional. Esse fluxo entre níveis de atenção ilustra qual princípio organizacional do SUS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Regionalização e hierarquização",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Universalidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Equidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Participação social",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os princípios que regem a organização e o funcionamento do Sistema Único de Saúde (SUS). O cenário descrito foca na necessidade de deslocar a paciente entre diferentes níveis de complexidade tecnológica para garantir a continuidade do cuidado.\n\nAlternativa A: Regionalização e hierarquização. Esta é a alternativa correta. A regionalização consiste na organização dos serviços de saúde em uma área geográfica delimitada para garantir o acesso e a eficiência. A hierarquização é a organização desses serviços em níveis de complexidade crescente (Atenção Primária, Secundária e Terciária). Quando a UBS identifica uma necessidade que foge de sua competência técnica e encaminha a paciente para um serviço especializado seguindo um fluxo estabelecido, ela está operando exatamente dentro dessa rede hierarquizada e regionalizada.\n\nAlternativa B: Universalidade. Incorreta. A universalidade é um princípio doutrinário que estabelece que a saúde é um direito de todos os cidadãos e um dever do Estado, garantindo o acesso a qualquer pessoa, sem distinções. Embora a paciente esteja exercendo seu direito ao acesso, o enunciado foca especificamente no arranjo estrutural entre as unidades de saúde.\n\nAlternativa C: Equidade. Incorreta. A equidade é o princípio de \"tratar desigualmente os desiguais\" para diminuir as disparidades. Significa oferecer mais recursos a quem mais precisa. O caso descreve um fluxo técnico de referência, e não necessariamente uma estratégia para reduzir desigualdades sociais ou de saúde específicas.\n\nAlternativa D: Participação social. Incorreta. Este princípio refere-se à garantia de que a comunidade, por meio dos Conselhos e Conferências de Saúde, participe da formulação de estratégias e do controle da execução das políticas de saúde. O encaminhamento clínico de uma paciente não se relaciona com a gestão participativa do sistema.\n\nResumo: O fluxo de uma unidade de menor complexidade (UBS) para uma de maior complexidade (Oncologia/Biópsia) dentro de uma rede de saúde é a aplicação prática da Regionalização e da Hierarquização.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Princípios e Diretrizes do SUS",
+      "Processos de Descentralização e Regionalização do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:15.120Z"
+  },
+  {
+    "id": "AJUDA_1dfc428d-c1b7-4249-9792-9c624f5e1178",
+    "originalId": "1dfc428d-c1b7-4249-9792-9c624f5e1178",
+    "statement": "Um recém-nascido de 38 semanas apresenta microcefalia, tomografia de crânio com calcificações difusas, fundo de olho com coriorretinite bilateral e avaliação auditiva sem comprometimento. Com base nesse caso hipotético, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A decisão do tratamento depende da carga viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As lesões ósseas encontradas geralmente são bilaterais e simétricas, incidindo mais no rádio e na ulna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caso a mãe tivesse com a vacinação em dia, esse desfecho poderia ser evitado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento medicamentoso deve ser feito por um ano.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — microcefalia, calcificações intracranianas difusas e coriorretinite bilateral — é clássico da toxoplasmose congênita. Embora a microcefalia seja frequentemente associada ao vírus Zika ou ao CMV, a presença de calcificações espalhadas pelo parênquima (e não apenas periventriculares) associada à coriorretinite direciona o diagnóstico para a infecção pelo Toxoplasma gondii.\n\nAnálise das alternativas:\n\na) Incorreta. A toxoplasmose é causada por um protozoário (Toxoplasma gondii); portanto, não se fala em carga viral para decidir o tratamento. Mesmo em casos de infecções virais como o CMV, a decisão terapêutica baseia-se na presença de sintomas e no acometimento de órgãos-alvo, e não puramente na carga viral isolada.\n\nb) Incorreta. Lesões ósseas como as descritas (osteocondrite e periostite, muitas vezes simétricas e incidindo em ossos longos) são características da sífilis congênita (ex.: sinal de Wimberger) ou da rubéola congênita (aspecto de \"talo de aipo\"). A toxoplasmose congênita não costuma cursar com esse tipo de alteração radiológica óssea.\n\nc) Incorreta. Atualmente, não existe vacina disponível para prevenir a toxoplasmose em seres humanos. As medidas preventivas durante a gestação baseiam-se em orientações higienossanitárias e alimentares (evitar carnes cruas ou mal-passadas, lavar bem vegetais e evitar contato com fezes de gatos).\n\nd) Correta. O tratamento padrão para o recém-nascido com diagnóstico de toxoplasmose congênita (confirmada ou sintomática) é realizado com o esquema tríplice: sulfadiazina, pirimetamina e ácido folínico. Esse esquema deve ser mantido por 12 meses (um ano) com o objetivo de reduzir as sequelas neurológicas e evitar a progressão ou recorrência das lesões oculares. Em casos de coriorretinite em atividade ou níveis elevados de proteínas no líquor, pode-se associar o corticosteroide (prednisona) até a resolução do quadro inflamatório.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:15.120Z"
+  }
+]

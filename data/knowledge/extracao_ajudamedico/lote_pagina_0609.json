@@ -1,0 +1,518 @@
+[
+  {
+    "id": "AJUDA_aaa79937-320b-4b20-a9f6-a2a23313f4b4",
+    "originalId": "aaa79937-320b-4b20-a9f6-a2a23313f4b4",
+    "statement": "Adolescente, sexo masculino, 13 anos de idade, é trazido por um acompanhante da escola após “desmaiar” durante uma competição com os colegas para ver quem permanecia em pé parado por mais tempo, sem se mexer, uma “brincadeira” transmitida em vídeo por uma rede social do adolescente. Um ajudante da coordenadoria da escola viu o garoto “desmaiando”, “perdendo a consciência” e “caindo no chão”. Imediatamente, os colegas o sacudiram e ele foi socorrido por esse funcionário, com retomada completa da consciência em cerca de “segundos”. Não se observou nenhum trauma na cabeça durante a queda. Levantou-se sozinho, disse que estava bem, mas foi trazido ao médico mesmo assim. Ficou pálido durante a queda segundo descrição de quem o viu. No pronto atendimento, estava bem, Glasgow 15, orientado e bem comunicativo. Nenhuma alteração foi percebida no seu exame físico. O diagnóstico mais provável e a conduta imediata serão:",
+    "options": [
+      {
+        "id": "A",
+        "text": "síncope psicogênica; orientação e encaminhamento para terapia psicológica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "síncope cardiogênica; realização de um ecocardiograma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "síncope neuromediada; alta do pronto atendimento com orientações preventivas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "síncope metabólica; realização de um teste de tolerância oral à glicose",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro clínico descreve um adolescente de 13 anos que apresentou um episódio de perda súbita e transitória da consciência (síncope) precedido por um gatilho clássico: o ortostatismo prolongado (permanecer em pé, parado, por muito tempo). A recuperação rápida (em segundos), completa e espontânea, associada à palidez durante o evento e exame físico normal no pós-evento, é a apresentação típica da síncope neuromediada (também conhecida como síncope vasovagal ou reflexa).\n\nExplicação das Alternativas:\n\na) Incorreta. A síncope psicogênica (pseudossíncope) geralmente apresenta episódios mais prolongados, muitas vezes com olhos fechados durante o evento e sem o gatilho fisiológico do ortostatismo prolongado. Embora o contexto da rede social pudesse sugerir um componente comportamental, os sinais clínicos (palidez e gatilho físico) direcionam para uma causa orgânica reflexa.\n\nb) Incorreta. A síncope cardiogênica é uma preocupação importante, mas geralmente ocorre de forma súbita, sem pródromos, ou durante o esforço físico intenso. No caso em questão, o paciente estava parado (repouso em pé) e a síncope foi desencadeada por um mecanismo reflexo posicional. Em jovens sem antecedentes familiares de morte súbita e com exame físico normal, a causa cardíaca é menos provável do que a neuromediada.\n\nc) Correta. A síncope neuromediada é a causa mais comum de desmaio na infância e adolescência. O principal gatilho é o acúmulo de sangue nos membros inferiores ao ficar em pé por muito tempo, o que gera uma resposta reflexa de bradicardia e/ou vasodilatação, levando à hipoperfusão cerebral momentânea. O diagnóstico é clínico. A conduta correta é tranquilizar o paciente e a família, orientar sobre a benignidade do quadro e ensinar medidas preventivas, como hidratação adequada, evitar períodos longos de jejum e realizar manobras de contrapressão física se sentir pródromos.\n\nd) Incorreta. Causas metabólicas, como a hipoglicemia, raramente causam síncope com recuperação tão rápida e completa em segundos sem intervenção (como ingestão de açúcar). A hipoglicemia costuma causar um estado de confusão mental mais prolongado ou alteração do nível de consciência que não se resolve instantaneamente após a queda. O teste de tolerância oral à glicose não tem indicação na investigação de síncope.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síncope"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  },
+  {
+    "id": "AJUDA_aaa85c85-65ce-42b6-b122-ca8d03ee5cb3",
+    "originalId": "aaa85c85-65ce-42b6-b122-ca8d03ee5cb3",
+    "statement": "A Constituição Federal, tratando da Saúde, estabelece que",
+    "options": [
+      {
+        "id": "A",
+        "text": "saúde é direito de todos e dever do Estado, garantido mediante políticas preventivas e assistenciais de alta qualidade técnica e humana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o público-alvo principal do SUS são as parcelas da sociedade em situação de maior vulnerabilidade social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a assistência à saúde é livre à iniciativa privada, mas sua participação no SUS só pode se dar de forma complementar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "compete ao SUS, além de outras atribuições, colaborar na proteção do meio ambiente, exceto os ambientes de trabalho de empresas privadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "uma das diretrizes do SUS é o atendimento integral, com igual ênfase para as atividades preventivas e as assistenciais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão exige o conhecimento dos artigos 196 a 200 da Constituição Federal de 1988, que formam a base jurídica do Sistema Único de Saúde (SUS). Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Incorreta): Embora a saúde seja, de fato, direito de todos e dever do Estado, o artigo 196 da Constituição estabelece que esse direito é garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos, e ao acesso universal e igualitário às ações e serviços. A redação da alternativa utiliza termos como \"alta qualidade técnica e humana\", que, apesar de serem objetivos desejáveis, não constam no texto constitucional.\n\nAlternativa B (Incorreta): O princípio fundamental do SUS é a universalidade. O artigo 196 afirma que a saúde é direito de todos. Portanto, o sistema não é voltado prioritariamente para grupos específicos ou vulneráveis, mas sim para toda a população brasileira, sem distinção. A atenção às parcelas vulneráveis é regida pelo princípio da equidade, mas isso não restringe o público-alvo principal do sistema.\n\nAlternativa C (Correta/Gabarito): Esta alternativa está em perfeita consonância com o artigo 199 da Constituição Federal. O texto constitucional determina que a assistência à saúde é livre à iniciativa privada. No entanto, quando o Estado não possui capacidade própria suficiente para garantir o atendimento, o setor privado pode participar do SUS de forma complementar, mediante contrato de direito público ou convênio, com preferência para entidades filantrópicas e sem fins lucrativos.\n\nAlternativa D (Incorreta): De acordo com o artigo 200, inciso VIII, compete ao SUS colaborar na proteção do meio ambiente, nele compreendido o do trabalho. Não existe exceção para ambientes de trabalho de empresas privadas. Pelo contrário, a fiscalização e a proteção da saúde do trabalhador em qualquer ambiente laboral são atribuições expressas do sistema.\n\nAlternativa E (Incorreta): O erro reside no termo \"igual ênfase\". O artigo 198, inciso II, define como diretriz do SUS o atendimento integral, com prioridade para as atividades preventivas, sem prejuízo dos serviços assistenciais. Ou seja, a Constituição estabelece uma prioridade jurídica e operacional para a prevenção em relação à assistência curativa.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  },
+  {
+    "id": "AJUDA_aaae79f4-03dd-44d5-b019-f3b0728ff564",
+    "originalId": "aaae79f4-03dd-44d5-b019-f3b0728ff564",
+    "statement": "Paciente de 40 anos, G4P4, chega ao ambulatório de ginecologia para avaliar resultado de exame citológico do colo uterino. O exame revela ASCUS-H. Diante do achado, qual a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colposcopia para biópsia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Colposcopia com avaliação endometrial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Biópsia de canal endocervical",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir a citologia com seis meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Histerectomia simples",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O achado citológico ASC-H (*Atypical Squamous Cells - cannot exclude High-grade squamous intraepithelial lesion*) significa células escamosas atípicas, não sendo possível excluir lesão intraepitelial de alto grau. Diferentemente do ASC-US, o ASC-H possui um alto risco de estar associado a lesões precursoras de câncer (NIC 2 ou NIC 3) ou mesmo ao carcinoma invasor.\n\nAlternativa A (Correta): De acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA/Ministério da Saúde), o achado de ASC-H na citologia exige o encaminhamento imediato da paciente para a colposcopia, independentemente da sua idade. Durante a colposcopia, o examinador buscará áreas suspeitas (acetobrancas densas, mosaicos ou pontilhados) para realizar a biópsia dirigida, que confirmará ou excluirá a presença de uma lesão de alto grau.\n\nAlternativa B (Incorreta): A avaliação endometrial (por biópsia ou curetagem) é indicada em resultados citológicos de Células Glandulares Atípicas (AGC) em mulheres com 35 anos ou mais, ou naquelas com risco para câncer de endométrio (como sangramento uterino anormal ou obesidade). O ASC-H refere-se a células escamosas, não glandulares.\n\nAlternativa C (Incorreta): A avaliação do canal endocervical (por meio de escovado ou curetagem endocervical) pode ser necessária durante a colposcopia se o exame for considerado insatisfatório (quando a junção escamocolunar não é totalmente visível) ou se houver suspeita de lesão dentro do canal. No entanto, a conduta inicial e mais abrangente é a colposcopia para avaliação do colo como um todo, não apenas a biópsia de canal.\n\nAlternativa D (Incorreta): A repetição da citologia em 6 meses é reservada para casos de menor risco, como o ASC-US em mulheres com 30 anos ou mais, ou lesões de baixo grau (LSIL) em mulheres acima de 25 anos. Como o ASC-H tem alta probabilidade de esconder uma lesão grave, não se deve aguardar para reavaliar.\n\nAlternativa E (Incorreta): A histerectomia é um procedimento cirúrgico invasivo e não deve ser realizada apenas com base em um resultado de rastreamento (citologia). É indispensável a confirmação diagnóstica por biópsia. Além disso, mesmo para lesões confirmadas de alto grau (NIC 2/3), o tratamento de escolha inicial costuma ser a exérese da zona de transformação (EZT/CAF) ou conização, e não a retirada do útero.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  },
+  {
+    "id": "AJUDA_aab59ce1-e681-4b9f-b64c-3ccc21b13eee",
+    "originalId": "aab59ce1-e681-4b9f-b64c-3ccc21b13eee",
+    "statement": "Paciente, 45 anos de idade, sexo feminino, apresenta fadiga, amenorreia, edema, constipação, rouqui-dão, macroglossia, aumento do espaçamento dentário, bócio e hipertensão de início recente. Trouxe os seguintes exames de sangue (VR, valor de referência): TSH = 4 mUI/L (VR: 0,4-4,5), T4 livre = 1,0 ng/dL (VR: 0,8-1,8), IGF-1 = 740 ng/mL (VR: 53,3-215). Assinale a alternativa que apresenta, corretamente, o diagnóstico dessa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acromegalia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hipotireoidismo primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipotireoidismo subclínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome do eutireóideo doente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somatoprolactinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma paciente com sinais e sintomas clássicos de excesso de hormônio do crescimento (GH), que, em adultos após o fechamento das epífises ósseas, é denominado acromegalia. Os achados de macroglossia (língua aumentada) e aumento do espaçamento dentário (diastema) são sinais clínicos muito específicos para esta patologia. Outros sintomas como rouquidão (por espessamento de tecidos moles na laringe), hipertensão de início recente, bócio e amenorreia (que pode ocorrer por efeito de massa ou cossecreção hormonal) corroboram o diagnóstico.\n\nDo ponto de vista laboratorial, a dosagem de IGF-1 (Fator de Crescimento Semelhante à Insulina tipo 1) é o exame de escolha para a triagem, pois reflete a secreção integrada de GH ao longo do dia. Nesta paciente, o IGF-1 está marcadamente elevado (740 ng/mL para um valor de referência de até 215). O TSH e o T4 livre estão normais, o que descarta doenças primárias da glândula tireoide.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): A acromegalia é o diagnóstico que une todos os achados físicos característicos (especialmente a alteração dentária e da língua) e a confirmação laboratorial pelo IGF-1 elevado.\n\nAlternativa B (INCORRETA): No hipotireoidismo primário, os exames mostrariam obrigatoriamente um TSH elevado e, geralmente, um T4 livre baixo. Embora fadiga, constipação e rouquidão possam estar presentes no hipotireoidismo, os exames laboratoriais da paciente estão normais para a tireoide, e o bócio na acromegalia ocorre por estímulo de crescimento celular, não por deficiência hormonal.\n\nAlternativa C (INCORRETA): O hipotireoidismo subclínico é definido por um TSH elevado com T4 livre dentro da faixa de normalidade. O TSH da paciente está em 4 mUI/L, dentro do valor de referência (até 4,5 mUI/L).\n\nAlternativa D (INCORRETA): A síndrome do eutireoideo doente refere-se a alterações nos hormônios tireoidianos que ocorrem durante doenças sistêmicas graves ou internações em UTI, sem doença intrínseca da tireoide. Não se aplica a este caso de evolução crônica e sinais específicos de crescimento acral.\n\nAlternativa E (INCORRETA): Somatoprolactinoma é um tumor hipofisário misto que secreta tanto GH quanto prolactina. Embora pudesse causar os sintomas, a questão não fornece o nível de prolactina para tal afirmação. O termo acromegalia (alternativa A) é a descrição clínica e laboratorial padrão para o excesso de GH apresentado, sendo a resposta mais direta e correta.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Hipófise"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  },
+  {
+    "id": "AJUDA_aab9dc91-0eab-4e97-8cb7-4a474647e1e8",
+    "originalId": "aab9dc91-0eab-4e97-8cb7-4a474647e1e8",
+    "statement": "Um paciente de 72 anos de idade compareceu à UBS apresentando dispneia para tomar banho e fazer a barba, limitação para atividades diárias e agravamento do padrão de tosse produtiva, com mudança da coloração do escarro. Durante a consulta, o médico observou múltiplas contusões em diferentes estágios de cicatrização nos membros superiores e abrasões no dorso. Após estabelecer vínculo de confiança, o idoso revelou que o seu filho, com quem reside, tem consumido álcool excessivamente e se tornado agressivo, especialmente quando o pai tosse durante a noite. O paciente referiu histórico de tabagismo (50 maços/ano), duas internações por exacerbação de DPOC no último ano e que o filho frequentemente se apropriava de sua aposentadoria e não permitia que o pai adquirisse as suas medicações regularmente. \n\nConsiderando esse caso clínico hipotético, que envolve manejo clínico da DPOC e situação de vulnerabilidade por violência, assinale a opção que apresenta a conduta adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "tratar a exacerbação da DPOC com antibioticoterapia oral, utilizar terapia tripla inalatória e reforçar a indicação de cessar o tabagismo. O caso de violência deve ser notificado, acionar a rede de proteção social e articular com CAPS AD para abordagem do filho dependente químico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "prescrever corticoide oral e antibiótico para a exacerbação da DPOC, orientar o paciente a procurar ajuda de outros familiares e retornar em 30 dias para reavaliação clínica, evitando interferir na dinâmica familiar para não piorar a situação de violência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "encaminhar o paciente ao pneumologista para a avaliação especializada da DPOC, sugerindo que ele considere mudar‑se para uma instituição de longa permanência para idosos como solução definitiva para o problema de violência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "internar o paciente imediatamente para tratar a exacerbação da DPOC e afastá‑lo temporariamente da situação de violência, sem realizar a notificação para que se preserve o vínculo terapêutico com a família",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tratar a DPOC com broncodilatadores de curta ação, orientando o idoso sobre a importância da cessação tabágica, e sugerir que tente dialogar com o filho sobre a situação de violência antes de qualquer intervenção externa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda dois pilares fundamentais da prática médica: o manejo clínico da Doença Pulmonar Obstrutiva Crônica (DPOC) e a conduta ética e legal diante da suspeita de violência contra o idoso.\n\nAnálise da Conduta Clínica (DPOC):\nO paciente apresenta uma exacerbação da DPOC caracterizada pelo aumento da dispneia e mudança na coloração do escarro (critérios de Anthonisen), o que justifica o uso de antibioticoterapia. Devido ao histórico de duas internações no último ano e à gravidade dos sintomas atuais, ele é classificado como um paciente de alto risco (Grupo E, segundo o GOLD). Nesses casos, a terapia tripla inalatória (LAMA + LABA + corticoide inalatório) é indicada para reduzir o risco de novas exacerbações e melhorar a função pulmonar. A cessação do tabagismo é a intervenção com maior impacto na sobrevida.\n\nAnálise da Conduta Social (Violência contra o Idoso):\nO relato revela violência física (contusões), psicológica e financeira (apropriação da aposentadoria), além de negligência (impedimento de compra de medicamentos). De acordo com o Estatuto do Idoso e o Código de Ética Médica, a notificação de casos suspeitos ou confirmados de violência é compulsória e obrigatória.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): É a conduta mais completa e adequada. Aborda o tratamento farmacológico da exacerbação (antibióticos) e a manutenção (terapia tripla), foca na prevenção secundária (cessação do tabagismo) e cumpre os deveres legais de notificação e acionamento da rede de proteção. Além disso, propõe a articulação com o CAPS AD para tratar a causa-base da agressividade do filho (alcoolismo), visando uma intervenção na dinâmica familiar.\n\nAlternativa B (Incorreta): Embora mencione o tratamento da DPOC, falha gravemente ao sugerir que o médico não interfira na dinâmica familiar. A omissão diante da violência contra o idoso é ilegal e antiética. Orientar que o paciente busque outros familiares por conta própria é insuficiente para garantir sua proteção.\n\nAlternativa C (Incorreta): O manejo inicial da DPOC exacerbada deve ser feito imediatamente na UBS ou pronto-atendimento, não sendo adequado apenas \"encaminhar ao especialista\". Além disso, sugerir a institucionalização (asilo) como primeira e definitiva solução para a violência é uma medida extrema que desconsidera a autonomia do idoso e outras possibilidades de suporte social.\n\nAlternativa D (Incorreta): A internação depende da gravidade clínica e da saturação de oxigênio, que não foram totalmente descritas como críticas, mas o erro principal está em omitir a notificação. A notificação de violência contra o idoso é obrigatória por lei e não pode ser dispensada sob pretexto de \"preservar vínculo\".\n\nAlternativa E (Incorreta): O tratamento proposto é insuficiente; broncodilatadores de curta ação servem apenas para alívio imediato e não tratam a base da doença em um paciente com múltiplas exacerbações. Quanto à violência, sugerir que o idoso tente \"dialogar\" com um agressor sob efeito de álcool é negligente e coloca a vítima em risco ainda maior.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  },
+  {
+    "id": "AJUDA_aabe6922-0af3-4e97-9ce8-e7658cf3eef1",
+    "originalId": "aabe6922-0af3-4e97-9ce8-e7658cf3eef1",
+    "statement": "Alguns pesquisadores estudaram a relação entre taxas de incidência de meningite e taxas de amamentação, entre 1960 e 1990, em uma população da Dinamarca. Evidenciaram uma correlação negativa cinco a dez anos mais tarde. Qual foi o delineamento do estudo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Série de casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ecológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nO ponto central para identificar o delineamento deste estudo é observar que os pesquisadores não analisaram indivíduos isoladamente, mas sim dados agregados de uma população inteira (a população da Dinamarca). Quando a unidade de análise é um grupo, um país ou uma população, e não o indivíduo, estamos diante de um estudo ecológico.\n\nAlternativa A: Incorreta. No estudo de caso-controle, a unidade de análise é o indivíduo. O pesquisador selecionaria pessoas que tiveram meningite (casos) e pessoas saudáveis (controles) para verificar, individualmente, o histórico de amamentação de cada uma no passado.\n\nAlternativa B: Incorreta. Uma série de casos é um estudo puramente descritivo que relata as características clínicas e epidemiológicas de um grupo de pacientes com uma determinada condição, sem utilizar um grupo de comparação e sem realizar análises de correlação entre taxas populacionais.\n\nAlternativa C: Incorreta. Um estudo de coorte selecionaria grupos de indivíduos (um grupo amamentado e outro não amamentado) e os acompanharia individualmente ao longo do tempo para observar quem desenvolveria meningite. O enunciado, contudo, refere-se a taxas globais de uma população, e não ao seguimento de pessoas identificáveis.\n\nAlternativa D: Correta. O estudo ecológico (também chamado de estudo de agregados) avalia a relação entre uma exposição e um desfecho em nível populacional. O uso de estatísticas coletivas, como taxas de incidência e taxas de amamentação de um país inteiro ao longo de anos para verificar se existe uma correlação entre elas, é a característica clássica deste delineamento. É o estudo ideal para gerar hipóteses, embora não permita afirmar causalidade em nível individual (o que seria a falácia ecológica).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  },
+  {
+    "id": "AJUDA_aac9012c-eb53-4949-8cd7-ef7bdb0ceb9f",
+    "originalId": "aac9012c-eb53-4949-8cd7-ef7bdb0ceb9f",
+    "statement": "O HPV pode estar envolvido na etiologia da seguinte condição:",
+    "options": [
+      {
+        "id": "A",
+        "text": "câncer da vagina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "neoplasia intraeptelial vulvar diferenciada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hiperplasia do endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "doença de paget da vulva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "líquen esclero atrófico vulvar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Papilomavírus Humano (HPV) é um vírus de DNA com tropismo pelo epitélio escamoso, estando diretamente relacionado à carcinogênese dos tecidos do trato genital inferior, como colo do útero, vagina e vulva.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Correta. Assim como ocorre no colo do útero, o câncer de vagina (principalmente o carcinoma de células escamosas) possui uma forte associação etiológica com a infecção por subtipos de HPV de alto risco oncogênico, como o 16 e o 18. A infecção viral persistente leva à integração do DNA viral ao genoma da célula hospedeira, resultando na expressão das oncoproteínas E6 e E7, que inativam os genes supressores de tumor p53 e Rb, respectivamente.\n\nAlternativa b) Incorreta. A Neoplasia Intraepitelial Vulvar (NIV) é classificada em dois tipos principais: a comum (uNIV), que é fortemente associada à infecção pelo HPV, e a diferenciada (dNIV). A dNIV não está relacionada ao HPV; ela geralmente surge em mulheres mais velhas, associada a condições inflamatórias crônicas, como o líquen escleroso.\n\nAlternativa c) Incorreta. A hiperplasia do endométrio é uma condição proliferativa do tecido que reveste internamente o útero. Sua etiologia está relacionada ao estímulo estrogênico persistente e sem a devida oposição da progesterona (hiperestrogenismo relativo ou absoluto), não possuindo qualquer relação com a infecção por HPV.\n\nAlternativa d) Incorreta. A Doença de Paget da vulva é uma neoplasia intraepitelial rara, de origem glandular (adenocarcinoma in situ). Diferente dos carcinomas escamosos da vulva, o Paget não tem relação etiológica com o HPV. Ela pode ser primária (exclusivamente cutânea) ou secundária a uma neoplasia interna (como retal ou vesical).\n\nAlternativa e) Incorreta. O líquen escleroatrófico vulvar é uma dermatose inflamatória crônica de etiologia ainda não totalmente esclarecida, mas com provável base autoimune. Embora o líquen escleroso seja um fator de risco para o surgimento do câncer de vulva do tipo diferenciado (não relacionado ao HPV), a condição em si não é causada pelo vírus.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Doenças de Vulva e Vagina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  },
+  {
+    "id": "AJUDA_aad54c69-cfe7-4ada-bbd1-7815352e48d5",
+    "originalId": "aad54c69-cfe7-4ada-bbd1-7815352e48d5",
+    "statement": "Uma mulher de 28 anos, com índice de massa corporal de 25 kg/m², foi internada com diagnóstico de colecistite aguda e encaminhada ao centro cirúrgico para colecistectomia laparoscópica. Após a administração de anestesia geral, o acesso ao peritônio foi realizado com a introdução de uma agulha de Veress para estabelecer o pneumoperitônio. A entrada na cavidade peritoneal foi realizada com a inserção de um trocarte de Hasson.\n\nQuando uma agulha de Veress é usada para obter acesso ao peritônio, o anestesista observa que a saturação de dióxido de carbono e oxigênio expirados diminuíram e a paciente tornou-se taquicárdica e você observa que o pneumoperitônio não foi adequadamente estabelecido, qual é o próximo passo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colocar o paciente em posição de Trendelenburg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colocar o paciente em decúbito lateral esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Remover a agulha de Veress.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aumentar a FiO2 para 100%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clinico apresentado e altamente sugestivo de embolia gasosa por dioxido de carbono (CO2), uma complicacao rara, porem potencialmente fatal, do acesso laparoscopico. A combinacao de queda abrupta do CO2 expirado (EtCO2), queda da saturacao de oxigenio, taquicardia e falha no estabelecimento do pneumoperitonio indica que a agulha de Veress foi inadvertidamente inserida em um vaso sanguineo (como a veia cava inferior ou vasos iliacos), injetando CO2 diretamente na circulacao venosa. O gas na camara cardiaca direita causa obstrucao ao fluxo de saida para a arteria pulmonar (efeito de \"gas lock\").\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A mudanca de decubito faz parte do manejo (associada ao decubito lateral esquerdo na Manobra de Durant), mas o posicionamento nunca deve preceder a interrupcao imediata do fator causal. Se o gas continuar entrando no vaso, a conduta postural nao tera efeito.\n\nAlternativa b: Incorreta. O decubito lateral esquerdo combinado com Trendelenburg (Manobra de Durant) tem o objetivo de deslocar a bolha de gas para o apice do ventriculo direito, liberando a via de saida da arteria pulmonar. Embora seja uma etapa fundamental no tratamento da embolia gasosa, trata-se de uma medida subsequente a interrupcao da fonte de gas.\n\nAlternativa c: Correta. A conduta imediata e mais importante perante a suspeita de embolia gasosa e interromper a insuflacao e remover a agulha de Veress (ou o trocarte) da fonte vascular para cessar imediatamente a entrada de gas na circulacao sistemica. O primeiro passo diante de qualquer evento adverso iatrogenico e interromper o estimulo agressor.\n\nAlternativa d: Incorreta. Aumentar a FiO2 para 100% e descontinuar o oxido nitroso (se em uso) sao medidas cruciais para tratar a hipoxemia e acelerar a reabsorcao do CO2, porem devem ser realizadas em conjunto ou imediatamente apos a interrupcao da fonte de insuflacao de gas.\n\nSequencia padrao do manejo da embolia gasosa em laparoscopia:\n1. Interromper imediatamente a insuflacao e remover a agulha de Veress/trocarte.\n2. Desinsuflar o pneumoperitonio residual.\n3. Administrar O2 a 100%.\n4. Posicionar o paciente em decubito lateral esquerdo e Trendelenburg (Manobra de Durant).\n5. Suporte hemodinamico e, se necessario, aspiracao de gas por cateter venoso central.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Temas Gerais em Cirurgia",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  },
+  {
+    "id": "AJUDA_aadcb994-7255-4f2f-80b7-509c44d1471e",
+    "originalId": "aadcb994-7255-4f2f-80b7-509c44d1471e",
+    "statement": "O câncer de mama é o tipo de neoplasia maligna que mais acomete as mulheres no Brasil. Foram estimados 73.610 casos novos de câncer de mama em 2024 no território brasileiro. Com base nessa informação, é correto afirmar que, quanto ao rastreamento e à detecção precoce do câncer de mama, recentemente o Ministério da Saúde do Brasil passou a recomendar",
+    "options": [
+      {
+        "id": "A",
+        "text": "rastreamento com mamografia em mulheres a partir de 40 anos de idade, sob demanda e em decisão conjunta com o profissional de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "rastreamento com ultrassonografia em mulheres a partir dos 50 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "autoexame das mamas para mulheres a partir dos 40 anos de idade e mamografia a partir dos 50 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "rastreamento com mamografia em mulheres a partir de 55 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "rastreamento com mamografia em mulheres a partir de 45 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as diretrizes brasileiras para o rastreamento do câncer de mama, que é o tumor mais frequente na população feminina no país. É fundamental diferenciar o rastreamento organizado do rastreamento oportunístico nas recomendações do Ministério da Saúde.\n\nAlternativa a: Correta. Recentemente, o Ministério da Saúde (MS), acompanhando debates sobre detecção precoce e ampliando o acesso no SUS (Sistema Único de Saúde), passou a recomendar que o rastreamento com mamografia possa ser realizado em mulheres a partir dos 40 anos de idade. Diferentemente da faixa etária de 50 a 69 anos, na qual o rastreamento é organizado e bienal, na faixa dos 40 aos 49 anos o rastreamento é considerado oportunístico ou sob demanda. Isso ocorre por meio de uma decisão compartilhada entre o profissional de saúde e a paciente, considerando que, nessa idade, os riscos e benefícios devem ser discutidos individualmente. Essa atualização foi consolidada em normativas recentes de 2024 (como a Portaria GM/MS nº 4.904).\n\nAlternativa b: Incorreta. A ultrassonografia de mamas não é recomendada como método de rastreamento populacional isolado ou de rotina pelo Ministério da Saúde. Ela é um exame complementar utilizado para avaliar achados inconclusivos na mamografia (BI-RADS 0), para avaliação de mamas densas ou em pacientes jovens com alterações palpáveis, mas não substitui a mamografia no rastreamento.\n\nAlternativa c: Incorreta. O autoexame das mamas deixou de ser recomendado como estratégia formal de rastreamento há muitos anos, pois estudos demonstraram que ele não reduz a mortalidade e aumenta o número de biópsias desnecessárias. O Ministério da Saúde preconiza a estratégia de \"breast awareness\" (conscientização sobre as mamas), incentivando a mulher a estar atenta a mudanças eventuais, mas sem a sistematização técnica de um autoexame como substituto da mamografia.\n\nAlternativa d: Incorreta. A idade de 55 anos não é o marco inicial de nenhum protocolo vigente no Brasil. O rastreamento organizado foca na faixa de 50 a 69 anos e o oportunístico abrange a partir dos 40 anos.\n\nAlternativa e: Incorreta. Embora algumas diretrizes internacionais, como as da American Cancer Society, mencionem o início aos 45 anos para certos grupos, o marco adotado recentemente pelo Ministério da Saúde para o rastreamento sob demanda no Brasil é a partir dos 40 anos de idade.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  },
+  {
+    "id": "AJUDA_aadffabd-f6e9-4e45-92ed-3827b56ee7f5",
+    "originalId": "aadffabd-f6e9-4e45-92ed-3827b56ee7f5",
+    "statement": "Criança, 5 anos de idade, em uso de corticosteroides, há 3 semanas, devido à síndrome nefrótica, apresenta quadro de tosse seca, há 9 dias, com presença de febre por 3 dias (temperatura máxima de 37,9 °C). Realizada radiografia de tórax, no segundo dia do quadro, com infiltrado intersticial difuso, e hemograma, com hemoglobina de 12,0 g/dL, leucócitos 9500/mm³, neutrófilos 65%, eosinófilos 10% e linfócitos 20%, plaquetas 250.000/mm³. Realizado antiparasitário com melhora dos sintomas. Há 1 dia, repetida radiografia, que não evidenciou alterações patológicas.\nAssinale a alternativa que apresenta, corretamente, o agente responsável por esse quadro clínico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entamoeba histolytica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enterobius vermicularis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Schistosoma mansoni.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Strongyloides stercoralis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Taenia saginata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma criança de 5 anos com Síndrome Nefrótica em uso de corticoterapia (imunossupressão). Ela apresenta sintomas respiratórios (tosse seca), febre baixa e um achado radiológico característico: infiltrado intersticial difuso que desaparece rapidamente (em menos de 10 dias). No hemograma, destaca-se a eosinofilia (10%), que é um marcador clássico de infecções parasitárias, especialmente na fase de migração tecidual.\n\nEssa apresentação clínica de tosse, infiltrado pulmonar migratório/transitório e eosinofilia compõe a Síndrome de Löffler. A melhora dos sintomas após o uso de antiparasitário ratifica a etiologia helmíntica.\n\nA Síndrome de Löffler ocorre durante o ciclo de vida de parasitas que realizam o Ciclo de Loss (passagem pulmonar). Os principais agentes são: Strongyloides stercoralis, Ascaris lumbricoides, Necator americanus, Ancylostoma duodenale e Toxocara canis (mnemônico SANTA).\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. A Entamoeba histolytica é um protozoário causador de amebíase intestinal e abscessos hepáticos. Protozoários não causam eosinofilia nem realizam o Ciclo de Loss (migração pulmonar).\n\nb) INCORRETA. O Enterobius vermicularis (oxiúro) causa primariamente prurido anal. O ciclo deste parasita é restrito ao trato gastrointestinal, não passando pelos pulmões e raramente causando eosinofilia sistêmica significativa.\n\nc) INCORRETA. Embora o Schistosoma mansoni possa causar sintomas pulmonares e eosinofilia na fase aguda (Febre de Katayama), ele não é uma causa clássica da Síndrome de Löffler transitória pós-tratamento antiparasitário comum de curta duração, e a epidemiologia e o quadro clínico de base (imunossupressão por corticoide) direcionam para outro agente com maior potencial de gravidade.\n\nd) CORRETA. O Strongyloides stercoralis (Estrongiloidíase) é um dos principais agentes da Síndrome de Löffler. O ponto crucial da questão é o uso de corticosteroides. Pacientes em uso de corticoides têm alto risco para o quadro de hiperinfecção por Strongyloides, pois esse medicamento pode acelerar a transformação de larvas no intestino e facilitar a autoinfecção interna e a disseminação. A eosinofilia e a rápida resolução pulmonar após antiparasitário confirmam o diagnóstico.\n\ne) INCORRETA. A Taenia saginata é um cestódeo que habita o intestino delgado humano. Seu ciclo de vida não envolve a passagem obrigatória de larvas pelos pulmões (Ciclo de Loss), portanto, não cursa com infiltrados pulmonares migratórios.\n\nGABARITO: Letra (d).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:37.220Z"
+  }
+]

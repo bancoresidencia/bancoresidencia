@@ -1,4 +1,4 @@
-import { supabase } from '../lib/supabase';
+import { supabase } from '@/lib/supabase';
 import { ExtendedFilterState, resolveBancaList } from './questionService';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
 
@@ -23,7 +23,7 @@ export interface FacetedHierarchyCountsResult {
 }
 
 // Fisher-Yates shuffle
-function shuffleArray<T>(arr: T[]): T[] {
+export function shuffleArray<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -460,6 +460,11 @@ export async function generateStratifiedQuiz(
         }
       }
 
+      // No modo Mais Recentes, ordena a consulta por ano decrescente para garantir os anos mais novos
+      if (!filters.aleatorizar) {
+        q = q.order('year', { ascending: false });
+      }
+
       // Busca um conjunto amplo de candidatos (até 1.500) para permitir estratificação
       const { data, error } = await q.limit(1500);
 
@@ -470,6 +475,10 @@ export async function generateStratifiedQuiz(
           validCandidates = validCandidates.filter((c) => !answeredSet.has(c.id));
         } else if (filters.status === 'Resolvidas' && answeredSet.size > 0) {
           validCandidates = validCandidates.filter((c) => answeredSet.has(c.id));
+        }
+
+        if (!filters.aleatorizar) {
+          validCandidates.sort((a, b) => (b.year || 0) - (a.year || 0));
         }
 
         candidatePoolsByItem[item] = validCandidates;
@@ -519,10 +528,10 @@ export async function generateStratifiedQuiz(
     }
   }
 
-  // 4. AMOSTRAGEM ESTRATIFICADA E ALEATORIZAÇÃO REAL (FIM DO EFEITO BLOCO)
-  // Emula: ROW_NUMBER() OVER (PARTITION BY banca, year ORDER BY RANDOM())
+  // 4. SELEÇÃO DE CANDIDATOS POR COTA COM MAPA GLOBAL DE ANOS
   const selectedPoolsByItem: Record<string, string[]> = {};
   const globalUsedIds = new Set<string>();
+  const allCandidatesMap = new Map<string, QuestionCandidate>();
 
   for (const [item, quotaCount] of Object.entries(adjustedAllocations)) {
     if (quotaCount <= 0) {
@@ -534,60 +543,43 @@ export async function generateStratifiedQuiz(
       (c) => !globalUsedIds.has(c.id)
     );
 
-    // Particionamento por chave (banca + ano)
-    const partitions: Record<string, QuestionCandidate[]> = {};
-    for (const c of candidates) {
-      const pKey = `${c.banca || 'unknown'}_${c.year || 0}`;
-      if (!partitions[pKey]) partitions[pKey] = [];
-      partitions[pKey].push(c);
-    }
+    candidates.forEach((c) => allCandidatesMap.set(c.id, c));
 
-    // Embaralha internamente cada partição
-    for (const k of Object.keys(partitions)) {
-      partitions[k] = shuffleArray(partitions[k]);
-    }
-
-    // Coleta estratificada ciclando partições com rn = 0, 1, 2...
-    const itemSelectedIds: string[] = [];
-    let rn = 0;
-    let foundInRound = true;
-
-    while (itemSelectedIds.length < quotaCount && foundInRound) {
-      foundInRound = false;
-      const partKeys = shuffleArray(Object.keys(partitions));
-
-      for (const k of partKeys) {
+    if (!filters.aleatorizar) {
+      // MODO MAIS RECENTES: Ordena estritamente por ano decrescente e seleciona as mais novas
+      const sortedCandidates = [...candidates].sort((a, b) => (b.year || 0) - (a.year || 0));
+      const itemSelectedIds: string[] = [];
+      for (const cand of sortedCandidates) {
         if (itemSelectedIds.length >= quotaCount) break;
-        const part = partitions[k];
-        if (rn < part.length) {
-          const cand = part[rn];
-          if (!globalUsedIds.has(cand.id)) {
-            globalUsedIds.add(cand.id);
-            itemSelectedIds.push(cand.id);
-            foundInRound = true;
-          }
+        if (!globalUsedIds.has(cand.id)) {
+          globalUsedIds.add(cand.id);
+          itemSelectedIds.push(cand.id);
         }
       }
-      rn++;
+      selectedPoolsByItem[item] = itemSelectedIds;
+    } else {
+      // MODO ALEATÓRIO: Embaralhamento total de candidatos da cota sem intercalar
+      const shuffledCandidates = shuffleArray([...candidates]);
+      const itemSelectedIds: string[] = [];
+      for (const cand of shuffledCandidates) {
+        if (itemSelectedIds.length >= quotaCount) break;
+        if (!globalUsedIds.has(cand.id)) {
+          globalUsedIds.add(cand.id);
+          itemSelectedIds.push(cand.id);
+        }
+      }
+      selectedPoolsByItem[item] = itemSelectedIds;
     }
-
-    selectedPoolsByItem[item] = itemSelectedIds;
   }
 
-  // 5. INTERCALAÇÃO (ROUND-ROBIN) NA LISTA FINAL
+  // 5. MONTAGEM DA LISTA FINAL
   const finalOrderedIds: string[] = [];
   const contentItems = Object.keys(selectedPoolsByItem);
-  let maxPoolSize = 0;
-  for (const it of contentItems) {
-    if (selectedPoolsByItem[it].length > maxPoolSize) {
-      maxPoolSize = selectedPoolsByItem[it].length;
-    }
-  }
 
-  for (let idx = 0; idx < maxPoolSize; idx++) {
-    for (const it of contentItems) {
-      if (idx < selectedPoolsByItem[it].length && finalOrderedIds.length < finalMax) {
-        finalOrderedIds.push(selectedPoolsByItem[it][idx]);
+  for (const it of contentItems) {
+    for (const id of selectedPoolsByItem[it]) {
+      if (finalOrderedIds.length < finalMax) {
+        finalOrderedIds.push(id);
       }
     }
   }
@@ -603,6 +595,10 @@ export async function generateStratifiedQuiz(
         .not('especialidade', 'is', null)
         .neq('especialidade', '')
         .neq('especialidade', 'Não Classificada');
+
+      if (!filters.aleatorizar) {
+        qComp = qComp.order('year', { ascending: false });
+      }
 
       if (filters.especialidades && filters.especialidades.length > 0) {
         const specs = new Set<string>();
@@ -637,8 +633,9 @@ export async function generateStratifiedQuiz(
 
       const { data: compData } = await qComp.limit(remaining * 3);
       if (compData && compData.length > 0) {
-        const shuffledComp = shuffleArray(compData);
-        for (const row of shuffledComp) {
+        const compCandidates = !filters.aleatorizar ? compData : shuffleArray(compData);
+        for (const row of compCandidates) {
+          allCandidatesMap.set(row.id, row as QuestionCandidate);
           if (!globalUsedIds.has(row.id)) {
             globalUsedIds.add(row.id);
             finalOrderedIds.push(row.id);
@@ -651,5 +648,16 @@ export async function generateStratifiedQuiz(
     }
   }
 
-  return finalOrderedIds;
+  // 7. RETORNO FINAL:
+  // Se for Aleatório: embaralha completamente todas as questões (anos e bancas randômicos)
+  if (filters.aleatorizar) {
+    return shuffleArray(finalOrderedIds);
+  }
+
+  // Se for Mais Recentes: ordena estritamente por ano decrescente (2027, 2026, 2025, 2024...)
+  return finalOrderedIds.sort((idA, idB) => {
+    const yA = allCandidatesMap.get(idA)?.year || 0;
+    const yB = allCandidatesMap.get(idB)?.year || 0;
+    return yB - yA;
+  });
 }

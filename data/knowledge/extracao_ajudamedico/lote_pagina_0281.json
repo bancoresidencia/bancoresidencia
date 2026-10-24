@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_4e24062c-7a1f-4ab2-af4d-08f684aa0758",
+    "originalId": "4e24062c-7a1f-4ab2-af4d-08f684aa0758",
+    "statement": "Assinale a alternativa correta sobre como deve ser prescrita a solução polarizante (glicoinsulina).",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 UI de insulina regular: 500 mL de SG a 5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10 UI de insulina regular: 1000 mL de SG a 10%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "10 UI de insulina regular: 10 mL de glicose 50%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1 UI de insulina regular: 5 g de glicose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nA solução polarizante é uma medida farmacológica utilizada no tratamento da hipercalemia (elevação dos níveis de potássio no sangue). O objetivo da administração da insulina regular é estimular a bomba de sódio-potássio ATPase nas membranas celulares, o que promove o deslocamento do potássio do meio extracelular para o meio intracelular, reduzindo a calemia. A glicose é administrada concomitantemente apenas para prevenir a hipoglicemia que seria causada pela insulina.\n\nAlternativa a: Incorreta. 500 mL de soro glicosado (SG) a 5 por cento contêm 25 gramas de glicose. Se utilizarmos 10 UI de insulina para 25 g de glicose, a proporção seria de 1 UI para cada 2,5 g. Essa relação é considerada perigosa, pois oferece muita insulina para pouca glicose, elevando o risco de hipoglicemia severa.\n\nAlternativa b: Incorreta. 1000 mL de SG a 10 por cento contêm 100 gramas de glicose. Ao usar 10 UI de insulina, a proporção seria de 1 UI para cada 10 g de glicose. Embora seja seguro do ponto de vista glicêmico, o volume de 1 litro de fluido é excessivo para uma medida de urgência, podendo causar sobrecarga volêmica no paciente, especialmente naqueles com insuficiência renal ou cardíaca.\n\nAlternativa c: Incorreta. 10 mL de glicose a 50 por cento contêm 5 gramas de glicose. Prescrever 10 UI para 5 g de glicose resultaria em uma proporção de 2 UI de insulina para cada 1 g de glicose, o que levaria a uma queda glicêmica brusca e perigosa.\n\nAlternativa d: Correta. A recomendação clássica para a solução polarizante é a proporção de 1 UI de insulina regular para cada 4 a 5 gramas de glicose. Essa relação é eficaz para promover a entrada do potássio na célula e, ao mesmo tempo, manter a estabilidade glicêmica do paciente. Uma das prescrições mais comuns na prática clínica é a administração de 10 UI de insulina regular diluídas em 100 mL de glicose a 50 por cento (que totalizam 50 gramas de glicose), respeitando exatamente a proporção de 1 UI para 5 g descrita nesta alternativa.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.624Z"
+  },
+  {
+    "id": "AJUDA_4e24c92c-57cc-40cc-a218-214be7437299",
+    "originalId": "4e24c92c-57cc-40cc-a218-214be7437299",
+    "statement": "Homem de 42 anos, vítima de colisão carro–moto a 80 km/h, chega consciente (Escala de Coma de Glasgow 15), pálido e sudoreico. Sinais vitais: FC 150 bpm, PA 78/46 mmHg, FR 28 irpm, SatO₂ 94% em O₂. FAST negativo em todos os quadrantes; Rx de pelve mostra fratura em “livro aberto” (diástase sacroilíaca). Após 500 mL de cristalóide aquecido, mantém choque. Centro com sala de trauma, ortopedia de plantão e hemodinâmica não imediata (intervencionista chega em 90 min). Qual a próxima conduta imediata mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angioembolização seletiva das artérias ilíacas internas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "REBOA (Resuscitative Endovascular Balloon Occlusion of the Aort) em zona I e encaminhamento à TC total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicação imediata de cinta pélvica, empacotamento pré-peritoneal e fixação externa, associando ressuscitação hemostática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Laparotomia exploradora para pesquisa de sangramento oculto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Observação em UTI com hipotensão permissiva até disponibilidade do radiologista intervencionista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro clássico de choque hipovolêmico grau IV decorrente de trauma pélvico de alta energia. A fratura em \"livro aberto\" (diástase da sínfise púbica e/ou lesão sacroilíaca) aumenta o volume da bacia, permitindo um sangramento venoso e ósseo massivo no espaço retroperitoneal. O FAST negativo é um dado crucial: ele sugere que a origem da instabilidade hemodinâmica não é o sangramento intraperitoneal, mas sim a própria bacia. Como o paciente não respondeu à infusão inicial de cristaloides e permanece chocado, a intervenção deve ser imediata.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. A angioembolização é excelente para sangramentos arteriais pélvicos. No entanto, o enunciado informa que a radiologia intervencionista levaria 90 minutos para estar disponível. Um paciente com frequência cardíaca de 150 bpm e PA de 78/46 mmHg não tem tempo de espera; ele morreria antes do procedimento. Além disso, a maioria dos sangramentos na fratura de pelve (cerca de 85% a 90%) é de origem venosa ou óssea, que não são resolvidos pela embolização.\n\nb) INCORRETA. O REBOA pode ser uma medida de ponte, mas o uso da Zona I (aorta descendente torácica) é mais indicado para hemorragias abdominais infradiafragmáticas. Para a pelve, utiliza-se a Zona III. Além disso, encaminhar um paciente instável para Tomografia Computadorizada (TC) é um erro grave no atendimento ao trauma (\"a TC é o túnel da morte para o paciente instável\"). A prioridade é o controle do sangramento, não o refinamento diagnóstico por imagem.\n\nc) CORRETA. Esta é a conduta padrão de controle de danos para fraturas pélvicas instáveis com FAST negativo. A cinta pélvica reduz o volume da bacia e promove o efeito de tamponamento. O empacotamento pré-peritoneal (Preperitoneal Pelvic Packing - PPP) é uma técnica cirúrgica rápida que controla o sangramento venoso e ósseo do plexo pré-sacral, podendo ser feito na própria sala de trauma ou centro cirúrgico rapidamente. A fixação externa estabiliza o anel pélvico definitivamente após a manobra da cinta. A ressuscitação hemostática (transfusão maciça de sangue e derivados) é essencial para tratar a coagulopatia do trauma.\n\nd) INCORRETA. Com um FAST negativo e uma fratura de pelve evidente, a laparotomia exploradora não é a prioridade. Abrir o peritônio em um paciente com hematoma retroperitoneal por fratura de pelve pode causar a perda do efeito de tamponamento natural que o peritônio exerce, levando a uma hemorragia exsanguinante e morte rápida.\n\ne) INCORRETA. A observação em UTI é contraindicada para pacientes com choque descompensado e sangramento ativo. A hipotensão permissiva é uma estratégia durante o transporte ou preparo para a cirurgia, mas nunca uma conduta definitiva para quem precisa de intervenção mecânica imediata para estancar a hemorragia. Aguardar 90 minutos pelo radiologista sem fazer nada resultaria no óbito do paciente.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Trauma",
+      "Politrauma Ortopédico"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.624Z"
+  },
+  {
+    "id": "AJUDA_4e2bf170-a3e5-4ea3-bd3f-9cc49d663c12",
+    "originalId": "4e2bf170-a3e5-4ea3-bd3f-9cc49d663c12",
+    "statement": "Homem, 48 anos de idade, com histórico de hipertensão arterial controlada e sobrepeso, apresenta queixa de fadiga persistente, dificuldade de concentração e insônia há 6 meses. Ele também relata episódios de ansiedade e tristeza que afetam suas atividades diárias. O paciente é avaliado na UBS e, após investigação, é diagnosticado com transtorno depressivo maior. Iniciado tratamento com antidepressivo. Após 2 meses, ele retorna, relatando melhora parcial dos sintomas, mas continua apresentando fadiga e insônia. Ele também menciona aumento de peso desde o início do tratamento, apesar de manter os mesmos hábitos alimentares. Não há histórico de abuso de substâncias, e os sinais vitais estão normais.\n\nA alternativa que contém a conduta mais adequada em relação aos sintomas atuais deste paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever zolpidem, para induzir o sono em curto prazo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Recomendar higiene do sono, exercícios físicos regulares e perda de peso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Adicionar um antipsicótico de segunda geração para controle da insônia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever um suplemento de melatonina e aumentar a dose do antidepressivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta um quadro de Transtorno Depressivo Maior com resposta parcial ao tratamento inicial. Os principais desafios no momento são a persistência de sintomas residuais (fadiga e insônia) e o surgimento de um efeito colateral comum a diversos antidepressivos: o ganho de peso. Em pacientes com sobrepeso e hipertensão, o manejo desses efeitos é fundamental para a adesão e para a saúde metabólica.\n\nAlternativa a: Incorreta. O zolpidem é um indutor do sono indicado para tratamentos de curto prazo. Ele não atua na fisiopatologia da depressão nem melhora a fadiga. Além disso, o uso de hipnóticos deve ser cauteloso devido ao risco de tolerância e dependência, não sendo a primeira escolha para sintomas residuais de um quadro depressivo que ainda requer ajuste global.\n\nAlternativa b: Correta. Esta alternativa foca em intervenções não farmacológicas que possuem alto nível de evidência. A higiene do sono é o passo inicial essencial para o manejo da insônia persistente. O exercício físico regular é uma ferramenta terapêutica poderosa na depressão, agindo diretamente na melhora da fadiga, do humor e do condicionamento cardiovascular. Além disso, a perda de peso e a atividade física são fundamentais para contrapor o ganho ponderal causado pelo medicamento, tratando o paciente de forma integral em vez de apenas adicionar mais fármacos (polifarmácia).\n\nAlternativa c: Incorreta. Antipsicóticos de segunda geração (como a quetiapina) são frequentemente utilizados como potencializadores em depressões de difícil controle e podem auxiliar no sono. No entanto, eles são conhecidos por causar ganho de peso expressivo, aumento da circunferência abdominal e alterações lipídicas. Como o paciente já relatou ganho de peso e já possui sobrepeso e hipertensão, essa conduta seria contraproducente e aumentaria o risco metabólico.\n\nAlternativa d: Incorreta. A melatonina tem indicação específica para distúrbios do ritmo circadiano e evidência modesta para insônia em quadros depressivos graves. Aumentar a dose do antidepressivo atual poderia ser uma opção para buscar a remissão completa dos sintomas, mas não resolve a questão da insônia e pode agravar o ganho de peso, caso o medicamento em uso tenha esse perfil dose-dependente.\n\nConclusão:\nA abordagem de sintomas residuais na atenção primária deve priorizar a modificação do estilo de vida. O exercício físico e a higiene do sono tratam a fadiga e a insônia sem adicionar novos efeitos colaterais, auxiliando também no controle do peso e da pressão arterial do paciente.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Transtornos do Humor",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 17.28455016883651,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.624Z"
+  },
+  {
+    "id": "AJUDA_4e30f685-4252-4b7c-aa4b-9735d1f9733d",
+    "originalId": "4e30f685-4252-4b7c-aa4b-9735d1f9733d",
+    "statement": "O diagnóstico laboratorial diante de uma forte suspeita de tuberculose pulmonar em crianças continua sendo um grande desafio nos tempos atuais. No entanto, a reação em cadeia de polimerase em tempo real é capaz de detectar o DNA de M. tuberculosis, podendo ser realizado em vários espécimes clínicos. O referido teste é denominado de",
+    "options": [
+      {
+        "id": "A",
+        "text": "técnica de Lowenstein-Jensen.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IGRA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "teste do NBT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Xpert Ultra.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Teste de Dihidrorodamina (DHR).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da questão:\nO enunciado aborda o diagnóstico da tuberculose e descreve especificamente um teste baseado em biologia molecular (PCR em tempo real) capaz de detectar o DNA do complexo Mycobacterium tuberculosis em diferentes materiais biológicos, especialmente útil no cenário pediátrico pela baixa carga bacilar e dificuldade de expectoração.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A técnica de Lowenstein-Jensen é um método microbiológico clássico de cultura em meio sólido. Trata-se de cultivo bacteriano tradicional e não de biologia molecular.\n\nAlternativa b: Incorreta. O IGRA (Interferon-Gamma Release Assay) é um ensaio imunológico realizado em sangue periférico que avalia a resposta celular (liberação de interferon-gama por linfócitos T) frente a antígenos da micobactéria. Ele avalia resposta imune, não detecta o DNA bacteriano.\n\nAlternativa c: Incorreta. O teste do NBT (Nitroblue Tetrazolium) avalia a função oxidativa dos neutrófilos, sendo classicamente indicado para a investigação de Doença Granulomatosa Crônica (DGC), sem qualquer relação com a detecção de tuberculose.\n\nAlternativa d: Correta. O Xpert MTB/RIF Ultra é o Teste Rápido Molecular para Tuberculose (TRM-TB). Ele utiliza a tecnologia de PCR em tempo real para identificar o material genético (DNA) do bacilo e detectar resistência à rifampicina em poucas horas, sendo aplicável em amostras como lavado gástrico e fezes em pediatria.\n\nAlternativa e: Incorreta. O teste de Dihidrorodamina (DHR) é realizado por citometria de fluxo para quantificar a produção de radicais livres por neutrófilos, sendo o método padrão para diagnóstico da Doença Granulomatosa Crônica.\n\nGabarito: Alternativa d.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Tuberculose",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.624Z"
+  },
+  {
+    "id": "AJUDA_4e3ee2ba-47c5-4f88-b970-f16f31c6a4d6",
+    "originalId": "4e3ee2ba-47c5-4f88-b970-f16f31c6a4d6",
+    "statement": "Mulher, 44 anos, portadora de neoplasia mamária, apresentou febre, mialgia e tosse por cinco dias. Interna por dispneia e dessaturação, sendo contraindicada quimioterapia no momento. Na entrada, realizada a hipótese de sepse e solicitados exames diagnósticos, como teste de antígeno para SARS-CoV2 e Influenza. Na Tomografia Computadorizada de Tórax, observado vidro fosco bilateral, com padrão em mosaico.\n\nIndique o diagnóstico sindrômico e manejo mais adequados.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome Gripal, Oseltamivir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome da Dessaturação, Cefepime e Oseltamivir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome Respiratória Aguda Grave, Nilmatrevir e Ritonavir.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome Febril, Palivizumabe.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma paciente de 44 anos, imunossuprimida (devido à neoplasia mamária), que evoluiu de um quadro de febre e tosse para um cenário de insuficiência respiratória (dispneia e dessaturação). Na tomografia de tórax, o padrão de vidro fosco reforça a hipótese de pneumonia viral.\n\nAbaixo, a análise detalhada das alternativas:\n\nAlternativa a) Incorreta. A Síndrome Gripal (SG) é definida por um quadro de início agudo de febre, tosse e mialgia, mas sem sinais de gravidade. No momento em que a paciente apresenta dispneia e queda da saturação de oxigênio, o diagnóstico evolui obrigatoriamente para Síndrome Respiratória Aguda Grave (SRAG). O oseltamivir seria indicado se a suspeita principal fosse Influenza, mas a classificação sindrômica está equivocada para a gravidade do caso.\n\nAlternativa b) Incorreta. \"Síndrome da Dessaturação\" não é uma nomenclatura técnica padronizada para diagnóstico sindrômico epidemiológico no contexto de infecções respiratórias. Além disso, o cefepime é um antibiótico de amplo espectro (com cobertura para Pseudomonas) indicado para infecções bacterianas graves ou neutropenia febril, o que não é o foco inicial sugerido pelo padrão radiológico de vidro fosco (típico de vírus).\n\nAlternativa c) Correta. A paciente preenche os critérios de Síndrome Respiratória Aguda Grave (SRAG), que consiste em Síndrome Gripal acrescida de dispneia, desconforto respiratório ou saturação de oxigênio inferior a 95% em ar ambiente. Por ser portadora de neoplasia (grupo de alto risco para progressão), o uso de antivirais específicos é indicado. O nirmatrelvir associado ao ritonavir (Paxlovid) é uma terapia antiviral indicada para pacientes com COVID-19 de risco elevado para complicações. Embora as diretrizes geralmente recomendem o Paxlovid para casos leves a moderados que não requerem oxigênio suplementar, no contexto da questão, esta é a alternativa que melhor correlaciona o diagnóstico sindrômico correto com uma terapêutica antiviral moderna para o grupo de risco descrito.\n\nAlternativa d) Incorreta. Síndrome Febril é um termo muito genérico que ignora o comprometimento respiratório agudo da paciente. O palivizumabe não é um tratamento para infecções ativas; trata-se de um anticorpo monoclonal utilizado exclusivamente para a profilaxia (prevenção) de infecções graves pelo Vírus Sincicial Respiratório (VSR) em populações pediátricas específicas (prematuros e cardiopatas), não possuindo indicação para tratamento de adultos com SRAG.\n\nResumo do raciocínio:\n1. Identificação da Gravidade: Dispneia + Dessaturação = SRAG.\n2. Identificação do Grupo de Risco: Neoplasia ativa.\n3. Conduta: Classificar como SRAG e instituir tratamento antiviral voltado para os patógenos suspeitos (neste caso, as opções apontam para o manejo da COVID-19 em paciente de alto risco).",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Covid-19",
+      "Síndrome do Desconforto Respiratório Agudo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.624Z"
+  },
+  {
+    "id": "AJUDA_4e4a846b-49ae-44ec-97d2-0fab1771144a",
+    "originalId": "4e4a846b-49ae-44ec-97d2-0fab1771144a",
+    "statement": "Você está de plantão em um serviço de atenção terciária, quando atende um paciente do sexo masculino, 73 anos, hipertenso e diabético, há pelo menos 10 anos, em uso irregular da medicação. Paciente é admitido por confusão mental e refere piora da dispneia há dois dias. Relata ganho de peso, edema de membros inferiores e diminuição do volume urinário.\nExame físico: PA 168x98 mmHg, FC 92 bpm, FR 24 irpm, SatO₂ 94% em ar ambiente, crepitações em bases pulmonares e turgência jugular.\nLaboratório: ureia 136 mg/dL, creatinina 3,4 mg/dL (prévia 1,1 mg/dL), K⁺ 6,1 mEq/L, Na⁺ 132 mEq/L, gasometria com pH 7,28 e bicarbonato 16 mEq/L.\nQual o diagnóstico MAIS provável e conduta inicial indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência renal aguda pré-renal; hidratação vigorosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nefrite intersticial aguda; suspensão de diurético e biópsia renal imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DRC descompensada; diurético endovenoso e controle pressórico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Necrose tubular aguda; hemodiálise de urgência imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente é um idoso com histórico de 10 anos de hipertensão arterial e diabetes mellitus com tratamento irregular, o que sugere fortemente a existência de Doença Renal Crônica (DRC) de base. Ele apresenta uma piora aguda da função renal (elevação da creatinina de 1,1 para 3,4 mg/dL), caracterizando um quadro de DRC agudizada ou descompensada. Os achados de exame físico (crepitações pulmonares, turgência jugular, edema e hipertensão) indicam um estado de hipervolemia e congestão. Laboratorialmente, há hipercalemia (6,1 mEq/L) e acidose metabólica (pH 7,28 e bicarbonato 16 mEq/L).\n\nAlternativa a) Incorreta. A insuficiência renal pré-renal ocorre por hipovolemia ou baixa perfusão renal. O paciente em questão está claramente hipervolêmico (congesto). Administrar hidratação vigorosa neste cenário é perigoso e pode precipitar uma insuficiência respiratória por edema agudo de pulmão.\n\nAlternativa b) Incorreta. A nefrite intersticial aguda é geralmente desencadeada por reações a medicamentos (como antibióticos ou anti-inflamatórios) e não se correlaciona com o histórico de 10 anos de diabetes e hipertensão do paciente. A biópsia renal não é uma conduta de urgência nem o passo inicial para o manejo da congestão.\n\nAlternativa c) Correta. O diagnóstico mais provável é a descompensação de uma DRC preexistente (devido ao tempo de evolução das comorbidades), manifestando-se com síndrome congestiva. A conduta inicial prioritária é o manejo da sobrecarga hídrica com diuréticos de alça endovenosos (furosemida) e o controle da pressão arterial. O uso de diuréticos ajudará a reduzir o volume extracelular, melhorar a dispneia e também auxiliar na excreção de potássio.\n\nAlternativa d) Incorreta. Embora a necrose tubular aguda possa ser o mecanismo da lesão renal, a hemodiálise de urgência não é a primeira conduta indicada de forma imediata antes de se tentar medidas farmacológicas. A hemodiálise imediata é reservada para casos de hipercalemia refratária (geralmente acima de 6,5 mEq/L com alterações no ECG), acidose grave refratária ou edema agudo de pulmão que não responde aos diuréticos. No caso apresentado, deve-se iniciar o tratamento clínico primeiro.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Insuficiência Cardíaca",
+      "Hipertensão Arterial Sistêmica",
+      "Distúrbios do Potássio",
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 2",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.624Z"
+  },
+  {
+    "id": "AJUDA_4e4aed31-98d6-4050-b40d-dab8d32ae550",
+    "originalId": "4e4aed31-98d6-4050-b40d-dab8d32ae550",
+    "statement": "Qual alteração histológica caracteriza o esôfago de Barrett?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metaplasia gástrica antral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Metaplasia gástrica de corpo e fundo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Metaplasia colunar intestinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Presença de anel fibroso, concêntrico e não maligno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipertrofia das células escamosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O esôfago de Barrett é uma condição decorrente da Doença do Refluxo Gastroesofágico (DRGE) crônica, na qual o epitélio normal do esôfago sofre uma mudança adaptativa para suportar a agressão ácida e biliar.\n\nAlternativa a: Incorreta. Embora a presença de epitélio gástrico no esôfago possa ocorrer, a metaplasia do tipo antral isolada não define o esôfago de Barrett nos critérios histopatológicos clássicos exigidos para o diagnóstico.\n\nAlternativa b: Incorreta. A metaplasia de corpo e fundo (epitélio oxíntico) também não caracteriza o esôfago de Barrett. O foco do diagnóstico reside na transformação para o tipo intestinal.\n\nAlternativa c: Correta. O esôfago de Barrett é definido pela metaplasia colunar intestinal especializada. Histologicamente, isso significa que o epitélio escamoso estratificado (original do esôfago) é substituído por um epitélio colunar simples, com a presença obrigatória de células caliciformes (também chamadas de goblet cells). Esta alteração é o marcador de risco para o desenvolvimento de adenocarcinoma de esôfago.\n\nAlternativa d: Incorreta. A presença de um anel fibroso, concêntrico e não maligno descreve o Anel de Schatzki. Embora possa estar associado ao refluxo, é uma alteração estrutural e não uma metaplasia histológica da mucosa.\n\nAlternativa e: Incorreta. No esôfago de Barrett, não há um aumento no tamanho das células escamosas (hipertrofia), mas sim a substituição de uma linhagem celular por outra (metaplasia). O epitélio escamoso deixa de existir na área afetada, dando lugar ao epitélio colunar.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico",
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.624Z"
+  },
+  {
+    "id": "AJUDA_4e545484-4f3c-4998-840e-53c8a2d6fc1b",
+    "originalId": "4e545484-4f3c-4998-840e-53c8a2d6fc1b",
+    "statement": "Mulher, 42 anos, com dor abdominal e diarreia, procurou ambulatório de clinica médica. A hipótese é de Doença inflamatória Intestinal. Em relação à fisiopatologia e à epidemiologia das doenças inflamatórias intestinais (DIIs), qual é a afirmação verdadeira?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Doença de Crohn e a Retocolite Ulcerativa são causadas exclusivamente por infecções bacterianas, sem envolvimento de fatores genéticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O gene NOD2/CARD15 está relacionado à suscetibilidade ao desenvolvimento da Doença de Crohn, ilustrando o componente genético nas DIIs.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A Retocolite Ulcerativa é mais comum em homens, enquanto a Doença de Crohn tem maior incidência em mulheres, ambos sem relação com fatores ambientais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As DIIs têm um pico de incidência concentrado apenas na faixa etária acima de 60 anos, sem prevalência significativa em jovens adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O uso de antibióticos durante a infância não influencia o desenvolvimento de DIIs em pacientes predispostos geneticamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os fundamentos da fisiopatologia e epidemiologia das Doenças Inflamatórias Intestinais (DII), especificamente a Doença de Crohn (DC) e a Retocolite Ulcerativa (RCU).\n\nAlternativa (a) Incorreta: As DIIs não são causadas exclusivamente por infecções bacterianas. A ciência médica define essas condições como multifatoriais, resultantes de uma interação complexa entre a predisposição genética do indivíduo, fatores ambientais (como dieta e tabagismo), a composição da microbiota intestinal e uma resposta imune desregulada.\n\nAlternativa (b) Correta: O gene NOD2 (também conhecido como CARD15), localizado no cromossomo 16, foi o primeiro gene de suscetibilidade identificado para a Doença de Crohn. Ele desempenha um papel crucial no reconhecimento de padrões moleculares bacterianos. Mutações nesse gene estão associadas a uma maior probabilidade de desenvolver a doença e a fenótipos específicos, como o acometimento ileal e comportamento estenosante, o que exemplifica a forte base genética das DIIs.\n\nAlternativa (c) Incorreta: Embora existam variações geográficas, a afirmação está errada principalmente ao excluir os fatores ambientais. O tabagismo, por exemplo, é um dos fatores ambientais mais estudados: ele aumenta o risco e a gravidade da Doença de Crohn, enquanto exerce um curioso efeito \"protetor\" (reduzindo a incidência) na Retocolite Ulcerativa.\n\nAlternativa (d) Incorreta: O perfil epidemiológico das DIIs é tipicamente bimodal. O maior pico de incidência ocorre em adultos jovens, geralmente entre os 15 e 35 anos de idade. Um segundo pico, de menor magnitude, pode ser observado em idosos entre 60 e 80 anos. Portanto, a prevalência em jovens adultos é extremamente significativa.\n\nAlternativa (e) Incorreta: Fatores que alteram a microbiota intestinal precocemente, como o uso de antibióticos na infância, são considerados fatores de risco ambientais. A exposição a antibióticos pode causar disbiose, que, em indivíduos com predisposição genética, pode atuar como um gatilho para o desenvolvimento de processos inflamatórios crônicos no intestino.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.624Z"
+  },
+  {
+    "id": "AJUDA_4e58b58a-b5d5-4a4b-826c-de5686c6e54e",
+    "originalId": "4e58b58a-b5d5-4a4b-826c-de5686c6e54e",
+    "statement": "Homem de 77 anos de idade apresenta hemiparesia incompleta desproporcionada de predomínio braquiocrural à direita há dez dias. AP: etilista (0,5 litro de cachaça/dia), tabagista, hipertensão não controlada. TC de crânio: imagem a seguir:\n\nA conduta mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "embolização da artéria meníngea média.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trépano-punção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "craniotomia para drenagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atorvastatina via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico e da imagem:\nO caso descreve um paciente idoso, etilista e hipertenso, com um déficit neurológico focal (hemiparesia à direita) de início subagudo/crônico (dez dias). A tomografia computadorizada (TC) de crânio revela uma coleção extra-axial em formato de crescente (convexa em relação à calota e côncava em relação ao parênquima) no hemisfério esquerdo, que é isodensa/hipodensa em relação ao parênquima. Há um evidente efeito de massa, com apagamento de sulcos, compressão do ventrículo lateral esquerdo e desvio da linha média para a direita. Esses achados são patognomônicos de um Hematoma Subdural Crônico (HSDC).\n\nExplicação das alternativas:\n\na) Incorreta. A embolização da artéria meníngea média é uma técnica minimamente invasiva mais recente, utilizada principalmente para casos de recidiva ou como terapia adjuvante para reduzir o risco de novo sangramento. No entanto, em um paciente com déficit neurológico agudo/subagudo e desvio importante da linha média, a prioridade é a descompressão cirúrgica imediata para aliviar o efeito de massa.\n\nb) Correta. A trépano-punção (ou orifícios de trépano) é o tratamento padrão-ouro para o Hematoma Subdural Crônico sintomático. Diferentemente do hematoma agudo, o conteúdo do hematoma crônico é predominantemente líquido (sangue liquefeito e produtos de degradação), o que permite sua drenagem através de um ou dois pequenos orifícios no crânio, geralmente seguidos pela instalação de um sistema de drenagem fechado. É um procedimento eficaz e menos invasivo que a craniotomia.\n\nc) Incorreta. A craniotomia (abertura de uma ampla \"janela\" óssea) é reservada geralmente para o Hematoma Subdural Agudo, no qual o sangue está coagulado (sólido), ou para casos de hematomas crônicos multiloculados ou recorrentes que não puderam ser resolvidos com a trepanação simples. Para o caso apresentado, a trepanação é a conduta inicial de escolha por ser menos mórbida em um paciente idoso.\n\nd) Incorreta. Embora existam estudos discutindo o uso de estatinas (como a atorvastatina) e corticoides no manejo conservador de hematomas subdurais crônicos pequenos e assintomáticos, essa conduta é contraindicada neste paciente. A presença de hemiparesia e o desvio da linha média na TC indicam uma urgência neurocirúrgica, e o tratamento medicamentoso isolado não seria capaz de reverter o efeito de massa de forma rápida e segura.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c2b3cc08dc32e7920c35562337fbcbeb531d23691e0e0d647742eb4a06fd4053.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4e58b58a-b5d5-4a4b-826c-de5686c6e54e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.941Z"
+  },
+  {
+    "id": "AJUDA_4e592301-1d77-4404-ab05-938883632e6f",
+    "originalId": "4e592301-1d77-4404-ab05-938883632e6f",
+    "statement": "S.G.L; 2 meses, sexo feminino. Paciente em aleitamento materno exclusivo em livre demanda, vai à consulta com Gastroenterologista Pediátrico devido a regurgitações frequentes, desde o primeiro mês de vida, após todas as mamadas e em grande volume, incluindo com saída de leite pelo nariz. Mãe nega perda de peso, febre, recusa alimentar ou irritabilidade durante as mamadas. Apresentando 3 evacuações ao dia, sem pus, muco ou sangue. \nHistória Pregressa: Nega alergias medicamentosas. Vacinação em dia. Teste do pezinho: normal. Nega internações prévias. Nega história de consanguinidade na família. \nRecém-nascido a termo, 39 semanas, parto normal; Peso ao nascimento:3200g; comprimento:50cm; Perímetro Cefálico:33cm; sem intercorrências; Apgar 8/9. Recebeu alta da maternidade em 24 horas. \nHistória Familiar: nada digno de nota \nAO EXAME: Peso: 5500g; Comprimento:58cm; Perímetro Cefálico:38cm \nCorado, hidratado, anictérico, acianótico, pulsos cheios e rítmicos, boa perfusão capilar, sem edemas. \nAparelho Cardiovascular: Rítmo cardíaco regular em 2 tempos, sem sopros. Frequência cardíaca: 128bpm \nAparelho respiratório: Murmúrio vesícular fisiológico, sem esforço; Frequência respiratória:40irpm \nAparelho digestivo: Abdome normotenso, indolor, sem massas ou visceromegalias, ruído hidroaéreo positivo. \nAparelho genitourinário: genitália tipicamente feminina \nSistema nervoso: Fontanela anterior normotensa e plana \nSobre o caso clínico, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se iniciar tratamento com inibidor de bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É necessário suspender o aleitamento materno e iniciar com fórmula espessada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se orientar a mãe sobre o caráter benigno do quadro e manter aleitamento materno exclusivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É necessário suspender a proteína do leite de vaca da dieta materna para excluir o diagnóstico de Alergia à Proteína do Leite de Vaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nEstamos diante de um lactente de 2 meses com quadro clássico de Refluxo Gastroesofágico Fisiológico, popularmente conhecido como \"Lactente Cuspidor\" ou \"Happy Spitter\". As características principais são: regurgitações frequentes, porém com ganho de peso excelente (ganhou 2.300 g em 2 meses, uma média de quase 40 g/dia, muito acima do esperado) e ausência de sinais de alerta (irritabilidade, recusa alimentar, engasgos, sintomas respiratórios ou sangue nas fezes). O exame físico é totalmente normal.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. O uso de inibidores da bomba de prótons (como o omeprazol) é reservado para casos de Doença do Refluxo Gastroesofágico (DRGE), onde há complicações como esofagite, baixo ganho ponderal ou sintomas respiratórios crônicos. No refluxo fisiológico, o tratamento medicamentoso não é indicado e pode causar efeitos adversos desnecessários.\n\nb) Incorreta. Jamais se deve suspender o aleitamento materno exclusivo em um lactente com crescimento e desenvolvimento adequados. O leite materno é o melhor alimento e possui digestão mais rápida que as fórmulas, o que pode até ajudar no esvaziamento gástrico. Fórmulas espessadas são opções para lactentes em uso de fórmula que apresentam sintomas acentuados, mas não substituem o leite materno.\n\nc) Correta. Como a paciente é uma \"Cuspidora Feliz\" (tem refluxo, mas é saudável e cresce bem), a conduta correta é a orientação antecipatória. Deve-se tranquilizar a família sobre o caráter benigno e autolimitado da condição (que tende a melhorar com a maturação do esfíncter esofágico inferior e a postura ereta) e manter o aleitamento materno exclusivo em livre demanda.\n\nd) Incorreta. A restrição de proteína do leite de vaca na dieta materna é o teste terapêutico para Alergia à Proteína do Leite de Vaca (APLV). Embora a APLV possa se manifestar com vômitos, ela geralmente vem acompanhada de outros sintomas como irritabilidade intensa, baixo ganho de peso, dermatite atópica ou presença de muco/sangue nas fezes, sinais que estão ausentes neste caso clínico. Além disso, o ganho de peso excepcional da paciente afasta essa hipótese no momento.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Aleitamento Materno",
+      "Doença do Refluxo Gastroesofágico em Pediatria"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:27.941Z"
+  }
+]

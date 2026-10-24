@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_71be40b0-a5ce-4908-8b30-3c05a6846086",
+    "originalId": "71be40b0-a5ce-4908-8b30-3c05a6846086",
+    "statement": "Você é um médico de família e comunidade em uma UBS (Unidade Básica de Saúde) e o seu município enfrenta uma das piores epidemias de dengue dos últimos 20 anos. A unidade está com fluxo intenso de atendimentos. Considerando as fases clínicas da doença e a classificação dos grupos de risco, assinale a alternativa que elucida estratégia de acordo com o protocolo do Ministério da Saúde e que otimize recursos físicos e humanos diante de tal contexto epidemiológico. Leve em consideração apenas o manejo dos grupos A e B uma vez que grupos C e D serão referenciados para setor hospitalar.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coleta de hemograma e reavaliação diária para grupo B até 48h após remissão da febre; coleta de hemograma e reavaliação após 48h da remissão da febre para grupo A; reidratação oral",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Coleta de hemograma e reavaliação diária para grupos A e B; hidratação endovenosa para os grupos A e B até 48h da admissão",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coleta de hemograma e reavaliação diária para grupos B até 48h após remissão da febre; hidratação endovenosa para os grupos A e B",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coleta de hemograma e reavaliação diária para grupos A e B até 48h após remissão da febre; reidratação oral disponível em sala de espera da UBS; hidratação endovenosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige o conhecimento do fluxograma de manejo clínico da dengue preconizado pelo Ministério da Saúde. O objetivo da classificação em grupos é estratificar o risco para garantir o tratamento adequado e a sustentabilidade do sistema de saúde, especialmente em cenários de epidemia e fluxo intenso.\n\nO Grupo A compreende pacientes com suspeita de dengue, sem sinais de alarme, sem condições especiais ou comorbidades e sem risco social. Para esses, a hidratação é prioritariamente oral e o acompanhamento é ambulatorial. O protocolo indica que a reavaliação clínica deve ocorrer preferencialmente no dia em que a febre cessar (fim da fase febril e início da fase crítica). O hemograma não é obrigatório para esse grupo de forma rotineira em contextos epidêmicos, podendo ser solicitado a critério médico.\n\nO Grupo B compreende pacientes com suspeita de dengue, sem sinais de alarme, mas que apresentam condições clínicas especiais (como gestantes, idosos acima de 65 anos, portadores de doenças crônicas como hipertensão, diabetes e asma) ou situações sociais de vulnerabilidade. Para esse grupo, a coleta de hemograma é obrigatória para triagem de hemoconcentração, e a reavaliação clínica deve ser diária até que se completem 48 horas sem febre, devido ao maior risco de complicações.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: Define adequadamente a necessidade de hemograma e seguimento diário para o Grupo B. Para o Grupo A, foca na reavaliação após a remissão da febre (período em que podem surgir os sinais de alarme da fase crítica) e estabelece a reidratação oral como base do tratamento. Essa estratégia otimiza os recursos físicos e humanos da UBS ao evitar exames e retornos desnecessários para o grupo de menor risco (A), enquanto mantém vigilância estrita sobre o grupo de maior risco (B).\n\nAlternativa (b) Incorreta: Propor reavaliação diária e coleta de hemograma para o Grupo A em uma epidemia sobrecarregaria o sistema de saúde e o laboratório sem benefício clínico comprovado para esse perfil de paciente. Além disso, a hidratação endovenosa não é a conduta inicial para os grupos A e B, sendo reservada para pacientes que não toleram a via oral ou que apresentam sinais de alarme (Grupo C).\n\nAlternativa (c) Incorreta: Embora a conduta para o Grupo B esteja correta, a alternativa falha ao indicar hidratação endovenosa para os grupos A e B de forma generalizada. A hidratação oral é o pilar do tratamento para esses grupos, sendo mais segura, simples e econômica.\n\nAlternativa (d) Incorreta: A reavaliação diária e a coleta de hemograma para o Grupo A contrariam a lógica de otimização de recursos em contexto epidêmico. A hidratação endovenosa também está incorretamente posicionada como estratégia para os grupos A e B sem critérios de gravidade ou intolerância oral.\n\nGabarito: A alternativa correta é a letra (a).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  },
+  {
+    "id": "AJUDA_71c2943c-c5b9-46c9-a0c9-76e986e77f8c",
+    "originalId": "71c2943c-c5b9-46c9-a0c9-76e986e77f8c",
+    "statement": "Homem de 45 anos queixa-se de obstrução nasal bilateral persistente, diminuição significativa do olfato e sensação de peso facial leve, com duração contínua de oito meses. O paciente relata rinorreia espessa e mucoide, mas nega febre, dor facial severa, dor dentária, epistaxe ou eliminação de secreção francamente purulenta recente. O histórico médico é positivo para asma brônquica leve e rinite intermitente. Ao exame físico: sinais vitais estáveis; a rinoscopia anterior evidencia massas pálidas, translúcidas e bilaterais ocupando os meatos médios, acompanhadas de secreção mucoide clara; oroscopia: não apresenta gotejamento pós-nasal purulento; o exame neurológico e a inspeção periorbitária estão inalterados. Nesse cenário clínico, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a conduta inicial adequada inclui a lavagem nasal diária de alto volume com solução salina associada à administração contínua de corticosteroides tópicos na mucosa nasal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a realização de tomografia computadorizada dos seios da face é indicada antes da terapia clínica para avaliar complicações agudas subjacentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a administração de anti-histamínicos orais de segunda geração atua como a base do tratamento para promover a regressão do tecido polipoide e restaurar o olfato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "um agente biológico inibidor de interleucina deve ser a primeira medida instituída, antes de tentar outras modalidades terapêuticas farmacológicas locais habituais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o tratamento com amoxicilina/clavulanato por 10 dias é recomendado para erradicar patógenos bacterianos ocultos que mantêm o edema da mucosa nasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico: rinossinusite crônica com polipose nasal (RSCcPN). O quadro é típico: obstrução nasal bilateral, hiposmia/anosmia, peso facial leve e rinorreia mucoide por mais de 12 semanas (aqui, 8 meses). Há asma associada, e a rinoscopia mostra massas pálidas, translúcidas e bilaterais nos meatos médios. O perfil é de inflamação tipo 2 (eosinofílica), sem sinais de infecção bacteriana aguda (sem febre, dor intensa ou secreção purulenta) e sem complicações orbitárias ou neurológicas.\n\nPontos-chave: pólipos bilaterais em adulto, com asma, sugerem inflamação tipo 2. Esse contexto pode fazer parte da doença respiratória exacerbada por AINEs (tríade de Samter), que vale investigar na história. O tratamento de base é o corticoide tópico nasal contínuo, associado à irrigação salina. Corticoide oral em ciclo curto pode ser usado em casos mais graves. A cirurgia endoscópica fica para falha do tratamento clínico, e os biológicos para doença grave e refratária.\n\nAnálise das alternativas:\n\na) Correta. A lavagem nasal com solução salina de alto volume melhora o clearance mucociliar e remove mediadores inflamatórios e crostas. O corticoide tópico nasal contínuo é a base do tratamento, pois reduz o tamanho dos pólipos e melhora a obstrução e, em parte, o olfato. É a conduta inicial recomendada pelas diretrizes (EPOS, entre outras).\n\nb) Incorreta. Não há suspeita de complicação aguda, pois não existem febre, alterações orbitárias ou neurológicas. O diagnóstico é clínico e endoscópico. A TC é indicada para planejamento cirúrgico, em casos refratários ou quando há dúvida diagnóstica, e não antes da terapia clínica inicial.\n\nc) Incorreta. Os anti-histamínicos de segunda geração tratam sintomas alérgicos, como espirros e prurido, mas não fazem os pólipos regredirem nem restauram o olfato. Podem ser coadjuvantes se houver rinite alérgica, mas não são a base do tratamento.\n\nd) Incorreta. Biológicos (dupilumabe, anti-IL-4/IL-13; omalizumabe, anti-IgE; mepolizumabe, anti-IL-5) são reservados para RSCcPN grave, não controlada apesar de corticoide tópico, corticoide sistêmico e/ou cirurgia. Não são a primeira medida.\n\ne) Incorreta. Não há evidência de infecção bacteriana aguda. A inflamação é eosinofílica, e antibióticos não são recomendados de rotina na polipose. O uso de macrolídeos em baixa dose por longo prazo é discutido apenas em fenótipos específicos, com pouca eosinofilia e IgE baixa, e não como amoxicilina/clavulanato por 10 dias.\n\nConclusão: a conduta inicial é irrigação salina associada a corticoide tópico nasal contínuo (alternativa A).",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  },
+  {
+    "id": "AJUDA_71c34445-02bb-4684-a8a8-75b97aca6243",
+    "originalId": "71c34445-02bb-4684-a8a8-75b97aca6243",
+    "statement": "Mulher de 52 anos encontrava-se internada para a realização de colecistectomia videolaparacoscópica. No 2º dia do pós operatório, apresentou dispneia, de início súbito e pré-síncope. Ao exame físico, PA 70/50mmHg, FC 134bpm, FR 32ipm e SpO2 86% (ar ambiente). A pele estava pálida e sudorética, e o tempo de enchimento capilar periférico era maior que 3 segundos. Após a ressuscitação volêmica com 1.000mL de solução cristaloide e administração de oxigênio pelo cateter nasal a 3L/min, os dados vitais eram PA 104/64mmHg, FC 118bpm, FR 20ipm e SpO2 94% (ar ambiente). A angioTC do tórax revelou falhas de enchimento nas artérias dos lobos inferiores de ambos os pulmões. A dosagem de troponina sérica resultou em 0,34ng/mL. O ecocardiograma revelou dilatação e hipocontratilidade do ventrículo direito. Assinale a alternativa que apresenta o tratamento imediato MAIS ADEQUADO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alteplase IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enoxaparina SC",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Filtro de veia cava inferior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trombectomia mecânica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é fundamental realizar a estratificação de risco do tromboembolismo pulmonar (TEP), baseando-se na estabilidade hemodinâmica, nos sinais de disfunção do ventrículo direito (VD) e nos marcadores de lesão miocárdica.\n\nA paciente apresentou um quadro inicial de choque obstrutivo (hipotensão, taquicardia e má perfusão), mas respondeu à reposição volêmica inicial, estabilizando a pressão arterial (PA 104/64 mmHg). No entanto, apresenta exames complementares alterados: a angio-TC confirmou TEP, o ecocardiograma demonstrou disfunção do VD e a troponina está elevada.\n\nEssa combinação (estabilidade hemodinâmica + disfunção do VD + troponina positiva) classifica a paciente como TEP de risco intermediário-alto (ou TEP submassivo).\n\nAnálise das alternativas:\n\na) Incorreta. A alteplase (trombolítico) é indicada para pacientes com TEP de alto risco (TEP massivo), definido por instabilidade hemodinâmica persistente (PA sistólica < 90 mmHg ou necessidade de vasopressores). Como a paciente estabilizou a pressão após a oferta de volume, a conduta inicial deve ser a anticoagulação e o monitoramento rigoroso. A trombólise só seria considerada em caso de deterioração clínica subsequente. Além disso, a paciente está no 2º dia de pós-operatório, o que representa uma contraindicação relativa à trombólise pelo risco de sangramento.\n\nb) Correta. A enoxaparina (heparina de baixo peso molecular) é o tratamento de escolha para o TEP de risco intermediário-alto. O objetivo imediato é impedir a progressão do coágulo e permitir que o sistema fibrinolítico endógeno atue. Em pacientes estáveis hemodinamicamente, a anticoagulação deve ser iniciada prontamente, preferencialmente com heparinas, enquanto se monitora a necessidade de terapias mais agressivas.\n\nc) Incorreta. O filtro de veia cava inferior tem indicações precisas: contraindicação absoluta à anticoagulação (como um sangramento ativo grave) ou falha da anticoagulação (novo episódio de TEP mesmo em vigência de tratamento adequado). Não é o tratamento de escolha para o quadro agudo descrito, uma vez que a anticoagulação não foi contraindicada.\n\nd) Incorreta. A trombectomia mecânica ou embolectomia cirúrgica é reservada para casos de TEP de alto risco (instáveis) em que a trombólise farmacológica é contraindicada ou falhou. Não se aplica como tratamento imediato de primeira linha para uma paciente que estabilizou hemodinamicamente.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  },
+  {
+    "id": "AJUDA_71e2e5ca-0246-4c48-b6f1-d5dd82813c79",
+    "originalId": "71e2e5ca-0246-4c48-b6f1-d5dd82813c79",
+    "statement": "O aborto espontâneo é definido como gestação intrauterina não viável até 20-22 semanas ou peso fetal de 500 g. Sobre o aborto é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ameaça de aborto: aquele em que a mulher, além de sangramento vaginal abundante e cólicas uterinas, apresenta colo pérvio e feto intra-útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aborto completo: quando há eliminação completa ou parcial do produto conceptual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aborto inevitável: a paciente apresenta sangramento vaginal, mas o orifício interno do colo uterino permanece impérvio e a vitalidade embrionária está preservada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aborto incompleto: presença apenas de saco gestacional, sem embrião, por duas semanas em paciente assintomática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "aborto retido: há ausência de batimentos cardíacos fetais ou do embrião, mas não ocorre a expulsão espontânea do conteúdo intrauterino.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para dominar as questões sobre abortamento, é fundamental focar no binômio: Exame Clínico (especialmente o colo uterino) + Achados Ultrassonográficos. O abortamento é a interrupção da gravidez até a 20ª-22ª semana, com peso fetal inferior a 500g.\n\nAnálise detalhada das alternativas:\n\nAlternativa A (Incorreta): Na Ameaça de Aborto, o sangramento costuma ser de pequena a moderada intensidade e a dor é leve ou ausente. O dado semiológico crucial é que o colo uterino permanece FECHADO (impérvio). Se o colo está pérvio com o feto ainda no útero, a classificação correta seria Abortamento Inevitável.\n\nAlternativa B (Incorreta): O erro está na palavra \"parcial\". No Abortamento Completo, ocorre a expulsão de TODO o conteúdo endouterino. Após o evento, a dor cessa e o sangramento diminui drasticamente. No ultrassom, observa-se o útero vazio ou com eco endometrial fino (geralmente abaixo de 15mm). A eliminação parcial caracteriza o Abortamento Incompleto.\n\nAlternativa C (Incorreta): Esta alternativa inverteu os conceitos. A descrição de \"sangramento vaginal com colo impérvio e vitalidade preservada\" define a Ameaça de Aborto. No Abortamento Inevitável, as modificações cervicais (colo aberto) já ocorreram e/ou houve amniorrexe (ruptura da bolsa), tornando impossível a progressão da gravidez, mesmo que ainda existam batimentos cardíacos.\n\nAlternativa D (Incorreta): A descrição de um \"saco gestacional sem embrião\" (com diâmetro médio de pelo menos 25mm) caracteriza a Gestação Anembrionada, que é uma forma de Aborto Retido. O Abortamento Incompleto, por sua vez, apresenta-se com colo aberto, sangramento importante e restos ovulares visíveis ao ultrassom (eco endometrial espessado e heterogêneo).\n\nAlternativa E (Correta): O Aborto Retido caracteriza-se pela morte embrionária ou fetal sem que o corpo tenha iniciado o processo de expulsão. Clinicamente, a paciente é muitas vezes assintomática, não apresenta sangramento ativo ou dor, e o colo uterino está fechado. O diagnóstico é ultrassonográfico, demonstrando o saco gestacional com embrião sem batimentos cardíacos (CCN > 7mm) ou a gestação anembrionada.\n\nGabarito Oficial: Letra E.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  },
+  {
+    "id": "AJUDA_71e3e788-b768-4205-bfd0-5ef105f8cde3",
+    "originalId": "71e3e788-b768-4205-bfd0-5ef105f8cde3",
+    "statement": "Lactente, sexo masculino, com 9 meses de idade, admitido no pronto-socorro com história de tosse há três dias. A mãe relata que a criança está mais pálida, mais sonolenta e com dificuldade para respirar, a ponto de impedir a ingestão dos alimentos. Ao exame físico, a criança apresenta-se em regular estado geral, com discreta cianose de extremidades, afebril, com sibilância e frequência respiratória de 62 irpm. Há tiragem intercostal e subcostal. Uma radiografia de tórax na posição anteroposterior revela apenas retificação dos arcos costais. Sobre esse quadro clínico, assinale a afirmativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se internar a criança para iniciar oxigenioterapia e antibioticoterapia de amplo espectro devido aos sinais de gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se internar a criança para manutenção de hidratação e oxigenioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deve-se administrar uma dose de corticosteroide por via parenteral e inaloterapia com broncodilatador no pronto-socorro para observar eventual melhora ou resolução do desconforto respiratório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se administrar inalação adrenalina, no pronto atendimento, como teste terapêutico inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve-se considerar essa criança como tendo uma síndrome de pneumonia afebril do lactente, devendo receber prescrição de antibiótico macrolídeo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico: O quadro descreve um lactente de 9 meses com pródromos virais (tosse há três dias) que evoluiu com desconforto respiratório agudo, sibilância, taquipneia (62 irpm), tiragens e sinais de hipoxemia/gravidade (cianose discreta, sonolência e incapacidade de se alimentar). A radiografia com retificação de arcos costais indica hiperinsuflação pulmonar (aprisionamento aéreo). Este é o cenário clássico da Bronquiolite Viral Aguda (BVA).\n\nAlternativa (a) Incorreta: A Bronquiolite Viral Aguda é causada por vírus (principalmente o Vírus Sincicial Respiratório – VSR). Portanto, o uso de antibioticoterapia de amplo espectro não é indicado de forma rotineira, devendo ser reservado apenas para casos com evidência clara de infecção bacteriana secundária associada, o que não é o caso aqui.\n\nAlternativa (b) Correta: O paciente apresenta critérios de gravidade para internação hospitalar: taquipneia importante (FR > 60 irpm), sinais de esforço respiratório (tiragens), cianose (indicando hipoxemia), sonolência (sinal de exaustão ou hipóxia grave) e dificuldade de ingestão alimentar. O tratamento da BVA é essencialmente de suporte: oxigenioterapia para manter a saturação adequada e manutenção da hidratação (frequentemente por via endovenosa ou sonda nasogástrica, já que o desconforto respiratório impede a via oral segura).\n\nAlternativa (c) Incorreta: De acordo com as diretrizes atuais (como as da Academia Americana de Pediatria e da Sociedade Brasileira de Pediatria), o uso de corticosteroides (parenterais ou orais) e de broncodilatadores (como o salbutamol) não é recomendado rotineiramente no primeiro episódio de bronquiolite, pois os estudos mostram que essas medicações não reduzem o tempo de internação nem melhoram o desfecho clínico.\n\nAlternativa (d) Incorreta: Assim como os broncodilatadores beta-2-agonistas, a adrenalina inalatória não é mais recomendada como teste terapêutico de rotina no pronto-atendimento para o manejo inicial da Bronquiolite Viral Aguda, não havendo evidências que sustentem seu uso sistemático.\n\nAlternativa (e) Incorreta: A Síndrome da Pneumonia Afebril do Lactente (causada principalmente pela Chlamydia trachomatis) costuma acometer lactentes mais jovens (geralmente entre a 2ª e a 12ª semana de vida). O quadro clínico típico envolve tosse persistente em acessos (\"staccato\"), conjuntivite prévia e estertores finos à ausculta, diferindo da sibilância e do quadro obstrutivo agudo de vias aéreas inferiores apresentado por este paciente de 9 meses.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  },
+  {
+    "id": "AJUDA_71e5a2d6-dd56-49ba-9695-5e6740d1c4ec",
+    "originalId": "71e5a2d6-dd56-49ba-9695-5e6740d1c4ec",
+    "statement": "Qual o melhor tratamento para ruptura esplênica grau I-II em paciente estável:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia de emergência com esplenectomia total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparotomia eletiva com esplenorrafia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tratamento não operatório com observação e exames seriados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Esplenectomia parcial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Arteriografia com embolização de artéria esplênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Gabarito: Alternativa (c)\n\nAnálise detalhada da questão:\n\nO manejo do trauma abdominal, especialmente de órgãos sólidos como o baço, passou por grandes mudanças nas últimas décadas. Atualmente, o critério principal para decidir a conduta não é apenas a classificação anatômica da lesão (grau da AAST), mas sim a estabilidade hemodinâmica do paciente.\n\nAlternativa (a) Incorreta: A laparotomia de emergência com esplenectomia total está indicada para pacientes com instabilidade hemodinâmica que não respondem às manobras de ressuscitação inicial ou que apresentam sinais claros de peritonite. Em um paciente estável com lesão de baixo grau (I-II), a cirurgia é desnecessária e expõe o indivíduo a riscos operatórios e ao risco futuro de infecções fulminantes pós-esplenectomia.\n\nAlternativa (b) Incorreta: O termo laparotomia eletiva não se aplica ao contexto de trauma agudo. Além disso, a esplenorrafia (sutura do baço) é uma técnica utilizada durante uma cirurgia já indicada por outros motivos. Se o paciente está estável e a lesão é leve, não há indicação de abrir o abdome para realizar suturas.\n\nAlternativa (c) Correta: O Tratamento Não Operatório (TNO) é a conduta de escolha para pacientes hemodinamicamente estáveis com lesões esplênicas de graus I e II e, frequentemente, até graus mais elevados. O sucesso do TNO em lesões de baixo grau é superior a 90%. A conduta consiste em internação em unidade monitorizada, repouso absoluto, exames físicos seriados e controle laboratorial de hemoglobina e hematócrito para detectar sangramentos ocultos.\n\nAlternativa (d) Incorreta: A esplenectomia parcial é um procedimento cirúrgico complexo que visa preservar parte da função imunológica do órgão. Assim como as outras opções cirúrgicas, ela não é indicada como primeira escolha para pacientes estáveis com lesões leves, pois o tratamento conservador (sem corte) oferece melhores resultados com menor morbidade.\n\nAlternativa (e) Incorreta: A arteriografia com embolização é um adjunto ao tratamento não operatório. Ela é geralmente reservada para pacientes estáveis que apresentam o chamado blush arterial na tomografia (sinal de sangramento ativo), pseudoaneurismas ou para lesões de alto grau (IV e V) como forma de aumentar as chances de sucesso do tratamento conservador. Para lesões de graus I e II sem sinais de sangramento ativo, a embolização é um procedimento invasivo desnecessário.\n\nResumo didático:\nDiante de uma questão de trauma esplênico, o primeiro passo é observar a estabilidade hemodinâmica. Se o paciente está estável, a tendência é o tratamento não operatório (observação). Se está instável e não responde à reposição volêmica, o caminho é a cirurgia. Como o enunciado cita paciente estável e lesão de baixo grau, a observação clínica e os exames seriados (Alternativa C) são a resposta correta.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  },
+  {
+    "id": "AJUDA_71e9265b-d59f-431b-b3a6-5b22be9e13bc",
+    "originalId": "71e9265b-d59f-431b-b3a6-5b22be9e13bc",
+    "statement": "Mãe de lactente de cinco meses de idade, em aleitamento materno exclusivo. Está preocupada pois sua licença maternidade vai acabar quando seu bebê estiver com seis meses de idade. Seu filho ficará com a avó. Qual a orientação mais adequada que ela deve receber?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar alimentação complementar aos cinco meses e adicionar fórmula infantil de seguimento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Introduzir fórmula infantil de seguimento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar ordenha e armazenar adequadamente o leite materno;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar alimentação complementar mais tardiamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a manutenção do aleitamento materno diante do desafio do retorno da mãe ao trabalho. Segundo a Organização Mundial da Saúde (OMS), o Ministério da Saúde e a Sociedade Brasileira de Pediatria (SBP), a recomendação é o aleitamento materno exclusivo até os seis meses de idade e complementado até os dois anos ou mais. No caso descrito, o lactente tem cinco meses e a mãe voltará a trabalhar em um mês, coincidindo com a época recomendada para o início da alimentação complementar.\n\nAnálise das alternativas:\n\na) Incorreta. A alimentação complementar não deve ser antecipada para os cinco meses sem indicação médica específica. Além disso, a fórmula de seguimento não é necessária se a mãe puder prover seu próprio leite. O aleitamento exclusivo deve ser buscado até o sexto mês completo.\n\nb) Incorreta. A introdução de fórmula infantil de seguimento sem necessidade clínica promove o desmame precoce e priva o lactente dos benefícios imunológicos e nutricionais do leite materno. A prioridade deve ser sempre a oferta do leite da própria mãe.\n\nc) Correta. Esta é a orientação mais adequada e preconizada pelas políticas de saúde pública. Ao iniciar a ordenha (seja manual ou mecânica) e aprender o armazenamento correto do leite (até 12 horas em geladeira e até 15 dias em congelador/freezer, seguindo as normas brasileiras), a mãe garante que o cuidador (a avó) possa oferecer o leite materno na sua ausência. Isso permite a manutenção do aleitamento materno exclusivo até os seis meses e sua continuidade após o início da alimentação complementar.\n\nd) Incorreta. A alimentação complementar não deve ser iniciada tardiamente (após os seis meses), pois, a partir dessa idade, as necessidades nutricionais de micronutrientes, como ferro e zinco, aumentam, e o leite materno isoladamente deixa de suprir todas as demandas do lactente, embora continue sendo uma fonte fundamental de calorias e proteção imunológica.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  },
+  {
+    "id": "AJUDA_71ea539c-8fad-4409-8c8d-668920b83904",
+    "originalId": "71ea539c-8fad-4409-8c8d-668920b83904",
+    "statement": "Escolar, 6 anos, há 2 dias com dor abdominal difusa, há 1 dia com náuseas e vômitos e há 12h com febre e piora da dor, associadas à diarreia aguda, sem restos patológicos. Após ultrassonografia (US) abdominal, é encaminhado para apendicectomia de urgência. No transoperatório, evidencia-se secreção purulenta em cavidade abdominal. Considerando a situação clínica apresentada, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A clínica é mais sugestiva de diarreia viral com adenite mesentérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A US abdominal é o exame de escolha para diagnosticar apendicite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de um caso de apendicite aguda complicada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O início dos sintomas com dor abdominal é uma manifestação infrequente na apendicite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um quadro clássico de apendicite aguda em um paciente pediátrico que evoluiu para uma forma avançada da doença. Vamos analisar cada alternativa para entender por que a letra (c) é a correta:\n\nAlternativa (a) Incorreta: Embora a adenite mesentérica seja um dos principais diagnósticos diferenciais da apendicite em crianças e possa cursar com dor abdominal e febre após quadros virais, o achado intraoperatório de secreção purulenta na cavidade abdominal confirma o diagnóstico de apendicite aguda com perfuração (peritonite). A diarreia, mencionada no caso, pode ocorrer na apendicite devido à irritação do reto ou do sigmoide pelo processo inflamatório/infeccioso pélvico.\n\nAlternativa (b) Incorreta: Embora a ultrassonografia abdominal seja frequentemente o primeiro exame de imagem solicitado em crianças para evitar a radiação ionizante (seguindo o princípio de ALARA), ela é um exame examinador-dependente e pode apresentar limitações. Em muitos protocolos, a tomografia computadorizada é considerada o padrão-ouro devido à sua maior sensibilidade e especificidade, especialmente em casos complicados. No entanto, o ponto principal é que o diagnóstico definitivo e a classificação da gravidade neste caso foram dados pelo achado cirúrgico.\n\nAlternativa (c) Correta: A apendicite aguda é classificada como complicada quando há presença de perfuração, gangrena, abscesso ou peritonite purulenta/fecal. O relato de secreção purulenta na cavidade abdominal durante o transoperatório caracteriza indiscutivelmente uma apendicite complicada (estágios III ou IV de Miller ou classificação de Knight). Em crianças, a progressão para a perfuração costuma ser mais rápida do que em adultos devido ao omento menor e menos desenvolvido, que tem dificuldade em bloquear o processo inflamatório.\n\nAlternativa (d) Incorreta: O início dos sintomas com dor abdominal é, na verdade, a manifestação mais comum e frequente da apendicite aguda. A sequência clássica de Murphy (dor periumbilical que migra para a fossa ilíaca direita, seguida de náuseas/vômitos e febre) é observada em grande parte dos casos, embora em crianças menores a apresentação possa ser mais vaga e atípica.\n\nEm resumo, o achado cirúrgico de pus na cavidade define o quadro como uma forma complicada da doença, validando a alternativa (c).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  },
+  {
+    "id": "AJUDA_71f01654-cf63-43d3-9354-5f9b32893fda",
+    "originalId": "71f01654-cf63-43d3-9354-5f9b32893fda",
+    "statement": "Mulher de 44 anos, multípara, procura atendimento por aumento progressivo do fluxo menstrual há dois anos, associado à dismenorreia intensa e dor pélvica crônica. Ao exame ginecológico, o útero encontra-se aumentado difusamente, globoso e doloroso à mobilização. \nConsiderando a principal hipótese diagnóstica, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A doença em questão é mais frequente em adolescentes nuligestas e caracteriza-se predominantemente por amenorreia secundária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O quadro clínico típico inclui menorragia, dismenorreia progressiva e aumento uterino difuso, sendo mais comum em mulheres na quarta e quintas décadas de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A doença ocorre principalmente após a menopausa e raramente está associada a sangramento uterino anormal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A principal manifestação clínica é infertilidade isolada, na ausência de sintomas menstruais ou dor pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A situação em questão acomete preferencialmente mulheres jovens e apresenta útero de tamanho normal e superfície regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para responder a esta questão, primeiro precisamos identificar a hipótese diagnóstica baseada no quadro clínico. A paciente apresenta a tríade clássica de aumento do fluxo menstrual (menorragia), dismenorreia secundária (progressiva) e útero aumentado de volume, de forma difusa e globosa. Essas características são patognomônicas da Adenomiose, que consiste na presença de glândulas e estroma endometrial no interior do miométrio.\n\nIMPORTANTE: O gabarito fornecido no enunciado (letra A) está INCORRETO do ponto de vista médico. A alternativa correta para esta questão é a letra (b). Abaixo, analiso cada alternativa:\n\nAlternativa a) Incorreta. A adenomiose é rara em adolescentes e nuligestas. Ela é classicamente uma doença de mulheres multíparas e o sintoma principal é o aumento do fluxo menstrual, e não a amenorreia (ausência de menstruação).\n\nAlternativa b) CORRETA. Esta alternativa descreve perfeitamente a adenomiose. O quadro típico envolve menorragia e dismenorreia progressiva. A doença acomete preferencialmente mulheres entre 40 e 50 anos (quarta e quinta décadas), frequentemente multíparas, e o sinal físico mais característico é o útero globoso com volume que raramente ultrapassa 2 a 3 vezes o tamanho normal.\n\nAlternativa c) Incorreta. A adenomiose é uma doença dependente de estrogênio. Portanto, ela regride ou torna-se assintomática após a menopausa. Além disso, o sangramento uterino anormal é um dos seus pilares diagnósticos.\n\nAlternativa d) Incorreta. Embora a adenomiose possa estar associada à infertilidade, ela raramente se manifesta de forma isolada. A dor pélvica e as alterações menstruais são os sintomas cardinais que levam a paciente ao consultório.\n\nAlternativa e) Incorreta. Mulheres jovens são mais associadas à endometriose externa. Na adenomiose, o útero tipicamente NÃO tem tamanho normal; ele apresenta-se aumentado e com consistência mais amolecida ou elástica.\n\nConclusão do Professor: Houve um erro no gabarito indicado. A descrição clínica de \"útero globoso, doloroso e aumento do fluxo em mulher de 44 anos\" aponta diretamente para a alternativa B. Se este gabarito (A) foi o oficial de algum concurso, caberia recurso para inversão ou anulação.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Adenomiose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  },
+  {
+    "id": "AJUDA_71fa9d57-9b82-4275-9c66-f29d3294d587",
+    "originalId": "71fa9d57-9b82-4275-9c66-f29d3294d587",
+    "statement": "Leia o caso clínico a seguir.\n\nPaciente do sexo feminino, 25 anos, com diagnóstico prévio de lúpus eritematoso sistêmico (LES) há 3 anos, FAN 1/640 nuclear homogêneo e anti-dsDNA positivo. Foi trazida ao serviço de emergência após surgimento de cefaleia intensa, vômitos, perda de força em dimidio direito e disartria há 72 horas. A tomografia computadorizada (TC) de crânio evidenciou área de hipodensidade frontoparietal à esquerda aguda/subaguda, sem sinais de sangramento e desvio da linha média. Paciente negava o uso de drogas ilícitas. O antecedente obstétrico é marcado por três abortos prévios, um na 5ª e dois na 8ª semana gestacional.\n\nA avaliação laboratorial para diagnóstico e o tratamento de síndrome do antifosfolípede (SAF) consistem em",
+    "options": [
+      {
+        "id": "A",
+        "text": "C3, C4, função renal e hidroxicloroquina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "c-ANCA e p-ANCA e pulsoterapia com metilprednisolona e ciclofosfamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "anticoagulante lúpico, anticardiolipina IgM/IgG e anti beta2 glicoproteína1 IgM/IgG e anticoagulação com antiagregação plaquetária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "coombs direto e anti-Sm e micofenolato de mofetila.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma paciente jovem com Lúpus Eritematoso Sistêmico (LES) que apresenta um quadro de Acidente Vascular Cerebral Isquêmico (AVCI) agudo/subagudo (hipodensidade na TC de crânio e déficit focal), associado a um histórico de morbidade gestacional (três abortos precoces). Essa associação entre fenômenos trombóticos (arteriais ou venosos) e/ou complicações obstétricas na presença de anticorpos específicos define a Síndrome Antifosfolípide (SAF). No contexto do LES, a SAF é dita secundária.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A dosagem de complementos (C3 e C4) e a avaliação da função renal são fundamentais para monitorar a atividade inflamatória e o acometimento visceral do Lúpus Eritematoso Sistêmico (como na nefrite lúpica), mas não são exames diagnósticos para a SAF. A hidroxicloroquina é um pilar no tratamento do LES e pode ajudar a prevenir eventos trombóticos, mas não é o tratamento agudo ou de escolha para a trombose estabelecida na SAF.\n\nAlternativa B: Incorreta. Os anticorpos c-ANCA e p-ANCA são marcadores utilizados na investigação de vasculites sistêmicas (como a granulomatose com poliangiite e a poliangiite microscópica). A pulsoterapia com metilprednisolona e o uso de ciclofosfamida são reservados para manifestações graves de atividade inflamatória do lúpus (como as neuropsiquiátricas ou renais), e não para o tratamento de eventos puramente trombóticos da SAF.\n\nAlternativa C: Correta. O diagnóstico laboratorial da SAF baseia-se na presença de pelo menos um dos três anticorpos antifosfolípides, testados com intervalo de 12 semanas: anticoagulante lúpico, anticardiolipina (IgG ou IgM em títulos moderados a altos) e anti-beta2-glicoproteína 1 (IgG ou IgM). O tratamento de um evento trombótico arterial (como o AVC desta paciente) na SAF exige a anticoagulação plena (geralmente com varfarina, mantendo RNI entre 2,0 e 3,0 ou > 3,0 em casos selecionados). A associação com antiagregantes plaquetários, como a aspirina, é frequentemente utilizada em eventos arteriais para reduzir o risco de recorrência.\n\nAlternativa D: Incorreta. O teste de Coombs direto (usado para anemia hemolítica autoimune) e o anticorpo anti-Sm são critérios diagnósticos e marcadores de atividade/especificidade para o Lúpus Eritematoso Sistêmico. O micofenolato de mofetila é um imunossupressor utilizado principalmente na nefrite lúpica, não possuindo papel no tratamento da trombose da SAF.\n\nGabarito: Alternativa (c).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:11.854Z"
+  }
+]

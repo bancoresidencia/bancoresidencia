@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_6765de40-4bfb-4081-b17f-b932d3de2873",
+    "originalId": "6765de40-4bfb-4081-b17f-b932d3de2873",
+    "statement": "Com relação aos quadros de encefalopatia hepática, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o uso de lactulona é considerado o padrão-ouro no seu tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o uso de flumazenil, em caso inicial, tem grande impacto na sobrevida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "para o controle da agitação motora, recomenda-se o uso de benzodiazepínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "neomicina ou metronidazol administrados isoladamente são indicados para aqueles pacientes com classe I de West-Haven.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a ingestão de proteína deve ser limitada a 1 g/kg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Encefalopatia Hepática (EH) é uma síndrome neuropsiquiátrica complexa decorrente da insuficiência hepática e/ou do desvio de sangue do sistema porta para a circulação sistêmica. A base do seu tratamento é a redução dos níveis de amônia no sangue.\n\nA alternativa (a) está correta. A lactulona (lactulose) é um dissacarídeo não absorvível considerado o tratamento de primeira linha e o padrão-ouro para a encefalopatia hepática. Ela atua por meio de dois mecanismos principais: acidificação do conteúdo colônico (convertendo a amônia - NH3 - em amônio - NH4+, que não é absorvido) e efeito laxante osmótico, o que reduz o tempo de contato das bactérias produtoras de amônia com o lúmen intestinal.\n\nA alternativa (b) está incorreta. O flumazenil é um antagonista dos receptores de benzodiazepínicos. Embora possa promover uma melhora transitória do estado de consciência em alguns pacientes com EH, ele não demonstrou impacto na sobrevida a longo prazo e não é recomendado para uso rotineiro, exceto em casos de suspeita de intoxicação por benzodiazepínicos associada.\n\nA alternativa (c) está incorreta. O uso de benzodiazepínicos deve ser evitado em pacientes com encefalopatia hepática ou cirrose avançada, pois esses medicamentos podem piorar a depressão do sistema nervoso central, precipitar o coma e dificultar a avaliação neurológica. O controle da agitação deve ser feito tratando-se a causa-base da descompensação.\n\nA alternativa (d) está incorreta. A neomicina e o metronidazol são antibióticos que podem ser usados para reduzir a flora bacteriana produtora de amônia, mas não são a primeira escolha para o Grau I de West Haven (quadro leve). Atualmente, a rifaximina é o antibiótico de escolha quando a lactulona sozinha não é suficiente. Além disso, a neomicina e o metronidazol possuem efeitos colaterais significativos (ototoxicidade, nefrotoxicidade e neurotoxicidade) que limitam seu uso.\n\nA alternativa (e) está incorreta. A restrição proteica é uma conduta obsoleta e prejudicial. Pacientes com cirrose frequentemente apresentam desnutrição e sarcopenia (perda de massa muscular), o que piora o prognóstico. As diretrizes atuais recomendam uma dieta normoproteica a hiperproteica, com ingestão de 1,2 a 1,5 g/kg/dia de proteína, para evitar o catabolismo muscular e a consequente produção endógena de amônia.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:07.450Z"
+  },
+  {
+    "id": "AJUDA_676b8737-6a7d-4b87-adca-ff4a1fbcf29d",
+    "originalId": "676b8737-6a7d-4b87-adca-ff4a1fbcf29d",
+    "statement": "Mulher, 24 anos de idade, com queixa de prurido e dor vaginais e secreção abundante com aspecto grumoso branco-amarelado. Ao exame clínico, observa-se o conteúdo vaginal aumentado com aspecto em grumos aderente às paredes vaginais. O exame do material apresenta: pH de 4; bacterioscopia (Gram) com aumento excessivo de Lactobacillus sp.; raros leucócitos; restos celulares (lise das células epiteliais). Não são identificados hifas ou esporos. Qual é o tratamento vaginal mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ácido acético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Clotrimazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Probiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Bicarbonato de sódio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão apresenta um caso clínico clássico de vaginose citolítica. A paciente apresenta sintomas que mimetizam uma candidíase (prurido, dor e secreção esbranquiçada em grumos), porém os achados laboratoriais direcionam para outro diagnóstico. Os pontos-chave para o diagnóstico são: pH vaginal ácido (4,0), aumento excessivo de Lactobacillus sp., presença de restos celulares (lise celular) e ausência de fungos (hifas ou esporos). Na vaginose citolítica, o supercrescimento de lactobacilos leva a uma produção excessiva de ácido lático, o que reduz o pH e provoca a destruição (citólise) das células epiteliais da vagina, gerando a sintomatologia.\n\nAnálise das alternativas:\n\na) Ácido acético: Incorreta. O ácido acético é um agente acidificante. Como a fisiopatologia da vaginose citolítica é justamente o excesso de acidez e o pH muito baixo, o uso de substâncias ácidas agravaria o quadro e a irritação da mucosa.\n\nb) Clotrimazol: Incorreta. O clotrimazol é um antifúngico indicado para o tratamento de candidíase vulvovaginal. Embora os sintomas clínicos sejam parecidos, a microscopia descartou a presença de fungos, tornando o uso de antifúngicos ineficaz neste caso.\n\nc) Probiótico: Incorreta. A maioria dos probióticos vaginais contém cepas de Lactobacillus. Como a paciente já apresenta um aumento excessivo e patológico desses microrganismos, a administração de mais lactobacilos pioraria a produção de ácido lático e a citólise epitelial.\n\nd) Bicarbonato de sódio: Correta. O tratamento da vaginose citolítica visa elevar o pH vaginal para neutralizar a acidez excessiva e reduzir a população de lactobacilos, interrompendo o processo de lise celular. O bicarbonato de sódio, por ser uma substância alcalina, é a escolha terapêutica ideal, geralmente utilizado em banhos de assento ou duchas vaginais diluídas.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:07.450Z"
+  },
+  {
+    "id": "AJUDA_676f4f2d-25ac-4e1c-a5a3-841fa5806156",
+    "originalId": "676f4f2d-25ac-4e1c-a5a3-841fa5806156",
+    "statement": "Paciente feminina, de 55 anos, solteira e sem filhos, que trabalha como secretária com jornada de 6 horas diárias, veio à consulta para avaliação clínica e exames. A última avaliação médica fora há 10 anos. Não tinha queixas de saúde; seu peso era o mesmo há vários anos. Relatou sentir-se bem, fazer exercícios físicos 3 vezes/semana, não beber e não fumar. Mantinha vida sexual ativa. A menopausa ocorrera aos 51 anos, com poucos sintomas e sem reposição hormonal. O pai, de 81 anos, tinha diabetes melito tipo 2 e hipertensão arterial; a mãe, de 78 anos, teve câncer de cólon aos 70 anos, fez cirurgia e encontrava-se bem. Ao exame físico, o IMC era de 24,5 kg/m2, e a pressão arterial, de 120/70 mmHg; demais aspectos do exame estavam normais. Assinale a alternativa que contempla apenas testes de rastreamento com recomendação GRADE A no contexto da paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Densitometria óssea - mamografia - teste para sífilis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colonoscopia - teste para sífilis - exame citopatológico cervical",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ultrassonografia abdominal - mamografia - colonoscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pesquisa de HIV - dosagem de perfil lipídico - densitometria óssea",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos considerar as recomendações de rastreamento da United States Preventive Services Task Force (USPSTF), que é a principal referência para as recomendações de força de evidência (GRADE). O objetivo é identificar quais exames possuem recomendação Grau A (alta certeza de que o benefício líquido é substancial) para uma mulher de 55 anos, sexualmente ativa e assintomática.\n\nAnálise das alternativas:\n\na) Incorreta. A densitometria óssea para mulheres na pós-menopausa com menos de 65 anos é classificada como recomendação Grau B, e isso apenas se houver aumento do risco avaliado por ferramentas de risco clínico. Para mulheres com 65 anos ou mais, também é Grau B. A mamografia para mulheres de 50 a 74 anos é classificada como Grau B (benefício moderado). O teste para sífilis é Grau A para pessoas com vida sexual ativa e risco aumentado.\n\nb) Correta. Todos os itens possuem recomendação Grau A.\n- Colonoscopia: O rastreamento de câncer colorretal é Grau A para adultos de 45 a 75 anos. A história familiar da paciente (mãe com câncer aos 70 anos) reforça a indicação, mas o rastreamento populacional nesta faixa etária já possui o nível máximo de evidência.\n- Teste para sífilis: Recomendação Grau A para adolescentes e adultos com vida sexual ativa que apresentam risco aumentado de infecção. Como a paciente mantém vida sexual ativa e não realiza exames há 10 anos, ela se enquadra nos critérios de rastreamento.\n- Exame citopatológico cervical: O rastreamento de câncer de colo de útero é Grau A para mulheres de 21 a 65 anos (realizado a cada 3 anos com citologia isolada ou a cada 5 anos com teste de HPV/cotestagem para mulheres acima de 30 anos).\n\nc) Incorreta. A ultrassonografia abdominal para rastreamento de aneurisma de aorta abdominal não é recomendada para mulheres que nunca fumaram (Grau D - contraindicado ou sem evidência de benefício). A mamografia é Grau B. A colonoscopia é Grau A.\n\nd) Incorreta. A pesquisa de HIV é Grau A para todos os indivíduos de 15 a 65 anos. No entanto, a dosagem de perfil lipídico (para fins de decisão de início de estatinas) e a densitometria óssea são classificadas como Grau B na prevenção primária para esta faixa etária e perfil clínico.\n\nResumo dos Graus de Recomendação para esta paciente (55 anos):\n- Câncer de colo de útero (Papanicolau): Grau A.\n- Câncer colorretal (Colonoscopia/outros): Grau A.\n- HIV e Sífilis (se risco aumentado): Grau A.\n- Hipertensão Arterial (Aferição de PA): Grau A.\n- Câncer de Mama (Mamografia): Grau B.\n- Osteoporose (Densitometria): Grau B.\n- Dislipidemia (Perfil lipídico): Grau B.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:07.450Z"
+  },
+  {
+    "id": "AJUDA_676f9a6d-abc5-44fb-bdc4-36767b1dd8c3",
+    "originalId": "676f9a6d-abc5-44fb-bdc4-36767b1dd8c3",
+    "statement": "Paciente de 45 anos de idade do sexo masculino procurou atendimento médico na Unidade de Pronto Atendimento devido ao surgimento de dispneia aos grandes esforços associada a palpitações há 8 semanas, além de astenia progressiva. Negou febre, dispneia paroxística noturna, edemas, precordialgia, tosse, cianose, sibilos, dor torácica ou hemoptise. Informou que estava vivendo em situação de rua há 1 ano, período em que passou a ter alimentação muito precária, com consequente perda ponderal de 8 Kg. Negou histórico de comorbidades, tabagismo, uso de drogas ilícitas ou etilismo. Ao exame, apresentava-se emagrecido, lúcido e orientado, com mucosas pálidas, anictérico, acianótico e sem adenomegalias. Sem anormalidades no exame cardiovascular, pulmonar, abdominal e neurológico. O hemograma do paciente mostrou hemoglobina de 8,4 g/dL, VCM 112 fL, leucócitos 3.000/mL e plaquetas 115.000/mL. No esfregaço sanguíneo identificou-se a presença de hemácias macrocíticas e neutrófilos hipersegmentados.\n\nConsiderando o caso acima, assinale a alternativa que apresenta a deficiência vitamínica mais provável responsável pela pancitopenia observada no paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vitamina B1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vitamina B2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vitamina B3",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vitamina B9",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Vitamina B12",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO paciente apresenta uma síndrome anêmica (astenia, dispneia e palidez) associada a achados laboratoriais de anemia macrocítica (VCM 112 fL) e pancitopenia (redução de hemácias, leucócitos e plaquetas). O dado crucial no esfregaço de sangue periférico é a presença de neutrófilos hipersegmentados, que é o marcador clássico das anemias megaloblásticas. Essas anemias ocorrem devido a uma falha na síntese de DNA durante a hematopoiese.\n\nAs duas causas principais de anemia megaloblástica são as deficiências de Vitamina B9 (Ácido Fólico) e Vitamina B12 (Cobalamina). A distinção entre elas neste caso clínico baseia-se em dois pontos fundamentais:\n1. Tempo de reserva: O organismo possui reservas de folato (B9) para apenas 3 a 4 meses, enquanto as reservas de B12 são extensas e duram de 3 a 5 anos. O paciente está em situação de rua e com dieta precária há 1 ano, tempo suficiente para exaurir os estoques de B9, mas geralmente insuficiente para esgotar os de B12.\n2. Sintomas neurológicos: A deficiência de B12 frequentemente causa neuropatia e degeneração da medula espinhal, enquanto a deficiência de folato não apresenta sintomas neurológicos. O exame físico do paciente foi explicitamente descrito como normal na parte neurológica.\n\nAnálise das alternativas:\n\na) Vitamina B1: Incorreta. A deficiência de tiamina causa o beribéri (seco ou úmido) e a encefalopatia de Wernicke, afetando principalmente os sistemas cardiovascular e nervoso, sem causar pancitopenia ou macrocitose.\n\nb) Vitamina B2: Incorreta. A deficiência de riboflavina causa ariboflavinose, caracterizada por lesões em mucosas, como queilite angular, glossite e dermatite seborreica, sem relação com o quadro hematológico descrito.\n\nc) Vitamina B3: Incorreta. A deficiência de niacina causa a pelagra, manifestada pelos três Ds: dermatite, diarreia e demência. Não é causa de anemia megaloblástica.\n\nd) Vitamina B9: Correta. O ácido fólico é encontrado em vegetais verdes e carnes. A situação de rua com alimentação precária por um ano é o cenário ideal para essa deficiência. A deficiência de B9 justifica perfeitamente a pancitopenia, a macrocitose e a hipersegmentação de neutrófilos na ausência de sintomas neurológicos.\n\ne) Vitamina B12: Incorreta. Embora a deficiência de B12 também cause pancitopenia e neutrófilos hipersegmentados, o curto período de desnutrição (1 ano) e a ausência de alterações neurológicas tornam a deficiência de folato (B9) a hipótese muito mais provável e correta para a questão.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:07.450Z"
+  },
+  {
+    "id": "AJUDA_677561f0-65c2-4b08-a2a6-bb6fece371a0",
+    "originalId": "677561f0-65c2-4b08-a2a6-bb6fece371a0",
+    "statement": "Mulher de 45 anos está sendo submetida à colecistectomia laparoscópica. A equipe cirúrgica encontra dificuldade para a definição da anatomia da via biliar. Os exames pré-operatórios evidenciam enzimas hepáticas alteradas e colédoco discretamente dilatado. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Converter para cirurgia aberta devido à suspeita elevada de coledocolitíase e necessidade de exploração da via biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar colangiografia endoscópica retrógrada (CPRE) ainda no intraoperatório para auxílio na definição da anatomia da via biliar e confirmação de coledocolitíase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Proceder com interrupção do procedimento e reabordagem por equipe especializada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar colangiografia intraoperatória devido ao alto risco de coledocolitíase associada com CPRE se presença de cálculos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Manter acesso laparoscópico, evitando colangiografia intraoperatória pelo risco de aumento da pressão da árvore biliar e evolução para colangite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Resumo do caso: paciente em colecistectomia laparoscópica, com anatomia da via biliar difícil de definir (risco de lesão de via biliar), enzimas hepáticas alteradas (provável padrão colestático) e colédoco discretamente dilatado. Isso indica risco intermediário/alto de coledocolitíase. A colangiografia intraoperatória (CIO) cumpre duas funções: delimitar a anatomia (mapa biliar) e diagnosticar cálculos no colédoco.\n\nConceitos-chave:\n- A CIO está indicada quando a anatomia é duvidosa, quando há suspeita de coledocolitíase (alteração de enzimas, colédoco dilatado) e na suspeita de lesão de via biliar.\n- Se a CIO confirmar cálculos, o tratamento pode ser feito por exploração laparoscópica da via biliar (transcística ou coledocotomia) ou por CPRE pós-operatória com esfincterotomia, conforme a disponibilidade e a experiência da equipe.\n- A estratégia de \"visão crítica de segurança\" e o uso de CIO reduzem lesões biliares. Se a dissecção continuar insegura, existem as opções de colecistectomia subtotal ou de pedir ajuda a outro cirurgião, mas isso não substitui o esclarecimento da anatomia quando ele é possível.\n\nAnálise das alternativas:\n\na) Incorreta. A conversão para cirurgia aberta não é a primeira medida. A dificuldade anatômica e a suspeita de coledocolitíase podem ser esclarecidas por CIO. A conversão é reservada para quando a CIO e a dissecção segura não são possíveis, ou para exploração que não possa ser feita por via laparoscópica.\n\nb) Incorreta. A CPRE intraoperatória não é o método para definir a anatomia nesse momento. É logisticamente complexa e invasiva, e traz risco de pancreatite e perfuração. Quando necessária, é feita no pós-operatório, ou excepcionalmente por abordagem combinada (rendez-vous) em serviços especializados. Além disso, a CPRE não resolve a dúvida anatômica do campo cirúrgico.\n\nc) Incorreta. Interromper e reabordar com outra equipe não é a conduta inicial. Primeiro deve-se tentar esclarecer a anatomia com a CIO. Só se persistir a dificuldade, ou se houver lesão, justifica-se pedir ajuda ou transferir o caso.\n\nd) Correta. A CIO esclarece a anatomia, detecta lesões e confirma ou afasta coledocolitíase. Se houver cálculos, o manejo é definido em seguida: exploração laparoscópica ou CPRE posterior. É a conduta mais adequada diante de anatomia duvidosa e alto risco de cálculo na via biliar.\n\ne) Incorreta. A CIO não é contraindicada por risco de colangite, pois a injeção de contraste cuidadosa, sem bolhas e com baixa pressão, é segura. Evitar o exame deixaria a anatomia indefinida e a coledocolitíase sem diagnóstico, aumentando o risco de lesão de via biliar.\n\nGabarito: letra d.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:07.450Z"
+  },
+  {
+    "id": "AJUDA_67874f7b-e1c3-4a59-9720-628df62f375e",
+    "originalId": "67874f7b-e1c3-4a59-9720-628df62f375e",
+    "statement": "Mulher de 18 anos chega a um posto de saúde buscando uma consulta, alegando algo estranho na barriga. Informa que não dormiu nada durante a noite, pois teve tiros onde mora, e que está se sentindo cansada. Acrescenta que, nos últimos meses, sente-se estranha, demonstra estar ansiosa, refere muito enjoo e vômito e que largou a escola este ano. Durante a consulta, é constatado um aumento de volume abdominal. Os atributos da APS identificados nesse caso são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "universalidade e coordenação do cuidado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "territorialização e descentralização",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "controle social e longitudinalidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "acessibilidade e integralidade",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda os atributos da Atenção Primária à Saúde (APS), com base nos conceitos clássicos de Barbara Starfield, aplicados a um caso clínico que exige uma visão biopsicossocial do paciente.\n\nAnálise das alternativas:\n\na) Incorreta. A Universalidade é um princípio doutrinário do SUS, garantindo que todos tenham direito ao acesso, mas não é classificada tecnicamente como um dos atributos específicos da APS (embora correlacionada ao acesso). A Coordenação do cuidado pressupõe a capacidade da equipe de organizar o fluxo do paciente entre diferentes níveis de atenção ou dentro da própria rede, o que não é o foco principal da descrição deste atendimento inicial.\n\nb) Incorreta. Territorialização e Descentralização são diretrizes organizativas do SUS e da Estratégia Saúde da Família. A territorialização refere-se à delimitação geográfica de atuação da equipe, e a descentralização foca na redistribuição de responsabilidades de gestão. Embora fundamentais, não descrevem a dinâmica de escuta e acolhimento apresentada no caso.\n\nc) Incorreta. O Controle Social refere-se à participação da comunidade na gestão do SUS por meio de conselhos e conferências. A Longitudinalidade implica o acompanhamento do paciente ao longo do tempo por uma mesma equipe, criando um vínculo de confiança. Embora desejável no futuro, o caso descreve um momento específico de busca por cuidado em que o vínculo ainda não é o elemento central em evidência.\n\nd) Correta. A Acessibilidade (ou Acesso de Primeiro Contato) é identificada pelo fato de a paciente conseguir buscar e obter atendimento no posto de saúde diante de uma demanda nova. A Integralidade é o atributo mais evidente no texto: o profissional não se limitou ao sintoma físico (aumento do volume abdominal), mas considerou o contexto social (tiros na vizinhança), emocional (ansiedade e cansaço) e educacional (abandono escolar). Abordar o indivíduo em todas as suas dimensões — biológica, psicológica e social — é a essência da integralidade na APS.\n\nA alternativa (d) é a que melhor sintetiza a capacidade da unidade de receber a paciente (acesso) e de enxergar além da queixa principal, compreendendo a complexidade de sua situação de vida (integralidade).",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:07.450Z"
+  },
+  {
+    "id": "AJUDA_6792bad7-b0c6-4917-bc8c-124ddb4a017a",
+    "originalId": "6792bad7-b0c6-4917-bc8c-124ddb4a017a",
+    "statement": "O início da puberdade é regulado por uma complexa rede neuroendócrina. Assinale a alternativa correta sobre os mecanismos centrais de reativação do eixo hipotálamo-hipófise-gônada (HHG).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os níveis de LH durante o sono diminuem drasticamente no início da puberdade devido ao aumento da sensibilidade hipotalâmica ao feedback negativo dos esteroides sexuais, revertendo o padrão observado na pré-puberdade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A adrenarca (aumento dos andrógenos adrenais) é o evento gatilho obrigatório para a ativação do eixo gonadal (gonadarca), não havendo puberdade verdadeira sem a maturação prévia da zona reticular do córtex adrenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A inibina B é o fator primário responsável pelo início da puberdade, sendo secretada pelas células de Sertoli e pelas células da granulosa antes de qualquer alteração nas gonadotrofinas hipofisárias — hormônio luteinizante (LH) e hormônio folículo-estimulante (FSH), induzindo a maturação gonadal de forma independente do hormônio liberador de gonadotrofinas (GnRH).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A kisspeptina, secretada por neurônios no núcleo arqueado do hipotálamo, é o principal estimulador da secreção pulsátil do hormônio liberador de gonadotrofinas (GnRH), atuando por meio do receptor acoplado à proteína G 54 (G protein−coupled receptor 54 − GPR54); esse sistema é ativado pelo aumento da leptina e inibido em estados de balanço energético negativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. Na verdade, ocorre o oposto. O marco inicial da puberdade é o aumento da secreção pulsátil de LH especificamente durante o sono. Além disso, a sensibilidade hipotalâmica ao feedback negativo dos esteroides sexuais diminui (fenômeno conhecido como queda do tônus do gonadostato), permitindo que o eixo hipotálamo-hipófise-gônada se torne mais ativo, e não o contrário.\n\nAlternativa b: Incorreta. A adrenarca (maturação da zona reticular da adrenal com aumento de andrógenos como DHEA e DHEAS) e a gonadarca (reativação do eixo hipotálamo-hipófise-gônada) são eventos biológicos distintos e independentes. É possível ocorrer gonadarca sem adrenarca prévia e vice-versa, como observado em casos de insuficiência adrenal ou telarca precoce isolada.\n\nAlternativa c: Incorreta. A inibina B é um marcador da função gonadal (células de Sertoli no homem e da granulosa na mulher) e exerce feedback negativo sobre o FSH. Ela não é o fator primário que desencadeia a puberdade nem atua de forma independente do GnRH. O gatilho da puberdade é central (hipotalâmico), e as alterações nas gônadas são secundárias ao estímulo das gonadotrofinas (LH e FSH).\n\nAlternativa d: Correta. A kisspeptina, codificada pelo gene KISS1, é atualmente considerada o principal neurotransmissor regulador do início da puberdade. Ela atua diretamente nos neurônios produtores de GnRH através do receptor GPR54 (KISS1R), estimulando a secreção pulsátil necessária para a ativação do eixo. O sistema das kisspeptinas integra sinais metabólicos: a leptina (produzida no tecido adiposo) estimula a expressão de kisspeptina, explicando por que um estado nutricional adequado é necessário para a puberdade, enquanto o balanço energético negativo (desnutrição ou exercício extenuante) inibe esse sistema, podendo atrasar ou interromper o desenvolvimento puberal.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:07.450Z"
+  },
+  {
+    "id": "AJUDA_67a61be1-17f6-4c3f-8206-5c3e79892135",
+    "originalId": "67a61be1-17f6-4c3f-8206-5c3e79892135",
+    "statement": "Considerando o Método Clínico Centrado na Pessoa (MCCP) ilustrado na Figura, responda: \n\nQual de seus componentes está aqui representado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entendendo a pessoa como um todo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Intensificando a relação entre a pessoa e o médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Explorando a saúde, a doença e a experiência da pessoa com a doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Elaborando um plano conjunto de manejo de problemas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Método Clínico Centrado na Pessoa (MCCP) é estruturado em quatro componentes fundamentais. A imagem apresentada correlaciona o indivíduo e suas dimensões subjetivas às diferentes camadas do seu contexto de vida (contexto próximo, amplo e macro), representando uma abordagem ecossistêmica e biopsicossocial.\n\nAlternativa a: Correta. O segundo componente do MCCP, \"Entendendo a pessoa como um todo\", propõe integrar a história de vida da pessoa aos seus múltiplos contextos e ao seu ciclo vital. A figura ilustra com precisão essa integração sistêmica: à esquerda, o indivíduo com sua vivência pessoal (sentimentos, ideias, funcionamento e expectativas) conecta-se, à direita, aos níveis contextuais contextual próximo (família e rede de apoio imediata), contextual amplo (comunidade, trabalho, lazer) e contextual macro (fatores socioeconômicos, culturais e ambientais).\n\nAlternativa b: Incorreta. O componente \"Intensificando a relação entre a pessoa e o médico\" é o quarto pilar do método e aborda aspectos como vínculo, empatia, compaixão, comunicação eficaz e divisão de poder na consulta. A imagem foca na estrutura contextual do paciente e não na dinâmica relacional entre médico e paciente.\n\nAlternativa c: Incorreta. O componente \"Explorando a saúde, a doença e a experiência da pessoa com a doença\" é o primeiro pilar e visa identificar a patologia (disease) e a experiência subjetiva do adoecimento (illness), representada na figura apenas pelo círculo individual menor à esquerda. A presença dos círculos concêntricos de contextos (próximo, amplo e macro) expande a abordagem para a compreensão da totalidade do indivíduo.\n\nAlternativa d: Incorreta. O componente \"Elaborando um plano conjunto de manejo de problemas\" constitui o terceiro pilar do MCCP, cujo foco é a pactuação de metas, a negociação de prioridades e o compartilhamento de decisões terapêuticas. A imagem possui caráter descritivo dos sistemas nos quais a pessoa está inserida, sem representar processos de pactuação ou tomada de decisão.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/2293ddf8a7d60bc54a0c25c7657bfbd2947f95e04394cb6f545de0548fda8184.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_67a61be1-17f6-4c3f-8206-5c3e79892135_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:08.060Z"
+  },
+  {
+    "id": "AJUDA_67a724ac-d07c-4035-9967-265548a27a2f",
+    "originalId": "67a724ac-d07c-4035-9967-265548a27a2f",
+    "statement": "NNT no TNT (Treating to New Targets)\n\nO ensaio TNT (NEJM 2005) randomizou 10.001 pacientes com DAC estável para atorvastatina 80 mg vs atorvastatina 10 mg, por mediana de 4,9 anos. O desfecho primário (evento cardiovascular maior: morte por DAC, IAM não relacionado a procedimento, RCP após parada, ou AVC fatal/não fatal) ocorreu em 8,7% (80 mg) vs 10,9% (10 mg), correspondendo a redução absoluta de risco de 2,2 pontos percentuais. Com base nesses dados, qual é o NNT aproximado para prevenir 1 evento do desfecho primário no período do estudo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "≈ 22",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "≈ 30",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "≈ 46",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "≈ 60",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "≈ 80",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender o conceito de NNT (Número Necessário para Tratar) e como calculá-lo a partir dos dados de um ensaio clínico. O NNT é uma medida de eficácia que indica quantos pacientes precisam receber o tratamento experimental, em vez do tratamento-controle, para que um evento adicional seja evitado.\n\nPasso a passo do cálculo:\n\n1. Identificação da Redução do Risco Absoluto (RRA): O enunciado já fornece esse dado de forma direta. A incidência de eventos no grupo atorvastatina 10 mg (controle) foi de 10,9% e no grupo atorvastatina 80 mg (intervenção) foi de 8,7%. A diferença entre essas taxas é a RRA.\nRRA = 10,9% - 8,7% = 2,2% (ou 0,022 em números decimais).\n\n2. Aplicação da fórmula do NNT: O NNT é o inverso da Redução do Risco Absoluto.\nFórmula: NNT = 1 / RRA\nUtilizando a porcentagem: NNT = 100 / 2,2\nCálculo: 100 dividido por 2,2 resulta em aproximadamente 45,45.\n\n3. Interpretação: Arredondando o valor encontrado, chegamos a 46. Isso significa que é necessário tratar cerca de 46 pacientes com a dose mais alta de atorvastatina por cerca de 5 anos para prevenir a ocorrência de um evento cardiovascular maior.\n\nAnálise das alternativas:\n\na) Incorreta. O valor 22 não corresponde ao cálculo matemático baseado na RRA de 2,2%. Pode ser uma confusão numérica com os algarismos da redução (2,2).\n\nb) Incorreta. O valor 30 resultaria de uma RRA de aproximadamente 3,3%, o que não condiz com os dados apresentados no estudo TNT.\n\nc) Correta. Como demonstrado no cálculo (100 / 2,2 = 45,45), o valor aproximado é 46. Esta é a aplicação direta da fórmula epidemiológica fundamental para a análise de ensaios clínicos.\n\nd) Incorreta. O valor 60 resultaria de uma RRA bem menor, de aproximadamente 1,6%.\n\ne) Incorreta. O valor 80 resultaria de uma RRA de 1,25%, subestimando o benefício clínico demonstrado pelo estudo em questão.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:08.060Z"
+  },
+  {
+    "id": "AJUDA_67b14e5b-f584-4a9d-bec6-35dd0759e64b",
+    "originalId": "67b14e5b-f584-4a9d-bec6-35dd0759e64b",
+    "statement": "O desmatamento e a alta mobilidade humana, devido às atividades de garimpo, têm sido fundamentais para o aumento dos casos de malária nas Américas. De acordo com os aspectos epidemiológicos e de controle da malária, nas áreas de garimpo da Amazônia, as evidências epidemiológicas mostram que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Existe uma correlação positiva entre a atividade de garimpo ilegal e a incidência de malária, principalmente na região amazônica;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O garimpo ilegal surgiu como a atividade antropogênica menos relatada em terras indígenas e não é identificada como uma das principais causas de surtos de malária entre povos indígenas na Amazônia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mesmo o garimpo sendo amplamente ilegal, a maioria das áreas é coberta por uma Unidade de Saúde, como as Unidades de Estratégia de Saúde da Família fluviais;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Após a introdução da vacina de malária, a incidência de malária na região amazônica vem caindo consideravelmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A malária é uma doença infecciosa febril aguda, cujos determinantes sociais e ambientais são cruciais para sua manutenção e propagação. Na região amazônica, a relação entre atividades econômicas predatórias e o perfil epidemiológico da doença é um tema recorrente em provas de residência.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Existe uma correlação direta e bem documentada entre o garimpo ilegal e o aumento da malária. O desmatamento e as escavações para a extração de minérios criam coleções de águas paradas e ensolaradas, que são criadouros ideais para o mosquito Anopheles darlingi, principal vetor da doença. Além disso, a alta mobilidade dos trabalhadores, que circulam entre áreas endêmicas e áreas sem transmissão, aliada às condições precárias de moradia (geralmente em abrigos sem proteção contra mosquitos), facilita a disseminação do Plasmodium.\n\nAlternativa b) Incorreta. Ao contrário do que afirma a alternativa, o garimpo ilegal é uma das atividades antropogênicas mais relatadas e impactantes em terras indígenas (como no território Yanomami). Ele é identificado como o principal motor de surtos graves de malária entre povos indígenas, pois desestrutura os serviços de saúde locais, polui rios e introduz o patógeno em populações vulneráveis.\n\nAlternativa c) Incorreta. Devido à natureza clandestina, remota e itinerante do garimpo ilegal, essas áreas apresentam um enorme vazio assistencial. Embora as Unidades de Estratégia de Saúde da Família fluviais existam na Bacia Amazônica, elas dificilmente conseguem alcançar ou cobrir de forma sistemática os acampamentos de garimpo situados em áreas de difícil acesso ou protegidas por vigilância armada dos garimpeiros.\n\nAlternativa d) Incorreta. Atualmente, a vacinação contra a malária (como a RTS,S/AS01) está sendo implementada de forma prioritária em regiões da África Subsaariana com alta transmissão por Plasmodium falciparum em crianças. No Brasil, o perfil predominante é de Plasmodium vivax e a vacina ainda não é uma estratégia de saúde pública responsável por uma queda considerável na incidência. O controle da malária no Brasil ainda se baseia no diagnóstico precoce, tratamento oportuno e controle vetorial.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Malária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:08.060Z"
+  }
+]

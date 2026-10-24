@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_28d42cbb-39fd-4160-8aa2-79629c4e3c22",
+    "originalId": "28d42cbb-39fd-4160-8aa2-79629c4e3c22",
+    "statement": "Paciente, do sexo masculino, 72 anos de idade, apresentando disfagia progressiva há vários anos, com piora importante nos últimos meses, refere também emagrecimento de 10 kg em 6 meses.\nAssinale a alternativa que apresenta, corretamente, o exame a ser solicitado inicialmente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cintilografia esofágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eletromanometria esofágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Endoscopia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Raios X contrastados de esôfago, hiato, estômago e duodeno, técnica padrão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tomografia computadorizada de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nEsta questão aborda a investigação diagnóstica da disfagia em um paciente idoso com sinais de alerta. O cenário clínico descreve um homem de 72 anos com disfagia progressiva e perda ponderal significativa (10 kg em 6 meses). Diante desse quadro, a principal preocupação do examinador é a exclusão de neoplasia de esôfago.\n\nPor que a alternativa C está correta?\n\nA Endoscopia Digestiva Alta (EDA) é o exame padrão-ouro inicial para pacientes idosos com disfagia e perda de peso. Ela permite a visualização direta da mucosa esofágica, identificando lesões obstrutivas, massas ou estenoses. Além disso, a EDA possibilita a realização de biópsias para confirmação histopatológica de um possível câncer de esôfago, sendo essencial tanto para o diagnóstico quanto para o diagnóstico diferencial de outras condições, como a esofagite de refluxo grave.\n\nAnálise das alternativas incorretas:\n\nAlternativa A: A cintilografia esofágica avalia o tempo de esvaziamento do esôfago e o refluxo gastroesofágico de forma funcional. Não é um exame de primeira linha para disfagia orgânica/obstrutiva e não permite o diagnóstico de tumores.\n\nAlternativa B: A eletromanometria esofágica é o exame padrão-ouro para distúrbios motores do corpo do esôfago (como a Acalásia ou o Espasmo Esofágico Difuso). Embora a disfagia de longa data possa sugerir um distúrbio motor, a idade avançada e a perda de peso obrigam a exclusão de câncer primeiro por meio da EDA. A manometria deve ser realizada após a EDA estar normal.\n\nAlternativa D: O REED (raios X contrastados) foi durante muito tempo o exame inicial para avaliação da anatomia esofágica. Atualmente, ele pode ser útil para identificar a localização de uma obstrução ou divertículos (como o de Zenker), mas não substitui a EDA na avaliação de malignidade, pois não permite biópsia. Em provas de residência, a EDA prevalece como conduta inicial em pacientes com sinais de alarme.\n\nAlternativa E: A tomografia computadorizada de tórax é fundamental para o estadiamento do câncer de esôfago (avaliação de invasão local e metástases), mas não é o exame de escolha para o diagnóstico inicial da causa da disfagia.\n\nConclusão: Em um paciente idoso com disfagia e emagrecimento, o primeiro passo é sempre afastar câncer de esôfago através da Endoscopia Digestiva Alta.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  },
+  {
+    "id": "AJUDA_28dbc17c-75df-4f04-965f-5f8ef4f3334b",
+    "originalId": "28dbc17c-75df-4f04-965f-5f8ef4f3334b",
+    "statement": "Homem, 44 anos, assintomático, realiza TC do abdome para acompanhamento de cisto renal. No laudo desse exame, radiologista descreveu a presença de divertículo de duodeno com 2,3cm. A conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "observação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "diverticulectomia videolaparoscópica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "diverticulectomia endoscópica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "duodenoscopia com visão lateral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta o caso de um paciente de 44 anos, completamente assintomático, no qual foi identificado um divertículo duodenal de 2,3 cm de forma incidental durante um exame de imagem (TC de abdome) realizado para outro fim (acompanhamento de cisto renal).\n\nOs divertículos duodenais são achados relativamente comuns em exames de imagem ou endoscopias, ocorrendo em até 20% da população. A grande maioria (cerca de 90%) é assintomática e não requer nenhum tipo de tratamento. O tratamento cirúrgico ou invasivo só é indicado na presença de complicações, como perfuração, hemorragia, diverticulite ou obstrução biliar/pancreática (como na Síndrome de Lemmel).\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Como o paciente é assintomático e o achado foi incidental, a conduta preconizada é a observação clínica. Não há indicação de intervir em um divertículo duodenal que não causa sintomas, pois os riscos de uma intervenção cirúrgica ou endoscópica no duodeno (como fístulas e pancreatite) superam largamente qualquer benefício potencial.\n\nAlternativa b) Incorreta. A diverticulectomia (seja por via aberta ou videolaparoscópica) é um procedimento complexo devido à localização retroperitoneal do duodeno e sua proximidade com o pâncreas e as vias biliares. É reservada para casos complicados, como perfurações ou abscessos que não regridem com tratamento conservador.\n\nAlternativa c) Incorreta. Procedimentos endoscópicos podem ser utilizados para tratar complicações específicas (como o controle de hemorragia digestiva originada no divertículo), mas a diverticulectomia endoscópica não é o tratamento padrão e muito menos indicada para casos assintomáticos.\n\nAlternativa d) Incorreta. A duodenoscopia com visão lateral é o exame de escolha para avaliar a papila duodenal e realizar procedimentos na via biliar (CPRE). Embora possa identificar um divertículo periampular, ela não tem indicação em um paciente assintomático que já teve o diagnóstico feito pela tomografia, pois não alteraria a conduta de observação.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  },
+  {
+    "id": "AJUDA_28e3e828-0720-4a81-8571-f6627b17723e",
+    "originalId": "28e3e828-0720-4a81-8571-f6627b17723e",
+    "statement": "Qual a causa mais comum de Hemorragia Subaracnoidea, excluindo-se o traumatismo intracraniano?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Malformação arteriovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fístula arteriovenosa dural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ruptura de aneurisma sacular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Causa idiopática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fístula arteriovenosa subdural.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Hemorragia Subaracnoidea (HSA) caracteriza-se pela presença de sangue no espaço entre a membrana aracnoide e a pia-máter, onde circula o líquido cefalorraquidiano. Clinicamente, a HSA é dividida em duas grandes categorias: traumática e espontânea (não traumática).\n\nA causa mais comum de HSA em termos globais é o traumatismo cranioencefálico. No entanto, quando o enunciado solicita a causa mais comum excluindo-se o trauma, ele foca na epidemiologia da HSA espontânea.\n\nAlternativa (c) - Correta: A ruptura de aneurismas saculares é a principal causa de HSA não traumática, sendo responsável por cerca de 80% a 85% dos casos. Esses aneurismas costumam se desenvolver em pontos de ramificação das artérias do Polígono de Willis, sendo os locais mais comuns a artéria comunicante anterior, a artéria carótida interna (na origem da comunicante posterior) e a artéria cerebral média.\n\nAlternativa (a) - Incorreta: As Malformações Arteriovenosas (MAVs) são a segunda causa vascular mais identificável, mas são muito menos frequentes que os aneurismas, representando aproximadamente 5% a 10% dos casos de sangramento subaracnoideo espontâneo. Além disso, MAVs frequentemente causam hemorragias intraparenquimatosas associadas.\n\nAlternativas (b) e (e) - Incorretas: Fístulas arteriovenosas durais ou subdurais são conexões anormais entre artérias e veias. São causas raras de hemorragia intracraniana e não possuem expressão epidemiológica significativa como causa primária de hemorragia subaracnoidea difusa.\n\nAlternativa (d) - Incorreta: A causa idiopática ocorre em cerca de 10% a 15% dos pacientes que apresentam quadro clínico e tomográfico de HSA, mas cujos exames de angiografia são normais. Um subtipo comum desse grupo é a hemorragia perimesencefálica não aneurismática. Apesar de relevante, não é a causa mais comum.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  },
+  {
+    "id": "AJUDA_28e7e21f-5d95-4a7d-bb5e-06763e5141e1",
+    "originalId": "28e7e21f-5d95-4a7d-bb5e-06763e5141e1",
+    "statement": "Considera-se prevenção primária de neoplasia ginecológica a",
+    "options": [
+      {
+        "id": "A",
+        "text": "suspensão de terapia hormonal combinada em mulheres com mutação BRCA para câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ultrassonografia anual para mulheres na pós-menopausa para câncer de endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vacinação contra HPV para câncer de colo do útero.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "administração de antiestrogênicos em mulheres com hiperplasia ductal sem atipia para câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "exérese de zona de transformação em casos de lesão intraepitelial de baixo grau para câncer de colo do útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DEFINIÇÃO DE PREVENÇÃO PRIMÁRIA\nA prevenção primária consiste em intervenções realizadas para evitar a ocorrência de uma doença na população, eliminando ou reduzindo a exposição aos fatores de risco. No contexto das neoplasias, isso significa agir antes que qualquer lesão precursora ou neoplásica se instale.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) INCORRETA. A suspensão da terapia hormonal em mulheres com mutação BRCA é uma medida de redução de risco individualizada. Embora o BRCA aumente o risco de câncer de mama e ovário, a principal estratégia de prevenção primária para essas mulheres seria a cirurgia redutora de risco (mastectomia ou salpingo-ooforectomia profilática). A alternativa também é menos abrangente que a vacinação.\n\nAlternativa b) INCORRETA. O uso de ultrassonografia para detectar precocemente o câncer de endométrio é uma estratégia de prevenção secundária (rastreamento). Além disso, não existe recomendação de rastreamento sistemático com ultrassonografia para câncer de endométrio em mulheres assintomáticas na pós-menopausa, pois o método não demonstra redução de mortalidade na população geral.\n\nAlternativa c) CORRETA. A vacinação contra o HPV é o exemplo mais típico de prevenção primária para o câncer de colo do útero. Ao conferir imunidade contra os tipos oncogênicos do vírus (especialmente os tipos 16 e 18), a vacina impede a infecção viral, que é o fator causal necessário para o desenvolvimento da doença, agindo antes de qualquer alteração celular.\n\nAlternativa d) INCORRETA. A administração de antiestrogênicos (como Tamoxifeno ou Raloxifeno) é chamada de quimioprevenção. Ela é geralmente considerada para mulheres de alto risco, mas especificamente em casos de hiperplasia ductal COM atipia ou carcinoma lobular in situ. Na hiperplasia ductal SEM atipia, o benefício não costuma superar os riscos dos efeitos colaterais.\n\nAlternativa e) INCORRETA. A exérese da zona de transformação é um tratamento de uma lesão já existente (lesão intraepitelial de baixo grau - LSIL). Toda vez que tratamos uma lesão precursora já diagnosticada para evitar que ela evolua para câncer, estamos realizando prevenção secundária. Além disso, a conduta habitual para LSIL é a observação, e não a exérese imediata.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 21.76719548797244,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  },
+  {
+    "id": "AJUDA_28ee7d3f-ffa4-44dc-bc64-6ee0ad9591b4",
+    "originalId": "28ee7d3f-ffa4-44dc-bc64-6ee0ad9591b4",
+    "statement": "Paciente feminino, 45 anos, apresenta dor abdominal intensa há 8 horas, localizada em andar superior do abdome e irradiada para dorso, acompanhada de náuseas e vômitos intensos. Ao exame físico, o abdome encontra-se distendido, com dor à palpação do epigástrio, mas sem sinais de defesa abdominal. Os exames laboratoriais revelam amilase sérica de 900 U/L e lipase de 1100 U/L. A ultrassonografia de abdome mostra presença de microcálculos, sem evidência de colecistite. Qual é a conduta inicial mais apropriada para o manejo desta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realização de colangiopancreatografia retrógrada endoscópica (CPRE) imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hidratação venosa e antibiótico profilático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicação de colecistectomia laparoscópica de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Início de hidratação venosa, jejum, analgesia e antieméticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico: O quadro clínico descrito (dor no andar superior irradiada para o dorso, náuseas e vômitos), associado a exames laboratoriais com amilase e lipase elevadas (acima de três vezes o valor de referência), confirma o diagnóstico de pancreatite aguda. A presença de microcálculos na ultrassonografia define a etiologia biliar como a causa mais provável.\n\nAnálise das alternativas:\n\na) Incorreta. A colangiopancreatografia retrógrada endoscópica (CPRE) não é a conduta inicial para todos os pacientes com pancreatite biliar. Ela está indicada de forma precoce (nas primeiras 24 a 48 horas) apenas em casos de colangite associada ou obstrução biliar persistente (icterícia progressiva ou dilatação importante da via biliar), o que não é evidenciado no caso.\n\nb) Incorreta. Embora a hidratação venosa seja fundamental, o uso de antibiótico profilático é contraindicado na pancreatite aguda, independentemente da gravidade. O uso de antibióticos deve ser reservado apenas para casos de infecção comprovada ou suspeita clínica e radiológica de necrose infectada.\n\nc) Incorreta. A colecistectomia é mandatória na pancreatite biliar para evitar a recorrência, porém não deve ser realizada em caráter de urgência (imediatamente à chegada). A recomendação é que a cirurgia ocorra na mesma internação, preferencialmente após a resolução da resposta inflamatória aguda e a normalização das enzimas, geralmente após 48 a 72 horas ou antes da alta hospitalar.\n\nd) Correta. O manejo inicial da pancreatite aguda baseia-se em medidas de suporte: hidratação venosa vigorosa (essencial para manter a perfusão pancreática e prevenir a necrose), controle da dor com analgesia escalonada, controle de sintomas (antieméticos) e repouso digestivo (jejum) para evitar o estímulo à secreção pancreática. Esta é a conduta padrão-ouro nas primeiras horas de atendimento.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  },
+  {
+    "id": "AJUDA_28fcb4de-2d08-40fd-b70b-58e1fac43b9e",
+    "originalId": "28fcb4de-2d08-40fd-b70b-58e1fac43b9e",
+    "statement": "Escolha a alternativa correta, por ordem decrescente, a eficácia teórica dos seguintes métodos contraceptivos:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contracepção hormonal oral, capuz cervical, coito interrompido, anel vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Espermicida, contracepção hormonal oral, diafragma, capuz cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vasectomia, minipílula, preservativo, coito interrompido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Laqueadura tubária, contracepção hormonal oral, capuz cervical, minipílula.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder a essa questão, é necessário o conhecimento das taxas de falha dos métodos contraceptivos sob uso perfeito (eficácia teórica), geralmente medidas pelo Índice de Pearl. A questão solicita a ordem decrescente de eficácia, o que significa listar os métodos do mais eficaz (menor taxa de falha) para o menos eficaz (maior taxa de falha).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A ordem está prejudicada porque o anel vaginal possui uma eficácia teórica muito alta, com taxa de falha de aproximadamente 0,3%, equivalente à dos contraceptivos hormonais orais. Na alternativa, ele aparece após o capuz cervical (taxa de falha de 9% a 26%) e o coito interrompido (taxa de falha de 4%), o que invalida a sequência decrescente.\n\nAlternativa b) Incorreta. Esta opção começa pelo espermicida, que é um dos métodos menos eficazes quando usado isoladamente, apresentando uma taxa de falha teórica de cerca de 18%. Como a questão pede a ordem decrescente de eficácia, o espermicida deveria estar ao final da lista, e não no início.\n\nAlternativa c) Correta. Esta alternativa segue precisamente a ordem decrescente de eficácia teórica (uso perfeito) baseada nos dados da literatura médica (como os critérios de elegibilidade da OMS e a tabela de Hatcher):\n1. Vasectomia: É um método cirúrgico de altíssima eficácia, com taxa de falha teórica de aproximadamente 0,1%.\n2. Minipílula: Como método hormonal oral, apresenta taxa de falha teórica de cerca de 0,3%.\n3. Preservativo: Método de barreira com taxa de falha teórica em torno de 2% a 3%.\n4. Coito interrompido: Método comportamental com taxa de falha teórica de aproximadamente 4%.\n\nAlternativa d) Incorreta. Embora comece com métodos de alta eficácia (laqueadura com 0,5% e hormonal oral com 0,3% de falha), a sequência é quebrada ao colocar o capuz cervical (9% a 26% de falha) antes da minipílula (0,3% de falha). A minipílula é muito mais eficaz que o capuz cervical e deveria estar posicionada à frente dele em uma ordem decrescente.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  },
+  {
+    "id": "AJUDA_29043613-6181-4001-a2f2-ee75ea8d1d11",
+    "originalId": "29043613-6181-4001-a2f2-ee75ea8d1d11",
+    "statement": "Um paciente de 52 anos de idade, etilista crônico e cirrótico, foi levado ao serviço de emergência com queixa de dor abdominal difusa, febre e confusão mental. Ao exame físico, apresentou PA = 90 mmHg X 60 mmHg, FC = 120 bpm, FR 24 = irpm, SatO2 = 94% e abdome tenso, com sinal de Murphy negativo. O resultado do hemograma mostrou leucócitos = 18.000/mm³ com desvio à esquerda. Nesse caso, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peritonite bacteriana espontânea (PBE)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pancreatite necrotizante infectada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sepse de origem abdominal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hepatite alcoólica grave",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO quadro descreve um paciente cirrótico com a tríade clássica de dor abdominal, febre e alteração do nível de consciência (confusão mental). Esses achados, somados aos sinais de instabilidade hemodinâmica (hipotensão e taquicardia) e leucocitose com desvio à esquerda, compõem a apresentação de uma descompensação infecciosa grave na cirrose. Em pacientes cirróticos que apresentam dor abdominal e febre, a principal hipótese diagnóstica a ser descartada é a infecção do líquido ascítico.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa a): Está correta. A Peritonite Bacteriana Espontânea (PBE) é a complicação infecciosa mais comum no paciente cirrótico. Ocorre pela translocação de bactérias da microbiota intestinal para o líquido ascítico. A confusão mental apresentada é um sinal de Encefalopatia Hepática, que é frequentemente desencadeada por processos infecciosos. Diante de um cirrótico com dor abdominal, a realização de paracentese diagnóstica é mandatória para confirmar o diagnóstico (presença de mais de 250 neutrófilos/mm³ no líquido ascítico).\n\nAlternativa b): Está incorreta. Embora o etilismo seja causa de pancreatite, a forma necrotizante infectada costuma ser uma complicação tardia, surgindo geralmente após duas semanas de um quadro inicial de pancreatite aguda. O quadro descrito é mais compatível com uma complicação direta da cirrose e hipertensão portal (ascite infectada).\n\nAlternativa c): Está incorreta. O termo sepse de origem abdominal é um diagnóstico sindrômico e genérico. O paciente de fato apresenta critérios para sepse (disfunção orgânica e instabilidade hemodinâmica de foco abdominal), porém a questão solicita o diagnóstico específico mais provável para a condição apresentada. Entre as causas de sepse abdominal no cirrótico, a PBE é a mais prevalente.\n\nAlternativa d): Está incorreta. A hepatite alcoólica grave cursa com dor em hipocôndrio direito, febre e leucocitose importante. No entanto, ela costuma apresentar icterícia intensa e não justifica, isoladamente, o achado de abdome tenso e a gravidade do choque séptico tão agudamente quanto uma infecção peritoneal (PBE). Além disso, a confusão mental e a dor difusa direcionam o raciocínio para a infecção do líquido ascítico.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  },
+  {
+    "id": "AJUDA_2905b89e-031e-4678-98f3-9b92737cebd3",
+    "originalId": "2905b89e-031e-4678-98f3-9b92737cebd3",
+    "statement": "Em um município, um usuário com condições crônicas circula entre UBS, ambulatório especializado e hospital sem integração de informações. Exames se repetem e não há retorno formal à equipe de origem. A gestão busca reorganizar o fluxo assistencial conforme o modelo das Redes de Atenção à Saúde. A conduta mais adequada para organizar esse cuidado, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "encaminhar o usuário diretamente para hospital de referência sem coordenação pela APS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "manter o usuário vinculado à APS como coordenadora do cuidado, utilizando regulação para acesso aos demais serviços e garantindo contrarreferência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "transferir o acompanhamento definitivo para o ambulatório especializado, encerrando o vínculo com a UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atuar apenas nos episódios de agudização clínica que resultem em internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "orientar a busca por serviços privados para acelerar o acesso a consultas e exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a organização do Sistema Único de Saúde (SUS) através das Redes de Atenção à Saúde (RAS). O cenário descrito de fragmentação, repetição de exames e falta de comunicação entre os níveis de assistência é o principal problema que o modelo de redes busca solucionar.\n\nA resposta correta é a alternativa (b).\n\nAnálise das alternativas:\n\nAlternativa (a) INCORRETA: Encaminhar o usuário diretamente ao hospital sem a participação da Atenção Primária à Saúde (APS) reforça o modelo hospitalocêntrico e fragmentado. Na estrutura das Redes de Atenção, o hospital deve ser um ponto de assistência para casos de maior complexidade, mas a gestão do percurso do paciente deve ser coordenada pela APS para evitar a perda de informações e o uso ineficiente de recursos.\n\nAlternativa (b) CORRETA: Esta alternativa descreve os pilares das Redes de Atenção à Saúde. A APS (representada pela UBS) deve ser o centro de comunicação e a coordenadora do cuidado. Isso significa que ela organiza o fluxo do paciente no sistema. A utilização de sistemas de regulação garante que o acesso aos especialistas ocorra de forma ordenada, e a contrarreferência é o mecanismo essencial para que as informações do atendimento especializado ou hospitalar retornem à equipe da UBS, permitindo a continuidade do acompanhamento longitudinal do paciente com condição crônica.\n\nAlternativa (c) INCORRETA: O vínculo com a UBS nunca deve ser encerrado. O ambulatório de especialidades oferece um suporte pontual ou compartilhado para necessidades específicas que a APS não consegue resolver sozinha, mas a responsabilidade biopsicossocial e o acompanhamento global do indivíduo permanecem na Atenção Primária. Transferir o vínculo definitivamente geraria uma assistência superespecializada e desarticulada das outras necessidades de saúde do usuário.\n\nAlternativa (d) INCORRETA: Atuar apenas em episódios de agudização é uma característica do modelo de atenção às condições agudas, que é reativo e fragmentado. Condições crônicas exigem um modelo de atenção proativo, preventivo e contínuo, visando estabilizar a doença e evitar que o paciente precise de internações hospitalares recorrentes.\n\nAlternativa (e) INCORRETA: Orientar a busca pelo setor privado não é uma conduta técnica de gestão pública de saúde. O objetivo do gestor é organizar a rede pública para que ela seja resolutiva e eficiente, respeitando os princípios de integralidade e equidade do SUS, e não transferir a responsabilidade da assistência para o desembolso direto do usuário ou para planos de saúde.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  },
+  {
+    "id": "AJUDA_29093564-6d70-43c9-a7da-9cb3d188e1d7",
+    "originalId": "29093564-6d70-43c9-a7da-9cb3d188e1d7",
+    "statement": "Mulher, 55 anos de idade, apresenta nódulo endurecido em mama esquerda, medindo 2,3 cm, sem linfonodos palpáveis. Biópsia mostra neoplasia maligna de mama. O patologista descreve carcinoma invasivo com padrão mais comum de crescimento, mas ressalta que existem outros subtipos histológicos menos frequentes, com prognósticos diferentes, a saber:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O carcinoma mucinoso e o carcinoma medular são variantes de mau prognóstico, associados a elevada taxa de metástases à distância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O carcinoma lobular invasivo é o subtipo mais comum e geralmente apresenta microcalcificações evidentes à mamografia, sendo facilmente diagnosticado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O carcinoma tubular, apesar de raro, possui comportamento biológico agressivo e prognóstico pior que o carcinoma ductal invasivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O carcinoma ductal invasivo (não especial) é o subtipo mais frequente, correspondendo a aproximadamente 70-80% dos casos de câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A - INCORRETA: Os carcinomas mucinoso e medular são considerados subtipos especiais que, em geral, possuem um prognóstico MAIS FAVORÁVEL do que o carcinoma invasivo de tipo não especial. O carcinoma mucinoso (ou coloide) costuma ter crescimento lento e baixa agressividade. Já o carcinoma medular, embora apresente características histológicas de alto grau, tem um comportamento clínico e um desfecho frequentemente melhores do que o esperado para o seu grau.\n\nAlternativa B - INCORRETA: O carcinoma lobular invasivo é o SEGUNDO subtipo mais comum, correspondendo a cerca de 5% a 15% dos casos. Além disso, ele é conhecido por ser de difícil diagnóstico mamográfico, pois suas células costumam crescer em fileiras únicas (filas indianas) que não distorcem drasticamente a arquitetura mamária e raramente formam microcalcificações, resultando em uma taxa maior de resultados falso-negativos na mamografia.\n\nAlternativa C - INCORRETA: O carcinoma tubular é um tipo especial de câncer de mama que apresenta um EXCELENTE prognóstico. Ele é composto por glândulas bem formadas e apresenta baixíssima incidência de metástases axilares. Seu comportamento biológico é muito menos agressivo do que o do carcinoma ductal invasivo convencional, e não pior, como afirma a alternativa.\n\nAlternativa D - CORRETA: O carcinoma ductal invasivo, atualmente classificado pela Organização Mundial da Saúde como Carcinoma Invasivo de Tipo Não Especial (ou NST — No Special Type), é o subtipo histológico mais prevalente, representando entre 70% e 80% de todos os diagnósticos de câncer de mama invasivo. Ele é caracterizado por não apresentar as características morfológicas específicas que definem os outros tipos (como o lobular, tubular ou mucinoso).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  },
+  {
+    "id": "AJUDA_290c6f35-8dc4-48e2-a894-b0cfda1fafe9",
+    "originalId": "290c6f35-8dc4-48e2-a894-b0cfda1fafe9",
+    "statement": "Um paciente de 22 anos apresenta dor abdominal há 24 horas, inicialmente em região periumbilical, que migrou para fossa ilíaca direita, associada a náuseas, febre baixa e anorexia. No exame físico, apresenta dor à palpação profunda em fossa ilíaca direita, sinal de Blumberg positivo e leucocitose com desvio à esquerda. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar antibioticoterapia e observar evolução clínica, sem necessidade de intervenção cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever analgésicos e liberar o paciente com retorno ambulatorial em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar colonoscopia para confirmar o diagnóstico antes da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar apendicectomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é a descrição clássica da apendicite aguda, que é a principal causa de abdome agudo inflamatório no adulto jovem. O paciente apresenta a Cronologia de Murphy, caracterizada pela dor periumbilical que migra para a fossa ilíaca direita, acompanhada de anorexia, náuseas e febre baixa. No exame físico, o sinal de Blumberg positivo indica irritação peritoneal, o que, somado à leucocitose com desvio à esquerda, confirma a alta probabilidade diagnóstica.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora existam estudos sobre o tratamento puramente medicamentoso com antibióticos para apendicite não complicada, a apendicectomia permanece como o padrão-ouro. A observação clínica sem intervenção em um paciente com sinais claros de irritação peritoneal eleva o risco de perfuração e sepse.\n\nAlternativa b: Incorreta. Prescrever apenas analgésicos e dar alta hospitalar é uma conduta negligente diante de uma suspeita de abdome agudo. A analgesia pode mascarar a progressão dos sintomas, e o atraso no diagnóstico definitivo aumenta significativamente a morbimortalidade do paciente.\n\nAlternativa c: Incorreta. A colonoscopia não é um exame indicado para o diagnóstico de apendicite aguda. Além de não oferecer sensibilidade para essa patologia, o procedimento é contraindicado na fase aguda devido ao alto risco de perfuração intestinal pela insuflação de ar em alças inflamadas e fragilizadas.\n\nAlternativa d: Correta. A conduta mais adequada perante um diagnóstico clínico de apendicite aguda é a apendicectomia de urgência. Em pacientes jovens do sexo masculino com apresentação clínica clássica (Escore de Alvarado elevado), o diagnóstico é essencialmente clínico e a cirurgia deve ser realizada precocemente para evitar complicações como a formação de abscessos ou peritonite generalizada.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:01.754Z"
+  }
+]

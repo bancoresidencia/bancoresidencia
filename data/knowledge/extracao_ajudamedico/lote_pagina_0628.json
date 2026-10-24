@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_afc70269-addf-41ac-8954-630aff930e1a",
+    "originalId": "afc70269-addf-41ac-8954-630aff930e1a",
+    "statement": "Maria, 56 anos, foi mordida na perna pelo cachorro da vizinha. No momento do acidente, a paciente realizou limpeza com água e sabão e manteve suas atividades domésticas. Cerca de 9 horas após o acidente, foi à Unidade Básica de Saúde (UBS), onde foi atendida pela enfermeira. A enfermeira coletou a informação de que o cachorro era conhecido e habitava a casa da vizinha. Avaliou tratar-se de ferimento superficial, sem sangramento, constituído por pontos perfurantes correspondentes à mordedura. Qual é a conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar para realizar vacinação antirrábica em Maria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter observação do cão por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para realizar vacinação e soro antirrábico em Maria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para realizar vacinação antirrábica em Maria se o cão não foi vacinado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é necessário classificar o acidente rábico e avaliar a condição do animal agressor, seguindo o protocolo de profilaxia do Ministério da Saúde. Maria sofreu um acidente leve (ferimento superficial em membro inferior) causado por um cão que pode ser observado (animal conhecido e domiciliado).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A vacinação imediata não é indicada para acidentes leves nos quais o cão é passível de observação. De acordo com o protocolo, a vacina só deve ser iniciada caso o animal mude de comportamento, adoeça, morra ou desapareça durante o período de monitoramento.\n\nAlternativa b) Correta. Segundo as normas técnicas de profilaxia da raiva humana, em acidentes leves provocados por cães ou gatos que podem ser observados, a conduta inicial obrigatória é apenas a observação do animal por 10 dias. Se o animal permanecer saudável após esse prazo, o caso é encerrado sem a necessidade de aplicação de vacina ou soro na paciente.\n\nAlternativa c) Incorreta. O soro antirrábico (imunoglobulina) é reservado exclusivamente para acidentes considerados graves (ferimentos profundos, múltiplos ou localizados em áreas muito inervadas, como cabeça, mãos e pés) ou acidentes causados por animais silvestres. O ferimento de Maria é superficial e em local de baixo risco (perna), não havendo indicação de soro.\n\nAlternativa d) Incorreta. O status vacinal do animal não altera a conduta de observação inicial em acidentes leves com cães e gatos conhecidos. Mesmo que o animal não seja vacinado ou que a vacinação seja desconhecida, a prioridade técnica é a observação clínica do cão por 10 dias para verificar se ele manifesta sintomas de raiva.\n\nResumo do protocolo para o caso:\n1. Lavagem do local com água e sabão (conduta já realizada pela paciente).\n2. Observação do animal agressor por 10 dias.\n3. Não prescrever vacina ou soro no momento do atendimento inicial.\n4. Orientar a paciente a retornar caso o animal apresente alterações.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:39.575Z"
+  },
+  {
+    "id": "AJUDA_afceb8c3-3392-4b85-a47d-2eb7a7dca2ee",
+    "originalId": "afceb8c3-3392-4b85-a47d-2eb7a7dca2ee",
+    "statement": "Menina de 8 anos é trazida à sala de emergência após ser atropelada por um carro. A criança foi encontrada inconsciente no local, mas recuperou a consciência durante o transporte para o hospital. Apresenta dor abdominal. Ao exame físico: frequência cardíaca de 150 bpm, pressão arterial de 70/40 mmHg, frequência respiratória de 30 rpm, saturação de oxigênio de 95% em máscara não reinalante, enchimento capilar 6 segundos e pulsos finos. Administrados 20ml/kg de cristaloides com manutenção dos parâmetros clínicos. Qual é o próximo passo no manejo desta criança?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir dose de cristaloides.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar plasma fresco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar agentes vasopressores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infundir concentrado de hemácias.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta é uma questão clássica de trauma pediátrico que avalia o manejo do choque hipovolêmico hemorrágico. A paciente apresenta sinais claros de choque descompensado: hipotensão (PA 70/40 mmHg), taquicardia (150 bpm), tempo de enchimento capilar prolongado (6 segundos) e pulsos finos.\n\nO protocolo inicial de ressuscitação volêmica na pediatria, conforme o ATLS e o PALS, recomenda a administração de bolus de cristaloides isotônicos (20 ml/kg). Na questão, a criança recebeu essa carga inicial, mas não apresentou melhora clínica (manutenção dos parâmetros de instabilidade). Em casos de trauma grave com resposta inadequada à primeira expansão com cristaloides, a conduta imediata deve ser a transfusão de hemoderivados para restaurar a capacidade de transporte de oxigênio e evitar a hemodiluição excessiva.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Embora alguns protocolos antigos considerassem repetir o cristaloide até 40-60 ml/kg, as diretrizes atuais priorizam a introdução precoce de sangue em casos de choque hemorrágico grave ou refratário. O excesso de cristaloide pode agravar a tríade da morte (acidose, coagulopatia e hipotermia) e causar hemodiluição dos fatores de coagulação.\n\nAlternativa (b) Incorreta: O plasma fresco congelado é indicado para a correção de coagulopatias ou como parte de protocolos de transfusão maciça. No primeiro momento de falha na resposta ao cristaloide, a prioridade é a reposição da massa eritrocitária (concentrado de hemácias) para garantir a perfusão tecidual.\n\nAlternativa (c) Incorreta: O uso de vasopressores é contraindicado no manejo inicial do choque hemorrágico. O problema aqui é o baixo volume circulante (pré-carga), e não a falta de tônus vascular. O uso de aminas em um sistema circulatório vazio aumentaria a vasoconstrição periférica, piorando a isquemia dos órgãos e o prognóstico.\n\nAlternativa (d) Correta: De acordo com o ATLS (10ª edição), se a criança permanece instável após a administração de 20 ml/kg de cristaloide, deve-se administrar concentrado de hemácias (10 a 20 ml/kg). A persistência da instabilidade sugere perda volêmica superior a 25-30% ou sangramento ativo, exigindo reposição de sangue para estabilização hemodinâmica.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Emergências Pediátricas",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:39.575Z"
+  },
+  {
+    "id": "AJUDA_afd01fa3-6ab3-40e1-b688-655c54b5f057",
+    "originalId": "afd01fa3-6ab3-40e1-b688-655c54b5f057",
+    "statement": "A Carta de Ottawa (1986) é um documento fundante para a Promoção da Saúde moderna, definindo-a como o processo de capacitação da comunidade para atuar na melhoria da sua qualidade de vida e saúde. Dentre os cinco campos de ação propostos pela Carta, a \"criação de ambientes favoráveis à saúde\" implica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A reorientação dos serviços de saúde para que estes priorizem a alta complexidade tecnológica, garantindo a cura das doenças resultantes da degradação ambiental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O reforço da ação comunitária por meio da distribuição passiva de recursos financeiros para que a população adquira bens de consumo que promovam bem-estar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A mediação entre interesses conflitantes na sociedade para garantir que as condições de trabalho, lazer e moradia sejam fontes de saúde e não de doença, protegendo os recursos naturais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O desenvolvimento de habilidades pessoais através da educação em saúde, focando exclusivamente na mudança de comportamento individual para a cessação do tabagismo e sedentarismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Carta de Ottawa, elaborada em 1986, definiu cinco campos de ação estratégicos para a promoção da saúde: políticas públicas saudáveis, ambientes favoráveis, reforço da ação comunitária, desenvolvimento de habilidades pessoais e reorientação dos serviços de saúde. A questão exige o conhecimento específico sobre o que compõe a criação de ambientes favoráveis.\n\nAlternativa (a) Incorreta. A reorientação dos serviços de saúde proposta pela Carta busca justamente o oposto do que afirma a alternativa. O objetivo é que o sistema de saúde supere o modelo puramente biomédico, curativo e centrado na alta complexidade tecnológica, focando mais na prevenção e na promoção da saúde de forma integral e humanizada.\n\nAlternativa (b) Incorreta. O reforço da ação comunitária visa ao empoderamento (empowerment) e à autonomia da população para que ela seja protagonista nas decisões de saúde. A distribuição passiva de recursos financeiros e o foco em bens de consumo são conceitos alheios à promoção da saúde, que foca na participação social ativa e no controle social.\n\nAlternativa (c) Correta. A criação de ambientes favoráveis à saúde fundamenta-se na abordagem socioecológica. Isso significa reconhecer que a saúde não depende apenas de escolhas individuais, mas de onde as pessoas vivem, trabalham e se divertem. O texto da Carta destaca que a proteção dos ambientes naturais e construídos, bem como a garantia de condições dignas de trabalho e moradia, é essencial. A mediação entre os diferentes setores da sociedade é necessária para garantir que o progresso não ocorra à custa da degradação ambiental ou social.\n\nAlternativa (d) Incorreta. O desenvolvimento de habilidades pessoais é, de fato, um dos campos de ação da Carta, mas ele não se limita à mudança de comportamento individual nem deve ser o foco exclusivo. A promoção da saúde moderna entende que a educação em saúde deve capacitar o indivíduo para a vida, mas reconhece que mudanças individuais são difíceis se o meio social e econômico for desfavorável. Além disso, a alternativa descreve um campo diferente do solicitado no enunciado (ambientes favoráveis).\n\nGabarito: Letra (c).",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:39.575Z"
+  },
+  {
+    "id": "AJUDA_afd181dd-3dac-456f-b730-4fbed9402b84",
+    "originalId": "afd181dd-3dac-456f-b730-4fbed9402b84",
+    "statement": "Mulher, 72 anos, previamente ativa, apresenta há 2 anos perda progressiva de memória recente, dificuldade em realizar tarefas complexas do cotidiano e desorientação espacial. A família refere episódios de irritabilidade e perda da capacidade de julgamento. O exame neurológico não mostra sinais motores relevantes. Tomografia de crânio evidencia atrofia cortical difusa predominante em região temporoparietal. Não há história de uso abusivo de álcool, nem sintomas depressivos significativos. Qual é o diagnóstico mais provável considerando o caso apresentado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Demência frontotemporal, caracterizada principalmente por alterações precoces de comportamento e linguagem, com preservação relativa da memória inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Demência vascular, geralmente associada à evolução em degraus, déficits focais e história de eventos cerebrovasculares prévios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença de Alzheimer, que apresenta curso insidioso e progressivo, com perda inicial de memória recente e atrofia temporoparietal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Demência com corpos de Lewy, que se manifesta precocemente com alucinações visuais vívidas e parkinsonismo associado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Comprometimento cognitivo leve, caracterizado por declínio de memória sem impacto funcional significativo nas atividades de vida diária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico: Doença de Alzheimer (DA).\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A demência frontotemporal costuma acometer pacientes em faixas etárias mais precoces (geralmente antes dos 65 anos). Suas variantes principais manifestam-se inicialmente com alterações marcantes de personalidade e comportamento (desinibição, apatia, perda de empatia) ou distúrbios de linguagem. Diferente do caso relatado, a memória episódica costuma estar relativamente preservada nas fases iniciais.\n\nAlternativa B (Incorreta): A demência vascular tem, classicamente, uma evolução \"em degraus\" (pioras súbitas seguidas de períodos de estabilidade). Está fortemente associada a fatores de risco cardiovascular e episódios prévios de AVC. No exame físico, é comum encontrar déficits neurológicos focais (motores ou sensitivos), e a neuroimagem revelaria lesões isquêmicas ou hemorrágicas, não apenas atrofia cortical.\n\nAlternativa C (Correta): O caso descreve o quadro clínico típico da Doença de Alzheimer, a causa mais comum de demência em idosos. As características principais presentes são: início insidioso, progressão lenta, déficit proeminente de memória episódica (memória recente) e prejuízo funcional (dificuldade em tarefas complexas). A atrofia cortical difusa com predomínio têmporo-parietal na tomografia é um marcador clássico da doença, refletindo a degeneração de estruturas como o hipocampo e o córtex entorrinal.\n\nAlternativa D (Incorreta): A demência com corpos de Lewy apresenta uma tríade característica composta por parkinsonismo (rigidez, bradicinesia), alucinações visuais detalhadas/vívidas e flutuação do nível de consciência/atenção. O caso afirma que o exame neurológico não mostra sinais motores e não descreve alucinações, o que torna esse diagnóstico improvável.\n\nAlternativa E (Incorreta): No comprometimento cognitivo leve (CCL), o paciente apresenta um declínio cognitivo maior do que o esperado para sua idade e escolaridade, porém esse declínio não é grave o suficiente para comprometer de forma significativa as atividades de vida diária ou a independência do indivíduo. A paciente em questão já apresenta perda de autonomia em tarefas complexas e desorientação, o que preenche critérios para demência.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Demências"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:39.575Z"
+  },
+  {
+    "id": "AJUDA_afd52d8e-e421-4e9a-9069-a6900063b86a",
+    "originalId": "afd52d8e-e421-4e9a-9069-a6900063b86a",
+    "statement": "Paciente com DRC estágio 4 apresenta pH 7,28, HCO₃⁻ 14 mEq/L e ânion gap normal. O distúrbio é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose metabólica com ânion gap elevado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acidose metabólica hiperclorêmica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Alcalose metabólica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acidose respiratória crônica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alcalose respiratória compensada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta pH de 7,28, o que caracteriza uma acidemia (pH < 7,35). O bicarbonato (HCO3-) está baixo (14 mEq/L), indicando que a causa primária do distúrbio é metabólica. O enunciado informa explicitamente que o ânion gap está normal.\n\nNa Doença Renal Crônica (DRC), especificamente nos estágios 3 e 4, é comum observarmos uma acidose metabólica com ânion gap normal (hiperclorêmica) devido à redução na produção de amônia e consequente diminuição da excreção renal de íons hidrogênio (H+). À medida que a doença progride para o estágio 5, o acúmulo de ânions não mensuráveis (como fosfato e sulfato) geralmente transforma o distúrbio em uma acidose com ânion gap elevado.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. Embora a DRC em estágios avançados (estágio 5) frequentemente cause acidose com ânion gap elevado, o enunciado afirma categoricamente que o ânion gap do paciente é normal. Portanto, esta opção contradiz os dados fornecidos.\n\nb) CORRETA. A acidose metabólica com ânion gap normal é também chamada de acidose metabólica hiperclorêmica. Isso ocorre porque, para manter a eletroneutralidade plasmática, quando os níveis de bicarbonato diminuem sem o acúmulo de ânions não mensuráveis, os níveis de cloreto aumentam proporcionalmente. Este é o padrão clássico encontrado na DRC estágio 4 pela incapacidade de excreção de carga ácida na forma de amônio.\n\nc) INCORRETA. Uma alcalose metabólica seria caracterizada por um pH elevado (> 7,45) e um bicarbonato elevado (> 26 mEq/L), o que é o oposto dos valores apresentados.\n\nd) INCORRETA. Na acidose respiratória, o distúrbio primário é o aumento da pressão parcial de CO2 (pCO2), geralmente com uma resposta compensatória de elevação do bicarbonato. No caso em questão, o bicarbonato está reduzido, o que define um processo metabólico.\n\ne) INCORRETA. Uma alcalose respiratória compensada apresentaria um pH tendendo à normalidade (porém no limite superior) e uma redução primária da pCO2. O paciente apresenta pH baixo, o que define acidose, e não alcalose.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:39.575Z"
+  },
+  {
+    "id": "AJUDA_aff9cebe-5a31-4746-8306-8df640ca3683",
+    "originalId": "aff9cebe-5a31-4746-8306-8df640ca3683",
+    "statement": "Mulher de 42 anos, G3P2A1, método anticoncepcional: laqueadura tubária, DUM há 12 dias, procura atendimento ginecológico com queixa de sangramento uterino aumentado há 6 meses, com aumento do fluxo, permanecendo cerca de 6 a 7 dias com sangramento associado a dismenorreia moderada. Ao exame físico: PA: 120x70mmHg, FC: 78bpm, abdome plano, normotenso e indolor a palpação. Espécular: colo róseo, sem lesões ou conteúdo anormal; Toque: colo cartilaginoso, centrado, indolor a mobilização, útero centrado em anteversoflexão (AVF), globoso e aumentado de tamanho. Exames complementares: Hb: 11,2g/dl; Ht: 30%; USTV: útero AVF, centrado, volume de 195cm³. Ovário esquerdo: 4,2cm³, ovário direito: 5,7cm³, representado na figura. Qual a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adenomiose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hiperplasia endometrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Leiomiomatose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado é clássico para o diagnóstico de adenomiose, uma condição caracterizada pela presença de glândulas e estroma endometriais no interior do miométrio.\n\nAnálise do quadro clínico:\nA paciente apresenta a tríade clássica da adenomiose: Sangramento Uterino Anormal (aumento do fluxo e da duração), dismenorreia secundária e útero aumentado de tamanho de forma global (descrito no exame físico como útero globoso). O perfil da paciente (multípara, na quarta década de vida) também corrobora essa hipótese.\n\nAnálise da imagem e exames:\nO ultrassom transvaginal revela um útero com volume aumentado (195 cm³). A imagem ultrassonográfica é patognomônica, demonstrando um miométrio com textura heterogênea e a presença de pequenas áreas anecoicas (cistos miometrais ou lacunas), que representam pequenas ilhas de tecido endometrial que sangram dentro da musculatura uterina.\n\nAnálise das alternativas:\n\na) Correta. A adenomiose justifica o útero globoso, a dismenorreia e o sangramento aumentado. A imagem mostra as lacunas anecoicas e a heterogeneidade miometrial características da doença.\n\nb) Incorreta. Embora a endometriose compartilhe o sintoma de dismenorreia, ela se caracteriza por implantes de tecido endometrial fora do útero (peritônio, ovários, ligamentos). A endometriose isolada não costuma cursar com aumento do volume uterino ou com as alterações miometriais visualizadas na imagem.\n\nc) Incorreta. A hiperplasia endometrial é um diagnóstico histopatológico do endométrio. No ultrassom, ela se manifestaria como um espessamento endometrial importante e muitas vezes heterogêneo, e não como alterações císticas dentro da camada muscular (miométrio), como observado no caso.\n\nd) Incorreta. A leiomiomatose (miomas) também causa aumento do volume uterino e sangramento. Entretanto, ao ultrassom, os miomas aparecem como nódulos bem circunscritos, geralmente hipoecoicos e com sombra acústica lateral. O útero na leiomiomatose tende a ser irregular/nodular, enquanto na adenomiose o aumento é tipicamente globoso e o aspecto é infiltrativo e difuso, exatamente como exibido na figura.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Adenomiose"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/a9bde2e1aaac420be141873c9e9d0507e2911efc7e57caf6816ffaa5329125c4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_aff9cebe-5a31-4746-8306-8df640ca3683_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:40.031Z"
+  },
+  {
+    "id": "AJUDA_b0001a3f-ff9c-44e7-99f5-5903b85dcc8d",
+    "originalId": "b0001a3f-ff9c-44e7-99f5-5903b85dcc8d",
+    "statement": "Paciente, sexo masculino, 63 anos de idade, procura o ambulatório com queixa de empachamento pós-prandial, perda ponderal de 10,0 kg nos últimos 4 meses e vômitos ocasionais. Nega comorbidades prévias. Ao exame físico, regular estado geral, descorado +2/+4, emagrecido; auscultas respiratória e cardíaca sem alterações; abdome plano, flácido, dor leve à palpação profunda do epigástrio, sem sinais de irritação peritoneal, massas não palpáveis. Foi realizado endoscopia digestiva alta que mostrou lesão ulcerada no antro gástrico, medindo 4,0 cm; feito biópsia que confirmou adenocarcinoma gástrico intestinal de Lauren. Realizado tomografia computadorizada de abdome e pelve que evidenciou espessamento parietal antral, linfonodos perigástricos aumentados e ausência de metástases à distância.\n\nIndique a conduta mais correta para o tratamento cirúrgico do câncer gástrico distal localizado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastrectomia subtotal com margem distal de 3 cm, independentemente do tipo histológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gastrectomia subtotal com linfadenectomia D2, sem necessidade de ressecção do omento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gastrectomia total com linfadenectomia D3 e esofagojejunostomia em Y de Roux para todos os tumores antrais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gastrectomia subtotal com margem proximal ≥ 5 cm e linfadenectomia D2, preservando o baço se não houver invasão.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O paciente apresenta um adenocarcinoma gástrico distal (localizado no antro), do tipo intestinal de Lauren, sem metástases à distância identificadas na tomografia (doença potencialmente curável). O tratamento padrão com intenção curativa para neoplasias gástricas distais localmente avançadas é a ressecção cirúrgica com linfadenectomia oncológica.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A margem cirúrgica necessária varia conforme o tipo histológico; lesões do tipo difuso de Lauren têm padrão de crescimento infiltrativo e exigem margens maiores (geralmente acima de 6 a 8 cm) do que o tipo intestinal. Além disso, a alternativa não contempla a realização da linfadenectomia D2, obrigatória no tratamento oncológico curativo.\n\nAlternativa b: Incorreta. A gastrectomia com linfadenectomia D2 inclui obrigatoriamente a omentectomia (ressecção do omento maior e menor), pois a estrutura pode conter micrometástases e abriga linfonodos perigástricos relevantes (como os da cadeia gastroepiploica).\n\nAlternativa c: Incorreta. Tumores antrais permitem a realização de gastrectomia subtotal, que apresenta eficácia oncológica equivalente à total, com menor morbimortalidade e melhor qualidade de vida pós-operatória. Ademais, a linfadenectomia padrão é a D2; a D3 (estendida a linfonodos para-aórticos) não traz benefício comprovado de sobrevida e não é realizada de rotina.\n\nAlternativa d: Correta. Para o câncer gástrico de localização distal, a conduta padrão é a gastrectomia subtotal com margem proximal de segurança macroscópica de pelo menos 5 cm e linfadenectomia D2. A esplenectomia não é realizada de rotina, devendo o baço ser preservado, exceto em casos de invasão tumoral direta ou acometimento macroscopicamente evidente dos linfonodos do hilo esplênico.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:40.031Z"
+  },
+  {
+    "id": "AJUDA_b00846d6-a072-4c70-a634-15ce9c2ddcda",
+    "originalId": "b00846d6-a072-4c70-a634-15ce9c2ddcda",
+    "statement": "Samara, 34 anos, previamente hígida, chega para atendimento por estar há 2 dias com febre, cefaleia, dor retro-orbitária, mal-estar, náuseas e sangramento gengival após escovação dos dentes pela manhã. Ao exame físico, encontra-se em: regular estado geral, hidratada, eupneica, T: 38 °C e PA: 110 x 80 mmHg. Trata-se de um caso suspeito de dengue do",
+    "options": [
+      {
+        "id": "A",
+        "text": "grupo C. Deve-se solicitar hemograma, hidratação oral e acompanhamento em leito de observação até o resultado do exame. Caso hematócrito aumentado, após a reposição volêmica inicial, deve-se proceder à reavaliação clínica e laboratorial, mantendo hidratação na segunda hora até a reavaliação do hematócrito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "grupo B. Deve-se solicitar hemograma, hidratação oral e acompanhamento em leito de observação até o resultado do exame. Caso hematócrito aumentado, realizar reposição volêmica imediata, com reavaliação após 1 hora, e se paciente sentir-se bem e com sinais estáveis, orientar repouso, prescrição de analgésicos, retorno para reavaliação clínica e laboratorial diária até 48 horas após a queda da febre ou imediata se presença de sinais de alarme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "grupo C. Deve-se solicitar hemograma, hidratação oral e acompanhamento em leito de observação até o resultado do exame. Caso hematocrito estiver normal e paciente estável, o manejo deve ser realizado em ambiente ambulatorial, com hidratação oral, repouso, prescrição de analgésicos, retorno para reavaliação clínica e laboratorial diária até 48 horas após a queda da febre ou imediata se presença de sinais de alarme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "grupo A. O manejo deve ser realizado em ambiente ambulatorial, com hidratação oral, repouso, prescrição de analgésicos, agendamento de retorno para o dia da melhora da febre. Caso apresente sinais de alarme procurar atendimento imediato, preenchimento do cartão de acompanhamento e liberação para o domicílio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "grupo B. Deve-se solicitar hemograma, hidratação oral e acompanhamento em leito de observação até o resultado do exame. Caso hematócrito normal e paciente estável, o manejo deve ser realizado em ambiente ambulatorial, com hidratação oral, repouso, prescrição de analgésicos, retorno para reavaliação clínica e laboratorial diária até 48 horas após a queda da febre ou imediata se presença de sinais de alarme.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "CLASSIFICAÇÃO DO CASO:\n\nSamara apresenta um quadro clínico típico de dengue (febre, cefaleia, dor retro-orbitária e mal-estar). O ponto-chave para a classificação é o sangramento gengival relatado. De acordo com o protocolo do Ministério da Saúde, pacientes com suspeita de dengue que apresentam sangramento espontâneo de pele ou mucosas (como a gengivorragia ao escovar os dentes), mas que não possuem sinais de alarme graves nem instabilidade hemodinâmica, são classificados no Grupo B.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A paciente não preenche critérios iniciais para o Grupo C. O Grupo C é definido pela presença de sinais de alarme (como dor abdominal intensa e contínua, vômitos persistentes, acúmulo de líquidos, hipotensão postural ou letargia). O sangramento de mucosa isolado e sem repercussão hemodinâmica no início da abordagem direciona para o Grupo B para triagem laboratorial.\n\nAlternativa b) Incorreta. Embora identifique corretamente o Grupo B, a conduta descrita para o caso de hematócrito aumentado está equivocada. Se o hematócrito estiver aumentado (sinal de hemoconcentração), o paciente passa a ser manejado como Grupo C, exigindo hidratação venosa imediata e monitorização rigorosa, e não apenas orientação de repouso e retorno diário após uma hora.\n\nAlternativa c) Incorreta. Classifica a paciente erroneamente como Grupo C. Conforme explicado, a ausência de sinais de alarme mais graves ou de extravasamento plasmático evidente no exame físico inicial mantém a paciente no Grupo B para avaliação inicial por hemograma.\n\nAlternativa d) Incorreta. O Grupo A é destinado a pacientes hígidos, sem sinais de alarme e, fundamentalmente, sem qualquer tipo de sangramento (espontâneo ou provocado). O sangramento gengival de Samara obriga a investigação laboratorial (hemograma), o que a retira do Grupo A.\n\nAlternativa e) Correta. Esta alternativa descreve exatamente o protocolo para o Grupo B. Todo paciente do Grupo B deve realizar hemograma obrigatoriamente e permanecer em observação até o resultado do exame. Se o hematócrito estiver normal e o paciente estável, o tratamento pode ser ambulatorial com hidratação oral vigorosa, sintomáticos e, obrigatoriamente, reavaliação clínica e laboratorial diária até 48 horas após a defervescência (fim da febre).\n\nRESUMO DIDÁTICO PARA PROVAS:\n\n1. Grupo A: Sem sinais de alarme, sem sangramento, sem condições especiais. Conduta: Hidratação oral e casa.\n2. Grupo B: Sem sinais de alarme, mas com sangramento de pele/mucosa ou condições especiais (comorbidades, gestantes, idosos). Conduta: Hemograma obrigatório e observação até o resultado. Se hematócrito normal, conduta igual ao Grupo A com retorno diário. Se hematócrito alterado, conduta igual ao Grupo C.\n3. Grupo C: Presença de sinais de alarme (dor abdominal, vômitos, letargia, etc.). Conduta: Hidratação venosa imediata e internação.\n4. Grupo D: Sinais de choque ou falência de órgãos. Conduta: Hidratação venosa de emergência e UTI.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:40.031Z"
+  },
+  {
+    "id": "AJUDA_b0151808-ca1c-4bde-8aae-44908d75cf70",
+    "originalId": "b0151808-ca1c-4bde-8aae-44908d75cf70",
+    "statement": "Paciente feminina, de 45 anos, sem comorbidades, procurou atendimento por ter sido descoberto, de forma incidental em exame de imagem, um nódulo tireoidiano. Encontrava-se assintomática. Ao exame físico, palpou-se nódulo no lobo direito da tireoide. Ultrassonografia mostrou um nódulo sólido, hipoecogênico, com margens irregulares, microcalcificações e formato mais largo do que alto, medindo 1,3 cm no maior diâmetro. A dosagem de TSH estava normal. Segundo a classificação TI-RADS, do Colégio Americano de Radiologia (ACR-TI-RADS), qual a classificação do nódulo e qual a conduta a ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TI-RADS 3 – Manter observação clínica e realizar dosagem semestral de TSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TI-RADS 4 – Repetir ultrassonografia em 12 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "TI-RADS 5 – Realizar punção aspirativa por agulha fina (PAAF).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "TI-RADS 5 – Indicar cirurgia imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para classificar o nódulo pelo sistema ACR TI-RADS (American College of Radiology), devemos atribuir pontos às características ultrassonográficas descritas:\n\n1. Composição: Sólido (2 pontos).\n2. Ecogenicidade: Hipoecogênico (2 pontos).\n3. Formato: Mais largo do que alto (0 pontos). O formato \"mais alto do que largo\" somaria 3 pontos, mas o enunciado descreve o contrário.\n4. Margens: Irregulares (2 pontos).\n5. Focos ecogênicos: Microcalcificações/focos ecogênicos pontiformes (3 pontos).\n\nTotal de pontos: 9 pontos.\n\nDe acordo com os critérios de pontuação do ACR TI-RADS:\n- TI-RADS 1 (Benigno): 0 pontos.\n- TI-RADS 2 (Não suspeito): 2 pontos.\n- TI-RADS 3 (Levemente suspeito): 3 pontos.\n- TI-RADS 4 (Moderadamente suspeito): 4 a 6 pontos.\n- TI-RADS 5 (Altamente suspeito): 7 ou mais pontos.\n\nCom 9 pontos, o nódulo é classificado como TI-RADS 5. A diretriz recomenda a realização de PAAF (Punção Aspirativa por Agulha Fina) para nódulos TI-RADS 5 que medem 1,0 cm ou mais. Como o nódulo da paciente mede 1,3 cm, a PAAF está indicada.\n\nAnálise das alternativas:\n\na) Incorreta. O nódulo apresenta características de alta suspeição maligna (microcalcificações, margens irregulares e solidez), totalizando 9 pontos, o que o classifica como TI-RADS 5, e não como TI-RADS 3. A conduta de observação não é adequada para este nível de risco e tamanho.\n\nb) Incorreta. A classificação correta é TI-RADS 5 devido à pontuação acumulada. O acompanhamento em 12 meses seria reservado para nódulos TI-RADS 4 menores do que 1,5 cm ou TI-RADS 5 menores do que 1,0 cm (porém maiores do que 0,5 cm).\n\nc) Correta. O nódulo é classificado como TI-RADS 5 (altamente suspeito) e, por ter ultrapassado o ponto de corte de 1,0 cm, a conduta padrão é a investigação diagnóstica com PAAF.\n\nd) Incorreta. Mesmo em nódulos altamente suspeitos por imagem, a conduta inicial na tireoide não é a cirurgia direta. A PAAF é necessária para a análise citológica (classificação de Bethesda), que definirá o risco real de malignidade e orientará o planejamento cirúrgico (tireoidectomia total versus lobectomia) ou conservador.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:40.031Z"
+  },
+  {
+    "id": "AJUDA_b018c200-ec66-4983-97c9-192890cbc1e0",
+    "originalId": "b018c200-ec66-4983-97c9-192890cbc1e0",
+    "statement": "Qual dos exames listados abaixo NÃO é realizado pelo Teste do Pezinho oferecido pelo Sistema Único de Saúde para os recém-nascidos no Estado de Pernambuco?",
+    "options": [
+      {
+        "id": "A",
+        "text": "T4 livre",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "17 alfa hidroxiprogesterona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tripsina imunorreativa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fenilalanina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "IGM para Toxoplasmose",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a letra (a).\n\nO Teste do Pezinho, regulamentado pelo Programa Nacional de Triagem Neonatal (PNTN), utiliza marcadores específicos para identificar precocemente doenças assintomáticas no período neonatal. No caso do hipotireoidismo congênito, o exame de rastreio realizado pelo SUS é a dosagem do TSH neonatal (hormônio estimulante da tireoide) coletado em papel-filtro. O T4 livre é um exame de confirmação diagnóstica, solicitado apenas após a detecção de um TSH alterado na triagem, não fazendo parte da rotina inicial do teste.\n\nAbaixo, a explicação sobre a presença das demais alternativas no programa de Pernambuco:\n\nb) 17-alfa-hidroxiprogesterona: Este marcador é utilizado para a triagem da hiperplasia adrenal congênita. Ele identifica recém-nascidos com risco de crises de perda de sal e virilização por deficiência enzimática na glândula adrenal.\n\nc) Tripsina imunorreativa (IRT): É o exame utilizado para o rastreio da fibrose cística. O protocolo exige que, se o primeiro teste for alterado, uma segunda amostra seja coletada em até 30 dias para confirmar a suspeita antes de prosseguir para o teste do suor.\n\nd) Fenilalanina: Este é o exame para detectar a fenilcetonúria, um erro inato do metabolismo dos aminoácidos. É uma das doenças mais antigas e fundamentais do programa de triagem em todo o Brasil.\n\ne) IgM para toxoplasmose: O estado de Pernambuco incluiu a triagem para doenças infecciosas em seu programa estadual. A pesquisa de anticorpos IgM identifica a toxoplasmose congênita, permitindo o tratamento imediato para prevenir danos oculares e neurológicos permanentes na criança.\n\nPortanto, a única opção que descreve um exame que não é de triagem inicial (screening) no Teste do Pezinho do SUS em Pernambuco é o T4 livre.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Infecções Congênitas",
+      "Cuidados Neonatais",
+      "Hiperplasia Adrenal Congênita",
+      "Fibrose Cística",
+      "Hipotireoidismo Congênito"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:40.031Z"
+  }
+]

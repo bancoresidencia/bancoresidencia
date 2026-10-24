@@ -1,0 +1,524 @@
+[
+  {
+    "id": "AJUDA_aa6a2995-6b70-4865-a9e2-935347a835ee",
+    "originalId": "aa6a2995-6b70-4865-a9e2-935347a835ee",
+    "statement": "O traumatismo cranioencefálico (TCE) é um dos acidentes mais frequentes em pediatria. Os TCEs classificados como grave são aqueles onde a Escala de Coma de Glasgow (ECG) é menor ou igual a 8. O paciente que sofreu um acidente automobilístico e no momento do seu exame físico abre o olho em reposta a dor, apresenta-se falando sons incompreensíveis e com movimentos de decorticação, possui qual valor na ECG?",
+    "options": [
+      {
+        "id": "A",
+        "text": "8",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "7",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "4",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos aplicar os critérios da Escala de Coma de Glasgow (ECG), que avalia três parâmetros: abertura ocular, resposta verbal e resposta motora. No caso descrito, o paciente apresenta os seguintes achados:\n\n1. Abertura Ocular: O paciente abre os olhos apenas em resposta à dor (estímulo pressórico). Na escala, a pontuação para abertura ocular é: Espontânea (4), À voz (3), À dor (2) e Ausente (1). Portanto, o paciente recebe 2 pontos.\n\n2. Resposta Verbal: O paciente emite sons incompreensíveis (gemidos, sem palavras reconhecíveis). A pontuação para resposta verbal é: Orientado (5), Confuso (4), Palavras inapropriadas (3), Sons incompreensíveis (2) e Ausente (1). Portanto, o paciente recebe 2 pontos.\n\n3. Resposta Motora: O paciente apresenta movimentos de decorticação, que é a flexão anormal ou padrão flexor frente ao estímulo. A pontuação para resposta motora é: Obedece a comandos (6), Localiza a dor (5), Flexão normal/Retirada (4), Flexão anormal/Decorticação (3), Extensão/Decerebração (2) e Ausente (1). Portanto, o paciente recebe 3 pontos.\n\nSomando as pontuações: 2 (Ocular) + 2 (Verbal) + 3 (Motor) = 7 pontos.\n\nAnálise das alternativas:\n\na) Incorreta. O valor 8 seria alcançado se o paciente apresentasse um ponto a mais em qualquer um dos critérios, como, por exemplo, se proferisse palavras isoladas (resposta verbal 3) ou se retirasse o membro à dor (resposta motora 4).\n\nb) Correta. A soma exata dos achados clínicos descritos (Abertura ocular à dor = 2; Sons incompreensíveis = 2; Decorticação = 3) resulta em 7.\n\nc) Incorreta. O valor 6 ocorreria se o paciente estivesse em um nível de consciência mais rebaixado, como apresentando decerebração (extensão) em vez de decorticação, o que subtrairia um ponto na resposta motora.\n\nd) Incorreta. Para chegar ao valor 5, o paciente precisaria ter respostas mínimas em quase todos os campos (ex.: abertura ocular à dor, sem resposta verbal e decerebração).\n\ne) Incorreta. O valor 4 indica um quadro neurológico extremamente grave, próximo da ausência total de resposta (que é o valor mínimo 3).",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Trauma",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  },
+  {
+    "id": "AJUDA_aa7d7164-3c54-4ba9-9e75-951f9ad8f9b1",
+    "originalId": "aa7d7164-3c54-4ba9-9e75-951f9ad8f9b1",
+    "statement": "Criança, 8 anos de idade, queixava de queimação retroesternal e epigastralgia após refeições, há 3 meses. Nega engasgos, dificuldades de deglutição, alterações do hábito intestinal ou do peso. Orientado sobre modificações de estilo de vida com pouca mudança da sintomatologia. Dessa forma, foi realizado tratamento com omeprazol por 10 dias com resolução das queixas. Porém, ao suspender a medicação, os sintomas retornaram.\nAssinale a alternativa que apresenta, corretamente, a orientação, segundo o protocolo da Sociedade Brasileira de Pediatria.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estender o tratamento com omeprazol por 4 a 8 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Manter sem medicação e suspender o leite de vaca por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar ultrassom de abdome para afastar alterações pilóricas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratar com dexlansoprazol por 7 dias e reavaliar sem medicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trocar a classe de inibidor de acidez, a exemplo da domperidona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ESTRUTURA DA QUESTÃO: A questão aborda o manejo terapêutico da Doença do Refluxo Gastroesofágico (DRGE) na faixa etária pediátrica, especificamente em escolares, de acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP) e da NASPGHAN/ESPGHAN.\n\nANÁLISE DO CASO CLÍNICO:\nA paciente apresenta sintomas típicos de refluxo (queimação retroesternal e epigastralgia), sem sinais de alerta (manutenção do peso, ausência de disfagia ou vômitos persistentes). Após falha nas medidas comportamentais, houve resposta clínica positiva ao uso de Inibidor de Bomba de Prótons (IBP) – Omeprazol –, porém com recidiva imediata após apenas 10 dias de uso.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\nSegundo o Consenso de Refluxo Gastroesofágico da SBP, em crianças maiores e adolescentes com sintomas típicos, é indicado o teste terapêutico com IBP. No entanto, para que o tratamento seja considerado eficaz e promova a cicatrização da mucosa esofágica ou a remissão sustentada dos sintomas, o tempo recomendado é de 4 a 8 semanas. O uso por apenas 10 dias, como descrito no enunciado, é insuficiente para consolidar a resposta terapêutica, justificando o retorno dos sintomas após a suspensão precoce. Portanto, a conduta correta é estender o tratamento pelo prazo padrão de 1 a 2 meses.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa B: A exclusão de leite de vaca (dieta de exclusão) é uma conduta comum em lactentes com suspeita de alergia à proteína do leite de vaca (APLV), que pode mimetizar sintomas de refluxo. Em uma criança de 8 anos com queixas típicas e sem alterações intestinais, a suspeita de DRGE é muito mais provável, e o teste com IBP já se mostrou eficaz no controle dos sintomas.\n\nAlternativa C: A ultrassonografia de abdome para busca de alterações pilóricas (como a estenose hipertrófica do piloro) é indicada para lactentes jovens (geralmente entre 3 e 6 semanas de vida) com vômitos em jato. Não há indicação para esse exame em uma criança de 8 anos com sintomas de queimação há 3 meses.\n\nAlternativa D: O dexlansoprazol é um IBP de liberação prolongada que pode ser utilizado, mas o erro da alternativa reside no tempo de tratamento (7 dias). Assim como o omeprazol, o tratamento curto não é adequado para o manejo da DRGE; o protocolo exige o período de 4 a 8 semanas.\n\nAlternativa E: A domperidona é um procinético, e não um \"inibidor de acidez\". Além disso, as diretrizes atuais de pediatria não recomendam o uso rotineiro de procinéticos (domperidona, metoclopramida) para o tratamento da DRGE, devido à baixa evidência de eficácia e ao risco de efeitos colaterais (como sintomas extrapiramidais e prolongamento do intervalo QT). O padrão-ouro para controle da acidez permanece sendo a classe dos IBPs.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  },
+  {
+    "id": "AJUDA_aa7fa8b2-3625-48ad-a48e-041927401844",
+    "originalId": "aa7fa8b2-3625-48ad-a48e-041927401844",
+    "statement": "Nas últimas décadas, a rápida industrialização, urbanização e crescimento populacional levaram à degradação ambiental e às mudanças climáticas, afetando diretamente a saúde humana. O conceito de saúde planetária reconhece que a saúde da população está intrinsecamente ligada à saúde dos ecossistemas naturais, e que doenças infecciosas, doenças crônicas não transmissíveis e problemas de saúde mental são influenciados por fatores ambientais, sociais e econômicos. A atenção primária à saúde (APS) desempenha papel central na prevenção, diagnóstico e manejo de doenças, bem como na educação e mobilização comunitária. Além do cuidado clínico, os profissionais de saúde atuam como agentes de mudança, promovendo práticas sustentáveis, redução de emissões de gases de efeito estufa, conscientização sobre os riscos ambientais em saúde.\n\nUm ACS relata aumento de quedas e acidentes domésticos em crianças de 2 a 5 anos em uma comunidade urbana do Norte do Brasil, onde há poluição do ar elevada e exposição à fumaça de queimadas. O pediatra da APS deve implementar estratégias para reduzir acidentes, incluindo educação familiar, prevenção ambiental e promoção da saúde infantil. Qual ação a APS deve priorizar neste cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrição de medicamentos preventivos para trauma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação de todas as crianças acidentadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Educação parental, segurança doméstica e mitigação ambiental.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transferência de crianças para outras regiões.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Comentário do Especialista:\n\nA questão aborda o conceito de Saúde Planetária no âmbito da Atenção Primária à Saúde (APS), focando na intersetorialidade e na prevenção de agravos externos e ambientais na infância. O cenário descrito envolve crianças de 2 a 5 anos, faixa etária de alta vulnerabilidade a acidentes domésticos, agravada por condições ambientais adversas (poluição e fumaça de queimadas).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Não existem medicamentos com indicação clínica para a prevenção de traumas ou acidentes. A prevenção de causas externas é baseada em mudanças comportamentais, estruturais e ambientais, e não em intervenções farmacológicas.\n\nAlternativa (b) Incorreta. A internação é uma medida de cuidado hospitalar destinada a casos de maior gravidade ou que necessitam de vigilância intensiva. Além de não ser uma estratégia de prevenção, a internação de todos os casos sobrecarregaria o sistema de saúde sem atuar na raiz do problema (as causas dos acidentes).\n\nAlternativa (c) Correta. Esta alternativa reflete os pilares da promoção da saúde e prevenção de doenças na APS. A educação parental capacita os cuidadores a identificar riscos; a segurança doméstica propõe adaptações físicas no ambiente para evitar quedas; e a mitigação ambiental aborda os determinantes externos mencionados no enunciado (poluição e fumaça), que podem comprometer a visibilidade e a saúde respiratória, contribuindo indiretamente para o aumento de acidentes e a piora da qualidade de vida. É a resposta que melhor integra o cuidado clínico com o conceito de Saúde Planetária.\n\nAlternativa (d) Incorreta. A transferência de populações não é uma estratégia de saúde pública viável nem ética para o manejo de riscos ambientais locais. A missão da APS é atuar no território, transformando a realidade local e promovendo a sustentabilidade e a saúde da comunidade onde esta reside.\n\nGabarito: Letra (c).",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  },
+  {
+    "id": "AJUDA_aa86ae68-3f04-415a-ae21-6bdf65e69d1c",
+    "originalId": "aa86ae68-3f04-415a-ae21-6bdf65e69d1c",
+    "statement": "Um homem negro de 55 anos, sem histórico familiar de câncer de próstata, comparece ao Núcleo de Apoio à Saúde da Família (NASF) buscando orientações sobre como reduzir seu risco de desenvolver a doença. Ele está preocupado com o fator racial de risco e deseja adotar medidas de prevenção primária baseada em evidências. Ele relata dieta rica em gorduras saturadas, sobrepeso e baixo consumo de vegetais.\nConsiderando os princípios da Medicina Preventiva e um maior nível de evidência disponível para redução do câncer de próstata clinicamente significativo, das seguintes orientações, assinale a que deve ser enfatizada pelo profissional de saúde como a estratégia de prevenção primária mais robusta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Recomendar o rastreamento anual com toque retal e dosagem de Antígeno Prostático Específico (PSA), por serem medidas eficazes para impedir o avanço da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar o uso de um suplemento diário de licopeno, devido às evidências conclusivas do seu potencial antioxidante na redução da proliferação celular prostática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sugerir o uso de Finasterida (5mg/dia), explicando que a quimioprevenção é a principal estratégia para indivíduos com fatores de risco aumentado, como a raça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aconselhar uma intervenção no estilo de vida, enfatizando o aumento da atividade física, a redução de gorduras saturadas e o consumo de uma dieta rica em verduras, frutas e grãos integrais, não fumar e evitar o consumo de álcool.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Recomendar uma abstenção total de consumo de laticínios, pois o cálcio está consistentemente associado a um aumento significativo do câncer de próstata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender esta questão, é fundamental diferenciar Prevenção Primária de Prevenção Secundária no contexto da oncologia e da saúde coletiva.\n\nA alternativa (a) está incorreta porque o rastreamento (*screening*) com PSA e toque retal é classificado como Prevenção Secundária. O objetivo do rastreamento é o diagnóstico precoce em indivíduos assintomáticos para melhorar o prognóstico, e não evitar que a doença surja. Além disso, a eficácia do rastreamento populacional sistemático ainda é alvo de debates devido ao risco de sobrediagnóstico e sobretratamento.\n\nA alternativa (b) está incorreta. Embora o licopeno, presente em alimentos como o tomate, tenha sido estudado por suas propriedades antioxidantes, as evidências científicas atuais não são consideradas conclusivas ou robustas o suficiente para recomendar a suplementação isolada como a principal medida de prevenção. Grandes estudos, como o SELECT, falharam em demonstrar benefícios claros de suplementos específicos na prevenção do câncer de próstata.\n\nA alternativa (c) está incorreta. O uso de inibidores da 5-alfa-redutase, como a finasterida, foi avaliado em grandes ensaios clínicos (como o PCPT). Embora tenha havido uma redução na incidência global de câncer de próstata, observou-se um aumento potencial no risco de tumores de alto grau (mais agressivos). Portanto, a quimioprevenção não é recomendada como estratégia de rotina ou principal medida preventiva, especialmente para casos \"clinicamente significativos\".\n\nA alternativa (d) está correta e é a resposta da questão. A Prevenção Primária foca na redução da incidência da doença por meio do controle de fatores de risco modificáveis. Mudanças no estilo de vida, incluindo a manutenção de um peso saudável, a prática de atividade física regular e uma dieta equilibrada (pobre em gordura saturada e rica em vegetais), possuem o maior nível de evidência para a promoção da saúde global e a redução do risco de diversos tipos de câncer. No caso do câncer de próstata, a obesidade e a síndrome metabólica estão fortemente associadas a tumores mais agressivos e de pior prognóstico.\n\nA alternativa (e) está incorreta. Existe alguma associação epidemiológica entre o consumo excessivo de cálcio e laticínios e o risco de câncer de próstata, mas as evidências não são fortes o suficiente para recomendar a \"abstenção total\". Recomendações dietéticas extremas sem uma base sólida de evidência clínica não fazem parte das diretrizes de prevenção primária.\n\nResumo: A questão exige o conhecimento de que a modificação de hábitos de vida é a base da Prevenção Primária para doenças crônicas e neoplasias, agindo diretamente nos fatores que podem desencadear a patologia, enquanto o rastreamento é uma medida de detecção precoce (secundária).",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  },
+  {
+    "id": "AJUDA_aa928e14-c112-4047-a023-24cbd15b58c5",
+    "originalId": "aa928e14-c112-4047-a023-24cbd15b58c5",
+    "statement": "Homem, 40 anos de idade, está em tratamento para hanseníase dimorfo-virchowiana há 2 meses com poliquimioterapia multibacilar. Refere, há três dias, \"caroços\" dolorosos na face, tronco e membros, associados a febre de 38,5°C, edema nas mãos e pés, e dor no trajeto dos nervos ulnares bilateralmente. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender o tratamento para a hanseníase e iniciar anti-inflamatórios não hormonais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter o tratamento para a hanseníase e associar claritromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender o tratamento para a hanseníase e iniciar metotrexato via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter o tratamento para a hanseníase e iniciar prednisona e talidomida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Entrar com imunoglobulina intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta hanseníase multibacilar (dimorfo-virchowiana) em tratamento regular e desenvolveu um quadro súbito de Reação Hansênica do Tipo 2, também conhecida como Eritema Nodoso Hansênico (ENH). Os sinais clássicos apresentados são os nódulos subcutâneos dolorosos (caroços), febre e edema de extremidades. A queixa de dor no trajeto dos nervos ulnares bilateralmente indica a presença de neurite associada, o que é uma emergência médica para evitar sequelas motoras e sensitivas permanentes.\n\nRegras fundamentais no manejo das reações:\n1. Nunca suspender a poliquimioterapia (PQT/MDT). O tratamento contra o bacilo deve continuar independentemente da reação.\n2. O tratamento da reação visa interromper a cascata inflamatória e proteger os troncos nervosos.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A poliquimioterapia jamais deve ser suspensa durante episódios reacionais, pois a reação é uma resposta imunológica aos antígenos do bacilo e não uma intolerância à medicação. Além disso, anti-inflamatórios não hormonais são insuficientes para tratar a gravidade de uma neurite e do ENH sistêmico.\n\nAlternativa b: Incorreta. Embora a manutenção do tratamento esteja correta, a claritromicina é um antibiótico alternativo para a hanseníase e não possui papel no controle do processo inflamatório agudo da reação tipo 2.\n\nAlternativa c: Incorreta. Suspender o tratamento específico é um erro técnico. O metotrexato pode ser usado como um poupador de corticoide em casos crônicos ou recidivantes, mas não é a droga de primeira escolha para o manejo agudo de uma reação tipo 2 com neurite.\n\nAlternativa d: Correta. Esta é a conduta preconizada. A manutenção da PQT é obrigatória para a cura da doença. A talidomida é o fármaco padrão-ouro para o eritema nodoso hansênico (nódulos e febre). Contudo, como o paciente apresenta evidência de comprometimento nervoso (neurite nos nervos ulnares), o uso de corticoides (prednisona) é mandatório para reduzir o edema intraneural e prevenir a perda de função do nervo.\n\nAlternativa e: Incorreta. A imunoglobulina intravenosa não tem indicação e não faz parte dos protocolos terapêuticos do Ministério da Saúde ou da Organização Mundial da Saúde para o manejo de reações hansênicas.\n\nGabarito: Letra d.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Hanseníase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  },
+  {
+    "id": "AJUDA_aa94af10-c41e-4312-8b46-7078c7b27412",
+    "originalId": "aa94af10-c41e-4312-8b46-7078c7b27412",
+    "statement": "Menina de 4 anos apresenta há três dias conjuntivite unilateral à esquerda, com edema e hiperemia, mas indolor e sem secreção. Também apresenta linfadenopatia pré-auricular ipsilateral. Nega febre ou sintomas respiratórios. Não fez viagem recente, tem gato e cachorro em casa; nega casos semelhantes na família.\nQual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glaucoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Conjuntivite por adenovírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Conjuntivite por Epstein-Barr.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ceratoconjuntivite por esporotricose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome oculoglandular de Parinaud.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Texto Original:\nEsta questão exige o reconhecimento de um quadro clínico clássico na pediatria e oftalmologia: a Síndrome Oculoglandular de Parinaud. O caso apresenta uma menina de 4 anos com conjuntivite unilateral, edema, ausência de dor e de secreção, associada a uma linfadenopatia pré-auricular no mesmo lado. O dado epidemiológico de que a criança possui gatos é fundamental para o raciocínio diagnóstico.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O glaucoma em crianças costuma cursar com a tríade de fotofobia, blefaroespasmo e lacrimejamento excessivo. Em quadros agudos, pode haver dor intensa e turvação visual, mas não há associação típica com linfadenopatia pré-auricular ou história de contato com animais como fator causal direto para conjuntivite.\n\nAlternativa b: Incorreta. A conjuntivite por adenovírus é muito comum e pode apresentar o linfonodo pré-auricular palpável. No entanto, ela costuma ser acompanhada de secreção aquosa profusa, sintomas gripais (como febre e dor de garganta na febre faringoconjuntival) e geralmente torna-se bilateral rapidamente devido ao alto grau de transmissibilidade.\n\nAlternativa c: Incorreta. A infecção pelo vírus Epstein-Barr (mononucleose) manifesta-se tipicamente com febre, faringite exsudativa e linfadenopatia generalizada, atingindo principalmente a cadeia cervical posterior. Não é a causa habitual de uma conjuntivite unilateral isolada com as características descritas.\n\nAlternativa d: Incorreta. A esporotricose é uma infecção fúngica que pode, sim, causar a Síndrome de Parinaud, especialmente em regiões onde a transmissão por gatos é endêmica. Contudo, o termo ceratoconjuntivite indica o envolvimento da córnea, o que não foi descrito no exame físico da paciente. Além disso, a alternativa E é mais abrangente por nomear a síndrome clínica exata.\n\nAlternativa e: Correta. A Síndrome Oculoglandular de Parinaud é caracterizada por conjuntivite granulomatosa unilateral e linfadenopatia regional (pré-auricular, submandibular ou cervical). A causa mais comum é a Doença da Arranhadura do Gato, causada pela bactéria Bartonella henselae, que é transmitida pelo contato, mordedura ou arranhadura de felinos. O quadro descrito na questão é a apresentação típica dessa síndrome, unindo os achados oculares, o linfonodo satélite e o contexto epidemiológico.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Síndrome do Olho Vermelho"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  },
+  {
+    "id": "AJUDA_aa986471-f8c6-48e6-a748-fc38d90bb266",
+    "originalId": "aa986471-f8c6-48e6-a748-fc38d90bb266",
+    "statement": "Um paciente com DPOC avançada apresenta dispneia aos mínimos esforços. Qual é o tratamento indicado para prolongar a sobrevida em pacientes com hipoxemia crônica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Broncodilatadores de longa ação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oxigenoterapia domiciliar de longa duração.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Corticoides inalatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antibióticos profiláticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Comentários sobre as alternativas:\n\nAlternativa (a) Incorreta. Os broncodilatadores de longa ação (LABA e LAMA) são fundamentais no manejo da DPOC. Eles atuam na redução da dispneia, na melhora da função pulmonar e na diminuição da frequência de exacerbações. No entanto, apesar de melhorarem significativamente a qualidade de vida, não existem evidências definitivas de que esses medicamentos isoladamente consigam prolongar a sobrevida dos pacientes.\n\nAlternativa (b) Correta. A oxigenoterapia domiciliar de longa duração (ODLD) é uma das poucas intervenções na DPOC que comprovadamente reduzem a mortalidade. Para isso, deve ser utilizada por, no mínimo, 15 horas por dia (idealmente mais de 18 horas). Ela é indicada para pacientes com hipoxemia grave em repouso, definida como PaO2 igual ou menor que 55 mmHg (ou saturação de O2 igual ou menor que 88%) ou quando a PaO2 está entre 56 e 59 mmHg na presença de cor pulmonale, insuficiência cardíaca direita ou poliglobulia (hematócrito > 55%).\n\nAlternativa (c) Incorreta. Os corticoides inalatórios são utilizados para reduzir o número de exacerbações em pacientes com DPOC moderada a grave que apresentam fenótipo exacerbador ou contagem elevada de eosinófilos no sangue. Embora sejam eficazes no controle das crises, não demonstram impacto direto na sobrevida quando analisados de forma isolada.\n\nAlternativa (d) Incorreta. O uso de antibióticos profiláticos (como a azitromicina de uso contínuo ou intermitente) é reservado para pacientes selecionados que mantêm exacerbações frequentes mesmo com o tratamento inalatório otimizado. Essa estratégia reduz o número de novas crises e melhora a qualidade de vida, mas não é uma medida indicada para prolongar a sobrevida em pacientes com hipoxemia crônica.\n\nResumo didático: As únicas intervenções que comprovadamente aumentam a sobrevida na DPOC estável são a cessação do tabagismo e a oxigenoterapia domiciliar de longa duração (respeitados os critérios de indicação). Em casos muito específicos de enfisema de lobos superiores, a cirurgia de redução de volume pulmonar também pode trazer esse benefício.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  },
+  {
+    "id": "AJUDA_aa98cf56-268a-4e53-bb1f-9bbbee9f37d8",
+    "originalId": "aa98cf56-268a-4e53-bb1f-9bbbee9f37d8",
+    "statement": "A mãe de Lucas, um lactente de 18 meses de idade, comparece à consulta de puericultura expressando preocupação com o desenvolvimento do filho. Ela relata que Lucas ainda não aponta para objetos de interesse, prefere brincar sozinho alinhando seus carrinhos e tem dificuldade em manter contato visual. Além disso, não responde consistentemente quando chamado pelo nome. A mãe menciona que um familiar sugeriu que “cada criança tem seu tempo” e que não se deve “rotular” cedo demais. Lucas teve desenvolvimento motor típico e não há histórico familiar de problemas do desenvolvimento. Considerando a idade de Lucas e os relatos da mãe, e de acordo com as recomendações da Sociedade Brasileira de Pediatria, qual é a conduta inicial mais apropriada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tranquilizar a mãe, explicando que os sinais são inespecíficos para a idade e que uma reavaliação deve ser agendada para os 24 meses de vida, quando os marcos de linguagem estarão mais estabelecidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar a aplicação do questionário M-CHAT-R/F e, caso o resultado indique risco de TEA, iniciar imediatamente o processo de encaminhamento para avaliação multidisciplinar especializada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar exames de neuroimagem, como ressonância magnética de crânio, para descartar outras condições neurológicas que possam justificar os sintomas apresentados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever risperidona em baixa dose para tentar melhorar a interação social e diminuir a irritabilidade, aguardando a resposta terapêutica antes de outras investigações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Recomendar a inclusão da criança em uma creche ou berçário para estimular a socialização, considerando que a falta de contato com outras crianças pode ser a principal causa dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico de Lucas apresenta sinais de alerta clássicos, conhecidos como red flags, para o Transtorno do Espectro Autista (TEA). Aos 18 meses, a ausência de atenção compartilhada (não apontar para objetos), o brincar restritivo e repetitivo (alinhar carrinhos), o contato visual pobre e a falta de resposta ao chamado pelo nome são indicadores significativos que exigem investigação imediata.\n\nAlternativa a: Incorreta. A conduta de \"esperar para ver\" ou acreditar que cada criança tem seu tempo é contraindicada diante de sinais de alerta claros. A janela de oportunidade para intervenção precoce é fundamental, pois a plasticidade neuronal nessa idade permite melhores ganhos no desenvolvimento. Aguardar até os 24 meses retardaria o suporte necessário.\n\nAlternativa b: Correta. De acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP) e do Ministério da Saúde, deve-se realizar o rastreamento universal para TEA em todas as crianças entre 16 e 30 meses de idade. O M-CHAT-R/F (Modified Checklist for Autism in Toddlers, Revised with Follow-Up) é a ferramenta padrão-ouro para esse rastreio na atenção primária. Se o questionário indicar risco, a criança deve ser encaminhada para avaliação especializada e já iniciar intervenções precoces, mesmo antes da confirmação diagnóstica final.\n\nAlternativa c: Incorreta. O diagnóstico do autismo é clínico, baseado nos critérios do DSM-5 ou CID-11. Exames de neuroimagem, como a ressonância magnética, não possuem achados específicos que confirmem o TEA. Eles são reservados apenas para casos em que há suspeita de doenças neurológicas associadas, como crises convulsivas ou sinais focais no exame físico, o que não é o caso relatado.\n\nAlternativa d: Incorreta. Medicamentos como a risperidona são indicados apenas para o controle de sintomas-alvo específicos, como irritabilidade grave, agressividade ou automutilação, e não para tratar o núcleo central do transtorno (comunicação e interação social). O uso de psicofármacos nunca deve ser a conduta inicial ou substituta do rastreamento e das terapias de estimulação.\n\nAlternativa e: Incorreta. Embora a inserção em ambiente escolar possa favorecer a socialização, ela não substitui a necessidade de avaliação clínica. Os sinais apresentados por Lucas são déficits de marcos do desenvolvimento que não são causados apenas por falta de estímulo social externo, mas sim por uma condição do neurodesenvolvimento que exige abordagem terapêutica específica.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  },
+  {
+    "id": "AJUDA_aa995a23-b9a8-4816-8a0a-8b20357778f4",
+    "originalId": "aa995a23-b9a8-4816-8a0a-8b20357778f4",
+    "statement": "Qual das características a seguir não é típica do eczema areolar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prurido intenso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ausência de resposta aos corticosteroides.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Bordos indefinidos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Descamação do complexo aréolo papila.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Bilateralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto central desta questão é o diagnóstico diferencial entre o eczema areolar e a Doença de Paget da mama. O eczema é uma condição inflamatória benigna, enquanto a Doença de Paget é uma manifestação de carcinoma ductal (in situ ou invasor).\n\nAnálise das alternativas:\n\na) Prurido intenso: O prurido (coceira) é um sintoma cardeal de qualquer processo eczematoso. No eczema areolar, o desejo de coçar é frequente e muitas vezes é o que leva a paciente à consulta. Portanto, é uma característica típica.\n\nb) Ausência de resposta aos corticosteroides: Esta é a alternativa correta (a característica que NÃO é típica). Por ser um processo inflamatório/alérgico, o eczema areolar costuma apresentar uma excelente e rápida resposta ao uso de corticoides tópicos. A ausência de melhora após o tratamento clínico com corticoides é, inclusive, um sinal de alerta (red flag) que obriga o médico a realizar uma biópsia para excluir a Doença de Paget, que não regride com esse tratamento.\n\nc) Bordos indefinidos: Lesões de eczema ou dermatites em geral tendem a apresentar margens mal delimitadas, que se \"misturam\" gradualmente com a pele sã ao redor. Em contraste, a Doença de Paget costuma ter bordos bem definidos e nítidos. Logo, bordos indefinidos são típicos do eczema.\n\nd) Descamação do complexo aréolo-papila: A descamação é uma alteração elementar secundária muito comum nos eczemas, refletindo o processo de renovação celular acelerada e o dano à barreira cutânea. É uma característica esperada na apresentação clínica.\n\ne) Bilateralidade: O eczema areolar está frequentemente associado à dermatite atópica e, por ser uma condição sistêmica ou de sensibilidade da pele, é comum que se manifeste nas duas mamas simultaneamente ou em períodos próximos. A Doença de Paget, por ser de origem neoplásica, é quase invariavelmente unilateral. Assim, a bilateralidade sugere fortemente um quadro benigno como o eczema.\n\nGabarito: Letra (b).",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Benignas da Mama",
+      "Dermatoses Eczematosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  },
+  {
+    "id": "AJUDA_aaa22dbb-22de-4524-bf2a-2d74985ac7b7",
+    "originalId": "aaa22dbb-22de-4524-bf2a-2d74985ac7b7",
+    "statement": "Um mulher multípara em trabalho de parto, com apresentação cefálica, já com dilatação completa, inicia a fase de expulsão. O feto encontra-se em posição occipital posterior, o que pode dificultar a progressão do parto. Qual das alternativas a seguir descreve corretamente o mecanismo compensatório que o feto realiza para facilitar a passagem pelo canal vaginal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flexão exagerada do pescoço para aumentar o diâmetro do plano de saída.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Rotação interna da cabeça para occipital anterior e posterior à saída da cabeça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Extensão da cabeça combinada com rotação externa após a saída da cabeça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rotação externa antes da saída do ombro para alinhar com o eixo da pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Flexão do tronco para facilitar a passagem pelo estreito médio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Questão:\n\nA variedade de posição occipital posterior (OP) ocorre quando o dorso fetal está voltado para a coluna materna. Essa posição é mais desafiadora porque os diâmetros da cabeça fetal que se apresentam à pelve são geralmente maiores e menos favoráveis do que na posição occipital anterior (OA). Enquanto na posição anterior o diâmetro apresentado é o suboccipitobregmático (9,5 cm), na posterior persistente o feto frequentemente apresenta o diâmetro occipitofrontal (11,5 cm), exigindo ajustes.\n\nAlternativa (a) CORRETA: Para que o desprendimento ocorra na variedade posterior, o feto precisa realizar uma flexão exagerada (ou hiperflexão) da cabeça. Esse movimento é essencial para tentar reduzir o diâmetro de apresentação e permitir que a cabeça se adapte aos espaços da pelve materna. Ao fletir-se intensamente, o feto consegue fazer com que a região da fronte (sincipúcio) se apoie sob a sínfise púbica, servindo de ponto de apoio (fulcro) para que o occipital deslize sobre o períneo e seja exteriorizado.\n\nAlternativa (b) INCORRETA: A rotação interna para occipital anterior é o que acontece na maioria dos casos (cerca de 90%), transformando a posição posterior em anterior para facilitar o parto. No entanto, a questão pede o mecanismo compensatório que facilita a passagem quando o feto está em posição posterior durante a expulsão. A descrição de rotação posterior à saída da cabeça não condiz com a mecânica do parto.\n\nAlternativa (c) INCORRETA: O movimento de extensão (deflexão) é o mecanismo clássico de desprendimento nas variedades anteriores (como a occipitopúbica). Na variedade posterior, o esforço mecânico principal para o desprendimento do occipital é a flexão, e não a extensão.\n\nAlternativa (d) INCORRETA: A rotação externa (também chamada de restituição) ocorre após a cabeça já ter saído do canal vaginal. Ela serve para alinhar o diâmetro biacromial (ombros) com o eixo da pelve, não sendo o mecanismo que facilita a passagem da cabeça em posição occipital posterior.\n\nAlternativa (e) INCORRETA: O mecanismo de parto na apresentação cefálica foca na adaptação do polo cefálico (cabeça). Embora o corpo fetal sofra curvaturas, a flexão do tronco não é o mecanismo compensatório específico ou determinante para superar a dificuldade de progressão causada pela posição occipital posterior no estreito médio ou inferior.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:30.255Z"
+  }
+]

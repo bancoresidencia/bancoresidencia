@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_4b83e66a-8c16-4afe-9a9a-73284da99331",
+    "originalId": "4b83e66a-8c16-4afe-9a9a-73284da99331",
+    "statement": "Um artigo concluiu que o uso de um determinado medicamento reduziu o tempo de internação hospitalar em pacientes com uma doença crônica. A amostra do estudo, porém, é pequena e não randomizada. Com base nessa situação hipotética, assinale a alternativa que apresenta a principal limitação desse estudo",
+    "options": [
+      {
+        "id": "A",
+        "text": "ausência de um grupo de controle",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "falta de representatividade da amostra",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "incapacidade de generalizar os resultados",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "uso de uma medida de desfecho subjetiva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "custo elevado do medicamento",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para entender a principal limitação deste estudo, devemos analisar os dois problemas metodológicos citados no enunciado: a amostra pequena e a falta de randomização.\n\nAlternativa A: Incorreta. O enunciado afirma que o estudo não foi randomizado, mas isso não significa necessariamente que não houve um grupo de controle. Existem estudos observacionais ou ensaios clínicos não randomizados que utilizam grupos de comparação. Portanto, não se pode afirmar a ausência de controle apenas com as informações dadas.\n\nAlternativa B: Incorreta. Embora uma amostra pequena dificulte a representatividade, o termo \"falta de representatividade\" é mais específico para o viés de seleção na composição da amostra em relação à população-alvo. A questão pede a principal limitação decorrente do conjunto dos erros apresentados.\n\nAlternativa C: Correta. A validade externa (ou generalização) é a capacidade de aplicar os resultados de um estudo à população geral. Quando um estudo tem uma amostra pequena, ele está sujeito ao erro ao acaso (baixo poder estatístico). Quando não é randomizado, ele sofre com o viés de seleção, no qual os grupos podem não ser comparáveis. Esses dois fatores combinados impedem que o médico afirme que o benefício observado naquela pequena amostra específica se repetirá na prática clínica real com outros pacientes.\n\nAlternativa D: Incorreta. O tempo de internação hospitalar é considerado um desfecho objetivo ou \"duro\" (hard endpoint), pois é medido em dias ou horas de forma quantitativa. Desfechos subjetivos seriam, por exemplo, a percepção de melhora da dor ou a qualidade de vida relatada pelo paciente sem escalas validadas.\n\nAlternativa E: Incorreta. O custo do medicamento é uma variável de análise econômica e de viabilidade de implementação na saúde pública ou suplementar. Ele não constitui uma limitação metodológica ou científica do desenho do estudo em si.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.602Z"
+  },
+  {
+    "id": "AJUDA_4b86c4ed-308d-4c8d-ab33-ab9cf742994d",
+    "originalId": "4b86c4ed-308d-4c8d-ab33-ab9cf742994d",
+    "statement": "Homem, 66 anos, hipertenso e diabético, início há 5 horas, subitamente, de paresia em dimídio esquerdo associado a afasia motora. NIHSS calculado =15. Exames complementares: Eletrocardiograma: Fibrilação atrial, Frequência cardíaca 95 bpm Tomografia computadorizada sem contraste: sem hemorragia, discreta hipodensidade em núcleo lentiforme direito. Angio-Tomografia de crânio: oclusão proximal da Artéria cerebral média (ACM) direita, bom preenchimento por colaterais. Exames laboratoriais: glicemia 130 mg/dL, creatinina 0,9 mg/dL, plaquetas 210.000/mm³, INR 1,0. Diante do diagnóstico de Acidente Vascular encefálico isquêmico, neste cenário, qual a conduta mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não realizar reperfusão; iniciar apenas aspirina, visto que tempo de início de sintomas maior que 4,5 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trombólise endovenosa com alteplase, pois ainda se encontra dentro da janela terapêutica de até 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para trombectomia mecânica devido a oclusão proximal de ACM e tempo de início de sintomas menor ou igual a 6 horas, independentemente de trombolítico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Anticoagulação plena imediata com heparina devido a Fibrilação atrial no Eletrocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma conduta de reperfusão a ser adequada neste momento e evitar início de Aspirina na admissão pelo risco de Acidente Vascular encefálico hemorrágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta um Acidente Vascular Encefálico Isquêmico (AVEi) com 5 horas de evolução, NIHSS de 15 (déficit neurológico moderado a grave) e presença de fibrilação atrial. A angiotomografia confirmou uma oclusão de grande vaso (artéria cerebral média proximal).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O fato de o tempo de início dos sintomas ser superior a 4,5 horas contraindica a trombólise endovenosa convencional, mas não exclui a possibilidade de reperfusão por outros métodos. O paciente tem uma oclusão proximal de grande vaso documentada, o que o torna candidato à terapia endovascular.\n\nAlternativa b: Incorreta. A janela terapêutica para a administração do trombolítico endovenoso (alteplase) é de até 4,5 horas a partir do início dos sintomas (ou do último momento visto normal). Como o paciente já possui 5 horas de evolução, o risco de sangramento supera o benefício da terapia endovenosa.\n\nAlternativa c: Correta. Para pacientes com oclusão de grandes vasos da circulação anterior (como a porção proximal da artéria cerebral média), a trombectomia mecânica é o tratamento de escolha quando o procedimento pode ser iniciado dentro de uma janela de 6 horas. Mesmo que o paciente tenha perdido a janela para a alteplase (4,5h), ele ainda se beneficia enormemente da desobstrução mecânica do vaso até as 6 horas de evolução (nível de evidência 1A). Atualmente, essa janela pode ser estendida até 24 horas em casos selecionados por critérios de imagem avançada, mas nas primeiras 6 horas a indicação é baseada apenas na oclusão proximal e escala de ASPECTS favorável (baixa hipodensidade na TC inicial).\n\nAlternativa d: Incorreta. A anticoagulação plena com heparina na fase aguda do AVE isquêmico não é recomendada, pois aumenta o risco de transformação hemorrágica da área infartada sem oferecer benefícios claros na redução de novos eventos ou melhora do desfecho neurológico imediato. A presença de fibrilação atrial exigirá anticoagulação crônica, mas esta deve ser iniciada após a fase aguda (geralmente após alguns dias, dependendo da extensão do infarto).\n\nAlternativa e: Incorreta. Há indicação clara de reperfusão por via endovascular (trombectomia). Quanto à aspirina, ela é recomendada para quase todos os pacientes com AVE isquêmico agudo, devendo ser iniciada após as primeiras 24 horas se o paciente for submetido à trombólise, ou de imediato se não houver terapia de reperfusão ou contraindicações. Negar qualquer conduta de reperfusão neste caso prejudica o prognóstico do paciente.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.602Z"
+  },
+  {
+    "id": "AJUDA_4b8a7bfc-97a1-44ee-a324-b0a0c0c0e722",
+    "originalId": "4b8a7bfc-97a1-44ee-a324-b0a0c0c0e722",
+    "statement": "Sobre os efeitos dos clorofluorcarbonos (CFCs) na camada de ozônio é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "os CFCs são compostos que, ao serem liberados na atmosfera, reagem com o ozônio e contribuem para a destruição dessa camada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "os CFCs ajudam a aumentar a densidade da camada de ozônio, tornando-a mais eficaz na proteção contra radiação UV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a camada de ozônio é reforçada pelos CFCs, que atuam como um filtro natural contra a radiação UV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o uso de CFCs é benéfico, pois aumenta a quantidade de ozônio na estratosfera.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nOs clorofluorcarbonos (CFCs) são compostos sintéticos que apresentam alta estabilidade na baixa atmosfera, o que permite que eles alcancem a estratosfera, onde a camada de ozônio está localizada. Do ponto de vista médico e ambiental, o entendimento dessa interação é fundamental devido aos impactos na saúde humana.\n\nAlternativa a: Está correta. Ao atingirem a estratosfera, as moléculas de CFC são decompostas pela radiação ultravioleta (UV), liberando átomos de cloro. O cloro atua como um catalisador na destruição do ozônio (O3), transformando-o em oxigênio molecular (O2). Uma única molécula de cloro pode destruir milhares de moléculas de ozônio, reduzindo a espessura dessa camada protetora. Isso resulta em maior incidência de raios UV-B na superfície terrestre, o que está diretamente ligado ao aumento de casos de câncer de pele (melanoma e carcinomas), catarata e supressão do sistema imunológico.\n\nAlternativa b: Está incorreta. Os CFCs diminuem a densidade da camada de ozônio através de sua destruição. Quanto menor a densidade dessa camada, menor é a eficácia da proteção contra a radiação ultravioleta.\n\nAlternativa c: Está incorreta. Os CFCs não reforçam a camada e não possuem propriedades filtrantes. O ozônio é que desempenha o papel de filtro natural. Os CFCs são agentes degradantes desse filtro.\n\nAlternativa d: Está incorreta. O uso de CFCs é considerado nocivo e deletério. Devido ao seu impacto negativo comprovado, acordos internacionais como o Protocolo de Montreal foram estabelecidos para banir ou reduzir drasticamente sua produção e uso em todo o mundo.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.602Z"
+  },
+  {
+    "id": "AJUDA_4b8f3279-82f9-4127-86d7-56269d83a56e",
+    "originalId": "4b8f3279-82f9-4127-86d7-56269d83a56e",
+    "statement": "M.LP. 58 anos de idade, sexo feminino, comparece à consulta com queixa de dor e sensação de peso nas pernas, principalmente no final do dia, há aproximadamente 5 anos. Refere que os sintomas pioram com o calor e após longos períodos em pé, aliviando com a elevação das pernas. Ao exame físico, observa-se edema maleolar bilateral, mais pronunciado à direita, presença de veias varicosas calibrosas e hiperpigmentação na região de tornozelos. Os pulsos periféricos são palpáveis. Não há úlceras ativas, mas nota-se uma área cicatrizada de úlcera venosa prévia, tratada há 1 um ano, na perna direita. Com base no quadro clínico e no exame físico, qual é a classe clinica (C) na classificação CEAP e qual é o tratamento sintomático, respectivamente, para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2; elevação dos membros inferiores, além de considerar safenectomia bilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3; uso de flebotônicos, além de anticoagulante oral preventivo para novas úlceras",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "4; uso de meias de compressão, flebotônicos e cuidado dermatológico preventivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "5; uso de meias de compressão, além de cuidado dermatológico preventivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro de Insuficiência Venosa Crônica (IVC) com evolução de cinco anos. Para resolver essa questão, é fundamental aplicar a classificação CEAP, que é o padrão internacional para descrever as manifestações clínicas das doenças venosas crônicas. A classificação clínica (C) é hierárquica, o que significa que devemos classificar o paciente pelo achado mais grave presente no exame físico ou na história clínica.\n\nOs achados descritos são:\n- Veias varicosas calibrosas (C2)\n- Edema maleolar (C3)\n- Hiperpigmentação/Dermite ocre (C4a)\n- Úlcera venosa cicatrizada (C5)\n\nComo a paciente apresenta uma área de úlcera já cicatrizada na perna direita, ela se enquadra automaticamente na classe clínica C5. Se a úlcera estivesse aberta no momento do exame, seria C6.\n\nTRATAMENTO SINTOMÁTICO E PREVENTIVO\n\nPara pacientes em estágios avançados de IVC (C4, C5 e C6), o objetivo principal do tratamento sintomático é reduzir a hipertensão venosa e evitar a recidiva de feridas. O uso de meias de compressão elástica é a medida mais eficaz para controlar o edema e prevenir a reabertura de úlceras. Complementarmente, cuidados dermatológicos (como hidratação da pele e controle de eczemas) são fundamentais para manter a integridade cutânea.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A - INCORRETA: A classe C2 é reservada para casos onde o achado máximo são veias varicosas. O enunciado deixa claro que a paciente já teve uma úlcera venosa, o que a posiciona em uma categoria de maior gravidade. Além disso, a safenectomia é um tratamento cirúrgico para correção de refluxo, não sendo a classificação clínica solicitada.\n\nAlternativa B - INCORRETA: A classe C3 refere-se apenas à presença de edema. O erro principal aqui reside na indicação de anticoagulante oral para prevenir novas úlceras. Anticoagulantes são indicados para prevenção e tratamento de eventos tromboembólicos (como trombose venosa profunda), não sendo o tratamento de rotina para prevenção de úlceras de estase venosa.\n\nAlternativa C - INCORRETA: Embora a hiperpigmentação seja um sinal de classe C4, a classificação deve sempre considerar o sinal mais grave. A existência de uma úlcera cicatrizada eleva o caso para a classe C5. Flebotônicos podem auxiliar no alívio da dor e peso, mas a compressão elástica e o cuidado com a pele são prioridades no estágio C5.\n\nAlternativa D - CORRETA: Identifica corretamente que a úlcera cicatrizada enquadra a paciente na classe clínica C5. O tratamento indicado foca no controle da pressão venosa com meias de compressão e na manutenção da saúde da pele por meio de cuidados dermatológicos, visando evitar novas lesões.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.602Z"
+  },
+  {
+    "id": "AJUDA_4b976ad8-a50e-4ea8-9777-6efed6927153",
+    "originalId": "4b976ad8-a50e-4ea8-9777-6efed6927153",
+    "statement": "Primigesta de 22 anos procura o pronto atendimento da maternidade com 33 semanas e 2 dias relatando sentir cólicas em baixo-ventre. AP: parto a termo em gestação anterior. Exame físico: altura uterina de 31 cm, feto único, situação longitudinal, dorso à esquerda e apresentação cefálica. Dinâmica uterina: uma contração de 25 segundos em 10 minutos. Toque vaginal: colo uterino posterior, grosso, pérvio: 1,5 cm.\nA conduta correta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "corticoterapia, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "inibição do trabalho de parto, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "liberação com orientações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "inibição do trabalho de parto, corticoterapia e neuroproteção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta 33 semanas e 2 dias de gestação e queixa-se de cólicas. No exame físico, observa-se uma dinâmica uterina de apenas 1 contração de 25 segundos em 10 minutos. O toque vaginal revela um colo posterior, grosso e com 1,5 cm de dilatação.\n\nPara diagnosticar o Trabalho de Parto Prematuro (TPP), a literatura médica exige a presença de contrações regulares (geralmente 2 em 10 minutos ou 4 em 20 minutos) acompanhadas de mudanças cervicais significativas, como o apagamento (esvaecimento) superior a 50% e a dilatação progressiva (geralmente acima de 2 ou 3 cm). \n\nNo caso em questão, o colo está grosso e posterior, e a atividade uterina é insuficiente para caracterizar o trabalho de parto. Vale ressaltar uma incoerência no enunciado: a paciente é chamada de primigesta, mas o antecedente pessoal refere um parto a termo anterior. Em pacientes que já pariram, uma dilatação de 1,5 cm com colo grosso e posterior é um achado comum e não indica o início de trabalho de parto. Portanto, o quadro é de falso trabalho de parto ou contrações de Braxton-Hicks.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A corticoterapia (como betametasona ou dexametasona) é indicada para acelerar a maturidade pulmonar fetal apenas quando o diagnóstico de TPP é confirmado e o risco de parto nos próximos 7 dias é real, entre 24 e 34 semanas. Sem trabalho de parto ativo, não há indicação.\n\nAlternativa B (Incorreta): A inibição do trabalho de parto (tocólise) tem como objetivo principal ganhar tempo para a ação do corticoide ou para o transporte da gestante. Como a paciente não possui dinâmica uterina efetiva nem modificação cervical, não há o que inibir.\n\nAlternativa C (Correta): Esta é a conduta adequada para casos de falso trabalho de parto. Não há necessidade de internação ou intervenções medicamentosas. A paciente deve receber orientações sobre os sinais de alerta (como aumento da frequência das contrações, perda de líquido ou sangramento) e ser liberada.\n\nAlternativa D (Incorreta): Esta alternativa descreve o manejo completo para um TPP estabelecido com risco de parto iminente. A neuroproteção com sulfato de magnésio é indicada em situações de parto prematuro iminente (geralmente até 31 semanas e 6 dias, ou 33 semanas e 6 dias em alguns protocolos específicos), o que não se aplica a uma paciente sem trabalho de parto.\n\nDICA DO PROFESSOR: Em questões de obstetrícia, sempre avalie o binômio dinâmica uterina e colo. Se o colo está grosso e posterior, ele não está sofrendo ação das contrações de forma a progredir para o parto, descartando o diagnóstico de trabalho de parto ativo.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.603Z"
+  },
+  {
+    "id": "AJUDA_4b9cb8f8-5d2c-42ef-ad03-2b3175ee0a34",
+    "originalId": "4b9cb8f8-5d2c-42ef-ad03-2b3175ee0a34",
+    "statement": "Em qual das seguintes situações é recomendado tratar Otite Média Aguda (OMA), segundo diretrizes da Academia Americana de Pediatria, considerando que todos são pacientes que o pediatra tem condições de acompanhar a evolução clínica?\n\nI- Paciente de 3 anos, otite unilateral, com história de choro intenso e febre há 1 dia de 39ºC.\nII- Paciente sexo masculino, 1 ano e 6 meses com otalgia e febre de 37,8ºC de início hoje. À otoscopia, membrana timpânica opaca e abaulada à direita. Esquerda, sem alterações.\nIII- Paciente de 15 meses, com otalgia unilateral iniciada há 72h, mantendo febre baixa.\nIV- Paciente de 5 anos com queixa de otalgia a esquerda, febre de 38,2ºC, com otite unilateral, sem otorreia, iniciada há 1 dia.",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e III",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I e IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todas as opções",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a conduta na Otite Média Aguda (OMA) segundo a Academia Americana de Pediatria (AAP), devemos considerar três pilares: a idade do paciente, a gravidade dos sintomas e a lateralidade (unilateral ou bilateral). A diretriz prioriza a observação clínica (watchful waiting) em casos leves para evitar o uso desnecessário de antibióticos, reservando o tratamento imediato para situações específicas.\n\nCritérios de Gravidade (Sintomas Graves):\n1. Otalgia moderada a grave.\n2. Otalgia prolongada (igual ou superior a 48 horas).\n3. Febre igual ou superior a 39 graus Celsius.\n\nAnálise das assertivas:\n\nItem I - Correto. Trata-se de um paciente de 3 anos (maior que 2 anos) que apresenta sintomas graves: febre de 39 graus Celsius e choro intenso (indicativo de otalgia importante). Segundo a AAP, pacientes de qualquer idade acima de 6 meses com sintomas graves devem receber antibioticoterapia imediata, independentemente de a otite ser unilateral ou bilateral.\n\nItem II - Incorreto. O paciente tem 1 ano e 6 meses (faixa entre 6 meses e 2 anos) com otite unilateral e sintomas leves (febre baixa e início recente). Nesses casos de OMA unilateral não grave nessa faixa etária, a diretriz da AAP permite tanto o tratamento imediato quanto a observação clínica por 48 a 72 horas, desde que o acompanhamento seja garantido. Como o enunciado afirma que o pediatra tem condições de acompanhar a evolução, a conduta preferencial inicial pode ser a observação.\n\nItem III - Correto. Embora o paciente tenha 15 meses e a otite seja unilateral com febre baixa, o quadro clínico já dura 72 horas. A recomendação de observação clínica tem um limite de tempo: se não houver melhora ou se houver piora em 48 a 72 horas, o antibiótico deve ser iniciado. Portanto, ao atingir 72 horas de sintomas sem resolução, o tratamento passa a ser recomendado.\n\nItem IV - Incorreto. Paciente de 5 anos (maior que 2 anos) com otite unilateral e sintomas leves (febre de 38,2 graus Celsius e apenas 1 dia de evolução). Para crianças maiores de 2 anos com quadros não graves (seja unilateral ou bilateral), a recomendação inicial é a observação clínica. O tratamento só seria indicado de imediato se os sintomas fossem graves ou se a criança não melhorasse após o período de observação.\n\nAnálise das alternativas:\n\na) Incorreta, pois o item II admite observação.\nb) Incorreta, pois o item II admite observação.\nc) Correta. Os itens I (sintomas graves) e III (falha no tempo de observação/persistência por 72h) são situações em que o tratamento medicamentoso está formalmente indicado.\nd) Incorreta, pois o item IV recomenda observação inicial.\ne) Incorreta, pois as situações II e IV permitem a conduta expectante inicial.\n\nGabarito: Letra (c).",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.603Z"
+  },
+  {
+    "id": "AJUDA_4bab5edb-cf45-4939-af00-42ce5bff188a",
+    "originalId": "4bab5edb-cf45-4939-af00-42ce5bff188a",
+    "statement": "Sobre a Síndrome do choque tóxico estreptocócico, pode-se afirmar, à EXCEÇÃO de uma:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A duração do tratamento dos pacientes com bacteremia deve ser de pelo menos 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A terapia empírica para tratamento desta Síndrome deve incluir o seguinte regime de antibioticoterapia: clindamicina + vancomicina associado a um carbapenêmico ou piperacilina - tazobactan.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A mortalidade devido à Síndrome do choque tóxico estreptocócico é substancialmente menor do que a mortalidade devido à Síndrome do choque tóxico estafilocócico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Uma das terapias adjuvantes é o uso de Imunoglobulina Intravenosa por 03 dias e vários mecanismos foram sugeridos para esta intervenção: a opsonização de estreptococos do grupo A, a neutralização de toxinas estreptocócicas, a inibição da proliferação de células T e a inibição de citocinas inflamatórias, como TNF-alfa e interleucina 6.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Síndrome do Choque Tóxico Estreptocócico (SCTE) é uma emergência médica causada principalmente pelo *Streptococcus pyogenes* (estreptococo do grupo A), caracterizada por choque e falência de múltiplos órgãos, frequentemente associada a infecções de tecidos moles como a fasciíte necrosante.\n\nAlternativa (a) Correta: O tratamento de infecções invasivas por estreptococos do grupo A, especialmente quando há presença de bacteremia, deve ser prolongado. A recomendação padrão é de pelo menos 14 dias de antibioticoterapia para assegurar a eliminação do agente e reduzir o risco de complicações secundárias ou recidivas.\n\nAlternativa (b) Correta: Devido à gravidade e à necessidade de cobertura de amplo espectro no início do quadro (quando o agente ainda pode não estar confirmado), utiliza-se a combinação de vancomicina (para cobrir estafilococos resistentes) associada a um betalactâmico de largo espectro (como carbapenêmico ou piperacilina-tazobactam). A clindamicina é obrigatoriamente incluída por ser um inibidor da síntese proteica, o que interrompe a produção das toxinas (superantígenos) responsáveis pela cascata inflamatória grave, efeito este que os betalactâmicos não possuem de forma isolada.\n\nAlternativa (c) Incorreta (Gabarito): Esta afirmação inverte a realidade epidemiológica. A mortalidade da Síndrome do Choque Tóxico Estreptocócico é significativamente maior do que a da Síndrome do Choque Tóxico Estafilocócico. Enquanto a síndrome causada pelo *Staphylococcus aureus* tem uma taxa de mortalidade geralmente inferior a 5% (podendo ser um pouco maior em casos não menstruais), a síndrome estreptocócica apresenta taxas de mortalidade alarmantes, situando-se frequentemente entre 30% e 70%, devido à rapidez da evolução clínica e à maior agressividade da resposta inflamatória.\n\nAlternativa (d) Correta: A imunoglobulina intravenosa (IVIG) é uma terapia adjuvante reconhecida para casos graves de SCTE. Seu papel principal é a neutralização direta das toxinas (superantígenos) produzidas pelo estreptococo, além de auxiliar na opsonização da bactéria e modular a \"tempestade de citocinas\" inflamatórias (como TNF-alfa e IL-6) que causa o choque e a lesão tecidual. O uso por 3 dias é um dos esquemas terapêuticos frequentemente citados na literatura especializada.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.603Z"
+  },
+  {
+    "id": "AJUDA_4bb0a08f-bf02-4a2c-8f4d-5f1c7c22a61c",
+    "originalId": "4bb0a08f-bf02-4a2c-8f4d-5f1c7c22a61c",
+    "statement": "Homem de 65 anos com queixa de disfagia progressiva é diagnosticado com carcinoma esofágico. Qual é o tipo histológico mais comum em pacientes com histórico de tabagismo e etilismo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carcinoma de pequenas células.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adenocarcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Carcinoma espinocelular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Linfoma de Hodgkin.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O câncer de esôfago apresenta dois subtipos histológicos principais com perfis epidemiológicos e fatores de risco bem distintos: o carcinoma espinocelular (CEC) e o adenocarcinoma. A análise dos fatores de risco citados no enunciado é a chave para a resposta.\n\nAlternativa a) Incorreta. O carcinoma de pequenas células é um tumor neuroendócrino extremamente raro no esôfago, representando de 1% a 2% dos casos. Ele é muito mais comum no pulmão e não é o tipo histológico predominante associado ao consumo crônico de álcool e tabaco no trato digestivo superior.\n\nAlternativa b) Incorreta. Embora a incidência do adenocarcinoma venha crescendo significativamente, seus principais fatores de risco são a doença do refluxo gastroesofágico (DRGE), a presença de esôfago de Barrett e a obesidade. O adenocarcinoma localiza-se preferencialmente no terço distal do esôfago, próximo à transição esofagogástrica. O tabagismo até pode contribuir, mas o etilismo não é um fator de risco classicamente associado a este subtipo.\n\nAlternativa c) Correta. O carcinoma espinocelular (CEC) é historicamente o tipo mais comum de câncer de esôfago no mundo, especialmente no Brasil. Seus dois principais fatores de risco são o tabagismo e o etilismo, que agem de forma sinérgica (multiplicando o risco quando associados). O CEC geralmente acomete os terços superior e médio do órgão e está relacionado a irritantes crônicos da mucosa esofágica, como bebidas muito quentes e deficiências nutricionais, além das toxinas do cigarro e do álcool.\n\nAlternativa d) Incorreta. O linfoma de Hodgkin é uma neoplasia do sistema linfático. O acometimento esofágico por linfomas é muito raro e, quando ocorre, geralmente é do tipo não Hodgkin e secundário à disseminação de uma doença sistêmica. Não possui relação direta com a disfagia progressiva associada ao tabagismo e etilismo descrita no caso.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.603Z"
+  },
+  {
+    "id": "AJUDA_4bb34b2d-7037-455d-807b-5cfe798f3964",
+    "originalId": "4bb34b2d-7037-455d-807b-5cfe798f3964",
+    "statement": "Paciente de 72 anos, sexo masculino, submetido a gastrectomia total há cinco dias, inicia quadro de agitação e confusão mental, taquipneia (30irpm), drenagem de secreção de mau cheiro pela ferida operatória, alteração aguda de 5 pontos no escore SOFA (Sequential Sepsis related Organ Failure Assessment), necessitando de vasopressores para manutenção da pressão arterial média maior ou igual a 65mmHg e dosagem de lactato de 7mmol/litro, mesmo após reposição volêmica adequada. Considerando os dados descritos acima, o diagnóstico MAIS PRECISO para o quadro apresentado por este paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Choque séptico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Resposta orgânica ao trauma exacerbado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sepse",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome da Resposta Inflamatória Sistêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, é necessário aplicar as definições do Terceiro Consenso Internacional de Definições para Sepse e Choque Séptico (Sepsis-3), publicado em 2016 e amplamente adotado na prática médica atual.\n\nAnálise das alternativas:\n\nAlternativa a) Esta é a alternativa correta. O paciente apresenta uma fonte de infecção clara (secreção com mau cheiro na ferida operatória) e uma disfunção orgânica aguda importante (elevação de 5 pontos no escore SOFA). O quadro evolui para choque séptico porque, mesmo após a reposição volêmica adequada, o paciente mantém a necessidade de vasopressores para garantir uma pressão arterial média (PAM) de pelo menos 65 mmHg e apresenta um lactato sérico elevado (7 mmol/L, sendo que o ponto de corte do consenso é superior a 2 mmol/L). A presença simultânea desses critérios define o choque séptico.\n\nAlternativa b) Esta alternativa está incorreta. Embora a cirurgia de grande porte gere uma Resposta Metabólica ao Trauma (REMIT), o quadro descrito é nitidamente de natureza infecciosa. A presença de secreção fétida na ferida, a confusão mental e a gravidade da instabilidade hemodinâmica (necessidade de aminas) e metabólica (lactato de 7) indicam uma patologia infecciosa sistêmica e não apenas o estresse cirúrgico esperado.\n\nAlternativa c) Esta alternativa está incorreta por ser menos específica. De acordo com o consenso Sepsis-3, a sepse é definida apenas como uma disfunção orgânica ameaçadora à vida, causada por uma resposta desregulada do hospedeiro à infecção (clinicamente identificada pelo aumento de 2 ou mais pontos no escore SOFA). Como o paciente em questão já apresenta hipotensão refratária a volume e hiperlactatemia, ele preenche critérios para a subcategoria mais grave e específica, que é o choque séptico. Em provas de residência, deve-se sempre optar pelo diagnóstico mais preciso disponível.\n\nAlternativa d) Esta alternativa está incorreta. O conceito de SIRS (Síndrome da Resposta Inflamatória Sistêmica), baseado em critérios como temperatura, frequência cardíaca, frequência respiratória e contagem de leucócitos, foi descontinuado como critério definidor de sepse em 2016. A SIRS é considerada muito inespecífica, podendo estar presente em diversas condições não infecciosas. Além disso, o quadro do paciente já demonstra falência orgânica e choque, o que ultrapassa os critérios de SIRS.\n\nResumo dos critérios Sepsis-3 aplicados ao caso:\n1. Infecção + Aumento de SOFA maior ou igual a 2 pontos = Sepse.\n2. Sepse + Necessidade de vasopressor para manter PAM maior ou igual a 65 mmHg + Lactato superior a 2 mmol/L (após reposição volêmica) = Choque Séptico.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Sepse",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.603Z"
+  },
+  {
+    "id": "AJUDA_4bc529cd-e963-47f1-9047-351abda4a692",
+    "originalId": "4bc529cd-e963-47f1-9047-351abda4a692",
+    "statement": "O tratamento farmacológico da fibromialgia inclui diferentes classes de fármacos, tais como, anticonvulsivantes, antidepressivos e relaxantes musculares, como opções primárias e secundárias. Para o tratamento desta doença, quais são as opções que correspondem, respectivamente, a essas classes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carbamazepina, duloxetina e amitriptilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pregabalina, venlafaxina e amitriptilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pregabalina, amitriptilina e ciclobenzaprina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Gabapentina, duloxetina e carisoprodol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nA fibromialgia é uma síndrome de dor crônica caracterizada por sensibilização central. O tratamento farmacológico é direcionado para a modulação de neurotransmissores que participam das vias de dor e sono. A questão exige a identificação de três fármacos que pertençam, respectivamente, às classes dos anticonvulsivantes, antidepressivos e relaxantes musculares.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A carbamazepina é um anticonvulsivante, porém sua principal indicação em dor é para a neuralgia do trigêmeo, não sendo a droga de escolha para a fibromialgia. A duloxetina é um antidepressivo (correto), mas a amitriptilina também é classificada como antidepressivo tricíclico, o que quebra a sequência solicitada de relaxante muscular na terceira posição.\n\nAlternativa b) Incorreta. A pregabalina é um anticonvulsivante de primeira linha e a venlafaxina é um antidepressivo dual, ambos corretos. No entanto, a amitriptilina é um antidepressivo tricíclico. Embora possua efeito sedativo que auxilie no sono, ela não ocupa a categoria de relaxante muscular conforme a nomenclatura farmacológica padrão exigida pela questão.\n\nAlternativa c) Correta. A pregabalina atua na subunidade alfa-2-delta dos canais de cálcio voltagem-dependentes, sendo um anticonvulsivante padrão-ouro para a fibromialgia. A amitriptilina é um antidepressivo tricíclico amplamente utilizado como terapia de primeira linha para modular a dor e melhorar a arquitetura do sono. A ciclobenzaprina é um relaxante muscular de ação central, estruturalmente semelhante aos antidepressivos tricíclicos, sendo a opção clássica desta classe para o manejo da doença.\n\nAlternativa d) Incorreta. A gabapentina (anticonvulsivante) e a duloxetina (antidepressivo) são opções válidas. Contudo, o carisoprodol não é recomendado para o tratamento da fibromialgia. Trata-se de uma droga com alto potencial de dependência e metabolização em meprobamato, sem evidências de benefício clínico sustentado para pacientes fibromiálgicos.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Síndromes Dolorosas Crônicas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:59.603Z"
+  }
+]

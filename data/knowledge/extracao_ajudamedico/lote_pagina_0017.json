@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_044dfd42-f89a-45bb-b911-59922be0d8ee",
+    "originalId": "044dfd42-f89a-45bb-b911-59922be0d8ee",
+    "statement": "Uma paciente de 33 anos, G0P0, com infertilidade primária há dois anos, realiza avaliação ginecológica. O ultrassom transvaginal revela presença de miomas. Ela deseja engravidar e questiona se a retirada dos miomas pode melhorar suas chances. Com base nas evidências atuais, qual das seguintes afirmações é correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Miomas subserosos reduzem significativamente a fertilidade e devem ser removidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Miomas intramurais reduzem a fertilidade e sua retirada aumenta as taxas de gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Miomas submucosos reduzem a fertilidade, e sua retirada pode melhorar os resultados reprodutivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A miomectomia submucosa apresenta taxa de gravidez inferior à de mulheres inférteis sem miomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a relação entre a leiomiomatose uterina e a infertilidade, um tema frequente em provas de residência. Para respondê-la, devemos classificar os miomas de acordo com sua localização (Classificação da FIGO) e entender o impacto de cada tipo na cavidade endometrial e na implantação embrionária.\n\nAlternativa A: Incorreta. Miomas subserosos (FIGO 5, 6 e 7) localizam-se na superfície externa do útero e não distorcem a cavidade endometrial. As evidências científicas atuais demonstram que esses miomas não reduzem a fertilidade e sua remoção cirúrgica não aumenta as taxas de gravidez. Portanto, a miomectomia não está indicada apenas para fins de fertilidade nesses casos.\n\nAlternativa B: Incorreta. O impacto dos miomas intramurais (FIGO 3 e 4) na fertilidade é um tema controverso. Embora alguns estudos sugiram que miomas intramurais grandes (geralmente acima de 4 ou 5 cm) possam reduzir discretamente as taxas de sucesso reprodutivo, as evidências de que sua retirada cirúrgica melhora significativamente as taxas de gravidez são limitadas e inconsistentes. Por isso, a recomendação de cirurgia para miomas intramurais em pacientes assintomáticas e com cavidade preservada não é rotineira.\n\nAlternativa C: Correta. Miomas submucosos (FIGO 0, 1 e 2) são aqueles que se projetam para dentro da cavidade uterina. Eles causam distorção do endométrio, o que interfere negativamente na implantação do embrião e no transporte de espermatozoides. Existe um consenso robusto na literatura médica de que os miomas submucosos reduzem as taxas de concepção e aumentam o risco de abortamento. A miomectomia (geralmente realizada por histeroscopia) é o tratamento padrão e está associada a uma melhora significativa nos resultados reprodutivos.\n\nAlternativa D: Incorreta. A afirmação é contrária à realidade. Estudos demonstram que mulheres submetidas à miomectomia para correção de miomas submucosos apresentam taxas de gravidez superiores em comparação com aquelas que mantêm o mioma submucoso. Após a retirada, as taxas de sucesso reprodutivo tendem a se aproximar das taxas de mulheres inférteis sem miomas, e não o contrário.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Infertilidade Conjugal",
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  },
+  {
+    "id": "AJUDA_04505d59-e314-4472-837c-b3b8266da3ea",
+    "originalId": "04505d59-e314-4472-837c-b3b8266da3ea",
+    "statement": "Paciente da entrada na UPA, 82 anos, relato de há 72 horas estar cursando com tosse associada à febre. Paciente bem orientado, refere não ter comorbidades e faz uso apenas de Sinvastatina 20mg e AAS 100mg prescrito pelo posto de saúde. Ao examinar, paciente apresenta FC: 108bpm, PA:95x65mmHg, FR: 23irpm, Sat:99% em ar ambiente, abdômen livre e crepitações a ausculta pulmonar. Os primeiros exames solicitados são: Hb:10.1g/dl, GL: 13000 segmentados: 9.200 Plaq: 44.000 TGO:27 TGP: 43 Bilirrubina: 1.3mg/dl. Creatinina:2,0mg/dl Ureia:89mg/dL. Sobre o diagnóstico e tratamento, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O cálculo adequado do paciente deve ser pelo SOFA e não pelo quickSOFA uma vez que temos os exames laboratoriais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A paciente tem diagnóstico de pneumonia adquirida na comunidade, devendo iniciar terapia oral, sendo uma opção Levofloxacin. O tratamento deve ser ambulatorial por cinco dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A paciente tem provável diagnóstico de pneumonia viral, devendo ser internada e avaliado inicio de Oseltamivir",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O lactato é um marcador isolado de mortalidade mais importante.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente de 82 anos apresenta um quadro compatível com Pneumonia Adquirida na Comunidade (PAC). Ao analisarmos os sinais vitais e exames, observamos taquicardia (108 bpm), taquipneia (23 irpm) e pressão arterial limítrofe (95x65 mmHg). Os exames laboratoriais revelam disfunções orgânicas graves: plaquetopenia importante (44.000) e insuficiência renal aguda (Creatinina 2,0 mg/dL e Ureia 89 mg/dL), o que caracteriza um quadro de sepse.\n\nAlternativa a) Incorreta. O qSOFA (quick SOFA) é uma ferramenta de triagem rápida à beira-leito baseada em critérios clínicos (frequência respiratória >= 22, alteração do nível de consciência e pressão sistólica <= 100 mmHg). Embora o SOFA seja o escore completo para definir disfunção orgânica em ambiente de terapia intensiva ou com exames disponíveis, o qSOFA não é invalidado pela presença de laboratório; ele cumpre seu papel de identificação precoce de risco. No entanto, a literatura médica e as bancas de concurso consideram a dosagem do lactato (mencionada na letra D) como um marcador de mortalidade mais robusto.\n\nAlternativa b) Incorreta. A paciente pontua pelo menos 2 pontos no escore CURB-65 (Idade >= 65 anos e Ureia > 43 mg/dL). Uma pontuação de 2 indica a necessidade de internação hospitalar. Além disso, a presença de sinais de sepse (plaquetopenia e lesão renal) torna o tratamento ambulatorial perigoso e inadequado. A terapia inicial para um quadro séptico deve ser preferencialmente intravenosa.\n\nAlternativa c) Incorreta. Apesar de vírus respiratórios serem causas comuns de pneumonia, a apresentação com leucocitose (13.000 com 9.200 segmentados) e as disfunções orgânicas graves direcionam a prioridade diagnóstica e terapêutica para pneumonia bacteriana com sepse. O uso de Oseltamivir é indicado na suspeita de Influenza, mas não substitui a necessidade de antibioticoterapia de amplo espectro e estabilização hemodinâmica neste cenário.\n\nAlternativa d) Correta. O lactato é amplamente aceito como o principal marcador isolado de mortalidade e gravidade na sepse. Níveis elevados de lactato refletem hipoperfusão tecidual, disfunção metabólica e estresse celular, sendo um preditor independente de desfechos desfavoráveis, mesmo em pacientes que ainda não apresentam hipotensão severa. Por isso, sua dosagem é recomendada logo na admissão para estratificação de risco.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Sepse",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  },
+  {
+    "id": "AJUDA_04576fa9-eba5-41a8-81a5-b36f205d1b57",
+    "originalId": "04576fa9-eba5-41a8-81a5-b36f205d1b57",
+    "statement": "Mulher de 68 anos é admitida no departamento de emergência com quadro de febre alta, tosse produtiva e dispneia progressiva nos últimos três dias. O antecedente é relevante para miastenia grave, em acompanhamento ambulatorial irregular. Na sala de emergência, a paciente apresenta-se torporosa, com respiração paradoxal e uso franco de musculatura acessória; pressão arterial: 75 x 40 mmHg; frequência cardíaca: 132 bpm; frequência respiratória: 38 irpm; temperatura: 39,4 °C; SatO2 em ar ambiente: 82%; ausculta pulmonar: estertores crepitantes bilaterais grosseiros. Lactato arterial beira-leito é de 5,8 mmol/L (normal: até 2,0). A intubação orotraqueal é indicada. Nessa circunstância, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a cetamina constitui uma opção viável para a terapia de indução nesse cenário clínico de sepse, devendo ser empregada na dosagem de um miligrama por quilograma, pois apresenta perfil cardiovascular superior e menor incidência de colapso circulatório comparada ao propofol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a succinilcolina possui indicação restrita nessa paciente devido à patologia neuromuscular de base, visto que a despolarização da placa motora miastênica promove liberação maciça de potássio intracelular, culminando em arritmias ventriculares refratárias e quadro de parada cardíaca letal quase imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o etomidato apresenta restrição clínica nesse quadro de choque séptico, pois a inibição enzimática irreversível da 11-beta-hidroxilase induz uma crise adrenal aguda e eleva as taxas de mortalidade de curto prazo nas unidades de terapia intensiva segundo estudos recentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o midazolam administrado em doses habituais de indução atua como a melhor alternativa medicamentosa para o controle hemodinâmico, preservando o débito cardíaco por meio da liberação simpática secundária e protegendo os órgãos nobres contra os efeitos deletérios da hipóxia tecidual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o rocurônio deve ser prescrito em doses maiores (dois miligramas por quilograma) para garantir o bloqueio neuromuscular efetivo, uma vez que a terapia contínua com inibidores da colinesterase gera competição acentuada e reduz a eficácia dos agentes não despolarizantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resumo do caso: paciente com miastenia grave, pneumonia grave e choque séptico (PA 75x40, lactato 5,8), com insuficiência respiratória aguda e sinais de fadiga muscular (respiração paradoxal), possivelmente em crise miastênica desencadeada por infecção. A intubação é emergencial, em paciente hemodinamicamente instável, o que exige escolher o indutor e o bloqueador neuromuscular com cuidado.\n\nAlternativa A (correta): em choque séptico, o indutor deve causar o menor colapso circulatório possível. A cetamina é um anestésico dissociativo com efeito simpaticomimético indireto (inibe a recaptação de catecolaminas), que mantém ou eleva PA, FC e débito cardíaco. Em pacientes criticamente enfermos, com depleção de catecolaminas, pode ocorrer depressão miocárdica direta, por isso a dose deve ser reduzida. A dose habitual de indução é 1 a 2 mg/kg, e doses de cerca de 0,5 a 1 mg/kg são usadas no choque. Assim, 1 mg/kg é adequada. O propofol causa vasodilatação e depressão miocárdica, com maior risco de hipotensão grave. A afirmação é correta.\n\nAlternativa B (incorreta): a succinilcolina não é contraindicada por causar hipercalemia maciça na miastenia. A hipercalemia grave ocorre em condições com up-regulation de receptores extrajuncionais, como grandes queimados, esmagamento, denervação, lesão medular e distrofias. Na miastenia há redução do número de receptores de acetilcolina, e o paciente tende a ser resistente à succinilcolina (exigindo doses maiores), com risco de bloqueio de fase II. O problema na miastenia é a sensibilidade exagerada aos não despolarizantes. Ainda assim, a succinilcolina não é proibida. A descrição de \"arritmia refratária e parada quase imediata\" é incorreta.\n\nAlternativa C (incorreta): o etomidato inibe a 11-beta-hidroxilase de forma reversível, e não irreversível, causando supressão adrenal transitória. Os estudos e metanálises não demonstram de modo consistente aumento de mortalidade, e seu uso em sepse ainda é aceito, sobretudo pela estabilidade hemodinâmica. Ele fica como alternativa, com possível preferência por cetamina. Falar em \"crise adrenal aguda e aumento de mortalidade segundo estudos recentes\" é afirmação excessiva.\n\nAlternativa D (incorreta): o midazolam em dose de indução causa vasodilatação e hipotensão, sobretudo em pacientes hipovolêmicos ou sépticos, e tem início de ação lento e imprevisível. Não libera simpático nem preserva o débito cardíaco. Os benzodiazepínicos também podem piorar a fraqueza muscular na miastenia.\n\nAlternativa E (incorreta): na miastenia, o problema é o contrário. Há menos receptores funcionantes e a sensibilidade aos bloqueadores não despolarizantes está aumentada, então se usam doses reduzidas, com monitorização do bloqueio (TOF). Os inibidores da colinesterase potencializam a succinilcolina e podem antagonizar os não despolarizantes, mas não justificam dobrar a dose. Na prática, o rocurônio em dose de intubação rápida (1 a 1,2 mg/kg) pode ser usado, e o sugamadex permite reversão. A recomendação de 2 mg/kg é incorreta.\n\nConclusão: no choque séptico com miastenia grave, a cetamina em dose ajustada (cerca de 1 mg/kg) é boa opção de indução pela estabilidade hemodinâmica, e o bloqueador neuromuscular deve considerar a sensibilidade aumentada aos não despolarizantes. Gabarito: letra A.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Sepse",
+      "Doenças Neuromusculares",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  },
+  {
+    "id": "AJUDA_045a70d9-d97e-4d7e-9e80-537036c9bd73",
+    "originalId": "045a70d9-d97e-4d7e-9e80-537036c9bd73",
+    "statement": "Um homem de 68 anos, em tratamento irregular de hipertensão arterial, é admitido na sala de emergência de um pronto-socorro com queixa de dor torácica e dorsal intensas. Baseado no quadro clínico e exames de imagem anteriores a suspeita é de dissecção de aorta torácica. Em uma análise de 258 pacientes com dor torácica ou dorsal foram identificados 128 com dissecção de aorta torácica, utilizando-se para o diagnóstico de exames de imagem sofisticados, ou achados de necropsia; mais de 90% poderiam ser diagnosticados baseando-se em achados clínicos, laboratoriais ou de imagem mais simples, porém significativos. NÃO faz parte desses achados:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dosagem de D-dimeros elevada, acima de 500 ng/mL, que apresenta valor preditivo positivo acima de 90%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Alargamento aórtico ou de mediastino na radiografia de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ausência de pulso palpável em uma das extremidades proximais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diferença de PA > 20 mmHg entre o braço esquerdo e direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ausência de pulso carotídeo palpável.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A dissecção da aorta é uma emergência cardiovascular grave na qual o diagnóstico rápido e a estabilização hemodinâmica são fundamentais. A questão aborda os critérios clínicos e exames simples que auxiliam na suspeição diagnóstica.\n\nAlternativa A (Gabarito): Esta alternativa está incorreta porque, embora o D-dímero seja um exame com altíssima sensibilidade (acima de 95%) e um excelente Valor Preditivo Negativo (VPN) para excluir a dissecção da aorta em pacientes de baixo risco, o seu Valor Preditivo Positivo (VPP) é baixo. Isso ocorre porque o D-dímero é um marcador inespecífico que pode estar elevado em diversas condições, como tromboembolismo pulmonar, infarto agudo do miocárdio, infecções, cirurgias recentes ou neoplasias. Portanto, ele não apresenta um VPP acima de 90%.\n\nAlternativa B: O alargamento do mediastino ou a alteração da silhueta aórtica na radiografia de tórax é um dos achados de imagem simples mais comuns, presente em grande parte dos pacientes com dissecção da aorta torácica, sendo um importante sinal de alerta na sala de emergência.\n\nAlternativa C: A ausência de pulsos nas extremidades proximais é um achado clínico clássico. Ele ocorre quando a lâmina de dissecção (o flap intimal) ou o hematoma no falso lúmen obstrui o orifício de saída de uma artéria periférica, impedindo o fluxo sanguíneo adequado para aquele membro.\n\nAlternativa D: A diferença de pressão arterial sistólica superior a 20 mmHg entre os membros superiores é um sinal físico de alta especificidade para dissecção da aorta. Esse achado sugere que o processo de dissecção atingiu ou ultrapassou a origem de uma das artérias subclávias, comprometendo a perfusão de um dos braços.\n\nAlternativa E: A ausência de pulso carotídeo palpável também faz parte dos possíveis achados clínicos. Ela indica que a dissecção se estendeu para os vasos da base (como o tronco braquiocefálico ou a artéria carótida comum esquerda), o que pode resultar em déficits neurológicos graves, além da alteração vascular periférica.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Aórticas Agudas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  },
+  {
+    "id": "AJUDA_04616870-370b-40c4-8fc4-badac3d7142f",
+    "originalId": "04616870-370b-40c4-8fc4-badac3d7142f",
+    "statement": "Em relação à vacinação durante a gravidez, a vacina cuja administração está indicada em qualquer IG é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dtpa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "influenza",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "tríplice viral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "febre amarela",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alternativa correta é a (b). \n\nA vacina contra a influenza é composta por vírus inativados, sendo considerada extremamente segura e fundamental durante o período gestacional. Como as gestantes apresentam maior risco de complicações respiratórias, hospitalização e óbito decorrentes da gripe, o Ministério da Saúde recomenda sua administração em qualquer idade gestacional (1º, 2º ou 3º trimestre) durante as campanhas anuais de vacinação.\n\nConfira a análise das demais alternativas:\n\na) dTpa: Embora seja uma vacina recomendada em todas as gestações, ela não é aplicada em qualquer idade gestacional. O protocolo do Ministério da Saúde indica sua administração a partir da 20ª semana de gestação. O objetivo desse período específico é garantir que haja tempo suficiente para a produção de anticorpos maternos e a posterior transferência transplacentária para o feto, conferindo imunidade passiva contra a coqueluche ao recém-nascido nos primeiros meses de vida.\n\nc) Tríplice viral: Esta vacina é composta por vírus vivos atenuados (sarampo, caxumba e rubéola). Por esse motivo, é contraindicada durante a gestação devido ao risco teórico de infecção fetal. Mulheres em idade fértil que recebem a vacina devem ser orientadas a evitar a gravidez por pelo menos 30 dias após a dose.\n\nd) Febre amarela: Também é uma vacina de vírus vivos atenuados. De forma geral, é contraindicada para gestantes. Em situações excepcionais de alto risco de exposição (como surtos ou viagens inevitáveis para áreas de transmissão ativa), o médico deve realizar uma análise de risco-benefício. Nesses casos de exceção, ela costuma ser evitada no primeiro trimestre, não sendo, portanto, uma vacina indicada rotineiramente em qualquer idade gestacional.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Imunizações",
+      "Pré-Natal"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  },
+  {
+    "id": "AJUDA_04722958-3b98-4b20-b8df-29caad77999f",
+    "originalId": "04722958-3b98-4b20-b8df-29caad77999f",
+    "statement": "Um escolar de 8 anos de idade foi levado à emergência em razão de um quadro de indisposição, inapetência, cefaleia e edema periorbital. A médica, em sua anamnese, perguntou acerca de quedas, brigas na escola e sintomas associados, como queda de cabelo, febre, vômitos e síncope. A mãe negou quaisquer dos sintomas citados. Na história patológica pregressa, relatou infecção de garganta com frequência. Ao exame, a criança encontrava-se em bom estado geral, eupneica (FR = 20 irpm), eucárdica (FC = 100 bpm), com SatO2 = 98%, edema periorbital bilateralmente, de moderada intensidade, sem hiperemia, indolor, sem sinais de trauma. Verificaram-se pressão arterial acima do percentil 95 para a idade e exame simples de urina com hematúria presente.\n\nEm relação aos exames complementares, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A proteinúria é alta > 50 mg/kg/dia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cilindros hemáticos são sugestivos de lipidúria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A dosagem do complemento sérico é obrigatória para o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A hematúria é rara e geralmente ocorre por causa de complicação tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO CLÍNICO:\nO quadro clínico descrito apresenta a tríade clássica da síndrome nefrítica: edema, hipertensão arterial (pressão acima do percentil 95) e hematúria. Em um escolar de 8 anos com histórico de infecções de garganta frequentes, a principal hipótese diagnóstica é a Glomerulonefrite Difusa Aguda (GNDA) Pós-Estreptocócica (GNPE).\n\nANÁLISE DAS ALTERNATIVAS:\n\nA) INCORRETA. A proteinúria superior a 50 mg/kg/dia é a definição de proteinúria em faixa nefrótica. Na GNPE, a proteinúria é tipicamente subnefrótica (leve a moderada), geralmente situada abaixo desse valor. Embora possa ocorrer proteinúria maciça em alguns casos, ela não é a regra da síndrome nefrítica.\n\nB) INCORRETA. Cilindros hemáticos são patognomônicos de hematúria glomerular, indicando que o sangue provém do parênquima renal (inflamação do glomérulo). A lipidúria (presença de gordura na urina), por outro lado, é característica da síndrome nefrótica e manifesta-se através de cilindros graxos e corpos ovalados gordurosos (cruz de Malta).\n\nC) CORRETA. Para a confirmação diagnóstica da GNPE, é necessário evidenciar a queda do complemento sérico (especialmente a fração C3). A hipocomplementemia é um achado presente em mais de 90% dos casos de GNPE na fase aguda e deve se normalizar em até 8 semanas. Se o complemento estiver normal desde o início ou permanecer baixo por mais de 8 semanas, outros diagnósticos devem ser pesquisados. Portanto, sua dosagem é parte integrante e obrigatória da investigação laboratorial inicial.\n\nD) INCORRETA. A hematúria é um achado cardinal e essencial para o diagnóstico da síndrome nefrítica, não sendo rara nem uma complicação tardia. Ela surge precocemente no curso da doença, podendo ser macroscópica (urina com aspecto de \"chá\" ou \"cola\") ou microscópica.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  },
+  {
+    "id": "AJUDA_04738c15-fa61-4905-a7be-b9124a3e5245",
+    "originalId": "04738c15-fa61-4905-a7be-b9124a3e5245",
+    "statement": "Sobre a Doença Pulmonar Obstrutiva Crônica (DPOC), analise as afirmações:\n\nI. O diagnóstico é confirmado pela espirometria que demonstra obstrução ao fluxo aéreo não totalmente reversível (relação VEF1/CVF < 0,70 pós-broncodilator).\nII. A cessação do tabagismo é a única intervenção que comprovadamente reduz a taxa de declínio da função pulmonar.\nIII. O uso de corticosteroides inalatórios em monoterapia é a base do tratamento para todos os estágios da doença.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a proposição I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a proposição II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as proposições I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das Proposições:\n\nProposição I: Correta. O diagnóstico da Doença Pulmonar Obstrutiva Crônica (DPOC) é essencialmente clínico-funcional. A espirometria é indispensável para confirmar a presença de obstrução ao fluxo aéreo. O critério definido pelas diretrizes internacionais (GOLD) e nacionais é a relação entre o Volume Expiratório Forçado no primeiro segundo e a Capacidade Vital Forçada (VEF1/CVF) inferior a 0,70 após a administração de broncodilatador. Esse valor indica que a obstrução não é totalmente reversível, diferenciando-a, em muitos casos, da asma brônquica.\n\nProposição II: Correta. A interrupção do tabagismo é a intervenção de maior impacto na história natural da DPOC. É a única medida que comprovadamente reduz a velocidade de queda anual do VEF1 (função pulmonar), aproximando a curva de declínio do paciente à de um indivíduo não fumante. Embora outras terapias melhorem os sintomas e reduzam a mortalidade em grupos específicos (como a oxigenoterapia e a cirurgia de redução de volume), elas não alteram a taxa de perda progressiva da função pulmonar como o faz a cessação do tabagismo.\n\nProposição III: Incorreta. Os corticosteroides inalatórios (CI) não devem ser utilizados como monoterapia na DPOC. Diferentemente da asma, em que o CI é a base do tratamento, na DPOC o pilar terapêutico é o uso de broncodilatadores de longa ação, sejam eles antimuscarínicos (LAMA) ou beta-2-agonistas (LABA). O uso de corticosteroide inalatório é reservado apenas como terapia adjuvante (associada a broncodilatadores) para pacientes com histórico de exacerbações frequentes e/ou contagem elevada de eosinófilos no sangue periférico. O uso isolado de corticosteroide na DPOC não é eficaz e aumenta o risco de pneumonia.\n\nAnálise das Alternativas:\n\na) Incorreta. A proposição II também está correta.\nb) Incorreta. A proposição I também está correta.\nc) CORRETA. As afirmações I e II seguem as evidências científicas e diretrizes de manejo da doença, enquanto a III apresenta uma conduta terapêutica errônea.\nd) Incorreta. A afirmação III está clinicamente incorreta.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  },
+  {
+    "id": "AJUDA_0475bd47-05cd-46c3-955c-42ccc15c4ced",
+    "originalId": "0475bd47-05cd-46c3-955c-42ccc15c4ced",
+    "statement": "Primigesta, 24 anos, gestação de 38 semanas, em consulta num pronto atendimento obstétrico. Relata que há 4 horas está apresentando contrações uterinas dolorosas. Gestação de risco usual, fez pré-natal em uma Unidade Básica de Saúde. Exame físico geral: sem alterações. Exame obstétrico: altura uterina de 35 cm, batimentos cardíacos fetais normais, contrações uterinas presentes (3 contrações/30seg/10 min), feto em apresentação cefálica, plano + 2 de De Lee, bolsa amniocorial íntegra e colo uterino dilatado em 6 cm. Realizado analgesia peridural. Além da internação, assinale a alternativa que contém as medidas mais apropriadas para a condução deste caso, durante este período clínico do parto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar cardiotocografia, ausculta intermitente dos batimentos cardíacos fetais antes e avaliar a dilatação cervical a cada 2 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avaliar as contrações de hora em hora, ausculta intermitente dos batimentos cardíacos fetais e verificar a dilatação cervical a cada 4 horas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Recomendar cardiotocografia contínua e o uso de ocitocina intravenosa, após realizar analgesia peridural",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar a paciente para realizar puxos dirigidos durante as contrações e administrar ocitocina por via endovenosa, se este período estiver prolongado",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a condução clínica do primeiro período do parto (fase de dilatação) em uma gestante de risco habitual. A paciente encontra-se na fase ativa do trabalho de parto, com 6 cm de dilatação e contrações efetivas.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Em gestações de risco habitual, a cardiotocografia de rotina não é recomendada, sendo a ausculta intermitente o método de escolha para monitorar a vitalidade fetal. Além disso, realizar o exame de toque vaginal (avaliação cervical) a cada 2 horas é considerado um intervalo muito curto para uma evolução fisiológica, aumentando desnecessariamente o risco de infecção e intervenções.\n\nAlternativa (b) Correta: Esta alternativa está em total consonância com as recomendações da Organização Mundial da Saúde (OMS) e do Ministério da Saúde para o acompanhamento do parto humanizado e seguro. Em pacientes de baixo risco, deve-se realizar a ausculta intermitente dos batimentos cardíacos fetais (geralmente a cada 15 a 30 minutos na fase ativa). A avaliação das contrações e da dinâmica uterina deve ser frequente, e o toque vaginal para avaliar a progressão da dilatação deve ser realizado em intervalos de 4 horas, evitando toques repetidos e desnecessários.\n\nAlternativa (c) Incorreta: A realização de analgesia peridural não torna obrigatória a cardiotocografia contínua em pacientes de baixo risco, embora exija uma vigilância atenta. O uso de ocitocina intravenosa de forma rotineira após a analgesia (condução ativa do parto) não é indicado, devendo ser reservado apenas para casos de distocia (parada de progressão) ou hipossistolia.\n\nAlternativa (d) Incorreta: Esta alternativa apresenta dois erros principais. Primeiro, os puxos dirigidos (quando a equipe orienta a paciente a fazer força) devem ser evitados em favor dos puxos espontâneos da própria paciente. Segundo, a orientação sobre puxos é pertinente apenas ao segundo período do parto (fase expulsiva), e a paciente em questão ainda está com 6 cm de dilatação, ou seja, no primeiro período. A ocitocina também não deve ser administrada de forma automática.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  },
+  {
+    "id": "AJUDA_04778884-80ea-444c-bc0d-0c3630fae021",
+    "originalId": "04778884-80ea-444c-bc0d-0c3630fae021",
+    "statement": "Mulher, 35 anos, professora, refere cansaço progressivo há 6 meses, tontura ocasional e palidez cutânea. Relata fluxo menstrual intenso nos últimos anos. Não apresenta sangramentos gastrointestinais evidentes. Dieta variada.\n\nExames laboratoriais recentes:\n• Hemoglobina – 8,2 g/dL.\n• VCM – 72 fL.\n• Reticulócitos – normais.\n• Ferro sérico – 25 µg/dL (referência 50–170).\n• Ferritina sérica – 8 ng/mL (referência 30–300).\n• Capacidade total de ligação de ferro (TIBC) – 450 µg/dL (referência 250–400).\n\nCom base nesse cenário clínico e laboratorial, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia por doença crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anemia ferropriva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Talassemia minor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anemia sideroblástica adquirida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deficiência de vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO E LABORATORIAL\n\nA paciente apresenta um quadro clínico de anemia (cansaço, tontura, palidez) e uma causa clara para tal condição: o fluxo menstrual intenso (hipermenorreia) nos últimos anos, que gera perda sanguínea crônica. O laboratório revela uma anemia microcítica (VCM 72 fL) e hipoproliferativa (reticulócitos normais). O perfil de ferro é decisivo: ferro sérico baixo, TIBC (capacidade total de ligação de ferro) elevado e ferritina muito baixa (8 ng/mL). A ferritina é o marcador mais sensível e específico para avaliar as reservas de ferro, sendo que valores abaixo de 30 ng/mL são altamente sugestivos de deficiência de ferro.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Anemia por doença crônica: Incorreta. Nesta condição, a anemia costuma ser normocítica e normocrômica. O ferro sérico até pode estar baixo, mas o TIBC costuma estar baixo ou normal, e a ferritina geralmente está normal ou elevada, pois ela se comporta como um reagente de fase aguda, refletindo um sequestro de ferro nos estoques, e não a ausência dele.\n\nb) Anemia ferropriva: Correta. É a causa mais comum de anemia no mundo e se encaixa perfeitamente no perfil da paciente: perda sanguínea crônica (menstruação), microcitose, ferro sérico baixo, TIBC elevado (tentativa do organismo de captar mais ferro) e ferritina baixa (esgotamento das reservas).\n\nc) Talassemia minor: Incorreta. É um importante diferencial para microcitose, porém, na talassemia, o perfil de ferro costuma ser normal. O ferro sérico e a ferritina não estão reduzidos e o TIBC não se altera. O número de hemácias costuma ser desproporcionalmente alto para o grau da anemia (índice de Mentzer baixo), o que não foi sugerido aqui.\n\nd) Anemia sideroblástica adquirida: Incorreta. Este é um grupo de anemias caracterizado pela utilização defeituosa do ferro, resultando em sobrecarga do metal. Laboratorialmente, observaríamos ferro sérico e ferritina elevados, e não reduzidos.\n\ne) Deficiência de vitamina B12: Incorreta. A carência de B12 causa anemia megaloblástica, que se caracteriza por ser uma anemia macrocítica, ou seja, o VCM estaria elevado (geralmente acima de 100 fL), ao contrário do VCM de 72 fL apresentado pela paciente.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": 30.403439903417993,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  },
+  {
+    "id": "AJUDA_047b85b5-e3ef-42da-9210-b4ad4e98436e",
+    "originalId": "047b85b5-e3ef-42da-9210-b4ad4e98436e",
+    "statement": "Ao realizar Exame Admissional de um Trabalhador da Área Metalúrgica que apresenta Nível de Pressão Sonora Elevado (RUÍDO) Médio de 115 decibéis, o E.P.I. (Equipamento de Proteção Individual), mais adequado a ser utilizado em uma Jornada de 40 horas semanais deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Protetor Auricular tipo Concha",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Protetor Auricular tipo de Inserção",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Qualquer dos dois tipos de protetores de Inserção ou Concha",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há necessidade para a utilização de protetor auricular",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A análise desta questão exige conhecimento sobre a Norma Regulamentadora 15 (NR 15) e os limites de tolerância para ruído contínuo ou intermitente na medicina do trabalho. O nível de 115 decibéis (dB) representa o limite máximo absoluto de exposição permitida para apenas 7 minutos diários sem proteção. Para uma jornada de 40 horas semanais (8 horas diárias), a proteção deve ser rigorosa para reduzir a pressão sonora que atinge o sistema auditivo a níveis seguros, idealmente abaixo de 85 dB.\n\nAlternativa a: Esta é a resposta correta. O protetor auricular tipo concha é geralmente o mais indicado para ambientes com níveis de ruído extremamente elevados, como 115 dB. Tecnicamente, os abafadores de concha oferecem níveis de atenuação sonora (NRRsf) que tendem a ser mais consistentes e elevados para altas intensidades. Além disso, proporcionam uma vedação externa que minimiza erros de colocação, garantindo que o trabalhador metalúrgico receba a proteção necessária durante toda a jornada de trabalho.\n\nAlternativa b: Esta alternativa está incorreta. Embora existam protetores de inserção com bons índices de atenuação, eles dependem crucialmente de uma inserção perfeita no canal auditivo para funcionarem corretamente. Em níveis críticos de 115 dB, qualquer falha no ajuste do plugue de inserção pode expor o trabalhador a danos auditivos severos e imediatos, tornando-o menos confiável que o tipo concha para este cenário específico.\n\nAlternativa c: Esta alternativa está incorreta porque, em níveis de 115 dB, a escolha do Equipamento de Proteção Individual (EPI) não é indiferente. É necessária uma análise técnica da capacidade de atenuação de cada modelo. Nem todo protetor de inserção ou concha simples consegue reduzir o ruído de 115 dB para níveis aceitáveis (abaixo de 85 dB). O protetor tipo concha de alta performance é a escolha técnica padrão para intensidades tão elevadas.\n\nAlternativa d: Esta alternativa está incorreta. A exposição a 115 dB sem proteção auditiva é extremamente prejudicial à saúde. Segundo a NR 15, o limite de tolerância para uma jornada de 8 horas é de 85 dB. Como o ruído dobra de intensidade a cada 5 dB (critério de desempate), a exposição a 115 dB sem EPI resultaria em perda auditiva induzida por ruído (PAIR) de forma acelerada e permanente.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:30.277Z"
+  }
+]

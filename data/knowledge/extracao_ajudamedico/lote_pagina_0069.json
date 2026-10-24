@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_11abd7d8-3202-4388-b65e-1a947fece449",
+    "originalId": "11abd7d8-3202-4388-b65e-1a947fece449",
+    "statement": "Sobre os conceitos de moda, mediana e média, na bioestatística, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A mediana é mais apropriada que a média para representar o conjunto de dados quando há valores muito extremos (outliers).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A mediana é o valor que aparece com mais frequência em um conjunto de dados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A moda é o valor central de um conjunto de dados quando os valores são organizados em ordem crescente ou decrescente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A média é um valor que necessariamente está presente no conjunto de dados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Um conjunto de dados pode ter mais de uma média.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para dominar as questões de Bioestatística em provas de residência, é fundamental diferenciar as três principais medidas de tendência central: média, mediana e moda. Vamos analisar cada alternativa para entender por que a letra (A) é a correta.\n\nAlternativa A (Correta): Esta é uma regra de ouro na bioestatística. A média aritmética é extremamente sensível a valores extremos (outliers). Por exemplo, em um grupo onde cinco pessoas ganham 2 mil reais e uma ganha 100 mil, a média será puxada para cima, não representando bem a realidade do grupo. Já a mediana, por ser o valor exato que divide a amostra ao meio (50% dos dados abaixo e 50% acima), é uma medida robusta e não é afetada por esses valores discrepantes, sendo a melhor escolha para distribuições assimétricas.\n\nAlternativa B (Incorreta): A descrição apresentada refere-se à moda. A mediana é o valor central de uma série de dados ordenados, e não o valor que mais se repete.\n\nAlternativa C (Incorreta): A alternativa inverteu os conceitos. O valor central de um conjunto ordenado (rol) é a mediana. A moda, por sua vez, é o valor mais frequente (o \"mais popular\") do conjunto de dados.\n\nAlternativa D (Incorreta): A média é um valor calculado (soma de todos os valores dividida pelo número total de observações). Em muitos casos, o resultado dessa conta não corresponde a nenhum dos valores reais presentes no conjunto de dados. Por exemplo, a média entre 2 e 4 é 3, mas o número 3 não precisava estar originalmente no conjunto.\n\nAlternativa E (Incorreta): Um conjunto de dados possui apenas uma média aritmética. O que pode ser múltiplo é a moda (um conjunto pode ser bimodal, trimodal ou polimodal, caso dois ou mais valores se repitam com a mesma frequência máxima).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  },
+  {
+    "id": "AJUDA_11c12ea9-ac26-4710-9fc3-f68ac8e70d56",
+    "originalId": "11c12ea9-ac26-4710-9fc3-f68ac8e70d56",
+    "statement": "Paciente, 45 anos, residente da área rural, apresenta sintomas de hipertensão e diabetes não controlados. Ele procura atendimento na Unidade Básica de Saúde (UBS) mais próxima. A abordagem correta para o tratamento inicial deste paciente no contexto da Atenção Primária à Saúde (APS) do SUS é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar que o paciente procure atendimento especializado em um hospital universitário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar o paciente imediatamente para um hospital de alta complexidade, pois ele provavelmente apresenta lesão de órgãos-alvo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar exames de rotina e iniciar o tratamento com medicamentos, além de orientações sobre mudanças no estilo de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar o paciente para uma Unidade de Pronto Atendimento (UPA 24h) para tratamento imediato, pois os sintomas devem ser tratados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os princípios fundamentais da Atenção Primária à Saúde (APS) no contexto do Sistema Único de Saúde (SUS). O papel da APS é ser a porta de entrada preferencial e o centro comunicador da Rede de Atenção à Saúde, possuindo alta resolutividade para condições crônicas prevalentes, como a hipertensão arterial sistêmica e o diabetes mellitus.\n\nAlternativa (a) Incorreta. O encaminhamento direto para um hospital universitário, que representa a atenção terciária, sem uma avaliação e tentativa de manejo prévio na APS, fere o princípio da hierarquização do SUS. A grande maioria dos casos de hipertensão e diabetes deve ser manejada integralmente na própria Unidade Básica de Saúde.\n\nAlternativa (b) Incorreta. Não há evidências no enunciado de que o paciente apresente uma emergência hipertensiva ou complicações agudas do diabetes (como cetoacidose ou estado hiperosmolar) que justifiquem o encaminhamento imediato para a alta complexidade. O manejo de patologias crônicas, mesmo que inicialmente não controladas, é competência típica da atenção primária.\n\nAlternativa (c) Correta. Esta alternativa descreve a conduta resolutiva esperada na APS. Diante de um paciente com doenças crônicas não controladas, o médico deve realizar a propedêutica básica (exames de rotina para rastrear lesões de órgão-alvo e estratificar risco cardiovascular), instituir ou ajustar a terapêutica farmacológica e promover ações de educação em saúde, focando em mudanças no estilo de vida. A APS deve garantir a longitudinalidade e a coordenação do cuidado.\n\nAlternativa (d) Incorreta. A Unidade de Pronto Atendimento (UPA 24h) é destinada ao atendimento de urgências e emergências, ou seja, quadros agudos ou crônicos agudizados. Pacientes com doenças crônicas que necessitam de acompanhamento regular e ajustes terapêuticos devem ser assistidos na UBS, que é o local adequado para o controle crônico e prevenção de complicações.\n\nEm resumo, a Atenção Primária deve ser capaz de resolver a vasta maioria dos problemas de saúde da população, reservando os encaminhamentos para níveis secundários ou terciários apenas para casos de maior complexidade técnica ou refratários ao tratamento inicial preconizado pelos protocolos.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  },
+  {
+    "id": "AJUDA_11c3068b-0e30-481b-b43b-b7f1a6212e7e",
+    "originalId": "11c3068b-0e30-481b-b43b-b7f1a6212e7e",
+    "statement": "Saber se comunicar de forma efetiva é fundamental para melhorar o vínculo, o acolhimento, consequentemente, a adesão ao plano terapêutico oferecido e um melhor desfecho clínico. É recomendado que o paciente fale livremente por pelo menos dois a três minutos no início da consulta, para que suas principais demandas apareçam. São técnicas para estimular o paciente a falar, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ecoar/parafrasear;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar a consulta com perguntas focadas, oferecendo assim certa liberdade para o paciente falar;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Resumir o que o paciente falou até o momento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Silêncio acompanhando de linguagem não verbal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO tema central desta questão é a Comunicação Clínica, especificamente as técnicas de facilitação e escuta ativa dentro do Método Clínico Centrado na Pessoa. O objetivo inicial de uma consulta é permitir que o paciente apresente sua narrativa e suas preocupações sem interrupções precoces, o que é conhecido como o tempo de fala livre.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): Ecoar ou parafrasear consiste em repetir as últimas palavras do paciente ou reescrever uma frase curta com o mesmo sentido. Essa técnica demonstra que o médico está ouvindo atentamente e sinaliza para o paciente que ele pode continuar desenvolvendo aquele raciocínio. É uma técnica facilitadora clássica.\n\nAlternativa B (CORRETA/GABARITO): Perguntas focadas ou fechadas (que exigem respostas curtas como \"sim\" ou \"não\") são restritivas por natureza. Se o médico inicia a consulta com perguntas focadas, ele assume o controle da narrativa e impede que o paciente exponha suas demandas de forma livre. Para estimular a fala no início da consulta, devem-se utilizar perguntas abertas (Ex.: \"O que trouxe o senhor aqui hoje?\"). Portanto, esta é a alternativa que apresenta uma conduta incorreta para o objetivo proposto.\n\nAlternativa C (Incorreta): Resumir periodicamente o que o paciente disse ajuda a organizar o pensamento do próprio paciente e confirma se o médico compreendeu a história corretamente. Ao ouvir o resumo, o paciente frequentemente se sente estimulado a adicionar detalhes importantes que haviam sido esquecidos ou a corrigir informações, mantendo o fluxo da comunicação.\n\nAlternativa D (Incorreta): O silêncio acompanhado de linguagem não verbal adequada (contato visual, inclinação do corpo para frente, balançar a cabeça positivamente) é uma das ferramentas mais poderosas para estimular a fala. Muitas vezes, o paciente precisa de alguns segundos para organizar pensamentos complexos ou dolorosos. Interromper esse silêncio precocemente pode bloquear a revelação de demandas importantes (as chamadas demandas ocultas).\n\nRESUMO DIDÁTICO\n\nPara garantir que o paciente fale livremente nos primeiros minutos, o médico deve utilizar técnicas facilitadoras (abertas) e evitar técnicas inibidoras (fechadas). O uso de perguntas focadas deve ser reservado para as etapas posteriores da consulta, durante a anamnese dirigida, para esclarecer pontos específicos após a narrativa livre ter sido concluída.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  },
+  {
+    "id": "AJUDA_11cbe79f-af64-4f0c-8e0b-16c7d1fc2728",
+    "originalId": "11cbe79f-af64-4f0c-8e0b-16c7d1fc2728",
+    "statement": "Puérpera de 72 horas pós-cesariana mantém febre persistente (≥38,5 °C) apesar de antibioticoterapia adequada com clindamicina e gentamicina há 48 horas. Apresenta dor pélvica leve, sem sinais de peritonite, e exames de imagem sem coleções.\n\nO diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endometrite refratária por enterococo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Abscesso pélvico profundo não detectável por imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tromboflebite séptica pélvica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Infecção urinária associada a cateter vesical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Complicação respiratória infecciosa secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico mais provável é a tromboflebite séptica pélvica, tornando a alternativa (c) a correta.\n\nAnálise da questão:\nO quadro descreve uma paciente no pós-operatório de cesariana com febre persistente após 48 horas de antibioticoterapia de amplo espectro (clindamicina e gentamicina), que é o padrão-ouro para o tratamento de endometrite. Quando uma puérpera não responde ao tratamento inicial e exames de imagem descartam coleções (abscessos), o raciocínio clínico deve obrigatoriamente considerar a tromboflebite séptica pélvica.\n\nExplicação das alternativas:\n\na) Incorreta. O enterococo pode estar presente em casos de endometrite, e geralmente a conduta seria adicionar ampicilina ao esquema (tríplice esquema). No entanto, o enunciado foca na persistência da febre mesmo sem sinais de coleções e após tempo adequado de antibiótico venoso, o que é a apresentação clássica da tromboflebite em provas de residência.\n\nb) Incorreta. A questão afirma explicitamente que os exames de imagem não demonstraram coleções. Embora abscessos muito pequenos possam eventualmente passar despercebidos, em uma questão de múltipla escolha, essa informação serve para afastar o diagnóstico de abscesso pélvico e direcionar o candidato para causas não purulentas de febre persistente.\n\nc) Correta. A tromboflebite séptica pélvica é uma complicação rara, mas importante, que ocorre quando há infecção e inflamação dos vasos pélvicos, levando à formação de trombos. O quadro clínico típico é exatamente este: febre alta que não cede com antibióticos adequados, em uma paciente que não possui abscessos visíveis. O diagnóstico costuma ser de exclusão ou confirmado por tomografia/ressonância que mostre o trombo venoso. Historicamente, o diagnóstico era sugerido pela melhora da febre após 48 horas de heparinização (teste terapêutico), embora hoje o foco seja na confirmação por imagem.\n\nd) Incorreta. Embora a infecção urinária seja comum no puerpério devido ao cateterismo vesical, a gentamicina (que a paciente já está recebendo) possui excelente cobertura para a maioria dos uropatógenos gram-negativos. Além disso, a febre alta e persistente após 48 horas de tratamento sugere uma complicação mais profunda ou sistêmica.\n\ne) Incorreta. Complicações respiratórias como atelectasias costumam ocorrer nas primeiras 24 horas pós-parto. Já a pneumonia apresentaria sintomas localizados, como tosse, expectoração ou alterações na ausculta pulmonar, que não foram descritos no caso.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  },
+  {
+    "id": "AJUDA_11d563e7-80c5-40d3-9df3-2a758e2f7fa8",
+    "originalId": "11d563e7-80c5-40d3-9df3-2a758e2f7fa8",
+    "statement": "A medicina preventiva é categorizada em quatro níveis principais: prevenção primária, secundária, terciária e quaternária, cada um abordando diferentes estágios do processo de doença e saúde. A respeito do assunto abordado, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O foco do quarto nível é melhorar a qualidade de vida e aumentar a expectativa de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As intervenções na prevenção secundária incluem o diagnóstico precoce e o tratamento inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O terceiro nível visa reduzir o impacto de uma doença sendo estabelecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Saneamento básico faz parte da prevenção primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda os níveis de prevenção propostos por Leavell e Clark, somados ao conceito de prevenção quaternária introduzido por Marc Jamoulle. Abaixo, analiso cada alternativa:\n\nAlternativa a) Incorreta. O foco do quarto nível (prevenção quaternária) não é aumentar a expectativa de vida diretamente, mas sim evitar o excesso de medicalização e proteger o paciente de intervenções diagnósticas ou terapêuticas desnecessárias que possam causar danos (iatrogenia). O objetivo é identificar pacientes em risco de sobreintervenção e oferecer alternativas eticamente aceitáveis.\n\nAlternativa b) Incorreta. Embora muitos livros didáticos incluam o diagnóstico precoce e o tratamento imediato na prevenção secundária, nesta questão específica, a alternativa é considerada incorreta em comparação com a clareza da alternativa (d). A prevenção secundária foca essencialmente no rastreamento (*screening*) e na detecção da doença em sua fase assintomática ou inicial para evitar sua progressão.\n\nAlternativa c) Incorreta. A prevenção terciária visa reduzir o impacto de uma doença já estabelecida, mas o seu foco principal é a reabilitação e a redução de incapacidades e sequelas, buscando reintegrar o indivíduo social e funcionalmente. O termo \"reduzir impacto\" na alternativa pode ser considerado genérico, enquanto a definição de reabilitação é mais precisa para o terceiro nível.\n\nAlternativa d) Correta. A prevenção primária ocorre no período de pré-patogênese, ou seja, antes de a doença se instalar. Ela se divide em dois pilares: Promoção da Saúde e Proteção Específica. O saneamento básico é um exemplo clássico de medida de promoção da saúde, pois melhora as condições ambientais e de vida da população, reduzindo o risco de surgimento de inúmeras doenças (como parasitoses e doenças de veiculação hídrica) antes mesmo que o hospedeiro entre em contato com o agente patogênico.\n\nResumo dos Níveis de Prevenção:\n1. Primária: Age nos fatores de risco (ex.: vacina, saneamento).\n2. Secundária: Diagnóstico precoce e rastreamento (ex.: preventivo de câncer do colo do útero, mamografia).\n3. Terciária: Reabilitação e limitação de sequelas (ex.: fisioterapia pós-AVC).\n4. Quaternária: Evitar danos por excesso de exames ou medicamentos (ex.: não solicitar exames de *check-up* sem evidência clínica).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  },
+  {
+    "id": "AJUDA_11fa5008-ecfa-4a22-b7b6-37ba3d4b37ca",
+    "originalId": "11fa5008-ecfa-4a22-b7b6-37ba3d4b37ca",
+    "statement": "Durante o seu plantão, você recebe a seguinte comunicação: homem com 23 anos, vítima de ferimentos por arma de fogo no tórax, abdome e coxa direita. ECG: 15, FC: 100 bpm, PAS: 90 mmHg, FR:30 e Sat: 98%. Ao chegar na sala de trauma, seu paciente está in extremis. Está irresponsivo, com respiração agônica, saturação de oxigênio na casa dos 80%, apesar da ventilação com Ambu e máscara, e seu pulso radial é fraco, com FC de 105 batimentos por minuto. Os socorristas instalaram 2 acessos venosos periféricos de grande calibre e começaram a infundir solução salina. Relatam que o paciente foi baleado 3 vezes à queima-roupa com uma arma de fogo desconhecida. O primeiro ferimento, na porção superior do tórax direito, estava soprando na cena e foi coberto com um curativo oclusivo, preso em três lados. O segundo ferimento está localizado no quadrante inferior esquerdo do abdome e não sangra. O terceiro ferimento está localizado na coxa direita e não está sangrando. Os socorristas informam que o sangramento da coxa pulsava antes da aplicação de um torniquete.\n\nNeste paciente com múltiplos ferimentos por arma de fogo e distúrbio fisiológico, qual dos seguintes seria o tratamento mais apropriado para uma transecção da artéria femoral superficial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colocação de derivação intravascular temporária;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Anastomose arterial primária término-terminal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ligadura da artéria;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reconstrução usando um enxerto autógeno de veia safena magna.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ponto central para resolver esta questão é o reconhecimento do estado clínico do paciente: ele está \"in extremis\", apresentando instabilidade hemodinâmica, insuficiência respiratória e ferimentos múltiplos (tórax, abdome e coxa). Trata-se de um cenário clássico para a aplicação dos princípios da Cirurgia de Controle de Danos (Damage Control). \n\nNa Cirurgia de Controle de Danos, o objetivo primordial é o controle rápido da hemorragia e da contaminação, postergando reconstruções definitivas e demoradas para um segundo momento, após a estabilização do paciente na UTI (correção da tríade letal: acidose, coagulopatia e hipotermia).\n\nAnálise das alternativas:\n\na) Correta. A colocação de uma derivação intravascular temporária (shunt) é a conduta de escolha no controle de danos para lesões arteriais de extremidades em pacientes instáveis. O shunt permite a reperfusão imediata do membro, evitando a isquemia prolongada, enquanto o cirurgião foca nas lesões que trazem risco iminente de morte (como o trauma torácico e abdominal). Após a estabilização fisiológica do paciente em ambiente intensivo, ele retorna ao centro cirúrgico para a reconstrução definitiva.\n\nb) Incorreta. A anastomose primária término-terminal é uma técnica de reparo definitivo. Embora ideal em pacientes estáveis com perda mínima de tecido arterial, ela demanda tempo cirúrgico e precisão técnica que não são compatíveis com um paciente apresentando respiração agônica e choque. Tentar um reparo definitivo agora aumentaria o tempo de exposição cirúrgica e o risco de morte no intraoperatório.\n\nc) Incorreta. A ligadura da artéria femoral superficial é um procedimento rápido, mas carrega um risco considerável de isquemia crítica do membro e necessidade de amputação posterior. Como o shunt intravascular temporário é uma técnica rápida e eficaz para manter a viabilidade do membro sem prolongar excessivamente a cirurgia, ele é preferível à ligadura em artérias de grande calibre de membros.\n\nd) Incorreta. A reconstrução com enxerto de veia safena magna é o \"padrão-ouro\" para reparos arteriais complexos em traumas de extremidades. No entanto, é um procedimento demorado que exige a colheita da veia em um sítio doador e suturas vasculares meticulosas. Em um paciente com múltiplos ferimentos e sinais de falência fisiológica, realizar esse procedimento agora violaria todos os preceitos do controle de danos, levando ao agravamento do quadro clínico.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  },
+  {
+    "id": "AJUDA_120712a8-816c-4feb-a0e6-84201f0175d3",
+    "originalId": "120712a8-816c-4feb-a0e6-84201f0175d3",
+    "statement": "Paciente, 42 anos de idade, G2P1A1, procura atendimento por aumento progressivo do fluxo menstrual com coágulos e cólicas intensas. Refere ainda dispareunia profunda nos últimos meses. Ao exame ginecológico, não foram observadas alterações significativas. Realizou a ultrassonografia transvaginal, mas ainda não tem o resultado. Em relação a esse quadro clínico, considere as afirmativas a seguir. \n\nI. Em caso de adenomiose, o ultrassom apresentará útero globoso, espessamento miometrial assimétrico, padrão miometrial heterogêneo com “fan-shaped shadowing”, cistos miometriais e zona juncional irregular. \nII. Em caso de endometriose profunda, o ultrassom apresentará lesões hiperecogênicas, bem delimitadas, com \"sliding sign\" positivo sem comprometimento da muscular própria intestinal, sem restrição de mobilidade ao exame dinâmico. \nIII. Caso a paciente necessite realizar a terapia hormonal, o DIU de levonorgestrel de 52 mg poderá ser utilizado, para proteção endometrial, por até 8 anos. \nIV. O DIU de levonorgestrel de 52 mg é opção eficaz para controle do sangramento anormal e da dor associada a adenomiose e endometriose. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da Afirmativa I: Esta afirmativa está correta. Os achados descritos são os critérios clássicos definidos pelo consenso MUSA (Morphological Uterus Sonographic Assessment) para o diagnóstico de adenomiose por ultrassonografia. O útero assume um formato globoso devido à hipertrofia miometrial. O espessamento assimétrico das paredes (geralmente a posterior é mais espessa que a anterior), a presença de cistos miometriais (que representam glândulas endometriais ectópicas), o padrão heterogêneo com sombras acústicas em forma de leque (fan-shaped shadowing) e a zona juncional irregular são sinais altamente sugestivos da doença.\n\nAnálise da Afirmativa II: Esta afirmativa está incorreta. Na endometriose profunda, as lesões ultrassonográficas são caracteristicamente hipoecoicas (escuras) e não hiperecogênicas. O sliding sign (sinal do deslizamento) positivo indica que as estruturas pélvicas estão livres; na endometriose profunda que afeta o compartimento posterior, esse sinal é frequentemente negativo, indicando fixação dos órgãos ou obliteração do fundo de saco de Douglas. Além disso, a endometriose intestinal profunda é definida justamente pelo acometimento da camada muscular própria do intestino.\n\nAnálise da Afirmativa III: Esta afirmativa está incorreta. Embora o DIU de levonorgestrel de 52 mg (Mirena) tenha recebido aprovação recente para uso por até 8 anos exclusivamente para fins de contracepção, essa extensão de prazo não se aplica a todas as indicações. Para a proteção endometrial em pacientes em terapia hormonal (reposição estrogênica), o tempo de uso recomendado continua sendo de, no máximo, 5 anos. Além disso, o quadro clínico da paciente sugere tratamento de patologia ginecológica (sangramento e dor) e não necessariamente a necessidade de terapia hormonal de menopausa.\n\nAnálise da Afirmativa IV: Esta afirmativa está correta. O DIU de levonorgestrel de 52 mg é considerado uma terapia de primeira linha para o controle do Sangramento Uterino Anormal (SUA) e da dor pélvica associada tanto à adenomiose quanto à endometriose. Ele age localmente promovendo a decidualização e atrofia do endométrio e do tecido ectópico, reduzindo significativamente o fluxo menstrual e os sintomas de cólica e dispareunia.\n\nConclusão: Estão corretas apenas as afirmativas I e IV. Portanto, a alternativa correta é a letra B.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Endometriose",
+      "Adenomiose"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  },
+  {
+    "id": "AJUDA_1207e44d-7ec3-44c4-b32c-ce32d20ad08b",
+    "originalId": "1207e44d-7ec3-44c4-b32c-ce32d20ad08b",
+    "statement": "Paciente 42 anos, sexo masculino, relata início súbito de hematêmese e náuseas intensas, refere não ter tido episódios prévios. Refere dor epigástrica leve e sensação de cansaço, mas nega melena ou alteração do hábito intestinal. Ao exame físico sem alterações significativas. Paciente nega comorbidades conhecidas. Ao Exame físico: Sinais vitais: Pressão arterial 100/70 mmHg; frequência cardíaca 110 bpm; frequência respiratória 18 irpm. Abdome: Sensibilidade leve em epigástrio, sem sinais de peritonite ou massa palpável. Exames complementares: Hb 8,5 g/dL RNI: 1,2. Neste caso, o CORRETO manejo desse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar ressuscitação volêmica objetivando PAM > 65mmHg, manter Hb > 7,0, iniciar inibidor de bomba de prótons em dose dobrada venoso, eritromicina e realizar endoscopia em até 24 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar ressuscitação volêmica objetivando PAM > 65mmHg, manter Hb > 7,0, iniciar inibidor de bomba de prótons em dose dobrada venoso, iniciar Octreotite e realizar endoscopia em até 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar ressuscitação volêmica objetivando PAM > 85mmHg, manter Hb > 9,0, iniciar inibidor de bomba de prótons em dose dobrada venoso, eritromicina e realizar endoscopia em até 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar ressuscitação volêmica objetivando PAM > 65mmHg, manter Hb > 7,0, iniciar inibidor de bomba de prótons em dose dobrada venoso, eritromicina, Octreotide e realizar endoscopia em até 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta um quadro clínico clássico de hemorragia digestiva alta (HDA), manifestado por hematêmese súbita e dor epigástrica. Os sinais vitais indicam instabilidade hemodinâmica inicial (frequência cardíaca de 110 bpm e pressão arterial limítrofe), o que caracteriza um choque hipovolêmico classe II. O manejo inicial deve focar na estabilização e na preparação para o diagnóstico definitivo via endoscopia.\n\nAlternativa (a) correta: Esta alternativa segue rigorosamente os protocolos atuais para HDA não varicosa. A ressuscitação volêmica deve buscar uma pressão arterial média (PAM) superior a 65 mmHg para assegurar a perfusão orgânica. A estratégia de transfusão de sangue deve ser restritiva, com o objetivo de manter a hemoglobina (Hb) acima de 7,0 g/dL, pois estudos demonstram que essa conduta reduz a mortalidade e o risco de ressangramento em comparação a metas mais altas. O inibidor da bomba de prótons (IBP) em dose dobrada (ataque seguido de infusão ou doses intermitentes altas) auxilia na estabilização de coágulos em úlceras pépticas. A eritromicina venosa é recomendada como agente pró-cinético para esvaziar o estômago de sangue e coágulos, melhorando a visibilidade durante a endoscopia. O prazo de até 24 horas para a realização da endoscopia digestiva alta é o padrão recomendado para pacientes que foram estabilizados clinicamente.\n\nAlternativa (b) incorreta: O uso de octreotide (ou somatostatina) é indicado especificamente para o tratamento de hemorragias de origem varicosa (varizes esofágicas ou gástricas decorrentes de hipertensão portal). O paciente em questão não possui histórico de etilismo, hepatopatias ou estigmas periféricos de cirrose ao exame físico, tornando a etiologia varicosa menos provável em comparação à úlcera péptica. Além disso, embora a endoscopia precoce seja benéfica, o prazo de 24 horas é o consenso geral para a maioria dos casos.\n\nAlternativa (c) incorreta: Manter uma PAM acima de 85 mmHg é um alvo desnecessariamente elevado para a ressuscitação inicial e pode aumentar o risco de sangramento por excesso de volemia. Da mesma forma, manter a Hb acima de 9,0 g/dL caracteriza uma estratégia transfusional liberal, que está associada a piores desfechos clínicos e maior taxa de complicações na hemorragia digestiva quando comparada à estratégia restritiva (Hb > 7,0 g/dL).\n\nAlternativa (d) incorreta: Esta opção repete o erro de indicar o octreotide para um paciente que não apresenta sinais de hipertensão portal. O uso dessa medicação de forma empírica em todos os casos de HDA não é custo-efetivo e não está embasado em diretrizes para casos com forte suspeita de causa não varicosa (como a dor epigástrica apresentada). O tempo de 12 horas para a endoscopia também é mais rígido do que o preconizado pela literatura para pacientes estabilizados com suspeita de sangramento por úlcera.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  },
+  {
+    "id": "AJUDA_120d4eac-07e2-42f2-a340-ed579affb7ee",
+    "originalId": "120d4eac-07e2-42f2-a340-ed579affb7ee",
+    "statement": "Qual item correlaciona adequadamente o nome da classificação com a sua descrição I Classificação de Forrest consiste no sistema de classificação para úlceras pépticas hemorrágicas. II Classificação de Hinchey consiste no sistema de classificação para diverticulite crônica. III Classificação de Parks consiste no sistema de classificação para esofagite. IV Classificação de Los Angeles consiste no sistema de classificação para fístulas perianais. V Classificação TNM consiste no sistema de classificação para tumores malignos. Assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente os itens I e V estão certos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Somente os itens I, II e V estão certos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente os itens III, IV e V estão certos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente os itens I, III e IV estão certos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todos os itens estão certos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise detalhada dos itens:\n\nItem I: Correto. A Classificação de Forrest é a ferramenta padrão utilizada durante a endoscopia digestiva alta para descrever sinais de hemorragia em úlceras pépticas. Ela estratifica o risco de ressangramento, variando desde o sangramento ativo (I) até a úlcera com base limpa (III).\n\nItem II: Incorreto. A Classificação de Hinchey é utilizada para graduar a gravidade da diverticulite aguda, especificamente quando há complicações como abscessos ou peritonite (estágios I a IV). Ela não se aplica à diverticulite crônica.\n\nItem III: Incorreto. A Classificação de Parks é o sistema utilizado para descrever a anatomia das fístulas perianais, classificando-as de acordo com o seu trajeto em relação aos esfíncteres anais (interesfincteriana, transesfincteriana, supraesfincteriana e extraesfincteriana).\n\nItem IV: Incorreto. A Classificação de Los Angeles é o sistema endoscópico mais utilizado no mundo para descrever a gravidade da esofagite de refluxo, graduando as lesões de A a D conforme a extensão das erosões na mucosa esofágica. Observe que os itens III e IV inverteram as definições entre si.\n\nItem V: Correto. O sistema TNM (Tumor, Nódulo/Linfonodo e Metástase) é a classificação universalmente aceita para o estadiamento de tumores malignos, servindo para determinar a extensão da doença, o prognóstico e a estratégia terapêutica.\n\nAnálise das alternativas:\n\na) Somente os itens I e V estão certos: Esta é a alternativa correta, conforme a análise individual acima.\nb) Somente os itens I, II e V estão certos: Incorreta, pois o item II está errado (Hinchey é para diverticulite aguda).\nc) Somente os itens III, IV e V estão certos: Incorreta, pois os itens III e IV estão com as definições trocadas.\nd) Somente os itens I, III e IV estão certos: Incorreta, pois os itens III e IV estão errados.\ne) Todos os itens estão certos: Incorreta, pois apenas os itens I e V são verdadeiros.\n\nGabarito: Letra A.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  },
+  {
+    "id": "AJUDA_1213b381-6a06-4ca7-b3b9-25e5993eb72c",
+    "originalId": "1213b381-6a06-4ca7-b3b9-25e5993eb72c",
+    "statement": "Determinada UBS iniciou um programa de caminhadas orientadas, oficinas de alimentação saudável e atividades educativas a respeito de autocuidado. Essas ações se enquadram em qual nível de atenção em saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção primária",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prevenção secundária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prevenção terciária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reabilitação funcional",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda os níveis de prevenção em saúde, fundamentados no modelo de Leavell e Clark. O foco é identificar em qual estágio de intervenção se encaixam as atividades de promoção da saúde realizadas em uma Unidade Básica de Saúde (UBS).\n\nAlternativa (a): Correta. A prevenção primária atua antes do surgimento da doença (período de pré-patogênese). Ela se divide em duas frentes: promoção da saúde e proteção específica. Atividades como caminhadas orientadas, oficinas de alimentação saudável e educação para o autocuidado são exemplos clássicos de promoção da saúde, pois visam a melhorar o bem-estar geral e a reduzir os fatores de risco populacionais, impedindo a instalação de agravos.\n\nAlternativa (b): Incorreta. A prevenção secundária foca no diagnóstico precoce e no tratamento imediato de doenças já existentes, mas ainda em estágio inicial ou assintomático. Exemplos incluem exames de rastreamento (como o Papanicolau ou a mamografia) e inquéritos para detecção de casos. O objetivo aqui é evitar a progressão da doença, e não apenas promover hábitos saudáveis.\n\nAlternativa (c): Incorreta. A prevenção terciária atua na fase avançada ou crônica da doença. Seu objetivo é reduzir as incapacidades, evitar complicações e realizar a reabilitação do paciente. Exemplos incluem o controle rigoroso da glicemia para evitar amputações em diabéticos ou a fisioterapia após um acidente vascular cerebral.\n\nAlternativa (d): Incorreta. A reabilitação funcional é um componente da prevenção terciária. Ela busca reintegrar o indivíduo às suas atividades após uma sequela estabelecida. As ações descritas no enunciado (caminhadas e oficinas) são preventivas e educativas, voltadas para evitar que a doença ocorra ou se agrave precocemente, e não para recuperar uma função já perdida.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:03.532Z"
+  }
+]

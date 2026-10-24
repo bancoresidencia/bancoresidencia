@@ -1,0 +1,520 @@
+[
+  {
+    "id": "AJUDA_f8f3cdb3-2e9b-437a-9f69-e66d70cdc2a8",
+    "originalId": "f8f3cdb3-2e9b-437a-9f69-e66d70cdc2a8",
+    "statement": "Assinale a alternativa que corresponde ao medicamento que tem efeito comprovado na redução de mortalidade em insuficiência cardíaca com fração de ejeção reduzida (HFrEF).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nitrato sublingual isolado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diurético de alça isolado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bloqueador beta seletivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibidor da enzima conversora de angiotensina",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A base do tratamento da Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr) consiste no bloqueio de sistemas neuro-hormonais (Sistema Renina-Angiotensina-Aldosterona e Sistema Nervoso Simpático) para reduzir o remodelamento cardíaco e a mortalidade.\n\nAlternativa A: Incorreta. O uso de nitrato isolado, especialmente na forma sublingual, é indicado para o alívio imediato de episódios anginosos ou para o manejo de congestão aguda (redução de pré-carga). No entanto, não possui efeito comprovado na redução da mortalidade a longo prazo na ICFEr. O benefício em sobrevida só é observado quando o nitrato (na forma de dinitrato de isossorbida) é associado à hidralazina em grupos específicos (como pacientes negros ou pacientes que não toleram IECA/BRA).\n\nAlternativa B: Incorreta. Os diuréticos de alça, como a furosemida, são excelentes para o controle volêmico e o alívio de sintomas congestivos, como dispneia e edema. Contudo, apesar de fundamentais para melhorar a qualidade de vida e reduzir hospitalizações por descompensação, eles não demonstraram, em ensaios clínicos, a capacidade de reduzir a mortalidade ou alterar a história natural da doença.\n\nAlternativa C: Incorreta. Esta alternativa é imprecisa e funciona como uma \"pegadinha\". Embora os betabloqueadores sejam fundamentais para reduzir a mortalidade na ICFEr, nem todo betabloqueador seletivo possui essa evidência. O atenolol, por exemplo, é um bloqueador beta-1 seletivo que não possui benefício comprovado em sobrevida na insuficiência cardíaca. Além disso, o carvedilol, um dos principais medicamentos para ICFEr com redução de mortalidade, é um betabloqueador não seletivo. Os únicos betabloqueadores com evidência robusta de redução de mortalidade são: carvedilol, bisoprolol, succinato de metoprolol e nebivolol (este último em idosos).\n\nAlternativa D: Correta. Os Inibidores da Enzima Conversora de Angiotensina (IECA) são considerados pilares históricos e essenciais no tratamento da ICFEr. Grandes ensaios clínicos clássicos, como o CONSENSUS e o SOLVD, comprovaram que esta classe de medicamentos reduz significativamente a mortalidade global e a frequência de hospitalizações, devendo ser prescrita para todos os pacientes com fração de ejeção reduzida que não apresentem contraindicações.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:51.561Z"
+  },
+  {
+    "id": "AJUDA_f8fc99d6-f0d7-48e1-a6a3-af2983e562e3",
+    "originalId": "f8fc99d6-f0d7-48e1-a6a3-af2983e562e3",
+    "statement": "Criança, sexo feminino, 5 meses e duas semanas de vida, compareceu no pronto-socorro, com relato de tosse há cerca de 1 semana. A mãe nega contactantes sintomáticos e não observou coriza ou obstrução nasal. Refere que a criança tem crises de tosse e chegou a ficar com coloração arroxeada, cerca de duas vezes no dia, nos últimos quatro dias. Ao exame físico, está em BEG, corada, hidratada, anictérica, acianótica. Ausculta cardíaca e pulmonar sem alterações. Apresenta FR de 36 irpm, FC de 120 bpm. Oroscopia com leve hiperemia de orofaringe. Restante do exame clínico sem alterações. Carteira de vacinação e de parto conforme imagens a seguir:\n\nConsiderando o principal agente etiológico envolvido, o quadro atual poderia ter sido prevenido com a vacina",
+    "options": [
+      {
+        "id": "A",
+        "text": "DTPa para a mãe, às 20 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "VSR para a mãe, às 20 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "VPC10 aos 4 meses para a paciente (2ª dose).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "INF3 aos 5 meses para a paciente (1ª dose).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso descreve um lactente jovem (5 meses e 2 semanas) com crises de tosse paroxística associadas a episódios de cianose (coloração arroxeada), sem pródromos catarrais e com exame físico e ausculta pulmonar normais no intervalo das crises. Esse quadro clínico é clássico de coqueluche (tosse comprida), infecção causada pela bactéria Bordetella pertussis. Em menores de 6 meses, a apresentação típica inclui paroxismos de tosse, apneia e cianose, muitas vezes sem o guincho inspiratório clássico.\n\nAnálise das imagens:\n- Cartão da criança: mostra que a paciente recebeu duas doses da vacina Pentavalente (aos 2 e 4 meses), não tendo completado ainda o esquema primário de 3 doses, que só se encerra aos 6 meses.\n- Cartão de vacinação da gestante: o campo da vacina dTpa está em branco, evidenciando que a mãe não foi imunizada durante o pré-natal.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): A principal estratégia de saúde pública para proteger os lactentes menores de 6 meses contra a coqueluche, antes da conclusão do esquema vacinal primário da criança, é a vacinação da gestante com dTpa a partir da 20ª semana de gestação em cada gravidez. Essa medida induz altos títulos de anticorpos maternos que atravessam a placenta (via IgG), conferindo imunidade passiva e proteção eficaz ao bebê nos primeiros meses de vida. Como a mãe não recebeu a vacina, a criança ficou desprotegida.\n\nAlternativa B (Incorreta): O vírus sincicial respiratório (VSR) causa bronquiolite viral aguda, caracterizada tipicamente por pródromos gripais (coriza, obstrução nasal) seguidos de desconforto respiratório, taquipneia e alterações na ausculta pulmonar (sibilos e estertores), quadro incompatível com o caso. Ademais, a vacina materna contra o VSR é preconizada no terceiro trimestre (entre a 32ª e 36ª semana), e não na 20ª semana.\n\nAlternativa C (Incorreta): A vacina pneumocócica 10-valente protege contra infecções invasivas causadas pelo Streptococcus pneumoniae (como pneumonias e meningites). O pneumococo causa quadro bacteriano agudo febril e não a síndrome coqueluchoide com acessos de tosse paroxística e cianose em vigência de ausculta limpa.\n\nAlternativa D (Incorreta): A vacina Influenza (INF) é recomendada no Calendário Nacional de Vacinação a partir dos 6 meses de vida; portanto, a paciente com 5 meses e meio ainda não tem indicação para essa vacina pelo calendário de rotina. Além disso, o quadro clínico não corresponde à infecção pelo vírus Influenza.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Coqueluche"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f525b308a3ea3f29023ffaff823fffce6ba0d1d64219a12ebb39f465ccd59339.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f8fc99d6-f0d7-48e1-a6a3-af2983e562e3_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/6a4dc5ef27a2ea80c3e4308e8fce51271383a3f26846761e2506fc88b7a0650e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f8fc99d6-f0d7-48e1-a6a3-af2983e562e3_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:52.425Z"
+  },
+  {
+    "id": "AJUDA_f90688ec-9d7c-4e72-b22b-be1c198881d9",
+    "originalId": "f90688ec-9d7c-4e72-b22b-be1c198881d9",
+    "statement": "Mulher, 78 anos de idade, bateu a cabeça no chão há 2 horas, após escorregar. Nega perda de consciência e lembra de tudo que aconteceu. Tem ferimento cortocontuso frontal. Faz uso de losartana e hidroclorotiazida. Ao exame físico, encontra-se com a escala de coma de Glasgow de 15, pupilas sem alterações e com ferimento frontal de 2 cm. Após a realização da sutura, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tomografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ultrassonografia do nervo óptico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reavaliação ambulatorial em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação por 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o manejo do traumatismo cranioencefálico (TCE) leve, definido por uma Escala de Coma de Glasgow entre 13 e 15. No caso clínico, a paciente possui Glasgow 15, está lúcida e orientada, mas apresenta um fator de risco determinante: a idade avançada.\n\nPara decidir sobre a realização de tomografia de crânio (TC) em casos de TCE leve, utilizamos regras de predição clínica amplamente aceitas, como o Canadian CT Head Rule e os Critérios de New Orleans. De acordo com esses protocolos, a idade igual ou superior a 65 anos é um critério de alto risco que indica a necessidade obrigatória de realizar uma tomografia, mesmo que o paciente esteja assintomático ou sem déficit neurológico aparente. Isso ocorre porque idosos possuem maior fragilidade vascular e atrofia cerebral, o que aumenta o espaço para que coleções hemorrágicas (como o hematoma subdural) se expandam antes de causarem sintomas claros.\n\nAlternativa (a): Correta. Como a paciente tem 78 anos, ela se enquadra no critério de indicação formal de tomografia de crânio para descartar lesões intracranianas agudas, independentemente da ausência de sintomas neurológicos no momento.\n\nAlternativa (b): Incorreta. A ultrassonografia do nervo óptico é um método utilizado para avaliar indiretamente a presença de hipertensão intracraniana por meio da medida do diâmetro da bainha do nervo. No entanto, não é o exame de escolha para o rastreio inicial de lesões hemorrágicas no trauma e não substitui a tomografia de crânio.\n\nAlternativa (c): Incorreta. Liberar uma paciente idosa para reavaliação ambulatorial sem a realização de um exame de imagem prévio é uma conduta insegura. O risco de sangramento intracraniano oculto ou tardio nesta faixa etária impede a alta baseada apenas no exame físico normal.\n\nAlternativa (d): Incorreta. Embora a observação clínica seja importante, a prioridade após o tratamento do ferimento (sutura) é a investigação diagnóstica com imagem. A internação isolada, sem a realização da tomografia, atrasaria o diagnóstico de uma possível urgência neurocirúrgica que pode estar presente mesmo em pacientes com Glasgow 15.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:52.425Z"
+  },
+  {
+    "id": "AJUDA_f914fa5f-97f9-43d7-85e4-dd0f6de008b5",
+    "originalId": "f914fa5f-97f9-43d7-85e4-dd0f6de008b5",
+    "statement": "Um médico de família e comunidade em uma unidade de saúde localizada no centro de uma grande metrópole, durante uma visita da equipe de Consultório na Rua, atende uma mulher de 18 anos, que é encontrada vivendo em um viaduto. Ela está grávida, aproximadamente no terceiro trimestre (cerca de 32 semanas, segundo seu relato). A paciente não possui documentação, não faz acompanhamento pré-natal e refere não conseguir acessar os serviços de saúde devido a situações de violência que enfrentou ao tentar buscar ajuda anteriormente. Ao exame físico, realizado em condições não ideais, observou-se que ela está pálida, com sinais de má nutrição. O exame obstétrico mostrou um útero compatível com a idade gestacional estimada, mas o batimento cardíaco fetal não pôde ser auscultado claramente com o sonar portátil. Quais estratégias intersetoriais poderiam ser implementadas para assegurar um acompanhamento contínuo e eficaz para essa paciente durante o restante da gestação e no período pós-parto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar a paciente para internação compulsória em uma Comunidade Terapêutica para monitoramento contínuo devido à alta incidência do uso de drogas em pessoas em situação de rua e pela certeza da adesão ao plano de cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estabelecer uma parceria entre a unidade de saúde e a sociedade civil para criar uma rede de suporte que não se utilize da UBS e acompanhe a paciente de maneira integrada, garantindo seu parto em uma maternidade pública.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cadastrá-la na UBS mais próxima do viaduto onde dorme, acionar a assistência social e buscar parcerias com instituições da sociedade civil para garantir a adesão da paciente ao pré-natal, acionando também o serviço de pré-natal de alto risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Reforçar a importância do pré-natal e responsabilizar a paciente pela adesão ao tratamento, tomando o cuidado de encaminhá-la ao serviço de pré-natal de alto risco para que seja decidida a necessidade de internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o atendimento a populações em situação de vulnerabilidade extrema, exigindo do médico o conhecimento sobre as diretrizes do Consultório na Rua e os princípios de equidade e intersetorialidade do Sistema Único de Saúde (SUS).\n\nAlternativa (a) Incorreta. A internação compulsória em Comunidades Terapêuticas não é uma estratégia de saúde pública adequada para este caso. Ela fere o princípio da autonomia da paciente e não garante o cuidado obstétrico necessário. Além disso, as Comunidades Terapêuticas, em sua maioria, não são equipamentos de saúde e não possuem suporte para pré-natal. A afirmação de certeza da adesão através desse método é falsa e autoritária.\n\nAlternativa (b) Incorreta. A rede de suporte não deve excluir a Unidade Básica de Saúde (UBS). A UBS é a porta de entrada preferencial e a coordenadora do cuidado no SUS. O objetivo das estratégias intersetoriais é justamente integrar a paciente aos serviços públicos existentes, e não criar uma rede paralela que fragilize o vínculo com a atenção primária.\n\nAlternativa (c) Correta. Esta alternativa contempla a visão integral da paciente. O cadastramento na UBS garante a referência territorial e a continuidade do cuidado. O acionamento da assistência social é fundamental para tratar determinantes sociais, como a falta de documentação e a insegurança alimentar. A parceria com a sociedade civil amplia a rede de apoio. Por fim, o encaminhamento ao pré-natal de alto risco é clinicamente indicado, pois se trata de uma gestante no terceiro trimestre, sem acompanhamento prévio, com sinais de desnutrição e dificuldade de ausculta fetal, o que exige investigação imediata.\n\nAlternativa (d) Incorreta. Transferir a responsabilidade da adesão exclusivamente para a paciente ignora as barreiras de acesso e a vulnerabilidade social em que ela se encontra. Pacientes em situação de rua com histórico de violência institucional necessitam de busca ativa e acolhimento, e não de uma postura que a culpe por não conseguir acessar um sistema que anteriormente foi violento com ela. A gestão do cuidado deve ser uma responsabilidade compartilhada entre a equipe e a paciente.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:52.425Z"
+  },
+  {
+    "id": "AJUDA_f91c2583-507a-4df7-b4bc-bcee68d82d56",
+    "originalId": "f91c2583-507a-4df7-b4bc-bcee68d82d56",
+    "statement": "Mulher de 60 anos, com longa história de hipertensão arterial mal controlada e tabagismo, é levada ao pronto-socorro após desenvolver cefaleia súbita, intensa, descrita como “a pior de sua vida”, durante subida de escada. Logo após o início da dor, apresentou breve perda de consciência.\nNo momento da avaliação, encontra-se sonolenta, com fotofobia, cefaleia difusa intensa e rigidez de nuca. O exame neurológico não identificou déficit focal. Sinais vitais: PA 186 x 106 mmHg e FC 88 bpm. A tomografia computadorizada de crânio sem contraste foi inconclusiva. A punção lombar revelou líquor xantocrômico, com aumento difuso do número de hemácias em todos os tubos coletados.\nAssinale o mecanismo mais provável para a condição apresentada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angiopatia amiloide cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trombose de seio venoso intracraniano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ruptura de aneurisma sacular cerebral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ruptura de veias de ponte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ruptura de artéria meníngea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de uma hemorragia subaracnoide (HSA) espontânea. A tríade de cefaleia súbita e intensa (descrita como \"a pior da vida\" ou \"em trovão\"), síncope inicial e sinais de irritação meníngea (rigidez de nuca e fotofobia) após esforço físico é patognomônica dessa condição. Em casos em que a tomografia computadorizada (TC) de crânio é inconclusiva (o que ocorre em uma pequena porcentagem de casos, especialmente se o volume de sangue for pequeno ou o exame for tardio), a punção lombar é mandatória. A presença de líquor xantocrômico (coloração amarelada por degradação da hemoglobina) e a persistência de hemácias em todos os tubos confirmam que o sangramento é real e não um acidente de punção.\n\nAnálise das alternativas:\n\na) Incorreta. A angiopatia amiloide cerebral é uma causa importante de hemorragia intracerebral lobar (dentro do parênquima) em idosos, devido ao depósito de proteína beta-amiloide nos vasos. Ela não costuma se manifestar primariamente como uma hemorragia subaracnoide clássica com líquor xantocrômico difuso.\n\nb) Incorreta. A trombose de seio venoso costuma ter um quadro mais subagudo, com cefaleia que progride em dias, papiledema, convulsões ou déficits focais. Embora possa causar sangramentos, a apresentação de \"pior dor da vida\" súbita durante esforço aponta diretamente para etiologia arterial aneurismática.\n\nc) Correta. A ruptura de aneurisma sacular é a causa mais comum de hemorragia subaracnoide espontânea (não traumática), respondendo por cerca de 80% a 85% dos casos. Fatores de risco como hipertensão arterial e tabagismo, presentes na paciente, estão fortemente associados à formação e ruptura desses aneurismas, geralmente localizados no polígono de Willis.\n\nd) Incorreta. A ruptura de veias de ponte (\"bridging veins\") é o mecanismo fisiopatológico do hematoma subdural. Geralmente está associada a traumas cranianos (mesmo que leves em idosos) e o sangue se acumula no espaço subdural, não apresentando tipicamente o quadro de irritação meníngea aguda e difusa da HSA.\n\ne) Incorreta. A ruptura de artéria meníngea (mais comumente a artéria meníngea média) é a causa do hematoma epidural (ou extradural). Está quase invariavelmente associada a trauma craniano com fratura de osso temporal e apresenta-se classicamente com o \"intervalo lúcido\", seguido de rápida deterioração neurológica por efeito de massa, e não como uma cefaleia súbita com líquor hemorrágico.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:52.425Z"
+  },
+  {
+    "id": "AJUDA_f91f273a-59e8-4f31-8e8a-bbba56fb0e39",
+    "originalId": "f91f273a-59e8-4f31-8e8a-bbba56fb0e39",
+    "statement": "Durante um plantão, uma criança, sexo feminino, com 7 anos, é trazida pela mãe após o início súbito de sintomas após a ingestão de um bolo contendo amendoim durante uma festa escolar. A mãe relata que a criança rapidamente apresentou vômito, coceira intensa no corpo, dificuldade para respirar e confusão mental. O exame físico inicial revela uma criança agitada, com extensas placas eritematosas e urticária difusa, edema de lábios e língua, estridor respiratório audível, além de sibilos difusos à ausculta pulmonar. Os sinais vitais incluem: frequência cardíaca de 158 bpm, frequência respiratória de 38 irpm, pressão arterial de 78 x 56 mmHg, saturação de oxigênio de 88% em ar ambiente. Com base no caso clínico apresentado e nas recomendações atuais, qual conduta é mais apropriada como prioridade inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Epinefrina, na dose de 0,1 mg/kg, por via subcutânea, com reforço a cada 30 minutos caso os sintomas persistam.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infusão de solução fisiológica 0,9%, na dose de 10 mL/kg, por via intravenosa, para reversão rápida do choque hipovolêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Corticosteroide sistêmico (hidrocortisona), na dose de 100 mg, por via intravenosa, para prevenir recorrência dos sintomas após estabilização inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Epinefrina; dose: 0,01 mg/kg, por via intramuscular, com aplicação no músculo vasto lateral da coxa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nebulização oxigênio e salbutamol (dose: 2,5 mg), como intervenção inicial prioritária para aliviar sintomas respiratórios e reduzir o estridor e melhora da oximetria.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um caso clássico de anafilaxia, uma reação alérgica sistêmica grave e potencialmente fatal. A paciente apresenta acometimento de múltiplos sistemas: cutâneo (urticária, edema de lábios), gastrointestinal (vômito), respiratório (estridor, sibilos, hipóxia) e cardiovascular/neurológico (hipotensão e confusão mental, caracterizando choque anafilático). A prioridade absoluta no tratamento da anafilaxia é a administração imediata de epinefrina (adrenalina).\n\nAnálise das alternativas:\n\na) Incorreta. A dose de 0,1 mg/kg está errada (é dez vezes maior que a dose recomendada de 0,01 mg/kg), o que poderia causar arritmias graves e crise hipertensiva. Além disso, a via subcutânea não é mais recomendada na emergência por apresentar absorção mais lenta e errática quando comparada à via intramuscular.\n\nb) Incorreta. Embora a reposição volêmica com solução fisiológica seja importante no manejo do choque anafilático (especialmente se a pressão não subir após a primeira dose de adrenalina), ela é uma medida secundária. A prioridade zero é a epinefrina, pois ela atua nos receptores alfa-1 (causando vasoconstrição e reduzindo o edema) e beta-2 (causando broncodilatação e estabilizando os mastócitos), tratando a causa-base da hipotensão e do angioedema.\n\nc) Incorreta. Corticosteroides como a hidrocortisona são medicações de segunda linha. Eles possuem um início de ação tardio (levam de 4 a 6 horas para agir) e são utilizados principalmente para tentar prevenir reações bifásicas (recorrência dos sintomas após algumas horas), não servindo para o tratamento da fase aguda e grave da anafilaxia.\n\nd) Correta. Esta é a conduta padrão-ouro. A epinefrina deve ser administrada na dose de 0,01 mg/kg (dose máxima de 0,3 mg em crianças e 0,5 mg em adultos), por via intramuscular. O local de escolha é o músculo vasto lateral da coxa (face anterolateral da coxa), pois estudos comprovam que essa região permite uma absorção mais rápida e níveis plasmáticos mais altos e constantes do que a aplicação no braço (deltoide) ou glúteo.\n\ne) Incorreta. O salbutamol e o oxigênio são medidas auxiliares importantes para o suporte respiratório. No entanto, o salbutamol trata apenas o broncoespasmo (sibilos) e não atua no edema de vias aéreas superiores (estridor) nem no colapso circulatório. A epinefrina intramuscular deve sempre preceder qualquer outra intervenção, pois trata todos os componentes da reação simultaneamente.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:52.425Z"
+  },
+  {
+    "id": "AJUDA_f91f342c-2f6e-4f6c-9e12-cca3c863d502",
+    "originalId": "f91f342c-2f6e-4f6c-9e12-cca3c863d502",
+    "statement": "Foram atendidas 5 irmãs na unidade básica de saúde. A única que tem características que permitem o diagnóstico de diabetes mellitus é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maria Hilma, de 49 anos, que realizou teste de glicemia capilar com resultado 179 mg/dl;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Maria José, que, em 01/03/2024, apresentou hemoglobina glicada (HbA1c) = 5,6% e, em 12/07/2024, apresentou hemoglobina glicada (HbA1c) = 6,1%;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Maria Lina, que apresentou, em 01/03/2024, glicemia de jejum = 136 mg/dl e, em 12/07/2024, glicemia de jejum = 152 mg/dl;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Maria Cláudia, que apresenta glicemia de jejum = 126 mg/dl;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Maria Antônia, que apresenta hemoglobina glicada (HbA1c) = 4,5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para o diagnóstico de Diabetes Mellitus (DM), os critérios preconizados pela Sociedade Brasileira de Diabetes e pela American Diabetes Association exigem a confirmação de exames alterados em duas ocasiões diferentes, exceto em casos de crise hiperglicêmica ou sintomas inequívocos de hiperglicemia associados a uma glicemia aleatória maior ou igual a 200 mg/dL. Os pontos de corte são: glicemia de jejum maior ou igual a 126 mg/dL, hemoglobina glicada (HbA1c) maior ou igual a 6,5% ou glicemia de 2 horas após sobrecarga de 75 g de glicose (TOTG) maior ou igual a 200 mg/dL.\n\nAlternativa a: Incorreta. A glicemia capilar (ponta de dedo) não é um método validado para o diagnóstico de diabetes, sendo utilizada apenas para rastreamento (triagem) ou monitorização de pacientes já diagnosticados. Além disso, o valor de 179 mg/dL não atinge o critério de 200 mg/dL exigido para coletas aleatórias (que devem ser venosas).\n\nAlternativa b: Incorreta. Para o diagnóstico de diabetes, a hemoglobina glicada deve ser maior ou igual a 6,5%. Maria José apresenta valores de 5,6% (normal, pois é menor que 5,7%) e 6,1% (caracteriza pré-diabetes, que compreende a faixa de 5,7% a 6,4%).\n\nAlternativa c: Correta. Maria Lina apresenta dois exames de glicemia de jejum alterados em momentos distintos, ambos acima do ponto de corte de 126 mg/dL (136 mg/dL em março e 152 mg/dL em julho). A presença de dois resultados concordantes acima do limite estabelecido confirma o diagnóstico de Diabetes Mellitus.\n\nAlternativa d: Incorreta. Embora o valor de 126 mg/dL seja o limite inicial para o diagnóstico, um único exame alterado de forma isolada, sem a presença de sintomas clássicos de hiperglicemia (como poliúria, polidipsia e perda de peso), não permite fechar o diagnóstico. O protocolo exige a repetição do teste para confirmação.\n\nAlternativa e: Incorreta. O valor de hemoglobina glicada de 4,5% é considerado normal, uma vez que está abaixo do limite de 5,7% que define o pré-diabetes.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:52.425Z"
+  },
+  {
+    "id": "AJUDA_f9285011-906d-4537-a9e1-4fca59cc9033",
+    "originalId": "f9285011-906d-4537-a9e1-4fca59cc9033",
+    "statement": "Em relação à hemorragia digestiva alta (HDA), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A causa mais comum de HDA é hemorragia varicosa por cirrose alcoólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A endoscopia digestiva alta deve ser realizada idealmente nas primeiras 24 horas após estabilização do paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O uso de inibidores da bomba de prótons (IBP) não influencia a taxa de ressangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A classificação de Forrest aplica-se apenas a úlceras gástricas benignas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A maioria dos casos de HDA requer intervenção cirúrgica de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa (a) INCORRETA: A causa mais comum de hemorragia digestiva alta (HDA) no mundo e no Brasil é a doença ulcerosa péptica (úlceras gástricas e duodenais), representando cerca de 50% dos casos. Embora a hemorragia varicosa por cirrose seja uma causa importante e com alta mortalidade, ela não é a mais frequente na população geral.\n\nAlternativa (b) CORRETA: A endoscopia digestiva alta (EDA) é o procedimento de escolha tanto para o diagnóstico quanto para a terapêutica da HDA. O manejo inicial deve focar na estabilização hemodinâmica do paciente (reposição volêmica). Uma vez estabilizado o paciente, as diretrizes internacionais recomendam que a EDA seja realizada precocemente, idealmente dentro das primeiras 24 horas, para reduzir o risco de ressangramento e o tempo de permanência hospitalar.\n\nAlternativa (c) INCORRETA: O uso de inibidores da bomba de prótons (IBPs) é um pilar fundamental no tratamento da HDA não varicosa. O IBP atua elevando o pH gástrico (mantendo-o acima de 6), o que é essencial para a estabilização do coágulo e para prevenir a fibrinólise. Estudos demonstram que o uso de IBP, especialmente em altas doses após terapia endoscópica em úlceras de alto risco, reduz significativamente as taxas de ressangramento, a necessidade de cirurgia e a mortalidade.\n\nAlternativa (d) INCORRETA: A classificação de Forrest é uma ferramenta endoscópica utilizada para estratificar o risco de ressangramento de qualquer úlcera péptica, independentemente de ser gástrica ou duodenal. Ela classifica as lesões em sangramento ativo (Forrest I), sinais de sangramento recente (Forrest II) ou base limpa (Forrest III), orientando a necessidade de tratamento endoscópico.\n\nAlternativa (e) INCORRETA: A grande maioria dos casos de HDA (cerca de 80% a 85%) para de sangrar espontaneamente ou é controlada com medidas clínicas e intervenção endoscópica. A cirurgia de emergência é reservada apenas para casos refratários, em que o tratamento endoscópico e a radiologia intervencionista falharam em controlar a hemorragia.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:52.426Z"
+  },
+  {
+    "id": "AJUDA_f92cf8a2-741e-4af9-877c-384ac1e54293",
+    "originalId": "f92cf8a2-741e-4af9-877c-384ac1e54293",
+    "statement": "Um paciente de 68 anos, com histórico de fibrilação atrial permanente e escore CHA₂DS₂-VASc de 4, faz uso crônico de varfarina (Marevan) para prevenção de AVC isquêmico, mantendo INR alvo entre 2,0 e 3,0. Ele está agendado para uma hernioplastia inguinal eletiva. O médico responsável pelo pré-operatório planeja a suspensão da varfarina e a introdução de uma terapia ponte. Qual é a conduta perioperatória mais adequada e baseada em evidências para o manejo do anticoagulante neste caso, visando equilibrar os riscos de trombose e sangramento cirúrgico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender a varfarina 1 dia antes da cirurgia, realizar o procedimento e reiniciar a medicação no pós-operatório imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter a varfarina inalterada até o dia da cirurgia, pois a hernioplastia é considerada uma cirurgia de baixo risco de sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender a varfarina 5 dias antes da cirurgia, iniciar a heparina de baixo peso molecular (HBPM) ambulatorial 3 dias antes do procedimento, suspender a HBPM 12 horas antes da cirurgia e reiniciar ambos os medicamentos no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Suspender a varfarina 3 dias antes da cirurgia, sem a necessidade de terapia ponte com heparina, e reiniciá-la no mesmo dia da cirurgia, se o RNI estiver abaixo de 1,5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Suspender a varfarina 7 dias antes da cirurgia, internar o paciente para iniciar heparina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nO manejo perioperatório de pacientes em uso de anticoagulantes orais, como a varfarina, exige um equilíbrio entre o risco de sangramento cirúrgico e o risco de eventos tromboembólicos. No caso clínico apresentado, o paciente possui um escore CHA2DS2-VASc de 4, o que o estratifica como de alto risco para acidente vascular cerebral (AVC) isquêmico, e será submetido a uma hernioplastia inguinal, um procedimento de risco moderado de sangramento.\n\nLetra a: Incorreta. A varfarina é um antagonista da vitamina K com meia-vida longa (aproximadamente 36 a 42 horas). Suspendê-la apenas um dia antes da cirurgia é insuficiente para que o RNI (Relação Normalizada Internacional) retorne a níveis seguros para o procedimento (geralmente abaixo de 1,5), mantendo um risco elevado de sangramento operatório.\n\nLetra b: Incorreta. A manutenção da varfarina sem interrupção é reservada apenas para procedimentos de baixíssimo risco de sangramento e onde o controle da hemostasia é fácil, como pequenas cirurgias dermatológicas, cirurgia de catarata ou procedimentos odontológicos simples. A hernioplastia inguinal envolve a manipulação de tecidos mais profundos e apresenta risco de hematomas significativos se o paciente estiver plenamente anticoagulado.\n\nLetra c: Correta. Esta alternativa descreve o protocolo clássico de terapia de ponte (bridging). Em pacientes com alto risco tromboembólico (CHA2DS2-VASc elevado), a conduta padrão é suspender a varfarina 5 dias antes da cirurgia para permitir a queda do RNI. Quando o RNI cai abaixo do nível terapêutico (geralmente 2 ou 3 dias antes da cirurgia), inicia-se a heparina de baixo peso molecular (HBPM) em dose terapêutica. A HBPM deve ser suspensa 12 a 24 horas antes do procedimento para garantir a hemostasia. O reinício de ambos no pós-operatório (respeitando a hemostasia cirúrgica) garante que o paciente não fique desprotegido até que a varfarina atinja novamente o nível terapêutico.\n\nLetra d: Incorreta. Suspender a varfarina apenas 3 dias antes pode não ser tempo suficiente para que o RNI atinja o valor seguro de 1,5 em muitos pacientes. Além disso, deixar um paciente com CHA2DS2-VASc de 4 sem nenhuma cobertura anticoagulante (sem ponte) durante o período perioperatório é considerado perigoso pelo alto risco de embolia sistêmica.\n\nLetra e: Incorreta. Suspender a varfarina 7 dias antes é um período excessivo que aumenta desnecessariamente o tempo de risco tromboembólico. Além disso, a internação hospitalar para administração de heparina não fracionada endovenosa não é a primeira escolha para pacientes estáveis, sendo preferível o uso da HBPM de forma ambulatorial, por ser mais prático, seguro e custo-efetivo, exceto em casos de disfunção renal grave (ClCr < 30 ml/min).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Perioperatório",
+      "Hemostasia",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:52.426Z"
+  },
+  {
+    "id": "AJUDA_f932c505-d300-40c4-824f-bd8f0c28cb7a",
+    "originalId": "f932c505-d300-40c4-824f-bd8f0c28cb7a",
+    "statement": "Assinale a alternativa correta em relação ao tratamento da asma em escolares menores de 12 anos de idade.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No contexto do SUS, a Portaria Conjunta SAES/SCTIE/MS nº 14 – 24/08/2021 aprovou o Protocolo Clínico e Diretrizes Terapêuticas da Asma, em que os broncodilatadores de curta duração estão contemplados conforme preconizam as principais diretrizes médicas nacionais e internacionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Destaca-se a importância da associação de budesonida com salbutamol para crianças maiores de 6 anos de idade com asma moderada e grave (estágios 3–5 do GINA, 2023) não controlada (Asma Control Test – ACT menor que 20).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estudos afirmam ser seguro um número máximo de vinte cursos anuais de corticosteroides sistêmicos em relação ao aumento do risco de infecção grave, úlcera péptica, eventos cardiovasculares, diabetes mellitus, condições ósseas e prejuízo do crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A escolha terapêutica pela associação da budesonida com formoterol possibilita a terapia de resgate e manutenção em terapia Single Maintenance and Reliever Therapy (SMART); o mesmo dispositivo com os medicamentos pode ser utilizado para as exacerbações e manutenção em uso diário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. Embora a Portaria Conjunta nº 14/2021 estabeleça o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) da Asma no SUS, a alternativa sugere que o uso de broncodilatadores de curta duração (SABA) como terapia isolada ou principal é o que preconizam as diretrizes internacionais atuais. Na realidade, o GINA (Global Initiative for Asthma) tem se afastado do uso isolado de SABA devido ao risco de exacerbações graves e morte, preconizando o uso de corticoide inalatório associado, mesmo no resgate.\n\nAlternativa b: Incorreta. A estratégia de manutenção e resgate (SMART) utiliza obrigatoriamente a associação de um corticoide inalatório com o formoterol, e não com o salbutamol. O formoterol é um beta-2 agonista de longa duração (LABA), mas com início de ação rápido, o que permite seu uso para alívio imediato dos sintomas. O salbutamol é um beta-2 de curta duração (SABA) e não preenche os critérios para a terapia de manutenção prolongada no mesmo dispositivo.\n\nAlternativa c: Incorreta. É falso afirmar que vinte cursos anuais de corticoides sistêmicos seriam seguros. O uso recorrente de corticoides orais, mesmo em ciclos curtos, está associado a graves efeitos adversos cumulativos, incluindo supressão do eixo hipotálamo-hipófise-adrenal, prejuízo significativo do crescimento linear em crianças, osteopenia, catarata e distúrbios metabólicos. As diretrizes atuais consideram que dois ou mais cursos de corticoides sistêmicos por ano já indicam asma não controlada e risco aumentado de efeitos colaterais.\n\nAlternativa d: Correta. A estratégia SMART (Single Maintenance and Reliever Therapy) consiste no uso de um único inalador contendo a combinação de budesonida (corticoide inalatório) e formoterol (broncodilatador de longa duração com início de ação rápido). Segundo o GINA 2023, para crianças de 6 a 11 anos (escolares), essa terapia é recomendada nas Etapas 3 e 4. Essa abordagem garante que, toda vez que o paciente utiliza o medicamento para alívio dos sintomas, ele também receba uma dose adicional de corticoide inalatório, tratando a inflamação de base e reduzindo o risco de crises graves.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:52.426Z"
+  }
+]

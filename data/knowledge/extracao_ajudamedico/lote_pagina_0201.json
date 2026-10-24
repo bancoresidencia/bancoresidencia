@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_37f2aac4-ec5f-4cc0-884a-cd3d2a7c2d41",
+    "originalId": "37f2aac4-ec5f-4cc0-884a-cd3d2a7c2d41",
+    "statement": "Um paciente do sexo masculino, 52 anos, assintomático e sem histórico familiar relevante, procura a Unidade de Saúde da Família solicitando \"todos os exames de check-up\", incluindo a dosagem do PSA, pois está preocupado com câncer de próstata. O médico de família explica os potenciais benefícios e malefícios do rastreamento. Determine a competência clínica que envolve a análise crítica deste pedido, visando evitar intervenções desnecessárias:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dominar a abordagem preventiva de fatores de risco cardiovasculares, como tabagismo e obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Analisar o fenômeno do sobrediagnóstico e sobretratamento que ocorre com o processo de rastreamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dominar a realização da anamnese e exame físico focados nos problemas musculoesqueléticos mais frequentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coordenar a busca ativa de contactantes e realizar bloqueios em casos de surtos ou endemias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Dominar os fluxos da vigilância epidemiológica de doenças infecciosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nEsta questão aborda o conceito de Prevenção Quaternária no contexto da Atenção Primária à Saúde, focando especificamente no rastreamento do câncer de próstata em pacientes assintomáticos. A competência exigida do médico é a capacidade de realizar uma análise crítica dos riscos e benefícios de exames de triagem.\n\nAlternativa (a) Incorreta: Embora o controle de fatores de risco cardiovascular (como tabagismo e obesidade) seja uma atribuição central do médico de família, esta competência não se relaciona diretamente com a análise crítica do rastreamento do câncer de próstata ou com a prevenção de intervenções desnecessárias decorrentes da dosagem do PSA.\n\nAlternativa (b) Correta: O rastreamento do câncer de próstata por meio do PSA é um tema clássico da medicina baseada em evidências devido ao alto risco de sobrediagnóstico (*overdiagnosis*) e sobretratamento (*overtreatment*). O sobrediagnóstico ocorre quando o exame detecta tumores indolentes que nunca progrediriam para causar sintomas ou morte. O sobretratamento é a intervenção (cirurgia ou radioterapia) realizada nesses casos, expondo o paciente a riscos graves, como incontinência urinária e impotência sexual, sem benefício real em relação à sobrevida. Dominar esses conceitos é fundamental para a decisão compartilhada.\n\nAlternativa (c) Incorreta: O domínio da anamnese e do exame físico do aparelho musculoesquelético é uma competência clínica importante para o diagnóstico de dores e lesões, mas é totalmente irrelevante para a discussão sobre exames de *check-up* oncológico ou rastreamento laboratorial em pacientes assintomáticos.\n\nAlternativa (d) Incorreta: A busca ativa de contactantes e o bloqueio de surtos são ações de vigilância em saúde voltadas para doenças infectocontagiosas (como tuberculose ou meningite). Essas ações não se aplicam ao manejo preventivo de doenças crônicas não transmissíveis, como o câncer de próstata.\n\nAlternativa (e) Incorreta: O domínio dos fluxos de vigilância epidemiológica refere-se à notificação de doenças e ao monitoramento de agravos à saúde pública. A questão, no entanto, foca na relação médico-paciente e na análise crítica de um pedido de exame de triagem individual, o que foge do escopo da vigilância de doenças infecciosas.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Testes Diagnósticos",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  },
+  {
+    "id": "AJUDA_3801c824-2bbc-4548-bac4-f8129e3831d4",
+    "originalId": "3801c824-2bbc-4548-bac4-f8129e3831d4",
+    "statement": "Paciente de 26 anos agenda consulta com ginecologista devido à dor pélvica há 10 dias. Não tem parceiro fixo e não faz uso de métodos contraceptivos. Ao exame especular, apresenta secreção purulenta proveniente do colo do útero e, no toque vaginal, dor à mobilização do colo do útero e anexos. O ultrassom ginecológico não mostrou anormalidades. Sobre o caso apresentado, qual esquema antibiótico recomendado pelo Protocolo do Ministério da Saúde de 2022?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ceftriaxona e amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefalexina,ciprofloxacinoe fluconazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doxiciclina e Gentamicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ceftriaxona,Doxiciclina e Metronidazol,",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de Doença Inflamatória Pélvica (DIP) aguda, caracterizado por dor pélvica, dor à mobilização do colo uterino e à palpação anexial, acompanhado de secreção endocervical purulenta. Como o ultrassom está normal e a paciente não apresenta sinais de sepse, peritonite ou abscesso tubo-ovariano, o tratamento indicado é ambulatorial.\n\nDe acordo com o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST) do Ministério da Saúde de 2022, o esquema ambulatorial visa cobrir Neisseria gonorrhoeae, Chlamydia trachomatis e bactérias anaeróbias.\n\nAnálise das alternativas:\n\na) Incorreta. A ceftriaxona cobre o gonococo, porém a amoxicilina não é indicada no protocolo de DIP, pois não oferece cobertura eficaz para clamídia nem para bactérias anaeróbias.\n\nb) Incorreta. A cefalexina não possui espectro adequado para os patógenos da DIP. As quinolonas como o ciprofloxacino não são recomendadas como primeira linha devido às altas taxas de resistência de Neisseria gonorrhoeae, e o fluconazol é um antifúngico sem papel no tratamento de DIP.\n\nc) Incorreta. A doxiciclina faz parte do esquema ambulatorial, mas a gentamicina é um aminoglicosídeo injetável reservado para esquemas hospitalares de segunda linha (geralmente combinado com clindamicina), não sendo indicada em regime ambulatorial.\n\nd) Correta. Este é o esquema de escolha para o tratamento ambulatorial da DIP segundo o Ministério da Saúde (2022): Ceftriaxona 500 mg intramuscular em dose única (cobertura para N. gonorrhoeae), associada a Doxiciclina 100 mg por via oral a cada 12 horas por 14 dias (cobertura para C. trachomatis) e Metronidazol 500 mg por via oral a cada 12 horas por 14 dias (cobertura para anaeróbios).",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Antibióticos",
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  },
+  {
+    "id": "AJUDA_38044174-3b1f-4530-8f56-de142d9ff590",
+    "originalId": "38044174-3b1f-4530-8f56-de142d9ff590",
+    "statement": "Assinale a opção correta, a respeito das hérnias inguinais.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não há medidas de saúde pública que possam diminuir a incidência das hérnias inguinais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A ultrassonografia da parede abdominal é o exame de escolha na suspeita diagnóstica de hérnias inguinais, sendo a tomografia a segunda opção, a qual é indicada quando ainda existirem dúvidas em relação ao diagnóstico da hérnia, após o exame ultrassonográfico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A classificação de Nyhus divide as hernias inguinais em tipo I direta, tipo II indireta e tipo III femoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em relação à prevalência das hérnias inguinais, as indiretas são mais comuns em crianças, as femorais em homens adultos e as diretas em mulheres adultas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A etiologia está relacionada ao comprometimento da estrutura do colágeno que compõe o tecido conjuntivo da parede abdominal, apresentando uma menor proporção de colágeno tipo I e colágeno tipo III no tecido conjuntivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa (a) Incorreta: Embora existam fatores constitucionais e genéticos, medidas de saúde pública voltadas ao controle de fatores de risco podem, sim, impactar a incidência e as complicações das hérnias. O combate ao tabagismo é um exemplo clássico, pois o fumo altera o metabolismo do colágeno, fragilizando a parede abdominal. O controle da obesidade e de doenças que aumentam a pressão intra-abdominal crônica (como a DPOC e o prostatismo) também são medidas preventivas indiretas.\n\nAlternativa (b) Incorreta: O diagnóstico da hérnia inguinal é essencialmente clínico, realizado por meio da anamnese e de um exame físico bem executado. Exames de imagem, como a ultrassonografia, a tomografia computadorizada ou a ressonância magnética, não são \"de escolha\" para todos os pacientes, sendo reservados apenas para casos de dúvida diagnóstica, como em pacientes obesos ou na suspeita de hérnias ocultas.\n\nAlternativa (c) Incorreta: A classificação de Nyhus é estruturada da seguinte forma: Tipo I (hérnia indireta com anel inguinal interno normal); Tipo II (hérnia indireta com anel inguinal interno dilatado, mas parede posterior íntegra); Tipo III (defeitos da parede posterior, subdividido em IIIa para direta, IIIb para indireta com destruição da parede posterior/mista e IIIc para femoral); e Tipo IV (hérnias recidivantes).\n\nAlternativa (d) Incorreta: As hérnias indiretas são as mais comuns em todas as faixas etárias e em ambos os sexos. Quanto à frequência por sexo, as hérnias femorais são muito mais comuns em mulheres do que em homens (embora, mesmo em mulheres, a indireta continue sendo a mais frequente). As hérnias diretas são raras em crianças e tornam-se mais comuns em homens adultos devido ao enfraquecimento da parede posterior.\n\nAlternativa (e) Correta: Estudos bioquímicos demonstram que a gênese das hérnias inguinais (especialmente as diretas no adulto) está relacionada a alterações sistêmicas e locais no metabolismo do tecido conjuntivo. Ocorre uma diminuição na quantidade total de colágeno e uma alteração na proporção entre os tipos de colágeno, especificamente uma redução do colágeno tipo I (que confere maior resistência) em relação ao tipo III (que é mais fino e menos resistente), resultando em uma parede abdominal mais fragilizada.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  },
+  {
+    "id": "AJUDA_3806b532-0fa6-49f1-9004-d2ad20345653",
+    "originalId": "3806b532-0fa6-49f1-9004-d2ad20345653",
+    "statement": "Paciente masculino, 45 anos, agricultor, morador de uma área rural no interior do Rio Grande do Sul. História Clínica: O paciente foi atendido em um hospital de campanha três semanas após uma enchente que devastou sua comunidade. Ele relata múltiplos problemas de saúde desde que foi deslocado para um abrigo temporário superlotado. Nos últimos sete dias, desenvolveu diarreia aquosa, associada a dores abdominais e vômitos. Além disso, descreve episódios de febre intermitente, cefaleia e dor retro-orbitária. O paciente também apresenta uma lesão puntiforme no pé direito, resultado de uma ferida causada por um pedaço de metal enferrujado durante a enchente. Relata, ainda, dores musculares e cãibras nos últimos dias. Sua esposa, que está no mesmo abrigo, desenvolveu sintomas respiratórios agudos. Ele expressa preocupação com a segurança das filhas adolescentes, temendo violência sexual no abrigo.\nExames Físicos: -PA: 90/60 mmHg -FC:105 bpm -Temperatura:38,4°C. Ao exame físico revela desidratação moderada, abdome doloroso à palpação difusa, lesão puntiforme com eritema e edema no pé direito, além de icterícia leve. História de Saúde: Paciente hipertenso, em uso irregular de medicamentos. Tem histórico de episódios anteriores de dengue, mas nunca apresentou hepatite ou outra doença infecciosa crônica.\n\nDado o histórico de lesão perfurante no pé e o contexto de exposição a solo contaminado, descritos no texto, qual é a conduta preventiva mais adequada para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de antibióticos profiláticos e curativo oclusivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atualização da vacina contra tétano e administração de imunoglobulina antitetânica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Desbridamento da ferida e observação clínica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realização de profilaxia antirrábica e antibióticos intravenosos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a conduta preventiva diante de um ferimento potencialmente tetanogênico em um contexto de desastre natural (enchente). O ponto central é identificar o risco de tétano acidental em um paciente com ferimento perfurante, contaminado por solo e metal enferrujado.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O uso de antibióticos profiláticos não é a conduta padrão para prevenir o tétano. O Clostridium tetani é uma bactéria anaeróbia e sua prevenção baseia-se na imunização e na limpeza adequada do ferimento. Além disso, curativos oclusivos devem ser evitados em feridas com suspeita de contaminação por anaeróbios, pois a ausência de oxigênio favorece a germinação dos esporos tetânicos.\n\nAlternativa b) Correta. O ferimento descrito (puntiforme, causado por metal enferrujado e em contato com solo/enchente) é classificado como um ferimento de alto risco para o tétano. Segundo o protocolo do Ministério da Saúde, em ferimentos de alto risco, se o paciente tiver uma história vacinal incerta, incompleta ou se a última dose foi há mais de 5 ou 10 anos (dependendo do caso), está indicada a atualização vacinal. No caso de ferimentos graves ou sujos em pacientes com imunização incerta ou incompleta, associa-se a imunização passiva com o soro antitetânico (SAT) ou, preferencialmente, a imunoglobulina antitetânica humana (IGHAT), para garantir proteção imediata.\n\nAlternativa c) Incorreta. Embora a limpeza e o desbridamento de tecidos desvitalizados sejam partes fundamentais do manejo de qualquer ferida, apenas a observação clínica é insuficiente e perigosa para um ferimento tetanogênico em um paciente cuja situação vacinal é desconhecida ou irregular. A prevenção específica contra a toxina tetânica é obrigatória.\n\nAlternativa d) Incorreta. Não há relato de agressão por animal silvestre ou doméstico (mordedura, lambedura ou arranhadura) que justifique a profilaxia antirrábica. O uso de antibióticos intravenosos seria indicado para o tratamento de uma infecção secundária já estabelecida (celulite ou abscesso grave), mas a questão foca especificamente na conduta preventiva relacionada ao mecanismo do trauma e à exposição ao solo.\n\nResumo da conduta: Diante de um ferimento perfurante e contaminado (alto risco), a prioridade absoluta é a profilaxia do tétano através da vacinação (imunização ativa) e, conforme a gravidade da ferida e incerteza vacinal, a administração de imunoglobulina ou soro (imunização passiva).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  },
+  {
+    "id": "AJUDA_3809030e-4bb8-4788-9513-08ebcbad3fb1",
+    "originalId": "3809030e-4bb8-4788-9513-08ebcbad3fb1",
+    "statement": "Homem de 65 anos, diabético, com insuficiência renal grau 3, após três dias de evolução de um quadro clínico clássico de dengue, comparece à UBS com menos febre, manchas roxas no corpo, dor abdominal, vômitos intensos, em torpor, estando desidratado e referindo fezes vermelhas. Ao exame físico, verificam-se PA = 90x64mmHg e taquicardia. \n\nNesse caso, para realizar a prova do laço a fim de observar fragilidade capilar, deve-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "medir a pressão sistólica e diastólica, inflar o manguito na média da pressão, que seria 80mmHg, e esperar cinco minutos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "medir a pressão sistólica, inflar o manguito no valor da pressão sistólica, que seria 96mmHg, e esperar por três minutos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "colocar um torniquete bem apertado no antebraço e observar por cinco minutos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "colocar um torniquete bem apertado no antebraço e observar por três minutos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o procedimento técnico da prova do laço, uma ferramenta diagnóstica importante na avaliação inicial de pacientes com suspeita de dengue para verificar a fragilidade capilar.\n\nAnálise do Quadro Clínico:\nO paciente apresenta um quadro grave de dengue (provável Grupo D), com sinais de alarme (dor abdominal, vômitos intensos) e sinais de choque/gravidade (torpor, hipotensão de 90 x 64 mmHg, taquicardia e sangramento gastrointestinal/fezes vermelhas). Embora em pacientes com sangramento ativo ou choque o diagnóstico de gravidade já esteja estabelecido, a questão foca especificamente na técnica de execução da prova do laço.\n\nPasso a passo da Prova do Laço (conforme o Protocolo do Ministério da Saúde):\n1. Desenhar um quadrado de 2,5 cm de lado (área de uma polegada quadrada) no antebraço do paciente.\n2. Verificar a pressão arterial (PA) do paciente.\n3. Calcular o valor médio entre a pressão sistólica (PAS) e a pressão diastólica (PAD). A fórmula é: (PAS + PAD) / 2.\n4. Insuflar o manguito até este valor médio e mantê-lo insuflado.\n5. Tempo de espera: 5 minutos em adultos e 3 minutos em crianças.\n6. Contar o número de petéquias dentro do quadrado. A prova é positiva se houver 20 ou mais petéquias em adultos (ou 10 ou mais em crianças).\n\nCálculo para o paciente em questão:\nPAS = 90 mmHg / PAD = 64 mmHg.\nMédia = (90 + 64) / 2 = 154 / 2 = 77 mmHg.\nO valor de 80 mmHg citado na alternativa (a) é o arredondamento prático aproximado para essa média.\n\nAnálise das alternativas:\n\nAlternativa (a) CORRETA: Apresenta corretamente a técnica de utilizar a média das pressões e o tempo de espera adequado para um paciente adulto (5 minutos). Como visto no cálculo, 77 mmHg é a média exata, e 80 mmHg é o valor aproximado mais próximo utilizado na prática clínica e na alternativa.\n\nAlternativa (b) INCORRETA: A pressão não deve ser mantida no nível da sistólica, pois isso interromperia completamente o fluxo arterial, o que não é o objetivo do teste (que visa aumentar a pressão hidrostática capilar mantendo o fluxo arterial). Além disso, 3 minutos é o tempo preconizado para crianças, não para adultos.\n\nAlternativa (c) INCORRETA: Não se utiliza um \"torniquete bem apertado\" (garrote comum). O teste deve ser padronizado e controlado utilizando o manguito do esfigmomanômetro para garantir que a pressão exercida seja exatamente a média entre a sistólica e a diastólica.\n\nAlternativa (d) INCORRETA: Erra ao propor o uso de torniquete e também ao propor o tempo de 3 minutos, que é específico para a população pediátrica.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  },
+  {
+    "id": "AJUDA_38115f27-dadb-41f0-8a3d-22d3b2013803",
+    "originalId": "38115f27-dadb-41f0-8a3d-22d3b2013803",
+    "statement": "Paciente A.J.C.C. foi diagnosticada recentemente com adenocarcinoma de corpo gástrico proximal por EDA, estadiada como T3N1M0 por tomografias de abdome e tórax. Assinale a alternativa em que está descrito o melhor tratamento para o caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastrectomia total com linfadenectomia D2, seguido de quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quimioterapia pré-operatória, seguida de gastrectomia total com linfadenectomia D2, seguida de quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Videolaparoscopia diagnóstica, seguida de quimioterapia pré-operatória caso não haja doença peritoneal, seguida de gastrectomia total com linfadenectomia D2, seguida de quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Quimioterapia pré-operatória, seguida de gastrectomia total a D2, seguida de quimio + radioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Videolaparoscopia diagnóstica, seguida de quimioterapia pré-operatória caso não haja doença peritoneal ou quimioterapia hipertérmica intraperitoneal caso haja, seguida de gastrectomia total com linfadenectomia D2, seguida de quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: Paciente com adenocarcinoma gástrico em corpo proximal, estadiado como T3N1M0. Trata-se de um câncer gástrico localmente avançado (T3/T4 ou qualquer N positivo), o que exige uma abordagem multidisciplinar e um estadiamento minucioso.\n\nAlternativa A: Incorreta. Realizar a cirurgia de imediato, seguida apenas de quimioterapia (adjuvante), não é a conduta de escolha para tumores T3N1. Estudos mostram que a quimioterapia perioperatória (feita antes e depois da cirurgia) oferece maior sobrevida global e maior taxa de ressecção com margens livres (R0) em comparação com a cirurgia isolada ou seguida de quimioterapia.\n\nAlternativa B: Incorreta. Embora cite a quimioterapia perioperatória e a gastrectomia total com linfadenectomia D2, esta alternativa ignora um passo fundamental no estadiamento de tumores gástricos avançados: a videolaparoscopia diagnóstica. As tomografias de tórax e abdome possuem baixa sensibilidade para detectar pequenos implantes peritoneais (carcinomatose).\n\nAlternativa C: Correta. Esta alternativa descreve o protocolo padrão-ouro atual. A videolaparoscopia diagnóstica é obrigatória em tumores T3/T4 para descartar doença peritoneal oculta, evitando uma cirurgia de grande porte desnecessária. Caso a laparoscopia confirme a ausência de metástases (M0), procede-se à quimioterapia neoadjuvante (pré-operatória), seguida de gastrectomia total (necessária pela localização proximal no corpo gástrico) com linfadenectomia D2 e, por fim, a quimioterapia pós-operatória.\n\nAlternativa D: Incorreta. O uso de radioterapia associada à quimioterapia (protocolo de Macdonald) foi uma estratégia comum para complementar linfadenectomias incompletas (D0 ou D1). No contexto atual, em que a linfadenectomia D2 é o padrão e a quimioterapia perioperatória (como o protocolo FLOT) é preferida, a radioterapia não é a conduta de primeira linha para este caso. Além disso, falta a laparoscopia diagnóstica.\n\nAlternativa E: Incorreta. Apesar de incluir a videolaparoscopia, a alternativa propõe o uso de quimioterapia hipertérmica intraperitoneal (HIPEC) como tratamento padrão em caso de doença peritoneal. A HIPEC para câncer gástrico ainda é objeto de estudos e não é considerada o tratamento padrão-ouro estabelecido em protocolos globais para casos de carcinomatose inicial. O padrão para doença metastática (M1) é a quimioterapia paliativa.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  },
+  {
+    "id": "AJUDA_3819853f-a43c-427d-97e8-be1de5b0f0ec",
+    "originalId": "3819853f-a43c-427d-97e8-be1de5b0f0ec",
+    "statement": "O diagnóstico de Doença de Kawasaki (DK) em lactentes jovens (< 6 meses) é desafiador, pois a apresentação é frequentemente incompleta (poucos critérios clínicos), mas o risco de aneurismas coronarianos é paradoxalmente maior. Considere um lactente de 4 meses com febre alta há 7 dias, sem foco infeccioso identificado, apresentando apenas irritabilidade e descamação periungueal tardia. Os exames mostram leucocitose, anemia e plaquetose (600.000/mm³) na segunda semana. Considerando as informações apresentadas sobre a Doença de Kawasaki em lactentes jovens, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A conduta deve ser expectante, com repetição dos exames em uma semana, pois a trombocitose é reacional à infecção viral e a Doença de Kawasaki não ocorre em lactentes menores de 6 meses devido à proteção por anticorpos maternos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico de DK deve ser descartado, pois a ausência de 4 dos 5 critérios clínicos clássicos (conjuntivite, rash, alterações orais, linfonodo, alterações de extremidades) inviabiliza o diagnóstico, devendo-se investigar causas virais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento com corticosteroides em monoterapia é a escolha, pois a IGIV não é eficaz em casos de DK incompleta ou atípica nesta faixa etária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A conduta mandatória, conforme as diretrizes da American Heart Association (AHA), é a realização de Ecocardiograma e o início imediato de Imunoglobulina Intravenosa (IGIV) e AAS se houver alterações coronarianas ou persistência de marcadores inflamatórios elevados (PCR/VHS), assumindo-se o diagnóstico de DK Incompleta.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA Doença de Kawasaki (DK) é uma vasculite sistêmica de pequenos e médios vasos que afeta predominantemente artérias coronárias. Em lactentes menores de 6 meses, a doença é particularmente perigosa pois frequentemente se apresenta de forma incompleta ou atípica, não preenchendo os critérios clássicos (febre + 4 dos 5 sinais clínicos: conjuntivite não purulenta, alterações orais, exantema polimorfo, alterações de extremidades e linfonodopatia cervical). O caso descreve um lactente com febre prolongada (7 dias), irritabilidade, descamação periungueal (sinal tardio patognomônico) e plaquetose, o que aponta fortemente para o diagnóstico de DK Incompleta.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. A conduta expectante é contraindicada diante da suspeita de Doença de Kawasaki, especialmente em lactentes jovens, devido ao alto risco de sequelas cardíacas precoces. Embora rara nessa faixa etária, a DK pode ocorrer, sim, em menores de 6 meses; a teoria de proteção por anticorpos maternos não exclui o diagnóstico e não deve retardar a investigação. A trombocitose (plaquetose) na segunda semana é um achado característico da doença, e não apenas uma reação viral genérica.\n\nAlternativa B: Incorreta. O diagnóstico de DK não deve ser descartado apenas pela falta dos critérios clássicos. A American Heart Association (AHA) define critérios específicos para a Doença de Kawasaki Incompleta. Em lactentes com febre inexplicada por 7 dias ou mais, a investigação laboratorial e ecocardiográfica é obrigatória, mesmo na ausência de outros sinais clínicos, devido à alta incidência de aneurismas coronarianos nesse grupo.\n\nAlternativa C: Incorreta. O tratamento padrão-ouro para a Doença de Kawasaki, seja ela completa ou incompleta, é a administração de Imunoglobulina Intravenosa (IGIV) associada ao Ácido Acetilsalicílico (AAS). A IGIV é altamente eficaz na redução do risco de aneurismas coronarianos. Os corticosteroides não são utilizados como monoterapia inicial, sendo reservados para casos refratários à IGIV ou em protocolos específicos para pacientes de altíssimo risco.\n\nAlternativa D: Correta. Esta alternativa reflete as diretrizes da AHA para o manejo da DK Incompleta. Em lactentes com menos de 6 meses de idade com febre prolongada sem foco (igual ou superior a 7 dias), deve-se realizar uma avaliação laboratorial (hemograma, PCR, VHS, albumina, transaminases) e ecocardiograma. Se houver alterações nas coronárias ao eco ou se os marcadores inflamatórios estiverem elevados e o paciente mantiver febre, o tratamento com IGIV e AAS deve ser iniciado prontamente para proteger o leito vascular coronariano.\n\nGabarito: Letra D.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  },
+  {
+    "id": "AJUDA_381da833-8821-4fd4-aa71-b55b93013362",
+    "originalId": "381da833-8821-4fd4-aa71-b55b93013362",
+    "statement": "Um médico epidemiologista, ao analisar a emergência da COVID-19 (SARS-CoV2) e surtos anteriores como Ebola (2013) e H1N1 (2009), reconhece a necessidade de uma abordagem interdisciplinar. Ele busca fundamentar suas recomendações de vigilância nos \"Princípios de Manhattan\", que estruturam as bases da Saúde Única. Determine qual dos princípios abaixo é uma das diretrizes fundamentais estabelecidas nesse documento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Restringir o abate em massa de animais silvestres somente a casos em que haja consenso científico internacional de ameaça significativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Priorizar os programas de saúde humana, que devem operar de forma independente dos esforços de conservação ambiental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Focar a vigilância em animais domésticos (produção e companhia), pois representam a principal interface de transmissão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reduzir o investimento na infraestrutura global de saúde animal para direcionar recursos à saúde humana em pandemias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Incentivar o comércio de carne de caça como alternativa proteica, desde que regulamentado por agências locais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o conceito de Saúde Única (*One Health*), que integra a saúde humana, animal e ambiental. Os Princípios de Manhattan, estabelecidos em 2004 pela Wildlife Conservation Society, formam a base desse conceito, propondo 12 diretrizes para prevenir doenças epidêmicas e garantir a integridade do ecossistema.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Esta alternativa reflete o Princípio 10 de Manhattan. O documento preconiza que o abate em massa de animais silvestres para o controle de doenças deve ser evitado, a menos que haja um consenso científico internacional de que isso é estritamente necessário para mitigar uma ameaça significativa à saúde humana ou animal. O abate indiscriminado pode desequilibrar ecossistemas e, muitas vezes, é ineficaz para o controle de zoonoses.\n\nAlternativa B (Incorreta): O cerne da Saúde Única é justamente a interdependência. Os programas de saúde humana não devem operar de forma isolada, mas sim integrados aos esforços de conservação ambiental e saúde veterinária, reconhecendo que a degradação ambiental é um dos principais gatilhos para o surgimento de novas doenças.\n\nAlternativa C (Incorreta): Embora animais domésticos e de produção sejam importantes na cadeia de transmissão, os Princípios de Manhattan enfatizam que a vigilância deve ser estendida de forma rigorosa à fauna silvestre. Historicamente, a maioria das doenças emergentes (como Ebola e COVID-19) tem sua origem em interfaces com animais silvestres, tornando a vigilância desse grupo um pilar fundamental.\n\nAlternativa D (Incorreta): O documento defende o oposto. É necessário o fortalecimento e o maior investimento na infraestrutura de saúde animal e ambiental global para que a detecção precoce de patógenos ocorra antes que eles atinjam as populações humanas de forma pandêmica.\n\nAlternativa E (Incorreta): O comércio e o consumo de carne de caça (*bushmeat*) são identificados como grandes riscos para o transbordamento (*spillover*) de vírus de animais silvestres para humanos. Os princípios sugerem a redução e a regulação rigorosa desse comércio para minimizar os pontos de contato e riscos biológicos, e não o incentivo como alternativa proteica comum.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  },
+  {
+    "id": "AJUDA_382192da-f8ff-40aa-9ad8-c459f9adc798",
+    "originalId": "382192da-f8ff-40aa-9ad8-c459f9adc798",
+    "statement": "Uma gestante inicia sua assistência pré-natal referindo que o primeiro dia de sua última menstruação foi 26/06/2025. Tendo essa informação, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A data provável do parto, aplicando-se a regra de Naegele, será 03/03/2026.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na consulta de 10/08/2025, a médica disse que estava com 6 semanas e 3 dias, portanto estava com atraso menstrual de 6 semanas e 3 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No dia 10/08/2025, tinha ultrassonografia transvaginal agendada e a médica disse que já seria possível visualizar os batimentos cardíacos fetais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A data provável do parto, calculada pela regra de Naegele, corresponde a 40 semanas a partir da concepção, podendo ser ultrapassada em 1 ou 2 semanas, conforme normas de cada serviço e a ausência de complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A realização de uma ultrassonografia transvaginal antes de 8 semanas não traz informações importantes, devendo-se aguardar para realizá-la.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. Para calcular a Data Provável do Parto (DPP) pela Regra de Naegele, somamos 7 dias ao primeiro dia da última menstruação (DUM) e subtraímos 3 meses do mês da DUM (ou somamos 9 meses, se a DUM ocorreu entre janeiro e março). Com DUM em 26/06/2025: somando 7 dias ao dia 26, chegamos ao dia 33. Como o mês de junho tem 30 dias, a contagem passa para o dia 03 do mês seguinte (julho). Subtraindo 3 meses de julho (mês 07), chegamos ao mês 04 (abril). Portanto, a DPP correta seria 03/04/2026.\n\nAlternativa b) Incorreta. O cálculo da idade gestacional em 10/08/2025 está correto: são 4 dias restantes de junho, 31 dias de julho e 10 dias de agosto, totalizando 45 dias, o que equivale a 6 semanas e 3 dias. Entretanto, o termo \"atraso menstrual\" refere-se ao tempo decorrido desde a data em que a menstruação deveria ter ocorrido. Se a paciente tem ciclos de 28 dias, a menstruação era esperada para cerca de 24/07. Assim, o atraso seria de aproximadamente 17 dias (2 semanas e 3 dias), e não 6 semanas.\n\nAlternativa c) Correta. Na ultrassonografia transvaginal, o saco gestacional pode ser visto a partir de 4 a 5 semanas, a vesícula vitelina com 5 semanas e o embrião com batimentos cardíacos fetais (BCF) a partir de 6 semanas de gestação. Como a paciente está com 6 semanas e 3 dias, já é perfeitamente possível a visualização da atividade cardíaca embrionária.\n\nAlternativa d) Incorreta. A Regra de Naegele estima a DPP como 40 semanas (280 dias) a partir da data da última menstruação (DUM), e não a partir da concepção. A concepção ocorre, em média, cerca de 2 semanas após a DUM em ciclos regulares; portanto, 40 semanas após a concepção corresponderiam a 42 semanas de idade gestacional.\n\nAlternativa e) Incorreta. A ultrassonografia realizada antes de 8 a 10 semanas é extremamente valiosa. Ela é o método mais preciso para datar a gestação (através da medida do comprimento cabeça-nádega), além de confirmar se a gravidez é tópica (dentro do útero), se é única ou múltipla e se o embrião possui sinais de viabilidade.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  },
+  {
+    "id": "AJUDA_3825a076-bfc1-4930-87aa-c42a58ed01be",
+    "originalId": "3825a076-bfc1-4930-87aa-c42a58ed01be",
+    "statement": "Paciente O.M.S., sexo masculino, tabagista e alcoolista, evoluindo com disfagia para sólidos, progredindo para líquidos com perda de 10% do seu peso no último mês. Em relação ao caso, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se solicitar uma endoscopia digestiva alta e uma broncoscopia para iniciar a investigação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Por se tratar de disfagia progressiva, deve-se estar diante de um paciente com distúrbio de motilidade esofágica tipo esôfago em “quebra nozes”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoplasia de esôfago deve ser considerada. Se confirmada, na ausência de metástases a distância, sempre se iniciará o tratamento com esofagectomia em 3 campos, caso o paciente tenha condições clínicas minimamente adequadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A confirmação do tipo histológico, imunoterapia e suporte nutricional hiperproteico e hipercalórico são de fundamental importância no planejamento e preparo desses pacientes para o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Caso haja confirmação de neoplasia de esôfago por endoscopia, a distância da lesão em relação à arcada dentária superior não muda o planejamento de tratamento, mas os exames de estadiamento com tomografias de abdome, pescoço e tórax + broncoscopia, sim.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Quadro Clínico:\nO paciente apresenta a clássica tríade de alerta para neoplasia de esôfago: sexo masculino, histórico de tabagismo e etilismo, e disfagia progressiva (que evoluiu de sólidos para líquidos) associada à perda ponderal significativa (10% do peso em apenas um mês). Esse cenário obriga o médico a investigar imediatamente a presença de câncer de esôfago, sendo o carcinoma espinocelular (CEC) o tipo histológico mais provável devido aos fatores de risco apresentados.\n\nAlternativa A: Incorreta. A investigação diagnóstica inicial deve ser realizada por meio da Endoscopia Digestiva Alta (EDA) com biópsia. A broncoscopia não faz parte da investigação diagnóstica inicial para todos os casos; ela é um exame de estadiamento, indicada especificamente para tumores localizados no esôfago superior ou médio para descartar o acometimento da árvore traqueobrônquica antes de definir a conduta cirúrgica.\n\nAlternativa B: Incorreta. A disfagia progressiva aliada à perda de peso acentuada e aos fatores de risco de longo prazo (álcool e fumo) é um sinal típico de obstrução mecânica maligna. O esôfago em quebra-nozes é um distúrbio motor (funcional) que geralmente se manifesta com dor torácica e disfagia intermitente, sem causar a deterioração ponderal grave observada neste paciente.\n\nAlternativa C: Correta. Diante da alta suspeita clínica, a neoplasia de esôfago é a principal hipótese. Uma vez confirmado o diagnóstico e realizado o estadiamento, se não houver metástases a distância (doença M0) e o paciente apresentar condições clínicas e nutricionais adequadas (performance status), o tratamento com intenção curativa passa pela esofagectomia. A técnica de três campos (McKeown), que compreende os tempos abdominal, torácico e cervical com linfadenectomia, é uma abordagem padrão que permite o tratamento oncológico adequado, especialmente em lesões que não se restringem ao esôfago distal.\n\nAlternativa D: Incorreta. Embora o suporte nutricional hiperproteico e hipercalórico seja fundamental para reduzir a morbimortalidade perioperatória e a histologia seja necessária, a imunoterapia não é considerada um passo fundamental ou obrigatório no planejamento de preparo para todos os pacientes com doença ressecável. O tratamento padrão para casos localmente avançados costuma envolver a quimiorradioterapia neoadjuvante (como o protocolo CROSS), e não a imunoterapia de forma sistemática no preparo.\n\nAlternativa E: Incorreta. A localização da lesão e a sua distância em relação à arcada dentária superior são fundamentais para o planejamento. Tumores situados no esôfago cervical (muito próximos à arcada dentária) são preferencialmente tratados com quimiorradioterapia definitiva, devido à alta morbidade e complexidade da cirurgia nessa região. Já tumores nos terços médio e inferior são os principais candidatos à esofagectomia. Portanto, a localização muda drasticamente a estratégia terapêutica.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:09.871Z"
+  }
+]

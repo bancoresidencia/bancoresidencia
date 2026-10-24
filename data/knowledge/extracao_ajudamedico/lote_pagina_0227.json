@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_3f3b61c7-7ac3-4e49-af0b-5ef3d7c6035f",
+    "originalId": "3f3b61c7-7ac3-4e49-af0b-5ef3d7c6035f",
+    "statement": "Em relação às indicações clássicas da cirurgia bariátrica, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "IMC ≥ 30 kg/m² com comorbidades já indica cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IMC ≥ 25 kg/m² com hipertensão resistente já indica cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas pacientes com menos de 60 anos podem ser submetidos ao procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "IMC ≥ 35 kg/m² com comorbidades graves ou IMC ≥ 40 kg/m², independentemente de comorbidades, são indicações aceitas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa (a) INCORRETA: O IMC entre 30 e 34,9 kg/m² (obesidade grau I) não faz parte das indicações clássicas para a cirurgia bariátrica. Embora existam diretrizes recentes sobre cirurgia metabólica para pacientes com diabetes mellitus tipo 2 de difícil controle nessa faixa de IMC, as indicações clássicas cobradas em provas exigem patamares de IMC mais elevados.\n\nAlternativa (b) INCORRETA: Um IMC de 25 kg/m² é classificado apenas como sobrepeso. Não existe indicação de cirurgia bariátrica ou metabólica para pacientes que não atingiram o critério de obesidade (IMC maior ou igual a 30 kg/m²), independentemente da presença de hipertensão resistente.\n\nAlternativa (c) INCORRETA: A idade não é uma contraindicação absoluta fixada em 60 anos. De acordo com as normas do Conselho Federal de Medicina (CFM), pacientes com mais de 65 anos podem ser submetidos ao procedimento após avaliação individualizada do risco-benefício. Da mesma forma, jovens entre 16 e 18 anos podem ser operados, desde que critérios específicos de maturidade óssea e acompanhamento especial sejam respeitados.\n\nAlternativa (d) CORRETA: Esta alternativa descreve exatamente os critérios clássicos e vigentes utilizados na maioria dos protocolos e exigidos pelo CFM (Resolução nº 2.131/15). As indicações formais baseadas no IMC são:\n1. IMC maior ou igual a 40 kg/m²: a cirurgia está indicada independentemente da presença de doenças associadas.\n2. IMC entre 35 e 39,9 kg/m²: a cirurgia está indicada desde que o paciente apresente comorbidades desencadeadas ou agravadas pela obesidade (como diabetes, hipertensão, apneia do sono, dislipidemia, doenças articulares, entre outras).\n\nAlém do IMC, os critérios clássicos também exigem que o paciente tenha falhado no tratamento clínico prévio (dieta, exercícios e medicamentos) por um período mínimo de dois anos.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  },
+  {
+    "id": "AJUDA_3f48c01c-2c9f-4731-8263-81933d9431b5",
+    "originalId": "3f48c01c-2c9f-4731-8263-81933d9431b5",
+    "statement": "Menina em idade pré-escolar (3 anos) é levada ao pediatra por apresentar quadro, iniciado há 5 dias, de disúria, retenção urinária, prurido anal e secreção vaginal sem odor característico e ausência de febre. Refere ter passado, há um dia, no pronto-socorro, onde foi diagnosticada infecção urinária, sem coleta de exames por 3 dias. A mãe não iniciou o tratamento prescrito e resolveu procurar o pediatra da criança, e foi orientada a iniciar tratamento com sulfametoxazol-trimetoprim por 5 dias. A conduta adequada a ser adotada para o caso em questão é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar hemograma, exame parasitológico de fezes e EAS (Exame de Elementos Anormais e Sedimentoscopia) por jato médio, porém, pela presença dos sintomas urinários, já iniciar tratamento para infecção urinária enquanto aguarda o resultado dos exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colher EAS por jato médio, e, caso apresente leucocitúria, iniciar antibioticoterapia empírica para tratamento de infecção urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter a conduta orientada pelo médico plantonista do pronto-socorro, pois seria antiético contrariar o que foi dito pelo colega, porém, com a sugestão de prolongar o tratamento por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colher urocultura por sonda vesical, tratar a parasitose, orientar a fazer banho de assento e aguardar o resultado da urocultura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Colher urocultura de jato médio pela manhã, tratar a parasitose, orientar a fazer banho de assento e aguardar o resultado da urocultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro clínico de uma menina de 3 anos com prurido anal, secreção vaginal inodora e sintomas urinários (disúria e retenção) é altamente sugestivo de infestação por Enterobius vermicularis, popularmente conhecida como oxiuríase. Em crianças do sexo feminino, a migração do parasita do ânus para a região vulvar e vaginal causa vulvovaginite irritativa. Essa irritação local justifica tanto a secreção quanto o desconforto ao urinar e a retenção reflexa. Os sintomas urinários, portanto, costumam ser secundários à inflamação vulvar e não obrigatoriamente uma infecção do trato urinário (ITU) bacteriana.\n\nExplicação das Alternativas:\n\nAlternativa a) Incorreta. A solicitação de hemograma é desnecessária para uma criança em bom estado geral e sem febre. Iniciar tratamento para ITU sem confirmação laboratorial, diante de um quadro que sugere fortemente uma causa irritativa por parasitose, configura uso inadequado de antibióticos. O exame parasitológico de fezes nem sempre detecta o oxiúro, sendo o método da fita gomada o mais indicado.\n\nAlternativa b) Incorreta. O EAS (Exame de Elementos Anormais e Sedimentoscopia) em uma criança com vulvovaginite frequentemente apresenta leucocitúria (pus na urina) devido à contaminação da amostra pela secreção vaginal no momento da micção. Basear o início da antibioticoterapia apenas na leucocitúria, sem urocultura, levaria a tratamentos desnecessários.\n\nAlternativa c) Incorreta. A conduta médica deve ser baseada na melhor evidência científica e no bem-estar do paciente. Manter um tratamento presuntivo sem exames, ignorando sintomas específicos como o prurido anal, é tecnicamente incorreto. O prolongamento do tratamento para 7 dias sem diagnóstico confirmado não tem justificativa clínica.\n\nAlternativa d) Correta. Esta alternativa aborda todas as necessidades do caso. O tratamento da parasitose (oxiuríase) ataca a causa provável da vulvovaginite. O banho de assento ajuda a aliviar a irritação local e a disúria. Como a criança apresenta sintomas urinários e a coleta por jato médio seria facilmente contaminada pela secreção vaginal e dificultada pela retenção urinária descrita, a sondagem vesical é o método seguro para obter uma amostra estéril para urocultura. Aguardar o resultado da cultura antes de usar antibióticos é seguro em crianças afebris e estáveis.\n\nAlternativa e) Incorreta. Embora trate a parasitose e recomende o banho de assento, a coleta de urocultura por jato médio em uma criança com vulvovaginite ativa e secreção vaginal apresenta um altíssimo índice de contaminação, o que pode gerar resultados falso-positivos e confusão diagnóstica. Além disso, a questão menciona que a criança apresenta retenção urinária, o que dificulta a coleta espontânea de jato médio de forma adequada.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)",
+      "Vulvovaginites"
+    ],
+    "difficulty": 89.84378859546382,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  },
+  {
+    "id": "AJUDA_3f4ed66b-af74-4d0b-9481-e9538d001a01",
+    "originalId": "3f4ed66b-af74-4d0b-9481-e9538d001a01",
+    "statement": "A epidemiologia utiliza estudos observacionais e experimentais para investigar a distribuição e os determinantes de saúde e doença nas populações, empregando testes diagnósticos e estatísticos como ferramentas.\n\nAssinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudos de coorte sempre medem prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estudos transversais permitem inferir causalidade com segurança.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ensaios clínicos são observacionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estudos caso-controle utilizam odds ratio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Estudos ecológicos analisam dados individuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Incorreta. Estudos de coorte são estudos prospectivos (ou retrospectivos) que acompanham grupos de indivíduos ao longo do tempo para observar o surgimento de novos casos de uma doença. Portanto, eles medem a incidência. A prevalência é a medida de frequência típica dos estudos transversais, que analisam a situação em um único ponto no tempo.\n\nAlternativa B: Incorreta. Estudos transversais realizam uma coleta de dados instantânea, observando exposição e desfecho simultaneamente. Por não garantirem que a exposição precedeu o desfecho (falta de temporalidade), eles não permitem inferir causalidade com segurança, sendo úteis principalmente para gerar hipóteses.\n\nAlternativa C: Incorreta. Ensaios clínicos são a modalidade clássica de estudos experimentais ou intervencionistas. Neles, o pesquisador interfere diretamente, designando qual grupo receberá determinada intervenção ou tratamento. Estudos observacionais são aqueles em que o pesquisador apenas observa e coleta dados sem intervir no objeto de estudo.\n\nAlternativa D: Correta. No estudo de caso-controle, o pesquisador parte de indivíduos que já apresentam a doença (casos) e os compara com indivíduos saudáveis (controles) para investigar exposições passadas. Como não é possível calcular a incidência nesse desenho (pois os casos já existem), a medida de associação estatística utilizada é o Odds Ratio, também chamado de razão de chances.\n\nAlternativa E: Incorreta. A característica fundamental dos estudos ecológicos é que a unidade de análise é a população ou um grupo de pessoas (como habitantes de uma cidade, estado ou país), e não o indivíduo isoladamente. Quando se tenta aplicar uma conclusão de um estudo ecológico em nível individual, ocorre o chamado erro ecológico ou falácia ecológica.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  },
+  {
+    "id": "AJUDA_3f533b39-4866-43d3-9442-da9b3479f115",
+    "originalId": "3f533b39-4866-43d3-9442-da9b3479f115",
+    "statement": "Mulher de 54 anos, professora, tosse progressiva há 9 meses, dispneia aos pequenos esforços e perda de 5 kg. Ex-tabagista (parou há 15 anos). TC de tórax mostra padrão fibrótico predominantemente nas áreas centrais com bronquiectasias de tração; prova de função pulmonar com redução importante de DLCO. Biópsia transbrônquica sugere pneumonite por hipersensibilidade. Qual a melhor abordagem terapêutica inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibiótico de amplo espectro por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar apenas reabilitação pulmonar e aguardar evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever broncodilatador de longa ação e ácido acetilsalicílico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Corticoterapia oral em dose de ataque e avaliação minuciosa de exposição ambiental com remoção da fonte.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta uma paciente com diagnóstico de Pneumonite por Hipersensibilidade (PH), uma doença pulmonar intersticial causada por uma reação imunológica à inalação repetida de antígenos ambientais (como fungos, poeiras orgânicas ou detritos de aves). O padrão tomográfico com fibrose central e bronquiectasias de tração, associado a uma biópsia sugestiva e à queda da capacidade de difusão (DLCO), indica uma fase crônica/fibrótica da doença com repercussão funcional importante.\n\nAlternativa a) Incorreta. A história clínica de 9 meses de evolução, a perda de peso e os achados de fibrose na tomografia afastam o diagnóstico de uma infecção bacteriana aguda. Antibióticos não possuem eficácia no tratamento de doenças pulmonares intersticiais imunomediadas.\n\nAlternativa b) Incorreta. A reabilitação pulmonar é uma terapia adjuvante valiosa para melhorar a capacidade física e a qualidade de vida em pacientes com doenças crônicas. No entanto, ela não trata a etiologia da doença. Aguardar a evolução sem intervir na causa e na inflamação permitiria a progressão irreversível da fibrose pulmonar.\n\nAlternativa c) Incorreta. Broncodilatadores de longa ação são a base do tratamento para doenças obstrutivas, como DPOC e asma. Embora alguns pacientes com PH possam ter componente obstrutivo, essas medicações não tratam o processo inflamatório no interstício. O ácido acetilsalicílico não tem papel documentado no manejo desta patologia.\n\nAlternativa d) Correta. Esta alternativa descreve os dois pilares fundamentais do tratamento da Pneumonite por Hipersensibilidade. O passo mais crítico é a identificação e a remoção completa do antígeno causador do ambiente da paciente; sem o afastamento da fonte, a doença continuará progredindo. A corticoterapia oral é indicada para reduzir o componente inflamatório e tentar estabilizar a função pulmonar, especialmente em pacientes com sintomas significativos e redução importante da DLCO, como descrito no enunciado. No caso de uma professora, deve-se investigar inclusive a presença de mofo ou outros antígenos no local de trabalho.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  },
+  {
+    "id": "AJUDA_3f5b7b23-0ae1-420e-b872-7a6675025b81",
+    "originalId": "3f5b7b23-0ae1-420e-b872-7a6675025b81",
+    "statement": "O citomegalovírus (CMV) é a infecção viral congênita mais comum em humanos, podendo resultar em sequelas neurossensoriais, especialmente quando adquirida durante a gestação. Considerando os métodos laboratoriais disponíveis para o diagnóstico de infecção congênita por CMV, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A detecção de imunoglobulina M (IgM) anti-CMV no soro do recém-nascido confirma o diagnóstico de infecção congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A ausência de IgM anti-CMV no recém-nascido exclui o diagnóstico de infecção congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A detecção do DNA viral por PCR na urina é um método inseguro e pouco específico para o diagnóstico de infecção congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A detecção do DNA viral por PCR na saliva é uma alternativa rápida, com alta sensibilidade e especificidade para o diagnóstico de infecção congênita.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Achados laboratoriais como anemia, plaquetopenia, neutropenia e aumento de bilirrubina direta são altamente específicos para infecção congênita por CMV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A (Incorreta): A pesquisa de anticorpos IgM no recém-nascido possui baixa sensibilidade, variando entre 30% e 70%. Isso significa que muitos bebês infectados não apresentam IgM detectável ao nascimento. Além disso, podem ocorrer resultados falsos-positivos devido a interferências como o fator reumatoide, o que impede que a IgM isolada seja usada para confirmação diagnóstica definitiva.\n\nAlternativa B (Incorreta): Como a sensibilidade da IgM é limitada no período neonatal, a sua ausência não exclui a infecção congênita. O padrão-ouro para o diagnóstico ou exclusão da doença é a detecção direta do vírus (por PCR ou cultura) em amostras biológicas coletadas nas primeiras três semanas de vida.\n\nAlternativa C (Incorreta): A detecção do DNA viral por PCR na urina é, na verdade, um dos métodos mais seguros, sensíveis e específicos disponíveis. É considerado, junto com o PCR de saliva, o exame de escolha para o diagnóstico de CMV congênito, uma vez que o vírus é excretado em grandes quantidades pela urina do recém-nascido infectado.\n\nAlternativa D (Correta): O PCR na saliva é um método excelente para o diagnóstico e triagem, pois é não invasivo, rápido e apresenta sensibilidade e especificidade extremamente elevadas (superiores a 90-95%). Na prática clínica, caso um PCR de saliva resulte positivo, recomenda-se a confirmação com um PCR na urina para descartar resultados falsos-positivos que podem ocorrer se houver DNA do CMV proveniente do leite materno na cavidade oral do lactente no momento da coleta.\n\nAlternativa E (Incorreta): Achados como anemia, plaquetopenia, neutropenia e hiperbilirrubinemia direta (colestase) são manifestações clínicas e laboratoriais comuns em diversas infecções neonatais, especialmente as do grupo TORCH (Toxoplasmose, Rubéola, Citomegalovírus, Herpes e Sífilis). Portanto, embora sugiram uma infecção congênita, não são específicos para o citomegalovírus.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  },
+  {
+    "id": "AJUDA_3f61a882-b08c-4033-aa5c-840bbc7c3f91",
+    "originalId": "3f61a882-b08c-4033-aa5c-840bbc7c3f91",
+    "statement": "Paciente comparece à consulta relatando vertigem objetiva há três meses, de caráter episódico e remissão espontânea, com duração de segundos. Informa que os sintomas são desencadeados ao deitar-se ou levantar-se da cama. Refere que há dois anos teve um quadro similar. Nega uso de quaisquer medicamentos e outras queixas. Ao exame físico, apresenta pressão arterial de 152 x 96 mmHg deitado e 140 x 92 mmHg em pé. Considerando o quadro apresentado, qual conduta o médico assistente deve adotar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orientar o paciente sobre o possível diagnóstico de labirintite e iniciar betaistina 24 mg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Esclarecer sobre o possível diagnóstico de hipotensão postural e estimular o aumento da ingesta hídrica diária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atribuir a vertigem ao possível diagnóstico de hipertensão arterial e iniciar enalapril 10 mg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar a manobra de Dix-Hallpike e, se positiva, orientar sobre a possível vertigem posicional paroxística benigna.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro clássico de Vertigem Posicional Paroxística Benigna (VPPB). Os elementos-chave para o diagnóstico são: vertigem de caráter objetivo (sensação de rotação), duração fugaz (segundos), desencadeada especificamente por mudanças de posição da cabeça ou do corpo (deitar-se ou levantar-se) e histórico de episódios semelhantes no passado.\n\nAlternativa A: Incorreta. A labirintite é uma inflamação do ouvido interno que se manifesta com vertigem contínua e prolongada (dias), frequentemente acompanhada de perda auditiva ou zumbido, o que não condiz com os episódios de curta duração relatados. Além disso, a betaistina não é o tratamento de primeira linha para vertigens posicionais.\n\nAlternativa B: Incorreta. A hipotensão postural manifesta-se tipicamente como tontura inespecífica, escurecimento visual ou pré-síncope ao assumir a posição ortostática, e não como vertigem rotatória objetiva. Clinicamente, os dados de pressão arterial do paciente (152 x 96 mmHg deitado e 140 x 92 mmHg em pé) mostram uma queda de apenas 12 mmHg na sistólica e 4 mmHg na diastólica, não atingindo os critérios diagnósticos de hipotensão ortostática (queda maior ou igual a 20 mmHg na sistólica ou 10 mmHg na diastólica).\n\nAlternativa C: Incorreta. Embora o paciente apresente níveis pressóricos elevados que sugerem hipertensão arterial, a hipertensão por si só não é causa de vertigem episódica desencadeada por movimentação cefálica. Atribuir o sintoma à pressão alta e iniciar anti-hipertensivos não resolverá a queixa principal do paciente, que tem origem mecânica no sistema vestibular.\n\nAlternativa D: Correta. A manobra de Dix-Hallpike é o padrão-ouro para o diagnóstico da VPPB (especificamente do canal semicircular posterior). Consiste em movimentar a cabeça do paciente para observar a presença de nistagmo característico e a reprodução dos sintomas de vertigem. Confirmado o diagnóstico, a conduta terapêutica envolve manobras de reposição canalítica, como a manobra de Epley, que visam reconduzir as otocônias (cristais) ao utrículo.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Otoneurologia, Vertigens e Audiologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  },
+  {
+    "id": "AJUDA_3f6c9708-4612-4108-8661-054d922aa981",
+    "originalId": "3f6c9708-4612-4108-8661-054d922aa981",
+    "statement": "Lactente, 65 dias de vida, vêm a consulta com história de icterícia desde a segunda semana de vida. Nasceu de parto normal, pesando 3,150 Kg e medindo 50 cm. Faz uso exclusivo de leite materno. As fezes estão esbranquiçadas e a urina encontra-se amarela. Lactente vem fazendo banhos de sol desde o inicio sem melhora. Ao exame, encontra-se bem nutrida, ictérica ++/++++ e fígado medindo 3,5cm do RDC na linha hemiclavicular direita. O pediatra, preocupado, coletou bilirrubinas totais e frações, hemograma e reticulócitos que vieram com os seguintes resultados: bilirrubina total = 7,1; bilirrubina direta = 4,1; hemograma normal e reticulócitos normais. A investigação e o diagnóstico inicial mais provável são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "sorologias, checar teste do pezinho, teste do suor; fibrose cística.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sorologias, triagem de erros inatos do metabolismo, dosagem de AST, ALT, FA e GGT; erro inato do metabolismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dosagem de G6PD, checar teste do pezinho, tipagem sanguínea da mãe e da criança; colestase neonatal idiopática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "internação imediata, administração de vitamina K, dosagem de AST, ALT, FA e GGT, ultrassonografia abdominal; atresia biliar.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de colestase neonatal. Laboratorialmente, a colestase é definida quando a bilirrubina direta (BD) é maior que 1,0 mg/dL ou representa mais de 20% da bilirrubina total. No caso, a BD de 4,1 mg/dL (com BT de 7,1 mg/dL) confirma o diagnóstico. Clinicamente, a tríade de icterícia persistente (além de 14 dias de vida), acolia fecal (fezes esbranquiçadas) e colúria (urina amarela que mancha a fralda), somada à hepatomegalia, aponta fortemente para a Atresia de Vias Biliares (AVB). \n\nA AVB é uma urgência diagnóstica e terapêutica, pois o sucesso do tratamento cirúrgico (Portoenterostomia de Kasai) depende da precocidade da intervenção, idealmente realizada antes dos 60 dias de vida. Como o lactente já está com 65 dias, a investigação deve ser imediata.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA alternativa D descreve a conduta padrão diante de uma forte suspeita de Atresia de Vias Biliares. A internação imediata visa agilizar a propedêutica. A administração de Vitamina K é obrigatória, pois a falta de bile no intestino impede a absorção de vitaminas lipossolúveis (A, D, E, K), o que pode levar a distúrbios de coagulação graves. A ultrassonografia abdominal é o exame de imagem inicial para avaliar a presença da vesícula biliar e o sinal do cordão triangular (sugestivo de AVB), enquanto as enzimas hepáticas (AST, ALT) e canaliculares (FA, GGT) ajudam a avaliar o grau de lesão e obstrução biliar.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Embora a fibrose cística e infecções congênitas (sorologias) façam parte do diagnóstico diferencial das colestases neonatais, elas não são a primeira hipótese diante de um quadro de acolia fecal e hepatomegalia tão marcantes. A prioridade é descartar causas cirúrgicas obstrutivas.\n\nAlternativa B: Erros inatos do metabolismo são causas importantes de colestase, mas costumam vir acompanhados de outros sintomas sistêmicos (como vômitos, baixo ganho ponderal e distúrbios hidroeletrolíticos) e não são a causa mais provável quando há sinais claros de obstrução biliar mecânica.\n\nAlternativa C: A dosagem de G6PD e a tipagem sanguínea são utilizadas para investigar icterícia por bilirrubina indireta (causas hemolíticas). O hemograma e os reticulócitos normais do paciente já indicam que não há um processo hemolítico em curso. A colestase neonatal idiopática é um diagnóstico de exclusão e não deve ser a suspeita inicial em um paciente com sinais clínicos de AVB.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Cuidados Neonatais",
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  },
+  {
+    "id": "AJUDA_3f7bce03-3fe2-4581-ba4f-ff3d0b8286a2",
+    "originalId": "3f7bce03-3fe2-4581-ba4f-ff3d0b8286a2",
+    "statement": "Mulher de 25 anos portadora de valvulopatia mitral vem evoluindo com febre há 3 meses e ao procurar seu médico assistente o mesmo suspeita de um quadro de Endocardite Infecciosa. Em relação aos critérios de Duke modificado é correto afirmar EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para os micro-organismos típicos e atípicos, são necessárias duas hemoculturas, com intervalos de 12 h entre elas para serem coletadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O ecocardiograma continua sendo o exame de escolha e um critério maior. Pode apresentar como alterações a vegetação ou as complicações da EI, como perfuração ou pseudoaneurisma de folhetos, abscesso, pseudoaneurisma ou fístula paravalvares ou deiscência de prótese valvar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Para os micro-organismos típicos, são necessárias duas hemoculturas positivas e para os atípicos três hemoculturas, que não necessitam mais de longos intervalos entre elas para serem coletadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "São incluídos nos critérios menores a evidência clínica ou radiológica de embolia arterial, infarto pulmonar, abscesso cerebral ou esplênico, aneurisma micótico, hemorragia intracraniana, hemorragia conjuntival, lesões de Janeway, púrpura purulenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os Critérios de Duke Modificados, que são a ferramenta fundamental para o diagnóstico de Endocardite Infecciosa (EI). Para resolvê-la, devemos identificar qual das afirmações está INCORRETA.\n\nAnálise das alternativas:\n\nAlternativa (a) - INCORRETA (Gabarito): A afirmação está errada ao dizer que é necessário um intervalo de 12 horas entre as coletas para todos os microrganismos. De acordo com os critérios de Duke, o intervalo de 12 horas é utilizado especificamente para definir um dos critérios maiores: a bacteremia persistente (quando se obtêm duas hemoculturas positivas coletadas com intervalo maior que 12 horas). No entanto, para o diagnóstico inicial e para microrganismos típicos, as diretrizes atuais recomendam a coleta de 2 a 3 sets de hemoculturas em locais de punção diferentes, as quais podem ser realizadas com intervalos curtos (como 30 a 60 minutos) para não atrasar o início da antibioticoterapia em casos agudos. Além disso, para microrganismos como a *Coxiella burnetii*, basta uma única hemocultura positiva ou título de anticorpos IgG para ser considerado critério maior.\n\nAlternativa (b) - CORRETA: O ecocardiograma (preferencialmente o transesofágico em casos de alta suspeição ou próteses) é, de fato, o exame de imagem de escolha e compõe um critério maior. As alterações listadas (vegetação, abscesso, nova deiscência de prótese, perfurações e fístulas) são todos achados ecocardiográficos clássicos que corroboram o diagnóstico de EI.\n\nAlternativa (c) - CORRETA: Esta alternativa reflete a prática clínica recomendada. Para microrganismos típicos (como *Streptococcus viridans* ou *Staphylococcus aureus*), duas hemoculturas positivas são suficientes para critério maior. No caso de microrganismos menos comuns ou quando a bacteremia precisa ser provada como persistente, utiliza-se um número maior de amostras (três ou mais). A tendência moderna é priorizar o volume de sangue coletado e a detecção rápida, sem a obrigatoriedade de longos intervalos de espera entre as punções, visando o diagnóstico precoce.\n\nAlternativa (d) - CORRETA: Os critérios menores de Duke são divididos em categorias. Esta alternativa lista corretamente diversos Fenômenos Vasculares, que incluem: embolia arterial sistêmica, infartos pulmonares sépticos, aneurismas micóticos, hemorragia intracraniana, hemorragias conjuntivais e as manchas ou lesões de Janeway (pequenas manchas eritematosas ou hemorrágicas, indolores, nas palmas das mãos ou plantas dos pés). Todos estes são classificados como critérios menores.\n\nResumo do diagnóstico pelos Critérios de Duke Modificados:\nPara confirmar Endocardite Infecciosa, precisamos de:\n- 2 Critérios Maiores; OU\n- 1 Critério Maior e 3 Menores; OU\n- 5 Critérios Menores.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  },
+  {
+    "id": "AJUDA_3f887988-8c1d-4323-b300-697413a041e4",
+    "originalId": "3f887988-8c1d-4323-b300-697413a041e4",
+    "statement": "Homem, 20 anos de idade, chega ao pronto socorro vítima de acidente automobilístico. A radiografia de tórax mostra fratura de primeiros arcos costais à esquerda, alargamento mediastinal e rebaixamento de brônquio principal esquerdo. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesão de aorta",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Lesão de esôfago",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lesão cardíaca",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lesão de hilo pulmonar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito aponta para uma lesão traumática da aorta, uma emergência médica gravíssima decorrente de desaceleração brusca em traumas de alta energia.\n\nAnálise das alternativas:\n\na) Lesão de aorta: Alternativa correta. O alargamento do mediastino (geralmente definido como maior que 8 cm ou perda do contorno do botão aórtico) é o sinal radiológico mais comum da ruptura traumática da aorta. O rebaixamento do brônquio principal esquerdo ocorre devido ao efeito de massa do hematoma periaórtico, que se localiza tipicamente no istmo aórtico (logo após a emergência da artéria subclávia esquerda). Além disso, a fratura dos primeiros arcos costais é um marcador de trauma de altíssima energia, frequentemente associado a lesões de grandes vasos e do plexo braquial.\n\nb) Lesão de esôfago: Alternativa incorreta. Lesões esofágicas em traumas contusos são raras. Quando ocorrem, os achados radiológicos mais comuns são o pneumomediastino (ar no mediastino), enfisema subcutâneo ou derrame pleural, não sendo típica a apresentação de rebaixamento brônquico ou alargamento mediastinal isolado sem a presença de ar extra-alveolar.\n\nc) Lesão cardíaca: Alternativa incorreta. O trauma cardíaco pode se manifestar como contusão miocárdica ou tamponamento cardíaco (hemopericárdio). Radiologicamente, o tamponamento pode causar um aumento da silhueta cardíaca (coração em forma de moringa), mas não costuma causar o alargamento do mediastino superior ou o deslocamento inferior do brônquio principal esquerdo, que são sinais de patologia vascular da base.\n\nd) Lesão de hilo pulmonar: Alternativa incorreta. Lesões nas estruturas do hilo pulmonar (artérias pulmonares ou brônquios principais) geralmente se manifestam com hemotórax maciço, pneumotórax persistente ou fístulas broncopleurais de alto débito. Embora possam causar opacidades na região hilar, o conjunto de sinais descrito (especialmente o rebaixamento do brônquio esquerdo associado ao mecanismo de desaceleração) é clássico e patognomônico para o hematoma de aorta.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  },
+  {
+    "id": "AJUDA_3f8be7fd-758d-406b-b2a0-25312c4fe4cd",
+    "originalId": "3f8be7fd-758d-406b-b2a0-25312c4fe4cd",
+    "statement": "Médico plantonista atende paciente de 55 anos, sexo masculino, admitido com quadro de dor torácica típica há 2 horas. Ao exame físico apresenta-se ansioso, sudoreico, com pressão arterial de 150/90 mmHg e frequência cardíaca de 95 bpm. O eletrocardiograma de admissão revela supradesnivelamento do segmento ST nas derivações DII, DIII e aVF. Considerando a necessidade de investigar possível acometimento do ventrículo direito, determine quais derivações adicionais devem ser solicitadas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V7 e V8.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V3R e V4R.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "V1 e V2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "D1 e aVL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "V5 e V6.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST) de parede inferior, identificado pelas alterações nas derivações DII, DIII e aVF. Em aproximadamente 30 a 50 por cento dos casos de infarto inferior, ocorre também o acometimento do ventrículo direito (VD), visto que a artéria coronária direita costuma ser a responsável pela irrigação de ambas as áreas. O diagnóstico de extensão para o VD é fundamental, pois altera o manejo clínico: deve-se evitar o uso de medicamentos que reduzem a pré-carga, como nitratos, diuréticos e morfina, priorizando a infusão de volume (soro fisiológico) em caso de hipotensão.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. As derivações V7 e V8 são posicionadas na região dorsal (costas) do paciente. Elas são indicadas para investigar o infarto da parede posterior (dorsal) do ventrículo esquerdo, suspeitado quando há imagem em espelho (infradesnivelamento de ST) nas derivações precordiais anteriores (V1 a V3).\n\nAlternativa b: Correta. V3R e V4R são derivações precordiais direitas, posicionadas no hemitórax direito de forma simétrica aos pontos V3 e V4 do lado esquerdo. Elas são as derivações específicas para avaliar o ventrículo direito. O supradesnivelamento do segmento ST em V4R é o sinal mais sensível e precoce de infarto do VD.\n\nAlternativa c: Incorreta. V1 e V2 são derivações do eletrocardiograma convencional que avaliam o septo interventricular. Embora V1 esteja anatomicamente próxima ao ventrículo direito, ela não é suficiente para confirmar o diagnóstico de infarto de VD, sendo necessário o registro das derivações direitas suplementares.\n\nAlternativa d: Incorreta. D1 e aVL avaliam a parede lateral alta do ventrículo esquerdo. No contexto de um infarto inferior, é comum observar infradesnivelamento do segmento ST nestas derivações como um achado recíproco (imagem em espelho).\n\nAlternativa e: Incorreta. V5 e V6 são derivações que avaliam a parede lateral baixa do ventrículo esquerdo. Não possuem utilidade na investigação direta de acometimento do ventrículo direito.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:12.159Z"
+  }
+]

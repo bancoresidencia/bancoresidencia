@@ -1,0 +1,514 @@
+[
+  {
+    "id": "AJUDA_c7bef1b4-77f8-4f56-83eb-54c328a1c9c9",
+    "originalId": "c7bef1b4-77f8-4f56-83eb-54c328a1c9c9",
+    "statement": "Um homem de 24 anos de idade, previamente hígido, é encontrado em casa com sonolência, pupilas puntiformes e frequência respiratória de 6 incursões por minuto. Ao exame: PA=100/60mmHg, FC=58bpm, saturação 82% em ar ambiente. Os familiares relatam que ele fazia uso recreativo de drogas e havia comprimidos de codeína próximos. Nesse caso, a conduta inicial MAIS adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intubação orotraqueal imediata, sem considerar medidas farmacológicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administração de naloxona intravenosa e suporte ventilatório conforme necessidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administração de flumazenil intravenoso, específico para intoxicação por opioides.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lavagem gástrica imediata seguida de carvão ativado, independentemente do tempo de ingestão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve a tríade clássica da intoxicação por opioides: depressão do nível de consciência (sonolência), miose (pupilas puntiformes) e depressão respiratória importante (frequência respiratória de 6 incursões por minuto e saturação de 82%). O relato do uso recreativo de codeína, um opioide, confirma a suspeita diagnóstica.\n\nAlternativa a: Incorreta. Embora o paciente apresente insuficiência respiratória, a intubação orotraqueal não deve ser a conduta inicial imediata sem antes tentar a reversão farmacológica. Na intoxicação por opioides, a naloxona frequentemente restaura o drive respiratório de forma rápida, evitando procedimentos invasivos e suas possíveis complicações.\n\nAlternativa b: Correta. Esta é a conduta padrão. O manejo inicial deve focar na manutenção da oxigenação e ventilação, utilizando bolsa-válvula-máscara, se necessário, enquanto se administra a naloxona. A naloxona é um antagonista competitivo dos receptores opioides, e o seu principal objetivo terapêutico é restabelecer a ventilação espontânea adequada.\n\nAlternativa c: Incorreta. O flumazenil é um antagonista específico dos receptores de benzodiazepínicos. Ele não possui efeito sobre os receptores opioides e, portanto, não tem indicação neste caso. Além disso, o uso de flumazenil pode ser perigoso se houver coingestão de substâncias que reduzem o limiar convulsivo.\n\nAlternativa d: Incorreta. A lavagem gástrica e o carvão ativado têm indicações restritas ao tempo de ingestão (geralmente dentro da primeira hora) e são contraindicados em pacientes com nível de consciência rebaixado sem proteção de via aérea, devido ao alto risco de broncoaspiração. Estabilizar a respiração e administrar o antídoto são prioridades absolutas antes de considerar qualquer descontaminação gástrica.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:32.795Z"
+  },
+  {
+    "id": "AJUDA_c7ca2770-ac61-4c18-80bf-0658ff42470f",
+    "originalId": "c7ca2770-ac61-4c18-80bf-0658ff42470f",
+    "statement": "Em relação à pós-administração de corticoterapia para aceleração da maturação pulmonar fetal em fetos prematuros, atribua V (verdadeiro) ou F (falso) às afirmativas a seguir.\n( ) A dexametasona tem um início de ação mais lento e duração de ação mais longa do que a betametasona.\n( ) A atividade uterina pode aumentar ligeiramente após a administração de betametasona.\n( ) Ao se realizar uma cardiotocografia, observa-se uma diminuição na variabilidade.\n( ) A contagem de linfócitos aumenta significativamente.\n( ) Ocorre uma piora transitória no fluxo diastólico final da artéria umbilical.\nAssinale a alternativa que contém, de cima para baixo, a sequência correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F, V, V, F, F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F, V, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "F, F, F, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta é uma questão clássica sobre os efeitos fisiológicos sistêmicos e fetais da corticoterapia antenatal (betametasona e dexametasona), tema recorrente em provas de Obstetrícia. Vamos analisar cada afirmativa para justificar o gabarito (C):\n\n(F) A dexametasona tem um início de ação mais lento e duração de ação mais longa do que a betametasona.\nExplicação: Incorreto. Ambos os corticóides (betametasona e dexametasona) possuem perfis farmacocinéticos muito semelhantes. Eles são estruturalmente idênticos (isômeros), atravessam a placenta de forma rápida e possuem meia-vida semelhante. Não há evidência de que a dexametasona seja significativamente mais lenta ou duradoura que a betametasona no contexto da maturação pulmonar.\n\n(V) A atividade uterina pode aumentar ligeiramente após a administração de betametasona.\nExplicação: Correto. Estudos clínicos demonstram que logo após a administração de betametasona pode ocorrer um aumento transitório e leve na frequência das contrações uterinas. Isso geralmente não evolui para trabalho de parto verdadeiro, mas é uma alteração descrita na literatura obstétrica.\n\n(V) Ao se realizar uma cardiotocografia, observa-se uma diminuição na variabilidade.\nExplicação: Correto. Este é um dos efeitos \"colaterais\" mais importantes para o examinador de residência. Cerca de 24 a 48 horas após a administração do corticóide (especialmente a betametasona), ocorre uma redução transitória da variabilidade da frequência cardíaca fetal e da reatividade. É fundamental conhecer esse efeito para não diagnosticar erroneamente um sofrimento fetal agudo. O padrão costuma retornar ao normal após 4 a 7 dias.\n\n(F) A contagem de linfócitos aumenta significativamente.\nExplicação: Incorreto. A administração de corticóides causa, na verdade, uma linfocitopenia transitória e uma eosinopenia. Em contrapartida, ocorre uma leucocitose às custas de neutrofilia (desvio para a direita por desmarginalização de neutrófilos). Portanto, o número de linfócitos diminui, não aumenta.\n\n(F) Ocorre uma piora transitória no fluxo diastólico final da artéria umbilical.\nExplicação: Incorreto. Na verdade, o efeito é oposto ou inexistente na artéria umbilical normal. Em situações de insuficiência placentária com diástole reversa ou zero, o uso de corticóide pode promover uma melhora transitória (aparecimento da diástole) por cerca de 24-48 horas devido à redução da resistência vascular. Na artéria umbilical de fetos sadios, não se espera uma piora do fluxo diastólico.\n\nConclusão: A sequência correta é F, V, V, F, F, correspondendo à alternativa (c).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:32.795Z"
+  },
+  {
+    "id": "AJUDA_c7e34df2-0373-49e8-8169-1850375a2781",
+    "originalId": "c7e34df2-0373-49e8-8169-1850375a2781",
+    "statement": "Escolar, sexo masculino, de 9 anos, é levado à Unidade Básica de Saúde (UBS) após ter sofrido uma mordida superficial na região do antebraço esquerdo enquanto brincava com um gato desconhecido que apareceu na propriedade rural onde reside com a família. A mãe relata que o animal fugiu logo após o incidente, impossibilitando sua captura para observação. O exame físico revela uma lesão única, superficial, em região dorsal do pé esquerdo, próxima ao tornozelo, sem sinais de infecção inicial ou edema. A família informa que a criança nunca foi vacinada contra a raiva. A equipe médica discute a implementação das medidas de profilaxia antirrábica. Com base no quadro descrito e nas orientações atuais do Ministério da Saúde sobre profilaxia antirrábica, qual é a conduta mais adequada para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Higienização criteriosa da ferida, início de quatro doses de vacina antirrábica e administração de soro antirrábico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Higienização da ferida, administração de quatro doses de vacina antirrábica sem necessidade de soro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Higienização da ferida, administração de duas doses de vacina antirrábica sem necessidade de soro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Higienização da ferida e administração de três doses de vacina antirrábica, acompanhadas de soroprofilaxia com imunoglobulina antirrábica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Higienização da ferida e acompanhamento clínico do paciente, sem necessidade de vacinação, considerando a superficialidade da lesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para definir a conduta em casos de possíveis exposições ao vírus da raiva, o Ministério da Saúde do Brasil classifica os acidentes em \"leves\" ou \"graves\" e avalia a condição e espécie do animal agressor.\n\nNo caso descrito, temos:\n1. Animal: Gato desconhecido que fugiu (impossível de ser observado por 10 dias).\n2. Ferimento: Único e superficial no antebraço/dorso do pé (membros).\n\nClassificação do Acidente:\nSegundo o protocolo do Ministério da Saúde, acidentes leves são ferimentos superficiais, únicos ou em pequena quantidade, localizados no tronco ou membros (exceto mãos, polpas digitais e plantas dos pés). Já os acidentes graves envolvem ferimentos na cabeça, face, pescoço, mãos e pés, ou ferimentos profundos, múltiplos ou extensos em qualquer local, além de qualquer ferimento por animal silvestre. No contexto da questão, a descrição de lesão \"única e superficial\" direciona o caso para um Acidente Leve.\n\nConduta para Acidente Leve com cão ou gato desaparecido ou morto:\nA orientação oficial é realizar a higienização rigorosa do local com água e sabão e iniciar o esquema vacinal com 4 doses de vacina antirrábica humana (administradas nos dias 0, 3, 7 e 14). Não há indicação de soro antirrábico (SAR) ou imunoglobulina (IGHAR) para acidentes leves, a menos que o animal seja comprovadamente raivoso.\n\nAnálise das alternativas:\n\na) Incorreta. O soro antirrábico é indicado em acidentes com animais desaparecidos apenas se o ferimento for classificado como grave. Para acidentes leves, utiliza-se apenas a vacina.\n\nb) Correta. Por ser um acidente leve (lesão superficial em membro) e o animal (gato) não permitir observação por ter fugido, a conduta padrão é a limpeza da ferida e a aplicação de 4 doses de vacina antirrábica.\n\nc) Incorreta. O esquema de duas doses (dias 0 e 3) é utilizado apenas se o animal fosse passível de observação e apresentasse sinais de raiva ou morresse durante o período de monitoramento, ou em casos específicos de reforço para quem já foi vacinado.\n\nd) Incorreta. O esquema de três doses é característico da profilaxia pré-exposição. Além disso, a soroprofilaxia é reservada para acidentes graves no protocolo pós-exposição.\n\ne) Incorreta. A raiva é uma doença com letalidade de praticamente 100%. Se o animal agressor não pode ser observado para descartar a doença, a vacinação é mandatória, independentemente da superficialidade da lesão.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:32.795Z"
+  },
+  {
+    "id": "AJUDA_c7e58e20-324f-4e59-a24d-6d112def19d1",
+    "originalId": "c7e58e20-324f-4e59-a24d-6d112def19d1",
+    "statement": "Mulher, 32 anos de idade, com história de obesidade (IMC 32 kg/m²), é admitida na enfermaria de clínica médica para investigação de edema generalizado de início há 3 semanas, progressivo, associado a ganho de peso de 8 kg. Ao exame, apresenta-se hipertensa (PA 150/95 mmHg), com edema ++/4+ em membros inferiores, edema periorbital e ascite. Exames laboratoriais revelam: creatinina 1,6 mg/dL, albumina sérica 1,8 g/dL, colesterol total 450 mg/dL, triglicerídeos 380 mg/dL. A proteinúria de 24 horas foi de 8,5 gramas. O sedimento urinário mostrou lipidúria e hematúria microscópica, sem leucocitúria significativa. As sorologias para hepatites B, C e HIV foram negativas, e o FAN foi não reagente.\n\nDiante dos dados clínicos apresentados, identifique a causa primária mais provável para o quadro atual da paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glomeruloesclerose segmentar e focal (GESF).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Nefropatia por IgA (Doença de Berger).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Glomerulonefrite membranoproliferativa (GNMP).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença de lesões mínimas (DLM).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente apresenta um quadro clínico-laboratorial característico de síndrome nefrótica, evidenciado por proteinúria maciça (8,5 g/24h), hipoalbuminemia importante (1,8 g/dL), dislipidemia grave e edema generalizado. A presença concomitante de hipertensão arterial, hematúria microscópica e elevação da creatinina sérica (1,6 mg/dL) caracteriza uma síndrome nefrótica impura, o que é fundamental para a diferenciação etiológica.\n\nAlternativa A (Correta): A Glomeruloesclerose Segmentar e Focal (GESF) é a causa primária mais frequente de síndrome nefrótica em adultos. Sua apresentação clínica costuma cursar com elementos nefríticos associados, como hipertensão arterial, hematúria microscópica e disfunção renal ao diagnóstico. Ademais, a obesidade (IMC 32 kg/m²) é um fator de risco clássico associado à sobrecarga hemodinâmica e hiperfiltração glomerular, predispondo à lesão podocitária típica da GESF.\n\nAlternativa B (Incorreta): A Nefropatia por IgA (doença de Berger) é a glomerulopatia primária mais prevalente em nível global, porém manifesta-se tipicamente como hematúria macroscópica recorrente após infecções de vias aéreas superiores (hematúria sinfaringítica) ou hematúria microscópica persistente. É excepcional a sua apresentação primária com síndrome nefrótica grave e proteinúria acima de 3,5 g/dia.\n\nAlternativa C (Incorreta): A Glomerulonefrite Membranoproliferativa (GNMP) é menos comum e costuma apresentar-se como síndrome nefrítica-nefrótica mista. Está frequentemente associada a condições secundárias (como infecção pelo vírus da hepatite C, descartada na sorologia) ou doenças autoimunes, e classicamente cursa com consumo de frações do complemento sérico.\n\nAlternativa D (Incorreta): A Doença de Lesões Mínimas (DLM) é a principal etiologia de síndrome nefrótica na faixa etária pediátrica. Em adultos, manifesta-se tipicamente como síndrome nefrótica pura, de início súbito, sem hipertensão, sem hematúria microscópica e com função renal preservada, padrão divergente do quadro apresentado pela paciente.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:32.795Z"
+  },
+  {
+    "id": "AJUDA_c7e7ec40-f395-4a7d-8cf3-6e9addf88cf7",
+    "originalId": "c7e7ec40-f395-4a7d-8cf3-6e9addf88cf7",
+    "statement": "Uma médica de 30 anos, sem comorbidades, realiza PPD com 12 mm após exposição ocupacional a paciente com TB bacilífera. Exame de imagem de tórax é normal, sem sintomas. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar isoniazida 6 a 9 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acompanhar clinicamente, sem tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar GeneXpert antes de decidir conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar esquema isoniazida + rifapentina por 12 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ESTRUTURA DA QUESTÃO E CONTEXTO CLÍNICO:\nA paciente apresenta um quadro clássico de Infecção Latente por Tuberculose (ILTB). Ela é uma profissional de saúde (exposição ocupacional) que teve contato com um caso de TB bacífera. O teste de PPD (ou Teste Tuberculínico - TT) resultou em 12 mm, o que é considerado positivo (ponto de corte ≥ 5 mm para contatos recentes e profissionais de saúde). Como ela está assintomática e o exame de imagem de tórax é normal, a doença ativa está excluída, restando o diagnóstico de ILTB.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): O uso de isoniazida isolada por 6 a 9 meses foi, durante muito tempo, o tratamento padrão para ILTB no Brasil. Embora ainda seja uma opção válida em cenários específicos, não é mais considerada a conduta \"mais adequada\" ou preferencial em provas de residência atuais quando comparada a esquemas mais curtos, devido ao longo tempo de tratamento e menor taxa de adesão.\n\nAlternativa B (Incorreta): O acompanhamento clínico isolado não é indicado para contatos com PPD positivo e alto risco de adoecimento, como profissionais de saúde expostos. O objetivo do tratamento da ILTB é justamente evitar a progressão para a forma ativa da doença, que tem maior morbimortalidade e potencial de transmissão.\n\nAlternativa C (Incorreta): O GeneXpert (Teste Rápido Molecular para Tuberculose) é indicado para o diagnóstico de tuberculose DOENÇA (ativa). Ele é realizado em amostras de escarro ou outros materiais biológicos de pacientes sintomáticos. Como a paciente está assintomática e com raio X normal, não há material para coleta nem indicação para esse exame, pois o diagnóstico de infecção latente é clínico-epidemiológico e imunológico (PPD ou IGRA).\n\nAlternativa D (Correta): O esquema de isoniazida + rifapentina por 12 semanas (conhecido como esquema 3HP) é atualmente o tratamento preferencial para ILTB em pacientes acima de 2 anos, sem comorbidades graves e sem contraindicações específicas (como gravidez). Ele consiste em doses semanais administradas por 3 meses (total de 12 doses). Suas principais vantagens são o menor tempo de tratamento, menor toxicidade hepática e maior taxa de adesão em comparação aos esquemas tradicionais de 6 ou 9 meses de isoniazida. No Brasil, o Ministério da Saúde incorporou e prioriza este esquema para contatos e grupos de risco.\n\nRESUMO DA CONDUTA:\nIdentificou-se ILTB (PPD ≥ 5 mm + raio X normal + assintomático) -> Indicar tratamento -> Escolher esquema preferencial (3HP: isoniazida + rifapentina por 12 semanas).",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:32.795Z"
+  },
+  {
+    "id": "AJUDA_c7ece628-4ec0-46a9-9cc1-4da61e4b69d8",
+    "originalId": "c7ece628-4ec0-46a9-9cc1-4da61e4b69d8",
+    "statement": "Mulher, 72 anos de idade, ex-tabagista (40 anos/maço), diagnosticada com DPOC GOLD II (VEF1 55%), controlada com tiotrópio inalatório diário e salbutamol, submeter-se-á à artroplastia total de quadril eletiva por osteoartrose avançada. Não apresenta exacerbações nos últimos 6 meses ou hospitalizações prévias por insuficiência respiratória. Apresenta saturação de O2 de 93% em ar ambiente. Radiografia de tórax: normal. ECG: ritmo sinusal. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prosseguir com preferencialmente com mantendo otimização",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Postergar a cirurgia e iniciar corticoide sistêmico profilático por 7 dias com espirometria prévia e nova avaliação funcional pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prosseguir com a cirurgia, sem exames adicionais, priorizando anestesia geral com intubação e ventilação mecânica, e broncodilatadores de rotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar tomografia de alta resolução de tórax e gasometria arterial, além de avaliação com pneumologista antes da liberação cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente em questão apresenta Doença Pulmonar Obstrutiva Crônica (DPOC) classificada como GOLD II (obstrução moderada), estando clinicamente estável, sem exacerbações nos últimos seis meses e com exames básicos (raio X e ECG) normais. Para uma cirurgia eletiva de grande porte em membros inferiores, como a artroplastia de quadril, a estratégia principal é a manutenção da otimização clínica já estabelecida.\n\nAlternativa a: Correta. Como a paciente está compensada e faz uso regular de medicação (tiotrópio), não há necessidade de adiar a cirurgia ou solicitar exames complexos. A preferência por técnicas de anestesia regional (como raquianestesia ou anestesia peridural) em pacientes com DPOC é fundamentada na redução do risco de complicações pulmonares pós-operatórias, evitando a manipulação da via aérea e os efeitos da ventilação mecânica, que podem causar aprisionamento de ar e barotrauma.\n\nAlternativa b: Incorreta. Não há justificativa clínica para postergar a cirurgia, já que a paciente não apresenta sinais de descompensação. O uso de corticoide sistêmico profilático não é recomendado para pacientes estáveis no pré-operatório, pois aumenta o risco de infecções de sítio cirúrgico e distúrbios glicêmicos sem reduzir o risco respiratório em casos GOLD II. Uma nova espirometria também não mudaria a conduta, visto que a função pulmonar já é conhecida.\n\nAlternativa c: Incorreta. Embora a anestesia geral possa ser realizada se necessário, ela não é a prioridade nem a escolha mais segura para este perfil de paciente. A intubação e a ventilação mecânica estão associadas a um maior risco de broncoespasmo e complicações respiratórias no pós-operatório imediato em pacientes com DPOC, em comparação com o bloqueio regional.\n\nAlternativa d: Incorreta. A tomografia de alta resolução e a gasometria arterial são exames desnecessários para esta avaliação pré-operatória. A saturação de 93% em ar ambiente é aceitável para um paciente com DPOC e a radiografia de tórax normal afasta complicações agudas. A avaliação com pneumologista deve ser reservada para casos graves (GOLD III ou IV), pacientes muito sintomáticos ou com exacerbações frequentes, o que não é o caso.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:32.795Z"
+  },
+  {
+    "id": "AJUDA_c7f8b1df-0a62-4803-a380-ce1415727fb1",
+    "originalId": "c7f8b1df-0a62-4803-a380-ce1415727fb1",
+    "statement": "Mulher de 32 anos, previamente hígida, procura o pronto-atendimento por dor discreta em hipocôndrio direito há dois meses. Nega icterícia, febre ou perda de peso. Relata uso contínuo de anticoncepcionais orais há 12 anos. Ao exame físico, não há sinais de hepatomegalia nem estigmas de hepatopatia crônica. Ultrassonografia de abdome mostra uma lesão sólida, bem delimitada, de 5,0 cm no lobo direito hepático. A ressonância magnética evidencia lesão hipervascular, sem cicatriz central, e com áreas de hemorragia intralesional. Sorologias para hepatites B e C são negativas, e o alfafetoproteína (AFP) está dentro dos valores de referência.\n\nCom base nesse caso clínico e nos conhecimentos sobre as neoplasias hepáticas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A hiperplasia nodular focal é o tumor benigno hepático mais comum em mulheres jovens e tem forte relação com o uso de anticoncepcionais orais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O adenoma hepático é uma neoplasia benigna associada frequentemente ao uso prolongado de anticoncepcionais orais, com risco de hemorragia e transformação maligna.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O carcinoma hepatocelular (hepatocarcinoma) é comum em mulheres jovens sem hepatopatia e apresenta níveis séricos normais de AFP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O hemangioma hepático, apesar de ser o tumor benigno mais comum do fígado, apresenta risco elevado de transformação maligna, justificando ressecção cirúrgica de rotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta um perfil epidemiológico e radiológico típico de adenoma hepático. Trata-se de uma mulher jovem com uso prolongado de anticoncepcionais orais (12 anos) e uma lesão de 5,0 cm que é hipervascular e apresenta hemorragia intralesional. A ausência de cicatriz central na ressonância magnética ajuda a diferenciar o adenoma da hiperplasia nodular focal.\n\nAlternativa A: Incorreta. O tumor benigno mais comum do fígado é o hemangioma, não a hiperplasia nodular focal (HNF). Além disso, a HNF não possui uma relação causal tão forte com o uso de anticoncepcionais orais quanto o adenoma. Radiologicamente, a HNF costuma apresentar uma cicatriz central, que não foi encontrada nesta paciente.\n\nAlternativa B: Correta. O adenoma hepático é uma neoplasia epitelial benigna cuja ocorrência está diretamente relacionada ao uso de estrogênios (anticoncepcionais). Lesões maiores que 5,0 cm têm um risco aumentado de complicações, como a hemorragia intratumoral (citada no enunciado) ou ruptura para o peritônio. Além disso, existe um risco documentado de transformação para carcinoma hepatocelular, o que justifica, em muitos casos, a indicação de ressecção cirúrgica.\n\nAlternativa C: Incorreta. O carcinoma hepatocelular (CHC) é raro em mulheres jovens sem doenças de base. Geralmente, o CHC surge em pacientes com cirrose hepática ou infecção crônica pelos vírus da hepatite B ou C. Embora a alfafetoproteína (AFP) possa ser normal em alguns casos de CHC, o contexto de uso de anticoncepcional e a ausência de hepatopatia crônica tornam o adenoma o diagnóstico principal.\n\nAlternativa D: Incorreta. O hemangioma hepático é, de fato, o tumor benigno mais comum do fígado, mas ele não apresenta risco de transformação maligna. A conduta para o hemangioma é quase sempre conservadora (expectante), sendo a cirurgia indicada apenas em casos excepcionais de sintomas compressivos graves ou complicações raras.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:32.795Z"
+  },
+  {
+    "id": "AJUDA_c8060aa6-58d7-4fe5-baeb-a5e8fa4fb18e",
+    "originalId": "c8060aa6-58d7-4fe5-baeb-a5e8fa4fb18e",
+    "statement": "Uma adolescente com 15 anos, do sexo feminino, é atendida no Setor de Emergência, relatando palpitações, sudorese e choro imotivado há 7 meses, com piora hoje. Refere também perda de 5 kg, além de crises de ansiedade e tremores de extremidades. Seu ciclo menstrual tornou-se irregular e passou a evacuar várias vezes ao dia nas últimas semanas. Informa que está passando por muita dificuldade no relacionamento com os familiares e com o namorado. Ao exame: comunicativa, orientada, porém com agitação psicomotora, FC: 138bpm, ausculta cardíaca com 2 bulhas rítmicas normofonéticas sem osos, PA: 148x62 mmHg. A frequência respiratória de 16 ipm e não havia anormalidades à inspeção e na ausculta torácica. O exame do abdome não evidenciou alterações. \nFoi realizado ECG, demonstrado abaixo:\n\nQual a conduta mais adequada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliar a função tireoidiana, hemograma e função hepática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prescrever inibidor seletivo de recaptação serotonina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever antiarrítmico, anticoagulante e monitorização cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar triagem toxicológica e avaliação psiquiátrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de tireotoxicose/hipertireoidismo em uma adolescente. A paciente reúne sintomas hiperadrenérgicos e metabólicos com evolução crônica de 7 meses: perda ponderal, sudorese, tremores de extremidades, palpitações, aumento do trânsito intestinal e irregularidade menstrual, além de labilidade emocional. Ao exame, destaca-se a pressão arterial divergente ou de pulso amplo (148x62 mmHg) e a taquicardia. \n\nO traçado de eletrocardiograma (DII longo) evidencia taquicardia sinusal, ritmo regular de QRS estreito com ondas P positivas precedendo cada complexo QRS, o que representa a alteração eletrocardiográfica mais comum no hipertireoidismo devido ao estímulo adrenérgico aumentado sobre o nó sinusal.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Diante da suspeita diagnóstica de hipertireoidismo, a confirmação laboratorial exige a dosagem da função tireoidiana (TSH e T4 livre). A solicitação de hemograma e provas de função hepática é fundamental antes de iniciar o tratamento farmacológico com tionamidas (como metimazol ou propiltiouracil), pois essas drogas podem cursar com agranulocitose e hepatotoxicidade como efeitos adversos graves, sendo necessária uma avaliação basal desses parâmetros.\n\nAlternativa B (Incorreta): Embora a paciente apresente sintomas psíquicos como ansiedade e choro imotivado, estes são manifestações secundárias à condição endócrina de base. Iniciar inibidores da recaptação de serotonina sem investigar a causa orgânica atrasaria o diagnóstico e o manejo correto.\n\nAlternativa C (Incorreta): O traçado mostra taquicardia sinusal fisiológica à tireotoxicose, e não uma arritmia primária como fibrilação atrial de alto risco que justifique antiarrítmicos ou anticoagulação imediata. O controle da frequência cardíaca e dos sintomas adrenérgicos no hipertireoidismo é realizado classicamente com betabloqueadores (como o propranolol).\n\nAlternativa D (Incorreta): O tempo de evolução de 7 meses, associado a perda de peso expressiva e alterações multissistêmicas (menstruais e gastrointestinais), afasta a hipótese de uma intoxicação exógena aguda isolada. A prioridade imediata é a investigação diagnóstica de causas clínicas orgânicas.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Tireoide",
+      "Taquiarritmias",
+      "Eletrocardiograma",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b1214789181faa32133990e8a6784879d65012b4fca0646a215b4d3f5d247e91.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c8060aa6-58d7-4fe5-baeb-a5e8fa4fb18e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:33.360Z"
+  },
+  {
+    "id": "AJUDA_c8069452-a63a-4b3e-902f-74783da72767",
+    "originalId": "c8069452-a63a-4b3e-902f-74783da72767",
+    "statement": "Mulher jovem comparece à sua Estratégia saúde da família (ESF) com o objetivo de obter informações sobre a nova lei da laqueadura, pois ouviu falar que houve mudanças. Questionou o médico da sua ESF sobre o assunto, o qual informou que a nova lei (nº 14.443 de 02/09/22) substituiu a lei anterior (nº 9.263/1996) e explicou as mudanças. Em relação às mudanças da lei citada, analise as afirmativas a seguir.\nI. A idade mínima para a mulher realizar a laqueadura tubária permanece de 25 anos.\nII. Pacientes não precisam mais ter o mínimo de dois filhos para realizar a laqueadura tubária.\nIII. Permanece a necessidade de autorização do cônjuge ou parceiro para a laqueadura tubária.\nIV. Não há mais requisito de múltiplas cesarianas para realizar a esterilização cirúrgica no parto.\nEstão corretas",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II e III, somente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e III, somente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II e IV, somente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "II, III e IV, somente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "III e IV, somente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão exige conhecimento sobre as atualizações trazidas pela Lei nº 14.443/2022, que alterou a Lei do Planejamento Familiar (Lei nº 9.263/1996). As novas regras entraram em vigor em março de 2023 e modificaram critérios de idade, consentimento e realização do procedimento durante o parto.\n\nAnálise das afirmativas:\n\nAfirmativa I: Incorreta. A nova lei alterou a idade mínima para a realização da esterilização voluntária (laqueadura ou vasectomia) de 25 para 21 anos. Para quem já possui pelo menos dois filhos vivos, a esterilização pode ser feita em qualquer idade, desde que a pessoa tenha capacidade civil plena.\n\nAfirmativa II: Correta. A mudança na lei buscou ampliar a autonomia reprodutiva. Ao reduzir a idade mínima para 21 anos, a lei reforça que a decisão pode ser tomada independentemente da existência de filhos. Na prática, uma mulher de 21 anos sem filhos agora tem o direito legal de realizar o procedimento, algo que antes exigia 25 anos.\n\nAfirmativa III: Incorreta. Uma das principais mudanças foi a revogação do parágrafo que exigia o consentimento expresso do cônjuge para a realização da esterilização cirúrgica. Atualmente, a decisão é individual e não depende da autorização do parceiro ou parceira.\n\nAfirmativa IV: Correta. Anteriormente, a lei proibia a laqueadura durante o parto ou aborto, permitindo-a apenas em casos excepcionais (como sucessivas cesarianas anteriores ou risco de vida). A nova redação permite a laqueadura no momento do parto, desde que a mulher manifeste sua vontade por escrito com uma antecedência mínima de 60 dias antes do parto e que sejam observadas as condições médicas adequadas.\n\nAnálise das alternativas:\n\na) Incorreta. Os itens I e III estão errados conforme a nova legislação.\nb) Incorreta. Os itens I e III estão errados.\nc) Correta. Apenas os itens II e IV estão em conformidade com as mudanças e o texto da lei vigente.\nd) Incorreta. O item III está errado, pois o consentimento do cônjuge não é mais necessário.\ne) Incorreta. O item III está errado.\n\nGabarito: Letra (c).",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:33.360Z"
+  },
+  {
+    "id": "AJUDA_c808fcf6-28c8-437b-9808-a8e525419945",
+    "originalId": "c808fcf6-28c8-437b-9808-a8e525419945",
+    "statement": "Gestante, 37 semanas, com doença hipertensiva específica da gestação, realizou essa cardiotocografia após alimentação. Houve a necessidade de realização de estímulo sonoro (ES). A condição cardiotocográfica desse feto é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Feto hiporreativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Feto reativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Feto hipoativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sofrimento fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Feto hipoglicêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para interpretar esta cardiotocografia (CTG), devemos observar os parâmetros básicos: frequência cardíaca basal, variabilidade, acelerações e desacelerações.\n\nAnálise do traçado:\nO traçado mostra uma frequência cardíaca basal dentro da normalidade (entre 110 e 160 bpm). No entanto, a variabilidade está nitidamente reduzida (traçado mais \"liso\"). Foi realizado o estímulo sonoro (ES), indicado pela marcação vertical no centro do gráfico. Após o estímulo, observa-se apenas uma única aceleração transitória discreta, e a variabilidade não retornou aos níveis normais de forma sustentada. \n\nAlternativa (a) Correta: Um feto é considerado hiporreativo quando não apresenta as acelerações esperadas para a idade gestacional (pelo menos duas acelerações de 15 bpm por 15 segundos em 20 minutos) ou quando apresenta variabilidade reduzida, mesmo após manobras de despertamento como a alimentação e o estímulo sonoro (ES). No caso, a paciente já havia se alimentado, e o estímulo sonoro não foi suficiente para tornar o traçado reativo.\n\nAlternativa (b) Incorreta: Para ser classificado como reativo, o feto deveria apresentar pelo menos duas acelerações de grande amplitude (15 bpm por 15 segundos) em um intervalo de 20 minutos, além de manter uma variabilidade normal (entre 6 a 25 bpm). O traçado mostra variabilidade reduzida e ausência de acelerações cíclicas.\n\nAlternativa (c) Incorreta: O termo \"hipoativo\" refere-se à percepção materna ou clínica de redução dos movimentos fetais (mobilograma). Na interpretação técnica da cardiotocografia, o termo correto para a baixa resposta da frequência cardíaca é \"hiporreativo\".\n\nAlternativa (d) Incorreta: Embora o traçado seja suspeito ou não tranquilizador devido à baixa variabilidade, o termo \"sofrimento fetal\" (ou estado fetal não tranquilizador) costuma ser reservado para situações mais graves, como desacelerações tardias (DIP II) repetitivas, bradicardia persistente ou padrão sinusoidal. A hiporreatividade é um sinal de alerta que exige propedêutica complementar (como o Perfil Biofísico Fetal), mas não confirma sofrimento agudo isoladamente.\n\nAlternativa (e) Incorreta: A questão afirma que a cardiotocografia foi realizada \"após alimentação\". A hipoglicemia materna poderia causar um feto sonolento e menos reativo, mas, como a paciente já se alimentou, essa causa provável foi descartada, reforçando que a falta de resposta é intrínseca à condição fetal ou placentária (comum em casos de doença hipertensiva).",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/8b93b181baff66905a37bc9b3e3e3865c27ef5aa1d589cc7da6b5a8c7f23544e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c808fcf6-28c8-437b-9808-a8e525419945_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:34.004Z"
+  }
+]

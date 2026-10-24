@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_bc8b54c3-15b4-4ea7-9b46-4d19b1bc709b",
+    "originalId": "bc8b54c3-15b4-4ea7-9b46-4d19b1bc709b",
+    "statement": "Gestante G2P1, 38 semanas de gestação, comparece ao pronto atendimento obstétrico relatando perda de líquido amniótico há 1 hora. Ao exame especular, observa-se saída de líquido claro com grumos pela vagina. Ao exame físico, feto cefálico, em -2 de De Lee, colo uterino com dilatação de 2 cm, esvaecimento de 40%, consistência firme e posição centralizada, sem contrações uterinas. A paciente teve parto vaginal há 3 anos, com episiotomia mediana. Apresenta bom estado geral, sem comorbidades, sinais de infecção ou sofrimento fetal. Para o quadro apresentado, a melhor conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrever ocitocina para condução do trabalho de parto via vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicação absoluta de cesárea, pois o índice de Bishop é desfavorável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar descolamento digital das membranas corioamnióticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realização de amniotomia para coordenar as contrações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "indicar maturação do colo uterino com misoprostol.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve uma Ruptura Prematura de Membranas Ovulares (RPMO) em uma gestante a termo (38 semanas). A conduta padrão para RPMO a termo é a interrupção da gestação, preferencialmente por via vaginal, para reduzir o risco de infecção (corioamnionite). A escolha do método de indução depende do Índice de Bishop, que avalia as condições do colo uterino.\n\nCÁLCULO DO ÍNDICE DE BISHOP\n\nBaseado nos dados do exame físico:\n- Dilatação (2 cm): 1 ponto\n- Esvaecimento (40%): 1 ponto\n- Posição (Central): 1 ponto\n- Consistência (Firme): 0 pontos\n- Altura da apresentação (-2 de De Lee): 1 ponto\nTotal: 4 pontos.\n\nUm Índice de Bishop menor ou igual a 6 é considerado desfavorável, indicando que o colo ainda não está pronto para responder adequadamente à ocitocina.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A: INCORRETA. A ocitocina é utilizada para indução quando o colo já é favorável (Índice de Bishop > 6). Em colos desfavoráveis (firmos e pouco dilatados), o uso isolado de ocitocina aumenta significativamente as chances de falha de indução e necessidade de cesárea.\n\nAlternativa B: INCORRETA. O fato de o colo ser desfavorável não justifica uma cesariana imediata. A prática obstétrica moderna preconiza a tentativa de maturação cervical e indução do parto vaginal antes de qualquer decisão por via cirúrgica, exceto se houver contraindicação ao parto vaginal.\n\nAlternativa C: INCORRETA. O descolamento digital das membranas é uma manobra realizada em consultório ou pronto atendimento para estimular o início do trabalho de parto em gestantes com membranas íntegras. Como a paciente já apresenta ruptura de membranas (RPMO), essa manobra não tem utilidade.\n\nAlternativa D: INCORRETA. A amniotomia é o procedimento de romper artificialmente as membranas para coordenar ou acelerar o trabalho de parto. A paciente já apresenta amniorrexe (ruptura) espontânea, confirmada pelo exame especular, tornando o procedimento redundante.\n\nAlternativa E: CORRETA. Para colos desfavoráveis (Bishop menor ou igual a 6), a conduta indicada é a maturação cervical com métodos farmacológicos, como o misoprostol (prostaglandina E1). É fundamental observar que a paciente teve um parto vaginal anterior e não possui cicatriz de cesariana, o que torna o uso do misoprostol seguro e a conduta de escolha para preparar o colo antes da indução propriamente dita.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Indução do Parto e Pós-Datismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  },
+  {
+    "id": "AJUDA_bc8e2310-386f-45bd-a29e-9b283f209788",
+    "originalId": "bc8e2310-386f-45bd-a29e-9b283f209788",
+    "statement": "Assinale a alternativa que representa um parâmetro biofísico atual para a avaliação do risco de pré-eclâmpsia.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pico sistólico da artéria uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dopplervelocimetria da artéria oftálmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pico sistólico da artéria umbilical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Índice de pulsatilidade do ducto venoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pico sistólico da artéria cerebral média.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A pré-eclâmpsia é uma síndrome multissistêmica caracterizada por disfunção endotelial generalizada. Atualmente, a busca por biomarcadores e parâmetros biofísicos que permitam o rastreamento precoce (no primeiro e início do segundo trimestre) é um dos pilares da obstetrícia moderna.\n\nAnálise das alternativas:\n\na) Incorreta. O parâmetro utilizado na artéria uterina para o rastreamento de pré-eclâmpsia não é o pico sistólico isolado, mas sim o Índice de Pulsatilidade (IP). A persistência de entalhadura protodiastólica e o aumento do IP das artérias uterinas refletem uma falha na segunda onda de invasão trofoblástica, indicando maior risco para a doença.\n\nb) Correta. A dopplervelocimetria da artéria oftálmica surgiu como um biomarcador biofísico promissor e atual. Como a artéria oftálmica é um ramo da carótida interna, ela reflete de forma indireta as alterações na microcirculação cerebral. Estudos demonstram que gestantes com risco de pré-eclâmpsia apresentam alterações no perfil de fluxo desta artéria (especificamente uma hiperperfusão ou redução na resistência) antes mesmo das manifestações clínicas, servindo como um preditor de hiperfluxo encefálico e potencial neurotoxicidade.\n\nc) Incorreta. O pico sistólico (ou o Doppler) da artéria umbilical é utilizado para avaliar a função placentária e o bem-estar fetal no rastreio da insuficiência placentária e restrição de crescimento intrauterino, mas não é um parâmetro de predição primária para o surgimento da pré-eclâmpsia em si.\n\nd) Incorreta. O índice de pulsatilidade do ducto venoso é um parâmetro hemodinâmico fetal crítico, utilizado principalmente para avaliar a função cardíaca fetal e o status de oxigenação em casos de restrição de crescimento grave ou anemia fetal. Não é uma ferramenta de rastreio para o risco materno de desenvolver pré-eclâmpsia.\n\ne) Incorreta. O Doppler da artéria cerebral média (ACM) é fundamental para o diagnóstico de centralização fetal (em casos de hipóxia crônica) ou para a avaliação de anemia fetal (através do pico de velocidade sistólica). Embora importante no seguimento de fetos de mães pré-eclâmpticas, o parâmetro não é utilizado para prever a ocorrência da doença materna.\n\nConclusão:\nA alternativa (b) é a correta pois a avaliação da artéria oftálmica materna representa a fronteira atual na avaliação biofísica da pré-eclâmpsia, permitindo inferir o estado da vasculatura central materna de forma não invasiva.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  },
+  {
+    "id": "AJUDA_bc99e266-645d-47a1-9b99-d7b866c699e1",
+    "originalId": "bc99e266-645d-47a1-9b99-d7b866c699e1",
+    "statement": "Uma mulher de 60 anos procura o pronto-socorro com quadro de dor abdominal tipo cólica em quadrante inferior e diarreia há quatro dias. Refere de seis a sete evacuações diárias, aquosas, sem muco ou sangue. Relata náuseas, mas sem vômitos ou febre. Os sintomas iniciaram cerca de uma semana após o término de um tratamento de dez dias com clindamicina para abscesso dentário. Nega doenças intestinais prévias, viagens recentes ou contato com pessoas com sintomas semelhantes.\nNo exame físico, encontra-se afebril, com dor à palpação no quadrante inferior esquerdo, sem sinais de irritação peritoneal. Exames laboratoriais mostram função renal preservada e hemograma sem alterações significativas.\nDos agentes a seguir, assinale o mais provável responsável pelo quadro clínico dessa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Escherichia coli enteroinvasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Shigella spp.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Clostridium difficile.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Salmonella enterica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Escherichia coli entero-hemorrágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado é um caso clássico de diarreia associada ao uso de antibióticos, sendo o *Clostridioides difficile* (anteriormente chamado de *Clostridium difficile*) o principal agente etiológico a ser considerado nessa situação.\n\nA análise do caso clínico revela os seguintes pontos-chave:\n1. Uso recente de antibiótico (clindamicina): A clindamicina é um dos antibióticos mais classicamente associados à colite pseudomembranosa e à diarreia por *C. difficile*, pois altera significativamente a microbiota intestinal normal.\n2. Cronologia: Os sintomas iniciaram-se uma semana após o término do tratamento, o que é típico, embora a diarreia possa surgir desde o primeiro dia de uso até cerca de 8 a 10 semanas após a interrupção da antibioticoterapia.\n3. Quadro clínico: Diarreia aquosa, dor abdominal em cólica e ausência de sinais de gravidade (como febre alta ou irritação peritoneal) sugerem uma forma leve a moderada da infecção.\n\nAnálise das alternativas:\n\na) Incorreta. A *Escherichia coli* enteroinvasiva (EIEC) causa um quadro de disenteria, caracterizado por febre, dor abdominal intensa e fezes com muco, pus e sangue, assemelhando-se à shiguelose. Não há associação direta com o uso prévio de antibióticos.\n\nb) Incorreta. A *Shigella* spp. é um agente causador de disenteria clássica. O quadro costuma ser grave, com febre alta, tenesmo (vontade constante de evacuar) e fezes sanguinolentas, o que diverge da diarreia aquosa e sem febre descrita na paciente.\n\nc) Correta. O *Clostridium difficile* é o principal patógeno associado à diarreia hospitalar ou pós-antibioticoterapia. O uso da clindamicina elimina competidores bacterianos na flora intestinal, permitindo a proliferação do *C. difficile* e a produção de suas toxinas (A e B), que causam inflamação da mucosa e secreção de fluidos.\n\nd) Incorreta. A *Salmonella enterica* geralmente está relacionada ao consumo de alimentos contaminados (como ovos e carnes de aves). O quadro costuma cursar com náuseas, vômitos e febre, e não possui relação epidemiológica com o uso de clindamicina.\n\ne) Incorreta. A *Escherichia coli* entero-hemorrágica (EHEC), como a linhagem O157:H7, é conhecida por causar colite hemorrágica (diarreia com sangue vivo) e pode evoluir para a Síndrome Hemolítico-Urêmica (SHU). O quadro da paciente é de diarreia aquosa, sem sangue.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Antibióticos"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  },
+  {
+    "id": "AJUDA_bca4d182-88ae-4a24-a41f-c5ca5719e636",
+    "originalId": "bca4d182-88ae-4a24-a41f-c5ca5719e636",
+    "statement": "Considerando o diagnóstico e o tratamento da pancreatite aguda, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A tomografia computadorizada é essencial para o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso de antibioticoterapia profilática diminui a frequência de necrose infectada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A CPRE deve ser realizada de maneira precoce no manejo da pancreatite biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A colecistectomia precoce pode aumentar a morbidade nos casos de pancreatite aguda severa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: INCORRETA. A tomografia computadorizada (TC) não é essencial para o diagnóstico inicial de pancreatite aguda. O diagnóstico é estabelecido pela presença de pelo menos dois dos três critérios de Atlanta: dor abdominal característica, níveis de amilase ou lipase pelo menos três vezes acima do limite superior da normalidade, e achados característicos em exames de imagem. Se o paciente apresenta dor típica e enzimas elevadas, o diagnóstico já está firmado. A TC é reservada para casos de dúvida diagnóstica ou para avaliar complicações, preferencialmente após 48 a 72 horas do início dos sintomas, pois exames realizados muito precocemente podem subestimar a extensão da necrose.\n\nAlternativa B: INCORRETA. A antibioticoterapia profilática não é recomendada na pancreatite aguda, mesmo em casos de necrose estéril extensa. Evidências científicas demonstram que o uso preventivo de antibióticos não reduz a incidência de infecção da necrose, a necessidade de intervenção cirúrgica ou a mortalidade. O uso de antibióticos deve ser restrito aos casos de infecção comprovada ou suspeita clínica e laboratorial forte de necrose infectada.\n\nAlternativa C: INCORRETA. A CPRE (Colangiopancreatografia Retrógrada Endoscópica) não deve ser realizada de rotina em todos os casos de pancreatite biliar. Sua indicação precoce (dentro das primeiras 24 a 48 horas) está reservada exclusivamente para pacientes que apresentam colangite aguda associada ou obstrução biliar persistente (evidenciada por icterícia progressiva ou colestase laboratorial). Pacientes com pancreatite biliar que apresentam melhora clínica e laboratorial não se beneficiam da CPRE precoce.\n\nAlternativa D: CORRETA. A estratégia cirúrgica na pancreatite biliar depende da gravidade do quadro. Na pancreatite aguda leve, a colecistectomia deve ser realizada precocemente, ainda na mesma internação, para evitar a recorrência de eventos biliares. No entanto, na pancreatite aguda severa (grave), caracterizada por falência orgânica persistente e/ou complicações locais como necrose e coleções, a cirurgia precoce aumenta significativamente o risco de infecção e a morbimortalidade. Nesses casos, recomenda-se postergar a colecistectomia por cerca de 6 semanas, aguardando a resolução do processo inflamatório e a estabilização ou reabsorção das coleções.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  },
+  {
+    "id": "AJUDA_bcb9f451-2b89-4750-a692-ccef4923141a",
+    "originalId": "bcb9f451-2b89-4750-a692-ccef4923141a",
+    "statement": "Um paciente já previamente diagnosticado com Doença Pulmonar Obstrutiva Crônica (DPOC) refere cansaço para atividades do dia a dia, como tomar banho e vestir-se, além de precisar parar para descansar ao caminhar em ritmo normal por 100 metros. Nos últimos 12 meses apresentou duas exacerbações, sendo uma com necessidade de internação hospitalar. Qual a classificação da gravidade e o tratamento inicial mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "GOLD 2, grupo B; iniciar broncodilatador de curta duração isolado conforme necessidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "GOLD 3, grupo A; iniciar LAMA isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "GOLD 2, grupo E; iniciar combinação LAMA + LABA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "GOLD 2, grupo E; iniciar LABA + corticoide inalatório isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para classificar a gravidade da DPOC e definir o tratamento inicial, deve-se realizar a avaliação combinada conforme as diretrizes do GOLD (Global Initiative for Chronic Obstructive Lung Disease), especificamente as atualizações a partir de 2023, que simplificaram a classificação.\n\n1. Avaliação de Sintomas e Risco de Exacerbação:\nSintomas: O paciente apresenta cansaço para atividades de vida diária e interrompe a caminhada após 100 metros. Isso o enquadra em um escore mMRC de 3 (mMRC maior ou igual a 2 indica paciente muito sintomático).\nRisco de Exacerbação: O paciente teve duas exacerbações nos últimos 12 meses, sendo uma delas com internação. Pelos critérios atuais, qualquer paciente que tenha apresentado duas ou mais exacerbações moderadas OU pelo menos uma exacerbação que levou à hospitalização é classificado no Grupo E (de Exacerbador), independentemente do nível de sintomas.\n\n2. Definição do Tratamento:\nPara o Grupo E, o consenso atual recomenda iniciar o tratamento com a combinação de dois broncodilatadores de longa duração: um antimuscarínico de longa ação (LAMA) associado a um beta-2-agonista de longa ação (LABA). Essa combinação é superior às monoterapias na redução de sintomas e, principalmente, na prevenção de novas exacerbações.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O paciente não pertence ao Grupo B, pois o histórico de exacerbação com hospitalização o classifica como alto risco (Grupo E). Além disso, broncodilatadores de curta duração são usados para alívio de sintomas, e não como terapia de manutenção em pacientes sintomáticos ou com risco de exacerbação.\n\nAlternativa b) Incorreta. O Grupo A é destinado a pacientes com poucos sintomas e baixo risco de exacerbação (no máximo uma exacerbação moderada que não exigiu internação). O quadro clínico descrito é de alta gravidade clínica.\n\nAlternativa c) Correta. O paciente se enquadra no Grupo E devido ao histórico de exacerbações (uma internação ou duas exacerbações moderadas no ano). O tratamento de escolha inicial para esse grupo é a associação LAMA + LABA. A classificação GOLD 2 refere-se à limitação ao fluxo aéreo (VEF1 entre 50% e 79% do previsto), que é condizente com um paciente com sintomas moderados a graves.\n\nAlternativa d) Incorreta. Embora identifique o Grupo E, o uso de corticoide inalatório associado ao LABA não é a recomendação inicial de primeira linha para DPOC. A associação LAMA + LABA é preferível para reduzir o risco de exacerbações. O corticoide inalatório costuma ser reservado para pacientes com contagem de eosinófilos no sangue periférico maior ou igual a 300 células por microlitro ou em terapias triplas.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  },
+  {
+    "id": "AJUDA_bcc48328-6635-41ac-a6ce-55ec12b6a636",
+    "originalId": "bcc48328-6635-41ac-a6ce-55ec12b6a636",
+    "statement": "Em relação à investigação da paciente com suspeita clínica de endometriose, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o exame físico normal descarta o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a laparoscopia é o exame padrão-ouro para o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o tratamento clínico deve ser sempre instituído para controle da queixa álgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "US transvaginal com preparo intestinal ou RM são indispensáveis para corroborar suspeita clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) Incorreta. O exame físico normal não descarta a endometriose. A sensibilidade do exame físico é baixa, principalmente nos casos de endometriose superficial, onde as lesões são pequenas e não podem ser palpadas ou identificadas pelo toque vaginal. O exame físico costuma ser mais alterado apenas em casos de endometriose profunda ou quando há presença de endometriomas volumosos.\n\nAlternativa (b) Incorreta. Embora a laparoscopia tenha sido historicamente o padrão-ouro devido à possibilidade de biópsia e confirmação histológica, essa visão mudou. As diretrizes modernas, como as da ESHRE e da Febrasgo, recomendam que o diagnóstico seja preferencialmente clínico e baseado em métodos de imagem não invasivos. A laparoscopia deve ser evitada apenas com fins diagnósticos por ser um procedimento invasivo com riscos cirúrgicos.\n\nAlternativa (c) Correta. Esta é a conduta recomendada atualmente. Diante de uma paciente com história clínica sugestiva (dismenorreia, dor pélvica crônica, dispareunia), o tratamento clínico deve ser iniciado precocemente para controle da dor. O início da terapia hormonal e analgésica não depende da confirmação cirúrgica e serve, inclusive, como um teste terapêutico que reforça a suspeita diagnóstica caso a paciente apresente melhora.\n\nAlternativa (d) Incorreta. O ultrassom transvaginal com preparo intestinal e a ressonância magnética são os melhores exames para o mapeamento de endometriose profunda, mas não são considerados indispensáveis para a suspeita clínica inicial. O diagnóstico de suspeição é fundamentalmente clínico, baseado na anamnese. Além disso, esses exames de imagem apresentam limitações para detectar a endometriose superficial, podendo resultar em laudos normais mesmo na presença da doença.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  },
+  {
+    "id": "AJUDA_bccf61ce-aef9-4d52-b2ee-beb79efa3d13",
+    "originalId": "bccf61ce-aef9-4d52-b2ee-beb79efa3d13",
+    "statement": "Uma mulher de 18 anos de idade procura o pronto atendimento ginecológico com queixa de ardor ao urinar. Ao exame ginecológico, observa-se uma úlcera genital dolorosa em introito vaginal, de bordas irregulares e fundo purulento, associada a linfonodomegalia inguinal acompanhada de dor. De acordo com o caso descrito, o melhor tratamento para a paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "aciclovir 400 mg via oral a cada 8 horas, por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Butoconazol em uso tópico, dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A penicilina G benzatina em dose única de 2,4 milhões de unidades IM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ceftriaxona 250 mg IM, em dose única.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Doxiciclina 100 mg a cada 12 horas, por 21 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descrito apresenta os elementos clássicos do cancro mole (ou cancroide), uma infecção sexualmente transmissível causada pela bactéria *Haemophilus ducreyi*. As principais características que sustentam esse diagnóstico são:\n1. Úlcera genital dolorosa.\n2. Bordas irregulares e fundo purulento (aspecto sujo).\n3. Linfonodomegalia inguinal dolorosa (que pode evoluir para supuração/fistulização por orifício único).\n\nDiferente do cancro duro (sífilis), que é indolor e tem fundo limpo, o cancro mole é marcado pela dor intensa e exsudato purulento.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A: INCORRETA. O aciclovir é o tratamento de escolha para o herpes genital. Embora o herpes cause úlceras dolorosas, estas costumam ser precedidas por vesículas agrupadas, são mais superficiais, pequenas e não apresentam o fundo purulento característico do cancro mole.\n\nAlternativa B: INCORRETA. O butoconazol é um antifúngico tópico indicado para o tratamento da candidíase vulvovaginal. A candidíase manifesta-se com prurido, ardor e corrimento esbranquiçado (aspecto de leite coalhado), mas não causa úlceras com fundo purulento e linfonodomegalia.\n\nAlternativa C: INCORRETA. A penicilina G benzatina é o tratamento de escolha para a sífilis. O cancro primário da sífilis (cancro duro) caracteriza-se por ser uma lesão única, indolor, com bordas bem delimitadas (regulares) e fundo limpo, o que diverge totalmente da descrição do caso.\n\nAlternativa D: CORRETA. O tratamento do cancro mole, conforme os protocolos do Ministério da Saúde e órgãos internacionais, deve ser feito com antibióticos eficazes contra o *Haemophilus ducreyi*. As opções de primeira linha são a azitromicina (1 g, via oral, dose única) ou a ceftriaxona (250 mg, via intramuscular, dose única), conforme indicado nesta alternativa.\n\nAlternativa E: INCORRETA. A doxiciclina por 21 dias é o esquema terapêutico utilizado para o linfogranuloma venéreo (causado pela *Chlamydia trachomatis*). No linfogranuloma, a úlcera inicial é fugaz e indolor (muitas vezes nem é percebida pela paciente), sendo o quadro dominado pela linfonodomegalia inguinal exuberante e dolorosa. Além disso, a doxiciclina também pode ser usada para o granuloma inguinal (donovanose), mas esta última causa úlceras indolores de crescimento lento e bordas vegetantes.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  },
+  {
+    "id": "AJUDA_bccff863-2a92-4a34-9036-5fadf3d5584c",
+    "originalId": "bccff863-2a92-4a34-9036-5fadf3d5584c",
+    "statement": "Paciente feminina, 32 anos, com diagnóstico recente de HIV, com contagem de CD4= 80 células/µL (VR: 500 e 1600 células/µL). Estava em tratamento para tuberculose quando recebeu o diagnóstico de portador do vírus do HIV, sendo iniciada Terapia Antirretroviral (TARV). Após 40 dias de tratamento com TARV, retornou com piora da tosse, febre alta e dispneia. Relata também perda de peso. A radiografia de tórax mostra duas áreas novas de cavitação, que não existia anteriormente. Baseado no quadro clínico, relacione a hipótese diagnóstica com a fisiopatologia da condição da paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da replicação do HIV devido à falha terapêutica, levando à progressão da doença e superinfecção bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reativação de tuberculose latente com Síndrome Inflamatória de Reconstituição Imune (SIRI) paradoxal, resultando em exacerbação da resposta inflamatória após o início da TARV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pneumonia bacteriana comunitária com resistência aos antibióticos, agravada pela imunossupressão do HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pneumocistose com Síndrome Inflamatória de Reconstituição Imune (SIRI) desmascarada, desencadeada pela reconstituição imune após o início da TARV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve uma paciente com imunossupressão grave (CD4 de 80 células/µL) e coinfecção HIV/tuberculose. O ponto central é a piora clínica (tosse, febre, dispneia) e radiológica (novas cavitações) que ocorreu 40 dias após o início da Terapia Antirretroviral (TARV), apesar de ela já estar em tratamento regular para tuberculose. Esse cenário é clássico da Síndrome Inflamatória de Reconstituição Imune (SIRI).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A falha terapêutica da TARV em apenas 40 dias não costuma se manifestar com uma exacerbação inflamatória aguda e localizada. A falha levaria ao aumento da carga viral do HIV e à queda persistente do CD4, resultando em novas infecções oportunistas por falta de defesa, e não em uma resposta inflamatória exuberante contra um foco já conhecido. O quadro de \"piora ao melhorar a imunidade\" é o que define a SIRI.\n\nAlternativa b) Correta. A SIRI paradoxal ocorre em pacientes que já estão em tratamento para uma infecção oportunista (como a tuberculose) e apresentam uma piora clínica ou radiológica após iniciar a TARV. A fisiopatologia baseia-se na restauração da resposta imune celular, que passa a reconhecer e atacar intensamente os antígenos micobacterianos (vivos ou mortos) presentes nos tecidos. Isso gera uma resposta inflamatória exacerbada, que pode causar novas cavitações, aumento de linfonodos ou piora dos infiltrados pulmonares, mesmo que o tratamento para tuberculose esteja sendo eficaz.\n\nAlternativa c) Incorreta. Embora a pneumonia bacteriana seja comum em pacientes com HIV, ela não explicaria a formação rápida de novas cavitações no contexto específico de início de TARV em um paciente com tuberculose prévia. Além disso, a cronologia de 40 dias após o início da TARV aponta fortemente para um fenômeno de reconstituição imune.\n\nAlternativa d) Incorreta. Existem dois tipos de SIRI: a paradoxal e a desmascarada. A SIRI desmascarada ocorre quando uma infecção que não havia sido diagnosticada (estava oculta) se manifesta logo após o início da TARV. Como a paciente já tinha o diagnóstico de tuberculose e estava em tratamento, o termo correto é SIRI paradoxal. Além disso, a pneumocistose tipicamente se apresenta com infiltrado intersticial difuso e padrão de vidro fosco na radiografia, e não com cavitações, que são marcas registradas da resposta imune contra a tuberculose.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "HIV",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  },
+  {
+    "id": "AJUDA_bcf0ee2c-d6c9-47ba-86c1-d6bde34dfb86",
+    "originalId": "bcf0ee2c-d6c9-47ba-86c1-d6bde34dfb86",
+    "statement": "O tumor benigno mais comum do fígado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hepatocarcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hemangioma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Adenoma hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperplasia nodular focal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cisto hidático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O conhecimento sobre a epidemiologia dos tumores hepáticos é fundamental para a prática clínica e frequentemente cobrado em provas. O foco aqui é diferenciar a natureza (benigna vs. maligna) e a prevalência de cada lesão.\n\nAlternativa (a) Incorreta. O hepatocarcinoma (ou carcinoma hepatocelular) é, de fato, o tumor primário mais comum do fígado, porém ele é uma neoplasia maligna, geralmente associada à cirrose ou hepatites crônicas. A questão solicita especificamente o tumor benigno.\n\nAlternativa (b) Correta. O hemangioma hepático é a neoplasia benigna mais frequente do fígado. Composto por emaranhados de vasos sanguíneos, estima-se que sua prevalência na população geral possa chegar a 20% em séries de necropsia. Na maioria das vezes, é assintomático, diagnosticado incidentalmente em exames de imagem e não possui potencial de transformação maligna.\n\nAlternativa (c) Incorreta. O adenoma hepático é um tumor benigno bem menos comum que o hemangioma e a hiperplasia nodular focal. Sua importância clínica reside na forte associação com o uso de anticoncepcionais orais e no risco de complicações graves, como ruptura com hemorragia intraperitoneal e o risco de transformação em hepatocarcinoma.\n\nAlternativa (d) Incorreta. A hiperplasia nodular focal (HNF) é o segundo tumor benigno mais comum do fígado. Diferente do hemangioma, ela é interpretada como uma resposta hiperplásica regenerativa do parênquima hepático a uma malformação vascular arterial preexistente.\n\nAlternativa (e) Incorreta. O cisto hidático não é uma neoplasia (tumor), mas sim uma doença parasitária (infecção) causada pela larva do verme *Echinococcus granulosus*. Embora se manifeste como uma lesão expansiva no fígado, sua natureza é infecciosa e não neoplásica.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  },
+  {
+    "id": "AJUDA_bcffe7d3-6e34-4868-8ff5-df0132be61c9",
+    "originalId": "bcffe7d3-6e34-4868-8ff5-df0132be61c9",
+    "statement": "Atendendo a um casal que tenta engravidar há 12 meses; ela com 30 anos e ele com 46 anos, ela refere ciclos menstruais normais, não tem antecedentes cirúrgicos e sem queixas ginecológicas. Ao exame físico minucioso da mulher, não foram encontradas alterações clínicas ou ginecológicas. Qual a investigação preliminar mínima prevista?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cariótipo do casal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Investigação imunológica e TSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Espermograma e ultrassonografia transvaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pela idade da mulher (abaixo de 35 anos), deve-se aguardar pelo menos 2 anos para investigar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Definição de Infertilidade Conjugal: O diagnóstico de infertilidade é estabelecido após 12 meses de relações sexuais regulares, sem uso de métodos contraceptivos, em mulheres com menos de 35 anos. Como o casal do enunciado tenta engravidar há exatamente 12 meses e a mulher tem 30 anos, eles já preenchem o critério clínico para iniciar a investigação básica.\n\nA propedêutica mínima inicial deve buscar avaliar os quatro fatores fundamentais da reprodução: o fator masculino, o fator ovulatório, o fator tuboperitoneal e o fator uterino.\n\nAnálise das alternativas:\n\na) Incorreta. O cariótipo do casal não é um exame de triagem inicial. Ele é solicitado apenas em situações específicas, como em casos de perda gestacional recorrente (abortamento habitual), falhas repetidas em técnicas de reprodução assistida ou quando o homem apresenta alterações graves no espermograma (como azoospermia ou oligospermia severa).\n\nb) Incorreta. A investigação imunológica é um tema controverso na medicina reprodutiva e não faz parte do protocolo básico de investigação de um casal que nunca engravidou. O TSH pode ser solicitado para avaliar distúrbios da tireoide que afetam a ovulação, mas a alternativa está incompleta por ignorar o fator masculino e os fatores anatômicos femininos.\n\nc) Correta. Esta alternativa contempla a avaliação inicial de dois pilares essenciais. O espermograma é o primeiro e principal exame para avaliar o fator masculino, que está presente em cerca de 40% dos casos de infertilidade. A ultrassonografia transvaginal avalia o fator uterino (identificando miomas, pólipos ou malformações) e os ovários (permitindo a contagem de folículos antrais e identificação de tumorações ou sinais de endometriose). Em uma investigação completa, somar-se-iam a estes a histerossalpingografia (para avaliar as tubas) e a confirmação da ovulação.\n\nd) Incorreta. O prazo de 12 meses é o padrão-ouro para mulheres abaixo de 35 anos. Aguardar 2 anos atrasaria o diagnóstico sem benefício clínico. Vale lembrar que, se a mulher tivesse 35 anos ou mais, a investigação deveria ser iniciada precocemente, após apenas 6 meses de tentativas infrutíferas.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:12.636Z"
+  }
+]

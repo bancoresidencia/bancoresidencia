@@ -1,0 +1,485 @@
+[
+  {
+    "id": "AJUDA_0b33dd44-5ca3-4362-8455-f62b82952eca",
+    "originalId": "0b33dd44-5ca3-4362-8455-f62b82952eca",
+    "statement": "Um jovem, vítima de ferimento por arma branca em face anterior do abdômen chega à emergência com evisceração. Hemodinamicamente normal, é avaliado pelo cirurgião de trauma que indica cirurgia. Durante a laparotomia exploradora, assim que abre a cavidade peritoneal, se depara com sangramento intenso em região de jejuno e retroperitonial na zona II a direita. Há instabilização hemodinâmica e o anestesista indica reanimação volêmica com Ringer Lactato e ativa o Protocolo de Transfusão Maciça existente na Instituição. Após controle cirúrgico do sangramento ativo, o exame tromboelastrometria (ROTEM) indica a existência de retardo na formação da curva do coágulo. Neste caso, a melhor conduta seria:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cirurgia de Controle de Danos; Peritoniostomia; Ácido Tranexâmico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cirurgia de Controle de Danos; Peritoniostomia; Plasma Fresco Congelado;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia de Controle de Danos; Fechamento Primário da Parede Abdominal; Plaquetas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cirurgia de Controle de Danos; Fechamento Primário da Parede Abdominal; Ácido Tranexâmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve um paciente com trauma abdominal grave, hemorragia maciça e instabilidade hemodinâmica intraoperatória, o que caracteriza a indicação clássica de Cirurgia de Controle de Danos (*Damage Control Surgery*). O objetivo é interromper a hemorragia e a contaminação rapidamente, postergando o reparo definitivo para um segundo momento, após a estabilização fisiológica na UTI (correção da tríade da morte: acidose, hipotermia e coagulopatia).\n\nAnálise do componente cirúrgico:\nEm uma cirurgia de controle de danos, o fechamento primário da parede abdominal é contraindicado devido ao alto risco de Síndrome Compartimental Abdominal, decorrente do edema de alças e da reanimação volêmica vigorosa. Portanto, a técnica de escolha é a peritoniostomia (abdome aberto).\n\nAnálise do componente hematológico (ROTEM):\nA tromboelastometria (ROTEM) é um exame à beira do leito que avalia a dinâmica da formação, estabilidade e lise do coágulo. A questão afirma que houve um retardo na formação da curva do coágulo. Na nomenclatura do ROTEM, isso corresponde ao prolongamento do CT (*Clotting Time*). O CT prolongado indica deficiência de fatores de coagulação, e o tratamento padrão para repor esses fatores é o plasma fresco congelado (PFC) ou o complexo protrombínico.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Embora indique corretamente a cirurgia de controle de danos e a peritoniostomia, o ácido tranexâmico é utilizado quando há evidência de hiperfibrinólise (traduzida no ROTEM pelo parâmetro ML — *Maximum Lysis* — elevado). O retardo na formação da curva exige reposição de fatores de coagulação, não antifibrinolíticos.\n\nAlternativa (b) Correta: Aborda corretamente a estratégia cirúrgica (controle de danos) e a necessidade de deixar o abdome aberto (peritoniostomia). Além disso, identifica que o retardo na formação do coágulo (CT prolongado) deve ser tratado com plasma fresco congelado para repor os fatores de coagulação consumidos no choque hemorrágico.\n\nAlternativa (c) Incorreta: O fechamento primário da parede abdominal é proscrito no controle de danos pelo risco de hipertensão abdominal. Além disso, as plaquetas são indicadas quando há redução da firmeza máxima do coágulo (parâmetro MCF baixo no ROTEM), e não primariamente para o retardo no início da formação da curva.\n\nAlternativa (d) Incorreta: Combina dois erros principais: a indicação de fechamento primário da parede em um cenário de controle de danos e o uso de ácido tranexâmico para um achado de deficiência de fatores de coagulação.\n\nConclusão: O tratamento de escolha para um paciente em choque com coagulopatia por deficiência de fatores (detectada pelo ROTEM) e indicação de controle de danos é a laparotomia abreviada com peritoniostomia e reposição de plasma fresco congelado.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  },
+  {
+    "id": "AJUDA_0b363bad-4430-4ae9-bea3-bd11538cfed2",
+    "originalId": "0b363bad-4430-4ae9-bea3-bd11538cfed2",
+    "statement": "Mulher de 45 anos é submetida a uma colecistectomia por videolaparoscopia, e o cirurgião precisa identificar o espaço conhecido como triângulo de Calot, etapa fundamental para realização da cirurgia.\n\nQuais são os limites anatômicos clássicos desse triângulo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ducto hepático comum, ducto cístico e artéria cística.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ducto cístico, artéria hepática direita e veia porta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ducto hepático comum, porção superior do ligamento hepatoduodenal e artéria hepática direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ducto cístico, artéria cística e margem inferior do fígado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ducto hepático comum, ducto cístico e margem inferior do fígado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O Triangulo de Calot, tambem denominado trigono hepatobiliar na anatomia cirurgica contemporanea, e uma regiao anatomica fundamental na colecistectomia. Sua disseccao e indispensavel para a obtencao da Visao Critica de Seguranca de Strasberg, prevenindo lesoes iatrogenicas das vias biliares.\n\nLimites anatomicos do triangulo:\n- Limite medial: ducto hepatico comum.\n- Limite inferolateral: ducto cistico.\n- Limite superior: margem inferior do figado (face visceral).\n- Conteudo principal: arteria cistica e linfonodo de Mascagni (ou linfonodo de Calot).\n\nAnalise das alternativas:\n\nAlternativa a - Incorreta. Essa definicao corresponde a descricao historica original feita por Jean-Francois Calot em 1891, na qual a arteria cistica figurava como limite superior. Contudo, para a anatomia cirurgica moderna e na quase totalidade das provas de residencia, a arteria cistica e o conteudo a ser dissecado no interior do triangulo, e o teto e a borda hepatica.\n\nAlternativa b - Incorreta. A veia porta e a arteria hepatica direita fazem parte do pediculo hepatico no ligamento hepatoduodenal, localizadas em plano mais profundo, nao compondo as margens do triangulo.\n\nAlternativa c - Incorreta. Nao inclui o ducto cistico e traz termos genericos do ligamento hepatoduodenal que nao definem os limites cirurgicos da regiao.\n\nAlternativa d - Incorreta. Coloca a arteria cistica como limite em vez de conteudo e omite o ducto hepatico comum, que e a margem medial.\n\nAlternativa e - Correta. Apresenta de forma precisa os tres limites anatomicos adotados na cirurgia: ducto hepatico comum (medial), ducto cistico (inferolateral) e a margem inferior do figado (superior).",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  },
+  {
+    "id": "AJUDA_0b3c8d1c-423f-421d-bf10-3bb87a0d17b1",
+    "originalId": "0b3c8d1c-423f-421d-bf10-3bb87a0d17b1",
+    "statement": "Um pré-escolar de 4 anos de idade compareceu a consulta no pronto atendimento apresentando sinais e sintomas caracterizados por febre elevada (Tax = 39 ºC), tosse seca intensa, cefaleia e prostração há três dias. No quarto dia de doença, a febre piorou, tornando-se mais elevada e apareceu exantema que se inicia atrás do pavilhão auricular e dissemina-se rapidamente para o pescoço e as extremidades dos membros, com característica morbiliforme. Ao exame físico, a criança se apresenta com aparência toxemiada, olhos hiperemiados, fotofobia, tosse extenuante, FC = 140 bpm, FR = 23 irpm, Tax = 39,8 ºC e SatO2 = 98%.\n\nEntre as complicações dessa doença, está a",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Reye, que é uma degeneração aguda do fígado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "insuficiência cardiorrespiratória por causa da hipoxemia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "otite média, que é a principal complicação bacteriana",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "conjuntivite alérgica em razão da coçadura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico: O quadro clínico descrito é clássico de sarampo. A criança apresenta o \"período prodrômico\", caracterizado por febre alta, tosse (um dos sintomas mais persistentes), conjuntivite (olhos hiperemiados e fotofobia) e coriza. A evolução para o \"período exantemático\", com exantema morbiliforme de progressão craniocaudal (iniciando atrás da orelha) e piora do estado geral (aparência toxemiada), confirma a suspeita diagnóstica.\n\nAnálise das alternativas:\n\na) Incorreta. A síndrome de Reye é uma complicação associada principalmente ao uso de ácido acetilsalicílico (aspirina) durante infecções virais como influenza e varicela. Não é uma complicação característica ou frequente do sarampo.\n\nb) Incorreta. Embora a pneumonia seja a principal causa de morte por sarampo (seja pelo próprio vírus ou por sobreinfecção bacteriana), a insuficiência cardiorrespiratória não é classificada como a complicação mais comum ou específica descrita na literatura para esse tipo de questão.\n\nc) Correta. A otite média aguda (OMA) é considerada a complicação bacteriana mais comum do sarampo, ocorrendo em cerca de 5 a 10% das crianças acometidas. O vírus do sarampo causa uma intensa queda na imunidade celular e lesão do epitélio respiratório, o que facilita a ascensão de bactérias para o ouvido médio.\n\nd) Incorreta. A conjuntivite observada no sarampo é de etiologia viral, fazendo parte do \"catarro triplo\" (coriza, conjuntivite e tosse) característico da doença. Ela não tem origem alérgica e não é causada pelo ato de coçar, mas sim pela replicação viral direta e inflamação sistêmica.\n\nGabarito: Letra (c).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  },
+  {
+    "id": "AJUDA_0b4c6816-e828-4aa8-af35-6592716a5079",
+    "originalId": "0b4c6816-e828-4aa8-af35-6592716a5079",
+    "statement": "Mulher, 25 anos de idade, nuligesta, procura aconselhamento sobre métodos de planejamento familiar. Ela deseja evitar métodos hormonais por motivos pessoais e busca uma opção natural. Qual a orientação que deve ser fornecida sobre o reconhecimento do período fértil segundo o método de Billings?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Muco transparente, viscoso e escorregadio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Muco espesso, opaco e não aderente ao dedo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Muco opaco com filância de até dois centímetros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Muco esbranquiçado, grumoso e aderente ao dedo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Metodo de Ovulacao Billings (MOB) e um metodo comportamental de planejamento familiar baseado na auto-observacao da sensacao vulvar e das caracteristicas do muco cervical ao longo do ciclo menstrual. Essas caracteristicas refletem diretamente a acao dos hormonios sexuais femininos: o estrogenio promove a producao de muco favoravel a fertilizacao (fase pre-ovulatoria e ovulatoria), enquanto a progesterona torna o muco hostil a passagem dos espermatozoides (fase lutea).\n\nAnalise das alternativas:\n\nAlternativa A (Correta): Sob a influencia maxima de estrogenio, o muco cervical torna-se transparente (com aspecto classico de clara de ovo), fluido, elastico e escorregadio, gerando sensacao de lubrificacao e umidade na regiao vulvar. Essas caracteristicas definem o pico do periodo fertil, pois facilitam a sobrevivencia e a ascensao dos espermatozoides pelo canal cervical.\n\nAlternativa B (Incorreta): O muco espesso, opaco e com pouca ou nenhuma elasticidade e tipico da fase infertil (pos-menstrual inicial ou fase lutea sob acao da progesterona). Esse tipo de muco forma um tampao cervical que barra os espermatozoides.\n\nAlternativa C (Incorreta): Embora a filancia (capacidade de distensao do muco) seja uma caracteristica do muco fertil, um estiramento de apenas dois centimetros e considerado muito baixo; no pico fertil, a filancia geralmente alcanca de 8 a 10 centimetros ou mais. Alem disso, o muco fertil e transparente, e nao opaco.\n\nAlternativa D (Incorreta): O muco esbranquicado, grumoso e aderente reflete a presenca predominante de progesterona na fase lutea, caracterizando um periodo infertil e um muco denso e impenetravel para os espermatozoides.\n\nPortanto, a alternativa correta e a letra A.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  },
+  {
+    "id": "AJUDA_0b4d3e91-c32d-4394-86b1-854b6c509ec5",
+    "originalId": "0b4d3e91-c32d-4394-86b1-854b6c509ec5",
+    "statement": "AJP, feminino, 20 anos, compareceu ao ginecologista apresentando úlcera genital há aproximadamente uma semana. O exame ginecológico evidenciou úlcera única, localizada em grande lábio direito, indolor, com bordos regulares e bem delimitados. De acordo com as informações, qual o principal diagnóstico e seu respectivo tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Herpes genital/ Aciclovir 400 mg de 8/8 horas por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cancro mole/ Ciprofloxacin 500 mg de 12/12 hs por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cancro duro/ Penicilina benzatina 2.400.000 UI 1x/sem por 3 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Linfogranuloma venéreo/ Ciprofloxacin 500 mg de 12/12 hs por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta uma úlcera genital com características clássicas de sífilis primária, também denominada cancro duro. Os elementos-chave para o diagnóstico são: lesão única, ausência de dor (indolor), bordas regulares, bem-delimitadas e base endurecida.\n\nExplicação das alternativas:\n\nAlternativa (a) Incorreta: O herpes genital é caracterizado por múltiplas pequenas vesículas que evoluem para úlceras rasas, agrupadas e, diferentemente do caso descrito, são extremamente dolorosas. O aciclovir é o tratamento correto para o herpes, mas a clínica não corresponde.\n\nAlternativa (b) Incorreta: O cancro mole, causado pela bactéria Haemophilus ducreyi, manifesta-se com úlceras múltiplas, de bordas irregulares e fundo purulento (sujo). A principal diferença é que as lesões do cancro mole são muito dolorosas. O tratamento habitualmente utiliza azitromicina ou ceftriaxona.\n\nAlternativa (c) Correta: O quadro de úlcera única, indolor e com bordas bem-definidas é a definição semiológica do cancro duro (sífilis primária). O agente etiológico é o Treponema pallidum. Embora o tratamento padrão para a fase primária seja a penicilina benzatina 2.400.000 UI em dose única, a alternativa identifica corretamente a patologia e o antibiótico de eleição (penicilina), sendo a única opção que correlaciona o diagnóstico clínico correto com o tratamento adequado para a doença.\n\nAlternativa (d) Incorreta: O linfogranuloma venéreo, causado pela Chlamydia trachomatis (sorotipos L1, L2 e L3), apresenta uma lesão inicial fugaz e indolor que cicatriza rapidamente, sendo o quadro principal caracterizado por uma linfonodomegalia inguinal dolorosa que pode fistulizar. O tratamento de escolha é a doxiciclina.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  },
+  {
+    "id": "AJUDA_0b56b440-6af1-402c-8797-5488d71de394",
+    "originalId": "0b56b440-6af1-402c-8797-5488d71de394",
+    "statement": "Paciente adulto, sexo masculino, apresenta quadro de estenose pilórica. Considerando o quadro, assinale a alternativa que apresenta o diagnóstico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carcinoma gástrico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Úlcera péptica duodenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pólipos gástricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fitobezoar gástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA estenose pilórica no paciente adulto, clinicamente manifestada como uma síndrome de obstrução do trato de saída gástrico, decorre de processos que impedem mecanicamente a passagem do conteúdo gástrico para o duodeno. Os principais sintomas incluem vômitos progressivos (frequentemente contendo alimentos ingeridos há várias horas), saciedade precoce, dor abdominal e perda de peso.\n\nAlternativa A (Correta): O carcinoma gástrico é a causa mais provável e frequente de estenose pilórica em adultos. Tumores localizados na região do antro distal ou no canal pilórico podem crescer de forma a ocluir completamente o lúmen gástrico. Em provas de residência e na prática clínica atual, diante de um quadro de obstrução de saída gástrica em um adulto, a neoplasia maligna deve ser sempre a primeira hipótese diagnóstica a ser investigada.\n\nAlternativa B (Incorreta): A úlcera péptica (especialmente a duodenal ou a do canal pilórico) foi, historicamente, a principal causa de estenose pilórica devido à inflamação aguda (edema) ou cicatrização crônica (fibrose). Contudo, com o advento dos inibidores de bomba de prótons e a terapia de erradicação do *Helicobacter pylori*, a incidência de estenose por doença ulcerosa caiu drasticamente, tornando-se menos comum que a causa neoplásica.\n\nAlternativa C (Incorreta): Pólipos gástricos são geralmente pequenos, assintomáticos e encontrados incidentalmente em exames de endoscopia. Embora um pólipo pediculado muito grande pudesse, teoricamente, prolapsar através do piloro (efeito válvula), esta é uma causa extremamente rara de obstrução gástrica, não sendo considerada a hipótese mais provável.\n\nAlternativa D (Incorreta): O fitobezoar gástrico consiste em uma massa compacta de fibras vegetais não digeridas que se acumula no estômago. Costuma ocorrer em pacientes com antecedentes de cirurgia gástrica (como vagotomia) ou distúrbios de motilidade (gastroparesia). Embora possa causar obstrução, sua prevalência é muito menor quando comparada ao carcinoma gástrico.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  },
+  {
+    "id": "AJUDA_0b5d0145-798e-47aa-a27f-a58c96d9c56d",
+    "originalId": "0b5d0145-798e-47aa-a27f-a58c96d9c56d",
+    "statement": "De acordo com a literatura médica, alucinose pode ser definida como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uma experiência sensoperceptiva na ausência dos estímulos externos correspondentes, percebida com crítica por parte do paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Uma experiência sensoperceptiva na ausência dos estímulos externos correspondentes, percebida como real pelo paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uma experiência sensoperceptiva na ausência dos estímulos externos correspondentes, com pouca ou nenhuma corporeidade e localizada no espaço subjetivo interno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uma interpretação falsa de um estímulo real, geralmente visual ou auditivo, percebido de forma distorcida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender esta questão, é fundamental dominar os conceitos de psicopatologia da sensopercepção, diferenciando os fenômenos de acordo com a presença de estímulo, a localização no espaço e a capacidade de crítica do paciente.\n\nDefinição de Alucinose:\nA alucinose é um fenômeno sensoperceptivo que ocorre sem a presença de um objeto ou estímulo externo. Sua principal característica, que a diferencia da alucinação verdadeira, é que o indivíduo mantém a crítica preservada. Isso significa que, embora o paciente veja ou ouça algo, ele tem consciência de que aquela percepção é irreal ou fruto de uma disfunção, não conferindo ao fenômeno um caráter de verdade absoluta. É comum em quadros neurológicos e em certas síndromes de abstinência.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: Define perfeitamente a alucinose. Há ausência de estímulo externo (o que a diferencia da ilusão) e presença de crítica por parte do paciente (o que a diferencia da alucinação). O paciente percebe o fenômeno como algo estranho ao seu funcionamento normal.\n\nAlternativa (b) Incorreta: Esta descrição corresponde à alucinação verdadeira. Na alucinação, o paciente percebe algo sem estímulo externo, mas, ao contrário da alucinose, ele acredita totalmente na realidade daquela percepção, sem qualquer senso crítico.\n\nAlternativa (c) Incorreta: Esta alternativa descreve a pseudoalucinação. Na pseudoalucinação, o fenômeno não possui corporeidade (não tem as características de um objeto físico do mundo externo) e é percebido no espaço interno ou subjetivo (como vozes dentro da cabeça ou imagens mentais involuntárias), geralmente sem a vivência de realidade de uma percepção sensorial comum.\n\nAlternativa (d) Incorreta: Esta é a definição de ilusão. Na ilusão, existe um estímulo externo real, mas ele é percebido de maneira deformada ou interpretado erroneamente pelo cérebro (por exemplo, confundir o barulho do vento com um sussurro humano).",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Psicopatologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  },
+  {
+    "id": "AJUDA_0b6312d3-dbab-4727-bf58-9dc9ee3443c6",
+    "originalId": "0b6312d3-dbab-4727-bf58-9dc9ee3443c6",
+    "statement": "A rotura prematura das membranas amnióticas ou amniorrexe prematura é definida quando ocorre:",
+    "options": [
+      {
+        "id": "A",
+        "text": "no trabalho de parto e acima da 28ª semana de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "antes do trabalho de parto e acima da 16ª semana de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "no trabalho de parto e acima da 24ª semana de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "antes do trabalho de parto e acima da 20ª semana de gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A rotura prematura das membranas amnióticas (RPM), ou amniorrexe prematura, é caracterizada pela rotura das membranas ovulares antes do início do trabalho de parto. Para fins de classificação e conduta obstétrica, é necessário distinguir se esse evento ocorre em uma idade gestacional compatível com o período de parto ou se configura um quadro de abortamento.\n\nAlternativa a: Incorreta. O termo prematura na RPM indica que a bolsa rompeu antes de a paciente entrar em trabalho de parto. A alternativa erra ao situar o evento no trabalho de parto e ao utilizar o marco de 28 semanas, que não é o divisor da definição clínica.\n\nAlternativa b: Incorreta. Embora identifique corretamente que a rotura ocorre antes do trabalho de parto, o limite de 16 semanas é considerado muito precoce para a definição clássica de RPM. Rupturas nessa fase são habitualmente enquadradas como abortamento inevitável, que compreende o período até a 20ª ou 22ª semana de gestação.\n\nAlternativa c: Incorreta. A rotura que ocorre durante o trabalho de parto é classificada como precoce (no início da dilatação) ou oportuna (no final da dilatação), mas nunca como prematura. Além disso, o marco de 24 semanas não é o padrão utilizado para a definição básica da patologia.\n\nAlternativa d: Correta. Esta alternativa está correta, pois une o conceito temporal (antes do início do trabalho de parto) ao marco cronológico da gestação (acima da 20ª semana). Na prática obstétrica, adota-se que, a partir da 20ª semana, a perda de líquido amniótico por solução de continuidade das membranas deixa de ser classificada como abortamento e passa a ser tratada como amniorrexe prematura. Caso o evento ocorra entre a 20ª e a 37ª semana, recebe a denominação específica de rotura prematura das membranas pré-termo.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  },
+  {
+    "id": "AJUDA_0b6839cd-749a-42d1-ac5d-31542566d475",
+    "originalId": "0b6839cd-749a-42d1-ac5d-31542566d475",
+    "statement": "Em qual etapa do desenvolvimento um bebê apresenta-se mais sereno, pacífico, sem cólicas, sorrindo com mais frequência, iniciando um interesse maior pelo rosto humano, fixando mais o olhar, postura simétrica, mãos abertas, reflexo plantar já praticamente ausente e o reflexo de Moro começa a desaparecer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0 a 2 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2 a 4 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "4 a 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "6 a 9 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "9 a 12 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os marcos do desenvolvimento neuropsicomotor (DNPM) nos primeiros meses de vida, focando na transição entre o período neonatal e a primeira infância.\n\nAnálise da alternativa correta:\n\nb) 2 a 4 meses.\nEste período é frequentemente chamado de fase de simetria e maior interação social. Por volta dos 2 aos 3 meses, o bebê desenvolve o sorriso social e demonstra maior interesse por faces humanas e pela fixação do olhar. A postura, que no recém-nascido era de flexão fisiológica e assimetria (devido à influência do reflexo tônico-cervical assimétrico), torna-se mais simétrica. As mãos, antes predominantemente fechadas pelo reflexo de preensão palmar, passam a ficar mais abertas, permitindo que o bebê comece a levar as mãos à linha média. O reflexo de Moro, um dos reflexos primitivos mais marcantes, inicia seu processo de desaparecimento (integração), que se completa geralmente entre 4 e 6 meses. Além disso, as cólicas do lactente costumam regredir espontaneamente até o quarto mês, tornando o bebê clinicamente mais sereno.\n\nAnálise das alternativas incorretas:\n\na) 0 a 2 meses.\nNesta fase, o bebê ainda apresenta intensa atividade reflexa. A postura é predominantemente assimétrica e as mãos permanecem fechadas a maior parte do tempo. O sorriso ainda não é social (é reflexo ou gástrico) e as cólicas costumam estar no período de início ou maior intensidade, o que contradiz a descrição de um bebê pacífico e sem cólicas.\n\nc) 4 a 6 meses.\nNesta etapa, o desenvolvimento já está mais avançado do que o descrito. O reflexo de Moro já deve ter desaparecido completamente. O bebê já possui controle cervical pleno, começa a rolar, tenta sentar-se com apoio e inicia a preensão voluntária de objetos.\n\nd) 6 a 9 meses.\nAqui o bebê já senta sem apoio, inicia a exploração ativa do ambiente (rastejar ou engatinhar) e começa a desenvolver a preensão em pinça. Os marcos descritos no enunciado, como a fixação inicial do olhar e a postura simétrica básica, já foram superados há bastante tempo.\n\ne) 9 a 12 meses.\nNeste período, a criança está próxima de andar (ou já anda com apoio), fala as primeiras palavras com significado e entende comandos simples. Os reflexos primitivos citados na questão (Moro e Plantar) já estão ausentes há muito tempo, tendo sido substituídos por reações de equilíbrio e proteção.\n\nEm resumo, a combinação de postura simétrica, mãos abertas, melhora das cólicas, início do desaparecimento do reflexo de Moro e maior interação social caracteriza tipicamente o intervalo de 2 a 4 meses.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  },
+  {
+    "id": "AJUDA_0b6d5642-bef1-43eb-99ff-f042edf30516",
+    "originalId": "0b6d5642-bef1-43eb-99ff-f042edf30516",
+    "statement": "O qSOFA é utilizado para identificação rápida de pacientes com risco de evolução desfavorável na sepse. Quais critérios compõem esse escore?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Temperatura > 38 °C, leucocitose e taquicardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaO₂/FiO₂ < 300, lactato sérico > 2 mmol/L e hipotensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pressão arterial média < 65 mmHg, necessidade de vasopressor e lactato > 4 mmol/L.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipotensão (PAS ≤ 100 mmHg), frequência respiratória ≥ 22 irpm e alteração do nível de consciência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O qSOFA (quick Sequential Organ Failure Assessment) foi introduzido pelo Consenso Sepsis-3 em 2016 como uma ferramenta de triagem à beira-leito, rápida e sem necessidade de exames laboratoriais, para identificar pacientes com suspeita de infecção que possuem maior risco de morte ou permanência prolongada em UTI.\n\nAnálise das alternativas:\n\na) Incorreta. Estes são critérios da Síndrome de Resposta Inflamatória Sistêmica (SIRS). Embora historicamente utilizados para definir sepse, os critérios de SIRS foram substituídos pelo SOFA e qSOFA na definição de 2016 por serem muito inespecíficos, podendo estar presentes em diversas condições não infecciosas.\n\nb) Incorreta. A relação PaO2/FiO2 e o lactato são parâmetros importantes, mas pertencem ao escore SOFA completo ou à definição de choque séptico. O qSOFA foi desenhado especificamente para não depender de exames de sangue ou gasometria arterial, permitindo uma avaliação imediata.\n\nc) Incorreta. A necessidade de vasopressor para manter a pressão arterial média (PAM) acima de 65 mmHg e o lactato elevado (atualmente o corte é > 2 mmol/L após ressuscitação volêmica) são critérios diagnósticos para choque séptico, e não para a triagem inicial do qSOFA.\n\nd) Correta. O escore qSOFA é composto por apenas três parâmetros clínicos, pontuando um ponto para cada alteração presente: 1. Frequência respiratória igual ou superior a 22 irpm (taquipneia); 2. Alteração do nível de consciência (qualquer valor abaixo de 15 na Escala de Coma de Glasgow); 3. Pressão arterial sistólica igual ou inferior a 100 mmHg (hipotensão). A presença de 2 ou mais pontos indica alto risco de desfecho desfavorável.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Sepse",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:24.574Z"
+  }
+]

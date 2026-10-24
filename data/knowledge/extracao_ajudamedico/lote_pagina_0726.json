@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_cacb7ce6-a70a-4df9-bcbd-42b41d80edcf",
+    "originalId": "cacb7ce6-a70a-4df9-bcbd-42b41d80edcf",
+    "statement": "Leia o caso a seguir.\n\nPaciente do sexo feminino, 36 anos, hipertensa, no momento assintomática, mediu a pressão em casa depois que comprou um aparelho de pressão digital de braço para acompanhamento da hipertensão da mãe, e a aferição revelou um valor de 181/104. A paciente procurou atendimento médico de urgência.\n\nO possível diagnóstico do caso acima é",
+    "options": [
+      {
+        "id": "A",
+        "text": "urgência hipertensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "emergência hipertensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "crise hipertensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pseudocrise hipertensiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A análise deste caso clínico fundamenta-se na distinção entre as apresentações de elevação da pressão arterial no ambiente de urgência e emergência. O ponto-chave da questão é que a paciente está totalmente assintomática e a medida da pressão foi um achado incidental (ela testou o aparelho novo da mãe), e não motivada por sintomas clínicos.\n\nAlternativa a) Incorreta. A urgência hipertensiva é definida por níveis de pressão arterial significativamente elevados (geralmente sistólica maior ou igual a 180 mmHg e/ou diastólica maior ou igual a 120 mmHg) sem evidência de lesão de órgão-alvo aguda. Embora a paciente apresente valores numéricos que poderiam sugerir uma urgência, o fato de ser um achado ocasional em uma paciente assintomática direciona o diagnóstico para pseudocrise, indicando que não há necessidade de intervenção imediata para redução da pressão em ambiente de pronto-atendimento.\n\nAlternativa b) Incorreta. Para ser classificada como emergência hipertensiva, deve haver elevação da pressão arterial associada à lesão de órgão-alvo aguda e progressiva, com risco iminente de morte. Exemplos incluem o acidente vascular cerebral, o infarto agudo do miocárdio e o edema agudo de pulmão. A paciente em questão está assintomática, o que exclui sumariamente esta hipótese.\n\nAlternativa c) Incorreta. Crise hipertensiva é um termo amplo que engloba tanto a urgência quanto a emergência hipertensiva. Como a paciente não apresenta sintomas e o achado foi incidental, o termo crise não é o mais adequado, pois a situação não representa um risco clínico agudo que exija o manejo protocolar de uma crise real.\n\nAlternativa d) Correta. A pseudocrise hipertensiva caracteriza-se pela elevação dos níveis pressóricos em pacientes assintomáticos ou que apresentam sintomas leves e inespecíficos (como cefaleia tensional ou ansiedade), muitas vezes desencadeados por dor, estresse emocional ou, como no caso relatado, por uma descoberta ocasional ao medir a pressão sem indicação clínica. Nestes casos, não há lesão de órgão-alvo nem risco imediato. O manejo correto não envolve medicações de urgência, mas sim a reavaliação ambulatorial e o ajuste do tratamento crônico da hipertensão.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  },
+  {
+    "id": "AJUDA_cad61dd0-50dc-43c7-8417-b545e1b6c94a",
+    "originalId": "cad61dd0-50dc-43c7-8417-b545e1b6c94a",
+    "statement": "Um paciente de 45 anos, sem comorbidades prévias, apresenta-se com hérnia inguinal encarcerada há 6 horas, irredutível, com dor local intensa, mas sem sinais sistêmicos de toxemia, febre ou irritação peritoneal. A pele sobre a hérnia está normal. Analise as afirmativas sobre a classificação da urgência e a conduta indicada:\n\nI.Trata-se de uma emergência cirúrgica imediata, exigindo operação dentro de minutos, pois o encarceramento equivale funcionalmente ao estrangulamento vascular desde o início.\nII.Pode-se tentar manobras de redução manual (táxis) sob analgesia/sedação; se houver sucesso na redução, a cirurgia pode ser convertida para um procedimento eletivo ou de urgência diferida.\nIII.Se a redução manual falhar ou houver suspeita de sofrimento de alça (estrangulamento), a cirurgia torna-se uma urgência, devendo ser realizada prontamente para evitar necrose intestinal.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Questão:\n\nO caso clínico descreve uma hérnia inguinal encarcerada (irredutível) com 6 horas de evolução em um paciente estável, sem sinais de peritonite ou sofrimento vascular evidente (ausência de febre, toxemia ou alterações na pele). O objetivo é diferenciar a urgência da emergência e a conduta adequada.\n\nAnálise das Afirmativas:\n\nAfirmativa I (Incorreta): Existe uma distinção técnica entre encarceramento e estrangulamento. O encarceramento refere-se apenas à irredutibilidade do conteúdo herniário, enquanto o estrangulamento ocorre quando há comprometimento do suprimento vascular (isquemia). Nem todo encarceramento equivale funcionalmente ao estrangulamento desde o início. Além disso, uma emergência cirúrgica de \"minutos\" é reservada para quadros de instabilidade extrema ou catástrofes vasculares. No caso descrito, o tempo de evolução e a ausência de sinais flogísticos permitem uma avaliação criteriosa antes da decisão cirúrgica imediata.\n\nAfirmativa II (Correta): Em pacientes com hérnia encarcerada há pouco tempo (geralmente menos de 6 a 8 horas) e que não apresentam sinais de estrangulamento (como febre, leucocitose, vermelhidão local ou irritação peritoneal), a manobra de redução manual, conhecida como táxis, é indicada. O procedimento deve ser realizado sob analgesia e, se possível, leve sedação para promover o relaxamento da musculatura abdominal. Se a redução for bem-sucedida e o conteúdo retornar à cavidade sem sinais de dor persistente, a cirurgia pode ser programada de forma eletiva ou em regime de urgência diferida, o que melhora as condições do tecido para o reparo (diminuindo o edema local).\n\nAfirmativa III (Correta): Caso a manobra de táxis seja tentada e falhe, ou se o paciente já apresentar sinais clínicos que sugiram sofrimento de alça (estrangulamento), a conduta deve ser a exploração cirúrgica urgente. O atraso na intervenção nesses casos aumenta o risco de necrose intestinal, necessidade de enterectomia (ressecção de alça) e complicações infecciosas graves. Portanto, o insucesso da redução manual torna a cirurgia mandatória e imediata.\n\nConclusão das Alternativas:\n\na) Correta. As afirmativas II e III refletem as diretrizes atuais para o manejo de hérnias inguinais agudas, priorizando a tentativa de redução manual na ausência de complicações e a intervenção cirúrgica imediata diante do insucesso ou suspeita de isquemia.\n\nb) Incorreta. A afirmativa II também está correta, pois a manobra de táxis é uma conduta aceita e recomendada em casos selecionados.\n\nc) Incorreta. A afirmativa I está errada ao confundir os conceitos de encarceramento e estrangulamento e ao exagerar a rapidez necessária para a intervenção em um paciente estável.\n\nd) Incorreta. A afirmativa I está incorreta, o que invalida esta opção, apesar de a afirmativa II estar correta.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  },
+  {
+    "id": "AJUDA_cad75da6-82a2-4c5a-b336-135fa1b035e4",
+    "originalId": "cad75da6-82a2-4c5a-b336-135fa1b035e4",
+    "statement": "Um paciente de 68 anos de idade, com histórico de múltiplas cirurgias abdominais anteriores, apresenta-se no pronto-socorro com queixa de dor abdominal difusa de início há dois dias, acompanhada de distensão abdominal, náuseas e vômitos fecaloides. O exame físico revela um abdômen distendido e timpânico à percussão, com ruídos hidroaéreos metálicos. Não há abaulamentos na região inguinocrural. A radiografia de abdômen em pé mostra níveis hidroaéreos em alças intestinais dilatadas. Com base nos achados clínicos e de imagem, o diagnóstico mais provável e a conduta inicial mais adequada são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obstrução intestinal por intussuscepção; indicada cirurgia imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obstrução intestinal por bridas; indicada passagem de sonda nasogástrica e observação clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ĺleo paralítico secundário a distúrbio eletrolítico; indicada reposição hidroeletrolítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstrução intestinal por neoplasia colorretal; indicada quimioterapia imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Obstrução intestinal por diverticulite; indicada ressecção intestinal e colostomia a Hartmann.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado é um exemplo clássico de obstrução intestinal mecânica do intestino delgado. O paciente manifesta a tétrade típica dessa síndrome: dor abdominal, distensão, vômitos e parada de eliminação de gases e fezes. A presença de vômitos fecaloides indica que a obstrução é prolongada ou está localizada em segmentos mais distais do delgado. O exame físico com ruídos hidroaéreos metálicos sinaliza o esforço do intestino para vencer a barreira mecânica, e a radiografia com níveis hidroaéreos confirma o diagnóstico.\n\nA seguir, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. A intussuscepção intestinal (invaginação de um segmento do intestino dentro de outro) é uma causa frequente de obstrução em crianças, mas rara em adultos. Quando ocorre em idosos, geralmente está associada a uma lesão polipoide ou neoplásica que serve como \"cabeça de invaginação\". Além disso, diante do histórico de múltiplas cirurgias, essa não é a hipótese principal.\n\nAlternativa b) Correta. As bridas ou aderências firmes são a principal causa de obstrução mecânica do intestino delgado em todo o mundo, respondendo por cerca de 60% a 70% dos casos, especialmente em pacientes com antecedentes de cirurgias abdominais. Na ausência de sinais de sofrimento de alça (estrangulamento), como febre, leucocitose, acidose metabólica ou sinais de irritação peritoneal ao exame físico, a conduta inicial deve ser conservadora. O tratamento baseia-se em jejum, hidratação venosa e descompressão gastrointestinal com sonda nasogástrica, o que permite a resolução espontânea em grande parte dos pacientes.\n\nAlternativa c) Incorreta. O íleo paralítico é uma disfunção motora (funcional) e não mecânica. Nele, os ruídos hidroaéreos estão ausentes ou muito reduzidos, ao contrário dos ruídos metálicos (de luta) descritos no caso. Radiologicamente, o íleo paralítico apresenta distensão tanto de alças delgadas quanto do cólon, sem um ponto de obstrução nítido.\n\nAlternativa d) Incorreta. Embora a neoplasia colorretal seja uma causa importante de obstrução em pacientes idosos, ela geralmente causa obstrução do intestino grosso (cólon). O histórico de múltiplas cirurgias prévias torna as bridas muito mais prováveis. Além disso, a quimioterapia nunca é a conduta imediata para um quadro de abdome agudo obstrutivo, que exige estabilização clínica e resolução da barreira mecânica.\n\nAlternativa e) Incorreta. A diverticulite aguda costuma se apresentar com dor localizada, geralmente em fossa ilíaca esquerda, associada a febre e alterações do hábito intestinal. Embora processos inflamatórios possam causar obstrução reflexa ou por compressão, não é a principal suspeita neste cenário. A cirurgia de Hartmann é uma técnica para tratamento de diverticulite perfurada com peritonite, não sendo a conduta inicial para uma obstrução intestinal por bridas.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  },
+  {
+    "id": "AJUDA_caded1b2-dd86-4d3a-95f3-734baa91f2d4",
+    "originalId": "caded1b2-dd86-4d3a-95f3-734baa91f2d4",
+    "statement": "Uma paciente de 30 anos de idade, grávida de 36 semanas, apresenta-se ao Pronto-Socorro com queixas de cefaleia persistente e visão turva. Durante a avaliação, verifica-se PA: 160x105mmHg e a urina de 24 horas revela 4g de proteína. A ultrassonografia obstétrica realizada identifica feto com crescimento adequado e oligoidrâmnio. O médico assistente diagnostica pré-eclâmpsia com critérios de gravidade ou deterioração.\n\nIndique, para este caso, o momento ideal para interrupção da gestação com parto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Após estabilização dos níveis pressóricos maternos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Com 37 semanas, após controle da pressão arterial materna, para evitar a prematuridade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Imediatamente, para evitar evolução para eclâmpsia ou Descolamento Prematuro da Placenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Com 37 semanas, após estabilização dos níveis pressóricos e das alterações laboratoriais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente apresenta um quadro de pré-eclâmpsia com critérios de gravidade, evidenciado pela pressão arterial em níveis de crise (160 x 105 mmHg), sintomas neurológicos (cefaleia persistente e visão turva), proteinúria maciça e repercussão fetal (oligoidrâmnio). Com 36 semanas de gestação, a conduta definitiva é a interrupção da gravidez.\n\nAnálise das alternativas:\n\nAlternativa A: Correta. Conforme os protocolos da FEBRASGO e do ACOG, em gestações com 34 semanas ou mais que apresentam pré-eclâmpsia com sinais de gravidade, a interrupção está indicada. No entanto, o parto não deve ser realizado de forma desorganizada. É imperativo que, antes de qualquer procedimento, a paciente seja estabilizada. Isso inclui o controle dos níveis pressóricos com anti-hipertensivos de ação rápida (se necessário) e, principalmente, a administração de sulfato de magnésio para a profilaxia de crises convulsivas (eclâmpsia). Somente após essa estabilização clínica materna, o parto deve ser conduzido.\n\nAlternativa B: Incorreta. A conduta expectante até a 37ª semana (termo) só é permitida nos casos de pré-eclâmpsia sem sinais de gravidade. No caso descrito, a presença de sintomas visuais e cefaleia indica iminência de eclâmpsia, o que torna perigoso o prolongamento da gestação.\n\nAlternativa C: Incorreta. O termo \"imediatamente\" pode induzir ao erro. Em obstetrícia, salvo casos de extrema urgência como o descolamento prematuro de placenta com sofrimento fetal agudo ou hemorragia materna incoercível, a prioridade é a estabilização da mãe antes do parto. Realizar um parto ou cesariana em uma paciente com níveis pressóricos descontrolados e sem sulfatação prévia aumenta significativamente o risco de acidente vascular cerebral (AVC) e convulsões durante o ato operatório.\n\nAlternativa D: Incorreta. Assim como na alternativa B, aguardar as 37 semanas é inadequado para o cenário de pré-eclâmpsia grave após a 34ª semana. O risco de deterioração materna e morte fetal supera os benefícios de ganhar mais alguns dias de maturidade fetal.\n\nResumo do Manejo na Pré-eclâmpsia Grave (IG maior ou igual a 34 semanas):\n1. Internação e monitorização contínua.\n2. Controle da hipertensão (objetivo: manter PA diastólica entre 90-100 mmHg).\n3. Prevenção de convulsões com sulfato de magnésio (esquema de Zuspan ou Pritchard).\n4. Avaliação da vitalidade fetal.\n5. Interrupção da gestação após estabilização do quadro materno.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Alteração do Volume do Líquido Amniótico",
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  },
+  {
+    "id": "AJUDA_cae6594e-869d-4ff0-a9c4-b92f4b5d9840",
+    "originalId": "cae6594e-869d-4ff0-a9c4-b92f4b5d9840",
+    "statement": "Mulher, 58 anos, realizou mamografia que revelou microcalcificações pleomórficas agrupadas de 2 mm no Quadrante Supero-Medial (QSM) da mama direita. Foi realizada biópsia com agulhamento que demonstrou tratar-se de carcinoma intraductal in situ com margens livres de mais de 3 mm. Os receptores estrogênicos e de progesterona eram positivos e o HER 2 negativo. Assinale a alternativa que apresenta a conduta correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ampliação das margens.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avaliação de linfonodo sentinela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mastectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Carcinoma Ductal In Situ (CDIS) é uma lesão pré-invasiva tratada com o objetivo de prevenir a progressão para câncer invasor e evitar a recorrência local. O tratamento padrão para o CDIS consiste na cirurgia conservadora da mama seguida, quase invariavelmente, por radioterapia adjuvante.\n\nAnálise das alternativas:\n\na) Ampliação das margens: Incorreta. De acordo com o consenso da Society of Surgical Oncology (SSO) e da American Society for Radiation Oncology (ASTRO), para o CDIS, uma margem de 2 mm é considerada adequada e segura para reduzir o risco de recorrência local após a cirurgia conservadora. No caso clínico, as margens já são superiores a 3 mm; portanto, estão livres e adequadas, não havendo necessidade de nova intervenção cirúrgica no sítio tumoral.\n\nb) Avaliação de linfonodo sentinela: Incorreta. O CDIS, por definição, é uma neoplasia não invasiva que não possui capacidade de disseminação linfática. Portanto, a biópsia de linfonodo sentinela não é indicada de rotina na cirurgia conservadora para CDIS. Ela é reservada apenas para casos em que será realizada mastectomia (pois a drenagem linfática será alterada definitivamente) ou quando há suspeita clínica ou histológica de microinvasão/componente invasor associado.\n\nc) Radioterapia: Correta. Após a cirurgia conservadora (quadrantectomia ou excisão segmentar) para CDIS, a radioterapia em toda a mama é o tratamento padrão. Diversos ensaios clínicos randomizados demonstraram que a adição da radioterapia reduz em cerca de 50% o risco de recorrência local, tanto de novo CDIS quanto de carcinoma invasor, independentemente da idade ou do tamanho da lesão. Embora existam critérios de baixíssimo risco (como o escore de Van Nuys) que possam sugerir a omissão da radioterapia em casos selecionados, na prática clínica e em provas de residência, a conduta pós-setorectomia com margens livres no CDIS é a radioterapia.\n\nd) Mastectomia: Incorreta. A paciente apresenta uma lesão focal e muito pequena (apenas 2 mm), que foi completamente ressecada com margens livres por meio de cirurgia conservadora. Não há indicação de mastectomia, procedimento muito mais agressivo e desnecessário diante da relação tumor/mama favorável e do controle local adequado obtido.\n\ne) Quimioterapia: Incorreta. A quimioterapia é indicada para tratar doença sistêmica (invasiva). Como o carcinoma intraductal in situ está confinado à unidade ducto-lobular e não ultrapassa a membrana basal, não há indicação de quimioterapia citotóxica. Vale ressaltar que, devido aos receptores hormonais positivos, poderia ser discutida a hormonioterapia (tamoxifeno) para redução de risco, mas isso não substitui o tratamento local (cirurgia + radioterapia) e não é classificado como quimioterapia.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  },
+  {
+    "id": "AJUDA_cae6658b-cb31-4f76-b780-788c5509bb13",
+    "originalId": "cae6658b-cb31-4f76-b780-788c5509bb13",
+    "statement": "Maria, uma menina de 5 anos, foi levada ao pediatra por sua mãe devido a preocupações com seu comportamento e a dificuldades na interação com os colegas da escola. Segundo a mãe, desde os 4 anos, Maria tem apresentado um comportamento desordenado tanto em casa quanto na escola. Ela demonstra grande interesse por atividades lúdicas, mas não consegue organizar seus brinquedos, frequentemente os deixando espalhados. Além disso, parece não prestar atenção quando alguém fala diretamente com ela, costuma esquecer objetos pessoais e tem dificuldade em seguir orientações. Ela encontra dificuldades em esperar sua vez em jogos ou atividades em grupo e frequentemente interrompe conversas alheias. Ela sua avó, a quem era bastante ligada, faleceu há cerca de 1 ano. Os sintomas persistem há mais de 10 meses e resultam em dificuldades na escola, conflitos com os colegas e brigas em casa. Durante a consulta, Maria ficou inquieta o tempo todo, movendo se na cadeira, pegando os pertences na mesa do pediatra e levantando-se em momentos em que deveria permanecer sentada. Chegou a tentar correr em situações inadequadas, como dentro da sala de consulta. Ao exame físico, aparenta estar saudável, sem anormalidades físicas evidentes. É uma criança muito ativa e agitada, que constantemente se movia e conversava com a mãe na sala de exames. Assinale a alternativa correta sobre o diagnóstico correto da paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno de oposição e desafio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno de déficit de atenção e hiperatividade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Transtorno disruptivo de desregulação emocional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno do espectro autista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico de Maria apresenta as características fundamentais para o diagnóstico de Transtorno de Déficit de Atenção e Hiperatividade (TDAH), conforme os critérios do DSM-5. A paciente manifesta sintomas persistentes de desatenção, hiperatividade e impulsividade que ocorrem em múltiplos ambientes (casa e escola) e causam prejuízo funcional significativo.\n\nAnálise das alternativas:\n\na) Transtorno de Oposição e Desafio: Incorreta. O Transtorno de Oposição Desafiante (TOD) caracteriza-se por um padrão de humor irritável, comportamento questionador, desafiante ou vingativo, especialmente direcionado a figuras de autoridade. Embora Maria apresente conflitos e brigas, a descrição foca na incapacidade de organizar atividades, na agitação motora e na impulsividade, que são traços do TDAH, e não em uma postura deliberadamente hostil ou desafiadora.\n\nb) Transtorno de Déficit de Atenção e Hiperatividade: Correta. Maria preenche os critérios para o tipo combinado de TDAH. No domínio da desatenção, ela demonstra dificuldade em organizar tarefas (brinquedos), parece não ouvir quando lhe dirigem a palavra, esquece objetos e não segue instruções. No domínio da hiperatividade e impulsividade, ela não consegue esperar sua vez, interrompe os outros, apresenta inquietação motora excessiva (não para sentada na consulta) e corre em situações inadequadas. Os sintomas duram mais de 6 meses (10 meses no caso), iniciaram-se antes dos 12 anos e estão presentes em dois ou mais contextos.\n\nc) Transtorno Disruptivo de Desregulação Emocional: Incorreta. Este diagnóstico é aplicado a crianças que apresentam irritabilidade crônica e grave, com explosões de raiva frequentes e intensas que são desproporcionais ao estímulo. O caso clínico de Maria descreve uma criança agitada e desatenta, mas não menciona crises de fúria recorrentes ou um humor predominantemente raivoso entre as crises.\n\nd) Transtorno do Espectro Autista: Incorreta. O TEA exige a presença de déficits na comunicação e interação social (como falta de reciprocidade socioemocional) associados a padrões restritos e repetitivos de comportamento ou interesses. Embora Maria tenha dificuldades com colegas, isso parece ser consequência de sua impulsividade e agitação, e não de uma falha qualitativa na comunicação social ou presença de estereotipias e rituais rígidos.\n\nA morte da avó é um dado importante para o diagnóstico diferencial, pois o luto poderia mimetizar sintomas de desatenção, mas, como os sintomas já ocorriam antes do falecimento (desde os 4 anos) e persistem de forma padronizada em vários ambientes, o diagnóstico de TDAH é o mais adequado.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  },
+  {
+    "id": "AJUDA_cae7a5f0-3e48-4c6e-89cf-b80dd2c94217",
+    "originalId": "cae7a5f0-3e48-4c6e-89cf-b80dd2c94217",
+    "statement": "Um paciente de 63 anos, previamente independente, chega ao pronto-socorro com instalação súbita de fraqueza em dimídio esquerdo e disartria há 1 hora e 20 minutos. Ao exame, apresenta hemiplegia esquerda, desvio ocular para a direita e NIHSS= 17 (National Institutes of Health Stroke Scale). A tomografia sem contraste mostra ausência de hemorragia e discreto apagamento de sulcos na região frontal direita. Angio-TC evidencia oclusão da artéria cerebral média direita (segmento M1). Glicemia capilar de 128 mg/dL, PA 166/94 mmHg. Não usa anticoagulantes.\n\nQual a alternativa CORRETA com a conduta imediata mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar trombólise intravenosa com alteplase, mas não realizar trombectomia por ainda estar dentro das 3 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não realizar trombólise; seguir somente com trombectomia mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar trombólise intravenosa e encaminhar imediatamente para trombectomia mecânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não trombolisar devido ao NIHSS elevado; indicar apenas controle pressórico e UTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Adiar trombólise até obtenção de ressonância com difusão/perfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de Acidente Vascular Cerebral Isquêmico (AVCI) agudo, com 1 hora e 20 minutos de evolução, o que o coloca dentro da janela terapêutica para intervenções de reperfusão. Os pontos fundamentais para a decisão são: 1) o tempo de início dos sintomas (menos de 4,5 horas); 2) a gravidade do déficit (NIHSS 17); e 3) a presença de oclusão de grande vaso (segmento M1 da artéria cerebral média) confirmada pela angiotomografia. Além disso, o paciente não apresenta contraindicações imediatas, como hemorragia na TC ou níveis pressóricos acima de 185/110 mmHg.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA: A trombectomia mecânica é o tratamento padrão para oclusões de grandes vasos em território anterior e deve ser realizada mesmo que o paciente esteja dentro das primeiras 3 horas. A realização da trombólise química não exclui a necessidade da trombectomia quando há oclusão de vaso calibroso, pois a taxa de recanalização apenas com alteplase em grandes vasos é baixa.\n\nb) INCORRETA: Segundo as diretrizes atuais, em pacientes elegíveis tanto para trombólise quanto para trombectomia (dentro da janela de 4,5 horas), deve-se realizar a terapia combinada, também chamada de \"bridging therapy\". Não se deve omitir a trombólise intravenosa em favor da trombectomia isolada, a menos que haja contraindicação formal ao trombolítico.\n\nc) CORRETA: Esta é a conduta padrão-ouro. O paciente é candidato à trombólise intravenosa com alteplase (rt-PA) por estar na janela de 4,5 horas e, simultaneamente, deve ser encaminhado para a trombectomia mecânica devido à oclusão de grande vaso (M1). O início do trombolítico não deve atrasar o encaminhamento para a sala de hemodinâmica.\n\nd) INCORRETA: Um NIHSS de 17 indica um AVC grave, o que reforça a indicação de tratamento de reperfusão imediato, e não o contrário. Apenas medidas de suporte (controle pressórico e UTI) sem tentativa de recanalização resultariam em um prognóstico funcional muito ruim para este paciente previamente independente.\n\ne) INCORRETA: Exames avançados de imagem, como ressonância com difusão ou tomografia de perfusão, são indicados principalmente para pacientes com tempo de início dos sintomas desconhecido (Wake-up stroke) ou na janela estendida (acima de 6 horas). No caso em questão, o tempo é conhecido e muito curto (1h20), sendo a tomografia simples e a angiotomografia suficientes para definir a conduta imediata. Retardar o tratamento para realizar mais exames causaria perda desnecessária de neurônios.\n\nGABARITO: Alternativa (c).",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  },
+  {
+    "id": "AJUDA_caeb8082-7f80-4c34-ae5a-48b869ef4e37",
+    "originalId": "caeb8082-7f80-4c34-ae5a-48b869ef4e37",
+    "statement": "Um homem de 55 anos sofreu queda de uma altura de aproximadamente dois metros enquanto trabalhava em uma obra. Ele caiu diretamente sobre o braço direito estendido. No pronto-socorro, apresentava dor intensa, incapacidade de mover o braço direito e deformidade visível no meio do braço. As radiografias mostraram uma fratura diafisária do úmero com desvio. O exame neurovascular estava normal.\nO tratamento mais apropriado para esse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "fixação externa;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "redução aberta e fixação interna;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "imobilização com uma tipoia e observação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "redução fechada e imobilização com gesso;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "administração de analgésicos e alta para casa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta uma fratura diafisária do úmero com desvio, decorrente de uma queda de altura (trauma de energia moderada). Trata-se de um homem de 55 anos, provavelmente ativo (trabalhador de obra), o que exige um tratamento que ofereça estabilidade, alinhamento anatômico e permita o retorno funcional precoce.\n\nAlternativa (a) Incorreta. A fixação externa é indicada em situações específicas, como fraturas expostas com grave comprometimento de partes moles (Gustilo III), fraturas infectadas ou em pacientes politraumatizados graves, nos quais é necessária a técnica de controle de danos (damage control) para estabilização rápida. Não é a primeira escolha para uma fratura fechada em um paciente hemodinamicamente estável.\n\nAlternativa (b) Correta. A redução aberta e fixação interna (RAFI), geralmente realizada com placa e parafusos, é o tratamento de escolha para fraturas diafisárias do úmero que apresentam desvio significativo em adultos. As principais vantagens são a obtenção de estabilidade absoluta, a restauração da anatomia e, crucialmente, a possibilidade de mobilização precoce das articulações do ombro e cotovelo, prevenindo a rigidez e favorecendo a recuperação funcional do trabalhador.\n\nAlternativa (c) Incorreta. A imobilização apenas com tipoia e observação não promove a estabilidade necessária para a consolidação de uma fratura diafisária com desvio. Essa conduta resultaria em dor persistente, grande risco de pseudoartrose (não consolidação do osso) e deformidade funcional permanente.\n\nAlternativa (d) Incorreta. A redução fechada seguida de imobilização (como o gesso pendente ou a braçadeira de Sarmiento) é uma opção descrita na literatura para o tratamento conservador do úmero. No entanto, em fraturas com desvio em pacientes ativos, o tratamento cirúrgico (RAFI) tem sido preferido em provas de residência e na prática ortopédica moderna, devido às taxas superiores de consolidação anatômica e ao menor tempo de afastamento das atividades quando comparado ao longo período de imobilização gessada, que muitas vezes é desconfortável e difícil de manter.\n\nAlternativa (e) Incorreta. A administração de analgésicos e alta sem a devida estabilização da fratura é uma conduta médica negligente. Fraturas de ossos longos exigem obrigatoriamente algum tipo de redução e imobilização (seja gesso ou cirurgia) para permitir a cura e prevenir lesões secundárias neurovasculares ou dor crônica.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Fraturas e Luxações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  },
+  {
+    "id": "AJUDA_caf38821-5b0f-4c2e-8f46-584b830dcf2d",
+    "originalId": "caf38821-5b0f-4c2e-8f46-584b830dcf2d",
+    "statement": "96- No contexto do Método Clínico Centrado na Pessoa (MCCP), o terceiro componente, \"elaborar um projeto comum de manejo\", refere-se fundamentalmente a qual prática:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coletar informações detalhadas sobre os sintomas, a cronologia da doença e os resultados de exames para definir um diagnóstico preciso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Negociar um plano terapêutico com o paciente, alinhando as prioridades do profissional de saúde com os valores, expectativas e o contexto de vida da pessoa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Investigar o contexto de vida do paciente, incluindo sua rede de apoio familiar, suas condições de moradia e seu histórico de vida pessoal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar ações de promoção da saúde e prevenção de doenças na comunidade, focando em grupos de risco específicos, como idosos com diabetes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Método Clínico Centrado na Pessoa (MCCP) é uma ferramenta fundamental na Medicina de Família e Comunidade e na prática médica humanizada, estruturado em quatro componentes principais. A questão foca especificamente no terceiro componente.\n\nAlternativa (a) Incorreta. Esta alternativa descreve a abordagem biomédica tradicional, focada estritamente na \"doença\" (disease). No MCCP, a coleta de sintomas e exames para definir um diagnóstico faz parte do primeiro componente (Explorar a saúde, a doença e a experiência da pessoa com a doença), mas não define o projeto comum de manejo.\n\nAlternativa (b) Correta. O terceiro componente, \"Elaborar um projeto comum de manejo\" (também chamado de \"Pactuação\" ou \"Finding Common Ground\"), é o momento em que médico e paciente negociam as prioridades. Para que o plano terapêutico seja eficaz e tenha adesão, ele deve integrar a perspectiva clínica do médico com as expectativas, sentimentos e medos do paciente. Envolve definir o problema, estabelecer metas de tratamento e definir os papéis de cada um nesse processo.\n\nAlternativa (c) Incorreta. A investigação do contexto de vida, rede de apoio, condições de moradia e história pessoal refere-se ao segundo componente do MCCP: \"Entender a pessoa como um todo\". É a fase de contextualização do indivíduo além da sua condição biológica.\n\nAlternativa (d) Incorreta. Realizar ações de promoção e prevenção na comunidade é função da Atenção Primária à Saúde e da Saúde Coletiva, mas não constitui um componente específico do método clínico aplicado durante a consulta individual, conforme o modelo de Stewart.\n\nEm resumo, o terceiro componente é a etapa de convergência em que o saber técnico do profissional e a experiência de vida do paciente se unem para criar um plano de cuidado compartilhado.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  },
+  {
+    "id": "AJUDA_caf486bb-2341-4a7b-ab56-684dab716c9d",
+    "originalId": "caf486bb-2341-4a7b-ab56-684dab716c9d",
+    "statement": "No contexto dos níveis de letramento em saúde, sabe-se que o letramento crítico",
+    "options": [
+      {
+        "id": "A",
+        "text": "corresponde à habilidade de compreender informações básicas, como interpretar um rótulo de medicamento ou seguir orientações simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "é limitado à decodificação de textos, não envolvendo habilidades sociais ou capacidade de aplicar informações em situações práticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "envolve analisar informações de forma reflexiva, avaliar sua confiabilidade e participar ativamente de decisões em saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "é determinado pelo grau de escolaridade, sendo suficiente para prever a capacidade de autocuidado do indivíduo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, é necessário utilizar a classificação de Don Nutbeam, referência central no tema, que divide o letramento em saúde em três níveis: funcional, interativo (ou comunicativo) e crítico.\n\nAlternativa a: Incorreta. Esta alternativa descreve o letramento funcional (nível 1). Ele envolve apenas as habilidades básicas de leitura e escrita necessárias para que o indivíduo consiga operar minimamente no sistema de saúde, como ler rótulos, bulas ou entender instruções simples de dosagem.\n\nAlternativa b: Incorreta. O letramento crítico é o nível mais avançado e pressupõe justamente o desenvolvimento de habilidades sociais e a capacidade de aplicar informações em situações práticas e complexas. A mera decodificação de textos é característica dos níveis mais básicos (funcional).\n\nAlternativa c: Correta. O letramento crítico (nível 3) envolve habilidades cognitivas e sociais mais profundas. Ele permite que o indivíduo analise criticamente as informações recebidas, avalie sua veracidade e relevância, e utilize esse conhecimento para exercer maior controle sobre as situações de vida e sobre a própria saúde. É o nível que promove a autonomia e o empoderamento para a tomada de decisões compartilhadas.\n\nAlternativa d: Incorreta. Embora exista uma correlação, o letramento em saúde não é determinado apenas pelo grau de escolaridade. Indivíduos com muitos anos de estudo podem apresentar baixo letramento em saúde por não compreenderem termos técnicos ou por não saberem navegar no sistema de saúde. O letramento é um conceito dinâmico que depende da interação entre as habilidades do indivíduo e as demandas do sistema.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:16.587Z"
+  }
+]

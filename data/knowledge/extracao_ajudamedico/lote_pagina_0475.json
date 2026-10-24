@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_857e8da7-11b4-4b28-a8b7-396685257180",
+    "originalId": "857e8da7-11b4-4b28-a8b7-396685257180",
+    "statement": "Gestante na 20ª semana, foi diagnosticada com oligodrâmnio acentuado na ultrassonografia obstétrica. Nesse caso, qual a causa provável para esse diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução da diurese fetal por rins policísticos bilaterais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Redução da deglutição de líquido amniótico por atresia de esôfago fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Absorção do líquido amniótico pelas alças intestinais na gastrosquise fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento da deglutição de líquido amniótico por disrafia de coluna.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender esta questão, é fundamental revisar a fisiologia do líquido amniótico (LA). A partir da segunda metade da gestação, especificamente por volta da 20ª semana, a principal fonte de produção do líquido amniótico é a urina fetal. Paralelamente, a principal via de eliminação/reabsorção desse líquido é a deglutição fetal. Portanto, o volume de LA depende diretamente do equilíbrio entre a diurese e a deglutição.\n\nAlternativa (a): Correta. Como a urina é o principal componente do líquido amniótico a partir do segundo trimestre, qualquer malformação que comprometa a função renal ou a excreção urinária levará ao oligodrâmnio (baixo volume de líquido). No caso de rins policísticos bilaterais, o parênquima renal está substituído por cistos e não é funcional, resultando em baixa ou nenhuma produção de urina (anúria ou oligúria fetal), o que explica o diagnóstico de oligodrâmnio acentuado.\n\nAlternativa (b): Incorreta. A atresia de esôfago impede que o feto degluta o líquido amniótico. Se a produção de urina está normal, mas o feto não consegue \"beber\" o líquido para que ele seja reabsorvido pelo trato gastrointestinal, o resultado será o acúmulo excessivo de líquido, ou seja, um quadro de polidrâmnio.\n\nAlternativa (c): Incorreta. Na gastrosquise, ocorre uma herniação das alças intestinais através de um defeito na parede abdominal. Embora o contato das alças com o líquido possa causar uma reação inflamatória no intestino, não há um mecanismo de absorção maciça de líquido pelas alças expostas que justifique um oligodrâmnio acentuado. Geralmente, o volume de líquido amniótico na gastrosquise é normal.\n\nAlternativa (d): Incorreta. Disrafias de coluna, como a mielomeningocele, não estão associadas ao aumento da deglutição de líquido amniótico. Pelo contrário, defeitos do fechamento do tubo neural (especialmente os cefálicos, como a anencefalia) costumam cursar com polidrâmnio, seja pela deficiência no reflexo de deglutição, seja pela transudação de líquidos pelas meninges expostas. Não existe correlação clínica entre disrafia e aumento da deglutição que leve ao oligodrâmnio.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Alteração do Volume do Líquido Amniótico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:31.003Z"
+  },
+  {
+    "id": "AJUDA_857f3fb9-bbb4-45ec-8f68-db0d770d4952",
+    "originalId": "857f3fb9-bbb4-45ec-8f68-db0d770d4952",
+    "statement": "Juliana, 36 anos de idade, G2P1, com 32 semanas de gestação, relata boa percepção dos movimentos fetais e ausência de intercorrências. Na consulta, o médico de família realiza avaliação clínica e orientações sobre sinais de alerta, registrando: PA = 110/70 mmHg, BCF = 142 bpm e AU = 32 cm. Conforme o protocolo de pré-natal de baixo risco do Ministério da Saúde, assinale a alternativa que apresenta a avaliação de rotina recomendada para o acompanhamento da vitalidade e do crescimento fetal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "cardiotocografia basal em todas as consultas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "perfil biofísico fetal a cada 15 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "verificação de movimentos fetais, BCF e curva de crescimento uterino",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ultrassonografia com Doppler umbilical mensal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "amnioscopia de rotina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nA questão aborda o acompanhamento pré-natal de baixo risco em uma gestante no terceiro trimestre (32 semanas), com parâmetros clínicos e obstétricos normais. O objetivo é identificar quais métodos de vigilância fetal são preconizados pelo Ministério da Saúde para esse perfil de paciente.\n\nAlternativa a: Incorreta. A cardiotocografia basal é um exame complementar utilizado para avaliar a vitalidade fetal em situações específicas, como gestações de alto risco ou quando há suspeita de comprometimento agudo (ex.: redução de movimentos fetais). Não há indicação para sua realização de rotina em todas as consultas de um pré-natal de baixo risco.\n\nAlternativa b: Incorreta. O perfil biofísico fetal (PBF) é um exame que combina a cardiotocografia com a avaliação ultrassonográfica de parâmetros como movimentos respiratórios, movimentos fetais, tônus e volume de líquido amniótico. É uma ferramenta de vigilância para gestações de risco e não deve ser solicitada de forma rotineira ou quinzenal em pacientes saudáveis.\n\nAlternativa c: Correta. Conforme as diretrizes do Ministério da Saúde para o pré-natal de baixo risco, o acompanhamento do crescimento fetal é realizado por meio da medida da Altura Uterina (AU) e sua marcação na curva de crescimento (Gráfico AU x Idade Gestacional). A vitalidade fetal é monitorada clinicamente por meio da ausculta dos Batimentos Cardiofetais (BCF) e da percepção materna dos movimentos fetais, orientando a gestante a observar a movimentação diária do feto.\n\nAlternativa d: Incorreta. A ultrassonografia com Doppler (dopplerfluxometria) é utilizada para avaliar a função placentária e o estado hemodinâmico fetal em patologias como pré-eclâmpsia ou restrição de crescimento intrauterino. Não é um exame de rotina mensal para gestantes sem comorbidades.\n\nAlternativa e: Incorreta. A amnioscopia é um procedimento invasivo que visa visualizar a cor do líquido amniótico através do colo uterino para identificar a presença de mecônio. Apresenta riscos como rotura prematura de membranas e infecção, além de ter sido amplamente substituída por métodos não invasivos. Jamais deve ser utilizada como rotina no acompanhamento pré-natal.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:31.003Z"
+  },
+  {
+    "id": "AJUDA_8583d171-6293-49a9-9482-6c86042d1f71",
+    "originalId": "8583d171-6293-49a9-9482-6c86042d1f71",
+    "statement": "Primigesta, no decorrer da sétima semana de gestação, vem a consulta com queixa de surgimento de lesões eritemato-papulosas de um a três milímetros de diâmetro, que rapidamente evoluiram para vesículas sobre base eritematosa, muito dolorosas e de localização variável na região genital. Nega quadro semelhante anterior. Diante do exposto a conduta adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "após tratamento antiviral imediato, realizar terapia supressiva, a partir da 36ª semana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "prescrever azitromicina e manter profilaxia até parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prescrever doxiciclina e tratar as parcerias sexuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prescrever aciclovir 200mg, 2 comprimidos, 8/8h por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o tratamento deve ser postergado para o segundo ou terceiro trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "EXPLICACAO MEDICA DETALHADA\n\nO caso clínico apresenta uma gestante de 7 semanas com quadro clássico de primoinfecção por Herpes Simples Vírus (HSV). Os sinais patognomônicos relatados são as vesículas agrupadas sobre base eritematosa e a dor intensa. O fato de ser uma primoinfecção (primeiro episódio) aumenta o risco de viremia sistêmica e complicações, exigindo conduta imediata e planejamento para o final da gestação.\n\nAnalise das alternativas:\n\nAlternativa A (CORRETA): O tratamento de escolha para o primeiro episódio de herpes na gestação é o antiviral (Aciclovir), que deve ser iniciado imediatamente para reduzir a sintomatologia e o tempo de excreção viral. Além disso, as diretrizes da FEBRASGO e do Ministério da Saúde recomendam a terapia supressiva com Aciclovir 400mg (3x ao dia) a partir da 36ª semana de gestação em todas as mulheres que apresentaram episódios de herpes durante a gravidez. O objetivo é evitar recorrências no momento do parto, o que reduz drasticamente a necessidade de cesariana e o risco de herpes neonatal.\n\nAlternativa B (INCORRETA): A azitromicina é um antibiótico indicado para infecções bacterianas como clamídia e cancro mole. Ela não possui nenhuma ação contra o vírus Herpes Simples.\n\nAlternativa C (INCORRETA): A doxiciclina é contraindicada durante a gestação, pois atravessa a barreira placentária e pode causar alterações na formação óssea e coloração permanente dos dentes do feto. Além disso, é um antibiótico sem eficácia contra vírus.\n\nAlternativa D (INCORRETA): Embora mencione o aciclovir, a posologia e a estratégia estão inadequadas. Para o primeiro episódio ocorrido na gestação, a dose recomendada é de 400mg, 3 vezes ao dia, por 7 a 10 dias. A alternativa falha ao sugerir uma dose submáxima e, principalmente, por ignorar a conduta fundamental da profilaxia supressiva no termo (36 semanas).\n\nAlternativa E (INCORRETA): O tratamento não deve ser postergado. A primoinfecção no primeiro trimestre está associada a maiores taxas de abortamento espontâneo e morbidade materna. O aciclovir é considerado seguro em qualquer fase da gestação quando o benefício supera o risco.\n\nResumo para memorizacao:\n1. Lesao herpetica ativa na gestacao = Aciclovir imediato.\n2. Historia de herpes na gestacao atual = Profilaxia com antiviral a partir de 36 semanas.\n3. Momento do parto: Se houver lesao ativa ou sintomas prodrômicos (ardor/formigamento) = Cesariana. Sem lesao ativa = Parto Vaginal.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Úlceras Genitais",
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:31.003Z"
+  },
+  {
+    "id": "AJUDA_858ab176-6f9c-4314-b378-a7138381ded6",
+    "originalId": "858ab176-6f9c-4314-b378-a7138381ded6",
+    "statement": "Lactente de sete meses da entrada no pronto socorro com relato de febre há 36 horas e dois episódios de convulsão focal na última noite. Está em tratamento de otite média aguda. A mãe informa que as crises duraram cerca de cinco minutos. Realizada punção lombar que mostrou 4 leucócitos/mm³ (100% linfócitos), glicose: 66mg/dL (glicemia capilar no momento da coleta: 92mg/dL) e proteínas 24mg/dL. Em relação ao caso, assinale o diagnóstico MAIS PROVÁVEL:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Convulsão febril complexa, pois as crises se repetiram em 24 horas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Convulsão febril simples, pois a duração das crises foi menor que 15 minutos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Epilepsia por apresentar pelo menos duas crises",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Meningite de etiologia bacteriana cujo foco foi a otite média",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, primeiro precisamos definir os critérios de crise convulsiva febril. Ela ocorre em crianças entre 6 meses e 5 anos de idade, associada a febre, na ausência de infecção do sistema nervoso central ou desequilíbrios metabólicos.\n\nA crise febril é classificada em dois tipos principais:\n\n1. Simples: É uma crise generalizada, com duração inferior a 15 minutos e que não se repete em um período de 24 horas.\n\n2. Complexa: Apresenta pelo menos uma das seguintes características: início focal, duração superior a 15 minutos ou recorrência (mais de um episódio) no mesmo período febril ou dentro de 24 horas.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): A questão descreve um lactente de sete meses com febre e dois episódios de convulsão. O fato de a crise ter sido focal e de ter ocorrido mais de um episódio em menos de 24 horas classifica o quadro, obrigatoriamente, como crise febril complexa. Portanto, este é o diagnóstico mais provável.\n\nAlternativa B (Incorreta): Embora a duração tenha sido curta (5 minutos), o caráter focal e a repetição das crises impedem a classificação como crise febril simples. Na crise simples, a manifestação deve ser obrigatoriamente generalizada e única.\n\nAlternativa C (Incorreta): A epilepsia é definida por crises convulsivas recorrentes e não provocadas. No caso relatado, existe um fator desencadeante claro, que é a febre decorrente da otite média aguda. Crises febris isoladas não definem um diagnóstico de epilepsia.\n\nAlternativa D (Incorreta): O exame do líquido cefalorraquidiano (líquor) afasta essa hipótese. Os valores apresentados estão dentro da normalidade para a faixa etária: a celularidade é baixa (4 leucócitos/mm³), o diferencial é de linfócitos (sem pleocitose neutrofílica), a glicose está normal (cerca de 2/3 da glicemia capilar) e as proteínas estão em níveis fisiológicos. Em uma meningite bacteriana, esperaríamos aumento de células (predomínio de neutrófilos), queda da glicose e aumento da proteína.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:31.003Z"
+  },
+  {
+    "id": "AJUDA_8595572c-dcc2-49c1-80a4-ae177a324473",
+    "originalId": "8595572c-dcc2-49c1-80a4-ae177a324473",
+    "statement": "Em relação às alergias alimentares, assinale a opção INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alergias alimentares são definidas pela presença de sintomas clínicos relacionados a uma resposta imune anormal do hospedeiro, depois da ingestão de proteínas alimentares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "São reações adversas derivadas de uma resposta imunológica específica que ocorre de maneira reprodutível, quando há exposição a um determinado alimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A alergia às proteínas do leite de vaca (APLV) é a mais comum apresentação das alergias alimentares que ocorre na infância precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "De acordo com os mecanismos correspondentes na fisiopatologia, as alergias alimentares podem ser IgE e não-IgE mediadas na maioria dos pacientes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "As manifestações de pele, tais como, prurido, eritema, rash cutâneo não específico, dermatite atópica moderada persistente são características da APLV não-IgE mediadas graves, as quais surgem usualmente, de 2 a 72 horas após a ingestão do leite de vaca, leite materno, fórmula ou mista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ALTERNATIVA A: Está correta. A questão apresenta a definição clássica de alergia alimentar: a presença de sintomas clínicos causados por uma resposta imunológica anômala após a exposição a proteínas alimentares. Sem a resposta imune, estaríamos diante de uma intolerância alimentar ou reação tóxica.\n\nALTERNATIVA B: Está correta. O caráter imunológico e a reprodutibilidade são os pilares que diferenciam a alergia de outras reações adversas. Para ser considerada alergia, a reação deve ocorrer de forma consistente sempre que o indivíduo for exposto ao alimento gatilho.\n\nALTERNATIVA C: Está correta. Epidemiologicamente, a Alergia à Proteína do Leite de Vaca (APLV) é a alergia alimentar mais frequente na infância precoce (lactentes e crianças pequenas). Isso ocorre porque o leite de vaca é, geralmente, a primeira proteína estranha introduzida em grande quantidade na dieta infantil.\n\nALTERNATIVA D: Esta é a alternativa incorreta e, portanto, o gabarito da questão. O erro está na simplificação da classificação fisiopatológica. De acordo com os consensos de alergologia, as reações são classificadas em três categorias e não apenas duas: 1) Mediadas por IgE (reações imediatas); 2) Não mediadas por IgE (reações tardias ou celulares); e 3) Mecanismos mistos (onde há participação tanto de anticorpos IgE quanto de células T). A alternativa omite a categoria mista, que é essencial para descrever condições como a dermatite atópica e a esofagite eosinofílica. Além disso, a expressão \"na maioria dos pacientes\" sugere uma coexistência de mecanismos que não reflete a classificação clínica padrão.\n\nALTERNATIVA E: Está correta. Embora prurido e eritema sejam comuns em reações imediatas (IgE), a alternativa especifica o contexto da dermatite atópica e o intervalo de tempo de 2 a 72 horas. Esse tempo de latência é característico das reações não-IgE mediadas ou mistas. Nas reações mediadas por IgE pura, os sintomas costumam surgir muito rapidamente, geralmente em até 2 horas após a ingestão.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Alergia Alimentar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:31.003Z"
+  },
+  {
+    "id": "AJUDA_859cb35e-ed0d-4550-bc98-d2975514914e",
+    "originalId": "859cb35e-ed0d-4550-bc98-d2975514914e",
+    "statement": "Paciente, sexo masculino, 57 anos de idade, possui antecedente de diabetes melito e gota. Comparece no pronto socorro com queixa de tosse produtiva com expectoração amarelada e febre aferida de 38,6 °C há 5 dias. Ao exame físico, apresentou PA de 132x84 mmHg, FC de 98 bpm, FR de 21 ipm, saturação de oxigênio 94% em ar ambiente; bom estado geral, corado, hidratado, eupneico; aparelho cardíaco sem alterações; murmúrios vesiculares presentes com estertores crepitantes na base esquerda; abdome e extremidades sem alterações relevantes. \n\nAssinale a alternativa que apresenta a radiografia compatível com o exame físico descrito e a principal hipótese diagnóstica.",
+    "options": [],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito e os achados do exame físico apontam para o diagnóstico de Pneumonia Adquirida na Comunidade (PAC). O paciente apresenta a tríade clássica de febre, tosse produtiva e sinais focais na ausculta pulmonar (estertores crepitantes na base esquerda).\n\nAnálise do Diagnóstico:\nA hipótese de PAC é fundamentada na história aguda de 5 dias e nos sinais de infecção das vias aéreas inferiores. O paciente possui comorbidades (diabetes e gota), o que o coloca em um grupo de risco, mas apresenta estabilidade hemodinâmica (PA normal e FR pouco elevada), sugerindo que o tratamento inicial pode ser direcionado para o perfil clínico e radiológico.\n\nAnálise Radiológica:\nNas radiografias de tórax em perfil, utilizamos o sinal da coluna para identificar consolidações nos lobos inferiores. Em um exame normal, a coluna vertebral deve tornar-se mais radiolucente (mais escura) à medida que o olhar desce em direção ao diafragma, pois há menos tecido sobreposto. Quando ocorre uma pneumonia no lobo inferior, essa região torna-se mais radiopaca (mais branca), fazendo com que a parte inferior da coluna pareça mais densa que a superior.\n\nAlternativa A (Correta): Radiografia A e Pneumonia adquirida na comunidade.\nA imagem A demonstra claramente o sinal da coluna positivo. Observa-se uma opacidade na região posterior e inferior do tórax que sobrepõe os corpos vertebrais inferiores, tornando-os mais brancos do que os superiores. Esse achado é compatível com uma consolidação em lobo inferior, o que corrobora o exame físico de estertores na base pulmonar. O diagnóstico de PAC é o mais provável para o quadro de febre e tosse produtiva.\n\nAlternativa B (Incorreta): Radiografia B e Pneumonia adquirida na comunidade.\nEmbora o diagnóstico esteja correto, a Radiografia B não apresenta a consolidação típica em base posterior demonstrada na imagem A. A imagem B mostra uma coluna que mantém sua radiolucência esperada ou não evidencia a condensação de forma tão nítida quanto a alternativa correta.\n\nDemais Alternativas:\nAs outras imagens (C e D) representam padrões radiológicos diferentes. A imagem D, por exemplo, aproxima-se de um perfil com pulmões bem aerados, onde o espaço retrocardíaco está livre e a coluna escurece normalmente em direção à base, não sendo compatível com o foco infeccioso descrito no exame físico do paciente.\n\nConclusão:\nA correlação entre os estertores na base esquerda e a imagem que mostra o aumento de densidade sobre a coluna vertebral inferior (Sinal da Coluna na Radiografia A) confirma a letra (a) como a resposta correta.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:31.003Z"
+  },
+  {
+    "id": "AJUDA_859fafa2-55d0-42fa-8af0-9ddf95828fc2",
+    "originalId": "859fafa2-55d0-42fa-8af0-9ddf95828fc2",
+    "statement": "Homem, 44 anos de idade, vem ao pronto-socorro com história de 4 dias de dor abdominal, com piora abrupta há 1 dia. Relata previamente presença de raias de sangue nas fezes, há 2 meses, e perda ponderal de 6 kg, nos últimos 3 meses. Ao exame, apresentava-se em regular estado geral, descorado, FC: 115 bpm, PA: 105×70 mmHg. Abdome globoso e pouco distendido, ruídos hidroaéreos reduzidos difusamente e dor à palpação superficial e profunda. Tomografia de abdome ilustrada a seguir.\n\nAssinale a alternativa que apresenta, corretamente, a próxima conduta para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Arteriografia de vasos mesentéricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colonoscopia com biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Endoscopia e colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Tratamento clínico com antibioticoterapia empírica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um paciente masculino de 44 anos com sinais de alarme para neoplasia colorretal (hematoquezia e perda ponderal de 6 kg em 3 meses). Ele evolui com dor abdominal aguda, taquicardia (115 bpm) e sinais de irritação peritoneal ao exame físico.\n\nA análise da Tomografia de Abdome é a chave para a questão. Nas imagens fornecidas, observa-se nitidamente a presença de ar livre na cavidade abdominal, acumulado anteriormente ao fígado e ao estômago (pneumoperitônio). Na janela de pulmão/parênquima (segunda imagem), o gás fica ainda mais evidente em preto.\n\nDiagnóstico: Abdome Agudo Perfurativo, provavelmente secundário a uma neoplasia de cólon que perfurou.\n\nAnálise das alternativas:\n\na) Incorreta. A arteriografia é indicada em casos de suspeita de isquemia mesentérica aguda ou para diagnóstico/tratamento de hemorragia digestiva maciça. Não há indicação em vigência de pneumoperitônio e abdome agudo perfurativo.\n\nb) Incorreta. Embora o paciente precise de uma colonoscopia para investigar a perda ponderal e o sangramento prévios, o quadro atual é de uma emergência cirúrgica por perfuração de víscera oca. Realizar uma colonoscopia (que envolve insuflação de ar) em um paciente com perfuração livre é contraindicado, pois aumentaria o pneumoperitônio e a contaminação peritoneal.\n\nc) Incorreta. Pelo mesmo motivo da alternativa anterior, exames endoscópicos estão contraindicados na fase aguda de uma perfuração intestinal.\n\nd) Correta. A presença de pneumoperitônio associada a sinais de irritação peritoneal e instabilidade hemodinâmica (taquicardia e tendência à hipotensão) configura uma emergência cirúrgica. A laparotomia exploradora é a conduta imediata para identificar o local da perfuração, realizar a limpeza da cavidade e o tratamento definitivo (geralmente ressecção do segmento acometido).\n\ne) Incorreta. O tratamento puramente clínico com antibióticos não resolve a causa mecânica da perfuração. Embora a antibioticoterapia deva ser iniciada como suporte, ela não substitui a necessidade de intervenção cirúrgica imediata para controle do foco de contaminação.\n\nGabarito: Letra (d).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/2ab115e46a340823f548d8e506ad33fb5138ba8194b6066eed12324ae695a32c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_859fafa2-55d0-42fa-8af0-9ddf95828fc2_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/4ed340781db1d8823f206b7d30cc7fcbd0fc0e480bac872da1108c07756710ef.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_859fafa2-55d0-42fa-8af0-9ddf95828fc2_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:32.093Z"
+  },
+  {
+    "id": "AJUDA_85a22781-4c18-43e8-b7da-a4830421bcf4",
+    "originalId": "85a22781-4c18-43e8-b7da-a4830421bcf4",
+    "statement": "A cardiopatia congênita cianótica em que a aorta se origina do ventrículo direito e a artéria pulmonar do ventrículo esquerdo, criando circulações paralelas incompatíveis com a vida sem um shunt, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Atresia Tricúspide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tetralogia de Fallot.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transposição das Grandes Artérias (TGA).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Truncus Arteriosus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve a fisiopatologia clássica da Transposição das Grandes Artérias (TGA). Nesta cardiopatia congênita, ocorre uma discordância ventrículo-arterial: a aorta nasce do ventrículo direito e a artéria pulmonar nasce do ventrículo esquerdo.\n\nIsso resulta em duas circulações que funcionam em paralelo, em vez de em série. O sangue pobre em oxigênio retorna ao corpo sem passar pelos pulmões, enquanto o sangue rico em oxigênio circula apenas entre o coração e os pulmões. Por essa razão, a vida só é possível se houver um local de mistura entre essas circulações (shunts), como uma comunicação interatrial (CIA), comunicação interventricular (CIV) ou a persistência do canal arterial (PCA).\n\nAnálise das alternativas:\n\na) Atresia Tricúspide: Nesta condição, há ausência da valva tricúspide, o que impede o fluxo do átrio direito para o ventrículo direito. O sangue precisa passar do átrio direito para o átrio esquerdo através de uma comunicação interatrial para sobreviver. Embora seja uma cardiopatia cianótica, a anatomia dos grandes vasos não é a descrita no enunciado.\n\nb) Tetralogia de Fallot: É caracterizada por quatro componentes: estenose pulmonar (obstrução de via de saída do VD), comunicação interventricular (CIV), aorta \"cavalgando\" o septo interventricular e hipertrofia do ventrículo direito. Embora a aorta esteja deslocada para a direita, ela não se origina exclusivamente do ventrículo direito com a artéria pulmonar saindo do ventrículo esquerdo.\n\nc) Transposição das Grandes Artérias (TGA): Alternativa correta. É a principal causa de cianose neonatal progressiva nas primeiras horas de vida e se encaixa perfeitamente na definição de vasos trocados, gerando circulações paralelas e necessidade de shunts para a oxigenação sistêmica.\n\nd) Truncus Arteriosus: Nesta patologia, um único grande tronco arterial nasce da base do coração e fornece sangue para as circulações sistêmica, pulmonar e coronariana simultaneamente. Não há a presença de dois vasos independentes saindo de ventrículos invertidos.\n\nGabarito: Letra (c).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:32.093Z"
+  },
+  {
+    "id": "AJUDA_85a2bf25-ae2e-4905-b977-98cec8f8b9d2",
+    "originalId": "85a2bf25-ae2e-4905-b977-98cec8f8b9d2",
+    "statement": "Na Atenção Primária à Saúde (APS), um dos principais atributos que o médico deve praticar para garantir o cuidado adequado de seus pacientes é a Longitudinalidade. Segundo a PNAB 2017, a melhor definição, entre as seguintes, para longitudinalidade é",
+    "options": [
+      {
+        "id": "A",
+        "text": "a capacidade da APS de resolver a grande maioria dos problemas de saúde da população, utilizando e articulando diferentes tecnologias de cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a continuidade da relação de cuidado, com construção de responsabilização entre profissionais e usuários ao longo do tempo e de modo permanente e consistente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a definição da população que está presente no território da UBS, permitindo o planejamento e a programação descentralizada das ações de saúde para um grupo específico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o desenvolvimento de ações de cuidado de forma singularizada, que auxilie as pessoas a desenvolverem a confiança necessária para gerir e tomar decisões sobre sua própria saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o processo de elaboração, acompanhamento e organização do fluxo dos usuários entre os pontos de atenção das Redes de Atenção à Saúde (RAS).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O tema central desta questão são os atributos da Atenção Primária à Saúde (APS), especificamente a Longitudinalidade, conforme definida na Política Nacional de Atenção Básica (PNAB) de 2017.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Esta descrição refere-se ao atributo da Resolutividade. A resolutividade é a capacidade da APS de identificar os riscos e as necessidades de saúde da população, resolvendo a grande maioria dos problemas (cerca de 80% a 90%) por meio de seus próprios recursos e tecnologias, sem necessariamente recorrer a especialistas focalizados.\n\nAlternativa (b) Correta. A Longitudinalidade pressupõe a existência de uma fonte regular de atenção e seu uso ao longo do tempo. Segundo a PNAB 2017, ela envolve o acompanhamento do paciente ao longo da vida, criando um vínculo de confiança e responsabilização mútua entre a equipe de saúde e o usuário. É a continuidade do cuidado independentemente da presença ou ausência de doença.\n\nAlternativa (c) Incorreta. Esta definição refere-se à Adstrição de Clientela e à Territorialização. Estes processos visam delimitar a área de atuação da Unidade Básica de Saúde (UBS) e identificar a população sob sua responsabilidade, permitindo o planejamento e a programação das ações de saúde de forma descentralizada.\n\nAlternativa (d) Incorreta. Esta alternativa descreve princípios relacionados à Autonomia e ao Cuidado Centrado na Pessoa (ou Clínica Ampliada). O foco aqui é o empoderamento do paciente para o autocuidado e a elaboração de projetos terapêuticos singularizados, mas não define o conceito técnico de Longitudinalidade.\n\nAlternativa (e) Incorreta. Esta descrição corresponde ao atributo da Coordenação do Cuidado e ao papel da APS como Ordenadora da Rede de Atenção à Saúde (RAS). A coordenação implica que a APS deve ser o centro de comunicação entre os diversos pontos da rede, organizando o fluxo do paciente e integrando as informações para garantir que o cuidado seja harmônico em todos os níveis de complexidade.\n\nGabarito: A alternativa correta é a letra (b).",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:32.093Z"
+  },
+  {
+    "id": "AJUDA_85a2dd13-fd27-47d9-89ae-297e272ca32d",
+    "originalId": "85a2dd13-fd27-47d9-89ae-297e272ca32d",
+    "statement": "Uma gestante de 10 semanas iniciou consulta de pré-natal com exames solicitados por outro médico e retornou para avaliação.\n\nEm relação aos achados dos exames, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente com glicemia de 95 possui rastreio positivo, devendo realizar teste oral de tolerância a glicose após as 28 semanas para rastreio de diabetes gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A hemoglobina glicada acima de 6,5% faz diagnóstico de overt diabetes, mas necessita de confirmação diagnóstica com teste oral de tolerância a glicose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A glicemia de jejum abaixo de 100 permite descartar a diabetes gestacional, não sendo necessário nenhum outro exame durante a gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico de overt diabetes ocorre quando a glicemia de jejum se apresenta com valores acima de 126 mg/dL no primeiro trimestre.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender essa questão, devemos revisar os critérios diagnósticos de diabetes na gestação, divididos entre Diabetes Mellitus Gestacional (DMG) e Diabetes Preexistente (Overt Diabetes), conforme as diretrizes do Ministério da Saúde e da FEBRASGO.\n\nAlternativa A: Incorreta. Uma glicemia de jejum entre 92 mg/dL e 125 mg/dL, realizada no primeiro trimestre, já é considerada diagnóstica para Diabetes Mellitus Gestacional (DMG). Portanto, o valor de 95 mg/dL não é apenas um rastreamento positivo que aguarda confirmação futura; ele já define a patologia, e a paciente deve iniciar o acompanhamento e o tratamento imediatamente, dispensando o teste oral de tolerância à glicose (TOTG) posterior.\n\nAlternativa B: Incorreta. O achado de hemoglobina glicada (HbA1c) maior ou igual a 6,5% em qualquer fase da gestação preenche os critérios para o diagnóstico de Overt Diabetes (diabetes preexistente à gestação). Uma vez que esse critério laboratorial de DM fora da gestação é atingido, o diagnóstico está firmado, não havendo indicação para a realização de um teste oral de tolerância à glicose (TOTG) para confirmação.\n\nAlternativa C: Incorreta. Uma glicemia de jejum abaixo de 92 mg/dL no primeiro trimestre afasta o diagnóstico de DMG naquele momento. No entanto, isso não descarta o desenvolvimento da doença mais adiante. Todas as gestantes que apresentarem glicemia de jejum normal no início da gravidez devem, obrigatoriamente, realizar o TOTG 75g entre a 24ª e a 28ª semana de gestação para um novo rastreamento.\n\nAlternativa D: Correta. O termo Overt Diabetes refere-se ao diabetes diagnosticado durante a gestação, mas que possui critérios de diabetes fora do período gestacional. No primeiro trimestre, se a glicemia de jejum for maior ou igual a 126 mg/dL, ou se a glicemia casual for maior ou igual a 200 mg/dL (com sintomas), ou ainda se a HbA1c for maior ou igual a 6,5%, o diagnóstico de Overt Diabetes é confirmado.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:32.093Z"
+  }
+]

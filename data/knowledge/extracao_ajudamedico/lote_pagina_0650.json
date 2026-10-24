@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_b56b5752-7279-4dd3-a225-54d079f9c0a5",
+    "originalId": "b56b5752-7279-4dd3-a225-54d079f9c0a5",
+    "statement": "Adolescente de 12 anos com história de asma, utilizando beclometasona 200mcg/dia, apresenta sintomas de aperto no peito durante as aulas de educação física e falta de ar noturna duas vezes por semana. Nos últimos dois meses, usou dois frascos de salbutamol para alívio dos sintomas. Ao exame, apresenta obstrução nasal, olheiras, ausculta pulmonar normal e IMC por idade e sexo acima de +2 z-core. O melhor esquema terapêutico para asma nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "manter a dose de corticosteroide inalatório, associar antileucotrieno e utilizar salbutamol como medicamento de resgate",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar combinação de budesonida mais formoterol e utilizar a mesma combinação como medicamento de resgate",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "iniciar combinação de budesonida mais formoterol e utilizar salbutamol como medicamento de resgate",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dobrar a dose de corticosteroide inalatório e utilizar salbutamol como medicamento de resgate",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente tem 12 anos e apresenta asma não controlada conforme os critérios da GINA (Global Initiative for Asthma). Ele já utiliza corticoide inalatório (CI) em dose baixa (beclometasona 200 mcg/dia), o que o coloca na Etapa 2 de tratamento. Os sintomas noturnos (2 vezes por semana), a limitação em atividades físicas e o uso excessivo de salbutamol (2 frascos em 2 meses) indicam a necessidade de progressão para a Etapa 3. O uso excessivo de SABA (broncodilatador de curta ação) isolado é um fator de risco importante para crises graves.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA\n\nA diretriz GINA recomenda para adolescentes (12 anos ou mais) a chamada Etapa 3 Preferencial (Track 1). Esta estratégia consiste no uso de uma combinação de CI e formoterol (um broncodilatador de ação prolongada, mas com início de ação rápido) tanto para o tratamento de manutenção diária quanto para o resgate dos sintomas. Essa abordagem é conhecida como terapia MART (Maintenance and Reliever Therapy). Ela é superior porque garante que o paciente receba uma dose extra de corticoide toda vez que tiver sintomas, tratando a inflamação de forma imediata e reduzindo drasticamente o risco de exacerbações graves em comparação ao uso de salbutamol isolado.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa A: A associação de antileucotrieno é uma opção para a Etapa 3, mas não é a terapêutica de escolha inicial nem a mais eficaz para reduzir o risco de crises em comparação à estratégia MART. Manter o salbutamol como resgate em um paciente que já demonstra uso abusivo dessa medicação não resolve o problema do risco inflamatório.\n\nAlternativa C: Esta alternativa propõe a estratégia de manutenção fixa com CI mais LABA e resgate com SABA (salbutamol). Embora seja uma opção válida (Track 2 da GINA), ela não é a preferencial. A estratégia MART (alternativa B) mostrou-se mais eficaz na prevenção de internações e crises em pacientes com este perfil de descontrole.\n\nAlternativa D: Aumentar apenas a dose do corticoide inalatório (passar para dose média) é uma opção na Etapa 3, mas é considerada clinicamente inferior à associação de um LABA (formoterol) no controle dos sintomas e na melhora da função pulmonar.\n\nOBSERVAÇÕES ADICIONAIS\n\nO quadro clínico menciona obstrução nasal e olheiras (indicativo de rinite alérgica) e obesidade (IMC acima de +2 z-score). Ambas são comorbidades que dificultam o controle da asma e devem ser abordadas, mas a conduta principal para o controle dos sintomas respiratórios imediatos é o escalonamento terapêutico medicamentoso para a Etapa 3.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:03.208Z"
+  },
+  {
+    "id": "AJUDA_b58b10d0-9e99-478d-b616-e5b8ea3fc1f0",
+    "originalId": "b58b10d0-9e99-478d-b616-e5b8ea3fc1f0",
+    "statement": "A história natural da doença tem desenvolvimento em dois períodos sequenciados. Esses períodos são, respectivamente, denominados de",
+    "options": [
+      {
+        "id": "A",
+        "text": "período agudo e período crônico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "período epidemiológico e período patológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "período de prevenção e período de recuperação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "período de incubação e período de transmissão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O conceito de História Natural da Doença, estabelecido por Leavell e Clark, descreve a evolução de uma enfermidade desde as suas causas iniciais até o desfecho, sem que ocorra qualquer intervenção médica. Esse processo é didaticamente dividido em dois grandes períodos sequenciados:\n\n1. Período de Pré-patogênese (também chamado de Período Epidemiológico): É a fase em que a doença ainda não se desenvolveu no indivíduo. Nesse momento, ocorre a interação entre os fatores do agente etiológico, do hospedeiro e do meio ambiente (conhecida como tríade epidemiológica). É o cenário onde as condições de risco estão presentes.\n\n2. Período de Patogênese (também chamado de Período Patológico): Tem início quando o agente agressor penetra ou interage com o organismo, causando alterações funcionais e estruturais. Esse período engloba desde a fase subclínica (sem sintomas) até a fase clínica, podendo evoluir para a cura, cronicidade, sequelas ou óbito.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Agudo e crônico são classificações referentes ao tempo de duração e à forma de manifestação clínica de uma doença já estabelecida. Eles não descrevem os períodos que compõem a história natural completa, que obrigatoriamente inclui a fase anterior ao adoecimento.\n\nAlternativa b: Correta. A nomenclatura Período Epidemiológico refere-se à Pré-patogênese (estudo dos determinantes externos e riscos), enquanto o Período Patológico refere-se à Patogênese (estudo da doença instalada no organismo). Essa é a divisão clássica da história natural da doença.\n\nAlternativa c: Incorreta. Prevenção e recuperação são ações ou níveis de assistência à saúde aplicados ao processo saúde-doença. A prevenção é uma intervenção para evitar o dano, e a recuperação é um objetivo terapêutico, não sendo nomes dos períodos de desenvolvimento natural da doença.\n\nAlternativa d: Incorreta. O período de incubação é apenas uma subfase dentro do período patológico (especificamente em doenças infecciosas), compreendendo o tempo entre a entrada do agente e o surgimento de sintomas. A transmissão é a capacidade de passar o agente para outro hospedeiro, não sendo um período de desenvolvimento da doença no indivíduo acometido.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:03.208Z"
+  },
+  {
+    "id": "AJUDA_b594abef-0090-4d3f-8fe2-2658188e2059",
+    "originalId": "b594abef-0090-4d3f-8fe2-2658188e2059",
+    "statement": "Paciente do sexo masculino, 61 anos, previamente hígido, é levado ao pronto-socorro por febre alta e rebaixamento progressivo do nível de consciência.\nAo exame: PA 124x78 mmHg, FC 104 bpm, FR 22 irpm, temperatura 39,1 °C, Glasgow 12. Rigidez de nuca presente, sem papiledema nem déficit focal.\nPunção lombar: pressão de abertura 360 mmH₂O; 1800 células/mm³ (90% PMN); glicose 28 mg/dL (relação líquor/soro 0,35); proteína 320 mg/dL. Coloração de Gram com diplococos gram-positivos.\nPaís com baixa taxa de resistência à ceftriaxona. \nQual o tratamento direcionado e conduta adjuvante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Penicilina G endovenosa associada à dexametasona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ampicilina e gentamicina, sem corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cefepime e vancomicina, sem corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ceftriaxona e mantendo dexametasona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico e laboratorial:\nO paciente apresenta a tríade clássica de meningite bacteriana: febre, rigidez de nuca e alteração do nível de consciência. O líquor confirma o diagnóstico, evidenciando pleocitose com predomínio de polimorfonucleares (neutrófilos), hipoglicorraquia (glicose baixa) e hiperproteinorraquia (proteína alta). A coloração de Gram revelou diplococos gram-positivos, achado característico do Streptococcus pneumoniae (pneumococo), que é o principal agente de meningite em adultos.\n\nConduta Adjuvante:\nO uso de dexametasona é fundamental na meningite pneumocócica. O corticoide reduz a inflamação causada pela lise bacteriana após o início do antibiótico, diminuindo a mortalidade e o risco de sequelas neurológicas, como a perda auditiva. Deve ser administrado preferencialmente antes ou junto à primeira dose do antibiótico e mantido por 4 dias se confirmado pneumococo.\n\nTratamento Direcionado:\nComo o agente foi identificado (pneumococo) e a questão informa que o local possui baixa taxa de resistência, o tratamento pode ser direcionado com segurança para drogas de espectro mais estreito.\n\nAlternativa a: Está correta. A penicilina G endovenosa (cristalina) é o tratamento de escolha para o Streptococcus pneumoniae quando a sensibilidade é conhecida ou a taxa de resistência local é baixa. A associação com dexametasona é a conduta padrão para melhorar o desfecho clínico do paciente.\n\nAlternativa b: Está incorreta. O esquema de ampicilina com gentamicina é indicado para cobrir Listeria monocytogenes (comum em neonatos, idosos ou imunodeprimidos) e bactérias gram-negativas em neonatos. O Gram já direcionou o diagnóstico para pneumococo, e o corticoide não deve ser omitido nesta etiologia.\n\nAlternativa c: Está incorreta. Cefepime e vancomicina formam um esquema de espectro muito amplo, geralmente reservado para meningites nosocomiais (pós-procedimentos neurocirúrgicos) ou quando há alta suspeita de resistência às cefalosporinas. O enunciado reforça a baixa resistência local, e a ausência do corticoide torna a opção errada.\n\nAlternativa d: Está incorreta. Embora a ceftriaxona seja eficaz e muito utilizada no tratamento empírico inicial, o termo tratamento direcionado em um contexto de baixa resistência torna a penicilina G a resposta mais específica do ponto de vista farmacológico e acadêmico (uso do menor espectro possível para um agente sensível).\n\nGabarito: Letra a.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Meningites",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:03.208Z"
+  },
+  {
+    "id": "AJUDA_b597be87-67e9-4779-86f6-5040f211259c",
+    "originalId": "b597be87-67e9-4779-86f6-5040f211259c",
+    "statement": "Sobre a fibrose cística, qual das manifestações clínicas abaixo é considerada característica precoce?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Baqueteamento digital já nos primeiros meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumonias bacterianas graves antes de 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ileo meconial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Diabetes relacionado à fibrose cística no primeiro ano de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Insuficiência pancreática sempre no período neonatal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A fibrose cística é uma doença autossômica recessiva multissistêmica causada por mutações no gene CFTR, resultando em secreções exócrinas espessas e viscosas. A questão foca no reconhecimento das manifestações clínicas iniciais.\n\nAlternativa (a) Incorreta. O baqueteamento digital é uma manifestação de doença pulmonar crônica e hipóxia prolongada. Embora seja um achado muito comum em pacientes com fibrose cística ao longo do tempo, ele não costuma estar presente já nos primeiros meses de vida, surgindo geralmente com a progressão da doença respiratória.\n\nAlternativa (b) Incorreta. Embora a colonização bacteriana (especialmente por Staphylococcus aureus e Pseudomonas aeruginosa) e sintomas respiratórios possam começar cedo, a ocorrência de pneumonias bacterianas graves antes dos 6 meses não é a manifestação considerada mais característica ou universalmente precoce quando comparada ao íleo meconial.\n\nAlternativa (c) Correta. O íleo meconial é a manifestação clínica mais precoce e característica da fibrose cística, ocorrendo em cerca de 15% a 20% dos recém-nascidos afetados. Ele se caracteriza pela obstrução do íleo terminal por mecônio excessivamente espesso e aderente nas primeiras 24 a 48 horas de vida. Em muitos casos, a presença de íleo meconial é o que levanta a suspeita diagnóstica imediata, antes mesmo do resultado do teste do pezinho.\n\nAlternativa (d) Incorreta. O diabetes relacionado à fibrose cística (DRFC) é uma complicação decorrente da destruição progressiva das ilhotas pancreáticas pela fibrose e gordura. É uma manifestação tardia, sendo rara na infância e tornando-se muito mais prevalente na adolescência e na vida adulta. Não ocorre no primeiro ano de vida.\n\nAlternativa (e) Incorreta. A insuficiência pancreática exócrina é muito comum (afetando cerca de 85% a 90% dos pacientes), mas o termo \"sempre\" torna a alternativa incorreta. Alguns pacientes apresentam suficiência pancreática ao nascimento e podem desenvolvê-la mais tarde, ou até mesmo nunca apresentar insuficiência dependendo do tipo de mutação (genótipos de função residual). Além disso, o íleo meconial precede a confirmação clínica da insuficiência pancreática por má absorção gordurosa.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Fibrose Cística"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:03.208Z"
+  },
+  {
+    "id": "AJUDA_b598ad19-3583-4806-bf01-17120a1ea3bd",
+    "originalId": "b598ad19-3583-4806-bf01-17120a1ea3bd",
+    "statement": "Um homem feodérmico, com idade de 59 anos previamente hígido, com história de úlcera péptica tratada clinicamente aos 53 anos, trauma abdominal por arma de fogo aos 39 anos e portador de múltiplos cálculos vesiculares pequenos, procurou o serviço de urgência com dor e distensão abdominal acompanhada de hiperperistaltismo. Os exames hematológico e bioquímico estavam dentro dos limites de normalidade. A radiografia simples de abdome mostrou distensão do estômago e jejuno. Qual é o diagnóstico MAIS provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Úlcera perfurada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aderência intestinal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Colecistite aguda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Câncer intestinal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado descreve um paciente com sinais clássicos de obstrução intestinal mecânica: dor abdominal, distensão e hiperperistaltismo (ruídos hidroaéreos aumentados na tentativa de vencer o obstáculo). A radiografia confirma a distensão de alças proximais (estômago e jejuno), indicando uma obstrução intestinal alta.\n\nAnálise das alternativas:\n\na) Incorreta. A úlcera perfurada é uma causa de abdome agudo perfurativo. O paciente apresentaria dor súbita e intensa, sinais de irritação peritoneal (abdome em tábua) e, classicamente, pneumoperitônio na radiografia (ar livre abaixo do diafragma), e não distensão de alças com hiperperistaltismo.\n\nb) Correta. Esta é a principal causa de obstrução do intestino delgado em pacientes que já passaram por procedimentos cirúrgicos abdominais. O paciente tem história de trauma por arma de fogo aos 39 anos, o que certamente resultou em uma laparotomia exploradora. Cicatrizes internas (aderências ou bridas) podem causar o acotovelamento ou compressão de alças intestinais anos após a cirurgia, levando ao quadro obstrutivo mecânico descrito.\n\nc) Incorreta. A colecistite aguda manifesta-se com dor no hipocôndrio direito, sinal de Murphy positivo, febre e, geralmente, leucocitose nos exames laboratoriais. Embora o paciente possua cálculos na vesícula, o quadro de distensão abdominal generalizada e hiperperistaltismo aponta para obstrução intestinal, e não para uma inflamação da vesícula biliar.\n\nd) Incorreta. O câncer intestinal (especialmente o colorretal) é uma causa importante de obstrução, mas geralmente acomete o intestino grosso (obstrução baixa) e apresenta-se em pacientes com histórico de alteração do hábito intestinal, perda de peso ou anemia. No caso de obstrução do delgado por neoplasia, ela é menos frequente que as aderências, especialmente em um paciente com antecedente de laparotomia prévia.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:03.208Z"
+  },
+  {
+    "id": "AJUDA_b5a3d8d0-f37b-4678-8d67-40ac5a8d35a2",
+    "originalId": "b5a3d8d0-f37b-4678-8d67-40ac5a8d35a2",
+    "statement": "As recentes diretrizes da Organização Mundial da Saúde (OMS) e dos principais protocolos de manejo de Diabetes Mellitus (DM) recomendam que a hiperglicemia inicialmente detectada em qualquer momento da gravidez deve ser categorizada e diferenciada em DM diagnosticado na gestação (do inglês Overt Diabetes) ou em Diabetes Mellitus Gestacional. Assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diabetes Mellitus Gestacional (DMG): mulher com hiperglicemia detectada pela primeira vez durante a gravidez, com níveis glicêmicos sanguíneos de jejum superiores a 126mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diabetes Mellitus diagnosticado na gestação (Overt Diabetes): mulher sem diagnóstico prévio de DM, com hiperglicemia detectada na gravidez e com níveis glicêmicos sanguíneos que atingem os critérios da OMS para a DM na ausência de gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Considera-se que o teste com melhor sensibilidade e especificidade para o diagnóstico de DMG é a glicemia de jejum, e deve ser realizado no primeiro trimestre da gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Glicemia de jejum igual ou maior que 110mg/dl faz diagnóstico de DM em qualquer período da gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todas as gestantes com glicemia de jejum acima de 92 mg/dL devem realizar o TOTG com 75g de glicose de 24 a 28 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. O Diabetes Mellitus Gestacional (DMG) é definido por níveis glicêmicos que não atingem os critérios de diabetes preexistente. Quando a glicemia de jejum é maior ou igual a 126 mg/dl, o diagnóstico correto é de Diabetes Mellitus diagnosticado na gestação (Overt Diabetes). O DMG é caracterizado por glicemia de jejum entre 92 e 125 mg/dl.\n\nAlternativa B: Correta. Esta alternativa define perfeitamente o conceito de Overt Diabetes. Ele ocorre quando a gestante, sem diagnóstico prévio da doença, apresenta níveis glicêmicos que preenchem os critérios de diagnóstico de Diabetes Mellitus para a população geral (glicemia de jejum maior ou igual a 126 mg/dl, glicemia ao acaso maior ou igual a 200 mg/dl com sintomas ou HbA1c maior ou igual a 6,5%).\n\nAlternativa C: Incorreta. O teste considerado padrão-ouro para o diagnóstico de DMG, por possuir melhor sensibilidade, é o Teste Oral de Tolerância à Glicose (TOTG) com 75g de glicose, realizado entre a 24ª e a 28ª semana de gestação. A glicemia de jejum no primeiro trimestre é um teste de rastreamento e diagnóstico precoce, mas não substitui o TOTG no período de maior resistência insulínica.\n\nAlternativa D: Incorreta. O valor de 110 mg/dl não é o ponto de corte para diagnóstico de DM na gestação segundo as diretrizes atuais da OMS e da Associação Brasileira de Diabetes. Para Overt Diabetes, o valor deve ser maior ou igual a 126 mg/dl. Para DMG, o valor na glicemia de jejum deve ser maior ou igual a 92 mg/dl.\n\nAlternativa E: Incorreta. Gestantes que apresentam glicemia de jejum entre 92 e 125 mg/dl já recebem o diagnóstico de Diabetes Mellitus Gestacional (DMG) no momento da avaliação. Uma vez firmado o diagnóstico, não há indicação de realizar o TOTG de 75g entre a 24ª e a 28ª semana, pois o manejo terapêutico já deve ser iniciado. O TOTG é reservado para aquelas que tiveram glicemia de jejum normal (menor que 92 mg/dl) no início do pré-natal.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:03.208Z"
+  },
+  {
+    "id": "AJUDA_b5acf761-a835-475b-835b-6ab917fa587e",
+    "originalId": "b5acf761-a835-475b-835b-6ab917fa587e",
+    "statement": "Entre as doenças e agravos abaixo, assinale aquela que NÃO é de notificação compulsória imediata (até 24 horas) para as Secretarias Municipais de Saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidente por animal potencialmente transmissor da raiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acidente de trabalho grave sem exposição a material biológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infeção pelo HTLV em gestante, parturiente ou puérpera e criança exposta ao risco de transmissão vertical do HTLV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Violência sexual e tentativa de suicídio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Acidente por animal peçonhento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental conhecer a Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública, regulamentada pelo Ministério da Saúde (Portaria de Consolidação nº 4/2017 e suas atualizações recentes). O examinador solicita a alternativa que NÃO exige notificação imediata (em até 24 horas) para a Secretaria Municipal de Saúde.\n\nAlternativa (a) Incorreta: Acidentes por animais potencialmente transmissores da raiva (como cães e gatos de rua, morcegos ou animais silvestres) são de notificação imediata. A raiva é uma doença com letalidade de quase 100%, o que exige uma resposta rápida do sistema de vigilância para iniciar a profilaxia pós-exposição e monitorar o animal.\n\nAlternativa (b) Incorreta: O acidente de trabalho grave (que resulta em morte, mutilação ou ocorre com menores de 18 anos) deve ser notificado de forma imediata às autoridades municipais. Essa agilidade é necessária para a investigação das causas e implementação de medidas de segurança no ambiente laboral.\n\nAlternativa (c) Correta: A infecção pelo vírus linfotrópico de células T humanas (HTLV) em gestantes, parturientes, puérperas e crianças expostas ao risco de transmissão vertical foi incluída recentemente na lista de notificação compulsória (2024). Diferentemente de outras condições de urgência, a notificação para o HTLV é de periodicidade semanal, e não imediata. Por ser a única da lista com prazo de até 7 dias, ela é a resposta da questão.\n\nAlternativa (d) Incorreta: Tanto a violência sexual quanto a tentativa de suicídio são eventos de notificação compulsória imediata para a Secretaria Municipal de Saúde. A urgência na violência sexual deve-se à necessidade de profilaxias para ISTs e gravidez, além do acolhimento psicossocial. Na tentativa de suicídio, a notificação rápida visa à articulação da rede de atenção psicossocial para evitar novas tentativas.\n\nAlternativa (e) Incorreta: Acidentes por animais peçonhentos (serpentes, escorpiões, aranhas, etc.) são de notificação imediata. O registro célere é essencial para o controle epidemiológico e para garantir a disponibilidade e a distribuição adequada de soros antivenenos específicos nas unidades de saúde.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:03.208Z"
+  },
+  {
+    "id": "AJUDA_b5bee8de-63af-41f2-a042-9df2a46acfbd",
+    "originalId": "b5bee8de-63af-41f2-a042-9df2a46acfbd",
+    "statement": "Sobre o cuidado pré-natal da parceria sexual da gestante está correto segundo o Protocolo de Pré-Natal Mãe Curitibana Vale a Vida 2025:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhamento para os cuidados da Urologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avaliação do IMC em Pressão arterial em cada consulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar colesterol total, frações e triglicerídeos, quando acima dos 20 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Oferecer exame de biologia molecular para rastreamento de clamídia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ESTRUTURA DA EXPLICAÇÃO\n\nAlternativa a) Incorreta. O cuidado pré-natal do parceiro deve ser realizado prioritariamente na Atenção Primária à Saúde (Unidade Básica de Saúde), visando ao acolhimento e à prevenção. O encaminhamento para a urologia (especialidade focal) ocorre apenas em casos de patologias específicas detectadas que exijam cuidados de nível secundário, não sendo uma conduta de rotina para todos os parceiros.\n\nAlternativa b) Incorreta. Embora a avaliação da pressão arterial e do peso/IMC faça parte da avaliação clínica do homem, o protocolo não estabelece a obrigatoriedade dessa verificação em cada consulta para o parceiro, diferentemente do que ocorre com a gestante. O foco no parceiro é o rastreamento de doenças crônicas e infecciosas em momentos oportunos.\n\nAlternativa c) Correta. O Protocolo Mãe Curitibana Vale a Vida prevê que o pré-natal do parceiro é uma oportunidade para o cuidado integral à saúde do homem. Entre os exames laboratoriais de rotina solicitados para o parceiro, inclui-se o perfil lipídico (colesterol total, frações e triglicerídeos) para todos aqueles com idade acima de 20 anos, visando à avaliação do risco cardiovascular.\n\nAlternativa d) Incorreta. O rastreamento de infecções sexualmente transmissíveis (ISTs) para o parceiro no protocolo baseia-se prioritariamente na realização de testes rápidos para sífilis, HIV, hepatite B e hepatite C. O exame de biologia molecular para clamídia não é listado como um exame de rastreio universal obrigatório na rotina laboratorial do parceiro dentro deste protocolo específico.\n\nGABARITO: Alternativa (c).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Pré-Natal"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:03.208Z"
+  },
+  {
+    "id": "AJUDA_b5c945af-18dd-4543-893d-722d5b98f1a5",
+    "originalId": "b5c945af-18dd-4543-893d-722d5b98f1a5",
+    "statement": "Mulher, 22 anos de idade, procura o pronto-socorro por indisposição. Descreve ter polifagia, poliúria e polidipsia progressivas no último mês, com piora na última semana. Nos últimos dois dias, teve náuseas, alguns vômitos e passou a maior parte do dia sentada por indisposição. Ao exame clínico, apresentou PA de 110×62 mmHg, FC de 106 bpm, FR de 28 irpm, temperatura 36,2 °C, SpO2 de 98%, mucosas secas, vigil, sem sinais de desconforto respiratório, força grau IV nos membros inferiores, sem outras anormalidades. \n\n• Exames laboratoriais:\nGlicemia: 482 mg/dL\npH: 7,27\nHCO3-: 12 mEq/L\npCO2: 26 mmHg\nCetonas detectadas no sangue. \nUm eletrocardiograma foi realizado e pode ser observado na imagem a seguir: \n\nAssinale a alternativa que contém o item mais apropriado à prescrição imediata da paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bicarbonato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Insulina em bomba de infusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adenosina em bólus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cloreto de potássio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico: Cetoacidose Diabética (CAD) associada a Hipocalemia grave.\n\nA paciente apresenta a tríade clássica da cetoacidose diabética: hiperglicemia (glicemia de 482 mg/dL), acidose metabólica com ânion-gap elevado (pH 7,27 e bicarbonato de 12 mEq/L com compensação respiratória pela pCO2 de 26 mmHg) e cetonemia. \n\nApesar de a reposição volêmica e a insulinoterapia serem os pilares do manejo da CAD, a avaliação do potássio é uma prioridade absoluta antes de iniciar a insulina. Ao exame físico, a paciente apresenta fraqueza muscular (força grau IV em membros inferiores). Na análise do traçado eletrocardiográfico (ECG), observa-se taquicardia sinusal acompanhada de alterações clássicas de hipocalemia:\n- Achatamento difuso da onda T.\n- Presença de ondas U proeminentes após a onda T, visíveis com clareza nas derivações precordiais V2, V3 e V4.\n\nA administração de insulina estimula a bomba de sódio-potássio ATPase, deslocando o potássio do meio extracelular para o intracelular. Iniciar insulina na vigência de hipocalemia evidente pode reduzir criticamente os níveis séricos de potássio, precipitando arritmias ventriculares graves e parada cardiorrespiratória. Portanto, a reposição de potássio deve preceder a insulinoterapia.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. O uso de bicarbonato de sódio na CAD é restrito a casos de acidose extrema com pH menor que 6,9 refratário à hidratação inicial, o que não se aplica ao pH de 7,27 da paciente. Além disso, o bicarbonato agravaria ainda mais a hipocalemia ao promover entrada celular de potássio.\n\nAlternativa B - Incorreta. A insulina é essencial para cessar a cetogênese, mas sua introdução imediata é contraindicada na vigência de hipocalemia (K menor que 3,3 mEq/L ou na presença de sinais eletrocardiográficos de hipocalemia). A insulina só deve ser iniciada após a elevação e estabilização dos níveis de potássio.\n\nAlternativa C - Incorreta. A adenosina é indicada na reversão de taquicardias supraventriculares paroxísticas por reentrada nodal ou via acessória. O traçado do ECG evidencia taquicardia sinusal, que é uma resposta fisiológica compensatória à hipovolemia e ao estresse metabólico.\n\nAlternativa D - Correta. A reposição venosa de cloreto de potássio é a conduta prioritária e mais urgente diante das evidências clínicas e eletrocardiográficas de hipocalemia, visando prevenir arritmias malignas e permitir o início seguro da insulinoterapia subsequente.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Eletrocardiograma",
+      "Distúrbios do Potássio",
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/edaf47a894488d82c91e7cce4b0ae5708f3958a2d05e789af11b3208376fe6b2.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b5c945af-18dd-4543-893d-722d5b98f1a5_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:04.061Z"
+  },
+  {
+    "id": "AJUDA_b5cd4ff2-7fb0-4308-892e-dab624b4b182",
+    "originalId": "b5cd4ff2-7fb0-4308-892e-dab624b4b182",
+    "statement": "São critérios para início de tratamento de pacientes com leucemia linfocitica crônica (LLC):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esplenomegalia progressiva e sintomática; linfadenomegana progressiva e sintomática; evidência de falência medular progressiva com Hb < 10g/ dL e/ou plaquetopenia < 100.000/ mm³",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Anemia hemolítica autoimune recém diagnosticada secundárla a LLC; linfadenomegalia progressiva e sintomática; evidência de falência medular progressiva com Hb < 10g/dL e/ou plaquetopenia < 100.000/mmm³",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anemia hemolítica autoimune recém diagnosticada secundária a LLC, linfadenomegalia progressiva e sintomática; linfocitose > 300.000 cel./ mm³.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Evidência de falência medular progressiva com Hb < 10g/dL e/ou plaquetopenia < 100.000/mmm³; linfadenomegalia progressiva e sintomática; linfocitose > 300.000 cel./ mm³.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Leucemia Linfocítica Crônica (LLC) é uma neoplasia hematológica de curso indolente na maioria dos casos. Diferentemente de outras leucemias, o diagnóstico de LLC não é sinônimo de início imediato de tratamento. Muitos pacientes permanecem em observação (estratégia \"watch and wait\") por anos. O tratamento só é indicado quando há evidência de doença ativa ou progressiva, seguindo os critérios estabelecidos pelo International Workshop on Chronic Lymphocytic Leukemia (iwCLL).\n\nAnálise das alternativas:\n\nAlternativa (a): CORRETA. Esta alternativa elenca três dos principais critérios de indicação terapêutica: \n1. Evidência de falência medular progressiva: caracterizada pelo surgimento ou piora de anemia (Hb < 10 g/dL) ou plaquetopenia (< 100.000/mm³), o que classifica o paciente como estágio C de Binet ou III/IV de Rai. \n2. Esplenomegalia progressiva ou sintomática: geralmente definida como esplenomegalia massiva (> 6 cm abaixo do rebordo costal esquerdo). \n3. Linfadenomegalia progressiva ou sintomática: especialmente linfonodos volumosos (> 10 cm no maior diâmetro).\n\nAlternativa (b): INCORRETA. O erro reside na \"Anemia hemolítica autoimune (AHAI) recém-diagnosticada\". Complicações autoimunes, como AHAI ou Púrpura Trombocitopênica Imune (PTI), só são critérios para iniciar o tratamento específico para LLC se elas forem refratárias ao tratamento convencional (como corticoides ou rituximabe). Uma AHAI recém-diagnosticada deve ser tratada primeiramente com pulsoterapia ou prednisona, e não necessariamente motiva o início da quimioterapia ou terapia-alvo para a leucemia.\n\nAlternativa (c): INCORRETA. Além do erro sobre a anemia autoimune recém-diagnosticada mencionado anteriormente, a linfocitose isolada, mesmo que superior a 300.000 cél./mm³, não é um critério absoluto e isolado para início de tratamento se o paciente estiver assintomático. Na LLC, valoriza-se mais o tempo de duplicação dos linfócitos (LDT < 6 meses ou aumento de 50% em 2 meses) do que um valor de corte arbitrário, uma vez que a síndrome de leucostase é extremamente rara nesta doença.\n\nAlternativa (d): INCORRETA. Embora apresente a falência medular e a linfadenopatia progressiva, peca ao colocar a linfocitose isolada (> 300.000) como critério definitivo. Sem a presença de sintomas B (febre, perda de peso, sudorese noturna), falência medular ou massas tumorais volumosas, o número isolado de linfócitos não obriga a intervenção terapêutica imediata.\n\nResumo dos critérios iwCLL para início de tratamento:\n- Falência medular progressiva (anemia Hb < 10 ou plaquetas < 100k).\n- Esplenomegalia massiva (> 6 cm), progressiva ou sintomática.\n- Linfadenopatia massiva (> 10 cm), progressiva ou sintomática.\n- Linfocitose progressiva (aumento > 50% em 2 meses ou duplicação em menos de 6 meses).\n- Sintomas constitucionais (sintomas B): perda de peso > 10% em 6 meses, fadiga intensa, febre > 38 °C por 2 semanas ou sudorese noturna.\n- Citopenias autoimunes (AHAI ou PTI) que respondem mal a corticoides.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:04.061Z"
+  }
+]

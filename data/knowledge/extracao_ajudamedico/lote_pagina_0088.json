@@ -1,0 +1,519 @@
+[
+  {
+    "id": "AJUDA_17b5f5d3-7cdc-41ca-92c1-c2aac2ce2b10",
+    "originalId": "17b5f5d3-7cdc-41ca-92c1-c2aac2ce2b10",
+    "statement": "Menina de 16 anos, sem antecedentes clínicos e com menarca aos 15 anos, apresenta quadro de sangramento uterino anormal agudo (SUA-a), com sangramento profuso há 15 dias. Nega vida sexual ativa.\nA principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "pólipo cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "coagulopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "disfunção ovulatória.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "endometrite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve uma adolescente de 16 anos com menarca recente (há 1 ano) apresentando sangramento uterino anormal agudo. De acordo com a classificação PALM-COEIN da Federação Internacional de Ginecologia e Obstetrícia (FIGO), as causas de sangramento uterino anormal são divididas em estruturais e não estruturais.\n\nAlternativa a: Incorreta. Pólipos endocervicais ou endometriais são lesões estruturais muito mais prevalentes em mulheres na quarta e quinta décadas de vida (perimenopausa), sendo extremamente raros como causa de sangramento profuso em adolescentes.\n\nAlternativa b: Incorreta. As coagulopatias, em especial a Doença de von Willebrand, representam um diagnóstico diferencial de extrema relevância em adolescentes com sangramentos graves desde a menarca, devendo ser ativamente pesquisadas. No entanto, do ponto de vista epidemiológico, não constituem a causa mais frequente nessa faixa etária, ficando atrás das causas funcionais.\n\nAlternativa c: Correta. A disfunção ovulatória (representada pela letra O no sistema PALM-COEIN) é a principal etiologia de sangramento uterino anormal em adolescentes. Nos primeiros 2 a 3 anos pós-menarca, a imaturidade do eixo hipotálamo-hipófise-ovário cursa com ciclos anovulatórios. Sem ovulação, não há formação de corpo lúteo nem produção adequada de progesterona. O endométrio sofre estímulo estrogênico sustentado e sem oposição, tornando-se hiperplásico, frágil e instável, o que culmina em episódios de sangramento prolongado e volumoso.\n\nAlternativa d: Incorreta. A endometrite é uma infecção do endométrio tipicamente associada à Doença Inflamatória Pélvica decorrente de infecções sexualmente transmissíveis ou a procedimentos intrauterinos. O fato de a paciente não ter iniciado atividade sexual afasta fortemente essa suspeita.\n\nAlternativa e: Incorreta. A endometriose decorre da presença de estroma e epitélio endometrial fora da cavidade uterina, manifestando-se clinicamente por dismenorreia intensa, dor pélvica crônica, dispareunia de profundidade e infertilidade, não sendo causa típica de sangramento uterino agudo e profuso.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Ciclo Menstrual",
+      "Puberdade"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:48.648Z"
+  },
+  {
+    "id": "AJUDA_17b6e3b2-b480-49aa-a363-578b4886bdbd",
+    "originalId": "17b6e3b2-b480-49aa-a363-578b4886bdbd",
+    "statement": "Mulher, 28 anos, G2P1, negra, com 12 semanas de gestação, comparece à Unidade de Saúde da Família (USF) para consulta de pré-natal. Ela relata alimentação habitual com baixo consumo de laticínios e alimentos ricos em cálcio, como vegetais verde escuros. Não há antecedentes de hipertensão arterial, diabetes ou outras comorbidades. A primeira gestação foi há 2 anos e não houve intercorrências no pré-natal ou no parto. Na consulta de pré-natal do parceiro foi relatado que não foi realizada técnica de reprodução assistida e os exames laboratoriais estavam todos normais. Exame físico: PA: 110x70 mmHg, IMC:24 Kg/m2, sem outras alterações. Foi iniciado sulfato ferroso 40 mg/dia, conforme protocolo do Programa Nacional de Suplementação de Ferro.\nCom base na Nota Técnica Conjunta nº 251/2024 do Ministério da Saúde, qual é a conduta mais adequada para a prevenção da pré-eclâmpsia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar suplementação de carbonato de cálcio 1.250 mg, 2 comprimidos, uma vez ao dia, à noite, com intervalo mínimo de 2 horas do sulfato ferroso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Iniciar suplementação de carbonato de cálcio 1.250 mg, 1 comprimido, duas vezes ao dia, preferencialmente junto com o sulfato ferroso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar suplementação de carbonato de cálcio 1.250 mg, 1 comprimido, duas vezes ao dia, associada a refeições ricas em fitatos, como feijão, para melhorar a absorção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter a conduta atual, pois a gestante não apresenta fatores de risco para pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Nota Técnica Conjunta nº 251/2024 do Ministério da Saúde atualizou as diretrizes para a suplementação de cálcio na gestação, indicando o uso profilático para pré-eclâmpsia em todas as gestantes com baixa ingestão dietética de cálcio (inferior a 600 a 900 mg/dia), a partir de 12 a 20 semanas de gestação, mesmo na ausência de outros fatores de risco clínicos.\n\nNo Sistema Único de Saúde (SUS), a apresentação disponível é o carbonato de cálcio de 1.250 mg, que contém 500 mg de cálcio elementar por comprimido. A recomendação padrão é a suplementação de 1.000 mg de cálcio elementar por dia (ou seja, 2 comprimidos de 1.250 mg). Para otimizar a adesão, pode ser administrado em dose única diária (2 comprimidos à noite). Além disso, o cálcio compete com o ferro pelo transportador intestinal DMT-1, de modo que a ingestão de ambos deve ser espaçada por um intervalo mínimo de 2 horas.\n\nAnálise das alternativas:\n\nAlternativa a: Correta. A dose de 2 comprimidos de carbonato de cálcio 1.250 mg fornece 1.000 mg de cálcio elementar, atendendo à dose profilática preconizada. A administração em tomada única noturna facilita a adesão e garante o distanciamento mínimo de 2 horas em relação ao sulfato ferroso, evitando a inibição competitiva da absorção do ferro.\n\nAlternativa b: Incorreta. O erro está em orientar a tomada conjunta com o sulfato ferroso. O cálcio prejudica a absorção do ferro quando administrados simultaneamente.\n\nAlternativa c: Incorreta. Fitatos (presentes em leguminosas e cereais integrais) e oxalatos reduzem a absorção intestinal do cálcio por formarem complexos insolúveis, atuando como antinutrientes e não como facilitadores de absorção.\n\nAlternativa d: Incorreta. De acordo com a atualização de 2024 do Ministério da Saúde, a dieta pobre em cálcio é, por si só, critério suficiente para indicação da suplementação, visando reduzir a incidência de pré-eclâmpsia e suas complicações na população com consumo deficitário.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Atenção Primária à Saúde",
+      "Síndromes Hipertensivas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:48.648Z"
+  },
+  {
+    "id": "AJUDA_17b7a252-a4ca-43f7-a44d-2d75d97be736",
+    "originalId": "17b7a252-a4ca-43f7-a44d-2d75d97be736",
+    "statement": "Homem de 27 anos, vítima de acidente motociclístico, chega ao pronto-socorro em Glasgow 6 (A2V1M3), pupilas anisocóricas, pressão arterial 86/54 mmHg, frequência cardíaca 128 bpm, saturação de O₂ 89% em máscara de reservatório. Na avaliação inicial, foi assegurada via aérea pérvia com IOT, acesso venoso calibroso e reposição volêmica inicial. Qual deve ser a conduta imediata adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter medidas de suporte, garantir oxigenação, estabilizar hemodinamicamente, solicitar TC de crânio e contatar equipe de neurocirurgia para avaliação precoce.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar hiperventilação agressiva de rotina, visando reduzir a pressão intracraniana em todos os casos de TCE grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar corticoide intravenoso, já que tem efeito comprovado na melhora de mortalidade no TCE grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Postergar a realização de exames de imagem até estabilização completa em UTI, priorizando tratamento clínico inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Evitar encaminhamento precoce à neurocirurgia, pois a maioria dos casos de TCE grave pode ser manejada clinicamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo inicial do Traumatismo Cranioencefálico (TCE) grave no contexto do atendimento ao trauma (ATLS). O paciente apresenta sinais claros de gravidade: Escala de Coma de Glasgow de 6 (TCE grave), instabilidade hemodinâmica (hipotensão e taquicardia), hipóxia e sinais de herniação cerebral (anisocoria).\n\nAnálise das alternativas:\n\nAlternativa A (Correta): É a conduta padrão. No TCE grave, o principal objetivo é evitar a lesão cerebral secundária. Os dois maiores vilões são a hipóxia (deve-se manter SatO2 > 94%) e a hipotensão (deve-se manter a Pressão Arterial Sistólica ≥ 100-110 mmHg, dependendo da idade). Após estabilizar o ABCDE, a Tomografia de Crânio é o exame padrão-ouro para identificar lesões cirúrgicas, e a avaliação da neurocirurgia é indispensável devido à anisocoria, que sugere efeito de massa e risco de herniação.\n\nAlternativa B (Incorreta): A hiperventilação agressiva e rotineira é contraindicada. Ela causa vasoconstrição cerebral, o que reduz o fluxo sanguíneo e pode levar à isquemia cerebral, agravando o prognóstico. A hiperventilação só deve ser usada de forma breve e aguda em casos de herniação iminente enquanto se prepara outra medida definitiva.\n\nAlternativa C (Incorreta): O uso de corticoides no TCE grave foi extensivamente estudado (estudo CRASH) e demonstrou um aumento na mortalidade. Portanto, o corticoide é formalmente contraindicado no manejo do trauma craniano.\n\nAlternativa D (Incorreta): O paciente apresenta sinais de lesão expansiva intracraniana (anisocoria). Postergar a imagem até a internação em UTI é um erro grave, pois ele pode ter um hematoma extradural ou subdural que necessite de drenagem cirúrgica imediata. A TC deve ser feita assim que o paciente estiver hemodinamicamente minimamente estabilizado.\n\nAlternativa E (Incorreta): O encaminhamento à neurocirurgia deve ser precoce em todo TCE grave (Glasgow menor ou igual a 8), especialmente quando há sinais de localização neurológica como a anisocoria. Muitos desses casos exigem monitorização da pressão intracraniana (PIC) ou intervenção cirúrgica de urgência.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:48.648Z"
+  },
+  {
+    "id": "AJUDA_17ce4dbb-d850-44c9-9519-7663e4c75276",
+    "originalId": "17ce4dbb-d850-44c9-9519-7663e4c75276",
+    "statement": "Caso Clinico: Mulher de 40 anos, atropelada, PA 80/50 mmHg, FC 130 bpm, FAST mostra líquido livre. Qual a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta com retorno se dor piorar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TC de abdome com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparotomia exploradora imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Observação com expansão volêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lavado peritoneal diagnóstico antes de decidir.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nA paciente apresenta um quadro de trauma abdominal contuso (atropelamento) com sinais claros de instabilidade hemodinâmica, caracterizada por hipotensão (PA 80/50 mmHg) e taquicardia (FC 130 bpm). O exame FAST (Focused Assessment with Sonography for Trauma) foi positivo para líquido livre na cavidade abdominal. No contexto de trauma, líquido livre no FAST associado à instabilidade hemodinâmica indica hemoperitôneo volumoso, o que exige intervenção imediata.\n\nAnálise das Alternativas:\n\nAlternativa (a) Incorreta: A alta hospitalar é absolutamente contraindicada. A paciente apresenta choque hipovolêmico de provável origem abdominal, condição com alto risco de mortalidade se não tratada cirurgicamente com urgência.\n\nAlternativa (b) Incorreta: A Tomografia Computadorizada (TC) de abdome com contraste é o padrão-ouro para avaliar lesões de órgãos sólidos no trauma abdominal contuso, porém sua realização exige que o paciente esteja hemodinamicamente estável. Levar um paciente instável para a sala de tomografia é um erro grave, pois pode haver deterioração clínica longe de uma equipe de reanimação ou do centro cirúrgico.\n\nAlternativa (c) Correta: De acordo com os protocolos do ATLS (Advanced Trauma Life Support), a presença de instabilidade hemodinâmica e de um exame que comprove sangramento abdominal (como o FAST positivo) é indicação direta de laparotomia exploradora imediata para controle do sangramento (hemostasia).\n\nAlternativa (d) Incorreta: Embora a expansão volêmica faça parte do protocolo inicial de ressuscitação, a \"observação\" não é adequada neste caso. A paciente tem um sangramento ativo e volumoso que não cessará apenas com volume; a causa base deve ser tratada cirurgicamente.\n\nAlternativa (e) Incorreta: O Lavado Peritoneal Diagnóstico (LPD) é um exame invasivo que, assim como o FAST, serve para identificar sangue na cavidade. Como o FAST já foi realizado e já confirmou a presença de líquido livre, o LPD torna-se desnecessário e apenas retardaria o tratamento definitivo.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:48.648Z"
+  },
+  {
+    "id": "AJUDA_17cf882d-2e28-4d15-81fa-8f19930f0bca",
+    "originalId": "17cf882d-2e28-4d15-81fa-8f19930f0bca",
+    "statement": "A avaliação da baixa estatura exige a correta interpretação da velocidade de crescimento (VC) e idade óssea (IO). Sobre os padrões de crescimento, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na Deficiência de Hormônio do Crescimento (DGH), a velocidade de crescimento é invariavelmente baixa (< percentil 25 para a idade), a idade óssea é atrasada e a relação peso/estatura tende a ser baixa (emagrecimento).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Crianças com Hipotireoidismo Adquirido mantêm velocidade de crescimento normal até a puberdade, quando então apresentam parada abrupta do crescimento e avanço desproporcional da idade óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No Atraso Constitucional do Crescimento e Puberdade (ACCP), a criança apresenta velocidade de crescimento normal (embora na linha inferior), idade óssea atrasada em relação à idade cronológica e previsão de estatura final dentro do alvo genético familiar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Na Baixa Estatura Familiar (Genética), a velocidade de crescimento é normal, a idade óssea é compatível com a idade cronológica e a puberdade ocorre em idade habitual, resultando em estatura final baixa condizente com o alvo genético.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A avaliação da baixa estatura é um tema frequente em provas e exige o conhecimento das variantes normais do crescimento e das patologias endócrinas. Abaixo, analisamos cada alternativa:\n\nALTERNATIVA A: INCORRETA. Na Deficiência de Hormônio do Crescimento (DGH), a velocidade de crescimento é de fato baixa e a idade óssea é atrasada. No entanto, o erro da questão está na relação peso/estatura. O GH tem uma ação lipolítica importante. Quando há deficiência desse hormônio, a criança tende a acumular gordura, especialmente na região abdominal, apresentando uma face de boneca (querubismo). Portanto, a relação peso/estatura tende a ser elevada (sobrepeso relativo) e não baixa como afirma a alternativa.\n\nALTERNATIVA B: INCORRETA. O hipotireoidismo é uma das causas mais importantes de parada de crescimento. A criança não mantém velocidade de crescimento normal até a puberdade; a desaceleração ocorre assim que os níveis de hormônios tireoidianos se tornam insuficientes. Além disso, o hipotireoidismo causa um atraso marcante na idade óssea, e não um avanço desproporcional. O avanço da idade óssea é típico de condições como a puberdade precoce ou obesidade exógena.\n\nALTERNATIVA C: CORRETA. O Atraso Constitucional do Crescimento e Puberdade (ACCP) é considerado uma variante normal do crescimento, sendo mais comum em meninos com histórico familiar semelhante. As principais características estão descritas na alternativa: a velocidade de crescimento é normal (geralmente nos percentis inferiores, entre 10 e 25), a idade óssea é atrasada em relação à idade cronológica e a puberdade também ocorre mais tarde. Esse atraso na maturação óssea permite que a criança cresça por um período mais longo, garantindo que ela atinja sua estatura final dentro do alvo genético da família.\n\nALTERNATIVA D: INCORRETA. Embora a descrição da Baixa Estatura Familiar (Genética) esteja conceitualmente correta em alguns pontos (velocidade de crescimento normal e idade óssea compatível com a idade cronológica), a alternativa C é considerada a resposta correta por descrever com precisão a variante onde o atraso da idade óssea é o diferencial diagnóstico fundamental. Na Baixa Estatura Familiar, a criança já está no seu alvo genético (que é baixo), enquanto no ACCP a criança está temporariamente abaixo do alvo, mas o alcançará devido ao atraso ósseo. Em concursos, a definição de ACCP apresentada na letra C é o modelo clássico de questão sobre o tema.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:48.648Z"
+  },
+  {
+    "id": "AJUDA_17cf9153-0b50-400f-9c84-4d341f5534bf",
+    "originalId": "17cf9153-0b50-400f-9c84-4d341f5534bf",
+    "statement": "A Rede de Atenção Psicossocial (RAPS), instituída pela Portaria nº 3.088/2011, organiza o cuidado em saúde mental no SUS. Dentro da RAPS, os Centros de Atenção Psicossocial (CAPS) operam em diferentes modalidades. O CAPS III diferencia-se das demais modalidades (CAPS I e II) fundamentalmente por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estar localizado obrigatoriamente dentro de hospitais gerais, servindo como unidade de ligação entre a emergência e a enfermaria psiquiátrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atender exclusivamente usuários com transtornos decorrentes do uso de álcool e outras drogas, possuindo equipe especializada em toxicologia e redução de danos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Funcionar 24 horas por dia, todos os dias da semana, oferecendo acolhimento noturno e retaguarda clínica para pacientes em crise, evitando internações em hospitais psiquiátricos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar apenas atendimentos ambulatoriais individuais com psiquiatras e psicólogos, não oferecendo oficinas terapêuticas ou grupos, focando na estabilização medicamentosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "RESPOSTA COMENTADA\n\nO tema central da questão é a organização da Rede de Atenção Psicossocial (RAPS) no Sistema Único de Saúde (SUS), focando nas especificidades dos Centros de Atenção Psicossocial (CAPS). A Portaria nº 3.088/2011 define os CAPS como serviços de saúde de caráter aberto e comunitário, constituídos por equipe multiprofissional e destinados ao atendimento de pessoas com sofrimento ou transtorno mental grave e persistente.\n\nAnálise das alternativas:\n\nAlternativa (a) INCORRETA: Os CAPS são serviços de base territorial e comunitária, situados preferencialmente no território de vida do usuário, e não obrigatoriamente dentro de hospitais gerais. Embora o CAPS III mantenha articulação com a rede hospitalar e outros pontos da RAPS, sua estrutura física é independente para favorecer a reinserção social e a autonomia do paciente, evitando o isolamento.\n\nAlternativa (b) INCORRETA: O atendimento voltado especificamente para usuários com transtornos decorrentes do uso de álcool e outras drogas é característico do CAPS ad (Álcool e Drogas). O CAPS III (modalidade geral) atende adultos com transtornos mentais graves e persistentes de diversas etiologias. Vale notar que existe o CAPS ad III, que também funciona 24 horas, mas a questão refere-se ao CAPS III geral em comparação às modalidades I e II.\n\nAlternativa (c) CORRETA: Esta é a característica técnica que define o CAPS III. Enquanto os CAPS I e II funcionam em horário comercial/diurno (5 dias por semana), o CAPS III opera 24 horas por dia, todos os dias da semana, incluindo feriados e finais de semana. Sua principal função é oferecer o acolhimento noturno (hospitalidade noturna) com leitos de observação para pacientes em situação de crise, permitindo um manejo clínico intensivo no próprio território e evitando a internação em hospitais psiquiátricos especializados.\n\nAlternativa (d) INCORRETA: O modelo de atenção psicossocial é, por definição, multiprofissional e transdisciplinar. O foco dos CAPS não é apenas o atendimento ambulatorial individual ou a estabilização medicamentosa. Todos os CAPS devem realizar atividades coletivas, como oficinas terapêuticas, grupos de apoio, atividades comunitárias e suporte à família, visando à reabilitação psicossocial e à inclusão do indivíduo na sociedade.\n\nGabarito: Alternativa (c).",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Psiquiatria Social e Reforma Psiquiátrica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:48.648Z"
+  },
+  {
+    "id": "AJUDA_17d55756-83ce-41af-a1ad-8512482d6f6e",
+    "originalId": "17d55756-83ce-41af-a1ad-8512482d6f6e",
+    "statement": "Homem de 58 anos, hipertenso conhecido e tabagista, procura a emergência com início súbito, há 1 hora, de dor torácica intensa em “rasgo” irradiando para as costas. Está ansioso, PA 180x100 mmHg no braço direito e 120x70 mmHg no braço esquerdo; FC 110 bpm; ausculta cardíaca sem sopros novos; sem sinais óbvios de choque. Eletrocardiograma sem alterações isquêmicas agudas. Tomografia computadorizada com angiotomografia abaixo:\n\nConsiderando as diretrizes e protocolos atuais para dissecção aórtica, qual é a conduta mais apropriada e imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar controle rigoroso da pressão arterial (betabloqueador + vasodilatador) e seguir com tratamento exclusivamente clínico, observando evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para reparação cirúrgica urgente da aorta ascendente (substituição/reconstrução) com suporte de cirurgia cardíaca e circulação extracorpórea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Programar intervenção endovascular (TEVAR) eletiva para a aorta torácica descendente em 48-72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar pericardiocentese diagnóstica e terapêutica imediata para prevenir tamponamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar fibrinolítico de resgate para dissolver trombos e evitar evolução da dissecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O diagnóstico clínico de dissecção aguda da aorta é sugerido pela dor torácica súbita e intensa em rasgo, com irradiação para o dorso e assimetria de pressão arterial entre os braços (diferença de 60 mmHg na pressão sistólica). A imagem de angiotomografia de tórax apresentada em corte axial confirma a suspeita ao exibir o flap de íntima (uma linha que divide o vaso em dois lúmens) tanto na aorta ascendente (vaso circular maior, localizado anteriormente) quanto na aorta descendente (vaso menor, localizado posteriormente, próximo à vértebra). De acordo com a classificação de Stanford, qualquer envolvimento da aorta ascendente define o caso como Tipo A.\n\nAlternativa (a) Incorreta: O controle medicamentoso da pressão arterial e da frequência cardíaca (frequência-alvo abaixo de 60 bpm e pressão sistólica entre 100-120 mmHg) é uma medida inicial obrigatória para reduzir o estresse na parede arterial. Contudo, na dissecção Stanford A, o tratamento clínico isolado é insuficiente e está associado a uma mortalidade de cerca de 1% a 2% por hora logo após o início dos sintomas. O tratamento exclusivamente clínico é a conduta inicial padrão apenas para dissecções Stanford B (que envolvem apenas a aorta descendente) não complicadas.\n\nAlternativa (b) Correta: A dissecção da aorta que envolve a porção ascendente (Stanford A) é uma emergência cirúrgica absoluta. A conduta mais apropriada e imediata, após a estabilização pressórica inicial, é o encaminhamento para reparo cirúrgico urgente. O objetivo é substituir a aorta ascendente por uma prótese sintética para prevenir complicações fatais, como a ruptura para o espaço pericárdico (tamponamento cardíaco), insuficiência aórtica aguda ou oclusão das artérias coronárias.\n\nAlternativa (c) Incorreta: O reparo endovascular (TEVAR) é geralmente indicado para dissecções tipo B que apresentam complicações (como má perfusão de órgãos ou dor persistente). No envolvimento da aorta ascendente, a cirurgia aberta com suporte de circulação extracorpórea permanece o padrão-ouro. Além disso, uma intervenção eletiva em 48-72 horas seria tardia demais para um quadro de Stanford A.\n\nAlternativa (d) Incorreta: Embora o tamponamento cardíaco seja uma complicação possível da dissecção Tipo A, o paciente no caso não apresenta sinais óbvios de choque ou a tríade de Beck. Além disso, a pericardiocentese é evitada na dissecção da aorta, pois a descompressão do pericárdio pode aumentar a pressão transmural na aorta e precipitar uma ruptura fatal. Se houver tamponamento, o tratamento definitivo é realizado durante a cirurgia de emergência.\n\nAlternativa (e) Incorreta: O uso de fibrinolíticos é absolutamente contraindicado em casos de dissecção da aorta. Essas medicações são usadas para dissolver trombos em infartos ou AVCs, mas em uma dissecção causariam hemorragia catastrófica e óbito imediato do paciente ao impedir a coagulação na falsa luz ou nos locais de ruptura.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Síndromes Aórticas Agudas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/951d8760a4be10f863f04f6f01f93ad50a515fa9cc2265a54a993ede11febafa.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_17d55756-83ce-41af-a1ad-8512482d6f6e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:49.215Z"
+  },
+  {
+    "id": "AJUDA_17d714c1-92f5-4fe9-b6b0-19a30999c1eb",
+    "originalId": "17d714c1-92f5-4fe9-b6b0-19a30999c1eb",
+    "statement": "Homem, 29 anos de idade, apresenta dor lombar há 6 meses com irradiação para as nádegas, com piora no repouso e melhora com exercício físico. Apresenta rigidez matinal com duração de, aproximadamente, 1 hora e melhora ao longo do dia. Há 2 meses, apresenta edema em região do tendão calcâneo. Não apresenta outros sintomas ou antecedentes. Ao exame físico, apresenta limitação da flexão lombar e redução da expansão torácica.\n\nQual dos exames a seguir será positivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anticorpo antinuclear.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fator reumatoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "HLA-B27.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "c-ANCA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "anti-CCP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro descrito é clássico de uma Espondiloartrite Axial, especificamente a Espondilite Anquilosante (EA). Os pontos-chave são:\n1. Perfil epidemiológico: Homem jovem (29 anos).\n2. Dor lombar inflamatória: Duração superior a 3 meses, melhora com o exercício, piora com o repouso e presença de rigidez matinal prolongada (1 hora).\n3. Entesite: Edema em região de tendão calcâneo é uma manifestação periférica comum dessas patologias.\n4. Exame físico: A limitação da flexão lombar e a redução da expansão torácica indicam o acometimento crônico e a progressiva anquilose da coluna vertebral e das articulações costovertebrais.\n\nAs espondiloartrites são caracterizadas por serem soronegativas, ou seja, apresentam fator reumatoide e outros anticorpos típicos de doenças do tecido conjuntivo negativos.\n\nAnálise das Alternativas:\n\na) Incorreta. O Anticorpo Antinuclear (FAN) é um marcador utilizado principalmente para o rastreio de doenças autoimunes sistêmicas, como o Lúpus Eritematoso Sistêmico. Não tem associação com a fisiopatologia da Espondilite Anquilosante.\n\nb) Incorreta. O Fator Reumatoide (FR) é típico da Artrite Reumatoide. A Espondilite Anquilosante pertence ao grupo das espondiloartrites \"soronegativas\", termo cunhado justamente pela ausência de fator reumatoide nesses pacientes.\n\nc) Correta. O HLA-B27 é um antígeno de histocompatibilidade de classe I que possui uma forte associação genética com as espondiloartrites. Na Espondilite Anquilosante, sua presença chega a ser superior a 90% em pacientes caucasianos. Embora não seja um exame diagnóstico isolado (pois pessoas saudáveis podem ter o gene), no contexto clínico apresentado, é o exame que apresentará resultado positivo.\n\nd) Incorreta. O c-ANCA (anticorpo anticitoplasma de neutrófilos com padrão citoplasmático) é um marcador associado a vasculites sistêmicas, especificamente à Granulomatose com Poliangiite (antiga Wegener), sem relação com quadros de dor lombar inflamatória.\n\ne) Incorreta. O anti-CCP (anticorpo antipeptídeo citrulinado cíclico) é um marcador altamente específico para a Artrite Reumatoide, auxiliando no diagnóstico e prognóstico desta doença, mas não é encontrado na Espondilite Anquilosante.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Espondiloartrites"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:49.215Z"
+  },
+  {
+    "id": "AJUDA_17e62c36-1f0b-4489-ac0a-ea0e060bc9de",
+    "originalId": "17e62c36-1f0b-4489-ac0a-ea0e060bc9de",
+    "statement": "Assinale a alternativa correta sobre o papiloma intraductal da mama.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É comum em homens jovens, geralmente associado à ginecomastia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tem como principal sintoma a descarga papilar serosa ou sanguinolenta unilateral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apresenta-se como nódulo irregular à mamografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É mais comum em adolescentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Explicação sobre o Papiloma Intraductal da Mama:\n\nO papiloma intraductal é uma lesão benigna que se desenvolve a partir do crescimento de células epiteliais dentro dos ductos mamários. É classificado como uma lesão proliferativa e é a causa mais frequente de fluxo papilar sanguinolento.\n\nAlternativa a: Incorreta. O papiloma intraductal é uma patologia que ocorre predominantemente em mulheres. Embora o câncer de mama e outras alterações possam ocorrer no sexo masculino, o papiloma não é comum em homens e não apresenta associação com a ginecomastia, que é o aumento benigno da glândula mamária masculina por estímulo hormonal.\n\nAlternativa b: Correta. Esta é a descrição clássica da apresentação clínica do papiloma solitário (central). Como a lesão cresce dentro de um ducto principal na região retroareolar, ela é frágil e tende a sangrar ou liberar líquido. A descarga papilar característica é espontânea, unilateral, uniductal (sai por apenas um poro) e possui aspecto seroso (amarelado/transparente) ou sanguinolento (água de rocha ou sangue vivo).\n\nAlternativa c: Incorreta. Na maioria das vezes, a mamografia é normal em pacientes com papiloma devido às pequenas dimensões da lesão. Quando o papiloma é detectado em exames de imagem, ele costuma se manifestar na ultrassonografia como um nódulo sólido intraductal ou uma dilatação ductal. Nódulos irregulares são achados radiológicos suspeitos de malignidade (câncer de mama) e não são a apresentação típica do papiloma intraductal benigno.\n\nAlternativa d: Incorreta. A incidência do papiloma intraductal é maior em mulheres no período reprodutivo tardio ou na pré-menopausa, com pico de incidência entre os 35 e 55 anos de idade. Em adolescentes, a queixa mamária mais comum é o fibroadenoma, sendo o papiloma extremamente raro nessa faixa etária.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças Benignas da Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:49.215Z"
+  },
+  {
+    "id": "AJUDA_17ef329b-b69c-4627-852c-41d12bfc4134",
+    "originalId": "17ef329b-b69c-4627-852c-41d12bfc4134",
+    "statement": "Homem de 21 anos, portador de diabetes mellitus tipo 1, diagnosticado há 5 anos, foi levado à Unidade de Pronto Atendimento (UPA) devido à dor abdominal, náuseas e vômitos. Familiares informam que está sem utilizar insulina há 3 dias por dificuldades financeiras. No exame físico, encontra-se torporoso, desidratado, com hálito cetótico e dor abdominal à palpação profunda de forma generalizada. Ao exame, frequência cardíaca de 112 batimentos por minuto; frequência respiratória de 38 incursões respiratórias por minuto; pressão arterial de 110 por 70 milímetros de mercúrio. Os exames laboratoriais na admissão indicam: \n\n O diagnóstico e a conduta inicial indicada para esse paciente são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "pancreatite aguda; iniciar dieta oral zero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estado hiperosmolar hiperglicêmico; iniciar insulinoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cetoacidose diabética; prescrever solução fisiológica a 0,9 por cento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "insuficiência renal aguda; prescrever bicarbonato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente é um jovem com diabetes mellitus tipo 1 (DM1) que interrompeu o uso de insulina, evoluindo com a tríade clássica da cetoacidose diabética (CAD): hiperglicemia, acidose metabólica e cetose. \n\nOs dados clínicos e laboratoriais confirmam o diagnóstico:\n1. Glicemia de 472 mg/dL (valor de referência até 100 mg/dL): confirma a hiperglicemia (critério > 250 mg/dL).\n2. Gasometria com pH de 7,2 e bicarbonato de 10 mEq/L: confirmam uma acidose metabólica com consumo de base (critérios: pH < 7,3 e bicarbonato < 18 mEq/L).\n3. Hálito cetótico e dor abdominal: sugerem a presença de corpos cetônicos.\n4. Frequência respiratória de 38 ipm: indica a respiração de Kussmaul, uma compensação respiratória para a acidose metabólica.\n\nQuanto à conduta, o primeiro passo no tratamento da CAD é a reposição volêmica com solução isotônica (soro fisiológico 0,9%) para restaurar a perfusão tecidual e reduzir os hormônios contrarreguladores. Um detalhe fundamental neste caso é o potássio sérico de 3,0 mEq/L. Em pacientes com potássio abaixo de 3,3 mEq/L, a insulinoterapia deve ser adiada até que a reposição de potássio seja iniciada, para evitar arritmias graves.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. Embora a CAD possa cursar com dor abdominal intensa e náuseas (podendo mimetizar um abdome agudo), o quadro laboratorial de acidose e hiperglicemia em paciente com DM1 aponta diretamente para cetoacidose. A amilase e a lipase podem estar elevadas na CAD mesmo sem pancreatite.\n\nAlternativa B: Incorreta. O estado hiperosmolar hiperglicêmico é mais comum em pacientes com DM tipo 2, geralmente apresenta glicemias muito mais elevadas (acima de 600 mg/dL) e, por definição, não apresenta acidose importante (pH costuma ser maior que 7,3 e bicarbonato maior que 18). Além disso, a conduta inicial prioritária é a hidratação, e neste caso específico, a insulina não deve ser a primeira medida devido ao potássio baixo (3,0 mEq/L).\n\nAlternativa C: Correta. O diagnóstico é cetoacidose diabética pelos critérios já expostos. A conduta inicial padrão-ouro é a expansão volêmica com solução fisiológica a 0,9%.\n\nAlternativa D: Incorreta. A elevação da creatinina (1,6 mg/dL) é reflexo da desidratação grave (insuficiência renal pré-renal), e não a causa primária do quadro. O uso de bicarbonato de sódio na CAD é restrito a casos raros e gravíssimos, geralmente apenas se o pH estiver abaixo de 6,9, o que não é o caso deste paciente (pH 7,2).",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": 15.260129702129966,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ba7611bc640d8cfb37ac50292d9e75faef70030166225b67d9356752c61165ef.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_17ef329b-b69c-4627-852c-41d12bfc4134_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:49.611Z"
+  }
+]

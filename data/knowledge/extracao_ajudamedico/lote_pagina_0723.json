@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_c9e2a645-3ecb-4bf4-8922-c8899435934e",
+    "originalId": "c9e2a645-3ecb-4bf4-8922-c8899435934e",
+    "statement": "Homem de 30 anos, cacaueiro, do interior do Amazonas, com histórico de viagem recente aos Estados Unidos, inicia quadro súbito de febre alta de até 39ºC, associado com mialgia, cefaleia, artralgia, dor retro-orbitária e fotofobia há três dias. Há relato de epistaxe e algumas petéquias. Ele nega coriza, odinofagia e sintomas respiratórios. Ao exame físico, apresenta rash cutâneo em tronco e membros inferiores. O exame laboratorial revela leucócitos = 4.000/m³, com 40% de linfócitos, plaquetas = 98.000/mm³, velocidade de hemossedimentação (VHS) = 45mm/hora, creatinina = 1,0mg/dL, bilirrubina total = 1,8mg/dL e transaminases elevadas de forma discreta. Os testes de biologia molecular (PCR) para dengue, zika e chikungunya foram negativos. O diagnóstico mais provável é de febre por infecção:",
+    "options": [
+      {
+        "id": "A",
+        "text": "pelo Leptospira interrogans",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "viral pela febre amarela",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pelo Plasmodium ovale",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "viral pelo oropouche",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro clínico clássico de arbovirose: início súbito de febre alta, mialgia, cefaleia, dor retro-orbitária e exantema (*rash*), acompanhado de leucopenia e plaquetopenia. O ponto fundamental para a resolução desta questão é a epidemiologia e a exclusão das arboviroses mais comuns (Dengue, Zika e Chikungunya), cujos testes de biologia molecular foram negativos.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA Febre do Oropouche é uma arbovirose endêmica na região amazônica, causada pelo *Orthobunyavirus oropoucheense*. O quadro clínico é muito semelhante ao da Dengue, podendo incluir fotofobia e manifestações hemorrágicas leves, como epistaxe e petéquias, exatamente como descrito no caso. O detalhe decisivo na questão é a ocupação do paciente: cacaueiro. O principal vetor de transmissão urbana e periurbana do vírus Oropouche é o *Culicoides paraensis* (conhecido como maruim ou mosquito-pólvora). Este inseto utiliza cascas de frutos, como as do cacau, e outros restos de matéria orgânica para se reproduzir. Portanto, a associação entre a profissão de cacaueiro no Amazonas e os sintomas de arbovirose com exames negativos para Dengue aponta diretamente para o Oropouche.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) *Leptospira interrogans*: A leptospirose é um importante diagnóstico diferencial de síndromes febris agudas, mas costuma estar associada ao contato com águas de inundação ou urina de roedores. Embora cause mialgia severa (especialmente em panturrilhas) e sufusão conjuntival, a dor retro-orbitária e o exantema maculopapular são muito mais característicos de arboviroses. Além disso, formas que cursam com sangramento geralmente apresentam maior comprometimento hepático e renal.\n\nb) Viral pela febre amarela: A febre amarela em sua forma clássica apresenta o sinal de Faget (dissociação pulso-temperatura) e uma elevação muito acentuada das transaminases (frequentemente acima de 1.000 U/L), além de icterícia evidente. No caso clínico, as transaminases estão elevadas de forma discreta e a bilirrubina está apenas levemente alterada (1,8 mg/dL), o que torna esse diagnóstico menos provável.\n\nc) Pelo *Plasmodium ovale*: Embora o paciente viva em área endêmica para malária (Amazonas), a espécie *Plasmodium ovale* é encontrada quase que exclusivamente no continente africano. Na região amazônica brasileira, os casos de malária são causados por *P. vivax*, *P. falciparum* e, raramente, *P. malariae*. Além disso, a presença de *rash* cutâneo e dor retro-orbitária não são sintomas típicos da malária.\n\nRESUMO DIDÁTICO\n\nDiante de um quadro de síndrome febril aguda com características de arbovirose em um paciente vindo da Amazônia, com histórico de trabalho em lavouras de cacau e testes negativos para Dengue, o diagnóstico de Febre do Oropouche deve ser a principal suspeita devido à ecologia do vetor *Culicoides paraensis*.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:53.897Z"
+  },
+  {
+    "id": "AJUDA_c9e2cf65-c3a8-48a0-a559-3bf205bfb243",
+    "originalId": "c9e2cf65-c3a8-48a0-a559-3bf205bfb243",
+    "statement": "Gestante em trabalho de parto. O exame clínico e a ultrassonografia intraparto sugerem insinuação da cabeça fetal com deslocamento da sutura sagital em direção ao púbis, como mostram as imagens.\n\nAssinale a opção que descreve corretamente o achado, na ordem apresentada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obliquidade de Naegele; sutura sagital próxima ao sacro; parietal anterior como ponto apresentador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obliquidade de Litzmann; sutura sagital próxima à sínfise púbica; parietal posterior como ponto apresentador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sinclitismo; sutura sagital equidistante entre sacro e sínfise, sem parietal predominante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deflexão grau I (bregma); apresentação de bregma com sutura sagital central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deflexão grau II (naso); apresentação de bregma com sutura sagital central.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a esta questão, é fundamental compreender o conceito de assinclitismo, que se refere à inclinação lateral da cabeça fetal em relação aos planos da bacia materna durante o processo de insinuação.\n\nNo sinclitismo, a sutura sagital encontra-se equidistante do púbis e do promontório sacral. Quando ocorre um desvio lateral, temos o assinclitismo, também chamado de obliquidade.\n\nAnálise do enunciado e das imagens:\nO enunciado afirma que a sutura sagital está deslocada em direção ao púbis. Nas imagens apresentadas, especialmente no esquema anatômico e na ultrassonografia intraparto (imagens C e D), observa-se que a linha média fetal (sutura sagital) não está centralizada, mas sim desviada anteriormente, aproximando-se da sínfise púbica. Quando a sutura sagital se aproxima do púbis, o osso parietal que desce primeiro e se torna o ponto apresentador é o parietal posterior. Esse quadro clínico é definido como Obliquidade de Litzmann ou assinclitismo posterior.\n\nAnálise das alternativas:\n\na) Incorreta. A Obliquidade de Naegele (assinclitismo anterior) ocorre quando a sutura sagital se desloca em direção ao sacro, fazendo com que o parietal anterior seja o ponto apresentador. O enunciado descreve o oposto.\n\nb) Correta. A Obliquidade de Litzmann caracteriza-se exatamente pelo deslocamento da sutura sagital em direção à sínfise púbica, resultando na apresentação do parietal posterior. É o que as imagens e o texto descrevem.\n\nc) Incorreta. No sinclitismo, a sutura sagital estaria centralizada, guardando a mesma distância entre o sacro e o púbis, sem inclinação lateral da cabeça.\n\nd) Incorreta. A deflexão de primeiro grau (bregma) refere-se à atitude fetal (grau de flexão da cabeça) e não à inclinação lateral (assinclitismo). Na deflexão grau I, o ponto de referência é o bregma, mas a sutura sagital estaria centralizada se não houvesse assinclitismo associado.\n\ne) Incorreta. A deflexão de segundo grau (naso ou fronte) também é uma alteração de atitude. O ponto de referência é a glabela ou o nariz. Não guarda relação direta com o deslocamento lateral da sutura sagital em direção ao púbis mencionado.\n\nConclusão:\nA associação entre o deslocamento da sutura sagital para o púbis e a apresentação do parietal posterior define o assinclitismo posterior, tecnicamente denominado Obliquidade de Litzmann.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/dc24c5a40ae5a3ca0a6c9137e7fa75892a6321fbd427d993a7d7f4152ca783ed.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c9e2cf65-c3a8-48a0-a559-3bf205bfb243_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:54.605Z"
+  },
+  {
+    "id": "AJUDA_c9e3c145-4483-4148-866d-8c921ec68347",
+    "originalId": "c9e3c145-4483-4148-866d-8c921ec68347",
+    "statement": "Acerca da infecção urinária em crianças, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enterococcus sp. é a causa bacteriana mais comum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nos maiores de 2 anos pode-se prescrever curso de antibiótico por 5 dias ao invés de 10 dias, se quadro afebril.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A cultura urinária é mandatária apenas se menor de dois meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A antibioticoterapia precoce não previne dano renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. A causa mais comum de infecção do trato urinário (ITU) em pediatria, em todas as faixas etárias, é a *Escherichia coli*, sendo responsável por aproximadamente 80% a 90% dos casos. O *Enterococcus* sp. é um patógeno muito menos frequente, geralmente associado a malformações do trato urinário ou uso prévio de antibióticos.\n\nAlternativa b) Correta. Em crianças maiores de 2 anos que apresentam quadro afebril, o diagnóstico clínico costuma ser de cistite (infecção urinária baixa). Nesses casos, a literatura pediátrica e diversos protocolos permitem o uso de cursos curtos de antibioticoterapia, variando de 3 a 5 dias, apresentando eficácia semelhante aos tratamentos longos para essa apresentação específica. Já nos quadros febris (sugestivos de pielonefrite) ou em crianças menores, o tratamento deve ser mais prolongado, geralmente de 7 a 14 dias.\n\nAlternativa c) Incorreta. A cultura de urina é considerada o padrão-ouro para o diagnóstico de ITU em qualquer faixa etária na pediatria. Como os sintomas em crianças pequenas são inespecíficos e o exame de urina de rotina (EAS) pode apresentar falsos-positivos e falsos-negativos, a confirmação diagnóstica e a identificação da sensibilidade bacteriana via urocultura são fundamentais em todos os casos suspeitos.\n\nAlternativa d) Incorreta. Pelo contrário, o início precoce da antibioticoterapia é o fator primordial para prevenir ou minimizar a formação de cicatrizes renais e o consequente dano renal permanente. Estudos demonstram que o atraso no início do tratamento, especialmente após as primeiras 48 a 72 horas de febre, aumenta significativamente o risco de lesão do parênquima renal.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:54.605Z"
+  },
+  {
+    "id": "AJUDA_ca00a0fc-f953-4d35-b471-54bc5ff00cb7",
+    "originalId": "ca00a0fc-f953-4d35-b471-54bc5ff00cb7",
+    "statement": "A transição epidemiológica no Brasil não ocorreu pela substituição simples das doenças infecciosas pelas crônicas, mas sim pela sobreposição de ambas (tripla carga de doenças). Nesse contexto, analise as afirmativas a seguir sobre as estratégias de controle:\n\nI. A vigilância das Doenças Crônicas Não Transmissíveis (DCNT) baseia-se primordialmente no monitoramento dos fatores de risco (tabagismo, obesidade, sedentarismo) por meio de inquéritos populacionais (como o Vigitel), dado que a longa latência e a multicausalidade dificultam a notificação compulsória universal de casos novos.\nII. O controle da Dengue e de outras arboviroses exige uma abordagem integrada que priorize o controle químico (fumacê) em detrimento do manejo ambiental, uma vez que a urbanização acelerada torna impossível a eliminação mecânica dos criadouros do vetor Aedes aegypti.\nIII. A estratégia de \"Tratamento como Prevenção\" (TasP) no HIV/Aids fundamenta-se na evidência de que a supressão viral sustentada (carga viral indetectável) em pessoas vivendo com HIV anula o risco de transmissão sexual, transformando a terapia antirretroviral em uma ferramenta de saúde pública para interromper a cadeia de transmissão.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I e III apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nItem I: CORRETO. A vigilância das Doenças Crônicas Não Transmissíveis (DCNT) no Brasil utiliza uma lógica diferente das doenças infectocontagiosas. Como as DCNT possuem longo período de latência e múltiplos fatores causais, a notificação individual de cada caso de hipertensão ou diabetes seria pouco operacional para o planejamento de saúde pública. Por isso, a estratégia principal é o monitoramento de fatores de risco e proteção. O sistema Vigitel, realizado por inquérito telefônico, é a principal ferramenta para acompanhar tendências de tabagismo, atividade física e hábitos alimentares na população, permitindo intervenções precoces antes do desfecho clínico.\n\nItem II: INCORRETO. Esta afirmativa inverte a prioridade das ações de controle vetorial. O controle químico (fumacê) é considerado uma medida complementar e emergencial, utilizada apenas para reduzir a população de mosquitos adultos durante surtos ou epidemias. A estratégia prioritária e mais eficaz no controle do *Aedes aegypti* é o manejo ambiental, que consiste na eliminação mecânica de criadouros (limpeza, vedação de caixas d'água e descarte correto de resíduos). O uso indiscriminado de inseticidas é evitado devido ao impacto ambiental e ao risco de desenvolvimento de resistência das populações de mosquitos aos compostos químicos.\n\nItem III: CORRETO. O Tratamento como Prevenção (TasP) é um conceito científico robusto que mudou as diretrizes de manejo do HIV no mundo. O princípio fundamenta-se no conceito Indetectável = Intransmissível (I=I). Quando a pessoa vivendo com HIV adere corretamente à Terapia Antirretroviral (TARV) e mantém a carga viral plasmática indetectável por pelo menos seis meses, o risco de transmissão sexual do vírus é considerado nulo. Dessa forma, tratar o indivíduo deixa de ser apenas uma ação de cuidado clínico individual para se tornar uma estratégia de saúde pública fundamental para interromper a cadeia epidemiológica de transmissão.\n\nCONCLUSÃO\n\nAs afirmativas I e III estão tecnicamente corretas e alinhadas com as diretrizes do Ministério da Saúde e da Organização Mundial da Saúde. A afirmativa II está incorreta por priorizar o controle químico sobre o manejo ambiental.\n\nAlternativa correta: Letra (d).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:54.605Z"
+  },
+  {
+    "id": "AJUDA_ca114581-54d9-4230-835d-847efc3b4d07",
+    "originalId": "ca114581-54d9-4230-835d-847efc3b4d07",
+    "statement": "A definição de colo do útero satisfatório para avaliação na colposcopia é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Teste de Schiller negativo (iodo positivo).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Presença de epitélio acetobranco após aplicação de ácido acético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ausência de vasos atípicos na zona de transformação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Visualização completa da junção escamo-colunar.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para que um exame de colposcopia seja considerado satisfatório para avaliação, o critério técnico fundamental é a visibilidade completa do colo uterino e, especificamente, da Junção Escamocolunar (JEC).\n\nA JEC representa o limite entre o epitélio escamoso (que reveste a ectocérvice) e o epitélio colunar (que reveste a endocérvice). Como a imensa maioria das neoplasias e lesões precursoras do colo do útero se origina na zona de transformação (área compreendida entre a JEC original e a JEC atual), a incapacidade de visualizar a JEC em toda a sua extensão impede que o examinador afirme com segurança a ausência de lesões ocultas.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O Teste de Schiller é considerado negativo quando o epitélio capta o iodo e cora intensamente (iodopositivo), indicando a presença de glicogênio e, portanto, um epitélio escamoso maduro e saudável. Embora seja um achado de normalidade, ele não define se o exame foi tecnicamente adequado ou satisfatório.\n\nAlternativa b) Incorreta. O epitélio acetobranco é uma alteração visual que surge após a aplicação de ácido acético, sendo o principal marcador de possíveis lesões (como as causadas pelo HPV ou neoplasias intraepiteliais). Trata-se de um achado do exame, e não de um critério de qualidade técnica do procedimento.\n\nAlternativa c) Incorreta. Vasos atípicos são sinais colposcópicos de maior gravidade, frequentemente associados a processos invasivos (câncer). A ausência desses vasos é um dado clínico relevante, mas o exame só é considerado satisfatório se a anatomia necessária (JEC) for visualizada por completo.\n\nAlternativa d) Correta. Esta é a definição clássica. Caso a JEC não seja visualizada em seus 360 graus (comum em pacientes na pós-menopausa, condição na qual a JEC tende a recuar para dentro do canal endocervical), o exame é classificado como insatisfatório. Atualmente, a terminologia da IFCPC (Federação Internacional de Patologia Cervical e Colposcopia) também utiliza a classificação da Zona de Transformação em tipos 1, 2 e 3, sendo que a visibilidade da JEC é o que define essa classificação e a adequação do exame.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:54.605Z"
+  },
+  {
+    "id": "AJUDA_ca13dd32-7e6a-4bf2-8231-122025d8ae83",
+    "originalId": "ca13dd32-7e6a-4bf2-8231-122025d8ae83",
+    "statement": "Paciente, do sexo masculino, 52 anos de idade, tem Insuficiência Cardíaca (IC) com Fração de Ejeção do Ventrículo Esquerdo (FEVE) de 35% no início do acompanhamento, sem etiologia conhecida (após investigação inicial). Mantém-se em acompanhamento ambulatorial, com tratamento instituído desde a primeira visita médica. Atualmente, faz uso de furosemida 20 mg/dia, sacubitril/valsartana 200 mg 2 vezes por dia, carvedilol 25 mg 2 vezes ao dia, espironolactona 25 mg/dia e empagliflozina 10 mg/dia. Após 1 ano de acompanhamento, o paciente retorna relatando estado clínico compatível com classe funcional I pela New York Heart Association (NYHA). No exame físico, apresenta PA de 98x64 mmHg e FC de 52 bpm. Apresenta um ecocardiograma recente com FEVE = 54%. Tem exames de meses consecutivos de creatinina de 1,57 mg/dL (TFG de 53 mL/min) e potássio de 4,9 mEq/L. Assinale a alternativa que apresenta a conduta farmacológica adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduzir dose de sacubitril/valsartana e carvedilol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender a terapia específica de IC de FEVE reduzida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trocar sacubitril/valsartana por hidralazina/isossorbida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter os medicamentos e as doses atuais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo de um paciente com Insuficiência Cardíaca com Fração de Ejeção Recuperada (ICFErec). Inicialmente, o paciente apresentava Fração de Ejeção do Ventrículo Esquerdo (FEVE) de 35% (reduzida) e, após o tratamento otimizado com a \"quadrúplice terapia\" (Sacubitril/Valsartana, Betabloqueador, Antagonista da Aldosterona e iSGLT2), evoluiu para FEVE de 54% e classe funcional NYHA I.\n\nO ponto central aqui é entender que a melhora da fração de ejeção e a ausência de sintomas não significam cura da doença, mas sim uma resposta clínica e ecocardiográfica excelente ao tratamento. \n\nAnálise das alternativas:\n\na) Incorreta. Embora a frequência cardíaca de 52 bpm e a PA de 98 x 64 mmHg estejam em níveis limítrofes, o paciente está em classe funcional I (assintomático). Na insuficiência cardíaca, níveis pressóricos e de frequência cardíaca mais baixos são frequentemente bem tolerados e estão associados a um melhor prognóstico, desde que não causem sintomas de hipoperfusão ou bradicardia sintomática. Reduzir as doses em um paciente estável pode levar à descompensação e à perda do remodelamento reverso alcançado.\n\nb) Incorreta. Este é um erro comum na prática clínica. O estudo TRED-HF demonstrou que a suspensão da terapia farmacológica em pacientes com IC de etiologia não isquêmica que recuperaram a FEVE resulta em uma alta taxa de recaída clínica (remodelamento negativo, queda da FEVE e retorno dos sintomas) em curto período. Portanto, o tratamento medicamentoso para ICFE reduzida deve ser mantido indefinidamente, mesmo após a normalização da fração de ejeção.\n\nc) Incorreta. A troca de Sacubitril/Valsartana (um ARNI) por Hidralazina e Isossorbida não tem justificativa neste caso. A combinação de Hidralazina e Isossorbida é indicada geralmente para pacientes que não toleram inibidores do sistema renina-angiotensina-aldosterona por insuficiência renal grave ou hipercalemia, ou como terapia adicional em pacientes negros que permanecem sintomáticos apesar do tratamento otimizado. O paciente em questão está estável, com função renal e potássio dentro de limites aceitáveis para a manutenção da terapia atual.\n\nd) Correta. A conduta baseada em evidências para pacientes com Fração de Ejeção Recuperada (HFimpEF ou ICFErec) é a manutenção da terapia tripla ou quádrupla nas doses que levaram à recuperação ventricular. A manutenção do tratamento garante a estabilidade do quadro e previne o remodelamento deletério do ventrículo esquerdo. Como o paciente está assintomático, não há necessidade de ajuste por conta dos sinais vitais ou exames laboratoriais apresentados.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:54.605Z"
+  },
+  {
+    "id": "AJUDA_ca243c6a-3b78-451d-96b1-88b8086f6c46",
+    "originalId": "ca243c6a-3b78-451d-96b1-88b8086f6c46",
+    "statement": "Em uma cadeia, quatro presos foram diagnosticados com catapora ou varicela. Para conter o surto, foram tomadas algumas medidas.\nAssinale a alternativa correta sobre a varicela e sobre esse surto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A medida mais importante para conter o surto é proibir o contato de qualquer pessoa com as lesões dos infectados, que devem ficar isolados durante, pelo menos, 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A principal preocupação nesse surto é prevenir, por meio de vacina, a evolução da varicela para herpes zoster nos acometidos, ambas as doenças causadas pelo Varicella-zoster vírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico da varicela só pode ser feito com o isolamento do vírus das lesões vesiculares durante os primeiros 10 dias da erupção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A ocorrência do surto de varicela entre os presos citados deve ser contida fundamentalmente com o isolamento deles, pois a doença é autolimitada e a maioria evolui para a cura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "São medidas necessárias, embora não suficientes: suspensão das visitas e de outras atividades coletivas, aplicação de vacina em pessoas que tiveram contato próximo com os detentos infectados.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda o manejo de um surto de varicela em ambiente de confinamento (presídio), exigindo conhecimentos sobre transmissão, diagnóstico e medidas de controle epidemiológico.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o contato direto com o fluido das vesículas transmita o vírus, a principal via de transmissão da varicela é a aérea (perdigotos e aerossóis). Além disso, o período de isolamento recomendado não é fixo em 14 dias, mas sim até que todas as lesões tenham evoluído para a fase de crosta (geralmente em torno de 5 a 7 dias).\n\nb) Incorreta. A vacina contra varicela é utilizada para prevenir a infecção primária em indivíduos suscetíveis. Uma vez que a pessoa já está acometida pela varicela, a vacina não impede a futura evolução para herpes-zóster, que decorre da reativação do vírus latente nos gânglios nervosos. O objetivo principal no surto é evitar novos casos e complicações graves.\n\nc) Incorreta. O diagnóstico da varicela é eminentemente clínico, baseado nas características das lesões (polimorfismo regional: pápulas, vesículas e crostas coexistindo). Exames laboratoriais, como PCR ou isolamento viral, são reservados para casos atípicos, graves ou para fins de vigilância epidemiológica, não sendo a única forma de diagnóstico.\n\nd) Incorreta. O isolamento dos doentes é uma medida necessária, mas insuficiente em ambientes fechados. Devido ao alto índice de transmissibilidade (a transmissão ocorre inclusive 1 a 2 dias antes do surgimento do exantema), é provável que outros detentos já tenham sido expostos. A contenção do surto exige medidas ativas de bloqueio vacinal.\n\ne) Correta. Em situações de surto em ambientes de aglomeração ou confinamento, o Ministério da Saúde recomenda medidas combinadas. A suspensão de atividades coletivas e visitas interrompe a cadeia de transmissão externa e interna. A vacinação de bloqueio deve ser realizada em contatos suscetíveis (sem histórico de doença ou vacinação prévia) idealmente até 72 horas após a exposição (podendo ser estendida até 120 horas em algumas diretrizes), visando prevenir a doença ou atenuar sua gravidade.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Doenças Exantemáticas",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:54.605Z"
+  },
+  {
+    "id": "AJUDA_ca2ead1d-b75d-4e17-9686-5f9239e5df68",
+    "originalId": "ca2ead1d-b75d-4e17-9686-5f9239e5df68",
+    "statement": "O Transtorno do Déficit de Atenção e Hiperatividade (TDAH) apresenta base neurobiológica com disfunção nos sistemas dopaminérgico e noradrenérgico. O metilfenidato, medicamento de primeira linha no tratamento farmacológico do TDAH, exerce seu efeito terapêutico primário através do mecanismo de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Agonismo direto dos receptores dopaminérgicos D2 e D3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inibição da monoamina oxidase com aumento de catecolaminas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bloqueio dos receptores histaminérgicos H1 com sedação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibição da recaptação de dopamina e noradrenalina no terminal pré-sináptico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a farmacologia do metilfenidato, um estimulante do sistema nervoso central amplamente utilizado no manejo do TDAH. Para responder corretamente, é fundamental compreender como essa substância interage com a fenda sináptica e os transportadores de neurotransmissores.\n\nAlternativa a: Incorreta. O metilfenidato não atua como um agonista direto, ou seja, ele não se liga aos receptores dopaminérgicos para mimetizar a ação da dopamina. O aumento da atividade dopaminérgica ocorre de forma indireta, através da maior disponibilidade do próprio neurotransmissor endógeno na fenda sináptica.\n\nAlternativa b: Incorreta. A inibição da enzima monoamina oxidase (MAO) é o mecanismo de ação de fármacos antidepressivos específicos, conhecidos como IMAOs. Embora ambos resultem no aumento de catecolaminas, o metilfenidato não interfere significativamente na degradação enzimática pela MAO.\n\nAlternativa c: Incorreta. O bloqueio dos receptores histaminérgicos H1 é característico de anti-histamínicos de primeira geração e de alguns antipsicóticos e antidepressivos, resultando em sedação e ganho de peso. O metilfenidato é um estimulante e tem efeito oposto à sedação.\n\nAlternativa d: Correta. O mecanismo de ação primário do metilfenidato consiste no bloqueio do transportador de dopamina (DAT) e do transportador de noradrenalina (NET) no terminal pré-sináptico. Ao inibir a recaptação, o medicamento aumenta a concentração e o tempo de permanência desses neurotransmissores na fenda sináptica, especificamente em regiões como o córtex pré-frontal e o corpo estriado. Isso otimiza a neurotransmissão dopaminérgica e noradrenérgica, melhorando o foco, a atenção e o controle inibitório em pacientes com TDAH. Vale ressaltar que, diferentemente das anfetaminas, o metilfenidato age predominantemente no bloqueio da recaptação e não estimula de forma tão acentuada a liberação vesicular de dopamina.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:54.605Z"
+  },
+  {
+    "id": "AJUDA_ca34c513-5c82-478a-bdba-a0086a7628e7",
+    "originalId": "ca34c513-5c82-478a-bdba-a0086a7628e7",
+    "statement": "Homem, 27 anos, vítima de colisão automobilística, dá entrada no pronto-socorro hemodinamicamente estável (PA 115x70 mmHg, FC 98 bpm). Refere dor abdominal epigástrica intensa. Ao exame físico, apresenta discreta defesa abdominal na região mesogástrica, sem sinais de irritação peritoneal. Foi submetido a tomografia, sendo um corte da tomografia de abdome demonstrado na figura:\n\nQual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia com pancreaticoduodenectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Drenagem percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tratamento não operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laparotomia com pancreatectomia distal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso descreve um trauma abdominal contuso com achado tomografico tipico de lesao pancreatica grave. Na tomografia computadorizada de abdome, observa-se uma descontinuidade completa (fratura/transecção) do parenquima pancreatico na regiao do corpo/cauda (a esquerda da coluna vertebral e dos vasos mesentericos superiores), acompanhada de liquido peripancreatico. Pela classificacao da AAST (American Association for the Surgery of Trauma), trata-se de uma lesao pancreatica Grau III, caracterizada por transecção distal com comprometimento do ducto pancreatico principal (ducto de Wirsung).\n\nAnalise das alternativas:\n\na) Incorreta. A pancreaticoduodenectomia (cirurgia de Whipple) e reservada para lesoes proximais complexas e combinadas (Grau V), envolvendo destruicao macica da cabeca do pancreas e do duodeno. A lesao do paciente situa-se no corpo pancreatico (distal), tornando essa abordagem desnecessaria e desproporcional.\n\nb) Incorreta. A drenagem percutanea e uma opcao para o manejo de complicacoes tardias, como pseudocistos ou colecoes infectadas. Na fase aguda de uma fratura pancreatica com lesao ductal ativa, ela nao corrige o dano estrutural nem impede o extravasamento continuo de suco pancreatico.\n\nc) Incorreta. O tratamento nao operatorio e indicado apenas para traumas pancreaticos de baixo grau (Graus I e II), nos quais ha apenas contusao ou laceracao superficial sem violacao do ducto pancreatico principal. A interrupcao ductal exige intervencao cirurgica para evitar pancreatite necrotizante e peritonite quimica grave.\n\nd) Correta. O tratamento de escolha para a lesao pancreatica Grau III (transecção a esquerda dos vasos mesentericos com lesao ductal) e a laparotomia com pancreatectomia distal, com ou sem preservacao esplenica. A resseccao do segmento distal desvitalizado controla o extravasamento enzimatico e previne fistulas e colecoes retroperitoneais de alta morbimortalidade.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/368f913f11eeb336990f5cf3dd30f4241e52fcdcd3024c44504025e78d3fe12d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ca34c513-5c82-478a-bdba-a0086a7628e7_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:55.178Z"
+  },
+  {
+    "id": "AJUDA_ca3ad92e-3128-4f55-9cd1-cdb1af327f97",
+    "originalId": "ca3ad92e-3128-4f55-9cd1-cdb1af327f97",
+    "statement": "Lactente de 8 meses é internado em Hospital Pediátrico de referência para investigação de quadro de baixo ganho de peso, quadros recorrentes de desidratação, associados a vômitos. A oferta de alimentos sempre foi adequada e já foram descartadas causas gastrointestinais. Parcial de urina: Densidade: 1005, pH: 5; proteína: 1+, glicose: 2+, hemoglobina: negativo, corpos cetônicos negativo, nitrito negativo, Hemácias: 2000/mL, Leucócitos <1.000/mL. Solicitam novo exame que mantém a glicosúria e a proteinúria, ao exame de sangue, apresenta função renal normal, hipocalemia e acidose metabólica. Qual a sua principal suspeita neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cetoacidose diabética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acidose tubular renal tipo 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diabetes insipidus nefrogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acidose tubular renal tipo 2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Síndrome de Bartter.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um lactente com baixo ganho ponderal, episódios de desidratação e vômitos, o que sugere uma patologia sistêmica ou renal crônica. O ponto-chave para o diagnóstico está nos exames complementares:\n\n1. Acidose metabólica com hipocalemia: Indica perda de base (bicarbonato) ou ganho de ácido, associada à perda de potássio.\n2. Glicosúria com função renal normal: Quando há glicose na urina sem que os níveis sanguíneos de glicose estejam elevados (hiperglicemia), sabemos que o problema está na reabsorção tubular proximal de glicose.\n3. Proteinúria: Reforça a lesão tubular, pois proteínas de baixo peso molecular deixam de ser reabsorvidas no túbulo proximal.\n4. pH urinário de 5: Este dado é fundamental. Ele mostra que o túbulo distal ainda é capaz de acidificar a urina.\n\nEsses achados compõem a Síndrome de Fanconi, que é o conjunto de disfunções do túbulo contorcido proximal (perda de glicose, aminoácidos, fosfato, bicarbonato e ácido úrico). A manifestação de acidose tubular renal decorrente dessa falha proximal é classificada como tipo 2.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA Acidose Tubular Renal (ATR) tipo 2, ou proximal, ocorre devido à incapacidade do túbulo proximal em reabsorver o bicarbonato filtrado. Como o túbulo proximal também é responsável pela reabsorção de glicose e proteínas, sua disfunção frequentemente causa glicosúria e proteinúria tubular, mesmo com glicemia normal. O pH urinário pode estar baixo (menor que 5,5) porque, uma vez que o nível de bicarbonato no sangue cai abaixo do limiar de reabsorção, o túbulo distal (que está íntegro) consegue secretar íons H+ e acidificar a urina.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Cetoacidose diabética: Embora cause glicosúria e acidose metabólica, o exame de urina do paciente mostra corpos cetônicos negativos. Além disso, a glicosúria na cetoacidose é secundária à hiperglicemia acentuada, e não a um defeito renal primário.\n\nb) Acidose tubular renal tipo 1: A ATR tipo 1 (distal) ocorre por incapacidade do túbulo distal de secretar íons H+. A principal diferença é que, na tipo 1, o pH urinário é obrigatoriamente alcalino (maior que 5,5), pois o rim não consegue acidificar a urina. Além disso, a ATR tipo 1 não costuma apresentar glicosúria.\n\nc) Diabetes insipidus nefrogênico: Caracteriza-se pela incapacidade de concentrar a urina devido à resistência à ação do ADH. Causa poliúria, desidratação e densidade urinária baixa, mas não justifica a acidose metabólica, a glicosúria ou a proteinúria observadas no caso.\n\ne) Síndrome de Bartter: É uma tubulopatia que cursa com hipocalemia, mas o distúrbio ácido-básico característico é a ALCALOSE metabólica (semelhante ao uso crônico de diuréticos de alça), e não a acidose metabólica.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:55.178Z"
+  }
+]

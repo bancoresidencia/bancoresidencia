@@ -1,0 +1,528 @@
+[
+  {
+    "id": "AJUDA_525c6611-fac0-4d96-bcbf-dfb54998c75f",
+    "originalId": "525c6611-fac0-4d96-bcbf-dfb54998c75f",
+    "statement": "Você é médico de uma Unidade de Saúde da Família (USF) e participa de uma reunião da Secretaria Municipal de Saúde. Durante a apresentação do relatório anual, são mostrados os seguintes indicadores do município:\n\n• Taxa de mortalidade infantil: 28 por 1.000 nascidos vivos.\n• Razão de mortalidade materna: 95 por 100.000 nascidos vivos.\n• Cobertura vacinal contra poliomielite: 72%.\n• Proporção de internações por condições sensíveis à atenção primária (ICSAP): 23%.\n\nAo discutir esses resultados com a equipe de gestão, qual é a interpretação mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A mortalidade infantil ainda é preocupante, mas a mortalidade materna está próxima do aceitável, restando como maior desafio a ampliação da cobertura vacinal e o acompanhamento dos indicadores hospitalares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os resultados mostram avanços parciais, já que a mortalidade infantil é menor que 50/1.000, mas a baixa cobertura vacinal e a proporção de ICSAP mantêm o município em situação de vulnerabilidade sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A taxa de ICSAP chama atenção como indicador de desempenho da atenção básica e a cobertura vacinal está adequada, porém a mortalidade infantil e materna precisam ser analisadas a parte pois sofrem influência de determinantes sociais além do setor saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A mortalidade infantil está acima da meta nacional, a mortalidade materna também se encontra elevada e a cobertura vacinal é insuficiente, exigindo revisão das estratégias locais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Os indicadores estão dentro de patamares considerados satisfatórios para municípios de médio porte, não havendo necessidade imediata de mudanças significativas na política de saúde local.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para analisar esta questão, é fundamental conhecer os parâmetros e metas dos principais indicadores de saúde pública utilizados no Brasil. Vamos avaliar cada dado apresentado no relatório:\n\n1. Taxa de Mortalidade Infantil (TMI): O valor de 28 por 1.000 nascidos vivos é considerado alto. Embora o Brasil tenha reduzido significativamente a TMI nas últimas décadas, o patamar atual do país gira em torno de 12 a 13 por 1.000. Valores próximos a 30 indicam precariedade no pré-natal, na assistência ao parto e nas condições de saneamento.\n\n2. Razão de Mortalidade Materna (RMM): O valor de 95 por 100.000 nascidos vivos é muito elevado. A meta dos Objetivos de Desenvolvimento Sustentável (ODS) da ONU, da qual o Brasil é signatário, é reduzir esse indicador para menos de 70 por 100.000 até 2030. No Brasil, valores acima de 60 já são considerados críticos.\n\n3. Cobertura Vacinal contra Poliomielite: O índice de 72% é insuficiente e perigoso. O Ministério da Saúde e a Organização Mundial da Saúde (OMS) estabelecem uma meta mínima de 95% de cobertura para a pólio, visando garantir a imunidade de rebanho e evitar a reintrodução do vírus.\n\n4. Proporção de Internações por Condições Sensíveis à Atenção Primária (ICSAP): O índice de 23% indica que quase um quarto das internações hospitalares do município ocorre por causas que deveriam ter sido resolvidas ou controladas na Unidade de Saúde da Família (como crises hipertensivas, descompensação de diabetes ou infecções urinárias). Isso sugere falhas na resolutividade da Atenção Básica.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A mortalidade materna de 95 por 100.000 está longe de ser aceitável; ela é quase o dobro do que seria esperado para um sistema de saúde bem estruturado.\n\nAlternativa b) Incorreta. Embora a TMI seja menor que 50/1.000 (critério que era usado antigamente para definir mortalidade \"muito alta\"), o valor de 28/1.000 ainda é inaceitável para os padrões brasileiros atuais e não pode ser visto como um \"avanço parcial\" satisfatório no contexto da gestão.\n\nAlternativa c) Incorreta. A afirmação de que a cobertura vacinal está adequada é falsa, pois 72% estão muito abaixo da meta de 95%. Além disso, embora os determinantes sociais influenciem a mortalidade, esses indicadores são ferramentas diretas de avaliação da qualidade do setor saúde.\n\nAlternativa d) CORRETA. Esta alternativa faz o diagnóstico preciso da situação: a mortalidade infantil está alta (acima da média nacional e das metas locais), a mortalidade materna está elevada e a cobertura vacinal é nitidamente insuficiente para proteger a população. Isso exige uma revisão imediata das ações da Atenção Primária e da Vigilância em Saúde.\n\nAlternativa e) Incorreta. Os indicadores estão em níveis críticos. Aceitá-los como \"satisfatórios\" representaria uma negligência na gestão de saúde pública, visto que há riscos epidemiológicos (pólio) e falhas graves na assistência à mulher e à criança.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:49.795Z"
+  },
+  {
+    "id": "AJUDA_526ce82a-b2c1-48ee-9820-fc7bf1f34ad9",
+    "originalId": "526ce82a-b2c1-48ee-9820-fc7bf1f34ad9",
+    "statement": "Multípara de 43 anos, lactante no 2º mês de amamentação, procura atendimento afirmando área de hiperemia e dor no quadrante superior-lateral de mama esquerda, há 5 dias. Relata que, inicialmente, a área afetada era próxima à aréola e que depois foi se estendendo para a região axilar homolateral. Verifica-se ponto de flutuação e adenopatia dolorosa na axila esquerda. Paciente febril no momento do atendimento. \n\nDiante desse quadro, deve-se realizar",
+    "options": [
+      {
+        "id": "A",
+        "text": "drenagem cirúrgica sobre o ponto de flutuação, com prosseguimento de amamentação em ambas as mamas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "drenagem com agulha fina guiada por ultrassonografia, com prosseguimento de amamentação pela mama contralateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "antibioticoterapia durante 7 dias, com lactação mantida, desde que o leite produzido pela mama afetada seja fervido antes de oferecê-lo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "mamografia para descartar carcinoma inflamatório de mama, seguida de punção esvaziadora e de suspensão de amamentação até o resultado do anatomopatológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma paciente em período de lactação (2º mês de amamentação) com sinais inflamatórios clássicos de mastite puerperal (dor, calor, rubor e febre) que evoluiu com um ponto de flutuação. A presença de flutuação é o sinal clínico patognomônico de um abscesso mamário, uma das principais complicações da mastite quando o tratamento inicial falha ou a estase láctea persiste.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: O tratamento padrão para o abscesso mamário com ponto de flutuação evidente é a drenagem. Esta pode ser realizada por punção com agulha grossa ou, mais comumente no caso de abscessos maiores e superficiais, pela drenagem cirúrgica (incisão e drenagem). Fundamentalmente, a amamentação não deve ser interrompida. Manter a amamentação ou o esvaziamento da mama é essencial para o tratamento, pois a estase láctea é o fator que perpetua a infecção. O leite não é prejudicial ao lactente, exceto se houver saída direta de pus pelo mamilo (o que é raro, já que o abscesso geralmente ocorre no estroma mamário).\n\nAlternativa (b) INCORRETA: Embora a drenagem guiada por ultrassonografia seja uma opção moderna para abscessos menores e para evitar cicatrizes, a conduta de suspender a amamentação na mama afetada está incorreta. A interrupção da lactação na mama doente piora o ingurgitamento, favorece a proliferação bacteriana e aumenta o risco de recorrência do abscesso.\n\nAlternativa (c) INCORRETA: A antibioticoterapia é necessária no tratamento da mastite e do abscesso, mas se houver coleção purulenta (flutuação), o uso isolado de antibióticos não é suficiente; o esvaziamento do pus é obrigatório. Além disso, a recomendação de ferver o leite materno é totalmente equivocada, pois o calor destrói os anticorpos e nutrientes do leite, além de ser um procedimento desnecessário do ponto de vista infeccioso no manejo desta patologia.\n\nAlternativa (d) INCORRETA: A mamografia não é o exame inicial de escolha para pacientes lactantes devido à alta densidade mamária nesse período, que reduz a sensibilidade do exame; o ultrassom é o exame preferencial. Embora o carcinoma inflamatório seja um diagnóstico diferencial importante em mastites que não respondem ao tratamento, o quadro clínico atual (febre aguda e flutuação em lactante) é típico de abscesso bacteriano. A suspensão da amamentação e a punção esvaziadora seguida de interrupção da lactação não são condutas recomendadas.\n\nRESUMO DO MANEJO: \nDiante de abscesso mamário puerperal: \n1. Esvaziamento da coleção (drenagem cirúrgica ou punção aspirativa). \n2. Antibioticoterapia sistêmica (geralmente cobrindo Staphylococcus aureus). \n3. Manutenção da amamentação ou ordenha rigorosa (esvaziamento mamário). \n4. Analgesia e suporte local.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Aleitamento Materno",
+      "Doenças Benignas da Mama"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:49.795Z"
+  },
+  {
+    "id": "AJUDA_526d5fb8-893a-4c22-9f4b-a338fa635f37",
+    "originalId": "526d5fb8-893a-4c22-9f4b-a338fa635f37",
+    "statement": "Homem de 62 anos queixa-se de dispneia e dor torácica aos esforços e astenia por duas semanas. É portador de hipertensão arterial sistêmica e doença renal crônica (creatinina basal 2,9mg/dL; clearance de creatina 24mL/min/1,73 m²). EXAMES DE LABORATÓRIO: hemoglobina 6,4g/dL; VCM 75fL; HCM 25pg; CHCM 29g/dL; RDW 16,5%; leucócitos 6.500/mm³; neutrófilos 3.560/mm³; ferritina 20pmol/L; índice de saturação da transferrina 6%. Assinale a alternativa que apresenta uma conduta inicial INADEQUADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrição de eritropoietina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prescrição de sal férrico parenteral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitação de endoscopia digestiva alta e colonoscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transfusão de concentrado de hemácias",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão apresenta um quadro de anemia grave (Hb 6,4 g/dL), classificada morfologicamente como microcítica e hipocrômica (VCM e HCM baixos) com RDW elevado. Os estoques de ferro estão exauridos, como demonstram a ferritina muito baixa (20 pmol/L) e a saturação de transferrina crítica (6%). Além disso, trata-se de um paciente idoso, portador de Doença Renal Crônica (DRC) estágio 4, que apresenta sintomas de instabilidade clínica ou má perfusão tecidual (dor torácica e dispneia aos esforços), sugerindo sofrimento miocárdico pela baixa oferta de oxigênio.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ INCORRETA (CONDUTA INADEQUADA):\n\nA prescrição de eritropoietina (EPO) é a conduta inadequada neste momento por dois motivos principais. Primeiro, a eritropoietina não deve ser iniciada ou terá sua eficácia nula se não houver estoques adequados de ferro (ferritina e saturação de transferrina). No caso, o paciente tem uma deficiência absoluta de ferro grave. Segundo, o paciente apresenta sintomas de urgência (dor torácica e anemia severa com Hb < 7 g/dL), e a EPO demora semanas para elevar os níveis de hemoglobina, não sendo adequada para o manejo agudo de um paciente sintomático. Portanto, a prioridade é a estabilização e a reposição de ferro.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO CORRETAS (CONDUTAS ADEQUADAS):\n\nb) Prescrição de sal férrico parenteral: Está correta. O paciente possui deficiência absoluta de ferro (ferritina < 100 ng/mL e saturação < 20% no contexto da DRC). Em pacientes com doença renal crônica avançada e anemia grave, a reposição por via parenteral (intravenosa) é preferível à via oral, pois garante uma reposição mais rápida, contorna problemas de absorção e prepara o organismo para uma futura resposta à eritropoietina.\n\nc) Solicitação de endoscopia digestiva alta e colonoscopia: Está correta. Em um homem de 62 anos com anemia ferropriva (deficiência de ferro), é obrigatório investigar a causa da perda. A principal suspeita deve ser perda crônica pelo trato gastrointestinal, sendo necessário excluir neoplasias (como câncer de cólon) ou lesões ulcerosas, independentemente da presença de doença renal.\n\nd) Transfusão de concentrado de hemácias: Está correta. Embora em pacientes estáveis o gatilho transfusional costume ser Hb < 7 g/dL, a presença de sintomas isquêmicos (dor torácica/angina) e dispneia em um paciente com Hb 6,4 g/dL torna a transfusão uma medida imediata necessária para restaurar a oferta de oxigênio aos tecidos e evitar um infarto agudo do miocárdio ou descompensação cardíaca.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Anemias",
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:49.795Z"
+  },
+  {
+    "id": "AJUDA_526efa00-0b46-4680-ac8a-acc3cc6d4ee7",
+    "originalId": "526efa00-0b46-4680-ac8a-acc3cc6d4ee7",
+    "statement": "Mulher de 45 anos, residente de uma área rural no Brasil, morreu após complicações da doença de Chagas, não tendo acesso ao tratamento adequado. Em uma comunidade isolada na Etiópia, outra mulher de 30 anos faleceu devido a uma forma grave de leishmaniose visceral, agravada pela falta de saneamento básico e controle de vetores. No Sudeste Asiático, homem de 56 anos foi vítima de filariose, após conviver durante anos com a doença sem acesso a terapias preventivas e curativas. Esses casos ilustram o desafio global de combater essas enfermidades, especialmente em regiões de alta vulnerabilidade. Com base nas metas da OMS para a erradicação ou controle das doenças negligenciadas até 2030, as ações mais efetivas para alcance de resultados e melhoria da saúde de populações vulneráveis são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Priorizar o financiamento de pesquisas em países desenvolvidos, onde empresas farmacêuticas têm mais recursos para desenvolver vacinas e medicamentos de alto custo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Concentrar esforços em tratamentos emergenciais e curativos, já que a meta da OMS foca na eliminação das doenças por meio da cura das pessoas afetadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Centralizar as decisões de controle de doenças negligenciadas na OMS, garantindo que essa organização determine as prioridades para eliminar essas doenças em escala global.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fortalecer investimentos em tecnologias emergentes e parcerias com grandes centros de pesquisa, utilizando orçamento derivado de fontes próprias dos países afetados e com liderança técnica da OMS e dos países centrais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ampliar a colaboração internacional entre países afetados e desenvolvidos, também considerando o impacto das mudanças climáticas e da migração.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O tema central desta questão são as Doenças Tropicais Negligenciadas (DTNs) e o Plano de Ação da Organização Mundial da Saúde (OMS) para 2021-2030. O objetivo dessas metas é reduzir drasticamente a carga dessas doenças por meio de abordagens transversais e integradas, abandonando o foco apenas em programas isolados para cada enfermidade.\n\nAlternativa A: Incorreta. Priorizar pesquisas apenas em países desenvolvidos e focar em medicamentos de alto custo vai contra o princípio da equidade. As doenças negligenciadas afetam populações de baixa renda; portanto, a inovação deve ser acessível e, muitas vezes, desenvolvida localmente ou em colaboração direta com os países endêmicos para garantir aplicabilidade e baixo custo.\n\nAlternativa B: Incorreta. Embora o tratamento curativo seja importante, as metas da OMS para 2030 enfatizam a prevenção, o controle de vetores, o saneamento básico e o diagnóstico precoce. Focar apenas em tratamentos emergenciais é uma estratégia reativa que não interrompe a cadeia de transmissão nem promove a eliminação das doenças.\n\nAlternativa C: Incorreta. A estratégia atual da OMS recomenda o \"country ownership\" (protagonismo dos países), ou seja, as decisões e prioridades devem ser lideradas pelos governos locais e comunidades afetadas, e não centralizadas apenas na organização internacional. A OMS atua como guia técnico e coordenadora, mas a execução e a liderança devem ser nacionais.\n\nAlternativa D: Incorreta. Atribuir a responsabilidade do financiamento apenas ao orçamento próprio dos países afetados é inviável, visto que essas nações geralmente enfrentam grandes vulnerabilidades econômicas. Além disso, a liderança técnica deve ser compartilhada, e não centrada apenas nos \"países centrais\".\n\nAlternativa E: Correta. Esta alternativa reflete os pilares do novo roteiro da OMS. O combate às DTNs exige cooperação global, reconhecendo que fatores contemporâneos, como as mudanças climáticas (que alteram a distribuição geográfica de vetores) e os fluxos migratórios, influenciam diretamente a epidemiologia dessas doenças. A colaboração internacional é essencial para o compartilhamento de recursos, tecnologias e estratégias de vigilância em saúde.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Parasitoses",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:49.795Z"
+  },
+  {
+    "id": "AJUDA_527d51d5-02fd-4b56-a9c6-51bcc1f69888",
+    "originalId": "527d51d5-02fd-4b56-a9c6-51bcc1f69888",
+    "statement": "Qual a vacina aplicada ao nascimento, de acordo com o Programa Nacional de Imunizações (PNI) e reforçada em tratados de pediatria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DTP",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tríplice viral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "BCG e Hepatite B",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Influenza",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Varicela",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o conhecimento do Calendário Nacional de Vacinação do Ministério da Saúde (PNI) para o período neonatal.\n\nAlternativa A: Incorreta. A vacina DTP (difteria, tétano e coqueluche) não é administrada ao nascimento. No esquema básico atual, ela faz parte da vacina pentavalente (junto com hepatite B e *Haemophilus influenzae* tipo b), que é aplicada aos 2, 4 e 6 meses de idade. Reforços isolados com DTP ocorrem aos 15 meses e aos 4 anos.\n\nAlternativa B: Incorreta. A vacina tríplice viral protege contra sarampo, caxumba e rubéola. De acordo com o PNI, a primeira dose deve ser administrada apenas aos 12 meses de idade.\n\nAlternativa C: Correta. Segundo o Programa Nacional de Imunizações e os principais tratados de pediatria (como os da Sociedade Brasileira de Pediatria), as vacinas aplicadas rotineiramente ao nascimento, ainda na maternidade, são a BCG e a hepatite B. A BCG (Bacilo Calmette-Guérin) é administrada em dose única, por via intradérmica, visando à prevenção de formas graves de tuberculose (miliar e meníngea). A vacina contra hepatite B deve ser aplicada preferencialmente nas primeiras 12 horas de vida para prevenir a transmissão vertical do vírus.\n\nAlternativa D: Incorreta. A vacina influenza não faz parte do esquema de nascimento. Ela é indicada para crianças a partir dos 6 meses de idade, geralmente em esquemas de duas doses iniciais com intervalo de um mês e, posteriormente, em doses anuais durante as campanhas de vacinação.\n\nAlternativa E: Incorreta. A vacina contra a varicela é administrada mais tardiamente. No PNI, a primeira dose é feita aos 15 meses (geralmente na formulação tetraviral: SCR + varicela) e a segunda dose aos 4 anos de idade.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:49.795Z"
+  },
+  {
+    "id": "AJUDA_527fcc49-aa48-4c42-a5b3-774e60fdd147",
+    "originalId": "527fcc49-aa48-4c42-a5b3-774e60fdd147",
+    "statement": "Mulher, 21 anos de idade, teve uma relação sexual desprotegida e foi orientada a usar um método contraceptivo de emergência na UBS. Essa conduta está corretamente indicada caso essa paciente tenha",
+    "options": [
+      {
+        "id": "A",
+        "text": "feito uso isolado de espermicida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "esquecido 1 pílula combinada por 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tido atraso de 1 semana na aplicação do injetável trimestral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "removido anel vaginal por mais de 2 horas na 3ª semana de uso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tido relação após 14 dias do parto, se não estiver amamentando.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão aborda os critérios de indicação para a anticoncepção de emergência (AE), também conhecida como \"pílula do dia seguinte\". A AE deve ser utilizada para prevenir uma gravidez indesejada após uma relação sexual desprotegida ou em casos de falha potencial do método anticonceptivo em uso.\n\nAlternativa (a) - CORRETA: O uso isolado de espermicida apresenta uma taxa de falha muito elevada e não é considerado um método contraceptivo eficaz quando utilizado sem uma barreira associada (como o diafragma). Segundo os manuais do Ministério da Saúde e da Organização Mundial da Saúde, o uso de métodos de barreira de forma incorreta ou o uso isolado de espermicidas em uma relação sexual é uma indicação clássica para a anticoncepção de emergência.\n\nAlternativa (b) - INCORRETA: No caso das pílulas combinadas (estrogênio + progesterona), o esquecimento de apenas uma pílula, independentemente do tempo (mesmo que por 24 horas), não exige anticoncepção de emergência. A recomendação é tomar a pílula esquecida assim que lembrar e seguir com as demais no horário habitual. A AE só passaria a ser considerada se houvesse o esquecimento de 3 ou mais pílulas (alguns protocolos sugerem a partir de 2), especialmente na primeira semana da cartela.\n\nAlternativa (c) - INCORRETA: O anticonceptivo injetável trimestral (acetato de medroxiprogesterona) possui uma margem de segurança para a sua aplicação. Embora o ideal seja aplicar a cada 12 semanas (84 dias), as diretrizes da OMS e do Ministério da Saúde permitem um atraso de até 2 semanas (14 dias) além da data prevista sem que haja necessidade de proteção adicional ou anticoncepção de emergência. Um atraso de apenas 1 semana está dentro da margem de segurança.\n\nAlternativa (d) - INCORRETA: Para o anel vaginal, a conduta depende do tempo em que ele ficou fora da vagina e da semana de uso. Se o anel for removido ou expelido por mais de 3 horas na 3ª semana de uso, a recomendação é descartar esse anel e inserir um novo imediatamente (iniciando um novo ciclo de 3 semanas) ou antecipar a pausa de 7 dias. A anticoncepção de emergência não é a conduta padrão nessa situação, pois a inibição do eixo hipotálamo-hipófise-gonadal já ocorreu nas duas semanas anteriores.\n\nAlternativa (e) - INCORRETA: No pós-parto de mulheres que não estão amamentando, a ovulação geralmente não ocorre antes do 21º dia. Portanto, o risco de gravidez em uma relação sexual ocorrida no 14º dia pós-parto é considerado desprezível, não havendo indicação formal para anticoncepção de emergência. A orientação seria iniciar um método anticonceptivo de rotina a partir do 21º dia.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:49.795Z"
+  },
+  {
+    "id": "AJUDA_52838250-f6b2-406f-9bab-84b4596c0e60",
+    "originalId": "52838250-f6b2-406f-9bab-84b4596c0e60",
+    "statement": "Um paciente chega ao pronto socorro do Hospital de Urgências de Sergipe com relato de colisão entre automóveis. A equipe do SAMU informa FC: 135bpm, PA: 80x40mmHg, FR: 26 incursões/min. A vítima encontra-se agitada, com via aérea pérvea e em protocolo de imobilização. Ausência de murmúrio vesicular no hemitórax direito e desvio da traqueia para a esquerda e Sat O2: 86% com uso de O2. Diante do quadro apresentado, qual é a melhor conduta para resolução do quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intubação orotraqueal em sequência rápida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Raio-X de tórax no leito, de urgência, para definição diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reposição volêmica agressiva, tipagem sanguínea e hemotransfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laparotomia exploradora de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Descompressão torácica no quinto espaço intercostal seguida de drenagem torácica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um paciente vítima de trauma de alta energia (colisão automobilística) apresentando sinais clássicos de pneumotórax hipertensivo. Os achados fundamentais para esse diagnóstico são:\n1. Instabilidade hemodinâmica: Hipotensão (80x40 mmHg) e taquicardia (135 bpm), caracterizando um choque obstrutivo.\n2. Insuficiência respiratória: Taquipneia (26 irpm) e baixa saturação de oxigênio (86%), mesmo com suplementação.\n3. Exame físico direcionado: Ausência de murmúrio vesicular à direita, associada ao desvio da traqueia para o lado contralateral (esquerda).\n\nO pneumotórax hipertensivo ocorre quando o ar entra no espaço pleural, mas não consegue sair, criando um mecanismo de válvula. Isso aumenta a pressão intratorácica, comprime o pulmão ipsilateral, desvia o mediastino e, crucialmente, comprime as veias cavas, reduzindo o retorno venoso e levando ao choque.\n\nCOMENTÁRIOS SOBRE AS ALTERNATIVAS\n\nAlternativa A: Incorreta. A intubação orotraqueal (IOT) em um paciente com pneumotórax hipertensivo não resolvido é perigosa. A ventilação por pressão positiva pode aumentar rapidamente a pressão intratorácica, agravando o mecanismo de válvula e levando à parada cardiorrespiratória imediata por colapso circulatório. A descompressão deve preceder a intubação.\n\nAlternativa B: Incorreta. O diagnóstico de pneumotórax hipertensivo é estritamente clínico. Em um paciente instável, a solicitação de exames de imagem como o raio X retarda o tratamento definitivo e pode ser fatal. Não se espera imagem para tratar o que o exame físico já revelou.\n\nAlternativa C: Incorreta. Embora o paciente esteja chocado, a causa primária nesse momento é obstrutiva (pneumotórax) e não puramente hipovolêmica. A reposição volêmica agressiva não resolverá o impedimento mecânico ao retorno venoso causado pela pressão no tórax. A prioridade é aliviar a pressão intratorácica.\n\nAlternativa D: Incorreta. O quadro clínico direciona claramente para uma patologia torácica. Não há sinais de irritação peritoneal ou evidências que justifiquem uma intervenção abdominal como prioridade antes da estabilização respiratória e hemodinâmica do tórax.\n\nAlternativa E: Correta. Esta é a conduta imediata preconizada pelo protocolo ATLS (10ª edição). Diante da suspeita clínica de pneumotórax hipertensivo em paciente instável, deve-se realizar a descompressão torácica imediata. Atualmente, recomenda-se a descompressão por agulha ou digital no quinto espaço intercostal, entre a linha axilar anterior e média (no adulto), seguida obrigatoriamente pela drenagem torácica fechada (selo d'água) para resolução definitiva.\n\nCONCLUSÃO\n\nA alternativa E descreve corretamente a sequência de salvamento para o pneumotórax hipertensivo, priorizando a descompressão para restaurar o retorno venoso e a estabilidade hemodinâmica, seguida do dreno de tórax.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 21.76719548797244,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:49.795Z"
+  },
+  {
+    "id": "AJUDA_528a9774-6af6-485a-aaaa-5b17b90c4880",
+    "originalId": "528a9774-6af6-485a-aaaa-5b17b90c4880",
+    "statement": "M.A.C., 68 anos, foi admitida na UTI devido a uma hemorragia digestiva alta grave, secundária a uma úlcera gástrica. Seu quadro inicial evoluiu para choque hipovolêmico, exigindo múltiplas transfusões de concentrado de hemácias, nas 4 horas seguintes ao final da última transfusão, a paciente desenvolveu dispneia progressiva e taquipneia. A ausculta pulmonar revelou estertores finos bilaterais, e a saturação de oxigênio caiu para 88% em ar ambiente. Ao exame físico a pressão arterial permaneceu estável, e não havia sinais de sobrecarga hídrica e nem febre. Os exames complementares mostraram uma relação PaO2/FiO2 (P/F): 110 e radiografia de tórax abaixo. Em relação ao diagnóstico assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caso a paciente evolua para ventilação mecânica deve-se optar por ventilações com alto volume corrente por quilo para se obter uma melhora da sobrevida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Embora muitas doenças clínicas e cirúrgicas estejam associadas ao desenvolvimento de SARA, a maioria dos casos (> 80%) é causada por pneumonia e sepse (cerca de 40 a 60%).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Caso a paciente evolua para ventilação mecânica, não haveria benefício em mantê-la em posição prona uma vez que melhora a oxigenação arterial sem benefício na mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pacientes com SARA devem ser manejados evitando a restrição hídrica uma vez que a diminuição do enchimento atrial esquerdo é associado com maior mortalidade por hipoperfusão renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de uma SARA (síndrome da angústia respiratória aguda) grave por lesão pulmonar direta ocasionado pelo aumento de volume circulante gerado pelas múltiplas transfusões de sangue.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um quadro de insuficiência respiratória aguda hipoxêmica, com relação PaO2/FiO2 de 110 (caracterizando SARA moderada a grave pelos critérios de Berlim), infiltrado pulmonar bilateral na radiografia e ausência de sinais de sobrecarga hídrica ou falha cardíaca. O gatilho foi a transfusão de hemácias, sugerindo TRALI (Lesão Pulmonar Aguda Relacionada à Transfusão), que se manifesta clinicamente como uma SARA.\n\nAnálise das alternativas:\n\na) Incorreta. Na SARA, a ventilação mecânica deve ser obrigatoriamente protetora. Isso significa utilizar baixo volume corrente (6 mL/kg de peso predito) e limitar as pressões de distensão (pressão de platô e driving pressure). O uso de alto volume corrente causa volutrauma e aumenta significativamente a mortalidade.\n\nb) Correta. Esta alternativa apresenta uma afirmação epidemiológica correta sobre a SARA. Embora o caso específico da paciente seja provocado por uma transfusão (TRALI), de forma global, a sepse (incluindo o foco pulmonar/pneumonia) é o principal fator de risco e causa mais de 80% dos casos da síndrome em unidades de terapia intensiva.\n\nc) Incorreta. Em pacientes com SARA grave (relação PaO2/FiO2 menor que 150), a posição prona é uma intervenção com evidência robusta de redução de mortalidade, conforme demonstrado pelo estudo PROSEVA. Ela melhora a relação ventilação/perfusão e reduz a lesão induzida pelo ventilador.\n\nd) Incorreta. O manejo hídrico na SARA deve seguir uma estratégia conservadora (restritiva). O estudo FACTT demonstrou que manter um balanço hídrico mais seco melhora a função pulmonar e reduz o tempo de ventilação mecânica, sem causar prejuízo à função renal ou aumentar a mortalidade.\n\ne) Incorreta. A alternativa confunde dois conceitos. O edema pulmonar causado pelo \"aumento do volume circulante\" após transfusão é a TACO (Sobrecarga Circulatória Associada à Transfusão), que é um edema hidrostático. A SARA (incluindo a TRALI) é um edema inflamatório por lesão da membrana alvéolo-capilar (aumento de permeabilidade). Além disso, a transfusão é classificada como uma causa de lesão pulmonar indireta.\n\nAnálise da imagem: A radiografia de tórax exibe opacidades alvéolo-intersticiais bilaterais difusas (pulmão branco), com presença de brônquios aerados e sem evidências claras de aumento da silhueta cardíaca ou derrame pleural volumoso, o que é típico do edema pulmonar não cardiogênico da SARA.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Síndrome do Desconforto Respiratório Agudo",
+      "Medicina Transfusional",
+      "Hemorragia Digestiva Alta Não Varicosa",
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/63cfa88ff791575ac02f00700e337a9b1c6db00eb572df3691033bcd17e1205a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_528a9774-6af6-485a-aaaa-5b17b90c4880_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:50.529Z"
+  },
+  {
+    "id": "AJUDA_528da1b2-4239-4969-9cf1-429ab5017465",
+    "originalId": "528da1b2-4239-4969-9cf1-429ab5017465",
+    "statement": "Paciente de 25 anos, previamente sem queixas ginecológicas, procura o PS de Ginecologia com quadro de dor em baixo-ventre de forte intensidade associada à febre nos últimos 3 dias. Vida sexual ativa, sem método contraceptivo no momento. Na admissão apresentava-se normotensa, temperatura axilar de 38,5 °C, frequência cardíaca de 100 bpm. No exame físico tinha descompressão brusca abdominal dolorosa, dor à mobilização de colo uterino ao toque bimanual e à palpação de fundo de saco de Douglas, além de cervicite mucopurulenta no exame especular. Presença de leucocitose com desvio à esquerda e aumento de 5 vezes o valor de referência laboratorial para PCR. USG transvaginal mostrava imagens anexiais bilaterais, 7 cm à direita e 9 cm à esquerda, com conteúdo heterogêneo e debris no seu interior, sem fluxo vascular ao doppler, com moderada quantidade de líquido livre na cavidade pélvica. Qual a principal hipótese diagnóstica e a melhor conduta nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença inflamatória pélvica aguda grau III (abcesso tubo ovariano roto) - internação para antibioticoterapia de amplo espectro e drenagem de abcesso tubo ovariano por videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tumor de ovário estadiamento IIIC (doença extra-pélvica). Indicado laparoscopia diagnóstica para drenagem de ascite e realização de biópsia de congelação. Confirmando malignidade na congelação, avaliar citorredução primária (debulking).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença inflamatória pélvica aguda grau I/II - antibiótico de amplo espectro domiciliar. Retorno se piora ou manutenção da febre por mais 48-72 h para reavaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Endometriose profunda com endometriomas ovarianos bilaterais. Medicar com analgésicos e AINEs, bloquear menstruação com anticoncepcionais orais combinados e referenciar à centro especializado em endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Torção anexial aguda. Indicado cirurgia de urgência para tentativa de distorção ovariana e preservação gonadal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E CONDUTA NA DOENÇA INFLAMATÓRIA PÉLVICA (DIP)\n\nA paciente apresenta um quadro clínico clássico de Doença Inflamatória Pélvica (DIP). O diagnóstico é baseado nos critérios maiores e menores do Ministério da Saúde. No caso descrito, temos:\n1. Critérios maiores: Dor no baixo ventre, dor à mobilização do colo uterino e dor à palpação de anexos.\n2. Critérios menores: Febre (38,5 °C), cervicite mucopurulenta e marcadores inflamatórios elevados (leucocitose e PCR aumentada).\n3. Critério elaborado: Ultrassonografia com evidência de abscesso tubo-ovariano.\n\nCLASSIFICAÇÃO DE MONIF\nPara definir a conduta, utilizamos a classificação de Monif:\n- Grau I: Salpingite aguda sem peritonite.\n- Grau II: Salpingite aguda com peritonite.\n- Grau III: Salpingite com formação de abscesso tubo-ovariano íntegro.\n- Grau IV: Abscesso tubo-ovariano roto ou secreção purulenta na cavidade (peritonite generalizada).\n\nNo caso em questão, a paciente apresenta abscessos volumosos (7 cm e 9 cm) e sinais de irritação peritoneal (descompressão brusca dolorosa), o que a enquadra no Grau III (pela presença dos abscessos) evoluindo para o Grau IV (pela descompressão brusca e líquido livre), o que justifica a conduta cirúrgica e a internação.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Correta): O quadro é compatível com DIP Grau III/IV. A presença de abscessos maiores que 7-10 cm, sinais de peritonite e a falta de melhora clínica inicial (ou gravidade do quadro na admissão) indicam a necessidade de internação para antibioticoterapia venosa. A abordagem cirúrgica (preferencialmente por videolaparoscopia) é indicada em casos de abscesso roto, suspeita de rotura ou abscessos volumosos que apresentam risco de não responderem apenas ao tratamento medicamentoso.\n\nAlternativa B (Incorreta): Embora massas anexiais possam sugerir neoplasia, o quadro de início agudo, febre, cervicite mucopurulenta e elevação importante de marcadores inflamatórios (PCR e leucocitose com desvio) aponta fortemente para um processo infeccioso/inflamatório agudo (DIP) e não para câncer de ovário.\n\nAlternativa C (Incorreta): O tratamento domiciliar (ambulatorial) é restrito a pacientes com DIP Grau I, que estão hemodinamicamente estáveis, sem sinais de peritonite e sem abscessos. A presença de febre alta, sinais de irritação peritoneal e abscessos volumosos no ultrassom obriga à internação hospitalar para tratamento endovenoso e possível intervenção cirúrgica.\n\nAlternativa D (Incorreta): A endometriose profunda e os endometriomas ovarianos causam dor pélvica crônica, geralmente cíclica (relacionada à menstruação), e não costumam cursar com febre, leucocitose com desvio à esquerda e cervicite mucopurulenta. O quadro da paciente é claramente infeccioso agudo.\n\nAlternativa E (Incorreta): A torção anexial é um diagnóstico diferencial de dor pélvica aguda. No entanto, ela costuma ser unilateral, apresenta-se com ausência de fluxo ao Doppler (embora o Doppler possa ser normal em torções parciais) e não explicaria a cervicite mucopurulenta nem a bilateralidade das massas com conteúdo heterogêneo típicas de abscessos infectados no contexto de DIP. Além disso, a febre e o aumento de PCR 5x são mais característicos de processos sépticos/infecciosos.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:50.529Z"
+  },
+  {
+    "id": "AJUDA_529a7908-d461-4fc6-aba7-59ed7c2e22c9",
+    "originalId": "529a7908-d461-4fc6-aba7-59ed7c2e22c9",
+    "statement": "Dentre os possíveis fatores de risco para o desenvolvimento de infecções de sítio cirúrgico seguintes:\nI- ligados ao paciente: obesidade, diabetes, extremos de idade.\nII- ligados ao ambiente: esterilização ou desinfecção inadequada.\nIII- ligados ao tratamento: drenos, cirurgia de emergência, hipotermia.\nIV- ligados ao tratamento: tempo operatório prolongado, antissepsia cutânea inadequada.\n\nEstão corretos",
+    "options": [
+      {
+        "id": "A",
+        "text": "apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "apenas II e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "apenas I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "todos (I, II, III e IV).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise dos itens:\n\nItem I: Correto. Os fatores ligados ao paciente referem-se a condições intrínsecas que afetam a resposta imunológica e a capacidade de cicatrização. A obesidade aumenta o risco devido à menor vascularização do tecido adiposo; o diabetes prejudica a função dos leucócitos e a microcirculação; e os extremos de idade (neonatos e idosos) possuem sistemas imunológicos mais fragilizados ou imaturos.\n\nItem II: Correto. Fatores ambientais estão relacionados à infraestrutura e aos processos de higiene hospitalar. A falha na esterilização de instrumentais ou na desinfecção de superfícies e equipamentos do centro cirúrgico introduz patógenos exógenos diretamente no ambiente onde o procedimento ocorre, elevando as chances de contaminação.\n\nItem III: Correto. Fatores ligados ao tratamento envolvem o manejo clínico e as características da cirurgia. O uso de drenos cria uma comunicação entre o meio interno e externo, além de agir como corpo estranho. Cirurgias de emergência estão associadas a maiores taxas de infecção, pois muitas vezes não permitem a estabilização prévia do paciente. A hipotermia perioperatória causa vasoconstrição periférica, o que reduz a oferta de oxigênio aos tecidos e prejudica a atividade das células de defesa no sítio cirúrgico.\n\nItem IV: Correto. O tempo operatório prolongado aumenta a exposição dos tecidos ao ar e a fadiga da equipe, além de indicar procedimentos mais complexos e traumáticos. A antissepsia cutânea inadequada é um fator crítico, pois a pele do próprio paciente é a principal fonte de microrganismos (flora residente e transitória) que causam a infecção do sítio cirúrgico.\n\nConclusão: Todas as proposições estão corretas, pois listam fatores de risco amplamente reconhecidos na literatura médica e pelas diretrizes de controle de infecção (como as do CDC), agrupando-os adequadamente em categorias de origem do risco.\n\nGabarito: Letra (d).",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Perioperatório",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:50.529Z"
+  }
+]

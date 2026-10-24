@@ -1,0 +1,489 @@
+[
+  {
+    "id": "AJUDA_e0ea5eae-6922-4998-b158-c0c39260c15d",
+    "originalId": "e0ea5eae-6922-4998-b158-c0c39260c15d",
+    "statement": "Homem, 62 anos de idade, portador de hepatite C crônica, comparece ao Pronto-Socorro com hematêmese volumosa e melena há três dias. O paciente apresenta-se ictérico, com PA: 90x60mmHg, FR: 115bpm e confusão mental. Ao exame, há ascite moderada. A avaliação laboratorial revela hemoglobina de 5,8g/dL, plaquetas de 70.000/mm3, RNI: 2,5.\n\nO fator de mau prognóstico mais importante neste caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pressão arterial de 90x60mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Passado de etilismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Presença de ascite volumosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tempo de protrombina alargado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Este paciente apresenta um quadro clínico de hemorragia digestiva alta varicosa, decorrente de hipertensão portal por cirrose (etiologia: hepatite C). O quadro é grave, manifestando-se com instabilidade hemodinâmica (choque hipovolêmico), anemia severa e sinais de insuficiência hepática aguda sobre crônica.\n\nPara determinar o prognóstico de pacientes cirróticos em episódios de sangramento, a medicina baseia-se na reserva funcional do fígado, geralmente calculada pelos escores de Child-Pugh e MELD. O fator que melhor reflete a capacidade de sobrevivência do paciente não é apenas o volume de sangue perdido, mas sim o quanto o fígado ainda consegue exercer suas funções de síntese.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A pressão arterial de 90x60 mmHg indica que o paciente está em choque hipovolêmico. Embora seja um sinal de gravidade imediata que exige intervenção rápida com expansão volêmica e drogas vasoativas, a hipotensão é uma alteração fisiológica aguda. Em pacientes cirróticos, o sucesso do tratamento e a sobrevida após o controle do sangramento dependem muito mais da função hepática residual do que do estado hemodinâmico inicial.\n\nAlternativa b) Incorreta. O histórico de etilismo é um dado epidemiológico e etiológico. Ele ajuda a entender a causa da cirrose, mas não serve como marcador prognóstico para o desfecho de um episódio agudo de hematêmese.\n\nAlternativa c) Incorreta. A ascite é um sinal de descompensação da cirrose e de hipertensão portal, sendo um dos critérios do escore de Child-Pugh. No entanto, o enunciado descreve uma ascite moderada. Além disso, a ascite isoladamente tem menor peso prognóstico em comparação com marcadores diretos de síntese hepática em um cenário de sangramento ativo.\n\nAlternativa d) Correta. O tempo de protrombina (avaliado pelo RNI) é um dos melhores marcadores da função de síntese hepática. Um RNI de 2,5 indica uma coagulopatia grave e uma falência importante da produção de fatores de coagulação pelo fígado. Tanto no escore de Child-Pugh quanto no MELD, o RNI elevado é um dos principais preditores de mortalidade. Em pacientes com hemorragia por varizes, a gravidade da disfunção hepática é o fator mais determinante para o risco de ressangramento e óbito em 6 semanas. Um RNI tão elevado coloca o paciente em uma classificação de alto risco (Child-Pugh C), o que confere o pior prognóstico entre as opções apresentadas.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Hepatites Virais",
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  },
+  {
+    "id": "AJUDA_e10b0e0c-ce44-456b-b6e6-563d0bc959f4",
+    "originalId": "e10b0e0c-ce44-456b-b6e6-563d0bc959f4",
+    "statement": "Analu, uma criança com 8 anos de idade, apresenta tosse há aproximadamente duas semanas. Há dois dias, a mãe relata piora da tosse ao deitar, além de secreção nasal purulenta e febre. O diagnóstico e o tratamento são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Traqueobronquite e amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rinofaringite aguda, hidratação e antitérmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sinusite aguda e amoxicilina com clavulanato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Broncopneumonia e penicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Asma tussígena, corticoide inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental identificar o quadro clínico de Rinossinusite Aguda Bacteriana na infância. Os critérios diagnósticos baseiam-se na apresentação clínica de uma infecção de vias aéreas superiores que persiste por mais de 10 dias, ou que apresenta um quadro de \"piora após melhora\" (conhecido como *double sickening*), ou ainda sintomas iniciais graves (febre alta e secreção purulenta por mais de 3 dias consecutivos).\n\nNo caso de Analu, a tosse persiste por 14 dias (duas semanas). A piora recente (há dois dias) com o surgimento de febre e secreção purulenta, associada à tosse que piora ao deitar (sugerindo gotejamento pós-nasal), fecha o diagnóstico de sinusite aguda.\n\nAnálise das alternativas:\n\na) Incorreta. A traqueobronquite geralmente apresenta tosse seca ou produtiva e dor retroesternal, mas não justifica a secreção nasal purulenta persistente e a piora ao decúbito como sintomas primários. Além disso, a maioria das bronquites agudas em crianças saudáveis é de etiologia viral, não requerendo antibioticoterapia inicial.\n\nb) Incorreta. A rinofaringite aguda (resfriado comum) é uma condição autolimitada que dura, em média, de 7 a 10 dias. O quadro de Analu já dura duas semanas e apresentou uma piora evolutiva com febre e purulência, o que caracteriza uma complicação bacteriana, exigindo tratamento específico além de medidas de suporte.\n\nc) Correta. Os sintomas descritos preenchem os critérios clínicos para Rinossinusite Aguda Bacteriana: duração prolongada dos sintomas (mais de 10 dias) e piora recente do quadro (febre e secreção purulenta). A amoxicilina associada ao clavulanato é uma escolha terapêutica adequada, especialmente em casos de falha terapêutica prévia, suspeita de resistência bacteriana ou quando se deseja cobrir *Haemophilus influenzae* produtor de beta-lactamase e *Moraxella catarrhalis*.\n\nd) Incorreta. A broncopneumonia manifesta-se tipicamente com taquipneia, esforço respiratório, febre alta e alterações na ausculta pulmonar (estertores). Embora a tosse esteja presente, a secreção nasal purulenta e a cronologia dos sintomas direcionam o diagnóstico para as vias aéreas superiores (seios paranasais).\n\ne) Incorreta. A asma tussígena é uma variante da asma na qual a tosse é o sintoma predominante, podendo piorar à noite ou com esforço. Entretanto, ela não cursa com febre e secreção nasal purulenta, que são sinais claros de um processo infeccioso bacteriano agudo.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": 55.80549204171814,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  },
+  {
+    "id": "AJUDA_e10e30b6-891d-446c-8c42-f29f27ec0422",
+    "originalId": "e10e30b6-891d-446c-8c42-f29f27ec0422",
+    "statement": "Homem de 65 anos, diabético, com insuficiência renal grau 3, após três dias de evolução de um quadro clínico clássico de dengue, comparece à UBS com menos febre, manchas roxas no corpo, dor abdominal, vômitos intensos, em torpor, estando desidratado e referindo fezes vermelhas. Ao exame físico, verificam-se PA = 90x64mmHg e taquicardia. \n\nDiante do caso, a conduta correta compreende:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar oseltamivir (tamiflu), restringir contato e prescrever antitérmico, analgésico e hidratação oral para casa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar ambulância para remoção para serviço de emergência e, enquanto aguarda, acessar veia e iniciar hidratação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "iniciar antibiótico de amplo espectro, solicitar urinocultura e radiografia de tórax eletivas e prescrever hidratação oral para casa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar antibiótico de amplo espectro e oseltamivir (tamiflu), prescrever hidratação oral, antitérmico e analgésico e marcar retorno para 24 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro clássico de dengue que evoluiu para a fase crítica. Ele é idoso e possui comorbidades importantes (diabetes e insuficiência renal crônica). Os sinais e sintomas relatados são extremamente preocupantes: dor abdominal, vômitos intensos, sangramento gastrointestinal (fezes vermelhas), alteração do nível de consciência (torpor) e sinais de instabilidade hemodinâmica (PA 90 x 64 mmHg e taquicardia). Segundo a classificação do Ministério da Saúde, este paciente apresenta Sinais de Alarme e Sinais de Choque, sendo classificado como Dengue Grave (Grupo D).\n\nExplicação das alternativas:\n\na) Incorreta. O oseltamivir (Tamiflu) é um antiviral indicado para o tratamento de influenza (gripe), não possuindo ação contra o vírus da dengue. Além disso, prescrever hidratação oral e tratamento domiciliar para um paciente com sinais de choque e sangramento ativo é um erro grave, pois ele necessita de cuidados hospitalares imediatos.\n\nb) Correta. O paciente está em choque ou pré-choque (hipotensão e taquicardia) e apresenta sinais de gravidade. Diante de um caso do Grupo D na Unidade Básica de Saúde (UBS), a conduta correta é iniciar imediatamente a ressuscitação volêmica por via intravenosa (hidratação venosa) e providenciar a remoção urgente para um serviço de emergência ou terapia intensiva. O atraso na hidratação aumenta significativamente a mortalidade.\n\nc) Incorreta. O quadro clínico, a história epidemiológica e os sinais de choque direcionam o diagnóstico para dengue grave, e não para uma infecção bacteriana que justifique antibióticos de imediato como conduta principal. Exames eletivos e hidratação domiciliar são absolutamente contraindicados para alguém com instabilidade hemodinâmica e sangramento.\n\nd) Incorreta. Assim como na alternativa A, o uso de oseltamivir e antibiótico não trata a fisiopatologia da dengue. O agendamento de retorno para 24 horas é inadequado, pois o paciente apresenta risco iminente de morte devido ao choque hipovolêmico/distributivo causado pela dengue. O manejo deve ser intra-hospitalar e imediato.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  },
+  {
+    "id": "AJUDA_e1114ff4-39bc-4752-bf16-7fc215686a86",
+    "originalId": "e1114ff4-39bc-4752-bf16-7fc215686a86",
+    "statement": "Alessandro é um escolar de 8 anos em seu consultório. O menino sofre bullying na escola por causa da sua altura. A mãe está preocupada, pois o acha muito baixo, perto dos amigos. No manejo inicial para avaliar essa criança, além de confirmar se há realmente baixa estatura, a conduta mais apropriada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar cariótipo, hormônio de crescimento e encaminhar ao endorcrinologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar ultrassonografia de abdome total, Rx de joelho Ap e perfil, dosar insulina e cortisol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar dosagem de gonadotrofinas, hormônio de crescimento e fazer estadiamento de Tanner.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colocar no gráfico para ver se há baixa estatura, demarcar o alvo parental, calcular velocidade de crescimento e solicitar Rx de mão e punho esquerdo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nA abordagem inicial de uma criança com queixa de baixa estatura deve ser pautada na diferenciação entre variantes normais do crescimento (como o Retardo Constitucional do Crescimento e da Puberdade ou a Baixa Estatura Familiar) e causas patológicas (doenças endócrinas, genéticas ou sistêmicas). Para isso, antes de solicitar exames laboratoriais complexos, é fundamental realizar uma propedêutica clínica e auxológica completa.\n\nExplicação das alternativas:\n\nAlternativa (a) Incorreta. O cariótipo é um exame de triagem indicado fundamentalmente para meninas com baixa estatura inexplicada (para excluir a Síndrome de Turner), o que não se aplica ao caso de um menino, a menos que haja estigmas sindrômicos. A dosagem isolada de hormônio do crescimento (GH) não tem valor diagnóstico, pois sua secreção é pulsátil; são necessários testes de estímulo em ambiente especializado. O encaminhamento precoce sem investigação básica sobrecarrega o sistema sem necessidade diagnóstica prévia.\n\nAlternativa (b) Incorreta. A ultrassonografia de abdome e a dosagem de insulina não fazem parte da investigação inicial de baixa estatura. O cortisol seria solicitado apenas se houvesse suspeita clínica de Síndrome de Cushing (geralmente associada à obesidade e à queda na velocidade de crescimento). Além disso, o Rx para idade óssea padrão-ouro após os 2 anos de idade é o de mãos e punho esquerdo, e não o de joelho.\n\nAlternativa (c) Incorreta. Embora o estadiamento de Tanner seja essencial para avaliar o status puberal, as dosagens de gonadotrofinas e de GH não são condutas de primeira linha. A avaliação do crescimento deve preceder a investigação hormonal laboratorial.\n\nAlternativa (d) Correta. Esta alternativa descreve os quatro pilares da avaliação auxológica inicial: 1) Classificar a estatura atual no gráfico de crescimento (OMS) para confirmar se a criança está abaixo do percentil 3 ou escore Z -2; 2) Calcular o alvo parental para entender o potencial genético daquela família; 3) Avaliar a velocidade de crescimento, que é o dado clínico mais sensível para identificar patologias (quem não cresce no ritmo esperado precisa de investigação); e 4) Solicitar o Rx de mãos e punho esquerdo para avaliar a idade óssea, permitindo confrontar a idade biológica com a idade cronológica e o canal de crescimento.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  },
+  {
+    "id": "AJUDA_e119876d-0f84-4298-b77c-d7514ad48600",
+    "originalId": "e119876d-0f84-4298-b77c-d7514ad48600",
+    "statement": "A conduta em uma citologia oncótica do colo uterino mostrando metaplasia escamosa imatura é",
+    "options": [
+      {
+        "id": "A",
+        "text": "seguir a rotina de rastreamento citológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "solicitar nova citologia com seis meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar colposcopia e biópsia de colo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar Cirurgia de Alta Frequência (CAF).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ponto central desta questão é o reconhecimento de achados fisiológicos no exame citopatológico (Papanicolaou). A metaplasia escamosa imatura é um processo fisiológico normal que ocorre na zona de transformação do colo uterino, onde o epitélio colunar (glandular) é substituído por epitélio escamoso. Esse processo é comum e esperado, especialmente em mulheres jovens, gestantes ou que fazem uso de anticoncepcionais hormonais.\n\nPor ser um achado benigno e sem qualquer potencial de malignidade imediata, não indica doença nem necessidade de investigação adicional.\n\nExplicação das alternativas:\n\na) Correta. Como a metaplasia escamosa imatura não é uma lesão precursora de câncer, mas sim uma alteração celular benigna e fisiológica, a paciente deve manter o seguimento conforme as diretrizes de rastreamento do Ministério da Saúde (INCA): repetição anual e, após dois exames negativos com intervalo de um ano, o rastreamento passa a ser trienal.\n\nb) Incorreta. A repetição da citologia em seis meses é reservada para situações de atipias de significado indeterminado (como ASC-US em mulheres acima de 30 anos) ou para o acompanhamento de lesões de baixo grau (LSIL) em determinadas faixas etárias, o que não se aplica a um achado fisiológico de metaplasia.\n\nc) Incorreta. A colposcopia com biópsia é um procedimento de investigação diagnóstica indicado para pacientes com resultados citológicos sugestivos de lesões pré-neoplásicas de alto grau (HSIL), ASC-H, células glandulares atípicas (AGC) ou persistência de lesões de baixo grau. Realizar esse procedimento em uma paciente com metaplasia seria um excesso de intervenção (overtreatment).\n\nd) Incorreta. A Cirurgia de Alta Frequência (CAF) é um procedimento terapêutico (exérese da zona de transformação) indicado para o tratamento de lesões precursoras de alto grau comprovadas por biópsia (NIC 2 ou NIC 3). Jamais deve ser realizada baseando-se apenas em um achado fisiológico de metaplasia escamosa.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  },
+  {
+    "id": "AJUDA_e11f9852-c29e-471d-9f98-b528b55f815b",
+    "originalId": "e11f9852-c29e-471d-9f98-b528b55f815b",
+    "statement": "Paciente, 56 anos de idade, feminino, aposentada, queixa de dispneia e tosse produtiva há muito tempo. Relata piora da dispneia e sensação de abafamento torácico há 8 dias e da tosse produtiva (escarro mucoide) há 30 dias. Negou febre. Negou queixas de outros sistemas. Negou antecedente de doença pulmonar pessoal ou familiar. A paciente é tabagista 40a/maço e traz espirometria realizada há 6 meses com laudo de distúrbio ventilatório obstrutivo moderado e prova broncodilatadora negativa. Ao exame físico observou-se murmúrio vesicular diminuído e roncos discretos inspiratórios e expiratórios, ausência de outros achados pertinentes. Sinais vitais: frequência respiratória = 22 ipm, FC = 85 bpm, PA = 128/84 mmHg, oximetria de pulso em ar ambiente = 94%. Relata uso de tiotrópio e formoterol há 6 meses. Qual conduta médica deve ser orientada para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender a medicação em uso, orientar parar de fumar e iniciar corticoide inalatório por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender a medicação em uso, orientar parar de fumar posteriormente, iniciar β2 agonista de curta ação inalatório por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter a medicação em uso, orientar parar de fumar, adicionar corticoide inalatório por 7 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter a medicação em uso, orientar parar de fumar, adicionar β2 agonista de curta ação inalatório por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro clássico de Doença Pulmonar Obstrutiva Crônica (DPOC), confirmado pela carga tabágica elevada (40 maços/ano), sintomas crônicos e espirometria com distúrbio obstrutivo não reversível após broncodilatador. No momento, ela apresenta uma exacerbação da doença, caracterizada pela piora da dispneia e da tosse produtiva.\n\nComo a paciente está clinicamente estável (oximetria de 94%, sem febre, sem sinais de desconforto respiratório grave), o manejo é ambulatorial. O pilar do tratamento da exacerbação da DPOC envolve o uso de broncodilatadores de curta ação para alívio dos sintomas, além da manutenção do tratamento prévio e orientações gerais.\n\nAnálise das alternativas:\n\na) Incorreta. Não se deve suspender as medicações de manutenção (tiotrópio e formoterol) durante uma exacerbação, pois elas garantem o controle basal da função pulmonar. Além disso, o corticoide inalatório isolado não é o tratamento de escolha para o alívio agudo dos sintomas de exacerbação; se houvesse indicação de corticoide para o quadro agudo, este deveria ser sistêmico (oral ou venoso).\n\nb) Incorreta. Suspender a medicação de uso contínuo é um erro clínico. Além disso, a cessação do tabagismo é uma medida de extrema urgência e deve ser orientada de imediato, não \"posteriormente\", pois é a única intervenção que comprovadamente altera o declínio da função pulmonar na DPOC.\n\nc) Incorreta. Embora manter a medicação e orientar a cessação do tabagismo estejam corretos, o acréscimo de corticoide inalatório por 7 dias não é a conduta padrão para o manejo da exacerbação. O corticoide inalatório é uma medicação de manutenção para pacientes com fenótipos específicos (como eosinofilia ou exacerbações frequentes) e não possui papel no resgate agudo dos sintomas.\n\nd) Correta. Esta alternativa contempla todos os pilares do manejo da exacerbação leve a moderada: 1) manutenção da terapia de base (LAMA/LABA), que a paciente já utiliza; 2) cessação do tabagismo, que é fundamental em qualquer estágio da doença; 3) adição de um broncodilatador de curta ação (beta-2-agonista, como o salbutamol ou fenoterol) para uso intermitente durante o período de piora dos sintomas (geralmente por 7 a 10 dias), visando o alívio imediato da obstrução brônquica. Como a secreção é mucoide e não há febre, não há indicação imediata de antibioticoterapia.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  },
+  {
+    "id": "AJUDA_e12594f4-8d83-45b3-981e-0a91e03a93c4",
+    "originalId": "e12594f4-8d83-45b3-981e-0a91e03a93c4",
+    "statement": "Mulher, 67 anos de idade, notou lesão pigmentada na face anterior da perna esquerda. Foi realizada biópsia excisional que revelou tratar-se de melanoma com Breslow de 4,5 mm e ulceração. Qual é o próximo passo na condução do caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ampliação de margens de 1 cm e pesquisa de linfonodo sentinela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ampliação de margens de 2 cm e pesquisa de linfonodo sentinela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ultrassom de região inguinal e ressonância de abdome total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tomografia de tórax, abdome superior e pelve com contraste.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve uma paciente com melanoma cutâneo de alto risco, caracterizado por índice de Breslow de 4,5 mm com presença de ulceração, o que classifica o tumor como T4b (Estádio clínico IIC pela classificação da AJCC/UICC). \n\nEm tumores de alto risco (T3b ou T4), há uma probabilidade significativa de disseminação metastática oculta à distância. Por isso, as principais diretrizes (NCCN, ESMO e Diretrizes Brasileiras) recomendam a realização de estadiamento sistêmico por imagem antes de se proceder ao tratamento cirúrgico definitivo (ampliação de margem e biópsia do linfonodo sentinela). Caso sejam identificadas metástases à distância (Estádio IV), a conduta muda radicalmente, priorizando a terapia sistêmica (como imunoterapia ou terapia-alvo) e evitando procedimentos cirúrgicos locais invasivos desnecessários.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A margem de ampliação recomendada para melanomas com espessura de Breslow superior a 2,0 mm é de 2 cm, e não de 1 cm. Além disso, antes de realizar a abordagem cirúrgica definitiva em um tumor T4b, deve-se realizar o estadiamento sistêmico por imagem.\n\nAlternativa B - Incorreta. Embora a margem de 2 cm e a pesquisa de linfonodo sentinela sejam o padrão cirúrgico para a doença localizada, este não é o próximo passo imediato. Em pacientes com melanoma T4b, o rastreamento de metástases à distância deve preceder o procedimento cirúrgico, pois a presença de metástases sistêmicas alteraria o plano terapêutico.\n\nAlternativa C - Incorreta. A ultrassonografia da região inguinal avalia apenas a drenagem linfática regional da perna e a ressonância magnética de abdome não é o método padrão isolado para triagem de metástases em todo o corpo. O estadiamento sistêmico deve incluir tórax, abdome e pelve por tomografia computadorizada ou PET-CT.\n\nAlternativa D - Correta. O próximo passo em melanomas de alto risco (T4b) é o estadiamento por exames de imagem de corte com contraste (tomografia de tórax, abdome e pelve) ou PET-CT de corpo inteiro, visando descartar doença metastática à distância antes de definir a conduta cirúrgica local e regional.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  },
+  {
+    "id": "AJUDA_e12ceff3-0157-46ce-9010-cdbf843491f0",
+    "originalId": "e12ceff3-0157-46ce-9010-cdbf843491f0",
+    "statement": "Uma idosa de 80 anos sofre queda da própria altura em casa e dá entrada na emergência com fratura de Colles à direita. Durante a avaliação, nota-se também confusão mental e taquicardia. Está estável hemodinamicamente, sem outras queixas e sem outras lesões diagnosticadas no exame físico realizado no atendimento inicial. Qual a principal preocupação a ser considerada nesta situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Possibilidade de fratura vertebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Controle da dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Necessidade de cirurgia ortopédica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desidratação e alteração do estado mental.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão avalia o raciocínio clínico diante de uma paciente idosa frágil que apresenta uma queda da própria altura. Em geriatria, uma queda raramente é um evento puramente mecânico; ela é frequentemente um evento sentinela que indica um declínio agudo na saúde ou uma condição médica subjacente que precisa de investigação imediata.\n\nAlternativa a: Incorreta. Embora fraturas de compressão vertebral sejam comuns em idosos após quedas devido à osteoporose, a presença de taquicardia e confusão mental sugere uma alteração sistêmica ou metabólica, e não apenas uma lesão osteoarticular adicional. A avaliação inicial deve priorizar o estado geral.\n\nAlternativa b: Incorreta. A analgesia é parte essencial do cuidado hospitalar, porém não é a principal preocupação em um cenário onde há sinais de disfunção orgânica (delirium) e instabilidade autonômica (taquicardia). O controle da dor ocorre em paralelo à investigação clínica.\n\nAlternativa c: Incorreta. O tratamento da fratura de Colles, seja por redução manual ou cirurgia, deve ser planejado após a paciente estar clinicamente estável. O risco de complicações é maior se a paciente for submetida a procedimentos enquanto apresenta confusão mental e taquicardia não esclarecidas.\n\nAlternativa d: Correta. Esta é a principal preocupação, pois a confusão mental (delirium) e a taquicardia são sinais de alerta para condições graves em idosos. Estes achados podem indicar que a queda foi causada por um problema médico prévio (como infecção urinária, arritmia ou desidratação) ou que a paciente sofreu repercussões por ter permanecido muito tempo caída (como desidratação e rabdomiólise). O delirium é um marcador de gravidade e maior mortalidade em pacientes internados, exigindo busca ativa por causas metabólicas e infecciosas.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Saúde do Idoso",
+      "Complicações do Trauma Ortopédico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  },
+  {
+    "id": "AJUDA_e1319885-6d84-489d-a7d8-01c067485917",
+    "originalId": "e1319885-6d84-489d-a7d8-01c067485917",
+    "statement": "Primigesta, 35 semanas, em uso de metildopa 1 g/dia, comparece à consulta do pré-natal de rotina com os seguintes exames: Hemoglobina: 11,8 g/dL; Plaquetas: 259.000/mm³; Creatinina: 0,5 mg/dL; DHL: 183 U/L; TGO: 42 U/L; TGP: 39 UAL: Proteinúria/24h 358 mg/24h. Ultrassonografia obstétrica normal. Controles pressóricos entre 120 x 80 e 110 x 70 mmHg. O diagnóstico e a conduta são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proteinúria gestacional; orientar dieta pobre em sódio, repouso e resolução da gestação entre 39-40 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença hipertensiva específica da gestação; manter controles pressóricos e, se continuarem adequados, internação para resolução da gestação a partir de 39 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pré-eclâmpsia grave; internação para resolução da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pré-eclâmpsia; internação para manter controles e programar resolução de gestação a partir de 39 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pré-eclâmpsia; manter controles pressóricos e programação de resolução da gestação a partir de 3 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente é uma primigesta de 35 semanas com diagnóstico prévio de hipertensão arterial (em uso de metildopa). Os exames atuais revelam uma proteinúria de 24 horas de 358 mg. Na gestação, consideram-se como proteinúria valores iguais ou superiores a 300 mg/24h. A presença de hipertensão e proteinúria surgindo após a 20ª semana de gestação define o diagnóstico de pré-eclâmpsia.\n\nPara classificar a gravidade, avaliamos os sinais de alerta e exames laboratoriais:\n- Pressão arterial: Controlada (120/80 a 110/70 mmHg).\n- Plaquetas: 259.000/mm³ (Normal; o sinal de gravidade seria abaixo de 100.000).\n- Creatinina: 0,5 mg/dL (Normal).\n- DHL: 183 U/L (Normal; o sinal de gravidade/hemólise seria acima de 600).\n- Transaminases (TGO/TGP): 42 e 39 U/L (Levemente acima de alguns referenciais, mas abaixo do critério de gravidade que exige o dobro do limite superior ou > 70 U/L).\n- Ultrassonografia: Normal.\n\nConclui-se que se trata de um quadro de pré-eclâmpsia sem sinais de gravidade (anteriormente chamada de pré-eclâmpsia leve).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa E (Correta): O diagnóstico é pré-eclâmpsia. Em casos sem sinais de gravidade e com feto saudável, a conduta é expectante até o termo. O objetivo é manter o controle da pressão e monitorar a estabilidade materna e fetal, programando o parto a partir de 37 semanas. O termo \"3 semanas\" na alternativa provavelmente refere-se ao tempo que falta para a paciente atingir 38 semanas ou é um erro de digitação para 37 semanas, sendo a opção que melhor descreve a conduta conservadora em direção ao termo.\n\nAlternativa A (Incorreta): O termo \"proteinúria gestacional\" não é a nomenclatura correta quando há hipertensão associada; o diagnóstico é pré-eclâmpsia. Além disso, a dieta hipossódica (pobre em sódio) é contraindicada na gestação, pois pode reduzir o volume plasmático, que já está reduzido na fisiopatologia da pré-eclâmpsia, prejudicando a perfusão placentária.\n\nAlternativa B (Incorreta): DHEG (Doença Hipertensiva Específica da Gestação) é uma denominação antiga e genérica. Atualmente, deve-se especificar o diagnóstico como pré-eclâmpsia. Além disso, aguardar até 39 semanas em pacientes com pré-eclâmpsia não é o padrão, pois o risco de complicações maternas aumenta sem benefícios fetais claros após as 37 semanas.\n\nAlternativa C (Incorreta): Não há critérios de gravidade no caso exposto. A pré-eclâmpsia é considerada grave quando há pressão arterial maior ou igual a 160x110 mmHg, iminência de eclâmpsia (cefaleia, alterações visuais), plaquetopenia acentuada, disfunção renal ou edema agudo de pulmão. Sem esses sinais, não se indica a interrupção imediata da gestação às 35 semanas.\n\nAlternativa D (Incorreta): Embora o diagnóstico esteja correto, a pré-eclâmpsia sem sinais de gravidade não exige obrigatoriamente a internação hospitalar prolongada se a paciente estiver estável e puder realizar o acompanhamento ambulatorial rigoroso. Assim como na alternativa B, a resolução às 39 semanas é considerada tardia para casos de pré-eclâmpsia.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  },
+  {
+    "id": "AJUDA_e133430e-5a93-4cb8-a9b3-c2c459468eeb",
+    "originalId": "e133430e-5a93-4cb8-a9b3-c2c459468eeb",
+    "statement": "Mulher de 32 anos, sexualmente ativa, usuária de contraceptivo oral e sem método de barreira, apresenta-se ao pronto socorro hospitalar com quadro de dor pélvica progressiva de início espontâneo há 5 dias. Nega adinamia e alteração do apetite. Ao exame físico: bom estado geral, temperatura de 38,5 graus Celsius, secreção cervical purulenta, dor à mobilização do colo uterino e ao toque bimanual com palpação dos anexos. Apresenta hemograma com leucócitos de 13950/mm³ e PCR de 57 mg/L. BHCG negativo e ultrassonografia transvaginal evidenciando espessamento tubário direito e pequena quantidade de líquido livre na pelve. Diante da hipótese de doença inflamatória pélvica aguda, neste caso, recomenda-se",
+    "options": [
+      {
+        "id": "A",
+        "text": "antibioticoterapia de amplo espectro via oral, por 14 dias, com reavaliação clínica em 3 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "internação para antibioticoterapia de amplo espectro endovenosa, esperando 48 horas por melhora, considerando-se cirurgia em caso negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "antibioticoterapia de amplo espectro via oral, por 14 dias, com reavaliação clínica em 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "internação para laparoscopia e drenagem de abscesso pélvico, seguida de antibioticoterapia de amplo espectro endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente apresenta um quadro clínico típico de Doença Inflamatória Pélvica (DIP) aguda. Pelos Critérios de Monif, ela preenche os três critérios maiores (dor em abdome inferior, dor à mobilização do colo uterino e dor à palpação de anexos) e diversos critérios menores (febre, secreção cervical purulenta, leucocitose e elevação de proteína C reativa). O achado ultrassonográfico de espessamento tubário e pequena quantidade de líquido livre na pelve corrobora o diagnóstico de salpingite, mas a ausência de uma coleção organizada afasta a presença de um abscesso tubo-ovariano no momento.\n\nComo a paciente se encontra em bom estado geral, não apresenta vômitos (o que permite a ingestão de medicamentos), não está gestante e não possui sinais de peritonite generalizada ou abscessos, ela é classificada como Monif Estágio I. O protocolo padrão para este estágio é o tratamento ambulatorial.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O tratamento recomendado para a DIP em estágio inicial (sem abscessos ou sinais de gravidade) é ambulatorial, utilizando um esquema de antibioticoterapia de amplo espectro (geralmente envolvendo ceftriaxona IM, doxiciclina e metronidazol) por 14 dias. É obrigatório agendar uma reavaliação em 48 a 72 horas (3 dias) para garantir que a paciente esteja respondendo à terapia e que o quadro não esteja evoluindo negativamente.\n\nAlternativa b) Incorreta. A internação para tratamento endovenoso é reservada para casos mais graves, como o Estágio III de Monif (presença de abscesso tubo-ovariano íntegro), gestantes, pacientes com intolerância à via oral, falha no tratamento ambulatorial prévio ou quando o estado geral está comprometido. Esta paciente apresenta bom estado geral e a imagem não mostrou abscessos.\n\nAlternativa c) Incorreta. Embora o tempo de antibiótico (14 dias) esteja adequado, o prazo de 7 dias para a reavaliação clínica é considerado muito longo e inseguro. A literatura médica estabelece que o sucesso do tratamento ambulatorial deve ser verificado em até 72 horas.\n\nAlternativa d) Incorreta. A laparoscopia para drenagem seria indicada apenas no Estágio IV (abscesso roto com peritonite generalizada) ou em casos de abscesso que não respondem ao tratamento clínico. A ultrassonografia da paciente mostrou apenas espessamento tubário e líquido livre, o que é esperado na salpingite, não caracterizando um abscesso pélvico que exija drenagem imediata.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Cervicites",
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:18.454Z"
+  }
+]

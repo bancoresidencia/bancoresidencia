@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_853c0161-59e6-4f5a-953e-849bce02aa02",
+    "originalId": "853c0161-59e6-4f5a-953e-849bce02aa02",
+    "statement": "Um menino de 6 anos de idade foi levado para consulta pela mãe devido a episódios frequentes de falta de ar, tosse e \"chiado no peito\", que pioram no período da noite e durante a prática de atividades físicas. A mãe relatou que a criança já esteve internada no pronto-socorro algumas vezes devido a desconforto respiratório e que, nessa ocasião, fora dado um diagnóstico de asma. Atualmente, a criança tem feito uso apenas de broncodilatadores e realizado inalação com soro fisiológico quando os sintomas ficam mais intensos. Com base nessa situação hipotética, assinale a alternativa que apresenta a conduta adequada para controlar essa doença.",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrever antibiótico profilático para evitar as crises, que geralmente estão relacionadas à infecção bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "manter paciente com broncodilatadores de forma contínua e aumentar a dose no caso de crise",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prescrever corticoide via oral contínua e manter uso de broncodilatadores apenas nas crises",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar o uso de corticoide inalatório diário para ajudar na inflamação crônica das vias aéreas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "proibir a realização de atividades físicas, uma vez que elas são fatores de piora das crises do paciente",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\nO caso clínico apresenta uma criança de 6 anos com diagnóstico de asma e sintomas que indicam falta de controle da doença (sintomas noturnos, limitação em atividades físicas e histórico de internações). A asma é uma doença inflamatória crônica das vias aéreas. O paciente está utilizando apenas medicação de alívio (broncodilatadores e inalação com soro), o que não trata a causa-base da patologia. Para o controle adequado, é necessário instituir uma terapia de manutenção que atue na inflamação.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A asma é uma doença inflamatória, não infecciosa. O uso de antibióticos profiláticos não tem papel no tratamento de controle da asma. Embora infecções virais sejam gatilhos comuns para crises, o uso de antibióticos deve ser reservado apenas para casos de infecções bacterianas secundárias comprovadas.\n\nAlternativa b) Incorreta. O uso isolado e contínuo de broncodilatadores de curta ação (como o salbutamol) não trata a inflamação brônquica e pode estar associado a um aumento da hiper-responsividade das vias aéreas e maior risco de exacerbações graves. O broncodilatador deve ser usado para alívio de sintomas, mas o controle exige terapia anti-inflamatória.\n\nAlternativa c) Incorreta. O corticoide por via oral é indicado apenas para o tratamento de crises agudas (resgate) por períodos curtos. O uso contínuo por via oral em crianças é evitado devido aos graves efeitos colaterais sistêmicos, como interferência no crescimento ósseo, síndrome de Cushing, hipertensão e supressão do eixo adrenal. A via preferencial para manutenção é a inalatória, que possui ação local e mínimos efeitos sistêmicos.\n\nAlternativa d) Correta. Os corticoides inalatórios são a base do tratamento de manutenção da asma persistente em todas as faixas etárias. Eles atuam diretamente na inflamação crônica dos brônquios, reduzindo o edema da mucosa, a produção de muco e a hiper-responsividade brônquica. Isso resulta na prevenção de sintomas diários, despertares noturnos e necessidade de idas ao pronto-socorro.\n\nAlternativa e) Incorreta. O objetivo do tratamento da asma é justamente permitir que o paciente realize todas as suas atividades habituais, incluindo exercícios físicos, sem restrições. A ocorrência de \"asma induzida pelo exercício\" é um sinal de que a doença não está adequadamente controlada com medicação anti-inflamatória, e não um motivo para proibir a atividade física.\n\nGABARITO: Letra d.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  },
+  {
+    "id": "AJUDA_853e5fd6-bc85-4fbc-a1db-cc626a69106c",
+    "originalId": "853e5fd6-bc85-4fbc-a1db-cc626a69106c",
+    "statement": "Paciente de 23 anos, dá entrada no PS de Ginecologia com quadro de dor em baixo ventre de forte intensidade associada a um pico febril de 38,5˚ hoje. Última menstruação há 2 semanas, não utiliza método anticoncepcional no momento, vida sexual ativa. Sinais vitais normais na admissão, ao exame físico apresenta no toque bimanual dor à mobilização de colo uterino e ao especular cervicite mucopurulenta. USG transvaginal assim como exames laboratoriais realizados não mostraram alterações significativas, exceto leucocitúria de 30.000 na urina tipo 1. Qual a principal hipótese diagnóstica e a melhor conduta nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença inflamatória aguda - internação para antibioticoterapia de amplo espectro e drenagem de abcesso tubo ovariano por videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vaginose bacteriana - tratamento com creme vaginal (metronidazol) por 7 noites, abstinência sexual no período.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Endometrite aguda - antibiótico de amplo espectro (ceftriaxone 250mg IM dose única + doxiciclina 100mg via oral de 12/12 horas por 14 dias). Retorno se piora ou manutenção da febre por mais de 48-72h para reavaliação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Infecção do trato urinário inferior - nitrofurantoína 100mg via oral de 6/6h por 7 dias. Colher urocultura antes de iniciar tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Apendicite aguda - tomografia para confirmação diagnóstica. Caso confirmado indicado apendicectomia videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma paciente jovem, sexualmente ativa, com dor pélvica, febre, cervicite mucopurulenta e dor à mobilização do colo uterino. Esses achados são patognomônicos da Doença Inflamatória Pélvica (DIP). A classificação de Monif é utilizada para estadiar a gravidade e definir a conduta: \n- Estágio I: Salpingite aguda sem peritonite (tratamento ambulatorial). \n- Estágio II: Salpingite com peritonite (tratamento hospitalar). \n- Estágio III: Presença de abscesso tubo-ovariano (tratamento hospitalar). \n- Estágio IV: Abscesso roto ou choque séptico (tratamento cirúrgico de urgência).\n\nNo caso em questão, a ultrassonografia (USG) e o exame físico não revelaram sinais de peritonite ou abscessos, classificando-a como Monif I, o que autoriza o tratamento ambulatorial.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\nA paciente apresenta critérios maiores (dor infraumbilical, dor à mobilização do colo e dor anexial) e critérios menores (febre e cervicite) para o diagnóstico de DIP. Como não há sinais de gravidade ou coleções na USG, o tratamento é ambulatorial. O esquema clássico preconizado (embora as doses de ceftriaxona tenham sido atualizadas para 500 mg em protocolos mais recentes, muitas bancas ainda utilizam 250 mg) envolve a cobertura para Neisseria gonorrhoeae (ceftriaxona) e Chlamydia trachomatis (doxiciclina). A orientação de retorno em 48-72 horas é fundamental para garantir que a paciente esteja respondendo à antibioticoterapia oral.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Incorreta. Embora seja uma doença inflamatória, a indicação de internação e drenagem cirúrgica por videolaparoscopia está reservada para casos de abscessos tubo-ovarianos (Monif III) que não respondem ao tratamento clínico ou abscessos rotos. A USG da paciente foi normal, descartando abscesso.\n\nb) Incorreta. A vaginose bacteriana causa corrimento com odor fétido (teste do potássio positivo e presença de \"clue cells\"), mas não costuma cursar com febre, dor intensa à mobilização do colo uterino ou sinais inflamatórios sistêmicos.\n\nd) Incorreta. A leucocitúria (30.000) em mulheres com cervicite ou DIP é frequentemente um achado de \"contaminação\" da amostra de urina pela secreção vaginal purulenta ou uma uretrite associada. O quadro clínico de dor à mobilização do colo e cervicite é soberano para o diagnóstico de DIP, e não apenas uma infecção urinária baixa (cistite).\n\ne) Incorreta. A apendicite aguda é um diagnóstico diferencial importante de dor em fossa ilíaca direita, mas a presença de cervicite mucopurulenta e a dor específica à mobilização do colo uterino direcionam o diagnóstico para a etiologia ginecológica infecciosa.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  },
+  {
+    "id": "AJUDA_85420cfa-54dd-490c-98c5-1c481105106a",
+    "originalId": "85420cfa-54dd-490c-98c5-1c481105106a",
+    "statement": "Gestante, 32 anos de idade, III G, IP, idade gestacional de 10 semanas pela DUM, apresentou sangramento vaginal, submetendo-se à curetagem uterina com diagnóstico de abortamento incompleto. O aspecto macroscópico e o resultado do exame histopatológico do material da cavidade uterina é de mola hidatiforme completa. Exames laboratoriais: hCG: 250.000 UI/L antes da curetagem, 50.000 UI/L após 7 dias, 70.000 UI/L após 14 dias e 85.000UI/L após 21 dias do procedimento. Nessa última avaliação, observou-se o aparecimento de lesão arroxeada na parede vaginal posterior, com 2 cm de diâmetro. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Biópsia excisional da lesão vaginal e exame anátomo patológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nova curetagem uterina e biópsia da lesão vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetição da dosagem sérica do hCG em 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estadiamento juntamente com quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve uma paciente com Neoplasia Trofoblástica Gestacional (NTG) após o esvaziamento de uma mola hidatiforme completa. O diagnóstico de malignização é confirmado por dois critérios principais presentes no quadro: o aumento progressivo dos níveis de hCG em três dosagens consecutivas (50.000, 70.000 e 85.000 UI/L) e a presença de uma lesão vaginal arroxeada, que é um sinal clássico de metástase de doença trofoblástica.\n\nAlternativa a) Incorreta. A biópsia de lesões vaginais suspeitas de metástase por NTG é formalmente contraindicada. Essas lesões são extremamente vascularizadas e o procedimento pode resultar em hemorragia profusa e de difícil controle. O diagnóstico de NTG baseia-se na curva de hCG e em exames de imagem, não necessitando de confirmação histopatológica da metástase.\n\nAlternativa b) Incorreta. Uma nova curetagem uterina não é o tratamento para a neoplasia trofoblástica já estabelecida e não impediria a progressão da doença metastática. Além disso, a biópsia da lesão vaginal é contraindicada devido ao alto risco de sangramento grave, como explicado anteriormente.\n\nAlternativa c) Incorreta. Não há necessidade de aguardar mais 7 dias. Os critérios da FIGO (Federação Internacional de Ginecologia e Obstetrícia) para o diagnóstico de NTG já foram preenchidos: houve elevação dos níveis de hCG em três dosagens semanais consecutivas (dias 7, 14 e 21). Postergar o manejo atrasa o tratamento de uma patologia potencialmente agressiva.\n\nAlternativa d) Correta. Diante do diagnóstico de NTG (confirmado pela curva ascendente de hCG e pela presença de metástase vaginal), a conduta imediata é realizar o estadiamento da paciente. O estadiamento envolve exames de imagem (como radiografia ou tomografia de tórax e ultrassonografia pélvica) para avaliar a extensão da doença e calcular o escore de risco da FIGO/OMS. Esse escore determinará se a quimioterapia será realizada com apenas uma droga (baixo risco) ou com múltiplos agentes (alto risco). Portanto, o estadiamento seguido de quimioterapia é a conduta padrão.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  },
+  {
+    "id": "AJUDA_85451566-c03f-4feb-8dbc-ed99c71bdd1f",
+    "originalId": "85451566-c03f-4feb-8dbc-ed99c71bdd1f",
+    "statement": "Paciente de 45 anos chega inconsciente ao pronto-socorro após uso excessivo de morfina. Está com Glasgow de 6 (E1 V1 M4), pupilas mióticas, respiração lenta e superficial. Saturação de oxigênio no ar ambiente é de 80%, com ventilação espontânea presente, mas insuficiente. Qual a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar naloxona 0,04 mg EV em bolus, repetir a cada 2 minutos até leve despertar ou melhora da ventilação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar intubação orotraqueal imediata pelo risco de depressão respiratória severa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar flumazenil 0,2mg EV para reverter a depressão do sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar ventilação com máscara bolsa-válvula aguardando possível recuperação espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado é uma descrição clássica da síndrome opioide, resultante do uso excessivo de morfina. Os sinais cardinais são a tríade: depressão do nível de consciência (Glasgow 6), depressão respiratória (ventilação superficial e hipoxemia) e miose pupilar (pupilas puntiformes).\n\nAlternativa (a): Correta. O tratamento de escolha para a intoxicação por opioides é a naloxona, um antagonista específico que compete pelos receptores mu. A recomendação atual é iniciar com doses baixas e tituladas (como 0,04 mg a 0,4 mg), em vez de doses altas imediatas. O objetivo principal é reverter a depressão respiratória e restaurar a ventilação adequada, evitando-se o despertar súbito, que pode desencadear uma síndrome de abstinência aguda grave e agitação psicomotora.\n\nAlternativa (b): Incorreta. Na prática médica geral, um Glasgow menor ou igual a 8 costuma indicar intubação orotraqueal (IOT) para proteção de via aérea. No entanto, na toxicologia, quando a causa do rebaixamento é rapidamente reversível com um antídoto (como no caso da morfina), a reversão farmacológica deve ser tentada primeiro, desde que o paciente mantenha algum esforço respiratório e possa ser assistido com ventilação manual, se necessário. A IOT fica reservada para casos que não respondem à naloxona ou que apresentam apneia persistente.\n\nAlternativa (c): Incorreta. O flumazenil é o antagonista específico dos benzodiazepínicos. Ele não tem efeito sobre os receptores opioides e, portanto, não reverte a depressão respiratória causada pela morfina.\n\nAlternativa (d): Incorreta. Embora o suporte ventilatório com máscara bolsa-válvula (AMBU) seja uma medida de suporte fundamental para garantir a oxigenação enquanto o antídoto é preparado, a conduta de apenas \"aguardar a recuperação espontânea\" é inadequada. A morfina possui uma meia-vida longa e a depressão respiratória grave (saturação de 80%) exige intervenção medicamentosa ativa para evitar a parada respiratória e o dano hipóxico.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Dependência Química",
+      "Intubação"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  },
+  {
+    "id": "AJUDA_854cf073-4a4b-4762-9bc6-59c6cd28ec29",
+    "originalId": "854cf073-4a4b-4762-9bc6-59c6cd28ec29",
+    "statement": "Homem, 72 anos de idade, procurou atendimento médico com edema de membros inferiores que compromete apenas os tornozelos á é percebido até o joelho. Paciente diz saber ser hipertensa há anos e que faz uso irregular de anti-hipertensivo. Informa ainda que tem “cansaço” quando sobe escadas ou caminha muito. Nega alcoolismo e tabagismo. Ao exame, apresenta discretas subcrepitações nas bases pulmonares e edema de membros inferiores, bilateralmente, sem sinais inflamatórios e circunferência abdominal de 120 cm. Qual o medicamento de escolha para iniciar o tratamento desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Digitálico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diurético de alça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Beta-bloqueador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibidor da enzima conversora de angiotensina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente em questão apresenta um quadro clássico de Insuficiência Cardíaca (IC). Os critérios clínicos são evidentes: dispneia aos esforços (cansaço ao subir escadas), edema de membros inferiores bilateral e presença de subcrepitações em bases pulmonares (sinal de congestão pulmonar). O histórico de hipertensão arterial sistêmica mal controlada e a obesidade abdominal são fatores de risco determinantes para o desenvolvimento dessa patologia. O objetivo do tratamento inicial é o bloqueio neuro-hormonal para reduzir a progressão da doença e a mortalidade.\n\nAnálise das Alternativas:\n\na) Incorreta. Os digitálicos (como a digoxina) são medicamentos de terceira ou quarta linha no tratamento da insuficiência cardíaca. Eles podem ser utilizados para controle de frequência cardíaca em pacientes com fibrilação atrial ou para melhora sintomática em pacientes que permanecem muito sintomáticos mesmo com o tratamento otimizado. Importante ressaltar que os digitálicos não reduzem a mortalidade na IC.\n\nb) Incorreta. Os diuréticos de alça (como a furosemida) são fundamentais para o controle de sintomas congestivos (edema e subcrepitações). No entanto, eles são considerados medicamentos de suporte sintomático. Embora ajudem a \"enxugar\" o paciente, eles não modificam o prognóstico da doença a longo prazo nem reduzem a mortalidade de forma isolada como os inibidores do sistema renina-angiotensina.\n\nc) Incorreta. Os betabloqueadores são um dos pilares do tratamento da IC e reduzem a mortalidade. Contudo, existe uma regra fundamental na prática clínica: não se deve iniciar o uso de betabloqueadores em pacientes que apresentam sinais de descompensação aguda ou congestão pulmonar evidente (como as subcrepitações relatadas). O início do betabloqueador deve ocorrer preferencialmente quando o paciente estiver \"seco\" (euvolêmico), para evitar a queda do débito cardíaco e piora dos sintomas.\n\nd) Correta. Os Inibidores da Enzima Conversora de Angiotensina (IECA) são considerados a medicação de escolha para iniciar o tratamento da insuficiência cardíaca com fração de ejeção reduzida. Eles atuam bloqueando o sistema renina-angiotensina-aldosterona, o que previne o remodelamento cardíaco, reduz a pós-carga, diminui as taxas de hospitalização e, comprovadamente, reduz a mortalidade. Podem ser iniciados com segurança mesmo na presença de leves sinais de congestão, desde que a função renal e os níveis de potássio permitam.\n\nConclusão:\nDiante de um paciente com diagnóstico clínico de IC e sinais de congestão, a prioridade é iniciar drogas que modifiquem a sobrevida. Entre as opções apresentadas, o IECA é a escolha inicial mais adequada e segura para o manejo do quadro.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  },
+  {
+    "id": "AJUDA_8551282e-075e-4b5d-99ba-6f3a220c0ead",
+    "originalId": "8551282e-075e-4b5d-99ba-6f3a220c0ead",
+    "statement": "A presença do divertículo de meckel em um saco herniário, caracteriza a hérnia de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Richer",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Spiegel",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Petit",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Littre",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Grynfelt",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o conhecimento das nomenclaturas específicas das hérnias da parede abdominal, um tema frequente em provas de cirurgia geral.\n\nA alternativa correta é a (d) Littre.\n\nAbaixo, a explicação detalhada de cada alternativa:\n\nAlternativa (a) Incorreta. A Hérnia de Richter caracteriza-se pelo pinçamento de apenas uma parte da circunferência da borda antimesentérica da alça intestinal através do anel herniário. O risco principal é a isquemia e necrose de um segmento da parede intestinal sem que haja obstrução do trânsito intestinal completo, o que pode retardar o diagnóstico.\n\nAlternativa (b) Incorreta. A Hérnia de Spiegel, também chamada de hérnia semilunar, ocorre através de um defeito na fáscia de Spiegel (aponeurose do músculo transverso do abdome), entre a linha semilunar e a borda lateral do músculo reto abdominal. Geralmente ocorre abaixo da linha umbilical, na altura da linha arqueada de Douglas.\n\nAlternativa (c) Incorreta. A Hérnia de Petit é uma hérnia lombar que protrui através do triângulo lombar inferior. Os limites deste triângulo são a crista ilíaca inferiormente, o músculo latíssimo do dorso posteriormente e o músculo oblíquo externo anteriormente.\n\nAlternativa (d) Correta. A Hérnia de Littre é a denominação dada quando o conteúdo do saco herniário é o divertículo de Meckel. O divertículo de Meckel é um remanescente do ducto onfalomesentérico e pode estar presente em sacos herniários inguinais, femorais ou umbilicais. É importante não confundi-la com a Hérnia de Amyand (apêndice no saco herniário inguinal) ou Hérnia de De Garengeot (apêndice no saco herniário femoral).\n\nAlternativa (e) Incorreta. A Hérnia de Grynfelt é também uma hérnia lombar, mas que ocorre no triângulo lombar superior (ou espaço de Grynfelt-Lesshaft). Este espaço é delimitado pela 12ª costela superiormente, pelo músculo eretor da espinha medialmente e pelo músculo oblíquo interno lateralmente. É considerada o tipo mais comum de hérnia lombar.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  },
+  {
+    "id": "AJUDA_85634517-cccc-4176-9783-8f15ba5c0d76",
+    "originalId": "85634517-cccc-4176-9783-8f15ba5c0d76",
+    "statement": "O câncer de ovário é a neoplasia ginecológica mais letal e é a quinta causa mais comum de câncer em mulheres. A incidência é mais alta na Europa e nos Estados Unidos e mais baixa no Japão e em países em desenvolvimento. A respeito dessa doença, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A idade média das pacientes com essa neoplasia é de 40 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os tumores de ovário boderline são de origem mesenquimal, caracterizados por proliferação celular desregulada e presença de atipia nuclear evidente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No tumor de Brenner o núcleo das células epiteliais tem um sulco longitudinal semelhante à forma de um “anel de sinete”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O cistoadenoma mucinoso é uma neoplasia de origem epitelial, caracterizada por ser de aspecto multiloculado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O tumor de Krukenberg é um tumor do ovário maligno, tendo o próprio ovário como local primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O câncer de ovário é um tema frequente em provas de residência devido à sua alta letalidade e complexidade histológica. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa a) Incorreta. A idade média ao diagnóstico do câncer de ovário epitelial, que representa cerca de 90% dos casos, é de aproximadamente 60 a 63 anos. Embora possa ocorrer em mulheres mais jovens (especialmente os tumores de linhagem germinativa), a maioria das pacientes está na pós-menopausa.\n\nAlternativa b) Incorreta. Os tumores borderline (ou de baixo potencial de malignidade) são, em sua grande maioria, de origem epitelial (serosos ou mucinosos), e não mesenquimal. Eles se caracterizam por proliferação epitelial e atipia nuclear, porém o critério fundamental que os define é a ausência de invasão do estroma ovariano.\n\nAlternativa c) Incorreta. No tumor de Brenner, as células epiteliais apresentam um sulco longitudinal característico que lhes confere o aspecto de grãos de café (coffee bean nuclei). O termo anel de sinete refere-se a células ricas em mucina que deslocam o núcleo para a periferia, sendo típicas de metástases de sítio gastrointestinal para o ovário (Tumor de Krukenberg), e não do tumor de Brenner.\n\nAlternativa d) Correta. O cistoadenoma mucinoso é uma neoplasia benigna de origem epitelial. Macroscopicamente, esses tumores costumam atingir grandes dimensões e apresentam-se como massas císticas multiloculadas (divididas em vários compartimentos ou lóculos), preenchidas por conteúdo mucoide espesso. É uma das descrições clássicas da patologia ovariana.\n\nAlternativa e) Incorreta. O tumor de Krukenberg é uma neoplasia maligna metastática para o ovário, ou seja, o ovário é o sítio secundário. O sítio primário mais comum é o estômago (adenocarcinoma gástrico de células em anel de sinete), seguido pelo cólon e mama. Caracteriza-se pelo acometimento tipicamente bilateral.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  },
+  {
+    "id": "AJUDA_856dd2b1-00e6-4ddf-bbf1-53e8439d471d",
+    "originalId": "856dd2b1-00e6-4ddf-bbf1-53e8439d471d",
+    "statement": "Os Tumores de Cabeça e Pescoço podem estar associados a diversos fatores de risco. A exposição crônica do trato aerodigestivo superior a carcinógenos conhecidos pode levar a displasia ou lesões pré-malignas e evoluir com câncer de cabeça e pescoço, cujo subtipo histológico mais comum é o carcinoma escamo-celular. O câncer de cabeça e pescoço NÃO está associado a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tabagismo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Etilismo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Papiloma Vírus Humano (HPV)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Herpes Vírus tipo II",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A compreensão dos fatores de risco para os tumores de cabeça e pescoço é fundamental, pois a maioria desses cânceres é passível de prevenção. O carcinoma espinocelular (ou escamocelular) representa mais de 90% dos casos nessa região. Abaixo, analisamos a relação de cada alternativa com a patogênese da doença:\n\nAlternativa (a) Tabagismo: Incorreta. O uso de tabaco (cigarro, charuto, cachimbo ou fumo mascado) é o principal fator de risco isolado para o câncer de cabeça e pescoço. A combustão do tabaco libera milhares de substâncias químicas, muitas delas carcinógenos potentes que causam danos diretos ao DNA das células da mucosa do trato aerodigestivo superior.\n\nAlternativa (b) Etilismo: Incorreta. O consumo crônico de álcool é um fator de risco independente e significativo. O álcool atua como um irritante da mucosa e seu metabólito, o acetaldeído, é sabidamente carcinogênico. Além disso, o álcool funciona como um solvente que facilita a penetração de outros carcinógenos (como os do tabaco) nas células, criando um efeito sinérgico que aumenta exponencialmente o risco quando ambos os hábitos estão presentes.\n\nAlternativa (c) Papilomavírus Humano (HPV): Incorreta. A infecção pelo HPV, especialmente o subtipo 16, é um fator de risco estabelecido e crescente, particularmente para tumores localizados na orofaringe (amígdalas e base da língua). Diferente dos tumores causados por tabaco e álcool, o câncer relacionado ao HPV frequentemente acomete pacientes mais jovens e tem um comportamento biológico e prognóstico distintos.\n\nAlternativa (d) Herpesvírus tipo II: Correta. O herpesvírus humano tipo 2 (HSV-2) é o principal agente do herpes genital, sendo transmitido predominantemente por via sexual e afetando a região anogenital. Não existe evidência científica que associe o HSV-2 ao desenvolvimento de carcinoma escamocelular de cabeça e pescoço. É importante não confundir com o vírus Epstein-Barr (EBV), que também pertence à família Herpesviridae, mas está especificamente associado ao carcinoma de nasofaringe.\n\nConclusão: Como a questão solicita o fator que NÃO está associado ao câncer de cabeça e pescoço, a resposta correta é a letra (d).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Neoplasias Benignas e Malignas"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  },
+  {
+    "id": "AJUDA_85713f6f-bc8a-4686-9d8d-7c296d635410",
+    "originalId": "85713f6f-bc8a-4686-9d8d-7c296d635410",
+    "statement": "Maria Valentina, 29 anos, comparece à unidade para sua 1° consulta de pré-natal, atualmente está com 11 semanas e 3 dias. Durante a coleta da história, Maria Valentina informa que essa é sua 5° gestação, e que na sua última gestação há 1 ano e 9 meses atrás, foi bem tranquila, mas na hora do parto seu bebê nasceu muito grande, não sabe dizer ao certo com quantos quilos, mas sabe que foi mais de 4kg. Investigando a sua história familiar, afirma que sua mãe é diabética e hipertensa. Ao exame físico, observa-se:\nP: 103kg Alt: 1,62m IMC:39,2 kg/m² PA: 136x93mmHg\nNesta primeira consulta, Maria Valentina apresentou alguns fatores que nos fazem ficar atentos ao desenvolvimento de diabetes gestacional. Identifique a alternativa que apresenta tais fatores de risco:",
+    "options": [
+      {
+        "id": "A",
+        "text": "História familiar, multípara, Obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obesidade, multípara, valor anormal da pressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Idade superior a 25 anos, macrossomia, história familiar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Valor anormal da pressão, macrossomia, idade superior a 25 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para identificar os fatores de risco para Diabetes Mellitus Gestacional (DMG) no caso de Maria Valentina, devemos recorrer aos critérios estabelecidos pelo Ministério da Saúde e pela FEBRASGO. Os principais fatores de risco incluem: idade igual ou superior a 25 anos, obesidade ou sobrepeso pré-gestacional, história familiar de diabetes em parentes de primeiro grau, antecedentes obstétricos de macrossomia (bebê com mais de 4 kg) ou mortes fetais sem causa esclarecida, e hipertensão arterial ou síndromes hipertensivas na gestação.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a história familiar e a obesidade sejam fatores de risco claros no caso (mãe diabética e IMC de 39,2), a multiparidade (o fato de estar na 5ª gestação) não é considerada, isoladamente, um fator de risco clássico para o desenvolvimento de diabetes gestacional nos protocolos vigentes.\n\nAlternativa b) Incorreta. Assim como na alternativa anterior, a multiparidade invalida a opção. A obesidade e o valor anormal da pressão (136x93 mmHg) são fatores de risco presentes, mas a inclusão da multiparidade torna a alternativa tecnicamente inadequada para definir o perfil de risco de DMG.\n\nAlternativa c) Correta. Esta alternativa agrupa três fatores de risco clássicos presentes na história da paciente:\n1. Idade superior a 25 anos: Maria Valentina tem 29 anos.\n2. Macrossomia: A paciente relata que seu último filho nasceu com mais de 4 kg.\n3. História familiar: A mãe da paciente é diabética (parente de 1º grau).\nEstes três elementos são pilares fundamentais para a triagem de DMG já na primeira consulta de pré-natal.\n\nAlternativa d) Incorreta. Embora o valor anormal da pressão, a macrossomia e a idade superior a 25 anos sejam, de fato, fatores de risco presentes na paciente, a alternativa (c) é tradicionalmente a mais completa em termos de história clínica e antecedentes familiares em provas de residência. Além disso, a hipertensão é frequentemente um critério associado, mas a história familiar de diabetes é um preditor mais direto e robusto para o rastreio de DMG.\n\nResumo do quadro da paciente:\n- Idade: 29 anos (Risco: ≥ 25 anos).\n- IMC: 39,2 kg/m² (Risco: Obesidade).\n- Antecedente obstétrico: Macrossomia (> 4 kg).\n- Antecedente familiar: Mãe com DM (1º grau).\n- Pressão Arterial: 136x93 mmHg (Risco: Hipertensão).\n\nA alternativa (c) contempla a tríade de fatores de risco mais comumente exigida em exames baseados nos protocolos de saúde pública.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  },
+  {
+    "id": "AJUDA_857be8bf-e4db-46b7-ae98-614111f78c5b",
+    "originalId": "857be8bf-e4db-46b7-ae98-614111f78c5b",
+    "statement": "Um homem de 35 anos é levado ao departamento de emergência após uma briga de bar. Ele tem um ferimento por arma branca de 3 cm no hemitórax direito, de aproximadamente 5 cm lateralmente e logo acima do mamilo. Informa que o ferimento foi provocado por uma faca. Está consciente e orientado, embora embriagado, e reclama muito de dor no lado direito do tórax. Seus sinais vitais iniciais são: FC 96 bpm; PA 110/63 mmHg; FR 20 ipm e saturação de 98% em ar ambiente.\n\nApesar da reanimação com fluidos, a pressão arterial sistólica do paciente subitamente cai para 60 mmHg. Sua traqueia está na linha média e seus sons respiratórios estão reduzidos no hemitórax direito, com macicez à percussão. Qual é o próximo passo no tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coloque um dreno torácico 32F na cavidade pleural direita, no quinto espaço intercostal e na linha axilar média;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Coloque um Angiocath de 18G no segundo espaço intercostal e na linha médio-clavicular;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Leve o paciente imediatamente para a sala de cirurgia para toracotomia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inicie um protocolo de transfusão maciça para estabilizar o paciente e realize tomografia computadorizada para identificar a fonte da hipotensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nO paciente apresenta um trauma penetrante no hemitórax direito por arma branca. A evolução clínica mostra uma queda súbita da pressão arterial (choque obstrutivo ou hipovolêmico), associada a sons respiratórios reduzidos e macicez à percussão no lado afetado, com a traqueia centralizada. \n\nO achado de macicez à percussão é o ponto-chave para diferenciar o diagnóstico: ele indica a presença de líquido no espaço pleural (hemotórax). Se houvesse hipertimpanismo e desvio da traqueia, o diagnóstico seria pneumotórax hipertensivo. Diante de um hemotórax volumoso com instabilidade hemodinâmica, a conduta imediata é a drenagem torácica para expansão pulmonar, alívio da pressão intratorácica e quantificação do sangramento.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\nA inserção de um dreno de tórax (tubo de toracostomia) calibroso (geralmente entre 28F e 32F) no quinto espaço intercostal, entre as linhas axilares média e anterior, é o procedimento padrão para o tratamento do hemotórax. Este passo permite a evacuação do sangue, o que pode melhorar o retorno venoso e a função respiratória, além de ser o critério diagnóstico para avaliar a necessidade de uma toracotomia de urgência (caso o débito inicial seja superior a 1.500 ml ou contínuo acima de 200 ml/h).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\nAlternativa (b): A descompressão por agulha (Angiocath) no segundo espaço intercostal é a conduta imediata para o pneumotórax hipertensivo. No entanto, o paciente apresenta macicez (sangue) e não hipertimpanismo (ar), e sua traqueia está na linha média, o que torna essa manobra ineficaz para o quadro de hemotórax.\n\nAlternativa (c): Embora o paciente possa vir a precisar de uma toracotomia se o sangramento for maciço, a drenagem torácica deve ser realizada primeiro no departamento de emergência. A toracotomia imediata em sala cirúrgica é indicada após a confirmação de hemotórax maciço pelo dreno ou em casos específicos de parada cardiorrespiratória traumática presenciada.\n\nAlternativa (d): O protocolo de transfusão maciça pode ser necessário devido ao choque, mas a realização de uma tomografia computadorizada (TC) é absolutamente contraindicada em pacientes com instabilidade hemodinâmica (pressão arterial sistólica de 60 mmHg). Pacientes instáveis devem ser estabilizados e tratados com manobras invasivas imediatas ou levados diretamente ao centro cirúrgico, sem passar pela radiologia.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:24.314Z"
+  }
+]

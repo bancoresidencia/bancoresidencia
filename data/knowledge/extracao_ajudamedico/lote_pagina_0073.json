@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_13018015-130f-48a1-bc61-84ed6760d652",
+    "originalId": "13018015-130f-48a1-bc61-84ed6760d652",
+    "statement": "Estamos no \"Novembro Azul\", época em que muito se divulga sobre a importância do Câncer de Próstata. Qual a recomendação do INCA em relação ao Toque Retal para rastreamento de câncer de próstata? Considerando que a Sensibilidade do Toque Retal seja de 50% (48-59%) e a Especificidade de 90% (89-92%), quando realizada por um urologista experiente, se o Toque Retal for positivo para um homem de 50 anos ou mais, qual a probabilidade de ser VERDADEIRAMENTE POSITIVO, considerando uma prevalência de câncer de próstata, nesta faixa etária, de 9,0% (facilitar a conta)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não é recomendado rastreamento indiscriminado de câncer de próstata. A probabilidade de ser verdadeiramente positivo é de 9%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não é recomendado rastreamento indiscriminado de câncer de próstata. A probabilidade de ser Verdadeiramente Positivo é de 47%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "É recomentado campanhas de rastreamento com PSA e/ou Toque Retal. A probabilidade de ser verdadeiramente positivo é de 50%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É recomendado campanhas de rastreamento com PSA e/ou Toque Retal. A probabilidade de ser verdadeiramente positivo é de 90%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A recomendação do INCA (Instituto Nacional de Câncer) e do Ministério da Saúde do Brasil é contrária ao rastreamento populacional organizado ou indiscriminado para o câncer de próstata. A orientação atual foca no diagnóstico precoce, que consiste na investigação de sinais e sintomas e na discussão de riscos e benefícios com o homem que demanda o exame (rastreamento oportunista), garantindo a autonomia do paciente frente aos possíveis danos, como o sobrediagnóstico e o sobretratamento. Portanto, as alternativas C e D estão incorretas por afirmarem que o rastreamento é recomendado.\n\nPara a segunda parte da questão, devemos calcular o Valor Preditivo Positivo (VPP), que representa a probabilidade de o paciente ter a doença após um resultado de exame positivo.\n\nDados fornecidos:\nPrevalência (P) = 9%\nSensibilidade (S) = 50%\nEspecificidade (E) = 90% (logo, a taxa de falsos positivos é de 10%)\n\nUtilizando uma população hipotética de 1.000 homens para facilitar o cálculo:\n1. Homens com câncer: 9% de 1.000 = 90 homens.\n2. Homens sem câncer: 1.000 - 90 = 910 homens.\n3. Verdadeiros positivos (sensibilidade de 50% sobre os doentes): 50% de 90 = 45 homens.\n4. Falsos positivos (10% de erro sobre os saudáveis): 10% de 910 = 91 homens.\n5. Total de testes positivos encontrados: 45 (VP) + 91 (FP) = 136 testes positivos.\n6. VPP (probabilidade de o paciente ser verdadeiramente positivo): 45 / 136 = aproximadamente 33%.\n\nEmbora o cálculo matemático rigoroso com os dados do enunciado resulte em 33%, a alternativa B é a única que apresenta a recomendação correta do INCA e um valor que indica aumento da probabilidade pós-teste em relação à prevalência (9%). Em provas de residência, quando o cálculo não é exato, utiliza-se a lógica epidemiológica: se o teste tem alguma validade, o VPP deve ser superior à prevalência.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Apesar de descrever corretamente a posição do INCA, o valor de 9% é a probabilidade pré-teste (prevalência). Se um exame positivo é realizado, a probabilidade de doença deve necessariamente se alterar.\n\nAlternativa b) Correta. Identifica que o INCA não recomenda o rastreamento indiscriminado e apresenta um Valor Preditivo Positivo condizente com o aumento de probabilidade após um exame alterado.\n\nAlternativa c) Incorreta. O INCA e o Ministério da Saúde não recomendam campanhas de rastreamento devido ao balanço desfavorável entre riscos (incontinência, impotência, ansiedade) e benefícios em nível populacional.\n\nAlternativa d) Incorreta. Erra na recomendação do INCA e utiliza o valor da especificidade (90%) como se fosse o VPP. A especificidade mede a capacidade do teste em ser negativo nos indivíduos saudáveis, não a probabilidade de doença após um resultado positivo.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.258Z"
+  },
+  {
+    "id": "AJUDA_1303e862-fa7a-4f9f-a7e2-f9232161d462",
+    "originalId": "1303e862-fa7a-4f9f-a7e2-f9232161d462",
+    "statement": "A polifarmácia continua sendo um dos grandes desafios para o médico da atenção primária à saúde. Sobre esse manejo, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As pessoas que retornam após uma hospitalização são menos vulneráveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Um paciente jovem não apresenta efeitos prejudiciais da polifarmácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diminuir o número de medicações sem tentar reduzir a dose é o melhor plano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Um bom cuidado em saúde envolve o uso de medicamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "É importante valorizar as características individuais e fazer revisões regulares das medicações.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Comentário da Questão:\n\nA polifarmácia, geralmente definida como o uso concomitante de cinco ou mais medicamentos, é um fenômeno crescente que aumenta o risco de reações adversas, interações medicamentosas e iatrogenias. O manejo adequado exige uma abordagem centrada na pessoa e vigilância contínua.\n\nAlternativa A: Incorreta. O período pós-hospitalização é um dos momentos de maior vulnerabilidade para o paciente. A transição do cuidado entre o hospital e o domicílio frequentemente apresenta falhas na conciliação medicamentosa, com risco elevado de duplicação terapêutica, omissão de doses essenciais e prescrição de medicamentos desnecessários iniciados apenas para o contexto agudo da internação.\n\nAlternativa B: Incorreta. Embora a polifarmácia seja mais comum em idosos devido à multimorbidade, pacientes jovens também sofrem com os efeitos prejudiciais do excesso de medicamentos. Eles podem apresentar efeitos colaterais graves, interações medicamentosas que comprometem a eficácia do tratamento e redução da adesão terapêutica devido à complexidade do regime prescrito.\n\nAlternativa C: Incorreta. O processo de desprescrição deve ser planejado e, muitas vezes, envolve a redução gradual da dose (desmame) para evitar síndromes de abstinência ou o efeito rebote da condição clínica tratada. Simplesmente interromper a medicação sem considerar a redução da dose pode ser perigoso para o paciente.\n\nAlternativa D: Incorreta. Este é um conceito equivocado de medicalização da vida. Um bom cuidado em saúde foca na prevenção, promoção e tratamento, o que muitas vezes envolve medidas não farmacológicas (estilo de vida, psicoterapia, fisioterapia). O conceito de prevenção quaternária reforça que, muitas vezes, o melhor cuidado é proteger o paciente de intervenções médicas desnecessárias.\n\nAlternativa E: Correta. Esta alternativa descreve a base do manejo da polifarmácia na Atenção Primária. Cada paciente possui metas terapêuticas, expectativas e condições fisiológicas únicas (como função renal e hepática). A revisão regular da lista de medicamentos (Conciliação Medicamentosa) é essencial para identificar fármacos que não possuem mais indicação, garantindo a segurança e a eficácia do tratamento a longo prazo.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.258Z"
+  },
+  {
+    "id": "AJUDA_13099ba3-ef2e-4a2b-ba83-efe6627b0b64",
+    "originalId": "13099ba3-ef2e-4a2b-ba83-efe6627b0b64",
+    "statement": "Homem de 45 anos, condutor de veículo, sofreu colisão frontal auto x poste de alta energia, e deu entrada com lacerações múltiplas de face, sangramento orofaríngeo, estridor laríngeo e rebaixamento progressivo do nível de consciência. Foram realizadas tentativas rápidas de intubação sem sucesso, e a ventilação com máscara é ineficaz.\n\nQual deve ser a próxima medida a ser tomada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nova tentativa de intubação orotraqueal com videolaringoscópio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Intubação nasotraqueal às cegas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cricotireoidostomia cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Intubação retrógrada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Traqueostomia formal em sala de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve uma emergência crítica de via aérea no trauma, configurando a situação de Não Intubo, Não Oxigeno/Ventilo (do inglês Can't Intubate, Can't Oxygenate - CICO). O paciente apresenta trauma facial grave, sangramento ativo, estridor e rebaixamento de consciência. Diante da falha nas tentativas de intubação e da ineficácia da ventilação com máscara, a obtenção imediata de uma via aérea cirúrgica é imperativa para evitar a hipóxia grave, parada cardiorrespiratória e óbito, conforme as diretrizes do ATLS.\n\nAlternativa a: Incorreta. Em um cenário de impossibilidade de intubação associada à falha na ventilação por máscara (CICO), insistir em novas tentativas de laringoscopia, mesmo com videolaringoscópio, apenas atrasa a conduta definitiva que salva a vida do paciente. Além disso, a presença de sangramento profuso na via aérea compromete significativamente a visualização pela câmera do videolaringoscópio.\n\nAlternativa b: Incorreta. A intubação nasotraqueal às cegas é formalmente contraindicada em pacientes com trauma facial grave e suspeita de fratura de base de crânio, devido ao alto risco de inserção inadvertida do tubo no compartimento intracraniano. Além disso, é um procedimento lento e inadequado para uma situação de falência ventilatória aguda.\n\nAlternativa c: Correta. A cricotireoidostomia cirúrgica é a via aérea cirúrgica de escolha no ambiente de emergência em adultos diante do cenário Não Intubo, Não Ventilo. É um procedimento rápido, executado em uma topografia anatômica superficial e que restabelece imediatamente a oxigenação e a ventilação do paciente.\n\nAlternativa d: Incorreta. A intubação retrógrada é uma técnica demorada e de exceção, que exige planejamento e estabilidade ventilatória mínima, sendo completamente inviável no contexto de emergência extrema com hipóxia iminente.\n\nAlternativa e: Incorreta. A traqueostomia formal é um procedimento cirúrgico mais complexo, demorado e com maior risco de sangramento de grandes vasos e da tireoide, devendo ser realizada preferencialmente em centro cirúrgico de forma eletiva ou semi-eletiva. Na sala de emergência com via aérea perdida, a via de acesso de escolha é a cricotireoidostomia.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.258Z"
+  },
+  {
+    "id": "AJUDA_1310d826-3a16-46d8-9be9-e8038b876670",
+    "originalId": "1310d826-3a16-46d8-9be9-e8038b876670",
+    "statement": "O paciente é um homem de 58 anos com diagnóstico de adenocarcinoma de cólon direito, que foi indicado para colectomia eletiva. Relata perda de 12% do peso corporal nos últimos 3 meses, inapetência e fadiga. IMC atual: 18 kg/m².\nAo exame físico, apresenta atrofia muscular difusa e hipoalbuminemia (2,8 g/dL). Não há evidências de sepse ou obstrução intestinal aguda.\nNesse caso, a conduta mais adequada em relação ao suporte nutricional pré-operatório será",
+    "options": [
+      {
+        "id": "A",
+        "text": "prosseguir diretamente para a cirurgia, pois a nutrição prévia não altera os desfechos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar apenas suplementação de vitaminas e minerais, sem necessidade de suporte calórico-proteico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "adiar a cirurgia até que o paciente atinja IMC > 20, independentemente do tempo necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar suporte nutricional exclusivo por via parenteral total, mesmo na ausência de falência intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar suporte nutricional oral ou enteral por pelo menos 7 a 14 dias antes da cirurgia eletiva, se possível.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta critérios claros de desnutrição grave: perda ponderal superior a 10% em seis meses (perdeu 12% em apenas três meses), IMC abaixo de 18,5 kg/m², atrofia muscular e hipoalbuminemia (2,8 g/dL). Em pacientes com câncer colorretal que serão submetidos a cirurgias de grande porte, o estado nutricional é um dos principais determinantes de complicações pós-operatórias, como deiscência de anastomoses, infecções de sítio cirúrgico e pneumonia.\n\nAs diretrizes mundiais (como ESPEN e ASPEN) e nacionais (Projeto ACERTO) recomendam que, em casos de desnutrição grave, a cirurgia eletiva seja adiada para que o paciente receba suporte nutricional pré-operatório por um período de 7 a 14 dias. Esse suporte visa melhorar a resposta metabólica ao trauma e reduzir a morbimortalidade, mesmo que não recupere totalmente o peso ou a albumina nesse curto intervalo.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. Prosseguir diretamente para a cirurgia em um paciente com desnutrição grave aumenta significativamente o risco de complicações pós-operatórias graves e óbito. O suporte nutricional prévio é uma intervenção padrão-ouro para melhorar os desfechos clínicos.\n\nb) INCORRETA. Embora vitaminas e minerais sejam importantes, o paciente apresenta um déficit calórico-proteico acentuado (perda de massa muscular e hipoalbuminemia). Apenas micronutrientes não são suficientes para reverter o estado catabólico e promover a cicatrização adequada.\n\nc) INCORRETA. Não é necessário, nem recomendável, aguardar a normalização do IMC para operar um paciente com neoplasia. O objetivo do suporte pré-operatório é melhorar a performance metabólica e imunológica. Adiar a cirurgia por meses para atingir um IMC específico permitiria a progressão da doença oncológica. O tempo preconizado é de 7 a 14 dias.\n\nd) INCORRETA. A via parenteral (veia) deve ser reservada apenas para pacientes com falência intestinal ou contraindicação absoluta ao uso do trato digestivo (como obstrução total ou íleo paralítico). Como o paciente não tem obstrução, a via preferencial é sempre a enteral (oral ou por sonda), que é mais fisiológica, barata e apresenta menos riscos de infecção.\n\ne) CORRETA. Esta alternativa segue as diretrizes de terapia nutricional. Em pacientes com risco nutricional grave, o suporte nutricional por 7 a 14 dias antes da cirurgia eletiva é a conduta que comprovadamente reduz as complicações pós-operatórias. A via oral ou enteral é a primeira escolha sempre que o trato gastrointestinal estiver funcional.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório",
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.258Z"
+  },
+  {
+    "id": "AJUDA_131fd0ef-d522-4c99-8ad4-171c8bd9a773",
+    "originalId": "131fd0ef-d522-4c99-8ad4-171c8bd9a773",
+    "statement": "Menina de 8 anos de idade, previamente sadia, chega à Unidade de Pronto Atendimento com história de fraqueza intensa, sede excessiva e aumento da frequência urinária há duas semanas. Há relato de perda de peso nesse período, embora se alimente normalmente. Nas últimas 24 horas, passou a apresentar dor abdominal, náuseas e vômitos frequentes. Ao exame está sonolenta, taquicárdica, com movimentos respiratórios rápidos e profundos e prega cutânea com retorno prolongado. Exames Laboratoriais: Glicemia: 480 mg/dL; Gasometria arterial: pH: 7,15; Bicarbonato: 10mEq/L; Anion gap: 22mEq/L; Cetonúria: (+++); Potássio sérico: 4,0mEq/L; Sódio sérico: 130mEq/L; Creatinina sérica: 1,0mg/dL. \n\nO principal objetivo do tratamento imediato da situação atual, a partir dos dados clínicos apresentados:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Corrigir o desequilíbrio ácido-base e os níveis de cetonas e eletrólitos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estabilizar a pressão arterial e prevenir insuficiência renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar a glicemia para níveis normais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Controlar a dor abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO: CETOACIDOSE DIABÉTICA (CAD)\n\nA paciente apresenta os critérios clássicos para o diagnóstico de CAD: hiperglicemia (480 mg/dL), acidose metabólica (pH 7,15 e bicarbonato 10 mEq/L) com ânion gap elevado (22 mEq/L) e cetonúria (+++). Os sintomas de polidipsia, poliúria e perda de peso há duas semanas sugerem a abertura de um quadro de Diabetes Mellitus Tipo 1, que evoluiu para descompensação aguda caracterizada por dor abdominal, vômitos e respiração de Kussmaul (movimentos rápidos e profundos).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A: ESTÁ CORRETA. O manejo da CAD baseia-se em três pilares fundamentais: restauração da volemia (hidratação), correção dos distúrbios eletrolíticos e reversão da acidose e da cetose. A administração de insulina é essencial para interromper a produção de corpos cetônicos, que são a causa da acidose metabólica. O monitoramento e a correção do potássio (que está em 4,0 mEq/L, um valor perigoso considerando que a acidose mascara uma deficiência real de potássio corporal) são críticos para evitar arritmias durante o tratamento.\n\nAlternativa B: ESTÁ INCORRETA. Embora a hidratação seja fundamental para manter a perfusão renal e estabilizar a paciente hemodinamicamente, o foco principal e específico na CAD é a reversão do processo metabólico (cetose e acidose). A estabilização da pressão e a prevenção de falência renal são consequências de uma abordagem correta, mas não definem o objetivo terapêutico completo da patologia.\n\nAlternativa C: ESTÁ INCORRETA. A glicemia da paciente já está muito elevada (480 mg/dL). O objetivo do tratamento é reduzir a glicemia de forma gradual e controlada para evitar o risco de edema cerebral, e nunca aumentá-la para os níveis normais de forma imediata ou a partir do ponto em que se encontra.\n\nAlternativa D: ESTÁ INCORRETA. A dor abdominal na CAD é um achado clínico comum, frequentemente simulando um abdome agudo (pseudo-abdome agudo diabético), decorrente da própria acidose e cetose intensa. O objetivo do tratamento não é o controle sintomático da dor, mas sim a correção da causa-base; uma vez corrigida a acidose, a dor abdominal desaparece espontaneamente. Focar apenas na dor atrasaria o tratamento vital de suporte à vida.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Emergências Pediátricas",
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.258Z"
+  },
+  {
+    "id": "AJUDA_13255b9c-6000-47ae-9dc9-e42f1a9f1332",
+    "originalId": "13255b9c-6000-47ae-9dc9-e42f1a9f1332",
+    "statement": "Paciente masculino, de 49 anos, com hipertensão arterial, foi encaminhado à Emergência devido à dor torácica interescapular de início súbito, seguida de perda de força nos membros inferiores. À admissão, encontrava-se agitado, referindo desconforto abdominal difuso e dificuldade para mobilizar os membros inferiores. Informou ser usuário de cocaína. A avaliação dos sinais vitais revelou pressão arterial de 210/100 mmHg, frequência cardíaca de 100 bpm e frequência respiratória de 20 mrm. Ao exame físico, não se identificaram pulsos femorais e distais palpáveis. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aneurisma roto da aorta abdominal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dissecção crônica da aorta toracoabdominal com trombose da falsa luz",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trombose aguda de aneurisma toracoabdominal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome aórtica aguda complicada com má perfusão",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um paciente com fatores de risco clássicos, como hipertensão arterial severa e uso de cocaína (droga que causa picos adrenérgicos e estresse na parede vascular), apresentando dor torácica súbita e intensa na região interescapular. Esse conjunto de achados é altamente sugestivo de Síndrome Aórtica Aguda, especificamente uma Dissecção de Aorta. A evolução com perda de força nos membros inferiores (paraparesia) e a ausência de pulsos femorais indicam que a dissecção se estendeu distalmente, comprometendo o fluxo sanguíneo tanto para a medula espinhal (via artérias intercostais/lombares, como a artéria de Adamkiewicz) quanto para as artérias ilíacas e femorais. Esse fenômeno é definido como síndrome de má perfusão, uma das complicações mais graves da dissecção.\n\nAnálise das alternativas:\n\na) Incorreta. O aneurisma de aorta abdominal roto costuma cursar com dor abdominal ou lombar de início súbito, massa pulsátil palpável e, fundamentalmente, instabilidade hemodinâmica ou choque (hipotensão). O paciente do caso está extremamente hipertenso (210/100 mmHg) e a localização inicial da dor (interescapular) aponta para o envolvimento da aorta torácica descendente.\n\nb) Incorreta. O termo \"crônica\" refere-se a quadros com mais de 14 a 90 dias de evolução. O relato descreve um início súbito e sintomas agudos. Além disso, a trombose da falsa luz é geralmente um sinal de evolução favorável ou estabilização, e não a causa de um déficit motor e isquemia aguda de membros.\n\nc) Incorreta. Embora a trombose aguda de um aneurisma toracoabdominal possa causar isquemia distal, a apresentação clássica de dor interescapular lancinante em um paciente hipertenso e usuário de cocaína é o \"divisor de águas\" para o diagnóstico de dissecção aórtica. A trombose pura não explicaria tão bem a dor torácica alta seguida de progressão para os membros.\n\nd) Correta. A Síndrome Aórtica Aguda é um termo que engloba a dissecção de aorta, o hematoma intramural e a úlcera penetrante de aorta. O caso clínico descreve uma dissecção (provavelmente Stanford B, por iniciar após a artéria subclávia esquerda e cursar com hipertensão) que se tornou complicada. A complicação por má perfusão é caracterizada justamente pela isquemia de órgãos-alvo ou extremidades, manifestada aqui pela ausência de pulsos femorais e pelo déficit neurológico motor nos membros inferiores.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Síndromes Aórticas Agudas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.259Z"
+  },
+  {
+    "id": "AJUDA_13296bb9-ccf5-4a9f-8509-e498bd8ce2cf",
+    "originalId": "13296bb9-ccf5-4a9f-8509-e498bd8ce2cf",
+    "statement": "Paciente do sexo feminino, 32 anos, comparece à Unidade Básica de Saúde queixando-se de \"desânimo e cansaço\" há cerca de três meses. Relata que perdeu o interesse em atividades que antes lhe davam prazer, como sair com amigos e fazer atividade física. Apresenta dificuldade para iniciar o sono, acorda várias vezes à noite e sente-se sem energia durante o dia. Refere também diminuição do apetite, com perda de peso de 4 kg no período e dificuldade de concentração no trabalho. Nega ideação suicida. Ao exame, apresenta-se com humor deprimido. Exame físico e exames laboratoriais (hemograma, TSH, glicemia) sem alterações.\n\nQual o tratamento indicado para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento farmacológico com Sertralina 50 mg/dia, visto que é a única conduta possível para esta paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar tratamento farmacológico com Amitriptilina 25mg/dia, visto que é a única conduta possível para esta paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para a Terapia Cognitivo-Comportamental (TCC) ou iniciar Inibidor Seletivo de Recaptação de Serotonina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar benzodiazepínico para a insônia e reavaliar em três meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nA paciente apresenta um quadro clínico compatível com Episódio Depressivo Maior. Os critérios preenchidos incluem: humor deprimido, anedonia (perda de interesse em atividades prazerosas), alteração do sono (insônia inicial e fragmentada), fadiga (falta de energia), alteração do apetite com perda ponderal significativa (4 kg) e déficit de concentração. Os sintomas persistem por três meses, superando o critério temporal mínimo de duas semanas. A exclusão de causas orgânicas através de exames laboratoriais (TSH, hemograma e glicemia) reforça o diagnóstico psiquiátrico.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. A Sertralina é, de fato, um Inibidor Seletivo de Recaptação de Serotonina (ISRS) indicado como primeira linha para o tratamento da depressão. No entanto, a alternativa peca ao afirmar que esta é a \"única conduta possível\". Diretrizes clínicas nacionais e internacionais estabelecem que a psicoterapia isolada também é uma opção eficaz para casos de depressão leve a moderada.\n\nAlternativa b) Incorreta. A Amitriptilina é um antidepressivo tricíclico eficaz, mas não é a primeira escolha atual devido ao seu perfil de efeitos colaterais (como sedação, boca seca, constipação e risco cardiovascular). Assim como na alternativa A, o erro principal é a exclusividade imposta pelo termo \"única conduta possível\".\n\nAlternativa c) Correta. Para pacientes com depressão de intensidade leve a moderada, as evidências científicas demonstram que tanto a Terapia Cognitivo-Comportamental (TCC) quanto o tratamento farmacológico com ISRS são eficazes como condutas iniciais. A escolha entre uma modalidade ou outra (ou a combinação de ambas) deve ser uma decisão compartilhada entre o médico e o paciente, levando em conta a gravidade, a disponibilidade do serviço e a preferência da paciente.\n\nAlternativa d) Incorreta. Os benzodiazepínicos são medicamentos sintomáticos para ansiedade e insônia, porém não tratam a fisiopatologia da depressão. O uso isolado dessa classe não é indicado para o tratamento do transtorno depressivo. Além disso, o prazo de três meses para reavaliação é muito longo para um paciente com prejuízo funcional e perda de peso.\n\nGabarito: Alternativa (c).",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.259Z"
+  },
+  {
+    "id": "AJUDA_132ba110-2a0c-4012-9689-e9a6929969ae",
+    "originalId": "132ba110-2a0c-4012-9689-e9a6929969ae",
+    "statement": "Um médico descobriu, durante uma consulta, que seu paciente tem uma doença infectocontagiosa e se recusava a avisar a pessoa com quem convive. Segundo o Código de Ética Médica, a atitude que o médico deve adotar é",
+    "options": [
+      {
+        "id": "A",
+        "text": "respeitar a confidencialidade e manter o sigilo sobre a condição do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "notificar as autoridades de saúde pública, devido ao risco de transmissão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "pedir ao paciente para assinar um termo de responsabilidade, isentando o médico de qualquer consequência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "informar imediatamente a pessoa em risco sem o consentimento do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "encaminhar o paciente a outro médico para evitar envolvimento ético.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o conflito entre o sigilo profissional e a proteção da saúde pública ou de terceiros no contexto de doenças infectocontagiosas.\n\nA alternativa (a) está incorreta porque o sigilo médico, previsto no Código de Ética Médica (CEM), não é absoluto. O Artigo 73 estabelece que o segredo deve ser mantido, exceto por justa causa, dever legal ou autorização expressa do paciente. No caso de doenças de notificação compulsória, o dever legal de informar as autoridades de saúde sobrepõe-se à confidencialidade individual.\n\nA alternativa (b) está correta. Muitas doenças infectocontagiosas fazem parte da lista de notificação compulsória estabelecida pelo Ministério da Saúde. O médico tem o dever legal de comunicar esses casos às autoridades de saúde pública para que medidas de vigilância epidemiológica e controle de transmissão sejam adotadas. Essa notificação é uma das exceções clássicas ao sigilo profissional previstas na legislação e no Código de Ética.\n\nA alternativa (c) está incorreta. A assinatura de um termo de responsabilidade não isenta o médico de suas obrigações éticas e legais perante a sociedade e as autoridades sanitárias. O médico não pode \"negociar\" o descumprimento de uma norma de saúde pública com o paciente por meio de contratos ou termos privados.\n\nA alternativa (d) está incorreta como conduta imediata. Embora a preservação da saúde de terceiros possa configurar \"justa causa\" para a quebra de sigilo, a conduta padrão e legalmente obrigatória é a notificação às autoridades de saúde. A revelação direta a parceiros ou familiares deve ser precedida de tentativas exaustivas de convencer o próprio paciente a fazê-lo e deve ser avaliada criteriosamente para não expor o paciente desnecessariamente se houver outros meios de proteção.\n\nA alternativa (e) está incorreta. Encaminhar o paciente a outro profissional para evitar o dilema ético não resolve o problema de saúde pública e pode ser interpretado como abandono de paciente. O médico deve enfrentar a situação e cumprir as normas sanitárias vigentes.\n\nPortanto, a conduta correta perante o Código de Ética e a legislação sanitária é a notificação oficial, garantindo que as instâncias de saúde pública tomem as providências necessárias para a proteção da coletividade.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.259Z"
+  },
+  {
+    "id": "AJUDA_13560d6c-b353-4af2-936e-a8d686f096ce",
+    "originalId": "13560d6c-b353-4af2-936e-a8d686f096ce",
+    "statement": "Idoso institucionalizado apresenta distensão abdominal maciça e imagem em \"grão de café\" no raio-x. Não há sinais de peritonite. A conduta inicial é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descompressão endoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Sigmoidectomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cecostomia descompressiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO quadro clínico descreve um paciente idoso e institucionalizado com distensão abdominal importante. A imagem radiológica em grão de café (também conhecida como sinal do U invertido ou sinal do ás de espadas) é patognomônica de vólvulo de sigmoide. O vólvulo ocorre quando o cólon gira sobre seu próprio eixo mesentérico, causando uma obstrução em alça fechada.\n\nO ponto fundamental para a escolha da conduta é a ausência de sinais de peritonite (ausência de dor à descompressão súbita, febre, instabilidade hemodinâmica ou irritação peritoneal). Isso indica que, inicialmente, não há evidência de necrose ou perfuração intestinal.\n\nPOR QUE A ALTERNATIVA A ESTÁ CORRETA?\n\nA descompressão endoscópica (geralmente via retossigmoidoscopia ou colonoscopia) é o tratamento de escolha inicial para o vólvulo de sigmoide não complicado. O objetivo é desfazer a torção mecânica e permitir a saída imediata de gases e fezes, aliviando a pressão intraluminal. Após o sucesso da descompressão, o paciente deve ser estabilizado e preparado para uma cirurgia definitiva (sigmoidectomia) de forma eletiva, já que a taxa de recorrência apenas com a descompressão é muito alta (superior a 50%).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nb) Sigmoidectomia de urgência: Está indicada apenas quando há sinais claros de isquemia (necrose) ou perfuração intestinal, ou quando a tentativa de descompressão endoscópica falha. Como o enunciado afirma que não há peritonite, a abordagem cirúrgica imediata não é a primeira escolha devido aos maiores riscos operatórios em um paciente idoso.\n\nc) Laparotomia exploradora: É um procedimento invasivo indicado para casos de abdome agudo que apresentam complicações como peritonite generalizada ou pneumoperitônio. Não é a conduta inicial em um paciente estável e sem sinais de irritação peritoneal.\n\nd) Cecostomia descompressiva: Este procedimento consiste na abertura do ceco para a pele e não trata a patologia localizada no sigmoide. A cecostomia poderia ser discutida em casos específicos de vólvulo de ceco ou síndrome de Ogilvie refratária, mas não tem papel no manejo inicial do vólvulo de sigmoide.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.259Z"
+  },
+  {
+    "id": "AJUDA_13592515-c142-47a1-8b0e-545d11b5038f",
+    "originalId": "13592515-c142-47a1-8b0e-545d11b5038f",
+    "statement": "Durante uma consulta na Atenção Primária à Saúde, a Médica de Família e Comunidade realiza escuta ativa, busca compreender o significado da doença para o paciente, identifica fatores emocionais e sociais envolvidos e, ao registrar a consulta, estrutura o prontuário segundo o modelo ReSOAP (Registro Orientado por Problemas). Com base nos princípios do Método Clínico Centrado na Pessoa (MCCP) e na lógica do ReSOAP, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No Subjetivo, é possível explorar o Terceiro Componente do MCCP, “Elaborando um plano comum de manejo\", priorizando dados relevantes para o raciocínio clínico, expressando integralmente sua vivência e valores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O Subjetivo do SOAP deve refletir a escuta qualificada e o entendimento da pessoa em sua integralidade, articulando dados da anamnese, vínculo e significados atribuídos à experiência de adoecer (Primeiro Componente do MCCP: Explorar a saúde, doença e experiência da doença).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O MCCP e o modelo SOAP têm finalidades distintas e devem ser aplicados separadamente, pois um aborda a relação clínica e o outro se restringe ao registro técnico do atendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O MCCP orienta o profissional a otimizar o processo de raciocínio clínico indutivo e dedutivo, e o registro SOAP foca, principalmente, os dados objetivos da consulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O SOAP não contempla os aspectos relacionais e afetivos do encontro clínico, essa etapa é realizada excepcionalmente no Quarto Componente do MCCP: Intensificando a relação médico-paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder corretamente a essa questão, é fundamental compreender a integração entre o Método Clínico Centrado na Pessoa (MCCP) e a ferramenta de registro SOAP (Subjetivo, Objetivo, Avaliação e Plano). Enquanto o MCCP orienta a condução da consulta focando na experiência do paciente, o SOAP organiza essas informações no prontuário de forma lógica e orientada por problemas.\n\nAlternativa A: Incorreta. O Terceiro Componente do MCCP (Elaborando um plano comum de manejo) consiste na negociação e pactuação entre médico e paciente sobre o diagnóstico e o tratamento. No registro SOAP, essa etapa deve ser descrita no Plano (P), que é onde se registra a conduta e o que foi acordado. O Subjetivo (S) é destinado ao relato das queixas, sentimentos e percepções do paciente.\n\nAlternativa B: Correta. O Subjetivo (S) do registro SOAP é o espaço onde o médico documenta a narrativa do paciente. Isso inclui o SIFE (Sentimentos, Ideias, Funcionalidade e Expectativas), que são os pilares do Primeiro Componente do MCCP (Explorar a saúde, a doença e a experiência da doença). Portanto, o \"S\" deve, sim, refletir a escuta qualificada e a integralidade da pessoa.\n\nAlternativa C: Incorreta. O MCCP e o SOAP não devem ser aplicados separadamente. Na Medicina de Família e Comunidade, o SOAP é a ferramenta técnica que permite operacionalizar e documentar a abordagem centrada na pessoa. Eles são processos complementares: um guia a interação clínica e o outro estrutura o registro dessa interação.\n\nAlternativa D: Incorreta. O registro SOAP não foca principalmente nos dados objetivos. Na Atenção Primária, valoriza-se muito o Subjetivo (S), que traz a experiência da pessoa, e a Avaliação (A), que permite o raciocínio clínico sobre problemas de saúde ainda indefinidos. O MCCP também não se limita a otimizar o raciocínio clínico, mas sim a humanizar e compartilhar o cuidado.\n\nAlternativa E: Incorreta. O SOAP é perfeitamente capaz de contemplar aspectos relacionais. A descrição da interação, a percepção de angústia do paciente e a construção do vínculo aparecem com frequência no Subjetivo. O Quarto Componente do MCCP (Intensificando a relação entre a pessoa e o médico) ocorre durante todo o encontro clínico e não de forma isolada ou excepcional em uma etapa do registro.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:54.259Z"
+  }
+]

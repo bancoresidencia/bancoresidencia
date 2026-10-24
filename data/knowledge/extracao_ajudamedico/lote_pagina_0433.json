@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_7969e9e3-e487-4a87-b577-b5f307f8b34f",
+    "originalId": "7969e9e3-e487-4a87-b577-b5f307f8b34f",
+    "statement": "Uma paciente de 31 anos de idade, primigesta, 35 semanas de gestação, deu entrada no pronto atendimento obstétrico referindo dor abdominal súbita e intensa, com sangramento vaginal vermelho escuro e dor a palpação do útero. Ao exame físico, nota-se hipertonia uterina e taquissistolia. Pressão arterial materna de 160/110 mmHg, frequência cardíaca materna de 120 bpm e batimentos cardíacos fetais de 90 bpm. Ao exame especular há discreto sangramento vaginal e visualização de colo uterino impérvio. O registro cardiotocográfico evidencia linha de base contínua de 90 bpm, com 7 contrações uterinas fortes em 10 minutos. Com base no caso clínico, a conduta imediata para o manejo dessa paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "realização de cesariana imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "indução de trabalho de parto com misoprostol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "corticoterapia e cesariana em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "condução de trabalho de parto via vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "está indicada tocólise com nifedipino.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta um quadro clássico de Descolamento Prematuro da Placenta (DPP). A tríade clínica de dor abdominal súbita, hipertonia uterina (útero lenhoso) e sangramento vaginal escuro, associada à hipertensão arterial (160/110 mmHg), é patognomônica dessa patologia. O registro cardiotocográfico com bradicardia fetal (90 bpm) e a taquissistolia confirmam o sofrimento fetal agudo e a gravidade do quadro.\n\nAnálise das alternativas:\n\na) Correta. Diante de um diagnóstico de DPP com feto vivo e sinais de sofrimento fetal agudo (bradicardia persistente), a conduta deve ser a interrupção imediata da gestação pela via mais rápida. Como o colo uterino está impérvio (fechado), a cesariana é a via de escolha para salvar o binômio mãe-filho, visando cessar a hemorragia materna e extrair o feto em tempo hábil.\n\nb) Incorreta. O misoprostol é utilizado para a indução do parto em colos desfavoráveis, porém seu uso é contraindicado na presença de sofrimento fetal agudo e hipertonia uterina. Além disso, o processo de indução é demorado, o que seria fatal no cenário de um descolamento prematuro da placenta com bradicardia.\n\nc) Incorreta. A corticoterapia antenatal é indicada para a aceleração da maturidade pulmonar fetal entre 24 e 34 semanas de gestação em situações de risco de parto prematuro eletivo ou estável. No DPP com sofrimento fetal, a situação é de emergência obstétrica e não há tempo para aguardar o efeito do corticoide (48 horas), pois o risco de óbito fetal e complicações maternas graves é iminente.\n\nd) Incorreta. O parto vaginal pode ser considerado no DPP se o feto estiver morto ou se o parto for iminente (colo com dilatação avançada e progressão rápida). No caso descrito, o feto está vivo e o colo está impérvio, o que torna a condução vaginal inviável e perigosa, aumentando o risco de asfixia neonatal e morte fetal.\n\ne) Incorreta. A tocólise (inibição das contrações uterinas) é absolutamente contraindicada no Descolamento Prematuro da Placenta. O uso de nifedipino ou de qualquer outro tocolítico mascararia os sintomas, retardaria o tratamento definitivo e poderia agravar o sangramento oculto e a instabilidade hemodinâmica materna.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Sagramento da Segunda Metade",
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  },
+  {
+    "id": "AJUDA_796e11c7-6e5a-48d5-8766-e47cdc3628f9",
+    "originalId": "796e11c7-6e5a-48d5-8766-e47cdc3628f9",
+    "statement": "Homem de 60 anos apresenta quadro de cansaço aos esforços há 4 meses, dor abdominal e sangramento persistente nas fezes. O exame físico revela mucosas descoradas e massa palpável em quadrante inferior esquerdo.\nDiante da hipótese de anemia ferropriva associada a sangramento gastrointestinal crônico, esperam-se da cinética do ferro as seguintes características:",
+    "options": [
+      {
+        "id": "A",
+        "text": "reticulócitos aumentados, ferro sérico elevado, ferritina elevada, TIBC reduzido e IST aumentado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reticulócitos reduzidos, ferro sérico reduzido, ferritina reduzida, TIBC aumentado e IST reduzido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "reticulócitos aumentados, ferro sérico normal, ferritina normal, TIBC normal e IST normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "reticulócitos reduzidos, ferro sérico reduzido, ferritina elevada, TIBC reduzido e IST normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "reticulócitos aumentados, ferro sérico elevado, ferritina reduzida, TIBC aumentado e IST aumentado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão é um homem idoso (60 anos) com sintomas constitucionais (cansaço), sinais de sangramento intestinal crônico e uma massa palpável no quadrante inferior esquerdo. Este cenário é altamente sugestivo de neoplasia colorretal, uma causa clássica de anemia ferropriva por perda crônica de sangue em adultos e idosos. A questão foca especificamente no perfil laboratorial esperado para a anemia ferropriva.\n\nCINÉTICA DO FERRO NA ANEMIA FERROPRIVA\n\nNa anemia ferropriva, ocorre uma depleção progressiva dos estoques de ferro. Os parâmetros laboratoriais refletem essa carência da seguinte forma:\n\n1. Reticulócitos: Estão reduzidos ou normais (baixos para o grau de anemia). Como o ferro é a matéria-prima essencial para a formação da hemoglobina, a medula óssea não consegue produzir novas hemácias adequadamente, caracterizando uma anemia hipoproliferativa.\n2. Ferro Sérico: Encontra-se reduzido, pois os estoques e o ferro circulante foram exauridos.\n3. Ferritina: Encontra-se reduzida. É o parâmetro mais precoce e específico, pois reflete fielmente as reservas corporais de ferro.\n4. TIBC (Capacidade Total de Ligação do Ferro): Encontra-se aumentada. O fígado aumenta a produção de transferrina (a proteína que transporta o ferro) em uma tentativa compensatória de captar qualquer quantidade mínima de ferro disponível.\n5. IST (Índice de Saturação da Transferrina): Encontra-se reduzido. Como há muito transportador (TIBC alto) e pouco ferro circulante, a porcentagem de ocupação da transferrina pelo ferro cai drasticamente.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Descreve um quadro de sobrecarga de ferro (ferro e ferritina altos), o que é o oposto da deficiência. Reticulócitos aumentados sugeririam uma resposta medular eficaz (anemia regenerativa), comum em hemólise ou sangramento agudo, mas não na carência de ferro.\n\nAlternativa b) Correta. Apresenta o padrão clássico da anemia ferropriva: reticulócitos reduzidos (baixa produção), ferro e ferritina reduzidos (falta de estoque e circulação), TIBC aumentado (tentativa de compensação do transporte) e IST reduzido (baixa ocupação do transportador).\n\nAlternativa c) Incorreta. Valores normais de cinética do ferro descartariam a hipótese de anemia ferropriva. Reticulócitos aumentados com ferro normal poderiam indicar um sangramento muito recente ou hemólise.\n\nAlternativa d) Incorreta. Este perfil (ferro baixo com ferritina elevada e TIBC reduzido) é característico da Anemia de Doença Crônica (anemia da inflamação). Nela, o ferro existe no corpo, mas está \"preso\" nos estoques devido à ação da hepcidina, impedindo seu uso pela medula.\n\nAlternativa e) Incorreta. Apresenta dados contraditórios, como ferro sérico elevado e ferritina reduzida, que não se correlacionam com as patologias do metabolismo do ferro mais comuns. Na deficiência de ferro, o ferro sérico nunca estará elevado.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  },
+  {
+    "id": "AJUDA_797107d5-2e27-40db-adf7-ebd1f7e8d15f",
+    "originalId": "797107d5-2e27-40db-adf7-ebd1f7e8d15f",
+    "statement": "Você está atendendo no pronto-socorro em uma manhã de segunda-feira quando é chamada para avaliar uma paciente de 51 anos com fraqueza muscular e picos hipertensos. Relata que nos últimos dias tem sentido “tremores”, cansaço intenso e cãibras nas pernas, piorando progressivamente. Refere dificuldade para controlar a pressão arterial nas últimas semanas, mesmo utilizando corretamente losartana 100 mg/dia. Também é diabética tipo 2, em uso regular de metformina 1 g/dia. A pressão arterial na admissão era 180 × 110 mmHg. Exames colhidos na triagem: potássio: 2,5 mEq/L; sódio: 143 mEq/L; HCO₃: 32 mEq/L; pH arterial: 7,49; creatinina: 0,8 mg/dL. Ao explorar hábitos, menciona que há 2 meses passou a consumir diariamente 15 balas dietéticas para controlar a vontade de comer doces. Quando questionada especificamente, informa que o rótulo menciona \"extrato de alcaçuz\". Ela também tomou naproxeno 250 mg 12/12h por 3 dias devido à lombalgia, não usa diuréticos. O diagnóstico ou mecanismo mais provável para explicar o quadro da paciente, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipocalemia e hipertensão secundárias ao uso recente de AINE.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipocalemia induzida pela losartana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hiperaldosteronismo primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "efeito adverso metabólico da anlodipina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pseudohiperaldosteronismo por ingestão crônica de alcaçuz (glicirrizina).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente apresenta uma tríade clássica de hipertensão arterial sistêmica, hipocalemia (potássio de 2,5 mEq/L) e alcalose metabólica (pH 7,49 e HCO3 32 mEq/L). Esse conjunto de achados sugere um estado de excesso de mineralocorticoides. O ponto fundamental para o diagnóstico diferencial neste caso é o histórico de consumo diário de balas de alcaçuz (*licorice*) nos últimos dois meses.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Os anti-inflamatórios não esteroides (AINEs), como o naproxeno, tendem a causar retenção de sódio e água, podendo elevar a pressão arterial. No entanto, o efeito esperado dos AINEs sobre o potássio é a hipercalemia (aumento do potássio), por meio da inibição da síntese de prostaglandinas renais, o que reduz a secreção de renina e aldosterona. Portanto, o uso de AINE não justifica a hipocalemia de 2,5 mEq/L.\n\nAlternativa b) Incorreta. A losartana é um bloqueador dos receptores de angiotensina II (BRA). O efeito típico dessa classe de medicamentos é a tendência à hipercalemia, uma vez que eles bloqueiam o sistema renina-angiotensina-aldosterona, reduzindo a excreção renal de potássio. Seria contraditório atribuir a hipocalemia grave ao uso de losartana.\n\nAlternativa c) Incorreta. O hiperaldosteronismo primário (como no adenoma produtor de aldosterona) cursa exatamente com a mesma tríade (hipertensão, hipocalemia e alcalose). Contudo, a questão fornece um dado epidemiológico e dietético crucial: o consumo de extrato de alcaçuz. Na prática médica e em provas de residência, quando há uma exposição clara a uma substância que mimetiza uma doença, essa substância é a causa mais provável. No hiperaldosteronismo primário real, os níveis de aldosterona estariam altos, enquanto no caso do alcaçuz, tanto a renina quanto a aldosterona estarão suprimidas (pseudo-hiperaldosteronismo).\n\nAlternativa d) Incorreta. A anlodipina é um bloqueador de canais de cálcio que não causa distúrbios eletrolíticos como hipocalemia ou alcalose metabólica. Além disso, a paciente nem sequer estava em uso desse medicamento segundo o relato clínico.\n\nAlternativa e) Correta. O alcaçuz contém uma substância chamada ácido glicirrizínico (glicirrizina). Essa substância inibe a enzima 11-beta-hidroxiesteroide desidrogenase tipo 2 (11-beta-HSD2). Em condições normais, essa enzima converte o cortisol (ativo) em cortisona (inativa) nos rins. Como o cortisol tem afinidade pelos receptores de mineralocorticoides igual à da aldosterona, a enzima protege o receptor do excesso de cortisol circulante. Quando a enzima é inibida pela glicirrizina, o cortisol se acumula no tecido renal e passa a ativar massivamente os receptores de mineralocorticoides, causando retenção de sódio, excreção de potássio e de hidrogênio. Isso gera o quadro de pseudo-hiperaldosteronismo: clinicamente idêntico ao excesso de aldosterona, mas causado por outra substância (neste caso, o próprio cortisol da paciente agindo indevidamente no rim).",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Distúrbios do Potássio",
+      "Adrenal",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  },
+  {
+    "id": "AJUDA_79779ec8-f93c-451e-8d4c-19bfb3525b73",
+    "originalId": "79779ec8-f93c-451e-8d4c-19bfb3525b73",
+    "statement": "Um homem feodérmico, com 59 anos de idade e obeso, queixando dor intensa no flanco direito, febre termometrada de 37,9ºC, vômitos e queda do estado geral, procurou o serviço de urgência hospitalar. Os exames complementares revelaram anemia, leucocitose e distensão de íleo e ceco, não sendo possível identificar o apêndice, sem outras alterações. Com a hipótese diagnóstica de apendicite aguda, foi indicada laparoscopia para apendicectomia. Durante a operação, verificou-se o apêndice normal, mas foi encontrado um grande tumor no cólon ascendente. Tendo por base apenas esses dados, qual deve ser a CONDUTA nesse paciente entre as apresentadas a seguir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar ileostomia, seguida de colonoscopia para biopsiar o tumor e decidir a conduta correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar ileocolectomia direita com linfadenectomia regional e ileotransversostomia laterolateral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Retirar o tumor com margem de cinco centímetros, linfadenectomia regional e anastomose colônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar cecostomia descompressiva, colonoscopia com biópsia, quimioterapia redutora e cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve um paciente de 59 anos que, apesar da suspeita inicial de apendicite aguda, apresenta sinais que alertam para uma neoplasia colorretal, como a idade avançada, anemia e o quadro de suboclusão intestinal (vômitos e distensão de íleo e ceco). O achado intraoperatório de um tumor no cólon ascendente em um paciente com abdome agudo obstrutivo/inflamatório exige uma conduta definitiva, desde que as condições clínicas permitam.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA\n\nA ileocolectomia direita com linfadenectomia regional é o tratamento padrão-ouro para tumores localizados no cólon ascendente. Este procedimento consiste na retirada do íleo terminal, ceco, cólon ascendente e a flexura hepática, juntamente com o suprimento vascular e linfonodal correspondente (artéria ileocólica e cólica direita). No cólon direito, a literatura médica e as diretrizes de cirurgia oncológica autorizam a realização da anastomose primária (ileotransversostomia) mesmo em situações de urgência, pois a vascularização local é robusta e os índices de deiscência são menores do que no cólon esquerdo, permitindo a reconstrução do trânsito intestinal no mesmo tempo cirúrgico.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa a: Realizar apenas uma ileostomia e biópsia seria uma conduta excessivamente conservadora e incompleta. Isso sujeitaria o paciente a uma nova cirurgia de grande porte em um curto intervalo de tempo. Se o cirurgião já está com o campo operatório exposto e o tumor é ressecável, a retirada oncológica imediata é o melhor caminho para o prognóstico do paciente.\n\nAlternativa c: O erro desta alternativa está na descrição técnica. Para tumores de cólon direito, não se faz apenas a retirada do tumor com margem de segurança e uma anastomose colônica simples. É necessária a ileocolectomia formal para que se possa realizar a linfadenectomia de forma adequada seguindo os preceitos oncológicos (ligadura na origem dos vasos). Além disso, a anastomose é tipicamente entre o íleo e o transverso (ileotransversa), e não entre dois segmentos de cólon (colônica).\n\nAlternativa d: A cecostomia descompressiva é uma técnica cirúrgica considerada obsoleta na prática atual, pois apresenta alta taxa de complicações e raramente resolve a descompressão de forma satisfatória. Além disso, a quimioterapia neoadjuvante (redutora) não é a conduta inicial padrão para câncer de cólon obstrutivo; o tratamento de escolha para o câncer de cólon é a cirurgia com intenção curativa como primeiro passo, reservando a quimioterapia para o período pós-operatório (adjuvante), conforme o estadiamento patológico.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Apendicite Aguda",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  },
+  {
+    "id": "AJUDA_798a0937-66e3-4f4d-a99d-6189e60a414d",
+    "originalId": "798a0937-66e3-4f4d-a99d-6189e60a414d",
+    "statement": "Uma criança do sexo masculino, de 6 anos, foi trazida pelos pais à Unidade de Saúde da Família (USF) Rural com a história de que, há cerca de 40 minutos, a criança havia sido picada por um escorpião no hálux. Nesta unidade há soros antiescorpiônicos, antiofídicos e antiaracnídicos. A criança tinha queixas de dores de forte intensidade no local da picada, náuseas, com 2 episódios de vômitos após o acidente, mas sem evacuações. Negava queixas cardiorrespiratórias, dores abdominais ou cefaleia. \nAo exame físico o paciente estava com sudorese, palidez, sialorreia e tinha tremores de extremidades. As auscultas pulmonar e cardíaca estavam sem alterações, a FR: 25 ipm; FC: 139 bpm, a pressão arterial estava no limite superior da normalidade para a idade e altura e havia pequeno eritema ao redor do local da picada.\nQual a melhor conduta, além da realização do bloqueio anestésico com lidocaína no local da picada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infundir soro antiescorpiônico e manter a criança em observação na USF, por no mínimo 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter a criança em observação no serviço por pelo menos 6 horas após o acidente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infundir soro antiescorpiônico antes de transferir a criança para uma unidade hospitalar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transferir imediatamente a criança para uma unidade hospitalar mais próxima da USF.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma criança de 6 anos com acidente escorpiônico (escorpionismo) e manifestações sistêmicas autonômicas evidentes: dor intensa, vômitos, sudorese, palidez, sialorreia, tremores e taquicardia. \n\nSegundo o Ministério da Saúde:\n- Acidente Leve: Apenas manifestações locais (dor, eritema, parestesia). Conduta: sintomáticos, bloqueio anestésico e observação por 6 horas.\n- Acidente Moderado: Dor local associada a manifestações sistêmicas leves a moderadas (vômitos ocasionais, sudorese, taquicardia, agitação). Conduta: soroterapia específica (2 a 3 ampolas de soro antiescorpiônico ou antiaracnídico) associada ao alívio da dor e suporte.\n- Acidente Grave: Vômitos profusos e incoercíveis, sudorese profusa, sialorreia intensa, prostração, convulsões, choque ou edema agudo de pulmão. Conduta: soroterapia imediata (4 a 6 ampolas) e suporte intensivo.\n\nCrianças menores de 7 anos possuem alto risco de rápida progressão para complicações cardiopulmonares graves (como choque cardiogênico e edema agudo de pulmão). Portanto, a soroterapia deve ser administrada o mais precocemente possível para neutralizar a fração circulante do veneno. Como a unidade rural dispõe do antiveneno, ele deve ser aplicado imediatamente antes da transferência para uma unidade hospitalar com suporte avançado/UTI.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora a infusão do soro seja indicada, manter a criança em observação na USF rural não é seguro. Pacientes pediátricos com envenenamento sistêmico podem descompensar rapidamente e necessitam de monitorização hospitalar contínua.\n\nAlternativa b: Incorreta. Apenas a observação sem soroterapia é reservada para acidentes leves restritos ao quadro local. A presença de sintomas sistêmicos (vômitos, sialorreia, sudorese) torna a soroterapia mandatória.\n\nAlternativa c: Correta. A administração do soro antiescorpiônico deve ser feita de forma precoce, aproveitando a disponibilidade do imunobiológico na própria unidade, seguida de transferência segura para um serviço hospitalar de maior complexidade.\n\nAlternativa d: Incorreta. Atrasar a soroterapia para transferir a criança sem o antiveneno aumenta drasticamente o risco de evolução para choque e óbito durante o transporte, sendo um erro grave quando o soro está disponível no local do primeiro atendimento.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Animais Peçonhentos",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  },
+  {
+    "id": "AJUDA_798bd7d8-60af-4120-bba5-5a860eadb0c6",
+    "originalId": "798bd7d8-60af-4120-bba5-5a860eadb0c6",
+    "statement": "Menina de 7 anos e 6 meses é encaminhada ao ambulatório de pediatria porque sua família percebeu surgimento de broto mamário há cerca de 3 meses. O exame físico revela que seu estadiamento puberal é M2P1 e sua estatura está próxima ao escore Z +2 para a idade, com peso em escore Z 0. Um exame de radiografia simples de punho, solicitado pelo médico da atenção primária, mostra idade óssea compatível com 9 anos e 6 meses. Considerando essa situação, assinale a alternativa que apresenta a principal hipótese diagnóstica, seguida de sua justificativa.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Puberdade precoce central, pois o crescimento das mamas está associado a avanço da idade óssea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Telarca isolada precoce, pois a diferença entre a idade óssea e a idade cronológica não é significativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Telarca isolada precoce, pois o crescimento das mamas foi um achado isolado na investigação da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Puberdade precoce central, pois, além da telarca, há também sinais de pubarca, o que sugere ativação do eixo hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente apresenta telarca (M2), que é o surgimento do broto mamário, aos 7 anos e 6 meses. Por definição, o aparecimento de caracteres sexuais secundários em meninas antes dos 8 anos de idade é classificado como puberdade precoce. O principal desafio clínico é diferenciar a Puberdade Precoce Central (PPC), que resulta da ativação prematura do eixo hipotálamo-hipófise-gônada, de variantes benignas, como a Telarca Isolada.\n\nNeste caso, três elementos confirmam a natureza patológica do quadro:\n1. Idade de início: Inferior a 8 anos.\n2. Aceleração do crescimento: A estatura no escore Z +2 indica que a criança está crescendo acima do esperado para sua genética e idade, sinal de ação sistêmica do estrogênio.\n3. Avanço da idade óssea: A idade óssea de 9 anos e 6 meses apresenta um avanço de 2 anos em relação à idade cronológica (7 anos e 6 meses). Em pediatria, um avanço superior a 1 ano é considerado altamente significativo para o diagnóstico de puberdade verdadeira.\n\nCOMENTÁRIOS SOBRE AS ALTERNATIVAS\n\nAlternativa A: ESTÁ CORRETA. O quadro preenche os critérios de puberdade precoce central devido à idade da paciente associada a sinais claros de progressão e impacto hormonal, especificamente o avanço importante da idade óssea e a aceleração da velocidade de crescimento (estatura elevada).\n\nAlternativa B: ESTÁ INCORRETA. Na telarca isolada, que é uma variante da normalidade, não há aceleração do crescimento nem avanço da idade óssea. Uma diferença de 2 anos entre a idade cronológica e a óssea é, sim, muito significativa e indica patologia.\n\nAlternativa C: ESTÁ INCORRETA. A telarca isolada é um diagnóstico de exclusão. Como a paciente apresenta outros achados (estatura elevada e idade óssea avançada), o crescimento das mamas não pode ser considerado um achado isolado, mas sim parte de uma ativação hormonal sistêmica.\n\nAlternativa D: ESTÁ INCORRETA. O enunciado descreve o estadiamento como M2P1. A classificação P1 de Tanner significa ausência de pelos pubianos. Portanto, a paciente não apresenta pubarca, o que torna a justificativa desta alternativa factualmente incorreta em relação aos dados do exame físico fornecidos.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": 56.25248684212478,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  },
+  {
+    "id": "AJUDA_7991d4bf-d4df-4a28-8b05-6084b6ebf7ff",
+    "originalId": "7991d4bf-d4df-4a28-8b05-6084b6ebf7ff",
+    "statement": "Mulher de 66 anos, hipertensa, diabética e tabagista, é levada a uma Unidade Básica de Saúde (UBS) por quadro de síncope há 40 minutos, após discussão familiar. Apresenta-se ansiosa, com mal-estar intenso, tontura, náuseas e sudorese, e tem um episódio de vômito na UBS. Relata sensação de desconforto moderado em andar superior do abdome. Nega alergias, etilismo ou uso de drogas ilícitas. Ao exame físico, apresenta-se eupneica, com PA 86 x 53 mmHg, FC 49 bpm e SpO2 95% em ar ambiente. O desconforto abdominal não é reproduzível à palpação. Não há outras alterações ao exame físico. A UBS não dispõe de eletrocardiograma ou monitor cardíaco.\nAlém de se acionar o SAMU, a conduta de suporte nesse caso deve incluir",
+    "options": [
+      {
+        "id": "A",
+        "text": "AAS via oral mastigado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "isossorbida sublingual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "omeprazol via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diazepam via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta é uma suspeita de síndrome coronariana aguda (SCA), provavelmente infarto de parede inferior. A paciente é idosa, mulher e diabética, com múltiplos fatores de risco (hipertensão, diabetes, tabagismo). Apresenta-se de forma atípica, com desconforto epigástrico, náuseas, vômitos, sudorese e síncope desencadeados por estresse emocional.\n\nEsse perfil (idosa, mulher, diabética) é justamente o que mais cursa com apresentações atípicas, sem dor torácica típica. A combinação de bradicardia (FC 49 bpm) e hipotensão (PA 86 x 53 mmHg) sugere reflexo de Bezold-Jarisch ou acometimento do nó sinusal/atrioventricular, comum no infarto inferior por oclusão da coronária direita. Também deve ser considerado infarto de ventrículo direito.\n\nSem ECG disponível, a conduta é tratar como SCA presumida: acionar o SAMU e iniciar as medidas que não trazem risco relevante.\n\na) AAS via oral mastigado – CORRETA. A antiagregação plaquetária precoce com AAS (dose de ataque de 150 a 300 mg, mastigado para absorção mais rápida) reduz mortalidade na SCA. É indicada mesmo sem ECG quando a suspeita clínica é razoável. Paciente sem alergia relatada e sem sinais de sangramento ativo não tem contraindicação. É barata, segura e disponível na atenção básica.\n\nb) Isossorbida sublingual – INCORRETA. Nitratos são contraindicados em paciente com PAS < 90 mmHg e FC < 50 bpm. Também são contraindicados na suspeita de infarto de ventrículo direito, que é dependente de pré-carga. A venodilatação pode precipitar hipotensão grave e choque. Além disso, nitratos aliviam sintomas, mas não reduzem mortalidade.\n\nc) Omeprazol via oral – INCORRETA. Atribuir o quadro a causa dispéptica seria um erro diagnóstico grave. O sintoma epigástrico, nesse contexto, é equivalente anginoso. O omeprazol não tem papel no manejo agudo e atrasaria o reconhecimento da SCA.\n\nd) Diazepam via oral – INCORRETA. Atribuir os sintomas à ansiedade pela discussão familiar é uma armadilha clássica. O estresse emocional é um gatilho conhecido de SCA (e também de síndrome de Takotsubo, mais comum em mulheres pós-menopausa). O benzodiazepínico pode piorar a hipotensão e mascarar o quadro, sem benefício.\n\nMensagem-chave: em idosos, mulheres e diabéticos com sintomas epigástricos, náuseas, sudorese ou síncope, deve-se suspeitar de SCA. Na ausência de ECG, administre AAS mastigado e transfira. Nitrato é contraindicado diante de hipotensão, bradicardia ou suspeita de infarto de ventrículo direito.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Bradiarritmias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  },
+  {
+    "id": "AJUDA_79976ed7-7f6c-486e-93a3-9c9f96011a13",
+    "originalId": "79976ed7-7f6c-486e-93a3-9c9f96011a13",
+    "statement": "As vacinas abaixo relacionadas são de vírus vivos atenuados, exceto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rubéola.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sabin.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Caxumba.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hepatite B.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para responder a essa questão, é necessário classificar as vacinas listadas de acordo com sua tecnologia de produção, diferenciando aquelas que utilizam agentes vivos atenuados daquelas que utilizam agentes não vivos (inativados, subunidades ou recombinantes).\n\nAlternativa a) Sarampo: Incorreta. A vacina contra o sarampo é composta por vírus vivos atenuados. Ela faz parte da vacina Tríplice Viral (SCR — sarampo, caxumba e rubéola) e da Tetra Viral. Por ser uma vacina de vírus vivo, não é a exceção solicitada pelo enunciado.\n\nAlternativa b) Rubéola: Incorreta. Assim como a vacina contra o sarampo, o componente da rubéola presente na vacina Tríplice Viral é constituído por vírus vivos atenuados. Estes vírus são modificados em laboratório para perderem sua capacidade patogênica, mas mantêm a capacidade de estimular o sistema imunológico.\n\nAlternativa c) Sabin: Incorreta. A vacina Sabin, também chamada de VOP (Vacina Oral de Poliomielite), é a famosa vacina das \"gotinhas\" e utiliza poliovírus vivos atenuados. É fundamental não confundi-la com a vacina Salk (VIP), que é injetável e composta por vírus inativados (mortos).\n\nAlternativa d) Caxumba: Incorreta. O componente da caxumba na vacina Tríplice Viral também utiliza a tecnologia de vírus vivos atenuados para induzir a resposta imune.\n\nAlternativa e) Hepatite B: Correta. Esta é a exceção pedida na questão. A vacina contra a hepatite B não contém vírus vivos. Ela é uma vacina recombinante, produzida por meio de tecnologia de engenharia genética. Ela contém apenas uma proteína da superfície do vírus, o antígeno HBsAg, purificado. Por não conter o vírus inteiro nem o agente vivo, ela pode ser administrada com segurança em grupos que possuem contraindicação para vacinas de agentes vivos, como gestantes e indivíduos severamente imunossuprimidos.\n\nGabarito: Letra (e).",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  },
+  {
+    "id": "AJUDA_799a54dc-629f-4714-8794-6fb950961a60",
+    "originalId": "799a54dc-629f-4714-8794-6fb950961a60",
+    "statement": "Adolescente de 14 anos de idade, do sexo feminino, com diagnóstico de síndrome de Down (T21), em consulta de rotina, refere dor cervical quando fica muito tempo ao celular. Perdeu o seguimento de rotina, pois mudou-se de cidade há seis meses. Exame físico: eutrófica. São orientações corretas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "alimentação, atividade física, uso de telas e escola especial. Considerar o histórico familiar para solicitar perfil lipídico e glicemia e orientar um retorno anual, segundo as recomendações do calendário do Ministério da Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "alimentação, imunização, higiene do sono e prática de exercícios, uso de telas, escolaridade e orientação vocacional. Devem ser solicitados exames (hemograma, TSH e T4L), avaliação de acuidade visual e RX cervical, além de retorno para checagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "promoção de inserção social e educacional especial, orientação de postura cervical e redução do uso de telas. O estudo radiológico de coluna cervical não é mais necessário, como previamente indicado ao final do primeiro ano de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prevenção de abusos físicos e sexuais, por meio da orientação, desenvolvimento da autonomia e autocuidado. Não é relevante orientação contraceptiva, pois sabe-se que as adolescentes com T21 têm redução de sua fertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A conduta diante de uma adolescente com síndrome de Down (T21) exige um acompanhamento multiprofissional e a vigilância de comorbidades específicas associadas à alteração genética, além das orientações habituais da hebiatria.\n\nAlternativa (a) incorreta: O acompanhamento da pessoa com síndrome de Down prioriza a inclusão na rede regular de ensino e não em escolas especiais como regra. Além disso, a solicitação de TSH e T4L é mandatória anualmente para pacientes com T21, independentemente de histórico familiar, devido à altíssima prevalência de hipotireoidismo nessa população. A alternativa também falha ao não abordar a investigação da queixa clínica de dor cervical.\n\nAlternativa (b) correta: Esta alternativa contempla as orientações gerais de saúde essenciais para a adolescência (alimentação, higiene do sono, exercícios, vacinas e controle do uso de telas) e as necessidades específicas da T21. Aos 14 anos, a orientação vocacional e a escolaridade são temas fundamentais para o desenvolvimento da autonomia. Quanto aos exames laboratoriais, o hemograma (pelo risco de anemias e desordens hematológicas) e o rastreio de função tireoidiana (TSH e T4L) devem ser anuais. A avaliação visual deve ser periódica devido à alta incidência de erros refrativos e catarata. O RX de coluna cervical é corretamente indicado aqui: embora o rastreio em pacientes assintomáticos seja controverso em algumas diretrizes recentes, a presença de dor cervical em um paciente com T21 é um sinal de alerta para instabilidade atlantoaxial, exigindo investigação radiológica imediata.\n\nAlternativa (c) incorreta: A afirmação de que o estudo radiológico não é mais necessário está errada para este cenário clínico. A dor cervical é um sintoma que obriga o médico a descartar a subluxação atlantoaxial, uma complicação grave que pode levar à compressão medular. Além disso, as diretrizes atuais de saúde pública e educação defendem a inclusão escolar em escolas regulares, e não o isolamento em educação especial.\n\nAlternativa (d) incorreta: O aconselhamento sobre sexualidade e a prevenção de abusos são pilares do cuidado. É um erro técnico afirmar que a orientação contraceptiva não é relevante. Embora a fertilidade possa estar reduzida, especialmente no sexo masculino, mulheres com síndrome de Down podem ser férteis e engravidar. Portanto, a contracepção e a educação sexual são essenciais para garantir a saúde reprodutiva e a proteção da adolescente.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  },
+  {
+    "id": "AJUDA_799af668-a470-4237-af9d-2ca923b6a9bb",
+    "originalId": "799af668-a470-4237-af9d-2ca923b6a9bb",
+    "statement": "Paciente, sexo feminino, com 28 semanas de gestação, apresentando sangramento vaginal moderado, hipertonia uterina significativa, aumento da frequência cardíaca e alteração da vitalidade fetal com feto vivo. O grau mais provável de descolamento prematuro de placenta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Grau III A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Grau I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Grau II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Grau III B.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação do Descolamento Prematuro de Placenta (DPP) é baseada nos critérios de Sher, que estratifica a gravidade do quadro clínico em graus. Para resolver essa questão, é fundamental observar a presença de hipertonia uterina, o estado da vitalidade fetal e se houve óbito.\n\nAnálise das alternativas:\n\na) Grau III A: Incorreta. O Grau III é caracterizado obrigatoriamente pela morte fetal. O subtipo III A especificamente ocorre quando há morte fetal, mas ainda não há sinais clínicos ou laboratoriais de coagulopatia. Como o enunciado cita feto vivo, esta opção está descartada.\n\nb) Grau I: Incorreta. No Grau I, o quadro é leve. O sangramento é discreto ou ausente, a hipertonia uterina é mínima ou inexistente, e a vitalidade fetal permanece preservada, sem sinais de sofrimento. O caso clínico apresenta hipertonia significativa e alteração da vitalidade, o que exclui o Grau I.\n\nc) Grau II: Correta. Este grau define-se pela presença de sangramento vaginal moderado e hipertonia uterina persistente (útero de consistência lenhosa). O marco principal do Grau II é a presença de sofrimento fetal agudo (alteração da vitalidade fetal), porém com o feto ainda vivo. Os dados do enunciado (sangramento moderado, hipertonia e feto vivo com vitalidade alterada) preenchem exatamente esses critérios.\n\nd) Grau III B: Incorreta. Assim como o Grau III A, o Grau III B exige a presença de óbito fetal. A diferença é que no subtipo III B já existe instalação de coagulopatia (como a Coagulação Intravascular Disseminada - CIVD). O fato de o feto estar vivo invalida esta alternativa.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:59.156Z"
+  }
+]

@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_d3146b41-8a60-4eed-bbea-c200347db3cd",
+    "originalId": "d3146b41-8a60-4eed-bbea-c200347db3cd",
+    "statement": "Escolar previamente hígido apresenta diarreia e fraqueza muscular há um dia. Os exames laboratoriais revelam: pH de 7,20, PaO2 de 55mm Hg, PacO2 de 40mm Hg, [HcO3-] de 15mEq/L, base excess de -9, [Na+] de 134mEq/L, [K+] de 2,2mEq/L, [cl-] de 107mEq/L. O diagnóstico do(s) distúrbio(s) do equilíbrio acidobásico é",
+    "options": [
+      {
+        "id": "A",
+        "text": "acidose metabólica e alcalose respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "acidose respiratória aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "acidose metabólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "acidose metabólica e acidose respiratória aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "acidose respiratória aguda e alcalose metabólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Passo 1: Análise do pH e distúrbio primário.\nO pH de 7,20 indica uma acidemia (valores normais entre 7,35 e 7,45). Ao observar o bicarbonato (HCO3-) de 15 mEq/L (normal entre 22 e 26 mEq/L), identificamos que a causa primária da queda do pH é metabólica. O Base Excess de -9 reforça o diagnóstico de acidose metabólica.\n\nPasso 2: Avaliação da compensação respiratória.\nNa acidose metabólica, o organismo deve compensar baixando a PaCO2 através da hiperventilação. Para verificar se essa compensação está ocorrendo conforme o esperado, utilizamos a Fórmula de Winter:\nPaCO2 esperada = (1,5 x HCO3-) + 8 (com margem de erro de +/- 2).\nAplicando os valores do caso: (1,5 x 15) + 8 = 22,5 + 8 = 30,5.\nO intervalo esperado para a PaCO2 seria de 28,5 a 32,5 mmHg.\n\nPasso 3: Comparação e diagnóstico de distúrbio misto.\nA PaCO2 medida no exame do paciente é de 40 mmHg. Como 40 é maior do que o limite superior esperado (32,5), isso indica que o paciente não está ventilando o suficiente para compensar a carga ácida. Quando a PaCO2 medida está acima da esperada, diagnosticamos uma acidose respiratória associada. Portanto, o diagnóstico é de um distúrbio misto: acidose metabólica e acidose respiratória aguda.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Haveria alcalose respiratória associada se a PaCO2 medida estivesse abaixo do valor calculado pela Fórmula de Winter (abaixo de 28,5 mmHg).\n\nAlternativa b) Incorreta. O distúrbio não é puramente respiratório agudo, pois o bicarbonato está baixo (15 mEq/L), caracterizando o componente metabólico.\n\nAlternativa c) Incorreta. Não se trata de acidose metabólica isolada (simples), pois a PaCO2 de 40 mmHg não representa a compensação fisiológica esperada para o nível de bicarbonato apresentado.\n\nAlternativa d) Correta. O paciente possui acidose metabólica (perda de bicarbonato pela diarreia) e acidose respiratória aguda. Clinicamente, a fraqueza muscular citada no enunciado, provavelmente secundária à hipocalemia severa (K+ de 2,2 mEq/L), compromete a musculatura respiratória, impedindo a compensação ventilatória adequada e gerando o acúmulo de CO2.\n\nAlternativa e) Incorreta. Os exames mostram pH e bicarbonato baixos, o que é incompatível com o diagnóstico de alcalose metabólica.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  },
+  {
+    "id": "AJUDA_d3162d0b-6b81-4b5c-bc05-4680facac8b6",
+    "originalId": "d3162d0b-6b81-4b5c-bc05-4680facac8b6",
+    "statement": "Criança, 8 anos de idade, com diagnóstico de asma desde os 5 anos, é trazida ao ambulatório com queixa de tosse e chiado no peito, que se intensificam à noite, cerca de três vezes na semana. A mãe relata que a criança usa o salbutamol mais de 3 vezes por semana. Atualmente, o paciente não faz uso de medicação controladora diária.\nAssinale a alternativa que apresenta, corretamente, a conduta mais apropriada no manejo da asma desse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adicionar corticosteroide inalatório diário em baixa dose associado a broncodilatador de longa duração como terapia de manutenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para avaliação em um centro de referência de asma devido à gravidade dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar corticoterapia sistêmica de curta duração para controle dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter o uso apenas do inalador de alívio, conforme a necessidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Substituir o inalador de alívio por um broncodilatador de longa duração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\n**Texto Original:**\nPara resolver essa questão, devemos aplicar os critérios do GINA (Global Initiative for Asthma) para classificação de controle e escolha da terapia inicial.\n\nAnálise do Quadro Clínico:\nO paciente apresenta sintomas diurnos/noturnos mais de duas vezes por semana (tosse e chiado 3x/semana) e necessidade de medicação de alívio (salbutamol) também acima desse limite. Como ele não utiliza medicação de controle, estamos diante de uma asma não controlada, o que exige o início imediato de tratamento profilático (manutenção).\n\nAnálise das Alternativas:\n\nAlternativa A (Correta): Para crianças acima de 6 anos que apresentam sintomas frequentes, a recomendação inicial é o Step 3 (Etapa 3) do tratamento. Isso consiste no uso diário de Corticosteroide Inalatório (CEI) em dose baixa associado a um Broncodilatador de Longa Duração (LABA). Essa combinação visa tratar a inflamação de base e garantir a broncodilatação necessária para reduzir despertares noturnos e o uso de medicação de alívio.\n\nAlternativa B (Incorreta): O encaminhamento para centros de referência é reservado para casos de asma grave ou de difícil controle, que não respondem às terapias otimizadas das etapas 4 ou 5. O paciente em questão ainda nem iniciou o tratamento ambulatorial básico.\n\nAlternativa C (Incorreta): O corticoide sistêmico (oral) é indicado para o manejo de exacerbações agudas (crises) ou em casos muito graves na etapa 5. Não é a conduta padrão para iniciar manutenção em um quadro ambulatorial típico.\n\nAlternativa D (Incorreta): Manter apenas o inalador de alívio (SABA) é perigoso em pacientes com sintomas frequentes, pois aumenta o risco de exacerbações graves e óbito por asma. A monoterapia com SABA só é permitida na Etapa 1, para sintomas muito ocasionais (menos de 2 vezes por mês).\n\nAlternativa E (Incorreta): Nunca se utiliza um LABA de forma isolada no tratamento da asma. O uso de broncodilatadores de longa duração sem a proteção anti-inflamatória do corticosteroide inalatório está associado ao aumento da mortalidade.\n\nConclusão:\nA alternativa A reflete corretamente a necessidade de controle inflamatório (CEI) associado ao controle de sintomas (LABA) para uma criança de 8 anos com sintomas persistentes.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  },
+  {
+    "id": "AJUDA_d32117e4-1d37-4a28-b4c5-daab0cd5bc4b",
+    "originalId": "d32117e4-1d37-4a28-b4c5-daab0cd5bc4b",
+    "statement": "Uma garota de 16 anos de idade sai da escola por volta das 22 horas e toma o caminho de sua casa. Volta a pé. Repentinamente, se vê defronte de um homem que a coloca sob a mira de um revólver, obrigando-a a entregar-lhe o celular. Depois desse episódio, com muito medo, ela corre para casa e demora para dormir, ainda sob o efeito do que havia passado. No dia seguinte, segue sua rotina de trabalho durante o dia e de escola à noite. Após 12 dias, acorda no meio da noite, assustada com a sensação de que estava passando novamente pela mesma situação do assalto. Passa a sonhar repetidamente, acordando assustada com a mesma sensação que tivera durante o assalto. Como dorme mal, durante o dia, sente sono e cansaço. Procura a UBS perto de sua casa, cuja equipe faz uma hipótese diagnóstica e a encaminha a uma psicóloga para avaliação.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de transtorno de estresse pós-traumático, e a paciente deveria ter sido orientada a esperar uma semana, pois se trata de um agravo transitório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O quadro é sugestivo de transtorno do pânico, e ela deve iniciar imediatamente um tratamento psicoterápico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O quadro é sugestivo de reagudização de ansiedade, e a paciente deve iniciar tratamento medicamentoso imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O quadro é sugestivo de transtorno de estresse pós-traumático, e a equipe fez o encaminhamento correto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente foi exposta a um evento estressor de alta intensidade (ameaça direta à vida com arma de fogo), o que configura o gatilho para transtornos relacionados ao trauma. Ela apresenta sintomas típicos de intrusão, caracterizados por pesadelos recorrentes e a sensação de reviver o episódio (flashbacks). Além disso, manifesta sinais de hiperexcitabilidade, como o despertar assustado e a hipervigilância, resultando em prejuízo funcional evidente (cansaço e sonolência diurna que afetam sua rotina).\n\nAlternativa a: Incorreta. O Transtorno de Estresse Pós-Traumático (TEPT) não deve ser tratado como um agravo meramente transitório que dispensa cuidados. Orientar a paciente a apenas esperar uma semana é uma conduta clínica inadequada, pois o diagnóstico precoce e a intervenção psicoterapêutica são fundamentais para prevenir a cronificação dos sintomas e reduzir o sofrimento da paciente.\n\nAlternativa b: Incorreta. No Transtorno do Pânico, o indivíduo apresenta ataques de pânico inesperados e recorrentes, desenvolvendo um medo persistente de ter novas crises (ansiedade antecipatória). No caso relatado, os sintomas de ansiedade e o despertar súbito estão diretamente vinculados à memória do assalto, configurando um quadro de revivescência traumática, e não crises de pânico espontâneas.\n\nAlternativa c: Incorreta. A reagudização implica a piora de uma doença que o paciente já possuía, e o enunciado não menciona histórico prévio de transtornos ansiosos. Além disso, a conduta inicial para quadros de estresse traumático prioriza a psicoterapia, reservando o tratamento medicamentoso para casos com comorbidades, sintomas refratários ou gravidade extrema.\n\nAlternativa d: Correta. A descrição clínica de pesadelos, flashbacks e hiperalerta após um evento traumático é sugestiva de uma reação ao estresse grave. Na prática clínica e em provas, o termo TEPT é frequentemente associado a essa fenomenologia. Vale ressaltar uma distinção técnica: o DSM-5 classifica como Transtorno de Estresse Agudo os sintomas que duram de 3 dias a 1 mês após o trauma, e como TEPT quando ultrapassam 1 mês. Como a paciente está no 12º dia, tecnicamente seria um estresse agudo, mas a alternativa D é a única que correlaciona corretamente a suspeita diagnóstica com a conduta de encaminhamento para psicoterapia, que é o tratamento padrão-ouro inicial.\n\nConclusão: Diante de uma paciente com sintomas de revivescência e prejuízo funcional após violência interpessoal, a equipe da UBS agiu corretamente ao identificar o nexo causal com o trauma e encaminhá-la para suporte psicológico especializado.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  },
+  {
+    "id": "AJUDA_d3244ac8-56ef-4ad0-ba2f-f8fc2075fa00",
+    "originalId": "d3244ac8-56ef-4ad0-ba2f-f8fc2075fa00",
+    "statement": "A respeito dos modelos de proteção social em sistemas de saúde é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na modalidade do tipo seguridade social, o financiamento é baseado em contribuições de empregados e empregadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na modalidade dos sistemas bismarckianos, o financiamento para o sistema universal é oriundo de recursos públicos provenientes de impostos gerais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na modalidade do tipo seguro social, a prestação de assistência médica é em geral separada das ações de saúde coletiva e exercida por um órgão público diferente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Na modalidade dos sistemas beveridgianos, o Estado não assume para si a responsabilidade de garantia da proteção individual à saúde e protege apenas alguns grupos mais pobres.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Na modalidade do tipo assistência social, os sistemas nacionais de saúde são apontados como mais eficientes, mais equânimes e, portanto, com maior impacto positivo nas condições de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, é fundamental diferenciar os três principais modelos de proteção social em saúde: o bismarckiano (Seguro Social), o beveridgiano (Seguridade Social/Sistemas Universais) e o assistencialista (Residual).\n\nA seguir, a análise detalhada de cada alternativa:\n\nAlternativa a) INCORRETA. A descrição apresentada refere-se ao modelo de SEGURO SOCIAL (bismarckiano). Na Seguridade Social (modelo beveridgiano), o financiamento é universal e provém do orçamento do Estado, alimentado por impostos gerais pagos por toda a sociedade, e não apenas por contribuições vinculadas ao trabalho formal.\n\nAlternativa b) INCORRETA. Os sistemas bismarckianos são baseados em contribuições obrigatórias de empregados e empregadores (folha de pagamento), e o acesso é restrito aos trabalhadores contribuintes e seus dependentes. O financiamento por impostos gerais para um sistema universal é a característica principal dos sistemas beveridgianos (como o SUS no Brasil ou o NHS no Reino Unido).\n\nAlternativa c) CORRETA. No modelo de Seguro Social (bismarckiano), o foco histórico está na assistência médica curativa para o trabalhador que contribui para as caixas ou fundos de saúde. Por ser um modelo fragmentado e vinculado ao emprego, as ações de saúde coletiva (vigilância, vacinação, saneamento) costumam ficar sob responsabilidade direta do Estado, por meio de órgãos de saúde pública separados da estrutura que gere a assistência médica previdenciária.\n\nAlternativa d) INCORRETA. Nos sistemas beveridgianos, o Estado assume a responsabilidade integral e universal pela saúde de todos os cidadãos, independentemente da renda ou da situação empregatícia. A descrição de \"proteger apenas grupos mais pobres\" refere-se ao modelo de assistência social (ou residual), comum em países com pouca intervenção estatal na saúde.\n\nAlternativa e) INCORRETA. O modelo de assistência social é considerado o menos equânime e menos eficiente, pois é focalizado apenas na extrema pobreza, deixando grandes parcelas da população desassistidas e sem coordenação de cuidados. São os sistemas universais (Seguridade Social/beveridgianos) que são apontados pela literatura sanitária como mais eficientes e equânimes, apresentando melhores indicadores de saúde coletiva.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Financiamento em Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  },
+  {
+    "id": "AJUDA_d32cbbdf-d627-44bf-b885-afac3056baf6",
+    "originalId": "d32cbbdf-d627-44bf-b885-afac3056baf6",
+    "statement": "As cardiopatias congênitas são malformações estruturais do coração e dos grandes vasos que estão presentes desde o nascimento. Elas representam um dos tipos mais comuns de defeitos congênitos e afetam cerca de 1 a 2% dos recém-nascidos. Avalie as afirmações como verdadeiras (V) ou falsas (F).\n\nI. A insuficiência cardíaca pediátrica é frequentemente causada por cardiopatias congênitas, especialmente em lactentes.\nII. Na insuficiência cardíaca de baixo débito, o coração não consegue manter um débito adequado, geralmente devido a disfunções sistólicas ventriculares.\nIII. Os principais sinais clínicos de insuficiência cardíaca em crianças incluem taquidispneia, irritabilidade e déficit de crescimento pôndero-estatural.\n\nDessa forma, a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das afirmações:\n\nAfirmação I: Verdadeira. Diferentemente dos adultos, nos quais a insuficiência cardíaca (IC) costuma ser resultado de doenças adquiridas (como hipertensão ou infarto), na pediatria a causa predominante são as cardiopatias congênitas. Isso é especialmente evidente nos lactentes, nos quais malformações estruturais com shunt esquerda-direita (como a Comunicação Interventricular - CIV) ou lesões obstrutivas levam precocemente ao quadro de falência cardíaca.\n\nAfirmação II: Verdadeira. A IC de baixo débito é o tipo mais comum e caracteriza-se pela incapacidade do ventrículo de ejetar um volume de sangue suficiente para as demandas metabólicas do organismo. Isso geralmente está associado à disfunção sistólica, na qual há redução da contratilidade miocárdica, ou a sobrecargas de volume e pressão que exaurem a capacidade de bomba do coração.\n\nAfirmação III: Verdadeira. Os sinais clínicos na criança são específicos. A taquidispneia (aumento da frequência respiratória com esforço) ocorre pela congestão pulmonar. A irritabilidade é comum devido ao baixo débito e ao desconforto respiratório. O déficit de crescimento pôndero-estatural (failure to thrive) é um marcador clássico de gravidade, pois a criança apresenta um gasto energético muito elevado para respirar e, simultaneamente, tem dificuldade em se alimentar (dispneia às mamadas).\n\nExplicação das alternativas:\n\na) CORRETA. Como todas as três afirmações são verdadeiras e fundamentadas na fisiopatologia e na clínica da cardiologia pediátrica, esta é a alternativa que deve ser assinalada.\n\nb) INCORRETA. Esta alternativa classifica as afirmações II e III como falsas, porém, como demonstrado, ambas descrevem corretamente a definição de baixo débito e os sinais clínicos típicos da IC em crianças.\n\nc) INCORRETA. Esta alternativa aponta a afirmação I como falsa, mas as cardiopatias congênitas são, de fato, a etiologia principal da IC em lactentes. Também erra ao considerar a afirmação III falsa.\n\nd) INCORRETA. Esta opção classifica as duas primeiras afirmações como falsas, o que contradiz o conhecimento médico sobre a alta prevalência de causas congênitas e o mecanismo de disfunção sistólica na insuficiência cardíaca de baixo débito.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  },
+  {
+    "id": "AJUDA_d33b3ab8-e30d-48cb-a986-f6da1b014f2a",
+    "originalId": "d33b3ab8-e30d-48cb-a986-f6da1b014f2a",
+    "statement": "Assinale a alternativa que contém uma contraindicação à redução manual de uma hérnia inguinoescrotal encarcerada na criança.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tempo de evolução maior do que 6 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hérnia volumosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neonato <1500g.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hérnia bilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Criptorquidia ipsilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A abordagem inicial da hérnia inguinal encarcerada na criança envolve, frequentemente, a tentativa de redução manual (manobra de táxis), desde que não haja sinais de comprometimento vascular do conteúdo herniado. O objetivo é transformar uma cirurgia de emergência em uma cirurgia eletiva ou programada, permitindo que o edema local diminua.\n\nAlternativa (a) Correta: O tempo de evolução é um fator crítico. Embora não exista um limite de tempo absoluto e universal, a maioria dos protocolos pediátricos e livros-texto aponta que um período superior a 6 a 12 horas de encarceramento aumenta significativamente o risco de isquemia e necrose intestinal. Reduzir manualmente uma alça intestinal com sofrimento vascular para dentro da cavidade abdominal pode mascarar uma perfuração ou causar peritonite e sepse. Portanto, o tempo prolongado é uma contraindicação relativa ou absoluta, dependendo do estado clínico.\n\nAlternativa (b) Incorreta: Uma hérnia ser volumosa não contraindica a redução. Pelo contrário, se não houver sinais de estrangulamento (dor intensa à palpação, vermelhidão local, febre ou sinais de obstrução intestinal grave), a redução manual pode ser tentada independentemente do tamanho.\n\nAlternativa (c) Incorreta: Neonatos de extremo baixo peso (menores de 1.500 g) apresentam alto risco anestésico e cirúrgico. Nesses casos, a redução manual é ainda mais desejável para tentar estabilizar o paciente e realizar a cirurgia em um momento mais propício, a menos que haja sinais claros de necrose.\n\nAlternativa (d) Incorreta: A presença de hérnia bilateral não interfere na conduta de redução daquela que está encarcerada. Cada lado deve ser avaliado individualmente, e a manobra de redução foca no lado sintomático.\n\nAlternativa (e) Incorreta: A criptorquidia ipsilateral (testículo não descido no mesmo lado da hérnia) é uma associação comum, mas não impede a tentativa de redução manual da alça intestinal ou do omento que esteja no saco herniário. O tratamento definitivo da hérnia e do testículo será feito no tempo cirúrgico adequado.\n\nEm resumo, as contraindicações clássicas à redução manual são os sinais de estrangulamento (isquemia): dor desproporcional, sinais inflamatórios na pele do escroto (hiperemia e edema), instabilidade hemodinâmica, febre e, conforme a questão destaca, o tempo de evolução prolongado que sugere sofrimento tecidual.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  },
+  {
+    "id": "AJUDA_d3492e80-5faa-4e5a-ba12-e6dbc3aeec58",
+    "originalId": "d3492e80-5faa-4e5a-ba12-e6dbc3aeec58",
+    "statement": "A estenose hipertrófica do piloro é a principal causa de obstrução gástrica na infância. Sobre esse tema, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A confirmação com exame de imagem (ultrassonografia ou seriografia) é obrigatória para se indicar o tratamento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As manifestações clínicas normalmente ocorrem após os 4 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É epidemiologicamente mais frequente em meninos, afrodescendentes e orientais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O achado laboratorial mais comum é a alcalose metabólica hipoclorêmica hipocalêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Por se tratar de obstrução gástrica aguda, deve ser tratada em regime de emergência, pois não se consegue alcançar estabilização pré-operatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ESTENOSE HIPERTRÓFICA DO PILORO (EHP)\n\nA estenose hipertrófica do piloro é uma patologia caracterizada pela hipertrofia e hiperplasia da musculatura circular do piloro, resultando em obstrução progressiva do esvaziamento gástrico. É um tema recorrente em provas devido ao seu quadro clínico e metabólico muito característico.\n\nANALISANDO AS ALTERNATIVAS:\n\nAlternativa A (Incorreta): O diagnóstico da EHP é classicamente clínico. Se o examinador conseguir palpar a oliva pilórica (uma massa firme, móvel e transversa no abdome superior) em um lactente com história típica de vômitos em jato, não biliosos, logo após as mamadas, a cirurgia pode ser indicada sem a necessidade obrigatória de exames de imagem. A ultrassonografia é o padrão-ouro e muito utilizada, mas é reservada para casos em que a palpação é inconclusiva.\n\nAlternativa B (Incorreta): Os sintomas geralmente se iniciam entre a 3ª e a 6ª semana de vida. Embora possa haver variações, o pico de incidência ocorre em bebês muito jovens. O surgimento de sintomas após os 4 meses de idade é extremamente raro e foge do padrão epidemiológico da doença.\n\nAlternativa C (Incorreta): A epidemiologia mostra uma clara predominância no sexo masculino (proporção de 4 a 5 meninos para cada 1 menina), sendo especialmente comum em filhos primogênitos. No entanto, diferentemente do que afirma a alternativa, a condição é estatisticamente mais frequente em lactentes brancos (caucasianos) do que em populações afrodescendentes ou orientais.\n\nAlternativa D (Correta): Este é o distúrbio ácido-básico e eletrolítico clássico da estenose de piloro e um dos pontos mais cobrados em concursos. Como a obstrução é acima da ampola de Vater, os vômitos contêm apenas suco gástrico (são não biliosos), rico em ácido clorídrico (HCl). A perda de íons H+ gera alcalose metabólica. A perda de Cl- gera hipocloridemia. Com a desidratação, o rim tenta poupar sódio e água, mas para isso acaba excretando potássio e hidrogênio (acidúria paradoxal), resultando também em hipocalemia. Portanto: alcalose metabólica hipoclorêmica e hipocalêmica.\n\nAlternativa E (Incorreta): A EHP não é considerada uma emergência cirúrgica imediata, mas sim uma urgência médica. O tratamento definitivo é a piloromiotomia extramucosa (cirurgia de Fredet-Ramstedt), porém ela jamais deve ser realizada antes da completa estabilização clínica do lactente. A correção da desidratação e dos distúrbios eletrolíticos é obrigatória, pois operar uma criança com alcalose metabólica grave aumenta significativamente o risco de apneia central e complicações anestésicas no pós-operatório.\n\nGABARITO: Letra D.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  },
+  {
+    "id": "AJUDA_d34dc944-33db-4f3c-bc3e-53772563e771",
+    "originalId": "d34dc944-33db-4f3c-bc3e-53772563e771",
+    "statement": "Homem de 72 anos procurou atendimento médico com queixa de dor precordial, em aperto retroesternal, quando sobe dez degraus da escada ou quando caminha a distância de 400m rapidamente. Na anamnese, constata-se que é diabético (última hemoglobina glicada = 7,5%); dislipidêmico (último LDL-colesterol = 100mg/dL); ex-tabagista (parou há um ano) e hipertenso (pressão = 134x86mmHg). Ao exame, não apresentou dor na palpação ou nos movimentos torácicos. Diante disso, o médico solicitou teste ergométrico. Ao retornar, o paciente traz resultado de teste negativo para isquemia no esforço, com observação de que teve má adaptação à esteira rolante durante o exame. Sabe-se que a sensibilidade do teste ergométrico é de aproximadamente 70% e que a especificidade é de 90% para isquemia no esforço induzido. A avaliação do teste e as condutas que devem ser implementadas nesse paciente, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "teste provavelmente negativo para coronariopatia / tranquilizar o paciente, melhorar o controle da hemoglobina glicada abaixo de 6,5 e manter controle do colesterol adequado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "teste provavelmente de difícil análise / solicitar cineangiocoronariografia para confirmar coronariopatia e realizar desobstrução da artéria comprometida caso seja observada alguma obstrução",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "teste provavelmente falso negativo / iniciar uso de AAS, betabloqueador e outras medicações antianginosas que se fizerem necessárias e intensificar controle do colesterol (alvo do LDL abaixo de 70mg/dL)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "teste provavelmente inconclusivo, visto baixa adaptação à esteira rolante / solicitar cintilografia miocárdica com indução por dobutamina e, somente após resultado positivo, pensar em modificar a intervenção medicamentosa",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para analisar esta questão, devemos focar na probabilidade pré-teste do paciente e na validade técnica do exame realizado. O paciente é idoso, hipertenso, diabético, ex-tabagista e apresenta sintomas típicos de angina estável (dor precordial desencadeada por esforço e aliviada pelo repouso). Isso lhe confere uma alta probabilidade pré-teste para doença arterial coronariana (DAC).\n\nO teste ergométrico é considerado eficaz apenas quando o paciente atinge pelo menos 85% da frequência cardíaca máxima prevista para a idade. Quando o laudo descreve \"má adaptação à esteira\", entende-se que o paciente não conseguiu realizar o esforço necessário para que o teste fosse diagnóstico. Portanto, um resultado negativo nesse contexto não descarta isquemia; o teste é tecnicamente inconclusivo.\n\nAlternativa A: Incorreta. Devido à alta probabilidade clínica (idade avançada e múltiplos fatores de risco), não se pode tranquilizar o paciente com um teste que foi tecnicamente limitado. Além disso, o alvo de LDL para um paciente diabético com suspeita de DAC costuma ser mais rigoroso do que 100 mg/dL (geralmente abaixo de 70 mg/dL ou 50 mg/dL, dependendo da diretriz).\n\nAlternativa B: Incorreta. Embora o teste seja de difícil análise (inconclusivo), a conduta de encaminhar diretamente para a cineangiocoronariografia (exame invasivo) é reservada para casos de alto risco, sintomas refratários ou quando testes não invasivos de imagem mostram isquemia extensa. O próximo passo correto, após um teste ergométrico inconclusivo por limitação física, é um teste funcional com imagem.\n\nAlternativa C: Incorreta. Embora clinicamente o médico suspeite de um falso-negativo, a conduta acadêmica e protocolar diante de um exame inconclusivo por má técnica/adaptação é completar a investigação diagnóstica com outro método funcional antes de fechar o diagnóstico e estabelecer toda a terapêutica medicamentosa de suporte para DAC crônica, ainda que o controle do LDL mencionado esteja correto para o perfil de risco.\n\nAlternativa D: Correta. Esta alternativa define corretamente o teste como inconclusivo devido à incapacidade do paciente de realizar o esforço físico proposto (má adaptação). A conduta adequada é solicitar um exame de imagem com estresse farmacológico (como a cintilografia com dobutamina ou dipiridamol), que não depende da capacidade física do paciente de caminhar ou correr na esteira. A modificação da conduta terapêutica invasiva ou medicamentosa definitiva deve ser baseada na confirmação da isquemia por este novo método.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Arterial Coronariana Estável (DAC Estável)",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  },
+  {
+    "id": "AJUDA_d3563d60-dce8-46da-8e6a-a424f5596de7",
+    "originalId": "d3563d60-dce8-46da-8e6a-a424f5596de7",
+    "statement": "Homem de 18 anos, sem antecedente, apresenta dor em punho esquerdo e tornozelo direito há 2 dias, além de febre e erupção cutânea pustular em antebraço. Apresenta discreto calor e rubor em tornozelo e dor à flexão passiva de punho. A punção de líquido sinovial mostrou 8.000 polimorfonucleares/mm³ e bacterioscópico com ausência de flora bacteriana. A principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Artrite reumatoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artrite gonocócica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Artrite microcristalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Osteoartrite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lúpus eritematoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A principal hipótese para este caso clínico é a artrite gonocócica, especificamente em sua forma de Infecção Gonocócica Disseminada (IGD). O paciente apresenta a tríade clássica dessa condição: dermatite (erupção cutânea pustular), tenossinovite (dor à flexão passiva do punho) e poliartralgia ou artrite migratória/aditiva (acometimento de punho e tornozelo).\n\nAnálise das alternativas:\n\na) Incorreta. A artrite reumatoide é uma doença inflamatória crônica, com sintomas que devem persistir por pelo menos 6 semanas para o diagnóstico. Ela costuma ser simétrica e acometer pequenas articulações das mãos e pés, não apresentando rash pustular ou febre aguda associada à tenossinovite súbita.\n\nb) Correta. A artrite gonocócica, causada pela Neisseria gonorrhoeae, é a principal causa de artrite séptica em adultos jovens sexualmente ativos. O quadro descrito é típico da fase de disseminação hematogênica (síndrome artrite-dermatite). É comum que o líquido sinovial apresente contagem de leucócitos menor do que em outras artrites sépticas (geralmente entre 5.000 e 50.000 polimorfonucleares) e que a bacterioscopia (Gram) seja negativa em mais de 50% dos casos, devido à dificuldade de crescimento desse agente.\n\nc) Incorreta. As artrites microcristalinas, como a gota, são extremamente raras em pacientes de 18 anos sem doenças metabólicas graves. O quadro típico é de monoartrite intensa (frequentemente na base do grande hálux) e não inclui a erupção pustular característica da infecção gonocócica.\n\nd) Incorreta. A osteoartrite é uma doença degenerativa da cartilagem articular, comum em idosos ou após traumas articulares crônicos. Não cursa com febre, rash cutâneo ou quadro inflamatório agudo com tenossinovite.\n\ne) Incorreta. O Lúpus Eritematoso Sistêmico pode causar artrite e febre, mas as manifestações cutâneas típicas são o rash malar (em \"asa de borboleta\"), fotossensibilidade ou lesões discoides. O rash pustular agudo em extremidades, associado a sinais inflamatórios em tendões, é fortemente indicativo de causa infecciosa.\n\nGabarito: Letra (b).",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Artropatias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  },
+  {
+    "id": "AJUDA_d3578cff-09f9-485d-8ac1-af975a0ee5da",
+    "originalId": "d3578cff-09f9-485d-8ac1-af975a0ee5da",
+    "statement": "Mulher de 28 anos vem para acompanhamento após 6 meses de resultado de Papanicolau com lesão intraepitelial escamosa de baixo grau. Refere ter sido vacinada com esquema completo contra HPV na adolescência. O resultado atual da citologia oncótica cérvico vaginal revela atipia de células escamosas de significado indeterminado (ASC-US). Assinale a alternativa que apresenta recomendação correta de acordo com as diretrizes brasileiras para o rastreamento do câncer do colo do útero (2016).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como a paciente é menor de 30 anos, repetir a citologia em 12 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Como o segundo resultado de citologia é alterado, colposcopia com biópsia dirigida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Se disponível, genotipagem com DNA HPV para elucidar ASC US.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Como a paciente é imunizada e menor do que 30 anos, manter acompanhamento anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nPara responder corretamente a esta questão, é necessário aplicar as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA/Ministério da Saúde, 2016). O caso descreve uma paciente de 28 anos com dois resultados citopatológicos alterados em sequência.\n\nRaciocínio Clínico:\n\n1. Primeiro resultado (6 meses atrás): LSIL (Lesão Intraepitelial Escamosa de Baixo Grau). De acordo com o protocolo, para mulheres com 25 anos ou mais, a conduta frente ao LSIL é a repetição da citologia em 6 meses.\n2. Segundo resultado (atual): ASC-US (Atipia de Células Escamosas de Significado Indeterminado). \n3. Regra de persistência: As diretrizes brasileiras estabelecem que, se houver qualquer alteração citopatológica na repetição do exame (seja a manutenção da mesma alteração ou o surgimento de outra, como ASC-US ou LSIL), a paciente deve ser encaminhada para colposcopia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A repetição em 12 meses é a conduta preconizada para um achado inicial de ASC-US em mulheres entre 25 e 29 anos. Como esta paciente já tinha um resultado anterior de LSIL e manteve atipia no exame de seguimento, ela não deve aguardar mais tempo e precisa de investigação colposcópica imediata.\n\nAlternativa b) Correta. A persistência de alterações citológicas em exames sucessivos indica a necessidade de avaliação da arquitetura tecidual do colo uterino. A colposcopia permite identificar áreas suspeitas para a realização de biópsia dirigida, visando excluir lesões precursoras de maior gravidade (como o NIC 2 ou NIC 3) que podem estar ocultas sob uma citologia de baixo grau.\n\nAlternativa c) Incorreta. Embora o teste de biologia molecular para HPV (DNA-HPV) possa ser utilizado para triagem de ASC-US em alguns contextos internacionais, as diretrizes brasileiras de 2016 baseiam o fluxo de condutas prioritariamente na repetição da citologia. No cenário de persistência de atipia (LSIL seguida de ASC-US), a indicação de colposcopia já está consolidada.\n\nAlternativa d) Incorreta. O fato de a paciente ter completado o esquema vacinal contra o HPV na adolescência não altera o protocolo de rastreamento vigente no Brasil. Mulheres vacinadas devem seguir exatamente as mesmas normas de coleta e manejo de resultados alterados que as mulheres não vacinadas, uma vez que a vacina não cobre todos os tipos oncogênicos de HPV.\n\nGabarito: Letra B.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:05.642Z"
+  }
+]

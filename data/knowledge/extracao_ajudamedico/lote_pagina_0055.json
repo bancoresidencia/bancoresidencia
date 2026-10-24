@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_0e2a1f99-4b21-45cd-a1a8-f57fa2d47e16",
+    "originalId": "0e2a1f99-4b21-45cd-a1a8-f57fa2d47e16",
+    "statement": "O câncer de colo do útero é o segundo mais frequente em mulheres que vivem em regiões em desenvolvimento. Como prevenção, a Organização Mundial de Saúde (OMS) recomenda a prática sexual segura, incluindo educação para jovens e promoção do uso e fornecimento de preservativos para pessoas que já iniciaram atividade sexual. Contudo, a prevenção mais eficaz e eficiente – indicada pela OMS – é a vacinação contra o HPV. Segundo a recomendação do Programa Nacional de Imunizações, deve-se vacinar os seguintes grupos, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "meninas e meninos de 9 a 14 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "mulheres e homens que vivem com HIV, transplantados de órgãos sólidos, de medula óssea ou pacientes oncológicos na faixa etária de 9 a 45 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vítimas de abuso sexual, imunocompetentes, de 15 a 45 anos (homens e mulheres) que não tenham tomado a vacina HPV ou estejam com esquema incompleto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "usuários de Profilaxia Pré-Exposição (PrEP) de HIV, com idade de 15 a 45 anos, que não tenham tomado a vacina HPV ou estejam com esquema incompleto (de acordo com esquema preconizado para idade ou situação especial).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "gestantes com lesões genitais HPV induzidas, visando reduzir a transmissão neonatal do HPV e a ocorrência de papilomatose respiratória recorrente infantil.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta quanto ao enunciado (pois a afirmação é verdadeira). O Programa Nacional de Imunizações (PNI) estabelece como público-alvo prioritário para a vacinação de rotina meninos e meninas na faixa etária de 9 a 14 anos. Em 2024, o Brasil atualizou essa diretriz para a utilização de uma dose única nesta faixa etária, buscando ampliar a adesão e simplificar a estratégia vacinal.\n\nAlternativa b) Incorreta quanto ao enunciado (pois a afirmação é verdadeira). O PNI inclui grupos de imunossuprimidos como prioridade. Pessoas vivendo com HIV/Aids, transplantados de órgãos sólidos ou medula óssea e pacientes oncológicos têm indicação de receber a vacina na faixa etária de 9 a 45 anos. Diferente da rotina, para estes grupos o esquema ainda é mantido em três doses (0, 2 e 6 meses).\n\nAlternativa c) Incorreta quanto ao enunciado (pois a afirmação é verdadeira). Recentemente, houve a expansão da recomendação para vítimas de abuso sexual de ambos os sexos até os 45 anos de idade, caso ainda não tenham sido vacinadas ou estejam com o esquema incompleto. Essa medida visa proteger uma população em situação de vulnerabilidade contra os tipos oncogênicos do HPV.\n\nAlternativa d) Incorreta quanto ao enunciado (pois a afirmação é verdadeira). Usuários de Profilaxia Pré-Exposição (PrEP) ao HIV, com idade entre 15 a 45 anos, foram incluídos pelo Ministério da Saúde como grupo elegível para a vacina quadrivalente contra o HPV. Essa estratégia foca na prevenção de lesões precursoras de câncer de colo uterino, vulva, vagina, ânus e pênis.\n\nAlternativa e) Alternativa correta (o \"exceto\" da questão). A vacina contra o HPV não é recomendada nem aprovada para uso durante a gestação. Caso uma mulher engravide durante o esquema vacinal, as doses devem ser interrompidas e completadas somente após o período de amamentação (ou após o parto, conforme o caso). Além disso, não há evidência científica que sustente o uso da vacina na gestante para reduzir a transmissão neonatal do vírus ou para prevenir a papilomatose respiratória recorrente no recém-nascido. O manejo de lesões genitais induzidas por HPV na gestante é clínico e cirúrgico localizado, quando indicado.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Imunizações"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  },
+  {
+    "id": "AJUDA_0e3210dd-6810-4827-bcd1-b3a6f3e55038",
+    "originalId": "0e3210dd-6810-4827-bcd1-b3a6f3e55038",
+    "statement": "Qual é o tratamento farmacológico de escolha para a apneia da prematuridade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Salbutamol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aminofilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cafeína.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Isoproterenol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A apneia da prematuridade é definida como uma pausa respiratória superior a 20 segundos ou interrupções mais curtas que venham acompanhadas de bradicardia ou queda da saturação de oxigênio em recém-nascidos pré-termo. O tratamento farmacológico principal baseia-se no uso de metilxantinas, que atuam estimulando o centro respiratório, aumentando a sensibilidade ao dióxido de carbono e melhorando a contratilidade diafragmática.\n\nAlternativa (a) Incorreta. O salbutamol é um medicamento beta-2 agonista com ação broncodilatadora. É indicado para o tratamento de doenças obstrutivas das vias aéreas, como asma ou bronquiolite, e não possui efeito estimulante sobre o centro respiratório central necessário para tratar a apneia neonatal.\n\nAlternativa (b) Incorreta. Embora a aminofilina seja uma metilxantina e tenha sido amplamente utilizada para esta finalidade, ela não é mais considerada a droga de escolha. A aminofilina apresenta uma janela terapêutica estreita, o que aumenta o risco de efeitos colaterais como taquicardia e irritabilidade, além de exigir a monitorização frequente dos níveis séricos do fármaco.\n\nAlternativa (c) Correta. O citrato de cafeína é o tratamento de escolha para a apneia da prematuridade. Em comparação com outras metilxantinas, a cafeína possui uma meia-vida mais longa, permitindo a administração em dose única diária, e apresenta uma margem de segurança muito maior. Além disso, o uso da cafeína está associado a melhores desfechos clínicos, como a redução da necessidade de ventilação mecânica e menor incidência de displasia broncopulmonar.\n\nAlternativa (d) Incorreta. O isoproterenol é um agonista beta-adrenérgico não seletivo utilizado principalmente para o tratamento de bradicardias graves ou bloqueios cardíacos devido ao seu efeito cronotrópico e inotrópico positivo. Não possui indicação ou eficácia comprovada no manejo da apneia da prematuridade.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  },
+  {
+    "id": "AJUDA_0e353c3c-3e90-4a5c-b7ca-1e95b7e58373",
+    "originalId": "0e353c3c-3e90-4a5c-b7ca-1e95b7e58373",
+    "statement": "Primípara teve, há 5 dias, parto cesárea após amniorrexe prematura e segundo período de parto prolongado. Encontra-se em aleitamento materno exclusivo, refere febre 38 °C há 2 dias, acompanhada de dor pélvica e calafrios e loquiação fétida. A conduta mais adequada, considerando que a puérpera deseja manter o aleitamento exclusivo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Clindamicina e gentamicina intravenosos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ampicilina intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Azitromicina e ampicilina via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ciprofloxacino intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cefalexina e azitromicina via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO\n\nA paciente apresenta um quadro clínico clássico de endometrite puerperal, que é a principal causa de febre no puerpério. Os sinais cardinais estão presentes: febre (38 graus), dor pélvica/uterina à palpação e loquiação fétida. O principal fator de risco é o parto cesárea, potencializado pela rotura prematura de membranas e pelo trabalho de parto prolongado descritos no caso.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Correta): O tratamento da endometrite deve ser hospitalar, com antibioticoterapia intravenosa de amplo espectro para cobrir a flora polimicrobiana (gram-positivos, gram-negativos e anaeróbios). O esquema padrão-ouro é a combinação de Clindamicina (eficaz contra anaeróbios e gram-positivos) e Gentamicina (cobertura para gram-negativos). Este esquema é altamente eficaz e seguro para a manutenção do aleitamento materno, pois a passagem dessas drogas para o leite é mínima e não contraindica a amamentação.\n\nAlternativa B (Incorreta): A Ampicilina isolada não possui espectro suficiente para cobrir os anaeróbios produtores de beta-lactamase e os diversos bacilos gram-negativos envolvidos na infecção. Ela costuma ser adicionada ao esquema de Clindamicina e Gentamicina apenas se houver suspeita de infecção por Enterococcus ou se não houver melhora clínica em 48 a 72 horas.\n\nAlternativa C (Incorreta): A via oral não é recomendada para o tratamento inicial de endometrite com manifestações sistêmicas (febre e calafrios). Além disso, a azitromicina e a ampicilina juntas não garantem a cobertura necessária para os anaeróbios, que são componentes críticos na patogênese desta infecção.\n\nAlternativa D (Incorreta): O ciprofloxacino não é droga de primeira escolha para endometrite puerperal. Embora tenha boa ação contra gram-negativos, sua atividade contra anaeróbios é insuficiente. A via intramuscular também não é a preconizada para casos de infecção puerperal aguda com repercussão sistêmica.\n\nAlternativa E (Incorreta): A cefalexina é uma cefalosporina de primeira geração e não possui cobertura adequada para anaeróbios ou para a flora hospitalar polimicrobiana relacionada ao parto. O uso da via oral é inadequado para uma paciente com quadro de febre e dor pélvica no 5º dia de pós-operatório.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  },
+  {
+    "id": "AJUDA_0e356c72-e90e-4133-8a49-7befca59c987",
+    "originalId": "0e356c72-e90e-4133-8a49-7befca59c987",
+    "statement": "No atendimento a vítimas de catástrofes, violências ou acidentes, algumas abordagens podem ser adotadas para auxiliar na prevenção do desenvolvimento de transtornos mentais após eventos traumáticos, principalmente o Transtorno de Estresse Pós-Traumático (TEPT). São abordagens recomendadas as mencionadas a seguir, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Evitar a retraumatização, não induzindo o paciente a descrever o evento traumático, nem o forçando a retornar à cena violenta. Deve-se priorizar a anamnese objetiva quanto aos dados da situação traumática, por meio de entrevistas com familiares ou terceiros envolvidos (testemunhas, policiais, bombeiros, socorristas, etc.), e não diretamente com o paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fazer o reasseguramento, reforçando a condição atual de estabilidade clínica e segurança do paciente, afastando-o do ambiente da cena traumática, valorizando o “aqui e agora estou seguro” (ambiente hospitalar/unidade de saúde, presença da equipe de saúde, equipe de segurança, familiares, etc.).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar benzodiazepínicos na maioria dos casos, com objetivo de reduzir o sofrimento agudo (ansiedade, medo, insônia) relacionado ao trauma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Evitar a vitimização, procurando não valorizar o impacto destruidor do trauma, não patologizar e não se referir a sintomas reacionais como doença mental.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as estratégias de intervenção precoce após eventos traumáticos, focadas na prevenção do Transtorno de Estresse Pós-Traumático (TEPT). O objetivo é identificar a conduta que NÃO é recomendada pelas diretrizes atuais de saúde mental e Primeiros Cuidados Psicológicos (PCP).\n\nAlternativa (a): Está correta e recomendada. Forçar a vítima a relatar detalhes do trauma logo após o ocorrido (prática antigamente conhecida como Debriefing Psicológico) pode ser prejudicial e aumentar o risco de TEPT por meio da retraumatização. A anamnese deve ser focada no essencial para a estabilização clínica, buscando informações complementares com terceiros para preservar o estado emocional do paciente.\n\nAlternativa (b): Está correta e recomendada. Um dos pilares dos Primeiros Cuidados Psicológicos é o restabelecimento da segurança percebida. O reasseguramento ajuda a reduzir a hiperestimulação do sistema nervoso simpático, trazendo o paciente de volta ao presente (aqui e agora) e retirando-o mentalmente do cenário de ameaça.\n\nAlternativa (c): ESTA É A INCORRETA (GABARITO). O uso de benzodiazepínicos no período imediato ao trauma é contraindicado para a prevenção de TEPT. Estudos indicam que essas substâncias podem interferir no processamento emocional e na consolidação da memória traumática, além de inibir a extinção natural do medo, podendo inclusive aumentar a probabilidade de cronificação dos sintomas e desenvolvimento do transtorno. O tratamento farmacológico deve ser reservado para casos específicos e não administrado na maioria dos casos.\n\nAlternativa (d): Está correta e recomendada. É fundamental normalizar as reações agudas ao estresse, explicando ao paciente que sintomas como ansiedade, insônia e susto são respostas fisiológicas normais a um evento anormal. Evitar a patologização precoce ajuda a reduzir o estigma e o sentimento de desamparo, favorecendo a resiliência natural do indivíduo.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  },
+  {
+    "id": "AJUDA_0e35eded-c57e-415a-ab85-ddeb6325cfc8",
+    "originalId": "0e35eded-c57e-415a-ab85-ddeb6325cfc8",
+    "statement": "A distinção entre Pericardite Constritiva e Miocardiopatia Restritiva é um desafio diagnóstico, pois ambas cursam com insuficiência cardíaca diastólica e sinais de congestão sistêmica predominante. No entanto, a fisiopatologia subjacente difere: a constrição é um problema pericárdico, enquanto a restrição é miocárdica. Um achado hemodinâmico ou ecocardiográfico que favorece fortemente o diagnóstico de Pericardite Constritiva é a interdependência ventricular exagerada. Sobre os achados que auxiliam na diferenciação entre pericardite constritiva e miocardiopatia restritiva, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Variação respiratória acentuada do fluxo transvalvar mitral e tricúspide (> 25-40%) e o movimento paradoxal do septo interventricular (septal bounce) durante a inspiração (\"sinal do rechaço septal\").",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pressão sistólica da artéria pulmonar elevada (> 50 mmHg) com gradiente diastólico ventrículo direito-artéria pulmonar elevado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Níveis de Peptídeo Natriurético Cerebral (BNP) extremamente elevados (> 1000 pg/mL), indicando estiramento miocárdico intrínseco severo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento da espessura da parede do ventrículo esquerdo com padrão de \"granular sparkling\" (brilho granular) no ecocardiograma, sugestivo de infiltração amiloide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A diferenciação entre Pericardite Constritiva (PC) e Miocardiopatia Restritiva (MR) é um dos temas mais clássicos e desafiadores da cardiologia. Ambas apresentam um quadro clínico de insuficiência cardíaca com fração de ejeção preservada, mas a lógica fisiopatológica é oposta: na PC, o problema é externo (o pericárdio rígido limita o enchimento), enquanto na MR, o problema é interno (o músculo é rígido e pouco complacente).\n\nAnálise das alternativas:\n\nAlternativa A (CORRETA): Esta alternativa descreve o fenômeno da interdependência ventricular acentuada, que é a marca registrada da Pericardite Constritiva. Como o pericárdio está rígido e calcificado, o volume total do coração é fixo. Durante a inspiração, o aumento do retorno venoso para o ventrículo direito (VD) obriga o septo interventricular a se deslocar para a esquerda para acomodar esse volume, já que a parede livre do VD não consegue se expandir para fora. Esse movimento súbito é chamado de \"septal bounce\" ou rechaço septal. Consequentemente, o enchimento do ventrículo esquerdo diminui drasticamente, gerando a variação respiratória acentuada no Doppler dos fluxos mitral e tricúspide. Na Miocardiopatia Restritiva, essa variação é mínima ou ausente.\n\nAlternativa B (INCORRETA): Pressões sistólicas da artéria pulmonar elevadas (geralmente acima de 50 mmHg) são muito mais comuns na Miocardiopatia Restritiva. Na Pericardite Constritiva, as pressões pulmonares costumam ser normais ou apenas levemente elevadas, pois a função do miocárdio ventricular costuma estar preservada e não há o mesmo grau de hipertensão venocapilar retrógrada crônica que vemos na restrição miocárdica severa.\n\nAlternativa C (INCORRETA): O BNP (Peptídeo Natriurético Cerebral) é liberado em resposta ao estiramento das fibras miocárdicas. Na Miocardiopatia Restritiva, o miocárdio sofre grande tensão e estiramento, elevando muito os níveis de BNP. Já na Pericardite Constritiva, o pericárdio rígido atua como uma \"couraça\" que impede o estiramento do miocárdio. Por isso, na PC, os níveis de BNP costumam ser normais ou apenas discretamente elevados, servindo como um excelente marcador de diferenciação.\n\nAlternativa D (INCORRETA): O achado de aumento da espessura das paredes ventriculares associado ao aspecto de \"brilho granular\" (granular sparkling) é patognomônico da Amiloidose Cardíaca. A amiloidose é a causa mais comum de Miocardiopatia Restritiva. Na Pericardite Constritiva, a espessura das paredes do ventrículo esquerdo é geralmente normal, sendo o espessamento observado apenas no saco pericárdico.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Cardiomiopatias",
+      "Pericardiopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  },
+  {
+    "id": "AJUDA_0e3d52ef-4537-4a32-86b8-fa7134eae90b",
+    "originalId": "0e3d52ef-4537-4a32-86b8-fa7134eae90b",
+    "statement": "Sobre a Notificação Compulsória de doenças e agravos, qual das alternativas abaixo apresenta uma situação que exige notificação imediata (em até 24 horas) às autoridades de saúde por parte do profissional assistente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Casos suspeitos de Dengue em áreas endêmicas sem sinais de alarme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diagnóstico de Hanseníase em adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspeita de Febre Amarela ou de um evento adverso grave pós-vacinação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Casos confirmados de Sífilis em gestantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diagnóstico de Diabetes Mellitus tipo 1 em crianças menores de 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A compreensão da Lista Nacional de Notificação Compulsória é fundamental para a prática médica e para o planejamento em saúde pública. A periodicidade da notificação pode ser semanal ou imediata (dentro de 24 horas), dependendo do potencial de disseminação da doença, da gravidade dos casos e da necessidade de intervenção rápida das autoridades sanitárias.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Casos de dengue em áreas endêmicas, sem sinais de alarme, exigem notificação compulsória semanal. A notificação imediata (em até 24 horas) para a dengue só é exigida em situações específicas, como em casos de dengue com sinais de alarme, dengue grave, óbitos suspeitos de dengue ou quando a doença ocorre em áreas sem transmissão prévia.\n\nAlternativa B: Incorreta. A hanseníase é uma doença de curso crônico. Embora seja de notificação obrigatória em todo o território nacional para fins de controle epidemiológico e acompanhamento do tratamento, a periodicidade da notificação é semanal. Não há necessidade de mobilização das autoridades em regime de urgência (24 horas).\n\nAlternativa C: Correta. A febre amarela é uma doença de alta gravidade e com grande potencial de letalidade e disseminação epidêmica, exigindo ações imediatas de bloqueio de vetores e investigação ambiental. Da mesma forma, eventos adversos graves pós-vacinação (como hospitalizações ou óbitos suspeitos após a imunização) devem ser notificados imediatamente para que se investigue a segurança dos lotes vacinais e se evite o pânico na população ou a interrupção desnecessária de programas de vacinação. Ambos exigem notificação em até 24 horas.\n\nAlternativa D: Incorreta. A sífilis (seja ela adquirida, em gestantes ou congênita) é um agravo de notificação compulsória importante para o acompanhamento do pré-natal e prevenção da transmissão vertical. No entanto, o fluxo estabelecido pelo Ministério da Saúde para esses casos é de notificação semanal.\n\nAlternativa E: Incorreta. O diabetes mellitus é uma doença crônica não transmissível. Embora seja um problema de saúde pública de grande relevância, casos individuais de diabetes (independentemente da idade ou tipo) não constam na lista nacional de notificação compulsória de doenças e agravos. O monitoramento dessas doenças é feito por outros meios, como inquéritos epidemiológicos e sistemas de informações hospitalares ou de mortalidade.\n\nEm resumo, a notificação imediata é reservada para doenças com potencial de surto, doenças em processo de erradicação/eliminação ou eventos inusitados que exigem pronta resposta da vigilância epidemiológica.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Vigilância em Saúde",
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  },
+  {
+    "id": "AJUDA_0e517083-2649-491c-a8d4-92098e6d9d82",
+    "originalId": "0e517083-2649-491c-a8d4-92098e6d9d82",
+    "statement": "Um homem de 27 anos é encaminhado à sala de emergência após colisão de carro contra poste, em alta velocidade. Apresenta-se agitado, com fala desconexa e entrecortada. A equipe pré-hospitalar refere que observou equimose periorbital e um grande ferimento, com exposição óssea, no membro inferior esquerdo. A frequência respiratória é de 35 irpm, frequência cardíaca de 138 bpm, PA: 80 x 50 mmHg, saturação de oxigênio de 85% em ar ambiente. À inspeção inicial, observou-se turgência jugular com desvio traqueal para a direita. Assimetria torácica às custas de hiperdistensão do hemitórax esquerdo e murmúrio vesicular abolido nessa região. O cirurgião realiza punção de alívio no segundo espaço intercostal à esquerda.\n\nCom base no cenário descrito e nos princípios do atendimento inicial ao trauma, avalie a conduta do cirurgião.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A toracostomia foi precipitada, pois o diagnóstico não foi confirmado por exames de imagem, o que impediu o tratamento definitivo da condição de base.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A prioridade, nesse caso, seria a intubação orotraqueal, pois o paciente apresenta rebaixamento do nível de consciência, indicando proteção de vias aéreas pelo risco de broncoaspiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento deveria ser iniciado com reposição volêmica vigorosa, pois a alteração do nível de consciência provavelmente tem como etiologia a hipovolemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A resposta verbal do paciente mostra perviedade das vias aéreas, podendo adiar a abordagem das vias aéreas e respiratórias. Deve-se, em seguida, atentar para o risco neurológico frente aos relatos da equipe pré-hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O tratamento foi adequado, pois foi identificada e tratada a ameaça imediata à vida do paciente antes de prosseguir com a avaliação das demais lesões.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO quadro clínico descrito é uma apresentação clássica e \"de livro\" de PNEUMOTÓRAX HIPERTENSIVO à esquerda. Os sinais patognomônicos apresentados são:\n\n1. Instabilidade hemodinâmica (hipotensão: 80 x 50 mmHg e taquicardia: 138 bpm), caracterizando um choque obstrutivo.\n2. Insuficiência respiratória grave (taquipneia: 35 irpm e hipóxia: 85% de saturação).\n3. Turgência jugular (devido ao desvio do mediastino e à compressão das veias cavas, impedindo o retorno venoso).\n4. Desvio de traqueia para o lado contralateral (direito).\n5. Hiperdistensão do hemitórax afetado com ausência de murmúrio vesicular.\n\nDe acordo com os protocolos do ATLS (Advanced Trauma Life Support), o pneumotórax hipertensivo é uma emergência médica cujo diagnóstico deve ser estritamente CLÍNICO, não se devendo perder tempo com exames de imagem.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) INCORRETA. O diagnóstico de pneumotórax hipertensivo é clínico. Solicitar exames de imagem (como radiografia de tórax) para confirmar a suspeita em um paciente instável é um erro grave, pois o atraso no tratamento (descompressão) pode levar à parada cardiorrespiratória por choque obstrutivo.\n\nb) INCORRETA. Embora o manejo das vias aéreas (A) seja a primeira prioridade, o paciente em questão apresenta uma emergência respiratória (B) que está causando o colapso circulatório (C). Além disso, realizar a intubação orotraqueal e instituir ventilação por pressão positiva em um paciente com pneumotórax hipertensivo não drenado agrava drasticamente o quadro, podendo causar morte imediata por cessação total do retorno venoso.\n\nc) INCORRETA. As causas principais da hipotensão e da alteração do nível de consciência (agitação/fala desconexa) neste cenário são o choque obstrutivo e a hipóxia, não apenas a hipovolemia. A reposição volêmica vigorosa sem a descompressão do tórax será ineficaz, pois o coração está impossibilitado de bombear o sangue devido à pressão intratorácica aumentada.\n\nd) INCORRETA. Apesar de a fala indicar que a via aérea está pérvia (passo A), os parâmetros vitais (saturação de 85% e frequência de 35 irpm) mostram que há uma falha crítica na respiração (passo B). No protocolo ABCDE, não se avança para a avaliação neurológica (D) sem que as ameaças à vida nos passos anteriores (A e B) tenham sido resolvidas ou estabilizadas.\n\ne) CORRETA. A conduta do cirurgião foi perfeita dentro dos preceitos do atendimento inicial ao trauma. Ele identificou uma lesão com risco iminente de morte no passo \"B\" do ABCDE e realizou a descompressão imediata (toracocentese de alívio). Esta manobra converte o pneumotórax hipertensivo em um pneumotórax simples, aliviando a pressão sobre o mediastino e permitindo a melhora do débito cardíaco e da oxigenação.\n\nGABARITO: ALTERNATIVA (E).",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": 52.31314802996694,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  },
+  {
+    "id": "AJUDA_0e54e363-7e54-4566-940e-2df923966de7",
+    "originalId": "0e54e363-7e54-4566-940e-2df923966de7",
+    "statement": "Assinale a alternativa que representa a infecção sexualmente transmissível que pode provocar a formação de aneurisma micótico arterial:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Linfogranuloma venéro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sífilis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Infecçao pelo HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infecção bacteriana por clamídia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Candidíase genital.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a correlação entre infecções sexualmente transmissíveis (ISTs) e complicações vasculares graves, especificamente a formação de aneurismas de origem infecciosa.\n\nALTERNATIVA A: Incorreta. O linfogranuloma venéreo é causado pela bactéria Chlamydia trachomatis (sorotipos L1, L2 e L3). Sua manifestação clínica clássica envolve linfadenopatia inguinal dolorosa (bubão) e proctite. Não há tropismo dessa bactéria pela parede arterial; portanto, não está associada à formação de aneurismas.\n\nALTERNATIVA B: Correta. A sífilis cardiovascular é uma manifestação da sífilis terciária que ocorre anos após a infecção inicial pelo Treponema pallidum. O patógeno causa uma endarterite obliterante dos vasa vasorum (os pequenos vasos que nutrem a parede das grandes artérias). Isso resulta em isquemia e destruição das fibras elásticas da túnica média, enfraquecendo a parede arterial e levando à formação de aneurismas, localizados preferencialmente na aorta ascendente. Embora o termo \"micótico\" seja classicamente usado para infecções por bactérias piogênicas, a questão utiliza a associação de aneurismas de origem infecciosa com ISTs, sendo a sífilis a causa clássica e mais importante.\n\nALTERNATIVA C: Incorreta. O vírus HIV pode causar vasculopatias e aumentar o risco de aneurismas infecciosos de forma indireta, devido ao estado de imunossupressão que facilita bacteremias por outros agentes (como Salmonella). No entanto, o HIV em si não é o agente que provoca a destruição estrutural direta da parede arterial para formar o aneurisma típico descrito em questões de prova sobre ISTs.\n\nALTERNATIVA D: Incorreta. A infecção por clamídia (sorotipos D a K) causa principalmente quadros de uretrite, cervicite e doença inflamatória pélvica. Diferentemente da sífilis, não possui uma fase sistêmica crônica que resulte em lesão direta e degeneração das camadas das grandes artérias.\n\nALTERNATIVA E: Incorreta. A candidíase genital é uma infecção fúngica superficial que afeta as mucosas. Não apresenta comportamento invasivo sistêmico ou capacidade de colonizar e destruir a integridade das paredes arteriais.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  },
+  {
+    "id": "AJUDA_0e5e894b-980e-4d45-a226-258bf6916653",
+    "originalId": "0e5e894b-980e-4d45-a226-258bf6916653",
+    "statement": "Paciente, 55 anos de idade, menopausada há 4 anos, notou a presença de um nódulo palpável na mama direita. Nega histórico familiar de câncer de mama. A mamografia revela uma massa com bordas espiculadas e microcalcificações suspeitas. A biópsia confirma carcinoma ductal invasivo.\nEm relação a esse caso, considere as afirmativas a seguir.\n\nI. A presença de receptores hormonais positivos está associada a um pior prognóstico.\nII. O câncer de mama triplo negativo apresenta boa resposta terapêutica, com o tamoxifeno como terapia complementar.\nIII. O carcinoma ductal invasivo é o tipo histológico mais comum de câncer de mama.\nIV. O rastreamento do câncer de mama, com a mamografia, permite detecção precoce da doença, além de reduzir a mortalidade.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para analisarmos esta questão com foco em provas de residência, devemos revisar os conceitos fundamentais de patologia mamária, imuno-histoquímica e rastreamento.\n\nAnálise detalhada das afirmativas:\n\nAfirmativa I. INCORRETA. No câncer de mama, a presença de receptores hormonais (estrogênio e progesterona) está associada a um MELHOR prognóstico e a uma maior diferenciação celular. Tumores que expressam esses receptores permitem a utilização da hormonioterapia (como o tamoxifeno ou inibidores da aromatase), o que confere uma Patient-Specific Survival (sobrevida) mais alta em comparação aos tumores que não os expressam.\n\nAfirmativa II. INCORRETA. O câncer de mama triplo negativo é caracterizado pela ausência de receptor de estrogênio, receptor de progesterona e ausência de superexpressão da proteína HER2. Por não possuir receptores hormonais, o tamoxifeno NÃO tem utilidade terapêutica nesses casos, uma vez que o mecanismo de ação dessa droga depende da ligação aos receptores de estrogênio. Além disso, o perfil triplo negativo é conhecido por ser biologicamente mais agressivo e apresentar pior prognóstico.\n\nAfirmativa III. CORRETA. O Carcinoma Ductal Invasivo (atualmente denominado pela OMS como Carcinoma Infiltrante de Tipo Não Especial) é, de fato, o tipo histológico mais comum, representando cerca de 70% a 80% de todos os casos de câncer de mama invasivo. No caso clínico apresentado, a descrição de massa espiculada e microcalcificações é o achado mamográfico típico dessa patologia.\n\nAfirmativa IV. CORRETA. O rastreamento mamográfico é a principal estratégia de saúde pública para a detecção precoce do câncer de mama. É a única modalidade de rastreio que demonstrou, em diversos ensaios clínicos randomizados, a capacidade de reduzir a mortalidade específica pela doença, ao identificar tumores em estádios iniciais, quando as chances de cura são significativamente maiores.\n\nConclusão:\nComo apenas as afirmativas III e IV estão corretas, a alternativa correta é a letra (c).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  },
+  {
+    "id": "AJUDA_0e618450-d045-4b4c-8778-087561193a7a",
+    "originalId": "0e618450-d045-4b4c-8778-087561193a7a",
+    "statement": "Os teratomas císticos maduros (cistos dermoides) são os tumores germinativos mais comuns do ovário, ocorrendo frequentemente em mulheres jovens. Apresentam características clínicas e de imagem peculiares. A alternativa que descreve corretamente uma característica ou complicação associada a este tipo de tumor é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento de escolha para teratomas menores de 10 cm em mulheres jovens é a aspiração guiada por ultrassom, visando esvaziar o conteúdo sebáceo e evitar a cirurgia ovariana que poderia comprometer a reserva folicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença de calcificações grosseiras semelhantes a dentes ou ossos no interior do cisto à ultrassonografia ou radiografia é um sinal patognomônico de imaturidade do teratoma, indicando a necessidade de quimioterapia adjuvante após a cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A transformação maligna ocorre em mais de 50% dos casos de teratoma cístico maduro em pacientes na menacme, sendo a degeneração para coriocarcinoma o tipo histológico mais comum encontrado nessa evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O teratoma cístico maduro é composto por tecidos bem diferenciados derivados de pelo menos dois folhetos embrionários (ectoderme, mesoderme, endoderme), sendo a torção anexial a complicação aguda mais frequente devido ao seu peso e mobilidade, superando o risco de ruptura.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. A aspiração guiada por ultrassom não é o tratamento indicado para teratomas. O conteúdo desses cistos é predominantemente sebáceo, gorduroso e pode conter pelos; se esse material extravasar para a cavidade peritoneal durante uma aspiração, pode causar uma peritonite química grave e de difícil tratamento. O tratamento de escolha é a cistectomia ovariana (remoção apenas do cisto), preferencialmente por via laparoscópica, visando preservar o tecido ovariano saudável e a reserva folicular.\n\nAlternativa b: Incorreta. A presença de dentes, ossos ou calcificações grosseiras é, na verdade, um sinal de maturidade dos tecidos, sendo característica clássica do teratoma maduro (benigno). O que define um teratoma como imaturo (maligno) é a presença de tecido neuroectodérmico imaturo (embrionário) na análise histopatológica, e não os achados de calcificação na imagem.\n\nAlternativa c: Incorreta. A transformação maligna do teratoma cístico maduro é uma complicação rara, ocorrendo em apenas 1% a 2% dos casos, e é muito mais comum em mulheres após a menopausa, não na menacme. Além disso, o tipo histológico mais comum nessa transformação maligna é o carcinoma de células escamosas (derivado do componente de pele), e não o coriocarcinoma.\n\nAlternativa d: Correta. O teratoma cístico maduro é composto por tecidos bem diferenciados que derivam de pelo menos dois, e frequentemente dos três, folhetos embrionários (ectoderme, mesoderme e endoderme). Devido ao seu conteúdo heterogêneo e denso (gordura e dentes), o tumor torna-se pesado e propenso a girar sobre o próprio pedículo. Por isso, a torção anexial é a complicação aguda mais frequente, superando significativamente o risco de ruptura ou de degeneração maligna.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:03.027Z"
+  }
+]

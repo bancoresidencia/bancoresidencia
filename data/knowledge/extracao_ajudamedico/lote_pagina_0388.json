@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_6b814db1-fb5f-40e5-b4cf-b780588e577f",
+    "originalId": "6b814db1-fb5f-40e5-b4cf-b780588e577f",
+    "statement": "Adolescente de 15 anos com dor periumbilical que migra para FID, febre baixa e leucocitose procura hospital terciário. Ultrassonografia de abdome é inconclusiva; Alvarado 7.\n\nQual é a próxima etapa mais adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta com analgesia e retorno se piorar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TC de abdome/pelve com contraste para confirmar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Endoscopia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um quadro clássico de apendicite aguda em um adolescente de 15 anos. A dor que se inicia na região periumbilical e migra para a fossa ilíaca direita (FID), acompanhada de febre baixa e leucocitose, compõe a apresentação típica dessa patologia. \n\nPara auxiliar no diagnóstico, utilizamos o Escore de Alvarado. Uma pontuação de 7 indica alta probabilidade de apendicite. Nesses casos, quando o primeiro exame de imagem realizado (ultrassonografia) é inconclusivo, a conduta deve buscar a confirmação diagnóstica para evitar tanto a demora no tratamento quanto uma cirurgia desnecessária.\n\nAnálise das alternativas:\n\na) Incorreta. Um Escore de Alvarado 7 indica uma probabilidade diagnóstica elevada. Dar alta ao paciente com apenas analgesia seria uma conduta negligente, dado o risco de evolução para perfuração e peritonite.\n\nb) Correta. A Tomografia Computadorizada (TC) de abdome e pelve com contraste é o padrão-ouro para o diagnóstico de apendicite aguda em adultos e adolescentes quando a ultrassonografia não é diagnóstica. A TC possui alta sensibilidade e especificidade (acima de 95%), permitindo visualizar o apêndice inflamado, possíveis complicações (como abscessos) e diagnósticos diferenciais. No manejo atual, após uma ultrassonografia inconclusiva em paciente com suspeita moderada a alta, a TC é o próximo passo recomendado.\n\nc) Incorreta. A colonoscopia é um exame endoscópico para avaliar a mucosa do cólon e reto. Não tem indicação no diagnóstico de apendicite aguda, podendo inclusive ser perigosa pelo risco de perfuração em um cenário de inflamação aguda.\n\nd) Incorreta. A endoscopia digestiva alta avalia esôfago, estômago e duodeno. O quadro clínico do paciente aponta claramente para uma patologia no andar inferior do abdome (fossa ilíaca direita), tornando a EDA um exame irrelevante para este caso.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  },
+  {
+    "id": "AJUDA_6b86c944-dee5-4a5c-ba08-4300b37092bd",
+    "originalId": "6b86c944-dee5-4a5c-ba08-4300b37092bd",
+    "statement": "Mulher, 45 anos de idade, nuligesta, realizou uma ultrassonografia transvaginal e observou que no laudo estava descrito um mioma uterino FIGO 7. A orientação mais adequada para essa paciente é indicar que se trata de um nódulo uterino",
+    "options": [
+      {
+        "id": "A",
+        "text": "intramural hipervascularizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "que pode causar dismenorreia secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "que pode levar a hemorragias repentinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "que contraindica a terapia hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "subseroso pediculado assintomático.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender essa questão, é fundamental dominar a Classificação da FIGO (Federação Internacional de Ginecologia e Obstetrícia) para os miomas uterinos, que os categoriza de acordo com a sua localização anatômica na parede uterina.\n\nA classificação varia de 0 a 8:\n\nFIGO 0: Submucoso pediculado (intracavitário).\nFIGO 1: Submucoso com menos de 50% de componente intramural.\nFIGO 2: Submucoso com 50% ou mais de componente intramural.\nFIGO 3: Intramural que toca o endométrio.\nFIGO 4: Intramural puro (não toca o endométrio nem a serosa).\nFIGO 5: Subseroso com 50% ou mais de componente intramural.\nFIGO 6: Subseroso com menos de 50% de componente intramural.\nFIGO 7: Subseroso pediculado (ligado ao útero apenas por um pedículo).\nFIGO 8: Outras localizações (cervical, parasita).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O mioma intramural é classificado como FIGO 3 ou 4. O FIGO 7 está localizado na parte externa do útero (subseroso). Além disso, a hipervascularização não é uma característica definidora da categoria 7.\n\nAlternativa b) Incorreta. A dismenorreia secundária (cólica menstrual) é mais comumente associada a miomas que distorcem a cavidade uterina (submucosos) ou que estão dentro da musculatura (intramurais). Miomas subserosos pediculados raramente causam dor, a menos que sofram torção de seu pedículo.\n\nAlternativa c) Incorreta. Hemorragias uterinas (sangramento uterino anormal) estão associadas a miomas que impactam o endométrio (FIGO 0, 1, 2 e às vezes 3). Como o mioma FIGO 7 é subseroso e pediculado, ele não entra em contato com a cavidade endometrial e, portanto, não costuma causar alterações no fluxo menstrual.\n\nAlternativa d) Incorreta. A presença de um mioma, por si só, não é uma contraindicação absoluta para terapia hormonal, seja anticoncepcional ou reposição hormonal na menopausa. O manejo depende dos sintomas e do desejo da paciente.\n\nAlternativa e) Correta. Por definição, o mioma classificado como FIGO 7 é um nódulo subseroso pediculado. Como ele se desenvolve para fora da cavidade uterina e não comprime órgãos adjacentes na maioria dos casos pequenos ou moderados, ele costuma ser um achado incidental de exames de imagem, sendo frequentemente assintomático.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  },
+  {
+    "id": "AJUDA_6b96b3e8-f205-489c-8165-fe2643ebb624",
+    "originalId": "6b96b3e8-f205-489c-8165-fe2643ebb624",
+    "statement": "Paciente de 30 anos, G0P0A0, sobrepeso, chega para consulta de rotina com vistas à realização de exames de acompanhamento anual. Durante a coleta da anamnese, a paciente refere dificuldade para perder peso e para engravidar, além de apresentar acnes frequentes em região mandibular, no tronco, colo e dorso. Ao exame físico, apresenta lesões cutâneas escurecidas e aveludadas na região cervical e axilas. Após a realização da coleta do preventivo, a conduta que deve ser realizada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar ressonância magnética de pelve, visando confirmar hipótese diagnóstica de endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar inicialmente apenas os exames de rotina anuais, reavaliando em um ano se a paciente mantiver o mesmo quadro sintomatológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tranquilizar a paciente sobre a normalidade dos sintomas, que são justificados pelas variações hormonais normais do ciclo menstrual de algumas mulheres.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar exames laboratoriais de rotina, além de padrão hormonal, incluindo dosagem de SDHEA, e ultrassonografia transvaginal, visando investigar suspeita de síndrome dos ovários policísticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\n\nA paciente de 30 anos apresenta um conjunto de sinais e sintomas que apontam para um distúrbio endócrino-metabólico frequente em mulheres em idade reprodutiva. O sobrepeso associado à acantose nigricans (lesões cutâneas escurecidas e aveludadas em áreas de dobra) é um marcador clínico fidedigno de resistência insulínica. A queixa de acne na região mandibular e no tronco sugere hiperandrogenismo clínico, enquanto a dificuldade para engravidar sugere uma possível anovulação crônica. Esse tripé (sinais de resistência insulínica, hiperandrogenismo e infertilidade) torna a Síndrome dos Ovários Policísticos (SOP) a principal hipótese diagnóstica.\n\nAlternativa a) Incorreta. A ressonância magnética da pelve não é o exame inicial para investigação de infertilidade, sendo reservada para casos específicos de suspeita de endometriose profunda ou malformações müllerianas. Embora a endometriose cause infertilidade, ela não justifica a acne nem a acantose nigricans apresentadas pela paciente.\n\nAlternativa b) Incorreta. Ignorar os sintomas de uma paciente que apresenta sinais claros de resistência insulínica e hiperandrogenismo é uma conduta negligente. O quadro clínico atual já justifica o início imediato da investigação diagnóstica para prevenir complicações metabólicas e tratar a queixa de infertilidade.\n\nAlternativa c) Incorreta. Os sintomas relatados não são variações normais do ciclo menstrual. Acne persistente em idade adulta, dificuldade de perda ponderal e acantose nigricans são manifestações patológicas que indicam um desequilíbrio hormonal e metabólico subjacente.\n\nAlternativa d) Correta. Esta alternativa propõe a investigação correta para a principal suspeita diagnóstica, a SOP. De acordo com os Critérios de Rotterdam, o diagnóstico é feito pela presença de dois dos três critérios: hiperandrogenismo (clínico ou laboratorial), disfunção ovulatória (irregularidade menstrual ou infertilidade) e imagem de ovários policísticos ao ultrassom. A solicitação do padrão hormonal, incluindo o SDHEA (sulfato de deidroepiandrosterona), é fundamental para avaliar a origem dos androgênios e excluir outras patologias, como tumores ou hiperplasia adrenal, enquanto a ultrassonografia transvaginal avalia a morfologia ovariana. Além disso, exames de rotina são necessários para avaliar o perfil metabólico da paciente com sobrepeso e resistência insulínica.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  },
+  {
+    "id": "AJUDA_6ba35166-de5b-43e8-9053-2e5c0f14bd29",
+    "originalId": "6ba35166-de5b-43e8-9053-2e5c0f14bd29",
+    "statement": "Assinale a alternativa correta sobre a conduta inicial no manejo da taquicardia ventricular (TV) sustentada monomórfica em paciente estável hemodinamicamente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cardioversão elétrica sincronizada deve ser sempre indicada para evitar instabilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lidocaína SC é o tratamento de primeira escolha em todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amiodarona EV pode ser utilizada como opção de estabilização inicial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Adenosina é eficaz no controle da TV sustentada instável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Betabloqueador IV é o fármaco de primeira linha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O manejo da Taquicardia Ventricular (TV) monomórfica sustentada depende fundamentalmente da estabilidade hemodinâmica do paciente. No caso proposto (paciente estável), a prioridade é a reversão do ritmo ou controle da frequência de forma segura, geralmente iniciando pela via farmacológica.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A cardioversão elétrica sincronizada é a conduta de escolha imediata para pacientes INSTÁVEIS (com hipotensão, choque, dor torácica isquêmica, insuficiência cardíaca aguda ou alteração súbita do nível de consciência). No paciente estável, a cardioversão elétrica pode ser considerada, mas não é obrigatória (\"sempre indicada\") como conduta inicial, permitindo o uso de antiarrítmicos primeiro.\n\nAlternativa b) Incorreta. A lidocaína é um antiarrítmico que pode ser utilizado na TV, porém é considerada uma droga de segunda linha em relação à amiodarona ou procainamida. Além disso, a via de administração correta em emergências cardiológicas é a endovenosa (EV), e não a subcutânea (SC).\n\nAlternativa c) Correta. Em pacientes com TV monomórfica sustentada e estáveis hemodinamicamente, a amiodarona endovenosa (dose de ataque de 150 mg em 10 minutos) é uma das principais opções farmacológicas recomendadas pelos protocolos de ACLS para tentativa de reversão química e estabilização do quadro.\n\nAlternativa d) Incorreta. Se a TV sustentada for INSTÁVEL, a conduta correta é a cardioversão elétrica sincronizada imediata. A adenosina não tem papel no manejo de ritmos instáveis. Ela pode ser utilizada como ferramenta diagnóstica ou terapêutica apenas em pacientes ESTÁVEIS com taquicardia de complexo largo, regular e monomórfica, para diferenciar TV de taquicardia supraventricular com aberrância.\n\nAlternativa e) Incorreta. Os betabloqueadores são fundamentais no tratamento de longo prazo e em contextos específicos, como na tempestade elétrica ou TV desencadeada por estresse adrenérgico. Contudo, não representam a primeira linha para a reversão aguda de uma TV monomórfica sustentada na maioria dos protocolos de emergência, perdendo espaço para os antiarrítmicos de classe III (amiodarona) ou classe Ia (procainamida).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  },
+  {
+    "id": "AJUDA_6baaa0ee-271f-45a4-8936-1a222de65f74",
+    "originalId": "6baaa0ee-271f-45a4-8936-1a222de65f74",
+    "statement": "Puérpera no décimo quinto dia após o parto refere nódulo indolor na mama direita há 1 dia. Nega febre ou calafrios. Ao exame clínico, palpa-se nodulação amolecida de 2,0 cm de diâmetro, indolor, sem a presença de sinais flogísticos. Ultrassom revela área cística de 2,2 cm no maior diâmetro no local referido. Qual a conduta mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Punção com agulha fina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Controle clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Punção com agulha grossa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Carbegolina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma puérpera no 15º dia pós-parto apresentando um nódulo mamário de consistência amolecida, indolor, sem sinais flogísticos locais ou sintomas sistêmicos (como febre e calafrios), cuja ultrassonografia confirma uma lesão puramente cística de 2,2 cm. Este quadro é clássico de galactocele (cisto de retenção de leite decorrente da obstrução de um ducto lactífero). Trata-se de uma condição benigna frequente durante o período de lactação.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A punção aspirativa por agulha fina (PAAF) pode ter finalidade diagnóstica e terapêutica em galactoceles, mas é reservada para casos sintomáticos (dolorosos), lesões muito volumosas ou quando houver dúvida diagnóstica. Para uma lesão pequena (cerca de 2 cm) e assintomática, procedimentos invasivos não são indicados de imediato.\n\nAlternativa B - Correta. A conduta mais adequada para uma galactocele pequena e assintomática é a conduta expectante com controle clínico. A maioria dos casos tem resolução espontânea mantendo-se a amamentação regular, massagens locais suaves e esvaziamento adequado da mama.\n\nAlternativa C - Incorreta. A biópsia por agulha grossa (core biopsy) é indicada para lesões sólidas suspeitas de malignidade. Em lesões císticas simples em contexto de puerpério, esse método não tem indicação.\n\nAlternativa D - Incorreta. A cabergolina é um inibidor da prolactina utilizado para a supressão farmacológica da lactação. Não há indicação de interromper a amamentação para tratar uma alteração focal e benigna.\n\nAlternativa E - Incorreta. A antibioticoterapia estaria indicada se houvesse quadro de mastite infecciosa. A ausência de febre, calafrios, dor e sinais inflamatórios descarta infecção bacteriana ativa.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Doenças Benignas da Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  },
+  {
+    "id": "AJUDA_6bb521cc-ae93-49eb-90a7-3d02c71ad465",
+    "originalId": "6bb521cc-ae93-49eb-90a7-3d02c71ad465",
+    "statement": "RN a termo com boa vitalidade, sem intercorrências gestacionais, está sendo recepcionado na sala de parto. É correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o clampeamento tardio estaria indicado se o RN fosse menor do que 34 semanas, uma vez que é um fator protetor para anemia ferropriva do lactente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o clampeamento do cordão umbilical deve ocorrer após 60 segundos, sendo benéfico para a concentração de Hb nas primeiras 24 horas de vida e de ferritina até 3–6 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "há evidências suficientes para recomendar a ordenha de cordão para esse RN, não sendo indicado para os que nascem hipotônicos ou sem respiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "se a mãe fosse uma parturiente vivendo com HIV, a recomendação do clampeamento imediato seria o correto, pelo aumento do risco de positividade para o RN.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa questão aborda as recomendações atuais sobre o clampeamento do cordão umbilical em recém-nascidos (RNs) com boa vitalidade.\n\nAlternativa (a) Incorreta: Embora o clampeamento tardio seja, sim, um fator protetor contra a anemia ferropriva e seja indicado para prematuros menores de 34 semanas, a recomendação não se restringe a eles. O clampeamento tardio é a conduta padrão para todos os recém-nascidos com boa vitalidade, inclusive os a termo (como o do caso clínico), visando justamente à proteção das reservas de ferro.\n\nAlternativa (b) Correta: De acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP) e da Organização Mundial da Saúde (OMS), para o RN a termo com boa vitalidade, o clampeamento deve ser realizado de forma tardia (após 1 a 3 minutos ou após a cessação das pulsações). Essa conduta garante a transfusão placentária de cerca de 70 a 100 mL de sangue, o que aumenta os níveis de hemoglobina nas primeiras 24 horas e melhora significativamente os estoques de ferro (ferritina) até os 3 a 6 meses de vida, reduzindo o risco de anemia no primeiro ano.\n\nAlternativa (c) Incorreta: Não há evidências suficientes para recomendar a ordenha (milking) do cordão como prática rotineira em substituição ao clampeamento tardio em RNs a termo. Além disso, em prematuros extremos, a ordenha tem sido associada a um risco aumentado de hemorragia intraventricular em alguns estudos, não sendo a técnica de escolha prioritária frente ao clampeamento tardio fisiológico.\n\nAlternativa (d) Incorreta: Atualmente, as recomendações do Ministério da Saúde e da SBP indicam que, se a gestante vivendo com HIV realizou o pré-natal adequado e apresenta carga viral indetectável ou baixa, o clampeamento tardio pode ser realizado. O risco de transmissão vertical nessa circunstância é considerado mínimo perante os benefícios hematológicos para o lactente. O clampeamento imediato em mães HIV-positivas deixou de ser uma regra absoluta para todos os casos.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": 63.268002093241414,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  },
+  {
+    "id": "AJUDA_6bbe21e4-ef98-4753-a992-d7e5a39ae8dd",
+    "originalId": "6bbe21e4-ef98-4753-a992-d7e5a39ae8dd",
+    "statement": "Paciente de 30 anos, portadora de Síndrome dos Ovários Policísticos (SOP), deseja engravidar. Está em uso de Anticoncepcional Combinado (ACO) e espironolactona. Quanto às recomendações pré gestacionais apropriadas a essa paciente, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente não deve engravidar, pois tem alto risco de complicações gestacionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se suspender o ACO, manter espironolactona e iniciar ácido fólico, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se suspender o ACO, manter a espironolactona, iniciar ácido fólico e realizar GTT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se suspender o ACO e a espironolactona, iniciar ácido fólico e realizar GTT.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Deve-se suspender o ACO, manter a espironolactona até a confirmação da gestação e só iniciar ácido fólico após essa confirmação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A abordagem de uma paciente com Síndrome dos Ovários Policísticos (SOP) que deseja engravidar exige o ajuste do tratamento crônico para garantir a segurança fetal e a saúde materna.\n\nA alternativa (a) está incorreta porque, embora a SOP esteja associada a um maior risco de complicações obstétricas (como diabetes gestacional e pré-eclâmpsia) e possa causar subfertilidade por anovulação, ela não é uma contraindicação à gestação. Com acompanhamento adequado, a maioria das pacientes consegue engravidar e ter uma gestação bem-sucedida.\n\nA alternativa (b) está incorreta devido à recomendação de manter a espironolactona. A espironolactona possui efeito antiandrogênico e é classificada como categoria C (ou D, dependendo da diretriz) na gestação, apresentando risco de feminização de fetos masculinos. Portanto, seu uso deve ser interrompido antes de a paciente iniciar as tentativas de concepção.\n\nA alternativa (c) está incorreta pelo mesmo motivo da anterior: a manutenção da espironolactona é contraindicada no período pré-gestacional e gestacional. Embora o início do ácido fólico e a realização do GTT (Teste Oral de Tolerância à Glicose) estejam corretos, a conduta em relação ao diurético invalida a opção.\n\nA alternativa (d) está correta e descreve a conduta padrão. A suspensão do Anticoncepcional Combinado (ACO) é necessária para que ocorra a retomada do ciclo ovulatório. A suspensão da espironolactona é mandatória para evitar riscos teratogênicos ao feto. O início do ácido fólico (idealmente 3 meses antes da concepção) é a recomendação universal para prevenção de defeitos do tubo neural. A realização do GTT é fundamental, pois pacientes com SOP possuem um risco significativamente elevado de resistência insulínica e diabetes mellitus gestacional, devendo ser rastreadas antes mesmo de engravidarem ou no início do pré-natal.\n\nA alternativa (e) está incorreta por dois erros principais. Primeiro, a espironolactona não deve ser mantida até a confirmação da gestação, mas sim suspensa previamente. Segundo, o ácido fólico deve ser iniciado no período pré-concepcional para garantir níveis séricos adequados durante a embriogênese inicial; iniciá-lo apenas após a confirmação da gravidez pode ser tardio para a prevenção de malformações do tubo neural.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Síndromes dos Ovários Policísticos",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  },
+  {
+    "id": "AJUDA_6bc4fd75-4c94-40e9-adcc-51d04fec7610",
+    "originalId": "6bc4fd75-4c94-40e9-adcc-51d04fec7610",
+    "statement": "Paciente com fibrilação atrial desenvolve dor abdominal súbita, desproporcional ao exame físico (\"dor maior que o exame\"). Apresenta acidose metabólica e lactato elevado. A principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diverticulite Aguda Complicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pancreatite Aguda Necrosante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apendicite Aguda Perfurada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Isquemia Mesentérica Aguda (Embolia).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA questão descreve um cenário clássico de Isquemia Mesentérica Aguda. O paciente apresenta Fibrilação Atrial (FA), que é o principal fator de risco para eventos cardioembólicos. Na FA, a estase sanguínea no átrio esquerdo favorece a formação de trombos que, ao se desprenderem, podem ocluir a artéria mesentérica superior. A descrição \"dor desproporcional ao exame físico\" é o sinal semiológico mais característico desta patologia: o paciente queixa-se de dor excruciante, mas o abdome permanece precocemente flácido e sem sinais de irritação peritoneal à palpação. O aumento do lactato e a presença de acidose metabólica são indicadores de hipoperfusão tecidual e sugerem sofrimento ou necrose das alças intestinais, o que reforça a gravidade do quadro vascular.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS:\n\nAlternativa a) Diverticulite Aguda Complicada: Geralmente apresenta dor localizada (comumente em fossa ilíaca esquerda) e sinais claros de inflamação ou irritação peritoneal ao exame físico. O início costuma ser menos súbito do que um evento embólico e não guarda relação direta com a fibrilação atrial.\n\nAlternativa b) Pancreatite Aguda Necrosante: A dor da pancreatite costuma ser em faixa no andar superior do abdome com irradiação para as costas. Embora seja uma condição grave com elevação de lactato, não apresenta a dissociação entre a intensidade da dor e o exame físico abdominal inicial, além de ter outras etiologias principais (biliar ou alcoólica).\n\nAlternativa c) Apendicite Aguda Perfurada: Uma apendicite que evoluiu para perfuração apresentará sinais evidentes de peritonite ao exame físico, como defesa abdominal e descompressão dolorosa (sinal de Blumberg). Isso contraria a descrição de \"dor maior que o exame\", onde o exame físico é inicialmente inocente.\n\nAlternativa d) Isquemia Mesentérica Aguda (Embolia): Alternativa Correta. Reúne o fator de risco (FA), a instalação súbita, a dor intensa com exame físico pobre (característica de isquemia visceral antes da necrose transmural) e os marcadores laboratoriais de sofrimento isquêmico. O diagnóstico precoce é fundamental para tentar salvar a alça intestinal antes da necrose completa.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  },
+  {
+    "id": "AJUDA_6bc6db7e-b212-4a57-b5d1-ad877f4c14d4",
+    "originalId": "6bc6db7e-b212-4a57-b5d1-ad877f4c14d4",
+    "statement": "Mulher de 30 anos de idade, gestante com 35 semanas de idade gestacional, dá entrada na urgência da maternidade em franco trabalho de parto. O recém nascido não chorou ao nascer, apresentando movimentos respiratórios irregulares e frequência cardíaca de 90 bpm. Foi colocado em fonte de calor radiante, cabeça posicionada em leve extensão e realizada secagem vigorosa. Após 30 segundos a FC permanecia de 90 bpm e respiração irregular. A próxima conduta imediata para este caso, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "administrar oxigênio inalatório a 100% via cânula nasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar ventilação com pressão positiva com ar ambiente (21%).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "iniciar massagem cardíaca com relação 3 compressões para 1 ventilação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "administrar adrenalina via cateter umbilical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "fazer novo estímulo tátil e aguardar resposta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, devemos seguir rigorosamente o Fluxograma de Reanimação Neonatal da Sociedade Brasileira de Pediatria (SBP).\n\nAnálise do caso clínico:\nO recém-nascido (RN) tem 35 semanas de idade gestacional (pré-termo tardio). Ao nascer, apresentou-se deprimido, com respiração irregular e frequência cardíaca (FC) de 90 bpm. Foram realizados corretamente os passos iniciais: aquecer, posicionar a cabeça e secar. Após 30 segundos desses cuidados, o RN mantém FC abaixo de 100 bpm (90 bpm) e respiração irregular.\n\nDe acordo com o protocolo de reanimação, se após os passos iniciais o RN apresentar apneia, respiração irregular ou FC menor que 100 bpm, a conduta imediata e obrigatória é a Ventilação com Pressão Positiva (VPP). Este é o passo mais importante para reverter a bradicardia neonatal, que geralmente é de origem hipóxica.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O fornecimento de oxigênio inalatório (fluxo livre) não é indicado para o RN em apneia ou com respiração irregular e bradicardia. Além disso, o uso de oxigênio a 100% deve ser evitado no início da reanimação em RNs pré-termo tardios e a termo, devido ao risco de lesão tecidual por radicais livres.\n\nAlternativa b) Correta. A VPP deve ser iniciada nos primeiros 60 segundos de vida (o Minuto de Ouro) se a FC estiver abaixo de 100 bpm ou se houver apneia/respiração irregular. Em RNs com idade gestacional maior ou igual a 34 semanas, a recomendação é iniciar a ventilação com ar ambiente (fração inspirada de oxigênio a 21%). Se o RN tivesse menos de 34 semanas, iniciaríamos com 30% de oxigênio.\n\nAlternativa c) Incorreta. A massagem cardíaca só é indicada se a FC permanecer abaixo de 60 bpm após 30 segundos de VPP realizada com técnica adequada (incluindo checagem de máscara, vedação e expansão torácica). No caso em questão, a FC é de 90 bpm e a VPP ainda nem foi iniciada.\n\nAlternativa d) Incorreta. A adrenalina é uma medida de reanimação avançada. Ela só é utilizada quando a FC permanece abaixo de 60 bpm após a realização de VPP adequada, somada à massagem cardíaca técnica, com oxigênio a 100%.\n\nAlternativa e) Incorreta. O estímulo tátil (como a secagem vigorosa) já foi realizado nos passos iniciais. Insistir em estímulos táteis quando o RN apresenta bradicardia e respiração irregular é um erro grave, pois retarda o início da ventilação efetiva, aumentando o risco de asfixia e sequelas neurológicas.\n\nGabarito: Letra (b).",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  },
+  {
+    "id": "AJUDA_6bd5cee0-349c-4bd0-a0e4-1041bb9432bf",
+    "originalId": "6bd5cee0-349c-4bd0-a0e4-1041bb9432bf",
+    "statement": "O diagnóstico de coagulação intravascular disseminada (CIVD) é baseado nos achados clínicos em combinação com parâmetros laboratoriais e somente pode ser feito se houver uma condição primária sabidamente associada a CIVD. Dentre os achados laboratoriais, qual NÃO está associado ao CIVD?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diminuição de fibrinogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trombocitopenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tempo de protrombina prolongado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diminuição de d-dímero.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "PTT prolongado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Coagulação Intravascular Disseminada (CIVD) é uma síndrome caracterizada pela ativação sistêmica e excessiva da cascata de coagulação, geralmente secundária a uma condição grave (como sepse, grandes traumas ou neoplasias). Esse processo leva à formação de microtrombos em diversos órgãos e, simultaneamente, ao consumo desenfreado de plaquetas e fatores de coagulação, além de uma ativação intensa do sistema fibrinolítico para tentar desfazer esses coágulos.\n\nAbaixo, a análise de cada alternativa:\n\na) Diminuição de fibrinogênio: O fibrinogênio é o precursor da fibrina, a proteína que forma o arcabouço do coágulo. Na CIVD, há um consumo maciço de fibrinogênio para a formação dos microtrombos, o que resulta na redução de seus níveis plasmáticos. Portanto, este é um achado esperado.\n\nb) Trombocitopenia: As plaquetas são recrutadas e consumidas de forma generalizada durante a formação dos microtrombos na microcirculação. Por isso, a queda na contagem de plaquetas (trombocitopenia) é um dos sinais laboratoriais mais precoces e comuns da CIVD.\n\nc) Tempo de protrombina (TP) prolongado: O TP avalia a via extrínseca e a via comum da coagulação. Como os fatores de coagulação (como fator VII, X, V e II) são consumidos no processo patológico da CIVD, o sangue demora mais para coagular nos testes in vitro, resultando em um TP prolongado.\n\nd) Diminuição de d-dímero: Esta é a alternativa incorreta e o gabarito da questão. O D-dímero é um produto da degradação da fibrina estabilizada. Na CIVD, ocorre intensa formação de fibrina seguida de uma resposta fibrinolítica (quebra desses coágulos) também intensa. Logo, os níveis de D-dímero e outros produtos de degradação da fibrina estarão marcadamente AUMENTADOS, e não diminuídos.\n\ne) PTT prolongado: O PTT (ou TTPA) avalia a via intrínseca e a via comum. Assim como ocorre com o TP, o consumo de fatores como VIII, IX, XI e XII leva ao prolongamento deste tempo laboratorial, sendo um achado frequente na CIVD.\n\nResumo: Na CIVD, os exames tipicamente mostram plaquetas baixas, fibrinogênio baixo, tempos de coagulação (TP e PTT) prolongados e produtos de degradação da fibrina (como o D-dímero) elevados.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:57.818Z"
+  }
+]

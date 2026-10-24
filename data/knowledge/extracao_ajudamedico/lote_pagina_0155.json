@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_2b2b747e-91c5-4157-ba72-337a7d4aedc0",
+    "originalId": "2b2b747e-91c5-4157-ba72-337a7d4aedc0",
+    "statement": "Paciente masculino, de 25 anos, veio à UBS com queixa de lesão ulcerada no pênis, surgida há cerca de 1 semana, levemente dolorosa e com discreta secreção. Referiu ser este o primeiro episódio. Era sexualmente ativo, não tinha parceira(o) fixo(a) nem fazia uso de preservativos em todas as relações. Negou outros sintomas. A UBS não dispunha de microscopia. O médico recomendou ao paciente comunicar-se com seus contatos e solicitou-lhe sorologias. Qual(is) o(s) diagnóstico(s) mais provável(eis) e a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Donovanose – Prescrever azitromicina por 3 semanas e notificar o caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Herpes genital ou cancroide – Prescrever aciclovir por 7 dias e azitromicina em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sífilis tardia – Prescrever penicilina benzatina por 3 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cancroide ou sífilis recente – Prescrever azitromicina e penicilina benzatina em dose única.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta uma úlcera genital de aparecimento recente (uma semana), com características inflamatórias leves (levemente dolorosa e com secreção). De acordo com os protocolos do Ministério da Saúde para o manejo sindrômico das Infecções Sexualmente Transmissíveis (IST), quando um paciente apresenta úlcera genital e o serviço não dispõe de suporte laboratorial imediato (como microscopia de campo escuro ou biologia molecular), a conduta deve ser baseada na probabilidade clínica e epidemiológica para cobrir as causas mais comuns.\n\nPOR QUE A ALTERNATIVA D ESTÁ CORRETA?\n\nNo fluxograma de manejo sindrômico para úlceras genitais com tempo de evolução menor que quatro semanas e sem a presença de vesículas (características de herpes), o tratamento deve cobrir obrigatoriamente a sífilis recente e o cancroide (cancro mole).\n\n1. Cancroide: Causado pela bactéria Haemophilus ducreyi, costuma apresentar lesões dolorosas e com secreção purulenta. O tratamento de escolha é a azitromicina 1 g, via oral, em dose única.\n2. Sífilis Recente: A lesão primária (cancro duro) é classicamente indolor, mas pode haver variações. O tratamento padrão é a penicilina benzatina 2,4 milhões de UI, via intramuscular, em dose única.\n\nA alternativa D contempla exatamente essa cobertura dupla, essencial para interromper a cadeia de transmissão e tratar o paciente de forma imediata na Unidade Básica de Saúde.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Donovanose: É uma doença granulomatosa crônica, de evolução lenta e progressiva. As lesões são geralmente indolores, com fundo vermelho-vivo (carne crua) e bordas hipertróficas. O tratamento com azitromicina para donovanose deve ser mantido por pelo menos três semanas ou até a cicatrização total da lesão, o que não se aplica ao quadro agudo de uma semana descrito.\n\nb) Herpes genital ou cancroide: O herpes genital tipicamente se manifesta com pequenas vesículas agrupadas que se rompem e formam úlceras muito dolorosas, frequentemente precedidas por ardor ou formigamento. Embora o herpes seja comum, o protocolo sindrômico para uma úlcera única sem vesículas prioriza o tratamento da sífilis e do cancroide. Tratar herpes e cancroide, mas omitir o tratamento da sífilis, é um erro grave de conduta em saúde pública.\n\nc) Sífilis tardia: A sífilis tardia (terciária) ocorre anos após a infecção inicial, manifestando-se com gomas sifilíticas, problemas cardiovasculares ou neurológicos, e não como uma úlcera peniana aguda de uma semana. Além disso, o esquema terapêutico para sífilis tardia exige três doses de penicilina benzatina (uma por semana), e não o tratamento de fase inicial.\n\nCONCLUSÃO\n\nDiante de uma úlcera genital em jovem sexualmente ativo, com evolução menor que quatro semanas e sem vesículas, a conduta correta na Atenção Primária é o tratamento sindrômico para sífilis e cancroide, conforme a alternativa D.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  },
+  {
+    "id": "AJUDA_2b306bda-60fe-4ed1-85b8-bf6a93a22990",
+    "originalId": "2b306bda-60fe-4ed1-85b8-bf6a93a22990",
+    "statement": "O efeito anti-hipertensivo da Candesartana é mediado por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inibição da enzima conversora de angiotensina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bloqueio competitivo dos receptores AT1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Estimulação dos receptores de bradicinina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução da expressão do gene da proteína Gq/11.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aumento da atividade da enzima vasopeptidase.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A candesartana pertence à classe dos Bloqueadores dos Receptores de Angiotensina II (conhecidos como BRAs). O sistema renina-angiotensina-aldosterona é uma via hormonal central na regulação da pressão arterial. O produto final dessa cascata, a angiotensina II, exerce seus principais efeitos vasoconstritores e de retenção de sódio ao se ligar ao receptor do tipo 1 (AT1).\n\nAlternativa (a) Incorreta: A inibição da enzima conversora de angiotensina (ECA) é o mecanismo de ação de fármacos como enalapril, captopril e ramipril (classe dos iECA). A candesartana atua em uma etapa posterior da cascata, diretamente no receptor.\n\nAlternativa (b) Correta: A candesartana é um antagonista altamente seletivo dos receptores AT1 da angiotensina II. Ao bloquear competitivamente esses receptores na musculatura lisa vascular e na glândula adrenal, ela impede a vasoconstrição e a liberação de aldosterona provocadas pela angiotensina II, resultando na redução da resistência vascular periférica e da volemia.\n\nAlternativa (c) Incorreta: O aumento dos níveis de bradicinina é um efeito secundário dos inibidores da ECA (iECA), pois a enzima conversora de angiotensina também é responsável por degradar a bradicinina. Os bloqueadores de receptores AT1, como a candesartana, não interferem significativamente no metabolismo da bradicinina, o que explica por que essa classe de drogas raramente causa o efeito colateral de tosse seca, comum nos iECA.\n\nAlternativa (d) Incorreta: Embora o receptor AT1 seja acoplado à proteína Gq (que ativa a via da fosfolipase C), o efeito da candesartana decorre do bloqueio do sítio de ligação do receptor na membrana celular, e não de uma alteração na expressão gênica das proteínas de sinalização intracelular.\n\nAlternativa (e) Incorreta: As vasopeptidases (como a neprilisina) são enzimas que degradam peptídeos natriuréticos benéficos. Aumentar sua atividade seria prejudicial no tratamento da hipertensão. O que se utiliza terapeuticamente em cardiologia é a inibição dessas enzimas (como o sacubitril), mas esse mecanismo não pertence à candesartana.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  },
+  {
+    "id": "AJUDA_2b3600b8-f2f9-41e4-b707-23149d321b8b",
+    "originalId": "2b3600b8-f2f9-41e4-b707-23149d321b8b",
+    "statement": "O termo “estoma” significa o estabelecimento de uma solução de continuidade entre uma cavidade ou órgão e a superfície corporal. No trato respiratório,",
+    "options": [
+      {
+        "id": "A",
+        "text": "a pleurostomia, do tipo flap de Eloesser, comunica a cavidade pleural com o meio externo através de um dreno torácico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a cavernostomia é tratamento cirúrgico de eleição para micoses pulmonares cavitadas após a falha terapêutica dos antifúngicos azólicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a traqueostomia percutânea é realizada através da técnica de Seldinger, utilizando fio-guia, dilatadores e cânula traqueal adequada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a cricotireoidostomia é utilizada em situações de urgência, tendo em razão da facilidade técnica para afastar o istmo tireoidiano e acessar os dois primeiros anéis traqueais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A (Incorreta): A pleurostomia do tipo flap de Eloesser é uma técnica de pleurostomia aberta, utilizada no tratamento de empiemas crônicos. O objetivo do procedimento é criar uma comunicação permanente ou semipermanente (uma janela) entre a cavidade pleural e o meio externo para permitir a drenagem e a limpeza da cavidade sem a necessidade de um dreno torácico. A alternativa está incorreta porque a pleurostomia aberta visa justamente dispensar o uso do dreno de demora.\n\nAlternativa B (Incorreta): O tratamento cirúrgico de eleição para micoses pulmonares cavitadas, como o aspergiloma (bola fúngica), é a ressecção pulmonar (lobectomia ou segmentectomia), que visa remover a cavidade e a doença. A cavernostomia (abertura direta da cavidade através da parede torácica) é um procedimento de exceção, indicado apenas como medida de salvamento ou paliativa em pacientes que não possuem reserva funcional pulmonar para tolerar uma ressecção.\n\nAlternativa C (Correta): A traqueostomia percutânea é um procedimento realizado frequentemente em UTIs. A técnica mais utilizada é a de Ciaglia, que se baseia no método de Seldinger. O processo envolve a punção da traqueia, a introdução de um fio-guia metálico, o uso de dilatadores progressivos sobre esse fio-guia para criar o trajeto e, finalmente, a inserção da cânula traqueal. É um método seguro e rápido quando realizado por profissionais treinados.\n\nAlternativa D (Incorreta): A cricotireoidostomia é realizada através da membrana cricotireoidea, que fica situada entre a cartilagem tireoide e a cartilagem cricoide. A descrição de afastar o istmo tireoidiano e acessar os dois primeiros anéis traqueais é característica da traqueostomia convencional (cirúrgica). A cricotireoidostomia é preferida na urgência justamente por ser um acesso mais alto e superficial, evitando a manipulação do istmo da tireoide e reduzindo o risco de sangramentos graves no cenário de emergência.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  },
+  {
+    "id": "AJUDA_2b3aa126-61bd-47aa-a3ed-5d268f11cd03",
+    "originalId": "2b3aa126-61bd-47aa-a3ed-5d268f11cd03",
+    "statement": "A estrutura cerebral responsável por respostas às cargas emocionais aos movimentos é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Córtex pré-frontal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Área motora cingulada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Área motora suplementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Área pré-motora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a neurofisiologia da integração entre o sistema límbico e o sistema motor. Para responder corretamente, é necessário identificar a região cortical que atua como interface entre o processamento das emoções e a execução de movimentos.\n\nALTERNATIVA A - INCORRETA: O córtex pré-frontal é o centro das funções executivas, responsável pelo planejamento de comportamentos complexos, tomada de decisões e expressão da personalidade. Embora desempenhe um papel crucial na regulação das emoções, ele atua no nível cognitivo e de controle, enviando orientações para as áreas motoras, mas não é a estrutura motora primária que processa diretamente a carga emocional para gerar uma resposta motora.\n\nALTERNATIVA B - CORRETA: A área motora cingulada localiza-se nas paredes do sulco do cíngulo, uma região que integra o sistema límbico. Esta área está anatomicamente e funcionalmente posicionada para converter impulsos emocionais, motivacionais e de drive interno em atividade motora. Ela possui conexões diretas com o córtex motor primário e com a medula espinal, sendo a estrutura-chave para movimentos que expressam estados internos ou que são disparados por estímulos de forte carga emocional.\n\nALTERNATIVA C - INCORRETA: A área motora suplementar (AMS) está situada na face medial do hemisfério, anteriormente ao córtex motor primário. Sua função principal é o planejamento, a programação e a coordenação de sequências complexas de movimentos, especialmente aqueles iniciados internamente (voluntários). Apesar de sua localização próxima, seu papel é mais voltado para a organização temporal e motora do que para a mediação de cargas emocionais.\n\nALTERNATIVA D - INCORRETA: A área pré-motora localiza-se na face lateral do lobo frontal. Ela é responsável, majoritariamente, pelo planejamento de movimentos em resposta a estímulos sensoriais externos (como a visão ou audição) e pelo controle da musculatura proximal e postura durante a execução do movimento. Não possui a mesma conectividade límbica direta que caracteriza a área motora cingulada.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Anatomia, Fisiologia e Semiologia Neurológica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  },
+  {
+    "id": "AJUDA_2b3e5ff8-f52f-46bc-a3ab-9fb0de612afc",
+    "originalId": "2b3e5ff8-f52f-46bc-a3ab-9fb0de612afc",
+    "statement": "Para fins previdenciários e epidemiológicos, a definição de Acidente de Trabalho abrange não apenas o evento agudo (típico), mas também as doenças profissionais e do trabalho. Assinale a alternativa correta que diferencia a Doença Profissional (Tecnopatia) da Doença do Trabalho (Mesopatia) segundo a Lei nº 8.213/1991.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Doença Profissional é aquela produzida ou desencadeada pelo exercício do trabalho peculiar a determinada atividade e constante da respectiva relação elaborada pelo Ministério, tendo nexo causal presumido (ex: Silicose em jateador de areia); já a Doença do Trabalho é adquirida ou desencadeada em função de condições especiais em que o trabalho é realizado e com ele se relacione diretamente, exigindo comprovação do nexo (ex: surdez por ruído em escritório administrativo mal isolado).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A Doença Profissional é aquela que causa incapacidade permanente e aposentadoria por invalidez, enquanto a Doença do Trabalho causa apenas incapacidade temporária e afastamento inferior a 15 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não há distinção legal entre os termos, sendo ambos sinônimos de \"acidente atípico\" e exigindo, em todos os casos, a comprovação de dolo ou culpa do empregador para a concessão do benefício previdenciário acidentário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A Doença Profissional refere-se exclusivamente aos acidentes de trajeto ocorridos no percurso residência-trabalho, enquanto a Doença do Trabalho refere-se aos acidentes típicos ocorridos dentro da empresa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO:\n\nO tema central desta questão é a diferenciação entre as modalidades de acidente de trabalho por equiparação, conforme definido no artigo 20 da Lei nº 8.213/1991. Para o médico, essa distinção é fundamental tanto para o preenchimento da Comunicação de Acidente de Trabalho (CAT) quanto para o estabelecimento do nexo causal e auxílio em perícias previdenciárias.\n\nAlternativa A (Correta):\nEsta alternativa traz as definições exatas contidas na legislação previdenciária.\n1. Doença Profissional (Tecnopatia): é aquela inerente à própria profissão. O risco é intrínseco à atividade, independentemente de onde ela seja exercida. Por estar prevista em lista oficial (Anexo II do Decreto nº 3.048/1999), possui nexo causal presumido. O exemplo da silicose em jateadores de areia é clássico, pois o risco da sílica é próprio dessa atividade.\n2. Doença do Trabalho (Mesopatia): é aquela que decorre das condições específicas do ambiente em que o trabalho é realizado. Não é característica de uma profissão isolada, mas sim de como o ambiente foi organizado. Exige comprovação do nexo causal (não é presumida). O exemplo da surdez por ruído excessivo em um escritório exemplifica bem, pois o ruído não é inerente ao cargo administrativo, mas sim uma falha nas condições ambientais daquele local específico.\n\nAlternativa B (Incorreta):\nA diferenciação entre doença profissional e doença do trabalho não se baseia na gravidade da lesão ou no tempo de afastamento. Ambas podem gerar desde incapacidade temporária (auxílio-doença acidentário) até incapacidade permanente (aposentadoria por incapacidade permanente) ou óbito. O que as diferencia é a origem e a relação com a atividade ou com o meio ambiente laboral.\n\nAlternativa C (Incorreta):\nExiste, sim, uma distinção legal clara estabelecida no artigo 20 da Lei nº 8.213/1991. Além disso, para fins de concessão de benefício previdenciário acidentário (Espécie 91), o seguro social é de responsabilidade objetiva do INSS, não exigindo a comprovação de dolo ou culpa do empregador para que o trabalhador tenha direito ao benefício. A comprovação de culpa ou dolo só é relevante em ações de responsabilidade civil (indenizações) na Justiça do Trabalho.\n\nAlternativa D (Incorreta):\nA alternativa confunde conceitos. O acidente de trajeto (ocorrido no percurso residência-trabalho ou vice-versa) e o acidente típico (evento súbito e agudo no exercício do trabalho) são categorias distintas das doenças ocupacionais. As doenças (profissional e do trabalho) são consideradas \"acidentes atípicos\" por se instalarem de forma insidiosa e crônica, mas não se confundem com o trajeto ou com o acidente típico.\n\nGabarito: Alternativa A.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  },
+  {
+    "id": "AJUDA_2b456768-660a-4fa4-9a62-99deaf3f66c3",
+    "originalId": "2b456768-660a-4fa4-9a62-99deaf3f66c3",
+    "statement": "Lactente com 5 meses de idade portador de tetralogia de Fallot, há três dias apresentando quadro diarreico agudo, hoje apresentou quadro de cianose importante ao choro; dando entrada no pronto atendimento com saturação de 65%.\n\nA principal hipótese diagnóstica e conduta são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "crise hipoxêmica; administrar morfina, ofertar oxigênio e corrigir possíveis distúrbios hidroeletrolíticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "crise hipoxêmica; corrigir possíveis distúrbios hidroeletrolíticos, administrar adrenalina e ofertar oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "crise hipoxêmica; iniciar adrenalina e milrinone e ventilação mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "insuficiência cardíaca congestiva; iniciar dobutamina e ventilação mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "insuficiência cardíaca congestiva; furosemida, iniciar adrenalina e ofertar oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um caso clássico de crise de hipoxemia (ou crise hipercianótica) em um lactente com Tetralogia de Fallot. A Tetralogia de Fallot é a cardiopatia congênita cianótica mais comum após o primeiro ano de vida e é composta por: comunicação interventricular (CIV), estenose pulmonar (geralmente infundibular), dextroposição da aorta (cavalgamento) e hipertrofia ventricular direita.\n\nA crise hipoxêmica ocorre devido a um espasmo do infundíbulo pulmonar ou a uma queda da resistência vascular sistêmica, o que aumenta o desvio de sangue da direita para a esquerda através da CIV, levando à queda súbita da saturação de oxigênio. No caso clínico, o quadro de diarreia (que causa desidratação e hipovolemia) e o choro (que aumenta a liberação de catecolaminas) foram os gatilhos para a crise.\n\nAnálise das alternativas:\n\na) Correta. O diagnóstico é crise hipoxêmica. O manejo inicial inclui acalmar a criança, colocá-la em posição genupeitoral (para aumentar a resistência vascular sistêmica), ofertar oxigênio (potente vasodilatador pulmonar) e administrar morfina. A morfina é fundamental, pois reduz a hiperpneia, acalma o paciente e pode ajudar a relaxar o infundíbulo pulmonar. Como o paciente apresenta diarreia há três dias, a reposição volêmica e a correção de distúrbios hidroeletrolíticos são essenciais para restaurar a pré-carga e melhorar o fluxo pulmonar.\n\nb) Incorreta. Embora o diagnóstico esteja correto, a administração de adrenalina é contraindicada como medida inicial na crise de Fallot. A adrenalina, por seu efeito beta-adrenérgico, aumenta a frequência cardíaca e a contratilidade, o que pode agravar o espasmo infundibular e piorar a obstrução à saída do ventrículo direito.\n\nc) Incorreta. Adrenalina e milrinona não são indicadas. A milrinona é um inotrópico com efeito vasodilatador sistêmico; a queda da resistência vascular sistêmica aumentaria o shunt direita-esquerda, piorando drasticamente a cianose. A ventilação mecânica é reservada apenas para casos refratários às medidas clínicas iniciais.\n\nd) Incorreta. O quadro clínico não é de insuficiência cardíaca congestiva (ICC). Na Tetralogia de Fallot com estenose pulmonar importante, o fluxo pulmonar é reduzido, o que geralmente protege o pulmão de congestão. O problema aqui é a hipóxia aguda por falta de circulação pulmonar, e não falência de bomba com acúmulo de líquidos. A dobutamina também poderia piorar o espasmo infundibular.\n\ne) Incorreta. O diagnóstico de ICC está errado para este contexto. Além disso, o uso de furosemida em um paciente desidratado por diarreia agravaria a hipovolemia, reduziria a pressão arterial sistêmica e pioraria severamente a crise hipoxêmica.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  },
+  {
+    "id": "AJUDA_2b4802c8-4c78-4ca0-9b27-670dd3a8e308",
+    "originalId": "2b4802c8-4c78-4ca0-9b27-670dd3a8e308",
+    "statement": "Na hepatite C crônica, qual é o papel do tratamento antiviral direto em comparação aos tratamentos convencionais, e qual é seu principal benefício?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a carga viral do HCV para desenvolver imunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Curar a infecção em altas taxas e reduzir a progressão para cirrose e carcinoma hepatocelular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Reduzir temporariamente os sintomas sem alterar a replicação viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Substituir o interferon peguilado sem necessidade de acompanhamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alternativa correta é a letra (b).\n\nA mudança no paradigma do tratamento da hepatite C ocorreu com a introdução dos Antivirais de Ação Direta (DAAs). Diferente do esquema antigo, baseado no Interferon Peguilado (que agia de forma indireta e pouco específica), os DAAs agem bloqueando proteínas específicas do ciclo de replicação viral (como as proteínas NS3, NS5A e NS5B).\n\nAnálise das alternativas:\n\na) Incorreta. O objetivo do tratamento é a erradicação do vírus (Resposta Virológica Sustentada - RVS) e não o aumento da carga viral. Não se busca desenvolver imunidade através da exposição ao vírus, mas sim eliminá-lo completamente do organismo.\n\nb) Correta. Este é o principal benefício dos DAAs. Essas drogas permitem taxas de cura superiores a 95%, com um perfil de segurança muito melhor que os tratamentos antigos. Ao atingir a cura (RVS), interrompe-se a agressão hepática, o que reduz drasticamente a progressão da fibrose para cirrose e diminui a incidência de carcinoma hepatocelular (CHC).\n\nc) Incorreta. Os DAAs não são tratamentos paliativos. Eles interrompem a replicação viral de forma definitiva, levando à eliminação do vírus em vez de apenas reduzir sintomas temporariamente.\n\nd) Incorreta. Embora os DAAs tenham substituído o interferon peguilado com vantagem, a afirmação de que não há necessidade de acompanhamento está errada. Pacientes com fibrose avançada ou cirrose (F3 e F4) continuam necessitando de rastreamento para carcinoma hepatocelular e outras complicações da cirrose, mesmo após a cura virológica, devido ao dano estrutural prévio no fígado.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  },
+  {
+    "id": "AJUDA_2b5bfecb-3223-42e9-aada-0d5d3c29f337",
+    "originalId": "2b5bfecb-3223-42e9-aada-0d5d3c29f337",
+    "statement": "Em 1990, foi oficializada a criação do Sistema Único de Saúde (SUS) no Brasil. O sistema é responsável pelo cuidado desde o nível mais simples, como a realização de exames de sangue, até os complexos, como transplantes de órgãos. Além do atendimento diretamente relacionado à saúde, o SUS vincula-se com políticas públicas de saneamento básico, vigilância sanitária e até de formação universitária de profissionais da saúde. A Agência Nacional de Saúde Suplementar (ANS) também dialoga com o SUS, já que 26% da população brasileira é atendida na saúde privada. Sobre o financiamento do SUS:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É financiado exclusivamente pelo governo federal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estados não têm responsabilidade de cofinanciamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Municípios devem aplicar no mínimo 30% de sua receita própria em saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O financiamento é tripartite: União, estados e municípios.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A EC 95 aumentou o gasto público em saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O financiamento do Sistema Único de Saúde (SUS) é um dos temas mais recorrentes em provas de saúde pública e medicina preventiva, sendo regido por bases constitucionais e leis complementares que definem a responsabilidade de cada ente federativo. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa a) Incorreta. O financiamento do SUS não é uma atribuição exclusiva do governo federal. De acordo com o Artigo 198 da Constituição Federal de 1988, o sistema deve ser financiado com recursos do orçamento da seguridade social, da União, dos Estados, do Distrito Federal e dos Municípios, além de outras fontes suplementares. Trata-se de um sistema descentralizado com responsabilidades compartilhadas.\n\nAlternativa b) Incorreta. Os Estados possuem responsabilidade direta e obrigatória no cofinanciamento do sistema. A Lei Complementar nº 141, de 2012, regulamentou as normas de fiscalização e os percentuais mínimos de investimento. No caso dos Estados, o repasse obrigatório é de, no mínimo, 12 por cento da receita proveniente de impostos estaduais e transferências constitucionais.\n\nAlternativa c) Incorreta. O percentual de 30 por cento mencionado não condiz com a legislação vigente. Conforme estabelecido pela Lei Complementar nº 141, de 2012, os Municípios e o Distrito Federal devem aplicar anualmente, no mínimo, 15 por cento de sua receita própria em ações e serviços públicos de saúde. O valor de 30 por cento é historicamente associado a reivindicações de movimentos sociais, mas não é a norma legal.\n\nAlternativa d) Correta. Esta alternativa define com precisão o modelo de gestão financeira do SUS. O financiamento é tripartite, o que significa que as três esferas de governo (União, Estados e Municípios) são legalmente obrigadas a destinar recursos financeiros para sustentar o sistema. Cada ente tem suas alíquotas e responsabilidades específicas para garantir a integralidade e a universalidade do atendimento.\n\nAlternativa e) Incorreta. A Emenda Constitucional nº 95, aprovada em 2016 e conhecida como Teto de Gastos, limitou o crescimento das despesas primárias da União à variação da inflação (IPCA) por um período de 20 anos. Na prática, para a área da saúde, isso não representou um aumento, mas sim um processo de desfinanciamento ou subfinanciamento relativo, pois o orçamento deixou de acompanhar o crescimento populacional, o envelhecimento da sociedade e a incorporação de novas tecnologias médicas.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  },
+  {
+    "id": "AJUDA_2b5d9b5b-ab4e-429e-a923-0e74a0c50b84",
+    "originalId": "2b5d9b5b-ab4e-429e-a923-0e74a0c50b84",
+    "statement": "Mulher de 34 anos, vítima de tentativa de estrangulamento, deu entrada na emergência apresentando intensa dificuldade respiratória, rouquidão, estridor laríngeo, enfisema subcutâneo cervical e fratura palpável na região anterior do pescoço. Saturação O2: 88%; FR: 22 mrpm; PA: 125/75 mmHg; FC: 108 bpm. Demais segmentos do corpo sem lesões. A suspeita diagnóstica e a conduta a ser tomada na sala de emergência, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "trauma da laringe e via aérea definitiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pneumotórax simples e drenagem torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pneumotórax hipertensivo e toracocentese descompressiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "lesão esofágica e endoscopia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "trauma brônquico e broncoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma paciente com trauma cervical direto (estrangulamento) apresentando a tríade clássica de trauma de laringe: rouquidão, estridor laríngeo e enfisema subcutâneo. A presença de uma fratura palpável na região anterior do pescoço (provavelmente da cartilagem tireoide ou cricoide) confirma o dano estrutural à via aérea superior. A saturação de 88% e o estridor indicam uma obstrução iminente ou em curso, o que exige intervenção imediata para proteção da via aérea.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA suspeita diagnóstica de trauma de laringe é fundamentada nos sinais de obstrução de via aérea superior (estridor), lesão de cordas vocais ou laringe (rouquidão) e escape de ar para os tecidos moles (enfisema subcutâneo). Diante de insuficiência respiratória (SatO2 88%) e instabilidade da via aérea por trauma anatômico, a conduta imediata e prioritária no protocolo ATLS é o estabelecimento de uma via aérea definitiva. Em casos de fratura de laringe, a intubação orotraqueal pode ser difícil ou contraindicada se houver distorção anatômica grave, sendo muitas vezes necessária a via aérea cirúrgica (cricotireoidostomia ou traqueostomia), mas o termo genérico \"via aérea definitiva\" engloba a solução correta para o cenário de emergência.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nb) O pneumotórax simples poderia causar dispneia e enfisema subcutâneo, mas não explicaria a rouquidão, o estridor laríngeo (que é um ruído de via aérea superior) nem a fratura palpável no pescoço. Além disso, o foco do trauma foi o estrangulamento (cervical).\n\nc) O pneumotórax hipertensivo é uma emergência extrema caracterizada por instabilidade hemodinâmica (choque obstrutivo), o que não é o caso da paciente (PA 125/75 mmHg). Além disso, os sinais laríngeos descritos não fazem parte do quadro clínico de pneumotórax.\n\nd) Embora a lesão esofágica possa causar enfisema subcutâneo cervical, ela não justifica o estridor respiratório, a fratura de cartilagem anterior ou a queda aguda da saturação por obstrução mecânica. A endoscopia digestiva alta não é a conduta prioritária para uma paciente em insuficiência respiratória aguda.\n\ne) O trauma brônquico geralmente está associado a traumas torácicos de grande energia, cursando com grande escape de ar pelo dreno de tórax e atelectasias. Não explica os achados físicos localizados na laringe, como a fratura palpável no pescoço e a rouquidão imediata. A broncoscopia é um exame diagnóstico, e não a conduta de estabilização imediata na sala de emergência para quem tem 88% de saturação e obstrução alta.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  },
+  {
+    "id": "AJUDA_2b629a10-854c-43fe-afc1-1835da783e29",
+    "originalId": "2b629a10-854c-43fe-afc1-1835da783e29",
+    "statement": "Na atenção primária em saúde, o método diagnóstico de escolha para confirmar a tuberculose pulmonar em pacientes com suspeita clínica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Baciloscopia do escarro, evidenciando a presença de bacilos ácido-alcoólico resistentes (BAAR).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Radiografia de tórax, mostrando alterações cavitárias típicas em lobos superiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste tuberculínico (PPD), indicando infecção latente ou ativa pelo Mycobacterium tuberculosis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tomografia computadorizada de tórax, identificando lesões pulmonares de alta resolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cultura do escarro para Mycobacterium tuberculosis, com crescimento em meio específico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A confirmação da tuberculose pulmonar baseia-se na demonstração direta do agente causal, o Mycobacterium tuberculosis. Na Atenção Primária em Saúde, busca-se um método que seja rápido, acessível e capaz de identificar os pacientes bacilíferos, que são os principais responsáveis pela transmissão da doença na comunidade.\n\nAlternativa A: CORRETA. A baciloscopia direta do escarro, realizada pela técnica de Ziehl-Neelsen para identificação de Bacilos Ácido-Álcool Resistentes (BAAR), continua sendo um dos pilares do diagnóstico na rede básica. É um método simples, de baixo custo e alta especificidade. Atualmente, o Teste Molecular Rápido (TRM-TB) também é considerado prioridade para o diagnóstico, mas a baciloscopia permanece como o método clássico de escolha para confirmação e acompanhamento mensal do tratamento.\n\nAlternativa B: INCORRETA. A radiografia de tórax é um exame de triagem e auxílio diagnóstico. Embora as cavitações em lobos superiores sejam sugestivas de tuberculose, elas não são patognomônicas (exclusivas da doença), podendo ocorrer em micoses pulmonares ou outras infecções. O raio X isolado não confirma a presença do bacilo, sendo necessária a comprovação laboratorial.\n\nAlternativa C: INCORRETA. O teste tuberculínico (PPD) avalia a resposta imune celular do paciente ao antígeno do bacilo. Um PPD positivo (reator) indica apenas que o paciente já teve contato com o Mycobacterium tuberculosis em algum momento da vida (infecção latente), mas não confirma se a doença está ativa no momento. Ele é utilizado principalmente para rastreio de contatos e indicação de tratamento de infecção latente, não para diagnóstico de tuberculose-doença.\n\nAlternativa D: INCORRETA. A tomografia computadorizada possui altíssima sensibilidade para detectar lesões pulmonares precoces, mas, assim como a radiografia, é um método de imagem que não fornece diagnóstico etiológico (confirmação do bacilo). Além disso, não é um exame de rotina na Atenção Primária devido ao seu alto custo e complexidade.\n\nAlternativa E: INCORRETA. A cultura de escarro é o padrão-ouro para o diagnóstico de tuberculose por apresentar maior sensibilidade que a baciloscopia e permitir a identificação da espécie e do perfil de sensibilidade a antibióticos. Contudo, o resultado da cultura demora de 15 a 60 dias para ficar pronto. Devido a essa demora, ela não é o método de escolha inicial para confirmação rápida e início do tratamento na Atenção Primária, sendo reservada para casos de suspeita clínica com baciloscopia negativa ou para pacientes com risco de resistência medicamentosa.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:14.735Z"
+  }
+]

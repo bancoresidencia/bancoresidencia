@@ -1,0 +1,485 @@
+[
+  {
+    "id": "AJUDA_20eab022-4823-4d56-b004-f0798dec540e",
+    "originalId": "20eab022-4823-4d56-b004-f0798dec540e",
+    "statement": "Em relação à incontinência urinária, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "testes urodinâmicos e cistoscopia devem ser priorizados em detrimento do tratamento conservador visando à cirurgia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o treinamento da musculatura do assoalho pélvico é efetivo para a incontinência de esforço ou mista",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a incontinência de urgência ocorre devido ao enfraquecimento da musculatura do assoalho pélvico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deve ser rastreada bacteriúria assintomática, pois é uma causa comum de incontinência urinária",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Abaixo está a análise detalhada de cada alternativa da questão sobre incontinência urinária:\n\nAlternativa (a) Incorreta: O manejo inicial da incontinência urinária deve ser prioritariamente clínico e conservador, incluindo mudanças no estilo de vida e fisioterapia. Testes urodinâmicos e cistoscopia são exames complementares e invasivos que não devem ser realizados de rotina na avaliação inicial. Eles são indicados geralmente em casos complexos, quando há falha no tratamento inicial ou como parte do planejamento pré-operatório para confirmar o diagnóstico e excluir outras patologias.\n\nAlternativa (b) Correta: O treinamento da musculatura do assoalho pélvico (TMAP), conhecido popularmente como exercícios de Kegel, é considerado o tratamento de primeira linha (padrão-ouro) para a incontinência urinária de esforço. Ele também demonstra grande eficácia na incontinência urinária mista, pois melhora o suporte uretral e ajuda no controle dos mecanismos de urgência por meio da inibição reflexa do detrusor.\n\nAlternativa (c) Incorreta: A incontinência urinária de urgência (frequentemente associada à bexiga hiperativa) ocorre devido a contrações involuntárias do músculo detrusor durante a fase de enchimento vesical. O enfraquecimento da musculatura do assoalho pélvico e a falha nos mecanismos de suporte da uretra são as causas fisiopatológicas da incontinência urinária de esforço, e não da urgência.\n\nAlternativa (d) Incorreta: A bacteriúria assintomática não é uma causa de incontinência urinária e seu tratamento não resolve as queixas de perda de urina. Embora uma infecção do trato urinário (ITU) sintomática possa causar urgência miccional e incontinência transitória, o rastreamento e o tratamento de bactérias na urina em pacientes sem sintomas de infecção não são recomendados na propedêutica da incontinência, exceto em gestantes ou pacientes que serão submetidos a procedimentos urológicos invasivos.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  },
+  {
+    "id": "AJUDA_20ed1a35-e489-4d09-b057-8bd2619e8ba7",
+    "originalId": "20ed1a35-e489-4d09-b057-8bd2619e8ba7",
+    "statement": "Um escolar de 8 anos de idade foi levado à emergência em razão de um quadro de indisposição, inapetência, cefaleia e edema periorbital. A médica, em sua anamnese, perguntou acerca de quedas, brigas na escola e sintomas associados, como queda de cabelo, febre, vômitos e síncope. A mãe negou quaisquer dos sintomas citados. Na história patológica pregressa, relatou infecção de garganta com frequência. Ao exame, a criança encontrava-se em bom estado geral, eupneica (FR = 20 irpm), eucárdica (FC = 100 bpm), com SatO2 = 98%, edema periorbital bilateralmente, de moderada intensidade, sem hiperemia, indolor, sem sinais de trauma. Verificaram-se pressão arterial acima do percentil 95 para a idade e exame simples de urina com hematúria presente.\n\nCom base no caso clínico apresentado, assinale a alternativa que indica característica da doença.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É a mais comum das glomerulopatias da infância.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A faixa etária de maior acometimento é o lactente abaixo de 2 anos de idade e o adolescente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A insuficiência renal aguda é a sua principal complicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pode estar associada a episódios de piodermite causada pelo vírus varicela zóster.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro clínico do paciente de 8 anos apresenta a tríade clássica da Síndrome Nefrítica: edema (periorbitário), hipertensão arterial (acima do percentil 95) e hematúria. O histórico de infecções de garganta frequentes sugere fortemente o diagnóstico de Glomerulonefrite Difusa Aguda (GNDA) pós-estreptocócica, que é uma resposta imunológica após uma infecção pela bactéria *Streptococcus pyogenes* (estreptococo beta-hemolítico do grupo A).\n\nAlternativa A (Correta): A GNDA pós-estreptocócica é a glomerulopatia mais comum na infância. Ela representa o protótipo da síndrome nefrítica na pediatria, sendo uma das causas mais frequentes de internação em nefrologia pediátrica em países em desenvolvimento.\n\nAlternativa B (Incorreta): A faixa etária de maior acometimento da GNDA é a idade escolar, geralmente entre os 5 e 12 anos de idade. É uma condição rara em crianças menores de 2 anos e menos comum em adolescentes e adultos jovens quando comparada à idade escolar primária.\n\nAlternativa C (Incorreta): Embora a redução da taxa de filtração glomerular e a elevação de escórias nitrogenadas (ureia e creatinina) possam ocorrer, a insuficiência renal aguda grave não é a complicação mais frequente. As complicações agudas mais temidas e comuns são as decorrentes da hipervolemia e da hipertensão arterial grave, como a encefalopatia hipertensiva e o edema agudo de pulmão (congestão volêmica).\n\nAlternativa D (Incorreta): A GNDA pode, de fato, ser precedida por quadros de piodermite (impetigo), porém a causa é bacteriana (*Streptococcus pyogenes*) e não viral. O vírus varicela-zóster causa a catapora e o herpes-zóster, que não são os agentes etiológicos clássicos da glomerulonefrite pós-infecciosa descrita.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  },
+  {
+    "id": "AJUDA_20f1639f-2ddf-4a9b-a43a-8b4373965fa5",
+    "originalId": "20f1639f-2ddf-4a9b-a43a-8b4373965fa5",
+    "statement": "São opções terapêuticas para os sintomas vasomotores da síndrome climatérica:\n\nI. Modificações de estilo de vida: roupas leves, temperatura ambiente mais baixa e não fumar.\nII. Terapia de reposição hormonal sistêmica.\nIII. Uso de inibidores seletivos da recaptação de serotonina e inibidores seletivos de recaptação da serotonina e noradrenalina.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo dos sintomas vasomotores (fogachos), que são a queixa mais comum e impactante durante a transição menopausal e o climatério.\n\nItem I: Correto. As modificações de estilo de vida representam a abordagem inicial, especialmente para mulheres com sintomas leves. Manter ambientes arejados, utilizar roupas leves em camadas e evitar gatilhos como álcool e comidas picantes são medidas úteis. A cessação do tabagismo é fundamental, pois o fumo está diretamente associado a uma maior gravidade e frequência dos fogachos.\n\nItem II: Correto. A Terapia de Reposição Hormonal (TRH) sistêmica, seja apenas com estrogênio (para mulheres sem útero) ou combinada com progesterona (para mulheres com útero), é o tratamento padrão-ouro para os sintomas vasomotores moderados a graves. É a intervenção que apresenta os maiores índices de eficácia clínica.\n\nItem III: Correto. Os Inibidores Seletivos da Recaptação de Serotonina (ISRS), como a paroxetina e o escitalopram, e os Inibidores da Recaptação de Serotonina e Noradrenalina (IRSN), como a venlafaxina e a desvenlafaxina, são as principais alternativas não hormonais. Eles são indicados principalmente para pacientes com contraindicações formais à terapia hormonal (como histórico de câncer de mama ou eventos tromboembólicos) ou para aquelas que preferem não utilizar hormônios.\n\nAnálise das alternativas:\n\na) Incorreta. A afirmativa I está correta, mas não é a única opção.\nb) Incorreta. A afirmativa II está correta, mas as demais também são opções válidas.\nc) Incorreta. Exclui o item III, que é uma alternativa farmacológica consolidada nos consensos de ginecologia e endocrinologia.\nd) Correta. Todas as afirmativas (I, II e III) apresentam opções terapêuticas reconhecidas e recomendadas para o alívio dos sintomas vasomotores.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  },
+  {
+    "id": "AJUDA_2101be53-fd46-437c-a532-35360ad52369",
+    "originalId": "2101be53-fd46-437c-a532-35360ad52369",
+    "statement": "Criança do sexo feminino, 7 anos de idade em consulta de rotina, apresenta quadro de prurido nasal, congestão nasal, coriza hialina e espirros frequentes há cerca de 3 meses, ocorrendo em média cinco vezes por semana. A mãe refere roncos noturnos, sonolência diurna, queda no desempenho escolar e dificuldade na prática de esportes, além de intenso desconforto devido ao prurido e à obstrução nasal. Ao exame físico, observa‑se presença de pregas infrapalpebrais, prega transversa no dorso nasal e mucosa pálida e edemaciada. \n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a principal hipótese diagnóstica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "rinite alérgica persistente leve",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "rinite alérgica intermitente leve",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "rinite alérgica intermitente moderada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "rinite alérgica intermitente grave",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "rinite alérgica persistente grave",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver essa questão, devemos utilizar a classificação ARIA (Allergic Rhinitis and its Impact on Asthma), que é o padrão-ouro para o diagnóstico e manejo da rinite alérgica. Essa classificação divide a rinite com base na duração dos sintomas e na gravidade/impacto na qualidade de vida.\n\n1. Classificação quanto à duração:\n- Intermitente: Sintomas presentes por menos de 4 dias por semana OU por menos de 4 semanas consecutivas.\n- Persistente: Sintomas presentes por mais de 4 dias por semana E por mais de 4 semanas consecutivas.\nNo caso clínico, a criança apresenta sintomas 5 vezes por semana há 3 meses, o que caracteriza o quadro como persistente.\n\n2. Classificação quanto à gravidade:\n- Leve: Sono normal; atividades diárias, lazer e esportes normais; desempenho escolar ou laboral normal; sintomas que não incomodam.\n- Moderada-grave: Presença de um ou mais dos seguintes itens: alteração do sono; comprometimento das atividades diárias, lazer e/ou esportes; comprometimento do desempenho escolar ou laboral; sintomas muito incomodativos.\nA paciente apresenta roncos e sonolência diurna (alteração do sono), queda no desempenho escolar, dificuldade na prática de esportes e intenso desconforto. Portanto, o quadro é classificado como moderada-grave.\n\nAnálise das alternativas:\n\na) Incorreta. Embora seja persistente pela frequência, a presença de impacto no sono, na escola e nos esportes impede a classificação como \"leve\".\n\nb) Incorreta. A frequência de 5 vezes por semana e a duração de 3 meses excluem a classificação \"intermitente\". Além disso, os prejuízos na qualidade de vida excluem o termo \"leve\".\n\nc) Incorreta. A duração e a frequência dos sintomas (3 meses, 5x/semana) definem a rinite como persistente, não intermitente.\n\nd) Incorreta. Novamente, o erro está na classificação temporal. Como os sintomas ocorrem por mais de 4 dias por semana e por mais de 4 semanas, o quadro é obrigatoriamente persistente.\n\ne) Correta. A alternativa preenche os dois critérios estabelecidos pelo consenso ARIA: é persistente (pelo tempo e frequência) e é grave (pelo impacto multifatorial na qualidade de vida da criança). Os achados de exame físico (pregas de Dennie-Morgan, prega transversa no nariz e mucosa pálida) corroboram o diagnóstico de rinite alérgica crônica.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  },
+  {
+    "id": "AJUDA_211fd941-cabb-4130-a5cf-4afee8c38f2d",
+    "originalId": "211fd941-cabb-4130-a5cf-4afee8c38f2d",
+    "statement": "Assinale a alternativa CORRETA em relação à sífilis, importante agravo em saúde pública:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na sífilis latente, a manifestação clínica está presente, sendo considerada recente no segundo ano da doença e tardia após esse período.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na sífilis secundária, as lesões típicas na pele e nas mucosas não costumam ser exuberantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na sifilis primária, a manifestação característica é o cancro duro acompanhado de linfadenomegalia regional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Na sífilis terciária, há acometimento da pele e dos órgãos internos, e os títulos dos anticorpos nos testes não treponêmicos são altos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A: INCORRETA. A principal característica da sífilis latente é justamente a ausência de manifestações clínicas. Nessa fase, o diagnóstico é feito exclusivamente por meio de testes sorológicos. Quanto à classificação temporal, o Ministério da Saúde do Brasil define como sífilis latente recente aquela com até um ano de infecção, e latente tardia, quando o tempo de infecção é superior a um ano.\n\nAlternativa B: INCORRETA. A sífilis secundária ocorre pela disseminação sistêmica da bactéria e é marcada por manifestações cutâneo-mucosas que costumam ser bastante exuberantes e variadas. Entre as lesões típicas estão a roséola sifilítica, pápulas eritematofoscas (com destaque para o acometimento palmoplantar), placas mucosas e o condiloma plano.\n\nAlternativa C: CORRETA. A sífilis primária é a fase inicial da doença, surgindo após um período de incubação médio de 21 dias. Sua marca registrada é o cancro duro, uma úlcera única, indolor, com base endurecida e fundo limpo, localizada no sítio de entrada do *Treponema pallidum*. Essa lesão é frequentemente acompanhada de linfadenomegalia regional (geralmente bilateral e indolor), o que valida a alternativa.\n\nAlternativa D: INCORRETA. Embora a sífilis terciária realmente apresente acometimento de órgãos internos (como os sistemas cardiovascular e nervoso) e da pele (gomas sifilíticas), os títulos dos testes não treponêmicos, como o VDRL, tendem a ser baixos ou até mesmo negativos nessa fase. Títulos muito elevados são característicos da fase secundária, na qual há uma alta carga bacteriana e intensa resposta imunológica.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  },
+  {
+    "id": "AJUDA_2126026d-0e32-41b8-94e1-3db7f42a4f8e",
+    "originalId": "2126026d-0e32-41b8-94e1-3db7f42a4f8e",
+    "statement": "Um adolescente de 15 anos é levado ao pronto-socorro por dor intensa e súbita no testículo direito, iniciada há aproximadamente 2 horas. Ele não apresenta febre, mas relata náuseas. Ao exame físico, observa-se um testículo direito edemaciado, endurecido, elevado e horizontalizado, com ausência do reflexo cremastérico ipsilateral e dor à palpação. O testículo esquerdo apresenta-se normal. Não há sinais de trauma recente. Dentre os itens abaixo, qual é a conduta mais apropriada para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Início de antibióticos e analgésicos, seguido de acompanhamento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "USG Doppler para confirmar torção testicular, analgesia e avaliação com Urologista em até 48h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acionar Urologista para exploração testicular cirúrgica de emergência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Início de anti-inflamatórios não esteroides e repouso com utilização de suspensório escrotal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO quadro descrito é um exemplo clássico de torção testicular. A faixa etária (adolescente), o início súbito da dor intensa acompanhada de náuseas e os achados do exame físico (testículo elevado, horizontalizado e ausência do reflexo cremastérico) apontam diretamente para essa emergência urológica. A ausência do reflexo cremastérico é considerada o sinal físico mais sensível para o diagnóstico de torção. O tempo é um fator crítico: a taxa de salvamento testicular é de quase 100% se a detorção ocorrer em até 6 horas, caindo drasticamente após esse período.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nDiante de uma suspeita clínica clara de torção testicular, a conduta imediata deve ser a exploração cirúrgica de emergência. Não se deve perder tempo aguardando exames complementares se a suspeita for alta, pois o atraso pode resultar em necrose e necessidade de orquiectomia (remoção do testículo). Durante a cirurgia, realiza-se a detorção e a fixação do testículo (orquidopexia). Como a predisposição anatômica (defeito em bell-clapper) costuma ser bilateral, o testículo contralateral também deve ser fixado no mesmo tempo cirúrgico para prevenir futuros eventos.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): O uso de antibióticos é indicado para casos de orquiepididimite aguda, que é o principal diagnóstico diferencial. No entanto, a epididimite costuma ter um início mais gradual, pode vir acompanhada de febre e o reflexo cremastérico geralmente está preservado. Tratar uma torção com antibióticos causaria a perda do órgão por isquemia.\n\nAlternativa (b): Embora o USG Doppler seja útil em apresentações atípicas ou duvidosas, a conduta descrita está errada por dois motivos. Primeiro, a clínica é soberana e o exame não deve atrasar a cirurgia em casos clássicos. Segundo, o prazo de 48 horas é inaceitável, pois a necrose testicular ocorre em poucas horas (geralmente entre 6 a 12 horas).\n\nAlternativa (d): Anti-inflamatórios e suspensório escrotal são medidas de suporte para processos inflamatórios ou trauma leve. Na torção testicular, a elevação do escroto (manobra de Prehn) geralmente não alivia a dor ou até a piora, ao contrário da epididimite, onde o alívio pode ocorrer. Utilizar apenas essa abordagem em uma torção é negligenciar uma emergência cirúrgica.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  },
+  {
+    "id": "AJUDA_212a8cb9-46e8-466b-8cd2-4510fb29fd09",
+    "originalId": "212a8cb9-46e8-466b-8cd2-4510fb29fd09",
+    "statement": "Os agentes biológicos, em suas relações com os seres humanos, apresentam propriedades das quais destacam-se a capacidade do agente infeccioso de poder alojar-se e multiplicar-se dentro de um hospedeiro humano e a capacidade do agente infeccioso de produzir casos graves e fatais.\n\nEssas propriedades dos agentes biológicos são denominadas, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "infectividade e letalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "imunogenicidade e virulência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "infectividade e virulência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "patogenicidade e letalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental dominar os conceitos de epidemiologia das doenças transmissíveis, especificamente as propriedades dos agentes biológicos.\n\nA primeira parte do enunciado descreve a capacidade do agente de se alojar e multiplicar no hospedeiro. Isso define a INFECTIVIDADE. Trata-se da medida da facilidade com que um agente se estabelece no organismo, independentemente de causar sintomas ou não.\n\nA segunda parte descreve a capacidade de produzir casos graves e fatais. Isso define a VIRULÊNCIA. A virulência indica o grau de severidade de uma infecção, sendo avaliada pela proporção de casos graves e óbitos em relação ao total de casos da doença.\n\nAnálise das alternativas:\n\na) INCORRETA. Embora a infectividade esteja correta para a primeira parte, a letalidade é um indicador que mede especificamente o percentual de mortes entre os doentes. A virulência é o termo técnico que engloba o espectro de gravidade (casos graves e fatais) solicitado pela questão.\n\nb) INCORRETA. Imunogenicidade é a capacidade do agente biológico de estimular a produção de uma resposta imune (anticorpos ou imunidade celular) no hospedeiro, não se relacionando diretamente com a multiplicação inicial ou com a gravidade clínica descrita.\n\nc) CORRETA. A infectividade é a propriedade de penetrar e se multiplicar no hospedeiro. A virulência representa a capacidade do agente de produzir efeitos graves ou fatais, refletindo a intensidade da patogenicidade.\n\nd) INCORRETA. Patogenicidade é a capacidade do agente infeccioso de produzir sintomas (doença) em pessoas infectadas. Um agente pode ter alta patogenicidade (causar muita doença), mas baixa virulência (causar formas leves da doença). A letalidade, como dito anteriormente, foca apenas no desfecho óbito.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  },
+  {
+    "id": "AJUDA_21359e50-fd03-4f90-8b61-153995527ce4",
+    "originalId": "21359e50-fd03-4f90-8b61-153995527ce4",
+    "statement": "Paciente de 41 anos de idade, vítima de acidente de carro contra um caminhão, foi trazido ao PS pelo pré-hospitalar onde deu entrada com Glasgow 14, pulso de 92 bpm, PA: 110/70 mmHg. Sem alterações respiratórias ou cardíacas. Abdome com escoriação no andar superior, pouco doloroso à palpação profunda e sem sinais de irritação peritoneal. Nesse caso, o atendimento deve prosseguir com",
+    "options": [
+      {
+        "id": "A",
+        "text": "observação clínica e tomografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tomografia de corpo inteiro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "realização do FAST estendido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ultrassom de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "lavagem peritoneal diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO:\nO paciente em questão é vítima de um trauma de alta energia (colisão entre carro e caminhão). Ele apresenta-se hemodinamicamente estável, com frequência cardíaca de 92 bpm e PA de 110/70 mmHg, porém demonstra uma leve alteração do nível de consciência (Glasgow 14) e sinais de trauma abdominal (escoriações e dor à palpação profunda). Diante de um mecanismo de trauma grave com paciente estável, a prioridade é a investigação de lesões internas que podem não ser evidentes apenas ao exame físico.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\nA tomografia de corpo inteiro (conhecida como Pan-Scan) é a conduta de escolha para pacientes vítimas de trauma de alta energia que estão hemodinamicamente estáveis. Esse protocolo inclui a avaliação sistemática de crânio, coluna cervical, tórax, abdome e pelve. No caso deste paciente, a tomografia é essencial tanto para avaliar a causa do Glasgow 14 quanto para investigar possíveis lesões de órgãos sólidos ou ocos no abdome, que são sugeridas pela dor à palpação e pelo mecanismo do acidente. Estudos mostram que o uso precoce da tomografia de corpo inteiro em traumas graves reduz o tempo de diagnóstico e pode melhorar o prognóstico.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\nAlternativa (a): Apenas a tomografia de crânio e a observação clínica seriam insuficientes. O paciente tem um mecanismo de trauma de alta energia e dor abdominal, o que exige uma avaliação radiológica do tronco para excluir lesões internas potencialmente fatais que a observação clínica isolada pode deixar passar.\n\nAlternativa (c): O FAST estendido (e-FAST) é uma excelente ferramenta de triagem à beira-leito para detectar líquido livre (sangue) ou pneumotórax em pacientes instáveis. No entanto, em um paciente hemodinamicamente estável e com trauma de alta energia, a tomografia é superior por ser mais detalhada, permitindo diagnosticar lesões retroperitoneais e de vísceras sólidas que o ultrassom muitas vezes não detecta.\n\nAlternativa (d): O ultrassom de abdome isolado sofre das mesmas limitações que o FAST em pacientes estáveis. Ele não substitui a precisão da tomografia computadorizada na identificação de lesões específicas e na graduação de traumas de órgãos sólidos.\n\nAlternativa (e): A lavagem peritoneal diagnóstica (LPD) é um procedimento invasivo indicado quase exclusivamente para pacientes com instabilidade hemodinâmica nos quais o FAST não está disponível ou foi inconclusivo. Em um paciente estável, a LPD é contraindicada, pois a tomografia fornece muito mais informações de forma não invasiva.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  },
+  {
+    "id": "AJUDA_213fb182-3798-4125-bebe-ac1ea9c9dcff",
+    "originalId": "213fb182-3798-4125-bebe-ac1ea9c9dcff",
+    "statement": "Paciente, sexo feminino, 45 anos, imunocomprometida, apresenta prurido vulvar, dispareunia e corrimento vaginal branco, com relato de cinco episódios semelhantes no último ano. O tratamento mais adequado para esta paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tópico com nistatina creme por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tópico com miconazol creme a 2% por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Oral com fluconazol 150 mg, dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oral com fluconazol em esquema prolongado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — prurido vulvar, dispareunia e corrimento vaginal branco — é característico da candidíase vulvovaginal. Para definir o tratamento correto, é necessário identificar que se trata de uma candidíase vulvovaginal recorrente (CVVR), definida pela ocorrência de quatro ou mais episódios em um período de 12 meses, além do agravante de a paciente ser imunocomprometida.\n\nAlternativa a: Incorreta. A nistatina é um antifúngico polieno de uso tópico. Embora possa ser utilizada em casos de candidíase não complicada ou em situações específicas (como no primeiro trimestre da gestação), ela não é a conduta de escolha para casos recorrentes ou em pacientes imunocomprometidas, pois apresenta menor taxa de cura clínica e micológica em comparação aos azóis sistêmicos nesses cenários.\n\nAlternativa b: Incorreta. O uso de miconazol tópico por 7 dias é uma das opções padrão para o tratamento da candidíase vulvovaginal não complicada em mulheres hígidas. No caso de uma paciente com cinco episódios em um ano e imunossupressão, o tratamento de curto prazo é insuficiente para prevenir novas recidivas.\n\nAlternativa c: Incorreta. O fluconazol 150 mg em dose única oral é o tratamento de primeira linha para a candidíase simples e esporádica. No entanto, para pacientes com fatores de complicação (como a imunossupressão) ou que preenchem critérios para recorrência, a dose única está associada a altas taxas de falha terapêutica.\n\nAlternativa d: Correta. Diante de uma candidíase vulvovaginal recorrente ou em hospedeiras com condições predisponentes (diabetes descompensado, imunossupressão), as diretrizes nacionais e internacionais recomendam um esquema de tratamento intensivo e prolongado. Geralmente, inicia-se com uma fase de indução (por exemplo, fluconazol 150 mg nos dias 1, 4 e 7) seguida por uma fase de manutenção (fluconazol 150 mg uma vez por semana por seis meses). Esse protocolo visa controlar a colonização fúngica e diminuir a frequência das exacerbações clínicas.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  },
+  {
+    "id": "AJUDA_2140a4e4-12d6-4d6c-b418-b83725dc0cad",
+    "originalId": "2140a4e4-12d6-4d6c-b418-b83725dc0cad",
+    "statement": "São fármacos de primeira linha indicados para crianças com crises de ausência típicas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Etossuximida, valproato e lamotrigina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Etossuximida, valproato e oxcarbazepina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Etossuximida, oxcarbazepina e lamotrigina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Valproato, lamotrigina e oxcarbazepina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "As crises de ausência típicas são manifestações de epilepsia generalizada, comuns na infância e associadas a descargas de ponta-onda a 3 Hz no eletroencefalograma. O tratamento de primeira linha inclui fármacos com mecanismos específicos para modular os circuitos tálamo-corticais, evitando medicamentos que possam piorar as crises.\n\nAlternativa a: Correta. A etossuximida é o fármaco de escolha quando ocorrem apenas crises de ausência, agindo no bloqueio de canais de cálcio do tipo T no tálamo e apresentando excelente perfil de tolerabilidade. O ácido valproico (valproato) é igualmente de primeira linha e muito eficaz, sendo a escolha ideal se houver outros tipos de crises generalizadas associadas (como crises tônico-clônicas). A lamotrigina também é considerada uma opção de primeira linha, embora com eficácia ligeiramente inferior às duas primeiras em monoterapia.\n\nAlternativa b: Incorreta. A oxcarbazepina é um bloqueador de canais de sódio voltado para o tratamento de crises focais. Nas crises de ausência generalizadas, a oxcarbazepina (assim como a carbamazepina e a fenitoína) é contraindicada, pois pode exacerbar a frequência das crises ou precipitar estado de mal epiléptico de ausência.\n\nAlternativa c: Incorreta. O erro reside na inclusão da oxcarbazepina, que agrava as crises de ausência.\n\nAlternativa d: Incorreta. Além de incluir indevidamente a oxcarbazepina, a alternativa não cita a etossuximida, que é uma das principais medicações para essa condição.\n\nGabarito: Letra a.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Epilepsias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:49.087Z"
+  }
+]

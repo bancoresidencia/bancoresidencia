@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_6f2fe843-8127-4315-b4b6-5a27520eaa62",
+    "originalId": "6f2fe843-8127-4315-b4b6-5a27520eaa62",
+    "statement": "É considerado critério de indicação de internação hospitalar em caso de quadro de dengue a presença de",
+    "options": [
+      {
+        "id": "A",
+        "text": "PA < 100/50 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "plaquetas < 80000 células/mm³.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hematócrito > 50%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "idade menor do que 25 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "维持 obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "CLASSIFICAÇÃO E MANEJO DA DENGUE\n\nDe acordo com as diretrizes do Ministério da Saúde, a assistência ao paciente com dengue é baseada no estadiamento clínico, que divide os casos em quatro grupos: A, B, C e D. A internação hospitalar é obrigatória para os pacientes classificados nos Grupos C (presença de sinais de alarme) e D (sinais de choque, hemorragia grave ou disfunção de órgãos).\n\nALTERNATIVA A - INCORRETA. A hipotensão arterial é um sinal de choque (Grupo D), mas é considerada um sinal tardio. O principal critério hemodinâmico de gravidade é a pressão arterial convergente (diferença entre a pressão sistólica e a diastólica igual ou menor que 20 mmHg). Uma pressão de 100/50 mmHg apresenta uma diferencial de 50 mmHg, não caracterizando, isoladamente, critério para internação imediata se o paciente estiver estável.\n\nALTERNATIVA B - INCORRETA. A queda do número de plaquetas (plaquetopenia) é um achado laboratorial muito frequente na dengue. Embora exija atenção e acompanhamento, a contagem de 80.000 células/mm³, de forma isolada, enquadra o paciente no Grupo B (necessidade de observação e exames), mas não é considerada um sinal de alarme que determine internação obrigatória.\n\nALTERNATIVA C - CORRETA. O aumento progressivo do hematócrito é um sinal de alarme clássico (Grupo C). Ele reflete a hemoconcentração causada pelo extravasamento de plasma do espaço intravascular para o interstício. Valores elevados de hematócrito, geralmente superiores a 50% em adultos ou com aumento de 20% em relação ao valor basal, indicam a necessidade de hidratação venosa imediata e monitoramento em regime de internação para evitar a progressão para o choque.\n\nALTERNATIVA D - INCORRETA. A idade inferior a 25 anos não é um critério de gravidade. As normas técnicas consideram os extremos de idade (menores de 2 anos e maiores de 65 anos) como grupos de risco que exigem maior cautela e classificação no Grupo B, mas a internação depende da evolução clínica e da presença de sinais de alarme.\n\nALTERNATIVA E - INCORRETA. A obesidade é considerada uma condição especial ou comorbidade. Pacientes obesos são classificados no Grupo B e necessitam de acompanhamento laboratorial e clínico mais frequente, mas a internação só se torna obrigatória se o paciente apresentar sinais de alarme ou choque. A presença isolada da obesidade não é critério de internação.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  },
+  {
+    "id": "AJUDA_6f3f7f54-9f9c-47a6-9ca3-4e24e481e600",
+    "originalId": "6f3f7f54-9f9c-47a6-9ca3-4e24e481e600",
+    "statement": "Homem de 71 anos, portador de DPOC e diabetes tipo 2, é internado após colectomia esquerda por diverticulite complicada. No pós-operatório imediato evolui com resposta inflamatória sistêmica, necessidade de ventilação mecânica e sinais de desnutrição moderada (albumina 2,8 g/dL, perda ponderal de 8% em 3 meses). A equipe discute o início da terapia nutricional. O paciente encontra-se hemodinamicamente estável, com trato gastrointestinal funcionante e sem contraindicação para dieta enteral. Considerando as evidências atuais sobre nutrição imunomoduladora (arginina, ômega-3, nucleotídeos), qual das condutas abaixo é a mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Evitar fórmulas imunomoduladoras em qualquer paciente séptico devido ao risco de piora da resposta inflamatória",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Utilizar fórmulas imunomoduladoras apenas após o sétimo dia de internação, quando o risco de infecção já estiver estabelecido",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Priorizar nutrição parenteral total com imunonutrientes, pois é superior à via enteral em pacientes críticos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar fórmula enteral imunomoduladora precocemente, pois reduz complicações infecciosas e tempo de internação em cirurgias digestivas de grande porte",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Reservar imunonutrição apenas para pacientes com fístulas entéricas de alto débito",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "EXPLICAÇÃO DA QUESTÃO\n\nO caso clínico descreve um paciente idoso, com comorbidades (DPOC, Diabetes), submetido a uma cirurgia abdominal de grande porte (colectomia) por quadro inflamatório/infeccioso (diverticulite), apresentando sinais de desnutrição e necessidade de suporte intensivo (ventilação mecânica). O foco da questão é a indicação da terapia nutricional imunomoduladora (IMN) no contexto cirúrgico.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): Existe um debate histórico sobre o uso de arginina em pacientes com choque séptico grave, devido ao receio de produção excessiva de óxido nítrico e piora da instabilidade hemodinâmica. No entanto, o paciente em questão está hemodinamicamente estável. Além disso, a contraindicação não se aplica de forma genérica a \"qualquer paciente séptico\" conforme sugerido, e sim ao choque franco refratário.\n\nAlternativa B (Incorreta): O benefício da imunonutrição é maior quando iniciado precocemente (nas primeiras 24 a 48 horas). Deixar para iniciar após o sétimo dia anula o efeito protetor da fórmula em prevenir as infecções iniciais no pós-operatório e não segue as diretrizes da ASPEN ou ESPEN para pacientes cirúrgicos.\n\nAlternativa C (Incorreta): A via enteral é sempre preferível à parenteral quando o trato gastrointestinal está funcionante. A nutrição enteral mantém a integridade da barreira mucosa intestinal, reduz a translocação bacteriana e possui menor taxa de complicações infecciosas do que a parenteral.\n\nAlternativa D (Correta): Para pacientes submetidos a cirurgias de grande porte do trato digestivo, especialmente aqueles desnutridos ou em risco nutricional, o uso de fórmulas contendo imunonutrientes (arginina, ácidos graxos ômega-3 e nucleotídeos) está fortemente recomendado. As evidências demonstram que essa intervenção reduz as taxas de infecção pós-operatória (como pneumonia e infecção de sítio cirúrgico) e o tempo de permanência hospitalar. O paciente se encaixa perfeitamente nesse perfil: cirurgia digestiva de grande porte + desnutrição.\n\nAlternativa E (Incorreta): Embora pacientes com fístulas precisem de suporte nutricional intensivo, a imunonutrição não é exclusiva para essa condição. Seu benefício principal é a modulação da resposta inflamatória e melhora da cicatrização no perioperatório de cirurgias eletivas ou urgências estabilizadas.\n\nSÍNTESE DIDÁTICA:\nSempre que o enunciado trouxer um paciente de cirurgia oncológica ou de grande porte do aparelho digestivo, a resposta \"padrão-ouro\" para nutrição será o uso de fórmulas imunomoduladoras por via enteral, visando a redução de morbidade infecciosa. O fato de o paciente estar estável hemodinamicamente autoriza o uso imediato dessas substâncias.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Ventilação Mecânica",
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  },
+  {
+    "id": "AJUDA_6f43973c-21f8-479e-a47f-c0436c425dad",
+    "originalId": "6f43973c-21f8-479e-a47f-c0436c425dad",
+    "statement": "Mulher de 31 anos está sendo investigada por amenorreia secundária. O exame de gravidez é negativo, não faz uso de medicamentos, nega alterações de peso, alterações neurológicas, saída de leite pelas mamas ou procedimento cirúrgico recente. O exame de prolactina, da tireoide e do hormônio estimulante do folículo estavam dentro da normalidade. Após ter utilizado 10 mg de acetato de medroxiprogesterona por via oral por 10 dias, a paciente teve um sangramento pela vagina, que durou só um dia. A hipótese diagnóstica mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome dos ovários policísticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Kallmann.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Insuficiência ovariana prematura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Insensibilidade aos androgênios.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta amenorreia secundária com exames hormonais (prolactina, TSH e FSH) normais. O ponto-chave para a resolução da questão é o resultado do teste da progesterona. Ao administrar 10 mg de acetato de medroxiprogesterona por 10 dias e observar a ocorrência de sangramento após a interrupção (mesmo que por apenas um dia), confirmamos três informações fundamentais:\n\n1. O trato de saída (útero, colo uterino e vagina) está anatomicamente íntegro e pérvio.\n2. O endométrio foi previamente estimulado por estrogênio (houve proliferação endometrial).\n3. A causa da amenorreia é a anovulação crônica (o ovário produz estrogênio, mas não ocorre a ovulação nem a formação do corpo lúteo, logo não há produção cíclica de progesterona para descamar o endométrio).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) CORRETA: A Síndrome dos Ovários Policísticos (SOP) é a principal causa de anovulação crônica hiperestrogênica. Nessas pacientes, os folículos crescem, mas não atingem a maturidade para ovular, mantendo uma produção constante de estrogênio que estimula o endométrio. Como não há ovulação, não existe corpo lúteo para produzir progesterona. Ao fornecermos a progesterona exógena (teste da progesterona), simulamos a fase lútea; ao retirá-la, o endométrio descama, gerando o sangramento. O FSH normal é característico desta patologia.\n\nAlternativa (b) INCORRETA: A Síndrome de Kallmann é um hipogonadismo hipogonadotrófico decorrente de uma falha na migração dos neurônios produtores de GnRH. O resultado é uma deficiência de gonadotrofinas (LH e FSH) e, consequentemente, níveis muito baixos de estrogênio. Com pouco estrogênio, o endométrio não prolifera, o que tornaria o teste da progesterona negativo (ausência de sangramento).\n\nAlternativa (c) INCORRETA: A Insuficiência Ovariana Prematura (IOP) caracteriza-se pela falência folicular antes dos 40 anos. O marcador laboratorial típico é a elevação acentuada do FSH (geralmente acima de 25 a 40 mUI/mL) devido à ausência de feedback negativo dos hormônios ovarianos. Na IOP, os níveis de estrogênio são baixos e o teste da progesterona seria negativo. A questão afirma explicitamente que o FSH está normal.\n\nAlternativa (d) INCORRETA: A Síndrome de Insensibilidade aos Androgênios (Síndrome de Morris) ocorre em indivíduos com cariótipo 46,XY. Essas pessoas possuem testículos (geralmente intra-abdominais) que produzem hormônio antimülleriano, o que impede o desenvolvimento do útero, tubas e porção superior da vagina. Além de cursar com amenorreia primária (e não secundária), a ausência de útero tornaria impossível qualquer sangramento após o teste da progesterona.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  },
+  {
+    "id": "AJUDA_6f4c416a-140a-4424-a500-03dd67db8f2e",
+    "originalId": "6f4c416a-140a-4424-a500-03dd67db8f2e",
+    "statement": "Paciente com fibrilação atrial apresenta dor abdominal súbita e intensa. A angiotomografia mostra falha de enchimento abrupta no terço médio da artéria mesentérica superior. Não há sinais de peritonite ou necrose intestinal na laparotomia. O tratamento cirúrgico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trombectomia venosa mesentérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Embolectomia da artéria mesentérica superior.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ressecção intestinal segmentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Bypass aorto-mesentérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um quadro clássico de isquemia mesentérica aguda de etiologia embólica. Os pontos-chave para o diagnóstico são: a presença de fibrilação atrial (fator de risco para cardioembolismo), a dor abdominal súbita e intensa, e o achado na angiotomografia de uma falha de enchimento abrupta no terço médio da artéria mesentérica superior. Na embolia, o êmbolo costuma se alojar distalmente à origem da artéria (geralmente após a saída da artéria cólica média), ao contrário da trombose, que ocorre no óstio da artéria devido à aterosclerose. O fato de não haver peritonite ou necrose na laparotomia indica que o intestino ainda é viável, exigindo revascularização imediata.\n\nAnálise das alternativas:\n\na) Incorreta. A trombectomia venosa seria o tratamento para a trombose venosa mesentérica. Esta condição tem uma apresentação clínica mais insidiosa (dor que aumenta ao longo de dias) e fatores de risco ligados à hipercoagulabilidade. A angiotomografia mostraria falha de enchimento na veia mesentérica, e não na artéria.\n\nb) Correta. A embolectomia da artéria mesentérica superior é o tratamento de escolha para a embolia arterial aguda quando as alças intestinais ainda apresentam viabilidade. O procedimento é realizado através de uma arteriotomia transversa e passagem de um cateter de Fogarty para a retirada do êmbolo e restauração do fluxo sanguíneo.\n\nc) Incorreta. A ressecção intestinal (enterectomia) é indicada apenas quando há evidência de necrose intestinal ou perfuração (peritonite). Como a descrição afirma que não há sinais de necrose na laparotomia, o objetivo deve ser salvar o intestino através da revascularização, e não removê-lo.\n\nd) Incorreta. O bypass aortomesentérico é uma técnica de revascularização complexa, geralmente indicada para casos de isquemia mesentérica crônica ou em casos de trombose arterial aguda (onde a oclusão ocorre no óstio da artéria por placa de ateroma). Na embolia de terço médio, a embolectomia é tecnicamente mais simples, rápida e eficaz.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  },
+  {
+    "id": "AJUDA_6f4d5696-4207-4d4d-8b0f-68a6072f2e73",
+    "originalId": "6f4d5696-4207-4d4d-8b0f-68a6072f2e73",
+    "statement": "Paciente de 32 anos foi à consulta ginecológica de rotina para realização de colpocitologia oncótica. O exame evidenciou agrupamento de células escamosas com núcleos aumentados, hipercrômicos e irregulares, com alta relação núcleo-citoplasmática sugestiva de lesão intraepitelial de alto grau. Como a amostra foi coletada em meio líquido, foi solicitado teste de HPV, que veio positivo para o subtipo 16.\nFrente a essas informações, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "se trata de exame normal, com seguimento em 3 anos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pela associação com HPV-16, a lesão é considerada de baixo grau;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "se trata de uma lesão de alto grau com infecção por HPV de alto risco oncogênico, sendo indicada colposcopia;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "por se tratar de uma infecção por HPV de baixo risco oncogênico, está indicado seguimento semestral;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "se trata de uma infecção por HPV de alto risco oncogênico, sendo indicada a realização imediata da exérese da zona de transformação (EZT ou LEEP), sem a necessidade de colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um caso de colpocitologia oncótica com achados clássicos de Lesão Intraepitelial de Alto Grau (LIE-AG ou HSIL). As características citológicas mencionadas — núcleos aumentados, hipercromatismo, irregularidade nuclear e, principalmente, a alta relação núcleo-citoplasmática — são os critérios morfológicos que definem essa categoria no Sistema Bethesda. Além disso, a paciente apresenta positividade para o HPV-16, que é o subtipo viral de maior potencial oncogênico conhecido, estando fortemente associado ao desenvolvimento do câncer do colo do útero.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O exame está nitidamente alterado. O seguimento em três anos é indicado apenas para exames citológicos normais em mulheres que já realizaram dois exames anuais consecutivos negativos. No caso de uma lesão de alto grau, a conduta deve ser imediata.\n\nAlternativa b: Incorreta. O HPV-16 não está associado a lesões de baixo grau de forma predominante; ele é o principal agente relacionado a lesões pré-cancerosas de alto grau (NIC 2 e NIC 3) e ao carcinoma epidermoide invasor. Além disso, a descrição citológica já confirmou tratar-se de uma lesão de alto grau.\n\nAlternativa c: Correta. A descrição citológica (alta relação núcleo-citoplasmática e atipias nucleares marcantes) caracteriza uma lesão de alto grau. O HPV-16 é classificado como de alto risco oncogênico. De acordo com as Diretrizes Brasileiras para o Rastreio do Câncer do Colo do Útero, qualquer resultado de citologia sugestivo de LIE-AG (HSIL) tem indicação mandatória de encaminhamento para colposcopia.\n\nAlternativa d: Incorreta. O HPV-16 é de alto risco oncogênico, e não de baixo risco. O seguimento semestral não é a conduta inicial para LIE-AG; essa lesão exige avaliação colposcópica imediata devido ao risco de haver uma neoplasia intraepitelial cervical grau 2 ou 3 (NIC 2/3) ou até mesmo câncer invasor subjacente.\n\nAlternativa e: Incorreta. Embora o achado de LIE-AG com HPV-16 seja preocupante, a conduta inicial padrão é a realização da colposcopia para localizar a lesão, avaliar a zona de transformação e, se necessário, realizar biópsia. A exérese da zona de transformação (EZT/LEEP) sem colposcopia prévia (estratégia \"ver e tratar\") é reservada para situações muito específicas em pacientes acima de 25 anos com lesões colposcópicas sugestivas, mas não se pula a etapa da colposcopia diagnóstica baseando-se apenas na citologia e no teste de HPV.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  },
+  {
+    "id": "AJUDA_6f4f4683-6722-4d28-b3a7-dd2d3a5ba362",
+    "originalId": "6f4f4683-6722-4d28-b3a7-dd2d3a5ba362",
+    "statement": "Homem, 52 anos de idade, tabagista desde os 18 anos, procura atendimento por estar interessado em parar de fumar. Refere fumar em média 10 cigarros/dia, sendo o primeiro cigarro 2 horas após acordar. Refere não ter horário preferido para fumar nem ter dificuldades de se abster quando frequenta ambientes fechados ou quando está muito doente. Relata tentativas prévias de cessação, sem sucesso, todas sem auxílio profissional. No momento, diz estar motivado a tentar novamente. Qual conduta pode ser adotada pelo médico de família?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar terapia com reposição de nicotina com adesivo transdérmico com doses crescentes, reforçando a motivação por meio da técnica da balança decisional para a fase de ação do ciclo de Prochaska.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar terapia com vareniclina por 12 semanas, reforçando a autoeficácia e programando a data de cessação do hábito de fumar em ocasião significativa para o paciente para a fase de ação do ciclo de Prochaska.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar terapia de reposição de nicotina com adesivo transdérmico associado a bupropiona, reforçando enfrentamento e planejamento de estratégias para evitar situações de risco para a fase de preparação do ciclo de Prochaska.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar terapia com bupropiona 7 a 14 dias antes de parar de fumar, associada a psicoeducação voltada para aumentar a percepção dos malefícios do tabaco para a fase de pré-contemplação do ciclo de Prochaska.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente de 52 anos apresenta um consumo de 10 cigarros por dia e inicia o uso 2 horas após acordar, o que sugere uma dependência física de baixa a moderada. No entanto, ele relata tentativas anteriores frustradas e demonstra motivação atual para cessar o tabagismo. No modelo transteórico de Prochaska e DiClemente, o paciente encontra-se na fase de preparação, pois já reconhece o problema e busca ativamente ajuda para planejar a mudança.\n\nAnalise das alternativas:\n\nAlternativa A: Incorreta. A terapia de reposição de nicotina (TRN) utiliza doses regressivas para realizar o desmame da substância, nunca doses crescentes. Além disso, a técnica da balança decisional é uma ferramenta típica da fase de contemplação, servindo para ajudar o paciente a superar a ambivalência, enquanto a fase de ação foca na execução da parada.\n\nAlternativa B: Incorreta. Embora a vareniclina seja uma opção terapêutica de primeira linha e o reforço da autoeficácia seja fundamental, o erro está na classificação do estágio motivacional. O paciente ainda não interrompeu o hábito, portanto, não está na fase de ação. Ele está se organizando para parar, o que caracteriza a preparação.\n\nAlternativa C: Correta. Segundo as diretrizes para cessação do tabagismo, pacientes com tentativas prévias sem sucesso podem se beneficiar da combinação de medicamentos (como a bupropiona associada à TRN) para aumentar as taxas de abstinência. O foco do aconselhamento comportamental na fase de preparação é justamente o planejamento de estratégias para lidar com situações de risco, gatilhos e a definição de uma data para a interrupção definitiva.\n\nAlternativa D: Incorreta. Embora a bupropiona deva ser iniciada de 7 a 14 dias antes da data escolhida para parar, o paciente não se encontra na fase de pré-contemplação. Na pré-contemplação, o indivíduo não tem intenção de parar nos próximos meses e muitas vezes não reconhece o tabagismo como um problema. O paciente do caso já está motivado e buscou auxílio profissional, o que descarta essa fase.\n\nGabarito: Alternativa (c).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Dependência Química",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  },
+  {
+    "id": "AJUDA_6f5008d5-7199-4a8a-ae1a-d44d2196bcd7",
+    "originalId": "6f5008d5-7199-4a8a-ae1a-d44d2196bcd7",
+    "statement": "Paciente de 29 anos, primigesta, sem comorbidades, encontra-se com 26 semanas de gestação. Em acompanhamento pré-natal, apresenta os seguintes resultados laboratoriais:\n• Hb: 11,8 g/dL\n• Ht: 36%\n• Glicemia: 86 mg/dL\n• Tipagem sanguínea: O positivo\n• Pesquisa de anticorpos irregulares: negativa\n• Toxoplasmose: IgG positivo e IgM positivo\n• Avidade de IgG para toxoplasmose: baixa\n• Demais sorologias: negativas\nA ultrassonografia mostra feto único, vivo, com ventriculomegalia leve bilateral, ascite discreta e espessamento placentário difuso. O Doppler da artéria cerebral média e da artéria umbilical é normal para a idade gestacional. Com base nos achados laboratoriais e ultrassonográficos, a conduta terapêutica mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar pirimetamina + sulfadiazina + ácido folínico, após confirmação da infecção fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Iniciar espiramicina 3 g/dia até o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar antibiótico de amplo espectro e corticoterapia fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender o acompanhamento e repetir sorologia em 4 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar exsanguíneotransfusão intrauterina imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve uma gestante de 26 semanas com diagnóstico de toxoplasmose aguda (IgG e IgM positivos com baixa avidez) e achados ultrassonográficos que sugerem fortemente o acometimento fetal (ventriculomegalia, ascite e espessamento placentário).\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Correta): Diante de uma suspeita ou confirmação de infecção fetal, o tratamento deve ser feito com o esquema tríplice: sulfadiazina, pirimetamina e ácido folínico. A espiramicina, embora útil para reduzir a transmissão vertical, não atravessa a barreira placentária de forma eficaz para tratar o feto já infectado. Como a paciente está com 26 semanas e o feto apresenta alterações morfológicas, a conduta padrão é realizar a propedêutica invasiva (amniocentese para PCR do líquido amniótico) para confirmar a infecção e iniciar o tratamento fetal com o esquema tríplice.\n\nAlternativa B (Incorreta): A espiramicina é indicada apenas para a profilaxia da transmissão vertical, ou seja, quando a mãe se infecta, mas ainda não houve passagem do parasita para o feto. No caso em questão, as alterações no ultrassom indicam que a transmissão provavelmente já ocorreu, tornando a espiramicina insuficiente. O esquema tríplice é o tratamento de escolha para o compartimento fetal.\n\nAlternativa C (Incorreta): O Toxoplasma gondii é um protozoário, e não uma bactéria comum que responda a antibióticos de amplo espectro rotineiros. Além disso, a corticoterapia fetal é utilizada para aceleração da maturidade pulmonar em riscos de parto prematuro ou em casos específicos de inflamação do sistema nervoso central pelo toxoplasma, mas não substitui o tratamento antiparasitário específico.\n\nAlternativa D (Incorreta): Diante de sorologia positiva para infecção aguda e alterações ultrassonográficas, suspender o acompanhamento ou apenas repetir a sorologia após 4 semanas configura negligência médica, pois permitiria a progressão das lesões fetais graves e permanentes.\n\nAlternativa E (Incorreta): A exsanguinotransfusão intrauterina é o tratamento para casos de anemia fetal grave, geralmente decorrente de isoimunização Rh. Na questão, o Doppler da artéria cerebral média está normal, o que descarta anemia fetal, não havendo indicação para esse procedimento invasivo de alto risco.\n\nResumo do raciocínio:\n- Infecção materna aguda: IgG (+) e IgM (+) com baixa avidez.\n- Idade gestacional: 26 semanas (acima de 18 semanas).\n- Sinais de infecção fetal ao ultrassom: ventriculomegalia e ascite.\n- Conduta: Confirmar infecção fetal (amniocentese/PCR) e tratar com esquema tríplice (sulfadiazina + pirimetamina + ácido folínico).",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  },
+  {
+    "id": "AJUDA_6f68e893-d915-4f62-bd47-0edd40fce141",
+    "originalId": "6f68e893-d915-4f62-bd47-0edd40fce141",
+    "statement": "Homem de 31 anos procura o serviço de emergência com história de 5 dias de febre alta, calafrios, mialgia intensa com predomínio na região lombar, cefaleia e dor abdominal difusa. Há doze horas, evolui com o aparecimento de tosse seca e dispneia rapidamente progressiva. Ele não tem comorbidades e não há tabagismo, etilismo ou uso de medicamentos. Ele é engenheiro agrônomo, atuante no manejo e na limpeza de silos de armazenamento de grãos no interior do estado de São Paulo. Ao exame físico: apresenta-se taquipneico, hipotenso e hipoxêmico, necessitando de intubação orotraqueal. Os exames séricos iniciais mostram: leucocitose importante com desvio à esquerda, com presença de linfócitos reativos (imunoblastos) correspondendo a 13% da série linfoide; plaquetas: 38.000/mm³; hematócrito: 53%; ureia: 78 mg/dL; creatinina: 1,9 mg/dL; desidrogenase lática: 920 U/L; albumina sérica: 2,3 g/dL. A radiografia de tórax evidencia infiltrado interstício-alveolar bilateral difuso simétrico com área cardíaca normal. Considerando a principal hipótese diagnóstica, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A febre amarela grave manifesta-se como diagnóstico diferencial respiratório, visto que o vírus amarílico causa lesão alveolar difusa primária por citotoxicidade nos pneumócitos, demandando reposição de complexo protrombínico e infusão de corticoides por via parenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A febre maculosa brasileira configura-se como diagnóstico diferencial que cursa com infiltrado intersticial simétrico precoce e edema pulmonar não cardiogênico no terceiro dia, sendo tratada com doxiciclina como primeira escolha terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A insuficiência renal aguda observada nessa apresentação grave da doença decorre de necrose tubular aguda oligúrica hipercalêmica severa precoce, mimetizando a nefropatia por bactérias gram-negativas, com necessidade de hemodiálise precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O extravasamento capilar difuso decorre de alterações funcionais endoteliais induzidas por citocinas e integrinas, o que justifica a hemoconcentração e a hipoalbuminemia, respaldando a instituição precoce de suporte inotrópico, em detrimento de grandes expansões volêmicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O emprego de imunoglobulina humana intravenosa inespecífica padrão em doses imunomoduladoras funciona como terapia de escolha para neutralizar a carga microbiológica circulante e reverter a plaquetopenia decorrente da ativação endotelial microvascular sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico principal: síndrome cardiopulmonar por hantavírus (hantavirose), que no Brasil é causada por vírus como Juquitiba, Araraquara e Laguna Negra. O quadro clínico e epidemiológico sustenta essa hipótese:\n- Exposição a silos de grãos, ambiente com aerossóis de excretas de roedores silvestres.\n- Pródromo de 5 dias com febre, mialgia lombar, cefaleia e dor abdominal.\n- Evolução abrupta para tosse seca, dispneia e choque, com infiltrado intersticioalveolar bilateral e área cardíaca normal, o que indica edema pulmonar não cardiogênico.\n- Hemoconcentração (Ht 53%), trombocitopenia, hipoalbuminemia, elevação de DHL, leucocitose com desvio à esquerda e imunoblastos circulantes. Esse conjunto é típico.\n\nFisiopatologia: o vírus infecta o endotélio sem causar citólise direta. A resposta imune (linfócitos T citotóxicos, citocinas como TNF-alfa e IL-6, e integrinas) aumenta a permeabilidade capilar. O resultado é extravasamento de plasma, com hemoconcentração, hipoalbuminemia, edema pulmonar e choque. O choque tem um componente de depressão miocárdica, e por isso o manejo é delicado: o suporte é intensivo, com ventilação protetora e, se necessário, ECMO, e deve-se evitar grande expansão volêmica, pois ela piora o edema pulmonar. Usam-se vasopressores e inotrópicos precocemente, com reposição de volume cautelosa.\n\nAnálise das alternativas:\n\na) Incorreta. A febre amarela é um diagnóstico diferencial pela febre, pelas plaquetas baixas e pela lesão renal e hepática, mas o vírus amarílico causa lesão predominantemente hepática, com icterícia e sangramento. A lesão alveolar difusa primária por citotoxicidade nos pneumócitos não é o mecanismo. Também não há indicação de corticoide, e o complexo protrombínico só entraria se houvesse sangramento com coagulopatia.\n\nb) Incorreta. A febre maculosa brasileira, causada por Rickettsia rickettsii, também é diagnóstico diferencial e é tratada com doxiciclina. Porém o exantema (maculopapular, centrípeto, com acometimento de palmas e plantas) costuma ser o achado marcante, e o comprometimento pulmonar é tardio. Dizer que o infiltrado intersticial simétrico e o edema não cardiogênico são precoces, no terceiro dia, é inadequado.\n\nc) Incorreta. Na síndrome cardiopulmonar por hantavírus, a lesão renal costuma ser leve a moderada e secundária à hipoperfusão, e não a uma necrose tubular oligúrica hipercalêmica grave e precoce. A hemodiálise precoce não é regra. Esse padrão renal é mais típico da forma asiática e europeia (febre hemorrágica com síndrome renal).\n\nd) Correta. Descreve a fisiopatologia: alteração funcional endotelial mediada por citocinas e integrinas, com extravasamento capilar, hemoconcentração e hipoalbuminemia. Sustenta o uso precoce de inotrópicos e vasopressores, evitando grandes expansões volêmicas.\n\ne) Incorreta. A imunoglobulina humana intravenosa inespecífica não é terapia de escolha, não neutraliza o vírus e não tem eficácia comprovada para reverter a plaquetopenia nesse contexto. O tratamento é de suporte em UTI. A ribavirina não mostrou benefício consistente na forma cardiopulmonar.\n\nResposta: letra d.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses",
+      "Síndrome do Desconforto Respiratório Agudo",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  },
+  {
+    "id": "AJUDA_6f742368-045f-4118-b387-5563ed4f4a62",
+    "originalId": "6f742368-045f-4118-b387-5563ed4f4a62",
+    "statement": "Menina de 1 ano e 6 meses é levada à UBS por sua mãe para uma consulta de puericultura. A mãe relata estar preocupada com a filha, pois a criança somente fala palavras incompreensíveis e não responde quando a chamam. A menina engatinha, põe-se de pé, mas ainda não anda sozinha. Ela parece alheia ao ambiente e não estabelece contato visual com facilidade. Aponta para objetos, mas, quando brinca, joga fora os brinquedos. O pré-natal e o parto foram normais, e não há antecedentes familiares relevantes. No exame físico, não há alterações motoras evidentes. Com base no caso apresentado, a conduta apropriada nesse momento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar tratamento com estimulantes neurológicos, reforçar estímulos em casa e retornar para avaliação em seis meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reforçar estímulos em casa e marcar retorno em seis meses para estabelecer o diagnóstico e elencar as intervenções",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aguardar até os 2 anos, pois há grande variação individual da normalidade no desenvolvimento infantil. Verificar o contexto social e familiar e as condições do ambiente familiar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar testes de rastreamento adequados ao caso, pois há sinais de alerta de atraso no desenvolvimento neuropsicomotor. Se houver alteração nos testes, encaminhar para avaliação especializada",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta o caso de uma criança de 18 meses (1 ano e 6 meses) com atrasos significativos em múltiplos domínios do desenvolvimento neuropsicomotor (DNPM). Os pontos de alerta principais são: não andar sozinha (o limite esperado é 15 meses, sendo 18 meses o limite máximo de alerta), não responder ao chamado, não estabelecer contato visual e apresentar fala incompreensível. Esse quadro sugere tanto um atraso motor quanto um possível Transtorno do Espectro Autista (TEA).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O uso de estimulantes neurológicos não é a conduta inicial para atrasos globais do desenvolvimento ou suspeita de TEA nesta faixa etária. Além disso, aguardar seis meses para uma reavaliação é inadequado, pois a intervenção precoce é fundamental para o prognóstico da criança.\n\nAlternativa (b) Incorreta: Embora o estímulo no domicílio seja importante, ele não substitui a investigação clínica. Diante de sinais de alerta claros aos 18 meses (especialmente a ausência de marcha independente e prejuízo na interação social), é necessário realizar uma busca ativa por diagnósticos e não apenas observar passivamente por mais seis meses.\n\nAlternativa (c) Incorreta: A conduta de \"esperar para ver\" é contraindicada na pediatria moderna quando há sinais de alerta (red flags). Aos 18 meses, a ausência de marcha e o déficit de interação social já ultrapassaram as variações individuais da normalidade, exigindo investigação imediata.\n\nAlternativa (d) Correta: Esta é a conduta padrão. Diante de atrasos no desenvolvimento, o médico deve aplicar testes de rastreamento validados (como o M-CHAT para autismo, obrigatório no Brasil para crianças nessa faixa etária em consultas de puericultura, ou o PEDS). Confirmada a suspeita ou havendo falha nos testes, a criança deve ser encaminhada para avaliação especializada (neuropediatra, fonoaudiólogo, psicólogo) para diagnóstico e início imediato de terapias de intervenção precoce.\n\nEm resumo, a presença de \"sinais de alerta\" (não andar aos 18 meses e falha na interação social/comunicação) exige ação imediata com rastreamento e encaminhamento, nunca a conduta expectante.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  },
+  {
+    "id": "AJUDA_6f8860f9-bc10-4120-a3c3-37fe23bdddfd",
+    "originalId": "6f8860f9-bc10-4120-a3c3-37fe23bdddfd",
+    "statement": "Um médico avalia um lactente com quadro de diarreia aguda. A maioria dos casos é autolimitada e de etiologia viral, não necessitando de terapia antimicrobiana. Determine a situação clínica em que a antibioticoterapia está indicada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em todos os pacientes menores de 2 meses, como profilaxia de sepse, mesmo em diarreia aquosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em casos de diarreia aquosa com desidratação grave (Plano C) que necessitam de internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em pacientes com diarreia aguda com sangue (disenteria) ou infecção comprovada por Giardia lamblia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Em pacientes com intolerância secundária à lactose, utilizando fórmula láctea sem lactose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Em todos os casos de diarreia aguda, pois os antibióticos reduzem a duração do quadro em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O manejo da diarreia aguda em pediatria foca prioritariamente na reidratação e na manutenção do estado nutricional. A maioria dos episódios tem etiologia viral e é autolimitada, tornando o uso de antibióticos desnecessário e potencialmente prejudicial na maior parte dos casos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora lactentes jovens tenham maior risco de complicações, a diarreia aquosa isolada não é indicação de antibioticoterapia profilática. O uso de antibióticos nessa faixa etária reserva-se a casos de suspeita clínica de sepse ou infecção bacteriana sistêmica documentada, e não de forma universal para todos os casos de diarreia.\n\nAlternativa b) Incorreta. A desidratação grave (Plano C) indica a necessidade de expansão volêmica imediata por via intravenosa para restaurar a estabilidade hemodinâmica. A gravidade da desidratação não define, por si só, a necessidade de antibióticos, pois quadros virais graves também podem levar ao Plano C. O antibiótico só seria considerado em casos de Plano C se houvesse suspeita específica de cólera.\n\nAlternativa c) Correta. Esta alternativa descreve as indicações clássicas para o tratamento medicamentoso específico na diarreia aguda. A presença de sangue nas fezes (disenteria) sugere etiologia bacteriana invasiva (principalmente *Shigella*), na qual o antibiótico reduz a duração da doença e a transmissão. A *Giardia lamblia*, sendo um protozoário, requer tratamento com antiprotozoários específicos (como metronidazol ou tinidazol) quando identificada ou fortemente suspeitada.\n\nAlternativa d) Incorreta. A intolerância secundária à lactose ocorre devido à perda transitória da enzima lactase na borda em escova do epitélio intestinal após uma agressão infecciosa. O manejo é dietético, com a retirada temporária da lactose ou uso de fórmulas específicas, não havendo indicação de antibióticos para essa condição.\n\nAlternativa e) Incorreta. O uso rotineiro de antibióticos em todos os casos de diarreia é contraindicado. Além de não reduzirem a duração dos quadros virais, os antibióticos podem causar efeitos colaterais, selecionar cepas bacterianas resistentes e prolongar o estado de portador em certas infecções (como na salmonelose não complicada).",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:48.244Z"
+  }
+]

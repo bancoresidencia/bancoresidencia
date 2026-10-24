@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_2ae572d7-1681-453a-a0af-e82463261c2c",
+    "originalId": "2ae572d7-1681-453a-a0af-e82463261c2c",
+    "statement": "No Brasil, estimam-se, para cada ano do triênio de 2023-2025, 17.010 casos novos de câncer de colo do útero, correspondendo a um risco calculado de 15,38 casos/100 mil mulheres. Desse modo, o câncer de colo do útero representa o terceiro câncer mais incidente em mulheres no país. O programa brasileiro de rastreamento do câncer do colo do útero foi implementado em 1984, e, desde então, o modelo adotado passou por diversas atualizações.\n\nQual a idade de início e o modelo de rastreamento recomendado, de acordo com a mais atual Diretriz Brasileira para o Rastreamento Câncer de Colo Uterino, publicada em agosto de 2025, para mulheres de risco padrão?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Após a primeira relação sexual, independentemente da idade; citologia oncótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "18 anos; citologia oncótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "21 anos; citologia oncótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "25 anos; DNA-HPV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "30 anos; DNA-HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a atualização mais recente das diretrizes brasileiras de rastreamento do câncer do colo do útero, publicadas pelo Ministério da Saúde e pelo INCA em agosto de 2025. Esta atualização marca uma transição tecnológica importante na saúde pública do Brasil.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O rastreamento baseado exclusivamente no início da atividade sexual, independentemente da idade, não é recomendado. Realizar exames em mulheres muito jovens (antes dos 25 anos) resulta em um alto índice de intervenções desnecessárias, pois as infecções por HPV e as lesões de baixo grau nessa faixa etária apresentam altíssima taxa de regressão espontânea. Além disso, o modelo de citologia oncótica como triagem primária foi substituído na nova diretriz.\n\nAlternativa b) Incorreta. A idade de 18 anos não é o marco inicial adotado pelas diretrizes brasileiras. O início precoce do rastreamento não reduz a mortalidade por câncer de colo uterino e aumenta o risco de tratamentos excisionais desnecessários que podem comprometer o futuro reprodutivo da mulher.\n\nAlternativa c) Incorreta. Embora a idade de 21 anos seja utilizada em alguns protocolos internacionais (como em versões anteriores de diretrizes americanas), o Brasil consolidou a idade de 25 anos como a mais custo-efetiva para o início do programa nacional. A citologia oncótica também não é mais a recomendação principal para o início do rastreamento segundo a diretriz de 2025.\n\nAlternativa d) Correta. A atualização de agosto de 2025 estabelece que, para mulheres de risco padrão, o rastreamento deve começar aos 25 anos de idade. A mudança fundamental desta nova diretriz é a substituição da citologia oncótica (Papanicolau) pelo teste de DNA-HPV como o método preferencial de rastreamento inicial. O teste de DNA-HPV possui maior sensibilidade e valor preditivo negativo, permitindo a detecção do vírus antes mesmo do surgimento de alterações celulares visíveis ao microscópio.\n\nAlternativa e) Incorreta. Apesar de o teste de DNA-HPV ser o modelo correto, a idade de 30 anos não é o marco inicial definido pela diretriz brasileira de 2025. O Ministério da Saúde optou por manter o início aos 25 anos para garantir a cobertura de uma parcela da população que já apresenta risco para lesões precursoras.\n\nEm resumo, a nova diretriz de 2025 alinha o Brasil com as melhores evidências científicas globais, mantendo o início do rastreamento aos 25 anos, mas migrando para uma tecnologia molecular (DNA-HPV) mais precisa que a citologia convencional.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  },
+  {
+    "id": "AJUDA_2af82269-2e5f-4d06-972c-d37d615314b4",
+    "originalId": "2af82269-2e5f-4d06-972c-d37d615314b4",
+    "statement": "Os Stafilococcus aureus são agentes de doenças graves, principalmente em lactentes. O tratamento de infecções, entretanto, requer muitos dias de terapia endovenosa e, em alguns casos, a necessidade de um catéter venoso central. Qual dos novos antimicrobianos pode facilitar o uso terapêutico por permitir a administração de uma dose semanal no tratamento deste agente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Linezolide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Daptomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ceftaroline.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dalbavancina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o tratamento de infecções por *Staphylococcus aureus*, focando em novos antimicrobianos que apresentam perfis farmacocinéticos diferenciados, permitindo posologias que facilitam a desospitalização e reduzem a necessidade de acessos venosos prolongados. O ponto central para a resolução é identificar o fármaco que permite a administração em dose semanal.\n\nAlternativa a) Incorreta. A linezolida é uma oxazolidinona utilizada no tratamento de Gram-positivos multirresistentes, incluindo o MRSA. Embora possua uma excelente biodisponibilidade oral (quase 100%), o que permite a transição da via endovenosa para a via oral, sua administração deve ser feita a cada 12 horas. Portanto, não atende ao critério de dose semanal.\n\nAlternativa b) Incorreta. A daptomicina é um lipopeptídeo cíclico com ação bactericida dependente de concentração contra Gram-positivos. Sua administração é feita exclusivamente por via endovenosa e em dose única diária (uma vez a cada 24 horas). Apesar de ser uma posologia confortável, não permite o intervalo de uma semana entre as doses.\n\nAlternativa c) Incorreta. A ceftarolina é uma cefalosporina de quinta geração, sendo o primeiro betalactâmico com afinidade pela PBP2a, o que confere atividade contra o *Staphylococcus aureus* resistente à meticilina (MRSA). No entanto, sua meia-vida exige administrações frequentes, geralmente a cada 12 horas por via endovenosa, não permitindo o uso semanal.\n\nAlternativa d) Correta. A dalbavancina é um lipoglicopeptídeo de segunda geração, derivada da teicoplanina. O grande diferencial deste fármaco é a sua meia-vida terminal extremamente longa (cerca de 147 a 250 horas). Essa característica permite regimes posológicos inovadores para infecções de pele e partes moles, como a administração de uma dose única de 1500 mg ou um regime de duas doses de 1000 mg no primeiro dia e 500 mg após uma semana (no oitavo dia). Essa flexibilidade posológica é o que a questão descreve como facilitador terapêutico para evitar o uso prolongado de cateteres e internações.\n\nGabarito: Letra (d).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  },
+  {
+    "id": "AJUDA_2b03fd63-08ca-4512-b758-d18a4a50807e",
+    "originalId": "2b03fd63-08ca-4512-b758-d18a4a50807e",
+    "statement": "Paciente do sexo feminino, 38 anos, vem ao consultório bastante preocupada por uma alteração evidenciada em ultrassonografia que fez em um pronto socorro por queixa de dor em baixo ventre. O exame em questão revelava imagem nodular hiperecóica e homogênea de 4cm em lobo direito do fígado. A paciente nega história de febre, dor no hipocôndrio direito, perda de peso e icterícia. Ao exame físico a paciente está em bom estado geral, bem nutrida, afebril, anictérica, eupneica, hemodinamicamente estável, sem edemas. Seu abdome é plano, flácido, indolor, sem ascite ou massas palpáveis. Você solicitou hemograma e dosagem de enzimas hepáticas. Bilirrubinas, TAP e albumina, além de tomografia computadorizada de abdome com contraste venoso. Tanto o hemograma quanto os demais exames bioquímicos eram normais. A tomografia evidenciou lesão bem definida, de limites precisos, com densidade semelhante à de vasos sanguíneos, captante de contraste, com preenchimento total de padrão centrípeto. Restante do parênquima hepático e demais órgãos abdominais sem alterações. Sobre o caso descrito, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de hiperplasia nodular focal, estando indicada a hepatectomia devido ao altíssimo risco de malignização da lesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico de lesão metastática não pode ser adequadamente excluído, estando indicada a colonoscopia para investigação de provável tumor primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As características radiológicas são ambíguas e sugerem lesão neoplásica primária, estando indicada a biópsia percutânea por agulha para definição diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O padrão de imagem tomográfico é suficiente para fechar o diagnóstico de hemangioma e indicar tratamento expectante, porém a ressonância magnética apresenta maior sensibilidade e especificidade para o caso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nO caso descreve uma paciente de 38 anos com um achado incidental em exame de imagem (incidentaloma hepático). As características apresentadas são fundamentais para o diagnóstico diferencial das lesões hepáticas benignas:\n1. Ultrassonografia: Imagem hiperecoica e homogênea. Este é o aspecto clássico do hemangioma à USG.\n2. Tomografia Computadorizada (TC): Lesão com densidade de vasos sanguíneos e preenchimento centrípeto pelo contraste (realce nodular periférico que progride para o centro da lesão). Este padrão de \"enchimento\" é patognomônico do hemangioma cavernoso.\n3. Quadro Clínico e Laboratorial: Paciente assintomática com exames de função hepática e marcadores de necrose/colestase normais, o que reforça a natureza benigna e a ausência de hepatopatia de base.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A descrição radiológica não corresponde à Hiperplasia Nodular Focal (HNF). Na TC, a HNF geralmente apresenta-se como uma lesão com realce arterial intenso e homogêneo, frequentemente com uma cicatriz central que não capta contraste precocemente. Além disso, tanto o hemangioma quanto a HNF são lesões benignas com risco de malignização praticamente nulo, não havendo indicação de hepatectomia para lesões assintomáticas e pequenas.\n\nAlternativa B (Incorreta): Embora metástases devam ser consideradas em massas hepáticas, o padrão de preenchimento centrípeto e a densidade igual à dos vasos sanguíneos são muito específicos para hemangioma. Além disso, a paciente é jovem, está em excelente estado geral, não possui sintomas constitucionais e os exames laboratoriais são normais, o que torna a hipótese de neoplasia metastática com sítio primário oculto (como cólon) muito improvável.\n\nAlternativa C (Incorreta): As características radiológicas descritas não são ambíguas; elas são clássicas para o diagnóstico de hemangioma. A biópsia percutânea é formalmente contraindicada quando há suspeita de hemangioma devido ao alto risco de hemorragia grave, uma vez que a lesão é composta por emaranhados de vasos sanguíneos e espaços cavernosos. O diagnóstico deve ser firmado por exames de imagem (TC ou Ressonância).\n\nAlternativa D (Correta): A TC com contraste, ao demonstrar o realce periférico e o preenchimento centrípeto (globular enhancement), é altamente fidedigna para o diagnóstico de hemangioma. Em pacientes assintomáticos com lesões menores que 5 cm e características típicas, a conduta é expectante (observação). A Ressonância Magnética (RM) é, de fato, o exame com maior sensibilidade e especificidade para lesões hepáticas, apresentando no hemangioma o sinal de \"lâmpada brilhante\" (hipersinal acentuado em T2).\n\nConclusão:\nO diagnóstico é Hemangioma Hepático. Por ser uma lesão benigna, sem risco de malignização e, no caso, assintomática e de tamanho moderado (4 cm), não requer intervenção cirúrgica, apenas acompanhamento ou alta se o diagnóstico for inequívoco.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  },
+  {
+    "id": "AJUDA_2b0e22db-24c8-4749-9b12-3b7c84fba510",
+    "originalId": "2b0e22db-24c8-4749-9b12-3b7c84fba510",
+    "statement": "Paciente de 30 anos procurou consultório de ginecologia relatando fadiga, dismenorreia progressiva e dispareunia de profundidade. Toque vaginal: útero de volume normal, retroversofletido, dor à mobilização do colo. \nCom base nessas informações, a principal hipótese diagnóstica é",
+    "options": [
+      {
+        "id": "A",
+        "text": "doença inflamatória pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "miomatose uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cisto hemorrágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "endometriose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico de uma paciente em idade reprodutiva com sintomas de dor pélvica crônica. A principal hipótese diagnóstica é a endometriose, baseada na tríade de dismenorreia progressiva, dispareunia de profundidade e dor à mobilização do colo uterino.\n\nAnálise das alternativas:\n\na) Incorreta. A Doença Inflamatória Pélvica (DIP) geralmente se manifesta como um quadro agudo ou subagudo, acompanhado de febre, corrimento vaginal purulento e dor à palpação de anexos. Embora a dor à mobilização do colo seja um critério para DIP, a história de dismenorreia progressiva (que piora com o tempo) e a ausência de sinais infecciosos direcionam o diagnóstico para uma patologia crônica.\n\nb) Incorreta. A miomatose uterina costuma cursar com aumento do volume uterino e alterações no fluxo menstrual (hipermenorreia ou menorragia). No caso descrito, o útero possui volume normal, o que torna essa hipótese menos provável. Além disso, a dispareunia de profundidade não é o sintoma cardinal dos miomas, a menos que sejam volumosos ou estejam localizados em regiões específicas.\n\nc) Incorreta. O cisto hemorrágico é uma intercorrência aguda, resultante da ruptura ou sangramento interno de um cisto funcional (geralmente de corpo lúteo). Causa dor pélvica súbita e autolimitada, não explicando sintomas crônicos e progressivos como a dismenorreia relatada pela paciente.\n\nd) Correta. A endometriose é definida pela presença de tecido endometrial fora da cavidade uterina. Os sintomas de dismenorreia progressiva (dor que aumenta a cada ciclo) e dispareunia de profundidade (dor no fundo da vagina durante o coito) são marcos da doença. O achado de útero retroversofletido e dor à mobilização do colo sugere a presença de focos de endometriose e aderências no compartimento posterior da pelve (fundo de saco de Douglas e ligamentos uterossacrais), que são locais frequentes de implantes da doença. O volume uterino normal ajuda a diferenciar a endometriose da adenomiose ou da miomatose.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": 53.703654935558916,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  },
+  {
+    "id": "AJUDA_2b1071e4-2f70-41bb-9a90-2e317f55fafd",
+    "originalId": "2b1071e4-2f70-41bb-9a90-2e317f55fafd",
+    "statement": "Menino, 16 anos, apresenta febre e tosse seca há 7 dias; em uso de amoxicilina há 96 horas, mantendo febre e piora do estado geral com cansaço aos esforços e aparecimento de exantema maculo papular. Exames laboratoriais: anemia normocrômica; aminotransferases pouco elevadas (menor que três vezes o limite superior de normalidade). Radiografia do tórax: infiltrado intersticial reticular na base direita. Pode-se afirmar que o tratamento deve ser iniciado com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "molnupiravir",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cefuroxima",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "azitromicina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "oseltamivir",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um quadro clássico de pneumonia atípica em um adolescente. A análise dos pontos-chave do enunciado permite chegar ao diagnóstico e tratamento corretos:\n\n1. Perfil do paciente e evolução: O paciente é um adolescente (faixa etária em que patógenos atípicos são muito comuns) com quadro arrastado (7 dias) de tosse seca e febre.\n\n2. Falha terapêutica: O uso de amoxicilina por 96 horas sem melhora sugere que o agente etiológico não possui parede celular (alvo dos beta-lactâmicos) ou é um patógeno intracelular. Isso aponta fortemente para Mycoplasma pneumoniae.\n\n3. Manifestações extrapulmonares: O aparecimento de exantema maculopapular, a anemia (que pode sugerir hemólise por crioglutininas, comum no Mycoplasma) e a leve elevação de aminotransferases são achados sistêmicos típicos de infecções por Mycoplasma pneumoniae.\n\n4. Radiografia: O infiltrado intersticial reticular é o padrão radiológico esperado nas pneumonias atípicas, contrastando com a consolidação lobar típica das pneumonias bacterianas clássicas (como pelo pneumococo).\n\nAnálise das alternativas:\n\na) Incorreta. O molnupiravir é um antiviral indicado para o tratamento de COVID-19 em pacientes adultos com risco de progressão para doença grave. Não é o tratamento para pneumonia atípica bacteriana.\n\nb) Incorreta. A cefuroxima é uma cefalosporina de segunda geração (beta-lactâmico). Como o paciente já apresentou falha ao uso de amoxicilina, insistir em outro beta-lactâmico não é adequado, pois esses antibióticos não têm ação contra agentes atípicos como o Mycoplasma, que não possui parede celular.\n\nc) Correta. A azitromicina é um macrolídeo, que é a classe de escolha para o tratamento de pneumonias atípicas. Ela age inibindo a síntese proteica bacteriana (subunidade 50S do ribossomo), sendo eficaz contra o Mycoplasma pneumoniae.\n\nd) Incorreta. O oseltamivir é indicado para o tratamento de gripe (influenza). Embora o vírus influenza possa causar pneumonia intersticial, o quadro de 7 dias de evolução, a falha prévia de antibiótico e as alterações laboratoriais e cutâneas direcionam o diagnóstico para etiologia bacteriana atípica. Além disso, o benefício do oseltamivir é maior quando iniciado nas primeiras 48 horas de sintomas.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  },
+  {
+    "id": "AJUDA_2b14bdb4-b1d2-4814-8024-13117cdeee73",
+    "originalId": "2b14bdb4-b1d2-4814-8024-13117cdeee73",
+    "statement": "Homem, 28 anos, vítima de ferimento por arma de fogo em coxa direita, dá entrada no pronto socorro com sangramento ativo moderado no local da lesão. Ao exame físico inicial, apresenta se consciente, PA: 100x70 mmHg, FC: 110 bpm, com ausência de pulso pedioso e tibial posterior direitos. O pulso femoral direito está presente, mas diminuído em relação ao contralateral. Há hematoma expansivo em região inguinal direita e déficit sensitivo motor discreto do pé direito. A angiotomografia com contraste demonstra lesão da artéria femoral superficial direita com extravasamento ativo de contraste e hematoma adjacente. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Embolização endovascular da artéria femoral superficial para controle do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Controle compressivo local, injeção de fibrina e observação clínica por 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exploração cirúrgica imediata com reparo vascular direto da artéria femoral superficial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicado intervenção com colocação de stent revestido em artéria femoral superficial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um trauma vascular penetrante com a presença de sinais duros (sinais de certeza) de lesão arterial: sangramento ativo, hematoma expansivo, ausência de pulsos distais e déficit neurológico que sugere isquemia aguda do membro inferior. A angiotomografia confirma a lesão da artéria femoral superficial com extravasamento ativo. Diante desse quadro de urgência cirúrgica com ameaça à viabilidade do membro, a prioridade é o controle do sangramento e o restabelecimento imediato da perfusão distal.\n\nAlternativa a: Incorreta. A embolização é indicada para oclusão de ramos arteriais secundários ou não críticos. A artéria femoral superficial é a principal via de fluxo arterial para a perna e o pé; sua oclusão deliberada levaria à necrose tecidual e amputação do membro por isquemia grave.\n\nAlternativa b: Incorreta. Medidas conservadoras e compressão local são contraindicadas na presença de lesão arterial confirmada com hematoma expansivo, sangramento ativo e sinais de isquemia distal. A manutenção dessa conduta posterga o tratamento definitivo, permitindo a progressão da isquemia e do choque hipovolêmico.\n\nAlternativa c: Correta. A exploração cirúrgica aberta imediata é a conduta padrão-ouro no trauma vascular de extremidades com sinais duros de lesão. Essa abordagem permite o controle hemostático rápido, o desbridamento de tecidos desvitalizados causados pelo projétil e o reparo vascular, seja por sutura primária, anastomose término-terminal ou interposição de enxerto (venoso ou sintético), restabelecendo a circulação do membro.\n\nAlternativa d: Incorreta. Embora a técnica endovascular com stent revestido tenha espaço em situações específicas, ela não é a conduta mais adequada em ferimentos penetrantes por arma de fogo associados a sangramento ativo e isquemia aguda. A ferida por arma de fogo é contaminada, o que eleva substancialmente o risco de infecção de próteses intravasculares, além de o segmento femoral sofrer forças mecânicas contínuas de flexão, com maior risco de fratura ou trombose do stent.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  },
+  {
+    "id": "AJUDA_2b1b5307-4dd1-478e-8227-8f6221e3716a",
+    "originalId": "2b1b5307-4dd1-478e-8227-8f6221e3716a",
+    "statement": "Quanto a doença renal crônica, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inibidor da enzima conversora da angiotensina, bloqueador de canal de cálcio e betabloqueador – são todas drogas nefroprotetoras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eritropoetina, hidróxido de ferro – são indicadas no caso de anemia em fases avançadas da doença renal crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Carbonato de cálcio e sevelamer – são indicadas para o tratamento da hipocalcemia associada a doença renal crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Enalapril + losartana + inibidor SGLT2 + antagonistas do receptor mineralocorticoide é o esquema preconizado para tratar a doença renal crônica no estágio IV e V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diálise e transplante são indicados nos pacientes em estágio IV e V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: INCORRETA. Os inibidores da enzima conversora da angiotensina (IECA) e os bloqueadores dos receptores da angiotensina (BRA) são as principais classes nefroprotetoras, pois reduzem a pressão intraglomerular e a proteinúria. Os bloqueadores dos canais de cálcio (especialmente os di-hidropiridínicos, como o anlodipino) e os betabloqueadores são excelentes anti-hipertensivos e reduzem o risco cardiovascular, mas não possuem a propriedade de nefroproteção direta clássica como os inibidores do sistema renina-angiotensina-aldosterona.\n\nAlternativa B: CORRETA. Na doença renal crônica avançada, ocorre uma redução na produção de eritropoetina pelas células intersticiais peritubulares renais, resultando em anemia normocítica e normocrômica. O tratamento padrão envolve a reposição de eritropoetina sintética para estimular a medula óssea. No entanto, para que a eritropoetina seja eficaz, o paciente precisa de estoques adequados de ferro, sendo o hidróxido de ferro (reposição de ferro) essencial no manejo desses pacientes.\n\nAlternativa C: INCORRETA. O carbonato de cálcio é um quelante de fósforo que contém cálcio e pode ajudar a elevar os níveis de cálcio sérico. Contudo, o sevelâmer é um quelante de fósforo não cálcico. Ele é indicado especificamente para tratar a hiperfosfatemia sem aumentar o cálcio, sendo muito útil em pacientes que já apresentam níveis elevados de cálcio ou calcificações vasculares. Portanto, o sevelâmer não é indicado para tratar a hipocalcemia.\n\nAlternativa D: INCORRETA. Esta alternativa propõe o duplo bloqueio do sistema renina-angiotensina (enalapril + losartana), o que é formalmente contraindicado devido ao alto risco de complicações como hipercalemia e insuficiência renal aguda, sem benefício adicional comprovado na redução de desfechos. Além disso, embora os inibidores de SGLT2 e antagonistas da aldosterona sejam benéficos em fases iniciais e moderadas, seu uso nos estágios IV e V exige cautela extrema ou é contraindicado dependendo do nível de filtração glomerular.\n\nAlternativa E: INCORRETA. O estágio IV da doença renal crônica (ritmo de filtração glomerular entre 15 e 29 mL/min) é uma fase de manejo conservador e preparação para terapia renal substitutiva. A indicação de diálise e transplante ocorre tipicamente no estágio V (abaixo de 15 mL/min), quando o paciente apresenta uremia franca ou o tratamento conservador não é mais suficiente para manter a homeostase do organismo. Indicar diálise precocemente no estágio IV, sem sintomas urêmicos ou complicações graves, não é a conduta padrão.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  },
+  {
+    "id": "AJUDA_2b1bbdcd-7e4b-4d39-af88-19b0cdcf9f1b",
+    "originalId": "2b1bbdcd-7e4b-4d39-af88-19b0cdcf9f1b",
+    "statement": "Um recém-nascido de 37 semanas e 2 dias de idade gestacional, nasceu de parto cesárea, hipotônico e sem movimentos respiratórios. Logo após os passos iniciais da estabilização, ele foi avaliado com FC: 80 bpm e respiração irregular. De acordo com as Diretrizes de Reanimação Neonatal da Sociedade Brasileira de Pediatria, qual a conduta correta a ser iniciada prontamente nesse momento, dentro dos primeiros 60 segundos de vida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Três compressões torácicas sobre o esterno, seguidas de uma ventilação, alternadamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Duas ventilações com pressão positiva alternadas com 15 compressões torácicas sobre o esterno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Intubação orotraqueal e administração de adrenalina traqueal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ventilação com pressão positiva em máscara com ar ambiente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Ventilação com pressão positiva em máscara com oxigênio a 100%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso apresenta um recém-nascido a termo (37 semanas e 2 dias) que, apos a realizacao dos passos iniciais de estabilizacao (aquecer, posicionar, aspirar se necessario e secar), mantem frequencia cardiaca de 80 bpm (menor que 100 bpm) e respiracao irregular. \n\nSegundo as Diretrizes de Reanimacao Neonatal da Sociedade Brasileira de Pediatria (SBP), a presenca de apneia, respiracao irregular ou frequencia cardiaca menor que 100 bpm apos os passos iniciais e indicacao imediata de Ventilacao com Pressao Positiva (VPP) com mascara. Esse procedimento e a medida mais importante e eficaz da reanimacao e deve ser iniciado impreterivelmente no primeiro minuto de vida (o Minuto de Ouro). Para recem-nascidos com 34 semanas ou mais de idade gestacional, a VPP deve ser iniciada sempre com ar ambiente (oxigenio a 21%), visando evitar lesoes teciduais por estresse oxidativo.\n\nAnalise das alternativas:\n\nAlternativa A - Incorreta. As compressoes toracicas (massagem cardiaca) so sao indicadas se a frequencia cardiaca permanecer abaixo de 60 bpm apos pelo menos 30 segundos de VPP efetiva, preferencialmente com via aerea avancada. Alem disso, a VPP ainda sequer foi iniciada.\n\nAlternativa B - Incorreta. A relacao de 15 compressoes para 2 ventilacoes e aplicada na reanimacao pediatrica (fora da sala de parto). Na reanimacao neonatal, a relacao preconizada e de 3 compressoes para 1 ventilacao (3:1). Ademais, a massagem cardiaca nao esta indicada neste momento.\n\nAlternativa C - Incorreta. A intubacao traqueal e o uso de adrenalina sao intervencoes avancadas, reservadas para situacoes em que a frequencia cardiaca permanece abaixo de 60 bpm mesmo apos VPP adequada e massagem cardiaca sincronizada. O primeiro passo e ventilar com mascara.\n\nAlternativa D - Correta. A indicacao precisa para este recem-nascido e o inicio imediato da VPP com mascara facial utilizando ar ambiente (fracao inspirada de O2 a 21%), por se tratar de um concepto com idade gestacional maior ou igual a 34 semanas.\n\nAlternativa E - Incorreta. O uso de oxigenio a 100% no inicio da reanimacao de recem-nascidos a termo ou pre-termos tardios e formalmente contraindicado devido ao risco de hiperoxia e formacao de radicais livres. A suplementacao de oxigenio deve ser feita de forma titulada por meio de blender, baseando-se nos valores alvo da oximetria de pulso para cada minuto de vida.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  },
+  {
+    "id": "AJUDA_2b23af5b-66f1-4e97-8bb6-07656593a14f",
+    "originalId": "2b23af5b-66f1-4e97-8bb6-07656593a14f",
+    "statement": "Mulher, de 27 anos de idade, comparece à Unidade Básica de Saúde para “fazer o preventivo”. Ela está assintomática, nunca teve sangramento vaginal anormal nem sangramento pós-coito e não está grávida. Relata vida sexual ativa desde os 17 anos de idade e nunca fez rastreamento para câncer do colo do útero.\n\nApós dois meses, a paciente retorna com o resultado do exame alterado e presença do genótipo 16 do HPV. Qual é a conduta recomendada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar tratamento ablativo imediato do colo uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aguardar 12 meses e repetir o teste de DNA-HPV oncogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar citologia reflexa e encaminhar para colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar diretamente para a colposcopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente em questão tem 27 anos e realizou um teste de biologia molecular (DNA-HPV) como método de rastreamento primário para o câncer do colo do útero. O resultado indicou a presença do HPV genótipo 16. O HPV 16, juntamente com o 18, é o tipo de maior potencial oncogênico, sendo responsável pela maioria dos casos de câncer cervical e lesões precursoras de alto grau.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. O tratamento ablativo (como crioterapia ou termocoagulação) ou excisional não deve ser indicado apenas com base em um teste de HPV positivo. É indispensável a realização prévia de uma colposcopia e, se necessário, biópsia, para confirmar a presença, a localização e o grau da lesão antes de qualquer intervenção terapêutica. Tratar sem diagnóstico histológico é uma conduta inadequada neste cenário.\n\nAlternativa b) Incorreta. A conduta de repetir o teste em 12 meses é aplicada em situações de menor risco, como quando há citologias de baixo grau em pacientes jovens ou quando o rastreamento por HPV identifica tipos de alto risco que não sejam o 16 ou o 18 (em alguns protocolos de triagem). Para o HPV 16, o risco de uma lesão de alto grau subjacente é elevado, exigindo investigação imediata.\n\nAlternativa c) Incorreta. A citologia reflexa é a estratégia de realizar o exame citopatológico na mesma amostra quando o teste de HPV é positivo para tipos de alto risco \"não 16 e não 18\". Nesses casos, a citologia serve como um filtro para decidir quem vai para a colposcopia. No entanto, para os genótipos 16 e 18, o consenso internacional e os novos protocolos de rastreamento primário por HPV indicam que a paciente deve ser encaminhada diretamente para a colposcopia, independentemente do que a citologia possa mostrar.\n\nAlternativa d) Correta. De acordo com as diretrizes de rastreamento que utilizam o teste de DNA-HPV como triagem primária (como as da ASCCP e protocolos adotados em diversos serviços de referência no Brasil), a detecção dos genótipos 16 ou 18 confere um risco imediato suficientemente alto para lesões NIC 3+, o que justifica o encaminhamento direto para a colposcopia. A genotipagem permite identificar as pacientes de maior risco que não devem ser submetidas a outros filtros de triagem (como a citologia), agilizando o diagnóstico de possíveis lesões pré-neoplásicas.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  },
+  {
+    "id": "AJUDA_2b245c8d-100a-4879-9a0c-bbecc6aa529e",
+    "originalId": "2b245c8d-100a-4879-9a0c-bbecc6aa529e",
+    "statement": "Você está de plantão na Unidade de Pronto-Atendimento (UPA) e atende um adolescente com 11 anos de idade com história de dor e inchaço em joelho esquerdo há 5 dias. Ele conta que, há 2 dias, iniciou com febre, dificuldade para deambular e aumento da dor e do inchaço na região. Referia trauma durante jogo de futebol. Ao exame físico, apresenta-se em regular estado geral, palidez cutânea, febril, eupneico, anictérico, acianótico e artrite muito dolorosa em joelho esquerdo. Hemograma com leucocitose com desvio à esquerda, proteína C reativa e VHS elevados. Nesse caso, o agente etiológico mais provável e a antibioticoterapia indicada são",
+    "options": [
+      {
+        "id": "A",
+        "text": "Streptococcus pneumoniae; ampicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Staphylococcus aureus; oxacilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "H. influenzae tipo B; amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kingella kingae; ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Salmonella; penicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — febre, dor intensa, edema, limitação funcional (dificuldade para deambular) e sinais inflamatórios sistêmicos (leucocitose e elevação de PCR/VHS) em uma articulação única — é um caso clássico de artrite séptica aguda. Em pediatria, a história de trauma local é frequentemente relatada como um fator predisponente ou coincidente.\n\nAbaixo, a análise das alternativas:\n\na) Incorreta. O *Streptococcus pneumoniae* pode causar artrite séptica, mas é muito menos frequente que o *S. aureus*, ocorrendo geralmente em crianças menores de 2 anos ou em pacientes com condições predisponentes (como asplenia). Além disso, a ampicilina não seria a droga de escolha inicial sem a identificação específica do agente.\n\nb) Correta. O *Staphylococcus aureus* é o principal agente etiológico das infecções osteoarticulares (artrite séptica e osteomielite) em todas as faixas etárias acima do período neonatal, sendo responsável por cerca de 70 a 90% dos casos em escolares e adolescentes. A oxacilina é uma penicilina semissintética resistente à penicilinase, sendo o tratamento de escolha para o *S. aureus* sensível à meticilina (MSSA), que ainda é o perfil mais comum em infecções comunitárias no Brasil.\n\nc) Incorreta. O *Haemophilus influenzae* tipo B (Hib) era uma causa comum de artrite em crianças pequenas, mas tornou-se raro após a introdução da vacinação sistemática. Além disso, a amoxicilina apresenta altas taxas de resistência para este agente, e o perfil do paciente (11 anos) não sugere essa etiologia.\n\nd) Incorreta. A *Kingella kingae* é um agente emergente e frequente de artrite séptica, porém sua incidência é predominantemente em crianças entre 6 meses e 4 anos de idade. O quadro clínico costuma ser um pouco mais insidioso e menos exuberante do que o descrito no enunciado.\n\ne) Incorreta. A *Salmonella* é um agente etiológico importante em pacientes portadores de hemoglobinopatias, especialmente a anemia falciforme. No entanto, mesmo nesses pacientes, o *S. aureus* continua sendo muito relevante. A penicilina não possui cobertura adequada para *Salmonella*, que geralmente exige cefalosporinas de terceira geração.\n\nResumo: Diante de um quadro de artrite séptica em um adolescente de 11 anos, o *Staphylococcus aureus* deve ser sempre a primeira suspeita, e a cobertura inicial deve ser feita com oxacilina (ou cefalosporina de 1ª geração).",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Artropatias Infecciosas",
+      "Ombro e Joelho Pediátrico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:09.448Z"
+  }
+]

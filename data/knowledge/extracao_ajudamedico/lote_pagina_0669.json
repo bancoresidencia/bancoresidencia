@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_ba72fdc2-0060-478b-af56-c4cacb96e7af",
+    "originalId": "ba72fdc2-0060-478b-af56-c4cacb96e7af",
+    "statement": "Paciente, sexo feminino, 28 anos, sexualmente ativa, com exame citopatológico do colo do útero (Papanicolau) mostrando Lesão Intraepitelial Escamosa de Baixo Grau (LSIL), sem achados clínicos relevantes ao exame ginecológico. De acordo com as diretrizes do Ministério da Saúde/Instituto Nacional de Câncer (INCA) para rastreamento do câncer do colo do útero em mulheres ≥ 25 anos, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar conização do colo do útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir o exame citopatológico em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar imediatamente para colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever creme vaginal e repetir exame em 1 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "As diretrizes brasileiras para o rastreamento do câncer do colo do útero, estabelecidas pelo Ministério da Saúde e pelo Instituto Nacional de Câncer (INCA), definem condutas específicas baseadas no resultado da citopatologia e na faixa etária da paciente. A Lesão Intraepitelial Escamosa de Baixo Grau (LSIL) reflete, na maioria das vezes, a manifestação citopatológica da infecção pelo HPV. Por apresentar altas taxas de regressão espontânea, a conduta inicial é conservadora para evitar procedimentos desnecessários.\n\nPara mulheres com 25 anos ou mais que apresentam o primeiro resultado de LSIL, a recomendação oficial é a repetição do exame citopatológico em 6 meses. Se o novo exame for negativo, a paciente deve realizar outra repetição em 6 meses e, se mantiver o resultado negativo, retorna ao rastreamento rotineiro. Se o resultado da repetição for LSIL ou qualquer alteração mais grave (como ASC-US, ASC-H, HSIL ou AGC), a paciente deve, então, ser encaminhada para colposcopia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A conização (ou cirurgia de alta frequência) é um procedimento terapêutico e diagnóstico indicado para lesões de alto grau (HSIL/NIC II e III) ou quando há suspeita de invasão. Não há indicação de tratamento cirúrgico imediato para uma lesão de baixo grau em paciente jovem e sem avaliação colposcópica prévia.\n\nAlternativa b) Correta. Conforme os protocolos do Ministério da Saúde/INCA, a conduta frente ao primeiro achado de LSIL em mulheres de 25 anos ou mais é repetir o preventivo em 6 meses. Nota-se que, se a paciente tivesse menos de 25 anos, a recomendação seria repetir o exame apenas em 3 anos.\n\nAlternativa c) Incorreta. O encaminhamento imediato para colposcopia para o achado de LSIL só está indicado em situações específicas, como em pacientes imunossuprimidas ou naquelas que apresentam persistência da lesão após o acompanhamento citológico de 6 meses. Para a população geral acima de 25 anos, a conduta inicial é a observação com repetição citológica.\n\nAlternativa d) Incorreta. O tratamento com creme vaginal (antibióticos ou antifúngicos) é indicado para infecções vaginais sintomáticas (vaginites) ou quando o exame é considerado insatisfatório por excesso de inflamação, o que não é o caso relatado. Além disso, o intervalo de 1 ano está incorreto para o seguimento de uma paciente de 28 anos com resultado de LSIL, cujo prazo deve ser de 6 meses.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  },
+  {
+    "id": "AJUDA_ba7d89f0-63b4-4a36-b304-cece923ee2c3",
+    "originalId": "ba7d89f0-63b4-4a36-b304-cece923ee2c3",
+    "statement": "Em relação ao ciclo menstrual normal, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a fase progestacional tem uma duração fixa de 14 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "no início da fase folicular, o FSH é alto para desencadear o crescimento dos folículos ovarianos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o pico de LH é rápido e ocorre cerca de 48 a 72 horas antes da ovulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o pico de FSH ocorre logo após a ovulação para a produção de progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o pico de estrogênio bloqueia o LH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a): Correta. A fase progestacional, também chamada de fase lútea, é caracterizada pela presença do corpo lúteo e possui uma duração notavelmente constante de 14 dias na maioria das mulheres. Essa estabilidade ocorre devido ao tempo de vida programado do corpo lúteo na ausência de gravidez. As variações na duração total do ciclo menstrual (ciclos mais curtos ou mais longos) devem-se, geralmente, a variações na fase folicular, e não na fase lútea.\n\nAlternativa (b): Incorreta. No início da fase folicular, os níveis de FSH começam a subir sutilmente devido à queda da progesterona e do estrogênio ao final do ciclo anterior (mecanismo de feedback negativo). No entanto, o termo \"alto\" é impreciso. O FSH aumenta progressivamente para recrutar a coorte de folículos, mas seus níveis mais elevados, de fato, ocorrem no pico pré-ovulatório, simultaneamente ao LH.\n\nAlternativa (c): Incorreta. O pico de LH é o evento que precede a ovulação, mas o intervalo de tempo está incorreto. A ovulação ocorre, em média, de 34 a 36 horas após o início da elevação do LH e cerca de 10 a 12 horas após o seu pico máximo. O intervalo de 48 a 72 horas é longo demais para o padrão fisiológico normal.\n\nAlternativa (d): Incorreta. O pico de FSH ocorre de forma síncrona ao pico de LH, ou seja, antes da ovulação. Esse pico de FSH no meio do ciclo é importante para garantir a maturação final do oócito e a liberação de enzimas proteolíticas para a ruptura folicular. A produção de progesterona após a ovulação é mantida pelo corpo lúteo sob influência do LH, e não por um pico de FSH pós-ovulatório.\n\nAlternativa (e): Incorreta. Embora o estrogênio exerça feedback negativo na maior parte da fase folicular, ocorre uma inversão de comportamento no final desta fase. Quando o estrogênio atinge níveis elevados e sustentados (acima de 200 pg/mL por aproximadamente 48 horas), ele passa a exercer feedback positivo sobre a hipófise, o que desencadeia o pico de LH necessário para a ovulação. Portanto, o pico de estrogênio estimula, e não bloqueia, o LH.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  },
+  {
+    "id": "AJUDA_ba82641d-715f-4252-ada7-c2a5d2869bf5",
+    "originalId": "ba82641d-715f-4252-ada7-c2a5d2869bf5",
+    "statement": "Na pediculose do couro cabeludo, comum em crianças na faixa pré-escolar e escolar, frequentemente são encontradas lêndeas, ou seja:",
+    "options": [
+      {
+        "id": "A",
+        "text": "filhotes de piolhos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "insetos da mesma família dos piolhos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "piolhos fêmeas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ovos ou invólucros de ovos vazios.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A pediculose do couro cabeludo é uma infestação causada pelo inseto *Pediculus humanus capitis*. Para compreender a questão, é necessário revisar o ciclo biológico desse parasita, que passa pelas fases de ovo, ninfa (forma jovem) e adulto.\n\nAlternativa a: Incorreta. Os filhotes de piolhos, que são as formas imaturas que já eclodiram e possuem mobilidade, são chamados de ninfas. Elas são morfologicamente semelhantes aos adultos, porém menores e sexualmente imaturas.\n\nAlternativa b: Incorreta. As lêndeas não representam uma espécie ou família diferente de insetos. Elas são apenas uma fase do desenvolvimento do próprio *Pediculus humanus capitis*.\n\nAlternativa c: Incorreta. O piolho fêmea é o inseto adulto responsável por realizar a postura. A lêndea é o produto dessa postura, e não o agente causador adulto.\n\nAlternativa d: Correta. As lêndeas são os ovos depositados pelas fêmeas, fixados firmemente à haste do cabelo por uma substância cimentante (quitina). Clinicamente, o termo lêndea é utilizado para descrever tanto o ovo que ainda contém o embrião (geralmente localizado próximo ao couro cabeludo, a menos de 0,6 cm) quanto o invólucro de quitina que permanece aderido ao fio após a eclosão da ninfa (ovos vazios). A distinção é importante na prática médica para avaliar a atividade da infestação.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  },
+  {
+    "id": "AJUDA_ba866d45-c84e-4294-a9a9-57742be988fa",
+    "originalId": "ba866d45-c84e-4294-a9a9-57742be988fa",
+    "statement": "Mulher de 68 anos de idade evolui com quadro de dispneia de início agudo, ortopneia e tosse com expectoração de aspecto espumoso e róseo. Ao exame físico: a paciente encontra-se agitada, sudorética, cianótica e com uso evidente de musculatura acessória; frequência respiratória: 36 irpm; SatO2 em ar ambiente: 85%; pressão arterial: 232 x 131 mmHg em ambos os membros superiores; frequência cardíaca: 118 bpm; ausculta pulmonar: estertores crepitantes difusos até os ápices bilateralmente; cardíaco: ritmo de galope pela presença de terceira bulha (B3). Eletrocardiograma: taquicardia sinusal e sinais de sobrecarga ventricular esquerda, sem sinais de isquemia. Considerando a principal hipótese diagnóstica, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a hidralazina apresenta benefício na atual circunstância, considerando sua ação vasodilatadora que diminui o trabalho cardíaco, sem aumentar a frequência cardíaca de maneira indesejada durante a estabilização hemodinâmica inicial dessa paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o manejo inicial para essa paciente estabelece como meta terapêutica prioritária a redução da pressão arterial sistólica para níveis inferiores a 140 mmHg, logo na primeira hora, visando aliviar a sobrecarga ventricular esquerda aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o nitroprussiato deve ser evitado nessa situação específica, visto que seu mecanismo de ação resulta na redução acentuada da pós-carga e piora do fluxo coronariano, podendo agravar a isquemia miocárdica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o tratamento nessa situação preconiza o uso de labetalol, que age promovendo bloqueio simpático e redução do inotropismo cardíaco, fatores primordiais para o alívio da congestão pulmonar e melhora da saturação sistêmica periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o suporte ventilatório não invasivo, por meio de pressão positiva contínua nas vias aéreas, representa uma medida adjuvante valiosa capaz de auxiliar principalmente na redução da isquemia subendocárdica e no infarto do miocárdio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico principal: edema agudo de pulmão hipertensivo (insuficiência cardíaca aguda com crise hipertensiva, também chamada de \"SCAPE\", sympathetic crashing acute pulmonary edema). O quadro tem início agudo, ortopneia, expectoração rósea e espumosa, estertores difusos, B3, PA 232x131 mmHg e hipoxemia grave. O ECG mostra sobrecarga de VE sem isquemia.\n\nFisiopatologia: a ativação simpática intensa causa vasoconstrição e aumento abrupto da pós-carga. Há redistribuição de volume para o pulmão, elevação da pressão capilar pulmonar e transudação alveolar. A congestão decorre mais da redistribuição do que de sobrecarga volêmica real. Por isso o tratamento se baseia em vasodilatadores (nitroglicerina em altas doses IV, com ou sem nitroprussiato), diurético de alça se houver hipervolemia e ventilação não invasiva precoce.\n\nMeta pressórica: nas emergências hipertensivas com edema agudo de pulmão, recomenda-se reduzir a PAS para menos de 140 mmHg na primeira hora, com redução da PA média de cerca de 25% no máximo, sem queda abaixo de 100 mmHg de PAS ou da PAD. Esse é um dos poucos cenários em que a meta é mais agressiva, assim como na dissecção aórtica (PAS menor que 120 mmHg em 20 minutos).\n\nAnálise das alternativas:\n\na) Incorreta. A hidralazina causa vasodilatação arteriolar com taquicardia reflexa e aumento do consumo de oxigênio. Seu efeito é imprevisível e o controle é difícil. Ela é evitada no edema agudo de pulmão e na doença coronariana, sendo reservada à pré-eclâmpsia/eclâmpsia.\n\nb) Correta. A meta de reduzir a PAS para menos de 140 mmHg na primeira hora está de acordo com as diretrizes para emergência hipertensiva com edema agudo de pulmão. A redução da pós-carga alivia a sobrecarga do VE e a congestão pulmonar.\n\nc) Incorreta. O nitroprussiato é uma opção válida e potente no edema agudo de pulmão hipertensivo, pois reduz pré-carga e pós-carga. Seus cuidados são a toxicidade por cianeto e tiocianato, o uso prolongado e a insuficiência renal ou hepática. O \"roubo coronariano\" é um risco na isquemia miocárdica, e a paciente não tem sinais de isquemia. Ele é usado com monitorização invasiva da PA.\n\nd) Incorreta. O labetalol, bloqueador alfa e beta, é contraindicado na insuficiência cardíaca aguda descompensada com congestão, porque o betabloqueio reduz o inotropismo e pode agravar o edema. Além disso, o alívio da congestão não depende de redução do inotropismo.\n\ne) Incorreta. A pressão positiva contínua (CPAP) ou a VNI são muito úteis no edema agudo de pulmão, mas seus principais benefícios são recrutar alvéolos, melhorar a oxigenação, reduzir o trabalho respiratório, diminuir o retorno venoso (pré-carga) e a pós-carga do VE. Dizer que atua \"principalmente\" na isquemia subendocárdica e no infarto distorce o mecanismo principal, e a paciente não tem sinais de isquemia.\n\nConclusão: a alternativa correta é a (b).",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  },
+  {
+    "id": "AJUDA_ba94c944-cb8d-46fb-961c-3d03a75f8fe4",
+    "originalId": "ba94c944-cb8d-46fb-961c-3d03a75f8fe4",
+    "statement": "Homem, 23 anos, previamente hígido, refere faringoamigdalite há 3 semanas, sem antibiótico. Procura o serviço por edema palpebral matinal, urina escura e redução do volume urinário há 2 dias. Exame físico: PA 160/95 mmHg, FC 94 bpm, edema +/4+, sem dor lombar. Laboratório: ureia 60 mg/dL, creatinina 1,6 mg/dL (basal desconhecido), EAS: hematúria com hemácias dismórficas e cilindros hemáticos, proteinúria 1,2 g/24h; C3 reduzido, C4 normal; ASO 800 UI. Qual a melhor combinação de diagnóstico e conduta inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nefropatia por IgA (doença de Berger); iniciar corticoide oral por 6–8 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nefrite lúpica proliferativa; iniciar pulsoterapia com metilprednisolona seguida de ciclofosfamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença por anti-MB (Goodpasture); iniciar plasmaférese associada a corticoide e ciclofosfamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Glomerulonefrite aguda pós-estreptocócica; restrição de sal e água, controle pressórico e penicilina benzatina para erradicação do estreptococo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Glomerulonefrite rapidamente progressiva pauci-imune (ANCA+); iniciar rituximabe e corticoide em altas doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão apresenta um quadro clássico de Síndrome Nefrítica, caracterizada pela tríade: hipertensão arterial, edema e hematúria glomerular (confirmada na questão pela presença de hemácias dismórficas e cilindros hemáticos).\n\nA análise diagnóstica deve seguir três passos principais:\n1. Identificação da Síndrome: O paciente apresenta edema, hipertensão, redução do volume urinário e sedimento urinário ativo (hematúria dismórfica e cilindros), configurando a Síndrome Nefrítica.\n2. Período de Incubação: O paciente teve faringoamigdalite há 3 semanas. Esse intervalo (latência) de 1 a 3 semanas após infecção de orofaringe é típico da Glomerulonefrite Aguda Pós-Estreptocócica (GNPE).\n3. Complemento: A GNPE cursa com consumo da via alternativa do complemento, resultando em C3 baixo e C4 normal, exatamente como descrito no caso. O ASO (antiestreptolisina O) elevado confirma a infecção estreptocócica prévia.\n\nAnálise das alternativas:\n\na) Incorreta. A nefropatia por IgA (doença de Berger) é a principal causa de hematúria glomerular no mundo, mas ela ocorre simultaneamente à infecção (período de latência curto ou inexistente, chamado de hematúria sinfaringítica) e os níveis de complemento (C3 e C4) são obrigatoriamente normais.\n\nb) Incorreta. A nefrite lúpica proliferativa (Classe III ou IV) pode causar síndrome nefrítica, porém é muito mais comum em mulheres e, laboratorialmente, costuma apresentar consumo de C3 e C4 (via clássica). Além disso, não há outros sinais sistêmicos de lúpus.\n\nc) Incorreta. A doença por anticorpo anti-MB (membrana basal) ou síndrome de Goodpasture manifesta-se como uma glomerulonefrite rapidamente progressiva (perda rápida de função renal) associada à hemorragia alveolar (hemoptise). O complemento é tipicamente normal.\n\nd) Correta. O quadro clínico, o tempo de latência após a faringite, o consumo isolado de C3 e a elevação de ASO fecham o diagnóstico de GNPE. O tratamento é de suporte: restrição hidrossalina e controle da pressão arterial (geralmente com diuréticos de alça). A penicilina benzatina é indicada para erradicar a cepa nefritogênica da orofaringe e evitar a transmissão para contatos, embora não altere o curso da doença renal já instalada.\n\ne) Incorreta. As vasculites pauci-imunes (como a granulomatose com poliangiite) causam glomerulonefrite com perda rápida de função renal e ANCA positivo, mas não cursam com consumo de complemento e geralmente acometem pacientes mais velhos com sintomas sistêmicos.\n\nConclusão: O diagnóstico é Glomerulonefrite Pós-Estreptocócica (GNPE) e a conduta baseia-se em suporte clínico e erradicação do estreptococo.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  },
+  {
+    "id": "AJUDA_ba99e37d-972c-4395-a890-1975444181c3",
+    "originalId": "ba99e37d-972c-4395-a890-1975444181c3",
+    "statement": "Criança A tem o diagnóstico de Tetralogia de Fallot e após receber vacina de 2 meses, apresentou episódio de cianose severa que melhorou somente após o uso de morfina endovenosa. A criança manteve desvio de rima labial para esquerda após este evento. Criança B tem diagnóstico de coarctação de aorta e deu entrada em serviço de urgência com 2 meses de vida, apresentando vômitos e distensão abdominal severa e dolorosa. Precisou de cirurgia de ressecção de alça intestinal e ileostomia. Ambas as crianças evoluíram com complicações graves secundárias às suas cardiopatias congênitas, sendo que a criança A sofreu uma lesão cerebral e a criança B, uma lesão intestinal. Qual das alternativas apresenta as causas corretas para as complicações apresentadas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A - Isquemia; B - Isquemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A-Isquemia; B - Hipoxemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A - Hipoxemia; B - Isquemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A - Hipoxemia; B - Hipoxemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ESTRUTURA DA QUESTÃO E CONCEITOS-CHAVE\n\nPara resolver essa questão, é fundamental diferenciar dois conceitos fisiopatológicos: hipoxemia e isquemia. A hipoxemia refere-se à baixa concentração ou pressão parcial de oxigênio no sangue arterial. A isquemia refere-se à deficiência de suprimento sanguíneo (fluxo) para um órgão ou tecido, seja por obstrução arterial ou baixo débito cardíaco.\n\nANÁLISE DA CRIANÇA A (Tetralogia de Fallot)\n\nA criança A apresenta Tetralogia de Fallot e sofreu uma crise hipercianótica (ou crise de hipoxemia) desencadeada pelo estresse da vacinação. Nessa patologia, existe uma obstrução ao fluxo de saída do ventrículo direito. Durante a crise, ocorre um espasmo do infundíbulo pulmonar ou uma queda na resistência vascular sistêmica, o que aumenta o desvio de sangue não oxigenado da direita para a esquerda através da comunicação interventricular (CIV). O sangue que chega à aorta e vai para o cérebro está severamente dessaturado. Portanto, a complicação neurológica é decorrente da hipoxemia aguda e grave.\n\nANÁLISE DA CRIANÇA B (Coarctação da Aorta)\n\nA criança B possui coarctação da aorta, que é uma lesão obstrutiva mecânica da artéria aorta. Esse estreitamento reduz drasticamente o fluxo sanguíneo para os órgãos localizados após a obstrução (pós-ductais), como os intestinos. A falta de fluxo sanguíneo adequado para o trato gastrointestinal caracteriza a isquemia mesentérica. Em lactentes, isso pode evoluir para quadros semelhantes à enterocolite necrotizante, com necrose de alças e necessidade de ressecção cirúrgica, como descrito no caso.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. Embora a criança B tenha sofrido isquemia, o mecanismo principal da crise e da lesão na Tetralogia de Fallot (A) é a hipoxemia (sangue circulante com baixo oxigênio), e não a interrupção do fluxo em si.\n\nb) Incorreta. Esta alternativa inverte os mecanismos. A criança A sofre de hipoxemia devido ao shunt direita-esquerda, enquanto a criança B sofre de isquemia devido à obstrução mecânica ao fluxo sanguíneo na aorta.\n\nc) Correta. A criança A apresenta hipoxemia, pois na crise de Fallot o sangue arterial torna-se pobre em oxigênio devido ao desvio de sangue venoso para a circulação sistêmica. A criança B apresenta isquemia, pois a coarctação impede mecanicamente que o sangue chegue em volume e pressão suficientes aos tecidos abdominais.\n\nd) Incorreta. A complicação da criança B não é explicada apenas pela qualidade do oxigênio no sangue (hipoxemia), mas sim pela incapacidade do sangue chegar ao tecido-alvo devido à barreira física da coarctação (isquemia).",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  },
+  {
+    "id": "AJUDA_baabf40e-3975-4dc8-a224-2eba97386bbd",
+    "originalId": "baabf40e-3975-4dc8-a224-2eba97386bbd",
+    "statement": "A pré-eclâmpsia é responsável por 15% dos partos prematuros e por 20% de todos os recém-nascidos com muito baixo peso ao nascer (< 1.500 g), com altos custos à saúde pública. Desse modo, saber diagnosticar e conduzir esses casos de gestação de alto risco é de extrema importância. Frente a isso, o exame mais adequado para avaliar a vitalidade fetal diante uma paciente com pré-eclâmpsia, com idade gestacional de 34 semanas, associada à restrição de crescimento intrauterino grave é",
+    "options": [
+      {
+        "id": "A",
+        "text": "a cardiotocografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o perfil biofísico fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o doppler das artérias uterinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o doppler do ducto venoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o doppler das artérias umbilicais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para entender essa questão, devemos focar no contexto clínico: uma gestante com pré-eclâmpsia e restrição de crescimento intrauterino (RCIU) grave. Nessas patologias, o problema central é a insuficiência placentária, ou seja, uma alta resistência na circulação entre o feto e a placenta.\n\na) Incorreta. A cardiotocografia avalia a vitalidade fetal de forma aguda, focando na frequência cardíaca fetal e sua relação com contrações ou movimentos. Ela é um marcador tardio de sofrimento fetal, alterando-se geralmente quando o feto já está em processo de acidose. No manejo da RCIU e pré-eclâmpsia, o Doppler precede as alterações da cardiotocografia.\n\nb) Incorreta. O perfil biofísico fetal (PBF) associa a cardiotocografia com parâmetros ultrassonográficos (movimentos fetais, tônus, respiração e líquido amniótico). Assim como a cardiotocografia, o PBF reflete alterações agudas do sistema nervoso central fetal. Embora seja útil, não é o exame de escolha inicial ou principal para monitorar a hemodinâmica fetal na insuficiência placentária crônica.\n\nc) Incorreta. O Doppler das artérias uterinas avalia a circulação do lado materno (invasão trofoblástica). Ele é excelente como ferramenta de rastreamento no primeiro ou segundo trimestre para prever o risco de pré-eclâmpsia e RCIU. No entanto, uma vez que a doença já está instalada e o objetivo é avaliar a vitalidade do feto, as artérias uterinas perdem o valor clínico.\n\nd) Incorreta. O Doppler do ducto venoso é um marcador de descompensação cardíaca fetal e acidemia grave. Ele é utilizado principalmente para decidir o momento do parto em fetos muito prematuros (abaixo de 32 semanas) com alterações graves nos outros vasos. Apesar de importante, ele não é o exame primário ou \"mais adequado\" para a avaliação geral da vitalidade na RCIU, mas sim um marcador de gravidade extrema e iminência de óbito.\n\ne) Correta. O Doppler das artérias umbilicais é o padrão-ouro para avaliar a vitalidade fetal em casos de restrição de crescimento intrauterino e insuficiência placentária. Ele mede a resistência do leito vascular placentário. À medida que a placenta adoece, a resistência aumenta, o que reduz o fluxo sanguíneo durante a diástole (diástole zero ou reversa). É o único exame que, comprovadamente, reduz a mortalidade perinatal em gestações com RCIU e pré-eclâmpsia, permitindo o acompanhamento da progressão da doença.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Restrição de Crescimento Fetal e Óbito Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  },
+  {
+    "id": "AJUDA_bab700ce-ecda-45e7-97e3-4ca8d94a2d28",
+    "originalId": "bab700ce-ecda-45e7-97e3-4ca8d94a2d28",
+    "statement": "Paciente lúcida e orientada procura atendimento de urgência na sua maternidade de referência com quadro de sangramento vaginal vermelho vivo, moderado, com início uma hora antes, sem outras queixas. Informa já ter apresentado sangramento com essas características em outros momentos. Avaliação do cartão pré-natal revela que a paciente se encontra na sua terceira gestação, duas cesarianas anteriores, com IG de 35 semanas e sem intercorrências clínicas. Ao exame físico, paciente apresenta mucosas levemente hipocoradas, PA = 110x70mmHg, batimento cardíaco fetal (BCF) = 142bpm, altura do fundo de útero (AFU) de 34cm, feto em apresentação pélvica. O exame especular revela colo fechado com saída de discreta quantidade de sangue vivo. Baseado no diagnóstico mais provável, uma complicação esperada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "coagulação intravascular disseminada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "acretismo placentário",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "útero de Couvelaire",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hipertonia uterina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma gestante de 35 semanas com sangramento vaginal de início súbito, cor vermelho-vivo, indolor e reincidente. Ao exame, apresenta estabilidade hemodinâmica, ausência de dor abdominal, tônus uterino normal (implícito pela ausência de menção à hipertonia e AFU compatível) e batimentos cardiofetais normais. A apresentação fetal pélvica também é um achado comum quando a placenta ocupa o segmento inferior do útero. Esse conjunto de sinais e sintomas é patognomônico de placenta prévia.\n\nUm dado fundamental na história é a presença de duas cesarianas anteriores. Na obstetrícia, a associação entre placenta prévia e cicatrizes uterinas anteriores é o principal fator de risco para o acretismo placentário.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A coagulação intravascular disseminada (CIVD) é uma complicação clássica do descolamento prematuro de placenta (DPP), devido à liberação de tromboplastina na circulação materna a partir do hematoma retroplacentário. Na placenta prévia, o sangramento é externo e raramente consome fatores de coagulação de forma aguda.\n\nAlternativa (b) CORRETA: O acretismo placentário consiste na aderência mórbida da placenta ao miométrio. O risco aumenta progressivamente com o número de cesarianas anteriores em pacientes que desenvolvem placenta prévia. Como a paciente tem duas cesáreas e um quadro de placenta prévia, o acretismo é a complicação mais esperada e temível, podendo levar a hemorragias graves no momento do parto.\n\nAlternativa (c) INCORRETA: O útero de Couvelaire (ou apoplexia uteroplacentária) ocorre quando há uma infiltração maciça de sangue no miométrio, tornando-o hipotônico e com aspecto arroxeado. É uma complicação grave e específica do descolamento prematuro de placenta (DPP), não da placenta prévia.\n\nAlternativa (d) INCORRETA: A hipertonia uterina é o sinal clínico característico do descolamento prematuro de placenta (DPP). Na placenta prévia, como no caso em questão, o útero mantém-se relaxado, indolor e com tônus normal durante o episódio de sangramento.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  },
+  {
+    "id": "AJUDA_bac574bd-5a1a-4897-b3ba-c7a79a4c83e1",
+    "originalId": "bac574bd-5a1a-4897-b3ba-c7a79a4c83e1",
+    "statement": "Sobre divertículos esofágicos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os divertículos epifrênicos são divertículos de pulsão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Os divertículos verdadeiros ocorrem no esôfago médio devido ao aumento da pressão intraluminal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A maioria dos pacientes com divertículos epifrênicos apresentam disfagia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A principal complicação do divertículo de Zenker é a perfuração para o mediastino superior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O divertículo faringoesofágico ocorre na parede anterior do esôfago, no triângulo de Killian.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nPara compreender os divertículos esofágicos, é fundamental diferenciar os mecanismos de formação (pulsão vs. tração) e a composição da parede (verdadeiros vs. falsos).\n\nAnálise das alternativas:\n\na) CORRETA. Os divertículos epifrênicos localizam-se nos 10 cm distais do esôfago. Eles são classificados como divertículos de pulsão (falsos divertículos), pois resultam do aumento da pressão intraluminal, geralmente associado a distúrbios motores do esôfago, como a acalásia ou espasmo esofágico difuso. A pressão elevada \"empurra\" a mucosa e a submucosa através de pontos de fragilidade da musculatura.\n\nb) INCORRETA. Os divertículos do esôfago médio podem ser verdadeiros ou falsos. Tradicionalmente, os divertículos por tração (causados por processos inflamatórios adjacentes, como linfonodos mediastinais na tuberculose ou histoplasmose) envolvem todas as camadas da parede, sendo, portanto, verdadeiros. No entanto, o aumento da pressão intraluminal caracteriza os divertículos de pulsão (falsos), e não os verdadeiros.\n\nc) INCORRETA. A maioria dos pacientes com divertículos epifrênicos é assintomática, sendo o achado frequentemente incidental em exames de imagem. Quando ocorrem sintomas, a disfagia e a regurgitação estão presentes, mas não representam a realidade da \"maioria\" dos casos detectados.\n\nd) INCORRETA. Embora a perfuração seja uma complicação grave, a complicação mais comum e característica do divertículo de Zenker é a aspiração pulmonar de conteúdo retido no saco diverticular, o que pode levar a pneumonias de repetição e abscessos pulmonares. Além disso, a halitose e a regurgitação de alimentos não digeridos são achados clássicos.\n\ne) INCORRETA. O divertículo faringoesofágico (ou de Zenker) ocorre na parede posterior da faringe, e não na anterior. Ele se projeta através de uma zona de fraqueza muscular chamada Triângulo de Killian, situada entre o músculo tireofaríngeo e o músculo cricofaríngeo (parte da musculatura constritora inferior da faringe).\n\nResumo didático:\n- Divertículos de Pulsão: Falsos (mucosa/submucosa). Ex: Zenker (faringoesofágico) e Epifrênico.\n- Divertículos de Tração: Verdadeiros (todas as camadas). Ex: Esôfago médio (parabronquiais).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  },
+  {
+    "id": "AJUDA_bac5a717-de25-4217-939f-84a7d9608066",
+    "originalId": "bac5a717-de25-4217-939f-84a7d9608066",
+    "statement": "Mulher procura orientação na atenção primária preocupada com risco de câncer de mama. Pede orientação sobre quando deve iniciar rastreamento por mamografia. Relata que sua mãe teve câncer de mama aos 45 anos. Está assintomática e suas mamas não apresentam anormalidades ao exame. \n\nNesse caso, considerando-se o uso racional de exames complementares e a segurança da paciente, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter realização de exame clínico das mamas anualmente, sem a necessidade de exames complementares, e iniciar avaliação por mamografia após os 40 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar rastreamento com mamografia a partir dos 40 anos, realizado a cada 2 anos, conforme recomendação para a população geral, devido à ausência de sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter acompanhamento clínico regular anual e iniciar mamografia após os 50 anos, uma vez que a paciente está assintomática e sem sinais clínicos de câncer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar rastreamento com mamografia a partir dos 35 anos, uma vez que o histórico de câncer de mama em parente de primeiro grau antes dos 50 anos justifica o início precoce do rastreamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental diferenciar o rastreamento mamográfico da população de risco habitual daquele das mulheres pertencentes aos grupos de risco elevado.\n\nAnálise do caso clínico:\nA paciente apresenta um fator de risco importante: história familiar de câncer de mama em parente de primeiro grau (mãe) diagnosticado antes dos 50 anos. De acordo com as diretrizes do Ministério da Saúde e das sociedades brasileiras de Mastologia (SBM) e de Ginecologia e Obstetrícia (FEBRASGO), mulheres com esse perfil são classificadas como pertencentes ao grupo de risco aumentado para câncer de mama.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A conduta de realizar apenas o exame clínico anual e iniciar a mamografia somente após os 40 anos é aplicada a mulheres de risco habitual (conforme recomendações da SBM/FEBRASGO). No caso de uma paciente com parente de primeiro grau com câncer antes dos 50 anos, o rastreamento deve ser antecipado.\n\nAlternativa b) Incorreta. O rastreamento bienal a partir dos 40 anos não segue a recomendação para o grupo de risco da paciente. Além disso, o Ministério da Saúde recomenda o rastreamento bienal para a população geral apenas entre 50 e 69 anos, enquanto a SBM recomenda o rastreamento anual a partir dos 40 anos. Para o grupo de risco elevado, ambas as diretrizes preconizam uma abordagem mais precoce e frequente.\n\nAlternativa c) Incorreta. Iniciar o rastreamento mamográfico após os 50 anos é a recomendação do Ministério da Saúde para a população de risco habitual (rastreamento populacional). Ignorar o histórico familiar de primeiro grau antes dos 50 anos coloca a paciente em risco de um diagnóstico tardio.\n\nAlternativa d) Correta. Pacientes que possuem parentes de primeiro grau (mãe, irmã ou filha) com diagnóstico de câncer de mama abaixo dos 50 anos devem iniciar o rastreamento mamográfico anualmente a partir dos 35 anos de idade. Outros critérios que enquadram a mulher no grupo de risco elevado incluem: história familiar de câncer de mama bilateral ou em homens, em qualquer idade, e história familiar de câncer de ovário. Nesses casos, a vigilância deve ser intensificada e iniciada mais cedo do que na população geral.\n\nConclusão:\nA alternativa (d) está correta porque identifica corretamente o fator de risco da paciente (parente de 1º grau < 50 anos) e aplica a diretriz de antecipação do rastreamento mamográfico para os 35 anos de idade, com periodicidade anual.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Mama",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:01.879Z"
+  }
+]

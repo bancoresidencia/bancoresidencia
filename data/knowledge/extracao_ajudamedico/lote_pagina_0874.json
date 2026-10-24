@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_f2abc04f-54b8-4d60-a42e-015059b73d04",
+    "originalId": "f2abc04f-54b8-4d60-a42e-015059b73d04",
+    "statement": "Um homem de 84 anos marca uma consulta, pois está com uma tosse há 5 dias que não melhora com o xarope que está tomando em casa. A tosse, antes seca, começa a progredir com expectoração amarelada associada a picos febris recorrentes durante o dia. Na ausculta pulmonar, percebe-se estertores crepitantes em base esquerda. Qual é o provável diagnóstico do paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tromboembolismo pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumonia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Infarto agudo do miocárdio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dissecção de aorta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sinusite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\n\nO paciente em questão é um idoso de 84 anos que apresenta um quadro agudo/subagudo de tosse que evoluiu de seca para produtiva (expectoração amarelada), acompanhada de febre e achados focalizados no exame físico (estertores crepitantes em base esquerda). Esse conjunto de sinais e sintomas é patognomônico de uma infecção do trato respiratório inferior, especificamente atingindo os alvéolos.\n\nExplicação das alternativas:\n\na) Incorreta. O tromboembolismo pulmonar (TEP) costuma se manifestar com dispneia súbita e dor torácica pleurítica. Embora possa haver tosse e febre baixa em casos de infarto pulmonar, a presença de expectoração purulenta e a evolução de 5 dias com picos febris recorrentes direcionam o diagnóstico para uma etiologia infecciosa bacteriana, e não vascular.\n\nb) Correta. A pneumonia é a principal hipótese diagnóstica. A tríade de tosse (especialmente com mudança no padrão da secreção), febre e presença de ruídos adventícios focais (estertores crepitantes) no exame físico de um idoso é altamente sugestiva. Os estertores indicam a presença de exsudato no interior dos alvéolos, o que corrobora o diagnóstico de consolidação pulmonar.\n\nc) Incorreta. O infarto agudo do miocárdio manifesta-se tipicamente com dor precordial opressiva, podendo haver dispneia ou sintomas atípicos em idosos (como mal-estar súbito ou síncope). Não é uma patologia que cursa primariamente com tosse produtiva amarelada e febre persistente ao longo de vários dias.\n\nd) Incorreta. A dissecção de aorta é uma emergência cardiovascular caracterizada por dor torácica ou dorsal de início súbito, lancinante ou excruciante, frequentemente associada a hipertensão grave ou assimetria de pulsos. Não guarda relação com o quadro infeccioso respiratório descrito.\n\ne) Incorreta. A sinusite é uma infecção das vias aéreas superiores. Embora possa causar tosse devido ao gotejamento pós-nasal, ela não justifica a presença de estertores crepitantes na base do pulmão durante a ausculta. Os achados na ausculta pulmonar confirmam o acometimento do parênquima pulmonar (via aérea inferior).",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:41.740Z"
+  },
+  {
+    "id": "AJUDA_f2b0b4dc-1bb9-4974-bfa8-4ddc21a276d2",
+    "originalId": "f2b0b4dc-1bb9-4974-bfa8-4ddc21a276d2",
+    "statement": "Jovem de 15 anos de idade, mulher cisgênero, menarca aos 11 anos, nuligesta, não iniciou atividade sexual, refere apresentar três a quatro ciclos menstruais por ano desde a menarca, está em amenorreia há 95 dias e relata o aparecimento acne refratária a tratamento dermatológico tópico, aumento dos pelos na face e no abdome e oleosidade da pele. Em relação ao quadro clínico é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de oligomenorreia e hiperandrogenismo sugere a hipótese diagnóstica de síndrome de ovários policísticos (SOP).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Uma vez feito o diagnóstico de SOP não é necessário fazer a revisão do diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Para o diagnóstico de SOP na adolescência, deve-se ter os três critérios de Rotterdam para o diagnóstico: hiperandrogenismo clínico ou laboratorial, disfunção ovulatória e imagens de ovários policísticos ao ultrassom pélvico endovaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As dosagens de 17-Alfa hidroxiprogesterona e prolactina não devem ser analisadas no diagnóstico diferencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Quadro Clínico:\nA paciente é uma adolescente de 15 anos, com quatro anos de pós-menarca, que apresenta um quadro de irregularidade menstrual crônica (oligomenorreia e amenorreia secundária) associado a sinais evidentes de hiperandrogenismo clínico (hirsutismo na face e no abdome e acne refratária). Na adolescência, o diagnóstico de Síndrome dos Ovários Policísticos (SOP) exige critérios mais rigorosos do que na vida adulta para evitar diagnósticos excessivos, já que muitas manifestações da puberdade normal se assemelham à síndrome.\n\nAlternativa (a) - CORRETA:\nSegundo os consensos internacionais (como o Consenso de Rotterdam revisado e guias de evidência baseada em especialidades pediátricas e endócrinas), o diagnóstico de SOP em adolescentes requer obrigatoriamente a presença de dois critérios: 1) Disfunção ovulatória (irregularidade menstrual persistente para a idade ginecológica ou amenorreia); e 2) Hiperandrogenismo (seja clínico, como o hirsutismo moderado/grave, ou bioquímico, através de exames laboratoriais). Como a paciente apresenta ambos, a hipótese diagnóstica está corretamente direcionada.\n\nAlternativa (b) - INCORRETA:\nO diagnóstico de SOP na adolescência é frequentemente considerado \"provisório\" ou de risco. Devido à sobreposição de sintomas fisiológicos da maturação do eixo hipotálamo-hipófise-gonadal com os sintomas da SOP, é fundamental realizar uma reavaliação periódica do diagnóstico ao longo da vida, especialmente ao atingir a idade adulta ginecológica, para confirmar a persistência do quadro ou identificar se era apenas um fenômeno puberal transitório.\n\nAlternativa (c) - INCORRETA:\nEsta alternativa apresenta dois erros fundamentais. Primeiro, para o diagnóstico de SOP pelo critério de Rotterdam (utilizado em adultas), basta a presença de dois dos três critérios, e não a obrigatoriedade dos três. Segundo, na adolescência, a imagem de ovários policísticos ao ultrassom não deve ser utilizada como critério diagnóstico. Isso ocorre porque o achado de ovários multifoliculares é muito comum em adolescentes saudáveis logo após a menarca, carecendo de especificidade nesta faixa etária. Além disso, o uso da via endovaginal é restrito a pacientes com atividade sexual iniciada, o que não é o caso da paciente em questão.\n\nAlternativa (d) - INCORRETA:\nA SOP é um diagnóstico de exclusão. Para firmá-lo, é essencial afastar outras doenças que mimetizam o quadro. A dosagem da 17-alfa-hidroxiprogesterona é fundamental para excluir a hiperplasia adrenal congênita de forma não clássica, e a dosagem de prolactina é necessária para excluir a hiperprolactinemia. Ambas as condições podem cursar com irregularidade menstrual e sinais androgênicos, devendo obrigatoriamente fazer parte do diagnóstico diferencial.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:41.740Z"
+  },
+  {
+    "id": "AJUDA_f2ba2a86-e573-44a4-b600-e31fbd318f6f",
+    "originalId": "f2ba2a86-e573-44a4-b600-e31fbd318f6f",
+    "statement": "Em um ensaio clínico randomizado que testou a eficácia de uma nova vacina, o Risco Relativo (RR) de adoecer no grupo vacinado em comparação com o grupo placebo foi de 0,40, com um Intervalo de Confiança de 95% (IC95%) de 0,30 a 0,55. A interpretação correta desses resultados estatísticos é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacina é um fator de proteção, reduzindo em 60% o risco de adoecer, e o resultado é estatisticamente significativo, pois o intervalo de confiança não inclui o valor 1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Não há diferença estatística entre os grupos, pois o risco relativo é menor que 1, indicando que a incidência foi menor no grupo vacinado, mas sem relevância clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacina reduz o risco de adoecer em 40%, mas o resultado pode ser fruto do acaso, uma vez que o intervalo de confiança está abaixo de 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacina é um fator de risco, aumentando o risco de adoecer em 0,4 vezes, e o resultado não é significativo, pois o intervalo de confiança é estreito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Risco Relativo (RR): O RR de 0,40 indica que o grupo vacinado teve apenas 40% do risco de adoecer comparado ao grupo placebo. Para calcular a redução do risco (eficácia da vacina), subtraímos o RR de 1 (1 menos 0,40 = 0,60). Portanto, houve uma redução de 60% no risco de adoecer. Sempre que o RR é menor que 1, o fator em estudo é considerado protetor.\n\nAnálise do Intervalo de Confiança (IC95%): O intervalo de confiança de 95% indica a precisão do resultado e sua significância estatística. Em medidas de razão (como o RR), o valor de nulidade é 1. Se o intervalo não incluir o número 1, o resultado é estatisticamente significativo (p menor que 0,05). No caso, o intervalo de 0,30 a 0,55 está inteiramente abaixo de 1, confirmando a significância.\n\nAlternativa a) Correta. A vacina protege contra a doença (RR menor que 1), a redução do risco é de 60% (calculada como 1 menos RR) e o resultado é estatisticamente significativo porque o intervalo de confiança (0,30 a 0,55) não atravessa o valor 1.\n\nAlternativa b) Incorreta. Há diferença estatística evidente, pois o intervalo de confiança não inclui o valor 1. Além disso, uma redução de 60% no adoecimento é clinicamente muito relevante em saúde pública.\n\nAlternativa c) Incorreta. O RR de 0,40 significa que o risco residual é de 40%, o que equivale a uma redução de 60%. O erro também reside em dizer que o resultado pode ser fruto do acaso; como o IC95% não inclui o valor 1, rejeita-se a hipótese nula com confiança.\n\nAlternativa d) Incorreta. A vacina não é fator de risco, mas sim de proteção, já que o RR é menor que 1. Um fator de risco apresentaria RR maior que 1. O resultado é significativo, e um intervalo de confiança estreito indica maior precisão da medida, não falta de significância.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:41.740Z"
+  },
+  {
+    "id": "AJUDA_f2bfbf34-b7a3-4ced-854f-8863a22258cc",
+    "originalId": "f2bfbf34-b7a3-4ced-854f-8863a22258cc",
+    "statement": "Um recém‑nascido, termo, com 7 dias de vida, foi trazido para a primeira consulta de rotina. A mãe referiu dificuldade na amamentação e acreditava que o leite materno era insuficiente. O exame físico não apontou alterações. Outros dados: peso ao nascer de 2.900 g; e peso atual: 2.755 g. \n\nCom base nesse caso clínico hipotético, assinale a opção correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como houve perda ponderal acima do esperado, será necessário introduzir fórmula láctea e suspender a amamentação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Como houve perda ponderal dentro do esperado, dever‑se‑á observar a amamentação durante a consulta e orientar. Nesse caso, se a criança apresentar sucções lentas, profundas e com pausas ocasionais, a pega estará inadequada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Como houve perda ponderal dentro do esperado, dever‑se‑á observar a amamentação durante a consulta e orientar. Nesse caso, se a criança apresentar sucções superficiais e rápidas, a pega estará adequada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Como houve perda ponderal dentro do esperado, dever‑se‑á observar a amamentação durante a consulta e orientar. Nesse caso, se o lábio inferior estiver evertido durante a mamada, a pega estará adequada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Como houve perda ponderal acima do esperado, será necessário adotar alimentação mista, mantendo‑se a amamentação com pega adequada e suplementando com fórmula láctea a cada três horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, o primeiro passo é calcular a perda ponderal do recém-nascido. O bebê nasceu com 2.900 g e atualmente, aos 7 dias de vida, pesa 2.755 g. Isso representa uma perda de 145 g, o que equivale a exatamente 5% do peso de nascimento (145 / 2.900 = 0,05).\n\nNa pediatria, considera-se normal e esperado que um recém-nascido a termo perca até 10% do seu peso de nascimento nos primeiros dias de vida, recuperando-o geralmente até o 10º ou 15º dia. Portanto, a perda de 5% está perfeitamente dentro da normalidade.\n\nAnálise das alternativas:\n\na) Incorreta. A perda ponderal de 5% não é acima do esperado. Não há indicação para introdução de fórmula láctea nem, muito menos, para a suspensão da amamentação, que é o alimento ideal.\n\nb) Incorreta. Embora a perda ponderal esteja dentro do esperado, a descrição da mamada está trocada. Sucções lentas, profundas e com pausas ocasionais são características de uma mamada eficiente com transferência de leite (sucção nutritiva), e não sinais de pega inadequada.\n\nc) Incorreta. Sucções superficiais e rápidas geralmente indicam que o bebê está apenas estimulando a mama ou que a pega está incorreta, não garantindo a transferência eficaz de leite. Não são sinais de pega adequada.\n\nd) Correta. A perda ponderal está dentro do limite fisiológico (até 10%). A conduta correta é observar a mamada para dar segurança à mãe e ajustar a técnica, se necessário. Um dos sinais clássicos de técnica de pega adequada é, de fato, o lábio inferior do recém-nascido estar evertido (virado para fora), além de queixo encostado na mama, aréola mais visível acima da boca do bebê do que abaixo e boca bem aberta (pega \"em peixinho\").\n\ne) Incorreta. Como a perda de peso é fisiológica (5%), não há indicação clínica para alimentação mista ou suplementação com fórmula infantil. O foco deve ser o apoio ao aleitamento materno exclusivo.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:41.740Z"
+  },
+  {
+    "id": "AJUDA_f2c5d385-4f5d-4a15-80b0-23b39a454f2d",
+    "originalId": "f2c5d385-4f5d-4a15-80b0-23b39a454f2d",
+    "statement": "Uma paciente de 50 anos, sedentária, relata ganho gradual de peso (9 kg) nos últimos 5 anos. Mantém dieta com alto consumo de pães e massas e baixa ingestão de frutas e vegetais. Possui história familiar de diabetes tipo 2 em mãe e tios maternos. Ao exame físico, apresenta IMC de 28 kg/m², circunferência abdominal de 94 cm e pressão arterial de 138/86 mmHg. Nos exames laboratoriais, observa-se glicemia de jejum de 104 mg/dL e HbA1c de 5,8%. Com base nesse cenário clínico, qual deve ser a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orientar mudanças no estilo de vida e repetir exames em 6 meses, pois não há necessidade de testes adicionais nesse momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Informar a paciente sobre o diagnóstico de pré-diabetes, incentivar medidas comportamentais e prescrever metformina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar teste oral de tolerância à glicose, pois a presença de múltiplos fatores de risco aumenta a probabilidade de diagnóstico de diabetes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O foco deve ser na redução de peso, pois perdas de 7 a 10% do peso inicial podem reverter a disglicemia incipiente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta múltiplos fatores de risco para o desenvolvimento de diabetes mellitus tipo 2 (DM2): idade (50 anos), sedentarismo, dieta inadequada, sobrepeso (IMC 28 kg/m²), obesidade abdominal (circunferência abdominal de 94 cm), níveis pressóricos limítrofes e história familiar de primeiro grau.\n\nOs exames laboratoriais iniciais revelam:\n- Glicemia de jejum: 104 mg/dL (valor de referência para pré-diabetes: 100 a 125 mg/dL).\n- Hemoglobina glicada (HbA1c): 5,8% (valor de referência para pré-diabetes: 5,7 a 6,4%).\n\nAmbos os resultados confirmam o estado de pré-diabetes. O desafio da questão é determinar se o diagnóstico atual é suficiente para a conduta ou se há necessidade de investigação adicional.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA alternativa (c) propõe a solicitação do Teste Oral de Tolerância à Glicose (TOTG). De acordo com as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da American Diabetes Association (ADA), quando um paciente apresenta exames na faixa de pré-diabetes e possui alto risco metabólico (como é o caso desta paciente com obesidade central, hipertensão e histórico familiar), o TOTG é a conduta diagnóstica mais precisa.\n\nO TOTG possui maior sensibilidade que a glicemia de jejum e a HbA1c para detectar tanto a intolerância à glicose quanto o diabetes propriamente dito, que pode já estar presente mesmo com glicemia de jejum apenas discretamente alterada. Portanto, antes de fechar o plano terapêutico, deve-se afastar o diagnóstico de DM2 com o teste de sobrecarga (75 g de glicose).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Orientar mudanças no estilo de vida e repetir exames em 6 meses: Embora a mudança no estilo de vida seja fundamental, ser passivo e aguardar 6 meses em uma paciente de alto risco é inadequado. A investigação diagnóstica deve ser concluída agora para definir se a intervenção será apenas comportamental ou se exigirá abordagem para diabetes estabelecido.\n\nb) Informar o diagnóstico de pré-diabetes e prescrever metformina: O uso de metformina no pré-diabetes é reservado para casos específicos, como pacientes com IMC > 35 kg/m², idade < 60 anos, mulheres com histórico de diabetes gestacional ou quando a glicemia progride apesar das mudanças no estilo de vida. A paciente em questão tem IMC de 28 kg/m² e 50 anos, não preenchendo os critérios clássicos para início imediato da medicação sem antes tentar medidas não farmacológicas ou concluir a investigação com o TOTG.\n\nd) O foco deve ser na redução de peso, pois perdas de 7% a 10% do peso inicial podem reverter a disglicemia: A afirmação sobre a perda de peso é clinicamente correta e faz parte do tratamento, mas a questão pergunta qual deve ser a \"conduta mais apropriada\" no sentido de manejo clínico e diagnóstico. Antes de focar apenas no tratamento da disglicemia incipiente, é necessário garantir que a paciente não possua diabetes estabelecido, o que o TOTG fará com maior acurácia. Além disso, em provas de residência, quando há evidência de pré-diabetes em paciente de risco, a complementação diagnóstica costuma ser a resposta esperada.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:41.740Z"
+  },
+  {
+    "id": "AJUDA_f2c72487-54e6-42ae-9dd5-3f7acda2b5f5",
+    "originalId": "f2c72487-54e6-42ae-9dd5-3f7acda2b5f5",
+    "statement": "Assinale a alternativa que preenche, correta e respectivamente, as lacunas do parágrafo abaixo. \n\nGestante de 22 anos, GIPO, com 25 semanas de gestação, assintomática, veio ao Centro Obstétrico por orientação do médico do pré-natal, trazendo os laudos de exames ultrassonográficos.\n\nExame 1: Identifica-se um saco gestacional, contendo dois embriões com vitalidade; o comprimento cabeça-nádegas do embrião à esquerda tem 30 mm, e o do embrião à direita tem 25 mm. Conclusão: gestação gemelar; idade gestacional compatível com 9 semanas + 5 dias. \nExame 2: Identificam-se dois fetos com vitalidade; massa placentária na região fúndica do útero; líquido em quantidade normal na cavidade amniótica à esquerda e diminuída à direita. Conclusão: gestação gemelar diamniótica, idade gestacional compatível com 24 semanas; o peso do feto à esquerda encontra-se no percentil 50, e o do feto à direita no percentil 8 para a IG; diferença de peso entre os fetos de 26%.\n\nConsiderando as informações dos laudos trazidos pela gestante e as diretrizes para a realização de ultrassonografia na gestação gemelar, pode-se afirmar que se trata de gestação gemelar ........... . A datação da gestação foi corretamente realizada pelo embrião de ........... comprimento cabeça-nádegas. A hipótese diagnóstica é ........... .",
+    "options": [
+      {
+        "id": "A",
+        "text": "monocoriônica - menor - síndrome de transfusão feto-fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "monocoriônica - maior - restrição de crescimento fetal seletiva",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "dicoriônica - menor - restrição de crescimento fetal seletiva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dicoriônica - maior - síndrome de transfusão feto-fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, é necessário analisar três pontos fundamentais: a corionicidade da gestação, o critério de datação em gestações gemelares e o diagnóstico diferencial entre as complicações do compartilhamento placentário.\n\nAnálise da Corionicidade:\nO exame 2 descreve uma massa placentária única. Embora placentas dicoriônicas possam estar fundidas, as complicações apresentadas (restrição de crescimento com grande discordância de peso) em uma gestação com placenta única direcionam o raciocínio para uma gestação monocoriônica. Além disso, o diagnóstico de restrição de crescimento fetal seletiva (RCFs) é uma entidade específica das gestações monocoriônicas.\n\nAnálise da Datação:\nEm gestações gemelares, a datação da idade gestacional pelo ultrassom do primeiro trimestre deve ser realizada sempre utilizando o feto que apresenta o maior comprimento cabeça-nádega (CCN). Isso é feito para evitar a subestimação da idade gestacional, caso um dos embriões já apresente uma restrição de crescimento precoce. No caso, o embrião da esquerda tinha 30 mm e o da direita, 25 mm; logo, utiliza-se o de 30 mm (o maior).\n\nAnálise do Diagnóstico:\nO quadro apresenta um feto com peso no percentil 50 (normal) e outro no percentil 8 (abaixo do percentil 10, caracterizando restrição). Existe uma diferença de peso entre eles de 26% (valor significativo, geralmente definido como maior que 20-25%). \nPara ser Síndrome de Transfusão Feto-Fetal (STFF), seria obrigatória a presença da sequência polidrâmnio-oligodrâmnio. O enunciado afirma que o líquido está normal no feto da esquerda e diminuído no da direita. Como não há polidrâmnio no feto maior, descarta-se a STFF. O quadro de um feto com crescimento normal e outro com restrição de crescimento, associado a uma discordância de peso importante em placenta única, define a Restrição de Crescimento Fetal Seletiva (RCFs).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A datação não é feita pelo menor CCN, mas pelo maior. Além disso, para o diagnóstico de STFF, o feto maior obrigatoriamente deveria apresentar polidrâmnio (maior bolsão vertical acima de 8 cm), o que não ocorre (líquido normal).\n\nAlternativa b) Correta. A gestação é monocoriônica (condição para RCFs), a datação usa o maior CCN (30 mm) e o diagnóstico é RCFs devido à discordância de peso e à ausência de critérios para STFF.\n\nAlternativa c) Incorreta. A datação é feita pelo maior CCN. Além disso, o termo restrição de crescimento fetal seletiva é classicamente aplicado às gestações monocoriônicas devido às anastomoses vasculares e à divisão desigual da massa placentária.\n\nAlternativa d) Incorreta. A Síndrome de Transfusão Feto-Fetal (STFF) é uma complicação exclusiva de gestações monocoriônicas, pois depende da existência de anastomoses vasculares placentárias que não existem em gestações dicoriônicas. Além disso, falta o critério de polidrâmnio para esse diagnóstico.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:41.740Z"
+  },
+  {
+    "id": "AJUDA_f2d221f2-c7c6-4204-ac4c-4ec988eb38b5",
+    "originalId": "f2d221f2-c7c6-4204-ac4c-4ec988eb38b5",
+    "statement": "O antígeno Carcinoembrionário (CEA) é um marcador para o diagnóstico de CA colo-retal. A sua sensibilidade e especificidade, porém, podem variar com o estágio da doença. O ponto de corte usualmente aceito é o de 20 ng/ml. Porém, no monitoramento dos casos que foram tratados cirurgicamente, um ponto de corte de 10 ng/ml é utilizado para marcador de possível recidiva. Assinale a afirmativa correta na interpretação dessa redução no ponto de corte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ela indica um aumento na especifidade do teste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ela indica uma redução na sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ela indica uma redução na espeficidade do teste sem alterar sua sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ela indica um aumento na sensibilidade do teste.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda um conceito fundamental de epidemiologia clínica aplicado à prática oncológica: a relação entre o ponto de corte (*cut-off*) de um exame e os seus parâmetros de sensibilidade e especificidade.\n\nPara compreender a questão, devemos lembrar a regra básica de deslocamento de pontos de corte em testes que utilizam variáveis contínuas (como níveis séricos de CEA):\n\n1. Quando reduzimos o valor do ponto de corte (tornamos o teste mais \"exigente\" para considerar alguém como saudável), nós aumentamos a sensibilidade. Isso ocorre porque o teste passará a captar mais indivíduos doentes que antes passariam despercebidos (falsos negativos). Em contrapartida, a especificidade diminui, pois mais pessoas saudáveis podem acabar cruzando esse limite inferior (aumentando os falsos positivos).\n\n2. Quando aumentamos o valor do ponto de corte, nós aumentamos a especificidade (o teste se torna mais criterioso para dar um diagnóstico positivo), mas reduzimos a sensibilidade (mais doentes serão ignorados).\n\nNa questão, o ponto de corte foi reduzido de 20 ng/mL para 10 ng/mL.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Ao reduzir o ponto de corte, a especificidade diminui. Como o critério de positividade ficou \"mais baixo\", é mais provável que indivíduos sem a recidiva (falsos positivos) apresentem valores acima de 10 ng/mL, o que prejudica a capacidade do teste de excluir corretamente os sadios.\n\nAlternativa b) Incorreta. A sensibilidade não diminui, ela aumenta. Com um ponto de corte menor, o teste se torna mais capaz de detectar precocemente a recidiva, mesmo em pacientes que ainda apresentam níveis baixos do marcador.\n\nAlternativa c) Incorreta. É impossível alterar o ponto de corte de um marcador contínuo e reduzir a especificidade sem causar um impacto na sensibilidade. Esses dois parâmetros funcionam em um sistema de balanço: ao ganhar em um, obrigatoriamente perde-se no outro.\n\nAlternativa d) Correta. Esta é a interpretação exata. Reduzir o ponto de corte de 20 para 10 ng/mL amplia o espectro de positividade do teste. Isso garante que menos casos de recidiva passem despercebidos, aumentando a taxa de verdadeiros positivos, o que define um aumento na sensibilidade do exame. No acompanhamento pós-operatório, a prioridade é não perder nenhum caso de retorno da doença, por isso aceita-se uma sensibilidade maior mesmo que isso custe alguns alarmes falsos (redução da especificidade).",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Testes Diagnósticos",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:41.740Z"
+  },
+  {
+    "id": "AJUDA_f2d6b53b-18e1-41e0-b0cf-5bd7ca4ee99c",
+    "originalId": "f2d6b53b-18e1-41e0-b0cf-5bd7ca4ee99c",
+    "statement": "Mulher de 34 anos procura atendimento por perda de 7 kg nos últimos três meses, apesar do aumento do apetite. Refere palpitações, tremores nas mãos, intolerância ao calor e nervosismo. Encontra-se em bom estado geral, afebril e hemodinamicamente estável. Ao exame físico, apresenta frequência cardíaca de 108 bpm, bócio difuso de consistência elástica e discreta retração palpebral. Teste de gravidez negativo. Os exames mostram TSH < 0,01 mUI/L, T4 livre de 3,1 ng/Dl e TRAb positivo. A ultrassonografia da tireoide evidencia glândula difusamente aumentada, com ecotextura heterogênea e aumento difuso da vascularização ao Doppler, sem nódulos.\nQual é o diagnóstico e a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tireoidite subaguda; iniciar anti-inflamatório não esteroidal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipertireoidismo factício; suspender levotiroxina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença de Graves; iniciar metimazol associado a betabloqueador, salvo contraindicação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Adenoma tóxico; indicar radioiodoterapia como tratamento inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tireoidite de Hashimoto; iniciar levotiroxina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO E FISIOPATOLOGIA\n\nO quadro clínico descreve uma paciente jovem com síndrome de tireotoxicose clássica: perda de peso com polifagia, taquicardia (108 bpm), tremores, intolerância ao calor e irritabilidade. O exame físico revela bócio difuso e retração palpebral, sugerindo oftalmopatia leve. Os exames laboratoriais confirmam o hipertireoidismo primário (TSH suprimido e T4 livre elevado). O fechamento diagnóstico para Doença de Graves é dado pela presença do TRAb positivo (anticorpo estimulador do receptor de TSH) e pela ultrassonografia com Doppler mostrando aumento difuso da vascularização (fogo infernal).\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA: A tireoidite subaguda (de Quervain) cursa com dor cervical intensa à palpação, geralmente após infecção viral das vias aéreas. No Doppler, a vascularização estaria reduzida (e não aumentada) devido à inflamação e destruição folicular, e o TRAb seria negativo.\n\nb) INCORRETA: O hipertireoidismo factício ocorre pela ingestão exógena de hormônios tireoidianos. Nesse caso, não haveria bócio (a glândula estaria atrofiada pela supressão do TSH) e o Doppler mostraria vascularização mínima ou ausente.\n\nc) CORRETA: O diagnóstico é Doença de Graves, a causa mais comum de hipertireoidismo. A conduta inicial consiste no controle dos sintomas adrenérgicos com betabloqueadores (como o propranolol) e no bloqueio da síntese hormonal com drogas antitireoidianas, sendo o metimazol a droga de escolha (exceto no primeiro trimestre da gestação, onde se prefere o propiltiuracil).\n\nd) INCORRETA: O adenoma tóxico (Doença de Plummer) se manifestaria na ultrassonografia como um nódulo sólido único e hipervascularizado, com o restante do parênquima tireoidiano tendendo à hipoatividade. Além disso, o TRAb é negativo nessa patologia.\n\ne) INCORRETA: A Tireoidite de Hashimoto é tipicamente uma causa de hipotireoidismo (TSH alto e T4 livre baixo). Embora possa haver uma fase inicial de liberação hormonal (Hashitireotoxicose), o TRAb positivo e o padrão de Doppler descrito são patognomônicos de Graves. O tratamento com levotiroxina agravaria severamente os sintomas da paciente.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:41.740Z"
+  },
+  {
+    "id": "AJUDA_f2d8c6fe-8026-48fb-a80e-bd5583c2fc94",
+    "originalId": "f2d8c6fe-8026-48fb-a80e-bd5583c2fc94",
+    "statement": "A vigilância epidemiológica é uma atividade normatizada pelo Ministério da Saúde, que visa ao controle de algumas doenças prioritárias. Sua tarefa consiste essencialmente em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Programar e realizar campanhas de imunização e reunir registros sobre as mesmas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reunir informações sobre doenças, processá-las e interpretá-las.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pesquisar casos de doenças transmissíveis, isolá-las em hospital apropriado e estabelecer o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar campanhas de publicidade para educação em saúde, detectar casos de notificação compulsória e processá-los.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar atendimento primário em saúde, detectar casos de notificação compulsória e de vigilância sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A vigilância epidemiológica é definida legalmente no Brasil pela Lei 8.080/1990 como um conjunto de ações que proporciona o conhecimento, a detecção ou prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde individual ou coletiva, com a finalidade de recomendar e adotar medidas de prevenção e controle. O pilar fundamental dessa atividade é o conceito de informação para a ação.\n\nAlternativa a) Incorreta. Programar e realizar campanhas de imunização são medidas de intervenção e controle. Elas são o resultado da aplicação dos dados coletados, mas a tarefa essencial da vigilância é o processo técnico que gera o conhecimento para que essas campanhas sejam planejadas e executadas.\n\nAlternativa b) Correta. A essência da vigilância epidemiológica reside na coleta (reunir informações), no processamento e na análise (interpretar) de dados sobre eventos de saúde. Esse ciclo contínuo permite identificar o comportamento das doenças na população e orientar as tomadas de decisão em saúde pública.\n\nAlternativa c) Incorreta. O isolamento e o tratamento hospitalar são condutas assistenciais e medidas de controle de doenças transmissíveis específicas. A vigilância epidemiológica atua no nível do monitoramento populacional e na geração de dados, não se limitando ao ambiente hospitalar ou à execução direta do tratamento clínico individual.\n\nAlternativa d) Incorreta. A educação em saúde e as campanhas publicitárias são ferramentas de prevenção e promoção da saúde. Embora a detecção de casos de notificação compulsória seja uma etapa fundamental da vigilância, a alternativa mistura funções de comunicação social com as etapas técnicas de análise de dados da vigilância.\n\nAlternativa e) Incorreta. Esta opção mistura diferentes esferas do sistema de saúde. O atendimento primário é a modalidade de assistência clínica direta ao paciente; a vigilância sanitária foca no controle de riscos em produtos, serviços e meio ambiente; enquanto a vigilância epidemiológica foca no perfil de saúde-doença da comunidade. São áreas que se comunicam, mas possuem atribuições distintas.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:41.740Z"
+  },
+  {
+    "id": "AJUDA_f2e4a07b-7b92-46d0-a197-e156c4554c3a",
+    "originalId": "f2e4a07b-7b92-46d0-a197-e156c4554c3a",
+    "statement": "O índice bispectral (BIS), um monitor utilizado durante anestesias gerais e sedações, é essencialmente um eletroencefalograma modificado que acessa a atividade das ondas cerebrais e reporta um número de 0 a 100. A imagem a seguir representa 4 pacientes sob anestesia geral e monitorados com BIS.\n\nPode-se afirmar que o paciente com nível de consciência e profundidade anestésica mais adequado é o:",
+    "options": [
+      {
+        "id": "A",
+        "text": "D",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "B",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "C",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Índice Bispectral (BIS) é um parâmetro processado do eletroencefalograma (EEG) utilizado para monitorar a profundidade da hipnose durante a anestesia. A escala varia de 100 (paciente completamente desperto) a 0 (ausência de atividade elétrica cerebral ou silêncio cortical). Para a manutenção de uma anestesia geral adequada, o objetivo é manter o BIS entre 40 e 60, faixa que garante um estado de inconsciência com baixo risco de despertar intraoperatório e evita a depressão excessiva do sistema nervoso central.\n\nAnálise das alternativas baseada nas imagens:\n\nAlternativa A (Incorreta): O Paciente D apresenta um BIS de 04. Este valor indica um estado de hipnose excessivamente profundo, próximo ao silêncio elétrico. Nota-se no monitor o valor de SR 90 (Taxa de Supressão de 90%), o que significa que o cérebro está sem atividade elétrica na maior parte do tempo, o que pode estar associado a desfechos negativos no pós-operatório.\n\nAlternativa B (Incorreta): O Paciente A apresenta um BIS de 96. Este valor é característico de um paciente acordado ou sob sedação muito leve, não sendo compatível com o estado de anestesia geral necessário para procedimentos cirúrgicos.\n\nAlternativa C (Correta): O Paciente B apresenta um BIS de 53. Este valor encontra-se exatamente dentro do intervalo recomendado para anestesia geral (40 a 60). O traçado do EEG mostrado na imagem também exibe ondas compatíveis com um plano anestésico estável, sem sinais de supressão (SR 0). Portanto, é o paciente com o nível de consciência e profundidade mais adequado.\n\nAlternativa D (Incorreta): O Paciente C apresenta um BIS de 29. Valores abaixo de 40 indicam hipnose profunda. A imagem mostra um valor de SR 35 (Taxa de Supressão), indicando a presença de surto-supressão, um padrão de EEG que sugere plano anestésico mais profundo do que o necessário para a maioria das cirurgias.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/a085ebd0968e66cdf2a9ebe6597e264a81cc75a485bbf2352440ebe2321325ee.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f2e4a07b-7b92-46d0-a197-e156c4554c3a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:42.199Z"
+  }
+]

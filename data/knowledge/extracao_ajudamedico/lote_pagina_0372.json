@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_66aaed2d-d5c9-4eca-9d80-0944899f559c",
+    "originalId": "66aaed2d-d5c9-4eca-9d80-0944899f559c",
+    "statement": "Recém nascido apresenta no terceiro dia de vida quadro de conjuntivite, com secreção purulenta espessa e abundante bilateralmente e com sinais de quemose de pálpebras. Baseado no agente etiológico mais provável, qual seria a melhor conduta para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colírio de tobramicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Azitromicina por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antibioticoterapia sistêmica com penicilina ou ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Associação de colírio de eritromicina com penicilina cristalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Irrigação ocular com solução de soro fisiológico a cada duas horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito aponta para uma oftalmia neonatal, especificamente a conjuntivite gonocócica, causada pela bactéria *Neisseria gonorrhoeae*. Dois fatores são fundamentais para esse diagnóstico: o tempo de aparecimento (terceiro dia de vida, tipicamente entre o 2º e o 5º dia) e a gravidade dos sinais (secreção purulenta muito abundante, espessa e quemose/edema palpebral importante). Esta é considerada uma emergência oftalmológica e pediátrica devido ao alto risco de ulceração e perfuração da córnea, além do risco de disseminação sistêmica.\n\nAnálise das alternativas:\n\na) Incorreta. O colírio de tobramicina é um aminoglicosídeo tópico indicado para conjuntivites bacterianas comuns. Na conjuntivite gonocócica neonatal, o tratamento tópico isolado é insuficiente e não previne as complicações graves ou a disseminação da bactéria.\n\nb) Incorreta. A azitromicina por via oral é o tratamento de escolha para a conjuntivite causada por *Chlamydia trachomatis*. No entanto, a infecção por clamídia costuma ter um período de incubação mais longo, manifestando-se geralmente após o 5º dia de vida (entre 5 a 14 dias), com uma secreção tipicamente mucopurulenta e menos explosiva que a gonocócica.\n\nc) Correta. Diante da suspeita de conjuntivite gonocócica, o tratamento deve ser obrigatoriamente sistêmico (intravenoso ou intramuscular). O uso de ceftriaxona (dose única) ou penicilina cristalina (se o agente for sensível) é a conduta padrão para garantir a eliminação do patógeno, proteger a integridade da córnea e evitar quadros sistêmicos como sepse ou meningite.\n\nd) Incorreta. Embora a penicilina sistêmica possa ser utilizada, o colírio de eritromicina é mais associado à profilaxia da oftalmia neonatal logo após o parto (método de Credé modificado) ou ao tratamento tópico adjuvante na clamídia. O foco principal no gonococo deve ser a antibioticoterapia sistêmica plena.\n\ne) Incorreta. A irrigação ocular com soro fisiológico é uma medida de suporte importante para remover o excesso de secreção purulenta e detritos que podem lesar a córnea, mas ela não trata o agente etiológico. Deve ser feita associada ao antibiótico sistêmico e nunca como conduta isolada.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Síndrome do Olho Vermelho",
+      "Outros Distúrbios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.296Z"
+  },
+  {
+    "id": "AJUDA_66c20869-bfda-46b2-af03-ea146e1c25c0",
+    "originalId": "66c20869-bfda-46b2-af03-ea146e1c25c0",
+    "statement": "Mãe demonstra preocupação na maternidade com relação à aparência umbilical observada em sua primeira filha, com 3 dias de vida, conforme a imagem a seguir:\n\nAssinale a alternativa que indica a melhor conduta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar para o cirurgião pediátrico para avaliação ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Correção cirúrgica antes da alta, devido ao risco de encarceramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter internação hospitalar e iniciar antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Conduta expectante, orientar limpeza e não aplicar técnicas compressivas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A imagem mostra um recem-nascido de 3 dias de vida com o coto umbilical mumificado e uma protrusao cutanea na regiao da base umbilical, aspecto classico e benigno de uma hernia umbilical neonatal. Essa condicao decorre do fechamento incompleto do anel umbilical e tende a regredir espontaneamente na imensa maioria dos casos com o fortalecimento da parede abdominal.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. O encaminhamento ao cirurgiao pediatrico nao e necessario no periodo neonatal imediato. A avaliacao cirurgica so tem indicacao se a hernia persistir apos os 4 a 5 anos de idade, se for maior que 2 cm sem reducao progressiva apos os 2 anos de idade, ou na rara ocorrencia de complicacoes.\n\nAlternativa b: Incorreta. Ao contrario das hernias inguinais, a hernia umbilical em lactentes apresenta risco minimo de encarceramento ou estrangulamento, nao havendo indicacao de correcao cirurgica antes da alta da maternidade.\n\nAlternativa c: Incorreta. Nao ha sinais flogisticos no coto ou no abdome (como hiperemia periumbilical, calor local, edema ou secrecao purulenta) que caracterizem onfalite. Portanto, nao ha indicacao de internacao prolongada nem de antibioticoterapia.\n\nAlternativa d: Correta. A conduta adequada e a observacao clinica (expectante), pois a maioria fecha espontaneamente ate a idade pre-escolar. Deve-se orientar a higienizacao rotineira do coto umbilical e contraindicar formalmente o uso de faixas, moedas, esparadrapos ou outras tecnicas compressivas, que nao auxiliam no fechamento e aumentam o risco de lesao de pele e infeccoes.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Hérnias da Parede Abdominal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/48033dc2f79d3a6d49fe87811201ae03d1b061dc46093a84d1485e787e27d6d4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_66c20869-bfda-46b2-af03-ea146e1c25c0_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.717Z"
+  },
+  {
+    "id": "AJUDA_66c26432-1cca-4455-8821-50200d1e15e4",
+    "originalId": "66c26432-1cca-4455-8821-50200d1e15e4",
+    "statement": "A Síndrome do Roubo da Subclávia (SRS) é uma condição relativamente rara, mas significativa, que pode levar a Acidente Vascular Cerebral (AVC), especialmente em jovens, predominantemente em homens tabagistas. É CORRETA a alternativa:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Doppler de carótidas e vertebrais não é útil na avaliação da SRS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A SRS é mais comum em mulheres idosas e não está relacionada ao tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A síndrome não está associada à síncope neurovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O fluxo retrógrado pela artéria vertebral ocorre devido à estenose da artéria subclávia, que reduz o suprimento sanguíneo durante o movimento do membro superior.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Síndrome do Roubo da Subclávia (SRS) ocorre devido a uma estenose ou oclusão na porção proximal da artéria subclávia, especificamente antes da origem da artéria vertebral. Essa obstrução gera uma queda de pressão na circulação do membro superior afetado, invertendo o sentido do fluxo sanguíneo na artéria vertebral ipsilateral.\n\nAnálise das alternativas:\n\nAlternativa a: Esta alternativa está incorreta. O ultrassom Doppler de carótidas e vertebrais é o exame inicial de escolha e extremamente útil. Ele permite identificar a inversão do fluxo na artéria vertebral (fluxo retrógrado) e avaliar a gravidade da estenose na subclávia de forma não invasiva.\n\nAlternativa b: Esta alternativa está incorreta. A principal causa da SRS é a aterosclerose, que tem o tabagismo como um de seus principais fatores de risco. Portanto, a síndrome está fortemente relacionada ao hábito de fumar. Embora seja mais frequente em pacientes com fatores de risco cardiovascular, a descrição do enunciado foca em um perfil epidemiológico específico para a questão.\n\nAlternativa c: Esta alternativa está incorreta. A síncope, juntamente com tontura, vertigem e distúrbios visuais, faz parte do quadro clínico de insuficiência vertebrobasilar que pode ocorrer na SRS. O desvio de sangue do sistema nervoso central para o braço pode reduzir a perfusão cerebral a ponto de causar perda súbita de consciência.\n\nAlternativa d: Esta alternativa está correta. A fisiopatologia da síndrome baseia-se justamente no gradiente de pressão criado pela estenose proximal da subclávia. Para compensar o baixo suprimento sanguíneo para o braço, o sangue flui de forma retrógrada pela artéria vertebral. Esse fenômeno é exacerbado durante o movimento ou exercício do membro superior, pois a musculatura exige maior aporte sanguíneo, intensificando o roubo de sangue da circulação cerebral.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cirurgia Vascular",
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.717Z"
+  },
+  {
+    "id": "AJUDA_66c28a55-31fd-4f46-a919-f8aaadc5013e",
+    "originalId": "66c28a55-31fd-4f46-a919-f8aaadc5013e",
+    "statement": "Mulher, 49 anos de idade, no pronto-socorro, com queixa há 4 dias de dor abdominal em região epigástrica e hipocôndrio direito, de forte intensidade, associada a náusea e vômitos. Refere também sensação de febre, porém sem aferição, e urina de coloração escurecida. Nega episódios prévios semelhantes. Sem antecedentes pessoais relevantes. Ao exame físico: regular estado geral, corada e hidratada, ictérica 2+/4+ e febril. Sinais vitais: frequência cardíaca = 115 batimentos/minuto; pressão arterial = 110 x 70 mmHg; saturação de oxigênio = 97% em ar ambiente; frequência respiratória = 23 incursões/minuto; temperatura axilar = 38,1°C. Abdome doloroso à palpação em região epigástrica e hipocôndrio direito. Exames laboratoriais: hemoglobina: 14,1 g/dL; leucócitos: 16,15 mil/mm³; TGO (AST): 81 U/L; TGP (ALT): 79 U/L; fosfatase alcalina: 850 U/L; Gama GT: 790 U/L; bilirrubinas totais: 6,90 mg/dL; bilirrubina direta: 6,50 mg/dL; amilase: 45 U/L; PCR: 190 mg/dL. Ultrassonografia de abdome: vesícula biliar de paredes pouco espessadas, com múltiplos pequenos cálculos em seu interior. Presença de moderada dilatação de vias biliares, sem evidência de fator obstrutivo ao método. Fígado e pâncreas sem alterações. Aponte a principal hipótese diagnóstica e a conduta para o caso descrito acima:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colecistite aguda, tomografia de abdome e pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colecistite aguda, colecistectomia aberta com exploração de via biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coledocolitíase, colecistostomia percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colangite aguda, antibioticoterapia e drenagem da via biliar.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente apresenta uma combinação clássica de sinais e sintomas que define a Tríade de Charcot: dor abdominal em hipocôndrio direito, febre e icterícia (notada tanto no exame físico quanto pelo relato de colúria). Além disso, os exames laboratoriais reforçam o diagnóstico de um processo infeccioso agudo (leucocitose de 16.150/mm³ e PCR elevada de 190 mg/dL) associado a um padrão de colestase obstrutiva (elevação importante de bilirrubina direta, fosfatase alcalina e gama-GT).\n\nA ultrassonografia revela cálculos na vesícula e, crucialmente, dilatação das vias biliares. Embora o cálculo obstrutivo não tenha sido visualizado (o que ocorre com frequência na ultrassonografia devido aos gases intestinais), a dilatação ductal na presença de icterícia e febre é altamente sugestiva de colangite aguda.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nO diagnóstico é de colangite aguda. Esta é uma emergência médica causada pela infecção bacteriana da bile decorrente de uma obstrução biliar (neste caso, provavelmente por um cálculo que migrou da vesícula para o colédoco). O tratamento baseia-se em dois pilares fundamentais: suporte clínico com antibioticoterapia intravenosa para controlar a infecção e descompressão (drenagem) das vias biliares para remover o fator obstrutivo, geralmente realizada por via endoscópica (CPRE).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Colecistite aguda, tomografia de abdome e pelve: A colecistite aguda caracteriza-se por dor e febre, mas raramente cursa com icterícia significativa (bilirrubina direta de 6,5 mg/dL) ou dilatação de vias biliares. Na ultrassonografia, a colecistite apresentaria paredes da vesícula espessadas e sinal de Murphy ultrassonográfico positivo, o que não foi descrito. Além disso, a conduta prioritária aqui é o tratamento da obstrução biliar, não apenas novos exames de imagem.\n\nb) Colecistite aguda, colecistectomia aberta com exploração de via biliar: Conforme mencionado, o quadro clínico de icterícia obstrutiva com febre aponta para colangite, não colecistite isolada. A conduta inicial na colangite deve ser a estabilização e drenagem biliar (preferencialmente endoscópica), e não a cirurgia aberta imediata, que apresenta maior morbimortalidade em pacientes infectados.\n\nc) Coledocolitíase, colecistostomia percutânea: A coledocolitíase é a presença do cálculo no colédoco, que é a causa provável; porém, quando há febre e leucocitose, o diagnóstico evolui para colangite aguda. A colecistostomia percutânea é um procedimento de exceção usado para drenar a vesícula biliar em pacientes com colecistite grave sem condições cirúrgicas; ela não resolve a obstrução do ducto colédoco nem a colangite.\n\nRESUMO: Diante da Tríade de Charcot (dor, febre e icterícia), o diagnóstico é colangite aguda, e o tratamento imediato exige antibióticos e drenagem da via biliar.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.717Z"
+  },
+  {
+    "id": "AJUDA_66c714e5-e2e4-4018-8033-6536a55dedbc",
+    "originalId": "66c714e5-e2e4-4018-8033-6536a55dedbc",
+    "statement": "Criança de 9 anos comparece à Unidade de Saúde com relato de linfadenomegalia cervical e febre há quatro dias. Ao exame físico, você identifica dois linfonodos cervicais anteriores de 2cm à direita e 1cm à esquerda, móveis e fibroelásticos, sem sinais flogísticos, sem outras alterações ao exame físico. Assinale a alternativa que contém o exame laboratorial MAIS INDICADO neste momento para o diagnóstico da doença:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Biopsia do linfonodo com pesquisa de células neoplásicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ecocardiograma para pesquisa de coronariopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sorologia para citomegalovirus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Teste rápido molecular (TRM) para tuberculose em escarro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma criança de 9 anos com quadro agudo (4 dias) de febre e linfadenomegalia cervical. Os linfonodos possuem características de benignidade: são pequenos (até 2 cm), móveis, fibroelásticos e sem sinais flogísticos (dor, calor ou rubor). Diante desse cenário em pediatria, as causas mais comuns são as infecções virais sistêmicas ou regionais.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A biópsia de linfonodo é um procedimento invasivo indicado apenas quando há suspeita de malignidade ou em casos de linfadenopatia persistente sem diagnóstico após investigação inicial. Sinais de alerta para biópsia incluem: linfonodos endurecidos, fixos a planos profundos, tamanho superior a 2 cm que não regride após 4 a 6 semanas ou presença de sintomas sistêmicos, como perda de peso e sudorese noturna, o que não é o caso desta criança com apenas 4 dias de evolução.\n\nAlternativa b) Incorreta. O ecocardiograma para pesquisa de coronariopatia (aneurismas) é indicado na doença de Kawasaki. Para esse diagnóstico, seriam necessários pelo menos 5 dias de febre persistente associada a outros critérios clínicos, como conjuntivite bilateral não purulenta, alterações em lábios e cavidade oral, exantema polimorfo e alterações nas extremidades. A criança do caso apresenta apenas febre e linfadenopatia de início recente.\n\nAlternativa c) Correta. A principal suspeita diagnóstica para um quadro agudo de febre e linfadenomegalia cervical bilateral ou unilateral, com características fibroelásticas e sem sinais inflamatórios exuberantes, é a síndrome mononucleose-like. Essa síndrome pode ser causada pelo vírus Epstein-Barr (mononucleose infecciosa), citomegalovírus (CMV), toxoplasmose ou HIV agudo. Portanto, a solicitação de sorologias para esses agentes é o passo inicial mais adequado e menos invasivo para o diagnóstico.\n\nAlternativa d) Incorreta. A tuberculose ganglionar manifesta-se geralmente de forma subaguda ou crônica, com linfonodos que tendem a aderir uns aos outros (confluentes) e podem evoluir com fistulização. Além disso, o Teste Rápido Molecular (TRM) em escarro é utilizado para o diagnóstico da forma pulmonar da doença. Para o diagnóstico da forma ganglionar, seria necessária a análise do material do próprio linfonodo (aspirado ou biópsia).\n\nResumo: Diante de uma linfadenopatia cervical aguda e benigna ao exame físico em uma criança, a conduta correta é investigar causas infecciosas comuns, como as infecções virais (CMV e EBV), antes de partir para procedimentos invasivos ou exames de alta complexidade.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.717Z"
+  },
+  {
+    "id": "AJUDA_66d00799-c56f-4acd-8aec-35bec4f67160",
+    "originalId": "66d00799-c56f-4acd-8aec-35bec4f67160",
+    "statement": "Mulher, 22 anos, com diagnóstico de esquizofrenia paranoide teve alta de unidade psiquiátrica com a resolução dos sintomas psicóticos utilizando adequadamente um antipsicótico. Com o tempo, começou a apresentar perda da libido, oligomenorreia, aumento das mamas e galactorreia. Exames laboratoriais indicaram aumento de prolactina, sendo as demais causas excluídas. Entre os antipsicóticos abaixo, qual seria o causador mais provável do evento adverso relatado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Risperidona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Olanzapina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Clorpromazina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quetiapina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A fisiopatologia do evento relatado baseia-se no bloqueio dopaminérgico na via tuberoinfundibular. No hipotálamo, a dopamina funciona fisiologicamente como o fator inibidor da prolactina. Quando um antipsicótico bloqueia os receptores D2 nesta via, ocorre a perda dessa inibição, resultando em hiperprolactinemia. O excesso de prolactina no sangue leva aos sintomas clínicos descritos: galactorreia (produção de leite), aumento mamário, alterações menstruais (oligomenorreia ou amenorreia) e redução da libido por interferência no eixo gonadal.\n\nAlternativa A (Correta): A risperidona é um antipsicótico de segunda geração (atípico) que se destaca por ser o fármaco deste grupo com maior probabilidade de causar hiperprolactinemia significativa. Embora seja atípica, sua afinidade pelos receptores D2 na via tuberoinfundibular é muito alta, provocando elevações de prolactina que muitas vezes superam as observadas com antipsicóticos de primeira geração. É o principal agente associado a esse efeito colateral em contextos de manutenção ambulatorial, tornando-se a resposta clássica em provas de residência para este quadro clínico.\n\nAlternativa B (Incorreta): A olanzapina é um antipsicótico atípico cujo perfil de efeitos adversos é predominantemente metabólico, incluindo ganho de peso acentuado, aumento do risco de diabetes e dislipidemia. Embora possa causar um aumento leve e transitório da prolactina em alguns pacientes, esse efeito raramente atinge níveis que causem galactorreia ou sintomas clínicos importantes como os descritos no caso.\n\nAlternativa C (Incorreta): A clorpromazina é um antipsicótico típico de baixa potência. Por ser de baixa potência, ela exige doses maiores para o controle psicótico e acaba interagindo com diversos receptores (histaminérgicos, muscarínicos e alfa-adrenérgicos), o que gera mais sedação, hipotensão e efeitos anticolinérgicos do que propriamente um bloqueio dopaminérgico puro e intenso na via tuberoinfundibular, quando comparada à risperidona.\n\nAlternativa D (Incorreta): A quetiapina é conhecida na prática clínica como um antipsicótico \"poupador de prolactina\". Ela possui uma baixa afinidade pelos receptores D2 e uma dissociação muito rápida desses receptores. Por essa característica, a quetiapina praticamente não altera os níveis de prolactina, sendo inclusive uma das opções de troca recomendadas quando um paciente desenvolve hiperprolactinemia por outros antipsicóticos.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.717Z"
+  },
+  {
+    "id": "AJUDA_66d201dc-49d5-4e50-8851-14c70045ec5a",
+    "originalId": "66d201dc-49d5-4e50-8851-14c70045ec5a",
+    "statement": "Você recebe para atendimento em Unidade Básica de Saúde, um adolescente de 17 anos, anteriormente ativo e social, com queixa de ter começado nos últimos 3 meses a se isolar dos amigos e ter perdido o interesse por atividades que antes apreciava, como esportes e jogos online. Os pais relatam que o filho tem demonstrado dificuldade para se concentrar nas tarefas escolares e que tem apresentado irritabilidade e agressividade em casa. Durante o atendimento o jovem admite para você que tem sentido tristeza constante, baixa autoestima, bem como revela ter pensamentos autolesivos. Com base no quadro clínico descrito acima, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno Depressivo Maior.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Transtorno de Ansiedade Social (Fobia Social).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno Bipolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno de Personalidade Borderline.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito aponta diretamente para o Transtorno Depressivo Maior (TDM), sendo fundamental notar as particularidades da apresentação da depressão na adolescência.\n\nAlternativa A: Correta. O paciente apresenta os critérios diagnósticos fundamentais para o Transtorno Depressivo Maior de acordo com o DSM-5 e a CID-11. O diagnóstico exige a presença de cinco ou mais sintomas por pelo menos duas semanas, causando prejuízo funcional. No caso, observamos: humor deprimido (tristeza constante), anedonia (perda de interesse em atividades anteriormente apreciadas), alterações cognitivas (dificuldade de concentração), baixa autoestima e pensamentos autolesivos. Um ponto crucial para provas de residência é reconhecer que, em crianças e adolescentes, o humor pode se manifestar como irritabilidade e agressividade em vez de apenas tristeza, exatamente como descrito no enunciado.\n\nAlternativa B: Incorreta. O Transtorno de Ansiedade Social caracteriza-se pelo medo acentuado e persistente de situações sociais em que o indivíduo possa ser avaliado ou julgado por outros. Embora o adolescente esteja se isolando, esse comportamento é secundário à falta de prazer e à tristeza (sintomas depressivos), e não ao medo de passar vergonha ou ser criticado. Além disso, a fobia social não explicaria os pensamentos autolesivos e a perda de interesse em jogos on-line solitários.\n\nAlternativa C: Incorreta. Para o diagnóstico de Transtorno Bipolar, é obrigatória a ocorrência de pelo menos um episódio de mania ou hipomania ao longo da vida. O episódio maníaco envolve humor persistentemente elevado, expansivo ou irritável, acompanhado de aumento de energia, diminuição da necessidade de sono, logorreia e grandiosidade. O enunciado descreve exclusivamente um episódio depressivo, sem qualquer menção a fases de euforia ou hiperatividade prévias.\n\nAlternativa D: Incorreta. O Transtorno de Personalidade Borderline envolve um padrão difuso de instabilidade nas relações interpessoais, na autoimagem e nos afetos, além de impulsividade acentuada. Embora a autolesão e a irritabilidade sejam comuns nesse transtorno, o diagnóstico de transtorno de personalidade geralmente exige que o padrão seja persistente e de longa data (desde o início da vida adulta ou adolescência). No caso clínico, o jovem era anteriormente ativo e social, e os sintomas surgiram de forma bem delimitada nos últimos três meses, o que caracteriza uma mudança aguda no funcionamento basal, direcionando o diagnóstico para um transtorno do humor (depressão) e não para um transtorno de personalidade.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Transtornos do Humor",
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.717Z"
+  },
+  {
+    "id": "AJUDA_66d2ba86-b515-40f1-b208-b90a09bc7726",
+    "originalId": "66d2ba86-b515-40f1-b208-b90a09bc7726",
+    "statement": "Em uma determinada região de plantação de cana-de-açúcar de um município, há mais de 20 anos, há, sistematicamente, pulverização aérea de agrotóxicos. Os moradores da região reclamam que não se sentem seguros e se mobilizam para que as pulverizações deixem de ser feitas. Entre outras providências, pedem a pesquisadores de uma universidade que realizem um estudo na população para verificar se há relação entre o contato com os agrotóxicos e determinadas doenças. Assim, os pesquisadores optam por estudar o coeficiente de incidência de câncer na população. Considerando esse contexto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O estudo deve ser de caso-controle para que se obtenha a medida de ocorrência escolhida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pela facilidade de realização, o estudo deve ser seccional, pois, pelo coeficiente de prevalência, pode-se estimar a incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O estudo de Coorte é o indicado para fornecer a medida de ocorrência escolhida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O estudo ecológico seria o mais indicado para fornecer a medida de ocorrência escolhida, mas seu custo é muito alto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os pesquisadores devem optar por uma outra medida de ocorrência da doença, pois não há estudo capaz de fornecê-la.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental identificar a medida de ocorrência solicitada pelos pesquisadores: o coeficiente de incidência. A incidência refere-se ao número de casos novos de uma doença que surgem em uma população em risco ao longo de um determinado período.\n\nAlternativa a) Incorreta. O estudo de caso-controle parte de pessoas que já apresentam a doença (casos) e as compara com pessoas saudáveis (controles) para investigar exposições passadas. Por ser retrospectivo e não acompanhar a população ao longo do tempo, a medida de associação clássica é o Odds Ratio (razão de chances), e não a incidência.\n\nAlternativa b) Incorreta. O estudo seccional (ou transversal) é como uma \"fotografia\" de um momento específico, analisando a presença da doença e da exposição simultaneamente. Por isso, ele fornece a prevalência (total de casos em um momento), e não a incidência (casos novos ao longo do tempo).\n\nAlternativa c) Correta. O estudo de coorte é um desenho observacional longitudinal e prospectivo. Nele, os pesquisadores selecionam um grupo de pessoas inicialmente sem a doença, dividem-nas entre expostos e não expostos ao fator de risco (neste caso, os agrotóxicos) e as acompanham ao longo do tempo para observar quem desenvolverá o desfecho (câncer). Esse acompanhamento temporal permite o cálculo direto da incidência e do risco relativo.\n\nAlternativa d) Incorreta. O estudo ecológico utiliza dados de agregados populacionais (nível grupal), e não dados individuais. Embora possa ser usado para gerar hipóteses, ele não é o delineamento ideal para medir a incidência individual rigorosa. Além disso, os estudos ecológicos são conhecidos pelo seu baixo custo e rapidez, pois geralmente utilizam bancos de dados secundários já existentes, o que contradiz a afirmação da alternativa sobre o custo alto.\n\nAlternativa e) Incorreta. Existe, sim, um delineamento capaz de fornecer a incidência, que é justamente o estudo de coorte, conforme explicado anteriormente.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.717Z"
+  },
+  {
+    "id": "AJUDA_66d9cb60-4e3f-4b74-965f-5908d8950971",
+    "originalId": "66d9cb60-4e3f-4b74-965f-5908d8950971",
+    "statement": "Sobre o eritema tóxico em recém-nascidos (RN), qual das seguintes características é verdadeira?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É uma condição rara, ocorrendo em menos de 10% dos RN.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Requer coleta de hemograma e culturais pela potencial gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apresenta-se como pápulas amarelo-esbranquiçadas com hiperemia marginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É um sinal de infecção bacteriana e frequentemente se associa a hipo ou hipertermia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O eritema tóxico neonatal é uma das erupções cutâneas mais frequentes no período neonatal, sendo uma condição benigna, idiopática e autolimitada que não requer tratamento específico.\n\nAlternativa a: Incorreta. O eritema tóxico é extremamente comum, afetando entre 30% e 70% dos recém-nascidos a termo. A sua ocorrência é, na verdade, rara em recém-nascidos prematuros, mas, em bebês nascidos no tempo correto, é uma das alterações de pele mais observadas.\n\nAlternativa b: Incorreta. Como se trata de uma condição benigna e de diagnóstico clínico, não há indicação de coleta de hemograma, culturas ou qualquer outro exame laboratorial. O recém-nascido apresenta-se em bom estado geral e a condição não possui gravidade.\n\nAlternativa c: Correta. Esta é a descrição morfológica clássica da lesão. O eritema tóxico caracteriza-se por pequenas pápulas ou pústulas de 1 a 3 mm, de cor branco-amarelada, circundadas por um halo eritematoso (hiperemia marginal), conferindo um aspecto muitas vezes descrito como \"picada de pulga\". As lesões costumam aparecer nas primeiras 24 a 72 horas de vida, distribuindo-se pela face, pelo tronco e pelos membros, poupando habitualmente as palmas das mãos e as plantas dos pés.\n\nAlternativa d: Incorreta. O eritema tóxico não tem etiologia bacteriana ou infecciosa. Sua causa exata é desconhecida, embora envolva um infiltrado inflamatório rico em eosinófilos. Além disso, o quadro não evolui com sinais sistêmicos, como instabilidade térmica (hipotermia ou hipertermia). A presença de febre em um recém-nascido com lesões de pele deve levantar a suspeita de diagnósticos diferenciais mais graves, como sepse neonatal ou herpes simples.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Outros Distúrbios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.717Z"
+  },
+  {
+    "id": "AJUDA_66e0f7ab-1e24-4bf5-b14f-65a9244477f7",
+    "originalId": "66e0f7ab-1e24-4bf5-b14f-65a9244477f7",
+    "statement": "Durante consulta de puericultura de um lactente de 7 meses, ao conferir a história imunológica, você identifica que foi administrada uma dose da vacina de Influenza aos 6 meses de vida.\nDe acordo com as recomendações do Programa Nacional de Imunizações, a orientação sobre a vacinação de Influenza no caso apresentado é",
+    "options": [
+      {
+        "id": "A",
+        "text": "administrar uma dose em um ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administrar uma dose com 12 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "administrar uma dose em um ano com 0,5 mL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "completar o esquema com uma dose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "dizer que o esquema vacinal está completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A vacina contra a Influenza (gripe) possui uma diretriz específica no Programa Nacional de Imunizações (PNI) para a primovacinação de crianças. Crianças de 6 meses até 8 anos, 11 meses e 29 dias que nunca receberam a vacina da Influenza devem receber duas doses na sua primeira temporada de vacinação, com um intervalo de 30 dias entre elas.\n\nNo caso apresentado, o lactente de 7 meses recebeu a primeira dose aos 6 meses. Portanto, ele está no momento ideal para receber a segunda dose e completar o esquema vacinal primário para garantir a imunogenicidade adequada.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O reforço anual é indicado apenas após a conclusão do esquema de primovacinação (duas doses no primeiro ano em que a criança é vacinada). Esperar um ano deixaria a criança sem a resposta imunológica completa necessária para o ciclo atual.\n\nAlternativa b: Incorreta. Não se deve aguardar até os 12 meses de idade. O intervalo recomendado para a segunda dose da primovacinação é de 30 dias após a aplicação da primeira dose.\n\nAlternativa c: Incorreta. Além do erro no tempo de aplicação (aguardar um ano), a alternativa foca na dosagem. Embora o PNI tenha padronizado o volume de 0,5 mL para todas as faixas etárias nas campanhas mais recentes, o erro cronológico torna a alternativa falsa.\n\nAlternativa d: Correta. De acordo com o manual de normas e procedimentos de vacinação do PNI, para crianças menores de 9 anos que nunca foram vacinadas contra Influenza, o esquema deve ser completado com uma segunda dose, respeitando o intervalo de um mês.\n\nAlternativa e: Incorreta. O esquema vacinal para primovacinação nesta faixa etária não é considerado completo com apenas uma dose. A proteção total para quem nunca foi vacinado só é atingida após a administração das duas doses iniciais.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:30.717Z"
+  }
+]

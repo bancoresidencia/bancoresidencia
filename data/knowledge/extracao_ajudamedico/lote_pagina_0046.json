@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_0b979e32-9d82-416b-bc42-85b06366a70c",
+    "originalId": "0b979e32-9d82-416b-bc42-85b06366a70c",
+    "statement": "Um homem de 70 anos, etilista crônico, é levado à emergência com quadro de rebaixamento do nível de consciência. À admissão, apresenta-se febril, torporoso e com discurso desconexo. O exame físico dos aparelhos respiratório e cardiovascular é normal, porém há rigidez de nuca terminal. A tomografia computadorizada (TC) de crânio não revela alterações, e a análise do líquido cefalorraquidiano evidencia 400 células nucleadas, com 60% de mononucleares, proteína de 160mg/dL e glicose de 20mg/dL. Considerando o diagnóstico mais provável, uma medicação que deve estar presente no esquema terapêutico para esse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "aciclovir",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ampicilina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "doxiciclina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "penicilina benzatina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresenta um paciente idoso (70 anos) e etilista crônico com a tríade clássica de meningite: febre, alteração do nível de consciência e sinais de irritação meníngea (rigidez de nuca). A análise do líquido cefalorraquidiano (LCR) confirma o processo inflamatório infeccioso com pleocitose (400 células), hiperproteinorraquia (160 mg/dL) e uma hipoglicorraquia acentuada (20 mg/dL). A glicose baixa no LCR é um marcador forte para etiologia bacteriana ou fúngica/tuberculosa, afastando etiologias virais simples.\n\nEm pacientes acima de 50 anos, imunossuprimidos ou etilistas, além dos agentes comuns como *Streptococcus pneumoniae* e *Neisseria meningitidis*, deve-se obrigatoriamente cobrir a *Listeria monocytogenes*. A *Listeria* é um bacilo Gram-positivo que frequentemente causa pleocitose com predomínio de mononucleares ou padrão misto, como visto no caso (60% de mononucleares). O tratamento padrão para os patógenos habituais é a ceftriaxona; porém, as cefalosporinas não possuem atividade contra a *Listeria*. Por isso, é necessário adicionar a ampicilina ao esquema empírico.\n\nAnálise das alternativas:\n\na) Incorreta. O aciclovir é indicado para encefalite herpética. Embora o paciente apresente alteração de consciência, a hipoglicorraquia importante (20 mg/dL) e o quadro clínico direcionam para uma etiologia bacteriana, não viral.\n\nb) Correta. A ampicilina é o medicamento de escolha para cobrir a *Listeria monocytogenes*. A idade avançada (70 anos) e o etilismo crônico são fatores de risco clássicos que exigem a inclusão dessa droga no esquema terapêutico inicial de uma meningite bacteriana.\n\nc) Incorreta. A doxiciclina é utilizada em infecções por riquétsias, espiroquetas ou em alguns casos de pneumonia atípica, mas não faz parte do protocolo inicial para meningite bacteriana aguda na comunidade.\n\nd) Incorreta. A penicilina benzatina é uma formulação de depósito para uso intramuscular, indicada para sífilis primária, secundária ou profilaxia de febre reumática. Não atinge níveis terapêuticos no sistema nervoso central para tratar meningite ou neurossífilis. No caso de necessidade de penicilina para o sistema nervoso, utiliza-se a penicilina G cristalina (venosa).",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": 80.82270373582847,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  },
+  {
+    "id": "AJUDA_0b97bb81-0e28-4d6d-a7cb-e94f46f6a9d2",
+    "originalId": "0b97bb81-0e28-4d6d-a7cb-e94f46f6a9d2",
+    "statement": "Mulher, 32 anos de idade, com obesidade grau III (IMC de 46 kg/m²), foi submetida a bypass gástrico em Y de Roux por videolaparoscopia. No primeiro dia pós-operatório, encontra-se deitada. Ao exame físico, apresentou bom estado geral com FC de 113 bpm, PA de 110x60 mmHg, FR de 22 ipm, saturação de oxigênio de 92%; ausculta pulmonar diminuída nas bases; abdome flácido, pouco doloroso à palpação profunda, com ruídos hidroaéreos presentes e com curativos secos. O dreno abdominal exteriorizado em hipocôndrio esquerdo está com débito hemático em pequena quantidade. Qual é a melhor conduta neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abertura de protocolo de sepse e transferência para UTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Angiotomografia de tórax para investigar tromboembolismo pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Otimizar analgesia e fisioterapia motora/respiratória.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tomografia de abdome com contraste via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente em questão está no primeiro dia pós-operatório (PO) de uma cirurgia bariátrica (bypass gástrico em Y de Roux). O quadro clínico apresenta taquicardia (FC 113 bpm), leve taquipneia (FR 22 ipm) e uma saturação de oxigênio limítrofe (92%), associadas à diminuição do murmúrio vesicular nas bases pulmonares. O abdome, por outro lado, é inocente (flácido, pouco doloroso e com dreno de baixo débito hemático), o que reduz a suspeita imediata de complicações cirúrgicas agudas, como fístulas precoces ou hemorragias abdominais graves.\n\nEm pacientes com obesidade mórbida submetidos a cirurgias abdominais altas, a causa mais comum de taquicardia e queda da saturação no PO imediato, especialmente quando o paciente permanece deitado, é a atelectasia basal. O peso da parede abdominal e a restrição da expansibilidade pelo procedimento favorecem o colapso de alvéolos. Além disso, a dor pós-operatória pode impedir incursões respiratórias profundas e a deambulação precoce, agravando o quadro.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA conduta inicial mais adequada é otimizar a analgesia para permitir que a paciente consiga realizar movimentos e respirar melhor, além de iniciar fisioterapia motora (sentar e deambular) e respiratória (exercícios de expansão). Muitas vezes, a simples mudança da posição deitada para sentada e a deambulação corrigem a frequência cardíaca e a saturação de oxigênio ao reexpandir as bases pulmonares e reduzir o estresse fisiológico.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Embora a paciente apresente critérios de SIRS (taquicardia e taquipneia), não há um foco infeccioso evidente ou sinais de choque que justifiquem a abertura de protocolo de sepse e transferência para UTI neste momento. A causa ventilatória/álgica é muito mais provável no primeiro dia de pós-operatório.\n\nAlternativa B: O tromboembolismo pulmonar (TEP) é uma complicação temida em obesos, mas a presença de ausculta diminuída nas bases e a melhora esperada com manobras posturais tornam a atelectasia a hipótese principal. A angiotomografia é um exame com contraste e custo elevado, devendo ser reservada caso não haja melhora após as medidas iniciais ou se houver forte suspeita clínica (como hipoxemia refratária).\n\nAlternativa D: A tomografia de abdome com contraste oral serve para investigar fístulas ou obstruções. No entanto, o exame físico abdominal da paciente está muito favorável (abdome flácido, ruídos presentes, dreno limpo). A taquicardia isolada no primeiro PO, sem sinais abdominais, deve primeiro ser tratada com medidas conservadoras (hidratação, analgesia e fisioterapia) antes de se realizar exames de imagem invasivos.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  },
+  {
+    "id": "AJUDA_0ba9640f-9970-4b96-ab91-fb4276426567",
+    "originalId": "0ba9640f-9970-4b96-ab91-fb4276426567",
+    "statement": "Sobre distúrbios eletrolíticos, assinale a correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A hiponatremia hipervolêmica é típica de insuficiência cardíaca, cirrose e síndrome nefrótica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A hipercalemia nunca causa alterações no eletrocardiograma antes de níveis maiores que 8,0 mEq/L.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A hipocalcemia cursa com alargamento de QRS e ondas T apiculadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hipernatremia sempre decorre de perda renal de água.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Esta é a alternativa correta. A hiponatremia hipervolêmica ocorre quando há um aumento do volume de água corporal total e do sódio total, mas com um ganho proporcionalmente maior de água, gerando edema. Em condições como insuficiência cardíaca congestiva, cirrose hepática e síndrome nefrótica, ocorre uma redução do volume arterial efetivo. Esse fenômeno ativa mecanismos compensatórios, como o sistema renina-angiotensina-aldosterona e a liberação de vasopressina (hormônio antidiurético - ADH), que promovem a retenção de água livre pelos rins, diluindo o sódio sérico.\n\nAlternativa b: Incorreta. As alterações no eletrocardiograma (ECG) decorrentes da hipercalemia costumam aparecer com níveis muito inferiores a 8,0 mEq/L. Tipicamente, ondas T altas e apiculadas (em tenda) podem surgir com níveis de potássio entre 5,5 e 6,0 mEq/L. O achatamento da onda P e o alargamento do complexo QRS geralmente ocorrem entre 6,5 e 7,5 mEq/L. Níveis próximos a 8,0 mEq/L já representam um estágio gravíssimo, com risco iminente de padrão sinusoide e parada cardiorrespiratória.\n\nAlternativa c: Incorreta. O alargamento do QRS e as ondas T apiculadas são achados característicos da hipercalemia. Na hipocalcemia, a alteração eletrocardiográfica clássica é o prolongamento do intervalo QT, que ocorre especificamente devido ao aumento da duração do segmento ST.\n\nAlternativa d: Incorreta. A hipernatremia reflete um déficit de água em relação ao estoque de sódio corporal, mas a perda não é exclusivamente renal. Ela pode ser causada por perdas extrarrenais, como perdas gastrointestinais (diarreia osmótica) ou perdas insensíveis aumentadas (febre, sudorese, taquipneia). Além disso, a causa mais comum de hipernatremia em pacientes vulneráveis, como idosos ou crianças, é a simples falta de ingestão adequada de água (hipodipsia ou falta de acesso a líquidos).",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios do Sódio",
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  },
+  {
+    "id": "AJUDA_0bb95a9a-3f50-4f35-8592-961743908315",
+    "originalId": "0bb95a9a-3f50-4f35-8592-961743908315",
+    "statement": "Primigesta, 29 anos de idade, idade gestacional de 11 semanas, comparece a consulta de pré-natal, trazendo resultado de sorologia de toxoplasmose, realizado há sete dias, apresentando IgG negativo e IgM positivo. Considerando o contexto clínico, é conduta CORRETA neste momento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar nova sorologia para toxoplasmose, em 2 a 3 semanas, e iniciar o uso de espiramicina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar nova sorologia para toxoplasmose, em 2 a 3 semanas, e iniciar uso de esquema tríplice (pirimetamina, sulfadiazina e ácido folínico)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar teste de Avidez, imediatamente, e iniciar o uso de espiramicina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar teste de Avidez, imediatamente, e iniciar uso de esquema tríplice (pirimetamina, sulfadiazina e ácido folínico)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender a interpretação da sorologia para toxoplasmose na gestação e a conduta preconizada pelos protocolos do Ministério da Saúde e da FEBRASGO.\n\nO cenário clínico apresenta uma gestante no primeiro trimestre (11 semanas) com sorologia apresentando IgG negativo e IgM positivo.\n\nAnálise do Resultado Sorológico:\nO padrão IgG negativo e IgM positivo pode indicar duas situações principais:\n1. Infecção aguda muito recente: O organismo começou a produzir IgM, mas ainda não teve tempo de produzir IgG (fase de janela imunológica).\n2. IgM falso-positivo: Presença de anticorpos inespecíficos que reagem no teste, sem que haja infecção real.\n\nAnálise das Alternativas:\n\nAlternativa (a) CORRETA: Diante da possibilidade de uma infecção aguda inicial, a prioridade é proteger o feto. A espiramicina deve ser iniciada imediatamente, pois ela se concentra na placenta e reduz o risco de transmissão vertical em cerca de 50%. Como não se tem certeza se é uma infecção real ou um falso-positivo, deve-se repetir a sorologia (IgG e IgM) em 2 a 3 semanas para observar se ocorrerá a soroconversão (o IgG tornar-se positivo). Se, na segunda amostra, o IgG continuar negativo, a espiramicina é suspensa.\n\nAlternativa (b) INCORRETA: O esquema tríplice (sulfadiazina, pirimetamina e ácido folínico) é reservado para casos de infecção fetal confirmada (via amniocentese/PCR) ou infecção materna aguda confirmada a partir do segundo/terceiro trimestres. Além disso, a pirimetamina é formalmente contraindicada no primeiro trimestre devido ao seu potencial teratogênico (interfere no metabolismo do ácido fólico).\n\nAlternativa (c) INCORRETA: O teste de avidez serve para avaliar a \"força\" da ligação do anticorpo IgG ao antígeno, ajudando a datar a infecção. Por definição técnica, o teste de avidez só pode ser realizado se o IgG for positivo. Se a paciente possui IgG negativo, não há anticorpos a serem testados, tornando o exame impossível de ser executado pelo laboratório.\n\nAlternativa (d) INCORRETA: Esta alternativa comete dois erros: solicita um exame impossível de realizar no momento (teste de avidez com IgG negativo) e indica o uso do esquema tríplice, que não é a conduta inicial e é contraindicado no primeiro trimestre.\n\nResumo do Fluxograma:\n- IgG (-) e IgM (+): Iniciar Espiramicina + Repetir IgG em 2-3 semanas para checar soroconversão.\n- IgG (+) e IgM (+): Se a idade gestacional for < 16 semanas, solicitar Teste de Avidez imediatamente. Se for > 16 semanas, o teste de avidez perde o valor clínico para datar o primeiro trimestre.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Infecções Congênitas na Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  },
+  {
+    "id": "AJUDA_0bbd7c6b-cfe4-4756-b376-98acb6187dc5",
+    "originalId": "0bbd7c6b-cfe4-4756-b376-98acb6187dc5",
+    "statement": "Recém-nascido prematuro apresenta sopro contínuo na região infraclavicular esquerda, pulsos amplos e precórdio hiperdinâmico. A cardiopatia e o tratamento farmacológico inicial são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comunicação Interatrial; Furosemida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Persistência do Canal Arterial; Ibuprofeno ou Indometacina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Estenose Pulmonar; Prostaglandina E1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coarctação da Aorta; Prostaglandina E1.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso clínico descreve um recém-nascido prematuro com a tríade clássica da persistência do canal arterial (PCA) com repercussão hemodinâmica:\n\n1. Sopro contínuo na região infraclavicular esquerda: Também conhecido como sopro em maquinaria ou de Gibson, ocorre porque há passagem de sangue da aorta para a artéria pulmonar tanto na sístole quanto na diástole (devido à menor resistência vascular pulmonar em relação à sistêmica).\n2. Pulsos amplos (céleres): Ocorrem pelo \"roubo\" de fluxo da aorta para a artéria pulmonar durante a diástole, o que reduz a pressão diastólica sistêmica e aumenta a pressão de pulso (diferença entre sístole e diástole).\n3. Precórdio hiperdinâmico: Reflete a sobrecarga de volume nas câmaras cardíacas esquerdas (átrio e ventrículo esquerdos), que recebem o hiperfluxo proveniente dos pulmões.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A comunicação interatrial (CIA) raramente manifesta sintomas ou sopros importantes no período neonatal imediato. Quando apresenta sopro, este é sistólico (por hiperfluxo na válvula pulmonar) e acompanhado de desdobramento fixo da segunda bulha, não sendo um sopro contínuo. A furosemida pode ser usada para tratar a congestão, mas não atua na causa anatômica.\n\nAlternativa b) Correta. A persistência do canal arterial é a cardiopatia mais comum na prematuridade. O fechamento farmacológico é indicado quando há repercussão clínica e consiste no uso de anti-inflamatórios não esteroidais (AINEs), especificamente o ibuprofeno ou a indometacina. Essas drogas inibem a síntese de prostaglandinas, que são as substâncias responsáveis por manter o canal arterial aberto durante a vida fetal.\n\nAlternativa c) Incorreta. A estenose pulmonar caracteriza-se por um sopro sistólico de ejeção em foco pulmonar, e não um sopro contínuo. A prostaglandina E1 (alprostadil) é utilizada para manter o canal arterial aberto em cardiopatias ducto-dependentes, o que é o oposto do objetivo terapêutico neste caso de PCA isolada.\n\nAlternativa d) Incorreta. Na coarctação da aorta, os pulsos nos membros inferiores estariam diminuídos ou ausentes, contrastando com os pulsos nos membros superiores (diferentemente dos pulsos amplos generalizados da PCA). Embora a prostaglandina E1 seja usada na coarctação crítica para manter o fluxo sistêmico via canal arterial, o quadro clínico descrito (sopro contínuo e pulsos amplos) aponta diretamente para a PCA.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  },
+  {
+    "id": "AJUDA_0bc11d87-d99e-4cac-85a0-0dc03b05a409",
+    "originalId": "0bc11d87-d99e-4cac-85a0-0dc03b05a409",
+    "statement": "Homem de 26 anos, previamente hígido, procura atendimento médico relatando aumento indolor de volume cervical à esquerda de forma progressiva há dois meses. Ele refere também fadiga limitante, sudorese noturna profusa que o obriga a trocar as roupas de cama, e perda ponderal não intencional de 8 kg (cerca de 11% do seu peso corporal) nos últimos quatro meses. Nega dor local após a ingestão de bebidas alcoólicas e bem como lesões cutâneas. Ao exame físico: hipocorado (+/4+); anictérico; palpa-se um conglomerado linfonodal supraclavicular e cervical à esquerda, de consistência fibroelástica, fixo, indolor, medindo 4,5 cm no maior eixo; o baço é palpável a 3 cm do rebordo costal esquerdo, indolor à palpação. Exames séricos: hemoglobina: 10,8 g/dL (VCM: 77 fL); leucócitos: 11.500/mm3 (com eosinofilia leve); plaquetas: 410.000/mm3; desidrogenase lática: 450 U/L (normal: < 240 U/L); VHS: 85 mm/h; sorologias (HIV, VHB, VHC): não reagentes. Tomografia por emissão de pósitrons (PET-CT): hipercaptação anômala (FDG-ávida) nos linfonodos cervicais esquerdos, cadeias mediastinais anteriores e difusamente no parênquima esplênico. Considerando a principal hipótese diagnóstica, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A aspiração por agulha fina representa o procedimento inicial padrão para a subtipagem definitiva de linfomas agressivos, substituindo a excisão cirúrgica devido ao seu alto rendimento diagnóstico e menores taxas de complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A análise histopatológica possivelmente revelará uma minoria de células malignas de Reed-Sternberg cercadas por um rico e pleomórfico infiltrado inflamatório, quando o diagnóstico é linfoma de Hodgkin clássico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O linfoma de células do manto é diagnosticado diretamente através da eletroforese de proteínas séricas, pois produz um grande pico de imunoglobulina monoclonal que mitiga a necessidade de biópsias teciduais ou avaliações por citometria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O subtipo histológico esclerose nodular do linfoma de Hodgkin demonstra a maior taxa de associação com o vírus Epstein-Barr, sendo impulsionado patogeneticamente por essa infecção viral na vasta maioria das apresentações em adultos jovens.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os sintomas B constitucionais são caracterizados pela presença de prurido generalizado, fadiga debilitante e uma redução de peso corporal inexplicada de aproximadamente cinco por cento nos três meses precedentes ao diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resumo do caso: homem jovem com linfonodomegalia cervical e supraclavicular esquerda, indolor, fibroelástica, em conglomerado, associada a sintomas B (sudorese noturna profusa e perda de mais de 10% do peso em menos de 6 meses). Há esplenomegalia, anemia, aumento de DHL e VHS, eosinofilia e acometimento mediastinal anterior e esplênico no PET-CT. O quadro é típico de linfoma de Hodgkin clássico, provavelmente esclerose nodular, que é o subtipo mais comum em adultos jovens e costuma acometer o mediastino. O estadiamento provável é III (supradiafragmático mais baço), com sintomas B (IIIB). Dor nos linfonodos após ingestão de álcool e prurido são achados raros e inespecíficos, e sua ausência não afasta o diagnóstico.\n\nAnálise das alternativas:\n\na) Incorreta. A punção aspirativa com agulha fina não é o método padrão para o diagnóstico de linfoma. Ela não preserva a arquitetura do linfonodo, que é essencial para a subtipagem (padrão nodular ou difuso, fibrose, células neoplásicas em seu microambiente). O diagnóstico exige biópsia excisional do linfonodo mais suspeito, ou biópsia incisional ou core biopsy como alternativas, com imuno-histoquímica. A PAAF pode servir de triagem, mas não substitui a excisão.\n\nb) Correta. No linfoma de Hodgkin clássico, a histologia mostra poucas células neoplásicas (células de Reed-Sternberg e variantes de Hodgkin, CD15+, CD30+, PAX5 fraco, CD45 negativo) em meio a um infiltrado inflamatório reacional abundante e pleomórfico, com linfócitos, eosinófilos, plasmócitos e histiócitos. As células malignas são em geral cerca de 1% da celularidade, e o infiltrado explica a eosinofilia e as citocinas responsáveis pelos sintomas sistêmicos.\n\nc) Incorreta. O linfoma de células do manto é um linfoma B não Hodgkin, com t(11;14) e hiperexpressão de ciclina D1 e SOX11. Seu diagnóstico depende de biópsia, imuno-histoquímica (CD5+, CD20+, CD23 negativo) e citometria de fluxo ou FISH. Ele não costuma produzir grande pico monoclonal; o pico monoclonal grande é típico de mieloma múltiplo e da macroglobulinemia de Waldenström.\n\nd) Incorreta. A associação com o EBV é maior no subtipo celularidade mista, e também é elevada em pacientes HIV positivos e em países em desenvolvimento. Na esclerose nodular, o EBV está presente em apenas cerca de 10 a 40% dos casos. Além disso, o EBV não \"impulsiona\" a doença na vasta maioria dos casos.\n\ne) Incorreta. Os sintomas B são febre inexplicada (>38 °C), sudorese noturna profusa e perda de peso superior a 10% em 6 meses. Prurido e fadiga não fazem parte da definição, embora sejam sintomas associados. A perda de 5% em 3 meses não preenche o critério.\n\nGabarito: letra B.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  },
+  {
+    "id": "AJUDA_0bc6df6a-fbbe-43b6-be8c-eedb3868f378",
+    "originalId": "0bc6df6a-fbbe-43b6-be8c-eedb3868f378",
+    "statement": "Uma criança de 7 anos, portadora de comunicação interventricular (CIV) perimembranosa pequena, assintomática, sem sopro hiperfonético, com desenvolvimento pôndero-estatural normal, sem história de cianose, síncope ou internações prévias. Em consulta recente, apresentou exame físico estável, saturando 98%, ausculta com sopro sistólico leve (2+/6+), ritmo cardíaco regular, PA e frequência cardíaca dentro da normalidade. Ecodopplercardiograma de controle há 6 meses evidencia CIV restritiva, câmaras cardíacas de tamanho normal e função ventricular preservada, sem sinais de hipertensão pulmonar. O procedimento indicado é adenoamigdalectomia eletiva, sob anestesia geral. O otorrinolaringologista solicita avaliação cardiológica para liberação cirúrgica e estimativa de risco perioperatório. De acordo com a Diretriz Brasileira de Avaliação Cardiovascular Perioperatória 2024, qual é a conduta mais adequada para o cardiologista diante desse cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender o procedimento até que se realize teste ergométrico e ressonância cardíaca para melhor avaliação de risco, visto que toda cardiopatia congênita exige investigação funcional completa antes de cirurgia sob anestesia geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Liberar para cirurgia com risco cardiovascular considerado baixo, sem necessidade de exames adicionais, mantendo seguimento ambulatorial rotineiro, visto tratar-se de cardiopatia não complexa, hemodinamicamente estável e procedimento de baixo risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar cateterismo cardíaco para avaliação invasiva de fluxo do defeito septal e do risco de hipertensão pulmonar oculta, pois procedimentos com anestesia geral aumentam chance de eventos adversos mesmo em CIV pequena.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Contraindicar adenoamigdalectomia eletiva, uma vez que CIV, ainda que restritiva, aumenta mortalidade perioperatória em cirurgias otorrinolaringológicas, sobretudo em crianças com shunt residual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Exigir fechamento cirúrgico da CIV antes do procedimento otorrinolaringológico, pois a correção da cardiopatia deve preceder qualquer cirurgia não cardíaca em pacientes pediátricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ENUNCIADO: A questão aborda a avaliação pré-operatória de uma criança com cardiopatia congênita acianótica (Comunicação Interventricular – CIV) para uma cirurgia não cardíaca (adenoamigdalectomia).\n\nANÁLISE DO CASO CLÍNICO:\nEstamos diante de uma criança de 7 anos com uma CIV perimembranosa pequena e restritiva. Os dados clínicos são fundamentais: paciente assintomático, com desenvolvimento normal, sem sinais de insuficiência cardíaca ou hipertensão pulmonar. O ecocardiograma recente confirma que não há repercussão hemodinâmica (câmaras de tamanho normal e função preservada). De acordo com a Diretriz Brasileira de Avaliação Cardiovascular Perioperatória (2024), o manejo de pacientes com cardiopatias congênitas depende da complexidade da lesão, do estado clínico atual e do risco do procedimento cirúrgico planejado.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. Não há indicação de suspender o procedimento para realizar teste ergométrico ou ressonância cardíaca. O teste ergométrico tem utilidade limitada em crianças pequenas para essa finalidade, e a ressonância é um exame de alta complexidade, reservado para casos em que o ecocardiograma é insuficiente ou em cardiopatias complexas. Uma CIV pequena e restritiva não exige investigação funcional exaustiva antes de uma cirurgia eletiva de baixo/médio risco.\n\nAlternativa b) Correta. Esta é a conduta preconizada. O paciente apresenta uma cardiopatia congênita de baixa complexidade, está clinicamente estável e possui exames de imagem recentes que demonstram ausência de repercussão hemodinâmica. A adenoamigdalectomia, embora exija anestesia geral, é um procedimento com risco cardiovascular estimado como baixo para este perfil de paciente. Portanto, a liberação sem novos exames e a manutenção do seguimento ambulatorial são o caminho adequado.\n\nAlternativa c) Incorreta. O cateterismo cardíaco é um procedimento invasivo e não está indicado para avaliação de rotina em casos de CIV pequena e restritiva com ecocardiograma inequívoco. Não há qualquer suspeita de hipertensão pulmonar no quadro clínico ou no ecocardiograma que justifique os riscos de um cateterismo pré-operatório.\n\nAlternativa d) Incorreta. Não existe contraindicação para a adenoamigdalectomia neste cenário. A CIV restritiva sem repercussão não eleva significativamente a mortalidade perioperatória de forma a impedir cirurgias necessárias para a qualidade de vida da criança, como a correção de hipertrofia de adenoide e amígdalas.\n\nAlternativa e) Incorreta. O fechamento de uma CIV pequena e restritiva muitas vezes sequer possui indicação cirúrgica ao longo da vida, uma vez que o defeito pode fechar espontaneamente ou permanecer sem causar danos ao paciente. Exigir a correção da cardiopatia antes de uma cirurgia não cardíaca eletiva em um paciente estável é uma conduta tecnicamente errada e desproporcional.\n\nGABARITO: Letra (b).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Perioperatório",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  },
+  {
+    "id": "AJUDA_0bc73a54-ef83-4e31-9c09-dbb472bb9092",
+    "originalId": "0bc73a54-ef83-4e31-9c09-dbb472bb9092",
+    "statement": "Um homem de 29 anos, vendedor, procura a unidade básica por apresentar lesões eritematosas difusas há cerca de 10 dias, envolvendo palmas, plantas e tronco, além de adenopatia cervical indolor. Ele informa que a esposa está grávida de 12 semanas e que, dois meses antes, teve um encontro eventual em que houve sexo oral desprotegido. A avaliação clínica sugere estágio avançado da infeção. Considerando o quadro e o risco familiar, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Achados compatíveis com infecção latente, sem repercussão para gestantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesões compatíveis com fase primária, com transmissão já reduzida para a gestante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Achados compatíveis com sífilis secundária, período de alta transmissibilidade para parceira e feto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indícios de sífilis terciária, ainda com alto risco de transmissão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manifestações típicas da fase secundária, com baixo risco de transmissão vertical.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descrito apresenta um paciente com lesões cutâneas eritematosas disseminadas, atingindo especificamente a região palmo-plantar e o tronco, associadas a linfadenopatia cervical. Esse conjunto de sinais e sintomas, ocorrendo cerca de dois meses após uma exposição sexual de risco, é patognomônico da sífilis secundária. Nesta fase, há uma intensa disseminação do Treponema pallidum pelo organismo.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A sífilis latente é, por definição, assintomática (ausência de sinais e sintomas clínicos), sendo detectada apenas por testes sorológicos. O paciente em questão apresenta lesões exuberantes. Além disso, qualquer fase da sífilis em uma gestante tem potencial de repercussão para o feto se não tratada.\n\nAlternativa B (Incorreta): A fase primária caracteriza-se pelo cancro duro (úlcera indolor no local da inoculação), que geralmente desaparece espontaneamente antes do surgimento das lesões secundárias. O paciente já ultrapassou essa fase. A transmissibilidade na fase primária e secundária é máxima, e não reduzida.\n\nAlternativa C (Correta): Os achados de roséolas sifilíticas (tronco) e sifílides palmo-plantares, junto com a poliadenopatia, confirmam a sífilis secundária. Este é o período de maior carga bacteriana circulante e nas lesões cutâneo-mucosas, resultando em altíssima transmissibilidade tanto por via sexual para a parceira quanto por via transplacentária para o feto (transmissão vertical).\n\nAlternativa D (Incorreta): A sífilis terciária ocorre anos após a infecção inicial, manifestando-se com gomas sifilíticas, acometimento cardiovascular (aneurisma de aorta) ou neurossífilis tardia. Diferente das fases iniciais, a transmissibilidade na fase terciária é consideravelmente menor.\n\nAlternativa E (Incorreta): Embora a fase seja corretamente identificada como secundária, a afirmação de que o risco de transmissão vertical é baixo está errada. Nas fases precoces da sífilis (primária e secundária), a taxa de transmissão vertical pode chegar a 100%, sendo o período de maior perigo para a gestação.\n\nConclusão: O diagnóstico é de sífilis secundária, fase de elevada infectividade, exigindo tratamento imediato do paciente e avaliação urgente da gestante para prevenir a sífilis congênita.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  },
+  {
+    "id": "AJUDA_0bd2e669-0944-49bd-aa2c-6535cb36acba",
+    "originalId": "0bd2e669-0944-49bd-aa2c-6535cb36acba",
+    "statement": "De acordo com as diretrizes brasileiras de rastreamento do câncer de colo do útero, uma paciente de 25 anos, após dois exames citopatológicos (Papanicolaou) anuais consecutivos negativos, passa a realizar o rastreamento a cada três anos. No exame realizado aos 29 anos, o resultado é ASC-US (Células Escamosas Atípicas de Significado Indeterminado). Qual é a conduta clinicamente MAIS apropriada e recomendada para essa paciente, considerando o seu risco e a idade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar a colposcopia imediata, devido à presença de atipias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir o exame citopatológico em 6 meses, independentemente da faixa etária, realizando também a pesquisa de HPV de alto risco (co-testing) e, se positiva, indicar a colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar tratamento medicamentoso com antibióticos e antifúngicos, repetindo o exame em 12 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Repetir o exame citopatológico em 3 anos, pois para a faixa etária abaixo de 30 anos, o resultado ASC-US é considerado de baixo risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A conduta diante de um resultado de ASC-US (Células Escamosas Atípicas de Significado Indeterminado, possivelmente não neoplásicas) no rastreamento do câncer de colo do útero é determinada primordialmente pela idade da paciente, segundo as Diretrizes Brasileiras do Ministério da Saúde (INCA).\n\nA paciente em questão tem 29 anos. De acordo com o protocolo brasileiro:\n- Pacientes menores de 25 anos com ASC-US: repetir o exame em 3 anos.\n- Pacientes entre 25 e 29 anos com ASC-US: repetir o exame em 12 meses.\n- Pacientes com 30 anos ou mais com ASC-US: repetir o exame em 6 meses.\n\nAnálise das alternativas:\n\na) Incorreta. A colposcopia imediata não é indicada para ASC-US em uma primeira ocorrência, independentemente da idade. Ela seria indicada de imediato para resultados de maior gravidade, como ASC-H (atipias em que não se pode excluir lesão de alto grau), HSIL (lesão intraepitelial de alto grau) ou após dois resultados consecutivos de ASC-US.\n\nb) Incorreta. A repetição em 6 meses é a conduta preconizada para mulheres com 30 anos ou mais. Além disso, o co-testing (citologia + pesquisa de HPV) não faz parte da rotina oficial de rastreamento do SUS no Brasil, que se baseia primordialmente na citologia.\n\nc) Correta. Como a paciente tem 29 anos, ela se enquadra na faixa etária que exige a repetição do exame citopatológico em 12 meses. A alternativa menciona o tratamento medicamentoso prévio (antibióticos e antifúngicos), uma conduta comum na prática clínica para tratar possíveis processos inflamatórios ou infecciosos que podem estar mimetizando as atipias indeterminadas, garantindo que o próximo exame seja mais fidedigno.\n\nd) Incorreta. A repetição em 3 anos é reservada exclusivamente para pacientes menores de 25 anos com resultado de ASC-US. Para uma paciente de 29 anos, esse intervalo seria longo demais e estaria em desacordo com as diretrizes nacionais.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  },
+  {
+    "id": "AJUDA_0bea41b3-503c-4a42-af2f-38cf6278b277",
+    "originalId": "0bea41b3-503c-4a42-af2f-38cf6278b277",
+    "statement": "Em uma situação em que o correto diagnóstico de uma doença e o seu tratamento precoce são importantes para se evitar evoluções desfavoráveis, é importante que o procedimento diagnóstico tenha alta",
+    "options": [
+      {
+        "id": "A",
+        "text": "reprodutibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "validade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "precisão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "especificidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender os conceitos de acurácia diagnóstica, especificamente a aplicação clínica da sensibilidade e da especificidade.\n\nO enunciado descreve uma situação em que o objetivo principal é identificar a doença o mais cedo possível para intervir e evitar um desfecho desfavorável. Nesses casos, o erro que mais se deseja evitar é o \"falso-negativo\" (dizer que o paciente está saudável quando, na verdade, ele está doente). O parâmetro que minimiza os falsos-negativos é a sensibilidade.\n\nA seguir, a explicação de cada alternativa:\n\na) Reprodutibilidade: Refere-se à capacidade de um teste ou procedimento de produzir resultados idênticos ou muito semelhantes quando repetido sob as mesmas condições (por diferentes examinadores ou em momentos diferentes). Embora seja uma qualidade desejável em qualquer exame, a reprodutibilidade não garante que o teste seja capaz de detectar a doença em sua fase inicial.\n\nb) Validade: É um conceito geral que indica se o teste realmente mede aquilo que se propõe a medir. A validade de um teste diagnóstico é composta por sua sensibilidade e por sua especificidade. A alternativa está incorreta por ser um termo genérico, enquanto a questão exige o parâmetro específico para a detecção de casos.\n\nc) Precisão: Também chamada de fidedignidade, a precisão está relacionada à baixa variabilidade dos resultados entre medições repetidas. Um teste pode ser preciso (dar sempre o mesmo resultado) e estar sistematicamente errado (não detectar a doença). Portanto, não é o fator primordial para garantir o diagnóstico precoce e evitar evoluções desfavoráveis.\n\nd) Especificidade: É a capacidade do teste de identificar corretamente os indivíduos que NÃO possuem a doença (verdadeiros-negativos). Testes altamente específicos são excelentes para confirmar um diagnóstico e evitar tratamentos desnecessários em pessoas saudáveis (minimizam os falsos-positivos). No entanto, para o rastreamento e o diagnóstico precoce visando salvar vidas, a especificidade é menos prioritária do que a sensibilidade.\n\ne) Sensibilidade: É a alternativa correta. A sensibilidade define a capacidade de um teste de detectar a doença naqueles que realmente a têm. Um teste com alta sensibilidade resulta em poucos falsos-negativos. Em cenários nos quais o diagnóstico precoce é crucial para o sucesso do tratamento e para evitar complicações graves, deve-se priorizar um procedimento altamente sensível para garantir que nenhum caso passe despercebido.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:37.176Z"
+  }
+]

@@ -1,0 +1,489 @@
+[
+  {
+    "id": "AJUDA_783a1d08-b363-4273-8711-61cafc5d5a00",
+    "originalId": "783a1d08-b363-4273-8711-61cafc5d5a00",
+    "statement": "Durante a avaliação pré-operatória de uma cirurgia para correção do desvio de septo nasal, um paciente de 29 anos, previamente hígido, revelou estar em uso do medicamento naltrexona há seis semanas. Trata-se de um antagonista de receptores de opioide, utilizado no controle de abuso de álcool. Está programada a aplicação de anestesia geral para o procedimento. \nNesse contexto, qual a recomendação clínica adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a dose de naltrexona para potencializar os efeitos de analgesia durante a cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter o uso de naltrexona, com recomendação de abstinência total de álcool.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Substituir o naltrexona por um outro antagonista de opioides, como a naloxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender o uso de naltrexona, por 3 ou mais dias, antes do procedimento e proibir o consumo de álcool.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A naltrexona é um antagonista competitivo dos receptores opioides mu e kappa, com alta afinidade. Sua utilização no tratamento do alcoolismo baseia-se na redução do prazer associado ao consumo e na diminuição da fissura. O principal problema no cenário cirúrgico é que a naltrexona bloqueia a ação dos analgésicos opioides comumente empregados na anestesia geral e no controle da dor pós-operatória, como o fentanil, a morfina e a meperidina.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A naltrexona não possui efeito analgésico próprio; ela é um bloqueador. Aumentar a dose tornaria o bloqueio dos receptores ainda mais intenso, impedindo completamente que os opioides administrados pelo anestesista façam efeito, o que resultaria em dor incontrolável durante e após o procedimento.\n\nAlternativa b) Incorreta. Manter o medicamento compromete a segurança anestésica. Se os receptores estiverem ocupados pela naltrexona, o anestesista precisaria de doses excessivamente altas de opioides para tentar vencer o bloqueio por competição, o que aumenta o risco de depressão respiratória aguda assim que o efeito da naltrexona começar a passar.\n\nAlternativa c) Incorreta. A naloxona também é um antagonista opioide, porém com meia-vida curta e administração geralmente intravenosa. Substituir um antagonista por outro não soluciona o conflito farmacológico, pois o objetivo é liberar os receptores para que os agonistas (analgésicos) possam agir.\n\nAlternativa d) Correta. Para garantir que os receptores opioides estejam disponíveis para a analgesia perioperatória, a naltrexona oral deve ser suspensa por pelo menos 72 horas (3 dias) antes da cirurgia, devido à sua meia-vida e à de seu metabólito ativo (6-beta-naltrexol). Em casos de formulações injetáveis de longa ação, o tempo de suspensão deve ser ainda maior (cerca de 30 dias). A proibição do álcool é fundamental para evitar complicações metabólicas, interações medicamentosas e crises de abstinência no período de recuperação.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  },
+  {
+    "id": "AJUDA_7844928a-b810-4b45-9d3e-4bd0d7a38bec",
+    "originalId": "7844928a-b810-4b45-9d3e-4bd0d7a38bec",
+    "statement": "Recém-nascida, sexo feminino, 15 dias de vida, deu entrada no pronto-socorro por quadro de recusa alimentar, letargia e febre (38,4 °C) iniciados desde ontem. Trata-se de criança nascida a termo, parto vaginal, sem intercorrências perinatais. Ao exame clínico, criança em regular estado geral; descorada 1+/4+; FC: 176 bpm; FR: 58 irpm; SatO₂: 94% em ar ambiente; perfusão periférica lentificada. Observam-se vesículas eritematosas em região periocular e mucosa oral.\nÉ prescrita expansão com 10 mL/kg de soro fisiológico e são colhidos exames complementares com os seguintes achados:\n- Hemograma: Hb: 13,2 g/dL; Ht: 42%; leucócitos: 25.200/mm³ (8% de bastonetes e 68% de neutrófilos); plaquetas: 128.000/mm³.\n- AST (TGO): 185 U/L; ALT (TGP): 142 U/L; proteína C reativa: 38 mg/L.\n- Glicemia: 66 mg/dL; sódio: 137 mEq/L; potássio: 4,8 mEq/L.\n- Radiografia de tórax sem alterações.\n- Liquor é coletado, e aguarda-se o resultado.\nQual é a conduta mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter internação para observação clínica, sem introdução de nenhum tratamento endovenoso, por provável infecção viral autolimitada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antibioticoterapia empírica com oxacilina e amicacina endovenosos, com eventuais ajustes a depender do resultado do líquor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar antibioticoterapia empírica com ampicilina e cefotaxima endovenosos, mantendo tratamento até resultado final das culturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar tratamento empírico com ampicilina, cefotaxima e aciclovir endovenosos, mantendo internação e tratamento até esclarecimento diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nEstamos diante de um recém-nascido de 15 dias de vida com sinais claros de sepse neonatal tardia ou choque séptico (febre, letargia, recusa alimentar, taquicardia, taquipneia e perfusão periférica lentificada). O hemograma mostra leucocitose com desvio à esquerda e plaquetopenia. Um achado fundamental para o diagnóstico são as vesículas em região periocular e mucosa oral, além da alteração de transaminases hepáticas (AST e ALT elevadas), o que aponta fortemente para uma infecção pelo vírus Herpes Simples (HSV) em sua forma disseminada ou com acometimento do sistema nervoso central.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA conduta em um neonato com sinais de sepse deve ser imediata e agressiva. A cobertura antibiótica deve abranger os principais patógenos do período neonatal (Streptococcus agalactiae, Escherichia coli e Listeria monocytogenes). A combinação de Ampicilina com Cefotaxima (ou um aminoglicosídeo) é o padrão-ouro. No entanto, a presença de vesículas cutâneas e o comprometimento sistêmico/hepático tornam obrigatória a inclusão do Aciclovir endovenoso para tratar a possível infecção por Herpes Simples, que apresenta alta mortalidade se não tratada precocemente. Portanto, a tríplice terapia (Ampicilina + Cefotaxima + Aciclovir) é a conduta mais completa e adequada.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Incorreta. O paciente apresenta sinais de instabilidade hemodinâmica e sepse. Jamais se deve apenas observar um recém-nascido febril com letargia e má perfusão. O risco de morte ou sequelas graves é altíssimo sem intervenção imediata.\n\nAlternativa B: Incorreta. A Oxacilina e a Amicacina são geralmente reservadas para casos de suspeita de infecção por Staphylococcus aureus ou germes hospitalares específicos. Além disso, essa alternativa ignora a suspeita de Herpes Simples (ausência de Aciclovir) e não cobre adequadamente a Listeria monocytogenes, que é sensível à Ampicilina.\n\nAlternativa C: Incorreta. Embora a combinação de Ampicilina e Cefotaxima trate as principais causas bacterianas de sepse neonatal, ela é insuficiente para este caso específico. A presença de vesículas perioculares é um sinal patognomônico que exige a inclusão do Aciclovir no esquema empírico inicial.\n\nRESUMO DA CONDUTA\n\nA abordagem do recém-nascido grave exige:\n1. Estabilização hemodinâmica (expansão volêmica, como já iniciado).\n2. Coleta de culturas (sangue, urina e líquor).\n3. Início imediato de antibioticoterapia e antiviral de amplo espectro para cobrir os agentes mais prováveis e os sugeridos pelo exame físico. A escolha de Cefotaxima em vez de Ceftriaxona é preferível em neonatos para evitar o risco de kernicterus (deslocamento da bilirrubina da albumina).",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas",
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  },
+  {
+    "id": "AJUDA_78454147-9f8e-46c0-a22d-d30b0e603aff",
+    "originalId": "78454147-9f8e-46c0-a22d-d30b0e603aff",
+    "statement": "Entre os casos abaixo a realização de Punção Aspirativa por Agulha Fina (PAAF) para investigação do nódulo tireoidiano está corretamente indicada para:",
+    "options": [
+      {
+        "id": "A",
+        "text": "mulher de 32 anos, com hipotireoidismo subclínico e nódulo tireoidiano de 0,8 cm, sem características suspeitas ao ultrassom.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "homem de 50 anos com histórico familiar de câncer de tireoide, apresentando um nódulo de 1,2cm no lobo esquerdo da tireoide, que exibe microcalcificações e margens irregulares ao ultrassom.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "mulher de 40 anos com hipertireoidismo e nódulo tireoidiano de 0,9 cm com vascularização central, mas sem outras características suspeitas ao ultrassom.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "homem de 35 anos com nódulo tireoidiano de 0,9 cm no lobo direito, com ecogenicidade aumentada e bordas regulares ao ultrassom. Sem história familiar de câncer de tireoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "mulher de 29 anos, com hipotireoidismo e nódulo tireoidiano misto de 1,5cm, de contornos regulares e sem sinais de malignidade ao ultrassom.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para dominar as indicações de Punção Aspirativa por Agulha Fina (PAAF) em nódulos de tireoide, o candidato deve integrar os achados da ultrassonografia (critérios de TI-RADS ou ATA) com o tamanho do nódulo e a clínica do paciente. O objetivo é evitar procedimentos desnecessários em nódulos benignos ou pequenos demais para ter relevância clínica imediata.\n\nAnálise detalhada das alternativas:\n\nAlternativa A: Incorreta. O nódulo é subcentimétrico (0,8 cm) e não apresenta características suspeitas. Segundo os consensos atuais (ATA e ACR TI-RADS), nódulos menores que 1 cm sem sinais de altíssimo risco ou crescimento documentado não devem ser puncionados. O quadro de hipotireoidismo subclínico é um achado laboratorial que não interfere nos critérios morfológicos de indicação de PAAF.\n\nAlternativa B: Correta (Gabarito). Este é o cenário de maior gravidade na questão. O nódulo apresenta sinais ultrassonográficos de alta suspeita (microcalcificações e margens irregulares), o que o classifica como TI-RADS 5. Para nódulos com esse padrão de alta suspeita, a PAAF está indicada a partir de 1,0 cm. Além disso, o paciente apresenta fatores de risco adicionais: sexo masculino e histórico familiar de câncer de tireoide, o que reforça a necessidade de investigação citológica.\n\nAlternativa C: Incorreta. Existe um erro de fluxo propedêutico aqui. Na presença de hipertireoidismo (TSH baixo), o primeiro passo não é a PAAF, mas sim a Cintilografia de Tireoide. Se o nódulo for \"quente\" (hipercaptante), o risco de malignidade é extremamente baixo e a PAAF é geralmente dispensável. Se for \"frio\", segue-se o protocolo habitual. Além disso, a vascularização central isolada não é um critério de alta suspeita que justifique puncionar um nódulo de 0,9 cm.\n\nAlternativa D: Incorreta. O nódulo é hiperecogênico e possui bordas regulares, características que sugerem benignidade (baixa suspeita). Para nódulos com esse padrão benigno, a PAAF só seria cogitada se o tamanho fosse significativamente maior (geralmente acima de 1,5 cm a 2,0 cm). Com apenas 0,9 cm, a conduta correta é apenas o acompanhamento.\n\nAlternativa E: Incorreta. Nódulos mistos (sólido-císticos) com contornos regulares são considerados de baixa suspeita ou suspeita intermediária. Pelo sistema TI-RADS, nódulos com esse aspecto só devem ser puncionados se atingirem 1,5 cm (se houver características moderadamente suspeitas) ou 2,5 cm (se forem de baixa suspeita). Embora tenha 1,5 cm, o nódulo da alternativa B possui critérios de malignidade muito mais evidentes (microcalcificações e margens irregulares), tornando-se a indicação prioritária e correta conforme as diretrizes.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  },
+  {
+    "id": "AJUDA_784b6d95-c201-44d7-bb8c-8e52f71b7186",
+    "originalId": "784b6d95-c201-44d7-bb8c-8e52f71b7186",
+    "statement": "Qual é o sinal clínico que apresenta aumento indolor da vesícula biliar em paciente com icterícia obstrutiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Murphy",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Courvoisier",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Rovsing",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gersuny",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda um achado semiológico clássico da gastroenterologia e cirurgia digestiva, fundamental para o diagnóstico diferencial das icterícias obstrutivas.\n\nAlternativa (a) Murphy: Incorreta. O sinal de Murphy é definido como a interrupção súbita da inspiração profunda durante a palpação do ponto cístico (no hipocôndrio direito). É o sinal patognomônico da colecistite aguda, uma condição inflamatória e tipicamente dolorosa, o que contraria a descrição de aumento indolor solicitada no enunciado.\n\nAlternativa (b) Courvoisier: Correta. Também conhecido como sinal de Courvoisier-Terrier, consiste na palpação de uma vesícula biliar distendida e indolor em um paciente que apresenta icterícia obstrutiva progressiva. Esse sinal é um forte indicativo de obstrução biliar distal de etiologia neoplásica, como o câncer de cabeça de pâncreas, câncer da ampola de Vater ou colangiocarcinoma distal. A lógica é que, em casos de cálculos (litíase), a vesícula costuma estar inflamada e fibrosada cronicamente, o que impede sua distensão elástica, ao passo que na obstrução tumoral lenta e progressiva a vesícula consegue se dilatar sem causar dor imediata.\n\nAlternativa (c) Rovsing: Incorreta. O sinal de Rovsing é um achado relacionado ao exame físico do abdome agudo inflamatório, especificamente na apendicite aguda. Ele ocorre quando a palpação profunda e a compressão do quadrante inferior esquerdo (fossa ilíaca esquerda) provocam dor na fossa ilíaca direita, devido ao deslocamento de gases retrogradamente pelo cólon em direção ao apêndice inflamado.\n\nAlternativa (d) Gersuny: Incorreta. O sinal de Gersuny é utilizado na avaliação de massas abdominais, especificamente fecalomas. Ele é caracterizado pela sensação de \"crepitação\" ou de descolamento da parede intestinal da massa fecal endurecida quando o examinador pressiona e solta lentamente a parede abdominal sobre a região afetada. Não possui relação com o sistema biliar ou icterícia.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  },
+  {
+    "id": "AJUDA_7854d941-7c2c-4ac7-94ad-f48096b2998f",
+    "originalId": "7854d941-7c2c-4ac7-94ad-f48096b2998f",
+    "statement": "Gestante de 35 semanas, primípara, realizando pré-natal de baixo risco na UBS, chega ao laboratório para coleta de cultura vaginorretal para estreptococos do grupo B (GBS). Se o resultado deste exame for positivo, qual será o tratamento considerado de primeira escolha no momento da internação para parto normal a termo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ampicilina 2g IV, seguidos por 1g IV, a cada 4 horas, até o nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefazolina 2g IV, seguidos por 1g IV, a cada 8 horas, até o nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ampicilina 500mg VO de 6/6 hs, por 7 dias, antes do parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Penicilina G cristalina 5 milhões UI IV, seguidas por 2,5 milhões UI IV, a cada 4 horas, até o nascimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A quimioprofilaxia intraparto para o Estreptococo do Grupo B (GBS) tem como objetivo reduzir a colonização neonatal e o risco de sepse precoce no recém-nascido. O rastreio universal é realizado entre 35 e 37 semanas de gestação por meio de cultura vaginorretal. Se o resultado for positivo, a profilaxia deve ser iniciada no momento da internação para o parto.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A ampicilina (dose de ataque de 2 g seguida por 1 g a cada 4 horas) é um esquema eficaz e amplamente aceito como alternativa. Entretanto, não é a primeira escolha. A preferência recai sobre a penicilina por esta possuir um espectro de ação mais estreito, o que ajuda a evitar a seleção de cepas resistentes em outros patógenos.\n\nAlternativa b: Incorreta. A cefazolina é indicada para gestantes alérgicas à penicilina, desde que apresentem baixo risco de anafilaxia. Não é o tratamento de escolha para a população geral que não possui contraindicações aos betalactâmicos.\n\nAlternativa c: Incorreta. O tratamento via oral realizado antes do parto não é eficaz. Como o GBS faz parte da flora transitória, a bactéria pode recolonizar o canal de parto em pouco tempo. Para que a profilaxia seja efetiva, o antibiótico deve ser administrado por via endovenosa durante o trabalho de parto ou após a ruptura das membranas, garantindo níveis terapêuticos no líquido amniótico e na circulação fetal.\n\nAlternativa d: Correta. A Penicilina G Cristalina é a droga de primeira escolha e padrão-ouro para a profilaxia do GBS. O esquema recomendado pelos principais protocolos (como CDC e ACOG) consiste em uma dose de ataque de 5 milhões de Unidades Internacionais (UI) por via endovenosa, seguida de 2,5 milhões de UI a cada 4 horas até o nascimento.\n\nGabarito: Letra D.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  },
+  {
+    "id": "AJUDA_786dca6b-091d-4518-ae2a-34d2dbda3048",
+    "originalId": "786dca6b-091d-4518-ae2a-34d2dbda3048",
+    "statement": "Paciente 8 anos, deu entrada no pronto atendimento com queixa de há 2 dias estar apresentando febre associada à tosse produtiva e desconforto respiratório. Ao exame físico, apresentava febre de 38,5ºC, taquipneia leve e estertores crepitantes à ausculta pulmonar. O médico responsável pelo atendimento o diagnosticou com Pneumonia adquirida na comunidade (PAC), que é causada por germes provenientes do meio domiciliar, escolar e comunitário. Sobre o tratamento da PAC, marque a alternativa que indica a medicação de primeira escolha, com sua respectiva dose e o tempo adequado de tratamento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amoxicilina 50mg/kg/dia, durante 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Amoxicilina 80mg/kg/dia, durante 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amoxicilina 50 mg/kg/dia, durante 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Amoxicilina 50 mg/kg/dia, durante 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o tratamento ambulatorial da pneumonia adquirida na comunidade (PAC) em pediatria. Em crianças acima de 2 meses, o principal agente etiológico das pneumonias bacterianas típicas é o Streptococcus pneumoniae (pneumococo). O quadro clínico descrito (febre, tosse produtiva e estertores crepitantes) é clássico para essa etiologia.\n\nDe acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP) e do Ministério da Saúde, o tratamento de escolha para a PAC tipicamente bacteriana em pacientes que não necessitam de internação é a amoxicilina por via oral.\n\nAnálise das alternativas:\n\na) Correta. A dose de 50 mg/kg/dia de amoxicilina é a recomendação padrão inicial para o tratamento ambulatorial da pneumonia em crianças em nosso meio, em que a resistência penicilínica do pneumococo ainda permite o uso dessa dosagem na maioria dos casos. O tempo de 7 dias é o período classicamente recomendado para a resolução completa do quadro em casos não complicados.\n\nb) Incorreta. A dose de 80-90 mg/kg/dia (dose dobrada) é reservada para situações específicas, como em locais com alta prevalência de pneumococo com resistência intermediária à penicilina ou em pacientes com falha terapêutica inicial, o que não é o caso descrito.\n\nc) Incorreta. Embora o tratamento por 10 dias tenha sido muito utilizado no passado, as evidências e protocolos atuais mostram que, para casos de PAC sem complicações atendidos ambulatorialmente, 7 dias de antibioticoterapia são suficientes, evitando o uso prolongado e desnecessário de medicação.\n\nd) Incorreta. Recentemente, alguns protocolos (inclusive da Organização Mundial da Saúde) têm sugerido tempos mais curtos, como 5 dias, para pneumonias não graves em contextos específicos. No entanto, nos principais consensos brasileiros e nas provas de residência, o período de 7 dias ainda é consolidado como a escolha padrão para garantir a erradicação do agente.\n\nResumo do Tratamento:\n- Droga: amoxicilina (primeira escolha para germes típicos/pneumococo).\n- Dose: 50 mg/kg/dia, dividida em 2 ou 3 tomadas diárias.\n- Duração: 7 dias (em casos de boa resposta clínica).",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Pneumonia na Infância",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  },
+  {
+    "id": "AJUDA_7885d909-ba41-492a-8bc1-fa5131a90aef",
+    "originalId": "7885d909-ba41-492a-8bc1-fa5131a90aef",
+    "statement": "Mulher de 27 anos sofre atropelamento por motocicleta e dá entrada na emergência consciente e agitada, com PA: 78 x 46 mmHg; FC: 126 bpm; FR: 26 mrpm e abdome com hematoma extenso e doloroso difusamente à palpação. FAST à beira-leito positivo em espaço de Morrison; pelve instável ao exame físico. Não foram encontrados outros sítios de sangramento.\n\nQual deve ser a próxima conduta nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TC de abdome/pelve com contraste para mapeamento das lesões.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparotomia emergencial; considerar fixação pélvica e hemostasia adjuvante conforme necessidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "LPD (lavado peritoneal diagnóstico) e, se positivo, observar na sala de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Embolização angiográfica antes de qualquer intervenção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Repetir FAST em 30 minutos e decidir sobre o melhor tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente do caso é vítima de politrauma contuso apresentando choque hemorrágico grave (hipotensão e taquicardia) associado a FAST positivo em espaço de Morrison (evidenciando hemoperitônio) e instabilidade pélvica. Conforme as diretrizes do ATLS (Advanced Trauma Life Support), a presença de instabilidade hemodinâmica com líquido livre na cavidade abdominal impõe intervenção cirúrgica imediata (laparotomia exploradora), associada ao fechamento/estabilização da pelve.\n\nAnalise das alternativas:\n\na) Incorreta. A tomografia computadorizada e um excelente método diagnóstico, porem e formalmente contraindicada em pacientes com instabilidade hemodinamica, pois o tempo de transporte e realizacao do exame fora do ambiente cirurgico aumenta dramaticamente a mortalidade.\n\nb) Correta. A laparotomia emergencial e a conduta de escolha para pacientes instáveis com FAST positivo, visando o controle do foco hemorragico intra-abdominal. Concomitantemente, deve-se realizar a estabilização pélvica (como uso de cinta pelvica, lencol ou fixador externo) e medidas adjuvantes (como empacotamento pre-peritoneal) para conter o sangramento retroperitoneal decorrente da fratura de pelve.\n\nc) Incorreta. O lavado peritoneal diagnostico (LPD) e um metodo invasivo redundante neste caso, visto que o FAST ja identificou liquido livre intraperitoneal. Alem disso, manter em observacao uma paciente com choque hipovolemico e sangramento intra-abdominal ativo e uma conduta inadequada.\n\nd) Incorreta. A angioembolizacao e util no controle de sangramentos pelvicos arteriais, mas nao substitui nem deve postergar a laparotomia em pacientes chocados com hemoperitonio confirmado. Ela pode ser considerada em um segundo momento, se houver sangramento arterial pelvico persistente apos a abordagem cirurgica inicial.\n\ne) Incorreta. Repetir o FAST em 30 minutos e uma estrategia valida para pacientes hemodinamicamente estaveis ou com exames inicialmente duvidosos. Na presenca de choque evidente e exame francamente positivo, qualquer atraso na intervencao cirurgica definitiva eleva o risco de parada cardiorrespiratoria e obito.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Politrauma Ortopédico",
+      "Abdome Agudo Hemorrágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  },
+  {
+    "id": "AJUDA_7887136e-4153-4691-be84-7cd129e4cb57",
+    "originalId": "7887136e-4153-4691-be84-7cd129e4cb57",
+    "statement": "A Febre Reumática (FR) é uma complicação tardia e não supurativa da infecção estreptocócica. As estratégias de prevenção são divididas em níveis. Um paciente de 12 anos com diagnóstico prévio de Febre Reumática e cardite curada (sem sequelas valvares residuais) deve ser submetido a uma estratégia específica para evitar novos surtos. Com base nas estratégias de prevenção da febre reumática, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A estratégia indicada é a Profilaxia Secundária, realizada preferencialmente com Penicilina G Benzatina intramuscular a cada 21 dias, devendo ser mantida até os 21 anos de idade ou por 5 anos após o último surto (o que cobrir maior tempo), para prevenir reinfecções estreptocócicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A profilaxia indicada é a Primária Contínua, utilizando azitromicina oral diária, pois a penicilina intramuscular não é capaz de erradicar o estado de portador na orofaringe em pacientes reumáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A conduta correta é a Profilaxia Primária, que consiste no tratamento intensivo das faringoamigdalites agudas apenas quando ocorrerem, utilizando amoxicilina oral, sem necessidade de medicação contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de Prevenção Terciária, focada na reabilitação cardíaca e uso de inibidores da ECA para prevenir a remodelação ventricular, uma vez que a prevenção de novos surtos não altera o prognóstico da doença já instalada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, é fundamental diferenciar os níveis de prevenção da febre reumática (FR) e conhecer o manejo de pacientes que já tiveram a doença.\n\nALTERNATIVA A (CORRETA): \nA profilaxia secundária é o conjunto de medidas destinadas a evitar novos episódios (surtos) de febre reumática em indivíduos que já tiveram a doença. O objetivo é impedir que uma nova infecção pelo estreptococo beta-hemolítico do grupo A desencadeie uma resposta imunológica recidivante. O padrão-ouro é a penicilina G benzatina, por via intramuscular, a cada 21 dias. Para pacientes que tiveram cardite, mas que se recuperaram sem deixar sequelas valvares (como o caso em questão), as diretrizes brasileiras recomendam a manutenção até os 21 anos de idade ou por 5 anos após o último surto (prevalecendo o que cobrir o maior tempo). Nota: Algumas diretrizes mais recentes sugerem estender até os 25 anos em casos de cardite leve/curada, porém a alternativa reflete o consenso clássico amplamente cobrado em provas.\n\nALTERNATIVA B (INCORRETA): \nO termo \"profilaxia primária contínua\" é conceitualmente errado. A profilaxia primária é o tratamento pontual de uma faringoamigdalite aguda para evitar o primeiro surto de FR. Além disso, a azitromicina não é a primeira escolha, sendo reservada apenas para pacientes com alergia grave à penicilina. A penicilina benzatina é, sim, eficaz para erradicar o estreptococo e prevenir a colonização recorrente que levaria ao surto.\n\nALTERNATIVA C (INCORRETA): \nA profilaxia primária (tratar a garganta apenas quando inflamar) é insuficiente para quem já teve febre reumática. Como esses pacientes possuem uma predisposição imunológica aumentada, qualquer nova exposição ao estreptococo (mesmo assintomática) pode desencadear um novo surto de febre reumática e agravar as lesões cardíacas. Por isso, a medicação deve ser contínua (secundária).\n\nALTERNATIVA D (INCORRETA): \nA prevenção terciária foca na redução de incapacidades e reabilitação de sequelas já estabelecidas (como insuficiência cardíaca grave ou cirurgias valvares). O erro crucial da alternativa é afirmar que a prevenção de novos surtos não altera o prognóstico. Pelo contrário, cada novo surto de febre reumática aumenta progressivamente o risco e a gravidade das lesões nas valvas cardíacas; prevenir recidivas é o pilar principal para evitar que um paciente com \"cardite curada\" evolua para uma valvulopatia crônica grave.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Febre Reumática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  },
+  {
+    "id": "AJUDA_788ae9d7-6c3e-4247-845e-1ed983ad2cd1",
+    "originalId": "788ae9d7-6c3e-4247-845e-1ed983ad2cd1",
+    "statement": "A hierarquia do controle de riscos ocupacionais, utilizada na Vigilância em Saúde do Trabalhador, estabelece uma ordem de prioridade para a implementação de medidas de controle, visando a minimização dos riscos presentes em um ambiente de trabalho. Sobre esse princípio, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A eliminação ou substituição do risco é a prioridade, seguida por medidas de engenharia, administrativas e, por último, medidas de proteção individual",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Controle de engenharia no intuito de não permitir o contato e a exposição dos trabalhadores aos riscos existentes no local de trabalho é a medida prioritária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Medidas administrativas, como treinamentos, prevalecem sobre a eliminação ou substituição de riscos na hierarquia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de equipamentos de proteção individual (EPI) é a medida mais relevante e deve ser a primeira a ser adotada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O conceito central desta questão é a Hierarquia de Controle de Riscos, um pilar fundamental da Medicina do Trabalho e da Vigilância em Saúde do Trabalhador. Essa hierarquia prioriza medidas que atuam na fonte do risco e no ambiente (proteção coletiva) em detrimento de medidas que dependem exclusivamente do comportamento ou do equipamento individual do trabalhador.\n\nAnálise das alternativas:\n\nAlternativa (a): CORRETA. Esta alternativa descreve exatamente a sequência lógica de prioridades estabelecida por organismos internacionais (como o NIOSH) e pelas Normas Regulamentadoras (NRs) no Brasil. A ordem decrescente de eficácia é: 1. Eliminação (remover o perigo do local); 2. Substituição (trocar um agente nocivo por outro menos perigoso); 3. Engenharia (isolamento da fonte, ventilação, barreiras físicas); 4. Administrativa (sinalização, treinamentos, rodízio de turnos); e 5. EPI (equipamento de proteção individual).\n\nAlternativa (b): INCORRETA. Embora os controles de engenharia sejam muito eficazes, eles ocupam o terceiro nível na hierarquia. A prioridade máxima é sempre tentar eliminar ou substituir o risco antes de planejar barreiras de engenharia para conviver com ele.\n\nAlternativa (c): INCORRETA. As medidas administrativas estão localizadas na parte inferior da pirâmide de controle. Elas são consideradas menos eficazes que a eliminação, substituição e engenharia porque dependem do fator humano e da adesão constante a normas e processos, não removendo o perigo do ambiente.\n\nAlternativa (d): INCORRETA. O uso de EPI é a última medida a ser adotada e a menos eficaz de todas. Na medicina do trabalho, o EPI é considerado uma medida de controle residual, indicada apenas quando as medidas de proteção coletiva são tecnicamente inviáveis, estão em fase de implantação ou são insuficientes para garantir a segurança total.\n\nEm resumo, a lógica da vigilância em saúde é sempre tentar modificar o processo de trabalho e o ambiente antes de colocar a responsabilidade da proteção sobre o corpo do trabalhador.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  },
+  {
+    "id": "AJUDA_78923d30-178c-4e11-8b24-1f9761eacfec",
+    "originalId": "78923d30-178c-4e11-8b24-1f9761eacfec",
+    "statement": "Mulher, 66 anos de idade, sexualmente ativa, em novo relacionamento, encontra-se assintomática. Refere ter realizado anualmente exame citológico cérvico-vaginal preventivo sem alterações. De acordo com as Diretrizes Brasileiras atuais para o rastreamento para o câncer do colo uterino, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar exame citológico cérvico-vaginal a cada 3 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar teste DNA-HPV oncogênico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar exame citológico cérvico-vaginal anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há necessidade de manter o rastreamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o rastreamento do câncer do colo do útero no Brasil, exigindo conhecimento sobre as diretrizes do Ministério da Saúde e as recentes atualizações tecnológicas incorporadas ao Sistema Único de Saúde (SUS).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O intervalo de três anos para o exame citopatológico (Papanicolau) é a recomendação padrão para mulheres entre 25 e 64 anos, após dois exames anuais consecutivos negativos. A paciente em questão possui 66 anos, situando-se fora da faixa etária em que esse intervalo de rotina é aplicado.\n\nAlternativa (b) Correta: Recentemente, o Ministério da Saúde, fundamentado em decisões da Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde (CONITEC) e formalizado pela Portaria GM/MS nº 3.488 de 2024, incorporou o teste de DNA-HPV como a tecnologia de escolha para o rastreio do câncer do colo do útero. Este teste possui maior sensibilidade e um valor preditivo negativo superior à citologia. Embora as diretrizes de 2016 sugiram cessar o rastreio aos 64 anos se os exames anteriores forem normais, o fato de a paciente ter um novo parceiro sexual e estar em boas condições de saúde justifica a utilização da tecnologia mais precisa agora disponível no sistema público antes de uma eventual alta do programa de rastreamento.\n\nAlternativa (c) Incorreta: A realização anual do exame citológico é indicada apenas no início do rastreamento (nos dois primeiros anos) ou em situações de acompanhamento de lesões precursoras. Não há indicação de manter periodicidade anual para uma paciente com histórico de exames normais.\n\nAlternativa (d) Incorreta: Segundo as diretrizes do INCA de 2016, o rastreio poderia ser interrompido aos 64 anos em mulheres com pelo menos dois exames negativos nos últimos cinco anos. No entanto, a questão enfatiza que a paciente iniciou um novo relacionamento e permanece sexualmente ativa. Diante da transição para os testes moleculares (DNA-HPV) e da nova exposição ao risco, o entendimento atual é de que se deve priorizar o teste de maior eficácia diagnóstica antes da interrupção, validando a alternativa (b) como a conduta mais atualizada e segura.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:16.940Z"
+  }
+]

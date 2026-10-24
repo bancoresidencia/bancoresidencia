@@ -49,6 +49,7 @@ export interface AdvancedFilterState {
   ocultarAnuladasErro: boolean;
   ocultarRevisadas: boolean;
   ultimos5Anos: boolean;
+  aleatorizar?: boolean;
 }
 
 export interface QuestionOption {
@@ -101,7 +102,32 @@ export interface Question {
 
 export type Modalidade = 'Residência' | 'Revalida' | 'Graduação / Internato';
 export type PeriodFilter = '7d' | '30d' | 'mes' | '6m' | '2026.1' | '2026.2' | 'all';
-export type ActiveTab = 'home' | 'banco' | 'caderno_erros' | 'listas' | 'provas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes' | 'curadoria';
+export type ActiveTab = 'home' | 'banco' | 'caderno_erros' | 'listas' | 'provas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes' | 'curadoria' | 'reportes';
+
+export type ReportReason =
+  | 'Gabarito divergente / incorreto'
+  | 'Erro no enunciado ou texto'
+  | 'Alternativa com erro ou duplicada'
+  | 'Imagem ilegível ou ausente'
+  | 'Diretriz desatualizada'
+  | 'Outro';
+
+export type ReportStatus = 'pending' | 'in_progress' | 'resolved' | 'dismissed';
+
+export interface QuestionReport {
+  id: string;
+  questionId: string;
+  userId?: string | null;
+  userEmail?: string | null;
+  userName?: string | null;
+  reason: ReportReason | string;
+  details: string;
+  status: ReportStatus;
+  adminNotes?: string | null;
+  createdAt: string;
+  resolvedAt?: string | null;
+  question?: Partial<Question>;
+}
 
 export type ErrorReasonType =
   | 'lacuna_teorica'

@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_9f88788f-8bd3-42b3-a73c-572708c6d2c2",
+    "originalId": "9f88788f-8bd3-42b3-a73c-572708c6d2c2",
+    "statement": "De acordo com o consenso brasileiro sobre alergia alimentar, a principal vantagem da utilização de fórmulas extensamente hidrolisadas em comparação com fórmulas parcialmente hidrolisadas no manejo de alergia ao leite de vaca em lactentes é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "São mais eficazes na prevenção de alergias alimentares em lactentes de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "São mais eficazes na indução de tolerância oral em lactentes com alergia ao leite de vaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "São mais palatáveis e aceitas pelos lactentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "São mais econômicas e acessíveis para as famílias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O manejo da Alergia à Proteína do Leite de Vaca (APLV) baseia-se na exclusão das proteínas íntegras da dieta. Para lactentes que necessitam de substitutos do leite materno, a escolha da fórmula deve considerar a segurança clínica e a capacidade de levar à cura da alergia.\n\nAlternativa a) Incorreta. As fórmulas parcialmente hidrolisadas (FPH) foram historicamente estudadas e indicadas para a prevenção de alergias em lactentes de alto risco (embora essa recomendação tenha perdido força em diretrizes internacionais recentes). No entanto, para o manejo (tratamento) da criança já alérgica, a fórmula extensamente hidrolisada (FEH) é a indicada, pois a parcial ainda contém peptídeos grandes o suficiente para desencadear reações alérgicas graves.\n\nAlternativa b) Correta. A principal vantagem terapêutica da fórmula extensamente hidrolisada (FEH) no contexto da APLV é sua capacidade de, além de não causar reações na grande maioria dos pacientes (segurança), permitir uma exposição controlada a epítopos muito pequenos da proteína do leite. De acordo com o Consenso Brasileiro de Alergia Alimentar, essa exposição residual mínima é segura e pode favorecer o desenvolvimento da tolerância oral (cura da alergia) de forma mais eficaz do que fórmulas que contêm proteínas maiores (como as parciais, que podem manter a inflamação ativa) ou fórmulas que não contêm proteína nenhuma (como as de aminoácidos, que não \"treinam\" o sistema imune).\n\nAlternativa c) Incorreta. O sabor das fórmulas está diretamente relacionado ao grau de hidrólise. Quanto mais a proteína é quebrada, mais amarga ela se torna devido à liberação de certos aminoácidos. Portanto, as fórmulas extensamente hidrolisadas são menos palatáveis e têm menor aceitação do que as fórmulas parcialmente hidrolisadas.\n\nAlternativa d) Incorreta. O processo de produção das fórmulas extensamente hidrolisadas envolve tecnologia avançada de hidrólise enzimática seguida de ultrafiltração, o que encarece o produto. Por isso, as FEH são significativamente mais caras e menos acessíveis financeiramente do que as fórmulas parciais.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Alergia Alimentar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:52.558Z"
+  },
+  {
+    "id": "AJUDA_9f91f3f4-254f-4e23-ae3b-93b5f6e12baf",
+    "originalId": "9f91f3f4-254f-4e23-ae3b-93b5f6e12baf",
+    "statement": "Uma pesquisa verificou a variação da incidência da tuberculose no Brasil entre 2001 e 2023 (Figura A). A seguir, por meio de modelagem matemática, projetou a tendência futura do comportamento desse coeficiente no Brasil (Figura B) O comportamento esperado, a partir desse modelo, para o ano de 2030 é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A incidencia de tuberculose continuara a aumentar de forma acentuada, igualando ou ultrapassando os niveis observados no inicio da serie historica em 2001.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A tendência projetada indica uma estabilização dos níveis de incidência, sem aumentos ou reduções significativos, em torno dos valores observados em 2023.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O modelo projeta um declinio acentuado nos niveis de incidência de tuberculose a partir de 2023, retornando a niveis semelhantes aos registrados no inicio dos anos 2000.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A incidência de tuberculose apresentará uma leve redução até 2030, porém não atingirá os níveis mais baixos observados no período de 2001 a 2023.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O modelo sugere uma recuperação da tendência de aumento até 2030, sem atingir o pico de incidência de 2010, porém com uma elevação significativa em relação ao início da década de 2020.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, é fundamental realizar uma leitura técnica e atenta dos gráficos apresentados, que utilizam dados de séries temporais e projeções matemáticas sobre a incidência de tuberculose no Brasil.\n\nAnálise das Imagens:\n\nA Figura A mostra a incidência registrada de 2001 a 2023. Observamos uma queda progressiva até 2015, seguida de uma reversão da tendência com aumento da incidência. Entre 2019 e 2021, há uma queda abrupta (comumente associada à subnotificação e aos impactos da pandemia de COVID-19 no sistema de saúde), seguida de uma retomada acentuada do crescimento até 2023.\n\nA Figura B apresenta a modelagem matemática para o futuro. A linha de \"Incidência estimada\" e seu intervalo de confiança (IC 95%) projetam a continuidade do aumento observado nos últimos dois anos da série histórica. Para o ano de 2030, a projeção atinge o topo da escala do gráfico (valores próximos a 5.0), o que é equivalente ou superior aos valores registrados no início do monitoramento, em 2001.\n\nAnálise das Alternativas:\n\nAlternativa a) Correta. Ao observar a Figura B, a linha da projeção para 2030 mantém uma inclinação ascendente vigorosa. O patamar atingido no final da projeção visualmente iguala ou ultrapassa os picos registrados entre 2001 e 2003, confirmando que a tendência é de aumento acentuado para níveis históricos.\n\nAlternativa b) Incorreta. O modelo matemático não indica estabilização. Uma estabilização seria representada por uma linha horizontal a partir de 2023, mas o gráfico mostra uma clara tendência de subida contínua.\n\nAlternativa c) Incorreta. O modelo projeta o inverso de um declínio. Para que esta alternativa fosse correta, a curva na Figura B precisaria apontar para baixo após 2023, buscando valores próximos a 3.0 ou 3.5, o que não ocorre.\n\nAlternativa d) Incorreta. A imagem não mostra redução, nem leve nem acentuada, no período de 2023 a 2030. Pelo contrário, a projeção indica que o país se distanciará dos níveis mais baixos registrados (que ocorreram por volta de 2015).\n\nAlternativa e) Incorreta. Embora mencione a recuperação da tendência de aumento, a alternativa afirma que não seria atingido o pico de 2010. No entanto, o gráfico mostra que a incidência projetada para 2030 supera significativamente os níveis de 2010 (que estavam em torno de 3.5 a 4.0 na tendência central) e alcança o patamar mais alto da série (2001).",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Tuberculose"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b94f58426dde3e3c2332ab8b678dd7397f3197e3fb2e3c8140cbf7af818994bb.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9f91f3f4-254f-4e23-ae3b-93b5f6e12baf_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:53.032Z"
+  },
+  {
+    "id": "AJUDA_9f95410a-a984-4182-b393-836a31d83a1f",
+    "originalId": "9f95410a-a984-4182-b393-836a31d83a1f",
+    "statement": "Paciente do sexo masculino, 62 anos, sem comorbidades, é transferido de hospital do Interior do Estado para avaliação de quadro de dor abdominal há 5 dias. Paciente refere que apresentou dor tipo cólica, em FIE, com aumento progressivo de intensidade, associada a astenia, náuseas, vômitos e constipação. Fez uso de sintomáticos no domicílio, mas percebeu piora do quadro após 3 dias, com piora da dor e início de febre, procurando assistência médica, sendo internado para antibioticoterapia e transferido para Manaus. Neste momento, seu exame físico evidencia BEG, lúcido e orientado, FC: 98bpm, FR: 26irpm, P.A.: 120x80mHg. Seu abdome é globoso, algo distendido, doloroso à palpação em FIE e hipogástrio, com sinais claros de irritação peritoneal. Leucograma: 22.000 com 96% de neutrófilos. PCR: 150mg/dl. Foi submetido a tomografia de abdome que revelou presença de divertículos em sigmoide e quadro agudo compatível com Hinchey Modificado classe III/IV. Sobre o caso acima, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A associação de piperacilina e tazobactam é escolha adequada como parte do tratamento empírico inicial deste paciente, porém a antibioticoterapia deve ser reavaliada após o resultado das culturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O quadro de peritonite presente indica tratamento cirúrgico urgente, preferencialmente laparoscópico, no qual a sigmoidectomia e anastomose primária, com ou sem ileostomia protetora, representam a conduta de escolha neste momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em caso de evolução para instabilidade hemodinâmica associada a achado cirúrgico de peritonite fecal, o manejo inicial com damage control, curativo à vácuo e terapia intensiva, com posterior reabordagem para anastomose primária, seria conduta adequada para o caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uma vez que se trata de cirurgia infectada, com elevada morbimortalidade e alto risco de deiscência de anastomose, o procedimento de Hartmann é a conduta inicial de escolha para o caso neste momento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\nO paciente apresenta um quadro de diverticulite aguda complicada com peritonite difusa, classificada pela escala de Hinchey Modificada como III (peritonite purulenta) ou IV (peritonite fecal). O exame físico revela irritação peritoneal e os exames laboratoriais mostram marcadores inflamatórios elevados, indicando a necessidade de intervenção cirúrgica urgente.\n\nDISTRIBUIÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Está correta. O tratamento de infecções intra-abdominais graves exige cobertura de amplo espectro contra bacilos gram-negativos e anaeróbios. A associação de piperacilina e tazobactam é uma opção empírica inicial excelente. A recomendação de reavaliar o esquema após o resultado de culturas segue os princípios de stewardship (uso racional de antibióticos) para evitar resistência bacteriana.\n\nAlternativa b) Está correta. De acordo com as diretrizes mais recentes (como as da Sociedade Mundial de Cirurgia de Emergência - WSES e da ASCRS), em pacientes hemodinamicamente estáveis com peritonite (Hinchey III ou IV), a ressecção do sigmoide com anastomose primária (com ou sem ileostomia de proteção) é preferível ao procedimento de Hartmann. A abordagem laparoscópica é segura e recomendada desde que a equipe tenha experiência e o paciente estabilidade clínica.\n\nAlternativa c) Está correta. Em situações de instabilidade hemodinâmica grave ou choque séptico (especialmente na peritonite fecal), o cirurgião pode optar pela cirurgia de controle de danos (damage control). Isso envolve a ressecção do segmento doente, fechamento temporário do abdômen (frequentemente com curativo a vácuo) e estabilização do paciente em UTI. Após a melhora do quadro clínico e metabólico, o paciente é reabordado para a realização da anastomose ou estomia definitiva.\n\nAlternativa d) Esta é a alternativa INCORRETA (Gabarito). Historicamente, o procedimento de Hartmann (ressecção com colostomia terminal e fechamento do coto retal) era o padrão-ouro para Hinchey III e IV. No entanto, evidências contemporâneas baseadas em ensaios clínicos randomizados demonstraram que a anastomose primária apresenta resultados superiores em termos de morbidade global e menores taxas de permanência de estoma definitivo. Portanto, afirmar que o procedimento de Hartmann é a conduta inicial de escolha é um conceito ultrapassado para pacientes estáveis, o que torna a afirmação incorreta no contexto das práticas médicas atuais.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:53.032Z"
+  },
+  {
+    "id": "AJUDA_9f9993ed-902e-4bee-a325-0e1db99c81c8",
+    "originalId": "9f9993ed-902e-4bee-a325-0e1db99c81c8",
+    "statement": "Paciente agricultor masculino, 50 anos, chega ao pronto atendimento referindo cansaço, emagrecimento, tontura, náuseas, vômitos e dor abdominal. Ao exame apresenta-se sonolento, mas orientado, mucosas hipocoradas, anictéricas e desidratadas, fraqueza muscular intensa, estando restrito ao leito sem déficit neurológico focal. Temperatura axilar 36,5°C, pressão arterial 80/40mmHg deitado, frequência cardíaca de 101 BPM, hiperpigmentação mucocutânea, abdome com dor difusa à palpação sem sinais de irritação peritoneal. Exames iniciais mostram: sódio 129 (135-145mEq/L); potássio 5,9 (3,5-5,4mEq/L); anemia normocítica e normocrômica; creatinina 1,5 (0,3-1,3mg/dL); leucograma, glicemia, amilase, lipase e transaminases normais. Em relação ao quadro clínico, assinale a alternativa que contém a hipótese diagnóstica mais provável e o tratamento inicial:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência adrenal secundária, reposição volêmica vigorosa com solução salina a 1L/hora e hidrocortisona parenteral 100mg via endovenosa em dose de ataque.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Insuficiência adrenal primária, reposição volêmica vigorosa com solução salina a 1L/hora e hidrocortisona 100mg endovenosa dose de ataque.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Insuficiência adrenal secundária, reposição volêmica vigorosa com solução salina a 1L/hora e hidrocortisona parenteral 100mg via endovenosa em dose de ataque associada à fludrocortisona 0,1mg via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Insuficiência adrenal primária, reposição volêmica vigorosa com solução salina a 1L/hora e hidrocortisona 100mg endovenosa dose de ataque associada à fludrocortisona 0,1mg via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO\n\nO quadro clínico descrito aponta para uma Insuficiência Adrenal Primária (Doença de Addison). Os pontos-chave para esse diagnóstico são:\n\n1. Hiperpigmentação mucocutânea: Este é o sinal clínico mais característico. Na insuficiência primária, a queda do cortisol eleva o ACTH por feedback negativo. O precursor do ACTH (POMC) também origina o hormônio estimulante de melanócitos (MSH), levando ao escurecimento da pele e mucosas. Na insuficiência secundária (origem na hipófise), o ACTH está baixo e não há hiperpigmentação.\n\n2. Distúrbios hidroeletrolíticos: A hiponatremia (sódio 129) e a hipercalemia (potássio 5,9) são típicas da falência da glândula adrenal, onde há deficiência tanto de cortisol quanto de aldosterona (mineralocorticoide). A falta de aldosterona impede a excreção de potássio e a reabsorção de sódio. Na insuficiência secundária, o sistema renina-angiotensina geralmente mantém a produção de aldosterona preservada, logo não costuma haver hipercalemia.\n\n3. Sinais de Crise Adrenal: Hipotensão severa (80/40 mmHg), dor abdominal, fraqueza intensa e náusea em um paciente com perda de peso crônica configuram uma emergência médica.\n\nTRATAMENTO\n\nO manejo da crise adrenal exige:\n- Reposição volêmica vigorosa com soro fisiológico 0,9% para tratar o choque hipovolêmico/distributivo.\n- Reposição de glicocorticoide: Hidrocortisona 100mg em ataque via endovenosa.\n- Reposição de mineralocorticoide: Na forma primária, a fludrocortisona é necessária para o controle eletrolítico e da pressão arterial a longo prazo.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. O diagnóstico é de insuficiência primária, pois há hiperpigmentação e hipercalemia, achados ausentes na forma secundária.\n\nAlternativa B: Incorreta. Embora identifique a causa primária e o tratamento de emergência com volume e hidrocortisona, a alternativa D é mais abrangente por incluir a fludrocortisona, componente essencial no tratamento da insuficiência adrenal primária (Addison).\n\nAlternativa C: Incorreta. Erra ao classificar como insuficiência adrenal secundária.\n\nAlternativa D: Correta. Define corretamente a etiologia primária (justificada pela hiperpigmentação e hipercalemia) e estabelece o tripé terapêutico adequado: hidratação, glicocorticoide e mineralocorticoide.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:53.032Z"
+  },
+  {
+    "id": "AJUDA_9f9daa25-0dc9-4f3b-90b3-75db1491c109",
+    "originalId": "9f9daa25-0dc9-4f3b-90b3-75db1491c109",
+    "statement": "Puérpera, 25 anos, primípara, comparece ao ambulatório 10 dias após parto vaginal sem complicações. Relata sangramento vaginal em pequena quantidade, de coloração amarelada, e desconforto perineal leve. Ao exame físico, observa-se episiorrafia íntegra, sem sinais de infecção ou hematomas. O fundo uterino não é palpável no abdome. Paciente está afebril e hemodinamicamente estável. Qual é a conduta mais adequada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar hemograma para descartar anemia pós-parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar ultrassonografia pélvica para avaliar involução uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tranquilizar a paciente e orientar sobre os cuidados com o períneo e a evolução dos lóquios.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever antibiótico para endometrite de grau leve no puerpério.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma puérpera de 10 dias com evolução perfeitamente fisiológica do pós-parto. O sangramento amarelado e escasso corresponde aos lóquios flavos (ou serosos), esperados a partir do final da primeira semana até cerca da segunda semana pós-parto. O fundo uterino não ser palpável no abdome é o padrão da involução uterina normal no 10º dia, momento em que o órgão retorna para a pelve verdadeira (abaixo da sínfise púbica). A ferida perineal está íntegra e sem flogose, e a paciente está afebril e estável.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Não há suspeita clínica de anemia aguda ou sangramento excessivo. A perda descrita é mínima e fisiológica para o período, sem sinais de instabilidade hemodinâmica, tontura ou palidez cutaneomucosa que justifiquem a coleta de hemograma.\n\nAlternativa b: Incorreta. A ultrassonografia pélvica estaria indicada em casos de suspeita de retenção de restos ovulares, subinvolução uterina ou sangramento patológico. Como o útero já se encontra intrapélvico (não palpável no abdome) no 10º dia, a involução está adequada, tornando o exame desnecessário.\n\nAlternativa c: Correta. Trata-se de um puerpério fisiológico. A conduta adequada consiste em tranquilizar a puérpera, validar que a involução uterina e os lóquios estão dentro do esperado, e orientar os cuidados habituais de higiene perineal e sinais de alerta.\n\nAlternativa d: Incorreta. Para o diagnóstico de infecção puerperal ou endometrite, seriam necessários sinais clínicos como febre (igual ou superior a 38°C), lóquios fétidos ou purulentos, e dor/hipersensibilidade à palpação ou mobilização uterina, achados ausentes no quadro. Não há indicação de antibioticoterapia.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:53.032Z"
+  },
+  {
+    "id": "AJUDA_9fa24de7-97f2-424f-a721-13728145ca72",
+    "originalId": "9fa24de7-97f2-424f-a721-13728145ca72",
+    "statement": "Lactente de 8 meses, bem nutrido, há 2 meses, desde o início da alimentação complementar, evacua fezes endurecidas e muito calibrosas, a cada 4 a 5 dias, com muito esforço e dor (choro). Mãe aumentou fibra na dieta, sem melhora. Nega atraso de eliminação de mecônio e apresenta exame físico sem alterações. Considerando o diagnóstico mais provável, qual é o tratamento recomendado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "óleo mineral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Probiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "exclusão da proteína do leite de vaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lactulose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO CASO\n\nO quadro clínico apresenta um lactente de 8 meses com constipação intestinal iniciada aos 6 meses, coincidindo com a introdução da alimentação complementar. A presença de fezes calibrosas, esforço evacuatório e dor, associada a um exame físico normal e ausência de atraso na eliminação de mecônio, direciona o diagnóstico para Constipação Intestinal Funcional. Nesta faixa etária, quando as medidas dietéticas (como aumento de fibras e oferta hídrica) não são suficientes, o tratamento medicamentoso com laxantes osmóticos está indicado.\n\nALTERNATIVA A: INCORRETA. O uso de óleo mineral é contraindicado em lactentes e crianças menores de 1 a 2 anos. Isso ocorre pelo risco de aspiração acidental, que pode levar à pneumonia lipoide, uma complicação grave. Como os lactentes possuem maior risco de refluxo e regurgitação, o óleo mineral deve ser evitado.\n\nALTERNATIVA B: INCORRETA. O uso de probióticos não apresenta evidência científica consolidada que justifique sua indicação como tratamento de primeira linha para a constipação intestinal funcional na infância, segundo os consensos internacionais (como o NASPGHAN/ESPGHAN).\n\nALTERNATIVA C: INCORRETA. A exclusão da proteína do leite de vaca seria o tratamento para a Alergia à Proteína do Leite de Vaca (APLV). Embora a constipação possa ser um sintoma de APLV, o caso clínico é típico de constipação funcional desencadeada pela mudança na consistência e composição da dieta (introdução de sólidos), sem outros sinais sugestivos de atopia ou alergia alimentar.\n\nALTERNATIVA D: CORRETA. A lactulose é um laxante osmótico seguro e amplamente recomendado para lactentes menores de 1 ano. Ela promove a retenção de água na luz intestinal, aumentando o volume e diminuindo a consistência das fezes, o que facilita a evacuação e interrompe o ciclo de dor e retenção fecal. É a terapia medicamentosa de escolha para manutenção nessa faixa etária quando o polietilenoglicol (PEG) não está disponível ou conforme a preferência clínica para lactentes pequenos.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Constipação Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:53.032Z"
+  },
+  {
+    "id": "AJUDA_9fa41741-8eb5-4375-895f-3a3770594ea6",
+    "originalId": "9fa41741-8eb5-4375-895f-3a3770594ea6",
+    "statement": "Paciente feminina, 64 anos veio ao pronto-socorro com quadro de dor abdominal intensa, em hipocôndrio direito, colúria, icterícia e febre de 38 – 39ºC há 8 dias. A dor é acompanhada de náuseas e vômitos após alimentação. O hábito intestinal é normal. Ao exame, encontra-se confusa, taquicárdica, com frequência cardíaca= 120 bpm, pressão arterial = 70 x 50 mmHg, febril (temperatura: 38,9°C), ictérica (3+/4) e com perfusão\ncapilar periférica de 5s. A frequência respiratória é de 25 irpm e a oximetria, 90% em ar ambiente. O abdome está doloroso à palpação profunda em andar superior, sendo pior em hipocôndrio direito, mas sem descompressão dolorosa. Baseado na hipótese diagnóstica, qual o tratamento adequado para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia de amplo espectro e Colangiopancreatografia Retrógrada Endoscópica (CPRE) de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Internamento em enfermaria para investigação e medicação sintomática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internamento em UTI e tratamento clínico de suporte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antibioticoterapia apropriada e colecistectomia eletiva após melhora clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente apresenta uma condição clássica e grave na gastroenterologia e cirurgia biliar. Os sinais clínicos relatados compõem dois agrupamentos semiológicos fundamentais:\n\n1. Tríade de Charcot: Dor abdominal (hipocôndrio direito), icterícia e febre com calafrios.\n2. Pêntade de Reynolds: Tríade de Charcot acrescida de hipotensão (choque séptico) e alteração do nível de consciência (confusão mental).\n\nA presença da Pêntade de Reynolds indica Colangite Aguda Grave (ou supurativa). O quadro é de uma emergência médica, pois a obstrução biliar associada à infecção (geralmente por cálculos na via biliar principal) leva à translocação bacteriana e progressão rápida para sepse e falência de múltiplos órgãos.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nO tratamento da colangite aguda grave baseia-se em três pilares imediatos: estabilização hemodinâmica (reposição volêmica e suporte de vida), antibioticoterapia de amplo espectro (para cobrir germes gram-negativos e anaeróbios da flora intestinal) e a descompressão biliar de urgência. A Colangiopancreatografia Retrógrada Endoscópica (CPRE) é o método de escolha por ser minimamente invasivo e permitir a drenagem eficaz do pus e a remoção do fator obstrutivo, revertendo o foco infeccioso.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa b) O quadro é de choque séptico e alta gravidade (Pêntade de Reynolds). Internar em enfermaria para investigação e medicação sintomática seria insuficiente e levaria ao óbito da paciente em poucas horas por falta de suporte intensivo e tratamento definitivo do foco infeccioso.\n\nAlternativa c) Embora o internamento em UTI e o tratamento de suporte sejam necessários, a alternativa está incompleta. O tratamento clínico isolado (soro e remédios) não resolve a obstrução mecânica na via biliar. Sem a descompressão (drenagem) da via biliar, a mortalidade na colangite supurativa aproxima-se de 100%.\n\nAlternativa d) A antibioticoterapia é necessária, mas a colecistectomia (retirada da vesícula biliar) não é o tratamento de urgência para a colangite. O problema imediato está no ducto colédoco (via biliar principal) e não apenas na vesícula. Além disso, realizar uma cirurgia de grande porte em uma paciente instável hemodinamicamente sem antes drenar a via biliar por via endoscópica aumenta drasticamente o risco cirúrgico. A colecistectomia fica reservada para um segundo momento, após a estabilização do quadro agudo.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Colecistite e Colangite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:53.032Z"
+  },
+  {
+    "id": "AJUDA_9fb00c0d-a90f-4f69-aaef-20f3b3a2f391",
+    "originalId": "9fb00c0d-a90f-4f69-aaef-20f3b3a2f391",
+    "statement": "Paciente masculino, de 50 anos, procurou atendimento por dor abdominal em cólica, náuseas, vômitos e parada de eliminação de gases e fezes, quadro com início há cerca de 3 dias, associado a distensão abdominal com timpanismo, sem sinais de irritação peritoneal. Apresentou leucograma sem leucocitose significativa ou desvio à esquerda e proteína C reativa com elevação discreta. A hipótese diagnóstica principal é obstrução intestinal, provavelmente de etiologia mecânica. Assinale a alternativa que contempla a(s) conduta(s) inicial(ais) mais apropriada(s).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jejum, hidratação, correção hidroeletrolítica e passagem de sonda nasogástrica, seguidos de tomografia computadorizada de abdômen",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Jejum, administração empírica de antibióticos de amplo espectro, observação clínica e ultrassonografia de abdômen",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colonoscopia de urgência para definição da causa da obstrução",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laparotomia exploradora imediata",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro apresentado é clássico de obstrução intestinal mecânica, caracterizado pela tríade de dor abdominal em cólica, vômitos, distensão e parada de eliminação de gases e fezes. A ausência de sinais de irritação peritoneal (defesa ou dor à descompressão) e a estabilidade laboratorial (leucograma normal e PCR discretamente elevada) sugerem que não há, no momento, sofrimento de alça (isquemia) ou perfuração. Portanto, o manejo inicial deve focar na estabilização do paciente e na investigação da causa e do nível da obstrução.\n\nAlternativa A: Correta. O tratamento inicial de um quadro obstrutivo baseia-se em medidas de suporte: o jejum interrompe o aporte de conteúdo ao lúmen obstruído; a hidratação venosa e a correção eletrolítica são fundamentais para repor as perdas para o terceiro espaço e pelos vômitos; a sonda nasogástrica promove a descompressão gástrica, aliviando o desconforto e prevenindo a broncoaspiração. Após a estabilização, a tomografia computadorizada (TC) de abdome é o padrão-ouro para o diagnóstico, pois define a localização da obstrução, a gravidade e a etiologia.\n\nAlternativa B: Incorreta. O uso de antibióticos de amplo espectro não é indicado de rotina na obstrução mecânica simples, sendo reservado para casos com suspeita de isquemia, translocação bacteriana ou no período pré-operatório. Além disso, a ultrassonografia tem utilidade limitada pela presença de gás intestinal, que dificulta a visualização das alças, sendo inferior à TC.\n\nAlternativa C: Incorreta. A colonoscopia não deve ser o primeiro passo diagnóstico na urgência. Há risco aumentado de perfuração em alças distendidas e friáveis. Ela pode ter papel terapêutico em casos específicos, como no volvo de sigmoide (após exclusão de gangrena), ou diagnóstico em suspeitas de neoplasia distal, mas apenas após a estabilização inicial e avaliação por imagem.\n\nAlternativa D: Incorreta. A cirurgia de emergência (laparotomia) está indicada quando há sinais de peritonite, instabilidade hemodinâmica ou falha do tratamento conservador em casos de obstrução parcial. Como o paciente não apresenta sinais de irritação peritoneal nem alterações laboratoriais graves, a conduta inicial deve ser conservadora e diagnóstica.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:53.032Z"
+  },
+  {
+    "id": "AJUDA_9fb577e6-1ffe-4648-8498-4f4d123aa111",
+    "originalId": "9fb577e6-1ffe-4648-8498-4f4d123aa111",
+    "statement": "Com relação à ascite, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As neoplasias malignas intraperitoneais correspondem a 90% dos casos, e sua etiologia é associada a linfoma ou invasão de ductos linfáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Insuficiência cardíaca é a principal etiologia atualmente e está relacionada ao aumento da permeabilidade dos capilares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A observação de seu aspecto macroscópico turvo após paracentese indica a cirrose hepática como etiologia principal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hipertensão portal corresponde a 80% dos casos, e sua etiopatogenia é ocasionada por extravasamento de líquido linfático pelos sinusoides.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Gradiente GASA ≥ 1,1 g/dL (transudato) indica doença peritoneal como etiologia da ascite (por exemplo, peritonite, carcinomatose, tuberculose).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Incorreta. A cirrose hepática é a causa mais comum de ascite, respondendo por cerca de 80% a 85% dos casos. As neoplasias malignas ocupam o segundo lugar, representando aproximadamente 10% das etiologias, e não 90%.\n\nAlternativa B: Incorreta. A cirrose hepática, e não a insuficiência cardíaca, é a principal etiologia. Na insuficiência cardíaca, o mecanismo fisiopatológico da ascite é o aumento da pressão hidrostática sistêmica e retrógrada, que se transmite aos sinusoides hepáticos, e não o aumento da permeabilidade capilar.\n\nAlternativa C: Incorreta. O líquido ascítico na cirrose hepática não complicada apresenta, tipicamente, um aspecto límpido e amarelo-citrino. Um aspecto turvo sugere a presença de infecção, como na Peritonite Bacteriana Espontânea (PBE), devido à elevada contagem de polimorfonucleares.\n\nAlternativa D: Correta. A hipertensão portal é a causa de cerca de 80% dos casos de ascite no Brasil e no mundo. Sua patogenia envolve o aumento da pressão hidrostática nos sinusoides hepáticos. Quando essa pressão excede a capacidade de drenagem dos vasos linfáticos, ocorre o extravasamento de fluido (rico em linfa hepática) para o espaço peritoneal.\n\nAlternativa E: Incorreta. O GASA (Gradiente de Albumina Soro-Ascite) maior ou igual a 1,1 g/dL define a ascite por hipertensão portal (transudato sob a ótica clássica). Doenças que agem diretamente no peritônio, como carcinomatose peritoneal, tuberculose peritoneal e peritonite lúpica, apresentam GASA baixo, ou seja, menor que 1,1 g/dL.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:53.032Z"
+  },
+  {
+    "id": "AJUDA_9fbaefcf-9efd-4671-81a2-52f1f36bad39",
+    "originalId": "9fbaefcf-9efd-4671-81a2-52f1f36bad39",
+    "statement": "No dia 05 de outubro se comemora o Dia Mundial de Combate à Meningite. A data destaca a importância da prevenção, do diagnóstico, do tratamento e da melhoria das medidas de suporte àqueles que lidam com os efeitos potencialmente devastadores dessa doença mortal. Assinale a alternativa INCORRETA sobre meningites:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O meningococo pode ser classificado em 12 sorogrupos. Os sorogrupos A, B, C, Y, W e X são os principais responsáveis pela ocorrência da doença invasiva, portanto de epidemias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Geralmente a transmissão ocorre, de pessoa a pessoa, por meio das vias respiratórias, por gotículas e secreções da nasofaringe de pessoas infectadas, assintomáticas ou doentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "São causadas exclusivamente por bactérias, sendo o meningococo o principal agente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A doença meningocócica pode apresentar amplo espectro clínico, que varia desde febre transitória e bacteremia oculta até formas fulminantes, com a morte do paciente em poucas horas após início dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os aspectos epidemiológicos, etiológicos e clínicos das meningites. Para resolvê-la, é necessário identificar a alternativa que contém uma afirmação falsa.\n\nAlternativa (a) - Correta: O agente Neisseria meningitidis (meningococo) possui, de fato, 12 sorogrupos identificados com base na cápsula polissacarídica. Destes, os sorogrupos A, B, C, Y, W e X são clinicamente os mais relevantes e responsáveis pela quase totalidade dos casos de doença meningocócica invasiva e surtos epidêmicos ao redor do mundo.\n\nAlternativa (b) - Correta: A transmissão do meningococo e de diversos outros agentes causadores de meningite ocorre de forma direta, de pessoa para pessoa. O reservatório é o ser humano, e a propagação se dá por meio de gotículas expelidas pela fala, tosse ou espirro, além do contato com secreções da nasofaringe. É importante lembrar que os portadores assintomáticos (pessoas que têm a bactéria na orofaringe, mas não desenvolvem a doença) são fundamentais na cadeia de transmissão.\n\nAlternativa (c) - INCORRETA: Esta é a alternativa que deve ser marcada. O erro reside na palavra \"exclusivamente\". As meningites podem ser causadas por uma ampla gama de agentes etiológicos, não apenas bactérias. Existem meningites virais (que são, em termos epidemiológicos, as mais frequentes), fúngicas (comuns em pacientes imunossuprimidos), parasitárias e até causas não infecciosas (como meningites químicas, neoplásicas ou autoimunes). Embora o meningococo seja um dos principais agentes da meningite bacteriana, ele não é o único causador da síndrome meníngea.\n\nAlternativa (d) - Correta: A doença meningocócica é extremamente dinâmica. O quadro clínico pode variar significativamente, indo desde uma bacteremia oculta autolimitada ou quadros febris leves até a meningococcemia fulminante. Esta última é caracterizada por choque séptico, púrpura fulminans e falência múltipla de órgãos, podendo levar ao óbito em menos de 24 horas após os primeiros sintomas.\n\nGabarito: Letra (c).",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:53.032Z"
+  }
+]

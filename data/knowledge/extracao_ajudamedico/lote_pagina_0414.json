@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_736b7f1d-00ac-4f35-a0f3-300a2f8fe797",
+    "originalId": "736b7f1d-00ac-4f35-a0f3-300a2f8fe797",
+    "statement": "Um paciente com lesão por queimadura elétrica requer monitoramento cardíaco. Qual das seguintes arritmias cardíacas é comumente associada a essas queimaduras por baixa voltagem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Taquicardia ventricular;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fibrilação ventricular;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Assistolia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Bradicardia sinusal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "As lesões por eletricidade podem causar diversas manifestações cardíacas, e o tipo de arritmia gerada depende principalmente da voltagem e do tipo de corrente envolvida no acidente.\n\nAlternativa a: Incorreta. Embora a taquicardia ventricular possa ocorrer como consequência de uma injúria miocárdica após um choque elétrico, ela não é a arritmia mais frequentemente associada ou característica das queimaduras de baixa voltagem quando comparada à fibrilação ventricular.\n\nAlternativa b: Correta. As queimaduras por baixa voltagem (geralmente definidas como inferiores a 1.000 volts) são típicas de acidentes domésticos e frequentemente envolvem corrente alternada. A corrente alternada é extremamente perigosa para o coração, pois, mesmo em baixas intensidades, pode induzir a fibrilação ventricular. Isso ocorre porque a frequência da rede elétrica (geralmente 60 Hz) interfere diretamente no ciclo cardíaco, podendo atingir o período vulnerável de repolarização ventricular e desencadear a arritmia.\n\nAlternativa c: Incorreta. A assistolia é o ritmo de parada cardíaca classicamente associado a queimaduras por alta voltagem (acima de 1.000 volts) ou por descargas atmosféricas (raios). Nessas situações, a magnitude da energia causa uma despolarização simultânea e maciça de todas as células do miocárdio, resultando na parada imediata da atividade elétrica e mecânica do coração.\n\nAlternativa d: Incorreta. A bradicardia sinusal não é um achado comum ou esperado como resposta direta ao trauma elétrico agudo. O mecanismo da eletrocussão tende a provocar arritmias graves por desorganização da condução elétrica ou morte celular, e não apenas uma redução na frequência do nó sinusal.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Queimaduras",
+      "Taquiarritmias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.699Z"
+  },
+  {
+    "id": "AJUDA_7371464a-2ed1-40e0-a9ae-54c7e563be33",
+    "originalId": "7371464a-2ed1-40e0-a9ae-54c7e563be33",
+    "statement": "Uma pessoa foi atendida pela equipe de saúde da família (ESF) depois de passar por 3 especialistas focais (gastroenterologistas) com o diagnóstico inicial de síndrome do cólon irritável (diarreia crônica) dado pelo primeiro especialista. Procurou o segundo especialista, que pouco interagiu e manteve o mesmo diagnóstico. Quando procurou o 3º especialista focal, já estava bastante debilitada, emagrecida, com candidose oral e esofágica, configurando quadro de aids avançada. A pessoa passou por uma “via crucis” durante o cuidado até o seu real diagnóstico. O principal fator que influenciou no diagnóstico tardio desta pessoa foi a(o)",
+    "options": [
+      {
+        "id": "A",
+        "text": "fragmentação da pessoa/cuidado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "despreparo médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "imperícia médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "falta de empatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "dificuldade de acesso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda um conceito fundamental da Medicina de Família e Comunidade e da Gestão em Saúde: a integralidade do cuidado versus a fragmentação da atenção à saúde.\n\nA alternativa (a) está correta porque o caso descreve o fenômeno em que o paciente é visto apenas através da lente de uma especialidade focal (neste caso, a gastroenterologia), focando no órgão ou sintoma (diarreia) em vez de abordar a pessoa em sua totalidade. Na fragmentação, o cuidado é dividido em partes isoladas, perdendo-se a visão sistêmica que permitiria correlacionar a diarreia crônica com outros sinais de imunodeficiência ou fatores de risco para o HIV. A ESF, por outro lado, trabalha com o princípio da integralidade, que busca entender o indivíduo em todas as suas dimensões, facilitando diagnósticos de condições que se manifestam de forma multissistêmica.\n\nA alternativa (b) está incorreta porque, embora possa ter havido uma falha no raciocínio clínico, o enunciado enfatiza a estrutura do atendimento (passagem por vários especialistas focais). O termo \"despreparo\" é genérico e não define o problema estrutural do modelo de atenção à saúde que a questão deseja destacar.\n\nA alternativa (c) está incorreta. A imperícia é um conceito jurídico-ético que se refere à falta de conhecimento técnico ou habilidade para realizar determinado ato profissional. Embora os médicos tenham falhado no diagnóstico, o foco da questão é o motivo sistêmico do erro (o modelo de atenção fragmentado) e não apenas a responsabilização individual por falta de técnica.\n\nA alternativa (d) está incorreta. O texto menciona que o segundo especialista interagiu pouco, o que sugere uma falha na relação médico-paciente, mas a falta de empatia isolada não explica por que três profissionais diferentes falharam no diagnóstico. O erro persistente ocorreu porque todos mantiveram o foco no sintoma gastrointestinal isolado, e não por uma questão puramente emocional ou de afeto.\n\nA alternativa (e) está incorreta porque o paciente não teve dificuldade de acesso; ele conseguiu consultar-se com três especialistas diferentes em sequência. O problema não foi chegar ao médico (acesso), mas sim o que aconteceu dentro do consultório (a qualidade e o enfoque do cuidado prestado).",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.699Z"
+  },
+  {
+    "id": "AJUDA_737d8f5d-3d95-428f-a1f9-1c8f47b61f18",
+    "originalId": "737d8f5d-3d95-428f-a1f9-1c8f47b61f18",
+    "statement": "Sobre desprescrição de medicamentos na atenção primária à saúde, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "reduz a terapêutica inadequada e o nível de polifarmácia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o médico especialista focal ocupa o papel central na desprescrição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "é definida como retirada de um medicamento prescrito por profissional não médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "seu principal argumento é a certeza absoluta de que a retirada do medicamento será benéfica e segura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "as ferramentas utilizadas para identificação de medicamentos inadequados são questionáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a): Correta. A desprescrição é o processo planejado e supervisionado de redução de dose ou interrupção de medicamentos que podem estar causando danos ou que não possuem mais benefício clínico para o paciente. Portanto, ela atua diretamente na redução da terapêutica inadequada e no combate à polifarmácia, especialmente em idosos, visando melhorar a qualidade de vida e reduzir eventos adversos.\n\nAlternativa (b): Incorreta. Na Atenção Primária à Saúde, o papel central da desprescrição é do médico generalista ou de família. Este profissional detém a visão longitudinal e holística do paciente, coordenando o cuidado entre os diversos especialistas focais. Embora o especialista possa sugerir a suspensão, é o médico da atenção primária quem geralmente gerencia a lista global de medicamentos e a adesão do paciente.\n\nAlternativa (c): Incorreta. A definição de desprescrição não está vinculada à categoria profissional de quem realizou a prescrição original. Ela se aplica a qualquer medicamento (prescrito por médicos de diferentes especialidades ou outros profissionais habilitados) que, no momento da reavaliação clínica, não apresente mais uma relação risco-benefício favorável.\n\nAlternativa (d): Incorreta. A medicina raramente trabalha com certezas absolutas. A desprescrição envolve uma análise de riscos e benefícios e deve ser pactuada com o paciente. O processo exige monitoramento próximo, pois existe a possibilidade de retorno de sintomas ou necessidade de reintrodução da terapia, o que invalida o conceito de \"certeza absoluta\" no momento da retirada.\n\nAlternativa (e): Incorreta. Existem ferramentas consagradas, validadas e amplamente aceitas na literatura médica para identificar medicamentos potencialmente inapropriados. Os exemplos mais clássicos são os Critérios de Beers e os critérios STOPP/START (Screening Tool of Older Persons' Prescriptions / Screening Tool to Alert to Right Treatment), que oferecem suporte científico robusto para a tomada de decisão clínica.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.699Z"
+  },
+  {
+    "id": "AJUDA_738eddd3-6a5d-40bb-a07c-acf91c204e4d",
+    "originalId": "738eddd3-6a5d-40bb-a07c-acf91c204e4d",
+    "statement": "Qual o exame em que o recém-nascido é submetido a flexão da coxa sobre o quadril, seguida de abdução e extensão da coxa, podendo ou não existir uma alteração do movimento sentida pelo examinador?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manobra de Ortolani.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Teste de Moro",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exame de Denver.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste de Dick",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prova de Adson",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a letra (a).\n\nA questão descreve a Manobra de Ortolani, um componente essencial do exame físico do recém-nascido para o rastreio da Displasia do Desenvolvimento do Quadril (DDH). O objetivo deste procedimento é reduzir um quadril que esteja previamente luxado (fora da cavidade articular). Durante a manobra, o examinador flexiona os quadris e joelhos do bebê a 90 graus e, em seguida, realiza a abdução das coxas (afasta os joelhos). Caso a cabeça do fêmur esteja deslocada, esse movimento a força de volta para dentro do acetábulo, gerando uma sensação de ressalto ou um clique palpável pelo examinador, o que caracteriza o teste como positivo.\n\nAbaixo, a explicação das alternativas incorretas:\n\nb) Teste de Moro: Trata-se de um reflexo primitivo do recém-nascido que avalia a integridade do sistema nervoso. É desencadeado por um estímulo súbito (como um barulho ou simulação de queda), resultando em abdução e extensão dos membros superiores, seguidas por adução e flexão (movimento de abraço). Não possui relação com a avaliação articular do quadril.\n\nc) Exame de Denver: A Escala de Denver (ou Denver II) é um instrumento de triagem utilizado para acompanhar o desenvolvimento neuropsicomotor da criança desde o nascimento até os seis anos. Ela avalia quatro áreas: pessoal-social, motor fino-adaptativo, linguagem e motor grosso. Não é uma manobra de exame físico ortopédico.\n\nd) Teste de Dick: É um exame clínico histórico utilizado para determinar a suscetibilidade de um indivíduo à escarlatina, causada pela toxina do *Streptococcus pyogenes*. Consiste na observação de uma reação cutânea após a aplicação intradérmica da toxina.\n\ne) Prova de Adson: É um teste ortopédico utilizado na prática clínica com adultos para diagnosticar a Síndrome do Desfiladeiro Torácico. O teste avalia a compressão da artéria subclávia por meio da palpação do pulso radial enquanto o paciente realiza manobras de inspiração e rotação do pescoço. Não tem aplicação na rotina neonatal para avaliação de quadris.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Cuidados Neonatais",
+      "Quadril Pediátrico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.699Z"
+  },
+  {
+    "id": "AJUDA_73945cdf-78e0-41ba-b263-81f94e090b0e",
+    "originalId": "73945cdf-78e0-41ba-b263-81f94e090b0e",
+    "statement": "Um jovem de 22 anos é levado a um Hospital de Trauma após acidente de moto com anteparo fixo. Queixa se de dor em região de dorso. Durante a avaliação inicial, apresentou um episódio de hematúria franca. Em função do exame físico, foi solicitado tomografia de corpo inteiro. Dentre as condições abaixo, a única que seria indicação imediata de laparotomia exploradora frente ao diagnóstico de lesão renal traumática é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aparecimento de instabilidade hemodinâmica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Achado tomográfico de lesão de ducto coletor",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Achado tomográfico de trombose da artéria renal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Persistência de hematúria após iniciar irrigação vesical",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O manejo do trauma renal atual é predominantemente conservador, visando à preservação do parênquima renal. A maioria das lesões, mesmo as de alto grau (classificadas pela escala AAST), pode ser tratada sem cirurgia, desde que o paciente apresente estabilidade hemodinâmica.\n\nAlternativa a: Esta é a alternativa correta. A instabilidade hemodinâmica que não responde à ressuscitação volêmica inicial é a principal indicação absoluta para laparotomia imediata no trauma renal. Quando o paciente apresenta sinais de choque hemorrágico decorrente da lesão renal, a exploração cirúrgica é mandatória para o controle do sangramento, visando salvar a vida do paciente, mesmo que isso resulte em uma nefrectomia.\n\nAlternativa b: Incorreta. O achado de lesão do sistema coletor, identificado pelo extravasamento de urina com contraste na fase excretora da tomografia, classifica a lesão como Grau IV. Na ausência de sangramento arterial ativo ou instabilidade, essa condição é manejada inicialmente de forma conservadora. Caso o extravasamento urinário persista ou cause complicações (como urinomas infectados ou dor), opta-se por procedimentos minimamente invasivos, como a passagem de cateter duplo J ou nefrostomia percutânea, e não por laparotomia imediata.\n\nAlternativa c: Incorreta. A trombose da artéria renal é considerada uma lesão de Grau V. Apesar da gravidade e do risco de perda funcional do rim, a laparotomia imediata para tentativa de revascularização apresenta taxas de sucesso muito baixas no trauma contuso, devido ao tempo de isquemia decorrido até o diagnóstico. Se o paciente estiver hemodinamicamente estável e possuir o rim contralateral íntegro, a conduta costuma ser o manejo expectante ou, em casos selecionados e precoces, a intervenção via radiologia intervencionista.\n\nAlternativa d: Incorreta. A hematúria, seja ela microscópica ou franca (macroscópica), é um sinal clínico de trauma no trato urinário, mas não serve como critério isolado para indicação cirúrgica. A persistência da hematúria não indica necessariamente um sangramento vultoso que exija laparotomia. O tratamento envolve hidratação e observação; a irrigação vesical é utilizada apenas para evitar que coágulos obstruam a uretra ou a sonda vesical de demora.\n\nPortanto, no trauma renal, a decisão cirúrgica baseia-se muito mais no estado clínico do paciente (estabilidade hemodinâmica) do que apenas nos achados anatômicos da tomografia.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.699Z"
+  },
+  {
+    "id": "AJUDA_73a1ce43-e8df-4001-b2fe-3a93704be9e3",
+    "originalId": "73a1ce43-e8df-4001-b2fe-3a93704be9e3",
+    "statement": "Menina de 12 anos é levada ao pronto-socorro por seus pais após apresentar vômitos frequentes, dor abdominal, respiração rápida e hálito com odor frutado nas últimas 24 horas. Ela tem histórico recente de perda de peso significativa, poliúria e polidipsia. Na chegada, encontra-se letárgica, com respiração de Kussmaul, glicemia capilar: 450 mg/dL, pH arterial: 7,1 e cetonas urinárias positivas. Na fisiopatologia dessa condição, encontra-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da utilização periférica de glicose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Resistência periférica à insulina, causando hiperglicemia moderada sem cetonemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Glicogenólise hepática aumentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipersecreção de cortisol e catecolaminas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipoinsulinemia, resultando em lipólise descontrolada.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descrito — paciente jovem com perda de peso, poliúria, polidipsia, vômitos, dor abdominal, respiração de Kussmaul (rápida e profunda), hálito cetônico e exames revelando hiperglicemia e acidose — é diagnóstico de cetoacidose diabética (CAD). Esta é uma complicação aguda grave, frequentemente a manifestação inicial do Diabetes Mellitus tipo 1 em crianças.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Na CAD, ocorre uma deficiência severa de insulina. Como a insulina é o hormônio responsável por promover a entrada de glicose nas células musculares e adiposas (via transportadores GLUT4), sua ausência leva a uma redução da utilização periférica de glicose, e não ao aumento.\n\nAlternativa b) Incorreta. A resistência periférica à insulina com hiperglicemia moderada e sem cetonemia é a marca fisiopatológica do Diabetes Mellitus tipo 2 e da síndrome metabólica. O caso clínico descreve uma deficiência insulínica profunda, resultando em acidose grave (pH 7,1) e produção de corpos cetônicos.\n\nAlternativa c) Incorreta. Embora a glicogenólise hepática (quebra do glicogênio em glicose) esteja aumentada devido à ação de hormônios contrarreguladores, ela é um processo limitado pelos estoques de glicogênio do fígado, que se esgotam rapidamente. O principal motor da hiperglicemia sustentada e da acidose na CAD envolve outros mecanismos, como a gliconeogênese e a cetogênese.\n\nAlternativa d) Incorreta. É verdade que existe um aumento de hormônios contrarreguladores (glucagon, cortisol, catecolaminas e hormônio do crescimento) em resposta ao estresse metabólico. No entanto, esses hormônios só causam o quadro de CAD porque há uma deficiência primária ou absoluta de insulina. A hipersecreção desses hormônios é um fator agravante, mas não a causa-base isolada da fisiopatologia proposta nas alternativas como explicação principal para a cetose.\n\nAlternativa e) Correta. A hipoinsulinemia é o evento central da cetoacidose diabética. A falta de insulina impede a inibição da enzima lipase hormônio-sensível no tecido adiposo. Sem esse freio, ocorre uma lipólise descontrolada, que libera grandes quantidades de ácidos graxos livres na circulação. No fígado, esses ácidos graxos são oxidados e convertidos em corpos cetônicos (cetogênese). O acúmulo desses corpos cetônicos (que são ácidos) no sangue é o que gera a acidose metabólica e os sintomas clássicos da condição.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.700Z"
+  },
+  {
+    "id": "AJUDA_73a314c2-a88c-4ced-81d1-f082c6704370",
+    "originalId": "73a314c2-a88c-4ced-81d1-f082c6704370",
+    "statement": "Gestante com sorologias de sífilis não reagentes, no início do pré-natal, retorna na 28ª semana com teste treponêmico positivo. É correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "se trata de caso de sífilis em gestante, em fase latente tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pode ser um resultado falso positivo, especialmente se o título for menor ou igual a 1/4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o tratamento consiste em benzilpenicilina benzatina na dose de 2,4 milhões UI, intramuscular, 1 x/semana por 3 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "após o tratamento, o aumento do título do VDRL, em duas diluições, indica retratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresentava sorologia negativa no início do pré-natal e positivou o teste treponêmico na 28ª semana. Isso caracteriza uma soroconversão durante a gestação, o que define o caso como sífilis adquirida recente (infecção com menos de um ano de evolução).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A sífilis é classificada como latente tardia quando a infecção tem mais de um ano de duração ou quando não se pode determinar a data do contágio. Como a paciente tinha exames negativos no início do pré-natal (há menos de um ano), trata-se obrigatoriamente de uma sífilis latente recente.\n\nAlternativa B (Incorreta): Os testes treponêmicos (como o teste rápido ou FTA-Abs) possuem alta especificidade e, uma vez positivos, raramente são falso-positivos na gestação. Além disso, a questão menciona títulos (como 1:4), que são característicos dos testes não treponêmicos (VDRL), e não dos treponêmicos. Na gestação, um teste treponêmico positivo associado a um histórico de negatividade prévia confirma o diagnóstico de sífilis.\n\nAlternativa C (Incorreta): O esquema de tratamento com três doses de benzilpenicilina benzatina (2,4 milhões de UI por semana, durante 3 semanas) é indicado para sífilis latente tardia ou de tempo indeterminado. Para a sífilis latente recente (que é o caso desta paciente, por ter menos de um ano de evolução), a recomendação do Ministério da Saúde é dose única de 2,4 milhões de UI, via intramuscular.\n\nAlternativa D (Correta): O seguimento pós-tratamento da gestante deve ser feito mensalmente com o VDRL. Considera-se falha terapêutica ou reagudização/reinfecção quando ocorre o aumento do título em duas diluições (por exemplo, um título que era 1:4 sobe para 1:16). Nesses casos, o retratamento é obrigatório para garantir a saúde materna e prevenir a sífilis congênita. Importante notar que \"duas diluições\" equivale a uma elevação de quatro vezes o valor numérico anterior.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Infecções Congênitas na Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.700Z"
+  },
+  {
+    "id": "AJUDA_73a374d7-22c8-4556-82c7-f9cd5181c178",
+    "originalId": "73a374d7-22c8-4556-82c7-f9cd5181c178",
+    "statement": "O tratamento imediato melhor indicado para um paciente que sofreu queimadura por álcalis é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "aplicar agentes neutralizantes como ácidos fracos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aplicação de antissépticos locais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "lavagem copiosa com água e provável desbridamento",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "apenas observar a delimitação do dano tecidual",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O tratamento imediato de queimaduras por álcalis foca-se na interrupção do processo de necrose de liquefação, característica dessas substâncias. Diferentemente dos ácidos, que geram uma necrose de coagulação que limita a própria penetração, os álcalis dissolvem as proteínas e saponificam as gorduras, permitindo que o agente químico penetre profundamente nos tecidos enquanto não for removido.\n\nAlternativa a: Incorreta. O uso de agentes neutralizantes (como tentar neutralizar uma base com um ácido fraco) é contraindicado no atendimento de emergência. A reação química de neutralização é exotérmica, o que significa que ela libera calor. Essa liberação de energia térmica pode causar uma queimadura térmica adicional sobreposta à lesão química, agravando o dano tecidual.\n\nAlternativa b: Incorreta. A aplicação de antissépticos não é a prioridade no manejo inicial de uma queimadura química. O objetivo primordial é interromper a ação do agente agressor. O uso de antissépticos ocorre em etapas posteriores do tratamento de feridas, após a estabilização e a limpeza adequada da área.\n\nAlternativa c: Correta. A lavagem copiosa com água corrente ou soro fisiológico é a medida mais eficaz e imediata. A irrigação deve ser contínua e prolongada (muitas vezes por 30 a 60 minutos) para garantir a diluição e a remoção mecânica do álcali. O desbridamento de tecidos macroscopicamente destruídos pode ser necessário precocemente para remover reservatórios da substância química que continuam a agredir as camadas mais profundas.\n\nAlternativa d: Incorreta. A conduta expectante ou a simples observação da delimitação do dano é inadequada e perigosa. Como o álcali continua a agir enquanto estiver em contato com o tecido, a falta de lavagem imediata permite que uma lesão inicialmente superficial se torne uma queimadura de espessura total em pouco tempo. A intervenção deve ser ativa e imediata.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.700Z"
+  },
+  {
+    "id": "AJUDA_73b3895c-cd03-496b-8537-0721eb8511fd",
+    "originalId": "73b3895c-cd03-496b-8537-0721eb8511fd",
+    "statement": "Paciente no pós-operatório de correção de aneurisma de aorta abdominal encontra-se internado na UTI. Qual das alternativas abaixo é indicação de tratamento dialítico de urgência?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ureia sérica de 150 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Creatinina sérica de 7 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acidose metabólica moderada (HCO3- = 15 mEq/L) e potássio sérico de 5,5 mEq/L.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Edema agudo pulmonar na fase oligúrica de insuficiência renal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nAs indicações para hemodiálise de urgência na Lesão Renal Aguda (LRA) são classicamente resumidas pelo mnemônico AEIOU. Para que o tratamento dialítico seja indicado de imediato, as alterações devem ser graves e, na maioria das vezes, refratárias ao tratamento clínico inicial.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O valor isolado da ureia sérica (150 mg/dL) não é um critério para diálise de urgência. A indicação por uremia ocorre quando há manifestações clínicas graves, como pericardite urêmica, encefalopatia urêmica ou sangramentos por disfunção plaquetária atribuída à uremia. Geralmente, essas complicações surgem com valores de ureia muito mais elevados, frequentemente acima de 200 mg/dL.\n\nAlternativa (b) Incorreta: Assim como a ureia, não existe um valor de corte de creatinina que, isoladamente, indique diálise de urgência. A creatinina é um marcador de taxa de filtração glomerular, mas a decisão clínica baseia-se na homeostase do paciente (volume, eletrólitos e equilíbrio ácido-base) e não em um número absoluto de creatinina.\n\nAlternativa (c) Incorreta: Nesta alternativa, as alterações são consideradas moderadas. Uma acidose metabólica com bicarbonato de 15 mEq/L e um potássio de 5,5 mEq/L (hipercalemia leve) podem ser manejados inicialmente com tratamento medicamentoso (medidas de polarização, resinas de troca ou bicarbonato de sódio). A diálise seria indicada se a acidose fosse grave (geralmente pH inferior a 7,1 ou 7,2) ou se o potássio fosse superior a 6,5 mEq/L com alterações no eletrocardiograma, ambos refratários às medidas clínicas.\n\nAlternativa (d) Correta: O edema agudo de pulmão (sobrecarga de volume) em um paciente oligúrico (baixa produção de urina) é uma das indicações mais clássicas e absolutas de diálise de urgência. Como o paciente não consegue eliminar volume pela via renal, o uso de diuréticos costuma ser ineficaz. A acumulação de líquido nos alvéolos impede a hematose adequada, colocando a vida do paciente em risco imediato, o que exige a remoção de fluidos por ultrafiltração via diálise.\n\nResumo das indicações de urgência (AEIOU):\nA - Acidose metabólica grave e refratária.\nE - Eletrólitos: Hipercalemia grave e refratária ou com alteração no ECG.\nI - Intoxicações por substâncias dialisáveis (ex: lítio, metanol, etilenoglicol).\nO - Overload: Sobrecarga volêmica (edema agudo de pulmão) refratária.\nU - Uremia sintomática (pericardite, encefalopatia).",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Vascular",
+      "Complicações Pós-Operatórias",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.700Z"
+  },
+  {
+    "id": "AJUDA_73ba46d8-2bcf-4c01-95ed-5cf1cdf3cb7e",
+    "originalId": "73ba46d8-2bcf-4c01-95ed-5cf1cdf3cb7e",
+    "statement": "Paciente de 70 anos, do sexo feminino, comparece a consulta trazendo exame de tomografia computadorizada de abdome, feita no Pronto Atendimento devido a quadro de lombalgia, evidenciando nódulo hipervascular no colo do pâncreas de 1,9cm de diâmetro. Nega outros sintomas e diz estar sentindo-se muito bem, porém está muito apreensiva devido ao resultado do exame pela possibilidade de ser um câncer de pancreas. Dentre as opções abaixo, em relação á conduta frente está situação, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar a enucleação do nódulo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar a realização de ecoendoscopia com punção/biópsia do nódulo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Indicar a realização de pancreatectomia central com preservação do baço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tranquilizar a paciente e acompanhá-la com exames de imagem em seis meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um achado incidental de um nódulo hipervascular de 1,9 cm no colo do pâncreas em uma paciente idosa e assintomática. Diante de um nódulo sólido pancreático com realce pelo contraste (hipervascular), a principal hipótese diagnóstica é a de um Tumor Neuroendócrino Pancreático (TNEp), que se diferencia do adenocarcinoma ductal pancreático por este último ser tipicamente hipovascular e muito mais agressivo.\n\nAlternativa A: Incorreta. A indicação cirúrgica imediata, como a enucleação, não é a conduta inicial recomendada para um achado incidental sem que haja, antes, uma caracterização diagnóstica precisa. Embora a enucleação seja uma técnica que preserva o parênquima, é necessário primeiro confirmar a natureza da lesão e seu potencial de malignidade (grau histológico).\n\nAlternativa B: Correta. A ecoendoscopia (EUS) com punção por agulha fina (FNA) é o padrão-ouro para a avaliação de massas pancreáticas. Ela permite a coleta de material para estudo citopatológico e, fundamentalmente nos tumores neuroendócrinos, a avaliação do índice de proliferação celular (Ki-67). Essas informações são cruciais para definir se a conduta será cirúrgica ou se o acompanhamento conservador é seguro, especialmente em uma paciente de 70 anos com uma lesão menor que 2,0 cm.\n\nAlternativa C: Incorreta. Assim como a alternativa A, propõe um tratamento cirúrgico definitivo (pancreatectomia central) sem diagnóstico prévio. A pancreatectomia central é uma cirurgia de grande porte, com risco significativo de complicações, como fístulas pancreáticas, e só deve ser indicada após a confirmação da necessidade de ressecção da lesão.\n\nAlternativa D: Incorreta. Embora existam protocolos de observação para pequenos tumores neuroendócrinos (geralmente menores que 1,0 ou 1,5 cm), um nódulo de 1,9 cm está no limite em que a maioria dos consensos recomenda investigação ativa. Apenas tranquilizar e repetir o exame em seis meses, sem uma biópsia prévia, pode retardar o tratamento de uma neoplasia com potencial de crescimento e metástase. Portanto, a investigação diagnóstica com ecoendoscopia deve preceder a decisão de apenas observar.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:08.700Z"
+  }
+]

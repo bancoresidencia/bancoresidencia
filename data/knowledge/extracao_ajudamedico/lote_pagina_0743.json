@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_ceedb838-ca67-4e3a-a164-eaec0d01a05c",
+    "originalId": "ceedb838-ca67-4e3a-a164-eaec0d01a05c",
+    "statement": "Um homem de 35 anos é levado ao departamento de emergência após uma briga de bar. Ele tem um ferimento por arma branca de 3 cm no hemitórax direito, de aproximadamente 5 cm lateralmente e logo acima do mamilo. Informa que o ferimento foi provocado por uma faca. Está consciente e orientado, embora embriagado, e reclama muito de dor no lado direito do tórax. Seus sinais vitais iniciais são: FC 96 bpm; PA 110/63 mmHg; FR 20 ipm e saturação de 98% em ar ambiente.\n\nQual das alternativas é um indicador correto para intervenção cirúrgica, pareada com uma abordagem cirúrgica apropriada para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Parada cardíaca na sala de trauma — Toracotomia anterolateral esquerda na sala de emergência;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Necessidade persistente de transfusão para manter a pressão arterial estável — Esternotomia mediana na sala de emergência;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Segundo ferimento de entrada identificado abaixo da margem costal — Toracotomia anterior transversa (Clamshell) na sala de cirurgia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Um ferimento de entrada medial à linha médio-clavicular — Esternotomia mediana na sala de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda as indicações e as vias de acesso cirúrgico no trauma torácico penetrante. Para resolvê-la, é necessário integrar o conhecimento sobre a anatomia do trauma, as indicações de toracotomia de emergência e as técnicas cirúrgicas adequadas para cada cenário.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A toracotomia de emergência na sala de trauma (reanimadora) é indicada em pacientes com trauma torácico penetrante que apresentam sinais de vida ou que sofrem parada cardiorrespiratória (PCR) presenciada pela equipe ou com tempo de transporte muito curto (geralmente inferior a 15 minutos). A via de escolha é a toracotomia anterolateral esquerda, realizada no quarto ou quinto espaço intercostal. Essa abordagem é preferida, mesmo em ferimentos à direita, pois permite acesso imediato ao pericárdio (para alívio de tamponamento cardíaco), massagem cardíaca interna e, crucialmente, o clampeamento da aorta descendente para redistribuir o fluxo sanguíneo para o cérebro e coração, além de controlar hemorragias infradiafragmáticas.\n\nAlternativa b) Incorreta. Embora a necessidade persistente de transfusão para manter a estabilidade hemodinâmica sugira um sangramento ativo importante (como lesão de vasos intercostais ou grandes vasos), o que é uma indicação clássica de toracotomia, o erro reside no local e na técnica. A esternotomia mediana exige o uso de uma serra esternal e equipamentos específicos, sendo realizada quase exclusivamente no centro cirúrgico, e não na sala de emergência. Além disso, para um ferimento lateral no hemitórax direito, a toracotomia lateral seria mais apropriada para controle de sangramento pulmonar ou de parede.\n\nAlternativa c) Incorreta. Um ferimento abaixo da margem costal sugere um trauma toracoabdominal, que requer investigação para lesões em órgãos abdominais (como fígado ou diafragma), geralmente via laparotomia ou laparoscopia, a depender da estabilidade. A toracotomia anterior transversa (clamshell), que consiste na união de duas toracotomias anterolaterais com secção do esterno, é uma incisão extremamente agressiva e heroica, indicada em casos de lesões cardíacas complexas ou sangramentos maciços bilaterais, não sendo a abordagem padrão para um ferimento subcostal isolado.\n\nAlternativa d) Incorreta. Um ferimento medial à linha medioclavicular situa-se na área de transição para o mediastino (zona de perigo para lesões cardíacas e de grandes vasos). Contudo, a simples presença do ferimento em um paciente hemodinamicamente estável, como o do caso (PA 110/63 mmHg, FC 96 bpm), não é indicação imediata de cirurgia. Esse paciente deve ser submetido a exames diagnósticos, como o FAST (focado no pericárdio) ou janela pericárdica. Novamente, a esternotomia mediana é um procedimento de centro cirúrgico e não deve ser realizada de forma rotineira na sala de emergência.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.383Z"
+  },
+  {
+    "id": "AJUDA_ceeeb93f-84fa-4c44-a766-80de6d82e394",
+    "originalId": "ceeeb93f-84fa-4c44-a766-80de6d82e394",
+    "statement": "O câncer colorretal é um grande problema de saúde. Com relação a esse tema, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente 50% dos tumores originam-se no lado esquerdo, e 25%, no direito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mutações do gene polipose adenomatosa coli (APC) ocorrem em 5% dos casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A obesidade e o tabagismo não são considerados fatores de risco aumentado para câncer colorretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em 40% a 50% dos casos, há lesões sincrônicas no interior dos cólons e do reto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "10% das neoplasias surgem devido a pólipos adenomatosos preexistentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a): Esta é a alternativa correta. Epidemiologicamente, a maioria dos cânceres colorretais localiza-se no lado esquerdo (cólon descendente, sigmoide e reto), representando cerca de 50% a 60% dos casos. O lado direito (cólon ascendente e ceco) responde por aproximadamente 25% a 30% dos tumores. Essa distribuição é um dado clássico na literatura médica, embora a incidência de tumores no cólon direito venha aumentando progressivamente nas últimas décadas.\n\nAlternativa (b): Incorreta. A mutação no gene supressor de tumor APC (Adenomatous Polyposis Coli) é considerada o evento inicial e fundamental na via da instabilidade cromossômica, que é a principal via de carcinogênese colorretal. Essa mutação ocorre em cerca de 80% dos casos de câncer colorretal esporádico, e não em apenas 5%.\n\nAlternativa (c): Incorreta. A obesidade, o sedentarismo e o tabagismo são fatores de risco ambientais e de estilo de vida amplamente reconhecidos para o câncer colorretal. A obesidade, em particular, está associada a um estado inflamatório crônico e à resistência à insulina, que favorecem a proliferação celular neoplásica.\n\nAlternativa (d): Incorreta. Lesões sincrônicas são definidas como dois ou mais tumores detectados simultaneamente no momento do diagnóstico inicial ou em até seis meses. A frequência de cânceres sincrônicos é baixa, ocorrendo em cerca de 3% a 5% dos pacientes. O valor citado na alternativa (40% a 50%) está incorreto e exagerado.\n\nAlternativa (e): Incorreta. A grande maioria das neoplasias colorretais (aproximadamente 70% a 90%) surge a partir de pólipos adenomatosos preexistentes por meio da sequência adenoma-carcinoma. Este processo de transformação maligna costuma levar, em média, de 7 a 10 anos, o que fundamenta a importância da colonoscopia como método de rastreamento e prevenção. O valor de 10% indicado na alternativa está incorreto.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.383Z"
+  },
+  {
+    "id": "AJUDA_cef9546d-fd53-4628-8921-e749a7d1c78d",
+    "originalId": "cef9546d-fd53-4628-8921-e749a7d1c78d",
+    "statement": "Sobre o diagnóstico diferencial das lesões hepáticas benignas, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemangiomas são as lesões mais raras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adenomas apresentam componente gorduroso na ressonância magnética.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Adenomas apresentam cicatriz central nos exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperplasia nodular focal apresenta comportamento hipovascular nos exames contrastados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sempre é necessária a realização de biópsia para chegar ao diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. Os hemangiomas são as lesões hepáticas benignas mais comuns na população geral, e não as mais raras. Frequentemente são identificados como achados incidentais em exames de ultrassonografia ou tomografia.\n\nAlternativa B: Correta. O adenoma hepático pode apresentar componente gorduroso (lipídeo intracelular), característica marcante especialmente no subtipo com mutação do gene HNF-1 alfa. Na ressonância magnética, essa gordura é detectada pela queda de sinal na sequência T1 fora de fase (out-of-phase) quando comparada à sequência em fase.\n\nAlternativa C: Incorreta. A presença de uma cicatriz central é o achado patognomônico da Hiperplasia Nodular Focal (HNF), representando uma área de tecido fibroso e vasos malformados. Adenomas tipicamente não apresentam cicatriz central.\n\nAlternativa D: Incorreta. A Hiperplasia Nodular Focal (HNF) é uma lesão tipicamente hipervascular. Nos exames de imagem contrastados, ela exibe um realce arterial intenso e homogêneo (com exceção da cicatriz central), tendendo a ficar isointensa ao restante do fígado nas fases portal e de equilíbrio.\n\nAlternativa E: Incorreta. O diagnóstico das principais lesões benignas (hemangioma, hiperplasia nodular focal e adenoma) é feito, na grande maioria das vezes, através de critérios radiológicos em exames de imagem dinâmicos (TC ou RM). A biópsia não é rotineira e é evitada pelo risco de sangramento, sendo reservada apenas para casos de diagnóstico inconclusivo onde haja suspeita de malignidade.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.384Z"
+  },
+  {
+    "id": "AJUDA_cf07d704-1844-4a55-a5f3-5ed8190d6678",
+    "originalId": "cf07d704-1844-4a55-a5f3-5ed8190d6678",
+    "statement": "Em relação ao infarto agudo do miocárdio (IAM), sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a maioria das mortes ocorre após as primeiras 24 horas do início do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a mortalidade hospitalar permaneceu estável, sem redução, ao longo das últimas décadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a maioria das mortes ocorre fora do ambiente hospitalar e, geralmente, sem assistência médica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a dificuldade de logística em um país de dimensão continental como o Brasil, torna o atendimento pré-hospitalar irrelevante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nAlternativa (a): Incorreta. A maior parte das mortes por infarto agudo do miocárdio ocorre precocemente, nas primeiras horas do evento. O risco é maior no início do quadro, frequentemente devido a arritmias ventriculares malignas (como a fibrilação ventricular), antes mesmo de o paciente chegar ao hospital.\n\nAlternativa (b): Incorreta. A mortalidade intra-hospitalar do infarto agudo do miocárdio apresentou uma redução significativa nas últimas décadas. Esse declínio é resultado do avanço nas terapias de reperfusão (angioplastia primária e fibrinolíticos), da implementação de unidades coronarianas especializadas e do uso sistemático de medicações como antiagregantes plaquetários, estatinas e betabloqueadores.\n\nAlternativa (c): Correta. Dados epidemiológicos demonstram que aproximadamente metade das mortes associadas ao infarto ocorre fora do ambiente hospitalar. Esses óbitos costumam ser súbitos e acontecem antes que o paciente receba qualquer assistência médica formal ou consiga ser transportado para uma unidade de emergência.\n\nAlternativa (d): Incorreta. O atendimento pré-hospitalar é vital, especialmente em países com grandes desafios logísticos. O conceito de \"tempo é músculo\" rege o tratamento do infarto; quanto mais rápido o diagnóstico e o início da reperfusão (seja por trombólise pré-hospitalar ou encaminhamento rápido para hemodinâmica), melhor o prognóstico. No Brasil, sistemas como o SAMU desempenham um papel essencial na tentativa de reduzir a mortalidade precoce.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.384Z"
+  },
+  {
+    "id": "AJUDA_cf09f2a1-9028-4d93-a6ed-e4fb59017490",
+    "originalId": "cf09f2a1-9028-4d93-a6ed-e4fb59017490",
+    "statement": "Mãe leva filha de 6 anos para consulta de puericultura em Unidade Básica de Saúde. A criança tem histórico familiar de hipercolesterolemia (pai e mãe), mas não apresenta comorbidades nem faz uso de medicações. Durante o exame físico, identifica-se IMC na faixa de sobrepeso.\nConsiderando-se as diretrizes brasileiras de dislipidemia e prevenção de aterosclerose, além das orientações sobre mudança de estilo de vida, qual é a conduta indicada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar dosagem de lipoproteína A e, se normal, repetir entre 12 e 16 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar dosagem de triglicerídeos, colesterol total, HDL-c e LDL-c e, se normais, repetir entre 12 e 16 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Rastrear a partir dos 9 anos, caso a criança mantenha IMC compatível com sobrepeso ou obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar dosagem de LDL-c e, se alterado, ampliar para perfil lipídico completo e prescrever estatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resposta correta: letra B\n\nA criança tem 6 anos, pai e mãe com hipercolesterolemia e sobrepeso. Pela Atualização da Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose (SBC), há dois tipos de rastreamento lipídico na infância:\n\n1. Rastreamento seletivo, a partir dos 2 anos, quando existe pelo menos uma destas condições:\n- pais ou avós com doença aterosclerótica precoce;\n- pais com colesterol total igual ou maior que 240 mg/dL ou dislipidemia conhecida;\n- outros fatores de risco, como obesidade/sobrepeso, hipertensão, diabetes, tabagismo ou dieta rica em gorduras;\n- doenças ou medicações que causam dislipidemia secundária;\n- sinais clínicos de dislipidemia, como xantomas ou arco corneano.\n\n2. Rastreamento universal, entre 9 e 11 anos, mesmo sem fatores de risco.\n\nEsta criança tem duas indicações para o rastreamento seletivo: a história parental e o sobrepeso. Portanto, deve fazer o perfil lipídico agora. O exame inicial é o perfil completo: colesterol total, HDL-c, LDL-c e triglicerídeos. Se o resultado for normal, repete-se depois, na adolescência (entre 12 e 16 anos, conforme a questão). A conduta deve vir junto com orientação de mudança de estilo de vida, com dieta adequada e atividade física, por causa do sobrepeso.\n\nAnálise das alternativas\n\na) Incorreta. A lipoproteína(a) é um fator de risco genético que pode ser dosado uma vez na vida, sobretudo quando há história familiar de doença cardiovascular precoce. Porém, não é o exame de rastreamento inicial da dislipidemia na infância e não substitui o perfil lipídico. Um valor normal de Lp(a) não exclui hipercolesterolemia familiar nem outras dislipidemias.\n\nb) Correta. Há indicação de rastreamento seletivo já aos 6 anos, e o exame recomendado é o perfil lipídico completo. Se estiver normal, repete-se na adolescência. Associa-se a orientação de mudança de estilo de vida.\n\nc) Incorreta. A faixa de 9 a 11 anos corresponde ao rastreamento universal, voltado para crianças sem fatores de risco. Esta criança tem risco aumentado, então o rastreamento deve começar a partir dos 2 anos. Esperar até os 9 anos atrasaria o diagnóstico, por exemplo, de uma hipercolesterolemia familiar.\n\nd) Incorreta, por dois motivos:\n- O rastreamento não se faz com LDL-c isolado, e sim com o perfil completo.\n- A estatina não é conduta automática diante de um LDL-c alterado. O tratamento inicial em pediatria é a mudança de estilo de vida, por 6 a 12 meses. A estatina fica reservada, em geral a partir de 8 a 10 anos, para casos com LDL-c persistentemente muito elevado (por exemplo, igual ou maior que 190 mg/dL, ou igual ou maior que 160 mg/dL com fatores de risco adicionais) ou com hipercolesterolemia familiar.\n\nPonto-chave: criança com história familiar de dislipidemia ou de doença aterosclerótica precoce, ou com fatores de risco como o sobrepeso, deve fazer perfil lipídico completo a partir dos 2 anos. Sem fatores de risco, o rastreamento universal é feito entre 9 e 11 anos. Na infância, o tratamento começa pela mudança de estilo de vida.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Obesidade na Infância e na Adolescência",
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.384Z"
+  },
+  {
+    "id": "AJUDA_cf0a9521-2ff8-4c0f-8135-3daa4bad6460",
+    "originalId": "cf0a9521-2ff8-4c0f-8135-3daa4bad6460",
+    "statement": "Joana, 6 anos, é levada ao pronto-socorro pela professora, que relatou hematomas frequentes e inexplicáveis em diferentes estágios de cicatrização. A mãe diz que a criança é muito ativa e “se machuca brincando”. Recentemente, a professora observou que Joana parece assustada quando se aproxima de adultos desconhecidos. Exame físico: Hematomas múltiplos em tronco, braços e coxas, alguns em formatos sugestivos de objetos. Pequenas escoriações em face e couro cabeludo. Sinais de desnutrição leve. Comportamento reservado, evita contato ocular. Exames complementares sugeridos: Radiografias de esqueleto completo para avaliar fraturas antigas ou em diferentes fases de cicatrização, Avaliação laboratorial: hemograma, coagulograma (para descartar distúrbios de coagulação).\n\nQual das seguintes condutas é mais adequada diante da suspeita de abuso infantil?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Confrontar imediatamente a mãe para obter explicações detalhadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aguardar novos sinais de abuso antes de agir, para confirmar o diagnóstico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar analgésicos e alta hospitalar, aguardando evolução clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Notificar os órgãos de proteção à criança e iniciar investigação multidisciplinar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Apenas encaminhar para psicoterapia, sem comunicar autoridades.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda um quadro clínico clássico de suspeita de maus-tratos infantis. Os principais \"sinais de alerta\" presentes no caso são: hematomas em diferentes estágios de evolução, lesões em locais protegidos (tronco e coxas), marcas com formatos de objetos, desnutrição e alterações comportamentais (evitação de contato ocular e medo de adultos).\n\nAnálise das alternativas:\n\na) Incorreta. Confrontar os pais ou responsáveis de forma agressiva ou imediata não é a conduta inicial recomendada. Isso pode aumentar o risco de novas agressões à criança, causar a fuga da família antes da intervenção das autoridades ou romper o vínculo necessário para a coleta de informações. A abordagem deve ser cautelosa e focada na segurança do menor.\n\nb) Incorreta. Diante da suspeita de abuso, o médico tem o dever legal e ético de agir imediatamente. O abuso infantil costuma ser crônico e progressivo; aguardar novos sinais coloca a vida da criança em risco iminente. A notificação deve ser feita com base na suspeita fundamentada, não sendo necessária a prova cabal do agressor.\n\nc) Incorreta. A alta hospitalar sem a devida investigação e proteção da criança é uma conduta negligente. Se o ambiente doméstico é o local provável da agressão, devolver a criança a esse meio sem garantir sua segurança é contraindicado. Muitas vezes, a internação social é indicada para proteger a criança enquanto as medidas legais são tomadas.\n\nd) Correta. Esta é a conduta padrão-ouro. O Estatuto da Criança e do Adolescente (ECA) estabelece que a notificação de casos suspeitos ou confirmados de maus-tratos é obrigatória e deve ser encaminhada ao Conselho Tutelar da localidade. A investigação multidisciplinar (médico, assistente social, psicólogo) é essencial para avaliar a dinâmica familiar, a segurança da vítima e descartar doenças orgânicas que simulem maus-tratos (como distúrbios de coagulação ou osteogênese imperfeita).\n\ne) Incorreta. O suporte psicológico é fundamental para o tratamento da criança, mas o encaminhamento isolado é insuficiente. A omissão de notificação às autoridades competentes em casos de suspeita de abuso infantil configura infração ética e legal por parte do profissional de saúde.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Maus Tratos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.384Z"
+  },
+  {
+    "id": "AJUDA_cf0b3b5a-6c30-40a9-a797-0d99299505c7",
+    "originalId": "cf0b3b5a-6c30-40a9-a797-0d99299505c7",
+    "statement": "Em relação à antibioticoprofilaxia cirúrgica, é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve ser administrada 2 horas antes da incisão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser repetida a cada 12 horas, independentemente do tempo cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O objetivo é reduzir a contaminação intraoperatória e infecção de sítio cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não há necessidade de repetir dose em cirurgias prolongadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "É indicada apenas em cirurgias contaminadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa (c) está correta porque define precisamente o propósito fundamental da antibioticoprofilaxia cirúrgica. O objetivo primordial é garantir que níveis terapêuticos de antibiótico estejam presentes nos tecidos no momento da incisão e durante todo o ato operatório, reduzindo a carga bacteriana e prevenindo a colonização que levaria à Infecção de Sítio Cirúrgico (ISC).\n\nA alternativa (a) está incorreta. Como regra geral, o antibiótico deve ser administrado nos 60 minutos que antecedem a incisão cirúrgica. Esse tempo é ideal para que a droga atinja o pico de concentração tecidual no momento em que a pele é cortada. Exceções ocorrem com a vancomicina e as fluoroquinolonas, que exigem infusão mais lenta e podem ser iniciadas até 120 minutos antes.\n\nA alternativa (b) está incorreta. A repetição da dose não segue um intervalo fixo de 12 horas para todos os casos. A redose intraoperatória depende da meia-vida da droga utilizada e do tempo de duração da cirurgia. Por exemplo, a cefazolina deve ser repetida a cada 3 ou 4 horas se o procedimento ainda estiver em curso.\n\nA alternativa (d) está incorreta. Em cirurgias prolongadas que excedam duas meias-vidas do antibiótico escolhido, a repetição da dose é obrigatória para manter a concentração sérica e tecidual acima da concentração inibitória mínima. Além disso, perdas sanguíneas volumosas (superiores a 1.500 mL em adultos) também exigem redose.\n\nA alternativa (e) está incorreta. A profilaxia é formalmente indicada em cirurgias potencialmente contaminadas e cirurgias contaminadas. Em cirurgias limpas, ela é indicada em situações específicas, como no uso de próteses e implantes, ou em cirurgias de grande porte com graves consequências em caso de infecção (ex.: neurocirurgia e cirurgia cardíaca). Vale lembrar que em cirurgias já infectadas, o uso do antibiótico deixa de ser profilático e passa a ser terapêutico.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.384Z"
+  },
+  {
+    "id": "AJUDA_cf1544dc-110a-47e0-9b22-e18073a2eb74",
+    "originalId": "cf1544dc-110a-47e0-9b22-e18073a2eb74",
+    "statement": "Paciente feminino de 72 anos com queixa de perda ponderal de 7% do seu peso em 2 meses sem mudança do padrão alimentar, dor abdominal, adinamia, deu entrada no pronto atendimento com quadro obstrutivo agudo e foi diagnosticada com tumor de sigmóide. Foi submetida a retossigmoidectomia na urgência com anastomose primária e durante pós operatório evoluiu com quadro de íleo mais prolongado. Considerando a doença de base, o porte da cirurgia e o quadro atual, assinale a alternativa incorreta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pelo NRS-2002 a paciente apresenta alto risco nutricional e deve receber intervenção nutricional precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para melhora do íleo pós operatório deve-se hidratar paciente com parcimônia, não passando de 30ml/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pelo NRS-2002 a paciente apresenta baixo risco nutricional e deve ser reavaliada semanalmente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Para melhora do íleo pós operatório deve-se iniciar deambulação precoce, o que também auxilia na prevenção de TVP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Para melhora do íleo pós operatório deve-se diminuir o uso de opiáceos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nO objetivo da questão é identificar a alternativa incorreta sobre o manejo nutricional e pós-operatório de uma paciente idosa, com câncer colorretal, submetida a uma cirurgia de grande porte e que apresenta íleo prolongado.\n\nAnálise das alternativas:\n\na) Correta. O NRS-2002 (Nutritional Risk Screening) é uma ferramenta de triagem que avalia o estado nutricional (perda de peso e IMC), a gravidade da doença e a idade. No caso, a paciente pontua pela perda de peso (7% em 2 meses > 1 ponto), pela gravidade da doença (cirurgia de grande porte/câncer > 2 pontos) e pela idade (maior de 70 anos > 1 ponto). Um escore maior ou igual a 3 indica risco nutricional, exigindo intervenção. Com um escore 4, a paciente é classificada como de alto risco.\n\nb) Correta. A reposição volêmica excessiva (hiper-hidratação) causa edema de alça intestinal, o que prejudica a motilidade e retarda o retorno da função intestinal. Protocolos modernos de recuperação acelerada (como o ACERTO ou ERAS) recomendam uma hidratação parcimoniosa e restritiva, geralmente em torno de 30 mL/kg/dia, para evitar o íleo pós-operatório.\n\nc) Incorreta (Gabarito). Conforme demonstrado no cálculo do NRS-2002, a paciente apresenta alto risco nutricional (escore 4). Pacientes com baixo risco nutricional (escore < 3) são aqueles que devem ser reavaliados semanalmente. Como a paciente já possui critérios de risco, ela necessita de um plano terapêutico nutricional imediato, e não apenas de reavaliação.\n\nd) Correta. A deambulação precoce é um pilar fundamental dos cuidados pós-operatórios. Ela estimula o retorno do peristaltismo (reduzindo o íleo) e é uma das medidas mais eficazes para a profilaxia mecânica de tromboembolismo venoso (TVP e embolia pulmonar).\n\ne) Correta. Os opioides agem em receptores mu no trato gastrointestinal, inibindo a liberação de acetilcolina e, consequentemente, reduzindo a motilidade intestinal. O uso de analgesia multimodal (poupando opioides e utilizando anti-inflamatórios ou bloqueios regionais) é essencial para prevenir e tratar o íleo pós-operatório.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Nutrição em Cirurgia",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.384Z"
+  },
+  {
+    "id": "AJUDA_cf1e5a47-f813-4bd9-ad16-0fec7266152e",
+    "originalId": "cf1e5a47-f813-4bd9-ad16-0fec7266152e",
+    "statement": "Paciente de 63 anos foi diagnosticada com hipertensão há três anos e recebe acompanhamento regular em sua Unidade Básica de Saúde. Recentemente, ela apresentou complicações devido à falta de adesão ao tratamento. Durante uma visita domiciliar realizada por um agente comunitário de saúde, foi observado que a paciente não estava tomando os medicamentos regularmente, além de não seguir as orientações de controle alimentar. Com base no principio da orientação às necessidades de saúde, a conduta mais adequada a ser adotada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reforçar que a paciente siga estritamente as recomendações do tratamento prescrito, a fim de evitar qualquer variação nos resultados esperados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Elaborar um diagnóstico das concepções de saúde da paciente e de suas preocupações e/ou desinformações com relação ao uso dos medicamentos prescritos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Intensificar o acompanhamento médico para revisar a prescrição de medicamentos, não havendo critérios para mobilizar os profissionais da equipe interdisciplinar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Recomendar à paciente que troque o tratamento medicamentoso por alternativas naturais e terapias complementares, reduzindo os riscos associados ao uso de fármacos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Instruir a paciente a seguir rigorosamente as orientações nutricionais, mesmo que ela não esteja segura para total aderência ao tratamento medicamentoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda um desafio comum na Atenção Primária à Saúde: a baixa adesão ao tratamento de doenças crônicas, como a hipertensão arterial. O foco aqui é o princípio da orientação às necessidades de saúde e o cuidado centrado na pessoa, que buscam entender o indivíduo além da patologia biológica.\n\nAlternativa a) Incorreta. Esta abordagem é puramente impositiva e paternalista. Simplesmente reforçar que a paciente siga recomendações de forma estrita ignora os motivos que a levaram a não aderir ao tratamento. Na gestão de doenças crônicas, o autoritarismo médico costuma ser ineficaz, pois não estabelece um vínculo de confiança nem trabalha a autonomia da paciente.\n\nAlternativa b) Correta. Para que o tratamento seja efetivo, o profissional deve compreender a experiência da doença sob a ótica do paciente. Isso envolve investigar suas crenças sobre a medicação, medos em relação a efeitos colaterais, dificuldades financeiras ou desinformação. Ao diagnosticar essas concepções, o médico pode realizar uma pactuação ou plano terapêutico compartilhado, o que aumenta significativamente as chances de adesão real.\n\nAlternativa c) Incorreta. A conduta é falha por dois motivos: primeiro, foca apenas na revisão da prescrição (abordagem biomédica isolada), o que pode não ser o problema central. Segundo, ignora a importância da equipe interdisciplinar (enfermeiros, nutricionistas, farmacêuticos, psicólogos), que é fundamental no acompanhamento de pacientes hipertensos com dificuldades de adesão na Unidade Básica de Saúde.\n\nAlternativa d) Incorreta. Esta conduta é tecnicamente inadequada e perigosa. Substituir um tratamento medicamentoso com eficácia comprovada por alternativas naturais sem evidência científica para o controle de hipertensão de longa data expõe a paciente a riscos cardiovasculares graves, como AVC e infarto. As terapias complementares podem ser somadas ao tratamento, mas nunca substituí-lo sem critério clínico.\n\nAlternativa e) Incorreta. Instruir o seguimento rigoroso de apenas uma parte do tratamento (nutricional) enquanto a paciente está insegura com a outra parte (medicamentosa) é uma estratégia fragmentada. O cuidado em saúde deve ser integral. Se a paciente não está segura quanto aos fármacos, essa insegurança deve ser abordada e esclarecida, em vez de ser simplesmente ignorada em favor de orientações dietéticas.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.384Z"
+  },
+  {
+    "id": "AJUDA_cf2bfb23-5c7d-41ae-946a-4cebebb8629e",
+    "originalId": "cf2bfb23-5c7d-41ae-946a-4cebebb8629e",
+    "statement": "Homem, 35 anos, profissão blogueiro, refere ter sido diagnosticado com TDAH, está em uso de medicação análoga à anfetamina. Refere ter aumentado a dose por conta própria para atingir metas de performance de vendas, além de uso de testosterona injetável, com intuito estético virilizante. Refere ter ido à Unidade de Pronto Atendimento, com sudorese profusa e níveis pressóricos elevados há 3 semanas.\n\nEm relação ao caso relatado acima:\nI. O paciente tem risco de AVC e aumento do risco cardiovascular.\nII. O paciente tem maior susceptibilidade a transtornos do humor, como irritabilidade, agressividade, depressão, suicídio, paranoia, alucinações e outras psicoses.\nIII. As medicações utilizadas são isentas de sintomas de dependência e abstinência.\nIV. Hepatite medicamentosa, tumores malignos e benignos hepáticos são outros eventos adversos possíveis neste caso.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I, II, III e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta um quadro de abuso de duas classes de substâncias: estimulantes (anfetaminas) e esteroides androgênicos anabólicos (testosterona). A combinação explica a sintomatologia de sudorese e hipertensão arterial.\n\nItem I: Correto. As anfetaminas agem aumentando a liberação de catecolaminas (noradrenalina e dopamina), o que gera vasoconstrição, taquicardia e aumento da pressão arterial, elevando diretamente o risco de Acidente Vascular Cerebral (AVC) e eventos coronarianos. O uso de testosterona em doses suprafisiológicas também contribui para o aumento do risco cardiovascular por induzir hipertensão, dislipidemia, policitemia e hipertrofia ventricular.\n\nItem II: Correto. O uso crônico ou em altas doses de anfetaminas pode desencadear a chamada psicose anfetamínica, caracterizada por paranoia e alucinações, além de irritabilidade extrema. Os esteroides anabólicos estão associados a mudanças de comportamento conhecidas como agressividade e instabilidade emocional, além de quadros de depressão profunda e risco de suicídio, especialmente durante a retirada da substância.\n\nItem III: Incorreto. Esta afirmação é falsa. As anfetaminas possuem alto potencial de abuso e dependência. A sua interrupção causa uma síndrome de abstinência marcada por fadiga, depressão e fissura (craving). Da mesma forma, os esteroides anabólicos causam dependência física e psicológica, pois a supressão do eixo hormonal natural leva ao hipogonadismo secundário e sintomas depressivos quando o uso é interrompido.\n\nItem IV: Correto. A hepatotoxicidade é um efeito adverso bem estabelecido dos esteroides anabólicos. O uso dessas substâncias pode causar desde quadros de hepatite medicamentosa e colestase até o surgimento de tumores, como adenomas hepáticos (benignos) e carcinoma hepatocelular (maligno), além de pelicose hepática.\n\nAnálise das alternativas:\n\na) Incorreta. O item I está correto, mas os itens II e IV também estão.\nb) Incorreta. Os itens I e II estão corretos, mas o item IV também deve ser incluído.\nc) Incorreta. O item III invalida esta alternativa, pois as medicações não são isentas de dependência e abstinência.\nd) Correta. Identifica adequadamente que apenas as proposições I, II e IV são verdadeiras no contexto clínico apresentado.\n\nGabarito: Letra (d).",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Dependência Química",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:08.384Z"
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_751d509d-3cba-44fa-b1f1-06256ba956f5",
+    "originalId": "751d509d-3cba-44fa-b1f1-06256ba956f5",
+    "statement": "Sobre sensibilidade, especificidade, VPP e VPN, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sensibilidade e especificidade variam conforme a prevalência da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O valor preditivo positivo aumenta quando a prevalência da doença na população aumenta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O valor preditivo negativo aumenta quando a prevalência da doença aumenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Valores preditivos não sofrem influência da prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A sensibilidade e a especificidade são propriedades intrínsecas de um teste diagnóstico, calculadas a partir de indivíduos sabidamente doentes e não doentes, respectivamente. Por esse motivo, elas são fixas e não variam de acordo com a prevalência da doença na população. Em contrapartida, os valores preditivos (VPP e VPN) dependem diretamente da probabilidade pré-teste, ou seja, da prevalência da doença.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Sensibilidade e especificidade são características intrínsecas do teste e não sofrem alteração com a mudança da prevalência da doença.\n\nAlternativa b: Correta. O Valor Preditivo Positivo (VPP) é diretamente proporcional à prevalência. Quando a prevalência de uma doença aumenta na população, a probabilidade pré-teste aumenta, elevando a proporção de verdadeiros positivos em relação aos falsos positivos e, consequentemente, aumentando o VPP.\n\nAlternativa c: Incorreta. O Valor Preditivo Negativo (VPN) é inversamente proporcional à prevalência. Se a prevalência da doença aumenta, há maior número absoluto de doentes e maior chance de ocorrência de falsos negativos, o que faz o VPN diminuir.\n\nAlternativa d: Incorreta. Os valores preditivos sofrem influência direta e fundamental da prevalência da doença na população em que o teste é aplicado.\n\nGabarito: Letra b.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Estatística Médica",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  },
+  {
+    "id": "AJUDA_751f67c2-fa6c-4cbb-8250-1939d23ebc20",
+    "originalId": "751f67c2-fa6c-4cbb-8250-1939d23ebc20",
+    "statement": "Paciente, 30 anos, politraumatizado, deu entrada no pronto socorro com desconforto respiratório moderado, FR 30, sat O2 85% em ar ambiente, PA: 80x50 mmHg. No exame físico, possuía turgência jugular, expansão torácica assimétrica e murmúrio vesicular abolido em hemitórax esquerdo, abdome flácido, e depressível, pelve sem sinais de instabilidade. Diante do diagnóstico presuntivo do caso acima, conforme o ATLS 10ª edição, qual dos manejos abaixo em relação ao caso está INCORRETO?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O caso acima requer descompressão imediata e pode ser tratado inicialmente inserindo-se rapidamente um grande cateter sobre agulha preferencialmente, na parede anterior do tórax ou 5º espaço intercostal entre a linha axilar anterior e média.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento definitivo, requer drenagem em selo d’água no 5º espaço intercostal linha hemiclavicular esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Se disponível, o quadro clínico acima, poderá ser diagnosticado através de ultrassom por intermédio do exame FAST estendido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A realização de radiografia não deve atrasar o diagnóstico e a tomada de conduta em relação a este caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta o quadro clássico de pneumotórax hipertensivo: desconforto respiratório, hipóxia (SatO2 85%), hipotensão (choque obstrutivo), turgência jugular e murmúrio vesicular abolido em um hemitórax (esquerdo). Trata-se de uma emergência médica que exige diagnóstico clínico e intervenção imediata.\n\nAnálise das alternativas:\n\na) CORRETA. De acordo com o ATLS 10ª edição, o pneumotórax hipertensivo requer descompressão imediata. A técnica preferencial em adultos para descompressão por agulha (toracocentese) mudou do 2º espaço intercostal na linha hemiclavicular para o 5º espaço intercostal, entre as linhas axilar anterior e média. Embora o 2º espaço ainda seja citado como opção, o 5º espaço é atualmente o local de escolha por possuir uma parede torácica geralmente mais fina, facilitando o alcance do espaço pleural.\n\nb) INCORRETA (Gabarito). O tratamento definitivo do pneumotórax hipertensivo é, de fato, a drenagem torácica em selo d'água. No entanto, a localização descrita na alternativa está errada. A drenagem deve ser realizada no 5º espaço intercostal, entre as linhas axilar anterior e axilar média (anteriormente à linha axilar média), e não na linha hemiclavicular. A linha hemiclavicular era o local clássico para a punção de alívio (agulha) em edições anteriores, mas nunca foi o local padrão para a inserção do dreno de tórax.\n\nc) CORRETA. O ultrassom focado no trauma (FAST), quando estendido para a avaliação torácica (e-FAST), tem alta sensibilidade e especificidade para o diagnóstico de pneumotórax através da ausência do deslizamento pleural (*lung sliding*), podendo ser utilizado rapidamente à beira do leito se o examinador for treinado.\n\nd) CORRETA. O diagnóstico do pneumotórax hipertensivo é clínico. Devido à gravidade e ao risco iminente de parada cardiorrespiratória por baixo débito cardíaco, não se deve aguardar a realização de radiografia de tórax para confirmar o diagnóstico e iniciar o tratamento. A conduta deve ser imediata após a suspeita clínica baseada no exame físico.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  },
+  {
+    "id": "AJUDA_75483fa2-5935-4a45-8440-6d05c8a94392",
+    "originalId": "75483fa2-5935-4a45-8440-6d05c8a94392",
+    "statement": "Paciente de 56 anos, hipertenso e diabético, é admitido no hospital com queixa de dor torácica retroesternal, em aperto, com irradiação para o braço esquerdo e o pescoço, iniciada há uma hora. Sinais vitais: pressão arterial: 160 x 90 mmHg; frequência cardíaca: 90 bpm; saturação O2: 96%; temperatura: 36,5 °C. Ausculta cardíaca e respiratória sem alterações. O eletrocardiograma realizado na admissão revelou supradesnivelamento do segmento ST em V2-V4, e a troponina está elevada. O paciente recebeu tratamento medicamentoso inicial recomendado. O cateterismo revelou lesão única de 99% no terço médio da artéria descendente anterior (DA). A conduta correta a ser realizada nesse momento consiste em",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar tratamento clínico otimizado com IECA, betabloqueadores e estatinas, sem necessidade de revascularização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar revascularização cirúrgica imediata devido à localização e à importância da lesão coronariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "observar clinicamente e definir conduta após 24 horas da admissão, com base na curva de troponina e nas alterações do ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar angioplastia coronariana com implante de stent em artéria descendente anterior.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente com Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST) na parede anterior (V2 a V4), com sintomas iniciados há apenas uma hora. Trata-se de uma emergência médica em que o objetivo principal é a reperfusão imediata do miocárdio para limitar a área de necrose.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O tratamento clínico otimizado (IECAs, betabloqueadores, estatinas e antiagregantes) é fundamental e deve ser iniciado em todos os pacientes, mas não substitui a necessidade de reperfusão imediata no caso de um infarto com supra de ST. Manter apenas o tratamento medicamentoso diante de uma obstrução de 99% em uma artéria importante resultaria em perda significativa de músculo cardíaco e pior prognóstico.\n\nAlternativa b) Incorreta. Embora a artéria descendente anterior seja vital, a revascularização cirúrgica (ponte de safena ou mamária) não é a conduta de escolha imediata no IAMCSST, a menos que a anatomia seja desfavorável para a angioplastia, ocorra falha no procedimento percutâneo ou existam complicações mecânicas (como ruptura de septo ou valvar). A angioplastia é mais rápida e menos invasiva, sendo o padrão-ouro na fase aguda.\n\nAlternativa c) Incorreta. No infarto com supra de ST, tempo é músculo. Aguardar 24 horas para observar a curva de troponina ou realizar um ecocardiograma antes de intervir é uma conduta contraindicada, pois o benefício da reperfusão é tempo-dependente. O diagnóstico já está firmado pelo quadro clínico e pelo eletrocardiograma.\n\nAlternativa d) Correta. A angioplastia coronariana primária (com implante de stent) é a conduta de escolha para o tratamento do IAMCSST quando disponível em tempo hábil (idealmente em até 90 a 120 minutos do contato médico). Como o cateterismo já foi realizado e identificou uma lesão subtotal (99%) na artéria descendente anterior, que justifica o supradesnivelamento em V2-V4, a desobstrução imediata com stent é o tratamento definitivo para restaurar o fluxo sanguíneo.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  },
+  {
+    "id": "AJUDA_754d5c49-c4a1-41a4-9134-cc7416f0b2f9",
+    "originalId": "754d5c49-c4a1-41a4-9134-cc7416f0b2f9",
+    "statement": "Paciente masculino, de 65 anos, com história de doença pulmonar obstrutiva crônica, tabagismo e diabetes melito (amputação do antepé direito há 2 anos), foi internado com quadro de perfuração gástrica por úlcera de estresse, sendo operado de urgência. Evoluiu com abscesso peritoneal, necessitando de laparotomia para lavagem da cavidade. Continuava apresentando picos febris e leucograma com desvio à esquerda. Nova tomografia computadorizada evidenciou presença de coleção peritoneal subdiafragmática direita e derrame pleural volumoso à direita com áreas loculadas. Que conjunto de condutas, dentre as abaixo, seria adequado neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expectante, com antibioticoterapia de amplo espectro e controle do diabetes melito",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pleuroscopia e nova abordagem da coleção abdominal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Drenagem torácica e antibioticoterapia de amplo espectro",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Punção percutânea da coleção abdominal e toracocentese",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nO caso clínico descreve um paciente com sepse persistente (picos febris e leucograma com desvio à esquerda) decorrente de focos infecciosos não controlados após complicações de uma cirurgia de urgência. O ponto central da questão é identificar a necessidade de controle de foco em dois compartimentos distintos: o abdome (coleção subdiafragmática) e o tórax (derrame pleural loculado).\n\nAlternativa (a) Incorreta: A conduta expectante é contraindicada em pacientes com coleções purulentas diagnosticadas e sinais clínicos de infecção sistêmica. O controle do diabetes e a antibioticoterapia são medidas de suporte fundamentais, mas não substituem a necessidade de drenagem mecânica de abscessos e coleções loculadas.\n\nAlternativa (b) Correta: Esta é a conduta mais adequada para o quadro. O derrame pleural é descrito como volumoso e com áreas loculadas (tabicadas), o que caracteriza um empiema na fase fibrinopurulenta. Nessas condições, um dreno de tórax comum frequentemente falha em esvaziar todas as lojas de pus. A pleuroscopia (ou videotoracoscopia) permite a lise de aderências, limpeza do espaço pleural e posicionamento correto do dreno sob visão direta. Simultaneamente, a coleção subdiafragmática direita (que é a provável origem do problema ou um foco infeccioso independente) exige uma nova abordagem para drenagem e limpeza.\n\nAlternativa (c) Incorreta: A drenagem torácica simples por tubo costuma ser insuficiente para derrames pleurais loculados, pois o dreno retira o líquido apenas da cavidade em que está inserido, deixando as demais lojas infectadas intocadas. Além disso, esta alternativa falha ao não mencionar a necessidade de abordagem da coleção abdominal, que é um foco ativo de sepse.\n\nAlternativa (d) Incorreta: A toracocentese é um procedimento predominantemente diagnóstico ou para alívio sintomático de grandes volumes, não sendo o tratamento definitivo para um derrame pleural volumoso e loculado em paciente séptico. Embora a punção percutânea possa ser uma opção para a coleção abdominal em casos selecionados, o conjunto da alternativa é insuficiente para a resolução definitiva das complicações torácicas e abdominais combinadas.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  },
+  {
+    "id": "AJUDA_7552c73c-c95a-4c3f-87ac-099c5ae31ae0",
+    "originalId": "7552c73c-c95a-4c3f-87ac-099c5ae31ae0",
+    "statement": "Uma paciente de 33 anos de idade, após a realização de videolaparoscopia, foi diagnosticada com endometriose pélvica profunda. Com base nessa situação hipotética, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "os focos de endometriose penetram mais que 5 mm no local de implantação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a doença está em estádio avançado, causando infertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a doença tem que ser tratada com análogo ou antagonista do GnRH por, no mínimo, um ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a doença afetou o reto sigmoide e deverá ser tratada com histerectomia e ressecção parcial do reto sigmoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a doença afeta, no mínimo, três órgãos, por exemplo, útero, bexiga e ovários.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a questão, é fundamental revisar os critérios de classificação da endometriose, uma doença caracterizada pela presença de tecido endometrial fora da cavidade uterina. A classificação mais utilizada divide a doença em três fenótipos principais: peritoneal superficial, ovariana (endometrioma) e infiltrativa profunda.\n\nAlternativa (a): Correta. Esta alternativa apresenta a definição clássica e técnica de endometriose profunda. Do ponto de vista histológico e cirúrgico, considera-se endometriose profunda quando os focos de tecido ectópico infiltram o peritônio ou o espaço subperitoneal em uma profundidade superior a 5 mm.\n\nAlternativa (b): Incorreta. Embora a endometriose profunda geralmente esteja associada a estádios mais avançados (III e IV) pela classificação da Sociedade Americana de Medicina Reprodutiva (ASRM), o diagnóstico de endometriose profunda não é sinônimo de infertilidade. Muitas pacientes com essa condição conseguem conceber naturalmente, e a infertilidade é uma possibilidade clínica, mas não uma regra absoluta ou definidora do diagnóstico.\n\nAlternativa (c): Incorreta. O tratamento da endometriose deve ser individualizado com base nos sintomas (dor ou infertilidade) e no desejo reprodutivo da paciente. Os análogos ou antagonistas do GnRH são opções para o controle da dor em casos selecionados, mas não são o tratamento padrão obrigatório para todos os casos e não possuem um tempo mínimo fixo de um ano. Além disso, o uso prolongado dessas medicações sem terapia de reposição (add-back therapy) pode causar perda de massa óssea e sintomas climatéricos intensos.\n\nAlternativa (d): Incorreta. O acometimento do retossigmoide é comum na endometriose profunda, mas a questão não fornece dados que confirmem essa localização específica na paciente em questão. Ademais, o tratamento cirúrgico radical, como a histerectomia e a ressecção intestinal, não é a conduta inicial padrão para uma paciente de 33 anos sem considerar a gravidade dos sintomas, a falha do tratamento clínico e o desejo de preservar a fertilidade.\n\nAlternativa (e): Incorreta. A classificação de endometriose profunda depende exclusivamente da profundidade da invasão (maior que 5 mm) e não da quantidade de órgãos afetados. Uma paciente pode ter apenas um foco profundo (por exemplo, no ligamento uterossacro) e já receber o diagnóstico de endometriose profunda.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  },
+  {
+    "id": "AJUDA_75577f4b-d01d-4775-be89-3f24ce91b361",
+    "originalId": "75577f4b-d01d-4775-be89-3f24ce91b361",
+    "statement": "Em relação à assistência ao parto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não se determina uma cérvico-dilatação para indicar a analgesia do trabalho de parto, sendo a dor da parturiente o elemento determinante para isso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "No período de dilatação, espera-se até, no máximo, 5 contrações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na fase de expulsivo, deve-se auscultar os batimentos cardíacos fetais a cada 15 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O terceiro período ativo determina a extração placentária após 10 minutos da expulsão do ovóide córmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A episiotomia não deve ser realizada em partos vaginais espontâneos, sendo indicada, na atualidade, somente para partos instrumentalizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): De acordo com as diretrizes atuais da FEBRASGO, da Organização Mundial da Saúde e do Ministério da Saúde, a analgesia de parto deve ser disponibilizada a partir do momento em que a gestante solicita o alívio da dor, desde que o trabalho de parto esteja estabelecido. Não existe mais a recomendação de aguardar uma dilatação cervical mínima (como 4 ou 5 cm) para iniciar o procedimento. A percepção de dor da parturiente é o critério soberano.\n\nAlternativa B (Incorreta): Durante a fase ativa do trabalho de parto, espera-se que ocorram de 2 a 5 contrações em um intervalo de 10 minutos. O termo taquissistolia é reservado para a presença de mais de 5 contrações em 10 minutos. A afirmação é vaga e não reflete um parâmetro de conduta isolado na assistência ao parto, pois a qualidade e a duração das contrações também devem ser avaliadas.\n\nAlternativa C (Incorreta): No segundo período do parto (período expulsivo), a recomendação para gestantes de baixo risco é que a ausculta dos batimentos cardíacos fetais seja realizada de forma intermitente a cada 5 minutos ou após cada contração. A frequência de 15 em 15 minutos é recomendada para o primeiro período (dilatação) em gestantes de baixo risco.\n\nAlternativa D (Incorreta): O terceiro período ativo (ou manejo ativo do terceiro estágio) consiste na administração de 10 UI de oxitocina por via intramuscular imediatamente após o nascimento (preferencialmente após a saída do ombro anterior ou nascimento completo do feto), seguida de tração controlada do cordão umbilical e massagem uterina, se necessário. O objetivo é reduzir o risco de hemorragia pós-parto, não havendo a regra de aguardar 10 minutos para a extração placentária.\n\nAlternativa E (Incorreta): Atualmente, a recomendação é que a episiotomia não seja realizada de forma rotineira, mas sim de forma seletiva. Embora seja comum em partos instrumentalizados (como no uso de fórceps), ela não é exclusiva desses casos. Pode ser indicada em situações específicas de risco de laceração perineal grave ou sofrimento fetal agudo, nas quais o benefício de abreviar o parto supere os riscos do procedimento, independentemente de ser um parto espontâneo ou instrumental. O erro da alternativa está na palavra \"somente\".",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  },
+  {
+    "id": "AJUDA_7558d3a0-75ef-44f0-a764-835bd1ecd641",
+    "originalId": "7558d3a0-75ef-44f0-a764-835bd1ecd641",
+    "statement": "Mulher, 58 anos de idade, menopausada, refere desconforto pélvico e sensação de “peso” na região vaginal, que se acentua ao final do dia e após longos períodos em pé. Também refere dificuldade para evacuar, com necessidade frequente de realizar manobras digitais para completar a evacuação. Apresenta atividade sexual regular com uso de lubrificantes à base de óleos naturais. Durante o exame ginecológico com manobra de Valsalva, observa-se que a parede vaginal posterior ultrapassa o hímen em 2 cm e o colo uterino exterioriza-se 1 cm além do hímen. Assinale a alternativa que apresenta a melhor conduta terapêutica a ser considerada neste caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pessário vaginal e fisioterapia pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tratamento com laser de CO2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Histerectomia vaginal e perineocolporrafia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Colpocleise com estrogenioterapia tópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve uma paciente de 58 anos com Prolapso de Órgãos Pélvicos (POP) sintomático envolvendo múltiplos compartimentos: prolapso apical (colo uterino a +1 cm além do hímen) e prolapso posterior/retocele (parede vaginal posterior a +2 cm além do hímen), classificando-se como POP-Q estágio III. A queixa de necessidade de digitação vaginal para evacuar é um sintoma clássico de retocele. Considerando que a paciente é jovem, com prolapso avançado e mantém vida sexual ativa, a conduta definitiva padrão é o tratamento cirúrgico reconstrutivo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O uso de pessário e a fisioterapia do assoalho pélvico constituem opções de manejo conservador. São indicados principalmente para pacientes com comorbidades graves, alto risco cirúrgico ou que recusam procedimento cirúrgico. Para uma paciente com boa condição clínica e prolapso avançado (estágio III), a cirurgia reconstrutiva é a conduta de escolha.\n\nAlternativa b: Incorreta. O laser de CO2 tem indicação no tratamento da síndrome geniturinária da menopausa (atrofia da mucosa vaginal), mas não é capaz de corrigir defeitos fasciais e anatômicos que causam o prolapso de órgãos pélvicos.\n\nAlternativa c: Correta. A histerectomia vaginal realiza a correção do prolapso apical (descida uterina), enquanto a perineocolporrafia (colporrafia posterior com reconstrução perineal) corrige o defeito da fáscia retovaginal, aliviando os sintomas de peso e a dificuldade evacuatória. Esse procedimento cirúrgico reconstrutivo mantém a perviedade vaginal, preservando a função sexual ativa da paciente.\n\nAlternativa d: Incorreta. A colpocleise é um procedimento cirúrgico obliterativo, que consiste no fechamento do canal vaginal. Trata-se de uma cirurgia com excelente taxa de sucesso para idosas frágeis, mas é contraindicada para mulheres com atividade sexual ativa ou que desejam preservar a função coital. Além disso, a estrogenioterapia tópica isolada não reverte a alteração anatômica.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  },
+  {
+    "id": "AJUDA_75592fa6-d5ed-4a9b-ba5f-223c1b44ad73",
+    "originalId": "75592fa6-d5ed-4a9b-ba5f-223c1b44ad73",
+    "statement": "Dona Rosa leva seu primogênito de 8 meses de idade, hígido, para consulta de rotina com o pediatra. Ao checar a caderneta da criança, o médico constata que o bebê não recebeu nenhuma dose da vacina contra o vírus SARS-CoV-2. Nesse contexto é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a criança perdeu a oportunidade da imunização contra formas graves da COVID-19, não sendo possível iniciar o esquema vacinal na idade atual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nesta idade o bebê já deveria ter recebido uma dose da vacina contra a COVID-19, devendo iniciar o mais breve possível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o bebê deve iniciar o esquema com a vacina contra a COVD-19 na idade atual, até completar as 4 doses previstas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "nesta idade o bebê já deveria ter recebido duas doses da vacina contra a COVID-19, devendo iniciar o mais breve possível.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "caso o bebê não tenha contraindicação, deve iniciar o esquema vacinal com doses anuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para a resolução desta questão, é fundamental o conhecimento atualizado sobre o Programa Nacional de Imunizações (PNI) do Brasil. Desde janeiro de 2024, a vacina contra a COVID-19 foi incluída no Calendário Nacional de Vacinação da Criança para a faixa etária de 6 meses a menores de 5 anos.\n\nO esquema vacinal preconizado para bebês e crianças pequenas consiste em 3 doses, respeitando os seguintes intervalos:\n- 1ª dose: aos 6 meses de idade.\n- 2ª dose: aos 7 meses (4 semanas ou 28 dias após a primeira dose).\n- 3ª dose: aos 9 meses (8 semanas ou 56 dias após a segunda dose).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Na vacinação, doses atrasadas não significam perda definitiva da oportunidade de imunização. Se uma criança não foi vacinada na idade recomendada, o esquema deve ser iniciado ou completado o mais breve possível, independentemente do tempo transcorrido, para garantir a proteção contra formas graves da doença.\n\nAlternativa b) Incorreta. Aos 8 meses de idade, de acordo com o calendário oficial, a criança já deveria ter recebido não apenas uma, mas duas doses da vacina (a primeira aos 6 meses e a segunda aos 7 meses).\n\nAlternativa c) Incorreta. O esquema primário completo para essa faixa etária é composto por 3 doses (esquema 0-4-12 semanas na lógica de intervalos, ou aos 6, 7 e 9 meses de vida). Não há previsão de 4 doses no esquema básico inicial para crianças saudáveis nessa idade.\n\nAlternativa d) Correta. Como o início da vacinação é aos 6 meses e o intervalo para a segunda dose é de 4 semanas, um bebê de 8 meses hígido já deveria estar com as duas primeiras doses registradas na caderneta. Por estar em atraso, a orientação é iniciar o esquema imediatamente.\n\nAlternativa e) Incorreta. A recomendação de doses anuais (ou semestrais, dependendo do grupo) destina-se aos chamados grupos prioritários, que incluem idosos, gestantes, puérperas, trabalhadores da saúde e pessoas com comorbidades/imunossupressão. Para crianças saudáveis de 6 meses a 4 anos, a recomendação vigente no PNI foca no cumprimento do esquema primário de 3 doses.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Covid-19",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  },
+  {
+    "id": "AJUDA_755b4380-bb1b-4dfc-94e8-9b4a6468cdcf",
+    "originalId": "755b4380-bb1b-4dfc-94e8-9b4a6468cdcf",
+    "statement": "Mulher de 24 anos, nuligesta, procura atendimento na clínica da família queixando-se de corrimento vaginal abundante, amarelado, bolhoso, com odor desagradável, associado a prurido vulvar e dispareunia. Ao exame especular, observa-se colo hiperemiado com aspecto em “morango”. Foi realizada coleta de secreção vaginal para análise a fresco em soro fisiológico.\nAssinale o achado laboratorial compatível com o diagnóstico mais provável desse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de células epiteliais recobertas por bacilos Gram variáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hifas e brotamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estruturas celulares móveis flageladas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Lactobacilos predominantes, bacilos Gram positivos longos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ausência de leucócitos e microbiota vaginal escassa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico Clínico: O quadro clínico apresentado pela paciente é típico de Tricomoníase, uma infecção sexualmente transmissível causada pelo protozoário Trichomonas vaginalis. Os sinais clínicos clássicos descritos são o corrimento amarelado e bolhoso, o odor desagradável e a colpite macular, também conhecida como colo em morango ou em framboesa, que ocorre devido a micro-hemorragias na mucosa cervical.\n\nAnalise das alternativas:\n\nAlternativa a) Incorreta. Esta alternativa descreve as clue cells (células-alvo ou células em alvo), que são células epiteliais com bordos imprecisos devido à presença de bactérias aderidas. Este é o achado laboratorial patognomônico da Vaginose Bacteriana, e não da Tricomoníase.\n\nAlternativa b) Incorreta. Hifas, pseudo-hifas e brotamentos (leveduras) são achados microscópicos encontrados na Candidíase Vaginal. O corrimento da candidíase é geralmente branco, grumoso (aspecto de queijo cottage) e não apresenta o aspecto bolhoso ou o sinal do colo em morango.\n\nAlternativa c) Correta. O agente etiológico da Tricomoníase é o Trichomonas vaginalis, um protozoário unicelular flagelado. Na análise a fresco de secreção vaginal com soro fisiológico, o diagnóstico é confirmado pela visualização direta do parasita, que se apresenta como uma estrutura celular móvel, piriforme (em formato de pera) e com flagelos ativos.\n\nAlternativa d) Incorreta. A presença predominante de lactobacilos e bacilos Gram-positivos longos (bacilos de Döderlein) indica uma microbiota vaginal normal e equilibrada. Na Tricomoníase, o pH vaginal eleva-se (geralmente acima de 4,5), favorecendo o crescimento do patógeno e reduzindo a população de lactobacilos.\n\nAlternativa e) Incorreta. A Tricomoníase é uma vaginite infecciosa que gera uma resposta inflamatória intensa. Por esse motivo, o exame microscópico da secreção costuma revelar um número elevado de leucócitos. A ausência de leucócitos seria esperada na Vaginose Bacteriana, que é uma alteração da flora sem caráter inflamatório sistêmico na mucosa.\n\nGabarito: Alternativa C.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  },
+  {
+    "id": "AJUDA_7562c442-5f3b-423c-8cfa-6921ca478660",
+    "originalId": "7562c442-5f3b-423c-8cfa-6921ca478660",
+    "statement": "A Síndrome dos Ovários Policísticos (SOP), possui dentre suas principais manifestações clínicas: irregularidades menstruais, esterilidade, hirsutismo, obesidade, acantose nigricans e policistose ovariana, associadas a modificações anatomopatológicas das gônadas. A respeito dessa patologia, avalie as afirmações a seguir:\nI. Com referência à fisiopatologia, assinalam-se: anovulação crônica, hiperandrogenismo, hiperprolactinemia e hiperinsulinemia.\nII. O infantilismo sexual, embora raro, também pode estar presente.\nIII. O citrato de clomifeno, agente antiestrogênico, está indicado no tratamento da SOP, em mulheres com desejo reprodutivo.\nIV. Os sinais e sintomas clínicos surgem, principalmente, na fase puberal. Sendo a amenorreia primária o principal sintoma clínico.\n\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmações estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Explicação da Questão: Síndrome dos Ovários Policísticos (SOP)\n\nAnálise das Afirmações:\n\nAfirmação I: Correta. A fisiopatologia da SOP é multifatorial e envolve um ciclo vicioso de desequilíbrios hormonais. A anovulação crônica é a base da irregularidade menstrual. O hiperandrogenismo (excesso de hormônios masculinos) causa sintomas como hirsutismo e acne. A hiperinsulinemia, decorrente da resistência insulínica (frequente em pacientes obesas e não obesas), estimula as células da teca nos ovários a produzirem mais androgênios e reduz a produção hepática de SHBG (globulina transportadora de hormônios sexuais), aumentando a fração livre desses hormônios. Embora a hiperprolactinemia seja um critério de exclusão para o diagnóstico definitivo de SOP, níveis levemente elevados de prolactina podem ser encontrados em cerca de 10 a 30% das pacientes com a síndrome, sendo aceita nesta proposição como parte dos achados associados.\n\nAfirmação II: Incorreta. O infantilismo sexual caracteriza-se pela ausência ou desenvolvimento incompleto dos caracteres sexuais secundários, geralmente associado ao hipogonadismo (falta de estímulo hormonal). Na SOP, ocorre o oposto: há uma exposição hormonal, especialmente androgênica, que leva ao desenvolvimento de caracteres sexuais, embora de forma desequilibrada (hirsutismo, por exemplo).\n\nAfirmação III: Incorreta (para fins deste gabarito). Embora o citrato de clomifeno seja amplamente utilizado na prática clínica para indução da ovulação em mulheres com SOP que desejam engravidar, a questão o exclui da alternativa correta. Isso ocorre geralmente por um rigor técnico de nomenclatura: o clomifeno é classificado como um Modulador Seletivo do Receptor de Estrogênio (SERM) e não puramente como um \"agente antiestrogênico\". Além disso, em provas que focam na fisiopatologia e nos sinais clínicos, a terapêutica pode ser considerada fora do contexto principal da questão ou secundária à mudança de estilo de vida (perda de peso), que é o tratamento de primeira linha.\n\nAfirmação IV: Incorreta. Os sinais e sintomas realmente costumam surgir na fase puberal, logo após a menarca. No entanto, o erro da afirmação está em dizer que a amenorreia primária (quando a mulher nunca menstruou) é o principal sintoma. Na SOP, o padrão clássico é a amenorreia secundária (a mulher para de menstruar após já ter tido ciclos anteriores) ou, mais comumente, a oligomenorreia (ciclos infrequentes e irregulares).\n\nConclusão:\nApenas a afirmação I descreve corretamente aspectos fisiopatológicos associados à síndrome conforme o entendimento da banca examinadora.\n\nGabarito: Alternativa (c).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:52.329Z"
+  }
+]

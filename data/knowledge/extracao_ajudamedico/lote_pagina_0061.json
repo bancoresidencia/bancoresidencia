@@ -1,0 +1,483 @@
+[
+  {
+    "id": "AJUDA_0fbe8a32-7b42-4eb1-ba49-3d3253b2ea13",
+    "originalId": "0fbe8a32-7b42-4eb1-ba49-3d3253b2ea13",
+    "statement": "Mãe de lactente de 3 meses (em aleitamento materno exclusivo) consultou por acreditar que está com pouco leite. Informou sentir as mamas menos cheias em razão de o filho querer mamar com mais frequência. A criança encontrava-se em bom estado geral, com peso adequado, embora o ganho ponderal tenha desacelerado no último mês, causando um leve desvio para baixo na curva de peso para a idade. Qual a orientação inicial mais adequada para a situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar apenas observação clínica com retorno ambulatorial agendado em 15 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adotar medidas não farmacológicas para aumentar a produção do leite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Adotar medidas não farmacológicas para aumentar a produção do leite e associar a prescrição de um galactogogo por 1 semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar suplementação com fórmula infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO:\nEstamos diante de uma queixa extremamente comum na prática pediátrica: a percepção materna de insuficiência de leite (hipogalactia), que frequentemente ocorre por volta dos 3 meses de vida do lactente. Nesse período, dois fenômenos fisiológicos convergem. Primeiro, a lactação deixa de ser puramente hormonal e passa a ser controlada principalmente pela demanda (mecanismo autócrino), o que faz com que as mamas não fiquem tão ingurgitadas ou \"cheias\" entre as mamadas, dando a falsa impressão de que o leite secou. Segundo, o bebê passa por um dos \"picos de crescimento\", aumentando a frequência das mamadas para estimular a produção láctea de acordo com suas novas necessidades. A desaceleração leve no peso pode ser reflexo de uma técnica que precisa de ajuste ou apenas uma flutuação da curva que requer atenção, mas não intervenção medicamentosa ou alimentar imediata.\n\nALTERNATIVA A - INCORRETA: A conduta de apenas observar e agendar retorno é insuficiente e perigosa. Se a mãe já está insegura e o ganho de peso desacelerou, a falta de orientação técnica pode levar à introdução precoce de outros alimentos ou fórmulas por conta própria, resultando no desmame. O médico deve intervir com educação em saúde e manejo da amamentação imediatamente.\n\nALTERNATIVA B - CORRETA: Esta é a conduta inicial de escolha. As medidas não farmacológicas envolvem: explicar à mãe a fisiologia da mama aos 3 meses (que mamas menos tensas são normais), reforçar a livre demanda (aumentar a frequência das mamadas para estimular a produção), revisar a técnica de pega e posicionamento, garantir que o bebê esvazie a primeira mama antes de oferecer a segunda (para receber o leite posterior, rico em gordura e calorias) e incentivar o repouso e a hidratação materna. Essas ações costumam ser suficientes para reverter a desaceleração do peso e tranquilizar a família.\n\nALTERNATIVA C - INCORRETA: Galactogogos (como domperidona ou metoclopramida) são medicações com efeitos colaterais e devem ser reservados apenas para casos específicos em que o manejo clínico adequado falhou em aumentar a produção láctea. Não há indicação de usá-los como primeira linha de tratamento sem antes esgotar as orientações de manejo de amamentação, especialmente quando não há uma patologia materna ou do lactente identificada.\n\nALTERNATIVA D - INCORRETA: A introdução de fórmula infantil neste cenário é um erro clássico que precipita o desmame precoce. Ao receber a fórmula, o lactente suga menos o peito, o que reduz o estímulo sensorial no mamilo e, consequentemente, diminui a produção de prolactina e ocitocina pela mãe, criando um ciclo vicioso de hipogalactia real. A suplementação só é indicada após a falha comprovada das medidas de suporte à amamentação e persistência de déficit ponderal significativo.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  },
+  {
+    "id": "AJUDA_0fc7f732-d3a2-4b8d-a9ba-ebe675fb1aa4",
+    "originalId": "0fc7f732-d3a2-4b8d-a9ba-ebe675fb1aa4",
+    "statement": "Paciente masculino, de 38 anos, com asma desde a infância, consultou por piora dos sintomas nos últimos meses, com eliminação de escarro espesso com tampões mucosos. À avaliação complementar, foram constatados piora do distúrbio ventilatório obstrutivo, IgE de 1.200 UI/ml e eosinófilos no sangue periférico de 900/mm3. Tomografia computadorizada de tórax evidenciou algumas bronquiectasias centrais com impactações mucoides e opacidades em dedo de luva. Qual a mais provável complicação clínica nessa situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonia eosinofílica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Micobacteriose não tuberculosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bronquiectasias por discinesia ciliar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aspergilose broncopulmonar alérgica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um paciente com asma de longa data que apresenta uma piora clínica recente, caracterizada pela eliminação de tampões mucosos (escarro espesso). Os achados laboratoriais mostram elevação significativa de IgE total (1.200 UI/ml) e eosinofilia periférica (900/mm3). O achado radiológico na tomografia é patognomônico: bronquiectasias centrais com impactação mucoide, resultando no sinal do \"dedo de luva\" (opacidades tubulares que se ramificam a partir do hilo). Esse conjunto de critérios - asma, IgE elevada, eosinofilia e bronquiectasias centrais - define o diagnóstico de Aspergilose Broncopulmonar Alérgica (ABPA).\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA Aspergilose Broncopulmonar Alérgica (ABPA) é uma reação de hipersensibilidade complexa (tipos I, III e IV) ao fungo Aspergillus fumigatus que coloniza a árvore brônquica de pacientes com asma ou fibrose cística. Os critérios diagnósticos principais estão todos presentes na questão: \n1. História de asma.\n2. IgE total elevada (geralmente acima de 1.000 UI/ml).\n3. Eosinofilia periférica.\n4. Bronquiectasias centrais (diferente das bronquiectasias comuns que costumam ser periféricas).\n5. Impactação mucoide, que na imagem gera o sinal do \"dedo de luva\" (representando os brônquios dilatados e preenchidos por muco espesso).\n\nANÁLISE DAS ALTERNATIVAS INCORRETAS\n\na) Pneumonia eosinofílica: Embora apresente eosinofilia no sangue e no escarro, a pneumonia eosinofílica costuma cursar com infiltrados pulmonares periféricos e migratórios (conhecidos como o \"negativo fotográfico do edema pulmonar\"). Não é caracterizada por bronquiectasias centrais ou eliminação de tampões mucosos tão marcantes quanto na ABPA.\n\nb) Micobacteriose não tuberculosa: As micobacterioses (como pelo complexo Mycobacterium avium) podem causar bronquiectasias e nódulos (padrão de árvore em brotamento), mas geralmente ocorrem em pacientes com doença pulmonar prévia ou imunossupressão. Não explicariam o aumento acentuado de IgE e a eosinofilia sistêmica ligada à asma.\n\nc) Bronquiectasias por discinesia ciliar: Esta é uma doença congênita que cursa com infecções de repetição desde a infância, sinusite crônica e, às vezes, situs inversus (Síndrome de Kartagener). As bronquiectasias costumam ser basais e difusas, e o quadro não apresenta a elevação de IgE e eosinófilos característica de um processo alérgico fúngico.\n\nASSOCIAÇÃO COM A IMAGEM E TERMOS RADIOLÓGICOS\n\nO termo \"dedo de luva\" citado na questão refere-se à imagem radiológica de brônquios dilatados preenchidos por muco denso. Na tomografia, essas opacidades tubulares ou em forma de \"Y\" ou \"V\" são muito sugestivas de ABPA quando localizadas nas regiões centrais e superiores dos pulmões em um paciente asmático.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Asma",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  },
+  {
+    "id": "AJUDA_0fcc2cd9-23d4-4dee-8772-b58c8d761eb7",
+    "originalId": "0fcc2cd9-23d4-4dee-8772-b58c8d761eb7",
+    "statement": "Escolar de 8 anos, sem marca de BCG é admitido na emergência com estado geral ruim e queixas de dor de cabeça, febre e vômitos iniciados há 12 horas. Esquema vacinal do PNI atualizado. Após ser examinado, recebeu o diagnóstico de meningite. \nO Pediatra iniciou medidas de estabilização, corticoide e esquema de antibiótico com vancomicina e ceftriaxone e solicitou coleta de LCR, o qual evidenciou:\n\n• Aspecto turvo\n• 1.200 células/mm3 (80% de polimorfonucleares)\n• Glicorraquia de 28 mg/dL\n• Proteinorraquia de 150 mg/dL\n• Bacterioscopia: diplococos Gram positivo.\n\nApós receber os dados do LCR, a conduta mais adequada, de acordo com as mais recentes orientações da SBP, é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "manter o esquema já iniciado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "suspender a vancomicina e manter apenas o ceftriaxone.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "suspender o ceftriaxone e manter apenas a vancomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "modificar esquema para penicilina cristalina em dose alta (400.000 UI/kg/dia), associada à gentamicina (5 mg/kg/dia).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "suspender vancomicina, manter ceftriaxone e associar esquema para tuberculose enquanto aguarda resultado da cultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente é um escolar de 8 anos com quadro clínico clássico de meningite bacteriana aguda (febre, cefaleia, vômitos e estado geral comprometido com evolução rápida de 12 horas). O exame do líquido cefalorraquidiano (LCR) confirma a etiologia bacteriana através da pleocitose neutrofílica (1.200 células com 80% de polimorfonucleares), hipoglicorraquia (28 mg/dL) e hiperproteinorraquia (150 mg/dL).\n\nO ponto crucial da questão está na bacterioscopia (Gram), que revelou diplococos Gram-positivos. Na pediatria, esse achado é patognomônico do Streptococcus pneumoniae (pneumococo), que é um dos principais agentes de meningite nessa faixa etária.\n\nCOMENTÁRIO DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: De acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP) e protocolos internacionais, o tratamento empírico inicial para meningite pneumocócica deve incluir a associação de uma cefalosporina de 3ª geração (como a ceftriaxona) com a vancomicina. Essa conduta justifica-se pelo aumento global e nacional da prevalência de cepas de pneumococo com sensibilidade reduzida à penicilina e, em alguns casos, também às cefalosporinas. A manutenção do esquema inicial (iniciado na emergência) é necessária até que o resultado da cultura e do antibiograma (Teste de Sensibilidade aos Antimicrobianos) defina o perfil de resistência da bactéria isolada.\n\nAlternativa (b) INCORRETA: Suspender a vancomicina precocemente, apenas com o resultado do Gram, é arriscado. Se o pneumococo em questão apresentar resistência intermediária ou alta às cefalosporinas, a monoterapia com ceftriaxona pode resultar em falha terapêutica. A vancomicina é mantida justamente para garantir a cobertura contra cepas resistentes até que o antibiograma prove o contrário.\n\nAlternativa (c) INCORRETA: A vancomicina sozinha não é o tratamento padrão-ouro para meningite, pois sua penetração no sistema nervoso central é variável e depende da inflamação meníngea. A ceftriaxona possui excelente penetração e é a base do tratamento, devendo ser mantida em associação com a vancomicina no contexto de suspeita de pneumococo.\n\nAlternativa (d) INCORRETA: A penicilina cristalina só deve ser utilizada se o teste de sensibilidade mostrar que o pneumococo é sensível a ela. Além disso, os aminoglicosídeos (como a gentamicina) possuem baixíssima penetração na barreira hematoencefálica, não sendo indicados para o tratamento de meningites nesta faixa etária.\n\nAlternativa (e) INCORRETA: Embora a ausência de cicatriz de BCG seja um dado que levante o alerta para tuberculose, o quadro é agudo (12 horas de evolução) e o LCR é típico de infecção bacteriana piogênica (predomínio de neutrófilos e presença de diplococos Gram-positivos). A meningite tuberculosa costuma ter evolução subaguda/crônica, com LCR de predomínio linfomonocitário e ausência de bactérias no Gram comum. Portanto, não há indicação de iniciar esquema para tuberculose neste momento.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Emergências Pediátricas",
+      "Meningites",
+      "Antibióticos"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  },
+  {
+    "id": "AJUDA_0fcc80fa-0711-4588-8cd1-32116daeb63c",
+    "originalId": "0fcc80fa-0711-4588-8cd1-32116daeb63c",
+    "statement": "No manejo do trabalho de parto prematuro, a associação nifedipina e sulfato de magnésio está",
+    "options": [
+      {
+        "id": "A",
+        "text": "indicada, porque essas drogas potencializam a ação uma da outra na inibição do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicada, porque a nifedipina inibe o trabalho de parto, e o sulfato de magnésio confere neuroproteção ao feto prematuro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "contraindicada, porque a nifedipina potencializa o bloqueio neuromuscular do sulfato de magnésio, aumentando os riscos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "contraindicada, porque a nifedipina diminui o efeito neuroprotetor fetal do sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O manejo do trabalho de parto prematuro exige cautela no uso de múltiplas medicações simultâneas. A questão aborda a interação entre a nifedipina (um bloqueador de canais de cálcio) e o sulfato de magnésio (um mineral com propriedades de antagonismo do cálcio).\n\nAlternativa a) Incorreta. A associação não é indicada. Embora ambos os fármacos possam atuar na musculatura uterina diminuindo as contrações, o risco de efeitos adversos sistêmicos graves supera qualquer benefício teórico de potencialização da tocólise. O foco do tratamento deve ser sempre o equilíbrio entre a eficácia clínica e a segurança materna.\n\nAlternativa b) Incorreta. É verdade que, isoladamente, a nifedipina é um excelente tocolítico e o sulfato de magnésio é o padrão-ouro para neuroproteção fetal em gestações abaixo de 32 semanas. No entanto, o enunciado questiona a segurança da associação entre as duas drogas. Mesmo com indicações clínicas distintas, o risco de interação medicamentosa grave impede que sejam recomendadas de forma conjunta e rotineira.\n\nAlternativa c) Correta. Esta é a justificativa farmacológica clássica cobrada em exames. O sulfato de magnésio atua inibindo a liberação de acetilcolina na placa motora e competindo com o cálcio. A nifedipina, sendo um bloqueador de canais de cálcio, potencializa esse efeito de relaxamento muscular. A associação pode provocar um bloqueio neuromuscular sinérgico e profundo, resultando em riscos críticos para a gestante, como fraqueza muscular severa, hipotensão acentuada e, em casos graves, insuficiência respiratória por paralisia do músculo diafragmático e dos músculos intercostais.\n\nAlternativa d) Incorreta. O impedimento para a associação deve-se exclusivamente ao risco de toxicidade e efeitos colaterais na mãe. Não existem evidências científicas que demonstrem que a nifedipina interfira ou anule o mecanismo pelo qual o magnésio exerce a neuroproteção no sistema nervoso central do feto prematuro.\n\nGabarito: Alternativa (c).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  },
+  {
+    "id": "AJUDA_0fd0ff60-1380-4ec0-ac24-9eb651710eb6",
+    "originalId": "0fd0ff60-1380-4ec0-ac24-9eb651710eb6",
+    "statement": "Mulher, 61 anos de idade, refere aumento progressivo e intenso de pelos pelo corpo, queda de cabelos importante, engrossamento da voz e aumento do clitóris há 6 meses. Qual é a hipótese mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tecoma ovariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tumor da suprarrenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertecose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tumor das células da granulosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente é uma mulher de 61 anos (pós-menopausa) com um quadro de hiperandrogenismo grave e de evolução rápida (6 meses). Os sinais de virilização (clitoromegalia, voz grave e alopecia importante) indicam níveis de testosterona muito elevados, geralmente acima de 200 ng/dL. Em mulheres na pós-menopausa com este quadro, os principais diagnósticos diferenciais são os tumores ovarianos virilizantes, tumores da suprarrenal e a hipertecose ovariana.\n\nAlternativa (a) Incorreta: O tecoma ovariano é um tumor do estroma ovariano que, na grande maioria das vezes, é produtor de estrogênio. Ele costuma se manifestar com sangramento uterino anormal na pós-menopausa devido à hiperplasia endometrial. Embora raramente possa produzir androgênios, não é a causa clássica de virilização intensa.\n\nAlternativa (b) Incorreta: Tumores da glândula suprarrenal (como adenomas ou carcinomas produtores de androgênios) podem causar virilização rápida. No entanto, esses tumores costumam elevar marcadamente o DHEAS (sulfato de deidroepiandrosterona). Na prática de provas de residência, diante de um quadro de virilização em mulher idosa, a hipertecose ovariana é frequentemente apontada como a hipótese principal para o acometimento ovariano funcional grave.\n\nAlternativa (c) Correta: A hipertecose ovariana é uma condição não neoplásica caracterizada pela presença de ninhos de células da teca luteinizadas espalhados pelo estroma ovariano hiperplásico. É mais comum em mulheres após a menopausa. Diferentemente da Síndrome dos Ovários Policísticos (SOP), a hipertecose promove uma produção de testosterona muito mais alta, levando a sinais claros de virilização (clitoromegalia e alteração do timbre da voz), exatamente como descrito no caso. É o diagnóstico funcional que mais mimetiza um tumor de ovário pelo grau de agressividade dos sintomas.\n\nAlternativa (d) Incorreta: O tumor de células da granulosa é o tumor do cordão sexual mais comum, porém ele é tipicamente produtor de estradiol (estrogênico). Ele causa rejuvenescimento da mucosa vaginal e espessamento endometrial, podendo levar ao câncer de endométrio. Não é um tumor associado a quadros de virilização e masculinização.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  },
+  {
+    "id": "AJUDA_0fd75808-f20b-49c9-9f6d-58ffe561791d",
+    "originalId": "0fd75808-f20b-49c9-9f6d-58ffe561791d",
+    "statement": "Leia o texto a seguir.\n\nO Brasil revela um preocupante quadro de trombose, com 165 internações diárias, de acordo com um levantamento realizado pela Sociedade Brasileira de Angiologia e de Cururgia Vascular a partir de dados do Ministério da Saúde. (Disponível em: <https://jornal.usp.br/radio-usp/numeros-de-internacoes-diarias-por-trombose-no-brasil-merecem-atencao-e-acompanhamento-constante/>. Acesso em: 14 out. 2024.)\n\nA etiopatogênese da trombose está relacionada com a",
+    "options": [
+      {
+        "id": "A",
+        "text": "estase sanguínea, que ocorre dentro das grandes artérias e arteríolas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tríade de Virchow, a qual descreve os fatores de formação do trombo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "coagulação do sangue, no interior de arteríolas ou vênulas post-mortem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "formação de placas de ateroma, no caso das tromboses venosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A etiopatogênese da trombose é um tema fundamental na patologia e na clínica médica, sendo classicamente explicada pela Tríade de Virchow. Abaixo, analisamos detalhadamente cada uma das alternativas:\n\nAlternativa A - Incorreta. A estase sanguínea é, de fato, um dos componentes da formação de trombos, porém ela é o principal mecanismo nas tromboses venosas (sistema de baixa pressão). Nas grandes artérias e arteríolas, onde o fluxo é rápido e de alta pressão, o principal fator desencadeante de trombose costuma ser a lesão endotelial ou a turbulência do fluxo, e não a estase.\n\nAlternativa B - Correta. A Tríade de Virchow é o pilar da compreensão da trombose. Ela descreve os três fatores que contribuem para a formação de um trombo: 1) Lesão endotelial (fator mais importante na circulação arterial); 2) Alterações no fluxo sanguíneo (estase ou turbulência); e 3) Hipercoagulabilidade (alterações nos fatores de coagulação ou plaquetas). A presença de qualquer um desses fatores, isoladamente ou em conjunto, predispõe o indivíduo ao evento trombótico.\n\nAlternativa C - Incorreta. A definição de trombose exige que a formação do coágulo ocorra dentro do sistema cardiovascular em um organismo vivo (fenômeno intravital). Fenômenos de coagulação que ocorrem após a morte são denominados coágulos post mortem (ou de cruor), que possuem características morfológicas distintas dos trombos, como a ausência de aderência à parede vascular e a falta das linhas de Zahn.\n\nAlternativa D - Incorreta. As placas de ateroma (aterosclerose) são características das doenças arteriais. A trombose venosa, citada na alternativa, ocorre geralmente devido à estase sanguínea (como em pacientes acamados ou em voos longos) e estados de hipercoagulabilidade, não estando relacionada à formação de placas de gordura (ateromas) nas veias.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  },
+  {
+    "id": "AJUDA_0fdc7853-9d83-403e-b98c-5051aa37b928",
+    "originalId": "0fdc7853-9d83-403e-b98c-5051aa37b928",
+    "statement": "O suporte nutricional é essencial para pacientes cirúrgicos graves por",
+    "options": [
+      {
+        "id": "A",
+        "text": "reduzir a necessidade de intervenções operatórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "prevenir infecções intraoperatórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aumentar a probabilidade de desfechos clínicos positivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "reduzir a produção de hormônios do estresse.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. O suporte nutricional não tem o poder de anular a indicação de um procedimento cirúrgico. Se um paciente apresenta uma condição que exige intervenção operatória (como uma obstrução mecânica ou uma hemorragia ativa), a nutrição servirá como suporte para que o paciente tolere melhor o estresse do procedimento e se recupere mais rapidamente, mas não substitui o ato cirúrgico em si.\n\nAlternativa b: Incorreta. A prevenção de infecções que ocorrem durante o ato operatório está diretamente ligada à técnica cirúrgica, à antissepsia, à assepsia e à antibioticoprofilaxia adequada. O suporte nutricional é fundamental para prevenir infecções no período pós-operatório (como infecções de sítio cirúrgico, pneumonias e sepse), pois melhora a resposta imunológica e a integridade das barreiras epiteliais, mas não atua especificamente no momento intraoperatório.\n\nAlternativa c: Correta. Esta é a resposta mais abrangente e precisa. Pacientes cirúrgicos graves entram em um estado de hipermetabolismo e catabolismo intensos. O suporte nutricional adequado (seja por via enteral ou parenteral) visa atenuar a perda de massa magra, fornecer substrato para a cicatrização de tecidos, modular a resposta inflamatória e manter a funcionalidade do sistema imune. O conjunto desses fatores resulta na melhora dos desfechos clínicos, o que inclui a redução da morbimortalidade e do tempo de internação hospitalar.\n\nAlternativa d: Incorreta. A produção de hormônios do estresse, como o cortisol e as catecolaminas, faz parte da Resposta Metabólica ao Trauma (REMET), que é uma reação fisiológica desencadeada pela lesão tecidual e pelo estado crítico. O suporte nutricional não interrompe a produção desses hormônios; seu papel é fornecer a energia e os nutrientes necessários para que o corpo consiga enfrentar o estado metabólico alterado por esses hormônios, evitando que o organismo consuma excessivamente suas próprias reservas proteicas e energéticas.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  },
+  {
+    "id": "AJUDA_0fe0c4a5-1564-44f1-ad7d-71668208d0a0",
+    "originalId": "0fe0c4a5-1564-44f1-ad7d-71668208d0a0",
+    "statement": "Homem de 23 anos, previamente hígido, procura atendimento na Unidade Básica de Saúde (UBS) relatando que há cerca de 2 horas foi mordido por um gato de rua ao tentar retirá-lo de cima de uma árvore. A mordida resultou em feridas cortocontusas nos dedos da mão esquerda. Paciente nega episódios anteriores de agressões desse tipo. O animal, que não pertence a ninguém da vizinhança, fugiu após ser resgatado. Na cidade, no ano anterior, houve a confirmação de raiva em felinos.\nA conduta adequada no atendimento imediato ao paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "higienizar adequadamente e suturar as lacerações; aplicar o soro antirrábico; prescrever 1 dose de penicilina benzatina 1,2 milhão de unidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "lavar os ferimentos com antissépticos; aguardar a busca ativa do animal pela zoonose para início da profilaxia; aplicar reforço da vacina dT (difteria e tétano).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "lavar os ferimentos com água corrente abundante e sabão; administrar a vacina antirrábica em 4 doses, nos dias 0, 3, 7 e 14; aplicar imunoglobulina humana antirrábica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Higienizar com solução antisséptica; administrar a primeira dose da vacina antirrábica; na presença de qualquer reação adversa, contraindicar as doses subsequentes; aplicar o soro antirrábico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente sofreu uma mordedura de gato em uma extremidade (dedos da mão esquerda). De acordo com as normas do Ministério da Saúde do Brasil, acidentes com cães e gatos são classificados como graves quando envolvem ferimentos na cabeça, face, pescoço, mãos, polpas digitais ou plantas dos pés, ou ainda em ferimentos profundos, múltiplos ou extensos. Como o animal fugiu e não pode ser observado, e a região tem confirmação de circulação do vírus da raiva em felinos, o protocolo exige profilaxia completa com vacina e soro (ou imunoglobulina).\n\nPor que a alternativa (c) é a correta:\nA primeira medida em qualquer acidente por mordedura é a limpeza local com água corrente e sabão, pois isso reduz a carga viral e o risco de infecções secundárias. Pela classificação de acidente grave com animal não passível de observação, a conduta indicada é o esquema de 4 doses de vacina antirrábica (administradas nos dias 0, 3, 7 e 14) associado obrigatoriamente à aplicação de Imunoglobulina Humana Antirrábica (IGHAR) ou soro antirrábico.\n\nPor que as outras alternativas estão incorretas:\n\na) Incorreta. A sutura de feridas por mordedura de animais deve ser evitada. Se for estritamente necessária por razões estéticas ou funcionais, deve ser feita de forma frouxa e somente após a infiltração do soro/imunoglobulina. Quanto à antibioticoterapia, a penicilina benzatina não é a primeira escolha para mordeduras de gatos; o esquema preferencial é a amoxicilina com clavulanato para cobertura de Pasteurella multocida e outros germes da cavidade oral do animal.\n\nb) Incorreta. Diante de um animal que fugiu (desaparecido) em uma área com circulação viral confirmada, a profilaxia deve ser iniciada imediatamente. Não se deve aguardar a busca ativa ou captura do animal, pois o vírus da raiva tem alta letalidade e o tratamento precoce é fundamental. Além disso, o reforço da vacina dT é importante, mas a prioridade imediata aqui descrita é a profilaxia antirrábica.\n\nd) Incorreta. Reações adversas comuns e leves à vacina antirrábica não contraindicam as doses subsequentes. Apenas reações graves e comprovadamente associadas à vacina exigem avaliação para troca de fabricante ou esquema, mas nunca a interrupção da profilaxia em um caso de exposição real, dado o risco de morte. A higienização apenas com antisséptico é insuficiente comparada à lavagem mecânica com água e sabão.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": 35.75630827212737,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  },
+  {
+    "id": "AJUDA_0ff2781e-c054-4187-b625-5c910af2a38b",
+    "originalId": "0ff2781e-c054-4187-b625-5c910af2a38b",
+    "statement": "Qual dos rastreamentos abaixo é recomendado pelo Ministério da Saúde em pessoas com risco habitual?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Câncer de mama com mamografia a cada 2 anos entre 50 e 74 anos;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Câncer de mama com mamografia anualmente entre 40 e 74 anos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Câncer de próstata com PSA anual a partir de 45 anos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Câncer de colo de útero com exame de Papanicolau anual a partir do início da vida sexual até os 59 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, é necessário conhecer as diretrizes de rastreamento do Ministério da Saúde (MS) e do INCA, que diferem das recomendações de algumas sociedades de especialidade.\n\nAlternativa A (Correta): O Ministério da Saúde recomenda a mamografia como método de rastreamento para mulheres de risco habitual. A periodicidade deve ser bienal (a cada 2 anos). A faixa etária alvo oficial descrita nos manuais do MS é de 50 a 69 anos; porém, muitas bancas de concurso utilizam o limite de 74 anos, baseando-se em diretrizes internacionais de força de evidência semelhante (como a USPSTF) ou em atualizações de discussões de saúde pública. O que define a alternativa como correta e característica do MS é, principalmente, o início aos 50 anos e o intervalo de 2 anos.\n\nAlternativa B (Incorreta): O rastreamento anual iniciado aos 40 anos é a recomendação da Sociedade Brasileira de Mastologia (SBM) e da Federação Brasileira das Associações de Ginecologia e Obstetrícia (Febrasgo). O Ministério da Saúde não recomenda o rastreio sistemático antes dos 50 anos para mulheres de risco habitual, por considerar que os riscos (como resultados falso-positivos e biópsias desnecessárias) superam os benefícios nessa faixa etária.\n\nAlternativa C (Incorreta): O Ministério da Saúde não recomenda o rastreamento populacional organizado para o câncer de próstata. A orientação oficial é que o rastreio não seja feito de forma rotineira. Em vez disso, recomenda-se a estratégia de diagnóstico precoce para homens com sinais e sintomas ou a decisão compartilhada, na qual o médico explica os riscos e possíveis benefícios do PSA para o paciente que solicita o exame espontaneamente.\n\nAlternativa D (Incorreta): Segundo as diretrizes do Ministério da Saúde para o rastreamento do câncer do colo do útero, a faixa etária recomendada é dos 25 aos 64 anos para mulheres que já iniciaram a vida sexual. Além disso, a periodicidade não é anual de forma contínua: o exame deve ser realizado anualmente apenas nos dois primeiros anos; se ambos os resultados forem normais, as próximas coletas devem ser feitas a cada 3 anos.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Câncer de Mama"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  },
+  {
+    "id": "AJUDA_0ffb1046-1041-4fc3-b6b1-a685bde862ae",
+    "originalId": "0ffb1046-1041-4fc3-b6b1-a685bde862ae",
+    "statement": "Menina de 8 anos de idade apresenta cefaleia, vômitos e queda do estado geral há duas semanas. Exame físico: BEG, vigil, desidratada, marcha atáxica, dismetria e decomposição de movimentos à esquerda. O diagnóstico mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "tumor de fossa posterior.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "meningoencefalite cerebelar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "glioma de tronco encefálico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ataxia espinocerebelar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresenta uma criança de 8 anos com sintomas de hipertensão intracraniana (cefaleia e vômitos) associados a uma síndrome cerebelar focal à esquerda (marcha atáxica, dismetria e decomposição de movimentos). A evolução subaguda de duas semanas reforça a suspeita de um processo expansivo no sistema nervoso central.\n\nAlternativa a: Esta é a alternativa correta. Na pediatria, a maioria dos tumores do sistema nervoso central localiza-se no compartimento infratentorial (fossa posterior). Os tipos mais comuns incluem o meduloblastoma, o astrocitoma pilocítico e o ependimoma. O crescimento da massa na fossa posterior explica tanto os sinais cerebelares ipsilaterais à lesão (neste caso, à esquerda) quanto a hipertensão intracraniana, que ocorre frequentemente pela compressão do quarto ventrículo, gerando hidrocefalia obstrutiva.\n\nAlternativa b: Esta alternativa está incorreta. A cerebelite aguda ou meningoencefalite cerebelar costuma ter um início mais súbito e frequentemente ocorre após uma infecção viral (como varicela). Embora cause ataxia, raramente apresenta sinais de hipertensão intracraniana tão persistentes e localizados quanto os descritos no caso de duas semanas de evolução.\n\nAlternativa c: Esta alternativa está incorreta. Embora o tronco encefálico esteja localizado na fossa posterior, os gliomas dessa região (como o glioma pontino intrínseco difuso) costumam se manifestar com paralisias de múltiplos nervos cranianos e sinais de vias longas (como fraqueza motora e alteração de reflexos), o que não foi relatado no exame físico desta paciente.\n\nAlternativa d: Esta alternativa está incorreta. As ataxias espinocerebelares são doenças neurodegenerativas de caráter crônico, progressivo ao longo de anos e frequentemente de origem genética/hereditária. Elas não se manifestam com um quadro agudo ou subagudo de cefaleia e vômitos.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tumores Intracranianos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:41.759Z"
+  }
+]

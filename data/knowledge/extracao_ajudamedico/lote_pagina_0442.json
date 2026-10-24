@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_7bf3d2eb-2d46-4201-932f-263b190ee16f",
+    "originalId": "7bf3d2eb-2d46-4201-932f-263b190ee16f",
+    "statement": "Em relação ao aneurisma de aorta abdominal, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A indicação cirúrgica ocorre quando o diâmetro atinge 4 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O risco de ruptura é maior em aneurismas saculares que fusiformes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A abordagem endovascular está contraindicada em pacientes com rim único.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A principal complicação precoce da endoprótese é o “endoleak” tipo IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A ultrassonografia é o exame de escolha para planejamento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Comentário sobre a questão de Aneurisma da Aorta Abdominal (AAA):\n\nAlternativa A: INCORRETA. O diâmetro de 4 cm é insuficiente para indicação cirúrgica eletiva na ausência de sintomas ou expansão rápida. Em homens, a indicação geralmente ocorre a partir de 5,5 cm e, em mulheres, a partir de 5,0 cm. Aneurismas de 4 cm devem ser acompanhados periodicamente com exames de imagem.\n\nAlternativa B: CORRETA. Os aneurismas fusiformes (dilatação circunferencial e simétrica) são os mais comuns, porém os aneurismas saculares (dilatação excêntrica em apenas uma parte da parede) possuem maior tensão de parede e instabilidade, conferindo um risco de ruptura proporcionalmente maior, mesmo em diâmetros menores.\n\nAlternativa C: INCORRETA. O fato de o paciente possuir rim único não contraindica a correção endovascular (EVAR). É necessária cautela redobrada com o uso de contraste iodado para evitar nefropatia, podendo-se utilizar protocolos de proteção renal ou contrastes alternativos (como CO2), mas a técnica em si não é proibida.\n\nAlternativa D: INCORRETA. O \"endoleak\" tipo IV decorre da porosidade da prótese e costuma se resolver espontaneamente em poucos dias após o procedimento, sendo cada vez mais raro com as próteses modernas. O tipo mais comum de endoleak é o tipo II (fluxo retrógrado por artérias colaterais, como lombares ou mesentérica inferior).\n\nAlternativa E: INCORRETA. A ultrassonografia é o exame de escolha para o rastreio (screening) e para o acompanhamento do diâmetro em aneurismas pequenos. No entanto, para o planejamento cirúrgico (seja aberto ou endovascular), o exame padrão-ouro é a angiotomografia (angio-TC), pois permite avaliar com precisão a anatomia do colo proximal, o envolvimento de ramos viscerais e o estado das artérias ilíacas.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  },
+  {
+    "id": "AJUDA_7bf9d037-e6af-403e-81c0-1996190df1d9",
+    "originalId": "7bf9d037-e6af-403e-81c0-1996190df1d9",
+    "statement": "Mãe comparece à consulta de pronto atendimento com criança de 3 anos de idade, com queixa de febre e dor de garganta. Refere que a cada 4 semanas, a criança apresenta quadro semelhante, com lesões aftosas em cavidade oral, tendo feito uso de antibiótico para faringoamigdalite quase que mensalmente no último ano. Relata também que a febre normalmente é alta mas não dura mais do que 3 dias. Nega sudorese, perda de peso ou adinamia. Ao exame, foram notados linfonodos móveis, fibroelásticos, pequenos, sem sinais flogísticos em cadeias cervicais bilateralmente, além de enantema e lesões aftosas em orofaringe, sem demais alterações.\nSobre o quadro descrito, assinale a conduta MAIS assertiva em relação à principal hipótese diagnóstica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "deve-se realizar ultrassonografia de partes moles em região cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "deve-se realizar reação de cadeia de polimerase para Epstein Barr Virus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "deve-se realizar cultura e teste rápido para estreptococo beta hemolítico do grupo A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deve-se orientar a mãe sobre a benignidade do quadro e considerar uso de corticoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — febre recorrente com periodicidade regular (a cada 4 semanas), estomatite aftosa, faringite e adenite cervical — é clássico da Síndrome de PFAPA (Periodic Fever, Aphthous Stomatitis, Pharyngitis, and Adenitis), também conhecida como Síndrome de Marshall. Esta é a síndrome de febre periódica mais comum na infância, iniciando-se geralmente antes dos 5 anos de idade.\n\nAlternativa a: Incorreta. A ultrassonografia de partes moles não é indicada neste caso. O exame físico descreve linfonodos pequenos, móveis, fibroelásticos e sem sinais flogísticos, que são características de linfonodos reacionais. Não há suspeita de abscesso cervical ou neoplasia que justifique exames de imagem no momento.\n\nAlternativa b: Incorreta. A infecção pelo vírus Epstein-Barr (mononucleose infecciosa) costuma cursar com febre mais prolongada, linfadenopatia generalizada, faringite exsudativa e, frequentemente, hepatosplenomegalia. O quadro da mononucleose não apresenta o padrão de recorrência cíclica e previsível a cada 4 semanas observado nesta criança.\n\nAlternativa c: Incorreta. Embora a criança apresente faringite, a presença de aftas orais e a regularidade matemática das crises sugerem fortemente PFAPA. O fato de a criança ter usado antibióticos mensalmente sem que isso impedisse novos episódios reforça que a etiologia não é bacteriana. Realizar testes para estreptococos em todas as crises levaria a tratamentos desnecessários em um paciente que provavelmente é apenas um portador crônico ou que tem uma doença inflamatória.\n\nAlternativa d: Correta. O diagnóstico de PFAPA é essencialmente clínico. Uma vez estabelecida a hipótese, a conduta mais assertiva é orientar os pais sobre a benignidade da doença, que é autolimitada e não interfere no crescimento da criança. O tratamento padrão para interromper a crise de febre é a administração de corticosteroide (geralmente prednisona ou prednisolona) em dose única no início dos sintomas. A resposta ao corticoide é dramática, com a febre desaparecendo em poucas horas, o que ajuda a confirmar o diagnóstico.\n\nAssociação com a questão: O caso clínico fornece os critérios de Marshall para PFAPA: febre recorrente iniciada em idade precoce (3 anos), ausência de infecção de vias aéreas superiores ou outras causas cíclicas, e presença de pelo menos um dos sintomas (aftas, adenite cervical ou faringite), com crescimento e desenvolvimento normais entre os episódios. O tratamento com corticoide é a intervenção mais eficaz para o controle dos episódios agudos.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Febre na Pediatria",
+      "Reumatologia Pediátrica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  },
+  {
+    "id": "AJUDA_7c015905-006e-4422-828e-8e766d395358",
+    "originalId": "7c015905-006e-4422-828e-8e766d395358",
+    "statement": "Mulher de 20 anos apresenta quadro agudo de febre, tosse com secreção purulenta e dor tipo pleurítica, compatível com pneumonia. O Gram do escarro mostra diplococos Gram-positivos e numerosos polimorfonucleares. Um fator de risco relacionado a essa bactéria e o antibiótico de primeira linha que dever ser escolhido para o tratamento desse caso, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "síndrome nefrótica / amoxicilina-clavulanato",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "enfisema pulmonar / sulfa x trimetropim",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "anemia falciforme / ciprofloxacino",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "alcoolismo / clindamicina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Identificação do agente:\nO quadro clínico de pneumonia típica (febre, tosse produtiva e dor pleurítica) associado ao achado de diplococos Gram-positivos e numerosos polimorfonucleares no escarro é patognomônico do Streptococcus pneumoniae (pneumococo). Ele é o principal agente causador de pneumonia adquirida na comunidade em todas as faixas etárias adultas.\n\nAnálise das alternativas:\n\nAlternativa a: Está correta. A síndrome nefrótica é um fator de risco clássico para infecções por germes encapsulados, como o S. pneumoniae. Isso ocorre devido à perda urinária de proteínas essenciais para a opsonização e fagocitose, como as imunoglobulinas (IgG) e fatores do sistema complemento. Quanto ao tratamento, os betalactâmicos (como a amoxicilina isolada ou associada ao clavulanato) são as drogas de primeira escolha para cobrir o pneumococo.\n\nAlternativa b: Está incorreta. Embora o enfisema (DPOC) seja um fator de risco para pneumonia, a sulfametoxazol-trimetoprima (sulfa) não é indicada como tratamento de primeira linha devido aos elevados índices de resistência do pneumococo a este medicamento.\n\nAlternativa c: Está incorreta. A anemia falciforme é, de fato, um fator de risco importante devido à asplenia funcional (o baço não filtra adequadamente as bactérias encapsuladas). No entanto, o ciprofloxacino é uma quinolona de espectro urinário e apresenta atividade insuficiente contra o Streptococcus pneumoniae. Para o tratamento de pneumonia, seriam necessárias quinolonas respiratórias, como o levofloxacino ou moxifloxacino.\n\nAlternativa d: Está incorreta. O alcoolismo é um fator de risco para pneumonia e para o germe em questão, mas a clindamicina não é o tratamento de primeira linha para a pneumonia pneumocócica comum. Ela é geralmente reservada para casos de pneumonia aspirativa (para cobertura de anaeróbios) ou como alternativa em pacientes com alergia grave à penicilina.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Pneumonias Bacterianas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  },
+  {
+    "id": "AJUDA_7c045b89-c7cc-45b2-8a95-90ecdadc51a9",
+    "originalId": "7c045b89-c7cc-45b2-8a95-90ecdadc51a9",
+    "statement": "São atribuições e boas práticas coerentes com a Vigilância Sanitária de medicamentos, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Notificação de eventos adversos e queixas técnicas ao VigiMed, com análise de causalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inspeção de Boas Práticas de Fabricação e controle pós-mercado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dispensação de antibióticos, sem retenção de receita, para agilizar acesso em zonas rurais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Adoção de alertas de segurança e recolhimentos, quando evidências indicam risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as competências e normas da Vigilância Sanitária (VISA), especificamente no campo da farmacovigilância e regulação de medicamentos. O objetivo é identificar a conduta que fere as normas sanitárias vigentes.\n\nAlternativa A: Está correta quanto às atribuições da VISA. A farmacovigilância envolve o monitoramento de eventos adversos e queixas técnicas. O sistema VigiMed é a ferramenta oficial adotada pela ANVISA para receber essas notificações. A análise de causalidade é o processo técnico que busca estabelecer a relação entre o uso do medicamento e o evento relatado, sendo fundamental para a segurança do paciente.\n\nAlternativa B: Está correta. A inspeção de Boas Práticas de Fabricação (BPF) garante que o medicamento foi produzido sob rigorosos padrões de qualidade. O controle pós-mercado é a continuidade dessa vigilância, monitorando o produto durante todo o seu ciclo de vida comercial para identificar desvios de qualidade ou riscos imprevistos.\n\nAlternativa C: Esta é a alternativa incorreta e, portanto, o gabarito da questão. A dispensação de antibióticos no Brasil é estritamente regulamentada, notadamente pela RDC 20/2011. É obrigatória a apresentação da receita em duas vias, com a retenção da segunda via pela farmácia ou unidade de saúde. Essa medida visa ao controle do uso de antimicrobianos para prevenir a resistência bacteriana, um grave problema de saúde pública. Não há exceção legal para zonas rurais que permita a não retenção da receita; a facilitação do acesso deve ocorrer por meio de políticas de assistência farmacêutica, mas nunca descumprindo as normas de segurança sanitária.\n\nAlternativa D: Está correta. A emissão de alertas de segurança para profissionais de saúde e para a população, bem como a determinação de recolhimento de lotes (recall), são medidas administrativas e de proteção à saúde aplicadas sempre que evidências técnicas apontam riscos que superam os benefícios do produto ou quando há falhas graves de qualidade.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  },
+  {
+    "id": "AJUDA_7c106087-7ae4-464d-98ac-d6b666fc024d",
+    "originalId": "7c106087-7ae4-464d-98ac-d6b666fc024d",
+    "statement": "Profissional de saúde não vacinado para hepatite B, ao realizar um acesso venoso profundo, sofre acidente com material biológico positivo para infecção por vírus da hepatite B. Pode-se afirmar que, dentre as ações que devem ser realizadas, está a aplicação da imunoglobulina humana anti-hepatite B preferencialmente nas primeiras:",
+    "options": [
+      {
+        "id": "A",
+        "text": "48 horas e, no máximo, até dez dias depois do acidente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "48 horas e, no máximo, até sete dias depois do acidente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "24 horas e, no máximo, até dez dias depois do acidente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "24 horas e, no máximo, até sete dias depois do acidente",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso descreve um acidente biológico de alto risco: profissional de saúde não vacinado exposto a um paciente-fonte sabidamente positivo para o vírus da hepatite B (HBV). Nessas situações, a conduta imediata envolve a profilaxia pós-exposição (PPE), que consiste na aplicação da vacina contra hepatite B e da imunoglobulina humana anti-hepatite B (IGHAHB).\n\nA imunoglobulina fornece imunidade passiva imediata, neutralizando o vírus antes que ele infecte os hepatócitos. Para que essa proteção seja eficaz, o tempo é um fator crítico. De acordo com os protocolos do Ministério da Saúde e as diretrizes internacionais, a imunoglobulina deve ser administrada o mais precocemente possível.\n\nO período ideal para a administração da IGHAHB é nas primeiras 24 horas após a exposição. Embora sua eficácia diminua com o passar do tempo, ela ainda pode ser administrada em um prazo de até 7 dias após o acidente percutâneo. Após esse período de uma semana, não há evidência de benefício clínico na sua aplicação para esse tipo de exposição.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O prazo de preferência é de 24 horas, não 48 horas. Além disso, o limite máximo de 10 dias excede o recomendado pelos protocolos vigentes para acidentes percutâneos (que é de 7 dias).\n\nAlternativa B: Incorreta. Embora o limite máximo de 7 dias esteja correto, a recomendação de preferência é realizar a aplicação nas primeiras 24 horas, e não 48 horas, para garantir a maior taxa de proteção possível.\n\nAlternativa C: Incorreta. A primeira parte da alternativa está correta ao citar as 24 horas, mas o limite máximo de 10 dias é inadequado para acidentes com material biológico, sendo reservado para outros tipos de situações específicas ou erro de protocolo.\n\nAlternativa D: Correta. Esta alternativa reflete exatamente o preconizado pelos protocolos de biossegurança: a aplicação deve ocorrer preferencialmente nas primeiras 24 horas (momento de maior eficácia) e pode ser realizada no máximo até o sétimo dia após o acidente. Vale lembrar que, simultaneamente à imunoglobulina, deve-se iniciar ou completar o esquema vacinal de três doses do profissional.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Hepatites Virais",
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  },
+  {
+    "id": "AJUDA_7c25bb85-c920-462d-babe-f2495abc12c9",
+    "originalId": "7c25bb85-c920-462d-babe-f2495abc12c9",
+    "statement": "O câncer de colo uterino ainda é o câncer ginecológico mais comum nas mulheres brasileiras, a despeito dos avanços da prevenção através das vacinas nas últimas décadas. Continua sendo um desafio para toda sociedade diminuir a incidência desse câncer para alcançar níveis de países desenvolvidos. Sobre o câncer de colo uterino, está CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Histerectomia ampliada é o tratamento padrão para o estádio FIGO IA1 (Federação Internacional de Ginecologia e Obstetrícia), mesmo sem prole constituída, devido ao risco aumentado de acometimento linfonodal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O adenocarcinoma de canal é o tipo mais comum, pela diminuição da incidência do tipo células escamosas pela vacinação contra o HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A disseminação do tumor é por contiguidade, a medida que o tumor invade camadas mais profundas pode penetrar os capilares e sanguineos e os canais linfáticos, sendo chamado de invasão angiolinfática, é um indicador de mau prognóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A doença primária em estádio FIGO IIB2, com acometimento de paramétrio, deve ser tratada cirurgicamente devido à má resposta à radioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A: Esta alternativa está incorreta porque o estádio FIGO IA1 refere-se ao carcinoma microinvasivo com profundidade de invasão menor ou igual a 3 mm. Para pacientes que desejam preservar a fertilidade (prole não constituída), o tratamento de escolha é a conização cervical com margens livres. O risco de metástase linfonodal no estádio IA1 é extremamente baixo (menor que 1%), o que não justifica a realização de uma histerectomia ampliada (radical) como padrão, especialmente para quem deseja engravidar.\n\nAlternativa B: Esta alternativa está incorreta. O carcinoma de células escamosas (também chamado de epidermoide) continua sendo o tipo histológico mais frequente em todo o mundo, representando cerca de 70% a 80% dos casos de câncer de colo uterino. O adenocarcinoma é o segundo tipo mais comum. Embora o rastreamento citológico (Papanicolau) seja mais eficiente em detectar lesões precursoras escamosas, o tipo escamoso ainda lidera as estatísticas de incidência.\n\nAlternativa C: Esta alternativa está correta. A disseminação do câncer de colo uterino ocorre primordialmente por contiguidade, invadindo estruturas vizinhas como a vagina e os paramétrios. A invasão angiolinfática ocorre quando as células neoplásicas penetram nos pequenos vasos sanguíneos ou canais linfáticos do estroma cervical. Esse achado histopatológico é um marcador clássico de agressividade e um indicador de mau prognóstico, pois está diretamente relacionado ao aumento do risco de metástases para linfonodos e recidiva da doença.\n\nAlternativa D: Esta alternativa está incorreta. O estádio IIB caracteriza-se clinicamente pela invasão dos paramétrios. De acordo com os protocolos internacionais (FIGO e NCCN), o tratamento preferencial para o câncer de colo uterino a partir do estádio IIB (doença localmente avançada) é a quimiorradioterapia concomitante (radioterapia externa mais quimioterapia baseada em platina, seguida de braquiterapia). A cirurgia não é recomendada nesses casos porque o tratamento radioterápico oferece excelentes taxas de controle e a tentativa cirúrgica em estádios avançados apresenta alta taxa de complicações e margens comprometidas.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  },
+  {
+    "id": "AJUDA_7c2fe5f9-0124-4f76-851e-28aa7cba6387",
+    "originalId": "7c2fe5f9-0124-4f76-851e-28aa7cba6387",
+    "statement": "Um médico residente, em suas atividades no ambulatório, diagnosticou os seguintes casos abaixo:\nI. Perda Auditiva relacionada ao trabalho.\nII. Síndrome de burnout.\nIII. Distúrbios Osteomusculares Relacionados ao Trabalho.\nIV. Distúrbio de voz relacionado ao trabalho.\nAssinale a alternativa em que são consideradas doenças na Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública:",
+    "options": [
+      {
+        "id": "A",
+        "text": "todos os itens.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "apenas três itens.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "apenas dois itens.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apenas um item.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "nenhum item.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública, especificamente no que se refere aos agravos relacionados ao trabalho. No Brasil, essa lista é definida e periodicamente atualizada pelo Ministério da Saúde para orientar as ações de vigilância epidemiológica.\n\nAnálise dos itens:\n\nItem I. Perda Auditiva Relacionada ao Trabalho: Este item está correto. A Perda Auditiva Induzida por Ruído (PAIR) é um dos agravos clássicos da saúde do trabalhador e consta na lista de notificação compulsória devido ao seu impacto funcional e à necessidade de monitoramento dos ambientes laborais ruidosos.\n\nItem II. Síndrome de Burnout: Este item está correto. Com a atualização da lista por meio da Portaria GM/MS nº 217, de 1º de março de 2023, os transtornos mentais relacionados ao trabalho (que englobam o Burnout) foram explicitamente consolidados como agravos de notificação compulsória. \n\nItem III. Distúrbios Osteomusculares Relacionados ao Trabalho (DORT): Este item está correto. Os casos de LER/DORT (Lesões por Esforços Repetitivos e Distúrbios Osteomusculares Relacionados ao Trabalho) são de notificação obrigatória em todo o território nacional, dada a sua alta prevalência e carga de morbidade nos trabalhadores brasileiros.\n\nItem IV. Distúrbio de Voz Relacionado ao Trabalho (DVRT): Este item está correto. O DVRT foi formalmente incluído na lista nacional de notificação compulsória na atualização de 2023 (Portaria GM/MS nº 217/2023). Essa inclusão é uma vitória importante para a saúde pública, permitindo identificar categorias profissionais vulneráveis, como professores e teleatendentes.\n\nAnálise das alternativas:\n\nAlternativa A: Esta é a alternativa correta. Todos os quatro itens listados (PAIR, Burnout, DORT e DVRT) são atualmente considerados doenças ou agravos de notificação compulsória de acordo com a legislação vigente do Ministério da Saúde, especialmente após as ampliações ocorridas em 2023.\n\nAlternativas B, C, D e E: Estas alternativas estão incorretas porque excluem um ou mais itens que, conforme a Portaria de Consolidação nº 4/2017 e suas atualizações (como a Portaria GM/MS nº 217/2023), devem ser obrigatoriamente notificados pelo médico e demais profissionais de saúde ou responsáveis pelos estabelecimentos de saúde.\n\nConclusão:\nO gabarito é a letra A, pois a Lista Nacional de Notificação Compulsória hoje abrange uma vasta gama de agravos à saúde do trabalhador, incluindo os distúrbios osteomusculares, auditivos, de voz e transtornos mentais. O conhecimento dessa lista é fundamental para a prática médica e para o planejamento de políticas públicas de prevenção e assistência.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Vigilância em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  },
+  {
+    "id": "AJUDA_7c30e630-073f-4cfe-982f-b3ce1306a5d3",
+    "originalId": "7c30e630-073f-4cfe-982f-b3ce1306a5d3",
+    "statement": "Após uma esofagectomia, uma drenagem torácica aumentada de aspecto leitoso e volume superior a 1L/dia, com analise bioquímica com triglicerídeos de 300mg/dL deve corresponder a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Empiema",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quilotorax",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hemotorax",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exsudato",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Derrame pleural metastático",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve uma complicação clássica do pós-operatório de grandes cirurgias torácicas e esofágicas: a lesão do ducto torácico. O diagnóstico é fundamentado no contexto cirúrgico, no aspecto visual do líquido drenado e nos achados laboratoriais específicos.\n\nAlternativa (a) Incorreta. O empiema é o acúmulo de pus no espaço pleural, geralmente associado a quadros infecciosos ou deiscências de anastomose com contaminação bacteriana. Embora o pus possa ter uma aparência turva, ele não apresenta níveis de triglicerídeos tão elevados. Bioquimicamente, o empiema cursa com pH baixo, glicose baixa e presença de bactérias ou leucócitos em grande quantidade.\n\nAlternativa (b) Correta. O quilotórax é a presença de quilo no espaço pleural decorrente de uma ruptura, laceração ou obstrução do ducto torácico. O aspecto leitoso é característico e ocorre devido à alta concentração de quilomícrons e gorduras absorvidas pelo sistema linfático intestinal. O critério laboratorial definitivo é a dosagem de triglicerídeos no líquido pleural: valores acima de 110 mg/dL são altamente sugestivos (no caso, 300 mg/dL confirmam o diagnóstico). O volume de 1L/dia classifica o quadro como uma fístula de alto débito, o que frequentemente exige intervenção cirúrgica ou medidas dietéticas rigorosas.\n\nAlternativa (c) Incorreta. O hemotórax é definido pelo acúmulo de sangue na cavidade pleural. O aspecto macroscópico seria hemático (avermelhado vivo ou escuro) e não leitoso. O diagnóstico seria confirmado por um hematócrito do líquido pleural superior a 50 por cento do hematócrito sanguíneo.\n\nAlternativa (d) Incorreta. Exsudato é um termo genérico que classifica líquidos pleurais ricos em proteínas e lactato desidrogenase (LDH), seguindo os Critérios de Light. Embora o quilo seja tecnicamente um exsudato, a alternativa (b) é a resposta correta por ser o diagnóstico específico da patologia descrita, enquanto exsudato é apenas uma categoria ampla de derrame.\n\nAlternativa (e) Incorreta. O derrame pleural metastático ou neoplásico costuma ter aspecto serossanguinolento ou citrino (amarelado transparente). Ele é causado pela invasão de células cancerígenas na pleura. O diagnóstico é feito por citologia oncótica ou biópsia de pleura, e não pela dosagem de triglicerídeos.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Derrame Pleural",
+      "Cirurgia Torácica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  },
+  {
+    "id": "AJUDA_7c39394d-0ed9-419a-b121-38854eaeee13",
+    "originalId": "7c39394d-0ed9-419a-b121-38854eaeee13",
+    "statement": "Uma paciente gestante, com 32 semanas, é admitida na sala de emergência com diagnóstico de pré-eclâmpsia grave, apresentando cefaleia, escotomas visuais e níveis pressóricos elevados. A equipe médica decide iniciar a infusão de sulfato de magnésio 10% para neuroproteção e prevenção de eclâmpsia.\nDetermine o parâmetro de monitoramento e a via de administração adequados durante a terapia:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A infusão endovenosa (EV) deve ser rápida, a uma taxa de 150 mg por segundo, para atingir o nível sérico terapêutico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O monitoramento deve incluir Sinais Vitais (SSVV), Eletrocardiograma (ECG), reflexos tendinosos profundos e função renal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A administração intramuscular (IM) é preferível, devendo ser utilizada mesmo se um acesso EV estiver disponível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A principal reação adversa esperada é a hipercalcemia, que deve ser monitorada e tratada preventivamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A solução a 10% não pode ser administrada em pediatria, sendo de uso exclusivo em adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O sulfato de magnésio ($MgSO_4$) é a droga de escolha para a prevenção e o tratamento de crises convulsivas na eclâmpsia. Sua administração exige cuidado extremo devido ao risco de toxicidade, que pode levar à depressão respiratória e parada cardíaca.\n\nAlternativa a) Incorreta. A infusão de sulfato de magnésio nunca deve ser feita de forma rápida (em segundos). A dose de ataque, seja de 4 g ou de 6 g, deve ser administrada lentamente, geralmente ao longo de 15 a 20 minutos. Uma administração excessivamente veloz pode causar hipotensão severa, *flushing*, distúrbios de condução cardíaca e parada cardiorrespiratória.\n\nAlternativa b) Correta. Esta é a base da segurança na monitorização da magnesioterapia. O magnésio é excretado quase exclusivamente pelos rins; portanto, a avaliação da função renal e do débito urinário (diurese) é fundamental para evitar o acúmulo tóxico da droga. Os reflexos tendinosos profundos (como o reflexo patelar) são os primeiros sinais clínicos a desaparecer quando os níveis séricos estão acima do limite terapêutico, servindo como um alerta precoce de toxicidade. O monitoramento dos sinais vitais (especialmente a frequência respiratória, que não deve cair abaixo de 12 a 16 incursões por minuto) e o ECG garantem a detecção de depressão respiratória e alterações cardíacas.\n\nAlternativa c) Incorreta. Embora o esquema intramuscular (Pritchard) seja validado e seguro, a via endovenosa (esquema de Zuspan) é preferível na maioria dos centros hospitalares. A via EV permite um controle mais preciso da infusão, causa menos dor e desconforto à paciente (as injeções IM de magnésio são muito dolorosas e podem causar abscessos) e facilita o ajuste imediato da dose, se necessário. A via IM é geralmente reservada para situações em que não há acesso venoso disponível ou para o transporte de pacientes.\n\nAlternativa d) Incorreta. A principal reação adversa não é a hipercalcemia. Na verdade, o magnésio é um antagonista do cálcio. Em casos de toxicidade por magnésio, utiliza-se o gluconato de cálcio a 10% como antídoto direto para reverter os efeitos neuromusculares e cardíacos. O monitoramento deve focar na hipermagnesemia.\n\nAlternativa e) Incorreta. O sulfato de magnésio a 10% não é de uso exclusivo em adultos. Na pediatria, ele é utilizado em diversas situações clínicas, como no tratamento de crises de asma grave que não respondem à terapia inicial, em distúrbios eletrolíticos (hipomagnesemia) e em certos tipos de arritmias cardíacas (como *torsades de pointes*).",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  },
+  {
+    "id": "AJUDA_7c3ff2b4-0500-42be-83a2-c3638241a2d0",
+    "originalId": "7c3ff2b4-0500-42be-83a2-c3638241a2d0",
+    "statement": "Menino, 6 meses de idade, sem comorbidades, inicia com coriza e obstrução nasal, evoluindo após 2 dias com tosse e desconforto respiratório. Exame físico: bom estado geral, sibilos expiratórios, tempo expiratório prolongado, retração subcostal e de fúrcula com SpO2 = 93%. Exame complementar: teste rápido positivo para vírus sincicial respiratório. Qual das seguintes intervenções é recomendada pela Sociedade Brasileira de Pediatria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inalação salina hipertônica a 3%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Broncodilatador inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Corticoide por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oxigenoterapia inalatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA questão descreve um quadro clássico de Bronquiolite Viral Aguda (BVA) em um lactente de 6 meses, com diagnóstico confirmado de Vírus Sincicial Respiratório (VSR). O paciente apresenta sinais de desconforto respiratório (retrações e taquipneia sugerida pelo tempo expiratório prolongado), mas mantém a saturação de oxigênio em 93%.\n\nAlternativa a: Esta é a alternativa correta. De acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP), o uso de inalação com solução salina hipertônica a 3% pode ser recomendado para pacientes hospitalizados. O mecanismo de ação baseia-se na redução do edema da mucosa das vias aéreas e na melhora da depuração mucociliar, o que pode auxiliar na redução do tempo de internação hospitalar. Embora diretrizes internacionais, como a AAP (Americana), tenham se tornado mais restritivas quanto ao seu uso rotineiro, a SBP ainda a mantém como uma opção terapêutica para casos hospitalizados.\n\nAlternativa b: Incorreta. O uso de broncodilatadores (como o salbutamol) não é recomendado de rotina no tratamento da bronquiolite. A fisiopatologia da BVA envolve edema de mucosa, acúmulo de secreção e débris celulares na luz dos bronquíolos, e não o broncoespasmo da musculatura lisa. Estudos demonstram que essas medicações não alteram o curso da doença ou a necessidade de hospitalização.\n\nAlternativa c: Incorreta. O uso de corticoides (seja por via oral, venosa ou inalatória) não é indicado na bronquiolite viral aguda. Eles não demonstraram eficácia em reduzir a taxa de internação, a gravidade dos sintomas ou o tempo de permanência no hospital em pacientes no primeiro episódio de sibilância.\n\nAlternativa d: Incorreta. A oxigenoterapia está indicada apenas quando o paciente apresenta hipoxemia. Segundo a SBP e a maioria dos protocolos vigentes, a suplementação de oxigênio deve ser iniciada quando a saturação de oxigênio (SpO2) estiver abaixo de 90% a 92% em ar ambiente. Como o paciente da questão apresenta SpO2 de 93%, ele não preenche critérios para o uso de oxigênio no momento.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:03.165Z"
+  }
+]

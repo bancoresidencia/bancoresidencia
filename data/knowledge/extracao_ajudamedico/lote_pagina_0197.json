@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_36d34ae5-732b-4622-92fb-e9eb3339c1e2",
+    "originalId": "36d34ae5-732b-4622-92fb-e9eb3339c1e2",
+    "statement": "Você atende um lactente de 2 meses de idade na UPA, com história de febre iniciada há 24 horas. Segundo a mãe, apresentou temperatura axilar de 38oC, sendo medicado com dipirona gotas (1 gota por Kg de peso). Lactente ativo, reativo ao manuseio, sem alterações no exame físico completo. Assinale abaixo a alternativa que contém a conduta correta neste caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Liberar para casa, orientando sinais de alerta de piora, com prescrição de paracetamol gotas (1 gota por Kg) e retorno em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internar, coletar exames laboratoriais incluindo coleta de líquor, Rx de tórax e iniciar antibiótico empírico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coletar pesquisa de vírus respiratório, hemograma e sedimento urinário, aguardando resultado ainda na unidade, e orientar a mãe sobre o uso correto de antitérmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Liberar para casa, manter o antitérmico utilizado e orientar sobre sinais de alerta de piora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Acalmar a mãe sobre o quadro, pois trata-se de infecção benigna com exame físico normal, devendo esta retornar em 48 horas para reavaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um lactente de 2 meses de idade (60 dias) com febre sem sinais localizatórios. Na pediatria, a abordagem da febre no lactente jovem (abaixo de 3 meses) é rigorosa, pois esse grupo apresenta maior risco de Infecções Bacterianas Graves (IBG), como infecção do trato urinário, meningite e bacteremia, que podem se manifestar inicialmente apenas com febre e exame físico normal.\n\nPara lactentes entre 29 e 60 (ou 90) dias de vida que estejam em bom estado geral (ativos e reativos), os protocolos atuais (como os de Rochester, Philadelphia e a diretriz da Academia Americana de Pediatria de 2021) recomendam a estratificação de risco através de exames laboratoriais antes de qualquer decisão terapêutica ou de alta.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): Liberar o paciente apenas com orientações e antitérmico, sem realizar exames, é uma conduta insegura para um lactente de apenas 2 meses. Nessa idade, a ausência de alterações no exame físico não exclui infecções graves, especialmente a infecção urinária, que é a causa bacteriana mais comum de febre isolada nessa faixa etária.\n\nAlternativa B (Incorreta): Esta conduta seria a padrão para o recém-nascido (até 28 dias). Para o lactente entre 1 e 3 meses que se encontra em bom estado geral (ativo e reativo ao manuseio), a coleta de líquor e a internação com antibioticoterapia empírica imediata podem ser postergadas até que se tenha o resultado dos exames de triagem (sangue e urina). A punção lombar não é obrigatória de rotina para todos os lactentes de 2 meses que pareçam bem, a menos que os exames laboratoriais iniciais venham alterados.\n\nAlternativa C (Correta): Esta é a conduta mais adequada para a estratificação de risco. A coleta de sedimento urinário é fundamental (pela alta prevalência de ITUs silenciosas). O hemograma ajuda a avaliar a resposta inflamatória. A pesquisa de vírus respiratórios (como Influenza, VSR e SARS-CoV-2) é recomendada nos protocolos atuais, pois a identificação de uma fonte viral reduz significativamente a probabilidade estatística de uma coinfecção bacteriana grave, embora não a exclua totalmente. Aguardar o resultado na unidade permite decidir se o lactente pode ser acompanhado em casa ou se precisará de investigação invasiva e internação.\n\nAlternativa D (Incorreta): Assim como a alternativa A, falha por não realizar a triagem laboratorial mínima obrigatória para a idade. O risco de uma bacteremia oculta ou infecção urinária não diagnosticada impossibilita a alta direta.\n\nAlternativa E (Incorreta): Não se pode afirmar que a infecção é benigna apenas pelo exame físico normal em um bebê de 2 meses. A conduta de aguardar 48 horas sem exames básicos subestima o risco de evolução rápida para sepse que essa faixa etária apresenta. Além disso, a mãe deve ser orientada, mas o profissional deve garantir a segurança clínica através de exames complementares.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Febre na Pediatria",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  },
+  {
+    "id": "AJUDA_36d861b1-70d8-4002-b57e-112b63cef201",
+    "originalId": "36d861b1-70d8-4002-b57e-112b63cef201",
+    "statement": "Leia o caso a seguir.\n\nPaciente de 24 anos, sexo feminino, hígida, com relato de dor intensa em hipocôndrio direito, icterícia, coúria e acolia fecal há 3 dias. \n\nA principal hipótese diagnóstica do caso descrito acima é",
+    "options": [
+      {
+        "id": "A",
+        "text": "hepatite viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "síndrome de Gilbert.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "coledocolitíase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "tumor periampular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro clínico descreve uma paciente jovem com uma combinação de sintomas conhecida como síndrome colestática aguda. A presença de dor intensa em hipocôndrio direito associada a sinais de obstrução biliar (icterícia, colúria e acolia) de início súbito é altamente sugestiva de uma etiologia mecânica obstrutiva, especificamente por cálculos biliares.\n\nAlternativa a) Incorreta. As hepatites virais podem cursar com icterícia e colúria, mas a dor abdominal costuma ser um desconforto leve, do tipo peso ou uma sensibilidade à palpação devido à distensão da cápsula que reveste o fígado (cápsula de Glisson). A dor descrita como intensa e aguda é muito mais característica de obstrução de ductos biliares (cólica biliar) do que de inflamação do parênquima hepático. Além disso, hepatites costumam apresentar sintomas prodrômicos, como febre, náuseas e mal-estar generalizado.\n\nAlternativa b) Incorreta. A Síndrome de Gilbert é uma condição benigna na qual há uma deficiência parcial da enzima que conjuga a bilirrubina. Ela causa uma hiperbilirrubinemia indireta leve e intermitente, sem causar dor abdominal, colúria ou acolia fecal. Geralmente, é um achado incidental em exames de sangue ou manifesta-se com icterícia leve após períodos de estresse, jejum ou exercício intenso.\n\nAlternativa c) Correta. A coledocolitíase é a presença de cálculos no interior do ducto colédoco, geralmente migrados da vesícula biliar. Esta é a principal causa de icterícia obstrutiva dolorosa em pacientes jovens. A obstrução aguda do fluxo biliar gera dor intensa (cólica biliar). Como a bile não chega ao intestino, as fezes perdem sua cor característica (acolia) e a bilirrubina direta acumulada no sangue é excretada pelos rins, deixando a urina escura (colúria).\n\nAlternativa d) Incorreta. Os tumores periampulares (como o câncer de cabeça de pâncreas ou da ampola de Vater) podem causar icterícia obstrutiva com colúria e acolia. No entanto, a apresentação clássica dessas neoplasias é a chamada icterícia silenciosa: um quadro progressivo e indolor, frequentemente associado à perda ponderal e em pacientes de faixa etária mais avançada. A dor aguda intensa em uma paciente de 24 anos torna a hipótese de litíase (pedra) muito mais provável do que um tumor.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  },
+  {
+    "id": "AJUDA_36fb1329-e0f8-43fa-a870-122cc2748fcb",
+    "originalId": "36fb1329-e0f8-43fa-a870-122cc2748fcb",
+    "statement": "Mulher, de 62 anos de idade, comparece em consulta ambulatorial após perceber abaulamento em região inguinocrural direita aos esforços, sem outras alterações associadas. Nega alterações urinárias ou intestinais. Tem antecedente de hipertensão arterial sistêmica e diabetes mellitus tipo 2, com bom controle medicamentoso. No momento, encontra-se assintomática e em bom estado geral. Ao exame físico, observa-se abaulamento abaixo do ligamento inguinal direito durante manobra de Valsalva, com redução espontânea ao repouso. Não foram identificadas outras alterações ao exame físico. Qual é o diagnóstico mais provável e a conduta recomendada para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia femoral. Seguimento clínico, com indicação cirúrgica caso se iniciem sintomas decorrentes da afecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hérnia femoral. Indicação de cirurgia eletiva mesmo na ausência de sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hérnia inguinal. Indicação de cirurgia eletiva mesmo na ausência de sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hérnia inguinal. Seguimento clínico, com indicação cirúrgica somente em situações de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos focar em dois pontos principais: a anatomia da região inguinal e a história natural das hérnias nessa localização.\n\nDiagnóstico:\nA paciente apresenta um abaulamento localizado abaixo do ligamento inguinal. Essa é a referência anatômica clássica para diferenciar as hérnias da região inguinocrural. As hérnias inguinais (diretas ou indiretas) manifestam-se acima do ligamento inguinal, enquanto as hérnias femorais (ou crurais) exteriorizam-se pelo canal femoral, situando-se abaixo do ligamento inguinal e medialmente aos vasos femorais. O fato de ser uma paciente do sexo feminino e idosa reforça a suspeita, pois, embora a hérnia inguinal seja a mais comum globalmente, a hérnia femoral é muito mais frequente em mulheres do que em homens.\n\nConduta:\nAs hérnias femorais possuem um elevado risco de encarceramento e estrangulamento (estimado entre 22% e 45% em diferentes estudos) devido à rigidez e estreiteza do anel femoral. Por essa razão, ao contrário de alguns casos de hérnia inguinal em homens (nos quais se pode considerar a observação vigilante), a recomendação para a hérnia femoral é sempre a correção cirúrgica eletiva, mesmo que a paciente esteja assintomática no momento do diagnóstico.\n\nAnálise das alternativas:\n\na) Incorreta. O diagnóstico está correto (hérnia femoral), mas a conduta de seguimento clínico é inadequada. O risco de complicações agudas graves contraindica a espera pelo surgimento de sintomas.\n\nb) Correta. Identifica corretamente a patologia com base na localização anatômica (abaixo do ligamento inguinal) e indica a conduta padrão-ouro, que é a cirurgia eletiva para prevenir o estrangulamento.\n\nc) Incorreta. O diagnóstico está incorreto porque o abaulamento da hérnia inguinal ocorre acima do ligamento inguinal. Embora a cirurgia seja indicada para mulheres com hérnia inguinal (pelo risco de haver uma hérnia femoral associada não diagnosticada), o diagnóstico anatômico fornecido pelo exame físico aponta para hérnia femoral.\n\nd) Incorreta. O diagnóstico está incorreto pela localização anatômica e a conduta de seguimento clínico é contraindicada, especialmente em mulheres, pelo risco de complicações e pela dificuldade de diferenciar clinicamente com precisão uma hérnia inguinal de uma femoral, que exige tratamento cirúrgico célere.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  },
+  {
+    "id": "AJUDA_37048c7c-aed2-41f7-a4ef-e64148d27e85",
+    "originalId": "37048c7c-aed2-41f7-a4ef-e64148d27e85",
+    "statement": "Recently foram lançadas as novas diretrizes para o rastreamento do câncer do colo uterino. Estima-se que, no Brasil, exista um risco estimado de cerca de 15 casos a cada 100 mil mulheres, com uma previsão de 17 mil novos casos anuais de câncer do colo uterino no período de 2023 a 2025. Esta doença é, portanto, um grande desafio para a saúde da mulher. Com relação às novas diretrizes, pode-se afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ao detectar HPV oncogênico em exame de rotina, exceto o 16 e 18, deve-se correlacionar com a citologia coletada para seguimento da investigação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "os testes moleculares de detecção do HPV não foram incorporados, devido ao seu alto custo e baixa capacidade de diagnóstico de subtipos oncogênicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a utilização da Polimerase Chain Reaction (PCR) na detecção do HPV limita-se apenas ao seguimento de casos que já tenham sido realizados cirurgia excisional de lesões prévias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a partir dos 60 anos, um teste negativo necessita de confirmação com outro teste até os 65 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as recentes atualizações nas diretrizes brasileiras para o rastreamento do câncer do colo do útero, focando na incorporação dos testes moleculares para detecção do HPV.\n\nAlternativa A (Correta): De acordo com os novos protocolos de rastreamento baseados em testes de biologia molecular, o fluxo de conduta segue a estratificação de risco. Ao realizar o teste de HPV como rastreamento primário: se o resultado for positivo para os tipos 16 ou 18 (os de maior potencial oncogênico), a paciente deve ser encaminhada diretamente para a colposcopia. Se o teste detectar outros tipos de HPV de alto risco (exceto 16 e 18), é necessário realizar a citologia (exame de triagem reflexa) para decidir se a paciente vai para a colposcopia ou se mantém em seguimento diferenciado. Portanto, a correlação com a citologia é o passo correto nesses casos.\n\nAlternativa B (Incorreta): Em março de 2024, o Ministério da Saúde formalizou a incorporação do teste de HPV na rotina do Sistema Único de Saúde (SUS). Ao contrário do afirmado, os testes moleculares possuem altíssima sensibilidade e excelente capacidade de identificar diversos subtipos oncogênicos, sendo superiores à citologia isolada no rastreamento inicial.\n\nAlternativa C (Incorreta): A utilização da PCR ou de outros métodos moleculares não se limita ao acompanhamento pós-operatório (seguimento após exérese de lesão precursora). A grande mudança das novas diretrizes é justamente a utilização desses testes como rastreamento primário, ou seja, como o primeiro exame realizado na população geral para identificar mulheres sob risco, substituindo ou complementando a citologia convencional.\n\nAlternativa D (Incorreta): Segundo as novas diretrizes, o rastreamento deve ser realizado até os 65 anos de idade. Se a mulher realizar um teste de HPV aos 60 anos e o resultado for negativo, ela terá alta do rastreamento aos 65 anos, desde que tenha exames anteriores negativos e não possua histórico de lesões precursoras. Não há a necessidade sistemática de um novo teste de confirmação se o critério de saída (exames negativos prévios) for atingido. O intervalo entre os testes de HPV, quando negativos, passa a ser de 5 anos.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  },
+  {
+    "id": "AJUDA_3710bd76-d530-4098-9232-4050a44a48ed",
+    "originalId": "3710bd76-d530-4098-9232-4050a44a48ed",
+    "statement": "Paciente, 35 anos, que recentemente voltou de uma viagem à Amazônia, apresenta febre alta, calafrios, sudorese intensa e cefaleia. Após exame de sangue, foi diagnosticado com malária. A espécie de Plasmodium mais provável pela infecção é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Plasmodium vivax.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Plasmodium malariae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Plasmodium ovale.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Plasmodium falciparum.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da questão: A malária é uma patologia de notificação compulsória e de grande relevância na medicina tropical brasileira. Para responder corretamente a este item, o candidato deve conhecer a epidemiologia atual da doença na região amazônica.\n\nAlternativa a: Esta é a resposta correta. O Plasmodium vivax é a espécie amplamente predominante no Brasil, sendo responsável por aproximadamente 80 a 85 por cento dos casos de malária registrados no território nacional. Clinicamente, ele costuma causar a febre terça (paroxismos a cada 48 horas) e tem como característica biológica a formação de hipnozoítos, que são formas latentes no fígado capazes de causar recaídas se não forem tratadas com esquemas que incluam a primaquina.\n\nAlternativa b: Incorreta. O Plasmodium malariae ocorre no Brasil, mas sua prevalência é muito baixa em comparação ao P. vivax. Esta espécie é classicamente associada à febre quarta, na qual os picos de febre ocorrem a cada 72 horas devido ao ciclo eritrocítico mais longo do parasita.\n\nAlternativa c: Incorreta. O Plasmodium ovale não é encontrado de forma autóctone nas Américas. Sua distribuição geográfica é restrita majoritariamente ao continente africano e a algumas regiões da Ásia. Portanto, é uma alternativa epidemiologicamente impossível para uma infecção adquirida na Amazônia.\n\nAlternativa d: Incorreta. O Plasmodium falciparum é a segunda espécie mais comum no Brasil, representando cerca de 15 a 20 por cento dos casos. Embora seja clinicamente mais importante por estar associado a formas graves, complicações neurológicas e maior letalidade, a questão pede a espécie mais provável. Estatisticamente, o P. vivax supera significativamente o P. falciparum em número de casos na Amazônia.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Malária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  },
+  {
+    "id": "AJUDA_37146006-5525-4a3a-a7aa-a5d5d999b5fd",
+    "originalId": "37146006-5525-4a3a-a7aa-a5d5d999b5fd",
+    "statement": "Puérpera com tuberculose pulmonar bacilífera, em tratamento rifampicina, isoniazida, pirazinamida e etambutol, acompanhado de piridoxina. O recém nascido é saudável. Segundo o Ministério da Saúde, qual é a conduta CORRETA quanto ao aleitamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender o aleitamento materno e fornecer fórmula infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Interromper o aleitamento apenas até a negativação do escarro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amamentar apenas após a conclusão do tratamento da mãe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O aleitamento materno deve ser mantido, com a mãe utilizando máscara cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A tuberculose pulmonar materna não é uma contraindicação ao aleitamento materno, segundo as normas do Ministério da Saúde do Brasil. A transmissão da doença ocorre por via respiratória (aerossóis e gotículas) e não através do leite materno. Além disso, os fármacos utilizados no esquema básico de tratamento (rifampicina, isoniazida, pirazinamida e etambutol) são excretados no leite em quantidades mínimas, sendo considerados seguros para o lactente.\n\nAlternativa (d) - CORRETA: Como a transmissão da tuberculose é aérea, o risco para o recém-nascido reside no contato próximo com as vias respiratórias da mãe enquanto ela ainda for bacilífera (tiver bacilos no escarro). A recomendação é manter a amamentação, orientando a mãe a utilizar máscara cirúrgica durante as mamadas e ao prestar cuidados ao bebê, além de manter a higienização das mãos. O recém-nascido de mãe bacilífera também deve receber quimioprofilaxia (preventiva) e ter a vacina BCG adiada até a conclusão do esquema profilático.\n\nAlternativa (a) - INCORRETA: A suspensão do aleitamento e a substituição por fórmula infantil são indicadas em casos de infecção materna pelo HIV ou HTLV 1 e 2. Na tuberculose, o benefício do leite materno é superior ao risco de transmissão, desde que as medidas de barreira (máscara) sejam adotadas.\n\nAlternativa (b) - INCORRETA: Não se deve interromper a amamentação temporariamente. A negativação do escarro pode demorar semanas, e a interrupção nesse período crítico compromete o estabelecimento do vínculo e a nutrição do bebê, além de aumentar o risco de desmame precoce. A máscara cirúrgica é suficiente para proteger o lactente nesse intervalo.\n\nAlternativa (c) - INCORRETA: O tratamento da tuberculose dura, no mínimo, seis meses. Proibir a amamentação até a conclusão do tratamento é uma medida desnecessária e prejudicial à saúde da criança. A mãe deixa de ser infectante geralmente após 15 dias de tratamento adequado, mas a amamentação é permitida desde o primeiro dia, com o uso de máscara.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Aleitamento Materno",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  },
+  {
+    "id": "AJUDA_371b9fd3-88f0-4cab-a473-54011be960ab",
+    "originalId": "371b9fd3-88f0-4cab-a473-54011be960ab",
+    "statement": "A Síndrome dos Ovários Policísticos (SOP) é uma das principais causas de anovulação crônica e hiperandrogenismo em mulheres em idade reprodutiva. O diagnóstico é baseado nos Critérios de Rotterdam, exigindo a exclusão de outras etiologias. Além das repercussões reprodutivas, a SOP está associada a distúrbios metabólicos significativos. Assinale a alternativa que apresenta a definição diagnóstica correta e as implicações metabólicas desta síndrome.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A resistência insulínica é um critério diagnóstico obrigatório para a SOP, devendo ser demonstrada por meio de curva glicêmica e dosagem de insulina basal antes de se estabelecer o diagnóstico definitivo da síndrome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento da anovulação na SOP deve priorizar o uso de agonistas de GnRH de forma contínua para suprimir a produção ovariana de androgênios, restaurando assim os ciclos menstruais ovulatórios espontâneos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A presença de ovários com aspecto micropolicístico à ultrassonografia é condição indispensável (sine qua non) para o diagnóstico de SOP em todos os fenotipos, inclusive naqueles com hiperandrogenismo e anovulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico requer a presença de pelo menos dois dos três critérios: oligo/anovulação, hiperandrogenismo clínico e/ou laboratorial e morfologia ovariana policística à ultrassonografia, sendo mandatória a exclusão de hiperplasia adrenal congênita não clássica, tumores secretores de androgênios e síndrome de Cushing.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO tema central é a Síndrome dos Ovários Policísticos (SOP), uma endocrinopatia complexa e heterogênea. O diagnóstico atual é regido pelos Critérios de Rotterdam (2003), que exigem a presença de pelo menos dois de três pilares, após a exclusão de outras doenças que mimetizam o quadro.\n\nAnálise das alternativas:\n\nAlternativa A: INCORRETA. Embora a resistência insulínica e a hiperinsulinemia compensatória desempenhem um papel central na fisiopatologia da SOP (estimulando a produção de androgênios pelas células da teca), elas não fazem parte dos critérios diagnósticos de Rotterdam. O diagnóstico é clínico, laboratorial e ultrassonográfico, não sendo obrigatória a comprovação de resistência insulínica para fechar o quadro.\n\nAlternativa B: INCORRETA. O uso de agonistas de GnRH de forma contínua promove um estado de hipogonadismo hipogonadotrófico (bloqueio do eixo), o que impediria a ovulação em vez de restaurá-la. Para o tratamento da infertilidade por anovulação na SOP, as opções de primeira linha são os indutores de ovulação, como o letrozol ou o citrato de clomifeno. Para regular o ciclo em mulheres que não desejam gestar, utilizam-se anticoncepcionais orais combinados.\n\nAlternativa C: INCORRETA. De acordo com os Critérios de Rotterdam, a morfologia ovariana policística à ultrassonografia é apenas um dos três critérios possíveis. Se a paciente apresentar hiperandrogenismo (clínico ou laboratorial) e oligo/anovulação, o diagnóstico de SOP pode ser firmado mesmo que a ultrassonografia seja normal. Portanto, o aspecto micropolicístico não é indispensável (sine qua non) para todos os fenótipos.\n\nAlternativa D: CORRETA. Esta alternativa define perfeitamente os Critérios de Rotterdam. O diagnóstico de SOP exige a presença de dois dos seguintes três critérios: 1) Oligo-ovulação ou anovulação; 2) Sinais clínicos (hirsutismo, acne, alopecia) ou laboratoriais (aumento de testosterona) de hiperandrogenismo; 3) Morfologia de ovários policísticos à ultrassonografia (12 ou mais folículos medindo entre 2-9 mm e/ou volume ovariano maior que 10 cm³ em pelo menos um dos ovários — critérios que foram atualizados para 20 folículos em aparelhos de alta resolução). Fundamentalmente, o diagnóstico de SOP é de exclusão, sendo mandatória a investigação de hiperplasia adrenal congênita não clássica (dosagem de 17-OH-progesterona), tumores virilizantes e síndrome de Cushing.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  },
+  {
+    "id": "AJUDA_371e0c70-d7cf-423c-ac7e-56e622c44eac",
+    "originalId": "371e0c70-d7cf-423c-ac7e-56e622c44eac",
+    "statement": "Paciente feminina, de 43 anos, informou, em consulta eletiva, ter, desde os 12 anos, cefaleia, bilateral, latejante, incapacitante, com fono e fotofobia. Os episódios usualmente duravam 12-48 horas quando não tratados. Na infância, ocorriam 6-10 dias/ano; no período da faculdade, 5-8 dias/mês; e, nos últimos anos, 20-25 dias/mês. Inicialmente, apresentava alívio completo das crises com dipirona associada a metoclopramida; atualmente, a dor não cedia por completo. Com base no caso clínico, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O manejo deve ser realizado com sumatriptano (50 mg) no início de todas as crises, podendo a dose ser repetida após 2 horas caso a dor não tenha cedido completamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Por se tratar de cefaleia progressiva, está indicada investigação com exame de imagem e, se normal, punção lombar com medida da pressão de abertura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Durante o período da faculdade, deveria ter sido prescrita profilaxia para migrânea, evitando-se o quadro atual de migrânea crônica associada a uso excessivo de medicamentos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Devido ao diagnóstico de migrânea, a paciente, quando na menopausa, não deverá fazer uso de terapia hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO DO CASO CLÍNICO\n\nA paciente apresenta um quadro clássico de migrânea (enxaqueca) sem aura. Os critérios diagnósticos são preenchidos pela dor unilateral ou bilateral, caráter latejante, intensidade incapacitante, presença de fonofobia e fotofobia, e duração de 4 a 72 horas. A evolução clínica mostra uma transformação da migrânea episódica (poucos dias por ano/mês) para uma migrânea crônica (atualmente com 20-25 dias de dor por mês).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: O sumatriptano é um medicamento excelente para o tratamento agudo (abortivo) da crise de migrânea, porém não deve ser utilizado em todas as crises nesta paciente. Como ela apresenta dor em 20 a 25 dias por mês, o uso frequente de triptanos (mais de 9 dias por mês) causaria uma condição secundária denominada cefaleia por uso excessivo de medicação, agravando ainda mais o quadro. O manejo atual exige tratamento profilático e desmame de analgésicos.\n\nAlternativa (b) INCORRETA: Embora a cefaleia tenha aumentado em frequência, a história clínica é de longuíssima data (desde os 12 anos de idade) e mantém as características de uma cefaleia primária. A progressão citada refere-se à frequência das crises (cronificação) e não a uma mudança súbita no padrão da dor ou ao surgimento de sinais de alerta (red flags), como déficits focais ou papiledema. Portanto, exames de imagem e punção lombar não são as condutas iniciais prioritárias neste contexto clínico típico de migrânea crônica.\n\nAlternativa (c) CORRETA: As diretrizes da Sociedade Brasileira de Cefaleia e de academias internacionais recomendam o início de tratamento profilático quando o paciente apresenta crises que interferem na qualidade de vida, geralmente a partir de 3 a 4 dias de dor por mês. No período da faculdade, com 5 a 8 dias de dor mensal, a paciente já possuía indicação formal de profilaxia. O tratamento preventivo adequado naquela fase teria como objetivo reduzir a frequência das crises e, fundamentalmente, evitar a progressão para a forma crônica e o uso excessivo de sintomáticos.\n\nAlternativa (d) INCORRETA: A contraindicação clássica ao uso de estrogênio (especialmente em anticoncepcionais orais combinados) ocorre na migrânea COM aura, devido ao risco aumentado de acidente vascular cerebral (AVC). Na migrânea sem aura, como é o caso desta paciente, a terapia hormonal na menopausa não é contraindicada de forma absoluta. Se houver necessidade clínica, a terapia pode ser realizada, preferencialmente utilizando doses baixas de estrogênio por via transdérmica, que apresenta menor risco trombótico.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  },
+  {
+    "id": "AJUDA_37277229-d30d-4c6a-9c02-58ef9499557b",
+    "originalId": "37277229-d30d-4c6a-9c02-58ef9499557b",
+    "statement": "Mulher de 49 anos vem ao consultório ginecológico queixando-se de irritabilidade, distúrbio de sono, calorões noturnos e irregularidade menstrual há cerca de 4 meses. Refere apenas 1 cirurgia prévia: tireoidectomia por câncer de tireoide, há cerca de 5 anos.\nComorbidade: Obesidade, com IMC 32 kg/m2. Mamografia sem alterações; FSH: 80 mUI/mL.\nAssinale a alternativa que apresenta a melhor opção de tratamento para essa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estrogênio isolado via transdérmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Progesterona isolada via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estrogênio transdérmico mais progesterona via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Estrogênio mais progesterona via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Paroxetina via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é necessário identificar a fase de vida da paciente, a indicação de tratamento e a via de administração mais segura com base no seu perfil clínico.\n\nAnálise Clínica:\nA paciente tem 49 anos e apresenta sintomas clássicos de transição menopáusica ou menopausa, como fogachos (calorões), irritabilidade e distúrbios do sono. O valor de FSH (80 mUI/mL) é elevado, confirmando o estado de hipoestrogenismo. Como os sintomas estão prejudicando a qualidade de vida e não há contraindicações absolutas (o antecedente de câncer de tireoide não impede o uso de hormônios sexuais), a Terapia de Reposição Hormonal (TRH) é a conduta de escolha.\n\nCritérios para escolha da TRH:\n1. Presença de útero: A paciente possui útero (a única cirurgia prévia foi tireoidectomia). Em mulheres com útero preservado, é obrigatório associar um progestágeno ao estrogênio. O uso de estrogênio isolado causaria estímulo endometrial contínuo, aumentando significativamente o risco de hiperplasia e câncer de endométrio.\n2. Comorbidades (Obesidade): A paciente é obesa (IMC 32). Em pacientes com risco cardiovascular aumentado, tabagistas, hipertensas ou obesas, a via transdérmica para o estrogênio é preferível à via oral. Isso ocorre porque a via transdérmica evita a primeira passagem hepática, não aumentando a síntese de fatores de coagulação e, consequentemente, não elevando o risco de eventos tromboembólicos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O estrogênio isolado é reservado apenas para mulheres histerectomizadas. Como esta paciente tem útero, o uso isolado de estrogênio é contraindicado pelo risco de câncer endometrial.\n\nAlternativa b) Incorreta. A progesterona isolada não trata de forma eficaz os sintomas vasomotores (fogachos) causados pela falta de estrogênio no hipotálamo.\n\nAlternativa c) Correta. É a melhor opção porque utiliza a via transdérmica para o estrogênio, garantindo maior segurança em relação ao risco de trombose na paciente obesa, e associa a progesterona para garantir a proteção do endométrio.\n\nAlternativa d) Incorreta. Embora a combinação dos dois hormônios esteja correta para quem tem útero, a via oral para o estrogênio não é a ideal para uma paciente obesa, devido ao maior risco de tromboembolismo venoso em comparação à via transdérmica.\n\nAlternativa e) Incorreta. A paroxetina (um inibidor seletivo da recaptação de serotonina) pode ser usada para tratar fogachos, mas é considerada uma terapia de segunda linha. Ela é indicada apenas quando a paciente tem contraindicações formais à terapia hormonal (como histórico de câncer de mama ou trombose prévia) ou quando opta por não usar hormônios, o que não é o caso aqui.\n\nGabarito: Alternativa (c).",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  },
+  {
+    "id": "AJUDA_372bea57-f126-4e70-8f50-4dfb09cfa384",
+    "originalId": "372bea57-f126-4e70-8f50-4dfb09cfa384",
+    "statement": "Em uma investigação sobre a associação entre Mortalidade Infantil e indicadores socioeconômicos, Fonseca et al. (2019) utilizaram fontes de dados secundários de 74 municípios de uma região do Brasil e vários indicadores socioeconômicos, Verificaram que o IDH (Índice de Desenvolvimento Humano) estava associado à Taxa de Mortalidade Infantil (TMI), com Coeficiente de Correlação de 0,643, e a Renda per capita Média (RPCM), com Coeficiente de Correlação de 0,549, ambos com nível de significância inferior a 1%. Considerando as informações acima qual o tipo de estudo realizado pelos autores?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ecológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Caso controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, o ponto principal é identificar qual é a unidade de análise do estudo. No enunciado, os autores utilizaram dados de 74 municípios. Quando a unidade de observação e análise não é o indivíduo isolado, mas sim grupos de pessoas (geralmente definidos por áreas geográficas como cidades, estados ou países), estamos diante de um estudo ecológico.\n\nAnálise das alternativas:\n\na) Transversal: Incorreta. No estudo transversal (ou seccional), a coleta de dados é feita com indivíduos em um único momento no tempo, analisando simultaneamente a exposição e o desfecho em nível individual. Embora o estudo da questão possa ter coletado dados de um período específico, ele o fez de forma agregada para a população dos municípios, e não pessoa por pessoa.\n\nb) Ecológico: Correta. O estudo ecológico é caracterizado por analisar a correlação entre indicadores em populações ou grupos, utilizando frequentemente dados secundários de sistemas de informação. Como a pesquisa comparou indicadores socioeconômicos (IDH e renda) com a taxa de mortalidade infantil em nível municipal (agregado), ele se enquadra perfeitamente nesta categoria. É o desenho ideal para avaliar o impacto de variáveis contextuais ou ambientais sobre a saúde de populações.\n\nc) Coorte: Incorreta. O estudo de coorte é um desenho observacional longitudinal e individualizado. Nele, acompanha-se um grupo de pessoas (expostas e não expostas a determinado fator) ao longo do tempo para verificar a incidência de um desfecho. O foco aqui seria seguir indivíduos, e não comparar médias de municípios.\n\nd) Caso-controle: Incorreta. Este é um estudo individualizado e retrospectivo que parte do desfecho (pessoas que já têm a doença/condição) e busca, no passado, a presença ou ausência de fatores de exposição, comparando-os com um grupo-controle (pessoas sem a doença). Assim como na coorte, a unidade de análise é o indivíduo, o que invalida a alternativa para este cenário de dados municipais agregados.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:44.018Z"
+  }
+]

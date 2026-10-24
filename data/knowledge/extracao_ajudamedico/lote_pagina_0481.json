@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_86e0a3f7-466e-4d8b-9e71-5025f4ffadaa",
+    "originalId": "86e0a3f7-466e-4d8b-9e71-5025f4ffadaa",
+    "statement": "Paciente, sexo feminino, 40 anos, foi submetida à colecistectomia aberta, sob anestesia geral, após conversão devido a dificuldade técnica (inicialmente estava programada para ser feita por videolaparoscopia). No primeiro dia de pós-operatório cursa com dor abdominal intensa, próximo à ferida operatória e apresenta episódio de febre. A alternativa que contém a etiologia mais provável desta febre é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infecção de ferida operatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coleperitôneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Atelectasia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Coleção intra-abdominal infectada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso: A paciente apresenta febre no primeiro dia de pós-operatório (PO1) após uma cirurgia abdominal alta (colecistectomia aberta) que evoluiu com dor intensa. Na prática médica e em provas de residência, o tempo decorrido entre a cirurgia e o início da febre é o principal guia para o diagnóstico.\n\nAlternativa a) Incorreta. A infecção da ferida operatória (sítio cirúrgico) ocorre tipicamente entre o 5º e o 10º dia pós-operatório. Uma infecção de ferida nas primeiras 24 horas é raríssima, ocorrendo quase exclusivamente em infecções graves por Streptococcus pyogenes ou Clostridium, o que não condiz com o quadro relatado.\n\nAlternativa b) Incorreta. A pneumonia hospitalar ou pós-operatória costuma se manifestar após 48 a 72 horas do procedimento. Embora seja uma complicação respiratória possível, ela geralmente é precedida ou facilitada por uma atelectasia não tratada.\n\nAlternativa c) Incorreta. O coleperitôneo (vazamento de bile na cavidade abdominal) decorrente de lesão de via biliar ou queda de clipe pode causar dor e febre. Contudo, não é a causa mais provável nem a mais comum de febre no primeiro dia de pós-operatório. É uma complicação específica que deve ser suspeitada se houver sinais de peritonite e queda do estado geral, mas a questão pede a etiologia \"mais provável\".\n\nAlternativa d) Correta. A atelectasia é a principal causa de febre nas primeiras 24 a 48 horas após procedimentos cirúrgicos, especialmente em cirurgias abdominais altas ou torácicas. A dor intensa na ferida operatória impede que a paciente realize incursões respiratórias profundas (respiração superficial/esplitagem), levando ao colapso de alvéolos nas bases pulmonares. Esse colapso alveolar gera uma resposta inflamatória que se manifesta clinicamente como febre.\n\nAlternativa e) Incorreta. Coleções intra-abdominais infectadas, como abscessos, exigem tempo para se formar e proliferar. Clinicamente, elas costumam se manifestar com febre persistente ou em picos a partir do 5º ao 7º dia pós-operatório, muitas vezes acompanhadas de íleo paralítico prolongado ou dor localizada.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  },
+  {
+    "id": "AJUDA_86e60b03-873c-49bb-a4fc-d3cd0f8c89c9",
+    "originalId": "86e60b03-873c-49bb-a4fc-d3cd0f8c89c9",
+    "statement": "Um hospital realizou um estudo para investigar fatores de risco associados à readmissão hospitalar de pessoas idosas (60 anos ou mais) em até 30 dias. A pesquisa incluiu 568 pacientes que haviam recebido alta hospitalar no período de janeiro a dezembro de 2021. A partir de registros eletrônicos, os pesquisadores selecionaram aleatoriamente dois grupos de pacientes: o primeiro composto de indivíduos que foram readmitidos em até 30 dias após a alta, e o segundo de indivíduos que não foram readmitidos no mesmo período. Dados sociodemográficos, clínicos e relacionados à internação foram obtidos dos prontuários eletrônicos e analisados. O estudo investigou associações entre diversas variáveis e a ocorrência de readmissão, por meio de análise bivariada e regressão logística.\n\nOs pesquisadores analisaram a associação entre o histórico de internação no ano anterior e o retorno hospitalar, utilizando regressão logística para estimar o Odds Ratio (OR) e seu intervalo de confiança de 95% (IC 95%). O resultado foi: OR = 2,96 (IC 95%: 1,83 – 4,79).\n\nCom base nesse resultado e considerando o delineamento do estudo, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "indivíduos com histórico de internação no ano anterior apresentaram, em média, 2,96 vezes mais chance de serem readmitidos após a alta, o que permite inferir causalidade direta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indivíduos que foram readmitidos em até 30 dias apresentaram chance 2,96 vezes maior de terem histórico de internação prévia e o IC indica associação estatística significativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "indivíduos com histórico de internação prévia tiveram 2,96 vezes mais chance de readmissão, mas o IC incluindo o valor 1,83 demonstra ausência de significância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o valor do OR representa a chance de readmissão associada ao histórico de internação, com IC indicando alta precisão, mas sem significância estatística.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO DELINEAMENTO E DO RESULTADO ESTATÍSTICO\n\nPara responder a essa questão, primeiro identificamos o desenho do estudo. Os pesquisadores selecionaram os pacientes com base no desfecho (aqueles que foram readmitidos, os \"casos\") e os compararam com aqueles que não tiveram o desfecho (os \"controles\"), buscando o histórico de exposição (internação no ano anterior). Portanto, trata-se de um Estudo de Caso-Controle.\n\nA medida de associação utilizada foi o Odds Ratio (OR), ou Razão de Chances. O valor encontrado foi 2,96, com um Intervalo de Confiança de 95 por cento (IC 95 por cento) variando de 1,83 a 4,79.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A - INCORRETA: Embora o valor do OR esteja correto, estudos observacionais como este não permitem inferir causalidade direta. Eles estabelecem associações e identificam fatores de risco. Para falar em causalidade, seriam necessários outros critérios (como os de Bradford Hill) e, preferencialmente, desenhos experimentais. Além disso, a descrição de \"2,96 vezes mais chance de serem readmitidos\" inverte a lógica do estudo de caso-controle, que parte do desfecho para a exposição.\n\nAlternativa B - CORRETA: Esta alternativa reflete corretamente a lógica do estudo de caso-controle, onde olhamos para quem teve o desfecho (readmitidos) e verificamos a chance de terem sido expostos ao fator de risco (internação prévia). Em relação à estatística, como o Intervalo de Confiança (1,83 a 4,79) não inclui o valor 1,0 (que é o valor de nulidade para o OR), podemos afirmar que existe uma associação estatisticamente significativa com 95 por cento de confiança.\n\nAlternativa C - INCORRETA: A interpretação do Intervalo de Confiança está equivocada. No Odds Ratio, a ausência de significância ocorre quando o intervalo cruza o valor 1,0 (exemplo: IC 0,80 a 2,50). Como o limite inferior do intervalo é 1,83 (maior que 1,0), o resultado é estatisticamente significativo.\n\nAlternativa D - INCORRETA: Assim como na alternativa anterior, o erro reside em afirmar que não há significância estatística. Se o intervalo de confiança não contém o 1,0 e ambos os limites estão acima deste valor, o fator estudado é considerado um fator de risco com relevância estatística. A precisão é indicada pela amplitude do intervalo (quanto mais estreito, mais preciso), mas a significância é determinada pela posição do intervalo em relação à unidade.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  },
+  {
+    "id": "AJUDA_86f8e802-ebbb-4475-9ba0-5b6dbec24281",
+    "originalId": "86f8e802-ebbb-4475-9ba0-5b6dbec24281",
+    "statement": "Mulher, 27 anos de idade, refere dor mamária que se inicia cerca de 15 dias antes da menstruação. A dor é bilateral e intensa, dificultando uso de vestimenta e a realização de atividade física. Faz uso de anti-inflamatórios e analgésicos, sem resultado adequado. Apresenta ciclos menstruais regulares com intervalo de 30 dias. Faz uso de preservativo como contraceptivo. O exame clínico realizado no décimo dia do ciclo menstrual, revela mamas simétricas, sem abaulamentos ou retrações e a palpação é de tecido fibroglandular sem nódulos ou espessamentos identificados. Qual é o tratamento mais eficiente para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vitamina E.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tamoxifeno.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Espironolactona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Progesterona natural.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um quadro clássico de mastalgia cíclica severa. A dor ocorre na fase lútea (15 dias antes da menstruação), é bilateral e tem impacto significativo na qualidade de vida, sendo refratária ao tratamento inicial com analgésicos e anti-inflamatórios comuns. O exame físico normal (sem nódulos) confirma que se trata de uma dor funcional, relacionada às variações hormonais do ciclo menstrual.\n\nAbaixo, a análise de cada alternativa:\n\nAlternativa a) Vitamina E. \nIncorreta. Por muitos anos, a vitamina E foi amplamente prescrita para dor mamária. No entanto, estudos clínicos randomizados e metanálises modernas demonstraram que sua eficácia é semelhante à do placebo. Portanto, não é considerada um tratamento eficiente para casos de dor intensa e persistente.\n\nAlternativa b) Tamoxifeno. \nCorreta. O tamoxifeno é um modulador seletivo dos receptores de estrogênio (SERM). Ele atua bloqueando a ação do estrogênio diretamente no tecido mamário. Para casos de mastalgia cíclica grave que não respondem a medidas conservadoras ou analgésicos simples, o tamoxifeno (geralmente na dose de 10 mg/dia) é comprovadamente o tratamento mais eficaz, apresentando taxas de melhora superiores a 70-90% dos casos. É importante notar que, embora seja muito eficaz, seu uso deve ser criterioso devido aos possíveis efeitos colaterais.\n\nAlternativa c) Espironolactona. \nIncorreta. A espironolactona é um diurético poupador de potássio com propriedades antiandrogênicas. Embora possa ser utilizada no manejo global da síndrome pré-menstrual (SPM) quando há queixa predominante de retenção hídrica e edema, ela não é a droga de escolha nem a mais eficiente para o tratamento específico da mastalgia cíclica isolada.\n\nAlternativa d) Progesterona natural. \nIncorreta. Antigamente, acreditava-se que a mastalgia era causada por uma deficiência de progesterona na segunda fase do ciclo. Contudo, estudos clínicos não conseguiram demonstrar uma superioridade consistente da suplementação de progesterona (seja via oral ou tópica) em relação ao placebo no alívio da dor mamária cíclica.\n\nResumo: Diante de uma mastalgia cíclica intensa e refratária, o tamoxifeno destaca-se na literatura médica como a opção farmacológica com maior nível de evidência para o controle dos sintomas.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Benignas da Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  },
+  {
+    "id": "AJUDA_86f90bce-db8f-4c3f-b3bd-082b79c2003f",
+    "originalId": "86f90bce-db8f-4c3f-b3bd-082b79c2003f",
+    "statement": "Gestante de 28 anos, GIIPI (PN), encontra-se em acompanhamento pré-natal em unidade de saúde da família, tendo retornado hoje para consulta de rotina. Realizou teste oral de tolerância à glicose (TOTG) com 26 semanas que apresentou o seguinte resultado: jejum = 89; 1h = 190; 2h = 157. A partir desse resultado, uma complicação esperada durante o período grávido-puerperal (gravidez, parto e puerpério) dessa gestante, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "morte fetal súbita",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "malformação fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipoglicemia neonatal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "restrição de crescimento intrauterino",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise dos dados e diagnóstico:\nA paciente apresenta um Teste Oral de Tolerância à Glicose (TOTG) alterado. Pelos critérios da Sociedade Brasileira de Diabetes e da FEBRASGO, o diagnóstico de Diabetes Mellitus Gestacional (DMG) é estabelecido quando pelo menos um dos valores do TOTG com 75g de glicose, realizado entre 24 e 28 semanas, encontra-se alterado. Os valores de referência são: Jejum entre 92 e 125 mg/dL; 1 hora igual ou superior a 180 mg/dL; 2 horas entre 153 e 199 mg/dL. No caso descrito, os valores de 1 hora (190 mg/dL) e 2 horas (157 mg/dL) estão acima do limite, confirmando o diagnóstico de DMG.\n\nAlternativa (a) Incorreta: A morte fetal súbita é uma complicação associada a quadros de descontrole glicêmico severo ou cetoacidose, sendo mais comum em gestantes com diabetes pré-gestacional tipo 1. Embora possa ocorrer no diabetes gestacional em casos de péssimo controle metabólico, não é a complicação mais rotineiramente esperada em comparação com as alterações metabólicas do recém-nascido.\n\nAlternativa (b) Incorreta: As malformações fetais (como a regressão caudal e cardiopatias) decorrem da hiperglicemia materna durante o primeiro trimestre, período da organogênese. Como o diabetes gestacional se desenvolve tipicamente na segunda metade da gravidez, após a formação dos órgãos, ele não aumenta o risco de malformações. Esse risco é característico do diabetes pré-gestacional (pacientes que já eram diabéticas antes de engravidar e iniciaram a gestação com mau controle glicêmico).\n\nAlternativa (c) Correta: A hipoglicemia neonatal é uma das complicações mais comuns no puerpério imediato de mães com diabetes gestacional. A fisiopatologia é direta: a glicose materna atravessa a placenta, mas a insulina não. A hiperglicemia materna gera hiperglicemia fetal, o que estimula o pâncreas do feto a produzir insulina em excesso (hiperinsulinismo). Ao nascer, o aporte de glicose via placenta é interrompido subitamente, mas o recém-nascido continua com níveis elevados de insulina circulante, o que provoca a queda rápida da sua glicemia.\n\nAlternativa (d) Incorreta: O diabetes gestacional está classicamente associado ao crescimento fetal excessivo (macrossomia), uma vez que a insulina fetal excessiva atua como um hormônio anabolizante. A restrição de crescimento intrauterino (RCIU) só costuma ocorrer em gestantes com diabetes pré-gestacional que já apresentam vasculopatia e comprometimento da função placentária, o que não é a evolução típica do diabetes que surge apenas durante a gestação.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  },
+  {
+    "id": "AJUDA_870073fe-2e92-421b-99b7-e6a98e34c803",
+    "originalId": "870073fe-2e92-421b-99b7-e6a98e34c803",
+    "statement": "Durante o pneumoperitônio para realização de cirurgias por acesso videolaparoscópico, algumas alterações hemodinâmicas podem ocorrer no paciente.\nEm relação a essas alterações, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "há diminuição do débito cardíaco, com aumento do retorno venoso;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ocorre hipotensão por compressão mecânica da aorta abdominal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a oligúria ocorre devido à hipercapnia e retenção de bicarbonato pelos rins;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a bradicardia ocorre por estímulo vasovagal pela distensão abdominal;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "arritmias cardíacas e outros distúrbios de ritmo cardíaco são raros.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nAlternativa a: Incorreta. O estabelecimento do pneumoperitônio aumenta a pressão intra-abdominal, o que causa compressão da veia cava inferior. Isso resulta em uma diminuição do retorno venoso (pré-carga) e, consequentemente, em uma redução do débito cardíaco. A alternativa erra ao afirmar que há aumento do retorno venoso.\n\nAlternativa b: Incorreta. Embora ocorra compressão mecânica da aorta abdominal, o efeito clínico predominante é o aumento da resistência vascular sistêmica (pós-carga) devido a fatores mecânicos e à liberação de mediadores neuro-humorais (como catecolaminas e sistema renina-angiotensina). Isso geralmente causa hipertensão arterial, e não hipotensão.\n\nAlternativa c: Incorreta. A oligúria no pneumoperitônio é multifatorial, sendo causada principalmente pela compressão direta do parênquima renal, compressão da veia renal e redução do fluxo sanguíneo renal, o que diminui a taxa de filtração glomerular. Também há influência hormonal, como o aumento do hormônio antidiurético (ADH) e da aldosterona. A retenção de bicarbonato não é a causa da oligúria.\n\nAlternativa d: Correta. A distensão súbita e rápida do peritônio parietal durante a insuflação de gás (CO2) estimula receptores de estiramento que desencadeiam uma resposta mediada pelo nervo vago. Esse reflexo vasovagal pode resultar em bradicardia importante e, em casos mais graves, até assistolia momentânea. É uma intercorrência clássica do início do pneumoperitônio.\n\nAlternativa e: Incorreta. Distúrbios de ritmo cardíaco e arritmias não são raros durante a videolaparoscopia. Eles podem ocorrer por diversos motivos, incluindo a hipercapnia (que causa acidose respiratória e sensibiliza o miocárdio), a estimulação do sistema nervoso simpático e o reflexo vagal por distensão peritoneal.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  },
+  {
+    "id": "AJUDA_8700d5f5-cb8e-4437-beb1-0e2c04cf39a3",
+    "originalId": "8700d5f5-cb8e-4437-beb1-0e2c04cf39a3",
+    "statement": "A Febre Reumática (FR) é a principal causa de cardiopatia adquirida entre 5 anos e 15 anos (infância e adolescência) no Brasil. Com relação à sua prevenção, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A profilaxia primária com a penicilina G benzatina previne a recorrência e a progressão da doença, além de diminuir a gravidade e a mortalidade relacionadas à doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Carência de atendimento médico, condições precárias de saneamento e higiene e aglomerados populacionais estão associados à incidência de FR.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Esforços têm sido realizados para a produção de vacinas contra o S. pyogenes, a fim de reduzir a incidência e prevalência da FR no país. Um facilitador na produção delas é a baixa diversidade de cepas causadoras da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento precoce das faringotonsilites estreptocócicas configura importante forma de prevenção do desenvolvimento da FR. O uso da penicilina G benzatina na prevenção primária não tem apresentado resultados satisfatórios devido ao surgimento de resistência antibiótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Febre Reumática (FR) é uma complicação tardia e não supurativa de uma faringotonsilite causada pelo Streptococcus pyogenes (estreptococo do grupo A). No Brasil, ela permanece como um grave problema de saúde pública, intimamente ligado às condições socioeconômicas. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa A: Incorreta. Existe uma distinção fundamental entre os conceitos de profilaxia. A profilaxia primária consiste no diagnóstico e no tratamento corretos da faringotonsilite estreptocócica aguda para evitar que o primeiro surto de Febre Reumática ocorra. Já a profilaxia secundária é aquela realizada em pacientes que já tiveram a doença, por meio de doses regulares de penicilina benzatina, com o objetivo de evitar novos surtos (recorrências) que agravariam as lesões valvares (progressão). Portanto, a descrição da alternativa refere-se à profilaxia secundária, não à primária.\n\nAlternativa B: Correta. A Febre Reumática é considerada uma doença da negligência social. A aglomeração populacional (especialmente em dormitórios e escolas) facilita a transmissão aérea do Streptococcus pyogenes. A carência de atendimento médico impede o diagnóstico precoce e o tratamento adequado das faringites, enquanto as condições precárias de saneamento e higiene refletem o baixo nível socioeconômico da população mais vulnerável à doença.\n\nAlternativa C: Incorreta. Embora existam pesquisas para o desenvolvimento de vacinas, o principal obstáculo (e não facilitador) é a enorme diversidade genética do S. pyogenes. A bactéria apresenta uma grande variedade de proteínas M (mais de 200 tipos diferentes), que são o principal alvo imunogênico. Essa alta variabilidade dificulta a criação de uma vacina que confira proteção contra todas as cepas reumatogênicas.\n\nAlternativa D: Incorreta. A primeira frase está correta: o tratamento precoce da faringotonsilite é, de fato, a base da prevenção primária. No entanto, a segunda parte da afirmação é falsa. A penicilina G benzatina continua sendo o padrão-ouro e é extremamente eficaz. Até hoje, não foi documentada resistência do Streptococcus pyogenes à penicilina na prática clínica. O insucesso terapêutico, quando ocorre, geralmente está ligado à falta de adesão ou a um erro diagnóstico, e não à resistência bacteriana ao antibiótico.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Febre Reumática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  },
+  {
+    "id": "AJUDA_8703dd5a-642b-4fbe-9b4c-501e488df5b3",
+    "originalId": "8703dd5a-642b-4fbe-9b4c-501e488df5b3",
+    "statement": "Assinale a opção INCORRETA, em relação às Infecções Respiratórias Agudas na Infância (IRA):",
+    "options": [
+      {
+        "id": "A",
+        "text": "As IRA ocorrem com frequência na infância, de 4 a 6 episódios por ano, sobretudo naqueles menores de 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A exposição precoce de crianças a ambientes como creches e berçários, propiciam infecções, especialmente virais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cerca de 2 a 3% das IRA evoluem para pneumonias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A pneumonia é a primeira causa de morte entre as doenças infecciosas e a segunda causa geral de óbitos infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O agente etiológico que mais frequentemente causa Pneumonia Adquirida na Comunidade (PAC), no período da infância é o Mycoplasma pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda o panorama epidemiológico e etiológico das Infecções Respiratórias Agudas (IRA) na pediatria. O objetivo é identificar a alternativa incorreta entre as afirmações apresentadas.\n\nAlternativa A: Correta. É esperado que crianças, especialmente nos primeiros cinco anos de vida, apresentem entre 4 e 8 episódios de infecções respiratórias por ano. Esse número pode ser ainda maior em crianças que frequentam ambientes coletivos. A maioria desses episódios restringe-se às vias aéreas superiores.\n\nAlternativa B: Correta. A frequência a creches e berçários é um dos principais fatores de risco para IRA. O contato próximo entre crianças facilita a transmissão de patógenos, predominantemente virais (como o Vírus Sincicial Respiratório, Rinovírus e Influenza), devido à imaturidade do sistema imunológico e aos hábitos de higiene próprios da idade.\n\nAlternativa C: Correta. Embora a incidência de IRA seja muito alta, a grande maioria (cerca de 95% ou mais) é autolimitada e atinge apenas as vias superiores (resfriado comum, faringites). Apenas uma pequena parcela, estimada entre 2% e 3%, complica ou evolui para o trato respiratório inferior, caracterizando a pneumonia.\n\nAlternativa D: Correta. De acordo com dados da Organização Mundial da Saúde (OMS) e do Ministério da Saúde, a pneumonia permanece como a principal causa de óbito por doenças infecciosas em crianças menores de 5 anos no mundo, figurando logo após as causas neonatais no ranking geral de mortalidade infantil.\n\nAlternativa E: Incorreta (Gabarito). Esta é a afirmação falsa porque o agente etiológico que mais frequentemente causa Pneumonia Adquirida na Comunidade (PAC) em pediatria, considerando a etiologia bacteriana em todas as faixas etárias, é o Streptococcus pneumoniae (pneumococo). É importante ressaltar que, de uma forma geral (incluindo todas as causas), os vírus são os agentes mais comuns em crianças menores de 5 anos. O Mycoplasma pneumoniae é um agente importante em escolares e adolescentes (pneumonia atípica), mas nunca o mais frequente na infância como um todo.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  },
+  {
+    "id": "AJUDA_870e9b6e-8ca9-47e8-93ad-aad98ea93956",
+    "originalId": "870e9b6e-8ca9-47e8-93ad-aad98ea93956",
+    "statement": "Seu Desidório, 68 anos, buscou consulta na Estratégia Saúde da Família com quadro de náuseas, fraqueza e leve vertigem. Adscrito ao Hiperdia, apresentou receita com uso regular de oito medicamentos. O médico da unidade suspendeu quatro dos medicamentos em uso e promoveu, dessa forma,",
+    "options": [
+      {
+        "id": "A",
+        "text": "prevenção primária, com desintoxicação de medicamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "prevenção secundária, observando com atenção os custos do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "desmedicalização, correspondendo à prevenção quaternária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "prevenção terciária, com melhora das funções cognitivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "prevenção terciária, evitando quedas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um paciente idoso (Seu Desidório, 68 anos) que apresenta polifarmácia (uso de oito medicamentos) e sintomas que sugerem iatrogenia, ou seja, efeitos adversos ou interações causadas pelo próprio tratamento médico. A decisão do médico de suspender medicamentos desnecessários é uma estratégia fundamental na prática clínica atual.\n\nAlternativa a: Incorreta. A prevenção primária é o conjunto de ações realizadas para impedir o surgimento de uma doença, atuando sobre a população saudável ou sobre fatores de risco (exemplos: vacinação, uso de preservativos ou orientação para cessação do tabagismo). A retirada de medicamentos para tratar efeitos colaterais não se enquadra nessa definição.\n\nAlternativa b: Incorreta. A prevenção secundária consiste no diagnóstico precoce e no rastreamento de doenças em fases iniciais ou assintomáticas, visando a um tratamento mais eficaz e à cura (exemplos: realização de mamografia, preventivo do colo do útero ou dosagem de glicemia). O foco da questão é a redução de danos causados pelo excesso de intervenção, não o rastreio.\n\nAlternativa c: Correta. A prevenção quaternária é definida como a detecção de indivíduos em risco de intervenções médicas excessivas ou desnecessárias, visando a protegê-los de novas invasões médicas e sugerindo alternativas eticamente aceitáveis. No caso de Seu Desidório, a polifarmácia estava causando danos (náuseas, fraqueza, vertigem). Ao suspender medicamentos (desprescrição), o médico pratica a prevenção quaternária, combatendo a medicalização excessiva e a iatrogenia.\n\nAlternativa d: Incorreta. A prevenção terciária foca na redução de incapacidades e na reabilitação de pacientes com doenças já estabelecidas, visando a melhorar a qualidade de vida e a evitar complicações (exemplos: fisioterapia pós-AVC ou controle rigoroso de pé diabético). Embora a suspensão de drogas possa melhorar a cognição, o conceito de \"evitar o excesso de intervenção\" pertence à esfera quaternária.\n\nAlternativa e: Incorreta. Pelo mesmo motivo da alternativa anterior, a prevenção terciária não define a ação de retirar medicamentos para evitar danos causados pelo sistema de saúde. Embora evitar quedas seja um benefício clínico da desprescrição em idosos, a classificação correta da estratégia de vigilância contra o excesso de medicação é a prevenção quaternária.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  },
+  {
+    "id": "AJUDA_8712e307-8df5-4ccc-a577-3d0c8ffdc665",
+    "originalId": "8712e307-8df5-4ccc-a577-3d0c8ffdc665",
+    "statement": "Paciente de 50 anos recebeu recentemente o diagnóstico de câncer de mama, e o resultado do perfil imuno-histoquímico indicou tumor luminal A. Esse resultado",
+    "options": [
+      {
+        "id": "A",
+        "text": "expressa receptor hormonal, não expressa HER 2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "expressa receptor hormonal, expressa HER 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "não expressa receptor hormonal, não expressa HER 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não expressa receptor hormonal, expressa HER 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "assemelha-se molecularmente ao tecido epitelial normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O câncer de mama é classificado em diferentes subtipos moleculares por meio da imuno-histoquímica, o que direciona o prognóstico e a estratégia terapêutica. Os principais marcadores analisados são o receptor de estrogênio (RE), o receptor de progesterona (RP), a proteína HER2 e o índice de proliferação celular (Ki-67).\n\nAlternativa a) Correta. O subtipo Luminal A é caracterizado pela forte expressão de receptores hormonais (estrogênio e/ou progesterona) e pela ausência de superexpressão ou amplificação da proteína HER2. Clinicamente, são tumores de crescimento mais lento, com baixo índice de proliferação celular (Ki-67 baixo) e apresentam o melhor prognóstico entre os subtipos moleculares, sendo altamente responsivos à hormonioterapia.\n\nAlternativa b) Incorreta. A expressão de receptores hormonais associada à expressão do HER2 define o subtipo Luminal B (especificamente o Luminal B-HER2 positivo). Esses tumores são geralmente mais agressivos que o Luminal A e requerem tratamento combinado com terapia anti-HER2 e hormonioterapia.\n\nAlternativa c) Incorreta. A ausência de receptores hormonais e a ausência de HER2 definem o subtipo Triplo-Negativo. Este grupo é conhecido por sua maior agressividade, maior risco de metástases precoces e falta de alvos para terapias hormonais ou anti-HER2, sendo tratado predominantemente com quimioterapia.\n\nAlternativa d) Incorreta. O perfil que não expressa receptores hormonais, mas expressa HER2, é classificado como subtipo HER2-puro (HER2-enriched). São tumores com comportamento biológico agressivo, mas que apresentam excelente resposta a terapias-alvo específicas (como o trastuzumabe).\n\nAlternativa e) Incorreta. Embora exista um subtipo denominado Normal Breast-like, que possui semelhanças moleculares com o tecido mamário normal, ele não se confunde com o Luminal A. O Luminal A tem características bem definidas de linhagem luminal (epitelial), mas com padrões de expressão gênica neoplásica específicos.\n\nEm resumo, para fins de prova, guarde que Luminal A é RE/RP positivo, HER2 negativo e possui baixo Ki-67.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  },
+  {
+    "id": "AJUDA_87148c5b-8601-4078-ae87-d26459409a2d",
+    "originalId": "87148c5b-8601-4078-ae87-d26459409a2d",
+    "statement": "Com relação ao metabolismo em pacientes cirúrgicos, a hipercalcemia está mais frequentemente relacionada à seguinte situação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tireoidectomia total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hipoparatireoidismo primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hiperparatireoidismo primário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "síndrome compartimental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tireotoxicose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A hipercalcemia, caracterizada pelo aumento dos níveis de cálcio sérico acima dos valores de referência, é um distúrbio metabólico com diversas implicações na prática cirúrgica. A regulação do cálcio depende fundamentalmente do paratormônio (PTH), da vitamina D e da calcitonina.\n\nAlternativa (a) Incorreta: A tireoidectomia total é, na verdade, uma causa frequente de hipocalcemia (cálcio baixo) no pós-operatório. Isso acontece devido à manipulação, desvascularização ou remoção acidental das glândulas paratireoides durante a cirurgia, o que reduz a produção de PTH e, consequentemente, os níveis de cálcio.\n\nAlternativa (b) Incorreta: O hipoparatireoidismo primário refere-se à produção insuficiente de paratormônio pelas glândulas paratireoides. Sem PTH suficiente, o organismo não consegue mobilizar cálcio dos ossos nem reabsorvê-lo adequadamente nos rins, resultando em hipocalcemia, e não hipercalcemia.\n\nAlternativa (c) Correta: O hiperparatireoidismo primário é a causa mais comum de hipercalcemia em pacientes não hospitalizados e uma condição cirúrgica clássica. Geralmente é causado por um adenoma solitário em uma das glândulas paratireoides, que passa a secretar PTH de forma autônoma e excessiva. Esse excesso de hormônio aumenta a reabsorção óssea e a absorção renal/intestinal de cálcio, levando à hipercalcemia.\n\nAlternativa (d) Incorreta: Na síndrome compartimental e em casos de rabdomiólise (destruição muscular grave), o cenário mais comum na fase aguda é a hipocalcemia. Isso ocorre porque o cálcio se deposita nos tecidos musculares lesados. Embora uma hipercalcemia de rebote possa ocorrer na fase de recuperação (especialmente se houver insuficiência renal associada), ela não é a apresentação típica ou mais frequente relacionada à condição.\n\nAlternativa (e) Incorreta: A tireotoxicose (excesso de hormônios tireoidianos) pode causar hipercalcemia leve em alguns pacientes devido ao aumento do turnover ósseo (estimulação dos osteoclastos). No entanto, essa não é a causa mais frequente entre as opções apresentadas, sendo o hiperparatireoidismo primário muito mais prevalente e diretamente ligado ao manejo do metabolismo do cálcio em pacientes cirúrgicos.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral",
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:15.739Z"
+  }
+]

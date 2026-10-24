@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_5c2bbb28-495c-4799-8e21-c7bd277d8fd3",
+    "originalId": "5c2bbb28-495c-4799-8e21-c7bd277d8fd3",
+    "statement": "Menino, 9 meses, apresentou episódio de infecção urinária febril, com necessidade de internação e antibioticoterapia endovenosa. Esse é o segundo episódio com necessidade de internação. Na primeira internação, aos 6 meses, realizou ecografia de vias urinárias, com resultado normal. Da atual internação, recebeu alta com orientação de manter profilaxia antibiótica diária, até obtenção do resultado dos exames solicitados. Mãe traz o paciente à consulta com resultado de uretrocistografia miccional indicando refluxo vesicoureteral bilateral grau II (RVU-II). Considerando o caso apresentado, qual deve ser a conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Modificar profilaxia antibiótica para frequência de 3 vezes na semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar uretrocistografias miccionais periódicas para controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar correção cirúrgica do refluxo vesicoureteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender profilaxia antibiótica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico aborda a conduta no refluxo vesicoureteral (RVU) de baixo grau (grau II bilateral) em um lactente de 9 meses após episódios de infecção do trato urinário (ITU) febril.\n\nAlternativa A - Incorreta. Quando a profilaxia antibiótica é indicada, a administração deve ser contínua e diária, geralmente em dose única noturna, para manter níveis urinários protetores durante o período de maior estase. Não há respaldo científico para o uso intermitente de três vezes por semana no manejo do refluxo vesicoureteral.\n\nAlternativa B - Incorreta. A uretrocistografia miccional (UCM) é um procedimento invasivo, que demanda sondagem vesical e emite radiação ionizante. A repetição periódica do exame não é indicada de rotina para acompanhamento de RVU de baixo grau (I e II), sendo o seguimento baseado na vigilância clínica e na investigação de novos episódios febris.\n\nAlternativa C - Incorreta. A intervenção cirúrgica (reimplante ureteral ou tratamento endoscópico) é reservada para refluxos de alto grau (graus IV e V), formação progressiva de cicatrizes renais ou falha do manejo clínico (ITUs febris de repetição sob profilaxia). O RVU grau II possui excelente prognóstico e altíssima taxa de resolução espontânea com o crescimento da criança.\n\nAlternativa D - Correta. Segundo as diretrizes atuais da Academia Americana de Pediatria (AAP) e da Sociedade Brasileira de Pediatria (SBP), a conduta padrão para o RVU de baixo grau (graus I e II) é a suspensão da profilaxia antibiótica associada à observação clínica vigilante. Evidências clínicas demonstraram que a profilaxia nesses graus não previne a formação de cicatrizes renais e aumenta o risco de indução de resistência bacteriana. A orientação adequada consiste em orientar os pais a realizarem urocultura e procurarem atendimento imediato diante de qualquer episódio febril sem foco definido, garantindo diagnóstico e tratamento precoces.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  },
+  {
+    "id": "AJUDA_5c2ccef2-8fe7-4e56-ad9c-2fc16984edc8",
+    "originalId": "5c2ccef2-8fe7-4e56-ad9c-2fc16984edc8",
+    "statement": "Menino, 5 dias de vida, apresenta icterícia colestática, púrpura, hepatomegalia e esplenomegalia. Emissão otoacústica: resposta ausente bilateral. Tomografia de crânio: atrofia cortical, dilatação ventricular e calcificações periventriculares. Considerando o diagnóstico mais provável, qual exame é o mais recomendado para identificar o agente etiológico da doença?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cultura no líquido cefalorraquidiano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cultura no sangue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dosagem de IgM específica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "PCR na urina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico e Análise da Questão:\n\nO quadro clínico descreve um recém-nascido com a tríade clássica do citomegalovírus (CMV) congênito: icterícia colestática com hepatoesplenomegalia (sinais de acometimento sistêmico), deficiência auditiva (identificada pela ausência de resposta na emissão otoacústica) e achados radiológicos específicos (calcificações periventriculares, atrofia cortical e ventriculomegalia). As calcificações periventriculares são o sinal radiológico mais característico para diferenciar o CMV de outras infecções congênitas, como a toxoplasmose, que geralmente apresenta calcificações difusas pelo parênquima.\n\nAnálise das Alternativas:\n\na) Incorreta. A cultura do líquido cefalorraquidiano (LCR) é utilizada principalmente para o diagnóstico de meningites bacterianas ou fúngicas. Embora o CMV possa ser detectado no LCR por PCR em casos de acometimento do sistema nervoso central, a urina é um sítio de coleta muito mais sensível, menos invasivo e com maior carga viral.\n\nb) Incorreta. Hemoculturas são o padrão-ouro para o diagnóstico de sepse bacteriana neonatal. O CMV é um vírus e não cresce em meios de cultura de rotina para bactérias e fungos.\n\nc) Incorreta. A dosagem de IgM específica para CMV no recém-nascido apresenta baixa sensibilidade (cerca de 70%). Além disso, resultados falsos-positivos podem ocorrer. O diagnóstico de infecção congênita por CMV deve ser feito preferencialmente pela detecção direta do vírus (DNA viral).\n\nd) Correta. O PCR (Reação em Cadeia da Polimerase) na urina ou na saliva é o método de escolha para o diagnóstico de CMV congênito. O vírus é excretado em grandes quantidades na urina dos recém-nascidos infectados. Para confirmar que a infecção é congênita (e não adquirida durante ou após o parto), a coleta deve ser realizada obrigatoriamente nas primeiras 3 semanas de vida. O PCR substituiu a cultura viral (método shell-vial) devido à sua alta sensibilidade, especificidade e rapidez.\n\nGabarito: Letra (d).",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  },
+  {
+    "id": "AJUDA_5c3a5c27-b63e-4cbf-b527-e118af41fd86",
+    "originalId": "5c3a5c27-b63e-4cbf-b527-e118af41fd86",
+    "statement": "Criança de 5 anos de idade é internada para tratamento de febre e diarreia de 5 dias de evolução. Ao exame físico na ectoscopia, observado regular estado geral, hipocorada (3+/4+), desidratada (1+/4+), afebril, cabelos finos e quebradiços; aparelho cardiovascular: taquicárdica, pulsos periféricos cheios, tempo de enchimento capilar de 2 segundos, normotensa; aparelho respiratório: ausculta e frequência normais; aparelho digestivo: abdome plano, algo doloroso, sem defesa. Realizada aferição de peso e estatura, com peso/estatura e estatura/idade entre -2DP e -3DP segundo NHCS, glicemia capilar normal. Sobre o quadro descrito, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O primeiro passo no tratamento é estabilizar o paciente, sendo recomendada primeiramente hidratação preferencialmente via oral, correção de distúrbios hidroeletrolíticos caso presentes e tratamento de quadro infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O primeiro passo no tratamento é estabilizar o paciente, sendo recomendada primeiramente hidratação, preferencialmente via endovenosa, correção de distúrbios hidroeletrolíticos, caso presentes, e tratamento de quadro infeccioso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O primeiro passo no tratamento é iniciar antibioticoterapia endovenosa na primeira hora, oxigênio por cateter nasal, almejando saturação acima de 94% e expansão volêmica de 20mL/kG de soro fisiológico 0,9% endovenosa livre. A alimentação deve ser iniciada na fase de reabilitação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O primeiro passo no tratamento é iniciar antibioticoterapia endovenosa na primeira hora, oxigênio por cateter nasal, almejando saturação acima de 94% e transfusão de concentrado de hemácias 10mL/kG em 3 horas. A alimentação deve ser iniciada na fase de estabilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve uma criança com desnutrição moderada a grave, evidenciada pelos índices antropométricos (Z-score entre -2 e -3 para peso/estatura e estatura/idade), além de sinais clínicos como cabelos finos e quebradiços. O paciente apresenta complicações agudas que motivaram a internação: febre e diarreia (sugerindo infecção), desidratação e anemia clínica importante (hipocorada 3+/4+). O manejo da desnutrição grave é dividido em três fases: estabilização, reabilitação e acompanhamento.\n\nAlternativa a) Incorreta. De acordo com os protocolos clássicos da Organização Mundial da Saúde (OMS) e do Ministério da Saúde para o tratamento da desnutrição grave, a reidratação deve ser feita preferencialmente por via oral ou por sonda nasogástrica, utilizando o ReSoMal (solução de reidratação para desnutridos), pois a via endovenosa traz um risco elevado de sobrecarga cardíaca. No entanto, o gabarito oficial da questão optou pela alternativa b, possivelmente interpretando que a gravidade clínica (taquicardia e anemia severa) e o ambiente hospitalar demandariam uma estabilização por via endovenosa para controle rigoroso.\n\nAlternativa b) Correta. A fase de estabilização (que ocorre nos primeiros sete dias) foca em tratar as condições que podem levar ao óbito: hipoglicemia, hipotermia, desidratação, distúrbios hidroeletrolíticos (especialmente de potássio e magnésio) e infecções. Devido ao comprometimento do estado geral e aos sinais vitais alterados (taquicardia), a estabilização com suporte de hidratação e correção eletrolítica, associada ao tratamento precoce da infecção (antibioticoterapia), é o passo prioritário no manejo hospitalar, conforme o entendimento da banca examinadora.\n\nAlternativa c) Incorreta. Esta alternativa contém um erro crítico no tratamento de crianças desnutridas: a expansão volêmica com 20 mL/kg de soro fisiológico em regime de fluxo livre. Devido à atrofia da massa miocárdica e às alterações hemodinâmicas da desnutrição, esses pacientes não toleram grandes volumes rápidos, evoluindo facilmente para insuficiência cardíaca e edema agudo de pulmão. Caso haja choque, a recomendação é de volumes menores (15 mL/kg) e infusão lenta (em uma hora). Além disso, a alimentação deve ser iniciada de forma precoce e cautelosa ainda na fase de estabilização, e não apenas na reabilitação.\n\nAlternativa d) Incorreta. Embora a criança apresente anemia severa (3+/4+), a transfusão de concentrado de hemácias não é a prioridade isolada ou o primeiro passo absoluto do tratamento sem considerar a estabilização hemodinâmica e infecciosa global. Além disso, a transfusão no desnutrido deve ser feita com extrema cautela, geralmente reservada para casos com hemoglobina abaixo de 4 g/dL ou sinais de insuficiência cardíaca. A alternativa b descreve de forma mais abrangente os pilares da fase de estabilização inicial.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Diarreia",
+      "Desnutrição na Infância"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  },
+  {
+    "id": "AJUDA_5c452c6e-ffeb-4b08-8fea-7b3d55e91347",
+    "originalId": "5c452c6e-ffeb-4b08-8fea-7b3d55e91347",
+    "statement": "Em uma reunião sobre gestão em saúde, foi debatido o papel das Redes de Atenção à Saúde (RAS) no Sistema Único de Saúde (SUS). Um dos participantes questionou sobre a principal finalidade das RAS. Qual das alternativas abaixo melhor descreve essa finalidade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descentralizar totalmente a gestão do SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Garantir atendimento apenas nos grandes centros urbanos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Priorizar exclusivamente a alta complexidade no atendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Organizar a integração de serviços de saúde de diferentes densidades tecnológicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "As Redes de Atenção à Saúde (RAS) são fundamentais para o funcionamento do SUS, rompendo com a visão de atendimentos isolados e fragmentados para promover um cuidado contínuo e integral. A seguir, analisamos cada alternativa:\n\nAlternativa (a) Incorreta: A descentralização é um princípio organizativo do SUS, previsto na Constituição, que redistribui poder e responsabilidades entre as esferas de governo (União, Estados e Municípios). Embora as RAS facilitem a gestão regionalizada, sua finalidade precípua não é a descentralização da gestão, mas sim a organização do fluxo assistencial.\n\nAlternativa (b) Incorreta: Um dos objetivos das RAS é justamente o contrário: a regionalização. A ideia é organizar os serviços em regiões de saúde para que o cidadão encontre assistência o mais próximo possível de sua residência, evitando o deslocamento desnecessário para grandes centros, a menos que a complexidade do caso exija.\n\nAlternativa (c) Incorreta: As RAS não priorizam um único nível de complexidade. Pelo contrário, elas integram todos eles. Cabe ressaltar que a Atenção Primária à Saúde (APS) exerce o papel fundamental de centro de comunicação e coordenadora do cuidado dentro dessa rede, sendo a porta de entrada preferencial.\n\nAlternativa (d) Correta: Esta alternativa define com precisão o conceito de RAS. Elas são arranjos organizativos que integram ações e serviços de saúde, indo desde a baixa densidade tecnológica (Atenção Primária) até a alta densidade (hospitais de alta complexidade e centros especializados). O objetivo é garantir a integralidade da assistência, assegurando que o paciente percorra todos os pontos necessários do sistema de forma coordenada e eficiente.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Processos de Descentralização e Regionalização do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  },
+  {
+    "id": "AJUDA_5c538798-d83f-432e-a747-559d44fd6499",
+    "originalId": "5c538798-d83f-432e-a747-559d44fd6499",
+    "statement": "Menina de 1 ano e 8 meses, previamente saudável, apresenta febre há 3 dias, irritabilidade, recusa alimentar e vômitos isolados. Ao exame, encontra-se em mau estado geral, febril (38,8 ºC), taquicárdica, com dor à palpação do flanco esquerdo. Exames laboratoriais revelam leucocitose de 16.000/mm³, neutrofilia, leucocitúria +++, hematúria microscópica e nitrito positivo. Urocultura por cateterismo foi coletada, e o antibiograma estará disponível em 72h.\n\nFrente aos achados clínico-laboratoriais, qual o manejo terapêutico apropriado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ceftriaxone intravenosa e troca para antibiótico oral após 48h sem febre.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cefalexina por via oral por 10 dias, com reavaliação ambulatorial em 48h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manutenção de suporte clínico até que saia o resultado da urocultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ciprofloxacina por via intravenosa até que saia o resultado da urocultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo da Infecção do Trato Urinário (ITU) febril, especificamente a pielonefrite, em uma criança pequena. O quadro clínico de febre, dor em flanco, irritabilidade, vômitos e mau estado geral, associado aos achados laboratoriais (leucocitúria, nitrito positivo e leucocitose), confirma a necessidade de início imediato de antibioticoterapia.\n\nAlternativa A (Correta): A paciente apresenta sinais de gravidade, como mau estado geral, taquicardia (sugerindo sepse inicial) e vômitos, o que impossibilita a garantia de absorção por via oral. Nesses casos, a indicação inicial é de antibioticoterapia parenteral (intravenosa ou intramuscular). A ceftriaxona é uma cefalosporina de terceira geração com excelente cobertura para os principais patógenos urinários (como *E. coli*). A prática de realizar o *step-down* (troca para via oral) após melhora clínica e 48 horas de apirexia é a conduta padrão recomendada pelas principais diretrizes pediátricas para completar o tratamento (geralmente de 7 a 14 dias no total).\n\nAlternativa B (Incorreta): Embora a via oral possa ser utilizada em casos selecionados de pielonefrite, ela é contraindicada nesta paciente devido ao mau estado geral e à presença de vômitos. Além disso, a cefalexina (cefalosporina de primeira geração) apresenta taxas de resistência maiores do que as das cefalosporinas de terceira geração, não sendo a primeira escolha para um quadro com sinais de toxemia.\n\nAlternativa C (Incorreta): Jamais se deve aguardar o resultado da urocultura para iniciar o tratamento em uma criança com suspeita de pielonefrite e sinais sistêmicos. O atraso no início do antibiótico aumenta o risco de lesões cicatriciais renais definitivas e de evolução para choque séptico. O tratamento deve ser empírico e iniciado logo após a coleta dos exames.\n\nAlternativa D (Incorreta): A ciprofloxacina (quinolona) não é utilizada como primeira linha no tratamento empírico de ITU em pediatria. Seu uso é restrito a casos de microrganismos multirresistentes (como *Pseudomonas aeruginosa*) ou quando não há outras opções terapêuticas seguras, devido ao risco potencial de toxicidade em cartilagens de crescimento observado em estudos animais, embora esse risco seja muito baixo na prática clínica. A ceftriaxona é mais indicada e segura para este cenário inicial.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  },
+  {
+    "id": "AJUDA_5c5580f5-a2ae-4c51-a90a-e2a946b9a627",
+    "originalId": "5c5580f5-a2ae-4c51-a90a-e2a946b9a627",
+    "statement": "Homem de 29 anos, previamente hígido, procura atendimento por sangramento retal há 10 dias. Refere sangue vermelho vivo que escorre pelo vaso sanitário imediatamente após evacuar. Relata dor anal intensa e lancinante durante a evacuação, que persiste por 20 a 30 minutos após o término, levando-o a evitar evacuar. Nega prurido anal, prolapsos, febre, diarreia ou perda ponderal. O hábito intestinal tornou-se mais preso nos últimos dias devido ao medo de evacuar. Ao exame físico, o toque retal não é realizado devido à dor intensa à tentativa de introdução do dedo. A inspeção anal revela hipertonia esfincteriana e pequena área linear eritematosa na linha média posterior, extremamente dolorosa ao afastamento suave das nádegas. Não há hemorroidas externas trombosadas, nem prolapsos visíveis. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemorroidas internas grau II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Proctite infecciosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoplasia de canal anal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fissura anal aguda",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Pólipo retal pediculado sangrante",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta é uma questão clássica de proctologia, focada no diagnóstico diferencial das patologias orificiais. O quadro clínico apresenta o que chamamos de \"quadrilátero diagnóstico\" da fissura anal.\n\nAnálise das alternativas:\n\na) INCORRETA. As hemorroidas internas grau II caracterizam-se por sangramento rutilante e prolapso que regride espontaneamente. A característica fundamental que descarta essa opção é a DOR. Hemorroidas internas habitualmente não doem, a menos que estejam estranguladas ou trombosadas (o que não condiz com o sangramento descrito e o tempo de evolução).\n\nb) INCORRETA. A proctite infecciosa geralmente se apresenta com tenesmo (vontade constante de evacuar), urgência fecal, eliminação de muco ou pus e, em alguns casos, diarreia. Embora possa causar desconforto, a dor específica \"lancinante durante a evacuação\" associada a uma lesão linear visível é patognomônica de fissura.\n\nc) INCORRETA. O câncer anal costuma se manifestar como uma lesão ulcerada de bordas endurecidas, vegetante ou infiltrativa, geralmente com evolução mais prolongada e sintomas constitucionais ou linfonodomegalias inguinais. A descrição de uma \"área linear eritematosa\" em um paciente jovem e hígido aponta fortemente para uma patologia benigna aguda.\n\nd) CORRETA. O diagnóstico de Fissura Anal Aguda baseia-se na história de dor intensa (\"em facada\" ou lancinante) desencadeada pela passagem das fezes, que persiste por minutos ou horas após a evacuação devido ao espasmo do esfíncter interno do ânus. O sangramento é pequeno, geralmente no papel ou gotejando no vaso. Ao exame, a hipertonia esfincteriana impede o toque retal (que é contraindicado no primeiro atendimento por ser intolerável ao paciente) e a inspeção revela a lesão linear, mais comum na linha média posterior (90% dos casos).\n\ne) INCORRETA. Pólipos retais podem causar sangramento, mas não provocam dor lancinante nem hipertonia esfincteriana. Quando pediculados e baixos, podem prolapsar, mas não explicam o quadro de dor aguda e persistente descrito.\n\nConclusão:\nA tríade de dor à evacuação, sangramento rutilante e hipertonia esfincteriana, somada à visualização da lesão linear na linha média posterior, fecha o diagnóstico de fissura anal. O fato de os sintomas durarem apenas 10 dias define a fase aguda; a cronicidade (fissura crônica) seria marcada pela presença da tríade de Brodie (sentinela cutânea, fissura com fundo fibrinoso e papila anal hipertrófica).",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  },
+  {
+    "id": "AJUDA_5c55caca-7b5c-4ed0-90e1-0930158ee4f4",
+    "originalId": "5c55caca-7b5c-4ed0-90e1-0930158ee4f4",
+    "statement": "Um homem de 70 anos, obeso e hipertenso, procura pronto-socorro por sensação de \"batedeira\" há 2 dias. Ao solicitar um eletrocardiograma (ECG), observa-se um ritmo irregular, frequência cardíaca em torno de 120 bpm, ausência de onda P, QRS estreito, sem sinais de sobrecarga ou isquemia. Somente pela descrição, é possível concluir que esse paciente possui:",
+    "options": [
+      {
+        "id": "A",
+        "text": "fibrilação atrial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "extrassístoles.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "taquicardia sinusal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "taquicardia ventricular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "flutter atrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta fatores de risco importantes para arritmias supraventriculares, como idade avançada, obesidade e hipertensão arterial. A queixa de batedeira (palpitações) com dois dias de evolução sugere um quadro de arritmia sustentada.\n\nInterpretação do ECG:\nOs achados descritos são a chave para o diagnóstico. O ritmo irregular (intervalos R-R variáveis), a ausência de onda P e a presença de complexos QRS estreitos formam a tríade clássica da Fibrilação Atrial (FA). O QRS estreito indica que o estímulo, embora desorganizado nos átrios, chega aos ventrículos pelo sistema de condução normal (nó atrioventricular e feixe de His).\n\nAlternativa A (Correta): A fibrilação atrial caracteriza-se pela despolarização atrial desordenada, o que impede a formação da onda P e gera uma resposta ventricular irregularmente irregular. É a arritmia cardíaca sustentada mais comum na população idosa e hipertensa.\n\nAlternativa B (Incorreta): As extrassístoles são batimentos antecipados que podem ocorrer de forma isolada, em salvas ou em padrões (como bigeminismo). Embora causem irregularidade, elas geralmente estão inseridas em um ritmo de base (como o sinusal, onde haveria onda P). O enunciado descreve um ritmo globalmente irregular e sem ondas P, o que define a FA, não apenas batimentos precoces.\n\nAlternativa C (Incorreta): A taquicardia sinusal é um ritmo obrigatoriamente regular. Nela, cada complexo QRS é precedido por uma onda P de morfologia normal (origem no nó sinusal). A ausência de onda P e a irregularidade do ritmo excluem essa hipótese.\n\nAlternativa D (Incorreta): A taquicardia ventricular é uma arritmia que se origina abaixo do feixe de His. Por definição, apresenta complexos QRS largos (maior que 120ms ou 0,12s), o que contradiz a descrição de QRS estreito dada no enunciado. Além disso, a taquicardia ventricular costuma ser um ritmo regular.\n\nAlternativa E (Incorreta): O flutter atrial é caracterizado pelas ondas F (em dente de serra), visíveis principalmente nas derivações inferiores (DII, DIII e aVF). Na maioria das vezes, o flutter apresenta uma condução atrioventricular fixa (como 2:1 ou 4:1), resultando em um ritmo ventricular regular. Embora exista o flutter com condução variável, a descrição clássica de ritmo irregular sem onda P aponta diretamente para a fibrilação atrial.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  },
+  {
+    "id": "AJUDA_5c569be1-2e93-45ac-aef3-d05318805e8c",
+    "originalId": "5c569be1-2e93-45ac-aef3-d05318805e8c",
+    "statement": "Menina, 11 anos de idade, chega ao PS com dor abdominal progressiva há 3 semanas. Exame físico: bom estado geral, com tumor de consistência endurecida, palpável na região do hipogástrio. Ultrassom da região pélvica: tumor sólido no ovário esquerdo. Qual é o marcador laboratorial que se espera encontrar positivo na investigação desta adolescente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Beta HCG.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ferritina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alfa-fetoproteína.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ácido vanilmandélico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO quadro clínico descreve uma paciente de 11 anos com dor abdominal e a presença de uma massa pélvica sólida de origem ovariana. Em crianças e adolescentes, diferentemente das mulheres adultas (onde predominam os tumores epiteliais), os tumores de ovário mais frequentes são os Tumores de Células Germinativas (TCG). Diante de uma massa sólida nesta faixa etária, a investigação de marcadores tumorais específicos é mandatória para o diagnóstico diferencial.\n\nAlternativa a: Incorreta. O Beta HCG (gonadotrofina coriônica humana) é o marcador principal do coriocarcinoma e pode estar discretamente elevado em alguns casos de disgerminoma que contenham células do sinciciotrofoblasto. Embora sua dosagem seja necessária na propedêutica de massas anexiais na infância, ele não é o marcador mais característico para o tipo de tumor sólido sugerido pela frequência epidemiológica nesta idade em comparação à alfa-fetoproteína.\n\nAlternativa b: Incorreta. A ferritina atua como proteína de reserva de ferro e também como um reagente de fase aguda, elevando-se em processos inflamatórios, infecciosos e em algumas neoplasias hematológicas ou sistêmicas. Não possui qualquer especificidade para tumores de ovário ou linhagem germinativa.\n\nAlternativa c: Correta. A alfa-fetoproteína (AFP) é o marcador biológico clássico do Tumor do Saco Vitelino (também chamado de Tumor do Seio Endodérmico). Este é um dos tumores malignos de células germinativas mais comuns em meninas e adolescentes, apresentando-se tipicamente como massas sólidas de crescimento rápido e produção elevada de AFP. Por isso, este é o marcador laboratorial que se espera encontrar positivo na investigação inicial deste caso.\n\nAlternativa d: Incorreta. O ácido vanilmandélico é um metabólito urinário resultante da degradação das catecolaminas. Sua utilidade clínica está restrita à investigação de tumores produtores de catecolaminas, sendo o principal deles o neuroblastoma. Embora o neuroblastoma seja um tumor comum na infância, ele geralmente se origina na glândula adrenal ou nos gânglios da cadeia simpática, e não como um tumor primário de ovário.\n\nConclusão: Em quadros de massas pélvicas sólidas em pacientes pediátricos, deve-se sempre solicitar o painel de marcadores de células germinativas, composto por alfa-fetoproteína, Beta HCG e LDH. O gabarito aponta para a alfa-fetoproteína pela forte associação com os tumores sólidos mais prevalentes nesta população.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  },
+  {
+    "id": "AJUDA_5c578f23-5589-47e9-adcf-e8368a54ff33",
+    "originalId": "5c578f23-5589-47e9-adcf-e8368a54ff33",
+    "statement": "Na reanimação neonatal qual o sinal mais importante que indica que a ventilação com pressão positiva está sendo efetiva:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A elevação do Apgar de 5 minutos para valores acima de 7",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A elevação do Apgar de 5 minutos para valores acima de 3",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O aumento da freqüência cardíaca",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A retomada da respiração espontânea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "melhora da coloração da pele",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O aumento da frequência cardíaca é o principal indicador de que a ventilação com pressão positiva (VPP) está sendo realizada de forma eficaz durante a reanimação neonatal. De acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP) e do Programa de Reanimação Neonatal, a frequência cardíaca é o parâmetro isolado mais importante para avaliar a resposta do recém-nascido a qualquer intervenção.\n\nAbaixo, a análise de cada alternativa:\n\nAlternativas (a) e (b) Incorretas: O índice de Apgar é uma ferramenta utilizada para avaliar o estado clínico global do recém-nascido e sua adaptação à vida extrauterina no primeiro e no quinto minutos. No entanto, ele não deve ser utilizado para guiar as condutas de reanimação nem para avaliar a resposta imediata à ventilação. As decisões na sala de parto são tomadas com base na frequência cardíaca e no esforço respiratório no momento exato da avaliação.\n\nAlternativa (c) Correta: A bradicardia no período neonatal é quase sempre consequência de hipóxia e insuficiência respiratória. Portanto, quando a ventilação é estabelecida com sucesso, promovendo a troca gasosa e a expansão pulmonar, o coração responde rapidamente com o aumento da frequência cardíaca. Se a frequência cardíaca sobe, entende-se que a VPP está sendo bem-sucedida.\n\nAlternativa (d) Incorreta: Embora o objetivo final seja a retomada da respiração espontânea, esse sinal pode demorar a aparecer, mesmo que a ventilação esteja sendo efetiva. A melhora da frequência cardíaca precede a estabilização do drive respiratório e é um indicador muito mais precoce e sensível.\n\nAlternativa (e) Incorreta: A cor da pele é um parâmetro subjetivo e pouco confiável. Muitos recém-nascidos levam vários minutos para atingir níveis de saturação de oxigênio acima de 90% (o que resolve a cianose central), mesmo estando saudáveis. Por isso, a avaliação da cor foi substituída pela oximetria de pulso e não serve como indicador primário de eficácia da ventilação.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  },
+  {
+    "id": "AJUDA_5c5cbc43-98c5-4388-b5c5-62f9df02efad",
+    "originalId": "5c5cbc43-98c5-4388-b5c5-62f9df02efad",
+    "statement": "Identifique qual das alternativas listadas indica uma orientação importante para esse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "IBP em dose adequada ao peso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Introduzir fórmula láctea específica, com espessante",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colocar o bebê para dormir em posição prona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Evitar ingestão de condimentos pela nutriz",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manter o bebê em posição vertical após mamar, por 20 a 30 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda o manejo do refluxo gastroesofágico em lactentes, diferenciando as medidas posturais e comportamentais das intervenções medicamentosas ou dietéticas mais agressivas.\n\nAlternativa a: Incorreta. O uso de inibidores da bomba de prótons (IBP) não é a conduta inicial para o refluxo fisiológico (comum nos primeiros meses de vida). O tratamento farmacológico é reservado para a Doença do Refluxo Gastroesofágico (DRGE) confirmada, que apresenta complicações como esofagite, irritabilidade persistente ou déficit de crescimento.\n\nAlternativa b: Incorreta. O aleitamento materno deve ser sempre priorizado. A introdução de fórmulas com espessantes (fórmulas AR) é uma medida de segunda linha, indicada apenas para lactentes que não estão em aleitamento materno exclusivo e que não apresentaram melhora com as medidas posturais básicas.\n\nAlternativa c: Incorreta. A posição prona (de bruços) é um fator de risco importante para a Síndrome da Morte Súbita do Lactente (SMSL). Por segurança, a recomendação atual é que todos os bebês durmam em posição supina (de barriga para cima), independentemente de apresentarem refluxo.\n\nAlternativa d: Incorreta. Não há evidência científica que sustente que a restrição de condimentos na dieta da mãe nutriz melhore o refluxo do bebê. Alterações na dieta materna só são indicadas quando há suspeita de Alergia à Proteína do Leite de Vaca (APLV), com a exclusão de leite e derivados.\n\nAlternativa e: Correta. Esta é uma medida não farmacológica fundamental e segura. Manter o bebê em posição vertical após a mamada utiliza a gravidade para auxiliar o esvaziamento gástrico e dificultar o retorno do conteúdo para o esôfago, reduzindo significativamente a frequência dos episódios de regurgitação.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:48:53.061Z"
+  }
+]

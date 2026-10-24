@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_331287aa-d377-4f46-92d3-6ef6f59b39c7",
+    "originalId": "331287aa-d377-4f46-92d3-6ef6f59b39c7",
+    "statement": "Paciente do sexo feminino, 26 anos, com história de fraqueza em membros inferiores, associada a ganho ponderal, presença de estrias violáceas em região abdominal e aumento dos níveis pressóricos. Qual dos seguintes sintomas é característico dessa síndrome?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperglicemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hipopigmentação cutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipoglicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipomagnesemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipocalcemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — ganho de peso, estrias violáceas no abdome, hipertensão arterial e fraqueza em membros inferiores (sugestiva de miopatia proximal) — é a apresentação clássica da Síndrome de Cushing, que decorre do excesso crônico de glicocorticoides (cortisol) no organismo.\n\nAlternativa (a) Correta: O cortisol é um hormônio hiperglicemiante e contrarregulador da insulina. Ele promove o aumento da glicemia por meio do estímulo à gliconeogênese hepática e da redução da captação de glicose pelos tecidos periféricos (resistência à insulina). Por isso, a intolerância à glicose ou o diabetes mellitus secundário são achados frequentes nesses pacientes.\n\nAlternativa (b) Incorreta: A hipopigmentação não é um achado da síndrome. Em casos de Síndrome de Cushing dependente de ACTH (como na Doença de Cushing ou na secreção ectópica de ACTH), pode ocorrer, na verdade, a hiperpigmentação cutânea, pois o ACTH em altos níveis estimula os receptores de melanocortina na pele.\n\nAlternativa (c) Incorreta: A hipoglicemia é característica da insuficiência adrenal (falta de cortisol), como na Doença de Addison. Na Síndrome de Cushing, o efeito é oposto devido ao excesso hormonal.\n\nAlternativa (d) Incorreta: A alteração nos níveis de magnésio não é um marcador ou sintoma característico do hipercortisolismo.\n\nAlternativa (e) Incorreta: Embora o cortisol elevado interfira no metabolismo ósseo e na absorção de cálcio, levando à osteoporose e à hipercalciúria (excesso de cálcio na urina), os níveis séricos de cálcio geralmente permanecem dentro da normalidade. O distúrbio eletrolítico mais comum associado ao excesso de cortisol (devido ao seu efeito mineralocorticoide em altas concentrações) é a hipocalemia (baixo potássio).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.302Z"
+  },
+  {
+    "id": "AJUDA_331533e3-12f0-4e65-9aa0-ae33713fce78",
+    "originalId": "331533e3-12f0-4e65-9aa0-ae33713fce78",
+    "statement": "Homem, 48 anos de idade, com histórico de hipertensão arterial controlada e sobrepeso, apresenta queixa de fadiga persistente, dificuldade de concentração e insônia há 6 meses. Ele também relata episódios de ansiedade e tristeza que afetam suas atividades diárias. O paciente é avaliado na UBS e, após investigação, é diagnosticado com transtorno depressivo maior. Iniciado tratamento com antidepressivo. Após 2 meses, ele retorna, relatando melhora parcial dos sintomas, mas continua apresentando fadiga e insônia. Ele também menciona aumento de peso desde o início do tratamento, apesar de manter os mesmos hábitos alimentares. Não há histórico de abuso de substâncias, e os sinais vitais estão normais.\n\nA comorbidade, dentre as abaixo, que mais provavelmente poderia estar associada à refratariedade dos sintomas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença arterial coronariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diabetes mellitus tipo 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome da apneia-hipopneia obstrutiva do sono.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa correta: d\n\nA alternativa D está correta, porque o paciente apresenta um perfil epidemiológico e clínico clássico para a Síndrome da Apneia-Hipopneia Obstrutiva do Sono (SAHOS): sexo masculino, meia-idade, sobrepeso e hipertensão arterial. A SAHOS é uma das comorbidades orgânicas mais frequentemente associadas à resistência ao tratamento do transtorno depressivo maior. Sintomas como fadiga persistente, sonolência diurna (que o paciente pode interpretar como cansaço ou insônia devido aos microdespertares), dificuldade de concentração e irritabilidade são manifestações comuns da apneia que se sobrepõem aos sintomas depressivos. Em pacientes com esse fenótipo, a fragmentação do sono impede a remissão completa do quadro psiquiátrico, sendo necessária a investigação por polissonografia.\n\nA alternativa A está incorreta, porque, embora o hipotireoidismo seja uma causa importante de fadiga, ganho de peso e humor depressivo, ele costuma cursar com sonolência excessiva (hipersonia) e lentidão psicomotora, em vez da queixa de insônia e ansiedade relatada. Além disso, a forte associação com hipertensão e sobrepeso em um homem de 48 anos torna a SAHOS uma hipótese diagnóstica superior neste contexto de refratariedade.\n\nA alternativa B está incorreta, pois a doença arterial coronariana se manifestaria tipicamente com angina ou dispneia de esforço. Embora a fadiga possa ser um equivalente anginoso, ela não justifica a persistência dos distúrbios do sono e da sintomatologia cognitiva de forma tão direta quanto um distúrbio respiratório do sono.\n\nA alternativa C está incorreta, porque o diabetes mellitus tipo 2, apesar de ser uma comorbidade metabólica comum em pacientes com sobrepeso, não é a causa primária para a manutenção de insônia e fadiga persistente em um paciente com tratamento antidepressivo em curso. O diabetes costuma ser uma consequência do estilo de vida ou uma comorbidade paralela, mas não o principal fator de refratariedade da depressão nessas condições.\n\nPortanto, diante de um paciente hipertenso, com sobrepeso, apresentando fadiga e sintomas depressivos que não melhoram totalmente com medicação, a Síndrome da Apneia-Hipopneia Obstrutiva do Sono deve ser a principal suspeita clínica.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Transtornos do Humor",
+      "Apneia do Sono"
+    ],
+    "difficulty": 74.2228561565159,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.302Z"
+  },
+  {
+    "id": "AJUDA_331baa1a-70c3-4033-92f1-15d4d18bfab9",
+    "originalId": "331baa1a-70c3-4033-92f1-15d4d18bfab9",
+    "statement": "Criança de 7 anos, previamente hígida, é trazida ao pronto atendimento apresentando febre elevada há 4 dias, recusa alimentar, diarreia sem sangue, vômitos persistentes e sonolência progressiva. Ao exame físico, apresenta exantema difuso, hepatoesplenomegalia, extremidades frias e pulso fino. A pressão arterial está 85/55mmHg. O hemograma revela leucopenia, hematócrito aumentado em 22% em relação ao normal e plaquetas em 54.000/mm³. Enzimas hepáticas estão discretamente elevadas, e coagulograma normal. A mãe relata que outra criança da mesma escola foi internada com suspeita de leptospirose. Considerando os dados clínicos e laboratoriais e o perfil epidemiológico, qual argumento laboratorial e clínico melhor sustenta o diagnóstico do caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O aumento do hematócrito e a plaquetopenia com extravasamento plasmático é compatível com dengue grave, especialmente se há sinais de alarme.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A leucopenia com discreta plaquetopenia associada à hepatomegalia é mais sugestiva de leptospirose, já que esta cursa com hemoconcentração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ausência de icterícia e a presença de febre prolongada com esplenomegalia apontam para febre entérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A normalidade do coagulograma é compatível com arbovirose benigna ou enterovirose autolimitada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico: \nO caso descreve uma criança com febre alta e sintomas inespecíficos que evoluiu com sinais de alarme e choque. Os sinais de alarme presentes são vômitos persistentes, sonolência (alteração do nível de consciência) e hepatomegalia. O quadro de choque é evidenciado pelas extremidades frias, pulso fino, hipotensão arterial (85/55 mmHg) e tempo de enchimento capilar provavelmente prolongado. \n\nAnálise laboratorial:\nO dado laboratorial mais fidedigno para o diagnóstico de gravidade é o aumento do hematócrito em 22%. Segundo a Organização Mundial da Saúde e o Ministério da Saúde, um aumento do hematócrito acima de 20% em relação ao valor basal (ou valores elevados em termos absolutos) é um marcador crítico de extravasamento plasmático para o terceiro espaço. A plaquetopenia acentuada (54.000/mm³) e a leucopenia também são achados clássicos da dengue.\n\nAlternativa A: Correta. O conjunto de febre, exantema, leucopenia e plaquetopenia, somado ao extravasamento plasmático (confirmado pelo aumento do hematócrito > 20%) e sinais de choque, preenche critérios para Dengue Grave (antiga Febre Hemorrágica da Dengue/Síndrome do Choque da Dengue). A presença de sinais de alarme, como sonolência e vômitos persistentes, antecede e acompanha o choque.\n\nAlternativa B: Incorreta. A leptospirose geralmente cursa com leucocitose e neutrofilia (desvio à esquerda), e não leucopenia. Clinicamente, a leptospirose costuma apresentar mialgia intensa (principalmente em panturrilhas) e sufusões conjuntivais. Embora possa haver plaquetopenia, o aumento expressivo do hematócrito e a clínica de choque por extravasamento são marcos patognomônicos da dengue grave neste contexto.\n\nAlternativa C: Incorreta. A febre entérica (febre tifoide) apresenta-se com febre prolongada e pode ter hepatosplenomegalia, mas o início costuma ser mais insidioso. A principal característica que afasta essa hipótese é a hemoconcentração aguda de 22%, que aponta para uma perda súbita de fluido intravascular para o interstício, algo típico das arboviroses graves e não da febre tifoide.\n\nAlternativa D: Incorreta. O quadro não pode ser classificado como benigno ou autolimitado. A criança apresenta sinais claros de choque (hipotensão e pulso fino), o que caracteriza uma emergência médica com alta letalidade se não tratada imediatamente com expansão volêmica vigorosa. O coagulograma normal no início do quadro não exclui a gravidade da dengue.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.302Z"
+  },
+  {
+    "id": "AJUDA_33421805-0438-4d7e-b48e-e163ce08b68d",
+    "originalId": "33421805-0438-4d7e-b48e-e163ce08b68d",
+    "statement": "Um paciente com diagnóstico estabelecido de fobia específica apresenta medo intenso desencadeado pela exposição a seringas ou agulhas. Reconhece plenamente o caráter irracional e desproporcional de seu medo, porém apresenta comportamento de evitação persistente. Identifique a característica fundamental que diferencia esta fobia específica de outras manifestações psicopatológicas de medo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Medo intenso, persistente e irracional desproporcionado ao perigo objetivo, com reconhecimento da irracionalidade e comportamento de evitação estruturado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Medo racional e fundamentado em ameaça concreta, sem componente de evitação ou prejuízo funcional importante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Medo generalizado em múltiplas situações causando sintomas ansiosos constantes durante meses sem circunscrição a objetos específicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Medo episódico sem padrão definido, ocorrendo exclusivamente durante crises de pânico com amnésia dos episódios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Medo social vinculado a situações de exposição interpessoal, com foco em avaliação negativa de terceiros.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda os critérios diagnósticos e as características clínicas da fobia específica, um transtorno de ansiedade frequente na prática clínica. O foco está em identificar o que define esse quadro em comparação a outros transtornos de ansiedade.\n\nAlternativa (a) - Correta. Esta alternativa sintetiza os critérios fundamentais para o diagnóstico de fobia específica segundo os manuais diagnósticos (DSM-5 e CID-11). As características centrais são o medo acentuado e persistente, que é desproporcional ao perigo real do objeto ou situação. Um ponto crucial é a manutenção do insight: o paciente reconhece que seu medo é irracional (característica egodistônica), o que o diferencia de quadros psicóticos. Além disso, a presença de comportamento de evitação estruturado é essencial para caracterizar o transtorno, pois o indivíduo organiza sua vida para não ser exposto ao gatilho.\n\nAlternativa (b) - Incorreta. Se o medo fosse racional, fundamentado em uma ameaça real e não gerasse evitação ou prejuízo, ele seria classificado como uma resposta emocional normal e adaptativa de sobrevivência, e não como um transtorno psiquiátrico. A fobia é, por definição, desadaptativa.\n\nAlternativa (c) - Incorreta. Esta descrição é típica do Transtorno de Ansiedade Generalizada (TAG). No TAG, a ansiedade e a preocupação são generalizadas e persistentes (ocorrendo na maior parte dos dias por pelo menos 6 meses) e não estão restritas a um objeto ou situação específica, como ocorre na fobia específica.\n\nAlternativa (d) - Incorreta. Medo episódico, inesperado e sem um gatilho externo definido é característico do Transtorno de Pânico. Além disso, a amnésia dos episódios não faz parte do quadro clínico dos transtornos de ansiedade comuns; se presente, obrigaria a investigação de quadros neurológicos (como crises epiléticas) ou transtornos dissociativos.\n\nAlternativa (e) - Incorreta. Esta alternativa define o Transtorno de Ansiedade Social (Fobia Social). Embora também envolva medo e evitação, o foco psicopatológico é a interação interpessoal e o temor de ser avaliado negativamente, humilhado ou rejeitado por terceiros, o que difere do medo de objetos específicos como seringas ou agulhas.\n\nVale ressaltar que a fobia de sangue-injeção-ferimentos, citada no enunciado, possui uma particularidade fisiológica: ao contrário de outras fobias que causam apenas taquicardia e hipertensão, ela frequentemente apresenta uma resposta bifásica, com aumento inicial da frequência cardíaca seguido por uma queda brusca (reflexo vasovagal), o que pode levar ao desmaio. No entanto, os critérios de definição psicopatológica seguem o padrão da alternativa A.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Transtornos de Ansiedade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.302Z"
+  },
+  {
+    "id": "AJUDA_33528c33-c357-4502-88d5-844a3e604a9d",
+    "originalId": "33528c33-c357-4502-88d5-844a3e604a9d",
+    "statement": "A medida de frequência que descreve a proporção de casos existentes (novos e antigos) de uma doença em uma população em um determinado momento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Densidade de Incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Incidência Acumulada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Letalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prevalência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "RESPOSTA COMENTADA\n\nA questão aborda conceitos fundamentais da epidemiologia descritiva, especificamente as medidas de frequência de doenças. Para responder corretamente, é necessário diferenciar os conceitos de incidência (casos novos) e prevalência (casos totais).\n\nAlternativa a) Incorreta. A Densidade de Incidência (ou Taxa de Incidência) mede a velocidade com que novos casos surgem em uma população, levando em conta o tempo de exposição de cada indivíduo (pessoa-tempo). Ela utiliza apenas casos novos no numerador e uma unidade de tempo no denominador, não englobando casos antigos.\n\nAlternativa b) Incorreta. A Incidência Acumulada representa o risco de um indivíduo desenvolver a doença em um determinado período. Ela é calculada dividindo-se o número de casos novos pelo total de pessoas em risco no início do período de observação. Assim como a densidade de incidência, foca exclusivamente em casos novos.\n\nAlternativa c) Incorreta. A Letalidade não é uma medida de frequência da doença na população geral, mas sim uma medida de gravidade. Ela indica a proporção de pessoas que morrem entre as que possuem a doença (Mortos pela doença / Total de doentes).\n\nAlternativa d) Correta. A Prevalência é a medida que descreve a proporção de todos os casos (novos e antigos) presentes em uma população em um ponto específico do tempo (prevalência pontual) ou em um período (prevalência intervalar). Funciona como uma fotografia ou um estoque da doença, sendo influenciada tanto pelo surgimento de novos casos quanto pela duração da doença (cura ou óbito).\n\nResumo: \nIncidência = Casos novos (ideia de fluxo/filme).\nPrevalência = Casos novos + Casos antigos (ideia de estoque/fotografia).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.302Z"
+  },
+  {
+    "id": "AJUDA_336464bf-d350-4dcf-b411-e3fe330a2fdb",
+    "originalId": "336464bf-d350-4dcf-b411-e3fe330a2fdb",
+    "statement": "Uma menina de 6 anos de idade, previamente hígida, vai para uma consulta pediátrica de rotina. A mãe refere que ela tem bom apetite, com cardápio variado, incluindo todos os grupos alimentares, mas é bastante seletiva, preferindo alimentos crus e de consistência mais firme. Faz atividade física duas vezes na semana na escola. Na avaliação, ela apresentou os seguintes dados antropométricos: peso: 20 kg (z-escore – 0,1), estatura: 1,20 cm (z-escore +1) e IMC: 13,8 kg/m2 (z-escore –1,1). Demais dados do exame físico encontram-se normais. Com base na classificação nutricional da Organização Mundial de Saúde e da Sociedade Brasileira de Patologia, qual a classificação nutricional dessa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eutrofia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Baixo peso para idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Magreza extrema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Magreza.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Desnutrição.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para crianças na faixa etária de 5 a 19 anos, o parâmetro padrão recomendado pela Organização Mundial da Saúde (OMS) e adotado pelo Ministério da Saúde e Sociedade Brasileira de Pediatria para a classificação do estado nutricional é o Índice de Massa Corporal para a idade (IMC/I), avaliado por escore-z.\n\nOs pontos de corte do IMC para a idade (5 a 19 anos) são:\n- Escore-z menor que -3: Magreza acentuada (ou extrema)\n- Escore-z maior ou igual a -3 e menor que -2: Magreza\n- Escore-z maior ou igual a -2 e menor ou igual a +1: Eutrofia\n- Escore-z maior que +1 e menor ou igual a +2: Sobrepeso\n- Escore-z maior que +2 e menor ou igual a +3: Obesidade\n- Escore-z maior que +3: Obesidade grave\n\nA paciente apresenta IMC para a idade com escore-z de -1,1, além de peso para a idade com escore-z de -0,1 e estatura para a idade com escore-z de +1. Como o valor de escore-z do IMC (-1,1) está situado no intervalo entre -2 e +1, a classificação nutricional correta é de eutrofia.\n\nAnálise das alternativas:\n\na) Eutrofia. Correta. O escore-z do IMC para a idade de -1,1 encontra-se na faixa de normalidade estatística (-2 a +1), caracterizando estado nutricional adequado.\n\nb) Baixo peso para idade. Incorreta. O peso para a idade da paciente apresenta escore-z de -0,1, classificado como peso adequado para a idade (faixa entre -2 e +2). O baixo peso seria diagnosticado apenas com escore-z menor que -2.\n\nc) Magreza extrema. Incorreta. Esse diagnóstico (também denominado magreza acentuada) requer escore-z de IMC para idade inferior a -3.\n\nd) Magreza. Incorreta. Para o diagnóstico de magreza, o escore-z do IMC para a idade deveria estar entre -3 e -2. O valor de -1,1 é superior a esse intervalo.\n\ne) Desnutrição. Incorreta. O termo não corresponde à nomenclatura oficial das curvas de crescimento da OMS/SBP para essa faixa etária e, clinicamente, a criança apresenta todos os parâmetros antropométricos dentro dos limites de normalidade.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diagnóstico Nutricional",
+      "Crescimento"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.302Z"
+  },
+  {
+    "id": "AJUDA_3373fa3b-ad91-461e-b1ee-1c4be6006df4",
+    "originalId": "3373fa3b-ad91-461e-b1ee-1c4be6006df4",
+    "statement": "Mulher, 65 anos de idade, é viúva, tem diagnóstico de artrite reumatoide e é atendida em uma UBS. Ela mora com sua filha de 25 anos que não trabalha porque apresenta um quadro de depressão grave. A paciente nunca teve um emprego formal, nunca contribuiu com a Previdência Social e, na última consulta, foi atendida pela assistente social que a orientou a buscar um benefício. Qual é o benefício no qual a paciente se enquadra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aposentadoria por idade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Benefício de Prestação Continuada",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aposentadoria por invalidez",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Auxílio doença",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto central desta questão é a distinção entre benefícios previdenciários e assistenciais. A Previdência Social no Brasil funciona sob um regime contributivo, ou seja, para ter acesso aos seus benefícios (como aposentadorias e auxílios), o cidadão deve obrigatoriamente contribuir para o sistema (INSS). Já a Assistência Social é não contributiva, destinada a quem dela necessitar, independentemente de contribuições prévias.\n\nAlternativa a) Incorreta. A aposentadoria por idade exige que o segurado tenha atingido a idade mínima e cumprido um tempo mínimo de contribuição (carência). Como o enunciado afirma explicitamente que a paciente nunca contribuiu para a Previdência Social, ela não possui direito a este benefício previdenciário.\n\nAlternativa b) Correta. O Benefício de Prestação Continuada (BPC), previsto na Lei Orgânica da Assistência Social (LOAS), é um benefício assistencial que garante o pagamento de um salário mínimo mensal a dois grupos: pessoas com deficiência de qualquer idade ou idosos com 65 anos ou mais. O critério fundamental, além da idade ou deficiência, é a comprovação de que o indivíduo não possui meios de prover a própria manutenção nem de tê-la provida por sua família (critério de hipossuficiência econômica). Como a paciente tem 65 anos, vive em situação de vulnerabilidade e nunca contribuiu para o INSS, o BPC é o benefício adequado ao seu perfil.\n\nAlternativa c) Incorreta. A aposentadoria por invalidez (atualmente denominada aposentadoria por incapacidade permanente) exige que o trabalhador tenha qualidade de segurado, o que demanda contribuições ao INSS. Mesmo que a artrite reumatoide fosse considerada uma condição incapacitante, a ausência de histórico contributivo impede a concessão deste benefício.\n\nAlternativa d) Incorreta. O auxílio-doença (atualmente auxílio por incapacidade temporária) também é um benefício de natureza previdenciária. Para solicitá-lo, é necessário estar inscrito no regime de previdência e ter cumprido o período de carência exigido por lei. A paciente, por nunca ter trabalhado formalmente ou contribuído, não preenche esses requisitos.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.302Z"
+  },
+  {
+    "id": "AJUDA_33755977-c4d3-4c91-b46f-fa8cf6b9d61d",
+    "originalId": "33755977-c4d3-4c91-b46f-fa8cf6b9d61d",
+    "statement": "Qual o diagnóstico mais provável ao visualizar a imagem acima?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vaginose bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colpite por Candida sp.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Endocervicite por Chlamydia trachomatis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Linfogranuloma Venérea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A imagem apresentada exibe um exame especular evidenciando um conteúdo vaginal característico: secreção branca, espessa e disposta em grumos aderidos às paredes vaginais e ao colo uterino, com aspecto clássico de \"leite coalhado\".\n\nAlternativa a) Incorreta. A vaginose bacteriana apresenta-se tipicamente como um corrimento fluido, homogêneo, branco-acinzentado, com odor fétido acentuado (peixe podre) e não costuma formar grumos espessos aderidos à mucosa como os visualizados na foto.\n\nAlternativa b) Correta. O aspecto de \"leite coalhado\" ou placas esbranquiçadas aderidas à mucosa vaginal é a manifestação clínica patognomônica da candidíase vulvovaginal (colpite por Candida sp.). Além do achado visual, a paciente geralmente cursa com prurido intenso e hiperemia local.\n\nAlternativa c) Incorreta. A endocervicite por Chlamydia trachomatis caracteriza-se pelo comprometimento do canal cervical, apresentando colo edemaciado, friável (sangra facilmente ao toque) e presença de secreção mucopurulenta exteriorizando-se pelo orifício externo do colo, diferindo totalmente das placas brancas da imagem.\n\nAlternativa d) Incorreta. O linfogranuloma venéreo é uma infecção sexualmente transmissível sistêmica que se manifesta inicialmente por uma pequena pápula ou úlcera genital transitória, seguida de linfonodopatia inguinal dolorosa e supurativa (bubão) ou proctite, não sendo causa desse tipo de corrimento vaginal grumoso.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5217087a286af67251bcd8167722946943dfe6c39c05eed465785f4ef429cb29.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_33755977-c4d3-4c91-b46f-fa8cf6b9d61d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.901Z"
+  },
+  {
+    "id": "AJUDA_338a2196-27e4-4628-8dde-05a531feb0ee",
+    "originalId": "338a2196-27e4-4628-8dde-05a531feb0ee",
+    "statement": "Uma menina de 10 anos de idade é levada ao seu pediatra pela mãe pois gostaria de orientações sobre como proceder com relação à puberdade da filha. Ele a encaminha à ginecologista pois entende que seria mais bem orientada neste momento da vida. Assinale a alternativa que melhor reflete a ordem de aparecimento dos caracteres sexuais secundários na puberdade normal:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estirão, Telarca, Pubarca e Menarca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Menarca, Pubarca, Telarca e Estirão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Telarca, Pubarca, Menarca e Estirão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Telarca, Pubarca, Estirão e Menarca.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A puberdade feminina é um processo biológico marcado por uma sequência cronológica de eventos físicos decorrentes da ativação do eixo hipotálamo-hipófise-gonadal. O entendimento dessa ordem é fundamental para identificar variações da normalidade, como a puberdade precoce ou o atraso puberal.\n\nA sequência fisiológica clássica na menina é:\n\n1. Telarca: É o aparecimento do broto mamário (estágio M2 de Tanner). É o primeiro sinal visível da puberdade na maioria das meninas, ocorrendo geralmente entre 8 e 13 anos de idade.\n2. Pubarca: É o surgimento de pelos pubianos, resultante da adrenarca (produção de androgênios pelas suprarrenais). Frequentemente ocorre logo após a telarca, embora em alguns casos possam ser simultâneos.\n3. Estirão de crescimento: O pico da velocidade de crescimento na menina é um evento relativamente precoce. Ele ocorre geralmente entre os estágios M2 e M3 de Tanner, ou seja, após o início do desenvolvimento mamário, mas antes da primeira menstruação.\n4. Menarca: A primeira menstruação é um evento tardio da puberdade, ocorrendo, em média, 2 a 2,5 anos após a telarca. Após a menarca, o crescimento estatural da menina desacelera significativamente até a fusão completa das epífises ósseas.\n\nAnálise das alternativas:\n\na) Incorreta. O estirão não é o primeiro evento da puberdade; a sequência é iniciada pela telarca. O estirão ocorre de forma marcante após o início do desenvolvimento das mamas.\n\nb) Incorreta. Esta alternativa inverte totalmente a lógica biológica, colocando a menarca (evento final) como o primeiro sinal e o estirão como o último.\n\nc) Incorreta. Embora comece corretamente com telarca e pubarca, esta opção coloca a menarca antes do estirão. Na fisiologia feminina, o pico de crescimento estatural obrigatoriamente precede a menarca.\n\nd) Correta. Esta alternativa descreve exatamente a ordem cronológica esperada no desenvolvimento puberal feminino normal: o broto mamário surge primeiro (telarca), seguido por pelos (pubarca), passando pelo pico de crescimento (estirão) e culminando com a primeira menstruação (menarca).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.901Z"
+  },
+  {
+    "id": "AJUDA_339616de-c432-4715-96b5-f2d8a0f1a85d",
+    "originalId": "339616de-c432-4715-96b5-f2d8a0f1a85d",
+    "statement": "O manejo das Lesões Intraepiteliais Cervicais de Alto Grau (High-Grade Squamous Intraepithelial Lesion – HSIL / Neoplasia Intraepithelial Cervical graus 2 e 3 – NIC 2 e NIC 3) exige prudência, especialmente em populações especiais, como gestantes e mulheres jovens (menores de 25 anos), nas quais o risco de tratamento excessivo pode superar os benefícios oncológicos imediatos. Nesse contexto, avalie as assertivas a seguir:\n\nI. Em gestantes com diagnóstico citológico e colposcópico sugestivo de Neoplasia Intraepithelial Cervical grau 3 (NIC 3), a biópsia deve ser evitada, exceto quando houver suspeita inequívoca de invasão, sendo o tratamento excisional (conização) contraindicado durante a gestação, com reavaliação indicada no puerpério, entre 6 e 12 semanas após o parto.\nII. Em mulheres com menos de 25 anos com diagnóstico histológico de Neoplasia Intraepithelial Cervical grau 2 (NIC 2), a conduta expectante é preferível ao tratamento excisional imediato, com acompanhamento colposcópico e citológico semestral por até 24 meses, em razão das elevadas taxas de regressão espontânea e do risco obstétrico associado à excisão cervical.\nIII. A conduta denominada \"ver e tratar\" (See and Treat), com exérese da zona de transformação por Cirurgia de Alta Frequência (CAF), constitui a abordagem de escolha para todas as pacientes com citologia HSIL e colposcopia insatisfatória, caracterizada por Junção Escamocolunar (JEC) não visível, independentemente da idade.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DAS ASSERTIVAS:\n\nAssertiva I: CORRETA. Na gestação, o objetivo primordial do rastreio e acompanhamento é a exclusão de câncer invasivo. O tratamento de lesões intraepiteliais (NIC 2 e NIC 3) deve ser postergado para o período pós-parto, pois os procedimentos excisionais (como a conização) durante a gravidez associam-se a riscos elevados de hemorragia grave e parto prematuro. A biópsia só é realizada se houver suspeita clínica ou colposcópica de microinvasão ou invasão. Caso contrário, a paciente é acompanhada com citologia e colposcopia, e a reavaliação definitiva ocorre entre 6 e 12 semanas após o parto.\n\nAssertiva II: CORRETA. As diretrizes atuais de patologia do trato genital inferior recomendam cautela em mulheres jovens (menores de 25 anos), especialmente nos casos de NIC 2. Nesta faixa etária, a taxa de regressão espontânea das lesões de alto grau é significativamente maior do que em mulheres mais velhas. Além disso, evitar procedimentos excisionais preserva o prognóstico obstétrico, reduzindo o risco de insuficiência cervical e prematuridade em gestações futuras. O acompanhamento citológico e colposcópico semestral por até 24 meses é uma conduta segura e preconizada para NIC 2 em jovens.\n\nAssertiva III: INCORRETA. A estratégia \"Ver e Tratar\" (See and Treat) consiste na realização da exérese da zona de transformação (CAF) já na primeira consulta colposcópica, sem a necessidade de biópsia prévia. No entanto, para que essa conduta seja indicada, três critérios devem ser preenchidos simultaneamente: citologia sugestiva de alto grau (HSIL), colposcopia satisfatória (JEC visível) e lesão colposcópica compatível com a citologia. Se a colposcopia for insatisfatória (JEC não visível), não se pode realizar o \"Ver e Tratar\", pois não há segurança sobre a extensão da lesão para o canal endocervical, sendo necessária a avaliação do canal ou uma conduta excisional diagnóstica, e não meramente terapêutica imediata. Além disso, essa conduta não é a escolha para \"todas\" as pacientes, sendo evitada em mulheres jovens (< 25 anos), conforme discutido na assertiva anterior.\n\nCONCLUSÃO: Como as assertivas I e II estão corretas, a alternativa correta é a (b).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:25:42.901Z"
+  }
+]

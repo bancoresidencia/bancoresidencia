@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_5dc51dbd-c62f-47aa-b3bc-2ce40f7da81a",
+    "originalId": "5dc51dbd-c62f-47aa-b3bc-2ce40f7da81a",
+    "statement": "Lactente, sexo masculino, com 8 meses de idade é admitido no pronto-socorro com quadro de febre há 24 horas e letargia progressiva. Ao exame físico inicial, apresenta pulsos finos, extremidades frias e marmóreas, tempo de enchimento capilar (TEC) de 4 segundos e débito urinário (<1 mL/kg/h). Após receber 40 mL/kg de solução balanceada isotônica em 30 minutos, permanece sonolenta e apresenta PA de 68 x 45mmHg, com TEC > 3 segundos, pulsos finos e letargia. Considerando esse quadro clínico após a ressuscitação volêmica inicial, qual deve ser a medicação vasoativa de primeira escolha, de acordo com as recomendações mais recentes da Campanha de Sobrevivência à Sepse para Pediatria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dopamina, devido à sua ação inotrópica e vasoativa em choque pediátrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dobutamina, devido à sua predominante ação inotrópica e cronotrópica, sendo mais indicada em quadros de choque cardiogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Epinefrina, pois o quadro clínico é compatível com choque com baixo débito cardíaco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Vasopressina, para adicionar efeito vasoconstritor em choque refratário a catecolaminas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Milrinone, para melhorar a contratilidade miocárdica e reduzir a pós-carga em choque vasodilatado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente de 8 meses apresenta um quadro clássico de choque séptico. Os sinais de letargia, pulsos finos, extremidades frias, tempo de enchimento capilar (TEC) prolongado e oligúria confirmam o estado de choque. Após a administração de 40 mL/kg de solução isotônica, a persistência da hipotensão (para essa idade, uma pressão arterial sistólica de 68 mmHg é considerada hipotensão) e dos sinais de má perfusão caracteriza um choque refratário a fluidos.\n\nDe acordo com as diretrizes da Campanha de Sobrevivência à Sepse (Surviving Sepsis Campaign) de 2020 para pediatria, quando o choque persiste após a ressuscitação volêmica inicial, deve-se iniciar precocemente o suporte vasoativo.\n\nAlternativa a) Incorreta. A dopamina, embora amplamente utilizada no passado, não é mais a droga de primeira escolha. As recomendações atuais da Campanha de Sobrevivência à Sepse sugerem o uso de epinefrina ou norepinefrina em vez de dopamina em crianças com choque séptico. Estudos demonstraram que a dopamina pode estar associada a piores desfechos e a um maior risco de infecção em comparação com as catecolaminas de primeira linha.\n\nAlternativa b) Incorreta. A dobutamina é um agente inotrópico que possui efeito vasodilatador periférico. Em um cenário de choque séptico com hipotensão arterial, o uso isolado de dobutamina pode exacerbar a queda da pressão arterial. Ela é mais indicada em casos de choque cardiogênico ou baixo débito com pressão arterial normal ou elevada, não sendo a primeira escolha na estabilização inicial do choque séptico hipotensivo.\n\nAlternativa c) Correta. A epinefrina (adrenalina) é a medicação de primeira escolha para o choque séptico pediátrico com sinais de baixo débito cardíaco e alta resistência vascular periférica, frequentemente chamado de choque frio (caracterizado por pulsos finos e extremidades frias). A diretriz de 2020 recomenda iniciar epinefrina ou norepinefrina como agentes de primeira linha, sendo a epinefrina preferencial no fenótipo de baixo débito apresentado pelo lactente.\n\nAlternativa d) Incorreta. A vasopressina é uma medicação de segunda ou terceira linha. Ela é indicada como terapia adjunta em casos de choque refratário a doses elevadas de catecolaminas (epinefrina e norepinefrina), com o objetivo de elevar a pressão arterial média em estados de vasoplegia intensa.\n\nAlternativa e) Incorreta. A milrinona é um inodilatador (inotrópico e vasodilatador) com meia-vida longa. Ela é utilizada em estágios posteriores do tratamento quando há disfunção miocárdica persistente e resistência vascular sistêmica aumentada, mas não deve ser usada como droga de primeira escolha na fase de ressuscitação aguda, especialmente se houver hipotensão, devido ao risco de choque distributivo grave.\n\nGabarito: Letra C.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Choque em Pediatria"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  },
+  {
+    "id": "AJUDA_5dd22d77-6fab-4d87-98c5-76e5711d7f5a",
+    "originalId": "5dd22d77-6fab-4d87-98c5-76e5711d7f5a",
+    "statement": "Elisa, 3 anos de idade, deu entrada no PS infantil com quadro de tosse e febre há um dia. Há 6 horas, a menor começou a apresentar tosse ladrante, cansaço, rouquidão, estridor, e a febre chegou a 40 °C. Ao exame físico de entrada, apresentou-se em mau estado geral, toxemiada, taquidispneica, cianótica, taquicárdica e febril, com os seguintes sinais vitais: FC = 185, FR = 54, SatO2 = 78% (em ar ambiente), temperatura = 40,1 °C e PA = 98 mmHg x 56 mmHg. A paciente recebeu uma inalação com adrenalina e dose de dexametasona IM, sem que houvesse resposta clínica. No tocante ao caso relatado, assinale a alternativa que apresenta a conduta mais indicada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proceder à intubação orotraqueal sob sequência rápida de intubação (de preferência pelo médico mais capacitado) e iniciar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Repetir inalação com adrenalina e iniciar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir inalação com adrenalina com dose maior e usar b2 agonista associado a corticoide inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever adrenalina intramuscular, anti-histamínico e corticoide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Proceder à intubação orotraqueal sob sequência rápida de intubação (de preferência pelo médico mais capacitado) e administrar corticoide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO CASO\n\nO quadro clínico de Elisa sugere inicialmente uma laringotraqueobronquite viral (crupe), devido à presença de tosse ladrante, rouquidão e estridor. No entanto, a evolução para febre alta (40 °C), o mau estado geral (aparência toxêmica) e, principalmente, a ausência de resposta à nebulização com adrenalina e ao corticoide, mudam o diagnóstico principal para traqueíte bacteriana.\n\nA traqueíte bacteriana é uma complicação grave, frequentemente causada pelo Staphylococcus aureus, que se manifesta como uma obstrução inflamatória aguda das vias aéreas superiores. A paciente apresenta sinais claros de insuficiência respiratória iminente e choque obstrutivo/séptico (SatO2 de 78%, cianose, taquicardia extrema e toxemia), o que exige intervenção imediata para garantir a patência da via aérea e o tratamento da infecção.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Correta. A paciente apresenta falência respiratória (SatO2 78% em ar ambiente, cianose e esforço respiratório importante) e não respondeu às medidas iniciais para crupe viral. Na suspeita de traqueíte bacteriana ou epiglotite em um paciente toxêmico e instável, a prioridade absoluta é a proteção da via aérea. A intubação deve ser realizada por sequência rápida e pelo profissional mais experiente, pois a via aérea costuma estar inflamada e com presença de secreções purulentas espessas, tornando o procedimento difícil. O início de antibióticos é essencial por se tratar de uma etiologia bacteriana.\n\nb) Incorreta. A repetição da adrenalina é ineficaz na traqueíte bacteriana, pois a obstrução é causada por membranas inflamatórias e pus, e não apenas pelo edema de mucosa que responde à adrenalina. Manter apenas a inalação em um paciente com SatO2 de 78% e mau estado geral atrasa a proteção necessária da via aérea.\n\nc) Incorreta. O uso de beta-2 agonista (como o salbutamol) é indicado para quadros de broncoespasmo (asma/bronquiolite), o que não é o caso da obstrução alta apresentada. O corticoide inalatório também não tem papel no manejo agudo da insuficiência respiratória por obstrução de via aérea superior bacteriana.\n\nd) Incorreta. Esta conduta seria indicada para um quadro de anafilaxia (adrenalina intramuscular e anti-histamínico). O quadro da paciente é infeccioso (febre alta, evolução de 1 dia) e não alérgico.\n\ne) Incorreta. Embora a intubação orotraqueal esteja correta devido à gravidade, a administração isolada de corticoide sistêmico é insuficiente. Em um paciente toxêmico, com febre de 40 °C e suspeita de traqueíte bacteriana, a antibioticoterapia é mandatória e não pode ser omitida. Além disso, o corticoide já havia sido administrado sem resposta prévia.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Emergências Pediátricas",
+      "Intubação"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  },
+  {
+    "id": "AJUDA_5dd34d14-f086-481d-807a-64e88a69dfee",
+    "originalId": "5dd34d14-f086-481d-807a-64e88a69dfee",
+    "statement": "Homem de 32 anos, com antecedente pessoal de apendicectomia aos 20 anos, realizada através de incisão de McBurney, dá entrada na emergência cirúrgica de um hospital terciário com queixa de dor e distensão abdominal há 3 dias, associadas a vomitos. Não evacua e não elimina flatos há 5 dias. Considerando-se a hipótese de abdome agudo obstrutivo secundário a bridas, assinale a alternativa correta em relação ao tratamento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento não operatório pode ser tentado desde que o paciente esteja estável hemodinamicamente, não apresente sinais de peritonite ao exame físico e a dosagem da PCR < 5mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A adesiólise cirúrgica (lise cirúrgica das bridas) é o procedimento de escolha e não pode ser realizada por via laparoscópica devido ao risco de lesão inadvertida de alças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A cirurgia laparoscópica pode ser indicada e apresenta menor morbidade, apesar do risco mais elevado de lesão intestinal quando comparada a via laparotômica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "São sinais de falência do tratamento clínico: persistência da dor abdominal por mais de 72 horas, drenagem de conteúdo de estase pela sonda nasogástrica de 200ml em 24 horas e sinais de peritonite ao exame físico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da Questão: Abdome Agudo Obstrutivo por Bridas\n\nO quadro clínico descreve um paciente jovem com sinais clássicos de obstrução intestinal (dor, distensão, vômitos e parada de eliminação de gases e fezes) e antecedente cirúrgico (apendicectomia), o que torna a principal hipótese diagnóstica a obstrução por bridas ou aderências.\n\nAlternativa A (Incorreta): O tratamento não operatório (conservador) é, de fato, a conduta inicial na maioria dos casos de obstrução por bridas, desde que não haja sinais de estrangulamento ou peritonite. No entanto, o valor de corte da PCR (Proteína C-reativa) mencionado (menor que 5 mg/dL) não é um critério absoluto ou amplamente validado na literatura para a tentativa do tratamento clínico. Embora a PCR elevada possa sugerir sofrimento de alça, a decisão baseia-se primordialmente na clínica e em exames de imagem.\n\nAlternativa B (Incorreta): A afirmação de que a lise de bridas não pode ser realizada por via laparoscópica está errada. A laparoscopia é uma opção viável e segura em casos selecionados, como em pacientes com previsão de brida única, ausência de distensão abdominal severa e estabilidade hemodinâmica.\n\nAlternativa C (Correta): Esta alternativa reflete o consenso atual. A cirurgia laparoscópica é indicada em casos selecionados e está associada a uma menor dor pós-operatória, retorno mais rápido da função intestinal e menor tempo de internação (menor morbidade). Contudo, devido à distensão das alças intestinais, que reduz o espaço de trabalho, e à presença de aderências que podem dificultar a visualização e manipulação, o risco de lesão intestinal inadvertida (enterotomia) é maior na via laparoscópica quando comparada à via laparotômica (aberta).\n\nAlternativa D (Incorreta): Os sinais de falência do tratamento conservador incluem o surgimento de sinais de peritonite e a persistência do quadro obstrutivo. Entretanto, os critérios técnicos estão incorretos na alternativa: a literatura costuma considerar falha quando há drenagem pela sonda nasogástrica superior a 500 mL em 24 horas (no terceiro dia de tratamento) ou persistência da obstrução por mais de 48 a 72 horas. O volume de 200 mL mencionado é considerado baixo e não define, por si só, a falha do tratamento.\n\nGabarito: Letra (c).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  },
+  {
+    "id": "AJUDA_5dd6359a-ff36-4830-b6af-5ff3cb3fd0dd",
+    "originalId": "5dd6359a-ff36-4830-b6af-5ff3cb3fd0dd",
+    "statement": "Após a confirmação diagnóstica de anemia ferropriva, inicia-se a reposição oral de ferro. O pediatra deve orientar a família sobre a posologia, fatores de absorção e tempo de tratamento. Assinale a alternativa que apresenta a conduta terapêutica correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dose terapêutica de ferro elementar recomendada é de 3 a 6 mg/kg/dia, e o tratamento deve ser suspenso imediatamente assim que a hemoglobina atingir os valores normais para a idade, evitando-se sobrecarga hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A administração do sulfato ferroso deve ser feita preferencialmente durante as refeições principais (almoço ou jantar) e misturada ao leite, visando minimizar os efeitos gastrointestinais e garantir a adesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A resposta terapêutica inicial é evidenciada pelo aumento dos níveis de hemoglobina em 48 horas; caso isso não ocorra, deve-se considerar imediatamente a falha terapêutica por má absorção ou diagnóstico incorreto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento deve ser mantido por, no mínimo, 2 a 3 meses após a normalização dos níveis de hemoglobina, visando a repleção dos estoques corporais (ferritina), sendo a crise reticulocitária (pico de reticulócitos) o primeiro sinal de resposta medular, ocorrendo entre o 5º e 10º dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O tratamento da anemia ferropriva na infância é um tema recorrente em provas. Vamos analisar cada alternativa para entender por que a letra D é a correta:\n\nAlternativa A: Incorreta. Embora a dose terapêutica de ferro elementar esteja correta (geralmente entre 3 a 6 mg/kg/dia), o erro reside na duração do tratamento. Suspender a medicação assim que a hemoglobina atinge valores normais é uma conduta inadequada, pois não permite a reposição dos estoques de ferro no organismo (ferritina), levando a uma recidiva precoce da anemia.\n\nAlternativa B: Incorreta. O sulfato ferroso deve ser administrado, preferencialmente, uma hora antes das refeições ou duas horas após, idealmente acompanhado de uma fonte de vitamina C (como suco de laranja), que acidifica o meio e facilita a absorção. O leite e outros alimentos contêm substâncias (como cálcio, fitatos e fosfatos) que quelam o ferro e reduzem significativamente sua absorção. A administração junto às refeições só é recomendada como último recurso em casos de intolerância gastrointestinal grave.\n\nAlternativa C: Incorreta. A resposta terapêutica não é evidenciada pelo aumento da hemoglobina em 48 horas. O processo de produção de novas hemácias e sua maturação leva mais tempo. O aumento da hemoglobina costuma ser observado após 2 a 4 semanas de tratamento. Esperar uma mudança em 48 horas e diagnosticar falha terapêutica nesse prazo é um erro de cronologia fisiológica.\n\nAlternativa D: Correta. Esta alternativa descreve a fisiologia da recuperação da anemia ferropriva. O primeiro sinal hematológico de que o tratamento está funcionando é o aumento dos reticulócitos (hemácias jovens), que atinge seu pico (crise reticulocitária) entre o 5º e o 10º dia após o início da reposição. Após a normalização dos níveis de hemoglobina, o que geralmente ocorre em 30 a 60 dias, o tratamento deve ser mantido por mais 2 a 3 meses (ou até que a ferritina esteja em níveis adequados) para garantir que os estoques corporais de ferro sejam repostos.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  },
+  {
+    "id": "AJUDA_5dd8edb4-96df-4fcd-8bd9-8cec5028067e",
+    "originalId": "5dd8edb4-96df-4fcd-8bd9-8cec5028067e",
+    "statement": "Sobre a extratificação de risco no pré-natal é correto afirmar de acordo o Protocolo de Pré Natal Mãe Curitibana Vale a Vida 2025:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pacientes com hipotireoidismo são classificadas como gestação de médio risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adolescente de 14 anos é considerada gestante de baixo risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paciente com Lesão de alto grau no citopatológico é considerada de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paciente com asma moderada é considerada de alto risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. De acordo com o Protocolo Mãe Curitibana Vale a Vida 2025, o hipotireoidismo (assim como outras endocrinopatias, como o hipertireoidismo) é classificado como uma condição de Alto Risco. Isso se deve à necessidade de monitoramento frequente dos níveis hormonais e aos riscos potenciais ao desenvolvimento fetal e ao desfecho obstétrico.\n\nAlternativa b: Incorreta. A idade materna é um fator de estratificação importante. Gestantes com menos de 15 anos de idade são classificadas como Risco Intermediário, devido à vulnerabilidade biológica e social. O Baixo Risco é reservado para a faixa etária entre 15 e 35 anos (desde que não haja outras comorbidades).\n\nAlternativa c: Incorreta. Pacientes com citopatológico sugestivo de lesão de alto grau (NIC II ou III) são estratificadas como Risco Intermediário. Elas devem ser encaminhadas para acompanhamento em nível secundário (especialidade de Patologia do Trato Genital Inferior - PTGI), mas a condição em si não classifica a gestação como Alto Risco.\n\nAlternativa d: Correta. O protocolo de Curitiba estratifica a asma de acordo com sua gravidade. Enquanto a asma leve pode ser manejada no Baixo Risco ou Risco Intermediário (dependendo do controle), a asma moderada e a asma grave são critérios definitivos para a classificação de Alto Risco, exigindo acompanhamento especializado para evitar crises e repercussões fetais.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Asma",
+      "Atenção Primária à Saúde",
+      "Pré-Natal"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  },
+  {
+    "id": "AJUDA_5ddbf801-7ccd-4570-bd53-426231850dfc",
+    "originalId": "5ddbf801-7ccd-4570-bd53-426231850dfc",
+    "statement": "Assinale a alternativa que preenche, correta e respectivamente, as lacunas do parágrafo abaixo.\n\n    Paciente masculino, de 78 anos, procurou a Emergência por febre, dor e diarreia pastosa, quadro iniciado há 4 dias (8 episódios/dia em pequena quantidade, associados a urgência e incontinência fecais, sem sangue ou pus visíveis). Informou internação recente por infecção urinária, tendo recebido antibioticoterapia de amplo espectro por via intravenosa, seguida de dose equivalente por via oral, tratamento finalizado há 3 dias. À chegada, apresentava temperatura axilar de 37,8oC e pressão arterial de 110/72 mmHg; a oximetria de pulso indicou saturação de oxigênio de 97% em ar ambiente. O exame físico mostrou mucosas coradas, algo desidratadas, e dor somente à palpação profunda do quadrante inferior esquerdo do abdômen. Pode-se afirmar que o quadro clínico é de .........., de etiologia .........., sendo mandatória coleta de fezes de emergência para excluir .......... .",
+    "options": [
+      {
+        "id": "A",
+        "text": "diarreia aguda - parasitária - Cyclospora sp",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "diarreia aguda - bacteriana - Clostridioides difficile",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "diarreia persistente - bacteriana - Bacillus cereus",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diarreia persistente - viral - Rotavirus",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO paciente apresenta um quadro de diarreia com 4 dias de evolução. Na prática clínica, a diarreia é classificada cronologicamente em três tipos: aguda (duração de até 14 dias), persistente (entre 14 e 30 dias) e crônica (mais de 30 dias). Como o sintoma se iniciou há apenas 4 dias, trata-se de uma diarreia aguda.\n\nO dado fundamental da história clínica é o uso recente de antibioticoterapia de amplo espectro em ambiente hospitalar para tratar uma infecção urinária. Esse é o fator de risco clássico para a infecção por *Clostridioides difficile* (antigo *Clostridium difficile*). Os antibióticos eliminam parte da microbiota intestinal normal, permitindo que essa bactéria gram-positiva e produtora de toxinas se prolifere. Portanto, a etiologia suspeita é bacteriana e o patógeno específico a ser investigado por meio da coleta de fezes (pesquisa de toxinas ou PCR) é o *Clostridioides difficile*.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. Embora a classificação de diarreia aguda esteja correta, a etiologia parasitária por *Cyclospora* sp. não é a principal suspeita. A *Cyclospora* está geralmente associada a surtos por alimentos contaminados (como frutas e vegetais) ou diarreia do viajante, e não apresenta relação direta com o uso prévio de antibióticos de amplo espectro.\n\nAlternativa b) Correta. Preenche perfeitamente as lacunas. O tempo de evolução define diarreia aguda; a causa é bacteriana; e o histórico de internação e uso de antibióticos torna obrigatória a exclusão de infecção por *Clostridioides difficile*, que pode evoluir para quadros graves como a colite pseudomembranosa.\n\nAlternativa c) Incorreta. A definição de diarreia persistente exige uma duração superior a 14 dias, o que invalida a alternativa. Além disso, o *Bacillus cereus* é um agente de intoxicação alimentar autolimitada, cujos sintomas surgem poucas horas após a ingestão de alimentos contaminados (como arroz requentado), não guardando relação com o histórico de internação relatado.\n\nAlternativa d) Incorreta. Novamente, o termo diarreia persistente está incorreto para um quadro de 4 dias. Embora vírus possam causar diarreia em idosos, o rotavírus é um agente muito mais comum na pediatria. Em um paciente idoso que acabou de terminar um ciclo de antibióticos, a etiologia bacteriana (*C. difficile*) é a hipótese diagnóstica primária e mais perigosa a ser excluída.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  },
+  {
+    "id": "AJUDA_5ddc6cca-d900-487f-a1b6-5f30ed2ff472",
+    "originalId": "5ddc6cca-d900-487f-a1b6-5f30ed2ff472",
+    "statement": "Adolescente, 17 anos de idade, chega ao hospital acompanhada da mãe, relatando violência sexual ocorrida há aproximadamente 80 horas. O teste rápido para HIV foi negativo. Qual das condutas é mais apropriada em relação à Profilaxia Pós-exposição (PEP) ao HIV?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar PEP com esquema de 28 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não iniciar PEP, pois o prazo máximo é 72 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Não há indicação, pois o teste rápido para HIV é negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aguardar a avaliação da soroconversão em sete dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Profilaxia Pós-Exposição (PEP) ao HIV é uma urgência médica e sua eficácia depende diretamente do tempo transcorrido entre a exposição de risco e o início dos antirretrovirais. Segundo as diretrizes do Ministério da Saúde, o início da PEP deve ocorrer o mais precocemente possível, idealmente nas primeiras 2 horas, tendo como limite máximo 72 horas após o evento. \n\nAlternativa a (Incorreta): Embora a duração padrão do esquema de PEP seja de 28 dias, a profilaxia não deve ser prescrita quando a exposição ocorreu há mais de 72 horas (no caso, 80 horas), pois além desse período não há comprovação de eficácia em prevenir a infecção pelo HIV.\n\nAlternativa b (Correta): O prazo limite estabelecido pelos protocolos clínicos para início da PEP é de até 72 horas após a violência sexual ou exposição de risco. Ultrapassado esse intervalo, a medicação não tem benefício profilático comprovado e não deve ser iniciada.\n\nAlternativa c (Incorreta): O teste rápido negativo na pessoa exposta é pré-requisito mandatório para a indicação da PEP, pois afasta o diagnóstico de infecção prévia pelo HIV. Caso o teste fosse positivo, a conduta seria o encaminhamento para tratamento contínuo (TARV), e não profilaxia. O que contraindica a PEP neste cenário é o tempo decorrido superior a 72 horas.\n\nAlternativa d (Incorreta): A janela imunológica do HIV é mais longa e não há soroconversão detectável em 7 dias. A conduta sobre a profilaxia deve ser imediata na admissão hospitalar, não sendo indicado postergar a conduta para aguardar novos testes.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual",
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  },
+  {
+    "id": "AJUDA_5de91ced-50cf-43c6-af9d-28ec0e6d28ee",
+    "originalId": "5de91ced-50cf-43c6-af9d-28ec0e6d28ee",
+    "statement": "Menino, 14 anos, frequenta academia e gostaria de iniciar esteroide androgênico anabólico para aumento da massa muscular. Pode-se afirmar que é importante esclarecê-lo que o uso destes esteroides pode causar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ginecomastia; diminuição da lipoproteína de baixa densidade (LDL); aumento da PA sistêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "diminuição do volume testicular; hipoglicemia; icterícia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "carcinoma hepatocelular; diminuição da lipoproteína de alta densidade (HDL); estrias cutâneas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "diminuição da contagem de esperma; aumento dos triglicerídeos; paranoia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O uso de esteroides androgênicos anabólicos (EAA) envolve uma série de efeitos adversos que afetam múltiplos sistemas orgânicos, especialmente quando utilizados de forma recreativa e em doses suprafisiológicas por adolescentes.\n\nAlternativa (a) está incorreta. Embora a ginecomastia (pela aromatização da testosterona em estradiol) e o aumento da pressão arterial sistêmica sejam efeitos reais, os esteroides anabolizantes causam o aumento da lipoproteína de baixa densidade (LDL), o chamado colesterol ruim, e não a sua diminuição.\n\nAlternativa (b) está incorreta. A diminuição do volume testicular ocorre devido ao feedback negativo no eixo hipotálamo-hipófise-gonadal, e a icterícia pode ocorrer por colestase intra-hepática (especialmente com esteroides orais 17-alfa-alquilados). No entanto, o uso de esteroides não está classicamente associado à hipoglicemia; pelo contrário, pode haver redução da tolerância à glicose e resistência insulínica.\n\nAlternativa (c) está correta. Esta alternativa reúne três complicações bem documentadas. O carcinoma hepatocelular e outros tumores hepáticos (como adenomas e peliose hepática) são riscos graves associados ao uso prolongado, especialmente de compostos orais. A diminuição da lipoproteína de alta densidade (HDL) é uma das alterações metabólicas mais comuns e precoces, aumentando o risco cardiovascular a longo prazo. As estrias cutâneas surgem devido ao crescimento muscular excessivamente rápido, que ultrapassa a capacidade de elasticidade da derme, sendo um sinal físico frequente em usuários de academia que fazem uso dessas substâncias.\n\nAlternativa (d) está incorreta. A diminuição da contagem de esperma (oligospermia ou azoospermia) e sintomas psiquiátricos como paranoia e agressividade são efeitos conhecidos. Contudo, o efeito lipídico marcante e sistematicamente cobrado em provas é a queda do HDL e aumento do LDL, e não o aumento isolado de triglicerídeos como achado principal.\n\nPortanto, a alternativa (c) é a que descreve corretamente um conjunto de complicações clínicas, metabólicas e dermatológicas decorrentes do abuso de esteroides.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  },
+  {
+    "id": "AJUDA_5deeb145-8e9a-4a4a-8ce1-74e9d3f7cf08",
+    "originalId": "5deeb145-8e9a-4a4a-8ce1-74e9d3f7cf08",
+    "statement": "Mulher de 32 anos, tabagista, apresenta história de níveis pressóricos persistentemente elevados em ambientes externos, embora os mesmos estejam sempre dentro da normalidade durante as consultas médicas. Comparece à consulta de retorno trazendo resultado da monitorização residencial da pressão arterial, que evidencia pressão arterial repetidas vezes acima de 130 x 80 mmHg. \nCom base nos dados apresentados, o diagnóstico provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hipertensão do jaleco branco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hipertensão sistólica isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipertensão secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hipertensão mascarada.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DO ESPECIALISTA\n\nA questão descreve uma paciente de 32 anos com um padrão específico de comportamento da pressão arterial (PA). Ela apresenta níveis normais durante as consultas médicas (PA de consultório menor que 140/90 mmHg) e níveis persistentemente elevados fora desse ambiente, confirmados pela Monitorização Residencial da Pressão Arterial (MRPA), que evidenciou valores acima de 130/80 mmHg. Esse cenário é a definição clássica de Hipertensão Mascarada.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: Na hipertensão do jaleco branco, o fenômeno é exatamente o oposto do descrito no caso. O paciente apresenta níveis pressóricos elevados no consultório (maiores ou iguais a 140/90 mmHg), mas mantém níveis normais em ambiente domiciliar (menores que 130/80 mmHg na MRPA ou no MAPA).\n\nAlternativa (b) INCORRETA: A hipertensão sistólica isolada é definida pela pressão sistólica maior ou igual a 140 mmHg com a pressão diastólica menor que 90 mmHg. É mais comum em idosos devido ao enrijecimento das artérias. A questão não fornece dados suficientes para essa classificação e foca na discrepância entre as medidas de consultório e domiciliares.\n\nAlternativa (c) INCORRETA: A hipertensão secundária refere-se à pressão alta causada por uma doença subjacente identificável (como estenose de artéria renal ou feocromocitoma). Embora a idade jovem da paciente possa motivar a investigação de causas secundárias, o comportamento da pressão (normal no médico e alta em casa) define o diagnóstico fenotípico de hipertensão mascarada antes de se buscar uma etiologia específica.\n\nAlternativa (d) CORRETA: A hipertensão mascarada ocorre quando a PA no consultório é normal (menor que 140/90 mmHg), mas a PA fora do consultório é elevada (MAPA de 24h ou MRPA maior ou igual a 130/80 mmHg). Esta condição é perigosa porque pode passar despercebida se o médico confiar apenas na medida de consultório. O tabagismo, citado no enunciado, é um fator frequentemente associado a essa condição.\n\nGabarito: Letra (d).",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  },
+  {
+    "id": "AJUDA_5df7ee17-1a51-4f83-bca6-24d556bf08d7",
+    "originalId": "5df7ee17-1a51-4f83-bca6-24d556bf08d7",
+    "statement": "Uma paciente de 58 anos, mulher, procura atendimento com queixa de cansaço progressivo há 4 meses, ganho de peso de 6 kg, ressecamento de pele, constipação intestinal e letargia. Ao exame físico, apresenta bradicardia (frequência cardíaca 52 bpm) e reflexos aquilianos diminuídos. Realiza investigação laboratorial com TSH 12,5 mU/L (referência 0,4-4,0 mU/L) e T4 livre 0,6 ng/dL (referência 0,7-1,9 ng/dL). De acordo com as recomendações atuais para tratamento do hipotireoidismo primário, qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar levotiroxina na dose de 25 mcg ao dia, com reavaliação em 4-6 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar levotiroxina na dose de 50 mcg ao dia, com reavaliação em 6-8 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar levotiroxina na dose de 1,6 mcg/kg de peso corporal, com reavaliação em 6-8 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aguardar 3 meses e repetir TSH antes de instituir qualquer tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prescrever hormônio tireoidiano combinado (T3 + T4) como primeira linha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise Clínica e Diagnóstica:\n\nA paciente apresenta um quadro clássico de hipotireoidismo primário manifesto (ou clínico). Isso é confirmado pela presença de sintomas e sinais típicos (cansaço, ganho de peso, pele seca, constipação, bradicardia e lentificação de reflexos) associados a alterações laboratoriais características: TSH elevado (acima de 10 mU/L) e T4 livre abaixo do valor de referência.\n\nAnálise das Alternativas:\n\nAlternativa (a) Incorreta: A dose de 25 mcg ao dia é considerada uma dose baixa, geralmente reservada para o início do tratamento em idosos muito idosos (acima de 75-80 anos) ou pacientes com cardiopatia grave conhecida, para evitar o risco de arritmias ou isquemia miocárdica por aumento súbito do metabolismo. Embora a paciente tenha 58 anos, ela não possui histórico cardíaco relatado que justifique uma dose tão baixa para um quadro já manifesto. O tempo de reavaliação de 4-6 semanas também é menos usual que o intervalo de 6-8 semanas.\n\nAlternativa (b) Incorreta: A dose fixa de 50 mcg é frequentemente utilizada na prática clínica como dose inicial para adultos de meia-idade, mas a recomendação acadêmica e de diretrizes para o tratamento do hipotireoidismo manifesto é a utilização da dose plena baseada no peso corporal para atingir o estado eutireoidiano mais rapidamente.\n\nAlternativa (c) Correta: De acordo com as diretrizes da American Thyroid Association (ATA) e da Sociedade Brasileira de Endocrinologia e Metabologia (SBEM), a dose de reposição plena de levotiroxina para adultos com hipotireoidismo primário manifesto é de aproximadamente 1,6 mcg/kg de peso corporal por dia. O monitoramento do TSH para ajuste de dose deve ocorrer entre 6 a 8 semanas após o início do tratamento, que é o tempo necessário para que o eixo hipotálamo-hipófise-tireoide se estabilize e reflita o novo equilíbrio hormonal.\n\nAlternativa (d) Incorreta: A conduta de observar e repetir exames em 3 meses é aplicada em alguns casos de hipotireoidismo subclínico (TSH elevado, mas T4 livre normal), especialmente quando o TSH está abaixo de 10 mU/L. No caso desta paciente, o hipotireoidismo é manifesto (T4 livre baixo) e ela apresenta sintomas clínicos evidentes, o que torna o tratamento imediato mandatório.\n\nAlternativa (e) Incorreta: A monoterapia com levotiroxina (T4) é o padrão-ouro e a recomendação de primeira linha para o tratamento do hipotireoidismo. A combinação de T3 e T4 não apresenta benefícios comprovados na maioria dos pacientes, possui maior risco de efeitos adversos (como palpitações e ansiedade) e exige uma posologia mais complexa devido à meia-vida curta do T3.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:26.975Z"
+  }
+]

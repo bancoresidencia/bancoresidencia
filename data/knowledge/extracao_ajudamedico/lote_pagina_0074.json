@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_136e9020-720f-419a-9cdb-f0d0d8ce77ca",
+    "originalId": "136e9020-720f-419a-9cdb-f0d0d8ce77ca",
+    "statement": "Raquel e Teresa têm 3 anos e 6 meses. Raquel pesa 16 kg, e Tereza, 17,5 kg, sendo que ambas estão com 100 cm de altura (1 metro). Considerando o gráfico abaixo, recomendado pela Organização Mundial de Saúde (OMS), os estados nutricionais de Raquel e Teresa são classificados como apresentando ______________ e ________________, respectivamente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "risco de sobrepeso – sobrepeso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "eutrofia – sobrepeso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "risco de sobrepeso – risco de sobrepeso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "eutrofia – risco de sobrepeso",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver a questão, o primeiro passo é calcular o Índice de Massa Corporal (IMC) de cada criança, utilizando a fórmula: IMC = peso / (altura x altura). Como ambas medem 1 metro, o cálculo é simplificado:\n\nRaquel: 16 / (1 x 1) = 16 kg/m²\nTeresa: 17,5 / (1 x 1) = 17,5 kg/m²\n\nAgora, devemos projetar esses valores no gráfico de IMC por idade (meninas de 2 a 5 anos) fornecido pela Organização Mundial da Saúde (OMS), cruzando o IMC com a idade de 3 anos e 6 meses (ponto médio entre os anos 3 e 4 no eixo horizontal).\n\nAnálise de Raquel (IMC 16 aos 3 anos e 6 meses):\nAo localizar o ponto no gráfico, observamos que Raquel está posicionada entre a linha verde (escore-z 0) e a linha laranja superior (escore-z +1). Segundo os critérios da OMS para crianças menores de 5 anos, crianças situadas entre o escore-z -2 e o escore-z +1 são classificadas como EUTROFIA (estado nutricional adequado).\n\nAnálise de Teresa (IMC 17,5 aos 3 anos e 6 meses):\nAo localizar o ponto no gráfico, observamos que Teresa está posicionada acima da linha laranja (escore-z +1) e abaixo da linha vermelha (escore-z +2). Para crianças menores de 5 anos, o intervalo entre os escores-z +1 e +2 é classificado como RISCO DE SOBREPESO.\n\nAnálise das alternativas:\n\na) Incorreta. Raquel não tem risco de sobrepeso (está abaixo de +1) e Teresa não tem sobrepeso (para isso, deveria estar acima de +2).\n\nb) Incorreta. Embora a classificação de Raquel esteja correta (eutrofia), Teresa ainda não atingiu o critério de sobrepeso, permanecendo na faixa de risco de sobrepeso.\n\nc) Incorreta. Raquel é classificada como eutrófica, pois seu IMC está dentro da normalidade (entre -2 e +1 escore-z).\n\nd) Correta. Raquel apresenta eutrofia (IMC entre as linhas 0 e +1) e Teresa apresenta risco de sobrepeso (IMC entre as linhas +1 e +2), conforme os pontos plotados no gráfico para a idade de 3 anos e 6 meses.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/4dbd1885f82b4d2b0d0da8db95c1f5b65263a878019bf19d7153854ef8315a5d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_136e9020-720f-419a-9cdb-f0d0d8ce77ca_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  },
+  {
+    "id": "AJUDA_13704d26-48c4-4e13-a32e-6e398f62a4f7",
+    "originalId": "13704d26-48c4-4e13-a32e-6e398f62a4f7",
+    "statement": "Paciente do sexo masculino, 45 anos, vítima de esfaqueamento em região abdominal foi admitido em pronto-atendimento em sua cidade de origem sendo realizada reposição volêmica agressiva (aproximadamente, 3.000 mL) com solução cristaloide (soro fisiológico 0,9%). A gasometria arterial revelou pH 7,29, pCO2 32 mmHg, pO2 de 92mmHg e HCO3- de 15 mEq/L com base excess (BE) de 10 mEq/L. Qual o principal mecanismo responsável pela acidose metabólica observada nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipercloremia com redução da reabsorção de bicarbonato e acidose metabólica hiperclorêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aumento da reabsorção de renal de bicarbonato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diminuição da pressão oncótica do plasma induzindo estado de anasarca e edema pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibição renal da excreção de íons hidrogênio induzido pela hipernatremia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hemodiluição severa levando a hipoxemia relativa com consequente ocorrência de acidose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resumo do caso: paciente politraumatizado, com trauma penetrante abdominal, recebeu cerca de 3 L de soro fisiológico 0,9%. A gasometria mostra pH 7,29, pCO2 32 mmHg, HCO3- 15 mEq/L e BE de -10 (o enunciado traz 10, mas é déficit de base). Isso caracteriza acidose metabólica com compensação respiratória: pela fórmula de Winter, pCO2 esperado = 1,5 x 15 + 8 ± 2 = 28,5 ± 2, valor próximo do observado.\n\nMecanismo: o soro fisiológico 0,9% contém 154 mEq/L de Na+ e 154 mEq/L de Cl-, e o plasma tem cerca de 100 mEq/L de Cl-. A infusão de grandes volumes aumenta a cloremia e reduz a diferença de íons fortes (SID) do plasma. Pela abordagem físico-química de Stewart, a queda do SID aumenta a dissociação da água e a concentração de H+. Pela abordagem tradicional, o excesso de Cl- leva à perda de bicarbonato e à redução da sua reabsorção renal, com hiperacidez. Além disso, ocorre diluição do bicarbonato plasmático. O resultado é uma acidose metabólica hiperclorêmica, com ânion gap normal. É a chamada acidose dilucional/hiperclorêmica da ressuscitação com cristaloide.\n\nObservação: neste paciente a hipovolemia e a hipoperfusão por hemorragia também podem contribuir com lactato (acidose de ânion gap aumentado). Contudo, entre as opções, o mecanismo mais relacionado à reposição agressiva com SF 0,9% é a hipercloremia.\n\nAnálise das alternativas:\n\na) Correta. A sobrecarga de cloreto do SF 0,9% reduz o SID, diminui o bicarbonato e causa acidose metabólica hiperclorêmica.\n\nb) Incorreta. O aumento da reabsorção renal de bicarbonato corrigiria a acidose, e não a causaria. O que ocorre é o oposto: com a hipercloremia, há redução dessa reabsorção.\n\nc) Incorreta. A queda da pressão oncótica por diluição das proteínas pode favorecer edema, mas não é o mecanismo da acidose metabólica. O edema pulmonar causaria hipoxemia, e aqui a pO2 é normal (92 mmHg).\n\nd) Incorreta. O SF 0,9% não costuma causar hipernatremia importante (o sódio é isotônico em relação ao plasma). Além disso, hipernatremia não é mecanismo clássico de inibição da excreção de H+.\n\ne) Incorreta. A hemodiluição reduz hemoglobina e o transporte de O2, mas a pO2 é normal e não há evidência de hipoxemia. A acidose aqui não é por hipóxia, e sim pelo excesso de cloreto e perda de bicarbonato.\n\nPonto-chave: grandes volumes de SF 0,9% causam acidose metabólica hiperclorêmica com ânion gap normal. Em reposição volêmica volumosa, prefira cristaloides balanceados (Ringer lactato, Plasma-Lyte), além de controle da hemorragia e hemoderivados no choque hemorrágico.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  },
+  {
+    "id": "AJUDA_1371751f-6e76-41d2-90f3-987cc4634212",
+    "originalId": "1371751f-6e76-41d2-90f3-987cc4634212",
+    "statement": "Na colecistectomia videolaparoscópica a visão crítica de segurança descrita por Strasberg é representada pela visualização de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ducto cístico e artéria cística.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ducto cístico e ducto colédoco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ducto colédoco e artéria hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ducto colédoco e triângulo de Calot.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O conceito de Visão Crítica de Segurança (VCS), introduzido por Strasberg em 1995, é o padrão-ouro para a identificação segura das estruturas hilares durante a colecistectomia laparoscópica, visando prevenir lesões iatrogênicas das vias biliares.\n\nPara atingir a VCS, três critérios técnicos devem ser rigorosamente preenchidos:\n1. O triângulo hepatocístico (espaço delimitado pelo ducto cístico, ducto hepático comum e a borda inferior do fígado) deve ser completamente limpo de tecido gorduroso e fibroso.\n2. A parte inferior da vesícula biliar deve ser descolada do leito hepático, expondo a chamada placa cística.\n3. Devem ser visualizadas apenas duas estruturas, e somente duas, entrando na vesícula biliar.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: As duas únicas estruturas que devem ser vistas entrando na vesícula biliar para caracterizar a visão crítica são o ducto cístico e a artéria cística. Quando o cirurgião isola esses dois elementos e limpa o fundo do triângulo hepatocístico, ele tem a certeza de que a estrutura tubular é o ducto cístico, e não o ducto colédoco ou o hepático comum, minimizando o risco de ligaduras acidentais da via biliar principal.\n\nAlternativa (b) Incorreta: A visualização do ducto colédoco não faz parte dos critérios da VCS. Na verdade, a técnica de Strasberg preconiza que não é necessário expor o colédoco; a dissecação excessiva perto da via biliar principal pode, inclusive, causar lesões térmicas ou vasculares. O foco deve ser a junção do cístico com a vesícula.\n\nAlternativa (c) Incorreta: A artéria hepática e o ducto colédoco são estruturas que compõem o pedículo hepático. A identificação dessas estruturas não é o objetivo da colecistectomia, e sua manipulação aumenta o risco de hemorragias graves ou lesões biliares complexas. A VCS busca justamente afastar a dissecação dessas estruturas nobres.\n\nAlternativa (d) Incorreta: O triângulo de Calot (ou, mais precisamente, o triângulo hepatocístico) é a região anatômica que deve ser dissecada. No entanto, a visualização apenas do \"triângulo\" não define a visão crítica. A VCS é um passo além: é a confirmação visual de que, dentro desse triângulo agora limpo, apenas o ducto cístico e a artéria cística permanecem conectados à vesícula.\n\nResumo: A alternativa (a) está correta porque define os dois elementos anatômicos finais que devem estar isolados e identificados para garantir uma cirurgia segura, de acordo com os critérios de Strasberg.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  },
+  {
+    "id": "AJUDA_13733af9-e50e-4656-aa99-897d90ef65cf",
+    "originalId": "13733af9-e50e-4656-aa99-897d90ef65cf",
+    "statement": "Primigesta de 19 anos, na 32ª semana de gestação, procura atendimento em unidade de pronto atendimento com queixa de cefaleia persistente há dois dias acompanhada de visão de pontos brilhantes e dor na região do estômago. Exame físico: REG, edema de membros inferiores e mãos (++/4+), PA: 140 x 90 mmHg.\nConsiderando o diagnóstico e a necessidade de transferência da gestante para outro serviço, a conduta clínica correta é a administração de",
+    "options": [
+      {
+        "id": "A",
+        "text": "sulfato de magnésio, 4 g IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sulfato de magnésio, 4 g IV + 10 g IM.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "hidralazina, 5 mg IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "benzodiazepínico, 10 mg IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clássico de pré-eclâmpsia com sinais de gravidade (também chamada de iminência de eclâmpsia). Os critérios presentes são: gestação acima de 20 semanas, níveis pressóricos elevados (140 x 90 mmHg) e, principalmente, sintomas de iminência (cefaleia, escotomas cintilantes e dor epigástrica). Diante desse cenário, a prioridade absoluta é a prevenção de convulsões (eclâmpsia) antes e durante o transporte para uma unidade de maior complexidade.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta. A administração de apenas 4 g de sulfato de magnésio por via intravenosa (IV) compõe apenas a dose de ataque do esquema de Zuspan. Para garantir a manutenção do nível terapêutico da droga, especialmente durante uma transferência onde pode não haver bomba de infusão contínua disponível, apenas a dose de ataque IV é insuficiente.\n\nAlternativa (b) Correta. Esta alternativa descreve a dose de ataque do esquema de Pritchard: 4 g IV (lento) somados a 10 g IM (5 g em cada nádega). Este esquema é amplamente recomendado em serviços de saúde com menos recursos ou para pacientes que serão transferidos, pois a aplicação intramuscular garante a manutenção de níveis terapêuticos de magnésio por algumas horas, dispensando o uso imediato de bombas de infusão contínua durante o trajeto. O sulfato de magnésio é a droga de escolha para prevenção e tratamento das convulsões na eclâmpsia.\n\nAlternativa (c) Incorreta. A hidralazina é um vasodilatador utilizado para o tratamento de crises hipertensivas (emergências), geralmente indicado quando a pressão arterial está igual ou superior a 160 x 110 mmHg. No caso em questão, a paciente apresenta 140 x 90 mmHg. Embora o controle pressórico seja importante, a prioridade imediata para evitar a progressão para eclâmpsia em uma paciente sintomática é a magnesioterapia.\n\nAlternativa (d) Incorreta. Os benzodiazepínicos, como o diazepam, não são as drogas de escolha para a prevenção ou tratamento de convulsões na gestação. Estudos demonstraram que o sulfato de magnésio é superior aos anticonvulsivantes comuns na redução do risco de eclâmpsia e na mortalidade materna. O uso de benzodiazepínicos fica reservado apenas para casos excepcionais onde o sulfato de magnésio é contraindicado ou em convulsões refratárias.\n\nCONCLUSÃO\n\nA conduta correta para estabilização e transporte de gestantes com sinais de iminência de eclâmpsia baseia-se na magnesioterapia. O esquema de Pritchard (4 g IV + 10 g IM) é a opção mais segura e eficaz para garantir a proteção neurológica da paciente durante a transferência.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  },
+  {
+    "id": "AJUDA_137bccc6-a4c2-4fa0-b063-6222e3246084",
+    "originalId": "137bccc6-a4c2-4fa0-b063-6222e3246084",
+    "statement": "São elementos de uma Linha De Cuidado efetiva na Estratégia de Saúde da Família (ESF), EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Critérios de encaminhamento e retorno pactuados entre pontos de atenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síntese clínica padronizada e prazos definidos para contrarreferência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Contrarreferência facultativa, quando há sobrecarga no serviço especializado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Registro multiprofissional com metas, responsáveis e indicadores de seguimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, devemos lembrar que uma Linha de Cuidado (LC) fundamenta-se na continuidade, na integralidade e na fluidez da assistência dentro das Redes de Atenção à Saúde (RAS). A Estratégia de Saúde da Família (ESF) atua como o centro de comunicação e a coordenadora do cuidado nesse processo.\n\nAlternativa a) Esta alternativa está correta e descreve um elemento essencial. Para que uma linha de cuidado funcione, é indispensável que existam critérios técnicos e protocolos pactuados entre a atenção primária e os demais pontos da rede. Isso garante que o paciente seja encaminhado no momento certo e retorne com as orientações necessárias.\n\nAlternativa b) Esta alternativa está correta. A síntese clínica padronizada é o documento que transmite as informações relevantes sobre o que foi feito no serviço especializado. Ter prazos definidos para essa resposta é crucial para que a equipe de Saúde da Família não perca o tempo terapêutico e possa dar continuidade ao tratamento do paciente em seu território.\n\nAlternativa c) Esta alternativa está incorreta e é o gabarito da questão (o \"exceto\"). A contrarreferência é um pilar da coordenação do cuidado e jamais deve ser considerada facultativa ou opcional. Mesmo em cenários de sobrecarga do sistema, a comunicação entre o especialista e o médico de família é obrigatória para garantir a segurança do paciente. Sem a contrarreferência, o cuidado torna-se fragmentado, e a ESF perde a capacidade de monitorar o plano terapêutico.\n\nAlternativa d) Esta alternativa está correta. O planejamento do cuidado envolve uma abordagem multiprofissional. Definir metas claras, estabelecer quem são os responsáveis por cada etapa e monitorar o paciente por meio de indicadores de seguimento são práticas de gestão clínica que garantem a efetividade da linha de cuidado e permitem ajustes quando os resultados não são alcançados.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  },
+  {
+    "id": "AJUDA_137c2079-a0ea-47b3-bc08-d94eafb354c9",
+    "originalId": "137c2079-a0ea-47b3-bc08-d94eafb354c9",
+    "statement": "Lactente de 7 meses, sexo feminino, vai em consulta com queixa materna de estar mais molinho. Mãe relata que percebeu que, neste mês, ao colocar o filho de pé, segurando-o pelas mãos, agora ele dobra as pernas imediatamente, não ficando \"durinha\" como antes e que, ao limpar as fraldas, as pernas estão com maior amplitude ao serem estendidas. Do ponto de vista de cognitivo comportamental, não há queixas. Diante do quadro descrito, qual a MELHOR conduta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tranquilizar a família e explicar que se trata da fase de hipotonia fisiológica do desenvolvimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "encaminhar para fisioterapia motora e observar evolução da lactente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar CPK e aldolase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar CPK e aldolase, além de encaminhar para fisioterapia com observação da evolução da lactente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO lactente de 7 meses apresenta um relato materno de estar mais molinho e dobrar as pernas ao ser colocado de pé, além de maior amplitude articular durante a higiene. O ponto crucial para a resolução da questão é o fato de o desenvolvimento cognitivo-comportamental estar normal e a idade da criança.\n\nO tônus muscular do ser humano passa por uma evolução previsível no primeiro ano de vida. O recém-nascido nasce com uma hipertonia flexora (membros encolhidos). Com o passar dos meses, essa hipertonia diminui, dando lugar a uma fase de hipotonia fisiológica, que atinge seu ponto máximo (nadir) justamente entre os 6 e 8 meses de idade. Nesse período, é normal que a criança pareça mais flexível e apresente a chamada astasia fisiológica, que é a tendência de dobrar os joelhos ou não sustentar o peso totalmente quando segurada pelas mãos em posição vertical.\n\nPOR QUE A ALTERNATIVA A ESTÁ CORRETA?\n\nA alternativa A é a conduta de escolha porque reconhece que os achados são próprios da fisiologia do desenvolvimento motor. Se a criança mantém marcos de desenvolvimento adequados e não apresenta sinais de alerta (como perda de habilidades já adquiridas ou atraso cognitivo), o papel do médico é orientar a família sobre essa fase de transição, explicando que a hipotonia é temporária e precede o ganho de força muscular necessária para engatinhar e andar.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa B: O encaminhamento para fisioterapia seria uma intervenção desnecessária (supermedicalização) para um processo natural. A fisioterapia é indicada quando há atraso nos marcos do desenvolvimento motor ou diagnóstico de patologias neuromusculares.\n\nAlternativa C: A dosagem de CPK (creatinofosfoquinase) e aldolase serve para investigar doenças musculares (miopatias), onde ocorre destruição de fibras musculares. No caso descrito, não há sinais de fraqueza patológica ou atrofia, apenas uma variação do tônus normal para a idade. Solicitar esses exames em um lactente saudável geraria custos e ansiedade familiar sem benefício clínico.\n\nAlternativa D: Está incorreta por acumular os erros de solicitar exames laboratoriais sem indicação clínica e encaminhar o paciente para tratamento fisioterápico sem necessidade, ignorando a fase fisiológica pela qual o lactente está passando.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  },
+  {
+    "id": "AJUDA_138e672e-0b35-4a6f-b475-b6b46dfab7f6",
+    "originalId": "138e672e-0b35-4a6f-b475-b6b46dfab7f6",
+    "statement": "Um homem de 63 anos de idade, com antecedente de doença diverticular colônica, compareceu ao pronto-socorro com queixa de fraqueza e tontura. Nos exames admissionais, apresentou hemoglobina de 6,5, ht a 30%, vcm e hcm no limite inferior da normalidade e rdw aumentado. O paciente relatou sangue vivo nas fezes durante as últimas semanas. A equipe médica solicitou reticulócitos, com valor de absoluto de 65.000 e 2,2% em índice (referência da normalidade 20.000 a 100.000 absoluto e 1 a 2% de índice). Com base nessa situação hipotética, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de provável anemia hiperproliferativa devido às perdas sanguíneas em trato gastrointestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de uma provável anemia hiperproliferativa e ferropriva devido às perdas por trato gastrointestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de provável anemia hipoproliferativa e ferropriva associada às perdas sanguíneas por trato gastrointestinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de uma provável anemia hipoproliferativa devido ao quadro hemorrágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Possui anemia normoproliferativa, devido às perdas gastrointestinais e apresenta possível componente de ferropenia associado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro de anemia grave (Hb 6,5 g/dL) e crônica, evidenciada pela perda de sangue vivo nas fezes há semanas e pelo antecedente de doença diverticular. Os índices hematimétricos (VCM e HCM no limite inferior da normalidade e RDW aumentado) sugerem uma anemia em transição para microcítica e hipocrômica, com grande variação no tamanho das hemácias (anisocitose), o que é característico da deficiência de ferro (anemia ferropriva) em estágio inicial ou intermediário.\n\nA interpretação dos reticulócitos é o ponto central da questão. Em uma anemia grave (Hb 6,5), espera-se que a medula óssea saudável responda aumentando drasticamente a produção de novas células (reticulócitos). No caso, o valor absoluto de 65.000 está dentro da faixa de normalidade para um indivíduo não anêmico (20.000 a 100.000). No entanto, para um paciente com anemia severa, esse valor é considerado inadequado. Uma resposta medular efetiva (hiperproliferativa) exigiria valores absolutos acima de 100.000 ou um Índice de Produção Reticulocitária (IPR) maior que 2. Como a medula não está respondendo proporcionalmente ao grau da anemia, o quadro é classificado como hipoproliferativo. Isso ocorre porque a perda crônica de sangue levou à depleção dos estoques de ferro, impedindo a produção acelerada de hemácias.\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA?\n\nA alternativa (c) define corretamente a anemia como hipoproliferativa, pois a contagem de reticulócitos, embora numericamente \"normal\", é insuficiente para compensar a queda da hemoglobina. Além disso, associa corretamente a etiologia ferropriva decorrente das perdas gastrointestinais crônicas relatadas.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Incorreta. A anemia não é hiperproliferativa. Na anemia hiperproliferativa, a medula óssea responde vigorosamente à perda ou destruição de hemácias (como em hemorragias agudas com estoque de ferro preservado ou hemólises), elevando os reticulócitos acima do valor de referência.\n\nAlternativa B: Incorreta. Embora identifique o componente ferroprivo, erra ao classificar a anemia como hiperproliferativa. A carência de ferro é justamente o que impede a medula de ser hiperproliferativa.\n\nAlternativa D: Incorreta. Apesar de citar o termo hipoproliferativa, a alternativa é incompleta ao não mencionar o componente de ferropenia sugerido pelos índices hematimétricos (VCM/HCM baixos e RDW alto) e pela cronicidade do sangramento.\n\nAlternativa E: Incorreta. Embora o valor laboratorial esteja na faixa de normalidade (normoproliferativa no papel), o termo médico correto para uma resposta medular insuficiente diante de uma anemia grave é hipoproliferativa. Além disso, a alternativa C é mais precisa e completa conforme a nomenclatura clássica de provas de residência.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  },
+  {
+    "id": "AJUDA_13972041-497e-45e2-bf26-4d151101ea1b",
+    "originalId": "13972041-497e-45e2-bf26-4d151101ea1b",
+    "statement": "Pré-escolar, sexo masculino, de 4 anos e 6 meses é levado ao pronto-socorro com febre alta, persistente há 6 dias. Há uma semana retornou de uma viagem da Europa. Os pais relatam que ele tem estado bastante irritado e apresenta vermelhidão nos olhos. Durante o exame físico, o médico observa língua “em morango”, lábios edemaciados e rachados, eritema nas palmas das mãos e plantas dos pés, além de uma erupção cutânea maculopapular no tronco. Não há sinais de infecção respiratória ou gastrointestinal. Os exames laboratoriais revelam leucocitose com neutrofilia, elevação da proteína C-reativa (PCR) e da velocidade de hemossedimentação (VHS). Com base no caso clínico, qual é o diagnóstico mais provável para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Escarlatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Stevens-Johnson.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença de Kawasaki.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Artrite Idiopática Juvenil forma Sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO: DOENÇA DE KAWASAKI\n\nA Doença de Kawasaki é uma vasculite sistêmica febril aguda que afeta preferencialmente crianças menores de 5 anos. O diagnóstico é clínico e deve ser considerado em qualquer criança com febre persistente sem foco definido. Para o diagnóstico da forma clássica, exige-se febre por 5 dias ou mais, associada a pelo menos 4 dos 5 critérios seguintes:\n\n1. Alterações em extremidades: Eritema e/ou edema de mãos e pés na fase aguda, ou descamação periungueal na fase subaguda.\n2. Exantema polimórfico: Geralmente maculopapular, envolvendo o tronco.\n3. Injeção conjuntival bilateral: Não purulenta (olhos vermelhos sem secreção).\n4. Alterações labiais e da mucosa oral: Lábios fissurados e eritematosos, faringe hiperemiada ou língua em morango (framboesa).\n5. Linfadenopatia cervical: Geralmente unilateral e maior que 1,5 cm.\n\nNo caso clínico, o paciente apresenta febre por 6 dias, alterações orais (língua em morango e lábios rachados), alterações em extremidades (eritema palmar e plantar), conjuntivite e exantema no tronco, preenchendo critérios suficientes para o diagnóstico.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A escarlatina, causada pelo Streptococcus pyogenes, também apresenta língua em morango e exantema. No entanto, o exantema da escarlatina tem aspecto de lixa (micropapular), acentuação em dobras (linhas de Pastia) e palidez perioral (sinal de Filatov). Além disso, a escarlatina não causa conjuntivite e a febre costuma responder rapidamente ao uso de antibióticos, diferentemente da persistência observada no Kawasaki.\n\nAlternativa b) Incorreta. A Síndrome de Stevens-Johnson é uma reação de hipersensibilidade grave, frequentemente associada ao uso de medicamentos. Caracteriza-se por lesões cutâneas em alvo, formação de bolhas e necrose da epiderme com descolamento da pele, além de acometimento grave de pelo menos duas mucosas com formação de crostas hemorrágicas. O quadro descrito é de uma vasculite inflamatória, sem relato de descolamento cutâneo ou bolhas.\n\nAlternativa c) Correta. O paciente apresenta todos os elementos clínicos e laboratoriais (leucocitose e aumento de provas de fase aguda) característicos da Doença de Kawasaki. A irritabilidade citada é um sintoma muito comum e característico desta patologia em crianças pequenas.\n\nAlternativa d) Incorreta. O sarampo manifesta-se com febre, conjuntivite e exantema, mas possui características distintas: há sintomas catarrais intensos (tosse, coriza importante e fotofobia), o exantema tem progressão cefalocaudal e surgem as manchas de Koplik na mucosa oral (pequenos pontos brancos). Não há relato de língua em morango ou eritema palmar/plantar no sarampo.\n\nAlternativa e) Incorreta. A forma sistêmica da Artrite Idiopática Juvenil (Doença de Still) cursa com febre alta e persistente e exantema. Todavia, a febre costuma ser cotidiana (um ou dois picos diários que retornam ao normal), o exantema é classicamente cor salmão e evanescente (surge com a febre e desaparece em seguida), e a doença costuma evoluir com artrite ou linfadenomegalia e hepatosplenomegalia, não explicando as alterações em mucosas e a conjuntivite.\n\nGabarito: Letra (c).",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  },
+  {
+    "id": "AJUDA_1397f1cf-ecd1-4862-876b-6f127eff34c9",
+    "originalId": "1397f1cf-ecd1-4862-876b-6f127eff34c9",
+    "statement": "Em maio de 2024, aconteceram inundações devastadoras no Rio Grande do Sul (RS), que afetaram 478 municípios e mais de 2 milhões de pessoas, segundo dados de 2025 do Boletim da Defesa Civil do RS. Várias famílias ficaram desalojadas. Além disso, houve contaminação hídrica e desabastecimento da rede assistencial.\nDiante do quadro apresentado, assinale a alternativa que apresenta, respectivamente, a etapa e as ações a serem adotadas pela Vigilância Epidemiológica em casos como esse.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manejo do desastre; decidir sobre as ações de controle de doenças e agravos à saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mitigação; monitorar e controlar prioritariamente as doenças transmissíveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Recuperação; intensificar as ações para detecção de doenças-sentinela e de surtos e efetuar a notificação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução de risco; identificar e mapear a morbimortalidade e apontar as medidas para a redução do risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Gabarito: letra D.\n\nPonto central\n\nA questão usa o contexto das enchentes do RS apenas como pano de fundo. O que se cobra é a correspondência correta entre a etapa da gestão de risco de desastres e a ação atribuída à Vigilância Epidemiológica, conforme os guias do Ministério da Saúde (por exemplo, o Guia de Preparação e Resposta à Emergência em Saúde Pública por Inundação).\n\nEsses documentos dividem a gestão em três etapas:\n\n1. Redução de risco: abrange prevenção, mitigação e preparação. Ocorre antes do evento.\n2. Manejo do desastre: abrange alerta e resposta. Ocorre durante o evento e logo após.\n3. Recuperação: abrange reabilitação e reconstrução.\n\nA alternativa correta é a única em que a ação está vinculada à etapa certa.\n\nAnálise das alternativas\n\na) Incorreta. \"Manejo do desastre\" é uma etapa válida, mas a ação descrita não é a atribuição que os guias associam a essa fase. Durante o manejo, a Vigilância Epidemiológica intensifica a vigilância, detecta surtos e doenças-sentinela, notifica casos e monitora as doenças transmissíveis. \"Decidir sobre as ações de controle\" é uma formulação genérica e não corresponde à atribuição específica da fase de resposta.\n\nb) Incorreta. \"Mitigação\" não é uma etapa propriamente dita, e sim um componente da etapa de redução de risco. Além disso, monitorar e controlar prioritariamente as doenças transmissíveis (leptospirose, hepatite A, doenças diarreicas, tétano acidental, acidentes por animais peçonhentos) é ação típica do manejo do desastre, quando a população já está exposta à água contaminada e aos abrigos.\n\nc) Incorreta. Intensificar a detecção de doenças-sentinela e de surtos e efetuar a notificação são ações da fase de manejo (resposta), não da recuperação. Na recuperação, a vigilância mantém o monitoramento dos agravos de ocorrência mais tardia, avalia as ações realizadas e apoia o restabelecimento da rotina dos serviços.\n\nd) Correta. Na redução de risco, cabe à Vigilância Epidemiológica:\n- identificar e mapear o perfil de morbimortalidade das áreas suscetíveis;\n- conhecer as doenças com potencial de aumento após inundações;\n- indicar medidas para reduzir o risco, como vacinação, organização da rede, preparação de insumos e capacitação.\n\nEsse diagnóstico prévio é a base para uma resposta efetiva quando o desastre ocorre.\n\nResumo para memorizar\n\n- Redução de risco: mapear a morbimortalidade e propor medidas preventivas.\n- Manejo: intensificar a vigilância, detectar surtos e doenças-sentinela, notificar e controlar as doenças transmissíveis.\n- Recuperação: manter o monitoramento, avaliar as ações e restabelecer a rotina.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  },
+  {
+    "id": "AJUDA_13a8e8e6-b66e-44f3-9d01-65dfe51e6a92",
+    "originalId": "13a8e8e6-b66e-44f3-9d01-65dfe51e6a92",
+    "statement": "A necrose tubular aguda (NTA) constitui a principal causa de injúria renal aguda túbulo-intersticial. Na fase de manutenção da NTA, ocorre lesão celular com perda da borda em escova e descamação de células tubulares. O segmento do néfron mais vulnerável à isquemia e que apresenta maior susceptibilidade à necrose por depleção de ATP é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ducto coletor medular e papila renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Túbulo contorcido distal e ducto coletor cortical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Porção delgada descendente da alça de Henle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Túbulo contorcido proximal e porção espessa ascendente da alça de Henle.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA necrose tubular aguda (NTA) de origem isquêmica ocorre quando há uma redução crítica no fluxo sanguíneo renal, resultando em um desequilíbrio entre a oferta de oxigênio e a demanda metabólica das células tubulares. Para responder a essa questão, é fundamental entender que nem todas as células do néfron possuem a mesma necessidade de energia (ATP) ou o mesmo acesso ao oxigênio.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. O ducto coletor medular e a papila renal possuem taxas metabólicas menores do que os segmentos proximais e a alça de Henle. Embora a papila esteja em uma região de baixa oxigenação, suas células não realizam o transporte ativo intenso de solutos que caracteriza os segmentos mais vulneráveis à NTA. A necrose de papila é uma condição clínica distinta, associada geralmente ao diabetes, ao uso de analgésicos ou à anemia falciforme.\n\nAlternativa b) Incorreta. O túbulo contorcido distal e o ducto coletor cortical estão localizados no córtex renal. O córtex recebe a maior parte do fluxo sanguíneo renal (cerca de 90 por cento), o que garante uma pressão parcial de oxigênio muito mais alta do que na medula. Além disso, a demanda de ATP nesses segmentos é inferior à do túbulo proximal, tornando-os menos suscetíveis à lesão isquêmica primária.\n\nAlternativa c) Incorreta. A porção delgada descendente da alça de Henle é composta por células com poucas mitocôndrias, voltadas principalmente para o transporte passivo de água. Por terem um metabolismo basal muito baixo e pouca atividade de transporte ativo dependente de ATP, essas células são bastante resistentes à isquemia.\n\nAlternativa d) Correta. O túbulo contorcido proximal e a porção espessa ascendente da alça de Henle são os segmentos mais vulneráveis à NTA. O túbulo proximal (especialmente o segmento S3) é responsável pela reabsorção da maior parte do filtrado glomerular, um processo que consome quantidades massivas de ATP. Já a porção espessa ascendente da alça de Henle possui alta atividade da bomba Na-K-ATPase e está situada na medula externa, uma região que naturalmente opera com baixos níveis de oxigênio. Na vigência de isquemia, a depleção de ATP nessas células ocorre rapidamente, levando à falha das bombas iônicas, edema celular, perda da borda em escova (característica do túbulo proximal) e descamação celular para a luz do néfron.\n\nGABARITO: Letra D.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:02.458Z"
+  }
+]

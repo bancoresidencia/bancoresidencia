@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_ac4da2d9-3ee8-41e7-a9a1-d423fdb00485",
+    "originalId": "ac4da2d9-3ee8-41e7-a9a1-d423fdb00485",
+    "statement": "Mulher de 39 anos dá entrada no pronto-socorro por ferimento lacerocontuso de 2,0 cm no joelho esquerdo após queda, e é indicada sutura. Ao exame, o ferimento é superficial, acometendo a pele e subcutâneo; realizada limpeza com soro fisiológico e prescrita cobertura antitetânica. RX normal. Considerando as informações, o fio cirúrgico e o tipo de sutura mais indicados, respectivamente, para tratamento do ferimento são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "nylon 3-0 e ponto Donatti.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "polipropileno 4-0 e ponto em U.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "categute simples e ponto em X.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "categute cromado e ponto simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ácido poliglicólico e ponto simples invertido.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A escolha do material e da técnica de sutura depende, fundamentalmente, da localização anatômica, do grau de tensão da ferida e da profundidade da lesão. No caso descrito, temos um ferimento na região de uma articulação (joelho), que é uma área de grande mobilidade e, consequentemente, de alta tensão mecânica.\n\nAnálise das alternativas:\n\na) nylon 3-0 e ponto Donati.\nEsta é a alternativa correta. O nylon é um fio sintético, não absorvível e monofilamentar, ideal para suturas de pele por apresentar baixa reação tecidual e boa resistência. O calibre 3-0 é adequado para áreas de pele mais espessa e que sofrem tração, como o joelho. O ponto de Donati (também conhecido como vertical mattress ou \"longe-longe, perto-perto\") é a técnica de escolha para áreas de alta tensão, pois permite uma excelente eversão das bordas da ferida e maior resistência mecânica, minimizando o risco de deiscência durante a movimentação da articulação.\n\nb) polipropileno 4-0 e ponto em U.\nO polipropileno também é um fio não absorvível adequado para a pele, porém o calibre 4-0 é mais fino e pode não oferecer a resistência necessária para a região do joelho. O ponto em U (horizontal mattress) é útil para a hemostasia ou para evitar que o fio corte tecidos frágeis, mas não promove a eversão de bordas de forma tão eficaz quanto o Donati em áreas de dobra.\n\nc) categute simples e ponto em X.\nO categute simples é um fio absorvível de origem animal (orgânico) que gera grande reação inflamatória e perde a força tênsil rapidamente. Fios absorvíveis não devem ser utilizados na sutura externa da pele, pois aumentam o risco de infecção e de cicatrizes inestéticas. O ponto em X é geralmente utilizado para hemostasia ou síntese de aponeuroses.\n\nd) categute cromado e ponto simples.\nO categute cromado, embora tenha uma absorção mais lenta que o simples, continua sendo um fio absorvível orgânico inadequado para a síntese cutânea externa. O ponto simples, apesar de ser o mais comum na prática médica, pode não ser suficiente para resistir à tensão constante de uma articulação como o joelho, apresentando maior risco de inversão das bordas e deiscência.\n\ne) ácido poliglicólico e ponto simples invertido.\nO ácido poliglicólico é um fio sintético absorvível, indicado para suturas em tecidos internos ou plano subcutâneo, mas não para a superfície da pele. O ponto simples invertido é uma técnica utilizada justamente no plano profundo (subcutâneo) para aproximar os tecidos e reduzir o espaço morto, permitindo que a sutura cutânea externa seja feita com menos tensão, mas não é a técnica definitiva para o fechamento da epiderme.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.483Z"
+  },
+  {
+    "id": "AJUDA_ac54c226-3a5f-4646-afaf-17fe72af0cb3",
+    "originalId": "ac54c226-3a5f-4646-afaf-17fe72af0cb3",
+    "statement": "Paciente de 6 anos de idade, previamente hígida, refere aparecimento de “manchas vermelhas” em membros inferiores há cerca de 4 dias, sendo levada ao pronto atendimento. Exame físico dentro da normalidade, exceto pela presença de petéquias em membros inferiores. Nega outros sintomas. Coletados exames laboratoriais com os resultados apresentados na imagem a seguir: \n\nConsiderando a principal hipótese diagnóstica, a conduta para essa paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transfusão de plaquetas por aférese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corticoide oral por 1-3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Expectante e seguimento hematológico em 24-72 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ácido tranexâmico profilático até ascensão plaquetária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo da Púrpura Trombocitopênica Imunológica (PTI) na infância, um diagnóstico clássico em provas de residência.\n\nAnálise do Quadro Clínico e Laboratorial:\nA paciente é uma criança de 6 anos com quadro isolado de petéquias em membros inferiores (púrpura seca) e plaquetopenia (33.000/µL). O hemograma apresentado na imagem confirma que as séries vermelha (hemoglobina 12,5 g/dL) e branca (leucócitos 11.780/mm³) estão normais, o que caracteriza a plaquetopenia como isolada. Na ausência de hepatoesplenomegalia, linfonodomegalias ou sintomas sistêmicos (como febre e perda de peso), a principal hipótese diagnóstica é PTI.\n\nPor que a alternativa (c) está correta?\nDe acordo com os consensos atuais (como o da Sociedade Brasileira de Pediatria e da American Society of Hematology — ASH), o tratamento da PTI em pediatria é guiado principalmente pela clínica (presença de sangramentos) e não apenas pelo número absoluto de plaquetas. Para crianças com manifestações exclusivamente cutâneas (petéquias e equimoses) e contagem de plaquetas acima de 20.000-30.000/µL, a conduta inicial recomendada é a observação clínica e o seguimento ambulatorial próximo. A maioria dos casos na infância é autolimitada e apresenta resolução espontânea.\n\nAnálise das alternativas incorretas:\n\na) Transfusão de plaquetas por aférese: Incorreta. Na PTI, a sobrevida das plaquetas transfusionadas é curtíssima devido à destruição periférica mediada por autoanticorpos. A transfusão é reservada estritamente para situações de emergência com risco de morte (ex.: hemorragia intracraniana), o que não é o caso da paciente.\n\nb) Corticoide oral por 1-3 meses: Incorreta. Embora o corticoide seja uma opção terapêutica para elevar as plaquetas mais rapidamente, ele é geralmente reservado para casos com sangramentos mucosos (púrpura úmida) ou contagens muito baixas (menores do que 10.000-20.000/µL). Além disso, o tempo de 1 a 3 meses é excessivo para um quadro inicial de PTI na infância, onde se priorizam cursos curtos para evitar efeitos colaterais.\n\nd) Ácido tranexâmico profilático até ascensão plaquetária: Incorreta. O ácido tranexâmico é um antifibrinolítico utilizado como terapia adjuvante em casos de sangramentos mucosos ativos (como gengivorragia ou epistaxe grave). Não há indicação de seu uso profilático apenas pelo valor das plaquetas na PTI.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Hemostasia",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b99e2843b446337176a11d45d3c3687d121beecadbebc573af181f28b4a285d7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ac54c226-3a5f-4646-afaf-17fe72af0cb3_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.883Z"
+  },
+  {
+    "id": "AJUDA_ac57aab9-4742-47f5-9ed1-6afa48f09bb7",
+    "originalId": "ac57aab9-4742-47f5-9ed1-6afa48f09bb7",
+    "statement": "Tercigesta secundípara, com estenose mitral reumática, comparece na maternidade com gestação de 37 semanas e 6 dias em trabalho de parto espontâneo. Refere perda de líquido amniótico típica há 8 horas. Pesquisa de Estreptococo grupo B não realizada. Considerando parto vaginal não complicado, qual é a profilaxia antibiótica indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ampicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefazolina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ampicilina e clindamicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há indicação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico aborda dois cenários comuns de indicação de antibioticoprofilaxia no periparto: a prevenção da transmissão vertical do Estreptococo do Grupo B (GBS) e a profilaxia para Endocardite Infecciosa (EI).\n\n1. Profilaxia para Endocardite Infecciosa:\nSegundo as diretrizes atuais da American Heart Association (AHA) e da Sociedade Brasileira de Cardiologia (SBC), o parto vaginal ou cesáreo não complicado não possui indicação de antibioticoprofilaxia rotineira para prevenção de endocardite bacteriana, mesmo em pacientes com valvulopatias estruturais, como a estenose mitral reumática. O procedimento só demandaria antibiótico caso houvesse infecção ativa suspeita ou confirmada (como corioamnionite).\n\n2. Profilaxia para Estreptococo do Grupo B (GBS):\nNa ausência de rastreio para GBS (cultura desconhecida), a profilaxia intraparto é indicada apenas na presença de fatores de risco:\n- Idade gestacional menor que 37 semanas (trabalho de parto pré-termo);\n- Tempo de bolsa rota igual ou superior a 18 horas;\n- Febre intraparto (temperatura axilar igual ou superior a 38 °C);\n- História prévia de recém-nascido com doença invasiva por GBS;\n- Bacteriúria por GBS na gestação atual.\n\nA paciente está com 37 semanas e 6 dias (a termo), com bolsa rota há apenas 8 horas e sem outros fatores de risco descritos. Portanto, não preenche critérios para profilaxia de GBS.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A ampicilina (ou penicilina cristalina) seria a primeira escolha caso houvesse indicação de profilaxia para GBS ou para endocardite infecciosa, mas a paciente não tem indicação para nenhuma das duas situações.\n\nAlternativa B (Incorreta): A cefazolina é usada rotineiramente como profilaxia cirúrgica em cesarianas ou como opção em gestantes alérgicas à penicilina com baixo risco de anafilaxia na profilaxia de GBS. Não tem indicação em parto vaginal sem fatores de risco.\n\nAlternativa C (Incorreta): O esquema associando ampicilina e clindamicina não é recomendado para profilaxia intraparto de rotina para GBS ou endocardite.\n\nAlternativa D (Correta): Não há indicação de antibioticoprofilaxia, visto que a paciente não apresenta critérios clínicos/fatores de risco para profilaxia de GBS e o parto vaginal isolado não requer profilaxia para endocardite infecciosa.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Endocardite Bacteriana",
+      "Rotura Prematura de Membranas (RPM)",
+      "Valvopatias",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.883Z"
+  },
+  {
+    "id": "AJUDA_ac62a0bc-0c5c-4730-a5ae-689edce73025",
+    "originalId": "ac62a0bc-0c5c-4730-a5ae-689edce73025",
+    "statement": "A Lei nº 9.836/1999 acrescentou dispositivos à Lei nº 8.080/1990, criando o Subsistema de Atenção à Saúde Indígena (SASI). Assinale alternativa que descreve corretamente um dos objetivos principais da criação do SASI.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Centralizar o atendimento aos indígenas em grandes centros urbanos, facilitando o acesso a tecnologias de ponta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Garantir aos indígenas o acesso a ações e serviços de saúde com enfoque diferenciado e adequado às suas características culturais, sociais e econômicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Transferir a responsabilidade do cuidado da saúde indígena exclusivamente para as instituições privadas de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Unificar os modelos de atenção à saúde indígena e de atenção prestada à população não indígena, desconsiderando as especificidades culturais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a Lei nº 9.836/1999, conhecida como Lei Arouca, que instituiu o Subsistema de Atenção à Saúde Indígena (SASI) dentro do Sistema Único de Saúde (SUS). O objetivo dessa legislação é adaptar o modelo de atenção para atender às necessidades específicas das populações indígenas brasileiras.\n\nAlternativa a: Incorreta. O SASI baseia-se na descentralização e na criação de Distritos Sanitários Especiais Indígenas (DSEI), que buscam levar a assistência para dentro ou para o mais próximo possível das comunidades e territórios tradicionais. A centralização em grandes centros urbanos dificultaria o acesso e ignoraria a realidade geográfica e social dessas populações.\n\nAlternativa b: Correta. Este é o princípio fundamental da atenção diferenciada. A lei estabelece que o SUS deve considerar as especificidades culturais, as práticas de medicina tradicional, a organização social e a situação epidemiológica própria de cada povo indígena, garantindo que o atendimento não seja apenas técnico, mas também culturalmente seguro e adequado.\n\nAlternativa c: Incorreta. A gestão e o financiamento do Subsistema de Atenção à Saúde Indígena são responsabilidade principal da União (Governo Federal), por meio do Ministério da Saúde. Embora possam ocorrer convênios, a responsabilidade não é transferida exclusivamente para instituições privadas.\n\nAlternativa d: Incorreta. O SASI é um subsistema que deve estar integrado ao SUS; porém, ele não deve ser idêntico ao modelo aplicado à população geral. O desrespeito às especificidades culturais é justamente o que a Lei nº 9.836/1999 visa combater, promovendo a interculturalidade na saúde.\n\nGabarito: Alternativa (b).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.883Z"
+  },
+  {
+    "id": "AJUDA_ac636515-eb3b-45ba-924d-c4f6285dbe45",
+    "originalId": "ac636515-eb3b-45ba-924d-c4f6285dbe45",
+    "statement": "Mulher de 54 anos, com obesidade moderada, procura a emergência clínica de um hospital terciário, relatando dor contínua em hipocôndrio direito, há 72 horas, que se intensificou nas últimas 6 horas, acompanhada de náuseas e febre baixa. Durante a palpação profunda do hipocôndrio direito, apresenta interrupção súbita da inspiração profunda. O hemograma mostra contagem de leucócitos de 12.000 células/mm³ (VR: 4.450 a 10.950 células/mm³), e a ultrassonografia revela vesícula biliar com paredes de 0,8 cm de espessura, múltiplas imagens arredondadas com sombra acústica posterior e colédoco com 0,4 cm de diâmetro.\n\nCom base na principal hipótese diagnóstica, qual é a conduta indicada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar para colecistectomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Indicar descompressão endoscópica das vias biliares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar ressonância magnética de abdome superior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratar clinicamente com antibióticos e analgésicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico: colecistite aguda litiásica.\n\nO quadro preenche os critérios de Tóquio (TG18/TG13):\n- Sinais locais de inflamação: dor contínua em hipocôndrio direito há mais de 6 horas (aqui, 72 horas) e sinal de Murphy positivo, que é a interrupção súbita da inspiração profunda durante a palpação do ponto cístico.\n- Sinais sistêmicos: febre e leucocitose (12.000/mm³).\n- Imagem compatível na ultrassonografia: parede vesicular espessada (0,8 cm; normal até cerca de 0,3 a 0,4 cm) e cálculos (imagens arredondadas com sombra acústica posterior).\n\nO colédoco mede 0,4 cm, dentro da normalidade. Isso, associado à ausência de icterícia, torna improvável coledocolitíase ou colangite.\n\nClassificação de gravidade: grau II (moderada). Há leucocitose acima de 18.000/mm³? Não. Mas a duração dos sintomas é maior que 72 horas, um dos critérios de grau II. Não há disfunção orgânica, portanto não é grau III.\n\nConduta: colecistectomia videolaparoscópica precoce, de preferência nas primeiras 72 horas a 7 dias do início dos sintomas, associada a antibioticoterapia e suporte clínico. A paciente não tem disfunção orgânica e, pelos dados apresentados, tem bom risco cirúrgico. A cirurgia precoce reduz tempo de internação, recorrência e complicações (gangrena, perfuração, empiema) em comparação à cirurgia tardia.\n\nAnálise das alternativas:\n\na) Correta. A colecistectomia de urgência/precoce é o tratamento definitivo da colecistite aguda litiásica em paciente apta à cirurgia. A obesidade moderada não contraindica o procedimento laparoscópico. Mesmo com sintomas de 72 horas, as diretrizes atuais (Tóquio 2018, WSES) recomendam operar precocemente em centro com experiência, como o hospital terciário descrito.\n\nb) Incorreta. A descompressão endoscópica (CPRE) está indicada na coledocolitíase com colangite ou obstrução biliar. Aqui o colédoco tem 0,4 cm e não há icterícia nem tríade de Charcot, logo não há indicação de abordagem da via biliar principal.\n\nc) Incorreta. A ressonância (colangiorressonância) serve para investigar coledocolitíase em pacientes de risco intermediário: colédoco dilatado, alteração de enzimas canaliculares ou bilirrubinas. O diagnóstico de colecistite já está estabelecido pela clínica e pela ultrassonografia, que é o exame de escolha. Novo exame apenas atrasaria o tratamento.\n\nd) Incorreta. Antibióticos e analgésicos são parte do manejo inicial, mas não substituem a cirurgia. O tratamento clínico isolado, eventualmente com colecistostomia percutânea, fica reservado a pacientes graves ou de alto risco cirúrgico (grau III com disfunção orgânica sem condições de operar, ou comorbidades proibitivas). Não é o caso desta paciente. O tratamento conservador com cirurgia tardia aumenta a chance de recorrência e complicações.\n\nResposta: alternativa A.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Colecistite e Colangite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.883Z"
+  },
+  {
+    "id": "AJUDA_ac6d57ab-f616-4738-a6ca-2f4a848bafd3",
+    "originalId": "ac6d57ab-f616-4738-a6ca-2f4a848bafd3",
+    "statement": "Mulher de 48 anos, em programação cirúrgica para videocolecistectomia devido a colelitíase sintomática, dá entrada na emergência cirúrgica de um hospital terciário devido a dor refratária em andar superior do abdome e vômitos há dois dias. Exames laboratoriais da admissão - Leucometria = 15600/mm³ (valor de referência até 11000/mm³), amilase = 1730U/I (até 100U/I), lipase = 3200 (até 60U/I), PCR = 36mg/dl (até 0,5mg/dl). Considerando-se o diagnóstico, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A reposição fluídica moderadamente agressiva (1,5ml/kg/h) com ringer lactato deve ser iniciada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O aumento da proteína C reativa deve indicar o início da antibioticoterapia com carbapenêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O uso de analgésicos opioides e anti-inflamatórios não esteroidais é contraindicado na pancreatite aguda biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dieta parenteral deve ser iniciada o mais precocemente possível, mesmo na ausência de contraindicações à dieta por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico: O quadro clínico de dor abdominal súbita no andar superior, associado a vômitos e à elevação de amilase e lipase acima de três vezes o limite superior da normalidade, confirma o diagnóstico de pancreatite aguda. A história prévia de colelitíase sintomática aponta para a etiologia biliar.\n\nAlternativa A (Correta): O pilar do tratamento inicial da pancreatite aguda é a reposição volêmica precoce e adequada. O objetivo é manter a perfusão orgânica e prevenir a necrose pancreática. O Ringer Lactato é a solução cristaloide preferencial, pois estudos demonstram que ele pode reduzir a resposta inflamatória sistêmica em comparação ao soro fisiológico. A taxa de infusão moderada (em torno de 1,5 a 2,5 ml/kg/h) é atualmente preferida em relação a esquemas de ressuscitação agressiva, visando evitar complicações como sobrecarga volêmica e desconforto respiratório.\n\nAlternativa B (Incorreta): A Proteína C Reativa (PCR) elevada é um marcador de gravidade e de resposta inflamatória sistêmica, não sendo um indicador de infecção bacteriana por si só. O uso de antibióticos, incluindo os carbapenêmicos, é reservado estritamente para casos de necrose pancreática infectada ou infecções extrapancreáticas (como colangite ou pneumonia). O uso profilático de antibióticos não é recomendado, independentemente do valor da PCR.\n\nAlternativa C (Incorreta): A analgesia é fundamental no manejo da pancreatite aguda. Tanto os anti-inflamatórios quanto os opioides podem ser utilizados. O mito histórico de que a morfina seria contraindicada por causar espasmo do esfíncter de Oddi não possui relevância clínica comprovada, e os opioides são frequentemente necessários para o controle de dores intensas e refratárias.\n\nAlternativa D (Incorreta): A diretriz atual recomenda o reinício precoce da dieta por via oral conforme a tolerância do paciente (geralmente em casos leves). Caso o paciente não tolere a via oral, a preferência é sempre pela nutrição enteral (via sonda), que ajuda a manter a integridade da barreira intestinal e reduz o risco de translocação bacteriana. A nutrição parenteral é a última opção, indicada apenas quando o trato gastrointestinal não estiver funcional ou quando a via enteral for impossível de ser mantida.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.883Z"
+  },
+  {
+    "id": "AJUDA_ac788b5c-3ab6-4c3d-93fe-e9f85ecfeab6",
+    "originalId": "ac788b5c-3ab6-4c3d-93fe-e9f85ecfeab6",
+    "statement": "Primigesta, 30 anos de idade, com gestação gemelar dicoriônica e diamniótica, confirmada em ultrassonografia precoce, está com 33 semanas, com crescimento adequado para ambos os fetos, que se encontram em apresentação pélvica. A conduta mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar corticoide para maturação pulmonar e indicar parto na 34ª semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "resolver a gestação com 36 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cesárea eletiva com 39 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "seguir até 38 semanas, com avaliação seriada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "aguardar o trabalho de parto espontâneo e realizar cesárea nesse momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da questão:\n\nTrata-se de uma gestação gemelar dicoriônica e diamniótica (DCDA) sem complicações (crescimento adequado para a idade gestacional). O desafio aqui é determinar o momento ideal para o parto e a conduta frente à apresentação pélvica de ambos os fetos em uma gestação de 33 semanas.\n\nAlternativa (a) Incorreta. A interrupção da gestação com 34 semanas é reservada para situações de alto risco, como na gestação monocoriônica monoamniótica (devido ao risco de entrelaçamento de cordões) ou em casos de complicações materno-fetais graves. Para uma gestação dicoriônica estável, o parto prematuro com 34 semanas traria riscos desnecessários de morbidade neonatal. O corticoide é indicado apenas quando há risco iminente de parto prematuro em até 7 dias.\n\nAlternativa (b) Incorreta. A resolução com 36 semanas é a recomendação clássica para gestações gemelares monocoriônicas diamnióticas (MCDA) não complicadas. Nas gestações dicoriônicas (DCDA), como no caso da questão, o risco placentário é menor, permitindo que a gestação avance com segurança até o termo precoce.\n\nAlternativa (c) Incorreta. Em gestações únicas, 39 semanas é o marco para cesáreas eletivas. No entanto, em gestações gemelares, estudos mostram que o risco de óbito fetal intraútero aumenta após a 38ª semana. Por isso, as diretrizes sugerem não ultrapassar 38 semanas e 6 dias.\n\nAlternativa (d) Correta. Para gestações gemelares dicoriônicas e diamnióticas sem complicações, o consenso da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) e de órgãos internacionais (como ACOG e RCOG) é realizar o parto entre 37 e 38 semanas e 6 dias. Como o primeiro feto (feto A) está em apresentação pélvica, a via de parto de eleição é a cesárea. Portanto, deve-se realizar o acompanhamento ambulatorial com avaliação seriada da vitalidade e crescimento até atingir o período de termo (37-38 semanas), quando a resolução será programada.\n\nAlternativa (e) Incorreta. Aguardar o trabalho de parto espontâneo em uma gestação gemelar pode resultar em ultrapassar a idade gestacional de segurança (38 semanas). Além disso, como o primeiro feto está pélvico, a indicação de cesárea já está estabelecida. Programar o procedimento para o período de termo é mais seguro do que aguardar o início do trabalho de parto, que pode ocorrer em momentos desfavoráveis ou evoluir para situações de urgência.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.883Z"
+  },
+  {
+    "id": "AJUDA_ac7b14aa-4b83-4627-99fb-cb83d2bad3bb",
+    "originalId": "ac7b14aa-4b83-4627-99fb-cb83d2bad3bb",
+    "statement": "Um homem de 40 anos, sem comorbidades conhecidas, é internado em enfermaria de clínica médica para investigação de febre e perda de peso. Refere, há quatro meses, episódios recorrentes de febre vespertina, além de astenia e perda ponderal de 10kg. Ao exame, apresenta-se hipocorado e com baço palpável a 15cm do rebordo costal esquerdo. Exames laboratoriais evidenciam pancitopenia e hipoalbuminemia. É realizado aspirado de MO, que revela células ovoides com núcleo grande no interior dos macrófagos. O diagnóstico mais provável, nesse caso, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "amiloidose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tricoleucemia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença de Gaucher",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "leishmaniose visceral",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de leishmaniose visceral (calazar), caracterizado pela tríade de febre prolongada, perda de peso e esplenomegalia maciça.\n\nAnálise do caso clínico:\nO paciente apresenta sintomas constitucionais crônicos (febre vespertina, astenia e perda ponderal de 10 kg em quatro meses). O exame físico revela palidez (sugerindo anemia) e uma esplenomegalia importante (15 cm do rebordo costal esquerdo). Laboratorialmente, a pancitopenia é uma consequência comum do hiperesplenismo e da infiltração da medula óssea, enquanto a hipoalbuminemia decorre do estado inflamatório crônico e da inversão da relação albumina/globulina (comum nesta patologia devido à intensa produção policlonal de anticorpos). O achado definitivo está no aspirado de medula óssea: células ovoides com núcleo grande no interior de macrófagos são formas amastigotas de Leishmania spp.\n\nAnálise das alternativas:\n\na) Amiloidose: Embora possa causar organomegalias, a amiloidose não costuma cursar com febre vespertina recorrente nem com o achado citológico de estruturas ovoides dentro de macrófagos. O diagnóstico de amiloidose é feito pela demonstração de depósitos de material amiloide que apresenta birrefringência verde-maçã sob luz polarizada após coloração com Vermelho Congo.\n\nb) Tricoleucemia (leucemia de células cabeludas): É uma neoplasia hematológica que causa esplenomegalia e pancitopenia. No entanto, o aspirado de medula costuma ser difícil (punção seca devido à fibrose) e as células características são linfócitos com projeções citoplasmáticas semelhantes a cabelos, e não estruturas intracelulares em macrófagos. Além disso, a febre prolongada e a perda de peso acentuada são mais típicas de processos infecciosos como o calazar.\n\nc) Doença de Gaucher: É uma doença de depósito lisossômico que causa esplenomegalia volumosa e pancitopenia. No aspirado de medula óssea, observam-se as \"células de Gaucher\" (macrófagos com citoplasma de aspecto em papel amassado), que são diferentes das formas amastigotas (pequenas células ovoides com núcleo e cinetoplasto visíveis) descritas no enunciado. Além disso, a doença de Gaucher não costuma evoluir com episódios de febre diária.\n\nd) Leishmaniose visceral: Alternativa correta. O quadro de febre, emagrecimento, hepatoesplenomegalia e pancitopenia em um paciente adulto é o cenário clássico da doença no Brasil. A descrição citológica do aspirado de medula óssea confirma o diagnóstico ao identificar as formas amastigotas do parasita dentro das células do sistema fagocítico mononuclear (macrófagos).",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas",
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.883Z"
+  },
+  {
+    "id": "AJUDA_ac81c93c-8073-4465-8210-8966c42f1a9a",
+    "originalId": "ac81c93c-8073-4465-8210-8966c42f1a9a",
+    "statement": "Um homem de 50 anos foi atropelado por um carro e levado ao pronto-socorro com dor intensa no quadril direito. Ao exame físico, nota-se rotação externa e encurtamento da perna direita. Radiografias mostram uma fratura da pelve com deslocamento do anel pélvico. Dentre as opções, a prioridade do tratamento para esse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fixação interna da fratura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fixação externa da pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tomografia de corpo inteiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Imobilização do membro inferior com tração esquelética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colocação de uma cinta pélvica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O paciente apresenta um quadro clínico sugestivo de fratura de pelve com instabilidade do anel pélvico após trauma de alta energia. Nessas situações, a principal preocupação e causa de morte precoce é a hemorragia retroperitoneal grave. A prioridade absoluta no atendimento inicial, seguindo os protocolos do ATLS (Advanced Trauma Life Support), é a estabilização mecânica da pelve para reduzir o volume pélvico e auxiliar no controle do sangramento.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A fixação interna representa o tratamento definitivo da fratura. Ela só deve ser realizada quando o paciente estiver clinicamente estável e após um planejamento cirúrgico adequado, geralmente dias após o trauma inicial. Não é uma medida de emergência.\n\nAlternativa b) Incorreta. A fixação externa é uma opção de estabilização temporária que pode ser usada no controle de danos, mas exige ambiente de centro cirúrgico e é um procedimento invasivo. A estabilização imediata deve ser realizada de forma mais rápida, ainda na sala de trauma.\n\nAlternativa c) Incorreta. Embora a tomografia de corpo inteiro seja essencial para o diagnóstico detalhado das lesões no trauma, ela não deve atrasar manobras de ressuscitação e estabilização. Em um cenário de suspeita de fratura pélvica grave, a prioridade é fechar o anel pélvico antes de deslocar o paciente para exames de imagem complexos.\n\nAlternativa d) Incorreta. A tração esquelética é utilizada principalmente para alinhar fraturas do fêmur ou do acetábulo e manter o comprimento do membro. Ela não tem eficácia na estabilização do anel pélvico nem no controle de hemorragia retroperitoneal.\n\nAlternativa e) Correta. A aplicação de uma cinta pélvica (ou, na ausência desta, de um lençol ao nível dos trocanteres maiores) é a conduta prioritária e imediata. Essa medida reduz o volume da pelve \"aberta\", promovendo o tamponamento de sangramentos venosos e estabilizando mecanicamente os fragmentos ósseos. É um método não invasivo, rápido e fundamental para a sobrevivência do paciente na fase aguda.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Trauma Ortopédico"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.883Z"
+  },
+  {
+    "id": "AJUDA_ac827a08-a235-4e98-99b0-ee9e3cfc05e0",
+    "originalId": "ac827a08-a235-4e98-99b0-ee9e3cfc05e0",
+    "statement": "Eduardo tem três anos e há 10 dias apresenta febre alta. Ao exame físico, apresenta edema palpebral bilateral, petéquias no palato, exsudato amigdaliano, adenomegalia cervical anterior e posterior, fígado palpável a 4cm do rebordo costal direito e baço a 5cm do rebordo costa esquerdo. Qual exame mais indicado para confirmação do diagnóstico neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sorologia para dengue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sorologia para Epstein-Barr vírus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aspirado e cultura de medula óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste rápido para pesquisa de estreptococo do grupo A.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico de Eduardo é clássico para mononucleose infecciosa. A presença da tríade de febre prolongada (10 dias), faringite exsudativa com petéquias no palato e linfadenopatia generalizada (incluindo a cadeia cervical posterior), somada à hepatoesplenomegalia e ao sinal de Hoagland (edema palpebral bilateral no início da doença), aponta diretamente para a infecção pelo vírus Epstein-Barr (EBV).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A dengue costuma cursar com febre de menor duração (geralmente até 7 dias), mialgia intensa e dor retro-orbital. Embora possa causar hepatomegalia em alguns casos, não justifica o exsudato amigdaliano nem a adenomegalia cervical posterior marcada e simétrica vista neste paciente.\n\nAlternativa b: Correta. A sorologia para o vírus Epstein-Barr é o exame mais indicado para confirmar a mononucleose infecciosa. Em crianças pequenas, especialmente em menores de 4 anos, os testes de anticorpos heterófilos (como o Monospot) frequentemente apresentam resultados falso-negativos devido à imaturidade imunológica. Por isso, a pesquisa de anticorpos específicos contra antígenos do capsídeo viral (VCA IgM e IgG) é o padrão-ouro para o diagnóstico nesta faixa etária.\n\nAlternativa c: Incorreta. O aspirado de medula óssea é um procedimento invasivo indicado para a investigação de neoplasias hematológicas (como leucemias) ou doenças infecciosas específicas como a leishmaniose visceral. Apesar de leucemias poderem causar febre e visceromegalias, o conjunto de achados faríngeos, o edema palpebral e a adenomegalia cervical posterior tornam a mononucleose a hipótese diagnóstica primária, devendo-se esgotar os exames não invasivos primeiro.\n\nAlternativa d: Incorreta. O estreptococo do grupo A (*Streptococcus pyogenes*) causa faringite com exsudato, petéquias no palato e febre, mas não evolui com hepatoesplenomegalia nem com o sinal de Hoagland. Além disso, a adenomegalia na faringite estreptocócica é tipicamente cervical anterior e submandibular, enquanto a mononucleose frequentemente envolve as cadeias posteriores. A duração da febre por 10 dias também é mais característica da etiologia viral.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Hepatoesplenomegalias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:41.883Z"
+  }
+]

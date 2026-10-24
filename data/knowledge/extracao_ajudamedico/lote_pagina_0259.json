@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_4827ac9c-042a-44d3-8798-513f74fddaa6",
+    "originalId": "4827ac9c-042a-44d3-8798-513f74fddaa6",
+    "statement": "Homem, 55 anos de idade, previamente saudável, chega ao serviço de emergência 60 min após início de dor torácica anginosa típica. Eletrocardiograma: supra de ST em parede anterior. Exame físico: PA = 70/45 mmHg, FC = 110 bpm, extremidades frias, tempo de enchimento capilar = 6 segundos. Enquanto se organiza a transferência imediata para angioplastia primária, qual é a droga vasoativa mais adequada para restabelecer a pressão arterial e a perfusão tecidual neste cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Noradrenalina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Dobutamina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dopamina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vasopressina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um paciente com infarto agudo do miocárdio com supradesnivelamento do segmento ST (IAMCSST) em parede anterior, evoluindo com choque cardiogênico. A pressão arterial está criticamente baixa (70/45 mmHg) e há sinais evidentes de hipoperfusão tecidual (extremidades frias e tempo de enchimento capilar de 6 segundos). A prioridade hemodinâmica imediata, enquanto se aguarda a terapia de reperfusão, é restaurar a pressão de perfusão coronariana e sistêmica.\n\nAlternativa a: Correta. A noradrenalina é atualmente o vasopressor de primeira escolha no choque cardiogênico acompanhado de hipotensão severa. Ela atua predominantemente em receptores alfa-1-adrenérgicos, promovendo vasoconstrição e aumento rápido da pressão arterial, o que é fundamental para manter o fluxo sanguíneo nos órgãos vitais e nas próprias artérias coronárias. Em comparação com a dopamina, a noradrenalina apresenta menor risco de induzir arritmias e está associada a melhores desfechos em estados de choque.\n\nAlternativa b: Incorreta. A dobutamina é um agente inotrópico que aumenta a contratilidade cardíaca (efeito beta-1), mas possui uma ação vasodilatadora periférica (efeito beta-2). Em um paciente com pressão sistólica de apenas 70 mmHg, a introdução da dobutamina isoladamente pode causar uma queda ainda maior da pressão arterial, agravando o estado de choque. Ela costuma ser associada à noradrenalina apenas após a estabilização da pressão arterial mínima, caso persistam sinais de baixo débito.\n\nAlternativa c: Incorreta. A dopamina já foi muito utilizada no passado, mas diretrizes atuais baseadas no estudo SOAP II desaconselham seu uso como primeira linha no choque cardiogênico. O estudo demonstrou que, comparada à noradrenalina, a dopamina causa significativamente mais taquiarritmias e está relacionada a um aumento na mortalidade especificamente em pacientes com choque de origem cardíaca.\n\nAlternativa d: Incorreta. A vasopressina é um potente vasoconstritor que atua em receptores V1. Seu uso é mais comum no choque séptico refratário. No contexto do choque cardiogênico, o aumento isolado e intenso da pós-carga (resistência contra a qual o coração precisa bombear) sem qualquer suporte à contratilidade pode sobrecarregar o ventrículo esquerdo infartado e piorar o desempenho cardíaco, não sendo a droga de escolha inicial.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  },
+  {
+    "id": "AJUDA_4828af85-ed9d-4c96-bf9e-cf0e0664b4aa",
+    "originalId": "4828af85-ed9d-4c96-bf9e-cf0e0664b4aa",
+    "statement": "Mulher, 55 anos, com HAS e diabetes Mellitus (DM) mal controlados, apresentou quadro súbito de hemiparesia direita. A principal hipótese diagnóstica e a descrição da TC do crânio mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "AVE isquêmico / hipodensidade corticossubcortical na região nucleocapsular esquerda",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "AVE isquêmico / hipodensidade corticossubcortical no tálamo direito",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ruptura de aneurisma / hiperdensidade espontânea nas cisternas da base",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "AVE hemorrágico / coleção subdural frontoparietal direita",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente apresenta um quadro súbito de déficit neurológico focal (hemiparesia direita) em um contexto de múltiplos fatores de risco cardiovascular (hipertensão e diabetes mal controlados). O primeiro passo no raciocínio clínico é localizar a lesão: se o déficit é à direita, a lesão cerebral deve estar no hemisfério esquerdo, devido ao cruzamento das fibras motoras (trato corticoespinhal) na decussação das pirâmides. Estatisticamente, o Acidente Vascular Encefálico (AVE) isquêmico é mais frequente que o hemorrágico.\n\nAlternativa (a) CORRETA: O AVE isquêmico é a principal hipótese diagnóstica diante de um déficit súbito em paciente com fatores de risco. Na Tomografia Computadorizada (TC) de crânio, a isquemia é visualizada como uma área de hipodensidade (cor mais escura que o parênquima normal). A região nucleocapsular esquerda (que engloba os núcleos da base e a cápsula interna) é um local comum de infartos lacunares ou de grandes vasos em pacientes hipertensos e diabéticos, justificando perfeitamente a hemiparesia contralateral (direita).\n\nAlternativa (b) INCORRETA: Embora o AVE isquêmico seja uma hipótese correta e a hipodensidade seja o achado tomográfico esperado, a alternativa aponta uma lesão no lado direito do cérebro. Como a paciente tem hemiparesia à direita, a lesão obrigatoriamente deve ser no hemisfério esquerdo.\n\nAlternativa (c) INCORRETA: A ruptura de aneurisma causa Hemorragia Subaracnoide (HSA), que se manifesta na TC como hiperdensidade (sangue vivo/branco) nas cisternas da base e sulcos corticais. Clinicamente, a HSA cursa com cefaleia súbita e intensa (cefaleia em trovoada) e sinais de irritação meníngea, e não tipicamente com hemiparesia focal isolada.\n\nAlternativa (d) INCORRETA: Um AVE hemorrágico intraparenquimatoso apresentaria hiperdensidade na TC, não uma coleção subdural. A coleção subdural (hematoma subdural) geralmente está relacionada a traumas e possui formato de crescente. Além disso, a alternativa aponta o lado direito, o que resultaria em sintomas no lado esquerdo do corpo.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  },
+  {
+    "id": "AJUDA_482ef5c5-552c-4db2-b6bb-ed45c18c65ce",
+    "originalId": "482ef5c5-552c-4db2-b6bb-ed45c18c65ce",
+    "statement": "RN de 7 dias de vida chega no pronto atendimento com a mãe relatando sangramento retal e nasal. O parto foi domiciliar, natural, feito por doula. Segundo a mãe, a criança nasceu bem, chorando forte. Aceita bem o leite materno. O quadro clínico do RN sugere deficiência de",
+    "options": [
+      {
+        "id": "A",
+        "text": "vitamina A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "vitamina D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vitamina B1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "vitamina K.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "vitamina C.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é um caso clássico de Doença Hemorrágica do Recém-Nascido (DHRN), atualmente denominada Sangramento por Deficiência de Vitamina K (SDVK).\n\nAnálise do caso:\nO paciente é um recém-nascido (RN) de 7 dias de vida que apresenta sangramentos em mucosas (nasal) e no trato gastrointestinal (retal). Trata-se da forma clássica da doença, que ocorre tipicamente entre o 2º e o 7º dia de vida. O ponto fundamental do enunciado é o parto domiciliar feito por doula, o que indica que a profilaxia padrão com vitamina K intramuscular, realizada obrigatoriamente em ambiente hospitalar logo após o nascimento, provavelmente não foi administrada. O aleitamento materno exclusivo também é um fator contribuinte, pois o leite humano possui baixas concentrações de vitamina K.\n\nAlternativa a) Incorreta. A deficiência de vitamina A (retinol) está associada a alterações oculares (como xeroftalmia e cegueira noturna) e prejuízo na integridade do sistema imunológico e epitelial. Não é causa de distúrbios hemorrágicos agudos no RN.\n\nAlternativa b) Incorreta. A deficiência de vitamina D está relacionada ao metabolismo do cálcio e do fósforo, levando ao raquitismo em crianças. Embora a suplementação seja recomendada para bebês em aleitamento materno, sua falta não provoca sangramentos.\n\nAlternativa c) Incorreta. A deficiência de vitamina B1 (tiamina) causa o beribéri. Em lactentes, a forma infantil pode causar insuficiência cardíaca, edema e sintomas neurológicos, mas não interfere na cascata de coagulação.\n\nAlternativa d) Correta. A vitamina K é um cofator indispensável para a síntese hepática dos fatores de coagulação II (protrombina), VII, IX e X, além das proteínas C e S. Os recém-nascidos são naturalmente predispostos à deficiência por apresentarem baixa transferência placentária dessa vitamina, reservas hepáticas reduzidas e ausência de flora bacteriana intestinal (que sintetiza a vitamina K2) nos primeiros dias. Sem a administração profilática ao nascer, os níveis dos fatores dependentes de vitamina K caem drasticamente, resultando em manifestações hemorrágicas.\n\nAlternativa e) Incorreta. A deficiência de vitamina C causa o escorbuto, que se manifesta por fragilidade capilar, sangramentos gengivais e subperiósteos e alterações na cicatrização. No entanto, é uma condição de evolução crônica, extremamente rara em neonatos, e não se enquadra na fisiopatologia do sangramento agudo na primeira semana de vida.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  },
+  {
+    "id": "AJUDA_483eec4f-09e0-4d72-8c24-3a04d22c2809",
+    "originalId": "483eec4f-09e0-4d72-8c24-3a04d22c2809",
+    "statement": "Um paciente de 70 anos, hipertenso e com insuficiência renal crônica, é admitido com uma infecção extensa e dolorosa na coxa, após uma pequena lesão cutânea. Ele tem febre de 38,5 °C e sinais de toxemia. O exame físico mostra uma área eritematosa, com necrose e drenagem de secreção malcheirosa. Há dor refratária A infecção mais provável nesse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fasceite necrosante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Erisipela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Abscesso subcutâneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Celulite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Miosite infecciosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico e grave de infecção de partes moles, com alta taxa de morbimortalidade, exigindo diagnóstico e intervenção rápidos.\n\nO diagnóstico principal é a Fasceíte Necrosante (Alternativa A). Os elementos que confirmam essa hipótese são:\n1. Perfil do paciente: Idoso e com doença renal crônica, o que configura um estado de imunossupressão relativa e maior risco para infecções graves.\n2. Sinais de gravidade sistêmica: Presença de febre alta (38,5 °C) e toxemia (sinais de resposta inflamatória sistêmica ou sepse).\n3. Achados locais: Necrose cutânea e drenagem de secreção malcheirosa sugerem a presença de germes anaeróbios ou infecção polimicrobiana (Tipo I).\n4. Dor refratária: Este é um dos \"sinais de alerta\" mais importantes. A dor desproporcional ao achado físico inicial ou que não cede com analgésicos comuns é característica da agressão à fáscia profunda, onde os receptores de dor são intensamente estimulados antes mesmo de a pele mostrar sinais óbvios de destruição.\n\nExplicação das alternativas:\n\na) Fasceíte necrosante: CORRETA. É uma emergência cirúrgica que envolve a fáscia superficial e o tecido subcutâneo. O quadro de dor intensa, rápida progressão, necrose e sinais de choque/toxemia em paciente com comorbidades é a apresentação típica desta patologia.\n\nb) Erisipela: INCORRETA. A erisipela é uma infecção mais superficial, atingindo a derme superior e os vasos linfáticos. Apresenta-se como uma placa eritematosa com bordas bem demarcadas e elevadas. Embora cause dor e febre, não evolui tipicamente com necrose tecidual ou secreção fétida, a menos que haja uma complicação grave associada.\n\nc) Abscesso subcutâneo: INCORRETA. O abscesso é uma coleção purulenta localizada e delimitada. Embora cause dor e sinais inflamatórios, o relato de uma infecção extensa com necrose e sinais sistêmicos graves de toxemia aponta para um processo infiltrativo e disseminado, como a fasceíte, e não para uma coleção fechada simples.\n\nd) Celulite: INCORRETA. A celulite atinge a derme profunda e o tecido gorduroso subcutâneo. Diferente da erisipela, suas bordas são mal definidas. Apesar de ser mais profunda que a erisipela, a celulite comum não causa necrose de pele nem dor refratária desproporcional, que são marcas da infecção necrosante.\n\ne) Miosite infecciosa: INCORRETA. Também chamada de piomiosite, é a infecção do tecido muscular propriamente dito, frequentemente com formação de abscessos intramusculares. Embora seja uma infecção grave, a sequência de eventos (pequena lesão cutânea evoluindo com necrose superficial e secreção malcheirosa) é muito mais sugestiva de uma infecção que se dissemina pela fáscia (fasceíte) do que uma infecção primária do músculo.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Piodermites",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  },
+  {
+    "id": "AJUDA_484041b5-28b5-46fb-9617-90f65dcb39bd",
+    "originalId": "484041b5-28b5-46fb-9617-90f65dcb39bd",
+    "statement": "Assinale o indicador utilizado para monitoramento da Atenção Básica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proporção de encaminhamentos para internação hospitalar no mês.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Taxa de mortalidade por doenças respiratórias no ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Frequência de casos vítimas de violência doméstica no mês.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Proporção de atendimentos a crianças nascidas a termo por mês.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O monitoramento da Atenção Básica (AB) envolve a análise de indicadores que refletem a capacidade resolutiva, a coordenação do cuidado e a organização dos serviços nesse nível de atenção.\n\nAlternativa (a): Correta. A proporção de encaminhamentos para internação hospitalar é um indicador fundamental de resolutividade e coordenação do cuidado. Espera-se que a Atenção Básica seja capaz de resolver cerca de 80% a 90% dos problemas de saúde da população. Quando esse indicador apresenta valores muito elevados, pode sugerir baixa resolutividade da unidade básica ou falha no manejo das Condições Sensíveis à Atenção Primária (ICSAP), que são doenças que não deveriam evoluir para internação se bem acompanhadas na rede básica.\n\nAlternativa (b): Incorreta. A taxa de mortalidade por doenças respiratórias é um indicador epidemiológico do estado de saúde e da mortalidade geral. Embora a Atenção Básica atue na prevenção e no controle dessas doenças, esse dado sofre influência de múltiplos fatores externos (ambientais, socioeconômicos e hospitalares) e não é utilizado como um indicador direto para o monitoramento operacional da gestão da unidade de saúde.\n\nAlternativa (c): Incorreta. A frequência de casos de violência doméstica é um dado de vigilância epidemiológica e de notificação compulsória. Embora a equipe de saúde da família tenha um papel essencial na identificação e no acolhimento desses casos, esse número reflete mais a realidade social do território e a capacidade de detecção da equipe do que a performance de monitoramento da gestão da Atenção Básica propriamente dita.\n\nAlternativa (d): Incorreta. O acompanhamento do crescimento e desenvolvimento infantil é rotina na Atenção Básica, mas a proporção de atendimentos especificamente a crianças nascidas a termo (no tempo correto) não é um indicador padrão de monitoramento. Geralmente, utilizam-se indicadores de risco, como a proporção de nascidos vivos com baixo peso ou o número de consultas de pré-natal realizadas, para avaliar a qualidade da assistência.\n\nEm resumo, a alternativa (a) é a única que apresenta um indicador clássico de monitoramento da eficácia e do papel de \"filtro\" ou ordenador da rede exercido pela Atenção Básica.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  },
+  {
+    "id": "AJUDA_4843d439-c4d1-4cd3-a5a5-4f67a506394e",
+    "originalId": "4843d439-c4d1-4cd3-a5a5-4f67a506394e",
+    "statement": "Uma mulher de 40 anos, assintomática, comparece à Unidade Básica de Saúde para sua consulta de rotina. Após avaliação, a equipe solicita exame de Papanicolau, que revela lesão intraepitelial de baixo grau. Considerando a história natural da doença e os níveis de prevenção, a conduta de rastreamento e o tratamento da lesão pré-maligna classificam-se, respectivamente, em prevenção:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Primária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Secundária",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Terciária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quaternária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quinquenária",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Os níveis de prevenção em saúde de Leavell e Clark são fundamentais na prática clínica e na saúde coletiva. \n\nA prevenção secundária tem como objetivos principais o diagnóstico precoce e o tratamento imediato de patologias em fases assintomáticas ou em estágio subclínico, além da abordagem de lesões pré-malignas para evitar sua progressão para neoplasias invasivas. O rastreamento pelo exame citopatológico de colo de útero (Papanicolau) e a conduta de acompanhamento ou tratamento de lesões intraepiteliais (como o LSIL) enquadram-se perfeitamente no nível secundário de prevenção.\n\nAnálise das alternativas:\n\na) Incorreta. A prevenção primária envolve ações voltadas a impedir o aparecimento da doença na fase de suscetibilidade, atuando sobre os fatores de risco ou causas (exemplo: vacinação contra o HPV e uso de preservativos).\nb) Correta. Tanto o rastreamento (detecção precoce de alterações em pessoas assintomáticas) quanto o tratamento de lesões precursoras (pré-malignas) constituem intervenções típicas de prevenção secundária, pois visam interromper o curso natural da doença em sua fase inicial.\nc) Incorreta. A prevenção terciária refere-se a ações destinadas a limitar incapacidades, reduzir sequelas e reabilitar o paciente portador de uma doença já clinicamente instalada e sintomática (exemplo: tratamento cirúrgico e radioterápico de um câncer invasor estabelecido e reabilitação pélvica).\nd) Incorreta. A prevenção quaternária consiste na identificação de pessoas em risco de hipermedicalização e na proteção contra intervenções médicas desnecessárias ou excessivas (iatrogenias, \"overdiagnosis\" e \"overtreatment\").\ne) Incorreta. A prevenção quinquenária é um conceito mais recente focado na prevenção do esgotamento e no cuidado com a saúde física e mental dos próprios profissionais de saúde.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  },
+  {
+    "id": "AJUDA_48465e92-1a59-4eb3-bc77-2800fa9ef437",
+    "originalId": "48465e92-1a59-4eb3-bc77-2800fa9ef437",
+    "statement": "Criança com 2 dias de vida, nascida de parto vaginal sem intercorrências (idade gestacional de 39 semanas, peso ao nascimento de 2.200 g) apresentou icterícia, hepatoesplenomegalia, petéquias difusas e fontanela anterior abaulada. A mãe de 25 anos, G2P2, informou não ter feito pré-natal de forma adequada e ter tido quadro de febre e exantema não investigado durante a gestação. Os exames do neonato indicaram hemoglobina de 11 g/dl, 4.800 leucócitos/mm³ (sem desvio à esquerda) e 98.000 plaquetas/mm³. A ultrassonografia transfontanelar evidenciou diversas pequenas calcificações periventriculares. Com base no quadro, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico mais provável é toxoplasmose congênita, e o tratamento indicado é espiramicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O quadro é compatível com sífilis congênita precoce, e o tratamento indicado é penicilina cristalina, intravenosa, por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os achados são compatíveis com citomegalovirose congênita, e o tratamento pode incluir ganciclovir ou valganciclovir.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico mais provável é herpes congênito, e o tratamento indicado é aciclovir, intravenoso, por 21 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um recém-nascido com restrição de crescimento intrauterino (pequeno para a idade gestacional), sinais de infecção congênita (icterícia, hepatoesplenomegalia, petéquias e alterações hematológicas) e um achado radiológico fundamental para o diagnóstico diferencial: calcificações periventriculares.\n\nA seguir, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. Embora a toxoplasmose congênita também curse com hepatoesplenomegalia e alterações liquóricas, o padrão das calcificações cerebrais é diferente. Na toxoplasmose, as calcificações são classicamente difusas (espalhadas pelo parênquima cerebral), enquanto as periventriculares são típicas da citomegalovirose. Além disso, o tratamento da criança com toxoplasmose é feito com o esquema de pirimetamina, sulfadiazina e ácido folínico; a espiramicina é utilizada apenas para o tratamento materno, visando a reduzir a transmissão vertical.\n\nAlternativa b) Incorreta. A sífilis congênita precoce costuma se manifestar com rinite serossanguinolenta, lesões cutâneas (como o pênfigo palmoplantar), periostite e osteocondrite. Embora possa causar hepatoesplenomegalia e anemia, não é a causa clássica de calcificações periventriculares no sistema nervoso central.\n\nAlternativa c) Correta. Os achados clínicos e laboratoriais são clássicos da citomegalovirose congênita (CMV). O sinal patognomônico que define a questão é a presença de calcificações periventriculares na ultrassonografia transfontanelar. O CMV é a infecção congênita mais comum e, em casos sintomáticos ou com acometimento do sistema nervoso central (como sugerem a fontanela abaulada e as calcificações), o tratamento de escolha é feito com antivirais, especificamente o ganciclovir (via intravenosa) ou seu pró-fármaco, o valganciclovir (via oral), para reduzir sequelas auditivas e neuropsicomotoras.\n\nAlternativa d) Incorreta. O herpes congênito (intrauterino) é extremamente raro. A maioria dos casos de herpes neonatal ocorre por transmissão durante o parto (herpes neonatal), manifestando-se geralmente entre a primeira e a terceira semana de vida com vesículas cutâneas, acometimento ocular e/ou encefalite aguda, e não com calcificações periventriculares já presentes ao nascimento. O tratamento é o aciclovir, mas a etiologia não condiz com os achados de imagem descritos.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  },
+  {
+    "id": "AJUDA_484fb027-ffaa-4620-acec-2c1501d1c7b7",
+    "originalId": "484fb027-ffaa-4620-acec-2c1501d1c7b7",
+    "statement": "Paciente de 58 anos, portador de cirrose alcoólica (Child-Pugh B), apresenta ascite tensa, febre, associadas a dor abdominal difusa e rebaixamento leve. Realizou paracentese diagnóstica que evidenciou líquido amarelo citrino, PMN: 780 células/mm³, proteínas: 1,0 g/dL, cultura pendente. A conduta preconizada para esse paciente seria:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ceftriaxona e albumina endovenosos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "ciprofloxacino oral e albumina apenas se a cultura for positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "piperacilina-tazobactam e diurético de alça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aguardar o resultado da cultura do líquido ascítico para definir antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de Peritonite Bacteriana Espontânea (PBE). O paciente cirrótico com ascite que evolui com febre, dor abdominal e encefalopatia (rebaixamento leve) deve ser submetido imediatamente à paracentese diagnóstica.\n\nO diagnóstico de PBE é confirmado quando a contagem de polimorfonucleares (PMN) no líquido ascítico é maior ou igual a 250 células/mm³. No caso em questão, o valor é de 780 células/mm³, o que sela o diagnóstico, independentemente do resultado da cultura.\n\nAnálise das alternativas:\n\na) Correta. O tratamento inicial da PBE deve ser empírico e imediato com antibióticos que cubram germes gram-negativos da família Enterobacteriaceae (como a E. coli). As cefalosporinas de terceira geração, como a ceftriaxona ou a cefotaxima, são a primeira escolha. Além disso, a reposição de albumina endovenosa é fundamental para reduzir o risco de insuficiência renal (síndrome hepatorrenal) e mortalidade. A dose recomendada é de 1,5 g/kg no 1º dia e 1,0 g/kg no 3º dia.\n\nb) Incorreta. O tratamento da PBE nunca deve aguardar o resultado da cultura, pois o atraso na antibioticoterapia aumenta drasticamente a mortalidade. Além disso, o ciprofloxacino oral é mais utilizado para profilaxia e não como primeira escolha no tratamento agudo de um paciente com sinais de gravidade (febre e encefalopatia).\n\nc) Incorreta. A piperacilina-tazobactam é um antibiótico de amplo espectro, geralmente reservado para infecções nosocomiais (hospitalares) ou quando há suspeita de germes multirresistentes. Quanto ao uso de diurético de alça (furosemida), ele deve ser suspenso durante o tratamento da PBE para evitar a desidratação e a piora da função renal, que já está em risco pela própria infecção.\n\nd) Incorreta. Como mencionado, a conduta na PBE baseia-se na contagem de PMN (maior ou igual a 250/mm³). Aguardar a cultura, que pode levar de 24 a 72 horas e ser negativa em até 40% dos casos de PBE verdadeira, é um erro grave que retarda o tratamento de uma urgência médica.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  },
+  {
+    "id": "AJUDA_48687015-53e1-490d-ae7d-8db7f7fe507f",
+    "originalId": "48687015-53e1-490d-ae7d-8db7f7fe507f",
+    "statement": "Homem de 24 anos procura atendimento médico com febre de 38ºC, queixa de dor torácica de forte intensidade na região precordial, irradiada para a omoplata, que piora ao deitar e durante a inspiração profunda. O exame cardiovascular mostra ruído rude sistodiastólico em precórdio e turgência jugular a 45º. O paciente evolui com piora de dispneia e queda da PA. Para ajudar na principal complicação do diagnóstico, é provável verificar no exame físico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sinal de Broabent no ictus",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "turgência jugular com sinal de Kussmaul",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ausculta de Knock pericárdico no precórdio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "queda da PA sistólica na inspiração acima de 10mmHg",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO quadro clínico inicial sugere fortemente um diagnóstico de Pericardite Aguda, caracterizado pela dor torácica que piora com a inspiração e decúbito (dor pleurítica e posicional), febre e o ruído rude sistodiastólico à ausculta, que corresponde ao atrito pericárdico. A evolução com turgência jugular, queda da pressão arterial (hipotensão) e dispneia indica que o paciente desenvolveu um Tamponamento Cardíaco, que é a principal complicação aguda desta patologia.\n\nAnálise das alternativas:\n\na) Incorreta. O sinal de Broadbent consiste na retração sistólica das costelas inferiores ou dos espaços intercostais posteriores, sendo um achado clássico da Pericardite Constritiva, e não do tamponamento cardíaco agudo.\n\nb) Incorreta. O sinal de Kussmaul é o aumento (ou a ausência de queda) da pressão venosa jugular durante a inspiração. Embora possa estar presente em diversas patologias, ele é característico da Pericardite Constritiva e da insuficiência ventricular direita grave. No tamponamento cardíaco, o sinal de Kussmaul geralmente está ausente, pois o enchimento diastólico está restrito durante todo o ciclo respiratório devido à pressão do líquido.\n\nc) Incorreta. O \"Knock\" ou batido pericárdico é um ruído diastólico precoce e de alta frequência, decorrente da súbita interrupção do enchimento ventricular em um coração com pericárdio rígido. É um achado patognomônico da Pericardite Constritiva.\n\nd) Correta. A queda da pressão arterial sistólica acima de 10 mmHg durante a inspiração espontânea é a definição de Pulso Paradoxal. Este sinal é um achado fundamental no exame físico do Tamponamento Cardíaco. Ocorre porque, no tamponamento, o aumento do retorno venoso para o ventrículo direito durante a inspiração desloca o septo interventricular para a esquerda, reduzindo o volume do ventrículo esquerdo e, consequentemente, o débito sistólico e a pressão arterial sistêmica.\n\nPortanto, diante da suspeita de tamponamento cardíaco (complicação da pericardite aguda), a pesquisa do pulso paradoxal é a manobra mais indicada para corroborar o diagnóstico clínico.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Pericardiopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  },
+  {
+    "id": "AJUDA_486e5fdb-8acb-4673-8358-9251c6285546",
+    "originalId": "486e5fdb-8acb-4673-8358-9251c6285546",
+    "statement": "A mensuração da transluscência nucal (TN) marcador de doenças cromossomiais, deve ser realizada por meio de ultrassonografia",
+    "options": [
+      {
+        "id": "A",
+        "text": "entre a 6ª e 8ª semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "entre a 8ª e 10ª semana e 6 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "entre a 11ª e 13ª semana e 6 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "na 20ª semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A mensuração da translucência nucal (TN) é o principal marcador ultrassonográfico utilizado no rastreamento de anomalias cromossômicas, sendo a Síndrome de Down (Trissomia do 21) a mais frequente. Para que essa medida seja considerada válida e possa ser inserida em algoritmos de cálculo de risco, ela deve seguir critérios técnicos rigorosos estabelecidos pela Fetal Medicine Foundation, o que inclui um período gestacional específico baseado no comprimento cabeça-nádega (CCN) do feto, que deve estar entre 45 mm e 84 mm.\n\nAlternativa (a) Incorreta: Entre a 6ª e a 8ª semana de gestação, o embrião ainda é muito pequeno e a região da nuca não está suficientemente desenvolvida para uma medição precisa. Nessa fase, o ultrassom é indicado primordialmente para confirmar a viabilidade da gestação, determinar a idade gestacional e o número de embriões.\n\nAlternativa (b) Incorreta: Embora o feto já esteja mais desenvolvido do que na fase anterior, o período entre a 8ª e a 10ª semana e 6 dias ainda precede a janela ideal de rastreamento. Os valores de referência e as curvas de normalidade para a TN foram validados a partir da 11ª semana, quando o CCN atinge o tamanho mínimo de 45 mm.\n\nAlternativa (c) Correta: O intervalo entre 11 semanas e 13 semanas e 6 dias é o período padronizado para a realização do rastreamento combinado do primeiro trimestre. É nesta janela que a TN atinge sua maior sensibilidade para detectar cromossomopatias. Após 13 semanas e 6 dias (ou CCN acima de 84 mm), o fluido linfático excessivo que caracteriza a TN aumentada pode ser reabsorvido, o que inviabiliza o teste de rastreio.\n\nAlternativa (d) Incorreta: Na 20ª semana de gestação, o exame realizado é a ultrassonografia morfológica do segundo trimestre. Nesse estágio, a translucência nucal já não existe mais como marcador. O que se avalia na região posterior do pescoço fetal no segundo trimestre é a prega nucal (ou edema nucal), que possui critérios de medida e valores de referência totalmente diferentes da TN.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:04.802Z"
+  }
+]

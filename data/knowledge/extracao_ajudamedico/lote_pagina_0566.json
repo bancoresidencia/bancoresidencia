@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_9e7327a9-a22f-4e0a-8dcc-3079c5b96d04",
+    "originalId": "9e7327a9-a22f-4e0a-8dcc-3079c5b96d04",
+    "statement": "K.H.I., 3 anos, deu entrada no pronto-socorro acompanhado do pai relatando que filho apresenta febre há mais de 5 dias, juntamente com vermelhidão no corpo e conjuntivite. Ao exame físico, é observado conjuntivite não purulenta, hiperemia labial, exantema maculopapular difuso, edema de mãos e pés e linfonodo de cerca de 3 cm em região cervical unilateral. Qual a conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta com sintomáticos e curva térmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anti-inflamatórios não esteroides e retorno em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internar paciente e iniciar ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internar paciente e iniciar gamaglobulina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO: DOENÇA DE KAWASAKI\n\nO quadro clínico descrito é clássico da Doença de Kawasaki, uma vasculite sistêmica aguda que acomete preferencialmente crianças pequenas (geralmente abaixo dos 5 anos). O diagnóstico é clínico, baseado na presença de febre persistente por 5 dias ou mais, associada a pelo menos 4 dos 5 critérios seguintes:\n\n1. Conjuntivite bilateral não purulenta (presente no caso).\n2. Alterações em lábios e cavidade oral, como hiperemia, fissuras ou língua em framboesa (presente no caso).\n3. Alterações em extremidades, como edema ou eritema de mãos e pés ou descamação periungueal (presente no caso).\n4. Exantema polimorfo/maculopapular (presente no caso).\n5. Linfonodopatia cervical, geralmente unilateral e maior que 1,5 cm (presente no caso: 3 cm).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. Diante da suspeita de Doença de Kawasaki, a conduta jamais deve ser a alta hospitalar. Trata-se de uma patologia com risco potencial de complicações cardíacas graves, como a formação de aneurismas de artérias coronárias.\n\nb) Incorreta. Embora o ácido acetilsalicílico (AAS), que é um anti-inflamatório em doses altas, faça parte do protocolo de tratamento, ele não deve ser utilizado isoladamente nem em ambiente domiciliar nesta fase aguda. Além disso, o tratamento padrão-ouro para prevenir sequelas coronarianas é a imunoglobulina.\n\nc) Incorreta. A Doença de Kawasaki é uma vasculite imunomediada e não uma infecção bacteriana. Portanto, o uso de antibióticos como a ceftriaxona não tem indicação, a menos que houvesse uma coinfecção bacteriana comprovada, o que não é o caso sugerido pela questão.\n\nd) Correta. O tratamento da Doença de Kawasaki deve ser realizado em regime de internação hospitalar. A administração de imunoglobulina humana intravenosa (gamaglobulina) em dose única (2 g/kg) é a terapia de escolha, preferencialmente iniciada até o 10º dia de doença, pois reduz drasticamente a incidência de aneurismas coronarianos. Geralmente, associa-se o uso de AAS em doses anti-inflamatórias na fase febril.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:24.935Z"
+  },
+  {
+    "id": "AJUDA_9e76a1ac-3192-4c2e-a57c-28410e869a12",
+    "originalId": "9e76a1ac-3192-4c2e-a57c-28410e869a12",
+    "statement": "Homem, 63 anos de idade, procura atendimento ambulatorial por dispneia. Ele não tem antecedentes relevantes, mas conta que, há 8 meses, começou a apresentar dispneia aos grandes esforços, mas conseguia realizar atividades habituais. Há 2 meses, começou a interromper sua caminhada diária até a padaria por dispneia e tosse. Há 1 mês, teve crise de dispneia e tosse produtiva, quando ficou internado por 4 dias no pronto-socorro. Ele é tabagista com carga de 46 anos-maço. Ao exame clínico, apresentou sinais vitais normais e sibilos expiratórios difusos, sem sinais de desconforto respiratório e sem outras anormalidades. Os dados da prova de função pulmonar estão apresentados a seguir: \nO hemograma identificou 320 eosinófilos/mm3 , IgE 35 UI/mL (valor de referência < 100 UI/mL).\n \nAssinale a alternativa correta sobre o diagnóstico e o tratamento do paciente neste momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "B",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "C",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "D",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para a resolução desta questão, devemos integrar os achados clínicos, os dados da espirometria e os exames laboratoriais para classificar a Doença Pulmonar Obstrutiva Crônica (DPOC) e definir a conduta terapêutica conforme as diretrizes atuais (GOLD 2023/2024).\n\n1. Análise da Função Pulmonar (Imagem 1):\nO diagnóstico de DPOC é confirmado pela presença de uma limitação fixa ao fluxo aéreo. Na tabela de espirometria, observamos que a relação VEF1/CVF pós-broncodilatador é de 0,69. Como esse valor é menor que 0,70, está confirmada a presença de obstrução. \nPara o estadiamento da gravidade da obstrução, olhamos o VEF1 pós-broncodilatador, que é de 57% do valor predito. Isso classifica o paciente como GOLD 2 (obstrução moderada, que compreende valores entre 50% e 79%).\n\n2. Classificação Clínica (Grupos GOLD):\nA classificação em grupos (A, B ou E) define o tratamento inicial e baseia-se nos sintomas e no histórico de exacerbações.\n- Sintomas: O paciente apresenta dispneia que interrompe atividades habituais (caminhada até a padaria), o que indica um escore mMRC igual ou superior a 2.\n- Histórico de exacerbações: O paciente teve uma internação hospitalar há um mês devido a uma crise respiratória. \nPelas diretrizes GOLD, qualquer paciente que tenha tido pelo menos uma exacerbação levando à hospitalização no último ano é classificado automaticamente no Grupo E (Exacerbadores), independentemente do nível de sintomas.\n\n3. Escolha do Tratamento:\nA base do tratamento para o Grupo E é a terapia broncodilatadora dupla com um antagonista muscarínico de longa ação (LAMA) associado a um beta-2-agonista de longa ação (LABA). \nEntretanto, o hemograma do paciente mostra 320 eosinófilos/mm³. A contagem de eosinófilos acima de 300 células/mm³ é um forte preditor de resposta aos corticoides inalatórios em pacientes que exacerbam. Portanto, para este paciente, a conduta mais adequada é a Terapia Tripla (LABA + LAMA + Corticoide Inalatório).\n\n4. Análise das Alternativas e Imagens:\nA alternativa (d) é a correta, pois correlaciona o diagnóstico de DPOC Grupo E com o tratamento otimizado (LAMA + LABA + Corticoide). \n\nSobre a Imagem 2: Esta tabela apresenta parâmetros de suporte ventilatório e oxigenoterapia (como BiPAP na linha A e Cateter Nasal de Alto Fluxo na linha D). É importante notar que esses parâmetros seriam aplicáveis durante a fase aguda da exacerbação (quando o paciente estava internado). Como o enunciado pergunta sobre o diagnóstico e tratamento “neste momento” (atendimento ambulatorial, paciente estável, sem desconforto), a tabela de ventilação não se aplica à conduta crônica, reforçando que a resposta correta foca na classificação clínica da DPOC e na farmacoterapia de manutenção.\n\nResumo das alternativas:\n- Alternativas (a), (b) e (c): Incorretas, pois não consideram a classificação correta do grupo (E) ou ignoram a indicação do corticoide inalatório baseada nos eosinófilos e no histórico de internação.\n- Alternativa (d): Correta. O paciente tem DPOC confirmada, é GOLD 2 pela espirometria, pertence ao Grupo E por ter sido internado e deve iniciar terapia tripla devido à contagem de eosinófilos superior a 300.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/38860b890a44a37e82e6e15cccc9abd2d150c6c1fcdef9accd57adeec1562a67.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9e76a1ac-3192-4c2e-a57c-28410e869a12_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/a983009b358ddf244f14ce260f025d50f1e71b5bc55936f1160c3d789288869d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9e76a1ac-3192-4c2e-a57c-28410e869a12_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:25.779Z"
+  },
+  {
+    "id": "AJUDA_9e78833c-2cb7-4179-a965-35f1023f884d",
+    "originalId": "9e78833c-2cb7-4179-a965-35f1023f884d",
+    "statement": "Em lactentes, a maior tendência à atelectasia e à fadiga respiratória decorre, entre outros fatores, de uma característica anatômica da caixa torácica e do parênquima pulmonar em comparação ao adulto. Essa característica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução do ângulo xifoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Maior complacência torácica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Menor complacência pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento do diâmetro anteroposterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda as particularidades da mecânica respiratória em lactentes, que os tornam mais suscetíveis à insuficiência respiratória do que os adultos. A explicação para a tendência à atelectasia e à fadiga reside no desequilíbrio entre a complacência da caixa torácica e a do parênquima pulmonar.\n\nAlternativa (a) Incorreta. Nos lactentes, as costelas estão posicionadas de forma mais horizontalizada em relação à coluna vertebral. Isso faz com que o ângulo xifoide (ou ângulo de Charpy) seja, na verdade, mais obtuso (aberto) e não reduzido. Além disso, essa horizontalização das costelas impede que o lactente aumente o volume torácico através do movimento de alça de balde, típico do adulto, tornando a respiração essencialmente dependente do diafragma.\n\nAlternativa (b) Correta. Esta é a principal característica anatômica envolvida. A caixa torácica do lactente é extremamente complacente (flexível) devido à sua constituição majoritariamente cartilaginosa e à musculatura intercostal ainda pouco desenvolvida. Quando o lactente realiza um esforço inspiratório maior para expandir um pulmão que é naturalmente mais rígido, a pressão intrapleural negativa gerada faz com que as costelas \"afundem\" (retração) em vez de expandirem o pulmão de forma eficaz. Esse colapso da parede torácica durante a inspiração reduz a Capacidade Residual Funcional, levando à atelectasia, e exige um trabalho muscular exaustivo, levando à fadiga.\n\nAlternativa (c) Incorreta. Embora seja verdade que o lactente possui uma complacência pulmonar menor (pulmão mais \"duro\" ou rígido) do que o adulto devido ao menor número de alvéolos e à menor quantidade de fibras elásticas, a alternativa (b) descreve melhor o fator determinante para a instabilidade mecânica. A tendência à atelectasia ocorre porque a caixa torácica muito complacente não consegue oferecer a força de oposição necessária à tendência natural de recolhimento do pulmão.\n\nAlternativa (d) Incorreta. O tórax do lactente é mais arredondado, com um diâmetro anteroposterior proporcionalmente maior em relação ao diâmetro transversal quando comparado ao adulto (tórax cilíndrico). No entanto, essa característica geométrica não é o fator causal direto para a atelectasia ou para a fadiga; o problema central é a complacência excessiva da parede torácica que não sustenta a expansão pulmonar sob estresse.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:25.779Z"
+  },
+  {
+    "id": "AJUDA_9e7b4d10-a422-41ba-8c30-5fecab376f20",
+    "originalId": "9e7b4d10-a422-41ba-8c30-5fecab376f20",
+    "statement": "Sobre o tema vacinação em crianças, quais assertivas estão corretas?\n\nI- As idades recomendadas e intervalos de doses devem ser respeitados, para serem consideradas válidas, tendo uma tolerância de até 4 dias antes da idade ou intervalos definidos.\nII- Como as vacinas meningocócicas são muito reatogênicas, é recomendado administrar analgésico/antipirético 30 minutos antes da administração da vacina.\nIII- Se uma lactante precisar ser vacinada para febre amarela e o lactente tiver menos de 6 meses, a orientação é suspender a amamentação por um período.\nIV- A Sociedade Brasileira de Pediatria recomenda que crianças que receberam vacina pneumocócica 10 valente não podem tomar vacina 13, 15 ou 20 valente até ter seu esquema completo e então reiniciar esquema vacinal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e III",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "I e IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "II e III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "III e IV",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das assertivas:\n\nAssertiva I (Correta): De acordo com as normas do Programa Nacional de Imunizações (PNI) e manuais de vacinação, as doses aplicadas com até 4 dias de antecedência em relação à idade mínima ou ao intervalo mínimo recomendado podem ser consideradas válidas. Essa \"margem de segurança\" evita que a criança precise ser revacinada desnecessariamente caso tenha comparecido à unidade de saúde poucos dias antes do prazo exato.\n\nAssertiva II (Incorreta): O uso profilático de analgésicos e antipiréticos (antes ou no momento da vacinação) não é recomendado rotineiramente. Estudos sugerem que o uso de paracetamol ou ibuprofeno antes da vacina pode interferir na resposta imunológica, reduzindo a produção de anticorpos para alguns componentes vacinais. O uso desses medicamentos deve ser reservado apenas para o tratamento de febre ou dor após a aplicação, se necessário.\n\nAssertiva III (Correta): A vacina da febre amarela é composta por vírus vivo atenuado. Existe o risco de transmissão do vírus vacinal pelo leite materno, o que pode causar eventos adversos graves (como encefalite) no lactente pequeno. Assim, se a vacinação da lactante for indispensável, o aleitamento materno deve ser suspenso por 10 dias (preferencialmente) ou, no mínimo, por 7 dias após a vacinação em mulheres com filhos menores de 6 meses.\n\nAssertiva IV (Incorreta): A Sociedade Brasileira de Pediatria (SBP) e o PNI permitem e muitas vezes recomendam a complementação do esquema com vacinas de maior valência. Crianças que iniciaram o esquema com a pneumocócica 10-valente (VPC10) podem receber doses da 13-valente (VPC13), 15-valente (VPC15) ou superior para ampliar a proteção contra sorotipos adicionais, não havendo necessidade de completar todo o esquema original para só então \"reiniciar\" ou complementar.\n\nAnálise das alternativas:\nA alternativa (a) está incorreta porque a II é falsa.\nA alternativa (b) está correta porque I e III são verdadeiras.\nA alternativa (c) está incorreta porque a IV é falsa.\nA alternativa (d) está incorreta porque a II é falsa.\nA alternativa (e) está incorreta porque a IV é falsa.\n\nGabarito: Letra (b).",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:25.779Z"
+  },
+  {
+    "id": "AJUDA_9e7faf26-9718-4361-a01f-2668a05179aa",
+    "originalId": "9e7faf26-9718-4361-a01f-2668a05179aa",
+    "statement": "Um homem de 68 anos de idade, diabético, hipertenso e dislipidêmico dirigiu‑se à emergência do pronto‑socorro apresentando tosse, escarro produtivo, febre, confusão mental, hipotensão (PA 85/50 mmHg), taquipneia (FR de 26 irpm), oligúria e tempo de enchimento capilar de 4 segundos. O paciente negou internação recente ou intercorrências nos últimos meses.\n\nCom base no caso clínico hipotético apresentado, assinale a opção que apresenta o tratamento empírico adequado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "amoxicilina + clavulanato",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ceftriaxone + azitromicina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "vancomicina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "piperacilina + tazobactam",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "piperacilina + tazobactam + vancomicina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de pneumonia adquirida na comunidade (PAC). Para definir a conduta e o tratamento, utilizamos escores de gravidade como o CURB-65:\n- C (Confusão mental): Presente.\n- U (Ureia > 50 mg/dL): Não fornecida, mas a oligúria sugere disfunção renal.\n- R (Frequência Respiratória >= 30 irpm): O paciente tem 26 irpm (abaixo do ponto de corte, mas elevada).\n- B (Blood pressure - Pressão Arterial): Presente (85/50 mmHg).\n- 65 (Idade >= 65 anos): Presente (68 anos).\n\nO paciente pontua, pelo menos, 3 no CURB-65 (confusão, pressão e idade), o que indica a necessidade de internação hospitalar imediata, preferencialmente em Unidade de Terapia Intensiva (UTI), dado o sinal de choque (hipotensão e tempo de enchimento capilar lentificado de 4 segundos).\n\nComo o paciente não possui histórico de internação recente ou fatores de risco para patógenos multirresistentes, o tratamento deve cobrir os agentes mais comuns da PAC (Streptococcus pneumoniae, Haemophilus influenzae) e germes atípicos (Legionella spp., Mycoplasma pneumoniae).\n\n---\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A associação de amoxicilina com clavulanato é uma opção para tratamento ambulatorial de pacientes com comorbidades ou tratamento em enfermaria. No entanto, para um paciente com sinais de sepse/choque séptico e instabilidade hemodinâmica (PAC grave), essa terapia isolada é insuficiente, pois não cobre adequadamente germes atípicos e possui espectro limitado para o cenário crítico.\n\nAlternativa (b) CORRETA: Esta é a terapia padrão-ouro para PAC grave em pacientes internados. A ceftriaxona (cefalosporina de 3ª geração) oferece excelente cobertura para o pneumococo e Gram-negativos comunitários, enquanto a azitromicina (macrolídeo) entra para cobrir os germes atípicos. Essa combinação reduz a mortalidade em casos de pneumonia grave.\n\nAlternativa (c) INCORRETA: A vancomicina é um antibiótico direcionado para bactérias Gram-positivas, especificamente o Staphylococcus aureus resistente à meticilina (MRSA). O paciente não apresenta fatores de risco específicos para MRSA (como internação recente, uso de antibióticos venosos prévios ou hemodiálise) que justifiquem seu uso empírico isolado. Além disso, ela não cobre os principais agentes causadores de pneumonia comunitária (Gram-negativos e atípicos).\n\nAlternativa (d) INCORRETA: A piperacilina + tazobactam é um antibiótico de amplo espectro com cobertura para Pseudomonas aeruginosa. O uso desse esquema é indicado para pneumonias associadas à assistência à saúde ou quando há fatores de risco específicos para Pseudomonas (bronquiectasias, uso crônico de corticoide em altas doses ou antibioticoterapia de amplo espectro recente). O enunciado afirma que o paciente negou internação ou intercorrências recentes, não justificando a cobertura para germes hospitalares de rotina.\n\nAlternativa (e) INCORRETA: Este esquema (piperacilina/tazobactam + vancomicina) é extremamente amplo, indicado para pneumonias nosocomiais (hospitalares) graves ou pacientes com múltiplos fatores de risco para germes multirresistentes (MRSA e Pseudomonas). O uso indiscriminado desse esquema em quadros comunitários sem fatores de risco contribui para a resistência bacteriana e não segue as diretrizes nacionais e internacionais de manejo da PAC.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:25.779Z"
+  },
+  {
+    "id": "AJUDA_9e81fb8d-8722-4203-bf27-d8d0044c16cd",
+    "originalId": "9e81fb8d-8722-4203-bf27-d8d0044c16cd",
+    "statement": "Nas últimas décadas, em todo o mundo, houve um significativo aumento de câncer de mama. Para prevenção desse câncer, o médico deve:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar, anualmente, mamografia a mulheres com 40 anos ou mais, porque porque é o único método capaz de diminuir a mortalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar mamografia a mulheres de 30 anos ou mais para servir de parâmetro comparativo com outros exames realizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar ressonância magnética antes da mamografia, por ser o método que possui maior visibilidade do parênquima mamário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar apenas exame clínico de mamas, a cada um ou dois anos, nas mulheres entre 50 e 69 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o rastreamento do câncer de mama, um tema central na medicina preventiva e na saúde da mulher. A discussão gira em torno de quando iniciar os exames e qual método utilizar para reduzir a mortalidade pela doença.\n\nAlternativa A (Correta): Esta alternativa reflete o posicionamento das principais sociedades de especialistas no Brasil, como a Sociedade Brasileira de Mastologia (SBM), a Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) e o Colégio Brasileiro de Radiologia (CBR). Essas entidades recomendam que a mamografia seja realizada anualmente em mulheres a partir dos 40 anos de idade. O fundamento técnico é que a mamografia é, até o momento, o único método de rastreamento que comprovou, através de ensaios clínicos randomizados, a capacidade de reduzir a mortalidade por câncer de mama, permitindo o diagnóstico de lesões em estágios iniciais e subclínicos (como as microcalcificações agrupadas). Vale ressaltar que, embora o Ministério da Saúde recomende o rastreamento bienal dos 50 aos 69 anos, as provas de residência frequentemente cobram o posicionamento das sociedades de especialistas.\n\nAlternativa B (Incorreta): Não se recomenda o rastreamento mamográfico de rotina para mulheres a partir dos 30 anos na população geral. Nessa idade, as mamas costumam ser muito densas (predomínio de tecido glandular sobre o adiposo), o que diminui drasticamente a sensibilidade da mamografia e aumenta a incidência de resultados falsos-positivos e biópsias desnecessárias. O rastreamento antes dos 40 anos é reservado apenas para mulheres com risco muito acima da média (como as que possuem mutações genéticas comprovadas ou histórico familiar muito forte).\n\nAlternativa C (Incorreta): A ressonância magnética (RM) não é um método de rastreamento inicial para a população geral. Apesar de ter uma sensibilidade extremamente alta para detectar tumores, a RM possui menor especificidade e um custo muito elevado. Além disso, ela não é eficiente para detectar microcalcificações suspeitas, que são detectadas primariamente pela mamografia. A RM é utilizada de forma complementar em pacientes de alto risco ou em situações diagnósticas específicas, nunca antes da mamografia no rastreamento padrão.\n\nAlternativa D (Incorreta): O exame clínico das mamas (ECM) isoladamente não é uma estratégia de rastreamento eficaz para redução de mortalidade. Quando uma lesão se torna palpável ao exame clínico, ela geralmente já possui dimensões maiores do que as lesões detectáveis apenas por imagem. Embora o ECM faça parte da avaliação física, ele não substitui a mamografia. Além disso, a faixa etária e a periodicidade citadas na alternativa estão incompletas ou em desacordo com as diretrizes de rastreamento por imagem, que é o padrão-ouro para a prevenção secundária eficaz.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:25.779Z"
+  },
+  {
+    "id": "AJUDA_9e94b8a1-b841-48a1-97ff-4d738159bb14",
+    "originalId": "9e94b8a1-b841-48a1-97ff-4d738159bb14",
+    "statement": "Recém-nascido masculino de 48 horas apresenta icterícia intensa. Mãe e filho têm tipagem sanguínea O Rh positivo. Coombs direto negativo. Hb: 12 g/dL. Reticulócitos: 13%. Bilirrubina total: 18 mg/dL. O pai refere episódio de anemia grave após ingestão de fava na infância. A dosagem de G6PD feita durante a crise vem no limite inferior da normalidade. Qual interpretação é mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A deficiência de G6PD está excluída, pois a dosagem não veio francamente baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A dosagem pode ser falsamente normal durante hemólise com reticulocitose; o teste deve ser repetido posteriormente, se a suspeita persistir.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O Coombs negativo confirma incompatibilidade ABO.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A história familiar paterna não tem relevância, por se tratar de recém-nascido masculino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O diagnóstico mais provável é atresia biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um recém-nascido com icterícia precoce e grave (bilirrubina total de 18 mg/dL com 48 horas de vida) e sinais evidentes de anemia hemolítica não imune (Hb de 12 g/dL, reticulocitose acentuada de 13% e Coombs direto negativo). O antecedente paterno de anemia desencadeada por fava aponta fortemente para deficiência de glicose-6-fosfato desidrogenase (G6PD).\n\nAlternativa a: Incorreta. A dosagem no limite inferior da normalidade não descarta o diagnóstico quando realizada durante uma crise hemolítica ativa.\n\nAlternativa b: Correta. Durante um evento hemolítico agudo, as hemácias mais senis e com menor teor de G6PD são destruídas prioritariamente. A medula óssea compensa produzindo e liberando reticulócitos (hemácias jovens), os quais apresentam níveis enzimáticos naturalmente mais elevados. Essa população jovem pode mascarar a deficiência enzimática, gerando um resultado falsamente normal ou limítrofe. Por isso, a dosagem deve ser repetida cerca de 2 a 3 meses após a crise, quando a contagem de reticulócitos estiver normalizada.\n\nAlternativa c: Incorreta. Mãe e recém-nascido possuem o mesmo tipo sanguíneo (O Rh positivo), o que afasta incompatibilidade ABO e Rh. Além disso, o Coombs direto negativo confirma que a hemólise não tem etiologia imune.\n\nAlternativa d: Incorreta. Apesar de ser uma desordem com herança ligada ao cromossomo X (em que o menino herda o cromossomo X da mãe), o histórico de anemia grave por favismo na família é um dado de anamnese crucial que direciona a principal hipótese diagnóstica.\n\nAlternativa e: Incorreta. A atresia de vias biliares cursa com hiperbilirrubinemia direta (colestase), fezes acólicas e colúria, com início dos sintomas tipicamente entre a 2ª e a 6ª semana de vida, diferindo da icterícia precoce por hiperbilirrubinemia indireta com hemólise nas primeiras 48 horas.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:25.779Z"
+  },
+  {
+    "id": "AJUDA_9e9db3b9-3c47-4189-9c8f-f8e396bfc529",
+    "originalId": "9e9db3b9-3c47-4189-9c8f-f8e396bfc529",
+    "statement": "Mulher, 52 anos foi hospitalizada com quadro de pancreatite aguda e colelitíase com ducto biliar normal ao ultrassom. Ela não tem história clínica significativa, sem vício e apresenta testes de função hepática, painel bioquímico e níveis séricos de lipídios normais. Se recuperou dos sintomas após quatro dias de tratamento clinico com hidratação e analgesia. Qual é o tratamento mais adequado para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento conservador",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colecistectomia aberta ou fechada",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Colangiopancreatografia endoscópica retrógrada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antibioticoterapia de largo espectro associada a litotripsia por ondas de choque",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso apresenta uma paciente de 52 anos com um quadro de pancreatite aguda. A presença de colelitíase (pedras na vesícula) ao ultrassom, associada à exclusão de outras causas (ausência de etilismo, níveis de lipídios normais e bioquímica normal), aponta para a etiologia biliar como a causa do evento. A paciente teve uma evolução favorável em quatro dias com tratamento clínico, o que classifica a pancreatite como leve. O desafio aqui é definir a conduta para evitar a recorrência da doença.\n\nAlternativa (a) Incorreta. Embora a paciente tenha respondido bem ao tratamento conservador inicial (hidratação e analgesia), ele não é suficiente como conduta definitiva. Pacientes que sofrem pancreatite biliar e não retiram a vesícula biliar apresentam uma taxa de recorrência de novos episódios de pancreatite de até 30% em curto prazo. Portanto, o tratamento definitivo da causa base é obrigatório.\n\nAlternativa (b) Correta. A colecistectomia é o tratamento padrão-ouro para a pancreatite aguda biliar. As diretrizes médicas atuais recomendam que, em casos de pancreatite leve, a retirada da vesícula seja realizada ainda durante a mesma internação, assim que os sintomas de dor desapareçam e a paciente consiga tolerar a alimentação oral. Isso previne que a paciente receba alta e retorne precocemente com um novo quadro de pancreatite ou outras complicações biliares, como colecistite ou colangite.\n\nAlternativa (c) Incorreta. A CPRE (Colangiopancreatografia Endoscópica Retrógrada) é um procedimento invasivo indicado para a retirada de cálculos que estão obstruindo o ducto biliar comum (colédoco). No caso descrito, o ultrassom mostrou um ducto biliar de calibre normal e os testes de função hepática estão normais, o que indica que não há uma obstrução biliar persistente no momento. Sem sinais de colangite ou icterícia obstrutiva, a CPRE não deve ser realizada.\n\nAlternativa (d) Incorreta. O uso de antibióticos de largo espectro não está indicado em casos de pancreatite aguda leve, pois não há evidência de infecção. O uso profilático de antibióticos na pancreatite não reduz complicações ou mortalidade. Além disso, a litotripsia por ondas de choque não é um tratamento reconhecido para cálculos da vesícula biliar e não tem espaço no manejo da pancreatite.\n\nGABARITO: Letra (b).",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:25.779Z"
+  },
+  {
+    "id": "AJUDA_9ea380ac-9037-4694-98bc-eb24e04cf07a",
+    "originalId": "9ea380ac-9037-4694-98bc-eb24e04cf07a",
+    "statement": "Um município define seu plano de industrialização para 4 anos, com previsão de produtividade, sustentabilidade, respeito à diversidade racial. No entanto, não prevê qualquer programa de promoção de saúde e prevenção de acidentes e doenças relacionadas ao trabalho nas empresas.\nDiante desse caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seria desejável que houvesse atenção à saúde dos trabalhadores, mas a existência de empregos deve ser colocada como prioridade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Esse fato desrespeita o preceito legal de que a saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e outros agravos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Considerando que a ampliação do mercado formal é prioritária, a Prefeitura deve expandir a sua rede hospitalar para prestar assistência aos acidentados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se priorizar a saúde dos trabalhadores, introduzindo no plano de industrialização ações que facilitem o atendimento dos trabalhadores e suas famílias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Esse plano de industrialização deve incluir ações de prevenção de acidentes do trabalho assim que atingir os objetivos pretendidos inicialmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA questão aborda a integração entre o desenvolvimento econômico e o direito à saúde, fundamentada nos princípios do Sistema Único de Saúde (SUS) e na Constituição Federal de 1988. O ponto central é entender que a saúde não é um setor isolado, mas sim o resultado de políticas sociais e econômicas.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) - INCORRETA: Do ponto de vista ético e legal no Brasil, não existe prioridade da economia sobre a saúde. O desenvolvimento econômico deve ocorrer de forma integrada à proteção social. A ideia de que o emprego justifica a negligência com a saúde do trabalhador fere os direitos fundamentais garantidos pela Constituição.\n\nAlternativa (b) - CORRETA: Esta alternativa fundamenta-se no Artigo 196 da Constituição Federal de 1988, que define a saúde como direito de todos e dever do Estado. O texto constitucional é explícito ao dizer que esse direito é garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos. Um plano de industrialização é uma política econômica e, portanto, deve obrigatoriamente prever a proteção à saúde e a prevenção de riscos ocupacionais.\n\nAlternativa (c) - INCORRETA: A expansão da rede hospitalar foca apenas na assistência curativa (tratar o dano após ele ter ocorrido). O erro do plano de industrialização mencionado é a ausência de promoção e prevenção. O SUS trabalha com a lógica da Vigilância em Saúde do Trabalhador, que busca intervir nas causas dos acidentes e doenças antes que eles necessitem de hospitalização.\n\nAlternativa (d) - INCORRETA: Embora a alternativa fale em priorizar a saúde, ela sugere apenas ações que facilitem o atendimento (assistência). O planejamento de um município deve ir além do atendimento médico e incluir a vigilância dos ambientes de trabalho e a modificação de processos produtivos perigosos para evitar que o trabalhador adoeça.\n\nAlternativa (e) - INCORRETA: As ações de prevenção e promoção da saúde devem ser concomitantes ao processo de industrialização. Postergar essas ações para depois que metas de produtividade forem atingidas é uma infração ética e legal, pois expõe a força de trabalho a riscos evitáveis de forma deliberada.\n\nCONCLUSÃO\n\nA alternativa (b) é a correta porque identifica que qualquer planejamento estatal de caráter econômico (como a industrialização) deve estar alinhado ao compromisso constitucional de reduzir riscos à saúde da população, incluindo a saúde do trabalhador.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:25.779Z"
+  },
+  {
+    "id": "AJUDA_9eb75cef-5cd7-49f1-b900-64089e6e68a6",
+    "originalId": "9eb75cef-5cd7-49f1-b900-64089e6e68a6",
+    "statement": "Pré-escolar de 4 anos, com diagnóstico prévio de asma, é levado à emergência com sibilância difusa, uso de musculatura acessória e saturação de oxigênio de 90% em ar ambiente. A crise é classificada como moderada. Qual a conduta INICIAL mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar imediatamente corticoide inalatório de alta dose e aguardar a melhora clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar oxigênio suplementar para manter saturação > 92% e iniciar nebulização com agonista beta-2 de curta duração (SABA).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar sulfato de magnésio intravenoso, reservando o SABA para casos de crise grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar SABA e iniciar imediatamente um curso de 5 dias de antibiótico oral, devido ao risco de pneumonia associada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o manejo de uma crise de asma moderada em uma criança. Os sinais que classificam a crise como moderada neste caso são o uso de musculatura acessória e a saturação de oxigênio de 90%, evidenciando a necessidade de intervenção imediata para a melhora da troca gasosa e da mecânica respiratória.\n\nAlternativa (a) Incorreta: O corticoide inalatório é utilizado prioritariamente no tratamento de manutenção (crônico) da asma. Em uma crise aguda moderada, a redução da inflamação das vias aéreas é feita com corticoide sistêmico (via oral ou intravenosa). Além disso, o corticoide não promove broncodilatação imediata, sendo necessário o uso concomitante de um agente de ação rápida.\n\nAlternativa (b) Correta: Esta conduta segue os protocolos nacionais e internacionais (como o GINA). Pacientes com saturação de oxigênio abaixo de 92-94% devem receber oxigênio suplementar para corrigir a hipoxemia. Simultaneamente, deve-se iniciar o uso de beta-2 agonista de curta duração (SABA), como o salbutamol, que é o medicamento de escolha para reverter a broncoconstrição de forma rápida e eficaz.\n\nAlternativa (c) Incorreta: O sulfato de magnésio é uma terapia de segunda linha. Ele é indicado apenas em crises graves ou em crises moderadas que não apresentam resposta satisfatória ao tratamento inicial (SABA, brometo de ipratrópio e corticoide sistêmico). Não deve ser utilizado como conduta inicial isolada.\n\nAlternativa (d) Incorreta: O uso de antibióticos não é indicado de forma rotineira nas crises de asma. A imensa maioria das exacerbações asmáticas é desencadeada por infecções virais ou exposição a alérgenos. A antibioticoterapia só deve ser considerada se houver evidência clínica e radiológica de infecção bacteriana secundária, como uma pneumonia.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:25.779Z"
+  }
+]

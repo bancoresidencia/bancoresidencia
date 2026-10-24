@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_6ea0b0af-187b-4465-9bc0-33b08f4ac2ae",
+    "originalId": "6ea0b0af-187b-4465-9bc0-33b08f4ac2ae",
+    "statement": "Paciente do sexo feminino, 32 anos, professora, refere tristeza persistente há 2 meses, insônia terminal, perda de interesse por atividades, fadiga e sentimentos de inutilidade dentro e fora do ambiente de trabalho. Não apresenta sintomas psicóticos associados. Nega uso de drogas ilícitas, estimulantes ou outros vícios. Sem outras comorbidades e sem história familiar de doença psiquiátrica.\nO diagnóstico associado ao quadro clínico é",
+    "options": [
+      {
+        "id": "A",
+        "text": "transtorno depressivo maior.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "distimia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "transtorno de adaptação com humor deprimido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "transtorno bipolar tipo II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "esquizofrenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta um quadro clássico de um episódio depressivo. Para o diagnóstico de Transtorno Depressivo Maior, segundo os critérios do DSM-5, é necessária a presença de pelo menos cinco sintomas de uma lista de nove, por um período mínimo de duas semanas, representando uma mudança em relação ao funcionamento anterior. Pelo menos um dos sintomas deve ser (1) humor deprimido ou (2) perda de interesse ou prazer (anedonia).\n\nNo caso descrito, a paciente apresenta:\n1. Humor deprimido (tristeza persistente).\n2. Anedonia (perda de interesse por atividades).\n3. Insônia (insônia terminal).\n4. Fadiga.\n5. Sentimentos de inutilidade.\nDuração: 2 meses (critério temporal de > 2 semanas preenchido).\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa A (CORRETA): O diagnóstico é Transtorno Depressivo Maior, pois a paciente preenche os critérios sintomatológicos e temporais necessários. A ausência de sintomas psicóticos, uso de substâncias ou comorbidades reforça o diagnóstico de um quadro depressivo primário unipolar.\n\nAlternativa B (INCORRETA): A Distimia, atualmente denominada Transtorno Depressivo Persistente, exige que o humor deprimido esteja presente na maior parte do dia, na maioria dos dias, por pelo menos 2 anos (em adultos). A paciente apresenta sintomas há apenas 2 meses, o que exclui esta hipótese.\n\nAlternativa C (INCORRETA): O Transtorno de Adaptação (ou de Ajustamento) é uma resposta emocional ou comportamental a um estressor identificável (como problemas no trabalho ou término de relacionamento) que ocorre dentro de 3 meses após o início do estressor. Embora a paciente seja professora (profissão estressante), o quadro descrito é completo o suficiente para preencher os critérios de depressão maior, e não há um evento desencadeante específico mencionado que justifique apenas uma reação de adaptação.\n\nAlternativa D (INCORRETA): O Transtorno Bipolar tipo II caracteriza-se pela alternância entre episódios depressivos maiores e, pelo menos, um episódio de hipomania ao longo da vida. Não há qualquer relato na história clínica de períodos de humor elevado, aumento de energia, taquipsiquismo ou redução da necessidade de sono que sugira um episódio hipomaníaco prévio ou atual.\n\nAlternativa E (INCORRETA): A Esquizofrenia é um transtorno psicótico crônico que exige a presença de sintomas como delírios, alucinações, pensamento desorganizado ou sintomas negativos marcantes por pelo menos 6 meses. O enunciado afirma explicitamente que a paciente não apresenta sintomas psicóticos, e o foco do quadro é puramente afetivo/de humor.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:34.570Z"
+  },
+  {
+    "id": "AJUDA_6eaf5e9e-e4d2-406d-9a4d-d09ea5102c0b",
+    "originalId": "6eaf5e9e-e4d2-406d-9a4d-d09ea5102c0b",
+    "statement": "Segundo o \"Standards of Care in Diabetes-2024\" da American Diabetes Association, pode-se objetivar metas diferentes de hemoglobina glicada no diabético a depender de suas caracteristicas. No diabético",
+    "options": [
+      {
+        "id": "A",
+        "text": "jovem e com grande expectativa de vida, niveis mais restritos como <5,5% podem ser desejáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "idoso e frágil, níveis mais altos como <7% são tolerados visando diminuir a polifarmácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "jovem e com grande expectativa de vida, niveis mais restritos como <6,4% podem ser desejáveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "idoso e frágil, níveis mais altos como <9% são tolerados visando diminuir a polifarmácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a individualização das metas glicêmicas no tratamento do diabetes mellitus, conforme as diretrizes da American Diabetes Association (ADA) de 2024. A lógica principal da ADA é que a meta de hemoglobina glicada (HbA1c) deve ser personalizada com base em fatores como expectativa de vida, riscos de hipoglicemia, duração da doença e presença de comorbidades.\n\nCOMENTÁRIO DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): O nível de 5,5% de hemoglobina glicada está dentro da faixa de normalidade para indivíduos não diabéticos. Para um paciente já diagnosticado com diabetes, tentar alcançar níveis tão baixos não oferece benefício clínico comprovado e aumenta significativamente o risco de hipoglicemia grave e iatrogenia, mesmo em pacientes jovens e saudáveis.\n\nAlternativa B (Incorreta): A meta de HbA1c < 7% é o objetivo padrão para a maioria dos adultos não gestantes. No entanto, para o idoso frágil e com saúde complexa, essa meta é considerada muito rigorosa. Para esse perfil de paciente, a ADA recomenda flexibilizar os alvos (geralmente < 8,0% ou < 8,5%) para priorizar a segurança e evitar a polifarmácia e episódios de hipoglicemia, que são mais perigosos nessa faixa etária.\n\nAlternativa C (Correta): A diretriz da ADA 2024 estabelece que metas mais rígidas de HbA1c, como níveis abaixo de 6,5%, podem ser apropriadas para pacientes selecionados. Os critérios para essa meta mais restrita incluem: curta duração do diabetes, longa expectativa de vida, ausência de doença cardiovascular significativa e, fundamentalmente, a capacidade de atingir esse alvo sem causar hipoglicemia significativa ou outros efeitos adversos do tratamento. Embora o texto clássico cite 6,5%, o valor de 6,4% apresentado na questão reflete a intenção de um controle intensivo abaixo do limiar diagnóstico.\n\nAlternativa D (Incorreta): Embora as metas para idosos frágeis e com saúde muito complexa sejam relaxadas, o valor de < 9% é considerado muito elevado. O objetivo no paciente idoso frágil é evitar a hiperglicemia sintomática (que causa desidratação, descompensações agudas e risco de infecções) e a hipoglicemia. Para pacientes com saúde muito comprometida ou expectativa de vida limitada, a ADA geralmente sugere metas de HbA1c < 8,0% ou < 8,5%.\n\nRESUMO DAS METAS ADA 2024:\n\n- Meta padrão para a maioria dos adultos: HbA1c < 7%.\n- Pacientes jovens, sem complicações e longa expectativa de vida: HbA1c < 6,5% (ou valores mais restritos, se seguros).\n- Idosos saudáveis: HbA1c < 7,0% a 7,5%.\n- Idosos frágeis, com comorbidades ou expectativa de vida limitada: HbA1c < 8,0% ou < 8,5%.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:34.570Z"
+  },
+  {
+    "id": "AJUDA_6eb375ef-eb97-4ea9-b78c-f54219a231c1",
+    "originalId": "6eb375ef-eb97-4ea9-b78c-f54219a231c1",
+    "statement": "A equipe de saúde da família de um município do interior está revisando as cadernetas de vacinação dos idosos adscritos ao território, conforme as diretrizes do Programa Nacional de Imunizações (PNI) para o ano de 2026. Durante a revisão, são avaliados os seguintes casos:\n\nA. Paciente A, 68 anos, hipertenso e diabético, reside em sua própria casa, é independente para as atividades de vida diária e não possui histórico de vacinação pneumocócica prévia.\nB. Paciente B, 72 anos, acamado, residente em Instituição de Longa Permanência para Idosos (ILPI), sem registro de vacina pneumocócica anterior.\nC. Paciente C, 65 anos, indígena, residente em aldeia, sem comprovação de vacinação pneumocócica conjugada prévia.\n\nConsiderando as recomendações do Calendário Nacional de Vacinação do Idoso para a vacina pneumocócica 23-valente (VPP23), ela está indicada",
+    "options": [
+      {
+        "id": "A",
+        "text": "para os três pacientes, devendo ser administrada em dose única para todos, com reforço anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "apenas para o paciente C, que deve receber duas doses com intervalo de 5 anos, por ser indígena.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "para os três pacientes, porém o paciente A deve receber apenas uma dose, enquanto B e C recebem duas doses com intervalo de 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apenas para os pacientes B e C que devem receber dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender a questão, devemos focar nos critérios de indicação da Vacina Pneumocócica 23-valente (VPP23) estabelecidos pelo Programa Nacional de Imunizações (PNI) do Brasil. O calendário de vacinação do idoso no PNI é muito específico e difere das recomendações de sociedades médicas privadas (como a SBIM).\n\nNo PNI, a VPP23 aos 60 anos ou mais não é universal. Ela é indicada rotineiramente apenas para dois grupos:\n1. Pessoas com 60 anos ou mais que vivem em instituições fechadas (asilos, casas de repouso, Instituições de Longa Permanência para Idosos - ILPI, hospitais psiquiátricos). \n2. População indígena a partir dos 60 anos de idade.\n\nPara pacientes com comorbidades (como o Paciente A, que tem diabetes e hipertensão), a vacinação pneumocócica é realizada via CRIE (Centro de Referência para Imunobiológicos Especiais), mas não faz parte do calendário vacinal de rotina do idoso da Unidade Básica de Saúde comum.\n\nAnálise das alternativas:\n\na) Incorreta. A VPP23 não é indicada para o Paciente A pelo calendário de rotina do PNI (ele mora em casa e é independente). Além disso, o esquema de reforço não é anual. O protocolo padrão para quem tem indicação é uma dose, com um único reforço após 5 anos.\n\nb) Incorreta. A vacina não é apenas para o Paciente C; o Paciente B, por morar em ILPI, também tem indicação.\n\nc) Incorreta. O erro persiste na inclusão do Paciente A no calendário de rotina. Caso o Paciente A fosse vacinado via CRIE por sua diabetes, o esquema também envolveria reforço após 5 anos, e não dose única.\n\nd) Incorreta. Embora B e C tenham indicação, o esquema vacinal para esses grupos (ILPI e indígenas) prevê uma dose inicial e uma dose de reforço após 5 anos, e não apenas dose única.\n\ne) Correta. Nenhuma das alternativas anteriores descreve corretamente as indicações e os esquemas vacinais para os três pacientes simultaneamente segundo as normas do PNI.\n\nResumo dos casos:\n- Paciente A: Sem indicação de rotina pelo PNI (apenas via CRIE se critérios preenchidos).\n- Paciente B: Indicação por residir em ILPI (Dose inicial + Reforço após 5 anos).\n- Paciente C: Indicação por ser indígena (Dose inicial + Reforço após 5 anos).",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Imunizações",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:34.570Z"
+  },
+  {
+    "id": "AJUDA_6ebab180-898d-4a59-a18c-2f24306c2363",
+    "originalId": "6ebab180-898d-4a59-a18c-2f24306c2363",
+    "statement": "A Síndrome de Aspiração de Mecônio (SAM) é uma causa grave de insuficiência respiratória neonatal. As diretrizes do Programa de Reanimação Neonatal (SBP/AHA 2022) atualizaram a abordagem do recém-nascido banhado em mecônio. Um recém-nascido a termo, com líquido amniótico meconial espesso, nasce hipotônico e sem respiração espontânea (não vigoroso). Considerando as diretrizes atuais de reanimação neonatal para o recém-nascido não vigoroso em presença de líquido amniótico meconial, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O recém-nascido deve ser colocado imediatamente no CPAP nasal para evitar o colapso alveolar, sendo a aspiração contraindicada pelo risco de bradicardia reflexa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A aspiração das vias aéreas superiores (boca e nariz) deve ser feita vigorosamente ainda no períneo materno (antes da saída dos ombros) para evitar a aspiração profunda na primeira respiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A conduta atual é levar o recém-nascido à mesa de reanimação e iniciar os passos iniciais (aquecer, secar, posicionar); se não houver resposta (apneia/gasping), iniciar ventilação com pressão positiva (VPP) sob máscara, não sendo mais indicada a intubação traqueal de rotina imediata para aspiração, a menos que haja obstrução traqueal evidente à ventilação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deve-se realizar intubação orotraqueal imediata e aspiração da traqueia sob visualização direta antes de qualquer estímulo ou ventilação, para remover o mecônio das vias aéreas inferiores e prevenir a SAM.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Síndrome de Aspiração de Mecônio (SAM) e o manejo do líquido amniótico meconial passaram por mudanças significativas nas diretrizes do Programa de Reanimação Neonatal da Sociedade Brasileira de Pediatria (SBP) e da American Heart Association (AHA). O foco atual é a ventilação pulmonar eficaz em detrimento da aspiração traqueal sistemática.\n\nExplicação detalhada das alternativas:\n\nAlternativa a) Incorreta. O CPAP (Pressão Positiva Contínua nas Vias Aéreas) é indicado apenas para recém-nascidos que apresentam desconforto respiratório, mas que possuem respiração espontânea e frequência cardíaca estável (acima de 100 bpm). No caso descrito, o recém-nascido não é vigoroso (está em apneia e hipotônico), o que exige suporte ventilatório ativo por meio de Ventilação com Pressão Positiva (VPP) com balão e máscara, e não apenas CPAP. Além disso, a aspiração não é contraindicada por bradicardia reflexa, mas sim postergada para priorizar a oxigenação.\n\nAlternativa b) Incorreta. A aspiração das vias aéreas no períneo materno, com a cabeça do bebê ainda no canal de parto antes do desprendimento dos ombros, foi formalmente proscrita nas diretrizes de 2005. Estudos randomizados demonstraram que essa prática não previne a SAM e não traz benefícios clínicos, podendo inclusive causar trauma local ou atrasar o atendimento.\n\nAlternativa c) Correta. De acordo com as diretrizes da SBP 2022, o manejo do recém-nascido não vigoroso com líquido meconial segue a mesma lógica do líquido claro: se o bebê não respira ou está hipotônico, ele deve ser levado à mesa de reanimação para os passos iniciais (aquecer, posicionar a cabeça, aspirar boca e nariz se necessário, e secar). Se após esses passos (que devem durar no máximo 30 segundos) o bebê persistir em apneia, gasping ou frequência cardíaca menor que 100 bpm, deve-se iniciar a VPP com máscara e balão imediatamente. A intubação traqueal para aspiração traqueal rotineira não é mais recomendada, sendo reservada apenas para casos em que a ventilação com máscara não é eficaz devido à obstrução evidente por mecônio espesso.\n\nAlternativa d) Incorreta. Esta alternativa descreve a conduta adotada em protocolos antigos (anteriores a 2016). Atualmente, as evidências mostram que a ventilação precoce (no \"minuto de ouro\") é mais importante do que a tentativa de remover o mecônio da traqueia. A intubação imediata antes de qualquer ventilação retardava o início da reanimação e aumentava o risco de hipóxia e lesão pulmonar, sem reduzir a incidência de SAM.\n\nResumo do manejo atual: Independentemente do aspecto do líquido amniótico (claro ou meconial), se o recém-nascido não respira ou está hipotônico, a prioridade absoluta é garantir a ventilação pulmonar efetiva dentro do primeiro minuto de vida.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Reanimação Neonatal",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:34.570Z"
+  },
+  {
+    "id": "AJUDA_6ebc6fc8-7e6d-49a2-af61-2e76a5d179e7",
+    "originalId": "6ebc6fc8-7e6d-49a2-af61-2e76a5d179e7",
+    "statement": "Paciente masculino, 60 anos, apresenta dores abdominais e dispepsia. À endoscopia digestiva alta verificou-se abaulamento em corpo do estômago, tendo sido realizada biópsia local onde se diagnosticou sarcoma gástrico. Sobre o caso descrito, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tumor estromal gastrointestinal (GIST) é o tumor mesenquimal menos comum do trato gastrointestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As mutações c-kit ocorrem predominantemente nos GISTs malignos e são um marcador prognóstico desfavorável.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A radioterapia é opção eficaz de tratamento para GIST.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os GISTs gástricos malignos ocorrem mais do que os benignos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\nO quadro clínico de um paciente idoso com abaulamento gástrico e diagnóstico histológico de sarcoma sugere fortemente o Tumor Estromal Gastrointestinal, conhecido como GIST. Este é o tumor mesenquimal mais comum do trato digestivo, originado das células intersticiais de Cajal.\n\nALTERNATIVA A - INCORRETA\nO GIST é, na verdade, o tumor mesenquimal mais comum do trato gastrointestinal, e não o menos comum. Ele representa cerca de 80% dos tumores mesenquimais nesta localização e cerca de 1% a 3% de todas as neoplasias gástricas.\n\nALTERNATIVA B - CORRETA\nA fisiopatologia do GIST está intimamente ligada a mutações de ganho de função no gene c-kit (que codifica o receptor de tirosina quinase CD117) ou, menos frequentemente, no gene PDGFRA. A expressão do CD117 é o marcador imuno-histoquímico definidor da doença em cerca de 95% dos casos. A presença de mutações específicas e o tipo de mutação detectada são fundamentais para prever o comportamento biológico do tumor, o risco de recorrência e a sensibilidade ao tratamento com inibidores de tirosina quinase (como o imatinibe), sendo, portanto, um marcador prognóstico essencial.\n\nALTERNATIVA C - INCORRETA\nOs tumores GIST são caracteristicamente resistentes à radioterapia e à quimioterapia convencional. O tratamento padrão para a doença localizada é a ressecção cirúrgica completa com margens livres. Nos casos de tumores irressecáveis, metastáticos ou com alto risco de recorrência, utiliza-se a terapia-alvo com inibidores de tirosina quinase.\n\nALTERNATIVA D - INCORRETA\nA maioria dos GISTs gástricos possui um comportamento biológico de baixo risco ou indolente. O potencial de malignidade e o risco de progressão da doença são determinados principalmente pelo tamanho do tumor e pelo índice mitótico (número de mitoses por campo de grande aumento). Tumores pequenos e com baixa taxa de divisão celular são muito mais frequentes que as formas francamente malignas e agressivas.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:34.570Z"
+  },
+  {
+    "id": "AJUDA_6ebd6706-0b2d-43ad-b995-18a6fd73c56c",
+    "originalId": "6ebd6706-0b2d-43ad-b995-18a6fd73c56c",
+    "statement": "Mulher, 46 anos, natural e procedente de Ribeirão Preto, apresentou há 10 dias quadro de sinusopatia (sic) e fez uso de amoxicilina e clavulanato. Há 4 dias notou aparecimento de pápulas e nódulos eritematosos nos membros superiores e inferiores e que hoje estão conforme figura abaixo. Está com febre de 39,8ºC, artralgia, mialgia e queda do estado geral. O teste de sensibilidade tátil está alterado nas mãos e pés.\n\nQual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vasculite leucocitoclástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Histoplasmose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Eritema nodoso hansênico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tuberculose cutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma paciente com sintomas sistêmicos agudos importantes (febre alta, mialgia, artralgia, queda do estado geral) acompanhados de pápulas e nódulos inflamatórios nos membros e, fundamentalmente, alteração de sensibilidade tátil em extremidades (mãos e pés). O acometimento do sistema nervoso periférico com perda sensitiva é a chave para o diagnóstico de hanseníase. A história prévia de sinusopatia é frequente na hanseníase virchowiana devido à infiltração bacilar e congestão da mucosa nasal.\n\nA imagem mostra lesões nodulares eritematosas com áreas centrais crostosas e necróticas nos membros, configurando uma forma grave de eritema nodoso (eritema nodoso necrotizante), compatível com Reação Hansênica do Tipo 2.\n\nAnálise das alternativas:\n\na) Incorreta. A vasculite leucocitoclástica manifesta-se clinicamente por púrpura palpável, com predomínio em membros inferiores. Embora possa cursar com manifestações sistêmicas e ser desencadeada por medicações, ela não explica o déficit sensitivo periférico distal (mãos e pés) característico da hanseníase.\n\nb) Incorreta. A histoplasmose cutânea disseminada ocorre predominantemente em indivíduos imunodeprimidos e apresenta lesões pleomórficas (pápulas, úlceras, lesões moluscoides), sem a apresentação clássica de eritema nodoso acompanhado de neuropatia periférica simétrica.\n\nc) Correta. Trata-se de Eritema Nodoso Hansênico (Reação Tipo 2), um fenômeno de hipersensibilidade mediado por imunocomplexos que ocorre nas formas multibacilares da hanseníase. Cursa com nódulos dolorosos, febre alta, sintomas constitucionais e piora da neurite, justificando plenamente o quadro e o déficit de sensibilidade.\n\nd) Incorreta. A tuberculose cutânea tem curso crônico, indolente e localizado (como no escrofuloderma ou na tuberculose verrucosa), não se manifestando como um quadro reacional inflamatório agudo com perda de sensibilidade periférica.\n\nGabarito: Alternativa c.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Hanseníase"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/47f1aa3611e263ebd5bb2aa5281fe9f55fec31b337577075a26ec47a24e6aa1a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_6ebd6706-0b2d-43ad-b995-18a6fd73c56c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:35.483Z"
+  },
+  {
+    "id": "AJUDA_6ec7d6c1-c7da-4d77-b0d1-561088ce8a76",
+    "originalId": "6ec7d6c1-c7da-4d77-b0d1-561088ce8a76",
+    "statement": "Uma menina de 3 anos de idade é avaliada com febre há dois dias, tosse produtiva e taquipneia leve, mas boa aceitação alimentar. Sem sinais de desconforto respiratório grave, o pediatra considera pneumonia adquirida na comunidade (PAC) não complicada. Nesse caso, a conduta diagnóstica mais adequada, segundo as diretrizes da SBP e Ministério da Saúde, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar hemocultura e radiografia de tórax para confirmação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar procalcitonina sérica para diferenciar infecção bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aguardar resultados laboratoriais antes de prescrever antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar internação para coleta de exames e suporte venoso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar antibioticoterapia empírica e reavaliar em 48 a 72 h.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda o manejo da Pneumonia Adquirida na Comunidade (PAC) em pediatria, focando em uma criança de 3 anos com quadro clínico típico e sem sinais de gravidade. Segundo as diretrizes da Sociedade Brasileira de Pediatria (SBP) e do Ministério da Saúde, o diagnóstico da PAC em crianças é fundamentalmente clínico, e o tratamento deve ser iniciado prontamente quando há suspeita bacteriana.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Para pacientes em tratamento ambulatorial e com quadro clínico claro, a radiografia de tórax não é obrigatória, pois não altera a conduta inicial e não diferencia com segurança a etiologia viral da bacteriana. A hemocultura tem baixíssima sensibilidade (positiva em menos de 10 por cento dos casos) e sua solicitação é restrita a pacientes hospitalizados com quadros graves ou que não respondem ao tratamento.\n\nAlternativa b) Incorreta. A procalcitonina e a Proteína C Reativa (PCR) são marcadores inflamatórios que, embora possam sugerir etiologia bacteriana, não devem ser usados de rotina para decidir o início da antibioticoterapia em casos ambulatoriais. O diagnóstico baseia-se na presença de febre, tosse e, principalmente, taquipneia.\n\nAlternativa c) Incorreta. O atraso no início do antibiótico em casos de pneumonia bacteriana suspeita pode elevar o risco de complicações. Como os exames laboratoriais são dispensáveis em casos leves, não se deve aguardar resultados para tratar.\n\nAlternativa d) Incorreta. A criança não apresenta critérios de internação. Ela mantém boa aceitação alimentar, não tem sinais de desconforto respiratório grave (como tiragem subcostal ou batimento de asa de nariz) e não apresenta sinais de perigo (como sonolência excessiva ou vômitos incoercíveis). O tratamento pode ser feito de forma segura no domicílio.\n\nAlternativa e) Correta. Em crianças com pneumonia não complicada e sem sinais de gravidade, a conduta correta é instituir a antibioticoterapia empírica (geralmente com amoxicilina via oral, que cobre o principal agente, o Streptococcus pneumoniae) e agendar uma reavaliação clínica em 48 a 72 horas. Esse prazo é o tempo esperado para que ocorra a defervescência da febre e melhora do estado geral. Caso não haja melhora nesse período, deve-se investigar complicações ou falha terapêutica.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:35.483Z"
+  },
+  {
+    "id": "AJUDA_6ec91518-7d77-4159-948e-204021f1d011",
+    "originalId": "6ec91518-7d77-4159-948e-204021f1d011",
+    "statement": "A intoxicação por salicilatos (aspirina) provoca um distúrbio do equilíbrio ácido-base complexo e característico, que evolui com o tempo. Em um adulto com intoxicação moderada a grave, a gasometria arterial tipicamente revela um distúrbio misto. Qual é esse padrão gasométrico clássico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose Respiratória pura, devido à depressão do centro respiratório e hipoventilação alveolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alcalose Metabólica pura, devido aos vômitos incoercíveis induzidos pela irritação gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acidose Metabólica com Ânion Gap normal (hiperclorêmica), devido à perda renal de bicarbonato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alcalose Respiratória primária (por estimulação direta do centro respiratório) associada a uma Acidose Metabólica com Ânion Gap elevado (pelo acúmulo de ácido salicílico, lático e cetoácidos).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A intoxicação por salicilatos (como a aspirina) é um tema clássico em provas de residência devido ao seu padrão gasométrico peculiar, que envolve dois processos fisiopatológicos independentes e simultâneos, resultando em um distúrbio ácido-base misto.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A acidose respiratória decorre da hipoventilação e retenção de CO2. Os salicilatos, ao contrário, são estimulantes diretos do centro respiratório bulbar, provocando hiperventilação e consequente queda da PaCO2 (alcalose respiratória). A depressão respiratória só seria observada em estágios terminais de intoxicação gravíssima ou se houver coingestão de outros fármacos depressores do sistema nervoso central.\n\nAlternativa B: Incorreta. Embora a irritação gástrica possa causar vômitos, a alcalose metabólica não é o padrão característico nem o mecanismo principal da toxicidade sistêmica por salicilatos. O efeito metabólico sistêmico predominante é a geração de acidose por interferência no metabolismo celular.\n\nAlternativa C: Incorreta. A acidose metabólica causada pelo salicilato é, obrigatoriamente, do tipo Ânion Gap Elevado. Isso ocorre porque há o acúmulo de ácidos não mensurados: o próprio ácido salicílico, o lactato (devido ao desacoplamento da fosforilação oxidativa) e cetoácidos (devido à alteração no metabolismo dos ácidos graxos). A acidose hiperclorêmica (ânion gap normal) não faz parte deste quadro.\n\nAlternativa D: Correta. Esta alternativa descreve o padrão clássico e patognomônico da intoxicação moderada a grave no adulto. O salicilato possui um efeito dual:\n1. Alcalose Respiratória Primária: Por estimulação direta do centro respiratório no bulbo, levando à taquipneia e hiperventilação.\n2. Acidose Metabólica com Ânion Gap Elevado: Pelo desacoplamento da fosforilação oxidativa mitocondrial, que prejudica o ciclo de Krebs e leva ao acúmulo de lactato, piruvato e cetoácidos, além da presença do próprio ácido salicílico.\n\nObservação importante: Em crianças pequenas, a fase de alcalose respiratória pode ser muito breve ou ausente, apresentando-se frequentemente apenas como acidose metabólica. No entanto, no paciente adulto, o distúrbio misto (Alcalose Respiratória + Acidose Metabólica) é a apresentação clínica mais frequente e cobrada em exames.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:35.483Z"
+  },
+  {
+    "id": "AJUDA_6ed29914-c0a0-4658-ba18-e260deaafbc7",
+    "originalId": "6ed29914-c0a0-4658-ba18-e260deaafbc7",
+    "statement": "Paciente, sexo masculino, 8 anos é levado ao pronto-socorro com febre há 5 dias, faringite intensa e linfonodos cervicais aumentados. Apresenta ainda fadiga, hepatoesplenomegalia discreta ao exame físico. Exames laboratoriais: Hemograma: leucocitose discreta, linfócitos atípicos presentes.\nO diagnóstico associado ao quadro clínico é",
+    "options": [
+      {
+        "id": "A",
+        "text": "mononucleose infecciosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "amigdalite estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "citomegalovirose congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "escarlatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "leucemia linfocítica aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso apresenta um paciente de 8 anos com a tríade clássica da mononucleose infecciosa: febre prolongada (5 dias), faringite intensa e linfonodopatia cervical. A presença de fadiga e hepatosplenomegalia reforça o caráter sistêmico da infecção, enquanto o hemograma com linfócitos atípicos é o achado laboratorial patognomônico para essa condição, refletindo a resposta das células T citotóxicas às células B infectadas pelo vírus Epstein-Barr (EBV).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) mononucleose infecciosa. CORRETA. Esta é a alternativa que melhor se ajusta ao quadro. A mononucleose infecciosa, causada principalmente pelo vírus Epstein-Barr, acomete frequentemente crianças e adultos jovens. O quadro clínico típico inclui febre, faringite (muitas vezes com exsudato), linfonodomegalia (especialmente em cadeia cervical posterior) e esplenomegalia em cerca de 50% dos casos. A presença de linfócitos atípicos (geralmente acima de 10% do total de leucócitos) é fundamental para o diagnóstico.\n\nAlternativa b) amigdalite estreptocócica. INCORRETA. Embora a faringite estreptocócica cause febre, dor de garganta e adenite cervical, ela não costuma cursar com hepatosplenomegalia ou linfocitose atípica. O quadro de prostração e fadiga também é menos proeminente do que na mononucleose. Além disso, a presença de linfócitos atípicos aponta para uma etiologia viral, e não bacteriana.\n\nAlternativa c) citomegalovirose congênita. INCORRETA. A citomegalovirose congênita é uma infecção adquirida no útero e se manifesta logo ao nascimento com microcefalia, calcificações intracranianas, petéquias e icterícia. O paciente da questão tem 8 anos e apresenta um quadro agudo de 5 dias, o que descarta uma condição congênita. Vale notar que o CMV pode causar uma síndrome mononucleose-like em pacientes mais velhos, mas o termo congênita torna a opção errada.\n\nAlternativa d) escarlatina. INCORRETA. A escarlatina é uma toxidermia causada pela toxina eritrogênica do Streptococcus pyogenes. Ela se manifesta com faringite e febre, porém é marcada por um exantema micropapular (aspecto de lixa), sinal de Pastia (acentuação nas dobras), sinal de Filatov (palidez perioral) e língua em morango. Não há relato de tais sinais cutâneos na questão, nem a escarlatina justifica a hepatosplenomegalia ou a linfocitose atípica.\n\nAlternativa e) leucemia linfocítica aguda (LLA). INCORRETA. A LLA é o câncer mais comum na infância e pode apresentar febre, linfonodomegalia e hepatosplenomegalia. No entanto, o hemograma tipicamente revelaria alterações mais graves nas outras linhagens (anemia, plaquetopenia) e a presença de blastos (células imaturas), e não apenas linfócitos atípicos, que são células reativas maduras comuns em viroses. O quadro de faringite aguda é típico de processos infecciosos.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:35.483Z"
+  },
+  {
+    "id": "AJUDA_6ed31ddd-273c-47e4-a5cc-07e19c34f810",
+    "originalId": "6ed31ddd-273c-47e4-a5cc-07e19c34f810",
+    "statement": "A doença mão-pé-boca é uma infecção viral frequente na faixa etária pediátrica, principalmente em menores de cinco anos. Os principais agentes causais são os Enterovírus, como o Coxsackie A6 e o Enterovírus A71, sendo este último o responsável pela maior gravidade de sintomas. No manejo desta doença é importante saber que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a criança deve ser afastada das atividades sociais como creche e escola, enquanto persistir a febre que, habitualmente, dura de 48 a 72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o aciclovir deve ser prescrito de forma precoce, nas primeiras 48 horas, para a redução do tempo de doença e de complicações e mantido por cinco dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a família deve ser orientada sobre a possibilidade de eliminação prolongada do vírus pelas fezes, que pode durar mais de quatro semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a presença de lesões em nádegas, joelhos ou cotovelos exclui o diagnóstico desta doença demandando a ampliação da investigação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO:\n\nA Doença Mão-Pé-Boca (DMPB) é uma síndrome clínica causada por enterovírus, sendo os mais comuns o Coxsackievírus A16, o Coxsackievírus A6 e o Enterovírus A71. A transmissão ocorre por via fecal-oral, respiratória (gotículas) e por contato direto com o fluido das vesículas.\n\nAnálise das alternativas:\n\na) INCORRETA. O afastamento escolar não deve ser baseado apenas na duração da febre. Embora a fase de maior transmissibilidade ocorra na primeira semana (fase aguda), as lesões cutâneas e a eliminação viral continuam após a defervescência. A recomendação geral é que a criança permaneça afastada até que a febre desapareça e as lesões vesiculares tenham secado ou que a criança recupere o bem-estar clínico para participar das atividades.\n\nb) INCORRETA. O aciclovir é um antiviral indicado especificamente para infecções causadas por vírus da família Herpesviridae (como o herpes simplex e o varicela-zóster). A DMPB é causada por enterovírus, para os quais não há tratamento antiviral específico de rotina. O manejo baseia-se em suporte, com analgesia, antitérmicos e hidratação.\n\nc) CORRETA. Esta é uma orientação fundamental para o controle de surtos. Os enterovírus podem ser eliminados intermitentemente nas fezes por um período prolongado, frequentemente ultrapassando quatro a oito semanas após o início dos sintomas, mesmo após a resolução completa das lesões de pele e da febre. Por isso, a higiene rigorosa das mãos e o descarte correto de fraldas devem ser mantidos por longo período.\n\nd) INCORRETA. Pelo contrário, a presença de lesões em nádegas, joelhos e cotovelos é uma característica clínica clássica e muito comum da Doença Mão-Pé-Boca, especialmente em quadros causados pelo Coxsackievírus A6. Essas localizações \"atípicas\" auxiliam no diagnóstico clínico e não o excluem.\n\nGabarito: Alternativa (c).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:35.483Z"
+  }
+]

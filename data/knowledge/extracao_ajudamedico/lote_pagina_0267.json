@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_4a23639f-9690-4cb5-b295-30ac35359716",
+    "originalId": "4a23639f-9690-4cb5-b295-30ac35359716",
+    "statement": "A Síndrome dos Ovários Policísticos (SOP) tem ampla gama de sinais e sintomas, devendo o tratamento ser individualizado. Neste contexto, dentre as opções abaixo, a melhor opção terapêutica para uma paciente com SOP, índice de massa corpórea normal, sem sinais de hiperandrogenismo clínico, sem alterações em couro cabeludo e com desejo de engravidar é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Finasterida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Espironolactona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Liraglutida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Drosperinona com etinilestradiol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Citrato de clomifeno",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver esta questão, o ponto central é identificar o objetivo principal da paciente: o desejo de engravidar. Na Síndrome dos Ovários Policísticos (SOP), a infertilidade geralmente ocorre devido à anovulação crônica. Como a paciente possui IMC normal e não apresenta sinais clínicos de hiperandrogenismo, o tratamento deve focar especificamente na indução da ovulação.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A finasterida é um inibidor da enzima 5-alfa-redutase, utilizada no tratamento de hirsutismo ou alopecia androgênica. Além de a paciente não apresentar queixas de pele ou couro cabeludo, este medicamento é teratogênico, podendo causar a feminização de fetos masculinos, sendo contraindicado para quem deseja conceber.\n\nAlternativa (b) Incorreta. A espironolactona é um diurético com potente ação antiandrogênica, indicada para o manejo do hirsutismo clínico. Além de não ser necessária neste caso (ausência de hiperandrogenismo clínico), ela possui risco de teratogenia e não tem papel na indução da ovulação.\n\nAlternativa (c) Incorreta. A liraglutida é um análogo do receptor de GLP-1, indicada para o tratamento de diabetes tipo 2 e obesidade. Como a paciente apresenta IMC normal, não há indicação para o uso de medicações para perda de peso ou sensibilizadores de insulina com este perfil para o objetivo de fertilidade.\n\nAlternativa (d) Incorreta. A combinação de drospirenona com etinilestradiol constitui um anticoncepcional oral combinado. Embora seja o tratamento padrão para regular o ciclo menstrual e controlar sintomas androgênicos na SOP, seu mecanismo de ação impede a gestação, sendo incompatível com o desejo da paciente de engravidar.\n\nAlternativa (e) Correta. O citrato de clomifeno é um modulador seletivo dos receptores de estrogênio (SERM). Ele atua no hipotálamo bloqueando o feedback negativo do estrogênio, o que resulta no aumento da secreção de FSH e LH pela hipófise, estimulando o crescimento folicular e a ovulação. É considerado uma das terapias de primeira linha para indução de ovulação em pacientes com SOP que buscam a gravidez.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  },
+  {
+    "id": "AJUDA_4a23a42e-0686-4e89-ad99-378b708d96de",
+    "originalId": "4a23a42e-0686-4e89-ad99-378b708d96de",
+    "statement": "Quais manifestações clínicas são mais comuns em adolescentes e adultos infectados pelo vírus Epstein-Barr (VEB)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Faringite, linfadenomegalia, hepatoesplenomegalia, cansaço e febre.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tosse persistente, linfadenomegalia generalizada e dificuldades respiratórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hepatite grave, linfocitose e exantema maculopapular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Febre alta, cansaço extremo e exantema vesicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O vírus Epstein-Barr (VEB) é o principal agente etiológico da mononucleose infecciosa, classicamente conhecida como a \"doença do beijo\". Em adolescentes e adultos jovens, a primoinfecção costuma ser sintomática e manifestar-se por meio de uma síndrome característica, enquanto em crianças pequenas a infecção costuma ser assintomática ou inespecífica.\n\nAlternativa (a): CORRETA. Esta alternativa descreve o quadro clínico clássico da mononucleose infecciosa em pacientes imunocompetentes após a infância. A tríade clínica típica é composta por febre, faringite (que pode ser exsudativa, simulando uma faringite bacteriana) e linfadenomegalia (predominantemente cervical posterior). O cansaço, ou fadiga extrema, é um dos sintomas mais marcantes e pode persistir por semanas ou meses. A hepatoesplenomegalia também é um achado frequente, sendo a esplenomegalia um ponto de atenção importante devido ao risco de ruptura esplênica traumática ou espontânea durante a fase aguda.\n\nAlternativa (b): INCORRETA. Embora a linfadenomegalia esteja presente na infecção pelo VEB, a tosse persistente e as dificuldades respiratórias não são manifestações comuns. Esses sintomas respiratórios sugerem outros diagnósticos, como pneumonia, coqueluche ou asma. No VEB, o desconforto respiratório só ocorreria em casos raros de obstrução de vias aéreas superiores por hipertrofia grave das amígdalas.\n\nAlternativa (c): INCORRETA. A linfocitose (frequentemente com presença de linfócitos atípicos no hemograma) é um achado laboratorial muito comum. No entanto, a hepatite grave é uma complicação rara; o mais comum é uma elevação leve e transitória das transaminases. O exantema maculopapular não é uma manifestação comum da doença primária, ocorrendo tipicamente em cerca de 70 a 90% dos pacientes que recebem erroneamente antibióticos betalactâmicos (como amoxicilina ou ampicilina) por uma suspeita equivocada de faringite estreptocócica.\n\nAlternativa (d): INCORRETA. O VEB pode causar febre alta e cansaço extremo, mas o exantema vesicular é característico de outros membros da família Herpesviridae, como o vírus do herpes simples (HSV) e o vírus da varicela-zóster (VZV), não sendo uma manifestação do vírus Epstein-Barr.\n\nResumo do diagnóstico: O diagnóstico clínico baseia-se na presença de faringite, febre e linfadenomegalia posterior, sendo confirmado laboratorialmente pela presença de anticorpos heterófilos (Monoteste) ou sorologia específica (anti-VCA, anti-EBNA), além da linfocitose com atipia linfocitária no hemograma.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  },
+  {
+    "id": "AJUDA_4a2d6d67-589f-481e-b292-4dc170d9fbeb",
+    "originalId": "4a2d6d67-589f-481e-b292-4dc170d9fbeb",
+    "statement": "Escolar, sexo feminino, com 5 anos, é trazida pelos pais, que relatam dor e inchaço no joelho direito há, aproximadamente, 3 meses. A dor é pior pela manhã, com rigidez que melhora ao longo do dia, e não há relato de febre, trauma recente ou dor em outras articulações. Os pais, inicialmente, pensaram que eram “dores de crescimento”. Considerando a história clínica da paciente, qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento com analgésicos e fisioterapia, pois a apresentação é compatível com “dores de crescimento” e o quadro é autolimitado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar hemograma completo, velocidade de hemossedimentação (VHS), proteína C-reativa (PCR) e fator antinuclear (FAN).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever um ciclo de antibióticos por 10 dias, considerando a possibilidade de uma infecção bacteriana subclínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Recomendar repouso absoluto do membro afetado por 2 semanas e reavaliar, evitando qualquer exame nesse período.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar radiografia do joelho direito para descartar fratura ou tumor ósseo, antes de qualquer outra investigação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda um caso clássico de artrite crônica na infância. A paciente apresenta dor e edema no joelho há 3 meses (mais de 6 semanas), com padrão inflamatório (piora matinal e melhora com o movimento). Esse quadro é altamente sugestivo de Artrite Idiopática Juvenil (AIJ), especificamente o subtipo oligoarticular, que é comum em meninas nessa faixa etária e costuma atingir grandes articulações, como o joelho.\n\nAlternativa A) Incorreta. As chamadas \"dores de crescimento\" são tipicamente benignas, bilaterais, ocorrem predominantemente à noite (acordando a criança) e não apresentam sinais inflamatórios como inchaço (edema) ou rigidez matinal. O quadro descrito é de uma artrite verdadeira, que exige investigação.\n\nAlternativa B) Correta. Diante de uma suspeita de Artrite Idiopática Juvenil ou outra doença reumatológica, a conduta inicial é solicitar exames laboratoriais para confirmar a presença de inflamação e auxiliar no diagnóstico diferencial. O hemograma, o VHS e a PCR avaliam a atividade inflamatória sistêmica. O FAN (Fator Antinuclear) é crucial na AIJ oligoarticular, não para o diagnóstico em si (que é clínico), mas porque sua positividade é o principal fator de risco para o desenvolvimento de uveíte anterior crônica, uma complicação ocular grave e muitas vezes assintomática que requer rastreio oftalmológico frequente.\n\nAlternativa C) Incorreta. Uma infecção bacteriana articular (artrite séptica) teria um início agudo, com dor intensa, febre alta, recusa em deambular e sinais flogísticos exuberantes. Um quadro de 3 meses de evolução, sem febre, é incompatível com infecção bacteriana ativa que justificasse o uso de antibióticos.\n\nAlternativa D) Incorreta. O repouso absoluto é contraindicado em casos de artrite inflamatória, pois a imobilidade prolongada acentua a rigidez articular e pode levar a atrofias musculares e contraturas. Além disso, protelar a investigação de uma artrite que já dura 3 meses atrasa o diagnóstico definitivo e o tratamento adequado.\n\nAlternativa E) Incorreta. Embora a radiografia possa ser utilizada no acompanhamento ou para descartar diagnósticos diferenciais específicos em casos de dor óssea, a história clínica de rigidez matinal e edema articular crônico direciona o raciocínio clínico prioritariamente para uma etiologia reumatológica. O rastreio laboratorial inicial (alternativa B) é mais abrangente e necessário para a classificação do quadro inflamatório neste momento.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Artrite Idopática Juvenil (AIJ)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  },
+  {
+    "id": "AJUDA_4a2e792e-8577-46cf-b6e7-dd911d48a45f",
+    "originalId": "4a2e792e-8577-46cf-b6e7-dd911d48a45f",
+    "statement": "Homem de 44 anos, residente na zona rural, procura a Unidade Básica de Saúde após ser mordido na mão direita pelo próprio cão, quando mexeu na vasilha em que o cão se alimentava. Relata que a mordida foi profunda e houve sangramento moderado. O cão tem domicílio, e não apresenta alterações de comportamento. O acidente ocorreu há cerca de 5 horas, sendo a conduta inicial a lavagem imediata do ferimento com água e sabão, antes de procurar atendimento. Ao ser examinado, não havia sinais de infecção na região afetada.\nConsiderando o fluxograma de atendimento do Ministério da Saúde, qual seria a conduta inicial mais apropriada para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observar o cão em reclusão por 10 dias e indicar vacina e soro antirrábico caso o animal apresente sinais de raiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Observar o cão em reclusão por 10 dias e administrar soro antirrábico 40UI/Kg de peso corporal. Se o animal apresentar sinais de raiva, acrescentar vacina antirrábica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observar o cão em reclusão por 10 dias e iniciar a vacinação antirrábica nos dias 0, 3, 7 e 14. Se o animal apresentar sinais de raiva, acrescentar soro antirrábico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Independente da observação do estado do animal, indicar a vacinação antirrábica nos dias 0, 3, 7 e 14 e soro antirrábico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para definir a conduta correta na profilaxia antirrábica pós-exposição segundo as normas do Ministério da Saúde, devemos avaliar a gravidade do ferimento e a condição do animal agressor:\n\n1. Gravidade do ferimento: O paciente sofreu mordedura profunda em mão, o que é classificado como acidente GRAVE (ferimentos em mãos, pés, face, pescoço ou mucosas, além de ferimentos profundos ou múltiplos).\n2. Condição do animal: O agressor é um cão domiciliado, sadio, com comportamento habitual e disponível para observação domiciliar.\n\nPelo fluxograma do Ministério da Saúde, quando o cão ou gato agressor é sadio e passível de observação clínica por 10 dias, a conduta inicial recomendada é apenas manter o animal sob observação. Não se indica início imediato de soro ou vacina. Somente se o animal adoecer, morrer ou desaparecer durante os 10 dias de observação é que se inicia a profilaxia completa com vacina e soro antirrábico (devido ao ferimento ser grave). Se o animal permanecer sadio por 10 dias, encerra-se o caso sem necessidade de imunobiológicos.\n\nAnálise das alternativas:\n\na) CORRETA. O cão é domiciliado, sadio e pode ser acompanhado. A conduta inicial é a observação por 10 dias. O uso de soro e vacina só estará indicado se o cão apresentar alterações de comportamento, sinais de raiva, morrer ou desaparecer no período.\n\nb) INCORRETA. Não se administra soro antirrábico de forma isolada nem de forma profilática imediata enquanto o animal estiver sadio e puder ser observado.\n\nc) INCORRETA. O esquema vacinal imediato (dias 0, 3, 7 e 14) seria indicado caso o animal fosse clinicamente suspeito de raiva no momento do atendimento, ou se o animal não fosse passível de observação. Como o cão está clinicamente sadio e é observável, aguarda-se o período de 10 dias sem iniciar vacina.\n\nd) INCORRETA. A indicação imediata e mandatória de soro e vacina, independentemente de observação, ocorre em acidentes com animais silvestres (como morcegos e macacos) ou com cães/gatos raivosos, mortos ou desaparecidos.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  },
+  {
+    "id": "AJUDA_4a3076b7-7252-4170-91e8-6ea3cfe7fa36",
+    "originalId": "4a3076b7-7252-4170-91e8-6ea3cfe7fa36",
+    "statement": "Um homem de 35 anos procura atendimento ambulatorial por apresentar sensação de febre não aferida e aumento do volume submandibular bilateral semelhante à “papeira” há 2 semanas. Refere ter notado perda de peso e adinamia associada, assim como sensação de “areia” nos olhos e boca seca. Relata tabagismo e uso de substâncias psicoativas ocasionalmente, assim como exposições sexuais desprotegidas esporádicas. Refere ter cartão vacinal completo da infância, assim como três doses de vacina contra SARS CoV-2. Ao exame físico, nota-se abaulamento submandibular bilateral, hiperemia escleroconjuntival e língua com fissuras, avermelhada. Nota-se também linfonodos palpáveis em cadeias cervicais bilaterais, de consistência fibroelástica e móveis.\n\nConsiderando o caso descrito, avalie as afirmações a seguir acerca da conduta médica adequada. \nI. Indica-se o afastamento do paciente do trabalho, prescrição de sintomáticos, pela hipótese de Parotidite epidêmica ou Caxumba.\nII. Indica-se a realização do exame de Teste Rápido para HIV.\nIII.Indica-se a ultrassonografia de parótida para avaliar a hipótese de Linfoma. \nIV. Indica-se a realização de anti-Ro e anti-La. \n\nÉ CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "II e IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito apresenta um homem jovem com aumento glandular bilateral (semelhante à parotidite), associado à síndrome sicca (xerostomia e xeroftalmia) e sintomas constitucionais (perda de peso e adinamia) há duas semanas. O paciente possui fatores de risco para infecções sexualmente transmissíveis e histórico vacinal completo.\n\nAnálise das afirmações:\n\nI. INCORRETA. A hipótese de parotidite epidêmica (caxumba) é improvável devido ao tempo de evolução (2 semanas), à presença de síndrome sicca, à perda de peso e ao fato de o paciente ter o cartão vacinal completo. A caxumba é uma doença viral aguda e autolimitada, que raramente cursa com o quadro de secura ocular e bucal ou perda ponderal importante.\n\nII. CORRETA. A infecção pelo HIV pode se manifestar através da Síndrome de Linfocitose Infiltrativa Difusa (DILS). Essa síndrome é caracterizada pelo aumento indolor das glândulas salivares (especialmente parótidas e submandibulares) e sintomas de secura, mimetizando a síndrome de Sjögren. Dado o histórico de exposição sexual desprotegida, sintomas constitucionais e linfonodopatia cervical, o rastreio para HIV é obrigatório.\n\nIII. INCORRETA. Embora o linfoma seja uma complicação possível em pacientes com estimulação linfocitária crônica das glândulas salivares (como na síndrome de Sjögren ou no HIV), a ultrassonografia de parótidas não é a conduta inicial prioritária frente ao quadro sistêmico apresentado. O foco inicial deve ser a investigação etiológica da síndrome sicca e do aumento glandular através de exames sorológicos e laboratoriais.\n\nIV. CORRETA. Os anticorpos anti-Ro (SSA) e anti-La (SSB) são marcadores fundamentais na investigação da síndrome de Sjögren primária, que é o principal diagnóstico diferencial autoimune para pacientes que apresentam xerostomia, xeroftalmia e aumento de glândulas salivares. Mesmo com a suspeita de HIV, a investigação de causas autoimunes é parte do raciocínio clínico correto para esse paciente.\n\nConclusão: As afirmações II e IV estão corretas, pois abordam os principais diagnósticos diferenciais para a síndrome sicca associada ao aumento glandular no contexto de um paciente com fatores de risco epidemiológicos.\n\nAlternativa correta: Letra (d).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Doenças Autoimunes do Tecido Conjuntivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  },
+  {
+    "id": "AJUDA_4a3613fb-8186-496f-a085-b1a1b26d21a7",
+    "originalId": "4a3613fb-8186-496f-a085-b1a1b26d21a7",
+    "statement": "Uma equipe de saúde da família percebeu um aumento do número de casos complicados de diabetes mellitus. De um total de 3.500 pacientes cadastrados, 280 são acompanhados por diabetes mellitus tipo 2, sendo 4 casos de amputações, 28 casos de retinopatia diabética e 80 casos de algum grau de doença renal crônica. Foi identificado que essa população apresentava dieta inadequada, baixo nível de atividade física e pouco conhecimento sobre estilos de vida que poderiam prevenir complicações das doenças. A equipe de saúde decidiu elaborar um projeto de intervenção com ênfase em avaliação e orientação nutricional e práticas de atividade física de rotina.\nQual é o desenho de pesquisa para avaliação do impacto desse projeto de intervenção coletiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudo de caso-controle aninhado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ensaio clínico não randomizado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Estudo de coorte retrospectivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ensaio clínico randomizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é fundamental identificar a natureza da ação proposta pela equipe de saúde. Trata-se de uma intervenção ativa (projeto de avaliação nutricional e de atividade física) em um grupo específico, com o objetivo de observar o efeito dessa mudança na saúde dos pacientes.\n\nAlternativa (a) Incorreta: O estudo de caso-controle aninhado é um desenho observacional realizado dentro de uma coorte já existente. Nele, identificam-se os casos (quem desenvolveu o desfecho) e selecionam-se os controles (quem não o desenvolveu) entre os membros daquela coorte para analisar exposições prévias. Não se aplica aqui, pois o objetivo é avaliar o efeito de uma intervenção nova, e não apenas observar associações passadas.\n\nAlternativa (b) Correta: Um ensaio clínico é um estudo de intervenção em que o pesquisador manipula um fator (neste caso, as orientações nutricionais e os exercícios). Como o projeto será aplicado à coletividade acompanhada pela equipe, sem que haja uma divisão aleatória (sorteio) dos pacientes em grupos de intervenção e controle, o desenho é classificado como um ensaio clínico não randomizado (também chamado de estudo quase-experimental). É o modelo clássico para avaliar o impacto de políticas ou programas de saúde em comunidades reais.\n\nAlternativa (c) Incorreta: O estudo de coorte retrospectivo é observacional. Ele analisa dados do passado para verificar como a exposição a determinados fatores influenciou o surgimento de doenças ao longo do tempo. Na questão, a equipe quer implementar algo novo para observar o que acontecerá no futuro, o que descaracteriza um estudo retrospectivo e puramente observacional.\n\nAlternativa (d) Incorreta: O ensaio clínico randomizado exige que os participantes sejam alocados nos grupos de intervenção ou controle de forma aleatória (por sorteio). Isso serve para garantir que ambos os grupos sejam comparáveis e para reduzir vieses. No cenário descrito, a intervenção é feita de forma coletiva na rotina da unidade de saúde para os pacientes cadastrados, sem menção a esse processo de randomização rigoroso, o que torna a alternativa (b) mais precisa para a prática de intervenção em saúde coletiva descrita.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": 74.2228561565159,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  },
+  {
+    "id": "AJUDA_4a3bde7e-8228-41ee-9333-847735282b32",
+    "originalId": "4a3bde7e-8228-41ee-9333-847735282b32",
+    "statement": "Um paciente é trazido ao serviço de emergência com depressão respiratória, miose puntiforme e rebaixamento do nível de consciência. A suspeita clínica é de intoxicação exógena por analgésicos narcóticos. Um fármaco é prontamente administrado por via endovenosa, resultando em melhora rápida e significativa do padrão respiratório e do estado de alerta do paciente.\nIndique o mecanismo de ação do fármaco de primeira escolha para reverter este quadro:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bloqueio da recaptação de serotonina e noradrenalina no sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antagonismo competitivo nos receptores benzodiazepínicos, revertendo a sedação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Inibição da enzima acetilcolinesterase nos terminais nervosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Competição e deslocamento do agente tóxico dos receptores opioides.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Ação como agonista adrenérgico para estimular o centro respiratório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO quadro clínico descrito — depressão respiratória, miose puntiforme (pupilas muito contraídas) e rebaixamento do nível de consciência — compõe a tríade clássica da síndrome opioide (toxidrome opioide). Diante da suspeita de intoxicação exógena por analgésicos narcóticos, o fármaco de primeira escolha para reversão imediata é a Naloxona.\n\nANALISANDO AS ALTERNATIVAS:\n\nAlternativa a) INCORRETA. O bloqueio da recaptação de serotonina e noradrenalina é o mecanismo de ação de alguns antidepressivos (como a venlafaxina e a duloxetina). Esse mecanismo não possui propriedades de reversão para a depressão respiratória causada por opioides.\n\nAlternativa b) INCORRETA. O antagonismo competitivo nos receptores benzodiazepínicos é o mecanismo do Flumazenil. Embora os benzodiazepínicos também causem rebaixamento do nível de consciência, eles não costumam causar miose puntiforme nem depressão respiratória tão acentuada quanto os opioides de forma isolada. O Flumazenil não tem ação sobre os receptores de narcóticos.\n\nAlternativa c) INCORRETA. A inibição da enzima acetilcolinesterase é o mecanismo de fármacos como a neostigmina ou a piridostigmina. Esse mecanismo aumenta a disponibilidade de acetilcolina e é utilizado no tratamento da Miastenia Gravis ou para reverter o bloqueio neuromuscular pós-anestésico. Na verdade, a inibição excessiva dessa enzima (como ocorre na intoxicação por organofosforados) causaria um quadro colinérgico, com bradicardia e sialorreia, diferente do proposto.\n\nAlternativa d) CORRETA. A Naloxona é um antagonista opioide puro e específico. Ela apresenta uma afinidade muito alta pelos receptores opioides (principalmente os do tipo mu) no sistema nervoso central. Ao ser administrada, a Naloxona compete pelos mesmos sítios de ligação do agente tóxico, deslocando-o do receptor e impedindo sua sinalização. Como a Naloxona não possui atividade intrínseca (não ativa o receptor), os efeitos de sedação e depressão respiratória são prontamente revertidos.\n\nAlternativa e) INCORRETA. Agonistas adrenérgicos (como a adrenalina) estimulam o sistema nervoso simpático e podem aumentar a frequência cardíaca ou a pressão arterial, mas não agem na causa fisiopatológica da intoxicação por narcóticos. Eles não conseguem deslocar o opioide do receptor no centro respiratório bulbar.\n\nGABARITO: A alternativa correta é a letra (d).",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  },
+  {
+    "id": "AJUDA_4a3ce8c9-9a01-4124-9532-f0526897497c",
+    "originalId": "4a3ce8c9-9a01-4124-9532-f0526897497c",
+    "statement": "A hipertensão arterial sistêmica é um problema de saúde pública mundial, que tem sofrido um aumento da prevalência nos casos pediátricos, principalmente associado ao sobrepeso e obesidade nessa faixa etária.\nNa faixa etária de 1 a 13 anos, a hipertensão arterial sistêmica é definida como um valor da média da pressão arterial sistólica e/ou diastólica, aferida em três ou mais ocasiões diferentes, maior ou igual ao",
+    "options": [
+      {
+        "id": "A",
+        "text": "percentil 50 para sexo, idade e percentil de altura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "percentil 50 para sexo, idade e percentil de peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "percentil 90 para sexo, idade e percentil de altura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "percentil 95 para sexo, idade e percentil de altura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "percentil 95 para sexo, idade e percentil de peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "CONCEITO INICIAL\n\nO diagnóstico de hipertensão arterial sistêmica (HAS) em pediatria difere do diagnóstico em adultos, pois os valores de normalidade variam de acordo com o crescimento e o desenvolvimento da criança. Para a faixa etária de 1 a 13 anos, as diretrizes da Academia Americana de Pediatria (AAP), seguidas pela Sociedade Brasileira de Pediatria (SBP) e pela Sociedade Brasileira de Cardiologia (SBC), estabelecem critérios baseados em curvas de percentis.\n\nO diagnóstico de HAS requer que a média da pressão arterial (sistólica e/ou diastólica), aferida em pelo menos três ocasiões diferentes, seja maior ou igual ao percentil 95 para o sexo, a idade e a estatura da criança.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): O percentil 50 representa a mediana da pressão arterial para aquela população específica de mesma idade, sexo e altura. É considerado o valor ideal, e não o critério diagnóstico para hipertensão.\n\nAlternativa B (Incorreta): Além de o valor (percentil 50) estar incorreto para o diagnóstico de hipertensão, o parâmetro antropométrico utilizado nas tabelas de referência é a estatura (altura), e não o peso. O peso é um fator de risco para a hipertensão, mas não é a variável de ajuste nas tabelas normativas.\n\nAlternativa C (Incorreta): O percentil 90 (ou valores entre o percentil 90 e 95) define a categoria de Pressão Arterial Elevada (antigamente denominada pré-hipertensão). Para o diagnóstico definitivo de hipertensão arterial estágio 1, o limite inicial é o percentil 95.\n\nAlternativa D (Correta): Esta alternativa descreve exatamente o critério diagnóstico vigente para crianças de 1 a 13 anos. A hipertensão é definida como PA sistólica e/ou diastólica maior ou igual ao percentil 95, ajustado para o sexo, a idade cronológica e o percentil de estatura da criança. O uso da estatura é fundamental, pois crianças mais altas tendem a ter níveis pressóricos fisiologicamente maiores do que crianças mais baixas da mesma idade.\n\nAlternativa E (Incorreta): Embora o percentil 95 seja o valor de corte correto para hipertensão, a variável antropométrica está errada. Conforme mencionado, utiliza-se o percentil de altura (estatura) para a classificação, e não o peso.\n\nRESUMO DOS CRITÉRIOS (1 a 13 anos):\n- Pressão Normal: menor que o percentil 90.\n- Pressão Elevada: entre o percentil 90 e o percentil 95.\n- Hipertensão Estágio 1: entre o percentil 95 e o percentil 95 + 12 mmHg (ou até 139/89 mmHg).\n- Hipertensão Estágio 2: maior ou igual ao percentil 95 + 12 mmHg (ou maior ou igual a 140/90 mmHg).",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  },
+  {
+    "id": "AJUDA_4a52cb3c-7932-4688-b836-8f0a8632bdb6",
+    "originalId": "4a52cb3c-7932-4688-b836-8f0a8632bdb6",
+    "statement": "PCF, 58 anos, sexo feminino, engenheira, relata empachamento pós-prandial desde há cerca de um mês, que foi se intensificando a ponto de conseguir ingerir somente uma quantidade muito pequena de alimentos. Apresentou emagrecimento de cerca de 5kg com a moléstia atual. Ao exame físico, foi palpada massa no epigástrio e quadrante superior esquerdo. Realizou tomografia de abdome, onde foi vista tumoração sólida retroperitoneal de formato ovóide, com cerca de 18cm de diâmetro, heterogênea, com aspecto sugestivo de conter gordura macroscópica em seu interior, comprimindo e desviando o estômago cranialmente e anteriormente, e deslocando o cólon transverso caudalmente e o rim, anteriormente. Não há evidências radiológicas de invasão local ou metástase à distância. EM relação a este caso, assinale a alternativa ERRADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A laparotomia mediana é uma boa via de acesso cirúrgico para a resolução desse caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A maioria das tumorações primárias de retroperitônio é benigna.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Não se deve recomendar biópsia percutânea da lesão para diagnóstico diferencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O melhor tratamento para essa lesão é a excisão cirúrgica completa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma paciente com sintomas compressivos (empachamento, saciedade precoce), perda ponderal e uma massa volumosa (18 cm) no retroperitônio contendo gordura macroscópica. Essas características são clássicas de um sarcoma de retroperitônio, sendo o lipossarcoma o subtipo histológico mais provável devido à presença de gordura na tomografia.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Correta): A laparotomia mediana (incisão na linha média do abdome) é, de fato, a via de escolha para a maioria dessas cirurgias. Ela oferece uma ampla exposição do campo operatório, facilitando o controle vascular dos grandes vasos retroperitoneais e permitindo a ressecção em bloco da tumoração, que é fundamental para o sucesso do tratamento.\n\nAlternativa B (Incorreta - Gabarito): Esta é a afirmação errada da questão. Ao contrário do que ocorre em outros sítios anatômicos, a grande maioria (cerca de 70% a 80%) dos tumores primários do retroperitônio é maligna. Dentre estes, os sarcomas de tecidos moles são os mais prevalentes, com destaque para o lipossarcoma e o leiomiossarcoma.\n\nAlternativa C (Correta): Em tumores retroperitoneais volumosos e com características radiológicas sugestivas de sarcoma (como a presença de gordura macroscópica), a biópsia percutânea pré-operatória é geralmente evitada se a lesão for ressecável. Os motivos são o risco de disseminação de células neoplásicas pelo trajeto da agulha (seeding) e o fato de que o resultado da biópsia raramente mudaria a conduta inicial, que é a cirurgia. A biópsia fica reservada para casos de dúvida diagnóstica (suspeita de linfoma ou tumor germinativo) ou quando se planeja quimioterapia neoadjuvante.\n\nAlternativa D (Correta): O tratamento padrão-ouro e a única modalidade com potencial curativo para os sarcomas retroperitoneais é a ressecção cirúrgica completa com margens livres (R0). Devido ao tamanho e localização, muitas vezes é necessário ressecar órgãos adjacentes em bloco para garantir que não fiquem restos tumorais, já que a recorrência local é a principal causa de falha no tratamento.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  },
+  {
+    "id": "AJUDA_4a58ae0b-255a-4743-8b64-a19b146c5707",
+    "originalId": "4a58ae0b-255a-4743-8b64-a19b146c5707",
+    "statement": "Um lactente de 1 ano e 1 mês de vida, previamente hígido, foi trazido ao pronto atendimento com quadro de tosse e coriza havia já 3 dias. Foi dito que houve pico febril de 38 ºC no primeiro dia de sintomas. A mãe referiu boa hidratação e aceitação alimentar. No exame físico: coriza nasal hialina e congestão nasal; oroscopia com edema e hiperemia de tonsilas e parede posterior de orofaringe; ausculta pulmonar sem alterações. \n\nCom base nesse caso clínico hipotético e considerando a hipótese diagnóstica adequada, é correto afirmar que o",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso de pseudoefedrina será indicado para alívio dos sintomas nasais, desde que em doses ajustadas ao peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "uso de guaifenesina será seguro para essa faixa etária e contribuirá para reduzir a duração da tosse.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "uso de difenidramina reduzirá os sintomas nasais e apresentará seletividade para receptores histamínicos com menos efeitos adversos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "uso de mel provavelmente aliviará os sintomas da tosse e reduzirá o impacto da tosse no sono.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "uso de mucolíticos reduzirá a necessidade de antibióticos e prevenirá complicações respiratórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico: O quadro clínico descrito é compatível com um resfriado comum (rinofaringite aguda), de provável etiologia viral. Trata-se de uma patologia autolimitada em que o tratamento é essencialmente de suporte, visando ao alívio dos sintomas.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O uso de descongestionantes sistêmicos, como a pseudoefedrina, é contraindicado para crianças menores de 4 a 6 anos (a depender da diretriz). Esses fármacos apresentam eficácia duvidosa nessa faixa etária e possuem risco elevado de efeitos adversos graves, como taquicardia, hipertensão, arritmias e alterações neurológicas.\n\nAlternativa b) Incorreta. A guaifenesina é um expectorante que não possui comprovação de eficácia em reduzir a duração ou a gravidade da tosse em lactentes. Além disso, o uso de xaropes para tosse em crianças pequenas não é recomendado por diversas sociedades de pediatria devido ao risco de toxicidade e à ausência de benefício clínico superior ao placebo.\n\nAlternativa c) Incorreta. A difenidramina é um anti-histamínico de primeira geração. Diferentemente do que afirma a alternativa, ela não é seletiva, atravessando a barreira hematoencefálica e causando efeitos colaterais como sedação, tontura ou até agitação paradoxal. No resfriado comum, os anti-histamínicos isolados não demonstraram benefício na redução dos sintomas nasais em crianças.\n\nAlternativa d) Correta. O uso de mel (cerca de 2,5 a 5 ml antes de dormir) é uma recomendação baseada em evidências para crianças acima de 1 ano de idade. Estudos demonstram que o mel pode ser mais eficaz que o placebo e que alguns antitussígenos comuns na redução da frequência e da gravidade da tosse, melhorando, consequentemente, a qualidade do sono da criança e dos pais. É fundamental lembrar que o mel é terminantemente proibido para menores de 1 ano devido ao risco de botulismo. Como o paciente tem 1 ano e 1 mês, a indicação está correta.\n\nAlternativa e) Incorreta. Não há evidências de que o uso de mucolíticos reduza a necessidade de prescrição de antibióticos ou que previna complicações respiratórias, como pneumonias ou otites, em quadros de resfriado comum. O tratamento padrão para a congestão e a secreção nesta idade é a higienização nasal com solução salina.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:25.817Z"
+  }
+]

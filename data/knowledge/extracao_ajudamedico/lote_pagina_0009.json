@@ -1,0 +1,508 @@
+[
+  {
+    "id": "AJUDA_021368f8-5cbd-499d-8e81-a8c617b5e403",
+    "originalId": "021368f8-5cbd-499d-8e81-a8c617b5e403",
+    "statement": "Recém-nascido do sexo masculino, nascido a termo, parto vaginal, Apgar 8/9, apresenta taquipneia (> 80irpm) nas primeiras horas de vida, com gemido expiratório e retração subcostal leves. Radiografia de tórax mostra hiperinsuflação pulmonar e cissura interlobar visível. O RN está em bom estado geral, com boa perfusão e sem cianose. Com base no quadro clínico descrito, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome da aspiração meconial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome da angústia respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Taquipneia transitória do recém-nascido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pneumonia neonatal precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico e radiológico descrito é clássico da Taquipneia Transitória do Recém-Nascido (TTRN), também conhecida como \"Pulmão Úmido\". Esta condição ocorre devido ao retardo na reabsorção do líquido pulmonar fetal pelos linfáticos e capilares pulmonares após o nascimento.\n\nAnálise das alternativas:\n\na) Incorreta. A Síndrome da Aspiração Meconial ocorre tipicamente em recém-nascidos a termo ou pós-termo que apresentaram mecônio no líquido amniótico. O quadro clínico costuma ser mais grave, com maior desconforto respiratório. Radiologicamente, caracteriza-se por infiltrados grosseiros e difusos (\"em flocos de algodão\") intercalados com áreas de atelectasia e hiperinsuflação, e não apenas pelo fluido na cisura.\n\nb) Incorreta. A Síndrome da Angústia Respiratória (ou Doença da Membrana Hialina) é causada pela deficiência de surfactante e atinge predominantemente recém-nascidos prematuros. No raio X, apresenta hipotransparência generalizada com aspecto de \"vidro fosco\", infiltrado reticulogranular fino e volumes pulmonares reduzidos, o que contradiz a hiperinsuflação descrita na questão.\n\nc) Correta. A TTRN é a principal causa de desconforto respiratório no recém-nascido a termo. É comum o início precoce (nas primeiras 2 a 6 horas de vida) e a resolução rápida (geralmente em 48 a 72 horas). Os achados radiológicos típicos incluem sinais de congestão hilar, hiperinsuflação (mais de 8 costelas visíveis acima do diafragma) e a presença de líquido na cisura interlobar, indicando o acúmulo de fluido que ainda não foi reabsorvido. O fato de o RN estar em bom estado geral e bem perfundido reforça este diagnóstico benigno.\n\nd) Incorreta. A Pneumonia Neonatal Precoce geralmente está associada a fatores de risco maternos, como rotura prolongada de membranas, febre materna ou corioamnionite. Embora possa causar taquipneia e desconforto, o recém-nascido costuma apresentar sinais de infecção ou instabilidade clínica (estado geral comprometido). O achado radiológico de líquido na cisura é muito mais específico para TTRN do que para pneumonia.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.188Z"
+  },
+  {
+    "id": "AJUDA_021c07ad-8335-4d82-aefa-e88d10beca40",
+    "originalId": "021c07ad-8335-4d82-aefa-e88d10beca40",
+    "statement": "Paciente 50 anos portadora de neoplasia de mama com metástase óssea deu entrada na emergência com relato de constipação, náuseas, letargia e confusão mental. Exames mostraram Calcio corrigido de 15 mg/dl. Qual a primeira medida terapêutica a ser instituída?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Corticoide EV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Calcitonina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hidratação vigorosa com solução salina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Bifosfonado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diálise",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta uma crise hipercalcêmica, definida por níveis de cálcio corrigido acima de 14 mg/dL associados a sintomas neurológicos (confusão mental e letargia) e gastrointestinais. O diagnóstico etiológico provável é hipercalcemia da malignidade, comum em pacientes com metástases ósseas de câncer de mama. O objetivo imediato é a redução dos níveis séricos de cálcio e a estabilização clínica.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Corticoide EV: Incorreta. Os corticosteroides são eficazes no tratamento da hipercalcemia mediada por produção excessiva de vitamina D (como em linfomas ou sarcoidose) ou no mieloma múltiplo. No entanto, seu início de ação é lento, levando de 2 a 5 dias para atingir o efeito máximo, não sendo, portanto, a primeira escolha na emergência.\n\nb) Calcitonina: Incorreta. Embora a calcitonina tenha um início de ação rápido (2 a 4 horas), seu efeito redutor de cálcio é modesto e temporário devido ao fenômeno de taquifilaxia (o corpo deixa de responder ao fármaco após 24-48 horas). Ela pode ser usada como adjuvante em casos graves, mas nunca como medida isolada ou inicial prioritária frente à desidratação.\n\nc) Hidratação vigorosa com solução salina: Correta. Esta é a primeira medida terapêutica a ser instituída. Pacientes com hipercalcemia grave apresentam desidratação importante devido à poliúria (induzida pelo efeito do cálcio nos túbulos renais) e aos vômitos. A infusão de solução salina isotônica (SF 0,9%) restaura o volume intravascular e, mais importante, aumenta a taxa de filtração glomerular e a excreção urinária de cálcio.\n\nd) Bifosfonado: Incorreta. Os bifosfonados (como o ácido zoledrônico ou pamidronato) são fundamentais no tratamento da hipercalcemia da malignidade por inibirem a reabsorção óssea pelos osteoclastos. Contudo, eles demoram de 48 a 72 horas para começar a fazer efeito. Eles devem ser administrados precocemente, mas a hidratação deve preceder ou acompanhar o início de seu uso.\n\ne) Diálise: Incorreta. A hemodiálise com baixo cálcio no dialisato é um tratamento de exceção. É indicada apenas em casos de hipercalcemia extrema (geralmente acima de 18-20 mg/dL), insuficiência renal grave que impossibilite a hidratação vigorosa ou em pacientes que não respondem às medidas clínicas iniciais.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.188Z"
+  },
+  {
+    "id": "AJUDA_021db6d7-1a93-4412-9421-fad75860fefa",
+    "originalId": "021db6d7-1a93-4412-9421-fad75860fefa",
+    "statement": "Um homem de 45 anos, com diagnóstico recente de diabetes mellitus tipo 2 apresenta-se para consulta de seguimento. Ele encontra-se com IMC de 32 kg/m² e sua hemoglobina glicada é de 8,5%. Seu médico recomenda mudanças no estilo de vida e inicia a metformina. Após 3 meses, a hemoglobina glicada cai para 7,8%, mas ele expressa dificuldades em manter uma alimentação adequada e está preocupado com o risco de complicações do diabetes. Considerando as diretrizes atuais para o manejo do diabetes tipo 2, qual das seguintes condutas é a mais indicada para o próximo passo no tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender a metformina e introduzir uma sulfonilureia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Introduzir insulina basal e reduzir a dose de metformina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar um agonista do receptor de GLP-1 junto com a metformina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Manter apenas a intervenção no estilo de vida e reavaliar em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Comentário da Questão:\n\nO caso clínico apresenta um paciente jovem, com obesidade (IMC 32 kg/m²) e diagnóstico recente de diabetes mellitus tipo 2 (DM2). Após três meses de monoterapia com metformina e mudanças no estilo de vida, ele mantém uma hemoglobina glicada (HbA1c) de 7,8%, valor acima da meta recomendada pela maioria das diretrizes (geralmente < 7,0%). Além disso, o paciente demonstra preocupação com complicações e dificuldade em perder peso.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. A metformina é o fármaco de primeira escolha no tratamento do DM2 devido à sua eficácia, segurança e baixo custo, devendo ser mantida a menos que haja contraindicação ou intolerância grave. As sulfonilureias, embora eficazes na redução da glicemia, estão associadas ao ganho de peso e ao risco de hipoglicemia, o que seria prejudicial para um paciente com IMC de 32 kg/m².\n\nAlternativa b) Incorreta. A introdução de insulina basal é geralmente reservada para pacientes com níveis muito elevados de HbA1c (geralmente acima de 9,5% a 10%), sintomas catabólicos (perda de peso, poliúria, polidipsia) ou quando os objetivos não são atingidos com terapias não insulínicas triplas. A insulina também favorece o ganho ponderal, o que não é desejável neste caso.\n\nAlternativa c) Correta. Segundo as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da American Diabetes Association (ADA), quando a meta de HbA1c não é atingida após 3 meses de metformina, deve-se intensificar o tratamento. Para pacientes com sobrepeso ou obesidade, os agonistas do receptor de GLP-1 são altamente recomendados. Eles possuem alta eficácia na redução da HbA1c, promovem perda de peso significativa, apresentam baixo risco de hipoglicemia e oferecem proteção cardiovascular e renal, abordando diretamente as preocupações do paciente sobre complicações futuras.\n\nAlternativa d) Incorreta. Manter apenas a intervenção no estilo de vida e reavaliar em 6 meses caracteriza inércia terapêutica. Se o paciente não atingiu a meta em 3 meses com a conduta inicial, é necessário o ajuste medicamentoso imediato para reduzir o risco de complicações crônicas e garantir o controle metabólico adequado.\n\nConclusão: A introdução de um agonista do receptor de GLP-1 em associação com a metformina é a conduta mais alinhada com as evidências atuais, focando não apenas no controle glicêmico, mas também na redução do peso corporal e na prevenção de complicações.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.188Z"
+  },
+  {
+    "id": "AJUDA_0221a502-2796-456a-bef8-d928f88d16b0",
+    "originalId": "0221a502-2796-456a-bef8-d928f88d16b0",
+    "statement": "Homem de 67 anos, portador de hipertensão arterial sistêmica e doença renal crônica estágio 4, é admitido na enfermaria com queixa de fraqueza muscular e palpitações.\n\nExame físico:\n• PA: 132/82 mmHg\n• FC: 98 bpm, ritmo irregular\n• FR: 20 irpm\n• Sem sinais de congestão pulmonar, sem edemas periféricos\n\nExames laboratoriais:\n• Potássio sérico: 6,8 mEq/L\n• Sódio: 138 mEq/L\n• Creatinina: 2,8 mg/dL (TFG estimada 22 mL/min/1,73m²)\n• Gasometria: pH 7,37 / HCO₃⁻ 21 mEq/L / pCO₂ 39 mmHg\n• ECG: ondas T apiculadas difusas, alargamento do QRS.\n\nConsiderando o quadro de hipercalemia grave em paciente com DRC, qual das medidas abaixo é a mais eficaz para reduzir o potássio sérico de forma sustentada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nebulização com brometo de ipratrópio a cada 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ciclocilicato de zircônio sódico por via enteral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administração de manitol endovenoso para induzir diurese osmótica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso de carbonato de lítio em baixa dose para promover troca catiônica renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Infusão endovenosa de vitamina C associada a reposição de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro de hipercalemia grave (potássio de 6,8 mEq/L) com repercussões eletrocardiográficas importantes (ondas T apiculadas e alargamento do complexo QRS). Em um cenário de emergência como este, o manejo inicial deve focar em três pilares: estabilização da membrana miocárdica (geralmente com gluconato de cálcio), redistribuição intracelular do potássio (insulina/glicose e beta-2-agonistas) e a remoção definitiva do excesso de potássio do organismo.\n\nA questão solicita especificamente a medida mais eficaz para reduzir o potássio sérico de forma SUSTENTADA. Medidas de redistribuição (como insulina e nebulização) agem rapidamente, mas o potássio permanece no corpo e volta para o compartimento extracelular após algumas horas. Para uma redução sustentada, é necessário eliminar o potássio do corpo.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O brometo de ipratrópio é um anticolinérgico utilizado em crises de broncoespasmo e não tem efeito sobre os níveis de potássio. O fármaco que poderia ser utilizado para redistribuição de potássio via nebulização é o salbutamol ou fenoterol (beta-2-agonistas), mas mesmo estes promovem apenas uma redução temporária (shift intracelular), e não uma redução sustentada.\n\nAlternativa b) Correta. O ciclossilicato de zircônio sódico (SZC) é um trocador catiônico moderno e altamente seletivo que captura o potássio em todo o trato gastrointestinal em troca de íons sódio e hidrogênio. Diferentemente das medidas de redistribuição, ele promove a eliminação real do potássio do organismo pelas fezes, garantindo uma redução sustentada dos níveis séricos. É uma opção terapêutica eficaz para pacientes com doença renal crônica que necessitam de controle de potássio a longo prazo ou em fases de estabilização pós-emergência.\n\nAlternativa c) Incorreta. O manitol é um diurético osmótico que não é indicado para o tratamento de hipercalemia, especialmente em pacientes com DRC estágio 4. O uso de manitol em pacientes com baixa taxa de filtração glomerular pode causar expansão volêmica aguda, edema agudo de pulmão e piora das escórias nitrogenadas, sem garantir a excreção eficaz de potássio.\n\nAlternativa d) Incorreta. O carbonato de lítio é um estabilizador de humor utilizado na psiquiatria. Ele não possui propriedades de troca catiônica renal que favoreçam a excreção de potássio; pelo contrário, o lítio pode ter diversos efeitos colaterais renais, incluindo diabetes insipidus nefrogênico e nefrite intersticial crônica.\n\nAlternativa e) Incorreta. A vitamina C (ácido ascórbico) não tem papel no tratamento da hipercalemia. A reposição de cálcio (citada na alternativa) é fundamental para estabilizar a membrana dos cardiomiócitos e prevenir arritmias fatais no paciente com QRS alargado, mas o cálcio isoladamente não reduz a concentração de potássio no sangue.\n\nResumo: Em pacientes com DRC em que a eliminação renal está severamente comprometida, os ligadores/quelantes de potássio por via enteral (como o ciclossilicato de zircônio sódico ou o patiromer) são as ferramentas farmacológicas disponíveis para a remoção sustentada do íon, quando a diálise não é iniciada imediatamente.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.189Z"
+  },
+  {
+    "id": "AJUDA_022b8bb3-bf77-45b1-a329-6aef446190c2",
+    "originalId": "022b8bb3-bf77-45b1-a329-6aef446190c2",
+    "statement": "Paciente de 24 anos sofre acidente motociclístico, e a proteção da via aérea será necessária ainda em ambiente pré-hospitalar. Com base nesse contexto, em relação a sedação e analgesia, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o etomidato pode reduzir o limiar convulsivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o tempo de ação do midazolam é, em média, de 15 a 30 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a meia-vida da quetamina é curta, de maneira geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a ocorrência de hipotensão após o uso de fentanil é bastante frequente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa (a) está correta. O etomidato é um agente hipnótico amplamente utilizado na Sequência Rápida de Intubação (SRI), especialmente em pacientes com trauma ou instabilidade hemodinâmica, devido ao seu baixo impacto na pressão arterial e na perfusão cerebral. No entanto, ele possui um efeito pró-convulsivante, sendo capaz de reduzir o limiar convulsivo e causar mioclonias (contrações musculares involuntárias) durante a indução. Por essa razão, ele é, inclusive, utilizado em alguns serviços para facilitar o mapeamento de focos epilépticos ou em eletroconvulsoterapia.\n\nA alternativa (b) está incorreta. O midazolam, embora seja um benzodiazepínico de ação curta, possui um tempo de latência (início de ação) mais demorado que o do etomidato ou o do propofol, levando de 2 a 5 minutos para agir. Sua duração de ação após uma dose de indução é variável, mas geralmente ultrapassa os 30 minutos, podendo chegar a 1 ou 2 horas, o que é um tempo superior ao desejado para o efeito imediato de uma intubação em ambiente de emergência.\n\nA alternativa (c) está incorreta. É importante diferenciar tempo de efeito de meia-vida. A quetamina tem uma duração de ação clínica curta (cerca de 10 a 15 minutos) devido à redistribuição da droga para tecidos periféricos. No entanto, sua meia-vida de eliminação é de aproximadamente 2 a 3 horas, o que não é considerado tecnicamente uma meia-vida curta no contexto da farmacologia de emergência.\n\nA alternativa (d) está incorreta. O fentanil é um opioide sintético muito utilizado justamente por sua excelente estabilidade hemodinâmica. Diferente de outros opioides, como a morfina, o fentanil não causa liberação de histamina e tem efeito mínimo sobre a contratilidade miocárdica e o tônus vascular. Portanto, a hipotensão após o seu uso é um evento raro, tornando-o seguro para pacientes politraumatizados.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.189Z"
+  },
+  {
+    "id": "AJUDA_022ff8d7-8914-4c91-926f-9d505777a31b",
+    "originalId": "022ff8d7-8914-4c91-926f-9d505777a31b",
+    "statement": "Homem, 72 anos de idade, é levado a atendimento médico pela filha por episódios recorrentes há dois meses em que o paciente descreve presença de figuras humanas e de animais no quarto. Filha relata que há cerca de seis meses o paciente apresenta sonolência diurna excessiva e episódios de discurso desorganizado associado a agitação noturna com movimentos bruscos chegando a levantar da cama. Relata que nesse período o paciente apresentou diversas quedas da própria altura, sem fraturas. O medicamento que deve ser evitado nesse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Duloxetina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sertralina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Haloperidol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mirtazapina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Amitriptilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito apresenta os pilares diagnósticos da Demência por Corpos de Lewy (DCL). O paciente manifesta alucinações visuais detalhadas (figuras humanas e animais), flutuação cognitiva (episódios de discurso desorganizado e sonolência diurna), transtorno comportamental do sono REM (agitação noturna com movimentos bruscos, como se estivesse encenando sonhos) e instabilidade postural com quedas frequentes (sugerindo parkinsonismo).\n\nNa Demência por Corpos de Lewy, existe uma característica clínica fundamental: a sensibilidade extrema a antipsicóticos.\n\na) Duloxetina: Incorreta. Trata-se de um inibidor da recaptação de serotonina e noradrenalina. Embora exija cautela em idosos devido ao risco de quedas ou hiponatremia, não possui a contraindicação específica relacionada à fisiopatologia da doença de Lewy.\n\nb) Sertralina: Incorreta. É um inibidor seletivo da recaptação de serotonina (ISRS), sendo um dos antidepressivos mais seguros para uso em idosos com demência e depressão, não sendo o fármaco a ser evitado nesta questão.\n\nc) Haloperidol: Correta. O haloperidol é um antipsicótico de primeira geração (típico) com forte bloqueio de receptores dopaminérgicos D2. Pacientes com Demência por Corpos de Lewy podem apresentar reações graves e potencialmente fatais ao utilizarem neurolépticos, manifestando agravamento súbito do parkinsonismo, rigidez extrema, sedação excessiva e risco aumentado de Síndrome Neuroléptica Maligna. Portanto, o haloperidol é formalmente contraindicado nesse cenário.\n\nd) Mirtazapina: Incorreta. É um antidepressivo com propriedades sedativas, frequentemente utilizado para tratar insônia e perda de apetite em idosos. Não apresenta a toxicidade dopaminérgica que contraindica o seu uso no paciente em questão.\n\ne) Amitriptilina: Incorreta. A amitriptilina é um antidepressivo tricíclico que deve, de fato, ser evitado em idosos de forma geral devido ao seu alto perfil anticolinérgico (que pode piorar a confusão mental, causar retenção urinária e constipação). No entanto, frente ao diagnóstico de Demência por Corpos de Lewy, o risco associado ao uso de antipsicóticos típicos como o haloperidol é considerado mais específico e perigoso, tornando-o a resposta prioritária.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Demências",
+      "Psicofarmacologia"
+    ],
+    "difficulty": 63.268002093241414,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.189Z"
+  },
+  {
+    "id": "AJUDA_0233b4c4-b9a6-4149-84f4-14878deac388",
+    "originalId": "0233b4c4-b9a6-4149-84f4-14878deac388",
+    "statement": "Menino de 6 anos, de zona rural, chega à emergência com dor abdominal em cólica, distensão abdominal, vômitos biliosos e eliminação recente de vermes cilíndricos nas fezes. Está afebril, hidratado após reposição inicial, sem sinais de peritonite. Radiografia sugere suboclusão por bolo de áscaris. \nQual é a abordagem inicial mais adequada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta com dose única de albendazol, pois o quadro tende a resolver espontaneamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparotomia imediata está indicada em todos os casos, antes de qualquer medida clínica, com o intuito de evitar sofrimento de alças intestinais e migração para vias biliares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internamento com jejum, hidratação, sonda nasogástrica, óleo mineral para desenovelamento e ascaricida, quando possível.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Internamento com prescrição de corticoide sistêmico para reduzir o edema intestinal e piperazina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colonoscopia terapêutica para retirada dos parasitas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, devemos focar no diagnóstico de suboclusão intestinal por Ascaris lumbricoides, uma complicação comum em crianças de áreas endêmicas com alta carga parasitária. O manejo clínico baseia-se em \"desmanchar\" o bolo de vermes sem a necessidade imediata de cirurgia, desde que não haja sinais de irritação peritoneal.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O paciente apresenta um quadro de suboclusão intestinal (vômitos biliosos, distensão e dor em cólica). Dar alta com albendazol é perigoso por dois motivos: primeiro, o paciente precisa de suporte hospitalar para descompressão; segundo, os benzimidazóis (albendazol/mebendazol) causam paralisia espástica ou morte lenta do verme, o que pode piorar a obstrução ao tornar o bolo de áscaris mais rígido e difícil de eliminar.\n\nAlternativa B (Incorreta): A laparotomia não é a conduta inicial para quadros de suboclusão. A cirurgia é reservada para casos de falha do tratamento clínico após 24-48 horas ou quando surgem sinais de abdome agudo obstrutivo/perfurativo (peritonite, febre, toxemia, ar livre no raio-x). A maioria dos casos (cerca de 80-90%) resolve com medidas conservadoras.\n\nAlternativa C (Correta): Esta é a conduta padrão ouro para a suboclusão por áscaris. O internamento permite monitorização. O jejum, a hidratação venosa e a sonda nasogástrica (SNG) visam descomprimir o trato gastrointestinal. O uso de óleo mineral (via SNG ou oral) funciona como lubrificante para ajudar a \"desenovelar\" o bolo de vermes. O ascaricida (geralmente a piperazina) é introduzido após a estabilização, pois causa paralisia flácida do verme, facilitando sua expulsão.\n\nAlternativa D (Incorreta): O corticoide sistêmico não faz parte do protocolo de desobstrução por ascaridíase. Embora a piperazina esteja correta para o tratamento medicamentoso desta condição, o foco dessa alternativa no corticoide a torna errada.\n\nAlternativa E (Incorreta): A colonoscopia não tem papel terapêutico na fase aguda da obstrução alta (intestino delgado), onde o bolo de áscaris geralmente se aloja (íleo terminal). É um método invasivo e desnecessário para este quadro clínico.\n\nResumo do Manejo Clínico (Conservador):\n1. Dieta zero + Hidratação venosa.\n2. Sonda Nasogástrica aberta para descompressão.\n3. Óleo Mineral (50 a 100 ml) via SNG a cada 4-6 horas.\n4. Piperazina (ascaricida de escolha na obstrução por causar paralisia flácida).\n5. Após a resolução do quadro agudo e eliminação dos vermes, deve-se realizar o tratamento definitivo com albendazol ou mebendazol para erradicar os parasitas remanescentes.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Parasitoses",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.189Z"
+  },
+  {
+    "id": "AJUDA_0234838d-b01d-43e1-a203-96b3702dbe50",
+    "originalId": "0234838d-b01d-43e1-a203-96b3702dbe50",
+    "statement": "No manejo dos pacientes com AVC, assinale a alternativa incorreta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A elevação da pressão arterial (PA) é um mecanismo fisiológico no pós-AVC e reduzir bruscamente os níveis tensionais nesse momento pode levar ao aumento da área isquêmica e piora do déficit neurológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A terapia anti-hipertensiva está indicada nos casos de AVC isquêmico com PAS maior que 150 e PAD maior que 90 mmHg.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O uso de estatinas durante a fase aguda do evento isquêmico mostrou uma redução na recorrência do AVC pelo mecanismo de estabilização da placa, seu efeito anti-inflamatório e melhora na perfusão cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de dupla antiagregação plaquetária (AAS associado ao Clopidogrel) dentro das primeiras 24 a 48 horas do início dos sintomas está relacionado a um declínio estatisticamente significativo na mortalidade e sequelas nestes pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "No caso de AVC cardioembólico, a introdução de anticoagulantes o mais breve possível, principalmente se for relacionado a uma arritmia tipo fibrilação atrial, tem mostrado melhores resultados na prevenção secundária neste tipo de paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão aborda o manejo agudo e a prevenção secundária do Acidente Vascular Cerebral Isquêmico (AVCI), exigindo o conhecimento das diretrizes atuais de controle pressórico, antiagregação e anticoagulação. O objetivo é identificar a alternativa INCORRETA.\n\nAlternativa (a) Correta: Durante um AVCI, ocorre uma perda da autorregulação do fluxo sanguíneo cerebral. A elevação da pressão arterial é, muitas vezes, uma resposta compensatória para manter a perfusão na área de penumbra (tecido ainda viável ao redor do núcleo isquêmico). Reduzir a PA de forma agressiva ou desnecessária pode reduzir a pressão de perfusão cerebral, transformando a penumbra em área de infarto definitivo e piorando o prognóstico neurológico.\n\nAlternativa (b) Incorreta (Gabarito): Os níveis tensionais para intervenção no AVCI agudo são muito mais elevados do que os sugeridos na alternativa. Em pacientes que NÃO são candidatos à trombólise, o tratamento anti-hipertensivo só é iniciado se a PA estiver acima de 220/120 mmHg. Para pacientes que IRÃO realizar trombólise, a PA deve ser mantida abaixo de 185/110 mmHg antes do procedimento e abaixo de 180/105 mmHg nas 24 horas seguintes. Portanto, o valor de 150/90 mmHg está incorreto para a fase aguda.\n\nAlternativa (c) Correta: O início precoce de estatinas de alta potência (como atorvastatina 80 mg) é recomendado no AVCI de etiologia aterosclerótica. Além da redução do colesterol, as estatinas possuem efeitos pleiotrópicos, que incluem a estabilização da placa ateromatosa, efeitos anti-inflamatórios e melhora da função endotelial, o que auxilia na prevenção de novos eventos.\n\nAlternativa (d) Correta: Estudos como o CHANCE e o POINT demonstraram que, em pacientes com AVCI menor (NIHSS até 3) ou Ataque Isquêmico Transitório (AIT) de alto risco (ABCD2 maior ou igual a 4), a dupla antiagregação plaquetária com AAS e clopidogrel iniciada nas primeiras 24 horas reduz significativamente o risco de recorrência de AVC nos primeiros 90 dias, sem um aumento proibitivo de complicações hemorrágicas.\n\nAlternativa (e) Correta: No AVC cardioembólico, geralmente associado à fibrilação atrial, a anticoagulação é a base da prevenção secundária. Embora o tempo exato de início dependa da gravidade e do tamanho do infarto (para evitar transformação hemorrágica), evidências recentes (como o Estudo ELAN) reforçam que o início precoce da anticoagulação é seguro e eficaz para prevenir a recorrência de eventos embólicos nesses pacientes.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 78.96831597007923,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.189Z"
+  },
+  {
+    "id": "AJUDA_0239ec83-13bf-4e69-ac5b-e985cfc6a790",
+    "originalId": "0239ec83-13bf-4e69-ac5b-e985cfc6a790",
+    "statement": "Recém-nascido prematuro extremo (29 semanas), com 1.100g. internado em UTI neonatal, evolui com quadro de enterocolite necrosante (ECN) estágio II. A conduta proposta pela equipe foi conservadora (não cirúrgica) e iniciou-se plano de reintrodução alimentar após estabilização hemodinâmica e infecciosa do quadro. Considerando as diretrizes da OMS e do Ministério da Saúde sobre nutrição neonatal, qual é a conduta nutricional MAIS ADEQUADA esse contexto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar alimentação com fórmula infantil de partida, por ser mais calórica e favorecer ganho ponderal rápido",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar alimentação com leite integral em pó, por ser economicamente viável e de fácil acesso em unidades públicas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter jejum prolongado até completa cicatrização intestinal, com nutrição parenteral exclusiva por pelo menos 14 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Utilizar leite humano pasteurizado proveniente de banco de leite, por reduzir risco de recorrência de enterocolite e promover recuperação intestinal",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a conduta nutricional em um recém-nascido pré-termo extremo com diagnóstico de enterocolite necrosante (ECN) estágio II. A ECN é a emergência gastrointestinal mais comum e grave no período neonatal, e a escolha do alimento para a reintrodução da dieta é crucial para minimizar o risco de recorrência e favorecer a recuperação da mucosa intestinal.\n\nAnálise das alternativas:\n\na) Incorreta. Embora as fórmulas infantis para prematuros sejam hipercalóricas, elas são consideradas um fator de risco para o desenvolvimento e a recorrência da ECN. Em comparação com o leite humano, a fórmula aumenta a permeabilidade intestinal, altera a microbiota (disbiose) e carece de fatores imunológicos e tróficos essenciais para a cicatrização da mucosa.\n\nb) Incorreta. O leite de vaca integral (em pó ou fluido) é formalmente contraindicado para recém-nascidos, especialmente prematuros. Ele possui uma carga de solutos muito elevada para os rins imaturos, baixo teor de ácidos graxos essenciais, além de ser altamente alergênico e irritante para o trato gastrointestinal, podendo agravar o quadro inflamatório.\n\nc) Incorreta. No estágio II da classificação de Bell (ECN moderada), o protocolo padrão geralmente envolve jejum e nutrição parenteral por 7 a 10 dias. No entanto, a alternativa sugere um \"jejum prolongado\" de pelo menos 14 dias como regra, o que não é mais o padrão absoluto. Atualmente, busca-se a reintrodução cautelosa da dieta enteral assim que houver estabilização clínica e melhora dos sinais radiológicos, visando evitar as complicações da nutrição parenteral prolongada, como a colestase e infecções associadas ao cateter.\n\nd) Correta. O leite humano (da própria mãe ou de banco de leite) é o padrão-ouro na nutrição do prematuro, especialmente após quadros de ECN. Ele contém componentes bioativos, como imunoglobulinas (IgA secretora), lactoferrina, oligossacarídeos e fatores de crescimento que protegem a barreira intestinal, modulam a resposta inflamatória e promovem a reparação tecidual. O uso de leite humano pasteurizado reduz significativamente a incidência e a severidade da enterocolite quando comparado ao uso de fórmulas.\n\nResumo da conduta: Após o período de repouso intestinal na ECN, a reintrodução da dieta deve ser feita de forma gradual e, obrigatoriamente, preferindo-se o leite humano para garantir a segurança e a recuperação do paciente.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Aleitamento Materno",
+      "Outros Distúrbios do Período Neonatal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.189Z"
+  },
+  {
+    "id": "AJUDA_023f4cab-d047-41aa-a021-366005374a8c",
+    "originalId": "023f4cab-d047-41aa-a021-366005374a8c",
+    "statement": "A úlcera péptica perfurada é uma condição clínica grave que se caracteriza pela dor abdominal intensa e súbita, resultando de uma liberação abrupta do conteúdo gástrico no abdômen. O manejo adequado e a identificação precoce são fundamentais para melhorar o prognóstico do paciente. É uma característica típica de úlcera péptica perfurada que libera conteúdo gástrico no abdômen:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exame físico revela um abdômen flácido, sem sinais de irritação peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Presença de timpanismo ao invés da macicez hepática, conhecida como Sinal de Jobert.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dor abdominal leve e difusa, sem irradiação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paciente apresenta dor intensa somente na região dorsal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A úlcera péptica perfurada é uma das causas mais comuns de abdome agudo perfurativo. O quadro clínico clássico envolve dor abdominal de início súbito e intensidade excruciante, frequentemente descrita como dor em facada. A perfuração permite que ar e conteúdo gástrico ou duodenal ganhem a cavidade peritoneal, gerando um quadro de peritonite química inicial que evolui rapidamente para peritonite bacteriana.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Na úlcera perfurada, a irritação do peritônio pelo conteúdo gástrico ácido provoca uma contração reflexa da musculatura abdominal. O exame físico revela um abdome rígido, conhecido como ventre em tábua, e sinais claros de irritação peritoneal, o oposto de um abdome flácido.\n\nAlternativa b) Correta. O Sinal de Jobert é um achado semiológico clássico e patognomônico do pneumoperitônio no contexto clínico adequado. Quando ocorre a perfuração de uma víscera oca (como o estômago ou duodeno), o ar livre na cavidade abdominal se desloca para a parte mais alta. Com o paciente em decúbito dorsal ou semissentado, o ar se interpõe entre o fígado e a parede toracoabdominal. Isso faz com que a percussão da região da linha axilar média direita, onde normalmente haveria macicez hepática, apresente som timpânico.\n\nAlternativa c) Incorreta. A dor na perfuração péptica é extremamente intensa e de início abrupto. Ela costuma ser bem localizada inicialmente no andar superior do abdome e depois se torna difusa com a progressão da peritonite. Além disso, é comum haver irradiação para os ombros, fenômeno conhecido como sinal de Kehr, devido à irritação do nervo frênico.\n\nAlternativa d) Incorreta. A dor é predominantemente abdominal. Embora a dor possa irradiar para o dorso em casos específicos (como em úlceras de parede posterior que penetram no pâncreas), a característica típica da perfuração livre na cavidade é a dor abdominal generalizada e súbita, não restrita à região dorsal.\n\nPortanto, o reconhecimento do Sinal de Jobert (letra b) é fundamental para o diagnóstico clínico de perfuração de víscera oca, indicando a presença de gás livre na cavidade peritoneal.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": 33.113294339221014,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:15.189Z"
+  }
+]

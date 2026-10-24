@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_dbdc14cb-76b0-4b2a-b6e5-9b65ae9079fd",
+    "originalId": "dbdc14cb-76b0-4b2a-b6e5-9b65ae9079fd",
+    "statement": "Uma gestante com 36 semanas apresenta prurido generalizado, principalmente em mãos e pés. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colestase intra-hepática da gravidez.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infecção por estreptococo do grupo B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipertireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a letra A.\n\nO quadro clínico descrito é clássico da Colestase Intra-hepática da Gravidez (CIG). Esta condição é uma disfunção hepatobiliar que se manifesta tipicamente no terceiro trimestre da gestação, decorrente da dificuldade na excreção de sais biliares, que se acumulam na derme e estimulam as terminações nervosas, causando coceira.\n\nAlternativa A (Correta): O prurido na CIG é caracteristicamente generalizado, mas começando ou sendo mais intenso nas palmas das mãos e plantas dos pés. Não há rash cutâneo primário, apenas lesões secundárias ao ato de coçar (escoriações). Ocorre tipicamente no final da gravidez e regride rapidamente após o parto.\n\nAlternativa B (Incorreta): A pré-eclâmpsia é definida pela presença de hipertensão arterial surgida após a 20ª semana de gestação, associada a proteinúria ou disfunções orgânicas. O prurido não faz parte do quadro clínico desta patologia. Em casos graves com acometimento hepático (síndrome HELLP), pode haver dor epigástrica, mas não prurido isolado em mãos e pés.\n\nAlternativa C (Incorreta): A infecção ou colonização pelo Estreptococo do Grupo B (Streptococcus agalactiae) é geralmente assintomática para a gestante. O rastreio é realizado entre 35 e 37 semanas para prevenir a transmissão vertical e a sepse neonatal, não tendo relação com quadros de prurido cutâneo.\n\nAlternativa D (Incorreta): Embora o hipertireoidismo possa causar prurido em casos raros devido ao aumento do fluxo sanguíneo cutâneo e calor, ele vem acompanhado de outros sinais e sintomas sistêmicos, como taquicardia, tremores, bócio e perda de peso. Não é a causa provável para uma queixa tão específica de prurido palmoplantar no final da gestação.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:07.509Z"
+  },
+  {
+    "id": "AJUDA_dbdf4b3e-9acf-4c15-96ef-11d6b5dbb5d3",
+    "originalId": "dbdf4b3e-9acf-4c15-96ef-11d6b5dbb5d3",
+    "statement": "Mulher, 32 anos de idade, natural e procedente de São Paulo, procura o serviço de emergência com queixa de adinamia há 7 dias e sangramento vaginal abundante há 2 dias. Nega comorbidades, tabagismo, etilismo, uso de medicamentos ou suplementos. Ao exame físico, apresenta FC de 100 bpm, PA de 100x50 mmHg, temperatura axilar de 38 °C; bom estado geral, descorada 2+/4+, anictérica, tem petéquias na mucosa jugal e nos membros inferiores; sem adenomegalias ou outros achados. Exames laboratoriais: Hb: 6,2 g/dL, VCM: 84,7 fL, HCM: 29,7 pg, RDW: 18%, Reticulócitos: 23.000/mm3, Leucócitos: 1.100/mm³, Neutrófilos: 440/mm³, Linfócitos 850/mm³, Monócitos: 40/mm³, Eosinófilos: 10/mm³, Plaquetas: 8.000/mm³, Hematoscopia com poiquilocitose e esferócitos. Assinale a alternativa que indica a mais provável hipótese diagnóstica e a correta condução clínica desta paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Púrpura trombocitopênica trombótica; plasmaférese, bloqueio hormonal e dosagem de ADAMTS13.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aplasia de medula; iniciar imunossupressão e suporte transfusional imediatamente após biópsia de medula.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Leucemia aguda; iniciar suporte transfusional, bloqueio hormonal, antibioticoterapia e estudo medular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tuberculose medular; pesquisa direta e PCR para micobactéria na medula, terapia RIPE e piperacilina-tazobactam.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Quadro Clínico:\nA paciente apresenta um quadro de pancitopenia aguda (anemia, leucopenia/neutropenia e plaquetopenia severas) associado a febre e sangramento mucocutâneo e vaginal. A presença de neutropenia importante (neutrófilos abaixo de 500/mm³) acompanhada de febre configura uma emergência médica denominada neutropenia febril, que exige intervenção imediata.\n\nAlternativa a) Incorreta. A Púrpura Trombocitopênica Trombótica (PTT) manifesta-se tipicamente com anemia hemolítica microangiopática e plaquetopenia, mas não costuma cursar com neutropenia grave (pancitopenia). No esfregaço de sangue periférico da PTT, o achado característico são os esquizócitos, e não apenas esferócitos ou poiquilocitose genérica.\n\nAlternativa b) Incorreta. A aplasia de medula óssea é um diagnóstico diferencial importante para pancitopenia, porém o quadro de febre em um paciente neutropênico exige antibioticoterapia imediata, o que não foi mencionado nesta alternativa. Além disso, em quadros agudos com sangramento e febre, a leucemia deve ser a primeira hipótese a ser investigada e manejada devido à sua agressividade.\n\nAlternativa c) Correta. A Leucemia Aguda é a principal suspeita para uma falência medular de instalação rápida (adinamia há 7 dias e sangramento há 2 dias) resultando em pancitopenia. A conduta está correta e completa para o cenário de urgência: suporte transfusional para corrigir a anemia grave (Hb 6,2) e plaquetopenia crítica (8.000); bloqueio hormonal para controlar o sangramento vaginal volumoso em uma paciente com plaquetas baixas; antibioticoterapia imediata para tratar a neutropenia febril; e o estudo medular (mielograma e/ou biópsia) para definir o diagnóstico etiológico.\n\nAlternativa d) Incorreta. Embora a tuberculose possa acometer a medula óssea e causar pancitopenia, essa é uma apresentação menos comum e geralmente mais arrastada, ocorrendo com frequência em pacientes imunossuprimidos. O quadro agudo e a gravidade da citopenia direcionam o raciocínio prioritariamente para as neoplasias hematológicas. O tratamento com esquema RIPE não seria a conduta inicial de emergência antes de uma confirmação ou forte indicação clínica.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Leucemias",
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:07.509Z"
+  },
+  {
+    "id": "AJUDA_dbe69638-bf05-4cf9-b729-6c2026c91af2",
+    "originalId": "dbe69638-bf05-4cf9-b729-6c2026c91af2",
+    "statement": "Após uma gastrectomia parcial realizada para o tratamento de câncer gástrico, a escolha da técnica de reconstrução é essencial para restaurar a continuidade do trato gastrointestinal. Assinale a alternativa que descreve corretamente a técnica de reconstrução em Y de Roux.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anastomose término-lateral entre o remanescente gástrico e o duodeno, restabelecendo a continuidade fisiológica do trânsito alimentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anastomose término-lateral entre o estômago remanescente e uma alça jejunal preparada, seguida de uma anastomose látero-lateral entre a alça aferente e o jejuno, configurando a reconstrução.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anastomose entre o remanescente gástrico e o jejuno por meio de uma anastomose término-lateral, com exclusão do duodeno e formação de uma alça aferente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anastomose término-terminal do remanescente gástrico ao cólon transverso, visando a restabelecer o trânsito alimentar em casos de exclusão do duodeno e jejuno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A compreensão das técnicas de reconstrução pós-gastrectomia é fundamental na cirurgia oncológica digestiva. Após a ressecção parcial do estômago, o cirurgião deve optar por uma forma de restabelecer o trânsito, sendo as mais comuns: Billroth I, Billroth II e Y de Roux. Abaixo, analisamos cada alternativa:\n\nAlternativa (a) INCORRETA: Esta alternativa descreve a reconstrução do tipo Billroth I. Nela, realiza-se uma gastroduodenostomia, ou seja, a união direta entre o que sobrou do estômago e o duodeno. É considerada a reconstrução mais fisiológica por manter a passagem do alimento pelo duodeno, mas não corresponde ao Y de Roux.\n\nAlternativa (b) CORRETA: O Y de Roux consiste na divisão do jejuno. A parte distal dessa divisão (chamada de alça alimentar ou alça em Roux) é anastomosada ao remanescente gástrico (gastrojejunostomia). Já a parte proximal, que contém o duodeno e recebe as secreções biliares e pancreáticas (alça biliopancreática), é anastomosada lateralmente na própria alça jejunal, em um ponto mais distal (jejunojejunostomia). Essa configuração em dois caminhos que se unem abaixo forma a letra \"Y\", o que evita o contato direto das secreções biliares com a mucosa gástrica, reduzindo a gastrite de refluxo alcalino.\n\nAlternativa (c) INCORRETA: Esta descrição remete à técnica de Billroth II. Nela, o duodeno é fechado em fundo cego (excluído do trânsito alimentar) e uma alça íntegra de jejuno é levada até o estômago para uma anastomose término-lateral ou látero-lateral. Isso cria uma \"alça aferente\" (que traz a bile) e uma \"alça eferente\" (por onde sai o alimento), mas ambas conectadas ao mesmo orifício gástrico, ao contrário do Y de Roux, onde as alças se unem longe do estômago.\n\nAlternativa (d) INCORRETA: A anastomose do estômago diretamente ao cólon transverso (gastrocolostomia) não é uma técnica de reconstrução utilizada após gastrectomia por câncer. Isso resultaria em uma síndrome de má absorção gravíssima, uma vez que o alimento \"pularia\" todo o intestino delgado, além de causar graves distúrbios metabólicos e diarreia intratável.\n\nGabarito: Letra (b).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:07.509Z"
+  },
+  {
+    "id": "AJUDA_dbe69a38-5b7f-43b5-ac79-bc7dbe1111a5",
+    "originalId": "dbe69a38-5b7f-43b5-ac79-bc7dbe1111a5",
+    "statement": "Mulher de 60 anos refere abaulamento doloroso na região inguinal direita há 3 meses, que desaparece quando se deita. Ao exame físico, observa-se presença de hérnia femoral redutível. Qual é a estrutura anatômica determinante para a diferenciação clínica entre as hérnias inguinais e femorais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anel inguinal interno",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fáscia transversalis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ligamento inguinal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Vasos epigástricos inferiores",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para diferenciar clinicamente as hérnias da região da virilha, o ponto de referência anatômico mais importante é o ligamento inguinal, também conhecido como ligamento de Poupart. Essa estrutura estende-se da espinha ilíaca anterossuperior até o tubérculo púbico e serve como a fronteira entre o canal inguinal e o espaço femoral.\n\nAnálise das alternativas:\n\na) Incorreta. O anel inguinal interno é o local de origem das hérnias inguinais indiretas, situando-se lateralmente aos vasos epigástricos inferiores. Embora seja uma estrutura crucial na anatomia da região, ele não é o marco que separa as hérnias inguinais das femorais.\n\nb) Incorreta. A fáscia transversalis forma a parede posterior do canal inguinal. O enfraquecimento dessa fáscia na região do triângulo de Hesselbach é a causa fisiopatológica das hérnias inguinais diretas. Ela não atua como divisor entre o canal inguinal e o canal femoral.\n\nc) Correta. O ligamento inguinal é o determinante anatômico para essa diferenciação. As hérnias inguinais (diretas e indiretas) emergem sempre acima do ligamento inguinal. Por outro lado, as hérnias femorais (ou crurais) projetam-se através do anel femoral, localizando-se sempre abaixo do ligamento inguinal e mediais aos vasos femorais. Em pacientes com maior panículo adiposo, essa diferenciação clínica pode ser difícil, mas anatomicamente este é o parâmetro definitivo.\n\nd) Incorreta. Os vasos epigástricos inferiores são o ponto de referência para diferenciar as hérnias inguinais entre si. As hérnias inguinais indiretas ocorrem lateralmente aos vasos epigástricos, enquanto as hérnias inguinais diretas ocorrem medialmente a eles (dentro do triângulo de Hesselbach). Eles não são utilizados para distinguir hérnias inguinais de femorais.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:07.509Z"
+  },
+  {
+    "id": "AJUDA_dbe8f6d5-52d3-4696-aa4d-cf39cc6ab968",
+    "originalId": "dbe8f6d5-52d3-4696-aa4d-cf39cc6ab968",
+    "statement": "Assinale a alternativa que apresenta a condição conhecida como vasa prévia na gestação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se da presença de vasos sanguíneos fetais ligados à placenta, que cruzam a membrana amniótica e estão localizados abaixo da apresentação fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de uma condição em que a placenta se descola da parede uterina, resultando em sangramento grave durante a gestação, em momento fora do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Refere-se a um tipo de descolamento prematuro da placenta que ocorre durante o trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É a implantação da placenta em uma posição anormal, cobrindo parcial ou totalmente o colo uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se da presença de vasos sanguíneos maternos intraplacentários, passíveis de se romper durante o trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A vasa prévia é uma condição obstétrica rara, mas de extrema gravidade, caracterizada pela presença de vasos sanguíneos fetais desprotegidos (pela geleia de Wharton ou pelo tecido placentário) que atravessam as membranas amnióticas e se localizam sobre o orifício interno do colo uterino, posicionando-se abaixo da apresentação fetal.\n\nAnálise das alternativas:\n\nAlternativa a) Está correta. A alternativa apresenta a definição exata da vasa prévia. Esses vasos fetais estão em uma posição de vulnerabilidade mecânica: no momento da ruptura das membranas (amniorrexe) ou pela pressão da apresentação fetal durante o trabalho de parto, eles podem se romper. Como o sangue contido nesses vasos é de origem fetal, o sangramento resulta em exanguinação fetal rápida e alta taxa de mortalidade se não houver intervenção imediata.\n\nAlternativa b) Está incorreta. A descrição refere-se ao Descolamento Prematuro de Placenta (DPP), que é a separação da placenta da parede uterina antes do nascimento do feto. O DPP cursa classicamente com dor abdominal, hipertonia uterina e sangramento vaginal de origem materna.\n\nAlternativa c) Está incorreta. Assim como a alternativa anterior, esta descrição também se refere ao descolamento prematuro da placenta, apenas especificando o momento de ocorrência durante o trabalho de parto, o que não caracteriza vasa prévia.\n\nAlternativa d) Está incorreta. Esta alternativa descreve a Placenta Prévia. Embora os nomes sejam semelhantes, na placenta prévia é o próprio tecido placentário que recobre o colo uterino, enquanto na vasa prévia são apenas vasos fetais desprotegidos que passam à frente da apresentação.\n\nAlternativa e) Está incorreta. O erro fundamental aqui é a origem dos vasos. Na vasa prévia, os vasos são obrigatoriamente fetais, e não maternos. A ruptura de vasos maternos não teria o mesmo impacto catastrófico de perda volêmica para o feto quanto a ruptura de seus próprios vasos. Além disso, vasos maternos intraplacentários são constituintes normais da placenta.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:07.509Z"
+  },
+  {
+    "id": "AJUDA_dbeb26f4-4c41-48d7-9db0-ae1951d48ce5",
+    "originalId": "dbeb26f4-4c41-48d7-9db0-ae1951d48ce5",
+    "statement": "Um homem de 71 anos, portador de HAS e DM2 há 40 anos, procura atendimento por início súbito de fraqueza intensa e palpitações nas últimas duas horas. Ao exame, apresenta PA 132/78 mmHg, FC 110 bpm e FR 22 irpm, sem sinais de choque. Nos exames laboratoriais iniciais verificam-se hemograma normal, Cr 6,9 mg/dl, Ur 289 mg/dl, PTH 365 pg/mL e potássio 6,1 mEq/L. Ele relata uso de enalapril, sem ajustes recentes. O ECG foi solicitado abaixo. Qual é a melhor conduta para este quadro clínico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar gluconato de cálcio EV para estabilização imediata da membrana miocárdica se K de controle >6,5 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar insulina regular EV com glicose para promover rápido shift intracelular do potássio e reavaliação clínica com nova dosagem de K a cada 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nebulizar 2-agonista (salbutamol) em altas doses como terapia adjuvante para reduzir K+.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Utilizar resinas de troca (patiromer/zirconium) associado a lactulose visando eliminação intestinal do potássio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Considerar hemodiálise de urgência após exclusão de hipovolemia e/ou obstrução renal e manutenção da hipercalemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente em questão apresenta um quadro de insuficiência renal crônica avançada ou agudizada, evidenciada pela creatinina de 6,9 mg/dL, ureia de 289 mg/dL e PTH elevado (hiperparatireoidismo secundário). O uso crônico de enalapril (um IECA) em um paciente com função renal comprometida é um fator de risco importante para a hipercalemia (potássio de 6,1 mEq/L). O ponto crucial para a resolução da questão é o eletrocardiograma (ECG), que já apresenta sinais de cardiotoxicidade.\n\nANÁLISE DO ECG\n\nNa imagem fornecida, observamos ondas T altas, pontiagudas, simétricas e de base estreita, conhecidas como ondas T em tenda, especialmente visíveis nas derivações precordiais (V2 a V6). Esse achado é o sinal mais precoce de hipercalemia no ECG e indica que o excesso de potássio está afetando a repolarização ventricular, transformando o caso em uma emergência médica.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. O gluconato de cálcio é, de fato, a primeira medida para estabilizar a membrana miocárdica quando há alterações no ECG. No entanto, a alternativa está incorreta ao condicionar seu uso apenas se o potássio for superior a 6,5 mg/dL. Na presença de alterações eletrocardiográficas, a estabilização com cálcio deve ser imediata, independentemente do valor absoluto do potássio.\n\nAlternativa b: Incorreta. A solução glicoinsulinada (insulina regular + glicose) é uma medida eficaz para promover o shift (deslocamento) do potássio para o interior das células. O erro desta alternativa está no tempo de reavaliação: em um quadro de urgência com ECG alterado, a dosagem de potássio deve ser repetida em 1 a 2 horas, e não a cada 6 horas.\n\nAlternativa c: Correta. A nebulização com beta-2-agonistas em doses elevadas (geralmente o quádruplo da dose usada para broncoespasmo) estimula a bomba Na/K-ATPase, promovendo a entrada de potássio nas células. É uma terapia de deslocamento intracelular indicada para reduzir rapidamente o potássio sérico enquanto medidas definitivas são preparadas.\n\nAlternativa d: Incorreta. As resinas de troca (como o poliestirenossulfonato de cálcio ou as mais recentes como patiromer e zirconium) removem o potássio através do trato gastrointestinal. Elas possuem início de ação lento (levando horas ou até dias) e não são adequadas como terapia isolada ou prioritária em pacientes sintomáticos com alteração no ECG.\n\nAlternativa e: Incorreta. Embora a hemodiálise seja o tratamento definitivo para a hipercalemia na insuficiência renal grave, a alternativa propõe aguardar a exclusão de hipovolemia/obstrução e a manutenção da hipercalemia. Diante de alterações no ECG, não se deve aguardar; medidas de deslocamento (como a da alternativa C) devem ser instituídas imediatamente como ponte até a realização da diálise.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/587a1f7861228c812680bf234139175fad7da743413995da8b54c2021ae7b7f5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_dbeb26f4-4c41-48d7-9db0-ae1951d48ce5_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:08.485Z"
+  },
+  {
+    "id": "AJUDA_dbec4af4-d3a6-40ae-8b90-d6bcc774c02b",
+    "originalId": "dbec4af4-d3a6-40ae-8b90-d6bcc774c02b",
+    "statement": "Tercigesta, 14 semanas de gestação, 2 partos normais anteriores, traz resultado de exames pré-natais de rotina em consulta na UBS. O médico observa a seguinte urocultura:\n\nResultado: Escherichia coli igual ou superior à 100.000 UFC/mL\n\nAntibiograma:\nAmicacina: S <= 2,00\nAmoxicilina-ácido clavulânico: S <= 8,00\nCefalexina: S <= 8,00\nCefepima: S <= 0,12\nCeftriaxona: S <= 0,25\nCefuroxima Intravenosa: I 4\nCefuroxima oral: S 4\nCiprofloxacino: S <= 0,06\nErtapenem: S <= 0,12\nGentamicina: S <= 1,00\nMeropenem: S <= 0,25\nNitrofurantoína: S <= 16\nNorfloxacino: S <= 0,50\nPiperacilina/Tazobactam: S <= 4\nTrimetoprima/Sulfametoxazol: S <= 20\n\nNesse caso, a melhor conduta, dentre as abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrever trimetoprima/sulfametoxazol por 3 dias e repetir a urocultura após 7 dias do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "repetir a urocultura com higiene perineal, pois se trata de contaminação da coleta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "manter acompanhamento clínico, pois se trata de bacteriúria assintomática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "introduzir nitrofurantoína profilática até o final da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "prescrever amoxicilina-ácido clavulanico por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro descrito apresenta uma gestante de 14 semanas, assintomática, com resultado de urocultura demonstrando crescimento de Escherichia coli igual ou superior a 100.000 unidades formadoras de colônias por mililitro (UFC/mL). Esse achado define o diagnóstico de bacteriúria assintomática. Na gestação, o tratamento da bacteriúria assintomática é mandatório, pois a condição aumenta significativamente o risco de evolução para pielonefrite, o que pode acarretar complicações graves como parto prematuro, rotura prematura de membranas e baixo peso ao nascer.\n\nAnalise das alternativas:\n\nAlternativa A: Incorreta. Embora o antibiograma mostre sensibilidade, a trimetoprima/sulfametoxazol costuma ser evitada no primeiro trimestre pelo risco de malformações (antagonista do ácido fólico) e no terceiro trimestre pelo risco de kernicterus no recém-nascido. Além disso, esquemas terapêuticos de curta duração (3 dias) são menos recomendados na gestação em comparação aos ciclos de 5 a 7 dias, que garantem maior taxa de erradicação.\n\nAlternativa B: Incorreta. A presença de uma única espécie bacteriana com contagem de 100.000 UFC/mL ou mais preenche o critério diagnóstico de bacteriúria. A contaminação da coleta é sugerida quando há crescimento de múltiplos microrganismos em contagens baixas.\n\nAlternativa C: Incorreta. Na população geral, a bacteriúria assintomática muitas vezes não requer tratamento. No entanto, em gestantes, o tratamento é obrigatório devido ao alto risco de progressão para infecção urinária alta (pielonefrite).\n\nAlternativa D: Incorreta. A antibioticoterapia profilática até o final da gestação (quimioprofilaxia) é indicada apenas em casos de infecção urinária de repetição, o que ocorre quando a gestante apresenta dois ou mais episódios de bacteriúria assintomática ou cistite, ou um episódio de pielonefrite durante a gravidez. Não é a conduta inicial para um primeiro achado.\n\nAlternativa E: Correta. A amoxicilina-ácido clavulânico é uma excelente escolha para o tratamento de bacteriúria assintomática na gravidez. É um fármaco seguro para o feto, o antibiograma confirmou que a bactéria é sensível (S) e o tempo de 7 dias é o preconizado para assegurar a esterilização da urina e prevenir recidivas ou progressão para pielonefrite.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "ITU - Infecção do Trato Urinário",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:08.485Z"
+  },
+  {
+    "id": "AJUDA_dbecd2a5-7490-4671-9659-39322dfa46e2",
+    "originalId": "dbecd2a5-7490-4671-9659-39322dfa46e2",
+    "statement": "A cirurgia ginecológica envolve o tratamento cirúrgico das condições benignas do trato genital feminino. A respeito da anatomia dessa região, é verdadeiro o que se diz em",
+    "options": [
+      {
+        "id": "A",
+        "text": "o ureter direito desce pela margem direita da veia cava e cruza a veia ilíaca direita na bifurcação da veia cava.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a artéria uterina, após sua origem no ramo anterior da artéria hipogástrica, corre medialmente ao elevador do ânus e paralela e posterior ao ureter.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "um dos locais mais comuns de lesões iatrogênicas dos ureteres ocorre principalmente no ligamento cardinal ao nível do colo do útero, onde o ureter e as artérias uterinas se cruzam.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "no abdome inferior, o ureter esquerdo passa sobre o músculo psoas medial à aorta. O seu curso é sob o mesentério do cólon descendente, de lateral para medial, cruzando sobre a artéria ilíaca interna e a veia ilíaca comum.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (c) - CORRETA: Esta é uma afirmação clássica da anatomia cirúrgica ginecológica. O ureter percorre o interior do ligamento cardinal (também chamado de ligamento cervical transverso ou de Mackenrodt) e, aproximadamente a 1,5 a 2 cm lateralmente ao colo do útero, ele é cruzado superiormente pela artéria uterina. Este é o ponto de maior risco de lesão ou ligadura acidental do ureter durante uma histerectomia, no momento em que o cirurgião realiza a ligadura dos vasos uterinos. O conceito é frequentemente memorizado pela frase \"a água passa debaixo da ponte\", onde a água representa o ureter e a ponte representa a artéria uterina.\n\nAlternativa (a) - INCORRETA: O ureter direito desce lateralmente à veia cava inferior e não pela sua margem de forma simples. Ele cruza os vasos ilíacos geralmente sobre a artéria ilíaca externa ou na bifurcação da artéria ilíaca comum. A afirmação de que ele cruza na bifurcação da veia cava (que na verdade é a confluência das veias ilíacas para formar a cava em L5) está anatomicamente imprecisa para o contexto cirúrgico.\n\nAlternativa (b) - INCORRETA: A artéria uterina realmente se origina do ramo anterior da artéria hipogástrica (ilíaca interna). Entretanto, o erro reside na relação espacial com o ureter: a artéria uterina corre superior e anteriormente ao ureter, e não posterior a ele.\n\nAlternativa (d) - INCORRETA: O ureter esquerdo situa-se lateralmente à aorta abdominal, e não medialmente. Ele cruza a artéria ilíaca comum pouco antes da sua bifurcação. No abdome inferior, ele passa por trás do mesentério do cólon sigmoide (no recesso intersigmoide). A descrição do curso de lateral para medial cruzando a ilíaca interna e a veia ilíaca comum não corresponde à anatomia padrão.\n\nConclusão: A alternativa (c) é a única que descreve corretamente uma relação anatômica fundamental e um ponto crítico de segurança em cirurgia pélvica.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Anatomia e Embriologia do Trato Genital Feminino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:08.485Z"
+  },
+  {
+    "id": "AJUDA_dbf5fc90-5408-423f-8911-9da8b3374098",
+    "originalId": "dbf5fc90-5408-423f-8911-9da8b3374098",
+    "statement": "Homem, 28 anos de idade, apresenta lesões de pele há 4 dias, após 10 dias do início do uso de carbamazepina. Exame físico: lesões em alvo atípico na pele, vesículas e bolhas sobre base eritematosa difusa, com áreas de descolamento da pele (total cerca de 10% de pele descolada), erosões na mucosa oral e na glande e eritema conjuntival. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pênfigo vulgar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Stevens-Johnson.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Eritema polimorfo minor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Necrólise epidérmica tóxica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um paciente jovem com uma reação cutânea grave iniciada 10 dias após a introdução de carbamazepina, um fármaco classicamente associado a reações de hipersensibilidade tardia (tipo IV). Os achados principais são: lesões em alvo atípico, acometimento de múltiplas mucosas (oral, genital e conjuntival) e descolamento epidérmico de cerca de 10% da superfície corporal. Esse conjunto de sinais e sintomas é característico do espectro da Síndrome de Stevens-Johnson (SSJ) e da Necrólise Epidérmica Tóxica (NET).\n\nANÁLISE DAS ALTERNATIVAS\n\na) Pênfigo vulgar: Incorreta. O pênfigo vulgar é uma doença autoimune causada por anticorpos contra desmogleínas, resultando em bolhas flácidas e erosões. Embora ocorra acometimento mucoso importante, o início costuma ser mais insidioso (semanas a meses) e não apresenta relação temporal tão estreita com o uso de um fármaco específico nem lesões em alvo. Além disso, o quadro descrito é uma emergência dermatológica aguda.\n\nb) Síndrome de Stevens-Johnson (SSJ): Correta. A SSJ é definida clinicamente pelo acometimento de membranas mucosas (pelo menos duas) e descolamento da pele em menos de 10% da superfície corporal total. O uso de carbamazepina nos 10 dias anteriores é o gatilho perfeito para essa condição. As lesões em alvo atípico (planas, com dois anéis de cores diferentes e centro purpúrico ou bolhoso) são marcas registradas que ajudam a diferenciar de outras farmacodermias.\n\nc) Eritema polimorfo minor: Incorreta. O eritema polimorfo minor é geralmente desencadeado por infecções, principalmente pelo vírus Herpes Simplex, e não por medicamentos. Caracteriza-se por lesões em alvo típicas (três zonas concêntricas bem definidas) e envolve pouco ou nenhum acometimento mucoso, sem descolamento epidérmico sistêmico significativo.\n\nd) Necrólise epidérmica tóxica (NET): Incorreta. A NET faz parte do mesmo espectro fisiopatológico da SSJ, porém a diferença reside na extensão do descolamento cutâneo. A NET é diagnosticada quando o descolamento da epiderme ultrapassa 30% da superfície corporal. Como o enunciado especifica que o descolamento é de cerca de 10%, o diagnóstico correto permanece como Síndrome de Stevens-Johnson (casos entre 10% e 30% são classificados como sobreposição SSJ/NET).\n\nRESUMO PARA MEMORIZAÇÃO\n\nA classificação baseia-se na porcentagem de superfície corporal descolada:\n- Síndrome de Stevens-Johnson: menos de 10%.\n- Sobreposição SSJ/NET: entre 10% e 30%.\n- Necrólise Epidérmica Tóxica: mais de 30%.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Farmacodermias",
+      "Dermatoses Vesicobolhosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:08.485Z"
+  },
+  {
+    "id": "AJUDA_dbfab403-9c06-4214-9318-574720ef1761",
+    "originalId": "dbfab403-9c06-4214-9318-574720ef1761",
+    "statement": "Situação-Problema: Mulher, 46 anos de idade, G3P3 (três partos vaginais), procura ambulatório por sangramento uterino anormal há 12 meses. Tinha ciclos menstruais regulares anteriormente, mas vem com periodos menstruais mais frequentes este ano, com fluxo intenso nos últimos 6 ciclos (coágulos e troca de absorvente a cada 1 – 2 horas nos piores dias). Relata fadiga progressiva, palpitações e dois episódios de lipotimia nas últimas 2 semanas. Nega uso de ACO. Antecedentes: HAS controlada (losartana), IMC 32 Kg/m². Exame físico: pálida (++/4), PA 130/85 mmHg, FC 88 bpm; tireoide sem alterações. Abdome flácido, indolor, Exame ginecológico: colo sem lesões, útero discretamente aumentado à palpação bimanual, sem dor anexial. Laboratório: Hb 9,8 g/dL, Ht 30%, VCM 74 fL, ferritina 8 ng/mL, TSH 2,1 mUI/L, beta-hCG negativo. USG transvaginal (fase proliferativa tardia): endométrio difusamente espessado (14 mm); miométrio heterogêneo discreto; anexos sem alterações. Paciente refere desejo de manter útero e evitar internações.\n\nCom base no caso apresentado e no conhecimento sobre fatores de risco para hiperplasia/carcinoma endometrial, identifique o principal fator de risco:",
+    "options": [
+      {
+        "id": "A",
+        "text": "História familiar de câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de losartana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Obesidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Menarca tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve uma mulher de 46 anos na perimenopausa, apresentando sangramento uterino anormal (SUA), anemia ferropriva sintomática e espessamento endometrial ao ultrassom (14 mm). Nesse contexto, a principal preocupação clínica é o risco de hiperplasia endometrial e adenocarcinoma de endométrio decorrentes da exposição estrogênica sem oposição de progesterona.\n\nAlternativa a: Incorreta. Embora o câncer de mama compartilhe alguns fatores de risco hormonais com o câncer de endométrio e existam síndromes genéticas raras que cursam com ambos os tumores (como a síndrome de Cowden), a história familiar isolada de câncer de mama não constitui o principal fator de risco identificado nesta paciente.\n\nAlternativa b: Incorreta. A losartana é um bloqueador dos receptores de angiotensina II (BRA) utilizado no manejo da hipertensão arterial sistêmica, sem qualquer correlação biológica ou epidemiológica com o aumento do risco de hiperplasia ou neoplasia endometrial.\n\nAlternativa c: Correta. A paciente apresenta obesidade grau I (IMC de 32 kg/m2). O tecido adiposo em excesso aumenta a atividade da enzima aromatase, que converte androgênios circulantes (como a androstenediona) em estrogênios (estrona). Essa hiperestrogenemia periférica constante e sem a oposição da progesterona (comum nos ciclos anovulatórios da transição menopausal) estimula a proliferação celular contínua do endométrio, sendo o principal fator de risco modificável para hiperplasia e carcinoma endometrial.\n\nAlternativa d: Incorreta. A menarca tardia diminui o tempo total de exposição do endométrio aos ciclos hormonais ao longo da vida, atuando como um fator de proteção. O fator de risco estabelecido é a menarca precoce (antes dos 12 anos).",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:08.485Z"
+  }
+]

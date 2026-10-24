@@ -1,0 +1,521 @@
+[
+  {
+    "id": "AJUDA_344fa5e8-d258-44c3-9d8d-6e8bb42f8bbc",
+    "originalId": "344fa5e8-d258-44c3-9d8d-6e8bb42f8bbc",
+    "statement": "Gestante de 32 anos, secundigesta, veio para o pré-natal com a imagem ultrassonográfica abaixo, sugerindo gestação dicoriônica e diamniótica (DiDi). \nAssinale a alternativa CORRETA com relação ao sinal abaixo que se encontra no laudo ultrassonográfico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sinal do Gama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sinal do ‘T”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sinal do Lâmbda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Diagnóstico do tipo de gestação gemelar (DiDi) é incompatível com a imagem ultrassonográfica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sinal do “V”.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a corionocidade na gestação gemelar, um tema fundamental da obstetrícia diagnóstica, pois define o risco e o manejo do pré-natal. A imagem ultrassonográfica apresentada mostra a zona de inserção das membranas amnióticas na placenta.\n\nAnálise das alternativas:\n\na) Incorreta. Não existe a nomenclatura \"Sinal do Gama\" para a avaliação da corionicidade em ultrassonografia obstétrica.\n\nb) Incorreta. O Sinal do \"T\" é característico das gestações monocoriônicas diamnióticas (MoDi). Nesse caso, a membrana interamniótica é muito fina (composta apenas por dois âmnios) e se insere perpendicularmente na placenta, sem a presença de tecido corial entre elas, formando o desenho da letra \"T\".\n\nc) CORRETA. A imagem mostra uma projeção triangular de tecido placentário que se estende para dentro da base da membrana que separa os dois fetos. Esta imagem é conhecida como Sinal do Lâmbda, Sinal do Delta ou Twin-Peak Sign. Ele é o marcador ultrassonográfico patognomônico de gestações dicoriônicas (DiDi), pois indica que há duas placentas (mesmo que fundidas) e tecido corial entre as membranas. É mais facilmente visualizado entre a 10ª e a 14ª semana de gestação.\n\nd) Incorreta. O sinal visualizado na imagem é justamente o critério padrão-ouro para confirmar que a gestação é dicoriônica e diamniótica. Portanto, a imagem é totalmente compatível com o diagnóstico citado no enunciado.\n\ne) Incorreta. \"Sinal do V\" não é um termo técnico utilizado para definir a corionicidade no primeiro trimestre da gestação gemelar.\n\nResumo didático: \n- Sinal do Lâmbda = Dicoriônica (2 placentas).\n- Sinal do T = Monocoriônica (1 placenta compartilhada).",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/2c30728afba9aaf8009d0d5c6baef22472e65a97751b8cd1b613f507714d2e4a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_344fa5e8-d258-44c3-9d8d-6e8bb42f8bbc_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:08.675Z"
+  },
+  {
+    "id": "AJUDA_3465f266-74d8-46dc-b7f3-63f5056fdb29",
+    "originalId": "3465f266-74d8-46dc-b7f3-63f5056fdb29",
+    "statement": "Um médico epidemiologista investiga a emergência de zoonoses em uma região que sofreu rápida urbanização e desmatamento. A análise busca identificar os fatores que facilitam o \"salto\" de patógenos entre espécies, baseando-se no conceito de Saúde Única.\nIndique os fatores que alteram a dinâmica dos vetores e o contato com reservatórios animais, favorecendo a emergência de zoonoses:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A implementação de programas de saúde pública veterinária e a melhoria da nutrição e higiene global.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A redução da movimentação de pessoas e produtos agropecuários entre continentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O crescimento das populações humanas e animais, a modificação dos ecossistemas e as alterações climáticas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A transição da medicina comparada para a medicina preventiva como foco principal das agências de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A restrição do uso de antimicrobianos na produção animal e o aumento da biodiversidade local.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o conceito de Saúde Única (One Health), que reconhece a interdependência entre a saúde humana, a saúde animal e o meio ambiente. Para compreender a emergência de zoonoses, é necessário identificar os desequilíbrios que ocorrem nessa tríade.\n\nAlternativa a: Incorreta. A implementação de programas de saúde pública veterinária e a melhoria das condições de higiene e nutrição são medidas de prevenção e controle. Elas atuam para reduzir a incidência de doenças e melhorar a resistência das populações, não sendo fatores que favorecem a emergência de novos patógenos.\n\nAlternativa b: Incorreta. A redução da movimentação de pessoas e produtos dificultaria a disseminação de agentes infecciosos. O fator que historicamente favorece a emergência e a rápida propagação de zoonoses é o aumento intenso do fluxo global (globalização), que permite que um patógeno alcance diferentes continentes em poucas horas.\n\nAlternativa c: Correta. Este item elenca os principais motores da emergência de doenças no século XXI. O crescimento das populações humana e animal aumenta a densidade de hospedeiros disponíveis; a modificação de ecossistemas (como o desmatamento citado no enunciado) retira barreiras naturais e força o contato direto entre humanos e reservatórios silvestres; e as alterações climáticas modificam o habitat de vetores (como mosquitos e carrapatos), permitindo que eles colonizem novas áreas e alterem sua dinâmica de transmissão.\n\nAlternativa d: Incorreta. A mudança de foco nas agências de saúde é uma evolução do pensamento médico e de políticas públicas. Embora ajude no manejo de crises, essa transição conceitual não é a causa biológica ou ambiental que altera a dinâmica dos vetores ou o contato com reservatórios animais.\n\nAlternativa e: Incorreta. A restrição do uso de antimicrobianos é uma medida para conter a resistência bacteriana, um ponto positivo para a saúde global. Já o aumento da biodiversidade é considerado um fator protetor contra a emergência de zoonoses, fenômeno conhecido como efeito de diluição, onde a presença de muitas espécies silvestres pode diminuir a taxa de transmissão de um patógeno para o ser humano.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:08.675Z"
+  },
+  {
+    "id": "AJUDA_3469e23f-d57c-44a9-98fc-836f980125d9",
+    "originalId": "3469e23f-d57c-44a9-98fc-836f980125d9",
+    "statement": "Homem de 61 anos queixa-se de dor torácica à esquerda em aperto ao subir morros e durante situações de estresse emocional, associada a dispneia. Relata melhora em até 5 minutos da interrupção do esforço físico. É obeso, tabagista e portador de asma brônquica. Ao exame físico, apresenta sibilos expiratórios difusamente à ausculta respiratória. Apresenta o seguinte traçado eletrocardiográfico: \n\nAssinale a alternativa que apresenta um achado auscultatório que pode ser encontrado ao exame físico deste paciente por causa da anormalidade observada no ECG:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desdobramento constante e variável de B2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Desdobramento paradoxal de B2",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hiperfonese de B1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipofonese de B2",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige a análise conjunta do quadro clínico, do eletrocardiograma (ECG) e da semiologia cardiovascular.\n\nAnálise do ECG:\nO traçado eletrocardiográfico revela um ritmo sinusal com QRS alargado (duração superior a 120 ms). Observa-se a ausência de ondas Q nas derivações laterais (DI, aVL, V5 e V6), associada a ondas R largas e entalhadas nessas mesmas derivações (padrão em torre). Em V1, o complexo QRS é predominantemente negativo (padrão QS ou rS). Esses achados são patognomônicos de Bloqueio de Ramo Esquerdo (BRE).\n\nRelação entre o BRE e a ausculta cardíaca:\nA segunda bulha cardíaca (B2) é composta pelo fechamento das valvas aórtica (A2) e pulmonar (P2). Em condições normais, o componente aórtico precede o pulmonar. No Bloqueio de Ramo Esquerdo, ocorre um atraso na ativação elétrica do ventrículo esquerdo, o que retarda a sua contração mecânica e, consequentemente, o fechamento da valva aórtica.\n\nCom esse atraso, a valva aórtica (A2) passa a fechar depois da valva pulmonar (P2). Durante a inspiração, o atraso fisiológico de P2 faz com que este componente se aproxime de A2, podendo torná-los audíveis como um som único. Durante a expiração, P2 ocorre mais cedo, distanciando-se do componente A2 que está atrasado, o que torna o desdobramento audível. Esse fenômeno, no qual o desdobramento da B2 aparece na expiração e desaparece na inspiração, é chamado de desdobramento paradoxal.\n\nAnálise das alternativas:\n\na) Incorreta. O desdobramento constante (fixo) de B2 é o achado clássico da comunicação interatrial (CIA), não estando relacionado ao atraso na condução do ramo esquerdo.\n\nb) Correta. Como explicado, o atraso na ejeção do ventrículo esquerdo causado pelo BRE inverte a ordem de fechamento das valvas (P2 ocorre antes de A2), caracterizando o desdobramento paradoxal da segunda bulha.\n\nc) Incorreta. A hiperfonese de B1 (primeira bulha) está associada a condições como estenose mitral, estados hiperdinâmicos (febre, exercício) ou intervalo PR curto. O BRE não promove hiperfonese de B1; ao contrário, pode até gerar hipofonese de B1 pelo atraso na sístole ventricular.\n\nd) Incorreta. A hipofonese de B2 ocorre em situações de baixa mobilidade das valvas semilunares, como na estenose aórtica calcificada grave, ou em estados de baixo débito/hipotensão severa. O achado principal do BRE é a alteração no tempo de fechamento (desdobramento), e não necessariamente a redução da intensidade do som.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Doença Arterial Coronariana Estável (DAC Estável)",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/cb6e52d02a2ac315a7a9eb1983b04f511476c25c94f6ef48d09ae09b2209ce21.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3469e23f-d57c-44a9-98fc-836f980125d9_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:09.127Z"
+  },
+  {
+    "id": "AJUDA_346a7176-ed7a-4e6b-808b-e28326d8bf17",
+    "originalId": "346a7176-ed7a-4e6b-808b-e28326d8bf17",
+    "statement": "Um paciente de 65 anos com diagnóstico prévio de insuficiência cardíaca (IC) é admitido ao hospital com sintomas de piora progressiva de dispneia, edema periférico e ascite. Ele apresenta aumento da pressão venosa jugular e sinais de congestão hepática. Os exames laboratoriais revelam um aumento significativo nos níveis de creatinina sérica, sugerindo disfunção renal. Considerando que a síndrome cardiorrenal pode estar contribuindo para o quadro clínico, qual dos seguintes mecanismos descritos abaixo está diretamente associado à piora da função renal neste paciente com IC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da perfusão arterial renal, levando à ativação neuro-hormonal e à retenção de água e sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução da pressão intra-abdominal, aliviando a congestão venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elevação da congestão venosa sistêmica com aumento da pressão retrógrada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Redução da ativação simpática sistêmica resultando em melhora da função hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um paciente com insuficiência cardíaca (IC) descompensada, apresentando sinais clássicos de congestão sistêmica (edema, ascite, turgência jugular e hepatomegalia) e piora da função renal, caracterizando a síndrome cardiorrenal.\n\nAnálise das alternativas:\n\na) Incorreta. Na insuficiência cardíaca, ocorre geralmente uma redução da perfusão arterial renal devido ao baixo débito cardíaco ou à vasoconstrição periférica compensatória. O aumento da perfusão não seria o mecanismo de lesão; ao contrário, a hipoperfusão arterial é um dos componentes clássicos (mecanismo de forward failure), mas a alternativa descreve erroneamente um \"aumento\" da perfusão.\n\nb) Incorreta. O paciente apresenta ascite, o que, na verdade, aumenta a pressão intra-abdominal. O aumento da pressão intra-abdominal pode comprimir as veias renais e o parênquima renal, contribuindo para a disfunção. A redução dessa pressão aliviaria a função renal, não a pioraria.\n\nc) Correta. Atualmente, reconhece-se que a congestão venosa sistêmica é um dos principais determinantes da piora da função renal na IC (mecanismo de backward failure). O aumento da pressão venosa central é transmitido retrogradamente para as veias renais. Como os rins estão contidos em uma cápsula fibrosa rígida, o aumento da pressão venosa eleva a pressão intersticial renal, reduzindo o gradiente de pressão transrenal (pressão arterial média menos pressão venosa renal) e, consequentemente, diminuindo a taxa de filtração glomerular.\n\nd) Incorreta. Na insuficiência cardíaca, há um aumento (e não redução) da ativação do sistema nervoso simpático e do sistema renina-angiotensina-aldosterona. Essa ativação neuro-hormonal exacerbada contribui para a vasoconstrição renal e retenção de sódio e água, piorando o quadro de congestão e a função renal a longo prazo.\n\nEm resumo, a alternativa (c) está correta, pois identifica a congestão venosa como um fator fisiopatológico central na disfunção renal associada à insuficiência cardíaca congestiva.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:09.127Z"
+  },
+  {
+    "id": "AJUDA_346ff19d-be21-4efb-92be-04464d1a460d",
+    "originalId": "346ff19d-be21-4efb-92be-04464d1a460d",
+    "statement": "Um trabalhador de uma indústria de baterias apresenta sintomas de intoxicação por chumbo. A primeira ação que deve ser tomada pela equipe de saúde é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratar o trabalhador e não realizar nenhuma notificação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar o trabalhador para um especialista sem realizar a notificação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar a notificação do caso no Sistema de Informações de Agravos Notificáveis (SINAN).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apenas informar o empregador sobre a situação para que este tome as medidas necessárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A intoxicação por chumbo, também conhecida como saturnismo, é uma das doenças ocupacionais mais clássicas e um grave problema de saúde pública. No Brasil, as doenças e agravos relacionados ao trabalho, bem como as intoxicações exógenas por metais pesados, são de notificação compulsória. A questão aborda a conduta administrativa e epidemiológica imediata que a equipe de saúde deve adotar.\n\nAlternativa a: Incorreta. O tratamento clínico do paciente é essencial, mas a afirmação de que não se deve realizar a notificação está errada. A notificação é um dever legal do profissional de saúde e é indispensável para que o sistema de vigilância possa atuar sobre a fonte de exposição, prevenindo que outros trabalhadores adoeçam.\n\nAlternativa b: Incorreta. O encaminhamento para um especialista pode ser necessário conforme a complexidade do quadro clínico, porém essa ação não substitui a necessidade de notificação. A notificação no SINAN deve ser feita por qualquer profissional de saúde ou responsável pelo serviço que suspeite ou confirme o agravo.\n\nAlternativa c: Correta. Esta é a conduta prioritária. A notificação no Sistema de Informação de Agravos de Notificação (SINAN) é o passo fundamental para a vigilância epidemiológica. Ela permite o registro oficial do evento, o monitoramento dos casos e o desencadeamento de ações de inspeção e intervenção no ambiente de trabalho (Vigilância em Saúde do Trabalhador) para eliminar ou controlar o risco.\n\nAlternativa d: Incorreta. Embora a empresa precise ser informada (geralmente via emissão da Comunicação de Acidente de Trabalho - CAT), informar apenas o empregador é insuficiente e não cumpre os protocolos de saúde pública. A responsabilidade primária do profissional de saúde perante o sistema de saúde do país é a notificação oficial às autoridades sanitárias. Além disso, a notificação ao SINAN garante que o Estado tome conhecimento da situação de risco na indústria de baterias citada.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Sistemas de Informação em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:09.127Z"
+  },
+  {
+    "id": "AJUDA_3470678a-3826-41d4-9d6e-d1fe85ac5aa9",
+    "originalId": "3470678a-3826-41d4-9d6e-d1fe85ac5aa9",
+    "statement": "A Lei nº 8.080/1990 estabelece que a iniciativa privada poderá participar do Sistema Único de Saúde (SUS), em caráter complementar. Isso significa que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a gestão dos serviços de saúde do SUS pode ser transferida para empresas privadas, com autonomia parcial sobre a organização e cobrança aos usuários pelos serviços prestados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hospitais, clínicas e profissionais privados podem ser acionados pelo SUS quando as capacidades e os recursos públicos se mostrarem insuficientes para garantir a assistência à saúde da população.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o setor privado pode oferecer serviços de saúde à população, cobrando diretamente do usuário, desde que autorizado pelo Ministério da Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a participação da iniciativa privada deve ocorrer complementarmente ao SUS, tendo em vista a sua maior eficiência e agilidade em comparação à rede pública.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a iniciativa privada tem a obrigação legal de integrar o SUS em todas as esferas de atenção, desde a atenção básica até a alta complexidade, sempre que demandada pelas autoridades públicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Lei nº 8.080/1990, em consonância com o artigo 199 da Constituição Federal, regulamenta a participação complementar da iniciativa privada no Sistema Único de Saúde (SUS) nos seus artigos 24 a 26. A lógica da complementaridade estabelece que o Estado deve primeiro utilizar sua própria estrutura e, caso esta não seja suficiente para suprir a demanda assistencial, poderá contratar ou firmar convênio com entidades privadas, preferencialmente filantrópicas e sem fins lucrativos.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O atendimento prestado no âmbito do SUS é 100% gratuito para o usuário, sendo expressamente proibida qualquer cobrança adicional ou direta ao paciente. Além disso, as instituições privadas contratadas devem se submeter às normas técnicas, operacionais e diretrizes do SUS, sem autonomia para alterar as regras do sistema público.\n\nAlternativa b: Correta. O artigo 24 da Lei nº 8.080/1990 determina textualmente que a participação complementar da iniciativa privada ocorrerá quando as disponibilidades do próprio SUS forem insuficientes para garantir a cobertura assistencial à população de determinada área.\n\nAlternativa c: Incorreta. Quando um serviço privado atua em caráter complementar ao SUS, a remuneração é feita exclusivamente pelo poder público (tabela SUS e contratos), sendo vedada a cobrança de qualquer valor ao usuário. O setor privado pode atuar livremente no mercado de saúde suplementar, mas essa atuação não se confunde com a participação complementar no SUS.\n\nAlternativa d: Incorreta. A justificativa legal para a contratação de serviços privados é a insuficiência de leitos, equipamentos ou serviços na rede pública, e não um critério de superioridade de agilidade ou eficiência. A legislação não faz juízo de valor sobre o desempenho administrativo das redes.\n\nAlternativa e: Incorreta. A iniciativa privada não tem obrigação legal de integrar o SUS. A adesão é facultativa e voluntária, formalizada por meio de contratos de direito público ou convênios precedidos por chamamento público ou licitação.\n\nGabarito: Letra b.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:09.127Z"
+  },
+  {
+    "id": "AJUDA_347158d8-e476-46f4-a501-9ef85a643174",
+    "originalId": "347158d8-e476-46f4-a501-9ef85a643174",
+    "statement": "Um homem de 72 anos, hipertenso, diabético e tabagista, é internado na enfermaria de clínica médica para investigação de perda ponderal e fraqueza de membros inferiores. Ao exame neurológico, apresenta dificuldade de se levantar do leito, com força grau 3 em grupamentos musculares proximais de membros inferiores, hiporreflexia e ptose palpebral. É realizada eletroneuromiografia que demonstra amplitude reduzida do potencial de ação muscular de predomínio proximal nos quatro membros, com aumento da amplitude após estímulos repetitivos. Considerando o diagnóstico mais provável, a neoplasia mais associada ao quadro é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "carcinoma tímico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "carcinoma de células renais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "adenocarcinoma de pâncreas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "carcinoma pulmonar de pequenas células",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito aponta para a Síndrome Miastênica de Lambert-Eaton (SMLE). Trata-se de uma doença da junção neuromuscular de etiologia pré-sináptica, causada por anticorpos contra os canais de cálcio voltagem-dependentes. Os principais achados que fundamentam esse diagnóstico são a fraqueza muscular proximal, a hiporreflexia (reflexos diminuídos) e a presença de ptose palpebral. O divisor de águas nesta questão é o achado da eletroneuromiografia: o aumento da amplitude do potencial de ação muscular após estímulos repetitivos (incremento) é a marca registrada da SMLE, diferenciando-a da Miastenia Gravis, que apresenta decremento.\n\nA Síndrome de Lambert-Eaton é classicamente uma síndrome paraneoplásica. Em cerca de 50 a 60% dos casos, ela está associada a uma neoplasia oculta, sendo a relação mais forte com tumores neuroendócrinos do pulmão.\n\nAnálise das alternativas:\n\na) Incorreta. O carcinoma tímico e, mais comumente, o timoma estão associados à Miastenia Gravis (doença pós-sináptica), e não à Síndrome de Lambert-Eaton. Na Miastenia Gravis, os reflexos costumam estar preservados e a eletroneuromiografia mostra exaustão (decremento) da resposta muscular.\n\nb) Incorreta. O carcinoma de células renais pode cursar com diversas síndromes paraneoplásicas, como hipercalcemia e policitemia (produção de eritropoetina), mas não possui associação clínica significativa com a Síndrome de Lambert-Eaton.\n\nc) Incorreta. O adenocarcinoma de pâncreas costuma se manifestar como síndrome paraneoplásica através da tromboflebite migratória (Síndrome de Trousseau) ou paniculite, não havendo relação típica com distúrbios da junção neuromuscular.\n\nd) Correta. O carcinoma pulmonar de pequenas células (Small Cell Lung Cancer — SCLC) é a neoplasia mais frequentemente associada à Síndrome de Lambert-Eaton. O perfil do paciente (idoso, tabagista, com perda de peso) reforça essa hipótese. As células desse tumor expressam canais de cálcio em sua superfície, o que desencadeia a produção de autoanticorpos que acabam atacando os canais de cálcio nos terminais nervosos pré-sinápticos do paciente.\n\nGabarito: Letra (d).",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:09.127Z"
+  },
+  {
+    "id": "AJUDA_347270cf-7c7a-451b-8558-0b5b65095474",
+    "originalId": "347270cf-7c7a-451b-8558-0b5b65095474",
+    "statement": "Pode-se afirmar que a alteração observada na avaliação radiológica do esqueleto, no lactente, que apresenta maior especificidade para fratura causada intencionalmente, corroborando a suspeita clínica de abuso, é a fratura:",
+    "options": [
+      {
+        "id": "A",
+        "text": "posteromedial de costelas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "de clavícula",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "craniana linear",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diafisária de ossos longos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A identificação de sinais radiológicos de maus-tratos infantis, também conhecidos como Trauma Não Acidental (TNA), é fundamental na prática pediátrica e frequentemente cobrada em exames. Algumas fraturas possuem baixa especificidade, pois podem ocorrer em acidentes domésticos comuns, enquanto outras são altamente sugestivas de abuso devido ao mecanismo de força específico necessário para produzi-las.\n\nAlternativa (a): Correta. As fraturas de costelas, especialmente as localizadas na região posterior e medial (próximas à coluna vertebral), possuem altíssima especificidade para abuso em lactentes. O mecanismo causal geralmente é a compressão vigorosa do tórax pelas mãos do agressor durante o ato de sacudir ou apertar a criança. Nessa manobra, as costelas são forçadas contra os processos transversos das vértebras, que servem como fulcro, causando a quebra no colo da costela. Essas lesões são extremamente raras em traumas acidentais ou manobras de reanimação cardiopulmonar.\n\nAlternativa (b): Incorreta. A fratura de clavícula é uma das lesões ósseas mais frequentes na infância e no período neonatal. Ela pode ocorrer rotineiramente em traumas de parto (trauma obstétrico) ou em quedas acidentais sobre o ombro. Devido à sua alta incidência em situações cotidianas e acidentais, sua especificidade para o diagnóstico de abuso infantil é considerada baixa.\n\nAlternativa (c): Incorreta. Embora o trauma cranioencefálico seja a principal causa de morte por abuso físico, a fratura craniana do tipo linear simples é comum em acidentes domésticos, como quedas de pequenas alturas (sofás ou berços). Para que uma fratura de crânio seja considerada de alta especificidade para abuso, ela geralmente precisa ser múltipla, complexa, deprimida ou cruzar suturas cranianas.\n\nAlternativa (d): Incorreta. Fraturas diafisárias (no corpo do osso) em ossos longos, como o fêmur ou úmero, podem ser causadas por acidentes ou por abuso. Em lactentes que ainda não deambulam, qualquer fratura de osso longo deve gerar suspeita clínica, mas esta não possui a mesma especificidade patognomônica das fraturas de costela posterior ou das lesões metafisárias clássicas (conhecidas como fraturas em \"canto\" ou em \"alça de balde\").\n\nResumo de especificidade: Para fins de prova, guarde que as fraturas de alta especificidade para maus-tratos são: fraturas posteriores de costelas, lesões metafisárias clássicas (CML), fraturas de escápula, de esterno e de processos espinhosos das vértebras.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Maus Tratos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:09.127Z"
+  },
+  {
+    "id": "AJUDA_347359f9-c1fe-4bd3-9d1b-135afcd5c56f",
+    "originalId": "347359f9-c1fe-4bd3-9d1b-135afcd5c56f",
+    "statement": "Uma paciente de 38 anos teve diagnóstico de câncer de mama há 18 meses, com realização de quimioterapia neoadjuvante e mastectomia à direita. Não menstrua há 12 meses. Há 6 meses queixa-se de calores e suores todas as noites, com prejuízo importante de sua qualidade de vida. Recentemente notou piora da lubrificação vaginal.\nAnalisando o caso acima, o diagnóstico e a conduta apropriada são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "menopausa precoce; início de terapia hormonal com estrogênio e progesterona via oral e uso de lubrificantes vaginais;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "menopausa precoce; início de escitalopram e hidratantes vaginais;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "menopausa precoce; início de estriol vaginal e laser vaginal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "cessação temporária da menstruação; início de desvenlafaxina e lubrificantes vaginais;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "transição menopausal; início de estriol transdérmico e fisioterapia pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta uma paciente de 38 anos com falência ovariana induzida por quimioterapia para câncer de mama (amenorreia há 12 meses em idade inferior a 40 anos), caracterizando o quadro de menopausa precoce. O desafio principal reside no tratamento dos sintomas climatéricos (fogachos e ressecamento vaginal) em uma sobrevivente de câncer de mama.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o diagnóstico de menopausa precoce esteja correto, a terapia hormonal (estrogênio e progesterona) é terminantemente contraindicada em pacientes com histórico de câncer de mama, devido ao risco de estímulo à recidiva tumoral por receptores hormonais.\n\nb) Correta. O diagnóstico é de menopausa precoce (amenorreia > 12 meses antes dos 40 anos). Como a terapia hormonal é contraindicada, o tratamento dos sintomas vasomotores (calores) deve ser não hormonal. Os inibidores seletivos da recaptação de serotonina (como o escitalopram) ou de serotonina e noradrenalina são opções eficazes e seguras. Para a queixa de lubrificação (atrofia urogenital), o uso de hidratantes vaginais (não hormonais) é a conduta de primeira linha recomendada.\n\nc) Incorreta. O uso de estriol vaginal (estrogênio tópico) é controverso em pacientes com câncer de mama e só deve ser considerado após falha total de tratamentos não hormonais e em conjunto com a oncologia. O laser vaginal é uma opção terapêutica, mas não é a conduta inicial padrão comparada aos hidratantes.\n\nd) Incorreta. A ausência de menstruação por 12 meses consecutivos aos 38 anos define menopausa precoce (ou insuficiência ovariana prematura), e não apenas uma cessação temporária. Embora a desvenlafaxina seja uma opção para fogachos, o termo diagnóstico está tecnicamente inadequado.\n\ne) Incorreta. A paciente já está em amenorreia há um ano, o que ultrapassa a fase de transição menopausal (perimenopausa). Além disso, o estriol transdérmico possui absorção sistêmica e é contraindicado pelo histórico de câncer de mama. A fisioterapia pélvica, embora útil para certas disfunções, não é o tratamento primário para a perda de lubrificação por atrofia hormonal.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Mama",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:09.127Z"
+  },
+  {
+    "id": "AJUDA_34787ee1-fe1e-445d-8093-87cef50b050e",
+    "originalId": "34787ee1-fe1e-445d-8093-87cef50b050e",
+    "statement": "A utilidade do índice de Bíshop é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fornecer uma predição de sucesso da indução do parto normal;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Dar uma previsão do peso fetal através de sinais clínicos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Avaliar o grau de asfixia neonatal em recém-nascidos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Calcular as chances de o feto ter uma aneuploidia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Verificar o grau de sofrimento fetal agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O índice de Bishop é uma ferramenta clínica fundamental na obstetrícia, utilizada para avaliar as condições do colo uterino e a posição da apresentação fetal antes do início do trabalho de parto. Sua principal finalidade é determinar se o colo está maduro ou favorável, o que permite prever a probabilidade de sucesso de uma indução do parto.\n\nAlternativa (a): Correta. O índice de Bishop pontua cinco parâmetros específicos: dilatação cervical, esvaecimento (apagamento), consistência do colo, posição do colo (anterior, médio ou posterior) e a altura da apresentação (estática fetal baseada nos planos de De Lee). Uma pontuação elevada (geralmente igual ou superior a 8) indica um colo favorável, com alta chance de o parto evoluir para a via vaginal após a indução. Pontuações baixas (geralmente menores que 6) sugerem um colo desfavorável, indicando a necessidade de métodos de amadurecimento cervical antes do uso de ocitocina.\n\nAlternativa (b): Incorreta. A previsão do peso fetal é realizada clinicamente por meio da medida da altura uterina e das manobras de Leopold (como a Regra de Johnson), ou de forma mais precisa através da ultrassonografia obstétrica.\n\nAlternativa (c): Incorreta. A avaliação da vitalidade e a detecção de asfixia no recém-nascido são realizadas após o nascimento por meio do Índice de Apgar e, se necessário, pela gasometria do sangue do cordão umbilical.\n\nAlternativa (d): Incorreta. O cálculo de risco para aneuploidias (alterações cromossômicas) é feito durante o rastreio pré-natal através da medida da translucência nucal, marcadores bioquímicos maternos e testes genéticos não invasivos (NIPT).\n\nAlternativa (e): Incorreta. O sofrimento fetal agudo é avaliado clinicamente pela ausculta dos batimentos cardíacos fetais ou por exames complementares como a cardiotocografia, que monitora a frequência cardíaca fetal em relação às contrações uterinas.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Indução do Parto e Pós-Datismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:09.127Z"
+  }
+]

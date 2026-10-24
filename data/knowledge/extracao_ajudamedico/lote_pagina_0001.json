@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_0a28726e-4365-4562-943f-dc93998f1aa8",
+    "originalId": "0a28726e-4365-4562-943f-dc93998f1aa8",
+    "statement": "Homem de 42 anos, portador de hipertensão arterial e insuficiência renal crônica estadio I, está internado por piora da função renal significativa e em diálise por CDL. Paciente evolui com febre persistente e lombalgia há 5 dias. Nega sintomas urinários, nega cirurgias prévias. \nAo exame: PA 118x70 mmHg, FC 96 bpm, FR 18 irpm, temperatura 38,5 °C. Sem sopros audíveis. Coluna lombar dolorosa à palpação, sem rigidez meníngea.\nIniciado tratamento empírico com Cefepime. Em 24 horas, houve resultado positivo de duas Hemoculturas cocos GRAM positivos, catalase positivo e coagulase positivo, sensível à oxacilina. Após 48 horas de tratamento, o paciente mantém febre de 38 °C e elevação de proteína C reativa. \nQual o próximo passo MAIS adequado na investigação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar ressonância de coluna lombar e manter cateter de diálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar ecocardiograma transtorácico e manter cateter diálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar ecocardiograma transesofágico e retirar cateter diálise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar ecocardiograma, apenas se surgir sopro cardíaco novo e retirar cateter diálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um paciente com bacteremia por Staphylococcus aureus (cocos gram-positivos, catalase-positivos e coagulase-positivos), sensível à oxacilina (MSSA). A principal suspeita de foco infeccioso é o cateter de diálise (CDL), e a queixa de lombalgia levanta a suspeita de uma complicação metastática, como a osteomielite vertebral ou discite.\n\nA bacteremia por S. aureus é uma condição grave e nunca deve ser considerada contaminação. O manejo adequado baseia-se em três pilares: controle do foco (retirada do cateter), escolha do antibiótico correto (substituir o cefepime por oxacilina ou cefazolina, que são superiores para MSSA) e rastreio de complicações, principalmente a endocardite infecciosa.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora a ressonância da coluna lombar seja necessária para investigar a lombalgia e confirmar discite ou abscesso, a manutenção do cateter de diálise em vigência de bacteremia por S. aureus é um erro grave. A permanência do corpo estranho impede a esterilização do sangue devido ao biofilme bacteriano.\n\nAlternativa B: Incorreta. O ecocardiograma transtorácico (ETT) possui sensibilidade limitada para detectar vegetações, especialmente em pacientes com bacteremia persistente ou de alto risco. Além disso, manter o cateter de diálise está incorreto.\n\nAlternativa C: Correta. O ecocardiograma transesofágico (ETE) é o exame de escolha para o rastreio de endocardite em casos de bacteremia por S. aureus com fatores de risco ou persistência de sintomas (como febre e PCR elevada após 48-72 h de tratamento). A retirada do cateter é mandatória para o controle do foco infeccioso, conforme as diretrizes internacionais.\n\nAlternativa D: Incorreta. Na bacteremia por S. aureus, o rastreio para endocardite deve ser realizado rotineiramente, independentemente da presença de sopro novo ao exame físico, pois a ausência de sopro não exclui a doença e o risco de embolização e destruição valvar é alto.\n\nEm resumo, diante de uma bacteremia persistente por S. aureus, as prioridades são o controle do foco (retirada do dispositivo invasivo) e o rastreio de endocardite através do método mais sensível (ETE), além da investigação de focos secundários (como a coluna lombar) e ajuste da antibioticoterapia.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Endocardite Bacteriana",
+      "Doenças da Coluna Vertebral",
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)"
+    ],
+    "difficulty": 71.85741309755663,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  },
+  {
+    "id": "AJUDA_000bbd86-9c10-4f4e-b91c-fbdcf1d1e4ed",
+    "originalId": "000bbd86-9c10-4f4e-b91c-fbdcf1d1e4ed",
+    "statement": "Paciente de 23 anos, vida sexual com uso de preservativo, ciclos menstruais regulares. Realiza exame ginecológico com achado de tumoração anexial direita, móvel e indolor. Exame ultrassonográfico complementar identifica tumoração ovariana de 6 cm compatível com diagnóstico de teratoma.\nA ooforoplastia direita prevenirá qual das seguintes explicações?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Degeneração maligna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Torção.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O teratoma cístico maduro, também conhecido como cisto dermoide, é o tumor de células germinativas mais comum em mulheres em idade reprodutiva. Trata-se de uma neoplasia geralmente benigna, composta por tecidos derivados dos três folhetos embrionários (ectoderme, mesoderme e endoderme).\n\nA conduta cirúrgica (ooforoplastia ou cistectomia ovariana) em um teratoma de 6 cm é indicada principalmente devido ao risco de complicações agudas. Abaixo, a análise detalhada das alternativas:\n\nAlternativa (a) Incorreta. Embora a transformação maligna possa ocorrer em teratomas maduros, ela é extremamente rara, incidindo em 1% a 2% dos casos, e costuma afetar mulheres no período pós-menopausa (geralmente evoluindo para carcinoma de células escamosas). Em uma paciente de 23 anos, esse não é o principal risco a ser prevenido.\n\nAlternativa (b) Incorreta. Diferente de cistos hemorrágicos ou de corpo lúteo, os teratomas não têm uma tendência característica ao sangramento espontâneo ou à rotura com hemoperitônio. A rotura de um teratoma, quando ocorre, causa mais comumente uma peritonite química devido ao conteúdo sebáceo, e não um quadro hemorrágico.\n\nAlternativa (c) Incorreta. A presença do teratoma por si só não costuma causar infertilidade, a menos que seja bilateral e volumoso, destruindo grande parte do parênquima ovariano. Na verdade, a própria cirurgia (ooforoplastia) deve ser realizada com técnica minuciosa para preservar a reserva ovariana da paciente jovem.\n\nAlternativa (d) Correta. A torção anexial é a complicação mais frequente do teratoma ovariano. Isso ocorre porque esses tumores possuem densidades variadas em seu interior (gordura, cabelo, dentes), o que altera o centro de gravidade do ovário. Além disso, o peso da massa de 6 cm e a mobilidade do tumor (descrita no exame físico como \"móvel\") favorecem a rotação do pedículo vascular ovariano. A torção é uma emergência cirúrgica que pode levar à isquemia e perda total do órgão, justificando a indicação de ooforoplastia eletiva para prevenir tal desfecho.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  },
+  {
+    "id": "AJUDA_01a59cb6-94d4-4b1b-9ed6-28c1bc9a8816",
+    "originalId": "01a59cb6-94d4-4b1b-9ed6-28c1bc9a8816",
+    "statement": "Paciente de 38 anos, GIIPII, procura atendimento com queixa de sangramento uterino anormal e cólicas intensas. Ao exame de imagem transvaginal, observa-se um nódulo único, medindo 2,5cm, localizado totalmente dentro da cavidade endometrial, sem invasão do miométrio. O laudo, com base na classificação do European Society of Hysteroscopy, descreve este mioma como classe:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve uma paciente com mioma submucoso, identificado por estar localizado na cavidade endometrial. Para a classificação desses miomas, a classificação da European Society of Hysteroscopy (ESH), também conhecida como classificação de Wamsteker, divide as lesões em três tipos principais, baseando-se no grau de projeção para a cavidade e no quanto o nódulo invade o miométrio. Esta classificação é fundamental para o planejamento cirúrgico por histeroscopia.\n\nAnálise das alternativas:\n\nAlternativa a) 0: CORRETA. Segundo a classificação da ESH, o Grau 0 (ou Classe 0) define o mioma que é totalmente intracavitário e pediculado, sem qualquer componente intramural. Como o enunciado afirma explicitamente que o nódulo está totalmente dentro da cavidade endometrial e sem invasão do miométrio, ele se encaixa perfeitamente nesta definição.\n\nAlternativa b) 1: INCORRETA. O Grau 1 define miomas submucosos que possuem a maior parte do seu volume (mais de 50%) dentro da cavidade uterina, mas que já apresentam um componente intramural (extensão para a parede do útero menor que 50%).\n\nAlternativa c) 2: INCORRETA. O Grau 2 define miomas submucosos sésseis, em que a maior parte do volume do nódulo (50% ou mais) está localizada dentro do miométrio (componente intramural), restando uma porção menor projetada para a cavidade endometrial.\n\nAlternativa d) 3: INCORRETA. Na classificação da European Society of Hysteroscopy para miomas submucosos, as categorias vão apenas de 0 a 2. O grau 3 é uma categoria da classificação da FIGO (Federação Internacional de Ginecologia e Obstetrícia), que se refere a miomas totalmente intramurais, mas que tocam o endométrio (sem distorcer a cavidade). Como a questão solicita a classificação da ESH, o grau 3 não existe para essa escala específica.\n\nResumo da classificação ESH (Wamsteker):\n- Tipo 0: Totalmente intracavitário, sem invasão miometrial.\n- Tipo 1: Extensão intramural menor que 50%.\n- Tipo 2: Extensão intramural maior ou igual a 50%.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  },
+  {
+    "id": "AJUDA_0a97922f-8016-4108-bb68-10fb5039387d",
+    "originalId": "0a97922f-8016-4108-bb68-10fb5039387d",
+    "statement": "Um homem de 34 anos, previamente saudável, é admitido no pronto-socorro após sofrer politrauma em colisão carro-moto. Chega hemodinamicamente estável após reposição de 1 L de cristaloide pré-hospitalar. Exames iniciais mostram fratura exposta de tíbia, laceração extensa em coxa e múltiplas escoriações, sem necessidade imediata de laparotomia. Está lúcido, orientado, com PA 118x76 mmHg, FC 102 bpm e temperatura de 36,2 °C. Nas primeiras 12 horas de internação, apresenta glicemia persistentemente elevada (entre 182-210 mg/dL), aumento discreto de lactato (2,1 mmol/L -> 2,6 mmol/L), oligúria leve, irritabilidade e queixa de frio, apesar de manta térmica. A equipe assistencial questiona se esse conjunto de alterações representa complicação metabólica ou se corresponde ao padrão fisiológico esperado após o trauma.\nConsiderando os conhecimentos contemporâneos sobre resposta metabólica ao trauma e diretrizes cirúrgicas atuais (incluindo princípios do ATLS 11 e das recomendações de controle metabólico em trauma), qual é a interpretação MAIS adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "As alterações representam falência inicial da resposta ao estresse, sugerindo necessidade de investigação para insuficiência adrenal aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O quadro é compatível com a Fase Ebb da resposta metabólica ao trauma, caracterizada por hipometabolismo, vasoconstrição periférica, hipoperfusão e hiperglicemia por resistência periférica à insulina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A hipertermia ausente e a glicemia <220 mg/dL afastam resposta metabólica ao trauma; o mais provável é infecção precoce por germes hospitalares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A elevação do lactato indica choque descompensado, exigindo reposição agressiva de cristaloides, mesmo sem sinais clínicos de hipovolemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se já da Fase Flow, caracterizada por hipermetabolismo e aumento do consumo energético, sendo esperado aumento de temperatura, diurese e VO2.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a: Incorreta. A falência da resposta ao estresse, como na insuficiência adrenal aguda, manifesta-se tipicamente com hipotensão refratária, colapso circulatório e distúrbios eletrolíticos (hiponatremia e hipercalemia). O paciente em questão está estável e apresentando sinais clássicos de ativação do eixo neuroendócrino, o que indica que a resposta ao estresse está ativa e não em falência.\n\nAlternativa b: Correta. O quadro clínico e laboratorial descreve perfeitamente a Fase Ebb (ou fase de refluxo) da resposta metabólica ao trauma. Esta fase ocorre nas primeiras horas após a lesão (geralmente até 24 horas) e funciona como um mecanismo de defesa para preservação de volume. Caracteriza-se por hipometabolismo, queda da temperatura corporal (queixa de frio), vasoconstrição periférica, diminuição do débito cardíaco e hiperglicemia. A hiperglicemia de estresse é causada pela liberação de catecolaminas, cortisol e glucagon, que promovem a glicogenólise e a resistência periférica à insulina para priorizar a glicose para tecidos nobres.\n\nAlternativa c: Incorreta. A ausência de febre e os níveis de glicemia relatados são achados típicos da fase inicial da resposta metabólica. A febre é mais comum na fase subsequente (Flow) ou em processos infecciosos, que geralmente levam mais de 12 horas para se manifestarem clinicamente após um trauma fechado ou fratura exposta inicialmente limpa.\n\nAlternativa d: Incorreta. Embora o lactato elevado seja um marcador de hipoperfusão, um aumento discreto (de 2,1 para 2,6 mmol/L) dentro das primeiras 12 horas de um grande trauma é esperado na Fase Ebb devido aos ajustes microcirculatórios. O ATLS 11 e as diretrizes atuais de cirurgia de controle de danos recomendam cautela na reposição de cristaloides (\"ressuscitação balanceada\") para evitar a tríade letal (coagulopatia, acidose e hipotermia), não justificando uma reposição agressiva em um paciente hemodinamicamente estável.\n\nAlternativa e: Incorreta. A Fase Flow (ou fase de fluxo) sucede à Fase Ebb, iniciando-se geralmente após 24 a 48 horas da injúria. Ela é marcada pelo hipermetabolismo, aumento do consumo de oxigênio (VO2), aumento da temperatura corporal, catabolismo proteico intenso e balanço nitrogenado negativo. O paciente do caso ainda apresenta sinais de conservação e redução metabólica, características da fase inicial (Ebb).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Perioperatório",
+      "Trauma"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  },
+  {
+    "id": "AJUDA_0aee8c42-3e44-4798-9c89-442d98f33564",
+    "originalId": "0aee8c42-3e44-4798-9c89-442d98f33564",
+    "statement": "Paciente de 72 anos, hipertenso, diabético tipo II (DM2), obesidade grau I e doença cardiovascular aterosclerótica estabelecida. Está em acompanhamento ambulatorial de suas comorbidades. Atualmente sem queixas. Em uso de: losartana 50 mg 12/12 horas, metformina 500 mg 12/12 horas, dapagliflozina 10 mg 1x por dia, AAS 100 mg 1x por dia, rosuvastatina 20 mg 1x por dia. Exame físico sem alterações. Assinale a alternativa correta sobre o uso de agonista do receptor do GLP-1 nesse indivíduo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O uso dos agonistas do receptor do GLP-1 nesse paciente pode estar associado a uma discreta redução da pressão arterial sistólica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O principal benefício dos agonistas do receptor do GLP-1 nesse indivíduo com alto risco cardiovascular é o aumento do HDL colesterol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O uso dos agonistas do receptor do GLP-1 frequentemente gera hipoglicemia quando combinado com as medicações em uso do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Devido ao efeito nefroprotetor dos agonistas do receptor do GLP-1, eles estão indicados para pacientes com taxa de filtração glomerular <15 mL/min/1,73 m².",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO:\n\nO paciente apresenta Diabetes Mellitus tipo 2 (DM2) e Doença Cardiovascular Aterosclerótica (DCVA) estabelecida (previamente infartado ou com doença arterial comprovada), além de obesidade e hipertensão. Segundo as diretrizes atuais, os agonistas do receptor de GLP-1 (GLP-1 RA) são indicados prioritariamente para este perfil de paciente devido à comprovada redução de eventos cardiovasculares maiores.\n\nALTERNATIVA A (CORRETA): Os agonistas do receptor de GLP-1 promovem uma redução modesta, mas consistente, na pressão arterial sistólica (estimada entre 2 a 5 mmHg). Esse efeito ocorre de forma multifatorial, sendo atribuído tanto à perda de peso quanto a um efeito natriurético direto e à melhora da função endotelial. Em um paciente hipertenso e idoso, esse benefício adicional é bem-vindo.\n\nALTERNATIVA B (INCORRETA): O principal benefício dessa classe de drogas em pacientes com DCVA estabelecida não é a alteração de frações lipídicas como o HDL. O grande ganho clínico é a redução de Desfechos Cardiovasculares Maiores (MACE), que incluem a redução de morte cardiovascular, infarto agudo do miocárdio não fatal e acidente vascular cerebral (AVC) não fatal.\n\nALTERNATIVA C (INCORRETA): Os GLP-1 RA possuem um mecanismo de ação glicose-dependente, o que significa que eles estimulam a secreção de insulina apenas quando a glicemia está elevada e suprimem a secreção de glucagon de forma proporcional. Por isso, apresentam risco muito baixo de hipoglicemia. Como o paciente está usando metformina e dapagliflozina (que também não costumam causar hipoglicemia), a adição de um GLP-1 RA é considerada segura.\n\nALTERNATIVA D (INCORRETA): Embora os GLP-1 RA demonstrem efeitos nefroprotetores, principalmente na redução do desenvolvimento e progressão da albuminúria, eles não são indicados para pacientes em estágio terminal de doença renal (TFG < 15 mL/min/1,73 m²). A maioria das medicações desta classe possui bulas que restringem o uso com TFG abaixo de 15 ou 30 mL/min devido à escassez de dados de segurança e farmacocinética nessa população específica.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Obesidade e Síndrome Metabólica",
+      "Saúde do Idoso",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 78.96831597007923,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  },
+  {
+    "id": "AJUDA_27009eed-36e3-4a18-8f2e-15a537cfbc90",
+    "originalId": "27009eed-36e3-4a18-8f2e-15a537cfbc90",
+    "statement": "Paciente, sexo masculino, 45 anos de idade, vítima de trauma em colisão de moto com automóvel, deu entrada na urgência com instabilidade hemodinâmica, foi submetido à laparotomia exploradora de emergência, sendo identificado trauma esplênico grave e realizado esplenectomia total. O paciente apresentava também fratura exposta dos membros inferiores, sendo submetido à fixação externa das duas pernas pela ortopedia, para posterior fixação definitiva das fraturas em segundo tempo. O paciente evoluiu com melhora hemodinâmica e sem queixas no pós-operatório. Diante deste caso clínico:\n\nQuanto aos eventos tromboembólicos perioperatórios, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os eventos trombóticos independem do grau de instabilidade hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O sistema venoso iliofemoral é a origem dos êmbolos clinicamente relevantes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A trombose relacionada ao acesso venoso central é mais comum na veia subclávia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A profilaxia está indicada com enoxaparina 1mg/kg de 12/12h para este paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) Incorreta: A instabilidade hemodinâmica não é independente dos eventos trombóticos; pelo contrário, ela é um fator de risco importante. O estado de choque, a hipoperfusão tecidual e a necessidade de manobras de ressuscitação contribuem para a estase venosa e para um estado pró-inflamatório e pró-coagulante, que são componentes fundamentais da Tríade de Virchow para o desenvolvimento de trombose.\n\nAlternativa (b) Correta: A maioria dos êmbolos pulmonares com significado clínico (aqueles que causam repercussão hemodinâmica ou respiratória importante) tem sua origem em trombos formados no sistema venoso profundo proximal, que compreende as veias ilíacas e femorais. Embora a trombose possa ocorrer em veias distais (como as da panturrilha), estas raramente geram êmbolos grandes o suficiente para causar oclusões arteriais pulmonares graves.\n\nAlternativa (c) Incorreta: No que se refere ao acesso venoso central, o risco de trombose é maior na veia femoral, seguida pela jugular interna. A veia subclávia é considerada o sítio com menor taxa de complicações trombóticas e infecciosas, embora apresente maior risco de complicações mecânicas durante a punção, como o pneumotórax.\n\nAlternativa (d) Incorreta: A prescrição de enoxaparina na dose de 1 mg/kg a cada 12 horas configura anticoagulação plena (dose terapêutica), indicada para tratar um evento trombótico já diagnosticado. Para a profilaxia de eventos tromboembólicos em pacientes de trauma, as doses recomendadas são menores, usualmente 40 mg uma vez ao dia ou 30 mg de 12 em 12 horas, dependendo do protocolo institucional e do perfil de risco do paciente.\n\nGabarito: Letra (b).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Perioperatório",
+      "Trauma",
+      "Tromboembolismo Pulmonar (TEP)",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": 76.11541171508038,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  },
+  {
+    "id": "AJUDA_4d4a829b-1e66-4adf-b32f-2150b75d9ca1",
+    "originalId": "4d4a829b-1e66-4adf-b32f-2150b75d9ca1",
+    "statement": "Um homem melanodérmico, com 61 anos de idade, sem manifestações clínicas ou uso de medicamentos, procurou o médico para avaliação de controle. Ao exame físico, na palpação cervical, percebeu-se um pequeno nódulo na parte superior do lobo direito da tireoide. Solicitou-se punção biópsia aspirativa por agulha fina orientada por ultrassonografia. A citologia revelou carcinoma folicular no nódulo que media 21 mm, sem outras alterações morfológicas da tireoide, cuja função era normal. Qual é a conduta CORRETA nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento com iodo radioativo apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lobectomia direita e iodoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lobectomia direita e istmectomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tireoidectomia total e iodoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO ponto fundamental para resolver essa questão é identificar uma imprecisão técnica comum em provas: a punção aspirativa por agulha fina (PAAF) não consegue confirmar o diagnóstico de carcinoma folicular. A citologia da PAAF apenas sugere uma neoplasia folicular (Classificação de Bethesda IV). Isso ocorre porque a distinção entre um adenoma folicular (benigno) e um carcinoma folicular (maligno) depende da identificação de invasão da cápsula do nódulo ou de vasos sanguíneos, algo que só é possível por meio do exame histopatológico da peça cirúrgica completa.\n\nDiante de um nódulo de 21 mm (2,1 cm) com citologia sugestiva de neoplasia folicular, a conduta inicial deve ser diagnóstica e terapêutica.\n\nAlternativa (a) Incorreta: O iodo radioativo (iodoterapia) não é um tratamento primário para nódulos de tireoide. Ele é uma terapia adjuvante utilizada apenas após a retirada total da glândula (tireoidectomia total) em casos específicos de câncer de tireoide de maior risco. Se a glândula ainda estiver presente, o tecido normal captará o iodo, impedindo a ação sobre possíveis células malignas.\n\nAlternativa (b) Incorreta: Não se realiza iodoterapia após uma cirurgia parcial (lobectomia). Para que o iodo radioativo seja eficaz, é necessário que não haja tecido tireoidiano remanescente competindo pela captação do iodo. Portanto, a iodoterapia exige tireoidectomia total prévia.\n\nAlternativa (c) Correta: Para nódulos solitários entre 1 cm e 4 cm com suspeita de neoplasia folicular (Bethesda IV) e sem evidências de metástases ou extensão extratireoidiana, a conduta inicial padrão é a lobectomia tireoidiana ipsilateral associada à istmectomia. Essa abordagem é considerada uma cirurgia diagnóstica. Caso o resultado histopatológico posterior confirme um carcinoma com características de alto risco, pode-se realizar a totalização da tireoidectomia em um segundo momento. No entanto, para o tamanho e a descrição do nódulo (21 mm), a lobectomia é o passo inicial correto.\n\nAlternativa (d) Incorreta: A tireoidectomia total imediata poderia ser considerada se o nódulo fosse maior que 4 cm, se houvesse fortes sinais de malignidade ao ultrassom, história familiar positiva para câncer de tireoide ou se o paciente optasse por evitar uma possível segunda cirurgia. Contudo, em uma questão de prova, para um nódulo de 2 cm e suspeita de linhagem folicular, a lobectomia com istmectomia é a conduta mais conservadora e correta para evitar riscos desnecessários (como lesão do nervo laríngeo recorrente e hipoparatireoidismo) antes da confirmação da malignidade por histopatologia.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": 97.2448439821196,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  },
+  {
+    "id": "AJUDA_50e4721f-0618-48c4-8daf-12933aa8838d",
+    "originalId": "50e4721f-0618-48c4-8daf-12933aa8838d",
+    "statement": "A bronquiolite viral aguda é caracterizada por inflamação aguda, edema necrose de células epiteliais das pequenas vias aéreas, promovendo impactação de muco intraluminal. Sobre esta situação assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A infecção pelo vírus sincicial respiratório confere imunidade duradoura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença de febre elevada é um achado comum na fase pulmonar da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É fundamental a realização de imagem radiográfica e de exames laboratoriais para o correto diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As técnicas de fisioterapia respiratória possuem elevada efetividade no manuseio dos pacientes portadores da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A administração de oxigênio por cânula nasal de alto fluxo parece estar associada à menor possibilidade de necessitar de suporte ventilatório invasivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A bronquiolite viral aguda (BVA) é a causa mais comum de hospitalização em lactentes, sendo o Vírus Sincicial Respiratório (VSR) o seu principal agente etiológico. O diagnóstico e o manejo baseiam-se predominantemente em evidências clínicas.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A infecção pelo VSR não confere imunidade permanente ou duradoura. É comum que crianças e adultos apresentem reinfecções ao longo da vida, embora os quadros costumem ser menos graves após a primeira exposição.\n\nAlternativa B: Incorreta. A fase pulmonar da bronquiolite é caracterizada por sibilância, taquipneia e sinais de esforço respiratório. A febre, quando presente, costuma ser baixa ou moderada. A presença de febre elevada e persistente deve alertar o médico para a possibilidade de complicações, como pneumonia bacteriana secundária ou otite média aguda.\n\nAlternativa C: Incorreta. O diagnóstico da bronquiolite viral aguda é essencialmente clínico. As principais diretrizes nacionais e internacionais (como as da Sociedade Brasileira de Pediatria e da Academia Americana de Pediatria) recomendam evitar a realização rotineira de radiografias de tórax e exames laboratoriais (como hemograma e PCR), reservando-os apenas para casos graves ou com dúvida diagnóstica, pois não alteram o desfecho e podem levar ao uso desnecessário de antibióticos.\n\nAlternativa D: Incorreta. A fisioterapia respiratória convencional (vibração, percussão, tapotagem) não demonstrou benefício na redução do tempo de internação ou na melhora do escore clínico em pacientes com bronquiolite. Pelo contrário, pode causar desconforto e agitação no lactente, podendo piorar o quadro clínico. Atualmente, seu uso rotineiro é contraindicado.\n\nAlternativa E: Correta. A cânula nasal de alto fluxo (CNAF) é uma modalidade de suporte respiratório não invasivo que fornece gases aquecidos e umidificados com fluxos superiores ao fluxo inspiratório do paciente. Estudos recentes indicam que o uso da CNAF em casos de bronquiolite com hipoxemia ou desconforto respiratório moderado/grave pode reduzir a necessidade de escalonamento para ventilação mecânica invasiva, sendo uma ferramenta útil no manejo hospitalar.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Ventilação Mecânica",
+      "Bronquiolite"
+    ],
+    "difficulty": 38.463934691167154,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  },
+  {
+    "id": "AJUDA_58b55c44-78ad-46d0-9f3e-84426f6a4294",
+    "originalId": "58b55c44-78ad-46d0-9f3e-84426f6a4294",
+    "statement": "Menino, 15 meses de idade, mantém crescimento abaixo de -2DP (Peso, Estatura e IMC). A família se queixa de baixa aceitação alimentar. Lactente nasceu com 36 semanas de gestação, peso abaixo do Percentil 10 em curvas de crescimento intrauterino, sem intercorrências na evolução neonatal. Mãe fez tratamento para hipotireoidismo na gestação e ultrassom gestacional com 33 semanas identificou oligoidrâmnio. Previsão de estatura final = 167 cm. Exame físico sem alterações. Qual é a conduta mais adequada para a elucidação diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dosagens séricas de hormônio do crescimento, IGF-1 e IGFBP-3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "RX de esqueleto e de mãos e punhos para avaliar a idade óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dosagens séricas de T4, TSH e anticorpos antitireoglobulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exame de urina tipo I, ureia, creatinina e eletrólitos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a investigação inicial de uma criança com déficit de crescimento global. O paciente de 15 meses apresenta peso, estatura e IMC abaixo de -2 desvios-padrão (DP), o que caracteriza não apenas baixa estatura, mas um quadro de déficit pôndero-estatural (*failure to thrive*).\n\nA chave para a questão é observar que o IMC está baixo. Quando tanto o peso quanto a altura são afetados e o IMC é baixo, a causa costuma ser nutricional ou decorrente de doenças sistêmicas (causas orgânicas), e não necessariamente uma deficiência hormonal isolada. Além disso, a queixa de baixa aceitação alimentar reforça a hipótese de uma causa não endócrina inicial.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A dosagem do hormônio do crescimento (GH) e de seus fatores (IGF-1 e IGFBP-3) é indicada na suspeita de deficiência de GH. Nesses casos, geralmente a criança apresenta baixa estatura, mas o peso e o IMC costumam estar preservados ou até elevados (criança com aspecto \"rechonchudo\" e velocidade de crescimento baixa). Não é o primeiro passo para uma criança com baixo IMC e déficit global.\n\nAlternativa (b) Incorreta: O RX de mãos e punhos para avaliar a idade óssea é uma ferramenta importante na avaliação da baixa estatura para entender o potencial de crescimento, mas ele não fornece o diagnóstico etiológico (a causa da doença). Em uma criança de 15 meses com baixo peso e baixa estatura, a prioridade é afastar doenças sistêmicas.\n\nAlternativa (c) Incorreta: O hipotireoidismo é uma causa importante de baixa estatura (com atraso da idade óssea), mas, assim como na deficiência de GH, o IMC costuma estar normal ou aumentado (tendência ao sobrepeso). Embora o histórico materno seja citado, o quadro clínico de baixo IMC direciona a investigação para outras causas antes da tireoide.\n\nAlternativa (d) Correta: Diante de um lactente com déficit pôndero-estatural (baixo peso, baixa estatura e baixo IMC), a conduta inicial deve focar na triagem de doenças sistêmicas \"silenciosas\". O exame de urina e a avaliação da função renal e de eletrólitos são fundamentais para descartar, por exemplo, a acidose tubular renal (ATR) e a doença renal crônica, que são causas comuns de interrupção do ganho de peso e crescimento em crianças pequenas sem outros achados óbvios no exame físico. Esta investigação faz parte do \"screening\" básico para causas orgânicas de déficit de crescimento.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Desnutrição na Infância",
+      "Diagnóstico Nutricional",
+      "Crescimento"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  },
+  {
+    "id": "AJUDA_77a1cad0-3230-4fbc-b9a5-90b5d788502c",
+    "originalId": "77a1cad0-3230-4fbc-b9a5-90b5d788502c",
+    "statement": "Um lactente de 10 meses é levado ao pronto-socorro com história de febre alta de início súbito, irritabilidade intensa e recusa alimentar há 12 horas. A mãe relata que ele apresentou vômitos e episódio de convulsão tônico-clônica há 3 horas.\nAo exame físico, a criança apresenta:\n*Letargia, fontanela tensa, pescoço rígido\n*Manchas purpúricas disseminadas pelo tronco e membros\n*Pulso rápido, pressão arterial normal\nDiante desse quadro, qual é a conduta mais urgente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar hemograma, PCR e iniciar antibiótico intravenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antibioticoterapia intravenosa empiricamente, solicitar exames (laboratoriais e de imagem) e estabilizar a criança.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Indicar punção lombar imediatamente antes de qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aguardar resultado da cultura sanguínea para iniciar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO lactente apresenta uma tríade clássica que sugere Meningite Bacteriana Aguda com provável Meningococcemia (causada pela bactéria Neisseria meningitidis). Os pontos-chave para o diagnóstico e gravidade são:\n1. Sinais de infecção do Sistema Nervoso Central: Febre, vômitos, convulsão, letargia, fontanela tensa (equivalente ao aumento da pressão intracraniana) e rigidez de nuca.\n2. Sinais de Sepse/Meningococcemia: Manchas purpúricas (petéquias ou equimoses) disseminadas e taquicardia (pulso rápido), o que indica um quadro de choque séptico em estágio inicial ou compensado.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA\n\nEm situações de emergência infecciosa, a prioridade é a estabilização do paciente e a rapidez no início da terapia. A alternativa (b) é a mais completa por três motivos:\n1. Estabilização: Antes de qualquer procedimento, deve-se garantir a via aérea, oxigenação e suporte circulatório (reposição volêmica, se necessário), visto que a criança apresenta sinais de choque e alteração de consciência.\n2. Antibioticoterapia empírica: Na suspeita de meningite meningocócica, o antibiótico deve ser administrado o mais rápido possível (idealmente na primeira hora). O atraso aumenta significativamente a mortalidade.\n3. Exames: A investigação laboratorial e, se necessário, de imagem (para avaliar complicações ou contraindicações antes de procedimentos invasivos) deve ser iniciada simultaneamente, mas não deve atrasar o tratamento.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa (a): Embora mencione o início do antibiótico, ela foca apenas em exames laboratoriais básicos (hemograma e PCR) e falha ao não mencionar a estabilização clínica da criança, que é um paciente crítico com sinais de choque e hipertensão intracraniana.\n\nAlternativa (c): A punção lombar é fundamental para o diagnóstico, mas é contraindicada como conduta imediata neste caso específico. O paciente possui sinais de hipertensão intracraniana (fontanela tensa) e instabilidade hemodinâmica. Realizar a punção nessas condições sem estabilização prévia ou avaliação de imagem pode causar herniação cerebral. Além disso, jamais se deve atrasar o antibiótico para realizar a punção em um paciente grave.\n\nAlternativa (d): Esta conduta é considerada erro médico grave. Culturas demoram de 24 a 72 horas para apresentar resultados. Na meningite bacteriana, o paciente pode evoluir para óbito em poucas horas se não for tratado imediatamente com antibióticos de amplo espectro de forma empírica.\n\nRESUMO DA CONDUTA\nDiante de febre + púrpura + sinais meníngeos, o foco é: Estabilizar (ABC) + Antibiótico imediato + Investigação. Por isso, a letra (b) é a conduta mais adequada.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Sepse",
+      "Emergências Pediátricas",
+      "Meningites"
+    ],
+    "difficulty": 43.145744999120055,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:05.699Z"
+  }
+]

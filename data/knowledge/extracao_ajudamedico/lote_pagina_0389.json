@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_6beaec8d-752f-44d7-928e-16397063896c",
+    "originalId": "6beaec8d-752f-44d7-928e-16397063896c",
+    "statement": "Dentre as cardiopatias listadas abaixo, assinale aquela com MAIOR probabilidade de evoluir com insuficiência cardiaca congestiva na primeira semana de vida:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tetralogia de Fallot.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coarctação de aorta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Defeito do septo átrio ventricular total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dupla via de saída de ventrículo direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o tempo de manifestação clínica das cardiopatias congênitas no período neonatal, exigindo o conhecimento sobre a transição circulatória e o papel do canal arterial.\n\nAlternativa A - Incorreta. A Tetralogia de Fallot é uma cardiopatia cianótica clássica, caracterizada por uma obstrução ao fluxo de saída do ventrículo direito (estenose pulmonar). Como há uma redução do fluxo sanguíneo para os pulmões, o quadro clínico predominante é a cianose (bebê azul) e não a congestão. Mesmo em formas graves, ela não costuma evoluir com insuficiência cardíaca congestiva (ICC) na primeira semana.\n\nAlternativa B - Correta. A Coarctação da Aorta, especialmente em sua forma crítica neonatal, é uma lesão dependente do canal arterial. Durante a vida fetal e nos primeiros dias após o nascimento, o canal arterial pérvio permite que o sangue chegue à aorta descendente, contornando a obstrução. No entanto, na primeira semana de vida, ocorre o fechamento fisiológico do canal arterial. Quando isso acontece, o ventrículo esquerdo subitamente enfrenta uma pós-carga extremamente elevada contra a zona de estreitamento da aorta. Isso resulta em falência ventricular esquerda aguda, baixo débito sistêmico e congestão pulmonar grave, sendo a principal causa de ICC e choque cardiogênico nesse período.\n\nAlternativa C - Incorreta. O Defeito do Septo Atrioventricular (DSAV) total é uma cardiopatia de hiperfluxo pulmonar (shunt esquerda-direita). No entanto, o volume de sangue desviado para os pulmões depende da queda da resistência vascular pulmonar (RVP). Na primeira semana de vida, a RVP do recém-nascido ainda é fisiologicamente elevada, o que limita o shunt e protege os pulmões de uma sobrecarga imediata. Os sintomas de ICC nessas cardiopatias de shunt costumam aparecer apenas entre a 4ª e a 8ª semanas de vida, quando a RVP atinge níveis mais baixos.\n\nAlternativa D - Incorreta. A Dupla Via de Saída do Ventrículo Direito (DVSVD) tem apresentação variável. Se houver estenose pulmonar associada, o quadro será de cianose, como na Tetralogia de Fallot. Se não houver estenose, ela se comporta como uma grande comunicação interventricular (CIV). Assim como no DSAV, a ICC dependerá da queda da resistência vascular pulmonar, o que raramente provoca sintomas graves já na primeira semana de vida, quando comparada à obstrução aguda da coarctação da aorta.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  },
+  {
+    "id": "AJUDA_6bec4b92-4169-4293-b7b5-a8b3f234c1d2",
+    "originalId": "6bec4b92-4169-4293-b7b5-a8b3f234c1d2",
+    "statement": "Durante o atendimento em uma Unidade de Saúde da Família, o médico residente recebe o Sr. Joaquim, 58 anos de idade, com história de tosse há 3 semanas. O residente lembra de um caso recente de tuberculose na comunidade e, diante da semelhança dos sintomas, conclui rapidamente que o paciente tem a mesma doença, solicitando baciloscopia sem investigar outras possibilidades. No dia seguinte, o preceptor revisa o caso e identifica sinais de rinossinusite e refluxo gastroesofágico, orientando uma abordagem mais ampla. Considerando o processo de raciocínio clínico na APS e os vieses cognitivos que podem interferir nesse processo, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de viés cognitivo demonstra falta de competência técnica e deve ser evitada por meio de decisões intuitivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O erro diagnóstico decorreu da ausência de uso do método hipotético-dedutivo, que não se aplica à prática da APS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O raciocínio clínico na APS deve basear-se apenas em protocolos e fluxogramas para reduzir a influência da subjetividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O residente apresentou um viés de disponibilidade, ao basear sua hipótese diagnóstica principal em uma experiência recente e marcante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O viés apresentado é do tipo ancoragem, que ocorre quando o profissional demora a formular uma hipótese inicial, recorrendo a um caso recente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O foco desta questão é o raciocínio clínico e os vieses cognitivos, temas fundamentais para a prática médica, especialmente na Atenção Primária à Saúde (APS), onde a prevalência de doenças e o manejo da incerteza são constantes.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Vieses cognitivos são atalhos mentais (heurísticas) inerentes ao processo de pensamento humano, tanto de iniciantes quanto de especialistas. Eles não representam necessariamente falta de competência técnica, mas sim uma falha no processamento da informação. Decisões intuitivas (Sistema 1) são justamente as mais propensas aos vieses; para evitá-los, recomenda-se o uso do pensamento analítico e crítico (Sistema 2).\n\nAlternativa (b) Incorreta: O método hipotético-dedutivo é perfeitamente aplicável e essencial na APS. Ele consiste em gerar hipóteses diagnósticas a partir dos dados iniciais e testá-las por meio da anamnese, exame físico e exames complementares. O erro do residente não foi a \"não aplicação\" do método em si, mas o fechamento prematuro do diagnóstico sem testar as hipóteses geradas.\n\nAlternativa (c) Incorreta: Protocolos e fluxogramas são ferramentas de apoio à decisão, mas o raciocínio clínico não deve se limitar a eles. Na APS, o médico lida com queixas indiferenciadas e contextos psicossociais complexos que exigem flexibilidade, julgamento crítico e uma abordagem centrada na pessoa, o que vai além de seguir caminhos predeterminados.\n\nAlternativa (d) Correta: O viés de disponibilidade é um erro sistemático em que o profissional julga a probabilidade de uma doença com base na facilidade com que casos semelhantes vêm à memória. Como o residente teve um caso recente e marcante de tuberculose, essa hipótese tornou-se \"disponível\" e dominante em sua mente, levando-o a ignorar outras causas frequentes de tosse crônica, como gotejamento pós-nasal (rinossinusite) e refluxo gastroesofágico.\n\nAlternativa (e) Incorreta: A alternativa apresenta uma definição equivocada. O viés de ancoragem ocorre quando o médico se fixa em uma característica ou informação inicial do paciente e não consegue mudar sua opinião mesmo quando novas evidências surgem. No caso descrito, o problema principal foi a influência da memória de um caso externo recente (disponibilidade) e não a fixação em um dado específico do Sr. Joaquim.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  },
+  {
+    "id": "AJUDA_6bee3606-2671-4fbd-80ed-55af3de83c26",
+    "originalId": "6bee3606-2671-4fbd-80ed-55af3de83c26",
+    "statement": "Paciente de 60 anos, com diagnóstico de diabetes mellitus tipo 2, é atendido em uma unidade Básica de Saúde com queixa de disfunção erétil. Qual das alternativas abaixo apresenta a melhor forma de registrar o atendimento em um SOAP para registro da consulta no prontuário. Em qual alternativa o registro está feito de maneira incorreta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S- Pressão arterial de 150/100mmHg. Hemoglobina glicada de 10%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O- Traz Doppler de membros inferiores realizado há 1 mês com resultado dentro da normalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A- Diabetes não controlada. Disfunção erétil. Medo de não conseguir mais ter relações sexuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "P- Ajusto dose da glicazida. Oriento perda de peso. Avaliar prescrição de tadalafila na próxima consulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a estrutura do registro clínico orientado por problemas por meio do método SOAP (Subjetivo, Objetivo, Avaliação e Plano), amplamente utilizado na Atenção Primária à Saúde. O objetivo é identificar qual alternativa apresenta um registro tecnicamente incorreto em relação à seção indicada.\n\nExplicação detalhada das alternativas:\n\na) Incorreta (Gabarito): Esta alternativa está incorreta porque registra dados mensuráveis no campo \"S\" (Subjetivo). A pressão arterial aferida e os resultados de exames laboratoriais, como a hemoglobina glicada, são dados colhidos pelo examinador ou fornecidos por exames complementares, devendo obrigatoriamente constar no campo \"O\" (Objetivo). O campo Subjetivo deve conter apenas o relato do paciente, seus sentimentos, queixas e história clínica.\n\nb) Correta: O campo \"O\" (Objetivo) é destinado ao exame físico e aos resultados de exames complementares que o paciente apresenta durante a consulta. Portanto, o registro de um Doppler de membros inferiores com resultado normal está adequadamente alocado.\n\nc) Correta: O campo \"A\" (Avaliação) é o momento em que o médico sintetiza o raciocínio clínico. Nele, registram-se os diagnósticos (confirmados ou em investigação) e o status das condições crônicas (como diabetes não controlada). Também é o local para descrever a compreensão do médico sobre o estado emocional ou medos do paciente após a análise do quadro.\n\nd) Correta: O campo \"P\" (Plano) deve conter todas as condutas decididas durante a consulta. Isso inclui ajustes de medicação (gliclazida), orientações de estilo de vida (perda de peso) e o planejamento para consultas futuras (avaliação de tadalafila), estando, portanto, com a estrutura correta.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  },
+  {
+    "id": "AJUDA_6c084a33-d5f4-44a1-8063-715b514d64c1",
+    "originalId": "6c084a33-d5f4-44a1-8063-715b514d64c1",
+    "statement": "A fim de avaliar a associação entre câncer bucal e a presença e gravidade da periodontite, um estudo incluiu 200 participantes, 100 diagnosticados com câncer bucal e 100 sem câncer bucal. Um questionário foi utilizado para obter informações sobre fatores de risco socioeconômicos e de estilo de vida que podem influenciar o desenvolvimento do carcinoma de células escamosas oral e a gravidade da periodontite, determinada de acordo com a Classificação das Doenças e Condições Periodontais e Peri implantares. \n\nO desenho de estudo utilizado nessa pesquisa foi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ensaio clínico randomizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estudo de coorte prospectivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estudo de caso-controle.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "estudo transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para identificar o desenho de um estudo epidemiológico, devemos observar como os participantes foram selecionados e qual o ponto de partida da pesquisa. \n\nNeste caso, o pesquisador selecionou dois grupos baseados na presença ou ausência do desfecho (o câncer bucal): 100 participantes já diagnosticados com a doença (casos) e 100 participantes sem a doença (controles). A partir dessa divisão, buscou-se avaliar a associação com fatores de exposição, como a presença e a gravidade da periodontite.\n\nAnálise das alternativas:\n\na) Incorreta. O ensaio clínico randomizado é um estudo experimental e prospectivo. Nele, o pesquisador realiza uma intervenção (como um novo medicamento ou técnica cirúrgica) e distribui os participantes de forma aleatória (randomização) entre o grupo que recebe a intervenção e o grupo controle. No enunciado, o estudo é apenas observacional, sem intervenção do pesquisador.\n\nb) Incorreta. No estudo de coorte prospectivo, o ponto de partida é a exposição, e não a doença. O pesquisador seleciona indivíduos inicialmente saudáveis, divide-os em expostos e não expostos a determinado fator de risco e os acompanha ao longo do tempo para observar quem desenvolverá a doença no futuro. O estudo descrito fez o oposto: partiu de pessoas que já tinham o diagnóstico de câncer.\n\nc) Correta. O estudo de caso-controle é o desenho ideal para avaliar doenças que já ocorreram. Ele parte do desfecho (doentes vs. não doentes) e analisa retrospectivamente ou no momento presente a presença de fatores de risco. A estrutura descrita de 100 casos (com câncer) e 100 controles (sem câncer) é a definição clássica deste delineamento.\n\nd) Incorreta. O estudo transversal (ou seccional) realiza uma medição única em uma população em um determinado momento, avaliando exposição e doença simultaneamente, como uma fotografia instantânea. Embora colete dados no presente, a característica de selecionar deliberadamente grupos iguais de doentes e não doentes para comparação é o que define o estudo como caso-controle, e não um simples levantamento transversal de uma população geral.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  },
+  {
+    "id": "AJUDA_6c089159-2be7-4a42-bc62-716870ecd380",
+    "originalId": "6c089159-2be7-4a42-bc62-716870ecd380",
+    "statement": "Pré-escolar, sexo masculino, 3 anos e 8 meses de idade, previamente hígido, é levado ao pronto-socorro por episódio convulsivo tônico-clônico generalizado iniciado há poucos minutos. A mãe refere febre baixa notada desde hoje pela manhã, associada à sonolência e à recusa alimentar. Não há história familiar de epilepsia.\nNa chegada, encontra-se em atividade convulsiva contínua, escala de coma de Glasgow: 10; SatO₂: 91% em ar ambiente; FC: 142 bpm; PA: 88/52 mmHg; temperatura: 38,3 °C; glicemia capilar: 88 mg/dL. É levado à sala de emergência, onde é obtido acesso venoso periférico, iniciada administração de oxigênio por máscara não reinalante e colocada monitorização cardíaca.\nQual deve ser a conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar antitérmico endovenoso e aguardar resolução da febre para decidir sobre a necessidade da abordagem da crise convulsiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar benzodiazepínico de ação rápida por via endovenosa, monitorando permeabilidade da via aérea e controle da ventilação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar intubação orotraqueal sem necessidade de pré-medicação e só administrar benzodiazepínico após garantir via aérea avançada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar tomografia de crânio e punção lombar antes de qualquer outra medida, para não ter risco de prejudicar a investigação etiológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve uma criança em vigência de uma crise convulsiva tônico-clônica generalizada contínua, configurando uma emergência pediátrica que deve ser tratada como estado de mal epiléptico. O manejo inicial deve seguir a sequência ABC (vias aéreas, respiração e circulação), que já foi iniciada no enunciado com a oferta de oxigênio e a obtenção de acesso venoso.\n\nAlternativa (a) Incorreta: Embora a febre seja o provável gatilho da crise (sugerindo uma crise convulsiva febril), a conduta prioritária diante de uma criança em atividade convulsiva franca é interromper a crise. O uso do antitérmico é uma medida de suporte importante, mas não deve retardar o uso de anticonvulsivantes. Aguardar a febre baixar para decidir sobre a abordagem da crise é um erro, pois a atividade convulsiva prolongada pode levar a lesões neuronais e complicações sistêmicas.\n\nAlternativa (b) Correta: De acordo com os protocolos de suporte avançado de vida em pediatria (PALS) e consensos de neurologia, a primeira linha de tratamento farmacológico para interromper uma crise convulsiva em curso são os benzodiazepínicos. O Diazepam ou o Midazolam por via intravenosa são as drogas de escolha devido à sua ação rápida. A monitorização da via aérea e da ventilação é obrigatória, pois os benzodiazepínicos podem causar depressão respiratória.\n\nAlternativa (c) Incorreta: A intubação orotraqueal não é o primeiro passo no manejo medicamentoso da convulsão. Ela está indicada apenas se houver falha na manutenção da patência das vias aéreas, oxigenação inadequada mesmo com máscara, ou se a crise evoluir para um estado de mal epiléptico refratário após o uso das medicações iniciais. Além disso, a afirmação de que não haveria necessidade de pré-medicação é tecnicamente inadequada para um paciente em atividade motora.\n\nAlternativa (d) Incorreta: Exames de imagem e a punção lombar (para afastar meningite, dada a presença de febre) são etapas fundamentais da investigação etiológica, mas só devem ser realizados após o paciente estar estabilizado e com a crise controlada. No atendimento de emergência, a prioridade absoluta é a estabilização clínica (ABC) e a interrupção da atividade convulsiva. Realizar esses procedimentos antes de tratar a convulsão coloca a vida do paciente em risco imediato.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Convulsão Febril",
+      "Emergências Pediátricas",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  },
+  {
+    "id": "AJUDA_6c0a31a1-a4f1-421e-bf6c-d6370ab50345",
+    "originalId": "6c0a31a1-a4f1-421e-bf6c-d6370ab50345",
+    "statement": "Para substituir a insulina NPH por um análogo, as opções mais indicadas são",
+    "options": [
+      {
+        "id": "A",
+        "text": "detemir ou asparte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "degludeca ou glulisina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "lispro ou detemir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "asparte ou glargina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "degludeca ou glargina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver essa questão, é fundamental diferenciar as insulinas de ação basal das insulinas de ação prandial (rápida ou ultrarrápida). A insulina NPH é classificada como uma insulina de ação intermediária, exercendo a função de cobertura basal, ou seja, mantém os níveis de glicose controlados entre as refeições e durante o sono. Para substituí-la de forma adequada, devemos utilizar análogos de insulina que também tenham ação prolongada (basais).\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. O detemir é um análogo basal de ação prolongada, porém a asparte é um análogo de ação ultrarrápida. A asparte é indicada para o controle da glicemia pós-prandial (bolus) e não substitui a função basal da NPH.\n\nAlternativa b: Incorreta. A degludeca é um análogo de ação ultraprolongada (basal), mas a glulisina é um análogo de ação ultrarrápida, utilizada exclusivamente para cobrir as refeições.\n\nAlternativa c: Incorreta. A lispro é um análogo de ação ultrarrápida, enquanto o detemir é um análogo basal. A insulina lispro não possui o tempo de ação necessário para suprir a demanda basal do organismo.\n\nAlternativa d: Incorreta. A asparte é uma insulina ultrarrápida (prandial) e a glargina é um análogo basal. Como a asparte tem início de ação imediato e curta duração, ela não pode substituir a NPH.\n\nAlternativa e: Correta. Tanto a degludeca quanto a glargina (nas concentrações U100 ou U300) são análogos de insulina de ação prolongada. Elas apresentam um perfil farmacocinético mais linear e estável do que a NPH, sem picos de ação marcantes, o que reduz significativamente o risco de hipoglicemias, especialmente as noturnas. Por compartilharem a mesma finalidade terapêutica de cobertura basal, são as substitutas naturais da NPH entre os análogos disponíveis.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  },
+  {
+    "id": "AJUDA_6c0a8806-d609-4dc1-b0dd-7918d9f0d5f9",
+    "originalId": "6c0a8806-d609-4dc1-b0dd-7918d9f0d5f9",
+    "statement": "Homem de 30 anos, com história pregressa de asma brônquica quando criança, atualmente não faz uso de medicação e não apresenta episódios de broncoespasmo. Há duas semanas, iniciou treinamento para jogar futebol e, em cada treino, tem apresentado episódio de tosse persistente e dispneia. Considerando um treino iniciado há 20 minutos, verificaram-se tosse persistente e sibilos na ausculta. A melhor conduta, nesse momento, é fazer dois puffs de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ipatropium",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "salbutamol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "beclometasona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "inibidor de leucotrienos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um paciente de 30 anos com história prévia de asma na infância que, ao retomar atividades físicas intensas (futebol), apresenta sintomas clássicos de Broncoespasmo Induzido pelo Exercício (BIE). No momento da avaliação, ele está em pleno treino (há 20 minutos) e apresenta sintomas agudos: tosse persistente e sibilos na ausculta pulmonar. A questão solicita a conduta imediata para o alívio desses sintomas.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nO salbutamol é um agonista beta-2 adrenérgico de curta duração (SABA). É a medicação de escolha para o tratamento de resgate em episódios agudos de broncoespasmo devido ao seu início de ação rápido (poucos minutos) e potente efeito broncodilatador. No contexto do Broncoespasmo Induzido pelo Exercício, o SABA pode ser utilizado tanto para reverter os sintomas agudos (como no caso apresentado) quanto de forma profilática, sendo administrado 10 a 15 minutos antes do início da atividade física.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Ipratrópio: É um antagonista muscarínico de curta ação (SAMA). Embora seja um broncodilatador, seu início de ação é mais lento e seu efeito é menos potente que o dos beta-2 agonistas na asma. É utilizado geralmente como terapia adjuvante em crises asmáticas graves nas emergências ou no tratamento da DPOC, não sendo a primeira escolha para o alívio imediato no broncoespasmo por exercício.\n\nc) Beclometasona: É um corticosteroide inalatório (CI). Sua função é o controle da inflamação crônica das vias aéreas na asma. A beclometasona não possui efeito broncodilatador agudo e, portanto, não serve para o alívio imediato de sintomas como tosse e sibilos que ocorrem durante o esforço. O benefício do corticosteroide ocorre a longo prazo, com o uso contínuo para reduzir a hiperresponsividade brônquica.\n\nd) Inibidor de leucotrienos: Medicamentos como o montelucaste são utilizados por via oral (e não em \"puffs\" ou aerossol) para o controle crônico da asma e prevenção do broncoespasmo induzido pelo exercício. Eles não possuem ação broncodilatadora imediata, sendo ineficazes para a reversão de sintomas agudos durante o treino.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  },
+  {
+    "id": "AJUDA_6c0b1c7e-4546-4f62-8e9d-8e72f322b54c",
+    "originalId": "6c0b1c7e-4546-4f62-8e9d-8e72f322b54c",
+    "statement": "Sobre emergências hipertensivas, está incorreto dizer que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As Urgências Hipertensivas são situações clínicas sintomáticas em que há elevação acentuada da PA (definida arbitrariamente como PAD >= 120 mmHg) sem lesão de órgão-alvo (LOA) aguda e progressiva. As Emergências Hipertensivas são situações clínicas sintomáticas em que há elevação acentuada da PA (definida arbitrariamente com PAD >= 120 mmHg) com LOA aguda e progressiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No acidente vascular encefálico hemorrágico, para pacientes com PAS entre 150 e 220 mmHg e sem contraindicação para o tratamento, a redução aguda da PAS para 140 mmHg é segura e pode ser eficaz para melhorar o desfecho funcional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Já no acidente vascular encefálico isquêmico, para pacientes sem indicação de terapia trombolítica e PA inicial > 220/120 mmHg, não se deve reduzir PA em mais de 15-20%, mantendo-se a PAD em 100-110 mmHg nas primeiras 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na dissecção aguda de aorta, a progressão da dissecção está relacionada ao valor de PA e à velocidade de ejeção ventricular. A PAS alvo (130 mmHg) deve ser alcançada em 60 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nas síndromes coronarianas agudas, a nitroglicerina IV é indicada nas primeiras 48 horas para o tratamento da HA, isquemia persistente e IC, estando, contudo, contraindicada se houver uso recente de inibidores da fosfodiesterase (24 a 48 horas prévias).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão exige conhecimento sobre as definições e os protocolos de tratamento das crises hipertensivas em diferentes cenários clínicos. Vamos analisar cada alternativa:\n\nAlternativa a: Correta. A diferenciação fundamental entre Urgência e Emergência Hipertensiva reside na presença ou ausência de Lesão de Órgão-Alvo (LOA) aguda e progressiva. Nas Urgências, não há lesão aguda imediata, e a pressão pode ser reduzida em até 24-48 horas com medicações orais. Nas Emergências, há risco de morte ou lesão irreversível (como infarto, edema agudo de pulmão ou encefalopatia), exigindo redução imediata com drogas intravenosas. O valor de PAD maior ou igual a 120 mmHg é o marco arbitrário utilizado na prática clínica.\n\nAlternativa b: Correta. No Acidente Vascular Encefálico Hemorrágico (AVEh), as diretrizes atuais recomendam que, para pacientes com PAS entre 150 e 220 mmHg, a redução aguda para 140 mmHg é segura e pode auxiliar na limitação da expansão do hematoma, melhorando o desfecho funcional.\n\nAlternativa c: Correta. No AVE isquêmico, existe uma preocupação com a área de penumbra isquêmica (tecido cerebral ainda viável ao redor da lesão). Níveis pressóricos elevados ajudam a manter a perfusão nessa área. Por isso, em pacientes que não receberão trombolíticos, o tratamento da hipertensão só é indicado se a PA estiver acima de 220/120 mmHg, com redução máxima de 15% a 20% no primeiro dia.\n\nAlternativa d: Incorreta (Gabarito). Esta é a alternativa incorreta porque os alvos na dissecção aguda da aorta são muito mais rigorosos. Para interromper a propagação do rasgo na parede da aorta e o risco de ruptura, deve-se reduzir a PAS para valores entre 100 e 120 mmHg (e não 130 mmHg) e a frequência cardíaca para menos de 60 bpm. Esse controle deve ser alcançado de forma imediata, geralmente em cerca de 20 minutos, e não em 60 minutos.\n\nAlternativa e: Correta. Nas síndromes coronarianas agudas, a nitroglicerina IV é uma excelente escolha por promover vasodilatação coronariana e reduzir a pré-carga, sendo indicada para controle de isquemia persistente, hipertensão e congestão pulmonar. A restrição ao uso concomitante com inibidores da fosfodiesterase-5 (como sildenafil nas últimas 24h ou tadalafil nas últimas 48h) é clássica, devido ao risco de hipotensão severa e refratária.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  },
+  {
+    "id": "AJUDA_6c0fc282-317b-4fec-8e9d-90e89c53babf",
+    "originalId": "6c0fc282-317b-4fec-8e9d-90e89c53babf",
+    "statement": "Qual o principal fator de risco modificável para o desenvolvimento de câncer de pulmão?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exposição a radiações ionizantes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Histórico familiar de câncer de pulmão",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tabagismo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Poluição ambiental",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a epidemiologia do câncer de pulmão, focando na identificação do agente que possui maior impacto causal e que pode ser alvo de intervenção preventiva.\n\nAlternativa (a) Incorreta: A exposição a radiações ionizantes, como o gás radônio (presente em certos solos e edifícios) ou tratamentos de radioterapia prévios na região do tórax, é um fator de risco estabelecido. Contudo, em termos de saúde pública e prevalência, ele não é o principal fator, sendo responsável por uma fração muito menor de casos em comparação ao tabagismo.\n\nAlternativa (b) Incorreta: O histórico familiar sugere uma predisposição genética ou exposição ambiental compartilhada entre parentes. Embora aumente o risco relativo de desenvolver a neoplasia, trata-se de um fator não modificável, uma vez que não é possível alterar a carga genética ou a ascendência do paciente.\n\nAlternativa (c) Correta: O tabagismo é o principal fator de risco modificável e a causa isolada mais importante para o câncer de pulmão. Aproximadamente 85% a 90% dos casos de carcinoma broncogênico estão diretamente relacionados ao consumo de tabaco. O risco é dose-dependente, variando conforme a carga tabágica (número de cigarros por dia e tempo de tabagismo), e a cessação do hábito reduz progressivamente o risco de desenvolvimento da doença.\n\nAlternativa (d) Incorreta: A poluição ambiental (partículas finas e gases industriais) é classificada como carcinogênica e contribui para o aumento da incidência de doenças respiratórias e oncológicas. No entanto, seu impacto epidemiológico no desenvolvimento do câncer de pulmão é significativamente inferior ao impacto causado pelo fumo ativo.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Neoplasias Pulmonares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  },
+  {
+    "id": "AJUDA_6c10c620-6db6-46bd-9513-8f8d6031c951",
+    "originalId": "6c10c620-6db6-46bd-9513-8f8d6031c951",
+    "statement": "Para a realização da raquianestesia, é indispensável o conhecimento prévio da anatomia da coluna vertebral. Limitados pelas meninges, existem três espaços raquidianos: o espaço peridural, o espaço subdural e o espaço subaracnóideo. O espaço onde a anestesia raquidiana é recomendada com segurança encontra em qual localização?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre a dura-máter e a aracnoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Entre a pia-máter e a aracnoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Entre os níveis T10 e L4 no adulto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Entre o ligamento amarelo e a dura-máter.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A raquianestesia, também conhecida como bloqueio subaracnoideo, consiste na deposição de anestésico local no espaço subaracnoideo, onde circula o líquido cefalorraquidiano (líquor). Para compreender a questão, é fundamental revisar a anatomia das meninges e os espaços entre elas, de fora para dentro: ligamento amarelo, espaço epidural, dura-máter, espaço subdural, aracnoide, espaço subaracnoideo e pia-máter.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O espaço situado entre a dura-máter e a aracnoide é o espaço subdural. Este é um espaço virtual e não é o alvo terapêutico da raquianestesia. Injeções acidentais neste local podem resultar em bloqueios extensos e imprevisíveis.\n\nAlternativa (b) Correta. O espaço subaracnoideo está localizado entre a aracnoide e a pia-máter. É neste compartimento que o anestésico deve ser injetado para a realização da raquianestesia, permitindo o contato direto da droga com as raízes nervosas e a medula, banhadas pelo líquor.\n\nAlternativa (c) Incorreta. No adulto, a medula espinhal termina geralmente no nível de L1 ou L2 (cone medular). Realizar uma punção raquidiana no nível T10 (torácico) oferece um risco altíssimo de lesão direta da medula espinhal. Por segurança, a raquianestesia no adulto é recomendada nos espaços intervertebrais abaixo de L2, como L3-L4 ou L4-L5.\n\nAlternativa (d) Incorreta. O espaço situado entre o ligamento amarelo e a dura-máter é o espaço peridural (ou epidural). Este é o local de deposição do anestésico para a realização da anestesia peridural, e não da raquianestesia. Na peridural, não há saída de líquor, ao contrário da raquianestesia, onde a punção da dura-máter e da aracnoide é mandatória.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:03.406Z"
+  }
+]

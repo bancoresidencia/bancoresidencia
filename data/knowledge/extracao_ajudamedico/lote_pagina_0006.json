@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_014c344b-985e-46b7-84f1-f5d1131cb8eb",
+    "originalId": "014c344b-985e-46b7-84f1-f5d1131cb8eb",
+    "statement": "A fisiopatologia que diferencia a Hemofilia A da Hemofilia B é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deficiência do Fator VIII na Hemofilia A e do Fator IX na Hemofilia B.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Deficiência do Fator IX na Hemofilia A e do Fator VIII na Hemofilia B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deficiência do Fator de Von Willebrand na Hemofilia A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Disfunção plaquetária na Hemofilia A e deficiência de fator na B.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nAs hemofilias são distúrbios hemorrágicos hereditários decorrentes da deficiência de proteínas plasmáticas específicas da cascata de coagulação. Ambas possuem herança recessiva ligada ao cromossomo X, o que significa que a doença se manifesta quase exclusivamente em indivíduos do sexo masculino, enquanto as mulheres são tipicamente portadoras assintomáticas.\n\nAlternativa A (CORRETA): A diferença fundamental entre os dois tipos de hemofilia reside exclusivamente em qual fator da via intrínseca da coagulação está ausente ou diminuído. A Hemofilia A, que é o tipo mais comum (cerca de 80% dos casos), é causada pela deficiência do Fator VIII. A Hemofilia B, também conhecida como Doença de Christmas, é causada pela deficiência do Fator IX. Do ponto de vista clínico, as duas são indistinguíveis, apresentando sangramentos em tecidos profundos, como hemartroses (sangramento nas articulações) e hematomas musculares.\n\nAlternativa B (INCORRETA): Esta alternativa inverte os conceitos. O Fator IX está em falta na Hemofilia B, e o Fator VIII está em falta na Hemofilia A. Uma forma simples de memorizar é associar a ordem alfabética e numérica: a Hemofilia A (primeira letra) envolve o Fator VIII, enquanto a Hemofilia B (segunda letra) envolve o Fator IX.\n\nAlternativa C (INCORRETA): A deficiência ou disfunção do Fator de Von Willebrand caracteriza a Doença de Von Willebrand (DVW), que é a coagulopatia hereditária mais prevalente na população geral. Embora o Fator de Von Willebrand atue como uma proteína carregadora para o Fator VIII, protegendo-o da degradação prematura, a DVW é uma entidade clínica e genética distinta das hemofilias.\n\nAlternativa D (INCORRETA): As hemofilias são distúrbios da hemostasia secundária, ou seja, problemas nas proteínas da cascata de coagulação que formam a fibrina. As disfunções plaquetárias (como a Trombastenia de Glanzmann ou a Síndrome de Bernard-Soulier) são distúrbios da hemostasia primária. Enquanto as hemofilias causam sangramentos profundos, as disfunções plaquetárias costumam causar sangramentos mucocutâneos, como petéquias e epistaxe. Ambas as hemofilias (A e B) possuem o mesmo mecanismo fisiopatológico de base: a falta de um fator de coagulação.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.396Z"
+  },
+  {
+    "id": "AJUDA_015795dc-43e6-4168-9478-7862f96b04a8",
+    "originalId": "015795dc-43e6-4168-9478-7862f96b04a8",
+    "statement": "Lactente de 25 dias, sexo masculino, é trazido ao pronto-socorro devido à persistência de icterícia desde alta da maternidade com 48 horas de vida. A mãe relata que as fezes estão mais claras do que as eliminadas na primeira semana de vida e que a urina tem apresentado coloração intensa, amarelada, desde o nascimento. O bebê encontra-se em aleitamento materno exclusivo, mas a mãe apresenta muitas dúvidas e insegurança sobre a amamentação exclusiva. A história gestacional e obstétrica foi sem alterações, com parto vaginal a termo e peso ao nascimento de 3.200 g. Ao exame, o lactente apresenta bom estado geral, peso de 3.650 g, icterícia em pele e escleróticas e fígado palpável a 2 cm do rebordo costal direito, com borda lisa e indolor. Não há esplenomegalia ou outros achados. Exames laboratoriais da emergência revelam bilirrubina total de 8,5 mg/dL (com 7,0 mg/dL de bilirrubina direta) e hemograma sem sinais de hemólise.\nCom base no quadro clínico apresentado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se realizar um teste de exclusão do leite materno por um curto período de 48–72 horas, para melhorar o quadro provável de icterícia associada ao leite materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sugere-se tranquilizar a mãe sobre a evolução habitual da icterícia neonatal, estimulando os banhos de sol, além de verificar a técnica de amamentação, pois o quadro indica possibilidade de desidratação consequente das dificuldades na mamada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se solicitar investigação imediata com ultrassonografia abdominal e encaminhamento para serviço especializado para confirmar a suspeita de atresia de vias biliares, pois a cirurgia precoce é imprescindível para melhor prognóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sugere-se a dosagem de G6PD, a re-checagem do teste do pezinho e a tipagem sanguínea da mãe e da criança; diante desses exames normais, o diagnóstico provável será de colestase neonatal idiopática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve-se internar a criança para realização de fototerapia e observação mais sistemática da amamentação e aceitação alimentar dessa criança, pois a evolução ponderal e o estado de hidratação são preocupantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso descreve um lactente de 25 dias com icterícia persistente e um padrão laboratorial de hiperbilirrubinemia direta (colestase), evidenciado pela bilirrubina direta de 7,0 mg/dL (valor de referência para normalidade é menor que 1,0 mg/dL). Os sinais clínicos de colúria (urina escura) e hipocolia fecal (fezes claras) reforçam a interrupção do fluxo biliar. Diante de um recém-nascido com colestase, a principal hipótese a ser excluída, devido à gravidade e necessidade de intervenção precoce, é a Atresia de Vias Biliares (AVB).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A icterícia associada ao leite materno ocorre às custas de bilirrubina indireta e costuma ser benigna. O paciente em questão apresenta aumento de bilirrubina direta, o que indica uma patologia hepatobiliar, e não um quadro fisiológico ou relacionado ao leite. O teste de exclusão do aleitamento é contraindicado e não teria efeito na colestase.\n\nAlternativa B (Incorreta): Banho de sol não é um tratamento preconizado para icterícia neonatal, especialmente na colestase. Além disso, o bebê apresenta bom ganho de peso (ganhou 450g em 25 dias), o que afasta a hipótese de desidratação ou dificuldade na amamentação como causa do quadro. Tranquilizar a mãe seria um erro grave, atrasando o diagnóstico de uma condição cirúrgica.\n\nAlternativa C (Correta): A Atresia de Vias Biliares é uma urgência cirúrgica pediátrica. O prognóstico depende diretamente da idade em que é realizada a cirurgia de Kasai (portoenterostomia), preferencialmente antes dos 60 dias de vida. A presença de fezes claras, urina escura e hepatomegalia em um lactente com hiperbilirrubinemia direta exige investigação imediata com ultrassonografia (para avaliar a presença da vesícula biliar e outros sinais sugestivos) e encaminhamento urgente para especialista (hepatologista pediátrico/cirurgião pediátrico).\n\nAlternativa D (Incorreta): A dosagem de G6PD e a tipagem sanguínea são exames utilizados na investigação de anemias hemolíticas, que causam aumento de bilirrubina indireta. O teste do pezinho pode detectar doenças que cursam com colestase (como a galactosemia), mas a urgência no quadro de um bebê com fezes claras é a exclusão de causas anatômicas/obstrutivas como a AVB. O diagnóstico de colestase neonatal idiopática só pode ser feito após a exclusão de todas as causas conhecidas.\n\nAlternativa E (Incorreta): A fototerapia é indicada apenas para o tratamento da hiperbilirrubinemia indireta, pois age transformando a bilirrubina indireta em produtos solúveis em água. Na colestase (bilirrubina direta elevada), a fototerapia é ineficaz e pode causar a \"Síndrome do Bebê Bronzeado\", uma coloração escurecida da pele. Além disso, o estado de hidratação e o ganho de peso do lactente estão adequados, não sendo o motivo da internação.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.396Z"
+  },
+  {
+    "id": "AJUDA_0157f656-953a-442a-91d8-f90b0fc2ca27",
+    "originalId": "0157f656-953a-442a-91d8-f90b0fc2ca27",
+    "statement": "Jogador de futebol, de 28 anos, apresentou dor súbita e intensa na região posterior da coxa esquerda ao realizar um sprint (movimento de arrancada). Trazido à Emergência, referiu sensação de estalo no momento da dor e dificuldade para caminhar. Ao exame físico, observaram-se equimose e falha palpável no músculo. Qual o diagnóstico e qual a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesão muscular grau II – retorno às atividades após uso de analgésicos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesão muscular grau II – uso de órtese rígida e imobilização por 4 semanas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lesão muscular grau III – repouso, analgesia e encaminhamento a fisioterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lesão muscular grau III – repouso, analgesia e avaliação especializada para possível reparo cirúrgico",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um mecanismo clássico de lesão muscular em atletas: contração excêntrica súbita durante um movimento de explosão (*sprint*). Os sinais físicos relatados são determinantes para a classificação da gravidade da lesão. O estalo audível ou sentido pelo paciente, a presença de equimose (indicando sangramento significativo por ruptura de vasos) e, principalmente, a falha palpável no ventre muscular são sinais patognomônicos de uma ruptura total ou quase total das fibras.\n\nCLASSIFICAÇÃO DAS LESÕES MUSCULARES\n\nGrau I: Estiramento de poucas fibras musculares, sem perda de continuidade. Há dor localizada, mas sem perda de força importante ou defeitos anatômicos.\n\nGrau II: Ruptura parcial das fibras. Há dor moderada, edema, equimose leve a moderada e perda parcial da função.\n\nGrau III: Ruptura total ou completa do músculo ou do tendão. Caracteriza-se por dor intensa no momento da lesão, perda importante da função, equimose extensa e o sinal do degrau (falha palpável na anatomia do músculo).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. Os achados de falha palpável e sensação de estalo indicam uma lesão mais grave do que o Grau II. Além disso, o retorno imediato às atividades após apenas analgesia é contraindicado em qualquer grau de lesão aguda, pois aumenta o risco de fibrose cicatricial inadequada e relesão.\n\nAlternativa B: Incorreta. Além do erro na classificação do grau da lesão, o tratamento moderno das lesões musculares raramente envolve imobilização rígida por períodos longos, como quatro semanas. O protocolo atual preconiza a mobilização precoce, protegida e controlada, para favorecer o alinhamento das fibras de colágeno durante a cicatrização e evitar a atrofia.\n\nAlternativa C: Incorreta. Embora identifique corretamente o diagnóstico de Grau III, a conduta é considerada incompleta para um atleta com ruptura total. Ainda que a fisioterapia seja parte fundamental do tratamento, o primeiro passo após a analgesia e o repouso inicial deve ser a avaliação por um especialista para determinar se a ruptura é passível de tratamento conservador ou se requer intervenção cirúrgica.\n\nAlternativa D: Correta. O diagnóstico de lesão Grau III é fundamentado na falha palpável e na gravidade dos sintomas clínicos. A conduta inicial envolve o controle da dor e do processo inflamatório agudo (repouso e analgesia), seguida obrigatoriamente por uma avaliação especializada (ortopedista). O especialista decidirá, geralmente com o apoio de exames de imagem, como ressonância magnética ou ultrassonografia, se há indicação de reparo cirúrgico, o que é especialmente comum em casos de avulsões tendíneas ou rupturas completas em pacientes de alta demanda física.\n\nGABARITO: Letra D.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doenças de Partes Moles"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.396Z"
+  },
+  {
+    "id": "AJUDA_0163600e-40ff-4ad4-8466-c5fbedb0adc5",
+    "originalId": "0163600e-40ff-4ad4-8466-c5fbedb0adc5",
+    "statement": "Paciente, sexo masculino, 32 anos de idade, é admitido no pronto-socorro, vítima de ferimento por arma branca, em face medial de braço esquerdo de, aproximadamente, 3 cm. Ao exame do membro atingido, foi identificada a presença de hematoma expansivo associado a perda dos pulsos distais sem déficit neurológico. No momento, encontra-se com pressão arterial mensurada no membro contralateral de 120/70 mmHg e frequência cardíaca de 80 bpm.\nAssinale a alternativa que apresenta, corretamente, a conduta a ser adotada nesse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve ser realizada observação clínica rigorosa, e o tratamento operatório estará indicado na evidência de sinais de lesão neurológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser realizado índice tornozelo-braço e, caso se apresente alterado, deverá ser realizado exame de imagem complementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O paciente deve ser encaminhado para hemodinâmica para a angiografia, pois se encontra estável hemodinamicamente e a angiografia permite a determinação da extensão da lesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O paciente deve ser encaminhado para exploração cirúrgica imediata, sem a necessidade de exames complementares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O paciente deve ser encaminhado para tomografia computadorizada, pois se encontra estável hemodinamicamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O foco principal desta questão é a identificação dos chamados \"sinais duros\" ou \"sinais de certeza\" de lesão vascular de extremidades em um cenário de trauma. No manejo do trauma vascular, a decisão entre realizar exames de imagem ou seguir diretamente para a cirurgia depende da presença desses sinais clínicos.\n\nSinais Duros (Indicação de Exploração Cirúrgica Imediata):\n1. Hemorragia externa pulsátil (exsanguinante).\n2. Hematoma pulsátil ou expansivo.\n3. Presença de sopro ou frêmito no local da lesão.\n4. Ausência de pulsos distais (isquemia aguda).\n5. Sinais de isquemia (extremidade fria, cianótica, paralisia).\n\nAnálise das alternativas:\n\na) Incorreta. A presença de um hematoma expansivo e ausência de pulsos distais já são indicações absolutas de intervenção cirúrgica. Aguardar déficit neurológico significa permitir o agravamento da isquemia, o que aumenta o risco de perda do membro.\n\nb) Incorreta. O índice tornozelo-braço (ou índice braquial-braquial, no caso de membros superiores) é indicado para pacientes com \"sinais moles\" (suspeita) de lesão vascular, como hematoma pequeno e não expansivo ou proximidade do ferimento com trajeto vascular, mas com pulsos preservados. O paciente em questão já apresenta sinais de certeza.\n\nc) Incorreta. Embora o paciente esteja estável hemodinamicamente (PA 120/70 mmHg), a angiografia na sala de hemodinâmica causaria um atraso desnecessário e perigoso. Os sinais de certeza (hematoma expansivo + ausência de pulso) autorizam a exploração direta no centro cirúrgico. Exames de imagem em trauma vascular são reservados para casos de dúvida diagnóstica ou quando há projéteis de arma de fogo com múltiplos fragmentos onde o local exato da lesão é incerto.\n\nd) Correta. Diante de sinais duros de lesão vascular (hematoma expansivo e ausência de pulsos), o diagnóstico é clínico. A conduta padrão é a exploração cirúrgica imediata para controle do sangramento e revascularização do membro, dispensando exames de imagem que retardariam o tratamento definitivo.\n\ne) Incorreta. A angiotomografia é um excelente exame para estabilidade hemodinâmica, porém, assim como a angiografia, não deve ser realizada se houver sinais óbvios de lesão arterial que exijam cirurgia de emergência. No trauma, \"tempo é tecido\"; a prioridade é restaurar o fluxo sanguíneo.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Trauma",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.396Z"
+  },
+  {
+    "id": "AJUDA_01738720-bd82-499c-9d0c-6b2bc6faf48b",
+    "originalId": "01738720-bd82-499c-9d0c-6b2bc6faf48b",
+    "statement": "Pacientes com menos que 2 anos representam grupo de especial atenção nos casos de traumatismo cranioencefálico. Não obstante, o uso indiscriminado da tomografia computadorizada resulta em exposição desnecessária à radiação, cuja extensão dos potenciais danos a essa população ainda está por ser determinada. No esforço para distinguir populações que apresentam maior e menor risco para lesões cerebrais traumáticas clinicamente importantes, iniciativas como a da Pediatric Emergency Care Applied Ressearch Network (PECARN) vêm gerando algoritmos que auxiliam o médico a decidir melhor quando lançar mão dos exames de neuroimagem. Acerca do traumatismo cranioencefálico em menores de 2 anos, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lactente que apresenta abertura ocular ao comando verbal, choro irritado e retirada à dor tem tomografia de crânio recomendada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Em menores que 2 anos com fratura de crânio palpável, tomografia de crânio não está recomendada, sendo a radiografia simples o único exame necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Perda de consciência maior do que 5 segundos, isoladamente, não é critério para recomendação de tomografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quedas de qualquer altura, independente da apresentação clínica subsequente, indicam realização de tomografia em todos os pacientes com menos que 2 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda os critérios do algoritmo PECARN (Pediatric Emergency Care Applied Research Network), que é a principal ferramenta clínica utilizada para decidir a necessidade de tomografia computadorizada (TC) de crânio em crianças menores de 2 anos após um traumatismo cranioencefálico (TCE).\n\nAlternativa A (Correta): Para crianças menores de 2 anos, a Escala de Coma de Glasgow Pediátrica (ECGp) é adaptada. No caso descrito: abertura ocular ao comando verbal (3 pontos), choro irritado (4 pontos) e retirada à dor (4 pontos) totalizam uma ECGp de 11. Segundo o critério PECARN, qualquer paciente com ECGp menor ou igual a 14 ou com sinais de estado mental alterado (agitação, sonolência, perguntas repetitivas ou resposta lenta) é classificado como alto risco para lesão cerebral traumática clinicamente importante, sendo a TC de crânio fortemente recomendada.\n\nAlternativa B (Incorreta): A presença de fratura de crânio palpável em menores de 2 anos é um dos critérios de alto risco no algoritmo PECARN. Nesses casos, a TC de crânio é o exame de escolha devido à sua alta sensibilidade para detectar lesões intracranianas associadas. A radiografia simples (raio X) tem utilidade limitada no trauma agudo e não substitui a TC na avaliação de lesões cerebrais.\n\nAlternativa C (Incorreta): No algoritmo PECARN para menores de 2 anos, a perda de consciência maior ou igual a 5 segundos é considerada um fator de risco intermediário. A presença desse critério isoladamente coloca a criança em um grupo no qual o médico deve considerar a TC ou a observação clínica, dependendo da evolução, da experiência do examinador e do desejo dos pais. Portanto, é, sim, um critério previsto para a recomendação/consideração do exame.\n\nAlternativa D (Incorreta): Nem toda queda indica a realização de TC. O PECARN define como \"mecanismo grave de trauma\" quedas de altura superior a 3 pés (aproximadamente 0,9 metro) para menores de 2 anos. Quedas de alturas menores, em pacientes assintomáticos e sem outros fatores de risco, geralmente não justificam a exposição à radiação de uma tomografia.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Trauma",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.396Z"
+  },
+  {
+    "id": "AJUDA_0175bfd2-46b1-45a1-8fa1-11e65e35dd8e",
+    "originalId": "0175bfd2-46b1-45a1-8fa1-11e65e35dd8e",
+    "statement": "No dia 01.11.2025, secundigesta de 25 anos de idade apresenta dor abdominal em cólica, de forte intensidade, iniciada há cerca de 2 horas, sem fatores desencadeantes. AP: DUM: 20.02.2025; descobriu a gestação há um mês. Exame físico: BEG; PA: 110 × 60 mmHg; FC: 72 bpm; útero gravídico; altura uterina: 32 cm; feto em apresentação cefálica; situação longitudinal; dorso à esquerda; FC fetal: 144 bpm; dinâmica uterina: duas contrações de 30 segundos em 10 minutos; toque vaginal: colo centralizado, amolecido, apagado em 80% e dilatado 3 a 4 cm. A conduta é prescrever",
+    "options": [
+      {
+        "id": "A",
+        "text": "betametasona, sulfato de magnésio, profilaxia para estreptococos do grupo B e iniciar inibição do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "betametasona e iniciar assistência ao trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "analgesia e encaminhar para iniciar o pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "profilaxia para estreptococos do grupo B e iniciar assistência ao trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, o primeiro passo fundamental é realizar o cálculo da idade gestacional (IG).\n\n1. Cálculo da Idade Gestacional:\nA Data da Última Menstruação (DUM) é 20.02.2025 e a data do atendimento é 01.11.2025.\n- Fevereiro: 8 dias restantes\n- Março: 31 dias\n- Abril: 30 dias\n- Maio: 31 dias\n- Junho: 30 dias\n- Julho: 31 dias\n- Agosto: 31 dias\n- Setembro: 30 dias\n- Outubro: 31 dias\n- Novembro: 1 dia\nTotal: 254 dias. Dividindo por 7, temos 36 semanas e 2 dias.\n\n2. Diagnóstico:\nA paciente apresenta dinâmica uterina (2 contrações em 10 minutos) e modificação cervical significativa (dilatação de 3 a 4 cm e apagamento de 80%), o que caracteriza o Trabalho de Parto Prematuro Tardio (entre 34 semanas e 36 semanas e 6 dias).\n\n3. Análise das condutas:\n- Tocólise (inibição do parto): Não é indicada acima de 34 semanas. O objetivo da inibição é ganhar tempo para a maturação pulmonar, que não é mais obrigatória nesta fase.\n- Corticoterapia (Betametasona): Embora existam protocolos que discutam o uso no prematuro tardio, a maioria das diretrizes de prova e do Ministério da Saúde foca seu uso entre 24 e 34 semanas.\n- Neuroproteção (Sulfato de Magnésio): Indicada apenas para partos iminentes abaixo de 32 semanas (ou 34 semanas em alguns protocolos específicos). Não se aplica aqui.\n- Profilaxia para Estreptococos do Grupo B (GBS): É indicada em casos de trabalho de parto prematuro (antes de 37 semanas) se o status da cultura for desconhecido (o que ocorre nesta paciente, que descobriu a gestação tardiamente e não tem exames).\n\nAnálise das alternativas:\n\na) Incorreta. O sulfato de magnésio não tem indicação com 36 semanas, e a inibição do trabalho de parto é contraindicada acima de 34 semanas.\n\nb) Incorreta. Embora o uso de corticoide no prematuro tardio seja debatido na literatura (estudo ALPS), a alternativa peca por omitir a profilaxia para GBS, que é mandatória para qualquer trabalho de parto antes de 37 semanas com rastreio desconhecido.\n\nc) Incorreta. A paciente está em fase ativa de trabalho de parto (dilatação e apagamento). Encaminhá-la para iniciar pré-natal neste momento é um erro grave de conduta assistencial.\n\nd) Correta. Como a gestação tem 36 semanas e 2 dias (prematuro) e o status para GBS é desconhecido, deve-se realizar a profilaxia antibiótica intraparto. Além disso, por ter ultrapassado 34 semanas, não se tenta interromper o processo, iniciando-se a assistência ao parto propriamente dita.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro",
+      "Assistência ao Parto"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.396Z"
+  },
+  {
+    "id": "AJUDA_0177e1cd-a4af-4e8e-b369-2d19d3ef3101",
+    "originalId": "0177e1cd-a4af-4e8e-b369-2d19d3ef3101",
+    "statement": "Assinale a assertiva correta sobre a isquemia mesentérica crônica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na maioria dos casos, há importante alteração da absorção intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A causa mais comum são embolias de repetição em pacientes com fibrilação atrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caracteriza-se por dor abdominal pós-prandial (cerca de 15-20 minutos).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A artéria mesentérica inferior é a mais comumente acometida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A isquemia mesentérica crônica, frequentemente chamada de angina abdominal, decorre da incapacidade das artérias esplâncnicas de fornecer fluxo sanguíneo suficiente para atender à demanda metabólica do sistema digestivo, especialmente após as refeições.\n\nAlternativa a) Incorreta. O emagrecimento acentuado, marca registrada dessa condição, não ocorre primariamente por má absorção intestinal. Ele é causado pela sitofobia, que é o medo de comer. O paciente associa a ingestão de alimentos à dor intensa e, por isso, reduz drasticamente a ingestão calórica. A má absorção só ocorre em fases muito avançadas por atrofia da mucosa.\n\nAlternativa b) Incorreta. A causa mais comum da forma crônica é a aterosclerose sistêmica (em mais de 90% dos casos). Fenômenos embólicos, como os originados por fibrilação atrial, são as principais causas da isquemia mesentérica aguda, que é uma emergência médica súbita e distinta da forma crônica.\n\nAlternativa c) Correta. Esta é a apresentação clínica clássica. A dor surge entre 15 e 30 minutos após a refeição (período pós-prandial), quando a demanda por oxigênio e sangue no trato gastrointestinal aumenta para a digestão, mas o fluxo está limitado pela estenose arterial. A dor costuma durar de 1 a 2 horas e localiza-se preferencialmente na região epigástrica ou periumbilical.\n\nAlternativa d) Incorreta. A artéria mais comumente acometida e que possui maior relevância clínica nos sintomas é a artéria mesentérica superior. Vale lembrar que, devido à rica rede de circulação colateral entre as artérias celíaca, mesentérica superior e mesentérica inferior, a isquemia crônica geralmente só se manifesta de forma importante quando há estenose significativa em pelo menos dois desses três troncos principais.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Abdome Agudo Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.396Z"
+  },
+  {
+    "id": "AJUDA_0183b8ba-5b4c-4b7c-bc73-536336d4fa0a",
+    "originalId": "0183b8ba-5b4c-4b7c-bc73-536336d4fa0a",
+    "statement": "Em relação ao diagnóstico de hepatocarcinoma, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "sempre é necessária a biópsia hepática para confirmação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "critérios de imagem dinâmicos em TC ou RM com contraste podem ser suficientes para diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a dosagem de alfafetoproteína (AFP) isolada é suficiente para confirmar HCC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a ressonância magnética não é recomendada para avaliação de lesões <2 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "lesões hipervasculares na fase arterial e com washout tardio são típicas de metástases.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alternativa correta é a (b). Confira a explicação detalhada para cada uma das opções:\n\nAlternativa (a) Incorreta: Diferentemente da maioria dos tumores sólidos, o hepatocarcinoma (HCC) não exige obrigatoriamente uma biópsia para confirmação diagnóstica, desde que o paciente apresente fatores de risco conhecidos (como cirrose hepática ou hepatite B crônica) e padrões radiológicos típicos em exames de imagem contrastados. A biópsia é reservada apenas para casos em que a imagem é inconclusiva, devido ao risco de sangramento e de disseminação de células tumorais no trajeto da agulha.\n\nAlternativa (b) Correta: Em pacientes com cirrose hepática, o diagnóstico de HCC pode ser feito exclusivamente por métodos de imagem dinâmicos, como a Tomografia Computadorizada (TC) multidetectores ou a Ressonância Magnética (RM) com contraste. O diagnóstico baseia-se na identificação do padrão de \"wash-in\" (hiper-realce na fase arterial) seguido de \"washout\" (lavagem do contraste nas fases portal ou de equilíbrio), refletindo a vascularização predominantemente arterial do tumor.\n\nAlternativa (c) Incorreta: A alfafetoproteína (AFP) é um marcador tumoral útil para o rastreamento e acompanhamento da resposta terapêutica, mas não deve ser utilizada isoladamente para o diagnóstico. Muitos carcinomas hepatocelulares não elevam a AFP e, por outro lado, outras condições (como exacerbações de hepatites crônicas ou tumores germinativos) podem elevar seus níveis, gerando falsos positivos e negativos.\n\nAlternativa (d) Incorreta: A Ressonância Magnética é, na verdade, um dos melhores métodos para a avaliação de lesões pequenas, inclusive as menores que 2 cm. Ela possui alta sensibilidade e especificidade, sendo muitas vezes superior à TC na diferenciação entre nódulos de regeneração, nódulos displásicos e o HCC inicial, especialmente com o uso de contrastes hepatoespecíficos.\n\nAlternativa (e) Incorreta: A descrição de lesão hipervascular na fase arterial com \"washout\" nas fases tardias é o sinal radiológico clássico e patognomônico do hepatocarcinoma no contexto de um fígado cirrótico. As metástases hepáticas variam muito em seu padrão vascular dependendo do sítio primário, mas a maioria é hipovascular ou apresenta um realce periférico em alvo, não seguindo tipicamente o padrão de \"wash-in\" e \"washout\" do HCC.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.396Z"
+  },
+  {
+    "id": "AJUDA_018df31d-06a2-4587-aa7d-2b91d9a1dc27",
+    "originalId": "018df31d-06a2-4587-aa7d-2b91d9a1dc27",
+    "statement": "Homem de 62 anos, com diagnóstico de diabetes mellitus tipo 2 e obesidade grau II (IMC: 37 kg/m2), comparece ao ambulatório para consulta de seguimento. Ela faz uso regular de metformina, gliclazida e losartana. Há cinco meses, iniciou tratamento com tirzepatida, alcançando atualmente a dose de 10 mg semanais, conseguindo uma perda ponderal de 15 kg nesse período, acompanhada por uma queda da hemoglobina glicada (HbA1C) de 9,2% para 6,5%. Na consulta de hoje, menciona a ocorrência de tremores e sudorese profusa nos períodos que antecedem as refeições principais. Relata, adicionalmente, o surgimento recente de dor abdominal em cólica no hipocôndrio direito, associada a náuseas, particularmente após a ingestão de alimentos gordurosos. Menciona que possui uma artroplastia total do joelho direito agendada em algumas semanas. Por fim, queixa-se de uma súbita piora na acuidade visual do olho esquerdo e confessa que suspendeu a injeção de tirzepatida por conta própria nas últimas três semanas devido a uma viagem, desejando retomar a dose de 10 mg imediatamente. Considerando o caso clínico descrito, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a elevação assintomática das enzimas pancreáticas lipase e amilase durante os exames de rotina exige a suspensão do tratamento para evitar a progressão para a pancreatite grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a neuropatia óptica isquêmica anterior não arterítica representa uma complicação oftalmológica reversível com a suspensão do fármaco, cursando com recuperação integral da acuidade visual após a descontinuação temporária da injeção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a ocorrência de reações no local da injeção cutânea indica o desenvolvimento de anticorpos neutralizantes de alta titulação, acarretando a perda progressiva da resposta glicêmica e a falência do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a piora do quadro visual pode estar diretamente relacionada à rápida redução dos níveis glicêmicos induzida pela medicação, recomendando-se rastreio retiniano regular durante os primeiros meses de tratamento farmacológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "em caso de falha na administração de três doses consecutivas do medicamento semanal, a retomada do tratamento deve ocorrer com a manutenção da dose máxima previamente tolerada para preservar eficácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Resumo do caso: paciente com DM2 e obesidade que perdeu 15 kg em 5 meses com tirzepatida e teve queda da HbA1c de 9,2% para 6,5%. Usa metformina, gliclazida (sulfonilureia) e losartana. O quadro traz vários \"ganchos\" sobre os efeitos da tirzepatida (agonista duplo GIP/GLP-1):\n- Tremor e sudorese pré-prandiais sugerem hipoglicemia, por associação com a sulfonilureia. Está indicado reduzir ou suspender a gliclazida.\n- Cólica em hipocôndrio direito com náuseas após alimentos gordurosos sugere colelitíase ou colecistite. A perda de peso rápida e os agonistas de GLP-1 aumentam o risco de litíase biliar.\n- A cirurgia eletiva (artroplastia) exige atenção ao esvaziamento gástrico retardado e ao risco de aspiração. As diretrizes recomendam individualizar o manejo e, em geral, suspender o fármaco semanal cerca de 1 semana antes.\n- A piora visual súbita pode ser retinopatia diabética, que se agrava com a redução glicêmica rápida (fenômeno já descrito com semaglutida), ou neuropatia óptica isquêmica anterior não arterítica (NAION). Exige avaliação oftalmológica urgente.\n- A suspensão por 3 semanas é o último gancho, relacionado à retomada da dose.\n\nAnálise das alternativas:\n\na) Incorreta. Elevação assintomática de amilase e lipase é comum com análogos de GLP-1 e não indica suspensão nem prediz pancreatite. Não se deve rastrear essas enzimas na ausência de sintomas. A suspensão só é necessária se houver suspeita clínica de pancreatite (dor abdominal intensa, em barra, com vômitos).\n\nb) Incorreta. A NAION é uma complicação descrita (alerta de segurança com semaglutida e possível risco com outros agonistas de GLP-1), mas causa dano ao nervo óptico, em geral irreversível ou com recuperação incompleta. Não há garantia de recuperação integral com a suspensão do fármaco.\n\nc) Incorreta. Reações no local da injeção (eritema, prurido, nódulos) são comuns e geralmente leves. Podem ocorrer anticorpos antidroga, mas a maioria é de baixo título e sem impacto clínico. Essas reações não indicam anticorpos neutralizantes de alta titulação nem falência terapêutica.\n\nd) Correta. A queda rápida e intensa da glicemia (HbA1c de 9,2% para 6,5% em 5 meses) pode piorar transitoriamente a retinopatia diabética, o chamado \"early worsening\", sobretudo em pacientes com mau controle prévio e retinopatia preexistente. Por isso, recomenda-se fundoscopia/rastreio retiniano antes e durante os primeiros meses do tratamento. Esse é o raciocínio mais adequado para a queixa visual deste paciente.\n\ne) Incorreta. Segundo a bula, se a dose for esquecida, deve-se aplicá-la em até 4 dias (96 horas) do esquecimento. Após interrupção prolongada (em geral mais de 2 doses perdidas, ou cerca de 3 semanas), a prática recomendada é reiniciar com dose menor (por exemplo, 2,5 mg e nova titulação) para reduzir efeitos gastrointestinais. Retomar diretamente a dose máxima tolerada aumenta o risco de náuseas, vômitos e desidratação, além de lesão renal aguda.\n\nResposta: letra D.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença do Polo Posterior",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.396Z"
+  },
+  {
+    "id": "AJUDA_01a6f4b6-972b-4218-ae7d-191f78afa1f3",
+    "originalId": "01a6f4b6-972b-4218-ae7d-191f78afa1f3",
+    "statement": "Paciente, 57 anos de idade, sexo feminino, refere início súbito de palpitações taquicárdicas há 1 hora. Nega comorbidades ou uso prévio de medicações. Nega uso de álcool ou drogas. Relata episódios semelhantes no último ano, mas todos de curta duração e resolução espontânea. Ao exame físico, encontra-se desperta, atenta, FC 143 bpm, SatO2 96% em ar ambiente, PA 147x93 mmHg, ausculta pulmonar sem alterações, perfusão periférica satisfatória. Foi registrado o eletrocardiograma (ECG) a seguir logo após a admissão na Unidade de Pronto Atendimento. Sobre o quadro clínico e a arritmia apresentada no ECG, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A amiodarona pode ser empregada como terapia de primeira linha, visto que, somente a partir do ECG, não é possível identificar precisamente qual mecanismo da arritmia apresenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A cardioversão elétrica sincronizada é mandatória nos casos de instabilidade hemodinâmica, mas também é estratégia de primeira linha nos pacientes estáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O ECG apresenta uma taquiarritmia de QRS estreito e RR regular. Em caso de falha da manobra vagal, a infusão rápida de adenosina apresenta altas taxas de sucesso na reversão da arritmia, além de poder ser utilizada para diagnóstico diferencial do mecanismo da arritmia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Esse tipo de arritmia costuma estar associado à doença cardíaca estrutural e, portanto, deve ser investigada extensivamente em regime de internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de uma taquicardia supraventricular sem instabilidade hemodinâmica. A terapia inicial consiste na realização de manobra vagal, entre elas, a manobra de Valsalva tradicional ou modificada, sendo que ambas apresentam as mesmas taxas de reversão da arritmia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Quadro Clínico e ECG:\nO eletrocardiograma (ECG) revela uma taquiarritmia de complexo QRS estreito (menor que 120 ms) e ritmo regular (intervalos R-R constantes), com uma frequência cardíaca de aproximadamente 143 bpm. Não se observa de forma clara a presença de ondas P precedendo cada QRS, achado típico das taquicardias supraventriculares paroxísticas (TSVP), sendo a taquicardia por reentrada nodal (TRN) a causa mais comum. Clinicamente, a paciente apresenta estabilidade hemodinâmica, pois está alerta, com pressão arterial de 147 x 93 mmHg e boa perfusão periférica.\n\nAnálise das alternativas:\n\na) Incorreta. A amiodarona não é terapia de primeira linha para taquicardias de QRS estreito e estáveis. O mecanismo de reentrada nodal ou via acessória é o mais provável, e o protocolo de Suporte Avançado de Vida Cardiovascular (ACLS) preconiza manobras vagais seguidas de adenosina.\n\nb) Incorreta. A cardioversão elétrica sincronizada é o tratamento de escolha para pacientes com instabilidade hemodinâmica (sinais de choque, hipotensão, alteração do nível de consciência, dor torácica anginosa ou insuficiência cardíaca aguda). Em pacientes estáveis, como o caso em questão, prioriza-se o tratamento farmacológico ou manobras não invasivas.\n\nc) Correta. O ECG demonstra precisamente uma taquiarritmia de QRS estreito e R-R regular. O manejo inicial para pacientes estáveis começa com a manobra vagal. Caso não haja reversão, a adenosina em bólus rápido é a droga de escolha. Além do efeito terapêutico (reversão), a adenosina possui utilidade diagnóstica: se a arritmia for um flutter atrial, ela promoverá um bloqueio transitório do nó atrioventricular, permitindo a visualização das ondas F (\"dente de serra\"), auxiliando no diagnóstico diferencial.\n\nd) Incorreta. As taquicardias supraventriculares paroxísticas ocorrem frequentemente em indivíduos sem qualquer doença cardíaca estrutural, sendo desencadeadas por mecanismos eletrofisiológicos específicos (como a dupla via nodal). Por isso, não costumam demandar investigação extensiva em regime de internação.\n\ne) Incorreta. Embora a terapia inicial consista na manobra vagal, a manobra de Valsalva tradicional e a modificada não apresentam as mesmas taxas de sucesso. Estudos clínicos (como o REVERT) demonstram que a manobra de Valsalva modificada (na qual o paciente é colocado em posição supina com elevação passiva das pernas após o esforço expiratório) é significativamente mais eficaz na reversão da arritmia do que a técnica tradicional.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Taquiarritmias",
+      "Eletrocardiograma"
+    ],
+    "difficulty": 41.358293966692464,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f97ef7b405c4fd778effa2f00fea8c48f22e74f33afb684cb2520c134e33ff58.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_01a6f4b6-972b-4218-ae7d-191f78afa1f3_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:54.872Z"
+  }
+]

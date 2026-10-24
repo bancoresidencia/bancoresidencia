@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_3e90f6b3-f8a5-47fa-8fe7-4c069fdf93c2",
+    "originalId": "3e90f6b3-f8a5-47fa-8fe7-4c069fdf93c2",
+    "statement": "Durante atendimento no CAIC, um menino de 8 anos, branco é trazido pelos pais com queixa de inchaço no joelho esquerdo há quase dois meses. A mãe relata que o menino acorda com rigidez e dificuldade para andar pela manhã, mas melhora ao longo do dia. Ao exame físico, o paciente apresenta marcha claudicante, edema e limitação de movimentos no joelho direito, sem sinais de infecção ou outras alterações sistêmicas. Os exames laboratoriais mostram: FAN positivo (1:320); ASLO = 800 U Todd (normal até 300 U); Demais exames sem alterações relevantes. Com base nesses achados, qual é a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Púrpura trombocitopênica idiopática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artrite gonocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Artrite idiopática juvenil.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Sjögren.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\n\nO caso descreve um paciente de 8 anos com artrite crônica (duração superior a 6 semanas), caracterizada por edema e limitação funcional no joelho, associada a um padrão inflamatório claro (rigidez matinal que melhora com a atividade). O diagnóstico principal para artrite de causa desconhecida, com início antes dos 16 anos e duração mínima de 6 semanas, é a Artrite Idiopática Juvenil (AIJ).\n\nO subtipo mais provável neste caso é a AIJ oligoarticular, que acomete até quatro articulações nos primeiros seis meses de doença, sendo o joelho a articulação mais comumente afetada. A presença do FAN positivo (1:320) é um achado clássico que, embora não seja patognomônico, é um importante marcador de risco para o desenvolvimento de uveíte anterior crônica nesses pacientes, exigindo acompanhamento oftalmológico periódico.\n\nUm ponto de confusão comum é o ASLO elevado (800 U Todd). No entanto, o ASLO isolado apenas indica contato prévio com o estreptococo e não confirma Febre Reumática. A Febre Reumática tipicamente causa uma poliartrite migratória e aguda, diferente da artrite persistente e crônica relatada.\n\nAnálise das alternativas:\n\na) Incorreta. A Púrpura Trombocitopênica Idiopática (PTI) é uma desordem hematológica caracterizada por trombocitopenia isolada, manifestando-se clinicamente com petéquias, equimoses e sangramentos mucosos, sem relação com artrite crônica ou positividade de FAN.\n\nb) Incorreta. A Artrite Gonocócica é uma forma de artrite séptica que costuma ter início agudo, febre e sinais flogísticos intensos. Embora possa acometer o joelho, a evolução de dois meses e o FAN em títulos elevados direcionam o diagnóstico para uma etiologia autoimune/idiopática, e não infecciosa.\n\nc) Correta. O paciente preenche os critérios para Artrite Idiopática Juvenil: idade inferior a 16 anos, tempo de evolução superior a 6 semanas e exclusão de outras causas. O acometimento de grandes articulações (joelho) e a positividade do FAN corroboram o subtipo oligoarticular.\n\nd) Incorreta. A Síndrome de Sjögren é extremamente rara na infância. Ela se manifesta principalmente por ceratoconjuntivite seca (olho seco) e xerostomia (boca seca) devido à infiltração linfocítica das glândulas exócrinas. Embora possa haver manifestações articulares, elas não costumam se apresentar como uma monoartrite crônica isolada de joelho em uma criança de 8 anos.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Artrite Idopática Juvenil (AIJ)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  },
+  {
+    "id": "AJUDA_3e94869b-3c40-4b0a-83c5-89950561f784",
+    "originalId": "3e94869b-3c40-4b0a-83c5-89950561f784",
+    "statement": "Para avaliação diagnóstica da cistite não complicada, usualmente solicitamos apenas o exame simples de urina. A urocultura é solicitada quando",
+    "options": [
+      {
+        "id": "A",
+        "text": "a suspeita é de pielonefrite aguda previamente maltratada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "os sintomas persistem ou recorrem dentro de quatro semanas após a conclusão do tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a mulher apresenta sintomas típicos periodicamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a mulher tem gravidez de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para a avaliação diagnóstica da cistite não complicada em mulheres jovens e não grávidas, o diagnóstico costuma ser clínico ou baseado em um exame de urina simples (EAS ou fita reagente), dispensando a urocultura inicial. No entanto, a urocultura torna-se necessária em situações específicas para identificar o patógeno e sua sensibilidade aos antibióticos.\n\nAlternativa a) Incorreta. A pielonefrite aguda é uma infecção do trato urinário superior e, por definição, já exige a solicitação de urocultura desde a primeira suspeita, independentemente de ter sido maltratada anteriormente. A questão foca na transição da conduta da cistite (infecção baixa) para a necessidade de cultura.\n\nAlternativa b) Correta. A persistência ou a recorrência de sintomas precocemente (dentro de duas a quatro semanas após o término do tratamento) sugere falha terapêutica, que pode ocorrer por resistência bacteriana ao antibiótico utilizado ou por uma reinfecção. Nesses casos, a urocultura com antibiograma é obrigatória para guiar a escolha de uma nova terapia eficaz.\n\nAlternativa c) Incorreta. Se a mulher apresenta sintomas típicos de forma esporádica e responde bem ao tratamento habitual, a urocultura pode não ser exigida em todos os episódios. A urocultura é indicada na cistite recorrente (definida como dois ou mais episódios em seis meses, ou três ou mais em um ano), mas a alternativa usa o termo vago \"periodicamente\", o que não a torna a melhor resposta frente à falha terapêutica descrita na alternativa b.\n\nAlternativa d) Incorreta. Na gestação, a urocultura é solicitada para todas as mulheres como rastreio de bacteriúria assintomática no primeiro trimestre e sempre que houver suspeita de cistite, independentemente de a gravidez ser classificada como de \"risco\" ou não. O termo \"gravidez de risco\" restringe desnecessariamente a indicação que é universal no pré-natal.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  },
+  {
+    "id": "AJUDA_3e975ca6-b738-4f6b-9006-d28dfcce7425",
+    "originalId": "3e975ca6-b738-4f6b-9006-d28dfcce7425",
+    "statement": "Em qual das condições abaixo ocorre sopro cardíaco contínuo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CIA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Defeito de Septo AV Total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "CIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "PCA.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Um sopro cardíaco contínuo é aquele que se inicia na sístole e se estende além da segunda bulha cardíaca, avançando por toda ou parte da diástole. Essa ausculta ocorre quando há a manutenção de um gradiente pressórico entre duas estruturas ao longo de todo o ciclo cardíaco.\n\nAnálise das alternativas:\n\na) Incorreta. A Comunicação Interatrial (CIA) não produz sopro contínuo. O defeito septal em si é silencioso devido ao baixo gradiente pressórico entre os átrios. O achado auscultatório clássico é o desdobramento fixo da segunda bulha (B2), associado a um sopro sistólico de ejeção no foco pulmonar decorrente do hiperfluxo através da valva pulmonar.\n\nb) Incorreta. O Defeito de Septo Atrioventricular (DSAV) Total apresenta como achado predominante um sopro holossistólico, causado pela comunicação interventricular associada e pela regurgitação da valva atrioventricular comum, estando restrito à fase sistólica.\n\nc) Incorreta. Na Comunicação Interventricular (CIV), o shunt da esquerda para a direita ocorre prioritariamente durante a sístole, momento em que a pressão no ventrículo esquerdo supera a do ventrículo direito. Isso gera um sopro holossistólico (ou pansistólico) rude, que cessa com o fechamento das valvas semilunares (B2).\n\nd) Correta. Na Persistência do Canal Arterial (PCA), existe uma comunicação anômala entre a aorta descendente e a artéria pulmonar. Como a pressão na aorta é superior à pressão pulmonar tanto na sístole quanto na diástole, o fluxo de sangue é ininterrupto durante todo o ciclo cardíaco. Isso produz o clássico sopro contínuo (também denominado sopro em maquinaria ou sopro de Gibson), mais bem audível no foco pulmonar e região infraclavicular esquerda.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  },
+  {
+    "id": "AJUDA_3ea03d57-ef5e-45f8-a2ff-965f2be36e77",
+    "originalId": "3ea03d57-ef5e-45f8-a2ff-965f2be36e77",
+    "statement": "Homem de 79 anos é internado por pneumonia comunitária e evolui clinicamente estável após 48 horas de antibioticoterapia. Durante a visita médica, a equipe discute medidas para reduzir o risco de delirium durante a internação. O paciente encontra-se orientado, sem déficit cognitivo conhecido e sem uso de sedativos.\nSegundo as recomendações atuais, qual medida é mais eficaz para prevenir delirium em pacientes hospitalizados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever haloperidol em baixa dose para todos os pacientes idosos internados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar benzodiazepínicos à noite para melhorar a qualidade do sono.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter o paciente em repouso absoluto e reduzir estímulos ambientais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estimular mobilização precoce, reorientação frequente, higiene do sono e correção de déficits visuais e auditivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Restringir visitas familiares para diminuir estímulos durante a internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O delirium é uma síndrome confusional aguda extremamente comum em idosos hospitalizados, associada a maior mortalidade, tempo de internação e declínio funcional. A chave para o manejo do delirium é a prevenção primária através de intervenções não farmacológicas precoces.\n\nAnálise das alternativas:\n\na) Incorreta. O uso profilático de antipsicóticos, como o haloperidol, não demonstrou eficácia em prevenir a incidência de delirium em pacientes clínicos. Além disso, esses medicamentos aumentam o risco de eventos adversos cardiovasculares e extrapiramidais. Antipsicóticos são reservados para o controle de agitação grave que coloca o paciente ou a equipe em risco, e não para prevenção.\n\nb) Incorreta. Os benzodiazepínicos são, na verdade, um dos principais fatores precipitantes de delirium em idosos. Eles causam sedação excessiva, desorientação e pioram a arquitetura do sono. Devem ser evitados em idosos internados, exceto em casos muito específicos, como abstinência alcoólica ou de benzodiazepínicos de uso crônico.\n\nc) Incorreta. O imobilismo é um fator de risco clássico para o delirium. O repouso absoluto favorece a perda de massa muscular, aumenta o risco de trombose e contribui para a desorientação espacial. A redução excessiva de estímulos (isolamento sensorial) também é prejudicial à cognição do idoso.\n\nd) Correta. Esta alternativa descreve as medidas multicomponentes que compõem protocolos de sucesso, como o Hospital Elder Life Program (HELP). A prevenção mais eficaz baseia-se em: \n1. Reorientação frequente (calendário, relógio, equipe se identificando); \n2. Mobilização precoce (evitar contenções e estimular caminhadas); \n3. Higiene do sono (reduzir ruídos e luz à noite, evitar procedimentos desnecessários na madrugada); \n4. Correção de déficits sensoriais (garantir o uso de óculos e aparelhos auditivos do próprio paciente). Essas medidas atuam nos fatores vulneráveis do paciente e são o padrão-ouro na prevenção.\n\ne) Incorreta. A presença da família é um fator protetor contra o delirium. Familiares ajudam na reorientação do paciente, transmitem segurança e auxiliam na identificação precoce de mudanças sutis no comportamento, funcionando como uma ferramenta de estabilidade emocional e cognitiva.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  },
+  {
+    "id": "AJUDA_3ea49cea-7d7b-4d82-bab5-1be032255584",
+    "originalId": "3ea49cea-7d7b-4d82-bab5-1be032255584",
+    "statement": "Para se estabelecer a relação entre a exposição a hipotético fator de risco para a ocorrência de determinada doença, foram selecionados dois grupos de pessoas com caraterísticas semelhantes (100 pessoas em cada grupo), sendo um grupo exposto ao fator de risco e o outro não exposto. Ao longo de um ano, foram registrados 10 casos da doença no primeiro grupo e 5 casos no segundo grupo. Qual é o valor do risco relativo nesse estudo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "10",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO ESTUDO:\nO enunciado descreve um estudo de coorte prospectivo, pois foram selecionados dois grupos com base na presença ou ausência de exposição a um fator de risco e acompanhados ao longo de um ano para observar o surgimento da doença (incidência). O indicador estatístico utilizado para medir a associação nesse tipo de desenho é o Risco Relativo (RR).\n\nCÁLCULO DO RISCO RELATIVO (RR):\nO RR é definido pela razão entre a incidência da doença entre os expostos e a incidência da doença entre os não expostos.\n\n1. Incidência no grupo exposto (Ie): Foram 10 casos em 100 pessoas, o que resulta em 10/100 = 0,1 (ou 10%).\n2. Incidência no grupo não exposto (Io): Foram 5 casos em 100 pessoas, o que resulta em 5/100 = 0,05 (ou 5%).\n3. Risco Relativo (RR): Ie dividido por Io = 0,1 / 0,05 = 2.\n\nPortanto, as pessoas expostas ao fator de risco apresentam duas vezes mais risco de desenvolver a doença do que as não expostas.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a: Incorreta. O valor 0,5 seria obtido se o risco no grupo exposto fosse a metade do risco no grupo não exposto. Isso indicaria que o fator estudado seria de proteção e não de risco.\n\nAlternativa b: Incorreta. O valor 1 é chamado de valor de nulidade. Ele indicaria que a incidência nos dois grupos é igual e que não existe associação entre o fator de exposição e a doença.\n\nAlternativa c: Correta. Conforme demonstrado no cálculo, a razão entre a incidência de 10% no grupo exposto e 5% no grupo controle resulta em um RR de 2.\n\nAlternativa d: Incorreta. O valor 5 corresponde apenas à contagem absoluta de casos no grupo não exposto. Ele não representa a relação comparativa entre os grupos.\n\nAlternativa e: Incorreta. O valor 10 é apenas o número absoluto de doentes no grupo exposto. O Risco Relativo exige a divisão entre as taxas de incidência dos dois grupos acompanhados.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  },
+  {
+    "id": "AJUDA_3ea7e6e6-73c0-4178-8a7b-48bcf90b6fca",
+    "originalId": "3ea7e6e6-73c0-4178-8a7b-48bcf90b6fca",
+    "statement": "Assinale a assertiva incorreta sobre a doença do refluxo gastroesofágico (DRGE).",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento inicial envolve mudanças no estilo de vida e terapia medicamentosa; a cirurgia está indicada apenas para casos refratários ao tratamento clínico ou para casos que apresentem complicações, como esofagite erosiva ou estenose, ou para situações de grandes hérnias hiatais associadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A fundoplicatura pode ser realizada por via laparoscópica, proporcionando benefícios como menos dor pós-operatória e tempo de recuperação mais rápido em comparação com a abordagem aberta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A decisão de realizar cirurgia deve estar baseada em uma avaliação cuidadosa do paciente, incluindo gravidade dos sintomas, resposta ao tratamento clínico e presença de complicações, como esofagite de Barrett, que pode exigir vigilância endoscópica adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A realização de fundoplicatura não tem impacto na melhora da motilidade esofágica e, portanto, não deve ser considerada para pacientes com motilidade esofágica ineficaz, pois pode aumentar o risco de disfagia pós-operatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Questão comentada:\n\nAlternativa a (Incorreta/Gabarito): O erro desta alternativa reside no uso da palavra apenas. A cirurgia para Doença do Refluxo Gastroesofágico (DRGE) não é indicada exclusivamente para casos refratários ao tratamento ou que apresentem complicações. Na verdade, uma das indicações mais frequentes é para pacientes que respondem bem ao tratamento clínico com Inibidores de Bomba de Prótons (IBP), mas que optam pela cirurgia para não depender do uso contínuo e vitalício de medicação, seja por escolha pessoal, custo ou efeitos colaterais. Inclusive, pacientes que apresentam boa resposta clínica ao IBP costumam ser os melhores candidatos ao sucesso cirúrgico. Além disso, a esofagite erosiva simples (graus A e B de Los Angeles) é condição de tratamento eminentemente clínico, não sendo isoladamente uma indicação de cirurgia.\n\nAlternativa b (Correta): A fundoplicatura por via laparoscópica é o padrão-ouro atual. A técnica minimamente invasiva oferece resultados funcionais equivalentes à cirurgia aberta (laparotomia), porém com as vantagens nítidas de menor dor no pós-operatório, menor tempo de internação, melhor resultado estético e retorno mais rápido às atividades habituais do paciente.\n\nAlternativa c (Correta): A indicação cirúrgica deve ser sempre individualizada e baseada em exames objetivos (como endoscopia, manometria e pHmetria). No caso do Esôfago de Barrett, a cirurgia controla o refluxo e pode prevenir a progressão da lesão, mas não elimina o risco de adenocarcinoma. Por isso, esses pacientes devem manter a vigilância endoscópica periódica com biópsias, conforme os protocolos de rastreamento, mesmo após um procedimento cirúrgico bem-sucedido.\n\nAlternativa d (Correta): A fundoplicatura é um procedimento que aumenta a pressão na zona de transição esofagogástrica, mas não possui efeito na restauração da motilidade do corpo do esôfago (peristalse). Pacientes que apresentam motilidade esofágica ineficaz no exame de manometria pré-operatória têm um risco elevado de sofrer com disfagia (dificuldade para engolir) se for realizada uma válvula total de 360 graus (Nissen). Nesses casos, o cirurgião deve considerar técnicas de válvulas parciais ou até contraindicar o procedimento, confirmando que a cirurgia não melhora a motilidade prévia.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  },
+  {
+    "id": "AJUDA_3eafe038-40d4-455e-8b9e-d825a1f95d10",
+    "originalId": "3eafe038-40d4-455e-8b9e-d825a1f95d10",
+    "statement": "Dentre as alternativas a seguir, qual está correta sobre a epidemiologia da doença meningocócica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A transmissão da Neisseria meningitidis ocorre predominantemente no domicílio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Menores de 5 anos de idade são os mais frequentes portadores do agente etiológico na orofaringe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ocorrência da doença meningocócica é sazonal, predominando nos meses quentes e úmidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A patogenicidade e a infectividade da Neisseria meningitidis são altas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) Correta: A transmissão da *Neisseria meningitidis* ocorre de pessoa para pessoa através de gotículas e secreções da nasofaringe de portadores assintomáticos ou doentes. Para que a transmissão seja efetiva, é necessário um contato próximo e prolongado, o que explica por que o ambiente domiciliar é o principal local de propagação do agente. Outros cenários de aglomeração, como dormitórios e creches, também apresentam risco elevado.\n\nAlternativa (b) Incorreta: Embora as crianças menores de 5 anos apresentem as maiores taxas de incidência da doença invasiva, elas não são as maiores portadoras do agente na orofaringe. O estado de portador assintomático, que é o reservatório da bactéria, atinge suas maiores prevalências em adolescentes e adultos jovens.\n\nAlternativa (c) Incorreta: A doença meningocócica possui um padrão sazonal característico, mas o aumento do número de casos ocorre tipicamente nos meses de inverno e primavera, marcados pelo clima frio e seco, e não nos meses quentes e úmidos. O ar seco pode facilitar la ocorrência de microlesões na mucosa respiratória, favorecendo a invasão bacteriana.\n\nAlternativa (d) Incorreta: Epidemiologicamente, o meningococo é considerado um agente de baixa infectividade e baixa patogenicidade. Isso ocorre porque a grande maioria das pessoas que entram em contato com a bactéria torna-se apenas portadora assintomática, sem desenvolver a doença. A doença invasiva é um fenômeno raro em comparação ao vasto número de pessoas colonizadas na população. No entanto, é importante não confundir esses conceitos com a gravidade da doença, que é muito alta uma vez que o processo invasivo se estabelece.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas",
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  },
+  {
+    "id": "AJUDA_3ebe17ab-108f-44f7-baf3-7ff664efea96",
+    "originalId": "3ebe17ab-108f-44f7-baf3-7ff664efea96",
+    "statement": "Uma criança de 2 anos de idade, do sexo feminino, com diagnóstico prévio de doença falciforme foi levada pelos pais ao hospital com quadro de astenia, palidez e dor abdominal, com piora nas últimas horas. Ao exame físico, a criança foi notada letárgica e com baço palpável a cerca de 5 cm do rebordo costal esquerdo. Com base nessa situação hipotética, assinale a alternativa que apresenta a conduta adequada em relação à criança.",
+    "options": [
+      {
+        "id": "A",
+        "text": "hidratação, analgesia e realização de ultrassom de abdome para confirmar esplenomegalia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administração de antibióticos de amplo espectro e hidratação venosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar transfusão de concentrado de hemácias com urgência e manter monitorização clínica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "entrar em contato com equipe de cirurgia para realização esplenectomia de urgência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "coletar sorologia para parvovírus B19 e iniciar terapia com antibiótico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito — criança com doença falciforme, palidez súbita, dor abdominal e aumento do volume esplênico (esplenomegalia) — é clássico de uma Crise de Sequestro Esplênico Agudo. Esta é uma das emergências mais graves na pediatria para pacientes falcifórmicos, ocorrendo principalmente em crianças pequenas (entre 6 meses e 5 anos) que ainda possuem o baço funcionante. No sequestro, uma grande quantidade de sangue fica retida subitamente no baço, levando à queda rápida da hemoglobina e ao choque hipovolêmico.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a hidratação e a analgesia façam parte do suporte, o diagnóstico de sequestro esplênico em um paciente com doença falciforme conhecida é eminentemente clínico. Perder tempo solicitando ultrassom de abdome em um quadro de instabilidade hemodinâmica (letargia e palidez) atrasa o tratamento definitivo e aumenta a mortalidade.\n\nb) Incorreta. O uso de antibióticos de amplo espectro é preconizado em casos de febre (crise febril ou suspeita de infecção bacteriana grave), o que não foi relatado no caso. O foco aqui deve ser a reposição da volemia e da massa de hemácias perdida para o baço.\n\nc) Correta. A conduta imediata no sequestro esplênico agudo consiste na restauração do volume circulante. A transfusão de concentrado de hemácias é fundamental para reverter a anemia grave e o choque. É necessária cautela na quantidade transfundida (geralmente volumes menores, entre 5 a 10 ml/kg), pois, conforme o quadro reverte, o baço pode \"devolver\" o sangue sequestrado para a circulação, causando hiperviscosidade sanguínea. A monitorização clínica rigorosa é indispensável.\n\nd) Incorreta. A esplenectomia (retirada do baço) está indicada na doença falciforme após a estabilização do primeiro episódio de sequestro ou em casos de sequestros recorrentes, como forma de prevenção. Realizá-la de urgência durante a fase aguda de choque e anemia grave elevaria drasticamente o risco cirúrgico e anestésico sem necessidade, já que a transfusão resolve a fase aguda.\n\ne) Incorreta. A infecção por Parvovírus B19 está associada à Crise Aplástica. Na crise aplástica, o paciente apresenta anemia grave e queda de reticulócitos, porém, diferentemente do sequestro esplênico, não há aumento do baço. Além disso, o tratamento da crise aplástica foca na transfusão, e não em antibióticos.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  },
+  {
+    "id": "AJUDA_3ec68d2b-4242-44a4-bb2c-09bab2961756",
+    "originalId": "3ec68d2b-4242-44a4-bb2c-09bab2961756",
+    "statement": "Paciente vítima de acidente de trânsito moto X carreta apresentou traumatismo craniano. Na avaliação do ATLS na Escala de Coma de Glasgow (ECG) estava apresentando abertura ocular ao comando de voz, emitindo sons inaudíveis, localiza a dor na resposta motora e pupilas isofotorreagentes. A pontuação da ECG deste paciente, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "13",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "8",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "7",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "9",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "10",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "AVISO IMPORTANTE: ESTA QUESTÃO FOI ANULADA POR INCONSISTÊNCIA NO GABARITO OFICIAL.\n\nEmbora o gabarito preliminar tenha indicado a letra (b) como correta, a aplicação técnica dos critérios da Escala de Coma de Glasgow (ECG) resulta em uma pontuação de 10, o que tornaria a alternativa (e) a correta. Abaixo, realizamos a decomposição clínica baseada no enunciado:\n\n1. Abertura Ocular: O paciente abre os olhos ao comando de voz (estímulo sonoro). Pontuação: 3.\n(Espontânea = 4; Ao som = 3; À pressão = 2; Ausente = 1).\n\n2. Resposta Verbal: O paciente emite \"sons inaudíveis\" (sons incompreensíveis/gemidos). Pontuação: 2.\n(Orientado = 5; Confuso = 4; Palavras isoladas = 3; Sons incompreensíveis = 2; Ausente = 1).\n\n3. Resposta Motora: O paciente \"localiza a dor\". Pontuação: 5.\n(Obedece comandos = 6; Localiza dor = 5; Flexão normal/retirada = 4; Flexão anormal = 3; Extensão = 2; Ausente = 1).\n\nCálculo Final: 3 (Ocular) + 2 (Verbal) + 5 (Motor) = 10 pontos.\n\nAnálise das alternativas:\n\na) Incorreta. 13 pontos indicariam um trauma leve, onde o paciente estaria, no mínimo, pronunciando palavras ou confuso, com abertura ocular espontânea.\n\nb) Incorreta (Gabarito Preliminar da Banca). O valor 8 é o limite para definição de coma grave e indicação de intubação. Para somar 8, o paciente precisaria ter uma resposta motora inferior (como flexão inespecífica) ou ausência de abertura ocular ao som.\n\nc) Incorreta. 7 pontos indicariam um quadro neurológico mais deprimido, geralmente com decorticação ou ausência total de resposta verbal e ocular.\n\nd) Incorreta. 9 pontos seriam obtidos se o paciente apenas retirasse o membro à dor (flexão normal) em vez de localizar, ou se não emitisse som algum.\n\ne) Correta (Gabarito Técnico). De acordo com a semiologia neurológica do ATLS, a soma exata dos parâmetros descritos (3 + 2 + 5) é 10. A questão foi anulada justamente porque a banca assinalou a alternativa B inicialmente, ignorando o cálculo matemático correto.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  },
+  {
+    "id": "AJUDA_3ed5d319-6586-4ef4-ac5f-4d8bff802d85",
+    "originalId": "3ed5d319-6586-4ef4-ac5f-4d8bff802d85",
+    "statement": "Diversas medicações utilizadas com os mais diferentes intuitos podem causar efeitos adversos. Assinale a alternativa que NÃO apresenta uma relação entre uma medicação e um efeito adverso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quinolona e ruptura do tendão de Aquiles.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Losartana e crise de gota.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Linezolida e neuropatia óptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Propiltiouracil e vasculite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Paroxetina e hiponatremia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento de farmacologia clínica aplicada, focando em efeitos colaterais específicos e \"pegadinhas\" frequentes em provas de residência. O objetivo é identificar a associação incorreta entre droga e efeito adverso.\n\nAlternativa a) Incorreta: As Quinolonas (como ciprofloxacino e levofloxacino) estão classicamente associadas a danos nos tendões. Elas exercem toxicidade direta sobre os tenócitos e inibem a síntese de colágeno. O risco de ruptura do tendão de Aquiles é maior em pacientes idosos, em uso de corticosteroides ou com doença renal crônica. A relação é verdadeira.\n\nAlternativa b) Correta (Gabarito): Esta é a associação falsa solicitada pela questão. A Losartana é, na verdade, um medicamento uricosúrico, o que significa que ela aumenta a excreção de ácido úrico pelos rins. Portanto, ela ajuda a reduzir os níveis de ácido úrico no sangue e é a medicação anti-hipertensiva preferencial para pacientes que sofrem de gota. Medicamentos que tipicamente causam crises de gota por aumentarem a reabsorção de urato são os diuréticos tiazídicos (ex: hidroclorotiazida) e os diuréticos de alça (ex: furosemida).\n\nAlternativa c) Incorreta: A Linezolida é um antibiótico excelente para Gram-positivos multiresistentes, mas seu uso prolongado (geralmente mais de 28 dias) está ligado à toxicidade mitocondrial. Isso pode resultar em mielossupressão, neuropatia periférica e neuropatia óptica. A relação é verdadeira.\n\nAlternativa d) Incorreta: O Propiltiouracil (PTU), usado no tratamento do hipertireoidismo, pode induzir a formação de anticorpos ANCA, levando a quadros de vasculite sistêmica. Pode se manifestar com púrpura cutânea, acometimento renal ou pulmonar. A relação é verdadeira.\n\nAlternativa e) Incorreta: A Paroxetina, assim como outros Inibidores Seletivos da Recaptação de Serotonina (ISRS), é uma causa comum de hiponatremia, especialmente em idosos. O mecanismo ocorre via Síndrome de Secreção Inapropriada de Hormônio Antidiurético (SIADH), levando à retenção de água livre e diluição do sódio plasmático. A relação é verdadeira.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Artrites Microcristalinas",
+      "Vasculites",
+      "Psicofarmacologia"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:01.401Z"
+  }
+]

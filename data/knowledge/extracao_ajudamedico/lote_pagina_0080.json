@@ -1,0 +1,517 @@
+[
+  {
+    "id": "AJUDA_1520cf7a-8534-4c36-a81e-2edfcd71b2e1",
+    "originalId": "1520cf7a-8534-4c36-a81e-2edfcd71b2e1",
+    "statement": "No quarto dia de pós-operatório, a causa mais provável de febre é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hematoma no sítio cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "seroma na ferida operatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "atelectasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "infecção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "bronco-aspiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O manejo da febre no pós-operatório é orientado pela cronologia dos eventos desde a cirurgia. Didaticamente, dividimos as causas de acordo com o dia em que o sintoma surge. No quarto dia de pós-operatório, o foco diagnóstico recai sobre processos infecciosos.\n\nAlternativa a) Incorreta. O hematoma é uma coleção de sangue que geralmente se forma nas primeiras 24 horas após a cirurgia. Embora a reabsorção de grandes hematomas possa causar um estado inflamatório com febre leve, não é a causa estatisticamente mais provável no quarto dia quando comparada a processos infecciosos.\n\nAlternativa b) Incorreta. O seroma é o acúmulo de fluido linfático e soro no espaço morto da ferida. Por si só, o seroma é uma coleção estéril e indolor que raramente causa febre. Caso o paciente com seroma apresente febre, deve-se suspeitar de uma complicação, como a infecção dessa coleção.\n\nAlternativa c) Incorreta. A atelectasia (colapso de alvéolos) é a causa mais comum de febre no pós-operatório imediato, especificamente nas primeiras 24 a 48 horas. No quarto dia, a febre de origem pulmonar tende a estar mais associada à pneumonia estabelecida do que à simples atelectasia.\n\nAlternativa d) Correta. A partir do terceiro dia de pós-operatório, as causas infecciosas tornam-se as mais prováveis. Nesse período, destacam-se três focos principais: a Infecção do Trato Urinário (ITU), geralmente associada ao uso de sonda vesical de demora; a pneumonia, decorrente da evolução de quadros respiratórios ou da imobilidade; e o início dos sintomas de Infecção do Sítio Cirúrgico (ISC), que costuma se manifestar plenamente entre o quinto e o sétimo dia, mas já pode iniciar picos febris no quarto dia.\n\nAlternativa e) Incorreta. A broncoaspiração costuma ocorrer no momento da indução anestésica ou na fase de recuperação pós-anestésica imediata. O quadro clínico decorrente (pneumonite química ou pneumonia aspirativa) manifesta-se precocemente, nas primeiras horas ou nos dois primeiros dias, não sendo a principal suspeita para uma febre iniciada apenas no quarto dia.\n\nGabarito: Letra (d).",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.049Z"
+  },
+  {
+    "id": "AJUDA_152371f6-86ca-400e-8682-1c5c85173af8",
+    "originalId": "152371f6-86ca-400e-8682-1c5c85173af8",
+    "statement": "Homem 40 anos, úlcera duodenal ativa, H. pylori positiva. Considerando a necessidade de tratamento, qual o melhor esquema inicial de erradicação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IBP isolado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Claritromicina 7 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IBP + metronidazol 3 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Subsalicilato de bismuto",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "IBP + amoxicilina + claritromicina 14 dias",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A erradicação do *Helicobacter pylori* é o pilar do tratamento da úlcera duodenal associada a essa bactéria, pois a eliminação do microrganismo altera a história natural da doença, acelerando a cicatrização e reduzindo drasticamente as taxas de recidiva e complicações. O tratamento de primeira linha no Brasil e em diversos consensos internacionais baseia-se na terapia tripla.\n\nAlternativa a: Incorreta. O inibidor da bomba de prótons (IBP) isolado é eficaz para promover a cicatrização da úlcera e aliviar os sintomas ao reduzir a acidez gástrica. No entanto, ele não possui capacidade de erradicar a bactéria. Se o *H. pylori* não for eliminado, a chance de a úlcera retornar após a suspensão do IBP é muito alta.\n\nAlternativa b: Incorreta. O uso de antibiótico de forma isolada (monoterapia) nunca é indicado para o *H. pylori*. Isso ocorre porque a eficácia é extremamente baixa e o risco de induzir resistência bacteriana, especialmente à claritromicina, é muito elevado. Além disso, o tempo de 7 dias é considerado insuficiente pelas diretrizes atuais.\n\nAlternativa c: Incorreta. Embora o metronidazol possa ser utilizado em esquemas de erradicação (geralmente quando há alergia à penicilina ou em terapias de resgate), o período de 3 dias é insuficiente. Qualquer esquema de erradicação requer, no mínimo, 7 a 14 dias de tratamento para ser eficaz.\n\nAlternativa d: Incorreta. O subsalicilato de bismuto tem propriedades citoprotetoras e alguma atividade antimicrobiana, mas não tem potência para erradicar a infecção quando usado isoladamente. Ele costuma ser reservado para compor esquemas de terapia quádrupla (com IBP e mais dois ou três antibióticos).\n\nAlternativa e: Correta. Esta alternativa descreve a terapia tripla clássica, composta por um IBP em dose plena (duas vezes ao dia), amoxicilina (1 g duas vezes ao dia) e claritromicina (500 mg duas vezes ao dia). Atualmente, as principais diretrizes, incluindo o Consenso Brasileiro de *H. pylori* e o Consenso de Maastricht, recomendam a duração de 14 dias para este esquema, visando otimizar as taxas de erradicação diante do aumento global da resistência bacteriana.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.049Z"
+  },
+  {
+    "id": "AJUDA_152fccd5-af41-42b7-8c98-33a8171f79f0",
+    "originalId": "152fccd5-af41-42b7-8c98-33a8171f79f0",
+    "statement": "Adolescente de 14 anos, sexo masculino, é levado ao pronto-socorro após um episódio de síncope. O paciente estava assistindo a um jogo de futebol quando de repente sentiu náuseas, tontura e sudorese intensa, seguidos de perda transitória da consciência. O episódio durou menos de um minuto e houve recuperação espontânea e completa. A mãe relata que o filho tem histórico de episódios semelhantes em ambientes quentes ou ao ficar muito tempo em pé e, pela recorrência, entende ser algo corriqueiro do filho e que não a preocupa. Não há relatos de convulsões ou traumas associados. O jovem também relata que um primo de segundo grau faleceu subitamente durante a adolescência. Considerando o quadro clínico e a história familiar, qual é a conduta inicial mais adequada para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar o tratamento com betabloqueadores e encaminhar para acompanhamento ambulatorial com cardiologista pediátrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Classificar a síncope como neurocardiogênica e orientar medidas comportamentais, sem a necessidade de investigação complementar imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar o ecocardiograma, a fim de descartar uma causa estrutural cardíaca, como a cardiomiopatia hipertrófica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar um eletrocardiograma (ECG) de 12 derivações para avaliar a síncope e investigar a presença de arritmias, como a síndrome do QT longo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta um adolescente com quadro sugestivo de síncope vasovagal (também chamada de neurocardiogênica), caracterizada por pródromos típicos (náuseas, tontura e sudorese) e gatilhos situacionais (ambiente quente e ortostatismo prolongado). Entretanto, o ponto crucial para a decisão médica nesta questão é o relato de morte súbita em um primo de segundo grau durante a adolescência.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O tratamento farmacológico com betabloqueadores não é a conduta inicial. O manejo da síncope deve começar pelo diagnóstico correto. Além disso, o uso de betabloqueadores para síncope vasovagal possui evidências limitadas e não é a primeira escolha, sendo as medidas comportamentais a base do tratamento inicial.\n\nAlternativa b) Incorreta. Embora os sintomas clínicos e os gatilhos apontem para uma síncope neurocardiogênica, a história familiar de morte súbita em jovem é um sinal de alerta (red flag) que impede o encerramento do caso sem investigação. Ignorar esse dado pode levar ao subdiagnóstico de condições graves, como canalopatias ou miocardiopatias.\n\nAlternativa c) Incorreta. O ecocardiograma é um exame útil para avaliar causas estruturais, como a cardiomiopatia hipertrófica. No entanto, ele não é o primeiro exame a ser solicitado na rotina de investigação da síncope. O eletrocardiograma é mais abrangente como triagem inicial, pois detecta tanto sinais indiretos de alterações estruturais quanto alterações elétricas primárias que o ecocardiograma não identifica.\n\nAlternativa d) Correta. De acordo com as diretrizes da Sociedade Brasileira de Cardiologia e de entidades internacionais, todo paciente que apresenta síncope deve realizar, obrigatoriamente, um eletrocardiograma (ECG) de 12 derivações. No contexto deste paciente, o ECG é essencial para rastrear condições arritmogênicas potencialmente fatais associadas à morte súbita familiar, como a Síndrome do QT Longo, Síndrome de Brugada, pré-excitação ventricular (Wolff-Parkinson-White) ou sinais de cardiomiopatia. É um exame de baixo custo, alta disponibilidade e fundamental para a estratificação de risco.\n\nResumo do raciocínio: Diante de uma síncope em jovem, mesmo com história clínica favorável à etiologia benigna, a presença de histórico familiar de morte súbita torna mandatória a realização do eletrocardiograma como primeiro passo da investigação complementar.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Síncope"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.049Z"
+  },
+  {
+    "id": "AJUDA_15443c35-ff2c-446b-998a-48e33aa0701b",
+    "originalId": "15443c35-ff2c-446b-998a-48e33aa0701b",
+    "statement": "Homem, 45 anos, tabagista, com história de dor abdominal difusa há 12 horas, que evoluiu para dor localizada em fossa ilíaca direita. Ao exame físico, apresenta dor à palpação nessa região, defesa muscular e sinal de Blumberg positivo. Não há antecedentes cirúrgicos relevantes. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diverticulite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Colecistite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Úlcera péptica perfurada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pancreatite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\nO paciente apresenta dor abdominal com migração (dor que inicia difusa e depois se localiza na fossa ilíaca direita), um fenômeno conhecido como Cronologia de Murphy. O exame físico revela sinal de Blumberg positivo, o que indica irritação peritoneal. Em um homem de 45 anos, essas características são típicas de processos inflamatórios no quadrante inferior direito.\n\nAlternativa a: Está incorreta segundo o gabarito oficial. Na prática clínica, a apendicite aguda é a causa mais comum de dor que migra para a fossa ilíaca direita com irritação peritoneal. Entretanto, o enunciado e o gabarito sugerem o foco em um diagnóstico diferencial que também acomete adultos nessa faixa etária.\n\nAlternativa b: Está correta. A diverticulite aguda, embora ocorra mais frequentemente no cólon sigmoide (lado esquerdo), pode acometer o ceco ou o cólon ascendente. A diverticulite cecal é um diagnóstico diferencial importante da apendicite aguda, pois apresenta sinais e sintomas praticamente idênticos, incluindo dor na fossa ilíaca direita e sinais de peritonite localizada. Em pacientes acima de 40 anos, essa possibilidade deve ser considerada.\n\nAlternativa c: Está incorreta. A colecistite aguda manifesta-se com dor no hipocôndrio direito (quadrante superior) que pode irradiar para a escápula. O sinal característico ao exame físico é o sinal de Murphy (pausa na inspiração profunda durante a palpação do ponto cístico), e não a dor localizada em fossa ilíaca direita.\n\nAlternativa d: Está incorreta. A úlcera péptica perfurada caracteriza-se por um início súbito de dor muito intensa e generalizada (abdome agudo perfurativo). O exame físico costuma mostrar abdome em tábua (rigidez generalizada) e, nos exames de imagem, é comum a presença de pneumoperitôneo.\n\nAlternativa e: Está incorreta. A pancreatite aguda apresenta dor em andar superior do abdome, classicamente descrita como dor em barra com irradiação para o dorso, acompanhada de náuseas e vômitos precoces, sem a migração típica para a fossa ilíaca direita descrita no caso.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.049Z"
+  },
+  {
+    "id": "AJUDA_1544fd0f-03d4-46a5-ae8e-086ffca603fe",
+    "originalId": "1544fd0f-03d4-46a5-ae8e-086ffca603fe",
+    "statement": "As políticas de Promoção da Saúde, especialmente após a institucionalização da Política Nacional de Promoção da Saúde (PNPS, 2014), consolidam uma perspectiva que ultrapassa abordagens comportamentais, articulando determinantes sociais, participação social e territorialização das ações. Considerando essa orientação teórico-política e os marcos internacionais que influenciaram o campo, qual alternativa traduz de forma mais consistente os pressupostos da Promoção da Saúde contemporânea?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Implementar intervenções informativas restritas ao setor saúde, centradas na responsabilização individual pelos modos de vida, sem considerar condicionantes estruturais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Formular programas direcionados à mudança de hábitos, priorizando estratégias verticalizadas e desvinculadas de políticas urbanas, educacionais e culturais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Priorizar a alocação de recursos em serviços especializados e protocolos clínicos, entendendo que a qualificação da atenção biomédica é suficiente para produzir melhorias sustentáveis nos determinantes sociais da saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desenvolver estratégias intersetoriais e territorialmente ancoradas, articulando educação, assistência social, cultura, mobilidade urbana e políticas ambientais para modificar condições de vida e fortalecer autonomia coletiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Direcionar recursos para tecnologias farmacológicas preventivas, assumindo que inovação tecnológica é o principal vetor de melhoria dos indicadores populacionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. Essa abordagem reflete uma visão reducionista e ultrapassada, centrada apenas na mudança de comportamentos individuais e na culpabilização do sujeito por sua condição de saúde. A Promoção da Saúde contemporânea, conforme a PNPS 2014, reconhece que o processo saúde-doença é multicausal e depende de fatores estruturais que fogem ao controle estritamente individual.\n\nAlternativa b: Incorreta. Estratégias verticalizadas e desvinculadas de outras políticas públicas ignoram o princípio da transversalidade. A promoção da saúde não deve ser imposta de cima para baixo, mas sim construída de forma participativa e integrada a áreas como urbanismo, educação e cultura para que as mudanças nos hábitos sejam viáveis dentro do contexto social.\n\nAlternativa c: Incorreta. O foco em serviços especializados e protocolos clínicos refere-se à qualificação da Assistência Médica ou Curativa (modelo biomédico), e não à Promoção da Saúde. Embora o acesso a serviços de saúde seja um determinante, a promoção atua antes do adoecimento, incidindo sobre as causas das causas (determinantes sociais) para garantir qualidade de vida sustentável.\n\nAlternativa d: Correta. Esta alternativa traduz com precisão os pressupostos da PNPS e de marcos internacionais como a Carta de Ottawa. Ela destaca a intersetorialidade (parceria entre diferentes setores do governo), a ancoragem territorial (reconhecimento das especificidades de onde as pessoas vivem) e o fortalecimento da autonomia coletiva (empoderamento), buscando transformar as condições de vida para produzir saúde.\n\nAlternativa e: Incorreta. O investimento em tecnologias farmacológicas preventivas refere-se à Prevenção de Doenças (Prevenção Primária ou Secundária), que busca intervir em patologias específicas. A Promoção da Saúde é um conceito mais amplo que foca no bem-estar global e em mudanças socioambientais, não se limitando a intervenções medicamentosas ou inovações puramente tecnológicas.",
+    "exam": "UFRB",
+    "year": 2026,
+    "banca": "UFRB",
+    "uf": "BA",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35674e2a8fdd600c4528186d032722b2534d565f8659f6d532a9977d76ec6035.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2f3a30ed0fd307a6a4fadc82fa84bd78995407514592af81b25948bee1e5d79f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.049Z"
+  },
+  {
+    "id": "AJUDA_1553b5ea-976d-4581-bd35-d20d28be1bf6",
+    "originalId": "1553b5ea-976d-4581-bd35-d20d28be1bf6",
+    "statement": "Uma gestante de 34 anos, portadora de Lúpus Eritematoso Sistêmico (LES) prévio com nefrite lúpica, encontra-se na 28ª semana de gestação. Apresenta elevação súbita da pressão arterial (150/100 mmHg), aumento da proteinúria basal e trombocitopenia. O diagnóstico diferencial entre atividade lúpica (nefrite) e pré-eclâmpsia sobreposta é complexo. Assinale a alternativa que aponta o marcador clínico-laboratorial que favorece o diagnóstico de atividade da doença lúpica (Flare) em detrimento da pré-eclâmpsia.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de cilindros hemáticos (sedimento urinário ativo) é patognomônico de pré-eclâmpsia, indicando lesão endotelial glomerular aguda (endoteliose capilar), enquanto no Lúpus a proteinúria é isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Consumo (queda) dos níveis de complemento sérico (C3 e C4) e elevação dos títulos de anti-DNA de dupla hélice, pois na pré-eclâmpsia pura os níveis de complemento geralmente permanecem normais ou elevados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A presença de hipertensão arterial grave é exclusiva da pré-eclâmpsia; no flare lúpico renal, a manifestação predominante é a insuficiência renal sem hipertensão significativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Elevação do ácido úrico e da desidrogenase lática (DHL), que são marcadores específicos de nefrite lúpica ativa e raramente se alteram na pré-eclâmpsia grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "EXPLICAÇÃO DA QUESTÃO:\n\nO diagnóstico diferencial entre a atividade lúpica (nefrite) e a pré-eclâmpsia em gestantes é um dos maiores desafios da obstetrícia de alto risco, pois ambas as condições compartilham características clínicas e laboratoriais semelhantes, como hipertensão, aumento de proteinúria e trombocitopenia.\n\nAlternativa a) Incorreta. A presença de cilindros hemáticos e hematúria (conhecida como sedimento urinário ativo) é característica marcante de glomerulonefrites, como a nefrite lúpica, e não da pré-eclâmpsia. Na pré-eclâmpsia, embora ocorra a lesão histológica clássica chamada endoteliose capilar glomerular, o sedimento urinário costuma ser \"limpo\" ou \"inocente\", apresentando proteinúria isolada sem a presença de cilindros celulares.\n\nAlternativa b) Correta. Este é o diferencial laboratorial clássico e mais confiável. A atividade do lúpus eritematoso sistêmico (flare), especialmente o acometimento renal, está associada ao consumo de proteínas do sistema complemento (queda de C3 e C4) e à elevação dos títulos de anticorpos anti-dsDNA (anti-DNA de dupla hélice). Isso ocorre devido à formação de imunocomplexos e ativação da cascata do complemento. Na pré-eclâmpsia pura, os níveis de complemento sérico geralmente permanecem normais ou podem até estar elevados, pois não há o mecanismo de consumo por imunocomplexos típico do lúpus.\n\nAlternativa c) Incorreta. A hipertensão arterial não é exclusiva da pré-eclâmpsia. A nefrite lúpica em atividade frequentemente cursa com hipertensão arterial significativa, resultante da lesão inflamatória renal e ativação do sistema renina-angiotensina-aldosterona. Portanto, a presença de pressão alta não ajuda a isolar o diagnóstico de pré-eclâmpsia nesse cenário.\n\nAlternativa d) Incorreta. O ácido úrico e a desidrogenase lática (DHL) são, na verdade, marcadores sugestivos de pré-eclâmpsia e não de atividade lúpica. O ácido úrico elevado é um marcador precoce de pré-eclâmpsia (devido à redução do clearance renal de urato), e a DHL elevada indica sofrimento celular ou hemólise microangiopática (comum na síndrome HELLP), sendo critérios de gravidade na pré-eclâmpsia.\n\nResumo Didático: \n- Sugere lúpus (flare): queda de C3/C4, anti-dsDNA elevado, sedimento urinário ativo (cilindros e hematúria).\n- Sugere pré-eclâmpsia: ácido úrico elevado, complemento normal, sedimento urinário inocente.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.049Z"
+  },
+  {
+    "id": "AJUDA_15559df6-a74b-450a-b6e6-2787c7ea0750",
+    "originalId": "15559df6-a74b-450a-b6e6-2787c7ea0750",
+    "statement": "Menino de 11 anos, chega ao consultório de endocrinologia pediátrica com seus pais, que estão preocupados, pois o filho é o \"menor da turma\". Sem doenças de base, apenas bronquiolite aos 2 meses sem necessidade de internação. Ao exame f: E 1,31 m (metros) - 1 DP (desvio padrão), 26kg, testículo de 3 mL e pênis de aspecto infantil. Rx de punhos com idade óssea compatível com 8 anos. No caso acima, para confirmar o diagnóstico, o próximo passo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar hemograma, urina I, exame de fezes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever GH como teste terapêutico por 2 meses, com a dose ajustada para o peso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar dosagem do hormônio do crescimento (GH)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retorno para avaliar velocidade de crescimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Dosagem de TSH, IgE e GH sensível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente é um menino de 11 anos com altura de 1,31 m, o que corresponde a um desvio padrão (DP) de -1. É fundamental notar que, tecnicamente, ele não possui baixa estatura, pois esta é definida como altura abaixo de -2 DP para a idade e o sexo. Além disso, apresenta atraso da idade óssea (8 anos para uma idade cronológica de 11 anos) e exame físico compatível com estágio pré-puberal (testículos de 3 mL).\n\nNesse cenário, as duas principais hipóteses diagnósticas para um crescimento lento com atraso da idade óssea são a Baixa Estatura Familiar e o Atraso Constitucional do Crescimento e da Puberdade (ACCP). No ACCP, o ritmo de crescimento é normal para a idade óssea, mas há um atraso na maturação biológica.\n\nO parâmetro clínico mais importante para diferenciar variantes da normalidade de condições patológicas na endocrinologia pediátrica é a Velocidade de Crescimento (VC).\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA avaliação da velocidade de crescimento é o \"padrão-ouro\" inicial para qualquer investigação de distúrbio do crescimento. Como o paciente está dentro dos limites de normalidade estatística (-1 DP) e possui idade óssea atrasada, o acompanhamento por 6 a 12 meses para calcular a VC determinará se o crescimento é fisiológico (VC normal) ou se há uma patologia subjacente (VC baixa), como deficiência de GH ou hipotireoidismo. Sem a VC, não se pode afirmar que há um problema de saúde.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Solicitar hemograma, urina I, exame de fezes: Embora façam parte da triagem inicial para doenças sistêmicas que causam baixa estatura, esses exames seriam indicados se o paciente estivesse abaixo de -2 DP ou se já houvesse evidência de queda na velocidade de crescimento. No momento, o passo clínico mais prudente e diagnóstico é a observação da evolução do crescimento.\n\nb) Prescrever GH como teste terapêutico: Esta conduta é contraindicada. O hormônio do crescimento (GH) tem indicações precisas e não deve ser usado como \"teste\" sem diagnóstico firmado de deficiência de GH ou de outras condições autorizadas (como síndrome de Turner ou restrição de crescimento intrauterino sem recuperação).\n\nc) Solicitar dosagem do hormônio do crescimento (GH): A dosagem basal de GH não tem valor diagnóstico, pois o hormônio é secretado em pulsos, principalmente durante o sono. Para diagnosticar a deficiência de GH, seriam necessários testes de estímulo, que só são solicitados após a constatação de uma velocidade de crescimento baixa.\n\ne) Dosagem de TSH, IgE e GH sensível: O TSH é um exame útil na triagem, mas a dosagem de IgE não tem relação direta com a investigação de baixa estatura (salvo suspeita muito específica de alergias graves que causem má absorção). \"GH sensível\" não é um termo ou exame padrão para essa investigação inicial. Novamente, a clínica (velocidade de crescimento) precede esses exames laboratoriais em um paciente com -1 DP.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.049Z"
+  },
+  {
+    "id": "AJUDA_155a606d-1026-4954-9f95-fb31eb660d71",
+    "originalId": "155a606d-1026-4954-9f95-fb31eb660d71",
+    "statement": "Em relação ao carcinoma hepatocelular (CHC), qual das alternativas descreve corretamente um critério de ressecabilidade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de trombo em veia porta principal é indicação clássica de hepatectomia ampliada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Child-Pugh B é contraindicação absoluta à ressecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Volume de fígado remanescente funcional deve ser ≥ 20% em fígado normal e ≥ 40% em fígado cirrótico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipertensão portal clinicamente significativa não interfere na decisão cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A presença de ascite controlada não contraindica hepatectomia maior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO:\n\nO tratamento cirúrgico do Carcinoma Hepatocelular (CHC) exige uma avaliação criteriosa da reserva funcional hepática e da extensão da doença para garantir a segurança do procedimento e a sobrevida do paciente.\n\nAlternativa (a) INCORRETA: A presença de trombo tumoral na veia porta principal é considerada uma invasão macrovascular, o que classifica o paciente como estágio C (Avançado) na classificação de Barcelona (BCLC). Nesses casos, a cirurgia é contraindicada devido ao altíssimo risco de recidiva sistêmica precoce e ao comprometimento hemodinâmico do fígado. O tratamento de escolha costuma ser a terapia sistêmica.\n\nAlternativa (b) INCORRETA: Embora a ressecção seja classicamente indicada para pacientes Child-Pugh A, o Child-Pugh B não é uma contraindicação absoluta em todos os cenários mundiais (alguns centros orientais operam pacientes Child B selecionados), mas, no contexto de provas e diretrizes principais (BCLC), ele é considerado um impeditivo para ressecções seguras. No entanto, a alternativa (c) apresenta um conceito técnico mais preciso sobre a segurança da massa hepática.\n\nAlternativa (c) CORRETA: Esta alternativa descreve o conceito de Remanescente Hepático Futuro (RHF). Para evitar a insuficiência hepática pós-hepatectomia, é necessário que o volume de parênquima que permanecerá após a cirurgia seja suficiente. Em pacientes com fígado sem cirrose (normal), 20% a 25% de volume é suficiente. Em fígados com cirrose ou lesão crônica (Child A), o parênquima é menos eficiente, exigindo um remanescente maior, de pelo menos 40%, para manter as funções metabólicas e sintéticas.\n\nAlternativa (d) INCORRETA: A hipertensão portal clinicamente significativa (definida por gradiente de pressão venosa hepática superior a 10 mmHg, presença de varizes esofágicas ou esplenomegalia com plaquetopenia abaixo de 100.000/mm³) é um dos fatores mais importantes na decisão cirúrgica. Ela é um forte preditor de descompensação hepática e morte no pós-operatório, sendo frequentemente uma contraindicação à ressecção em favor do transplante hepático ou de terapias ablativas.\n\nAlternativa (e) INCORRETA: A ascite é um marcador de hipertensão portal e de reserva funcional pobre (frequentemente elevando a pontuação de Child-Pugh). A presença de ascite, mesmo que controlada com diuréticos, contraindica grandes ressecções pelo altíssimo risco de falência hepática e deiscência de ferida operatória por extravasamento de líquido ascítico.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.050Z"
+  },
+  {
+    "id": "AJUDA_155b906a-4ebf-4b66-897f-9fc0a16ed71b",
+    "originalId": "155b906a-4ebf-4b66-897f-9fc0a16ed71b",
+    "statement": "Homem, 27 anos, vítima de acidente de motocicleta, chega ao pronto-socorro com Glasgow 13 (abertura ocular 3, resposta verbal 4, resposta motora 6), queixa-se de cefaleia intensa e apresenta vômitos repetidos. Ao exame, não há déficit focal. A tomografia de crânio evidenciou contusão cerebral frontal direita de 15 mm, sem desvio da linha média. Considerando o quadro apresentado, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de contusão cerebral com Glasgow 13 indica a realização imediata de craniectomia descompressiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso profilático de anticonvulsivantes em traumatismo craniano moderado não é indicado, mesmo nos primeiros 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A presença de contusão cerebral é indicativo de ruptura da artéria meníngea média, sendo indicativo de cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A contusão cerebral pode evoluir com aumento de volume nas primeiras 48 horas, exigindo reavaliação clínica e radiológica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A presença de vômitos em TCE indica obrigatoriamente intervenção neurocirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo do traumatismo cranioencefálico (TCE) moderado (Glasgow 9-13) em um paciente com contusão cerebral parenquimatosa.\n\nAnálise das alternativas:\n\na) Incorreta. A indicação de craniectomia descompressiva ou de drenagem cirúrgica de uma contusão depende do volume da lesão (geralmente > 20-30 cm³), do efeito de massa (desvio de linha média > 5 mm) e da deterioração neurológica. Uma contusão de 15 mm em um paciente estável (Glasgow 13) sem desvio de linha média tem indicação inicial de tratamento conservador e observação rigorosa.\n\nb) Incorreta. O uso profilático de anticonvulsivantes (como fenitoína ou levetiracetam) é indicado nos primeiros 7 dias após o trauma em pacientes com lesões estruturais cerebrais (como contusões, hematomas ou fraturas com afundamento) para prevenir crises precoces, que poderiam agravar a lesão secundária.\n\nc) Incorreta. A ruptura da artéria meníngea média está classicamente associada ao hematoma extradural (epidural), que ocorre no espaço entre a dura-máter e o crânio. A contusão cerebral é uma lesão do parênquima cerebral decorrente de forças de aceleração e desaceleração (mecanismo de golpe e contragolpe).\n\nd) Correta. Contusões cerebrais são lesões dinâmicas. Nas primeiras 24 a 48 horas, é comum o fenômeno de expansão da lesão ou aumento do edema perilesional (conhecido como efeito de \"florescimento\" ou blossoming), o que pode levar à deterioração clínica. Por isso, a reavaliação clínica frequente e a repetição da tomografia de crânio em 12-24 horas são condutas padrão no manejo desses pacientes.\n\ne) Incorreta. Vômitos são sintomas comuns no TCE e indicam a necessidade de realização de tomografia de crânio (conforme critérios de Brasília ou New Orleans), mas não são, por si sós, indicativos de intervenção cirúrgica imediata. A cirurgia é decidida com base no estado neurológico e nos achados radiológicos de efeito de massa.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Trauma",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.050Z"
+  },
+  {
+    "id": "AJUDA_156dc7fc-7e1d-4f23-aaaa-6f3800a681dd",
+    "originalId": "156dc7fc-7e1d-4f23-aaaa-6f3800a681dd",
+    "statement": "Homem de 69 anos, natural da Bahia, tabagista 50 anos/maço vem à Unidade Básica de Saúde com queixa progressiva de dificuldade para se alimentar há 4 meses, tendo perdido 5 kg no período. Refere que, inicialmente, apresentava dificuldade apenas com carnes e com alimentos mais sólidos, mas atualmente tem dificuldade também com líquidos, associada a episódios de regurgitação noturna. Nega odinofagia, hematêmese ou histórico familiar de câncer. Diz também que tem o hábito de tomar água com as refeições para ajudar a empurrar o alimento e refere ter tido conhecidos com doença de Chagas. Ao exame físico, encontra-se em emagrecido, corado, normotenso, sem outras alterações relevantes ao exame clínico.\n\nCom base nesse caso, a conduta inicial adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar esofagografia baritada para diferenciar acalásia primária de neoplasia de esôfago distal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar endoscopia digestiva alta para investigação de obstrução mecânica ou neoplasia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "solicitar manometria esofágica de alta resolução para confirmar o diagnóstico de acalásia secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar nifedipina sublingual e omeprazol, considerando acalásia como diagnóstico mais provável e aguardar resposta clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de disfagia progressiva (inicialmente para sólidos e evoluindo para líquidos), perda ponderal e idade avançada (69 anos), além de carga tabágica expressiva (50 anos/maço). Embora a origem geográfica (Bahia) e o hábito de ingerir líquidos para auxiliar a deglutição sugiram a Doença de Chagas (megaesôfago chagásico), a presença de sinais de alerta (idade, tabagismo e perda de peso) torna obrigatória a exclusão de neoplasia de esôfago como primeira medida.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nEm qualquer paciente idoso com disfagia de início recente e perda de peso, a conduta inicial deve ser a Endoscopia Digestiva Alta (EDA). Esse exame permite a visualização direta da mucosa esofágica, a identificação de lesões estenosantes ou tumorais e a realização de biópsias para confirmação diagnóstica. Além de descartar o câncer de esôfago, a EDA pode sugerir acalásia ao encontrar resíduos alimentares e resistência na passagem pelo esfíncter esofágico inferior (sinal da \"porta fechada\"), mas sua principal função aqui é excluir malignidade.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A esofagografia baritada (estudo contrastado) é útil para avaliar a anatomia do esôfago e o grau de dilatação (classificação de Rezende), mas não é o melhor exame inicial para descartar neoplasia, pois não permite a realização de biópsias. Em casos de suspeita de câncer, a EDA tem prioridade.\n\nAlternativa (c): A manometria esofágica é o exame padrão-ouro para o diagnóstico funcional da acalásia. No entanto, ela deve ser realizada após a exclusão de obstruções mecânicas por EDA. Além disso, existe a entidade chamada \"pseudoacalásia\", em que um tumor no cárdia mimetiza os achados manométricos da acalásia primária. Portanto, a manometria não é a conduta inicial neste cenário.\n\nAlternativa (d): O tratamento empírico com nifedipina (bloqueador de canal de cálcio para relaxar o esfíncter) e omeprazol é totalmente inadequado. Diante de disfagia e perda de peso, retardar o diagnóstico de uma possível neoplasia com tratamento sintomático é um erro grave na prática médica. O diagnóstico deve ser estabelecido antes de qualquer intervenção terapêutica definitiva.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago",
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:42.050Z"
+  }
+]

@@ -1,0 +1,488 @@
+[
+  {
+    "id": "AJUDA_b465a58a-457d-4497-9e04-2a7ac92b0e83",
+    "originalId": "b465a58a-457d-4497-9e04-2a7ac92b0e83",
+    "statement": "Uma criança de 8 anos é levada ao consultório pediátrico com queixa de fadiga intensa, palidez e episódios frequentes de dor abdominal. Ao exame físico, observa-se palidez mucocutânea e esplenomegalia leve. Os exames laboratoriais revelam hemoglobina de 7 g/dL, presença de microcitose e hipocromia nas hemácias, além do aumento de reticulócitos. A eletroforese de hemoglobina demonstra a presença de hemoglobina F e B em níveis elevados. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia Falciforme",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anemia Ferropriva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Talassemia Major",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Anemia Megaloblástica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma criança com anemia moderada a grave (hemoglobina de 7 g/dL), apresentando características de microcitose e hipocromia. A presença de reticulocitose indica que a medula óssea está tentando compensar a perda ou destruição de hemácias, o que aponta para um componente hemolítico ou de resposta medular ativa. A esplenomegalia e a fadiga reforçam o caráter crônico e a gravidade da patologia. O dado definitivo é a eletroforese de hemoglobina, que mostra aumento de hemoglobina F (fetal) e da fração que corresponde à deficiência das cadeias beta (referida no enunciado como B, associada ao aumento de HbA2 e HbF em casos de talassemia).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A anemia falciforme é uma hemoglobinopatia que cursa com anemia hemolítica e episódios de dor, porém as hemácias costumam ser normocíticas e normocrômicas. O diagnóstico por eletroforese revelaria a presença de hemoglobina S (HbS). Embora possa haver aumento de hemoglobina fetal em alguns pacientes, a microcitose não é o achado clássico, a menos que haja uma co-herança com talassemia.\n\nAlternativa b) Incorreta. A anemia ferropriva é a causa mais comum de anemia microcítica e hipocrômica na infância. No entanto, ela é uma anemia hipoproliferativa, o que significa que os reticulócitos estariam baixos ou normais, e não elevados. Além disso, a eletroforese de hemoglobina na deficiência de ferro é normal ou mostra redução da hemoglobina A2, o oposto do que foi descrito.\n\nAlternativa c) Correta. A talassemia major (ou formas de talassemia beta dependentes de transfusão/intermédias) apresenta exatamente o perfil descrito. O defeito na síntese das cadeias beta da hemoglobina gera uma anemia microcítica e hipocrômica acentuada. A hemólise crônica e a hematopoese ineficaz levam à esplenomegalia e à reticulocitose. Na eletroforese, a ausência ou redução de cadeias beta faz com que o organismo produza mais hemoglobina fetal (alfa2 gama2) e hemoglobina A2 (alfa2 delta2) para compensar, confirmando o diagnóstico.\n\nAlternativa d) Incorreta. A anemia megaloblástica, causada geralmente por deficiência de vitamina B12 ou folato, caracteriza-se por ser uma anemia macrocítica (VCM elevado) e não microcítica. O exame de sangue periférico mostraria neutrófilos hipersegmentados e a eletroforese de hemoglobina não apresentaria as alterações descritas de HbF e HbA2.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.136Z"
+  },
+  {
+    "id": "AJUDA_b46c5c21-d0d1-4c2a-8339-ac3d95efe8de",
+    "originalId": "b46c5c21-d0d1-4c2a-8339-ac3d95efe8de",
+    "statement": "Um homem de 25 anos apresenta dor abdominal, há uma semana, no quadrante inferior direito do abdome, febre e leucocitose. A tomografia computadorizada mostra evidências de perfuração do apêndice com abscesso periapendicular. Qual é o tratamento mais apropriado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibióticos intravenosos e drenagem percutânea;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apendicectomia laparoscópica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apendicectomia aberta;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observação e tratamento conservador.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve uma apendicite aguda com evolução de sete dias, o que caracteriza uma apresentação tardia. Quando o paciente apresenta sintomas por mais de cinco dias, geralmente o processo inflamatório já resultou em um bloqueio pelo omento e alças intestinais, formando uma massa inflamatória ou um abscesso periapendicular, como confirmado pela tomografia computadorizada.\n\nAlternativa (a) Correta: Em pacientes estáveis com apendicite complicada por abscesso e evolução prolongada (fase de plastrão ou abscesso), a conduta preferencial é o tratamento conservador inicial. Esta consiste em antibioticoterapia intravenosa de amplo espectro e drenagem percutânea da coleção, orientada por imagem (ultrassonografia ou tomografia), caso o abscesso seja passível de acesso. Essa estratégia visa tratar a infecção e \"esfriar\" o processo inflamatório, evitando uma cirurgia de urgência em tecidos muito friáveis, o que reduz o risco de complicações graves, como fístulas entéricas ou a necessidade de ressecções intestinais extensas (hemicolectomias).\n\nAlternativa (b) Incorreta: Embora a via laparoscópica seja o padrão-ouro para apendicites precoces, realizá-la em um contexto de abscesso bloqueado com uma semana de evolução é tecnicamente difícil. A intensa inflamação e a aderência entre as alças intestinais aumentam consideravelmente o risco de lesões iatrogênicas e a necessidade de conversão.\n\nAlternativa (c) Incorreta: A apendicectomia aberta imediata neste cenário também é desencorajada como primeira linha. A tentativa de realizar a exérese do apêndice em meio a um bloqueio inflamatório firme frequentemente resulta em sangramentos e danos a estruturas adjacentes, apresentando maior morbidade do que a drenagem seguida de tratamento clínico.\n\nAlternativa (d) Incorreta: O tratamento puramente conservador por meio de observação é insuficiente. Diante de um abscesso periapendicular com febre e leucocitose, é indispensável a intervenção terapêutica com antibióticos e a drenagem da coleção purulenta para garantir a resolução do quadro infeccioso e prevenir a sepse.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.136Z"
+  },
+  {
+    "id": "AJUDA_b472c371-e816-4b9c-bfed-6335e98b1e3d",
+    "originalId": "b472c371-e816-4b9c-bfed-6335e98b1e3d",
+    "statement": "São indicações para colocação de acesso venoso central relacionadas a características das soluções a serem infundidas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Soluções endovenosas com pH entre 6 e 8.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Drogas com osmolaridade a partir de 100 mOsm/L.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nutrição parenteral total.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Drogas ou eletrólitos de infusão contínua prolongada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os critérios técnicos para a indicação de um acesso venoso central fundamentados nas propriedades físico-químicas das substâncias que serão administradas ao paciente.\n\nAlternativa A: Incorreta. Soluções com pH entre 6 e 8 são consideradas fisiológicas ou próximas da neutralidade. A rede venosa periférica tolera bem essas variações. O acesso central é indicado apenas quando a solução possui pH extremo (menor que 5 ou maior que 9), devido ao alto risco de flebite química e danos ao endotélio vascular periférico.\n\nAlternativa B: Incorreta. Uma solução com 100 mOsm/L é hipotônica em relação ao plasma sanguíneo (que possui cerca de 285-295 mOsm/L). Soluções hipotônicas ou isotônicas podem ser infundidas em veias periféricas sem problemas. O acesso venoso central torna-se necessário para soluções hiperosmolares, geralmente com osmolaridade superior a 600-900 mOsm/L, para que ocorra a hemodiluição rápida e a proteção da parede do vaso.\n\nAlternativa C: Correta. A Nutrição Parenteral Total (NPT) é uma solução complexa contendo alta concentração de glicose, aminoácidos e eletrólitos. Essa composição resulta em uma osmolaridade muito elevada, frequentemente acima de 900 mOsm/L. Devido a essa característica de hiperosmolaridade, a infusão em veias periféricas causaria esclerose venosa e tromboflebite quase imediata, tornando o acesso venoso central obrigatório para garantir a segurança da administração.\n\nAlternativa D: Incorreta. Esta alternativa foca na duração e continuidade do tratamento, que é um critério clínico ou logístico, e não uma característica intrínseca da solução. Além disso, eletrólitos em concentrações habituais e diversas drogas de infusão contínua podem ser administrados com segurança por via periférica, desde que não sejam vesicantes, irritantes ou altamente osmolares.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.136Z"
+  },
+  {
+    "id": "AJUDA_b47492be-45a6-49fe-806f-d8b7ad8091b1",
+    "originalId": "b47492be-45a6-49fe-806f-d8b7ad8091b1",
+    "statement": "Em recém-nascidos com icterícia, quais são as principais diferenças entre icterícia fisiológica e patológica, e qual é o momento ideal para investigação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A icterícia fisiológica surge após a primeira semana de vida e é sempre grave; a patológica aparece em menos de 24 horas e exige investigação imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A icterícia fisiológica ocorre geralmente após 24 horas e resolve-se espontaneamente; a patológica surge nas primeiras 24 horas e requer investigação precoce.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A icterícia patológica é comum e autolimitada; a fisiológica requer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ambas são benignas e não precisam de acompanhamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nA diferenciação entre a icterícia fisiológica e a patológica no período neonatal baseia-se primordialmente no tempo de aparecimento dos sintomas e na velocidade de progressão dos níveis de bilirrubina.\n\nAlternativa a: Está incorreta. A icterícia fisiológica inicia-se tipicamente após as primeiras 24 a 48 horas de vida, e não após a primeira semana. Além disso, a icterícia fisiológica é um processo benigno e autolimitado, não sendo considerada grave.\n\nAlternativa b: Está correta. Este é o principal divisor de águas na prática clínica: qualquer icterícia que surja antes de 24 horas de vida é considerada patológica até que se prove o contrário, exigindo investigação laboratorial imediata para causas como incompatibilidades sanguíneas ou processos infecciosos. Já a icterícia fisiológica surge após o primeiro dia de vida, atinge o pico entre o terceiro e o quinto dia e resolve-se espontaneamente à medida que o fígado do recém-nascido amadurece e a carga de hemácias diminui.\n\nAlternativa c: Está incorreta. A alternativa inverte os conceitos. A icterícia fisiológica é que é o processo comum e autolimitado, decorrente de uma adaptação do metabolismo da bilirrubina. A icterícia patológica é a que requer intervenções, como a fototerapia ou, em casos graves, a exsanguineotransfusão.\n\nAlternativa d: Está incorreta. Embora a icterícia fisiológica seja benigna, a icterícia patológica oferece riscos sérios, como a encefalopatia biliar (kernicterus), caso os níveis de bilirrubina não sejam controlados. Portanto, o acompanhamento clínico é essencial em todos os casos para garantir que a evolução siga os padrões esperados de normalidade.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.136Z"
+  },
+  {
+    "id": "AJUDA_b474bbf9-84ce-4a76-9fa7-5492e7cffbc6",
+    "originalId": "b474bbf9-84ce-4a76-9fa7-5492e7cffbc6",
+    "statement": "Ao nascimento, um recém-nascido a termo, filho de mãe multipara com período expulsivo prolongado, estava hipotônico e em apneia. O recém-nascido foi levado à mesa de reanimação sob fonte de calor radiante e foi iniciada a ventilação com balão e máscara e ar ambiente, mas o paciente mantinha-se em apneia e bradicárdico. Após ajuste da técnica da ventilação e aumento da concentração de oxigênio, o recém-nascido não melhorou. Qual é o próximo passo indicado na reanimação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proceder à intubação e iniciar a ventilação com cânula traqueal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prosseguir com a ventilação com máscara facial e iniciar a massagem cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prosseguir com a ventilação com máscara facial e administrar adrenalina por via intraóssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Proceder à intubação, iniciar a ventilação com cânula traqueal e a massagem cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um cenário clássico de reanimação neonatal em um recém-nascido a termo. O ponto fundamental aqui é seguir a sequência lógica do algoritmo de reanimação da Sociedade Brasileira de Pediatria (SBP) e do International Liaison Committee on Resuscitation (ILCOR).\n\nO paciente apresenta apneia e bradicardia (frequência cardíaca < 100 bpm). A conduta inicial foi a ventilação por pressão positiva (VPP) com balão e máscara. Como não houve melhora, foram feitos os passos corretivos da ventilação (ajuste de técnica) e o aumento da oferta de oxigênio. Quando a VPP com máscara facial não é efetiva em reverter a bradicardia ou a apneia, o próximo passo essencial é garantir uma via aérea avançada antes de qualquer outra intervenção invasiva.\n\nExplicação das alternativas:\n\nAlternativa a) Correta. Este é o próximo passo oficial do protocolo. Se a ventilação com máscara e balão, mesmo após correções de técnica e aumento de oxigênio, não resulta em melhora clínica, deve-se proceder à intubação traqueal. A intubação assegura que a ventilação seja efetiva, eliminando problemas de vedação da máscara ou obstrução de via aérea superior. Somente após 30 segundos de ventilação efetiva pela cânula traqueal (com oxigênio a 100%) é que se avalia a necessidade de massagem cardíaca.\n\nAlternativa b) Incorreta. A massagem cardíaca não deve ser iniciada enquanto a via aérea não estiver garantida e a ventilação não tiver sido considerada efetiva. Além disso, manter a ventilação por máscara facial, quando ela já se mostrou ineficaz, retarda o tratamento adequado. A massagem só é indicada se a frequência cardíaca permanecer abaixo de 60 bpm após ventilação adequada.\n\nAlternativa c) Incorreta. O uso de adrenalina (seja por via intravenosa ou intraóssea) é uma medida de última instância na reanimação neonatal. Ela só é considerada se, após intubação, ventilação com oxigênio a 100% e massagem cardíaca coordenada, a frequência cardíaca ainda permanecer abaixo de 60 bpm.\n\nAlternativa d) Incorreta. Embora a intubação esteja correta, a massagem cardíaca é precoce neste momento. O protocolo exige que o médico primeiro intube e ventile o paciente por 30 segundos para observar a resposta da frequência cardíaca. A grande maioria dos neonatos recupera a frequência cardíaca apenas com a ventilação adequada, sem necessidade de compressões torácicas. Iniciar a massagem simultaneamente à intubação, sem testar a eficácia da ventilação, vai contra a fisiologia da transição neonatal, que é centrada na expansão pulmonar.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.136Z"
+  },
+  {
+    "id": "AJUDA_b47b0448-672f-40e9-9728-958cae9712f1",
+    "originalId": "b47b0448-672f-40e9-9728-958cae9712f1",
+    "statement": "Lactente, 6 meses de vida, é trazido em consulta de puericultura. O bebê está em aleitamento materno exclusivo, bom estado nutricional e a mãe refere que a família é vegana e deseja iniciar a mesma dieta para o bebê. Diante da opção da família, assinale a alternativa que apresenta, corretamente, a conduta para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter o aleitamento materno exclusivo até a família reconsiderar a decisão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter o aleitamento materno e iniciar complemento com sucos de extratos de soja.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter o aleitamento materno e orientar inicialmente uma dieta vegetariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar a dieta complementar e prescrever a suplementação de ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar a dieta complementar e prescrever a suplementação de vitamina B12 e zinco.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender esta questão, é fundamental dominar as recomendações atuais da Sociedade Brasileira de Pediatria (SBP) sobre a introdução alimentar e as particularidades de dietas restritivas na infância. Aos 6 meses, o lactente atinge o marco para o início da alimentação complementar, independentemente do padrão dietético da família.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): Manter o aleitamento materno exclusivo após os 6 meses não é recomendado. A partir dessa idade, o leite materno (ou fórmula) já não supre sozinho as necessidades de micronutrientes, como ferro e zinco, e de energia. Além disso, a introdução alimentar é crucial para o desenvolvimento sensorial e motor da criança. O desejo da família por uma dieta vegana não é contraindicação para o início da alimentação complementar, desde que haja acompanhamento e suplementação adequados.\n\nAlternativa B (Incorreta): Extratos de soja (muitas vezes chamados de \"leites de soja\") não são substitutos adequados para o leite materno ou fórmulas infantis. Além disso, o Guia Alimentar para Crianças Menores de 2 Anos do Ministério da Saúde desencoraja o consumo de sucos (mesmo os naturais) nessa faixa etária, priorizando a oferta da fruta in natura para manutenção das fibras e controle da carga glicêmica.\n\nAlternativa C (Incorreta): Embora a dieta vegetariana (que pode incluir ovos e laticínios) seja menos restritiva que a vegana, a alternativa falha por ser vaga. No contexto de uma família vegana estrita que deseja iniciar a introdução alimentar aos 6 meses, o foco médico deve ser na garantia de que nutrientes críticos, que não estarão presentes em quantidades suficientes na dieta estritamente vegetal, sejam suplementados de imediato.\n\nAlternativa D (Incorreta): O ácido fólico não é a deficiência primária de maior preocupação em uma dieta vegana bem planejada, uma vez que ele é encontrado em abundância em vegetais de folhas verdes escuras e leguminosas. A maior preocupação reside em nutrientes que possuem baixa biodisponibilidade ou ausência em fontes vegetais.\n\nAlternativa E (Correta): Esta é a conduta preconizada. Quando uma família opta por uma dieta vegana para o lactente após os 6 meses, o médico deve orientar a introdução alimentar complementar, mas com atenção redobrada aos nutrientes críticos:\n1. Vitamina B12: Encontrada exclusivamente em alimentos de origem animal. A suplementação é obrigatória para crianças veganas, pois sua deficiência causa danos neurológicos graves e irreversíveis, além de anemia megaloblástica.\n2. Zinco: Embora presente em vegetais, sua biodisponibilidade é reduzida devido aos fitatos.\n3. Além destes, deve-se manter a suplementação de Ferro (conforme protocolo de rotina) e monitorar Cálcio, Vitamina D e Proteínas. \n\nPortanto, o pediatra deve respeitar a escolha da família, mas garantir a segurança nutricional através da suplementação farmacológica imediata desses micronutrientes.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Aleitamento Materno",
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.136Z"
+  },
+  {
+    "id": "AJUDA_b47fdf0d-3860-4468-ad80-ecd47698f878",
+    "originalId": "b47fdf0d-3860-4468-ad80-ecd47698f878",
+    "statement": "Homem, 55 anos, refere dor em interfalangeanas distais de ambas as mãos há três anos, pior após períodos de repouso. Obtém melhora com o uso de anti-inflamatórios não esteroidais. Nega outros tratamentos. Exame físico: BEG, corado; edema e dor á palpação de 2º a 5º interfalangeanas distais de ambas as mãos; pele (ver figura). Levando em conta as alterações cutâneas e articulares, qual tratamento está indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidroxicloroquina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Metotrexato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Azatioprina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sulfassalazina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado é de artrite psoriásica. A imagem revela uma placa eritematosa extensa coberta por escamas branco-prateadas no antebraço, característica da psoríase vulgar. A queixa articular envolve as interfalangeanas distais com padrão inflamatório (piora ao repouso), o que é um marcador clássico desta patologia, permitindo o diagnóstico diferencial com a artrite reumatoide, que tipicamente poupa essas articulações. Para um paciente com acometimento cutâneo significativo e artrite periférica, o tratamento deve visar o controle de ambas as manifestações.\n\nAnálise das alternativas:\n\na) Hidroxicloroquina: Incorreta. Este antimalárico é frequentemente evitado na psoríase, pois pode causar exacerbação ou desencadear crises de psoríase pustulosa em alguns pacientes. Além disso, não é a droga de escolha para o componente articular da artrite psoriásica.\n\nb) Metotrexato: Correta. É considerado o medicamento modificador do curso da doença (DMARD) sintético de primeira escolha. O metotrexato é eficaz tanto no tratamento das lesões cutâneas (conforme a extensa placa vista na imagem) quanto na artrite periférica, auxiliando na redução do dano radiológico e no controle da inflamação.\n\nc) Azatioprina: Incorreta. Embora seja um imunossupressor, a azatioprina não é uma terapia de primeira ou segunda linha para artrite psoriásica. É mais utilizada em casos de lúpus eritematoso sistêmico ou vasculites, possuindo pouca evidência de eficácia superior aos DMARDs padrão para psoríase.\n\nd) Sulfassalazina: Incorreta. A sulfassalazina pode ser utilizada para o tratamento da artrite periférica na psoríase, porém, ao contrário do metotrexato, ela apresenta pouco ou nenhum benefício no tratamento das lesões de pele. Dado o extenso acometimento cutâneo do paciente, o metotrexato é a opção superior por tratar as duas frentes da doença simultaneamente.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Espondiloartrites",
+      "Dermatoses Papuloescamosas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/0f6a18d59cb0d24d57d3d69d04f1afcf5aae27e562ee5d67eb8368823ca166ee.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b47fdf0d-3860-4468-ad80-ecd47698f878_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.623Z"
+  },
+  {
+    "id": "AJUDA_b4854577-8dd6-46cd-890c-5c91747d26a4",
+    "originalId": "b4854577-8dd6-46cd-890c-5c91747d26a4",
+    "statement": "De acordo com os novos critérios diagnósticos de obesidade propostos pela Lancet Diabetes & Endocrinology Commission (2025), qual dos pacientes abaixo deve ser considerado como portador de obesidade clínica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Homem de 52 anos, IMC 34 kg/m², assintomático, sem alterações funcionais ou laboratoriais relevantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mulher de 46 anos, IMC 29 kg/m², circunferência abdominal 110 cm, com dor articular crônica limitando atividades de vida diária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Atleta de 28 anos, IMC 32 kg/m², hipertenso controlado, com elevada massa muscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mulher de 39 anos, IMC 31 kg/m², circunferência abdominal 95 cm, sem sintomas, exames laboratoriais e função orgânica preservados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "As novas diretrizes da Lancet Diabetes e Endocrinology Commission (2025) propõem uma mudança fundamental no diagnóstico da obesidade: a transição de uma definição baseada estritamente no Índice de Massa Corporal (IMC) para uma definição baseada no impacto na saúde. A obesidade clínica passa a ser caracterizada pelo excesso de adiposidade que efetivamente compromete a saúde, gera complicações metabólicas ou causa limitações funcionais e psicológicas.\n\nAlternativa (a) está incorreta. Embora o paciente apresente um IMC de 34 kg/m², ele é descrito como assintomático e sem alterações laboratoriais ou funcionais. De acordo com a nova proposta, o IMC elevado por si só, sem evidência de prejuízo orgânico ou disfunção do tecido adiposo, não é suficiente para o diagnóstico de obesidade clínica, priorizando-se a identificação de danos reais à saúde.\n\nAlternativa (b) está correta. Este caso exemplifica a aplicação prática dos novos critérios. Mesmo com um IMC de 29 kg/m² (tradicionalmente classificado como sobrepeso), a paciente apresenta circunferência abdominal aumentada (indicando adiposidade visceral) e, principalmente, um prejuízo funcional relacionado ao excesso de peso (dor articular crônica com limitação de atividades). Para a nova diretriz, o diagnóstico de obesidade deve ser estabelecido quando há prejuízo à saúde decorrente da gordura corporal, mesmo em indivíduos com IMC abaixo de 30 kg/m².\n\nAlternativa (c) está incorreta. O IMC é uma medida imprecisa para atletas devido à elevada massa muscular. O IMC de 32 kg/m² neste paciente reflete hipertrofia e não necessariamente excesso de tecido adiposo patológico. A hipertensão controlada isolada, em um contexto de alta performance física, não sustenta o diagnóstico de obesidade clínica pelos novos critérios focados na adiposidade.\n\nAlternativa (d) está incorreta. Semelhante à alternativa (a), o IMC de 31 kg/m² sem qualquer sintoma, alteração de exames ou prejuízo funcional não preenche os requisitos para a classificação de obesidade clínica. A comissão busca evitar a patologização baseada apenas em números, exigindo a presença de impacto clínico negativo para definir a doença.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.623Z"
+  },
+  {
+    "id": "AJUDA_b487e31e-9786-40e2-956a-b122e7e7d380",
+    "originalId": "b487e31e-9786-40e2-956a-b122e7e7d380",
+    "statement": "Em reunião de equipe de saúde da família, discute-se o caso de uma idosa diabética, com locomoção reduzida, que apresenta episódios de hipoglicemia por dificuldade de compreensão do esquema de uso da insulina. A paciente tem 8 filhos, porém reside com apenas uma filha, que trabalha fora o dia todo.\nQual ação inicial a equipe deve desenvolver nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar aplicação diária da insulina, na unidade de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar vaga em instituição de longa permanência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar a articulação do cuidado com a comunidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Substituir a insulina por hipoglicemiante oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Trata-se de um problema típico da Atenção Primária à Saúde. A paciente idosa, diabética, com mobilidade reduzida, tem hipoglicemias recorrentes não por falha do tratamento em si, mas por dificuldade de compreender e executar o esquema de insulina. Falta suporte no domicílio: a única filha que mora com ela trabalha fora o dia todo, embora existam outros 7 filhos.\n\nO problema central é, portanto, a rede de apoio e cuidado. A Estratégia Saúde da Família trabalha com os atributos da APS, como coordenação do cuidado, orientação familiar e comunitária, e longitudinalidade. Usa também ferramentas de abordagem familiar, como genograma, ecomapa e conferência familiar. A primeira ação deve ser mobilizar os recursos disponíveis, antes de medidas mais drásticas ou que transfiram a responsabilidade do cuidado para o serviço de saúde.\n\nAlternativa A – Incorreta. Aplicar a insulina diariamente na unidade é inviável para uma idosa com locomoção reduzida. Também não é sustentável para o serviço e não resolve o problema, porque geralmente há mais de uma aplicação diária, com risco de hipoglicemia fora do horário da unidade. Além disso, cria dependência do serviço, contraria a lógica da autonomia e do autocuidado apoiado e ignora os recursos familiares e comunitários existentes.\n\nAlternativa B – Incorreta. A institucionalização em instituição de longa permanência é uma medida extrema, reservada para quando se esgotam as possibilidades de cuidado no domicílio. A paciente tem 8 filhos e uma comunidade ao redor, ou seja, há uma rede potencial ainda não explorada. Institucionalizar como ação inicial rompe vínculos, afeta a autonomia e a qualidade de vida e não respeita a preferência pelo envelhecimento no próprio domicílio.\n\nAlternativa C – Correta. Articular o cuidado com a comunidade e a rede de apoio é a ação inicial adequada. Isso inclui:\n- envolver os demais filhos, por exemplo por meio de uma conferência familiar, para dividir responsabilidades;\n- acionar vizinhos, cuidadores, grupos religiosos e associações;\n- garantir o acompanhamento pelo agente comunitário de saúde e as visitas domiciliares da enfermagem;\n- usar estratégias de educação em saúde adaptadas, como simplificação do esquema e recursos visuais.\nEssa abordagem respeita os princípios da APS, preserva a autonomia da idosa e enfrenta a causa real do problema.\n\nAlternativa D – Incorreta. A troca por hipoglicemiante oral pode até ser discutida dentro de uma revisão terapêutica, já que em idosos frágeis se recomendam metas glicêmicas menos rígidas e esquemas simplificados. Porém, não é a ação inicial proposta. A indicação da insulina pode ser clínica, por exemplo por insuficiência renal ou falha dos orais, e a simples substituição não resolve a fragilidade da rede de cuidado. Alguns orais, como as sulfonilureias, também causam hipoglicemia, especialmente em idosos. O enunciado enfatiza o contexto social e familiar, não um erro de prescrição.\n\nResposta: alternativa C. Diante de um problema de adesão e segurança terapêutica causado por uma rede de apoio insuficiente, a equipe de Saúde da Família deve primeiro mobilizar família e comunidade, coordenando o cuidado no território.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Saúde do Idoso",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.623Z"
+  },
+  {
+    "id": "AJUDA_b494cf25-5292-406f-b22b-807064a6367a",
+    "originalId": "b494cf25-5292-406f-b22b-807064a6367a",
+    "statement": "Além de assegurar ações de promoção, prevenção, diagnóstico, tratamento e reabilitação, o SUS é responsável por programas estratégicos como imunizações, transplantes e fornecimento de medicamentos de alto custo. Também desempenha papel central no enfrentamento de epidemias e na vigilância sanitária, epidemiológica e ambiental. Sua estrutura, financiada de forma tripartite (União, estados e municípios), busca reduzir desigualdades regionais e sociais, consolidando-se como um dos maiores sistemas públicos de saúde do mundo em cobertura e complexidade. Em relação ao princípio da equidade, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todos os indivíduos devem receber exatamente os mesmos recursos de saúde, sem distinção de classe social ou religião;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se oferecer mais recursos a quem mais precisa, reduzindo desigualdades sociais e regionais;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "É sinônimo de universalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Refere-se apenas à distribuição de verbas entre estados e municípios.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O princípio da equidade é um dos princípios doutrinários fundamentais do Sistema Único de Saúde (SUS) e traduz o conceito de justiça social, significando \"tratar desigualmente os desiguais\" na medida de suas desigualdades, de modo a reduzir vulnerabilidades e disparidades em saúde.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Oferecer exatamente os mesmos recursos a todos corresponde ao conceito de igualdade formal. A equidade reconhece que as pessoas possuem necessidades e níveis de vulnerabilidade diferentes; portanto, ofertar recursos idênticos a todos perpetua ou agrava as desigualdades existentes.\n\nAlternativa b: Correta. A equidade determina que o sistema deve direcionar mais atenção, cuidado e recursos àqueles que apresentam maior necessidade ou risco, atuando ativamente para diminuir as disparidades sociais, econômicas e regionais.\n\nAlternativa c: Incorreta. Universalidade e equidade são princípios distintos. A universalidade estabelece que a saúde é um direito de todos e dever do Estado, garantindo o acesso a 100% da população, enquanto a equidade orienta como esses recursos e atendimentos devem ser distribuídos para gerar justiça social.\n\nAlternativa d: Incorreta. O uso da palavra \"apenas\" restringe incorretamente o conceito. Embora critérios de equidade sejam aplicados no rateio de recursos financeiros entre os entes federados para compensar desigualdades regionais, o princípio se aplica amplamente a todo o cuidado em saúde, desde a prática clínica individual até a formulação de políticas públicas. \n\nGabarito: Alternativa b.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:31.623Z"
+  }
+]

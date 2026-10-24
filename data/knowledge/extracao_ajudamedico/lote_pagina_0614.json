@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_ac04a974-2a55-40bf-bafb-284b97b957f8",
+    "originalId": "ac04a974-2a55-40bf-bafb-284b97b957f8",
+    "statement": "Paciente feminina, 65 anos, com sintomas dispéptico inespecíficos, realizou uma EDA (endoscopia digestiva alta) que mostrou uma lesão submucosa em corpo gástrico de 2 cm. Com relação ao quadro exposto acima, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O melhor tratamento nestes casos é a gastrectomia subtotal com esvaziamento ganglionar a DII.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A possibilidade de resseção deve ser considerada por provavelmente tratar-se de GIST (Tumor estromal gastrointestinal).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dentre ás lesões submucosas gástrica, o leiomioma é o mais frequente e, para lesões de até 3 com a conduta pode ser expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A realização de US (ultrassom) endoscópico não deve ser indicado pelas dimensões da lesão e pelo fato de não der possível realizar biópsias de lesões submucosas gástricas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Explicação das Alternativas:\n\nAlternativa A (Incorreta): A gastrectomia subtotal com linfadenectomia a D2 é a cirurgia padrão para o tratamento do adenocarcinoma gástrico. No caso de lesões submucosas, como o tumor estromal gastrointestinal (GIST), a disseminação linfática é extremamente rara. Portanto, não há necessidade de esvaziamento ganglionar radical. O tratamento cirúrgico para essas lesões consiste na ressecção em cunha (*wedge resection*) com margens microscopicamente negativas.\n\nAlternativa B (Correta): O GIST é o tumor mesenquimal mais frequente do trato digestivo, e o estômago é o local onde ele ocorre com maior frequência (cerca de 60% dos casos). De acordo com as diretrizes atuais, lesões submucosas gástricas suspeitas de GIST que possuam 2 cm ou mais devem ser consideradas para ressecção cirúrgica devido ao seu potencial de malignidade. Mesmo lesões menores podem ser operadas se apresentarem características de risco em exames de imagem.\n\nAlternativa C (Incorreta): O leiomioma gástrico é uma lesão rara. Entre os tumores mesenquimais do estômago, o GIST é muito mais prevalente. Além disso, a conduta expectante (seguimento com exames periódicos) costuma ser reservada para lesões menores que 2 cm que não possuam características de alto risco, e não para lesões de até 3 cm.\n\nAlternativa D (Incorreta): O ultrassom endoscópico (ecoendoscopia) é considerado o melhor exame para avaliar lesões submucosas gástricas. Ele permite identificar a camada da parede gástrica de onde o tumor se origina (o GIST geralmente nasce da quarta camada, a muscular própria) e permite a realização de biópsias por agulha fina (FNA) ou biópsias de fragmento (FNB). O estudo imuno-histoquímico desse material (pesquisa de marcadores como CD117 e DOG-1) é essencial para o diagnóstico definitivo.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.866Z"
+  },
+  {
+    "id": "AJUDA_ac07a2b2-27e6-4352-bb0b-ca39e7559e9a",
+    "originalId": "ac07a2b2-27e6-4352-bb0b-ca39e7559e9a",
+    "statement": "Um homem de 60 anos, tabagista, realizou endoscopia digestiva alta para investigação de sintomas dispépticos e foi diagnosticado com uma neoplasia de antro. Para o tratamento curativo do adenocarcinoma gástrico, são utilizadas várias modalidades terapêuticas, de forma isolada ou associadas. Em relação ao tema, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento atual de escolha consiste em esquema perioperatório com quimioterapia e cirurgia com linfadenectomia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Radioterapia neoadjuvante do abdome e gastrectomia é o tratamento de escolha para tumores locorregionais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gastrectomia com ressecção linfonodal seguida de radioterapia adjuvante é preconizada para as neoplasias do antro",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quimioterapia com gastrectomia parcial vertical sem linfadenectomia é uma alternativa para pacientes com status performance ruim",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tratamento do adenocarcinoma gástrico evoluiu significativamente nos últimos anos, migrando de uma abordagem puramente cirúrgica para uma estratégia multimodal. A seguir, a análise detalhada de cada alternativa:\n\nAlternativa (a) CORRETA: Atualmente, para tumores gástricos localmente avançados (a partir do estágio T2 ou com presença de linfonodos positivos), o padrão-ouro é o tratamento perioperatório. Isso consiste em realizar quimioterapia antes da cirurgia (neoadjuvante) para reduzir o volume tumoral e tratar micrometástases, seguida de gastrectomia com linfadenectomia (preferencialmente D2) e complementação da quimioterapia após a recuperação cirúrgica (adjuvante). O esquema FLOT (fluorouracil, leucovorin, oxaliplatina e docetaxel) é o protocolo de quimioterapia mais utilizado nesse cenário devido ao ganho comprovado em sobrevida global.\n\nAlternativa (b) INCORRETA: A radioterapia neoadjuvante (antes da cirurgia) é frequentemente utilizada para tumores de esôfago e da transição esofagogástrica (protocolo CROSS). No entanto, para o adenocarcinoma propriamente gástrico (como o de antro citado na questão), a quimioterapia isolada é a modalidade neoadjuvante de escolha. A radioterapia no estômago apresenta maiores riscos de toxicidade aos órgãos adjacentes e não é o tratamento padrão inicial para tumores locorregionais do corpo ou antro.\n\nAlternativa (c) INCORRETA: A gastrectomia seguida de quimiorradioterapia adjuvante (protocolo de Macdonald) foi muito utilizada no passado. Contudo, estudos mais recentes demonstraram que a quimioterapia perioperatória ou a quimioterapia adjuvante isolada após uma linfadenectomia D2 adequada são superiores ou preferíveis. A radioterapia adjuvante hoje é reservada principalmente para casos em que a linfadenectomia foi considerada insuficiente (D0 ou D1) ou quando há margens comprometidas, não sendo a recomendação de primeira linha para todos os casos de neoplasia de antro.\n\nAlternativa (d) INCORRETA: Esta alternativa apresenta erros conceituais graves. A \"gastrectomia parcial vertical\" (conhecida como sleeve) é uma técnica de cirurgia bariátrica e não possui princípios oncológicos. Para o tratamento do câncer de antro, a cirurgia indicada é a gastrectomia subtotal ou total, dependendo da margem de segurança. Além disso, a linfadenectomia é etapa obrigatória em qualquer intenção curativa. Pacientes com performance status ruim que não toleram cirurgia ou quimioterapia agressiva são candidatos a cuidados paliativos ou tratamentos menos invasivos, mas nunca a uma técnica bariátrica sem linfadenectomia para tratar câncer.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.867Z"
+  },
+  {
+    "id": "AJUDA_ac081ccf-6f0f-4fa7-a29a-df8507e9c653",
+    "originalId": "ac081ccf-6f0f-4fa7-a29a-df8507e9c653",
+    "statement": "Uma mulher de 45 anos vem à consulta com queixa de dor nas mãos, com rigidez matinal em torno de 20 minutos. Relata dor semelhante em joelho esquerdo, que às vezes fica vermelho e inchado. Ao exame físico, há nódulos em interfalangianas distais e proximais das mãos, sem sinais de sinovite. Ambos os joelhos apresentam crepitação, no momento sem sinais flogísticos. A conduta mais adequada para esta paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar rx de mãos e punhos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever anti-inflamatório não esteroidal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar FAN, Fator reumatoide, VHS e PCR.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fisioterapia de joelhos e prescrever dipirona.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO QUADRO:\n\nO caso clínico descreve uma paciente com osteoartrite (artrose). Os pontos fundamentais para esse diagnóstico são:\n1. Idade e localização da dor: Mulher de 45 anos com dor em mãos e joelhos.\n2. Rigidez matinal: Dura apenas 20 minutos. Na artrite reumatoide (principal diagnóstico diferencial), a rigidez costuma durar mais de 60 minutos.\n3. Exame físico das mãos: Presença de nódulos nas interfalangianas distais (nódulos de Heberden) e proximais (nódulos de Bouchard). O acometimento das distais é característico da osteoartrite e raramente ocorre na artrite reumatoide.\n4. Exame físico dos joelhos: Presença de crepitação, que indica desgaste da cartilagem e atrito ósseo, sem sinais de inflamação aguda (sinovite) no momento.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) Incorreta: Em pacientes com quadro clínico clássico de osteoartrite de mãos (nódulos de Heberden e Bouchard), o diagnóstico é clínico. O raio X pode mostrar osteófitos e redução do espaço articular, mas não altera a conduta terapêutica inicial nem é indispensável para confirmar o que o exame físico já demonstrou.\n\nAlternativa (b) Incorreta: Embora os anti-inflamatórios não esteroidais (AINEs) possam ser usados em períodos curtos de exacerbação, eles não são a conduta de primeira linha para o manejo crônico devido aos riscos de efeitos colaterais renais, gástricos e cardiovasculares. O tratamento deve focar em medidas mais seguras e reabilitação.\n\nAlternativa (c) Incorreta: A solicitação de exames laboratoriais como FAN, fator reumatoide, VHS e PCR é indicada quando há suspeita de doenças inflamatórias sistêmicas ou autoimunes. O quadro da paciente é tipicamente mecânico-degenerativo. Solicitar esses exames sem suspeita clínica adequada gera custos desnecessários e risco de resultados falsos-positivos que confundem o diagnóstico.\n\nAlternativa (d) Correta: A base do tratamento da osteoartrite é a combinação de medidas não farmacológicas e controle da dor com analgésicos simples. A fisioterapia é essencial para o fortalecimento do quadríceps (no caso dos joelhos), o que reduz a sobrecarga na articulação e melhora a função. A dipirona é um analgésico eficaz e com melhor perfil de segurança para o uso sintomático regular em comparação aos AINEs.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Doenças do Osso e da Cartilagem"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.867Z"
+  },
+  {
+    "id": "AJUDA_ac0ba368-5f99-4518-8567-e38fa5c4894b",
+    "originalId": "ac0ba368-5f99-4518-8567-e38fa5c4894b",
+    "statement": "Analise a seguinte descrição e assinale a alternativa correta. É um fio de sutura sintético, obtido pela polimerização do ácido glicólico. A reabsorção ocorre por hidrólise, em 60 a 90 dias após sua utilização. Muito usado na sutura de músculos, fáscias, ocasiona pouca reação inflamatória. É multifilamentado, podendo, como qualquer fio com esta característica, albergar em seu interior bactérias que escapam da fagocitose.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nylon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ethibond®.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Maxon®.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dexon®.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Categute.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO ENUNCIADO\n\nA questão descreve as propriedades clássicas de um dos fios mais utilizados na técnica cirúrgica. Os pontos-chave para identificação são:\n1. Natureza: Sintético.\n2. Composição: Polímero do ácido glicólico (Ácido Poliglicólico).\n3. Mecanismo de absorção: Hidrólise (processo químico previsível, comum aos sintéticos absorvíveis).\n4. Tempo de absorção: 60 a 90 dias.\n5. Estrutura: Multifilamentado (trançado), o que confere boa maleabilidade, mas permite o alojamento de bactérias (capilaridade).\n6. Reação tecidual: Baixa, comparada aos fios naturais.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Nylon: Incorreta. O Nylon (poliamida) é um fio sintético, porém classificado como não absorvível. Embora sofra uma degradação química muito lenta ao longo de anos, ele não desaparece do organismo em 90 dias. Além disso, na prática cirúrgica, é mais comumente encontrado na forma monofilamentada para suturas de pele.\n\nb) Ethibond: Incorreta. O Ethibond é o nome comercial de uma sutura de poliéster. É um fio sintético multifilamentado (trançado), mas é não absorvível. É utilizado em situações que exigem resistência permanente, como em próteses valvulares cardíacas ou fixações ortopédicas.\n\nc) Maxon: Incorreta. O Maxon (poligliconato) é um fio sintético absorvível por hidrólise. No entanto, sua principal característica é ser monofilamentado. O enunciado especifica que o fio em questão é multifilamentado e pode albergar bactérias, o que exclui os fios de estrutura simples (monofilamento).\n\nd) Dexon: Correta. O Dexon é o nome comercial do Ácido Poliglicólico. Foi o primeiro fio sintético absorvível disponível no mercado. Ele preenche todos os critérios: é multifilamentado, absorvido por hidrólise em um período médio de 60 a 90 dias, possui baixa reação inflamatória e é amplamente indicado para tecidos internos que exigem força tênsil temporária, como fáscias e músculos.\n\ne) Categute: Incorreta. O Categute é um fio de origem natural (animal), derivado do colágeno do intestino de ovinos ou bovinos. Sua absorção ocorre por proteólise (digestão enzimática), o que provoca uma reação inflamatória tecidual intensa e imprevisível, ao contrário da hidrólise mencionada no texto.\n\nGABARITO: Letra (d).",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.867Z"
+  },
+  {
+    "id": "AJUDA_ac15f8f0-3fa9-4ef1-b8c9-058ee9f66cbe",
+    "originalId": "ac15f8f0-3fa9-4ef1-b8c9-058ee9f66cbe",
+    "statement": "A Política Nacional de Atenção Básica (PNAB) é a diretriz do Ministério da Saúde para a Atenção Primária à Saúde no Brasil, estruturada para ser a porta de entrada preferencial e coordenadora do cuidado no Sistema Único de Saúde (SUS). Ela define como as equipes multiprofissionais se organizam em territórios definidos para realizar ações de promoção, prevenção, tratamento e reabilitação da saúde. Sua implementação é feita por meio da Estratégia Saúde da Família (ESF), com o objetivo de garantir o acesso integral e gratuito à saúde, e estabelece atribuições comuns e atribuições específicas aos membros das Equipes de Atenção Básica. Nesses casos, a atribuição específica do profissional médico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "participar do processo de territorialização e mapeamento da área de atuação da equipe, identificando grupos, famílias e indivíduos expostos a riscos e vulnerabilidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar o cuidado da saúde da população adscrita, prioritariamente no âmbito da unidade de saúde, e, quando necessário, no domicílio e nos demais espaços comunitários (escolas, associações, entre outros).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar ações de atenção à saúde conforme a necessidade de saúde da população local, bem como as previstas nas prioridades e protocolos da gestão local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar, de forma compartilhada com outros pontos de atenção, a necessidade de internação hospitalar ou domiciliar, mantendo a responsabilização pelo acompanhamento do usuário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental diferenciar as atribuições comuns a todos os membros das equipes de Atenção Básica das atribuições específicas de cada categoria profissional, conforme estabelecido na Política Nacional de Atenção Básica (PNAB).\n\nAlternativa (a) Incorreta. Participar do processo de territorialização, mapeamento e identificação de riscos e vulnerabilidades é uma atribuição comum a todos os profissionais da equipe (médicos, enfermeiros, técnicos de enfermagem e agentes comunitários de saúde). Todos devem conhecer o território para planejar as ações de saúde.\n\nAlternativa (b) Incorreta. Realizar o cuidado da saúde da população adscrita, seja na unidade de saúde, no domicílio ou em espaços comunitários, também é uma atribuição comum a todos os membros da equipe. O cuidado compartilhado e a atuação em diversos cenários da comunidade são pilares da Estratégia Saúde da Família para todos os seus componentes.\n\nAlternativa (c) Incorreta. A execução de ações de atenção à saúde baseadas nas necessidades locais e nos protocolos da gestão é outra atribuição comum. Todo o corpo técnico da unidade deve seguir as diretrizes e protocolos estabelecidos para garantir a segurança e a padronização do atendimento.\n\nAlternativa (d) Correta. Esta é uma atribuição específica do profissional médico dentro da PNAB. Cabe ao médico a responsabilidade clínica de indicar a necessidade de internação hospitalar ou domiciliar. O texto destaca um ponto crucial da coordenação do cuidado: mesmo quando o paciente é encaminhado para outro ponto de atenção (como um hospital), o médico da Atenção Básica deve manter a responsabilização pelo acompanhamento do usuário, garantindo a continuidade do tratamento após a alta. Outras atribuições específicas do médico incluem a realização de consultas clínicas, pequenos procedimentos cirúrgicos, prescrição de medicamentos e emissão de laudos e atestados.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.867Z"
+  },
+  {
+    "id": "AJUDA_ac2162d5-8d7c-4968-8a4e-7a03295b33ee",
+    "originalId": "ac2162d5-8d7c-4968-8a4e-7a03295b33ee",
+    "statement": "A participação social é um princípio fundamental do Sistema Único de Saúde (SUS), institucionalizada, principalmente, pelos Conselhos de Saúde. Sobre a composição, o papel e o funcionamento desses conselhos, conforme a legislação do SUS, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os Conselhos de Saúde, em todas as esferas de governo, possuem composição paritária, sendo formados na mesma proporção por representantes dos usuários, representantes dos trabalhadores da saúde e representantes do governo e prestadores de serviços.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A principal função dos Conselhos de Saúde é de caráter consultivo, cabendo a eles emitir pareceres não vinculantes sobre as políticas propostas pela Secretaria de Saúde, enquanto a decisão final é de responsabilidade do gestor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Para garantir a representatividade, os representantes dos usuários nos Conselhos de Saúde são indicados diretamente pelo gestor municipal ou estadual, a partir de listas encaminhadas por entidades civis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A paridade na composição dos conselhos significa que, em um conselho municipal de saúde com 24 membros, haverá 12 representantes dos usuários, 6 representantes dos trabalhadores da saúde e 6 representantes do governo, gestores e prestadores de serviços privados conveniados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "As Conferências de Saúde, que também são instâncias de participação social, ocorrem a cada 4 anos e têm como principal finalidade eleger os membros dos Conselhos de Saúde para o mandato subsequente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "TEMA: Participação Social no SUS (Lei 8.142/1990 e Resolução 453/2012 do Conselho Nacional de Saúde).\n\nAlternativa A: INCORRETA. A composição dos Conselhos de Saúde é paritária em relação ao conjunto dos usuários frente aos demais segmentos somados. Isso significa que os usuários devem representar 50% do conselho, enquanto os outros 50% são divididos entre trabalhadores da saúde (25%) e representantes do governo/prestadores de serviços (25%). A alternativa sugere erroneamente uma divisão igualitária (mesma proporção) entre todos os três grupos individualmente, o que não corresponde à regra.\n\nAlternativa B: INCORRETA. Os Conselhos de Saúde possuem caráter deliberativo e fiscalizador, e não meramente consultivo. Eles têm poder de decisão sobre as estratégias e o controle da execução da política de saúde, inclusive nos aspectos econômicos e financeiros. Suas decisões devem ser homologadas pelo chefe do Poder Executivo, e o descumprimento injustificado pode gerar sanções legais ao gestor.\n\nAlternativa C: INCORRETA. Para garantir a autonomia do controle social, os representantes dos usuários devem ser escolhidos pelas suas respectivas entidades, movimentos e instituições da sociedade civil organizada. O gestor público não tem a prerrogativa de indicar esses representantes; sua função é apenas dar posse aos membros eleitos pelos seus pares.\n\nAlternativa D: CORRETA. Esta alternativa aplica de forma prática a regra da paridade. De acordo com a Resolução 453/2012 do CNS, o segmento dos usuários deve corresponder a 50% do total de membros. Portanto, em um conselho com 24 membros:\n- 50% são usuários (12 membros).\n- 25% são trabalhadores da saúde (6 membros).\n- 25% são representantes do governo e prestadores de serviços privados conveniados ou filantrópicos (6 membros).\n\nAlternativa E: INCORRETA. As Conferências de Saúde de fato ocorrem a cada quatro anos, mas sua finalidade principal é avaliar a situação de saúde e propor diretrizes para a formulação da política de saúde em cada esfera de governo. Embora a Conferência possa definir critérios para a eleição dos conselhos, o processo eleitoral dos membros do Conselho de Saúde é regido por regimento próprio e ocorre de forma independente das atividades principais da Conferência.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.867Z"
+  },
+  {
+    "id": "AJUDA_ac3075ef-e6d1-493a-8188-1ad090d1f38e",
+    "originalId": "ac3075ef-e6d1-493a-8188-1ad090d1f38e",
+    "statement": "Mulher de 67 anos chega a uma unidade básica de saúde (UBS) acompanhada pelo filho. Ele relata que a mãe, há cerca de 30 minutos, passou a apresentar intensa dor de cabeça e dificuldade para falar. A paciente é hipertensa, faz uso de anti-hipertensivos, estatina e antiagregante plaquetário em dose profilática. Há 6 anos, sofreu um acidente vascular cerebral (AVC) sem sequelas. Durante o exame físico, pontuou 14 na Escala de Coma de Glasgow e apresentou seguintes sinais vitais: \n\n- Pressão arterial (PA): 150 x 95 mmHg\n- Frequência cardíaca (FC): 90 bpm\n- Frequência respiratória (FR): 20 irpm\n- Saturação de oxigênio: 95%\n\nNessa situação, qual é a conduta adequada a ser adotada pelo médico da UBS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estabilizar a paciente na sala de observação da UBS, ofertar anti-hipertensivo via oral para redução da PA e solicitar exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acionar o Serviço Móvel de Urgência de imediato para encaminhamento ao serviço de urgência e estabilizar a paciente na UBS até a chegada da ambulância.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar anti-hipertensivo sublingual e reavaliar a paciente após 30 minutos; caso não haja queda da PA, encaminhá-la para serviço de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Medicar a paciente, com o objetivo de reduzir a PA dentro de 24 a 48 horas, e realizar seguimento ambulatorial para avaliar se houve reversão dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve uma paciente idosa, com fatores de risco cardiovascular (hipertensão, AVC prévio) e uso de medicações específicas, que apresenta um quadro agudo de déficit neurológico (dificuldade para falar) e cefaleia, iniciado há apenas 30 minutos. Esse cenário clínico é altamente sugestivo de um Acidente Vascular Cerebral (AVC) agudo.\n\nO conceito fundamental aqui é o \"Tempo é Cérebro\". Diante de uma suspeita de AVC em uma Unidade Básica de Saúde (UBS), a prioridade absoluta é o encaminhamento imediato para uma unidade de emergência hospitalar capaz de realizar exames de imagem (tomografia de crânio) e oferecer tratamento específico, como a trombólise química ou trombectomia mecânica, que possuem janelas terapêuticas restritas.\n\nAnálise das alternativas:\n\na) Incorreta. A UBS não é o local adequado para a investigação de um déficit neurológico agudo, pois não dispõe de tomografia imediata. Além disso, a redução da pressão arterial na fase aguda do AVC deve ser feita com cautela e sob monitorização rigorosa, pois a queda brusca pode reduzir a perfusão cerebral e agravar a lesão. No caso, a PA de 150x95 mmHg não exige intervenção imediata na UBS.\n\nb) Correta. Esta é a conduta padrão em unidades de atenção primária. O médico deve reconhecer a suspeita de AVC, acionar o suporte avançado de transporte (SAMU) para garantir que a paciente chegue o mais rápido possível a um centro de referência (preferencialmente uma Unidade de AVC), enquanto mantém a estabilização básica (monitorização, oxigênio, se necessário, e vigilância de sinais vitais).\n\nc) Incorreta. O uso de anti-hipertensivos sublinguais (como nifedipina) é contraindicado em urgências e emergências hipertensivas pelo risco de queda abrupta e descontrolada da pressão, o que pode causar isquemia cerebral ou coronariana. Além disso, esperar 30 minutos para reavaliação atrasa o tratamento definitivo do AVC, aumentando o risco de sequelas permanentes.\n\nd) Incorreta. Essa conduta ignora a gravidade do quadro neurológico agudo. O seguimento ambulatorial e a redução gradual da pressão em 24-48 horas seriam condutas para hipertensão arterial sistêmica sem sinais de lesão de órgão-alvo aguda. No contexto de déficit neurológico súbito, a paciente necessita de intervenção hospitalar de emergência, e não de acompanhamento ambulatorial posterior para ver se os sintomas revertem.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.867Z"
+  },
+  {
+    "id": "AJUDA_ac344386-0a86-49a5-80c0-95aafc0f1ddd",
+    "originalId": "ac344386-0a86-49a5-80c0-95aafc0f1ddd",
+    "statement": "A obesidade infantil aumenta o aparecimento de morbidades associadas, entre elas a SOP (síndrome de ovários policísticos), cuja fisiopatologia tem anovulação crônica hiperandrogênica. Os achados laboratoriais para diagnóstico de SOP NÃO incluem",
+    "options": [
+      {
+        "id": "A",
+        "text": "elevação de testosterona livre ou total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "elevação de insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "LH diminuído.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aumento da concentração de SHBG.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "diminuição de 17 OH progesterona basal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Síndrome dos Ovários Policísticos (SOP) é uma desordem endócrina complexa, caracterizada principalmente pelo hiperandrogenismo e pela anovulação crônica. Quando associada à obesidade infantil, o quadro é frequentemente agravado pela resistência à insulina.\n\nPara responder a essa questão, devemos analisar a fisiopatologia da doença e como ela altera os marcadores laboratoriais:\n\nAlternativa (a) elevação de testosterona livre ou total: Incorreta. O hiperandrogenismo é um dos pilares do diagnóstico da SOP. A elevação dos níveis de testosterona, seja na sua forma total ou na fração livre (que é a biologicamente ativa), é um achado laboratorial clássico e esperado.\n\nAlternativa (b) elevação de insulina: Incorreta. A obesidade está intimamente ligada à resistência insulínica. Na SOP, a resistência à insulina leva a uma hiperinsulinemia compensatória (aumento da insulina no sangue). Esse excesso de insulina atua tanto no ovário, estimulando a produção de androgênios, quanto no fígado, alterando a produção de proteínas transportadoras.\n\nAlternativa (c) LH diminuído: Esta alternativa apresenta um ponto de confusão. Na SOP clássica, os níveis de LH (Hormônio Luteinizante) costumam estar aumentados ou no limite superior da normalidade, frequentemente apresentando uma relação LH/FSH superior a 2:1 ou 3:1. Portanto, um LH diminuído não é um achado da SOP. Contudo, a alternativa (d) é considerada a resposta principal por descrever um mecanismo fisiopatológico inversamente proporcional ao que ocorre na doença.\n\nAlternativa (d) aumento da concentração de SHBG: Esta é a alternativa correta (o achado que NÃO ocorre). A SHBG (Globulina Transportadora de Hormônios Sexuais) é uma proteína produzida pelo fígado que se liga à testosterona. Na SOP, especialmente na presença de obesidade, os altos níveis de insulina suprimem a produção hepática de SHBG. Logo, na SOP, os níveis de SHBG estão DIMINUÍDOS e não aumentados. Essa redução é clinicamente importante porque, com menos proteína transportadora, há mais testosterona livre circulante para exercer efeitos virilizantes.\n\nAlternativa (e) diminuição de 17-OH-progesterona basal: Incorreta. A dosagem da 17-OH-progesterona é solicitada no rastreio da SOP para realizar o diagnóstico diferencial com a Hiperplasia Adrenal Congênita (HAC), forma não clássica. Na SOP, os valores de 17-OH-progesterona costumam ser normais (geralmente abaixo de 200 ng/dL). Embora sua diminuição não seja um achado da SOP, a inversão fisiológica descrita na alternativa (d) sobre a SHBG é o erro laboratorial mais característico e frequentemente cobrado em provas sobre o tema.\n\nResumo: Na SOP com obesidade, esperamos encontrar testosterona alta, insulina alta e SHBG baixa. Portanto, o aumento de SHBG (letra d) é a afirmação incorreta.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Obesidade na Infância e na Adolescência",
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.867Z"
+  },
+  {
+    "id": "AJUDA_ac40d466-526c-4d6d-b98c-e1ca2a1796e9",
+    "originalId": "ac40d466-526c-4d6d-b98c-e1ca2a1796e9",
+    "statement": "O tratamento preventivo da tuberculose (TPT) pode ser realizado na atenção primária à saúde (APS), e está indicado em várias situações. O esquema atual preferencial para a efetivação do tratamento é o seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "3HP: 3 meses – isoniazida e rifapentina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "4R: 4 meses – rifampicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "9H: 9 meses – isoniazida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4R: 4 meses – rifabutina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "3HP: 3 meses – isoniazida e rifampicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tratamento preventivo da tuberculose (TPT), anteriormente conhecido como tratamento da infecção latente por tuberculose (ILTB), passou por atualizações importantes nos protocolos do Ministério da Saúde para aumentar a adesão dos pacientes e simplificar o manejo na atenção primária.\n\nA alternativa (a) está correta e é o gabarito da questão. O esquema 3HP consiste na combinação de isoniazida (H) e rifapentina (P). Ele é administrado em 12 doses semanais, totalizando 3 meses de tratamento. Atualmente, é considerado o esquema preferencial para a maioria das indicações de TPT devido à sua curta duração e administração semanal, o que favorece significativamente a conclusão do tratamento em comparação aos esquemas mais longos.\n\nA alternativa (b) está incorreta. O esquema 4R (rifampicina por 4 meses) é uma opção terapêutica válida e segura, especialmente indicada para contatos de pacientes com resistência à isoniazida, pessoas com mais de 50 anos ou indivíduos com hepatopatias. No entanto, ele não é o esquema \"preferencial\" de primeira linha na diretriz mais recente quando comparado ao 3HP para a população geral.\n\nA alternativa (c) está incorreta. O esquema 9H (isoniazida por 9 meses) foi o padrão-ouro por muitos anos. Atualmente, ele caiu em desuso como primeira escolha devido ao longo tempo de tratamento, o que gera altas taxas de abandono. Ele ainda pode ser utilizado em situações específicas, mas a recomendação atual prioriza esquemas mais curtos.\n\nA alternativa (d) está incorreta. A rifabutina não faz parte do esquema padrão 4R para o tratamento preventivo da tuberculose na rotina da atenção primária. A rifabutina é geralmente reservada para pacientes com HIV que apresentam interações medicamentosas graves com a rifampicina devido ao uso de determinados antirretrovirais.\n\nA alternativa (e) está incorreta. Existe um erro de nomenclatura e farmacologia. A sigla 3HP refere-se à isoniazida (H) e rifapentina (P). A rifampicina é abreviada pela letra R. Embora exista um esquema de 3 meses com isoniazida e rifampicina (3RH), ele é indicado principalmente para crianças menores de 10 anos e não recebe o nome de 3HP.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.867Z"
+  },
+  {
+    "id": "AJUDA_ac4b78c7-b662-4895-8c85-1dfcd1fcc968",
+    "originalId": "ac4b78c7-b662-4895-8c85-1dfcd1fcc968",
+    "statement": "O câncer de mama é responsável por aproximadamente 30% de todos os novos cânceres em mulheres, perdendo somente para o câncer de pulmão como a principal causa de morte por câncer entre as mulheres. Assinale a afirmação correta em relação aos tipos histológicos e prognóstico do câncer de mama.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O número de linfonodos positivos envolvidos e a presença de invasão extracapsular são importantes indicadores de bom prognóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O carcinoma medular parece ter um crescimento mais rápido e mais agressivo do que outras formas de carcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacientes com tumores bem diferenciados tendem a ter resultados mais desfavoráveis do que aqueles com tumores pouco diferenciados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O carcinoma tubular frequentemente metastatiza para os linfonodos axilares e tende a ter um prognóstico pior do que o carcinoma ductal infiltrante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O carcinoma lobular infiltrante com frequência é bilateral ou multicêntrico e tem características clínicas mais favoráveis (grau inferior, positividade para receptores de estrogênio).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a) Incorreta. O envolvimento de linfonodos e a presença de invasão extracapsular são fatores clássicos de mau prognóstico. Quanto maior o número de linfonodos comprometidos, maior o risco de metástases a distância e menor a sobrevida global. A invasão extracapsular indica que a doença rompeu a cápsula linfonodal, sugerindo maior agressividade local.\n\nAlternativa b) Incorreta. O carcinoma medular é um subtipo raro que, embora possa ter um crescimento rápido e características histológicas que simulam agressividade (como ser frequentemente triplo-negativo), apresenta um prognóstico geralmente mais favorável do que o carcinoma ductal invasivo convencional. Ele costuma ser bem circunscrito e apresenta um importante infiltrado linfocitário peritumoral, o que parece conferir uma melhor resposta biológica.\n\nAlternativa c) Incorreta. Na patologia oncológica, a diferenciação celular está diretamente ligada ao prognóstico. Tumores bem diferenciados são aqueles cujas células ainda se assemelham ao tecido original e tendem a crescer mais lentamente, tendo melhor prognóstico. Tumores pouco diferenciados são mais anaplásicos, agressivos e têm resultados clínicos desfavoráveis.\n\nAlternativa d) Incorreta. O carcinoma tubular é um tipo especial de câncer de mama com excelente prognóstico. Ele raramente apresenta metástases para linfonodos axilares e a sobrevida em longo prazo é superior a 90%, sendo muito melhor do que o prognóstico do carcinoma ductal infiltrante (atualmente chamado de carcinoma invasivo de tipo não especial).\n\nAlternativa e) Correta. O carcinoma lobular infiltrante (CLI) é o segundo tipo histológico mais comum de câncer de mama. Suas principais características clínicas e patológicas incluem uma maior propensão à multicentricidade (vários focos na mesma mama) e à bilateralidade (acometimento da mama oposta) quando comparado ao ductal. Além disso, a grande maioria dos carcinomas lobulares clássicos é de baixo grau histológico, possui baixa taxa de proliferação celular (Ki-67 baixo) e expressa fortemente receptores de estrogênio, o que favorece o tratamento hormonal e confere um perfil biológico mais indolente.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:33.867Z"
+  }
+]

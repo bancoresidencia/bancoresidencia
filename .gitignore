@@ -46,7 +46,11 @@ scripts/.*profile*
 scripts/.chrome_profile/
 scripts/.chromium_clean_profile/
 scripts/.chromium_profile/
-data/knowledge/
+data/knowledge/*
+!data/knowledge/extracao_ajudamedico/
+!data/knowledge/extracao_ajudamedico/**
+!data/knowledge/ajudamedico_consolidado_9223.json
+
 
 data/extraction_status.json
 .playwright-mcp/
@@ -66,6 +70,11 @@ __pycache__/
 !data/medcurso_all_questoes_folders.json
 !data/medcurso_extraction_status.json
 !data/exam_to_question_ids.json
+!data/ajudamedico_extraction_status.json
+!data/ajudamedico_vs_platform_report.json
+!data/relatorio_detalhado_978_e_356.json
+!data/relatorio_execucao_textual_gabaritos.json
+
 /data/official_exams/**/*.pdf
 /data/official_exams/**/*.rar
 /data/official_exams/**/*.zip

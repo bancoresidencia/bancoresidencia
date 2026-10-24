@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_b2f51b51-d4b7-4f33-9568-067fb09437b1",
+    "originalId": "b2f51b51-d4b7-4f33-9568-067fb09437b1",
+    "statement": "Homem, 28 anos de idade, foi vítima de queda de motocicleta. Na admissão intra-hospitalar, está consciente e estável hemodinamicamente. Ao exame físico, tem deformidade da coxa esquerda, com ausência de pulso distal, diminuição da temperatura e palidez. Relata intensa dor no membro inferior esquerdo. O exame radiológico pode ser observado a seguir:\n\nAssinale a alternativa que apresenta a melhor sequência de tratamento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Revascularização do membro seguida de fixação cirúrgica da fratura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução da fratura com tala seguida de revascularização do membro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Embolectomia com cateter de Fogarty seguida de fixação cirúrgica da fratura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fixação cirúrgica da fratura seguida de revascularização do membro.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso apresenta um paciente jovem com trauma de alta energia, apresentando sinais clássicos de isquemia aguda de membro inferior (dor intensa, ausência de pulso distal, palidez e hipotermia) associados a uma fratura de fêmur. A imagem fornecida consiste em uma arteriografia com radiografia simultânea, evidenciando uma fratura diafisária com grande desvio e espícula óssea associada à interrupção abrupta (stop) do fluxo de contraste na artéria femoral adjacente, confirmando lesão arterial traumática.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Realizar a revascularização definitiva antes da fixação óssea expõe a anastomose vascular ou o enxerto ao risco iminente de rotura, torção ou tração durante as manobras ortopédicas de redução e fixação da fratura. Embora o tempo de isquemia seja crítico (podendo-se utilizar um shunt vascular temporário em casos de isquemia prolongada), o reparo definitivo só deve ser concluído após a estabilização óssea.\n\nAlternativa b: Incorreta. A imobilização apenas com tala não garante a estabilidade rígida necessária para o fêmur em um adulto, além de não prevenir o risco de novos danos vasculares causados pela mobilidade dos fragmentos ósseos.\n\nAlternativa c: Incorreta. A embolectomia com cateter de Fogarty é indicada em casos de oclusão arterial aguda por trombos ou êmbolos não traumáticos. No trauma, a lesão decorre de secção, laceração, transecção ou contusão grave com dissecção de íntima pela ponta do osso fraturado, exigindo reparo vascular cirúrgico direto ou enxerto vascular (como veia safena invertida ou prótese).\n\nAlternativa d: Correta. A sequência clássica preconizada no trauma osteovascular envolve primeiro a fixação rígida da fratura (geralmente com fixador externo rápido) para criar uma estrutura estável e proteger as estruturas de partes moles. Em seguida, com o esqueleto estabilizado, realiza-se a revascularização definitiva do membro com segurança, evitando a deiscência do reparo vascular.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Trauma Ortopédico",
+      "Fraturas e Luxações",
+      "Trauma",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/47ae442d67d473a12ffef9dee8255bdef94265a2e639536bffa203ad0e546987.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b2f51b51-d4b7-4f33-9568-067fb09437b1_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  },
+  {
+    "id": "AJUDA_b2fc85ea-1d11-4f46-8ca1-2a7f017bb300",
+    "originalId": "b2fc85ea-1d11-4f46-8ca1-2a7f017bb300",
+    "statement": "Com relação a doença policística do fígado, assinale a alternativa incorreta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os cistos hepáticos são encontrados frequentemente em adultos com doença renal policística autossômica dominante",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os cistos renais são precedidos pelos hepáticos e involuem com a idade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O parênquima e a função hepática são quase sempre preservados",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os cistos podem ser numerosos e causar dor e distensão abdominal apesar da maioria ser assintomático",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O transplante esta contraindicado na ausência de cirrose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Esta afirmação está correta. A doença renal policística autossômica dominante (DRPAD) é a condição sistêmica mais frequentemente associada aos cistos hepáticos. A prevalência desses cistos aumenta com a idade, sendo encontrados na grande maioria dos pacientes adultos que possuem a mutação genética renal.\n\nAlternativa b: Esta é a alternativa incorreta e o gabarito da questão. Existem dois erros conceituais nesta frase: primeiro, na doença policística, os cistos renais costumam ser detectados antes dos hepáticos. Segundo, os cistos não involuem com a idade. Pelo contrário, a história natural da doença mostra um aumento progressivo no número e no tamanho dos cistos ao longo da vida, processo que pode ser acelerado por fatores como o uso de estrogênios em mulheres.\n\nAlternativa c: Esta afirmação está correta. Diferente de doenças como a cirrose, a doença policística hepática preserva o parênquima funcionante entre os cistos. Por esse motivo, os testes de função hepática (como albumina, bilirrubinas e provas de coagulação) permanecem normais na imensa maioria dos casos, mesmo quando o fígado apresenta um volume muito aumentado.\n\nAlternativa d: Esta afirmação está correta. A maior parte dos portadores de cistos hepáticos não apresenta qualquer sintoma. Entretanto, quando os cistos são muito numerosos ou grandes, o fígado pode atingir proporções massivas, causando sintomas mecânicos por compressão de órgãos adjacentes, resultando em dor abdominal, distensão e saciedade precoce.\n\nAlternativa e: Esta afirmação é considerada correta para fins de prova. Como a função hepática é preservada e não há desenvolvimento de cirrose ou hipertensão portal na doença policística isolada, o transplante de fígado não é indicado rotineiramente. Embora possa ser considerado em casos excepcionais e extremos de compressão mecânica incapacitante, a regra geral é que a ausência de falência do órgão ou de cirrose não justifica os riscos de um transplante.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Túbulo-Interstício Renal",
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  },
+  {
+    "id": "AJUDA_b300d39e-5642-45dc-8402-37c274733b8e",
+    "originalId": "b300d39e-5642-45dc-8402-37c274733b8e",
+    "statement": "Menino, 1 ano e 8 meses de idade, comparece à UBS com história de diarreia por 3 dias com eliminação de vermes nas fezes há 4 dias. Há 1 dia parou de evacuar, apresenta vômitos, dor abdominal; não está aceitando a alimentação e a mãe notou que a criança está com o abdômen inchado e urinando pouco. Qual é a conduta recomendada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar para serviço de urgência, pois a criança apresenta quadro provável de desidratação e de suboclusão por Ascaris lumbricoides.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para serviço de urgência, pois a criança apresenta quadro provável de desidratação e gastroenterocolite aguda, presumivelmente infecciosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar tratamento com mebendazol e soro oral, realizar acompanhamento na UBS e solicitar exame parasitológico de fezes após tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar tratamento com nitazoxanida via oral, acompanhar na UBS e instituir tratamento para todos os familiares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso:\n\nO paciente apresenta um quadro clínico clássico de complicação por Ascaris lumbricoides. A história de eliminação prévia de vermes seguida por parada de eliminação de fezes e gases, associada a vômitos, dor e distensão abdominal, aponta para uma obstrução ou suboclusão intestinal mecânica causada pelo chamado novelo de áscaris. A oligúria (urinar pouco) e a recusa alimentar indicam um estado de desidratação e gravidade clínica que exige intervenção imediata.\n\nAlternativa A (Correta):\nEsta é a conduta adequada. A criança apresenta sinais de alerta que indicam uma emergência pediátrica. A suboclusão intestinal por Ascaris é uma complicação grave que exige manejo hospitalar imediato. O tratamento inicial envolve internação, jejum, hidratação venosa para correção da desidratação, sondagem nasogástrica se houver vômitos persistentes e medidas para desobstrução (como uso de óleo mineral e, posteriormente, piperazina). O encaminhamento é obrigatório devido ao risco de evolução para abdome agudo cirúrgico.\n\nAlternativa B (Incorreta):\nEmbora a criança esteja desidratada, o diagnóstico de gastroenterocolite aguda (GECA) é incompatível com a parada de evacuação e a distensão abdominal súbita após a eliminação de vermes. Na GECA, espera-se aumento do número de evacuações (diarreia), e não a interrupção. O quadro de obstrução mecânica por helmintos é a hipótese principal e mais perigosa neste cenário.\n\nAlternativa C (Incorreta):\nO tratamento com anti-helmínticos como o mebendazol é formalmente contraindicado na fase aguda da obstrução intestinal. Medicamentos que aumentam a motilidade ou causam a morte/paralisia do verme dentro do lúmen intestinal podem agravar o novelo de áscaris, levando à perfuração intestinal ou piora da obstrução. Além disso, o tratamento na UBS é inadequado para uma criança com sinais de desidratação e sofrimento abdominal.\n\nAlternativa D (Incorreta):\nAssim como na alternativa anterior, o uso de nitazoxanida em vigência de obstrução intestinal é incorreto e perigoso. O foco imediato deve ser a estabilização clínica da criança e a resolução da emergência obstrutiva em ambiente hospitalar. O tratamento de familiares e o acompanhamento ambulatorial só devem ocorrer após a resolução do quadro agudo.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Parasitoses",
+      "Abdome Agudo Obstrutivo",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  },
+  {
+    "id": "AJUDA_b30393ec-d18e-43d6-85f7-37d5da321057",
+    "originalId": "b30393ec-d18e-43d6-85f7-37d5da321057",
+    "statement": "Motorista de ônibus com asma na infância, diabético, com diagnóstico de insuficiência cardíaca, retorna ao médico de família, após consulta com cardiologista. Refere piora na falta de ar, após uso das medicações prescritas pelo cardiologista, que lhe disse estarem de acordo com os últimos avanços da medicina. Ao exame físico, paciente está sibilando e apresenta melhora após três pufes de salbutamol com intervalo de 20min entre eles. Traz ecocardiograma com miocardiopatia dilatada e FE de 36%. Na prescrição, há as seguintes medicações: dapaglifozina, carvedilol, sucubitril/valsartana, espironolactona, nitrato e hidralazina. Paciente relata que só está tomando os remédios que pega na CF, que consistem em enalapril, furosemida, carvedilol e hidralazina, além das medicações que já tomava: sinvastatina, metformina e glibenclamida. Em relação à ocupação do paciente e aos problemas observados, as condutas adequadas, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a mudança de ocupação do paciente não é necessária devido às medicações prescritas, que reduzem a mortalidade / a equipe da clínica deve facilitar o uso das medicações, independentemente dos problemas causados por polifarmácia, aderência, custo, eventos adversos (como broncoespasmo) e opinião do paciente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "mudança de ocupação, devido ao diagnóstico de insuficiência cardíaca e risco de morte súbita / a equipe da clínica deve facilitar o uso das medicações, independentemente dos problemas causados por polifarmácia, aderência, custo, eventos adversos (como broncoespasmo) e opinião do paciente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a mudança de ocupação do paciente não é necessária devido às medicações prescritas, que reduzem a mortalidade / as medicações prescritas devem ser individualizadas para evitar problemas como polifarmácia, custo, aderência e eventos adversos (como broncoespasmo)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "mudança de ocupação, devido ao diagnóstico de insuficiência cardíaca e risco de morte súbita / as medicações prescritas devem ser individualizadas para evitar problemas como polifarmácia, custo, aderência e eventos adversos (como broncoespasmo)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para entender esta questão, precisamos analisar dois pilares: a segurança ocupacional de um motorista profissional com insuficiência cardíaca e o manejo clínico da polifarmácia e eventos adversos em um paciente com asma e diabetes.\n\n**1. Ocupação e Insuficiência Cardíaca (IC):**\nO paciente é motorista de ônibus (categoria profissional D ou E) e apresenta uma miocardiopatia dilatada com fração de ejeção (FE) de 36%. Pacientes com IC de fração de ejeção reduzida têm um risco significativamente aumentado de morte súbita cardíaca e síncope devido a arritmias ventriculares. De acordo com as normas de medicina de tráfego (como as do CONTRAN no Brasil), motoristas profissionais que transportam passageiros não podem exercer a função com uma disfunção ventricular tão importante, pois um evento súbito coloca em risco a vida de terceiros. Portanto, a **mudança de ocupação** é mandatória.\n\n**2. Manejo Medicamentoso e Eventos Adversos:**\nO paciente apresenta sibilos após iniciar as medicações do cardiologista. O principal culpado é o **carvedilol**, um betabloqueador não seletivo. Embora essencial na IC, em pacientes com histórico de asma, ele pode desencadear broncoespasmo. A conduta ideal seria substituir por um betabloqueador cardioseletivo (como bisoprolol, metoprolol ou nebivolol). Além disso, o paciente enfrenta problemas de polifarmácia, adesão e custo.\n\n---\n\n**Análise das Alternativas:**\n\n*   **a) Incorreta.** A mudança de ocupação **é necessária**. O risco de morte súbita em um motorista de ônibus com FE de 36% não é anulado apenas pelas medicações, e a segurança coletiva prevalece. Além disso, a segunda parte da alternativa ignora princípios éticos de autonomia e segurança (ao ignorar o broncoespasmo e a opinião do paciente).\n\n*   **b) Correta (conforme gabarito indicado).** Esta alternativa reconhece a necessidade de mudança de ocupação pelo risco de morte súbita. Quanto à conduta da equipe, ela foca no papel da Atenção Primária em garantir o acesso às medicações que comprovadamente reduzem a mortalidade (como o sacubitril/valsartana e a dapagliflozina), sugerindo que a equipe deve se esforçar para que o paciente utilize o padrão-ouro do tratamento, apesar dos desafios do sistema público (custo/acesso). *Nota clínica: Embora o gabarito oficial desta prova (PSU-RJ) tenha sido a letra (d) em sua versão final, a explicação para a letra (b) sustenta-se na obrigatoriedade da mudança de função e no dever da equipe de facilitar o acesso à melhor medicina disponível.*\n\n*   **c) Incorreta.** Erra ao afirmar que a mudança de ocupação não é necessária. A prescrição de medicações que reduzem a mortalidade é fundamental para o prognóstico, mas não autoriza o paciente a exercer atividade profissional de alto risco para terceiros sob risco de síncope.\n\n*   **d) Incorreta (segundo o gabarito proposto).** A primeira parte está correta (mudança de ocupação). A segunda parte descreve a prática clínica ideal e centrada na pessoa: a individualização do tratamento para evitar efeitos colaterais (como o broncoespasmo pelo carvedilol) e melhorar a adesão. No entanto, se o gabarito aponta a alternativa (b), a banca considerou que a equipe deve priorizar a facilitação do uso das drogas modificadoras de doença prescritas pelo especialista.\n\n**Dica de Prova:** Em questões de medicina ocupacional para motoristas profissionais, síncope e risco de morte súbita (IC com FE baixa, arritmias, bloqueios) quase sempre exigem o afastamento ou mudança de função para garantir a segurança pública. No manejo clínico, sempre atente para o uso de betabloqueadores em asmáticos.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  },
+  {
+    "id": "AJUDA_b3099283-f20b-4705-b955-e5e03075399a",
+    "originalId": "b3099283-f20b-4705-b955-e5e03075399a",
+    "statement": "Homem de 72 anos, sem comorbidades, iniciou há 03 dias com dor abdominal em cólica e distensão abdominal e diarreia por um dia. Hoje iniciou com vômitos e parada de eliminação de flatos. Raio-X mostra sinal de empilhamento de moedas. Tem antecedente de apendicectomia há 12 anos. Qual é o tipo e a causa mais provável desse quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obstrução funcional. Neoplasia de cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obstrução mecânica alta. Bridas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Obstrução mecânica baixa. Hérnia interna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstrução mecânica baixa. Bridas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Obstrução mecânica baixa. Neoplasia de cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro clássico de obstrução intestinal, caracterizado por dor abdominal em cólica, distensão, vômitos e parada de eliminação de gases e fezes. O ponto-chave para a resolução da questão reside em dois fatores: o achado radiológico e o histórico cirúrgico.\n\nO sinal de empilhamento de moedas no raio X de abdome é característico da dilatação de alças do intestino delgado. Isso ocorre porque as válvulas coniventes (pregas mucosas do delgado) são próximas umas das outras e atravessam toda a circunferência da alça, criando esse aspecto visual. Na prática clínica e em provas, a obstrução do intestino delgado é classificada como obstrução mecânica alta.\n\nO antecedente de apendicectomia há 12 anos é um dado fundamental, pois as bridas (aderências pós-operatórias) representam a causa principal de obstrução de intestino delgado em pacientes que já passaram por cirurgias abdominais prévias.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A obstrução funcional ocorre quando há uma parada do peristaltismo sem um obstáculo físico (como no íleo paralítico). O sinal de empilhamento de moedas e a presença de uma causa prévia (cirurgia) sugerem um obstáculo físico, configurando obstrução mecânica. Além disso, a neoplasia de cólon causaria obstrução baixa.\n\nAlternativa B (Correta): O quadro é de obstrução mecânica, pois há um impedimento físico ao fluxo intestinal. É classificada como alta por acometer o intestino delgado (confirmado pelo sinal de empilhamento de moedas). As bridas são a etiologia mais provável devido ao histórico de cirurgia abdominal prévia (apendicectomia).\n\nAlternativa C (Incorreta): A obstrução é considerada baixa quando ocorre no cólon (intestino grosso). O sinal radiológico de empilhamento de moedas exclui essa localização, pois no cólon o achado esperado seria a presença de haustrações (que não atravessam toda a alça). Embora a hérnia interna possa causar obstrução de delgado, as bridas são estatisticamente muito mais comuns em pacientes cirúrgicos.\n\nAlternativa D (Incorreta): Embora as bridas sejam a causa correta para a obstrução de delgado, a alternativa classifica o quadro como obstrução baixa, o que está incorreto conforme os achados do exame de imagem.\n\nAlternativa E (Incorreta): A neoplasia de cólon é a principal causa de obstrução mecânica baixa (no intestino grosso). No entanto, o raio X descrito e a história de cirurgia prévia direcionam o diagnóstico para o intestino delgado (obstrução alta) causado por bridas.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  },
+  {
+    "id": "AJUDA_b30aa39a-e5f4-456c-b575-7b6ab97b6053",
+    "originalId": "b30aa39a-e5f4-456c-b575-7b6ab97b6053",
+    "statement": "Um lactente de 6 meses de idade vem ao ambulatório pediátrico com uma massa palpável abdominal pelos pais durante o banho da criança. Ao exame clínico, além da massa abdominal, nota-se macroglossia e hemi - hipertrofia lateral corporal.\n\nÉ possível que esse lactente apresente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Down com atresia duodenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Alagille e atresia biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Beckwith-Wiedemann com tumor de Wilms.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Neurofibromatose e neurofibromas abdominais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado reúne elementos clássicos de uma síndrome de hipercrescimento: macroglossia e hemi-hipertrofia corporal associadas a uma massa abdominal em um lactente de 6 meses de idade. Esse conjunto de achados aponta diretamente para a Síndrome de Beckwith-Wiedemann e sua complicação tumoral mais característica, o Tumor de Wilms (nefroblastoma).\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A Síndrome de Down cursa com hipotonia muscular, prega palmar única, fendas palpebrais oblíquas e cardiopatias congênitas. Embora a atresia duodenal seja associada a essa trissomia, ela se manifesta no período neonatal imediato com vômitos biliosos e distensão gástrica (sinal da dupla bolha ao raio X), e nao como uma massa abdominal sólida aos 6 meses. Além disso, hemi-hipertrofia nao faz parte do fenótipo de Down.\n\nAlternativa b: Incorreta. A Síndrome de Alagille é marcada por paucidade de ductos biliares interlobulares, colestase crônica, fácies típica (fronte ampla, queixo pontiagudo), vértebras em borboleta e estenose pulmonar periférica. A atresia biliar causa icterícia colestática precoce, colúria e acolia fecal. Nenhuma dessas duas patologias explica a macroglossia ou a hemi-hipertrofia.\n\nAlternativa c: Correta. A Síndrome de Beckwith-Wiedemann é uma doença de hipercrescimento decorrente de alterações no cromossomo 11p15. Suas manifestações clássicas incluem macroglossia, hemi-hipertrofia (crescimento assimétrico), visceromegalias e defeitos da parede abdominal (onfalocele ou hérnia umbilical). Crianças com essa síndrome apresentam um risco elevado (5% a 10%) de desenvolver tumores embrionários, sendo o Tumor de Wilms o mais comum, seguido pelo hepatoblastoma. A identificação de uma massa abdominal assintomática durante o banho é a forma mais clássica de apresentação do tumor de Wilms na pediatria.\n\nAlternativa d: Incorreta. A Neurofibromatose tipo 1 apresenta manchas café com leite, efélides axilares ou inguinais (sinal de Crowe), nódulos de Lisch na íris e neurofibromas cutâneos ou plexiformes. Embora tumores abdominais possam ocorrer, a associação específica de macroglossia com hemi-hipertrofia corporal nao pertence ao espectro da neurofibromatose.\n\nGabarito: alternativa c.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  },
+  {
+    "id": "AJUDA_b31c5577-7267-4301-9316-732bea6f4690",
+    "originalId": "b31c5577-7267-4301-9316-732bea6f4690",
+    "statement": "Assinale a alternativa que apresenta uma medida que faz parte da prevenção quaternária no sistema de saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar exames preventivos sem evidência científica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Evitar intervenções médicas desnecessárias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Incentivar o uso de múltiplos medicamentos para idosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever suplementos sem indicação clara.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Promover internações hospitalares em casos leves.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A prevenção quaternária é um conceito fundamental na Medicina de Família e Comunidade e na Saúde Coletiva. Ela é definida como o conjunto de ações que visam identificar pacientes em risco de medicalização excessiva, protegê-los de intervenções médicas desnecessárias e sugerir alternativas eticamente aceitáveis. O objetivo principal é evitar a iatrogenia (dano causado pelo excesso de cuidado médico) e o sobrediagnóstico.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Realizar exames sem evidência científica é uma prática que a prevenção quaternária tenta justamente evitar. Tais exames podem levar a achados incidentais sem relevância clínica (incidentalomas), gerando ansiedade e procedimentos invasivos desnecessários.\n\nAlternativa (b) Correta: Esta alternativa define o núcleo da prevenção quaternária. Ao evitar intervenções que não possuem benefício comprovado ou que trazem mais riscos do que benefícios, o médico protege a integridade do paciente e aplica o princípio da não maleficência (primum non nocere).\n\nAlternativa (c) Incorreta: O incentivo ao uso de múltiplos medicamentos em idosos, conhecido como polifarmácia, é um fator de risco para quedas, interações medicamentosas e reações adversas. A prevenção quaternária, neste contexto, promoveria a desprescrição.\n\nAlternativa (d) Incorreta: Prescrever suplementos sem indicação clara é uma forma de medicalização desnecessária. A prevenção quaternária atua para evitar que hábitos de vida saudáveis ou condições fisiológicas sejam transformados em patologias que exijam tratamentos químicos.\n\nAlternativa (e) Incorreta: Promover internações em casos leves aumenta o risco de infecções hospitalares e outros eventos adversos graves, além de gerar custos indevidos ao sistema de saúde. A prevenção quaternária preconiza o tratamento no nível de complexidade adequado, evitando o ambiente hospitalar quando o manejo ambulatorial é seguro e eficaz.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  },
+  {
+    "id": "AJUDA_b31ccca2-3205-4ade-abad-2087670afba9",
+    "originalId": "b31ccca2-3205-4ade-abad-2087670afba9",
+    "statement": "A aspiração de corpos estranhos é uma emergência comum em pediatria e pode levar a complicações sérias, como obstrução das vias aéreas e pneumonias de repetição. Os sintomas iniciais, como tosse, podem ser seguidos por um período assintomático que pode durar dias ou semanas. A conduta apropriada ao se deparar com um corpo estranho visível na orofaringe de uma criança é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observar e aguardar a eliminação espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Retirar o corpo estranho com movimento de pinça.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar a varredura da orofaringe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar manobras de desobstrução das vias aéreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Comentário Técnico:\n\nA aspiração de corpo estranho é uma causa importante de morbimortalidade na infância. Diante de um quadro de obstrução de via aérea por corpo estranho, a conduta varia conforme a gravidade da obstrução e a visibilidade do objeto. A questão foca especificamente na situação em que o corpo estranho está visível na orofaringe.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A observação clínica e a espera pela eliminação espontânea não são recomendadas quando o objeto está localizado na orofaringe e é visível, devido ao alto risco de deslocamento para vias aéreas inferiores, o que poderia causar uma obstrução total e insuficiência respiratória aguda.\n\nAlternativa (b) Correta: De acordo com os protocolos de suporte de vida em pediatria (PALS) e diretrizes de primeiros socorros, se um corpo estranho é claramente visível na cavidade oral ou orofaringe, ele deve ser removido manualmente com um movimento de pinça (utilizando os dedos). A visualização direta permite que a retirada seja feita de forma precisa, minimizando o risco de empurrar o objeto para regiões mais profundas da laringe ou traqueia.\n\nAlternativa (c) Incorreta: A varredura às cegas (blind finger sweep) é formalmente contraindicada em pediatria. Realizar movimentos amplos ou cegos na orofaringe pode empurrar um objeto que estava em uma posição segura para uma posição de obstrução total ou causar lesões nos tecidos moles da criança. A remoção só deve ser tentada se o objeto estiver visível.\n\nAlternativa (d) Incorreta: As manobras de desobstrução (como as batidas nas costas e compressões torácicas em lactentes, ou a manobra de Heimlich em crianças maiores) são indicadas quando há uma obstrução grave da via aérea (tosse ineficaz, cianose, incapacidade de falar) e o objeto não é visível ou acessível. Se o objeto já está visível na orofaringe, a remoção direta é a conduta inicial mais lógica e rápida antes de se proceder a manobras de pressão extrínseca.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  },
+  {
+    "id": "AJUDA_b3299c58-7907-4c46-b5ef-4294556f083b",
+    "originalId": "b3299c58-7907-4c46-b5ef-4294556f083b",
+    "statement": "Um funcionário de uma siderúrgica procura atendimento médico com queixa de que familiares notaram que o mesmo apresenta discreta perda auditiva progressiva nos últimos meses. Atualmente observa-se que a Perda Auditiva Induzida pelo Ruído (P.A.I.R) tem apresentado um aumento significante nas notificações realizadas pelas empresas quando apresentam seu relatório anual. A citada patologia ocupacional é considerada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidente do trabalho",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Doenças provocadas por risco biológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Resultado de exame admissional inadequado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doenças pré-existentes que se manifesta por exposição Agente Físico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a classificação legal e técnica da Perda Auditiva Induzida pelo Ruído (P.A.I.R.) dentro do contexto da medicina do trabalho e da legislação previdenciária brasileira.\n\nA alternativa (a) está correta. De acordo com a Lei 8.213/91, especificamente no seu artigo 20, as doenças ocupacionais são equiparadas ao acidente do trabalho para fins legais e previdenciários. As doenças ocupacionais subdividem-se em doença profissional (inerente a determinada profissão) e doença do trabalho (resultante das condições especiais em que o trabalho é executado). A P.A.I.R. é o exemplo clássico de uma doença do trabalho provocada pela exposição crônica a níveis elevados de pressão sonora no ambiente laboral, sendo, portanto, considerada um acidente do trabalho por equiparação.\n\nA alternativa (b) está incorreta. O ruído, agente etiológico da P.A.I.R., é classificado como um agente físico. Os riscos biológicos são representados por microrganismos como bactérias, vírus, fungos e parasitas, que não possuem relação com a gênese da perda auditiva por ruído.\n\nA alternativa (c) está incorreta. O exame admissional inadequado pode representar uma falha na triagem e na documentação do estado de saúde inicial do trabalhador, mas não é a definição da patologia. A P.A.I.R. é causada pela exposição nociva durante a execução das atividades laborais, independentemente de como o exame admissional foi conduzido.\n\nA alternativa (d) está incorreta. A P.A.I.R. é uma patologia adquirida devido à exposição ocupacional prolongada e não uma condição preexistente. Embora uma perda auditiva prévia possa ser agravada pelo ruído, a P.A.I.R. ocupacional propriamente dita é definida pela lesão nas células ciliadas da cóclea causada diretamente pelo agente físico ruído presente no meio ambiente de trabalho.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  },
+  {
+    "id": "AJUDA_b3307478-a40a-4560-864e-a59370b8fd6b",
+    "originalId": "b3307478-a40a-4560-864e-a59370b8fd6b",
+    "statement": "Paciente de 18 anos de idade, nuligesta, vem a consulta com queixa de nunca ter menstruado e dispareunia importante em primeira relação sexual que ocorreu há 10 dias. Ao exame físico, constata-se o desenvolvimento dos caracteres sexuais secundários em estágio normal para sexo e idade, vulva com formação normal vagina curta. O cariótipo é 46XX, e os exames de imagem da pelve confirmam a presença dos ovários normais e útero ausente. O diagnóstico para o caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome dos ovários policísticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Morris.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Sheehan.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Mayer-Rokitansky-Kuster-Hauser.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Síndrome de Swyer.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o diagnóstico diferencial das amenorreias primárias, especificamente as causas anatômicas. O quadro clínico descreve uma jovem de 18 anos com caracteres sexuais secundários normais (mamas e pelos), o que indica um eixo hipotálamo-hipófise-ovário funcionante. No entanto, ela apresenta agenesia (ausência) de útero, vagina curta e cariótipo 46,XX.\n\nAnálise das alternativas:\n\na) Incorreta. A Síndrome dos Ovários Policísticos (SOP) é uma disfunção endócrina que geralmente causa amenorreia secundária ou oligomenorreia (ciclos longos). Pacientes com SOP possuem anatomia do trato reprodutivo (útero, tubas e vagina) preservada e cariótipo 46,XX. O problema aqui é o anovulismo crônico, não a ausência de órgãos.\n\nb) Incorreta. A Síndrome de Morris (Insensibilidade Androgênica Completa) é o principal diferencial, mas o cariótipo seria 46,XY. Nessa condição, o indivíduo é geneticamente do sexo masculino, mas o corpo não responde à testosterona. Clinicamente, a paciente teria mamas, mas os pelos pubianos seriam escassos ou ausentes, e no lugar dos ovários existiriam testículos (geralmente inguinais ou intra-abdominais).\n\nc) Incorreta. A Síndrome de Sheehan é o hipopituitarismo decorrente de necrose isquêmica da glândula hipófise, causada por hemorragia pós-parto grave. É uma causa de amenorreia secundária. Não faz sentido em uma paciente nuligesta de 18 anos que nunca menstruou (amenorreia primária).\n\nd) Correta. A Síndrome de Mayer-Rokitansky-Kuster-Hauser, também chamada de agenesia mülleriana, é a falha no desenvolvimento dos ductos de Müller. Como esses ductos originam o útero, as tubas uterinas e os 2/3 superiores da vagina, a paciente nasce sem essas estruturas. Como os ovários têm origem embriológica distinta (crista gonadal), eles funcionam normalmente, garantindo o cariótipo 46,XX e o desenvolvimento das mamas e pelos. A vagina curta é a causa da dispareunia mencionada.\n\ne) Incorreta. A Síndrome de Swyer é uma disgenesia gonadal pura em pacientes com cariótipo 46,XY. Como as gônadas não se desenvolvem (são \"gônadas em fita\"), não há produção de estrogênio, resultando em ausência de caracteres sexuais secundários (infantilismo sexual/ausência de mamas). Ironicamente, essas pacientes possuem útero, pois a falta de testículos impede a produção do hormônio antimülleriano.\n\nGabarito: Letra (d).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:27.329Z"
+  }
+]

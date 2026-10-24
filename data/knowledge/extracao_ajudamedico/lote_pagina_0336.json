@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_5c69ff1b-5f1e-4e45-8843-d0b94a3a3f8f",
+    "originalId": "5c69ff1b-5f1e-4e45-8843-d0b94a3a3f8f",
+    "statement": "A medida de associação tipicamente obtida em estudos de caso-controle, que estima quantas vezes a chance de exposição é maior nos doentes em comparação aos não doentes, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Odds Ratio (Razão de Chances).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Risco Relativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Risco Atribuível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Razão de Prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para responder a essa questão, é fundamental correlacionar o delineamento do estudo epidemiológico com sua respectiva medida de associação. No estudo de caso-controle, o pesquisador parte de indivíduos que já apresentam a doença (casos) e de indivíduos saudáveis (controles) para investigar, retrospectivamente, a frequência da exposição a possíveis fatores de risco no passado.\n\nAlternativa a) Correta: O Odds Ratio, traduzido como Razão de Chances, é a medida de associação de escolha para estudos de caso-controle. Como esse tipo de estudo não permite o cálculo direto da incidência (uma vez que o número de doentes e não doentes é definido pelo pesquisador e não ocorre naturalmente ao longo do tempo), não é possível calcular o risco. Dessa forma, estima-se a chance de exposição entre os doentes dividida pela chance de exposição entre os não doentes.\n\nAlternativa b) Incorreta: O Risco Relativo (RR) é a medida de associação utilizada prioritariamente em estudos de coorte e ensaios clínicos. Para o seu cálculo, é necessário conhecer a incidência da doença (casos novos) nos grupos expostos e não expostos, informação que o delineamento de caso-controle não fornece.\n\nAlternativa c) Incorreta: O Risco Atribuível é uma medida de impacto também derivada de estudos que permitem o cálculo da incidência, como a coorte. Ele representa a diferença absoluta entre o risco dos expostos e o risco dos não expostos, indicando quanto do desfecho pode ser atribuído especificamente ao fator de risco estudado.\n\nAlternativa d) Incorreta: A Razão de Prevalência é a medida típica dos estudos transversais. Nesses estudos, a exposição e a doença são analisadas simultaneamente em um recorte temporal único, fornecendo a prevalência do evento em vez da chance retrospectiva de exposição.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:00.705Z"
+  },
+  {
+    "id": "AJUDA_5c6e2854-a8a3-4fa8-9603-60773417bc88",
+    "originalId": "5c6e2854-a8a3-4fa8-9603-60773417bc88",
+    "statement": "Paciente procura atendimento médico para quadro de edema em membro inferior esquerdo, sendo diagnosticada com a síndrome de May-Thurner. Esta síndrome tem como característica anatômica a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "compressão da artéria femoral pela veia femoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "compressão da veia ilíaca pela artéria ilíaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "compressão da artéria ilíaca pela veia ilíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "compressão da veia femoral pela artéria femoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A síndrome de May-Thurner, também conhecida como síndrome de Cockett ou síndrome de compressão da veia ilíaca, é uma condição anatômica em que a veia ilíaca comum esquerda é comprimida pela artéria ilíaca comum direita contra a quinta vértebra lombar. Essa compressão mecânica crônica, associada à pulsação da artéria sobre a veia, causa lesões na camada íntima do vaso venoso, levando à formação de trabéculas ou esporões intraluminais. O resultado é a obstrução do fluxo venoso, o que predispõe o paciente ao desenvolvimento de trombose venosa profunda (TVP) e edema persistente, tipicamente no membro inferior esquerdo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A síndrome de May-Thurner ocorre no nível da pelve, envolvendo os vasos ilíacos, e não os vasos femorais localizados na região da coxa. Além disso, devido à diferença de pressão e estrutura de parede, são as artérias que costumam comprimir as veias, e não o contrário.\n\nAlternativa b: Correta. Esta alternativa descreve precisamente a base anatômica da síndrome. A artéria ilíaca comum direita cruza anteriormente à veia ilíaca comum esquerda, pressionando-a contra o corpo vertebral e gerando a zona de estenose e turbulência sanguínea.\n\nAlternativa c: Incorreta. O vaso que sofre a compressão é a veia, que possui uma parede mais fina e menor pressão interna. A compressão de uma artéria por uma veia é um fenômeno extremamente raro e não define esta síndrome.\n\nAlternativa d: Incorreta. Novamente, o erro está na localização anatômica dos vasos citados. Embora a compressão da veia femoral por uma artéria pudesse causar edema no membro inferior, essa topografia não corresponde à definição da síndrome de May-Thurner.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:00.705Z"
+  },
+  {
+    "id": "AJUDA_5c6ee198-533e-423e-aca0-05b1aa1d06d3",
+    "originalId": "5c6ee198-533e-423e-aca0-05b1aa1d06d3",
+    "statement": "Acerca do transtorno do espectro autista (TEA), é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a prevalência do TEA é em torno de 10% da população mundial, com maior prevalência no sexo feminino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "os sinais de alerta no primeiro ano de vida incluem anormalidades no controle motor, atraso no desenvolvimento motor, sensibilidade diminuída a recompensas sociais, baixo contato visual e pouca resposta ao chamado pelo nome.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O M‑CHAT‑R/F (Modified Checklist for Autism in Toddlers) é um questionário de triagem que deve ser respondido pelos pais ou pelos cuidadores de crianças entre 6 e 12 meses de vida, em uma consulta de puericultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Raramente indivíduos com TEA apresentam disfunções no processamento sensorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Para o diagnóstico, é imprescindível a realização de ressonância magnética de crânio e eletroencefalograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Incorreta. A prevalência estimada do Transtorno do Espectro Autista (TEA) é significativamente menor do que 10%, situando-se atualmente na faixa de 1% a 2% da população mundial (dados do CDC sugerem 1 em cada 36 crianças). Além disso, o TEA é muito mais frequente no sexo masculino, com uma proporção de aproximadamente 4 para 1 em relação ao sexo feminino.\n\nAlternativa b: Correta. O diagnóstico precoce é um dos pilares do manejo do TEA. No primeiro ano de vida, sinais sutis já podem ser notados, como o atraso no desenvolvimento motor, a hipotonia, a falta de engajamento social (baixa resposta ao sorriso e ao chamado pelo nome) e o contato visual pobre ou assistemático. Esses sinais indicam um desenvolvimento atípico da comunicação social e do sistema de recompensa social.\n\nAlternativa c: Incorreta. O M-CHAT-R/F é, de fato, um questionário de triagem fundamental na puericultura, mas ele é validado para ser aplicado em crianças entre 16 e 30 meses de idade. A aplicação entre 6 e 12 meses é precoce demais para a sensibilidade e especificidade deste instrumento específico.\n\nAlternativa d: Incorreta. As alterações sensoriais são extremamente frequentes no TEA, afetando a grande maioria dos indivíduos. Elas podem se manifestar como hipersensibilidade (incômodo com ruídos ou texturas) ou hipossensibilidade (indiferença à dor ou à temperatura). Tais disfunções são tão características que foram incluídas nos critérios diagnósticos do DSM-5.\n\nAlternativa e: Incorreta. O diagnóstico de TEA é estritamente clínico, baseado na observação do comportamento e no histórico do desenvolvimento. Não existem biomarcadores ou exames de imagem que confirmem o autismo. A ressonância magnética e o eletroencefalograma são exames complementares solicitados apenas quando há suspeita de comorbidades específicas, como epilepsia ou doenças neurodegenerativas, não sendo imprescindíveis para o diagnóstico do transtorno em si.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:00.705Z"
+  },
+  {
+    "id": "AJUDA_5c762429-5caf-4969-a459-6a5ee602c5dd",
+    "originalId": "5c762429-5caf-4969-a459-6a5ee602c5dd",
+    "statement": "Na fisiopatogenia da asma brônquica, diversos mecanismos imunológicos e inflamatórios contribuem para a obstrução das vias aéreas. Qual das seguintes afirmações melhor descreve um dos principais mecanismos envolvidos na resposta asmática?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ativação de linfócitos T CD4+ do tipo Th1 é predominante e leva à produção de citocinas inflamatórias que causam broncoconstrição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A liberação de mediadores inflamatórios pelos mastócitos, como histamina e leucotrienos, resulta em broncoconstrição e aumento da permeabilidade vascular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A presença de neutrófilos é a principal característica da inflamação nas vias aéreas, contribuindo para a remodelação crônica das mesmas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A produção de IgG em resposta a alérgenos é o principal fator que desencadeia a hiperresponsividade brônquica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O aumento da secreção de muco é exclusivamente causado pela ativação de linfócitos T CD4+ do tipo Th17.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Na fisiopatogenia da asma brônquica, a compreensão dos mecanismos celulares e moleculares é fundamental para entender a obstrução das vias aéreas. Abaixo, analisamos cada alternativa:\n\nAlternativa a) Incorreta. A asma brônquica clássica (atópica) é caracterizada por uma resposta imune mediada predominantemente por linfócitos T CD4+ do tipo Th2, e não Th1. O perfil Th2 é responsável pela produção de citocinas como IL-4, IL-5 e IL-13, que promovem a síntese de IgE e o recrutamento de eosinófilos. O perfil Th1 está geralmente associado a respostas de defesa contra patógenos intracelulares e processos de hipersensibilidade tardia.\n\nAlternativa b) Correta. Esta alternativa descreve com precisão a fase imediata da crise asmática. Quando um indivíduo sensibilizado entra em contato com um alérgeno, este se liga a moléculas de IgE ancoradas em mastócitos na mucosa brônquica. Isso provoca a degranulação dos mastócitos e a liberação de mediadores pré-formados, como a histamina, e mediadores lipídicos sintetizados no momento, como os leucotrienos. Esses mediadores agem rapidamente na musculatura lisa, causando broncoconstrição, além de promoverem o aumento da permeabilidade vascular, resultando em edema de mucosa.\n\nAlternativa c) Incorreta. A célula inflamatória característica e central na asma brônquica típica é o eosinófilo. Embora os neutrófilos possam estar presentes em fenótipos específicos de asma (como asma grave ou asma neutrofílica), eles não são a característica principal ou universal da inflamação asmática. O remodelamento brônquico é um processo multifatorial que envolve deposição de colágeno, hiperplasia de glândulas e hipertrofia muscular, não sendo atribuído apenas aos neutrófilos.\n\nAlternativa d) Incorreta. O principal anticorpo envolvido na cascata inflamatória da asma atópica é a imunoglobulina E (IgE). A produção de IgG faz parte da resposta imune adaptativa sistêmica normal, mas não é o mecanismo desencadeante da hiperresponsividade brônquica ou da degranulação aguda de mastócitos na asma.\n\nAlternativa e) Incorreta. O aumento da secreção de muco é estimulado principalmente pela citocina IL-13, que é produzida pelos linfócitos Th2. Os linfócitos Th17 estão associados à quimiotaxia de neutrófilos e costumam estar elevados em casos de asma grave e asma não atópica, mas não são a causa exclusiva da produção de muco.\n\nGabarito: Letra (b).",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:00.705Z"
+  },
+  {
+    "id": "AJUDA_5c861d11-181a-457f-a6c5-9644b32ac573",
+    "originalId": "5c861d11-181a-457f-a6c5-9644b32ac573",
+    "statement": "Com relação ao pneumotórax espontâneo primário, analise as afirmativas e assinale a alternativa CORRETA.\n\nI. A causa mais comum é a ruptura de pequenos blebs subpleurais.\nII. Pequenos pneumotóraces sem sinais clínicos de progressão e em pacientes com sintomas bem controlados podem ser tratados com observação e oxigenoterapia inalatória.\nIII. A presença de escape aéreo prolongado pós-drenagem, mesmo no primeiro episódio de pneumotórax, requer tratamento cirúrgico com ressecção pulmonar do foco causador.\nIV. A recorrência de pneumotórax em pacientes não tratados com ressecção da bolha ou bleb subpleural no primeiro episódio é frequente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas II e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas II, III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nAfirmativa I: CORRETA. O pneumotórax espontâneo primário ocorre tipicamente em indivíduos jovens, magros e altos, sem doença pulmonar prévia conhecida. A fisiopatologia principal é a ruptura de pequenas vesículas subpleurais repletas de ar, conhecidas como blebs (geralmente menores que 2 cm), localizadas com maior frequência nos ápices pulmonares.\n\nAfirmativa II: CORRETA. O manejo inicial do pneumotórax espontâneo primário depende do tamanho do colapso e da estabilidade clínica. Pacientes estáveis, com pneumotórax pequeno (geralmente definido como menor que 2 cm entre a pleura visceral e a parede torácica ao nível do hilo) e sem sintomas significativos, podem ser acompanhados apenas com observação. A oferta de oxigênio suplementar (oxigenoterapia) é recomendada, pois acelera a taxa de reabsorção do ar no espaço pleural em até quatro vezes através do fenômeno de \"washout\" de nitrogênio.\n\nAfirmativa III: CORRETA. Embora o tratamento do primeiro episódio de pneumotórax seja frequentemente conservador ou apenas com drenagem pleural, existem indicações cirúrgicas precisas mesmo na primeira ocorrência. O escape aéreo prolongado (persistência de borbulhamento no dreno, geralmente por mais de 3 a 5 dias) indica que a fístula pleuropulmonar não fechou espontaneamente, exigindo intervenção cirúrgica (geralmente por videocirurgia) para grampeamento da lesão e realização de pleurodese.\n\nAfirmativa IV: CORRETA. A taxa de recorrência após o primeiro episódio de pneumotórax espontâneo primário tratado de forma conservadora ou apenas com dreno é considerada alta, variando entre 20% e 50% nos primeiros dois anos. O risco aumenta progressivamente após cada novo episódio (chegando a mais de 60% após o segundo e 80% após o terceiro), o que justifica a intervenção cirúrgica definitiva para evitar novos eventos.\n\nCONCLUSÃO: Como todas as afirmativas descrevem corretamente aspectos diagnósticos, fisiopatológicos e de conduta terapêutica do pneumotórax espontâneo primário, a alternativa correta é a letra (d).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:00.705Z"
+  },
+  {
+    "id": "AJUDA_5c9f913f-2618-4614-8e3e-3d4023a4ee27",
+    "originalId": "5c9f913f-2618-4614-8e3e-3d4023a4ee27",
+    "statement": "A maturação do trato gastrointestinal em recém-nascidos pré-termo impõe desafios nutricionais específicos. Assinale a alternativa correta sobre a fisiologia digestiva e a capacidade absortiva nesta população.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A absorção de gorduras é altamente eficiente em prematuros < 32 semanas devido à atividade compensatória da lipase gástrica e da lipase do leite materno, que suplantam completamente a deficiência transitória de lipase pancreática e sais biliares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A atividade da lactase está presente ainda no período fetal e encontra-se elevada ao nascimento a termo; em prematuros, pode haver atividade relativa menor, sem que isso configure intolerância funcional obrigatória à lactose. A tolerância à lactose depende da idade gestacional, da carga ofertada e da adaptação intestinal, não sendo correto afirmar incapacidade digestiva generalizada nesses recém-nascidos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A barreira mucosa intestinal apresenta alta permeabilidade a macromoléculas (\"leaky gut\") até o terceiro mês de vida corrigida, independentemente do tipo de alimentação (leite materno ou fórmula), devido à ausência completa de IgA secretora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O esvaziamento gástrico em prematuros ocorre de forma mais acelerada quando comparado aos recém-nascidos a termo, em razão da imaturidade dos mecanismos de feedback duodenal mediados por hormônios como a colecistoquinina e a secretina, o que reduziria a inibição gástrica pós-prandial. Esse fenômeno permitiria a progressão mais rápida dos volumes de alimentação enteral, favorecendo a introdução precoce de maiores cargas nutricionais sem impacto negativo na tolerância gastrointestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. A absorção de gorduras em prematuros, especialmente abaixo de 32 semanas, é sabidamente ineficiente. Embora a lipase gástrica e a lipase do leite materno (lipase estimulada por sais biliares) desempenhem um papel compensatório crucial, elas não suplantam completamente a deficiência de lipase pancreática e a baixa concentração de sais biliares (que muitas vezes está abaixo do nível crítico para a formação de micelas). Isso resulta em um grau variável de esteatorreia fisiológica nesta população.\n\nAlternativa b) Correta. A lactase é uma das últimas enzimas dissacaridases a atingir níveis máximos de atividade no feto, ocorrendo próximo ao final da gestação (termo). Portanto, prematuros possuem atividade de lactase inferior à de recém-nascidos a termo. Contudo, essa menor atividade enzimática não se traduz obrigatoriamente em intolerância clínica, pois a lactose que não é digerida no intestino delgado pode ser fermentada por bactérias no cólon, produzindo ácidos graxos de cadeia curta que são absorvidos, um processo conhecido como resgate colônico. A tolerância é dinâmica e depende de fatores como a idade gestacional e a progressão gradual da oferta dietética.\n\nAlternativa c) Incorreta. Embora a permeabilidade intestinal seja maior no prematuro (fenômeno de \"leaky gut\"), o tipo de alimentação influencia diretamente esse processo. O leite materno contém fatores de crescimento (como o EGF) e a IgA secretora que auxiliam no processo de maturação e no fechamento das junções intercelulares (\"gut closure\"), reduzindo a permeabilidade mais rapidamente do que o uso de fórmulas. Além disso, a IgA secretora não está ausente se o recém-nascido recebe leite materno, que é sua principal fonte exógena.\n\nAlternativa d) Incorreta. O esvaziamento gástrico no prematuro tende a ser mais lento e desorganizado devido à imaturidade da motilidade antral e duodenal, além de níveis mais baixos de motilina. A afirmação de que o esvaziamento é acelerado e que isso favorece a progressão rápida de volumes está clinicamente errada; na prática neonatal, a imaturidade gástrica é um dos principais fatores que levam à estase gástrica e à necessidade de progressão cautelosa da dieta enteral para evitar intolerância e riscos como a enterocolite necrotizante.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Aleitamento Materno",
+      "Cuidados Neonatais",
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:00.705Z"
+  },
+  {
+    "id": "AJUDA_5ca661e3-b5d0-4390-a9cc-ae2b11bcb96e",
+    "originalId": "5ca661e3-b5d0-4390-a9cc-ae2b11bcb96e",
+    "statement": "Paciente de 36 anos, admitido no pronto atendimento com queixa de dor testicular direita, súbita e intensa, há 24 horas. Sinal de Prehn negativo. Submetido à exploração escrotal, com o seguinte achado intraoperatório: \n\nQual é a conduta cirúrgica nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orquiectomia direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orquiectomia direita e orquidopexia esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Orquidopexia bilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orquidopexia direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — dor testicular súbita, intensa e com 24 horas de evolução, associada ao sinal de Prehn negativo (a elevação do testículo não alivia a dor, sugerindo torção em vez de epididimite) — é patognomônico de torção do cordão espermático. A imagem intraoperatória confirma o diagnóstico, revelando um testículo de coloração enegrecida e aspecto necrótico, o que indica infarto hemorrágico irreversível devido ao longo tempo de isquemia.\n\nA análise das alternativas fundamenta-se nos princípios da urologia de urgência:\n\nAlternativa a) Incorreta. Embora a orquiectomia do testículo necrótico seja necessária, a conduta é incompleta. A torção testicular ocorre geralmente devido a uma malformação anatômica conhecida como deformidade em \"badalo de sino\", que costuma ser bilateral. Portanto, tratar apenas o lado afetado deixa o paciente vulnerável a uma torção futura no testículo remanescente.\n\nAlternativa b) Correta. Diante de um testículo francamente necrótico e sem viabilidade (como demonstrado na imagem após 24 horas de evolução), a conduta correta é a remoção do órgão (orquiectomia direita). Simultaneamente, é obrigatória a realização da orquidopexia (fixação) do testículo contralateral (esquerdo), para prevenir que ele sofra o mesmo processo no futuro, garantindo a preservação da função endócrina e reprodutiva do paciente.\n\nAlternativa c) Incorreta. A orquidopexia bilateral seria indicada caso o testículo direito ainda apresentasse sinais de viabilidade após a destorção e manobras de reaquecimento. Na imagem, a necrose é evidente e irreversível, tornando a manutenção do órgão um risco para a formação de anticorpos antiespermatozoides e infecções.\n\nAlternativa d) Incorreta. A orquidopexia isolada do lado afetado não resolve o problema do tecido morto (necrose) e falha em proteger o lado contralateral, que possui o mesmo risco anatômico de torção.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/41b6ecd9778cfac5d327eefd25c4ee10553277b63fd63e35d749f7253f5fad7a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5ca661e3-b5d0-4390-a9cc-ae2b11bcb96e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:01.218Z"
+  },
+  {
+    "id": "AJUDA_5ca7527d-e4f0-425a-a2aa-04a9a9dcf21c",
+    "originalId": "5ca7527d-e4f0-425a-a2aa-04a9a9dcf21c",
+    "statement": "Joana tem 46 anos, é hipertensa e segue em acompanhamento no ambulatório da Universidade da cidade em que mora. Foi convidada a participar de um estudo que irá testar a efetividade de nova medicação que promete baixar a pressão arterial. Recebeu explicações de uma das alunas pesquisadoras, e um documento TCLE, que falava sobre o estudo. Esse documento esclarecia que a nova medicação teria possíveis benefícios para a hipertensão, que o estudo seria realizado ao longo de 3 meses e que aleatoriamente algumas pessoas receberiam a medicação em teste, outras receberiam uma \"medicação\" com substância inativa. Joana decidiu participar do estudo pois a medicação que ela toma traz alguns efeitos colaterais que ela gostaria de evitar. O tipo de estudo ao qual Joana se submeterá é chamado",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudo Ecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estudo Caso-Controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estudo Coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estudo Clínico Randomizado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Estudo Transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para identificar o tipo de estudo descrito no enunciado, devemos analisar as características da metodologia aplicada à paciente Joana. Os pontos fundamentais são: a existência de uma intervenção (introdução de uma nova medicação), a presença de um grupo-controle (substância inativa/placebo), a randomização (divisão aleatória dos participantes) e o acompanhamento prospectivo (ao longo de 3 meses).\n\nAnálise das alternativas:\n\na) Estudo Ecológico: Incorreto. O estudo ecológico foca em populações ou grupos de pessoas (como os habitantes de uma cidade ou país) e não em indivíduos isolados. Ele utiliza dados agregados para verificar correlações, o que difere totalmente do acompanhamento individual de Joana.\n\nb) Estudo Caso-Controle: Incorreto. Este é um estudo observacional e, geralmente, retrospectivo. Ele parte do desfecho (pessoas que já têm a doença) e olha para o passado em busca de fatores de exposição. No caso descrito, a paciente ainda será submetida a uma intervenção para observar o que acontecerá no futuro.\n\nc) Estudo de Coorte: Incorreto. Embora a coorte seja um estudo prospectivo (que acompanha os pacientes ao longo do tempo), ela é de natureza observacional. Na coorte, o pesquisador não intervém; ele apenas observa os pacientes que foram expostos a determinado fator por conta própria. No enunciado, o pesquisador é quem fornece a medicação, caracterizando um experimento.\n\nd) Estudo Clínico Randomizado: Correto. Esta é a definição clássica de um ensaio clínico. É um estudo experimental no qual o investigador manipula o fator de exposição (a droga). A palavra \"aleatoriamente\" confirma a randomização, que serve para reduzir vieses de seleção, e o uso de substância inativa indica a existência de um grupo-controle (placebo). É o desenho ideal para testar a eficácia de novos tratamentos.\n\ne) Estudo Transversal: Incorreto. O estudo transversal é como uma fotografia de um momento único. Nele, a exposição e o desfecho são avaliados simultaneamente. Como o estudo de Joana terá duração de 3 meses, há um seguimento temporal, o que exclui a natureza transversal.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:01.218Z"
+  },
+  {
+    "id": "AJUDA_5caf32d1-bc91-4d20-a913-2ef74418c322",
+    "originalId": "5caf32d1-bc91-4d20-a913-2ef74418c322",
+    "statement": "O vírus Chikungunya é transmitido pelo mosquito Aedes sp e foi responsável por grandes epidemias associadas a desfechos clínicos agudos, crônicos e graves.\nAs ações voltadas para o controle do Aedes sp incluem medidas como o manejo integrado de vetores, que envolve atividades a serem executadas pela equipe de vigilância do território em um processo cíclico, tais como",
+    "options": [
+      {
+        "id": "A",
+        "text": "levantamento do índice larvário, notificação de vetores infectados e avaliação dos indicadores entomológicos e epidemiológicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "treinamento da equipe de controle de vetores, uso intensivo de inseticidas, mutirões de limpeza e tratamento de pontos estratégicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vigilância virológica, notificação semanal dos casos suspeitos de Chikungunya em áreas sem transmissão e definição do local provável de infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "análise situacional com base em informações epidemiológicas e entomológicas, desenho das operações de planificação, implementação, monitoramento e avaliação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o Manejo Integrado de Vetores (MIV), uma estratégia preconizada pela Organização Mundial da Saúde (OMS) e pelo Ministério da Saúde para o controle do *Aedes aegypti* e *Aedes albopictus*. O MIV busca a otimização de recursos e a sustentabilidade das ações por meio de um processo de tomada de decisão fundamentado em evidências.\n\nAnálise das alternativas:\n\na) Incorreta. O levantamento de índices larvários (como o LIRAa) e a avaliação de indicadores são partes fundamentais da vigilância. No entanto, a notificação de vetores infectados não é uma prática de rotina das equipes de vigilância do território no manejo do *Aedes*. Além disso, esta alternativa cita componentes isolados, não descrevendo o processo cíclico de gestão solicitado pelo enunciado.\n\nb) Incorreta. Embora o treinamento, mutirões e tratamento de pontos estratégicos façam parte das ações de controle, o \"uso intensivo de inseticidas\" contraria os princípios do manejo integrado, que prioriza o controle mecânico e o uso racional/seletivo de substâncias químicas para evitar a resistência dos vetores. Esta alternativa foca em ações operacionais e não no processo de gestão.\n\nc) Incorreta. Esta alternativa descreve ações de vigilância epidemiológica (notificação de casos) e virológica (identificação do vírus circulante), que são essenciais para entender a doença na população humana, mas o comando da questão foca especificamente nas ações voltadas para o controle do vetor (*Aedes* sp.).\n\nd) Correta. Esta alternativa descreve com precisão as etapas do ciclo de gestão do Manejo Integrado de Vetores (MIV). Para que o controle seja eficiente, o processo deve ser cíclico e composto por: 1) Análise situacional (cruzamento de dados epidemiológicos e entomológicos para identificar áreas de risco); 2) Planejamento/Desenho das operações (definição de quais estratégias serão usadas em cada local); 3) Implementação (execução das ações); 4) Monitoramento e Avaliação (verificação se as ações reduziram os índices de infestação e de doentes, realimentando o ciclo).\n\nPortanto, a alternativa (d) é a que melhor define o processo cíclico de planejamento e execução exigido para o manejo integrado de vetores no território.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": 78.49768974421528,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:01.218Z"
+  },
+  {
+    "id": "AJUDA_5cb8dafc-4292-4fe8-b43e-8a63efeec0aa",
+    "originalId": "5cb8dafc-4292-4fe8-b43e-8a63efeec0aa",
+    "statement": "Mulher cis de 62 anos comparece à consulta por queixa de urgeincontinência e episódios de infecção urinária – 3 nos últimos 6 meses. Refere hipertensão arterial sistêmica e faz uso de losartana 50 mg/dia. Nuligesta, menopausa aos 49 anos, nega terapia hormonal da menopausa; atualmente sem atividade sexual, pois é divorciada há 5 anos. Ao exame físico: órgãos genitais externos hipotróficos e sem perdas urinárias ao esforço solicitado. Exame especular com conteúdo vaginal escasso, diminuição da rugosidade das paredes vaginais e petéquias subepiteliais na mucosa.\nAssinale a alternativa correta em relação à abordagem terapêutica para os sintomas dessa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O uso de laser de CO2 fracionado é considerado atualmente o tratamento de primeira linha para mulheres com sintomas unicamente da síndrome genitourinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A terapia hormonal da menopausa sistêmica contendo estrogênio é uma alternativa para melhora dos sintomas genitourinários da paciente em questão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Para pacientes tratadas da síndrome genitourinária da pós-menopausa com estrogênio vaginal contínuo a longo prazo, não se recomenda uso de progestágeno para proteção endometrial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O uso de estrogênio unicamente por via vaginal não é capaz de melhorar os sintomas urinários, como bexiga hiperativa, urgeincontinência e infecções urinárias de repetição.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico: O caso clínico descreve uma paciente de 62 anos com Síndrome Genitourinária da Menopausa (SGM). A queda dos níveis de estrogênio no climatério provoca atrofia do epitélio vaginal e do trato urinário inferior, resultando em sintomas como urge-incontinência, infecções urinárias de repetição e sinais físicos de atrofia (petéquias, perda de rugosidade e hipotrofia).\n\nAnálise das alternativas:\n\na) Incorreta. O tratamento de primeira linha para a SGM em mulheres com sintomas leves a moderados consiste no uso de hidratantes e lubrificantes vaginais. Para casos persistentes ou moderados a graves, o padrão-ouro é o estrogênio tópico de baixa dose. O laser de CO2 fracionado é uma tecnologia emergente considerada uma alternativa terapêutica, especialmente para pacientes com contraindicação ao uso de hormônios, mas não é a primeira linha de escolha nos protocolos atuais.\n\nb) Incorreta. A terapia hormonal sistêmica é indicada principalmente para o controle de sintomas vasomotores (fogachos). Quando os sintomas são exclusivamente genitourinários, como no caso desta paciente, a terapia local (vaginal) é preferencial por ser mais eficaz especificamente nesses tecidos, utilizar doses menores de hormônio e minimizar a absorção sistêmica e seus riscos associados.\n\nc) Correta. O estrogênio vaginal de baixa dose, quando utilizado de forma isolada, não promove absorção sistêmica suficiente para causar proliferação do endométrio. Portanto, os principais consensos de ginecologia e menopausa estabelecem que não é necessário o uso de progestágeno para proteção endometrial em pacientes que utilizam apenas estrogênio por via vaginal, independentemente do tempo de uso.\n\nd) Incorreta. O estrogênio vaginal é altamente eficaz na melhora dos sintomas urinários. Ele restaura o epitélio da uretra e do trígono vesical, que são tecidos dependentes de estrogênio. Além disso, ao restaurar a flora de lactobacilos e acidificar o pH vaginal, ele reduz significativamente a incidência de infecções urinárias de repetição e melhora os sintomas de bexiga hiperativa e urgência miccional.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:01.218Z"
+  }
+]

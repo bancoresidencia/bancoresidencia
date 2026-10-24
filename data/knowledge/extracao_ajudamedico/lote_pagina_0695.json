@@ -1,0 +1,508 @@
+[
+  {
+    "id": "AJUDA_c28c6410-bf41-4acd-a173-9257116ad50d",
+    "originalId": "c28c6410-bf41-4acd-a173-9257116ad50d",
+    "statement": "Homem de 73 anos apresenta dispneia e edema de membros inferiores há 2 meses, sendo diagnosticado com insuficiência cardíaca e derrame pleural moderado. Após tratamento com diurético, apresenta melhora do edema, mas persiste com dispneia e derrame pleural. É indicada toracocentese diagnóstica. AP: HAS e DM2.\nDeve-se realizar o cálculo do gradiente de albumina do líquido pleural para diferenciação entre transudato e exsudato devido",
+    "options": [
+      {
+        "id": "A",
+        "text": "à idade avançada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ao uso de diurético.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ao diagnóstico de diabetes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "à suspeita de neoplasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a interpretação do líquido pleural em um paciente com insuficiência cardíaca que já iniciou tratamento medicamentoso. O ponto central é entender como a terapia com diuréticos interfere nos parâmetros bioquímicos do derrame.\n\nOs Critérios de Light são o padrão-ouro para diferenciar transudato de exsudato, analisando a relação de proteína total e LDH entre o soro e o líquido pleural. Contudo, em pacientes com insuficiência cardíaca em uso de diuréticos, ocorre a remoção preferencial de água do espaço pleural em relação às proteínas. Isso causa um aumento artificial na concentração de proteínas e LDH no líquido pleural, o que pode levar a uma classificação errônea de exsudato em um líquido que é, na verdade, um transudato (fenômeno chamado de pseudoexsudato).\n\nNesta situação, o gradiente de albumina (albumina sérica subtraída da albumina do líquido pleural) é uma ferramenta mais acurada. Se o gradiente for superior a 1,2 g/dL, podemos afirmar com segurança que se trata de um transudato, mesmo que os Critérios de Light sugiram o contrário.\n\nAnálise das alternativas:\n\na) Incorreta. A idade avançada não altera a fisiopatologia do derrame pleural nem a confiabilidade dos Critérios de Light. Embora pacientes idosos tenham mais comorbidades, os critérios bioquímicos de classificação do líquido permanecem os mesmos.\n\nb) Correta. O uso de diuréticos é a indicação clássica para o cálculo do gradiente de albumina. Como o diurético concentra as proteínas no espaço pleural, ele pode invalidar os Critérios de Light, gerando um resultado falso-positivo para exsudato. O gradiente de albumina corrige essa distorção.\n\nc) Incorreta. O diabetes mellitus não interfere na concentração de proteínas ou enzimas no espaço pleural de forma a exigir a utilização do gradiente de albumina em vez dos critérios convencionais.\n\nd) Incorreta. Na suspeita de neoplasia, o líquido pleural é tipicamente um exsudato verdadeiro. Nesses casos, os Critérios de Light são adequados para a classificação inicial, e o diagnóstico definitivo é buscado através da citologia oncótica ou biópsia pleural, não pelo gradiente de albumina. O gradiente é usado justamente para descartar exsudatos inflamatórios/neoplásicos quando se suspeita que o resultado foi alterado pelo tratamento da insuficiência cardíaca.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Derrame Pleural",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.092Z"
+  },
+  {
+    "id": "AJUDA_c29234dd-8671-4897-8859-46a38984a3ba",
+    "originalId": "c29234dd-8671-4897-8859-46a38984a3ba",
+    "statement": "Lactante de 25 anos busca atendimento em Unidade Básica de Saúde, com queixa de febre, mal-estar e dor em mama direita há cerca de 18 horas para orientação. Relata que está no 15º dia pós-parto cesariano, e seu filho encontra-se em aleitamento materno exclusivo. Ao exame físico: mama direita com área hiperemiada e edemaciada em quadrantes superiores, com dor ao toque, sem área de flutuação à palpação, ausência de fissura mamilar; mama esquerda túrgida e sem outras alterações. \nTendo em vista a principal hipótese diagnóstica para esse caso, qual o manejo inicial mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia oral, paracetamol e suspensão temporária da amamentação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ibuprofeno, uso de bomba extratora de horário e massagem vigorosa antes da mamada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Compressa morna antes da mamada, uso de sutiã com alça firme e larga e ibuprofeno",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Paracetamol, antibioticoterapia parenteral e compressa fria antes das mamadas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar a mamada pela mama sadia, antibioticoterapia tópica e ibuprofeno",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clássico de mastite puerperal, caracterizado por febre, mal-estar e sinais inflamatórios localizados (dor, hiperemia e edema) na mama direita, ocorrendo no 15º dia de pós-parto. O exame físico revela a ausência de flutuação, o que afasta a hipótese de abscesso mamário neste momento. O manejo fundamental da mastite baseia-se no esvaziamento adequado da mama e no controle sintomático.\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA?\n\nO tratamento inicial da mastite foca na manutenção do fluxo de leite e no alívio da inflamação. O uso de compressas mornas imediatamente antes da amamentação auxilia na vasodilatação e estimula o reflexo de ejeção, facilitando a saída do leite e o esvaziamento dos ductos. O uso de um sutiã com alças firmes e largas é essencial para dar suporte mecânico à mama pesada e dolorida, reduzindo o desconforto. O ibuprofeno é o anti-inflamatório de escolha, pois além de tratar a dor e a febre, atua na cascata inflamatória do tecido mamário e é seguro para o lactente.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: O erro principal é a suspensão da amamentação. O esvaziamento da mama é a medida mais importante para tratar a mastite e evitar a progressão para um abscesso. Interromper a amamentação causa estase láctea, o que piora drasticamente o quadro infeccioso e inflamatório.\n\nAlternativa B: Embora o ibuprofeno esteja correto, a massagem mamária deve ser sempre suave e circular. A realização de massagem vigorosa em um tecido glandular já inflamado e friável pode causar trauma tecidual, aumentar o edema e agravar o processo inflamatório.\n\nAlternativa D: A antibioticoterapia parenteral (hospitalar) é reservada apenas para casos graves, com sinais de toxemia, sepse ou falha terapêutica ao tratamento oral, o que não se aplica a esta paciente estável. Além disso, compressas frias são recomendadas após a mamada (para reduzir o edema) e não antes, pois o frio pode causar vasoconstrição e dificultar a descida do leite.\n\nAlternativa E: Iniciar a mamada pela mama sadia era uma orientação antiga para facilitar o reflexo de ejeção, mas a recomendação atual é iniciar pela mama afetada para garantir que o bebê, que tem uma sucção mais vigorosa no início da mamada, realize o esvaziamento mais eficaz do lado doente. O uso de antibióticos tópicos não tem nenhuma eficácia no tratamento da mastite, que é uma infecção do parênquima mamário profundo.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Aleitamento Materno",
+      "Doenças Benignas da Mama",
+      "Infecção Puerperal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.092Z"
+  },
+  {
+    "id": "AJUDA_c2960cc0-26ce-403d-9c33-90d27dac9ede",
+    "originalId": "c2960cc0-26ce-403d-9c33-90d27dac9ede",
+    "statement": "Homem, 52 anos, está em investigação para anemia descoberta em um exame periódico da sua empresa. Exame laboratorial, anterior a este, realizado no periódico da empresa, há 1 ano: hematócrito (Ht) = 45%. Exame laboratorial na atual investigação: Ht = 25%; volume corpuscular médio (VCM) = 120fL; ferritina = 150ng; reticulócitos = 4%. Hematoscopia atual: macrocitose; policromatofilia; pontilhado basofílico; neutrófilos hipersegmentados. A principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "anemia perniciosa",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "hemólise intravascular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "anemia ferropriva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hemólise extravascular",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta uma anemia macrocítica importante, evidenciada pelo VCM de 120 fL (referência normal até 100 fL). O dado crucial para fechar o diagnóstico é o achado de neutrófilos hipersegmentados na hematoscopia. Este achado é considerado patognomônico de anemia megaloblástica, condição resultante de uma falha na síntese de DNA das células precursoras hematopoiéticas, geralmente por deficiência de Vitamina B12 (cobalamina) ou de Vitamina B9 (ácido fólico). Outros achados como policromatofilia e pontilhado basofílico podem ocorrer devido à eritropoiese ineficaz e ao estresse medular.\n\nAlternativa a (Correta): A anemia perniciosa é a principal causa de anemia megaloblástica por deficiência de vitamina B12 no adulto. Ela ocorre devido a uma gastrite atrófica autoimune que reduz a produção de fator intrínseco, substância essencial para a absorção da vitamina B12 no íleo terminal. O quadro de macrocitose acentuada (VCM > 110-115 fL) associado a neutrófilos hipersegmentados e à ferritina normal confirma essa hipótese diagnóstica.\n\nAlternativa b (Incorreta): A hemólise intravascular caracteriza-se pela destruição de hemácias dentro dos vasos sanguíneos, cursando com aumento de bilirrubina indireta, queda de haptoglobina e presença de esquizócitos (hemácias fragmentadas). Embora possa haver macrocitose aparente se houver muitos reticulócitos, a hemólise não explica a presença de neutrófilos hipersegmentados.\n\nAlternativa c (Incorreta): A anemia ferropriva é uma anemia microcítica e hipocrômica (VCM baixo). No caso apresentado, o paciente tem macrocitose (VCM alto) e ferritina de 150 ng, que está dentro da faixa de normalidade, descartando a deficiência de ferro como causa.\n\nAlternativa d (Incorreta): A hemólise extravascular ocorre quando as hemácias são destruídas no sistema reticuloendotelial (baço e fígado). Assim como na hemólise intravascular, o quadro costuma ser de anemia regenerativa (IPR > 2), podendo apresentar macrocitose pelo aumento de reticulócitos, mas nunca apresentará os pleocariócitos (neutrófilos hipersegmentados), que são marcadores específicos de distúrbio de síntese de DNA.\n\nNota sobre os reticulócitos: Embora o valor nominal de 4% pareça elevado, quando corrigido para o grau de anemia do paciente (Hematócrito de 25%), o Índice de Produção Reticulocitária (IPR) revela-se inferior a 2, caracterizando uma anemia hipoproliferativa. Isso é típico da anemia megaloblástica, onde existe uma medula óssea rica em células, porém incapaz de liberar hemácias maduras e funcionais para a periferia de forma eficaz (eritropoiese ineficaz).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.092Z"
+  },
+  {
+    "id": "AJUDA_c2a184df-8e0e-415f-b89c-44a997c10b73",
+    "originalId": "c2a184df-8e0e-415f-b89c-44a997c10b73",
+    "statement": "Em um paciente com câncer de reto médio (T3N1) após quimio-radioterapia neoadjuvante, qual é a conduta cirúrgica considerada padrão?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Excisão local transanal simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressecção abdominoperineal obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reto-sigmoidectomia anterior com excisão total do mesorreto (TME).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Quimiorradioterapia definitiva sem cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colostomia de derivação isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "EXPLICAÇÃO:\n\nO tratamento do câncer de reto médio localmente avançado, como o caso T3N1 apresentado, segue protocolos bem estabelecidos para o controle local da doença e redução de metástases. Após a realização da quimiorradioterapia neoadjuvante, a cirurgia radical é a etapa fundamental para a remoção do tumor e da cadeia de drenagem linfática.\n\nAlternativa A: Incorreta. A excisão local transanal simples é um procedimento que remove apenas o tumor com uma margem de mucosa, sem abordar o mesorreto. Ela é indicada apenas para tumores muito iniciais (T1N0), pequenos e com características biológicas favoráveis. Em um paciente T3N1, há invasão profunda e comprometimento de linfonodos, exigindo uma cirurgia radical.\n\nAlternativa B: Incorreta. A ressecção abdominoperineal (cirurgia de Miles) envolve a retirada de todo o reto e do ânus, resultando em colostomia definitiva. Ela não é obrigatória para tumores de reto médio. Essa técnica é indicada principalmente para tumores de reto baixo que invadem o complexo esfincteriano ou quando não é possível obter margem de segurança distal para preservar a função anal.\n\nAlternativa C: Correta. A conduta padrão é a retossigmoidectomia anterior (também chamada de ressecção anterior baixa) associada à Excisão Total do Mesorreto (TME). A TME é o componente mais importante da cirurgia, pois consiste na retirada completa da gordura perirretal e da fáscia que a envolve, onde se localizam os linfonodos regionais. Como o tumor está no reto médio, é possível realizar a anastomose (ligação entre o cólon e o reto remanescente), preservando o esfíncter e o trânsito intestinal normal.\n\nAlternativa D: Incorreta. A quimiorradioterapia definitiva sem cirurgia é uma estratégia conhecida como Watch and Wait (observar e esperar). Ela é reservada apenas para pacientes que apresentam Resposta Clínica Completa (desaparecimento total da lesão ao exame físico e de imagem) após o tratamento neoadjuvante. Contudo, a questão pergunta pela conduta cirúrgica considerada padrão, que permanece sendo a ressecção radical.\n\nAlternativa E: Incorreta. A colostomia de derivação isolada é um procedimento paliativo. Ela serve para desviar o trânsito intestinal em casos de obstrução severa quando o tumor não pode ser removido ou o paciente não tem condições clínicas para uma cirurgia de grande porte. Não tem finalidade curativa para o câncer.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.092Z"
+  },
+  {
+    "id": "AJUDA_c2a4069f-6f21-4f2a-ab58-542ef1a8025c",
+    "originalId": "c2a4069f-6f21-4f2a-ab58-542ef1a8025c",
+    "statement": "VBA, 35 anos, 2G1P cesárea anterior, vem para consulta pré-natal com 22 semanas de idade gestacional. Está em uso de sulfato ferroso e ácido fólico. Traz alguns exames solicitados previamente com os seguintes resultados: Tipagem sanguínea: A negativo; Coombs negativo. Sorologia para sífilis, hepatite C, rubéola e toxoplasmose: negativos. Sorologia para CMV IgG positivo e IgM negativo. Glicemia jejum 94 mg/dL. TSH 3,5. Hb 11/Ht 33. Exame morfológico normal no primeiro trimestre. Exame físico: peso 60 kg, PA = 110 x 70 mmHg; AU = 21 cm, BCF = 160 bpm; DU ausente. Qual a conduta mais adequada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a dose de sulfato ferroso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever Rhogan e vacina VSR.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar dieta para diabetes e vacina dTPA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever levotiroxina 75 mcg e polivitamínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para a correta análise desta questão, devemos observar os dados laboratoriais apresentados para uma gestante de 22 semanas de idade gestacional.\n\nO ponto central para a resolução é o resultado da glicemia de jejum de 94 mg/dL. Conforme as diretrizes do Ministério da Saúde e da Sociedade Brasileira de Diabetes, o diagnóstico de diabetes mellitus gestacional (DMG) é estabelecido quando a glicemia de jejum se encontra entre 92 mg/dL e 125 mg/dL em qualquer momento da gestação. Assim, a conduta inicial obrigatória é a orientação dietética. Somado a isso, a paciente está com 22 semanas, momento em que está indicada a vacina dTpa (difteria, tétano e coqueluche acelular), que deve ser administrada em toda gestação a partir da 20ª semana para garantir a proteção do recém-nascido.\n\nAnálise das alternativas:\n\nAlternativa a: Está incorreta porque a hemoglobina de 11 g/dL e o hematócrito de 33% estão dentro dos limites da normalidade para o segundo trimestre da gestação. O Ministério da Saúde define anemia na gravidez como hemoglobina menor que 11 g/dL. Portanto, deve-se manter apenas a suplementação profilática de ferro, sem necessidade de aumentar para dose terapêutica.\n\nAlternativa b: Está incorreta. Embora a paciente seja Rh-negativo com Coombs indireto negativo, a imunoglobulina anti-D (Rhogan) é indicada de forma profilática apenas na 28ª semana de gestação ou em situações específicas, como sangramentos ou traumas. A vacina contra o vírus sincicial respiratório (VSR) é uma recomendação recente e específica, mas o foco principal da questão, dado o diagnóstico de diabetes, é a dTpa e o controle glicêmico.\n\nAlternativa c: Está correta. A glicemia de 94 mg/dL confirma o diagnóstico de diabetes mellitus gestacional, o que exige orientação de dieta e mudanças no estilo de vida como primeiro passo terapêutico. A vacina dTpa é a conduta vacinal padrão e necessária para a idade gestacional de 22 semanas.\n\nAlternativa d: Está incorreta. Um TSH de 3,5 mUI/L no segundo trimestre não justifica o início de levotiroxina em dose elevada (75 mcg) sem uma avaliação mais aprofundada de anticorpos ou T4 livre, e muitos protocolos aceitam esse valor para o período. Além disso, a paciente já faz uso de ácido fólico e sulfato ferroso, não havendo indicação formal de polivitamínicos adicionais se a dieta for adequada.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.092Z"
+  },
+  {
+    "id": "AJUDA_c2a76ca4-4cc9-4c44-9437-c64661b121bc",
+    "originalId": "c2a76ca4-4cc9-4c44-9437-c64661b121bc",
+    "statement": "Recém-nascido (Rn) termo de 37 3/7 semanas de parto cesárea por descontrole glicêmico, sexo masculino, APGAR 7/8 e peso de nascimento de 2970g. Evoluiu com desconforto respiratório precoce e necessitou de internação em UTI Neonatal em uso de CPAP. Após 4 horas de internação evoluiu com piora súbita do padrão respiratório e queda de saturação O2. Qual a principal hipótese diagnóstica neste momento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumotórax",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cardiopatia congênita canal dependente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Taquipneia transitória do Recém-nascido",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome do Desconforto Respiratório Grave",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental focar na evolução clínica e no tratamento que o recém-nascido estava recebendo. O paciente é um recém-nascido a termo precoce (37 semanas), nascido por cesárea, que apresentou desconforto respiratório logo após o parto e foi colocado em CPAP (pressão positiva contínua nas vias aéreas). O ponto determinante para o diagnóstico é a piora súbita do padrão respiratório e a queda de saturação após 4 horas de internação.\n\na) Correta. O pneumotórax é a principal hipótese diagnóstica diante de uma piora clínica súbita e aguda em um recém-nascido que está recebendo suporte de pressão positiva (CPAP ou ventilação mecânica). O uso do CPAP, embora terapêutico, gera uma pressão que pode causar barotrauma, levando à ruptura alveolar e ao escape de ar para o espaço pleural. A instalação abrupta dos sintomas é o sinal clássico dessa complicação.\n\nb) Incorreta. As cardiopatias congênitas canal-dependentes costumam se manifestar com cianose que não melhora com oxigênio ou com sinais de baixo débito cardíaco (choque) conforme o canal arterial se fecha. Esse fechamento geralmente ocorre de forma mais lenta e não costuma causar uma piora respiratória tão súbita e precoce (nas primeiras 4 horas) em um bebê que já estava sob assistência ventilatória.\n\nc) Incorreta. A Taquipneia Transitória do Recém-Nascido (TTRN) foi, muito provavelmente, o diagnóstico inicial deste paciente, dado o histórico de parto por cesárea sem trabalho de parto. No entanto, a TTRN caracteriza-se por um quadro autolimitado com melhora gradual nas primeiras 24 a 72 horas. Uma deterioração clínica súbita não é compatível com a evolução natural da TTRN, sugerindo que ocorreu uma complicação, como o pneumotórax mencionado na alternativa A.\n\nd) Incorreta. A Síndrome do Desconforto Respiratório (SDR), ou Doença da Membrana Hialina, é mais típica de prematuros abaixo de 34 semanas. Embora filhos de mães diabéticas (com descontrole glicêmico) possam ter um atraso na produção de surfactante, a SDR apresenta uma piora respiratória progressiva e constante nas primeiras horas de vida por colapso alveolar, e não um evento de piora súbita em um paciente que já estava em suporte.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.092Z"
+  },
+  {
+    "id": "AJUDA_c2ab71a6-2748-4411-b1e2-9128cd0ba24a",
+    "originalId": "c2ab71a6-2748-4411-b1e2-9128cd0ba24a",
+    "statement": "Benedito, 68 anos, homem cis, pescador, é atendido em ambulatório de Clínica Médica com queixa de dispneia progressiva, limitando atualmente atividades menos intensas do que as habituais. Tem histórico de HAS, DM2 há 5 anos. Refere diagnóstico de asma na infância, com internações e sem seguimento. Nega tabagismo e etilismo. Nega internações recentes ou uso de antibiótico no último ano. Nega casos semelhantes na família. Exame físico apresenta ritmo cardíaco regular em 2 tempos com bulhas cardíacas hipofonéticas sem sopros, murmúrio vesicular globalmente reduzido, com roncos esparsos, sem outras alterações. Abdome plano, sem achados patológicos, e membros inferiores sem edema, mas com telangiectasias. Traz consigo o resultado de exame de espirometria que realizou nos últimos 6 meses (abaixo).\nEspirometria:\n\nMarque a alternativa que indica o valor alterado no exame de Benedito que confirma o diagnóstico de Doença pulmonar obstrutiva crônica (DPOC).",
+    "options": [
+      {
+        "id": "A",
+        "text": "56%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "57%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "60%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "78%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "79%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para confirmar o diagnóstico de Doença Pulmonar Obstrutiva Crônica (DPOC), a diretriz GOLD (Global Initiative for Chronic Obstructive Lung Disease) estabelece que é necessária a presença de um padrão obstrutivo persistente na espirometria. Esse padrão é definido por uma relação entre o Volume Expiratório Forçado no primeiro segundo (VEF1) e a Capacidade Vital Forçada (CVF) menor que 0,70 (ou 70%) após a administração de broncodilatador.\n\nAnálise da Espirometria:\n\nAo observarmos a tabela de espirometria de Benedito, devemos focar na linha VEF1/CVF (%) e na coluna Pós-BD (pós-broncodilatador). O valor encontrado é de 57%. Como esse valor é inferior a 70%, ele confirma que a obstrução ao fluxo aéreo não é totalmente reversível, preenchendo o critério diagnóstico para DPOC. Vale notar que, embora o paciente negue tabagismo, o histórico de asma na infância e possíveis exposições ocupacionais ou ambientais (como a queima de biomassa, comum em áreas rurais ou de pesca) podem levar ao desenvolvimento da doença.\n\nAnálise das alternativas:\n\nAlternativa a) 56%: Este valor corresponde à relação VEF1/CVF antes do uso do broncodilatador (Pré-BD). Embora indique obstrução, o diagnóstico definitivo de DPOC exige que a relação permaneça abaixo de 70%, obrigatoriamente, após o broncodilatador, para descartar uma reversibilidade completa típica da asma brônquica.\n\nAlternativa b) 57%: Esta é a alternativa correta. Representa a relação VEF1/CVF pós-broncodilatador. Por ser menor que 70% (0,70), é o parâmetro que sela o diagnóstico de DPOC, confirmando a limitação crônica e persistente ao fluxo aéreo.\n\nAlternativa c) 60%: Este valor refere-se ao percentual do VEF1 previsto após o broncodilatador (%Prev Pós-BD). Na espirometria, o VEF1 isolado é utilizado para classificar a gravidade da obstrução (estágios GOLD 1 a 4), mas não é o critério inicial para confirmar a presença da doença em si. No caso de Benedito, um VEF1 de 60% classificaria a obstrução como moderada (GOLD 2).\n\nAlternativa d) 78%: Este valor é o percentual da Capacidade Vital Forçada previsto antes do broncodilatador (%Prev Pré-BD). A CVF pode estar normal ou reduzida na DPOC (devido ao aprisionamento de ar), mas seu valor isolado não define o diagnóstico de obstrução.\n\nAlternativa e) 79%: Este valor é o percentual da Capacidade Vital Forçada previsto após o broncodilatador (%Prev Pós-BD). Assim como o valor pré-broncodilatador, ele não é o critério diagnóstico para a confirmação da DPOC.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": 63.268002093241414,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f51e0ab08c3c62c44d4105768e7cda0a3dfc8cc0fd087def2a340d11f23c39fe.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c2ab71a6-2748-4411-b1e2-9128cd0ba24a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.300Z"
+  },
+  {
+    "id": "AJUDA_c2bca768-e602-43b0-b0d9-89c9f9e87727",
+    "originalId": "c2bca768-e602-43b0-b0d9-89c9f9e87727",
+    "statement": "Mulher de 23 anos, previamente saudável, procura pronto-socorro com dor abdominal em hipocôndrio direito há 3 dias, irradiada para ombro direito, de forte intensidade, associada a febre baixa e a corrimento vaginal purulento. Nega litíase biliar prévia.\nAo exame, apresenta dor à palpação do hipocôndrio direito sem icterícia. O exame ginecológico revela dor à mobilização do colo uterino. Ultrassonografia de abdome superior mostra vesícula biliar de paredes finas, sem cálculos, vias biliares sem dilatação.\nO diagnóstico mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "colecistite calculosa aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hepatite viral aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "síndrome de Fitz-Hugh-Curtis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "pancreatite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "abscesso hepático amebiano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente apresenta um quadro clínico clássico que exige a diferenciação entre uma patologia biliar e uma complicação de infecção sexualmente transmissível. Os pontos-chave para o diagnóstico são: paciente jovem, dor no hipocôndrio direito, presença de febre, corrimento vaginal purulento e dor à mobilização do colo uterino (Sinal de Chandelier), com exames de imagem da vesícula biliar normais.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a: Incorreta. Embora a dor no hipocôndrio direito com irradiação para o ombro seja sugestiva de colecistite, o exame de ultrassonografia descartou a presença de cálculos e espessamento da parede da vesícula. Além disso, a colecistite não explica o corrimento vaginal purulento nem a dor à mobilização do colo uterino.\n\nAlternativa b: Incorreta. A hepatite viral aguda pode causar dor no hipocôndrio direito devido à distensão da cápsula de Glisson, mas geralmente vem acompanhada de icterícia, colúria, acolia fecal e sintomas prodrômicos (mal-estar, náuseas). Os achados ginecológicos descritos não possuem relação com as hepatites virais.\n\nAlternativa c: Correta. A Síndrome de Fitz-Hugh-Curtis é uma peri-hepatite que ocorre como complicação da Doença Inflamatória Pélvica (DIP). A infecção, geralmente causada por Chlamydia trachomatis ou Neisseria gonorrhoeae, ascende da pelve através das goteiras paracólicas até a cápsula hepática. Isso gera inflamação da cápsula de Glisson e, posteriormente, formação de aderências fibrosas (\"em cordas de violino\") entre o fígado e a parede abdominal. O quadro mimetiza uma colecistite (dor no hipocôndrio direito e sinal de Murphy positivo), mas o diagnóstico é selado pela presença de sinais de DIP.\n\nAlternativa d: Incorreta. A pancreatite aguda manifesta-se com dor epigástrica de início súbito, geralmente irradiada para o dorso em faixa, associada a vômitos. Não há associação clínica entre pancreatite e corrimento vaginal ou dor à mobilização cervical.\n\nAlternativa e: Incorreta. O abscesso hepático amebiano costuma causar dor no hipocôndrio direito e febre, mas seria obrigatoriamente visualizado na ultrassonografia como uma lesão focal (coleção) no parênquima hepático. A epidemiologia e os sintomas ginecológicos da paciente também não corroboram este diagnóstico.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.300Z"
+  },
+  {
+    "id": "AJUDA_c2c584cf-0b48-4015-b6eb-5d73b4bbd51b",
+    "originalId": "c2c584cf-0b48-4015-b6eb-5d73b4bbd51b",
+    "statement": "Sobre a fasceíte plantar, analise as afirmativas e assinale a alternativa CORRETA.\n\nI. A fasceíte plantar é uma causa comum de dor nos pés em adultos, com pico de incidência ocorrendo em pessoas entre 40 e 60 anos.\nII. Fatores como obesidade, pé plano, pé cavo, permanência prolongada em pé, caminhada em superfícies duras e sapatos com defeito aumentam o risco de desenvolver fasceíte plantar.\nIII. Os pacientes sentem dor intensa nos primeiros passos ao acordar pela manhã ou após inatividade durante o dia, e a dor piora ao andar descalço ou subir escada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I: Esta sentença está correta. A fasceíte plantar é a causa mais comum de dor na região plantar do calcanhar (talalgia) em adultos. Estudos epidemiológicos demonstram que, embora possa afetar indivíduos de várias idades, o pico de incidência ocorre de fato entre os 40 e 60 anos, sendo frequentemente associada a processos degenerativos da fáscia plantar.\n\nAfirmativa II: Esta sentença está correta. A etiologia da fasceíte plantar é multifatorial e envolve principalmente estresse mecânico. A obesidade aumenta a carga direta sobre a fáscia; alterações anatômicas como pé plano (que gera estiramento excessivo) ou pé cavo (que reduz a capacidade de absorção de impacto) modificam a biomecânica do pé. Fatores ocupacionais, como permanecer em pé por tempo prolongado, caminhar em solos rígidos ou utilizar calçados desgastados ou sem suporte adequado, são gatilhos clássicos para o desenvolvimento da patologia.\n\nAfirmativa III: Esta sentença está correta. A descrição clínica apresentada é o sintoma patognomônico da fasceíte plantar. O paciente relata dor aguda e intensa ao dar os primeiros passos pela manhã, pois a fáscia, que se manteve encurtada durante o sono, sofre uma tração súbita ao sustentar o peso do corpo. O mesmo ocorre após períodos de inatividade sentada. Atividades que aumentam a tensão na aponeurose plantar, como subir escadas ou caminhar descalço (pela falta de suporte ao arco longitudinal), exacerbam o quadro doloroso.\n\nConclusão: Como todas as três afirmativas descrevem de forma precisa a epidemiologia, os fatores de risco e a apresentação clínica característica da condição, a alternativa correta é a letra (d).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Doenças de Partes Moles"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.300Z"
+  },
+  {
+    "id": "AJUDA_c2c6f1e2-2afc-4d35-abfd-42b5e7d81afa",
+    "originalId": "c2c6f1e2-2afc-4d35-abfd-42b5e7d81afa",
+    "statement": "Durante o período expulsivo do parto, qual é a técnica mais indicada para minimizar o risco de lacerações perineais e lesões neonatais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar episiotomia de rotina para todos os partos vaginais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar pressão no fundo uterino (manobra de Kristeller) para auxiliar na expulsão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter a flexão controlada da cabeça fetal durante a coroação, permitindo uma saída gradual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar que a parturiente faça força máxima (manobra de Valsalva) durante o período expulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A condução do período expulsivo deve ser pautada na assistência baseada em evidências científicas, visando minimizar traumas maternos e garantir a segurança do neonato. Abaixo, analisamos cada alternativa:\n\nAlternativa a: Incorreta. A episiotomia de rotina não é recomendada pelas principais diretrizes médicas mundiais (como a OMS e a FEBRASGO). Evidências demonstram que o uso rotineiro desse procedimento aumenta o risco de lacerações perineais graves (3º grau e 4º grau), além de elevar as taxas de infecção e dor no pós-parto. Atualmente, a episiotomia deve ser restrita a casos selecionados e criteriosamente avaliados.\n\nAlternativa b: Incorreta. A manobra de Kristeller, que consiste na aplicação de pressão no fundo do útero para acelerar a saída do feto, é uma prática proscrita na obstetrícia moderna. Ela está associada a riscos graves, como ruptura uterina, descolamento prematuro de placenta, lesões de órgãos internos maternos, além de aumentar o risco de lacerações perineais severas e traumas neonatais, como a paralisia do plexo braquial.\n\nAlternativa c: Correta. Esta é a técnica conhecida como Hands-on. Ao manter a flexão controlada da cabeça fetal durante a coroação, o obstetra ou enfermeiro obstetra garante que a maior circunferência da cabeça não passe subitamente pelo anel vulvar. Essa proteção manual do períneo e o controle da velocidade de saída permitem que os tecidos se alonguem gradualmente, minimizando o risco de traumas e protegendo a cabeça fetal de descompressões bruscas.\n\nAlternativa d: Incorreta. O puxo dirigido (manobra de Valsalva), onde a parturiente é orientada a prender a respiração e fazer força máxima, não é a técnica ideal para a proteção perineal. O puxo espontâneo é preferível, pois o Valsalva pode levar à exaustão materna, reduzir a oxigenação fetal e aumentar a pressão sobre o assoalho pélvico de forma não controlada, favorecendo lesões.\n\nPortanto, a manutenção da flexão controlada e a saída gradual do polo cefálico representam a melhor conduta para a preservação da integridade perineal e neonatal.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:25.300Z"
+  }
+]

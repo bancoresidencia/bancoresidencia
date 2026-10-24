@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_eeebcb49-4e3b-41b0-9c47-c3763c3809a6",
+    "originalId": "eeebcb49-4e3b-41b0-9c47-c3763c3809a6",
+    "statement": "As isquemias e hemorragias parenquimatosas ocorrem em vários tipos de doenças vasculares encefálicas. Qual processo fisiopatológico pode cursar exclusivamente com hemorragias no Sistema Nervoso Central?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trombose venosa cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vasculites do sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vasculopatia cerebral induzida por cocaína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Microaneurisma de Charcot Bouchard.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O cerne desta questão está em diferenciar processos que podem causar tanto isquemia quanto hemorragia daqueles que são puramente hemorrágicos em sua manifestação clínica clássica.\n\nAlternativa a) Incorreta. A trombose venosa cerebral (TVC) gera um aumento da pressão venosa e capilar por obstrução do fluxo de saída. Isso pode resultar em edema cerebral e infartos venosos (isquemia). A hemorragia na TVC ocorre frequentemente como uma transformação hemorrágica desses infartos venosos ou devido à ruptura de vênulas sobrecarregadas; portanto, o processo envolve tanto isquemia quanto hemorragia.\n\nAlternativa b) Incorreta. As vasculites do sistema nervoso central causam inflamação da parede dos vasos, o que leva ao estreitamento do lúmen (causando isquemia e infartos arteriais) ou ao enfraquecimento da parede vascular (causando rupturas e hemorragias). É uma condição classicamente associada a eventos mistos.\n\nAlternativa c) Incorreta. A cocaína possui diversos mecanismos de injúria cerebral. Ela causa um vasoespasmo intenso e agudo, levando a AVCs isquêmicos. Simultaneamente, provoca picos de hipertensão arterial e pode predispor à ruptura de aneurismas preexistentes ou malformações arteriovenosas, resultando em AVC hemorrágico. Assim, cursa com ambos os tipos de insulto.\n\nAlternativa d) Correta. Os microaneurismas de Charcot-Bouchard são pequenas dilatações (pseudoneurismas) que se formam nas pequenas artérias perfurantes cerebrais (como as artérias lenticuloestriadas) como consequência direta da hipertensão arterial sistêmica crônica. O processo fisiopatológico associado a essas estruturas é, especificamente, a sua ruptura, o que gera a hemorragia intraparenquimatosa hipertensiva clássica (em locais como putâmen, tálamo e ponte). Embora a hipertensão também cause isquemia via lipohialinose (infartos lacunares), o microaneurisma de Charcot-Bouchard em si é uma lesão cuja única manifestação clínica é a ruptura hemorrágica.\n\nPortanto, entre as opções apresentadas, apenas os microaneurismas de Charcot-Bouchard estão exclusivamente vinculados ao evento hemorrágico no contexto de sua patologia específica.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  },
+  {
+    "id": "AJUDA_eef2b904-0347-43c3-9d13-8654e6dc1827",
+    "originalId": "eef2b904-0347-43c3-9d13-8654e6dc1827",
+    "statement": "Uma paciente de 35 anos, com história de ligadura tubária, apresenta-se com dor pélvica e abdominal com irradiação para o ombro, de início súbito, sangramento vaginal e sem febre. A ultrassonografia transvaginal mostra uma massa anexial com 8 cm e presença de líquido livre na pelve e no fundo de saco de Douglas. Qual é a principal suspeita clínica e a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ruptura de cisto ovariano; tratamento conservador com analgésicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença inflamatória pélvica (DIP); iniciar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gravidez ectópica rota; realização de laparoscopia/laparotomia imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Endometrioma; prescrição de anticoncepcional a base de progestágenos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da Questão:\n\nA questão descreve um quadro clássico de abdome agudo hemorrágico em uma paciente em idade fértil. Os pontos-chave para o diagnóstico são: dor abdominal súbita, sangramento vaginal, sinal de irritação diafragmática (dor irradiada para o ombro, conhecida como Sinal de Laffon) e achados ultrassonográficos de massa anexial com líquido livre (hemoperitônio).\n\nAlternativa (a) Incorreta: A ruptura de um cisto ovariano pode causar dor súbita e líquido na pelve, mas a presença de dor irradiada para o ombro sugere um volume de sangue significativo no abdome (hemoperitônio), o que é muito mais característico de uma gravidez ectópica rota. Além disso, diante de sinais de hemoperitônio volumoso, o tratamento puramente conservador com analgésicos seria de alto risco sem a exclusão de gravidez.\n\nAlternativa (b) Incorreta: A Doença Inflamatória Pélvica (DIP) geralmente apresenta um quadro clínico mais arrastado, acompanhado de febre, secreção vaginal purulenta e dor à mobilização do colo uterino. A paciente em questão não apresenta febre e o início da dor foi súbito, o que direciona o raciocínio para causas hemorrágicas ou mecânicas, não infecciosas.\n\nAlternativa (c) Correta: Esta é a principal suspeita clínica. A história de ligadura tubária, ao contrário do que muitos pensam, é um fator de risco para gravidez ectópica caso o método falhe. O quadro de dor súbita, sangramento e Sinal de Laffon (dor no ombro por irritação do nervo frênico pelo sangue) é patognomônico de ruptura de gravidez ectópica com hemoperitônio. A presença de massa anexial de 8 cm e líquido no fundo de saco de Douglas reforça a urgência. A conduta deve ser a intervenção cirúrgica imediata (laparoscopia se estável, ou laparotomia se instável) para conter a hemorragia.\n\nAlternativa (d) Incorreta: O endometrioma é uma manifestação da endometriose que causa dor pélvica crônica e persistente, geralmente relacionada ao ciclo menstrual. Embora um endometrioma possa romper, ele não explicaria o quadro agudo de abdome hemorrágico com irradiação para o ombro de forma tão típica quanto a gravidez ectópica. Além disso, o tratamento com progestágenos é uma terapia hormonal de longo prazo, totalmente inadequada para um quadro de abdome agudo.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  },
+  {
+    "id": "AJUDA_eef8b8e1-bbe6-459c-a0ec-3e32d3fe68d2",
+    "originalId": "eef8b8e1-bbe6-459c-a0ec-3e32d3fe68d2",
+    "statement": "Na colecistectomia, uma das referências anatômicas é o Triângulo de Calot. Esse espaço anatômico é delimitado",
+    "options": [
+      {
+        "id": "A",
+        "text": "pelo ducto hepático comum, pelo ducto cístico e pela borda inferior do fígado, e a dissecção cuidadosa desse trígono ajuda a evitar lesões vasculares e da via biliar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pela borda inferior do fígado, pelo ducto hepático direito e pelo ducto hepático esquerdo, sendo importante referência anatômica para evitar-se a lesão iatrogênica da placa hilar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pelo ducto cístico, pelo ducto colédoco e pela artéria cística, sendo importante referência anatômica para evitar-se a lesão iatrogênica da placa hilar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pelo ducto hepático comum, pelo ducto cístico e pela borda inferior do ducto cístico, e a lesão dessas estruturas demanda laparotomia mediana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Triângulo de Calot, também conhecido em termos cirúrgicos modernos como Triângulo Hepatocístico, é o espaço anatômico mais importante durante uma colecistectomia, pois sua dissecção completa permite a identificação segura das estruturas que serão ligadas: o ducto cístico e a artéria cística.\n\nAlternativa A: CORRETA. Os limites do triângulo de Calot na prática cirúrgica atual são o ducto cístico (inferolateral), o ducto hepático comum (medial) e a borda inferior do fígado (superior). Dentro deste espaço, geralmente encontramos a artéria cística e, por vezes, o ducto cístico acessório. A dissecção cuidadosa desta área é o componente principal da \"Visão Crítica de Segurança\", técnica utilizada para prevenir lesões iatrogênicas da via biliar principal e de vasos importantes.\n\nAlternativa B: INCORRETA. Os ductos hepáticos direito e esquerdo, juntamente com a borda inferior do fígado, formam a região do hilo hepático e da placa hilar. Embora seja uma área anatômica crucial, esses não são os limites que definem o Triângulo de Calot.\n\nAlternativa C: INCORRETA. O limite medial do triângulo é o ducto hepático comum, e não o ducto colédoco (o colédoco se inicia apenas após a junção do cístico com o hepático comum). Além disso, embora a artéria cística fizesse parte da descrição original de Calot em 1891 como limite superior, a definição cirúrgica atual utiliza a borda do fígado como limite superior para garantir uma margem de segurança maior contra lesões da via biliar.\n\nAlternativa D: INCORRETA. A descrição dos limites anatômicos está equivocada, pois cita a \"borda inferior do ducto cístico\" como um dos limites, o que não faz sentido geométrico para formar o trígono. Além disso, a afirmação de que a lesão dessas estruturas demanda obrigatoriamente laparotomia mediana é falsa; o tratamento de lesões de via biliar depende da classificação da lesão (como a de Strasberg) e pode envolver desde procedimentos endoscópicos até reconstruções biliodigestivas complexas.\n\nEm resumo, a alternativa A descreve com precisão a anatomia aplicada à prática cirúrgica da colecistectomia, focando na prevenção de complicações graves através do reconhecimento dos limites do triângulo hepatocístico.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  },
+  {
+    "id": "AJUDA_ef01d381-75bf-4301-b28f-6769208dad24",
+    "originalId": "ef01d381-75bf-4301-b28f-6769208dad24",
+    "statement": "Durante a consulta de rotina de um lactente de 4 meses a mãe questiona sobre quais as vacinas ele precisa fazer nesse momento. Paciente com cartão vacinal completo e atualizado até o 3º mês de vida. Mãe refere que nas vacinas de 2 meses ele apresentou dor abdominal e um pouco de enterorragia. Qual deve ser a orientação para essa família:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar 2 doses de rotavírus, pentavalente, poliomielite oral (VOP) e pneumococo conugada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar 2 doses de rotavírus, pentavalente, poliomielite inativada (VIP) e pneumococo conjugada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não realizar a 2ª dose da rotavírus devido aos efeitos colaterais realizar pentavalente, poliomielite inativada (VIP) pneumococo conjugada",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não realizar a 2ª dose da rotavírus devido aos efeitos colaterais realizar pentavalente, poliomielite oral (VOP) pneumococo conjugada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar dois pontos principais: o calendário vacinal do Ministério da Saúde para um lactente de 4 meses e as contraindicações específicas às vacinas administradas anteriormente.\n\nAnálise do Calendário Vacinal aos 4 meses:\nAos 4 meses de idade, a criança deve receber a segunda dose das seguintes vacinas:\n1. Pentavalente (DTP + Hib + Hepatite B).\n2. VIP (Vacina Inativada Poliomielite).\n3. Pneumocócica 10-valente (conjugada).\n4. Rotavírus humano (G1P[8]).\n\nAnálise da Contraindicação:\nA mãe relata que, após as vacinas de 2 meses (primeira dose), o lactente apresentou dor abdominal e enterorragia (sangue nas fezes). A vacina do Rotavírus é uma vacina de vírus vivos atenuados que possui como evento adverso grave, embora raro, a intussuscepção intestinal (invaginação). A ocorrência de enterorragia e dor abdominal importante após a primeira dose acende um sinal de alerta para esse evento. Segundo as normas do Programa Nacional de Imunizações (PNI), a presença de história de invaginação intestinal ou malformação congênita não corrigida do trato gastrointestinal contraindica doses subsequentes da vacina contra Rotavírus. Mesmo em casos de suspeita clínica de reação adversa grave ao trato gastrointestinal relacionada à primeira dose, a recomendação é suspender a dose seguinte para garantir a segurança do paciente.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Primeiro, o uso da vacina contra Rotavírus está contraindicado devido ao histórico de enterorragia. Segundo, a vacina contra poliomielite aos 4 meses deve ser a VIP (inativada/injetável) e não a VOP (oral/gotinha), conforme o calendário oficial.\n\nAlternativa b) Incorreta. Embora cite corretamente a VIP, a alternativa mantém a indicação da vacina contra Rotavírus, o que é um erro diante do relato de enterorragia após a primeira dose.\n\nAlternativa c) Correta. Esta alternativa identifica corretamente a necessidade de suspender a segunda dose da vacina contra Rotavírus devido ao efeito colateral gastrointestinal relatado (que pode indicar uma intussuscepção ou sensibilidade grave). Além disso, lista corretamente as outras vacinas do esquema de 4 meses: Pentavalente, VIP (poliomielite inativada) e Pneumocócica conjugada.\n\nAlternativa d) Incorreta. Apesar de acertar na suspensão da vacina do Rotavírus, a alternativa erra ao indicar a VOP (poliomielite oral). Aos 4 meses, o esquema vacinal brasileiro preconiza estritamente o uso da VIP (inativada).\n\nResumo: O lactente deve seguir com o calendário de 4 meses (Pentavalente, VIP e Pneumo 10), porém a vacina do Rotavírus deve ser omitida devido ao evento adverso prévio (enterorragia), visando prevenir complicações maiores como a intussuscepção intestinal.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  },
+  {
+    "id": "AJUDA_ef05bac9-6b5b-414f-880a-adf480f8338a",
+    "originalId": "ef05bac9-6b5b-414f-880a-adf480f8338a",
+    "statement": "Assinale a opção que apresenta um conceito diagnóstico ou terapêutico incompatível com a prática clínica adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doentes com amputação traumática do membro inferior podem se beneficiar do uso de torniquetes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Abordagem gradual para o controle da hemorragia consiste na utilização de curativo compressivo, compressão direta da artéria proximal ao ferimento e caso a hemorragia persista, utilizar torniquete",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A aplicação de clamp vascular em ferimentos abertos não é recomendado na sala de emergência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Índice tornozelo‑braquial < 0,9, indica baixa probabilidade de lesão vascular",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A parte amputada deve ser lavada, envolvida em gaze estéril umedecida, posteriormente em uma toalha estéril também umedecida, colocada em uma sacola plástica e transportada em um recipiente resfriado com gelo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão solicita a alternativa que apresenta um conceito diagnóstico ou terapêutico incompatível com a prática clínica adequada, ou seja, devemos encontrar a afirmação incorreta.\n\nAlternativa (a): Correta. O uso de torniquetes em amputações traumáticas ou hemorragias exanguinantes de extremidades é uma medida salva-vidas recomendada pelos protocolos atuais, como o ATLS e o PHTLS, para o controle rápido do sangramento massivo.\n\nAlternativa (b): Correta. Embora em situações de sangramento catastrófico o torniquete possa ser a primeira escolha, a abordagem escalonada (pressão direta, curativo compressivo e, por fim, torniquete) ainda é um conceito válido para o manejo de hemorragias em ferimentos periféricos.\n\nAlternativa (c): Correta. A aplicação de clamps vasculares de forma \"cega\" ou em ferimentos abertos na sala de emergência não é recomendada. O risco de lesar estruturas adjacentes, como nervos, ou de danificar ainda mais a parede arterial (dificultando um reparo futuro) é muito alto. O controle deve ser feito por pressão direta.\n\nAlternativa (d): Incorreta (Gabarito). O Índice Tornozelo-Braquial (ITB) é uma ferramenta diagnóstica importante no trauma vascular. Um valor de ITB inferior a 0,9 é considerado um \"sinal indireto\" ou \"sinal leve\" de lesão vascular, indicando uma ALTA probabilidade de lesão arterial subjacente, exigindo investigação adicional (como angiotomografia ou arteriografia). É o ITB maior que 0,9 que indica baixa probabilidade de lesão.\n\nAlternativa (e): Correta. Este é o protocolo padrão para preservação de membros ou segmentos amputados visando um possível reimplante. O objetivo é manter a parte amputada resfriada (isquemia fria), mas sem contato direto com o gelo para evitar o congelamento e a lesão tecidual por frio.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  },
+  {
+    "id": "AJUDA_ef0cd136-c398-4c5b-b0b0-5c390f99bf97",
+    "originalId": "ef0cd136-c398-4c5b-b0b0-5c390f99bf97",
+    "statement": "Pode-se afirmar que o peso fetal é considerado critério isolado e mais que suficiente de restrição de crescimento fetal quando se encontra abaixo do percentil:",
+    "options": [
+      {
+        "id": "A",
+        "text": "6",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "15",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "10",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a essa questão, é fundamental diferenciar os conceitos de feto Pequeno para a Idade Gestacional (PIG) e Restrição de Crescimento Fetal (RCF), baseando-se no Consenso Delphi, que é a principal referência internacional sobre o tema.\n\nO feto PIG é definido apenas pelo peso fetal estimado ou pela circunferência abdominal abaixo do percentil 10. Muitos desses fetos são apenas constitucionalmente pequenos e saudáveis. Já a RCF implica em um processo patológico onde o feto não atinge seu potencial de crescimento, aumentando o risco de morbimortalidade perinatal.\n\nAlternativa a) Incorreta. O percentil 6 está abaixo do limite de normalidade (percentil 10), mas não é o ponto de corte estabelecido para o diagnóstico isolado de RCF. Fetos entre os percentis 3 e 10 necessitam de critérios adicionais, como alterações ao Doppler, para serem classificados com restrição de crescimento.\n\nAlternativa b) Correta. O Consenso Delphi estabelece que o peso fetal estimado ou a circunferência abdominal abaixo do percentil 3 é um critério isolado e suficiente para o diagnóstico de RCF. Isso se deve ao fato de que fetos com peso extremamente baixo apresentam um risco muito elevado de resultados adversos, mesmo que a avaliação inicial pelo Doppler se apresente normal. Portanto, abaixo do percentil 3, a patologia é presumida.\n\nAlternativa c) Incorreta. O percentil 15 é considerado um parâmetro de crescimento normal. O rastreamento para desvios de crescimento fetal começa a partir do percentil 10.\n\nAlternativa d) Incorreta. O percentil 10 define o feto como Pequeno para a Idade Gestacional (PIG). Embora seja um sinal de alerta, ele não é suficiente por si só para diagnosticar a RCF. Para um feto entre os percentis 3 e 10 ser considerado com restrição, ele deve obrigatoriamente apresentar outros sinais de sofrimento ou má adaptação placentária, como alteração no Doppler das artérias uterinas, da artéria umbilical ou da relação cérebro-placentária.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Restrição de Crescimento Fetal e Óbito Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  },
+  {
+    "id": "AJUDA_ef0dacc5-c9a6-424c-8c95-6eac5bf73db3",
+    "originalId": "ef0dacc5-c9a6-424c-8c95-6eac5bf73db3",
+    "statement": "O Programa Nacional de Imunização (PNI) recomenda as vacinas que devem ser administradas em gestantes a nível nacional. Dentre elas, preconiza-se a administração da vacina dTpa a partir da 20ª semana de gestação. A seguir, assinale a alternativa que elucida corretamente o motivo dessa recomendação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dose de reforço de dTpa nas gestantes é recomendada devido a imunossupressão fisiológica enfrentada durante o ciclo gravídico-puerperal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A dose de reforço de dTpa nas gestantes constitui estratégia em saúde pública, regulamentada pelo Ministério da Saúde, considerando o aumento de morbimortalidade materna em caso de difteria, tétano e coqueluche no ciclo gravídico-puerperal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A dose de reforço de dTpa nas gestantes é preconizada uma vez que imunizantes contra difteria, tétano e B. pertussis não são administrados em lactentes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dose de reforço de dTpa nas gestantes aumenta a produção de anticorpos maternos e, portanto, constitui imunizante passivo aos lactentes contra difteria, tétano e B. pertussis, até que os mesmos sejam vacinados e adquiram imunidade ativa",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A recomendação da vacina dTpa (difteria, tétano e coqueluche acelular) para gestantes no Brasil, por meio do Programa Nacional de Imunizações (PNI), fundamenta-se na proteção do binômio mãe-filho, com foco especial na prevenção da coqueluche neonatal.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a gestação envolva um estado de imunomodulação fisiológica para evitar a rejeição do feto, a indicação da vacina dTpa não ocorre para compensar uma suposta fraqueza do sistema imune materno. O objetivo principal é a transferência de anticorpos.\n\nb) Incorreta. O motivo central da estratégia não é o aumento da morbimortalidade materna por essas doenças. A coqueluche, especificamente, costuma ser leve em adultos e gestantes, mas é extremamente grave e potencialmente fatal em recém-nascidos e lactentes jovens. A estratégia visa proteger o bebê, que é o grupo de maior risco.\n\nc) Incorreta. Os imunizantes contra difteria, tétano e *B. pertussis* são, sim, administrados em lactentes. No calendário básico, a criança recebe a vacina pentavalente aos 2, 4 e 6 meses de vida. A vacinação materna existe justamente porque o bebê só começa a produzir sua própria imunidade ativa após essas doses.\n\nd) Correta. A administração da dTpa a partir da 20ª semana de gestação (idealmente até a 36ª semana) visa estimular a produção de altos títulos de anticorpos IgG maternos. Esses anticorpos atravessam a barreira placentária de forma ativa, conferindo imunidade passiva ao feto. Essa proteção é essencial para cobrir o \"hiato imunológico\" nos primeiros meses de vida do bebê, garantindo proteção contra a coqueluche até que ele complete o esquema vacinal primário e desenvolva sua própria imunidade. Além disso, a vacinação materna reduz a chance de a mãe contrair a doença e transmiti-la ao recém-nascido (efeito casulo).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  },
+  {
+    "id": "AJUDA_ef18aacf-d5fc-481d-8fd9-6167459cd08a",
+    "originalId": "ef18aacf-d5fc-481d-8fd9-6167459cd08a",
+    "statement": "A figura a seguir representa graficamente a ocorrência de casos novos de dengue em dois municípios do estado de São Paulo, no ano de 2024. [Gráfico mostra a ocorrência de casos novos de DENGUE por 100 mil habitantes, segundo semanas epidemiológicas]. Os dados apresentados por semanas epidemiológicas expressam",
+    "options": [
+      {
+        "id": "A",
+        "text": "coeficientes de prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a variação sazonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "coeficientes de incidência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o diagrama de controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão exige o conhecimento dos indicadores de saúde e como eles são representados em gráficos epidemiológicos. O ponto-chave para a resolução está na identificação da unidade de medida descrita: casos novos por 100 mil habitantes ao longo de um período (semanas epidemiológicas).\n\nAlternativa a: Incorreta. A prevalência mede o número total de casos (casos novos somados aos casos antigos) em uma população em um determinado momento ou período. Como o gráfico e o enunciado tratam especificamente de casos novos, o indicador representado não é a prevalência. A prevalência é mais utilizada para doenças crônicas de longa duração.\n\nAlternativa b: Incorreta. A variação sazonal é o comportamento de uma doença que se repete em períodos específicos do ano (como o aumento de dengue no verão). Embora o gráfico mostre o comportamento temporal da doença em 2024, os dados quantitativos apresentados no eixo vertical (casos por 100 mil habitantes) definem tecnicamente um coeficiente, e não apenas o fenômeno da sazonalidade.\n\nAlternativa c: Correta. O coeficiente de incidência é o indicador que mede o risco de ocorrência de uma doença em uma população. Ele é calculado dividindo-se o número de casos novos pelo total da população exposta em um determinado período e local. A expressão \"casos novos por 100 mil habitantes por semana epidemiológica\" é a definição clássica de incidência, sendo o principal indicador para monitorar surtos e epidemias de doenças agudas como a dengue.\n\nAlternativa d: Incorreta. O diagrama de controle (também chamado de canal endêmico) é um gráfico que serve para identificar se a ocorrência de uma doença está dentro do esperado para aquele período. Para ser um diagrama de controle, o gráfico precisaria apresentar a série histórica de anos anteriores (geralmente os últimos 7 a 10 anos) e os limites máximos e mínimos esperados, o que não ocorre na imagem, que mostra apenas os dados do ano corrente de 2024.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  },
+  {
+    "id": "AJUDA_ef1ab207-732d-4ca5-9bc6-1f24da176dc2",
+    "originalId": "ef1ab207-732d-4ca5-9bc6-1f24da176dc2",
+    "statement": "Menina, 2 anos de idade, tem diarreia e vômitos há 1 dia. Foi avaliada e medicada no serviço de urgência. Foi orientada dieta e hidratação com água e líquidos variados. Há 1 hora está estranha, chorando o tempo todo, mal olha os brinquedos e ficou em posição com o corpo curvado para trás. Ficou com a mãe todo o tempo, grande parte do tempo, no seu colo. Ao exame apresenta hipertonia, espasmos musculares, posição de opistótono, mímica facial pobre e parkinsonismo.\nA hipótese diagnóstica é de intoxicação, possivelmente pela medicação recebida no atendimento realizado horas antes.\nA medicação mais provável, de acordo com o quadro descrito, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "dimenidrato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "clorpromazina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ondansetrona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "metoclopramida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "loperamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A hipótese diagnóstica principal para este quadro é uma reação distônica aguda, que é um tipo de efeito extrapiramidal. O quadro clínico de opistótono (corpo curvado para trás), hipertonia, espasmos musculares e face parkinsoniana em uma criança que foi medicada para vômitos é clássico da intoxicação ou efeito adverso de bloqueadores dopaminérgicos.\n\nAlternativa a) Incorreta. O dimenidrato é um anti-histamínico de primeira geração utilizado como antiemético. Seus principais efeitos colaterais são a sedação profunda e a sonolência. Em casos de intoxicação grave, pode causar a síndrome anticolinérgica (caracterizada por pupilas dilatadas, pele seca, febre e agitação), mas não costuma provocar os sintomas motores extrapiramidais descritos.\n\nAlternativa b) Incorreta. Embora a clorpromazina seja um antipsicótico da classe dos fenotiazínicos que bloqueia receptores de dopamina e possa, teoricamente, causar esses sintomas, ela não é uma medicação de rotina utilizada para tratar quadros agudos de vômitos e diarreia em crianças de 2 anos em prontos-atendimentos.\n\nAlternativa c) Incorreta. A ondansetrona é um antagonista dos receptores de serotonina (5-HT3). Atualmente, é o antiemético de escolha na pediatria justamente por não possuir ação dopaminérgica, o que significa que ela não causa reações extrapiramidais como o opistótono e o parkinsonismo, apresentando um perfil de segurança muito superior.\n\nAlternativa d) Correta. A metoclopramida é um bloqueador dos receptores D2 de dopamina. Em crianças, devido à imaturidade do sistema nervoso central, essa medicação atravessa facilmente a barreira hematoencefálica e causa frequentemente reações extrapiramidais agudas. Os sintomas apresentados pela paciente (espasmos, rigidez, hipertonia e opistótono) são manifestações típicas desse efeito adverso, sendo a causa mais provável no cenário de urgência pediátrica para tratamento de vômitos.\n\nAlternativa e) Incorreta. A loperamida é um antidiarreico derivado opioide. Seu uso em crianças pequenas é perigoso e geralmente contraindicado, pois pode causar íleo paralítico (parada do movimento intestinal), distensão abdominal severa e depressão do sistema nervoso central, mas não está associada a reações de distonia ou parkinsonismo.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia",
+      "Intoxicações Exógenas",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  },
+  {
+    "id": "AJUDA_ef1e6763-421e-4457-832e-2a89253b61fc",
+    "originalId": "ef1e6763-421e-4457-832e-2a89253b61fc",
+    "statement": "Paciente, 47 anos, nuligesta, vem para consulta de rotina ginecológica trazendo queixas de alterações de humor, sudorese noturna intensa na região do pescoço e atraso nos ciclos menstruais, chegando a 45 dias com hipermenorreia. Ao exame físico, apresenta-se corada, normotensa, parâmetros vitais normais. Ao exame ginecológico, apresenta útero palpável na sínfise púbica e anexos não palpáveis ao toque vaginal. Foi questionada sobre outros diagnósticos. A paciente referiu não tomar nenhuma medicação e não tem antecedentes pessoais importantes. Quanto aos antecedentes familiares, a sua tia materna teve câncer mamário aos 65 anos. Qual a suspeita diagnóstica mais provável e qual exame seria importante relacionado às queixas clínicas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotiroidismo – Ultrassonografia da tiroide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Câncer de colo uterino – Colpocitologia oncótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Menopausa – FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Climatério – Ultrassonografia transvaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nA paciente de 47 anos encontra-se na faixa etária de transição menopausal. Ela apresenta a tríade clássica do climatério: sintomas vasomotores (sudorese noturna), alterações de humor e irregularidade menstrual (ciclos alongados para 45 dias). O achado de hipermenorreia (aumento do fluxo), associado ao exame físico que revela um útero palpável na sínfise púbica (aumento do volume uterino), sugere a presença de alterações estruturais, como miomatose uterina ou adenomiose, que são frequentes nessa idade e podem ser exacerbadas pelas flutuações hormonais do período.\n\nAnálise das Alternativas:\n\na) Incorreta. O hipotireoidismo pode causar irregularidade menstrual e cansaço, mas não costuma cursar com sudorese noturna intensa (sintoma mais ligado ao hipertireoidismo ou ao climatério). Além disso, o exame inicial para avaliar a função tireoidiana é o TSH, e não a ultrassonografia da tireoide, que é indicada para a avaliação morfológica de nódulos.\n\nb) Incorreta. O câncer de colo uterino manifesta-se tipicamente por sangramento pós-coito ou sangramento intermenstrual fétido em estágios avançados. Ele não explica os sintomas sistêmicos de humor e fogachos. A colpocitologia oncótica é um exame de rastreamento, e não o método principal para investigar o aumento do volume uterino e as queixas hormonais relatadas.\n\nc) Incorreta. Por definição, a menopausa é um diagnóstico retrospectivo, estabelecido após 12 meses consecutivos de amenorreia (ausência de menstruação). Como a paciente ainda menstrua (embora com atrasos e fluxo aumentado), ela está no climatério (perimenopausa), e não na menopausa. O FSH pode estar elevado, mas o diagnóstico clínico de climatério nesta idade dispensa exames laboratoriais hormonais rotineiros para confirmação.\n\nd) Correta. O termo climatério compreende todo o período de transição entre a fase reprodutiva e a não reprodutiva. O quadro de irregularidade menstrual, somado aos sintomas vasomotores, é patognomônico dessa fase. A ultrassonografia transvaginal é o exame de escolha para investigar a queixa de hipermenorreia e o achado físico de útero aumentado, permitindo avaliar a presença de miomas, pólipos ou espessamento endometrial.\n\nConclusão:\n\nO diagnóstico de climatério é clínico, baseado na idade e nos sintomas. A propedêutica complementar com ultrassonografia justifica-se pela alteração do fluxo menstrual e pelo útero palpável, visando excluir patologias orgânicas uterinas.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:19.094Z"
+  }
+]

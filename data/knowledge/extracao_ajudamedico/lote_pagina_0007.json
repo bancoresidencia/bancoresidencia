@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_01afbf08-f9df-4fd8-ab92-3eb1d77ebc64",
+    "originalId": "01afbf08-f9df-4fd8-ab92-3eb1d77ebc64",
+    "statement": "Uma mulher de 77 anos de idade, acometida por diabetes mellitus tipo 2 há 8 anos, buscou atendimento na unidade básica de saúde (UBS) por demanda espontânea referindo tosse há 2 meses e perda ponderal não intencional de 7 kg. \n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a conduta adequada para a situação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "avaliação médica imediata para a solicitação de radiografia de tórax e prescrição de três dias de azitromicina 500 mg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "referenciar para a especialidade pneumologia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "agendamento de consulta médica na UBS para investigação da perda de peso não intencional",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "avaliação médica imediata para solicitação de broncoscopia e exame de escarro tipo baciloscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "avaliação médica imediata para solicitação de exame de escarro tipo teste rápido molecular – PCR",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente em questão apresenta um quadro clássico de \"sintomático respiratório\": idosa, diabética (fator de imunossupressão), com tosse persistente há mais de três semanas (dois meses no relato) e sintomas constitucionais (perda ponderal significativa de 7 kg). No contexto epidemiológico do Brasil, a principal suspeita diagnóstica diante de tosse crônica e emagrecimento é a tuberculose pulmonar.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. A prescrição de azitromicina por três dias é voltada para quadros de infecções respiratórias agudas de provável etiologia bacteriana ou atípica. O quadro da paciente é crônico (dois meses), o que torna o uso empírico de antibióticos de curto espectro inadequado e protelatório para o diagnóstico correto. A radiografia é útil, mas não deve vir acompanhada desse tratamento.\n\nb) INCORRETA. A investigação inicial da tosse crônica e a suspeita de tuberculose devem ser realizadas obrigatoriamente na Atenção Primária à Saúde (UBS). O encaminhamento para o pneumologista deve ser reservado para casos de difícil diagnóstico, falha terapêutica ou complicações, após a realização dos exames básicos.\n\nc) INCORRETA. Embora a perda de peso precise ser investigada, o agendamento de uma consulta futura ignora a urgência epidemiológica e clínica de um paciente sintomático respiratório. Casos com suspeita de tuberculose exigem agilidade para o diagnóstico e início do tratamento, visando interromper a cadeia de transmissão e evitar o agravamento da paciente.\n\nd) INCORRETA. A broncoscopia é um exame invasivo, indicado apenas quando os exames de escarro são negativos ou quando a paciente não consegue expectorar após tentativas de indução. Quanto à baciloscopia (exame de escarro comum), embora ainda seja utilizada, ela não é mais a primeira escolha tecnológica quando o Teste Rápido Molecular está disponível, devido à sua menor sensibilidade.\n\ne) CORRETA. Esta é a conduta padrão atualizada pelo Ministério da Saúde. Pacientes com tosse há três semanas ou mais (ou qualquer tempo, se pertencerem a grupos de risco como idosos e diabéticos) devem ser submetidos à investigação imediata para tuberculose. O Teste Rápido Molecular (TRM-TB), baseado na técnica de PCR, é o exame de escolha inicial por ser mais rápido, detectar o DNA do *Mycobacterium tuberculosis* com alta sensibilidade e ainda identificar a resistência à rifampicina logo no primeiro exame.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Tuberculose"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  },
+  {
+    "id": "AJUDA_01b1953a-9498-4356-98cf-9a29f3a9e130",
+    "originalId": "01b1953a-9498-4356-98cf-9a29f3a9e130",
+    "statement": "O abscesso hepático piogênico e o amebiano apresentam características distintas que influenciam a conduta terapêutica. Assinale a alternativa correta sobre o diagnóstico diferencial e tratamento dessas entidades.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sorologia para Entamoeba histolytica tem baixo valor preditivo negativo, devendo-se realizar aspiração diagnóstica de rotina em todos os abscessos hepáticos para confirmação bacteriológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O abscesso piogênico é, na maioria das vezes, secundário à disseminação hematogênica de focos à distância (endocardite), sendo raramente associado a patologias da via biliar (colangite).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em abscessos piogênicos múltiplos e pequenos, a hepatectomia regrada é a melhor opção terapêutica para erradicar o foco infeccioso e prevenir a sepse recorrente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O abscesso amebiano geralmente é único, localizado no lobo direito, e responde bem ao tratamento medicamentoso com metronidazol, sendo a drenagem percutânea reservada para casos de falha terapêutica ou risco iminente de ruptura.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) INCORRETA. A sorologia para *Entamoeba histolytica* possui, na verdade, um alto valor preditivo negativo (frequentemente acima de 95% em áreas não endêmicas). Se a sorologia for negativa, a chance de ser um abscesso amebiano é muito baixa. Além disso, a aspiração diagnóstica de rotina não é recomendada para todos os casos; ela é reservada para situações de dúvida diagnóstica persistente, suspeita de sobreinfecção bacteriana em abscesso amebiano ou quando há alto risco de ruptura.\n\nAlternativa b) INCORRETA. Esta alternativa inverte a epidemiologia clássica. A causa mais comum de abscesso hepático piogênico em adultos é a patologia biliar (colangite, colecistite, obstruções biliares por cálculos ou neoplasias), correspondendo a cerca de 40% a 60% dos casos. A disseminação hematogênica por focos à distância, como endocardite, é uma causa bem menos frequente.\n\nAlternativa c) INCORRETA. Em casos de abscessos piogênicos múltiplos e pequenos (microabscessos), a conduta inicial e principal é a antibioticoterapia sistêmica prolongada. A drenagem costuma ser difícil nessas apresentações e a hepatectomia regrada é uma medida de exceção, reservada apenas para casos muito específicos e refratários, como abscessos associados a doenças biliares intra-hepáticas crônicas (ex.: hepatolitíase) que não respondem ao tratamento conservador.\n\nAlternativa d) CORRETA. Esta alternativa descreve perfeitamente o perfil do abscesso amebiano. Ele é geralmente único e localiza-se preferencialmente no lobo direito (devido ao fluxo preferencial da veia porta). O tratamento de escolha é clínico, com o uso de metronidazol ou tinidazol, apresentando excelente resposta em mais de 90% dos casos. A intervenção (drenagem percutânea) só é indicada se houver falha do tratamento medicamentoso após 48-72 horas, em abscessos volumosos com risco iminente de ruptura (especialmente no lobo esquerdo pelo risco de drenagem para o pericárdio) ou em casos de incerteza diagnóstica.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Parasitoses",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  },
+  {
+    "id": "AJUDA_01b6792a-9edd-4211-bdcd-1f7a50c33f3a",
+    "originalId": "01b6792a-9edd-4211-bdcd-1f7a50c33f3a",
+    "statement": "Um homem de 72 anos, em pós-operatório de colectomia esquerda, internado há 28 dias em UTI em ventilação mecânica. Evolui com febre, hipotensão e secreção purulenta traqueal. A cultura de aspirado traqueal colhida há 48h revelou Acinetobacter Baumannii Carbapenem-resistente, produtor de OXA-23. Ele está em uso de colistina + meropenem há 5 dias, com piora clínica e aumento da creatinina. A equipe considera o uso de antibióticos de última geração. Em relação às opções disponíveis, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Taniborbactam associado a cefepime tem excelente ação contra OXA-23 e deve substituir colistina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefiderocol pode ser considerado, pois mantém atividade contra Acinetobacter produtor de OXA-23, mesmo após falha de colistina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Taniborbactam é ativo contra todas as classes de carbapenemases, incluindo metalo-β-lactamases e oxacilinases.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cefiderocol deve ser evitado em infecções pulmorares por Acinetobacter devido a falha demonstrada em poucos estudos clínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A melhor abordagem é manter colistina associada a meropenem em dose estendida, pois nenhum antibiótico moderno cobre OXA-23 de forma segura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nO caso clínico apresenta um paciente idoso em ventilação mecânica com pneumonia associada à ventilação por Acinetobacter baumannii resistente a carbapenêmicos (CRAB), especificamente um produtor da oxacilinase OXA-23. O paciente está em falha terapêutica com o esquema de colistina e meropenem, além de apresentar nefrotoxicidade induzida pela colistina (aumento de creatinina). É necessário buscar uma alternativa mais eficaz e menos tóxica.\n\nAlternativa A: Incorreta. O cefepime-taniborbactam é uma combinação promissora que inibe várias classes de betalactamases, incluindo as metalobetalactamases. No entanto, o taniborbactam inibe a OXA-48 (comum em Enterobacterales), mas não possui atividade clinicamente relevante contra as oxacilinases específicas do Acinetobacter, como a OXA-23 citada na questão.\n\nAlternativa B: Correta. O cefiderocol é uma cefalosporina siderófora que utiliza o transporte de ferro da própria bactéria para atravessar a membrana externa (mecanismo de cavalo de Troia). Ele possui estabilidade contra a maioria das betalactamases de todas as classes (A, B, C e D), incluindo as oxacilinases do Acinetobacter baumannii (como OXA-23, OXA-24/40 e OXA-58). Por isso, é uma opção adequada em casos de resistência ou falha às polimixinas.\n\nAlternativa C: Incorreta. Embora o taniborbactam tenha um espectro de inibição muito amplo (abrangendo as classes A, B, C e a OXA-48 da classe D), ele não é ativo contra todas as oxacilinases. As enzimas de classe D do Acinetobacter não são adequadamente inibidas por esse composto.\n\nAlternativa D: Incorreta. A afirmação refere-se a dados do estudo CREDIBLE-CR, que mostrou uma mortalidade maior no grupo do cefiderocol em infecções por patógenos Gram-negativos não fermentadores (incluindo Acinetobacter). No entanto, isso não significa que a droga deva ser evitada. As diretrizes atuais (como as da IDSA) ainda consideram o cefiderocol uma opção importante para o tratamento de CRAB, especialmente quando não há outras alternativas seguras, devendo ser usado com cautela e, preferencialmente, em terapia combinada, se possível.\n\nAlternativa E: Incorreta. Manter colistina e meropenem em um paciente com piora clínica e lesão renal aguda é uma conduta inadequada. Existem novos antibióticos, como o próprio cefiderocol e a associação sulbactam-durlobactam, que cobrem o Acinetobacter produtor de OXA-23 de forma mais segura e eficaz do que o esquema antigo baseado em polimixinas.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Pneumonias Bacterianas",
+      "Antibióticos"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  },
+  {
+    "id": "AJUDA_01c4d0c9-4d6f-4780-b9fb-800d5db6a847",
+    "originalId": "01c4d0c9-4d6f-4780-b9fb-800d5db6a847",
+    "statement": "Um programa de saúde de uma Secretaria Municipal de Saúde poderia incluir como ação de prevenção secundária:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacinação antitetânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rastreamento de câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Imunização contra gripe H1N1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratamento de água e esgoto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a esta questão, é necessário dominar a classificação dos níveis de prevenção em saúde pública, proposta originalmente por Leavell e Clark.\n\nA prevenção secundária foca no diagnóstico precoce e no tratamento imediato de uma doença que já está presente no organismo, mas que ainda se encontra em estágio inicial ou assintomático (fase subclínica). O objetivo principal é aumentar as chances de cura, evitar complicações e reduzir a prevalência da doença na população.\n\nAlternativa a: Incorreta. A vacinação antitetânica é uma medida de prevenção primária. A prevenção primária atua antes de a doença ocorrer, visando diminuir a sua incidência por meio da proteção específica (como as vacinas) ou da promoção da saúde.\n\nAlternativa b: Correta. O rastreamento de câncer de mama é um exemplo típico de prevenção secundária. Por meio de exames como a mamografia, busca-se identificar a neoplasia em fases muito iniciais em pessoas que não apresentam sintomas, permitindo uma intervenção rápida que melhora significativamente o prognóstico e a sobrevida da paciente.\n\nAlternativa c: Incorreta. A imunização contra a gripe H1N1, assim como o exemplo da alternativa a, é uma ação de prevenção primária. Ela visa proteger o indivíduo contra a infecção antes que ela aconteça, reduzindo o número de novos casos.\n\nAlternativa d: Incorreta. O tratamento de água e esgoto é uma ação de saneamento ambiental classificada como prevenção primária. Estas medidas visam ao controle de fatores determinantes e condicionantes de doenças no meio ambiente, impedindo que os agentes patogênicos entrem em contato com a população e causem enfermidades.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  },
+  {
+    "id": "AJUDA_01c95d01-83ae-4d44-9ed7-e629f2c9225e",
+    "originalId": "01c95d01-83ae-4d44-9ed7-e629f2c9225e",
+    "statement": "Menino, 9 anos, com quadro de dificuldade de aprendizagem e sintomas evidentes e persistentes de hiperatividade/impulsividade e desatenção há mais 3 anos. A suspeita é de Transtorno de Déficit de Atenção e Hiperatividade. Considerando essa hipótese e os critérios diagnósticos, assinale a afirmativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os sintomas de desatenção e/ou hiperatividade e impulsividade devem estar presentes antes dos 18 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os sintomas de desatenção e/ou hiperatividade e impulsividade devem estar presentes em no mínimo 2 ambientes diferentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Os sintomas podem ser discretos e não interferirem ou reduzirem a qualidade do funcionamento social, acadêmico ou ocupacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os sintomas podem ocorrer exclusivamente durante o curso de transtornos psicóticos ou esquizofrenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Transtorno do Déficit de Atenção e Hiperatividade (TDAH) é um transtorno do neurodesenvolvimento definido por níveis prejudiciais de desatenção, desorganização e/ou hiperatividade-impulsividade. O diagnóstico é essencialmente clínico, baseado nos critérios do Manual Diagnóstico e Estatístico de Transtornos Mentais (DSM-5). Abaixo, analisamos cada alternativa conforme as diretrizes atuais:\n\nAlternativa (a) Incorreta. De acordo com o DSM-5, para o diagnóstico de TDAH, vários sintomas de desatenção ou hiperatividade-impulsividade devem estar presentes antes dos 12 anos de idade, e não antes dos 18 anos. Essa mudança de idade (de 7 anos no DSM-IV para 12 anos no DSM-5) ocorreu para reconhecer que muitos casos são identificados tardiamente, mas o início dos sintomas deve ocorrer ainda na infância.\n\nAlternativa (b) Correta. Este é um critério fundamental (Critério C). Os sintomas não podem estar restritos a apenas um contexto. É necessário que o comportamento se manifeste em dois ou mais ambientes, como, por exemplo, em casa e na escola, ou no trabalho e em atividades sociais. Isso ajuda a confirmar que o padrão de comportamento é persistente e intrínseco ao indivíduo, e não apenas uma reação a um ambiente específico ou a um estressor pontual.\n\nAlternativa (c) Incorreta. Um dos critérios obrigatórios para o diagnóstico (Critério D) é que deve haver evidências claras de que os sintomas interferem no funcionamento social, acadêmico ou profissional, ou que reduzem a qualidade desse funcionamento. Se os sintomas forem discretos a ponto de não causarem prejuízo funcional significativo, o diagnóstico de TDAH não deve ser estabelecido.\n\nAlternativa (d) Incorreta. O Critério E do DSM-5 estabelece explicitamente que os sintomas não devem ocorrer exclusivamente durante o curso de esquizofrenia ou de outro transtorno psicótico, e não devem ser mais bem explicados por outro transtorno mental (como transtorno de humor ou de ansiedade). Se a desatenção ocorre apenas durante um surto psicótico, ela é considerada um sintoma secundário da psicose, e não TDAH primário.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  },
+  {
+    "id": "AJUDA_01cad8eb-039d-4735-b776-02047e1ce2fa",
+    "originalId": "01cad8eb-039d-4735-b776-02047e1ce2fa",
+    "statement": "Assinale a alternativa que indica corretamente os sinais e sintomas clínicos que podem ser observados para respaldar, durante a avaliação emergencial de um caso, a hipótese de suspeita de intoxicação ou overdose por cocaína.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bradicardia e hipotensão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Midríase ou irritabilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mutismo e estereotipias dos membros superiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tremores grosseiros com roda denteada e alucinações visuais com pequenos animais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A cocaína é uma substância simpatomimética de ação indireta, que atua bloqueando a recaptação de catecolaminas (dopamina, noradrenalina e serotonina) na fenda sináptica. Isso resulta em uma hiperestimulação do sistema nervoso simpático e do sistema nervoso central.\n\nAlternativa (a) Incorreta: A cocaína provoca um estado de hiperestimulação cardiovascular. O esperado em uma overdose são sinais de atividade adrenérgica aumentada, como taquicardia e hipertensão arterial, e não bradicardia (frequência cardíaca baixa) ou hipotensão (pressão baixa), que são comuns em intoxicações por substâncias depressoras, como opioides ou sedativos.\n\nAlternativa (b) Correta: A midríase (dilatação das pupilas) é um sinal clássico da descarga adrenérgica provocada pela cocaína. No âmbito psíquico, o aumento de dopamina e noradrenalina no cérebro manifesta-se como irritabilidade, agitação psicomotora, ansiedade e euforia, sendo sinais fundamentais para a suspeita diagnóstica na emergência.\n\nAlternativa (c) Incorreta: O mutismo e as estereotipias não são achados típicos da intoxicação aguda por cocaína. O mutismo costuma estar associado a quadros catatônicos ou transtornos psiquiátricos graves. Embora estereotipias possam ocorrer em usos crônicos e prolongados de estimulantes, elas não são sinais cardinais para o suporte diagnóstico de overdose na emergência como a midríase é.\n\nAlternativa (d) Incorreta: O tremor com roda denteada é uma característica de parkinsonismo ou de efeitos colaterais extrapiramidais causados por antipsicóticos (bloqueadores dopaminérgicos), o oposto do efeito da cocaína. As alucinações visuais com pequenos animais (microzoopsia) são manifestações clássicas do delirium tremens, que ocorre na síndrome de abstinência do álcool, e não na intoxicação aguda por cocaína.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  },
+  {
+    "id": "AJUDA_01d99e54-770f-4d0b-a8c0-4fe3aaf079dc",
+    "originalId": "01d99e54-770f-4d0b-a8c0-4fe3aaf079dc",
+    "statement": "Idoso de 68 anos com história de 3 meses de humor deprimido, diminuição de energia, insônia inicial e precoce (acorda às 4 da manhã), perda de apetite com emagrecimento de 4 kg, anedonia, sentimentos de inutilidade e concentração reduzida. Antes deste episódio, tinha funcionamento adequado. Nega ideação suicida ativa, mas expressa que “seria melhor não acordar”. Medicações atuais: atenolol, sinvastatina. Score na escala de depressão geriátrica (GDS-30) = 22/30. De acordo com as recomendações atuais do DSM-5-TR e diretrizes de tratamento para depressão em idosos, qual é a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas psicoterapia de suporte, evitando medicação antidepressiva pela idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar ISRS (Inibidor Seletivo de Recaptação de Serotonina) como primeira linha, com monitoramento cuidadoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever tricíclicos (amitriptilina) como primeira escolha, pela eficácia superior em idosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever imediatamente antipsicótico atípico para controle comportamental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Referir para internação hospitalar urgente antes de qualquer conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso: O paciente de 68 anos apresenta um quadro clínico compatível com Transtorno Depressivo Maior, conforme os critérios do DSM-5-TR, manifestado por humor deprimido, anedonia, distúrbios do sono (insônia terminal), perda de peso, redução da concentração e sentimentos de inutilidade. A pontuação de 22 na Escala de Depressão Geriátrica (GDS-30) reforça a necessidade de intervenção terapêutica imediata.\n\nAlternativa a) Incorreta. Em quadros de depressão moderada a grave em idosos, especialmente com sintomas somáticos (emagrecimento e insônia) e prejuízo funcional, a psicoterapia isolada não é a conduta mais eficaz. A idade não é uma contraindicação para o uso de antidepressivos; o tratamento farmacológico é fundamental para prevenir a progressão do quadro e reduzir riscos de morbimortalidade.\n\nAlternativa b) Correta. Os Inibidores Seletivos de Recaptação de Serotonina (ISRS) são os medicamentos de primeira escolha para o tratamento da depressão no idoso. Fármacos como a sertralina e o escitalopram são preferidos devido ao seu perfil de segurança favorável, menor incidência de efeitos colaterais anticolinérgicos e menor risco de toxicidade cardiovascular. O monitoramento cuidadoso é essencial para observar possíveis efeitos colaterais, como hiponatremia (síndrome de secreção inapropriada de ADH) e interações medicamentosas.\n\nAlternativa c) Incorreta. Os antidepressivos tricíclicos, como a amitriptilina, devem ser evitados em idosos (conforme os Critérios de Beers). Eles possuem forte ação anticolinérgica, que pode causar confusão mental (delirium), retenção urinária, constipação e visão turva. Além disso, oferecem riscos cardiovasculares importantes, como hipotensão ortostática e arritmias por prolongamento do intervalo QT.\n\nAlternativa d) Incorreta. O uso de antipsicóticos atípicos como primeira linha não está indicado para este paciente, pois não há evidências de sintomas psicóticos, agitação psicomotora grave ou depressão refratária. O uso desses fármacos em idosos deve ser criterioso devido ao aumento do risco de eventos cerebrovasculares.\n\nAlternativa e) Incorreta. A internação hospitalar urgente é indicada em casos de risco de suicídio ativo (com plano e intenção), psicose grave, recusa alimentar importante ou falha total do suporte social. O paciente apresenta ideação suicida passiva (vontade de não acordar), o que exige monitoramento ambulatorial frequente e início rápido do tratamento, mas não obriga a hospitalização imediata neste momento.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Transtornos do Humor",
+      "Saúde do Idoso",
+      "Psicofarmacologia"
+    ],
+    "difficulty": 25.508218987128668,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  },
+  {
+    "id": "AJUDA_01dc74e9-4c2f-4fdc-b493-b75c05b49ec8",
+    "originalId": "01dc74e9-4c2f-4fdc-b493-b75c05b49ec8",
+    "statement": "Pré-escolar de 3 anos apresenta febre, dor oral importante e múltiplas vesículas em língua, mucosa oral e gengiva, acompanhadas de halitose e linfonodomegalia cervical dolorosa. Em outro paciente da mesma creche, observou-se febre baixa, lesões vesiculosas em mucosa oral posterior e úlceras em mãos e pés. Assinale a alternativa CORRETA em relação ao diagnóstico diferencial e conduta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O primeiro caso é compatível com herpangina por Coxsackie A, cujo tratamento específico é aciclovir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O segundo caso é compatível com doença mão-pé-boca, cujo agente mais comum é o vírus Epstein-Barr.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O primeiro caso é compatível com estomatite herpética primária, cujo tratamento pode incluir aciclovir oral em casos graves para reduzir duração e complicações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A doença mão-pé-boca tem alto risco de complicações renais, devendo sempre receber antibiótico profilático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DOS CASOS CLÍNICOS:\n\nO primeiro caso descreve uma criança com febre, dor oral intensa, vesículas e úlceras que atingem não só a mucosa, mas também a gengiva (gengivoestomatite), acompanhadas de halitose e linfonodomegalia cervical. Este quadro é clássico da Gengivoestomatite Herpética Primária, causada pelo vírus Herpes Simplex tipo 1 (HSV-1). Diferencia-se de outras faringites pelo acometimento da gengiva e da região anterior da boca.\n\nO segundo caso apresenta febre baixa com lesões em mucosa oral posterior, mãos e pés. Esta é a apresentação típica da Doença Mão-Pé-Boca, causada por enterovírus, sendo o Coxsackie A16 o agente mais comum.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): O primeiro caso não é herpangina. A herpangina, também causada pelo vírus Coxsackie, caracteriza-se por lesões vesiculares localizadas especificamente na região posterior da faringe (pilares amigdalianos, palato mole e úvula), sem o acometimento gengival ou a halitose intensa da estomatite herpética. Além disso, o aciclovir não tem ação contra o vírus Coxsackie.\n\nAlternativa B (Incorreta): Embora o diagnóstico clínico de doença mão-pé-boca esteja correto para o segundo paciente, o agente etiológico está errado. O vírus Epstein-Barr é o causador da mononucleose infecciosa, enquanto a doença mão-pé-boca é causada por enterovírus (principalmente Coxsackie A16 e Enterovirus 71).\n\nAlternativa C (Correta): O primeiro quadro é típico de estomatite herpética primária (ou gengivoestomatite herpética). O tratamento é majoritariamente de suporte (analgesia e hidratação), mas o uso de aciclovir por via oral é indicado em casos graves, pacientes imunocomprometidos ou quando iniciado precocemente (nas primeiras 72 horas de sintomas), visando reduzir o tempo de febre, a dor e a disseminação viral.\n\nAlternativa D (Incorreta): A doença mão-pé-boca é uma patologia viral autolimitada. Não existe indicação de uso de antibiótico profilático, pois não previne complicações. As complicações graves, embora raras, costumam ser neurológicas (encefalite) ou cardíacas (miocardite), especialmente relacionadas ao Enterovirus 71, e não renais.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  },
+  {
+    "id": "AJUDA_01dc917d-f8e5-4fdc-bd08-0b0f48068259",
+    "originalId": "01dc917d-f8e5-4fdc-bd08-0b0f48068259",
+    "statement": "79- Sobre Herpes Simples Genital na gestação é correto afirmar de acordo com o Manual de Gestação de Alto Risco do Ministério da Saúde, 2022:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O rastreamento sorológico está recomendado para todas as gestantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O aleitamento materno não está contraindicado, salvo se lesões na mama.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Em caso de lesões não genitais é necessário indicar via alta para o nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento com aciclovir é contraindicado no primeiro trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. Segundo o Manual de Gestação de Alto Risco do Ministério da Saúde (2022), o rastreamento sorológico universal para herpes simples (HSV-1 e HSV-2) não é recomendado para gestantes assintomáticas. A sorologia é reservada para casos específicos, como gestantes com parceiros sabidamente infectados ou quando há dúvidas diagnósticas em lesões atípicas.\n\nAlternativa b) Correta. Esta é a conduta preconizada. O aleitamento materno deve ser mantido e incentivado, pois não há transmissão do vírus pelo leite materno. A única contraindicação temporária ocorre se houver lesões herpéticas ativas diretamente nas mamas ou mamilos, devido ao risco de transmissão por contato direto do recém-nascido com a lesão.\n\nAlternativa c) Incorreta. A indicação de parto cesáreo (via alta) restringe-se à presença de lesões genitais ativas ou pródromos (dor, queimação) no momento do trabalho de parto. Lesões não genitais (como em nádegas ou coxas) podem ser cobertas com curativos oclusivos, permitindo o parto vaginal, desde que não haja lesões no canal de parto ou vulva.\n\nAlternativa d) Incorreta. O aciclovir não é contraindicado no primeiro trimestre. Embora o uso de qualquer medicação deva ser criteriosamente avaliado nesse período, o aciclovir é considerado seguro e deve ser utilizado para o tratamento de episódios iniciais (primoinfecção) ou recorrências graves em qualquer fase da gestação, visando reduzir a carga viral e o tempo de excreção do vírus. Além disso, o manual recomenda a terapia supressiva a partir de 36 semanas em mulheres com histórico de recorrências para evitar a necessidade de cesariana.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Úlceras Genitais",
+      "Infecções Congênitas na Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": 46.004397557126076,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  },
+  {
+    "id": "AJUDA_01e0b1d7-f655-4133-b2a1-95189f029c95",
+    "originalId": "01e0b1d7-f655-4133-b2a1-95189f029c95",
+    "statement": "A doença celíaca é uma condição autoimune desencadeada pela ingestão de glúten em indivíduos geneticamente predispostos. Considerando os sinais e sintomas típicos da doença celíaca, a condição CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento envolve a administração de suplementos de glúten.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os sintomas são exclusivamente gastrointestinais e não incluem manifestações nutricionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pode levar à má absorção de nutrientes, causando atraso no desenvolvimento e baixa estatura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É frequentemente diagnosticada em crianças após a introdução de produtos lácteos na dieta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) incorreta: O tratamento da doença celíaca baseia-se exclusivamente na dieta isenta de glúten por toda a vida. A ingestão de glúten é o gatilho da resposta imune que danifica a mucosa intestinal, portanto, suplementá-lo seria prejudicial e agravaria o quadro clínico do paciente.\n\nAlternativa (b) incorreta: Os sintomas da doença celíaca vão muito além do trato gastrointestinal. Ela é considerada uma doença multissistêmica que frequentemente apresenta manifestações nutricionais e extraintestinais importantes, como anemia ferropriva refratária, osteopenia, dermatite herpetiforme, neuropatias e alterações de esmalte dentário.\n\nAlternativa (c) correta: A fisiopatologia da doença envolve uma resposta imune que causa atrofia das vilosidades do intestino delgado, resultando em uma síndrome de má absorção. Em crianças e adolescentes, a incapacidade de absorver nutrientes essenciais, como gorduras, proteínas, vitaminas e minerais, compromete diretamente o crescimento linear e o ganho de peso, manifestando-se como baixa estatura e atraso no desenvolvimento pôndero-estatural.\n\nAlternativa (d) incorreta: A doença celíaca é diagnosticada após a introdução de glúten na dieta, o que geralmente ocorre com a oferta de cereais como trigo, cevada e centeio. A associação de sintomas com a introdução de produtos lácteos é característica da alergia à proteína do leite de vaca (APLV) ou da intolerância à lactose, não sendo o fator etiológico ou desencadeante da doença celíaca.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doença Celíaca em Pediatria"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:01.260Z"
+  }
+]

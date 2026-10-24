@@ -1,0 +1,508 @@
+[
+  {
+    "id": "AJUDA_47c5c92c-c8b2-48f1-a481-222713d8cf13",
+    "originalId": "47c5c92c-c8b2-48f1-a481-222713d8cf13",
+    "statement": "Paciente 30 anos, assintomática, realizou exame de ultrassonografia mamaria de rotina que evidenciou nódulo sólido, hipoecóico, classificação BI-RADS 4A. Assinale a alternativa que representa a conduta adequada para o melhor cuidado com a paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Core biopsy",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Controle em 6 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Controle em 1 ano",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Punção por agulha fina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A classificação BI-RADS (Breast Imaging-Reporting and Data System) é a ferramenta padronizada para orientar a conduta diante de achados em exames de imagem da mama. No caso apresentado, a paciente possui um nódulo BI-RADS 4A, o que indica uma suspeita baixa, porém real, de malignidade (risco entre 2% e 10%).\n\nA conduta para qualquer achado classificado como BI-RADS 4 (seja A, B ou C) é, invariavelmente, a realização de estudo histopatológico, ou seja, a biópsia.\n\nAnálise das alternativas:\n\na) Core biopsy: Está correta. A biópsia de fragmento com agulha grossa (core biopsy) é o método de escolha para nódulos sólidos suspeitos. Ela permite a análise histológica, preservando a arquitetura do tecido, o que possibilita um diagnóstico definitivo e a diferenciação entre lesões benignas e carcinomas invasores ou in situ.\n\nb) Controle em 6 meses: Está incorreta. O acompanhamento em curto prazo (6 meses) é a conduta preconizada para lesões classificadas como BI-RADS 3, que possuem risco de malignidade inferior a 2%. Para BI-RADS 4, o atraso no diagnóstico por meio da observação não é recomendado.\n\nc) Controle em 1 ano: Está incorreta. O controle anual é indicado para achados benignos (BI-RADS 2) ou exames negativos/normais (BI-RADS 1), dentro do rastreamento de rotina.\n\nd) Punção por agulha fina (PAAF): Está incorreta para este cenário. A PAAF realiza uma análise citológica (apenas células soltas) e não histológica. Ela é útil para esvaziamento de cistos sintomáticos ou avaliação de linfonodos, mas para o diagnóstico de um nódulo sólido BI-RADS 4, a core biopsy é superior por oferecer maior acurácia e permitir a imuno-histoquímica, se necessário.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doenças Benignas da Mama",
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.098Z"
+  },
+  {
+    "id": "AJUDA_47eb9e4e-5944-47d3-a385-b213063676a6",
+    "originalId": "47eb9e4e-5944-47d3-a385-b213063676a6",
+    "statement": "Sobre o tratamento da DRGE, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endoscopia Digestiva Alta (EDA), manometria, monitoramento do pH, esofagograma e cintilografia são exames essenciais para avaliação pré-operatória.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O Inibidor de Bomba de Prótons (IBP) age ligando-se de forma reversível às células parietais do estômago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O padrão-ouro para o diagnóstico da DRGE é a pHmetria de 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dose mínima de IBP é o padrão-ouro para o manejo dos sintomas de refluxo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Esta alternativa está correta. Para a indicação de tratamento cirúrgico da Doença do Refluxo Gastroesofágico (DRGE), é necessária uma avaliação pré-operatória completa e multidimensional. A Endoscopia Digestiva Alta (EDA) avalia lesões na mucosa e complicações como o Esôfago de Barrett; a manometria esofágica é fundamental para avaliar o tônus do esfíncter inferior e a peristalse do corpo esofágico, ajudando na escolha da técnica cirúrgica (fundoplicatura total ou parcial); a monitorização do pH (pH-metria) confirma objetivamente o refluxo patológico; o esofagograma detalha a anatomia, como a presença de hérnias de hiato; e a cintilografia pode ser utilizada para avaliar o esvaziamento gástrico, o que é importante para o planejamento cirúrgico e para evitar complicações pós-operatórias.\n\nAlternativa b: Esta alternativa está incorreta. Os Inibidores da Bomba de Prótons (IBPs) não se ligam de forma reversível. Eles realizam uma ligação covalente irreversível com a enzima H+/K+-ATPase (bomba de prótons) na célula parietal gástrica. Isso significa que a secreção ácida só é retomada após a síntese de novas bombas de prótons pela célula, o que explica o efeito prolongado do medicamento.\n\nAlternativa c: Esta alternativa está incorreta. Embora a pH-metria de 24 horas tenha sido historicamente chamada de padrão-ouro para documentar o refluxo ácido, o diagnóstico da DRGE é inicialmente clínico. Atualmente, a pH-impedanciometria é considerada o exame padrão-ouro para o diagnóstico em casos de dúvida, pois detecta não apenas o refluxo ácido, mas também o refluxo não ácido e gasoso, oferecendo uma sensibilidade superior à da pH-metria isolada.\n\nAlternativa d: Esta alternativa está incorreta. O padrão para o manejo inicial dos sintomas da DRGE é o uso de IBP em dose plena (dose-padrão) por um período de 4 a 8 semanas. A estratégia de usar a \"dose mínima eficaz\" é reservada para a terapia de manutenção a longo prazo, com o objetivo de manter o paciente assintomático após o tratamento inicial bem-sucedido.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.098Z"
+  },
+  {
+    "id": "AJUDA_47f683d7-a622-4b4e-984c-a85947e428c8",
+    "originalId": "47f683d7-a622-4b4e-984c-a85947e428c8",
+    "statement": "Desde a implantação do Sistema Único de Saúde (SUS) no Brasil, foram criados Conselhos de Saúde e realizadas diversas Conferências de Saúde, ampliando o controle social sobre as políticas de saúde no país. Sobre essa participação popular no SUS e prevista em lei, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As Conferências de Saúde são momentos importantes para a discussão, análise e apontamentos para políticas públicas, mas não são deliberativas e, sim, consultivas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Os Conselhos de Saúde existem em todos os níveis de governo e é opção dos gestores criá-los, não havendo qualquer consequência caso eles não existam.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os Conselhos de Saúde têm o poder de sugerir ações concretas para o gestor, mas não têm papel de fiscalização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As Conferências de Saúde não existiam antes do SUS, sendo a primeira realizada em 1990, em Brasília.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ainda que se preveja a participação popular no SUS, não há atualmente mecanismos que permitam a participação de profissionais de saúde nas Conferências e nos Conselhos de Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Sobre a participação popular no SUS, regida principalmente pela Lei Federal n.º 8.142/1990, seguem as explicações para cada alternativa:\n\nAlternativa (a) CORRETA: As Conferências de Saúde reúnem-se a cada quatro anos com representação de vários segmentos sociais para avaliar a situação de saúde e propor as diretrizes para a formulação da política de saúde. Embora suas decisões orientem o planejamento (como o Plano Plurianual e o Plano de Saúde), elas não possuem o caráter deliberativo cotidiano e administrativo que os Conselhos de Saúde detêm. Os Conselhos são órgãos permanentes que deliberam sobre a execução orçamentária e estratégias, enquanto as Conferências funcionam como grandes fóruns de consulta e apontamento de rumos.\n\nAlternativa (b) INCORRETA: A criação e o funcionamento dos Conselhos de Saúde não são opcionais para o gestor. A Lei n.º 8.142/1990 estabelece que a existência de um Conselho de Saúde é um requisito indispensável para que estados, municípios e o Distrito Federal recebam recursos financeiros do Fundo Nacional de Saúde (transferências fundo a fundo). Sem o Conselho, o repasse de verbas federais é suspenso.\n\nAlternativa (c) INCORRETA: Além de formular estratégias e controlar a execução da política de saúde, os Conselhos têm, por lei, o papel fundamental de fiscalização, inclusive nos aspectos econômicos e financeiros. Eles devem fiscalizar os gastos, o cumprimento de metas e a qualidade dos serviços prestados.\n\nAlternativa (d) INCORRETA: As Conferências de Saúde já existiam muito antes da criação do SUS. A primeira delas foi realizada em 1941. Outro exemplo marcante foi a 8ª Conferência Nacional de Saúde, em 1986, que foi o grande marco do Movimento da Reforma Sanitária e serviu de base para o texto da Constituição Federal de 1988 que instituiu o SUS.\n\nAlternativa (e) INCORRETA: A lei garante a participação dos profissionais de saúde por meio da regra da paridade. A composição de Conselhos e Conferências deve ser de 50% de representantes de usuários, 25% de representantes de trabalhadores da saúde (profissionais) e 25% de representantes de governo e prestadores de serviços de saúde. Portanto, os profissionais não apenas podem participar, como possuem uma cota específica de representatividade.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.098Z"
+  },
+  {
+    "id": "AJUDA_47fd5fc9-0ed2-472e-aece-107eb22fc3c6",
+    "originalId": "47fd5fc9-0ed2-472e-aece-107eb22fc3c6",
+    "statement": "Sobre a diferenciação entre transudato e exsudato pleural, de acordo com os critérios de Light, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exsudato é caracterizado por proteína pleural/sérica < 0,5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exsudato é caracterizado por LDH pleural/sérico > 0,6 ou LDH pleural > 2/3 do limite superior sérico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Transudato é caracterizado por pH pleural < 7,2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exsudato é caracterizado apenas pela presença de células inflamatórias no líquido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Transudato ocorre principalmente em pneumonia bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para diferenciar se um derrame pleural é um transudato ou um exsudato, o método mais utilizado na prática clínica são os Critérios de Light. Um líquido é classificado como exsudato se apresentar pelo menos UM dos três critérios abaixo:\n\n1. Relação Proteína Pleural / Proteína Sérica > 0,5.\n2. Relação LDH Pleural / LDH Sérico > 0,6.\n3. LDH Pleural > 2/3 do limite superior da normalidade (LSN) do LDH sérico.\n\nSe nenhum desses critérios for preenchido, o líquido é classificado como transudato.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: No exsudato, a relação entre a proteína do líquido pleural e a proteína sérica deve ser maior que 0,5 (> 0,5). Uma relação menor que 0,5 (< 0,5) define o transudato, indicando que não há um aumento significativo da permeabilidade capilar a proteínas.\n\nAlternativa (b) Correta: Esta alternativa reproduz fielmente dois dos critérios de Light para a definição de exsudato: a relação LDH pleural/sérico maior que 0,6 e o valor absoluto do LDH pleural acima de 2/3 do limite superior da normalidade sérica.\n\nAlternativa (c) Incorreta: O pH pleural baixo (geralmente < 7,20) é um marcador de gravidade e atividade inflamatória ou bacteriana intensa no espaço pleural, sendo encontrado em exsudatos (como empiemas, derrames parapneumônicos complicados, neoplasias ou artrite reumatoide). Transudatos costumam manter o pH em faixas fisiológicas, geralmente entre 7,40 e 7,55.\n\nAlternativa (d) Incorreta: A diferenciação de Light é puramente bioquímica (proteínas e LDH). Embora exsudatos costumem ter maior celularidade devido ao processo inflamatório subjacente, o termo \"apenas\" invalida a questão, pois a definição laboratorial depende das concentrações proteicas e enzimáticas citadas.\n\nAlternativa (e) Incorreta: A pneumonia bacteriana causa uma inflamação pleural local que aumenta a permeabilidade dos vasos, resultando em um exsudato (derrame parapneumônico). O transudato ocorre por desequilíbrio nas pressões hidrostática ou oncótica, sendo suas principais causas a insuficiência cardíaca, a cirrose hepática e a síndrome nefrótica.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Derrame Pleural"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.098Z"
+  },
+  {
+    "id": "AJUDA_480358ba-87a8-45b5-90b4-1445f39e9e22",
+    "originalId": "480358ba-87a8-45b5-90b4-1445f39e9e22",
+    "statement": "Endometrioma de parede abdominal após a cesariana deve ser tratado com",
+    "options": [
+      {
+        "id": "A",
+        "text": "anticoncepcional hormonal contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dienogeste contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ressecção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "análogos do GnRH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O endometrioma de parede abdominal, também conhecido como endometriose de cicatriz cirúrgica, ocorre geralmente devido ao implante iatrogênico de células endometriais no tecido subcutâneo ou na musculatura durante procedimentos como a cesariana ou a histerectomia.\n\nAbaixo, a explicação detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: O uso de anticoncepcionais hormonais combinados de forma contínua pode ajudar a controlar os sintomas álgicos cíclicos ao suprimir a menstruação. No entanto, essa terapia não é capaz de eliminar a massa tecidual fibrótica e o tecido endometrial ectópico já estabelecidos na parede abdominal. As taxas de recorrência após a interrupção da medicação são muito altas.\n\nAlternativa (b) Incorreta: O dienogeste é um progestagênio potente e eficaz para o tratamento da dor associada à endometriose pélvica. Contudo, para o endometrioma de parede abdominal, o tratamento medicamentoso isolado é considerado insuficiente, pois não promove a resolução definitiva da lesão sólida.\n\nAlternativa (c) Correta: A ressecção cirúrgica com margens amplas é o padrão-ouro e o tratamento de escolha. Diferentemente da endometriose pélvica, a lesão de parede abdominal é focal, de fácil acesso cirúrgico e frequentemente resistente ao tratamento clínico. A remoção completa da lesão garante a cura, previne a recorrência local e permite o diagnóstico histopatológico definitivo, excluindo a possibilidade (embora rara) de transformação maligna.\n\nAlternativa (d) Incorreta: Os análogos do GnRH (como a gosserrelina) induzem um estado de menopausa temporária por meio da dessensibilização dos receptores de GnRH na hipófise. Embora sejam potentes para reduzir focos de endometriose sistêmica, são medicamentos de alto custo, com muitos efeitos colaterais e não devem ser utilizados como primeira linha para uma lesão localizada de parede abdominal que pode ser resolvida definitivamente com cirurgia.\n\nConclusão: Diante de uma massa palpável e dolorosa em cicatriz de cesariana, a conduta definitiva é sempre a exérese cirúrgica da lesão.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.098Z"
+  },
+  {
+    "id": "AJUDA_480d90b1-9d27-4f90-a416-678d316a1d80",
+    "originalId": "480d90b1-9d27-4f90-a416-678d316a1d80",
+    "statement": "Secundípara, 38 semanas, 1 parto normal há 2 anos, com diagnóstico recente de polidramnia pela US obstétrica, encontra-se em período expulsivo. Durante os puxos, ocorreu a rotura espontânea da bolsa, com prolapso do cordão umbilical. Analise as afirmações a seguir sobre o que se deve fazer diante deste quadro:\n\nI) Organizar ajuda, convocando auxílio de obstetras, enfermeiras, anestesistas, pediatras e solicitar preparo de sala cirúrgica.\nII) Aumentar pressão sobre cordão umbilical por meio da elevação da apresentação pelo toque vaginal, auxiliada pela posição de Trendelenburg.\nIII) Decidir pela via de parto mais rápida.\n\nPode-se afirmar que está(ão) correta(s) a(s) afirmativa(s):",
+    "options": [
+      {
+        "id": "A",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e III",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "II e III",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS ASSERTIVAS:\n\nI) Correta. O prolapso de cordão umbilical é uma das emergências mais graves da obstetrícia, pois a compressão do cordão entre a apresentação fetal e o canal de parto interrompe o fluxo sanguíneo para o feto, causando hipóxia aguda. A primeira medida deve ser a convocação de ajuda multidisciplinar imediata, incluindo obstetras adicionais, anestesistas e pediatras para a reanimação neonatal, além da preparação célere da sala cirúrgica.\n\nII) Incorreta. Esta assertiva apresenta um erro conceitual crítico ao utilizar o termo \"Aumentar pressão\". No prolapso de cordão, a manobra de elevar a apresentação fetal pelo toque vaginal e colocar a paciente em posição de Trendelenburg (ou joelho-peitoral) tem como objetivo ALIVIAR ou DESCOMPRIMIR a pressão sobre o cordão umbilical, garantindo que o feto continue recebendo oxigênio até o momento do nascimento. Jamais se deve aumentar a pressão sobre o cordão.\n\nIII) Correta. Diante de um prolapso de cordão, a conduta é a resolução imediata da gestação pela via de parto mais rápida disponível. No caso clínico descrito, a paciente já se encontra em período expulsivo. Se a apresentação fetal estiver em planos baixos (estação +2 de DeLee ou superior), o parto vaginal assistido (fórceps ou vácuo-extrator) pode ser a via mais rápida. Se o parto vaginal não for iminente, procede-se para uma cesariana de emergência. O foco é minimizar o tempo de hipóxia.\n\nJUSTIFICATIVA DO GABARITO:\n\nA alternativa (c) é a correta porque as afirmações I e III seguem rigorosamente os protocolos de emergência obstétrica para o manejo do prolapso de cordão (pedir ajuda, preparar equipe e abreviar o parto). A afirmação II torna-se incorreta apenas pela palavra \"Aumentar\", visto que a manobra física descrita está correta, mas a finalidade biológica é a descompressão.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Alteração do Volume do Líquido Amniótico",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.098Z"
+  },
+  {
+    "id": "AJUDA_481c35b4-7589-4a37-8c5c-be3207650120",
+    "originalId": "481c35b4-7589-4a37-8c5c-be3207650120",
+    "statement": "Uma Unidade Básica de Saúde (UBS) inicia acompanhamento de um adolescente com asma leve persistente. O médico revisa o tratamento prescrito no pronto-socorro e orienta o uso regular de corticoide inalatório, agendando seguimento periódico.\nEssa situação ilustra predominantemente o seguinte atributo essencial da Atenção Primária:",
+    "options": [
+      {
+        "id": "A",
+        "text": "integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "coordenação do cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "longitudinalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "acesso de primeiro contato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "foco na comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O cerne desta questão está no reconhecimento dos atributos essenciais da Atenção Primária à Saúde (APS), propostos por Barbara Starfield. Vamos analisar por que a alternativa (c) é a correta e por que as demais não se aplicam como foco principal do enunciado.\n\nAlternativa (a) Incorreta: A integralidade refere-se à capacidade da equipe de saúde de abordar todas as necessidades do indivíduo, tanto preventivas quanto curativas, e de garantir o cuidado em todos os níveis de atenção. Embora o tratamento da asma faça parte de um cuidado integral, o enunciado enfatiza o \"seguimento periódico\" e a continuidade do tratamento ao longo do tempo, o que caracteriza especificamente outro atributo.\n\nAlternativa (b) Incorreta: A coordenação do cuidado é a capacidade da APS de organizar e sincronizar os cuidados recebidos pelo paciente em diferentes pontos da rede de saúde (como a comunicação entre o pronto-socorro e a UBS). Embora o médico tenha revisado o que foi feito no pronto-socorro, a ênfase final da questão está no agendamento de consultas futuras e no acompanhamento regular dentro da própria unidade, o que remete à longitudinalidade.\n\nAlternativa (c) Correta: A longitudinalidade é o atributo que define a existência de um aporte regular de cuidados pela equipe de saúde e sua utilização consistente ao longo do tempo. Ela pressupõe um vínculo entre o profissional/equipe e o paciente. No caso descrito, o agendamento de seguimento periódico e a orientação de uso regular de medicação para uma doença crônica (asma) exemplificam perfeitamente o acompanhamento contínuo e a relação duradoura inerentes a este atributo.\n\nAlternativa (d) Incorreta: O acesso de primeiro contato significa que a unidade deve ser a porta de entrada preferencial e acessível para cada nova necessidade de saúde. O caso narrado descreve um paciente que já passou pelo pronto-socorro e agora está estabelecendo um vínculo de acompanhamento na UBS, focando na continuidade e não na entrada inicial no sistema.\n\nAlternativa (e) Incorreta: O foco na comunidade (ou orientação comunitária) é um atributo derivado que exige o conhecimento das necessidades de saúde da população local e a realização de ações que transcendem o consultório. O enunciado foca estritamente no atendimento clínico individual do adolescente, sem mencionar diagnósticos populacionais ou ações territoriais.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.098Z"
+  },
+  {
+    "id": "AJUDA_481ccfd2-a703-4956-8678-a54ff79b6a43",
+    "originalId": "481ccfd2-a703-4956-8678-a54ff79b6a43",
+    "statement": "Homem de 67 anos de idade apresenta quadro progressivo de 5 dias consistindo de sudorese, náuseas, vômitos e fraqueza muscular. Não há febre, tosse, diarreia ou sintomas urinários. Há duas semanas, ele teve erisipela no membro inferior direito e tomou durante 7 dias cefalexina, dipirona e nimesulida. O antecedente também é relevante para diabetes tipo 2, hipertensão arterial e doença renal crônica (creatinina do mês anterior: 1,9 mg/dL). As medicações de uso contínuo são: enalapril, anlodipino, aspirina em baixa dose, atorvastatina, dapagliflozina e insulinas glargina e asparte. Ao exame físico: frequência cardíaca: 76 bpm; pressão arterial: 102 x 55 mmHg; pulmonar: crepitações inspiratórias em 1/3 inferior bilateralmente; extremidades inferiores com edema simétrico 2+/4, sem sinais infecciosos. Glicemia capilar: 312 mg/dL. O paciente está monitorado, dois acessos venosos foram canulados, e amostras de sangue foram enviadas ao laboratório. O ECG realizado apresenta-se a seguir: \nConstitui a próxima medida de maior relevância:",
+    "options": [
+      {
+        "id": "A",
+        "text": "amiodarona intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cardioversão elétrica sincronizada com 100 joules.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aspirina, clopidogrel, heparina e tenecteplase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "angioplastia coronariana percutânea primária (CATE).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "gluconato de cálcio a 10% intravenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Resposta correta: letra E (gluconato de cálcio a 10% intravenoso).\n\nContexto clínico: o paciente tem 67 anos, diabetes tipo 2, hipertensão e doença renal crônica (creatinina basal de 1,9 mg/dL). Há duas semanas usou AINE (nimesulida) e dipirona, além de cefalexina. Está em uso de enalapril (IECA), e provavelmente de outros fatores que reduzem a excreção de potássio. Soma-se a isso a dapagliflozina, que contribui para a depleção de volume. Apresenta sudorese, náuseas, vômitos e fraqueza muscular, com PA baixa-normal (102x55). O quadro sugere lesão renal aguda sobre a doença renal crônica, com hipercalemia grave. A glicemia de 312 mg/dL e a deficiência relativa de insulina também deslocam potássio para o extracelular. A dapagliflozina ainda traz risco de cetoacidose euglicêmica ou cetoacidose, que agrava a hipercalemia.\n\nECG: ritmo com QRS muito alargado e aspecto sinusoidal, com fusão do QRS com a onda T e supradesnivelamentos e infradesnivelamentos difusos de ST que não seguem um território coronariano. Esse é o padrão do \"pseudoinfarto\" da hipercalemia grave, uma emergência com risco iminente de fibrilação ventricular ou assistolia. A fraqueza muscular e o contexto de lesão renal aguda reforçam o diagnóstico. A sudorese e as náuseas simulam isquemia, o que torna a questão uma armadilha.\n\nConduta: a primeira medida é a estabilização da membrana do miocárdio com gluconato de cálcio 10% IV (10 mL em 2 a 3 minutos, podendo repetir se o ECG não melhorar). Depois vêm as medidas que deslocam o potássio para o intracelular (insulina com glicose, beta-agonista inalatório, bicarbonato se houver acidose) e as que o eliminam (diurético de alça, resina, diálise se refratária). Não se deve esperar o resultado laboratorial quando o ECG é típico e há instabilidade.\n\nAnálise das alternativas:\n\na) Incorreta. A amiodarona IV trata taquiarritmia, e aqui a FC é 76 bpm. Os antiarrítmicos que bloqueiam canais, ou que prolongam a condução, podem piorar o bloqueio de condução na hipercalemia e precipitar assistolia.\n\nb) Incorreta. A cardioversão elétrica sincronizada é indicada para taquiarritmia instável. O paciente não tem taquicardia, e o QRS largo é causado pelo distúrbio metabólico, e não por taquicardia ventricular.\n\nc) Incorreta. Antiagregação, heparina e trombólise tratariam um IAMCSST, mas o supra de ST é difuso e secundário à hipercalemia. Trombolisar um paciente sem infarto expõe a risco de sangramento sem benefício.\n\nd) Incorreta. A angioplastia primária também trataria um IAMCSST verdadeiro. O quadro clínico e o ECG não indicam oclusão coronariana aguda, e atrasar o tratamento da hipercalemia pode ser fatal.\n\ne) Correta. O cálcio antagoniza os efeitos do potássio sobre a membrana, age em minutos e é a medida prioritária diante de alterações eletrocardiográficas graves da hipercalemia.\n\nPonto-chave: diante de ECG com QRS largo, aspecto sinusoidal ou pseudoinfarto em paciente com doença renal crônica, uso de IECA e AINE e lesão renal aguda, pense em hipercalemia e administre cálcio IV imediatamente.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Eletrocardiograma",
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/56cb818b95cfde08e938bc74472650b896c0bdda823813a2408f601f1718a4de.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_481ccfd2-a703-4956-8678-a54ff79b6a43_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.594Z"
+  },
+  {
+    "id": "AJUDA_481e2c3c-ab26-4c17-a442-8bf060ab885f",
+    "originalId": "481e2c3c-ab26-4c17-a442-8bf060ab885f",
+    "statement": "Paciente de 40 anos comparece a consulta ginecológica de rotina. Está assintomática, faz uso apenas de contracepção hormonal e não apresenta histórico de fraturas, doenças crônicas ou uso de outras medicações. Nega história familiar de doenças do metabolismo ósseo. Solicita a dosagem de vitamina D, pois ouviu dizer que seria importante para melhorar o ânimo e prevenir doenças. Com base nas recomendações atuais para dosagem laboratorial da vitamina D, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar suplementação empírica de vitamina D e solicitar sua dosagem apenas após três meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na ausência de fatores de risco, não há indicação de dosar 25(OH)D rotineiramente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar sua dosagem apenas se houver queixa musculoesquelética ou doença óssea conhecida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar a dosagem, pois a partir dos 40 anos de idade, há maior risco para deficiência de vitamina D",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão aborda as indicações clínicas para a dosagem de vitamina D (25-hidroxivitamina D), um tema frequentemente discutido na medicina baseada em evidências e que segue as recomendações de sociedades como a Sociedade Brasileira de Endocrinologia e Metabologia (SBEM) e a USPSTF (U.S. Preventive Services Task Force).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (INCORRETA): Não há embasamento científico para a suplementação empírica de vitamina D em adultos jovens, saudáveis e assintomáticos. A suplementação sem diagnóstico de deficiência ou sem pertencer a grupos de risco pode gerar gastos desnecessários e, em casos extremos, risco de toxicidade. Além disso, a solicitação de exame após três meses de suplementação empírica não possui finalidade clínica nesta paciente.\n\nAlternativa B (CORRETA): Esta é a conduta preconizada pelas principais diretrizes nacionais e internacionais. O rastreamento universal (screening) de vitamina D na população geral não é recomendado. A dosagem da 25(OH)D deve ser direcionada apenas para grupos de alto risco para deficiência ou para aqueles em que a deficiência pode causar danos graves. Entre os grupos de risco estão: idosos (acima de 65 anos), pacientes com osteoporose, história de fraturas por fragilidade, doenças renais crônicas, síndromes de má-absorção (como doença celíaca ou pós-cirurgia bariátrica), gestantes, lactantes e usuários de medicações que interferem no metabolismo da vitamina D (como anticonvulsivantes ou corticoides). A paciente do caso é jovem, saudável e não apresenta qualquer fator de risco.\n\nAlternativa C (INCORRETA): Embora doenças ósseas ou queixas musculoesqueléticas sejam indicações importantes para a investigação, a alternativa está incompleta e excessivamente restritiva. Existem diversas outras condições sistêmicas (como obesidade, doença renal e uso de certas medicações) que justificam a dosagem, mesmo na ausência de dor óssea. No entanto, o foco da questão é identificar que a paciente não precisa do exame por não ter nenhum fator de risco geral.\n\nAlternativa D (INCORRETA): Não existe um ponto de corte aos 40 anos de idade que determine um aumento de risco relevante para deficiência de vitamina D que justifique o rastreio laboratorial. O envelhecimento cutâneo e a menor síntese de vitamina D tornam-se uma preocupação clínica mais significativa em idosos, geralmente acima dos 65 anos, e não em adultos jovens de 40 anos.\n\nRESUMO DIDÁTICO:\nA dosagem de vitamina D não é um exame de rotina (check-up). Ela só deve ser solicitada se houver uma condição clínica ou fator de risco que justifique a investigação. No caso da paciente de 40 anos, assintomática e sem comorbidades, a recomendação correta é não realizar a dosagem laboratorial.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.594Z"
+  },
+  {
+    "id": "AJUDA_4822fdca-1f63-47d0-b24c-8cab55109bf4",
+    "originalId": "4822fdca-1f63-47d0-b24c-8cab55109bf4",
+    "statement": "Recém-nascido de 39 semanas de idade gestacional, nascido de parto vaginal, no momento com 36 horas de vida, apresenta-se em boas condições gerais. Na avaliação de rotina, realiza-se o teste do coraçãozinho, com o seguinte resultado: saturação periférica de oxigênio (SatO2) na mão direita de 97% e SatO2 no pé direito de 92%. Ao exame clínico, nota-se ausculta cardíaca com ritmo regular, em 2 tempos, com bulhas normofonéticas e discreto sopro contínuo em região infraclavicular. Os pulsos estão normais e palpáveis em membros superiores e reduzidos em membros inferiores.\n\nCom base nos valores do teste do coraçãozinho, qual é o resultado e qual é a conduta inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Teste duvidoso. Repetir o exame em 1 hora.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Teste negativo. Alta com seguimento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste positivo. Solicitar ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste duvidoso. Observação em alojamento conjunto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DOS RESULTADOS DO TESTE\n\nO teste do coraçãozinho, ou oximetria de pulso neonatal, é uma triagem obrigatória realizada em recém-nascidos a termo entre 24 e 48 horas de vida. Para interpretar os resultados, utilizamos os seguintes critérios:\n\n1. TESTE NEGATIVO (NORMAL): Saturação maior ou igual a 95% em ambas as extremidades (mão direita e um dos pés) E diferença entre as duas medidas menor ou igual a 3%.\n2. TESTE POSITIVO (ALTERADO): Saturação menor que 89% em qualquer uma das extremidades (mão ou pé).\n3. TESTE DUVIDOSO: Saturação entre 90% e 94% em qualquer extremidade OU diferença entre a mão e o pé maior ou igual a 4%.\n\nNo caso apresentado:\n- Saturação na mão direita (pré-ductal): 97%\n- Saturação no pé direito (pós-ductal): 92%\n- Diferença entre as medidas: 5% (97 menos 92)\n\nComo a saturação no pé está abaixo de 95% e a diferença entre os membros é de 5% (portanto, maior ou igual a 4%), o resultado é classificado como DUVIDOSO.\n\nCONDUTA NO TESTE DUVIDOSO\n\nDe acordo com o protocolo da Sociedade Brasileira de Pediatria e do Ministério da Saúde, quando o teste é duvidoso, a conduta é repetir a medição em 1 hora. Podem ser realizadas até três medições, com intervalo de 1 hora entre elas. Se após a terceira medição o resultado continuar duvidoso, o teste é então considerado POSITIVO, e um ecocardiograma deve ser solicitado em até 24 horas.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): Reflete exatamente o protocolo. Como a diferença de saturação foi de 5%, o teste é duvidoso e a conduta inicial é repetir em 1 hora.\n\nAlternativa B (INCORRETA): O teste não é negativo. Para ser negativo, ambos os valores deveriam ser iguais ou superiores a 95% e a diferença entre eles deveria ser no máximo de 3%.\n\nAlternativa C (INCORRETA): Embora o exame clínico (pulsos reduzidos em membros inferiores e sopro) seja altamente sugestivo de Coarctação da Aorta, a pergunta pede a conduta inicial baseada nos VALORES do teste do coraçãozinho. Pelos critérios da triagem, o ecocardiograma só seria a conduta imediata se a saturação fosse menor que 89% ou se o resultado duvidoso persistisse após as repetições. Na prática médica, o exame físico alterado já justificaria a investigação, mas para fins de prova sobre o protocolo de triagem, a repetição é o passo seguinte para o resultado de saturação encontrado.\n\nAlternativa D (INCORRETA): A observação passiva no alojamento conjunto não é a conduta recomendada para um teste alterado. É necessário seguir o algoritmo de repetição da oximetria em 1 hora para definir se o recém-nascido precisará de avaliação cardiológica especializada.\n\nGABARITO: Letra A.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:57.594Z"
+  }
+]

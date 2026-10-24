@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_2520a455-dfc2-443f-8449-63a7a5b749b3",
+    "originalId": "2520a455-dfc2-443f-8449-63a7a5b749b3",
+    "statement": "Adolescente de 15 anos ainda não menstruou. Apresenta estadiamento puberal M1 P1; IMC: 22 kg/m². De acordo com os exames laboratoriais, se",
+    "options": [
+      {
+        "id": "A",
+        "text": "estradiol e FSH forem altos, a causa pode ser deficiência hipotalâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estradiol for alto, a causa pode ser hipogonadismo hipergonadotrófico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "FSH for baixo, a causa pode ser ooforite autoimune.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "FSH for alto, a causa pode ser Síndrome de Turner.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "estradiol e FSH forem baixos, a causa pode ser disgenesia gonadal pura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta uma paciente de 15 anos com amenorreia primária e ausência de caracteres sexuais secundários (M1 P1). Diante desse quadro, a investigação inicial deve focar no eixo hipotálamo-hipófise-gonadal, utilizando as dosagens de FSH e estradiol para diferenciar as causas centrais (hipogonadismo hipogonadotrófico) das causas periféricas (hipogonadismo hipergonadotrófico).\n\nAlternativa (a) Incorreta: Se houver deficiência hipotalâmica, o estímulo para a hipófise produzir FSH é inexistente ou reduzido. Portanto, em casos de causa hipotalâmica, tanto o FSH quanto o estradiol estarão baixos (hipogonadismo hipogonadotrófico). FSH alto com estradiol alto não é compatível com deficiência hipotalâmica.\n\nAlternativa (b) Incorreta: O termo hipogonadismo refere-se, obrigatoriamente, a níveis baixos de esteroides sexuais (estradiol baixo). Se o estradiol estiver alto, não se caracteriza hipogonadismo. No hipogonadismo hipergonadotrófico, o FSH está elevado na tentativa de estimular gônadas que não funcionam, as quais produzem pouco ou nenhum estradiol.\n\nAlternativa (c) Incorreta: A ooforite autoimune causa a destruição do tecido ovariano (falência ovariana precoce). Como o ovário não produz estradiol, ocorre a perda do feedback negativo na hipófise, resultando em níveis elevados de FSH (hipogonadismo hipergonadotrófico) e não em níveis baixos.\n\nAlternativa (d) Correta: A Síndrome de Turner é uma disgenesia gonadal (geralmente cariótipo 45,X). Nessa condição, as gônadas são fibróticas (em fita) e não produzem estradiol. A falta de estradiol faz com que a hipófise secrete grandes quantidades de FSH na tentativa de estimular o ovário. Assim, o FSH alto com estradiol baixo confirma o hipogonadismo hipergonadotrófico, compatível com Turner.\n\nAlternativa (e) Incorreta: A disgenesia gonadal pura é uma falha no desenvolvimento das gônadas. Assim como na Síndrome de Turner, o problema está no ovário (periferia). Portanto, o FSH deveria estar alto devido à falta de feedback negativo do estradiol. Níveis baixos de ambos sugeririam uma causa central (hipotálamo ou hipófise).",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:17.362Z"
+  },
+  {
+    "id": "AJUDA_252213af-ddee-4b89-806a-8043cce159c0",
+    "originalId": "252213af-ddee-4b89-806a-8043cce159c0",
+    "statement": "Lactente de 8 meses é encaminhado ao consultório pediátrico com quadro de lesões cutâneas pruriginosas e recidivantes desde os 6 meses de vida. Não notou fatores desencadeantes. Criança em aleitamento materno, iniciou complementação com fórmula infantil de seguimento aos 6 meses de vida, juntamente com introdução alimentar. Atualmente aceita todos os tipos de alimentos, inclusive trigo e ovo. Lesões são predominantemente em face, abdome e superfícies extensoras com características conforme foto a seguir: Qual a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dermatite atópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Eritema multiforme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Urticária crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dermatite de contato.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico\n\nO quadro clínico descreve um lactente de 8 meses com lesões cutâneas pruriginosas (que coçam) e recidivantes, com início aos 6 meses de vida. A distribuição das lesões é um dado fundamental para o diagnóstico em pediatria: em lactentes, a dermatite atópica tipicamente acomete a face (poupando o sulco nasolabial), o tronco e as superfícies extensoras dos membros. A imagem corrobora essa descrição, apresentando áreas eritematosas (avermelhadas) e xeróticas (secas) no abdome e na face anterior/lateral das coxas.\n\nPor que a alternativa A está correta?\n\nA dermatite atópica é uma doença inflamatória crônica da pele, muito comum na infância. O diagnóstico é essencialmente clínico, baseado no prurido intenso, no caráter crônico/recorrente e na morfologia e distribuição típicas das lesões conforme a idade. No lactente, a localização em superfícies extensoras e na face é o padrão clássico. O início aos 6 meses coincide frequentemente com mudanças ambientais e alimentares, embora a doença seja uma desordem da barreira cutânea e do sistema imunológico, não necessariamente uma alergia alimentar direta.\n\nPor que as outras alternativas estão incorretas?\n\nb) Eritema multiforme: É uma reação de hipersensibilidade aguda, geralmente autolimitada, caracterizada por lesões em \"alvo\" ou \"íris\" (círculos concêntricos). Frequentemente é desencadeado por infecções (como o vírus Herpes simplex) ou medicamentos, não apresentando o caráter crônico e a distribuição típica descrita no caso.\n\nc) Urticária crônica: Caracteriza-se pela presença de placas urticadas (pápulas edematosas e eritematosas) que são evanescentes, ou seja, duram menos de 24 horas em um mesmo local, mudando de posição. Embora seja pruriginosa, a imagem e a descrição de \"lesões recidivantes\" desde os 6 meses com padrão eczematoso (sugerido pela xerose e localização) direcionam para dermatite atópica, e não para urticária.\n\nd) Dermatite de contato: Ocorre devido à reação inflamatória após o contato com substâncias irritantes ou alérgenos específicos. Geralmente as lesões ficam limitadas à área de contato com o agente causador. No caso clínico, as lesões são disseminadas (face, abdome, extensores), o que torna a dermatite atópica a hipótese diagnóstica primária e mais provável.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Eczematosas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/fc66d23d5aacb261e298a87e368fe3176028ed8bd4b83ecc8cacaf126deda3a4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_252213af-ddee-4b89-806a-8043cce159c0_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:21.914Z"
+  },
+  {
+    "id": "AJUDA_2526682c-6e60-4833-a58d-9734fc99d54e",
+    "originalId": "2526682c-6e60-4833-a58d-9734fc99d54e",
+    "statement": "Os estudos epidemiológicos podem ser classificados de acordo com a intervenção do investigador e o propósito do estudo. Sobre o assunto, há as seguintes afirmativas:\n\nI. Estudos ecológicos focam em grupos de pessoas e utilizam áreas geográficas como unidade de estudo.\nII. Ensaios clínicos são estudos retrospectivos que visam avaliar a eficácia de intervenções terapêuticas.\nIII. Estudos longitudinais podem ser prospectivos ou retrospectivos e têm como objetivo analisar a incidência de casos ao longo do tempo.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Afirmativa I: Correta. Os estudos ecológicos são caracterizados por analisarem populações ou grupos de pessoas em vez de indivíduos isolados. A unidade de observação e análise é o grupo, geralmente definido por uma área geográfica (como cidades, estados ou países) ou por períodos de tempo. Eles servem para avaliar a correlação entre a exposição e a doença em nível populacional.\n\nAfirmativa II: Incorreta. O erro desta afirmativa está na classificação temporal. Ensaios clínicos são estudos experimentais e obrigatoriamente prospectivos. O investigador aplica uma intervenção e acompanha os participantes ao longo do tempo para observar os resultados no futuro. Estudos retrospectivos são aqueles que analisam dados do passado, como o estudo de caso-controle.\n\nAfirmativa III: Correta. Estudos longitudinais são aqueles que realizam múltiplas medições ao longo do tempo, permitindo estabelecer uma relação de temporalidade entre exposição e desfecho. Eles podem ser prospectivos (como um estudo de coorte clássico) ou retrospectivos (como uma coorte histórica que utiliza registros passados). Por acompanharem os indivíduos ao longo do tempo, são o desenho ideal para o cálculo da incidência (novos casos).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta, pois a afirmativa II é falsa.\nAlternativa b: Correta, pois reflete a veracidade das afirmativas I e III.\nAlternativa c: Incorreta, pois, embora a III esteja correta, a afirmativa I também é verdadeira.\nAlternativa d: Incorreta, pois a afirmativa II é conceitualmente errada ao chamar o ensaio clínico de retrospectivo.\n\nGabarito: Letra (b).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:21.914Z"
+  },
+  {
+    "id": "AJUDA_25311907-c2a4-4386-a5f0-caa0241a18f0",
+    "originalId": "25311907-c2a4-4386-a5f0-caa0241a18f0",
+    "statement": "Uma criança de 8 anos é atendida em uma Unidade Básica de Saúde (UBS) com quadro de febre há 3 dias, mialgia, dor retroorbital e rash cutâneo discreto. No exame físico, está hemodinamicamente estável, sem sinais de choque ou sangramento ativo. O médico da UBS realiza o teste do laço (prova do torniquete), que resulta positivo. De acordo com o manejo clínico da Dengue preconizado pelo Ministério da Saúde (MS), a correta classificação de risco e a conduta imediata na UBS para este paciente são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Grupo A. Conduta: Observação por 24 horas na UBS e reavaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Grupo B. Conduta: Orientação, hidratação oral supervisionada na UBS e reavaliação diária, solicitação de hemograma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Grupo C. Conduta: Iniciar hidratação venosa imediata e encaminhar com urgência para internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Grupo C. Conduta: Internação imediata em leito hospitalar para monitoramento intensivo, devido à presença de sinal de alarme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Grupo D. Conduta: Choque grave. Iniciar expansão volêmica imediata com cristaloides e monitoramento contínuo em UTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos aplicar o Protocolo de Manejo Clínico da Dengue do Ministério da Saúde. O primeiro passo é classificar o paciente em um dos quatro grupos (A, B, C ou D) com base nos sinais e sintomas e nos fatores de risco.\n\nO paciente apresenta um quadro clínico sugestivo de dengue (febre, mialgia, dor retro-orbital e rash). No exame físico, ele está estável e não apresenta sinais de alarme (como dor abdominal intensa, vômitos persistentes ou acúmulo de líquidos) nem sinais de choque. No entanto, o teste do laço (prova do torniquete) resultou positivo.\n\nSegundo o Ministério da Saúde, a presença de prova do torniquete positiva ou de condições clínicas especiais (como idade avançada, gestação, doenças crônicas ou situações sociais específicas) classifica o paciente automaticamente no Grupo B.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O Grupo A é destinado a pacientes sem sinais de alarme, sem sinais de choque e sem condições especiais ou prova do torniquete positiva. Como o teste do laço foi positivo, o paciente obrigatoriamente sai do Grupo A e entra no Grupo B.\n\nAlternativa b) Correta. O paciente pertence ao Grupo B devido à positividade da prova do torniquete. A conduta preconizada para esse grupo inclui: hidratação oral supervisionada na unidade de saúde enquanto se aguarda o resultado de exames complementares obrigatórios, sendo o hemograma o principal deles. O acompanhamento deve ser diário até que o paciente fique sem febre por 48 horas.\n\nAlternativa c) Incorreta. O Grupo C é caracterizado pela presença de sinais de alarme (como dor abdominal intensa, hepatomegalia dolorosa, sangramento de mucosas, letargia ou irritabilidade). O paciente do caso está clinicamente estável e não apresenta esses sinais. A hidratação venosa imediata é a conduta para o Grupo C, o que não se aplica aqui.\n\nAlternativa d) Incorreta. Embora cite o Grupo C, a questão afirma erroneamente que o paciente possui sinais de alarme. É importante destacar que a prova do torniquete positiva NÃO é considerada um sinal de alarme, mas sim um critério de triagem para o Grupo B.\n\nAlternativa e) Incorreta. O Grupo D é reservado para casos de dengue grave, com sinais de choque, desconforto respiratório ou disfunção grave de órgãos. O paciente descrito está hemodinamicamente estável, portanto, está longe de ser classificado como Grupo D.\n\nResumo do Manejo:\nO Grupo B exige a realização de hemograma completo para todos os pacientes. A conduta inicial é a hidratação oral (conforme o peso do paciente) e a reavaliação clínica constante. Se o hemograma mostrar sinais de hemoconcentração (aumento do hematócrito), o paciente pode precisar ser reclassificado para o Grupo C. Se o hematócrito estiver normal, ele pode seguir o tratamento ambulatorial com retornos diários.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Arboviroses",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:21.914Z"
+  },
+  {
+    "id": "AJUDA_253985aa-699f-42a6-b053-37c151b15aa9",
+    "originalId": "253985aa-699f-42a6-b053-37c151b15aa9",
+    "statement": "A estimativa da Idade Gestacional (IG) é um passo crucial na primeira consulta de pré-natal. Sobre o assunto, há as seguintes afirmativas:\n\nI. A idade gestacional é estimada com base na Data da Última Menstruação (DUM) e confirmada por ultrassonografia no segundo trimestre.\nII. A regra de Naegele é utilizada para calcular a data provável do parto, somando 7 dias à DUM e subtraindo dois meses.\nIII. Ciclos menstruais irregulares podem contribuir para erros na estimativa da DUM.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise detalhada das afirmativas:\n\nAfirmativa I (Falsa): Embora a idade gestacional (IG) seja inicialmente estimada pela Data da Última Menstruação (DUM), a confirmação ou correção dessa data deve ser feita preferencialmente por ultrassonografia (USG) realizada no primeiro trimestre, e não no segundo. O parâmetro mais fidedigno para datar a gestação é o Comprimento Cabeça-Nádega (CCN), medido entre 7 semanas e 13 semanas e 6 dias de gestação. A ultrassonografia do segundo trimestre possui uma margem de erro maior (cerca de 7 a 10 dias), enquanto a do primeiro trimestre varia apenas de 3 a 5 dias.\n\nAfirmativa II (Falsa): A Regra de Naegele é o método padrão para calcular a Data Provável do Parto (DPP). A fórmula correta consiste em somar 7 dias ao primeiro dia da última menstruação e somar 9 meses (ou subtrair 3 meses) ao mês em que a DUM ocorreu. A afirmativa está incorreta ao mencionar a subtração de apenas dois meses.\n\nAfirmativa III (Verdadeira): O cálculo da IG por meio da DUM pressupõe que a mulher possua ciclos menstruais regulares de 28 dias, com a ovulação ocorrendo no 14º dia do ciclo. Em pacientes com ciclos irregulares, a data da ovulação é imprevisível, o que gera erros frequentes na estimativa da idade gestacional baseada apenas no calendário, tornando a ultrassonografia precoce um recurso indispensável nesses casos.\n\nDessa forma, a sequência correta é F, F, V, o que valida a alternativa (a).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:21.914Z"
+  },
+  {
+    "id": "AJUDA_2539e5a7-2feb-4325-8b6e-cf101592cdae",
+    "originalId": "2539e5a7-2feb-4325-8b6e-cf101592cdae",
+    "statement": "Homem, 52 anos, obeso (IMC 33), hipertenso, com diagnóstico de síndrome metabólica. Exames laboratoriais mostram LDL de 172 mg/dL, HDL 36 mg/dL e triglicerídeos 260 mg/dL. A pressão arterial medida no consultório foi de 160/95 mmHg em duas ocasiões diferentes. Qual a conduta em relação ao tratamento da dislipidemia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar fibrato isolado como primeira escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar sinvastatina 20 mg/dia (estatina de média potência).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar estatina de alta potência (atorvastatina 40–80 mg ou rosuvastatina 20–40 mg).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar apenas dieta hipolipídica e retorno em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico: O paciente de 52 anos apresenta um perfil de alto risco cardiovascular devido à presença de síndrome metabólica, obesidade e hipertensão arterial estágio 2 (confirmada por duas medidas de 160/95 mmHg). Segundo as Diretrizes Brasileiras de Dislipidemia e Prevenção da Aterosclerose, pacientes com múltiplos fatores de risco ou hipertensão estágio 2 associada a outros agravantes são classificados como de alto risco.\n\nMeta terapêutica: Para pacientes de alto risco cardiovascular, a meta de LDL-c preconizada é inferior a 70 mg/dL. O paciente apresenta LDL basal de 172 mg/dL. Para atingir a meta de 70 mg/dL, é necessária uma redução de aproximadamente 60% nos níveis de LDL-c.\n\nAlternativa a) Incorreta. Os fibratos são indicados como primeira escolha apenas em casos de hipertrigliceridemia isolada grave (triglicerídeos acima de 500 mg/dL), visando à prevenção de pancreatite. Para a redução do risco cardiovascular focado no LDL, as estatinas são a droga de escolha, mesmo com triglicerídeos levemente elevados (260 mg/dL).\n\nAlternativa b) Incorreta. A sinvastatina 20 mg é uma estatina de moderada potência. Medicamentos desse grupo reduzem o LDL-c, em média, entre 30% e 49%. Como o paciente necessita de uma redução superior a 50% para sair de 172 mg/dL e chegar à meta de 70 mg/dL, a sinvastatina nessa dosagem seria insuficiente para o controle adequado.\n\nAlternativa c) Correta. Estatinas de alta potência, como a atorvastatina (40 a 80 mg) ou a rosuvastatina (20 a 40 mg), são capazes de reduzir os níveis de LDL-c em 50% ou mais. Esta é a conduta indicada para pacientes de alto risco cardiovascular que necessitam de reduções substanciais do colesterol para atingir as metas terapêuticas.\n\nAlternativa d) Incorreta. Mudanças no estilo de vida, como dieta hipolipídica e atividade física, devem ser sempre recomendadas. No entanto, em pacientes de alto risco cardiovascular com níveis de LDL consideravelmente acima da meta, a intervenção farmacológica com estatinas deve ser iniciada de imediato, em conjunto com as medidas não farmacológicas. Não é correto aguardar 6 meses para tratar um paciente com esse perfil de risco.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular",
+      "Hipertensão Arterial Sistêmica",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:21.914Z"
+  },
+  {
+    "id": "AJUDA_253bcbe1-6892-475f-b07c-b200eb111df7",
+    "originalId": "253bcbe1-6892-475f-b07c-b200eb111df7",
+    "statement": "Paciente de 26 anos, sexo feminino, vem com queixa de mal-estar há dois dias, com piora progressiva e, há um dia, com dor abdominal em hipogastro associada a disúria e polaciúria. Nega febre, nega alterações de hábito intestinal, refere inapetência, mas nega vômitos. Sexualmente ativa, refere corrimento amarelo claro no período, faz uso de contraceptivo oral; data da última menstruação há 3 semanas. Ao exame físico, está em bom estado geral, FC 89 bpm, PAM 120 x 87 mmHg, dor à palpação de hipogastro, sem massas palpáveis ou sinal de irritação peritoneal. Urina I com 20000 leucócitos/mL (VR 0 – 10000). Realizou o exame a seguir. Assinale a alternativa que contém o diagnóstico correto para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abscesso túbulo ovariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ureterolitíase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apendicite aguda não complicada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apendicite aguda perfurada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nA paciente apresenta um quadro de dor abdominal infraumbilical (hipogástrio) associado a sintomas urinários irritativos (disúria e polaciúria). Embora esses sintomas sugiram inicialmente uma infecção do trato urinário, a presença de leucocitúria moderada (20.000 leucócitos/mL) pode ser secundária a um processo inflamatório adjacente à bexiga ou ao ureter, conhecido como piúria reativa. No exame físico, a ausência de sinais de irritação peritoneal e a estabilidade hemodinâmica sugerem um quadro inflamatório ainda localizado.\n\nAnálise da Imagem:\n\nAs imagens de Tomografia Computadorizada (TC) de abdome e pelve mostram, na fossa ilíaca direita e região pélvica, uma estrutura tubular, de fundo cego, distendida (diâmetro aumentado), com realce de suas paredes pelo contraste e densificação da gordura periapendicular adjacente. Não são observadas coleções organizadas volumosas, gás extraluminal ou pneumoperitônio que indiquem perfuração evidente ou formação de abscesso complexo. A localização pélvica do apêndice explica a sintomatologia urinária por contiguidade com a bexiga.\n\nExplicação das Alternativas:\n\na) Abscesso túbulo-ovariano: Incorreta. Embora a paciente seja jovem, sexualmente ativa e apresente corrimento, a imagem de TC é característica de apendicite (origem no ceco). Além disso, no abscesso túbulo-ovariano, esperaríamos observar uma massa complexa anexial com paredes espessas e realce heterogêneo, o que não condiz com a estrutura tubular identificada.\n\nb) Ureterolitíase: Incorreta. A ureterolitíase costuma causar dor lombar com irradiação para a região inguinal (cólica nefrética) e, frequentemente, hematúria. A TC não demonstra cálculos radioisodensos no trajeto ureteral ou hidroureteronefrose significativa que justifique o quadro.\n\nc) Apendicite aguda não complicada: Correta. O quadro clínico de dor em hipogástrio (comum em apêndices de localização pélvica) somado aos achados tomográficos de espessamento do apêndice e densificação da gordura circundante, sem evidências de complicações maiores (como abscessos ou ar livre), define o diagnóstico de apendicite aguda não complicada. A leucocitúria é um achado frequente quando o apêndice inflamado está em contato com o trato urinário inferior.\n\nd) Apendicite aguda perfurada: Incorreta. Clinicamente, a perfuração costuma cursar com sinais de irritação peritoneal difusa (abdome em tábua ou sinal de Blumberg positivo), febre e piora do estado geral, o que a paciente não apresenta (bom estado geral, sem peritonite). Na TC, a perfuração seria sugerida por pneumoperitônio, coleções purulentas bloqueadas ou grande quantidade de líquido livre, achados que não são os principais nas imagens apresentadas.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5841ac9e596c4c25f5df3e1ce3fb61ae45c0024fafd0cc7de9402bc483fc1eff.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_253bcbe1-6892-475f-b07c-b200eb111df7_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:22.334Z"
+  },
+  {
+    "id": "AJUDA_254dd2e1-88ab-49e8-8562-a05df129d86a",
+    "originalId": "254dd2e1-88ab-49e8-8562-a05df129d86a",
+    "statement": "Dentre os tratamentos farmacológicos para a trombose venosa profunda destacam-se os anticoagulantes orais diretos (DOACs). Qual é o principal mecanismo de ação dos DOACs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inibição direta da vitamina K.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inibição direta do fator Xa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Inibição direta do fator VII.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibição direta da agregação plaquetária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Os anticoagulantes orais diretos (DOACs) representam uma classe de medicamentos que revolucionou o tratamento da trombose venosa profunda (TVP) e da embolia pulmonar. Eles são chamados de \"diretos\" porque, ao contrário dos anticoagulantes antigos, bloqueiam especificamente uma única enzima da cascata de coagulação de forma imediata.\n\nAlternativa a) Incorreta. A interferência na vitamina K (através da inibição da enzima vitamina K-epóxido-redutase) é o mecanismo de ação dos antagonistas da vitamina K, como a varfarina. Esses fármacos impedem a produção de fatores de coagulação funcionais (II, VII, IX e X) no fígado, agindo de forma indireta e lenta.\n\nAlternativa b) Correta. O principal mecanismo de ação da maioria dos DOACs disponíveis no mercado (como rivaroxabana, apixabana e edoxabana) é a inibição direta do Fator Xa. Este fator é um ponto crucial na cascata de coagulação, onde as vias intrínseca e extrínseca convergem para a via comum. Ao inibir o Fator Xa, impede-se a conversão da protrombina em trombina, bloqueando a formação do coágulo. Vale notar que a dabigatrana também é um DOAC, mas atua inibindo diretamente o Fator IIa (trombina).\n\nAlternativa c) Incorreta. O Fator VII faz parte da via extrínseca da coagulação. Ele não é o alvo direto dos DOACs. A redução da atividade do Fator VII é observada principalmente no uso de varfarina, sendo o primeiro fator a cair devido à sua meia-vida curta.\n\nAlternativa d) Incorreta. A inibição da agregação plaquetária é o mecanismo de ação dos fármacos antiagregantes, como o ácido acetilsalicílico (Aspirina), clopidogrel e ticagrelor. Estes medicamentos atuam na hemostasia primária (plaquetas), enquanto os DOACs são anticoagulantes que atuam na hemostasia secundária (fatores de coagulação/formação de fibrina).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:22.334Z"
+  },
+  {
+    "id": "AJUDA_254eade4-5db0-4ce1-8304-07f575cf3ea8",
+    "originalId": "254eade4-5db0-4ce1-8304-07f575cf3ea8",
+    "statement": "Uma instituição de saúde está pesquisando um novo teste de triagem para hanseníase, com sensibilidade de 92 por cento e especificidade de 65 por cento, aplicado em uma população com baixa prevalência da doença.\nNesse contexto, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "quase todos os testes positivos indicarão verdadeiros casos de hanseníase, diante da elevada sensibilidade do teste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o número de falsos-positivos será elevado, devido à baixa especificidade do teste e à baixa prevalência da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o número de falsos-negativos será elevado, reduzindo a capacidade do teste em detectar casos reais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a elevada sensibilidade do teste o torna ideal para a confirmação do diagnóstico de hanseníase.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é fundamental dominar os conceitos de acurácia diagnóstica (sensibilidade e especificidade) e a influência da prevalência nos valores preditivos.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A afirmação descreve um Valor Preditivo Positivo (VPP) alto. No entanto, a sensibilidade alta, isoladamente, não garante que um teste positivo seja um caso verdadeiro. O VPP é fortemente influenciado pela prevalência da doença. Em populações com baixa prevalência, mesmo testes sensíveis apresentam um VPP baixo, o que significa que muitos resultados positivos serão, na verdade, falsos-positivos.\n\nAlternativa (b) Correta: O número de falsos-positivos é determinado pela especificidade e pela prevalência. A especificidade de 65% é considerada moderada a baixa para um teste de triagem, o que significa que 35% das pessoas saudáveis testarão positivo erroneamente. Somado a isso, como a prevalência da hanseníase na população citada é baixa, a grande maioria das pessoas testadas é saudável. Aplicar um teste com especificidade de apenas 65% em uma massa de pessoas saudáveis resultará em um volume absoluto muito grande de resultados falsos-positivos.\n\nAlternativa (c) Incorreta: O número de falsos-negativos está diretamente relacionado à sensibilidade. Como o teste possui uma sensibilidade elevada (92%), a taxa de falsos-negativos será baixa (apenas 8%). Portanto, o teste é eficiente em detectar a maioria dos casos reais, ao contrário do que afirma a alternativa.\n\nAlternativa (d) Incorreta: Na prática médica, testes com alta sensibilidade são ideais para a triagem (rastreamento), pois sua principal utilidade é \"afastar\" a doença quando o resultado é negativo (regra do SnNout). Para a confirmação diagnóstica, são necessários testes com alta especificidade, que minimizam os falsos-positivos e garantem que o paciente realmente possui a patologia (regra do SpPIn).\n\nGabarito: Alternativa (b).",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": 35.75630827212737,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:22.334Z"
+  },
+  {
+    "id": "AJUDA_255a2089-cee6-45da-a045-181c410045dc",
+    "originalId": "255a2089-cee6-45da-a045-181c410045dc",
+    "statement": "Pessoa idosa, no Brasil, é quem tem 60 ou mais anos de vida. O número de pessoas idosas vem aumentando de forma acelerada. É importante destacar que, atualmente, entre os idosos, a população que mais cresce é a dos mais idosos, isto é, as pessoas de 80 anos e mais. O direto à saúde prevê a atenção integral por meio do SUS, assegurando o acesso universal e gratuito aos serviços de prevenção, promoção, proteção, recuperação da saúde e cuidados paliativos.\nAssinale a alternativa correta sobre essa questão.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todos os serviços de saúde do SUS devem se preparar para acolher as demandas da pessoa idosa de forma particular, pois são carentes emocionalmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As UBS, as equipes da Saúde da Família e os agentes comunitários de saúde (ACS) são os primeiros serviços que devem estar disponíveis para as demandas das pessoas idosas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Todos os municípios devem garantir a disponibilidade de hospitais especializados em pessoas idosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de uma fase difícil, pois ao mesmo tempo em que as pessoas idosas precisam de independência, precisam também de limites.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Embora todas as dimensões devam ser consideradas, nas pessoas idosas, as alterações manifestadas no corpo são as mais importantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as diretrizes de atenção à saúde da pessoa idosa no âmbito do Sistema Único de Saúde (SUS) e as políticas públicas brasileiras, como o Estatuto do Idoso e a Política Nacional de Saúde da Pessoa Idosa (PNSPI).\n\nAnálise das alternativas:\n\na) Incorreta. Embora o sistema de saúde deva estar preparado para as particularidades do envelhecimento, a afirmação de que os idosos devem ser acolhidos de forma particular por serem carentes emocionalmente é um estereótipo e não possui fundamentação técnica ou legal. O atendimento deve ser humanizado e centrado nas necessidades biopsicossociais, evitando-se generalizações preconceituosas.\n\nb) Correta. Esta alternativa está em consonância com as diretrizes do SUS e da Política Nacional de Atenção Básica (PNAB). A Atenção Primária à Saúde, representada pelas Unidades Básicas de Saúde (UBS), pelas equipes de Saúde da Família e pelos Agentes Comunitários de Saúde (ACS), é a porta de entrada preferencial e o centro ordenador da Rede de Atenção à Saúde. Por estarem inseridos no território e próximos ao domicílio do idoso, esses serviços são os primeiros a identificar demandas e realizar o acompanhamento longitudinal.\n\nc) Incorreta. O SUS organiza-se de forma regionalizada e hierarquizada. Não há obrigatoriedade legal ou viabilidade financeira para que todos os municípios, individualmente, possuam hospitais especializados em geriatria. A atenção especializada é garantida por meio das Redes de Atenção à Saúde (RAS), nas quais municípios menores referenciam seus pacientes para centros de maior complexidade em suas respectivas regiões de saúde.\n\nd) Incorreta. A descrição utiliza termos subjetivos e inadequados para a prática clínica e de saúde pública. Em geriatria e gerontologia, o foco do cuidado está na preservação da autonomia (capacidade de decisão) e da independência (capacidade de execução), e não no estabelecimento de limites, termo este que remete a uma visão infantilizada da velhice.\n\ne) Incorreta. A saúde do idoso é definida pela sua funcionalidade global. Embora as alterações físicas sejam relevantes, elas não são necessariamente as mais importantes. O modelo de avaliação geriátrica ampla considera as dimensões física, cognitiva, emocional, social e funcional. Muitas vezes, o suporte social ou a saúde mental são determinantes mais críticos para a qualidade de vida do idoso do que uma alteração física isolada.\n\nGabarito: Letra (b).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:22.334Z"
+  }
+]

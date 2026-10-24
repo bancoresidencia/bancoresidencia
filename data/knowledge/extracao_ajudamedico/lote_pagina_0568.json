@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_9eef9f04-c844-445d-8a2f-053326492eb8",
+    "originalId": "9eef9f04-c844-445d-8a2f-053326492eb8",
+    "statement": "Pré-escolar, sexo feminino, 3 anos de idade, é encontrada com uma cartela de paracetamol na mão. Pela estimativa dos familiares, ela ingeriu 4 comprimidos de 750 mg cada. Chega ao atendimento médico aproximadamente 4 horas após a ingestão. Está assintomática. Ao exame clínico, criança em bom estado geral, consciente e orientada; PA: 96/54 mmHg; FC: 108 bpm; FR: 26 irpm; sem alterações significativas. Peso de 15 kg.\nA conduta mais apropriada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar apenas lavagem gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administrar lavagem gástrica seguida de carvão ativado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "infusão de acetilcisteína endovenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "alta hospitalar com observação domiciliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "CÁLCULO DA DOSE E TOXICIDADE\n\nPara definir a conduta correta, o primeiro passo é calcular a dose de paracetamol ingerida em relação ao peso da criança.\nDose total: 4 comprimidos x 750 mg = 3000 mg.\nPeso da criança: 15 kg.\nCálculo: 3000 mg / 15 kg = 200 mg/kg.\n\nNa pediatria, a ingestão de uma dose única de paracetamol acima de 150 mg/kg é considerada potencialmente tóxica. Como a paciente ingeriu 200 mg/kg, ela ultrapassou o limite de segurança e corre risco real de desenvolver hepatotoxicidade grave.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: A lavagem gástrica é um método de descontaminação indicado preferencialmente na primeira hora após a ingestão. Como a criança chegou 4 horas após o evento, o esvaziamento gástrico já ocorreu e o medicamento já foi absorvido, tornando o procedimento ineficaz.\n\nAlternativa (b) Incorreta: O carvão ativado tem maior utilidade quando administrado nas primeiras 1 a 2 horas. Embora alguns protocolos sugiram seu uso em até 4 horas para grandes ingestões, ele não é a conduta principal em um caso com dose comprovadamente tóxica e tempo de evolução avançado. A prioridade é a neutralização do metabólito já absorvido.\n\nAlternativa (c) Correta: A N-acetilcisteína (NAC) é o antídoto específico para a intoxicação por paracetamol. Ela atua restaurando os níveis de glutationa no fígado, o que permite a neutralização do NAPQI, um metabólito altamente tóxico gerado pelo paracetamol. O tempo de 4 horas após a ingestão é o marco inicial para o uso do Nomograma de Rumack-Matthew (ferramenta que correlaciona tempo e nível sérico para indicar o tratamento). Diante de uma ingestão confirmada de 200 mg/kg, o início imediato da acetilcisteína é a conduta mais segura e apropriada para prevenir a insuficiência hepática.\n\nAlternativa (d) Incorreta: A alta hospitalar é perigosa. A intoxicação por paracetamol é traiçoeira, pois o paciente costuma permanecer assintomático ou com sintomas leves (náuseas e vômitos) nas primeiras 24 horas. A lesão hepática grave e o aumento das transaminases geralmente só se manifestam entre 24 e 72 horas após a ingestão.\n\nGabarito: Letra (c).",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  },
+  {
+    "id": "AJUDA_9ef04fc2-e7c6-410d-9e75-f1bcd83e9c75",
+    "originalId": "9ef04fc2-e7c6-410d-9e75-f1bcd83e9c75",
+    "statement": "Assinale a alternativa que preenche, correta e respectivamente, as lacunas do parágrafo abaixo.\n    Paciente de 13 anos veio à UBS acompanhada da mãe por quadro de dor abdominal. A mãe suspeitava que a menina estivesse com vermes. Ao exame físico, observou-se aumento do volume abdominal, com fundo uterino palpável 2 cm abaixo da cicatriz umbilical. O teste rápido para gestação foi positivo. A paciente relatou que mantivera relações sexuais\ndesprotegidas e consensuais com um colega da escola, fato desconhecido pela mãe. Durante o atendimento, a paciente\ne sua mãe questionaram sobre a possibilidade de realização de um aborto. O aborto .......... . A paciente deverá ..........; e o\nprofissional deverá .......... .",
+    "options": [
+      {
+        "id": "A",
+        "text": "é possível, por se tratar de estupro de vulnerável - ser orientada e encaminhada ao serviço de referência em atendimento de crianças vítimas de violência sexual e aborto legal - fazer a notificação de situação de violência no Sistema de Informação de Agravos de Notificação (Sinan)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "é possível, desde que a paciente faça um boletim de ocorrência de estupro - ser encaminhada ao serviço de referência em atendimento de crianças vítimas de violência sexual e aborto legal - fazer a notificação de situação de violência no Sinan",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "não é possível, por se tratar de um relacio- namento consensual - ser orientada sobre a possibilidade de encaminhamento da criança para adoção - encaminhar a paciente ao prénatal de alto risco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não é possível, por não haver previsão de aborto legal - realizar os exames iniciais de pré-natal e agendar retorno em breve à UBS - encaminhar a paciente para acompanha- mento no serviço de saúde mental devido à gestação não planejada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para a resolução desta questão, é fundamental o conhecimento da legislação brasileira (Código Penal) e das normas técnicas do Ministério da Saúde sobre o aborto legal e o atendimento a vítimas de violência sexual.\n\nAnálise das alternativas:\n\nAlternativa (a): CORRETA. No Brasil, o Código Penal (Art. 217-A) define como estupro de vulnerável a conjunção carnal ou a prática de ato libidinoso com menor de 14 anos. A lei estabelece uma presunção absoluta de violência, o que significa que o consentimento da vítima, a existência de um relacionamento ou o fato de ela já ter tido relações sexuais anteriormente são irrelevantes para a configuração do crime. Como a gestação é decorrente de um crime de estupro (pela idade da paciente), o aborto é permitido por lei (Art. 128 do Código Penal). O profissional deve orientar sobre esse direito, encaminhar ao serviço de referência e realizar a notificação compulsória de violência no Sinan, que é obrigatória em casos de violência contra crianças e adolescentes.\n\nAlternativa (b): INCORRETA. Embora o aborto seja possível, a legislação e as normas técnicas do Ministério da Saúde não exigem a apresentação de Boletim de Ocorrência (BO), laudo do Instituto Médico Legal (IML) ou autorização judicial para a realização do aborto legal em casos de estupro. O relato da gestante (ou de seus representantes legais) deve ser aceito como presunção de veracidade.\n\nAlternativa (c): INCORRETA. O erro está em afirmar que o aborto não é possível devido ao \"relacionamento consensual\". Juridicamente, não existe \"consentimento\" para menores de 14 anos no que tange a atos sexuais. Portanto, a natureza consensual relatada pela paciente não afasta o crime de estupro de vulnerável nem o direito ao aborto legal.\n\nAlternativa (d): INCORRETA. Existe previsão legal para o aborto neste caso, conforme a excludente de ilicitude para gravidez resultante de estupro. Ignorar o direito da paciente à interrupção e focar apenas no pré-natal e saúde mental sem oferecer a opção legal de interrupção configura uma falha na assistência e no cumprimento dos direitos reprodutivos da paciente.\n\nEm resumo: Menor de 14 anos grávida é, legalmente, vítima de estupro de vulnerável. Nessas situações, o aborto legal é garantido por lei, a notificação no Sinan é obrigatória e o profissional deve encaminhar a paciente para o serviço de referência sem exigir documentos policiais ou judiciais.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  },
+  {
+    "id": "AJUDA_9ef57072-1c4a-428f-87c1-c340bee9f73e",
+    "originalId": "9ef57072-1c4a-428f-87c1-c340bee9f73e",
+    "statement": "Mulher de 32 anos apresenta urina espumosa e anasarca. PA: 120 x 80 mmHg e os exames mostraram creatinina sérica 1,2 mg/dL e proteinúria de 24 horas de 5,4 gramas. Hemograma, glicemia e eletrólitos são normais. Ela apresenta risco aumentado de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipervolemia e hemorragia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipovolemia e trombose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hipovolemia e hemorragia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipervolemia e trombose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipervolemia e hipocolesterolemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente apresenta um quadro clínico típico de Síndrome Nefrótica. Os pontos fundamentais para este diagnóstico são a proteinúria de 5,4 g/24h (definida como nefrótica quando acima de 3,5 g/24h em adultos), a presença de urina espumosa (sinal de perda proteica) e anasarca (edema generalizado).\n\nFISIOPATOLOGIA DA HIPOVOLEMIA (TEORIA DO UNDERFILL)\n\nNa Síndrome Nefrótica, a proteinúria maciça leva a uma queda nos níveis de albumina no sangue (hipoalbuminemia). Como a albumina é a principal responsável por manter a pressão coloidoncótica dentro dos vasos, sua falta faz com que o líquido saia do compartimento intravascular para o espaço intersticial, gerando o edema generalizado. Embora a paciente esteja em anasarca (excesso de líquido no corpo), o volume de sangue efetivo dentro dos vasos está diminuído, o que caracteriza a hipovolemia intravascular. Isso costuma ativar o sistema renina-angiotensina-aldosterona para tentar reter sódio e água.\n\nFISIOPATOLOGIA DA TROMBOSE\n\nA Síndrome Nefrótica é classicamente um estado de hipercoagulabilidade. Isso ocorre por três mecanismos principais:\n1. Perda urinária de proteínas anticoagulantes, como a Antitrombina III, Proteína C e Proteína S.\n2. Estímulo ao fígado para produzir mais proteínas de forma inespecífica (devido à baixa pressão oncótica), o que aumenta a síntese de fatores pró-coagulantes, como o fibrinogênio.\n3. Aumento da agregação plaquetária e hemoconcentração.\nDessa forma, esses pacientes possuem um risco elevado de trombose venosa profunda, embolia pulmonar e, especificamente, trombose de veia renal.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: O paciente nefrótico apresenta risco de trombose (formação de coágulos) e não de hemorragia. Além disso, a teoria clássica explica a anasarca pela hipovolemia intravascular e não pela hipervolemia.\n\nAlternativa (b) Correta: Esta alternativa resume as duas principais complicações sistêmicas decorrentes da perda proteica maciça: a depleção do volume intravascular (hipovolemia) por queda da pressão oncótica e o estado pró-trombótico (trombose) por perda de fatores anticoagulantes e aumento de fatores pró-coagulantes.\n\nAlternativa (c) Incorreta: Embora a hipovolemia esteja correta, o risco de hemorragia não faz parte da fisiopatologia da Síndrome Nefrótica; o risco é de eventos tromboembólicos.\n\nAlternativa (d) Incorreta: A hipervolemia (excesso de volume dentro dos vasos) não é o achado esperado na fase inicial/clássica da Síndrome Nefrótica com anasarca importante (teoria do underfill).\n\nAlternativa (e) Incorreta: A Síndrome Nefrótica causa hipercolesterolemia (aumento do colesterol) e não hipocolesterolemia. O fígado aumenta a produção de lipoproteínas (como VLDL e LDL) em resposta à baixa pressão oncótica plasmática.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  },
+  {
+    "id": "AJUDA_9f026c41-4c81-43ac-be14-73937bf84cd7",
+    "originalId": "9f026c41-4c81-43ac-be14-73937bf84cd7",
+    "statement": "Criança de 2 anos e 1 mês foi internada na Enfermaria proveniente da Emergência. Na lista de problemas, constava “quarto episódio de internação por bronquiolite viral aguda” (vírus isolado no primeiro episódio de sibilância: rinovírus). Revisando outros aspectos da história, verificou-se que a criança nascera a termo, tinha crescimento e desenvolvimento adequados, estava com as vacinas em dia e vinha em uso de hidratante para dermatite atópica. Frequentava a pré-escola em turno integral desde os 4 meses. Os pais eram hígidos, e o irmão de 12 anos fazia uso regular de formoterol, budesonida e tiotrópio inalatórios. A mãe relatou que o quadro agudo atual havia começado com coriza e tosse produtiva. Teve um pico febril de 37,9° C na chegada ao hospital, há 24 horas. Ao exame físico, apresentava bom estado geral, frequência respiratória de 38 mpm, tiragem subcostal leve e sibilos polifônicos expiratórios bilaterais. Oxímetro de pulso mostrou saturação de 96%, com suplementação de oxigênio por cânula nasal de baixo fluxo a 0,4 l/min. Radiografia de tórax revelou hiperinsuflação bilateral e opacidades intersticiais peri-hilares. Na prescrição da Emergência, estavam registrados os seguintes itens: (1) dieta por via oral; (2) oxigênio por cânula nasal de baixo fluxo a 0,4 l/min; (3) aspiração nasal, se necessário. Que modificação na prescrição médica deve ser feita por ocasião da admissão do paciente na Enfermaria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar o fluxo de oxigênio pelo cateter nasal para 0,8 l/min.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Substituir a dieta por via oral por dieta por sonda nasogástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Incluir salbutamol spray (100 µg/jato), com espaçador, 3 jatos, a cada 4 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Adicionar amoxicilina (50 mg/kg/dia) por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO ponto central para resolver esta questão é identificar que, apesar de a lista de problemas mencionar bronquiolite viral aguda, o quadro clínico e o histórico do paciente apontam para outro diagnóstico. A bronquiolite é definida como o primeiro episódio de sibilância distal associado a uma infecção viral em crianças menores de 2 anos.\n\nEste paciente já está no seu quarto episódio de sibilância e tem 2 anos e 1 mês de idade. Além disso, apresenta marcadores de atopia (uso de hidratante para dermatite atópica) e um histórico familiar importante (irmão com asma grave, em uso de múltiplas medicações inalatórias). Esses fatores, somados à recorrência, classificam a criança como Lactente Sibilante Recorrente, com alta probabilidade de evolução para Asma.\n\nDiferente da bronquiolite, na qual o uso de broncodilatadores não é recomendado pelas diretrizes atuais (como as da Academia Americana de Pediatria), nos casos de sibilância recorrente ou asma, o uso de beta-2 agonistas de curta ação é a base do tratamento da crise aguda.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): O paciente apresenta saturação de oxigênio de 96% com um fluxo de 0,4 l/min. O objetivo da oxigenoterapia é manter a saturação acima de 92% a 94%. Não há sinais de desconforto respiratório grave ou hipoxemia que justifiquem o aumento do aporte de oxigênio.\n\nAlternativa B (Incorreta): A dieta por via oral deve ser mantida sempre que possível. A sonda nasogástrica seria indicada apenas em casos de desconforto respiratório grave com risco de aspiração ou se a frequência respiratória estivesse muito elevada. Para uma criança de 2 anos, a frequência de 38 mpm é considerada normal (o limite para taquipneia nessa idade é 40 mpm), e o estado geral é bom.\n\nAlternativa C (Correta): Como o diagnóstico mais provável é uma exacerbação de sibilância recorrente/asma, a inclusão de um broncodilatador de curta ação (salbutamol) é a conduta correta. O uso de spray (inalador dosimetrado) com espaçador é a via de administração preferencial por ser tão eficaz quanto a nebulização, com menos efeitos colaterais e maior facilidade de aplicação no ambiente hospitalar e domiciliar.\n\nAlternativa D (Incorreta): O quadro é sugestivo de infecção viral (coriza, febre baixa, sibilância polifônica e radiografia com hiperinsuflação e infiltrado intersticial). Não há sinais clínicos ou radiológicos de pneumonia bacteriana (como febre alta, queda do estado geral ou consolidação lobar) que justifiquem o uso de antibióticos como a amoxicilina.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Asma em Pediatria",
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  },
+  {
+    "id": "AJUDA_9f0c2360-86a6-4339-9468-ef1f894b0c73",
+    "originalId": "9f0c2360-86a6-4339-9468-ef1f894b0c73",
+    "statement": "Paciente, 55 anos, diabético, apresenta dor lombar, febre e disúria. Exame de urina com piúria maciça. A tomografia mostra gás no parênquima renal. O diagnóstico e a conduta são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abscesso renal; antibióticos e drenagem percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pielonefrite não complicada; antibiótico oral ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pielonefrite Enfisematosa; antibióticos venosos e drenagem ou nefrectomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cólica nefrética infectada; analgésicos e observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico descreve um paciente de 55 anos, diabético, com quadro de sepse de foco urinário (dor lombar, febre, disúria e piúria). O achado patognomônico trazido pela tomografia computadorizada é a presença de gás no parênquima renal. Essa combinação de diabetes mellitus e presença de gás no trato urinário superior define a Pielonefrite Enfisematosa.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA Pielonefrite Enfisematosa é uma infecção necrotizante grave do rim, caracterizada pela produção de gás por bactérias fermentadoras (principalmente Escherichia coli e Klebsiella pneumoniae). Ocorre quase exclusivamente em pacientes diabéticos (cerca de 90 a 95 por cento dos casos) devido à alta concentração de glicose nos tecidos, que serve de substrato para a fermentação bacteriana em um ambiente de hipóxia tecidual. Por ser uma condição com alta mortalidade, o tratamento deve ser agressivo, envolvendo estabilização hemodinâmica, antibioticoterapia venosa de amplo espectro e descompressão/controle da fonte infecciosa, que pode ser feita via drenagem percutânea ou, em casos graves e extensos, nefrectomia de urgência.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): O abscesso renal é uma coleção purulenta localizada no parênquima, geralmente sem a presença de gás disseminado. Embora o tratamento envolva antibióticos e drenagem, o achado de gás no parênquima em paciente diabético direciona especificamente para o diagnóstico de Pielonefrite Enfisematosa, que é uma entidade clínica distinta e mais grave que um abscesso simples.\n\nAlternativa (b): A pielonefrite não complicada ocorre em pacientes saudáveis, sem fatores de risco para gravidade e sem alterações estruturais ou funcionais no trato urinário. A presença de diabetes, sintomas sistêmicos e gás na tomografia classifica o caso como uma pielonefrite complicada e grave, exigindo obrigatoriamente internação hospitalar e medicação venosa.\n\nAlternativa (d): A cólica nefrética infectada é uma emergência urológica causada pela obstrução por cálculo associada à infecção. O quadro clínico de dor seria tipicamente em cólica e a tomografia mostraria hidronefrose e o cálculo obstrutivo, não necessariamente gás no parênquima. Além disso, a conduta de observação é proscrita em qualquer quadro de infecção renal grave.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  },
+  {
+    "id": "AJUDA_9f0ca375-dc21-41a5-9e50-a6bf7610338b",
+    "originalId": "9f0ca375-dc21-41a5-9e50-a6bf7610338b",
+    "statement": "Segundo Dalgalarrondo (2019), o termo dislexia é utilizado com definições mais ou menos amplas. Em sentido mais estrito, o termo “dislexia” designa disfunção no aprendizado da leitura, havendo dificuldades em graus variáveis em identificar a correspondência entre os símbolos da escrita e os fonemas, assim como em transformar signos escritos em signos verbais. No Manual “diagnóstico estatístico de transtornos mentais” (DSM-5, 2014), o termo “dislexia” está incluído nos transtornos específicos da aprendizagem, que englobam transtornos na aprendizagem da leitura e da escrita e em habilidades matemáticas. As dificuldades persistentes para aprender as habilidades acadêmicas fundamentais estão entre suas características essenciais. Essa característica pode gerar confusões diagnósticas por ser comum aos transtornos do espectro autista. Ao contrário do indivíduo com transtorno do espectro autista, o disléxico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apresenta hiper ou hiporreatividade a estímulos sensoriais ou interesse incomum por aspectos sensoriais do ambiente (p. ex., indiferença aparente a dor/temperatura, reação contrária a sons ou texturas específicas, cheirar ou tocar objetos de forma excessiva, fascinação visual por luzes ou movimento).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não apresenta como critérios diagnósticos déficits na comunicação social nem na interação social, assim como padrões repetitivos e restritos de comportamento, interesses e atividades.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apresenta níveis de funcionamento intelectual anormalmente baixos, sendo o escore do QI abaixo de 60 ±5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apresenta achados anormais nos exames neurológicos, indicando lesão do sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Apresenta seus sintomas e sinais tardiamente, comumente no início da velhice, e com desenvolvimento abrupto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento das diferenças fundamentais entre o Transtorno Específico da Aprendizagem (especificamente a Dislexia) e o Transtorno do Espectro Autista (TEA), conforme o DSM-5 e a literatura de Dalgalarrondo. O enunciado foca no que diferencia o indivíduo disléxico do autista.\n\nAlternativa a) Incorreta. A descrição de hiper-reatividade ou hiporreatividade a estímulos sensoriais, ou interesse incomum por aspectos sensoriais do ambiente, é um dos critérios diagnósticos para o Transtorno do Espectro Autista (TEA), inserido no domínio de padrões restritos e repetitivos de comportamento. O indivíduo com dislexia não apresenta esses sinais como parte do seu quadro clínico típico.\n\nAlternativa b) Correta. Esta alternativa define o diferencial crucial. O Transtorno do Espectro Autista é caracterizado obrigatoriamente por dois domínios: 1) Déficits persistentes na comunicação social e na interação social; e 2) Padrões restritos e repetitivos de comportamento, interesses ou atividades. A dislexia, sendo um transtorno específico da aprendizagem, foca exclusivamente na dificuldade em processar a linguagem escrita (leitura e escrita) e não envolve, por definição diagnóstica, prejuízos na interação social ou comportamentos estereotipados.\n\nAlternativa c) Incorreta. Para o diagnóstico de um Transtorno Específico da Aprendizagem (Dislexia), as dificuldades de aprendizagem não podem ser mais bem explicadas por deficiência intelectual. Indivíduos com dislexia geralmente possuem níveis de inteligência dentro da normalidade ou até acima da média. Um QI abaixo de 70 (ou 60, como sugere a alternativa) indicaria Deficiência Intelectual, o que é um diagnóstico de exclusão ou uma comorbidade, mas não uma característica da dislexia.\n\nAlternativa d) Incorreta. Embora a dislexia tenha bases neurobiológicas e genéticas, ela não é diagnosticada por \"achados anormais\" em exames neurológicos convencionais (como tomografia ou ressonância magnética de rotina) que indiquem lesão estrutural macroscópica do sistema nervoso central. O exame neurológico clínico do disléxico costuma ser normal, sem sinais focais.\n\nAlternativa e) Incorreta. A dislexia é um transtorno do neurodesenvolvimento. Portanto, seus sintomas manifestam-se precocemente, geralmente no início da alfabetização escolar, quando as exigências acadêmicas de leitura e escrita começam a exceder as capacidades individuais. Não é um transtorno de início tardio ou súbito na velhice, o que sugeriria processos neurodegenerativos (demências).",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  },
+  {
+    "id": "AJUDA_9f2562c3-cc23-43be-a107-b91d5e465e7b",
+    "originalId": "9f2562c3-cc23-43be-a107-b91d5e465e7b",
+    "statement": "Homem de 49 anos, pedreiro, com história de tuberculose pulmonar tratada e curada há 1 ano e meio, procura a unidade básica de saúde por tosse produtiva leve e esporádica há 3 semanas, com pequena quantidade de escarro amarelado. Nega febre, sudorese noturna, hemoptise ou perda ponderal. Relata que sempre apresentou tosse intermitente desde o término do tratamento, mas percebeu discreta piora recentemente. No exame físico, apresenta bom estado geral, ausculta pulmonar com estertores crepitantes finos em ápice direito. Radiografia de tórax evidencia fibrose apical bilateral e bronquiectasias no lobo superior direito, compatíveis com sequelas de tuberculose prévia, sem novas opacidades. Foi solicitado teste rápido molecular para tuberculose (TRM-TB) em escarro, que resultou positivo para Mycobacterium tuberculosis, sem detecção de resistência à rifampicina. Com base no quadro clínico e nos resultados dos exames, a conduta CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar esquema para tuberculose recidivada com base apenas no TRM-TB positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Considerar possível falso-positivo do TRM-TB e correlacionar com quadro clínico antes de retratar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar baciloscopia seriada e iniciar tratamento apenas se o resultado for negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar tomografia de tórax e iniciar tratamento baseado na positividade do TRM-TB.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Teste Rápido Molecular para Tuberculose (TRM-TB), que utiliza a tecnologia GeneXpert, baseia-se na detecção do DNA do complexo Mycobacterium tuberculosis. Uma característica fundamental desse exame é que ele não diferencia o material genético de bacilos vivos daquele proveniente de bacilos mortos. Em pacientes com histórico de tratamento prévio para tuberculose, o DNA residual pode permanecer nas vias aéreas por meses ou até anos após a cura, levando a resultados positivos sem que haja doença ativa.\n\nNo caso apresentado, o paciente apresenta sintomas leves e crônicos (compatíveis com suas sequelas de bronquiectasias), está em bom estado geral, não possui sintomas sistêmicos (como febre ou perda de peso) e a radiografia mostra apenas alterações cicatriciais estáveis. Portanto, a probabilidade de o TRM-TB ser um \"falso positivo\" para doença ativa (detectando apenas DNA residual) é alta.\n\nAnálise das alternativas:\n\na) Incorreta. Iniciar o tratamento apenas com base no TRM-TB em um paciente com histórico de tuberculose prévia e clínica frustra é um erro de conduta. Como o teste detecta DNA de bacilos mortos, o diagnóstico de recidiva exige uma correlação clínica e radiológica mais robusta ou a confirmação por cultura.\n\nb) Correta. Esta é a conduta preconizada pelo Ministério da Saúde. Em pacientes com antecedente de tratamento para tuberculose, o TRM-TB tem valor preditivo positivo reduzido para doença ativa. É essencial correlacionar o resultado com o quadro clínico e, preferencialmente, solicitar cultura para micobactérias, que é o padrão-ouro para confirmar a viabilidade do bacilo.\n\nc) Incorreta. A baciloscopia (pesquisa de BAAR) é menos sensível que o TRM-TB. Além disso, a conduta de \"iniciar tratamento apenas se o resultado for negativo\" não possui lógica clínica; se houvesse suspeita real de doença, uma baciloscopia positiva reforçaria o diagnóstico, e não o contrário.\n\nd) Incorreta. Embora a tomografia de tórax possa detalhar melhor as sequelas (bronquiectasias e fibrose), ela não substitui a necessidade de avaliação clínica criteriosa frente a um TRM-TB positivo em paciente com histórico de cura. O erro principal da alternativa é sugerir o início do tratamento baseado apenas na positividade do teste molecular nesse contexto específico.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  },
+  {
+    "id": "AJUDA_9f282900-21ad-4939-a0e6-ebf88454b5ef",
+    "originalId": "9f282900-21ad-4939-a0e6-ebf88454b5ef",
+    "statement": "Puérpera com 24 horas de pós-parto cesáreo por rotura prematura de membranas de 29 horas e distócia de progressão foi diagnosticada com infecção puerperal. Quais os sinais e sintomas clínicos que mais levaram a este diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Temperatura 38oC, calafrio, dor abdominal e lo quiação escassa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dor abdominal moderada, tremores, útero doloroso e hipoinvoluído.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Temperatura 37,9oC, dor abdominal, taquicardia, tremores e calafrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Taquicardia, taquipneia, dor abdominal e lóquios abundantes e inodoro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Temperatura 38,9oC, taquicardia, útero doloroso, pastoso e hipoinvoluído.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A endometrite é a principal causa de infecção puerperal, tendo como principais fatores de risco a cesariana, o tempo prolongado de ruptura de membranas e o trabalho de parto prolongado (distocia), todos presentes no caso clínico. O quadro é caracterizado classicamente pela tríade de febre, dor uterina e lóquios fétidos.\n\nAlternativa A: Incorreta. Embora apresente febre e dor abdominal, a loquiação escassa não é um marcador típico da infecção. Na maioria dos casos de endometrite, os lóquios são abundantes e apresentam odor desagradável e aspecto purulento.\n\nAlternativa B: Incorreta. Para a definição e o diagnóstico de infecção puerperal, a presença de febre é o sinal cardinal. Esta alternativa foca apenas na dor e na involução uterina, omitindo a alteração térmica necessária para caracterizar o processo infeccioso.\n\nAlternativa C: Incorreta. A temperatura de 37,9 graus Celsius é considerada apenas um estado subfebril. Os critérios clínicos para febre puerperal geralmente consideram temperaturas a partir de 38 graus Celsius. Além disso, calafrios e tremores são inespecíficos e podem ocorrer até no pós-parto fisiológico (calafrios do pós-parto imediato).\n\nAlternativa D: Incorreta. O erro principal está em descrever os lóquios como inodoros (sem cheiro). A infecção uterina puerperal é tipicamente polimicrobiana, envolvendo bactérias anaeróbias que produzem gases com odor fétido característico.\n\nAlternativa E: Correta. Esta alternativa descreve com precisão o quadro de endometrite. A febre elevada (38,9 graus Celsius) e a taquicardia são sinais de resposta inflamatória sistêmica à infecção. O exame físico do útero revela os achados clássicos: dor à palpação e mobilização, consistência amolecida (útero pastoso) e fundo uterino acima do nível esperado para 24 horas de pós-parto (hipoinvoluído).",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  },
+  {
+    "id": "AJUDA_9f288724-85d6-48f9-9660-7b353b438657",
+    "originalId": "9f288724-85d6-48f9-9660-7b353b438657",
+    "statement": "Uma mulher de 40 anos, sem comorbidades conhecidas, é internada na enfermaria de clínica médica para investigação de síndrome edemigênica. Ela relata início do quadro há três meses, com edema de membros inferiores e aumento do volume abdominal de evolução progressiva; nega dispneia, oligúria ou alterações de coloração da urina. Os exames laboratoriais evidenciam creatinina = 0,9mg/dL, albumina = 1,8g/dL e triglicerídeos = 320mg/dL. O sedimento urinário demonstra proteinúria 4+/4+, sem outras alterações. Considerando o diagnóstico mais provável, dois exames que devem ser solicitados na investigação etiológica desse caso são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "fator antinuclear e anticorpo antiestreptolisina O",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sorologia para hepatite B e anticorpo antifosfolipase A2",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "hemoglobina glicada e anticorpo antimembrana basal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sorologia para hepatite C e dosagem de crioglobulinas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente em questão apresenta uma síndrome nefrótica clássica, caracterizada pela tríade de edema progressivo (anasarca), hipoalbuminemia grave (1,8 g/dL) e dislipidemia (triglicerídeos de 320 mg/dL), além de uma proteinúria maciça (4+/4+) com sedimento urinário inocente (ausência de hematúria ou cilindros celulares). Em adultos de 40 anos com síndrome nefrótica pura, a glomerulopatia membranosa (GM) é uma das principais causas a serem investigadas.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O fator antinuclear (FAN) é útil para rastrear lúpus eritematoso sistêmico, que pode causar nefrite lúpica (incluindo a forma membranosa). No entanto, o anticorpo antiestreptolisina O (ASLO) é utilizado para o diagnóstico de febre reumática ou glomerulonefrite pós-estreptocócica (GNPE). A GNPE manifesta-se tipicamente como síndrome nefrítica (hematúria, hipertensão e oligúria), o que não condiz com o quadro de síndrome nefrótica pura da paciente.\n\nAlternativa b) Correta. A glomerulopatia membranosa é a principal suspeita. Ela pode ser primária (idiopática) ou secundária. O anticorpo antifosfolipase A2 (anti-PLA2R) é um marcador altamente específico para a forma primária da doença, estando presente em cerca de 70-80% dos casos. Já a sorologia para hepatite B é essencial na investigação, pois o vírus da hepatite B é uma das causas secundárias mais clássicas de glomerulopatia membranosa.\n\nAlternativa c) Incorreta. A hemoglobina glicada rastreia diabetes mellitus, uma causa comum de síndrome nefrótica. Entretanto, o anticorpo antimembrana basal (anti-GBM) está associado à síndrome de Goodpasture, que se manifesta como uma glomerulonefrite rapidamente progressiva (insuficiência renal aguda e hematúria) e hemorragia alveolar, quadro clínico muito mais agressivo e diferente da evolução insidiosa de três meses relatada.\n\nAlternativa d) Incorreta. A hepatite C e a dosagem de crioglobulinas estão mais associadas à glomerulonefrite membranoproliferativa. Essa patologia geralmente se apresenta com um padrão misto (nefrítico-nefrótico), frequentemente acompanhada de consumo de complemento e hematúria no sedimento urinário, o que não foi observado no caso.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  },
+  {
+    "id": "AJUDA_9f2f694a-42b4-42bd-bca7-1d6337fa9a68",
+    "originalId": "9f2f694a-42b4-42bd-bca7-1d6337fa9a68",
+    "statement": "Um lactente de 9 meses é levado ao pronto atendimento com febre (38,5 °C), irritabilidade e recusa alimentar há 48 horas. Ao exame otoscópico, a membrana timpânica está abaulada e hiperemiada. Ausência de secreção otorreica visível, não há sinais sistêmicos de gravidade e não há outra alteração no exame físico. Considerando as diretrizes atualizadas, qual é a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever antibiótico imediatamente, preferencialmente amoxicilina, devido à idade e sinais clínicos compatíveis com otite média aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Optar por conduta expectante e prescrever analgésicos e anti-inflamatórios, pois a maioria dos casos se resolve espontaneamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar timpanocentese e cultura, pois a confirmação etiológica é necessária antes de iniciar tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever corticoide oral para reduzir o edema da tuba auditiva e analgésicos para aliviar os sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar para avaliação otorrinolaringológica urgente, dado o risco elevado de complicações nessa faixa etária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um lactente de 9 meses com quadro clássico de Otite Média Aguda (OMA), caracterizado pelo início súbito de sintomas inflamatórios (febre, irritabilidade, recusa alimentar) e sinais otoscópicos de efusão em orelha média (abaulamento da membrana timpânica).\n\nAnálise das alternativas:\n\nAlternativa A (Correta): De acordo com as diretrizes da Academia Americana de Pediatria (AAP) e da Sociedade Brasileira de Pediatria (SBP), o tratamento com antibiótico está indicado imediatamente para: 1) Crianças com menos de 6 meses de idade; 2) Crianças entre 6 meses e 2 anos com diagnóstico de OMA confirmada (presença de abaulamento ou otorreia); 3) Crianças de qualquer idade com sintomas graves (dor intensa, febre acima de 39 °C ou sintomas persistentes por mais de 48 horas). Como o paciente tem 9 meses e apresenta membrana timpânica abaulada e febre, a prescrição de antibiótico (amoxicilina é a primeira linha) é a conduta correta.\n\nAlternativa B (Incorreta): A conduta expectante (observação por 48-72 horas apenas com analgésicos) é uma opção segura apenas para crianças acima de 6 meses com sintomas leves e quadro unilateral, ou para crianças acima de 2 anos sem sinais de gravidade. No caso de um lactente de 9 meses com abaulamento e febre, o risco de complicações e a menor taxa de resolução espontânea tornam o uso do antibiótico mandatório.\n\nAlternativa C (Incorreta): A timpanocentese com cultura é um procedimento invasivo reservado para situações específicas, como falha terapêutica após múltiplos esquemas de antibióticos, complicações supurativas (mastoidite), recém-nascidos ou pacientes imunocomprometidos. Não é um exame de rotina para o primeiro episódio de OMA.\n\nAlternativa D (Incorreta): O uso de corticoides orais não faz parte do protocolo de tratamento da OMA. O foco do manejo sintomático deve ser a analgesia com antitérmicos/analgésicos comuns (paracetamol ou dipirona) ou anti-inflamatórios não esteroides (ibuprofeno), associados ao tratamento etiológico (antibiótico).\n\nAlternativa E (Incorreta): A imensa maioria dos casos de OMA é manejada adequadamente pelo pediatra ou médico generalista no pronto atendimento ou ambulatório. O encaminhamento ao otorrinolaringologista é indicado em casos de otites de repetição, suspeita de complicações ou necessidade de procedimentos como a miringotomia. O quadro atual não apresenta sinais de urgência que justifiquem o encaminhamento imediato antes do início do tratamento.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:38.041Z"
+  }
+]

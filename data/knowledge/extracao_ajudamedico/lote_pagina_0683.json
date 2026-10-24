@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_bee9e347-83f4-4338-a434-3ad8c775a9ad",
+    "originalId": "bee9e347-83f4-4338-a434-3ad8c775a9ad",
+    "statement": "Em um município do interior, houve um aumento repentino de casos de diarreia aguda entre crianças em uma creche. A equipe de saúde pública foi acionada para investigar as possíveis causas e evitar a propagação da doença. Com base nessa situação hipotética, é correto afirmar que a primeira medida adotada pela equipe de vigilância epidemiológica deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar uma campanha de vacinação contra diarreia na comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "recolher amostras de água e de alimentos para análise laboratorial e verificar a qualidade sanitária da creche.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "notificar as autoridades estaduais sobre uma possível epidemia e aguardar orientação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "medicar todas as crianças com diarreia para evitar o agravamento dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "encaminhar as crianças para atendimento hospitalar especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as ações iniciais de vigilância epidemiológica e sanitária diante de um surto (aumento repentino de casos acima do esperado em uma área restrita). O foco da investigação epidemiológica em campo é identificar a fonte de contaminação e o modo de transmissão para interromper a cadeia de propagação da doença.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Campanhas de vacinação são medidas de prevenção primária e controle a longo prazo (como a vacina contra rotavírus no calendário vacinal). Diante de um surto instalado, a prioridade é identificar a causa e o veículo de transmissão atual, e não iniciar uma vacinação em massa, que não teria efeito imediato na interrupção do surto em curso. Além disso, a diarreia pode ser causada por diversos agentes para os quais não há vacina.\n\nAlternativa b) Correta. Em surtos de doenças de transmissão feco-oral, especialmente em locais fechados como creches, as fontes mais comuns são a água e os alimentos contaminados, além da higiene precária. A coleta de amostras ambientais (água e restos de alimentos) e a inspeção sanitária das instalações são medidas fundamentais e imediatas da vigilância para confirmar o veículo de transmissão e implementar medidas de controle, como a interdição de lotes de alimentos ou o tratamento da água.\n\nAlternativa c) Incorreta. Embora a notificação seja obrigatória, a equipe local de vigilância tem autonomia e o dever de iniciar a investigação de campo imediatamente. Aguardar orientações das autoridades estaduais sem tomar medidas preliminares de investigação retardaria a identificação do problema e permitiria que mais crianças adoecessem.\n\nAlternativa d) Incorreta. O manejo clínico da diarreia baseia-se na reidratação e manutenção da alimentação. Medicar todas as crianças indiscriminadamente (com antibióticos ou antidiarreicos) é contraindicado, pois a maioria das diarreias é autolimitada ou viral, e o uso inadequado de medicamentos pode mascarar sintomas ou causar efeitos colaterais, além de não ser uma medida de vigilância epidemiológica.\n\nAlternativa e) Incorreta. O encaminhamento hospitalar deve ser reservado apenas para casos graves, com desidratação grave ou sinais de choque. A maioria dos casos de diarreia aguda pode ser manejada na atenção primária ou no próprio domicílio com orientações adequadas. Esta é uma medida assistencial individual e não uma ação de investigação de surto.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:39.418Z"
+  },
+  {
+    "id": "AJUDA_beed7985-3f6a-4915-9527-e05b2c33ac76",
+    "originalId": "beed7985-3f6a-4915-9527-e05b2c33ac76",
+    "statement": "Na avaliação de um programa de vacinação em massa, qual é o papel dos indicadores de cobertura vacinal e como eles influenciam a política de saúde pública?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Medem a eficiência administrativa sem influenciar a política de saúde pública.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicam a proporção da população imunizada, auxiliando na identificação de áreas com baixa cobertura para intervenções.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Avaliam a satisfação da população com o sistema de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Monitoram exclusivamente os custos operacionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda um conceito fundamental da epidemiologia e da gestão em saúde pública: a vigilância das coberturas vacinais. Para compreender a resposta correta, é necessário entender que os indicadores de saúde servem como bússolas para a tomada de decisão.\n\nA cobertura vacinal é calculada pela razão entre o número de doses aplicadas de uma determinada vacina (em uma população e período específicos) e a população total que deveria ter recebido essa vacina.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora a cobertura vacinal possa refletir a eficiência da gestão e da logística administrativa, sua função principal vai muito além disso. Ela é uma ferramenta essencial para a formulação de políticas de saúde pública, servindo de base para o planejamento de ações, compra de insumos e definição de estratégias de controle de doenças.\n\nAlternativa b: Correta. Esta alternativa define com precisão a utilidade do indicador. A cobertura vacinal estima a proteção coletiva de uma comunidade. Ao identificar áreas geográficas ou grupos populacionais com baixa adesão, o sistema de saúde pode realizar intervenções dirigidas, como a busca ativa de faltosos, campanhas de intensificação ou o \"bloqueio\" epidemiológico em caso de surtos. Isso é crucial para manter a imunidade de rebanho e evitar o ressurgimento de doenças controladas ou erradicadas.\n\nAlternativa c: Incorreta. O objetivo da cobertura vacinal é técnico e epidemiológico. Para avaliar a satisfação da população, utilizam-se outros instrumentos, como pesquisas de opinião, indicadores de humanização ou dados de ouvidoria. Uma alta cobertura vacinal pode ocorrer mesmo em sistemas com baixa satisfação geral, devido à obrigatoriedade ou medo de doenças específicas.\n\nAlternativa d: Incorreta. O monitoramento de custos operacionais envolve contabilidade pública e gestão financeira (análise de gastos com logística, armazenamento e recursos humanos). Embora os dados de vacinação sejam usados em estudos de custo-benefício, o indicador de cobertura em si foca no impacto populacional e na proteção contra doenças, não no aspecto monetário exclusivo.\n\nEm resumo, os indicadores de cobertura vacinal permitem que os gestores de saúde transformem dados brutos em inteligência epidemiológica, direcionando recursos para onde o risco de surtos é maior e garantindo a eficácia do Programa Nacional de Imunizações.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:39.418Z"
+  },
+  {
+    "id": "AJUDA_bf0fffd8-030a-4317-b035-14100c058af3",
+    "originalId": "bf0fffd8-030a-4317-b035-14100c058af3",
+    "statement": "Uma criança de 2 anos é trazida à consulta com queixa de fadiga progressiva e irritabilidade. Ao exame físico, apresenta palidez cutâneo-mucosa (++/4+) e taquicardia leve. O hemograma revela hemoglobina de 9,5 g/dL, VCM de 70 fL, HCM de 22 pg e RDW de 16%. Sobre a interpretação desses achados laboratoriais e sua correlação com a cinética do ferro, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ferritina sérica é o marcador mais sensível para o diagnóstico, porém sua normalidade exclui a deficiência de ferro mesmo na vigência de quadros febris ou inflamatórios agudos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O aumento do RDW (anisocitose) é um dos primeiros sinais hematológicos da carência de ferro, ocorrendo antes mesmo da queda significativa do VCM, o que ajuda a diferenciar da Beta-talassemia menor (traço talassêmico), onde o RDW costuma ser normal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A reticulocitose marcada é um achado esperado na fase inicial da anemia ferropriva não tratada, indicando uma tentativa medular compensatória de corrigir a hipóxia tecidual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O índice de Mentzer (VCM/RBC) costuma ser menor que 13 na anemia ferropriva e maior que 13 nas talassemias, sendo este o critério definitivo para dispensa da dosagem de ferritina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO:\nOs dados laboratoriais apresentados mostram uma anemia microcítica (VCM 70 fL) e hipocrômica (HCM 22 pg) com aumento da variação do tamanho das hemácias (RDW 16%). Esse perfil clínico e laboratorial em uma criança de 2 anos é altamente sugestivo de anemia ferropriva, que é a principal causa de carência nutricional nessa faixa etária.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A ferritina sérica é, de fato, o marcador mais sensível para avaliar os estoques de ferro, pois é o primeiro a se alterar na fase de depleção das reservas. No entanto, ela é uma proteína de fase aguda. Isso significa que seus níveis podem se elevar em resposta a processos inflamatórios, infecciosos ou neoplásicos. Portanto, uma ferritina normal na vigência de febre ou inflamação não exclui a deficiência de ferro, podendo mascarar o diagnóstico.\n\nAlternativa b) Correta. O RDW (Red Cell Distribution Width) avalia a anisocitose, ou seja, a variação de tamanho entre as hemácias. Na anemia ferropriva, a instalação da carência de ferro é progressiva; a medula passa a produzir hemácias cada vez menores conforme o ferro acaba, gerando uma população de células de tamanhos diferentes, o que eleva o RDW logo no início do processo. Já no traço talassêmico (beta-talassemia menor), a microcitose é um defeito genético congênito e uniforme, no qual praticamente todas as hemácias são pequenas de forma homogênea, resultando em um RDW tipicamente normal.\n\nAlternativa c) Incorreta. A anemia ferropriva é classificada como uma anemia hipoproliferativa. Como o ferro é um componente essencial para a síntese da hemoglobina, sua falta impede a produção adequada de novas hemácias pela medula óssea. Dessa forma, a contagem de reticulócitos (hemácias jovens) costuma estar baixa ou normal (reticulocitopenia relativa). A reticulocitose só é esperada após o início do tratamento com reposição de ferro, marcando a recuperação medular.\n\nAlternativa d) Incorreta. O Índice de Mentzer é calculado pela relação entre o VCM e a contagem de hemácias (RBC em milhões/mm³). Na anemia ferropriva, esse índice geralmente é maior que 13, pois a redução do número de hemácias acompanha a queda do VCM. No traço talassêmico, o índice costuma ser menor que 13, pois há microcitose importante com contagem de hemácias normal ou aumentada. Além disso, índices hematimétricos são ferramentas de triagem e não substituem a dosagem de ferritina ou outros exames da cinética do ferro para o diagnóstico definitivo.\n\nGABARITO: Letra b.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:39.418Z"
+  },
+  {
+    "id": "AJUDA_bf113680-361f-42f1-aa24-4aa33ac4e636",
+    "originalId": "bf113680-361f-42f1-aa24-4aa33ac4e636",
+    "statement": "Paciente 22 anos, tercigesta, secundípara, 30ª semana de gravidez. Chegou à emergência obstétrica referindo perda de líquido amniótico, náusea e vômitos. No cartão de pré-natal, observa-se: tipagem sanguínea A negativo; Coombs indireto positivo e glicemia jejum de 200 mg% (todos realizados no 1º trimestre de gravidez). Ao exame obstétrico: dinâmica uterina ausente; altura de fundo uterino de 29cm; pressão arterial de 100 x 60 mmHg; toque vaginal, com colo fechado, longo e posterior e feto alto e móvel, bolsa das águas rotas com saída de líquido claro e discreto sangramento. A ultrassonografia realizada no momento do atendimento revelou: percentil de peso para idade gestacional 89; pico sistólico da artéria cerebral média fetal menor de 1,5 MoM para idade gestacional; e maior bolsão de 9,8cm. Durante aproximadamente 4 semanas, a paciente foi mantida internada, fazendo psicoterapia, controle glicêmico diário com dieta e insulinoterapia (NPH e Regular). O perfil glicêmico evoluiu satisfatoriamente a partir da 3ª semana de internamento. A interrupção da gravidez foi indicada com 33 semana e 5 dias, por sangramento genital há 2 horas, rotura prematura das membranas há mais de 24 horas e apresentação pélvica. A paciente foi submetida à cesariana. Na retirada do recém-nascido, o obstetra teve dificuldade porque ele estava em apresentação pélvica. O recém-nascido (RN) apresentou bom tônus e choro forte. Realizado o clampeamento do cordão umbilical com 60 segundos. \nAssinale a alternativa que melhor representa a hipótese diagnóstica que o médico assistente indicou a interrupção da gestação por cesariana, mas que, após o nascimento, não foi confirmada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diabetes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rotura prematura das membranas ovulares",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença hemolítica fetal e neonatal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Descolamento prematuro da placenta normalmente inserida",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Apresentação pélvica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, precisamos analisar o quadro clínico da paciente e confrontar a indicação da interrupção da gravidez com os achados do nascimento.\n\nAnálise do Quadro Clínico:\nA paciente apresenta diversos fatores de risco e diagnósticos estabelecidos:\n1. Diabetes Mellitus: Uma glicemia de jejum de 200 mg/dL no primeiro trimestre é diagnóstica de \"Overt Diabetes\" (diabetes pré-gestacional diagnosticado na gestação).\n2. Isoimunização Rh: Tipagem A negativa com Coombs indireto positivo confirma que a paciente está sensibilizada. No entanto, o Doppler da artéria cerebral média (ACM) com pico sistólico menor que 1,5 MoM indicava que, naquele momento, não havia anemia fetal grave.\n3. Rotura Prematura de Membranas Ovulares (RPMO): Confirmada clinicamente na admissão (30ª semana) e citada como motivo da interrupção (há mais de 24 horas).\n4. Apresentação Pélvica: Confirmada tanto no exame físico quanto pela dificuldade relatada pelo obstetra durante a cesariana.\n\nAnálise da Interrupção e a Alternativa Correta:\nA interrupção foi indicada com 33 semanas e 5 dias, motivada por três fatores: sangramento genital há 2 horas, RPMO há mais de 24 horas e apresentação pélvica.\n\nO ponto-chave para responder à questão está no sangramento genital e na condição do recém-nascido (RN). Diante de um sangramento genital súbito em uma gestante com RPMO, a principal hipótese diagnóstica de urgência que o médico deve considerar é o Descolamento Prematuro da Placenta (DPP).\n\nNo entanto, o enunciado descreve que:\n1. O RN apresentou bom tônus e choro forte (estabilidade hemodinâmica e vitalidade preservada).\n2. Foi realizado o clampeamento do cordão umbilical aos 60 segundos.\n\nNa prática obstétrica, se houvesse a confirmação de um Descolamento Prematuro de Placenta (DPP) com repercussão clínica justificando a interrupção, o clampeamento tardio do cordão (60 segundos) seria contraindicado. No DPP, prioriza-se o clampeamento imediato para reanimação neonatal e para evitar complicações de uma possível hemorragia feto-materna. Além disso, o excelente estado do RN ao nascer (bom tônus e choro forte) após um sangramento súbito sugere que aquele sangramento não era proveniente de um descolamento placentário significativo. Portanto, a hipótese de DPP, que motivou a urgência da cesariana devido ao sangramento, não foi confirmada pelos achados pós-natais e pela conduta de clampeamento.\n\nAnálise das alternativas:\n\na) Incorreta. O diabetes foi confirmado logo no primeiro trimestre (glicemia de 200 mg/dL).\nb) Incorreta. A rotura de membranas foi o quadro que manteve a paciente internada por 4 semanas, sendo um diagnóstico confirmado.\nc) Incorreta. Embora o Doppler não indicasse anemia no momento do exame, a doença hemolítica (isoimunização) é um diagnóstico presente (Coombs positivo). Contudo, não foi a suspeita de doença hemolítica que motivou a interrupção por sangramento, e sim a suspeita de DPP.\nd) CORRETA. O sangramento genital súbito levantou a suspeita de DPP (motivo da interrupção). Contudo, a vitalidade do RN e a possibilidade de realizar o clampeamento tardio indicam que o diagnóstico de descolamento não se confirmou cirurgicamente ou clinicamente após o parto.\ne) Incorreta. A apresentação pélvica foi confirmada pelo obstetra durante a realização do parto.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Sagramento da Segunda Metade",
+      "Diabetes Mellitus na Gestação",
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:39.418Z"
+  },
+  {
+    "id": "AJUDA_bf15a58e-37a7-47fc-80b5-3500d699c321",
+    "originalId": "bf15a58e-37a7-47fc-80b5-3500d699c321",
+    "statement": "Adolescente, 16 anos de idade, queixa-se de ainda não ter menstruado. Apresenta peso no percentil 60 e altura no percentil 20 em relação às curvas da Organização Mundial da Saúde (OMS). Avaliação de mamas Tanner 2; genitália externa com baixa pilificação (P2), introito vaginal com formação de pequenos lábios e hímen íntegro e perfurado. A ultrassonografia realizada por via abdominal visualiza gônadas pélvicas junto ao útero e volume reduzido, inferior a 2 cm³, com raros folículos e útero diminuído com linha endometrial tênue. Qual é o cariótipo compatível?",
+    "options": [
+      {
+        "id": "A",
+        "text": "45 X.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "46 XY.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "47 XXY.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "46 XX+21.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o diagnóstico etiológico de uma adolescente com amenorreia primária e atraso puberal. Vamos analisar os principais achados do caso clínico para chegar ao diagnóstico:\n\n1. Dados Clínicos: A paciente tem 16 anos e nunca menstruou (amenorreia primária). O desenvolvimento das mamas é Tanner 2 (estágio inicial) e a pilificação é P2, o que caracteriza um atraso no desenvolvimento puberal para a idade.\n\n2. Antropometria: O peso está no percentil 60 e a altura no percentil 20. Embora a altura não esteja abaixo do percentil 3, existe uma discrepância importante entre a estatura e o peso, sugerindo uma baixa estatura relativa, sinal clássico de determinadas síndromes genéticas.\n\n3. Ultrassonografia: A presença de útero pequeno com linha endometrial tênue e gônadas de volume muito reduzido (inferior a 2 cm³), com raros folículos, indica disgenesia gonadal (ovários que não se desenvolveram adequadamente ou entraram em falência precocemente).\n\nAnálise das alternativas:\n\na) CORRETA. O cariótipo 45,X é característico da Síndrome de Turner. Esta é a causa mais comum de hipogonadismo hipergonadotrófico e disgenesia gonadal em mulheres. As pacientes apresentam baixa estatura, amenorreia primária e desenvolvimento incompleto dos caracteres sexuais secundários devido à falência ovariana prematura (gônadas em fita ou hipoplásicas). O útero é pré-puberal (pequeno) justamente pela falta de estímulo estrogênico.\n\nb) INCORRETA. O cariótipo 46,XY em um fenótipo feminino poderia sugerir a Síndrome de Swyer (disgenesia gonadal pura) ou a Síndrome de Insensibilidade aos Androgênios (SIA). Na Síndrome de Swyer, as pacientes costumam ter estatura normal ou alta e gônadas em fita. Na SIA, a paciente teria desenvolvimento mamário (estímulo pela aromatização da testosterona), mas não teria útero, o que contradiz o achado da ultrassonografia desta paciente.\n\nc) INCORRETA. O cariótipo 47,XXY corresponde à Síndrome de Klinefelter, que ocorre em indivíduos com fenótipo masculino (presença do cromossomo Y). Caracteriza-se por testículos pequenos, ginecomastia e infertilidade, não sendo compatível com o fenótipo feminino descrito.\n\nd) INCORRETA. O cariótipo 46,XX+21 (Trissomia do 21) corresponde à Síndrome de Down. Embora essas pacientes possam ter alterações reprodutivas, a síndrome apresenta um conjunto de características fenotípicas sindrômicas marcantes (fácies típica, hipotonia, prega palmar única) que não foram descritas e não é a causa clássica de disgenesia gonadal isolada com o perfil antropométrico apresentado.\n\nConclusão: O quadro de amenorreia primária, atraso puberal, baixa estatura relativa e gônadas hipoplásicas em uma paciente fenotipicamente feminina é o quadro clínico \"de livro\" para a Síndrome de Turner (45,X).",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Puberdade",
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:39.418Z"
+  },
+  {
+    "id": "AJUDA_bf182fdf-fea4-4810-9006-a4571748a975",
+    "originalId": "bf182fdf-fea4-4810-9006-a4571748a975",
+    "statement": "De acordo com os princípios de cirurgia oncológica abdominal, os critérios para ressecção endoscópica de adenocarcinoma gástrico incluem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tumor restrito à mucosa (T1a), menor que 3 cm, moderadamente diferenciado, sem invasão linfovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tumor restrito à submucosa (T1b), menor que 2 cm, bem diferenciado, não ulcerado, sem linfonodo acometido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tumor restrito à mucosa (T1a), menor que 2 cm, bem diferenciado, não ulcerado, sem invasão linfovascular e sem linfonodo acometido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tumor restrito à mucosa ou submucosa, menor que 2 cm, qualquer diferenciação histológica, sem metástases à distância.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O adenocarcinoma gástrico precoce é aquele limitado à mucosa (T1a) ou submucosa (T1b), independentemente da presença de metástases linfonodais. Para que a ressecção endoscópica seja realizada com segurança oncológica, é necessário que o risco de metástase para linfonodos seja virtualmente zero, uma vez que o tratamento endoscópico não remove as cadeias linfáticas.\n\nAlternativa A: Incorreta. Embora o tumor seja restrito à mucosa (T1a) e diferenciado (o moderadamente diferenciado é agrupado com o bem diferenciado), o critério de tamanho estabelecido nos critérios clássicos (padrão) é de até 2 cm. O limite de 3 cm é utilizado em critérios expandidos para lesões específicas ou ulceradas.\n\nAlternativa B: Incorreta. A invasão da submucosa (T1b) aumenta drasticamente o risco de comprometimento linfonodal. A ressecção endoscópica para T1b só é aceita em protocolos de critérios expandidos muito restritos (invasão de até 500 micras na submucosa - sm1), o que não é a regra geral cobrada em provas de residência.\n\nAlternativa C: Correta. Esta alternativa define os critérios clássicos (padrão) da Associação Japonesa de Câncer Gástrico para a ressecção endoscópica (seja por mucosectomia - EMR ou por dissecção submucosa - ESD). Os critérios são: tumor restrito à mucosa (T1a), tipo histológico diferenciado (bem ou moderadamente diferenciado), lesão não ulcerada, diâmetro menor ou igual a 2 cm e ausência de invasão linfovascular. Nessas condições, o risco de metástase linfonodal é desprezível.\n\nAlternativa D: Incorreta. O termo \"qualquer diferenciação histológica\" invalida a alternativa, pois tumores indiferenciados (como o carcinoma de células em anel de sinete) possuem um risco muito maior de disseminação linfática e invasão submucosa oculta. Além disso, a inclusão genérica da submucosa sem especificações de profundidade também está incorreta para o manejo padrão.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:39.418Z"
+  },
+  {
+    "id": "AJUDA_bf1c88aa-7437-4764-8b49-6a33186d9e0f",
+    "originalId": "bf1c88aa-7437-4764-8b49-6a33186d9e0f",
+    "statement": "Idoso de 70 anos, hipertenso, diabético e coronariopata, procura atendimento de urgência em hospital pronto-socorro devido a quadro iniciado há 2 horas de hemiplegia à direita e desvio de rima labial para a esquerda, mantendo-se orientado no tempo e espaço, sem alterações evidentes em exame físico de pupilas. Durante espera para realização de exames, evoluiu subitamente com piora clínica caracterizada por perda de consciência, e ao ser realizado estímulo doloroso apresentou descerebração e abertura ocular ausente. A primeira conduta a ser tomada é a realização de",
+    "options": [
+      {
+        "id": "A",
+        "text": "tomografia computadorizada de crânio sem contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "eletrocardiograma de 12 derivações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "intubação orotraqueal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "dose de alteplase via endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "trombectomia mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta um quadro inicial sugestivo de Acidente Vascular Cerebral (AVC) agudo. Durante a observação, houve uma deterioração neurológica súbita e grave. Ao avaliarmos o estado neurológico atual pela Escala de Coma de Glasgow, observamos: abertura ocular ausente (1 ponto), resposta motora em descerebração/extensão anormal (2 pontos) e perda de consciência/ausência de resposta verbal (1 ponto), totalizando 4 pontos.\n\nDe acordo com os protocolos de suporte avançado de vida e atendimento de emergência, a prioridade absoluta em pacientes com rebaixamento do nível de consciência, especificamente com Glasgow menor ou igual a 8, é a manutenção e proteção da via aérea. O paciente em coma perde os reflexos protetores e a capacidade de manter a patência respiratória, exigindo intervenção imediata antes de qualquer exame ou tratamento específico.\n\nAlternativa (a) Incorreta: A tomografia computadorizada de crânio sem contraste é fundamental para o diagnóstico etiológico (diferenciar AVC isquêmico de hemorrágico) e deve ser feita precocemente. No entanto, na sequência do ABCDE da emergência, a estabilização da via aérea (A) precede o diagnóstico neurológico por imagem (D). O paciente não tem condições de segurança para ser transportado à sala de tomografia sem estar com a via aérea garantida.\n\nAlternativa (b) Incorreta: O eletrocardiograma é obrigatório na investigação de pacientes coronariopatas com suspeita de AVC para identificar arritmias ou infarto concomitante. Contudo, não é a conduta prioritária em um paciente com insuficiência neurológica grave e risco de aspiração.\n\nAlternativa (c) Correta: A intubação orotraqueal é a primeira conduta a ser tomada devido ao rebaixamento do nível de consciência (Glasgow 4). A prioridade é garantir a oxigenação, ventilação e proteção contra a aspiração de conteúdo gástrico, permitindo que os demais procedimentos sejam realizados de forma segura.\n\nAlternativa (d) Incorreta: A alteplase é o tratamento de escolha para o AVC isquêmico dentro da janela terapêutica, mas sua administração exige obrigatoriamente a realização prévia de uma tomografia para excluir hemorragia intracraniana. Além disso, a instabilidade neurológica grave com sinais de descerebração é uma contraindicação relativa ou sinal de complicação que exige estabilização prévia.\n\nAlternativa (e) Incorreta: A trombectomia mecânica é uma terapia avançada para oclusão de grandes vasos. Assim como a trombólise, ela depende de exames de imagem prévios e da estabilização clínica do paciente. O manejo das funções vitais (respiração e circulação) sempre antecede procedimentos intervencionistas.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Coma e Alterações da Consciência",
+      "Acidentes Vasculares Cerebrais",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:39.418Z"
+  },
+  {
+    "id": "AJUDA_bf2d13ee-4988-4ccb-82e8-aced8ca7dded",
+    "originalId": "bf2d13ee-4988-4ccb-82e8-aced8ca7dded",
+    "statement": "O Sistema Único de Saúde (SUS), criado pela Constituição de 1988 e regulamentado pela Lei 8.080/1990, garante a saúde como direito universal. Baseia-se nos princípios de universalidade, integralidade e equidade, e organiza-se por diretrizes como descentralização, regionalização, hierarquização e participação social. Sobre a hierarquização assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os serviços de saúde devem ser divididos por regiões, garantindo descentralização administrativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O atendimento deve obedecer a um fluxo progressivo de complexidade, partindo da atenção primária até os serviços de maior densidade tecnológica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O financiamento deve ser organizado em níveis federal, estadual, municipal e inter-bairros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A gestão deve ser compartilhada entre diferentes esferas de governo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. A divisão dos serviços por regiões geográficas delimitadas com o objetivo de aproximar a assistência da população refere-se ao conceito de Regionalização, enquanto a redistribuição de responsabilidades administrativas e de gestão entre os entes federativos define a Descentralização.\n\nAlternativa B: Correta. A Hierarquização organiza a rede de serviços do SUS em níveis crescentes de densidade tecnológica e complexidade (atenção primária, secundária e terciária). A Atenção Primária à Saúde atua como a porta de entrada preferencial e coordenadora do cuidado, referenciando os casos de maior complexidade para os níveis especializados por meio de fluxos regulados e progressivos.\n\nAlternativa C: Incorreta. O financiamento do SUS é tripartite, composto por recursos da União, dos Estados/Distrito Federal e dos Municípios. Não existe a figura orçamentária de financiamento inter-bairros, e a questão do custeio financeiro não se confunde com a organização técnica dos níveis assistenciais.\n\nAlternativa D: Incorreta. A gestão compartilhada e a pactuação entre esferas de governo são características da Descentralização e da gestão interfederativa do SUS (como nas Comissões Intergestores Bipartite e Tripartite), não definindo a hierarquização dos serviços de saúde.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:39.418Z"
+  },
+  {
+    "id": "AJUDA_bf3005f5-aaca-4790-9d02-f1cf4a5ff92a",
+    "originalId": "bf3005f5-aaca-4790-9d02-f1cf4a5ff92a",
+    "statement": "Paciente de 3 meses é hospitalizado com quadro de febre, coriza e tosse há quatro dias. Ao exame físico, você percebe taquipneia (FR: 62irpm), esforço respiratório leve, sibilos e crepitações difusas à ausculta respiratória, com saturação de 89% em ar ambiente. A radiografia de tórax mostra infiltrado intersticial e hiperinsuflação. A mãe nega episódios semelhantes anteriormente. Em relação ao tratamento desta criança, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar broncodilatadores inalatórios e palivizumabe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar dieta por sonda nasogástrica e adrenalina inalatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar soroterapia venosa e corticoterapia via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar oxigenioterapia e lavagem nasal com soro fisiológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — primeiro episódio de sibilância em um lactente de 3 meses, precedido por pródromos virais (febre, coriza e tosse) e apresentando sinais de esforço respiratório com achados radiológicos de aprisionamento aéreo (hiperinsuflação) — é o diagnóstico clássico de Bronquiolite Viral Aguda (BVA).\n\nO tratamento da Bronquiolite Viral Aguda é focado em medidas de suporte, uma vez que não existem terapias específicas que alterem significativamente o curso da doença. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: O uso de broncodilatadores inalatórios (como o salbutamol) não é recomendado rotineiramente para o tratamento da bronquiolite, pois a fisiopatologia da doença envolve edema e excesso de secreção na via aérea, e não broncoespasmo mediado por musculatura lisa. Além disso, o palivizumabe é um anticorpo monoclonal indicado apenas para a profilaxia em populações de alto risco (prematuros extremos e cardiopatas) durante a sazonalidade do vírus sincicial respiratório, não tendo utilidade no tratamento da doença instalada.\n\nAlternativa (b) Incorreta: A adrenalina inalatória não deve ser utilizada rotineiramente no tratamento hospitalar. Embora diretrizes passadas permitissem um teste terapêutico no ambiente de urgência, evidências atuais mostram que ela não reduz o tempo de internação. Quanto à sonda nasogástrica, ela é indicada apenas se o paciente apresentar desconforto respiratório grave que impeça a alimentação segura por via oral, o que não é a conduta prioritária imediata antes da oxigenação.\n\nAlternativa (c) Incorreta: O uso de corticosteroides (oral ou venoso) é contraindicado na bronquiolite viral aguda, pois diversos estudos demonstraram que eles não reduzem a gravidade dos sintomas nem o tempo de hospitalização. A soroterapia venosa também não é regra; a preferência é manter a hidratação por via oral ou enteral, reservando o soro venoso apenas para casos de desidratação clínica ou impossibilidade de ingestão.\n\nAlternativa (d) Correta: Esta é a conduta padrão de suporte. A oxigenioterapia está indicada para este paciente, pois sua saturação de oxigênio é de 89% (o alvo terapêutico em bronquiolite geralmente é manter a saturação igual ou superior a 90-92%). A lavagem nasal com soro fisiológico é essencial, pois os lactentes pequenos são respiradores nasais preferenciais e a obstrução das narinas por secreções aumenta significativamente o esforço respiratório.\n\nEm resumo, por se tratar de uma patologia autolimitada, o tratamento consiste em garantir a oxigenação adequada e a permeabilidade das vias aéreas superiores até a resolução do quadro.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:39.418Z"
+  },
+  {
+    "id": "AJUDA_bf3355fe-8e23-475d-8531-ede5eb31c182",
+    "originalId": "bf3355fe-8e23-475d-8531-ede5eb31c182",
+    "statement": "Na última reunião de equipe, na Unidade de Saúde da Família, a enfermeira informou que havia recebido um e-mail do Conselho Tutelar sobre a situação de uma adolescente de 13 anos que não tem comparecido às aulas. O agente comunitário de saúde (ACS) disse que esta família era bem complexa, residia na região da comunidade e que, no passado, já tinham abordado essa família, juntamente, com o Centro de Referência de Assistência Social (CRAS). A enfermeira se dispôs a realizar uma visita domiciliar (VD) com o ACS, no dia seguinte. O médico de família e comunidade se propôs a consultar sua agenda e verificar a data mais próxima para atender a adolescente. No início da reunião seguinte, o ACS apresentou o genograma atualizado da família para subsidiar as discussões. Fonte: Arquivo próprio do autor Na abordagem desta família, considerando o genograma apresentado, como pode ser classificada a relação da mãe do caso índice com a sua avó materna?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conflituosa e de proximidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Abuso físico e conflituosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "De proximidade e harmoniosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Conflituosa e separada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é necessário realizar a leitura correta dos símbolos e das conexões apresentados no genograma, uma ferramenta essencial na Medicina de Família e Comunidade para compreender a dinâmica familiar.\n\n1. Identificação dos personagens:\n- Caso-índice (identificado pelo círculo duplo): Marina, de 13 anos.\n- Mãe do caso-índice: Val, de 33 anos.\n- Avó materna do caso-índice: Cecília, de 68 anos (mãe de Val).\n\n2. Análise da relação entre Val (mãe) e Cecília (avó materna):\nAo observar a linha que une Val e Cecília, notamos a sobreposição de dois símbolos gráficos distintos:\n- Duas linhas paralelas retas: Representam uma relação de proximidade ou união forte.\n- Uma linha em ziguezague (ou quebrada): Representa uma relação conflituosa ou tensa.\n\nPortanto, a combinação desses símbolos indica uma relação que é, simultaneamente, próxima e conflituosa.\n\nAnálise das alternativas:\n\na) Correta. Como identificado acima, a representação gráfica de duas linhas retas sobrepostas por uma linha em ziguezague simboliza exatamente uma relação de proximidade com a presença de conflitos. É comum em famílias com vínculos fortes, mas marcadas por divergências ou tensões constantes.\n\nb) Incorreta. O abuso físico no genograma costuma ser representado por uma seta ou símbolos específicos de violência direcionada. Embora o ziguezague indique conflito, ele não define, por si só, a ocorrência de abuso físico.\n\nc) Incorreta. Uma relação meramente de proximidade e harmoniosa seria representada apenas pelas linhas paralelas (duas para proximidade, três para fusão/muita proximidade), sem a presença do ziguezague que indica o conflito.\n\nd) Incorreta. A relação \"separada\" ou \"distante\" é geralmente representada por uma linha tracejada ou por uma linha interrompida por barras (no caso de separação conjugal). O genograma mostra que há uma conexão forte (duas linhas), o que contradiz a ideia de distanciamento ou separação afetiva, apesar do conflito existente.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/db00152a6c645b87fd7e6a311ee066868cde2c682420915886ced9a8183b59c2.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_bf3355fe-8e23-475d-8531-ede5eb31c182_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:40.032Z"
+  }
+]

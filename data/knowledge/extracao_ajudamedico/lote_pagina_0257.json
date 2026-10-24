@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_4755edc3-ec34-42b2-8f91-902b47376d6f",
+    "originalId": "4755edc3-ec34-42b2-8f91-902b47376d6f",
+    "statement": "Assinale a alternativa que contém somente causas de demência rapidamente progressiva.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Creutzfeldt-Jakob, encefalite anti-NMDA e vasculites do sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Doença de Huntington, encefalite anti-LGI1 e doença de Alzheimer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vasculites do sistema nervoso central, doença de Creutzfeldt-Jakob e doença de Huntington.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença de Alzheimer, vasculites do sistema nervoso central e encefalite anti-NMDA.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CONCEITO DE DEMÊNCIA RAPIDAMENTE PROGRESSIVA (DRP)\n\nAs demências rapidamente progressivas são definidas como quadros de declínio cognitivo que evoluem de forma acelerada, geralmente em um período inferior a um ou dois anos, mas frequentemente em semanas ou meses. Diferentemente das demências degenerativas usuais, que levam muitos anos para progredir, as DRPs exigem investigação urgente, pois abrangem causas inflamatórias, infecciosas, autoimunes e priônicas que podem ser fatais ou, em alguns casos, tratáveis.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) - CORRETA:\nEsta alternativa reúne três etiologias que se encaixam perfeitamente no perfil de progressão rápida:\n- Doença de Creutzfeldt-Jakob: É a principal doença priônica humana e o protótipo da demência rápida, apresentando declínio cognitivo fulminante, mioclonias e alterações em exames como a proteína 14-3-3 no líquor ou restrição à difusão na ressonância magnética.\n- Encefalite anti-NMDA: É uma das principais encefalites autoimunes, evoluindo de forma subaguda com sintomas psiquiátricos graves, crises epilépticas e perda de memória em curto espaço de tempo.\n- Vasculites do sistema nervoso central: A inflamação dos vasos cerebrais pode causar isquemias multifocais ou lesões parenquimatosas que resultam em um comprometimento cognitivo de instalação acelerada.\n\nAlternativa (b) - INCORRETA:\n- Doença de Huntington: É uma patologia neurodegenerativa hereditária de curso crônico e progressão lenta, marcada por movimentos coreicos e alterações cognitivo-comportamentais que se desenvolvem ao longo de décadas.\n- Doença de Alzheimer: Embora seja a causa mais comum de demência, sua apresentação típica é insidiosa e gradual, progredindo ao longo de muitos anos (média de 8 a 12 anos).\n- Encefalite anti-LGI1: Esta é, sim, uma causa de demência rapidamente progressiva (autoimune), mas a alternativa está incorreta pela presença das outras duas condições crônicas.\n\nAlternativa (c) - INCORRETA:\n- Vasculites do SNC e Doença de Creutzfeldt-Jakob: São causas de progressão rápida.\n- Doença de Huntington: Como mencionado anteriormente, é uma doença de progressão lenta e crônica, o que invalida a alternativa que busca \"somente\" causas rapidamente progressivas.\n\nAlternativa (d) - INCORRETA:\n- Vasculites do SNC e Encefalite anti-NMDA: São causas de progressão rápida.\n- Doença de Alzheimer: É o erro da questão, pois é uma condição neurodegenerativa de longa duração e evolução lenta.\n\nGabarito: Letra (a).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Demências"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  },
+  {
+    "id": "AJUDA_47658613-9a73-4cdc-a051-f955e62ffa9d",
+    "originalId": "47658613-9a73-4cdc-a051-f955e62ffa9d",
+    "statement": "Paciente, 70 anos, foi submetido à gastrectomia subtotal por câncer gástrico. No 4º dia de pós-operatório, apresenta febre (39 °C), taquicardia, hipotensão (PA 85 x 60 mmHg), taquipneia e alteração do nível de consciência. O exame físico revela pele fria, extremidades mal perfundidas, débito urinário reduzido.\nNesse caso, a principal hipótese diagnóstica e a conduta inicial imediata a ser adotada são",
+    "options": [
+      {
+        "id": "A",
+        "text": "choque hipovolêmico por sangramento oculto e reposição volêmica com cristaloides.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trombose venosa profunda e anticoagulação com heparina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "insuficiência cardíaca descompensada e uso de diuréticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atelectasia extensa e fisioterapia respiratória intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sepse pós-operatória e coleta de culturas, antibiótico de amplo espectro e reposição volêmica precoce.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO paciente encontra-se no 4º dia de pós-operatório (DPO) de uma cirurgia de grande porte (gastrectomia subtotal). O quadro clínico é de instabilidade hemodinâmica grave, caracterizado por febre alta (39 °C), taquicardia, hipotensão (PA 85 x 60 mmHg), taquipneia e sinais de má perfusão tecidual (pele fria, extremidades mal perfundidas, oligúria e alteração do nível de consciência). \n\nNo contexto de pós-operatório abdominal, a presença de febre associada a sinais de disfunção orgânica e choque aponta fortemente para sepse ou choque séptico, frequentemente decorrentes de complicações cirúrgicas como deiscência de anastomose (fístulas), coleções intra-abdominais ou infecções hospitalares (pneumonia, por exemplo).\n\nAnálise das Alternativas:\n\na) Incorreta. Embora o choque hipovolêmico por sangramento oculto possa causar hipotensão, taquicardia e má perfusão, ele não costuma cursar com febre alta (39 °C). Além disso, o 4º DPO é um período mais sugestivo de complicações infecciosas do que de hemorragias agudas inadvertidas, que tendem a ocorrer nas primeiras horas ou de forma mais insidiosa sem hipertermia.\n\nb) Incorreta. A trombose venosa profunda (TVP) manifesta-se tipicamente com dor e edema assimétrico em membros inferiores. Se houvesse evolução para tromboembolismo pulmonar (TEP) maciço, o paciente poderia apresentar choque e taquicardia, mas a febre de 39 °C e o contexto abdominal tornam a sepse uma hipótese muito mais provável e condizente com o quadro sistêmico.\n\nc) Incorreta. A insuficiência cardíaca descompensada (choque cardiogênico) apresentaria sinais de congestão pulmonar ou sistêmica (estertores, turgência jugular) e não explicaria a febre alta. O uso de diuréticos em um paciente hipotenso e mal perfundido sem evidência de sobrecarga hídrica seria prejudicial, agravando a falência renal.\n\nd) Incorreta. A atelectasia é uma causa comum de febre no pós-operatório imediato (geralmente até o 2º DPO) e pode causar taquipneia. No entanto, ela não justifica o estado de choque (hipotensão grave, alteração de consciência e má perfusão) apresentado por este paciente.\n\ne) Correta. O quadro preenche os critérios de sepse e choque séptico (disfunção orgânica ameaçadora à vida causada por uma resposta desregulada do hospedeiro à infecção). A conduta imediata segue os protocolos de sobrevivência à sepse (*Surviving Sepsis Campaign*): estabilização hemodinâmica com reposição volêmica agressiva (cristaloides), coleta de culturas (sangue, urina e possivelmente secreções) para identificar o foco e início precoce de antibioticoterapia de amplo espectro para cobrir possíveis patógenos hospitalares e abdominais.\n\nConclusão:\n\nDiante de um paciente no 4º DPO com febre e sinais claros de choque, a sepse de foco abdominal deve ser a primeira hipótese. O manejo deve ser imediato para restaurar a perfusão e combater o agente infeccioso.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Sepse",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  },
+  {
+    "id": "AJUDA_477add10-d6f7-4d06-b8f4-050ab659570f",
+    "originalId": "477add10-d6f7-4d06-b8f4-050ab659570f",
+    "statement": "Considerando os testes em paralelo e os testes em série, analise as afirmativas e assinale a alternativa correta.\n\nI. Múltiplos testes em paralelo geralmente aumentam a especificidade.\nII. A solicitação de testes em paralelo tem maior probabilidade de diagnósticos falso-negativos.\nIII. Os testes em série maximizam a especificidade e o valor preditivo positivo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a afirmativa I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a afirmativa II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas a afirmativa III está correta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, é fundamental revisar os conceitos de testes diagnósticos realizados em conjunto, que podem ser aplicados de duas formas: em paralelo ou em série.\n\nTestes em Paralelo: Os testes são realizados simultaneamente. O diagnóstico é considerado positivo se qualquer um dos testes apresentar resultado positivo. Essa estratégia é útil quando se deseja aumentar a sensibilidade e o valor preditivo negativo (VPN), garantindo que poucos casos da doença passem despercebidos.\n\nTestes em Série: Os testes são realizados sequencialmente. Um segundo teste só é realizado se o primeiro for positivo. O diagnóstico final só é confirmado se todos os testes da sequência forem positivos. Essa estratégia é útil quando se deseja aumentar a especificidade e o valor preditivo positivo (VPP), evitando diagnósticos falsos-positivos.\n\nAnálise das afirmativas:\n\nAfirmativa I (Incorreta): Múltiplos testes em paralelo aumentam a sensibilidade do conjunto, e não a especificidade. Como basta que apenas um teste seja positivo para considerar o paciente doente, a chance de um indivíduo saudável ter um resultado falsamente positivo aumenta, o que reduz a especificidade.\n\nAfirmativa II (Incorreta): Testes em paralelo têm menor probabilidade de diagnósticos falsos-negativos. Como estamos utilizando vários \"filtros\" ao mesmo tempo, a capacidade de detectar a doença (sensibilidade) aumenta, tornando mais difícil que um paciente doente receba um resultado negativo em todos os testes simultaneamente.\n\nAfirmativa III (Correta): Nos testes em série, a exigência de que todos os resultados sejam positivos para confirmar a doença torna o critério diagnóstico muito mais rígido. Isso minimiza a ocorrência de falsos-positivos, maximizando a especificidade. Como a proporção de verdadeiros-positivos entre os que testaram positivo aumenta, o valor preditivo positivo (VPP) também é maximizado.\n\nConclusão:\nApenas a afirmativa III está correta. Portanto, a alternativa correta é a letra (c).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  },
+  {
+    "id": "AJUDA_47904852-bc21-4180-b22e-6ba2127fd173",
+    "originalId": "47904852-bc21-4180-b22e-6ba2127fd173",
+    "statement": "Homem de 45 anos com diabetes tipo 2 comparece em consulta de retorno. Relata sentir-se bem e nega quaisquer sintomas. Ele toma regularmente metformina (2 g/dia) e ramipril (10 mg/dia). Ao exame físico: pressão arterial: 122 x 78 mmHg; frequência cardíaca: 78 bpm; peso: 76 kg; altura: 182 cm. Exames séricos atuais: ureia: 58,9 mg/dL; creatinina: 1,92 mg/dL (taxa de filtração glomerular estimada: 41 mL/min/1,73 m²); hemoglobina glicada (HbA1c): 6,7%. Relação albumina/creatinina urinária: 1.361 mg/g (normal: < 22). Para esse paciente, a conduta de escolha é associar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "empagliflozina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "liraglutida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "repaglinida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "rosiglitazona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sitagliptina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Este paciente tem diabetes tipo 2 com doença renal do diabetes estabelecida. A TFG de 41 mL/min/1,73 m² corresponde ao estágio G3b. A relação albumina/creatinina de 1.361 mg/g indica albuminúria muito aumentada (A3, acima de 300 mg/g). Ele já usa IECA (ramipril 10 mg/dia, dose máxima), com pressão controlada (122 x 78 mmHg). A HbA1c de 6,7% está na meta. O IMC é de cerca de 23 kg/m², portanto não há obesidade. Assim, o objetivo da nova droga não é reduzir a glicemia, e sim proteger rim e coração.\n\nConceito central: em DM2 com DRC e TFG ≥ 20 mL/min/1,73 m², KDIGO e ADA recomendam inibidor de SGLT2 somado ao bloqueio do sistema renina-angiotensina (IECA ou BRA), independentemente da HbA1c. Os estudos CREDENCE (canagliflozina), DAPA-CKD (dapagliflozina) e EMPA-KIDNEY (empagliflozina) mostraram:\n- redução da progressão para doença renal terminal e da perda de função renal;\n- redução da albuminúria;\n- redução de eventos cardiovasculares e de hospitalização por insuficiência cardíaca.\n\nAnálise das alternativas:\n\na) Correta. A empagliflozina é um inibidor de SGLT2 com benefício renal e cardiovascular comprovado (EMPA-REG OUTCOME e EMPA-KIDNEY). Pode ser iniciada com TFG ≥ 20. Tem baixo risco de hipoglicemia, o que importa porque o paciente já está na meta glicêmica. É a associação de escolha para nefroproteção.\n\nb) Incorreta. A liraglutida é um agonista de GLP-1 com benefício cardiovascular (LEADER) e algum efeito sobre a albuminúria. Na DRC, porém, é droga de segunda linha, usada quando o SGLT2i não é tolerado ou é preciso mais controle glicêmico ou perda de peso. Aqui não há necessidade glicêmica nem obesidade, e o benefício renal é menos robusto que o dos SGLT2i.\n\nc) Incorreta. A repaglinida é um secretagogo (glinida) sem benefício renal ou cardiovascular. Acrescenta risco de hipoglicemia num paciente já controlado.\n\nd) Incorreta. A rosiglitazona (tiazolidinediona) não tem benefício renal comprovado. Causa retenção hídrica e aumenta o risco de insuficiência cardíaca, com preocupação histórica de eventos cardiovasculares. Deve ser evitada em DRC.\n\ne) Incorreta. A sitagliptina, um inibidor de DPP-4, tem efeito neutro sobre desfechos cardiovasculares e renais (TECOS). Exige ajuste de dose na DRC e não oferece nefroproteção.\n\nPonto adicional: com TFG entre 30 e 45, a dose da metformina deve ser reduzida para no máximo 1 g/dia, e o paciente usa 2 g/dia. Se a albuminúria persistir apesar de IECA e SGLT2i, a finerenona (antagonista mineralocorticoide não esteroidal) é uma opção adicional, desde que o potássio seja normal.\n\nMensagem-chave: em DM2 com DRC e albuminúria, associe um SGLT2i ao IECA/BRA mesmo com HbA1c na meta. A indicação é nefroproteção e cardioproteção, não controle glicêmico.\n\nGabarito: A.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  },
+  {
+    "id": "AJUDA_47988134-4098-4346-87b9-a0072b1b540a",
+    "originalId": "47988134-4098-4346-87b9-a0072b1b540a",
+    "statement": "Uma criança de 8 anos, previamente saudável, é avaliada por quadro de febre baixa, náuseas, prostração, dor abdominal e icterícia. Há 2 dias, os pais notaram urina escura e fezes claras. A criança frequenta escola pública, e, recentemente, colegas de classe apresentaram sintomas semelhantes. No exame, observam-se hepatomegalia dolorosa e icterícia. AST e ALT estão significativamente elevadas; bilirrubina total: 6,5 mg/dL (direta: 4,2 mg/dL). Aguarda resultado de sorologias.\n\nDe acordo com os dados apresentados, a conduta imediata adequada consiste em",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar antibioticoterapia empírica com ceftriaxona, devido à possibilidade de colangite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar lavagem gástrica e uso de carvão ativado devido à suspeita de intoxicação exógena.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "instituir medidas de suporte clínico e sintomático, com hidratação, alimentação leve e observação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "iniciar tratamento com antivirais, como ribavirina, enquanto aguarda sorologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro clínico descreve uma criança de 8 anos com sintomas clássicos de hepatite viral aguda: febre, prostração, dor abdominal e icterícia acompanhada de colúria (urina escura) e hipocolia fecal (fezes claras). O dado epidemiológico fundamental é o fato de colegas de classe apresentarem sintomas semelhantes, o que sugere fortemente uma transmissão fecal-oral, característica da Hepatite A, muito comum em ambiente escolar. Os exames laboratoriais confirmam lesão hepatocelular (AST e ALT elevadas) e colestase (hiperbilirrubinemia direta).\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. A colangite aguda é uma infecção bacteriana das vias biliares, geralmente associada a obstruções anatômicas (cálculos ou malformações), o que é raro em crianças previamente saudáveis. O contexto de surto escolar e a elevação acentuada de transaminases direcionam o diagnóstico para hepatite viral, e não para uma emergência cirúrgica ou bacteriana biliar. O uso de ceftriaxona não teria benefício no caso de hepatite viral.\n\nAlternativa b) Incorreta. Não há relato de ingestão acidental de substâncias tóxicas ou medicamentos (como paracetamol em doses supraterapêuticas). Além disso, a presença de febre e o vínculo epidemiológico com outros casos na escola reforçam a etiologia infecciosa. A lavagem gástrica e o carvão ativado são medidas indicadas para intoxicações agudas ocorridas há poucos minutos ou horas, o que não condiz com a evolução de dias descrita no enunciado.\n\nAlternativa c) Correta. O diagnóstico mais provável é Hepatite A aguda. Na imensa maioria dos casos em pediatria, essa doença é autolimitada e o tratamento é exclusivamente de suporte. Isso inclui repouso relativo (conforme a tolerância da criança), hidratação oral, dieta leve (pobre em gorduras para facilitar a digestão devido à redução da bile no intestino) e uso de medicamentos sintomáticos para febre ou náuseas. O monitoramento deve ser clínico, observando sinais de alerta para insuficiência hepática, como alteração do nível de consciência (encefalopatia) ou sangramentos.\n\nAlternativa d) Incorreta. Não existe tratamento antiviral específico indicado para a Hepatite A aguda. A ribavirina é utilizada em contextos muito específicos, como em protocolos para Hepatite C crônica ou certas infecções por vírus sincicial respiratório, não tendo aplicação no manejo desta criança. O tratamento das hepatites agudas comuns é expectante.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  },
+  {
+    "id": "AJUDA_47b5a4ba-206e-46ef-b23f-9ac30d331248",
+    "originalId": "47b5a4ba-206e-46ef-b23f-9ac30d331248",
+    "statement": "Paciente masculino, 62 anos de idade, diagnóstico de câncer colorretal com metástase hepática, evolui com ascite de instalação subaguda. Exames laboratoriais: albumina sérica 3,2 g/dl; albumina do líquido ascítico 1,8 g/dl; contagem de neutrófilos no líquido ascítico 120/mm³. Ao exame físico: hepatomegalia e circulação colateral abdominal.\nNo que diz respeito à análise do liquido ascítico do paciente e à suspeita de infecção associada, assinale a opção que apresenta os procedimentos corretos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar antibiótico empírico imediatamente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "repetir paracentese em 24 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar o aguardo do resultado de cultura por agora, para se definir a existência ou não de peritonite bacteriana espontânea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apontar a ausência de critérios para peritonite bacteriana espontânea no paciente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "descartar infecção em líquido ascítico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para a análise correta deste caso, dois parâmetros principais do líquido ascítico devem ser avaliados: o GASA (Gradiente de Albumina Soro-Ascite) e a contagem de neutrófilos.\n\nO GASA é calculado pela subtração da albumina do líquido ascítico (1,8 g/dL) da albumina sérica (3,2 g/dL), resultando em 1,4 g/dL. Como o valor é superior a 1,1 g/dL, confirma-se que a ascite é causada por hipertensão portal, o que é coerente com o quadro de metástases hepáticas e circulação colateral.\n\nPara avaliar a presença de infecção, especificamente a Peritonite Bacteriana Espontânea (PBE), observa-se a contagem de neutrófilos no líquido. O critério diagnóstico clássico para PBE é uma contagem de neutrófilos maior ou igual a 250/mm³. Como o paciente apresenta 120 neutrófilos/mm³, ele não preenche os critérios para essa complicação.\n\nAnálise das alternativas:\n\na) Incorreta. O tratamento antibiótico empírico para PBE está indicado quando a contagem de neutrófilos é igual ou superior a 250/mm³ ou se houver sintomas clínicos claros de infecção (como febre ou dor abdominal súbita), o que não foi relatado no caso.\n\nb) Incorreta. Não há indicação de repetir a paracentese em 24 horas de forma rotineira neste cenário. A repetição costuma ser feita após 48 horas do início do tratamento em casos confirmados de PBE para avaliar a queda dos neutrófilos.\n\nc) Incorreta. O diagnóstico de PBE é baseado na citologia (neutrófilos). Embora a cultura deva ser solicitada, o médico não deve aguardar seu resultado (que pode demorar dias) para definir a conduta se os critérios citológicos já estivessem presentes.\n\nd) Correta. A contagem de 120 neutrófilos/mm³ é inferior ao ponto de corte de 250/mm³, logo, o paciente não apresenta critérios para o diagnóstico de peritonite bacteriana espontânea.\n\ne) Incorreta. Embora a PBE não esteja presente pelos critérios citológicos, o termo \"descartar\" é muito forte em medicina, pois o paciente pode apresentar outras formas de infecção ou estar em uma fase muito precoce (bacteriascite). A alternativa D é tecnicamente superior por basear-se estritamente nos critérios diagnósticos.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  },
+  {
+    "id": "AJUDA_47b73d35-e357-48c1-8e20-720f8eadd520",
+    "originalId": "47b73d35-e357-48c1-8e20-720f8eadd520",
+    "statement": "Pedro Antônio Almada, 21 anos, residente na ilha Murutucum, município de Belém, Estado do Pará, onde há precárias condições sanitárias, apresenta dor epigástrica, exame protoparasitológico direto das fezes negativo para helmintos e protozoários e leucograma com eosinofilia de 12%. O médico da Estratégia Saúde da Família deve solicitar",
+    "options": [
+      {
+        "id": "A",
+        "text": "exame de tamização das fezes para pesquisa de giárdia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "exame da fita gomada para pesquisa de tênias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "exame de fezes pelo método de Baermann para pesquisa de larvas rabditoides de Strongiloides stercoralis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "pesquisa de sangue oculto nas fezes para investigação inicial de câncer gástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "exame de fezes com coloração por lugol para pesquisa de leucócitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta o caso de um jovem de 21 anos que vive em área com saneamento precário, queixando-se de dor epigástrica e apresentando eosinofilia significativa (12%). A associação de dor na parte superior do abdome com aumento de eosinófilos no sangue deve sempre levantar a suspeita clínica de estrongiloidíase (infecção pelo Strongyloides stercoralis). O fato de o exame protoparasitológico direto ter sido negativo não exclui o diagnóstico, pois esse método tem baixa sensibilidade para detectar larvas.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A giárdia é um protozoário que pode causar dor epigástrica e má absorção, porém protozoários não costumam causar eosinofilia. A eosinofilia é um marcador típico de infecções por helmintos que realizam ciclo tecidual ou têm contato direto com a mucosa e o sistema imunológico.\n\nAlternativa b) Incorreta. O exame da fita gomada (método de Graham) é o padrão-ouro para o diagnóstico de Enterobius vermicularis (Oxiúrus), cujas fêmeas depositam ovos na região perianal. Essa parasitose causa tipicamente prurido anal noturno, e não dor epigástrica ou eosinofilia importante.\n\nAlternativa c) Correta. O Strongyloides stercoralis é um helminto que vive na mucosa do duodeno e jejuno, podendo simular o quadro de uma úlcera péptica ou gastrite (dor epigástrica). Ele é uma causa clássica de eosinofilia. Como a eliminação de larvas nas fezes é intermitente e em pequena quantidade, os métodos de rotina (como o de Hoffman) costumam falhar. Por isso, são necessários métodos de concentração que se baseiam no hidrotropismo e termotropismo das larvas, como o método de Baermann-Moraes ou de Rugai.\n\nAlternativa d) Incorreta. O câncer gástrico é extremamente raro em pacientes de 21 anos. Além disso, a eosinofilia aponta para uma etiologia parasitária ou alérgica, e não neoplásica maligna de estômago. A investigação de câncer gástrico seria feita por endoscopia digestiva alta, e não apenas por sangue oculto.\n\nAlternativa e) Incorreta. A pesquisa de leucócitos nas fezes é utilizada para identificar processos inflamatórios ou infecciosos invasivos (como colites bacterianas), não sendo o exame indicado para investigação de parasitoses intestinais crônicas com eosinofilia. O Lugol é um corante usado para visualizar cistos de protozoários e ovos de helmintos, mas não é específico para pesquisa de leucócitos e tem baixa eficácia para diagnosticar estrongiloidíase.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  },
+  {
+    "id": "AJUDA_47bc7af9-6ca1-4cb4-9b59-59265c36803a",
+    "originalId": "47bc7af9-6ca1-4cb4-9b59-59265c36803a",
+    "statement": "A Política Nacional de Atenção Básica (PNAB, 2017) define os atributos essenciais da Atenção Primária à Saúde (APS) como fundamentais para organizar o cuidado e garantir resolutividade e equidade. Considerando essa perspectiva, assinale a alternativa que melhor descreve a integração entre os atributos essenciais da APS e a prática da equipe de saúde:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A APS deve priorizar o atendimento individual e episódico, com foco em doenças agudas, sem necessidade de acompanhar longitudinalmente os usuários ou coordenar cuidados com outros níveis de atenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A integralidade, a coordenação do cuidado e a longitudinalidade são atributos centrais da APS, exigindo que a equipe de saúde acompanhe continuamente os usuários, articule ações entre diferentes serviços e aborde de forma abrangente os determinantes biopsicossociais da saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O atributo de primeiro contato implica no registro de usuários na unidade de saúde, sem necessidade de acesso oportuno ou resolutividade, uma vez que os casos complexos serão encaminhados imediatamente para níveis superiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A APS deve centralizar decisões e concentrar recursos na atenção especializada para garantir eficiência e maior capacidade tecnológica, pois isso garante integralidade e coordenação do cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A longitudinalidade é alcançada por meio de consultas médicas periódicas, sem necessidade de articulação com outros profissionais ou serviços, e não envolve participação comunitária ou territorialização do cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os fundamentos da Atenção Primária à Saúde (APS) conforme estabelecidos pela Política Nacional de Atenção Básica (PNAB) de 2017. Para respondê-la corretamente, é necessário conhecer os atributos essenciais definidos por Barbara Starfield, que baseiam a organização da APS no Brasil: Acesso de Primeiro Contato, Longitudinalidade, Integralidade e Coordenação do Cuidado.\n\nAlternativa (a) Incorreta: A APS se opõe ao modelo biomédico tradicional, centrado na doença e no atendimento episódico/agudo. Ao contrário desse modelo, ela deve ser a porta de entrada preferencial e focar na pessoa ao longo do tempo (Longitudinalidade), independentemente da presença ou ausência de doenças agudas.\n\nAlternativa (b) Correta: Esta alternativa sintetiza com precisão os atributos centrais. A Integralidade pressupõe que a equipe olhe para o indivíduo como um todo, considerando aspectos biológicos, psicológicos e sociais. A Longitudinalidade garante o acompanhamento ao longo da vida, criando vínculo. A Coordenação do Cuidado é o papel da equipe de APS de organizar o fluxo do paciente dentro da Rede de Atenção à Saúde (RAS), garantindo que as informações e o cuidado não se fragmentem entre diferentes especialistas ou níveis de atenção.\n\nAlternativa (c) Incorreta: O Acesso de Primeiro Contato não se resume ao ato administrativo de registrar o usuário. Ele implica acessibilidade (geográfica, temporal e organizacional) e resolutividade. A equipe deve ser capaz de resolver a grande maioria dos problemas de saúde (cerca de 80 a 85%), e não apenas encaminhar casos complexos imediatamente. O encaminhamento deve ser uma ação coordenada, e não uma transferência de responsabilidade.\n\nAlternativa (d) Incorreta: A APS deve ser o centro comunicador e a ordenadora da Rede de Atenção à Saúde, e não centralizar recursos na atenção especializada. A eficiência e a integralidade são alcançadas quando a APS filtra e coordena o uso da tecnologia especializada de forma racional, evitando intervenções desnecessárias e garantindo que o cuidado seja centrado nas necessidades do paciente, não na tecnologia *per se*.\n\nAlternativa (e) Incorreta: A Longitudinalidade não é um conceito meramente temporal de consultas médicas repetidas. Ela envolve a construção de uma relação de confiança e vínculo terapêutico entre a equipe (não apenas o médico) e o usuário. Além disso, a PNAB enfatiza a territorialização e a participação comunitária como pilares para que esse acompanhamento seja efetivo e contextualizado na realidade de vida da população.",
+    "exam": "UFRB",
+    "year": 2026,
+    "banca": "UFRB",
+    "uf": "BA",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35674e2a8fdd600c4528186d032722b2534d565f8659f6d532a9977d76ec6035.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2f3a30ed0fd307a6a4fadc82fa84bd78995407514592af81b25948bee1e5d79f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  },
+  {
+    "id": "AJUDA_47bcb787-c9ac-45d8-bbbe-b1ebd559858d",
+    "originalId": "47bcb787-c9ac-45d8-bbbe-b1ebd559858d",
+    "statement": "Pesquisadores planejaram avaliar a associação entre duração de viagens aéreas superiores a 8 horas e trombose venosa profunda (TVP). Definiram que um estudo de casos e controles seria apropriado devido à raridade do desfecho. Contudo, para avaliar melhor temporalidade e gradiente biológico, outro grupo sugeriu realizar um estudo de coorte prospectivamente planejado. Qual a principal vantagem do estudo de coorte nesse contexto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Possibilidade de estimar a incidência da TVP entre pessoas expostas e não expostas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Menor tempo e menor custo do que o estudo de casos e controles.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Maior eficiência para estudar desfechos incomuns.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Garantia de ausência de vieses de seleção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as diferenças fundamentais entre os dois principais desenhos de estudos observacionais analíticos: o estudo de casos e controles e o estudo de coorte.\n\nAlternativa A (Correta): A principal característica metodológica do estudo de coorte é que ele parte da exposição (viajar mais de 8 horas) em direção ao desfecho (desenvolver TVP). Como acompanhamos um grupo de pessoas saudáveis ao longo do tempo, podemos contar quantos novos casos surgem em cada grupo. Isso permite o cálculo direto da incidência da doença tanto nos expostos quanto nos não expostos, possibilitando a determinação do Risco Relativo. No estudo de casos e controles, como já selecionamos os indivíduos doentes, não temos o denominador populacional para calcular a incidência, estimando-se apenas a Odds Ratio (razão de chances).\n\nAlternativa B (Incorreta): Os estudos de coorte, especialmente os prospectivos, são geralmente muito mais caros e demorados do que os estudos de casos e controles. Isso ocorre porque exigem o acompanhamento de grandes grupos de pessoas por períodos prolongados, enquanto o estudo de caso-controle costuma ser realizado de forma retrospectiva, coletando dados de prontuários ou entrevistas sobre o passado.\n\nAlternativa C (Incorreta): Esta é, na verdade, uma vantagem do estudo de casos e controles. Para estudar desfechos incomuns ou raros (como é o caso da TVP na população geral), o estudo de coorte precisaria de uma amostra gigantesca e muito tempo de seguimento para que alguns poucos casos ocorressem. No estudo de caso-controle, o pesquisador já começa o estudo selecionando quem tem a doença, o que o torna muito mais eficiente para eventos raros.\n\nAlternativa D (Incorreta): Nenhum desenho de estudo epidemiológico garante a ausência total de vieses. Embora o estudo de coorte prospectivo reduza significativamente o viés de memória (comum no estudo de caso-controle), ele é vulnerável a outros tipos de viés de seleção, como a perda de seguimento (atrito), em que os participantes que abandonam o estudo podem ter características diferentes dos que permanecem, distorcendo os resultados.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  },
+  {
+    "id": "AJUDA_47bec787-8443-4c6c-b0cf-744d09577d3d",
+    "originalId": "47bec787-8443-4c6c-b0cf-744d09577d3d",
+    "statement": "O SUS está organizado de forma regionalizada e hierarquizada para formar as Redes de Atenção à Saúde no âmbito de Regiões de Saúde. Qual é o serviço necessário para que um território seja reconhecido como Região de Saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Centro de alta complexidade em oncologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Centro de Terapia Renal Substitutiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Maternidade de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Unidade Básica de Saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "CONCEITO E FUNDAMENTAÇÃO LEGAL\n\nA organização do Sistema Único de Saúde (SUS) em Regiões de Saúde é regida pelo Decreto nº 7.508, de 2011, que regulamenta a Lei nº 8.080/1990. Para que um território seja oficialmente reconhecido e instituído como uma Região de Saúde, ele deve dispor de um rol mínimo de ações e serviços que garantam a integralidade da atenção dentro daquele espaço geográfico.\n\nDe acordo com o Artigo 5º do referido decreto, a Região de Saúde deve conter, no mínimo, serviços de:\n1. Atenção primária;\n2. Urgência e emergência;\n3. Atenção psicossocial;\n4. Atenção ambulatorial especializada e hospitalar;\n5. Vigilância em saúde.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Centros de Alta Complexidade em Oncologia (CACONs ou UNACONs) são serviços de extrema importância para a rede, porém são classificados como de alta complexidade e não constam da lista de requisitos mínimos obrigatórios para a configuração de uma Região de Saúde.\n\nAlternativa b) Incorreta. A Terapia Renal Substitutiva é um serviço especializado de alta complexidade. Embora as Regiões de Saúde devam buscar a autossuficiência em diversos níveis, este serviço específico não é um critério de definição legal para a existência da região.\n\nAlternativa c) Incorreta. O requisito legal estabelecido pelo Decreto nº 7.508/2011 é a existência de \"atenção hospitalar\". Uma maternidade de alto risco é um serviço hospitalar muito específico. O decreto não exige especialidades específicas de alto risco, mas sim a presença da assistência hospitalar de forma geral.\n\nAlternativa d) Correta. A Unidade Básica de Saúde (UBS) é a principal porta de entrada e a base da Atenção Primária no Brasil. Como a \"Atenção Primária\" é o primeiro item da lista de requisitos obrigatórios do Decreto nº 7.508/2011, a oferta desses serviços (representados pela UBS) é condição indispensável para que o território seja reconhecido como Região de Saúde. Sem a rede de atenção básica instalada, o território não cumpre o critério de regionalização do SUS.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Processos de Descentralização e Regionalização do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:51.676Z"
+  }
+]

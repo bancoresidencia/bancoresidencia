@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_3b1e90c7-9bd6-4da9-a89a-1f189da7ad94",
+    "originalId": "3b1e90c7-9bd6-4da9-a89a-1f189da7ad94",
+    "statement": "Com a finalidade de identificar fatores associados à hipertensão arterial sistêmica (HAS), foram selecionados 1.453 indivíduos de determinada localidade. Cento e três indivíduos (7,1%) foram diagnosticados como hipertensos. O odds ratio (OR) de hipertensão entre os que apresentavam hábitos de vida sedentários comparados com aqueles mais ativos foi de 4,01 com IC95% (2,19-6,27). Quando os dados foram ajustados para idade, o OR foi de 3,57 com IC95% (0,87-5,31). Com base nos resultados desse estudo, qual a afirmação correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Representa avaliação de estudo epidemiológico do tipo caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de estudo epidemiológico do tipo transversal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O risco de desenvolver hipertensão é 4,01 vezes maior entre os que têm hábitos de vida sedentários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A probabilidade de hipertensão é 3,57% superior nos indivíduos com hábitos de vida sedentários.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um estudo epidemiológico que analisa, em um único momento, a presença de hipertensão arterial sistêmica (HAS) e fatores associados em uma amostra de 1.453 indivíduos.\n\nAnálise das alternativas:\n\na) Incorreta. No estudo de caso-controle, os pesquisadores partem de um grupo que já possui a doença (casos) e um grupo sem a doença (controles), olhando retrospectivamente para a exposição. No cenário descrito, a amostra foi selecionada de uma localidade e a prevalência (7,1%) foi identificada simultaneamente à coleta de dados sobre hábitos de vida. Isso caracteriza um corte transversal, não um caso-controle.\n\nb) Correta. O estudo é transversal (ou seccional) porque realiza uma \"fotografia\" da população em um determinado ponto no tempo. Ele mede a prevalência da doença (os 103 indivíduos hipertensos representam 7,1% da amostra) e a exposição (sedentarismo) simultaneamente. Esse tipo de desenho é ideal para descrever a carga de doenças e identificar associações que podem gerar hipóteses para estudos longitudinais.\n\nc) Incorreta. O termo \"risco de desenvolver\" refere-se à incidência, o que exige o acompanhamento de indivíduos ao longo do tempo (estudo de coorte). Em estudos transversais, falamos em prevalência e chance (Odds Ratio), e não em risco de desenvolvimento futuro. Além disso, o valor de 4,01 refere-se ao Odds Ratio bruto, que perdeu significância estatística após o ajuste para idade.\n\nd) Incorreta. Existe um erro de interpretação estatística aqui. Um Odds Ratio (OR) de 3,57 não significa que a probabilidade é 3,57% superior. Significa que a chance de ter a doença é 3,57 vezes maior. No entanto, o dado mais importante é que o intervalo de confiança após o ajuste para idade foi de 0,87 a 5,31. Como esse intervalo inclui o valor 1,0, o resultado deixa de ter significância estatística, ou seja, não se pode afirmar que há uma associação real entre sedentarismo e hipertensão nesse grupo quando a idade é levada em conta.\n\nConcluindo, a característica de selecionar uma amostra populacional e identificar a prevalência da doença e os fatores associados no mesmo momento define o estudo como transversal.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Hipertensão Arterial Sistêmica",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  },
+  {
+    "id": "AJUDA_3b20b6f7-455b-4235-83d7-7e3d837fd2da",
+    "originalId": "3b20b6f7-455b-4235-83d7-7e3d837fd2da",
+    "statement": "Na emergência do seu hospital dá entrada uma mulher de 75 anos, com história de constipação crônica, que apresenta distensão abdominal progressiva, dor difusa e vômitos. Uma telerradiografia do abdome mostra distensão de alça sigmoide em “grão de café”. Não há sinais clínicos de peritonite.\nDiante desse quadro, a sua conduta inicial será",
+    "options": [
+      {
+        "id": "A",
+        "text": "radioterapia abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "laparotomia imediata com colectomia total obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "antibioticoterapia isolada e observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "alta hospitalar após analgesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "colonoscopia descompressiva com passagem de sonda retal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descrito — idosa com constipação crônica, distensão abdominal e o clássico sinal radiológico do grão de café (ou \"U\" invertido) — é patognomônico de vólvulo de sigmoide. O vólvulo ocorre quando uma alça intestinal gira sobre seu próprio eixo mesentérico, causando uma obstrução em alça fechada.\n\nA conduta inicial depende da estabilidade do paciente e da presença ou não de complicações, como isquemia ou perfuração (peritonite). No caso relatado, a paciente não apresenta sinais clínicos de peritonite, o que permite uma abordagem conservadora inicial para descompressão.\n\nExplicação das alternativas:\n\na) Incorreta. A radioterapia não possui indicação no tratamento de obstruções intestinais agudas ou vólvulos. É um tratamento voltado para neoplasias e não resolveria a torção mecânica da alça.\n\nb) Incorreta. A laparotomia imediata estaria indicada apenas se houvesse sinais de peritonite, gangrena intestinal ou falha na descompressão endoscópica. Além disso, a colectomia total não é a cirurgia de escolha para vólvulo de sigmoide; o procedimento padrão é a sigmoidectomia.\n\nc) Incorreta. O vólvulo de sigmoide é uma emergência mecânica. A antibioticoterapia pode ser usada de forma adjuvante, mas isoladamente não desfaz a torção da alça, mantendo o risco de isquemia e morte do tecido.\n\nd) Incorreta. Dar alta a uma paciente com obstrução intestinal alta ou baixa é uma conduta negligente, pois o quadro pode evoluir rapidamente para perfuração, choque séptico e óbito.\n\ne) Correta. Em pacientes com vólvulo de sigmoide sem sinais de irritação peritoneal (peritonite), a conduta inicial de escolha é a descompressão endoscópica (colonoscopia ou retossigmoidoscopia). O procedimento visa desfazer a torção, permitindo a saída de gases e fezes. A passagem de uma sonda retal após a descompressão ajuda a manter a alça pérvia e previne a recidiva imediata. Após o sucesso da descompressão, o paciente deve ser preparado para uma cirurgia eletiva (sigmoidectomia), pois o índice de recorrência do vólvulo é muito alto.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  },
+  {
+    "id": "AJUDA_3b25e095-c4fb-4575-99bb-b1c8439d09ae",
+    "originalId": "3b25e095-c4fb-4575-99bb-b1c8439d09ae",
+    "statement": "Menina de 8 anos, com relato de febre, coriza e odinofagia há 10 dias, que melhoraram espontaneamente. Há 2 dias iniciou dor e edema de tornozelos, há 1 dia com dor abdominal acompanhada de diarreia sanguinolenta e presença de lesões purpúricas em membros inferiores. A avaliação laboratorial mostrou hemograma normal, urina rotina normal e VHS de 27 mm/1 hora (VN< 20mm/1 hora). Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemofilia A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vasculite por IgA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Lupus eritematoso sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome inflamatória multissistêmica pós COVID.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma criança com a tétrade clássica da vasculite por IgA (antigamente chamada de púrpura de Henoch-Schönlein), que é a vasculite sistêmica mais comum na infância. O quadro geralmente é precedido por uma infecção das vias aéreas superiores (como a coriza e odinofagia relatadas) e manifesta-se com:\n\n1. Púrpura palpável (principalmente em membros inferiores e nádegas).\n2. Artralgia ou artrite (edema e dor em tornozelos).\n3. Dor abdominal (podendo haver sangramento gastrointestinal devido à vasculite na parede intestinal).\n4. Comprometimento renal (ausente neste caso inicial, visto que a urina de rotina estava normal).\n\nO hemograma normal é um dado fundamental, pois exclui plaquetopenia como causa das lesões purpúricas, reforçando o diagnóstico de uma púrpura vascular (vasculite) e não de uma púrpura trombocitopênica.\n\nAnálise das alternativas:\n\na) Incorreta. A hemofilia A é um distúrbio da coagulação (deficiência de fator VIII) que acomete quase exclusivamente meninos por ser ligada ao X. Caracteriza-se por hemartroses (sangramentos intra-articulares) e hematomas musculares após traumas, e não por púrpura palpável, dor abdominal e diarreia sanguinolenta após quadro gripal.\n\nb) Correta. A vasculite por IgA se encaixa perfeitamente na descrição. É uma vasculite de pequenos vasos mediada por deposição de imunocomplexos de IgA. O quadro clínico de púrpura palpável não trombocitopênica em membros inferiores, associado a sintomas articulares e gastrointestinais após uma infecção respiratória, é o cenário clássico da doença em pediatria.\n\nc) Incorreta. Embora o lúpus eritematoso sistêmico (LES) possa causar vasculite e artrite, ele é mais comum em adolescentes e adultos jovens do sexo feminino. Além disso, no LES esperaríamos alterações no hemograma (como leucopenia, anemia ou trombocitopenia) e marcadores inflamatórios geralmente mais elevados, além de outros critérios como fotossensibilidade e rash malar.\n\nd) Incorreta. A Síndrome Inflamatória Multissistêmica Pediátrica (MIS-C) associada à COVID-19 apresenta-se com febre alta persistente, disfunção orgânica grave (frequentemente cardíaca) e marcadores inflamatórios extremamente elevados (VHS e proteína C-reativa muito altos, ferritina elevada). O quadro da paciente é mais brando e específico para a vasculite por IgA.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Púrpura de Henoch-Schönlein e Vasculite por IgA",
+      "Reumatologia Pediátrica",
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  },
+  {
+    "id": "AJUDA_3b2e443e-4a69-4220-93c0-134521c67d0a",
+    "originalId": "3b2e443e-4a69-4220-93c0-134521c67d0a",
+    "statement": "Pode-se afirmar, sobre o Sistema Único de Saúde (SUS), que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "segundo o princípio da integralidade, as ações voltadas para a promoção da saúde e a prevenção de agravos e doenças devem ser dissociadas da assistência ambulatorial e hospitalar, para permitir melhor atendimento às funções de diagnóstico, tratamento e reabilitação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "os serviços prestados no âmbito hospitalar devem ser geridos pelo governo federal, devido à sua complexidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "inclui, de forma complementar, uma ampla rede de serviços privados, principalmente hospitais e unidades de diagnóstico e terapia, que são remunerados com recursos tributários destinados à saúde",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "as atividades dirigidas às pessoas, coletivamente, voltadas para promoção da saúde são atributos exclusivos dos municípios",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das Alternativas:\n\nAlternativa a) Incorreta. O princípio da integralidade, definido na Lei 8.080/1990, pressupõe exatamente o contrário: um conjunto articulado e contínuo de ações e serviços preventivos e curativos, individuais e coletivos, em todos os níveis de complexidade do sistema. Portanto, a promoção e a prevenção não devem ser dissociadas da assistência hospitalar, mas sim integradas a ela para garantir o cuidado completo ao paciente.\n\nAlternativa b) Incorreta. O SUS é regido pelo princípio da descentralização, com direção única em cada esfera de governo. A tendência é a municipalização da execução dos serviços. Hospitais podem ser geridos por Municípios, Estados ou pela União, dependendo da sua abrangência e organização regional, não sendo uma atribuição exclusiva ou obrigatória do governo federal devido à complexidade.\n\nAlternativa c) Correta. A Constituição Federal e a Lei 8.080/1990 estabelecem que a iniciativa privada pode participar do SUS de forma complementar, quando as disponibilidades do setor público forem insuficientes para garantir a cobertura assistencial à população. Essa participação ocorre mediante contrato de direito público ou convênio, com preferência para entidades filantrópicas e sem fins lucrativos, sendo o pagamento realizado com recursos do orçamento da seguridade social (tributos).\n\nAlternativa d) Incorreta. Embora o Município seja o principal executor das ações de saúde no território (devido à descentralização), as atividades de promoção da saúde e da vigilância não são atributos exclusivos deste ente. A responsabilidade é compartilhada de forma tripartite entre União, Estados e Municípios, cada um com suas competências específicas de coordenação, apoio técnico e execução. Além disso, ações coletivas de promoção da saúde perpassam todos os níveis de atenção do sistema.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  },
+  {
+    "id": "AJUDA_3b390b6a-9fb2-4627-9b99-27fb234734a9",
+    "originalId": "3b390b6a-9fb2-4627-9b99-27fb234734a9",
+    "statement": "A oxigenoterapia por cânula nasal de alto fluxo (CNAF) é uma modalidade de suporte respiratório não invasiva cada vez mais utilizada em pacientes pediátricos.\nCom relação às características dessa opção para oxigenoterapia, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A CNAF aumenta o espaço morto da nasofaringe, uma distinção fundamental em comparação com modos de ventilação nasal pressurizados, como CPAP e BiPAP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As misturas de gases levadas pela CNAF são aquecidas e umidificadas para evitar o ressecamento da mucosa respiratória e preservar a funcionalidade do transporte mucociliar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A CNAF deve levar fluxos de misturas de gases menores do que o pico de fluxo inspiratório do paciente, ajudando a entrada de ar ambiente durante a inspiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O gás levado em baixa velocidade penetra menos profundamente nas vias áreas, leva a fonte de gás fresco para mais perto da carina e fornece certo nível de apoio respiratório, não gerando uma pressão positiva expiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Há aumento significativo do gasto metabólico relacionado ao condicionamento de gás, e aumento das perdas insensíveis de água durante a utilização da CNAF em lactentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Cânula Nasal de Alto Fluxo (CNAF) é uma forma de suporte respiratório não invasivo que fornece uma mistura de ar e oxigênio aquecida e umidificada, com fluxos que geralmente excedem a demanda inspiratória do paciente.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa A: Incorreta. Um dos principais mecanismos de ação da CNAF é justamente a redução do espaço morto anatômico da nasofaringe (washout de CO2). Ao fornecer um fluxo constante de gás fresco, o sistema \"limpa\" o gás rico em gás carbônico que fica acumulado nas vias aéreas superiores ao final da expiração, facilitando a ventilação e as trocas gasosas.\n\nAlternativa B: Correta. Esta é uma das características fundamentais da CNAF. Devido aos altos fluxos utilizados (que podem chegar a 60 L/min em adultos ou 2 L/kg/min em pediatria), o gás deve ser obrigatoriamente condicionado. O aquecimento (geralmente a 37 graus Celsius) e a umidificação (umidade relativa de 100%) são essenciais para evitar o ressecamento da mucosa, prevenir lesões no epitélio respiratório, manter a fluidez das secreções e preservar a função do transporte mucociliar.\n\nAlternativa C: Incorreta. Para que a CNAF exerça seu efeito terapêutico pleno e garanta uma fração inspirada de oxigênio (FiO2) estável, o fluxo fornecido deve ser igual ou superior ao pico de fluxo inspiratório do paciente. Se o fluxo for menor que a demanda do paciente, haverá entrada de ar ambiente durante a inspiração, diluindo a mistura de gases e reduzindo a eficácia do suporte.\n\nAlternativa D: Incorreta. A CNAF utiliza altos fluxos e velocidades de gás. Além do washout do espaço morto, esse fluxo gera uma pressão positiva nas vias aéreas, agindo de forma semelhante a uma pressão positiva expiratória final (PEEP). Embora essa pressão seja variável e dependente de fatores como o tamanho da cânula em relação à narina e se o paciente está com a boca aberta ou fechada, ela contribui para o recrutamento alveolar e redução do trabalho respiratório.\n\nAlternativa E: Incorreta. Na verdade, ocorre o oposto. Ao fornecer um gás já aquecido e umidificado, a CNAF reduz o gasto metabólico do paciente, pois o organismo não precisa gastar energia para condicionar o gás inspirado (aquecer e umidificar). Além disso, o sistema ajuda a reduzir as perdas insensíveis de água pela via respiratória, o que é especialmente importante em lactentes e recém-nascidos.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ventilação não invasiva (VNI)",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  },
+  {
+    "id": "AJUDA_3b41eb2c-168b-43e5-a601-2b5ed8ce3d1f",
+    "originalId": "3b41eb2c-168b-43e5-a601-2b5ed8ce3d1f",
+    "statement": "Mulher de 34 anos, previamente hígida, com vida sexual ativa, comparece em consulta ambulatorial na unidade básica de saúde solicitando rastreamento de câncer de colo do útero após ter visto nas redes sociais que houve atualização nas recomendações nacionais. No que tange a esse rastreio, de acordo com as novas recomendações do Ministério da Saúde, o que deve ser orientado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A conduta adequada para essa paciente é a coleta anual de colpocitologia oncótica associada à realização de DNA HPV a cada 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fazer colpocitologia oncótica coletada por profissional de saúde. Caso apresente dois resultados normais, o teste poderá ser realizado a cada 3 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar a realização de colpocitologia oncótica em associação à realização do teste de DNA HPV. Caso sejam normais, deve-se repetir a cada 3 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O rastreamento é indicado para essa paciente por meio da realização do teste de DNA HPV. Caso seja negativo, o exame deve ser realizado a cada 5 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a atualização mais recente nas diretrizes brasileiras para o rastreamento do câncer de colo do útero. Em 2024, o Ministério da Saúde oficializou a transição do modelo de rastreio, que antes era baseado exclusivamente na citologia oncótica (Papanicolaou), para o teste molecular de DNA-HPV como método preferencial.\n\nAlternativa A: Incorreta. A recomendação de citologia anual nunca foi a regra de rastreio no Brasil (o protocolo anterior era trienal após dois exames anuais normais). Além disso, a nova diretriz não propõe o coteste (citologia + HPV) como estratégia inicial de rotina com citologia anual, mas sim o uso do teste de DNA-HPV como triagem primária.\n\nAlternativa B: Incorreta. Esta alternativa descreve o protocolo antigo, estabelecido pelas Diretrizes Brasileiras de 2016. Nele, a citologia era realizada a cada três anos após dois resultados anuais negativos consecutivos. Como a questão solicita as novas recomendações, este modelo está defasado em relação ao enunciado.\n\nAlternativa C: Incorreta. O erro aqui é duplo: primeiro, a periodicidade do teste de DNA-HPV, quando negativo, é de cinco anos, e não de três. Segundo, a nova estratégia nacional prioriza o teste de DNA-HPV como exame inicial de escolha (rastreio primário), reservando a citologia para casos específicos de triagem em pacientes HPV-positivas (exceto para os genótipos 16 e 18, que podem ser encaminhados diretamente para colposcopia, dependendo do protocolo local).\n\nAlternativa D: Correta. De acordo com as novas orientações do Ministério da Saúde (Portaria de 2024), o rastreamento do câncer de colo do útero para mulheres entre 25 e 64 anos deve ser realizado preferencialmente por meio do teste de DNA-HPV. Devido à sua alta sensibilidade e ao elevado valor preditivo negativo, caso o teste seja negativo, a paciente deve repetir o exame apenas após cinco anos, garantindo uma proteção segura por um intervalo maior do que o oferecido pela citologia isolada.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  },
+  {
+    "id": "AJUDA_3b4fc0bf-1d12-4a57-b373-e768f14612f7",
+    "originalId": "3b4fc0bf-1d12-4a57-b373-e768f14612f7",
+    "statement": "Uma mulher, de 45 anos, apresenta hiperparatireoidismo primário sintomático. Durante a cirurgia, nota-se que todas as quatro glândulas estão marcadamente aumentadas. Qual das opções a seguir é a melhor recomendação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Remoção das quatro glândulas com autotransplante de doze pedaços de tecido paratireoidiano de um milímetro no antebraço e criopreservação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Remoção das quatro glândulas com reposição oral de cálcio e criopreservação das glândulas ressecadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Biópsia das quatro glândulas sem removê-las e aguardar resultado do exame anatomopatológico para reoperação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Remoção de uma glândula e biópsia das outras três, aguardando o resultado do exame anatomopatológico para reoperação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O achado cirúrgico de aumento das quatro glândulas paratireoides em um contexto de hiperparatireoidismo primário define o diagnóstico de hiperplasia das paratireoides. Diferentemente do adenoma único, que é a causa mais comum de hiperparatireoidismo e envolve apenas uma glândula, a hiperplasia exige a manipulação de todo o tecido paratireoidiano para garantir a cura e evitar recidivas.\n\nExistem duas estratégias cirúrgicas principais para o tratamento da hiperplasia das quatro glândulas: a paratireoidectomia subtotal (na qual se removem três glândulas e meia) e a paratireoidectomia total acompanhada de autotransplante.\n\nPOR QUE A ALTERNATIVA A ESTÁ CORRETA?\nA alternativa descreve a paratireoidectomia total seguida de autotransplante heterotópico no antebraço. Ao remover as quatro glândulas do pescoço, elimina-se a fonte da doença naquela região. O reimplante de pequenos fragmentos de tecido (cerca de 10 a 20 pedaços de 1 mm) no músculo braquiorradial do antebraço permite que o tecido volte a funcionar e produza paratormônio (PTH) de forma controlada, evitando o hipoparatireoidismo definitivo. A grande vantagem é que, se a doença voltar (hiperplasia do enxerto), a reoperação no braço é muito mais simples e segura do que uma nova exploração cervical. A criopreservação é recomendada como segurança caso o enxerto não prospere.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa B: Remover as quatro glândulas sem realizar o autotransplante causa hipoparatireoidismo iatrogênico definitivo. O controle clínico apenas com cálcio oral e vitamina D é difícil, apresenta riscos de complicações renais a longo prazo e prejudica a qualidade de vida da paciente.\n\nAlternativa C: A conduta de apenas biopsiar e não tratar é inadequada para uma paciente sintomática. O diagnóstico de hiperplasia pode ser confirmado intraoperatoriamente por meio do exame de congelação ou pela análise macroscópica do cirurgião. Adiar o tratamento definitivo obrigaria a paciente a passar por uma reoperação cervical, que é tecnicamente muito mais complexa e arriscada devido à fibrose.\n\nAlternativa D: Se todas as quatro glândulas estão aumentadas e hiperfuncionantes, a remoção de apenas uma delas não resolverá o problema. Isso resultará em hiperparatireoidismo persistente, pois as outras três glândulas continuarão a secretar níveis patológicos de PTH e a manter a hipercalcemia.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  },
+  {
+    "id": "AJUDA_3b66425d-8f05-4b62-bc73-f5173a1387c7",
+    "originalId": "3b66425d-8f05-4b62-bc73-f5173a1387c7",
+    "statement": "Victória, 28 anos, apresenta queixas de dor abdominal intermitente há seis meses, acompanhada de diarreia frequente, às vezes com presença de sangue nas fezes. Ela relata episódios de febre baixa e perda de peso de cerca de 5 kg no último mês. A dor abdominal é mais intensa no quadrante inferior direito e está associada à ingestão de alimentos. Maria também menciona fadiga constante e episódios de náusea. Ao exame físico, observa-se sensibilidade abdominal difusa, sem defesa ou rigidez. Ela não apresenta alterações significativas nos sinais vitais. Os exames laboratoriais mostram anemia leve e elevação de marcadores inflamatórios. A característica mais compatível com a Doença de Crohn (DC), com base no caso clínico apresentado, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de úlceras aftoides e aspecto em paralelepípedo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Acometimento contínuo do cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Comprometimento exclusivamente do reto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sintomas exclusivamente esofágicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico de Victória sugere fortemente uma Doença Inflamatória Intestinal (DII), especificamente a Doença de Crohn (DC). Os principais pontos que sustentam essa hipótese são a idade da paciente, a dor localizada no quadrante inferior direito (sugerindo acometimento do íleo terminal e ceco), a presença de sintomas sistêmicos (febre, perda de peso, anemia) e o caráter intermitente dos sintomas.\n\nAnálise das alternativas:\n\nAlternativa (a) CORRETA: A Doença de Crohn é caracterizada por um processo inflamatório transmural que pode afetar qualquer parte do trato gastrointestinal. Na endoscopia ou colonoscopia, as lesões precoces manifestam-se como úlceras aftoides. Com a progressão da doença, a alternância entre áreas de ulcerações profundas (lineares e transversais) e áreas de mucosa íntegra, mas edemaciada, confere o aspecto clássico de paralelepípedo (ou pedras de calçamento).\n\nAlternativa (b) INCORRETA: O acometimento contínuo e ascendente do cólon, iniciando-se obrigatoriamente no reto, é a marca registrada da Retocolite Ulcerativa (RCU). Na Doença de Crohn, o acometimento é tipicamente descontínuo, apresentando as chamadas lesões salteadas (skip lesions), nas quais áreas doentes são intercaladas com áreas de mucosa perfeitamente normal.\n\nAlternativa (c) INCORRETA: O comprometimento exclusivo do reto é característico da proctite ulcerativa (uma forma de RCU). Na Doença de Crohn, o reto é frequentemente poupado (preservação retal), ocorrendo envolvimento retal em apenas cerca de 20% a 30% dos casos. O local mais comum de acometimento na DC é a região ileocecal, condizente com a dor no quadrante inferior direito relatada pela paciente.\n\nAlternativa (d) INCORRETA: Embora a Doença de Crohn possa afetar qualquer segmento do tubo digestivo, desde a boca até o ânus, o acometimento isolado ou exclusivo do esôfago é extremamente raro. Além disso, os sintomas descritos (diarreia, dor no quadrante inferior direito e sangue nas fezes) indicam claramente um envolvimento do trato gastrointestinal inferior.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  },
+  {
+    "id": "AJUDA_3b699d60-eed6-424b-a6c6-cff846df0f86",
+    "originalId": "3b699d60-eed6-424b-a6c6-cff846df0f86",
+    "statement": "Sobre o calendário vacinal na gestação, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não é necessária nenhuma dose de vacina DTpA durante a gestação para gestantes com esquema vacinal previamente completo para Difteria, Tétano e Coqueluche.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pacientes que tiverem iniciado o esquema vacinal para HPV antes da gestação podem completá-lo durante a gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A aplicação da vacina contra hepatite B não é recomendada para gestantes. Deve-se aguardar o período pós-parto para a administração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacina contra a febre amarela é contraindicada em gestantes, salvo em situações de risco, como viagens para áreas endêmicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. A vacina dTpa (Difteria, Tétano e Coqueluche acelular) é obrigatória em TODAS as gestações, independentemente de a mulher ter o esquema vacinal prévio completo. A recomendação é que seja aplicada a partir da 20ª semana de gestação. O principal objetivo é a transferência transplacentária de anticorpos contra a coqueluche, garantindo proteção passiva ao recém-nascido nos primeiros meses de vida, período de maior vulnerabilidade para complicações da doença.\n\nAlternativa b) Incorreta. A vacina contra o HPV não é recomendada durante a gravidez. Embora não existam evidências de efeitos adversos graves, a orientação é interromper o esquema vacinal caso a gestação ocorra e retomá-lo somente após o parto (período de puerpério/lactação), aproveitando as doses já administradas.\n\nAlternativa c) Incorreta. A vacina contra a hepatite B é segura e altamente recomendada durante a gestação. Gestantes que não possuem esquema vacinal completo ou que apresentam sorologia negativa para a doença devem ser vacinadas em qualquer trimestre da gravidez. Trata-se de uma vacina de vírus inativado (recombinante), não oferecendo risco ao feto.\n\nAlternativa d) Correta. A vacina contra a febre amarela utiliza vírus vivo atenuado e, por esse motivo, é geralmente contraindicada para gestantes devido ao risco teórico de infecção fetal. Entretanto, em situações de surtos, risco epidemiológico elevado ou necessidade de deslocamento para áreas endêmicas, o Ministério da Saúde e a OMS autorizam a vacinação, pois o risco da doença grave supera o risco potencial da vacina. Nesses casos, a decisão deve ser individualizada e discutida com a paciente.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  },
+  {
+    "id": "AJUDA_3b69e985-224b-4218-a50d-5451b1e9fa35",
+    "originalId": "3b69e985-224b-4218-a50d-5451b1e9fa35",
+    "statement": "Adolescente de 16 anos, refere cólica menstrual forte e sangramento menstrual abundante. Foi realizado ultrassonografia e ressonância da pelve que diagnosticaram a presença de 1 septo no fundo da cavidade uterina, medindo 12 mm. O diagnóstico mais provável é útero",
+    "options": [
+      {
+        "id": "A",
+        "text": "bicorno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "didelfo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "septado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "arqueado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "unicorno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda as malformações müllerianas, que são anomalias congênitas resultantes de falhas no desenvolvimento, fusão ou reabsorção dos ductos de Müller. O diagnóstico diferencial entre essas malformações é feito com base na morfologia do contorno externo do fundo uterino e na profundidade da indentação na cavidade endometrial.\n\nAlternativa A - Incorreta: O útero bicorno decorre de uma falha parcial na fusão dos ductos de Müller. Sua principal característica é a presença de uma indentação profunda no contorno externo do fundo uterino (geralmente maior que 1 cm), dividindo o órgão em dois cornos. A questão descreve um achado na cavidade interna sem mencionar alterações no contorno externo.\n\nAlternativa B - Incorreta: O útero didelfo é o resultado de uma falha total de fusão dos ductos de Müller, o que gera dois corpos uterinos e dois colos uterinos (duplicidade cervical) completamente distintos. Um simples septo de 12 mm no fundo da cavidade não caracteriza essa condição.\n\nAlternativa C - Incorreta: O útero septado ocorre por uma falha na reabsorção do septo central após a fusão dos ductos. Embora a questão utilize a palavra septo, na classificação morfológica (como a da ASRM), o útero septado costuma apresentar uma indentação interna mais proeminente, geralmente superior a 1,5 cm. Quando a medida é menor, como os 12 mm descritos, a classificação correta recai sobre o útero arqueado.\n\nAlternativa D - Correta: O útero arqueado é considerado a forma mais leve de falha na reabsorção do septo ou uma variante da normalidade. Ele se caracteriza por uma leve indentação do miométrio no fundo da cavidade uterina, enquanto o contorno externo do fundo permanece normal (convexo ou plano). As diretrizes radiológicas e ginecológicas frequentemente utilizam o limite de até 1 cm ou 1,5 cm de profundidade para definir o útero arqueado. Portanto, um achado de 12 mm (1,2 cm) enquadra-se perfeitamente nesta categoria.\n\nAlternativa E - Incorreta: O útero unicorno é consequência do desenvolvimento de apenas um dos ductos de Müller, enquanto o outro é ausente ou rudimentar. Isso resulta em um útero de formato alongado (em banana), com apenas uma tuba uterina, o que difere totalmente da descrição de uma cavidade com septo central.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Anatomia e Embriologia do Trato Genital Feminino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:27.083Z"
+  }
+]

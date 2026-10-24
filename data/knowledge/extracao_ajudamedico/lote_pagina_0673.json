@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_bb8ffae1-6ab8-42bb-a3d7-d5220272476a",
+    "originalId": "bb8ffae1-6ab8-42bb-a3d7-d5220272476a",
+    "statement": "O que define a via aérea definitiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "cateter nasal de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ventilação com máscara laríngea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tubo posicionado na traqueia com cuff insuflado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ventilação com máscara de oxigênio em 15l.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tubo posicionado na faringe com cuff insuflado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Definição de Via Aérea Definitiva:\n\nDe acordo com os protocolos internacionais de atendimento ao trauma e emergências, como o ATLS (Advanced Trauma Life Support), a via aérea definitiva é definida pela presença de um tubo inserido na traqueia, com um balonete (cuff) insuflado abaixo das cordas vocais, conectado a uma fonte de oxigênio suplementar e fixado adequadamente. O objetivo principal é garantir a patência da via aérea, permitir a ventilação assistida e proteger os pulmões contra a aspiração de conteúdo gástrico ou sangue.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O cateter nasal de oxigênio é um dispositivo de suplementação de oxigênio de baixo fluxo. Ele é indicado apenas para pacientes que possuem via aérea pérvia e ventilação espontânea preservada, não oferecendo nenhuma proteção ou controle definitivo da via respiratória.\n\nAlternativa b) Incorreta. A máscara laríngea é considerada um dispositivo supraglótico. Apesar de ser uma excelente ferramenta no manejo da via aérea difícil e em situações de \"não consigo intubar, não consigo ventilar\", ela não é uma via aérea definitiva porque se posiciona acima da glote e não isola completamente a traqueia contra a aspiração de conteúdo gástrico.\n\nAlternativa c) Correta. Esta alternativa preenche os requisitos técnicos da definição: o tubo deve estar no interior da traqueia e o cuff deve estar insuflado para garantir a vedação da via aérea e a proteção pulmonar. A via aérea definitiva pode ser estabelecida por intubação orotraqueal, nasotraqueal ou por via cirúrgica (cricotiroidostomia ou traqueostomia).\n\nAlternativa d) Incorreta. A máscara de oxigênio, mesmo com alto fluxo (15 litros por minuto), é um método não invasivo de oxigenação. Ela não assegura a passagem de ar em caso de obstrução mecânica nem protege o paciente de broncoaspiração em casos de rebaixamento do nível de consciência.\n\nAlternativa e) Incorreta. Um tubo posicionado na faringe (como uma cânula de Guedel ou um tubo orotraqueal mal posicionado) não garante a ventilação dos pulmões. Para ser definitiva, a extremidade do tubo e o balonete devem obrigatoriamente ultrapassar as cordas vocais e estar posicionados na traqueia.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  },
+  {
+    "id": "AJUDA_bb9778a4-6845-4cc8-a289-5ccd08ca81bd",
+    "originalId": "bb9778a4-6845-4cc8-a289-5ccd08ca81bd",
+    "statement": "Durante uma reunião em uma UBS, discute-se o aumento da esperança de vida ao nascer no município. Esse indicador, usado para avaliar as condições de vida e saúde, representa",
+    "options": [
+      {
+        "id": "A",
+        "text": "a probabilidade de sobrevivência até os 65 anos, calculada a partir das taxas de mortalidade por causas crônicas predominantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a idade mínima esperada de morte dos recém-nascidos de uma população, calculada a partir das maiores taxas de mortalidade infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o número médio de anos que uma coorte de recém-nascidos poderia esperar viver, caso fosse submetida, ao longo da vida, às mesmas taxas de mortalidade observadas no ano de seu nascimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o tempo médio de vida saudável de uma população, livre de doenças incapacitantes, considerando os determinantes sociais da saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o número total de anos de vida que uma população poderá alcançar, considerando o somatório das idades ao morrer dividido pelo número de habitantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A esperança de vida ao nascer (ou expectativa de vida ao nascer) é um indicador demográfico e de saúde pública clássico, construído a partir de tábuas de vida (ou de mortalidade). Ele estima a longevidade média da população sob as condições de mortalidade vigentes no momento do cálculo.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. O indicador não mede a probabilidade de sobrevivência até uma idade arbitrária (como 65 anos), tampouco se restringe a causas crônicas. O cálculo engloba a mortalidade por todas as causas e em todas as faixas etárias.\n\nAlternativa B - Incorreta. A esperança de vida reflete uma média estimada, e não um limite mínimo de idade. Embora a mortalidade infantil tenha grande impacto sobre o indicador, o cálculo utiliza a mortalidade observada em todas as faixas etárias da vida.\n\nAlternativa C - Correta. Apresenta a definição técnica exata do indicador: é o número médio de anos que uma coorte hipotética de recém-nascidos viveria se ficasse exposta, ao longo de toda a sua existência, às taxas específicas de mortalidade por idade registradas no ano em que nasceu.\n\nAlternativa D - Incorreta. Esta alternativa descreve a \"Esperança de Vida Saudável\" (ou Esperança de Vida Livre de Incapacidade), que desconta os anos vividos com doenças ou limitações. A esperança de vida ao nascer tradicional avalia apenas o tempo total de sobrevivência, independentemente do estado de saúde.\n\nAlternativa E - Incorreta. A fórmula descrita corresponde à idade média ao óbito da população em um dado período, medida que é diretamente enviesada pela estrutura etária (populações mais idosas naturalmente têm média de idade ao morrer mais alta). A esperança de vida ao nascer utiliza a padronização das taxas por idade para permitir comparações adequadas entre diferentes populações.\n\nGabarito: Alternativa C.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  },
+  {
+    "id": "AJUDA_bb986c3f-01b1-4c6e-86c1-bf9535920a00",
+    "originalId": "bb986c3f-01b1-4c6e-86c1-bf9535920a00",
+    "statement": "Qual das seguintes estratégias comunitárias mostra eficácia na prevenção primária do suicídio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da fiscalização policial em áreas públicas e proibição da venda de bebidas alcoólicas na comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Controle de posse de armas de fogo e venda de psicotrópicos e venenos organofosforados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Distribuição gratuita de medicamentos antidepressivos na comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Isolamento das pessoas com história de tentativa de suicídio para a segurança da comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda as estratégias de saúde pública para a prevenção do suicídio, focando especificamente em intervenções comunitárias de prevenção primária que possuem evidências científicas de eficácia.\n\nAlternativa a: Incorreta. Embora o uso abusivo de álcool seja um fator de risco documentado para o suicídio, a proibição total da venda de bebidas e o aumento da fiscalização policial não são estratégias de saúde pública reconhecidas por sua eficácia na prevenção primária. O foco preventivo relacionado ao álcool deve ser voltado ao tratamento da dependência e a políticas de conscientização, e não meramente à repressão policial.\n\nAlternativa b: Correta. A restrição do acesso a meios letais (conhecida como \"restriction of means\") é uma das intervenções mais eficazes na prevenção do suicídio em nível populacional. O controle rigoroso de armas de fogo, a regulamentação de substâncias tóxicas como os organofosforados (agrotóxicos com alta letalidade) e a venda controlada de psicotrópicos reduzem as chances de uma tentativa impulsiva ser fatal. Muitos indivíduos que não conseguem acessar um método altamente letal em um momento de crise não substituem o método por outro, o que reduz a taxa de mortalidade geral.\n\nAlternativa c: Incorreta. A distribuição indiscriminada de antidepressivos na comunidade não é uma estratégia de prevenção e pode ser perigosa. O tratamento medicamentoso deve ser precedido de diagnóstico médico e requer monitoramento rigoroso, especialmente nas primeiras semanas de uso, quando pode haver um aumento paradoxal do risco de execução de planos suicidas em alguns pacientes, devido ao aumento da energia psicomotora antes da melhora do humor.\n\nAlternativa d: Incorreta. O isolamento de pessoas com histórico de tentativa de suicídio é uma medida antiética, estigmatizante e sem fundamentação clínica. A prática moderna de saúde mental preconiza o contrário: o fortalecimento de vínculos sociais, o suporte familiar, o acompanhamento em redes de atenção psicossocial e a inclusão na comunidade. O isolamento aumenta o sentimento de desesperança e o risco de novos episódios.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Psiquiatria Social e Reforma Psiquiátrica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  },
+  {
+    "id": "AJUDA_bb9cc057-62ab-4806-97ca-f1a5cb95aceb",
+    "originalId": "bb9cc057-62ab-4806-97ca-f1a5cb95aceb",
+    "statement": "Quais das abaixo é recomendação de adiamento para aplicação de vacina de vírus vivo atenuado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença aguda benigna sem febre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso atual de antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "30 dias após receber hemoderivado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Uso de corticoide inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os critérios de contraindicação e precaução para a administração de vacinas de vírus vivos atenuados. O conhecimento dessas normas, estabelecidas pelo Programa Nacional de Imunizações (PNI) e pela Sociedade Brasileira de Pediatria (SBP), é fundamental para evitar o adiamento desnecessário de vacinas ou a aplicação ineficaz.\n\nAlternativa A - Incorreta. Doenças agudas benignas, como resfriados, coriza ou diarreia leve, mesmo que acompanhadas de febre baixa, são consideradas falsas contraindicações. A vacinação pode e deve ser mantida para garantir a cobertura vacinal.\n\nAlternativa B - Incorreta. O uso de antibióticos não interfere na resposta imunológica de vacinas virais. Os antibióticos atuam especificamente contra bactérias e não impedem a replicação do vírus atenuado presente na vacina. Portanto, não é necessário adiar a imunização.\n\nAlternativa C - Correta. O recebimento de hemoderivados (como sangue total, concentrado de hemácias e plasma) ou imunoglobulinas exige o adiamento de vacinas de vírus vivos atenuados (especialmente a tríplice viral e a varicela). Isso ocorre porque esses produtos contêm anticorpos passivos que podem neutralizar o vírus vacinal, impedindo que ele se replique e gere a resposta imune desejada. O período de adiamento varia de 3 a 11 meses, dependendo do tipo de hemoderivado e da dose recebida. Como 30 dias é um prazo muito curto, a recomendação de adiamento persiste.\n\nAlternativa D - Incorreta. O uso de corticoides por via inalatória, tópica ou colírios não atinge níveis sistêmicos suficientes para causar imunossupressão significativa. A contraindicação ou precaução para vacinas de vírus vivos só se aplica ao uso de corticoides sistêmicos (oral ou parenteral) em doses imunossupressoras (geralmente equivalentes a mais de 2 mg/kg/dia de prednisona para crianças ou acima de 20 mg/dia para adultos, por um período superior a 14 dias).",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  },
+  {
+    "id": "AJUDA_bba04682-3f2b-4bed-b36e-e6f6252fc512",
+    "originalId": "bba04682-3f2b-4bed-b36e-e6f6252fc512",
+    "statement": "Mulher cisgênero, de 34 anos, procura atendimento em uma UBS (Unidade Básica de Saúde) do seu bairro, com seu médico de família, pois uma amiga descobriu recentemente um \"câncer no útero\". Chega em consulta solicitando diversos exames para investigação de câncer, pois está muito preocupada que possa ter algum problema grave de saúde, uma vez que não passa por qualquer avaliação há mais de 5 anos. Não tem comorbidades, é tabagista de 1 maço ao dia desde os 20 anos e tem IMC de 30,5 kg/m². Considerando as recomendações baseadas em evidências científicas assinale a alternativa que incorpore as investigações e exames corretamente indicados para a paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tomografia de tórax de baixa dose; coleta de citopatologia oncótica, coleta de sorologia para HIV e sífilis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coleta de citopatologia oncótica; aferição de pressão arterial; avaliação de perfil lipídico; avaliação de glicemia de jejum; coleta de sorologia para HIV e sífilis",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Coleta de citopatologia oncótica; aferição de pressão arterial; avaliação de perfil lipídico, avaliação de glicemia de jejum; mamografia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aferição de pressão arterial; coleta de citopatologia oncótica, solicitação de ultrassonografia transvaginal; coleta de sorologia para HIV e sífilis",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da Questão:\n\nA paciente em questão tem 34 anos, é tabagista com carga tabágica de 14 maços-ano (1 maço/dia por 14 anos) e apresenta obesidade grau I (IMC 30,5 kg/m²). Ela busca a Unidade Básica de Saúde para realizar rastreamento preventivo após longo período sem avaliação médica. A conduta correta deve seguir os protocolos de rastreamento baseados em evidências, como os do Ministério da Saúde e da USPSTF (U.S. Preventive Services Task Force).\n\nAlternativa A: Incorreta. A tomografia de tórax de baixa dose é o exame indicado para o rastreio de câncer de pulmão. No entanto, sua indicação é restrita a pacientes com idade entre 50 e 80 anos, fumantes ativos ou que pararam há menos de 15 anos, e com uma carga tabágica de pelo menos 20 maços-ano. A paciente tem apenas 34 anos e 14 maços-ano, não atingindo os critérios de risco para este rastreio.\n\nAlternativa B: Correta. Esta alternativa reúne as ações de prevenção e rastreamento indicadas para o perfil clínico da paciente. A coleta de citopatologia oncótica (Papanicolau) é indicada para mulheres de 25 a 64 anos que já iniciaram atividade sexual. A aferição da pressão arterial faz parte do rastreio de hipertensão em adultos. A avaliação de glicemia de jejum e o perfil lipídico são indicados para o rastreamento de diabetes mellitus e dislipidemias em adultos com obesidade (IMC maior que 30). A solicitação de sorologias para HIV e sífilis é recomendada como parte do rastreio de infecções sexualmente transmissíveis (ISTs) em adultos sexualmente ativos.\n\nAlternativa C: Incorreta. O erro principal desta alternativa é a indicação da mamografia. De acordo com o Ministério da Saúde, o rastreamento mamográfico é indicado para mulheres entre 50 e 69 anos, a cada dois anos. Algumas sociedades médicas recomendam o início aos 40 anos. Aos 34 anos, sem histórico familiar de câncer de mama em parentes de primeiro grau ou síndromes genéticas, não há indicação de mamografia de rastreio.\n\nAlternativa D: Incorreta. A ultrassonografia transvaginal não é recomendada como exame de rastreamento para câncer (seja de ovário ou de endométrio) em mulheres assintomáticas. Estudos demonstram que o uso desse exame para rastreio não reduz a mortalidade e aumenta significativamente o número de biópsias e cirurgias desnecessárias devido a achados benignos (falsos-positivos). O rastreio de \"câncer de útero\" citado pela paciente refere-se ao colo do útero, feito via citopatologia, e não por ultrassom.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  },
+  {
+    "id": "AJUDA_bbb07384-079a-4ee8-8738-489b5a446370",
+    "originalId": "bbb07384-079a-4ee8-8738-489b5a446370",
+    "statement": "Sobre a Comunicação Interventricular (CIV), analise as afirmações:\n\nI. É a cardiopatia congênita acianótica mais comum na infância.\nII. O sopro característico é holossistólico, rude, audível na borda esternal esquerda baixa.\nIII. Grandes defeitos não tratados podem evoluir para hipertensão pulmonar fixa (Síndrome de Eisenmenger).\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a proposição I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a proposição III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as proposições I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS PROPOSIÇÕES:\n\nProposição I: Correta. A Comunicação Interventricular (CIV) é a cardiopatia congênita mais frequente na infância, representando aproximadamente 20% a 30% de todos os casos de malformações cardíacas. Ela é classificada como acianótica porque, em condições habituais, o gradiente de pressão faz com que o sangue oxigenado passe do ventrículo esquerdo para o ventrículo direito (shunt esquerda-direita), não gerando cianose inicial.\n\nProposição II: Correta. O sopro típico da CIV é holossistólico (ou pansistólico), iniciando-se na primeira bulha e estendendo-se até a segunda bulha. Ele apresenta um timbre rude ou áspero e é mais audível no foco tricúspide (borda esternal esquerda baixa), local que corresponde à projeção do defeito no septo interventricular onde ocorre a turbulência do fluxo.\n\nProposição III: Correta. Grandes defeitos septais permitem um hiperfluxo pulmonar persistente e de alta pressão. Com o tempo, esse volume excessivo causa lesões nas camadas íntima e média das artérias pulmonares, levando à hipertensão pulmonar fixa por aumento da resistência vascular. Quando a pressão pulmonar excede a pressão sistêmica, o shunt se inverte (passando a ser direita-esquerda), caracterizando a Síndrome de Eisenmenger, momento em que o paciente desenvolve cianose e o tratamento cirúrgico definitivo torna-se contraindicado.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a: Incorreta. A proposição I está correta, mas não é a única. As afirmações II e III também são verdadeiras.\n\nAlternativa b: Incorreta. A proposição III está correta, porém ignora a veracidade das afirmações I e II.\n\nAlternativa c: Incorreta. Embora as proposições I e II estejam corretas, esta alternativa exclui a proposição III, que também descreve corretamente a evolução clínica da patologia.\n\nAlternativa d: Correta. Todas as três afirmações abordam aspectos clássicos da epidemiologia, semiologia e fisiopatologia da Comunicação Interventricular, estando tecnicamente impecáveis.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  },
+  {
+    "id": "AJUDA_bbb45693-6e73-4215-bc73-278e26a5bee0",
+    "originalId": "bbb45693-6e73-4215-bc73-278e26a5bee0",
+    "statement": "Homem de 38 anos de idade, há três meses começou a apresentar tosse persistente, inicialmente seca, mas que evoluiu para tosse produtiva, com escarro amarelado. Refere perda de peso de cerca de 8kg e fadiga, febre baixa predominante à tarde. É morador de comunidade em periferia urbana. Vive em uma casa pequena, e divide o espaço com quatro familiares, incluindo duas crianças pequenas. Nenhum dos familiares apresenta sintomas no momento, mas todos convivem em contato próximo. Ao exame, apresenta-se emagrecido. Mucosas hipocrômicas. FR: 24ipm, PR: 91bpm, Temp: 36,8ºC. Sem linfonodos cervicais e axilares patológicos. Ap resp: presença de crépitos e roncos que se intensificam pós tosse em terço superior de pulmão direito. O paciente relata que trabalha como pedreiro, mas tem se sentido muito cansado e, muitas vezes, falta ao trabalho devido aos sintomas. \n\nO paciente foi confirmado como doente com tuberculose pulmonar. Indique o tipo de profilaxia a ser empregada para os\nfamiliares contactantes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Isoniazida para os assintomáticos com PPD ou IGRA reatores após triagem para doença ativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Vacinação com BCG para contactantes, independente do histórico vacinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de rifampicina durante 4 meses para todos os contactantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Terapia com isoniazida para os menores de 5 anos após PPD.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um paciente com tuberculose (TB) pulmonar bacilífera, vivendo em ambiente de aglomeração domiciliar, o que torna a investigação de contatos obrigatória para identificar novos casos de doença ativa ou tratar a infecção latente por tuberculose (ILTB).\n\nAlternativa (a) Correta: O protocolo do Ministério da Saúde preconiza que todos os contatos de pacientes com TB ativa devem ser avaliados. O primeiro passo é excluir a doença ativa por meio da avaliação clínica (sintomas) e, se necessário, exames complementares como radiografia de tórax. Uma vez descartada a doença ativa, os contatos assintomáticos devem realizar testes de infecção (PPD ou IGRA). Se esses testes forem reatores, indica-se o tratamento da ILTB, sendo a isoniazida um dos esquemas-padrão para prevenir a progressão para a forma ativa da doença.\n\nAlternativa (b) Incorreta: A vacina BCG é recomendada prioritariamente para recém-nascidos e crianças de até 4 anos de idade para prevenir formas graves de tuberculose (miliar e meníngea). Ela não é utilizada como medida de profilaxia ou bloqueio para contatos de casos de tuberculose pulmonar em adultos ou em pessoas com histórico vacinal prévio fora das indicações específicas.\n\nAlternativa (c) Incorreta: Embora a rifampicina por 4 meses seja um esquema aceito para o tratamento da ILTB (especialmente em crianças menores de 10 anos, idosos ou pessoas com intolerância à isoniazida), o erro da alternativa reside em afirmar que o uso deve ser para \"todos os contatantes\". O tratamento preventivo só deve ser iniciado após a exclusão de doença ativa e a confirmação de infecção latente (PPD ou IGRA reator), salvo exceções muito específicas de contatos de alto risco.\n\nAlternativa (d) Incorreta: Embora crianças menores de 5 anos sejam consideradas um grupo de alto risco e prioridade na investigação, o tratamento não é automático apenas após o PPD. É fundamental a triagem prévia para afastar doença ativa (avaliação clínica e radiológica). Além disso, a alternativa (a) é mais completa por abranger a lógica geral do manejo de contatos em uma casa onde vivem adultos e crianças.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Vigilância em Saúde",
+      "Medidas de Saúde Coletiva",
+      "Tuberculose"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  },
+  {
+    "id": "AJUDA_bbb71bfd-8524-4aed-abbe-603c454fd0b9",
+    "originalId": "bbb71bfd-8524-4aed-abbe-603c454fd0b9",
+    "statement": "Considerando os estudos sobre as relações entre a saúde das populações e as desigualdades nas condições de vida em diferentes sociedades, é possível afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O principal fator que explica a situação geral da saúde de um país é sua riqueza total, independentemente do grau de crescimento econômico do país.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A distribuição geográfica equitativa de recursos financeiros no setor saúde é condição necessária e suficiente para alcançar o tratamento equitativo entre grupos sociais e entre indivíduos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Grupos de renda média em um país com alto grau de iniquidade de renda apresentam uma situação de saúde pior que a de grupos com renda inferior que vivam em uma sociedade mais equitativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Um dos principais mecanismos pelos quais as iniqüidades de renda produzem um impacto negativo na situação de saúde é o desgaste do capital social, ou seja, da proporção da riqueza do país distribuída adequadamente na sociedade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Distribuições igualitárias de recursos de saúde per capita tendem a resultar na obtenção de patamares mais igualitários nos resultados obtidos na saúde da população quando estes resultados são medidos em unidades como igualdade de acesso ou igualdade de uso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os conceitos de Determinantes Sociais da Saúde (DSS) e a relação entre economia e bem-estar populacional. Para respondê-la corretamente, é necessário compreender que a saúde não depende apenas de assistência médica ou riqueza absoluta, mas principalmente de como a sociedade está organizada.\n\nAlternativa a: Incorreta. A riqueza total de uma nação (PIB) não explica isoladamente a situação de saúde. Países com PIB inferior, mas com melhor distribuição de renda e redes de proteção social robustas, frequentemente apresentam indicadores de saúde superiores aos de países muito ricos, porém extremamente desiguais. A forma como a riqueza é distribuída impacta mais a saúde coletiva do que o montante total de recursos.\n\nAlternativa b: Incorreta. A distribuição geográfica de recursos financeiros é uma condição necessária para melhorar o acesso, mas está longe de ser suficiente. O tratamento equitativo exige intervenções em outros determinantes, como saneamento, educação, moradia e emprego. Além disso, a simples alocação de verbas não garante que os serviços serão utilizados de forma equânime por grupos vulneráveis se houver barreiras culturais ou organizacionais.\n\nAlternativa c: Correta. Esta alternativa reflete o chamado efeito da desigualdade relativa. Em sociedades com altos índices de iniquidade, o tecido social é fragilizado, gerando maior estresse psicossocial, violência e falta de coesão. Esses fatores impactam negativamente até mesmo as classes intermediárias. Por outro lado, em sociedades mais igualitárias, o forte apoio social e a qualidade dos serviços públicos universais garantem melhores resultados de saúde mesmo para quem possui uma renda nominal menor.\n\nAlternativa d: Incorreta. Embora a iniquidade de renda realmente cause o desgaste do capital social, a alternativa define capital social de forma errada. Capital social não é a proporção da riqueza distribuída, mas sim o grau de coesão social, confiança mútua, redes de solidariedade e participação cívica entre os indivíduos de uma comunidade.\n\nAlternativa e: Incorreta. Esta alternativa confunde igualdade com equidade. Distribuições igualitárias (dar exatamente a mesma quantia para todos) tendem a perpetuar as desigualdades preexistentes, pois quem precisa de mais continuará desassistido em suas necessidades específicas. Para obter resultados igualitários em saúde (como igualdade de acesso real), a distribuição de recursos deve ser equitativa, ou seja, deve-se oferecer mais recursos para as populações em situação de maior vulnerabilidade.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Processo Saúde-Doença",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  },
+  {
+    "id": "AJUDA_bbbc9a0b-2a87-4ce3-bfce-1064c92432ee",
+    "originalId": "bbbc9a0b-2a87-4ce3-bfce-1064c92432ee",
+    "statement": "Homem de 48 anos, pedreiro, relata febre diária, astenia, sudorese noturna e perda ponderal não intencional de 8 kg nas últimas 5 semanas. Refere, ainda, mialgia intensa e poliartralgia de pequenas e grandes articulações, com dificuldade para exercer sua profissão. Não há internações prévias, uso de drogas ilícitas ou comorbidades conhecidas. Ele passou por 3 avaliações ambulatoriais anteriores, recebendo cursos curtos de analgésicos e antibióticos para supostas infecções respiratórias, sem melhora clínica. Ao exame físico: emagrecido, hipocorado (2+/4+); temperatura: 38,4 ºC; pressão arterial: 110 x 60 mmHg; frequência cardíaca: 104 bpm; SatO2 em ar ambiente normal; cardíaco: ritmo regular, bulhas normofonéticas, com presença de sopro diastólico aspirativo (grau 3/6) audível no foco aórtico; baço palpável a 3 cm do rebordo costal esquerdo, indolor; presença de pequenos nódulos subcutâneos eritematosos e dolorosos nas polpas dos dedos das mãos; hemorragias subungueais lineares em três quirodáctilos; fundo de olho: lesões retinianas exsudativas com palidez central e halo hemorrágico. Exames séricos: hemoglobina 9,8 g/dL (normocítica e normocrômica), leucócitos 11.500/mm3 (sem desvio à esquerda); proteína C Reativa: 92 mg/L (normal: até 10); fator reumatoide positivo em altos títulos; anticorpo antinuclear (FAN): reagente 1:80, padrão pontilhado fino. Urinálise: hematúria dismórfica e proteinúria subnefrótica. Três amostras de sangue periférico incubadas em meios aeróbios e anaeróbios padrão por 5 dias sem crescimento bacteriano até o momento. É correto afirmar, considerando a principal hipótese diagnóstica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a febre Q, causada pela bactéria Coxiella burnetii, manifesta-se tipicamente como infecção de cultura negativa cursando com depleção da formação de imunocomplexos circulantes, dificultando a sua detecção clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "as lesões retinianas exsudativas com centro pálido consistem em vasculites retinianas imunomediadas que reforçam a suspeita de infecção intravascular no diagnóstico diferencial das síndromes febris.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "agentes etiológicos fastidiosos do grupo HACEK manifestam a síndrome de febre de origem indeterminada acompanhada de manifestações vasculares intensas, poupando a estrutura valvar de danos estruturais anatômicos significativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "os nódulos eritematosos e dolorosos nas polpas digitais, denominados lesões de Janeway, representam microabscessos decorrentes da embolização séptica direta de fragmentos da vegetação valvar para a circulação arterial periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "os fenômenos imunológicos descritos no paciente resultam da hipersensibilidade mediada por imunoglobulina E contra componentes da parede celular bacteriana, deflagrando uma cascata inflamatória alérgica sistêmica prolongada e lesiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico principal: endocardite infecciosa (EI) subaguda com hemocultura negativa, com fenômenos imunológicos proeminentes (glomerulonefrite, fator reumatoide positivo, manchas de Roth, nódulos de Osler) e insuficiência aórtica.\n\nCritérios de Duke presentes:\n- Predisposição e evidência de envolvimento endocárdico: novo sopro regurgitante aórtico.\n- Febre ≥ 38 ºC.\n- Fenômenos vasculares: hemorragias subungueais (em estilhaço).\n- Fenômenos imunológicos: glomerulonefrite (hematúria dismórfica e proteinúria), nódulos de Osler, manchas de Roth e fator reumatoide.\n- Esplenomegalia, anemia de doença crônica e aumento de PCR.\n\nComo o quadro é arrastado, com hemoculturas negativas após 5 dias, deve-se pensar em EI com cultura negativa. As causas são uso prévio de antibióticos (o paciente recebeu vários ciclos), microrganismos fastidiosos (HACEK, Abiotrophia) e intracelulares (Coxiella, Bartonella, Brucella, Tropheryma).\n\nAnálise das alternativas:\n\na) Incorreta. A febre Q (Coxiella burnetii) causa EI com cultura negativa, mas cursa com intensa ativação imune policlonal. Há hipergamaglobulinemia, fator reumatoide, anticorpos antifosfolípide e imunocomplexos circulantes elevados. Portanto, não há depleção de imunocomplexos. O diagnóstico é feito por sorologia (IgG fase I > 1:800) ou PCR.\n\nb) Correta, segundo o gabarito. As lesões retinianas com centro pálido e halo hemorrágico são as manchas de Roth. Elas são classicamente atribuídas a fenômeno vascular imunomediado, com vasculite e hemorragia retiniana, embora também possam ser embólicas. Reforçam a suspeita de infecção intravascular. Também ocorrem em anemia grave, leucemia e diabetes, mas neste contexto são critério imunológico de Duke.\n\nc) Incorreta. O grupo HACEK (Haemophilus, Aggregatibacter, Cardiobacterium, Eikenella, Kingella) causa EI subaguda com hemocultura de crescimento lento. Tipicamente provoca grandes vegetações e embolias, com dano valvar importante. Não poupa a válvula.\n\nd) Incorreta. A descrição corresponde aos nódulos de Osler, que são dolorosos e localizados nas polpas digitais, de mecanismo imunológico (deposição de imunocomplexos/vasculite). As lesões de Janeway são máculas indolores, hemorrágicas, nas palmas e plantas, atribuídas a microabscessos sépticos embólicos. A troca dos nomes torna a alternativa errada.\n\ne) Incorreta. Os fenômenos imunológicos da EI decorrem de hipersensibilidade tipo III, com imunocomplexos circulantes e deposição, além de ativação do complemento. Não são mediados por IgE (tipo I).\n\nConclusão: alternativa B.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  },
+  {
+    "id": "AJUDA_bbd196f6-eabe-4bcb-bd43-d8258b5a37ec",
+    "originalId": "bbd196f6-eabe-4bcb-bd43-d8258b5a37ec",
+    "statement": "A Epidemiologia Analítica tem como principal objetivo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descrever a distribuição das doenças na população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estabelecer relações de causalidade entre exposições e desfechos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Calcular indicadores de prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar vigilância de doenças emergentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Avaliar programas de imunização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é fundamental diferenciar os dois grandes ramos da epidemiologia: a descritiva e a analítica.\n\nAlternativa a: Incorreta. Descrever a distribuição das doenças na população, observando quem é afetado, em que local e em que momento, é a função primordial da Epidemiologia Descritiva. Ela serve para quantificar a magnitude do problema e levantar hipóteses, mas não busca explicar as causas.\n\nAlternativa b: Correta. O objetivo central da Epidemiologia Analítica é o teste de hipóteses. Diferentemente da descritiva, a analítica busca identificar os determinantes de uma doença, investigando se existe uma associação estatística e uma relação de causa e efeito entre determinados fatores (exposições) e a ocorrência de uma enfermidade (desfecho). Exemplos clássicos são os estudos de coorte e caso-controle.\n\nAlternativa c: Incorreta. O cálculo de indicadores de prevalência é uma medida de frequência, característica de estudos transversais e da epidemiologia descritiva. A prevalência indica a proporção de indivíduos doentes em um determinado ponto no tempo, sem necessariamente estabelecer nexo causal.\n\nAlternativa d: Incorreta. A vigilância de doenças emergentes é uma atividade prática da Vigilância Epidemiológica. Embora utilize ferramentas epidemiológicas, seu foco principal é o monitoramento contínuo de eventos de saúde para permitir intervenções rápidas e controle de surtos na saúde pública.\n\nAlternativa e: Incorreta. A avaliação de programas de saúde, como os de imunização, é uma aplicação da epidemiologia nos serviços de saúde. Embora a epidemiologia analítica possa fornecer métodos para essa avaliação (como ensaios clínicos ou estudos de efetividade), isso representa uma aplicação específica e não o objetivo definidor do campo analítico como um todo.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:54.482Z"
+  }
+]

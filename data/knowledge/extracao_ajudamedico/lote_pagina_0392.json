@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_6cbcc65f-7db5-4657-8bd4-72c4494b4546",
+    "originalId": "6cbcc65f-7db5-4657-8bd4-72c4494b4546",
+    "statement": "Pré-escolar, sexo masculino, com 3 anos e sete meses de idade, procura a Unidade Básica de Saúde para a realização de uma consulta pediátrica de rotina. Durante a antropometria, verifica-se, pela interpretação da atual curva de crescimento de referência, peso para idade no escore-z: +2,60, estatura para idade no escore-z: -0,70 e índice de massa corporal no escore-z: +2,08. A partir dos dados observados, a conduta médica correta para dar prosseguimento ao cuidado com a criança é",
+    "options": [
+      {
+        "id": "A",
+        "text": "tranquilizar a mãe, pois a criança apresenta peso e estatura adequados para sua idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar radiografia de punho e mão, pois a criança apresenta baixa estatura para sua idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar encaminhamento para endocrinopediatra, pois a criança apresenta sobrepeso e baixa estatura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "orientar acerca de estilo de vida, pois a criança se encontra com sobrepeso, apesar de estar com estatura adequada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "introduzir dieta com restrições, pois a criança é classificada como obesa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é necessário analisar os índices antropométricos fornecidos de acordo com os critérios da Organização Mundial da Saúde (OMS), adotados pelo Ministério da Saúde para crianças de 0 a 5 anos.\n\nAnálise dos dados:\n\n1. Estatura para idade (E/I): O escore-z é de -0,70. Para crianças de todas as idades, valores entre -2 e +2 escores-z são considerados estatura adequada para a idade. Portanto, o crescimento linear da criança está normal.\n\n2. Índice de Massa Corporal para idade (IMC/I): O escore-z é de +2,08. Em crianças menores de 5 anos (caso desta criança de 3 anos e 7 meses), a classificação é:\n- Entre +1 e +2: Risco de sobrepeso.\n- Entre +2 e +3: Sobrepeso.\n- Acima de +3: Obesidade.\nComo o valor é +2,08, a criança é classificada com sobrepeso.\n\n3. Peso para idade (P/I): O escore-z é de +2,60. Valores acima de +2 indicam peso elevado para a idade. Contudo, o IMC/I é um indicador mais preciso para o estado nutricional atual.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a estatura esteja adequada, o peso não está. A criança apresenta sobrepeso (IMC/I > +2), não sendo correto apenas tranquilizar a mãe sem realizar intervenções.\n\nb) Incorreta. A estatura para idade (escore-z -0,70) está dentro da normalidade (entre -2 e +2). Não há indicação de baixa estatura; logo, a solicitação de radiografia de punho e mão para avaliação de idade óssea é desnecessária.\n\nc) Incorreta. A criança não apresenta baixa estatura. Além disso, o sobrepeso inicial em uma criança de 3 anos deve ser abordado primeiramente na Unidade Básica de Saúde com orientações de estilo de vida, antes de se considerar um encaminhamento especializado, a menos que existam comorbidades graves ou falha na intervenção inicial.\n\nd) Correta. A classificação nutricional correta para um IMC/I de +2,08 é sobrepeso. A estatura está adequada (-0,70). A conduta adequada na atenção primária é a orientação sobre mudanças no estilo de vida, focando em alimentação saudável e estímulo à atividade física.\n\ne) Incorreta. A criança é classificada com sobrepeso, e não como obesa (o que exigiria escore-z de IMC > +3). Além disso, o termo \"introduzir dieta com restrições\" é inadequado para pré-escolares; o foco deve ser na reeducação alimentar e na qualidade da dieta, evitando restrições calóricas severas que possam prejudicar o crescimento.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:23.744Z"
+  },
+  {
+    "id": "AJUDA_6ccf1655-18ad-414f-950f-cc24d1986499",
+    "originalId": "6ccf1655-18ad-414f-950f-cc24d1986499",
+    "statement": "Ao realizar Exame Admissional em trabalhador da área Metalúrgica que apresente nível de Pressão Sonora Elevado (Ruído Industrial), tem a mensuração média de 115 decibéis. Qual o EPI (Equipamento de Proteção Individual), adequado a ser utilizado em uma jornada de 40 h semanais deverá ser obrigatoriamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Protetor auricular tipo concha",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Protetor auricular tipo de inserção (PLUG).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Poderá ser utilizado qualquer dos dois tipos de protetores inserção ou concha",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Com este nível de Pressão Sonora anunciada (115 decibéis) não há necessidade técnica para utilização dos protetores",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para analisar esta questão, é fundamental correlacionar o nível de Pressão Sonora com a Norma Regulamentadora 15 (NR-15), que estabelece os limites de tolerância para ruído contínuo ou intermitente.\n\nDe acordo com a NR-15, o limite máximo de exposição diária para um ruído de 115 decibéis (dB) sem proteção é de apenas 7 minutos. Como o trabalhador cumprirá uma jornada de 40 horas semanais (aproximadamente 8 horas por dia), a atenuação necessária para reduzir o ruído a níveis seguros (abaixo de 85 dB) é extremamente elevada.\n\nAlternativa A (Correta): O protetor auricular tipo concha (ou abafador) é o equipamento mais adequado para níveis de ruído muito elevados, como 115 dB. Esse tipo de EPI geralmente oferece um NRRsf (Nível de Redução de Ruído com Colocação Pelo Usuário) superior aos protetores de inserção simples. Além disso, o protetor tipo concha proporciona uma vedação mais estável ao redor da orelha, sendo menos dependente da anatomia do conduto auditivo do trabalhador para garantir a proteção efetiva em ambientes críticos.\n\nAlternativa B (Incorreta): O protetor auricular tipo inserção (plug) costuma apresentar uma capacidade de atenuação menor que os protetores tipo concha de alta performance. Em níveis de 115 dB, um protetor de inserção pode não ser suficiente para reduzir a pressão sonora a patamares aceitáveis para uma jornada de 8 horas diárias. Muitas vezes, em casos de 115 dB, a medicina do trabalho recomenda inclusive a proteção dupla (uso simultâneo de plug e concha), mas entre as opções individuais citadas, a concha é a obrigatória por sua maior eficácia.\n\nAlternativa C (Incorreta): Os protetores não podem ser utilizados indistintamente neste cenário. A escolha do EPI deve ser baseada no cálculo de atenuação necessário para que a dose de ruído recebida pelo trabalhador esteja dentro dos limites legais. Como 115 dB é o patamar máximo permitido pela norma para exposições curtíssimas, a exigência técnica recai sobre o equipamento de maior performance, que é o tipo concha.\n\nAlternativa D (Incorreta): Esta afirmação é tecnicamente perigosa e incorreta. O nível de 115 dB é extremamente alto e considerado o limite superior de tolerância para ruídos contínuos. A exposição a essa intensidade sem proteção durante uma jornada de trabalho causaria perda auditiva induzida por ruído (PAIR) de forma rápida e irreversível. A utilização de EPI é obrigatória e indispensável nesse contexto.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:23.744Z"
+  },
+  {
+    "id": "AJUDA_6cde2145-2a38-4cea-83c9-4e5fdb65fa64",
+    "originalId": "6cde2145-2a38-4cea-83c9-4e5fdb65fa64",
+    "statement": "F.A.N., 72 anos de idade, sexo masculino, é portador de insuficiência cardíaca com fração de ejeção reduzida (classe funcional IV da NYHA), DPOC avançada, e doença renal crônica, estágio 4. Nos últimos 12 meses, ele foi internado quatro vezes por descompensações da insuficiência cardíaca e exacerbações da DPOC, o que resultou em aumento progressivo de sua terapia medicamentosa. Relata efeitos colaterais dos medicamentos, como hipotensão frequente e episódios de tontura, além de perda de peso significativa (15 Kg em 6 meses). Seu último clearance de creatinina foi de 18 mL/min. O paciente está em oxigenoterapia contínua e, mesmo com o uso de diuréticos de alça e broncodilatadores, refere dispneia progressiva mesmo em repouso. Sua pressão arterial é de 92x60 mmHg. O paciente e sua família estão emocionalmente esgotados pelas frequentes hospitalizações e questionam se vale a pena continuar com tratamentos agressivos. A família também relatou preocupações sobre a situação financeira devido aos custos dos tratamentos e hospitalizações frequentes. Seu médico de família, gerente de sua saúde, questiona se as abordagens terapêuticas atuais estão melhorando a qualidade de vida de F.A.N. e considera ajustes na estratégia de tratamento. Com base nos indicadores gerais de saúde, qual é a conduta para o manejo deste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter o tratamento atual e ajustar doses de diuréticos e broncodilatadores para controle dos sintomas; encaminhar para avaliação nefrológica, considerando a possibilidade de iniciar diálise para melhorar a função renal e aliviar a sobrecarga cardíaca, com o objetivo de reduzir hospitalizações e aumentar o tempo de sobrevida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Priorizar uma abordagem curativa com ventilação não invasiva e ajuste de vasodilatadores para melhorar a perfusão e aliviar a dispneia; considerar internação em centro de terapia intensiva para manejo e avaliação de terapias avançadas, como suporte inotrópico, na tentativa de estabilizar o quadro clínico e proporcionar uma melhora significativa na qualidade de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar cuidados paliativos focados no alívio de sintomas, priorizando a melhoria da qualidade de vida; discutir com F.A.N. e sua família as opções de manejo, enfatizando a importância do controle da dor e da dispneia, suporte emocional, e um plano de cuidados domiciliares; avaliar a possibilidade de interromper terapias agressivas e manter tratamentos que proporcionem conforto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para avaliação de transplante cardíaco e pulmonar, considerando a falência terapêutica das intervenções convencionais, embora a idade e as comorbidades possam representar barreiras, o transplante em pacientes idosos com múltiplas doenças tem sido estudado com resultados promissores em casos selecionados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente de 72 anos com múltiplas comorbidades graves e avançadas: Insuficiência Cardíaca com Fração de Ejeção Reduzida em estágio terminal (NYHA IV), DPOC avançada e Doença Renal Crônica estágio 4 (quase 5). O paciente apresenta marcadores de mau prognóstico e fragilidade, como perda de peso involuntária acentuada (caquexia cardíaca/pulmonar), hospitalizações recorrentes no último ano, hipotensão arterial e refratariedade ao tratamento otimizado. Além disso, há um claro esgotamento emocional e financeiro da família e do paciente em relação às intervenções agressivas.\n\nAnálise das alternativas:\n\na) Incorreta. A manutenção do tratamento atual com foco apenas em ajustes de doses e a introdução de diálise (terapia de substituição renal) não abordam a terminalidade do quadro. Em pacientes com insuficiência cardíaca terminal e múltiplas comorbidades, a diálise muitas vezes aumenta o sofrimento e a carga de intervenções sem proporcionalidade clínica, não garantindo melhora na qualidade de vida ou redução significativa de hospitalizações neste contexto de fragilidade extrema.\n\nb) Incorreta. O termo \"abordagem curativa\" é inadequado para doenças crônicas progressivas e terminais como as descritas. O encaminhamento para Centro de Terapia Intensiva (CTI) e o uso de inotrópicos para pacientes com esse perfil clínico configuram, muitas vezes, distanásia (prolongamento do processo de morte com sofrimento), sem perspectiva de reversão da doença de base ou melhora sustentável.\n\nc) Correta. O paciente preenche critérios claros para o início de cuidados paliativos exclusivos ou predominantes. A presença de doença de órgão terminal, sintomas em repouso apesar do tratamento máximo, múltiplas internações e declínio funcional/nutricional indicam que o foco deve ser o alívio do sofrimento (físico, psíquico e social). A conduta envolve o controle rigoroso da dispneia e da dor, suporte à família, planejamento avançado de cuidados e a desospitalização sempre que possível, priorizando o conforto e a dignidade do paciente.\n\nd) Incorreta. O transplante cardíaco e pulmonar é formalmente contraindicado para este paciente. A idade avançada associada à falência multiorgânica (especialmente a doença renal estágio 4) e a fragilidade clínica impedem que ele seja um candidato a transplantes. Sugerir essa opção é tecnicamente incorreto e cria expectativas irreais para a família.\n\nConclusão: Diante de um quadro de múltiplas falências orgânicas terminais e sofrimento multidimensional, a boa prática médica indica a transição do foco terapêutico para os Cuidados Paliativos, conforme descrito na alternativa (c).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:23.744Z"
+  },
+  {
+    "id": "AJUDA_6ceba38b-c3f3-4eec-96af-d16095298af8",
+    "originalId": "6ceba38b-c3f3-4eec-96af-d16095298af8",
+    "statement": "Dois municípios de uma mesma Região de Saúde negociam metas assistenciais e responsabilidades, usando o Mapa da Saúde e um instrumento jurídico para formalização. Baseado no Decreto Nº 7.508, de 28 de junho de 2011, é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O COAP fornece base para pactuar responsabilidades interfederativas e metas, à luz do Mapa da Saúde regional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A carteira de serviços locais substitui o Mapa da Saúde para fins de regionalização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A regulação estadual torna dispensável o COAP, desde que haja teto financeiro municipal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O Mapa da Saúde é exclusivo da União e não deve orientar decisões regionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda a organização do Sistema Único de Saúde (SUS) conforme o Decreto Número 7.508, de 28 de junho de 2011, que regulamenta a Lei Número 8.080/1990. O foco aqui é entender como as Redes de Atenção à Saúde são estruturadas por meio do planejamento regional e dos instrumentos jurídicos de pactuação.\n\nAlternativa (a) - Correta: O Contrato Organizativo da Ação Pública da Saúde (COAP) é justamente o instrumento jurídico utilizado para formalizar o acordo entre os entes federativos (União, Estados e Municípios) dentro de uma Região de Saúde. O COAP define as responsabilidades individuais, os indicadores de saúde, as metas a serem alcançadas e os recursos financeiros envolvidos. Todo esse planejamento deve ser orientado pelo Mapa da Saúde, que é a descrição geográfica da distribuição de recursos humanos e de ações e serviços de saúde.\n\nAlternativa (b) - Incorreta: A carteira de serviços, ou a Relação Nacional de Ações e Serviços de Saúde (RENASES), não substitui o Mapa da Saúde. O Mapa da Saúde é a ferramenta de diagnóstico e planejamento que identifica as lacunas e capacidades de cada região, enquanto a RENASES lista quais ações e serviços o SUS oferece. A regionalização depende obrigatoriamente do Mapa da Saúde para existir.\n\nAlternativa (c) - Incorreta: O COAP não é dispensável. Ele é o mecanismo essencial para a integração das ações e serviços de saúde entre os diferentes entes federativos. A existência de regulação estadual ou de teto financeiro municipal não supre a necessidade de um pacto formal que organize a rede de atenção de forma regionalizada e hierarquizada.\n\nAlternativa (d) - Incorreta: O Mapa da Saúde não é exclusivo da União. Pelo contrário, ele deve ser construído de forma ascendente, partindo das realidades locais e regionais para compor o panorama estadual e nacional. Sua principal função é justamente orientar as decisões no âmbito das Regiões de Saúde, servindo como base para o planejamento das ações dos municípios e estados.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Processos de Descentralização e Regionalização do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:23.744Z"
+  },
+  {
+    "id": "AJUDA_6cf27a74-46ad-4ef9-b146-5d7c9380db06",
+    "originalId": "6cf27a74-46ad-4ef9-b146-5d7c9380db06",
+    "statement": "Uma mulher de 32 anos, sem comorbidades, em investigação de dispneia aos esforços, realiza ecocardiograma transtorácico que evidencia hipertensão pulmonar. A TC de tórax, a cintolografia ventilação/perfusão e a espirometria têm resultados normais. A paciente é encaminhada para cateterismo de câmaras direitas, que revela pressão da artéria (PA) pulmonar de 52mmHg, com pressão de oclusão da artéria pulmonar reduzida e resistência vascular pulmonar elevada. O mecanismo fisiopatológico mais provavelmente associado ao quadro de hipertensão pulmonar nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "remodelamento arterial pré-capilar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "elevação da pressão atrial esquerda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vacoconstrição induzida por hipoxemia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "obstrução tromboembólica das artérias pulmonares",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, devemos analisar os dados clínicos e hemodinâmicos fornecidos. A paciente apresenta um quadro de Hipertensão Pulmonar (HP) confirmada pelo cateterismo de câmaras direitas (pressão média da artéria pulmonar de 52 mmHg). O ponto-chave é identificar em qual grupo da classificação da HP ela se encaixa.\n\nO cateterismo revela uma pressão de oclusão da artéria pulmonar (PAWP ou POAP) reduzida (menor ou igual a 15 mmHg) e uma resistência vascular pulmonar (RVP) elevada. Esse padrão hemodinâmico define a HP pré-capilar. Além disso, a questão informa que a TC de tórax, a espirometria e a cintilografia de ventilação/perfusão são normais, o que exclui doenças pulmonares parenquimatosas (Grupo 3) e tromboembolismo crônico (Grupo 4).\n\nAnálise das alternativas:\n\na) CORRETA. O quadro é compatível com a Hipertensão Arterial Pulmonar (Grupo 1). Nesse grupo, a fisiopatologia principal envolve alterações estruturais nas pequenas artérias pulmonares, conhecidas como remodelamento arterial pré-capilar. Isso inclui hipertrofia da camada média, proliferação da íntima e formação de lesões plexiformes, o que aumenta a resistência ao fluxo sanguíneo independentemente de pressões elevadas no lado esquerdo do coração ou doenças respiratórias.\n\nb) INCORRETA. A elevação da pressão atrial esquerda caracteriza a HP pós-capilar (Grupo 2), geralmente causada por insuficiência cardíaca esquerda ou doenças valvares. Nesses casos, a pressão de oclusão da artéria pulmonar estaria elevada (maior que 15 mmHg), o que contradiz o achado do cateterismo da paciente (PAWP reduzida).\n\nc) INCORRETA. A vasoconstrição induzida por hipoxemia é o mecanismo predominante no Grupo 3 da classificação de HP, que ocorre em pacientes com DPOC, doenças intersticiais ou apneia do sono. Como a TC de tórax e a espirometria da paciente são normais, essa hipótese é descartada.\n\nd) INCORRETA. A obstrução tromboembólica das artérias pulmonares define o Grupo 4 (Hipertensão Pulmonar Tromboembólica Crônica — HPTEC). A questão afirma explicitamente que a cintilografia de ventilação/perfusão é normal, que é o exame padrão-ouro para triagem dessa condição. Uma cintilografia normal exclui de forma robusta a obstrução tromboembólica crônica.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:23.744Z"
+  },
+  {
+    "id": "AJUDA_6cff60f3-33fa-412e-aadc-8af75725036f",
+    "originalId": "6cff60f3-33fa-412e-aadc-8af75725036f",
+    "statement": "Mulher de 25 anos vai ao Pronto Socorro queixando-se de dor torácica ventilatório-dependente no hemitórax direito e dor nos quatro membros há dois dias. No momento, apresenta dispneia aos mínimos esforços e piora das dores. É portadora de anemia falciforme SS, e a hemoglobina basal é 9,6g/dL. Iniciou o uso de hidroxiureia há duas semanas. Ao exame físico, PA 124/82mmHg, FC 122bpm, SpO2 88% (ar ambiente), FR 24ipm, TAx 38,4°C. O exame respiratório revela taquipneia e crepitações teleinspiratórias na base do hemitórax direito. EXAMES DE LABORATÓRIO: Hg 7,2g/dL; leucócitos 15.900/mm³; neutrófilos 13.430/mm³; proteína C reativa 45mg/L. RADIOGRAFIA DO TÓRAX:  \n\nAssinale a alternativa que apresenta uma conduta INADEQUADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever ceftriaxona e azitromicina IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar transfusão de concentrado de hemácias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar angioTC do tórax",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender hidroxiureia",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A paciente apresenta um quadro clínico e radiológico compatível com Síndrome Torácica Aguda (STA). A STA é definida pela presença de um novo infiltrado pulmonar na radiografia (como observado na base do hemitórax direito na imagem fornecida), associado a pelo menos um sinal ou sintoma como febre, dor torácica, taquipneia, dispneia ou hipoxemia. No caso, a paciente apresenta todos esses critérios, além de uma queda importante na hemoglobina basal.\n\nAlternativa (a) Conduta adequada: O tratamento da STA deve sempre incluir antibioticoterapia de amplo espectro. Isso ocorre porque é difícil distinguir entre infarto pulmonar e pneumonia, e a infecção é um gatilho frequente. A recomendação é cobrir germes comuns (com cefalosporina de terceira geração, como a ceftriaxona) e germes atípicos (com macrolídeos, como a azitromicina).\n\nAlternativa (b) Conduta adequada: A transfusão de concentrado de hemácias (simples ou exsanguinotransfusão) é um pilar no tratamento da STA. Está indicada quando há hipoxemia (SpO2 abaixo de 90% ou 92% em ar ambiente), progressão clínica ou queda acentuada da hemoglobina basal. A paciente apresenta SpO2 de 88% e queda de 2,4 g/dL na hemoglobina, justificando a conduta.\n\nAlternativa (c) Conduta adequada: Pacientes com anemia falciforme estão em um estado de hipercoagulabilidade crônica e possuem risco elevado para tromboembolismo pulmonar (TEP). Como os sintomas de TEP e STA se sobrepõem (dor torácica, dispneia, taquicardia e hipoxemia), a solicitação de angio-TC de tórax é pertinente para descartar embolia pulmonar, especialmente em casos de descompensação aguda.\n\nAlternativa (d) Conduta INADEQUADA: A hidroxiureia é o principal tratamento modificador da doença na anemia falciforme, agindo através do aumento da hemoglobina fetal e redução da adesão celular, o que previne crises de dor e episódios de STA. Ela foi iniciada há duas semanas e não é a causa do quadro agudo. Não existe recomendação para suspender a hidroxiureia durante um evento de STA, exceto se houver toxicidade medular importante (o que não é o caso, visto que a paciente apresenta leucocitose com neutrofilia). Portanto, suspender a medicação é o erro da questão.\n\nGabarito: Alternativa (d).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Anemias",
+      "Pneumologia Intensiva"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/42e8c51e18da4392f5cf2872306117c8889297137507050a3bed0dd103d1ccf3.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_6cff60f3-33fa-412e-aadc-8af75725036f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:24.238Z"
+  },
+  {
+    "id": "AJUDA_6d12a67e-ce6d-471d-a9df-7d3f41631359",
+    "originalId": "6d12a67e-ce6d-471d-a9df-7d3f41631359",
+    "statement": "A hipocalemia é um distúrbio hidroeletrolítico comum e potencialmente fatal quando grave. Um número significativo de pacientes candidatos à cirurgia apresenta essa condição clínica e o diagnóstico e a conduta apropriada são fundamentais para a boa evolução clínica do paciente. Em relação aos pacientes com hipocalemia é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A correção intravenosa da hipocalemia deve ser feita geralmente com uma taxa de 40-60 mmol/hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A hipermagnesemia crônica é responsável por cerca de 40% dos casos de hipocalemia refratária ao tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A hipocalemia causa infradesnivelamento do segmento ST, depressão da onda T e o aparecimento da onda U.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Dosagem de potássio urinário < 20mEq/L sugere etiologia renal como causa da hipocalemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A (Incorreta): A taxa de infusão de potássio por via intravenosa deve ser feita com cautela para evitar arritmias graves e parada cardíaca. Em situações habituais, a velocidade recomendada é de 10 a 20 mmol/hora (mEq/h). Em casos de hipocalemia extrema com risco de vida, pode-se chegar a 40 mmol/h, mas sempre sob monitorização eletrocardiográfica contínua e preferencialmente em acesso venoso central, devido ao risco de flebite e toxicidade cardíaca. A taxa de 40-60 mmol/h citada na alternativa é excessiva e perigosa.\n\nAlternativa B (Incorreta): O distúrbio do magnésio associado à hipocalemia refratária é a HIPOmagnesemia, e não a hipermagnesemia. O magnésio atua como um cofator que inibe os canais ROMK nos túbulos renais; quando o magnésio está baixo, ocorre uma perda excessiva de potássio na urina. Cerca de 40% a 60% dos pacientes com hipocalemia apresentam hipomagnesemia concomitante, e a correção do potássio muitas vezes só é efetiva após a reposição do magnésio.\n\nAlternativa C (Correta): Esta alternativa descreve as alterações eletrocardiográficas clássicas da hipocalemia. À medida que os níveis de potássio caem, observa-se inicialmente o achatamento ou inversão da onda T, seguido pelo infradesnivelamento do segmento ST e o surgimento da onda U (uma deflexão positiva logo após a onda T, mais visível nas derivações precordiais de V2 a V4). Em casos graves, pode ocorrer prolongamento do intervalo QU e predisposição a arritmias ventriculares como o Torsades de Pointes.\n\nAlternativa D (Incorreta): A dosagem de potássio urinário é útil para diferenciar a origem da perda. Um potássio urinário baixo (geralmente menor que 15-20 mEq/L) indica que o rim está tentando conservar potássio, sugerindo que a causa da perda é extrarrenal (como perdas gastrointestinais por diarreia ou baixa ingestão). Quando o potássio urinário está elevado (maior que 20-30 mEq/L) na presença de hipocalemia, a etiologia é de origem renal (como uso de diuréticos, hiperaldosteronismo ou tubulopatias).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:24.238Z"
+  },
+  {
+    "id": "AJUDA_6d15ccc6-ed2c-4c6c-a5db-948f94519589",
+    "originalId": "6d15ccc6-ed2c-4c6c-a5db-948f94519589",
+    "statement": "J.L.S, 29 anos, sexo masculino, portador de Espondilite anquilosante, em acompanhamento ambulatorial regular no Hospital Silvestre. Qual dos achados abaixo provavelmente não será observado neste paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dactilite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uveite anterior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dor a palpação do tendão de Aquiles",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "HLA B27 positivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Dor lombar baixa que melhora com o repouso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A Espondilite Anquilosante (EA) é uma doença inflamatória crônica que faz parte do grupo das espondiloartrites, afetando predominantemente o esqueleto axial (coluna vertebral e articulações sacroilíacas). O diagnóstico e a compreensão da doença baseiam-se na diferenciação entre a dor mecânica e a dor inflamatória, além do reconhecimento de manifestações extra-articulares.\n\nAlternativa A (Dactilite): A dactilite, ou dedo em salsicha, é a inflamação difusa de um dedo das mãos ou dos pés. Embora seja um achado clássico da Artrite Psoriásica, ela pode ocorrer em qualquer uma das espondiloartrites, incluindo a Espondilite Anquilosante, especialmente quando há envolvimento de articulações periféricas.\n\nAlternativa B (Uveíte anterior): Esta é a manifestação extra-articular mais comum da Espondilite Anquilosante, acometendo cerca de 25 a 30 por cento dos pacientes ao longo da vida. Manifesta-se geralmente como um quadro agudo, unilateral, com dor, fotofobia e vermelhidão ocular.\n\nAlternativa C (Dor à palpação do tendão de Aquiles): A entesite, que é a inflamação no local onde tendões e ligamentos se inserem no osso, é considerada a lesão básica das espondiloartrites. O tendão de Aquiles e a fáscia plantar são os sítios mais frequentemente acometidos, causando dor importante à palpação e ao caminhar.\n\nAlternativa D (HLA-B27 positivo): O antígeno de histocompatibilidade HLA-B27 apresenta uma forte associação com a Espondilite Anquilosante. Cerca de 90 por cento dos pacientes brancos com a doença possuem esse marcador. Apesar de não ser um critério obrigatório ou isoladamente diagnóstico, sua presença em um paciente jovem com dor lombar crônica aumenta significativamente a probabilidade da doença.\n\nAlternativa E (Dor lombar baixa que melhora com o repouso): Esta alternativa descreve uma característica de dor lombar MECÂNICA (como em casos de hérnia de disco ou bico de papagaio). Na Espondilite Anquilosante, a dor é obrigatoriamente INFLAMATÓRIA. A dor lombar inflamatória possui critérios bem definidos: melhora com a atividade física, PIORA ou não apresenta melhora com o repouso, costuma despertar o paciente na segunda metade da noite e está associada a uma rigidez matinal prolongada (geralmente superior a 30 minutos). Portanto, um paciente com EA dificilmente apresentará melhora dos sintomas ao repousar; pelo contrário, o repouso prolongado tende a agravar a rigidez e o desconforto.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Espondiloartrites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:24.238Z"
+  },
+  {
+    "id": "AJUDA_6d18b51b-2e0d-4c43-8370-0736cc55d7a3",
+    "originalId": "6d18b51b-2e0d-4c43-8370-0736cc55d7a3",
+    "statement": "Em uma cidade do interior do Brasil, os indicadores de saúde revelaram um aumento nas taxas de mortalidade materna e infantil, além de altos índices de doenças crônicas não transmissíveis, como diabetes e hipertensão. Com base nas Políticas Nacionais de Saúde e em modelos de planejamento e avaliação em saúde, a estratégia mais eficaz para enfrentar o aumento das doenças crônicas e melhorar os indicadores de saúde materna e infantil nessa cidade, dentre as abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ampliar a rede de atenção especializada na saúde materno-infantil, com foco no fortalecimento dos serviços hospitalares e de urgência e emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fortalecer a atenção básica com a implementação de ações de promoção, prevenção e assistência à saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Implementar um sistema de monitoramento continuo para avaliar os indicadores de saúde e promover ações de saúde nas escolas e comunidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reforçar as ações de vigilância em saúde com enfoque em prevenção e diagnóstico precoce de doenças crônicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Planejamento estratégico que envolva ações especializadas na prevenção e assistência materno-infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\nO cenário apresentado descreve uma cidade com indicadores desfavoráveis em duas frentes principais: saúde materno-infantil (mortalidade) e doenças crônicas não transmissíveis (diabetes e hipertensão). De acordo com as diretrizes do Sistema Único de Saúde (SUS) e a Política Nacional de Atenção Básica (PNAB), a estratégia mais resolutiva e custo-efetiva para lidar com esses problemas de forma integrada é o fortalecimento do primeiro nível de atenção.\n\nALTERNATIVA A (INCORRETA)\nFocar na rede especializada e em serviços hospitalares ou de urgência é uma estratégia reativa e centrada na doença. Embora o suporte hospitalar seja fundamental para partos de risco ou crises hipertensivas, ele não previne o surgimento de complicações. A redução da mortalidade materno-infantil e o controle de doenças crônicas dependem de acompanhamento contínuo e preventivo, o que não é o escopo principal dos hospitais.\n\nALTERNATIVA B (CORRETA)\nA Atenção Básica é definida como a porta de entrada preferencial e a coordenadora do cuidado no SUS. O fortalecimento deste nível de atenção permite a realização de um pré-natal de qualidade e o acompanhamento do desenvolvimento infantil (puericultura), que são as medidas mais eficazes para reduzir a mortalidade materno-infantil. Simultaneamente, a Atenção Básica realiza o manejo longitudinal de hipertensos e diabéticos, promovendo mudanças no estilo de vida e garantindo a adesão ao tratamento, o que evita complicações graves e melhora os indicadores de saúde da cidade.\n\nALTERNATIVA C (INCORRETA)\nO monitoramento de indicadores e as ações em escolas são ferramentas importantes de vigilância e promoção, mas são insuficientes como estratégias isoladas. O monitoramento identifica o problema, mas a assistência direta e o tratamento clínico (necessários para diabetes e pré-natal) ocorrem nas unidades de saúde, não apenas em ações comunitárias ou escolares.\n\nALTERNATIVA D (INCORRETA)\nA vigilância em saúde e o diagnóstico precoce são partes fundamentais do sistema, porém a alternativa restringe o foco apenas às doenças crônicas. Além disso, para melhorar indicadores, não basta diagnosticar; é preciso oferecer assistência contínua e integral, garantindo que o paciente diagnosticado receba o tratamento e o acompanhamento necessários na rede de saúde.\n\nALTERNATIVA E (INCORRETA)\nO planejamento estratégico é um método de gestão essencial, mas a alternativa falha ao sugerir que as ações de prevenção e assistência materno-infantil devam ser prioritariamente \"especializadas\". A maioria das gestações e dos casos de doenças crônicas é de baixo risco e deve ser manejada integralmente na Atenção Básica para garantir acessibilidade e continuidade do cuidado. O uso excessivo de serviços especializados para casos simples gera ineficiência no sistema.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:24.238Z"
+  },
+  {
+    "id": "AJUDA_6d1d5976-ca76-4d7a-b991-945d9a6bac05",
+    "originalId": "6d1d5976-ca76-4d7a-b991-945d9a6bac05",
+    "statement": "Parturiente de risco habitual, 26 anos de idade, 38 semanas de gestação, primigesta, encontra-se em trabalho de parto espontâneo, sem bloqueio neuraxial. Exame obstétrico: frequência cardíaca fetal basal de 136 batimentos por minuto e com desacelerações precoces repetitivas à cardiotocografia, apresentação cefálica em OP e plano +3 de DeLee. Após 4 horas na fase ativa do período expulsivo, refere estar exausta e não consegue mais realizar puxos. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperoxigenação materna e continuação do período expulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar operação cesariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicação de vácuo-extrator ou fórcipe.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Cenário Clínico:\n\nA paciente é uma primigesta em trabalho de parto, apresentando um período expulsivo prolongado (4 horas de fase ativa). O feto está em boas condições de vitalidade, pois a frequência cardíaca basal está normal (136 bpm) e as desacelerações precoces (DIP I) são fisiológicas, indicando apenas compressão do polo cefálico no canal de parto, sem sofrimento fetal. O ponto crucial é que o feto está no plano +3 de DeLee (plano baixo/saída) e a mãe apresenta exaustão materna, não conseguindo mais realizar os esforços expulsivos (puxos).\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A hiperoxigenação materna é uma medida de ressuscitação intrauterina indicada em casos de sofrimento fetal agudo (desacelerações tardias ou variáveis graves), o que não ocorre aqui (as desacelerações são precoces). Além disso, apenas continuar o período expulsivo é contraindicado, pois a paciente já atingiu o limite de tempo recomendado para essa fase e está clinicamente exausta, sendo incapaz de progredir o parto sozinha.\n\nAlternativa B (Incorreta): Embora a operação cesariana seja uma via de parto, ela não é a conduta de escolha quando o feto já se encontra no plano +3 de DeLee. Realizar uma cesariana com a cabeça fetal tão baixa na pelve aumenta significativamente o risco de trauma materno (lacerações do segmento uterino) e dificuldade na extração fetal (cabeça impactada). Quando os critérios para o parto operatório vaginal são preenchidos e a cabeça está baixa, ele é preferível por ser mais rápido e evitar tais riscos.\n\nAlternativa C (Correta): Esta é a conduta mais adequada. As indicações para o parto operatório (fórcipe ou vácuo-extrator) incluem o período expulsivo prolongado e a exaustão materna, exatamente o que o quadro descreve. Como a apresentação está no plano +3 de DeLee (abaixo das espinhas isquiáticas), estão presentes as condições técnicas para uma aplicação segura do instrumento, auxiliando a saída do feto diante da impossibilidade de puxos maternos efetivos.\n\nConclusão: Diante de um feto baixo na pelve (+3 de DeLee), vitalidade preservada e exaustão materna no período expulsivo, a assistência mecânica ao parto via vaginal é a conduta padrão-ouro.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Parto Vaginal Operatório",
+      "Partograma e Distocias",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:57:24.238Z"
+  }
+]

@@ -1,0 +1,485 @@
+[
+  {
+    "id": "AJUDA_a525e320-6412-4dec-be90-200082d8fa19",
+    "originalId": "a525e320-6412-4dec-be90-200082d8fa19",
+    "statement": "Menina, 13 anos de idade, procura atendimento em uma UBS, acompanhada de sua mãe. Relata estar com 23 semanas de gestação, decorrente de relação sexual consensual com seu namorado de 15 anos de idade. Mãe e filha expressam o desejo de interromper a gestação. Com base na legislação brasileira vigente, a interrupção da gestação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "não está autorizada, pois não houve violência física e nem coação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "é permitida independentemente da idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "dependerá de comprovação legal do estupro por meio de laudo pericial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não está autorizada, por ultrapassar 22 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto central desta questão é a definição jurídica de estupro de vulnerável e as previsões do Código Penal Brasileiro para o aborto legal.\n\nDe acordo com o Artigo 217-A do Código Penal, ter conjunção carnal ou praticar outro ato libidinoso com menor de 14 anos configura crime de estupro de vulnerável. A lei brasileira estabelece uma presunção absoluta de violência nesses casos, o que significa que o consentimento da vítima, o fato de ter um relacionamento amoroso ou a idade do parceiro não descaracterizam o crime. Portanto, a gestação da paciente de 13 anos é, para fins jurídicos, decorrente de estupro.\n\nAlternativa a: Incorreta. Como a paciente tem menos de 14 anos, o ato é classificado como estupro de vulnerável por presunção legal (Artigo 217-A do Código Penal). A ausência de violência física, grave ameaça ou coação é irrelevante para a configuração do crime e para o direito ao aborto previsto em lei.\n\nAlternativa b: Correta. O Código Penal Brasileiro (Artigo 128, inciso II) permite o aborto em caso de gravidez resultante de estupro e não estabelece um limite de idade gestacional para o procedimento. Embora normas técnicas ministeriais ou resoluções de conselhos de classe tentem estabelecer marcos de viabilidade fetal (comumente citando 20 ou 22 semanas), essas diretrizes não podem se sobrepor à lei penal, que não impõe prazo. Decisões recentes do Supremo Tribunal Federal (STF) reforçam que não há limite temporal fixado em lei para o aborto legal.\n\nAlternativa c: Incorreta. Conforme a Lei 12.845/2013 (Lei do Minuto Seguinte) e a Portaria 2.561/2020 do Ministério da Saúde, não é necessária a apresentação de boletim de ocorrência, autorização judicial ou laudo pericial (IML) para a realização do aborto legal. O relato da vítima e de seu representante legal, documentado pela equipe de saúde por meio do Termo de Relato Circunstanciado, é suficiente para garantir o acesso ao procedimento.\n\nAlternativa d: Incorreta. Conforme explicado na alternativa B, o limite de 22 semanas não está previsto no Código Penal. O direito à interrupção da gestação em casos de estupro é assegurado pela legislação brasileira independentemente do tempo de gravidez, prevalecendo a proteção à dignidade e à saúde da vítima sobre limitações cronológicas administrativas.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  },
+  {
+    "id": "AJUDA_a530ff30-7390-43ac-9083-f41e2a1533d5",
+    "originalId": "a530ff30-7390-43ac-9083-f41e2a1533d5",
+    "statement": "As principais causas do abdome agudo obstrutivo, nos adultos, em ordem de frequência decrescente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia externa, neoplasias, bridas e aderências.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bridas e aderências, hérnias internas, tumores.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ileo biliar, estenoses, carcinomatose peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Neoplasia, volvo de sigmoide, bridas e aderência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender as causas do abdome agudo obstrutivo no adulto, é fundamental diferenciar a obstrução do intestino delgado da obstrução do intestino grosso, embora, de forma generalizada, exista uma tríade clássica que domina as estatísticas.\n\nA ordem de frequência das principais causas é:\n\n1. Bridas ou aderências: São a causa número um de obstrução intestinal em adultos, sendo responsáveis por cerca de 60% a 75% dos casos de obstrução do intestino delgado. Elas geralmente decorrem de processos cicatriciais de cirurgias abdominais prévias.\n2. Hérnias: Historicamente a segunda causa mais comum. Embora as hérnias externas (inguinais, femorais, incisionais) sejam muito mais frequentes que as internas, o grupo das hérnias como um todo ocupa o segundo lugar no ranking.\n3. Neoplasias (tumores): São a terceira causa geral, mas assumem o primeiro lugar quando analisamos especificamente a obstrução do intestino grosso (cólon), principalmente devido ao câncer colorretal.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Esta alternativa coloca as hérnias externas em primeiro lugar e as bridas em terceiro. Na população adulta moderna, com o aumento do número de procedimentos cirúrgicos, as bridas e aderências superaram as hérnias como principal etiologia.\n\nAlternativa b) Correta. É a única alternativa que inicia com \"Bridas e aderências\", que é consensualmente a causa mais frequente no adulto. Segue-se a menção a hérnias (neste caso, especificando internas, o que pode ser uma particularidade da banca, mas mantém a categoria correta no ranking) e tumores em terceiro lugar. Esta sequência respeita a ordem decrescente de prevalência epidemiológica.\n\nAlternativa c) Incorreta. O íleo biliar é uma causa rara de obstrução intestinal (menos de 1% a 4% dos casos), ocorrendo devido à passagem de um cálculo da vesícula para o lúmen intestinal através de uma fístula colecistoentérica. Não figura entre as causas principais.\n\nAlternativa d) Incorreta. Embora as neoplasias sejam causas importantes, elas não são a causa mais frequente no cômputo geral de obstruções em adultos. Além disso, o volvo de sigmoide, apesar de relevante em certas populações, é menos comum que as aderências e as hérnias.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  },
+  {
+    "id": "AJUDA_a53835d9-82ca-4467-87a1-9578f6953409",
+    "originalId": "a53835d9-82ca-4467-87a1-9578f6953409",
+    "statement": "Multípara, 37 semanas, obesa, apresentando diabetes mellitus gestacional controlada com insulina NPH e regular. Evoluiu para parto normal, e o recém-nascido pesou 3.300 gramas. A conduta no puerpério imediato deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "suspender insulinoterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "iniciar hipoglicemiante oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "manter insulina NPH em um terço da dose da gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "manter insulinoterapia com a dosagem do pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Diabetes Mellitus Gestacional (DMG) é uma condição caracterizada pelo aumento da resistência periférica à insulina, causada principalmente por hormônios produzidos pela placenta, como o lactogênio placentário humano, o cortisol e a progesterona. \n\nCom a ocorrência do parto e a consequente saída da placenta (dequitação), os níveis desses hormônios diabetogênicos caem abruptamente. Isso resulta em uma restauração imediata da sensibilidade à insulina da paciente aos níveis anteriores à gestação.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): No Diabetes Mellitus Gestacional, o fator desencadeante da hiperglicemia é a placenta. Uma vez removida, a necessidade de insulina exógena geralmente desaparece de imediato. Portanto, a conduta correta é suspender a insulinoterapia e monitorar a glicemia capilar nas primeiras 24 a 48 horas para confirmar a normalização.\n\nAlternativa B (Incorreta): Não há indicação para o início de hipoglicemiantes orais no puerpério imediato de pacientes com DMG. A conduta é a observação. Essas pacientes devem ser reavaliadas apenas 6 a 12 semanas após o parto, preferencialmente com um novo teste de tolerância oral à glicose (TOTG 75g), para verificar se o diabetes foi resolvido ou se a paciente permanece com alterações no metabolismo da glicose.\n\nAlternativa C (Incorreta): Manter a insulina em um terço ou metade da dose é a estratégia frequentemente utilizada para pacientes com Diabetes Mellitus Tipo 1 (pré-gestacional), que possuem deficiência absoluta de insulina e precisam de uma dose basal mínima para evitar cetoacidose. Não se aplica ao DMG.\n\nAlternativa D (Incorreta): Manter a dosagem do pré-natal é uma conduta de alto risco. Como a resistência insulínica cai drasticamente após o parto, a manutenção de doses elevadas de insulina (que eram necessárias para vencer o bloqueio placentário) causaria hipoglicemia grave na paciente.\n\nResumo: \nPacientes com Diabetes Gestacional devem ter a insulina suspensa no pós-parto imediato. \nPacientes com Diabetes Pré-gestacional devem ter suas doses de insulina reduzidas drasticamente e reajustadas conforme a glicemia capilar.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": 70.23301147466316,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  },
+  {
+    "id": "AJUDA_a54338a3-2cbd-49e3-810f-059cc8703e1e",
+    "originalId": "a54338a3-2cbd-49e3-810f-059cc8703e1e",
+    "statement": "O risco social deve ser estabelecido no primeiro atendimento da criança. Para a definição de risco social, o critério que NÃO precisa estar associado a outros é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "mãe menor de 15 anos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "mãe com algum tipo de deficiência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "criança manifestadamente indesejada",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "família com três filhos menores de 5 anos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação de risco social e biológico é uma ferramenta fundamental da Atenção Primária à Saúde para identificar crianças que necessitam de acompanhamento prioritário e vigilante, conforme as diretrizes do Ministério da Saúde. Alguns critérios são considerados tão determinantes para o desfecho negativo da saúde infantil que, sozinhos, já classificam a criança como de alto risco.\n\nAlternativa (a) Incorreta: Embora a maternidade na adolescência seja um fator de vulnerabilidade, nos manuais de saúde da criança, a idade materna (seja menor de 15, 16 ou 18 anos, dependendo da referência) geralmente precisa estar associada a outros fatores, como a falta de apoio familiar ou baixa escolaridade, para consolidar a classificação de risco social elevado.\n\nAlternativa (b) Incorreta: A presença de deficiência materna é um fator que pode dificultar os cuidados com o recém-nascido, mas sua relevância como risco social depende da rede de suporte disponível para essa mãe. Portanto, não é um critério que, isoladamente, defina o risco sem considerar o contexto.\n\nAlternativa (c) Correta: O fato de a criança ser manifestadamente indesejada é um critério de risco social isolado. Isso ocorre porque essa condição está intimamente ligada a maiores índices de negligência, maus-tratos, abandono e falha no vínculo afetivo, o que compromete diretamente o desenvolvimento e a integridade da criança, exigindo intervenção imediata e acompanhamento próximo da equipe de saúde, independentemente de qualquer outro fator.\n\nAlternativa (d) Incorreta: A presença de três ou mais filhos menores de 5 anos sinaliza uma sobrecarga para os cuidadores e pode comprometer a qualidade da assistência individualizada a cada criança. No entanto, assim como a idade materna, é um critério que costuma ser avaliado em conjunto com a situação socioeconômica e a estrutura familiar para definir o grau de risco.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  },
+  {
+    "id": "AJUDA_a546313f-ad3a-412a-96ad-8b777ab812b6",
+    "originalId": "a546313f-ad3a-412a-96ad-8b777ab812b6",
+    "statement": "Paciente com cirrose hepática por álcool, Child Pugh A e sem comorbidades, chega ao ambulatório com ultrassonografia de abdome apresentando um nódulo irregular medindo 3,0cm, em seu maior eixo, no seguimento VIII. Foi realizada tomografia de abdome com contraste dinâmico que evidenciou padrão de “wash out” no nódulo. Não se observam sinais de invasão vascular ou linfonodos. Estudos de estadiamento não apresentaram evidências de metástases. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir a tomografia com contraste em 3 meses para avaliar se haverá aumento do nódulo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para ablação percutânea por radiofrequência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para quimioembolização arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar tratamento com sorafenib.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um paciente cirrótico com um nódulo hepático de 3,0 cm apresentando o padrão radiológico clássico de \"wash-out\" (lavagem do contraste nas fases tardias). Em pacientes com cirrose, a presença de um nódulo maior que 1 cm com realce arterial e \"wash-out\" é diagnóstica de Carcinoma Hepatocelular (HCC), dispensando a necessidade de biópsia.\n\nPara definir a conduta, utiliza-se o sistema de estadiamento BCLC (Barcelona Clinic Liver Cancer). Este paciente possui um nódulo único de 3 cm, função hepática preservada (Child-Pugh A), sem invasão vascular e sem metástases, o que o classifica no Estágio A (Estágio Precoce). As opções de tratamento curativo para este estágio são a ressecção cirúrgica, o transplante de fígado ou a ablação por radiofrequência.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A conduta de observação ou repetição de exames em 3 a 4 meses é reservada para nódulos menores que 1 cm detectados na ultrassonografia de rastreamento ou lesões que não apresentam o padrão radiológico típico de HCC. Neste caso, o diagnóstico já está estabelecido e o tratamento deve ser iniciado.\n\nAlternativa B: Correta. A ablação percutânea por radiofrequência é uma terapia com intenção curativa indicada para pacientes no estágio BCLC A. Para nódulos únicos de até 3 cm, a ablação oferece excelentes taxas de controle da doença e sobrevida, sendo uma alternativa eficaz à cirurgia, especialmente dependendo da localização do nódulo e da reserva funcional do paciente.\n\nAlternativa C: Incorreta. A quimioembolização arterial (TACE) é a terapia de escolha para o estágio BCLC B (Estágio Intermediário), que se caracteriza por pacientes com tumores multinodulares, sem invasão vascular ou sintomas sistêmicos, e com função hepática preservada.\n\nAlternativa D: Incorreta. O sorafenibe é um quimioterápico sistêmico indicado para o estágio BCLC C (Estágio Avançado). Este estágio é definido pela presença de invasão vascular macroscópica (como trombo em veia porta), disseminação extra-hepática (metástases) ou comprometimento do estado de performance do paciente.\n\nGabarito: Letra (b).",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  },
+  {
+    "id": "AJUDA_a5472558-5a5f-40e8-a151-3aa544cb17d9",
+    "originalId": "a5472558-5a5f-40e8-a151-3aa544cb17d9",
+    "statement": "Em um plantão na maternidade, nasce uma criança com 33 semanas de um parto emergencial realizado devido a complicações maternas. O recém-nascido apresenta-se sem respirar e frequência cardíaca de 80 bpm ao nascimento. Após a recepção, estímulo tátil e realização das manobras iniciais, não há melhora significativa na frequência cardíaca ou início da respiração espontânea. Com base nas diretrizes de reanimação neonatal mais atuais, qual é a sequência correta de ações que devem ser tomadas para a reanimação desse neonato prematuro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar ventilação com pressão positiva (VPP) utilizando ar ambiente, avaliar a frequência cardíaca após 30 segundos e, se permanecer abaixo de 100 bpm, iniciar compressões torácicas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar oxigênio a 100% imediatamente através de máscara e balão, iniciar compressões torácicas simultaneamente com ventilação com pressão positiva (VPP) na proporção de 3:1 e reavaliar após 60 segundos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se iniciar ventilação com pressão positiva (VPP) utilizando uma mistura de ar e oxigênio (iniciando com FiO2 de 30%), ajustar a FiO2 com base na oximetria de pulso (que deve ser instalada imediatamente) e, se a frequência cardíaca permanecer abaixo de 60 bpm, após intubação, iniciar compressões torácicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar intubação traqueal imediata para garantir uma via aérea segura, iniciar ventilação com pressão positiva (VPP) com oxigênio a 100% e, se não houver resposta, considerar a administração de adrenalina intravenosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a reanimação neonatal em um prematuro tardio (33 semanas), exigindo o conhecimento das diretrizes da Sociedade Brasileira de Pediatria (SBP).\n\nO ponto central da reanimação neonatal é a ventilação. O recém-nascido apresenta frequência cardíaca (FC) de 80 bpm (abaixo de 100 bpm) e apneia após as manobras iniciais, o que indica o início imediato da Ventilação com Pressão Positiva (VPP) nos primeiros 60 segundos de vida (o Minuto de Ouro).\n\nAnálise das alternativas:\n\na) Incorreta. Para recém-nascidos com idade gestacional menor que 34 semanas, a recomendação atual é iniciar a VPP com uma concentração de oxigênio (FiO2) de 30%, e não com ar ambiente (21%). O ar ambiente é reservado para bebês com 34 semanas ou mais. Além disso, as compressões torácicas só devem ser iniciadas se a FC permanecer abaixo de 60 bpm após ventilação adequada, e não abaixo de 100 bpm.\n\nb) Incorreta. O uso de oxigênio a 100% de forma rotineira é prejudicial, especialmente em prematuros, devido ao estresse oxidativo e lesões teciduais. As compressões torácicas nunca devem ser iniciadas simultaneamente à VPP inicial; elas só são indicadas se, após 30 segundos de VPP técnica e efetiva (preferencialmente com via aérea avançada), a FC permanecer abaixo de 60 bpm.\n\nc) Correta. Esta alternativa segue rigorosamente os protocolos atuais. Em prematuros com menos de 34 semanas, inicia-se a VPP com FiO2 de 30%. A instalação do oxímetro de pulso (no membro superior direito) é obrigatória para monitorar a saturação e guiar o ajuste da oferta de oxigênio conforme a tabela de alvos por minuto de vida. As compressões torácicas são o passo seguinte apenas se a FC estiver abaixo de 60 bpm após ventilação eficaz (geralmente garantida por intubação traqueal).\n\nd) Incorreta. A intubação traqueal imediata não é a conduta de escolha inicial; a maioria dos neonatos responde bem à VPP com máscara facial ou cânula nasal. O uso de oxigênio a 100% logo de início está errado para este perfil de paciente. A adrenalina é uma medida de exceção, utilizada apenas quando a FC permanece abaixo de 60 bpm mesmo após ventilação e massagem cardíaca coordenadas e eficazes.\n\nResumo do manejo para 33 semanas:\n1. Avaliação inicial: Apneia e FC < 100 bpm.\n2. Conduta: VPP imediata com FiO2 inicial de 30%.\n3. Monitorização: Oximetria de pulso e monitor cardíaco.\n4. Reavaliação: Se FC < 60 bpm após VPP efetiva, proceder às compressões torácicas.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  },
+  {
+    "id": "AJUDA_a54f0de8-bbb0-4dd9-85b3-cc8a5cb6fe73",
+    "originalId": "a54f0de8-bbb0-4dd9-85b3-cc8a5cb6fe73",
+    "statement": "Um paciente de 60 anos permanece internado na UTI há 9 dias, sedado e com ventilação mecânica via tubo endotraqueal. Ele apresenta melhora gradual do quadro neurológico, porém continua dependente de ventilação invasiva, com tentativas de desmame fracassadas. Além disso, o exame físico revela aumento de secreções traqueais e sinais de lesão por pressão na via aérea superior. A equipe debate a realização de traqueostomia. Considerando o caso, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar pelo menos até o 14º dia de ventilação, evitando traqueostomia prematura, uma vez que as lesões por tubo podem regredir espontaneamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar traqueostomia eletiva agora (entre o 7º e 10º dia), para facilitar o desmame ventilatório, reduzir sedação, permitir melhor higiene das vias aéreas e prevenir lesão por pressão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar traqueostomia apenas em caso de obstrução aguda das vias aéreas superiores, trauma ou ventilação por mais de 2 semanas, o que não configura o caso em questão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paciente deve ser mantido com intubação orotraqueal. A traqueostomia, nesse caso, apenas aumenta o risco de complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente em ventilação mecânica (VM) prolongada (9 dias) com dificuldades no desmame ventilatório, excesso de secreções e sinais de complicações locais causadas pelo tubo orotraqueal. A decisão pelo momento da traqueostomia (TQT) deve considerar o equilíbrio entre os riscos do procedimento e os benefícios na condução do quadro clínico na UTI.\n\nAlternativa a) Incorreta. Aguardar sistematicamente até o 14º dia não é a conduta ideal quando já existem evidências de lesão por pressão na via aérea superior. A persistência do tubo orotraqueal nessas condições aumenta significativamente o risco de sequelas permanentes, como a estenose laringotraqueal. Além disso, o desmame difícil e a necessidade de higiene brônquica frequente são fatores que justificam a antecipação do procedimento.\n\nAlternativa b) Correta. A indicação de traqueostomia entre o 7º e o 10º dia (frequentemente chamada de traqueostomia precoce) é adequada para pacientes com perspectiva de ventilação prolongada ou que falharam em tentativas iniciais de desmame. Os principais benefícios são: \n1. Redução do espaço morto e da resistência da via aérea, facilitando o trabalho respiratório; \n2. Melhor higiene brônquica, permitindo aspiração mais eficaz de secreções; \n3. Redução da necessidade de sedação profunda, o que melhora o drive respiratório e o estado neurológico; \n4. Maior conforto e segurança para o paciente, prevenindo lesões por pressão na laringe e cavidade oral.\n\nAlternativa c) Incorreta. Esta alternativa limita a traqueostomia a situações de urgência ou a um critério temporal rígido e tardio. Na prática de terapia intensiva, a TQT eletiva é uma ferramenta terapêutica para otimizar o manejo do paciente crítico e acelerar a retirada do suporte ventilatório, não devendo ser postergada desnecessariamente quando os benefícios já estão claros.\n\nAlternativa d) Incorreta. A manutenção prolongada da intubação orotraqueal, especialmente quando já existem sinais de lesão na via aérea e dificuldade de desmame, é que aumenta o risco de complicações graves. A traqueostomia, neste cenário, é considerada um procedimento que reduz morbidades, como a pneumonia associada à ventilação mecânica (PAV) e o tempo total de internação na UTI.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  },
+  {
+    "id": "AJUDA_a550d575-57bb-4926-80de-2468c69123bb",
+    "originalId": "a550d575-57bb-4926-80de-2468c69123bb",
+    "statement": "Uma mulher de 23 anos de idade foi internada devido à cefaleia pulsátil bilateral com fono/ fotofobia associada. A paciente relatou estar com náuseas intensas naquele momento e solicitou medicamento para o controle dos sintomas. Com base nessa situação hipotética, assinale a alternativa que apresenta o esquema adequado para o controle sintomático, considerando-se que a paciente não possui alergias.",
+    "options": [
+      {
+        "id": "A",
+        "text": "dimenidriato + piridoxina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "metoclopramida + dexametasona",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ondansetrona + tramadol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "metoclopramida + tramadol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ondansetrona + cetoprofeno",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um quadro clínico clássico de crise de enxaqueca (migrânea), caracterizado por cefaleia pulsátil, sintomas sensoriais (fotofobia/fonofobia) e náuseas intensas. No ambiente de urgência e emergência, o tratamento visa não apenas o alívio da dor e dos sintomas associados, mas também a prevenção da recorrência precoce da dor.\n\nAlternativa a) Incorreta. O dimenidriato (um anti-histamínico H1) associado à piridoxina (vitamina B6) é um esquema muito utilizado para náuseas e vômitos na gestação ou em casos de cinetose. No entanto, essas medicações não possuem efeito analgésico sobre a crise de enxaqueca e não são a primeira escolha para o manejo desse quadro específico em emergências.\n\nAlternativa b) Correta. Esta é a conduta padrão em muitos protocolos de emergência. A metoclopramida é um antagonista dopaminérgico que atua como antiemético e pró-cinético, revertendo a estase gástrica comum durante as crises de enxaqueca. Além disso, quando administrada por via intravenosa, a metoclopramida possui um efeito analgésico intrínseco em crises de migrânea. A dexametasona, um corticosteroide, é adicionada ao tratamento agudo com o objetivo principal de reduzir a taxa de recorrência da cefaleia nas 24 a 72 horas seguintes ao atendimento inicial.\n\nAlternativa c) Incorreta. A ondansetrona é um antagonista 5-HT3 muito eficaz para náuseas, mas, na enxaqueca, ela não oferece o benefício da pró-cinética gástrica ou do efeito analgésico adicional que os antagonistas dopaminérgicos proporcionam. O uso de tramadol (opioide) é formalmente desaconselhado no tratamento de crises de enxaqueca, pois aumenta o risco de náuseas, pode causar cronificação da dor (cefaleia por uso excessivo de medicação) e apresenta menor eficácia do que agentes específicos (como triptanos ou AINEs).\n\nAlternativa d) Incorreta. Embora a metoclopramida seja uma excelente escolha, a associação com o tramadol invalida a alternativa. Conforme mencionado, os opioides não devem ser utilizados como terapia de primeira linha para enxaqueca devido ao risco de efeitos adversos, dependência e baixa resolutividade da crise a longo prazo.\n\nAlternativa e) Incorreta. O cetoprofeno é um anti-inflamatório não esteroidal (AINE) e é uma opção válida para o tratamento da dor na enxaqueca. Contudo, a ondansetrona não é o antiemético preferencial para esse cenário. Na comparação entre as alternativas, a letra B é considerada superior por abordar a prevenção da recorrência (com o corticoide) e utilizar o antiemético padrão-ouro para crises migranosas (antagonista dopaminérgico).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": 49.0536269523325,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  },
+  {
+    "id": "AJUDA_a550d6d1-e5e4-46c9-a6fb-b8cce7bd3ca7",
+    "originalId": "a550d6d1-e5e4-46c9-a6fb-b8cce7bd3ca7",
+    "statement": "Um casal jovem procura ginecologista pois está tentando engravidar há mais de um ano. O casal refere relações sexuais frequentes e ausência de métodos contraceptivos. Com base na definição amplamente aceita pelas principais sociedades médicas sobre infertilidade, qual é a melhor orientação a ser dada a esse casal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não há necessidade de investigação de infertilidade, neste primeiro momento, pois somente após dois anos, podemos considerar o casal infértil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A investigação de infertilidade já deve ser iniciada pois o casal já apresenta um ano de tentativas sem sucesso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar a investigação o quanto antes e iniciar indutor da ovulação por um período de três meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar a investigação masculina e posteriormente, a feminina, caso espermograma apresente resultado normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "CONCEITO DE INFERTILIDADE E CONDUTA INICIAL\n\nA infertilidade conjugal é definida pela Organização Mundial da Saúde (OMS) e pelas principais sociedades de reprodução humana, como a FEBRASGO (Brasil) e a ASRM (EUA), como a ausência de gravidez após 12 meses ou mais de relações sexuais frequentes, sem o uso de qualquer método contraceptivo. No caso de mulheres com 35 anos ou mais, esse prazo de espera é reduzido para 6 meses devido ao declínio da reserva ovariana. Para mulheres acima de 40 anos, a investigação pode ser iniciada imediatamente. Como o enunciado descreve um casal jovem tentando há mais de um ano, o critério clínico para o diagnóstico de infertilidade e o início da propedêutica já foram preenchidos.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. O prazo de dois anos não é o padrão adotado pelas sociedades médicas para a definição de infertilidade. Aguardar esse período retardaria o diagnóstico e possíveis intervenções, o que pode comprometer o prognóstico reprodutivo do casal.\n\nAlternativa b) Correta. Esta alternativa reflete a diretriz clássica: após 12 meses de tentativas sem sucesso em um casal jovem, a investigação deve ser iniciada. O objetivo é identificar possíveis causas (fatores masculinos, ovulatórios, tubários ou uterinos) para propor o tratamento mais adequado.\n\nAlternativa c) Incorreta. A prática de iniciar um tratamento, como a indução da ovulação, antes de realizar a investigação básica é tecnicamente inadequada. É necessário primeiro diagnosticar a causa da infertilidade. Se o casal apresentar, por exemplo, uma obstrução tubária bilateral ou uma alteração grave no espermograma, o uso de indutores de ovulação seria inútil e protelaria o tratamento correto.\n\nAlternativa d) Incorreta. A investigação da infertilidade deve ser sempre simultânea, envolvendo o homem e a mulher ao mesmo tempo. O fator masculino isolado está presente em cerca de 30% dos casos e o fator feminino em outros 30%, havendo associação de ambos em cerca de 20% a 30% das vezes. Investigar de forma sequencial atrasa desnecessariamente o diagnóstico final.\n\nGABARITO: Letra B.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  },
+  {
+    "id": "AJUDA_a5526793-c31b-4cce-a180-5954afb7e7f7",
+    "originalId": "a5526793-c31b-4cce-a180-5954afb7e7f7",
+    "statement": "Situação-Problema: Mulher, 32 anos de idade, G3P0A3. Três perdas gestacionais consecutivas com <12 semanas: 8, 9 e 10 semanas (todas com embrião e BCF prévio, seguidas de sangramento). Nega infecções nas gestações; nega consumo de álcool ou tabagismo. Sem antecedente de trombose, IMC 24 kg/m². Dados da investigação já feita: histerossalpingografia e histeroscopia diagnóstica normais; ultrassom 3D sem malformações. Cariótipo parental: 46, XX/46, XY. TSH 1,5 mUI/L; prolactina normal; trombofilias hereditárias ausentes. Anticorpos antifosfolípides: anticardiolipina IgG elevada em duas coletas com 14 semanas de intervalo; anticoagulante lúpico negativo; anti-β2GP1 limítrofe.\n\nIndique outra complicação obstétrica associada ao diagnóstico do caso, além de abortos recorrentes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acretismo placentário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diabetes gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pré-eclâmpsia grave e/ou parto prematuro < 34 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Gestação ectópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico do caso: Síndrome Antifosfolípide (SAF) Obstétrica.\n\nA paciente preenche os critérios clínicos e laboratoriais de Sapporo/Sydney para SAF obstétrica: apresenta histórico de 3 perdas gestacionais consecutivas precoces (com viabilidade embrionária prévia documentada) e positividade do anticorpo anticardiolipina IgG em duas dosagens com intervalo superior a 12 semanas, após a exclusão de outras causas anatômicas, genéticas, hormonais e trombofilias hereditárias.\n\nAnálise das alternativas:\n\na) Incorreta. O acretismo placentário decorre da invasão miometrial excessiva do trofoblasto associada à deficiência da decídua basal. Seus principais fatores de risco são cicatrizes uterinas prévias (como cesáreas e curetagens) e placenta prévia, não possuindo correlação fisiopatológica com a SAF.\n\nb) Incorreta. O diabetes mellitus gestacional é uma condição metabólica caracterizada pelo aumento da resistência periférica à insulina decorrente da secreção de hormônios placentários, sem relação causal ou fisiopatológica direta com a SAF.\n\nc) Correta. A SAF cursa com trombose na microcirculação placentária, disfunção na invasão trofoblástica e ativação do sistema complemento, o que acarreta insuficiência placentária grave. Dessa forma, além dos abortamentos recorrentes e perdas fetais tardias, a síndrome está fortemente associada a quadros de pré-eclâmpsia grave, eclâmpsia, restrição de crescimento intrauterino e necessidade de parto prematuro indicado antes de 34 semanas de gestação (que também constituem critérios clínicos diagnósticos formais da doença).\n\nd) Incorreta. A gestação ectópica ocorre devido a alterações no transporte do concepto pela tuba uterina, tendo como principais fatores de risco a doença inflamatória pélvica prévia, cirurgias tubárias anteriores, uso de DIU e tabagismo, não fazendo parte do espectro de complicações da SAF.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Abortamento de Repetição",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:56.900Z"
+  }
+]

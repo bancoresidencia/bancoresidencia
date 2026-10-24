@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_4cde0e2c-ccbe-4dc0-a83c-b012716d5f2d",
+    "originalId": "4cde0e2c-ccbe-4dc0-a83c-b012716d5f2d",
+    "statement": "Homem, 22 anos, vítima de queda de motocicleta a 50 km/h, sem capacete, há 30 minutos. Trazido pelo resgate em prancha rígida e com colar cervical. Dados do local: PA 110 x 70 mmHg, FC 90 bpm, FR 16 ipm, escala de coma de Glasgow AO 4, RV 4, RM 6. Chega ao hospital com via aérea pérvia, exame torácico sem alterações, PA 110 x 60 mmHg, FC 85 bpm, FR 15 ipm, SatO2 95%, FAST negativo, sem deformidades em membros inferiores e superiores, ferimento corto-contuso em região parietal direita, com curativo compressivo, midríase à direita, escala de coma de Glasgow AO 2, RV 2, RM 4. O hospital não possui especialidades cirúrgicas. Qual é o diagnóstico e quais condutas devem ser tomadas nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TCE grave, intubação orotraqueal, e transferir para centro de trauma com neurocirurgião.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "TCE moderado, intubação orotraqueal e transferir para centro de trauma com neurocirurgião.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "TCE moderado, iniciar manitol endovenoso, observação clínica por 2 horas, e transferir para centro de trauma com neurocirurgião.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "TCE grave, realizar tomografia de crânio, e transferir para centro de trauma com neurocirurgião.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O diagnóstico de Traumatismo Cranioencefálico (TCE) é definido pela Escala de Coma de Glasgow (ECG). No caso apresentado, o paciente evoluiu de uma pontuação inicial de 14 para uma pontuação atual de 8 (Abertura Ocular 2 + Resposta Verbal 2 + Resposta Motora 4). Pelos critérios do ATLS (*Advanced Trauma Life Support*), um TCE com ECG menor ou igual a 8 é classificado como grave. Além disso, a presença de midríase à direita (anisocoria) em um paciente com rebaixamento do nível de consciência sugere um fenômeno de herniação uncal, indicando uma lesão expansiva intracraniana grave.\n\nA conduta imediata no protocolo de trauma segue a ordem do ABCDE. No item A (Via aérea com controle da coluna cervical), a Escala de Glasgow menor ou igual a 8 é uma indicação clássica para o estabelecimento de uma via aérea definitiva (intubação orotraqueal), visando proteger a via aérea de aspiração e garantir a oxigenação adequada para prevenir lesões cerebrais secundárias. Como a unidade de saúde não dispõe de neurocirurgião, após a estabilização inicial, o paciente deve ser transferido imediatamente para um centro de trauma com suporte especializado.\n\nAnálise das alternativas:\n\nAlternativa a: Está correta. O diagnóstico de TCE grave está fundamentado na ECG de 8. A intubação é obrigatória pela pontuação na escala de coma e a transferência é necessária pela ausência de recursos cirúrgicos no local.\n\nAlternativa b: Está incorreta. O TCE é classificado como moderado quando a pontuação na ECG está entre 9 e 12. Com uma pontuação de 8, ele entra na categoria de grave.\n\nAlternativa c: Está incorreta. Além do erro na classificação (moderado), a conduta de observação clínica é inadequada para um paciente em deterioração neurológica aguda. O manitol pode ser utilizado como medida de salvatagem para reduzir a pressão intracraniana, mas não substitui a necessidade de intubação e transferência imediata.\n\nAlternativa d: Está incorreta. Embora o diagnóstico de TCE grave esteja correto, a realização da tomografia de crânio em uma unidade que não possui neurocirurgião não deve retardar a transferência ou a estabilização das vias aéreas. No trauma, a estabilização do \"A\" (via aérea) precede a realização de exames de imagem complementares.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Traumatismo Cranioencefálico",
+      "Intubação"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  },
+  {
+    "id": "AJUDA_4ce9ceb7-6189-46d7-ab4c-874fdd59e8cb",
+    "originalId": "4ce9ceb7-6189-46d7-ab4c-874fdd59e8cb",
+    "statement": "Em recente artigo na Folha de S. Paulo, o economista Armínio Fraga defende, entre outras, as seguintes posições em relação ao SUS: 1. O mercado privado de saúde vem mudando muito, com aquisições, fusões e uma tendência de verticalização. Qual é a sua avaliação sobre isso? \"A minha avaliação é positiva. Porque ela internaliza esse conflito. Os planos não querem pagar. E os médicos e outros profissionais querem gastar. E gastam até demais. Eu acho que tem uma postura até defensiva. E a verticalização internaliza isso. É uma forma, inclusive, de desonerar um pouco a medicina.\" 2. \"Em muitos países europeus, todos os moradores devem ter um seguro saúde. Caso alguém não tenha condições de bancar um plano, o governo cobre os custos por meio do seguro desemprego ou auxílio social. A gestão dos serviços costuma ser privada. \"Uma coisa é o Estado bancar certos custos, outra é o Estado fazer a gestão. Então, onde é possível terceirizar, delegar, vale a pena explorar.\" Baseado nas posições defendidas pelo economista Armínio Fraga, responda: O que significa a tendência de verticalização que vem ocorrendo na saúde suplementar brasileira? Como o setor privado de assistência participa no SUS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É a compra e/ou fusões das pequenas operadoras de convênios pelas grandes operadoras, produzindo um mercado de saúde suplementar oligopolizado. O setor privado não participa do SUS, mas, tão-somente, na Saúde Suplementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É a compra e/ou fusões de hospitais, laboratórios e clínicas pelas operadoras de convênio. Em caráter complementar, por intermédio de contratos de direito público",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "É a compra e/ou fusões das operadoras nacionais de convênios médicos com as seguradoras internacionais (caso da Amil). Em caráter suplementar, por intermédio de contratos de direito privado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É a utilização dos serviços do SUS por parte dos convênios médicos, principalmente em relação aos procedimentos de alto custo e de maior complexidade. De uma forma mista (complementar e suplementar), onde somente os serviços privados de caráter filantrópicos podem participar do SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O tema abordado nesta questão envolve dois conceitos centrais da administração e política de saúde no Brasil: o modelo de gestão da saúde suplementar e a estrutura de funcionamento do Sistema Único de Saúde (SUS).\n\nAnálise da Verticalização:\nNa saúde suplementar, a verticalização é o processo em que a operadora de planos de saúde passa a deter o controle de toda a cadeia de produção do serviço. Ou seja, em vez de apenas contratar uma rede credenciada (hospitais e laboratórios de terceiros), a operadora compra ou constrói seus próprios recursos assistenciais. Isso permite maior controle sobre os custos e sobre a forma como os procedimentos são realizados, além de reduzir o conflito entre o pagador (operadora) e o prestador (médico/hospital).\n\nAnálise da Participação Privada no SUS:\nConforme o Artigo 199 da Constituição Federal e a Lei 8.080/90, o setor privado pode participar do SUS de forma complementar. Isso ocorre quando o Estado não possui leitos ou serviços suficientes em sua rede própria para atender à demanda. Essa participação deve ser formalizada por meio de contratos de direito público ou convênios, submetendo o ente privado às regras e ao controle do SUS, com preferência para entidades filantrópicas e sem fins lucrativos.\n\nAvaliação das Alternativas:\n\nAlternativa a) Incorreta. A compra de operadoras pequenas por grandes caracteriza uma concentração de mercado (integração horizontal), mas não é o que define a verticalização. Além disso, o setor privado tem papel fundamental no SUS através da rede complementar.\n\nAlternativa b) Correta. Define adequadamente a verticalização como a integração de hospitais, clínicas e laboratórios à estrutura das operadoras de saúde. Também descreve corretamente a participação complementar do setor privado no SUS, regida por instrumentos de direito público.\n\nAlternativa c) Incorreta. A fusão de operadoras nacionais com seguradoras internacionais refere-se à entrada de capital estrangeiro no setor, e não ao conceito de verticalização. O termo correto para a participação no SUS é complementar, e não suplementar (saúde suplementar é o nome dado ao mercado de planos de saúde).\n\nAlternativa d) Incorreta. O uso do SUS por beneficiários de planos para procedimentos de alto custo é uma distorção do sistema que gera ressarcimento obrigatório ao SUS, mas não define a verticalização. Além disso, o setor privado lucrativo também pode participar do SUS se as entidades filantrópicas não forem suficientes para suprir a demanda.\n\nGabarito: Letra (b).",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  },
+  {
+    "id": "AJUDA_4cf46e32-8a7d-4bf8-b057-85e5a03b9b44",
+    "originalId": "4cf46e32-8a7d-4bf8-b057-85e5a03b9b44",
+    "statement": "Mulher, 52 anos, é levada ao pronto-socorro por cefaleia em trovoada de início súbito (menos de 1 minuto) há 45 minutos, acompanhada de breve síncope. Ao exame: PA 185 x 105 mmHg, Glasgow 15, rigidez de nuca; sem déficits focais. TC de crânio: hemorragia subaracnoidea. Angio-TC: aneurisma de artéria comunicante anterior. Prescritas: analgesia (dipirona/morfina), controle pressórico com nicardipina EV, nimodipina VO, e fenitoína. A neurocirurgia informa disponibilidade de sala para clipagem em 1-2 horas. Qual medida realizada reduz especificamente a chance de isquemia cerebral tardia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "nitroprussiato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nimodipina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "clipagem do aneurisma antes de 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fenitoína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "atorvastatina em alta dose nas primeiras 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma Hemorragia Subaracnoidea (HSA) aneurismática, uma emergência neurológica grave. Após a estabilização inicial e o diagnóstico, a preocupação do médico divide-se em prevenir as principais complicações: o ressangramento (precoce) e a isquemia cerebral tardia (ICT), que geralmente ocorre entre o 3º e o 21º dia após o evento inicial.\n\nA alternativa correta é a letra (b).\n\nExplicação detalhada das alternativas:\n\na) Nitroprussiato de sódio: É um potente vasodilatador utilizado para controle pressórico em emergências hipertensivas. No entanto, na HSA, ele deve ser evitado ou usado com extrema cautela, pois pode aumentar o volume sanguíneo intracraniano e, consequentemente, a pressão intracraniana. Além disso, não possui qualquer efeito na redução da isquemia cerebral tardia.\n\nb) Nimodipina: É um bloqueador dos canais de cálcio com seletividade para a vasculatura cerebral. É a única medida farmacológica com evidência sólida (Classe I, Nível A) para melhorar o prognóstico neurológico e reduzir a incidência de isquemia cerebral tardia (ICT) em pacientes com HSA aneurismática. Embora inicialmente se acreditasse que ela agia apenas prevenindo o vasoespasmo macroscópico, hoje se sabe que seu benefício também envolve mecanismos de neuroproteção e melhora da microcirculação. O protocolo padrão é o uso por 21 dias.\n\nc) Clipagem do aneurisma antes de 12 horas: A intervenção precoce (seja por clipagem cirúrgica ou embolização endovascular) é fundamental no tratamento da HSA, mas seu objetivo principal é prevenir o ressangramento, que é a complicação mais letal nas primeiras 24-48 horas. A exclusão precoce do aneurisma não reduz, por si só, o risco de desenvolvimento de isquemia cerebral tardia/vasoespasmo nos dias subsequentes.\n\nd) Fenitoína: É um anticonvulsivante. Na HSA, o uso de profilaxia para crises convulsivas é controverso e, quando indicado, geralmente é feito por um curto período. A fenitoína não tem papel na prevenção de fenômenos isquêmicos ou de vasoespasmo cerebral. Inclusive, alguns estudos sugerem que o uso prolongado de fenitoína na HSA pode estar associado a piores resultados cognitivos.\n\ne) Atorvastatina em alta dose nas primeiras 24 horas: Embora o uso de estatinas tenha sido exaustivamente estudado na HSA por suas propriedades pleiotrópicas (anti-inflamatórias e proteção endotelial), grandes ensaios clínicos (como o estudo STASH) não demonstraram benefício na redução da isquemia cerebral tardia ou na melhora do desfecho clínico a longo prazo. Portanto, não é uma recomendação de rotina para essa finalidade específica.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  },
+  {
+    "id": "AJUDA_4cf91014-5a31-43f3-a4ce-8348a65f3dc2",
+    "originalId": "4cf91014-5a31-43f3-a4ce-8348a65f3dc2",
+    "statement": "Qual é a ocupação/indústria relacionada a um fator de risco para a asbestose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Materiais de fricção (pastilhas de freio).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aeroespacial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transformação (vidro).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Energia nuclear.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A asbestose é uma pneumoconiose progressiva causada pela inalação de fibras de asbesto (também conhecido como amianto). A doença caracteriza-se por uma fibrose intersticial difusa do parênquima pulmonar e está diretamente relacionada à exposição ocupacional em indústrias que utilizam as propriedades físico-químicas do mineral, como a resistência ao calor e a durabilidade.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: O asbesto foi amplamente utilizado na fabricação de materiais de fricção, como pastilhas de freio e lonas de embreagem, devido à sua excelente capacidade de suportar altas temperaturas e atrito sem se degradar. Mecânicos de automóveis e trabalhadores da linha de produção desses componentes são grupos de risco clássicos para o desenvolvimento da asbestose e de outras doenças relacionadas ao amianto, como o mesotelioma.\n\nAlternativa (b) Incorreta: A indústria aeroespacial é mais frequentemente associada à exposição ao berílio. A inalação deste metal pode levar à beriliose, uma doença granulomatosa crônica que mimetiza a sarcoidose. Embora o asbesto pudesse ser encontrado em isolamentos antigos, não é o fator de risco principal ou específico dessa indústria em questões de prova.\n\nAlternativa (c) Incorreta: A indústria de transformação de vidro está classicamente relacionada à silicose. O principal componente do vidro é a sílica (areia), e o processo de trituração, mistura e sopro do vidro pode liberar poeira de sílica livre cristalina, que é o agente etiológico da silicose.\n\nAlternativa (d) Incorreta: A energia nuclear não é a ocupação de escolha relacionada à asbestose. Os riscos ocupacionais mais emblemáticos no setor nuclear envolvem a exposição à radiação ionizante e, em certos processos de manutenção ou moderação de reatores, também ao berílio.\n\nPortanto, a associação direta e correta entre a ocupação/indústria e o fator de risco para asbestose reside nos materiais de fricção.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  },
+  {
+    "id": "AJUDA_4cfec04c-3a2d-4c6f-99c4-eec1620de41c",
+    "originalId": "4cfec04c-3a2d-4c6f-99c4-eec1620de41c",
+    "statement": "Menina, 2 anos de idade, apresenta 3 pápulas arredondadas, com cerca de 2 mm de diâmetro, firmes, rosadas, com umbilicação central, em região lateral do tórax. A mãe percebeu as lesões há cerca de 1 semana.\n\nO diagnóstico pertinente ao quadro e a conduta indicada são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "cisto de mília; acompanhamento clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nódulo escabiótico; ivermectina VO, em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "foliculite; lavar com água e sabão e aplicar mupirocina creme, 2 vezes ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "verruga filiforme; aplicar solução de ácidos salicílico e lático no local, com curativo oclusivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "molusco contagioso; acompanhamento clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico apresentado pela criança é típico de molusco contagioso, uma dermatose viral causada por um vírus da família Poxviridae, muito frequente na idade pediátrica. A descrição de pápulas rosadas, firmes e, principalmente, com umbilicação central é o sinal semiológico patognomônico desta patologia.\n\nAlternativa a: Incorreta. Os cistos de mília são pequenas pápulas esbranquiçadas ou amareladas que representam pequenos cistos de queratina. Eles são comuns na face de recém-nascidos ou em locais de cicatrização, mas não apresentam a umbilicação central característica descrita no caso.\n\nAlternativa b: Incorreta. O nódulo escabiótico é uma manifestação de hipersensibilidade que pode persistir após o tratamento da escabiose. Apresenta-se como pápulas ou nódulos extremamente pruriginosos, geralmente em áreas como genitália e axilas, sem a morfologia umbilicada.\n\nAlternativa c: Incorreta. A foliculite é a inflamação do folículo piloso, caracterizada por pústulas ou pápulas eritematosas centradas por um pelo. O tratamento descrito (mupirocina) é voltado para a etiologia bacteriana, o que não condiz com as pápulas umbilicadas e firmes do enunciado.\n\nAlternativa d: Incorreta. Verrugas filiformes são causadas pelo HPV e apresentam crescimento vertical, em forma de \"dedos\" ou espículas, sendo mais comuns na face e pescoço. Não correspondem a pápulas arredondadas e rosadas com depressão central.\n\nAlternativa e: Correta. A morfologia das lesões confirma o diagnóstico de molusco contagioso. Em relação à conduta, embora existam tratamentos ativos (como curetagem, crioterapia ou uso de substâncias cáusticas), o acompanhamento clínico é uma opção perfeitamente aceitável e recomendada em muitos casos pediátricos. Como a doença é autolimitada em pacientes imunocompetentes, a observação evita procedimentos dolorosos e estressantes que podem resultar em cicatrizes desnecessárias em crianças pequenas.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  },
+  {
+    "id": "AJUDA_4d03da8c-aa22-4af1-9054-f77ea219a1c8",
+    "originalId": "4d03da8c-aa22-4af1-9054-f77ea219a1c8",
+    "statement": "Em uma atenção primária de qualidade, é papel da APS integrar verticalmente os serviços. A APS, como parte integrante da rede de atenção à saúde, estrutura-se segundo atributos e funções.\nAlém da resolubilidade, são funções da APS:",
+    "options": [
+      {
+        "id": "A",
+        "text": "organização e responsabilização;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "organização e primeiro contato;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "primeiro contato e longitudinalidade;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "integralidade e coordenação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "coordenação e orientação comunitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, é fundamental diferenciar os Atributos da Atenção Primária à Saúde (APS) de suas Funções dentro da Rede de Atenção à Saúde (RAS). Segundo a literatura clássica de saúde pública (como Eugênio Vilaça Mendes) e a Política Nacional de Atenção Básica (PNAB), a APS possui três funções principais na rede: resolubilidade, organização e responsabilização.\n\nAlternativa A: Correta. Além da resolubilidade (capacidade de resolver a grande maioria dos problemas de saúde da população), a APS deve exercer a função de organização (ordenar o fluxo das pessoas nos diferentes pontos de atenção da rede) e de responsabilização (ter a responsabilidade clínica e sanitária sobre os usuários de seu território adscrito).\n\nAlternativa B: Incorreta. Embora a organização seja uma função, o \"primeiro contato\" é classificado como um atributo essencial da APS, e não como uma função de rede.\n\nAlternativa C: Incorreta. Tanto o primeiro contato quanto a longitudinalidade são atributos essenciais da APS, conforme definido por Barbara Starfield. Atributos são características estruturais do serviço, enquanto as funções referem-se ao papel do serviço no sistema de saúde.\n\nAlternativa D: Incorreta. A integralidade e a coordenação do cuidado também são classificadas como atributos essenciais da APS. A coordenação, especificamente, permite que a APS organize a rede, mas o termo técnico para a função é organização.\n\nAlternativa E: Incorreta. A coordenação é um atributo essencial e a orientação comunitária é um atributo derivado da APS. Elas descrevem como o cuidado é prestado, mas não definem as funções sistêmicas da APS na rede.\n\nEm resumo, para provas de residência, memorize:\n- Atributos Essenciais: Acesso de primeiro contato, Longitudinalidade, Integralidade e Coordenação.\n- Atributos Derivados: Orientação familiar, Orientação comunitária e Competência cultural.\n- Funções na Rede: Resolubilidade, Organização e Responsabilização.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  },
+  {
+    "id": "AJUDA_4d05cd33-61db-43d0-8a4c-43b96e684bad",
+    "originalId": "4d05cd33-61db-43d0-8a4c-43b96e684bad",
+    "statement": "Questão 39\nUma mulher de 65 anos com osteoporose é indicada para iniciar bifosfonatos. Qual é o principal efeito adverso associado a longo prazo com esse tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipercalcemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fraturas atípicas de fêmur.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aumento da densidade óssea em membros superiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução da massa muscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Gabarito: Alternativa (b)\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Os bifosfonatos agem inibindo a atividade dos osteoclastos, o que reduz a liberação de cálcio do osso para a corrente sanguínea. Portanto, o efeito adverso relacionado ao metabolismo mineral que pode ocorrer é a hipocalcemia (especialmente em pacientes com deficiência de vitamina D ou após doses potentes endovenosas), e não a hipercalcemia.\n\nAlternativa b) Correta. O uso crônico e prolongado de bifosfonatos pode levar a uma supressão excessiva da remodelação óssea (turnover ósseo). Ao impedir que o osso se renove adequadamente, microdanos acumulados podem fragilizar a estrutura óssea em locais específicos. Isso aumenta o risco de fraturas atípicas do fêmur, que ocorrem tipicamente na região subtrocantérica ou na diáfise femoral, muitas vezes precedidas por dor prodrômica na coxa e sem trauma significativo associado. Outro efeito adverso de longo prazo classicamente cobrado é a osteonecrose de mandíbula.\n\nAlternativa c) Incorreta. O aumento da densidade mineral óssea é o objetivo terapêutico principal do tratamento da osteoporose com bifosfonatos, visando reduzir o risco de fraturas. Por ser o efeito esperado e benéfico, não é considerado um efeito adverso. Além disso, esse aumento ocorre de forma sistêmica (coluna, fêmur e outros sítios), não se restringindo aos membros superiores.\n\nAlternativa d) Incorreta. Não há evidência científica que associe o uso de bifosfonatos à redução da massa muscular (sarcopenia). O mecanismo de ação dessas drogas é focado na biologia óssea (osteoclastos), sem interferência direta na fibra muscular ou na síntese proteica do músculo esquelético.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  },
+  {
+    "id": "AJUDA_4d0654c2-382c-4f85-ba23-5e0eaf4f16a2",
+    "originalId": "4d0654c2-382c-4f85-ba23-5e0eaf4f16a2",
+    "statement": "Um médico de família e comunidade, atuante numa equipe fluvial, atende a uma população ribeirinha e a uma população indígena, ambas na região amazônica. Ele reconhece que essas duas populações vivem em regiões remotas. No entanto, é notável que elas apresentam diferenças culturais e de modos de vida.\nA partir dessas informações, assinale a alternativa que apresenta a estratégia adequada a ser adotada pelo médico e por sua equipe no cuidado à saúde das populações mencionadas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Utilização de profissionais de saúde nativos ou locais sem a necessidade de capacitação específica focada no paradigma biomédico, uma vez que eles já conhecem profundamente a cultura, as tradições e os hábitos dessas populações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atendimento à população ribeirinha centrado em soluções biomédicas e tecnológicas, utilizando conhecimentos da medicina ocidental, enquanto o atendimento à população indígena deve ser pautado por suas próprias práticas de cuidado e cura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Incentivo e valorização das práticas de cuidado tradicionais, promoção do uso racional de medicamentos básicos pela população indígena e estímulo à participação local e à integração do saber acadêmico e do senso comum da comunidade ribeirinha.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Organização dos atendimentos das populações de forma padronizada, a partir da identificação das prioridades em saúde, considerando que as comunidades compartilham realidades geográficas e desafios semelhantes em relação ao acesso a cuidados médicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do contexto: O cenário envolve o atendimento a populações com vulnerabilidades específicas e contextos culturais distintos (indígenas e ribeirinhos) na Região Amazônica. A atuação do Médico de Família e Comunidade nesses cenários deve ser pautada pela Política Nacional de Atenção Básica (PNAB) e pelas políticas específicas de Saúde Indígena e de Populações do Campo, Floresta e Águas, focando nos princípios da equidade e da interculturalidade.\n\nAlternativa a: Incorreta. Embora a participação de profissionais locais e o conhecimento cultural sejam fundamentais para o sucesso das ações, a ausência de capacitação focada no paradigma biomédico comprometeria a segurança técnica e a integração com as redes de cuidado do Sistema Único de Saúde (SUS). O objetivo deve ser o diálogo entre saberes, e não a exclusão do conhecimento científico por parte dos profissionais que compõem a equipe de saúde.\n\nAlternativa b: Incorreta. Essa alternativa propõe uma divisão rígida e equivocada. As populações ribeirinhas também possuem saberes tradicionais, como o uso de plantas medicinais e o auxílio de benzedeiras e parteiras, que devem ser valorizados. Da mesma forma, as populações indígenas possuem o direito constitucional de acesso às tecnologias e tratamentos da medicina ocidental. A abordagem deve ser integrada e híbrida para ambos os grupos.\n\nAlternativa c: Correta. Esta alternativa descreve a essência da competência cultural e da interculturalidade na saúde pública. Valorizar as práticas tradicionais é fundamental para estabelecer vínculo e confiança. Ao mesmo tempo, promover o uso racional de medicamentos (evitando a medicalização excessiva e iatrogenias) e integrar o saber acadêmico ao senso comum respeita a autonomia dos povos e garante uma assistência integral, adaptada à realidade local, conforme preconizado pelas diretrizes do SUS para populações especiais.\n\nAlternativa d: Incorreta. A organização padronizada é o oposto do princípio da equidade. Embora as comunidades compartilhem desafios geográficos e de acesso, suas necessidades de saúde, visões de mundo, processos de adoecimento e organizações sociais são distintas. Ignorar essas especificidades culturais em prol de um atendimento padronizado fere o conceito de cuidado centrado na pessoa e na comunidade, prejudicando a efetividade das ações de saúde.\n\nGabarito: Letra c.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  },
+  {
+    "id": "AJUDA_4d0bec47-45ba-47b3-9993-27758ba357cc",
+    "originalId": "4d0bec47-45ba-47b3-9993-27758ba357cc",
+    "statement": "Diante de um surto de gastroenterite, em um evento com mais de mil pessoas, uma equipe local inicia investigação. Considere as afirmativas abaixo e assinale V para as que considerar verdadeiras e F para as que considerar falsas, para investigação de surtos.\n\n(__) Definir caso (suspeito/provável/confirmado) e construir curva epidêmica orienta hipóteses de fonte e modo de transmissão.\n(__) Medidas de controle iniciais devem aguardar confirmação laboratorial para evitar ações desnecessárias.\n(__) Entrevistas padronizadas e linhas do tempo por exposição auxiliam na identificação de alimento implicado.\n(__) O relatório final deve incluir lições aprendidas e recomendações operacionais\n\nAssinale a sequência CORRETA de respostas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V – F – V – F",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V – F – V – V",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "F – V – V – V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V – V – F – V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa questão aborda os passos fundamentais de uma investigação de surto epidemiológico, um tema recorrente em provas de Medicina Preventiva e Saúde Pública. Vamos analisar cada afirmativa para compreender a lógica da investigação.\n\nA primeira afirmativa é VERDADEIRA. Definir o que é um caso (usando critérios clínicos, laboratoriais e epidemiológicos) é essencial para que a contagem de doentes seja precisa. A construção da curva epidêmica (um gráfico que mostra o número de casos ao longo do tempo) permite ao investigador identificar o padrão de transmissão. Por exemplo, uma curva com subida e descida rápidas sugere uma fonte comum pontual, enquanto uma curva com vários picos sugere transmissão interpessoal ou fonte intermitente.\n\nA segunda afirmativa é FALSA. Em vigilância epidemiológica, o princípio da precaução e a agilidade são prioridades. As medidas de controle (como suspender o consumo de determinado alimento ou interditar um local) devem ser implementadas assim que as evidências epidemiológicas iniciais apontarem um risco, mesmo antes da confirmação laboratorial. Esperar pelos resultados de culturas ou exames moleculares pode levar dias, permitindo que o surto se estenda e mais pessoas sejam afetadas.\n\nA terceira afirmativa é VERDADEIRA. Para identificar o veículo de transmissão (neste caso, qual alimento causou a gastroenterite), é necessário utilizar entrevistas padronizadas que permitam comparar o que os doentes comeram com o que os não doentes comeram. A linha do tempo de exposição ajuda a calcular o período de incubação, o que é fundamental para descartar ou suspeitar de determinados agentes biológicos (bactérias, vírus ou toxinas).\n\nA quarta afirmativa é VERDADEIRA. O encerramento de uma investigação de surto não se resume a encontrar o culpado. O relatório final é um documento técnico-científico que deve consolidar os achados, descrever as falhas encontradas e, principalmente, oferecer recomendações operacionais e lições aprendidas para prevenir que eventos semelhantes ocorram novamente naquela comunidade ou instituição.\n\nPortanto, a sequência correta é V - F - V - V, o que corresponde à alternativa (b).",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Vigilância em Saúde",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  },
+  {
+    "id": "AJUDA_4d10e130-e651-4bd6-b957-5f09f112ad6e",
+    "originalId": "4d10e130-e651-4bd6-b957-5f09f112ad6e",
+    "statement": "A alteração eletrocardiográfica clássica associada à hipercalemia grave é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ondas U proeminentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Depressão do segmento ST.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alargamento do intervalo QT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ondas T apiculadas e simétricas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A hipercalemia (aumento da concentração sérica de potássio) exerce um efeito direto na repolarização ventricular, refletindo-se de forma característica no eletrocardiograma (ECG).\n\nAlternativa A: Incorreta. Ondas U proeminentes são achados típicos da hipocalemia (redução do potássio). Na hipocalemia, a onda U aparece logo após a onda T, podendo ser confundida com ela e dando a falsa impressão de um intervalo QT prolongado.\n\nAlternativa B: Incorreta. A depressão do segmento ST é observada em quadros de hipocalemia, isquemia miocárdica ou pelo uso de medicamentos como os digitálicos. Não é uma alteração característica ou clássica da hipercalemia.\n\nAlternativa C: Incorreta. O intervalo QT prolongado é característico da hipocalcemia. Na hipercalemia, o que ocorre habitualmente é um encurtamento do intervalo QT devido à repolarização rápida que gera a onda T de base estreita.\n\nAlternativa D: Correta. Esta é a alteração inicial e mais clássica da hipercalemia. As ondas T tornam-se altas, de base estreita, simétricas e pontiagudas, sendo frequentemente chamadas de ondas T \"em tenda\". Elas surgem geralmente quando o potássio sérico está acima de 5,5 a 6,0 mEq/L.\n\nProgressão eletrocardiográfica da hipercalemia conforme a gravidade:\n\n1. Ondas T apiculadas e simétricas (em tenda) com base estreita.\n2. Prolongamento do intervalo PR e achatamento da onda P (que pode vir a desaparecer, resultando em ritmo sinoventricular).\n3. Alargamento do complexo QRS, que perde sua morfologia habitual.\n4. Padrão sinusoide (onda senoidal), que é um estágio pré-morte, indicando risco iminente de assistolia ou fibrilação ventricular.\n\nPortanto, a alternativa D descreve corretamente o sinal clássico e inicial do excesso de potássio no organismo.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:53.839Z"
+  }
+]

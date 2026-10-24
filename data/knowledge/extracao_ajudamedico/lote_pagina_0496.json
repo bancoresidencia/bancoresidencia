@@ -1,0 +1,477 @@
+[
+  {
+    "id": "AJUDA_8acaddaa-69c9-43fb-9978-24ff6445da09",
+    "originalId": "8acaddaa-69c9-43fb-9978-24ff6445da09",
+    "statement": "Encaminhamentos diretos para alta complexidade causam filas desordenadas e ociosidade na APS. Neste caso, a diretriz contrariada, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Universalidade sem critérios clínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hierarquização e regionalização com referência e contrarreferência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Equidade com priorização de vulneráveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Complementaridade privada contratualizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Participação social deliberativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A organização do Sistema Único de Saúde (SUS) fundamenta-se na estruturação de uma Rede de Atenção à Saúde (RAS), na qual a Atenção Primária à Saúde (APS) deve atuar como a porta de entrada preferencial e a coordenadora do cuidado. O problema descrito na questão aponta para uma falha na organização desses fluxos.\n\nAlternativa a) Incorreta. A Universalidade é um princípio doutrinário que garante o direito de todo cidadão ao acesso às ações e serviços de saúde, independentemente de qualquer condição. A questão não aborda a negação do acesso, mas sim a desorganização do fluxo de entrada no sistema.\n\nAlternativa b) Correta. A Hierarquização organiza os serviços de saúde em níveis de complexidade crescente (primária, secundária e terciária). A Regionalização delimita a base territorial para o planejamento dessas ações. O mecanismo que operacionaliza essa estrutura é o sistema de Referência (encaminhamento para um nível de maior complexidade) e Contrarreferência (retorno do paciente ao nível de origem com as informações pertinentes). Quando o paciente ignora a APS e vai direto para a alta complexidade, ele quebra a hierarquia, gera filas desnecessárias em serviços especializados e deixa a APS ociosa, contrariando diretamente esta diretriz.\n\nAlternativa c) Incorreta. A Equidade busca tratar desigualmente os desiguais, investindo mais onde a carência é maior para diminuir as desigualdades sociais. Embora uma fila desordenada possa ferir a equidade, o conceito principal ferido pelo \"atalho\" entre níveis de atenção é o de hierarquização.\n\nAlternativa d) Incorreta. A Complementaridade diz respeito à participação do setor privado (preferencialmente entidades filantrópicas e sem fins lucrativos) no SUS, de forma contratualizada, quando a rede pública é insuficiente para atender à demanda. Não tem relação com o fluxo de encaminhamentos entre níveis de complexidade.\n\nAlternativa e) Incorreta. A Participação Social refere-se ao controle social exercido pela população por meio dos Conselhos e Conferências de Saúde, garantindo que a sociedade participe da gestão e fiscalização do SUS. Trata-se de uma diretriz política e democrática, e não de um protocolo de encaminhamento clínico.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  },
+  {
+    "id": "AJUDA_8acce8b8-78ab-4838-89ca-305005abfb42",
+    "originalId": "8acce8b8-78ab-4838-89ca-305005abfb42",
+    "statement": "Em relação às doenças e agravos de notificação compulsória imediata no território brasileiro, conforme a Portaria de Consolidação nº 4/2017 e suas atualizações mais recentes pelo Ministério da Saúde, assinale a alternativa que apresenta situações que obrigatoriamente exigem comunicação às autoridades de saúde em até 24 horas, por meio rápido (telefone, e-mail ou outro), independentemente de confirmação laboratorial.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Malária adquirida em áreas endêmicas; febre amarela silvestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Óbito por arboviroses; detecção de infecção por zika vírus em gestante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hanseníase multibacilar; leptospirose em zona rural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hanseníase virchowiana; infecção pelo vírus influenza A.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Lista Nacional de Notificação Compulsória do Ministério da Saúde classifica os agravos em notificação imediata (em até 24 horas, por meio rápido, frente à suspeita ou confirmação) e notificação semanal.\n\nAlternativa A: Incorreta. A malária na região amazônica (área endêmica) possui periodicidade de notificação semanal. Ela só é classificada como de notificação imediata quando diagnosticada na região extra-amazônica (área não endêmica). A febre amarela é de notificação imediata em todo o território nacional.\n\nAlternativa B: Correta. Todos os óbitos decorrentes de arboviroses urbanas (Dengue, Chikungunya e Zika) e a infecção pelo vírus Zika em gestantes são eventos de notificação compulsória imediata (até 24 horas para os três níveis de gestão da saúde), devido à gravidade do desfecho e ao alto risco de síndrome congênita associada à infecção pelo vírus Zika.\n\nAlternativa C: Incorreta. A hanseníase, independentemente da sua forma clínica ou classificação operacional (paucibacilar ou multibacilar), é um agravo de notificação compulsória semanal. A leptospirose é de notificação imediata, mas a presença da hanseníase torna a alternativa incorreta.\n\nAlternativa D: Incorreta. A hanseníase virchowiana permanece na regra geral da hanseníase, sendo de notificação semanal. Em relação à influenza, a notificação imediata é reservada para casos de Síndrome Respiratória Aguda Grave (SRAG) hospitalizados, óbitos ou suspeita de infecção por novo subtipo viral com potencial pandêmico, e não para qualquer infecção ambulatorial pelo vírus influenza A.\n\nGabarito definitivo: Alternativa B.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Vigilância em Saúde",
+      "Medidas de Saúde Coletiva",
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  },
+  {
+    "id": "AJUDA_8acdc813-17af-4082-b216-54325ec294c7",
+    "originalId": "8acdc813-17af-4082-b216-54325ec294c7",
+    "statement": "Homem, 37 anos, apresenta-se com dor em região submandibular que piora com o ato de comer e irradia para o pescoço, acompanhada de edema local e boca seca há 1 dia. O método indicado para o diagnóstico do paciente e a etiologia dos sintomas são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sialografia; sialolitíase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ultrassonografia; sialodenite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tomografia computadorizada; sialolitíase.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro clínico clássico de obstrução de ducto salivar, caracterizado por dor e edema na região submandibular que surgem ou pioram especificamente durante a alimentação (dor prandial). Esse fenômeno ocorre porque o estímulo gustativo aumenta a produção de saliva, que fica retida devido a uma obstrução, gerando pressão retrógrada e dor. A glândula submandibular é a mais frequentemente afetada (cerca de 80 a 90% dos casos) devido à tortuosidade do ducto de Wharton e à saliva mais espessa e rica em cálcio. A principal causa dessa obstrução é a sialolitíase (presença de cálculos).\n\nAlternativa a: Incorreta. Embora a etiologia (sialolitíase) esteja correta, a sialografia não é o método indicado atualmente para o diagnóstico inicial. A sialografia envolve a injeção retrógrada de contraste no ducto salivar, sendo um método invasivo e desconfortável. Além disso, ela é contraindicada na fase aguda da inflamação/infecção, pois o procedimento pode exacerbar o quadro e causar dor intensa ao paciente.\n\nAlternativa b: Incorreta. A ultrassonografia é um exame útil, acessível e muitas vezes utilizado como triagem inicial, apresentando boa sensibilidade para cálculos maiores que 2 mm. No entanto, o termo sialadenite refere-se apenas à inflamação da glândula, que neste caso é uma consequência secundária. A causa primária (etiologia) sugerida pela dor associada ao ato de comer é a sialolitíase.\n\nAlternativa c: Correta. A sialolitíase é a causa mais comum de tumefação glandular relacionada às refeições. Atualmente, a tomografia computadorizada (TC) sem contraste é considerada o padrão-ouro para a detecção de cálculos salivares. A TC possui sensibilidade e especificidade superiores à radiografia convencional e à ultrassonografia, sendo capaz de identificar cálculos pequenos, múltiplos ou localizados em porções profundas do sistema ductal que poderiam passar despercebidos em outros métodos.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  },
+  {
+    "id": "AJUDA_8adaf035-96f3-4828-9bdb-908dd0e85ef5",
+    "originalId": "8adaf035-96f3-4828-9bdb-908dd0e85ef5",
+    "statement": "O documento \"Núcleos de Apoio à Saúde da Família (NASF): seus potenciais e entraves\" (Tesser, 2017) analisa criticamente a inserção dos especialistas na Atenção Primária. Segundo a análise do autor, a diretriz oficial que prioriza exclusivamente a função técnico-pedagógica (apoio matricial) em detrimento da função assistencial direta dos especialistas do NASF pode gerar um \"fetichismo do apoio\", resultando em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fortalecimento da clínica ampliada, uma vez que a equipe de referência passa a resolver todos os casos sozinha após a discussão pedagógica, eliminando a necessidade de encaminhamentos para a média complexidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Melhoria significativa nos indicadores de saúde, pois a função pedagógica garante que o médico generalista adquira todas as competências do especialista, tornando o cuidado mais custo-efetivo e integral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Desresponsabilização dos especialistas pela assistência clínica direta aos casos complexos, sobrecarregando a equipe de referência (Saúde da Família) com problemas que exigiriam competência especializada, e criando barreiras de acesso ao cuidado secundário dentro da própria Atenção Primária à Saúde (APS).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Redução das filas de espera para especialidades, já que o apoio matricial substitui completamente a necessidade de consultas especializadas individualizadas, resolvendo a demanda reprimida por meio de grupos educativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "EXPLICAÇÃO DA QUESTÃO\n\nO autor Charles Tesser, em sua análise sobre o NASF, discute o equilíbrio necessário entre as duas funções do apoio matricial: a dimensão técnico-pedagógica (apoio às equipes) e a dimensão clínico-assistencial (atendimento direto aos usuários). O \"fetichismo do apoio\" ocorre quando se prioriza a função pedagógica de forma dogmática, acreditando que o especialista deve apenas \"ensinar\" ou \"dar consultoria\", evitando o contato direto com o paciente.\n\nAnalise das alternativas:\n\nAlternativa (a) incorreta: O autor argumenta o oposto. Se a equipe de referência tenta resolver tudo sozinha sem a intervenção direta do especialista em casos complexos, a clínica não se amplia de forma qualificada, mas sim gera uma sobrecarga e uma assistência potencialmente insuficiente para o paciente.\n\nAlternativa (b) incorreta: Não é realista e nem pretendido que o médico generalista adquira \"todas\" as competências do especialista. A medicina exige diferentes níveis de densidade tecnológica e saberes específicos. Ignorar a necessidade da assistência direta do especialista compromete a resolutividade e a integralidade do cuidado.\n\nAlternativa (c) correta: Esta é exatamente a definição do problema apontado por Tesser. Ao se focar apenas no apoio pedagógico, o especialista do NASF acaba se distanciando da responsabilidade clínica. Isso deixa a equipe de Saúde da Família sozinha com casos que estão além de sua capacidade resolutiva e, paradoxalmente, cria uma barreira de acesso: o especialista está fisicamente ou institucionalmente próximo, mas o paciente não consegue ser atendido por ele, ficando \"preso\" em uma discussão de caso infinita sem solução prática.\n\nAlternativa (d) incorreta: O apoio matricial visa qualificar o encaminhamento e resolver casos em conjunto, mas ele não substitui completamente a consulta especializada individualizada. Acreditar que grupos educativos resolvem toda a demanda reprimida por especialistas é uma visão distorcida que não condiz com a realidade das necessidades de saúde da população.\n\nGabarito: Letra (c).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  },
+  {
+    "id": "AJUDA_8ae555ce-85b0-4250-a04a-d0bfbc2da5b5",
+    "originalId": "8ae555ce-85b0-4250-a04a-d0bfbc2da5b5",
+    "statement": "Sobre os diferentes tipos de choque, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No choque cardiogênico, a pressão venosa central (PVC) e a pressão de oclusão da artéria pulmonar costumam estar elevadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "No choque séptico inicial, predominam baixo débito cardíaco e pele fria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No choque hipovolêmico, a PVC costuma estar aumentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "No choque obstrutivo por embolia pulmonar, o débito cardíaco aumenta devido à pós-carga baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Correta. O choque cardiogênico ocorre devido à falha primária da bomba cardíaca em manter um débito cardíaco adequado. Como o coração não consegue ejetar o sangue de forma eficiente, há um acúmulo retrógrado de volume nas câmaras cardíacas e nos vasos. Isso resulta no aumento das pressões de enchimento, tanto à direita (Pressão Venosa Central — PVC) quanto à esquerda (Pressão de Oclusão da Artéria Pulmonar — POAP), caracterizando o quadro clínico de congestão sistêmica e pulmonar.\n\nAlternativa b: Incorreta. O choque séptico inicial é tipicamente um choque distributivo. Em sua fase inicial, predomina a vasodilatação periférica intensa, o que reduz a resistência vascular sistêmica. Como resposta compensatória, o débito cardíaco aumenta, tornando o choque hiperdinâmico. Por isso, o paciente apresenta a pele quente e bem perfundida (choque quente), e não pele fria e baixo débito.\n\nAlternativa c: Incorreta. No choque hipovolêmico, a causa-base é a redução do volume intravascular (seja por hemorragia ou perda de fluidos). Com menos volume circulante, há menos retorno venoso para o coração, o que resulta obrigatoriamente em pressões de enchimento baixas. Portanto, a PVC encontra-se diminuída.\n\nAlternativa d: Incorreta. Na embolia pulmonar maciça, ocorre uma obstrução mecânica ao fluxo sanguíneo nas artérias pulmonares. Isso gera um aumento súbito e severo da pós-carga do ventrículo direito (resistência contra a qual o ventrículo precisa bombear), e não uma redução. Esse aumento da resistência impede que o sangue chegue adequadamente ao lado esquerdo do coração, levando a uma queda acentuada do débito cardíaco.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  },
+  {
+    "id": "AJUDA_8ae5a360-0029-4f39-bd05-b37c3849647d",
+    "originalId": "8ae5a360-0029-4f39-bd05-b37c3849647d",
+    "statement": "Homem de 29 anos comparece a uma Unidade Básica de Saúde queixando-se de “sofrimento emocional constante” e “problemas nos relacionamentos”. Relata episódios frequentes de explosões de raiva, sensação de abandono quando os outros não respondem como ele espera e histórico de relações interpessoais intensas e instáveis, com ocorrências de lesões autoprovocadas leves (arranhões em face interna de braços) quando se sente frustrado ou rejeitado. O prontuário revela que o paciente passou por diversos serviços de saúde e abandona os acompanhamentos com frequência. Na consulta, demonstra desconfiança inicial e uma busca intensa por atenção e aprovação da médica. Não há evidências de sintomas psicóticos nem quadro compatível com transtorno de humor.\nQual é o transtorno de personalidade identificado nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paranoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Borderline.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dependente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antissocial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resposta correta: alternativa B (Borderline)\n\nO caso reúne os elementos centrais do transtorno de personalidade borderline (emocionalmente instável), segundo o DSM-5-TR. Esse transtorno se define por um padrão persistente de instabilidade nas relações interpessoais, na autoimagem e nos afetos, com impulsividade marcada, iniciado no começo da vida adulta. O diagnóstico exige pelo menos 5 de 9 critérios.\n\nCritérios presentes no paciente:\n1. Esforços desesperados para evitar abandono, real ou imaginado: sente-se abandonado quando os outros não respondem como espera.\n2. Relações interpessoais intensas e instáveis, que alternam entre idealização e desvalorização.\n3. Comportamento autolesivo recorrente: arranhões na face interna dos braços diante de frustração ou rejeição.\n4. Instabilidade afetiva: \"sofrimento emocional constante\".\n5. Raiva intensa e inapropriada, de difícil controle: explosões de raiva frequentes.\n\nA instabilidade também aparece no vínculo com os serviços de saúde. O paciente abandona tratamentos com frequência e, na consulta, oscila entre desconfiança inicial e busca intensa por atenção e aprovação da médica. Isso reproduz, na relação terapêutica, o padrão relacional instável típico do transtorno.\n\nO enunciado exclui de propósito sintomas psicóticos e transtorno de humor. Com isso, afasta diagnósticos diferenciais importantes, como transtorno bipolar e depressão com irritabilidade, e reforça que se trata de um padrão de personalidade, e não de um quadro episódico.\n\nAnálise das alternativas:\n\na) Paranoide – Incorreta. Caracteriza-se por desconfiança e suspeita difusas e persistentes. O indivíduo interpreta as intenções alheias como malévolas, guarda rancores e reluta em confiar nos outros. A desconfiança do paciente é apenas inicial e logo dá lugar à busca intensa de aprovação, algo incompatível com o distanciamento do paranoide. Além disso, autolesão, medo de abandono e instabilidade afetiva não fazem parte desse quadro.\n\nb) Borderline – Correta. O paciente apresenta pelo menos 5 critérios: medo de abandono, relações intensas e instáveis, autolesão, instabilidade afetiva e raiva intensa. O padrão de abandono de tratamentos e de oscilação na relação com o profissional reforça o diagnóstico.\n\nc) Dependente – Incorreta. Há necessidade excessiva de ser cuidado, comportamento submisso e \"pegajoso\", dificuldade de tomar decisões sem aconselhamento e medo de separação. Embora exista medo de abandono, o dependente costuma ser passivo e submisso. Ele não apresenta explosões de raiva, relações tempestuosas, autolesão nem abandono de vínculos, como ocorre no caso. Ao contrário, ele se agarra às relações.\n\nd) Antissocial – Incorreta. Caracteriza-se por desrespeito e violação dos direitos dos outros: falsidade, manipulação para obter vantagem pessoal, irresponsabilidade, agressividade dirigida a terceiros, ausência de remorso e conduta antissocial desde antes dos 15 anos (transtorno de conduta). No caso, a agressividade é dirigida a si mesmo e desencadeada por rejeição. Também há sofrimento emocional intenso e busca de aprovação, o que é oposto à indiferença afetiva do antissocial.\n\nPonto-chave para a prova: a tríade medo de abandono, instabilidade (de relações, afeto e autoimagem) e impulsividade com autolesão aponta para o transtorno de personalidade borderline. Ele pertence ao cluster B (dramático/emocional), junto com os transtornos antissocial, histriônico e narcisista. O tratamento de escolha é a psicoterapia, com destaque para a terapia comportamental dialética. Os fármacos têm papel apenas adjuvante, voltado a sintomas-alvo.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Transtornos de Personalidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  },
+  {
+    "id": "AJUDA_8aea9b40-c1d5-42fc-a26e-98d198dda8b2",
+    "originalId": "8aea9b40-c1d5-42fc-a26e-98d198dda8b2",
+    "statement": "Homem de 33 anos refere febre alta, cefaleia, mialgia, artralgia há 4 dias. Há um dia, houve aparecimento de manchas vermelhas pelo corpo, muito pruriginosas e epistaxe em mínima quantidade, com resolução espontânea. AP: DM1 controlado. Exame físico: BEG, PA: 130 x 80 mmHg (aferida em duas posições), FC: 89 bpm, TEC < 3 segundos, sem sinais de hipoperfusão, prova do laço negativa. HGT 149 mg/dL.\nCom suspeita de dengue, a classificação clínica e a conduta são, correta e respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "grupo B; é necessário iniciar hidratação e avaliar o hemograma em até 4 horas. Caso não apresente hemoconcentração e/ou plaquetopenia grave, o manejo pode ser ambulatorial, com reavaliações clínicas diárias e hemogramas seriados, até resolução completa do quadro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "grupo C; é necessário iniciar hidratação e avaliar o hemograma em até 2 horas. A depender do hemograma, o paciente deverá ficar internado ou ser manejado ambulatorialmente, com reavaliações clínicas diárias e hemogramas seriados, até resolução completa do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "grupo A; não é necessário avaliar o hemograma, e o manejo pode ser ambulatorial, com reavaliação clínica no dia da cessação da febre ou no sétimo dia de sintoma, caso a febre persista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "grupo D; é necessário iniciar hidratação endovenosa e avaliar o hemograma em até 2 horas. O paciente deverá ficar internado por, pelo menos, 48 horas em unidade de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, devemos aplicar o protocolo de classificação de risco e manejo do paciente com suspeita de dengue, preconizado pelo Ministério da Saúde.\n\nAnálise do quadro clínico:\nO paciente apresenta sintomas clássicos de dengue (febre, cefaleia, mialgia e artralgia). O exame físico demonstra estabilidade hemodinâmica, com pressão arterial normal (130x80 mmHg), tempo de enchimento capilar (TEC) preservado e prova do laço negativa. No entanto, o enunciado destaca dois pontos fundamentais: o paciente possui uma condição clínica especial (Diabetes Mellitus tipo 1) e apresentou sangramento espontâneo de mucosa (epistaxe).\n\nClassificação de risco:\n1. Grupo A: Dengue sem sinais de alarme, sem sangramentos e sem condições especiais.\n2. Grupo B: Dengue sem sinais de alarme, mas com sangramento de pele/mucosa espontâneo (petéquias, epistaxe) ou induzido (prova do laço positiva), OU condições clínicas especiais (comorbidades, gestantes, idosos, lactentes).\n3. Grupo C: Dengue com sinais de alarme (dor abdominal intensa, vômitos persistentes, hipotensão postural, letargia, acúmulo de líquidos).\n4. Grupo D: Dengue grave (choque, desconforto respiratório grave ou disfunção grave de órgãos).\n\nComo o paciente tem DM1 e apresentou epistaxe, ele se enquadra no Grupo B.\n\nAnálise das alternativas:\n\nAlternativa A: Correta. Para pacientes do Grupo B, a conduta padrão inclui a solicitação obrigatória de hemograma e o início imediato de hidratação (preferencialmente oral enquanto aguarda). O hemograma deve ser avaliado rapidamente (idealmente em até 4 horas). Se não houver hemoconcentração (aumento do hematócrito) ou plaquetopenia severa que indique gravidade, o paciente pode ser acompanhado de forma ambulatorial, com orientações de retorno e realização de hemogramas seriados até passar a fase crítica da doença.\n\nAlternativa B: Incorreta. O paciente não possui sinais de alarme (como dor abdominal intensa ou vômitos persistentes) para ser classificado no Grupo C. O manejo do Grupo C exige obrigatoriamente internação hospitalar para hidratação venosa e reavaliação constante, o que não se aplica à estabilidade clínica deste paciente.\n\nAlternativa C: Incorreta. O paciente não pode ser classificado no Grupo A devido à presença da comorbidade (DM1) e do sangramento espontâneo. No Grupo A, o hemograma pode ser dispensado em situações de surto, mas no Grupo B ele é essencial para a estratificação correta do risco.\n\nAlternativa D: Incorreta. O Grupo D é reservado para casos de dengue grave/choque. O paciente está em bom estado geral e hemodinamicamente estável, sem critérios para internação em Unidade de Terapia Intensiva ou diagnóstico de choque.\n\nGabarito: Letra A.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  },
+  {
+    "id": "AJUDA_8aede771-ac29-4407-8e79-e658e6a67c5e",
+    "originalId": "8aede771-ac29-4407-8e79-e658e6a67c5e",
+    "statement": "Uma mulher de 30 anos, G2P1A1, saudável, sem queixas, trouxe dosagens hormonais de FSH, LH e estradiol realizadas em outro serviço em uso consistente de Desogestrel oral. Quais resultados esperados em relação aos níveis de FSH, LH e estradiol neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "FSH: baixo, LH: baixo, Estradiol: baixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "FSH: baixo, LH: normal, Estradiol: baixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "FSH: normal, LH: normal, Estradiol: normal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "FSH: normal, LH: baixo, Estradiol: normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O desogestrel na dose de 75 mcg ao dia e uma pilula de progestogenio isolado (POP). O seu mecanismo de acao principal e a inibicao da ovulacao por meio do bloqueio do pico pre-ovulatorio de LH, alem do espessamento do muco cervical. Diferente dos contraceptivos hormonais combinados, o desogestrel isolado nao exerce uma supressao profunda e continua sobre o eixo hipotalamo-hipofise-ovario. \n\nDessa forma, a secrecao basal de FSH e LH permanece preservada, o que permite o recrutamento e crescimento folicular inicial com consequente producao endogena de estradiol pelos ovarios. Em dosagens laboratoriais isoladas, os valores de FSH, LH e estradiol encontram-se dentro da faixa de referencia normal (geralmente compativeis com a fase folicular do ciclo menstrual).\n\nAnalise das alternativas:\n\nAlternativa A - Incorreta. O padrao de FSH baixo, LH baixo e estradiol baixo reflete uma supressao profunda do eixo hipotalamo-hipofise-ovario (hipogonadismo hipogonadotrofico), que e caracteristica do uso de anticoncepcionais combinados (devido ao componente estrogenico) ou de analogos do GnRH, mas nao ocorre com o progestogenio isolado.\n\nAlternativa B - Incorreta. O desogestrel nao suprime o FSH de forma seletiva nem impede a producao de estradiol ovariano, mantendo ambos em niveis basais normais.\n\nAlternativa C - Correta. O desogestrel bloqueia o pico ovulatorio de LH, mas mantem os niveis basais de FSH e LH normais, permitindo o desenvolvimento folicular parcial e a manutencao de concentracoes normais de estradiol serico.\n\nAlternativa D - Incorreta. Apesar de a medicacao inibir o pico de LH no meio do ciclo (prevenindo a ovulacao), os niveis basais e tonicos de LH permanecem dentro dos limites normais da fase folicular, nao se apresentando persistentemente baixos em dosagens de rotina.\n\nGabarito: Letra C.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Ciclo Menstrual",
+      "Planejamento Familiar"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  },
+  {
+    "id": "AJUDA_8af3cbd3-bf86-4b9a-a1b5-a83d462d130c",
+    "originalId": "8af3cbd3-bf86-4b9a-a1b5-a83d462d130c",
+    "statement": "De acordo com a Portaria 2.488/11 do Ministério da Saúde, é uma atribuição específica do Agente Comunitário de Saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar pequenos procedimentos cirúrgicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Planejar, gerenciar e avaliar as ações desenvolvidas pelos outros ACS em conjunto com os outros membros da equipe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coordenar e participar de ações coletivas voltadas à promoção da saúde e à prevenção de doenças bucais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cadastrar todas as pessoas de sua microárea e manter os cadastros atualizados.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as atribuições específicas dos profissionais da Atenção Básica, conforme a Portaria 2.488/2011 (Política Nacional de Atenção Básica - PNAB vigente à época da questão). Vale lembrar que, embora essa portaria tenha sido substituída pela Portaria 2.436/2017, a essência das funções do Agente Comunitário de Saúde (ACS) permanece focada na territorialização e no elo entre a comunidade e a unidade de saúde.\n\nAlternativa (a) Incorreta: A realização de qualquer procedimento cirúrgico, independentemente do porte, é uma atividade privativa de profissionais de saúde de nível superior, especificamente médicos e cirurgiões-dentistas (no caso da saúde bucal). O ACS possui um papel de educação e vigilância, não possuindo competência técnica ou legal para atos operatórios.\n\nAlternativa (b) Incorreta: O planejamento e a avaliação das ações são atribuições comuns a todos os membros da equipe de Atenção Básica. No entanto, o gerenciamento e a coordenação das ações dos ACS costumam ser atribuições do enfermeiro da equipe. O ACS não tem a função de gerenciar ou avaliar o trabalho de seus pares.\n\nAlternativa (c) Incorreta: Coordenar e participar de ações coletivas focadas especificamente em doenças bucais são atribuições dos profissionais que compõem a Equipe de Saúde Bucal (Cirurgião-Dentista, Técnico ou Auxiliar em Saúde Bucal). Embora o ACS possa apoiar ações educativas em saúde bucal, a coordenação técnica não lhe compete.\n\nAlternativa (d) Correta: Esta alternativa descreve a atividade central do Agente Comunitário de Saúde. O ACS é o responsável por realizar o mapeamento geográfico (microárea) e o cadastramento domiciliar e individual de toda a população sob sua responsabilidade. Manter esses dados atualizados é essencial para que a equipe conheça o perfil epidemiológico e socioeconômico da comunidade, permitindo o planejamento adequado das intervenções de saúde. Essa atribuição é um pilar da estratégia de territorialização do SUS.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  },
+  {
+    "id": "AJUDA_8afbc61d-6852-4e5a-b4a8-3b1b4a3369f1",
+    "originalId": "8afbc61d-6852-4e5a-b4a8-3b1b4a3369f1",
+    "statement": "Paciente feminina, de 30 anos, buscou atendimento na UBS, acompanhada pelo marido, por vir apresentando insônia, irritabilidade, anedonia e choro fácil. Relatou que não conseguia sair sozinha e vinha tendo crises de ansiedade frequentes, especialmente à noite, antes de deitar-se, sintomas iniciados há 10 dias, logo após ter sido resgatada numa estrada em razão de sua casa situar-se em região totalmente alagada pelas chuvas. Referiu ter ficado 3 dias abrigada em uma escola e, há 1 semana, ter ido morar com a sogra, por não conseguir retornar para sua casa por medo. Que conduta, dentre as abaixo, o médico da UBS deve priorizar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orientar suporte familiar e social, apoio psicológico para uma escuta empática neste momento de estresse agudo e não prescrever benzodiazepínicos para insônia e irritabilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estimular a paciente a falar sobre suas vivências e sentimentos, mesmo que ela se recuse, e prescrever benzodiazepínicos para melhorar o sono.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar a paciente para a Emergência psiquiátrica, pois ela deve estar com ideação suicida; o médico não poderia perguntar sobre pensamentos de morte para não a incentivar a cometer suicídio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Considerar o diagnóstico de um transtorno de estresse pós-traumático em função dos sintomas intrusivos, sintomas de esquiva, alterações do humor e da cognição e reatividade alterada, prescrevendo antidepressivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta sintomas de ansiedade, humor deprimido, anedonia e esquiva após sofrer um evento traumático grave (perda da casa em alagamento e resgate em estrada). O ponto-chave para a resolução da questão é o tempo de evolução: os sintomas iniciaram há apenas 10 dias. No contexto da psiquiatria, sintomas que surgem logo após um trauma e duram entre 3 dias e 1 mês são classificados como Transtorno de Estresse Agudo.\n\nALTERNATIVA A (CORRETA)\n\nA conduta prioritária em situações de estresse agudo decorrente de desastres naturais envolve o que chamamos de Primeiros Socorros Psicológicos. Isso inclui garantir a segurança da paciente, oferecer suporte social e familiar e praticar a escuta empática. Quanto à parte farmacológica, o uso de benzodiazepínicos deve ser evitado logo após traumas, pois alguns estudos sugerem que eles podem interferir no processamento emocional natural do evento e aumentar o risco de cronificação para o Transtorno de Estresse Pós-Traumático (TEPT), além do risco de dependência.\n\nALTERNATIVA B (INCORRETA)\n\nNão se deve forçar uma vítima de trauma a falar ou reviver suas experiências se ela não desejar. Técnicas de debriefing psicológico obrigatório e intensivo logo após o evento podem ser prejudiciais e até retraumatizantes. O acolhimento deve respeitar o tempo e o silêncio da paciente.\n\nALTERNATIVA C (INCORRETA)\n\nNão há evidências no relato de que a paciente apresente risco de autoextermínio imediato que justifique encaminhamento para emergência. O erro técnico principal da alternativa é afirmar que o médico não deve perguntar sobre pensamentos de morte. Questionar diretamente sobre ideação suicida é uma conduta obrigatória na avaliação psiquiátrica e não induz o paciente ao suicídio; pelo contrário, ajuda na prevenção.\n\nALTERNATIVA D (INCORRETA)\n\nEmbora a paciente apresente sintomas que lembram o TEPT (intrusão, esquiva, alteração de humor), o diagnóstico de Transtorno de Estresse Pós-Traumático exige, obrigatoriamente, que os sintomas estejam presentes por mais de 1 mês (30 dias). Como o quadro tem apenas 10 dias, o diagnóstico está precocemente indicado. Além disso, a prioridade imediata é o suporte psicossocial e não o início de antidepressivos.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:33.394Z"
+  }
+]

@@ -1,0 +1,520 @@
+[
+  {
+    "id": "AJUDA_45751a3b-f772-4efe-954f-4ad1898d55f7",
+    "originalId": "45751a3b-f772-4efe-954f-4ad1898d55f7",
+    "statement": "Homem de 63 anos, tabagista e etilista, apresenta disfagia progressiva há 3 meses, inicialmente para sólidos e agora também para pastosos. Perdeu 8 kg no período. A endoscopia digestiva alta revela lesão ulceroinfiltrativa envolvendo a junção esofagogástrica, com epicentro 1 cm acima da linha Z. A biópsia confirma adenocarcinoma. A tomografia de tórax e abdome mostra espessamento tumoral acometendo o esôfago distal e pequena extensão para o fundo gástrico, sem metástases à distância. A ecoendoscopia demonstra T3N1. A equipe discute a melhor abordagem cirúrgica após quimiorradioterapia neoadjuvante. Considerando a classificação de Siewert e as indicações cirúrgicas, qual é a conduta operatória mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastrectomia total com linfadenectomia D2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gastrectomia proximal com reconstrução em Y-de-Roux",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressecção endoscópica da mucosa após quimiorradioterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Esofagectomia trans-hiatal ou transtóracica com ressecção do fundo gástrico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Apenas quimiorradioterapia definitiva, sem cirurgia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANALISE DO CASO CLINICO\n\nO paciente apresenta um adenocarcinoma na transição esofagogástrica (TEG). Para definir a cirurgia, é fundamental aplicar a Classificação de Siewert, que divide esses tumores em três tipos baseados na localização do epicentro em relação à linha Z (junção anatômica):\n\n1. Siewert Tipo I: Epicentro entre 1 cm e 5 cm acima da linha Z. É tratado como câncer de esôfago distal.\n2. Siewert Tipo II: Epicentro entre 1 cm acima e 2 cm abaixo da linha Z (o chamado \"câncer do cárdia propriamente dito\").\n3. Siewert Tipo III: Epicentro entre 2 cm e 5 cm abaixo da linha Z. É tratado como câncer de estômago subcardial.\n\nNo caso em questão, o epicentro está 1 cm acima da linha Z, o que caracteriza o tumor como Siewert Tipo II (ou limite entre I e II). Para tumores Tipo I e a maioria dos Tipo II, o tratamento padrão-ouro envolve a esofagectomia.\n\nANALISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: A gastrectomia total com linfadenectomia D2 é o tratamento de escolha para o Siewert Tipo III. Como o tumor deste paciente está localizado acima da linha Z e acomete o esôfago distal, a gastrectomia isolada não ofereceria margem de ressecção proximal segura nem trataria adequadamente a drenagem linfática mediastinal inferior, que é comum nesses casos.\n\nAlternativa (b) Incorreta: A gastrectomia proximal é uma técnica cada vez menos utilizada devido ao alto índice de refluxo esofágico grave e estenoses no pós-operatório. Além disso, em um tumor T3N1, a prioridade é a radicalidade oncológica com esofagectomia e linfadenectomia mediastinal, o que a gastrectomia proximal não provê de forma completa.\n\nAlternativa (c) Incorreta: A ressecção endoscópica (mucosectomia ou ESD) é reservada exclusivamente para tumores precoces (T1a), restritos à mucosa e sem evidência de acometimento linfonodal. O paciente apresenta estágio T3N1 (tumor que invade a adventícia e possui linfonodo positivo), o que exige tratamento sistêmico e cirurgia radical.\n\nAlternativa (d) Correta: Para tumores Siewert I e II, a conduta padrão é a esofagectomia (que pode ser por via trans-hiatal ou transtorácica). Como o tumor se estende para o fundo gástrico, é necessária a ressecção desta porção do estômago para garantir margens negativas, utilizando o restante do corpo gástrico para a confecção do tubo gástrico (gastroplastia) e reconstrução do trânsito. A quimiorradioterapia neoadjuvante (Protocolo CROSS) é a conduta pré-operatória padrão para tumores T3 ou N+.\n\nAlternativa (e) Incorreta: A quimiorradioterapia definitiva é uma opção principalmente para o carcinoma espinocelular (CEC) de esôfago cervical ou para pacientes sem condições cirúrgicas. No adenocarcinoma de transição esofagogástrica em paciente com performance status adequado, a cirurgia é parte essencial do tratamento curativo.\n\nCONCLUSÃO\nO epicentro da lesão define a estratégia. Por estar acima da linha Z (Siewert II), o tratamento deve priorizar a via da esofagectomia para garantir radicalidade oncológica linfonodal e de margens.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.438Z"
+  },
+  {
+    "id": "AJUDA_45789dbc-98c8-4c11-b9f7-f26a7fd21b41",
+    "originalId": "45789dbc-98c8-4c11-b9f7-f26a7fd21b41",
+    "statement": "43. No progresso das consultas da assistência pré-natal, os conhecimentos da fisiologia e das adaptações do organismo da mulher à gestação são importantes e servem para identificar desvios na evolução normal da gravidez. Nesse contexto, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a altura uterina, pela medida a partir da sínfise púbica até o fundo do útero, cresce em média 4 cm por mês.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a frequência cardíaca da gestante, avaliada pela contagem do pulso, apresenta um incremento de batimentos, podendo atingir até 110 bpm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a pressão arterial manifesta uma queda sensível quando da implantação da placenta, eleva-se no final do segundo trimestre e se mantém mais elevada no terceiro, não atingindo níveis patológicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o edema de membros inferiores (pés e pernas) que era tido como patológico e fazia parte do critério de pré-eclâmpsia, hoje, entende-se como fisiológico e pode chegar a atingir a parede abdominal e, em alguns casos, as mãos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a epistaxe, que algumas gestantes apresentam, são marcadores importantes da elevação da pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Está correta. A medida da altura uterina (AU), realizada da borda superior da sínfise púbica até o fundo do útero, é o principal método clínico para acompanhar o crescimento fetal e o volume de líquido amniótico. A partir da 20ª semana de gravidez, existe uma correlação direta entre a idade gestacional em semanas e a medida da AU em centímetros. Como o mês obstétrico é composto por 4 semanas e o útero cresce cerca de 1 cm por semana, a média de crescimento de 4 cm por mês é aceita na prática clínica.\n\nAlternativa b: Está incorreta. O organismo materno passa por diversas adaptações hemodinâmicas, incluindo um aumento na frequência cardíaca. No entanto, esse incremento costuma ser de apenas 10 a 15 batimentos por minuto em relação aos valores pré-gravídicos. Uma frequência cardíaca de 110 bpm em repouso é considerada taquicardia e deve ser investigada para causas patológicas, como anemia ou hipertireoidismo.\n\nAlternativa c: Está incorreta. A pressão arterial sofre uma redução fisiológica no primeiro e, principalmente, no segundo trimestre da gestação, devido à queda da resistência vascular periférica causada pela progesterona e pela presença da placenta (sistema de baixa resistência). No terceiro trimestre, a pressão tende a retornar aos níveis basais que a mulher apresentava antes de engravidar, e não a manter-se mais elevada.\n\nAlternativa d: Está incorreta. O edema de membros inferiores (pés e tornozelos) ao final do dia é comum e considerado fisiológico na gestação devido a alterações na pressão hidrostática e compressão da veia cava. Contudo, o edema que atinge a parede abdominal, as mãos e a face é considerado um sinal de alerta e pode estar associado a quadros patológicos, como a pré-eclâmpsia, não sendo classificado como fisiológico.\n\nAlternativa e: Está incorreta. A epistaxe (sangramento nasal) é uma queixa comum na gestação decorrente da hiperemia e congestão da mucosa nasal, estimuladas pelos níveis elevados de estrogênio, que tornam os capilares mais frágeis. Embora a hipertensão possa coexistir, a epistaxe isolada não é um marcador ou critério diagnóstico para a elevação da pressão arterial na gestante.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Modificações Fisiológicas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.438Z"
+  },
+  {
+    "id": "AJUDA_457a0167-db03-44ee-8c97-e7083069ba5e",
+    "originalId": "457a0167-db03-44ee-8c97-e7083069ba5e",
+    "statement": "Assinale a alternativa correta em relação à prevenção primária específica por vacinação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacina da dengue não é necessária para quem já teve dengue comprovadamente há menos de dez anos, pois a infecção gera imunidade nesse período para todos os tipos virais da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina da raiva é exclusiva para pessoas em pós-exposição, que sofreram algum acidente com animais de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacina da febre tifoide não é indicada para a população em geral devido à baixa incidência em áreas desenvolvidas com infraestrutura de saneamento básico adequada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A vacina da hepatite C é restrita a pacientes que submetem à hemodiálise, devido à sua alta toxidade e baixa proteção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A vacina contra o Vírus Sincicial Respiratório (VSR) é contraindicada para gestantes devido ao risco teratogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) está incorreta. A infecção natural pelo vírus da dengue gera imunidade permanente apenas para o sorotipo específico que causou a doença (existem quatro sorotipos: DENV-1, 2, 3 e 4). A imunidade cruzada para os outros sorotipos é apenas temporária. Além disso, as vacinas atuais, como a Qdenga, são recomendadas inclusive para quem já teve a doença, pois o objetivo é proteger contra os demais sorotipos e prevenir formas graves em uma reinfecção.\n\nAlternativa (b) está incorreta. A vacinação contra a raiva também é utilizada na profilaxia pré-exposição (PrEP). Ela é indicada para profissionais com risco ocupacional, como médicos-veterinários, biólogos, profissionais que trabalham em laboratórios de virologia e pessoas que manejam animais silvestres.\n\nAlternativa (c) está correta. A febre tifoide é uma doença diretamente relacionada à precariedade do saneamento básico e da higiene (transmissão fecal-oral). Em locais com infraestrutura adequada e tratamento de água e esgoto, a incidência é mínima. Por esse motivo, a vacina não faz parte do calendário vacinal de rotina da população geral, sendo indicada apenas para viajantes que se deslocam para áreas de alta endemicidade ou para trabalhadores de laboratórios que manipulam a Salmonella Typhi.\n\nAlternativa (d) está incorreta. Não existe vacina contra a hepatite C até o momento. A prevenção da doença é feita por meio do controle de bancos de sangue, do uso de materiais descartáveis e estéreis, além do tratamento dos pacientes infectados com antivirais de ação direta para interromper a cadeia de transmissão.\n\nAlternativa (e) está incorreta. A vacina contra o vírus sincicial respiratório (VSR) recebeu aprovação recente e tem como uma de suas principais indicações a aplicação em gestantes (geralmente entre a 24ª e a 36ª semana de gestação). O objetivo é a transferência transplacentária de anticorpos para o feto, garantindo proteção ao recém-nascido nos primeiros meses de vida, fase em que o vírus pode causar bronquiolite grave. Ela não é considerada teratogênica.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.438Z"
+  },
+  {
+    "id": "AJUDA_457df5f6-5e1c-4895-82c4-78d05ae53bc3",
+    "originalId": "457df5f6-5e1c-4895-82c4-78d05ae53bc3",
+    "statement": "Uma criança de 2 anos é levada ao consultório para uma avaliação de rotina. Os pais estão preocupados porque perceberam que os dentes de leite da criança não parecem estar se desenvolvendo normalmente. Durante a consulta, a criança apresenta os seguintes dentes decíduos: incisivos centrais superiores e inferiores, incisivos laterais superiores e inferiores, e primeiro molar inferior. Nenhum outro dente decíduo está presente. Qual é a fase da dentição que esta criança está apresentando?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fase de erupção dentária primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fase de dentição mista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fase de dentição permanente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fase de erupção dos dentes de leite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para responder a esta questão, é fundamental conhecer a cronologia da erupção dentária e os termos técnicos utilizados para descrever cada estágio do desenvolvimento bucal na infância.\n\nA dentição decídua (conhecida popularmente como dentes de leite) é composta por 20 dentes. O processo de erupção desses dentes geralmente começa por volta dos 6 meses de vida e se completa entre os 2 anos e meio e 3 anos de idade. No caso clínico, a criança de 2 anos apresenta incisivos e primeiros molares, o que é compatível com o cronograma esperado para quem ainda está completando a primeira dentição.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: A fase de erupção dentária primária refere-se ao período em que os dentes decíduos estão surgindo na cavidade oral. Como a criança possui apenas elementos da primeira dentição e ainda está dentro da faixa etária de finalização desse processo (2 anos), esta é a classificação técnica correta para o estágio observado.\n\nAlternativa (b) Incorreta: A fase de dentição mista ocorre quando há a presença simultânea de dentes decíduos e dentes permanentes na boca. Esse período inicia-se normalmente por volta dos 6 anos de idade, com a erupção dos primeiros molares permanentes ou a troca dos incisivos inferiores, o que não corresponde ao quadro da criança de 2 anos.\n\nAlternativa (c) Incorreta: A fase de dentição permanente é aquela em que todos os dentes decíduos já foram substituídos pelos seus sucessores definitivos. Isso acontece geralmente após os 12 ou 13 anos de idade.\n\nAlternativa (d) Incorreta: Embora \"dentes de leite\" seja um sinônimo para dentição decídua ou primária, o termo técnico-científico padronizado para descrever essa etapa do desenvolvimento em exames e literatura médica é \"erupção dentária primária\". A alternativa (a) utiliza a nomenclatura acadêmica correta para a fase de desenvolvimento biológico.\n\nPortanto, a criança encontra-se na fase em que seus primeiros dentes estão se estabelecendo, sem qualquer evidência de elementos permanentes, caracterizando a fase primária.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.438Z"
+  },
+  {
+    "id": "AJUDA_458333ba-7f79-462c-9aef-542c336beceb",
+    "originalId": "458333ba-7f79-462c-9aef-542c336beceb",
+    "statement": "A Política Nacional de Saúde LGBT é um divisor de águas para as políticas públicas de saúde no Brasil e um marco histórico de reconhecimento das demandas dessa população em condição de vulnerabilidade. É também um documento norteador e legitimador das suas necessidades e especificidades, em conformidade aos postulados de equidade previstos na Constituição Federal e na Carta dos Usuários do Sistema Único de Saúde. Sobre essa temática, considere as afirmativas a seguir.\n\nI. As diretrizes e os objetivos dessa política estão voltados para ações na determinação social da saúde, com vistas à redução das desigualdades relacionadas a esses grupos sociais, que sofrem os efeitos da discriminação e da exclusão em seus processo de saúde-doença.\nII. O uso do nome social de pessoas trans e travestis deve ser respeitado, mesmo sem a retificação do nome civil realizada em cartório, e deve constar no cartão nacional do SUS e prontuários.\nIII. O uso de hormônios por pessoas trans sem acompanhamento médico é um grande problema de saúde pública, por isso o acesso ao processo transexualizador pelo SUS é tão urgente e necessário.\nIV. Orientação sexual e identidade de gênero são termos equivalentes e precisam ser respeitados com prioridade nos serviços de saúde, em toda a Rede de Atenção.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nA Política Nacional de Saúde Integral de Lésbicas, Gays, Bissexuais, Travestis e Transexuais (Portaria nº 2.836/2011) é um tema frequente em provas de Medicina Preventiva e Social, focando nos princípios de equidade e integralidade do SUS. Vamos analisar cada afirmativa para entender por que a alternativa (d) é a correta:\n\nAfirmativa I (Correta): Esta alternativa aborda a base teórica da política. A população LGBT+ está frequentemente exposta a estigmas e preconceitos que geram sofrimento psíquico, violência física e barreiras de acesso aos serviços. Portanto, a política reconhece que a discriminação é um determinante social de saúde que impacta diretamente o processo saúde-doença, exigindo ações específicas para reduzir essas desigualdades.\n\nAfirmativa II (Correta): O respeito ao nome social é um direito garantido pela Carta dos Usuários do SUS e reforçado por decretos federais. O nome social é aquele pelo qual a pessoa trans ou travesti se reconhece e é identificada em sua comunidade. O sistema de saúde deve obrigatoriamente realizar o registro desse nome no Cartão SUS e em prontuários, independentemente de qualquer alteração judicial ou em cartório nos documentos civis. O desrespeito a este direito é uma das principais causas de evasão dessa população dos cuidados primários.\n\nAfirmativa III (Correta): Devido às barreiras de acesso e à demora nas filas de espera, muitas pessoas transexuais recorrem à automedicação com hormônios comprados no mercado informal ou sem critério médico, o que gera riscos graves (eventos tromboembólicos, dislipidemias, lesões hepáticas, entre outros). O SUS disponibiliza o Processo Transexualizador para oferecer assistência segura, multiprofissional e acolhedora, mitigando os riscos da hormonioterapia clandestina.\n\nAfirmativa IV (Incorreta): O erro aqui é de conceito técnico. Orientação sexual e Identidade de gênero NÃO são termos equivalentes.\n- Orientação Sexual refere-se à atração afetiva e/ou sexual por outras pessoas (ex: homossexual, heterossexual, bissexual).\n- Identidade de Gênero refere-se à percepção interna e individual de cada pessoa em relação ao seu próprio gênero, podendo ou não corresponder ao sexo atribuído no nascimento (ex: mulher trans, homem trans, pessoa não-binária).\nConfundir esses termos em uma prova de residência ou na prática clínica compromete a precisão do diagnóstico e o acolhimento do paciente.\n\nConclusão: Como as afirmativas I, II e III estão corretas, a alternativa (d) é o gabarito.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.438Z"
+  },
+  {
+    "id": "AJUDA_4587be7c-58f0-4450-84c8-a53067bf3a5e",
+    "originalId": "4587be7c-58f0-4450-84c8-a53067bf3a5e",
+    "statement": "Na apendicite aguda podemos encontrar os seguintes sinais:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sinal de Rovsing, sinal de Charcot e sinal de Cullen.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sinal de Murphy, sinal de Couvoisier e sinal de Kehr.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sinal Blumberg, sinal de Rovsing e sinal do iliopsoas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "sinal Blumberg, sinal de Grey Turner e sinal de Charcot.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sinal de Kehr, sinal de obturador e sinal de Jobert.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o diagnóstico clínico da apendicite aguda, que é fundamentalmente baseado na história clínica e no exame físico. Para resolver essa questão, é necessário diferenciar os sinais clássicos da apendicite de outros sinais semiológicos abdominais.\n\nAnálise das alternativas:\n\na) Incorreta. O sinal de Rovsing é característico da apendicite (dor na fossa ilíaca direita ao realizar a palpação da fossa ilíaca esquerda). No entanto, o sinal de Charcot (tríade de dor abdominal, icterícia e febre) indica colangite aguda, e o sinal de Cullen (equimose periumbilical) sugere hemoperitônio ou pancreatite necro-hemorrágica.\n\nb) Incorreta. O sinal de Murphy é típico da colecistite aguda (interrupção da inspiração profunda durante a palpação do ponto cístico). O sinal de Courvoisier-Terrier (vesícula biliar palpável e indolor em paciente ictérico) sugere neoplasia periampular. O sinal de Kehr (dor referida no ombro esquerdo) indica irritação diafragmática, geralmente por ruptura esplênica.\n\nc) Correta. Esta alternativa reúne três sinais clássicos da apendicite aguda:\n- Sinal de Blumberg: dor à descompressão súbita no ponto de McBurney, indicando irritação peritoneal.\n- Sinal de Rovsing: dor na fossa ilíaca direita (FID) desencadeada pela compressão ou palpação profunda retrógrada no cólon esquerdo, que desloca os gases em direção ao ceco.\n- Sinal do Iliopsoas: dor à extensão da coxa direita ou à flexão ativa do quadril contra resistência, sugerindo apêndice em posição retrocecal.\n\nd) Incorreta. Embora o sinal de Blumberg esteja correto, o sinal de Grey Turner (equimose nos flancos) está associado a hemorragias retroperitoneais ou pancreatite grave, e o sinal de Charcot está relacionado à colangite.\n\ne) Incorreta. O sinal do obturador é um sinal de apendicite (dor na rotação interna da coxa direita flexionada, comum em apêndices de localização pélvica). Contudo, o sinal de Kehr indica lesão esplênica/irritação diafragmática e o sinal de Jobert (perda da macicez hepática, dando lugar ao timpanismo) indica pneumoperitônio decorrente de perfuração de víscera oca.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.438Z"
+  },
+  {
+    "id": "AJUDA_458e4d82-6b6d-4d53-a823-b2894dd16ecc",
+    "originalId": "458e4d82-6b6d-4d53-a823-b2894dd16ecc",
+    "statement": "Mulher de 70 anos, diabética tipo 2, com infarto prévio há 2 anos, usa metformina 1000 mg/dia. Está assintomática, com HbA1c de 7,5%, TFG de 68 mL/min/1,73 m², LDL de 72 mg/dL, pressão bem controlada e IMC de 29 kg/m². Segundo as Diretrizes da SBD 2025, qual é a melhor estratégia para otimizar o controle metabólico e reduzir o risco cardiovascular?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar metformina para 2000 mg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Introduzir sulfonilureia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Associar insulina basal de ação prolongada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adicionar inibidor de DPP-4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Adicionar agonista do receptor de GLP-1 com benefício cardiovascular comprovado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A análise desta questão deve focar na mudança de paradigma proposta pelas diretrizes mais recentes da Sociedade Brasileira de Diabetes (SBD 2025) e de outras sociedades internacionais (ADA/EASD). Atualmente, a escolha do tratamento para o Diabetes Mellitus tipo 2 (DM2) é guiada primeiramente pela presença de comorbidades e pelo risco cardiovascular, e não apenas pelo nível da hemoglobina glicada (HbA1c).\n\nA paciente em questão apresenta doença cardiovascular aterosclerótica (DCVA) estabelecida, devido ao histórico de infarto agudo do miocárdio há 2 anos. Para pacientes com DCVA, as diretrizes recomendam o uso de fármacos que comprovadamente reduzam desfechos cardiovasculares maiores (MACE), independentemente do uso da metformina ou do valor inicial da HbA1c.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a dose de metformina possa ser otimizada para até 2.000-2.550 mg/dia, visando a um melhor controle glicêmico, essa medida sozinha não oferece a proteção cardiovascular adicional necessária para uma paciente que já sofreu um infarto. A prioridade é adicionar uma classe com benefício cardiovascular direto.\n\nAlternativa b) Incorreta. As sulfonilureias são secretagogos de insulina que podem causar hipoglicemia e ganho de peso. Elas não possuem benefício cardiovascular comprovado e, em alguns estudos, foram associadas a um maior risco quando comparadas a terapias mais modernas. Não são a escolha prioritária para pacientes de alto risco.\n\nAlternativa c) Incorreta. A insulina basal é uma excelente ferramenta para o controle da glicemia, mas é reservada para quando outras terapias falham em atingir a meta ou quando há sinais de catabolismo (o que não é o caso, já que a paciente está assintomática e com HbA1c de 7,5%). Além disso, a insulina não reduz o risco cardiovascular e pode promover ganho de peso.\n\nAlternativa d) Incorreta. Os inibidores da DPP-4 são considerados neutros do ponto de vista cardiovascular (com exceção da saxagliptina, que deve ser evitada na insuficiência cardíaca). Eles não conferem a redução de mortalidade ou de novos eventos isquêmicos que as classes de escolha (arGLP-1 ou iSGLT2) proporcionam.\n\nAlternativa e) Correta. Os agonistas do receptor de GLP-1 (arGLP-1) com benefício cardiovascular comprovado (como a semaglutida, liraglutida ou dulaglutida) são recomendados pela SBD 2025 para pacientes com DCVA estabelecida. Eles reduzem o risco de novos eventos cardiovasculares, auxiliam na perda de peso (a paciente tem IMC de 29 kg/m²) e promovem um controle glicêmico eficaz com baixo risco de hipoglicemia. Outra opção válida nesta situação seria um inibidor da SGLT2, mas, entre as alternativas apresentadas, a introdução do arGLP-1 é a conduta mais alinhada com as evidências de redução de risco residual pós-infarto.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Doença Arterial Coronariana Estável (DAC Estável)",
+      "Saúde do Idoso",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.438Z"
+  },
+  {
+    "id": "AJUDA_458eefce-7c1f-430d-a1dc-74fc175d009d",
+    "originalId": "458eefce-7c1f-430d-a1dc-74fc175d009d",
+    "statement": "Mulher gestante de 29 anos, primigesta, previamente hígida, comparece ao ambulatório de pré-natal para avaliação dos exames solicitados na primeira consulta. Está assintomática no momento. Os resultados dos exames sorológicos realizados podem ser vistos a seguir:\n\nQual é a alternativa correta acerca da infecção pelo HTLV nesta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A infecção e as doenças associadas ao HTLV não são de notificação compulsória no país.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico é semelhante ao da infecção pelo HIV. Realizase triagem com WESTERN-BLOT e, se positivo, realiza-se teste confirmatório com ELISA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A sorologia para HTLV não é obrigatória no pré-natal, sendo indicada nas gestantes que são profissionais de saúde ou têm contato com crianças em idade pré-escolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As principais formas de infecção são a transmissão sexual, o compartilhamento de agulhas e seringas e a transmissão vertical.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise dos resultados laboratoriais:\nA tabela apresenta os exames de uma gestante com destaque para o resultado Vírus linfotrópico de células T humanas tipos 1 e 2 (HTLV 1/2) Reagente. Os demais exames mostram que a paciente é imune à toxoplasmose (IgG reagente/IgM não reagente), possui uma cicatriz sorológica de sífilis ou infecção latente (VDRL não reagente/FTA-Abs reagente) e é suscetível à rubéola.\n\nExplicação das alternativas:\n\nAlternativa a: Incorreta. Desde a publicação da Portaria GM/MS número 3.148, de 6 de fevereiro de 2024, a infecção pelo HTLV-1 e HTLV-2 foi oficialmente incluída na Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública no Brasil. Mesmo antes dessa portaria nacional, a notificação já era obrigatória em diversos estados com alta prevalência.\n\nAlternativa b: Incorreta. A alternativa inverte as etapas do diagnóstico. Assim como no HIV, o protocolo para HTLV consiste em realizar primeiro uma triagem com testes de alta sensibilidade, como o ELISA ou a quimioluminescência. Somente se esse teste for reagente, utiliza-se um teste confirmatório de alta especificidade, como o Western-Blot ou o teste molecular (PCR).\n\nAlternativa c: Incorreta. O rastreio do HTLV no pré-natal é recomendado e vem sendo implementado de forma sistemática no Brasil. O objetivo não é proteger profissionais de saúde ou devido ao contato com crianças, mas sim identificar a gestante portadora para prevenir a transmissão vertical. O vírus não é transmitido pelo convívio social cotidiano com crianças.\n\nAlternativa d: Correta. Esta alternativa descreve as três principais vias de transmissão do HTLV. A transmissão sexual ocorre através de relações sem preservativo. A via parenteral ocorre pelo contato com sangue contaminado, principalmente no compartilhamento de agulhas. A transmissão vertical é a mais relevante no contexto do pré-natal, ocorrendo majoritariamente por meio do aleitamento materno (em cerca de 15 a 25 por cento dos casos de mães infectadas), razão pela qual a amamentação é contraindicada nessas pacientes.\n\nConclusão: Diante do resultado reagente para HTLV 1/2 demonstrado na imagem, o conhecimento sobre as formas de transmissão (alternativa d) é essencial para o manejo clínico, que envolve a confirmação do diagnóstico e a orientação sobre a interrupção da amamentação para proteger o recém-nascido.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas na Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9446562bf97282e7a9324df7cf838a62d6f1c628f44f85ace0107a27a2e96172.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_458eefce-7c1f-430d-a1dc-74fc175d009d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.919Z"
+  },
+  {
+    "id": "AJUDA_4595ba6b-58a9-420d-a648-d0ea375773bd",
+    "originalId": "4595ba6b-58a9-420d-a648-d0ea375773bd",
+    "statement": "A Síndrome da Resposta Inflamatória Sistêmica (SIRS) é uma resposta complexa do organismo a uma série de insultos. Em relação aos critérios diagnósticos e características fisiopatológicas de SIRS, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de pelo menos um critério da SIRS é suficiente para diagnóstico de sepse, independentemente da causa subjacente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico da SIRS pode ser confirmado pela elevação de biomarcadores específicos, como a troponina e a creatinina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A SIRS é caracterizada por uma resposta inflamatória que pode ocorrer na ausência de infecção, como em casos de pancreatite aguda ou queimaduras extensas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "SIRS resulta em hipotensão arterial que não responde à reposição volêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa C está correta porque a Síndrome da Resposta Inflamatória Sistêmica (SIRS) representa uma ativação generalizada do sistema imune inato, que pode ser desencadeada tanto por agentes infecciosos quanto por insultos não infecciosos. Na pancreatite aguda, a liberação de enzimas pancreáticas causa necrose tecidual e liberação de padrões moleculares associados ao dano (DAMPs), enquanto em queimaduras extensas há destruição celular massiva. Ambos os cenários geram uma cascata de citocinas inflamatórias que preenchem os critérios clínicos de SIRS sem que haja, necessariamente, uma infecção bacteriana, fúngica ou viral instalada.\n\nA alternativa A está incorreta por dois erros fundamentais. Primeiro, o diagnóstico de SIRS exige a presença de pelo menos dois critérios, e não apenas um. Segundo, a definição clássica de sepse é a presença de SIRS acompanhada de um foco infeccioso suspeito ou confirmado. Portanto, a causa subjacente é determinante para o diagnóstico de sepse; se a causa for apenas um trauma ou inflamação pura, não se diagnostica sepse.\n\nA alternativa B está incorreta porque os critérios de SIRS são específicos e não incluem esses biomarcadores. Os parâmetros são: temperatura (maior que 38 graus ou menor que 36 graus), frequência cardíaca (maior que 90 bpm), frequência respiratória (maior que 20 irpm ou PaCO2 menor que 32 mmHg) e contagem de leucócitos (maior que 12.000, menor que 4.000 ou mais de 10 por cento de bastões). Troponina e creatinina são marcadores de disfunção ou lesão de órgãos-alvo (coração e rim, respectivamente), podendo estar alterados em quadros graves, mas não definem SIRS.\n\nA alternativa D está incorreta pois a hipotensão arterial não é um critério para SIRS. A presença de hipotensão que não responde à reposição volêmica (necessitando de vasopressores) associada à hiperlactatemia define o choque séptico, que é uma condição de disfunção metabólica e circulatória grave. Muitos pacientes em SIRS permanecem normotensos durante todo o curso da resposta inflamatória.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Sepse"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.919Z"
+  },
+  {
+    "id": "AJUDA_45a01aa1-9211-4086-b512-d38fd3a60485",
+    "originalId": "45a01aa1-9211-4086-b512-d38fd3a60485",
+    "statement": "Um paciente de 58 anos, diabético e hipertenso, apresenta taxa de filtração glomerular estimada (TFGe) de 48 mL/min/1,73 m² (CKD-EPI), albuminúria de 320 mg/g de creatinina e potássio sérico de 5,8 mEq/L. Está em uso de losartana, metformina, anlodipino e sinvastatina. Segundo as diretrizes KDIGO 2024, qual a conduta mais apropriada em relação ao uso de metformina e losartana?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender metformina e manter losartana, pois o risco de acidose láctica é alto na TFGe < 60 mL/min/1,73 m².",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter metformina e losartana, monitorando creatinina e potássio, pois ambos trazem benefício renal e cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Suspender metformina e losartana, pois aumentam risco de hiperpotassemia e acidose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter metformina, mas suspender losartana, pois a hiperpotassemia contraindica bloqueadores do SRAA em qualquer valor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo farmacológico na Doença Renal Crônica (DRC) em um paciente com Diabetes Mellitus, focando nas diretrizes mais recentes do KDIGO 2024.\n\nAnálise da Metformina:\nDe acordo com as diretrizes atuais, a metformina deve ser ajustada quando a Taxa de Filtração Glomerular estimada (TFGe) cai abaixo de 45 mL/min/1,73 m² e deve ser suspensa apenas se a TFGe for inferior a 30 mL/min/1,73 m². Como o paciente apresenta uma TFGe de 48 mL/min/1,73 m², não há indicação para suspensão imediata, apenas para monitoramento e possível ajuste de dose caso a função renal decline mais.\n\nAnálise da Losartana (Bloqueador do Receptor de Angiotensina - BRA):\nO paciente possui albuminúria elevada (320 mg/g), o que torna o uso de inibidores do Sistema Renina-Angiotensina-Aldosterona (iSRAA) fundamental para a proteção renal e cardiovascular (Recomendação Nível 1A). O potássio de 5,8 mEq/L caracteriza uma hiperpotassemia leve a moderada. As diretrizes do KDIGO 2024 enfatizam que o iSRAA não deve ser suspenso rotineiramente frente a aumentos moderados de potássio. Em vez disso, deve-se priorizar medidas para reduzir o potássio (orientação dietética, uso de diuréticos ou quelantes de potássio) para permitir a manutenção da terapia com losartana, devido ao seu alto benefício na redução da progressão da DRC e mortalidade.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A metformina não precisa ser suspensa com TFGe de 48 mL/min. O risco de acidose láctica é considerado muito baixo em pacientes com TFGe acima de 30 mL/min, desde que não haja outros fatores de risco agudos.\n\nAlternativa (b) Correta: Reflete a conduta atual de \"nefroprevenção\". Mantém-se a metformina (ajustando a dose se necessário conforme a evolução) e mantém-se o iSRAA (losartana) devido ao benefício clínico superior, manejando a hiperpotassemia com monitoramento estreito e medidas auxiliares.\n\nAlternativa (c) Incorreta: Suspender ambas as medicações privaria o paciente de fármacos que comprovadamente reduzem o desfecho de falência renal e morte cardiovascular, sem uma indicação formal de suspensão baseada apenas nos valores apresentados.\n\nAlternativa (d) Incorreta: A hiperpotassemia não é uma contraindicação absoluta para o uso de bloqueadores do SRAA em qualquer valor. As diretrizes recomendam tentar manter a droga mesmo com potássio entre 5,5 e 6,0 mEq/L, utilizando estratégias de redução do potássio sérico antes de optar pela suspensão do medicamento.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:38.919Z"
+  }
+]

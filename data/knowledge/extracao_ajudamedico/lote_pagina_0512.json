@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_8ea9c3d2-6df0-468a-bfa2-d430bfcf9e5e",
+    "originalId": "8ea9c3d2-6df0-468a-bfa2-d430bfcf9e5e",
+    "statement": "Mulher de 65 anos, ex-tabagista, com diagnóstico de DPOC moderada, usa broncodilatador de longa duração de forma regular. Apresentou três exacerbações no último ano, duas delas exigindo antibiótico. A contagem de eosinófilos é de 320 células/µL. Qual é a conduta adicional mais adequada neste cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar corticosteroide sistêmico em dose contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Substituir broncodilatador por metilxantina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Introduzir corticosteroide inalado em associação à terapia atual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Suspender broncodilatador e iniciar fisioterapia respiratória exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não modificar conduta atual, pois não há critérios de gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso:\nA paciente apresenta um quadro de Doença Pulmonar Obstrutiva Crônica (DPOC) com perfil de exacerbador frequente, tendo registrado três episódios no último ano. De acordo com as diretrizes globais (GOLD), pacientes com duas ou mais exacerbações moderadas ou uma exacerbação que resulte em hospitalização são classificados no Grupo E (independentemente dos sintomas iniciais), o que exige uma otimização da terapia farmacológica. O fator decisivo para a escolha da conduta nesta questão é a contagem de eosinófilos. Níveis de eosinófilos sanguíneos iguais ou superiores a 300 células/microL são preditores de boa resposta ao uso de corticosteroide inalado (CEI) para a prevenção de novas exacerbações. Como a paciente possui 320 células/microL e permanece exacerbando com broncodilatador de longa duração, a associação do CEI ao esquema terapêutico é a conduta mais adequada.\n\nAlternativa a: Incorreta. O uso de corticosteroide sistêmico (oral) de forma contínua não é recomendado no tratamento de manutenção da DPOC. Essa prática está associada a efeitos colaterais graves a longo prazo, como osteoporose, diabetes, catarata e miopatia, sem oferecer benefícios superiores ao tratamento inalado.\n\nAlternativa b: Incorreta. As metilxantinas, como a teofilina, são consideradas drogas de terceira linha no tratamento da DPOC devido à sua baixa eficácia broncodilatadora e ao alto risco de toxicidade e interações medicamentosas. Elas não devem substituir os broncodilatadores de longa duração (LABA ou LAMA), que são os pilares do tratamento.\n\nAlternativa c: Correta. A introdução do corticosteroide inalado está formalmente indicada para pacientes que persistem com exacerbações a despeito do tratamento com broncodilatadores de longa duração e que possuem eosinofilia periférica (maior ou igual a 300 células/microL). Essa terapia combinada reduz a inflamação das vias aéreas e a frequência de novas crises.\n\nAlternativa d: Incorreta. A suspensão dos broncodilatadores de longa duração é um erro, pois eles são fundamentais para o controle da obstrução ao fluxo aéreo. A fisioterapia respiratória e a reabilitação pulmonar são intervenções adjuvantes essenciais, mas devem ser realizadas em conjunto com a farmacoterapia, e não como substitutas.\n\nAlternativa e: Incorreta. Existe um claro critério de gravidade e risco futuro: a frequência de exacerbações. Um paciente que exacerba três vezes em um ano não está controlado. A inércia terapêutica neste caso aumenta o risco de queda acelerada da função pulmonar e mortalidade.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  },
+  {
+    "id": "AJUDA_8eaf3067-7d00-4bad-bf11-a4cb3f598f5c",
+    "originalId": "8eaf3067-7d00-4bad-bf11-a4cb3f598f5c",
+    "statement": "Primigesta, 24 anos, com 37 semanas gestacionais. Realizou pré-natal no posto de saúde sem intercorrências. Procura a maternidade por perda líquida vaginal há 2 horas, em episódio único. Nega febre, sangramento ou dores abdominais. Sinais vitais normais. Altura uterina: 34 cm. Atividade uterina ausente. Exame especular: conteúdo claro no fundo de saco em pequena quantidade. Testes auxiliares: pH de 7,5. Padrão microscópico de cristalização com ramificações secundárias. Índice de líquido amniótico: 2 cm. Toque vaginal: colo dilatado 2 cm, variedade de posição sacro transversa esquerda, apresentação alta e móvel. Cardiotocografia: feto ativo e reativo. Qual a melhor orientação para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação para indução do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação para interrupção da gestação por via cesariana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Alta hospitalar e aguardar início espontâneo do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação para versão cefálica externa e conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nA paciente é uma primigesta de 37 semanas (gestação a termo) que apresenta Ruptura Prematura de Membranas Ovulares (RPMO), também conhecida como bolsa rota. O diagnóstico é confirmado pelo relato de perda líquida, presença de líquido no exame especular, pH vaginal alcalino (7,5) e teste de cristalização positivo. Os dados cruciais para a decisão terapêutica são: o feto está em apresentação pélvica (variedade de posição sacrotransversa esquerda), a apresentação está alta e móvel, e há um oligoâmnio severo (Índice de Líquido Amniótico de 2 cm).\n\nExplicação das Alternativas:\n\nAlternativa a (Incorreta): Em casos de ruptura de membranas a termo com o feto em apresentação cefálica, a indução do trabalho de parto é a conduta padrão. Contudo, nesta questão, o feto está em apresentação pélvica (sacrotransversa). Em primigestas com feto pélvico e bolsa rota, a indução é contraindicada devido ao alto risco de complicações, como o prolapso de cordão umbilical (favorecido pela apresentação alta e pelo pouco líquido) e a retenção da cabeça derradeira durante o parto.\n\nAlternativa b (Correta): A via de parto preferencial para primigestas com feto em apresentação pélvica a termo é a cesariana, visando reduzir a morbimortalidade perinatal. A presença de ruptura de membranas (RPMO) com apresentação ainda alta e móvel reforça a indicação da interrupção imediata por via alta, pois o risco de um prolapso de cordão é iminente e as condições para um parto vaginal pélvico seguro não estão presentes.\n\nAlternativa c (Incorreta): A conduta expectante ou a alta hospitalar não são indicadas na ruptura de membranas a termo, especialmente em uma situação de apresentação anômala. A permanência da gestante em ambiente domiciliar com bolsa rota elevaria o risco de infecção (corioamnionite) e não resolveria a distocia de apresentação.\n\nAlternativa d (Incorreta): A versão cefálica externa (VCE) é a manobra realizada para tentar girar o feto da posição pélvica para a cefálica. Entretanto, a VCE tem como contraindicação relativa/absoluta a ruptura das membranas e o oligoâmnio severo (neste caso, ILA de 2 cm). Sem o volume adequado de líquido amniótico, a manobra torna-se tecnicamente difícil, dolorosa e perigosa, podendo causar descolamento prematuro de placenta ou sofrimento fetal.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  },
+  {
+    "id": "AJUDA_8eb08b98-fd13-4274-9b69-2bc6aa6c75a7",
+    "originalId": "8eb08b98-fd13-4274-9b69-2bc6aa6c75a7",
+    "statement": "Paciente de 68 anos, ex-tabagista, portador de hipertensão arterial e infarto prévio de parede anterior há 6 anos, é acompanhado em ambulatório de cardiologia. Apresenta dispneia progressiva aos esforços há 12 meses, atualmente para atividades leves (NYHA III). Refere ortopneia e episódios de dispneia paroxística noturna. Nega angina atual.\nAo exame físico: PA: 108 × 70 mmHg, FC: 78 bpm, ritmo regular, estertores crepitantes em bases pulmonares, turgência jugular 2+/4, edema maleolar bilateral 2+/4.\nExames complementares recentes:\nEcocardiograma: fração de ejeção do VE: 28%, VE dilatado, disfunção sistólica difusa, valvas sem alterações significativas.\nLaboratório: creatinina: 1,2 mg/dL, K+: 4,5 mEq/L, BNP: 1.850 pg/mL.\nMedicações atuais: carvedilol 25 mg 12/12 h, enalapril 10 mg 12/12 h, furosemida 40 mg/dia.\n\nQual é o próximo passo terapêutico mais adequado para otimizar o tratamento desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender o enalapril e manter apenas betabloqueador e diurético de alça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Associar espironolactona à terapia atual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Introduzir dapagliflozina apenas se o paciente apresentar diagnóstico de diabetes mellitus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar implante imediato de CDI, mesmo sem otimização da terapia medicamentosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar ressincronização cardíaca (TRC) imediatamente, sem avaliação de QRS ou de terapia otimizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta um quadro de Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr), com fração de ejeção de 28% (abaixo de 40%). Ele já utiliza doses fundamentais de betabloqueador (carvedilol) e inibidor da enzima conversora de angiotensina (enalapril), além de diurético de alça (furosemida) para controle de sintomas congestivos. No entanto, ele permanece sintomático, classificado como NYHA III (dispneia aos pequenos esforços), e apresenta sinais clínicos de congestão persistente.\n\nAnálise das alternativas:\n\nAlternativa (a) - Incorreta: O enalapril (IECA) é uma das bases do tratamento da ICFEr e demonstrou reduzir significativamente a mortalidade e as hospitalizações. Suspender essa medicação em um paciente com pressão arterial e função renal estáveis levaria à piora do prognóstico e do remodelamento cardíaco.\n\nAlternativa (b) - Correta: Segundo as diretrizes da Sociedade Brasileira de Cardiologia e consensos internacionais, para pacientes com ICFEr que permanecem sintomáticos (NYHA II-IV) apesar do tratamento inicial com IECA/BRA e betabloqueador, a próxima etapa é a associação de um antagonista do receptor mineralocorticoide, como a espironolactona. O paciente apresenta níveis de potássio (4,5 mEq/L) e creatinina (1,2 mg/dL) dentro da faixa de segurança para o início dessa droga (K menor que 5,0 mEq/L e creatinina menor que 2,5 mg/dL).\n\nAlternativa (c) - Incorreta: Os inibidores do SGLT2, como a dapagliflozina e a empagliflozina, tornaram-se pilares no tratamento da ICFEr. Estudos robustos demonstraram que essas drogas reduzem morte cardiovascular e internações independentemente de o paciente ser diabético ou não. Portanto, a dapagliflozina poderia ser iniciada mesmo sem o diagnóstico de diabetes.\n\nAlternativa (d) - Incorreta: O cardiodesfibrilador implantável (CDI) é indicado para prevenção primária em pacientes com miocardiopatia isquêmica e fração de ejeção menor ou igual a 35%. Entretanto, essa indicação só deve ser feita após, no mínimo, 3 meses de terapia medicamentosa otimizada. Como o paciente ainda não está com o tratamento completo (faltam espironolactona e iSGLT2), o implante imediato é precoce.\n\nAlternativa (e) - Incorreta: A terapia de ressincronização cardíaca (TRC) exige critérios específicos: terapia médica otimizada prévia por pelo menos 3 a 6 meses, fração de ejeção menor ou igual a 35%, ritmo sinusal e evidência de dissincronia no eletrocardiograma (QRS largo, preferencialmente com morfologia de bloqueio de ramo esquerdo maior ou igual a 150 ms). A questão não fornece dados do eletrocardiograma e a conduta não deve ser \"imediata\" sem a otimização das drogas.\n\nGabarito: Alternativa (b).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  },
+  {
+    "id": "AJUDA_8eb0eda3-6533-4a2e-867e-54f858e980bd",
+    "originalId": "8eb0eda3-6533-4a2e-867e-54f858e980bd",
+    "statement": "Menina de 4 meses de idade comparece à consulta de rotina. AP: parto normal com 35 semanas. US (34 semanas de gestação): dilatação do rim fetal unilateral; infecção urinária febril com 2 meses (T: 39,5 ºC; cultura de urina positiva para Enterococcus faecalis). AF: mãe, duas tias maternas e avó apresentam infecção urinária de repetição. Exame físico: Peso P25 e estatura P50. A pesquisa de malformação renal é necessária por causa",
+    "options": [
+      {
+        "id": "A",
+        "text": "da prematuridade e da infecção urinária febril.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "do US antenatal e do antecedente familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "da infecção urinária febril e do baixo peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "do US antenatal e do microrganismo da cultura de urina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as indicações de investigação de malformações do trato urinário em lactentes. A análise deve focar nos sinais de alerta presentes na história clínica e nos exames complementares da paciente.\n\nAnálise dos dados principais:\n\n1. Ultrassonografia (US) antenatal com dilatação: O achado de hidronefrose fetal unilateral no terceiro trimestre é uma indicação formal de investigação pós-natal. Mesmo que a criança esteja assintomática, a dilatação visualizada antes do nascimento obriga a realização de exames após o parto para descartar anomalias congênitas do rim e do trato urinário (CAKUT), como a estenose de junção ureteropélvica ou o refluxo vesicoureteral.\n\n2. Microrganismo da cultura (Enterococcus faecalis): A maioria das infecções do trato urinário (ITU) em pediatria é causada pela bactéria Escherichia coli. A identificação de um germe atípico (não E. coli), como o Enterococcus, o Proteus ou a Klebsiella, é considerada um sinal de alerta (\"red flag\") que aumenta muito a probabilidade de haver uma malformação estrutural subjacente, exigindo investigação por imagem imediata.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a infecção urinária febril em um lactente jovem seja um motivo para investigação, a prematuridade (nascimento com 35 semanas) não é um fator de risco isolado que indique a pesquisa de malformações renais.\n\nb) Incorreta. O US antenatal é, de fato, um motivo para a investigação. No entanto, o antecedente familiar de infecção urinária, apesar de ser um dado importante na anamnese (sugerindo predisposição genética para refluxo vesicoureteral), não é o critério técnico principal ou imediato para a investigação neste caso clínico, especialmente quando comparado ao achado microbiológico da cultura de urina.\n\nc) Incorreta. A infecção urinária febril justifica a investigação no primeiro episódio em lactentes, mas a paciente não apresenta baixo peso. Estar no percentil 25 (P25) de peso e percentil 50 (P50) de estatura indica um crescimento adequado e dentro da normalidade para a idade, não sendo um sinal de doença renal crônica ou má evolução clínica.\n\nd) Correta. Esta alternativa reúne os dois critérios técnicos mais fortes para a investigação de malformações no cenário apresentado. O US antenatal alterado já trazia uma suspeita prévia que precisava ser confirmada ou descartada no pós-natal. A ocorrência de uma ITU febril por um agente atípico (Enterococcus faecalis) confirma a necessidade de um estudo detalhado da anatomia urinária, conforme preconizado pelos protocolos de nefrologia pediátrica.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  },
+  {
+    "id": "AJUDA_8eb1089d-6cfc-4388-836a-55e98b2a7652",
+    "originalId": "8eb1089d-6cfc-4388-836a-55e98b2a7652",
+    "statement": "Mulher de 36 anos, muligesta, deseja engravidar. Refere 2 a 3 relações pênis-vagina por semana, sem uso de métodos contraceptivos há 2 anos. Ciclos menstruais regulares, sem queixas. Nega vícios ou uso de medicações. Exame físico geral e ginecológico sem alterações. Parceiro com 39 anos, sem doenças crônicas. Nega vícios e uso de medicações. Exames complementares: Parceiro: Espermograma 1 (critérios de normalidade da OMS, 2021): volume de 4,7 mL, 1,6 milhões de espermatozoides/mL, 5% de motilidade progressiva, 1% de formas normais e 58% de vitalidade. Espermograma 2, realizado cerca de 3 meses após com parâmetros similares. Paciente: histerossalpingografia e ultrassonografia transvaginal sem anormalidades. Qual a abordagem terapêutica mais efetiva para este casal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indução da ovulação com clomifeno para coito programado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indução da ovulação e inseminação intrauterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estimulação ovariana e injeção intracitoplasmática de espermatozoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Antioxidantes orais associados a ácidos graxos ômega 3 para o parceiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO CASO\n\nO caso descreve um casal com infertilidade de dois anos (tempo superior ao critério de 12 meses para investigação). A avaliação feminina, composta por ciclos regulares, histerossalpingografia (patência tubária) e ultrassonografia (anatomia pélvica), encontra-se dentro da normalidade. O fator de infertilidade é claramente masculino.\n\nDe acordo com os critérios da OMS de 2021, o espermograma apresenta alterações graves em três parâmetros:\n1. Concentração: 1,6 milhão/mL (o normal é acima de 16 milhões/mL). Caracteriza oligozoospermia grave.\n2. Motilidade Progressiva: 5% (o normal é acima de 30%). Caracteriza astenozoospermia grave.\n3. Morfologia: 1% (o normal é acima de 4%). Caracteriza teratozoospermia.\n\nDiante de um quadro de oligoastenoteratozoospermia grave, a conduta deve ser direcionada para técnicas de reprodução assistida de alta complexidade.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: O coito programado com indução da ovulação é uma técnica de baixa complexidade indicada principalmente para casos de anovulação (como na Síndrome dos Ovários Policísticos) ou infertilidade sem causa aparente, desde que os parâmetros seminais estejam normais ou muito próximos do normal. No caso em questão, a paciente já ovula regularmente e o espermograma é gravemente alterado, o que torna essa abordagem ineficaz.\n\nAlternativa (b) INCORRETA: A inseminação intrauterina (IIU) também é uma técnica de baixa complexidade. Para que tenha taxas de sucesso aceitáveis, é necessário que, após o processamento seminal em laboratório, o número de espermatozoides móveis recuperados seja superior a 5 milhões (alguns serviços aceitam acima de 2 a 3 milhões). Com uma concentração de apenas 1,6 milhão/mL e apenas 5% de motilidade, o processamento dificilmente atingiria a quantidade mínima necessária para a inseminação.\n\nAlternativa (c) CORRETA: A Injeção Intracitoplasmática de Espermatozoides (ICSI) é a técnica de escolha para o fator masculino grave. Diferente da Fertilização In Vitro (FIV) clássica, onde os espermatozoides são colocados ao redor do óvulo, na ICSI o embriologista seleciona um único espermatozoide com melhor morfologia e motilidade e o injeta diretamente dentro do citoplasma do ovócito. É o tratamento mais efetivo para superar as limitações de concentração e motilidade apresentadas pelo parceiro.\n\nAlternativa (d) INCORRETA: Embora antioxidantes e ômega 3 possam ser utilizados como terapia adjuvante na tentativa de melhorar a qualidade espermática em alguns casos, eles não são considerados o tratamento definitivo ou \"mais efetivo\" para um quadro de oligozoospermia grave. Além disso, a paciente tem 36 anos, idade em que a reserva ovariana começa a declinar de forma mais acelerada, não sendo prudente postergar o tratamento definitivo com terapias de eficácia não comprovada para este nível de alteração seminal.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  },
+  {
+    "id": "AJUDA_8ebdf088-cc78-4c60-b140-2d7b43c0fb80",
+    "originalId": "8ebdf088-cc78-4c60-b140-2d7b43c0fb80",
+    "statement": "Homem de 54 anos, previamente hígido, apresenta dor abdominal intermitente há 3 meses, associada a perda ponderal de 6 kg e episódios de diarreia não sanguinolenta. Nega flushing. O exame físico é inespecífico. A tomografia de abdome evidencia lesão sólida de 2,8 cm em íleo terminal, com realce ao contraste e linfonodos mesentéricos aumentados. Enteroscopia identifica lesão submucosa, cuja biópsia revela tumor neuroendócrino bem diferenciado, com 3 mitoses por 10 campos de grande aumento, cromogranina A e sinaptofisina positivas e índice Ki-67 de 8%. O estadiamento não mostra metástases hepáticas. Com base na classificação atual dos tumores neuroendócrinos gastrointestinais, qual o grau deste tumor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tumor neuroendócrino grau 1 (G1)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tumor neuroendócrino grau 2 (G2)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tumor neuroendócrino grau 3 (G3)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Carcinoma neuroendócrino (NEC)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tumor neuroendócrino indiferenciado de alto grau",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a essa questão, devemos aplicar os critérios de classificação da Organização Mundial da Saúde (OMS) para Tumores Neuroendócrinos (TNEs) do trato gastrointestinal. A classificação baseia-se fundamentalmente no potencial de proliferação celular, medido por dois parâmetros: o índice mitótico (número de mitoses por campo) e o índice Ki-67 (marcador imuno-histoquímico de proliferação).\n\nAnálise dos dados do caso clínico:\n- Contagem mitótica: 3 mitoses por 10 campos de grande aumento (CGA).\n- Índice Ki-67: 8%.\n- Diferenciação: Bem diferenciado (confirmado pela biópsia e marcadores Cromogranina A e Sinaptofisina).\n\nClassificação da OMS:\n- G1 (Grau 1): Ki-67 < 3% e Índice Mitótico < 2 mitoses/10 CGA.\n- G2 (Grau 2): Ki-67 entre 3% e 20% OU Índice Mitótico entre 2 e 20 mitoses/10 CGA.\n- G3 (Grau 3): Ki-67 > 20% OU Índice Mitótico > 20 mitoses/10 CGA (mantendo a diferenciação celular).\n\nAnálise das alternativas:\n\na) Incorreta. Para ser classificado como G1, o tumor deveria apresentar Ki-67 abaixo de 3% e menos de 2 mitoses por 10 CGA. O paciente apresenta valores superiores a esses pontos de corte (8% e 3 mitoses).\n\nb) Correta. Os valores apresentados (Ki-67 de 8% e 3 mitoses/10 CGA) enquadram-se perfeitamente nos intervalos definidos para o Grau 2 (G2), que exige Ki-67 entre 3-20% ou mitoses entre 2-20. Importante notar que, se houver discordância entre os dois índices, prevalece sempre o que indicar o grau mais elevado.\n\nc) Incorreta. O Grau 3 (G3) exige uma taxa de proliferação muito maior, com Ki-67 superior a 20% ou mais de 20 mitoses por 10 CGA. Embora o tumor pudesse ser G3 e ainda assim \"bem diferenciado\", os números fornecidos não atingem esse patamar.\n\nd) Incorreta. O Carcinoma Neuroendócrino (NEC) é, por definição, um tumor de alto grau (G3), mas com uma característica fundamental: ele é \"pouco diferenciado\" (pequenas ou grandes células), apresentando comportamento muito agressivo e histologia distinta dos tumores bem diferenciados.\n\ne) Incorreta. Não existe a nomenclatura \"indiferenciado de alto grau\" na classificação padrão da OMS para esses tumores; o termo correto para lesões indiferenciadas/pouco diferenciadas de alto grau seria Carcinoma Neuroendócrino (NEC). Além disso, o enunciado afirma explicitamente que o tumor é \"bem diferenciado\".",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Tumores Neuroendócrinos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  },
+  {
+    "id": "AJUDA_8ec046ac-cc9e-4b09-9767-19cee15ad9cf",
+    "originalId": "8ec046ac-cc9e-4b09-9767-19cee15ad9cf",
+    "statement": "Em 2005, a razão de mortalidade materna (RMM) para a região Nordeste foi de 66,9 mortes de mulheres por cem mil nascidos vivos (NV) contra 40,7 na região Sudeste (Brasil, 2008). Pode-se afirmar, para efeito de planejamento de políticas de saúde, que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "as desigualdades regionais da mortalidade materna mostram as iniquidades do acesso e as diferenças de qualidade da assistência à saúde no país",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "este indicador tem importância política e sanitária restrita, pois a minoria das causas de mortes maternas no Brasil pode ser evitada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a condição da ilegalidade do aborto conduz a práticas clandestinas e arriscadas, associadas à morte por hemorragias e infecções puerperais, entretanto, este fato não altera a RMM, pois os óbitos por abortamento não são computados nesse indicador",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não há diferença relevante na RMM relacionada à idade, raça/cor, estado civil ou escolaridade",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da questão sobre Razão de Mortalidade Materna (RMM) e indicadores de saúde:\n\nA Razão de Mortalidade Materna (RMM) é um dos indicadores mais sensíveis para avaliar a qualidade de vida e o nível de desenvolvimento de uma população, além de refletir diretamente a eficiência e a organização do sistema de saúde de um país ou região.\n\nAlternativa A (Correta): As discrepâncias nos valores da RMM entre as regiões Nordeste (66,9) e Sudeste (40,7) expõem as iniquidades sociais e de saúde no Brasil. Iniquidade refere-se a desigualdades que são injustas e evitáveis. Regiões com menores investimentos em infraestrutura, barreiras no acesso ao pré-natal de qualidade e assistência hospitalar inadequada no parto e puerpério tendem a apresentar indicadores de mortalidade muito mais elevados. Portanto, o planejamento de políticas de saúde deve focar na redução dessas desigualdades regionais.\n\nAlternativa B (Incorreta): O indicador tem altíssima importância política e sanitária, sendo, inclusive, um dos indicadores monitorados por organismos internacionais (como a ONU). Ao contrário do que afirma a alternativa, a grande maioria das mortes maternas no Brasil (cerca de 90% ou mais) é considerada evitável por meio de intervenções oportunas e qualificadas do sistema de saúde.\n\nAlternativa C (Incorreta): Embora a ilegalidade do aborto realmente leve a práticas inseguras com risco de hemorragia e infecção, a afirmação está errada ao dizer que esses óbitos não são computados no indicador. A RMM contabiliza todas as mortes de mulheres durante a gestação, parto ou até 42 dias após o término da gestação, por qualquer causa relacionada ou agravada pela gravidez ou por medidas tomadas em relação a ela. O aborto é classificado como uma causa obstétrica direta e entra obrigatoriamente no cálculo da RMM.\n\nAlternativa D (Incorreta): Existem diferenças marcantes e documentadas na RMM quando analisadas variáveis sociodemográficas. No Brasil, a mortalidade materna é significativamente maior em mulheres negras e indígenas, naquelas com menor escolaridade e nos extremos de idade (adolescentes e mulheres acima de 35-40 anos). Essas variáveis são determinantes sociais da saúde que influenciam diretamente o desfecho da gestação.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  },
+  {
+    "id": "AJUDA_8ec7f576-db5b-4fa3-b2c9-8f756c7c20ce",
+    "originalId": "8ec7f576-db5b-4fa3-b2c9-8f756c7c20ce",
+    "statement": "Qual das alternativas abaixo descreve melhor a hierarquia das evidências, considerando a sequência do menor para o maior nível de evidência?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Opinião dos especialistas → relatos de casos → série de casos → estudos de corte transversal → estudos de caso-controle → estudo de coorte → estudo clínico aleatório → estudo clínico randomizado → metanálise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Opinião dos especialistas → relatos de casos → série de casos → estudos de corte transversal → estudo de coorte → estudos de caso-controle → estudo clínico randomizado→ estudo clínico aleatório → metanálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Opinião dos especialistas → relatos de casos → série de casos → estudo de coorte → estudos de corte transversal → estudos de caso-controle → estudo clínico aleatório →estudo clínico randomizado → metanálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Opinião dos especialistas → relatos de casos → série de casos → estudos de corte transversal → estudos de caso-controle → estudo de coorte → estudo clínico randomizado→ estudo clínico aleatório → metanálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Opinião dos especialistas → relatos de casos → série de casos → estudos de corte transversal → estudo de coorte → estudos de caso-controle → estudo clínico aleatório estudo clínico randomizado → metanálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA hierarquia das evidências científicas é organizada para classificar a confiabilidade dos estudos com base em sua capacidade de minimizar vieses e estabelecer relações de causalidade. A sequência deve partir de observações clínicas iniciais e opiniões subjetivas até chegar à síntese de dados experimentais controlados.\n\nAlternativa a: Esta é a alternativa correta. Ela respeita a ordem crescente de força de evidência. A base da pirâmide começa com a opinião de especialistas e estudos descritivos (relatos e séries de casos). Em seguida, vêm os estudos observacionais analíticos: o corte transversal (analisa exposição e desfecho simultaneamente), o caso-controle (parte do desfecho para investigar a causa) e a coorte (parte da exposição para observar o desfecho, sendo superior pela capacidade de estabelecer temporalidade). No topo, estão os estudos experimentais (ensaios clínicos aleatórios/randomizados) e, por fim, a meta-análise, que consolida os resultados de múltiplos estudos de alta qualidade.\n\nAlternativa b: Está incorreta porque posiciona o estudo de coorte antes do estudo de caso-controle. Em uma sequência ascendente, o estudo de caso-controle deve vir antes, pois a coorte é considerada um nível de evidência superior por permitir o cálculo de incidência e o acompanhamento direto dos participantes ao longo do tempo.\n\nAlternativa c: Está incorreta. Esta opção coloca o estudo de coorte em um nível de evidência inferior ao corte transversal e ao caso-controle. Na prática acadêmica e clínica, a coorte possui maior peso metodológico do que esses dois modelos, devendo aparecer após eles em uma lista crescente.\n\nAlternativa d: Esta alternativa é idêntica à letra A em quase toda a sua estrutura de estudos observacionais. Contudo, a alternativa A é a que reflete a terminologia e a ordem habitualmente cobrada em provas de residência para definir a progressão dos estudos primários para os secundários (meta-análise). O ponto crítico para o candidato é identificar corretamente a sequência transversal -> caso-controle -> coorte.\n\nAlternativa e: Está incorreta. Assim como nas alternativas B e C, o erro fundamental reside na troca de posições entre os estudos de coorte e caso-controle. A coorte deve sempre estar em uma posição de maior evidência em relação aos estudos transversais e de caso-controle.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  },
+  {
+    "id": "AJUDA_8ec8ed33-9557-43b9-a037-e661605f6aa5",
+    "originalId": "8ec8ed33-9557-43b9-a037-e661605f6aa5",
+    "statement": "Durante a anamnese de uma paciente de 62 anos, você identifica os seguintes dados: menarca aos 11 anos, nulípara, menopausa aos 54 anos e avó com histórico de câncer de mama. Com base nessas informações, marque a opção que descreve os fatores de risco para câncer de mama.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menarca aos 11 anos e nuliparidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Nuliparidade e avó com câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Menarca aos 11 anos e menopausa aos 54 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Menopausa aos 54 anos e avó com câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para analisar esta questão, é necessário identificar quais dados da anamnese da paciente de 62 anos são considerados fatores de risco epidemiológicos e hormonais clássicos para o desenvolvimento do câncer de mama. O ponto central da discussão é o tempo de exposição do tecido mamário ao estímulo do estrogênio, também chamado de janela estrogênica.\n\nAlternativa A: Esta é a alternativa correta. A menarca precoce é definida como a primeira menstruação ocorrendo antes dos 12 anos de idade (no caso da paciente, aos 11 anos), o que antecipa o início da exposição hormonal. A nuliparidade (nunca ter tido filhos) também é um fator de risco importante, pois a gestação a termo e a lactação promovem a diferenciação completa das células dos lobos mamários e reduzem a quantidade total de ciclos ovulatórios ao longo da vida, conferindo um efeito protetor que a paciente nulípara não possui.\n\nAlternativa B: Esta alternativa está incorreta porque, embora a nuliparidade seja um fator de risco, o histórico familiar de câncer de mama em parentes de segundo grau (como a avó) possui um peso clínico muito menor do que o histórico em parentes de primeiro grau (mãe, irmã ou filha). Para fins de provas de residência e concursos, o risco familiar é valorizado principalmente quando ocorre em parentes de primeiro grau, especialmente se o diagnóstico foi feito antes dos 50 anos ou se foi bilateral.\n\nAlternativa C: Esta alternativa está incorreta. Apesar de a menarca aos 11 anos ser um fator de risco, a menopausa aos 54 anos não é classificada como menopausa tardia. Pelos consensos de mastologia, a menopausa é considerada tardia quando ocorre após os 55 anos. Portanto, aos 54 anos, ela ainda é considerada dentro da faixa de normalidade, não sendo isoladamente um marcador de risco elevado.\n\nAlternativa D: Esta alternativa está incorreta por reunir dois dados que não preenchem os critérios clássicos de risco elevado na questão. Como mencionado, a menopausa aos 54 anos não atinge o critério de menopausa tardia (superior a 55 anos) e o histórico familiar em parente de segundo grau (avó) é um dado de menor relevância epidemiológica quando comparado aos fatores hormonais reprodutivos diretos da própria paciente.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  },
+  {
+    "id": "AJUDA_8ee09a9f-5ec5-42d7-846d-a2d5dc5c1844",
+    "originalId": "8ee09a9f-5ec5-42d7-846d-a2d5dc5c1844",
+    "statement": "O modelo das Marcas do Câncer (Hallmarks of Cancer) descreve características essenciais adquiridas por células tumorais para sustentar crescimento, sobreviver em ambientes hostis e disseminar-se pelo organismo. Assinale a alternativa que apresenta, corretamente, um desses mecanismos e sua relação com a progressão tumoral.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A indução de apoptose aumenta a taxa de morte celular tumoral, dificultando o crescimento da neoplasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A insensibilidade a sinais inibidores de crescimento ocorre apenas nas fases iniciais do desenvolvimento tumoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A instabilidade genômica facilita o acúmulo de mutações que promovem alterações funcionais em genes reguladores do crescimento celular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A evasão do sistema imune é um fenômeno raro e pouco relevante para a sobrevida das células tumorais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A ausência de angiogênese favorece a nutrição e a oxigenação adequadas do tumor, permitindo seu crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o modelo das Marcas do Câncer (Hallmarks of Cancer), proposto originalmente por Hanahan e Weinberg, que define as capacidades funcionais adquiridas pelas células durante o desenvolvimento do câncer. Vamos analisar cada alternativa:\n\nAlternativa a) Incorreta. Uma das marcas fundamentais do câncer é a Resistência à Morte Celular (Evitar a Apoptose). As células tumorais desenvolvem estratégias para ignorar os sinais que normalmente levariam à morte programada, permitindo que sobrevivam mesmo com danos no DNA ou em condições de estresse. A indução de apoptose seria uma estratégia terapêutica ou de defesa do organismo, e não um mecanismo que favorece a progressão tumoral.\n\nAlternativa b) Incorreta. A insensibilidade a sinais inibidores de crescimento é uma característica persistente. Células normais respondem a sinais de parada de ciclo celular para manter a homeostase tecidual. Células cancerosas driblam esses sinais (como os mediados pela proteína RB) de forma contínua para manter a proliferação descontrolada ao longo de toda a evolução da doença, não apenas no início.\n\nAlternativa c) Correta. A Instabilidade Genômica é considerada uma característica facilitadora (enabling characteristic). Ela descreve a incapacidade da célula tumoral de manter a integridade do seu genoma, o que leva a um aumento na taxa de mutações. Esse acúmulo de erros genéticos acelera a aquisição de outras marcas do câncer, como a ativação de oncogenes e a inativação de genes supressores de tumor, sendo o motor principal da evolução clonal e progressão da neoplasia.\n\nAlternativa d) Incorreta. A Evasão do Sistema Imune é uma marca crítica e bem estabelecida. O sistema imunológico, através da imunovigilância, é capaz de reconhecer e destruir células malignas. Para progredir, o tumor precisa desenvolver mecanismos para se tornar invisível ou inibir a resposta de células T e células NK. Sem essa evasão, o tumor seria eliminado pelo hospedeiro.\n\nAlternativa e) Incorreta. O conceito correto é a Indução da Angiogênese. Tumores necessitam de suprimento sanguíneo para receber oxigênio e nutrientes, além de eliminar resíduos metabólicos. Além de um certo tamanho (cerca de 1 a 2 milímetros), o tumor não consegue crescer apenas por difusão. Portanto, ele ativa o chamado switch angiogênico para formar novos vasos sanguíneos. A ausência de angiogênese impediria, e não favoreceria, o crescimento tumoral.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:45.305Z"
+  }
+]

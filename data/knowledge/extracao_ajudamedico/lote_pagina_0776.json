@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_d8a1929e-f630-497f-85f6-311a89a9a561",
+    "originalId": "d8a1929e-f630-497f-85f6-311a89a9a561",
+    "statement": "Durante uma cirurgia de aneurisma de aorta abdominal, um paciente recebe múltiplas unidades de hemácias e desenvolve sangramento microvascular difuso (nappe) em todo o campo cirúrgico, apesar da hemostasia mecânica adequada. O coagulograma intraoperatório revela alargamento do INR e do aPTT, com fibrinogênio < 100 mg/dL. Diante deste quadro de Coagulopatia Dilucional e consumo de fatores, o hemocomponente mais específico para repor o fibrinogênio e corrigir a hemostasia é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Plasma Fresco Congelado (PFC), pois é o único que contém todos os fatores de coagulação, embora exija grandes volumes para correção do fibrinogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O Concentrado de Plaquetas, visto que a trombocitopenia é a causa primária de sangramento difuso em transfusões maciças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O Crioprecipitado, pois contém altas concentrações de fibrinogênio, Fator VIII, Fator de von Willebrand e Fator XIII em pequeno volume.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O Concentrado de Complexo Protrombínico, que repõe especificamente os fatores vitamina K dependentes (II, VII, IX, X), sendo superior ao crioprecipitado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve uma coagulopatia dilucional, comum em cirurgias de grande porte com transfusão maciça. O ponto central da questão é a identificação de um nível crítico de fibrinogênio (menor que 100 mg/dL) associado a sangramento microvascular (nappe). O objetivo é identificar o hemocomponente que repõe fibrinogênio de forma concentrada e eficaz.\n\nAlternativa A: Incorreta. O Plasma Fresco Congelado (PFC) realmente contém todos os fatores de coagulação, incluindo o fibrinogênio. No entanto, a concentração de fibrinogênio no PFC é relativamente baixa. Para elevar o fibrinogênio de um paciente a níveis seguros apenas com PFC, seriam necessários volumes muito grandes, o que aumenta consideravelmente o risco de sobrecarga volêmica (TACO) e não resolve a deficiência de forma específica e rápida.\n\nAlternativa B: Incorreta. Embora a trombocitopenia (queda das plaquetas) ocorra na transfusão maciça e contribua para o sangramento, o enunciado destaca especificamente a queda do fibrinogênio para menos de 100 mg/dL. O concentrado de plaquetas não é fonte de fibrinogênio e, portanto, não corrigiria o parâmetro laboratorial e a causa principal do sangramento descrita neste caso.\n\nAlternativa C: Correta. O Crioprecipitado é o hemocomponente de escolha para a reposição de fibrinogênio. Ele é obtido a partir do descongelamento do PFC a 4 graus Celsius, resultando em um precipitado rico em fibrinogênio (Fator I), Fator VIII, Fator de von Willebrand, Fator XIII e fibronectina. Sua grande vantagem é fornecer uma alta concentração de fibrinogênio em um volume muito reduzido (cerca de 10 a 20 ml por unidade), sendo o tratamento mais específico para o quadro apresentado.\n\nAlternativa D: Incorreta. O Concentrado de Complexo Protrombínico (CCP) é indicado para a reversão urgente de anticoagulantes orais (antagonistas da vitamina K) ou deficiências específicas dos fatores II, VII, IX e X. O CCP não contém fibrinogênio em sua composição, sendo ineficaz para tratar a hipofibrinogenemia decorrente de diluição ou consumo.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Perioperatório",
+      "Medicina Transfusional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:08.789Z"
+  },
+  {
+    "id": "AJUDA_d8a8b8d8-0739-4955-8c6e-7048d2c5949c",
+    "originalId": "d8a8b8d8-0739-4955-8c6e-7048d2c5949c",
+    "statement": "Atualmente, as mulheres passam um terço da sua vida no período pós- menopausa e esse é um dado de extrema relevância para se cuidar da saúde e qualidade de vida delas nesse período. Sobre o climatério, é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As consequências clínicas da menopausa estão relacionadas, principalmente, à deficiência da progesterona, levando ao aumento da perda de massa óssea e dos sintomas de fogachos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os sintomas vasomotores podem acometer até 75% das mulheres na perimenopausa e constituem a principal razão da procura por tratamento no climatério.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A síndrome geniturinária, apesar de pouco sintomática, pode ser tratada eficazmente com terapia hormonal sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Recomenda-se a avaliação da massa óssea, por meio de densitometria mineral óssea (DMO), em pacientes de baixo risco, a partir dos 55 anos, para indicar terapia hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. As principais repercussões clínicas observadas durante o climatério e a menopausa decorrem da deficiência de estrogênio, e não da progesterona. O estrogênio exerce um papel fundamental na regulação do centro termorregulador no hipotálamo e na manutenção da densidade mineral óssea (inibindo a reabsorção óssea). É a queda acentuada dos níveis de estrogênio que leva aos fogachos e ao aumento do risco de osteoporose.\n\nAlternativa b) Correta. Os sintomas vasomotores, popularmente conhecidos como fogachos ou ondas de calor, são as manifestações mais comuns da transição menopausal. Estudos apontam que entre 60% e 80% das mulheres (aproximadamente 75%) apresentam esses sintomas em algum grau de intensidade. Devido ao impacto negativo na qualidade de vida e no sono, essa é a principal queixa que leva as pacientes a buscarem auxílio médico nesta fase.\n\nAlternativa c) Incorreta. A síndrome geniturinária da menopausa é, na verdade, bastante sintomática para uma grande parcela das mulheres, manifestando-se por meio de secura vaginal, dispareunia (dor na relação sexual), prurido e sintomas urinários (urgência e disúria). Embora a terapia hormonal sistêmica ajude, o tratamento considerado padrão-ouro e mais eficaz para as queixas estritamente locais é a terapia estrogênica tópica (vaginal), que atua diretamente nos receptores da mucosa urogenital.\n\nAlternativa d) Incorreta. De acordo com as principais diretrizes (como as da FEBRASGO e da National Osteoporosis Foundation), o rastreio universal da massa óssea por densitometria mineral óssea (DMO) é recomendado para mulheres a partir dos 65 anos. Em mulheres com idade inferior (na pós-menopausa), a DMO só é solicitada se houver fatores de risco clínicos para fratura (como baixo peso, tabagismo, uso de corticoides ou fratura prévia). Portanto, 55 anos para baixo risco não é a idade recomendada para o início do rastreio. Além disso, a indicação de terapia hormonal deve ser baseada primordialmente na presença de sintomas e na janela de oportunidade terapêutica, e não isoladamente no resultado da DMO.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:08.789Z"
+  },
+  {
+    "id": "AJUDA_d8aa7979-a1b5-43c0-a8eb-fe27a7185b14",
+    "originalId": "d8aa7979-a1b5-43c0-a8eb-fe27a7185b14",
+    "statement": "Durante uma cirurgia de urgência para reparo vascular na região inguinal, o cirurgião realiza a exposição da artéria femoral comum e percebe que a dissecção da artéria exige atenção redobrada para não lesar a veia femoral adjacente. Qual é a posição anatômica da veia femoral comum em relação à artéria femoral comum nessa região?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lateral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Medial",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Posterior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anterolateral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a essa questão, é fundamental recordar a anatomia do trígono femoral, uma região anatômica crucial em cirurgias vasculares e procedimentos de acesso venoso ou arterial. A organização das estruturas que passam sob o ligamento inguinal segue uma ordem específica da porção medial para a lateral.\n\nA regra mnemônica clássica utilizada por estudantes e profissionais é o acrônimo VAN, que descreve a sequência das estruturas da porção mais interna (medial) para a mais externa (lateral): Veia, Artéria e Nervo. Portanto, na região inguinal, a veia femoral comum situa-se medialmente em relação à artéria femoral comum.\n\nAnálise das alternativas:\n\nAlternativa a) Lateral: Está incorreta. A estrutura que se localiza lateralmente à artéria femoral comum é o nervo femoral. Posicionar-se lateralmente à artéria durante uma punção ou dissecção aumenta o risco de lesão nervosa, e não de encontrar a veia.\n\nAlternativa b) Medial: Está correta. Esta é a relação anatômica padrão na região inguinal. No interior da bainha femoral, a veia femoral ocupa o compartimento médio, posicionada imediatamente ao lado interno da artéria femoral. Esse conhecimento é vital para evitar lesões iatrogênicas durante a manipulação cirúrgica da artéria.\n\nAlternativa c) Posterior: Está incorreta. Embora em níveis mais distais do membro inferior as relações vasculares possam sofrer alterações de profundidade e rotação, na região inguinal proposta pela questão, a veia e a artéria estão dispostas lado a lado no mesmo plano anatômico, com a veia em posição estritamente medial.\n\nAlternativa d) Anterolateral: Está incorreta. Esta descrição não corresponde à anatomia topográfica da região. A veia não se sobrepõe à artéria por sua face anterior e externa; elas mantêm uma relação de vizinhança paralela onde a artéria é o elemento central e a veia o elemento interno.\n\nConcluindo, o cirurgião que expõe a artéria femoral comum deve ter cautela redobrada com a face medial do vaso, local exato onde a veia femoral comum está situada e aderida por tecido conectivo.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:08.789Z"
+  },
+  {
+    "id": "AJUDA_d8afe75b-7c15-43d7-843a-55f34aa1fa43",
+    "originalId": "d8afe75b-7c15-43d7-843a-55f34aa1fa43",
+    "statement": "Homem, 63 anos, IMC 32. No 2º dia de pós-operatório de colecistectomia videolaparoscópica eletiva por colelitíase. Refere dor leve em hipocôndrio direito e febre baixa. Exame: T axilar 37,8 °C, sem taquicardia, eupneico e anictérico. Feridas em bom aspecto. Abdome discretamente distendido, RHA presentes, sem defesa/irritação peritoneal e sem dor à palpação superficial. Registros de enfermagem mostram temperatura axilar oscilando entre 36,6-37,9 °C, com três medidas > 37 °C. Profilaxia antibiótica feita na indução e suspensa no D1. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "sintomáticos (antipirético e analgésico).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "exames laboratoriais para investigar infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "exame de imagem para investigar complicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "drenagem percutânea sub-hepática guiada por imagem e antibiótico de amplo espectro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um paciente de 63 anos, obeso, no 2º dia de pós-operatório (D2) de colecistectomia videolaparoscópica, evoluindo com febre baixa e dor leve em hipocôndrio direito. A análise minuciosa dos dados revela um paciente clinicamente estável, com sinais vitais preservados (exceto pela temperatura de 37,8 °C) e exame físico abdominal sem sinais de complicação cirúrgica imediata (abdome indolor à palpação superficial e sem irritação peritoneal).\n\nA febre no pós-operatório imediato (primeiras 48 a 72 horas) é um achado extremamente frequente e, na maioria das vezes, não possui causa infecciosa. As principais etiologias nesse período são a resposta metabólica e endócrina ao trauma cirúrgico (devido à liberação de citocinas inflamatórias) e a atelectasia pulmonar, especialmente em pacientes obesos e submetidos a cirurgias abdominais superiores.\n\nAnálise das alternativas:\n\na) Correta. Como o paciente está estável, sem sinais de peritonite, sem icterícia e com feridas operatórias de bom aspecto, a conduta inicial deve ser expectante e sintomática. O uso de antipiréticos para o controle da febre e analgésicos para a dor leve é o mais adequado. A febre de 37,8 °C no D2 não justifica, isoladamente, uma investigação invasiva ou mudança terapêutica agressiva.\n\nb) Incorreta. A solicitação de exames laboratoriais (como hemograma e PCR) neste momento seria precoce e pouco específica, pois o próprio estresse cirúrgico pode elevar a contagem de leucócitos e os marcadores inflamatórios, gerando confusão diagnóstica sem mudar a conduta imediata.\n\nc) Incorreta. Não há foco infeccioso evidente. O paciente recebeu antibioticoprofilaxia adequadamente na indução. O início de antibioticoterapia empírica sem evidência de infecção bacteriana contribui apenas para a resistência bacteriana e efeitos colaterais desnecessários.\n\nd) Incorreta. Exames de imagem (como ultrassonografia ou tomografia) seriam indicados caso houvesse suspeita de complicações cirúrgicas, como coleções abdominais, abscessos ou escape biliar. No entanto, o exame físico do paciente é benigno, com dor leve e sem sinais de irritação peritoneal, o que torna a investigação por imagem desnecessária neste momento.\n\ne) Incorreta. Esta é a conduta mais invasiva e estaria reservada para casos de complicações graves confirmadas, como um abscesso sub-hepático ou coleções infectadas, o que não condiz com o quadro clínico de um paciente estável no 2º dia de pós-operatório. Além disso, a drenagem sempre deve ser precedida por um exame de imagem que comprove a necessidade do procedimento.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:08.789Z"
+  },
+  {
+    "id": "AJUDA_d8c8d101-de38-404f-b63a-c06e8408417a",
+    "originalId": "d8c8d101-de38-404f-b63a-c06e8408417a",
+    "statement": "Idosa, há 2 anos com histórico de quedas da própria altura cada vez mais frequentes e quadro de evolução progressiva de disartria com fala arrastada e anasalada, disfagia, espasmos musculares e fraqueza muscular em região cervical e membros superiores e inferiores (com predomínio à esquerda). Mantém capacidade de raciocínio e memória. Ao exame físico: espasticidade, redução de força e atrofia muscular de membros. Em investigação complementar, apresenta os seguintes resultados:\n- exames laboratoriais normais: hemograma, ureia, creatinina, transaminases, coagulograma, eletroforese de proteínas séricas, ácidos graxos de cadeia muito longa, proteína C-reativa.\n- ressonância magnética de encéfalo e região cervical normais.\n- eletroneuromiografia com presença de desnervação associada à normalidade de neurocondução motora e sensitiva.\n- biopsia muscular: normal.\nA melhor hipótese diagnóstica com base no caso clínico exposto é",
+    "options": [
+      {
+        "id": "A",
+        "text": "neuromielite óptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "esclerose múltipla.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "esclerose lateral amiotrófica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "doença cerebrovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "adrenomieloneuropatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de Esclerose Lateral Amiotrófica (ELA). Para chegar ao diagnóstico correto, devemos integrar os sinais de acometimento do neurônio motor superior (NMS) e do neurônio motor inferior (NMI), além da preservação da cognição e da ausência de alterações sensitivas.\n\nAnálise dos achados clínicos e subsidiários:\n\n1. Sinais de Neurônio Motor Superior (NMS): Espasticidade e fraqueza muscular.\n2. Sinais de Neurônio Motor Inferior (NMI): Atrofia muscular e evidência eletromiográfica de desnervação.\n3. Acometimento Bulbar: Disartria e disfagia, comuns na progressão da ELA.\n4. Preservação de funções: O raciocínio, a memória e a condução nervosa sensitiva na eletroneuromiografia permanecem normais, o que é característico da doença, pois esta é puramente motora.\n5. Exclusão de diagnósticos diferenciais: A ressonância magnética normal afasta causas estruturais (tumores, compressões medulares ou infartos), e a biópsia muscular normal afasta miopatias primárias.\n\nExplicação das alternativas:\n\na) INCORRETA. A neuromielite óptica (Doença de Devic) é uma condição inflamatória desmielinizante que atinge preferencialmente os nervos ópticos e a medula espinhal (mielite transversa). Ela costuma cursar com perda visual, dor ocular e níveis sensitivos medulares, além de apresentar alterações características na ressonância magnética e, frequentemente, presença do anticorpo antiaquaporina 4.\n\nb) INCORRETA. A esclerose múltipla atinge adultos jovens e causa lesões disseminadas no tempo e no espaço. O quadro clínico é marcado por surtos de déficits neurológicos variados (visuais, sensitivos, motores, cerebelares). A ressonância magnética do crânio e da coluna apresentaria placas de desmielinização na substância branca, o que não ocorre no caso descrito.\n\nc) CORRETA. A esclerose lateral amiotrófica é a principal hipótese quando há sinais simultâneos de lesão de NMS (espasticidade) e NMI (atrofia e desnervação na eletroneuromiografia) em múltiplos segmentos corporais (bulbar, cervical, membros). A idade avançada, a progressão insidiosa, a ausência de alterações sensitivas e os exames de imagem normais (para descartar outras patologias) corroboram o diagnóstico.\n\nd) INCORRETA. A doença cerebrovascular geralmente tem início súbito (no caso do AVC) ou progressão em degraus (no caso da demência vascular). Um quadro progressivo de 2 anos com acometimento de neurônio motor inferior (atrofia e desnervação) e ressonância magnética do encéfalo normal torna essa hipótese improvável.\n\ne) INCORRETA. A adrenomieloneuropatia é uma variante da adrenoleucodistrofia, doença ligada ao cromossomo X que afeta principalmente homens e causa acúmulo de ácidos graxos de cadeia muito longa. Embora cause paraparesia espástica, o caso clínico cita explicitamente que a dosagem de ácidos graxos de cadeia muito longa está normal, excluindo esta patologia. Além disso, a doença costuma apresentar alterações na substância branca na ressonância magnética.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:08.789Z"
+  },
+  {
+    "id": "AJUDA_d8ca781e-481d-4427-895c-bceeeff1631c",
+    "originalId": "d8ca781e-481d-4427-895c-bceeeff1631c",
+    "statement": "Puérpera retorna em consulta no 8º dia pós-parto cesárea com queixa de cansaço e mal-estar há 2 dias. Devido à dificuldade nas mamadas, iniciou complementação com fórmula láctea para o recém-nascido há 2 dias. Refere temperatura axilar 38,1 °C. Ao exame físico, regular estado geral, FC de 100 bpm, PA de 90x60 mmHg. Abdome flácido, doloroso à palpação de hipogástrio, útero palpável 2 cm abaixo da cicatriz umbilical. As imagens a seguir referem-se ao exame físico da paciente.\n\nCom base nos dados e nas imagens, assinale a conduta mais adequada neste momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Curetagem uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ordenha guiada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antibiótico endovenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Bloqueio da lactação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente apresenta um quadro de sepse no 8º dia de puerpério. Os sinais vitais revelam febre (38,1 °C), taquicardia (100 bpm) e hipotensão (90 x 60 mmHg), o que indica gravidade e necessidade de intervenção imediata.\n\nAs imagens corroboram o diagnóstico de múltiplos focos infecciosos:\n1. A primeira imagem mostra a mama com eritema (vermelhidão) difuso, calor local e edema, características típicas de mastite.\n2. A segunda imagem mostra a cicatriz cirúrgica da cesárea com hiperemia e sinais inflamatórios perilesionais, sugerindo uma infecção de ferida operatória (celulite de parede).\n\nAnálise das alternativas:\n\na) Incorreta. A curetagem uterina é o tratamento para restos ovulares que podem causar hemorragia ou endometrite. Embora a paciente tenha dor no hipogástrio, o foco infeccioso está claramente visível na mama e na parede abdominal. Mesmo que houvesse suspeita de endometrite, o manejo inicial de uma paciente com sinais de choque/sepse seria a estabilização clínica e a antibioticoterapia, não o procedimento cirúrgico imediato.\n\nb) Incorreta. A ordenha é uma medida auxiliar importante no tratamento da mastite para garantir o esvaziamento mamário e o alívio dos sintomas. No entanto, diante de uma paciente com instabilidade hemodinâmica (hipotensão) e sinais sistêmicos de infecção, a ordenha isolada é insuficiente. O foco deve ser o suporte de vida e o combate à infecção sistêmica.\n\nc) Correta. Diante de um quadro de sepse puerperal com focos definidos (mastite e infecção de ferida operatória), a conduta padrão-ouro é a internação hospitalar para estabilização hemodinâmica (expansão volêmica) e início imediato de antibioticoterapia de amplo espectro por via endovenosa.\n\nd) Incorreta. O bloqueio da lactação não é indicado de rotina na mastite. A recomendação atual é manter a amamentação ou realizar a ordenha para evitar o ingurgitamento, que piora o quadro infeccioso. Além disso, interromper a lactação não trataria a infecção da ferida operatória nem a condição sistêmica da paciente.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Infecção Puerperal"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ed149709917dd8691bce665baaa60dfef51078c6f1af243634697a3ebe042030.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d8ca781e-481d-4427-895c-bceeeff1631c_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/1e7efb61ae2b725aaf057608ad21b4639b22ad26d0424e1166aebeaef594c8d7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d8ca781e-481d-4427-895c-bceeeff1631c_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:09.734Z"
+  },
+  {
+    "id": "AJUDA_d8cc038a-069b-446f-a663-a9244de67172",
+    "originalId": "d8cc038a-069b-446f-a663-a9244de67172",
+    "statement": "Leia o caso a seguir.\n\nPaciente do sexo masculino, 66 anos de idade, com diagnóstico de diabetes mellitus tipo 2 e hipertensão arterial há vários anos e antecedente de infarto agudo do miocárdio há 4 meses.\n\nDe acordo com último guideline brasileiro de dislipidemia, publicado em 2025, qual deve ser a meta de LDL-c para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "< 70 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "< 50 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "< 40 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "< 20 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental identificar primeiro o perfil de risco cardiovascular do paciente. Trata-se de um homem de 66 anos com doença cardiovascular aterosclerótica estabelecida (infarto agudo do miocárdio prévio), além de comorbidades como diabetes mellitus tipo 2 e hipertensão arterial. Esse conjunto de fatores o classifica automaticamente na categoria de Muito Alto Risco Cardiovascular.\n\nHistoricamente, as diretrizes brasileiras vinham adotando a meta de LDL-c inferior a 50 mg/dL para essa categoria. No entanto, acompanhando as tendências internacionais e as evidências de estudos clínicos recentes que demonstram benefício adicional em níveis cada vez menores de colesterol, a atualização mais recente (citada como 2025 na questão) reduziu essa meta.\n\nExplicação das alternativas:\n\na) Incorreta. A meta de LDL-c inferior a 70 mg/dL é destinada a pacientes de Alto Risco. São pacientes que possuem múltiplos fatores de risco ou diabetes com estratificadores de gravidade, mas que ainda não manifestaram um evento cardiovascular clínico, como o infarto.\n\nb) Incorreta. O valor inferior a 50 mg/dL era a meta preconizada para pacientes de Muito Alto Risco nas diretrizes anteriores (como a de 2017 e a atualização de 2019). Com a nova atualização de 2025 mencionada no enunciado, esse valor foi atualizado para um patamar mais rigoroso.\n\nc) Correta. Conforme as atualizações mais recentes da Sociedade Brasileira de Cardiologia (SBC) e o guideline de 2025, pacientes classificados como de Muito Alto Risco Cardiovascular (aqueles com doença aterosclerótica clinicamente manifesta, como infarto, AVC ou doença arterial periférica) devem agora buscar uma meta de LDL-c inferior a 40 mg/dL. Além do alvo numérico, orienta-se uma redução de pelo menos 50% em relação aos níveis iniciais de LDL-c do paciente.\n\nd) Incorreta. Não existe, até o momento, recomendação em diretrizes para uma meta de LDL-c inferior a 20 mg/dL para a população geral de muito alto risco. Embora níveis extremamente baixos tenham se mostrado seguros e benéficos em subanálises de grandes estudos com inibidores da PCSK9, o alvo oficial estabelecido pelo consenso atual é de 40 mg/dL.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:09.734Z"
+  },
+  {
+    "id": "AJUDA_d8d2cfd6-7310-4927-84ad-380760f48bb1",
+    "originalId": "d8d2cfd6-7310-4927-84ad-380760f48bb1",
+    "statement": "Deve-se emitir a Declaração de Óbito, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "em óbitos ocorridos em prontos-socorros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "em morte natural de indivíduos com mais de 65 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "em caso de óbito por morte violenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "no óbito fetal de gestação de 21 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "no caso de um membro amputado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O preenchimento da Declaração de Óbito (DO) é uma responsabilidade médica fundamental, com implicações éticas, jurídicas e epidemiológicas. A questão solicita a única situação em que o documento não deve ser emitido.\n\nAlternativa a: Incorreta. Óbitos ocorridos em prontos-socorros exigem obrigatoriamente a emissão da DO. Se a morte for por causas naturais, o médico que prestou assistência ou o médico plantonista deve emitir o documento. Caso a morte tenha causa externa (violenta ou suspeita), o corpo deve ser encaminhado ao Instituto Médico Legal (IML), que será responsável pela emissão da DO.\n\nAlternativa b: Incorreta. A idade do indivíduo não é critério para a dispensa da DO. Toda morte natural de um indivíduo nascido vivo deve ser registrada mediante a Declaração de Óbito para fins de encerramento da personalidade civil e para o Sistema de Informações sobre Mortalidade (SIM).\n\nAlternativa c: Incorreta. Em mortes por causas violentas ou acidentais (homicídios, suicídios, acidentes de trânsito, quedas, etc.), a emissão da DO é obrigatória. Nestes casos, a responsabilidade é exclusiva dos médicos-peritos dos Institutos Médicos Legais (IML), independentemente do tempo decorrido entre o evento e a morte.\n\nAlternativa d: Incorreta. A legislação brasileira e as normas do Ministério da Saúde determinam que a DO deve ser emitida em óbitos fetais se a gestação tiver duração igual ou superior a 20 semanas, OU se o feto tiver peso igual ou superior a 500 gramas, OU se a estatura for igual ou superior a 25 centímetros. Como a alternativa cita 21 semanas, o documento é obrigatório.\n\nAlternativa e: Correta (Gabarito). Um membro amputado não caracteriza o óbito de um indivíduo, mas sim a retirada de uma parte do corpo de um paciente vivo ou um procedimento cirúrgico. A Declaração de Óbito destina-se exclusivamente a registrar o fim da vida de uma pessoa ou de um feto (dentro dos critérios legais). Para membros amputados, o hospital utiliza protocolos administrativos próprios e laudos de patologia para o descarte ou sepultamento, mas nunca uma Declaração de Óbito.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:09.734Z"
+  },
+  {
+    "id": "AJUDA_d8d4dc1b-d95b-4a4b-b853-f992d9621ec0",
+    "originalId": "d8d4dc1b-d95b-4a4b-b853-f992d9621ec0",
+    "statement": "Sobre os critérios de elegibilidade para contracepção da OMS, analise as sentenças:\n\n1. O tabagismo em mulheres com mais de 35 anos é categoria 4 (contraindicação absoluta) para uso de anticoncepcionais combinados orais.\n2. O uso de DIU de cobre em mulheres nulíparas é proscrito (Categoria 4) devido ao risco de expulsão.\n3. A amamentação exclusiva com menos de 6 semanas pós-parto é categoria 4 para uso de contraceptivos contendo estrogênio.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-V, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1-F, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1-V, 2-F, 3-V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1-V, 2-V, 3-F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a questão, devemos recordar as quatro categorias dos Critérios de Elegibilidade da Organização Mundial da Saúde (OMS) para o uso de métodos contraceptivos:\n\nCategoria 1: Sem restrição ao uso do método.\nCategoria 2: As vantagens superam os riscos (uso geralmente permitido).\nCategoria 3: Os riscos superam as vantagens (uso geralmente não recomendado, requer julgamento clínico rigoroso).\nCategoria 4: Risco inaceitável à saúde (contraindicação absoluta).\n\nAnálise das sentenças:\n\n1. O tabagismo em mulheres com mais de 35 anos é Categoria 4 (contraindicação absoluta) para o uso de anticoncepcionais combinados orais.\nVERDADEIRA. Para mulheres com 35 anos ou mais que fumam 15 ou mais cigarros por dia, o uso de anticoncepcionais combinados (que contêm estrogênio) é Categoria 4, devido ao risco significativamente aumentado de eventos cardiovasculares, como infarto agudo do miocárdio e acidente vascular cerebral. Se a mulher fumar menos de 15 cigarros por dia, a categoria é a 3; mas, em provas de residência, o binômio tabagismo + idade acima de 35 anos é classicamente tratado como contraindicação absoluta (Categoria 4) para métodos combinados.\n\n2. O uso de DIU de cobre em mulheres nulíparas é proscrito (Categoria 4) devido ao risco de expulsão.\nFALSA. A nuliparidade (mulher que nunca pariu) é classificada como Categoria 2 pela OMS para a inserção de DIU (seja de cobre ou de levonorgestrel). Embora possa haver um risco discretamente maior de expulsão ou dor na inserção em comparação com multíparas, os benefícios do método superam amplamente os riscos. Não há contraindicação nem proibição.\n\n3. A amamentação exclusiva com menos de 6 semanas pós-parto é Categoria 4 para o uso de contraceptivos contendo estrogênio.\nVERDADEIRA. No período inferior a 6 semanas pós-parto, mulheres que estão amamentando não devem utilizar métodos combinados (estrogênio + progesterona). O estrogênio aumenta o risco de tromboembolismo venoso, que já está elevado no puerpério, e pode interferir negativamente na produção e na qualidade do leite materno. Por isso, é classificado como Categoria 4.\n\nConclusão:\nA sequência correta é V - F - V.\n\nPortanto, a alternativa CORRETA é a letra (c).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:09.734Z"
+  },
+  {
+    "id": "AJUDA_d8f292c3-500c-4ec0-99eb-06ad05a109b2",
+    "originalId": "d8f292c3-500c-4ec0-99eb-06ad05a109b2",
+    "statement": "Um paciente de 17 anos, com sobrepeso, chega à consulta apresentando aumento da sede, poliúria e fadiga. Ao exame físico, observam-se alterações no peso e pressão arterial moderadamente elevada. Um teste de glicemia capilar revela hiperglicemia. O médico suspeita de diabetes mellitus tipo 2 (DM2) e orienta a realização de exames complementares. Com base nas diretrizes atuais para o tratamento do DM2 em pediatria, qual abordagem terapêutica inicial é mais apropriada para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar terapia com insulina basal de ação longa imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever metformina como primeira linha de tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar apenas acompanhamento nutricional sem introdução de medicamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Recomendar imediatamente a cirurgia bariátrica devido ao sobrepeso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prescrever sulfonilureias como única medicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um adolescente com sintomas clássicos de hiperglicemia (poliúria, polidipsia e fadiga) e sinais sugestivos de resistência insulínica e síndrome metabólica, como sobrepeso e hipertensão arterial. Diante da suspeita de Diabetes Mellitus tipo 2 (DM2) em pacientes pediátricos (10 a 18 anos), as diretrizes da American Diabetes Association (ADA) e da ISPAD orientam a conduta com base na gravidade da apresentação clínica.\n\nAlternativa a) Incorreta. A insulina basal é indicada no tratamento inicial do DM2 pediátrico apenas se o paciente apresentar descompensação metabólica grave, como cetoacidose diabética, cetose significativa ou níveis de hemoglobina glicada (HbA1c) superiores a 8,5%. No caso descrito, o paciente está sintomático, mas estável, o que permite o início com medicação oral.\n\nAlternativa b) Correta. A metformina é o fármaco de primeira escolha para o tratamento do DM2 em crianças e adolescentes a partir dos 10 anos de idade. Em pacientes com sintomas leves ou moderados e sem acidose, a conduta inicial padrão é a associação de mudanças no estilo de vida (dieta e exercícios) com a introdução da metformina. Ela atua principalmente reduzindo a produção hepática de glicose e melhorando a sensibilidade periférica à insulina.\n\nAlternativa c) Incorreta. Embora as modificações no estilo de vida sejam fundamentais e devam ser iniciadas imediatamente, o tratamento isolado sem medicação raramente é suficiente para pacientes que já se apresentam sintomáticos e com hiperglicemia franca no diagnóstico. A diretriz atual recomenda a introdução farmacológica precoce para evitar a progressão da falência das células beta pancreáticas.\n\nAlternativa d) Incorreta. A cirurgia bariátrica (cirurgia metabólica) é uma opção terapêutica de exceção na pediatria. Ela pode ser considerada apenas em adolescentes com obesidade severa (geralmente IMC acima de 35 kg/m²) que apresentam comorbidades graves de difícil controle após falha prolongada do tratamento clínico e farmacológico otimizado. Jamais seria uma conduta imediata.\n\nAlternativa e) Incorreta. As sulfonilureias não são medicações de primeira linha para o tratamento de DM2 em jovens. Elas possuem um risco significativamente maior de causar hipoglicemia e podem levar ao ganho de peso, o que é contraproducente em um paciente que já apresenta sobrepeso. Além disso, a metformina apresenta um perfil de segurança e eficácia superior nesta faixa etária.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Obesidade na Infância e na Adolescência",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:09.734Z"
+  }
+]

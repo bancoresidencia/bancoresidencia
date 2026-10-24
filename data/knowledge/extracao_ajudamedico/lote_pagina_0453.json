@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_7fb02772-059b-4a13-80cf-c237f25adc83",
+    "originalId": "7fb02772-059b-4a13-80cf-c237f25adc83",
+    "statement": "Homem, 59 anos, tabagista, hipertenso, apresenta dor torácica súbita há 90 minutos. O ECG mostra supradesnivelamento do segmento ST em parede anterior. Ele está em um hospital do interior, e o centro de referência mais próximo para angioplastia fica a 2 horas de distância de ambulância. Qual a conduta imediata mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transferir o paciente para o centro de referência após administrar AAS e Clopidogrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar AAS, Clopidogrel, Enoxaparina e realizar trombólise imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar trombólise imediata, evitando outras terapias antitrombóticas pelo risco de sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Seriar troponina para definir necessidade de transporte para o centro de referência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro clínico e eletrocardiográfico clássico de Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST) em parede anterior, com 90 minutos de evolução. O ponto crucial da questão é decidir a estratégia de reperfusão baseada na logística e no tempo de transporte.\n\nAlternativa A: Incorreta. As diretrizes nacionais e internacionais estabelecem que a angioplastia primária (estratégia invasiva) é preferível, desde que possa ser realizada em até 120 minutos após o diagnóstico. Como o hospital de referência fica a 2 horas (120 minutos) de distância apenas de deslocamento, o tempo total até a abertura do vaso certamente excederá esse limite. Nesse cenário, a transferência imediata sem a realização de trombólise no local de origem atrasa perigosamente a reperfusão.\n\nAlternativa B: Correta. Quando o tempo previsto para a realização da angioplastia primária é superior a 120 minutos, a conduta de escolha é a estratégia fármaco-invasiva, iniciando-se a trombólise química no hospital sem hemodinâmica (idealmente nos primeiros 30 minutos). Para o sucesso da terapia e prevenção de reoclusão, o fibrinolítico deve ser obrigatoriamente administrado em conjunto com a dupla antiagregação plaquetária (AAS + Clopidogrel) e anticoagulação plena (geralmente com Enoxaparina).\n\nAlternativa C: Incorreta. Embora o fibrinolítico seja o agente responsável pela lise do trombo agudo, ele não substitui a necessidade das outras terapias antitrombóticas. O uso de AAS, Clopidogrel e anticoagulantes é fundamental para evitar a propagação do trombo e a reoclusão coronariana precoce. O risco de sangramento é inerente ao tratamento, mas o benefício na redução de mortalidade é amplamente superior na ausência de contraindicações.\n\nAlternativa D: Incorreta. O diagnóstico de IAMCSST é firmado com a clínica de dor torácica e as alterações no ECG. Aguardar o resultado de biomarcadores (troponina) para definir a conduta é um erro grave, pois retarda a reperfusão e aumenta a perda de miocárdio viável. No infarto com supra de ST, não se espera troponina para tratar.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  },
+  {
+    "id": "AJUDA_7fb2e310-3dbe-488c-8209-da3653ea4277",
+    "originalId": "7fb2e310-3dbe-488c-8209-da3653ea4277",
+    "statement": "Paciente, 45 anos, apresenta quadro de hematêmese e melena. Endoscopia digestiva alta realizada na urgência identifica tumor de, aproximadamente, 3 cm, recoberto por mucosa normal, com umbilicação central, em fundo gástrico, com sinais de sangramento recente. Não foi realizada biópsia. Em face do exposto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O paciente deve ser submetido à gastrectomia com linfadenectomia a D2, na urgência, considerando a alta probabilidade de câncer gástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se encaminhar o paciente para radioterapia, para realizar radioterapia hemostática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paciente jovem, com suspeita de câncer gástrico. Deve-se suspeitar de síndrome de Lynch.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Biópsia da superfície do nódulo pode resultar em falso negativo, uma vez que a lesão pode ser subepitelial.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA descrição de um tumor de 3 cm no fundo gástrico, recoberto por mucosa normal e com umbilicação central (sinal do vulcão), é clássica de uma lesão subepitelial. O principal diagnóstico diferencial para esse achado é o GIST (Tumor Estromal Gastrointestinal), embora outros tumores mesenquimais como leiomiomas ou schwannomas também possam apresentar esse aspecto.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A gastrectomia com linfadenectomia a D2 é o tratamento padrão para o adenocarcinoma gástrico (câncer gástrico comum), que se origina na mucosa. No caso descrito, a lesão é subepitelial. Se o diagnóstico for GIST, a disseminação linfonodal é rara, e o tratamento cirúrgico preconizado é a ressecção em cunha com margens livres, sem a necessidade de linfadenectomia radical. Além disso, uma gastrectomia D2 na urgência sem diagnóstico definido seria uma conduta excessivamente agressiva.\n\nAlternativa B (Incorreta): A radioterapia hemostática é reservada para pacientes com sangramento decorrente de neoplasias malignas avançadas e irressecáveis, ou para pacientes sem condições cirúrgicas. Não é o tratamento inicial para uma lesão de 3 cm que pode ser curada com cirurgia.\n\nAlternativa C (Incorreta): A síndrome de Lynch (câncer colorretal hereditário não polipoide) aumenta o risco de adenocarcinoma gástrico, mas esse tumor geralmente se manifesta como lesões vegetantes ou ulceradas da mucosa, e não como uma massa subepitelial com mucosa íntegra. Não há elementos na questão que sugiram essa síndrome hereditária.\n\nAlternativa D (Correta): Esta é a alternativa correta. Como a lesão está localizada abaixo da mucosa (camada submucosa ou muscular própria), as biópsias endoscópicas convencionais com pinça costumam alcançar apenas a mucosa normal que recobre o tumor. Por esse motivo, o resultado frequentemente vem como \"mucosa gástrica normal\" ou \"gastrite crônica leve\", o que configura um falso negativo, já que a pinça não atingiu o tecido tumoral subjacente. Para o diagnóstico histológico dessas lesões, muitas vezes são necessárias técnicas como a ecoendoscopia com punção por agulha fina (FNA) ou biópsias por escavação (\"well biopsy\").",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  },
+  {
+    "id": "AJUDA_7fb6829f-8ef2-473c-9789-1abfef0f3339",
+    "originalId": "7fb6829f-8ef2-473c-9789-1abfef0f3339",
+    "statement": "Dona Maria, de 72 anos, viúva e moradora de uma área rural, recebe a visita da equipe de saúde da família após sua filha, que mora em outra cidade, expressar preocupação sobre a sua saúde. Maria vive sozinha, mas mantém a casa limpa e a horta produtiva, embora nos últimos meses sinta um cansaço progressivo. Durante a conversa, ela relata que não tem muito apetite, sente-se desanimada e com dores nas pernas, o que a impede de cuidar da horta como antes. Refere que a filha tentou convencê-la a se mudar, mas ela não quer, pois se sente \"inútil\" longe de suas atividades. O exame físico revela uma paciente orientada, desnutrida, com palidez cutânea, edema de membros inferiores 1+/4+ e pressão arterial de 155 x 95 mmHg.\n\nConsiderando o caso de Dona Maria e a abordagem da equipe de saúde da família, qual a estratégia de cuidado mais adequada a ser implementada na primeira visita, visando uma intervenção integral e humanizada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Focar na prescrição de medicamentos anti-hipertensos para controlar a pressão arterial elevada de Dona Maria, agendar exames laboratoriais de rotina e solicitar uma avaliação da nutricionista, priorizando a estabilização das condições biológicas mais evidentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar Dona Maria para um geriatra e para um serviço de assistência social, dividindo a responsabilidade do acompanhamento complexo com especialistas e para a rede de apoio, pois o caso exige uma abordagem multifacetada para melhor resolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Valorizar a escuta ativa de suas queixas e percepções, tanto físicas quanto emocionais, para compreender o significado da perda de suas atividades. Além disso, estabelecer, junto com ela e a filha, um plano de cuidados gradual e compartilhado, incluindo orientações nutricionais e de autocuidado, e monitoramento da pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar imediatamente a administração de suplementos alimentares e solicitar a acompanhamento domiciliar, dado o quadro de desnutrição e desânimo, a fim de garantir uma recuperação mais rápida e monitorada, considerando o desejo de Dona Maria de manter sua autonomia, na própria casa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO:\nO caso traz uma paciente idosa residente em área rural com sinais e sintomas biopsicossociais: cansaço progressivo, inapetência, desânimo, queixas álgicas, palidez, edema em membros inferiores, desnutrição e níveis pressóricos alterados, associados ao medo de perder sua autonomia e funcionalidade. A questão avalia a competência do médico na Atenção Primária à Saúde em aplicar o Método Clínico Centrado na Pessoa e o princípio da Integralidade no primeiro atendimento domiciliar.\n\nANALISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): Adota uma postura estritamente biomédica e reducionista. Em uma primeira visita, iniciar anti-hipertensivo imediatamente frente a uma medida isolada de pressão arterial, sem antes contextualizar a paciente, rastrear causas secundárias ou instituir medidas não farmacológicas e monitorização, desconsidera o sofrimento emocional e a perda de funcionalidade, fragmentando o cuidado.\n\nAlternativa B (Incorreta): O encaminhamento imediato e indiscriminado para a atenção secundária (geriatria) e assistência social transfere precipitadamente a responsabilidade da Equipe de Saúde da Família, que deve ser a coordenadora do cuidado e a principal resolvedora dos problemas de saúde da comunidade. O vínculo e o plano terapêutico inicial devem ser estabelecidos na atenção primária antes de se considerar a necessidade de encaminhamentos.\n\nAlternativa C (Correta): Aplica de forma plena os princípios da Medicina de Família e Comunidade. A escuta ativa permite compreender a experiência da doença para a paciente, respeitando sua autonomia e o valor que atribui à sua rotina e horta. A pactuação de um plano de cuidados compartilhado entre equipe, paciente e familiar, associada ao monitoramento clínico e orientações nutricionais graduais, garante segurança biológica sem negligenciar a dimensão psicossocial.\n\nAlternativa D (Incorreta): Prescrever suplementação alimentar de forma imediata sem uma investigação etiológica da perda de peso, da inapetência e da palidez (que podem decorrer de quadro depressivo, anemia, neoplasia ou déficit socioeconômico) é uma conduta empírica precipitada. Além disso, a alternativa não prioriza o estabelecimento de vínculo e a pactuação de metas com a paciente.\n\nGABARITO: Alternativa C.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS",
+      "Hipertensão Arterial Sistêmica",
+      "Saúde do Idoso",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  },
+  {
+    "id": "AJUDA_7fbaa10e-4024-4a54-8b9d-aa1d3426d8e2",
+    "originalId": "7fbaa10e-4024-4a54-8b9d-aa1d3426d8e2",
+    "statement": "Homem, 21 anos, admitido com dor aguda em bolsa testicular direita de inicio ha duas horas. Nega disúria, polaciuria ou nicturia. Nega alteração na cor, odor e aspecto da urina. Previamente hígido, vida sexual ativa, várias parceiras, sem uso de preservativo. Refere dor, afebril. Testículos tópicos, direito mais alto que esquerdo, e com hiperemia e dor em escroto a direita. Qual medida de propedêutica ou semiotécnica poderia contribuir para o diagnóstico nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sinal de Chutro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sinal de Giordano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sinal de Prehn.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sinal de Murphy.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um quadro clássico de escroto agudo em um paciente jovem. A dor súbita, o início há apenas duas horas e a posição mais elevada do testículo direito (Sinal de Angel) sugerem fortemente o diagnóstico de torção testicular, que é uma emergência urológica. O principal diferencial nesse cenário é a orquiepididimite.\n\nAlternativa (c): Correta. O Sinal de Prehn é a manobra semiotécnica utilizada para auxiliar na diferenciação entre torção testicular e epididimite aguda. Consiste na elevação manual do escroto afetado. Quando a dor alivia com a elevação, dizemos que o Sinal de Prehn é positivo, o que sugere um processo inflamatório, como a epididimite. Quando a dor não melhora ou até piora com a elevação, o sinal é negativo, o que aponta para torção testicular.\n\nAlternativa (a): Incorreta. O Sinal de Chutro está relacionado à apendicite aguda. Ele se caracteriza pelo desvio do umbigo para a direita devido à contratura da musculatura abdominal na fossa ilíaca direita.\n\nAlternativa (b): Incorreta. O Sinal de Giordano é pesquisado através da punho-percussão na região lombar (loja renal). Se o paciente referir dor aguda (estremecimento), o sinal é positivo, sendo indicativo de processos inflamatórios renais, como a pielonefrite.\n\nAlternativa (d): Incorreta. O Sinal de Murphy é a interrupção súbita da inspiração durante a palpação profunda do ponto cístico (no hipocôndrio direito). É o sinal semiológico clássico da colecistite aguda.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  },
+  {
+    "id": "AJUDA_7fcd993d-20b9-4385-8d11-4d855d4688fc",
+    "originalId": "7fcd993d-20b9-4385-8d11-4d855d4688fc",
+    "statement": "Um estudo transversal avaliou a associação entre tempo de tela (>4h/dia) e obesidade em adolescentes. Os autores calcularam um OR ajustado de 1,9 (IC 95%: 1,2-3,0). Qual interpretação é a mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adolescentes com >4h de tela têm 1,9 vezes mais risco de obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O OR indica que tempo de tela causa obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A associação é estatisticamente insignificante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O IC indica que não há efeito clinicamente relevante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A associação é plausível, mas não permite inferência causal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão exige conhecimento sobre delineamentos de estudos epidemiológicos, medidas de associação e interpretação de intervalos de confiança.\n\nAnálise do Estudo: \nO estudo é transversal (seccional), o que significa que a exposição (tempo de tela) e o desfecho (obesidade) são coletados simultaneamente. Esse desenho de estudo fornece uma \"fotografia\" do momento, sendo ideal para calcular a prevalência, mas limitado para estabelecer relações de causa e efeito.\n\nAlternativa a) Incorreta. O termo \"risco\" é tecnicamente reservado para estudos longitudinais (como coortes ou ensaios clínicos), que medem a incidência de novos casos ao longo do tempo. Em estudos transversais, utilizamos o Odds Ratio (OR) ou a Razão de Prevalência. Embora, na prática, muitos usem os termos como sinônimos, em provas de residência essa distinção é fundamental.\n\nAlternativa b) Incorreta. Uma associação estatística, por si só, não prova causalidade. Para inferir que o tempo de tela \"causa\" obesidade, seriam necessários critérios de Bradford Hill, especialmente a temporalidade (garantir que a exposição veio antes do desfecho), o que o estudo transversal não permite.\n\nAlternativa c) Incorreta. A associação é estatisticamente significativa. Para um Odds Ratio (OR) ser significativo, o intervalo de confiança (IC 95%) não pode conter o valor 1,0 (que representa a ausência de associação). Como o IC deste estudo é de 1,2 a 3,0 (todo acima de 1), existe significância estatística.\n\nAlternativa d) Incorreta. O IC mostra que, no pior cenário da estimativa, a chance de obesidade é 20% maior (1,2) e, no melhor cenário, é 3 vezes maior (3,0). Um aumento de 90% na chance (OR 1,9) é considerado um efeito clinicamente relevante em saúde pública.\n\nAlternativa e) Correta. Esta é a interpretação mais técnica e prudente. Existe uma associação entre as variáveis e ela faz sentido biológico e comportamental (é plausível); porém, devido ao viés de temporalidade típico dos estudos transversais (não sabemos se o adolescente é obeso porque vê muita tela ou se vê muita tela porque, devido à obesidade, tem hábitos mais sedentários), não podemos afirmar que há uma relação causal.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  },
+  {
+    "id": "AJUDA_7fd33201-cfa4-4443-b2d7-7e5f579a6c72",
+    "originalId": "7fd33201-cfa4-4443-b2d7-7e5f579a6c72",
+    "statement": "Sobre as crioglobulinemias, analise as seguintes assertivas:\n\nI. As do tipo I são monoclonais, não têm atividade do fator reumatoide e estão associadas a neoplasias malignas hematopoiéticas, como o mieloma.\nII. As dos tipos II e III podem estar relacionadas à vasculite sistêmica, envolvendo vasos de pequeno calibre.\nIII. A infecção pelo vírus da hepatite B é responsável por pelo menos 80% dos casos de vasculite associada à crioglobulina mista.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das assertivas:\n\nAssertiva I está correta. A crioglobulinemia tipo I é composta por uma única imunoglobulina monoclonal (geralmente IgM ou IgG). Não apresenta atividade de fator reumatoide (que necessita da interação entre duas imunoglobulinas) e suas manifestações clínicas decorrem principalmente de hiperviscosidade e oclusão vascular. Está classicamente associada a doenças linfoproliferativas e hematológicas malignas, como o mieloma múltiplo e a macroglobulinemia de Waldenstrom.\n\nAssertiva II está correta. Os tipos II (monoclonal IgM contra IgG policlonal) e III (policlonal IgM contra IgG policlonal) são as formas mistas. Nessas variantes, a formação e deposição de imunocomplexos nas paredes vasculares ativam a cascata do complemento, desencadeando uma vasculite leucocitoclástica sistêmica de pequenos vasos, que cursa frequentemente com púrpura palpável, artralgia, fraqueza (tríade de Meltzer), glomerulonefrite e neuropatia periférica.\n\nAssertiva III está incorreta. O principal agente etiológico associado à crioglobulinemia mista (tipos II e III) em mais de 80% a 90% dos casos é o vírus da hepatite C (HCV), e não o vírus da hepatite B (HBV). O HBV, por sua vez, está historicamente associado à poliarterite nodosa (PAN), uma vasculite de vasos de médio calibre.\n\nAnálise das alternativas:\n\nAlternativa a: Correta. As assertivas I e II trazem conceitos verdadeiros sobre a fisiopatologia e a clínica das crioglobulinemias, enquanto a assertiva III erra o vírus causal predominante.\n\nAlternativa b: Incorreta. A assertiva III está errada, pois a etiologia viral predominante da crioglobulinemia mista é a hepatite C.\n\nAlternativa c: Incorreta. A assertiva I é verdadeira e a assertiva III é falsa.\n\nAlternativa d: Incorreta. A presença da assertiva III invalida a opção.\n\nGabarito: Letra a.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  },
+  {
+    "id": "AJUDA_7fd67e49-6332-4ea4-980b-f8b8df397529",
+    "originalId": "7fd67e49-6332-4ea4-980b-f8b8df397529",
+    "statement": "A cetoacidose diabética (CAD) é uma complicação aguda que ocorre tipicamente no diabetes tipo 1. Sobre esta situação assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O bicarbonato de sódio pode ser utilizado nas CAD graves com pH < 7,0.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A avaliação dos níveis de potássio sempre deve ser feita antes da insulinização.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A administração da insulina EV pode ser suspensa imediatamente ao se aplicar a primeira dose SC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A gravidade da CAD pode ser classificada em leve, moderada ou grave, sendo baseada na glicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O edema cerebral, complicação mais temida da CAD, deve ser tratado com furosemida e dexametasona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A cetoacidose diabética (CAD) é uma emergência médica que exige manejo preciso para evitar complicações fatais. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa A (Incorreta): Embora o uso de bicarbonato de sódio seja controverso na CAD, as diretrizes da American Diabetes Association (ADA) e da Sociedade Brasileira de Diabetes (SBD) recomendam sua consideração apenas em casos de acidose extrema, com pH inferior a 6,9. O valor de 7,0 citado na alternativa é frequentemente utilizado em protocolos antigos ou menos rigorosos, mas, para fins de prova, o ponto de corte oficial para intervenção é pH < 6,9. Além disso, o uso indiscriminado pode causar hipocalemia, acidose paradoxal do sistema nervoso central e edema cerebral.\n\nAlternativa B (Correta): Esta é a conduta de segurança mais crítica no manejo da CAD. A insulina promove o influxo de potássio para o meio intracelular. Se o paciente já apresenta hipocalemia (K+ < 3,3 mEq/L) e recebe insulina, os níveis séricos de potássio podem cair bruscamente, levando a arritmias cardíacas fatais e parada cardiorrespiratória. Portanto, os níveis de potássio devem ser conhecidos antes de iniciar a insulinoterapia: se baixos, deve-se repor potássio antes da insulina; se normais, repor junto com a insulina; e se altos, aguardar para repor.\n\nAlternativa C (Incorreta): A insulina intravenosa (regular) tem uma meia-vida muito curta (minutos). Ao aplicar a primeira dose de insulina subcutânea (SC), geralmente de ação intermediária ou lenta, leva-se um tempo para que ela atinja níveis plasmáticos eficazes. Por isso, deve haver uma sobreposição (overlap) de 1 a 2 horas entre a aplicação da primeira dose SC e o desligamento da bomba de infusão IV, evitando o escape glicêmico e a recorrência da cetose.\n\nAlternativa D (Incorreta): A classificação de gravidade da CAD (leve, moderada ou grave) baseia-se primordialmente no grau da acidose metabólica (pH arterial e nível de bicarbonato) e no nível de consciência (Escala de Coma de Glasgow). A glicemia, embora geralmente elevada (> 250 mg/dL), não dita a gravidade do quadro, pois existem inclusive casos de cetoacidose euglicêmica.\n\nAlternativa E (Incorreta): O edema cerebral é a complicação aguda mais temida, especialmente em crianças. O tratamento de escolha envolve o uso de agentes osmóticos, como o manitol ou a solução salina hipertônica (3%). O uso de dexametasona não tem evidência de benefício nesse contexto, e a furosemida poderia agravar a desidratação e a hipovolemia comuns na CAD.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  },
+  {
+    "id": "AJUDA_7ffc2fa6-b4e3-41d6-9a57-9f138ba4b076",
+    "originalId": "7ffc2fa6-b4e3-41d6-9a57-9f138ba4b076",
+    "statement": "A avaliação do crescimento requer a distinção entre variantes normais e patológicas. Analise as afirmativas a seguir sobre a Baixa Estatura.\n\nI. A deficiência do gene SHOX (Short Stature Homeobox), localizado na região pseudoautossômica dos cromossomos sexuais, é a causa da baixa estatura na Discondrosteose de Léri-Weill e contribui significativamente para o déficit estatural na Síndrome de Turner.\nII. O hipotireoidismo adquirido na infância manifesta-se tipicamente com parada ou desaceleração importante da velocidade de crescimento, associada a um avanço da idade óssea em relação à idade cronológica.\nIII. Na Puberdade Precoce Verdadeira (Central), a criança apresenta aceleração inicial do crescimento e avanço da idade óssea, o que paradoxalmente resulta em baixa estatura final devido ao fechamento epifisário prematuro.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Afirmativa I: Esta afirmativa está correta. O gene SHOX (Short Stature Homeobox) localiza-se na região pseudoautossômica dos cromossomos X e Y. Isso significa que, em condições normais, tanto homens quanto mulheres possuem duas cópias funcionais desse gene. A deficiência de uma dessas cópias (haploinsuficiência) é o principal mecanismo para a baixa estatura na Síndrome de Turner (onde há perda de um cromossomo X) e é a causa da Discondrosteose de Leri-Weill, uma displasia óssea caracterizada por baixa estatura e deformidade de Madelung nos punhos.\n\nAnálise da Afirmativa II: Esta afirmativa está incorreta. Embora o hipotireoidismo adquirido na infância realmente cause uma desaceleração ou parada no crescimento, o impacto na maturação óssea é oposto ao descrito. O hormônio tireoidiano é essencial para a maturação dos condrócitos; portanto, sua falta leva a um atraso na idade óssea em relação à idade cronológica, e não a um avanço. O avanço da idade óssea é característico de condições com excesso de hormônios sexuais, como a puberdade precoce.\n\nAnálise da Afirmativa III: Esta afirmativa está correta. Na puberdade precoce central, ocorre a ativação antecipada do eixo hipotálamo-hipófise-gônadas, elevando os níveis de esteroides sexuais. Esses hormônios estimulam o crescimento linear imediato (estirão precoce) e a maturação acelerada das cartilagens de crescimento. Esse avanço desproporcional da idade óssea leva ao fechamento prematuro das epífises, o que interrompe o crescimento cedo demais e reduz a estatura final adulta em comparação com o potencial genético da criança.\n\nConclusão: Apenas as afirmativas I e III estão corretas.\n\nAlternativa correta: Letra A.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  },
+  {
+    "id": "AJUDA_800cf544-3c27-4aa8-9c81-ef9f74f360e1",
+    "originalId": "800cf544-3c27-4aa8-9c81-ef9f74f360e1",
+    "statement": "Mulher de 59 anos, com sintomas de epigastralgia e plenitude pós-prandial, foi submetida à endoscopia digestiva, que evidenciou esofagite classe A de Los Angeles, linha Z coincidente com o pinçamento diafragmático e estômago normal. A investigação foi complementada com TC de tórax e abdômen, indicando herniação do estômago para o tórax. A hérnia hiatal descrita é classificada como tipo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão exige o conhecimento da classificação anatômica das hérnias de hiato, que são divididas em quatro tipos principais. O ponto fundamental para a resolução é a localização da transição esofagogástrica (linha Z) em relação ao hiato diafragmático (pinçamento).\n\nAnálise do caso clínico:\nA endoscopia revelou que a linha Z está coincidente com o pinçamento diafragmático. Isso indica que a junção esofagogástrica (JEG) está em sua posição anatômica normal, ao nível do diafragma. No entanto, a tomografia computadorizada mostrou que parte do estômago está herniada para o tórax. Essa configuração, em que a JEG está fixa, mas o fundo gástrico se projeta para cima ao lado do esôfago, caracteriza a hérnia paraesofágica verdadeira.\n\nExplicação das alternativas:\n\na) Incorreta. A hérnia tipo IV ocorre quando, além do estômago, outros órgãos abdominais (como cólon, baço, intestino delgado ou pâncreas) também se encontram no interior do saco herniário no tórax. A questão menciona apenas a herniação do estômago.\n\nb) Incorreta. A hérnia tipo III é a hérnia mista. Ela combina características do tipo I e do tipo II. Nesse caso, tanto a junção esofagogástrica quanto o fundo gástrico estão deslocados para cima do diafragma. Na questão, a linha Z está no lugar correto (coincidente com o pinçamento), o que descarta o tipo III.\n\nc) Correta. A hérnia tipo II, ou hérnia paraesofágica verdadeira, ocorre quando a junção esofagogástrica permanece fixada ao ligamento frenoesofágico (mantendo a linha Z ao nível do diafragma), mas o fundo gástrico hernia para o tórax através do hiato. É exatamente o que foi descrito no enunciado.\n\nd) Incorreta. A hérnia tipo I, ou hérnia por deslizamento, é a mais comum (cerca de 95% dos casos). Nela, a junção esofagogástrica desliza para cima do hiato diafragmático. Portanto, na endoscopia, a linha Z estaria acima do pinçamento diafragmático, o que contraria o achado do exame descrito.\n\nResumo da classificação:\nTipo I (Deslizamento): JEG acima do diafragma.\nTipo II (Paraesofágica): JEG no nível do diafragma, mas fundo gástrico no tórax.\nTipo III (Mista): JEG e fundo gástrico no tórax.\nTipo IV (Gigante/Complexa): Estômago e outros órgãos no tórax.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  },
+  {
+    "id": "AJUDA_801c1e12-eea1-4202-9901-62d4d5668b5a",
+    "originalId": "801c1e12-eea1-4202-9901-62d4d5668b5a",
+    "statement": "Criança, sexo masculino, 7 anos de idade, portadora de refluxo vesicoureteral bilateral, retornou hoje ao hospital por febre de até 38,8 °C. No exame físico inicial, o paciente está letárgico e sonolento, apresenta FC de 140 bpm, FR de 26 irpm, PA de 90×40 mmHg, SpO2 de 96% em ar ambiente, ausculta pulmonar e cardíaca normais, fígado no rebordo costal direito, perfusão com retorno rápido (< 1 segundo), pulsos amplos, escore de coma de Glasgow 14, pupilas isofotorreagentes. Temperatura atual de 37,2 °C, após uma hora do antitérmico administrado em casa. O paciente recebeu alta há dois dias do hospital, onde esteve internado em leito de terapia intensiva pediátrico devido a quadro de infecção do trato urinário grave por Escherichia coli sensível aos antibióticos testados. Durante internação, ficou com sonda vesical de demora e cateter venoso central, retirado no dia da alta, sem sinais flogísticos no exame físico de hoje. Considerando os dados apresentados, a conduta indicada nesse momento é",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar expansão volêmica com cristaloide e antibiótico de espectro estendido para infecção nosocomial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "iniciar fluidoterapia em velocidade de manutenção e cefalosporina de terceira geração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aguardar lactato, coagulograma, D-dímero e fibrinogênio para definir necessidade de antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aguardar coleta e resultados de sedimento urinário para definir necessidade de antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO paciente de 7 anos apresenta sinais clínicos evidentes de choque séptico distributivo (choque quente), caracterizado por taquicardia (140 bpm), taquipneia (26 irpm), pressão de pulso alargada com hipotensão diastólica (90x40 mmHg), pulsos amplos, tempo de enchimento capilar rápido (< 1 segundo) e disfunção neurológica leve (letargia, Glasgow 14). \n\nAlém disso, o histórico de internação recente em Unidade de Terapia Intensiva (alta há 48 horas) e o uso de dispositivos invasivos (cateter venoso central e sonda vesical) colocam o paciente em alto risco para Infecção Relacionada à Assistência à Saúde (IRAS), provocada por patógenos nosocomiais e potencialmente resistentes. O manejo do choque séptico pediátrico exige intervenção rápida na primeira hora, com ressuscitação volêmica vigorosa e início imediato de antibioticoterapia empírica de amplo espectro.\n\nJUSTIFICATIVA DAS ALTERNATIVAS:\n\nAlternativa A (CORRETA): O choque séptico pediátrico exige expansão volêmica imediata com cristaloide em bólus (10 a 20 mL/kg) para restabelecer a perfusão tecidual e a pressão arterial. Simultaneamente, deve-se iniciar antibiótico de espectro estendido cobrindo patógenos nosocomiais/multirresistentes, visto que a criança esteve internada em UTI até dois dias antes e utilizou dispositivos invasivos.\n\nAlternativa B (INCORRETA): A fluidoterapia em velocidade de manutenção é totalmente inadequada para pacientes em choque, os quais necessitam de ressuscitação volêmica com bólus rápidos de cristaloides. Além disso, as cefalosporinas de terceira geração têm espectro voltado para infecções comunitárias e podem não cobrir adequadamente microrganismos hospitalares resistentes selecionados durante a internação recente.\n\nAlternativa C (INCORRETA): O choque séptico é uma emergência tempo-dependente. A coleta de exames é fundamental para monitoramento e avaliação de disfunções orgânicas, mas o início da ressuscitação volêmica e da antibioticoterapia nunca deve ser postergado à espera de resultados laboratoriais.\n\nAlternativa D (INCORRETA): Embora o paciente tenha refluxo vesicoureteral e a infecção urinária seja uma hipótese provável, jamais se deve aguardar os resultados de exames de urina ou culturas para iniciar o tratamento empírico em uma criança com choque séptico manifestado. As culturas devem ser coletadas rapidamente, mas o antibiótico deve ser infundido na primeira hora.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)",
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Emergências Pediátricas",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:09.382Z"
+  }
+]

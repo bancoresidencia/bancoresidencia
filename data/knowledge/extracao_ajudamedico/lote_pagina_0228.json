@@ -1,0 +1,516 @@
+[
+  {
+    "id": "AJUDA_3f92ac66-eca1-436f-b76d-827ca680d6fe",
+    "originalId": "3f92ac66-eca1-436f-b76d-827ca680d6fe",
+    "statement": "Menino, 10 anos de idade, caiu em pista de skate, enquanto descia rampa de cerca de 1 metro de altura. Perdeu a consciência de imediato, foi transportado para a Emergência, em carro particular. Apresenta laceração em couro cabeludo, em região parietal direita e fratura com desvio em antebraço direito. Foi colocado colar cervical, a expansão torácica é simétrica, com ausculta pulmonar e cardíaca sem alterações. O abdome é flácido, sem massas palpáveis. Tem FC = 110 bpm, FR = 24 mrm, PA 100/70 mmHg, SatO2 95%, pulsos palpáveis, Tec = 2 seg. Tem pupilas isocóricas e fotorreagentes, abre os olhos ao ser chamado, está confuso e retira o braço quando se toca o local da fratura. Foram puncionados 2 acessos venosos.\nA seguir, além de avaliação laboratorial da função renal, indica-se a realização de",
+    "options": [
+      {
+        "id": "A",
+        "text": "tomografia de crânio e de coluna cervical.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "tipagem sanguínea e iniciar soro de manutenção com volume de 1/3 da necessidade diária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sequência rápida para intubação nasotraqueal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "infusão de soro a 25 graus para diminuir o consumo de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "inserção de cateter para monitoração de pressão intracraniana e redução da fratura de antebraço em centro cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda a conduta inicial no trauma pediátrico, seguindo os protocolos do ATLS (Advanced Trauma Life Support) e do PALS (Pediatric Advanced Life Support). O paciente apresenta um quadro de traumatismo cranioencefálico (TCE) moderado e politraumatismo após queda de altura.\n\nAnálise clínica:\nO paciente apresenta Escala de Coma de Glasgow de 11 (Abertura ocular ao chamado = 3; Resposta verbal confusa = 4; Resposta motora de retirada à dor = 4). Sinais vitais estão compensados para a idade, embora no limite superior da frequência cardíaca, o que pode ser justificado pela dor da fratura e pelo estresse do trauma.\n\nExplicação das alternativas:\n\nAlternativa (a) CORRETA: O paciente apresenta indicação clara de Tomografia de Crânio devido ao mecanismo de trauma (queda de rampa), perda de consciência inicial e alteração do estado mental atual (Glasgow 11). Segundo os critérios de PECARN (para crianças acima de 2 anos), um escore de Glasgow abaixo de 15 ou história de perda de consciência associada a confusão mental exige imagem. A Tomografia de Coluna Cervical também é necessária, pois o paciente foi transportado em carro particular (sem imobilização pré-hospitalar adequada), apresenta alteração do nível de consciência (o que impede a avaliação clínica confiável da coluna) e sofreu um trauma de energia considerável.\n\nAlternativa (b) INCORRETA: Embora a tipagem sanguínea possa ser solicitada em grandes traumas, a recomendação de iniciar soro de manutenção com apenas 1/3 da necessidade diária está errada. No trauma, a prioridade é a estabilização hemodinâmica e a manutenção da euvolemia. Além disso, essa conduta ignora a necessidade prioritária de diagnóstico das lesões neurológicas.\n\nAlternativa (c) INCORRETA: A intubação nasotraqueal é contraindicada em pacientes com suspeita de trauma de base de crânio (sugerido pela laceração parietal e mecanismo de queda). Além disso, a indicação clássica de proteção de via aérea por rebaixamento de consciência ocorre com Glasgow menor ou igual a 8. O paciente em questão tem Glasgow 11 e mantém saturação de 95%.\n\nAlternativa (d) INCORRETA: No trauma, a tríade letal (acidose, coagulopatia e hipotermia) deve ser evitada a todo custo. Infundir líquidos a 25 graus induziria hipotermia, o que piora o prognóstico do paciente, aumenta o sangramento e prejudica a função enzimática. Os fluidos devem ser aquecidos, se necessário.\n\nAlternativa (e) INCORRETA: A monitorização da pressão intracraniana (PIC) é reservada para casos de TCE grave (Glasgow entre 3 e 8) com alterações tomográficas específicas. O tratamento da fratura de antebraço é secundário à estabilização do quadro neurológico e à avaliação de lesões que coloquem a vida em risco (ABCDE do trauma). Primeiro deve-se diagnosticar a extensão da lesão cerebral antes de encaminhar ao centro cirúrgico para procedimentos ortopédicos.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Emergências Pediátricas",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  },
+  {
+    "id": "AJUDA_3fa071f4-6376-4093-bf55-f9fb9ece3c5d",
+    "originalId": "3fa071f4-6376-4093-bf55-f9fb9ece3c5d",
+    "statement": "Paciente com história de doença de Crohn apresenta dor abdominal intensa, febre e sinais de peritonite. Qual é a complicação mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perfuração intestinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apendicite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colite pseudomembranosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Isquemia mesentérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO TÉCNICO\n\nA questão aborda as complicações agudas da Doença de Crohn, uma patologia inflamatória crônica que se caracteriza pelo acometimento transmural do trato gastrointestinal, ou seja, atinge todas as camadas da parede intestinal.\n\nAlternativa a: Correta. Devido ao caráter transmural da inflamação na Doença de Crohn, podem ocorrer úlceras profundas que atravessam a serosa, resultando em perfuração intestinal para a cavidade peritoneal livre. O extravasamento de conteúdo entérico causa peritonite aguda, manifestada por dor abdominal súbita, febre e sinais de irritação peritoneal ao exame físico (como defesa abdominal e dor à descompressão brusca). Embora a formação de fístulas e abscessos seja mais frequente, a perfuração livre é uma complicação grave possível.\n\nAlternativa b: Incorreta. Embora a Doença de Crohn possa acometer a região ileocecal e mimetizar clinicamente uma apendicite aguda (quadro conhecido como pseudoapendicite), a história prévia de Crohn e a presença de sinais de peritonite generalizada tornam a perfuração de uma alça intestinal inflamada a hipótese diagnóstica mais provável e diretamente relacionada à patologia de base.\n\nAlternativa c: Incorreta. A colite pseudomembranosa é causada pela toxina da bactéria Clostridioides difficile, frequentemente associada ao uso prévio de antibióticos. O quadro clínico típico envolve diarreia profusa, febre e dor abdominal, mas a evolução para peritonite só ocorre em situações críticas de megacólon tóxico ou perfuração secundária, sendo menos provável que a perfuração direta por Crohn no cenário descrito.\n\nAlternativa d: Incorreta. A isquemia mesentérica apresenta-se inicialmente com dor abdominal intensa e desproporcional ao exame físico (abdome inicialmente inocente). Sinais de peritonite surgem apenas em fases tardias, após a necrose da alça intestinal. Embora pacientes com doenças inflamatórias intestinais tenham maior risco de eventos tromboembólicos, a fisiopatologia da perfuração transmural é muito mais característica da Doença de Crohn.\n\nGabarito: Letra (a).",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Doença Inflamatória Intestinal",
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  },
+  {
+    "id": "AJUDA_3fa3bf9a-a5c4-4957-99fc-5c9ca20d9687",
+    "originalId": "3fa3bf9a-a5c4-4957-99fc-5c9ca20d9687",
+    "statement": "Sobre a comunicação interatrial, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Geralmente, é causa de cianose discreta em crianças entre o primeiro e o segundo ano de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na maioria dos casos submetidos à correção cirúrgica, não é necessário o emprego de circulação extracorpórea durante a cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É a segunda cardiopatia congênita mais detectada na idade adulta, depois da persistência do canal arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Entre todas as cardiopatias congênitas com shunt arteriovenoso, é a que costuma ter evolução mais benigna.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa (a) está incorreta porque a Comunicação Interatrial (CIA) é uma cardiopatia congênita acianótica. O fluxo sanguíneo (*shunt*) ocorre do átrio esquerdo para o átrio direito, ou seja, da esquerda para a direita, o que não provoca cianose. A cianose só apareceria em casos de inversão do *shunt* (da direita para a esquerda) devido à hipertensão pulmonar grave, quadro conhecido como Síndrome de Eisenmenger, que é extremamente raro de ocorrer em crianças tão jovens com essa patologia.\n\nA alternativa (b) está incorreta. A correção cirúrgica convencional da CIA exige a abertura do átrio direito para o fechamento do orifício (seja por sutura direta ou com o uso de um retalho/*patch*). Para que o cirurgião possa realizar o procedimento com o coração aberto, é indispensável o uso de circulação extracorpórea (CEC) para manter a oxigenação e a perfusão dos órgãos. Existe o fechamento percutâneo por cateterismo, mas a alternativa especifica a correção cirúrgica.\n\nA alternativa (c) está incorreta. Na verdade, a CIA é a cardiopatia congênita mais comumente detectada na idade adulta. Isso acontece porque ela costuma ser assintomática durante a infância e a adolescência, permitindo que o indivíduo chegue à fase adulta sem diagnóstico. A persistência do canal arterial costuma ser identificada e tratada muito mais cedo, ainda na pediatria.\n\nA alternativa (d) está correta. Entre as cardiopatias que apresentam *shunt* da esquerda para a direita (como a Comunicação Interventricular e a Persistência do Canal Arterial), a CIA é a que possui a evolução clínica mais lenta e benigna. Os pacientes costumam ser assintomáticos por décadas, e as complicações, como arritmias atriais ou hipertensão pulmonar, geralmente só se manifestam a partir da terceira ou quarta década de vida. Por esse motivo, é considerada a de evolução mais favorável entre os *shunts* arteriovenosos.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  },
+  {
+    "id": "AJUDA_3fa4e985-edad-4f40-a4d4-db025818df71",
+    "originalId": "3fa4e985-edad-4f40-a4d4-db025818df71",
+    "statement": "Uma mulher de 20 anos se queixa de edema generalizado iniciado há 3 semanas, que evoluiu com piora progressiva. Relata hiporexia e astenia nesse período. Desconhece ser portadora de doenças atuais ou prévias e não faz uso de quaisquer medicamentos ou drogas. Ao exame físico, PA: 160 x 90 mmHg, FC: 97 bpm, FR: 22 ipm, SpO2 98% (em ar ambiente). As mucosas estão hipocoradas, ictéricas e hidratadas. Há edema na face, pálpebras, parede abdominal e membros inferiores. Há também ascite e síndrome de derrame pleural. \nExames de laboratório: sangue: Hb: 7,0 g/dL; Hct: 24%; VCM: 98 fL; HCM: 31 pg; CHCM: 32 g/dL; RDW: 18, 3%; leucócitos: 3.400/mm³; neutrófilos segmentados: 1.500/mm³; linfócitos: 700/mm³; Plq.: 201.000/mm³; PCR: 28m g/dL; FAN reagente: 1:320 padrão nuclear homogêneo; anti-DNA reagente; anti-SSA reagente; anti-SSB reagente; anti-Sm reagente; ANCA não reagente; C3: 43 mg/dL (90-170 mg/dL); C4: 10 mg/dL (VR: 12-36 mg/dL); exame de urina: densidade 1.020; pH 6,0; nitrito negativo; proteínas ++++; hemoglobina ++; 4 piócitos/campo, 145 hemácias/campo; presença de cilindros hemáticos. Para investigação da anemia apresentada pela paciente, são solicitados os seguintes exames: LDL: 1150 UI/L (VR: 120-246 UI/L); BT: 4,2 mg/dL; BD: 0,4 mg/dL; reticulócitos: 18%, Coombs direto positivo; ferro sérico: 52 mcg/dL (VR: 65-175 mcg/dL); ferritina 650 ng/mL (VR: 10-291 ng/mL); capacidade total de ligação do ferro: 200 mcg/dL (250-425 mcg/dL).\nA conduta imediata mais adequada para o tratamento da anemia é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "administração de eritropoetina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administração de corticoide;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "reposição de ferro parenteral;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hemotransfusão;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "prescrição de hidroxicloroquina oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico: Trata-se de uma paciente de 20 anos com quadro compatível com Lúpus Eritematoso Sistêmico (LES). O diagnóstico é confirmado pela presença de critérios clínicos e laboratoriais: anasarca e hipertensão sugerindo acometimento renal (nefrite lúpica), FAN reagente em altos títulos (1:320), anti-DNA e anti-Sm positivos, além de hipocomplementemia (C3 e C4 baixos).\n\nAnálise da Anemia: A paciente apresenta Hb de 7,0 g/dL. Os exames complementares revelam reticulocitose (18%), elevação acentuada de LDH (1150 UI/L), hiperbilirrubinemia indireta (BT: 4,2 e BD: 0,4, resultando em BI: 3,8 mg/dL) e Teste de Coombs Direto positivo. Esse conjunto de achados define uma Anemia Hemolítica Autoimune (AHAI), uma manifestação hematológica clássica do LES.\n\nExplicação das alternativas:\n\na) Incorreta. A eritropoetina é utilizada para tratar a anemia da doença renal crônica, causada pela deficiência de produção desse hormônio pelos rins. No caso clínico, embora haja sinais de nefrite, a causa imediata e principal da anemia severa é a destruição periférica das hemácias (hemólise), e não a falta de produção medular.\n\nb) Correta. O tratamento de primeira linha para a Anemia Hemolítica Autoimune (AHAI) são os corticosteroides (como a prednisona ou pulsoterapia com metilprednisolona). Eles atuam reduzindo a produção de autoanticorpos e diminuindo a destruição das hemácias sensibilizadas pelos macrófagos no baço. Como a paciente apresenta um quadro de LES em franca atividade, o corticoide é a conduta imediata para estabilizar tanto a hemólise quanto a inflamação sistêmica e renal.\n\nc) Incorreta. A ferritina da paciente está elevada (650 ng/mL), o que indica que os estoques de ferro estão preservados (e possivelmente aumentados devido à liberação de ferro das hemácias lisadas e ao estado inflamatório). A reposição de ferro não está indicada e não corrigiria o processo hemolítico.\n\nd) Incorreta. A hemotransfusão em casos de AHAI é reservada para situações de instabilidade hemodinâmica ou risco iminente de morte, pois a presença de autoanticorpos dificulta a prova cruzada e pode causar reações transfusionais graves, além de \"alimentar\" o processo de hemólise. A paciente, apesar da anemia, apresenta-se hemodinamicamente estável (PA 160x90 mmHg, FC 97 bpm). O tratamento farmacológico deve ser priorizado.\n\ne) Incorreta. A hidroxicloroquina é um medicamento fundamental no tratamento de manutenção de todos os pacientes com LES, pois reduz o número de crises e melhora a sobrevida a longo prazo. No entanto, ela não tem ação rápida ou potente o suficiente para tratar uma anemia hemolítica aguda e grave, sendo o corticoide a droga de escolha para o manejo imediato.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Anemias",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  },
+  {
+    "id": "AJUDA_3fa66790-72f7-4a51-bb23-b2e62448411c",
+    "originalId": "3fa66790-72f7-4a51-bb23-b2e62448411c",
+    "statement": "Paciente deu entrada no pronto socorro do Hospital de Urgências de Sergipe com queimaduras de segundo grau que atingem a metade posterior do couro cabeludo e da região cervical e a região posterior do tórax. O percentual total da área queimada de seu corpo é de aproximadamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "9%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "13,5%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "18%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "27%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "30%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, utilizamos a Regra dos Nove (Regra de Wallace), que é o método mais prático para estimar a Superfície Corporal Queimada (SCQ) em adultos. De acordo com essa regra, o corpo é dividido em áreas que representam 9% (ou múltiplos de 9) da superfície total.\n\nCálculo da área descrita na questão:\n\n1. Metade posterior do couro cabeludo e da região cervical: A cabeça e o pescoço, como um todo (anterior e posterior), correspondem a 9%. Portanto, a face (anterior) corresponde a 4,5% e a região posterior (nuca e couro cabeludo posterior) corresponde aos outros 4,5%. Como a questão cita a região posterior da cabeça e pescoço, contabilizamos 4,5%.\n\n2. Região posterior do tórax: O tronco posterior completo (dorso e região lombar) corresponde a 18%. Esse valor é subdividido em tronco posterior superior (tórax posterior), que vale 9%, e tronco posterior inferior (região lombar/glúteos, dependendo do esquema), que vale 9%. A questão especifica apenas a região posterior do tórax, totalizando 9%.\n\nSoma total: 4,5% (cabeça/pescoço posterior) + 9% (tórax posterior) = 13,5%.\n\nAnálise das alternativas:\n\na) 9%: Incorreta. Esse valor representaria apenas a região posterior do tórax, ignorando a área da cabeça e pescoço.\n\nb) 13,5%: Correta. Corresponde à soma exata das áreas anatômicas descritas (4,5% da região posterior da cabeça/pescoço + 9% do tórax posterior).\n\nc) 18%: Incorreta. Este valor representaria o tronco posterior completo (tórax e região lombar) ou a cabeça inteira somada a um membro superior, o que não condiz com o enunciado.\n\nd) 27%: Incorreta. Valor muito elevado, que incluiria o tronco posterior completo (18%) mais a cabeça inteira (9%) ou três membros superiores.\n\ne) 30%: Incorreta. Não há correlação direta com as áreas citadas na Regra dos Nove para os segmentos descritos no caso clínico.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  },
+  {
+    "id": "AJUDA_3faabb7f-0b05-420c-8d54-2261085bb2a0",
+    "originalId": "3faabb7f-0b05-420c-8d54-2261085bb2a0",
+    "statement": "Menino de 10 dias de vida é trazido ao pronto-socorro por sangue nas fezes há 2 dias. Nasceu com idade gestacional de 39 semanas e 2 dias, por via vaginal, com boletim de Apgar 9/10/10. As triagens neonatais indicadas foram realizadas e resultaram normais. Na maternidade, recebeu 1 mg de vitamina K por via intramuscular e as vacinas para hepatite B e BCG-ID. Permaneceu em alojamento conjunto, com alta da maternidade no terceiro dia de vida, sem intercorrências. Atualmente está em aleitamento misto, com leite materno e fórmula láctea, que a mãe iniciou após a alta da maternidade, pois sentia que tinha pouco leite. A mãe usa carbamazepina, há 6 anos, para controle de epilepsia. No exame clínico, criança em bom estado geral. Semiologia abdominal sem alterações. Não há fissuras ou outras lesões perineais. A mãe traz fralda com presença de sangue (confirmado pelo teste de catalase, que veio positivo). O restante do exame clínico da criança é normal. Também foram examinadas as mamas da mãe, sem fissuras ou quaisquer outras lesões.\nQual é a principal hipótese diagnóstica para o sangramento do recém-nascido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É compatível com sangramento por deficiência de vitamina K forma tardia, devendo-se administrar uma dose de 2 mg de vitamina K intravenosa, com parada do sangramento esperada em, no máximo, 4 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É a forma clássica de sangramento por deficiência de vitamina K, devido à baixa quantidade de vitamina K na fórmula derivada do leite de vaca. Deve-se administrar 2 mg de vitamina K via oral e reforçar o aleitamento materno exclusivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É decorrente do uso de anticonvulsivante, que interfere na absorção intestinal da vitamina K pelo RN, levando a uma coagulopatia, sendo denominado sangramento dependente da deficiência de vitamina K, forma precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É sugestivo de alergia à proteína do leite de vaca, não podendo ser classificado como sangramento dependente da deficiência de vitamina K, seja nas formas clássica ou tardia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nEstamos diante de um recém-nascido de 10 dias de vida, apresentando sangramento nas fezes (hematoquezia). Para definir a principal hipótese diagnóstica, devemos analisar os seguintes fatores:\n1. O paciente recebeu a profilaxia com 1 mg de vitamina K por via intramuscular ao nascimento, o que reduz drasticamente o risco de Doença Hemorrágica do Recém-Nascido.\n2. O sangramento iniciou-se aos 8 dias de vida, após a introdução de fórmula láctea (leite de vaca).\n3. O exame físico é normal, a criança está em bom estado geral, sem fissuras anais e sem lesões nos mamilos maternos (o que afasta a ingestão de sangue materno).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A deficiência de vitamina K na forma tardia ocorre, geralmente, entre a 2ª semana e o 6º mês de vida, sendo mais comum em bebês em aleitamento materno exclusivo que não receberam a profilaxia ao nascer. O paciente em questão tem apenas 10 dias e recebeu a vitamina K intramuscular na maternidade, o que torna essa hipótese improvável.\n\nAlternativa (b) INCORRETA: A forma clássica da deficiência de vitamina K ocorre entre o 2º e o 7º dia de vida. Além disso, a afirmação de que a fórmula láctea possui baixa quantidade de vitamina K é falsa. As fórmulas infantis modernas são enriquecidas com vitamina K, oferecendo concentrações maiores do que o leite materno. O uso da fórmula, na verdade, é um fator de proteção contra a deficiência de vitamina K quando comparado ao aleitamento materno exclusivo sem profilaxia.\n\nAlternativa (c) INCORRETA: A forma precoce da deficiência de vitamina K está associada ao uso materno de medicamentos que interferem no seu metabolismo (como a carbamazepina), mas essa forma se manifesta, obrigatoriamente, nas primeiras 24 horas de vida. Como o bebê apresenta sangramento aos 10 dias de vida, a cronologia não é compatível com a forma precoce.\n\nAlternativa (d) CORRETA: A principal hipótese é a Proctocolite Alérgica, uma forma de Alergia à Proteína do Leite de Vaca (APLV). O quadro clínico é típico: um recém-nascido ou lactente jovem, em excelente estado geral, sem outras alterações no exame físico, que apresenta sangue nas fezes após a introdução de proteína do leite de vaca (seja por fórmula infantil ou via leite materno). A introdução da fórmula láctea após a alta da maternidade é o gatilho clássico descrito no caso. Como a profilaxia para deficiência de vitamina K foi realizada corretamente e o exame físico é normal, a APLV torna-se o diagnóstico mais provável.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Alergia Alimentar",
+      "Outros Distúrbios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  },
+  {
+    "id": "AJUDA_3fb54ee7-0e87-4d5a-add4-e30c054df7d3",
+    "originalId": "3fb54ee7-0e87-4d5a-add4-e30c054df7d3",
+    "statement": "Assinale a alternativa que contempla apenas vantagens da consulta remota sobre a consulta presencial.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eliminação do tempo do deslocamento - redução do tempo de consulta - ampliação das possibilidades de exame físico direto - redução do risco de iatrogenia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eliminação do risco do deslocamento - comunicação de más notícias - situações de necessidade de distanciamento social - melhoria da acessibilidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Redução da pegada de carbono - aumento do acesso à saúde – atendimento de situações de risco - aumento das formas e possibilidades de agendamento de consultas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução da pegada de carbono - possibilidade de avaliação da maioria dos órgãos e sistemas do corpo humano - triagem de pacientes - situações de necessidade de isolamento físico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Esta alternativa está incorreta porque a consulta remota limita, e não amplia, as possibilidades de exame físico direto. Na telemedicina, o médico fica impossibilitado de realizar manobras fundamentais, como palpação, percussão e ausculta direta. Além disso, a redução do tempo de consulta não é considerada uma vantagem técnica, pois pode comprometer a profundidade da anamnese e o raciocínio clínico.\n\nAlternativa b: Esta é a alternativa correta. A telemedicina oferece a eliminação de riscos inerentes ao deslocamento, como acidentes de trânsito ou exposição à violência urbana. Ela é uma ferramenta essencial em situações que exigem distanciamento social, como observado na pandemia de COVID-19, e promove uma melhora significativa na acessibilidade para pacientes que residem em áreas remotas ou possuem limitações de locomoção. Sobre a comunicação de más notícias, no contexto da questão, entende-se que a modalidade permite que o paciente receba informações difíceis em seu ambiente de conforto e suporte familiar, evitando o desgaste físico e emocional de um deslocamento após o impacto da notícia.\n\nAlternativa c: Esta alternativa está incorreta ao citar o atendimento de situações de risco como vantagem. Situações de risco, urgência ou emergência médica são contraindicações para o atendimento estritamente remoto, exigindo intervenção presencial imediata para suporte vital e exames físicos detalhados que a tecnologia remota não permite realizar com segurança.\n\nAlternativa d: Esta alternativa está incorreta porque a avaliação da maioria dos órgãos e sistemas do corpo humano é uma das principais limitações da consulta remota, e não uma vantagem. Sem o contato físico e o uso de instrumentos presenciais (como o estetoscópio e o esfigmomanômetro manuseados pelo médico), a capacidade diagnóstica baseada no exame físico sistêmico fica extremamente reduzida em comparação à consulta presencial.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  },
+  {
+    "id": "AJUDA_3fc58a71-e20a-446d-86f3-ae78e501e57b",
+    "originalId": "3fc58a71-e20a-446d-86f3-ae78e501e57b",
+    "statement": "Paciente, 52 anos de idade, G3P3, procura o ambulatório de ginecologia com queixa de prurido vulvar crônico e dor durante a relação sexual. Refere que os sintomas iniciaram há cerca de 1 ano e vêm piorando progressivamente. Nega corrimento vaginal. Ao exame físico, observa-se pele vulvar esbranquiçada, atrófica, com aspecto em “papel pergaminho\", adelgaçamento dos grandes lábios e início de fusão dos pequenos lábios, sem lesões ulceradas. Não há evidência de corrimento ou massa palpável. Considerando o quadro clínico descrito, assinale a alternativa que apresenta, correta e respectivamente, o diagnóstico da paciente e o principal diagnóstico diferencial que deve ser afastado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Líquen plano erosivo e Líquen escleroso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Líquen escleroso e Líquen simples crônico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Líquen escleroso e Líquen plano erosivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Líquen escleroso e Neoplasia intraepitelial vulvar (VIN).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Líquen simples crônico e Candidíase recorrente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é clássico para o diagnóstico de líquen escleroso. A tríade de prurido vulvar crônico, pele com aspecto de \"papel pergaminho\" (esbranquiçada e atrófica) e a perda da arquitetura vulvar (adelgaçamento dos grandes lábios e fusão dos pequenos lábios) é patognomônica dessa patologia. O líquen escleroso é uma doença inflamatória crônica benigna, porém está associado a um risco aumentado (cerca de 3% a 5%) de evolução para o carcinoma espinocelular de vulva. Por esse motivo, qualquer área suspeita, ulcerada ou que não responda ao tratamento deve ser biopsiada para afastar neoplasia intraepitelial vulvar (VIN) ou câncer invasivo.\n\nAnálise das alternativas:\n\na) Incorreta. O líquen plano erosivo costuma apresentar-se com erosões avermelhadas e brilhantes, frequentemente envolvendo a mucosa vaginal (causando vaginite descamativa), o que não ocorre no líquen escleroso. Além disso, a descrição clínica de \"papel pergaminho\" aponta diretamente para o líquen escleroso como diagnóstico principal, e não como diferencial.\n\nb) Incorreta. Embora o líquen escleroso esteja correto, o líquen simples crônico é uma resposta secundária ao ciclo \"coceira-vulnerabilidade\", caracterizando-se por hiperpigmentação e espessamento da pele (liquenificação), e não por atrofia ou fusão de estruturas anatômicas. O diagnóstico diferencial mais importante a ser afastado no líquen escleroso é a neoplasia.\n\nc) Incorreta. O diagnóstico principal está correto, mas o líquen plano erosivo, apesar de ser um diferencial, não é a principal preocupação clínica em termos de gravidade e necessidade de exclusão imediata quando comparado ao risco de malignidade representado pela VIN.\n\nd) Correta. A descrição clínica (prurido, atrofia, esbranquiçamento e fusão dos pequenos lábios) é o quadro típico do líquen escleroso. O principal diagnóstico diferencial que deve ser obrigatoriamente afastado é a neoplasia intraepitelial vulvar (VIN), especialmente do tipo diferenciado, que surge frequentemente sobre lesões de líquen escleroso de longa data e possui alto potencial de transformação para carcinoma espinocelular.\n\ne) Incorreta. O líquen simples crônico não causa a reabsorção ou fusão dos pequenos lábios. A candidíase recorrente causa eritema e prurido, mas não leva às alterações anatômicas e ao aspecto atrófico/esbranquiçado crônico descrito no caso.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Doenças de Vulva e Vagina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  },
+  {
+    "id": "AJUDA_3fc6209c-18d3-4125-a5c3-eb081a0c1207",
+    "originalId": "3fc6209c-18d3-4125-a5c3-eb081a0c1207",
+    "statement": "Um homem de 56 anos, tossidor crônico, tabagista de 60 maços/ano, procurou atendimento médico porque passou a apresentar desconforto respiratório em repouso. Já faz uso de medicações inalatórias de forma adequada. Provavelmente se beneficiará do uso contínuo de oxigênio domiciliar, cuja indicação ocorre com pressão arterial de O2 e saturação de oxigênio, respectivamente de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "≤ 60 mmHg e <88%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "< 55 mmHg е <88%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "≤ 60 mmHg e ≤90%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "≤ 59 mmHg e ≤ 89%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "≤55 mmHg e ≤90%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta um paciente de 56 anos com Doença Pulmonar Obstrutiva Crônica (DPOC) avançada, caracterizada por dispneia em repouso mesmo com terapia inalatória otimizada. A principal intervenção para aumentar a sobrevida nesses pacientes com hipoxemia grave é a Oxigenoterapia Domiciliar Prolongada (ODP).\n\nOs critérios para indicação de ODP, fundamentados nas diretrizes da Sociedade Brasileira de Pneumologia e Tisiologia (SBPT) e no GOLD (Global Initiative for Chronic Obstructive Lung Disease), são:\n\n1. PaO2 menor ou igual a 55 mmHg ou saturação de oxigênio (SaO2) menor ou igual a 88% em repouso e ar ambiente.\n2. PaO2 entre 56 e 59 mmHg ou SaO2 de 89%, associadas a evidências de Cor Pulmonale (edema periférico, insuficiência cardíaca direita), Hipertensão Pulmonar ou Policitemia (hematócrito maior que 55%).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O valor de PaO2 de 60 mmHg é considerado o alvo terapêutico para quem já usa oxigênio, mas não é o critério de início, que deve ser inferior a esse valor.\n\nAlternativa b) Incorreta. Embora valores abaixo de 55 e 88 indiquem a terapia, a alternativa utiliza o sinal de \"menor que\" (<), o que tecnicamente excluiria o paciente que apresenta exatamente 55 mmHg ou 88% de saturação (que já possui indicação). Além disso, ignora a faixa de 56 a 59 mmHg com comorbidades.\n\nAlternativa c) Incorreta. Os valores de 60 mmHg e 90% estão acima dos limiares de hipoxemia crônica grave que justificam o custo e os riscos da oxigenoterapia domiciliar.\n\nAlternativa d) Correta. Esta alternativa representa o limite superior (o \"teto\") da indicação de oxigenoterapia. Ao utilizar os valores de 59 mmHg e 89%, ela contempla os pacientes que possuem hipoxemia moderada associada a complicações (como cor pulmonale ou policitemia). É a resposta que define a fronteira máxima para o início do benefício clínico da ODP.\n\nAlternativa e) Incorreta. Embora o limite de 55 mmHg para PaO2 esteja correto para a indicação geral, a saturação de 90% é considerada adequada para pacientes em repouso, não preenchendo critérios para oxigenoterapia contínua.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  },
+  {
+    "id": "AJUDA_3fc6d0b4-9d69-4247-b942-59dc98915ff5",
+    "originalId": "3fc6d0b4-9d69-4247-b942-59dc98915ff5",
+    "statement": "Vítima de acidente moto X moto dá entrada no Hospital Municipal de Santarém apresentando ao exame físico hipertimpanismo em hemitórax direito e hipotensão. Neste caso a melhor conduta a ser tomada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "intubação orotraqueal imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "inserção de jelco calibroso em 5º espaço intercostal ligeiramente anterior à linha axilar média do hemitórax direito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "toracotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "curativo em 3 pontos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ventilação com máscara de oxigênio em 15l.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico Clínico: Pneumotórax Hipertensivo\n\nO cenário clínico descreve um trauma de alta energia (acidente de moto) evoluindo com hipertimpanismo à percussão e hipotensão arterial. Esta combinação é patognomônica de Pneumotórax Hipertensivo. O mecanismo ocorre quando o ar entra no espaço pleural através de uma lesão pulmonar ou da parede torácica, funcionando como uma válvula unidirecional: o ar entra na inspiração e não sai na expiração. Isso causa o colapso do pulmão ipsilateral, desvio do mediastino para o lado oposto, compressão das veias cavas e, consequentemente, choque obstrutivo por redução drástica do retorno venoso. O diagnóstico de pneumotórax hipertensivo é clínico e o tratamento deve ser imediato, sem aguardar exames de imagem.\n\nAnálise das Alternativas:\n\na) Incorreta. A intubação orotraqueal e a ventilação por pressão positiva podem ser fatais neste paciente se realizadas antes da descompressão. A pressão positiva empurra ainda mais ar para o espaço pleural, acelerando o colapso hemodinâmico e levando à parada cardiorrespiratória.\n\nb) Correta. De acordo com as diretrizes atuais do ATLS (10ª edição), a conduta imediata para descompressão torácica de emergência no adulto é a inserção de um cateter (jelco) calibroso no 5º espaço intercostal, entre a linha axilar anterior e média do hemitórax acometido. Essa manobra transforma o pneumotórax hipertensivo em um pneumotórax simples, permitindo a estabilização do paciente até a drenagem torácica definitiva (em selo d'água).\n\nc) Incorreta. A toracotomia exploradora é indicada em situações específicas como hemotórax maciço, tamponamento cardíaco ou lesões de grandes vasos. O tratamento inicial do ar sob pressão é a descompressão simples e drenagem de tórax, não uma cirurgia aberta de grande porte.\n\nd) Incorreta. O curativo em três pontos é a conduta específica para o Pneumotórax Aberto (ferida aspirante). No pneumotórax aberto, existe uma comunicação entre o meio externo e o espaço pleural. A questão descreve um quadro de hipertensão interna, típico de pneumotórax fechado hipertensivo.\n\ne) Incorreta. Embora o oxigênio suplementar seja parte da abordagem inicial do trauma (ABCDE), ele é totalmente insuficiente para resolver o choque obstrutivo. O problema não é a falta de oferta de oxigênio no ar inspirado, mas sim a falha mecânica do coração em bombear o sangue devido à compressão extrínseca causada pelo ar acumulado.\n\nDestaque Pedagógico: No ATLS 10, o local de descompressão por agulha mudou do 2º para o 5º espaço intercostal em adultos devido à maior espessura da parede torácica na região superior, que frequentemente causava falha no procedimento com agulhas padrão. O 2º espaço intercostal na linha hemiclavicular continua sendo uma alternativa ou opção preferencial para pacientes pediátricos.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:20.092Z"
+  }
+]

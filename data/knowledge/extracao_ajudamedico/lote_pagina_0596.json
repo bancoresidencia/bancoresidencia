@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_a6b3413f-db8d-4862-9db1-b9053389db6f",
+    "originalId": "a6b3413f-db8d-4862-9db1-b9053389db6f",
+    "statement": "Nos casos de infarto agudo do miocárdio com supradesnivelamento do ST (STEMI), qual é a intervenção considerada primordial para reduzir a mortalidade dos pacientes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reperfusão imediata por angioplastia primária ou trombólise",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administração isolada de nitrato sublingual",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Controle ambulatorial da pressão arterial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administração isolada de betabloqueador",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Infarto Agudo do Miocárdio com supradesnivelamento do segmento ST (STEMI) é uma emergência médica definida pela oclusão total de uma artéria coronária por um trombo. A interrupção súbita do fluxo sanguíneo leva à necrose progressiva das células cardíacas (miócitos), o que torna a restauração do fluxo a prioridade absoluta para salvar o tecido miocárdico.\n\nAlternativa A - CORRETA: A terapia de reperfusão imediata é o pilar fundamental do tratamento do STEMI. Seja através da Angioplastia Primária (padrão-ouro) ou da Trombólise (quando a angioplastia não está disponível no tempo recomendado), o objetivo central é desobstruir a artéria e restaurar a oxigenação do músculo cardíaco o mais rápido possível. Esta é a intervenção que comprovadamente reduz a mortalidade, pois limita o tamanho do infarto e previne complicações como insuficiência cardíaca grave e arritmias fatais.\n\nAlternativa B - INCORRETA: O nitrato sublingual atua como um potente vasodilatador e é excelente para o alívio sintomático da dor torácica anginosa, pois reduz a pré-carga cardíaca. No entanto, ele não tem a capacidade de desfazer o trombo que está obstruindo a artéria; portanto, seu uso isolado não altera o desfecho clínico nem reduz a mortalidade no STEMI.\n\nAlternativa C - INCORRETA: O controle ambulatorial da pressão arterial faz parte da prevenção primária e secundária de doenças cardiovasculares a longo prazo. Diante de um paciente com infarto agudo em curso, o manejo ambulatorial de fatores de risco é irrelevante para a sobrevivência imediata, que depende de intervenções hospitalares de emergência.\n\nAlternativa D - INCORRETA: Os betabloqueadores auxiliam na redução do consumo de oxigênio pelo coração e podem ser benéficos na fase estável do infarto. Contudo, sua administração isolada não trata a causa do problema (a obstrução mecânica do vaso) e, se administrados precocemente em pacientes com risco de choque cardiogênico, podem até aumentar a mortalidade. Eles não substituem a necessidade de reperfusão.\n\nEm resumo: No STEMI, a máxima \"tempo é músculo\" guia a conduta médica. A rapidez em abrir o vaso culpado através da reperfusão é o fator determinante para a redução da mortalidade.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.175Z"
+  },
+  {
+    "id": "AJUDA_a6b8378d-826a-472c-826f-fabb22776d1f",
+    "originalId": "a6b8378d-826a-472c-826f-fabb22776d1f",
+    "statement": "A doença arterial coronariana (DAC) pode se manifestar de várias formas, desde angina estável até síndromes coronarianas agudas. A estratificação de risco e o manejo inicial desses pacientes são essenciais para guiar a terapêutica. Em um paciente com DAC estável, qual dos achados abaixo mais indica um alto risco de eventos cardiovasculares futuros, necessitando de intervenção mais agressiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Placa aterosclerótica com estenose de 40% na coronária direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teste ergométrico com depressão do segmento ST maior que 2 mm em múltiplas derivações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nível de LDL-colesterol de 110 mg/dL, sem uso de estatinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Episódio prévio de angina de repouso há 6 meses, sem recorrência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A estratificação de risco na Doença Arterial Coronariana (DAC) estável é fundamental para identificar pacientes que apresentam maior probabilidade de morte cardiovascular ou infarto agudo do miocárdio. Esses pacientes de alto risco são os que mais se beneficiam de uma estratégia invasiva (cineangiocoronariografia e eventual revascularização) em comparação ao tratamento médico isolado.\n\nAlternativa a) Incorreta. Uma estenose de 40% na coronária direita é considerada uma lesão não obstrutiva. Na DAC estável, apenas estenoses acima de 50% em tronco de coronária esquerda ou acima de 70% nos demais vasos principais (ou com comprovação funcional de isquemia) costumam ser candidatas à intervenção. Uma placa de 40% indica a presença de aterosclerose, mas não confere alto risco que justifique conduta agressiva imediata.\n\nAlternativa b) Correta. O teste ergométrico é um dos principais métodos não invasivos para estratificação. São considerados achados de alto risco (risco de morte anual > 3%): infradesnivelamento do segmento ST maior ou igual a 2 mm, alteração em múltiplas derivações, surgimento de alterações em baixas cargas (menos de 6 METs), queda da pressão arterial sistólica durante o esforço, ou dor anginosa que interrompe o exame. Esses achados sugerem isquemia miocárdica extensa, frequentemente associada à doença multiarterial ou de tronco.\n\nAlternativa c) Incorreta. O nível de LDL de 110 mg/dL está acima da meta recomendada para pacientes com DAC (que deve ser inferior a 50 mg/dL ou, em alguns casos, 70 mg/dL). No entanto, o nível isolado do colesterol é um fator de risco a ser controlado com otimização medicamentosa (estatinas) e estilo de vida, não servindo como marcador de \"alto risco\" para eventos agudos imediatos que exijam intervenção cirúrgica ou percutânea.\n\nAlternativa d) Incorreta. Embora a angina de repouso seja um sintoma de alarme, o fato de o episódio ter ocorrido há 6 meses sem recorrência sugere que o quadro está estabilizado. Se a angina fosse recente (nas últimas semanas) ou progressiva, o paciente seria classificado como portador de uma Síndrome Coronariana Aguda (Angina Instável). No cenário da DAC estável, o comportamento atual do paciente frente ao esforço e os exames funcionais recentes têm maior peso na estratificação de risco do que um evento remoto isolado.\n\nConclusão: Pacientes com isquemia importante documentada em métodos funcionais (como o teste ergométrico com infra de ST > 2 mm) possuem indicação formal de estratificação invasiva para avaliar a anatomia coronariana e planejar a revascularização, visando à melhora do prognóstico.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Doença Arterial Coronariana Estável (DAC Estável)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.175Z"
+  },
+  {
+    "id": "AJUDA_a6b8d4af-fec8-4ddd-bc56-643b615da5d1",
+    "originalId": "a6b8d4af-fec8-4ddd-bc56-643b615da5d1",
+    "statement": "Leia o caso a seguir.\n\nPrimigesta de 33 semanas, com 35 anos de idade, chega ao pronto atendimento referindo edema progressivo há cerca de uma semana, com piora há dois dias e cefaleia há algumas horas. Relata que vinha realizando o pré-natal regularmente e até então a gestação vinha evoluindo sem intercorrências. No exame físico, verifica-se PA = 160/110 mmHg, AFU = 33 cm, ausência de dinâmica uterina, feto com BCF = 140/m e movimentos presentes, colo fechado, posterior e grosso com altura da apresentação -3 de De Lee.\n\nDiante desse quadro, a conduta inicial é?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação, sulfato de magnésio, hidralazina e avaliação da vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Internação, sulfato de magnésio, hidralazina, corticoterapia e cesariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sulfato de magnésio, hidralazina, observação e alta, se melhorar a pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidralazina, avaliação da vitalidade fetal, observação e alta, se melhorar a pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Quadro Clínico:\nEstamos diante de uma gestante de 33 semanas (pré-termo) apresentando níveis pressóricos de 160/110 mmHg associados a um sintoma de iminência de eclâmpsia (cefaleia). Esse cenário caracteriza uma pré-eclâmpsia com sinais de gravidade. Em casos de crise hipertensiva (pressão diastólica maior ou igual a 110 mmHg) e sintomas neurológicos, a conduta deve focar na estabilização materna e avaliação fetal imediata.\n\nAnálise das Alternativas:\n\nAlternativa A (Correta): A paciente apresenta critérios de gravidade, o que exige internação hospitalar mandatória. O uso do sulfato de magnésio é fundamental para a profilaxia de crises convulsivas (eclâmpsia), sendo indicado sempre que houver sinais de gravidade. A hidralazina (ou outro anti-hipertensivo de ação rápida) é necessária para o controle da crise hipertensiva, visando reduzir o risco de acidente vascular cerebral. Por fim, a avaliação da vitalidade fetal é indispensável para determinar o bem-estar do feto e auxiliar na decisão sobre o momento do parto.\n\nAlternativa B (Incorreta): Embora a estabilização inicial esteja correta, a indicação de \"cesariana\" como conduta inicial e imediata é precipitada. Às 33 semanas, após a estabilização materna e avaliação da vitalidade, pode-se considerar a corticoterapia para maturidade pulmonar fetal e, dependendo das condições materno-fetais, tentar o manejo conservador por 24-48 horas ou a indução do parto. A via de parto não é obrigatoriamente cesariana, dependendo das condições cervicais e da estabilidade do feto.\n\nAlternativa C (Incorreta): Pacientes com pré-eclâmpsia grave não devem receber alta hospitalar, mesmo que a pressão arterial seja controlada momentaneamente. A doença é progressiva e o risco de complicações maternas (como descolamento de placenta e eclâmpsia) e fetais exige vigilância intra-hospitalar contínua até a resolução da gestação.\n\nAlternativa D (Incorreta): Esta alternativa falha gravemente ao omitir o uso do sulfato de magnésio, que é o padrão-ouro para prevenção de convulsões em casos graves. Além disso, assim como na alternativa C, propõe uma alta hospitalar totalmente contraindicada para o quadro apresentado.\n\nResumo da Conduta:\nO manejo inicial da pré-eclâmpsia grave baseia-se no tripé: 1) Prevenção de convulsões (sulfato de magnésio); 2) Controle da hipertensão grave (anti-hipertensivos de resgate); 3) Avaliação rigorosa da vitalidade fetal e do estado materno para decidir o momento e a via de interrupção da gravidez. Portanto, a alternativa A é a que melhor descreve os primeiros passos a serem tomados.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.175Z"
+  },
+  {
+    "id": "AJUDA_a6baa234-8085-472e-95cb-83fba2aaee78",
+    "originalId": "a6baa234-8085-472e-95cb-83fba2aaee78",
+    "statement": "Mulher, 52 anos de idade, procura a atenção primária com queixas de fogachos frequentes, sudorese noturna e alterações de sono, com ciclos menstruais regulares e volumosos. Qual deve ser a abordagem mais apropriada para o manejo inicial dessa paciente, conforme as diretrizes do Ministério da Saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar exames hormonais de rotina para confirmar diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar terapia de reposição hormonal para alívio dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever antidepressivo inibidor da receptação de serotonina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Investigar intensidade dos sintomas e orientar adequação do estilo de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A paciente de 52 anos apresenta sintomas vasomotores característicos e alteração do padrão menstrual, quadro compatível com a transição menopáusica (perimenopausa). \n\nAnálise das alternativas:\n\nAlternativa a (Incorreta): O diagnóstico da transição menopáusica e do climatério em mulheres acima de 45 anos com quadro clínico típico é eminentemente clínico. Segundo o Ministério da Saúde e a FEBRASGO, a dosagem rotineira de hormônios como FSH, LH e estradiol não é indicada, pois os níveis hormonais oscilam muito nessa fase e o resultado não modifica a conduta inicial.\n\nAlternativa b (Incorreta): Embora a terapia hormonal seja o tratamento mais eficaz para sintomas vasomotores moderados a graves, ela não deve ser a conduta inicial imediata. É fundamental quantificar o impacto dos sintomas, rastrear contraindicações e, no caso dessa paciente, investigar o fluxo menstrual aumentado antes de prescrever qualquer esquema hormonal.\n\nAlternativa c (Incorreta): Os inibidores seletivos da recaptação de serotonina (ISRS) são opções terapêuticas não hormonais indicadas como alternativa para pacientes com contraindicação à terapia hormonal ou que optam por não utilizá-la, não sendo a conduta de primeira linha inicial para a abordagem global da paciente.\n\nAlternativa d (Correta): De acordo com as diretrizes da Atenção Primária à Saúde, o manejo inicial consiste em acolher a paciente, mensurar a intensidade e o impacto dos sintomas na qualidade de vida e orientar medidas não farmacológicas. A promoção de mudanças no estilo de vida, como prática regular de atividade física, dieta equilibrada, cessação do tabagismo e higiene do sono, é a base da abordagem inicial e pode ser suficiente para o alívio de sintomas leves, além de prevenir doenças crônicas.\n\nGabarito: Alternativa d.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.175Z"
+  },
+  {
+    "id": "AJUDA_a6bbad41-7c94-43c5-b491-25e03fe20236",
+    "originalId": "a6bbad41-7c94-43c5-b491-25e03fe20236",
+    "statement": "Os pacientes submetidos à esplenectomia devem ser vacinados contra patógenos encapsulados, com o objetivo de evitar sepse pós-esplenectomia. O patógeno mais comum é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Varicella",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "H. Influenzae",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "N. Miningitidis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "S. pneumoniae",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O baço desempenha um papel fundamental na defesa imunológica, atuando como um filtro para o sangue e removendo microrganismos, especialmente bactérias opsonizadas. Ele é o principal local de produção de anticorpos (IgM) e de ativação do sistema complemento pela via alternativa. Pacientes asplênicos (sem baço) ou com asplenia funcional (como na anemia falciforme) perdem essa capacidade de depuração, ficando altamente suscetíveis à sepse pós-esplenectomia (OPSI — Overwhelming Post-Splenectomy Infection), uma condição de evolução rápida e alta mortalidade.\n\nAnálise das alternativas:\n\na) Incorreta. O vírus da varicela (catapora) não é uma bactéria encapsulada. O risco aumentado nesses pacientes está diretamente ligado à dificuldade de combater patógenos que possuem cápsula polissacarídica, que exige uma resposta imune específica dependente da arquitetura esplênica.\n\nb) Incorreta. O Haemophilus influenzae tipo b é um dos três principais agentes encapsulados causadores de infecção grave em esplenectomizados. Apesar de ser um patógeno importante e alvo de vacinação obrigatória nesses pacientes, ele não é o mais frequente.\n\nc) Incorreta. A Neisseria meningitidis (meningococo) também é uma bactéria encapsulada que causa quadros graves de sepse e meningite em pacientes sem baço. Contudo, em termos epidemiológicos, sua incidência é menor do que a do pneumococo.\n\nd) Correta. O Streptococcus pneumoniae (pneumococo) é o patógeno mais comumente isolado em casos de sepse pós-esplenectomia, sendo responsável por aproximadamente 50% a 90% de todos os casos relatados na literatura médica. Devido a essa alta prevalência e à gravidade do quadro clínico, a vacinação antipneumocócica é a medida profilática mais importante para esses pacientes.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Trauma",
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.175Z"
+  },
+  {
+    "id": "AJUDA_a6be30b4-3018-4241-a33f-0862f499fbe4",
+    "originalId": "a6be30b4-3018-4241-a33f-0862f499fbe4",
+    "statement": "Pré-escolar de 3 anos e meio é atendido em uma Unidade Básica de Saúde, trazida pela avó, bastante preocupada com a maneira de seu genro cuidar e educar seu neto. Avó refere que criança é agitada e bagunceira e que, não raramente, o pai a castiga com utilização de alguns tapas e \"chacoalhões\". Refere que já identificou marcas desses castigos nas nádegas da criança. Avó refere que sua filha, a mãe da criança, também concorda com um estilo de educação mais coercitivo para a criança. Os pais são bons provedores e carinhosos na maior parte do tempo. No exame físico apenas se identifica um hematoma linear em coxa esquerda, relacionado a uma queda recente de patinete. Sobre essa situação, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uma avaliação mais detalhada da história é necessária antes de qualquer conduta, particularmente a escuta dos pais sobre esses fatos, pois, na legislação brasileira de proteção à infância, há clara distinção entre maus tratos, que devem repudiados e os castigos físicos disciplinatórios necessários para a educação infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O médico poderia solicitar a avaliação de um médico legista, que tem mais experiência nessas situações, para, em função desse laudo pericial, tomar uma atitude mais adequada diante do caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Casos como esse devem ser cuidadosamente avaliados pelo pediatra dada a possibilidade de alienação parental, onde uma avó pode estar tentando incriminar falsamente seu genro para afastamento do convívio; a avaliação psicológica é prudente e necessária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O caso deve ser comunicado ao Conselho Tutelar da região onde essa criança mora e à Secretaria Municipal de Saúde, através de ficha específica (notificação de agravos relacionados à violência).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A resolução desta questão baseia-se no Estatuto da Criança e do Adolescente (ECA) e na Lei 13.010/2014, conhecida como Lei Menino Bernardo.\n\nAnálise das alternativas:\n\na) Incorreta. A legislação brasileira, desde a promulgação da Lei Menino Bernardo em 2014, aboliu a distinção entre \"castigo disciplinar\" e \"maus-tratos\". Atualmente, a lei estabelece que crianças e adolescentes têm o direito de ser educados e cuidados sem o uso de castigo físico ou de tratamento cruel ou degradante. Portanto, não cabe ao médico relativizar a agressão física como ferramenta pedagógica.\n\nb) Incorreta. A responsabilidade do médico assistente na Unidade Básica de Saúde diante de uma suspeita de violência não é condicionada a um laudo pericial. O exame de corpo de delito pelo Instituto Médico Legal (IML) é um procedimento da esfera policial/judiciária. Na prática assistencial, a notificação deve ocorrer diante da suspeita clínica e epidemiológica, sem a necessidade de prova pericial prévia.\n\nc) Incorreta. Embora conflitos familiares e a alienação parental existam, o dever primordial do médico é a proteção integral da criança. Diante do relato da avó sobre \"tapas e chacoalhões\", o profissional está diante de uma suspeita de violência física. Priorizar a investigação de alienação parental antes de realizar a notificação obrigatória coloca a criança em risco e fere o artigo 13 do ECA.\n\nd) Correta. De acordo com o ECA (Artigo 13), os casos de suspeita ou confirmação de castigo físico, de tratamento cruel ou degradante e de maus-tratos contra criança ou adolescente serão obrigatoriamente comunicados ao Conselho Tutelar da respectiva localidade. Além disso, a violência doméstica é um evento de notificação compulsória no sistema de saúde (ficha de notificação de violência/SINAN), sendo um dever do profissional de saúde informar às autoridades sanitárias para fins de vigilância epidemiológica e proteção social. Vale ressaltar que a notificação deve ser feita mesmo diante apenas da suspeita, não sendo necessária a confirmação definitiva dos fatos.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.175Z"
+  },
+  {
+    "id": "AJUDA_a6c14253-fa7e-43f8-b486-c334a68308b0",
+    "originalId": "a6c14253-fa7e-43f8-b486-c334a68308b0",
+    "statement": "Durante um estudo multicêntrico sobre os efeitos adversos gastrointestinais de um novo AINE, foram acompanhados pacientes com osteoartrite que utilizavam regularmente a medicação. Após 12 meses de seguimento, observou-se que 10% dos usuários do novo AINE desenvolveram úlcera gástrica, documentada por endoscopia, enquanto 5% dos pacientes no grupo controle (que usavam um AINE clássico) apresentaram o mesmo desfecho. Com base nesses dados, o número necessário para causar dano (NNH), isto é, o número de pacientes que precisam ser tratados com o novo AINE para que um caso adicional de úlcera gástrica ocorra é, aproximadamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "05.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "20.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "50.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Número Necessário para Causar Dano (NNH, do inglês Number Needed to Harm) é uma medida de impacto epidemiológico que indica o número de pacientes que precisam ser expostos a determinado tratamento para que ocorra um desfecho desfavorável adicional em comparação ao grupo controle. \n\nO NNH é calculado como o inverso do Aumento Absoluto do Risco (ARI, do inglês Absolute Risk Increase):\nNNH = 1 / ARI\n\nPasso a passo da resolução:\n\n1. Cálculo do Aumento Absoluto do Risco (ARI):\nARI = Incidência no grupo intervenção (novo AINE) - Incidência no grupo controle (AINE clássico)\nARI = 10% - 5% = 5% (ou 0,05)\n\n2. Cálculo do NNH:\nNNH = 1 / 0,05 = 20\n\nPortanto, é necessário tratar 20 pacientes com o novo AINE para que surja um caso adicional de úlcera gástrica que não ocorreria com o AINE clássico.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O valor 5 resultaria de um aumento absoluto de risco de 20% (1 / 0,20 = 5), o que não corresponde à diferença observada no estudo.\n\nAlternativa b: Incorreta. O valor 10 decorreria de uma diferença de risco de 10% (1 / 0,10 = 10). Esse erro comumente ocorre quando se utiliza a incidência isolada do grupo intervenção (10%) em vez da diferença entre os dois grupos.\n\nAlternativa c: Correta. O cálculo demonstra que o aumento absoluto do risco é de 5% (0,05) e seu inverso (1 / 0,05) resulta exatamente em 20.\n\nAlternativa d: Incorreta. O valor 50 seria obtido caso a diferença absoluta de risco entre os grupos fosse de 2% (1 / 0,02 = 50).",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori",
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.175Z"
+  },
+  {
+    "id": "AJUDA_a6c44417-e82d-4560-aa9c-0683f049a7fb",
+    "originalId": "a6c44417-e82d-4560-aa9c-0683f049a7fb",
+    "statement": "Homem de 47 anos relata tosse seca e febre diária há 12 dias. O exame físico não mostrou alterações. Exames laboratoriais mostraram anemia normocítica, normocrômica (Hb: 9,6 g/dL), PCR elevada (PCR: 35,3 mg/dL), plaquetose (plaquetas: 569.000/mm³) e leucocitose sem desvio (leucócitos: 16.380/mm³). O paciente evoluiu com picos febris diários e taquicardia. Realizou raio X de tórax e tomografia de tórax, demonstrados a seguir.\n\nA hipótese diagnóstica correta do paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "neoplasia pulmonar primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tumor do mediastino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "neoplasia pulmonar metastática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aneurisma de aorta torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "mixoma cardíaco.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descreve um homem de 47 anos com sintomas constitucionais (febre diária, tosse) e exames laboratoriais que indicam uma resposta inflamatória sistêmica importante (anemia normocítica e normocrômica, leucocitose, plaquetose e PCR significativamente elevada). Ao analisar as imagens, o raio X de tórax mostra um alargamento da silhueta cardíaca/mediastinal. A tomografia de tórax (cortes coronal, sagital e axial) é definitiva ao demonstrar uma grande massa hipodensa localizada no interior do coração, especificamente preenchendo o átrio esquerdo.\n\nAlternativa a: Incorreta. Uma neoplasia pulmonar primária se originaria no parênquima pulmonar ou nos brônquios. As imagens tomográficas mostram que os pulmões estão livres de massas, e a lesão está contida no interior das cavidades cardíacas.\n\nAlternativa b: Incorreta. Embora o coração esteja localizado no mediastino médio, o termo tumor de mediastino refere-se geralmente a massas originadas nos espaços mediastinais (como timomas, linfomas ou tumores germinativos) e não dentro das câmaras cardíacas. A tomografia mostra claramente que a massa é intracavitária cardíaca.\n\nAlternativa c: Incorreta. Metástases pulmonares costumam se apresentar como múltiplos nódulos disseminados pelo parênquima (aspecto de \"bala de canhão\") ou como linfangite carcinomatosa. O paciente apresenta uma massa única e volumosa dentro do átrio esquerdo.\n\nAlternativa d: Incorreta. No corte axial da tomografia, é possível observar a aorta descendente preenchida por contraste, separada da massa. A massa está localizada no átrio esquerdo e não apresenta a continuidade ou as características de uma dilatação aneurismática da aorta.\n\nAlternativa e: Correta. O mixoma cardíaco é o tumor primário do coração mais comum em adultos, ocorrendo em cerca de 75% a 80% das vezes no átrio esquerdo. Além da imagem característica de massa intracavitária, o mixoma é conhecido por secretar citocinas inflamatórias, principalmente a interleucina-6 (IL-6). Isso explica perfeitamente a \"síndrome constitucional\" do paciente: febre, anemia de doença crônica, elevação de PCR, leucocitose e plaquetose. A tríade clássica do mixoma inclui sintomas constitucionais, eventos embólicos e obstrução valvar (o que justifica a taquicardia e a tosse).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ce7247fa291516b8bcbaccf2bb0075a0c2d6e916d7d7e9bcce7a1c07b153f6d0.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a6c44417-e82d-4560-aa9c-0683f049a7fb_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.564Z"
+  },
+  {
+    "id": "AJUDA_a6da2606-ec18-4dda-8848-628aa7f5b9e7",
+    "originalId": "a6da2606-ec18-4dda-8848-628aa7f5b9e7",
+    "statement": "Homem de 58 anos, com obesidade e diabetes mellitus tipo 2 há 10 anos, em uso de metformina 1000mg duas vezes ao dia, comparece ao ambulatório para avaliação pré-operatória de cirurgia eletiva de correção de hérnia inguinal. Encontra-se assintomático e com exame físico normal, apresentando glicemia de jejum de 314mg/dL (VR: 70 - 99 mg/dL) e hemoglobina glicada de 11,2% (VR: 4,0 - 5,6%). Qual é a conduta adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar terapia baseada em insulina e adiar a cirurgia até controle glicêmico adequado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Manter apenas metformina, mantendo a data da cirurgia conforme programado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar glibenclamida e análogo de GLP-1, mantendo a data da cirurgia conforme programado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Associar dapagliflozina e gliclazida, adiando a cirurgia até controle glicêmico adequado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta Diabetes Mellitus tipo 2 (DM2) com péssimo controle metabólico, evidenciado por glicemia de jejum de 314 mg/dL e hemoglobina glicada (HbA1c) de 11,2%. Ele está em programação de cirurgia eletiva (correção de hérnia inguinal). Em situações de cirurgia eletiva, o controle glicêmico pré-operatório é fundamental para reduzir o risco de complicações, como infecções de sítio cirúrgico, atraso na cicatrização e distúrbios hidroeletrolíticos.\n\nDe acordo com as diretrizes da Sociedade Brasileira de Diabetes e da American Diabetes Association, o alvo de HbA1c para pacientes que se submeterão a procedimentos cirúrgicos eletivos é geralmente inferior a 8% (ou até < 7% em alguns contextos). Níveis de HbA1c acima de 9% ou glicemia de jejum acima de 200-250 mg/dL são indicativos de necessidade de adiamento do procedimento e intensificação do tratamento.\n\nAnálise das alternativas:\n\na) Correta. O adiamento da cirurgia é necessário porque o risco de complicações perioperatórias é muito alto com uma HbA1c de 11,2%. A introdução de insulina é a conduta de escolha para pacientes com glicemia de jejum > 300 mg/dL ou HbA1c > 10%, pois permite um controle glicêmico mais rápido e eficaz do que a simples associação de outros antidiabéticos orais nesta magnitude de descompensação.\n\nb) Incorreta. Manter a conduta atual e prosseguir com a cirurgia expõe o paciente a riscos graves, como cetoacidose diabética no pós-operatório, além de alta taxa de infecção e falha na cicatrização da ferida operatória. A metformina isolada já se mostrou insuficiente para o controle do paciente.\n\nc) Incorreta. Não se deve manter a data da cirurgia eletiva com o paciente descompensado. Além disso, embora os análogos de GLP-1 sejam excelentes medicamentos, a insulina é mais indicada para a compensação rápida de quadros de glicotoxicidade severa (glicemia > 300 mg/dL). A glibenclamida (sulfonilureia) também apresenta maior risco de hipoglicemia no perioperatório.\n\nd) Incorreta. Embora sugira o adiamento, a escolha medicamentosa é inadequada para o momento pré-operatório. Os inibidores da SGLT2, como a dapagliflozina, estão associados a um risco aumentado de cetoacidose diabética euglicêmica em períodos de estresse cirúrgico e jejum, devendo ser suspensos dias antes de qualquer procedimento. Novamente, a insulina é a terapia superior para níveis tão elevados de HbA1c.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.564Z"
+  },
+  {
+    "id": "AJUDA_a6da812e-cf5f-4d67-9a74-072b09ad5dbe",
+    "originalId": "a6da812e-cf5f-4d67-9a74-072b09ad5dbe",
+    "statement": "Paciente do sexo feminino, 12 anos, é trazido pela mãe para consulta devido a pequena massa cística cervical, localizada na linha média a nível do osso hióide, móvel à deglutição. Ao exame físico observamos pequena lesão cística com sinais flogísticos e flutuação. Mãe refere história de outros processos inflamatórios locais que foram tratados com drenagem e antibióticos. Sobre a fisiopatologia e tratamento desta lesão, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de herniação de saco laríngeo pela membrana tireo-hioidea e seu tratamento consiste em ressecção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de lesão congênita derivada de falha na migração do broto tireoidiano da base da língua e seu tratamento requer ressecção cirúrgica junto com fragmento do osso hióide.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de lesão cística adquirida proveniente de déficit de drenagem de glândula salivar sublingual e seu tratamento consiste na marsupialização da lesão pela cavidade oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de anomalia congênita derivada do fechamento inadequado do seio cervical a nível do 2º. arco branquial e seu tratamento se baseia em injeção de substância esclerosante na lesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — paciente jovem com massa cística na linha média cervical, ao nível do osso hioide e que se move à deglutição — é a apresentação clássica do cisto do ducto tireoglosso. Esta é a anomalia congênita cervical mais comum na infância.\n\nAlternativa a (Incorreta): A descrição de herniação do saco laríngeo refere-se à laringocele. As laringoceles podem ser internas ou externas (atravessando a membrana tireo-hioidea), mas geralmente se apresentam como massas laterais e podem variar de tamanho com a manobra de Valsalva, não sendo a principal hipótese para uma massa de linha média que se move com a deglutição em uma criança.\n\nAlternativa b (Correta): O cisto do ducto tireoglosso ocorre devido à falha na involução do ducto que marca o caminho de descida da glândula tireoide, desde a base da língua (forame cego) até sua posição definitiva no pescoço anterior. Como o ducto possui uma relação íntima com o desenvolvimento do osso hioide, o tratamento cirúrgico definitivo é a Operação de Sistrunk. Este procedimento envolve a ressecção do cisto, de todo o trajeto do ducto até a base da língua e, obrigatoriamente, da porção central do osso hioide, medida fundamental para reduzir as taxas de recidiva.\n\nAlternativa c (Incorreta): A descrição refere-se a uma rânula (extravasamento de glândula salivar). As rânulas localizam-se no assoalho da boca. Mesmo em sua forma mergulhante (que atinge o pescoço), elas se posicionam lateralmente no espaço submandibular e não apresentam a relação clássica de mobilidade com a deglutição e localização na linha média hioidea como o cisto tireoglosso.\n\nAlternativa d (Incorreta): Cistos derivados do 2º arco branquial são anomalias congênitas comuns, porém localizam-se na face lateral do pescoço, especificamente ao longo da borda anterior do músculo esternocleidomastoideo. Além disso, o tratamento padrão é a exérese cirúrgica completa, e não a injeção de substâncias esclerosantes como conduta primária.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Cirurgia Infantil",
+      "Neoplasias Benignas e Malignas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:49.564Z"
+  }
+]

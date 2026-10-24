@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_9ca82d13-cc7c-4449-ac3d-561b67ecc832",
+    "originalId": "9ca82d13-cc7c-4449-ac3d-561b67ecc832",
+    "statement": "Mulher de 39 anos, com mamas extremamente densas (categoria D), sem antecedentes familiares. Na USG mamária, observa-se nódulo irregular hipoecoico, não paralelo, margens anguladas e presença de sombra acústica posterior no quadrante superomedial da mama esquerda. Mamografia é inconclusiva devido à densidade mamária. Qual a classificação BI-RADS e conduta adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "BI-RADS 3 — Seguimento em 6 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "BI-RADS 4A — Biópsia por core biopsy",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "BI-RADS 4C — Biópsia por core biopsy",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "BI-RADS 5 — Biópsia imediata e preparo para abordagem cirúrgica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "BI-RADS 0 — Repetir mamografia com incidências adicionais",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o sistema BI-RADS (Breast Imaging-Reporting and Data System) aplicado à ultrassonografia mamária. Para resolvê-la, devemos analisar as características morfológicas do nódulo descrito e correlacioná-las com o risco de malignidade.\n\nAnálise das características ultrassonográficas:\nO nódulo apresenta diversos critérios de alta suspeição para malignidade:\n1. Forma irregular: Sugere crescimento desordenado.\n2. Orientação não paralela (mais alto do que largo): É um dos sinais mais específicos de malignidade na ultrassonografia, indicando que a lesão cresce cruzando os planos teciduais.\n3. Margens anguladas: Indicam infiltração do tecido adjacente.\n4. Sombra acústica posterior: Frequentemente associada ao dismorfismo estromal provocado por carcinomas (embora possa ocorrer em lesões benignas, como fibroses, no contexto de um nódulo irregular, reforça a suspeita).\n\nClassificação e Conduta:\nA presença de três ou mais sinais de alta suspeição eleva a probabilidade de malignidade para mais de 95%, o que enquadra a lesão na categoria BI-RADS 5. A conduta mandatória para BI-RADS 4 ou 5 é a confirmação histopatológica, geralmente iniciada por biópsia percutânea (*core biopsy*).\n\nAnálise das alternativas:\n\na) BI-RADS 3 — Seguimento em 6 meses: Incorreta. A categoria 3 é reservada para achados provavelmente benignos (risco de malignidade menor ou igual a 2%), como nódulos sólidos, ovais, paralelos à pele e de margens circunscritas. As características descritas na questão são francamente suspeitas.\n\nb) BI-RADS 4A — Biópsia por *core biopsy*: Incorreta. A categoria 4A representa baixa suspeição de malignidade (2% a 10%). O nódulo em questão possui múltiplos sinais de alerta que superam em muito esse nível de risco.\n\nc) BI-RADS 4C — Biópsia por *core biopsy*: Incorreta. Embora a categoria 4C indique alta suspeição (50% a 95%), a combinação de forma irregular, margens anguladas, orientação não paralela e sombra acústica posterior é o quadro clássico descrito pelos livros de radiologia para a categoria 5 (acima de 95% de chance de câncer).\n\nd) BI-RADS 5 — Biópsia imediata e preparo para abordagem cirúrgica: Correta. A descrição morfológica é típica de uma lesão maligna (BI-RADS 5). A conduta é a biópsia para confirmação diagnóstica e o planejamento terapêutico subsequente. Nota: Embora a alternativa mencione \"preparo para abordagem cirúrgica\", o primeiro passo prático após a classificação é sempre a biópsia tecidual.\n\ne) BI-RADS 0 — Repetir mamografia com incidências adicionais: Incorreta. A categoria 0 é usada quando o exame é inconclusivo e necessita de avaliação adicional por imagem. No entanto, a ultrassonografia já foi realizada e forneceu achados morfológicos definitivos e altamente suspeitos. Não se deve retardar a biópsia de uma lesão claramente suspeita no USG apenas porque a mamografia foi inconclusiva devido à densidade mamária.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Doenças Benignas da Mama",
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  },
+  {
+    "id": "AJUDA_9cae11ac-9330-490a-be7d-b1d6c1779892",
+    "originalId": "9cae11ac-9330-490a-be7d-b1d6c1779892",
+    "statement": "A menorragia disfuncional, na ausência de patologia orgânica pélvica ou sistêmica, tem sua fisiopatologia classicamente associada a/à:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deficiência primária de fatores da coagulação como o fator VIII.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Presença de pólipos endometriais ou miomas submucosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Disfunção tireoidiana primária não compensada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ciclos menstruais anovulatórios crônicos com desequilíbrio estrogênio-progesterona.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto central dessa questão é a definição de \"sangramento uterino disfuncional\", um termo tradicionalmente utilizado para descrever o sangramento uterino anormal que ocorre na ausência de causas orgânicas demonstráveis (anatômicas ou sistêmicas). Atualmente, a Federação Internacional de Ginecologia e Obstetrícia (FIGO) classifica essas causas no grupo COEIN (Coagulopatia, Ovulatória, Endometrial, Iatrogênica e Não Classificada).\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: A deficiência de fatores de coagulação, como o Fator VIII (Hemofilia A) ou o Fator de von Willebrand, configura uma patologia sistêmica (coagulopatia). O enunciado exclui expressamente causas sistêmicas ao definir a condição como menorragia disfuncional sem patologia orgânica associada.\n\nAlternativa (b) Incorreta: Pólipos endometriais e miomas submucosos são exemplos clássicos de patologias orgânicas pélvicas (causas estruturais). Eles alteram a anatomia da cavidade uterina e a superfície endometrial, causando sangramento por mecanismos mecânicos e vasculares locais, o que contradiz a premissa de ausência de patologia orgânica.\n\nAlternativa (c) Incorreta: Embora o hipotireoidismo ou o hipertireoidismo possam causar irregularidade menstrual, eles são considerados patologias sistêmicas endócrinas. Se o sangramento é secundário a uma disfunção tireoidiana, ele não é classificado como \"disfuncional\" no sentido estrito da exclusão de doenças sistêmicas.\n\nAlternativa (d) Correta: A fisiopatologia da menorragia disfuncional está intimamente ligada aos ciclos anovulatórios. Sem a ovulação, não há a formação do corpo lúteo e, consequentemente, não há produção de progesterona na segunda fase do ciclo. Isso resulta em um estímulo estrogênico contínuo e persistente sobre o endométrio, sem a oposição da progesterona. O endométrio torna-se hiperproliferativo, frágil, com suporte vascular inadequado e descama de forma irregular e excessiva (sangramento por privação relativa ou por ruptura/estímulo persistente de estrogênio). Esta é a causa funcional por excelência, sem lesão estrutural subjacente.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  },
+  {
+    "id": "AJUDA_9cb072ee-2ede-4f9b-8aa9-fa5424d890e1",
+    "originalId": "9cb072ee-2ede-4f9b-8aa9-fa5424d890e1",
+    "statement": "Durante a fase folicular do ciclo menstrual, existem mudanças hormonais que desencadeiam a ovulação. Qual das alternativas abaixo melhor explica o mecanismo hormonal que leva à ovulação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A elevação de progesterona estimula diretamente a secreção de FSH, promovendo a ruptura folicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A secreção de inibina-B pelo corpo lúteo aumenta os níveis de LH, levando à ovulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O aumento sustentado de estrogênio induz um pico de LH hipofisário, que ocorre 24 a 36 horas antes da ovulação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A queda de estrogênio no início da fase lútea estimula a secreção de gonadotrofinas e a ovulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A (Incorreta): A progesterona é o hormônio predominante da fase lútea, sendo produzida em grandes quantidades apenas após a ovulação pelo corpo lúteo. Antes da ovulação, seus níveis são baixos. Além disso, a progesterona exerce predominantemente um feedback negativo sobre a secreção de gonadotrofinas, e não um estímulo direto para a ruptura folicular.\n\nAlternativa B (Incorreta): As inibinas são hormônios glicoproteicos que inibem seletivamente a secreção de FSH. A inibina-B é produzida pelas células da granulosa principalmente na fase folicular, enquanto a inibina-A é o marcador da fase lútea (produzida pelo corpo lúteo). Nenhuma delas é responsável pelo aumento do LH ou pelo gatilho da ovulação.\n\nAlternativa C (Correta): Este é o mecanismo fisiológico clássico. Durante a fase folicular, o folículo dominante cresce e secreta quantidades crescentes de estradiol (estrogênio). Quando os níveis de estradiol atingem uma concentração crítica (geralmente acima de 200 pg/mL) e permanecem sustentados por um período de aproximadamente 48 horas, ocorre uma inversão do feedback de negativo para positivo no eixo hipotálamo-hipófise. Isso resulta em uma liberação maciça de LH (pico de LH). A ovulação ocorre cerca de 32 a 36 horas após o início da elevação do LH e aproximadamente 10 a 12 horas após o seu pico máximo.\n\nAlternativa D (Incorreta): A queda de estrogênio ocorre de forma transitória logo após o pico de LH e imediatamente antes da ovulação, mas ela é uma consequência das alterações no folículo pré-ovulatório e não o estímulo para a ovulação. O evento indutor é o pico de LH causado pelo aumento prévio e sustentado do estrogênio.\n\nResumo do processo:\n1. Elevação sustentada de Estradiol (Feedback positivo).\n2. Pico de LH (Gatilho da ovulação).\n3. Ovulação (24-36h após o início do pico de LH).",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  },
+  {
+    "id": "AJUDA_9cb40583-46f2-4067-b4ba-6c980d58c523",
+    "originalId": "9cb40583-46f2-4067-b4ba-6c980d58c523",
+    "statement": "Paciente de 27 anos, G1P0, comparece à unidade de pronto atendimento apresentando dor pélvica leve e sangramento vaginal discreto há 6 horas. Refere data da última menstruação (DUM) há 7 semanas. Ao exame físico, tem-se sinais vitais normais e exame abdominal normal. Ao exame especular, nota-se sangramento em pequena quantidade, vivo, oriundo do orifício externo do colo uterino. Títulos de beta-hCG realizados há dois dias eram de 2.500 mUI/mL. Títulos de beta-hCG realizados no pronto-socorro são de 3.500 mUI/mL. Foi solicitada ultrassonografia transvaginal, que demonstrou ausência de saco gestacional intrauterino e presença de massa anexial à direita, medindo 3 cm, contendo no seu interior imagem compatível com embrião, sem batimentos cardíacos. Com base no quadro clínico e nos achados dos exames complementares, a conduta mais adequada a ser realizada nessa paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "laparoscopia imediata, considerando os níveis em ascenção de beta-hCG e o tamanho da massa anexial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tratamento com metotrexato intramuscular, considerando os níveis de beta-hCG e o tamanho da massa anexial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "laparotomia imediata, considerando os níveis em ascenção do beta-hCG e a presença de embrião na massa anexial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "monitoramento com ultrassonografia transvaginal e beta-hCG em 48 horas, considerando os níveis em ascenção de beta-hCG.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso: O quadro clínico apresenta uma paciente jovem com diagnóstico de gravidez ectópica tubária à direita. Os pontos-chave para a decisão terapêutica são a estabilidade hemodinâmica (sinais vitais normais), o valor do beta-hCG de 3.500 mUI/mL, o tamanho da massa anexial de 3 cm e a ausência de batimentos cardíacos embrionários.\n\nAlternativa A: Incorreta. A laparoscopia é o tratamento cirúrgico de escolha quando a intervenção invasiva é necessária. Contudo, como a paciente está estável e preenche os critérios clássicos para o tratamento medicamentoso, a cirurgia não deve ser a primeira opção. O tamanho da massa (3 cm) e o nível de beta-hCG (3.500 mUI/mL) ainda permitem a abordagem farmacológica antes de se optar pelo centro cirúrgico.\n\nAlternativa B: Correta. O tratamento medicamentoso com metotrexato intramuscular é a conduta preferencial para casos de gravidez ectópica íntegra que apresentem os seguintes critérios: estabilidade hemodinâmica, massa anexial menor que 3,5 a 4 cm, ausência de atividade cardíaca fetal e níveis de beta-hCG preferencialmente abaixo de 5.000 mUI/mL. A paciente em questão atende a todos esses requisitos, o que torna o uso do metotrexato a conduta mais adequada e menos invasiva para preservar a fertilidade futura.\n\nAlternativa C: Incorreta. A laparotomia (cirurgia aberta) é reservada para situações de urgência extrema, como na gravidez ectópica rota acompanhada de choque hipovolêmico ou quando a via laparoscópica não é tecnicamente possível. A paciente apresenta estabilidade hemodinâmica e exame abdominal normal, o que contraindica uma cirurgia de grande porte como abordagem inicial.\n\nAlternativa D: Incorreta. A conduta expectante (monitoramento) só é segura em casos muito específicos em que os títulos de beta-hCG são baixos (geralmente menores que 1.000 mUI/mL) e já estão em declínio espontâneo. No caso descrito, os níveis de beta-hCG estão aumentando (subiram de 2.500 para 3.500 mUI/mL), indicando que a gestação está em desenvolvimento e há risco iminente de rotura tubária se não houver intervenção ativa.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  },
+  {
+    "id": "AJUDA_9cb7320a-da2b-4a55-85c9-a0a435d83834",
+    "originalId": "9cb7320a-da2b-4a55-85c9-a0a435d83834",
+    "statement": "Arthur, recém-nascido de 34 semanas, parto vaginal após ruptura prematura de membranas por 20 horas. Precisa de suporte ventilatório na sala de parto devido a cianose e esforço respiratório. Com 2 horas de vida, apresenta piora importante da respiração. Sinais e sintomas: Taquipneia: 78 irpm, Gemido expiratório, Batimento de asas nasais, Retrações subcostais e intercostais, Cianose central, Saturação: 83% em ar ambiente, 90% com CPAP nasal 6 cmH₂O. Exame físico: Ausculta: murmúrio vesicular diminuído bilateralmente, sem estertores ou sibilos, Perfusão periférica adequada, FC: 158 bpm, Temperatura normal. Exames complementares: Gasometria: pH: 7,26, pCO₂: 58 mmHg, pO₂: 48 mmHg, HCO₃⁻: 24 mEq/L. Radiografia de tórax: infiltrado granular difuso, padrão reticulogranular fino com broncogramas aéreos. Hemocultura coletada. Glicemia normal. O quadro sugere doença pulmonar primária associada à prematuridade.\n\nCom base nos achados clínicos e radiológicos, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonia neonatal precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome do Desconforto Respiratório (Doença da Membrana Hialina).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Taquipneia Transitória do Recém-Nascido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipertensão Pulmonar Persistente do Recém-Nascido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Atelectasia por obstrução de via aérea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente é um recém-nascido prematuro (34 semanas) que apresenta desconforto respiratório clássico logo após o nascimento, com piora progressiva nas primeiras horas de vida. O quadro clínico de taquipneia, gemido expiratório, batimento de asa de nariz e retrações intercostais/subcostais compõe o escore de Silverman-Andersen, indicando gravidade. A gasometria revela acidose respiratória (pH 7,26 e pCO2 58 mmHg) com hipoxemia. O ponto determinante para o diagnóstico é a radiografia de tórax, que descreve o padrão reticulogranular fino (aspecto de vidro moído) e broncogramas aéreos, que são achados patognomônicos da deficiência de surfactante em pulmões imaturos.\n\nALTERNATIVAS:\n\na) INCORRETA. A pneumonia neonatal precoce é o principal diagnóstico diferencial, especialmente considerando o antecedente de ruptura prematura de membranas por 20 horas (fator de risco infeccioso). Embora a pneumonia possa mimetizar a SDR clínica e radiologicamente, a descrição do infiltrado granular difuso e fino em um prematuro de 34 semanas direciona o diagnóstico primordial para a deficiência de surfactante. Na prática clínica, ambos os diagnósticos frequentemente são tratados em conjunto (surfactante e antibioticoterapia) até que as culturas resultem negativas.\n\nb) CORRETA. A Síndrome do Desconforto Respiratório (SDR), anteriormente chamada de Doença da Membrana Hialina, é causada pela deficiência quantitativa e qualitativa de surfactante, típica da prematuridade. A tríade composta por: 1) prematuridade, 2) desconforto respiratório de início imediato ou nas primeiras horas e 3) radiografia com padrão reticulogranular difuso e broncogramas aéreos, define este diagnóstico. O colapso alveolar (microatelectasias) explica a imagem de \"vidro moído\" e a baixa complacência pulmonar observada.\n\nc) INCORRETA. A Taquipneia Transitória do Recém-Nascido (TTRN) costuma afetar recém-nascidos a termo ou prematuros tardios, geralmente após parto cesáreo sem trabalho de parto. O quadro é causado pelo atraso na reabsorção do líquido pulmonar. Radiologicamente, a TTRN apresenta congestão peri-hilar (coração peludo), presença de líquido em cisuras e sinais de hiperinsuflação, o que difere totalmente do padrão granular e do volume pulmonar reduzido da SDR.\n\nd) INCORRETA. A Hipertensão Pulmonar Persistente do Recém-Nascido (HPPRN) é uma patologia mais comum em recém-nascidos a termo ou pós-termo, frequentemente associada à síndrome de aspiração meconial ou asfixia. Caracteriza-se por hipoxemia grave e lábil, com radiografia de tórax que pode estar normal ou mostrar apenas hipofluxo pulmonar, sem o padrão reticulogranular típico da SDR.\n\ne) INCORRETA. A atelectasia por obstrução de via aérea (como por tampão mucoso) manifesta-se como uma opacidade localizada e densa, com sinais de perda de volume pulmonar regional e desvio de estruturas mediastinais para o lado afetado. No caso descrito, o acometimento é difuso, bilateral e simétrico, caracterizando uma doença do parênquima pulmonar e não uma obstrução mecânica focal.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  },
+  {
+    "id": "AJUDA_9cbe3e1f-3cb1-44e7-b956-315e84c2c835",
+    "originalId": "9cbe3e1f-3cb1-44e7-b956-315e84c2c835",
+    "statement": "Homem com histórico de tabagismo apresenta massa abdominal pulsátil. O próximo exame indicado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tomografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ultrassonografia abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ressonância magnética.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de Aneurisma da Aorta Abdominal (AAA). O perfil típico é um homem, idoso e tabagista, que apresenta uma massa pulsátil e indolor na região abdominal. Diante dessa suspeita clínica, o objetivo inicial é confirmar o diagnóstico e medir o diâmetro da aorta de forma rápida e segura.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A Tomografia Computadorizada (TC) de abdome é um excelente exame, considerado o padrão-ouro para o planejamento cirúrgico e fundamental em casos de suspeita de ruptura (paciente instável). No entanto, não é o \"próximo passo\" na investigação inicial de uma massa pulsátil em ambiente ambulatorial ou de triagem, devido ao custo mais elevado, à necessidade de contraste (muitas vezes) e à exposição à radiação.\n\nAlternativa (b) Correta. A Ultrassonografia (USG) de abdome é o exame de escolha inicial para o rastreio e diagnóstico do aneurisma da aorta abdominal. É um método não invasivo, de baixo custo, amplamente disponível e que não utiliza radiação ou contraste. Possui sensibilidade e especificidade próximas a 100% para identificar o AAA e medir o diâmetro aórtico, sendo a ferramenta ideal para confirmar a suspeita clínica e iniciar o acompanhamento do paciente.\n\nAlternativa (c) Incorreta. A colonoscopia é um exame utilizado para a avaliação da mucosa do cólon e reto, indicado para o rastreamento de câncer colorretal ou investigação de sangramentos digestivos e alterações do hábito intestinal. Não possui qualquer papel na avaliação de massas pulsáteis de origem vascular.\n\nAlternativa (d) Incorreta. A Ressonância Magnética (RM) é um exame de alta precisão, mas é caro, demorado e pouco prático para a abordagem inicial. Assim como a tomografia, pode ser utilizada em casos específicos de planejamento pré-operatório, mas nunca será o próximo exame indicado logo após o exame físico sugerir um aneurisma.\n\nResumo: Em pacientes com massa abdominal pulsátil, a Ultrassonografia é o primeiro exame para confirmar o diagnóstico de AAA. A Tomografia fica reservada para o planejamento cirúrgico ou para casos de urgência/emergência.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Abdome Agudo Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  },
+  {
+    "id": "AJUDA_9cce996c-e2d9-4f55-8ffb-346be4b0722a",
+    "originalId": "9cce996c-e2d9-4f55-8ffb-346be4b0722a",
+    "statement": "Mulher, 54 anos de idade, trabalha como garçonete, apresenta parestesias e hipoestesia na região do polegar até a metade radial do dedo anelar, acompanhadas de dor e fraqueza nas mãos, especialmente ao realizar tarefas no trabalho. Relata episódios frequentes de despertar noturno com dormência nessa região, o que piora sua qualidade de sono. O achado de exame físico esperado nesta paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manobra de Filkenstein positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teste de Phalen positivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Presença de dedo em gatilho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Presença de dedo em botoeira.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Presença de nódulos de Heberden.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico: A paciente apresenta um quadro clássico de Síndrome do Túnel do Carpo (STC). Os principais indícios são a parestesia (formigamento) e hipoestesia na distribuição do nervo mediano (polegar, indicador, dedo médio e metade radial do anelar), a piora com atividades laborais repetitivas e, principalmente, o despertar noturno com dormência, sinal muito específico desta patologia decorrente da compressão do nervo mediano no punho.\n\nAlternativa a: Incorreta. A manobra de Finkelstein é utilizada para o diagnóstico da Tenossinovite de De Quervain. Ela consiste no desvio ulnar passivo do punho com o polegar fletido e aduzido dentro da mão fechada, o que gera dor na região da estiloide radial, e não sintomas neurológicos na palma da mão e dedos.\n\nAlternativa b: Correta. O teste de Phalen é realizado solicitando que a paciente mantenha os punhos em flexão máxima, encostando o dorso das mãos, por 30 a 60 segundos. Esse posicionamento aumenta a pressão intrínseca no canal do carpo e comprime o nervo mediano, reproduzindo os sintomas de dormência e formigamento descritos no caso, sendo um dos testes provocativos mais importantes para a STC.\n\nAlternativa c: Incorreta. O dedo em gatilho (tenossinovite estenosante) decorre de uma inflamação ou espessamento no tendão flexor que dificulta sua passagem pela polia A1. Isso causa dor na base do dedo e um travamento característico (estalido) durante o movimento de flexão e extensão, sem a distribuição sensitiva típica do nervo mediano.\n\nAlternativa d: Incorreta. A deformidade em botoeira (Boutonnière) caracteriza-se pela flexão da articulação interfalângica proximal e hiperextensão da distal. É uma alteração anatômica estrutural resultante de lesão da banda central do tendão extensor, comum em traumas ou artrite reumatoide, e não possui relação com compressão nervosa.\n\nAlternativa e: Incorreta. Os nódulos de Heberden são sinais de osteoartrite (desgaste articular) localizados nas articulações interfalângicas distais. Eles provocam aumento de volume ósseo, deformidade e dor local, mas não explicam a parestesia noturna ou a fraqueza muscular no território do nervo mediano.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Doenças da Mão e Síndromes Compressivas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  },
+  {
+    "id": "AJUDA_9cd0d90b-51d6-4452-ac67-7282f1c00589",
+    "originalId": "9cd0d90b-51d6-4452-ac67-7282f1c00589",
+    "statement": "Paciente vítima de ferimento corto‑contuso na face de aproximadamente 7 cm que se estende do queixo até a parte interna do lábio inferior. \nCom base nesse caso clínico hipotético, assinale a opção correta, em relação ao melhor fio para a realização da dessa sutura.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nylon 5.0 em todo o ferimento, com pontos simples separado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vicryl 6‑0 na mucosa com ponto contínuo e Nylon 5.0 na pele com ponto contínuo ancorado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vicryl 5‑0 na mucosa e Nylon 6.0 na pele, com pontos simples separado em ambos os locais",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Vicryl 5‑0 na mucosa e Nylon 3.0 na pele, com pontos simples separados em ambos os locais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Vicryl 6‑0 na mucosa com ponto contínuo ancorado e Nylon 3.0 na pele com ponto simples separado",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A sutura de ferimentos que envolvem a transição entre a pele e a mucosa oral, como o descrito no caso (estendendo-se do queixo até a parte interna do lábio), exige a escolha de materiais diferentes para cada tipo de tecido, visando à melhor cicatrização e ao menor impacto estético.\n\nAnálise das alternativas:\n\na) Incorreta. O Nylon é um fio não absorvível e monofilamentar. Embora seja excelente para a pele, seu uso na mucosa oral é inadequado, pois as extremidades do fio são rígidas e causam grande desconforto e lesões na língua e bochechas do paciente. Além disso, exigiria uma remoção tecnicamente difícil em área sensível.\n\nb) Incorreta. O Vicryl 6-0 é um fio muito fino para a mucosa oral, que sofre constantes tensões durante a fala e a mastigação, aumentando o risco de deiscência (abertura da sutura). Já na pele, o uso de ponto contínuo ancorado (chuleio ancorado) é contraindicado na face, pois essa técnica tende a deixar marcas transversais permanentes (aspecto de \"escada\") e pode comprometer a microcirculação das bordas da ferida.\n\nc) Correta. Esta alternativa segue os preceitos técnicos da cirurgia reparadora. O Vicryl 5-0 é um fio absorvível sintético ideal para a mucosa, pois oferece resistência adequada e dispensa a retirada de pontos em ambiente úmido. O Nylon 6.0 é o fio de escolha para a pele da face, por ser fino o suficiente para minimizar cicatrizes. O uso de pontos simples separados em ambos os locais permite um melhor alinhamento das bordas (especialmente importante na linha cutâneo-mucosa do lábio) e maior segurança, pois, se um ponto romper ou infectar, a integridade do restante da sutura é mantida.\n\nd) Incorreta. Embora a escolha do Vicryl 5-0 para a mucosa esteja correta, o Nylon 3.0 é um fio extremamente grosso para a face. O uso de fios de grande calibre em áreas estéticas causa trauma tecidual excessivo e resulta em cicatrizes inestéticas e grosseiras.\n\ne) Incorreta. O Nylon 3.0 é excessivamente calibroso para a face (o padrão para o rosto varia entre 5-0 e 6-0). Além disso, pontos contínuos ancorados na mucosa não são a técnica de eleição para ferimentos traumáticos, onde a irregularidade das bordas e o edema favorecem o uso de pontos separados para uma melhor coaptação dos tecidos.\n\nResumo técnico:\n1. Mucosa: Fios absorvíveis (Vicryl) de calibre intermediário (4-0 ou 5-0).\n2. Pele da Face: Fios não absorvíveis (Nylon) de calibre fino (5-0 ou 6-0).\n3. Técnica: Pontos simples separados são preferíveis em traumas para garantir a eversão das bordas e o melhor resultado estético.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  },
+  {
+    "id": "AJUDA_9cd86313-e4c6-4917-ad89-147f0006d925",
+    "originalId": "9cd86313-e4c6-4917-ad89-147f0006d925",
+    "statement": "Homem, de 38 anos de idade, pedreiro, procura a Unidade Básica de Saúde por dor na lombar “no centro das costas, embaixo”, há cerca de 8 meses. Dor em peso/fadiga, que piora ao final do dia e melhora com repouso, banho quente e analgésico comum que ele compra na farmácia. Refere formigamento ocasional em nádega direita “quando força muito”, mas nega perda de força ou queda do pé. Nega antecedentes pessoais ou familiares relevantes. Diz que “precisa fazer uma ressonância da coluna”, porque acha que pode estar com “bico de papagaio” e ter algo sério que o deixe \"travado\". Relata que está há 3 dias sem conseguir trabalhar por causa da dor e teme ser despedido: “Se eu travo, o patrão já arruma outro”.\n\nQual dos aspectos do Primeiro Componente do Método Clínico Centrado na Pessoa está mais comprometido neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Funcionalidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Expectativas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sentimentos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ideias",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O primeiro componente do Método Clínico Centrado na Pessoa (MCCP) consiste em explorar a saúde, a doença e a experiência da pessoa com a enfermidade. Para facilitar essa exploração, utiliza-se o mnemônico SIFE (ou CIFEP), que subdivide a experiência da doença em quatro dimensões: Sentimentos, Ideias, Funcionalidade e Expectativas.\n\nA questão pede para identificar qual dessas dimensões está mais comprometida no relato do paciente.\n\nAnálise das alternativas:\n\na) Funcionalidade: Esta é a alternativa correta. A funcionalidade refere-se ao impacto que o problema de saúde causa na vida cotidiana do paciente, em suas atividades sociais, no lazer e, fundamentalmente, em sua capacidade de trabalho. O enunciado destaca que o paciente é pedreiro e está há três dias sem conseguir trabalhar. Como sua subsistência depende do esforço físico, a incapacidade laboral é o comprometimento mais objetivo e grave relatado, afetando diretamente sua vida e segurança financeira.\n\nb) Expectativas: Incorreta. As expectativas são o que o paciente espera que aconteça na consulta ou o que ele deseja do médico. No caso, sua expectativa é realizar uma ressonância magnética. Embora ele tenha essa demanda, a expectativa em si não está \"comprometida\", mas sim expressa como um desejo de investigação.\n\nc) Sentimentos: Incorreta. Os sentimentos envolvem as angústias, medos e emoções do paciente em relação à dor. O paciente demonstra medo de ser demitido e de ficar \"travado\". Embora esses sentimentos sejam relevantes, eles são consequência direta do comprometimento funcional (a dor que o impede de trabalhar). No contexto de uma avaliação sobre o que está mais \"comprometido\" na vida do indivíduo, a perda da capacidade de exercer sua profissão (funcionalidade) precede a preocupação emocional.\n\nd) Ideias: Incorreta. As ideias representam o modelo explicativo do paciente, ou seja, o que ele acha que tem. Ele acredita ter um \"bico de papagaio\" e algo sério na coluna. As ideias são crenças e suposições; portanto, não são algo que se \"compromete\", mas sim o entendimento subjetivo do paciente sobre sua condição.\n\nEm resumo, para um trabalhador braçal, a impossibilidade de executar sua função por três dias consecutivos define um prejuízo funcional significativo, tornando a letra (a) a resposta mais adequada.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  },
+  {
+    "id": "AJUDA_9ce07be5-b25e-470d-a840-5a5676f4a462",
+    "originalId": "9ce07be5-b25e-470d-a840-5a5676f4a462",
+    "statement": "R.D.S., 24 anos, primigesta, caixa de supermercado, foi na USF pois descobriu a gestação no 5° mês e foi encaminhada para a Casa de Saúde Stella Maris. Lá, a via de parto foi cesárea, pois não teve dilatação (sic); recém-nascido nasceu de 39 semanas, AIG (adequado para a idade gestacional), sexo feminino, peso: 3270g, Comprimento: 48cm, PC: 34cm e Apgar 9 e 10. Seu nome é Maria Clara. Após os cuidados iniciais, o binômio foi encaminhado ao alojamento conjunto. Recebeu orientações da pediatra e da equipe de enfermagem sobre aleitamento materno e recebeu alta após 48h, pesando 3080g. Mãe retorna na consulta no USF, queixando-se de mamilos muito doloridos e com fissuras. Maria Clara está com 15 dias de vida, pesando 3650g.\n\nSobre o texto acima, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maria Clara ganhou peso insatisfatoriamente e necessita de complementação com fórmula.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As fissuras são contraindicações para o aleitamento neste momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O/a médico/a opta por incentivar o aleitamento e corrige a pega do bebê ao seio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Maria Clara ganhou peso satisfatoriamente com o uso de fórmula láctea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para analisar esta questão, devemos focar em dois pontos principais: a evolução ponderal (ganho de peso) do recém-nascido e o manejo das complicações da lactação (fissuras mamilares).\n\nAnálise do Peso:\nMaria Clara nasceu com 3.270 g e teve alta com 3.080 g (perda fisiológica de 5,8%, dentro do esperado até 10 %). Aos 15 dias de vida, ela pesa 3.650 g. Isso significa um ganho de 380 g em relação ao peso de nascimento em apenas duas semanas, o que representa uma média de aproximadamente 25 g/dia. O esperado para um recém-nascido é recuperar o peso de nascimento entre o 10.º e o 14.º dia de vida e ganhar, em média, de 20 a 30 g por dia no primeiro mês. Portanto, o ganho de peso está excelente e sugere que o aleitamento está sendo eficaz, apesar da dor materna.\n\nAnálise das Fissuras Mamilares:\nAs fissuras mamilares são causadas, em sua grande maioria, pela técnica incorreta de amamentação, especificamente a \"pega\" inadequada. O tratamento não envolve suspender o aleitamento, mas sim corrigir a técnica para que o bebê abocanhe a aréola e não apenas o mamilo, reduzindo o trauma.\n\nAnálise das alternativas:\n\na) Incorreta. Como calculado, o ganho de peso foi de 380 g em 15 dias (média de 25,3 g/dia), o que é considerado muito satisfatório. Não há indicação de fórmula láctea.\n\nb) Incorreta. Fissuras mamilares não são contraindicações ao aleitamento materno. Pelo contrário, deve-se manter o aleitamento e intervir na causa do problema (ajuste da técnica).\n\nc) Correta. Esta é a conduta padrão. Diante de um lactente com ótimo ganho de peso em aleitamento materno, mas com queixa materna de dor e fissuras, o papel do profissional de saúde é apoiar a continuidade da amamentação e realizar a correção da pega. A pega correta é caracterizada por: boca bem aberta, lábios voltados para fora (em \"peixinho\"), queixo encostando na mama e mais aréola visível acima da boca do bebê do que abaixo.\n\nd) Incorreta. Embora o ganho de peso tenha sido satisfatório, o texto não menciona o uso de fórmula láctea. O quadro clínico descreve um binômio em aleitamento materno com dificuldades técnicas iniciais. Além disso, o sucesso do ganho de peso reforça que o leite materno está sendo suficiente.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:15.522Z"
+  }
+]

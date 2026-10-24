@@ -1,0 +1,517 @@
+[
+  {
+    "id": "AJUDA_ff8dd096-87b3-4ad7-bf26-f6f5a3b22790",
+    "originalId": "ff8dd096-87b3-4ad7-bf26-f6f5a3b22790",
+    "statement": "Mulher de 60 anos, com diagnóstico de adenocarcinoma de pulmão, em tratamento com quimioterapia (QT), procurou a emergência com dispneia progressiva há alguns dias, associada à dor do tipo pleurítica, que piora ao deitar. Ao exame físico, tinha hipofonese de bulhas, turgência jugular a 90° e pressão arterial (PA) = 100x60mmHg, na inspiração, e 120x80mmHg, na expiração. O diagnóstico mais provável e a melhor conduta nesse momento, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tamponamento cardíaco / pericardiocentese",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "embolia pulmonar / anticoagulação plena",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pericardite constritiva / poliquimioterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "linfangite pulmonar / corticoide",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito é um exemplo clássico de tamponamento cardíaco em um paciente oncológico. A paciente apresenta a combinação de três sinais fundamentais conhecidos como Tríade de Beck: hipofonese de bulhas cardíacas, turgência jugular patológica e hipotensão arterial (ou tendência à hipotensão). Além disso, a questão descreve detalhadamente o pulso paradoxal, que é a queda da pressão arterial sistólica maior que 10 mmHg durante a inspiração (no caso, uma queda de 20 mmHg, de 120 para 100 mmHg).\n\nO adenocarcinoma de pulmão é uma das neoplasias que mais frequentemente causam metástases pericárdicas, levando ao acúmulo de líquido no saco pericárdico. Quando esse acúmulo é rápido ou volumoso o suficiente para restringir o enchimento ventricular, ocorre o tamponamento.\n\nAbaixo, a análise das alternativas:\n\na) CORRETA. O diagnóstico é tamponamento cardíaco, confirmado pela Tríade de Beck e pelo pulso paradoxal. A conduta imediata para salvar a vida da paciente e estabilizar a hemodinâmica é a pericardiocentese (drenagem do líquido pericárdico), que alivia a pressão sobre o coração.\n\nb) INCORRETA. Embora a embolia pulmonar seja comum em pacientes com câncer e cause dispneia e turgência jugular, ela não explica a hipofonese de bulhas nem o pulso paradoxal clássico com queda pressórica acentuada. Além disso, a anticoagulação plena em um paciente com possível tamponamento ou derrame pericárdico hemorrágico seria perigosa.\n\nc) INCORRETA. A pericardite constritiva é um processo crônico de fibrose do pericárdio. Embora possa causar turgência jugular, ela geralmente se manifesta com o sinal de Kussmaul (aumento da turgência jugular na inspiração) e não com o pulso paradoxal clássico do tamponamento agudo. O tratamento definitivo seria a pericardiectomia, e não a poliquimioterapia.\n\nd) INCORRETA. A linfangite carcinomatosa pulmonar causa dispneia progressiva e tosse seca devido à infiltração tumoral dos vasos linfáticos do parênquima pulmonar. No entanto, ela não altera os sinais vitais ou o exame físico cardíaco da maneira descrita (bulhas abafadas e pulso paradoxal são sinais de patologia pericárdica, não pulmonar parenquimatosa).",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Pericardiopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  },
+  {
+    "id": "AJUDA_ff9a4719-1256-4e1e-9b47-41ba0f5e322b",
+    "originalId": "ff9a4719-1256-4e1e-9b47-41ba0f5e322b",
+    "statement": "Atualmente é recomendado utilizar como um dos critérios de diagnóstico do diabetes melito a presença de",
+    "options": [
+      {
+        "id": "A",
+        "text": "glicemia de jejum maior que 125 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "HbA1c maior ou igual a 6,5%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "glicemia no teste de tolerância à glicose por via oral (TTGO), com 1 hora maior que 200 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "glicemia no teste de tolerância à glicose por via oral (TTGO), com 2 horas maior ou igual a 190 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "cetonemia em jejum.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O diagnóstico de diabetes melito (DM) baseia-se em critérios laboratoriais bem estabelecidos pelas principais sociedades, como a Sociedade Brasileira de Diabetes (SBD) e a American Diabetes Association (ADA). Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a: Incorreta. O ponto de corte oficial para o diagnóstico de diabetes por meio da glicemia plasmática de jejum é um valor maior ou igual a 126 mg/dL. Valores situados entre 100 e 125 mg/dL são classificados como glicemia de jejum alterada, caracterizando uma fase de pré-diabetes. O termo \"maior que 125 mg/dL\" é tecnicamente impreciso perante as diretrizes que definem o valor exato de 126 mg/dL.\n\nAlternativa b: Correta. A hemoglobina glicada (HbA1c) maior ou igual a 6,5% é um critério diagnóstico consolidado. Este exame deve ser realizado por laboratórios que utilizem métodos certificados pela NGSP e padronizados pelo DCCT. A HbA1c reflete o controle glicêmico médio dos últimos 2 a 3 meses e tem a vantagem de não exigir obrigatoriamente o jejum.\n\nAlternativa c: Incorreta. No Teste de Tolerância à Glicose por via Oral (TTGO) com 75 g de glicose, o diagnóstico de diabetes melito na população geral é definido pelo valor da glicemia coletada no tempo de 120 minutos (2 horas). O valor de 1 hora não é utilizado para o diagnóstico de diabetes fora do contexto de diabetes gestacional.\n\nAlternativa d: Incorreta. De acordo com as diretrizes vigentes, no TTGO, o diagnóstico de diabetes ocorre quando a glicemia de 2 horas é maior ou igual a 200 mg/dL. Valores entre 140 e 199 mg/dL após 2 horas de sobrecarga são classificados como tolerância à glicose diminuída (pré-diabetes).\n\nAlternativa e: Incorreta. A cetonemia refere-se à presença de corpos cetônicos no sangue, o que indica um estado de cetose. Embora seja um achado crucial para o diagnóstico da cetoacidose diabética (uma complicação aguda), a cetonemia não faz parte dos critérios diagnósticos para definir a presença da doença crônica diabetes melito.\n\nResumo dos critérios diagnósticos atuais:\n1. Glicemia de jejum maior ou igual a 126 mg/dL.\n2. Hemoglobina glicada (HbA1c) maior ou igual a 6,5%.\n3. Glicemia de 2 horas no TTGO maior ou igual a 200 mg/dL.\n4. Glicemia aleatória maior ou igual a 200 mg/dL em pacientes com sintomas clássicos de hiperglicemia.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  },
+  {
+    "id": "AJUDA_ff9e641e-6bdb-4b84-8688-2fe63d84ada5",
+    "originalId": "ff9e641e-6bdb-4b84-8688-2fe63d84ada5",
+    "statement": "Homem, 60 anos de idade, obeso (peso: 100 kg), com risco cardiovascular alto e em uso de glimepirida, empagliflozina e metformina, apresenta hemoglobina acima da meta após 4 meses de terapia tripla.\n\nNesse momento, segundo diretrizes brasileiras de diabetes, deve-se considerar",
+    "options": [
+      {
+        "id": "A",
+        "text": "aguardar 12 meses antes de mudança terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "associar liraglutida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "substituir a empagliflozina por pioglitazona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "substituir a empagliflozina por liraglutida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "suspender os três antidiabéticos orais e iniciar tratamento apenas com insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve um paciente de 60 anos, obeso e com alto risco cardiovascular, que não atingiu a meta de hemoglobina glicada após 4 meses de terapia tripla com metformina, glimepirida e empagliflozina. Segundo as diretrizes da Sociedade Brasileira de Diabetes (SBD), a conduta deve focar não apenas no controle glicêmico, mas também na redução do peso e na proteção cardiovascular.\n\nAnálise das alternativas:\n\na) Incorreta. O ajuste terapêutico deve ser realizado quando a meta não é atingida em um período de 3 a 6 meses. Aguardar 12 meses prolongaria desnecessariamente a exposição do paciente à hiperglicemia e ao risco de complicações.\n\nb) Correta. A liraglutida é um agonista do receptor de GLP-1 (arGLP-1). Essa classe é fortemente recomendada para pacientes com alto risco cardiovascular e obesidade, pois promove redução significativa de eventos cardiovasculares maiores (MACE), auxilia na perda de peso e possui alta eficácia na redução da glicada. A associação com a terapia atual é o próximo passo lógico para intensificar o tratamento.\n\nc) Incorreta. A empagliflozina (iSGLT2) é fundamental para este paciente por seus benefícios cardiovasculares e na redução de peso. A pioglitazona, embora eficaz no controle glicêmico, está associada ao ganho de peso e pode aumentar o risco de insuficiência cardíaca, sendo menos indicada para um paciente obeso com alto risco cardiovascular.\n\nd) Incorreta. Não se deve substituir a empagliflozina pela liraglutida, mas sim associá-las ou manter ambas no esquema, pois as duas classes (iSGLT2 e arGLP-1) possuem benefícios cardiovasculares complementares e independentes. A substituição removeria o benefício já obtido com o inibidor de SGLT2.\n\ne) Incorreta. A insulinização plena com suspensão de todos os antidiabéticos orais é reservada para casos de falência extrema, sintomas de catabolismo (perda de peso involuntária, poliúria, polidipsia severa) ou glicemias muito elevadas. No cenário de obesidade e risco cardiovascular, prioriza-se a adição de arGLP-1 antes de considerar esquemas complexos de insulina, visando evitar o ganho de peso e o risco de hipoglicemia associados à insulinoterapia.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  },
+  {
+    "id": "AJUDA_ffa299d2-6dc4-4320-ba24-4847559ebd12",
+    "originalId": "ffa299d2-6dc4-4320-ba24-4847559ebd12",
+    "statement": "Adolescente, sexo feminino, 14 anos de idade, apresenta-se no consultório com febre persistente há duas semanas, fadiga intensa, dor de garganta e linfadenopatia cervical. O exame físico revela amígdalas aumentadas com exsudato branco, linfonodos cervicais anteriores e posteriores palpáveis e hepatoesplenomegalia leve. O paciente também relata uma perda de apetite, dores musculares e discreto exantema inespecífico. Um hemograma completo mostra linfocitose com presença de linfócitos atípicos. O teste rápido para estreptococo é negativo. Adolescente não iniciou atividade sexual.\nAssinale a alternativa que apresenta o diagnóstico mais provável para essa condição.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Faringite causada pelo estreptococo beta-hemolítico do grupo A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infecção aguda pelo Epstein Barr vírus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Infecção aguda pelo vírus HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infecção aguda por Zika vírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Linfoma de Hodgkin.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente de 14 anos apresenta um quadro clássico de mononucleose infecciosa, uma condição frequentemente causada pelo vírus Epstein-Barr (EBV). Os pontos fundamentais para o diagnóstico neste caso são:\n1. Faixa etária: Adolescentes e adultos jovens são o grupo epidemiológico principal.\n2. Tríade clínica: Febre prolongada (duas semanas), faringite com exsudato e linfadenopatia cervical (que classicamente envolve a cadeia posterior).\n3. Achados sistêmicos: Fadiga intensa, hepatoesplenomegalia e exantema inespecífico.\n4. Laboratório: Presença de linfocitose com linfócitos atípicos, que são células T citotóxicas ativadas em resposta à infecção das células B pelo vírus.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A faringite estreptocócica geralmente apresenta um início mais agudo e duração menor que duas semanas. Embora cause exsudato e linfadenopatia cervical (predominantemente anterior), não costuma causar esplenomegalia ou linfocitose atípica. O teste rápido negativo reforça que o Streptococcus pyogenes não é o agente causal.\n\nAlternativa b) Correta. A infecção aguda pelo vírus Epstein-Barr (EBV) é a causa mais comum da síndrome da mononucleose. O caso descreve perfeitamente a apresentação típica: febre persistente, dor de garganta com exsudato, adenomegalia cervical posterior, fadiga, hepatoesplenomegalia e a presença característica de linfócitos atípicos no sangue periférico.\n\nAlternativa c) Incorreta. A infecção aguda pelo HIV (síndrome retroviral aguda) pode mimetizar a mononucleose. No entanto, o enunciado afirma que a paciente não iniciou atividade sexual, o que torna essa hipótese improvável no contexto clínico e epidemiológico apresentado. Além disso, o exsudato amigdaliano é muito mais frequente na infecção pelo EBV.\n\nAlternativa d) Incorreta. O Zika vírus manifesta-se tipicamente com exantema maculopapular pruriginoso, febre baixa, conjuntivite não purulenta e artralgia. Não é uma causa comum de faringite exsudativa grave, linfadenopatia cervical marcante ou linfocitose atípica significativa.\n\nAlternativa e) Incorreta. O Linfoma de Hodgkin pode cursar com febre e linfadenopatia persistente (sintomas B). Entretanto, a presença de dor de garganta com exsudato amigdaliano e linfócitos atípicos aponta fortemente para um processo infeccioso agudo e autolimitado como a mononucleose, e não para uma neoplasia hematológica.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  },
+  {
+    "id": "AJUDA_ffa6eec6-b101-4ce2-8507-0f655ad0e1d4",
+    "originalId": "ffa6eec6-b101-4ce2-8507-0f655ad0e1d4",
+    "statement": "Um hospital está avaliando a inclusão do teste pesquisa de antígeno urinário de pneumococo para pacientes com pneumonia. Esse teste tem sensibilidade de 70%, especificidade de 98%, razão de verossimilhança positiva de 35, razão de verossimilhança negativa de 0,31. Em relação a este teste, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Há 98% de chance de se identificar falso-negativos (especificidade).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Há 70% de chance de se identificar os verdadeiros negativos (sensibilidade).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Resultado positivo aumentaria a probabilidade pós-teste de pneumococo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "31% dos pacientes com resultado negativo são verdadeiro-negativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "35% dos pacientes com resultado positivo são falso-positivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental compreender os conceitos de acurácia diagnóstica (sensibilidade e especificidade) e as razões de verossimilhança (likelihood ratios).\n\nAlternativa a: Incorreta. A especificidade de 98% indica a capacidade do teste em identificar corretamente os verdadeiros-negativos (indivíduos sem a doença que testam negativo). O erro da alternativa é associar especificidade a falsos-negativos. Os falsos-negativos estão relacionados à sensibilidade (100% menos a sensibilidade).\n\nAlternativa b: Incorreta. A sensibilidade de 70% indica a capacidade do teste em identificar corretamente os verdadeiros-positivos (indivíduos com a doença que testam positivo). A identificação de verdadeiros-negativos é função da especificidade, não da sensibilidade.\n\nAlternativa c: Correta. A Razão de Verossimilhança Positiva (RV+) descreve o quanto a probabilidade de uma doença aumenta após um resultado de teste positivo. Sempre que a RV+ é maior que 1, a probabilidade pós-teste aumenta em relação à probabilidade pré-teste. Com uma RV+ de 35 (valor considerado muito alto), um resultado positivo eleva significativamente a chance de o paciente realmente ter pneumonia pneumocócica.\n\nAlternativa d: Incorreta. O valor 0,31 refere-se à Razão de Verossimilhança Negativa (RV-), que é uma razão entre a probabilidade de um doente ter teste negativo e a probabilidade de um não doente ter teste negativo. Ela não representa uma porcentagem direta de pacientes verdadeiros-negativos (conceito que remete ao Valor Preditivo Negativo, o qual depende da prevalência da doença na população).\n\nAlternativa e: Incorreta. O valor 35 é a Razão de Verossimilhança Positiva (RV+) e não a taxa de falsos-positivos. A taxa de falsos-positivos é calculada como (100% menos a especificidade), o que, neste caso, seria de apenas 2% (100% - 98% = 2%). A RV+ de 35 significa que o resultado positivo é 35 vezes mais provável em doentes do que em não doentes.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  },
+  {
+    "id": "AJUDA_ffac87d5-d2ff-4e91-8ea0-dcd47dfe567f",
+    "originalId": "ffac87d5-d2ff-4e91-8ea0-dcd47dfe567f",
+    "statement": "O kwashiorkor é uma forma grave de desnutrição proteico-energética caracterizada principalmente pela deficiência de proteínas na dieta, apesar da ingestão calórica muitas vezes ser adequada. Essa condição ocorre com maior frequência em crianças em idade pré-escolar, especialmente em regiões onde a oferta de proteínas de alto valor biológico é limitada. Os principais sinais clínicos incluem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Edema, atrofia muscular e ausência de gordura subcutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipoalbuminemia, edema e esteatose hepática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hiperalbuminemia, lesões de pele e esteatose hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipoalbuminemia, ausência de gordura subcutânea e alterações de cabelo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hiperalbuminemia, edema e esteatose hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Kwashiorkor representa a forma edematosa da desnutrição proteico-energética grave. Diferente do marasmo, onde há uma deficiência global de calorias e proteínas, no Kwashiorkor a principal deficiência é proteica, frequentemente em dietas ricas em carboidratos.\n\nAnálise das alternativas:\n\nAlternativa a - Incorreta. Embora o edema e a atrofia muscular estejam presentes, a ausência de gordura subcutânea é o sinal patognomônico do marasmo. No Kwashiorkor, a gordura subcutânea é geralmente preservada, o que pode dar uma falsa impressão de estado nutricional adequado para observadores não treinados.\n\nAlternativa b - Correta. Esta alternativa descreve os pilares fisiopatológicos do Kwashiorkor:\n1. Hipoalbuminemia: A baixa ingestão de aminoácidos limita a produção hepática de proteínas viscerais, principalmente a albumina.\n2. Edema: A redução da albumina diminui a pressão oncótica no compartimento intravascular, levando ao extravasamento de líquido para o interstício (edema), que tipicamente começa pelos membros inferiores e pode evoluir para anasarca.\n3. Esteatose hepática: A falta de proteínas impede a síntese de apolipoproteínas, que são necessárias para transportar os lipídios para fora do fígado. Isso resulta em acúmulo de gordura nos hepatócitos, causando hepatomegalia.\n\nAlternativa c - Incorreta. O termo hiperalbuminemia refere-se ao aumento de albumina no sangue, o que não ocorre em estados de desnutrição. O correto é hipoalbuminemia.\n\nAlternativa d - Incorreta. Assim como na alternativa A, a ausência de gordura subcutânea aponta para o diagnóstico de marasmo (caracterizado pelo aspecto de pele e osso). No Kwashiorkor, o tecido adiposo costuma estar presente.\n\nAlternativa e - Incorreta. O erro reside novamente no termo hiperalbuminemia. O desequilíbrio metabólico do Kwashiorkor é marcado obrigatoriamente pela queda das proteínas séricas.\n\nConclusão: A alternativa B está correta, pois a tríade hipoalbuminemia, edema e esteatose hepática define os achados clássicos desta síndrome, resultantes da deficiência proteica seletiva.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Desnutrição na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  },
+  {
+    "id": "AJUDA_ffadb113-1335-4124-97df-dc0f489a1a1f",
+    "originalId": "ffadb113-1335-4124-97df-dc0f489a1a1f",
+    "statement": "Mulher de 63 anos, com adenocarcinoma de cólon transverso proximal (flexura hepática). Colonoscopia mostra lesão estenosante, e tomografia não mostra metástases.\n\nConsiderando o tratamento cirúrgico oncológico adequado, a conduta mais indicada nesse caso é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemicolectomia direita ampliada, com ligadura central da artéria cólica média e ileocólica, preferencialmente por via minimamente invasiva em centros habilitados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Colectomia segmentar apenas da flexura hepática, preservando cólica média e ileocólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hemicolectomia esquerda, pois o tumor se encontra no território da artéria mesentérica inferior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ressecção local endoscópica ampliada, desde que se obtenham margens livres macroscopicamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Proctocolectomia total, pela alta incidência de lesões metacrônicas no cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para o tratamento cirúrgico do adenocarcinoma de cólon, o princípio fundamental é a ressecção em bloco do segmento acometido, com margens de segurança adequadas e, crucialmente, a linfadenectomia regional. A extensão da ressecção é determinada pelo suprimento arterial e pela drenagem linfática do tumor.\n\nAlternativa A (Correta): Tumores localizados na flexura hepática ou no cólon transverso proximal exigem uma hemicolectomia direita ampliada. Isso ocorre porque a drenagem linfática dessa região segue os vasos que a suprem: a artéria ileocólica, a artéria cólica direita e, fundamentalmente, a artéria cólica média. A ligadura central (na origem dos vasos) da artéria ileocólica e da artéria cólica média garante a retirada de todos os linfonodos do pedículo vascular (dissecção D2/D3). Atualmente, a via minimamente invasiva (laparoscopia ou robótica) é o padrão-ouro em centros especializados, pois oferece recuperação mais rápida com o mesmo rigor oncológico.\n\nAlternativa B (Incorreta): A colectomia segmentar da flexura hepática é considerada oncologicamente inadequada para o adenocarcinoma invasivo. Ela não permite a retirada completa da cadeia linfonodal correspondente aos vasos que irrigam o segmento, o que aumenta drasticamente o risco de recidiva local e falha no estadiamento nodal.\n\nAlternativa C (Incorreta): A hemicolectomia esquerda é indicada para tumores localizados no cólon descendente ou sigmoide, que são territórios irrigados pela artéria mesentérica inferior. O cólon transverso proximal e a flexura hepática pertencem ao território da artéria mesentérica superior.\n\nAlternativa D (Incorreta): A ressecção endoscópica (como a mucosectomia ou a dissecção submucosa) é reservada para lesões pré-malignas ou carcinomas precoces (T1) com critérios de baixíssimo risco de metástase linfonodal. Uma lesão estenosante indica invasão profunda da parede (pelo menos T2 ou T3), exigindo cirurgia radical com linfadenectomia.\n\nAlternativa E (Incorreta): A proctocolectomia total (retirada de todo o cólon e reto) é uma cirurgia de grande porte indicada apenas em casos específicos, como na Polipose Adenomatosa Familiar (PAF), em alguns casos de Doença Inflamatória Intestinal com câncer ou quando há tumores sincrônicos (múltiplos tumores simultâneos) em diferentes lados do cólon. Não há indicação para um tumor único e localizado de forma esporádica.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  },
+  {
+    "id": "AJUDA_ffadc82e-b83e-4af6-bc3b-0f82825bcacd",
+    "originalId": "ffadc82e-b83e-4af6-bc3b-0f82825bcacd",
+    "statement": "Lactente, 1 ano de idade, foi submetido à esofagocoloplastia devido a atresia de esôfago. Após 24 horas de cirurgia, apresenta-se gemente, com má perfusão periférica, oligúria e débito vinhoso fétido pela gastrostomia. Ao exame físico, apresenta FC de 190 bpm e PA de 70×40 mmHg. Saturação de oxigênio não aferível. Murmúrios vesiculares reduzidos em bases. Assinale a alternativa que apresenta a complicação mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deiscência da anastomose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumotórax hipertensivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Perfuração de cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Necrose de cólon.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente está no primeiro dia pós-operatório de uma esofagocoloplastia (substituição esofágica com segmento de cólon) e evolui com choque séptico/misto grave: taquicardia extrema (190 bpm), hipotensão importante (70x40 mmHg), má perfusão periférica, oligúria e gemência. O achado patognomônico é a saída de secreção vinhosa e fétida pela gastrostomia, que traduz a decomposição e o sofrimento tecidual por isquemia grave do enxerto colônico transposto.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A deiscência de anastomose pode levar à infecção profunda (como mediastinite ou peritonite) e sepse, mas tipicamente se manifesta com fístula salivar, ar cervical/mediastinal ou abscesso local. A presença de secreção francamente vinhosa e de odor fétido difuso dreno-gástrico aponta para a necrose de todo o segmento de cólon transposto, e não apenas para uma falha localizada na linha de sutura.\n\nAlternativa B (Incorreta): O pneumotórax hipertensivo causa colapso hemodinâmico súbito por restrição ao retorno venoso e diminuição unilateral do murmúrio vesicular, com desvio de traqueia. Contudo, ele é um evento mecânico e não explica a presença de conteúdo vinhoso e fétido drenando pela gastrostomia.\n\nAlternativa C (Incorreta): A perfuração do cólon isolada causaria extravasamento de ar e fezes com peritonite aguda, mas a descrição de débito vinhoso e fétido em grande quantidade reflete a gangrena e a liquefação tecidual extensa do enxerto isquêmico, sendo a necrose a complicação primária e mais grave.\n\nAlternativa D (Correta): A necrose do cólon é a complicação precoce mais temida e grave da esofagocoloplastia, decorrente de torção, tensão excessiva, espasmo ou trombose do pedículo vascular que nutre o segmento transposto. A isquemia maciça da alça gera liberação maciça de citocinas inflamatórias (choque séptico) e liquefação tecidual, manifestando-se caracteristicamente pela saída de líquido escuro/vinhoso com odor fétido pela gastrostomia ou pelo dreno torácico/cervical. É uma emergência cirúrgica com indicação imediata de reoperação e ressecção do enxerto inviável.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Complicações Pós-Operatórias",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  },
+  {
+    "id": "AJUDA_ffb83927-8786-4ede-8150-1fbbdd4ffc9c",
+    "originalId": "ffb83927-8786-4ede-8150-1fbbdd4ffc9c",
+    "statement": "Médico recebe, na sala de parto, RN com 41 semanas de idade gestacional, após uma gestação sem intercorrências; bolsa rota há 3 horas, com líquido amniótico com aspecto meconial. Imediatamente após o nascimento, o recém-nascido apresentava choro forte, tônus em flexão, cianose generalizada e superfície corporal coberta por mecônio em moderada quantidade. Dentre as condutas apresentadas, quais obrigatoriamente deverão ser realizadas para essa criança de acordo com as atuais recomendações da reanimação neonatal da Sociedade Brasileira de Pediatria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar ao berço de reanimação após clampeamento imediato do cordão e oferecer oxigênio inalatório suplementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Clampeamento oportuno do cordão umbilical após 60 segundos e avaliação da frequência cardíaca, do tônus e da respiração durante o contato pele a pele com a mãe.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para o contato pele a pele com a mãe e realizar aspiração de boca e nariz do excesso de secreções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar ao berço de reanimação e posicionar o pescoço em hiperextensão, para visualização direta da característica do mecônio em vias aéreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar ao berço de reanimação e realizar ventilação com pressão positiva com balão e máscara com ar ambiente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO recém-nascido (RN) em questão é de termo (41 semanas) e apresenta-se vigoroso ao nascimento, evidenciado pelo choro forte e tônus em flexão. A presença de líquido amniótico meconial, em um RN que nasce vigoroso, não altera a conduta inicial básica de acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP). A cianose generalizada descrita é comum nos primeiros minutos de vida (cianose fisiológica) e não indica, por si só, necessidade de intervenção imediata se o RN estiver respirando bem.\n\nPor que a alternativa (b) está correta:\n\nDe acordo com o Programa de Reanimação Neonatal da SBP, para o RN de termo (idade gestacional maior ou igual a 37 semanas) que apresenta boa vitalidade ao nascer (respirando ou chorando e com tônus muscular adequado), a conduta correta é realizar o clampeamento tardio ou oportuno do cordão umbilical (após 1 a 3 minutos). Esse procedimento deve ser feito enquanto o RN é colocado em contato pele a pele com a mãe, garantindo o aquecimento e o vínculo. Durante esse tempo, o profissional deve manter a observação da frequência cardíaca, do tônus e da respiração para garantir que o RN permaneça estável. A presença de mecônio não muda essa conduta se o RN for vigoroso.\n\nPor que as outras alternativas estão incorretas:\n\nAlternativa a: O clampeamento imediato é indicado apenas se o RN não apresentar boa vitalidade (apneia, gasping ou flacidez) ou em casos específicos como DPP ou ruptura de vasa prévia. O oxigênio suplementar não é oferecido de forma rotineira baseado apenas na cianose inicial, pois a saturação de oxigênio demora alguns minutos para atingir níveis acima de 90%.\n\nAlternativa c: A aspiração de vias aéreas (boca e nariz) não deve ser realizada de forma rotineira. Ela só está indicada se houver obstrução das vias aéreas por excesso de secreção que prejudique a respiração do RN. Em crianças vigorosas, essa prática pode causar bradicardia reflexa e traumatismo de mucosa.\n\nAlternativa d: Não há indicação de encaminhar um RN vigoroso ao berço de reanimação para visualização de mecônio. Antigamente, realizava-se a laringoscopia e aspiração traqueal em RNs não vigorosos com mecônio, mas hoje essa prática caiu em desuso mesmo para RNs deprimidos. Além disso, o posicionamento correto para vias aéreas é a leve extensão (posição de olfativo) e não a hiperextensão.\n\nAlternativa e: A ventilação com pressão positiva (VPP) é o procedimento mais importante na reanimação neonatal, mas só é indicada se o RN estiver em apneia, gasping ou com frequência cardíaca menor que 100 batimentos por minuto. Como o RN do caso tem choro forte (está respirando) e tônus em flexão, a VPP é contraindicada.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  },
+  {
+    "id": "AJUDA_ffb8eed5-27db-4011-b10d-090340e7282b",
+    "originalId": "ffb8eed5-27db-4011-b10d-090340e7282b",
+    "statement": "A puberdade precoce é definida pelo surgimento de caracteres sexuais secundários antes dos 8 anos em meninas. A distinção entre Puberdade Precoce Central (PPC ou dependente de gonadotrofinas) e Periférica (PPP ou independente) é fundamental para o tratamento. O teste de estímulo com GnRH é o padrão-ouro para esse diagnóstico diferencial. Assinale a alternativa que apresenta o resultado que confirma o diagnóstico de Puberdade Precoce Central.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uma resposta suprimida de LH (níveis baixos e sem elevação significativa) após o estímulo, com níveis elevados de estradiol, indicando que a fonte de esteroides sexuais é autônoma (ovariana ou adrenal) e independe do comando hipofisário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uma resposta puberal do Hormônio Luteinizante (LH), caracterizada por um pico de LH elevado (geralmente > 5 a 8 UI/L) após o estímulo com GnRH, indicando a ativação do eixo hipotálamo-hipófise-gonadal e a perda da inibição pré-puberal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Uma elevação isolada e predominante do Hormônio Folículo-Estimulante (FSH) com relação LH/FSH menor que 1, característica do padrão pré-puberal, sugerindo que o quadro é apenas uma telarca precoce isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A ausência de resposta tanto de LH quanto de FSH, associada a níveis baixos de estradiol, confirmando que não há puberdade verdadeira, mas sim uma variante normal do crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O diagnóstico diferencial da puberdade precoce exige a identificação de qual nível do eixo hormonal está ativo. Na Puberdade Precoce Central (PPC), ocorre a ativação prematura do eixo hipotálamo-hipófise-gonadal, enquanto na Puberdade Precoce Periférica (PPP), a produção de hormônios sexuais ocorre de forma autônoma, sem o comando central.\n\nAlternativa A: Incorreta. Esta alternativa descreve o padrão encontrado na Puberdade Precoce Periférica. Nela, a produção excessiva de esteroides sexuais (estradiol) por fontes externas ao eixo (como tumores ovarianos ou cistos) exerce um feedback negativo na hipófise. Consequentemente, a resposta ao teste de GnRH é suprimida, pois a hipófise está inibida pelos altos níveis de hormônios periféricos.\n\nAlternativa B: Correta. Para confirmar a Puberdade Precoce Central, o teste de estímulo com GnRH deve demonstrar que a hipófise já está responsiva e operando em padrão puberal. O critério laboratorial clássico é a obtenção de um pico de LH superior a 5 a 8 UI/L (dependendo do ensaio laboratorial utilizado) após a administração do GnRH, o que indica que o eixo central foi ativado.\n\nAlternativa C: Incorreta. No período pré-puberal e em variantes da normalidade, como a telarca precoce isolada, a resposta da hipófise ao GnRH é caracterizada por uma secreção predominante de FSH em relação ao LH. A inversão dessa relação (LH passando a ser maior que o FSH) é um marcador de que a criança entrou na puberdade verdadeira.\n\nAlternativa D: Incorreta. A ausência de resposta de ambas as gonadotrofinas (LH e FSH) associada a baixos níveis de estradiol é o achado fisiológico esperado em crianças pré-púberes. Isso confirma que não há ativação do eixo e não há produção periférica de hormônios, descartando o diagnóstico de puberdade precoce central ou periférica.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:25.332Z"
+  }
+]

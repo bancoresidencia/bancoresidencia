@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_ad43d89e-657f-41c2-a26b-123c77de3d0e",
+    "originalId": "ad43d89e-657f-41c2-a26b-123c77de3d0e",
+    "statement": "Homem, 35 anos de idade, trabalhador da construção civil, procura a UBS com queixa de tosse produtiva há quatro semanas, associada à febre vespertina (não aferida), sudorese noturna e perda de 5 kg no período. Nega comorbidades, tabagismo ou uso de drogas ilícitas. Relata que um colega de trabalho foi recentemente diagnosticado e tratado para tuberculose. Ao exame físico, encontra-se emagrecido, hipocorado (+/4+), com murmúrio vesicular diminuído e estertores crepitantes em ápice pulmonar direito. A radiografia de tórax, solicitada na Unidade, mostra um infiltrado com cavitação em lobo superior direito. O paciente reside com sua esposa e dois filhos, um de 4 anos e outro de 8 anos.\n\nIndique a conduta prioritária para a confirmação diagnóstica do paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar teste tuberculínico (PPD) e aguardar o resultado em 72 horas para definir a conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coletar duas amostras de escarro para baciloscopia e teste rápido molecular (TRM-TB).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar broncoscopia com lavado broncoalveolare cultura em meio de Lowenstein-Jensen.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar imediatamente o esquema terapêutico padrão e observar a resposta clínica do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente é um sintomático respiratório (tosse há quatro semanas) com quadro clínico, epidemiológico e radiológico altamente sugestivo de tuberculose pulmonar na forma pós-primária (febre vespertina, sudorese noturna, emagrecimento, cavitação em lobo superior direito e histórico de contato com caso confirmado). Em pacientes que apresentam tosse produtiva, a conduta prioritária e imediata é a investigação bacteriológica no escarro.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O teste tuberculínico (PPD) avalia a resposta imune celular e é indicado para o diagnóstico de Infecção Latente por Tuberculose (ILTB). Ele não diferencia infecção de doença ativa e não deve ser utilizado para confirmar tuberculose-doença em adultos.\n\nAlternativa b: Correta. Segundo as diretrizes do Ministério da Saúde, a abordagem inicial prioritária para a confirmação diagnóstica é a análise do escarro espontâneo. O Teste Rápido Molecular (TRM-TB) detecta o DNA do bacilo e a resistência à rifampicina em cerca de duas horas, enquanto a baciloscopia direta (pesquisa de BAAR) confirma a presença de bacilos álcool-ácido resistentes e serve de parâmetro basal para o controle de cura durante o tratamento.\n\nAlternativa c: Incorreta. A broncoscopia com lavado broncoalveolar é um procedimento invasivo e de maior custo, reservado para casos em que o paciente não consegue produzir escarro (mesmo após indução com salina hipertônica), quando as amostras de escarro são repetidamente negativas ou para esclarecimento de diagnósticos diferenciais complexos.\n\nAlternativa d: Incorreta. O tratamento empírico imediato não é indicado quando o paciente é capaz de fornecer amostras respiratórias para análise rápida. A confirmação diagnóstica bacteriológica é indispensável para a escolha adequada do esquema terapêutico, detecção de resistência e conduta correta com os contactantes domiciliares.\n\nGabarito: Letra b.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Testes Diagnósticos",
+      "Tuberculose"
+    ],
+    "difficulty": 21.76719548797244,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:03.060Z"
+  },
+  {
+    "id": "AJUDA_ad560c47-1d33-4058-8d09-2aed8ee29bcd",
+    "originalId": "ad560c47-1d33-4058-8d09-2aed8ee29bcd",
+    "statement": "Paciente, 67 anos, procurou a unidade de saúde relatando dificuldade para urinar, jato urinário fraco e noctúria. Ele nega dor ao urinar ou sangramento visível na urina. Ao exame físico, o toque retal revelou uma próstata aumentada, de consistência firme, sem nódulos palpáveis. Para avaliação complementar, o médico solicitou exames laboratoriais, incluindo dosagem do antígeno prostático específico total de 3,1 ng/mL, creatinina sérica 1,1 mg/dL, além de ultrassonografia do trato urinário que mostrou próstata aumentada de tamanho com volume de 40 gramas, sem nódulos. Paciente já em tratamento com finasterida e doxasozina, porém sem melhoras dos sintomas. Com base nesse caso, qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar biópsia prostática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar tratamento empírico com antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir o exame de ultrassonografia da próstata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para ressecção transuretral da próstata.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um paciente com Hiperplasia Prostática Benigna (HPB) sintomática. O ponto crucial para a resolução desta questão é identificar que o paciente já está em terapia medicamentosa otimizada com o uso combinado de um alfa-bloqueador (doxazosina) e um inibidor da 5-alfa-redutase (finasterida), porém não apresentou melhora clínica dos sintomas obstrutivos e irritativos.\n\nAlternativa a) Incorreta. A biópsia de próstata é indicada quando há forte suspeita de câncer de próstata, geralmente baseada em toque retal alterado (nódulos ou irregularidades) ou PSA elevado para a idade. Embora o uso de finasterida reduza o PSA pela metade (o que significaria um PSA real de aproximadamente 6,2 ng/mL neste paciente), o exame físico não descreve nódulos e a conduta prioritária aqui é resolver a obstrução urinária refratária ao tratamento clínico. A biópsia, por si só, não trata os sintomas miccionais.\n\nAlternativa b) Incorreta. O paciente nega dor ao urinar (disúria) e não apresenta sinais sistêmicos de infecção, como febre. Não há elementos no caso que sugiram prostatite ou infecção do trato urinário que justifiquem o uso de antibioticoterapia empírica.\n\nAlternativa c) Incorreta. A ultrassonografia já foi realizada e confirmou o aumento prostático (40 gramas) condizente com o quadro clínico e o toque retal. Repetir o exame de imagem em curto intervalo não traria informações novas que mudassem o planejamento terapêutico.\n\nAlternativa d) Correta. A Ressecção Transuretral da Próstata (RTU de próstata) é considerada o padrão-ouro para o tratamento cirúrgico da HPB em próstatas com volume abaixo de 80 gramas (o paciente possui 40 g). As principais indicações para a transição do tratamento clínico para o cirúrgico são: falha ou intolerância ao tratamento medicamentoso (presente no caso), retenção urinária aguda de repetição, infecções urinárias recorrentes, hematúria macroscópica persistente, cálculos na bexiga ou insuficiência renal obstrutiva. Como o paciente mantém sintomas importantes apesar da terapia dupla, a conduta cirúrgica é a mais adequada.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:03.060Z"
+  },
+  {
+    "id": "AJUDA_ad58d39a-8169-468a-a5e7-a0ff099b5cba",
+    "originalId": "ad58d39a-8169-468a-a5e7-a0ff099b5cba",
+    "statement": "Você estava lendo uma diretriz estrangeira de dislipidemias e chamou a sua atenção os resultados da redução de desfechos cardiovasculares entre pacientes que utilizaram a droga evolocumab... No grupo de pacientes que utilizaram o evolocumabe, o risco de um evento cardiovascular foi de 9,8%, enquanto no grupo placebo este risco foi de 11,3%... qual seria o valor do NNT do evolocumabe para este estudo? (Desconsidere casas decimais).",
+    "options": [
+      {
+        "id": "A",
+        "text": "13.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "66.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "87.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "98.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "REDUÇÃO DO RISCO ABSOLUTO (RRA) E NÚMERO NECESSÁRIO PARA TRATAR (NNT)\n\nPara encontrar o valor do NNT, o primeiro passo é calcular a Redução do Risco Absoluto (RRA). A RRA é a diferença aritmética entre a taxa de eventos do grupo controle (placebo) e a taxa de eventos do grupo experimental (intervenção).\n\nDados fornecidos pela questão:\nRisco no grupo placebo: 11,3% (ou 0,113)\nRisco no grupo evolocumabe: 9,8% (ou 0,098)\n\nPasso 1: Cálculo da RRA\nRRA = Risco Placebo - Risco Evolocumabe\nRRA = 11,3% - 9,8%\nRRA = 1,5% (que equivale a 0,015 em forma decimal)\n\nPasso 2: Cálculo do NNT\nO NNT é definido como o inverso da Redução do Risco Absoluto. Ele nos indica quantos pacientes precisam ser tratados com a droga para que um evento cardiovascular seja evitado.\nNNT = 1 / RRA\nNNT = 1 / 0,015\nNNT = 66,66...\n\nAo desconsiderar as casas decimais, como solicitado no enunciado, chegamos ao valor de 66.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) 13. Incorreta. Este valor não possui relação matemática com os dados de incidência de eventos apresentados no texto.\n\nAlternativa b) 66. Correta. Representa o cálculo exato do NNT (1 dividido por 0,015), resultando em 66 quando ignoramos as casas decimais.\n\nAlternativa c) 87. Incorreta. Valor incorreto decorrente de erro na aplicação da fórmula ou na subtração dos riscos.\n\nAlternativa d) 98. Incorreta. Esta alternativa apenas utiliza os números do risco do grupo evolocumabe (9,8%) sem a vírgula, não tendo relação com o cálculo do NNT.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:03.060Z"
+  },
+  {
+    "id": "AJUDA_ad5a4ca0-b7ab-44be-842b-e46656804682",
+    "originalId": "ad5a4ca0-b7ab-44be-842b-e46656804682",
+    "statement": "Paciente com hipótese diagnóstica de pneumonia de hipersensibilidade apresentará, mais provavelmente, as seguintes características:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Febre, calafrios e mal-estar apenas nas formas agudas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Provas de inflamação, como PCR e VHS, normais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tosse com expectoração profusa e clara na fase inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nódulos centrolobulares, atenuação em vidro fosco e imagem em mosaico na tomografia de pulmão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O uso de corticoides, em doses baixas, apresenta resposta significativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A pneumonia de hipersensibilidade (PH) é uma síndrome complexa, mediada imunologicamente, que afeta o parênquima pulmonar e as pequenas vias aéreas em resposta à inalação de antígenos orgânicos ou substâncias químicas em indivíduos sensibilizados.\n\nAlternativa a: Incorreta. Os sintomas sistêmicos, como febre, calafrios e mal-estar, são marcos da apresentação aguda, que ocorre poucas horas após uma exposição intensa e mimetiza um quadro gripal. No entanto, o uso da palavra \"apenas\" torna a afirmação incorreta, pois esses sintomas podem reaparecer em episódios de reexposição em pacientes com a forma subaguda ou em quadros de exacerbação da doença.\n\nAlternativa b: Incorreta. Diferentemente de algumas doenças intersticiais puramente fibróticas e estáveis, a pneumonia de hipersensibilidade costuma apresentar elevação das provas de inflamação sistêmica, como a Proteína C-Reativa (PCR) e a Velocidade de Hemossedimentação (VHS), especialmente durante as fases de atividade inflamatória aguda e subaguda.\n\nAlternativa c: Incorreta. A tosse associada à PH é classicamente seca e irritativa. A presença de expectoração profusa e clara, conhecida como broncorreia, não é típica desta patologia, sendo um achado clássico de outras condições específicas, como o adenocarcinoma de padrão lepídico.\n\nAlternativa d: Correta. Esta alternativa descreve os achados radiológicos mais característicos da PH na Tomografia de Alta Resolução (TCAR), especialmente na fase não fibrótica. Os nódulos centrolobulares com atenuação em vidro fosco indicam a presença de inflamação (bronquiolite celular). A imagem em mosaico é um achado fundamental e reflete a mistura de áreas de inflamação intersticial (vidro fosco), áreas de pulmão normal e áreas de hipoatenuação por aprisionamento aéreo (decorrente da doença de pequenas vias aéreas). A combinação desses padrões é altamente sugestiva do diagnóstico.\n\nAlternativa e: Incorreta. O pilar fundamental do tratamento da PH é o controle ambiental, ou seja, a identificação e o afastamento total do antígeno causador. Quando o uso de corticosteroides é necessário devido à gravidade dos sintomas ou ao comprometimento da função pulmonar, as doses utilizadas para obter uma resposta clínica significativa são geralmente moderadas a altas (0,5 a 1 mg/kg de prednisona), e não doses baixas. Além disso, formas crônicas e fibróticas tendem a ter uma resposta muito mais limitada à corticoterapia.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:03.060Z"
+  },
+  {
+    "id": "AJUDA_ad5b19ad-96b2-4b86-ad2f-d4262654e9d3",
+    "originalId": "ad5b19ad-96b2-4b86-ad2f-d4262654e9d3",
+    "statement": "Paciente de 30 anos, com história de ciclos menstruais regulares de 28 a 30 dias, busca aconselhamento em consulta de rotina, pois deseja engravidar. Paciente relata que tem acompanhado a temperatura basal do seu corpo e observado um aumento de 0,5° C a 1,0° C que se mantém por aproximadamente 10 dias antes da menstruação. O médico assistente solicita dosagens hormonais em dois momentos distintos do ciclo: no 3º dia e no 21º dia. Os resultados encontrados foram: - 3º dia: FSH = 6,5mUI/mL (V.R. = 3,4 - 21,6mUl/mL) LH = 4,2mUI/mL (V.R. = 1,8 a 11,8mUI/mL) Estradiol = 48pg/mL (V.R: = 22,2 a 218pg/mL) 21º dia: Progesterona = 18ng/mL (V.R. = 2 a 25ng/mL) LH = 7,5mUI/mL (V.R. = 0,6 a 14,0mUI/mL) Estradiol = 120pg/mL (V.R. = 25,3 a 288,6pg/dL) Considerando o quadro descrito e os resultados laboratoriais apresentados, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da temperatura basal e o valor de progesterona no 21° dia sugerem a ocorrência de ovulação e a formação de um corpo lúteo funcionante",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Nível de LH no 21º dia é o principal indício da ovulação e, por isso, a dosagem da progesterona deve ser realizada também no 3º dia para confirmar o diagnóstico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Valor de progesterona no 21º dia indica falha da fase lútea, o que pode sugerir uma dificuldade da paciente em engravidar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os níveis de FSH e LH no 3º dia do ciclo indicam a ausência de ovulação, sendo necessário um ciclo de indução com gonadotrofinas para aumentar o sucesso de uma gravidez",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta ciclos regulares e sinais clínicos e laboratoriais clássicos de um ciclo ovulatório normal. O aumento da temperatura basal relatado (0,5 °C a 1,0 °C) é um marcador clínico indireto da ovulação, ocorrendo devido ao efeito termogênico da progesterona sobre o hipotálamo após a liberação do óvulo. \n\nLaboratorialmente, a confirmação da ovulação é feita pela dosagem de progesterona na fase lútea média (em torno do 21º dia em ciclos de 28 dias). Valores de progesterona acima de 3 ng/mL são indicativos de que a ovulação ocorreu, e valores acima de 10 ng/mL sugerem uma fase lútea de boa qualidade.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (CORRETA): O aumento da temperatura basal é provocado pela progesterona produzida pelo corpo lúteo. O resultado da dosagem de progesterona no 21º dia (18 ng/mL) é robusto e confirma de forma inequívoca que houve ovulação e que o corpo lúteo está funcionando adequadamente, produzindo hormônios necessários para uma eventual gestação.\n\nAlternativa B (INCORRETA): O principal indício laboratorial de que a ovulação ocorreu é a progesterona elevada na fase lútea, e não o LH no 21º dia. O pico de LH (surto de LH) ocorre antes da ovulação (fase folicular tardia) para deflagrar a ruptura folicular. No 21º dia, o LH já deve estar em níveis basais. Além disso, a progesterona no 3º dia é fisiologicamente baixa e não serve para confirmar a ovulação.\n\nAlternativa C (INCORRETA): A falha da fase lútea seria caracterizada por níveis muito baixos de progesterona ou por uma fase lútea curta (menos de 10 dias de temperatura elevada). O valor de 18 ng/mL encontrado na paciente é considerado excelente e indica uma fase lútea normal, sem prejuízo inicial para a fertilidade.\n\nAlternativa D (INCORRETA): Os níveis de FSH e LH no 3º dia do ciclo (6,5 mUI/mL e 4,2 mUI/mL, respectivamente) estão dentro da normalidade para a fase folicular precoce e sugerem uma boa reserva ovariana. Esses valores iniciais não indicam ausência de ovulação; ao contrário, o conjunto dos exames prova que a paciente ovula normalmente, não havendo indicação para indução da ovulação com gonadotrofinas no momento.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:03.060Z"
+  },
+  {
+    "id": "AJUDA_ad5bf040-04c5-4d09-84f1-a055bc0bed85",
+    "originalId": "ad5bf040-04c5-4d09-84f1-a055bc0bed85",
+    "statement": "MJ , sexo masculino, 58 anos, natural ed Florianópolis, divorciado e engenheiro. Tem histórico de hipertensão arterial e diabetes opit ,2 que estão sob controle com o uso de Losartana e Metformina. Nos últimos seis meses, vem apresentando episódios de dor abdominal intermitente e mudança do hábito intestinal, com alternância ed constipação e diarreia. Refere ainda perda de peso involuntária de cerca de 5Kg e presença de sangue nas fezes, especialmente após episódios de diarreia. Com base nas informações do caso clínico, qual dentre as seguintes alternativas representa a CONDUTA INICIAL MAIS APROPRIADA para o manejo do paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar o paciente à psiquiatria para avaliação de transtornos alimentares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar tratamento com antibióticos para provável infecção intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar pesquisa de sangue oculto nas fezes e recomendar aumento da ingestão de fibras na dieta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar de imediato colonoscopia, para avaliação das alterações intestinais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise Clínica do Caso:\n\nO paciente em questão apresenta o que chamamos na medicina de sinais de alarme para neoplasia colorretal. Trata-se de um homem de 58 anos (faixa etária de risco) com mudança do hábito intestinal, perda ponderal involuntária (5 kg) e hematoquezia (sangue nas fezes). Diante desse quadro, a principal suspeita diagnóstica é o câncer colorretal, e a investigação deve ser imediata e definitiva.\n\nAnálise das Alternativas:\n\nAlternativa (a) Incorreta: Não há qualquer indício no relato que sugira um transtorno alimentar primário. A perda de peso e os sintomas gastrointestinais em um paciente de 58 anos devem ser investigados obrigatoriamente como causa orgânica, preferencialmente oncológica, antes de qualquer consideração psiquiátrica.\n\nAlternativa (b) Incorreta: O quadro é crônico (seis meses de evolução) e acompanhado de perda de peso, o que não condiz com uma infecção intestinal aguda que justificasse antibioticoterapia empírica. O uso de antibióticos sem diagnóstico retardaria a identificação de uma possível neoplasia.\n\nAlternativa (c) Incorreta: A pesquisa de sangue oculto nas fezes é um método de rastreamento para pacientes assintomáticos. Como o paciente já apresenta sangue visível (sintomático) e outros sinais de alarme, esse exame é desnecessário e insuficiente. O aumento da ingestão de fibras é uma medida para constipação funcional, o que não se aplica a um caso com suspeita de malignidade.\n\nAlternativa (d) Correta: A colonoscopia é o exame de escolha (padrão-ouro) para pacientes que apresentam sinais de alarme gastrointestinais na faixa etária acima de 45-50 anos. Ela permite a visualização direta de possíveis tumores ou pólipos, além da realização de biópsias para confirmação histopatológica. É a conduta que permite o diagnóstico definitivo e o estadiamento inicial do paciente.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:03.060Z"
+  },
+  {
+    "id": "AJUDA_ad607ba5-c68d-4e1e-9bff-dceef8efde76",
+    "originalId": "ad607ba5-c68d-4e1e-9bff-dceef8efde76",
+    "statement": "Young et al. (“Glucose self-monitoring in non-insulin-treated patients with type 2 diabetes in primary care settings: a randomized trial”) estudaram o automonitoramento de glicemia capilar (AMGC) no controle da hemoglobina A1c de pacientes com diabetes tipo 2. Para isso, os autores utilizaram de três estratégias cujos resultados da publicação são demonstrados na figura a seguir. O grupo-controle (sem AMGC) foi orientado apenas a manter o uso habitual de seus medicamentos e a realizar exames laboratoriais trimestrais. Os demais participantes foram instruídos a realizar o AMGC: um grupo de forma periódica, sem suporte adicional (AMGC – sem mensagens), e outro com o mesmo protocolo, mas recebendo lembretes por mensagens de texto (AMGC – com mensagens).\n\nSobre a interpretação desses resultados, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A intervenção (AMGC) não se mostrou eficaz durante os quatro períodos da condução do estudo, o que é bem demonstrado pelos intervalos de confiança.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A não aderência à intervenção por parte dos pacientes pode ter sido um motivo para o resultado do estudo em doze meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O lembrete, por mensagens de texto, de realizar a AMGC melhorou o controle da A1c nos três primeiros períodos do estudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apesar da diferença significativa notada ao final dos doze meses do estudo, os três grupos retornaram aos valores de A1c basais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para analisar esta questão, devemos interpretar os dois gráficos fornecidos, que resumem os achados do estudo MONITOR (Young et al., 2017) sobre o automonitoramento da glicemia capilar (AMGC) em pacientes com diabetes tipo 2 que não usam insulina.\n\nO primeiro gráfico apresenta a evolução da Hemoglobina A1c. Note que, nos períodos de 3, 6 e 9 meses, os valores de p são menores que 0,05 (0,014; 0,001 e 0,005, respectivamente), o que indica que a intervenção (AMGC) foi superior ao controle nesses momentos. No entanto, aos 12 meses, o p salta para 0,44, indicando que não há mais diferença estatisticamente significativa entre os grupos.\n\nO segundo gráfico mostra a \"Proporção de Testes Realizados\". Observa-se uma inclinação negativa constante em ambas as curvas de intervenção, demonstrando que os pacientes realizaram cada vez menos testes de glicemia à medida que os meses passavam.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A intervenção mostrou-se eficaz nos três primeiros trimestres (3, 6 e 9 meses), conforme comprovado pelos valores de p inferiores a 0,05 e pelos intervalos de confiança que, nesses períodos, mostram separação entre os grupos de intervenção e o controle.\n\nAlternativa b: Correta. Esta é a interpretação lógica ao correlacionar os dois gráficos. O segundo gráfico mostra uma queda clara e progressiva na adesão (realização dos testes). Essa perda de adesão ao longo do tempo explica por que o benefício observado no início do estudo desapareceu na marca de 12 meses, fazendo com que os níveis de A1c dos grupos de intervenção voltassem a subir e se igualassem ao controle.\n\nAlternativa c: Incorreta. No primeiro gráfico, as linhas que representam o grupo AMGC com mensagens e o grupo AMGC sem mensagens estão praticamente sobrepostas durante todo o estudo. Isso demonstra que o envio de lembretes por mensagens de texto não trouxe melhora adicional no controle da A1c quando comparado ao automonitoramento convencional.\n\nAlternativa d: Incorreta. A alternativa afirma que houve diferença significativa ao final dos 12 meses, mas o gráfico mostra o contrário: o valor de p = 0,44 no mês 12 confirma que a diferença entre os grupos deixou de ser estatisticamente significativa ao término do acompanhamento.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/cc5cd8d7885d5fab16148c3b8f6491ad70810e31bba5b671c57069d806454473.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ad607ba5-c68d-4e1e-9bff-dceef8efde76_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/c3d189769c03e46cbc1764b944ef596977b61416a6e145607dae3feab28d7402.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ad607ba5-c68d-4e1e-9bff-dceef8efde76_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:04.249Z"
+  },
+  {
+    "id": "AJUDA_ad6248cd-8da1-421b-bb83-35f5e4717aae",
+    "originalId": "ad6248cd-8da1-421b-bb83-35f5e4717aae",
+    "statement": "Uma criança de 6 anos apresenta crises epilépticas generalizadas, relacionadas a descargas hipersincrônicas corticais. Qual explicação fisiológica que melhor justifica a maior suscetibilidade à epilepsia nessa faixa etária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Predomínio da inibição gabaérgica madura, que suprime excessivamente a atividade glutamatérgica e favorece descargas paradoxais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Desbalanço entre a excitabilidade glutamatérgica elevada e a imaturidade da inibição gabaérgica, o que facilita a ocorrência de descargas hipersincrônicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Maturação completa dos circuitos corticoespinhais, que aumentam o risco de crises por maior conectividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aceleração precoce da mielinização do córtex pré-frontal, facilitando sincronização cortical anormal que gera descargas epilépticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a maior suscetibilidade do cérebro infantil a crises epilépticas, é necessário analisar o processo de neurodesenvolvimento, especificamente o equilíbrio entre os sistemas de neurotransmissão excitatória e inibitória.\n\nAnálise das alternativas:\n\na) Incorreta. A inibição gabaérgica madura é o principal mecanismo de defesa do sistema nervoso central contra a hiperexcitabilidade. Se a inibição fosse madura e predominante, ela dificultaria a ocorrência de descargas hipersincrônicas em vez de favorecê-las. Além disso, em fases muito precoces do desenvolvimento, o GABA pode ter um efeito paradoxalmente excitatório devido à maior concentração intracelular de cloreto, mas a alternativa descreve uma inibição \"madura\", o que invalida a afirmação.\n\nb) Correta. Esta é a explicação fisiopatológica clássica. Durante o desenvolvimento cerebral, ocorre uma defasagem temporal entre a maturação dos sistemas excitatórios e inibitórios. Os receptores e sinapses glutamatérgicos (excitatórios) desenvolvem-se e proliferam precocemente para permitir a plasticidade neuronal e o aprendizado. Em contrapartida, os sistemas gabaérgicos (inibitórios) amadurecem mais tardiamente. Esse desequilíbrio transitório resulta em um limiar convulsígeno mais baixo, facilitando a propagação de descargas elétricas anormais e hipersincronia cortical.\n\nc) Incorreta. O trato corticoespinhal está relacionado à transmissão dos impulsos motores do córtex para a medula espinhal (via eferente). Embora a conectividade aumente com a maturação, o risco de crises epilépticas não advém da maturação motora em si, mas sim de processos celulares e sinápticos no córtex cerebral que regulam a excitabilidade neuronal.\n\nd) Incorreta. A mielinização do córtex pré-frontal é, na verdade, um dos processos mais tardios do desenvolvimento humano, estendendo-se até o início da idade adulta, e não ocorre de forma \"precoce\" aos 6 anos a ponto de justificar crises. A mielina atua como um isolante elétrico que melhora a velocidade e a eficiência da condução nervosa, e sua imaturidade poderia, teoricamente, dificultar a sincronização precisa, mas o fator determinante para a epilepsia nesta faixa etária é o balanço neuroquímico (glutamato x GABA) e não a velocidade de condução mielínica.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Epilepsias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:04.249Z"
+  },
+  {
+    "id": "AJUDA_ad6964f8-922e-40a0-bab2-11984a99d26f",
+    "originalId": "ad6964f8-922e-40a0-bab2-11984a99d26f",
+    "statement": "Trabalhador da construção civil, sexo masculino, 40 anos, vítima de queda de andaime de cerca de 3 metros, foi atendido no HPS 28 de Agosto em franco choque hipovolêmico devido a fratura de bacia e de fêmur esquerdo. Não havia lesões significativas em crânio, tórax e cavidade peritoneal. O paciente foi submetido a controle da hemorragia com transfusões de hemoderivados, empacotamento pélvico e fixação das fraturas, sendo encaminhado à UTI. À admissão observou se hemoglobina 7g/dl, hematócrito 21%, 22.000 leucócitos com 80% de polimorfonucleares, gasometria com pH 7.3, HCO3 mEq/l e Excesso de Base de -6, lactato 4,5mmol/L e potássio 5,8mEq/l. Sobre o caso, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O uso do ácido tranexâmico está contraindicado para o caso acima devido ao resultante aumento da permeabilidade capilar e hiperestimulação da resposta inflamatória.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A extensa lesão tecidual associada a ativação desordenada de neutrófilos, produção de citocinas pró-inflamatórias, ativação do sistema de complemento e de células endoteliais podem resultar em predisposição a falência de múltiplos órgãos mesmo na ausência de infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A leucocitose observada neste momento não é secundária a infecção, no entanto a resposta inflamatória sistêmica resulta em imunodepressão e maior predisposição a sepse.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hiperpotassemia observada é secundária a lesão tecidual associada a transfusão de hemoderivados e pode ser agravada caso o paciente evolua com insuficiência renal aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo e as repercussões fisiopatológicas de um paciente com trauma grave e choque hipovolêmico. O objetivo é identificar a alternativa incorreta entre as afirmações apresentadas.\n\nAlternativa (a) INCORRETA (Gabarito): O ácido tranexâmico (TXA) é um antifibrinolítico que atua inibindo a conversão do plasminogênio em plasmina, estabilizando o coágulo. Em pacientes vítimas de trauma com sangramento significativo ou risco de choque, como o caso descrito, o uso do TXA está indicado, preferencialmente se administrado nas primeiras 3 horas após a lesão (conforme demonstrado pelo estudo CRASH-2). Ao contrário do que afirma a alternativa, o ácido tranexâmico pode ajudar a atenuar a resposta inflamatória exacerbada associada à fibrinólise e não é contraindicado por aumentar a permeabilidade capilar. Sua principal contraindicação seria o uso após 3 horas do trauma, pelo risco de eventos trombóticos e ausência de benefício.\n\nAlternativa (b) CORRETA: O trauma grave provoca uma liberação maciça de padrões moleculares associados ao dano (DAMPs), que ativam o sistema imune inato. Isso gera uma resposta inflamatória sistêmica (SIRS) caracterizada pela ativação de neutrófilos, cascata do complemento e liberação de citocinas. Esse estado inflamatório estéril (sem infecção inicial) pode causar lesão endotelial e disfunção orgânica, levando à Síndrome de Disfunção de Múltiplos Órgãos (SDMO).\n\nAlternativa (c) CORRETA: A leucocitose imediata no trauma (como os 22.000 leucócitos observados) é geralmente causada pela \"desmargeação\" leucocitária mediada por catecolaminas e corticoides endógenos (estresse agudo), e não por infecção bacteriana. Contudo, após a fase pró-inflamatória inicial, o organismo frequentemente entra em uma fase de compensação anti-inflamatória (CARS), que gera imunodepressão e aumenta a suscetibilidade a infecções secundárias e sepse nos dias subsequentes.\n\nAlternativa (d) CORRETA: A hiperpotassemia (K 5,8 mEq/L) é um achado comum no trauma grave por três motivos principais: 1) Lesão tecidual direta (rabdomiólise e hemólise), que libera o potássio intracelular para a circulação; 2) Hemotransfusão, pois o sangue estocado sofre hemólise gradual, liberando potássio na bolsa; 3) Acidose metabólica (pH 7,3 e BE -6), que promove a saída de potássio da célula em troca por íons hidrogênio. Se houver insuficiência renal aguda por hipoperfusão (necrose tubular aguda), a excreção de potássio fica prejudicada, agravando o quadro.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Trauma",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:04.249Z"
+  },
+  {
+    "id": "AJUDA_ad74d73c-9a4e-4161-8f51-69d2b1b9d9d2",
+    "originalId": "ad74d73c-9a4e-4161-8f51-69d2b1b9d9d2",
+    "statement": "A seguir, são apresentados os valores de creatinina sérica de quatro pacientes com episódio de insulto renal agudo isquêmico tratado com medidas adequadas.\n\nConsiderando IRA (injúria renal aguda), NTA (necrose tubular aguda), DRC (doença renal crônica) e DRA (doença renal aguda), a associação correta entre os pacientes (A, B, C e D) e seu diagnóstico nefrológico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A: IRA hemodinâmica; B: IRA intrínseca por NTA; C: DRC com IRA sobreposta; D: DRC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A: DRC; B: IRA funcional; C: DRC com IRA sobreposta; D: DRA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A: DRA; B: IRA hemodinâmica; C: DRC com IRA sobreposta; D: DRC com DRA sobreposta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A: DRA; B: DRC com IRA sobreposta; C: IRA intrínseca por NTA; D: DRC com DRA sobreposta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar a temporalidade das alterações da creatinina e o retorno (ou não) aos valores basais de cada paciente, conforme os critérios do KDIGO.\n\nPaciente A: Inicia com creatinina normal (1,0 mg/dL). Após o insulto, o valor sobe até 7,0 mg/dL e permanece elevado por vários dias, retornando ao valor basal de 1,0 mg/dL apenas por volta do dia 90. De acordo com as definições diagnósticas, uma lesão renal que persiste por mais de 7 dias, mas por menos de 90 dias, é classificada como Doença Renal Aguda (DRA).\n\nPaciente B: Apresenta creatinina inicial normal (1,0 mg/dL). No dia 1, há um aumento para 3,0 mg/dL, mas já no dia 2 o valor retorna para 1,0 mg/dL. Essa recuperação extremamente rápida (em menos de 24-48 horas) após medidas adequadas é a marca registrada da IRA hemodinâmica (também chamada de funcional ou pré-renal), na qual não houve tempo para a instalação de necrose tubular aguda (dano estrutural).\n\nPaciente C: Possui uma creatinina basal de 4,0 mg/dL, o que já indica a presença de Doença Renal Crônica (DRC). Ele sofre um insulto agudo em que a creatinina sobe para 10,0 mg/dL, mas, após o tratamento, o valor retorna ao seu patamar basal de 4,0 mg/dL. Portanto, o diagnóstico é DRC com IRA sobreposta.\n\nPaciente D: Também inicia com sinais de DRC (creatinina basal de 3,0 mg/dL). Sofre um insulto agudo que eleva a creatinina; porém, ao contrário do paciente C, ele não retorna ao valor basal original após 90 dias, estabilizando-se em um nível muito pior (10,0 mg/dL). Esse quadro de piora aguda que persiste além de 7 dias sem retornar ao basal inicial caracteriza a Doença Renal Aguda (DRA) sobreposta à DRC.\n\nAnálise das alternativas:\n\na) Incorreta. O erro está em classificar o paciente A como tendo IRA hemodinâmica. A IRA hemodinâmica reverte rapidamente (como visto no paciente B), enquanto o paciente A levou semanas para recuperar a função.\n\nb) Incorreta. O paciente A não tem DRC, pois sua creatinina inicial era de 1,0 mg/dL. Além disso, o paciente B é que é classificado como tendo IRA funcional/hemodinâmica, não o paciente A.\n\nc) Correta. Associa adequadamente o Paciente A à DRA (recuperação prolongada entre 7 e 90 dias), o Paciente B à IRA hemodinâmica (reversão imediata), o Paciente C à DRC com IRA sobreposta (retorno ao basal alterado) e o Paciente D à DRC com DRA sobreposta (piora aguda sobre base crônica que não retorna ao basal em 90 dias).\n\nd) Incorreta. O erro principal está no Paciente B. Ele não possui DRC, visto que sua creatinina inicial é normal (1,0 mg/dL) e ele recupera a função plenamente em 24 horas.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/199ffdf1a623e8bd3f2602e20f84e614ff7c99b77cde9f7ae84d0fd2ac300543.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ad74d73c-9a4e-4161-8f51-69d2b1b9d9d2_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:04.621Z"
+  }
+]

@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_b927748e-c55c-4e4d-9d1a-11f76e8b977d",
+    "originalId": "b927748e-c55c-4e4d-9d1a-11f76e8b977d",
+    "statement": "Uma usuária de 57 anos de idade procura uma Unidade Básica de Saúde (UBS) com queixas de perda súbita de força, formigamento do lado esquerdo do corpo e certa dificuldade de falar desde que acordou, uma hora antes. Não tem antecedentes pessoais e nem familiares com hipertensão arterial ou outras doenças cardiovasculares. É acompanhada pela UBS por depressão após a morte de seu irmão, que ocorrera há 3 meses.\nAssinale a alternativa correta sobre alguns dos procedimentos corretos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ela deve ser examinada imediatamente por um cardiologista e um neurologista que teriam condições de fazer diagnóstico de um acidente vascular cerebral (AVC) ou infarto de miocárdio, ambos com indicação de encaminhamento para unidades de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aplicar a escala de Cincinatti e Glasgow, viabilizar acesso endovenoso e descartar hipoglicemia, que pode simular um AVC, antes de encaminhar a usuária para uma unidade de emergência, pela ausência de antecedentes mórbidos correlatos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Avaliar o estado psíquico da usuária, pois crises de ansiedade e depressão podem simular AVC e, nesse caso, não haveria necessidade de encaminhamento para uma unidade de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Verificar sinais vitais, aplicar a escala de Cincinatti e Glasgow e providenciar transferência para uma unidade de emergência com a hipótese diagnóstica de um (AVC) para realização de trombólise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Mesmo com a hipótese diagnóstica de AVC, não há indicação para trombólise, pois o momento ideal para esse procedimento é de 40 minutos, e a paciente já teria mais tempo de quadro clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico de Acidente Vascular Cerebral (AVC): início súbito de déficit motor e sensitivo focal (hemibloqueio à esquerda) associado à alteração de fala (disartria ou afasia). O fato de os sintomas estarem presentes ao acordar caracteriza o chamado AVC de despertar (Wake-up Stroke). O papel do médico na Unidade Básica de Saúde (UBS) diante de uma suspeita de AVC é realizar a estabilização inicial, avaliação neurológica rápida e providenciar o encaminhamento imediato para uma unidade de emergência referenciada.\n\nAlternativa (a) Incorreta. Não é necessário, nem viável, aguardar a avaliação presencial de especialistas como cardiologista e neurologista dentro da UBS para definir a conduta. O tempo é um fator determinante no tratamento do AVC (tempo é cérebro), e o encaminhamento deve ser feito pelo médico da unidade de forma imediata após a suspeita clínica.\n\nAlternativa (b) Incorreta. Embora a aplicação da Escala de Cincinnati, Escala de Coma de Glasgow e o descarte de hipoglicemia (um importante diagnóstico diferencial que mimetiza o AVC) sejam procedimentos corretos, a alternativa está incorreta ao sugerir que a ausência de antecedentes mórbidos deveria influenciar o tempo de encaminhamento. A suspeita clínica de déficit focal súbito, independentemente do histórico da paciente, já impõe a transferência imediata para um centro com capacidade de realizar tomografia e terapia de reperfusão.\n\nAlternativa (c) Incorreta. Déficits neurológicos focais súbitos nunca devem ser atribuídos primariamente a causas psíquicas (como ansiedade ou depressão) sem a exclusão rigorosa de causas orgânicas graves por meio de exames de imagem. Retardar o encaminhamento para avaliar o estado psíquico é uma conduta perigosa que pode privar a paciente do tratamento adequado dentro da janela terapêutica.\n\nAlternativa (d) Correta. Esta alternativa descreve a conduta padrão na atenção primária: verificação de sinais vitais para estabilização hemodinâmica, uso de escalas validadas para triagem neurológica rápida (a Escala de Cincinnati avalia assimetria facial, queda do braço e alteração na fala; Glasgow avalia o nível de consciência) e providenciar a transferência urgente para unidade hospitalar. O objetivo é viabilizar a realização de exames de imagem e a possível trombólise, que deve ser iniciada o mais rápido possível.\n\nAlternativa (e) Incorreta. A janela terapêutica padrão para trombólise endovenosa é de até 4,5 horas a partir do início dos sintomas ou do último momento em que a pessoa foi vista sem déficits (Last Seen Well). O limite de 40 minutos mencionado na alternativa não possui embasamento nas diretrizes nacionais ou internacionais. Mesmo em casos de \"AVC de despertar\", protocolos modernos com exames de imagem avançados (como a ressonância com mismatch Difusão/FLAIR ou tomografia de perfusão) podem permitir o tratamento, justificando sempre o encaminhamento em caráter de urgência.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  },
+  {
+    "id": "AJUDA_b930cb42-7be0-4935-802e-f963da82b7fd",
+    "originalId": "b930cb42-7be0-4935-802e-f963da82b7fd",
+    "statement": "O Ministério da Saúde mudou as diretrizes em relação ao rastreamento de câncer de mama, diante do aumento de casos nas mulheres mais jovens.\nConsiderando as diretrizes atuais para a prevenção do câncer de mama, a recomendação mais apropriada para uma mulher de 40 anos, com história familiar de câncer de mama em uma tia materna, mas sem outros fatores de risco conhecidos, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar ressonância magnética de mama anual, a partir dos 40 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar autoexame mensal e exame clinico anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar mamografia bienal, a partir dos 50 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "iniciar mamografia anual, a partir dos 40 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar teste genético para mutações BRCA1 e BRCA2.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as diretrizes de rastreamento do câncer de mama no Brasil. É fundamental que o candidato diferencie as recomendações do Ministério da Saúde (MS/INCA) das recomendações das sociedades de especialidades (como a Sociedade Brasileira de Mastologia – SBM).\n\nA paciente em questão tem 40 anos e um histórico familiar em parente de segundo grau (tia materna). Pelos critérios do Ministério da Saúde, o grupo de risco elevado inclui apenas mulheres com histórico de:\n1. Câncer de mama em parente de primeiro grau (mãe, irmã ou filha) diagnosticado antes dos 50 anos;\n2. Câncer de mama em parente de primeiro grau diagnosticado em qualquer idade, caso tenha sido bilateral ou em homem;\n3. História familiar de câncer de ovário ou diagnóstico histopatológico de lesão mamária proliferativa com atipia.\n\nComo a paciente tem apenas uma tia afetada, ela é considerada de risco habitual (população geral).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A ressonância magnética (RM) de mamas não é um exame de rastreamento para a população geral. Ela é reservada para mulheres de altíssimo risco, geralmente com mutações genéticas comprovadas (BRCA1 ou BRCA2) ou histórico familiar extremamente sugestivo de síndromes hereditárias, sempre em conjunto com a mamografia.\n\nAlternativa b) Incorreta. O Ministério da Saúde não recomenda o autoexame das mamas como estratégia de rastreamento isolada, pois ele não reduz a mortalidade. A recomendação atual é a \"estratégia de conscientização\" (breast awareness), estimulando a mulher a conhecer seu corpo. O exame clínico anual também não substitui a necessidade do rastreamento radiológico na idade correta.\n\nAlternativa c) Correta. De acordo com as diretrizes do Ministério da Saúde e do INCA, o rastreamento mamográfico deve ser realizado de forma bienal (a cada dois anos) para mulheres na faixa etária de 50 a 69 anos que possuem risco habitual. Mesmo que o enunciado mencione \"mudança de diretrizes devido ao aumento de casos em jovens\", o gabarito oficial baseia-se na manutenção do protocolo vigente do Ministério da Saúde para o SUS.\n\nAlternativa d) Incorreta. Esta é a recomendação da Sociedade Brasileira de Mastologia (SBM), do Colégio Brasileiro de Radiologia (CBR) e da FEBRASGO (início aos 40 anos com periodicidade anual). Entretanto, em provas que solicitam especificamente as diretrizes do Ministério da Saúde ou para concursos de saúde pública, prevalece a orientação de início aos 50 anos de forma bienal.\n\nAlternativa e) Incorreta. A indicação de testes genéticos para BRCA1 e BRCA2 exige critérios clínicos rigorosos, como múltiplos casos de câncer de mama/ovário em parentes de primeiro grau ou casos de câncer de mama em idade muito jovem. A presença de apenas uma tia materna com a doença não justifica a investigação genética.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  },
+  {
+    "id": "AJUDA_b9325b2a-9f36-4ab2-80af-84ab7cb2f33b",
+    "originalId": "b9325b2a-9f36-4ab2-80af-84ab7cb2f33b",
+    "statement": "Um estudo mostrou que uma nova vacina reduziu a incidência de uma doença em 80% em uma população. Com base nessa situação hipotética, é correto afirmar que esse é um exemplo de um tipo de medida epidemiológica denominado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Risco relativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Incidência cumulativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Redução de risco relativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Redução de risco absoluto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta um cenário de avaliação de eficácia de uma intervenção (vacina) e solicita a identificação da medida epidemiológica que expressa a redução proporcional da incidência de uma doença.\n\nAlternativa (a) Incorreta. O Risco Relativo (RR) é a razão entre a incidência da doença no grupo exposto (vacinados) e a incidência no grupo não exposto (não vacinados). Se a vacina reduz a incidência em 80 por cento, isso significa que o risco no grupo vacinado é apenas 20 por cento do risco do grupo não vacinado. Portanto, o Risco Relativo seria de 0,20. O valor de 80 por cento não é o RR, mas sim o quanto o risco diminuiu em relação ao inicial.\n\nAlternativa (b) Incorreta. A Incidência Cumulativa representa o risco de um indivíduo desenvolver a doença em um período de tempo específico. É calculada dividindo-se o número de casos novos pelo total de pessoas em risco no início do período. É uma medida de frequência absoluta em um grupo, e não uma medida de comparação ou redução entre dois grupos.\n\nAlternativa (c) Correta. A Redução do Risco Relativo (RRR) é a medida que quantifica a diminuição proporcional do risco entre o grupo que recebeu a intervenção e o grupo controle. No contexto de vacinas, a RRR é o que chamamos de Eficácia Vacinal. Ela é calculada pela fórmula: (Incidência no grupo controle - Incidência no grupo intervenção) / Incidência no grupo controle. Também pode ser expressa como 1 menos o Risco Relativo. Se o RR é 0,20, então 1 menos 0,20 é igual a 0,80 ou 80 por cento de redução.\n\nAlternativa (d) Incorreta. A Redução de Risco Absoluto (RRA) é a diferença simples entre a incidência no grupo não exposto e a incidência no grupo exposto (RRA = Incidência controle menos Incidência intervenção). O resultado é expresso em pontos percentuais. Por exemplo, se a incidência caísse de 10 por cento para 2 por cento, a RRA seria de 8 por cento, enquanto a RRR (proporcional) seria de 80 por cento. A questão refere-se à redução da incidência da doença em si, o que tipicamente descreve a medida relativa.\n\nAlternativa (e) Incorreta. A Prevalência mede a proporção de casos existentes (novos e antigos) em uma população em um determinado ponto no tempo. Ela é influenciada pela incidência e pela duração da doença. Não é a medida adequada para avaliar o impacto direto de uma vacina na prevenção do surgimento de novos casos.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  },
+  {
+    "id": "AJUDA_b93c645a-c378-4f45-a670-10a3c64361e5",
+    "originalId": "b93c645a-c378-4f45-a670-10a3c64361e5",
+    "statement": "Uma mulher de 54 anos de idade, diabética, hipertensa e dislipidêmica, em uso irregular de medicações, compareceu ao pronto‑socorro com cefaleia intensa, vômitos, náusea, turvação visual e escotomas. O acompanhante relatou que o quadro evoluiu paulatinamente durante os últimos dias, com piora importante no dia atual. Na admissão, foram notados os seguintes sinais vitais: FC 117 bpm; PA 210 x 145 mmHg; FR 21 irpm; e dextro 120. Considerando essa situação hipotética, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve ser iniciado nitroprussiato endovenoso e realizada tomografia computadorizada do crânio sem contraste, caso esteja sem lesão hemorrágica, procedido à trombólise química.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser iniciado nitroprussiato endovenoso e realizada tomografia computadorizada do crânio sem contraste e, caso não seja encontrada lesão hemorrágica, proceder-se-á à trombectomia mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve ser iniciado nitroprussiato endovenoso e realizada tomografia computadorizada de crânio sem contraste, dada a ausência de tempo hábil para trombólise química. Deve ser realizada, então, ressonância magnética de crânio para averiguar se ainda há região de penumbra para possível trombectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve ser iniciado nitroprussiato endovenoso, com possibilidade de reversão dos sintomas com a melhora dos controles pressóricos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Deve ser iniciado nitroprussiato endovenoso para evitar novo evento, porém os sintomas apresentados provavelmente se manterão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso:\nA paciente apresenta um quadro de Emergência Hipertensiva, especificamente compatível com Encefalopatia Hipertensiva. Os marcos diagnósticos são a pressão arterial severamente elevada (210 x 145 mmHg) associada a sinais e sintomas de sofrimento cerebral difuso e edema de papila/alterações visuais (cefaleia intensa, vômitos, turvação visual e escotomas). Diferente de um Acidente Vascular Cerebral (AVC), que costuma cursar com déficits focais súbitos (como hemiparesia), a encefalopatia hipertensiva apresenta uma evolução um pouco mais lenta (dias) e sintomas neurológicos globais.\n\nAnalise das alternativas:\n\nAlternativa a) Incorreta. A trombólise química é o tratamento de escolha para o Acidente Vascular Cerebral Isquêmico dentro da janela terapêutica. No caso apresentado, a clínica é de encefalopatia hipertensiva. Além disso, níveis pressóricos acima de 185/110 mmHg são contraindicações para a trombólise, sendo necessário baixar a pressão antes de qualquer procedimento desse tipo.\n\nAlternativa b) Incorreta. A trombectomia mecânica é indicada para oclusão de grandes vasos em casos selecionados de AVC isquêmico. Não há subsídios no enunciado (como um déficit focal específico) que sugiram a oclusão de um grande vaso arterial que justifique esse procedimento.\n\nAlternativa c) Incorreta. Esta alternativa também foca no protocolo de AVC isquêmico (busca por zona de penumbra). O foco do tratamento na emergência hipertensiva com lesão de órgão-alvo cerebral deve ser o controle pressórico imediato com drogas parenterais para evitar a progressão do dano.\n\nAlternativa d) Correta. O nitroprussiato de sódio é um vasodilatador de ação rápida e fácil titulação, sendo frequentemente utilizado em emergências hipertensivas. Uma característica fundamental da encefalopatia hipertensiva é que, diferentemente do AVC isquêmico onde há morte neuronal por isquemia, os sintomas costumam ser reversíveis com a redução gradual e adequada da pressão arterial, que permite a restauração da autorregulação do fluxo sanguíneo cerebral.\n\nAlternativa e) Incorreta. O prognóstico da encefalopatia hipertensiva é geralmente bom quando tratada precocemente. Afirmar que os sintomas provavelmente se manterão está incorreto, pois a reversibilidade é a marca registrada desta condição clínica quando o estímulo pressórico é removido.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  },
+  {
+    "id": "AJUDA_b94bce4c-c075-4bad-91c1-702d36c40f5e",
+    "originalId": "b94bce4c-c075-4bad-91c1-702d36c40f5e",
+    "statement": "Leia o caso a seguir.\n\nGestante de 31 semanas de gestação dá entrada no pronto atendimento com história de saída de grande quantidade de líquido via vaginal há cerca de 12 horas e contrações uterinas há cerca de duas horas. No exame físico geral, encontra-se afebril, com duas contrações/10 minutos, feto cefálico com altura da apresentação em -1 de De Lee, com colo 90% apagado e 8 cm dilatado, com saída de líquido amniótico claro, sem grumos. O feto se encontra com BCF = 134/m e com movimentos presentes.\n\nDiante desse quadro, qual é a conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uteroinibição, corticoterapia e profilaxia do B-estreptococcus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uteroinibição, corticoterapia, profilaxia do B-estreptococcus e sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Corticoterapia, profilaxia do B-estreptococcus, sulfato de magnésio e cesariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Assistência ao trabalho de parto, profilaxia do B-estreptococcus e sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nTemos uma gestante pré-termo (31 semanas) em trabalho de parto avançado. Os pontos-chave são a idade gestacional (31 semanas), a rotura das membranas (amniorrexe) há 12 horas e o exame físico evidenciando 8 cm de dilatação. O feto está em apresentação cefálica e em boas condições de vitalidade (BCF 134 bpm).\n\nDiagnóstico: Trabalho de parto prematuro em fase ativa/avançada.\n\nPor que a alternativa (d) está correta?\nA paciente encontra-se em fase avançada do trabalho de parto (8 cm de dilatação). Nesse estágio, a uteroinibição (tocólise) é contraindicada, pois o processo é considerado irreversível e não haveria tempo hábil para a ação plena do corticoide (que requer de 24 a 48 horas). Portanto, a conduta correta é a assistência ao parto. Por se tratar de um parto prematuro (abaixo de 37 semanas), é obrigatória a profilaxia para o estreptococo do grupo B (GBS), já que o status da paciente é desconhecido. Além disso, como a gestação tem menos de 32 semanas e o parto é iminente, o uso de sulfato de magnésio está indicado para a neuroproteção fetal, visando reduzir o risco de paralisia cerebral.\n\nAnálise das alternativas incorretas:\n\nAlternativa (a): Incorreta. A uteroinibição (tocólise) não deve ser realizada em pacientes com dilatação avançada (geralmente acima de 4 cm). Além disso, a alternativa omite o sulfato de magnésio, que é fundamental para a neuroproteção em fetos com menos de 32 semanas.\n\nAlternativa (b): Incorreta. Assim como na alternativa anterior, a uteroinibição é contraindicada neste estágio do trabalho de parto (8 cm de dilatação). O foco agora é o suporte ao nascimento e a proteção fetal imediata.\n\nAlternativa (c): Incorreta. Não há indicação de cesariana baseada apenas na prematuridade ou na rotura de membranas. O feto está em apresentação cefálica e com boa vitalidade, permitindo a assistência ao parto vaginal. A cesariana deve ser reservada para indicações obstétricas habituais.\n\nAlternativa (d): Correta. Reflete a conduta adequada para um trabalho de parto prematuro inevitável: permitir a progressão do parto, realizar a profilaxia antibiótica para GBS e administrar sulfato de magnésio para neuroproteção fetal devido à idade gestacional inferior a 32 semanas.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  },
+  {
+    "id": "AJUDA_b94d959f-ecf7-4998-ab9d-5c64e86dc98c",
+    "originalId": "b94d959f-ecf7-4998-ab9d-5c64e86dc98c",
+    "statement": "O tratamento da tuberculose exige uma combinação de medicamentos que inclui o etambutol. Em relação ao uso desse medicamento na população pediátrica, a prescrição é indicada a partir de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 anos, desde que haja controle mensal das enzimas hepáticas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10 anos, devido ao risco de desenvolvimento de neurite ótica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "4 anos, devido ao risco de desenvolvimento de hepatite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "12 anos, desde que haja controle mensal de creatinina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O esquema básico para o tratamento da tuberculose no Brasil, estabelecido pelo Ministério da Saúde, diferencia a composição dos medicamentos de acordo com a faixa etária. Para crianças menores de 10 anos, o tratamento é realizado com três drogas: rifampicina (R), isoniazida (H) e pirazinamida (Z), formando o esquema RHZ. O etambutol (E) é adicionado apenas para pacientes a partir dos 10 anos de idade, compondo o esquema RHZE.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A idade de 6 anos não é o marco cronológico para a inclusão do etambutol. Além disso, o monitoramento de enzimas hepáticas (TGO e TGP) é fundamental para vigiar a hepatotoxicidade causada principalmente pela pirazinamida, isoniazida e rifampicina, e não pelo etambutol, que possui baixa toxicidade hepática.\n\nAlternativa b) Correta. O etambutol é introduzido no esquema terapêutico apenas a partir dos 10 anos de idade devido ao risco de neurite óptica retrobulbar. Esse efeito adverso manifesta-se pela redução da acuidade visual, alteração do campo visual e perda da capacidade de distinguir cores (especialmente o vermelho e o verde). A restrição para crianças menores ocorre porque a avaliação oftalmológica subjetiva e a percepção de mudanças na visão são difíceis de ser relatadas e monitoradas com precisão nessa faixa etária, aumentando o risco de danos permanentes.\n\nAlternativa c) Incorreta. Aos 4 anos, o tratamento indicado é o RHZ (três drogas). A hepatite medicamentosa é um efeito colateral relacionado à rifampicina, isoniazida e pirazinamida, enquanto o principal temor relacionado ao etambutol é a toxicidade ocular.\n\nAlternativa d) Incorreta. O ponto de corte para o uso de etambutol em crianças é de 10 anos, conforme as diretrizes nacionais, e não 12 anos. Embora o medicamento seja excretado por via renal e necessite de ajuste em pacientes com insuficiência renal, o controle mensal de creatinina não é uma exigência padrão para a prescrição em adolescentes sem comorbidades renais prévias.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  },
+  {
+    "id": "AJUDA_b94e7fb2-6835-4b2c-bdf5-178a52e516f8",
+    "originalId": "b94e7fb2-6835-4b2c-bdf5-178a52e516f8",
+    "statement": "A dor do crescimento, quando grave e sensível ao exame físico,",
+    "options": [
+      {
+        "id": "A",
+        "text": "melhora com massagens e/ou analgésicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "tende a se agravar com o passar do tempo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pode apresentar aumento de volume no local da dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "cursa com sinais flogísticos na sua evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A dor do crescimento é uma das queixas musculoesqueléticas mais comuns na prática pediátrica, afetando crianças entre 3 e 12 anos. Ela se caracteriza por ser tipicamente bilateral, ocorrer ao final do dia ou durante a noite e localizar-se preferencialmente em membros inferiores (coxas, panturrilhas e região posterior dos joelhos). Um ponto fundamental para o diagnóstico é a total ausência de alterações ao exame físico.\n\nAlternativa (a): Está correta. O tratamento da dor do crescimento é essencialmente de suporte e voltado ao alívio dos sintomas. Mesmo nos episódios descritos como mais intensos ou graves pela criança ou pelos pais, a aplicação de massagens, calor local e o uso de analgésicos comuns (como paracetamol ou dipirona) costumam ser suficientes para a remissão da dor.\n\nAlternativa (b): Está incorreta. A dor do crescimento é uma condição autolimitada e benigna. Ela não apresenta um caráter progressivo de piora com o tempo; a tendência natural é que os episódios se tornem menos frequentes e desapareçam completamente até o final da infância ou início da adolescência.\n\nAlternativa (c): Está incorreta. A dor do crescimento não cursa com alterações estruturais ou aumento de volume (edema). A presença de qualquer tumefação ou aumento de volume local deve direcionar o raciocínio clínico para diagnósticos diferenciais mais graves, como tumores ósseos, osteomielite ou processos inflamatórios articulares.\n\nAlternativa (d): Está incorreta. Sinais flogísticos (calor, rubor, edema e limitação funcional) estão ausentes na dor do crescimento. O exame físico da criança com essa condição deve estar rigorosamente normal. A presença de sinais inflamatórios sugere patologias orgânicas, como artrite idiopática juvenil ou infecções, e invalida o diagnóstico de dor do crescimento.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Reumatologia Pediátrica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  },
+  {
+    "id": "AJUDA_b9520dae-493e-4a92-b140-23fb13152151",
+    "originalId": "b9520dae-493e-4a92-b140-23fb13152151",
+    "statement": "Na fase pós-natal, a sociedade espera que a mãe esteja muito feliz e satisfeita com o seu filho. Todos cobram a puérpera de estar radiante e, por isso, geralmente desconsideram seus reais sentimentos. Atualmente, a depressão pós-parto se insere em uma trilogia de distúrbios da psiquiatria perinatal, classicamente caracterizada por três entidades distintas: o baby blues ou blues puerperal, as psicoses puerperais e as depressões pós-parto. Um quarto quadro foi acrescentado e intitulado de transtorno de estresse pós-traumático no pós-parto (TEPT-pós-parto). Diagnosticar e diferenciar esses distúrbios é de extrema importância para que haja um tratamento adequado e resolutivo. \n\nEm relação a esses quadros, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O blues puerperal constitui-se em um distúrbio benigno que desaparece sem sequelas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A depressão pós-parto é a que ocorre mais precocemente (antes das 6 semanas pós-parto) e assemelha-se aos sintomas da depressão em geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O blues puerperal geralmente prolonga-se por mais de 1 mês, requerendo uso de medicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento das psicoses puerperais consiste em esclarecimento, compreensão e apoio familiar, sobretudo do companheiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "As psicoses puerperais têm seu início de forma arrastada após os 6 meses do parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender os transtornos mentais do puerpério, é fundamental diferenciar a intensidade dos sintomas, o tempo de início e a necessidade de intervenção médica. Segue a análise de cada alternativa:\n\nAlternativa A (Correta): O blues puerperal, também chamado de disforia pós-parto, é considerado uma resposta fisiológica e emocional à queda abrupta de hormônios e ao estresse da nova rotina. Atinge até 80% das mulheres, inicia-se entre o 3º e o 5º dia após o parto e desaparece espontaneamente em até duas semanas. Por ser autolimitado e não gerar prejuízos funcionais graves, é classificado como benigno e sem sequelas.\n\nAlternativa B (Incorreta): O distúrbio que ocorre mais precocemente é o blues puerperal (dias após o parto). A depressão pós-parto (DPP) costuma ter um início mais insidioso, geralmente entre a 4ª e a 12ª semana pós-parto. Embora os sintomas se assemelhem à depressão unipolar, o critério temporal de precocidade da alternativa está incorreto ao compará-la com o blues.\n\nAlternativa C (Incorreta): O blues puerperal é caracterizado justamente por sua curta duração (máximo de 10 a 14 dias). Se os sintomas persistirem por mais de um mês, o diagnóstico provável passa a ser depressão pós-parto. Além disso, o blues não requer o uso de medicações, apenas suporte, acolhimento e orientações à puérpera.\n\nAlternativa D (Incorreta): A psicose puerperal é uma emergência psiquiátrica grave, com risco de infanticídio e suicídio. O tratamento obrigatoriamente envolve o uso de medicamentos (antipsicóticos, estabilizadores de humor ou antidepressivos) e, na grande maioria dos casos, internação hospitalar. Esclarecimento e apoio familiar são importantes, mas totalmente insuficientes para o manejo desse quadro.\n\nAlternativa E (Incorreta): A psicose puerperal tem início tipicamente agudo e súbito, ocorrendo geralmente nas duas primeiras semanas após o parto (muitas vezes nos primeiros 2 a 3 dias). Não é um quadro de evolução arrastada e seu surgimento após 6 meses foge do padrão clínico clássico desta patologia.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  },
+  {
+    "id": "AJUDA_b95ec113-1309-41fd-afef-f5d7676257ec",
+    "originalId": "b95ec113-1309-41fd-afef-f5d7676257ec",
+    "statement": "A prevenção quaternária deve ser levada em consideração no contexto da prática em atenção primária, buscando evitar procedimentos e intervenções desnecessários que possam causar mais danos do que benefícios para o paciente. Qual das seguintes condutas representa um exemplo de prevenção quaternária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever vacina Pneumo 13 e Pneumo 23 para pessoas vivendo com HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não solicitar rastreio de câncer de próstata para homem assintomático com mais de 50 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Não solicitar rastreio de câncer de colo de útero para mulher com 25 anos de idade que já tenha iniciado vida sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar dapagliflozina para pessoa com diabetes e insuficiência cardíaca com fração de ejeção reduzida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "CONCEITO DE PREVENÇÃO QUATERNÁRIA\nA prevenção quaternária consiste na detecção de indivíduos em risco de intervenções médicas excessivas ou desnecessárias (sobremedicalização), visando a protegê-los de procedimentos que causem mais danos do que benefícios. Baseia-se no princípio ético da não maleficência (Primum non nocere).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A prescrição de vacinas (Pneumo 13 e 23) em pacientes vivendo com HIV é um exemplo de Prevenção Primária. A prevenção primária atua sobre os fatores de risco ou agentes causais para evitar que a doença ocorra. Neste caso, busca-se evitar infecções pneumocócicas antes que elas se instalem.\n\nAlternativa (b) CORRETA: O rastreio universal do câncer de próstata em homens assintomáticos é um tema controverso devido ao alto risco de sobrediagnóstico (overdiagnosis) e sobretratamento (overtreatment). Ao optar por não solicitar o rastreio rotineiro (PSA e toque retal) sem uma decisão compartilhada ou em desacordo com as evidências de benefício, o médico está praticando a prevenção quaternária, protegendo o paciente de biópsias desnecessárias, incontinência urinária e impotência sexual decorrentes de tratamentos de tumores que poderiam nunca se manifestar clinicamente.\n\nAlternativa (c) INCORRETA: De acordo com as diretrizes do Ministério da Saúde e do INCA, o rastreio do câncer do colo do útero deve ser iniciado justamente aos 25 anos para mulheres que já iniciaram a vida sexual. Portanto, deixar de solicitar o exame nessa faixa etária não é prevenção quaternária, mas sim uma falha na Prevenção Secundária (que visa ao diagnóstico precoce de doenças em estágio inicial ou pré-clínico).\n\nAlternativa (d) INCORRETA: O uso de dapagliflozina em pacientes que já possuem o diagnóstico de Diabetes Mellitus e Insuficiência Cardíaca é um exemplo de Prevenção Terciária. A prevenção terciária foca em reduzir o impacto de uma doença já estabelecida, prevenindo complicações, recidivas, internações e buscando a reabilitação do paciente.\n\nRESUMO DOS NÍVEIS DE PREVENÇÃO:\n- Primária: Evitar a doença (ex: vacina, orientar a cessação do tabagismo).\n- Secundária: Diagnóstico precoce/Rastreio (ex: mamografia, preventivo).\n- Terciária: Reduzir prejuízos de doença instalada (ex: controle de PA/glicemia, fisioterapia pós-AVC).\n- Quaternária: Evitar iatrogenia e excessos médicos (ex: não pedir check-up desnecessário, evitar polifarmácia em idosos).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  },
+  {
+    "id": "AJUDA_b96072fe-f5e8-4f12-8d37-c072b986d8c3",
+    "originalId": "b96072fe-f5e8-4f12-8d37-c072b986d8c3",
+    "statement": "Um hospital realizou um estudo para investigar fatores de risco associados à readmissão hospitalar de pessoas idosas (60 anos ou mais) em até 30 dias. A pesquisa incluiu 568 pacientes que haviam recebido alta hospitalar no período de janeiro a dezembro de 2021. A partir de registros eletrônicos, os pesquisadores selecionaram aleatoriamente dois grupos de pacientes: o primeiro composto de indivíduos que foram readmitidos em até 30 dias após a alta, e o segundo de indivíduos que não foram readmitidos no mesmo período. Dados sociodemográficos, clínicos e relacionados à internação foram obtidos dos prontuários eletrônicos e analisados. O estudo investigou associações entre diversas variáveis e a ocorrência de readmissão, por meio de análise bivariada e regressão logística.\n\nO estudo descrito se caracteriza como",
+    "options": [
+      {
+        "id": "A",
+        "text": "estudo transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ensaio clínico randomizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estudo de coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "estudo caso-controle.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para identificar o desenho de um estudo epidemiológico, devemos focar em como os grupos foram formados e na temporalidade da análise.\n\nAlternativa (a) Incorreta: O estudo transversal (ou de prevalência) avalia a exposição e o desfecho simultaneamente em um único momento, como uma \"fotografia\". Ele não acompanha o tempo nem parte do desfecho para investigar causas passadas. No caso em questão, os pesquisadores selecionaram grupos baseados em um evento que já havia ocorrido (readmissão) e buscaram dados históricos nos prontuários.\n\nAlternativa (b) Incorreta: O ensaio clínico randomizado é um estudo experimental. Nele, o pesquisador intervém ativamente, distribuindo os participantes de forma aleatória em grupos que receberão ou não uma intervenção (como um medicamento). O estudo descrito é observacional, pois os pesquisadores apenas coletaram dados de eventos que ocorreram naturalmente, sem interferir no tratamento dos pacientes.\n\nAlternativa (c) Incorreta: No estudo de coorte, a seleção dos participantes é feita com base na exposição (exemplo: pacientes com diabetes versus pacientes sem diabetes) e eles são acompanhados ao longo do tempo para verificar quem desenvolverá o desfecho (neste caso, a readmissão). Embora o estudo use dados de um período de tempo, a divisão dos grupos não foi feita pela exposição, mas sim pelo fato de terem sido readmitidos ou não (o desfecho).\n\nAlternativa (d) Correta: O estudo caso-controle é caracterizado por partir do desfecho (o efeito) para identificar possíveis fatores de risco (as causas). Os pesquisadores identificaram primeiro quem teve o evento de interesse (casos: idosos readmitidos em até 30 dias) e quem não teve (controles: idosos não readmitidos). A partir desses grupos já formados, eles analisaram retrospectivamente os prontuários eletrônicos para investigar quais variáveis sociodemográficas e clínicas estavam associadas ao desfecho. Essa estrutura de comparação entre \"casos\" e \"controles\" é o que define o desenho.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:22.411Z"
+  }
+]

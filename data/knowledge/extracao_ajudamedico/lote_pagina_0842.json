@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_ea13b181-8050-40cc-b2cf-38f42ccfe953",
+    "originalId": "ea13b181-8050-40cc-b2cf-38f42ccfe953",
+    "statement": "Adolescente, sexo masculino, com 12 anos de idade, com diagnóstico de epilepsia, chega ao pronto-socorro inconsciente, com movimentos tônico-clônicos generalizados, cianótico, com desvio do olhar e sialorreia. A mãe informa que o adolescente iniciou a crise há cerca de 20 minutos, sem recuperar a consciência ao longo do trajeto até o hospital. Na sala de emergência, foi administrado diazepam endovenoso por 3 vezes, com intervalo de 5 minutos entre as doses. Apesar da intervenção terapêutica, o paciente mantém o quadro convulsivo. Nesse caso, a próxima conduta médica deve ser administrar",
+    "options": [
+      {
+        "id": "A",
+        "text": "topiramato por infusão endovenosa contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fenitoína em dose de ataque endovenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "diazepam em dose dobrada endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tiopental por cânula endotraqueal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "midazolan em dose dobrada, por via retal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um estado de mal epiléptico (EME) convulsivo generalizado. O EME é definido operacionalmente como uma crise convulsiva que dura mais de 5 minutos ou crises repetidas sem recuperação da consciência entre elas. No caso, o adolescente está em crise há 20 minutos, caracterizando uma emergência médica que exige intervenção imediata, seguindo protocolos bem estabelecidos.\n\nO protocolo de tratamento do EME é dividido em etapas:\n\n1. Fase Inicial (0 a 5-10 minutos): Estabilização clínica (ABC) e administração de benzodiazepínicos. O paciente recebeu diazepam endovenoso três vezes, o que esgota a utilidade dessa classe farmacológica nesta fase.\n\n2. Segunda Fase (20 a 40 minutos): Se as crises persistem após o uso de benzodiazepínicos (EME estabelecido), deve-se administrar uma droga antiepiléptica de segunda linha em dose de ataque. As opções clássicas incluem fenitoína, fenobarbital, ácido valproico ou levetiracetam.\n\nAnálise das alternativas:\n\na) Incorreta. O topiramato não é uma droga de primeira ou segunda linha para o tratamento agudo do estado de mal epiléptico. Ele é utilizado principalmente na manutenção ambulatorial ou em casos muito específicos de refratariedade, e sua formulação não é a escolha padrão para infusão contínua imediata neste cenário.\n\nb) Correta. A fenitoína em dose de ataque (geralmente 18 a 20 mg/kg) é a conduta padrão de segunda linha após a falha dos benzodiazepínicos. Ela visa estabilizar a membrana neuronal e interromper a atividade convulsiva que não cedeu ao diazepam. Deve ser administrada em veia calibrosa, diluída em soro fisiológico e com monitorização eletrocardiográfica, devido ao risco de arritmias e hipotensão.\n\nc) Incorreta. Insistir em doses repetidas ou dobradas de benzodiazepínicos (como o diazepam) após três tentativas sem sucesso é contraindicado. Isso aumenta significativamente o risco de depressão respiratória e sedação profunda sem garantir o controle das crises, retardando o início da terapia de segunda linha necessária.\n\nd) Incorreta. O tiopental é um barbitúrico de ação ultracurta utilizado no estado de mal epiléptico refratário (quando a primeira e a segunda linhas falham). Ele deve ser administrado por via endovenosa, geralmente sob ventilação mecânica e monitorização em UTI. A via endotraqueal não é a via de administração para o tratamento de convulsões.\n\ne) Incorreta. O midazolam é um benzodiazepínico. Como o paciente já falhou ao uso de diazepam e já possui acesso venoso (pois recebeu doses IV anteriormente), não há justificativa para trocar a via de administração para retal ou repetir a classe farmacológica que já se mostrou ineficaz no controle do quadro atual. Além disso, a via retal é preferida apenas no ambiente extra-hospitalar quando não há acesso venoso disponível.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Epilepsias",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  },
+  {
+    "id": "AJUDA_ea14cb05-1239-4782-b4ec-5a1a63f3226c",
+    "originalId": "ea14cb05-1239-4782-b4ec-5a1a63f3226c",
+    "statement": "Sobre a terminalidade da vida e os cuidados paliativos, o Código de Ética Médica (CEM) estabelece limites claros para a atuação profissional. De acordo com a norma vigente, é vedado ao médico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever sedação paliativa quando o sofrimento do paciente for considerado refratário às medidas convencionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A prática da ortotanásia (morte no tempo certo), garantindo os cuidados de conforto em casos de doença incurável e terminal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Abreviar a vida do paciente (eutanásia), ainda que a pedido deste ou de seu representante legal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Suspender ou limitar tratamentos fúteis ou obstinados (distanásia) que apenas prolonguem o sofrimento do paciente, sem benefício terapêutico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Oferecer cuidados paliativos sem o consentimento prévio do comitê de ética hospitalar em casos de pacientes inconscientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o Código de Ética Médica (CEM) brasileiro, especificamente no que diz respeito à terminalidade da vida e aos deveres do médico frente a pacientes com doenças incuráveis e terminais. O foco está no Artigo 41 do CEM vigente.\n\nAlternativa A: Incorreta. A sedação paliativa é uma intervenção médica indicada para o controle de sintomas refratários (aqueles que não respondem a outros tratamentos) em pacientes em fim de vida. Ela visa ao alívio do sofrimento e não à abreviação da vida, sendo uma prática ética e tecnicamente correta dentro dos cuidados paliativos.\n\nAlternativa B: Incorreta. A ortotanásia é o termo que define a morte em seu tempo natural, sem interferências artificiais que prolonguem o processo de morrer de forma indigna. O parágrafo único do Artigo 41 do CEM estabelece que, em casos de doença incurável e terminal, o médico deve garantir os cuidados de conforto, o que caracteriza a prática da ortotanásia como um dever ético.\n\nAlternativa C: Correta (Gabarito). Conforme o Artigo 41 do Código de Ética Médica, é expressamente vedado ao médico abreviar a vida do paciente, ainda que a pedido deste ou de seu representante legal. No Brasil, a eutanásia é considerada uma infração ética grave e também um crime tipificado no Código Penal.\n\nAlternativa D: Incorreta. Suspender ou limitar tratamentos fúteis ou obstinados é o oposto da distanásia. O CEM, em seu Artigo 41 (parágrafo único), orienta que o médico deve evitar o emprego de ações diagnósticas ou terapêuticas inúteis ou obstinadas, priorizando o bem-estar e o suporte paliativo. Portanto, suspender o que é inútil não é vedado, mas sim recomendado.\n\nAlternativa E: Incorreta. O oferecimento de cuidados paliativos é uma boa prática médica e um direito do paciente. Não há exigência de consulta ou consentimento de comitê de ética hospitalar para que o médico inicie o plano de cuidados paliativos. Em pacientes inconscientes, as decisões são tomadas com base nas diretivas antecipadas de vontade (se houver) ou em conjunto com os representantes legais e familiares.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  },
+  {
+    "id": "AJUDA_ea178efb-d8b1-48da-a934-1829105bcdfa",
+    "originalId": "ea178efb-d8b1-48da-a934-1829105bcdfa",
+    "statement": "Um paciente de 38 anos de idade, com diabetes tipo 1 há 12 anos, em seguimento ambulatorial, relatou dificuldades financeiras e, por isso, só dispunha de insulina NPH e insulina regular humana. Ele tinha histórico de hipoglicemias noturnas, especialmente entre 2h e 4h da manhã, com glicemias de jejum frequentemente <70 mg/ dl. O paciente realizava três refeições diárias em horários regulares, mas tinha dificuldade para realizar contagem de carboidratos. O paciente utilizava um esquema de três aplicações diárias: NPH e regular pela manhã; regular antes do jantar; e NPH ao se deitar. O paciente monitorizava glicemia capilar antes das refeições e ao acordar.\n\nConsiderando as opções de ajuste de insulinoterapia ambulatorial para esse paciente, assinale a opção que apresenta a conduta mais adequada, visando minimizar hipoglicemias noturnas, otimizar controle glicêmico e facilitar o autogerenciamento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter o esquema atual, sem ajustes, pois a regular cobre adequadamente todas as refeições e a NPH ao deitar previne hiperglicemia matinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trocar a insulina regular por insulina lispro ou aspart, aplicando imediatamente antes das refeições, para reduzir risco de hipoglicemia noturna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar a dose de insulina regular antes do jantar para compensar hipoglicemias noturnas, mantendo a dose de NPH inalterada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender a NPH ao deitar e utilizar apenas insulina regular antes das refeições, pois o risco de hipoglicemia noturna está relacionado exclusivamente à NPH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reduzir a dose de NPH ao deitar e redistribuir parte da dose para o período da manhã, mantendo monitorização da glicemia de jejum, e considerar simplificação do esquema para duas aplicações diárias caso persista dificuldade de autogerenciamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise da questão:\n\nO caso descreve um paciente com Diabetes Mellitus tipo 1 (DM1) que apresenta hipoglicemias noturnas (entre 2h e 4h da manhã) e glicemias de jejum baixas, utilizando um esquema de insulinoterapia com insulinas humanas (NPH e Regular). O desafio é ajustar o tratamento considerando a restrição financeira do paciente e a necessidade de segurança.\n\nAlternativa (a) Incorreta: Não se pode manter o esquema atual quando o paciente apresenta episódios recorrentes de hipoglicemia. A hipoglicemia noturna é um evento grave que aumenta o risco cardiovascular e reduz a qualidade de vida. O ajuste é mandatório para garantir a segurança do paciente.\n\nAlternativa (b) Incorreta: Embora os análogos de insulina (aspart, lispro, glargina, detemir) tenham um perfil farmacocinético superior e menor risco de hipoglicemia, o enunciado afirma explicitamente que o paciente possui dificuldades financeiras e dispõe apenas de NPH e Regular. Propor uma conduta que o paciente não pode custear é clinicamente inadequado no contexto da medicina baseada na pessoa.\n\nAlternativa (c) Incorreta: Aumentar a insulina Regular antes do jantar elevaria o risco de hipoglicemia no período pós-prandial imediato ou antes de deitar. O problema do paciente (hipoglicemia na madrugada e no jejum) está diretamente relacionado à dose ou ao pico de ação da insulina NPH aplicada ao deitar, e não à falta de insulina rápida no jantar.\n\nAlternativa (d) Incorreta: Pacientes com DM1 possuem deficiência absoluta de insulina. A suspensão da insulina basal (NPH) levaria inevitavelmente a quadros de hiperglicemia grave e risco de cetoacidose diabética. A insulina Regular, por ter curta duração, não consegue manter a cobertura basal necessária por 24 horas.\n\nAlternativa (e) Correta: Esta é a conduta mais lógica e segura. Se há hipoglicemia no período de ação da NPH noturna, a primeira medida é reduzir sua dose. Redistribuir parte dessa carga para a manhã garante que o paciente não fique desassistido de insulina basal durante o dia. Além disso, a simplificação do esquema para duas aplicações (misturando NPH e Regular no café da manhã e no jantar) é uma estratégia válida para pacientes com dificuldade de autogerenciamento, facilitando a adesão ao tratamento sem comprometer severamente o controle, desde que haja monitorização frequente.\n\nEm resumo, o ajuste da dose noturna da NPH é a intervenção direta para cessar as hipoglicemias da madrugada, respeitando as limitações financeiras e operacionais do paciente.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  },
+  {
+    "id": "AJUDA_ea1d3c80-be58-4e5d-bc65-c5ce716ce368",
+    "originalId": "ea1d3c80-be58-4e5d-bc65-c5ce716ce368",
+    "statement": "Homem de 45 anos apresenta febre, fadiga intensa e sangramentos gengivais. Exame físico: palidez, petéquias, hepatoesplenomegalia discreta. Hemograma: Hb = 7,8 g/dL, leucócitos = 42.000/mm³ (blastos 60%), plaquetas = 20.000/mm³. Esfregaço: bastonetes de Auer. Qual a conduta inicial prioritária neste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar ácido trans-retinoico imediatamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar tipagem HLA e aguardar estudo citogenético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar corticoide em altas doses para reduzir leucocitose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transfundir plaquetas e adiar qualquer tratamento até estabilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado aponta diretamente para uma Leucemia Mieloide Aguda (LMA). Os principais sinais são a pancitopenia funcional (anemia, plaquetopenia e febre por neutropenia) associada à presença de blastos no sangue periférico. O detalhe fundamental que define a conduta é a presença de bastonetes de Auer no esfregaço, estruturas patognomônicas de linhagem mieloide.\n\nDentro do grupo das LMAs, a suspeita principal aqui é a Leucemia Promielocítica Aguda (LPA ou antigo subtipo M3 da classificação FAB). Esta variante é considerada uma emergência médica devido ao alto risco de coagulação intravascular disseminada (CIVD) e hemorragias fatais, frequentemente manifestadas por sangramentos gengivais e petéquias.\n\nAnálise das alternativas:\n\na) Correta. O ácido trans-retinoico (ATRA) é o tratamento de escolha para a Leucemia Promielocítica Aguda. Ele atua promovendo a diferenciação dos promielócitos leucêmicos em células maduras, revertendo rapidamente a coagulopatia. A recomendação atual é iniciar o ATRA imediatamente diante da suspeita clínica e morfológica (presença de bastonetes de Auer e blastos), sem aguardar a confirmação citogenética (translocação t(15;17)), para reduzir a mortalidade precoce por sangramento.\n\nb) Incorreta. Embora o estudo citogenético e molecular seja necessário para o diagnóstico definitivo e a tipagem HLA seja importante para um eventual transplante de medula óssea no futuro, aguardar esses resultados para iniciar o tratamento é perigoso. O paciente pode evoluir com hemorragia do sistema nervoso central ou pulmonar enquanto espera.\n\nc) Incorreta. O uso de corticoides em altas doses é comum no tratamento de Leucemias Linfocíticas Agudas (LLA) ou para controle de hiperleucocitose extrema em outros contextos, mas não é a conduta prioritária na suspeita de LPA. Além disso, o corticoide isolado não trata a causa-base da coagulopatia mieloide.\n\nd) Incorreta. A transfusão de plaquetas e o suporte transfusional são medidas de suporte fundamentais, mas a alternativa erra ao dizer que se deve \"adiar qualquer tratamento até a estabilização\". Na LPA, a estabilização clínica real só é alcançada com o início do tratamento específico (ATRA), que interrompe o gatilho da coagulopatia. Adiar o tratamento específico aumenta drasticamente o risco de morte.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  },
+  {
+    "id": "AJUDA_ea22b760-c589-4fd1-af2e-4a1c669334f8",
+    "originalId": "ea22b760-c589-4fd1-af2e-4a1c669334f8",
+    "statement": "Assinale a alternativa que apresenta um contexto em que a terapia anti-retroviral NÃO deve ser iniciada em até sete dias do primodiagnóstico da infecção pelo HIV.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paciente apresentando tuberculose pulmonar em início de tratamento específico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paciente assintomático com contagem de CD4 > 500/mm³",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paciente com criptococose meningea em início de tratamento específico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Paciente portador de cirrose hepática por coinfecção com vírus da hepatite B",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O cerne desta questão é o conceito de Início Rápido da Terapia Antirretroviral (TARV) versus as exceções em que o retardamento da terapia é mandatório para evitar a Síndrome Inflamatória de Reconstituição Imune (SIRI). Atualmente, a recomendação geral é iniciar a TARV o mais precocemente possível, preferencialmente em até sete dias após o diagnóstico (estratégia \"Test and Treat\").\n\nAlternativa a) Incorreta. Na tuberculose pulmonar, a recomendação geral é iniciar o tratamento da tuberculose primeiro e a TARV logo em seguida. Em pacientes com imunossupressão grave (CD4 abaixo de 50), a TARV deve ser iniciada em até duas semanas. Embora não seja obrigatoriamente em sete dias para todos, a tuberculose pulmonar não representa a contraindicação clássica de adiamento prolongado quando comparada às infecções do Sistema Nervoso Central.\n\nAlternativa b) Incorreta. Pacientes assintomáticos, independentemente da contagem de linfócitos T CD4, são os candidatos ideais para o início rápido da TARV. O início imediato reduz a morbimortalidade e a transmissibilidade do vírus (Conceito de I=I: Indetectável é igual a Intransmissível).\n\nAlternativa c) Correta. A criptococose meníngea é a principal contraindicação ao início rápido da TARV. O início precoce dos antirretrovirais nestes pacientes pode causar uma SIRI grave no Sistema Nervoso Central, levando ao aumento crítico da pressão intracraniana e à morte. As diretrizes nacionais e internacionais recomendam adiar o início da TARV por 4 a 6 semanas (alguns protocolos sugerem até 10 semanas) após o início do tratamento antifúngico, garantindo que a carga fúngica no líquor tenha sido reduzida antes da recuperação imunológica.\n\nAlternativa d) Incorreta. A coinfecção HIV/HBV (Hepatite B) é uma indicação prioritária de início de TARV. Como o esquema terapêutico padrão do HIV geralmente inclui o Tenofovir (TDF) e a Lamivudina (3TC), que possuem atividade potente contra o vírus da hepatite B, o tratamento precoce ajuda a controlar ambas as infecções e previne a progressão da cirrose e do carcinoma hepatocelular.\n\nResumo: O início da TARV deve ser adiado principalmente em infecções oportunistas do Sistema Nervoso Central, como a Criptococose Meníngea e a Tuberculose Meníngea, pelo risco de desfechos fatais decorrentes da inflamação excessiva no cérebro durante a recuperação da imunidade.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Micoses Invasivas",
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  },
+  {
+    "id": "AJUDA_ea27f427-a17f-47ff-8b34-d7f907a6fa25",
+    "originalId": "ea27f427-a17f-47ff-8b34-d7f907a6fa25",
+    "statement": "Paciente com polidipsia, poliúria e fadiga é diagnosticado com DM2, apresentando HbA1c = 7,2 %. Inicia-se metformina como terapia de primeira linha. Nessa situação, a HbA1c e o fármaco utilizado caracterizam, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Marcador exclusivo de hipoglicemia e agonista β₂-adrenérgico broncodilatador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Índice isolado de função renal e inibidor direto da dipeptidil peptidase-4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Critério diagnóstico de DM com HbA1c ≥ 6,5 % e ativador de AMPK com redução da produção hepática de glicose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Critério de pré-diabetes com HbA1c < 6,5 % e bloqueador de canais de sódio dependentes de voltagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da Questão\n\nO caso clínico apresenta um paciente com sintomas típicos de hiperglicemia (poliúria, polidipsia e fadiga) e um exame de Hemoglobina Glicada (HbA1c) de 7,2 por cento. A questão exige o conhecimento dos critérios diagnósticos do Diabetes Mellitus (DM) e o mecanismo de ação da metformina, fármaco de primeira escolha para o tratamento do DM tipo 2.\n\nAlternativa a: Incorreta. A HbA1c não é um marcador de hipoglicemia; ela reflete a média das glicemias dos últimos dois a três meses. Já a metformina pertence à classe das biguanidas. Agonistas beta-2-adrenérgicos são medicamentos broncodilatadores utilizados em patologias como asma e DPOC, não possuindo relação com o tratamento base do diabetes.\n\nAlternativa b: Incorreta. A HbA1c não avalia a função renal. Os exames utilizados para verificar a saúde dos rins são a creatinina sérica e a taxa de filtração glomerular estimada. Adicionalmente, a metformina não é um inibidor da DPP-4; essa classe é composta pelas gliptinas (como sitagliptina e vildagliptina).\n\nAlternativa c: Correta. De acordo com a Sociedade Brasileira de Diabetes e a American Diabetes Association, o valor de HbA1c maior ou igual a 6,5 por cento é um dos critérios para o diagnóstico de Diabetes Mellitus. No caso em questão, o paciente apresenta 7,2 por cento, confirmando a patologia. Quanto à metformina, seu principal mecanismo de ação é a ativação da enzima AMPK (proteína quinase ativada por AMP), o que leva à inibição da gliconeogênese hepática, resultando na redução da produção de glicose pelo fígado e melhora da sensibilidade à insulina.\n\nAlternativa d: Incorreta. O critério de pré-diabetes para a HbA1c é uma faixa entre 5,7 por cento e 6,4 por cento. Como o paciente apresenta 7,2 por cento, ele já se enquadra no diagnóstico de diabetes estabelecido. Além disso, a metformina não atua em canais de sódio dependentes de voltagem; esse mecanismo é característico de anestésicos locais e alguns anticonvulsivantes ou antiarrítmicos.\n\nGabarito: Letra C.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  },
+  {
+    "id": "AJUDA_ea2b5afd-9858-4f3c-a9a3-ee9411f48c06",
+    "originalId": "ea2b5afd-9858-4f3c-a9a3-ee9411f48c06",
+    "statement": "A dor abdominal recorrente (DAR) na infância é definida como três episódios de dor com intensidade suficiente para interferir nas atividades habituais da criança por um período de três meses. A respeito da investigação desse quadro, a conduta inicial deve incluir:",
+    "options": [
+      {
+        "id": "A",
+        "text": "investigação de intolerância à lactose dada a elevada associação entre essa condição e a DAR",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pesquisa de anticorpo anti-endomísio diante da possibilidade de doença celíaca, mesmo na ausência de sinais de alarme",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "anamnese abrangente, caracterização da dor, avaliação de sinais de alarme e a forma como a criança vivencia suas relações sociais",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "solicitação de ultrassonografia de abdômen total na ausência de outros sinais sistêmicos, perda de peso e exame físico normal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A dor abdominal recorrente (DAR) na infância é um desafio clínico comum. De acordo com os critérios clássicos de Apley e as atualizações do Consenso de Roma IV, a grande maioria dos casos (cerca de 90% a 95%) possui etiologia funcional, e não orgânica. Por isso, a abordagem inicial deve ser prioritariamente clínica.\n\nAlternativa (a) Incorreta: A intolerância à lactose pode causar dor abdominal, mas não é a causa principal da DAR. Iniciar a investigação por testes de intolerância alimentar sem uma suspeita clínica específica baseada no diário alimentar é uma conduta precipitada e não recomendada como passo inicial universal.\n\nAlternativa (b) Incorreta: A pesquisa de doença celíaca através do anticorpo antiendomísio ou antitransglutaminase tecidual é importante em quadros de dor abdominal crônica, porém ela ganha força na presença de sinais de alerta (como déficit de crescimento, anemia ou diarreia crônica). O manejo inicial foca na diferenciação entre dor funcional e orgânica através da clínica.\n\nAlternativa (c) Correta: O diagnóstico da DAR é eminentemente clínico. A conduta inicial deve focar em uma anamnese detalhada para caracterizar a dor e, principalmente, buscar os \"sinais de alarme\" ou \"red flags\" (como febre, perda de peso, desaceleração do crescimento, vômitos persistentes, sangue nas fezes ou dor que desperta a criança à noite). Além disso, como a dor funcional está intimamente ligada a fatores biopsicossociais, avaliar o ambiente escolar, familiar e o estresse emocional é fundamental para a compreensão e o tratamento do quadro.\n\nAlternativa (d) Incorreta: A solicitação de ultrassonografia de rotina em crianças com exame físico normal e ausência de sinais de alerta tem baixíssimo rendimento diagnóstico. Exames de imagem não devem ser solicitados de forma indiscriminada como conduta inicial se a história e o exame físico sugerirem um quadro funcional.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  },
+  {
+    "id": "AJUDA_ea3004b7-c7de-4e0c-b600-f048d0edde11",
+    "originalId": "ea3004b7-c7de-4e0c-b600-f048d0edde11",
+    "statement": "Qual é a característica principal de um ensaio clínico randomizado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliar dados de prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Selecionar participantes baseados em exposição e desfecho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dividir aleatoriamente os participantes em grupos para avaliar a eficácia de uma intervenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Registrar apenas dados de pacientes hospitalizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a (c).\n\nALTERNATIVA A: Incorreta. A avaliação de dados de prevalência (a proporção de indivíduos que apresentam uma condição em um momento específico) é a característica principal dos estudos transversais (ou seccionais). Ensaios clínicos são estudos prospectivos e longitudinais, focados na incidência de novos desfechos após uma intervenção.\n\nALTERNATIVA B: Incorreta. Selecionar participantes com base na exposição ou no desfecho define estudos observacionais. Quando selecionamos pelo desfecho (doentes vs. não doentes), temos um estudo de caso-controle. Quando selecionamos pela exposição (expostos vs. não expostos), temos um estudo de coorte. No ensaio clínico randomizado, a exposição não é preexistente; ela é designada pelo pesquisador de forma aleatória.\n\nALTERNATIVA C: Correta. O ensaio clínico randomizado é um estudo experimental no qual o pesquisador aplica uma intervenção. A randomização (divisão aleatória dos participantes entre os grupos) é sua característica fundamental, pois serve para equilibrar variáveis conhecidas e desconhecidas entre o grupo que recebe a intervenção e o grupo-controle. Isso minimiza o viés de seleção e permite que qualquer diferença observada nos resultados seja atribuída com maior segurança à eficácia da intervenção testada.\n\nALTERNATIVA D: Incorreta. Um ensaio clínico pode ser realizado com qualquer perfil de paciente, seja em ambiente hospitalar, ambulatorial ou até mesmo com pessoas saudáveis em estudos de prevenção. O local de internação não é um critério que define o desenho metodológico do estudo.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  },
+  {
+    "id": "AJUDA_ea40a9fa-28ef-4ea1-8904-7866a3398e95",
+    "originalId": "ea40a9fa-28ef-4ea1-8904-7866a3398e95",
+    "statement": "Homem de 27 anos procura Unidade Básica de Saúde referindo febre, mialgia, artralgia, cefaleia e dor retro-orbitária, iniciadas há 7 dias. Relatou vômitos frequentes há 2 dias. Nega ter viajado nas últimas 2 semanas. O exame físico mostra: temperatura axilar 39 °C; desidratado (2+/4+); PA 80 x 50 mmHg; FC 120 bpm; FR 22 irpm; abdome com dor difusa à palpação profunda; exantema maculopapular em tronco e membros superiores.\n\nA confirmação do diagnóstico provável nesse caso será determinada por",
+    "options": [
+      {
+        "id": "A",
+        "text": "pesquisa de proteína NS1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "avaliação da contagem de plaquetas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realização de isolamento viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "detecção de Anticorpos IgM por ELISA.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico é típico de dengue: febre alta, mialgia, artralgia, cefaleia, dor retro-orbitária e exantema maculopapular em paciente jovem, sem viagem recente, o que sugere transmissão autóctone. Há também sinais de gravidade. Vômitos persistentes e dor abdominal são sinais de alarme. Hipotensão (PA 80 x 50 mmHg) com taquicardia indica choque, o que classifica o caso como dengue grave (Grupo D do Ministério da Saúde) e exige hidratação venosa vigorosa imediata.\n\nA pergunta, porém, é sobre a confirmação laboratorial, e a chave é o tempo de doença. O paciente está no 7º dia de sintomas. Segundo o Ministério da Saúde:\nAté o 5º dia de sintomas, na fase virêmica, os métodos indicados são a pesquisa do antígeno NS1, a RT-PCR e o isolamento viral.\nA partir do 6º dia, após a soroconversão, o método de escolha é a sorologia IgM anti-dengue por ELISA.\n\nComo o paciente está no 7º dia, o exame indicado é a detecção de IgM por ELISA.\n\nAnálise das alternativas:\n\na) Pesquisa de proteína NS1 – INCORRETA. O NS1 é um antígeno viral detectável do 1º ao 5º dia de sintomas, ideal para o diagnóstico precoce. No 7º dia, sua sensibilidade cai bastante, porque a viremia diminui e os anticorpos formam imunocomplexos com o antígeno. Seria a resposta correta se o paciente estivesse nos primeiros dias de doença.\n\nb) Avaliação da contagem de plaquetas – INCORRETA. A plaquetopenia é comum na dengue e útil para o estadiamento e o seguimento, junto com o hematócrito. É, porém, um achado inespecífico, presente em várias outras infecções, e não confirma o diagnóstico.\n\nc) Realização de isolamento viral – INCORRETA. É um método específico, que permite identificar o sorotipo, mas é demorado, caro e restrito a laboratórios de referência. Além disso, depende da viremia e, por isso, deve ser feito até o 5º dia. No 7º dia, a chance de isolar o vírus é baixa.\n\nd) Detecção de anticorpos IgM por ELISA – CORRETA. A IgM torna-se detectável a partir do 5º/6º dia, atinge o pico por volta da 2ª semana e persiste por cerca de 2 a 3 meses. É o exame preconizado para confirmar o caso a partir do 6º dia de sintomas.\n\nPonto de memorização: até o 5º dia, pense em NS1, RT-PCR ou isolamento viral. Do 6º dia em diante, pense em IgM por ELISA. Na infecção secundária, a IgM pode surgir em títulos baixos ou até ser indetectável, enquanto a IgG se eleva precoce e intensamente. Por isso, uma IgM negativa não exclui dengue nesse contexto.\n\nLembre também que o diagnóstico laboratorial nunca deve atrasar o manejo. Neste paciente em choque, a prioridade é a reposição volêmica imediata, conforme o protocolo do Grupo D.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  },
+  {
+    "id": "AJUDA_ea4bd387-9c3c-4779-b0de-81e64f5544a1",
+    "originalId": "ea4bd387-9c3c-4779-b0de-81e64f5544a1",
+    "statement": "Homem de 32 anos realizou proctocolectomia total por retocolite ulcerativa e está em condições de alta com alimentação oral plena. Para evitar desidratação e distúrbios hidroeletrolíticos, o débito diário (em mL) dessa ileostomia deve girar em torno de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "3.000",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2.500",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1.500",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1.000",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A proctocolectomia total com ileostomia terminal resulta na perda definitiva da principal superfície de reabsorção de água e eletrólitos do organismo: o cólon. Por esse motivo, o manejo do débito da ileostomia é o ponto principal para evitar a desidratação e os distúrbios hidroeletrolíticos, como a hiponatremia e a hipocalemia, após a alta hospitalar.\n\nO processo de adaptação intestinal faz com que, com o passar dos dias e o início da alimentação oral, o intestino delgado aumente gradualmente sua capacidade de absorção para compensar a ausência do intestino grosso. O débito considerado fisiológico e seguro para um paciente com ileostomia já adaptada e sob dieta oral plena varia entre 500 mL e 1.000 mL por dia.\n\nAnálise das alternativas:\n\nAlternativas A e B (3.000 mL e 2.500 mL): Valores nesta magnitude são tecnicamente definidos como ileostomia de alto débito (high-output stoma). Perdas superiores a 2.000 mL por dia tornam impossível a manutenção do equilíbrio hídrico apenas por via oral, levando rapidamente a desidratação grave, depleção de magnésio e sódio, e risco de insuficiência renal pré-renal. São valores que exigem intervenção médica e farmacológica, não sendo adequados para uma condição de alta segura.\n\nAlternativa C (1.500 mL): Embora seja um valor encontrado em alguns pacientes no período pós-operatório imediato, 1.500 mL é considerado o limite superior de alerta. Manter esse débito diariamente coloca o paciente em risco constante de balanço hídrico negativo e formação de cálculos renais por urina concentrada. A maioria dos protocolos de cirurgia colorretal busca reduzir o débito para níveis mais próximos de 1.000 mL antes de considerar o paciente totalmente estabilizado.\n\nAlternativa D (1.000 mL): Esta é a alternativa correta. O débito alvo de uma ileostomia funcional deve girar em torno de 500 a 1.000 mL em 24 horas. Dentro dessa faixa, o organismo consegue compensar as perdas através da ingestão oral adequada de líquidos e sal, garantindo a homeostase e prevenindo as complicações hidroeletrolíticas mencionadas no enunciado.\n\nEm resumo, o controle do débito para que não ultrapasse 1.000 mL/dia é o parâmetro ideal para assegurar que o paciente com ileostomia possa manter uma vida saudável e hidratada apenas com suporte dietético.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:15.694Z"
+  }
+]

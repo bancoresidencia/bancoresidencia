@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_5fee4e60-1a28-423d-beda-6e8f9b63931c",
+    "originalId": "5fee4e60-1a28-423d-beda-6e8f9b63931c",
+    "statement": "Homem, 64 anos de idade, internado na enfermaria. Ele tem hipertensão arterial sistêmica, diabetes melito tipo 2 e insuficiência cardíaca de fração de ejeção preservada. Ele foi admitido no pronto-socorro no dia anterior por conta de calafrios, febre e dor no flanco direito, sendo diagnosticado com cálculo ureteral e pielonefrite. Foi introduzida ceftriaxona e o paciente aguarda para passagem de duplo J pela equipe de urologia. A enfermagem aciona a equipe médica para reavaliá-lo e informa que já realizou um eletrocardiograma, apresentado a seguir: Neste momento, o paciente queixa-se de dor no flanco direito de moderada intensidade e palpitações. Exame físico: PA de 110x70 mmHg, FC de 115 bpm, temperatura axilar de 37,6 °C, FR de 18 ipm, saturação de oxigênio 95%; bulhas cardíacas hiperfonéticas e sem sopros, enchimento capilar de 3 segundos; dor à palpação do flanco direito. Assinale a alternativa com a conduta indicada, neste momento, para o paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manobra vagal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Amiodarona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dipirona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Metoprolol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise Clínica e Eletrocardiográfica:\n\nO eletrocardiograma apresentado mostra um ritmo regular, com complexos QRS estreitos e presença de ondas P claramente visíveis precedendo cada complexo QRS (especialmente em DII, DIII e aVF, onde são positivas). A frequência cardíaca calculada está em torno de 115 bpm. O diagnóstico eletrocardiográfico é de taquicardia sinusal.\n\nNa prática médica, a taquicardia sinusal raramente é uma arritmia primária do coração; ela funciona quase sempre como uma resposta fisiológica a um estressor externo. No cenário deste paciente, existem dois gatilhos evidentes para o aumento da frequência cardíaca: a dor moderada no flanco (causada pelo cálculo ureteral) e o processo infeccioso/inflamatório (pielonefrite). O tratamento correto da taquicardia sinusal consiste em identificar e tratar a causa subjacente, e não em tentar reverter o ritmo cardíaco diretamente.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A manobra vagal é uma técnica utilizada para o diagnóstico e tratamento de taquicardias supraventriculares paroxísticas por reentrada (como a taquicardia por reentrada nodal). Na taquicardia sinusal, a estimulação vagal pode causar apenas uma lentificação transitória e discreta da frequência, sem tratar a origem do problema.\n\nAlternativa (b) Incorreta: A amiodarona é um antiarrítmico potente (classe III) indicado para arritmias ventriculares ou controle de ritmo em fibrilação atrial. Não há qualquer indicação para o seu uso em casos de taquicardia sinusal, sendo uma conduta desproporcional e com potencial de efeitos colaterais graves.\n\nAlternativa (c) Correta: A dipirona é um analgésico e antipirético. Como o paciente se queixa de dor moderada e apresenta um quadro de pielonefrite (infecção), a taquicardia é uma resposta simpática compensatória. Ao realizar a analgesia com dipirona, remove-se o estímulo doloroso, o que resultará na redução natural da frequência cardíaca para níveis normais. É a conduta mais adequada para o momento.\n\nAlternativa (d) Incorreta: O metoprolol é um betabloqueador que reduz a frequência cardíaca. No entanto, utilizá-lo para tratar uma taquicardia sinusal compensatória é contraindicado. Se a taquicardia for uma resposta à dor ou a um estado inicial de sepse, bloquear essa resposta adrenérgica pode mascarar a gravidade do quadro clínico e até levar ao choque hemodinâmico por incapacidade de manter o débito cardíaco.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/43d9d778e0b56418c7a47e1756eb6a7de0487db82e11ccf50fea16c57fcf3fdb.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5fee4e60-1a28-423d-beda-6e8f9b63931c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.689Z"
+  },
+  {
+    "id": "AJUDA_5fee6636-14eb-4dc3-96a3-a392527ffc3a",
+    "originalId": "5fee6636-14eb-4dc3-96a3-a392527ffc3a",
+    "statement": "Recém-nascido de 35 semanas, nascido de parto cesáreo, apresentou choro fraco, FC 60 bpm após 30 s de ventilação adequada. O próximo passo, segundo o Manual de Reanimação da Sociedade Brasileira de Pediatria, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Massagem cardíaca (3:1) e checar oxigênio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Intubar imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar adrenalina EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observar por 30 s.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A conduta na reanimação neonatal para recém-nascidos com idade gestacional igual ou superior a 34 semanas segue o fluxograma atualizado da Sociedade Brasileira de Pediatria (SBP). O caso descreve um RN de 35 semanas que, após 30 segundos de ventilação por pressão positiva (VPP) adequada (com técnica correta e expansão torácica), mantém uma frequência cardíaca (FC) de 60 bpm.\n\nDe acordo com as diretrizes da SBP, quando a FC permanece abaixo de 60 bpm após 30 segundos de VPP efetiva, o próximo passo consiste no início da massagem cardíaca externa coordenada com a ventilação e no aumento da oferta de oxigênio.\n\nAlternativa a: Correta. Segundo o protocolo, se a FC for menor que 60 bpm após a VPP inicial, deve-se iniciar a massagem cardíaca na técnica dos dois polegares, utilizando a proporção de 3 compressões para 1 ventilação (3:1). Nesse momento, o manual também orienta que a concentração de oxigênio (FiO2) seja elevada para 100% para otimizar a oferta de O2 aos tecidos e ao miocárdio.\n\nAlternativa b: Incorreta. A intubação traqueal é fortemente recomendada no momento em que se decide iniciar a massagem cardíaca, para garantir que a via aérea esteja pérvia e a ventilação seja máxima. No entanto, a alternativa \"a\" é mais completa ao descrever a ação terapêutica principal do algoritmo (massagem cardíaca e ajuste do oxigênio) para reverter a bradicardia grave.\n\nAlternativa c: Incorreta. A administração de adrenalina é uma etapa avançada da reanimação. Ela só é indicada se a frequência cardíaca permanecer abaixo de 60 bpm mesmo após 60 segundos de massagem cardíaca técnica e adequadamente coordenada com a ventilação traqueal e oxigênio a 100%.\n\nAlternativa d: Incorreta. Observar por 30 segundos é uma conduta passiva e inadequada para um paciente com bradicardia importante (60 bpm). A demora em intervir com massagem cardíaca nesse cenário pode levar à hipóxia grave, dano orgânico multissistêmico ou óbito.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.690Z"
+  },
+  {
+    "id": "AJUDA_5ff0b9f9-054c-457f-8849-8467fab87872",
+    "originalId": "5ff0b9f9-054c-457f-8849-8467fab87872",
+    "statement": "Mulher de 44 anos, eumenorreica até então, refere atrasos menstruais frequentes de até 60 dias há 8 meses. Refere alteração do sono, irritabilidade e cansaço, porém nega outros sintomas climatéricos.\nQual o perfil hormonal compatível?",
+    "options": [
+      {
+        "id": "A",
+        "text": "FSH normal; LH elevado; E2 baixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "FSH elevado; LH elevado; E2 elevado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "FSH baixo; LH baixo; E2 baixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "FSH elevado; LH elevado; E2 baixo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "FSH baixo; LH baixo; E2 elevado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A paciente de 44 anos apresenta um quadro clássico de transição menopausal (perimenopausa), caracterizado por atrasos menstruais (oligomenorreia) associados a sintomas neurovegetativos, como insônia, cansaço e irritabilidade. \n\nNessa fase, ocorre esgotamento progressivo da reserva folicular ovariana, levando à queda na produção de estradiol (E2) e inibina B. A diminuição desses hormônios reduz o feedback negativo sobre a hipófise, gerando uma secreção aumentada compensatória das gonadotrofinas (FSH e LH). Esse padrão define o hipogonadismo hipergonadotrópico.\n\nAnálise das alternativas:\n\na) Incorreta. O FSH é o hormônio que mais precocemente se eleva no climatério, devido à queda da inibina B. Logo, não se espera encontrar FSH normal associado a estradiol baixo em um quadro de falência ovariana.\n\nb) Incorreta. Embora possam ocorrer oscilações transitórias de estrogênio no início do climatério, o padrão hormonal compatível com os sintomas e com a oligomenorreia prolongada é o de deficiência estrogênica (E2 baixo), e não de excesso.\n\nc) Incorreta. FSH, LH e E2 baixos configuram o hipogonadismo hipogonadotrópico, que aponta para etiologias centrais (hipotalâmicas ou hipofisárias), e não para o envelhecimento ovariano fisiológico.\n\nd) Correta. Expressa o hipogonadismo hipergonadotrópico clássico da perimenopausa/menopausa: falência da produção ovariana de estradiol (E2 baixo) acompanhada de aumento dos níveis de FSH e LH pela perda do feedback negativo na hipófise.\n\ne) Incorreta. FSH e LH suprimidos na presença de estradiol elevado representam hiperestrogenismo com feedback hipofisário íntegro, situação vista no uso de hormônios exógenos ou em tumores secretores de estrogênio.\n\nGabarito: Alternativa d.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.690Z"
+  },
+  {
+    "id": "AJUDA_600439ac-946d-40d2-9614-2fc09284137b",
+    "originalId": "600439ac-946d-40d2-9614-2fc09284137b",
+    "statement": "Uma mãe procurou o pronto-socorro relatando que seu filho de 18 meses de vida vem apresentando quadro de cansaço, rouquidão, tosse parecida a um “latido de cachorro” um “barulho esquisito”, ao respirar e febre moderada. Refere que, dois dias antes, o lactente se apresentava com rinorreia clara e tosse leve.\n\nConsiderando esse caso clínico e com base nos conhecimentos médicos correlatos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Embora a maioria dos casos ocorra no verão, eles podem se manifestar durante todo o ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O crupe caracteriza um grupo de doenças que se manifestam por rouquidão, tosse ladrante e estridor inspiratório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Estridor é o som respiratório gerado pelo aumento de líquido intra-alveolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A etiologia é bacteriana na maioria dos casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa questão apresenta um caso clássico de crupe viral (laringotraqueobronquite), uma das principais causas de obstrução respiratória alta em crianças pequenas. O quadro clínico descrito, com pródromo catarral seguido de tosse ladrante (\"cachorro\"), rouquidão e estridor, é patognomônico.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O crupe viral ocorre predominantemente durante o outono e o inverno, acompanhando a sazonalidade dos vírus parainfluenza. Embora casos esporádicos ocorram o ano todo, o pico de incidência não é no verão.\n\nAlternativa B: Correta. Esta é a definição clínica de crupe. O termo descreve uma síndrome caracterizada por graus variáveis de rouquidão, tosse metálica (ladrante) e estridor inspiratório, resultantes da inflamação e estreitamento da região subglótica da laringe e da traqueia.\n\nAlternativa C: Incorreta. O estridor é um som agudo, predominantemente inspiratório, resultante da passagem turbulenta do ar por uma via aérea superior parcialmente obstruída (laringe ou traqueia). O aumento de líquido intra-alveolar gera outros ruídos adventícios, como os estertores crepitantes.\n\nAlternativa D: Incorreta. A grande maioria dos casos de crupe tem etiologia viral, sendo o vírus parainfluenza (especialmente os tipos 1, 2 e 3) o agente mais comum. Causas bacterianas, como a traqueíte bacteriana, são muito menos frequentes e geralmente apresentam um estado geral muito mais grave e tóxico.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.690Z"
+  },
+  {
+    "id": "AJUDA_6007c878-5475-4e43-98a2-4b7a6799a7cc",
+    "originalId": "6007c878-5475-4e43-98a2-4b7a6799a7cc",
+    "statement": "Sobre a sensibilidade e especificidade nos testes diagnósticos, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A especificidade de um teste é a probabilidade de dar positivo na presença da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A especificidade de um teste é a probabilidade de dar positivo na ausência da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A sensibilidade de um teste é a probabilidade de dar negativo na presença da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A sensibilidade de um teste é a probabilidade de dar positivo na presença da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a acurácia dos testes diagnósticos, é fundamental diferenciar os conceitos de sensibilidade e especificidade.\n\nA sensibilidade é a capacidade de um teste de identificar os verdadeiros doentes. Em termos probabilísticos, é a chance de o resultado ser positivo, dado que o paciente tem a doença. Testes com alta sensibilidade são ideais para triagem (*screening*), pois um resultado negativo neles praticamente descarta a patologia, já que geram poucos resultados falsos-negativos.\n\nA especificidade é a capacidade de um teste de identificar os verdadeiros saudáveis. É a probabilidade de o resultado ser negativo, dado que o paciente não tem a doença. Testes com alta especificidade são ideais para confirmar um diagnóstico suspeito, pois um resultado positivo neles indica que a doença está realmente presente, já que geram poucos resultados falsos-positivos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A definição apresentada (positivo na presença da doença) corresponde à sensibilidade. A especificidade foca na probabilidade de o teste ser negativo em quem não tem a doença.\n\nAlternativa b) Incorreta. A probabilidade de um teste ser positivo na ausência da doença descreve a taxa de falsos-positivos (complementar da especificidade). A especificidade foca no resultado negativo na ausência da doença.\n\nAlternativa c) Incorreta. A probabilidade de o teste ser negativo na presença da doença descreve a taxa de falsos-negativos (complementar da sensibilidade). A sensibilidade foca justamente no resultado positivo na presença da doença.\n\nAlternativa d) Correta. Esta alternativa traz a definição exata de sensibilidade: a capacidade do teste de apresentar um resultado positivo naqueles que realmente apresentam a condição ou doença pesquisada.\n\nGabarito: Letra d.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.690Z"
+  },
+  {
+    "id": "AJUDA_60168a22-d92f-406c-85c0-49b7c3e32dd3",
+    "originalId": "60168a22-d92f-406c-85c0-49b7c3e32dd3",
+    "statement": "Escolar, 8 anos, foi levado à consulta por seus pais, que relatam preocupações sobre seu desempenho acadêmico e comportamento social. Desde o início do ano letivo, o menino tem apresentado dificuldade em completar as tarefas escolares, recebe notas baixas e é descrito como desatento durante as aulas. Seus professores notaram que ele se distrai facilmente, olhando pela janela ou conversando com colegas. Tende a interromper os outros e levantar-se da cadeira frequentemente. Os pais mencionam que a criança é muito agitada e impulsiva em casa e não obedece às regras estabelecidas pela familia. Diante das características descritas, esse menino pode ser portador de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno explosivo intermitente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno do espectro autista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno opositor desafiador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno do déficit de atenção e hiperatividade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Transtornos de ansiedade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é clássico para o diagnóstico de Transtorno do Déficit de Atenção e Hiperatividade (TDAH), um transtorno do neurodesenvolvimento frequente na idade escolar.\n\nAlternativa a: Incorreta. O Transtorno Explosivo Intermitente caracteriza-se por episódios repentinos de comportamento agressivo e explosões de raiva desproporcionais à situação. O caso clínico foca na desatenção, agitação motora e impulsividade social, sem mencionar episódios de fúria ou agressividade física contra pessoas ou objetos.\n\nAlternativa b: Incorreta. O Transtorno do Espectro Autista (TEA) exige a presença de déficits persistentes na comunicação e interação social, além de padrões de comportamento restritos e repetitivos. Embora a criança do caso tenha dificuldades sociais, estas parecem decorrer da impulsividade e da desatenção, e não de uma incapacidade de compreensão social ou presença de estereotipias e interesses restritos.\n\nAlternativa c: Incorreta. O Transtorno Opositor Desafiador (TOD) define-se por um padrão de humor irritável, comportamento desafiador, argumentativo e de vingança contra figuras de autoridade. Embora os pais mencionem que o menino não obedece a regras, os sintomas de desatenção (olhar pela janela), hiperatividade motora (levantar-se da cadeira) e baixo desempenho escolar são os pilares do quadro, apontando para o TDAH como diagnóstico principal. Vale lembrar que o TOD é uma comorbidade comum no TDAH, mas não explica a desatenção e a inquietude motora descritas.\n\nAlternativa d: Correta. A criança apresenta sintomas claros dos dois domínios do TDAH: desatenção (distração fácil, não termina tarefas, baixo desempenho acadêmico) e hiperatividade/impulsividade (levantar-se frequentemente, interromper os outros, agitação em casa). Segundo os critérios diagnósticos, os sintomas devem estar presentes em dois ou mais ambientes (casa e escola) e causar prejuízo funcional, o que está evidente no relato. Por envolver ambos os domínios, este caso seria classificado como TDAH de apresentação combinada.\n\nAlternativa e: Incorreta. Embora transtornos de ansiedade possam gerar inquietação e dificuldade de concentração, eles costumam vir acompanhados de preocupações excessivas, medos específicos, esquiva ou sintomas físicos de ansiedade. O comportamento de interromper os outros e a hiperatividade motora persistente em múltiplos ambientes desde o início do ano letivo são marcos mais robustos para o diagnóstico de TDAH.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.690Z"
+  },
+  {
+    "id": "AJUDA_601d85a2-e3f5-4cf9-81ca-f8c88a90b4fa",
+    "originalId": "601d85a2-e3f5-4cf9-81ca-f8c88a90b4fa",
+    "statement": "Pré-escolar de 4 anos, sexo masculino, pesando 16 kg, terá que submeter-se a um procedimento cirúrgico para correção de uma malformação congênita. Exames laboratoriais pré-operatório: hematócrito 29%, hemoglobina 9,4g/dL, VCM 65 fL. O pediatra fez o diagnóstico de anemia ferropriva e instituiu o tratamento com sulfato ferroso (250mg/10 ml) oferecer 2,5 ml uma vez ao dia, antes do almoço. No 21º dia de tratamento foi solicitado novo hemograma e obteve-se praticamente os mesmos índices do hemograma anterior. Qual a melhor conduta a ser adotada neste caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar investigação para outras causas de anemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corrigir a dose de ferro necessária para o tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Manter a mesma dose de sulfato ferroso e aguardar mais uma semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar a correção cirúrgica da anomalia independente do resultado do hemograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é realizar o cálculo da dose de ferro elementar que o paciente está recebendo para verificar se o tratamento proposto está adequado para um quadro de anemia ferropriva.\n\nCálculo da dose:\nA apresentação do sulfato ferroso mencionada é de 250 mg em 10 ml. Isso significa que em cada 1 ml da solução existem 25 mg de sulfato ferroso. O sulfato ferroso contém aproximadamente 20% de ferro elementar. Portanto, cada 1 ml da solução fornece 5 mg de ferro elementar (20% de 25 mg).\nO paciente está recebendo 2,5 ml uma vez ao dia, o que totaliza 12,5 mg de ferro elementar por dia (2,5 ml x 5 mg/ml).\nO peso da criança é 16 kg. Dividindo a dose total pelo peso (12,5 mg / 16 kg), chegamos a uma dose de aproximadamente 0,78 mg/kg/dia de ferro elementar.\n\nDe acordo com as diretrizes da Sociedade Brasileira de Pediatria, o tratamento da anemia ferropriva deve ser feito com doses de 3 a 6 mg/kg/dia de ferro elementar. Portanto, o paciente está recebendo uma dose muito abaixo da terapêutica (subdose), o que explica a ausência de resposta hematológica (aumento de reticulócitos ou hemoglobina) após 21 dias.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Antes de suspeitar de refratariedade ao tratamento ou de outras patologias (como talassemia ou anemia de doença crônica), deve-se garantir que a dose do medicamento e a adesão ao tratamento estejam corretas. Como identificamos uma subdose evidente, a investigação adicional não é o primeiro passo.\n\nAlternativa b) Correta. Como demonstrado no cálculo, a criança está recebendo menos de 1 mg/kg/dia de ferro elementar, enquanto a dose recomendada para tratamento é de 3 a 6 mg/kg/dia. A conduta correta é ajustar a dose para o patamar terapêutico. Para este paciente de 16 kg, a dose correta deveria ser entre 48 mg e 96 mg de ferro elementar por dia (o que equivaleria a cerca de 10 ml a 20 ml da solução apresentada, e não apenas 2,5 ml).\n\nAlternativa c) Incorreta. Manter uma dose subterapêutica não trará resultados, independentemente do tempo de espera. O erro está na posologia inicial, e não no tempo de observação. Em doses corretas, espera-se um pico de reticulócitos entre o 5º e o 10º dia e aumento da hemoglobina após 2 a 3 semanas.\n\nAlternativa d) Incorreta. A anemia é um fator de risco para complicações perioperatórias e deve ser corrigida, sempre que possível, antes de procedimentos cirúrgicos eletivos para garantir a segurança do paciente e otimizar a recuperação. O foco da questão é o manejo clínico da anemia detectada no pré-operatório.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.690Z"
+  },
+  {
+    "id": "AJUDA_6033e8a3-a8e1-4a51-9669-01e17a51ef89",
+    "originalId": "6033e8a3-a8e1-4a51-9669-01e17a51ef89",
+    "statement": "Paciente sexo masculino, 74 anos, comparece ao pronto atendimento com queixa de dor abdominal, parada de eliminação de fezes, flatos há 48 horas e vômitos. Ao exame físico se apresenta corado, hidratado, frequência cardíaca 88 bpm, pressão arterial 130 x 80 mmHg, abdome distendido sem sinais de irritação peritonial. Realizado RX abdome com sinal do U invertido e tomografia onde foi visualizada rotação do sigmoide sobre seu próprio eixo com distensão de alças à montante. Considerando o diagnóstico provável, qual a melhor conduta a ser tomada visando a resolução do quadro obstrutivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Passagem de sonda nasogástrica e hidratação endovenosa por 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realização de ileostomia em alça descompressiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparotomia exploradora e fixação do sigmoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retossigmoidoscopia rígida ou flexível com possibilidade de colocação de sonda retal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico e os achados de imagem (sinal do U invertido ou sinal do grão de café no raio X e rotação do eixo na tomografia) são patognomônicos de vôlvulo de sigmoide. O paciente encontra-se hemodinamicamente estável e não apresenta sinais de irritação peritoneal (abdome sem sinais de peritonite), o que permite uma abordagem inicial conservadora e não cirúrgica de urgência.\n\nAnálise das alternativas:\n\na) Incorreta. A hidratação e a passagem de sonda nasogástrica são medidas de suporte em qualquer quadro obstrutivo, mas não resolvem o componente mecânico da torção do sigmoide. Aguardar 48 horas sem realizar a detorção aumenta o risco de isquemia e necrose da alça.\n\nb) Incorreta. A ileostomia é uma derivação do intestino delgado. O problema em questão é uma obstrução mecânica no cólon distal (sigmoide). Realizar uma ileostomia não desfaria a torção e não resolveria a distensão do cólon afetado.\n\nc) Incorreta. A laparotomia de urgência está indicada apenas nos casos de falha da descompressão endoscópica ou se houver sinais de sofrimento de alça (peritonite, febre, leucocitose grave ou instabilidade). Além disso, a simples fixação (sigmoidopexia) apresenta altas taxas de recorrência do vôlvulo em comparação com a ressecção.\n\nd) Correta. Em pacientes estáveis e sem sinais de peritonite, o tratamento de escolha inicial é a descompressão endoscópica (detorção não cirúrgica) por meio de retossigmoidoscopia (rígida ou flexível) ou colonoscopia. O procedimento permite a visualização direta da mucosa (para afastar necrose) e a descompressão da alça torcida. A colocação de uma sonda retal após o procedimento ajuda a manter a alça desobstruída e previne a recidiva imediata, permitindo que o paciente seja preparado para uma cirurgia definitiva (sigmoidectomia eletiva) na mesma internação.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.690Z"
+  },
+  {
+    "id": "AJUDA_6034ffc7-aa13-44e6-a95b-4cfbd4b37583",
+    "originalId": "6034ffc7-aa13-44e6-a95b-4cfbd4b37583",
+    "statement": "Entre as estratégias e definições do Sistema Único de Saúde (SUS), podemos citar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a estratégia de saúde da família (ESF), que em 2017 já estava presente em 97,5% dos municípios, com uma cobertura de 146 milhões de pessoas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a alocação de recursos pelo Governo Federal, que se baseia em 5 blocos de custeio. São eles: atenção básica, atenção de média e alta complexidade ambulatorial e hospitalar, vigilância à saúde, assistência social e gestão do SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a lei 8.080/90, que regulamenta a participação da comunidade, bem como as transferências intergovernamentais de recursos financeiros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a coordenação do cuidado como um dos elementos essenciais da atenção primária em saúde, sendo relacionada com a vinculação da equipe de atenção primária à população adscrita com implicações no acompanhamento das pessoas ao longo de seu ciclo de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "os profissionais que operam na estratégia de saúde da família (ESF) e devem procurar compreender a dinâmica sociocultural do território onde atuam, não cabendo-lhes porém intervir em situações conflituosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a (Correta): Esta alternativa apresenta dados históricos precisos da época. Em 2017, a Estratégia de Saúde da Família (ESF) atingiu um patamar de consolidação importante, estando presente na quase totalidade dos municípios brasileiros e cobrindo mais de 140 milhões de pessoas, reafirmando seu papel como o modelo prioritário de reorganização da Atenção Primária no país.\n\nAlternativa b (Incorreta): O modelo de financiamento do SUS sofreu alterações significativas com a Portaria de Consolidação nº 6, de 2017. O antigo sistema de vários blocos de financiamento foi simplificado para apenas dois grandes blocos: Bloco de Custeio (manutenção dos serviços) e Bloco de Investimento (obras e compra de equipamentos). Além disso, a Assistência Social possui financiamento próprio através do SUAS (Sistema Único de Assistência Social), não integrando os blocos de custeio do SUS.\n\nAlternativa c (Incorreta): O SUS é regido pelas chamadas Leis Orgânicas da Saúde. A Lei 8.080/90 trata da organização e do funcionamento dos serviços. Já a participação da comunidade (controle social) e as transferências intergovernamentais de recursos financeiros são regulamentadas especificamente pela Lei 8.142/90.\n\nAlternativa d (Incorreta): A questão descreve conceitos que se misturam, mas o erro técnico reside na definição. A vinculação da equipe à população adscrita e o acompanhamento ao longo do ciclo de vida são características centrais da Longitudinalidade. A Coordenação do Cuidado, embora relacionada, refere-se especificamente à capacidade da Atenção Primária de servir como o centro de comunicação e o elo entre os diferentes pontos da Rede de Atenção à Saúde (RAS), garantindo que o paciente não se perca no sistema.\n\nAlternativa e (Incorreta): A atuação na ESF exige uma postura ativa e integrada ao território. Os profissionais não devem ser meros observadores; eles devem atuar sobre os determinantes sociais da saúde, o que inclui a mediação e a intervenção em situações de vulnerabilidade ou conflitos sociais que impactem diretamente a saúde daquela comunidade, visando à promoção da cidadania e do bem-estar coletivo.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.690Z"
+  },
+  {
+    "id": "AJUDA_60364e65-5417-4201-8b46-00fbe8ee9e07",
+    "originalId": "60364e65-5417-4201-8b46-00fbe8ee9e07",
+    "statement": "Gestante, 25 anos de idade, apresenta tipagem sanguínea B negativo e o esposo O positivo. Na 21ª semana, após realizar exames laboratoriais de rotina, apresentou pela primeira vez o coombs indireto positivo e com titulação inicial de 11:32, que passou para 1:128 após 3 semanas. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliação do pico sistólico da artéria cerebral média.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Repetição da pesquisa de anticorpos irregulares em 1 semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cordocentese e dosagem de hemoglobina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cordocentese e transfusão intrauterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A gestante em questão apresenta um quadro de isoimunização Rh, evidenciado pelo Coombs indireto positivo. O ponto fundamental para a resolução do caso é a interpretação da titulação de 1:128.\n\nNa prática obstétrica, considera-se como título crítico valores iguais ou superiores a 1:16 (em alguns serviços 1:8). Quando a gestante atinge ou ultrapassa esse valor, o risco de anemia fetal torna-se relevante e a conduta deixa de ser o acompanhamento dos títulos maternos, passando a ser a avaliação direta do feto para detectar anemia.\n\nAlternativa (a): Correta. A avaliação do pico sistólico da artéria cerebral média (ACM) por meio do Doppler é, atualmente, o método de escolha para o rastreio de anemia fetal. Ele é um exame não invasivo e baseia-se no princípio de que o feto anêmico possui sangue menos viscoso e um débito cardíaco aumentado, o que faz com que o sangue flua em maior velocidade. Se o valor estiver acima de 1,5 Múltiplos da Mediana (MoM), há forte suspeita de anemia fetal moderada a grave.\n\nAlternativa (b): Incorreta. A repetição da pesquisa de anticorpos (Coombs indireto) é a conduta adequada apenas enquanto os títulos estão abaixo do nível crítico. Como a paciente já apresenta 1:128, a conduta laboratorial já cumpriu seu papel de sinalizar o risco, e agora deve-se avaliar o feto.\n\nAlternativa (c): Incorreta. A cordocentese é o exame padrão-ouro para o diagnóstico de anemia fetal, pois permite a dosagem direta da hemoglobina. Entretanto, por ser um método invasivo que traz riscos de perda gestacional, descolamento de placenta e aumento da sensibilização materna, ela só deve ser realizada se o Doppler da artéria cerebral média estiver alterado. Não é, portanto, a primeira conduta.\n\nAlternativa (d): Incorreta. A transfusão intrauterina é o tratamento para a anemia fetal grave. Para que ela seja indicada, é necessário primeiro confirmar a anemia por meio da triagem com Doppler e posterior confirmação pela cordocentese. Pular etapas diretamente para a transfusão apenas com base no Coombs materno seria uma conduta intempestiva e perigosa.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:43.690Z"
+  }
+]

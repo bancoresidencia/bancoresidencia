@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_48a73b7a-6d53-4a32-bad0-3b09f519da08",
+    "originalId": "48a73b7a-6d53-4a32-bad0-3b09f519da08",
+    "statement": "Escolar de 8 anos apresenta febre alta há cinco dias, dor abdominal com episódios de diarreia e exantema maculopapular difuso, não pruriginoso, mais intenso e de início em tronco. A mãe relata que notou vermelhidão em olhos e lábios, além de muita prostração e respiração rápida na menina. Ao exame físico, encontra-se hipoativa, febril (39,2°C), taquicárdica, taquipneica, com exantema polimórfico em tronco e hiperemia conjuntival. As últimas vacinas realizadas foram aos dois anos. Há história de contato com primos gripados há três semanas. Diante desse caso, o diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sarampo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "meningite pneumocócica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "síndrome de imunodeficiência adquirida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "síndrome inflamatória multissistêmica pediátrica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Síndrome Inflamatória Multissistêmica Pediátrica (SIM-P) é uma condição clínica grave e rara que surge como uma resposta imune tardia, ocorrendo geralmente de 2 a 6 semanas após a infecção pelo SARS-CoV-2 (COVID-19). O caso clínico apresenta um escolar com o perfil típico e sinais claros de acometimento de múltiplos órgãos.\n\nAnálise das alternativas:\n\na) Incorreta. O sarampo cursa com febre, conjuntivite, coriza e tosse (pródromos). No entanto, o exantema do sarampo tem progressão cefalocaudal clássica (inicia-se na linha do cabelo e atrás das orelhas, descendo para o tronco e membros) e é acompanhado pelas manchas de Koplik na mucosa oral. O quadro da questão enfatiza o início no tronco, dor abdominal importante e sinais de choque/prostração, que fogem do padrão habitual do sarampo.\n\nb) Incorreta. A meningite pneumocócica manifesta-se com febre, cefaleia, vômitos e sinais de irritação meníngea (como rigidez de nuca). Embora o paciente apresente prostração, o exantema polimórfico, a hiperemia conjuntival e os sintomas gastrointestinais proeminentes não são compatíveis com uma infecção isolada do sistema nervoso central. Na meningite meningocócica, o exantema seria tipicamente petequial ou purpúrico.\n\nc) Incorreta. A Síndrome da Imunodeficiência Adquirida (AIDS) é uma condição crônica. Mesmo que a infecção aguda pelo HIV pudesse causar febre e exantema, ela raramente evoluiria com essa gravidade multissistêmica aguda em um escolar sem outros antecedentes. O quadro atual é claramente um processo inflamatório agudo e fulminante.\n\nd) Correta. A SIM-P é o diagnóstico mais provável por preencher os critérios diagnósticos da OMS e do Ministério da Saúde: 1. Febre elevada e persistente (5 dias na questão); 2. Envolvimento de dois ou mais sistemas, como o cutâneo-mucoso (exantema, conjuntivite e alteração nos lábios) e o gastrointestinal (dor abdominal e diarreia); 3. Sinais de disfunção orgânica ou choque (taquicardia, taquipneia, prostração/hipoatividade); 4. Marcador epidemiológico de infecção prévia por COVID-19 (contato com primos doentes há 3 semanas, respeitando a janela de latência imunológica da síndrome). O quadro frequentemente mimetiza a Doença de Kawasaki, mas ocorre em crianças mais velhas e apresenta maior incidência de sintomas gastrointestinais e choque cardiogênico/vasogênico.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Covid-19"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  },
+  {
+    "id": "AJUDA_48b22176-6a77-4bd6-800d-056980bbd34f",
+    "originalId": "48b22176-6a77-4bd6-800d-056980bbd34f",
+    "statement": "Paciente com Doença Pulmonar Obstrutiva Crônica (DPOC) apresenta dispneia e sibilância ao esforço. Qual é o tratamento de escolha para manejo sintomático?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Oxigenoterapia contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corticoides orais de manutenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Broncodilatadores de longa ação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Antibióticos profiláticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A base do manejo da Doença Pulmonar Obstrutiva Crônica (DPOC) na fase estável é a terapia farmacológica com foco na redução da obstrução ao fluxo aéreo e na melhora da mecânica pulmonar.\n\nAlternativa a: Incorreta. A oxigenoterapia domiciliar está indicada apenas para pacientes com hipoxemia grave documentada (geralmente PaO2 abaixo de 55 mmHg ou saturação de oxigênio abaixo de 88% em repouso). Embora essencial para aumentar a sobrevida nesses casos específicos, ela não é a terapia de primeira escolha para o controle sintomático de sibilância e dispneia ao esforço na ausência de hipoxemia grave.\n\nAlternativa b: Incorreta. O uso de corticoides por via oral para manutenção na DPOC é formalmente contraindicado. O uso crônico está associado a diversos efeitos colaterais sistêmicos graves (como miopatia, osteoporose e maior risco de pneumonia) sem trazer benefícios na função pulmonar ou na mortalidade. O corticoide inalado pode ser usado em casos específicos, mas a via oral é restrita ao manejo de exacerbações agudas.\n\nAlternativa c: Correta. Os broncodilatadores de longa ação, que englobam os antimuscarínicos (LAMA) e os beta-2 agonistas (LABA), são o padrão-ouro para o tratamento sintomático da DPOC. Eles promovem o relaxamento da musculatura lisa brônquica, reduzem o aprisionamento de ar e a hiperinsuflação pulmonar, melhorando diretamente a dispneia e a tolerância aos esforços físicos.\n\nAlternativa d: Incorreta. Antibióticos profiláticos, como a azitromicina, são reservados para um grupo muito restrito de pacientes que mantêm exacerbações frequentes mesmo em uso de terapia inalatória tripla otimizada. Não são utilizados para o manejo de sintomas cotidianos como dispneia e sibilância.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  },
+  {
+    "id": "AJUDA_48b239ce-6662-466a-9c99-33dddf7ffa41",
+    "originalId": "48b239ce-6662-466a-9c99-33dddf7ffa41",
+    "statement": "Sobre sangramento uterino anormal na adolescência é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A doença de Von Villebrand é uma causa anatômica provável, e deve ser descartada através de exame de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ciclos anovulatórios são comuns nos primeiros 6 meses após a menarca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Durante um episódio de sangramento intenso e agudo, não será necessária internação caso o hematócrito esteja acima de 36% e a hemoglobina acima de 12g/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desogestrel 75mg, 1 comprimido ao dia, sem intervalos, por 6 meses é o tratamento de primeira linha para sangramento uterino anormal em pacientes hemodinamicamente instáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Um dos exames imprescindíveis é a realização de bhcg.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Explicação da Questão: Sangramento Uterino Anormal (SUA) na Adolescência\n\nAlternativa a) Incorreta. A doença de von Willebrand é, de fato, a coagulopatia hereditária mais comum e uma causa importante de sangramento uterino anormal em adolescentes (chegando a 20% dos casos de sangramento grave na menarca). No entanto, ela é uma causa hematológica (distúrbio de coagulação) e não uma causa anatômica. Além disso, o diagnóstico é realizado por testes laboratoriais específicos de sangue (dosagem do fator de von Willebrand e atividade do cofator de ristocetina) e não por exames de imagem, que servem para identificar causas estruturais como pólipos ou miomas.\n\nAlternativa b) Incorreta. Embora os ciclos anovulatórios sejam a causa mais comum de SUA na adolescência devido à imaturidade do eixo hipotálamo-hipófise-ovário, esse período de irregularidade costuma durar muito mais do que apenas 6 meses. A imaturidade do eixo pode persistir por até 2 a 5 anos após a menarca. Portanto, restringir o fenômeno aos primeiros 6 meses torna a afirmação clinicamente incompleta e tecnicamente errada para fins de prova.\n\nAlternativa c) Incorreta. A decisão de internação hospitalar no sangramento uterino agudo e grave não se baseia exclusivamente nos valores de hemoglobina e hematócrito, mas sim na estabilidade hemodinâmica da paciente e na intensidade do sangramento ativo. Embora níveis de hemoglobina acima de 12 g/dL sugiram ausência de anemia grave no momento, uma paciente com sangramento profuso e sinais de choque (hipotensão ortostática, taquicardia) ou que não possui suporte social para o tratamento ambulatorial deve ser internada, independentemente do hematócrito inicial.\n\nAlternativa d) Incorreta. Existem dois erros graves nesta alternativa. Primeiro, a dose do desogestrel utilizado como anticoncepcional é de 75 microgramas (mcg) e não 75 miligramas (mg); uma dose de 75 mg seria extremamente elevada. Segundo, pacientes hemodinamicamente instáveis necessitam de estabilização imediata (expansão volêmica, eventual hemotransfusão) e medidas de controle agudo do sangramento, geralmente com estrogênios em altas doses (venosos ou orais), progestágenos em doses de ataque ou procedimentos cirúrgicos. O desogestrel isolado em dose convencional não é o tratamento de escolha para emergências hemorrágicas.\n\nAlternativa e) Correta. Esta é uma regra fundamental na ginecologia: em qualquer paciente em idade fértil (o que inclui a adolescência pós-menarca) que apresente sangramento uterino anormal, a primeira conduta obrigatória é excluir gravidez. Complicações gestacionais, como abortamento ou gravidez ectópica, podem se manifestar como sangramento irregular e devem ser descartadas prontamente através do exame de beta-hCG, devido ao risco de vida e à necessidade de condutas específicas.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  },
+  {
+    "id": "AJUDA_48b39a00-3191-49af-a9d6-e2dff8a92e81",
+    "originalId": "48b39a00-3191-49af-a9d6-e2dff8a92e81",
+    "statement": "No toque obstétrico, quando o dedo indicador está na mesma altura que o dedo médio, ao nível das espinha ciáticas, na avaliação da descida, é correto afirmar que a apresentação está no plano",
+    "options": [
+      {
+        "id": "A",
+        "text": "zero.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "menos 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "mais 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "menos 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "mais 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a avaliação da progressão do feto pelo canal de parto utilizando os Planos de De Lee. Este sistema é essencial na prática obstétrica para determinar a altura da apresentação fetal durante o toque vaginal.\n\nO ponto de referência anatômico fundamental para os Planos de De Lee são as espinhas ciáticas (ou isquiáticas) da bacia materna. A convenção estabelecida é a seguinte:\n\n- Plano 0: Quando a parte mais baixa da apresentação fetal está no mesmo nível das espinhas ciáticas.\n- Planos Negativos (de -1 a -5): Quando a apresentação está acima das espinhas ciáticas. Cada número corresponde à distância em centímetros acima desse ponto.\n- Planos Positivos (de +1 a +5): Quando a apresentação ultrapassou as espinhas ciáticas e está descendo em direção ao períneo. Cada número corresponde à distância em centímetros abaixo desse ponto.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Conforme a técnica do toque obstétrico, quando a parte fetal mais baixa atinge o nível das espinhas ciáticas, define-se que a apresentação está no plano zero de De Lee. Este é o marco que indica que a apresentação está encravada.\n\nAlternativa b) Incorreta. O plano menos 1 indica que a apresentação fetal ainda está um centímetro acima do nível das espinhas ciáticas.\n\nAlternativa c) Incorreta. O plano mais 1 indica que a apresentação já ultrapassou as espinhas ciáticas e avançou um centímetro em direção à saída da pelve.\n\nAlternativa d) Incorreta. O plano menos 2 indica que a apresentação está dois centímetros acima das espinhas ciáticas, permanecendo em uma posição alta na pelve.\n\nAlternativa e) Incorreta. O plano mais 2 indica que a apresentação já desceu dois centímetros abaixo do nível das espinhas ciáticas.\n\nEm resumo, a identificação das espinhas ciáticas ao toque obstétrico serve para localizar o plano zero, sendo este o parâmetro central para medir a descida fetal.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  },
+  {
+    "id": "AJUDA_48b54388-2942-4bff-bfa6-e6077e6fee85",
+    "originalId": "48b54388-2942-4bff-bfa6-e6077e6fee85",
+    "statement": "A ausculta cardíaca pediátrica exige a diferenciação precisa entre sopros inocentes e patológicos para evitar encaminhamentos desnecessários ou diagnósticos tardios. Registre V, para as afirmativas verdadeiras, e F, para as falsas sobre as características semiológicas:\n\n(__) O sopro de Still é o sopro inocente mais comum na infância, caracterizado por ser sistólico, ejetivo, de baixa frequência (musical ou vibratório), melhor audível na borda esternal esquerda média e baixa, e que aumenta de intensidade na posição supina.\n(__) O desdobramento fixo da segunda bulha (B2) é um achado fisiológico comum em adolescentes atletas, decorrente do aumento do retorno venoso e do tempo de ejeção do ventrículo direito, desaparecendo completamente durante a manobra de Valsalva.\n(__) O sopro venoso cervical é um sopro contínuo, mais audível na região supraclavicular direita, que desaparece com a compressão da veia jugular ipsilateral ou com a mudança de posição da cabeça, sendo considerado sempre benigno.\n(__) Um sopro holossistólico (pansistólico) rude, audível na borda esternal esquerda baixa, associado a frêmito, é compatível com comunicação interventricular (CIV) pequena a moderada e é invariavelmente patológico.\n\nApós análise, assinale a alternativa que apresenta a sequência correta dos itens acima, de cima para baixo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, F, V, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "F, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise detalhada das afirmativas:\n\nPrimeira afirmativa (V): O sopro de Still é, de fato, o sopro inocente mais frequente na pediatria, ocorrendo comumente entre os 2 e 6 anos de idade. Suas características clássicas incluem o timbre vibratório ou musical e a localização em borda esternal esquerda média/baixa. Por ser um sopro relacionado à vibração das cordas tendíneas ou do fluxo na via de saída do ventrículo esquerdo, ele se altera com mudanças de posição, sendo tipicamente mais intenso em decúbito dorsal (supino).\n\nSegunda afirmativa (F): O erro desta alternativa está na definição de \"desdobramento fixo\". O desdobramento fisiológico da segunda bulha (B2) é aquele que varia com a respiração (surge na inspiração e desaparece na expiração). Já o desdobramento fixo da B2 (que não varia com o ciclo respiratório) é um achado patognomônico de Comunicação Interatrial (CIA), não sendo um achado fisiológico de atletas. Em adolescentes atletas, é comum encontrar bradicardia sinusal ou sopros sistólicos de ejeção funcionais, mas o desdobramento fixo de B2 sempre exige investigação.\n\nTerceira afirmativa (V): O sopro venoso (*venous hum*) é um sopro contínuo benigno causado pela drenagem do sangue das veias jugulares e subclávias para a veia cava superior. Ele é mais audível na região supraclavicular, geralmente à direita, com o paciente sentado. Uma característica fundamental para o diagnóstico é que ele desaparece ou muda de intensidade com manobras simples, como a compressão da veia jugular ipsilateral ou a rotação da cabeça do paciente, o que confirma sua origem venosa e benigna.\n\nQuarta afirmativa (V): Sopros holossistólicos (ou pansistólicos) ocupam toda a sístole, mascarando as bulhas, e são virtualmente sempre patológicos. No caso da Comunicação Interventricular (CIV), o gradiente de pressão entre os ventrículos gera um fluxo turbulento durante toda a sístole. Quando o sopro é acompanhado de frêmito (sensação tátil da turbulência), ele é classificado como grau IV em VI ou superior, o que reforça o caráter patológico. Curiosamente, CIVs pequenas (tipo Maladie de Roger) costumam produzir sopros mais rudes e intensos do que CIVs muito grandes.\n\nConclusão: A sequência correta é Verdadeiro, Falso, Verdadeiro, Verdadeiro (V, F, V, V), o que corresponde à alternativa (a).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  },
+  {
+    "id": "AJUDA_48c14823-75f4-4e4e-934c-515cddaed904",
+    "originalId": "48c14823-75f4-4e4e-934c-515cddaed904",
+    "statement": "Em uma criança de 12 anos, observa-se placas hipocrômicas, discretamente escamosas, com leve prurido no tronco, que tendem a agrupar-se mais em dias de calor ou com transpiração acentuada. O diagnóstico clínico mais provável é de pitiríase versicolor. Considerando esse diagnóstico, qual das seguintes afirmações NÃO está de acordo com as características epidemiológicas, diagnósticas ou terapêuticas esperadas dessas micoses superficiais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os fatores de risco incluem temperaturas quentes, alta umidade, imunossupressão, má nutrição, pele oleosa, excesso de suor e uso de corticosteroides.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No exame micológico direto, pode-se identificar pseudo-hifas e leveduras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A cultura do fungo em meio comum de dermatófitos é sempre necessária para confirmar o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A denominação “versicolor” provém da variedade de cores que as lesões podem assumir, como hipopigmentadas, acastanhadas ou eritematosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Recorrências são comuns, exigindo frequentemente medidas preventivas de higiene e controle de fatores predisponentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a pitiríase versicolor, uma micose superficial muito comum causada por fungos do gênero Malassezia. Para identificar a alternativa incorreta, devemos analisar os aspectos diagnósticos e epidemiológicos dessa patologia.\n\nAlternativa a) Correta. A Malassezia é um fungo lipofílico que faz parte da microbiota normal da pele. Sua transformação de levedura para a forma patogênica (filamentosa) é favorecida por fatores endógenos e exógenos, como calor, umidade, sudorese excessiva, oleosidade da pele, além de estados que debilitam a imunidade ou alteram a barreira cutânea, como o uso de corticoides e desnutrição.\n\nAlternativa b) Correta. O exame micológico direto (raspado da lesão com hidróxido de potássio a 10-20%) é o padrão-ouro para confirmação diagnóstica. Nele, visualiza-se o aspecto clássico de \"espaguete com almôndegas\", composto por hifas curtas e grossas (pseudo-hifas) e agrupamentos de leveduras arredondadas.\n\nAlternativa c) Incorreta (Gabarito). Esta é a afirmação falsa. O diagnóstico da pitiríase versicolor é eminentemente clínico e confirmado pelo exame micológico direto ou pela Luz de Wood (fluorescência amarelo-alaranjada). A cultura não é necessária na rotina clínica e, além disso, os fungos do gênero Malassezia são lipofílicos, o que significa que eles não crescem em meios de cultura comuns para dermatófitos (como o Ágar Sabouraud simples), exigindo a adição de ácidos graxos (como azeite de oliva) para o seu desenvolvimento em laboratório.\n\nAlternativa d) Correta. O termo \"versicolor\" refere-se justamente à variação de tonalidade das lesões. Elas podem ser hipocrômicas (mais claras que a pele ao redor, devido à produção de ácido azelaico pelo fungo, que inibe a melanogênese), hipercrômicas/acastanhadas ou eritematosas.\n\nAlternativa e) Correta. Como o agente etiológico habita a pele normalmente, as recidivas são extremamente frequentes, ocorrendo em até 60% a 80% dos casos. Por isso, orientações sobre higiene, uso de roupas leves e, em alguns pacientes, o uso profilático de antifúngicos tópicos ou sistêmicos são estratégias comuns no manejo da doença.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  },
+  {
+    "id": "AJUDA_48c5fbb2-ca2b-4629-b790-d716b851b1d3",
+    "originalId": "48c5fbb2-ca2b-4629-b790-d716b851b1d3",
+    "statement": "Homem de 25 anos sofre acidente automobilístico. Estava no banco traseiro, utilizando cinto de segurança abdominal (2 pontos). Evolui com dor abdominal difusa e dor lombar. Na avaliação inicial, a tomografia de abdome evidencia lesão de alça duodenal e fratura horizontal do corpo vertebral lombar. Esse conjunto de achados é típico da",
+    "options": [
+      {
+        "id": "A",
+        "text": "fratura de Jefferson.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fratura de Chance.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "fratura do enforcado (hangman).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fratura por explosão vertebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "síndrome de esmagamento abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um padrão clássico de trauma por desaceleração brusca em pacientes que utilizam o cinto de segurança de dois pontos (apenas abdominal). Esse dispositivo atua como um fulcro (ponto de apoio fixo), fazendo com que, no momento do impacto, o tronco sofra uma hiperflexão anterior forçada. Esse mecanismo de flexão-distração gera lesões específicas na coluna e no abdome.\n\nAlternativa (b) - Correta: A fratura de Chance é uma fratura transversa (horizontal) que atravessa o corpo vertebral, os pedículos e o processo espinhoso da coluna toracolombar ou lombar. É conhecida como a \"fratura do cinto de segurança\". Devido ao mecanismo de compressão das vísceras contra a coluna e o cinto no momento da flexão, existe uma associação altíssima (cerca de 50% dos casos) com lesões de órgãos abdominais, especialmente vísceras ocas (duodeno e intestino delgado) e o pâncreas. O achado de fratura horizontal lombar associada à lesão duodenal é patognomônico desse cenário.\n\nAlternativa (a) - Incorreta: A fratura de Jefferson é uma fratura por explosão do anel da primeira vértebra cervical (C1 - Atlas). O mecanismo típico é a carga axial (compressão vertical no topo da cabeça), como ocorre em mergulhos em águas rasas, não tendo relação com a coluna lombar ou o uso de cinto abdominal.\n\nAlternativa (c) - Incorreta: A fratura do enforcado (hangman fracture) envolve a pars interarticularis ou os pedículos da segunda vértebra cervical (C2 - Áxis). O mecanismo é de hiperextensão e distração súbita da coluna cervical alta, comum em colisões frontais sem cinto ou em enforcamentos, sendo anatomicamente distinta do caso descrito.\n\nAlternativa (d) - Incorreta: A fratura por explosão (burst fracture) é causada por uma carga axial que comprime o corpo vertebral até que ele se fragmente em várias direções. Embora possa ocorrer na transição toracolombar, ela não apresenta o padrão de traço horizontal de distração característico da fratura de Chance, nem a associação específica com o uso do cinto de dois pontos e lesão de víscera oca.\n\nAlternativa (e) - Incorreta: A síndrome de esmagamento (crush syndrome) refere-se às complicações sistêmicas, como rabdomiólise, hipercalemia e insuficiência renal aguda, resultantes da compressão prolongada de grandes massas musculares (comum em desabamentos). Não descreve o padrão biomecânico de fratura vertebral e lesão duodenal apresentado.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Fraturas e Luxações",
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  },
+  {
+    "id": "AJUDA_48d5741e-0064-4aac-a288-72e982ed3051",
+    "originalId": "48d5741e-0064-4aac-a288-72e982ed3051",
+    "statement": "Paciente portador de cirrose chega ao pronto socorro com dor abdominal há 2 dias, aumento do volume abdominal, oligúria e confusão mental. Ao exame apresenta flappings, desorientação no tempo, ascite tensa, com dor à palpação superficial e profunda, descompressão brusca negativa. Realizada paracentese onde se evidenciou, na análise do liquido ascético, os seguintes resultados: Albumina 0,9 Celularidade 740 células, com 81% de polimorfonucleares Cultura negativa De acordo com o relato e com os resultados da análise do líquido ascítico, qual é o diagnóstico para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peritonite bacteriana espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ascite neutrofilica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Bacterioascite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Peritonite bacteriana secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para diagnosticar infecções do líquido ascítico, o parâmetro mais importante é a contagem absoluta de polimorfonucleares (PMN). O cálculo é feito multiplicando a celularidade total pelo percentual de segmentados/neutrófilos. Neste caso: 740 células x 81% = 599,4 PMN/mm³. Como o valor é superior a 250 células/mm³, estamos diante de uma ascite infectada.\n\nAlternativa a) Peritonite bacteriana espontânea: Incorreta. Embora o quadro clínico seja clássico de uma infecção espontânea (dor abdominal e encefalopatia em cirrótico), para o diagnóstico formal de PBE, os critérios exigem PMN maior ou igual a 250/mm³ associado a uma cultura de líquido ascítico positiva (geralmente monomicrobiana). Como a cultura deste paciente foi negativa, ele não preenche todos os critérios para PBE clássica.\n\nAlternativa b) Ascite neutrofílica: Correta. Também chamada de ascite neutrocítica cultura-negativa, esta condição é definida pela presença de mais de 250 PMN/mm³ no líquido ascítico com o resultado da cultura negativo. Na prática clínica, o tratamento é idêntico ao da PBE, pois considera-se que a cultura foi negativa por limitações técnicas ou baixa densidade bacteriana, mas o diagnóstico laboratorial específico é o de ascite neutrofílica.\n\nAlternativa c) Bacterioascite: Incorreta. A bacterioascite ocorre quando a cultura do líquido ascítico é positiva para o crescimento de bactérias, porém a contagem de polimorfonucleares é normal (menor que 250/mm³). É uma colonização que pode preceder a PBE ou ser uma resolução espontânea.\n\nAlternativa d) Peritonite bacteriana secundária: Incorreta. A peritonite secundária decorre de uma fonte intra-abdominal perfurativa ou inflamatória (como apendicite ou perfuração de víscera oca). No exame físico, geralmente apresenta sinais de irritação peritoneal franca (descompressão brusca positiva), o que está ausente no caso. Além disso, laboratorialmente, a peritonite secundária costuma apresentar pelo menos dois dos critérios de Runyon: proteína total > 1 g/dL, glicose < 50 mg/dL e LDH elevado. No caso, a albumina de 0,9 sugere proteína total baixa, o que reforça a natureza espontânea e não secundária da infecção.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  },
+  {
+    "id": "AJUDA_48d713a3-bcb3-415c-9a52-fed1fb158f66",
+    "originalId": "48d713a3-bcb3-415c-9a52-fed1fb158f66",
+    "statement": "A Política Nacional de Vigilância em Saúde (PNVS), instituída pela Portaria MS/GM 588/2018, é uma política pública de Estado e função essencial do Sistema Único de Saúde (SUS), tendo caráter universal, transversal e orientador do modelo de atenção nos territórios, sendo a sua gestão de responsabilidade exclusiva do poder público.\n\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A PNVS incide sobre todos os níveis e formas de atenção à saúde, abrangendo todos os serviços de saúde públicos e privados, além de estabelecimentos relacionados à produção e circulação de bens de consumo e tecnologias que, direta ou indiretamente, se relacionem com a saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A PNVS compreende a articulação dos saberes, processos e práticas relacionados exclusivamente à vigilância epidemiológica, alinhando-se com o conjunto de políticas de saúde no âmbito do SUS, considerando a transversalidade das ações de vigilância em saúde sobre a determinação do processo saúde-doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A análise de situação de saúde e as ações laboratoriais são atividades verticais e centralizadas no processo de trabalho da Vigilância em Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A PNVS deve contribuir para a integralidade na atenção à saúde, o que pressupõe a inserção de ações de vigilância em saúde somente nos pontos de entrada da Rede de Atenção à Saúde (RAS), ou seja, somente nos serviços de atenção primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "As ações de vigilância em saúde devem contemplar especificamente territórios, pessoas e grupos em situação de maior risco e vulnerabilidade, contemplando somente pessoas com maior probabilidade de apresentarem doenças e agravos de importância em saúde pública.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a Política Nacional de Vigilância em Saúde (PNVS), estabelecida pela Resolução CNS nº 588/2018 (frequentemente citada em provas como Portaria 588/2018). Esta política define a Vigilância em Saúde como uma função essencial do SUS, com caráter transversal e universal.\n\nAlternativa A (CORRETA): Esta alternativa descreve perfeitamente a abrangência da PNVS. A política não se limita apenas ao setor público ou a um nível de atenção; ela é transversal, incidindo sobre serviços públicos e privados em todos os níveis de complexidade. Além disso, a vigilância atua sobre o controle de bens de consumo, tecnologias, produção e circulação, visando eliminar ou prevenir riscos à saúde da população.\n\nAlternativa B (INCORRETA): O erro está no termo \"exclusivamente à vigilância epidemiológica\". A PNVS compreende a articulação de quatro áreas fundamentais: Vigilância Epidemiológica, Vigilância Sanitária, Vigilância em Saúde Ambiental e Vigilância em Saúde do Trabalhador. Limitar a política a apenas uma dessas áreas contraria sua natureza integradora.\n\nAlternativa C (INCORRETA): A PNVS preza pela descentralização e pela territorialização. As ações laboratoriais e a análise da situação de saúde não devem ser verticais e centralizadas; pelo contrário, devem estar inseridas no cotidiano das equipes de saúde nos territórios, subsidiando o planejamento local e a tomada de decisão de forma compartilhada.\n\nAlternativa D (INCORRETA): Embora a Atenção Primária à Saúde (APS) seja a porta de entrada preferencial e coordenadora do cuidado, as ações de vigilância devem estar presentes em todos os pontos da Rede de Atenção à Saúde (RAS), incluindo serviços de urgência, hospitais e ambulatórios especializados, para garantir a integralidade da assistência.\n\nAlternativa E (INCORRETA): O termo \"somente\" invalida a alternativa. A PNVS segue o princípio da universalidade. Embora a política utilize a equidade para priorizar territórios e grupos em situação de maior risco e vulnerabilidade, as ações de vigilância em saúde destinam-se a toda a população, atuando tanto na prevenção quanto na promoção da saúde de forma coletiva.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  },
+  {
+    "id": "AJUDA_48d7d9db-5bee-40f1-8aeb-5f5c6bfbe465",
+    "originalId": "48d7d9db-5bee-40f1-8aeb-5f5c6bfbe465",
+    "statement": "A população do estado de São Paulo em 2022 era de 44 411 238 habitantes (IBGE). O quadro a seguir expressa informações sobre a ocorrência de casos e óbitos (acumulados) de Covid-19 no estado, nos anos de 2021 e 2022. [Tabela: Covid-19 | Acumulado até 31.12.21: Casos 4.456.108, Óbitos 155.205 | Acumulado até 31.12.22: Casos 6.317.252, Óbitos 177.435]. Com base nessas informações, assinale a alternativa que expressa percentualmente o coeficiente de letalidade da Covid-19, no estado de São Paulo, durante o ano de 2022.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1,2",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "2,8",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3,5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "349,5",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão de epidemiologia, é fundamental diferenciar dois conceitos: mortalidade e letalidade. A mortalidade avalia o risco de morte na população geral (óbitos divididos pela população total). Já a letalidade avalia a gravidade da doença, ou seja, o risco de uma pessoa doente vir a falecer (óbitos divididos pelo número de casos confirmados daquela doença).\n\nO enunciado solicita o coeficiente de letalidade especificamente durante o ano de 2022. Como a tabela fornece dados acumulados (que somam tudo o que ocorreu desde o início da pandemia até aquela data), precisamos primeiro isolar os eventos que ocorreram apenas no ano de 2022, subtraindo os valores acumulados de 2021 dos valores finais de 2022.\n\n1. Cálculo dos óbitos ocorridos em 2022:\nÓbitos acumulados até 31/12/2022 (177.435) menos óbitos acumulados até 31/12/2021 (155.205) = 22.230 mortes em 2022.\n\n2. Cálculo dos casos ocorridos em 2022:\nCasos acumulados até 31/12/2022 (6.317.252) menos casos acumulados até 31/12/2021 (4.456.108) = 1.861.144 casos em 2022.\n\n3. Cálculo da letalidade em 2022:\nA fórmula da letalidade é (Número de óbitos pela doença / Número de casos da doença) x 100.\nLetalidade = (22.230 / 1.861.144) x 100\nLetalidade = 0,01194... x 100 = 1,194% (que, arredondado, resulta em 1,2%).\n\nAnálise das alternativas:\n\na) Correta. Corresponde ao cálculo preciso da letalidade referente apenas ao intervalo do ano de 2022, subtraindo-se os dados acumulados dos anos anteriores.\n\nb) Incorreta. Este valor de 2,8% é o resultado da letalidade acumulada total de todo o período (2020 a 2022), dividindo-se o total acumulado de óbitos até 2022 pelo total acumulado de casos até 2022 (177.435 / 6.317.252). O enunciado pediu especificamente a letalidade do ano de 2022.\n\nc) Incorreta. Este valor de aproximadamente 3,5% representa a letalidade acumulada até o final de 2021 (155.205 óbitos / 4.456.108 casos), refletindo um período em que a doença era proporcionalmente mais letal, antes do avanço da vacinação em massa e da predominância de variantes como a Ômicron.\n\nd) Incorreta. Este valor é numericamente incompatível com a letalidade da Covid-19. Poderia ser confundido com um coeficiente de mortalidade (óbitos por habitantes), mas o cálculo da letalidade exige a relação direta entre óbitos e casos confirmados, resultando sempre em um percentual sobre os doentes.\n\nVale ressaltar que o dado da população total do estado (44.411.238 habitantes) serviu apenas como distrator na questão, não sendo utilizado para o cálculo de letalidade, apenas para o de mortalidade.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:37:17.555Z"
+  }
+]

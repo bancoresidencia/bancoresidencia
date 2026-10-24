@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_49ddfd08-5c92-4984-a324-766667deef56",
+    "originalId": "49ddfd08-5c92-4984-a324-766667deef56",
+    "statement": "Uma paciente de 38 anos de idade procurou atendimento por causa de fadiga progressiva, icterícia e urina escura. Exames laboratoriais revelaram Hb = 9,0 g/dL, DHL = 800 U/L, bilirrubina indireta = 3,2 mg/dL e reticulócitos = 8%. O esfregaço de sangue periférico mostrou esferócitos. Nesse caso, qual é o próximo passo diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Teste de Coombs direto",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pesquisa de hemoglobina na urina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste da glicose-6-fosfato desidrogenase (G6PD)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dosagem de anticorpos antinucleares (ANA)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico da paciente aponta para uma anemia hemolítica, caracterizada pela tríade de anemia (Hb 9,0 g/dL), icterícia (bilirrubina indireta de 3,2 mg/dL) e sinais de regeneração medular (reticulócitos de 8%). O aumento do DHL (800 U/L) reforça o diagnóstico de hemólise. O achado fundamental no esfregaço de sangue periférico é a presença de esferócitos.\n\nOs esferócitos são hemácias que perderam parte de sua membrana, tornando-se esféricas e menos flexíveis. No contexto de anemia hemolítica, as duas principais causas de esferocitose são a Esferocitose Hereditária (um defeito genético nas proteínas da membrana) e a Anemia Hemolítica Autoimune - AHAI (na qual anticorpos se ligam à membrana e macrófagos esplênicos removem partes dela).\n\nO próximo passo diagnóstico essencial é diferenciar se a causa é imunológica ou não.\n\nAlternativa (a) Correta: O Teste de Coombs Direto (ou teste direto de antiglobulina) é o exame de escolha para identificar a presença de anticorpos ou complemento aderidos à superfície das hemácias. Se o resultado for positivo, confirma-se o diagnóstico de Anemia Hemolítica Autoimune. Se for negativo em uma paciente com esferócitos, ganha força a hipótese de Esferocitose Hereditária.\n\nAlternativa (b) Incorreta: A pesquisa de hemoglobina na urina (hemoglobinúria) indica hemólise intravascular acentuada. Embora possa estar presente, ela não ajuda a diferenciar a etiologia da esferocitose, que é o foco da investigação no momento.\n\nAlternativa (c) Incorreta: A deficiência de G6PD é uma causa de anemia hemolítica enzimática, geralmente desencadeada por estresse oxidativo. No esfregaço de sangue dessa patologia, os achados clássicos são os corpúsculos de Heinz e as \"bite cells\" (células mordidas), e não a predominância de esferócitos.\n\nAlternativa (d) Incorreta: A dosagem de anticorpos antinucleares (ANA ou FAN) serve para pesquisar doenças autoimunes sistêmicas, como o Lúpus Eritematoso Sistêmico, que pode ser uma causa secundária de AHAI. Contudo, o FAN não confirma a hemólise nem sua natureza; o primeiro passo deve ser confirmar se a hemólise é de fato mediada por anticorpos por meio do Coombs Direto.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.468Z"
+  },
+  {
+    "id": "AJUDA_49e3525c-125e-4ffa-b2f9-98c47416df64",
+    "originalId": "49e3525c-125e-4ffa-b2f9-98c47416df64",
+    "statement": "Um paciente com sangramento devido a doença hepática requer correção de coagulopatia. Qual dos seguintes componentes do sangue seria a escolha mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Concentrado de hemácias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Plasma fresco congelado;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Plaquetas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Crioprecipitado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O fígado é o principal local de síntese de quase todos os fatores de coagulação (exceto o Fator VIII, que também é produzido nas células endoteliais), além de proteínas anticoagulantes como a Proteína C e S. Na doença hepática, ocorre uma deficiência multissegmentar dessas proteínas, resultando em um alargamento do Tempo de Protrombina (TP/RNI) e do Tempo de Tromboplastina Parcial Ativada (TTPA).\n\nAlternativa (a) INCORRETA: O concentrado de hemácias é indicado exclusivamente para o tratamento de anemia sintomática e melhora da oferta de oxigênio aos tecidos em casos de hemorragia aguda. Ele não contém plasma ou fatores de coagulação e, portanto, não tem capacidade de corrigir uma coagulopatia de consumo ou de síntese.\n\nAlternativa (b) CORRETA: O plasma fresco congelado (PFC) é o hemocomponente de escolha para a correção de coagulopatias associadas à insuficiência hepática com sangramento ativo. O PFC contém todos os fatores de coagulação, proteínas anticoagulantes e o sistema fibrinolítico em concentrações fisiológicas. Como o hepatopata tem deficiência de múltiplos fatores simultaneamente (especialmente os fatores II, V, VII, IX e X), o plasma oferece a reposição mais abrangente e equilibrada para restaurar a hemostasia.\n\nAlternativa (c) INCORRETA: A transfusão de plaquetas é indicada para casos de trombocitopenia grave ou disfunção plaquetária. Embora pacientes com doença hepática frequentemente apresentem plaquetopenia (devido ao hiperesplenismo ou redução da trombopoietina), a questão solicita a correção da coagulopatia (deficiência de fatores), e não especificamente da plaquetopenia. Plaquetas não corrigem o déficit de fatores de coagulação solúveis.\n\nAlternativa (d) INCORRETA: O crioprecipitado é um derivado do plasma rico apenas em fibrinogênio, Fator VIII, Fator XIII e Fator de von Willebrand. Ele é indicado principalmente em casos de hipofibrinogenemia isolada. Ele não é a escolha ideal para a doença hepática porque carece de diversos outros fatores essenciais que o fígado parou de produzir, como os fatores do complexo protrombínico (II, VII, IX e X).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Medicina Transfusional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.468Z"
+  },
+  {
+    "id": "AJUDA_49e357d8-d972-4698-8d45-e621015971a0",
+    "originalId": "49e357d8-d972-4698-8d45-e621015971a0",
+    "statement": "No processo de cicatrização de feridas, as citocinas têm papel relevante na coordenação dos eventos moleculares responsáveis pelas diversas etapas desse processo. Uma importante citocina, com efeito anti-inflamatório, produzida pelos macrófagos, nesse contexto, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Interferon-alfa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TGF-alfa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IL-4",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "IL-1",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O processo de cicatrização é uma cascata complexa de eventos moleculares. O macrófago é considerado a célula-chave dessa coordenação, pois ele altera seu fenótipo ao longo do tempo: inicialmente possui um perfil pró-inflamatório (M1) para limpar a ferida e, posteriormente, assume um perfil anti-inflamatório e reparador (M2) para conduzir a cicatrização.\n\nExplicação das alternativas:\n\na) Incorreta. O Interferon-alfa é uma citocina com papel predominante na resposta antiviral e em atividades antiproliferativas. Na cicatrização, ele não exerce a função de coordenador anti-inflamatório; pelo contrário, em alguns contextos, o interferon pode inibir a síntese de colágeno pelos fibroblastos, o que seria contraproducente para a fase de reparo.\n\nb) Incorreta. O TGF-alfa (Fator de Crescimento Transformador alfa) é, como o nome indica, um fator de crescimento. Ele tem grande importância na fase de proliferação, estimulando a mitose de células epiteliais (reepitelização) e a formação de novos vasos (angiogênese). Ele não é classificado como uma citocina de efeito anti-inflamatório, mas sim como um estimulador do crescimento celular.\n\nc) Correta. A IL-4 (Interleucina-4) é uma citocina central na regulação da inflamação. Ela promove a diferenciação dos macrófagos para o perfil M2 (ativação alternativa). Estes macrófagos M2 são responsáveis por encerrar a fase inflamatória e iniciar a fase proliferativa, liberando substâncias que auxiliam na deposição de matriz extracelular e na resolução do processo inflamatório agudo. É a alternativa que melhor se encaixa na descrição de citocina com papel anti-inflamatório no microambiente da ferida.\n\nd) Incorreta. A IL-1 (Interleucina-1) é uma das principais citocinas pró-inflamatórias do organismo. Ela é liberada precocemente após a lesão tecidual, promovendo febre, recrutamento de neutrófilos, ativação de enzimas degradativas e amplificação da resposta inflamatória inicial. Portanto, seu efeito é oposto ao solicitado na questão.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.468Z"
+  },
+  {
+    "id": "AJUDA_49f60571-5ece-4674-916d-cdf3f8c05dd8",
+    "originalId": "49f60571-5ece-4674-916d-cdf3f8c05dd8",
+    "statement": "A respeito das contraindicações do aleitamento materno, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A mãe infectada pelo HIV pode amamentar se estiver em terapia antirretroviral e com carga viral indetetável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em casos de infecção por herpes vírus, a presença de lesões herpéticas em uma das mamas, a amamentação deve ser suspensa em ambas até cicatrização completa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A tuberculose contraindica o aleitamento, devendo-se utilizar fórmula infantil exclusiva até a negativação da baciloscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mães portadoras do vírus da hepatite B não possuem contraindicações para amamentação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Incorreta. No Brasil, as recomendações do Ministério da Saúde e da Sociedade Brasileira de Pediatria estabelecem que a infecção pelo HIV é uma contraindicação absoluta ao aleitamento materno. Mesmo que a mãe esteja em terapia antirretroviral e com carga viral indetectável, o risco de transmissão vertical pelo leite persiste, e a recomendação é a substituição total por fórmula infantil.\n\nAlternativa b) Incorreta. Em casos de infecção por herpes simples, a amamentação deve ser suspensa temporariamente apenas na mama que apresentar lesões herpéticas ativas. Se a outra mama estiver livre de lesões, o aleitamento pode e deve continuar nela, desde que as lesões na mama afetada estejam devidamente cobertas para evitar o contato direto do lactente.\n\nAlternativa c) Incorreta. A tuberculose bacilífera não contraindica o aleitamento. A mãe pode amamentar desde que utilize máscara cirúrgica e realize a higienização das mãos antes de manipular o bebê, visando prevenir a transmissão por via respiratória. O recém-nascido deve ser acompanhado e receber quimioprofilaxia com isoniazida ou rifampicina, e a vacina BCG deve ser adiada até a conclusão da profilaxia.\n\nAlternativa d) Correta. A hepatite B não é uma contraindicação à amamentação. O risco de transmissão do vírus pelo leite materno é considerado negligenciável. Para garantir a segurança do lactente, é fundamental que a criança receba a primeira dose da vacina contra hepatite B e a imunoglobulina específica (HBIG) nas primeiras 12 a 24 horas de vida, o que protege eficazmente contra a transmissão vertical.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.468Z"
+  },
+  {
+    "id": "AJUDA_49f6c95d-e835-43d1-8c7f-26ac715f393c",
+    "originalId": "49f6c95d-e835-43d1-8c7f-26ac715f393c",
+    "statement": "Assinale a alternativa CORRETA sobre as inibinas no ciclo fisiológico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A inibina A é produzida pela granulosa dos folículos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A inibina A é principalmente secretada pelo corpo lúteo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A inibina B é principalmente secretada pela placenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A inibina B é inibida pelo aumento do FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "As inibinas são hormônios glicoproteicos produzidos pelas gônadas que desempenham um papel crucial na regulação do eixo hipotálamo-hipófise-gonadal, agindo especificamente no controle da secreção do hormônio folículo-estimulante (FSH). Existem dois tipos principais no ciclo menstrual: a Inibina A e a Inibina B.\n\nInibina B: É produzida pelas células da granulosa dos pequenos folículos antrais em crescimento durante a fase folicular inicial. Seus níveis aumentam logo no início do ciclo, estimulados pelo FSH, e servem como um marcador da reserva ovariana. A Inibina B exerce feedback negativo sobre a hipófise para reduzir a secreção de FSH.\n\nInibina A: Embora sua produção comece a aumentar no final da fase folicular pelo folículo dominante, sua principal fonte é o corpo lúteo. Seus níveis atingem o pico na metade da fase lútea, acompanhando a produção de progesterona.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A principal inibina produzida pelas células da granulosa dos diversos folículos em crescimento na fase folicular inicial é a Inibina B. A Inibina A é característica da fase lútea e do folículo dominante maduro.\n\nAlternativa b) Correta. A Inibina A é o produto predominante do corpo lúteo durante a fase lútea do ciclo menstrual. Ela atua, junto com a progesterona e o estradiol, na supressão do FSH durante esse período. Com a regressão do corpo lúteo (luteólise), os níveis de Inibina A caem, o que contribui para a elevação do FSH que recrutará novos folículos para o ciclo seguinte.\n\nAlternativa c) Incorreta. No ciclo menstrual fisiológico, a Inibina B é secretada pelas células da granulosa ovariana. Embora a placenta produza inibinas durante a gravidez (com predominância da Inibina A), essa não é a origem principal da Inibina B no contexto do ciclo menstrual.\n\nAlternativa d) Incorreta. A produção de Inibina B é estimulada pelo aumento do FSH no início do ciclo, e não inibida por ele. O que ocorre é a relação inversa de feedback: a Inibina B é que inibe a secreção de FSH pela hipófise.\n\nGabarito: Alternativa (b).",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.468Z"
+  },
+  {
+    "id": "AJUDA_4a074a4b-d662-4220-aa4c-52cf9d3b2f81",
+    "originalId": "4a074a4b-d662-4220-aa4c-52cf9d3b2f81",
+    "statement": "Sobre a avaliação multidimensional do idoso, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A autonomia refere-se à capacidade de realizar algo com os próprios meios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A independência refere-se à capacidade de decisão e comando sobre as ações, estabelecendo e seguindo as próprias convicções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Requer a avaliação de múltiplos domínios, incluindo aspectos físicos, cognitivos, nutricionais, psicológicos, sociais, ambientais e espirituais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Há evidências científicas convincentes que sustentam a avaliação rotineira do estado cognitivo em idosos assintomáticos. Os indicadores sensíveis de diminuição cognitiva são a perda de memória recente e a perda de função visuoespacial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: O conceito apresentado está invertido. A autonomia não se refere à execução, mas sim à capacidade de autogoverno, de tomar decisões e de exercer sua própria vontade e convicções. A capacidade de realizar algo com os próprios meios (execução física ou funcional) é o que define a independência.\n\nAlternativa (b) Incorreta: Esta alternativa descreve, na verdade, o conceito de autonomia. A independência é a capacidade de realizar as atividades do cotidiano (como banhar-se, vestir-se ou gerir as próprias finanças) sem o auxílio de terceiros. Um idoso pode ter autonomia (decidir o que quer), mas não ter independência (precisar de ajuda física para executar a tarefa).\n\nAlternativa (c) Correta: A Avaliação Geriátrica Ampla (AGA) ou avaliação multidimensional do idoso é a pedra angular da Geriatria. Ela vai além do modelo biomédico tradicional, que foca apenas em doenças, e busca entender o indivíduo de forma holística. Para isso, avalia obrigatoriamente múltiplos domínios, como a capacidade funcional, cognição, humor, estado nutricional, polifarmácia, suporte social, condições ambientais e, cada vez mais, a espiritualidade, visando manter a funcionalidade e qualidade de vida.\n\nAlternativa (d) Incorreta: Embora a perda de memória recente e a função visuoespacial sejam indicadores importantes de declínio cognitivo, não existe evidência científica robusta ou consenso que sustente o rastreamento cognitivo universal e rotineiro em idosos assintomáticos (aqueles sem queixas próprias ou de familiares). Grandes órgãos internacionais, como a USPSTF (U.S. Preventive Services Task Force), consideram a evidência insuficiente para recomendar o rastreio populacional sistemático na ausência de sintomas.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.468Z"
+  },
+  {
+    "id": "AJUDA_4a181673-0562-4b4b-ba0a-88b66fabd4c2",
+    "originalId": "4a181673-0562-4b4b-ba0a-88b66fabd4c2",
+    "statement": "C., 38 anos, portadora de artrite reumatoide, vem à consulta ambulatorial. Relata que há cerca de um mês vem apresentando, praticamente todos os dias, importante desânimo, muita tristeza, incapacidade de sentir prazer em atividades nas quais habitualmente sentia, insônia, perda de apetite e de peso e bastante cansaço. Seus marcadores de atividade inflamatória estão todos dentro da normalidade. A médica diagnostica um transtorno depressivo maior recorrente (esse é o seu terceiro episódio depressivo na vida) e inicia com uma medicação, pois a paciente estava sem o uso de antidepressivo há mais de dois anos. Antes de iniciar a medicação, a médica avalia o quadro aplicando a escala Hamilton de Depressão de 17 itens (HAM-D-17), que soma 20 pontos (depressão grave = 19 a 22 pontos), e, por isso, prescreve a medicação A. Após oito semanas com a dose máxima dessa medicação, a HAM-D-17 alcança 17 pontos (depressão moderada = 14 a 18 pontos). Como o conceito de resposta é uma diminuição de 50% em relação à pontuação anterior, a médica decide trocar para a medicação B. Após oito semanas com a dose máxima dessa medicação, a HAM-D-17 somou 15 pontos (depressão moderada = 14 a 18 pontos). Então, a médica associa, à medicação B, a medicação C. Após oito semanas com a dose máxima dessas duas medicações, a HAM-D-17 diminui para 4 pontos (sem depressão = 0 a 7 pontos). O gráfico da questão demonstra a resposta das medicações segundo a escala HAMD-17.\n\nA seguir, são descritas as características das medicações utilizadas:\nMedicação A = Sua molécula é constituída apenas do enantiômero S ativo. Não há restrição quanto a doses mais altas para evitar o prolongamento do intervalo QT como o que ocorre com a medicação semelhante, que é uma mistura racêmica. A sua meia-vida de eliminação é de 27 a 72 horas. Hiponatremia pode ocorrer com o seu uso, mas é reversível com a sua parada.\nMedicação B = É um inibidor da recaptação de noradrenalina e de serotonina. Tem afinidade por receptores colinérgicos, α adrenérgicos, H1 histaminérgicos e 5-HT2. A meia-vida de eliminação é de cerca de 19 horas. Tem como efeitos colaterais comuns boca seca, constipação, hipotensão ortostática, sonolência, taquicardia, tontura e visão turva.\nMedicação C = Seu mecanismo de ação provável se dá em diferentes níveis da chamada cascata de eventos na transmissão de sinais. Sabe-se que interfere no metabolismo do segundo mensageiro inositol trifosfato (IP3). Com a inibição de enzimas na via de formação do IP3 (como inositol monofosfatase), há aumento na formação da rota complementar do diacilglicerol (DAG) que atua em um dos sítios da fosfoquinase C (PKC). É excretada quase que totalmente pelos rins, e sua meia-vida de eliminação é de 18 a 24 horas.\nConsiderando as informações apresentadas, as letras A, B e C correspondem a, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sertralina, venlafaxina e lítio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Escitalopram, imipramina e lítio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sertralina, imipramina e escetamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Escitalopram, venlafaxina e escetamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, é necessário identificar as três medicações a partir de suas propriedades farmacológicas e farmacocinéticas descritas no enunciado.\n\nMedicação A: Escitalopram. O texto afirma que a molécula é constituída apenas do enantiômero S ativo. O citalopram é uma mistura racêmica (enantiômeros R e S), enquanto o escitalopram é o enantiômero S purificado. A menção ao intervalo QT é fundamental: o citalopram tem restrição de dose (máximo 40 mg/dia) devido ao risco de prolongamento do QT, risco que é significativamente menor com o escitalopram, permitindo maior segurança clínica.\n\nMedicação B: Imipramina. Trata-se de um antidepressivo tricíclico (ADT). Embora os ADTs inibam a recaptação de noradrenalina e serotonina, eles possuem alta afinidade por receptores colinérgicos (causando boca seca, constipação e visão turva), histaminérgicos H1 (causando sonolência) e alfa-1-adrenérgicos (causando hipotensão ortostática e taquicardia reflexa). A venlafaxina, citada em outras alternativas, é um IRSN, mas não possui essa afinidade expressiva por receptores muscarínicos e histaminérgicos.\n\nMedicação C: Lítio. A descrição do mecanismo de ação interferindo no metabolismo do inositol (inibição da enzima inositol monofosfatase) e na cascata do IP3/DAG é a explicação neuroquímica clássica para o carbonato de lítio. Além disso, a excreção quase totalmente renal e a meia-vida de 18 a 24 horas confirmam a identidade da substância. O lítio é frequentemente utilizado como estratégia de potencialização em casos de depressão que não responderam adequadamente à monoterapia.\n\nAnálise das alternativas:\n\na) Incorreta. A sertralina é um inibidor seletivo da recaptação de serotonina, mas a descrição da Medicação A foca especificamente na relação entre enantiômero S e mistura racêmica (típica do par citalopram/escitalopram). Além disso, a venlafaxina não apresenta o perfil de efeitos colaterais anticolinérgicos e anti-alfa-1 descritos para a Medicação B.\n\nb) Correta. O escitalopram (A) é o enantiômero S, a imipramina (B) é um tricíclico com o perfil de receptores e efeitos colaterais citados, e o lítio (C) atua na via do inositol com excreção renal. O gráfico ilustra que o paciente foi um \"não respondedor\" às medicações A e B isoladamente, mas atingiu a remissão (HAM-D menor que 7) com a associação B + C.\n\nc) Incorreta. A sertralina não corresponde à descrição da Medicação A. A escetamina (Medicação C nesta alternativa) possui um mecanismo de ação completamente diferente, agindo como antagonista dos receptores NMDA do glutamato, e não na via do inositol.\n\nd) Incorreta. Embora o escitalopram esteja correto para a Medicação A, a venlafaxina (B) não se ajusta ao perfil de afinidade por receptores colinérgicos e adrenérgicos descrito, e a escetamina (C) não possui o mecanismo de ação ou a farmacocinética renal descrita no texto.\n\nAssociação com o gráfico: O gráfico de linha mostra a pontuação na escala Hamilton-17. Observa-se que com a Medicação A e com a Medicação B (troca), a queda na pontuação foi mínima, não atingindo o critério de resposta (redução de 50%). Somente após a associação da Medicação C à Medicação B é que ocorre uma queda abrupta na curva, levando a pontuação para 4, o que caracteriza a remissão do quadro depressivo.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Transtornos do Humor",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/422127d794423ebc3c615dab70516e0d0e935c310dd211d6331a2044a8acf759.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4a181673-0562-4b4b-ba0a-88b66fabd4c2_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.936Z"
+  },
+  {
+    "id": "AJUDA_4a196fbf-9d41-4b29-bf9b-be459acde141",
+    "originalId": "4a196fbf-9d41-4b29-bf9b-be459acde141",
+    "statement": "Qual das drogas abaixo tem um importante efeito antiproteinúrico e está indicada no controle da proteinúria, em crianças com Síndrome Nefrótica, se não houver hiperpotassemia ou injúria renal aguda?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Propranolol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Losartan",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anlodipino",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Clonidina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hidroclorotiazida",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O bloqueio do sistema renina-angiotensina-aldosterona (SRAA) e a principal estrategia farmacologica utilizada para alcancar efeito antiproteinurico e nefroprotecao, tanto em adultos quanto em pediatria.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. O propranolol e um betabloqueador nao seletivo. Embora tenha papel no controle pressorico e em indicacoes especificas na pediatria (como em hemangiomas), nao atua na hemodinamica intraglomerular de modo a diminuir a perda de proteinas pela urina.\n\nAlternativa b: Correta. O losartan e um Antagonista dos Receptores da Angiotensina II (ARA II). Ele promove o relaxamento (vasodilatacao) preferencial da arteriola eferente do glomerulo, o que reduz a pressao intraglomerular e a taxa de hiperfiltracao, diminuindo diretamente o extravasamento de proteinas para o espaco urinario. Por alterar a hemodinamica renal e reter potassio, seu uso exige cautela e esta contraindicado na presenca de injuria renal aguda ou hiperpotassemia.\n\nAlternativa c: Incorreta. O anlodipino e um bloqueador dos canais de calcio di-hidropiridinico que atua relaxando predominantemente a arteriola aferente. Essa acao pode manter ou ate aumentar a pressao no tufo glomerular, nao exercendo efeito antiproteinurico.\n\nAlternativa d: Incorreta. A clonidina e um agonista alfa-2 de acao central utilizado no controle da hipertensao arterial sistemica, sem efeito especifico sobre a barreira de filtracao glomerular.\n\nAlternativa e: Incorreta. A hidroclorotiazida e um diuretico tiazidico que atua no tubulo contorcido distal, sendo util no manejo do edema refratario, mas sem capacidade intrinseca de diminuir a proteinurica via hemodinamica glomerular.\n\nGabarito: Letra B.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.936Z"
+  },
+  {
+    "id": "AJUDA_4a19c820-df7d-40d0-bee4-3e5f208d2b07",
+    "originalId": "4a19c820-df7d-40d0-bee4-3e5f208d2b07",
+    "statement": "Homem, 28 anos, apresenta uma massa dolorosa à esquerda na região inguinal, que aumenta com esforço e diminui em repouso. Ao exame físico, o médico insere o dedo no canal inguinal do paciente e este é instruído a realizar a manobra de Valsalva; a protusão é sentida na ponta do dedo. Descreve-se abaulamento na região do canal inguinal, superior e medial ao ligamento inguinal.\n\nEm face do exposto, o diagnóstico mais provável é de",
+    "options": [
+      {
+        "id": "A",
+        "text": "hérnia inguinal direta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hérnia inguinal indireta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "hérnia femoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "lipoma do cordão espermático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "linfadenopatia inguinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANALISE DO CASO:\n\nO quadro clinico e caracteristico de uma hernia da regiao inguinocrural em paciente jovem: massa que surge ou aumenta aos esforcos e reduz ao repouso.\n\nA diferenciacao diagnostica baseia-se em dois marcos anatomicos e semiologicos:\n1. Posicao em relacao ao ligamento inguinal: abaulamentos situados acima (superior e medialmente) do ligamento inguinal sao hernias inguinais. Hernias femorais localizam-se abaixo (inferiormente) do ligamento.\n2. Manobra da digitopalpacao do canal inguinal com Valsalva: quando o examinador introduz o dedo atraves do anel inguinal externo e o conteudo herniario toca a ponta do dedo, trata-se de uma hernia indireta, pois o saco herniario percorre a extensao do canal a partir do anel profundo. Se o conteudo tocar a polpa digital, trata-se de hernia direta, decorrente de fraqueza na parede posterior.\n\n\nANALISE DAS ALTERNATIVAS:\n\na) Incorreta. A hernia inguinal direta ocorre por fraqueza da fascia transversalis no triangulo de Hesselbach (parede posterior). Durante a manobra de Valsalva, o saco herniario projeta-se diretamente para a frente, tocando a polpa digital do examinador, e nao a ponta do dedo.\n\nb) Correta. A hernia inguinal indireta decorre da persistencia do conduto peritoneovaginal e insinua-se pelo anel inguinal interno, lateralmente aos vasos epigastricos inferiores. Ao descer pelo trajeto do canal inguinal, o saco herniario atinge a extremidade (ponta) do dedo do examinador durante a manobra de Valsalva.\n\nc) Incorreta. A hernia femoral projeta-se atraves do anel femoral e exterioriza-se abaixo (inferiormente) do ligamento inguinal, enquanto o enunciado descreve expressamente uma massa superior a esse ligamento.\n\nd) Incorreta. O lipoma de cordao e uma massa de gordura retroperitoneal que pode simular hernia, porem trata-se de estrutura solida que nao reduz completamente ao repouso nem gera impulso dinâmico a manobra de Valsalva.\n\ne) Incorreta. A linfadenopatia inguinal e o aumento de linfonodos por condicoes inflamatorias, infecciosas ou neoplasicas. Consiste em lesao nodular solida, nao redutivel e que nao sofre variacao de volume com aumentos da pressao intra-abdominal.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.936Z"
+  },
+  {
+    "id": "AJUDA_4a1f26ca-9fa3-4604-894c-2a754195e00f",
+    "originalId": "4a1f26ca-9fa3-4604-894c-2a754195e00f",
+    "statement": "Uma paciente de 22 anos, com ciclos menstruais regulares a cada 28 dias e queixa de acne importante há 6 meses, foi encaminhada ao serviço de ginecologia para avaliação. Sua mãe trata diabetes mellitus tipo 2. A paciente adota preservativo masculino como método anticoncepcional, tendo utilizado pílula combinada oral por 3 anos antes de cessar o uso há 8 meses. Ao exame físico, ela apresenta escore de Ferriman-Gallwey de 10, acantose nigricans em axilas e IMC de 24,2. O exame ginecológico é normal. Visando ao adequado diagnóstico, qual é a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento com mio-inositol e pílula anticoncepcional combinada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar teste oral de tolerância à glicose 75 g e tranquilizar paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar ultrassonografia pélvica e exames laboratoriais adicionais para excluir outras causas de hiperandrogenismo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar tratamento com metformina e progesterona cíclica ou sistema liberador intrauterino de levonorgestrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente apresenta sinais clínicos evidentes de hiperandrogenismo (hirsutismo avaliado pelo escore de Ferriman-Gallwey de 10 e acne importante) e sinais de resistência insulínica (acantose nigricans), apesar de possuir ciclos menstruais regulares e IMC dentro da normalidade. Diante deste quadro, o desafio é estabelecer o diagnóstico etiológico correto.\n\nAlternativa a) Incorreta. O início do tratamento com pílula anticoncepcional combinada ou mio-inositol é uma conduta terapêutica e não diagnóstica. A terapêutica só deve ser instituída após a conclusão da investigação, pois o uso de hormônios exógenos pode mascarar resultados de exames laboratoriais necessários para o diagnóstico.\n\nAlternativa b) Incorreta. Embora a acantose nigricans e o histórico familiar de diabetes indiquem a necessidade de uma avaliação metabólica futura, o teste de tolerância à glicose não esclarece a causa do hiperandrogenismo (hirsutismo e acne). Além disso, não é apropriado apenas tranquilizar a paciente sem investigar a origem do aumento dos níveis ou da ação dos androgênios.\n\nAlternativa c) Correta. Esta é a conduta inicial mais apropriada. O diagnóstico da Síndrome dos Ovários Policísticos (SOP) ou de outras causas de hiperandrogenismo clínico exige uma abordagem sistemática. Segundo os critérios de Rotterdam, para diagnosticar a SOP, a paciente deve apresentar pelo menos dois de três critérios: hiperandrogenismo (clínico ou laboratorial), oligo/anovulação (ciclos irregulares) e morfologia de ovários policísticos ao ultrassom. Como a paciente tem ciclos regulares, a ultrassonografia torna-se essencial para verificar a morfologia ovariana. Além disso, é obrigatório excluir outras patologias que mimetizam a SOP, como a hiperplasia adrenal congênita de início tardio (mensurando a 17-OH-progesterona), tumores virilizantes, síndrome de Cushing e hiperprolactinemia.\n\nAlternativa d) Incorreta. A metformina e o uso de progesterona ou SIU-LNG são intervenções para o manejo da resistência insulínica e controle do ciclo/proteção endometrial, respectivamente. Assim como na alternativa a, prescrever tratamento antes de realizar a investigação diagnóstica e a exclusão de causas secundárias é uma falha na prática clínica.\n\nPortanto, para uma paciente com hirsutismo e ciclos regulares, o primeiro passo é confirmar o hiperandrogenismo laboratorialmente, realizar exames de imagem e excluir diagnósticos diferenciais antes de definir a estratégia terapêutica.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:17.936Z"
+  }
+]

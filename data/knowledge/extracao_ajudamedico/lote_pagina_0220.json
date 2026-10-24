@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_3cca0839-c452-4c91-9dcd-72d7e0ca3434",
+    "originalId": "3cca0839-c452-4c91-9dcd-72d7e0ca3434",
+    "statement": "Em relação ao rastreio para o câncer de próstata, analise as assertivas a seguir e assinale a alternativa correta.\n\nI. Homens a partir de 45 anos, mesmo sem apresentar sintomas, devem procurar o médico para avaliação individualizada, tendo como objetivo o diagnóstico precoce do câncer de próstata.\nII. Homens que integram o grupo de risco (raça negra ou com parentes de primeiro grau com câncer de próstata) devem começar seus exames mais precocemente, a partir dos 40 anos.\nIII. Após os 70 anos, somente homens com perspectiva de vida maior do que 10 anos poderão fazer essa avaliação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todas as assertivas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Todas as assertivas estão incorretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas a assertiva II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas a assertiva III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, é fundamental diferenciar as recomendações do Ministério da Saúde/INCA das recomendações da Sociedade Brasileira de Urologia (SBU), pois as provas de residência costumam cobrar essas distinções.\n\nAnálise da Assertiva I: Incorreta. O Ministério da Saúde e o INCA não recomendam o rastreamento populacional organizado (em homens sem sintomas) para o câncer de próstata, baseando-se na ausência de evidências científicas de que o rastreio reduza a mortalidade global e no risco de excesso de diagnósticos e tratamentos desnecessários (overdiagnosis e overtreatment). Já a Sociedade Brasileira de Urologia (SBU) recomenda o início do rastreamento aos 50 anos para a população geral, e não aos 45 anos, como afirma o item.\n\nAnálise da Assertiva II: Incorreta. De acordo com a Sociedade Brasileira de Urologia, os homens que pertencem ao grupo de risco (raça negra ou parentes de primeiro grau com câncer de próstata) devem iniciar o rastreamento aos 45 anos, e não aos 40 anos. O Ministério da Saúde mantém sua recomendação de não realizar o rastreio sistemático mesmo nesses grupos, focando apenas no diagnóstico precoce de pacientes que apresentam sintomas.\n\nAnálise da Assertiva III: Incorreta. A diretriz da SBU indica que o rastreamento deve ser feito até os 75 anos, podendo ser interrompido antes caso a expectativa de vida do paciente seja inferior a 10 anos. A assertiva inverte a lógica ao sugerir que a avaliação começa ou é exclusiva para quem tem mais de 70 anos. Pela visão do Ministério da Saúde, não existe recomendação para essa avaliação periódica em nenhuma idade para pacientes assintomáticos.\n\nConclusão: Como todas as idades e critérios citados nas assertivas estão em desacordo com as principais diretrizes nacionais (especialmente as do Ministério da Saúde, que é o padrão para muitas provas que consideram o rastreio sistemático como conduta incorreta), a alternativa correta é a letra (b), indicando que todas as assertivas estão incorretas.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.066Z"
+  },
+  {
+    "id": "AJUDA_3ccb339a-4e81-4493-8a6a-9c4dc61aa16c",
+    "originalId": "3ccb339a-4e81-4493-8a6a-9c4dc61aa16c",
+    "statement": "Um menino de 4 anos, previamente saudável, é levado à unidade de pronto atendimento por apresentar lesões na face há cinco dias. Os pais relatam que as lesões, inicialmente, surgiram como uma pequena pápula eritematosa próxima ao nariz, que evoluiu para vesículas e depois crostas amareladas, aderentes e de aspecto melicérico. A criança frequenta creche, e há outros colegas que apresentaram lesões semelhantes recentemente. O paciente está afebril, em bom estado geral, e o exame físico mostra lesões restritas à região perinasal e perioral, sem linfadenopatia regional. Diante do caso, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrever aciclovir oral por sete dias, para tratar herpes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar oxacilina oral e solicitar cultura de secreção das lesões",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar cefalexina oral e glicocorticoide tópico para reduzir inflamação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prescrever mupirocina tópica nas lesões e orientar higiene local adequada",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é clássico de impetigo não bolhoso (ou crostoso), a infecção bacteriana superficial da pele mais comum na infância. As características patognomônicas presentes no caso são as lesões que evoluem de pequenas pápulas/vesículas para crostas amareladas, aderentes e de aspecto melicérico (semelhante a mel), localizadas preferencialmente ao redor do nariz e da boca. A alta contagiosidade é reforçada pelo relato de colegas da creche com sintomas semelhantes. Como o paciente apresenta bom estado geral, está afebril e as lesões são localizadas, a conduta deve ser conservadora e tópica.\n\nAlternativa a: Incorreta. O aciclovir é um antiviral indicado para o tratamento de infecções pelo vírus herpes simples ou varicela-zóster. Embora o herpes possa causar vesículas na face, ele não costuma formar as crostas melicéricas espessas típicas do impetigo e geralmente apresenta-se como vesículas agrupadas sobre uma base eritematosa.\n\nAlternativa b: Incorreta. A oxacilina é um antibiótico de uso predominantemente intravenoso, indicado para infecções estafilocócicas sistêmicas ou graves. Para o impetigo, quando há necessidade de via oral, utilizam-se outras opções como cefalexina ou amoxicilina com clavulanato. Além disso, o diagnóstico do impetigo é clínico, não sendo necessária a coleta de cultura em casos iniciais e localizados.\n\nAlternativa c: Incorreta. O uso de antibióticos por via oral, como a cefalexina, deve ser reservado para casos de impetigo com lesões extensas, múltiplas, em diferentes áreas do corpo ou na presença de sintomas sistêmicos. O uso de glicocorticoide tópico é contraindicado em infecções bacterianas ativas, pois sua ação imunossupressora local pode piorar a infecção e retardar a cicatrização.\n\nAlternativa d: Correta. Esta é a conduta padrão para o impetigo crostoso localizado. O tratamento de escolha consiste na aplicação de antibióticos tópicos, sendo a mupirocina a droga de primeira linha (outra opção seria a retapamulina). A orientação de higiene local, com limpeza suave das crostas com água e sabão, é fundamental para reduzir a carga bacteriana e facilitar a penetração do medicamento tópico.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Piodermites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.066Z"
+  },
+  {
+    "id": "AJUDA_3cccf1e0-ae7a-45e1-89cc-785328769caf",
+    "originalId": "3cccf1e0-ae7a-45e1-89cc-785328769caf",
+    "statement": "A equipe de saúde da família nota um aumento significativo de casos de diarreia em crianças menores de 5 anos nos últimos dois meses. Essa situação levanta a necessidade de uma ação coordenada por parte da equipe para entender e intervir no problema. Considerando as características da vigilância em saúde, a conduta esperada da equipe frente a esse cenário é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "promover uma campanha massiva de vacinação contra rotavírus em todas as crianças da área adscrita, assumindo que essa é a intervenção mais efetiva para o controle imediato do problema",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "investigar a provável causa do aumento, coletar dados epidemiológicos dos casos, promover ações de educação em saúde no território e articular-se com o serviço de vigilância local",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "investir no tratamento clínico individual dos casos, prescrevendo medicação e realizando encaminhamentos para outros níveis de atenção quando necessário",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar a notificação compulsória dos casos em nível municipal e aguardar as diretrizes e ações da vigilância epidemiológica central para intervenções",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão aborda o papel da Equipe de Saúde da Família (ESF) diante de uma alteração no perfil epidemiológico do território, especificamente um aumento de casos de diarreia em crianças menores de 5 anos. O foco aqui é a Vigilância em Saúde, que pressupõe uma análise contínua da situação de saúde da população para o planejamento e a execução de ações oportunas.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Campanhas de vacinação são estratégias preventivas importantes, mas a vacina contra o rotavírus já integra o Calendário Nacional de Vacinação. Promover uma campanha massiva sem antes investigar a etiologia do aumento de casos é uma conduta inadequada, pois a causa do surto pode ser bacteriana, parasitária ou ambiental (como contaminação de fontes de água), situações em que a vacina contra o rotavírus não teria impacto.\n\nAlternativa (b) Correta: Esta alternativa descreve o fluxo correto da Vigilância em Saúde no âmbito da Atenção Primária. Diante de um aumento atípico de casos, a equipe deve investigar as causas prováveis e coletar dados epidemiológicos para entender o perfil dos atingidos e os fatores de risco (quem, onde e quando). Ações de educação em saúde e a articulação com a vigilância local permitem uma intervenção direta na raiz do problema, visando ao controle do surto no território.\n\nAlternativa (c) Incorreta: O manejo clínico individual e o tratamento medicamentoso são partes da assistência médica, mas não configuram uma ação de Vigilância em Saúde para o controle de um problema coletivo. Se a equipe apenas tratar os casos que chegam à unidade sem investigar a causa do aumento no território, o fator causal permanecerá ativo, gerando novos doentes continuamente.\n\nAlternativa (d) Incorreta: Embora a notificação seja um passo importante, a postura de apenas notificar e aguardar passivamente as diretrizes da vigilância central é contrária aos princípios da Estratégia Saúde da Família. A equipe local tem responsabilidade sanitária sobre sua área adscrita e deve ser protagonista na investigação inicial e na implementação de medidas de controle imediatas.\n\nEm resumo, a alternativa (b) é a mais adequada por integrar a investigação epidemiológica, a intervenção comunitária e a coordenação de rede, características fundamentais da Vigilância em Saúde na Atenção Primária.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.066Z"
+  },
+  {
+    "id": "AJUDA_3cfe0161-4fce-456a-b827-dccd0cf92e4b",
+    "originalId": "3cfe0161-4fce-456a-b827-dccd0cf92e4b",
+    "statement": "Tatiana vem à consulta médica com queixa de dor lombar. Em sua consulta anterior, apresentou pressão arterial de 120 x 65 mmHg, FC normal, peso 59 kg, altura 1,60 m e FR normal. Ela declara ter alergia a dipirona. De acordo com seu prontuário, seu último Papanicolau foi há 3 anos. Tatiana relata se sentir sem energia e ter medo de essas dores serem alguma doença ruim. Diz que não tem conseguido mais dormir de preocupação.\nEm relação ao registro das informações fornecidas por Tatiana no Registro Clínico Orientado por Problemas (RCOP), é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "devem ser registradas no campo Subjetivo as informações “apresentou pressão arterial 120 x 65 mmHg, FC normal, peso 59 kg, altura 1,60 m e FR normal”;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "devem ser registradas no campo Objetivo as informações “apresentou pressão arterial 120 x 65 mmHg, FC normal, peso 59 kg, altura 1,60 m e FR normal”;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "devem ser registradas no campo Avaliação as informações “apresentou pressão arterial 120 x 65 mmHg, FC normal, peso 59 kg, altura 1,60 m e FR normal”;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "devem ser registradas no campo Avaliação as informações “Tatiana relata se sentir sem energia e ter medo de essas dores serem alguma doença ruim. Diz que não tem conseguido mais dormir de preocupação”;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "as informações “Tatiana relata se sentir sem energia e ter medo de essas dores serem alguma doença ruim. Diz que não tem conseguido mais dormir de preocupação” não são relevantes; logo, não devem ser registradas no RCOP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento da estrutura do Registro Clínico Orientado por Problemas (RCOP), que utiliza o método SOAP para a organização das notas de evolução e consultas. O SOAP é um acrônimo para Subjetivo, Objetivo, Avaliação e Plano.\n\nAlternativa a) Incorreta. O campo Subjetivo (S) é destinado ao relato do paciente. Ele contém a queixa principal, a história da doença atual, os sintomas percebidos pelo paciente, seus sentimentos, medos e expectativas. Informações como pressão arterial, frequência cardíaca, peso e altura são dados mensuráveis e observáveis pelo profissional de saúde; portanto, não pertencem a este campo.\n\nAlternativa b) Correta. O campo Objetivo (O) deve conter os dados coletados pelo examinador durante a consulta. Isso inclui os sinais vitais (PA, FC, FR, temperatura), os dados antropométricos (peso, altura, IMC) e os achados do exame físico segmentar, além dos resultados de exames laboratoriais ou de imagem que o paciente traz consigo. Portanto, os dados citados na alternativa estão corretamente alocados no campo Objetivo.\n\nAlternativa c) Incorreta. O campo Avaliação (A) é o espaço para o raciocínio clínico. Nele, o médico faz a análise do que foi coletado nos campos Subjetivo e Objetivo. É onde se registram os diagnósticos (codificados ou não), as hipóteses diagnósticas ou o status de um problema já conhecido (ex.: hipertensão arterial sistêmica controlada). Dados brutos do exame físico não devem ser registrados isoladamente aqui.\n\nAlternativa d) Incorreta. As frases \"Tatiana relata se sentir sem energia\", \"ter medo de essas dores serem alguma doença ruim\" e \"não tem conseguido mais dormir de preocupação\" são relatos diretos da paciente sobre seus sentimentos e percepções (o componente subjetivo da consulta). Devem ser registradas no campo Subjetivo (S) e não no campo Avaliação (A).\n\nAlternativa e) Incorreta. Todas as informações trazidas pelo paciente são relevantes, especialmente em uma abordagem centrada na pessoa. Os sentimentos, as ideias, as expectativas e a função (o impacto do problema na vida do paciente) formam o componente subjetivo essencial para o diagnóstico integral e para o fortalecimento da relação médico-paciente. Ignorar esses dados prejudica a qualidade do cuidado e do registro clínico.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.066Z"
+  },
+  {
+    "id": "AJUDA_3d074dde-c264-44e8-82f2-986b54ed0a35",
+    "originalId": "3d074dde-c264-44e8-82f2-986b54ed0a35",
+    "statement": "O controle social é um dos princípios fundamentais do Sistema Único de Saúde (SUS) e permite que a sociedade participe diretamente da formulação, gestão e fiscalização das políticas públicas de saúde. Para garantir essa participação, o SUS conta com alguns espaços e mecanismos de controle social, como conselhos e conferências de saúde. Qual alternativa representa CORRETAMENTE um exemplo de controle social no SUS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A participação de cidadãos em conselhos de saúde municipais, estaduais e nacional, onde podem discutir e influenciar as políticas públicas de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A criação de novas unidades de saúde pelo Ministério da Saúde, sem consulta à população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A promoção de campanhas de vacinação pelo SUS para aumentar a cobertura vacinal da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A elaboração de pesquisas científicas para avaliar a eficácia de tratamentos oferecidos pelo SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O controle social no Sistema Único de Saúde (SUS) é um princípio garantido pela Constituição Federal de 1988 e detalhado pela Lei nº 8.142/1990. Esse princípio assegura a participação da comunidade na gestão do sistema, permitindo que a população intervenha nas decisões políticas e fiscalize o uso dos recursos públicos.\n\nAlternativa A (Correta): Esta alternativa descreve perfeitamente a atuação dos Conselhos de Saúde. Os conselhos são órgãos colegiados, permanentes e deliberativos, o que significa que têm poder de decisão sobre as estratégias e a execução das políticas de saúde. Eles possuem composição paritária, na qual 50% dos membros são representantes dos usuários, garantindo que a sociedade civil influencie diretamente a gestão nas esferas municipal, estadual e nacional.\n\nAlternativa B (Incorreta): A criação de unidades de saúde de forma isolada pelo Ministério da Saúde, sem consulta ou planejamento participativo, contraria o princípio da descentralização e da participação da comunidade. O controle social exige que as decisões de planejamento passem pelo crivo das instâncias colegiadas, como os conselhos.\n\nAlternativa C (Incorreta): Campanhas de vacinação são ações finalísticas de vigilância em saúde e assistência. Embora sejam fundamentais para a saúde pública e para a cobertura vacinal, elas representam a prestação de um serviço técnico e operacional, não se configurando como um mecanismo de controle social ou gestão participativa.\n\nAlternativa D (Incorreta): A elaboração de pesquisas científicas e a avaliação de eficácia de tratamentos são processos técnicos e acadêmicos voltados para a medicina baseada em evidências. Embora essas pesquisas possam subsidiar decisões do SUS (como a incorporação de tecnologias), elas não são canais de participação direta da sociedade na formulação e fiscalização das políticas públicas.\n\nPortanto, o controle social é exercido institucionalmente por meio dos Conselhos de Saúde e das Conferências de Saúde, tornando a alternativa A a única correta.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.066Z"
+  },
+  {
+    "id": "AJUDA_3d099096-4648-4280-b8a3-b7d10691ecb5",
+    "originalId": "3d099096-4648-4280-b8a3-b7d10691ecb5",
+    "statement": "A neoplasia de próstata é o câncer mais frequente no homem, quando não consideramos tumores de pele. No Brasil, devido estado atual de cobertura de detecção e assistência, cerca de um quarto dos pacientes vão morrer da doença. O rastreamento tem como objetivo identificar a doença em estágio localizado, o que está associado a taxas de cura superiores a 90%, contribuindo para modificar significativamente o atual panorama da condição. Para o rastreamento de câncer de próstata, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em indivíduos em grupo de alto risco, é recomendado iniciar aos 50 anos e ser realizado anualmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indivíduos saudáveis e com mais de 10 anos de expectativa de vida podem repetir exames de rastreamento em 2-4 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ao encontrar valor baixo de PSA em indivíduos com mais de 50 anos, há necessidade de associar o toque retal para exclusão de câncer de próstata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Familiares de portadores de polipose adenomatosa familiar são pacientes em alto risco para câncer de próstata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diferente do câncer de bexiga, o câncer de próstata não tem relação com tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Comentário sobre a questão de rastreamento do câncer de próstata:\n\nAlternativa (a) Incorreta: Para indivíduos em grupos de alto risco, como homens negros ou aqueles com parentes de primeiro grau que tiveram câncer de próstata, as principais diretrizes (SBU e AUA) recomendam iniciar o rastreamento mais cedo, geralmente aos 45 anos (e não aos 50). Em casos de altíssimo risco (múltiplos familiares ou mutações genéticas específicas), pode-se considerar o início aos 40 anos.\n\nAlternativa (b) Correta: Esta alternativa reflete a tendência atual de rastreamento personalizado ou adaptado ao risco. Diretrizes modernas (como as da NCCN e da AUA) sugerem que homens com expectativa de vida superior a 10 anos e que apresentam valores iniciais de PSA muito baixos (geralmente abaixo de 1,0 a 2,0 ng/mL, dependendo da idade) podem realizar o rastreamento em intervalos maiores, como a cada 2 ou 4 anos, em vez de anualmente. Isso reduz o excesso de exames e o sobrediagnóstico em pacientes de baixo risco.\n\nAlternativa (c) Incorreta: O toque retal e a dosagem de PSA são exames complementares e devem ser realizados de forma conjunta desde o início do rastreamento. O toque retal é fundamental porque cerca de 15% a 20% dos tumores de próstata (frequentemente os mais agressivos) podem não elevar os níveis de PSA. Portanto, a necessidade de associar o toque existe independentemente de o valor do PSA ser baixo ou alto, não sendo uma conduta desencadeada apenas pelo achado de um PSA baixo.\n\nAlternativa (d) Incorreta: A Polipose Adenomatosa Familiar (PAF) está primariamente associada ao câncer colorretal devido a mutações no gene APC. Os grupos de risco genético bem estabelecidos para o câncer de próstata envolvem, principalmente, mutações nos genes BRCA1 e BRCA2, além da Síndrome de Lynch (genes de reparo do DNA).\n\nAlternativa (e) Incorreta: Embora a relação do tabagismo com o câncer de bexiga seja mais direta e conhecida, o cigarro também possui relação com o câncer de próstata. Estudos demonstram que o tabagismo está associado a um maior risco de doença agressiva, maior taxa de recorrência após o tratamento e maior mortalidade específica pela doença. Portanto, existe, sim, uma correlação relevante.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.066Z"
+  },
+  {
+    "id": "AJUDA_3d0e653b-6fd3-4dd3-bd22-73441a627d63",
+    "originalId": "3d0e653b-6fd3-4dd3-bd22-73441a627d63",
+    "statement": "São exemplos de doenças de transmissão direta mediata, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sarampo, tuberculose pulmonar e hanseníase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hepatite B, vírus da imunodeficiência humana e sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hepatite B, vírus da imunodeficiência humana e herpes genital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "vírus da imunodeficiência humana, herpes genital e esquistossomose mansônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "doença de Chagas, cólera e esquistossomose mansônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender essa questão, é fundamental diferenciar os conceitos de transmissão direta (imediata e mediata) e transmissão indireta, conforme os critérios da epidemiologia clássica.\n\nA transmissão direta ocorre quando o agente etiológico passa da fonte de infecção para o hospedeiro suscetível sem o auxílio de veículos intermediários ou vetores. Ela se divide em:\n1. Direta Imediata: Exige contato físico íntimo (ex.: beijo, relação sexual, toque).\n2. Direta Mediata: Ocorre por meio de secreções (gotículas ou aerossóis) expelidas pela fala, tosse ou espirro, que atingem as mucosas do novo hospedeiro a curta distância, sem permanecerem muito tempo no ambiente.\n\nA transmissão indireta, por outro lado, exige um intermediário, que pode ser um veículo (água, alimentos, fômites) ou um vetor (insetos).\n\nAnálise das alternativas:\n\na) Incorreta. Sarampo, tuberculose pulmonar e hanseníase são exemplos clássicos de transmissão direta mediata, pois o contágio ocorre principalmente por meio de gotículas ou aerossóis eliminados pelas vias respiratórias. Como a questão pede a exceção, esta alternativa não é o gabarito.\n\nb) Incorreta. Embora a hepatite B e o HIV sejam de transmissão direta imediata (contato sexual/sangue), o sarampo é de transmissão direta mediata. O conjunto ainda se mantém dentro do espectro da transmissão direta.\n\nc) Incorreta. Hepatite B, vírus da imunodeficiência humana (HIV) e herpes genital são exemplos de transmissão direta imediata. Apesar de serem imediatas, ainda pertencem à categoria de transmissão direta, o que as afasta do conceito de transmissão indireta.\n\nd) Incorreta. HIV e herpes genital são de transmissão direta imediata. A esquistossomose mansônica é de transmissão indireta (depende da água e do caramujo como hospedeiro intermediário). Por conter elementos de transmissão direta, a banca não a considerou como a exceção principal frente à alternativa E.\n\ne) Correta (Gabarito). Todas as doenças listadas nesta alternativa são de transmissão indireta:\n- Doença de Chagas: transmitida principalmente por um vetor (triatomíneo) ou via oral (alimentos contaminados).\n- Cólera: transmitida via fecal-oral, através de um veículo comum (água ou alimentos contaminados).\n- Esquistossomose mansônica: transmitida indiretamente através da penetração de cercárias na pele em contato com água contaminada, dependendo do ciclo biológico no caramujo.\n\nPortanto, a alternativa E é a única composta exclusivamente por doenças de transmissão indireta, sendo a exceção correta ao enunciado.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.066Z"
+  },
+  {
+    "id": "AJUDA_3d13cab0-e3a6-4d2b-b558-b552a952d517",
+    "originalId": "3d13cab0-e3a6-4d2b-b558-b552a952d517",
+    "statement": "Mulher de 24 anos de idade, que sempre teve ciclos menstruais normais, sofre abortamento espontâneo incompleto na 8ª semana de gestação. É submetida a Winteragem e Curetagem Uterina para remoção dos restos ovulares. Após o procedimento, está sem menstruar há 2 anos. De acordo com esse enunciado, qual das alternativas abaixo é a Hipótese diagnóstica para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome Simmonds",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Asherman",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Sheehan",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Kallman",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alternativa correta é a letra (b) Síndrome de Asherman.\n\nAnálise do caso clínico:\nO quadro clínico descreve uma paciente jovem, previamente eumenorreica (com ciclos normais), que desenvolveu amenorreia secundária logo após a realização de uma curetagem uterina para tratamento de abortamento incompleto. Este é o cenário clássico de uma causa anatômica uterina para a interrupção das menstruações.\n\nAlternativa (a) Síndrome de Simmonds: Incorreta. Esta síndrome consiste na insuficiência global e crônica da hipófise anterior (pan-hipopituitarismo), geralmente por causas não relacionadas ao parto, como tumores ou traumas cranianos. Embora cause amenorreia por falta de estímulo das gonadotrofinas, ela se manifesta com a falência de várias outras glândulas (tireoide, suprarrenal) e não possui relação direta com o trauma cirúrgico uterino descrito.\n\nAlternativa (b) Síndrome de Asherman: Correta. Esta condição é definida pela presença de sinéquias (aderências) intrauterinas que resultam em obliteração parcial ou total da cavidade endometrial. A causa mais frequente é o trauma do endométrio basal causado por procedimentos como a curetagem uterina ou a winteragem, especialmente quando realizados em úteros gravídicos, que estão mais amolecidos e propensos a lesões. A destruição da camada basal do endométrio impede sua regeneração cíclica, levando à amenorreia ou hipomenorreia.\n\nAlternativa (c) Síndrome de Sheehan: Incorreta. É a necrose isquêmica da hipófise decorrente de uma hemorragia pós-parto grave acompanhada de choque hipovolêmico. Apesar de causar amenorreia secundária, o enunciado foca no procedimento de esvaziamento uterino após um abortamento de 8 semanas, sem mencionar hemorragia vultosa ou instabilidade hemodinâmica, que são critérios essenciais para Sheehan.\n\nAlternativa (d) Síndrome de Kallmann: Incorreta. Trata-se de uma doença genética caracterizada por hipogonadismo hipogonadotrófico associado a distúrbios do olfato (anosmia ou hiposmia). É uma causa de amenorreia primária, ou seja, a paciente nunca chega a menstruar ou não completa a puberdade. Como a paciente do caso sempre teve ciclos normais antes do evento, esta hipótese está descartada.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.066Z"
+  },
+  {
+    "id": "AJUDA_3d1f5f5a-b380-43ce-95e4-0977f464f3e8",
+    "originalId": "3d1f5f5a-b380-43ce-95e4-0977f464f3e8",
+    "statement": "Pode ser causa de amenorréia secundária, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso de psicotrópicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hipotireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "uso de progestágenos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "anovulação crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "endometrioma.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender a questão, devemos identificar qual das condições listadas não é um fator etiológico para a interrupção da menstruação em uma mulher que anteriormente menstruava (amenorreia secundária).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Uso de psicotrópicos: Correta como causa. Muitos medicamentos psicotrópicos, especialmente os antipsicóticos (neurolépticos), são antagonistas da dopamina. Como a dopamina é o fator inibidor natural da prolactina, o bloqueio dopaminérgico resulta em hiperprolactinemia. O excesso de prolactina interfere na liberação pulsátil do GnRH hipotalâmico, impedindo a ovulação e causando amenorreia.\n\nb) Hipotireoidismo: Correta como causa. No hipotireoidismo primário, a queda dos hormônios tireoidianos (T3 e T4) leva ao aumento do TRH (hormônio liberador de tireotrofina). O TRH estimula a hipófise a liberar TSH, mas também atua nos lactotrofos, estimulando a liberação de prolactina. A hiperprolactinemia resultante bloqueia o eixo gonadotrófico, levando à ausência de menstruação.\n\nc) Uso de progestágenos: Correta como causa. O uso de progestágenos isolados (como no anticoncepcional injetável trimestral, implantes ou alguns esquemas terapêuticos) causa atrofia do endométrio por exposição contínua, além de poder inibir a ovulação. É uma causa iatrogênica muito comum de amenorreia secundária.\n\nd) Anovulação crônica: Correta como causa. É um mecanismo central em patologias como a Síndrome dos Ovários Policísticos (SOP). Sem a ovulação, não há formação do corpo lúteo nem produção de progesterona. Sem a queda cíclica da progesterona ao final do ciclo, o endométrio não descama de forma organizada, resultando em períodos prolongados sem menstruação (amenorreia ou oligomenorreia).\n\ne) Endometrioma: Incorreta como causa (Gabarito). O endometrioma é um cisto ovariano formado por tecido endometrial (sangue antigo, aspecto \"em chocolate\") decorrente da endometriose. Embora seja uma patologia pélvica importante que causa dor e infertilidade, ele não interrompe o ciclo hormonal. Mulheres com endometrioma geralmente apresentam ciclos regulares, muitas vezes acompanhados de dismenorreia (cólica severa), e não amenorreia.\n\nCONCLUSÃO:\nA maioria das causas de amenorreia secundária envolve disfunções no eixo hipotálamo-hipófise-ovário ou alterações diretas no endométrio. O endometrioma é uma alteração anatômica/estrutural que não costuma interferir na sinalização hormonal necessária para a ocorrência da menstruação.\n\nGabarito: Alternativa (e).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.066Z"
+  },
+  {
+    "id": "AJUDA_3d270730-bbce-4dde-bca9-47396d915b5b",
+    "originalId": "3d270730-bbce-4dde-bca9-47396d915b5b",
+    "statement": "Homem de 63 anos, tabagista, com queixa de dispneia e tosse seca há 15 dias, sem perda ponderal. Apresentava-se em bom estado geral e exame físico sem alterações significativas. A tomografia de tórax demonstrou massa pulmonar central no lobo superior direito (imagens abaixo). Biópsia revelou tumor neuroendocrino bem diferenciado (carcinoide típico). Com base no quadro e nas imagens, a conduta terapêutica mais adequada, dentre as abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radioterapia torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quimioterapia adjuvante com cisplatina e etoposídeo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Imunoterapia anti-PD-L1 como tratamento de primeira linha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Terapia com análogos de somatostatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ressecção cirúrgica com preservação pulmonar sempre que possível e linfadenectomia hiliar/mediastinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O caso apresenta um paciente idoso e tabagista com uma massa pulmonar central no lobo superior direito, cujo diagnóstico histopatológico é de tumor carcinoide típico. Os tumores carcinoides são neoplasias neuroendócrinas de baixo grau (típicas) ou grau intermediário (atípicas). O carcinoide típico caracteriza-se por um crescimento lento, baixo índice mitótico e rara metástase para linfonodos ou órgãos distantes.\n\nAs imagens de tomografia computadorizada (TC) de tórax confirmam a presença de uma lesão expansiva sólida, central, em contato com brônquios segmentares do lobo superior direito. A janela de parênquima evidencia a massa cercada por áreas de enfisema (comuns em tabagistas), enquanto a janela de mediastino demonstra a densidade sólida da lesão.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A radioterapia não é o tratamento de escolha para tumores carcinoides típicos localizados. Esses tumores são geralmente considerados radiorresistentes, e a radioterapia fica reservada para casos de paliação ou situações muito específicas nas quais a cirurgia é contraindicada.\n\nAlternativa b: Incorreta. A quimioterapia adjuvante com cisplatina e etoposídeo é o padrão-ouro para carcinomas neuroendócrinos de pequenas células (alto grau), que possuem comportamento agressivo. O carcinoide típico é quimiorresistente e não há benefício comprovado de quimioterapia em doença localizada e ressecada.\n\nAlternativa c: Incorreta. A imunoterapia anti-PD-L1 é utilizada principalmente no tratamento de carcinoma de pulmão de células não pequenas avançado ou metastático. Não há indicação de primeira linha para tumores carcinoides típicos localizados.\n\nAlternativa d: Incorreta. Os análogos de somatostatina (como octreotide) são utilizados no controle de sintomas da síndrome carcinoide ou para controle de doença sistêmica em tumores neuroendócrinos metastáticos que expressam receptores de somatostatina. Não são o tratamento definitivo para uma massa ressecável.\n\nAlternativa e: Correta. O tratamento de escolha para o tumor carcinoide típico é a ressecção cirúrgica completa. Por se tratar de um tumor de baixo grau de malignidade, a tendência moderna é realizar cirurgias com preservação de parênquima pulmonar (como ressecções em \"sleeve\" ou segmentectomias anatômicas), desde que as margens sejam livres. A linfadenectomia hiliar e mediastinal é indispensável para o estadiamento nodal adequado e para garantir a radicalidade oncológica.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7026e1a50c5f7332610128194a987878e2873c22d49d36b6367c7420093eb1af.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3d270730-bbce-4dde-bca9-47396d915b5b_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:01.415Z"
+  }
+]

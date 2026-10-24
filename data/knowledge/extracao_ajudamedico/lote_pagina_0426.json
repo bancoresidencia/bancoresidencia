@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_76ae357d-434e-4589-9e9f-3acfb5d2adb1",
+    "originalId": "76ae357d-434e-4589-9e9f-3acfb5d2adb1",
+    "statement": "Criança de 3 meses apresenta palidez, icterícia e hepatoesplenomegalia. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infecção viral leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anemia hemolítica congênita.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deficiência de vitamina D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipotireoidismo congênito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A tríade clínica composta por palidez, icterícia e hepatoesplenomegalia em um lactente de 3 meses é um quadro clássico que aponta para um processo de hemólise crônica ou aguda. A palidez reflete a redução dos níveis de hemoglobina (anemia); a icterícia decorre do aumento da bilirrubina indireta liberada pela destruição excessiva das hemácias; e a hepatoesplenomegalia ocorre tanto pelo trabalho excessivo do baço em remover hemácias anômalas quanto pela possível eritropoiese extramedular (quando o corpo tenta produzir sangue fora da medula óssea para compensar a perda).\n\nAlternativa (a) Incorreta: Infecções virais leves em crianças geralmente se manifestam com febre baixa, sintomas respiratórios (coriza, tosse) ou gastrointestinais. Embora infecções graves do grupo TORCH possam causar icterícia e organomegalia, elas não seriam classificadas como \"leves\" e geralmente apresentam outros sinais desde o nascimento.\n\nAlternativa (b) Correta: Esta é a hipótese diagnóstica principal. Anemias hemolíticas congênitas, como a esferocitose hereditária ou certas hemoglobinopatias, manifestam-se frequentemente nesta faixa etária, coincidindo com o período em que a hemoglobina fetal começa a ser substituída e as anomalias genéticas das hemácias tornam-se clinicamente evidentes. A destruição acelerada dos glóbulos vermelhos explica perfeitamente todos os achados do exame físico descritos.\n\nAlternativa (c) Incorreta: A deficiência de vitamina D na infância leva ao raquitismo. Os sinais clínicos típicos envolvem deformidades ósseas (rosário raquítico, craniotabes), atraso no fechamento de fontanelas e irritabilidade. Não há associação direta dessa carência com icterícia ou aumento de fígado e baço.\n\nAlternativa (d) Incorreta: O hipotireoidismo congênito pode causar icterícia neonatal prolongada, mas o quadro clínico costuma ser acompanhado de macroglossia (língua protrusa), hérnia umbilical, constipação, hipotonia e atraso no desenvolvimento neuropsicomotor. A palidez e a hepatoesplenomegalia marcantes não são os achados cardinais dessa endocrinopatia.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Anemias",
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  },
+  {
+    "id": "AJUDA_76c43acf-1b11-4596-a040-016f56c1e938",
+    "originalId": "76c43acf-1b11-4596-a040-016f56c1e938",
+    "statement": "Mulher de 32 anos é examinada como parte do rastreamento de contatos de um caso de hepatite aguda relacionada ao vírus da hepatite A (VHA) em uma creche. Relata que trabalha como enfermeira pediátrica e que nasceu e foi criada na capital do estado de São Paulo, sem nenhuma viagem recente. Ela está assintomática, não tem antecedentes mórbidos, seu exame físico é normal e não toma nenhuma medicação regularmente.\nEm relação à enfermeira avaliada, nesse momento, a próxima ação de maior efetividade prática é",
+    "options": [
+      {
+        "id": "A",
+        "text": "administrar imunoglobulina para o VHA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aplicar uma dose da vacina contra o VHA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "solicitar hemograma, bioquímica e perfil hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar sorologias para as hepatites virais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tranquilizá-la e seguimento observacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a conduta de profilaxia pós-exposição (PPE) para o vírus da hepatite A (VHA). O cenário envolve uma profissional de saúde (enfermeira de 32 anos) que teve contato com um caso confirmado em uma creche, ambiente de alto risco para surtos.\n\nAnálise das alternativas:\n\na) Incorreta. A imunoglobulina padrão (IG) é indicada para profilaxia pós-exposição em grupos específicos: crianças menores de 1 ano, adultos com mais de 40 anos, pessoas imunocomprometidas ou com doença hepática crônica. Como a paciente tem 32 anos e é previamente hígida, a vacina é a preferência.\n\nb) Correta. De acordo com os protocolos atuais (Ministério da Saúde e CDC), a vacina contra a hepatite A é a medida de escolha para profilaxia pós-exposição em pessoas saudáveis na faixa etária entre 1 e 40 anos. Para ser eficaz na prevenção da doença clínica, a dose deve ser administrada o mais rápido possível, preferencialmente dentro de 14 dias após a exposição. Além de prevenir a infecção atual, a vacina garante imunidade duradoura.\n\nc) Incorreta. A solicitação de exames bioquímicos e perfil hepático não é a prioridade no momento da profilaxia pós-exposição em uma paciente assintomática. O objetivo imediato é a prevenção da doença e o bloqueio da cadeia de transmissão, e não o diagnóstico de uma hepatite que ainda estaria em período de incubação.\n\nd) Incorreta. Embora a sorologia (anti-HAV IgG) pudesse identificar se a enfermeira já é imune, aguardar o resultado do exame poderia atrasar a administração da profilaxia dentro da janela de oportunidade de 14 dias. Em situações de surto ou bloqueio vacinal, a conduta prática é vacinar prontamente. Se ela já for imune, a vacina não trará prejuízos.\n\ne) Incorreta. O seguimento observacional (conduta expectante) é inadequado, pois a hepatite A é altamente contagiosa. A ausência de intervenção em um contato suscetível permite o desenvolvimento da doença e a continuidade da transmissão, o que é especialmente grave em uma enfermeira pediátrica.\n\nResumo do raciocínio: Em contatos de casos de hepatite A, a profilaxia pós-exposição deve ser feita em até 14 dias. Se o contato tiver entre 1 e 40 anos e for saudável, a vacina é a conduta de maior efetividade prática. Se tiver menos de 1 ano, mais de 40 anos ou for imunodeprimido, opta-se pela imunoglobulina.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  },
+  {
+    "id": "AJUDA_76cdc6ec-1189-409f-bd34-d8facacb3da7",
+    "originalId": "76cdc6ec-1189-409f-bd34-d8facacb3da7",
+    "statement": "Homem de 55 anos, com múltiplas laparotomias anteriores, foi submetido a uma colecistectomia laparoscópica devido à colelitíase sintomática. Sua endoscopia digestiva alta pré-operatória era normal. O pneumoperitônio foi realizado com agulha de Verres e não há relato de colecistectomia difícil. No primeiro dia pós-operatório, ele desenvolve taquipneia e dor abdominal intensa, distensão abdominal e ausência de evacuações. A ausculta revela redução dos sons intestinais. É submetido a uma tomografia que mostra líquido livre na cavidade abdominal e gás fora de alça. O diagnóstico mais provável, dentre os abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Íleo paralítico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obstrução mecânica do intestino delgado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lesão de víscera oca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Trombose de veia porta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Úlcera perfurada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "EXPLICAÇÃO DA QUESTÃO\n\nO caso clínico apresenta um paciente com alto risco cirúrgico para complicações relacionadas ao acesso abdominal. O ponto-chave é o histórico de múltiplas laparotomias prévias, o que aumenta significativamente a probabilidade de aderências (sinéquias) de alças intestinais à parede abdominal anterior. Ao utilizar a agulha de Verres (uma técnica de acesso \"às cegas\") para criar o pneumoperitônio, o risco de lesão iatrogênica de uma víscera oca é elevado. Os sintomas de dor intensa, taquipneia (indicando resposta inflamatória ou sepse precoce) e os achados tomográficos de líquido livre e gás fora da alça (pneumoperitônio patológico) confirmam uma perfuração.\n\nAnálise das alternativas:\n\na) Íleo paralítico: O íleo adinâmico é frequente no pós-operatório devido à manipulação das alças e anestésicos. Ele causa distensão e ausência de ruídos hidroaéreos, mas não justifica a dor abdominal intensa, a taquipneia nem a presença de líquido livre e gás extraluminal na tomografia.\n\nb) Obstrução mecânica do intestino delgado: Poderia ocorrer devido a bridas (aderências) antigas ou encarceramento em sítio de trocarte. Entretanto, a obstrução mecânica apresentaria tipicamente distensão de alças com níveis hidroaéreos na imagem. O gás fora da alça (extraluminal) é um sinal clássico de perfuração, e não de obstrução simples.\n\nc) Lesão de víscera oca: É a alternativa correta. Em pacientes com \"abdome hostil\" (múltiplas cirurgias anteriores), as alças intestinais costumam estar fixas à parede. A entrada com agulha de Verres ou trocartes pode perfurar o intestino delgado ou o cólon. O quadro de peritonite química e bacteriana resultante explica a dor súbita, a distensão, a redução dos sons intestinais e os achados da tomografia (gás e líquido na cavidade).\n\nd) Trombose de veia porta: É uma complicação vascular rara e não explicaria a presença de gás livre na cavidade abdominal logo no primeiro dia de pós-operatório. Costuma cursar com dor abdominal mal definida e achados específicos de falha de enchimento vascular nos exames de imagem.\n\ne) Úlcera perfurada: Embora a clínica de úlcera perfurada inclua pneumoperitônio e dor intensa, o enunciado destaca que o paciente realizou uma endoscopia digestiva alta pré-operatória que estava normal. Isso torna essa hipótese improvável, direcionando o diagnóstico para uma complicação da própria cirurgia laparoscópica realizada.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  },
+  {
+    "id": "AJUDA_76ceba64-5cf9-4506-b2e8-1a6a855f7b68",
+    "originalId": "76ceba64-5cf9-4506-b2e8-1a6a855f7b68",
+    "statement": "Um paciente vítima de traumatismo cranioencefálico (TCE) grave, submetido a craniectomia descompressiva, encontra-se na UTI. No 4º dia, apresenta crise convulsiva tônico-clônica generalizada. A profilaxia e o tratamento de crises convulsivas no contexto neurocirúrgico agudo seguem diretrizes específicas. Assinale a alternativa correta quanto à abordagem farmacológica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A fenitoína é classicamente utilizada para profilaxia precoce (primeiros 7 dias) de convulsões pós-TCE grave, devendo ser administrada diluída em solução salina (NaCl 0,9%) para evitar precipitação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O diazepam intramuscular é a droga de escolha para abortar a crise convulsiva ativa devido à sua absorção rápida e errática, superior à via intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A profilaxia com anticonvulsivantes no TCE grave reduz comprovadamente a incidência de epilepsia pós-traumática tardia, alterando o prognóstico a longo prazo da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de fenitoína profilática deve ser mantido por no mínimo 6 meses em todos os pacientes com TCE grave, independentemente da ocorrência de crises, para prevenir epilepsia tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A: Correta. De acordo com as diretrizes da Brain Trauma Foundation e da literatura neurocirúrgica, a fenitoína (ou o levetiracetam) é indicada para a profilaxia de crises convulsivas precoces (aquelas que ocorrem nos primeiros 7 dias após o trauma) em pacientes com TCE grave. Um cuidado farmacológico fundamental com a fenitoína é que ela é uma substância alcalina e instável, que sofre precipitação imediata se diluída em soluções que contenham glicose (soro glicosado). Portanto, deve ser administrada exclusivamente em solução salina (NaCl 0,9%).\n\nAlternativa B: Incorreta. O diazepam apresenta uma absorção errática, lenta e imprevisível quando administrado por via intramuscular (IM), não sendo recomendado para o tratamento da crise aguda nessa via. Para abortar uma crise convulsiva ativa, a via de escolha é a intravenosa (IV). Se o acesso venoso não estiver disponível, a droga de escolha para uso intramuscular é o midazolam, que possui absorção rápida e confiável.\n\nAlternativa C: Incorreta. Embora a profilaxia reduza a incidência de crises nos primeiros 7 dias (crises precoces), as evidências científicas mostram que ela não é capaz de prevenir o desenvolvimento de epilepsia pós-traumática tardia (que ocorre após a primeira semana). Além disso, o uso profilático não altera o prognóstico funcional ou a mortalidade do paciente a longo prazo.\n\nAlternativa D: Incorreta. A recomendação padrão para profilaxia em pacientes com TCE grave é de apenas 7 dias. Se o paciente não apresentar crises nesse período, a medicação deve ser suspensa. O uso prolongado por meses não previne a epilepsia tardia e aumenta o risco de efeitos colaterais e interações medicamentosas, sendo reservado apenas para pacientes que efetivamente desenvolverem o transtorno epiléptico.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Epilepsias",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  },
+  {
+    "id": "AJUDA_76d00d23-dfc3-4803-ba31-53db029c27fd",
+    "originalId": "76d00d23-dfc3-4803-ba31-53db029c27fd",
+    "statement": "Parturiente com idade gestacional de 37 semanas internou com perda de líquido amniótico há 5 horas. Pré-natal sem intercorrências, salvo por infecção urinária por Streptococcus B, tratada no segundo trimestre. A cultura vaginal e do intróito anal para Streptococcus B com 35 semanas foi negativa. Exame Físico: AU: 34 cm, DU 3/50\"/10 min, BCF 148 bpm, colo médio, medianizado 4 cm, apresentação cefálica. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Evitar o toque vaginal, ausculta intermitente e evolução do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Penicilina G cristalina 5 milhões de UI + 2,5 milhões de UI de 4 em 4 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ampicilina 4 gramas seguida de 2 gramas a cada 4 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cefazolina 2 gramas após 18 horas de rotura das membranas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente tem 37 semanas e está em trabalho de parto ativo (4 cm de dilatação e contrações regulares). O ponto crucial para a decisão terapêutica é o histórico de infecção urinária por Streptococcus B (SGB) no segundo trimestre.\n\nSegundo os protocolos nacionais e internacionais (Febrasgo e CDC), existem situações em que a profilaxia intraparto para SGB é obrigatória, independentemente do resultado do swab vaginal/anal realizado ao final da gestação. Uma dessas situações é a presença de bacteriúria por SGB em qualquer fase da gestação atual. Mesmo que a infecção tenha sido tratada e que a cultura de rastreio com 35 semanas tenha vindo negativa, a paciente é considerada colonizada de forma persistente e o risco de transmissão vertical exige a profilaxia.\n\nAnálise das alternativas:\n\nAlternativa a: Está incorreta. Não se deve apenas observar a evolução. O histórico de bacteriúria por SGB torna a profilaxia indispensável para reduzir o risco de sepse neonatal precoce.\n\nAlternativa b: Está correta. A Penicilina G Cristalina é o padrão-ouro para a profilaxia intraparto. O esquema consiste em uma dose de ataque de 5 milhões de UI, por via intravenosa, seguida de doses de manutenção de 2,5 milhões de UI a cada 4 horas até o nascimento.\n\nAlternativa c: Está incorreta. Embora a Ampicilina seja uma droga alternativa aceitável, a dosagem apresentada na alternativa está errada. O esquema correto para a Ampicilina na profilaxia de SGB seria 2 gramas de ataque e 1 grama a cada 4 horas de manutenção.\n\nAlternativa d: Está incorreta. A Cefazolina é uma opção para gestantes alérgicas à penicilina (em casos de baixo risco para anafilaxia). Além disso, o critério de 18 horas de rotura de membranas é um fator de risco usado para indicar profilaxia apenas em pacientes com status de SGB desconhecido. Como esta paciente já tem indicação formal pela bacteriúria prévia, a profilaxia deve ser iniciada com o início do trabalho de parto, sem aguardar completar 18 horas.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  },
+  {
+    "id": "AJUDA_76d17f48-b008-4f21-b18d-1e089bcc3d93",
+    "originalId": "76d17f48-b008-4f21-b18d-1e089bcc3d93",
+    "statement": "Durante uma consulta de acompanhamento em uma UBS com Estratégia de Saúde da Família, o médico residente atende Dona Helena, 63 anos, hipertensa, que relata aumento da pressão arterial e insônia desde que passou a cuidar do marido, recentemente diagnosticado com Alzheimer. A paciente demonstra cansaço e chora ao falar sobre a rotina de cuidados. O profissional decide utilizar instrumentos de abordagem familiar para compreender melhor o contexto. No genograma, identifica que Helena mora com o marido e um filho adulto que pouco participa dos cuidados. No APGAR familiar, o escore é baixo, principalmente nos itens de participação e apoio. Com base nos princípios da Medicina de Família e Comunidade e no uso desses instrumentos, entre as opções abaixo, a melhor conduta para este caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Focar o atendimento na hipertensão arterial, ajustando a medicação conforme protocolos clínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Utilizar as informações coletadas para elaborar um plano de cuidado que envolva todos os membros da família.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar a paciente para avaliação psiquiátrica, devido a seu sofrimento emocional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reforçar orientações de adesão ao tratamento medicamentoso e iniciar antidepressivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar que o filho assuma o cuidado dos pais devido a vulnerabilidade destes, independente dos desejos pessoais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso:\nDona Helena apresenta sinais claros de sobrecarga do cuidador, o que está impactando diretamente sua saúde física (descontrole da pressão arterial) e mental (insônia e sofrimento emocional). A utilização do Genograma permitiu visualizar a estrutura familiar e a rede de apoio disponível, enquanto o APGAR familiar confirmou uma disfunção familiar importante, caracterizada principalmente pela falta de participação e apoio dos outros membros (neste caso, o filho). Na Medicina de Família e Comunidade, o foco deve ser a abordagem sistêmica, entendendo que o adoecimento do indivíduo está interligado à dinâmica da família.\n\nAlternativa A: Incorreta. Focar exclusivamente no controle da hipertensão e no ajuste medicamentoso é uma conduta puramente biomédica e reducionista. Ignora a causa-raiz do descontrole pressórico, que é o estresse psicossocial decorrente da sobrecarga. Sem abordar o contexto familiar, dificilmente haverá sucesso terapêutico a longo prazo.\n\nAlternativa B: Correta. Esta alternativa aplica os princípios da abordagem familiar. Após coletar dados com o Genograma e o APGAR, o médico deve usar essas informações para intervir na dinâmica familiar. Elaborar um plano de cuidado que envolva os demais membros (como o filho) visa redistribuir as responsabilidades do cuidado com o marido, aliviando a carga sobre Dona Helena e tratando o problema em sua origem.\n\nAlternativa C: Incorreta. O sofrimento de Dona Helena é uma reação compreensível a uma situação de estresse crônico (estresse do cuidador). O manejo inicial deve ser feito pela própria equipe de Atenção Primária, através da escuta qualificada e da intervenção familiar. O encaminhamento para a psiquiatria seria uma medida secundária, caso o ajuste do contexto familiar não fosse suficiente ou se houvesse critérios para um transtorno mental grave.\n\nAlternativa D: Incorreta. Reforçar a adesão e iniciar antidepressivos sem modificar a realidade objetiva da paciente é uma forma de medicalizar um problema que é, em essência, social e familiar. O uso de psicofármacos não substitui a necessidade de suporte e reorganização da rotina de cuidados.\n\nAlternativa E: Incorreta. Embora a participação do filho seja o objetivo terapêutico, o médico não possui autoridade legal ou ética para impor condutas que ignorem os desejos pessoais ou a autonomia dos familiares. A abordagem familiar na medicina busca a pactuação, o diálogo e a construção conjunta de soluções, e não a imposição de tarefas.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  },
+  {
+    "id": "AJUDA_76d206c7-a365-4b5d-8d41-b95777394f8c",
+    "originalId": "76d206c7-a365-4b5d-8d41-b95777394f8c",
+    "statement": "Homem, 27 anos de idade, refere dor testicular à direita há cerca de 15 dias, acompanhada de aumento de volume do testículo e disúria leve. Nega trauma. Sem febre ou corrimento uretral. Não tem parceira sexual fixa e usa preservativo ocasionalmente. Foi realizado ultrassom Doppler de escroto que evidenciou testículo direito aumentado, hipoecoico e heterogêneo com aumento difuso da vascularização. Assinale a alternativa que apresenta a melhor conduta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ciprofloxacino e azitromicina por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ceftriaxona dose única e doxiciclina por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "PET-CT com FDG18, βHCG e alfa feto proteína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tomografia de tórax e abdome, βHCG e alfa feto proteína.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico de dor testicular subaguda (15 dias de evolução) acompanhada de aumento volumétrico, disúria leve e ultrassonografia com Doppler evidenciando hipervascularização difusa é clássico de orquiepididimite aguda. Em homens sexualmente ativos com menos de 35 anos de idade, os principais agentes etiológicos são infecções sexualmente transmissíveis, destacando-se Chlamydia trachomatis e Neisseria gonorrhoeae. O tratamento empírico deve cobrir ambos os patógenos.\n\nAlternativa A (Incorreta): O ciprofloxacino é uma fluoroquinolona indicada para orquiepididimite causada por germes entéricos (como Escherichia coli), que predomina em pacientes com mais de 35 anos ou com manipulação recente do trato urinário. Além disso, o tempo de 5 dias é insuficiente para o tratamento de orquiepididimite, que exige esquemas de 10 a 14 dias.\n\nAlternativa B (Correta): Apresenta o esquema padrão recomendado pelas diretrizes (CDC e Ministério da Saúde) para orquiepididimite de provável etiologia por IST em homens jovens. A ceftriaxona (dose única intramuscular) cobre Neisseria gonorrhoeae, enquanto a doxiciclina (oral por 10 a 14 dias) trata a infecção por Chlamydia trachomatis.\n\nAlternativa C (Incorreta): A dosagem de marcadores tumorais e exames avançados de imagem como o PET-CT são voltados para a investigação e seguimento de neoplasias testiculares. O câncer de testículo costuma se apresentar como massa indolor e não cursa tipicamente com hiperemia inflamatória difusa ao Doppler ou disúria.\n\nAlternativa D (Incorreta): A tomografia de tórax e abdome associada à dosagem de beta-hCG e alfa-fetoproteína faz parte do estadiamento de neoplasia testicular maligna já confirmada por exame histopatológico (após orquiectomia radical). O quadro do paciente é claramente inflamatório/infeccioso, devendo ser manejado clinicamente com antibioticoterapia.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  },
+  {
+    "id": "AJUDA_76ea589c-bc0c-4a2a-9b8e-d348d3116229",
+    "originalId": "76ea589c-bc0c-4a2a-9b8e-d348d3116229",
+    "statement": "Com relação ao abdome agudo obstrutivo secundário e ao megacólon congênito, assinale a alternativa que apresenta, corretamente, o achado mais significativo para pensar nesse diagnóstico na fase neonatal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A distensão abdominal difusa no raios X de abdome agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença do cone de transição no enema opaco com preparo de cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ausência de outras doenças associadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A eliminação de mecônio nas primeiras 24 horas de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O toque retal com característica explosiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O megacólon congênito, também conhecido como Doença de Hirschsprung, é caracterizado pela ausência congênita de células ganglionares nos plexos submucoso (Meissner) e mioentérico (Auerbach) no segmento distal do intestino grosso. Isso resulta em um segmento intestinal que não relaxa, gerando uma obstrução funcional.\n\nSegue a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. A distensão abdominal difusa e a presença de níveis hidroaéreos no raio-X são achados inespecíficos de qualquer obstrução intestinal baixa. Embora comuns na Doença de Hirschsprung, não são o achado \"mais significativo\" para diferenciar esta patologia de outras causas de obstrução neonatal, como o íleo meconial ou a atresia retal.\n\nAlternativa b) Incorreta. O erro desta alternativa reside na expressão \"com preparo de cólon\". Em casos de suspeita de megacólon congênito, o enema opaco deve ser realizado sem preparo prévio (sem lavagens). O objetivo é justamente visualizar o \"cone de transição\" entre o reto não dilatado (segmento agangliônico) e o cólon proximal dilatado pelo acúmulo de fezes. Se houver preparo, essa diferença de calibre pode ser mascarada. Além disso, o cone de transição pode demorar semanas para se tornar evidente no recém-nascido.\n\nAlternativa c) Incorreta. O megacólon congênito pode estar associado a diversas anomalias genéticas e síndromes, sendo a mais comum a Síndrome de Down (Trissomia do 21). Portanto, a ausência de outras doenças não auxilia no diagnóstico.\n\nAlternativa d) Incorreta. O sinal clínico cardeal do megacólon congênito é o atraso na eliminação de mecônio além das primeiras 24 a 48 horas de vida. Cerca de 90% dos recém-nascidos com Hirschsprung não evacuam nas primeiras 24 horas. Portanto, a eliminação normal de mecônio fala contra o diagnóstico.\n\nAlternativa e) Correta. O toque retal é um exame físico fundamental na suspeita desta patologia no período neonatal. Ao introduzir o dedo no reto do recém-nascido, o examinador percebe um canal anal hipertônico (devido à falta de relaxamento reflexo). Ao retirar o dedo, ocorre a saída explosiva de fezes e gases que estavam retidos sob pressão acima do segmento obstruído. Este é considerado um dos sinais semiológicos mais clássicos e significativos para o diagnóstico clínico inicial na fase neonatal.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Infantil",
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  },
+  {
+    "id": "AJUDA_76f6f042-698d-4a05-81ff-f69bd9eb7175",
+    "originalId": "76f6f042-698d-4a05-81ff-f69bd9eb7175",
+    "statement": "Homem, 29 anos, usuário de cocaína, álcool e crack, morador de áreas livres, em tratamento para TB pulmonar, apresenta melhora inicial. Após 4 meses em uso regular do tratamento supervisionado pela equipe do “Consultório na Rua”, apresentou nova positivação de bacilo álcool ácido resistente no escarro 3+/4+. O achado sugere:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento irregular;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Superinfecção por outra micobactéria;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tuberculose multirresistente (TB-MDR);",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Erro laboratorial na baciloscopia com viés na coleta do exame.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um paciente em tratamento para tuberculose pulmonar sob Tratamento Diretamente Observado (TDO) que evolui com falência terapêutica, caracterizada pelo ressurgimento de baciloscopia positiva com alta carga bacilar (3+/4+) no quarto mês de acompanhamento, após melhora inicial. De acordo com as diretrizes do Ministério da Saúde, a persistência ou o reaparecimento de bacilos no escarro a partir do quarto mês em paciente aderente define falha do esquema básico, sendo a principal hipótese diagnóstica a tuberculose resistente.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. O enunciado afirma explicitamente que o tratamento e supervisionado e regular pela equipe do Consultorio na Rua. O TDO afasta a hipotese de ma adesao ou irregularidade terapeutica como causa do insucesso.\n\nAlternativa b: Incorreta. Embora micobacterias nao tuberculosas possam causar doenca pulmonar, o contexto de piora bacteriologica apos resposta inicial sob tratamento supervisionado e tipico de selecao de cepas resistentes de Mycobacterium tuberculosis, e nao de superinfeccao.\n\nAlternativa c: Correta. O retorno da positividade da baciloscopia no quarto mes de tratamento supervisionado e criterio definidor de falha terapeutica. A causa mais provavel e a resistencia bacilar aos farmacos de primeira linha (TB multirresistente / TB-MDR), indicando a necessidade de teste de sensibilidade e mudanca para esquema especial.\n\nAlternativa d: Incorreta. O resultado 3+/4+ evidencia elevada carga bacilar e coincide perfeitamente com a definicao de falha bacteriologica. Atribuir o achado a erro laboratorial posterga a investigacao e a conduta correta diante da suspeita de resistencia.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Dependência Química",
+      "Medicina de Família e Comunidade",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  },
+  {
+    "id": "AJUDA_76f749a2-d918-4d02-8de7-9d168f547b2f",
+    "originalId": "76f749a2-d918-4d02-8de7-9d168f547b2f",
+    "statement": "Qual é o procedimento mais efetivo na reanimação neonatal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Massagem cardíaca;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de adrenalina endovenosa;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ventilação pulmonar;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Oxigênio inalatório a 100%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO TÉCNICO\n\nA base da reanimação neonatal reside na compreensão da fisiopatologia da transição fetal-neonatal. Diferente dos adultos, em que a parada costuma ser de origem cardíaca súbita, no recém-nascido a causa primária é quase sempre a insuficiência respiratória (asfixia). Por isso, o foco do protocolo é a aeração dos pulmões.\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA?\n\nA ventilação pulmonar (especificamente a Ventilação com Pressão Positiva - VPP) é considerada o procedimento isolado mais importante e eficaz na reanimação do recém-nascido. Ao expandir os pulmões e estabelecer a troca gasosa, o médico reverte a hipoxemia e a acidose, o que naturalmente faz com que a frequência cardíaca suba. Na grande maioria dos casos, uma ventilação bem executada é suficiente para reanimar o neonato, dispensando manobras invasivas.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: A massagem cardíaca é uma medida excepcional, necessária em menos de 1% dos nascimentos. Segundo as diretrizes da Sociedade Brasileira de Pediatria (SBP), ela só deve ser iniciada se a frequência cardíaca permanecer abaixo de 60 batimentos por minuto APÓS a realização de ventilação pulmonar adequada e efetiva. Tentar realizar massagem sem antes ventilar o paciente é um erro técnico.\n\nAlternativa B: O uso de adrenalina é uma das últimas etapas do algoritmo. É reservada apenas para casos gravíssimos em que a frequência cardíaca não subiu mesmo após ventilação e massagem cardíaca tecnicamente corretas. Não é, portanto, o procedimento mais efetivo ou comum.\n\nAlternativa D: O oxigênio inalatório a 100% não é mais a recomendação inicial padrão. Atualmente, as diretrizes recomendam iniciar a ventilação com ar ambiente (21% de oxigênio) em bebês com mais de 34 semanas, ajustando a concentração apenas se necessário, guiado pela oximetria de pulso. O uso excessivo de oxigênio (hiperoxia) pode causar estresse oxidativo e danos teciduais ao recém-nascido. Além disso, o oxigênio inalatório passivo não substitui a necessidade de pressão positiva para abrir os alvéolos.\n\nRESUMO: O sucesso da reanimação neonatal depende quase inteiramente de uma ventilação pulmonar precoce e eficaz. Este é o \"passo de ouro\" do protocolo.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:48.929Z"
+  }
+]

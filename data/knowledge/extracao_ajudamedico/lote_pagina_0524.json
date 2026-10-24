@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_9244de7e-642b-4125-8935-65458687f9fd",
+    "originalId": "9244de7e-642b-4125-8935-65458687f9fd",
+    "statement": "Uma mulher de 29 anos, advogada, procura atendimento médico devido a episódios recorrentes de fraqueza e formigamento no lado direito do corpo que duram algumas semanas e depois melhoram parcialmente. Ela relata que há cerca de seis meses teve um episódio de perda temporária da visão no olho esquerdo, que foi diagnosticado como neurite óptica e também se resolveu parcialmente. Nos últimos dias, passou a ter dificuldade para caminhar devido à fraqueza na perna direita e desequilíbrio, especialmente ao fazer movimentos rápidos. Durante o exame neurológico, foram observados nistagmo ao desviar o olhar para os lados, sinal de Babinski no lado direito, espasticidade com hiperreflexia em ambos os membros inferiores. A paciente recebeu o diagnóstico de Esclerose Múltipla após a realização de uma ressonância magnética (RM) que revelou lesões em múltiplas áreas da substância branca do cérebro e da medula espinhal. Qual a patogênese da Esclerose Múltipla?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Envolve uma complexa interação entre fatores imunológicos, genéticos e ambientais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Autoanticorpos contra aquaporina-4, levando a inflamação e dano aos astrócitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deposição de placas de beta-amiloide e emaranhados neurofibrilares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Presença de autoanticorpos anti-GQ1b que atacam os oligodendrócitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA Esclerose Múltipla (EM) é uma doença inflamatória crônica, autoimune e desmielinizante que afeta o sistema nervoso central (cérebro e medula espinhal). O caso clínico apresenta uma paciente jovem com episódios de déficits neurológicos disseminados no tempo (recorrência de sintomas) e no espaço (nervo óptico, tronco encefálico e medula), o que é característico da forma surto-remissão da doença.\n\nAlternativa A (Correta): A etiologia exata da Esclerose Múltipla ainda não é totalmente conhecida, mas o consenso científico atual define sua patogênese como uma interação complexa entre fatores genéticos (como a presença do alelo HLA-DRB1*15:01), fatores ambientais (infecção prévia pelo vírus Epstein-Barr, baixos níveis de vitamina D, tabagismo e obesidade na adolescência) e mecanismos imunológicos. O processo envolve a ativação periférica de linfócitos T e B autorreativos que atravessam a barreira hematoencefálica e promovem um ataque inflamatório contra a bainha de mielina e os oligodendrócitos, resultando em áreas de desmielinização (placas) e dano axonal.\n\nAlternativa B (Incorreta): Esta alternativa descreve a patogênese da Neuromielite Óptica (NMO ou Doença de Devic). Na NMO, a lesão primária é uma astrocitopatia causada por autoanticorpos específicos (anti-AQP4) que se ligam aos canais de água aquaporina-4. Embora a NMO também cause neurite óptica e fraqueza motora, sua fisiopatologia e manejo terapêutico são distintos da Esclerose Múltipla.\n\nAlternativa C (Incorreta): A deposição de placas de proteína beta-amiloide e a formação de emaranhados neurofibrilares (compostos por proteína tau hiperfosforilada) são as marcas histopatológicas da Doença de Alzheimer. Trata-se de uma patologia neurodegenerativa cortical que leva à demência progressiva, não estando relacionada aos processos de desmielinização inflamatória aguda ou subaguda vistos na paciente do enunciado.\n\nAlternativa D (Incorreta): O anticorpo anti-GQ1b é tipicamente encontrado na Síndrome de Miller Fisher, uma variante da Síndrome de Guillain-Barré. Esta é uma polirradiculoneuropatia imunomediada que afeta o sistema nervoso periférico e se manifesta clinicamente com a tríade de ataxia, arreflexia e oftalmoplegia, diferindo totalmente do quadro de lesão de primeiro neurônio motor (espasticidade e Babinski) e das lesões de substância branca central da Esclerose Múltipla. Além disso, na EM, o ataque ocorre contra os oligodendrócitos (que produzem mielina no sistema nervoso central), mas não é mediado pelo anti-GQ1b.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doenças Desmielinizantes e Encefalites Autoimunes"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:00.145Z"
+  },
+  {
+    "id": "AJUDA_924c0485-1ae8-42c3-b743-574cd1539f6f",
+    "originalId": "924c0485-1ae8-42c3-b743-574cd1539f6f",
+    "statement": "Menina 6 anos, histórico de dermatite de repetição, atualmente mais intenso nas dobras, além de rinite alérgica. Há 3 semanas notou exacerbação das lesões de dermatite, piora do prurido e aparecimento de lesões novas no abdome, onde refere também muito prurido. Ao exame apresenta placas de dermatite subaguda nas dobras, sinais de escoriações e no abdome as lesões da figura. Considerando o diagnóstico mais provável, qual microorganismo seria identificado nas lesões ativas do abdome?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Malassezia furfur.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Staphylococcus aureus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trichophyton rubrum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Herpes simplex.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\nO caso clínico descreve uma paciente de 6 anos com história pessoal de atopia (rinite alérgica e dermatite de repetição em dobras), o que confirma o diagnóstico de Dermatite Atópica (DA). O quadro atual é de exacerbação da doença, caracterizado por aumento do prurido e surgimento de novas lesões no abdome.\n\nAnálise da Imagem:\nA imagem do abdome revela a presença de crostas melicéricas (com aspecto de \"mel\"), erosões e algumas pústulas sobre uma base eritematosa. Esse aspecto é patognomônico de impetiginização, ou seja, uma infecção bacteriana secundária sobreposta às lesões de dermatite atópica. Pacientes atópicos possuem uma barreira cutânea deficiente e uma colonização bacteriana muito superior à da população geral.\n\nAnálise das Alternativas:\n\na) Incorreta. A *Malassezia furfur* é um fungo relacionado à dermatite seborreica e à pitiríase versicolor. Embora possa estar associada a exacerbações de dermatite atópica em adultos (principalmente na face e pescoço), não é o agente causador das lesões crostosas e agudas apresentadas no abdome desta criança.\n\nb) Correta. O *Staphylococcus aureus* é o principal agente etiológico do impetigo e da impetiginização na dermatite atópica. Estima-se que mais de 90% dos pacientes com DA sejam colonizados por *S. aureus* em lesões ativas. A presença de crostas melicéricas e a rápida exacerbação do prurido e das lesões são sinais clássicos da infecção por esse micro-organismo, que se aproveita da quebra da barreira cutânea e da desregulação imunológica local.\n\nc) Incorreta. O *Trichophyton rubrum* é um fungo dermatófito causador de tineas (como *tinea corporis*). Clinicamente, manifesta-se por lesões anulares com bordas descamativas ativas e centro mais claro, o que difere totalmente das lesões crostosas e disseminadas observadas na imagem.\n\nd) Incorreta. O vírus *Herpes simplex* pode causar uma complicação grave da dermatite atópica chamada Eczema Herpético (Erupção Variceliforme de Kaposi). No entanto, essa condição caracteriza-se por múltiplas vesículas monomórficas, umbilicadas e erosões em \"saca-bocado\", geralmente acompanhadas de febre e comprometimento do estado geral, o que não é o quadro típico de crostas melicéricas apresentado.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Eczematosas",
+      "Piodermites"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/2e2cb0d11061775a2d4bc7063f86a395da52735d60d59cf1741ea6116de36547.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_924c0485-1ae8-42c3-b743-574cd1539f6f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:00.838Z"
+  },
+  {
+    "id": "AJUDA_9253b00e-c1d1-46d6-a9f1-3388685f6d35",
+    "originalId": "9253b00e-c1d1-46d6-a9f1-3388685f6d35",
+    "statement": "O músculo levantador do ânus é uma estrutura essencial para a sustentação do assoalho pélvico, desempenhando um papel fundamental na continência urinária e fecal, além de contribuir para a função sexual. O que descreve corretamente as porções que compõem o músculo levantador do ânus são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pubococcígeo, pubovaginal e puborectal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pubococcígeo, puborretal e iliococcígeo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ileococcígeo, pubococcígeo e pubovaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pubococcígeo, pubovaginal e iliococcígeo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O músculo levantador do ânus é o principal componente do diafragma pélvico, uma estrutura muscular em formato de funil que sustenta as vísceras pélvicas e resiste ao aumento da pressão intra-abdominal. Para fins anatômicos e de provas de residência, ele é classicamente dividido em três porções principais, definidas por sua origem e inserção.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora apresente o pubococcígeo e o puborretal, o termo pubovaginal (em mulheres) ou puboprostático (em homens) refere-se, na verdade, às fibras mais mediais do músculo pubococcígeo. Esta alternativa peca por omitir o músculo iliococcígeo, que é uma das três divisões primárias fundamentais da estrutura.\n\nAlternativa B: Correta. Esta alternativa lista as três divisões clássicas do músculo levantador do ânus:\n1. Puborretal: É a porção mais medial, espessa e inferior. Forma uma alça em forma de \"U\" (alça puborretal) em torno da junção anorretal, sendo o principal responsável pelo ângulo anorretal e pela continência fecal.\n2. Pubococcígeo: É a porção intermediária, originando-se na face posterior do corpo do púbis e inserindo-se no cóccix e no ligamento anococcígeo.\n3. Iliococcígeo: É a porção mais lateral e posterior. Origina-se no arco tendíneo da fáscia do músculo obturador interno e se insere no cóccix. Frequentemente é a parte mais delgada do complexo.\n\nAlternativa C: Incorreta. Assim como na alternativa A, o erro reside na substituição do músculo puborretal pelo termo pubovaginal. O músculo puborretal é uma entidade anatômica e funcional distinta e indispensável na descrição do levantador do ânus.\n\nAlternativa D: Incorreta. Esta alternativa exclui o puborretal, que é clinicamente a parte mais importante para a manutenção da continência. O pubovaginal é considerado uma subdivisão ou feixe de fibras do pubococcígeo, e não uma das três partes principais autônomas do complexo.\n\nResumo para fixação:\nAo estudar o assoalho pélvico para provas, memorize a tríade do Levantador do Ânus: Puborretal (medial), Pubococcígeo (intermediário) e Iliococcígeo (lateral). Juntos, eles formam a maior parte do suporte muscular da pelve.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:00.838Z"
+  },
+  {
+    "id": "AJUDA_9257cb62-f24e-4de8-9cc1-02aaac30c86a",
+    "originalId": "9257cb62-f24e-4de8-9cc1-02aaac30c86a",
+    "statement": "Puérpera, G1P1, nas primeiras horas após o parto vaginal espontâneo apresenta sangramento vaginal ativo.\nAo exame físico, está pálida, com pressão arterial de 90x40 mmHg, frequência cardíaca de 110 bpm, abdome flácido e indolor. O útero encontra-se firme, contraído, à altura da cicatriz umbilical. A revisão da placenta foi considerada completa no momento do parto.\nQual é a conduta mais apropriada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exame especular vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar coagulograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ultrassonografia abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um quadro de hemorragia pós-parto (HPP) com repercussão hemodinâmica (hipotensão e taquicardia). Para investigar a etiologia da HPP, utiliza-se a regra dos 4 Ts: Tônus (atonia uterina), Trauma (lacerações do trajeto), Tecido (restos placentários) e Trombina (coagulopatias). \n\nComo o útero está firme e contraído (afastando atonia uterina, que é a causa mais comum) e a placenta foi descrita como completa (reduzindo a probabilidade de restos ovulares), a principal hipótese diagnóstica é o trauma do canal de parto (lacerações de períneo, vagina ou colo uterino).\n\nAnálise das alternativas:\n\nAlternativa A: Correta. O exame especular com ampla visualização do colo uterino e das paredes vaginais é o procedimento de escolha para identificar lacerações no canal de parto e permitir a hemostasia imediata (sutura). \n\nAlternativa B: Incorreta. Embora exames laboratoriais façam parte do suporte em casos de hemorragia grave, a solicitação isolada de coagulograma não define o foco do sangramento nem resolve a emergência mecânica aguda. Distúrbios de coagulação são causas menos frequentes e não constituem a primeira linha de investigação diagnóstica com útero contraído.\n\nAlternativa C: Incorreta. A ultrassonografia seria indicada na suspeita de retenção de restos placentários (Tecido) ou coleções, mas a placenta foi revisada e estava íntegra. O exame especular é mais rápido, direto e prioritário na suspeita de trauma do trajeto.\n\nAlternativa D: Incorreta. A laparotomia exploradora é reservada para situações de abdome agudo hemorrágico, suspeita de rotura uterina ou falha das medidas conservadoras/vaginais. A paciente apresenta abdome flácido, indolor e útero contraído, indicando que a fonte da hemorragia é baixa (canal de parto).\n\nPortanto, a alternativa correta é a letra A.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:00.838Z"
+  },
+  {
+    "id": "AJUDA_926cf365-744e-40ea-8945-02154b8a1ef8",
+    "originalId": "926cf365-744e-40ea-8945-02154b8a1ef8",
+    "statement": "Homem de 24 anos, com ferimento penetrante torácico à direita por arma branca, de aproximadamente 6 cm extensão, é conduzido à emergência; está estável hemodinamicamente. No exame torácico, são observadas: presença de traumatopneia, diminuição acentuada da expansibilidade torácica e ausência de murmúrio vesicular à direita. Não se observa turgência jugular ou desvio traqueal. Em face do exposto, a conduta imediata recomendada pelo ATLS™, a fim de se restabelecer a ventilação do paciente, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "toracocentese com agulha no 2º EIC, linha médio-clavicular, usando agulha de 5 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "toracostomia por dedo no 3º EIC, linha axilar anterior/média, seguida de dreno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "radiografia de tórax e, se confirmado hemotórax, inserção de dreno no 2º EIC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "toracotomia anterolateral de reanimação imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "curativo de 3 pontas sobre o ferimento, seguido de drenagem torácica sob selo d’água.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descreve um paciente jovem com ferimento penetrante na parede torácica apresentando traumatopneia (ferida soprante), diminuição da expansibilidade e ausência de murmúrio vesicular, o que caracteriza um pneumotórax aberto. A comunicação com o meio externo anula a pressão negativa intrapleural, colapsando o pulmão. A ausência de turgência jugular e de desvio traqueal afasta, no momento, a vigência de pneumotórax hipertensivo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A descompressão com agulha é indicada no pneumotórax hipertensivo descompensado. Além disso, a atualização do ATLS preconiza como sítio preferencial o 5º espaço intercostal entre a linha axilar anterior e média, e não o 2º espaço intercostal na linha médio-clavicular em adultos.\n\nAlternativa b: Incorreta. A abordagem inicial imediata para o pneumotórax aberto visa interromper a entrada contínua de ar pelo ferimento antes do procedimento de drenagem, a qual deve ser realizada preferencialmente no 5º espaço intercostal e distante da lesão original.\n\nAlternativa c: Incorreta. Diante de alterações ventilatórias com ferida soprante, a conduta é imediata e clínica, não se devendo aguardar radiografia de tórax para intervir. Adicionalmente, a drenagem torácica não deve ser realizada no 2º espaço intercostal.\n\nAlternativa d: Incorreta. A toracotomia de reanimação é reservada para pacientes vítimas de trauma penetrante que sofrem parada cardiorrespiratória presenciada ou colapso circulatório iminente na sala de emergência. O paciente em questão encontra-se hemodinamicamente estável.\n\nAlternativa e: Correta. A conduta clássica recomendada pelo ATLS para o pneumotórax aberto é a colocação de um curativo quadrangular fixado em apenas três pontas sobre a ferida. Isso cria uma válvula unidirecional que permite o escape de ar durante a expiração e impede a sua entrada durante a inspiração, restabelecendo a dinâmica ventilatória. Subsequentemente, realiza-se a drenagem torácica tubular sob selo d'água em local distante da lesão (5º espaço intercostal).",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:00.838Z"
+  },
+  {
+    "id": "AJUDA_926f678d-7656-43df-b95b-7d3f5b57dcea",
+    "originalId": "926f678d-7656-43df-b95b-7d3f5b57dcea",
+    "statement": "Mulher de 28 anos de idade, diagnosticada com Síndrome dos Ovários Policísticos (SOP) e resistência insulínica, está em tratamento com metformina para melhorar sua sensibilidade à insulina e regular seus ciclos menstruais. Apesar do tratamento, ela ainda apresenta dificuldades para engravidar e deseja conceber em breve. Parceiro com avaliação seminal normal. De acordo com os consensos de 2018 e 2023, qual outra medicação pode ser indicada para melhoria da fertilidade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Citrato de clomifeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inibidor de aromatase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Espironolactona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inositol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O cerne desta questão é a atualização do tratamento para infertilidade por anovulação na Síndrome dos Ovários Policísticos (SOP), fundamentada nos Consensos Internacionais de 2018 e 2023. Atualmente, a primeira linha de tratamento farmacológico para indução da ovulação mudou, priorizando a eficácia em taxas de nascidos vivos.\n\nAnálise das alternativas:\n\na) Citrato de clomifeno: Incorreta. Por décadas, o clomifeno foi a droga de primeira escolha para indução da ovulação na SOP. No entanto, os consensos mais recentes (2018 e 2023) demonstram que ele é menos eficaz que os inibidores da aromatase em termos de taxas de ovulação, gravidez clínica e, crucialmente, taxas de nascidos vivos. Ele permanece como uma alternativa caso o letrozol não esteja disponível ou seja contraindicado.\n\nb) Inibidor de aromatase (Letrozol): Correta. De acordo com as diretrizes internacionais baseadas em evidências (Guidelines 2018 e 2023), o letrozol é agora recomendado como a terapia farmacológica de primeira linha para a infertilidade anovulatória na SOP. Ele promove um aumento do FSH endógeno sem o efeito antiestrogênico periférico no endométrio e no muco cervical que o clomifeno apresenta, resultando em melhores desfechos reprodutivos e menor risco de gestação múltipla em comparação com as gonadotrofinas.\n\nc) Espironolactona: Incorreta. A espironolactona é um antagonista da aldosterona com efeito antiandrogênico, utilizada na SOP para tratar hirsutismo e acne. No entanto, ela é contraindicada para mulheres que desejam engravidar devido ao risco de feminilização de fetos masculinos (teratogenicidade). Ela deve ser suspensa antes de iniciar as tentativas de concepção.\n\nd) Inositol: Incorreta. Embora o inositol (especialmente o mio-inositol) venha sendo estudado por seus efeitos na melhora da resistência insulínica e na qualidade oocitária, os consensos de 2018 e 2023 ainda o consideram uma terapia experimental/complementar. Ele não possui o mesmo nível de evidência ou recomendação de primeira linha para indução da ovulação que o letrozol.\n\nResumo: Para uma paciente com SOP e desejo de gestação, após otimização do estilo de vida e manejo metabólico (como o uso de metformina já iniciado), o inibidor da aromatase (letrozol) é a escolha terapêutica de excelência para induzir a ovulação.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Infertilidade Conjugal",
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:00.838Z"
+  },
+  {
+    "id": "AJUDA_92775a3f-752a-4152-a4d5-14d6ba474386",
+    "originalId": "92775a3f-752a-4152-a4d5-14d6ba474386",
+    "statement": "Homem, 63 anos, metalúrgico, queixa-se de tosse seca diária e dispneia progressiva há 4 anos, atualmente aos mínimos esforços como tomar banho. Exame físico: bom estado geral, corado, cianótico, presença de baqueteamento digital. FR: 30 ipm. SatO2: 86% em ar ambiente. Radiografia de tórax abaixo:\n\nQual é o achado semiológico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expansibilidade reduzida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ausculta com roncos difusos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Macicez a percussão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ressonância vocal abolida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clinico apresentado (tosse seca cronica, dispneia progressiva aos minimos esforcos, hipoxemia importante, cianose e baqueteamento digital em paciente com exposicao ocupacional na metalurgia) e altamente sugestivo de doenca pulmonar intersticial com fibrose. Na radiografia de torax (incidencias em PA e perfil), observa-se um padrao de infiltrado reticular bilateral com predominio em bases pulmonares e perda volumetrica (reducao dos volumes pulmonares com elevacao das cupulas diafragmaticas), compativel com doenca pulmonar restritiva.\n\nAnalise das alternativas:\n\nAlternativa a: Correta. Nas doencas pulmonares fibrosantes/intersticiais, ocorre perda acentuada da complacencia pulmonar, tornando o parenquima mais rigido e enrijecido. Essa rigidez restringe o enchimento aereo durante a inspiracao, o que se traduz clinicamente pela reducao da expansibilidade toracica a palpacao e inspecao dinamica.\n\nAlternativa b: Incorreta. Os roncos sao ruidos adventicios continuos tipicos de presenca de secrecao espessa ou obstrucao em vias aereas de maior calibre, como na bronquite cronica. Nas doencas intersticiais, o achado auscultatorio caracteristico sao os estertores crepitantes finos teleinspiratorios, comumente descritos como estertores em \"velcro\".\n\nAlternativa c: Incorreta. A macicez a percussao e observada quando o ar alveolar e totalmente substituido por liquido ou tecido solido compacto, como em derrames pleurais ou consolidacoes extensas (pneumonia). No acometimento intersticial difuso, os alveolos ainda contem ar, mantendo habitualmente o som claro pulmonar ou, no maximo, uma leve submacicez.\n\nAlternativa d: Incorreta. A ressonancia vocal abolida ocorre em condicoes com presenca de barreiras a transmissao sonora no espaco pleural, como no derrame pleural e no pneumotorax, ou em atelectasias por obstrucao de via aerea calibrosa. Na fibrose pulmonar, o aumento da densidade parenquimatosa mantem ou ate aumenta a transmissao vocal.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/0b00f32d618b495b5b86216f4de6f786037e879eba82556894e97dcba02bd4a0.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_92775a3f-752a-4152-a4d5-14d6ba474386_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:01.339Z"
+  },
+  {
+    "id": "AJUDA_92866a84-6e0b-43d2-8e12-a4401dc0f4ba",
+    "originalId": "92866a84-6e0b-43d2-8e12-a4401dc0f4ba",
+    "statement": "Em relação à Doença Diarreica na infância, é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É uma doença infecciosa do trato digestivo de caráter benigno e autolimitado, mesmo em crianças desnutridas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento consiste basicamente na prevenção da desidratação, tratamento da desidratação e dos distúrbios hidroeletrolíticos, manutenção da alimentação durante e após o episódio diarreico, uso racional de medicamentos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O rotavírus é uma das principais causas de diarreia aguda na criança. Em 90% dos casos vem acompanhada de vômitos. E representa sua principal causa de morte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A intoxicação alimentar produzida pela toxina do S. aureus que ocorre após a ingestão de alimentos contaminados necessita de uso de antibióticos durante sua evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nAlternativa A: INCORRETA. Embora a doença diarreica aguda seja frequentemente autolimitada em crianças hígidas, ela não pode ser considerada invariavelmente benigna, especialmente em crianças desnutridas. Nesses casos, a desnutrição compromete a imunidade e a capacidade de regeneração do epitélio intestinal, aumentando significativamente o risco de complicações, persistência do quadro e mortalidade.\n\nAlternativa B: CORRETA. Esta alternativa resume os pilares fundamentais do manejo da diarreia recomendados pela Organização Mundial da Saúde (OMS) e pelo Ministério da Saúde. O tratamento foca na prevenção e correção da desidratação (com Soro de Reidratação Oral ou fluidos intravenosos em casos graves), correção de distúrbios de sódio e potássio, manutenção da dieta habitual para evitar a desnutrição secundária e o uso cauteloso de fármacos, evitando-se antidiarreicos e utilizando zinco conforme o protocolo.\n\nAlternativa C: INCORRETA. O Rotavírus é de fato uma causa importante de diarreia grave e frequentemente está associado a vômitos. No entanto, a afirmação de que ele representa a principal causa de morte está desatualizada. Após a introdução da vacina contra o rotavírus no Calendário Nacional de Vacinação em diversos países, inclusive no Brasil, houve uma redução drástica nas internações e óbitos por esse agente específico. Atualmente, a principal causa de morte por diarreia está mais relacionada a complicações da desidratação e manejo inadequado, independentemente do agente.\n\nAlternativa D: INCORRETA. A intoxicação alimentar por Staphylococcus aureus ocorre devido à ingestão de enterotoxinas pré-formadas no alimento contaminado, e não pela infecção direta da bactéria no hospedeiro. Por se tratar de uma ação toxigênica de curto período de incubação e rápida resolução, o uso de antibióticos é ineficaz e contraindicado. O tratamento é estritamente de suporte e reidratação.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:01.339Z"
+  },
+  {
+    "id": "AJUDA_9286e5e1-1d73-4517-9371-84e71d9cb4f8",
+    "originalId": "9286e5e1-1d73-4517-9371-84e71d9cb4f8",
+    "statement": "Sobre o coeficiente de mortalidade na infância, assinale a assertiva correta sobre o tema.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É medido a partir do número de óbitos de menores de 12 anos de idade dividido por 1.000 nascidos vivos na população residente em determinado espaço geográfico e ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso desse coeficiente tem por objetivos estimar a probabilidade que os nascidos vivos têm de morrer nos primeiros 2 anos de vida e avaliar, de maneira indireta, o desenvolvimento e a infraestrutura ambiental que potencializam a ocorrência de doenças ou agravos que podem causar a morte nesse grupo etário, e ainda, a qualidade e o acesso aos recursos disponíveis para a atenção materno-infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Consta no quarto Objetivo do Milênio do UNICEF, que define redução de dois terços do coeficiente mundial entre 1990 e 2015.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "As principais causas de morte estão associadas a uma combinação de fatores relacionados a condições de vida e de atenção à saúde, além de fatores socioeconômicos e ambientais. São mais importantes as doenças infecciosas e parasitárias e a desnutrição. Os acidentes, principalmente no ambiente doméstico, como quedas, intoxicações e queimaduras não se mostram tão determinantes ainda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Dentre as limitações para o uso desse indicador, destaca-se a subnumeração de óbitos e de nascidos vivos para o cálculo direto do coeficiente, porém não demostra impacto nas principais regiões do país ou nos estados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Coeficiente de Mortalidade na Infância é um dos indicadores mais sensíveis para avaliar a saúde de uma população, pois reflete não apenas a assistência médica, mas também as condições de saneamento, nutrição e o nível socioeconômico.\n\nAlternativa A - Incorreta. O Coeficiente de Mortalidade na Infância (também conhecido como Taxa de Mortalidade em Menores de 5 anos) considera os óbitos de crianças com menos de 5 anos de idade (0 a 4 anos, 11 meses e 29 dias) por 1.000 nascidos vivos. O limite de 12 anos citado na alternativa não corresponde ao padrão epidemiológico deste indicador.\n\nAlternativa B - Incorreta. O erro desta alternativa reside no tempo cronológico. Este coeficiente estima a probabilidade de um nascido vivo morrer antes de completar 5 anos de vida, e não apenas nos primeiros 2 anos.\n\nAlternativa C - Correta. Em 2000, as Nações Unidas estabeleceram os Objetivos de Desenvolvimento do Milênio (ODM). O Objetivo 4 (ODM 4) era especificamente a redução da mortalidade na infância em dois terços no período entre 1990 e 2015. O Brasil obteve grande sucesso nesta meta, atingindo a redução proposta antes mesmo do prazo final.\n\nAlternativa D - Incorreta. Embora as doenças infecciosas e a desnutrição tenham relevância histórica, o perfil epidemiológico mudou. Atualmente, as causas perinatais (relacionadas ao parto e nascimento) são as principais causas de morte no primeiro ano de vida. Além disso, as causas externas (acidentes e violência) são determinantes fundamentais da mortalidade na infância, especialmente após o primeiro ano de vida, invalidando a afirmação de que não seriam tão determinantes.\n\nAlternativa E - Incorreta. O sub-registro (subnumeração) de nascimentos e óbitos é, de fato, uma limitação técnica. No entanto, ao contrário do que a alternativa afirma, essa limitação impacta significativamente os indicadores das regiões Norte e Nordeste do Brasil. Nessas áreas, a precariedade dos sistemas de informação muitas vezes exige o uso de métodos de cálculo indiretos para estimar a mortalidade real.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:01.339Z"
+  },
+  {
+    "id": "AJUDA_928a7852-74c5-4362-98f1-7046ff2912b1",
+    "originalId": "928a7852-74c5-4362-98f1-7046ff2912b1",
+    "statement": "Lactente, sexo feminino, com 11 meses de idade é trazida ao pronto-socorro pelos pais, que relatam que a criança apresentou um episódio de febre (39 ºC) e, subitamente, ficou com o corpo rígido e apresentou movimentos rítmicos nos quatro membros, com duração aproximada de 2 minutos. Após o episódio, a criança ficou sonolenta por cerca de 10 minutos, mas agora está responsiva e interage com os pais. Não há histórico de convulsões anteriores sem febre, e o desenvolvimento neuropsicomotor é adequado para a idade. Ao exame físico, a criança apresenta hiperemia de orofaringe e otoscopia normal.\n\nDiante do exposto, qual é a conduta mais apropriada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar imediatamente um eletroencefalograma (EEG) e ressonância magnética de crânio para investigar a causa da convulsão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar punção lombar, para descartar meningite, devido à idade da criança e à primeira crise convulsiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar os pais sobre a benignidade do quadro, prescrever um antipirético e liberar a criança para casa, com orientação de retorno em caso de nova convulsão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar profilaxia contínua com fenobarbital, para prevenir futuras convulsões febris e o desenvolvimento de epilepsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar diazepam retal profilaticamente para ser usado em casa em caso de nova febre.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um caso clássico de crise convulsiva febril simples. Os critérios para esse diagnóstico são: idade entre 6 meses e 5 anos, presença de febre (mínimo de 38 °C), crise de caráter generalizado, duração inferior a 15 minutos e ocorrência de apenas um episódio em um período de 24 horas. A paciente tem 11 meses, apresentou crise tônico-clônica generalizada de 2 minutos e possui um foco infeccioso provável (hiperemia de orofaringe).\n\nAlternativa a) Incorreta. Em crises febris simples, não há indicação de realizar eletroencefalograma (EEG) ou exames de imagem de rotina, como a ressonância magnética. O EEG não é capaz de prever a recorrência de crises febris nem o desenvolvimento futuro de epilepsia, e a imagem só seria solicitada em caso de suspeita de lesão estrutural ou sinais neurológicos focais.\n\nAlternativa b) Incorreta. A punção lombar deve ser considerada em crianças com sinais meníngeos, quando há suspeita clínica de meningite, em crianças entre 6 e 12 meses que não possuem esquema vacinal completo (principalmente contra Haemophilus influenzae tipo b e Streptococcus pneumoniae) ou naquelas que já estão em uso de antibióticos (o que pode mascarar sinais de meningite). No caso descrito, a criança está alerta, interagindo e possui um foco infeccioso claro, não havendo necessidade de procedimento invasivo.\n\nAlternativa c) Correta. A conduta na crise febril simples é conservadora e baseia-se na tranquilização da família. Deve-se explicar que se trata de um evento benigno, que não causa danos cerebrais e que possui excelente prognóstico. O tratamento foca no controle da febre para o conforto da criança e observação clínica.\n\nAlternativa d) Incorreta. O uso de medicações anticonvulsivantes de forma contínua, como o fenobarbital, é contraindicado para crises febris simples. Os efeitos colaterais (alterações de comportamento e cognitivas) superam largamente os possíveis benefícios, além do fato de que a profilaxia não previne o desenvolvimento de epilepsia no futuro.\n\nAlternativa e) Incorreta. O uso profilático de benzodiazepínicos (como o diazepam retal ou oral) durante episódios febris não é recomendado de rotina após a primeira crise simples. Embora possa reduzir o risco de recorrência da crise febril, a medicação pode causar sonolência e ataxia, o que dificulta a avaliação clínica da criança pelos pais e pelo médico em caso de piora do quadro infeccioso.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:01.339Z"
+  }
+]

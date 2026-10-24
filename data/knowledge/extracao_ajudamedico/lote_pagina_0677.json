@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_bd0f8647-7811-42f3-a570-8a3f78242f74",
+    "originalId": "bd0f8647-7811-42f3-a570-8a3f78242f74",
+    "statement": "Paciente do sexo feminino, 28 anos, procurou à emergência com quadro de icterícia progressiva há 10 dias, acompanhada de dor abdominal em hipocôndrio direito e colúria, náuseas e vômitos. Relata episódios prévios de dor semelhante, associados à ingestão de alimentos gordurosos, mas sem icterícia. Ao exame físico, encontra-se com escleras ictéricas, dor à palpação no hipocôndrio direito, sem febre. Os exames laboratoriais mostram bilirrubina direta (8,5 mg/dL), amilase de 80 Ul e um leucograma de 8.500 mm³ sem desvio. A ultrassonografia abdominal evidencia dilatação das vias biliares intra e extra-hepáticas, sem fatores obstrutivos ao método e a presença de cálculos móveis em vesícula biliar. Não se observa lesões expansivas hepáticas. O diagnóstico mais provável, dentre os abaixo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pancreatite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colecistite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colangite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tumor periampular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Coledocolitíase.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreendermos a questão, devemos analisar o quadro clínico e os exames complementares de forma integrada. A paciente apresenta uma síndrome colestática clássica, caracterizada por icterícia de padrão obstrutivo (elevação de bilirrubina direta e colúria) e dor em hipocôndrio direito. O histórico de dor após ingestão de alimentos gordurosos sugere fortemente uma patologia biliar prévia (colelitíase).\n\nA ultrassonografia é a chave para o raciocínio: ela revela dilatação tanto das vias biliares intra-hepáticas quanto da via biliar comum (extra-hepática). Esse achado indica que a obstrução está localizada na porção distal do colédoco. O fato de o ultrassom não identificar o fator obstrutivo é comum, pois o gás intestinal frequentemente impede a visualização da porção distal do colédoco pelo método. No entanto, a presença de cálculos na vesícula corrobora a hipótese de migração de um cálculo para a via biliar principal.\n\nAnálise das alternativas:\n\na) Incorreta. A pancreatite aguda geralmente se manifesta com dor abdominal intensa, muitas vezes em barra, irradiando para as costas. Laboratorialmente, espera-se uma elevação significativa das enzimas pancreáticas (amilase e lipase), geralmente acima de três vezes o valor de referência. Na questão, a amilase está normal (80 UI).\n\nb) Incorreta. A colecistite aguda é a inflamação da vesícula biliar. O quadro clínico típico inclui dor persistente em hipocôndrio direito, sinal de Murphy positivo, febre e leucocitose, que não estão presentes neste caso. Além disso, a colecistite isolada não costuma causar dilatação de vias biliares intra-hepáticas ou níveis tão elevados de bilirrubina direta, a menos que haja síndrome de Mirizzi associada.\n\nc) Incorreta. A colangite aguda é uma infecção das vias biliares, geralmente secundária a uma obstrução. Ela é caracterizada pela Tríade de Charcot: icterícia, dor abdominal e febre com calafrios. A paciente está afebril e possui leucograma normal (8.500/mm³ sem desvio), o que torna o diagnóstico de colangite improvável no momento.\n\nd) Incorreta. Tumores periampulares (como o de cabeça de pâncreas ou de ampola de Vater) podem causar icterícia obstrutiva progressiva e dilatação de vias biliares. Contudo, em uma paciente de 28 anos com histórico de cólica biliar e presença de cálculos na vesícula, a causa calculosa é estatisticamente muito mais provável. Além disso, tumores costumam apresentar icterícia indolor e emagrecimento.\n\ne) Correta. A coledocolitíase é a presença de cálculo no colédoco. O quadro clínico de dor biliar seguida de icterícia, associado a exames laboratoriais que mostram colestase (bilirrubina direta de 8,5 mg/dL) e ultrassonografia revelando dilatação de toda a árvore biliar e colelitíase, é a apresentação clássica desta patologia. A ausência de febre e de leucocitose confirma que se trata de uma obstrução simples, sem processo infeccioso (colangite) ou inflamatório pancreático associado.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  },
+  {
+    "id": "AJUDA_bd21ccca-10bb-43f5-ba62-aea306d79425",
+    "originalId": "bd21ccca-10bb-43f5-ba62-aea306d79425",
+    "statement": "Paciente com uso crônico e pesado de álcool desenvolve déficit de memória anterógrada grave, com confabulações e relativa preservação de outras funções cognitivas; identifique o transtorno orgânico relacionado ao uso de substâncias:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno amnéstico alcoólico (síndrome de Korsakoff).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Transtorno de ansiedade generalizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno somatomorfo indiferenciado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno obsessivo-compulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO TÉCNICO:\n\nO caso clínico descreve um quadro clássico de Síndrome de Korsakoff, uma condição neuropsiquiátrica crônica que frequentemente sucede à Encefalopatia de Wernicke (fase aguda). Ambas são causadas pela deficiência grave de tiamina (vitamina B1), condição comum em pacientes com alcoolismo crônico devido à má absorção intestinal e nutrição inadequada.\n\nAnálise das alternativas:\n\na) Correta. O Transtorno amnéstico alcoólico ou Síndrome de Korsakoff é caracterizado tecnicamente por um déficit marcante na memória anterógrada (incapacidade de formar novas memórias após o evento desencadeante). A confabulação é o sinal patognomônico, no qual o paciente inventa histórias ou distorce fatos para preencher as lacunas de memória, sem a intenção consciente de mentir. As demais funções cognitivas, como o nível de consciência e a linguagem, costumam permanecer preservadas, diferenciando este quadro de uma demência global como o Alzheimer.\n\nb) Incorreta. O Transtorno de Ansiedade Generalizada (TAG) é uma condição psiquiátrica caracterizada por preocupação excessiva e persistente, acompanhada de sintomas somáticos como tensão muscular, irritabilidade e distúrbios do sono. Não apresenta relação com déficits de memória orgânicos ou uso crônico de substâncias causando lesão neurológica.\n\nc) Incorreta. O Transtorno somatomorfo indiferenciado refere-se a pacientes que apresentam queixas físicas persistentes (dor, fadiga, problemas gastrointestinais) que não podem ser explicadas por uma condição médica geral, mas que não preenchem todos os critérios para outros transtornos somatoformes. Não envolve perda de memória ou confabulação.\n\nd) Incorreta. O Transtorno Obsessivo-Compulsivo (TOC) é definido pela presença de obsessões (pensamentos intrusivos e persistentes) e compulsões (comportamentos repetitivos realizados para reduzir a ansiedade). É uma patologia do espectro da ansiedade/impulso e não possui base na neurotoxicidade alcoólica com foco em amnésia.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Demências",
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  },
+  {
+    "id": "AJUDA_bd243e07-308b-4b3b-9fc5-a114b6574569",
+    "originalId": "bd243e07-308b-4b3b-9fc5-a114b6574569",
+    "statement": "Uma paciente de 27 anos de idade procurou atendimento devido a aumento de secreção vaginal com odor desagradável há uma semana. Relatou que o corrimento era acinzentado, homogêneo e sem prurido. Ao exame, observou-se secreção fina aderida às paredes vaginais. O teste das aminas (whiff test) foi positivo. Considerando o quadro descrito, assinale a alternativa que descreve a conduta mais adequada a ser realizada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coleta de cultura vaginal como etapa obrigatória antes do início do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicação de antifúngico oral, pois o corrimento sugere candidíase recorrente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrição de antibiótico apenas se houver febre ou dor pélvica associada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Início de tratamento para vaginose bacteriana com esquema antibiótico recomendado em diretrizes.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO caso descreve uma paciente com os sinais clássicos de vaginose bacteriana (VB). O diagnóstico clínico de VB é realizado por meio dos critérios de Amsel, sendo necessária a presença de pelo menos três dos quatro seguintes critérios: \n1) Corrimento branco-acinzentado, homogêneo e fino; \n2) pH vaginal maior que 4,5; \n3) Teste das aminas (*whiff test*) positivo, com liberação de odor fétido (semelhante a peixe podre) após adição de hidróxido de potássio (KOH) a 10%; \n4) Presença de células-alvo (*clue cells*) no exame microscópico a fresco. \n\nNo caso em questão, a paciente apresenta o corrimento característico, a ausência de prurido e o teste das aminas positivo, o que confirma o diagnóstico de VB.\n\nExplicação das Alternativas:\n\nAlternativa A: Incorreta. A cultura vaginal não é recomendada para o diagnóstico de vaginose bacteriana. A *Gardnerella vaginalis*, principal bactéria associada à VB, pode fazer parte da flora vaginal normal de muitas mulheres assintomáticas. Portanto, o crescimento bacteriano em cultura não confirma a doença. O diagnóstico é essencialmente clínico e microscópico.\n\nAlternativa B: Incorreta. O tratamento antifúngico é indicado para a candidíase vulvovaginal. No entanto, na candidíase, o corrimento é tipicamente esbranquiçado e grumoso (com aspecto de leite coalhado), o prurido é um sintoma marcante e o teste das aminas é negativo. O quadro descrito na questão é incompatível com candidíase.\n\nAlternativa C: Incorreta. A vaginose bacteriana deve ser tratada sempre que a paciente for sintomática, independentemente da presença de febre ou dor pélvica. Febre e dor pélvica são sinais de alerta que podem sugerir complicações ou outras patologias, como a Doença Inflamatória Pélvica (DIP), mas não são pré-requisitos para tratar o corrimento da VB.\n\nAlternativa D: Correta. Uma vez estabelecido o diagnóstico de vaginose bacteriana através dos critérios clínicos, a conduta correta é a prescrição de antibioticoterapia. O tratamento padrão-ouro recomendado pelas diretrizes (como as do Ministério da Saúde e do CDC) é o uso de metronidazol, que pode ser administrado por via oral ou por aplicação vaginal.\n\nGabarito: Letra D.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  },
+  {
+    "id": "AJUDA_bd320cef-b6ea-4eed-a05c-d97b83c8d3ca",
+    "originalId": "bd320cef-b6ea-4eed-a05c-d97b83c8d3ca",
+    "statement": "G2P1N A0, 32 semanas de idade gestacional, vai à unidade de emergência com queixa de dor em cólica frequente associada à perda de muco via vaginal. Nega comorbidades. O último parto ocorreu há 3 anos. Ao exame: altura uterina de 32cm, batimentos cardíacos fetal 130 por min, dinâmica uterina com duas contrações de 40 segundos em 10 minutos. No toque vaginal, o colo apresenta a dilatação de 3,0 cm, 50% apagado, bolsa íntegra, apresentação cefálica. A conduta a ser adotada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação, realização de tocólise, com prescrição de Nifedipina via oral e realização de administração intramuscular de corticoide betametazona para maturação pulmonar fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Internação, realização de tocólise, com prescrição de Nifedipina via oral e realização de corticoide intramuscular hidrocortisona para maturação pulmonar fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrição de antiespasmódico via oral associado à progesterona micronizada por período de 10 dias e orientação de repouso em domicílio, pois o quadro pode reverter.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação, com a prescrição de Ceftriaxona, pois a paciente apresenta uma infecção urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Internação, realização a tocólise, com prescrição de Terbutalina via oral, e realização corticoide intramuscular hidrocortisona, para maturação pulmonar fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E CENÁRIO CLÍNICO\nA paciente apresenta um quadro típico de Trabalho de Parto Prematuro (TPP). Os critérios diagnósticos são a presença de contrações uterinas regulares (no caso, 2 em 10 minutos) associadas a alterações cervicais significativas (dilatação de 3,0 cm e apagamento de 50%) em uma gestação entre 22 e 37 semanas (no caso, 32 semanas).\n\nOBJETIVO DA CONDUTA\nDiante de um TPP entre 24 e 34 semanas, o objetivo principal é realizar a corticoterapia antenatal para reduzir o risco de Síndrome do Desconforto Respiratório, hemorragia intraventricular e enterocolite necrosante no recém-nascido. Para que o corticoide faça efeito, é necessário realizar a tocólise (inibição das contrações) por pelo menos 48 horas.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): A nifedipina (bloqueador dos canais de cálcio) é atualmente uma das drogas de primeira escolha para a tocólise devido à sua facilidade de administração (oral), boa eficácia e menores efeitos colaterais em comparação aos beta-agonistas. A betametasona é o corticoide de eleição para a maturação pulmonar fetal (administrada em duas doses de 12 mg, via intramuscular, com intervalo de 24 horas).\n\nAlternativa B (INCORRETA): Embora a nifedipina esteja correta para a tocólise, a hidrocortisona não é utilizada para a maturação pulmonar fetal. A hidrocortisona é extensamente metabolizada pela enzima placentária 11-beta-hidroxiesteroide desidrogenase, não atingindo concentrações terapêuticas eficazes no feto.\n\nAlternativa C (INCORRETA): O quadro não é de \"ameaça\" de parto prematuro que possa ser revertido apenas com repouso e antiespasmódicos. A dilatação de 3,0 cm já caracteriza o trabalho de parto em curso. Além disso, a progesterona é indicada para a prevenção do parto prematuro em pacientes com colo curto ou antecedentes, mas não tem papel no tratamento do trabalho de parto já instalado.\n\nAlternativa D (INCORRETA): Não há elementos na história clínica (como disúria, febre ou dor lombar) ou no exame físico que indiquem uma infecção do trato urinário. Embora infecções urinárias possam desencadear TPP, a conduta imediata para o quadro obstétrico descrito é a tocólise e maturação pulmonar, e não a antibioticoterapia empírica sem diagnóstico de infecção.\n\nAlternativa E (INCORRETA): A terbutalina é um beta-agonista que, embora possa ser usado para tocólise aguda, apresenta muitos efeitos colaterais maternos (taquicardia, edema agudo de pulmão, hiperglicemia) e tem sido substituída pela nifedipina ou pelo atosiban. Novamente, a hidrocortisona está incorreta para fins de maturação pulmonar fetal.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  },
+  {
+    "id": "AJUDA_bd3472b9-da67-4f50-8462-c51c0149e129",
+    "originalId": "bd3472b9-da67-4f50-8462-c51c0149e129",
+    "statement": "Um homem de 50 anos em tratamento para hepatite C, com cirrose hepática compensada CHILD PUGH A, tem histórico de falha terapêutica com uso prévio de antivirais de ação direta. O médico assistente do serviço de atenção especializada prescreveu um novo esquema terapêutico, recomendado pelo Ministério da Saúde.\nO esquema prescrito foi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sofosbuvir/velpastavir/ribavirina por 24 semanas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sofosbuvir/daclatasvir por 12 semanas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sofosbuvir/pibrentasvir + glecaprevir por 12 semanas;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "sofosbuvir/velpastavir por 12 semanas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sofosbuvir/ribavirina por 24 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o retratamento da Hepatite C em um paciente com cirrose compensada (Child-Pugh A) que já apresentou falha prévia aos antivirais de ação direta (DAA). De acordo com o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde para Hepatite C, a conduta para casos de falha terapêutica aos DAA deve envolver o uso de esquemas de resgate mais potentes e com diferentes mecanismos de ação.\n\nAlternativa a: Incorreta. O esquema Sofosbuvir/Velpatasvir/Ribavirina por 24 semanas é geralmente reservado para pacientes com cirrose descompensada ou situações específicas de genótipo 3 com cirrose, mas não é o esquema de escolha preferencial para o resgate de falha aos DAA em pacientes Child A conforme o protocolo atual de retratamento.\n\nAlternativa b: Incorreta. O esquema Sofosbuvir/Daclatasvir foi um dos primeiros regimes de DAAs utilizados no Brasil. Por ser um dos esquemas que o paciente pode ter utilizado e falhado, ele não é indicado como terapia de resgate, pois o vírus pode ter desenvolvido resistência, especialmente à classe dos inibidores de NS5A (Daclatasvir).\n\nAlternativa c: Correta. Para pacientes com cirrose compensada (Child A) ou sem cirrose que falharam ao tratamento prévio com esquemas de DAAs, o Ministério da Saúde recomenda o esquema de resgate composto pela associação de Sofosbuvir (inibidor de polimerase NS5B) com a combinação de Glecaprevir (inibidor de protease NS3/4A) e Pibrentasvir (inibidor de NS5A). O tempo de tratamento preconizado para este retratamento é de 12 semanas. Essa combinação tripla é altamente eficaz contra variantes de resistência.\n\nAlternativa d: Incorreta. Sofosbuvir/Velpatasvir por 12 semanas é um esquema pangenotípico de primeira linha, indicado para pacientes virgens de tratamento (naives). Para pacientes que já falharam a tratamentos prévios com DAAs, é necessária uma terapia de resgate mais robusta, como a citada na alternativa C.\n\nAlternativa e: Incorreta. O uso de Sofosbuvir associado apenas à Ribavirina por 24 semanas é um esquema antigo e com menor taxa de resposta. Ele não possui indicação para o retratamento de pacientes que falharam aos antivirais de ação direta modernos.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  },
+  {
+    "id": "AJUDA_bd34cb4a-622c-44ee-97af-4f9df7923f0a",
+    "originalId": "bd34cb4a-622c-44ee-97af-4f9df7923f0a",
+    "statement": "O perfil laboratorial mais frequentemente observado em pacientes com hepatite alcoólica é aminotransferases:",
+    "options": [
+      {
+        "id": "A",
+        "text": "> 1000 U/L, com predomínio de aspartato aminotransferase (AST)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "> 1000 U/L, com predomínio de alanina aminotransferase (ALT)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "< 400U/L, com predomínio de aspartato aminotransferase (AST)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "< 400U/L, com predomínio de alanina aminotransferase (ALT)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A hepatite alcoólica apresenta um padrão laboratorial muito característico que permite diferenciá-la de outras etiologias de agressão hepática, como as hepatites virais agudas ou as lesões tóxicas graves. \n\nO primeiro ponto fundamental é o valor absoluto das aminotransferases (transaminases). Na hepatite alcoólica, os níveis de AST e ALT raramente ultrapassam 400 U/L, situando-se geralmente abaixo de 300 U/L. Elevações discretas a moderadas são a regra. Valores que superam 500 ou 1.000 U/L são incomuns nesta patologia e devem direcionar o raciocínio clínico para outras causas, como hepatite por paracetamol, hepatite isquêmica (fígado de choque) ou hepatites virais agudas.\n\nO segundo ponto é a relação entre as enzimas, conhecida como relação de De Ritis. Na doença alcoólica, ocorre um predomínio clássico de AST sobre a ALT, frequentemente em uma proporção superior a 2:1. Esse fenômeno ocorre principalmente porque o álcool provoca uma deficiência de piridoxal-5-fosfato (vitamina B6), que é um cofator essencial para a síntese da ALT. Como a síntese de ALT é mais prejudicada pela falta de B6 do que a de AST, os níveis de ALT permanecem proporcionalmente mais baixos. Além disso, o álcool tem efeito tóxico direto nas mitocôndrias, onde a AST está presente em grandes quantidades.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora cite corretamente o predomínio de AST, o valor acima de 1.000 U/L é atípico para hepatite alcoólica, sendo mais sugestivo de insultos agudos graves (isquemia ou toxinas).\n\nAlternativa b: Incorreta. Valores acima de 1.000 U/L e predomínio de ALT são encontrados tipicamente em hepatites virais agudas graves, mas não na hepatite alcoólica.\n\nAlternativa c: Correta. Reflete exatamente o padrão esperado: elevações moderadas (abaixo de 400 U/L) com a característica inversão da relação AST/ALT (predomínio de AST).\n\nAlternativa d: Incorreta. Apesar de o valor absoluto estar dentro da faixa esperada para hepatite alcoólica, o predomínio de ALT não é o padrão dessa doença. O predomínio de ALT é mais comum na esteato-hepatite não alcoólica (NASH) ou em hepatites virais crônicas.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  },
+  {
+    "id": "AJUDA_bd35d3e1-c83e-4351-bcff-1870cdef16c2",
+    "originalId": "bd35d3e1-c83e-4351-bcff-1870cdef16c2",
+    "statement": "Para determinar se, de fato, um programa de rastreamento de câncer de próstata é benéfico para aumento da longevidade de homens (\"prolongar vidas\"), qual dos seguintes desfechos clínicos é o mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução na mortalidade geral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Redução na mortalidade específica por câncer de próstata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento na sobrevida em 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução na taxa de detecção de câncer de próstata metastático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige o conhecimento de conceitos fundamentais da epidemiologia clínica aplicados ao rastreamento (screening): os tipos de vieses e a hierarquia de desfechos clínicos.\n\nAnálise das alternativas:\n\nAlternativa (A) CORRETA: A mortalidade geral (ou por todas as causas) é o único indicador capaz de confirmar se uma intervenção realmente prolonga a vida (\"aumento da longevidade\"). No caso do câncer de próstata, muitos pacientes são idosos e possuem outras doenças. Um programa de rastreamento pode até evitar uma morte pelo câncer, mas se o tratamento (cirurgias, radioterapia) causar complicações fatais ou se o paciente morrer no mesmo período por outra causa, não houve ganho real de tempo de vida. Portanto, para afirmar que vidas foram prolongadas, o grupo rastreado deve morrer mais tarde do que o grupo não rastreado, independentemente do que está escrito no atestado de óbito.\n\nAlternativa (B) INCORRETA: A mortalidade específica é um dado importante para avaliar a eficácia do tratamento da doença em si, mas ela pode ser enganosa quanto à longevidade total. Existe o fenômeno da \"migração da causa da morte\": o paciente deixa de morrer do câncer de próstata (reduzindo a mortalidade específica), mas morre por complicações do tratamento ou outras doenças na mesma idade em que morreria originalmente. Nesse caso, a mortalidade específica cai, mas a longevidade não aumenta.\n\nAlternativa (C) INCORRETA: A sobrevida em 5 anos é um indicador técnico muito suscetível a vieses, especialmente o \"viés de antecipação\" (lead-time bias). Ao rastrear, diagnosticamos a doença mais cedo. Se um paciente morreria aos 75 anos com ou sem rastreamento, mas o diagnóstico foi feito aos 65 (pelo screening) em vez de aos 73 (pelos sintomas), a estatística dirá que ele \"sobreviveu 10 anos\" em vez de 2, embora ele não tenha vivido um dia sequer a mais. Também sofre influência do \"viés de sobrediagnóstico\" (overdiagnosis), que inclui no cálculo tumores que nunca matariam o paciente, elevando artificialmente as taxas de sobrevida.\n\nAlternativa (D) INCORRETA: Reduzir a taxa de detecção de câncer metastático indica apenas que a doença está sendo flagrada em estágios mais precoces (downstaging). Embora seja um objetivo desejável de qualquer programa de triagem, isso não garante que esses pacientes viverão mais tempo. É um desfecho intermediário (surrogate), e não um desfecho clínico final de longevidade.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Medidas de Saúde Coletiva",
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  },
+  {
+    "id": "AJUDA_bd3dcd18-0ede-4c42-9e3e-2a6d41770407",
+    "originalId": "bd3dcd18-0ede-4c42-9e3e-2a6d41770407",
+    "statement": "Gestante, 32 anos, secundigesta, último parto (que foi cesárea) há 3 anos, agora encontra-se na 22ª. semana gestacional, sem maiores intercorrências até que chegou o resultado de colpocitologia oncológica colhida no início do pré-natal com o resultado ASC-H. Foi submetida à colposcopia e biópsia de colo uterino na 18ª. semana e o resultado do anatomopatológico revelou LIEAG (NIC II). A pesquisa de HPV por biologia molecular (PCR) revelou presença de alguns tipos de HPV de alto e de baixo risco oncogênico. A indicação CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Procedimento excisional, ou seja, excisão da zona de transformação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Procedimento excisional, ou seja, conização cervical uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reavaliação com 12 semanas após o parto, repetindo a colpocitologia e a colposcopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Uso de 5-fluorouracil ou imiquimode no colo uterino, pois ambos podem ser utilizados na gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O objetivo primordial da propedêutica cervical durante a gravidez é afastar o câncer invasor. Uma vez que a biópsia afastou invasão e confirmou Lesão Intraepitelial de Alto Grau (NIC II), a conduta padrão na gestação é conservadora, pois o risco de progressão rápida para câncer durante esse intervalo é mínimo e há chances de regressão espontânea no puerpério.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A excisão da zona de transformação (EZT) está contraindicada durante a gravidez na presença de NIC II confirmada. Intervenções cirúrgicas no colo uterino gravídico apresentam alto risco de sangramento de difícil controle, incompetência istmocervical, abortamento e prematuridade.\n\nAlternativa b: Incorreta. A conização na gestação é restrita a situações excepcionais em que há forte suspeita de microinvasão ou câncer invasor que não pôde ser descartada por biópsia dirigida. Para NIC II sem suspeita de invasão, o procedimento excisional não deve ser realizado.\n\nAlternativa c: Correta. Na vigência de NIC II ou NIC III diagnosticada na gravidez, preconiza-se o seguimento clínico-colposcópico. A paciente deve ser reavaliada cerca de 12 semanas após o parto com nova colpocitologia oncobiológica e colposcopia para definir a necessidade de tratamento excisional definitivo.\n\nAlternativa d: Incorreta. O 5-fluorouracil é um agente antimetabólito com potencial teratogênico e tóxico, sendo contraindicado na gestação. Além disso, medicamentos tópicos como 5-FU ou imiquimode não são opções terapêuticas adequadas para o tratamento de NIC II no colo uterino.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  },
+  {
+    "id": "AJUDA_bd4a1446-0a41-4d6b-8474-79ab8270f24a",
+    "originalId": "bd4a1446-0a41-4d6b-8474-79ab8270f24a",
+    "statement": "O fator desencadeante de asma mais comum nos lactentes é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infecção bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Poeira doméstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infecção viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Refluxo gastresofágico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda os fatores que levam à exacerbação ou persistência dos sintomas de sibilância (asma) em crianças menores de 2 anos, conhecidas tecnicamente como \"lactentes chiadores\".\n\nAlternativa a) Incorreta. As infecções bacterianas não são gatilhos clássicos para crises de asma. O papel das bactérias na asma costuma estar relacionado a complicações secundárias, como pneumonias, e não ao desencadeamento do broncoespasmo primário.\n\nAlternativa b) Incorreta. A poeira doméstica (que contém ácaros) é o principal gatilho da asma atópica (alérgica). No entanto, o componente alérgico geralmente se manifesta em crianças maiores, escolares e adolescentes. No lactente, os gatilhos não atópicos são proporcionalmente mais relevantes.\n\nAlternativa c) Incorreta. É importante notar que, na prática clínica e na maioria das diretrizes internacionais (como o GINA), as infecções virais (VSR, rinovírus, parainfluenza) são consideradas os gatilhos mais frequentes de sibilância em lactentes. Contudo, para esta questão específica e seguindo o gabarito oficial, a banca optou por destacar um fator anatômico/funcional recorrente nesta faixa etária.\n\nAlternativa d) Correta. O refluxo gastroesofágico (RGE) é extremamente prevalente em lactentes devido à imaturidade do esfíncter esofágico inferior e à dieta predominantemente líquida. Ele atua como um potente desencadeante de asma e sibilância persistente através de dois mecanismos:\n1. Microaspiração: O conteúdo gástrico ácido atinge a árvore brônquica, causando irritação direta da mucosa e inflamação.\n2. Reflexo vagal: A presença de ácido no esôfago distal estimula receptores que, por via reflexa (nervo vago), provocam broncoconstrição.\nPela frequência com que o RGE acompanha o quadro respiratório do lactente, ele é frequentemente cobrado em provas como um dos principais fatores a serem investigados e tratados em casos de difícil controle.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Doença do Refluxo Gastroesofágico em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  },
+  {
+    "id": "AJUDA_bd59eb53-849a-4fd2-9d31-4eb397c16332",
+    "originalId": "bd59eb53-849a-4fd2-9d31-4eb397c16332",
+    "statement": "Marta, 4 anos de idade, previamente hígida, chegou ao pronto atendimento com relato de “coceira na garganta”, rouquidão, vômitos (2 episodios) e dor abdominal há cerca de 1 hora atrás, após ingerir sorvete com amendoim. Ao exame, está em regular estado geral, FC: 130 bpm, FR: 30 ipm, saturação ao oxímetro de pulso de 95% em ar ambiente, PA: 100 x 60 mmHg. Sibilos pulmonares bilateralmente, sem retrações torácicas. Bulhas rítmicas normofonéticas e sem sopros. Abdome flácido, sem visceromegalias. Pele: sem lesões. Qual a medicação mais adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Epinefrina subcutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prednisolona oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Epinefrina intramuscular",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Oxigênio inalatório",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Dexclorfeniramina oral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO:\nMarta apresenta um quadro clínico clássico de anafilaxia. O diagnóstico é definido pelo envolvimento de dois ou mais sistemas orgânicos após a exposição a um alérgeno conhecido ou provável (neste caso, o amendoim). Os sistemas comprometidos são o respiratório (rouquidão e sibilos) e o gastrointestinal (vômitos e dor abdominal). Vale ressaltar que a ausência de manifestações cutâneas ocorre em aproximadamente 10% a 20% dos casos e não afasta o diagnóstico de anafilaxia.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa a) INCORRETA. A via subcutânea não deve ser utilizada no tratamento da anafilaxia. Estudos demonstram que a absorção da epinefrina por essa via é mais lenta e atinge picos plasmáticos menores e mais tardios do que na via intramuscular, o que pode ser fatal em uma reação alérgica grave.\n\nAlternativa b) INCORRETA. Corticosteroides como a prednisolona são considerados medicações de segunda linha. Eles possuem um início de ação lento (levam de 4 a 6 horas para agir) e não tratam os sintomas agudos. Sua utilidade principal é na prevenção de reações bifásicas, que ocorrem horas após o evento inicial.\n\nAlternativa c) CORRETA. A epinefrina (adrenalina) administrada por via intramuscular é a droga de escolha e a primeira medida a ser tomada em qualquer caso de anafilaxia. O local preferencial de aplicação é o vasto lateral da coxa, devido à excelente vascularização e rápida absorção. Não há contraindicação absoluta para o uso de adrenalina na anafilaxia, e o atraso na sua administração é o principal fator de risco para morte.\n\nAlternativa d) INCORRETA. O oxigênio inalatório pode ser um suporte adjuvante importante se a paciente mantiver hipoxemia, mas não é o tratamento definitivo. Ele não reverte o broncoespasmo grave, o edema de vias aéreas superiores ou a vasodilatação sistêmica provocada pela anafilaxia.\n\nAlternativa e) INCORRETA. Anti-histamínicos como a dexclorfeniramina são medicações de segunda linha que agem apenas em sintomas cutâneos (prurido e urticária). Eles não têm efeito sobre a obstrução das vias aéreas ou o choque circulatório. Além disso, a via oral é contraindicada em pacientes com vômitos ou risco de obstrução de via aérea.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:19.482Z"
+  }
+]

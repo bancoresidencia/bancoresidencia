@@ -1,0 +1,489 @@
+[
+  {
+    "id": "AJUDA_662b9814-e41f-4b03-bcf4-bd1fb6d6e084",
+    "originalId": "662b9814-e41f-4b03-bcf4-bd1fb6d6e084",
+    "statement": "Paciente masculino, com derrame pleural à direita, foi submetido a punção pleural. A análise mostrou líquido amarelo citrino, com predominância de linfócitos (90%) e ausência de células mesoteliais, pH de 7,35, glicose de 75 mg/dl, proteína total pleural de 4,6 g/dl (sérica de 6,0 g/dl), desidrogenase láctica pleural de 180 U/l (sérica de 200 U/l; limite superior da normalidade de 220 U/l) e adenosina deaminase (ADA) de 60 U/l. Com base nos resultados, pode-se afirmar que o diagnóstico mais provável é derrame pleural",
+    "options": [
+      {
+        "id": "A",
+        "text": "parapneumônico por bactéria típica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "secundário a hepatopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "secundário a insuficiência renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tuberculoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é classificar o derrame pleural como transudato ou exsudato utilizando os Critérios de Light. O líquido em questão é um EXSUDATO, pois apresenta:\n1. Relação entre proteína pleural e sérica de 0,76 (4,6 dividido por 6,0), que é superior a 0,5.\n2. Relação entre LDH pleural e sérico de 0,9 (180 dividido por 200), que é superior a 0,6.\n\nUma vez definido que se trata de um exsudato, devemos analisar a citologia e a bioquímica específica:\n- A predominância de linfócitos (90%) direciona o raciocínio para causas crônicas ou inflamatórias específicas, como tuberculose, neoplasias ou doenças do colágeno.\n- A ausência de células mesoteliais é um dado clássico da pleurite tuberculosa, pois a intensa reação inflamatória e a formação de granulomas na pleura impedem que essas células se desprendam para o líquido.\n- O valor da adenosina deaminase (ADA) de 60 U/L é o achado mais determinante. Em um contexto de exsudato linfocítico, um valor de ADA acima de 40 U/L possui altíssima sensibilidade e especificidade para o diagnóstico de tuberculose pleural.\n\nAnálise das alternativas:\n\nAlternativa A: INCORRETA. O derrame parapneumônico por bactéria típica é um exsudato, porém apresenta predomínio de polimorfonucleares (neutrófilos), e não linfócitos. Além disso, o ADA costuma estar baixo e, em casos complicados, a glicose estaria reduzida e o pH abaixo de 7,20.\n\nAlternativa B: INCORRETA. Derrames pleurais secundários a hepatopatias (como o hidrotórax hepático na cirrose) são tipicamente transudatos, apresentando níveis baixos de proteínas e LDH, o que contradiz os dados apresentados.\n\nAlternativa C: INCORRETA. Assim como na hepatopatia, o derrame pleural na insuficiência renal (geralmente por sobrecarga volêmica ou síndrome nefrótica) é classificado como transudato. A exceção seria a pleurite urêmica, mas esta apresentaria outras características clínicas e não costuma cursar com ADA tão elevado.\n\nAlternativa D: CORRETA. O quadro de exsudato linfocítico com ADA elevado (maior que 40 U/L) e baixa quantidade de células mesoteliais compõe o perfil típico do derrame pleural tuberculoso, sendo suficiente para o diagnóstico em locais com alta prevalência da doença.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Derrame Pleural",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  },
+  {
+    "id": "AJUDA_6647fdef-30cc-4aba-9908-0c041d72b960",
+    "originalId": "6647fdef-30cc-4aba-9908-0c041d72b960",
+    "statement": "Relacione a Coluna 1 à Coluna 2, associando cada medicamento ao nutriente com níveis adversamente alterados quando do seu uso.\n\nColuna 1\n1. Colestiramina.\n2. Omeprazol.\n3. Isoniazida.\n4. Penicilamina.\n\nColuna 2\n( ) Zinco.\n( ) Vitamina B12.\n( ) Vitamina D.\n( ) Piridoxina.\n\nA ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 – 2 – 3 – 4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2 – 4 – 1 – 3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "4 – 1 – 3 – 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4 – 2 – 1 – 3.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver a questão, é necessário correlacionar o mecanismo de ação dos medicamentos com o impacto farmacológico na absorção e metabolismo dos micronutrientes:\n\n1. Zinco - Penicilamina (4): A penicilamina é um agente quelante de metais utilizado principalmente na doença de Wilson e na cistinúria. Embora seu alvo principal seja o cobre, ela também quela outros metais bivalentes, como o zinco, promovendo sua excreção e podendo causar deficiência.\n\n2. Vitamina B12 - Omeprazol (2): O omeprazol é um inibidor da bomba de prótons (IBP) que suprime a secreção ácida gástrica. O meio ácido é essencial para liberar a vitamina B12 das proteínas da dieta antes de sua ligação ao fator intrínseco. O uso crônico de IBPs leva à má absorção e queda dos níveis de cobalamina.\n\n3. Vitamina D - Colestiramina (1): A colestiramina é uma resina de troca iônica que sequestra ácidos biliares no intestino para reduzir os níveis de colesterol. Ao diminuir o pool de sais biliares, prejudica a formação de micelas e reduz a absorção de lipídios e vitaminas lipossolúveis (A, D, E e K).\n\n4. Piridoxina (Vitamina B6) - Isoniazida (3): A isoniazida, usada no tratamento da tuberculose, atua como antagonista funcional da piridoxina. O fármaco inibe a enzima piridoxal-cinase e forma complexos inativos com a vitamina B6, aumentando sua excreção renal e podendo causar neuropatia periférica caso não haja suplementação concomitante.\n\nA sequência correta de cima para baixo é 4 – 2 – 1 – 3.\n\nAnálise das alternativas:\n\na) Incorreta. Traz uma ordem sequencial errônea, associando a colestiramina ao zinco e a penicilamina à piridoxina, desconsiderando a ação quelante e os efeitos sobre lipossolúveis.\n\nb) Incorreta. Associa o omeprazol ao zinco e a penicilamina à B12, ignorando a dependência do ácido gástrico para a absorção da B12.\n\nc) Incorreta. Inicia corretamente com a penicilamina no zinco, mas inverte as associações seguintes ao relacionar colestiramina à B12 e omeprazol à piridoxina.\n\nd) Correta. Estabelece a correlação precisa entre todos os fármacos e seus respectivos nutrientes: penicilamina com zinco, omeprazol com vitamina B12, colestiramina com vitamina D e isoniazida com piridoxina.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  },
+  {
+    "id": "AJUDA_6649c117-6aab-40e9-9c25-8ddac7b064a1",
+    "originalId": "6649c117-6aab-40e9-9c25-8ddac7b064a1",
+    "statement": "Menina, de 2 anos e 4 meses, é levada pela avó à Unidade Básica de Saúde (UBS) com relato de que a criança “não fala quase nada”. A avó relata que a criança fala frases quando quer, mas tem demonstrado o costume de apontar para pedir coisas e puxar a mão do adulto quando quer algo. Não frequenta creche. Não há história de regressão de linguagem (ela nunca perdeu palavras que já falava), crises convulsivas, nem alterações motoras. Ao exame clínico, encontra-se em bom estado geral, com contato visual presente, atendendo a comandos simples (“pega o sapato”, “dá tchau”), sem outras alterações neurológicas. Qual é o próximo passo adequado na investigação dessa paciente?\n\nA criança retorna à UBS para seguimento. Após a consulta médica, ela iniciou o tratamento recomendado anteriormente. Na consulta atual, a mãe relata que a criança já forma frases curtas, pede ajuda com palavras e participa mais ativamente das interações. Assinale a alternativa que contenha o princípio do Sistema Único de Saúde predominante neste caso e a sua definição correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Universalidade: transferência para níveis de maior complexidade, independentemente da avaliação clínica inicial e das possibilidades de intervenção no território.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Universalidade: priorização do caso, garantindo acesso preferencial aos serviços especializados e outros equipamentos do território.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Integralidade: garantia de acesso a todas as ações e serviços de saúde, sem qualquer tipo de discriminação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ntegralidade: organização do cuidado de modo articulado e multiprofissional, reconhecendo as dimensões biológica, emocional, familiar e social.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nO caso apresenta uma criança com atraso de linguagem em acompanhamento na Atenção Primária. O fato de ela ter apresentado melhora significativa após a intervenção da equipe da Unidade Básica de Saúde (UBS) demonstra que o cuidado foi direcionado às suas necessidades específicas, integrando diversos aspectos do seu desenvolvimento e ambiente.\n\nAlternativa a) Incorreta. A universalidade é o princípio que garante que todo e qualquer cidadão tem direito ao acesso às ações e serviços de saúde pública. A definição apresentada na alternativa está errada ao sugerir que a transferência para a alta complexidade deve ocorrer independentemente da avaliação clínica; o fluxo de pacientes deve respeitar a hierarquização e a real necessidade clínica.\n\nAlternativa b) Incorreta. Novamente, o conceito de universalidade diz respeito ao acesso para todos. A ideia de priorização de casos e garantia de acesso preferencial por gravidade ou necessidade está mais relacionada ao princípio da Equidade (tratar desigualmente os desiguais para promover a justiça social).\n\nAlternativa c) Incorreta. Embora a garantia de acesso sem discriminação seja um valor fundamental do SUS, essa definição é um dos pilares da Universalidade. A Integralidade vai além do simples acesso; ela foca na qualidade e na abrangência do cuidado oferecido ao indivíduo ao longo do tempo.\n\nAlternativa d) Correta. A Integralidade é o princípio que orienta o profissional de saúde a enxergar o paciente como um todo, não apenas como um conjunto de sintomas ou uma doença isolada. No caso desta criança, para tratar o atraso de fala, foi necessário considerar o contexto biológico, o ambiente familiar (como o fato de não frequentar creche), as interações sociais e o suporte multiprofissional. A definição de organizar o cuidado de forma articulada e reconhecer as dimensões biopsicossociais é a definição clássica de Integralidade.\n\nGabarito: Letra d.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  },
+  {
+    "id": "AJUDA_664fb37a-dc4b-44d5-8b6b-dc6250fb5529",
+    "originalId": "664fb37a-dc4b-44d5-8b6b-dc6250fb5529",
+    "statement": "Paciente de 45 anos realiza mamografia, e o laudo descreve “mama acentuadamente densa, segundo classificação BI-RADS™”. Considerando esse achado, qual é a principal implicação para a interpretação do exame?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução da sensibilidade mamográfica, aumentando o risco de falso-negativos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aumento da especificidade, facilitando o diagnóstico de lesões malignas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Melhora da acurácia global da mamografia em relação a mamas adiposas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nenhuma repercussão clínica, sendo apenas uma descrição morfológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A classificação BI-RADS para composição mamária categoriza as mamas em quatro grupos, de A a D, conforme a proporção de tecido fibroglandular. Uma mama acentuadamente densa (Categoria D) é composta majoritariamente por tecido glandular e conjuntivo, com pouca gordura. O grande desafio diagnóstico reside no fato de que, na mamografia, o tecido denso apresenta-se branco (radiopaco), assim como a maioria dos carcinomas e nódulos mamários.\n\nAlternativa a) Correta. Este é o chamado efeito de mascaramento. Como o tumor e o tecido denso possuem a mesma densidade radiológica (ambos ficam brancos na imagem), uma lesão pode estar presente mas não ser visível por estar escondida pelo parênquima adjacente. Isso diminui a sensibilidade do método, ou seja, a capacidade de detectar a doença quando ela existe, aumentando o risco de exames falso-negativos.\n\nAlternativa b) Incorreta. A especificidade não aumenta com a densidade. Na verdade, a densidade dificulta a análise detalhada das margens e contornos de eventuais achados, o que prejudica a precisão diagnóstica e frequentemente exige manobras adicionais ou outros exames.\n\nAlternativa c) Incorreta. A acurácia global é muito maior em mamas adiposas (Categoria A). Nas mamas gordurosas, o fundo da imagem é escuro (radiolucente), o que gera um contraste nítido com qualquer lesão branca, facilitando a identificação de nódulos mesmo que muito pequenos.\n\nAlternativa d) Incorreta. A densidade mamária é um dado de extrema relevância clínica. Além de limitar a mamografia, a alta densidade é considerada um fator de risco independente para o câncer de mama. Por esses motivos, em pacientes com mamas densas, o médico frequentemente solicita exames complementares, como a ultrassonografia, para compensar a menor sensibilidade da mamografia.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  },
+  {
+    "id": "AJUDA_6650afba-8c91-44b3-a3f6-4a3ab6520bd9",
+    "originalId": "6650afba-8c91-44b3-a3f6-4a3ab6520bd9",
+    "statement": "Paciente de 54 anos de idade do sexo masculino procurou Unidade de Atenção Básica para acompanhamento ambulatorial de seu quadro de Hipertensão Arterial Sistêmica diagnosticado há 4 anos. O paciente questionou se a utilização de certas substâncias e medicamentos poderiam exercer algum efeito deletério sobre o seu tratamento e controle pressórico. Relatou que recentemente teve quadro de síndrome gripal e foi medicado com solução salina hipertônica nasal, descongestionante oral e anti inflamatório não esteroidal via oral. Além disso, apreciava tomar todo dia uma dose de aguardente e 4 xícaras de café. O médico assistente solicitou a Monitoração Residencial da Pressão Arterial para o tratamento e o paciente pediu informações sobre a forma correta de realizá-la.\n\nA orientação ao paciente, baseando-se nas Diretrizes Brasileiras de Medidas da Pressão Arterial Dentro e Fora do Consultório de 2023, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "utilizar sempre o mesmo braço para realizar as medidas durante todo o exame. O braço escolhido será o de menor pressão arterial no consultório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sentar e relaxar antes da aferição, por pelo menos 3 minutos, idealmente 5 minutos, e não falar durante as medições.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "colocar o braço estendido ao longo do corpo com a palma da mão para cima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "evitar o consumo de cafeína ou praticar exercícios 30 minutos após as medições.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "salientar que, na maioria das pessoas, a PA fora do consultório é mais alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as recomendações da Diretriz Brasileira de Medidas da Pressão Arterial Dentro e Fora do Consultório (2023) sobre a realização da Monitorização Residencial da Pressão Arterial (MRPA). O objetivo é garantir que as medidas reflitam a pressão arterial real do paciente, minimizando interferências externas.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A orientação correta é realizar as medidas no braço que apresentou os maiores valores de pressão arterial durante a avaliação inicial no consultório (braço com maior valor de pressão). Caso não haja diferença significativa entre os braços, utiliza-se preferencialmente o braço não dominante para maior conforto do paciente.\n\nAlternativa B: Correta. Esta é uma recomendação fundamental para a estabilização hemodinâmica antes da aferição. O paciente deve estar em ambiente calmo, sentado, com as costas apoiadas e os pés no chão, permanecendo em repouso por um período de 3 a 5 minutos antes da primeira medida. Além disso, não deve falar durante o procedimento, pois o ato de falar pode elevar os níveis pressóricos.\n\nAlternativa C: Incorreta. O braço não deve ficar estendido ao longo do corpo. A recomendação correta é que o braço esteja apoiado sobre uma superfície firme (como uma mesa), posicionado na altura do coração (nível do ponto médio do esterno), com a palma da mão voltada para cima e o cotovelo ligeiramente fletido. Braços pendentes ou sem apoio podem superestimar os valores da pressão devido à gravidade e à contração muscular isométrica.\n\nAlternativa D: Incorreta. A recomendação de evitar o consumo de cafeína, o fumo ou a prática de exercícios físicos refere-se ao período de 30 a 60 minutos ANTES da realização das medidas, e não após. Tais substâncias e atividades estimulam o sistema nervoso simpático, podendo elevar transitoriamente a pressão arterial e mascarar o resultado real do exame.\n\nAlternativa E: Incorreta. Na grande maioria dos indivíduos, ocorre o fenômeno do alerta ou o \"efeito do avental branco\", o que faz com que a pressão arterial medida dentro do consultório seja, em média, mais alta do que a pressão medida fora dele (MRPA ou MAPA). Inclusive, os valores de referência para diagnóstico de hipertensão na MRPA são menores (maiores ou iguais a 130/80 mmHg) do que no consultório (maiores ou iguais a 140/90 mmHg).",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Hipertensão Arterial Sistêmica",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  },
+  {
+    "id": "AJUDA_66562a3f-ac58-47ca-9bc4-f5dd63fc650b",
+    "originalId": "66562a3f-ac58-47ca-9bc4-f5dd63fc650b",
+    "statement": "Mulher, 32 anos, vem ao ambulatório com tubo T devido estenose traqueal. Refere que está com esta órtese há 7 meses. Durante investigação complementar é realizada uma broncoscopia que evidencia estenose fixa, compreendendo 1º e 2º anéis traqueais sem processo inflamatório local. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar a troca do tubo T.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Programar traqueoplastia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Corticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cânula metálica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma paciente jovem com estenose traqueal cervical alta (envolvendo o 1º e 2º anéis). O dado fundamental para a decisão terapêutica é o achado da broncoscopia: a estenose é fixa (cicatricial) e não apresenta processo inflamatório local. Isso sinaliza que a lesão está madura e o tecido está estável, o que é o cenário ideal para a intervenção cirúrgica definitiva.\n\nAlternativa (a) Incorreta: A troca do tubo T (tubo de Montgomery) é uma medida de manutenção paliativa ou temporária. O tubo T serve para moldar a via aérea e garantir a patência enquanto se aguarda a estabilização do processo inflamatório. Como a paciente já utiliza a órtese há 7 meses e a estenose já está madura e sem inflamação, manter apenas a troca da prótese seria postergar desnecessariamente o tratamento curativo em uma paciente jovem e com boas condições locais.\n\nAlternativa (b) Correta: A traqueoplastia (que pode envolver a ressecção do segmento estenosado e a anastomose término-terminal) é o tratamento de escolha para estenoses traqueais focais e maduras. A ausência de inflamação ativa é o critério técnico mais importante para programar a cirurgia, pois reduz o risco de deiscência da anastomose e de formação de novas granulações ou reestenose no pós-operatório.\n\nAlternativa (c) Incorreta: A corticoterapia é indicada na fase aguda da lesão traqueal, quando há edema importante ou formação excessiva de tecido de granulação inflamatório, na tentativa de modular a cicatrização. Uma estenose \"fixa\" e \"sem processo inflamatório\" representa uma fibrose já consolidada, na qual os corticoides não possuem efeito terapêutico para reverter o estreitamento.\n\nAlternativa (d) Incorreta: A cânula metálica é um dispositivo utilizado em traqueostomias de longa permanência ou definitivas. Ela não trata a estenose, apenas mantém uma via aérea abaixo do nível da obstrução, sendo geralmente reservada para pacientes que não possuem condições clínicas para cirurgia reconstrutora ou em casos de estenoses inoperáveis, o que não é o caso de uma paciente de 32 anos com estenose focal de anéis superiores.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  },
+  {
+    "id": "AJUDA_6661ff7d-6087-4283-9629-05b3987ba65d",
+    "originalId": "6661ff7d-6087-4283-9629-05b3987ba65d",
+    "statement": "Gestante de 20 anos, primigesta, é atendida em consulta pré-natal com 35 semanas, assintomática, apresentando PA = 150x90mmHg. Exames laboratoriais de rotina realizados na véspera indicam hematócrito = 36%, hemoglobina = 10,7g/dL, plaquetometria = 148.000, transaminase glutâmico oxalacética (TGO) = 12, transaminase glutâmico pirúvica (TGP) = 14, lactato desidrogenase (LDH) = 234, bilirrubina total = 0,5, creatinina = 0,8 e proteinúria de 24 horas = 600mg. USG realizada no mesmo dia indica feto único, cefálico, normodramnia, peso estimado de 2.800g, placenta corporal posterior grau III, biometria de 34/35 semanas e dopplerfluxometria com relação umbílico-cerebral menor que 1,0. O diagnóstico provável para esse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "eclâmpsia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pré-eclâmpsia sobreposta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pré-eclâmpsia com sinais de gravidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pré-eclâmpsia sem sinais de gravidade",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para diagnosticar e classificar o quadro clínico da paciente, devemos analisar os critérios de hipertensão na gestação e os sinais de gravidade associados.\n\nAnálise dos dados clínicos:\nA paciente apresenta idade gestacional de 35 semanas, com níveis pressóricos de 150x90 mmHg (hipertensão definida como PA maior ou igual a 140x90 mmHg) e proteinúria de 24 horas de 600 mg (proteinúria definida como maior ou igual a 300 mg). Esse binômio confirma o diagnóstico de pré-eclâmpsia.\n\nClassificação da gravidade:\nPara ser considerada pré-eclâmpsia com sinais de gravidade, a paciente deveria apresentar pelo menos um dos seguintes critérios:\n1. Pressão arterial sistólica maior ou igual a 160 mmHg ou diastólica maior ou igual a 110 mmHg.\n2. Sinais de iminência de eclâmpsia (cefaleia, escotomas visuais, dor epigástrica ou em hipocôndrio direito).\n3. Alterações laboratoriais significativas: Plaquetas menores que 100.000, creatinina maior que 1,1 mg/dL, transaminases (TGO/TGP) com o dobro do valor de referência ou LDH elevado (sugerindo hemólise).\n4. Edema agudo de pulmão.\n5. Restrição de crescimento fetal grave ou oligoamniose acentuada.\n\nNo caso apresentado:\n- A PA é 150x90 mmHg (abaixo de 160x110).\n- A paciente é assintomática.\n- Os exames laboratoriais estão normais: Plaquetas (148.000), TGO (12), TGP (14), Creatinina (0,8) e LDH (234).\n- O feto apresenta peso adequado para a idade gestacional (2.800g) e líquido amniótico normal (normodramnia). Embora o Doppler indique centralização (relação umbílico-cerebral menor que 1,0), na ausência de níveis pressóricos graves ou deterioração laboratorial materna, a classificação clássica das provas de residência foca na estabilidade materna para definir a ausência de gravidade clínica imediata.\n\nAnálise das alternativas:\n\na) Incorreta. A eclâmpsia é definida pela ocorrência de convulsões tônico-clônicas generalizadas em uma paciente com pré-eclâmpsia, o que não ocorre neste caso, já que a gestante é assintomática.\n\nb) Incorreta. A pré-eclâmpsia sobreposta ocorre em mulheres que já possuem hipertensão arterial crônica (diagnosticada antes da gravidez ou antes de 20 semanas de gestação). A paciente é primigesta e o quadro surgiu no final da gestação (35 semanas), sem histórico de hipertensão prévia.\n\nc) Incorreta. Como demonstrado na análise dos critérios, a paciente não atinge os níveis pressóricos necessários (160x110 mmHg) nem apresenta as alterações laboratoriais ou sintomas que definem a gravidade do quadro materno.\n\nd) Correta. O diagnóstico de pré-eclâmpsia está firmado pela hipertensão surgida após 20 semanas associada à proteinúria. A ausência de sintomas, a pressão arterial abaixo de 160x110 mmHg e os exames laboratoriais normais classificam o quadro como pré-eclâmpsia sem sinais de gravidade.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  },
+  {
+    "id": "AJUDA_66648417-0bd0-4e50-b04f-336e3860f2b8",
+    "originalId": "66648417-0bd0-4e50-b04f-336e3860f2b8",
+    "statement": "Gumercindo, portador de cirrose hepática alcoólica há 4 anos, comparece à consulta em UBS do seu bairro. Relata abstinência alcoólica nos últimos dois anos e nunca apresentou episódios de hematêmese ou melena. Encontra-se assintomático no momento, mas traz consigo resultado de endoscopia digestiva alta realizada há 6 meses na qual foram identificadas varizes esofágicas de médio calibre, sem sinais de sangramento recente. Encontra-se em acompanhamento por hipertensão arterial sistêmica, em uso de losartana 100 mg/dia, mas mantém valores pressóricos em torno de 150/95 mmHg, confirmados em diferentes aferições ambulatoriais. No exame físico atual, apresenta pressão arterial de 152/96 mmHg, frequência cardíaca de 82 bpm, ausência de ascite, fígado não palpável, telangiectasias no tronco e circulação colateral discreta, sem edemas periféricos. Exames laboratoriais recentes mostram creatinina de 0,9 mg/dL, bilirrubina total de 1,5 mg/dL, INR de 1,3 e albumina sérica de 3,6 g/dL.\n\nDiante do quadro descrito e considerando as comorbidades apresentadas pelo paciente, a conduta mais apropriada para o manejo da hipertensão neste caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar hidralazina em baixas doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "manter esquema atual em monoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "associar medicamento betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "suspender losartana e iniciar espironolactona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "substituir losartana por bloqueador de canal de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo da Hipertensão Arterial Sistêmica (HAS) em um paciente com cirrose hepática e varizes esofágicas. Este é um cenário que exige cautela, pois a fisiopatologia da cirrose altera a resposta a diversas classes de anti-hipertensivos.\n\n**Análise do Caso Clínico:**\nGumercindo tem cirrose (Child-Pugh A: bilirrubina 1,5 = 1 pt; albumina 3,6 = 1 pt; INR 1,3 = 1 pt; ausência de ascite = 1 pt; ausência de encefalopatia = 1 pt; total = 5 pontos). Ele apresenta sinais de hipertensão portal (varizes de médio calibre e circulação colateral), mas sua pressão arterial sistêmica está descontrolada (152/96 mmHg) apesar do uso de losartana 100 mg/dia.\n\n**Por que a alternativa (d) é a correta?**\n\nNa cirrose hepática, ocorre uma vasodilatação esplâncnica progressiva. Para compensar a queda da resistência vascular sistêmica e manter a perfusão renal, o corpo ativa intensamente o sistema renina-angiotensina-aldosterona (SRAA).\n\n1. **A suspensão da losartana:** O uso de inibidores da ECA ou bloqueadores dos receptores de angiotensina (como a losartana) é contraindicado ou deve ser evitado em cirróticos. Ao bloquear o SRAA, essas drogas podem causar uma queda abrupta na pressão arterial sistêmica e na perfusão renal, precipitando insuficiência renal aguda e síndrome hepatorrenal, mesmo em pacientes que ainda não têm ascite evidente.\n2. **O início da espironolactona:** A espironolactona é o diurético de escolha na cirrose. Ela atua antagonizando a aldosterona (que está elevada devido ao hiperaldosteronismo secundário da cirrose) e auxilia no controle da pressão arterial de forma mais segura para a hemodinâmica renal deste paciente, além de prevenir o acúmulo de líquido (ascite).\n\n---\n\n**Explicação das alternativas incorretas:**\n\n*   **a) Iniciar hidralazina em baixas doses:** A hidralazina é um vasodilatador direto que pode causar taquicardia reflexa e não atua na fisiopatologia da cirrose. Além disso, não resolve o problema principal, que é o uso da losartana.\n*   **b) Manter esquema atual em monoterapia:** Incorreto, pois a pressão arterial do paciente não está controlada (150/95 mmHg) e a losartana representa um risco potencial para a função renal do cirrótico a longo prazo.\n*   **c) Associar medicamento betabloqueador:** Esta alternativa é a \"pegadinha\" da questão. Betabloqueadores não seletivos (como propranolol ou carvedilol) são indicados para a profilaxia primária de sangramento por varizes de médio calibre. No entanto, para o manejo da **hipertensão arterial sistêmica** especificamente no cirrótico, a literatura e as bancas examinadoras priorizam a retirada de bloqueadores do SRAA (como a losartana) pelo risco renal, antes de considerar apenas a adição de outra droga ao esquema perigoso.\n*   **e) Substituir losartana por bloqueador de canal de cálcio:** Os bloqueadores de canal de cálcio (como o anlodipino) devem ser evitados na cirrose, pois podem acentuar a vasodilatação esplâncnica, piorando a hipertensão portal e aumentando o risco de sangramento de varizes esofágicas.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Cirrose Hepática",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  },
+  {
+    "id": "AJUDA_666ec3f6-527a-4409-802d-47f993991ee0",
+    "originalId": "666ec3f6-527a-4409-802d-47f993991ee0",
+    "statement": "Homem de 35 anos, vítima de acidente de trânsito, com amputação traumática de membro inferior direito na região da perna, recebe atendimento no local do acidente. O exame clínico revela sangramento ativo e abundante na região da amputação. No momento, sua pele está pálida e fria, apresenta 13 pontos em Escala de Coma de Glasgow e seus sinais vitais são apresentados a seguir.\n\nExame: Pressão arterial | Resultado: 80 x 50 mmHg\nExame: Frequência cardíaca | Resultado: 130 bpm\nExame: Frequência respiratória | Resultado: 30 irpm\n\nCom base no protocolo do “X” ATLS, qual é a intervenção prioritária inicial para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Posicionar cânula orofaríngea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar fluidos intravenosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter a coluna cervical estabilizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colocar torniquete acima do local da amputação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a priorização no atendimento ao trauma, especificamente focando na atualização do protocolo ABCDE para XABCDE, amplamente adotado pelo PHTLS e incorporado aos princípios do ATLS (10ª edição) para o controle de hemorragias externas graves.\n\nAnálise do quadro clínico:\nO paciente apresenta uma amputação traumática com sangramento ativo e abundante. Os sinais vitais (PA 80x50 mmHg, FC 130 bpm, FR 30 irpm) e a palidez cutânea indicam um estado de choque hemorrágico grave (Classe III ou IV). Em situações de hemorragia exsanguinante em extremidades, a prioridade absoluta é interromper a perda sanguínea antes mesmo de abordar as vias aéreas.\n\nExplicação das alternativas:\n\na) Incorreta. O posicionamento de uma cânula orofaríngea (Guedel) faz parte da etapa A (Airway). No entanto, o paciente apresenta pontuação 13 na Escala de Coma de Glasgow, o que indica que ele ainda mantém reflexos de proteção da via aérea. A cânula de Guedel é indicada apenas para pacientes inconscientes que não apresentam reflexo de vômito. Além disso, o X (hemorragia) precede o A.\n\nb) Incorreta. A administração de fluidos intravenosos faz parte da etapa C (Circulação). Embora este paciente necessite de reposição volêmica e possivelmente transfusão maciça devido ao choque, a prioridade é estancar o vazamento (X) antes de tentar preencher o compartimento intravascular. Infundir fluidos sem controlar a fonte de sangramento arterial é ineficaz e pode piorar a coagulopatia.\n\nc) Incorreta. A estabilização da coluna cervical é realizada simultaneamente à abertura das vias aéreas na etapa A. Embora seja um passo fundamental no trauma, a morte por exsanguinação ocorre mais rapidamente do que as complicações de uma lesão cervical não estabilizada em um primeiro momento, tornando o controle do sangramento (X) a prioridade.\n\nd) Correta. A alternativa atende ao passo X (Exsanguinação). Em amputações traumáticas de membros com sangramento maciço que não pode ser controlado por pressão direta, o uso do torniquete é a intervenção inicial prioritária e salvadora de vidas. Ele deve ser aplicado precocemente para interromper o fluxo arterial e prevenir a progressão do choque e o óbito por hipovolemia.\n\nResumo da prioridade (XABCDE):\nX: Hemorragia Exsanguinante (Controle de sangramentos externos graves).\nA: Via aérea e proteção da coluna cervical.\nB: Ventilação e respiração.\nC: Circulação (Choque e hemorragias internas).\nD: Disfunção neurológica.\nE: Exposição e controle do ambiente (Prevenção de hipotermia).",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Trauma",
+      "Choque"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  },
+  {
+    "id": "AJUDA_666f3b4a-7fa4-4088-b61a-658f7f47929e",
+    "originalId": "666f3b4a-7fa4-4088-b61a-658f7f47929e",
+    "statement": "No que diz respeito ao choque hemorrágico e à reposição volêmica em pacientes traumatizados, analise as afirmativas e assinale a alternativa correta.\n\nI. O choque neurogênico é a principal causa de hipotensão após o trauma, e o uso de vasopressores é a primeira linha\nde tratamento para reverter o quadro.\nII. O débito urinário é um indicador sensível da volemia do paciente e, no adulto, um valor de 0,5mL/kg/h é considerado aceitável.\nIII. A reposição volêmica com grandes volumes de cristaloides pode ser prejudicial, pois a reanimação agressiva antes do controle do sangramento pode aumentar a mortalidade.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a afirmativa I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a afirmativa II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das Afirmativas:\n\nAfirmativa I (Incorreta): No trauma, a regra fundamental é que todo paciente hipotenso deve ser considerado hipovolêmico por choque hemorrágico até que se prove o contrário. O choque neurogênico é uma causa muito menos frequente e ocorre geralmente em lesões medulares acima de T6. Além disso, o tratamento de primeira linha no choque hemorrágico é o controle do sangramento e a reposição volêmica (preferencialmente com hemoderivados), e não o uso de vasopressores. O uso precoce de vasopressores na ausência de volume adequado pode agravar a isquemia tecidual.\n\nAfirmativa II (Correta): O débito urinário é considerado um dos indicadores mais sensíveis e confiáveis da perfusão orgânica e do status volêmico durante a reanimação. Ele reflete de forma indireta o fluxo sanguíneo renal. No paciente adulto, a meta terapêutica estabelecida pelos protocolos de suporte avançado (como o ATLS) é a manutenção de um débito urinário de pelo menos 0,5 mL/kg/h. Em crianças, esse valor deve ser de 1,0 mL/kg/h.\n\nAfirmativa III (Correta): Atualmente, sabe-se que a reanimação volêmica agressiva com grandes volumes de cristaloides (como soro fisiológico ou Ringer lactato) antes do controle definitivo do sangramento é prejudicial. Esse excesso de volume pode causar coagulopatia dilucional, acidose e hipotermia, além de aumentar a pressão arterial a ponto de \"desalojar\" coágulos recém-formados, aumentando o sangramento (fenômeno conhecido como \"pop the clot\"). O conceito moderno é a hipotensão permissiva, focando em manter a perfusão de órgãos vitais sem atingir níveis pressóricos normais até que a hemorragia seja estancada.\n\nConclusão: Como as afirmativas II e III estão corretas, a alternativa correta é a letra (c).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:17.043Z"
+  }
+]

@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_78ff8fc1-3563-46a4-bd45-3d0c2bb8f391",
+    "originalId": "78ff8fc1-3563-46a4-bd45-3d0c2bb8f391",
+    "statement": "Qual o sinal clássico de trombose venosa profunda (TVP) proximal:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sinal de Homans.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Edema assimétrico de membro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dor à palpação plantar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Varizes proeminentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cacifo positivo bilateral e cianose fixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Trombose Venosa Profunda (TVP) proximal, que envolve as veias poplítea, femoral ou ilíaca, manifesta-se clinicamente por meio de sinais de obstrução ao retorno venoso e resposta inflamatória local.\n\nAlternativa (a) Incorreta: O Sinal de Homans (dor na panturrilha à dorsiflexão passiva do pé) é historicamente descrito como um sinal clássico; porém, na prática clínica moderna, possui baixa sensibilidade e baixa especificidade. Ele pode estar presente em diversas outras condições, como lesões musculares, e sua ausência não exclui o diagnóstico, não sendo o sinal mais fidedigno.\n\nAlternativa (b) Correta: O edema assimétrico é o sinal clínico mais frequente e importante na TVP. Na trombose proximal, o edema costuma ser mais acentuado, podendo acometer toda a perna e coxa, dependendo do nível da obstrução. A assimetria (diferença de diâmetro entre os membros) é um dos parâmetros de maior valor preditivo nos escores de probabilidade clínica, como o Score de Wells.\n\nAlternativa (c) Incorreta: A dor na TVP costuma ser referida na panturrilha ou ao longo do trajeto das veias profundas. A dor à palpação plantar não é um sinal clássico desta patologia, sendo mais característica de condições ortopédicas, como a fascite plantar.\n\nAlternativa (d) Incorreta: Varizes são veias superficiais dilatadas e tortuosas, geralmente indicativas de insuficiência venosa crônica. Embora a dilatação de veias superficiais colaterais possa ocorrer na TVP aguda (Sinal de Pratt), a presença de varizes proeminentes não é o sinal definidor do quadro agudo proximal.\n\nAlternativa (e) Incorreta: O edema bilateral sugere causas sistêmicas, como insuficiência cardíaca congestiva, síndrome nefrótica ou hepatopatias, uma vez que a TVP é tipicamente unilateral. A cianose fixa é um achado de casos graves de obstrução venosa total (Phlegmasia Cerulea Dolens), representando uma complicação e não o sinal clássico inicial.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.208Z"
+  },
+  {
+    "id": "AJUDA_790b32b5-7110-46a6-a941-e70f0d2917e9",
+    "originalId": "790b32b5-7110-46a6-a941-e70f0d2917e9",
+    "statement": "Paciente feminina, 53 anos, diabética, apresenta dor em hipocondrio direito, febre, inapetência. Ao exame físico, dor à palpação superficial no hipocôndrio direito, sem sinal de descompressão brusca. Leucograma com 21.000 células/mm³. APACHE II igual a 6. A tomografia computadorizada evidenciou vesícula biliar com alterações ressaltadas abaixo: Com base nos achados clínicos e radiológicos, dentre as abaixo, a principal hipótese diagnóstica e a melhor conduta são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colecistite xantomatosa - colecistectomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Neoplasia de vesícula - biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colecistite aguda - colecistostomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Abscesso hepático e ceftriaxona - metronidazol EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colangite esclerosante - plasmaférese.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO E RADIOLÓGICO\n\nA paciente apresenta um quadro de dor em hipocôndrio direito, febre e leucocitose importante (21.000 células/mm³), o que direciona o raciocínio para um processo inflamatório/infeccioso agudo das vias biliares. O fato de ser diabética aumenta o risco de apresentações graves ou variantes atípicas de colecistite.\n\nAs imagens de tomografia computadorizada (TC) mostram um espessamento acentuado e irregular da parede da vesícula biliar, com a presença de nódulos hipoatenuantes (claramente visíveis dentro do círculo branco na imagem da direita). Esse achado é característico da colecistite xantomatosa, uma variante rara de inflamação crônica destrutiva.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Correta. A colecistite xantomatosa é um processo inflamatório no qual há acúmulo de macrófagos carregados de lipídios na parede da vesícula. Na TC, manifesta-se tipicamente como espessamento parietal difuso com nódulos intramurais hipodensos (que representam os xantogranulomas ou abscessos). Clinicamente, mimetiza uma colecistite aguda ou mesmo uma neoplasia, devido ao seu caráter infiltrativo. O tratamento de escolha é a colecistectomia, embora seja uma cirurgia tecnicamente difícil devido às intensas aderências.\n\nb) Incorreta. Embora a imagem possa mimetizar o câncer de vesícula biliar (devido ao espessamento e perda de interface com o fígado), o quadro clínico de febre e leucocitose acentuada favorece um processo inflamatório agudo/subagudo. Além disso, a conduta inicial para massas na vesícula biliar não costuma ser a biópsia percutânea pelo risco de disseminação (seeding), mas sim a ressecção cirúrgica.\n\nc) Incorreta. Apesar de ser um quadro de colecistite, a imagem tomográfica aponta especificamente para a variante xantomatosa. A colecistostomia é reservada para pacientes criticamente enfermos (geralmente com instabilidade hemodinâmica ou contraindicação cirúrgica absoluta) que não tolerariam a anestesia geral. Com um escore APACHE II de 6, a paciente possui um risco cirúrgico manejável, indicando a colecistectomia como tratamento definitivo.\n\nd) Incorreta. O abscesso hepático costuma se apresentar como uma coleção líquida bem definida dentro do parênquima hepático, com realce periférico (em alvo). Na imagem, a alteração é primariamente na parede da vesícula biliar e não uma massa purulenta intra-hepática isolada.\n\ne) Incorreta. A colangite esclerosante é uma doença crônica das vias biliares intra- e extra-hepáticas, caracterizada por estenoses e dilatações multifocais (aspecto em contas de rosário), sem relação com o quadro de colecistite aguda e espessamento parietal nodular da vesícula descrito. Além disso, a plasmaférese não é o tratamento para essa condição.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/30a864e5d2aebbf9e4758de40e946d0eef9c1a37c7f79e14c65747e056504b64.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_790b32b5-7110-46a6-a941-e70f0d2917e9_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.860Z"
+  },
+  {
+    "id": "AJUDA_792a1fb8-b6b2-4fb8-b4ed-d7759ff3a6eb",
+    "originalId": "792a1fb8-b6b2-4fb8-b4ed-d7759ff3a6eb",
+    "statement": "Um homem negro de 62 anos se apresenta à clínica para seu exame anual do pé diabético. Ele reclama de unhas grossas e amareladas que esfregam em seus sapatos. O exame físico dos membros inferiores revela diminuição da sensibilidade em ambos os pés, pulsos poplíteos e pediosos palpáveis. Há um pequeno nevo preto em seu calcanhar direito que exibe um padrão dermatoscópico de crista paralela. Qual dos seguintes tipos de câncer de pele pode estar associado com o padrão dermatoscópico descrito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Melanoma nodular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Melanoma lentiginoso acral",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Melanoma lentigo maligno A",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Melanoma extensivo superficial",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico apresenta um paciente idoso, negro, com uma lesão pigmentada no calcanhar (região acral). O ponto fundamental para a resolução da questão é o achado dermatoscópico descrito: o padrão de crista paralela. \n\nA pele das palmas das mãos e plantas dos pés (pele glabra) possui uma anatomia única composta por sulcos e cristas que formam as impressões digitais. Na dermatoscopia acral, a localização do pigmento em relação a essas estruturas é o que define a suspeita de malignidade.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nA alternativa (b) está correta. O melanoma lentiginoso acral é o subtipo de melanoma mais comum em indivíduos de pele negra, ocorrendo nas palmas, plantas e regiões subungueais. O padrão de crista paralela é o sinal dermatoscópico mais característico e específico para este diagnóstico. Ele ocorre quando o pigmento (melanina) se distribui preferencialmente nas cristas cutâneas, onde se localizam as aberturas dos ductos das glândulas sudoríparas. Esse padrão tem um valor preditivo positivo muito alto para o melanoma acral precoce. Em contrapartida, lesões benignas (nevos acrais) costumam apresentar o pigmento nos sulcos (padrão de sulco paralelo).\n\nA alternativa (a) está incorreta. O melanoma nodular apresenta-se clinicamente como uma pápula ou nódulo de crescimento rápido, frequentemente invasivo desde o início. Seus achados dermatoscópicos costumam ser mais genéricos, como véu azul-esbranquiçado, estruturas polimorfas e vasos atípicos, mas não apresentam o padrão de crista paralela, que é uma característica exclusiva da pele glabra das extremidades.\n\nA alternativa (c) está incorreta. O melanoma lentigo maligno é típico de áreas com exposição solar crônica e intensa, como a face e o pescoço de pacientes idosos. A dermatoscopia dessa região foca nas aberturas foliculares, revelando achados como aberturas foliculares assimétricas, estruturas romboidais e o padrão anular-granular.\n\nA alternativa (d) está incorreta. O melanoma extensivo superficial é o tipo mais comum na população de pele clara (fototipos baixos), surgindo frequentemente no dorso de homens e nas pernas de mulheres. Dermatoscopicamente, ele se caracteriza por uma rede pigmentar atípica, pontos e glóbulos de tamanhos e cores variados, além de áreas de regressão, mas não exibe a conformação de cristas e sulcos típica das regiões acrais.\n\nRESUMO DIDÁTICO\n\nPara provas de residência, memorize o \"Binômio Acral\":\n1. Pigmento no SULCO paralelo = Sinal de lesão BENIGNA (Nevo).\n2. Pigmento na CRISTA paralela = Sinal de MALIGNIDADE (Melanoma Lentiginoso Acral).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.860Z"
+  },
+  {
+    "id": "AJUDA_7932bdd3-2737-49b9-8b87-2cc1ad95dfd6",
+    "originalId": "7932bdd3-2737-49b9-8b87-2cc1ad95dfd6",
+    "statement": "Mulher 70 anos, em pos operatório de fratura de fêmur após queda da própria altura e uso de analgésicos regulares, evolui com dor abdominal, distensão importante com parada de eliminação de fezes. Nunca realizou colonoscopia e possui abdominoplastia prévia. A hipótese mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adenocarcinoma de colon",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de ogilve",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Megacólin toxico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstrucao intestinal por brida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colite pseudomembranosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a questão, devemos focar no perfil epidemiológico e no contexto clínico da paciente: idosa, em pós-operatório de cirurgia ortopédica (fratura de fêmur) e em uso de analgésicos (provavelmente opioides). Esse cenário é o \"estudo de caso\" clássico para a Síndrome de Ogilvie.\n\nA alternativa (b) está correta porque a Síndrome de Ogilvie, ou Pseudo-obstrução Colônica Aguda, caracteriza-se por uma dilatação maciça do cólon sem que haja uma obstrução mecânica (física). Ela ocorre frequentemente em pacientes idosos, hospitalizados, com distúrbios eletrolíticos, após traumas ou cirurgias de grande porte (especialmente ortopédicas, pélvicas ou cardíacas) e pelo uso de medicamentos que reduzem a motilidade intestinal, como os opioides. O quadro clínico de dor, distensão abdominal importante e parada de eliminação de flatos e fezes é típico dessa condição.\n\nA alternativa (a) está incorreta porque, embora a idade e a falta de rastreio por colonoscopia sejam fatores de risco para o câncer colorretal, o adenocarcinoma de cólon costuma ter uma evolução mais crônica. Uma obstrução aguda por tumor geralmente não teria uma relação tão direta e imediata com o pós-operatório de uma fratura de fêmur.\n\nA alternativa (c) está incorreta porque o Megacólon Tóxico é uma complicação grave de doenças inflamatórias intestinais (como a retocolite ulcerativa) ou colites infecciosas graves (como por C. difficile). Ele exige a presença de sinais de toxicidade sistêmica, como febre, taquicardia, leucocitose e instabilidade hemodinâmica, que não foram descritos no enunciado.\n\nA alternativa (d) está incorreta porque, apesar de a paciente possuir uma cirurgia prévia (abdominoplastia), as bridas ou aderências costumam causar obstrução de intestino delgado. O contexto de idosa acamada, trauma ósseo e uso de analgésicos é muito mais sugestivo de uma alteração funcional (pseudo-obstrução) do que de uma causa mecânica por aderências.\n\nA alternativa (e) está incorreta porque a Colite Pseudomembranosa é causada pela toxina do Clostridioides difficile, geralmente após o uso de antibióticos. O sintoma principal é a diarreia profusa, e não a parada de eliminação de fezes e flatos, embora em casos muito graves possa evoluir com íleo paralítico ou megacólon tóxico.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.860Z"
+  },
+  {
+    "id": "AJUDA_7943e7d3-fe8d-4d30-b99b-1c1c2dd0e568",
+    "originalId": "7943e7d3-fe8d-4d30-b99b-1c1c2dd0e568",
+    "statement": "Homem de 75 anos, hipertenso e tabagista com queixa de dor em membro inferior esquerdo ao caminhar 50 metros, com melhora completa ao repouso. Interna em leito de enfermaria comum para tratamento de COVID 19 de gravidade moderada. O índice tornozelo braço a esquerda é 0,4 e à direita é 0,8. Ausência de edema em membros inferiores. Nega antecedentes de infarto agudo do miocárdio ou acidente vascular cerebral. Está em uso de ácido acetil salicílico (AAS) 100 mg ao dia e Anlodipino 5mg uma vez ao dia. Realizou radiografia de tórax e tomografia de tórax com contraste, sem alterações. Exames laboratoriais de entrada: Hematócrito: 45 %; Glóbulos Brancos: 6500 (sem desvio) /mm³; Plaquetas: 250000/mm³; Sódio: 145 mM/L; Potássio: 4,4 mM/L; Creatinina: 2,5 mg/dl; Dímeros D: 755 ng/dl (VN<500 ng/dl). Qual a melhor conduta inicial em relação ao manejo das medicações antitrombóticas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender AAS e iniciar heparina não fracionada (HNF), subcutânea 5000 UI de 8/8 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender AAS e iniciar heparina de baixo peso molecular (HBPM) 1 mg/kg de 12/12 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter o AAS e iniciar heparina de baixo peso molecular (HBPM) 1 mg/kg de 12/12 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter o AAS e iniciar heparina não fracionada (HNF) 5000 UI subcutânea de 8/8 h.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão exige o conhecimento sobre o manejo de pacientes com Doença Arterial Periférica (DAP) internados por COVID-19, considerando suas comorbidades e função renal.\n\nAnálise do quadro clínico:\nO paciente apresenta um quadro clássico de DAP (claudicação intermitente e Índice Tornozelo-Braço de 0,4, sendo o normal entre 0,9 e 1,3). Ele já faz uso de AAS para prevenção secundária de eventos cardiovasculares. Ao ser internado por COVID-19 de gravidade moderada, ele entra em um estado pró-trombótico, o que justifica a profilaxia para tromboembolismo venoso (TEV). Um ponto crítico é a Creatinina de 2,5 mg/dl, que indica insuficiência renal significativa.\n\nPor que manter o AAS?\nO AAS é essencial para o tratamento da DAP crônica do paciente. Não há evidência de sangramento ativo ou contraindicação no enunciado que justifique a suspensão dessa antiagregação plaquetária durante a internação por COVID-19.\n\nPor que escolher a Heparina Não Fracionada (HNF)?\nA Heparina de Baixo Peso Molecular (HBPM), como a enoxaparina, é eliminada por via renal. Em pacientes com insuficiência renal (neste caso, Creatinina de 2,5 mg/dl), a HBPM pode se acumular, aumentando drasticamente o risco de sangramentos. Por outro lado, a HNF tem metabolização hepática e eliminação pelo sistema reticuloendotelial, sendo a escolha mais segura para profilaxia em pacientes com disfunção renal.\n\nDose de Profilaxia vs. Dose Terapêutica:\nO paciente tem COVID moderada e um D-dímero levemente aumentado (755 ng/dl). Não há diagnóstico de embolia pulmonar ou trombose venosa profunda (a tomografia foi normal). Portanto, a indicação é de dose profilática (HNF 5000 UI de 8/8h ou 12/12h) e não de dose terapêutica/plena.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Não se deve suspender o AAS, pois ele protege o paciente contra eventos isquêmicos arteriais relacionados à sua DAP de base. A HNF está correta pela função renal, mas o erro está na suspensão do antiagregante.\n\nAlternativa b) Incorreta. Além de suspender o AAS incorretamente, propõe o uso de HBPM em dose terapêutica (1 mg/kg). Isso é contraindicado tanto pela falta de diagnóstico de trombose quanto pela insuficiência renal do paciente.\n\nAlternativa c) Incorreta. Embora mantenha o AAS, utiliza a HBPM em dose terapêutica. Como mencionado, a HBPM é de risco em pacientes com Creatinina elevada, e a dose plena não está indicada neste momento.\n\nAlternativa d) Correta. Esta conduta mantém a proteção arterial necessária (AAS) e inicia a profilaxia venosa recomendada para pacientes internados com COVID-19 utilizando a heparina mais segura para quem possui alteração da função renal (HNF), em dose profilática (5000 UI 8/8h).",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Covid-19",
+      "Cirurgia Vascular",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.860Z"
+  },
+  {
+    "id": "AJUDA_794f04ec-5d31-4395-bb01-d80677ff6f96",
+    "originalId": "794f04ec-5d31-4395-bb01-d80677ff6f96",
+    "statement": "Em relação à drenagem dos órgãos genitais femininos, os vasos linfáticos que drenam o corpo do útero se dirigem para os linfonodos:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para-aórticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hipogástricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Obturadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ilíacos externos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Inguinais superficiais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A drenagem linfática do corpo do útero é complexa e varia de acordo com a região específica do órgão, mas para fins de provas de residência, segue-se a anatomia clássica e a disseminação oncológica principal.\n\nAlternativa (a) Correta: Os vasos linfáticos provenientes do fundo uterino e da porção superior do corpo do útero seguem o trajeto das veias ováricas e terminam nos linfonodos para-aórticos (também chamados de lombares). Esse trajeto ocorre através do ligamento suspensor do ovário. No contexto do câncer de endométrio (que acomete o corpo uterino), a pesquisa de linfonodos para-aórticos é fundamental justamente por essa via de drenagem direta.\n\nAlternativa (b) Incorreta: Os linfonodos hipogástricos (ou ilíacos internos) recebem a drenagem principalmente do colo uterino e da parte superior da vagina. Embora parte da região inferior do corpo uterino possa drenar para essa região, não é a via principal do corpo como um todo.\n\nAlternativa (c) Incorreta: Os linfonodos obturadores são frequentemente considerados parte do grupo ilíaco interno ou estão intimamente relacionados a ele. Eles são locais comuns de metástase para o câncer de colo de útero, mas não representam a drenagem primária e clássica do corpo uterino.\n\nAlternativa (d) Incorreta: Os linfonodos ilíacos externos podem receber drenagem de partes do corpo do útero e do colo, mas a drenagem mais característica e direta do corpo (especialmente fundo e porção superior) se direciona para a cadeia para-aórtica, acompanhando os vasos gonadais.\n\nAlternativa (e) Incorreta: A drenagem para os linfonodos inguinais superficiais é muito específica e limitada. Apenas os vasos linfáticos que acompanham o ligamento redondo do útero, saindo pela região dos cornos uterinos, podem atingir essa região. É uma via acessória e de menor importância quantitativa para o corpo do útero comparada às outras cadeias.\n\nResumo: Para questões de anatomia e oncologia ginecológica, considere que o fundo e o corpo superior do útero drenam primordialmente para os linfonodos para-aórticos, enquanto o colo uterino drena preferencialmente para as cadeias ilíacas (externa, interna e obturatória).",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Anatomia e Embriologia do Trato Genital Feminino"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.860Z"
+  },
+  {
+    "id": "AJUDA_79522516-f24e-45a6-8f7e-c614133d3b81",
+    "originalId": "79522516-f24e-45a6-8f7e-c614133d3b81",
+    "statement": "Os movimentos antivacina, causados por um sistema de desinformação, trazem muitos danos para as pessoas não vacinadas, pois já está mais que provado pela ciência que vacinas são muito efetivas e salvam vidas.\nUma dessas doenças preveníveis por vacinas tem como manifestação clínica típica a presença de placas pseudomembranosas branco-acinzentadas, aderentes, que se instalam nas amígdalas e invadem estruturas vizinhas. Essas placas podem se localizar na faringe, na laringe e nas fossas nasais; e, com menos frequência, também são observadas na conjuntiva, na pele, no conduto auditivo, na vulva, no pênis (pós circuncisão) e no cordão umbilical. A doença manifesta-se clinicamente por comprometimento do estado geral do paciente, que pode se apresentar prostrado e pálido. A dor de garganta é discreta, independentemente da localização ou da quantidade de placas existentes, e a febre normalmente não é muito elevada, variando de 37,5 °C a 38,5 °C, embora temperaturas mais altas não afastem o diagnóstico. Nos casos mais graves, há intenso edema do pescoço, com grande aumento dos gânglios linfáticos dessa área (pescoço taurino) e edema periganglionar nas cadeias cervicais e submandibulares. Dependendo do tamanho e da localização da placa pseudomembranosa, pode ocorrer asfixia mecânica aguda no paciente, o que muitas vezes exige imediata traqueostomia para evitar a morte.\nA descrição acima é característica de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "vírus sincicial respiratório;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "difteria;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "faringo-amigdalite por estreptococo;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sífilis;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA questão descreve um quadro clínico clássico de uma doença infectocontagiosa aguda, causada pela ação da exotoxina da bactéria Corynebacterium diphtheriae. O ponto central para o diagnóstico é a presença das placas pseudomembranosas branco-acinzentadas e aderentes, que são o sinal patognomônico da difteria.\n\nDiferentemente de um exsudato purulento comum, essas placas são formadas por fibrina, leucócitos, eritrócitos e restos celulares, sendo firmemente aderidas à mucosa; se removidas, costumam causar sangramento. Outro sinal clínico definitivo citado é o pescoço taurino, resultado do intenso edema e da linfadenopatia cervical, indicando gravidade e alta carga tóxica.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. O vírus sincicial respiratório (VSR) é o principal agente da bronquiolite aguda em lactentes e também causa pneumonia e quadros gripais em adultos. Sua manifestação clínica foca no trato respiratório inferior (sibilos, taquipneia, esforço respiratório) e não envolve a formação de membranas faríngeas obstrutivas ou o pescoço taurino.\n\nb) Correta. A descrição é uma \"cópia fiel\" do quadro de difteria. A doença apresenta o comprometimento do estado geral (toxemia), febre habitualmente baixa, placas que podem invadir estruturas vizinhas e causar asfixia mecânica (difteria laringotraqueal) e o edema cervical característico. É uma doença prevenível pela vacina pentavalente (ou DTP/DT).\n\nc) Incorreta. A faringoamigdalite estreptocócica (por Streptococcus pyogenes) cursa com febre alta, dor de garganta intensa (diferente da dor discreta citada no texto), exsudato purulento amarelado nas amígdalas e ausência de membranas que invadem fossas nasais ou pele. Além disso, não costuma evoluir com o edema cervical maciço do tipo pescoço taurino.\n\nd) Incorreta. A sífilis, em sua fase primária, pode apresentar um cancro (úlcera indolor) e, na fase secundária, placas mucosas ou lesões cutâneas (roséolas). No entanto, não causa um quadro agudo de membranas aderentes obstrutivas com toxemia severa e edema cervical progressivo como descrito.\n\ne) Incorreta. O sarampo é caracterizado pelo exantema maculopapular morbiliforme de progressão cefalocaudal, tosse, coriza, conjuntivite e pelas manchas de Koplik (pequenos pontos brancos na mucosa oral, próximos aos molares). Embora seja uma doença prevenível por vacina e grave, o foco clínico é respiratório e exantemático, sem a formação de pseudomembranas faríngeas.\n\nGABARITO: Letra (b) - Difteria.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.860Z"
+  },
+  {
+    "id": "AJUDA_795a1fee-8adb-40a9-8601-6278ebe83070",
+    "originalId": "795a1fee-8adb-40a9-8601-6278ebe83070",
+    "statement": "O tratamento recomendado para a doença de Kawasaki é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vancomicina associada a ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Imunoglobulina 2 g/ kg / dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tocilizumabe 12 mg/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pulsoterapia com corticoide 30 mg/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A doença de Kawasaki é uma vasculite sistêmica aguda de médios e pequenos vasos, mais frequente em crianças menores de cinco anos. O principal objetivo do tratamento é diminuir a inflamação vascular e prevenir a formação de aneurismas das artérias coronárias. \n\nAlternativa a: Incorreta. Vancomicina e ceftriaxona são antibióticos usados para tratar infecções bacterianas graves. A doença de Kawasaki é uma condição inflamatória e imunomediada, de modo que antibioticoterapia não tem indicação terapêutica.\n\nAlternativa b: Correta. A imunoglobulina humana intravenosa (IGIV), administrada na dose de 2 g/kg em infusão única (geralmente associada ao ácido acetilsalicílico em dose anti-inflamatória), é o pilar do tratamento de primeira linha. Quando administrada preferencialmente nos primeiros 10 dias de febre, a IGIV reduz o risco de aneurismas coronarianos de aproximadamente 25% para menos de 5%.\n\nAlternativa c: Incorreta. O tocilizumabe é um anticorpo monoclonal inibidor do receptor de interleucina-6, utilizado em doenças reumatológicas como a artrite idiopática juvenil, não fazendo parte do manejo inicial da doença de Kawasaki.\n\nAlternativa d: Incorreta. A pulsoterapia com corticoide não é a conduta de primeira linha padrão para todos os pacientes. Os corticosteroides são reservados para casos refratários à dose inicial de imunoglobulina ou em associação com IGIV para pacientes de altíssimo risco coronariano estratificados por escores específicos (como o escore de Kobayashi).\n\nGabarito: Alternativa b.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Reumatologia Pediátrica",
+      "Doença de Kawasaki",
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.860Z"
+  },
+  {
+    "id": "AJUDA_7967e817-42fa-46f0-8875-e0daec40900a",
+    "originalId": "7967e817-42fa-46f0-8875-e0daec40900a",
+    "statement": "Paciente, 12 anos de idade, do sexo feminino, previamente hígida, é admitida no pronto-socorro devido à sonolência importante há um dia. Responsável refere que ela vinha apresentando perda de peso há algumas semanas, vômitos há cerca de 10 dias e que há três dias, queixava-se de dor abdominal contínua. Ao exame clínico, encontra-se desidratada em algum grau, FC de 119 bpm, FR de 44 ipm, saturação de O2 de 99 % em ar ambiente, PA de 100x60 mmHg, ausculta cardíaca e pulmonar dentro da normalidade, expansibilidade pulmonar aumentada, tempo de enchimento capilar de 3 segundos, responde e tem abertura ocular somente ao estímulo doloroso; abdome doloroso difusamente, descompressão brusca negativa, ruído hidroaéreo presente. Qual dos resultados de exame apresentados a seguir é compatível com a principal hipótese diagnóstica?",
+    "options": [],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico de Cetoacidose Diabética (CAD) como manifestação inicial de Diabetes Mellitus tipo 1 em uma paciente pediátrica. Os pontos-chave para o diagnóstico são: perda de peso (polifagia/catabolismo), vômitos e dor abdominal (comuns na acidose grave), sonolência (alteração de sensório pela gravidade da CAD) e, crucialmente, a frequência respiratória de 44 ipm com expansibilidade aumentada, caracterizando a respiração de Kussmaul (uma tentativa do organismo de compensar a acidose metabólica através da eliminação de CO2).\n\nAnálise das alternativas:\n\nAlternativa (a): Incorreta. Este resultado mostra um pH de 7,08 (acidose), mas com PCO2 elevada (54 mmHg) e HCO3 elevado (33 mEq/L). Isso caracteriza uma acidose respiratória com compensação renal (alcalose metabólica compensatória), o que não condiz com a fisiopatologia da CAD, onde a acidose é primariamente metabólica.\n\nAlternativa (b): Correta (Gabarito). Esta gasometria arterial apresenta pH 7,08 (acidemia grave), HCO3 de 6,0 mEq/L (acidose metabólica grave) e PCO2 de 17 mmHg. A PCO2 baixa reflete a compensação respiratória esperada (hiperventilação/Kussmaul) para tentar elevar o pH. O Base Excess (BE) de -10 reforça o consumo de bases no sistema. Este é o perfil laboratorial típico de uma CAD grave.\n\nAlternativa (c): Incorreta. A imagem de radiografia de tórax mostra um infiltrado/consolidação em base pulmonar direita, sugestivo de pneumonia. Embora processos infecciosos possam desencadear CAD, o exame físico da paciente revelou ausculta pulmonar normal, e os sinais de taquipneia com expansibilidade aumentada são mais sugestivos de compensação respiratória central do que de uma patologia parenquimatosa pulmonar isolada.\n\nAlternativa (d): Incorreta. A tomografia computadorizada de abdome mostra uma grande massa expansiva ocupando parte do abdome superior e flanco esquerdo. Embora uma neoplasia pudesse explicar a perda de peso e a dor abdominal, ela não justificaria o quadro de acidose aguda com respiração de Kussmaul e desidratação súbita da forma como a CAD explica neste cenário clínico.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Emergências Pediátricas",
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.860Z"
+  },
+  {
+    "id": "AJUDA_7968dbb2-596e-4d8e-a6d1-a8e0af5ece74",
+    "originalId": "7968dbb2-596e-4d8e-a6d1-a8e0af5ece74",
+    "statement": "A Conferência Internacional sobre Cuidados Primários de Saúde aconteceu em Alma-Ata, em 1978, e segue, até hoje, atual e com considerações importantes para a saúde pública. Sobre a Atenção Primária à Saúde, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Atenção Primária é, de forma exclusiva, o nível de primeiro contato dos indivíduos, da família e da comunidade com o sistema nacional de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O cuidado na Atenção Primária engloba promoção, prevenção, proteção, diagnóstico, tratamento, reabilitação, redução de danos, cuidados paliativos e vigilância em saúde, realizados com equipe multiprofissional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O Núcleo Ampliado de Saúde da Família possui estrutura física independente e especial, é de livre acesso para atendimento individual e, por ser multiprofissional, compõe a rede integrada da atenção especializada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para sua máxima potência, a Atenção Primária à Saúde necessita trabalhar de forma autônoma e independente, levando, assim, cuidado longitudinal e personalizado a sua população adscrita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "São atributos essenciais e derivados da Atenção Primária à Saúde: universalidade, integralidade e equidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "**Análise detalhada da questão sobre Atenção Primária à Saúde (APS) e a Conferência de Alma-Ata.**\n\n**Alternativa A (Incorreta):** O erro está no termo \"exclusiva\". Embora a APS seja o nível preferencial de primeiro contato e a porta de entrada principal do sistema, ela não é a única. Casos de urgência e emergência, por exemplo, podem ter seu primeiro contato através da rede hospitalar ou do SAMU. A APS é o centro ordenador da rede, mas não detém a exclusividade do acesso inicial em todas as situações clínicas.\n\n**Alternativa B (Correta):** Esta alternativa descreve com precisão o conceito de integralidade e o escopo de atuação da APS moderna, especialmente conforme a Política Nacional de Atenção Básica (PNAB). A atenção primária não se resume a \"atendimentos simples\"; ela abrange todo o espectro do cuidado, desde a promoção da saúde e prevenção de doenças até cuidados paliativos e vigilância, sempre atuando de forma interdisciplinar com equipes multiprofissionais.\n\n**Alternativa C (Incorreta):** O NASF (atualmente designado como equipes multiprofissionais na APS) não possui estrutura física independente, ele atua no território dando suporte às equipes de Saúde da Família. Além disso, ele não é de \"livre acesso\" para atendimento individual direto; sua lógica é o matriciamento e a discussão de casos. Por fim, ele faz parte da Atenção Básica (Primária) e não da Atenção Especializada.\n\n**Alternativa D (Incorreta):** A APS não deve trabalhar de forma \"autônoma e independente\", mas sim de forma articulada e integrada à Rede de Atenção à Saúde (RAS). Para sua máxima potência, ela precisa de retaguarda diagnóstica e referenciamento para outros níveis de complexidade quando necessário. O isolamento da APS compromete a continuidade do cuidado.\n\n**Alternativa E (Incorreta):** A alternativa confunde os conceitos. Universalidade, Integralidade e Equidade são Princípios Doutrinários do SUS (conforme a Constituição e a Lei 8.080/90). Os atributos essenciais da APS, segundo a literatura de Barbara Starfield (referência mundial no tema), são: Primeiro Contato, Longitudinalidade, Integralidade e Coordenação do Cuidado. Os atributos derivados são: Orientação Familiar, Orientação Comunitária e Competência Cultural.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:28.860Z"
+  }
+]

@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_8b342f4f-8493-4a00-839b-10459ce0a5b4",
+    "originalId": "8b342f4f-8493-4a00-839b-10459ce0a5b4",
+    "statement": "Homem de 24 anos apresenta dor abdominal difusa há 24 horas, que migrou para fossa ilíaca direita. Relata febre baixa e anorexia. Ao exame: dor intensa à palpação profunda em FID, defesa muscular e sinal de Blumberg positivo. Leucócitos: 15.000/mm³. Ultrassonografia: apêndice não compressível, medindo 10 mm, com líquido periapendicular.\n\nQual é a conduta a ser seguida nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibióticos venosos e observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apendicectomia laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tratamento exclusivamente clínico com alta hospitalar precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colectomia direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Drenagem percutânea e antibiótico exclusivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro clássico de apendicite aguda, caracterizado pela tríade de dor abdominal migratória (que começa difusa ou periumbilical e se localiza na fossa ilíaca direita), anorexia e sinais de irritação peritoneal. O exame físico revela o sinal de Blumberg positivo, que indica inflamação do peritônio parietal. Os exames complementares confirmam a suspeita: leucocitose (15.000/mm³) e ultrassonografia demonstrando apêndice distendido (10 mm, sendo o valor de corte normal até 6 mm) e presença de líquido livre, sugerindo processo inflamatório agudo.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: O tratamento conservador apenas com antibióticos e observação tem sido estudado em casos de apendicite não complicada, mas ainda não é a conduta de escolha na rotina hospitalar e nem a resposta padrão em exames de residência para pacientes jovens e saudáveis com diagnóstico confirmado. A cirurgia permanece como o tratamento definitivo mais seguro para evitar recidivas e complicações.\n\nAlternativa (b) CORRETA: A apendicectomia é o tratamento de eleição para a apendicite aguda. A via laparoscópica é preferencial sempre que disponível, pois está associada a menor dor no pós-operatório, menor taxa de infecção de ferida operatória, retorno mais rápido às atividades e melhor visualização da cavidade abdominal.\n\nAlternativa (c) INCORRETA: O tratamento exclusivamente clínico com alta precoce é perigoso e tecnicamente um erro de conduta. A apendicite é uma patologia progressiva que, se não tratada adequadamente, pode evoluir para perfuração, peritonite purulenta, abscesso cavitário e sepse.\n\nAlternativa (d) INCORRETA: A colectomia direita consiste na retirada de todo o cólon direito e é uma cirurgia desproporcional para uma apendicite aguda inicial. Essa conduta é reservada para casos de neoplasia de apêndice confirmada ou quando a base do ceco está tão comprometida pela inflamação ou necrose que não permite a ligadura segura apenas do apêndice.\n\nAlternativa (e) INCORRETA: A drenagem percutânea é indicada apenas em casos de apendicite complicada com a formação de abscessos volumosos (geralmente maiores que 4 cm) em pacientes com vários dias de evolução (fase de plastrão). O paciente em questão tem apenas 24 horas de evolução e não apresenta uma coleção drenável, mas sim um processo inflamatório agudo inicial.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  },
+  {
+    "id": "AJUDA_8b370766-06ac-47e7-8bcf-8238fc292703",
+    "originalId": "8b370766-06ac-47e7-8bcf-8238fc292703",
+    "statement": "O Coeficiente de Mortalidade Infantil (CMI) é um dos indicadores mais sensíveis da qualidade de vida e desenvolvimento socioeconômico de uma população. O CMI é calculado pela razão entre:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Número de óbitos em menores de 5 anos X 1.000 dividido pela população total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Número de óbitos em menores de 1 ano X 1.000 dividido pela população de crianças de 0 a 1 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Número de óbitos em menores de 1 ano X 1.000 dividido pela população total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Número de óbitos em menores de 1 ano X 1.000 dividido pelo número de nascidos vivos na área e período.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Número de óbitos fetais X 1.000 dividido pelo número de nascidos vivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Coeficiente (ou Taxa) de Mortalidade Infantil (CMI) é um indicador fundamental em saúde pública, pois reflete as condições de vida, a assistência à saúde da gestante e do recém-nascido, além do nível de desenvolvimento socioeconômico de uma região. Para o cálculo de coeficientes de mortalidade em pediatria, utilizamos como denominador o número de nascidos vivos, que representa a população real sob risco de morte naquela faixa etária.\n\nAnálise das alternativas:\n\na) Incorreta. A descrição refere-se a uma tentativa de calcular a Mortalidade na Infância (menores de 5 anos). No entanto, mesmo para menores de 5 anos, o denominador correto deve ser o número de nascidos vivos, e não a população total.\n\nb) Incorreta. O numerador (óbitos em menores de 1 ano) está correto, mas o denominador \"população de crianças de 0 a 1 ano\" é tecnicamente impreciso para o cálculo epidemiológico do CMI. O padrão-ouro e a convenção internacional utilizam o número de nascidos vivos no mesmo período e local, pois é um dado mais exato obtido por meio das declarações de nascimento.\n\nc) Incorreta. O denominador \"população total\" é utilizado para o cálculo do Coeficiente de Mortalidade Geral. Usá-lo para mortalidade infantil diluiria o dado e não expressaria o risco real de óbito para aquela faixa etária específica.\n\nd) Correta. Esta alternativa apresenta a fórmula clássica do CMI: (Número de óbitos em menores de 1 ano / Número de nascidos vivos) x 1.000. O fator multiplicador 1.000 é o padrão para que o resultado seja expresso em \"óbitos por mil nascidos vivos\", facilitando a comparação entre diferentes regiões e países.\n\ne) Incorreta. A relação entre óbitos fetais e nascidos vivos define o Coeficiente de Mortalidade Fetal. A mortalidade infantil foca exclusivamente nos óbitos ocorridos após o nascimento (nascidos vivos que falecem antes de completar um ano).\n\nGabarito: Letra (d).",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  },
+  {
+    "id": "AJUDA_8b3b2166-5a2a-4dca-ab13-c9a73249a537",
+    "originalId": "8b3b2166-5a2a-4dca-ab13-c9a73249a537",
+    "statement": "Casal com infertilidade há 3 anos. Ela, 34 anos de idade é nuligesta, com ciclos menstruais regulares. Ele, 36 anos, com dois filhos de outro casamento. Quais exames devem fazer parte da investigação inicial.\n\nI. Dosagem de progesterona no 21º dia do ciclo.\nII. Espermograma\nIII. Histerosalpingografia\nIV. Laparoscopia",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II e III",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "II e IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Apenas IV",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A investigação da infertilidade conjugal deve ser iniciada de forma simultânea para o homem e para a mulher após 12 meses de tentativas (ou 6 meses se a mulher tiver mais de 35 anos). No caso apresentado, o casal tenta há 3 anos, o que torna a investigação obrigatória. A propedêutica básica foca em quatro pilares: fator masculino, fator ovulatório, fator tuboperitoneal e fator uterino.\n\nAnálise dos itens:\n\nItem I - Dosagem de progesterona no 21º dia do ciclo: Correto. Este exame avalia o fator ovulatório. A coleta realizada na fase lútea média (aproximadamente no 21º dia em ciclos de 28 dias) confirma se ocorreu a ovulação. Níveis acima de 3 ng/mL indicam ovulação, sendo um passo essencial na triagem inicial, mesmo em mulheres com ciclos regulares.\n\nItem II - Espermograma: Correto. Avalia o fator masculino. É um exame fundamental e deve ser solicitado logo no início. O fato de o homem já possuir filhos de outro relacionamento não exclui a necessidade do exame, uma vez que a fertilidade masculina pode se alterar ao longo do tempo por diversos motivos, como surgimento de varicocele, infecções ou exposição a toxinas.\n\nItem III - Histerossalpingografia: Correto. Avalia o fator tuboperitoneal e a cavidade uterina. É o exame padrão-ouro inicial para verificar a permeabilidade das tubas uterinas. Caso as tubas estejam obstruídas, o encontro do espermatozoide com o óvulo fica impossibilitado, configurando uma causa comum de infertilidade.\n\nItem IV - Laparoscopia: Incorreto. Embora seja um excelente método diagnóstico e terapêutico, a laparoscopia é um procedimento cirúrgico invasivo e com custos elevados. Por isso, não faz parte da investigação inicial (\"propedêutica básica\"). Ela é reservada para casos específicos, como quando os exames iniciais são normais (infertilidade sem causa aparente) ou quando há suspeita clínica de endometriose e aderências pélvicas.\n\nAnálise das alternativas:\n\na) I, II e III: Correta. Engloba os exames fundamentais da triagem básica inicial para o casal.\nb) Apenas I: Incorreta. A investigação seria incompleta, ignorando os fatores masculino e tubário.\nc) I e III: Incorreta. Omite o fator masculino, que é responsável por cerca de 40% dos casos de infertilidade.\nd) II e IV: Incorreta. Inclui um exame invasivo de segunda linha (laparoscopia) e omite a avaliação da ovulação e das tubas.\ne) Apenas IV: Incorreta. A laparoscopia não é o primeiro passo na investigação de um casal infértil sem queixas álgicas ou exames prévios alterados.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  },
+  {
+    "id": "AJUDA_8b3f18d3-0dcc-4135-a514-1450e5934038",
+    "originalId": "8b3f18d3-0dcc-4135-a514-1450e5934038",
+    "statement": "Homem, 63 anos de idade, tem hipertensão arterial sistêmica e obesidade. Procurou o pronto-socorro por dor e calor na perna direita, evoluindo com febre e calafrios. Ele foi admitido no hospital com diagnóstico inicial de celulite complicada com abscesso local. Uma hemocultura identificou Staphylococcus aureus sensível à meticilina e ele foi tratado com linezolida por 7 dias e drenagem da coleção. Cinco dias após a alta hospitalar, ele retorna com queixa de dores nos joelhos. O exame físico revela dificuldade de flexão completa dos joelhos por derrame articular. A artrocentese diagnóstica dos dois joelhos identificou os seguintes resultados: celularidade de 61 mil com 93% de polimorfonucleares e 7% de monócitos/linfócitos, presença de cristais de pirofosfato e monourato na microscopia de luz polarizada, cultura em andamento. Assinale a alternativa com a hipótese diagnóstica apropriada ao caso do paciente e a sua respectiva conduta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gota; anti-inflamatório e colchicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Condrocalcinose; prednisona e colchicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Artrite reativa; prednisona e metotrexate.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Artrite séptica; limpeza cirúrgica e oxacilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um homem de 63 anos com histórico recente de infecção de pele por *Staphylococcus aureus* sensível à meticilina (MSSA), que agora manifesta um quadro agudo de dor e derrame articular bilateral nos joelhos. A análise do líquido sinovial revela uma celularidade de 61.000 células/mm³ com 93% de polimorfonucleares, além da presença de cristais de pirofosfato e monourato.\n\nO ponto-chave para a resolução desta questão é a interpretação do líquido sinovial no contexto clínico. Uma contagem de leucócitos acima de 50.000/mm³ com predominância de neutrófilos (neste caso, 93%) é fortemente sugestiva de artrite séptica. Embora a presença de cristais (gota e pseudogota) possa causar inflamação exuberante, eles não excluem a possibilidade de infecção coexistente. Na verdade, articulações previamente lesadas por deposição de cristais são mais suscetíveis à colonização bacteriana hematogênica. Dado que o paciente teve uma infecção recente por *S. aureus* (uma causa comum de disseminação hematogênica para articulações), a hipótese de artrite séptica deve ser a prioridade diagnóstica e terapêutica, pois é uma emergência médica que pode levar à destruição articular rápida.\n\nAnálise das alternativas:\n\na) Incorreta. Embora existam cristais de monourato, o quadro clínico pós-infecção estafilocócica e a alta celularidade sinovial exigem a exclusão ou tratamento de artrite séptica. O tratamento apenas para gota seria insuficiente e perigoso se a infecção estiver presente.\n\nb) Incorreta. A presença de cristais de pirofosfato caracteriza a condrocalcinose (pseudogota), mas, assim como na gota, isso não explica a gravidade do quadro nem o risco iminente de sepse articular após uma infecção sistêmica recente.\n\nc) Incorreta. A artrite reativa geralmente ocorre após infecções gastrointestinais ou geniturinárias, e o líquido sinovial costuma ser estéril e sem cristais. O tratamento com metotrexato não é indicado na fase aguda de uma artrite inflamatória ou infecciosa.\n\nd) Correta. A hipótese de artrite séptica é a mais adequada devido à celularidade sinovial (61.000/mm³), ao predomínio de neutrófilos e ao histórico recente de infecção por *S. aureus*. A conduta padrão para artrite séptica envolve a drenagem da articulação (limpeza cirúrgica ou artroscópica) e antibioticoterapia sistêmica. Como o agente isolado previamente foi o MSSA, a oxacilina é a escolha terapêutica adequada. Note que a linezolida, usada anteriormente, não é a droga de escolha para MSSA e pode ter mascarado ou não ter sido suficiente para prevenir a disseminação articular.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Artrites Microcristalinas",
+      "Artropatias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  },
+  {
+    "id": "AJUDA_8b44ee36-3112-4a5b-92fd-dc4129eb1f84",
+    "originalId": "8b44ee36-3112-4a5b-92fd-dc4129eb1f84",
+    "statement": "Lactente de 6 meses apresenta-se febril, com esforço respiratório progressivo e dessaturação. Sua irmã de 4 anos apresenta-se “gripada “no momento, sem maiores complicações. Tanto seu pai como sua mãe são asmáticos. Em casa, recebeu paracetamol no intuito de controlar a sua febre, mas, dada a piora do quadro, seus pais o trouxeram ao pronto-socorro. Um teste rápido evidencia a presença de Vírus Sincicial respiratório nas secreções respiratórias do paciente. Acerca do tratamento do quadro acima citado, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Salbutamol é a medida mais efetiva para o tratamento do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suporte ventilatório e hidratação são as medidas mais efetivas na abordagem desse paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O uso imediato de antivirais, como ribavarina e osetalmivir, está indicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de claritromicina está indicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — lactente de 6 meses com pródromos virais (contato com a irmã doente), febre, esforço respiratório e confirmação de Vírus Sincicial Respiratório (VSR) — é o diagnóstico clássico de Bronquiolite Viral Aguda (BVA). Esta é a infecção das vias aéreas inferiores mais comum em crianças menores de 2 anos.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. Embora o paciente possua histórico familiar de asma (o que pode sugerir uma predisposição à sibilância), as principais diretrizes nacionais e internacionais (como a Academia Americana de Pediatria e a Sociedade Brasileira de Pediatria) não recomendam o uso rotineiro de broncodilatadores, como o salbutamol, na bronquiolite. A fisiopatologia da BVA envolve edema de mucosa, excesso de secreção e necrose epitelial, e não propriamente o broncoespasmo do músculo liso. Estudos mostram que o salbutamol não reduz o tempo de internação nem melhora o desfecho clínico na maioria dos casos.\n\nAlternativa b) Correta. O tratamento da Bronquiolite Viral Aguda é essencialmente de suporte. Como não existe uma terapia específica que ataque o vírus de forma rotineira, a conduta baseia-se em: garantir a oxigenação adequada (suporte ventilatório, que pode variar de cateter de O2 a ventilação não invasiva ou mecânica, dependendo da gravidade) e manter a hidratação e nutrição do paciente (seja por via oral, sonda ou venosa), uma vez que o esforço respiratório e a taquipneia aumentam a perda hídrica e dificultam a ingestão.\n\nAlternativa c) Incorreta. O oseltamivir é indicado para o vírus Influenza, e não para o VSR. Já a ribavirina é um antiviral que pode ser considerado apenas em casos raros de pacientes com imunossupressão grave ou cardiopatias congênitas complexas, devido ao seu alto custo, toxicidade e eficácia limitada. Não é uma conduta de primeira linha ou imediata para um lactente previamente hígido.\n\nAlternativa d) Incorreta. A claritromicina é um antibiótico (macrolídeo). Como o agente etiológico identificado é o Vírus Sincicial Respiratório, o uso de antibióticos não está indicado. O uso indiscriminado de antibióticos na BVA não previne complicações bacterianas e não altera o curso da doença viral. Eles devem ser reservados apenas se houver evidência clara de infecção bacteriana secundária associada, o que não é o caso descrito.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  },
+  {
+    "id": "AJUDA_8b4f699c-f7ec-49f0-9338-0df68fbfdf92",
+    "originalId": "8b4f699c-f7ec-49f0-9338-0df68fbfdf92",
+    "statement": "As doenças respiratórias são as principais responsáveis pela morbidade e mortalidade no período neonatal, representando a causa mais comum de internação nessa faixa etária. Com base nisso, considere um recém-nascido (RN) de 37 semanas de idade gestacional, com peso de nascimento = 2900, Apgar 7/9, internado em unidade de terapia intensiva neonatal em razão de desconforto respiratório com 24 horas de vida. A gestação ocorreu sem intercorrências, parto vaginal sem intercorrências, líquido amniótico claro, bolsa rota no ato. Ao exame físico, observaram-se FC = 150 bpm, FR = 90 irpm, SatO2 = 96%, RN acianótico, anictérico, ativo, reativo ao exame, com desconforto respiratório, ausculta sem sibilos ou ruídos adventícios.\n\nConsiderando os critérios do Boletim de Silverman-Andersen para avaliação do desconforto respiratório, em relação aos achados esperados no caso clínico mencionado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Movimentos de tórax e abdome: declínio inspiratório; intensa retração costal interior; batimentos de asas do nariz: intenso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Movimentos de tórax e abdome: sincronismo; ausência de retração costal interior; sem gemido expiratório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Movimentos de tórax e abdome: sincronismo; presença de distensão abdominal; icterícia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gemidos: audível sem estetoscópio; batimento de asas do nariz: intenso; icterícia presente",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Boletim de Silverman-Andersen (BSA) é uma ferramenta clínica fundamental na neonatologia para quantificar a gravidade do desconforto respiratório. Ao contrário do Apgar, no BSA, quanto maior a pontuação, maior é a gravidade da insuficiência respiratória (variando de 0 a 10). Os cinco parâmetros avaliados são: movimentos toracoabdominais, tiragem intercostal, retração xifoide, batimento de asas do nariz e gemido expiratório.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Esta alternativa descreve sinais clínicos que compõem o Boletim de Silverman-Andersen e que indicam desconforto respiratório significativo. O \"declínio inspiratório\" (também chamado de bamboleio ou movimento paradoxal entre tórax e abdome), a \"intensa retração costal\" e o \"batimento de asas do nariz intenso\" são achados clássicos de um recém-nascido com taquipneia importante (FR = 90 irpm), como o descrito no caso clínico. Cada um desses achados receberia pontuação 2 no escore, totalizando um grau elevado de desconforto.\n\nAlternativa B (Incorreta): Esta alternativa descreve um recém-nascido sem desconforto respiratório. O sincronismo toracoabdominal, a ausência de retração costal e a ausência de gemido resultariam em uma pontuação zero no Boletim de Silverman-Andersen. O caso clínico afirma explicitamente que o bebê apresenta desconforto respiratório e uma frequência respiratória muito elevada (90 irpm), o que invalida esta opção.\n\nAlternativa C (Incorreta): Embora o sincronismo seja um parâmetro do BSA (indicando normalidade), a \"distensão abdominal\" e a \"icterícia\" não fazem parte dos critérios avaliados por este boletim. O BSA foca estritamente na mecânica respiratória e nos sinais de esforço ventilatório. Além disso, o enunciado descreve o RN como anictérico.\n\nAlternativa D (Incorreta): Embora o gemido audível sem estetoscópio e o batimento de asas do nariz intenso sejam componentes corretos do BSA para classificar desconforto grave, a alternativa inclui a \"icterícia\". Como mencionado anteriormente, a icterícia é um sinal clínico importante na neonatologia, mas não pertence aos critérios de avaliação do desconforto respiratório pelo Boletim de Silverman-Andersen. Ademais, o exame físico do paciente descreve que ele é anictérico.\n\nResumo dos parâmetros do Boletim de Silverman-Andersen para consulta:\n1. Movimentos toracoabdominais: Sincronizado (0), Atraso na inspiração (1), Bamboleio/Declínio (2).\n2. Tiragem intercostal: Ausente (0), Discreta (1), Acentuada (2).\n3. Retração xifoide: Ausente (0), Discreta (1), Acentuada (2).\n4. Batimento de asas do nariz: Ausente (0), Discreto (1), Acentuado (2).\n5. Gemido expiratório: Ausente (0), Audível com estetoscópio (1), Audível sem estetoscópio (2).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  },
+  {
+    "id": "AJUDA_8b519aad-a546-4101-ac16-f79d3e9c8882",
+    "originalId": "8b519aad-a546-4101-ac16-f79d3e9c8882",
+    "statement": "Um médico de família, ao analisar o perfil epidemiológico de sua microárea, observa as seguintes ações em andamento:\n\n1. A equipe de enfermagem promove um rastreamento oportunístico para diabetes e hipertensão entre os usuários que procuram a unidade de saúde para queixas agudas.\n2. A equipe de saúde está organizando uma campanha de vacinação na creche no território da UBS, com foco na atualização das vacinas de rotina.\n3. O agente comunitário de saúde (ACS) em parceria com estudantes de medicina organiza grupos de caminhada e de orientação para uma alimentação saudável, evitando o fumo e as bebidas alcoólicas.\n4. O médico da família e comunidade questiona a indicação de uma bateria de exames diagnósticos complexos para um paciente idoso assintomático, considerando o risco de resultados falso-positivos e o potencial de iatrogenia.\n\nConsiderando os níveis de prevenção, qual das alternativas abaixo associa corretamente as ações observadas com os níveis de prevenção correspondentes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ação 1 (Prevenção Primária), Ação 2 (Prevenção Secundária), Ação 3 (Prevenção Terciária), Ação 4 (Prevenção Quaternária).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ação 1 (Prevenção Secundária), Ação 2 (Prevenção Primária), Ação 3 (Prevenção Primordial), Ação 4 (Prevenção Quaternária).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ação 1 (Prevenção Secundária), Ação 2 (Prevenção Primária), Ação 3 (Prevenção Quaternária), Ação 4 (Prevenção Terciária).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ação 1 (Prevenção Primária), Ação 2 (Prevenção Secundária), Ação 3 (Prevenção Quaternária), Ação 4 (Prevenção Terciária).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver a questão, é necessário analisar o nível de prevenção associado a cada uma das ações descritas:\n\nAção 1: O rastreamento oportunístico (screening) de hipertensão e diabetes busca a detecção precoce de doenças assintomáticas ou em estágios iniciais para intervenção imediata, enquadrando-se como Prevenção Secundária.\n\nAção 2: A vacinação atua no período pré-patogênico, promovendo a imunização específica para impedir que a doença ocorra no hospedeiro suscetível, caracterizando a Prevenção Primária.\n\nAção 3: O estímulo a grupos de caminhada e a orientação geral sobre alimentação saudável, evitando o tabagismo e o etilismo, atuam na modificação de hábitos de vida e no combate ao estabelecimento de fatores de risco populacionais, o que define a Prevenção Primordial.\n\nAção 4: Evitar a solicitação excessiva ou desnecessária de exames diagnósticos em pessoas assintomáticas, prevenindo sobrediagnóstico, sobretratamento e iatrogenias, é a definição clássica de Prevenção Quaternária.\n\nAnálise das alternativas:\n\na) Incorreta. Inverte a classificação das ações: rastreamento não é prevenção primária, vacinação não é prevenção secundária e orientações de hábitos de vida não são prevenção terciária (esta última refere-se à reabilitação e limitação de incapacidades).\n\nb) Correta. Correlaciona perfeitamente todas as ações: Ação 1 (Prevenção Secundária), Ação 2 (Prevenção Primária), Ação 3 (Prevenção Primordial) e Ação 4 (Prevenção Quaternária).\n\nc) Incorreta. Embora acerte as ações 1 e 2, classifica erroneamente a promoção de hábitos de vida (Ação 3) como quaternária e a prevenção de iatrogenias (Ação 4) como terciária.\n\nd) Incorreta. Erra ao classificar o rastreamento como primário, a vacinação como secundária, os hábitos de vida como quaternária e a proteção contra sobrediagnóstico como terciária.\n\nGabarito oficial: Letra b.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Atenção Primária à Saúde",
+      "Processo Saúde-Doença",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  },
+  {
+    "id": "AJUDA_8b58bf89-c116-4c9b-85c4-4df9148ac443",
+    "originalId": "8b58bf89-c116-4c9b-85c4-4df9148ac443",
+    "statement": "Homem, 55 anos de idade, após apresentar melena, foi submetido à endoscopia digestiva alta que mostrou varizes de esôfago com sinais de sangramento recente. Feito diagnóstico de cirrose por vírus C. O cálculo do escore de Child era de B8 e MELD-Na de 20. A tomografia de abdome demonstrou fígado com superfícies irregulares, diminuído de tamanho, recanalização da veia paraumbilical com nódulos de 3 cm no segmento VII e 2 cm no segmento VI, com realce na fase arterial e lavagem na fase tardia (wash-out), esplenomegalia, varizes perigástricas, periesplênicas e shunt esplenorrenal. Qual é a melhor conduta neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transplante hepático.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hepatectomia regrada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hepatectomia não regrada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quimioterapia exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, devemos integrar o diagnóstico de hepatocarcinoma (HCC) com a avaliação da função hepática e da hipertensão portal do paciente.\n\nDiagnóstico de HCC: O paciente apresenta cirrose (vírus C) e nódulos hepáticos (3 cm e 2 cm) com o padrão radiológico típico: realce na fase arterial e lavagem (wash-out) na fase tardia. Esses achados em um fígado cirrótico são diagnósticos de hepatocarcinoma, sem necessidade de biópsia.\n\nCritérios de Milão: O paciente preenche os Critérios de Milão (um nódulo de até 5 cm ou até três nódulos de até 3 cm cada). No caso, ele possui dois nódulos, sendo o maior de 3 cm. Pacientes dentro desses critérios são candidatos ao tratamento curativo via transplante hepático.\n\nAvaliação da Conduta:\n\na) Correta. O transplante hepático é a melhor conduta porque trata simultaneamente o tumor e a doença de base (cirrose). O paciente possui disfunção hepática significativa (Child-Pugh B8 e MELD-Na 20) e sinais claros de hipertensão portal clinicamente significativa (varizes esofágicas com sangramento recente e shunt esplenorrenal). Nessas condições, o transplante é a única opção que oferece cura e resolve a hipertensão portal.\n\nb) e c) Incorretas. As hepatectomias (regradas ou não regradas) são indicadas preferencialmente para pacientes com HCC em fígados não cirróticos ou cirróticos com função hepática muito preservada (Child-Pugh A), sem hipertensão portal e com bilirrubinas normais. Este paciente é Child B, tem MELD elevado e hipertensão portal grave, o que torna a ressecção cirúrgica de alto risco para insuficiência hepática pós-operatória e óbito.\n\nd) Incorreta. A quimioterapia exclusiva não é o tratamento de escolha para um paciente que preenche critérios para transplante (curativo). A quimioterapia sistêmica é reservada para casos avançados (BCLC C), com invasão vascular ou metástases, o que não foi descrito. Tratamentos como a quimioembolização arterial (TACE) poderiam ser usados como ponte para o transplante, mas não como terapia exclusiva e definitiva neste cenário.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Transplante Hepático e Hepatite Fulminante",
+      "Cirrose Hepática",
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  },
+  {
+    "id": "AJUDA_8b786cae-0e2c-48f0-8084-133481a61dbe",
+    "originalId": "8b786cae-0e2c-48f0-8084-133481a61dbe",
+    "statement": "Homem de 55 anos, agricultor, apresentou úlcera única, de bordas infiltradas, emolduradas e fundo granuloso na região pré-tibial esquerda, com crescimento há 45 dias. AP: DM2, doença de Chagas, bloqueio atrioventricular grau II, bloqueio de ramo esquerdo e doença renal crônica pré-dialítica. Exame citológico da base da úlcera: estruturas parasitárias diminutas.\nA estratégia terapêutica mais segura e eficaz é",
+    "options": [
+      {
+        "id": "A",
+        "text": "miltefosina oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "antimoniato de N-metil glucamina intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "anfotericina B (lipossomal) endovenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "pentamidina intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito — úlcera de bordas emolduradas, fundo granuloso e presença de estruturas parasitárias diminutas (amastigotas) no exame citológico — é patognomônico de leishmaniose tegumentar americana (LTA). O grande desafio da questão não é o diagnóstico, mas a escolha do tratamento em um paciente com múltiplas comorbidades.\n\nO paciente possui 55 anos (idade > 50 anos é fator de risco), doença renal crônica pré-dialítica e cardiopatias graves (bloqueio atrioventricular de segundo grau e bloqueio de ramo esquerdo). Essas condições limitam severamente o uso das terapias convencionais.\n\nAnálise das alternativas:\n\na) Incorreta. A miltefosina é uma opção de tratamento oral para leishmaniose, mas, no Brasil, as diretrizes do Ministério da Saúde priorizam a anfotericina B lipossomal para casos com contraindicações formais aos antimoniais, especialmente em pacientes com disfunção orgânica grave. Além disso, a miltefosina pode ter efeitos colaterais gastrointestinais e renais que exigem cautela.\n\nb) Incorreta. O antimoniato de N-metilglucamina (Glucantime) é a primeira escolha para pacientes hígidos. No entanto, ele é formalmente contraindicado para este paciente devido à sua toxicidade renal e, principalmente, cardíaca. O antimônio pode prolongar o intervalo QT e causar arritmias graves, o que é extremamente perigoso em alguém que já possui bloqueios de condução cardíaca (BAV II e BRE).\n\nc) Correta. A anfotericina B em sua formulação lipossomal é a estratégia mais segura e eficaz para este caso. Segundo o Guia de Vigilância em Saúde e os protocolos de leishmaniose, ela é indicada como primeira escolha para pacientes com mais de 50 anos, portadores de insuficiência renal, doenças cardíacas ou hepáticas. A formulação lipossomal reduz drasticamente a nefrotoxicidade em comparação com a anfotericina B desoxicolato e é muito mais segura para o coração do que o antimônio.\n\nd) Incorreta. A pentamidina é uma droga de segunda linha, utilizada principalmente em casos de resistência ou para espécies específicas (como L. guyanensis). Contudo, ela também apresenta toxicidade significativa, podendo causar hipoglicemia, pancreatite, nefrotoxicidade e alterações no ritmo cardíaco, sendo contraindicada para este paciente com perfil renal e cardiológico frágil.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  },
+  {
+    "id": "AJUDA_8b7d86af-321f-4063-ac4b-0dccce51d555",
+    "originalId": "8b7d86af-321f-4063-ac4b-0dccce51d555",
+    "statement": "Assinale a alternativa correta de acordo com as atuais recomendações para diagnóstico e manejo da coledocolitíase em pacientes com colelitíase, segundo o último guideline da American Society for Gastrointestinal Endoscopy (ASGE).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estas recomendações incluem um algoritmo, utilizando fatores como idade, alteração de exames laboratoriais e achados ultrassonográficos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pacientes com um preditor muito forte ou dois preditores fortes são classificados como risco médio e não devem ser submetidos a colangiopancreatografia retrógrada endoscópica (CPRE).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na presença de dois fatores preditores fracos, o risco é moderado, e recomenda-se investigação adicional com ultrassonografia convencional, sem indicação de colecistectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Caso não seja evidenciado nenhum fator preditor, o risco é baixo, e a conduta é observação com nova ultrassonografia em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Em casos diagnosticados de coledocolitíase em pacientes assintomáticos, não é recomendado tratamento para remoção dos cálculos, mesmo que o paciente esteja em condições clínicas para realizar a intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ESTRATIFICAÇÃO DE RISCO PARA COLEDOCOLITÍASE (ASGE)\n\nA questão aborda as diretrizes da American Society for Gastrointestinal Endoscopy (ASGE) para o manejo da coledocolitíase em pacientes com colelitíase. O objetivo é estratificar o risco do paciente para decidir entre a colecistectomia direta, exames de imagem adicionais ou intervenção por CPRE.\n\nAlternativa A (CORRETA): As recomendações da ASGE utilizam um algoritmo de estratificação baseado em três pilares: dados clínicos (como a presença de colangite), exames laboratoriais (bilirrubinas e enzimas hepáticas) e achados de imagem inicial (geralmente a ultrassonografia transabdominal). Fatores como idade acima de 55 anos, dilatação do ducto biliar comum e elevação de testes bioquímicos hepáticos são fundamentais para definir se o risco é baixo, intermediário ou alto.\n\nAlternativa B (INCORRETA): Pacientes com preditores muito fortes (como cálculo visível na ultrassonografia, colangite ascendente ou bilirrubina total > 4 mg/dL associada a ducto dilatado) são classificados como de alto risco. Para esses pacientes, a conduta indicada é a realização direta da CPRE (Colangiopancreatografia Retrógrada Endoscópica), e não apenas o acompanhamento ou classificação de risco médio.\n\nAlternativa C (INCORRETA): Quando o paciente é classificado como risco moderado (ou intermediário), a conduta recomendada é a investigação adicional com exames de maior acurácia, especificamente a Colangiorressonância (CPRM) ou a Ultrassonografia Endoscópica (Ecoendoscopia). A ultrassonografia convencional tem baixa sensibilidade para cálculos no colédoco distal e não é o exame de escolha para essa fase. Se confirmada a colelitíase sintomática, a colecistectomia continua indicada.\n\nAlternativa D (INCORRETA): Caso o paciente seja classificado como risco baixo (ausência de preditores), a probabilidade de coledocolitíase é muito pequena. A conduta correta para pacientes com colelitíase sintomática é proceder diretamente para a colecistectomia, sem necessidade de exames adicionais da via biliar ou observação prolongada com novos exames de imagem em 6 meses.\n\nAlternativa E (INCORRETA): A presença de cálculos no ducto biliar comum (coledocolitíase), mesmo em pacientes assintomáticos, exige tratamento para a remoção dos cálculos. Isso se deve ao alto risco de complicações graves a curto e médio prazo, como colangite aguda e pancreatite biliar, que possuem morbimortalidade significativa. Se o paciente tem condições clínicas, o cálculo deve ser removido.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:47.604Z"
+  }
+]

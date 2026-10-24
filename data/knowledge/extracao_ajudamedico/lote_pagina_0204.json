@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_389d1029-bbc0-4a2a-887a-12b83763ddb2",
+    "originalId": "389d1029-bbc0-4a2a-887a-12b83763ddb2",
+    "statement": "Assinale a alternativa que apresenta corretamente uma possível etiologia de choque restritivo no politraumatizado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infarto agudo do miocárdio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fratura pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Septicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trauma raquimedular cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pneumotórax hipertensivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender a questão, é necessário classificar os tipos de choque no contexto do atendimento ao paciente politraumatizado, focando na fisiopatologia de cada um. O choque restritivo, também frequentemente chamado de choque obstrutivo, ocorre quando há um impedimento mecânico ao enchimento das câmaras cardíacas ou à ejeção de sangue, reduzindo o débito cardíaco independentemente da volemia ou da contratilidade intrínseca do miocárdio.\n\nAlternativa (a) Incorreta: O infarto agudo do miocárdio (IAM) é uma causa de choque cardiogênico. Nesse caso, o problema primário é a falência da bomba cardíaca por perda de tecido muscular funcional ou arritmia, e não uma obstrução externa ou restrição mecânica ao fluxo. No trauma, a contusão miocárdica seria uma causa análoga de choque cardiogênico.\n\nAlternativa (b) Incorreta: A fratura pélvica é uma das principais causas de choque hipovolêmico de origem hemorrágica. O espaço retroperitoneal associado à pelve pode acomodar grandes volumes de sangue, levando à redução do volume intravascular circulante.\n\nAlternativa (c) Incorreta: A septicemia causa choque distributivo. Nele, ocorre uma vasodilatação sistêmica acentuada e aumento da permeabilidade capilar devido à resposta inflamatória. Embora possa ocorrer em pacientes traumatizados em estágio tardio (na UTI), não é uma etiologia comum de choque no atendimento inicial/agudo do politrauma.\n\nAlternativa (d) Incorreta: O trauma raquimedular cervical causa o choque neurogênico, que também é um tipo de choque distributivo. A lesão da medula espinhal interrompe as vias simpáticas descendentes, resultando em perda do tônus vascular (vasodilatação) e, frequentemente, bradicardia por perda da oposição ao tônus vagal.\n\nAlternativa (e) Correta: O pneumotórax hipertensivo é a causa clássica de choque obstrutivo/restritivo no trauma. O acúmulo progressivo de ar no espaço pleural gera uma pressão positiva que desvia o mediastino para o lado oposto. Esse desvio causa a angulação e compressão das veias cavas, impedindo o retorno venoso (pré-carga) para o átrio direito. Sem sangue chegando ao coração, o débito cardíaco despenca, configurando o choque por restrição mecânica. Outro exemplo clássico nesta categoria seria o tamponamento cardíaco.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  },
+  {
+    "id": "AJUDA_38a2bf8c-8e3b-4635-b05f-6a1ebdf391fd",
+    "originalId": "38a2bf8c-8e3b-4635-b05f-6a1ebdf391fd",
+    "statement": "Paciente, 28 anos, realiza ultrassonografias seriadas para investigação da infertilidade, há 2 anos sem sucesso e o espermograma do parceiro apresenta-se normal. O laudo da ultrassonografia realizada na data do atendimento: mostra no ovário esquerdo, 1 imagem de bordas irregulares, com conteúdo heterogêneo, parcialmente hipoecogênico, presença de halo vascular ao Doppler sugerindo corpo amarelo, endométrio de aspecto hiperecogênico, homogêneo, medindo 9,5mm de espessura; fundo de saco posterior com pequena quantidade de líquido livre. Sobre a ovulação e fase do ciclo menstrual, pode-se afirmar, que essa paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ainda não ovulou e encontra-se na fase lútea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ainda não ovulou e encontra-se na fase folicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "já ovulou e encontra-se na fase folicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "já ovulou e encontra-se na fase lútea.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para identificar o momento do ciclo menstrual por meio da ultrassonografia transvaginal, deve-se correlacionar os achados ovarianos e endometriais com a fisiologia reprodutiva:\n\n1. Ovário esquerdo com imagem sugestiva de corpo amarelo (corpo lúteo): O corpo lúteo se forma a partir do colapso do folículo dominante logo após a ovulação (ruptura folicular). A presença de conteúdo heterogêneo e do halo vascular ao Doppler (anel de fogo) é patognomônica dessa estrutura, confirmando que a ovulação já ocorreu.\n2. Endométrio hiperecogênico e homogêneo: Trata-se do padrão endometrial secretor, característico da fase lútea, decorrente da ação da progesterona produzida pelo corpo lúteo. Na fase folicular pré-ovulatória, o endométrio apresenta aspecto trilaminar.\n3. Líquido livre em fundo de saco posterior: Achado comum no período pós-ovulatório imediato, decorrente do extravasamento do líquido antral com a rotura do folículo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A presença do corpo lúteo e do líquido livre na pelve atesta que o folículo já se rompeu, portanto a paciente já ovulou. Além disso, a fase lútea é definida cronologicamente pelo período pós-ovulatório.\n\nAlternativa b: Incorreta. A fase folicular precede a ovulação, período no qual se observaria folículo antral dominante e endométrio trilaminar, o que contraria todos os achados descritos no laudo.\n\nAlternativa c: Incorreta. A primeira afirmação está correta (a paciente já ovulou), mas a fase do ciclo que sucede a ovulação é a fase lútea (ou secretora), e não a fase folicular.\n\nAlternativa d: Correta. A identificação ultrassonográfica do corpo lúteo associada ao endométrio hiperecogênico e ao líquido livre na cavidade pélvica confirma inequivocamente que a ovulação ocorreu e que a paciente se encontra na fase lútea do ciclo menstrual.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Ciclo Menstrual",
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  },
+  {
+    "id": "AJUDA_38a485ba-4ca4-455b-8c2b-15f206babba4",
+    "originalId": "38a485ba-4ca4-455b-8c2b-15f206babba4",
+    "statement": "Assinale a alternativa que apresenta a conduta correta de uma pessoa que encontra um macaco morto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É importante que a pessoa tente verificar se o macaco teve morte em decorrência de um evento traumático, como, por exemplo, um atropelamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uma conduta correta é informar imediatamente às autoridades de saúde do município, pois se trata de uma epizootia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A conduta correta é levar o macaco até a UBS mais próxima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se for uma região onde há febre amarela, deve-se enterrar imediatamente o animal antes que seu corpo se deteriore.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A vigilância de epizootias em primatas não humanos (PNH) é a principal estratégia para a detecção precoce da circulação do vírus da febre amarela no Brasil. Os macacos não transmitem a doença diretamente ao homem, mas atuam como sentinelas, sinalizando a presença do vírus em determinada região antes que casos humanos ocorram.\n\nExplicação das alternativas:\n\nAlternativa a: Incorreta. A orientação oficial do Ministério da Saúde é que nenhum cidadão deve tocar ou manipular o animal, independentemente da suspeita da causa da morte. A verificação técnica para distinguir entre morte por causas externas (como atropelamento ou ataque de outros animais) e morte por causas naturais ou doenças é de competência exclusiva dos profissionais de vigilância, que utilizam Equipamentos de Proteção Individual (EPIs).\n\nAlternativa b: Correta. Esta é a conduta preconizada pelos protocolos de saúde pública. A morte de um primata caracteriza uma epizootia e deve ser notificada imediatamente (em até 24 horas) às autoridades de saúde municipais. Essa rapidez permite que equipes técnicas recolham o animal ou coletem amostras biológicas para análise laboratorial, além de possibilitar ações de bloqueio vacinal na região, caso a circulação viral seja confirmada.\n\nAlternativa c: Incorreta. O indivíduo jamais deve remover o animal do local onde foi encontrado nem levá-lo a unidades de saúde humana. O transporte inadequado pode representar riscos biológicos ao cidadão, e a remoção sem critérios técnicos pode comprometer a análise epidemiológica do local do achado.\n\nAlternativa d: Incorreta. Enterrar o animal impede a realização de exames fundamentais, como a análise de tecidos (fígado, cérebro, rins), necessários para o diagnóstico da febre amarela ou outras doenças. Sem o diagnóstico laboratorial, perde-se a oportunidade de identificar a circulação do vírus e de proteger a população humana local por meio da vacinação e do controle vetorial.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  },
+  {
+    "id": "AJUDA_38abe370-43d2-43b0-b00e-2c755912a762",
+    "originalId": "38abe370-43d2-43b0-b00e-2c755912a762",
+    "statement": "Para que a estratégia de diagnóstico clínico conhecida como demora permitida seja segura e eficiente, é necessário observar as seguintes condições:",
+    "options": [
+      {
+        "id": "A",
+        "text": "não ser utilizada em pacientes com exame de imagem demonstrando hérnia de disco ou esporão de calcâneo, mesmo que assintomáticos, devido à indicação cirúrgica desses achados",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ser adotada nas viroses respiratórias em crianças, imunodeprimidos e idosos, mesmo que haja sinais de alarme, pois, na maioria das vezes, esses sinais desaparecem",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "assegurar ao paciente, que não apresente sinais clínicos de alarme, acesso ao médico, visto que 80-90% das queixas e sintomas se resolvem espontaneamente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ser aplicada em casos crônicos agudizados de problemas cardiovasculares, pulmonares e metabólicos, mesmo em emergências",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A estratégia da demora permitida (também chamada de observação vigilante ou \"watchful waiting\") é uma ferramenta essencial na Atenção Primária à Saúde. Ela consiste no uso do tempo como recurso diagnóstico e terapêutico, evitando intervenções desnecessárias em quadros que têm grande probabilidade de serem autolimitados.\n\nAlternativa A: Incorreta. Achados de imagem, como hérnia de disco ou esporão de calcâneo, são extremamente comuns em pacientes assintomáticos e, na grande maioria das vezes, não possuem indicação cirúrgica. A demora permitida pode e deve ser utilizada nesses casos para evitar a medicalização excessiva de achados incidentais.\n\nAlternativa B: Incorreta. A presença de sinais de alarme (red flags) é uma contraindicação absoluta à estratégia de demora permitida. Além disso, grupos vulneráveis, como idosos e imunodeprimidos, exigem um limiar de suspeição mais baixo e um acompanhamento mais próximo, não sendo seguro ignorar sinais de gravidade sob a premissa de que irão desaparecer.\n\nAlternativa C: Correta. Para que a demora permitida seja ética e segura, dois pilares são fundamentais: primeiro, a exclusão criteriosa de sinais de alarme por meio de uma boa anamnese e exame físico; segundo, a garantia de uma \"rede de segurança\" (safety netting), assegurando que o paciente tenha acesso fácil ao médico caso os sintomas persistam, piorem ou surjam novos sinais. Estatisticamente, cerca de 80-90% das queixas em cuidados primários são autolimitadas e se resolvem com o tempo.\n\nAlternativa D: Incorreta. Casos de emergência ou agudizações graves de doenças crônicas (como edema agudo de pulmão, infarto ou cetoacidose diabética) exigem intervenção imediata e estabilização, não sendo passíveis de observação passiva ou demora proposital.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  },
+  {
+    "id": "AJUDA_38ae0e26-a9fa-4865-ae61-6274e8b1a27e",
+    "originalId": "38ae0e26-a9fa-4865-ae61-6274e8b1a27e",
+    "statement": "Em relação à anatomia da região inguinal e sua importância na compreensão das hérnias inguinais, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O anel inguinal profundo está localizado na fáscia transversal, lateralmente aos vasos epigástricos inferiores, sendo o ponto de saída das hérnias inguinais diretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O ligamento de Cooper é a estrutura formada pelo espessamento da aponeurose do músculo transverso do abdome, sendo um reparo anatômico utilizado em correções posteriores do canal inguinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O trígono de Hesselbach é formada pelo ligamento inguinal, pelos vasos epigástricos inferiores e pela borda lateral do músculo reto abdominal, delimitando a área de ocorrência das hérnias inguinais diretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O anel inguinal superficial é limitado medialmente pelo pilar lateral e lateralmente pelo pilar medial da aponeurose do músculo oblíquo externo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "As hérnias femorais ocorrem acima do ligamento inguinal e medialmente à veia femoral, atravessando o anel inguinal profundo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é necessário revisar a anatomia da parede abdominal posterior e do canal inguinal, focando nos marcos anatômicos que definem os tipos de hérnias.\n\nAlternativa (a) INCORRETA: O anel inguinal profundo é, de fato, uma abertura na fáscia transversal situada lateralmente aos vasos epigástricos inferiores. Entretanto, ele é a via de origem das hérnias inguinais INDIRETAS. As hérnias diretas ocorrem medialmente aos vasos epigástricos inferiores, através de uma fraqueza na parede posterior do canal inguinal.\n\nAlternativa (b) INCORRETA: O ligamento de Cooper, também conhecido como ligamento pectíneo, é um espessamento do periósteo ao longo da linha pectínea do púbis. Ele não é formado pela aponeurose do músculo transverso do abdome. É uma estrutura de extrema importância em cirurgias de hérnia, especialmente na técnica de McVay e em reparos videolaparoscópicos, servindo como ponto de ancoragem para telas ou suturas.\n\nAlternativa (c) CORRETA: O trígono de Hesselbach (ou triângulo inguinal) é a região anatômica da parede abdominal posterior delimitada lateralmente pelos vasos epigástricos inferiores, medialmente pela borda lateral do músculo reto abdominal e inferiormente pelo ligamento inguinal. Esta área é composta apenas pela fáscia transversal, sendo o local onde ocorrem as hérnias inguinais DIRETAS, que não passam pelo anel inguinal profundo, mas sim \"diretamente\" pela parede posterior.\n\nAlternativa (d) INCORRETA: Existe uma inversão na descrição dos pilares. O anel inguinal superficial, que é uma abertura na aponeurose do músculo oblíquo externo, é limitado medialmente pelo pilar medial e lateralmente pelo pilar lateral.\n\nAlternativa (e) INCORRETA: As hérnias femorais ocorrem ABAIXO do ligamento inguinal, passando pelo canal femoral, que se localiza medialmente à veia femoral. Elas não têm relação com o anel inguinal profundo, que está situado acima do ligamento inguinal e é o ponto de origem das hérnias inguinais indiretas.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  },
+  {
+    "id": "AJUDA_38aed2a4-9f16-4b5c-a760-8c124a28e12f",
+    "originalId": "38aed2a4-9f16-4b5c-a760-8c124a28e12f",
+    "statement": "Mulher de 29 anos procura atendimento por lesão genital surgida há duas semanas após relação sexual desprotegida. Ao exame, observa-se úlcera única em sulco interlabial à esquerda, de bordas elevadas, fundo limpo, endurecida à palpação e indolor. Apresenta linfonodomegalia inguinal bilateral, móvel e indolor. \nConsiderando a principal hipótese diagnóstica e seus diagnósticos diferenciais, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cancro mole",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Protossifiloma",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Bulbão",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Donovanose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Molusco",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma paciente jovem com uma úlcera genital que apresenta características clássicas: lesão única, de bordas elevadas, fundo limpo, indolor e com base endurecida (enduração cartilaginosa). Além disso, há linfonodomegalia bilateral também indolor. Este conjunto de achados é o quadro patognomônico da Sífilis Primária.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. O Cancro Mole (causado pelo Haemophilus ducreyi) manifesta-se tipicamente como múltiplas úlceras, que possuem bordas irregulares, fundo purulento (sujo) e, diferentemente do caso, são extremamente dolorosas. A linfonodomegalia no cancro mole costuma ser unilateral e tende à supuração (fistulização por orifício único).\n\nb) Correta. O Protossifiloma é o nome técnico dado ao cancro duro, a lesão inicial da Sífilis (causada pelo Treponema pallidum). A descrição da questão — úlcera única, fundo limpo, base endurecida e ausência de dor — encaixa-se perfeitamente nesta patologia. O período de incubação de cerca de 2 a 3 semanas após a exposição sexual também corrobora o diagnóstico.\n\nc) Incorreta. O termo \"bulbão\" é comumente associado à linfonodomegalia inflamatória exuberante encontrada no Linfogranuloma Venéreo (causado pela Chlamydia trachomatis, sorotipos L1, L2 e L3). No linfogranuloma, a lesão ulcerada inicial é fugaz e muitas vezes passa despercebida, sendo a adenopatia inguinal dolorosa a principal manifestação, que pode fistulizar por múltiplos orifícios (aparência de \"bico de regador\").\n\nd) Incorreta. A Donovanose (Granuloma Inguinal, causado pela Klebsiella granulomatis) apresenta-se como úlceras cutâneas ou subcutâneas de crescimento lento, indolores, mas com aspecto de tecido de granulação vermelho-vivo (\"carne crua\") e bordas planas ou hipertróficas. Não costuma apresentar linfonodomegalia verdadeira, mas sim pseudo-bulbões.\n\ne) Incorreta. O Molusco Contagioso é causado por um poxvírus e manifesta-se como pápulas umbilicadas, pequenas, peroladas e firmes. Não se apresenta como uma úlcera endurecida de fundo limpo. É uma lesão proliferativa e não ulcerosa em seu estágio inicial.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Úlceras Genitais",
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  },
+  {
+    "id": "AJUDA_38af20fa-630d-4fe5-b839-c909340c4db5",
+    "originalId": "38af20fa-630d-4fe5-b839-c909340c4db5",
+    "statement": "Na manutenção hídrica do paciente criticamente enfermo não deve ser utilizada solução hipotônica. Um dos principais mecanismos que causam esta complicação é a Secreção Inapropriada do Hormônio Antidiurético (ADH). Qual das alternativas abaixo contém a característica clínico-laboratorial da SIADH",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipernatremia euvolêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiponatremia hipovolêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hiponatremia euvolêmica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipernatremia hipovolêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Síndrome da Secreção Inapropriada do Hormônio Antidiurético (SIADH) é uma das principais causas de hiponatremia em pacientes hospitalizados e criticamente enfermos. Para compreender as características dessa condição, é fundamental analisar a fisiopatologia do hormônio antidiurético (ADH).\n\nO ADH atua nos ductos coletores dos rins, promovendo a reabsorção de água livre. Na SIADH, ocorre uma liberação excessiva e desregulada deste hormônio, independentemente da osmolaridade plasmática ou do status volêmico do paciente. \n\nO excesso de ADH leva a uma retenção hídrica que dilui o sódio plasmático, resultando em hiponatremia dilucional. Embora haja uma expansão do volume extracelular, o organismo ativa mecanismos compensatórios, como a liberação de peptídeos natriuréticos e a inibição do sistema renina-angiotensina-aldosterona. Isso promove a excreção urinária de sódio (natriurese) para tentar normalizar o volume. O resultado final é um paciente que não apresenta sinais clínicos de edema ou congestão (euvolemia clínica), mas possui sódio baixo no sangue.\n\nAnálise das alternativas:\n\na) Hipernatremia euvolêmica: Incorreta. A hipernatremia euvolêmica é característica de condições como o diabetes insipidus, onde há deficiência de ADH ou resistência à sua ação, levando à perda excessiva de água livre e concentração do sódio.\n\nb) Hiponatremia hipovolêmica: Incorreta. Este perfil é encontrado em situações de perda de fluidos (vômitos, diarreia, uso de diuréticos ou perdas para o terceiro espaço) onde o paciente apresenta sinais de desidratação, como mucosas secas e turgor cutâneo reduzido. Na SIADH, não há depleção de volume.\n\nc) Hiponatremia euvolêmica: Correta. Esta é a marca registrada da SIADH. O paciente apresenta sódio sérico baixo devido à retenção de água livre, mas mantém-se clinicamente euvolêmico (sem sinais de desidratação e sem sinais de edema/sobrecarga) devido aos mecanismos compensatórios de natriurese.\n\nd) Hipernatremia hipovolêmica: Incorreta. Esta condição ocorre na desidratação grave, onde a perda de fluidos hipotônicos (como no suor excessivo ou baixa ingesta de água) supera a perda de solutos, resultando em sangue concentrado e sinais claros de baixo volume circulante.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  },
+  {
+    "id": "AJUDA_38be72a9-a24c-428e-8bd9-5ff0727ec2cb",
+    "originalId": "38be72a9-a24c-428e-8bd9-5ff0727ec2cb",
+    "statement": "Gestante de 24 anos, com 8 semanas de gravidez, vem à consulta para saber como se prevenir contra a dengue. Considerando o questionamento da gestante, assinale a alternativa correta de acordo com o Manual de Prevenção da Dengue na Gestação (Ministério da Saúde, 2024).",
+    "options": [
+      {
+        "id": "A",
+        "text": "O uso de repelentes à base de Icaridina pode ser feito durante toda a gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Os repelentes à base de DEET (N,N-dietil-meta-toluamida) não devem ser utilizados na gestação, pelo risco teratogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacina da dengue tem uso amplo durante a gravidez, sendo a medida de escolha para a prevenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A medida que mais impacta positivamente a redução de casos de dengue na gestação é o uso de telas no domicílio, visto que o Aedes aegypti tem hábitos preferencialmente noturnos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) Correta: De acordo com o Manual de Prevenção da Dengue na Gestação do Ministério da Saúde (2024), os repelentes recomendados para uso por gestantes são aqueles que contêm substâncias aprovadas pela Anvisa, como a icaridina, o DEET (dietiltoluamida) e o IR3535. A icaridina, especificamente, é segura para ser utilizada durante todo o período gestacional, oferecendo proteção prolongada contra o *Aedes aegypti* quando aplicada seguindo as instruções do rótulo.\n\nAlternativa (b) Incorreta: O DEET é considerado seguro para uso durante a gravidez. Estudos científicos e órgãos de saúde nacionais e internacionais, como o CDC e a Anvisa, reforçam que não há evidências de risco teratogênico ou danos ao feto com o uso correto dessa substância. Portanto, ele é uma das opções indicadas para a proteção da gestante.\n\nAlternativa (c) Incorreta: As vacinas contra a dengue disponíveis atualmente no Brasil (como a Qdenga) são compostas por vírus vivos atenuados. Por essa característica, elas são contraindicadas para gestantes e mulheres em fase de amamentação (lactantes), devido ao risco teórico de infecção pelo vírus vacinal. A prevenção nesse grupo deve focar em barreiras físicas e repelentes.\n\nAlternativa (d) Incorreta: A afirmação possui dois erros fundamentais. Primeiro, o *Aedes aegypti* possui hábitos preferencialmente diurnos, com picos de atividade ao amanhecer e ao entardecer, e não noturnos. Segundo, embora o uso de telas e mosquiteiros seja uma medida auxiliar importante, o controle de criadouros e o uso de repelentes individuais são considerados pilares fundamentais no impacto direto da proteção individual da gestante em áreas endêmicas.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Arboviroses",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  },
+  {
+    "id": "AJUDA_38c1d578-83e5-4d0f-986a-d0e95e67c547",
+    "originalId": "38c1d578-83e5-4d0f-986a-d0e95e67c547",
+    "statement": "A hiponatremia hiposmolar pode ser classificada em três categorias com base no estado de volume: hipovolêmica, euvolêmica e hipervolêmica. Sobre a hiponatremia hiposmolar, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A hiponatremia hiposmolar euvolêmica é caracterizada pela perda de sódio e água.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A hiponatremia hiposmolar é sempre acompanhada de sinais de desidratação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A hiponatremia hiposmolar hipervolêmica ocorre quando o ganho de água é maior do que o ganho de sódio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Na hiponatremia hiposmolar hipovolêmica, há um ganho de água superior ao ganho de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para entender a hiponatremia hiposmolar, é fundamental analisar a relação entre a quantidade de sódio corporal total e a água corporal total. A classificação baseada no volume (volemia) ajuda a identificar a causa subjacente.\n\nAlternativa A: Incorreta. A hiponatremia euvolêmica não é caracterizada pela perda de solutos, mas sim por um leve aumento na água corporal total com o sódio corporal total praticamente normal. O exemplo clássico é a síndrome de secreção inapropriada de hormônio antidiurético (SIADH). A descrição de perda de sódio e água refere-se à hiponatremia hipovolêmica.\n\nAlternativa B: Incorreta. A hiponatremia hiposmolar pode se apresentar de três formas distintas. Sinais de desidratação são exclusivos da forma hipovolêmica. Na forma euvolêmica, o paciente parece ter volume normal ao exame físico, e na forma hipervolêmica, o paciente apresenta sinais de excesso de volume (edema, ascite, congestão).\n\nAlternativa C: Correta. Na hiponatremia hipervolêmica, que ocorre em condições como insuficiência cardíaca, cirrose e síndrome nefrótica, o corpo retém tanto sódio quanto água devido à ativação de sistemas como o sistema renina-angiotensina-aldosterona. No entanto, a retenção de água é proporcionalmente maior do que a de sódio, o que dilui o sódio no compartimento extracelular, resultando em hiponatremia.\n\nAlternativa D: Incorreta. A hiponatremia hipovolêmica é definida pela perda de fluidos corporais. O erro da alternativa está em falar em ganho de água. Nesse cenário, o paciente perde tanto sódio quanto água, mas a perda de sódio é mais acentuada, ou a reposição de volume é feita apenas com líquidos sem eletrólitos (água livre), o que reduz a concentração de sódio.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  },
+  {
+    "id": "AJUDA_38c974dd-b173-439d-b8c0-5ebe820863e6",
+    "originalId": "38c974dd-b173-439d-b8c0-5ebe820863e6",
+    "statement": "Homem de 45 anos foi encontrado inconsciente por familiares junto a uma escada de sua casa. Familiares o conduziram em carro próprio, sem medidas-padrão de atendimento pré hospitalar. Não sabem por quanto tempo ficou desacordado e nem sobre o histórico de saúde. Quando deu entrada no pronto-socorro, encontrava-se inconsciente, com equimose e escoriações na região orbital e palpebral direita, além de escoriações na região cervical posterior e em membros à direita. Não apresentava resposta ao comando verbal, mas respirava espontaneamente com frequência normal. Pressão arterial de 140 por 90 milímetros de mercúrio e pupilas isocóricas. Durante a avaliação, abriu os olhos e começou a se mexer, ainda sem responder a questões ou comandos. Após 30 minutos começou a responder, mas informava não se lembrar de ter caído da escada.\nConsiderando o quadro, a conduta adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "tomografia de crânio, face e coluna cervical; radiografia de membros; manter o paciente em observação por 12 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "radiografia de crânio, coluna cervical e membros em duas posições; internar o paciente para observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tomografia de crânio, face e radiografia de membros; liberar o paciente para observação domiciliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "radiografia de crânio e face; radiografia de membros; internar o paciente por 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda a conduta inicial em um paciente vítima de trauma multissistêmico (queda de altura) com perda de consciência. Para resolver o caso, devemos aplicar os protocolos de Trauma Cranioencefálico (TCE) e de avaliação da coluna cervical.\n\nAnálise clínica do caso:\nO paciente apresenta um mecanismo de trauma de moderada energia (queda de escada), perda de consciência inicial (tempo indeterminado) e amnésia pós-traumática. Além disso, apresenta sinais físicos de trauma na face (equimose orbital), pescoço (escoriações cervicais posteriores) e membros, sem ter recebido imobilização adequada no transporte.\n\nJustificativa das condutas:\n\n1. Tomografia (TC) de Crânio e Face: A perda de consciência seguida de amnésia e a presença de sinais sugestivos de fratura de base de crânio ou face (equimose orbital) são indicações formais de tomografia de crânio, conforme as regras de decisão clínica (como o Canadian CT Head Rule). A radiografia de crânio é um exame obsoleto para avaliar lesões intracranianas em pacientes com TCE.\n\n2. Tomografia de Coluna Cervical: O paciente foi transportado sem colar cervical, apresenta escoriações na região cervical posterior e teve alteração do nível de consciência. Pelo protocolo NEXUS ou Canadian C-Spine Rule, ele não pode ter a coluna cervical liberada apenas pelo exame físico. A TC é o padrão-ouro para descartar fraturas em pacientes de risco.\n\n3. Radiografia de Membros: Indicada pela presença de escoriações e pelo mecanismo de queda, visando descartar fraturas ósseas.\n\n4. Observação Clínica: Pacientes que sofreram TCE com perda de consciência e amnésia devem permanecer sob vigilância neurológica hospitalar, geralmente por um período mínimo de 12 a 24 horas, para monitorar possíveis complicações tardias (como hematomas expansivos), mesmo que a TC inicial seja normal.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Contempla a investigação completa das áreas atingidas (crânio, face e coluna) utilizando os exames de maior sensibilidade (tomografia) e garante o tempo necessário de observação clínica para segurança do paciente.\n\nAlternativa B (Incorreta): A radiografia de crânio não é o exame adequado para avaliar um paciente com perda de consciência; a tomografia é necessária para descartar lesões agudas como hematomas e contusões.\n\nAlternativa C (Incorreta): Embora indique a TC de crânio, falha ao ignorar a avaliação da coluna cervical (o paciente tem sinais de trauma no pescoço e não foi imobilizado) e ao sugerir alta imediata para observação domiciliar em um paciente que ainda apresenta amnésia e teve perda de consciência prolongada.\n\nAlternativa D (Incorreta): Novamente, o erro principal é a utilização de radiografia para avaliar crânio e face em um contexto de trauma com déficit neurológico e sinais de fratura, além de ignorar a coluna cervical.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Trauma",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": 9.901369643200859,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:46.855Z"
+  }
+]

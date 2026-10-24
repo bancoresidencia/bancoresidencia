@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_245995fa-f97c-4afd-8175-090ca6e7d2f0",
+    "originalId": "245995fa-f97c-4afd-8175-090ca6e7d2f0",
+    "statement": "Recém-nascido, 39 semanas de idade gestacional, Peso Nascimento: 3035g, APGAR 9\\10, não apresentou necessidade de reanimação neonatal ao nascimento. Bolsa rota de 22 horas, pesquisa para estreptococo do grupo B negativa. Sem relato de febre materna. Exame: FR: 55irpm, FC 145bpm, eupneico, ativo, corado, hidratado, SatO2 98%. Ausculta cardiorrespiratória normal, TEC menor 2 segundos. Segundo a Sociedade Brasileira de Pediatria, está indicado como boa prática:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Devido ao risco infecioso, o recém-nascido deve ser encaminhado a UCINCO com reavaliação frequente dos sinais vitais e coleta de hemograma, PCR e hemocultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Devido risco infecioso, o recém-nascido deve ser encaminhado a UTIN e iniciado antibiótico terapia: ampicilina e gentamicina e reavaliação frequente dos sinais vitais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Recém-nascido deve ser colocado em contado pele-pele e estimulado aleitamento materno na primeira hora de vida e iniciado antibióticoterapia (ampicilina e gentamicina) e reavaliação frequente dos sinais vitais em alojamento conjunto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Recém-nascido deve ser colocado em contado pele-pele e estimulado aleitamento materno na primeira hora de vida, encaminhado ao alojamento conjunto e reavaliado por 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Recém-nascido deve ser colocado em contado pele-pele e estimulado aleitamento materno na primeira hora de vida, encaminhado ao alojamento conjunto e reavaliado por 48 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda o manejo de um recém-nascido (RN) a termo, assintomático, que apresenta um fator de risco para sepse neonatal precoce: a rotura prolongada de membranas (bolsa rota por 22 horas, sendo o ponto de corte estabelecido em 18 horas).\n\nAnálise do cenário clínico:\n1. RN a termo (39 semanas) e com peso adequado.\n2. Clinicamente estável (eupneico, corado, bons sinais vitais).\n3. Fator de risco: bolsa rota > 18 horas.\n4. Fatores atenuantes: pesquisa de estreptococo do grupo B (GBS) negativa e ausência de febre materna (o que afasta a suspeita clínica de corioamnionite).\n\nSegundo as diretrizes da Sociedade Brasileira de Pediatria (SBP), para recém-nascidos a termo e assintomáticos, o foco deve ser a observação clínica rigorosa, evitando exames desnecessários ou a separação da mãe.\n\nAlternativa A: Incorreta. Não há indicação de encaminhar um RN assintomático para Unidade de Cuidados Intermediários (UCINCO) ou realizar coleta de exames laboratoriais (hemograma, PCR e hemocultura) apenas pela bolsa rota prolongada, especialmente com rastreio de GBS negativo e mãe afebril.\n\nAlternativa B: Incorreta. A internação em UTI Neonatal e o início de antibioticoterapia empírica (ampicilina e gentamicina) são reservados para RNs com sinais clínicos de sepse ou quando há diagnóstico materno de corioamnionite, o que não ocorre neste caso.\n\nAlternativa C: Incorreta. Embora recomende o contato pele a pele e o aleitamento, a alternativa peca ao indicar o início de antibioticoterapia para um paciente que não preenche critérios clínicos ou laboratoriais para infecção.\n\nAlternativa D: Incorreta. O erro está no tempo de reavaliação. Embora o RN possa ser encaminhado ao alojamento conjunto, os protocolos de vigilância para RNs com fatores de risco para sepse precoce recomendam uma observação clínica de pelo menos 36 a 48 horas antes da alta, para garantir que nenhum sinal de infecção surja tardiamente.\n\nAlternativa E: Correta. Esta alternativa segue os preceitos de humanização e as evidências científicas atuais. O contato pele a pele e o aleitamento na primeira hora devem ser estimulados. Como o RN está bem e o risco infeccioso é baixo (apesar da bolsa rota, o GBS é negativo e não há febre materna), a conduta correta é a observação clínica em alojamento conjunto por 48 horas, monitorando a transição neonatal e os sinais de alerta.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Cuidados Neonatais",
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  },
+  {
+    "id": "AJUDA_24699812-2b26-4bf1-b004-7b43813b3617",
+    "originalId": "24699812-2b26-4bf1-b004-7b43813b3617",
+    "statement": "Qual das características abaixo deve estar presente em um bom programa de rastreamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A doença rastreada deve ter uma fase pré-clínica curta;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O processo de rastreamento deve ser individualizado;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A história natural da doença deve ser bem conhecida;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O custo dos exames propostos para o sistema de saúde é o menos importante, uma vez que o mais importante é o impacto deles na mortalidade pela doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: Para que o rastreamento seja eficaz, a doença deve possuir, preferencialmente, uma fase pré-clínica longa. A fase pré-clínica é o intervalo entre o momento em que a doença pode ser detectada por um teste e o surgimento dos primeiros sintomas. Se essa fase for curta, a janela de oportunidade para o diagnóstico precoce é reduzida, dificultando o sucesso do rastreio.\n\nAlternativa (b) Incorreta: Programas de rastreamento são ferramentas de saúde pública aplicadas de forma sistemática a populações ou grupos de risco (como mulheres de certa faixa etária para o câncer de mama), seguindo protocolos padronizados. O processo individualizado, feito durante uma consulta clínica de rotina, é tecnicamente chamado de busca de caso (case-finding), e não de programa de rastreamento populacional.\n\nAlternativa (c) Correta: O conhecimento profundo da história natural da doença é um dos critérios fundamentais estabelecidos por Wilson e Jungner para a implementação de um rastreio. É necessário entender como a doença evolui da fase latente para a fase sintomática para garantir que o diagnóstico precoce e o tratamento imediato realmente alterem o desfecho clínico e tragam benefícios superiores aos riscos do rastreamento.\n\nAlternativa (d) Incorreta: O custo é um dos pilares mais importantes na decisão de implementar um programa de rastreamento. Recursos em saúde pública são finitos, e o programa deve demonstrar custo-efetividade. Isso significa que o gasto com testes, diagnósticos confirmatórios e tratamentos deve ser economicamente equilibrado em relação aos benefícios gerados e aos gastos totais do sistema de saúde.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  },
+  {
+    "id": "AJUDA_24783a99-90d2-493e-b8c3-833cdf6e87a2",
+    "originalId": "24783a99-90d2-493e-b8c3-833cdf6e87a2",
+    "statement": "Uma menina com 7 anos apresenta pubarca, com características de estágio 3 pela classificação de Tanner, além de leve odor em axilas, sem qualquer outro sinal de puberdade. Os pais procuram endocrinologista e, após exames, conclui-se que se trata de adrenarca prematura. Sobre esta manifestação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É consequência de tumor hipofisário benigno, geralmente com indicação de cirurgia, com cura total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Está dentro do esperado para a idade, mas revela progressão rápida para a puberdade precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É considerada benigna, mas estudos longitudinais observam um maior risco de síndrome dos ovários policísticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Acompanha-se de desaceleração do crescimento e baixa estatura final, com menarca prevista para antes dos 9 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve-se à presença de hiperplasia de suprarrenal (zona reticulosa), com indicação de terapia com corticosteroides.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A adrenarca prematura é caracterizada pelo aparecimento de pelos pubianos (pubarca), pelos axilares ou alteração do odor axilar antes dos 8 anos em meninas e dos 9 anos em meninos. Esse fenômeno ocorre devido à maturação precoce da zona reticulada da glândula suprarrenal, resultando no aumento da produção de andrógenos adrenais, como o DHEAS (sulfato de deidroepiandrosterona). É fundamental diferenciar a adrenarca da puberdade precoce central, pois na adrenarca não há desenvolvimento de mamas (telarca) nas meninas ou aumento do volume testicular nos meninos.\n\nAnálise das alternativas:\n\na) Incorreta. A adrenarca prematura é um evento relacionado à glândula suprarrenal (adrenal) e não tem qualquer relação com tumores hipofisários. O eixo envolvido é o adrenal, independentemente do eixo hipotálamo-hipófise-gonadal que regula a puberdade central.\n\nb) Incorreta. Embora o termo \"prematura\" indique que o surgimento ocorreu antes da idade habitual, a adrenarca isolada na maioria das vezes não sinaliza uma progressão rápida para a puberdade precoce central. A maioria dessas crianças terá o início da puberdade (gonadarca) e a menarca em idades normais para a população geral.\n\nc) Correta. A adrenarca prematura é considerada uma condição benigna e idiopática na infância, não necessitando de intervenção medicamentosa imediata. Entretanto, estudos longitudinais demonstram que existe uma associação entre a adrenarca prematura e condições metabólicas futuras. Meninas com esse quadro apresentam maior risco de desenvolver resistência insulínica, hiperinsulinismo e Síndrome dos Ovários Policísticos (SOP) na adolescência e vida adulta.\n\nd) Incorreta. O excesso leve de andrógenos adrenais costuma causar uma aceleração transitória da velocidade de crescimento e um discreto avanço da idade óssea, e não desaceleração. Na imensa maioria dos casos, não há prejuízo relevante na estatura final e a menarca costuma ocorrer em idade fisiológica (após os 9 anos).\n\ne) Incorreta. A adrenarca prematura é uma variação do desenvolvimento fisiológico e não se confunde com a Hiperplasia Adrenal Congênita (HAC), que é uma doença genética por deficiência enzimática. O uso de corticosteroides é o tratamento específico para a HAC, mas é contraindicado na adrenarca prematura, que requer apenas acompanhamento clínico.\n\nGabarito: Letra (c).",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  },
+  {
+    "id": "AJUDA_247a63e2-19ae-47be-8f04-e26e0b42ac0c",
+    "originalId": "247a63e2-19ae-47be-8f04-e26e0b42ac0c",
+    "statement": "99- Um estudo de coorte acompanhou crianças menores de 5 anos, avaliando a associação entre exposição à fumaça do tabaco no domicílio e o desenvolvimento de infecções respiratórias recorrentes. Observou-se que a incidência acumulada de infecção foi de 30% nas crianças expostas e de 15% nas não expostas.\nAnalise as afirmativas:\nI. O risco relativo (RR) encontrado foi de 2,0, indicando que crianças expostas apresentaram o dobro de risco de desenvolver infecções respiratórias em comparação às não expostas.\nII. A diferença absoluta de riscos (ou risco atribuível) foi de 15%, indicando que, a cada 100 crianças expostas à fumaça do tabaco, 15 casos adicionais de infecção respiratória recorrente podem ser atribuídos diretamente à exposição.\nIII. O risco relativo mede o impacto populacional da exposição, enquanto o risco absoluto expressa apenas a razão entre incidências.\nIV. Tanto o risco relativo quanto o risco absoluto são medidas que independem da incidência nos grupos expostos e não expostos.\n\nAssinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas II e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas a afirmativa IV está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão de epidemiologia, devemos identificar as taxas de incidência fornecidas: a incidência acumulada no grupo exposto (Ie) é de 30% e a incidência no grupo não exposto (Io) é de 15%.\n\nAnálise da afirmativa I: O Risco Relativo (RR) é calculado pela divisão da incidência dos expostos pela incidência dos não expostos (RR = Ie / Io). No caso: 30 / 15 = 2,0. O valor de 2,0 indica que o grupo exposto tem duas vezes (o dobro) o risco de desenvolver o desfecho em comparação ao grupo não exposto. Portanto, a afirmativa I está correta.\n\nAnálise da afirmativa II: A Diferença Absoluta de Risco, também chamada de Risco Atribuível (RA), é calculada pela subtração entre a incidência dos expostos e a dos não expostos (RA = Ie - Io). No caso: 30% - 15% = 15%. Esse valor representa o excesso de risco que pode ser atribuído diretamente ao fator de exposição (fumaça do tabaco). Em um grupo de 100 crianças expostas, 15 delas desenvolveram a doença por causa dessa exposição específica. Portanto, a afirmativa II está correta.\n\nAnálise da afirmativa III: Esta afirmativa está incorreta. O Risco Relativo (RR) é uma medida de razão que expressa a força da associação entre o fator de risco e o desfecho, e não o impacto populacional. O impacto (excesso de casos na população ou no grupo) é medido por indicadores de diferença, como o Risco Atribuível ou o Risco Atribuível Populacional. Além disso, a assertiva sustenta erroneamente que o risco absoluto expressa a razão, quando na verdade o RR é que cumpre esse papel.\n\nAnálise da afirmativa IV: Esta afirmativa está incorreta. Ambas as medidas são totalmente dependentes das incidências observadas. O Risco Relativo é o quociente (divisão) entre as incidências, enquanto o Risco Absoluto (Diferença de Riscos) é a subtração entre elas. Sem os dados de incidência nos grupos expostos e não expostos, não é possível calcular nenhuma das duas medidas.\n\nConclusão: Como apenas as afirmativas I e II estão tecnicamente corretas e condizentes com os dados do enunciado, a alternativa correta é a (a).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  },
+  {
+    "id": "AJUDA_247c857f-d4d7-46fb-9050-9acd21c1f740",
+    "originalId": "247c857f-d4d7-46fb-9050-9acd21c1f740",
+    "statement": "Mulher de 29 anos, previamente saudável, refere queixa de dor em região suprapúbica e aumento da frequência urinária há dois dias. Nega febre, corrimento vaginal ou dor lombar. Relata ciclos menstruais irregulares e não faz uso de método contraceptivo. Ao exame físico, apresenta dor moderada à palpação suprapúbica, sem outros achados relevantes. Diante do quadro apresentado, avalia-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a presença de disúria e polaciúria e a ausência de corrimento vaginal aumentam consideravelmente a probabilidade diagnóstica de uma infecção do trato urinário",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o diagnóstico provável é de mioma uterino e, para confirmação, deve ser solicitada uma ultrassonografia transvaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "se trata de uma infecção sexualmente transmissível, pois a maioria dos uropatógenos em mulheres originam-se da via sexual",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a possibilidade de gestação pode ser descartada, uma vez que não há sintomas sistêmicos associados",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nEstamos diante de uma mulher jovem, em idade fértil, apresentando sintomas irritativos vesicais de início agudo (dois dias), caracterizados por dor suprapúbica e aumento da frequência urinária (polaciúria). A ausência de febre e de dor lombar afasta inicialmente o diagnóstico de pielonefrite, enquanto a ausência de corrimento vaginal ajuda a diferenciar a cistite de quadros de vulvovaginite ou cervicite.\n\nAlternativa a) Correta. O diagnóstico de cistite aguda em mulheres jovens e previamente saudáveis é essencialmente clínico. Estudos de probabilidade pré-teste demonstram que, quando uma paciente apresenta sintomas urinários irritativos (como disúria, polaciúria ou urgência) e nega a presença de corrimento ou irritação vaginal, a probabilidade de tratar-se de uma infecção do trato urinário (ITU) é superior a 90%. Portanto, a anamnese é uma ferramenta poderosa e suficiente para iniciar o tratamento empírico nesses casos.\n\nAlternativa b) Incorreta. O mioma uterino é uma neoplasia benigna do miométrio que costuma cursar com sangramento uterino anormal, dor pélvica crônica ou sintomas compressivos quando apresenta grandes dimensões. Um quadro de dor aguda e polaciúria com evolução de apenas dois dias é típico de processos infecciosos/inflamatórios da bexiga, e não de miomatose uterina.\n\nAlternativa c) Incorreta. Embora a atividade sexual seja um fator de risco conhecido para a cistite em mulheres (devido à massagem uretral e translocação bacteriana durante o coito), a ITU não é classificada como uma infecção sexualmente transmissível (IST). Os principais agentes causadores, como a Escherichia coli, fazem parte da microbiota intestinal da própria paciente e ascendem ao trato urinário a partir da região perineal.\n\nAlternativa d) Incorreta. A gestação não pode ser descartada com base na ausência de sintomas sistêmicos. Muitas mulheres não apresentam enjoos, sonolência ou mastalgia nas primeiras semanas de gravidez. O fato de a paciente possuir ciclos irregulares e não utilizar métodos contraceptivos torna a gravidez uma possibilidade real que deve ser investigada, inclusive para a escolha segura de uma antibioticoterapia, caso seja necessária.\n\nResumo: O quadro é uma cistite aguda não complicada. A alta probabilidade diagnóstica baseada apenas nos sintomas urinários e na ausência de queixas vaginais justifica a alternativa A como correta.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  },
+  {
+    "id": "AJUDA_247f4d48-bda4-4b16-8fd8-c0be3ed931a2",
+    "originalId": "247f4d48-bda4-4b16-8fd8-c0be3ed931a2",
+    "statement": "Leia o caso a seguir.\n\nB.K.C., 52 anos, sexo feminino, procura o posto de saúde com dor articular nas mãos e punhos há um ano, associada à rigidez matinal e à limitação de movimentação. Diante do quadro apresentado, os exames laboratoriais demonstraram anemia, anti-ccp e fator reumatoide positivos.\n\nConsiderando o quadro clínico e exames laboratoriais, a alteração de imagem esperada na coluna vertebral para a hipótese diagnóstica é",
+    "options": [
+      {
+        "id": "A",
+        "text": "instabilidade atlantoaxial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "erosão nos cantos dos corpos vertebrais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "anquilose difusa por sindesmófitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "espessamento das trabéculas verticais ósseas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — mulher de 52 anos com poliartrite simétrica de pequenas articulações (mãos e punhos), rigidez matinal e marcadores laboratoriais específicos positivos (Fator Reumatoide e Anti-CCP) — fecha o diagnóstico de Artrite Reumatoide (AR).\n\nA Artrite Reumatoide é uma doença inflamatória sistêmica que atinge predominantemente as articulações sinoviais. Na coluna vertebral, a AR acomete quase exclusivamente a coluna cervical, pois é onde se localizam as articulações sinoviais da espinha, especialmente a articulação entre o atlas (C1) e o áxis (C2).\n\nAnálise das alternativas:\n\na) Correta. A instabilidade (ou subluxação) atlantoaxial é a manifestação mais comum e grave da AR na coluna. A inflamação crônica (pannus sinovial) causa erosão do processo odontoide do áxis e fragilidade do ligamento transverso, que mantém o odontoide estável contra o atlas. Isso resulta em um aumento do espaço entre esses ossos e no risco de compressão medular.\n\nb) Incorreta. A erosão nos cantos dos corpos vertebrais, também conhecida como lesão de Romanus, é uma característica inicial das espondiloartrites, como a Espondilite Anquilosante, e não da Artrite Reumatoide.\n\nc) Incorreta. A anquilose difusa por sindesmófitos (que leva ao aspecto de \"coluna em bambu\") é o achado clássico e avançado da Espondilite Anquilosante. Na AR, não ocorre a formação de sindesmófitos, pois a doença é predominantemente erosiva e não osteofitária/ossificante.\n\nd) Incorreta. O espessamento das trabéculas verticais ósseas é um achado radiológico típico do hemangioma vertebral (aspecto em \"veludo\" ou \"estrias\") ou pode ser visto em doenças ósseas metabólicas e na doença de Paget, não tendo relação com a fisiopatologia inflamatória da Artrite Reumatoide.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Artrite Reumatoide"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  },
+  {
+    "id": "AJUDA_24891049-e406-486d-b4c5-a06399efaa96",
+    "originalId": "24891049-e406-486d-b4c5-a06399efaa96",
+    "statement": "Em um estudo do tipo caso-controle, qual é a vantagem de se utilizarem casos prevalentes ao invés de casos incidentes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Selecionar muitos casos em pouco tempo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estimar a prevalência da doença estudada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Minimizar a ocorrência de viés de recordação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estimar a incidência da doença estudada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender esta questão, primeiro precisamos diferenciar casos incidentes de casos prevalentes no contexto de um estudo de caso-controle. Casos incidentes são os novos casos diagnosticados durante o período de seguimento do estudo. Casos prevalentes são os casos já existentes (pessoas que já possuem o diagnóstico e convivem com a doença há algum tempo) no momento em que a pesquisa se inicia.\n\nAlternativa a) Correta. Esta é a principal vantagem prática do uso de casos prevalentes. Como os pacientes já estão diagnosticados e muitas vezes vinculados a serviços de saúde, prontuários ou registros médicos, o pesquisador consegue recrutar uma amostra numerosa de forma quase imediata. Se o estudo dependesse apenas de casos incidentes, o pesquisador teria que aguardar o surgimento de cada novo diagnóstico, o que tornaria a coleta de dados muito mais demorada e cara.\n\nAlternativa b) Incorreta. O estudo de caso-controle, por sua própria natureza, não permite estimar a prevalência de uma doença. Isso acontece porque o pesquisador seleciona propositalmente quem é caso e quem é controle, fixando uma proporção entre eles (por exemplo, 1 caso para cada 1 controle). Como essa proporção é decidida pelo autor do estudo e não reflete a frequência real da doença na população geral, não se pode falar em cálculo de prevalência.\n\nAlternativa c) Incorreta. O uso de casos prevalentes pode, na verdade, aumentar vieses. O viés de recordação tende a ser maior em casos prevalentes, pois o tempo decorrido entre a exposição e a entrevista costuma ser mais longo. Além disso, casos prevalentes geram o chamado viés de sobrevivência (ou viés de Neyman): o estudo acaba selecionando apenas os pacientes que não morreram rapidamente e que não se curaram rápido demais, deixando de fora os casos mais graves ou os muito leves.\n\nAlternativa d) Incorreta. A estimativa de incidência (risco de novos casos surgindo ao longo do tempo) é a marca registrada dos estudos de coorte. No estudo de caso-controle, você já parte de indivíduos doentes, o que impossibilita o acompanhamento do surgimento de novos eventos a partir de um grupo inicialmente saudável para o cálculo da incidência.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  },
+  {
+    "id": "AJUDA_248f25a4-9719-4f3f-b445-adcbb8aa03b0",
+    "originalId": "248f25a4-9719-4f3f-b445-adcbb8aa03b0",
+    "statement": "Paciente feminina, 90 anos, acamada com sequela de Acidente Vascular Cerebral há 2 anos, reside na àrea da Unidade Básica de Saúde (UBSF) Bairro X. Na visita domiciliar de rotina do Agente Comunitário de Saúde (ACS), a filha relata para o agente que a mãe vem apresentando febre há 1 dia, falta de apetite e diminuição da diurese. Na reunião de Equipe na UBSF, no final da manhã do mesmo dia, o agente relata o caso, sendo agendada visita domiciliar com o médico e a enfermeira da equipe para o mesmo dia no período da tarde. Que atividade dos profissionais da Equipe de Saúde da Família é identificada neste caso e que princípio doutrinário do SUS está sendo garantido no atendimento da paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visita domiciliar pelo Agente Comunitário de Saúde, notificação e visita da equipe para Serviço de Atendimento Domiciliar especializado (SADE). O princípio é o de Descentralização",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Visita domiciliar pelo Agente Comunitário de Saúde, elaborado Plano Terapêutico a para a visita domiciliar pela enfermeira e Médico da Equipe de Saúde da família. O princípio é o da Integralidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Visita domiciliar pelo Agente Comunitário de Saúde, notificação e visita da equipe para Serviço de Atendimento Domiciliar especializado (SADE). O princípio é o de Regionalização",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Visita domiciliar pelo Agente Comunitário de Saúde, reunião diária da equipe de Saúde da Família, visita domiciliar pela a enfermeira e Médico da Equipe de Saúde da família no mesmo dia à tarde. O princípio é o de equidade",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico apresenta uma idosa de 90 anos, acamada e com sintomas agudos (febre, inapetência e oligúria), sugerindo um quadro infeccioso, possivelmente uma Infecção do Trato Urinário ou Respiratório, que em pacientes desta faixa etária e condição pode evoluir rapidamente para sepse. A dinâmica descrita mostra o funcionamento da Estratégia de Saúde da Família (ESF): a identificação do risco pelo Agente Comunitário de Saúde (ACS), o compartilhamento da informação na reunião de equipe e a resposta imediata com a visita do médico e enfermeira.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA alternativa (d) descreve exatamente o fluxo percorrido: visita do ACS, discussão em reunião de equipe e a subsequente visita do médico e enfermeira no mesmo dia. O princípio doutrinário do SUS aplicado é a EQUIDADE. A equidade consiste em oferecer mais a quem mais precisa, tratando de forma desigual os desiguais para reduzir as desigualdades. Ao priorizar o atendimento domiciliar imediato para uma paciente idosa, acamada e sintomática em detrimento de atendimentos de rotina na Unidade Básica, a equipe está exercendo a equidade, reconhecendo a vulnerabilidade e a gravidade da paciente.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): Incorreta. O Serviço de Atendimento Domiciliar (SAD/SADE), como o Programa Melhor em Casa, é voltado para casos de maior complexidade que exigiriam internação hospitalar, mas podem ser tratados no domicílio. O caso em tela descreve uma ação padrão da equipe de Atenção Primária. Além disso, o princípio da Descentralização refere-se à redistribuição de poder e responsabilidades administrativas entre os entes federados (União, Estados e Municípios), o que não é o foco da questão.\n\nAlternativa (b): Incorreta. Embora a Integralidade seja um princípio do SUS (que foca no indivíduo como um todo e na articulação entre prevenção e cura), a ação específica de priorizar um atendimento domiciliar devido à fragilidade e urgência do quadro é a definição clássica de Equidade no cotidiano da ESF.\n\nAlternativa (c): Incorreta. Novamente cita o SADE de forma equivocada para este contexto de Atenção Primária básica. O princípio da Regionalização refere-se à organização geográfica dos serviços em rede de complexidade crescente, não sendo o princípio que justifica a priorização do atendimento clínico descrito.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  },
+  {
+    "id": "AJUDA_249ac560-20e7-41d2-ae00-6101f398e7f0",
+    "originalId": "249ac560-20e7-41d2-ae00-6101f398e7f0",
+    "statement": "Paciente de 72 anos, submetido a gastrectomia total por adenocarcinoma gástrico, encontra-se no 5º dia pós-operatório na Unidade de Terapia Intensiva, em ventilação mecânica. Apresenta balanço hídrico acumulado positivo de 4.000 ml, edema generalizado e íleo adinâmico persistente. Considerando a fisiopatologia do terceiro espaço e a estratégia de reposição volêmica na fase de reabsorção, assinale a alternativa correta sobre o manejo ideal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se manter a infusão de cristaloides em pelo menos 30 ml/kg/dia de forma protocolar, independentemente do balanço hídrico acumulado, uma vez que a hipervolemia leve é sempre necessária para garantir a perfusão das anastomoses cirúrgicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na presença de estabilidade hemodinâmica e adequados sinais de perfusão, deve-se priorizar a restrição de fluidos e considerar o uso criterioso de diuréticos, com monitorização da diurese, do balanço hídrico e de parâmetros hemodinâmicos, para mobilizar o excesso de líquido e reduzir o edema, evitando sobrecarga volêmica adicional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A administração de albumina humana a 20% está contraindicada em qualquer fase do pós-operatório de grandes cirurgias abdominais, pois a permeabilidade capilar se mantém aumentada por todo o período e a proteína sempre extravasa para o interstício, agravando o edema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A nutrição parenteral total deve ser iniciada de forma imediata, com oferta calórica plena (≈ 35 kcal/kg/dia) já na fase aguda, mesmo em pacientes ainda instáveis ou em reanimação, pois a prioridade é reverter rapidamente o catabolismo proteico intenso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um paciente idoso no 5º dia de pós-operatório de uma cirurgia de grande porte (gastrectomia total), evoluindo com sinais claros de sobrecarga hídrica: balanço positivo de 4.000 ml, edema generalizado e íleo adinâmico persistente (frequentemente causado pelo edema da própria parede das alças intestinais).\n\nAlternativa a) Incorreta. A conduta de manter 30 ml/kg/dia de forma protocolar em um paciente já hipervolêmico é contraindicada. A prática moderna de manejo de fluidos em cirurgia (como o protocolo ERAS) preconiza a meta de balanço zero ou restritiva. A hipervolemia não garante a perfusão das anastomoses; pelo contrário, o edema tecidual resultante da sobrecarga dificulta a oxigenação dos tecidos e aumenta o risco de deiscência de suturas.\n\nAlternativa b) Correta. Este é o manejo ideal para a fase de reabsorção ou fase de desressuscitação. Uma vez que o paciente apresenta estabilidade hemodinâmica (sem necessidade de vasopressores, boa perfusão periférica e débito urinário presente), o foco deve ser a remoção do excesso de fluido acumulado no terceiro espaço. A restrição hídrica e o uso de diuréticos (como a furosemida) ajudam a reduzir o edema intersticial, o que é fundamental para a resolução do íleo adinâmico e para melhorar a mecânica respiratória do paciente em ventilação mecânica.\n\nAlternativa c) Incorreta. Embora o uso de albumina seja discutível e não deva ser feito de forma rotineira para expansão volêmica inicial, a afirmação de que ela é contraindicada em \"qualquer fase\" está errada. Após a fase aguda da resposta inflamatória sistêmica, quando a permeabilidade capilar começa a se normalizar, a albumina pode ser utilizada em casos selecionados para aumentar a pressão oncótica plasmática e auxiliar na mobilização do edema do terceiro espaço de volta para o compartimento intravascular.\n\nAlternativa d) Incorreta. A introdução imediata de nutrição parenteral total (NPT) com carga calórica plena (35 kcal/kg/dia) em pacientes críticos ou instáveis é perigosa. O hiperaporte calórico precoce pode levar à síndrome de realimentação e agravar disfunções metabólicas e orgânicas. Em pacientes desnutridos que não podem usar a via enteral, a NPT deve ser iniciada de forma gradual (geralmente começando com 15-20 kcal/kg/dia) e somente após a estabilização hemodinâmica e correção de distúrbios eletrolíticos.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Perioperatório",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  },
+  {
+    "id": "AJUDA_24a5ca3b-b344-4ed8-bfb8-1956bb7b6cd7",
+    "originalId": "24a5ca3b-b344-4ed8-bfb8-1956bb7b6cd7",
+    "statement": "Gestante de 20 anos, GIPO, sem pré-natal, foi trazida ao Centro Obstétrico por contrações e perda de líquido. Referiu ter feito uso de cocaína há 2 horas. Ao exame, apresentava sinais vitais estáveis, 3 contrações uterinas efetivas e regulares em 10 minutos, saída de líquido claro pelo orifício cervical externo e mudanças cervicais (dilatação de 5 cm e apagamento de 90%). Ultrassonografia (US) evidenciou feto único com movimentação ativa, em apresentação cefálica e idade gestacional compatível com 31 semanas. Assinale a assertiva correta sobre o caso clínico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "São necessários testes adicionais, tais como US transvaginal evidenciando colo curto (< 25 mm) ou testes imunocromatográficos positivos, para estabelecer o diagnóstico de trabalho de parto pré-termo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Por se tratar de ruptura prematura de membranas pré-termo, deve-se avaliar o bem-estar fetal, realizar tocólise e rastreamento para estreptococos do grupo B, além de administrar corticosteroides, antimicrobianos (para prolongar a latência) e progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se avaliar o bem-estar fetal, investigar sinais de infecção intrauterina e administrar corticosteroides, antimicrobianos (para estreptococos do grupo B) e sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Se o quadro clínico evoluir, na assistência ao parto e ao recém-nascido devem ser preconizadas a ordenha do cordão umbilical, a prevenção da hipotermia do recém-nascido e a amamentação na primeira hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro de Trabalho de Parto Prematuro (TPP) associado à Ruptura Prematura de Membranas Pré-Termo (RPMO) em uma idade gestacional de 31 semanas. O diagnóstico de trabalho de parto é estabelecido pela presença de contrações regulares (3 em 10 minutos) e modificações cervicais significativas (5 cm de dilatação e 90% de apagamento). O uso recente de cocaína é um fator de risco crítico para descolamento prematuro de placenta e sofrimento fetal.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA conduta para o trabalho de parto prematuro às 31 semanas envolve:\n1. Avaliação do bem-estar fetal: Fundamental devido à prematuridade e ao risco de hipóxia fetal exacerbado pelo uso de cocaína.\n2. Investigação de infecção: A ruptura de membranas exige a exclusão de corioamnionite clínica (febre, taquicardia materna/fetal, dor uterina).\n3. Corticosteroides: Indicados entre 24 e 34 semanas para reduzir o risco de Síndrome do Desconforto Respiratório, hemorragia intraventricular e enterocolite necrotizante.\n4. Profilaxia para GBS (Estreptococo do Grupo B): Como a paciente não realizou pré-natal (status desconhecido) e está em trabalho de parto prematuro, a antibioticoterapia profilática é mandatória.\n5. Sulfato de Magnésio: Indicado para neuroproteção fetal em casos de parto prematuro iminente (abaixo de 32 semanas, segundo a maioria dos protocolos nacionais e internacionais).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Incorreta. O diagnóstico de trabalho de parto prematuro é clínico. Testes adicionais, como a medida do colo uterino por ultrassom transvaginal ou testes de fibronectina fetal, são indicados apenas em casos de dúvida diagnóstica (ameaça de trabalho de parto com dilatação cervical mínima, geralmente menor que 2 ou 3 cm). Com 5 cm de dilatação, o diagnóstico já é definitivo.\n\nAlternativa B: Incorreta. A tocólise (inibição das contrações) é geralmente contraindicada em casos de dilatação avançada (5 cm) e é formalmente contraindicada se houver suspeita de descolamento de placenta (risco associado à cocaína). Além disso, a progesterona é uma medida profilática para evitar que o trabalho de parto comece em pacientes de risco, não tendo papel no tratamento do trabalho de parto já estabelecido. Os antibióticos para latência são usados na RPMO sem trabalho de parto; em trabalho de parto, o foco é a profilaxia para GBS.\n\nAlternativa D: Incorreta. O principal erro está na recomendação de amamentação na primeira hora. O uso de cocaína há 2 horas é uma contraindicação formal à amamentação imediata, pois a droga é altamente lipossolúvel, passa para o leite materno em altas concentrações e pode causar intoxicação grave no recém-nascido (hipertensão, taquicardia, irritabilidade e convulsões). O clampeamento tardio do cordão é preferível à ordenha, e a prioridade aqui é a assistência ventilatória e estabilização do prematuro.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:04.242Z"
+  }
+]

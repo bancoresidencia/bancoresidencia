@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_576ab5a9-e31d-4e86-8edf-052e51675be2",
+    "originalId": "576ab5a9-e31d-4e86-8edf-052e51675be2",
+    "statement": "Assinale a assertiva correta sobre o trauma vascular de extremidades.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em traumatismos penetrantes, o índice tornozelo-braço ou o índice de pressão arterial ≥ 0,9 na ausência de sinais clínicos de lesão vascular é condição suficiente para alta hospitalar sem investigação com exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "No trauma contuso de alta energia, como luxação de joelho, o exame físico tem ótima sensibilidade e, portanto, não se recomenda avaliação com exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lesões arteriais na mão e no antebraço em pacientes hemodinamicamente estáveis, mesmo sem sangramento ativo e com perfusão distal compensada, devem ser tratadas cirurgicamente em menos de 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Angiografia por cateter é o exame padrão ouro para a investigação de traumatismo vascular dos membros.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A: Está correta. Nos protocolos de trauma vascular de extremidades, o exame físico associado à mensuração do Índice de Pressão Arterial (IPA) ou Índice Tornozelo-Braço (ITB) é uma ferramenta de triagem extremamente eficaz. Em traumatismos penetrantes, a ausência de sinais \"duros\" de lesão vascular (como sangramento pulsátil, hematoma em expansão, sopro ou ausência de pulsos) somada a um ITB maior ou igual a 0,9 possui um valor preditivo negativo superior a 99 por cento. Isso significa que a probabilidade de uma lesão arterial significativa que necessite de intervenção é mínima, permitindo a alta ou observação clínica sem necessidade de exames de imagem adicionais.\n\nAlternativa B: Está incorreta. No trauma contuso de alta energia, especialmente em luxações de joelho, o exame físico isolado não é confiável. Pode haver lesão da artéria poplítea com manutenção temporária de pulsos distais (lesões intimais), que podem evoluir para trombose tardia. Nesses casos, a investigação com exames de imagem ou monitoramento rigoroso é mandatária, mesmo que o exame físico inicial pareça normal.\n\nAlternativa C: Está incorreta. Lesões arteriais isoladas de antebraço (radial ou ulnar) ou da mão em pacientes hemodinamicamente estáveis e com perfusão distal preservada (garantida pela circulação colateral do arco palmar) não exigem obrigatoriamente reparo cirúrgico de urgência. Muitas vezes, essas lesões podem ser tratadas com ligadura do vaso ou conduta conservadora, dependendo da avaliação da viabilidade do membro e da presença de sangramento.\n\nAlternativa D: Está incorreta. Embora a angiografia por cateter tenha sido historicamente o padrão-ouro devido à sua precisão, a Angiotomografia (Angio-TC) é atualmente considerada o exame de escolha e o novo padrão para a investigação inicial. A Angio-TC é mais rápida, menos invasiva e amplamente disponível, possuindo sensibilidade e especificidade comparáveis à angiografia convencional para o diagnóstico de lesões vasculares traumáticas. A angiografia por cateter fica reservada preferencialmente para o tratamento endovascular (uso de stents ou embolização).",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  },
+  {
+    "id": "AJUDA_576e3644-9a4a-4dd9-9476-e4bd2be41a04",
+    "originalId": "576e3644-9a4a-4dd9-9476-e4bd2be41a04",
+    "statement": "Paciente, sexo masculino, 18 meses de idade, é encaminhado ao urologista para avaliação genital. Ao exame físico não é possível palpar o testículo esquerdo na bolsa testicular nem nas imediações. De acordo com o relato, o caso deve ser conduzido com",
+    "options": [
+      {
+        "id": "A",
+        "text": "ultrassonografia transabdominal, preferencialmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tratamento cirúrgico após 2 anos de idade para maximizar segurança anestésica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ressalva de que exames de imagens não conseguem garantir a presença ou ausência de um testículo intra-abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "retardamento do tratamento até a puberdade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso apresenta um paciente de 18 meses com testículo não palpável, o que caracteriza um quadro de criptorquidia. O ponto central da questão é o papel dos exames de imagem e o tempo ideal de intervenção na prática urológica pediátrica.\n\nAlternativa A: Incorreta. A ultrassonografia é frequentemente solicitada de forma errônea na prática clínica. Diretrizes da Sociedade Brasileira de Urologia e de grandes associações internacionais estabelecem que exames de imagem não devem ser realizados rotineiramente para testículos não palpáveis. Eles apresentam baixa sensibilidade para localizar gônadas intra-abdominais e não alteram a conduta, já que um resultado negativo no exame não exclui a presença do testículo nem dispensa a exploração cirúrgica.\n\nAlternativa B: Incorreta. O consenso médico atual indica que a cirurgia (orquidopexia) deve ser realizada preferencialmente entre os 6 e os 12 meses de idade, e idealmente até os 18 meses. Postergar o tratamento para após os 2 anos de idade aumenta o risco de danos histológicos permanentes, redução da fertilidade e maior dificuldade técnica cirúrgica. A segurança anestésica atual permite a realização do procedimento de forma segura em lactentes.\n\nAlternativa C: Correta. Esta alternativa reflete a diretriz diagnóstica correta. Nenhum exame de imagem (seja ultrassom, tomografia ou ressonância) possui sensibilidade suficiente para garantir a ausência de um testículo intra-abdominal. Portanto, diante de um testículo não palpável, o padrão-ouro para o diagnóstico e tratamento é a laparoscopia diagnóstica, que permite a visualização direta da cavidade abdominal e dos vasos espermáticos.\n\nAlternativa D: Incorreta. Aguardar até a puberdade é uma conduta proscrita. O testículo fora da bolsa escrotal está exposto a uma temperatura corporal mais alta, o que causa a degeneração das células germinativas. Além disso, o testículo criptorquídico apresenta um risco significativamente maior de malignização (câncer testicular). A intervenção precoce visa preservar a função endócrina e exócrina da gônada e facilitar o autoexame futuro.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Urologia",
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  },
+  {
+    "id": "AJUDA_576f6aed-c6e3-42c4-86b4-b2710e6d0e72",
+    "originalId": "576f6aed-c6e3-42c4-86b4-b2710e6d0e72",
+    "statement": "Paciente chega ao pronto-socorro com dor súbita e intensa no membro inferior esquerdo, palidez, ausência de pulsos distais e parestesia, compatível com oclusão arterial aguda embólica. Quanto à conduta inicial com relação à anticoagulação e à justificativa para a escolha do tipo de anticoagulante, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar heparina não fracionada (HNF) por via intravenosa em bolus, seguida por infusão contínua, visando à anticoagulação plena para prevenir a propagação do trombo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administrar terapia fibrinolítica local, para dissolver o êmbolo, pois essa é a primeira linha de tratamento em qualquer oclusão arterial aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar heparina de baixo peso molecular (HBPM) imediatamente, pois sua administração subcutânea é mais prática, e o controle laboratorial é menos rigoroso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não iniciar heparina até a confirmação angiográfica da oclusão, para evitar complicações hemorrágicas antes de definir o tratamento definitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Optar por anticoagulante oral como warfarin, para um efeito anticoagulante de longo prazo, dado que a oclusão arterial aguda embólica requer tratamento a longo prazo para evitar novas embolias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — dor súbita, palidez, ausência de pulsos e parestesia — é clássico da oclusão arterial aguda, uma emergência médica que exige intervenção rápida para salvar o membro.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A administração imediata de heparina não fracionada (HNF) por via intravenosa é a conduta inicial padrão assim que se suspeita do diagnóstico clínico. O objetivo principal não é dissolver o coágulo já existente, mas sim evitar a propagação do trombo (crescimento da \"cauda\" do trombo) tanto proximal quanto distalmente ao ponto da oclusão, além de prevenir a formação de novos trombos em áreas de estase sanguínea. A HNF é preferida em relação a outros anticoagulantes pela sua ação imediata, meia-vida curta e facilidade de reversão com protamina, caso o paciente precise de cirurgia de urgência.\n\nAlternativa b) Incorreta. A terapia fibrinolítica (trombólise) é uma opção de tratamento definitivo para restaurar o fluxo sanguíneo em casos selecionados (geralmente Rutherford I ou IIa), mas não é a conduta de \"anticoagulação inicial\". Além disso, a trombólise não é a primeira linha em todos os casos, sendo frequentemente contraindicada se houver isquemia grave com perda sensorial ou motora, situação na qual a cirurgia (embolectomia) é mais rápida.\n\nAlternativa c) Incorreta. Embora a heparina de baixo peso molecular (HBPM) seja prática, na oclusão arterial aguda a heparina não fracionada (HNF) é a escolha superior. Isso ocorre porque o paciente pode necessitar de intervenção cirúrgica imediata (como a embolectomia com cateter de Fogarty), e a HNF permite um controle mais preciso da coagulação e uma reversão mais rápida e completa em ambiente cirúrgico.\n\nAlternativa d) Incorreta. O início da anticoagulação não deve ser retardado por exames de imagem. O diagnóstico da oclusão arterial aguda é eminentemente clínico. Esperar a angiografia para iniciar a heparina aumenta o risco de trombose secundária de vasos distais e colaterais, o que piora drasticamente o prognóstico de salvamento do membro.\n\nAlternativa e) Incorreta. A varfarina é um antagonista da vitamina K que demora de 3 a 5 dias para atingir o efeito terapêutico pleno. Ela não possui papel no manejo agudo da isquemia, sendo reservada apenas para a prevenção secundária a longo prazo (manutenção) após a resolução do quadro agudo.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  },
+  {
+    "id": "AJUDA_57727a89-697e-47e7-ae19-d9d13f344975",
+    "originalId": "57727a89-697e-47e7-ae19-d9d13f344975",
+    "statement": "Mulher, 55 anos, viúva, procurou a unidade de saúde com queixas persistentes de tristeza, perda de interesse por atividades antes prazerosas, fadiga, distúrbios do sono, hiporexia e sentimentos de inutilidade há cerca de 2 meses. Foi diagnosticada com episódio depressivo maior, de gravidade moderada, sem ideação suicida ativa. Diante de histórico de boa resposta prévia e dificuldade de acesso a medicações mais recentes, foi iniciada amitriptilina, com ajuste gradual da dose até 75 mg/dia, administrada à noite. Após 3 semanas de uso regular da medicação, a paciente retorna à consulta relatando alguns efeitos colaterais. Considerando o caso apresentado, relacione a Coluna 1 à Coluna 2, associando cada mecanismo farmacológico da amitriptilina aos respectivos efeitos colaterais relatados pela paciente.\n\nColuna 1\n1. Efeito anti-histamínico.\n2. Antagonismo α1-adrenérgico.\n3. Efeito anticolinérgico.\n\nColuna 2\n( ) Boca seca intensa e visão turva para leitura.\n( ) Tontura ao se levantar rapidamente da cama e, ao exame físico, PA de 110/70 mmHg em pé e de 130/85 mmHg em repouso.\n( ) Episódios de constipação intestinal, com intervalos de até 4 dias sem evacuar.\n( ) Sensação de sonolência diurna, dificuldade para manter-se acordada após o almoço e aumento do apetite.\n\nA ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 – 2 – 3 – 1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "3 – 1 – 1 – 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1 – 2 – 3 – 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2 – 1 – 3 – 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A amitriptilina é um antidepressivo tricíclico que atua inibindo a recaptação de serotonina e noradrenalina, mas apresenta baixa seletividade, bloqueando também receptores muscarínicos (colinérgicos), alfa-1-adrenérgicos e histaminérgicos H1. O conhecimento desses bloqueios explica seu perfil de efeitos adversos:\n\nCorrelacionando os itens da Coluna 2 com a Coluna 1:\n\n- (3) Boca seca intensa e visão turva para leitura: Resultam do efeito anticolinérgico (bloqueio muscarínico), que reduz a secreção salivar (xerostomia) e paralisa a acomodação do músculo ciliar para visão de perto (cicloplegia).\n- (2) Tontura ao se levantar com queda postural da pressão arterial: Representa hipotensão ortostática (queda de 20 mmHg na PAS), decorrente do antagonismo alfa-1-adrenérgico, que impede a vasoconstrição reflexa fisiológica ao ortostatismo.\n- (3) Episódios de constipação intestinal: Também decorrem do efeito anticolinérgico, pois a acetilcolina é o principal neurotransmissor estimulador da motilidade gastrointestinal.\n- (1) Sonolência diurna e aumento do apetite: São manifestações clássicas do efeito anti-histamínico (bloqueio H1 no sistema nervoso central), responsável por sedação e estímulo do apetite/ganho ponderal.\n\nA ordem correta de preenchimento é 3 - 2 - 3 - 1.\n\nAnálise das alternativas:\n\nAlternativa A: Correta. Apresenta a correlação exata entre as manifestações clínicas e os mecanismos farmacológicos correspondentes (3 - 2 - 3 - 1).\n\nAlternativa B: Incorreta. Erra ao atribuir a hipotensão postural e a constipação ao bloqueio anti-histamínico, além de associar a sonolência ao bloqueio alfa-1.\n\nAlternativa C: Incorreta. Atribui incorretamente os sintomas colinérgicos (boca seca e visão turva) ao efeito anti-histamínico.\n\nAlternativa D: Incorreta. Confunde o bloqueio alfa-1 com sintomas anticolinérgicos no primeiro item e com efeito sedativo no último item.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Transtornos do Humor",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  },
+  {
+    "id": "AJUDA_577a4b51-41d6-4470-aeb0-84d1ff54b53b",
+    "originalId": "577a4b51-41d6-4470-aeb0-84d1ff54b53b",
+    "statement": "Mulher de 30 anos de idade chega ao pronto-socorro com história de dor intensa em baixo ventre, em pontada, que começou há 1 hora. Relata ter tido tontura e náuseas junto com a dor, e começou a ter sangramento vaginal em pequena quantidade. Não lembra a data da última menstruação, pois usa DIU de cobre e não anota. Ao exame: PA: 100 x 60 mmHg, P: 98 bpm, corada, com descompressão brusca positiva em baixo ventre. Há discreto sangramento vaginal, o colo está amolecido e impérvio e há dor à mobilização do colo. A dosagem de beta HCG é alta, e o ultrassom mostra líquido livre na cavidade pélvica, eco endometrial com espessura de 12 mm, DIU bem posicionado, formação heterogênea vascularizada de 5 cm em anexo direito. Dentre as opções abaixo, a melhor indicação é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histeroscopia com remoção do DIU e dos restos ovulares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparoscopia com salpingectomia direita.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Metotrexato e nova dosagem de beta-HCG em 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aspiração manual intrauterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Laparotomia exploradora com drenagem da cavidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico de uma gravidez ectópica rota ou complicada. Os principais pontos que levam a esse diagnóstico são: mulher em idade fértil, dor abdominal aguda intensa, sinal de irritação peritoneal (descompressão brusca positiva), sangramento vaginal, beta-hCG positivo e a presença de um DIU de cobre (que aumenta o risco proporcional de gravidez ectópica). O ultrassom confirma a suspeita ao mostrar o útero vazio (apenas com eco endometrial de 12 mm), uma massa anexial de 5 cm e líquido livre na pelve, sugerindo hemoperitônio.\n\nAnálise das alternativas:\n\na) Incorreta. A histeroscopia é utilizada para visualização e procedimentos dentro da cavidade uterina. Como a gravidez é ectópica (está no anexo, fora do útero), a remoção do DIU ou a abordagem uterina não trataria a causa da dor e do sangramento interno.\n\nb) Correta. O tratamento de escolha para gravidez ectópica com sinais de rotura (líquido livre e dor à descompressão) é cirúrgico. Como a paciente apresenta estabilidade hemodinâmica relativa (PA 100 x 60 mmHg, frequência cardíaca de 98 bpm e está corada), a via laparoscópica é a preferencial por ser menos invasiva e permitir uma recuperação mais rápida. A salpingectomia (retirada da trompa) é indicada pelo tamanho da massa (5 cm) e pelo comprometimento tubário provável.\n\nc) Incorreta. O tratamento medicamentoso com metotrexato é reservado para casos de gravidez ectópica íntegra, em pacientes estáveis, com beta-hCG em níveis menores (geralmente abaixo de 5.000 mUI/ml), massa anexial pequena (geralmente menor que 3,5 cm) e ausência de atividade cardíaca embrionária. A presença de líquido livre e sinais de irritação peritoneal contraindicam essa conduta.\n\nd) Incorreta. A aspiração manual intrauterina (AMIU) é indicada para o esvaziamento uterino em casos de abortamento incompleto ou gravidez molar. No caso clínico, o ultrassom mostra que a gravidez não está dentro do útero, portanto, a AMIU não teria efeito terapêutico.\n\ne) Incorreta. A laparotomia exploradora (cirurgia aberta) é a conduta indicada para casos de gravidez ectópica rota com instabilidade hemodinâmica grave (choque hipovolêmico franco). Apesar de a paciente apresentar dor e líquido livre, seus sinais vitais e o estado geral (corada) ainda permitem a abordagem por laparoscopia, que é o padrão-ouro. Além disso, a simples drenagem da cavidade não resolve o problema sem a retirada do local da gestação ectópica.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  },
+  {
+    "id": "AJUDA_5792ea6c-75d4-4005-ba41-fe4c2d45deed",
+    "originalId": "5792ea6c-75d4-4005-ba41-fe4c2d45deed",
+    "statement": "Homem, 30 anos de idade, em uso de anticoagulante por arritmia, foi vítima de ferimento por arma branca na face medial da coxa direita há 2 horas. Apresenta sangramento ativo, ausência de pulso distal e extremidade fria no membro. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angiotomografia com contraste endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Compressão manual e encaminhamento ao centro cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Reposição de fatores vitamina K dependente e observar evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Arteriografia com subtração digital.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo inicial do trauma vascular periférico, um tema recorrente em provas de residência médica.\n\nAnálise do quadro clínico:\nO paciente apresenta um ferimento penetrante (arma branca) em trajeto vascular (face medial da coxa) acompanhado de sinais de certeza (sinais \"duros\") de lesão arterial: sangramento ativo, ausência de pulso distal e extremidade fria (isquemia aguda).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A angiotomografia é um excelente exame diagnóstico para casos de suspeita de lesão vascular em pacientes estáveis e com sinais \"suaves\" (como hematoma não expansível ou proximidade do ferimento com vasos). Diante de sinais de certeza de lesão arterial e isquemia de membro, o diagnóstico é clínico e o paciente deve ser levado imediatamente para intervenção, sem atrasos para exames de imagem.\n\nAlternativa (b) Correta: Esta é a conduta preconizada. O controle imediato da hemorragia externa no trauma deve ser feito por compressão manual direta. Como há sinais claros de lesão vascular (ausência de pulso e isquemia), a indicação de exploração cirúrgica é imediata para revascularização do membro e controle definitivo do dano. O tempo é um fator crítico para salvar o membro.\n\nAlternativa (c) Incorreta: Embora o paciente use anticoagulante, a prioridade absoluta é a interrupção do sangramento mecânico e a restauração do fluxo sanguíneo. A reposição de fatores ou reversão da anticoagulação pode ser um adjunto no perioperatório, mas \"observar a evolução\" em um paciente com isquemia crítica é erro grave, pois levará à necrose do membro e perda da extremidade.\n\nAlternativa (d) Incorreta: A arteriografia com subtração digital é considerada o padrão-ouro para o diagnóstico de lesões vasculares complexas, mas, assim como a angiotomografia, não deve ser realizada se houver sinais claros de lesão arterial que demandem cirurgia urgente. O exame em ambiente de radiologia vascular retardaria o tratamento definitivo (reparo cirúrgico), aumentando o tempo de isquemia.\n\nResumo: Diante de ferimentos penetrantes em extremidades com sinais de certeza de lesão vascular (hemorragia pulsátil, hematoma expansível, frêmito, sopro ou sinais de isquemia distal), a conduta é compressão local para controle de sangramento e encaminhamento imediato ao centro cirúrgico.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  },
+  {
+    "id": "AJUDA_579c4c5b-78a4-451b-be9a-25896159d935",
+    "originalId": "579c4c5b-78a4-451b-be9a-25896159d935",
+    "statement": "Lucas, 28 anos, sem comorbidades graves previamente conhecidas, foi recentemente diagnosticado com linfoma de Hodgkin estágio IV após seis semanas de febre persistente, sudorese noturna e perda de peso não intencional (peso habitual = 85 kg / peso atual = 68 kg). Realizará consulta com hematologista para programação de tratamento oncológico. Em relação à oferta de cuidados paliativos para esse paciente, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não deve ser cogitada para esse paciente, jovem e sem comorbidades graves, com altas chances de cura;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser cogitada se houver falha de múltiplas linhas de tratamento, com constatação de linfoma de Hodgkin em estágio terminal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve ser feita imediatamente por uma equipe multiprofissional, caso disponível, juntamente com o tratamento oncológico;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deve ser cogitada se o paciente apresentar sofrimento físico ou psíquico inesperado, como dor refratária ou transtorno de adaptação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "EXPLICAÇÃO DA QUESTÃO:\n\nO caso clínico apresenta um paciente jovem com Linfoma de Hodgkin em estágio avançado (estágio IV) e presença de sintomas B (febre, sudorese noturna e perda ponderal expressiva de 20% do peso habitual). O ponto central da questão é o conceito moderno de Cuidados Paliativos, que rompe com a ideia de que essa abordagem se restringe apenas a pacientes terminais ou sem chances de cura.\n\nAlternativa a: Incorreta. O fato de o paciente ser jovem, não ter comorbidades prévias ou possuir altas chances de cura não exclui a necessidade de cuidados paliativos. O Linfoma de Hodgkin em estágio IV é uma doença grave que ameaça a continuidade da vida e gera grande impacto físico e emocional, justificando o suporte paliativo desde o início.\n\nAlternativa b: Incorreta. Esta alternativa descreve o modelo antigo e binário, no qual o paciente recebia ou o tratamento curativo, ou o tratamento paliativo. Hoje, sabe-se que os cuidados paliativos devem ser integrados ao tratamento oncológico ao longo de toda a trajetória da doença, e não apenas no estágio terminal ou após falhas terapêuticas.\n\nAlternativa c: Correta. De acordo com a Organização Mundial da Saúde (OMS) e as principais diretrizes oncológicas internacionais (como ASCO e ESMO), os cuidados paliativos devem ser iniciados o mais precocemente possível diante do diagnóstico de uma doença grave, progressiva ou ameaçadora à vida. A integração precoce de uma equipe multiprofissional melhora o controle de sintomas, a qualidade de vida e pode até prolongar a sobrevida, agindo em conjunto com o tratamento oncológico com intenção curativa.\n\nAlternativa d: Incorreta. Os cuidados paliativos não devem ser uma medida de exceção reservada apenas para sintomas refratários ou inesperados. Eles devem ser oferecidos de forma contínua e preventiva para manejar o sofrimento total (físico, emocional, social e espiritual) que naturalmente acompanha o diagnóstico e o tratamento de um câncer avançado.\n\nGabarito: Letra (c).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Leucemias",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  },
+  {
+    "id": "AJUDA_57a0ffa5-7294-411b-b344-bb75ca316f44",
+    "originalId": "57a0ffa5-7294-411b-b344-bb75ca316f44",
+    "statement": "T.V.N., 35 anos, GIV PII 1N 1C (há 4 anos) AI, idade gestacional de 37 semanas, deu entrada no Pronto-Socorro Ginecológico e Obstétrico (PSGO) com queixa de perda de líquido em moderada quantidade há cerca de 30 minutos. Refere pesquisa de Streptococco beta hemolítico do grupo B desconhecida. Nega dor tipo contração uterina. Nega comorbidades. No exame físico: AU: 36 cm, DU ausente, BCF: 140 bpm; exame especular: colo uterino sem lesões. Colo impérvio, grosso e posterior. Saída de pequena quantidade de líquido claro com grumos pelo orifício externo do colo uterino. Com relação ao caso clínico apresentado, assinale a conduta correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ampicilina dose de ataque e manutenção e indução do trabalho de parto com ocitocina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corticóide para maturação pulmonar fetal e indução do trabalho de parto após a segunda dose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indução do trabalho de parto com Misoprostol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Passagem de sonda de Foley para dilatação mecânica do colo uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Parto cesariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "**Análise do Caso Clínico**\n\nA paciente apresenta um quadro de **Amniorrexe Prematura a Termo** (37 semanas). O diagnóstico é confirmado pelo exame especular, que visualiza a saída de líquido amniótico com grumos pelo colo uterino. No momento, a paciente não está em trabalho de parto (ausência de dinâmica uterina) e o colo é desfavorável (índice de Bishop baixo: impérvio, grosso e posterior). Além disso, o status de colonização pelo *Streptococcus* do grupo B (GBS) é desconhecido.\n\n**Explicação das Alternativas**\n\n**a) Incorreta.** A ocitocina é o agente de escolha para indução do parto quando o colo uterino já é favorável (dilatado e apagado). Em um colo impérvio e grosso, a indução direta com ocitocina apresenta alta taxa de falha. Quanto à antibioticoterapia para GBS, ela é indicada em pacientes com status desconhecido se houver fatores de risco (como ruptura de membranas por mais de 18 horas ou febre intraparto), o que ainda não é o caso, pois a ruptura ocorreu há apenas 30 minutos.\n\n**b) Incorreta.** O uso de corticoide antenatal (como betametasona ou dexametasona) tem o objetivo de acelerar a maturação pulmonar fetal em casos de risco de parto prematuro. Essa conduta é indicada geralmente entre 24 e 34 semanas de gestação. Em gestações a termo (37 semanas ou mais), não há benefício comprovado nessa prática.\n\n**c) Correta.** Diante de uma amniorrexe prematura a termo, a conduta recomendada pela maioria dos protocolos é a indução do trabalho de parto para reduzir o risco de corioamnionite (infecção ovular). Como o colo uterino da paciente é desfavorável (grosso e fechado), é necessário realizar o **preparo cervical**. O Misoprostol é um análogo da prostaglandina E1 amplamente utilizado para o amadurecimento do colo e indução do parto. \n\n*Observação Importante:* Na prática clínica rigorosa, a presença de uma cesariana prévia (mencionada no enunciado como 1C) é considerada uma contraindicação ao uso de Misoprostol devido ao risco aumentado de ruptura uterina. Nesses casos, o método mecânico (Sonda de Foley) seria o mais seguro. Entretanto, muitas bancas examinadoras focam na necessidade de preparo cervical em colos desfavoráveis na amniorrexe a termo, elegendo o Misoprostol como resposta padrão para o conceito de \"indução com colo desfavorável\".\n\n**d) Incorreta.** A sonda de Foley (indução mecânica/Método de Krause) é uma excelente opção para preparo cervical, especialmente em úteros com cicatriz de cesárea prévia. Contudo, para fins de prova e seguindo o gabarito oficial, a alternativa C foi a selecionada como a conduta para o manejo da indução com colo imaturo.\n\n**e) Incorreta.** A rotura prematura de membranas não é uma indicação de cesariana imediata. A via de parto deve ser preferencialmente vaginal, a menos que surjam contraindicações obstétricas (como sofrimento fetal, descolamento de placenta ou falha na indução) durante o processo. Como a paciente e o feto estão estáveis, deve-se tentar a indução.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Indução do Parto e Pós-Datismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  },
+  {
+    "id": "AJUDA_57a2cead-0718-4e9a-a7a8-0359bcb637d2",
+    "originalId": "57a2cead-0718-4e9a-a7a8-0359bcb637d2",
+    "statement": "A respeito do TDAH, marque a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não é comum a presença de comorbidades nos pacientes com TDAH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso de psicoestimulantes (metilfenidato e afins) deve ser preconizada desde os 3 anos de idade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nas meninas há predomínio de sintomas de hiperatividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas afirmativas acima estão incorretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Incorreta. O TDAH é caracterizado por uma altíssima prevalência de comorbidades. Estima-se que cerca de 70% a 80% dos pacientes com TDAH apresentem pelo menos outro transtorno associado ao longo da vida, como Transtorno Opositor Desafiante (TOD), transtornos de ansiedade, depressão, transtornos de aprendizagem e tiques.\n\nAlternativa b) Incorreta. O uso de psicoestimulantes, como o metilfenidato, geralmente é recomendado e aprovado para crianças a partir dos 6 anos de idade. Para crianças em idade pré-escolar (4 a 5 anos), a primeira linha de tratamento é a intervenção comportamental (treinamento parental). O uso de medicação antes dos 6 anos é reservado para casos específicos e graves, não sendo a conduta padrão preconizada para crianças de 3 anos.\n\nAlternativa c) Incorreta. Epidemiologicamente, as meninas apresentam com maior frequência o subtipo predominantemente desatento do TDAH. Os sintomas de hiperatividade e impulsividade são classicamente mais prevalentes e evidentes no sexo masculino, o que muitas vezes contribui para o diagnóstico mais tardio ou subdiagnóstico em pacientes do sexo feminino.\n\nAlternativa d) Correta. Como todas as afirmações anteriores (a, b e c) contêm erros conceituais técnicos sobre a epidemiologia, o tratamento e a apresentação clínica do TDAH, esta é a alternativa a ser marcada.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  },
+  {
+    "id": "AJUDA_57a35e84-288b-4ea2-a7cf-b1c4fc9c3a1e",
+    "originalId": "57a35e84-288b-4ea2-a7cf-b1c4fc9c3a1e",
+    "statement": "Mulher, 41 anos de idade, nuligesta, refere que não menstrua há 8 meses e apresenta ondas de calor eventuais e sudorese noturna duas vezes por mês. Como método contraceptivo utiliza pílula contendo 4mg de drospirenona. Realizou duas coletas sanguíneas com 14 dias de intervalo, respectivamente: 1ª. Coleta FSH= 87 mlU/mL; estradiol= 2 pg/mL e 2ª coleta FSH 61mlU/mL; estradiol 4 pg/mL. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender a drospirenona e observar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever estradiol e progesterona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever isoflavona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para coleta de óvulos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve uma paciente de 41 anos com amenorreia secundária há 8 meses e sintomas vasomotores (ondas de calor e sudorese). Os exames laboratoriais revelam níveis de FSH significativamente elevados (87 e 61 mIU/mL) e níveis de estradiol muito baixos (2 e 4 pg/mL) em duas coletas distintas. Esses achados, em uma mulher com menos de 45 anos, confirmam o diagnóstico de menopausa precoce (ou insuficiência ovariana prematura, caso fosse antes dos 40 anos).\n\nAnálise das alternativas:\n\na) Incorreta. A suspensão da drospirenona para simples observação não é a conduta mais adequada. O diagnóstico de falência ovariana já está estabelecido tanto pela clínica quanto pelos exames laboratoriais repetidos. Deixar a paciente sem tratamento aos 41 anos aumenta significativamente o risco de osteoporose, doenças cardiovasculares e declínio cognitivo, além de não tratar os sintomas vasomotores que prejudicam sua qualidade de vida.\n\nb) Correta. A Terapia de Reposição Hormonal (TRH) é mandatória para mulheres que entram em menopausa precocemente. O estradiol é necessário para tratar os sintomas e proteger a saúde óssea e cardiovascular. Como a paciente possui útero, o estrogênio não deve ser administrado de forma isolada, sendo obrigatória a associação com a progesterona para proteger o endométrio contra hiperplasia e câncer. A drospirenona que ela já utiliza é um progestágeno, mas, no contexto de TRH, utilizam-se geralmente esquemas específicos de reposição de estradiol associado a um progestágeno.\n\nc) Incorreta. As isoflavonas são fitoestrogênios utilizados por algumas pacientes que possuem contraindicação absoluta à TRH convencional. No entanto, sua eficácia no controle dos sintomas vasomotores é muito inferior à do estradiol, e elas não oferecem a proteção sistêmica (óssea e cardiovascular) necessária para uma paciente jovem de 41 anos com hipoestrogenismo severo.\n\nd) Incorreta. Níveis de FSH acima de 40 mIU/mL associados a estradiol muito baixo indicam que a reserva ovariana está praticamente exaurida. Tentativas de estímulo ovariano para coleta de óvulos próprios dificilmente teriam sucesso com esses parâmetros hormonais. Para pacientes com esse perfil que desejam gestar, a principal opção na medicina reprodutiva costuma ser a recepção de óvulos doados (ovodoação).\n\nEm resumo, diante de uma falência ovariana precoce sintomática, o objetivo principal é a reposição hormonal para manutenção da saúde a longo prazo e alívio dos sintomas.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Amenorreia",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:57.715Z"
+  }
+]

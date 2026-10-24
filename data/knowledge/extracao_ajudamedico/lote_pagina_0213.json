@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_3a95b907-f7ae-43a6-9d3a-68bc2c9ca87b",
+    "originalId": "3a95b907-f7ae-43a6-9d3a-68bc2c9ca87b",
+    "statement": "Paciente, 35 anos, que chega ao pronto-socorro após um acidente de carro, com dificuldade respiratória e sinais de enfisema subcutâneo. Nesse caso, a conduta inicial para garantir a via aérea pérvia é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar intubação orotraqueal imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar manobra de Jaw Thrust e aspirar secreções.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar ventilação mecânica invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicar máscara não reinalante de O2 e observar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para a abordagem de um paciente vítima de trauma no pronto-socorro, deve-se seguir rigorosamente a sistematização do ATLS (Advanced Trauma Life Support). O primeiro passo e prioridade absoluta é o item A (Airway), que foca na manutenção da via aérea pérvia com controle da coluna cervical.\n\nAlternativa a) Incorreta. A intubação orotraqueal é o estabelecimento de uma via aérea definitiva. Embora possa ser necessária em um segundo momento, a questão foca na conduta inicial para garantir a patência. Além disso, o enfisema subcutâneo pode sugerir lesão de laringe ou traqueia, o que tornaria a intubação orotraqueal um procedimento potencialmente difícil ou até contraindicado se houver ruptura completa da via aérea, exigindo cautela e manobras básicas prévias.\n\nAlternativa b) Correta. Esta alternativa descreve a abordagem inicial básica do item A no trauma. A manobra de Jaw Thrust (tração da mandíbula) é a técnica de escolha para abrir as vias aéreas em pacientes com suspeita de lesão na coluna cervical, pois evita a hiperextensão do pescoço. A aspiração de secreções, sangue ou vômito é um passo essencial e imediato para remover obstruções mecânicas e garantir que a via aérea esteja desobstruída (pérvia).\n\nAlternativa c) Incorreta. A ventilação mecânica invasiva é uma medida de suporte respiratório que só pode ser iniciada após a via aérea estar garantida por um tubo orotraqueal ou cricotireoidostomia. Ela não é uma manobra de abertura de via aérea, mas sim uma etapa posterior de suporte ventilatório.\n\nAlternativa d) Incorreta. Embora a oferta de oxigênio suplementar seja indicada para todo paciente traumatizado, a simples colocação da máscara não garante a patência da via aérea. Se o paciente tem dificuldade respiratória e sinais de trauma cervical/torácico (enfisema), a observação passiva é inadequada; é necessário intervir ativamente para assegurar que o ar consiga chegar aos pulmões.\n\nResumo do caso: O enfisema subcutâneo é um sinal de alerta que indica a presença de ar nos tecidos moles, geralmente proveniente de uma ruptura na via aérea ou de um pneumotórax. Diante de qualquer desconforto respiratório no trauma, o manejo começa obrigatoriamente pelas manobras manuais e limpeza da cavidade oral.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Trauma",
+      "Intubação"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  },
+  {
+    "id": "AJUDA_3a95d2eb-0877-4529-a154-d5451dc29ea3",
+    "originalId": "3a95d2eb-0877-4529-a154-d5451dc29ea3",
+    "statement": "Mulher, 28 anos, é admitida no Setor de Emergência com déficit neurológico focal e ritmo cardíaco irregular. Exame físico: presença de sopro diastólico em ruflar, melhor audível na ponta do coração. A principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "comunicação interatrial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "forame oval patente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estenose mitral reumática",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "estenose aórtica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A análise desse caso clínico deve ser feita integrando os achados do exame físico e a apresentação sistêmica. Temos uma paciente jovem com três sinais principais: déficit neurológico focal (sugestivo de AVC isquêmico embólico), ritmo cardíaco irregular (sugestivo de fibrilação atrial) e um sopro diastólico em ruflar no ápice (ponta do coração).\n\nA alternativa correta é a letra (c): Estenose mitral reumática.\n\nO sopro diastólico em ruflar, mais audível na ponta (foco mitral), é o achado clássico e quase patognomônico da estenose mitral. Em pacientes jovens no Brasil, a etiologia predominante é a sequela de febre reumática. A estenose mitral leva ao aumento da pressão e do tamanho do átrio esquerdo, o que predispõe ao desenvolvimento de fibrilação atrial (ritmo irregular). A estase sanguínea no átrio esquerdo dilatado favorece a formação de trombos que, ao serem ejetados, podem causar fenômenos embólicos sistêmicos, como o déficit neurológico focal (AVC) descrito na questão.\n\nAnálise das alternativas incorretas:\n\na) Comunicação interatrial: O achado característico no exame físico é o desdobramento fixo da segunda bulha (B2) e um sopro sistólico de ejeção no foco pulmonar (por hiperfluxo), não um ruflar diastólico no ápice. Embora possa causar arritmias e embolia paradoxal, o sopro descrito não corresponde a essa patologia.\n\nb) Forame oval patente: É uma causa importante de AVC criptogênico em jovens (embolia paradoxal), mas geralmente não apresenta alterações na ausculta cardíaca nem ritmo cardíaco irregular como achado primário característico.\n\nd) Estenose aórtica: O sopro da estenose aórtica é tipicamente sistólico, do tipo crescendo-decrescendo (ejetivo), mais audível no foco aórtico e com irradiação para as carótidas. Não se apresenta como um ruflar diastólico no ápice.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Acidentes Vasculares Cerebrais",
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  },
+  {
+    "id": "AJUDA_3a98c57b-2d8f-4a02-bdc9-42226cf283e2",
+    "originalId": "3a98c57b-2d8f-4a02-bdc9-42226cf283e2",
+    "statement": "No manejo da sepse abdominal, quais são as principais diretrizes para o controle de foco e suporte hemodinâmico inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a administração de antibióticos de amplo espectro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Drenagem do foco infeccioso e controle de fluidos e vasopressores conforme necessário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia eletiva após estabilização do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exclusivamente antibioticoterapia sem intervenção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender o manejo da sepse abdominal, é fundamental focar no binômio: controle do foco infeccioso e estabilização hemodinâmica. As diretrizes internacionais, como as da Surviving Sepsis Campaign, estabelecem que o tratamento deve ser rápido e multidisciplinar.\n\nA alternativa (a) está incorreta porque, embora a administração precoce de antibióticos de amplo espectro seja um pilar essencial do tratamento, ela isoladamente não é capaz de resolver quadros de sepse abdominal nos quais há coleções purulentas ou perfurações de vísceras. O tratamento medicamentoso não substitui a necessidade de intervenção física sobre a fonte da infecção.\n\nA alternativa (b) está correta e é o gabarito. O controle de foco, que pode ser realizado via drenagem percutânea, cirurgia laparoscópica ou laparotomia, é mandatório para remover a fonte de contaminação bacteriana. Paralelamente, o suporte hemodinâmico inicial com fluidos (cristaloides) e, se necessário, vasopressores (como a noradrenalina) é vital para garantir a perfusão orgânica e reverter o estado de choque.\n\nA alternativa (c) está incorreta. O termo \"cirurgia eletiva\" refere-se a procedimentos agendados e não urgentes. Na sepse abdominal, o controle do foco deve ser realizado o mais rápido possível, preferencialmente dentro das primeiras 6 a 12 horas após o diagnóstico, devido ao alto risco de morte por disfunção multiorgânica.\n\nA alternativa (d) está incorreta. Assim como na alternativa \"a\", a crença de que apenas a antibioticoterapia é suficiente é um erro grave na prática clínica. Sem a remoção do tecido necrótico, fechamento de perfurações ou drenagem de abscessos, o foco infeccioso continuará alimentando a cascata inflamatória e a falência dos órgãos, independentemente da potência dos antibióticos utilizados.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  },
+  {
+    "id": "AJUDA_3a9ab7cf-2053-4ce5-bfb6-a66a27a951e2",
+    "originalId": "3a9ab7cf-2053-4ce5-bfb6-a66a27a951e2",
+    "statement": "Assinale a assertiva correta sobre a infecção por toxoplasmose na gestante e no recém-nascido.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No primeiro trimestre da gestação, a presença de IgM e IgG reagentes, associada à de IgG de alta avidez, indica fortemente infecção aguda adquirida na gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quando houver indicação, a amniocentese para obtenção de PCR para DNA de Toxoplasma gondii no líquido amniótico deve ser realizada a partir de 14 semanas de gestação ou, no máximo, até 4 semanas após a data da infecção primária materna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento com esquema tríplice é o indicado quando o diagnóstico da infecção ocorrer após as 18 semanas de gestação; no primeiro trimestre, deve ser evitado, pois tanto a pirimetamina quanto a sulfadiazina atuam como antagonistas do ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "No recém-nascido com menos de 6 meses, a presença de anticorpos da classe IgG confirma a toxoplasmose congênita, já que eles não ultrapassam a barreira placentária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A: INCORRETA. O teste de avidez de IgG é utilizado justamente para datar a infecção. Uma alta avidez (geralmente acima de 60%) realizada no primeiro trimestre (até 12 a 16 semanas) indica que a infecção ocorreu há pelo menos 3 ou 4 meses. Portanto, se a gestante está no primeiro trimestre e apresenta alta avidez, a infecção é crônica (adquirida antes da gestação), o que exclui o risco de transmissão vertical na maioria dos casos.\n\nAlternativa B: INCORRETA. A amniocentese para realização de PCR do líquido amniótico é o padrão-ouro para o diagnóstico de infecção fetal. No entanto, ela deve ser realizada preferencialmente a partir de 18 semanas de gestação. Além disso, deve-se aguardar um intervalo de pelo menos 4 semanas após a estimativa da infecção materna para que o parasita tenha tempo de ser excretado na urina fetal e detectado no líquido amniótico. A alternativa erra ao propor o limite de \"no máximo\" 4 semanas após a infecção.\n\nAlternativa C: CORRETA. O protocolo brasileiro (Ministério da Saúde) recomenda o uso de espiramicina assim que houver suspeita ou confirmação de infecção materna para reduzir a taxa de transmissão vertical. Contudo, se a infecção fetal for confirmada por PCR ou se a infecção materna ocorrer a partir de 18 semanas (devido ao maior risco de transmissão e gravidade), indica-se o esquema tríplice (sulfadiazina, pirimetamina e ácido folínico). A pirimetamina deve ser evitada no primeiro trimestre pelo seu potencial teratogênico, já que interfere no metabolismo do ácido fólico.\n\nAlternativa D: INCORRETA. Os anticorpos da classe IgG atravessam livremente a barreira placentária por transporte ativo. Assim, a presença de IgG no recém-nascido pode representar apenas a transferência passiva de anticorpos maternos, não confirmando a infecção congênita. O diagnóstico no neonato é sugerido pela presença de IgM ou IgA (que não cruzam a placenta) ou pela persistência/elevação dos títulos de IgG ao longo dos meses. Geralmente, a IgG de origem materna desaparece até os 12 meses de vida.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Infecções Congênitas",
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  },
+  {
+    "id": "AJUDA_3aa3c0ae-44bf-42ae-9135-f847a6cebf13",
+    "originalId": "3aa3c0ae-44bf-42ae-9135-f847a6cebf13",
+    "statement": "Apresenta-se em consulta pré natal, uma gestante , 19 anos, G1, 10 semanas de idade gestacional, com VDRL 1:64 e demais sorologias negativas. Seu parceiro obteve resultado negativo para sífilis. Ao ser questionada, a paciente nega percepção de úlcera genital e nega tratamento anterior para sífilis. Diante desse quadro, qual a conduta correta no seguimento pré-natal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento com Penicilina Benzatina 2.400.000UI em 3 doses(1 dose/semana) para gestante e 3 doses ao parceiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tratamento com Penicilina Benzatina 2.400.000UI em 3 doses(1 dose/semana) para gestante. Não há necessidade de tratamento ao parceiro devido a teste negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tratamento com Penicilina Benzatina 2.400.000UI em 3 doses(1 dose/semana) para gestante. Solicitar VDRL ao parceiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratamento com Penicilina Benzatina 2.400.000UI em 3 doses(1 dose/semana) para gestante e 1 dose ao parceiro.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Tema abordado: Manejo da sífilis na gestação e conduta com as parcerias sexuais.\n\nDiagnóstico e conduta na gestante:\nA paciente apresenta titulação elevada (VDRL 1:64) sem história prévia de sífilis tratada e sem relato de lesões clínicas (cancro duro ou lesões secundárias). Trata-se, portanto, de uma sífilis de duração ignorada (ou latente tardia). Conforme o Ministério da Saúde, o esquema padrão para essa classificação é a Penicilina Benzatina na dose de 2.400.000 UI, intramuscular, semanalmente, por 3 semanas consecutivas (total de 7.200.000 UI).\n\nConduta quanto ao parceiro:\nO manejo da parceria sexual é essencial para quebrar a cadeia de transmissão e evitar a reinfecção da gestante. Parceiros sexuais de pessoas com sífilis que apresentem testes negativos devem receber o tratamento epidemiológico (presuntivo) com Penicilina Benzatina em dose única de 2.400.000 UI, considerando a possibilidade de exposição recente e período de janela imunológica.\n\nAnálise das alternativas:\n\nAlternativa A está incorreta. O tratamento de 3 doses para o parceiro estaria indicado apenas se ele apresentasse confirmação diagnóstica de sífilis de duração ignorada/tardia. Com sorologia negativa, a indicação é o tratamento epidemiológico em dose única.\n\nAlternativa B está incorreta. Não tratar o parceiro com base no teste negativo é um erro, pois ele pode estar em fase de incubação e corre-se o risco de reinfecção da gestante tratada, comprometendo o concepto.\n\nAlternativa C está incorreta. O enunciado informa que o parceiro já realizou a testagem e obteve resultado negativo. A conduta subsequente imediata não é solicitar novos exames, mas sim administrar o tratamento epidemiológico em dose única.\n\nAlternativa D está correta. Apresenta o esquema adequado para a gestante com sífilis de duração ignorada (3 doses semanais de 2.400.000 UI) e o tratamento epidemiológico correto para a parceria sexual assintomática e com teste negativo (dose única de 2.400.000 UI).",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  },
+  {
+    "id": "AJUDA_3aa84766-09f9-4934-91d6-735fc9507990",
+    "originalId": "3aa84766-09f9-4934-91d6-735fc9507990",
+    "statement": "Paciente de 17 anos reclama de dores em baixo ventre irradiando para região lombar e face interna das coxas, sempre no início da menstruação. Informa que os sintomas ocorrem desde os 15 anos. Ainda apresenta cefaleia, diarreia e vômitos. Melhora dos sintomas a partir do terceiro dia. Menarca aos 14 anos. G0P0. \nConsiderando o diagnóstico acima, qual alternativa destaca um fator protetor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IMC menor que 20",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Contraceptivos orais",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tabagismo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome pré-menstrual",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Esterilização",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO: DISMENORREIA PRIMÁRIA\n\nO quadro clínico descreve uma paciente jovem de 17 anos com dor pélvica cíclica que se inicia com o fluxo menstrual, apresentando irradiação para a região lombar e coxas, acompanhada de sintomas sistêmicos (cefaleia, diarreia e vômitos). Este é o cenário clássico da dismenorreia primária, que surge habitualmente 1 a 2 anos após a menarca, com o estabelecimento dos ciclos ovulatórios. A fisiopatologia baseia-se na produção excessiva de prostaglandinas (principalmente a PGF2-alfa) pelo endométrio secretor, o que causa hipercontratilidade uterina, vasoconstrição e isquemia, gerando a dor.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (IMC menor que 20): Incorreta. O baixo índice de massa corporal é considerado um fator de risco para a dismenorreia primária, assim como o tabagismo e a menarca precoce. Mulheres com baixo peso tendem a relatar sintomas mais intensos.\n\nAlternativa B (Contraceptivos orais): Correta. Os anticoncepcionais hormonais combinados são um dos principais fatores protetores e também uma das primeiras linhas de tratamento. Eles agem inibindo a ovulação e reduzindo a proliferação endometrial. Com um endométrio mais fino e sem a fase lútea (que precede a queda de progesterona), há uma redução drástica na síntese de prostaglandinas, o que diminui a contratilidade uterina e a dor.\n\nAlternativa C (Tabagismo): Incorreta. O hábito de fumar é um fator de risco. A nicotina provoca vasoconstrição periférica, o que pode agravar a hipóxia do miométrio durante as contrações uterinas, intensificando a percepção da dor.\n\nAlternativa D (Síndrome pré-menstrual): Incorreta. A SPM é uma entidade clínica que ocorre na fase lútea tardia e regride com o início da menstruação. Ela não confere proteção contra a dismenorreia; muitas pacientes apresentam ambas as condições de forma concomitante.\n\nAlternativa E (Esterilização): Incorreta. Métodos de esterilização cirúrgica, como a laqueadura tubária, não interferem no eixo hormonal, na ovulação ou na produção endometrial de prostaglandinas. Portanto, não alteram o curso da dismenorreia primária.\n\nFATORES ADICIONAIS:\nAlém dos contraceptivos, são considerados fatores protetores a multiparidade (ter tido filhos) e a prática regular de exercícios físicos. São fatores de risco: nuliparidade, fluxo menstrual abundante, ciclos longos e história familiar positiva.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  },
+  {
+    "id": "AJUDA_3ab50c27-9b1c-4e88-b3cf-fcf01b1dc1ea",
+    "originalId": "3ab50c27-9b1c-4e88-b3cf-fcf01b1dc1ea",
+    "statement": "Mulher, 58 anos de idade, comparece à consulta ambulatorial por prurido cutâneo intenso. Refere que há 7 meses iniciou prurido no tronco e nos membros inferiores, sem lesões cutâneas. Há 1 mês, evolui com piora progressiva do sintoma, que passou a ser diário, acometendo quase todo o corpo e interferindo em atividades diárias e sono. Tem diagnósticos de hipertensão arterial sistêmica, diabetes melito tipo 2, dislipidemia e osteoartrite. Faz uso de hidroclorotiazida, metformina, dapagliflozina, sinvastatina e tramadol. Ao exame físico, apresenta sinais vitais normais, pele com leve xerose e algumas lesões escoriadas em membros inferiores, sem outras anormalidades. Tem exames de hemograma completo, ureia, creatinina, TGO/AST, TGP/ALT, FA e GGT normais. Hemoglobina glicada de 7,3%. Qual é a conduta mais apropriada a respeito do prurido neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidratar a pele e usar corticoide tópico nas lesões.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Substituir o tramadol por analgésicos simples orais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever gabapentina ou pregabalina orais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever anti-histamínico oral por quinze dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso:\nTrata-se de uma paciente com quadro de prurido generalizado crônico sem lesões dermatológicas primárias (prurido sine materia), apresentando apenas leve xerose e escoriações secundárias ao ato de coçar. Os exames laboratoriais descartaram as principais causas sistêmicas de prurido, como insuficiência renal, colestase, hepatopatias e doenças hematológicas. Diante desse cenário, a etiologia medicamentosa torna-se a principal hipótese, destacando-se o uso crônico de tramadol.\n\nAlternativa A: Incorreta. A hidratação da pele auxilia na melhora da xerose, mas é insuficiente para controlar um prurido intenso que prejudica o sono e as atividades cotidianas. O corticoide tópico é reservado para dermatoses inflamatórias ativas e não tem indicação na ausência de lesões cutâneas primárias.\n\nAlternativa B: Correta. O tramadol é um analgésico opioide, classe farmacológica frequentemente associada ao desenvolvimento de prurido. O mecanismo ocorre principalmente por estimulação de receptores mu-opioides no sistema nervoso central e, secundariamente, por degranulação mastocitária. Uma vez excluídas causas orgânicas sistêmicas, a conduta mais adequada é suspender o fármaco suspeito e substituí-lo por analgésicos não opioides, como paracetamol ou dipirona.\n\nAlternativa C: Incorreta. Gabapentinoides (gabapentina e pregabalina) são indicados no tratamento de prurido de origem neuropática ou em casos refratários de prurido urêmico. Não devem ser utilizados como conduta inicial quando há uma causa farmacológica evidente e passível de intervenção.\n\nAlternativa D: Incorreta. O prurido por opioides decorre primariamente de mecanismos centrais não dependentes de histamina, o que torna os anti-histamínicos pouco eficazes. Além disso, prescrever terapia sintomática por tempo limitado não resolve a condição enquanto o medicamento desencadeador for mantido.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Miscelânea",
+      "Farmacodermias",
+      "Hipertensão Arterial Sistêmica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  },
+  {
+    "id": "AJUDA_3aca292d-4106-462b-801f-37005565b77d",
+    "originalId": "3aca292d-4106-462b-801f-37005565b77d",
+    "statement": "Uma mulher de 68 anos, nulípara, com menarca aos 11 anos e menopausa aos 55, com mãe que teve câncer de mama aos 59 anos, procura atendimento para rastreamento de câncer de mama. Apresenta índice de massa corporal (IMC) de 32 kg/m², não usa terapia hormonal e nunca realizou mamografia. Diante do cenário clínico e com base nos dados estatísticos consolidados, qual das alternativas abaixo expressa corretamente os principais fatores de risco epidemiológicos para o desenvolvimento do câncer de mama?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A nuliparidade, obesidade e menarca precoce aumentam o risco, mas o fator mais relevante estatisticamente é o uso de contraceptivo oral por mais de 10 anos, que sozinho dobra o risco relativo para câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença de história familiar de primeiro grau e a menarca precoce são fatores de risco independentes, mas o tabagismo é considerado fator de risco de maior magnitude, superando inclusive a densidade mamária aumentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fatores como nuliparidade, obesidade pós-menopausa, menopausa tardia e menarca precoce estão associados ao aumento de risco; a história familiar de câncer de mama em parente de primeiro grau antes dos 60 anos é um dos mais relevantes, dobrando aproximadamente o risco relativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O principal fator de risco estatístico é a reposição hormonal combinada, que aumenta o risco absoluto anual em mais de 5%, sendo os demais fatores considerados de impacto clínico desprezível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A densidade mamária reduzida, nuliparidade e menopausa precoce são os principais preditores de risco aumentado para câncer de mama em mulheres acima dos 45 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão avalia o conhecimento sobre os fatores de risco epidemiológicos para o câncer de mama, aplicando-os ao caso clínico de uma paciente idosa com perfil de exposição hormonal prolongada e obesidade.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a nuliparidade, a obesidade e a menarca precoce sejam fatores de risco reais, a afirmação sobre o contraceptivo oral está errada. O uso de anticoncepcionais orais apresenta um aumento de risco muito leve e transitório, que desaparece cerca de 10 anos após a interrupção do uso. Ele não é o fator mais relevante estatisticamente e não dobra o risco relativo da forma descrita.\n\nb) Incorreta. A história familiar e a menarca precoce são, de fato, fatores independentes. No entanto, o tabagismo não é considerado o fator de risco de maior magnitude para o câncer de mama. A alta densidade mamária (tecido glandular e fibroso em maior proporção que o tecido adiposo) é um fator de risco significativamente mais importante do que o tabagismo na epidemiologia do câncer de mama.\n\nc) Correta. Esta alternativa resume com precisão os fatores de risco da paciente e os dados estatísticos. A nuliparidade, a obesidade pós-menopausa (devido à conversão periférica de androgênios em estrogênios no tecido adiposo), a menopausa tardia (após os 55 anos) e a menarca precoce (antes dos 12 anos) aumentam o tempo de exposição do epitélio mamário ao estrogênio. Além disso, ter um parente de primeiro grau com câncer de mama diagnosticado antes dos 60 anos é um marcador clássico que aproximadamente dobra o risco relativo da mulher.\n\nd) Incorreta. A terapia de reposição hormonal (TRH) combinada aumenta o risco de câncer de mama, mas esse aumento não chega a 5% de risco absoluto anual (o que seria um impacto astronômico). O aumento é considerado pequeno em termos de saúde pública quando comparado a outros fatores, e os demais fatores clínicos (como idade e genética) jamais seriam classificados como \"desprezíveis\".\n\ne) Incorreta. A alternativa erra ao citar \"densidade mamária reduzida\" e \"menopausa precoce\". O risco de câncer de mama aumenta com a alta densidade mamária (quanto mais denso o parênquima, maior o risco) e com a menopausa tardia (quanto mais tarde a mulher para de menstruar, maior o tempo de exposição hormonal). A menopausa precoce é, na verdade, um fator protetor.\n\nResumo dos fatores de risco presentes no caso clínico:\n- Idade avançada (68 anos): O principal fator de risco isolado.\n- Menarca precoce (11 anos) e Menopausa tardia (55 anos): Aumentam a \"janela estrogênica\".\n- Nuliparidade: Ausência do repouso hormonal e da diferenciação celular mamária que ocorre na gestação e lactação.\n- Obesidade (IMC 32): Principal fonte de estrogênio na pós-menopausa.\n- História familiar: Mãe com câncer de mama aos 59 anos (parente de 1º grau abaixo de 60 anos).",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  },
+  {
+    "id": "AJUDA_3acc738e-0d4a-4efa-82d9-ae06122ef13a",
+    "originalId": "3acc738e-0d4a-4efa-82d9-ae06122ef13a",
+    "statement": "Um garoto de quatro anos de idade foi levado ao pronto atendimento com dor leve na região do quadril esquerdo e com claudicação, sentida já havia um dia. Os responsáveis negaram febre. Foi referido que tem ocorrido um episódio de resfriado há uma semana. No exame físico, encontrava‑se em bom estado geral, com limitação dolorosa da rotação interna e abdução do quadril esquerdo, sem outras alterações. Exames laboratoriais: VHS 2 mm/h; PCR 0,1 mg/dl; hemograma normal (Hb 12,5 g/dl, leucócitos 9.000/mm³, plaquetas 220.000/mm³). A radiografia de quadris não apresentou alterações. A ultrassonografia mostrava um pequeno derrame articular no quadril esquerdo. \n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a principal hipótese diagnóstica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "sinovite transitória do quadril",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "osteomielite de fêmur",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença de Legg‑Calvé‑Perthes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "artrite séptica do quadril",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "síndrome de Osgood‑Schlatter",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um pré-escolar de quatro anos com quadro agudo de claudicação (mancar) e dor no quadril, sem sinais sistêmicos (ausência de febre e bom estado geral). O antecedente de infecção das vias aéreas superiores (resfriado) há uma semana é um \"gatilho\" clássico descrito na literatura. Os exames laboratoriais normais (VHS, PCR e leucograma) são fundamentais para afastar processos infecciosos graves. O achado de derrame articular ao ultrassom confirma o acometimento do quadril, mas de forma inespecífica.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Sinovite transitória do quadril: CORRETA. É a causa mais comum de dor no quadril na infância, afetando principalmente crianças de 3 a 8 anos. Caracteriza-se por início agudo, ausência de febre, exames laboratoriais normais e, frequentemente, ocorre após uma infecção viral respiratória. O tratamento é conservador (repouso e anti-inflamatórios), com resolução em poucos dias.\n\nb) Osteomielite do fêmur: INCORRETA. A osteomielite é uma infecção óssea que geralmente se manifesta com dor intensa, febre, queda do estado geral e elevação importante dos marcadores inflamatórios (VHS e PCR), o que não ocorre no caso descrito.\n\nc) Doença de Legg-Calvé-Perthes: INCORRETA. Trata-se de uma necrose avascular idiopática da epífise da cabeça femoral. Embora ocorra na mesma faixa etária, o quadro costuma ser crônico ou insidioso (semanas ou meses de evolução) e não tão agudo quanto o relatado. Além disso, com o tempo, a radiografia apresentaria alterações como fragmentação ou achatamento da cabeça femoral.\n\nd) Artrite séptica do quadril: INCORRETA. É o principal diagnóstico diferencial e uma emergência ortopédica. Diferencia-se da sinovite transitória pela presença de febre alta, dor intensa à mobilização (a criança geralmente não consegue deambular), leucocitose e elevação expressiva de PCR e VHS. O paciente do caso possui exames laboratoriais estritamente normais, o que torna essa hipótese muito improvável.\n\ne) Síndrome de Osgood-Schlatter: INCORRETA. Esta é uma osteocondrite da tuberosidade anterior da tíbia, manifestando-se como dor no joelho, e não no quadril. Além disso, é mais comum em adolescentes praticantes de atividades físicas, não em crianças de quatro anos.\n\nCONCLUSÃO\n\nO quadro de claudicação súbita em criança com bom estado geral, exames laboratoriais negativos e história prévia de resfriado é a apresentação típica da Sinovite Transitória do Quadril.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Quadril Pediátrico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  },
+  {
+    "id": "AJUDA_3ae6ee76-2d26-4e76-a809-da7571b2c98d",
+    "originalId": "3ae6ee76-2d26-4e76-a809-da7571b2c98d",
+    "statement": "Paciente de 52 anos, com pneumonia comunitária em tratamento hospitalar, apresenta derrame pleural à esquerda. Foram realizados exames em três pacientes diferentes:\n• Paciente A: líquido pleural seroso, pH 7,35, glicose 90 mg/dL, DHL 180 U/L, sem bactérias à bacterioscopia.\n• Paciente B: líquido turvo, pH 6,9, glicose 84 mg/dL, DHL 780 U/L.\n• Paciente C: líquido sero-hemático, pH 7,25, glicose 60 mg/dL, DHL 350 U/L, bacterioscopia negativa.\n• Paciente D: líquido claro, pH 7,40, glicose 100 mg/dL, DHL 180 U/L, sem evidência de células inflamatórias.\n• Paciente E: líquido turvo, pH 7,28, glicose 75 mg/dL, DHL 480 U/L, bacterioscopia negativa.\nEm qual dos pacientes a drenagem pleural está indicada de forma imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paciente A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paciente B.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Paciente C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paciente D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Paciente E.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O tema central desta questão é o manejo do derrame parapneumônico, uma complicação comum das pneumonias. Para decidir se um derrame pleural deve ser apenas observado (com tratamento antibiótico para a pneumonia) ou drenado imediatamente, utilizamos critérios bioquímicos e microbiológicos do líquido pleural obtido por toracentese.\n\nAs principais indicações clássicas para a drenagem de tórax no derrame parapneumônico (derrame complicado ou empiema) são:\n1. Presença de pus macroscópico (empiema).\n2. Presença de bactérias na bacterioscopia (Gram) ou cultura positiva.\n3. pH do líquido pleural abaixo de 7,20.\n4. Glicose do líquido pleural abaixo de 40 a 60 mg/dL.\n5. DHL (Desidrogenase Láctica) acima de 1.000 U/L.\n\nAnálise das alternativas:\n\na) Incorreta. O Paciente A apresenta pH de 7,35 (acima de 7,20), glicose de 90 mg/dL (normal) e DHL de 180 U/L (baixo). Trata-se de um derrame parapneumônico simples, que geralmente regride apenas com o tratamento antibiótico da pneumonia, sem necessidade de drenagem.\n\nb) Correta. O Paciente B apresenta um pH de 6,9. Qualquer valor de pH abaixo de 7,20 em um contexto de pneumonia é uma indicação formal e imediata de drenagem de tórax, pois indica um derrame parapneumônico complicado com alta probabilidade de evolução para empiema ou loculação se não for drenado.\n\nc) Incorreta. O Paciente C possui pH de 7,25 (acima do limite de corte de 7,20) e glicose no limite inferior (60 mg/dL). Embora exija vigilância próxima, os parâmetros ainda não preenchem os critérios absolutos de drenagem imediata de acordo com as diretrizes mais aceitas, quando comparados à gravidade do pH do Paciente B.\n\nd) Incorreta. O Paciente D apresenta líquido claro, pH de 7,40 (normal), glicose de 100 mg/dL (normal) e DHL de 180 U/L. Estes resultados são compatíveis com um derrame parapneumônico simples ou até mesmo um transudato, não havendo qualquer indicação de drenagem.\n\ne) Incorreta. O Paciente E tem líquido turvo, mas o pH é de 7,28 (ainda acima de 7,20) e a glicose é de 75 mg/dL. Apesar da turbidez, os critérios bioquímicos ainda sugerem um quadro que pode ser manejado inicialmente apenas com antibioticoterapia, diferente do Paciente B, que apresenta acidose importante no líquido pleural.\n\nEm resumo, a queda do pH para níveis inferiores a 7,20 é o marcador mais sensível e precoce para indicar que o derrame pleural não será reabsorvido apenas com medicamentos, tornando a drenagem de tórax mandatória para a resolução do quadro infeccioso. Por isso, a alternativa B é a correta.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Derrame Pleural"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:14.562Z"
+  }
+]

@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_bd5c3ca3-c745-4d7e-b305-487dac9d4cca",
+    "originalId": "bd5c3ca3-c745-4d7e-b305-487dac9d4cca",
+    "statement": "Um homem feodérmico com 74 anos de idade e muito emagrecido, tabagista por 57 anos, 25 cigarros por dia, queixando-se de tosse e desconforto ao deglutir. Ao exame da boca e orofaringe, observou-se uma ferida na amigdala direita, indolor e com limites imprecisos. Qual é o diagnóstico MAIS provável para o caso descrito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adenocarcinoma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Linfoma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Carcinoma espinocelular",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sífilis oral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente idoso, tabagista pesado (carga tabágica de aproximadamente 71 maços-ano) e com sinais de emagrecimento importante, o que sugere uma doença de caráter crônico e alta probabilidade de neoplasia maligna. A presença de uma lesão na amígdala, descrita como indolor e com limites imprecisos, reforça a suspeita de um processo invasivo e infiltrativo em vias aerodigestivas superiores.\n\nAnálise das alternativas:\n\na) Adenocarcinoma: Embora os adenocarcinomas possam ocorrer na região da cabeça e pescoço, eles geralmente têm origem nas glândulas salivares (maiores ou menores). Na topografia da orofaringe e amígdalas, a frequência dessa linhagem histológica é significativamente menor do que a do carcinoma de células escamosas.\n\nb) Linfoma: As amígdalas fazem parte do anel linfático de Waldeyer, sendo um sítio comum para o surgimento de linfomas não Hodgkin extranodais. No entanto, o linfoma amigdaliano costuma se manifestar como um aumento volumétrico assimétrico e submucoso da amígdala, muitas vezes sem ulceração inicial. Diante da forte carga tabágica, o carcinoma espinocelular torna-se estatisticamente muito mais provável.\n\nc) Carcinoma espinocelular (CEC): Esta é a alternativa correta. O CEC (também chamado de carcinoma epidermoide ou escamoso) representa mais de 90% das neoplasias malignas de orofaringe. O perfil do paciente é clássico: homem, idoso e tabagista de longa data. Lesões com limites imprecisos e indolores em pacientes com esse histórico devem ser consideradas CEC até que se prove o contrário por meio de biópsia. O emagrecimento acentuado é um marcador comum de doença avançada ou do estado catabólico provocado pelo tumor.\n\nd) Sífilis oral: O cancro primário (sífilis primária) manifesta-se como uma úlcera indolor, mas tipicamente possui bordos elevados, endurecidos e bem delimitados, com fundo limpo. Embora a sífilis possa acometer a amígdala, a idade avançada do paciente, o tabagismo severo e a perda ponderal importante direcionam o diagnóstico para uma causa neoplásica, e não infecciosa.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Neoplasias Benignas e Malignas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  },
+  {
+    "id": "AJUDA_bd60f2f8-7250-4813-af7d-ae1c5100e7ef",
+    "originalId": "bd60f2f8-7250-4813-af7d-ae1c5100e7ef",
+    "statement": "Paciente com queimadura de 30% de SCQ. Segundo a fórmula de Parkland, o volume nas primeiras 24h é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 ml/kg/%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4 ml/kg/%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "6 ml/kg/%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "8 ml/kg/%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "10 ml/kg/%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a reposição volêmica no paciente queimado, um tema fundamental no atendimento inicial ao trauma e em cirurgia plástica. A fórmula de Parkland é o método mais tradicional e cobrado em provas para o cálculo do volume de ringer lactato a ser infundido nas primeiras 24 horas após a lesão.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o ATLS (Advanced Trauma Life Support) em sua 10ª edição tenha atualizado a recomendação de reanimação volêmica inicial para 2 ml/kg/% de SCQ (Superfície Corporal Queimada) em adultos com queimaduras térmicas ou químicas, a questão pede especificamente a definição da Fórmula de Parkland. O valor de 2 ml/kg/% é utilizado para evitar a hiper-hidratação (fluid creep), mas não define a fórmula citada.\n\nAlternativa b) Correta. A Fórmula de Parkland clássica estabelece que o volume de cristaloide (preferencialmente Ringer Lactato) a ser administrado nas primeiras 24 horas deve ser de 4 ml x peso (em kg) x SCQ (em %). Desse total, metade deve ser infundida nas primeiras 8 horas (contadas a partir do momento do acidente) e a outra metade nas 16 horas seguintes.\n\nAlternativa c) Incorreta. O valor de 6 ml/kg/% não é utilizado como regra para queimaduras térmicas comuns. Em casos específicos de queimaduras elétricas graves com mioglobinúria, a meta de infusão pode ser elevada para manter o débito urinário maior, mas não é o padrão da fórmula de Parkland.\n\nAlternativa d) Incorreta. O valor de 8 ml/kg/% é excessivo para a reanimação inicial e aumentaria drasticamente o risco de complicações como edema pulmonar e síndrome compartimental abdominal.\n\nAlternativa e) Incorreta. Valores de 10 ml/kg/% estão fora de qualquer protocolo padrão de reanimação volêmica em queimados, sendo prejudiciais ao paciente.\n\nResumo Didático:\nPara a prova, guarde a definição: Fórmula de Parkland = 4 ml x Peso x % SCQ.\nLembre-se da distribuição do volume: 50% nas primeiras 8h e 50% nas 16h seguintes.\nDica de prova: Se a questão citar \"ATLS 10ª edição\" para adultos, o valor base muda para 2 ml, mas se citar nominalmente \"Parkland\", o valor permanece 4 ml.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  },
+  {
+    "id": "AJUDA_bd624686-9f79-44ea-9bf4-99d80c95d999",
+    "originalId": "bd624686-9f79-44ea-9bf4-99d80c95d999",
+    "statement": "Paciente de 30 anos, antecedente de hipotireoidismo e hipertensão crônica, encontra-se na primeira hora do puerpério de parto vaginal gemelar sob analgesia. O peso dos neonatos foi de 2430 g e 2290 g. Subitamente passa a apresentar sangramento genital em moderada quantidade. Quais medidas iniciais devem ser realizadas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Misoprostol via retal, ergotamina IM e solicitar balão de tamponamento uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estimativa de perda sanguínea, avaliação do índice de choque e solicitar ajuda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ácido tranexâmico, transfusão sanguínea e ligadura de artérias hipogástricas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infusão de ocitocina IV, ergotamina IM e resfriamento abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um quadro de hemorragia pós-parto (HPP) em uma paciente com fatores de risco importantes: gestação gemelar, que causa sobredistensão uterina e predispõe à atonia, e hipertensão crônica. O reconhecimento precoce e a abordagem sistemática são os pilares do manejo da HPP, seguindo o protocolo da Hora Ouro.\n\nAlternativa (a) Incorreta: Embora o misoprostol e o balão de tamponamento façam parte do arsenal terapêutico da atonia uterina, eles não são as primeiras medidas a serem tomadas. Além disso, existe uma contraindicação formal nesta alternativa: a ergotamina (Ergometril) não deve ser administrada em pacientes hipertensas, como é o caso da paciente em questão, devido ao risco de crise hipertensiva grave e acidentes vasculares.\n\nAlternativa (b) Correta: Esta opção reflete as ações imediatas preconizadas nos protocolos de hemorragia obstétrica (Hora Zero). Antes de iniciar intervenções medicamentosas ou invasivas, é fundamental pedir ajuda para acionar a equipe multiprofissional. Simultaneamente, deve-se avaliar a gravidade do sangramento através da estimativa objetiva da perda sanguínea e do cálculo do índice de choque (frequência cardíaca dividida pela pressão arterial sistólica). O índice de choque é uma ferramenta diagnóstica precoce de instabilidade hemodinâmica, sendo superior à avaliação isolada da pressão arterial.\n\nAlternativa (c) Incorreta: O ácido tranexâmico deve ser administrado precocemente, mas a transfusão sanguínea e a ligadura de artérias hipogástricas são medidas para casos de choque grave ou hemorragia refratária. A ligadura é um procedimento cirúrgico invasivo de alta complexidade e não constitui uma medida inicial de primeira linha.\n\nAlternativa (d) Incorreta: A ocitocina é a droga de primeira escolha para o tratamento da atonia uterina. No entanto, a alternativa está incorreta ao incluir a ergotamina, que é contraindicada para gestantes com hipertensão. Além disso, o resfriamento abdominal não possui recomendação técnica ou evidência científica no manejo da hemorragia; a manobra física indicada é a massagem uterina bimanual (manobra de Hamilton).",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto",
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  },
+  {
+    "id": "AJUDA_bd62d2f8-a662-46c9-94b1-9d4aa1eb47bd",
+    "originalId": "bd62d2f8-a662-46c9-94b1-9d4aa1eb47bd",
+    "statement": "Ao serem prescritos medicamentos anti-hipertensivos a pacientes com hipertensão arterial, deve-se dar atenção a seus possíveis efeitos colaterais. Assinale a alternativa que associa corretamente as classes de medicamentos a seus principais efeitos colaterais.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bloqueadores dos canais de cálcio: edema maleolar - betabloqueadores: broncoespasmo - diuréticos: reação lúpus-like",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diuréticos: hipopotassemia - inibidores da enzima conversora da angiotensina: tosse seca - simpatolíticos de ação central: efeito rebote com a descontinuação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Vasodilatadores diretos: reação lúpus-like - diuréticos: hipopotassemia - bloqueadores dos canais de cálcio: broncoespasmo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibidores da enzima conversora da angiotensina: tosse seca - diuréticos: broncoespasmo - bloqueadores dos canais de cálcio: edema maleolar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Está incorreta. Os bloqueadores dos canais de cálcio realmente podem causar edema maleolar devido à vasodilatação arterial que aumenta a pressão hidrostática capilar. Os betabloqueadores estão associados ao broncoespasmo por atuarem nos receptores beta-2 pulmonares. Contudo, a reação lúpus-like não é causada por diuréticos, mas sim por fármacos como a hidralazina ou procainamida.\n\nAlternativa B: Está correta. Os diuréticos (especialmente tiazídicos e de alça) promovem a excreção renal de potássio, podendo levar à hipopotassemia. Os inibidores da enzima conversora da angiotensina (IECA) impedem a degradação da bradicinina, o que resulta em tosse seca em uma parcela considerável dos pacientes. Os simpatolíticos de ação central, como a clonidina, apresentam o risco de efeito rebote (hipertensão severa por hiperatividade simpática) caso o tratamento seja interrompido bruscamente, devido à dessensibilização de receptores alfa-2.\n\nAlternativa C: Está incorreta. Os vasodilatadores diretos (hidralazina) podem induzir a síndrome de lúpus fármaco-induzido e os diuréticos podem causar hipopotassemia. No entanto, os bloqueadores dos canais de cálcio não possuem o broncoespasmo como efeito colateral; essa é uma característica clássica dos betabloqueadores não seletivos.\n\nAlternativa D: Está incorreta. Os IECA estão corretamente associados à tosse seca e os bloqueadores de canais de cálcio ao edema maleolar. Entretanto, os diuréticos não causam broncoespasmo. O erro da alternativa reside justamente em atribuir aos diuréticos um efeito adverso típico dos betabloqueadores.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  },
+  {
+    "id": "AJUDA_bd643507-a8d7-41e8-8c5b-c9026ccc91f6",
+    "originalId": "bd643507-a8d7-41e8-8c5b-c9026ccc91f6",
+    "statement": "Qual melhor exame complementar padrão para o diagnóstico de perfuração do esôfago?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endoscopia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Broncoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Raio X de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tomografia do tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Esofagograma com bário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O diagnóstico de perfuração esofágica é uma emergência médica que exige confirmação rápida para evitar complicações graves, como a mediastinite. A escolha do exame baseia-se na capacidade de localizar a lesão e na sensibilidade do método.\n\nAlternativa a) Incorreta. A endoscopia digestiva alta (EDA) geralmente não é recomendada como primeira linha para o diagnóstico de perfuração. A insuflação de ar necessária durante o procedimento pode forçar a passagem de ar e conteúdo gástrico para o mediastino, agravando o quadro clínico ou causando um pneumotórax hipertensivo. É reservada para casos em que os exames radiológicos são inconclusivos ou em traumas penetrantes.\n\nAlternativa b) Incorreta. A broncoscopia avalia a árvore traqueobronquial. Embora possa ser útil para identificar uma fístula esôfago-respiratória ou avaliar lesões associadas em traumas cervicais/torácicos, não é o exame padrão para diagnosticar uma perfuração isolada do esôfago.\n\nAlternativa c) Incorreta. O raio X de tórax e de cervical é frequentemente o primeiro exame realizado e pode sugerir a perfuração através de sinais indiretos, como pneumomediastino, enfisema subcutâneo ou derrame pleural. No entanto, ele não confirma a localização exata da perfuração e pode estar normal nas primeiras horas em uma porcentagem significativa de pacientes.\n\nAlternativa d) Incorreta. A tomografia computadorizada (TC) de tórax com contraste oral é um excelente exame, com alta sensibilidade para detectar coleções mediastinais e ar extraluminal. Contudo, em questões de prova e na tradição propedêutica, o esofagograma ainda é considerado o padrão-ouro para a localização dinâmica do ponto de extravasamento.\n\nAlternativa e) Correta. O esofagograma contrastado é o exame padrão para o diagnóstico. Ele permite visualizar o extravasamento do contraste para fora da luz esofágica, confirmando a perfuração e sua localização. Na prática clínica, inicia-se frequentemente com contraste hidrossolúvel (como o Gastrografin) por ser menos irritante ao mediastino; porém, o bário é mais denso e possui maior sensibilidade para detectar perfurações pequenas. Se o estudo com contraste hidrossolúvel for negativo e a suspeita persistir, deve-se proceder ao estudo com bário.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  },
+  {
+    "id": "AJUDA_bd77731c-ae24-4d4b-bd9b-85d38ec705c8",
+    "originalId": "bd77731c-ae24-4d4b-bd9b-85d38ec705c8",
+    "statement": "Mulher de 65 anos, diabética e obesa, foi submetida à mastectomia por câncer de mama. No 5º dia de pós-operatório, apresenta eritema e calor ao redor da incisão, com exsudato purulento e odor fétido. As glicemias capilares que a paciente fez em casa demonstraram diabetes fora do controle, com hiperglicemia em todas as medidas. O exame físico mostra uma área de deiscência parcial e presença de necrose superficial da ferida operatória. A paciente refere uso recente de suplementos de cálcio para osteoporose e está em terapia com insulina para o controle do diabetes. Adicionalmente, a paciente tem histórico de vasculite e faz uso de corticoides por via oral.\n\nDiante do caso clínico, assinale a alternativa que apresenta a terapêutica indicada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da dose de corticoides para controlar a inflamação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Início de antibioticoterapia oral (por exemplo, cefadroxila) e compressas quentes para controle local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Início de antibioticoterapia oral (por exemplo, cefadroxila) e compressas frias para controle local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desbridamento cirúrgico e administração de antibióticos intravenosos (por exemplo, meropenem e vancomicina).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta uma Infecção de Sítio Cirúrgico (ISC) complexa. O quadro é caracterizado por sinais flogísticos (eritema e calor), exsudato purulento e, crucialmente, odor fétido e necrose tecidual. O odor fétido sugere a presença de microrganismos anaeróbios, enquanto a necrose e a deiscência em uma paciente com múltiplos fatores de risco (diabetes descompensado, obesidade e uso de corticoide) indicam uma infecção profunda e potencialmente grave, exigindo intervenção imediata e agressiva.\n\nAlternativa a: Incorreta. O uso de corticosteroides é um fator de risco para infecções e retardo na cicatrização. Aumentar a dose pioraria o controle glicêmico (hiperglicemia) e suprimiria ainda mais a resposta imunológica necessária para combater a infecção, além de interferir na síntese de colágeno e na fibroplasia.\n\nAlternativa b: Incorreta. A cefadroxila é uma cefalosporina de primeira geração com espectro limitado, insuficiente para tratar uma infecção com sinais de necrose e odor fétido (anaeróbios). O tratamento por via oral não é adequado para um quadro com esse grau de gravidade e extensão. O uso isolado de compressas não resolve o foco infeccioso nem remove tecidos mortos.\n\nAlternativa c: Incorreta. Além de a antibioticoterapia oral ser insuficiente, as compressas frias promovem vasoconstrição local. Em um tecido que já apresenta necrose (isquemia e morte celular), a redução do fluxo sanguíneo agravaria a lesão e dificultaria a chegada de células de defesa e antibióticos ao local da infecção.\n\nAlternativa d: Correta. A presença de necrose tecidual é uma indicação absoluta de controle de foco através do desbridamento cirúrgico. Sem a remoção do tecido desvitalizado, o antibiótico não consegue penetrar efetivamente no local e a infecção tende a progredir. Devido ao alto risco de gravidade (comorbidades) e à provável etiologia polimicrobiana (incluindo Gram-positivos, Gram-negativos e anaeróbios), a terapia com antibióticos de amplo espectro por via intravenosa, como o meropenem e a vancomicina, é a conduta inicial correta enquanto se aguarda o resultado das culturas.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  },
+  {
+    "id": "AJUDA_bd7d8aa1-3e5e-498d-a840-23e54b51e372",
+    "originalId": "bd7d8aa1-3e5e-498d-a840-23e54b51e372",
+    "statement": "Uma menina de 6 anos é levada pela mãe ao ginecologista por ter iniciado desenvolvimento mamário há 4 meses. Ao exame físico, apresenta mamas em estágio M2 de Tanner e genitália em estágio P1 de Tanner. De acordo com o gráfico de velocidade de crescimento, a paciente manteve um padrão de 4 cm/ano no último ano. Realizada uma radiografia de mão e de punhos pelo método de Greulich-Pyle, identifica-se que a idade óssea da criança é estimada em 6 anos e 2 meses. A dosagem hormonal de LH é 1,2 UI/L.\nConsiderando as informações acima, o diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "telarca precoce isolada;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pubarca precoce isolada;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "menarca precoce isolada;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "puberdade precoce central;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "puberdade precoce periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para a resolução desta questão, é fundamental analisar os critérios clínicos e laboratoriais para o diagnóstico de puberdade precoce.\n\nA paciente de 6 anos apresenta telarca (desenvolvimento mamário M2), o que caracteriza a puberdade precoce, definida como o surgimento de caracteres sexuais secundários antes dos 8 anos em meninas. O ponto principal da questão é diferenciar entre a ativação real do eixo hormonal e as variantes benignas do desenvolvimento.\n\nEmbora a velocidade de crescimento (4 cm/ano) e a idade óssea (6 anos e 2 meses) estejam normais para a idade cronológica de 6 anos, o fator decisivo é o resultado laboratorial. A dosagem de LH (Hormônio Luteinizante) de 1,2 UI/L é considerada elevada. Em métodos ultrassensíveis, valores de LH basal superiores a 0,3 ou 0,5 UI/L indicam que o eixo hipotálamo-hipófise-gonadal está ativado. O fato de os parâmetros de crescimento e maturação óssea ainda estarem normais pode ser atribuído ao curto tempo de evolução (apenas 4 meses), não havendo tempo suficiente para que o estrogênio provocasse o estirão ou o avanço da idade óssea.\n\nAnálise das alternativas:\n\na) Incorreta. Na telarca precoce isolada, ocorre o desenvolvimento das mamas sem outros sinais de puberdade, e os exames mostram idade óssea e velocidade de crescimento normais. Contudo, o LH deve permanecer em níveis pré-púberes (geralmente abaixo de 0,2 ou 0,3 UI/L). O valor de 1,2 UI/L descaracteriza uma variante isolada e benigna.\n\nb) Incorreta. A pubarca precoce isolada é o surgimento de pelos pubianos antes dos 8 anos, sem outros sinais. A paciente está no estágio P1 (ausência de pelos pubianos), apresentando apenas desenvolvimento mamário.\n\nc) Incorreta. A menarca precoce isolada é a ocorrência de sangramento vaginal cíclico sem o aparecimento de outros caracteres sexuais, como mamas ou pelos. A paciente apresenta estágio M2 de Tanner e não há relato de sangramento.\n\nd) Correta. A puberdade precoce central (ou verdadeira) é decorrente da ativação prematura do eixo hipotálamo-hipófise-gonadal. O diagnóstico é confirmado pelo nível de LH basal de 1,2 UI/L, que demonstra a natureza central (dependente de gonadotrofinas) do quadro, mesmo que as repercussões clínicas no esqueleto ainda não sejam visíveis devido ao início recente dos sintomas.\n\ne) Incorreta. Na puberdade precoce periférica, a produção de esteroides sexuais ocorre de forma independente da ativação da hipófise (como em cistos ovarianos ou tumores). Nesses casos, por mecanismo de feedback negativo, os níveis de LH estariam suprimidos (muito baixos ou indetectáveis), o que é o oposto do valor de 1,2 UI/L apresentado.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  },
+  {
+    "id": "AJUDA_bd875fd6-7443-4dbd-8610-c88487c703ab",
+    "originalId": "bd875fd6-7443-4dbd-8610-c88487c703ab",
+    "statement": "O fechamento fisiológico e anatômico do canal arterial (ductus arteriosus) é um marco crucial na transição da circulação fetal para a neonatal. Considerando os mecanismos moleculares e hemodinâmicos envolvidos nesse processo em recém-nascidos a termo, assinale a alternativa correta sobre a regulação do tônus ductal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A queda na resistência vascular pulmonar inverte o fluxo sanguíneo através do canal arterial para a direção esquerda-direita, o que estimula a produção local de bradicinina e óxido nítrico, promovendo a fibrose da íntima ductal nas primeiras 12 horas de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O aumento abrupto da tensão de oxigênio (PaO2) após o nascimento inibe os canais de potássio sensíveis à voltagem nas células musculares lisas do ducto, levando à despolarização da membrana, influxo de cálcio e vasoconstrição potente, superando o efeito relaxante das prostaglandinas que diminuem drasticamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O fechamento anatômico definitivo ocorre através da trombose do lúmen ductal seguida de organização do trombo, processo este que é independente da hipóxia tecidual da vasa vasorum e da necrose celular na camada média do vaso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A persistência da patência do canal arterial em prematuros deve-se principalmente à imaturidade dos receptores de oxigênio na parede vascular e à menor sensibilidade do tecido ductal às prostaglandinas E2 circulantes, que se encontram em níveis reduzidos nesta população.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O fechamento do canal arterial é um processo fisiológico essencial que ocorre logo após o nascimento, dividido em uma fase funcional (contração muscular) e uma fase anatômica (remodelamento tecidual).\n\nALTERNATIVA A: Incorreta. Embora a queda da resistência vascular pulmonar realmente inverta o fluxo para o sentido esquerda-direita, o óxido nítrico é um potente vasodilatador, atuando na manutenção da patência e não no fechamento. A bradicinina tem papel complexo, mas não é o principal estímulo para a fibrose. Além disso, a fibrose da íntima é um processo lento que leva dias a semanas para se completar, não ocorrendo em 12 horas.\n\nALTERNATIVA B: Correta. Esta alternativa descreve o principal mecanismo molecular do fechamento funcional no recém-nascido a termo. O aumento da tensão arterial de oxigênio (PaO2) após as primeiras incursões respiratórias inibe os canais de potássio sensíveis à voltagem na membrana das células musculares lisas do ducto. Isso gera despolarização celular, abertura de canais de cálcio tipo L e consequente influxo de cálcio citosólico, promovendo a vasoconstrição. Simultaneamente, a retirada da placenta e o aumento do fluxo sanguíneo pulmonar (onde ocorre a degradação da PGE2) reduzem drasticamente os níveis de prostaglandinas relaxantes.\n\nALTERNATIVA C: Incorreta. O fechamento anatômico não depende de trombose luminal, mas sim de um processo de remodelamento vascular que inclui a formação de coxins intimais e migração de células musculares lisas. Um ponto fundamental é a hipóxia da vasa vasorum: conforme o ducto se contrai funcionalmente, o suprimento sanguíneo para sua própria parede é interrompido, gerando hipóxia tecidual que gatilha a liberação de fatores de crescimento e eventual fibrose para formar o ligamento arterioso.\n\nALTERNATIVA D: Incorreta. Em prematuros, o canal arterial permanece aberto justamente porque o tecido é mais sensível aos efeitos vasodilatadores das prostaglandinas (PGE2) e do óxido nítrico, e menos sensivel ao efeito constritor do oxigênio. Além disso, os níveis circulantes de prostaglandina E2 são proporcionalmente maiores em prematuros do que em bebês a termo, dificultando o fechamento espontâneo.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  },
+  {
+    "id": "AJUDA_bda310d0-7f34-4418-81b2-a99f47754333",
+    "originalId": "bda310d0-7f34-4418-81b2-a99f47754333",
+    "statement": "Sobre Estenose Hipertrófica do Piloro, considere as afirmativas a seguir. I. A sintomatologia mais comum é a presença de vômitos não biliosos recorrentes com piora progressiva. II. A percepção de uma massa do tamanho aproximado de uma azeitona, ao palpar a região epigástrica contra a coluna vertebral, é altamente sugestiva do diagnóstico. III. O sinal da dupla-bolha em radiografia de abdome confirma o diagnóstico. IV. Os sintomas estão presentes desde o nascimento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nAfirmativa I: Correta. A estenose hipertrófica do piloro (EHP) caracteriza-se por uma obstrução na saída do estômago. Como a obstrução é proximal à ampola de Vater (onde a bile desemboca no duodeno), os vômitos são obrigatoriamente não biliosos. O quadro clássico é o de um lactente que começa a apresentar vômitos em jato após as mamadas, com piora progressiva na frequência e na intensidade.\n\nAfirmativa II: Correta. A palpação da oliva pilórica é considerada um sinal patognomônico da EHP. Trata-se da percepção tátil do músculo pilórico hipertrofiado, descrita como uma massa firme, móvel e de formato ovalado (semelhante a uma azeitona) na região epigástrica ou no hipocôndrio direito. A palpação é facilitada quando o estômago está vazio, logo após um episódio de vômito.\n\nAfirmativa III: Incorreta. O sinal da dupla bolha (presença de ar no estômago e na porção inicial do duodeno, sem ar distal) é o achado radiológico clássico da atresia duodenal. Na EHP, a radiografia simples de abdome pode mostrar uma grande bolha gástrica única com pouco gás distal, mas o exame de imagem padrão-ouro para o diagnóstico é a ultrassonografia, que mede a espessura e o comprimento do canal pilórico.\n\nAfirmativa IV: Incorreta. Diferentemente de outras obstruções congênitas, a EHP apresenta um intervalo assintomático ou lúcido. Os sintomas raramente estão presentes ao nascimento, surgindo tipicamente entre a 2ª e a 6ª semana de vida.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Correta: Apenas as afirmações I e II descrevem corretamente a clínica e o exame físico da patologia.\n\nb) Incorreta: A afirmação IV está errada, pois os sintomas não são neonatais imediatos.\n\nc) Incorreta: Ambas as afirmações (III e IV) estão incorretas tecnicamente.\n\nd) Incorreta: A afirmação III está errada, pois o sinal da dupla bolha refere-se à atresia de duodeno.\n\ne) Incorreta: Contém as afirmações III e IV, que são falsas, conforme explicado anteriormente.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  },
+  {
+    "id": "AJUDA_bda4f8a0-3a5d-4066-b6ca-7084d6feb021",
+    "originalId": "bda4f8a0-3a5d-4066-b6ca-7084d6feb021",
+    "statement": "Menino, 10 anos de idade, joga futebol desde pequeno; queixa-se de que há 5 meses vem apresentando dificuldade para correr, há um mês não consegue terminar a partida devido a crises de tosse seca e falta de ar. Há 2 semanas, com resfriado, piorou da tosse, principalmente na madrugada e pela manhã. Tem diagnóstico de rinite alérgica. Qual dos exames abaixo confirma a principal hipótese diagnóstica para sua queixa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "pHmetria",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rx de tórax",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prova de função pulmonar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "IgE específicos para aeroalérgenos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado — menino de 10 anos com tosse seca e falta de ar desencadeadas por esforço físico (exercício), piora noturna e matinal, exacerbação por quadros virais e histórico de rinite alérgica — aponta diretamente para a hipótese diagnóstica de asma.\n\nA asma é uma doença inflamatória crônica das vias aéreas, caracterizada por hiperresponsividade brônquica e obstrução variável ao fluxo aéreo. Para confirmar o diagnóstico, é necessário demonstrar essa limitação variável ao fluxo de ar.\n\nAnálise das alternativas:\n\na) pH-metria: Este exame é utilizado para o diagnóstico de Doença do Refluxo Gastroesofágico (DRGE). Embora o refluxo possa ser um gatilho para crises de asma ou causar tosse crônica, ele não confirma o diagnóstico de asma. O quadro do paciente é fortemente sugestivo de asma induzida pelo exercício e atopia, tornando a investigação de refluxo uma etapa secundária ou desnecessária no momento inicial.\n\nb) Rx de tórax: Na asma, a radiografia de tórax costuma ser normal ou apresentar sinais inespecíficos de hiperinsuflação pulmonar durante as crises. Sua principal utilidade é excluir diagnósticos diferenciais (como pneumonia, corpos estranhos ou malformações) e avaliar complicações, mas não serve para confirmar a asma.\n\nc) Prova de função pulmonar: É a alternativa correta. A espirometria (prova de função pulmonar) é o exame padrão-ouro para confirmar o diagnóstico de asma em crianças capazes de realizar a manobra (geralmente acima de 5 a 6 anos). Ela permite identificar o distúrbio ventilatório obstrutivo e, principalmente, a reversibilidade dessa obstrução após o uso de broncodilatador, o que sela o diagnóstico. Em casos onde a espirometria em repouso é normal, mas há sintomas ao esforço, pode-se realizar também o teste de broncoprovocação com exercício.\n\nd) IgE específicos para aeroalérgenos: Estes exames (como o RAST ou ImmunoCAP) identificam a sensibilização do paciente a alérgenos específicos (poeira, ácaros, polens). Embora ajudem a caracterizar o fenótipo alérgico do paciente e a identificar gatilhos, eles não confirmam a presença da doença pulmonar (asma), apenas a condição de atopia.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:27.231Z"
+  }
+]

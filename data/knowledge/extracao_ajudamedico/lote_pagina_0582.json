@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_a2a38b4c-fe43-4f9f-a476-a578d4685b47",
+    "originalId": "a2a38b4c-fe43-4f9f-a476-a578d4685b47",
+    "statement": "Homem de 68 anos, em tratamento crônico irregular de hipertensão arterial sistêmica, diabetes mellitus e fibrilação atrial, é admitido em Unidade de Pronto Atendimento (UPA) com quadro de rebaixamento do nível de consciência e déficit neurológico do lado esquerdo, de predomínio braquiofacial. Segundo o acompanhante, o paciente tinha ido se deitar havia 90 minutos, sem qualquer sintoma antes de ser encontrado com o transtorno observado. Foi levado ao hospital, onde deu entrada 30 minutos após constatado o déficit focal. Ao exame físico, paciente com 9 pontos na escala de coma de Glasgow modificada, exibindo hemiparesia acentuada à esquerda, pressão arterial de 170 por 100 milímetros de mercúrio em ambos os membros superiores, com ritmo cardíaco irregular, frequência cardíaca média de 96 batimentos por minuto. Não há outras alterações expressivas ao exame físico. Glicemia capilar de 285 miligramas por decilitro; demais exames laboratoriais não revelam anormalidades. A tomografia computadorizada de crânio sem contraste revela área de atenuação de densidade em cerca de 40 por cento do território da artéria cerebral média do lado esquerdo, cujo laudo é obtido cerca de 3 horas após o último momento em que o paciente foi visto sem déficits.\nO médico da unidade explica ao acompanhante que, apesar dos potenciais benefícios da terapia trombolítica em pacientes com acidente vascular encefálico isquêmico, o paciente apresenta contraindicação em função de",
+    "options": [
+      {
+        "id": "A",
+        "text": "apresentar extensão de isquemia superior a um terço do território da artéria cerebral média acometida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "haver decorrido período de tempo superior ao limite máximo tolerável desde o início do déficit.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "evoluir com glicemia acima de 200 miligramas por decilitro com intervalo maior que 2 horas pós-prandial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ter níveis pressóricos superiores aos permitidos para o uso do fármaco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda as contraindicações para a trombólise endovenosa no Acidente Vascular Encefálico (AVE) isquêmico agudo. O ponto central é identificar qual dado clínico ou radiológico impede o uso do trombolítico (rtPA) neste paciente.\n\nAlternativa (a) Correta:\nA tomografia computadorizada (TC) de crânio realizada precocemente revelou uma área de hipodensidade (atenuação de densidade) ocupando cerca de 40 por cento do território da artéria cerebral média (ACM). De acordo com as diretrizes nacionais e internacionais, a presença de sinais radiológicos de infarto extenso, definidos como uma hipodensidade que acomete mais de um terço (33 por cento) do território da ACM, é uma contraindicação clássica à trombólise. Nesses casos, o tecido cerebral já sofreu lesão irreversível e o risco de transformação hemorrágica grave após o uso do trombolítico supera qualquer benefício potencial da reperfusão.\n\nAlternativa (b) Incorreta:\nO limite de tempo (janela terapêutica) para a trombólise endovenosa é de até 4,5 horas (270 minutos) a partir do momento em que o paciente foi visto pela última vez sem sintomas (\"last known well\"). No caso relatado, o paciente foi visto bem há 90 minutos, foi encontrado 30 minutos depois e o laudo da TC saiu cerca de 3 horas (180 minutos) após o último momento bem. Portanto, ele ainda se encontra dentro da janela de 4,5 horas, não sendo o tempo o fator impeditivo.\n\nAlternativa (c) Incorreta:\nA glicemia do paciente é de 285 mg/dL. Embora a hiperglicemia deva ser controlada no manejo do AVE agudo (geralmente mantendo entre 140 e 180 mg/dL), ela não é uma contraindicação para a trombólise. As diretrizes recomendam apenas cautela ou correção se a glicemia estiver abaixo de 50 mg/dL (hipoglicemia que pode simular déficit focal) ou acima de 400 mg/dL, mas o valor de 285 mg/dL por si só não impede o procedimento.\n\nAlternativa (d) Incorreta:\nPara iniciar a infusão de trombolítico, a pressão arterial (PA) deve estar abaixo de 185/110 mmHg. O paciente apresenta PA de 170/100 mmHg, o que está dentro do limite permitido para a terapia. Caso a pressão estivesse acima desse patamar, ela deveria ser reduzida com anti-hipertensivos parenterais antes de se iniciar o fármaco, mas não seria uma contraindicação absoluta se houvesse resposta ao tratamento pressórico.\n\nResumo Didático:\nApesar de o paciente estar dentro da janela de tempo e com níveis pressóricos adequados, a extensão do dano isquêmico já visível na tomografia (40 por cento do território da ACM) torna o procedimento perigoso devido ao alto risco de sangramento intracraniano, o que justifica a contraindicação apontada pela alternativa A. Vale notar que, clinicamente, uma lesão na artéria cerebral média esquerda costuma causar déficits no lado direito do corpo; no entanto, o erro de lateralidade no enunciado não invalida a regra radiológica cobrada pela questão.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 38.463934691167154,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  },
+  {
+    "id": "AJUDA_a2ad4571-b834-44ec-97f5-927ee7dc12f6",
+    "originalId": "a2ad4571-b834-44ec-97f5-927ee7dc12f6",
+    "statement": "Mulher de 27 anos, sem vida sexual ativa, vem ao consultório queixando-se de amenorreia há cerca de 4 meses. Foi submetida a exames laboratoriais, que demonstraram níveis muito baixos de FSH e LH. Prolactina e androgênios vieram normais. Assinale a alternativa que apresenta a causa da amenorreia.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Falência ovariana prematura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Disgenesia gonadal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipotalâmica e/ou hipofisária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Resistência à insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anovulação hiperandrogênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A resposta correta é a alternativa C, amenorreia de causa hipotalâmica e/ou hipofisária (hipogonadismo hipogonadotrófico).\n\nRaciocínio diagnóstico:\nTrata-se de amenorreia secundária, pois a paciente já menstruou e agora está há 4 meses sem menstruar. A primeira etapa é excluir gravidez, mesmo sem vida sexual ativa referida (beta-hCG). Depois, dosam-se TSH, prolactina e FSH/LH, e avaliam-se os androgênios quando há sinais clínicos de hiperandrogenismo.\n\nAqui, TSH e prolactina estão normais (a prolactina foi citada), e os androgênios também. O ponto decisivo é o FSH e o LH muito baixos. Isso indica que o eixo central (hipotálamo-hipófise) não estimula o ovário. Trata-se de hipogonadismo hipogonadotrófico, com baixo estímulo gonadotrófico e, portanto, baixo estrogênio.\n\nAs causas mais comuns são funcionais:\n- Estresse.\n- Perda de peso, anorexia e dietas restritivas.\n- Exercício físico intenso.\n- Também entram doenças hipofisárias, como a síndrome de Sheehan e tumores, e as hipotalâmicas orgânicas.\n\nA confirmação funcional pode ser feita com o teste do progestágeno, que costuma ser negativo por hipoestrogenismo, e com a avaliação do contexto clínico, incluindo o IMC.\n\nAnálise das alternativas:\n\na) Incorreta. Na falência ovariana prematura (insuficiência ovariana primária, antes dos 40 anos) o ovário não responde. Por falta de feedback negativo, FSH e LH ficam elevados (FSH > 25-40 UI/L), e não baixos.\n\nb) Incorreta. A disgenesia gonadal (por exemplo, síndrome de Turner) também é hipogonadismo hipergonadotrófico, com FSH e LH altos. Geralmente cursa com amenorreia primária e estigmas fenotípicos.\n\nc) Correta. FSH e LH muito baixos, com prolactina e androgênios normais, indicam falha do eixo central, hipotalâmica e/ou hipofisária.\n\nd) Incorreta. A resistência à insulina é típica da síndrome dos ovários policísticos e causa anovulação, geralmente com ciclos irregulares, e não com gonadotrofinas muito baixas. Na SOP, o FSH é normal ou baixo-normal e o LH, normal ou elevado (relação LH/FSH aumentada).\n\ne) Incorreta. A anovulação hiperandrogênica (SOP) exige androgênios elevados clínica ou laboratorialmente. Aqui eles estão normais, e o LH não está baixo.\n\nResumo para a prova: FSH e LH altos indicam causa ovariana (alternativas a e b). FSH e LH baixos indicam causa central, hipotalâmica ou hipofisária (alternativa c). FSH e LH normais, com androgênios elevados, sugerem SOP (alternativas d e e).",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  },
+  {
+    "id": "AJUDA_a2b216a3-56b5-403a-bebe-3b1346039b3e",
+    "originalId": "a2b216a3-56b5-403a-bebe-3b1346039b3e",
+    "statement": "Paciente 47 anos, sexo feminino, comparece em consulta com queixa de há 3 meses apresentar fadiga, astenia e episódios de tontura, Paciente G1P1A0CO, com método contraceptivo e laqueadura tubária há 12 anos, sem atraso menstrual. Nega uso de medicações, doenças prévias e história familiar de doenças. Exame físico normal. Qual o questionamento mais adequado que o médico deve fazer para complementar a anamnese?\n\nEXAMES LABORATORIAIS:\n- Hemoglobina: 9,7 g/dL (Referência: 11,5-14,9)\n- VCM: 76 fL (Referência: 81-100,2)\n- RDW: 16% (Referência: 11,9-15,5)\n- Glóbulos brancos: 5200 leucócitos/mm³ (Referência: 2.883-9.969)\n- Plaquetas: 155.000/mm³ (Referência: 135.606-343.044)\n- Ferritina: 18 ng/mL (Referência: 40-200)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perda ponderal não intencional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Padrão de fluxo menstrual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ingesta de alimentos ricos em vit. B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso excessivo de álcool.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nOs exames laboratoriais da paciente revelam uma anemia (hemoglobina 9,7 g/dL) do tipo microcítica (VCM 76 fL) com anisocitose (RDW elevado em 16%). A ferritina baixa (18 ng/mL) confirma o diagnóstico de anemia ferropriva. Em mulheres em idade fértil ou no período de transição menopausal, a causa mais comum de deficiência de ferro é a perda sanguínea de origem ginecológica.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. A perda ponderal não intencional seria um questionamento importante para investigar neoplasias, especialmente do trato gastrointestinal. Embora seja um diagnóstico diferencial necessário em pacientes com anemia ferropriva sem causa óbvia, em uma mulher de 47 anos, a investigação deve começar pela causa epidemiologicamente mais provável, que é a perda menstrual.\n\nb) Correta. A paciente tem 47 anos, idade em que são frequentes as alterações no ciclo menstrual devido ao climatério (perimenopausa), muitas vezes cursando com hipermenorreia (fluxo aumentado). Como a anemia ferropriva é causada por perda de ferro (geralmente sangramento) e a causa ginecológica é a principal etiologia neste grupo demográfico, avaliar o padrão do fluxo menstrual é o passo mais adequado e direto na anamnese. Vale ressaltar que a laqueadura tubária impede a gravidez, mas não interrompe a menstruação.\n\nc) Incorreta. A deficiência de vitamina B12 cursa classicamente com anemia megaloblástica, caracterizada por macrocitose (VCM elevado), o oposto do que é observado no hemograma desta paciente (VCM 76 fL).\n\nd) Incorreta. O uso excessivo de álcool pode estar associado a anemias por toxicidade direta na medula óssea ou por deficiência de folato, ambas tipicamente macrocíticas (VCM alto). Além disso, o alcoolismo pode levar a sangramentos por varizes esofágicas em casos de cirrose, mas não é a primeira suspeita para uma paciente com exame físico normal e sem histórico de doenças.\n\nCONCLUSÃO\nDiante de uma mulher de 47 anos com anemia ferropriva, o médico deve priorizar a investigação da principal causa de perda crônica de sangue nessa faixa etária: o trato genital feminino. Portanto, questionar sobre o volume e a duração do fluxo menstrual é essencial para o diagnóstico etiológico.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  },
+  {
+    "id": "AJUDA_a2b8c1f6-16cc-43de-8dec-cb7e4fc8f001",
+    "originalId": "a2b8c1f6-16cc-43de-8dec-cb7e4fc8f001",
+    "statement": "Menino de 4 anos é levado a unidade básica de saúde (UBS) por sua mãe, que relata que ele está com tosse persistente há mais de 3 semanas, febre baixa no final da tarde, cansaço e perda de apetite. Além dos pais, o menino reside também com o avô diagnosticado com tuberculose há 2 meses. \n\nCom base nos protocolos do Ministério da Saúde, a conduta para este caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrever antibióticos de amplo espectro para tratar a tosse e solicitar retorno em 15 dias para avaliar se há melhora dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar tratamento empírico para tuberculose mesmo sem confirmação diagnóstica, haja vista o histórico de contato e os sintomas apresentados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar radiografia de tórax e prova tuberculínica e explicar à família que esses exames são fundamentais para o diagnóstico de tuberculose pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "solicitar hemograma e radiografia de tórax para investigar tuberculose pulmonar e manter o menino afastado do avô até que este complete 6 meses de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma criança com sintomas clássicos de tuberculose (TB) — tosse crônica, febre vespertina e emagrecimento — associados a um histórico epidemiológico de contato próximo com um caso confirmado (o avô). Em pediatria, o diagnóstico de tuberculose é um desafio, pois as crianças raramente conseguem expectorar para exames de baciloscopia e, quando conseguem, a carga de bacilos costuma ser baixa (paucibacilares). Por esse motivo, o Ministério da Saúde recomenda o uso de um sistema de pontuação.\n\nAlternativa a: Incorreta. Diante de sintomas que perduram por 3 semanas e um contato domiciliar confirmado para TB, a principal suspeita deve ser tuberculose. Prescrever antibióticos comuns para pneumonia bacteriana e aguardar 15 dias apenas atrasaria o diagnóstico e permitiria a progressão da doença em um paciente de alto risco.\n\nAlternativa b: Incorreta. Embora o tratamento em crianças seja frequentemente clínico-radiológico, ele não deve ser iniciado sem o mínimo de investigação. O sistema de pontos do Ministério da Saúde exige a realização de exames complementares para atingir a pontuação necessária que autoriza o início da terapia, evitando tratamentos desnecessários e permitindo o acompanhamento adequado da resposta ao tratamento.\n\nAlternativa c: Correta. De acordo com o Manual de Recomendações para o Controle da Tuberculose no Brasil, o diagnóstico na criança que não expectora é baseado em um escore que soma pontos para: quadro clínico (15 pontos), radiografia de tórax (15 pontos), contato com adulto bacilífero (10 pontos), prova tuberculínica/PPD (15 pontos) e estado nutricional (5 pontos). Portanto, solicitar a radiografia de tórax e o PPD é o procedimento padrão e fundamental para aplicar o escore e confirmar a conduta.\n\nAlternativa d: Incorreta. O hemograma é um exame inespecífico para tuberculose, não ajudando a confirmar o diagnóstico conforme o protocolo oficial. Além disso, a orientação de afastar a criança do avô por 6 meses é clinicamente desnecessária. Pacientes com tuberculose sensível costumam deixar de transmitir o bacilo após cerca de 15 dias de tratamento adequado, não sendo necessário o isolamento durante todo o ciclo terapêutico.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Tuberculose",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  },
+  {
+    "id": "AJUDA_a2bfd132-1c12-480b-81f0-a3ece19881d4",
+    "originalId": "a2bfd132-1c12-480b-81f0-a3ece19881d4",
+    "statement": "Pré-escolar, sexo masculino, com 4 anos é trazido ao ambulatório para avaliação devido a “fraqueza” e “queda de cabelo”, referidas pela mãe ao longo dos últimos meses. A mãe relata que perdeu o hábito de levar a filha às consultas de rotina em razão de dificuldades financeiras e que, em casa, a alimentação predominante é baseada em arroz, macarrão e café com leite, com consumo muito restrito de frutas, legumes e proteínas. A criança tem apresentado infecções respiratórias frequentes e cansaço durante brincadeiras. Ao exame físico, a criança encontra-se em regular estado geral, hipoativa, com palidez cutânea e mucosa evidente, além de cabelos quebradiços e finos, unhas com descamação e edema frio de membros inferiores ++/4+ com cacifo. A avaliação antropométrica mostra: Peso para a Idade (P/I): abaixo do escore Z –3; Estatura para a Idade (E/I): entre os escores Z –2 e –3; Peso para a Estatura (P/E): abaixo do escore Z –3; IMC para a Idade (IMC/I): abaixo do escore Z –3. Com base no quadro descrito, qual é a classificação nutricional dessa criança de acordo com os critérios da Organização Mundial da Saúde (OMS)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peso adequado para a estatura, com desnutrição leve em razão do escore E/I estar entre –2 e –3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Desnutrição leve, considerando que há envolvimento apenas parcial de parâmetros antropométricos com sinais clínicos leves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Desnutrição aguda, acompanhada de magreza de déficit estatural significativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desnutrição grave com sinais clínicos de deficiência proteico-calórica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Baixo peso para idade e magreza acentuada, não sendo possível o diagnóstico de desnutrição com os dados apresentados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve uma criança de 4 anos com sinais clássicos de desnutrição proteico-calórica grave. Os pontos-chave para o diagnóstico são:\n\n1. Avaliação Antropométrica (OMS): A criança apresenta escores-Z abaixo de -3 para os índices Peso/Idade (P/I), Peso/Estatura (P/E) e IMC/Idade (IMC/I). Segundo a Organização Mundial da Saúde, qualquer valor abaixo de escore-Z -3 classifica o estado nutricional como desnutrição grave (ou magreza acentuada). Além disso, o índice Estatura/Idade (E/I) entre -2 e -3 indica baixa estatura para a idade, sugerindo um processo de desnutrição crônica associado.\n\n2. Sinais Clínicos: A presença de edema bilateral em membros inferiores (cacifo ++/4+) em uma criança desnutrida é um sinal patognomônico de Kwashiorkor, uma forma grave de desnutrição proteica. As alterações de fâneros (cabelos quebradiços, unhas descamando) e a palidez reforçam a carência múltipla de nutrientes e proteínas.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O Peso para a Estatura (P/E) está abaixo do escore-Z -3, o que caracteriza magreza acentuada, e não peso adequado. Além disso, o escore E/I entre -2 e -3 é classificado como baixa estatura para a idade, e a presença de edema e escores-Z < -3 elevam a classificação para desnutrição grave.\n\nAlternativa b) Incorreta. A desnutrição é classificada como grave, não leve. Parâmetros antropométricos com escore-Z abaixo de -3 e a presença de edema clínico são critérios definitivos para gravidade, exigindo manejo clínico imediato para evitar complicações como hipoglicemia, hipotermia e infecções graves.\n\nAlternativa c) Incorreta. Embora o déficit de peso para estatura indique uma desnutrição aguda (*wasting*) e o déficit de estatura indique um componente crônico (*stunting*), o termo técnico correto para o quadro clínico e antropométrico apresentado, seguindo os critérios da OMS descritos na questão, é desnutrição grave. A alternativa ignora a nomenclatura padrão para casos com edema e escores-Z extremamente baixos.\n\nAlternativa d) Correta. Esta alternativa sintetiza perfeitamente o caso. A antropometria com escore-Z abaixo de -3 define desnutrição grave por critérios numéricos. Somado a isso, os sinais clínicos de deficiência proteico-calórica, especialmente o edema (Kwashiorkor) e as alterações de fâneros, confirmam a gravidade e o diagnóstico de desnutrição proteico-energética grave.\n\nAlternativa e) Incorreta. É perfeitamente possível diagnosticar a desnutrição com os dados apresentados. A OMS estabelece que a presença de edema bilateral de origem nutricional, por si só, já é critério para o diagnóstico de desnutrição grave, independentemente dos índices antropométricos. No caso, os índices reforçam ainda mais o diagnóstico.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Desnutrição na Infância",
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  },
+  {
+    "id": "AJUDA_a2c2bfda-db3e-4dd5-9eb0-d679a403a3ad",
+    "originalId": "a2c2bfda-db3e-4dd5-9eb0-d679a403a3ad",
+    "statement": "Marta, 43 anos, hipertensa e diabética, realizava acompanhamento periódico em uma Unidade Básica de Saúde (UBS) vinculada à ESF. Após mudança de endereço dentro do mesmo município, passou a procurar atendimento em outra UBS, na qual teve dificuldade para dar continuidade ao seu seu cuidado, uma vez que não houve acesso a seu histórico clínico nem reconhecimento do vínculo anterior. Nos meses seguintes, ao procurar atendimento em uma UPA por quadro de descompensação clínica, exames complementares foram repetidos, e o plano terapêutico foi reiniciado a partir de informações parciais. A paciente expressou frustração com a descontinuidade, dizendo ter a sensação de que “os serviços não se comunicam”. Entre os princípios do SUS, a situação descrita reflete, sobretudo, uma violação do princípio da:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Equidade – ao não priorizar o cuidado da paciente conforme suas vulnerabilidades clínicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Universalidade – ao condicionar o acesso da paciente ao vínculo territorial anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Integralidade – ao fragmentar a atenção e dificultar o fluxo contínuo e articulado de cuidado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Regionalização – ao não garantir a referência assistencial entre os pontos de atenção do território.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico ilustra um problema clássico de fragmentação da assistência à saúde e perda da continuidade do cuidado dentro da Rede de Atenção à Saúde (RAS).\n\nAlternativa a: Incorreta. O princípio da equidade diz respeito a oferecer mais a quem mais precisa, reduzindo disparidades sociais e de saúde ao tratar desigualmente os desiguais. A situação relatada não decorre de falta de priorização por vulnerabilidade, mas sim da perda de informações clínicas e ausência de coordenação entre os serviços.\n\nAlternativa b: Incorreta. A universalidade estabelece o acesso à saúde como um direito de todos os cidadãos, sem qualquer tipo de discriminação. A paciente conseguiu acesso tanto na nova Unidade Básica de Saúde quanto na UPA, de modo que a porta de entrada não foi bloqueada. A falha ocorreu no fluxo e na qualidade do cuidado ao longo do sistema.\n\nAlternativa c: Correta. A integralidade abrange tanto a visão holística do indivíduo quanto a articulação contínua dos serviços de saúde nos diferentes níveis de complexidade. Quando ocorrem perda do histórico, repetição desnecessária de exames, quebra de vínculo e falta de comunicação entre a Atenção Primária e a Rede de Urgência/Emergência, o cuidado torna-se fragmentado, ferindo diretamente o princípio da integralidade.\n\nAlternativa d: Incorreta. A regionalização é uma diretriz organizativa voltada para a delimitação de territórios e estruturação da rede para atender a uma população adscrita. O problema central vivido pela paciente não foi a ausência de um serviço de referência no território, mas a descontinuidade informacional e clínica entre os pontos de atenção.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS",
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  },
+  {
+    "id": "AJUDA_a2c91392-8021-42c1-b96c-ef14d3d30247",
+    "originalId": "a2c91392-8021-42c1-b96c-ef14d3d30247",
+    "statement": "Paciente, sexo feminino, 35 anos de idade, apresenta púrpura de membros inferiores associada à mononeurite múltipla e pneumopatia intersticial não especifica (PINE). Na investigação foi encontrado fator reumatoide 88 UI (VR<14UI), anti-Ro 240 UI (reagente), anti-La, anti-Sm, anti-RNP e anti-DNA não são reagentes e hipergamaglobulinemia policional. Biopsia de glândula sublingual mostra sialoadenite linfocitica focal, com focus score = 2. Qual é o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença por IgG4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artrite reumatoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença de Sjogren.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Crioglobulinemia mista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico desta paciente baseia-se na integração de achados clínicos sistêmicos, exames laboratoriais imunológicos e no padrão histopatológico. A paciente apresenta um quadro de manifestações extraglandulares graves, que podem ocorrer em cerca de 30 a 50 por cento dos casos de Síndrome de Sjögren.\n\nAnálise dos pontos principais da questão:\n\n1. Manifestações Extraglandulares: A púrpura (vasculite de pequenos vasos), a mononeurite múltipla (comprometimento neurológico periférico) e a pneumopatia intersticial não específica (PINE) são complicações sistêmicas reconhecidas da Síndrome de Sjögren.\n\n2. Marcadores Sorológicos: O Anti-Ro (SSA) é um dos pilares para o diagnóstico da doença. O fator reumatoide elevado e a hipergamaglobulinemia policlonal refletem a hiperatividade das células B, comum nesta patologia.\n\n3. Biópsia de Glândula Salivar: A presença de sialoadenite linfocítica focal com Focus Score igual ou maior que 1 (no caso, focus score = 2) é o achado histopatológico clássico e critério diagnóstico essencial segundo os critérios do ACR/EULAR de 2016.\n\nAnálise das alternativas:\n\na) Incorreta. A doença relacionada ao IgG4 costuma cursar com aumento volumétrico de glândulas (como as lacrimais e parótidas) e a biópsia revelaria fibrose estoriforme e flebite obliterativa, achados diferentes da sialoadenite focal descrita. Além disso, o Anti-Ro positivo é característico de Sjögren, não da doença por IgG4.\n\nb) Incorreta. Embora a artrite reumatoide (AR) possa apresentar fator reumatoide positivo e doença pulmonar intersticial, a questão não descreve sinovite em pequenas articulações. Além disso, o focus score de 2 na biópsia salivar e o Anti-Ro positivo direcionam o diagnóstico especificamente para Sjögren.\n\nc) Correta. A paciente preenche critérios classificatórios definitivos: biópsia de glândula salivar menor positiva (focus score maior ou igual a 1) e presença de anticorpo Anti-Ro. As queixas de púrpura, mononeurite e PINE confirmam o acometimento sistêmico da Síndrome de Sjögren.\n\nd) Incorreta. A crioglobulinemia mista pode causar púrpura, mononeurite e fator reumatoide positivo. Entretanto, ela não explica o achado histopatológico de sialoadenite linfocítica focal nem é tipicamente associada ao Anti-Ro em altos títulos como causa primária, sendo mais associada à hepatite C. Embora o Sjögren possa causar crioglobulinemia secundária, o diagnóstico principal diante da biópsia e do Anti-Ro é a Síndrome de Sjögren.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Doenças Autoimunes do Tecido Conjuntivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  },
+  {
+    "id": "AJUDA_a2cab811-1503-44a3-81f7-38c56a9949bd",
+    "originalId": "a2cab811-1503-44a3-81f7-38c56a9949bd",
+    "statement": "A alergia alimentar é uma doença de aparente prevalência mundial, caracterizada por reação adversa imunológica reprodutível a determinado alimento. Sobre a alergia alimentar, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A alergia ao ovo e leite é para toda a vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É mais comum em países em desenvolvimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A dosagem de IgE específica no soro é o padrão ouro para o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A introdução tardia dos alimentos alergênicos pode aumentar o risco de alergia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A síndrome de enterocolite induzida por proteínas alimentares (FPIES) é uma forma grave de alergia alimentar mediada por IgE.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa (a) Incorreta: A maioria das alergias ao leite de vaca e ao ovo iniciadas na infância é transitória. Grande parte das crianças desenvolve tolerância clínica até a idade escolar ou adolescência. Diferentemente das alergias a amendoim e a frutos do mar, que tendem a ser persistentes, as proteínas do leite e do ovo geralmente deixam de causar reações com o amadurecimento do sistema imunológico.\n\nAlternativa (b) Incorreta: Embora a prevalência esteja aumentando globalmente, a alergia alimentar é classicamente mais comum e documentada em países desenvolvidos e industrializados. Isso costuma ser associado à hipótese da higiene e a fatores ambientais ocidentalizados.\n\nAlternativa (c) Incorreta: A dosagem de IgE específica (ou o Skin Prick Test) identifica a sensibilização, mas não confirma obrigatoriamente a alergia clínica, pois apresenta muitos resultados falsos-positivos. O padrão-ouro para o diagnóstico de alergia alimentar é o Teste de Provocação Oral (TPO), realizado sob supervisão médica.\n\nAlternativa (d) Correta: Estudos recentes, como o marco LEAP (Learning Early About Peanut Allergy), demonstraram que retardar a introdução de alimentos potencialmente alergênicos não previne alergias e, na verdade, pode aumentar o risco de desenvolvê-las. Atualmente, recomenda-se a introdução de alimentos complementares variados a partir dos 6 meses de vida para favorecer a indução de tolerância imunológica.\n\nAlternativa (e) Incorreta: A FPIES (Food Protein-Induced Enterocolitis Syndrome) é uma forma grave de alergia alimentar, porém ela é classificada como uma reação não mediada por IgE. O quadro é caracterizado por vômitos profusos, diarreia e risco de desidratação ou choque, ocorrendo geralmente de 1 a 4 horas após a ingestão do alimento, sem a participação de anticorpos IgE na sua patogênese.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Alergia Alimentar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  },
+  {
+    "id": "AJUDA_a2d6d7a2-438c-40ae-af09-b363c968460a",
+    "originalId": "a2d6d7a2-438c-40ae-af09-b363c968460a",
+    "statement": "Paciente de 27 anos, nuligesta, usuária de DIU de cobre 380-A, inserido há 2 anos, procura atendimento ginecológico com queixa de corrimento vaginal com odor desagradável, principalmente após a relação sexual. Nega dor pélvica ou febre. Ao exame ginecológico, observa-se corrimento acinzentado, fino e homogêneo, sem sinais inflamatórios. O teste das aminas é positivo e o pH vaginal está aumentado (> 4,5). Considerando o quadro clínico descrito, a melhor conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Remover o DIU de cobre e iniciar fluconazol oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Metronidazol, mantendo o DIU de cobre.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas prescrever fluconazol em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Clindamicina creme vaginal 2% e retirar o DIU de cobre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ceftriaxona intramuscular e doxiciclina oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma paciente com Vaginose Bacteriana (VB), a causa mais comum de corrimento vaginal em mulheres em idade reprodutiva. O diagnóstico é fundamentado nos Critérios de Amsel, dos quais a paciente apresenta todos os quatro:\n1. Corrimento homogêneo, acinzentado e fino.\n2. pH vaginal > 4,5.\n3. Teste das aminas (Whiff test) positivo (odor de \"peixe podre\" após adição de KOH a 10%, ou espontaneamente após o coito).\n4. Presença de \"clue cells\" (células-pista) na microscopia (embora não citadas explicitamente, os outros critérios confirmam o diagnóstico).\n\nA ausência de sinais inflamatórios (dor, prurido intenso, hiperemia da mucosa) é característica da VB, diferenciando-a das vaginites (como candidíase e tricomoníase).\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. O fluconazol é um antifúngico indicado para Candidíase Vaginal, que se manifesta com pH < 4,5 e corrimento em aspecto de \"leite coalhado\". Além disso, não há indicação de remover o dispositivo intrauterino (DIU) de cobre em episódios isolados de vaginose bacteriana.\n\nb) CORRETA. O tratamento de escolha para a Vaginose Bacteriana é o Metronidazol (oral ou vaginal). O DIU de cobre pode estar associado a um leve aumento do risco de VB em algumas pacientes devido à alteração da microbiota local, mas não deve ser removido rotineiramente no tratamento da infecção. A remoção só é considerada em casos de recidivas frequentes e após discussão com a paciente.\n\nc) INCORRETA. Como mencionado, o fluconazol trata fungos (Candida spp.). A vaginose é causada por um desequilíbrio da flora, com redução de lactobacilos e proliferação de bactérias anaeróbias (principalmente Gardnerella vaginalis, Mobiluncus e Atopobium vaginae).\n\nd) INCORRETA. Embora a Clindamicina vaginal seja uma opção terapêutica para a vaginose bacteriana, a recomendação de retirar o DIU de cobre torna a alternativa errada. Não há necessidade de remoção do método contraceptivo para tratar esse quadro clínico.\n\ne) INCORRETA. Este esquema terapêutico (Ceftriaxona + Doxiciclina) é indicado para o tratamento da Doença Inflamatória Pélvica (DIP) ou cervicites por Gonococo e Clamídia. A paciente do caso nega dor pélvica e febre, e o exame físico não mostra sinais de infecção do trato superior ou dor à mobilização do colo uterino.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  },
+  {
+    "id": "AJUDA_a2d836df-7311-4381-b03b-d1ed30cc808f",
+    "originalId": "a2d836df-7311-4381-b03b-d1ed30cc808f",
+    "statement": "Menina de 12 anos de idade, moradora de Ananindeua-PA, apresenta febre de moderada intensidade há 7 dias, associada a artralgia em joelho direito. Mãe conta que no início do quadro febril, apresentava artralgia em tornozelo que melhorou após 3 dias de evolução. Ao exame físico, regular estado geral e edema em joelho direito, sopro em foco mitral 2/4+, sem outras alterações. Para investigar a principal hipótese diagnóstica, é importante solicitar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "FAN",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anti Sm",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ASLO",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mielograma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hemograma e hemocultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma paciente na faixa etária escolar (12 anos) com um quadro clássico de Febre Reumática (FR). Os pontos-chave para o diagnóstico são:\n1. Febre há 7 dias.\n2. Artrite migratória: a dor e o edema começaram no tornozelo, melhoraram em 3 dias e \"migraram\" para o joelho. Este padrão é a manifestação articular mais comum da FR.\n3. Cardite: a presença de sopro em foco mitral (2/4+) sugere o acometimento valvar, sendo a valvulite mitral a manifestação cardíaca mais frequente.\n\nPara confirmar o diagnóstico de Febre Reumática, utilizamos os Critérios de Jones. Além de preencher os critérios maiores (neste caso, Poliartrite e Cardite), é indispensável a comprovação de infecção prévia pelo Estreptococo do grupo A (Streptococcus pyogenes).\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. O FAN (Fator Antinuclear) é o exame de triagem para Lúpus Eritematoso Sistêmico (LES). Embora o LES possa causar artrite e febre, a artrite lúpica costuma ser persistente e simétrica, não apresentando o caráter migratório típico da Febre Reumática. Além disso, a combinação de artrite migratória com sopro cardíaco em crianças é fortemente sugestiva de FR.\n\nb) INCORRETA. O Anti-Sm é um anticorpo altamente específico para o LES. Sua solicitação só faria sentido se a suspeita clínica de Lúpus fosse a principal hipótese, o que não ocorre devido ao padrão migratório da artrite e a epidemiologia favorável à Febre Reumática.\n\nc) CORRETA. A ASLO (Antiestreptolisina O) é o exame padrão para comprovar a evidência de infecção estreptocócica prévia. Como a Febre Reumática é uma complicação tardia e imunomediada (ocorre semanas após a faringoamigdalite), a bactéria raramente é encontrada em culturas de garganta no momento dos sintomas articulares. Assim, a elevação dos títulos de anticorpos (ASLO) é o critério laboratorial necessário para validar os Critérios de Jones.\n\nd) INCORRETA. O mielograma avalia a produção de células na medula óssea. Seria indicado na suspeita de leucemias, que podem cursar com dor nos membros e febre. No entanto, a leucemia causa dor óssea (frequentemente metafisária) e não uma artrite migratória clássica com sopro cardíaco associado.\n\ne) INCORRETA. O hemograma apresentaria apenas marcadores inflamatórios inespecíficos (como leucocitose). A hemocultura é utilizada para diagnosticar Endocardite Infecciosa. Embora a endocardite cause febre e sopro, ela não costuma cursar com artrite migratória. Na Febre Reumática, as lesões cardíacas são causadas por reação cruzada de anticorpos, e não por infecção direta do sangue, o que torna a hemocultura negativa.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Febre Reumática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:37.856Z"
+  }
+]

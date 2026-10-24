@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_2259d3c7-bfc0-43a9-a952-1d752e4dd29c",
+    "originalId": "2259d3c7-bfc0-43a9-a952-1d752e4dd29c",
+    "statement": "A hipertensão pulmonar persistente do recém-nascido (HPPN) é uma condição clínica grave associada a diversas patologias cardiopulmonares, caracterizada por pressão vascular pulmonar elevada e vasorreatividade alterada, resultando em desvio (shunt) direita-esquerda do fluxo sanguíneo através de estruturas fetais, como o ducto arterioso (canal arterial – CA) e o Forame Oval (FO). Com base nisso, analise as assertivas a seguir sobre o diagnóstico da HPPN:\n\nI. A oximetria de pulso, com sensores colocados em local pré-ductal (mão direita) e pós-ductal (membros inferiores), é útil. Quando a saturação de oxigênio no membro pós-ductal for maior que no pré-ductal em pelo menos 5%, isso indica possível shunt direita-esquerda pelo canal arterial.\nII. Os pacientes apresentam quadro de desconforto respiratório com taquipneia e cianose progressiva, muitas vezes desproporcional ao grau de comprometimento pulmonar visível em exames de imagem.\nIII. É comum observar labilidade acentuada da oxigenação, especialmente durante manipulação ou choro, refletindo a instabilidade da vasorreatividade pulmonar.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A Hipertensão Pulmonar Persistente do Recém-Nascido (HPPN) é uma falha na transição circulatória fetal para a neonatal, mantendo a resistência vascular pulmonar elevada. Vamos analisar cada assertiva para entender a lógica do diagnóstico:\n\nAssertiva I: Incorreta. A lógica da oximetria de pulso na HPPN baseia-se no shunt direita-esquerda pelo canal arterial. O sangue pobre em oxigênio sai da artéria pulmonar e entra na aorta descendente após a emergência da artéria subclávia direita. Por isso, a saturação pré-ductal (medida na mão direita) deve ser MAIOR que a saturação pós-ductal (medida nos membros inferiores). O diagnóstico é sugerido quando a saturação pré-ductal é pelo menos 5% a 10% superior à pós-ductal. A assertiva inverteu essa relação ao afirmar que a pós-ductal seria maior.\n\nAssertiva II: Correta. Esta é uma característica clássica da HPPN. O recém-nascido apresenta hipoxemia grave e cianose que não melhora adequadamente com a oferta de oxigênio (teste da hiperóxia negativo). Muitas vezes, ao realizar o raio X de tórax, o médico encontra campos pulmonares limpos ou com alterações mínimas, o que demonstra que a causa da cianose é hemodinâmica (hipertensão vascular e shunt) e não apenas uma doença do parênquima pulmonar.\n\nAssertiva III: Correta. A vasculatura pulmonar desses pacientes é extremamente reativa e instável. Qualquer estímulo externo, como manipulação excessiva, frio, dor ou aspiração de vias aéreas, pode desencadear uma crise de vasoconstrição pulmonar aguda. Isso resulta em quedas súbitas e acentuadas da saturação de oxigênio, fenômeno conhecido como labilidade da oxigenação.\n\nAnálise das alternativas:\n\na) Incorreta. O item I é falso devido à inversão da relação entre as saturações.\nb) Incorreta. Embora o item II esteja correto, o item III também está, tornando a alternativa incompleta.\nc) Incorreta. Embora o item III esteja correto, o item II também está, tornando a alternativa incompleta.\nd) Incorreta. Inclui o item I, que descreve erroneamente o gradiente de oximetria.\ne) Correta. Os itens II e III descrevem corretamente o quadro clínico e o comportamento fisiopatológico da HPPN.\n\nGabarito: Letra (e).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  },
+  {
+    "id": "AJUDA_225ac298-71be-4be7-b0ba-ef5af67a6771",
+    "originalId": "225ac298-71be-4be7-b0ba-ef5af67a6771",
+    "statement": "Gestante de 29 anos, G2P1, com 32 semanas de gestação, comparece à consulta de rotina assintomática. Seus exames revelam pressão arterial de 150 × 95 mmHg em duas aferições com 4 horas de intervalo e proteinúria positiva em teste de fita urinária. Apresenta crescimento fetal adequado e sem queixas no momento. Assinale a alternativa que considera o diagnóstico e a conduta, respectivamente, para essa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertensão gestacional: iniciar metildopa e agendar nova avaliação em 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pré-eclâmpsia incipiente: repetir aferições da PA em 48 horas e seguir com pré-natal habitual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertensão crônica: confirmar proteinúria com exames laboratoriais e aguardar evolução do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pré-eclâmpsia com sinais de deterioração clínica: iniciar sulfato de magnésio, anti-hipertensivo e indicar interrupção da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pré-eclâmpsia sem sinais de deterioração clínica: iniciar anti-hipertensivo, solicitar exames materno-fetais e manter vigilância ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A análise deste caso clínico fundamenta-se nos critérios diagnósticos das síndromes hipertensivas da gestação. A paciente apresenta idade gestacional de 32 semanas (superior a 20 semanas), níveis pressóricos de 150 x 95 mmHg (confirmados em duas medidas) e presença de proteinúria.\n\nDiagnóstico: Pela definição clássica, a presença de hipertensão arterial (PA maior ou igual a 140 x 90 mmHg) associada à proteinúria (mesmo que em teste de fita) após a 20ª semana de gravidez define o quadro de pré-eclâmpsia. Como a paciente está assintomática, com níveis pressóricos abaixo de 160 x 110 mmHg e sem os sinais de disfunção orgânica citados, o quadro é classificado como pré-eclâmpsia sem sinais de gravidade (ou sem sinais de deterioração clínica).\n\nConduta: O objetivo é o controle pressórico e a vigilância rigorosa do bem-estar materno e fetal para permitir que a gestação avance com segurança, preferencialmente até as 37 semanas.\n\nAnálise das alternativas:\n\na) Incorreta. A hipertensão gestacional é definida pela hipertensão que surge após a 20ª semana, mas SEM a presença de proteinúria ou sinais de gravidade. A presença da proteinúria no exame de fita afasta esse diagnóstico inicial.\n\nb) Incorreta. O termo \"pré-eclâmpsia incipiente\" não é uma classificação técnica utilizada nos consensos atuais (como os da FEBRASGO ou ACOG). Além disso, uma paciente com pré-eclâmpsia confirmada exige acompanhamento diferenciado, não podendo seguir apenas com o pré-natal habitual.\n\nc) Incorreta. A hipertensão crônica é definida quando a hipertensão é diagnosticada antes da gravidez, antes das 20 semanas de gestação ou quando persiste além de 12 semanas após o parto. No caso, a paciente está com 32 semanas e não há relato de hipertensão prévia.\n\nd) Incorreta. Esta conduta (sulfato de magnésio e interrupção imediata) é reservada para casos de pré-eclâmpsia grave (PA maior ou igual a 160 x 110 mmHg, iminência de eclâmpsia, síndrome HELLP ou sofrimento fetal). A paciente em questão está estável e o feto apresenta crescimento adequado, o que permite uma conduta conservadora sob vigilância.\n\ne) Correta. Define adequadamente o diagnóstico (pré-eclâmpsia sem sinais de deterioração) e a conduta inicial correta: iniciar medicação anti-hipertensiva (geralmente metildopa, hidralazina ou nifedipina oral) para manter a PA em níveis seguros, solicitar exames laboratoriais (proteinúria de 24h ou relação proteína/creatinina, hemograma, enzimas hepáticas, função renal) e avaliação fetal (ultrassonografia e cardiotocografia) para decidir sobre a manutenção do acompanhamento ambulatorial ou a necessidade de internação.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  },
+  {
+    "id": "AJUDA_226d2218-7a4b-4e66-9a4a-df4f465ececc",
+    "originalId": "226d2218-7a4b-4e66-9a4a-df4f465ececc",
+    "statement": "Em interconsulta psiquiátrica na clínica neurologica, é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os inibidores seletivos de recaptação da serotonina melhoram o tremor do paciente portador de doença de Parkinson e de síndrome depressiva, principalmente se em uso de selegelina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A doença de Parkinson apresenta associação com quadros obsessivos e factícios;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Clorpromazina, clozapina e bupropiona aumentam limiar epileptogênico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O acidente vascular cerebral, atingindo giro pré-frontal ou gânglios da base do hemisfério esquerdo, causa depressão em aproximadamente dois terços dos pacientes.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) Incorreta. Os inibidores seletivos de recaptação da serotonina (ISRS) são utilizados para tratar a depressão na doença de Parkinson, porém eles não costumam melhorar o tremor; pelo contrário, em alguns casos, podem exacerbar sintomas extrapiramidais. Além disso, o uso concomitante de ISRS com a selegilina (um inibidor da MAO-B) exige cautela extrema pelo risco teórico de síndrome serotoninérgica; embora na prática clínica com doses baixas de selegilina o risco seja menor, a afirmação de que a melhora ocorre principalmente nessa combinação é falsa e clinicamente perigosa.\n\nAlternativa (b) Incorreta. Embora a doença de Parkinson possa estar associada a transtornos do controle de impulsos e sintomas obsessivo-compulsivos (muitas vezes relacionados ao tratamento dopaminérgico), não existe uma associação clássica ou característica com transtornos factícios (nos quais o paciente simula sintomas de forma deliberada para assumir o papel de doente).\n\nAlternativa (c) Incorreta. Esta alternativa afirma o oposto da realidade farmacológica. A clorpromazina (antipsicótico de baixa potência), a clozapina (antipsicótico atípico) e a bupropiona (antidepressivo) são conhecidas justamente por reduzir o limiar epileptogênico, ou seja, elas aumentam o risco de convulsões, especialmente em doses mais elevadas.\n\nAlternativa (d) Correta. A depressão pós-AVC é uma das complicações neuropsiquiátricas mais comuns. Estudos clássicos de neuropsiquiatria (como os de Robinson e colaboradores) demonstram que lesões localizadas no hemisfério esquerdo, especificamente no córtex pré-frontal e nos gânglios da base, apresentam uma correlação significativamente maior com o desenvolvimento de quadros depressivos maiores. A prevalência em pacientes com lesões nessas localizações específicas pode chegar a dois terços dos casos durante o primeiro ano após o evento isquêmico.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  },
+  {
+    "id": "AJUDA_2270d9b7-5ecf-4e97-b57a-64709ecb099e",
+    "originalId": "2270d9b7-5ecf-4e97-b57a-64709ecb099e",
+    "statement": "Situação-Problema: Mulher, 46 anos de idade, G3P3 (três partos vaginais), procura ambulatório por sangramento uterino anormal há 12 meses. Tinha ciclos menstruais regulares anteriormente, mas vem com periodos menstruais mais frequentes este ano, com fluxo intenso nos últimos 6 ciclos (coágulos e troca de absorvente a cada 1 – 2 horas nos piores dias). Relata fadiga progressiva, palpitações e dois episódios de lipotimia nas últimas 2 semanas. Nega uso de ACO. Antecedentes: HAS controlada (losartana), IMC 32 Kg/m². Exame físico: pálida (++/4), PA 130/85 mmHg, FC 88 bpm; tireoide sem alterações. Abdome flácido, indolor, Exame ginecológico: colo sem lesões, útero discretamente aumentado à palpação bimanual, sem dor anexial. Laboratório: Hb 9,8 g/dL, Ht 30%, VCM 74 fL, ferritina 8 ng/mL, TSH 2,1 mUI/L, beta-hCG negativo. USG transvaginal (fase proliferativa tardia): endométrio difusamente espessado (14 mm); miométrio heterogêneo discreto; anexos sem alterações. Paciente refere desejo de manter útero e evitar internações.\n\nIndique a conduta inicial mais adequada para essa paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histeroscopia diagnóstica com biópsia dirigida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Curetagem uterina diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Progestagênio oral empírico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas acompanhamento clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Analise do caso:\nTrata-se de uma paciente de 46 anos com sangramento uterino anormal (SUA), anemia ferropriva sintomatica, obesidade (IMC 32 kg/m2) e espessamento endometrial de 14 mm ao ultrassom. Mulheres a partir dos 45 anos com SUA, ou aquelas com fatores de risco para hiperplasia e neoplasia endometrial (como a obesidade, que eleva o estimulo estrogenico periferico), necessitam obrigatoriamente de investigacao histologica do endometrio.\n\nAlternativa A (correta): A histeroscopia diagnostica com biopsia dirigida e o padrao-ouro para avaliacao da cavidade uterina. Permite a visualizacao direta da mucosa, identificacao de lesoes focais e biopsia das areas mais suspeitas, aumentando expressivamente a sensibilidade e especificidade diagnostica. Alem disso, pode ser realizada em nivel ambulatorial, contemplando a preferencia da paciente de evitar internacoes.\n\nAlternativa B (incorreta): A curetagem uterina e um procedimento cego, que apresenta menor sensibilidade para lesoes focais e maior taxa de falso-negativo se comparada a histeroscopia. Alem disso, geralmente exige ambiente cirurgico, internacao e anestesia, indo contra o desejo da paciente.\n\nAlternativa C (incorreta): O tratamento hormonal empirico com progestagenios e contraindicado neste contexto. Antes de iniciar qualquer terapia medicamentosa em uma mulher de 46 anos com endometrio espessado, e imperativo afastar lesoes pre-malignas ou malignas por meio de biopsia. A conduta empirica retardaria o diagnostico oncologico.\n\nAlternativa D (incorreta): O acompanhamento clinico isolado e insuficiente e perigoso. A paciente apresenta repercussao hemodinâmica (anemia e lipotimia) e criterios formais para investigacao etiologica invasiva imediata. A conduta expectante configuraria negligencia diante do risco de hiperplasia ou adenocarcinoma endometrial.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Anemias"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  },
+  {
+    "id": "AJUDA_22717af8-ded5-4b25-ad1e-336b8091f3b5",
+    "originalId": "22717af8-ded5-4b25-ad1e-336b8091f3b5",
+    "statement": "Um homem de 58 anos, hipertenso, diabético, tabagista e etilista, procura a emergência com queixa de dor abdominal. Refere episódios recorrentes de dor em andar superior do abdômen, mais importante no período pós-prandial há meses. Ao exame, apresenta dor à palpação de região epigástrica e macicez móvel de decúbito. Uma ultrassonografia à beira leito evidencia ascite moderada. É realizada paracentese diagnóstica com os seguintes resultados: albumina = 2,3g/dL, proteínas totais = 4,2g/dL e leucócitos = 300/mm³, com 80% de polimorfonucleares. Exames laboratoriais revelam hemoglobina = 12,5mg/dL, leucócitos = 6.000/mm³, plaquetas = 160.000/mm³, creatinina = 1,4mg/dL, proteínas totais = 5,2g/dL e albumina = 2,8g/dL. O exame que deve ser solicitado no líquido ascítico para definição do diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "cultura para germes comuns",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "adenosina deaminase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "citologia oncótica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "amilase",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, o primeiro passo é calcular o Gradiente de Albumina Soro-Ascite (GASA), que é a diferença entre a albumina medida no sangue e a albumina medida no líquido ascítico.\n\nCÁLCULO DO GASA:\nGASA = Albumina sérica (2,8 g/dL) - Albumina da ascite (2,3 g/dL) = 0,5 g/dL.\n\nINTERPRETAÇÃO DO GASA:\nUm GASA menor que 1,1 g/dL indica que a ascite não é causada por hipertensão portal (como ocorre na cirrose hepática), mas sim por causas inflamatórias, infecciosas ou neoplásicas que atingem o peritônio ou órgãos adjacentes. Além disso, as proteínas totais no líquido estão elevadas (4,2 g/dL), o que caracteriza um exsudato.\n\nCORRELAÇÃO CLÍNICA:\nO paciente é etilista e apresenta dor abdominal crônica em andar superior, que piora após a alimentação (dor pós-prandial). Esse quadro é clássico de insuficiência pancreática exócrina e pancreatite crônica. A ascite, neste cenário, é chamada de ascite pancreática, ocorrendo geralmente por ruptura de um ducto pancreático ou de um pseudocisto para dentro da cavidade abdominal.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A cultura para germes comuns busca diagnosticar peritonites bacterianas. Na Peritonite Bacteriana Espontânea (PBE), o GASA costuma ser maior que 1,1 (pois a base é a cirrose) e o número de polimorfonucleares deve ser superior a 250/mm³. Neste caso, o paciente possui 240 polimorfonucleares (80% de 300), e a clínica aponta para outra direção.\n\nb) Incorreta. A adenosina-deaminase (ADA) é um marcador utilizado para o diagnóstico de tuberculose peritoneal. Embora a tuberculose cause um líquido com GASA baixo e proteínas altas, ela geralmente se apresenta com febre, emagrecimento e dor abdominal difusa, não se relacionando especificamente com o período pós-prandial em um paciente etilista.\n\nc) Incorreta. A citologia oncótica é utilizada para diagnosticar carcinomatose peritoneal. É um diagnóstico diferencial importante em ascites com GASA baixo, mas os antecedentes de etilismo e o padrão da dor abdominal tornam a hipótese pancreática muito mais forte.\n\nd) Correta. A dosagem de amilase no líquido ascítico é o exame fundamental quando se suspeita de ascite pancreática. Nesses casos, o valor da amilase no líquido é extremamente elevado (frequentemente acima de 1.000 U/L), confirmando que a origem do fluido é o extravasamento de secreção pancreática para o peritônio.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  },
+  {
+    "id": "AJUDA_22764b00-00be-46de-badd-d1de547e5ea8",
+    "originalId": "22764b00-00be-46de-badd-d1de547e5ea8",
+    "statement": "A gestão de um determinado município decidiu priorizar a construção de uma Unidade de Saúde da Família (USF) em um bairro periférico onde residem pessoas com grande vulnerabilidade social, em detrimento da construção de outra unidade em um bairro central onde habitam moradores mais privilegiados economicamente. Nesta decisão, o princípio contemplado foi o da",
+    "options": [
+      {
+        "id": "A",
+        "text": "universalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "equidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "intersetorialidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "longitudinalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os princípios fundamentais que regem o Sistema Único de Saúde (SUS). O cenário descrito, no qual o gestor escolhe investir recursos em uma área de maior vulnerabilidade social em vez de uma área com melhores condições socioeconômicas, é um exemplo prático de justiça social aplicada à saúde pública.\n\nAlternativa (a) Incorreta: A Universalidade é o princípio que garante que o acesso às ações e serviços de saúde seja um direito de todos os cidadãos, independentemente de raça, renda ou classe social. Embora a construção de novas unidades amplie o acesso, a questão foca especificamente na diferenciação entre os bairros para decidir onde investir primeiro, o que ultrapassa o conceito de apenas \"ser para todos\".\n\nAlternativa (b) Incorreta: A Integralidade pressupõe que o indivíduo deve ser assistido como um todo, considerando suas necessidades de prevenção, cura e reabilitação. Também envolve a articulação da saúde com outros determinantes sociais. Não se refere diretamente ao critério de escolha geográfica para a construção de novas unidades baseado em carência financeira.\n\nAlternativa (c) Correta: A Equidade consiste em oferecer mais a quem mais precisa, reconhecendo que as pessoas possuem necessidades diferentes. No SUS, a equidade busca diminuir as desigualdades sociais e regionais, priorizando o investimento de recursos e políticas públicas nas populações em situação de maior risco ou vulnerabilidade. Ao priorizar o bairro periférico, o gestor está aplicando a equidade para tentar compensar a desigualdade histórica e social daquela população.\n\nAlternativa (d) Incorreta: A Intersetorialidade é a articulação entre diferentes setores do governo (como saúde, educação, saneamento básico e habitação) para resolver problemas complexos que afetam a saúde. A decisão citada no enunciado é uma decisão administrativa dentro do próprio setor da saúde, não mencionando a integração com outras pastas.\n\nAlternativa (e) Incorreta: A Longitudinalidade é um atributo da Atenção Primária à Saúde que se refere ao acompanhamento do paciente ao longo do tempo por uma mesma equipe, permitindo a criação de vínculo e o conhecimento do histórico de saúde do indivíduo. É um conceito relacionado à continuidade da assistência, e não à gestão de recursos para obras.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  },
+  {
+    "id": "AJUDA_227ec5d0-aeb7-4742-9b87-d554746a2cd4",
+    "originalId": "227ec5d0-aeb7-4742-9b87-d554746a2cd4",
+    "statement": "Paciente, sexo masculino, 65 anos de idade, realizou quimioterapia neoadjuvante e está no 5º dia de pós-operatório de colectomia direita com anastomose ileocólica para tratamento de adenocarcinoma de cólon. O paciente já estava com dieta de água, chá e gelatina, quando passou a cursar com distensão e dor abdominal. Sem outras queixas. Ao exame físico, bom estado geral, corado, temperatura axilar de 38ºC, FC: 108bpm, PA: 134x78mmHg; abdome levemente distendido, com dor à palpação profunda difusamente, com descompressão brusca negativa; toque retal sem alterações. Diante desse caso clínico:\n\nIndique a conduta que deve ser realizada neste momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jejum, passar sonda nasogástrica e encaminhar o paciente para a unidade de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Drenagem da cavidade abdominal guiada por ultrassonografia e ampliar a antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tomografia computadorizada do abdome com contraste.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente encontra-se no 5º dia de pós-operatório de uma colectomia direita com anastomose, um período crítico para o surgimento de deiscências (aberturas) de anastomose, que tipicamente ocorrem entre o 4º e o 7º dia. A presença de febre (38 ºC) e taquicardia (108 bpm) em um paciente recém-operado são sinais de alerta que exigem investigação imediata. Embora o abdome esteja doloroso e distendido, a ausência de sinais de irritação peritoneal (descompressão brusca negativa) e a estabilidade hemodinâmica permitem uma investigação por imagem antes de qualquer tomada de decisão invasiva.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O jejum e a passagem de sonda nasogástrica são medidas de suporte para tratar a distensão e o conforto do paciente (íleo pós-operatório), mas não ajudam no diagnóstico etiológico da febre e taquicardia. O encaminhamento para a UTI pode ser necessário caso o paciente evolua com choque ou insuficiência orgânica, mas não é a conduta diagnóstica prioritária neste momento.\n\nAlternativa B: Incorreta. A drenagem guiada por ultrassonografia só pode ser realizada após a identificação e localização de uma coleção específica. Além disso, o ultrassom tem baixa sensibilidade no pós-operatório de cirurgia abdominal devido à presença de gases e curativos. Ampliar a antibioticoterapia sem diagnosticar a causa pode mascarar uma complicação que exige reintervenção cirúrgica.\n\nAlternativa C: Correta. A Tomografia Computadorizada (TC) de abdome com contraste (venoso e, se possível, retal/oral conforme o protocolo) é o padrão-ouro para investigar complicações pós-operatórias em cirurgia abdominal. Ela permite identificar abscessos, coleções, sinais de deiscência de anastomose ou isquemia intestinal. Como o paciente está hemodinamicamente estável e sem sinais de peritonite generalizada, a TC é o exame que orientará se a conduta será conservadora, por drenagem percutânea ou por reintervenção cirúrgica.\n\nAlternativa D: Incorreta. A laparotomia exploradora (reoperação) é uma conduta agressiva reservada para pacientes com sinais claros de peritonite generalizada ao exame físico, instabilidade hemodinâmica ou quando o exame de imagem confirma uma catástrofe abdominal. No caso em questão, o paciente está estável e tem exame físico abdominal duvidoso, o que torna a propedêutica por imagem indispensável para evitar uma reoperação desnecessária.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Perioperatório",
+      "Complicações Pós-Operatórias",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  },
+  {
+    "id": "AJUDA_2285a185-b5d3-41e8-9594-1f4f537de378",
+    "originalId": "2285a185-b5d3-41e8-9594-1f4f537de378",
+    "statement": "Assinale a alternativa que apresenta, corretamente, a patologia na qual a prateleira de Blummer pode estar presente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença inflamatória intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Endometriose intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoplasia gástrica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pancreatite crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pseudocisto de pâncreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\n    Texto Original:\n    A prateleira de Blumer (ou Blumer’s shelf) é um sinal clínico clássico da semiologia oncológica, caracterizado pela palpação de uma massa ou nodularidade no fundo de saco de Douglas (espaço retovesical no homem ou retouterino na mulher) durante o toque retal ou vaginal. Esse achado indica a presença de metástase por implante peritoneal de tumores abdominais.\n\nAnálise das alternativas:\n\na) Incorreta. A Doença Inflamatória Intestinal (DII), como a Doença de Crohn ou a Retocolite Ulcerativa, cursa com inflamação transmural ou de mucosa, podendo gerar fístulas ou abscessos, mas não é a causa descrita para a formação da prateleira de Blumer, que é um sinal de carcinomatose.\n\nb) Incorreta. Embora a endometriose profunda possa acometer o fundo de saco e ser palpável ao toque, o termo \"prateleira de Blumer\" é reservado na literatura médica especificamente para o contexto neoplásico (disseminação tumoral).\n\nc) Correta. A neoplasia gástrica, especialmente o adenocarcinoma gástrico, é a causa mais comum desse achado. Células neoplásicas que se desprendem do tumor primário \"caem\" na cavidade peritoneal e, por gravidade, acumulam-se e proliferam na região mais inferior do peritônio (fundo de saco de Douglas), formando uma massa palpável. É um sinal de doença avançada (estadiamento M1).\n\nd) Incorreta. A pancreatite crônica é uma doença inflamatória que causa fibrose do parênquima pancreático e dor abdominal, mas não gera implantes peritoneais no fundo de saco.\n\ne) Incorreta. O pseudocisto de pâncreas é uma coleção fluida decorrente de uma pancreatite. Embora possa ser volumoso, ele se localiza geralmente na pequena bolsa omental (atrás do estômago) e não se apresenta como pequenos nódulos de implantação no assoalho pélvico.\n\nResumo: A alternativa (c) está correta porque a prateleira de Blumer é um sinal de metástase peritoneal à distância, frequentemente associada ao câncer de estômago, mas que também pode ocorrer no câncer de pâncreas e pulmão.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  },
+  {
+    "id": "AJUDA_228ba397-f593-4495-a3b9-15f2137294f5",
+    "originalId": "228ba397-f593-4495-a3b9-15f2137294f5",
+    "statement": "Recém-nascido de 15 dias, a termo, Apgar entre 8 e 9, peso e comprimento ao nascer de 2.600 gramas e 46 centímetros, respectivamente, com síndrome de Down, e cuja gestação não apresentou outras intercorrências. Está na consulta de puericultura com peso e comprimento atuais de 2.900 gramas e 47 centímetros, respectivamente.\nPara o acompanhamento pôndero-estatural, os dados devem ser plotados nas",
+    "options": [
+      {
+        "id": "A",
+        "text": "curvas de crescimento da OMS desde o nascimento até a adolescência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "curvas de crescimento específicas para síndrome de Down desde o nascimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "curvas de crescimento da OMS, corrigindo o peso e o comprimento para síndrome de Down.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "curvas de crescimento da OMS até os dois anos e, a partir daí, em curvas específicas para síndrome de Down.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para o acompanhamento adequado de uma criança com síndrome de Down (Trissomia do 21), é fundamental compreender que essa condição genética altera o potencial de crescimento e desenvolvimento pôndero-estatural. Crianças com síndrome de Down tendem a apresentar menor estatura e padrões de ganho de peso distintos quando comparadas à população geral.\n\nAnálise das alternativas:\n\na) Incorreta. As curvas de crescimento da Organização Mundial da Saúde (OMS) são baseadas em crianças sem alterações genéticas ou condições crônicas que impactem o crescimento. Se utilizarmos essas curvas para um paciente com síndrome de Down, a maioria deles ficará abaixo dos percentis mínimos, o que pode levar a diagnósticos equivocados de desnutrição ou déficit de crescimento, quando, na verdade, a criança pode estar crescendo dentro do esperado para a sua condição.\n\nb) Correta. Existem curvas de crescimento específicas desenvolvidas para crianças com síndrome de Down. No Brasil, o Ministério da Saúde e a Sociedade Brasileira de Pediatria recomendam o uso dessas curvas específicas desde o nascimento. Elas permitem que o médico monitore se a criança está seguindo o padrão esperado para outros pacientes com a mesma síndrome, facilitando a identificação de problemas reais de saúde que fujam desse padrão específico.\n\nc) Incorreta. Não existe um cálculo ou fator de correção padronizado que possa ser aplicado às curvas da OMS para adaptá-las à síndrome de Down. A prática recomendada é a utilização de gráficos construídos a partir de dados coletados especificamente nessa população.\n\nd) Incorreta. O acompanhamento diferenciado deve começar no nascimento, e não apenas aos dois anos. O crescimento nos primeiros meses de vida é um indicador crítico de saúde, especialmente em crianças com síndrome de Down, que podem apresentar comorbidades associadas, como cardiopatias congênitas, que impactam o ganho de peso precocemente.\n\nEm resumo, o uso de curvas específicas para síndrome de Down (como as de Cronk ou as adotadas pelo Ministério da Saúde) é a conduta padrão-ouro na puericultura desses pacientes para garantir um acompanhamento fidedigno e evitar intervenções desnecessárias.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Crescimento"
+    ],
+    "difficulty": 47.27675409437262,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  },
+  {
+    "id": "AJUDA_228ce2fa-94a0-48d1-8122-c936167b1bcb",
+    "originalId": "228ce2fa-94a0-48d1-8122-c936167b1bcb",
+    "statement": "Gestante de 26 semanas com glicemia de jejum inicial 81 mg/dL realiza TOTG 75 g com resultados: → Jejum: 84 mg/dL → 1 h: 178 mg/dL → 2 h: 139 mg/dL. Qual o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Teste é considerado normal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Intolerância à glicose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diabetes Mellitus Gestacional",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diabetes mellitus pré-gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para a correta interpretação do Teste Oral de Tolerância à Glicose (TOTG) com 75 g de glicose na gestação, utilizamos os critérios diagnósticos estabelecidos pela Organização Mundial da Saúde (OMS) e adotados pelo Ministério da Saúde e pela FEBRASGO.\n\nO diagnóstico de Diabetes Mellitus Gestacional (DMG) é feito quando pelo menos um dos valores do teste é igual ou superior aos seguintes pontos de corte:\n- Jejum: 92 mg/dL\n- 1 hora após a sobrecarga: 180 mg/dL\n- 2 horas após a sobrecarga: 153 mg/dL\n\nAnalisando os dados da paciente apresentados na questão:\n- Jejum: 84 mg/dL (Normal, pois é menor que 92)\n- 1 hora: 178 mg/dL (Normal, pois é menor que 180)\n- 2 horas: 139 mg/dL (Normal, pois é menor que 153)\n\nComo todos os três valores estão abaixo dos limites de corte, o exame não preenche critérios para diabetes.\n\nExplicação das alternativas:\n\na) Correta. O teste é considerado normal porque nenhum dos valores atingiu ou ultrapassou os limites de referência para o diagnóstico de diabetes na gestação.\n\nb) Incorreta. O termo \"intolerância à glicose\" não é a nomenclatura utilizada para classificar os resultados do TOTG durante a gestação, conforme os protocolos atuais. Se os valores estivessem alterados, o diagnóstico seria Diabetes Mellitus Gestacional.\n\nc) Incorreta. Para ser Diabetes Mellitus Gestacional, seria necessário que ao menos um valor estivesse alterado (Jejum ≥ 92, 1 h ≥ 180 ou 2 h ≥ 153). Note que o valor de 1 hora (178 mg/dL) foi próximo do limite, mas ainda permaneceu na faixa de normalidade.\n\nd) Incorreta. O Diabetes Mellitus pré-gestacional (ou \"overt diabetes\") é diagnosticado na gestação quando a glicemia de jejum é maior ou igual a 126 mg/dL em qualquer fase da gravidez, ou quando o valor de 2 horas no TOTG é maior ou igual a 200 mg/dL. Os valores da paciente estão bem abaixo desses parâmetros.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:51.868Z"
+  }
+]

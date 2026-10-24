@@ -1,0 +1,488 @@
+[
+  {
+    "id": "AJUDA_1aad434d-bff1-410c-9bf7-318e283a4ac7",
+    "originalId": "1aad434d-bff1-410c-9bf7-318e283a4ac7",
+    "statement": "Gestante de 25 anos é atendida em uma maternidade no primeiro estágio da fase ativa de trabalho de parto. Seu pré-natal foi de risco habitual e ela está com 40 semanas de gestação. Durante a ausculta intermitente, é detectada uma frequência cardíaca fetal mantida de 100 bpm. Diante disso, é realizada cardiotocografia, que mostra parâmetros normais, exceto a linha de base em torno de 102 bpm por um período de 10 minutos. A paciente não apresenta outros sinais ou sintomas de complicações, e o restante do exame físico está dentro dos parâmetros esperados para a fase ativa do trabalho de parto. Diante desse quadro clínico, a conduta adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "encaminhar a paciente para cesariana por se tratar de sofrimento fetal agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administrar ocitocina e acelerar a ultimação do parto por se tratar de sofrimento fetal agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar tocolíticos para reduzir a atividade uterina e aguardar melhora espontânea da frequência cardíaca fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "administrar oxigênio e mudar a posição da gestante, reavaliando a frequência cardíaca fetal após alguns minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA questão apresenta uma gestante em trabalho de parto com frequência cardíaca fetal (FCF) de 102 bpm mantida por 10 minutos. De acordo com as diretrizes da FIGO e do ACOG, a linha de base normal da FCF situa-se entre 110 e 160 bpm. Portanto, o feto apresenta uma bradicardia fetal leve. No entanto, o enunciado destaca que a cardiotocografia mostra parâmetros normais (o que implica variabilidade preservada e ausência de desacelerações patológicas), exceto pela linha de base. Esse padrão é classificado como Categoria II (indeterminado). Diante de um traçado Categoria II, a conduta inicial não é a interrupção imediata do parto, mas sim a adoção de medidas de reanimação intrauterina para melhorar a oxigenação fetal e posterior reavaliação.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA alternativa (d) descreve corretamente as medidas iniciais de reanimação intrauterina. A mudança de posição da gestante (geralmente para o decúbito lateral esquerdo) visa descomprimir a veia cava inferior, melhorando o retorno venoso materno, o débito cardíaco e, consequentemente, o fluxo sanguíneo placentário. A administração de oxigênio busca otimizar a transferência de oxigênio para o feto. Após essas intervenções, a FCF deve ser reavaliada. Se a bradicardia persistir ou o padrão piorar para Categoria III, outras medidas seriam tomadas.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A indicação de cesariana imediata por sofrimento fetal agudo é reservada para traçados Categoria III, que apresentam variabilidade ausente associada a desacelerações tardias recorrentes, desacelerações variáveis recorrentes ou padrão sinusoidal. Como o traçado da paciente ainda possui outros parâmetros normais, a intervenção cirúrgica imediata é precoce e inadequada.\n\nAlternativa (b): A administração de ocitocina estimula as contrações uterinas, as quais reduzem transitoriamente o aporte de oxigênio para o feto. Em um quadro de bradicardia fetal, a conduta correta seria, na verdade, suspender a ocitocina, caso estivesse sendo infundida, para diminuir o estresse hipóxico sobre o feto.\n\nAlternativa (c): O uso de tocolíticos (útero-inibidores) é indicado especificamente quando a alteração da FCF é causada por taquissistolia uterina (mais de 5 contrações em 10 minutos). O enunciado não menciona hiperestimulação uterina. Além disso, aguardar a \"melhora espontânea\" sem realizar manobras de reanimação ativa (como a mudança de decúbito) é uma conduta passiva demais para o cenário descrito.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vitalidade Fetal",
+      "Assistência ao Parto"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  },
+  {
+    "id": "AJUDA_1ab1f2c9-c94f-4030-b58b-fbadef5ca7e2",
+    "originalId": "1ab1f2c9-c94f-4030-b58b-fbadef5ca7e2",
+    "statement": "A Atenção Primária em Saúde (APS) é essencial para um efetivo, eficiente e mais equitativo sistema de saúde para todas as pessoas, incluindo aquelas que vivem com o Vírus da Imunodeficiência Humana/Síndrome da Imunodeficiência Adquirida (HIV/AIDS). Diante disso, um estudo avaliou o impacto da exposição a um dos maiores programas de APS de base comunitária do mundo, o programa brasileiro Estratégia Saúde da Família (ESF), sobre incidência e mortalidade por AIDS. O Estudo de coorte retrospectivo, realizado no Brasil, de 1º de janeiro de 2007 a 31 de dezembro de 2015, realizou a avaliação do impacto da exposição à ESF em uma coorte de 3,4 milhões de pessoas com 13 anos ou mais de idade, de baixa renda, com diagnóstico de AIDS e registros de óbitos relacionados à AIDS. Foi avaliado o impacto da ESF na incidência de AIDS e mortalidade, bem como desses desfechos comparados entre residentes de municípios com baixa ou nenhuma cobertura ESF (não expostos) com aqueles de municípios com 100% de cobertura da ESF (expostos). Também se estimou o impacto da ESF por sexo e idade. Resultados: 100% de cobertura ESF e incidência de AIDS (RR: 0,76; IC 95%: 0,68 a 0,84) e mortalidade (RR: 0,68; IC95%: 0,56 a 0,82). O impacto da ESF na incidência de AIDS em mulheres e homens foi, respectivamente, de RR = 0,70 e de RR=0,79; quanto à idade, o impacto da ESF na incidência em pessoas com 35 anos de idade foi de RR: 0,62; IC 95%: 0,53 a 0,72 e na mortalidade foi de RR: 0,56; IC 95%: 0,43 a 0,72. A ausência de ajuste para alguns fatores de confusão (por exemplo, comportamento sexual) foi uma limitação importante deste estudo.\n\nCom relação ao estudo de coorte retrospectivo, pode-se afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pelo fato de se encontrar no passado, mede-se a prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de estudo de coorte histórico, mede-se a prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de estudo de coorte histórico, mede-se a incidência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não existe estudo de coorte no passado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O estudo descrito é um estudo de coorte retrospectiva, também conhecido como coorte histórica. Para compreender a questão, é fundamental diferenciar os tipos de estudos epidemiológicos e as medidas de frequência de doenças.\n\nUm estudo de coorte é um desenho longitudinal em que se parte da exposição (neste caso, estar ou não coberto pela Estratégia Saúde da Família – ESF) para observar a ocorrência de um desfecho (incidência de AIDS e mortalidade) ao longo do tempo. Quando esse acompanhamento é feito utilizando registros e bancos de dados já existentes, coletando informações do passado para reconstruir a trajetória dos participantes, ele é classificado como retrospectivo ou histórico.\n\nDiferentemente dos estudos transversais, que medem a prevalência (casos existentes em um único ponto no tempo), os estudos de coorte acompanham os indivíduos para identificar casos novos que surgem durante o período de seguimento. Portanto, a medida típica e obrigatória de uma coorte é a incidência.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O fato de o estudo utilizar dados do passado não o transforma em um estudo de prevalência. A prevalência é uma medida estática (como uma foto de um momento específico), enquanto a coorte busca o dinamismo do aparecimento de novos casos (incidência) ao longo de um intervalo de tempo.\n\nAlternativa b) Incorreta. Embora a alternativa acerte ao utilizar o termo coorte histórica para um estudo retrospectivo, ela erra ao afirmar que a medida realizada é a prevalência. Conforme explicado, estudos de coorte obrigatoriamente lidam com a taxa de ocorrência de novos eventos (incidência).\n\nAlternativa c) Correta. Esta alternativa define corretamente a nomenclatura sinônima (coorte histórica) e a medida de frequência epidemiológica adequada ao desenho de coorte (incidência). O estudo em questão analisou a ocorrência de novos casos de AIDS e de óbitos no período de 2007 a 2015 em pessoas que inicialmente não apresentavam o desfecho, o que caracteriza o cálculo de incidência.\n\nAlternativa d) Incorreta. O estudo de coorte retrospectivo existe e é uma ferramenta consagrada na epidemiologia. Ele é amplamente utilizado quando pesquisadores têm acesso a prontuários ou grandes bases de dados governamentais que permitem acompanhar a evolução de pacientes sem a necessidade de esperar anos para que os eventos ocorram no futuro.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  },
+  {
+    "id": "AJUDA_1ab51ba5-ef7f-4c4e-abe5-52314e6c0bf5",
+    "originalId": "1ab51ba5-ef7f-4c4e-abe5-52314e6c0bf5",
+    "statement": "Sobre as diferenças entre nutrição parenteral total e nutrição enteral, relacione as colunas e assinale a sequência correspondente:\n\n(1) Nutrição parenteral total.\n(2) Nutrição enteral.\n\n( ) Mantém a estrutura e a função da mucosa intestinal e é mais segura em relação a complicações mecânicas e metabólicas.\n( ) Está associada a taxas reduzidas de infecção nosocomial.\n( ) É contraindicada na presença de hipertrigliceridemia severa.\n( ) Mais dispendiosa.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 - 2 - 1 - 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 - 1 - 2 - 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2 - 1 - 2 - 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2 - 2 - 1 - 1.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das afirmações:\n\nAfirmação 1: Mantém a estrutura e a função da mucosa intestinal e é mais segura em relação a complicações mecânicas e metabólicas.\nEsta é uma característica clássica da Nutrição Enteral (2). O estímulo trófico do alimento em contato direto com os enterócitos previne a atrofia das vilosidades intestinais e preserva a barreira mucosa, o que evita a translocação bacteriana. Em comparação com a via parenteral, a nutrição enteral é mais fisiológica e apresenta menores riscos de complicações graves, como a hiperglicemia refratária e acidentes na punção de acessos venosos profundos.\n\nAfirmação 2: Está associada a taxas reduzidas de infecção nosocomial.\nA Nutrição Enteral (2) é a preferencial em pacientes críticos justamente por apresentar menores taxas de complicações infecciosas, como pneumonia associada à ventilação mecânica e infecções de corrente sanguínea. O uso do trato gastrointestinal mantém a integridade do tecido linfoide associado ao intestino (GALT), fortalecendo o sistema imune do paciente.\n\nAfirmação 3: É contraindicada na presença de hipertrigliceridemia severa.\nEsta característica refere-se à Nutrição Parenteral Total (1). As formulações de NPT contêm emulsões lipídicas que são infundidas diretamente na circulação sistêmica. Se o paciente já apresenta níveis de triglicerídeos muito elevados (geralmente acima de 400 a 500 mg/dL), a administração de lipídios por via parenteral deve ser suspensa ou evitada para prevenir complicações como a pancreatite aguda e a síndrome de sobrecarga lipídica.\n\nAfirmação 4: Mais dispendiosa.\nA Nutrição Parenteral Total (1) é consideravelmente mais cara que a Nutrição Enteral. O custo elevado decorre da necessidade de soluções altamente purificadas, manipulação em ambiente estéril (farmácia especializada), uso de cateteres venosos centrais, bombas de infusão contínua e monitoramento laboratorial frequente para ajustes metabólicos.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Atribui a manutenção da mucosa e o menor custo à Nutrição Parenteral, o que é o oposto da realidade clínica.\n\nAlternativa b: Incorreta. Sugere que a Nutrição Parenteral reduz infecções e que a Nutrição Enteral é contraindicada na hipertrigliceridemia, invertendo os conceitos fundamentais de cada terapia.\n\nAlternativa c: Incorreta. Indica erroneamente que a Nutrição Parenteral reduz infecções nosocomiais e que a Nutrição Enteral é a mais dispendiosa.\n\nAlternativa d: Correta. A sequência 2 - 2 - 1 - 1 preenche as lacunas de forma precisa, relacionando as vantagens fisiológicas e de segurança à Nutrição Enteral e os riscos metabólicos e altos custos à Nutrição Parenteral Total.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  },
+  {
+    "id": "AJUDA_1ac86594-2fb7-451d-a5a3-78360656b518",
+    "originalId": "1ac86594-2fb7-451d-a5a3-78360656b518",
+    "statement": "Criança de sete anos é atendida no pronto socorro com relato de febre há três dias, mialgia e artralgia em mãos e pés. Ao exame físico observa-se fígado a 3cm do rebordo costal direito, doloroso à palpação e sangramento gengival. Diante da suspeita de arbovirose, assinale a alternativa que descreve o tratamento MAIS ADEQUADO para esse paciente, neste momento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidratação oral e transfusão de plaquetas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hidratação venosa e dipirona",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ibuprofeno e ácido acetilsalicílico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prednisona e paracetamol",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma criança de sete anos com sintomas típicos de arbovirose (febre, mialgia e artralgia). No entanto, o exame físico revela sinais de alerta fundamentais: hepatomegalia dolorosa (fígado a 3 cm do rebordo costal direito) e sangramento mucoso (gengivorragia). De acordo com as diretrizes do Ministério da Saúde para o manejo da Dengue, a presença de sinais de alerta classifica o paciente no Grupo C.\n\nA conduta para pacientes do Grupo C exige obrigatoriamente a internação hospitalar e o início imediato de hidratação venosa para prevenção de choque, além do controle de sintomas.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora a hidratação seja a base do tratamento, pacientes com sinais de alerta (Grupo C) devem receber hidratação por via intravenosa, e não apenas oral. Além disso, a transfusão de plaquetas não é indicada de rotina na dengue, mesmo com sangramentos leves ou trombocitopenia isolada, sendo reservada para casos raríssimos de hemorragia grave com repercussão hemodinâmica.\n\nAlternativa b) Correta. Esta é a conduta preconizada para o Grupo C. A hidratação venosa deve ser iniciada prontamente para estabilizar o paciente e evitar a progressão para as formas graves. A dipirona é um analgésico e antitérmico seguro e indicado para o controle da dor e da febre nesses casos.\n\nAlternativa c) Incorreta. O uso de anti-inflamatórios não esteroides (como o ibuprofeno) e de salicilatos (como o ácido acetilsalicílico/Aspirina) é terminantemente contraindicado em casos suspeitos de dengue. Essas substâncias aumentam consideravelmente o risco de sangramentos por interferirem na função plaquetária e, no caso do ácido acetilsalicílico em crianças, há o risco de Síndrome de Reye.\n\nAlternativa d) Incorreta. O paracetamol é um medicamento adequado para a dengue, porém a prednisona (corticoide) não tem indicação no tratamento da fase aguda da doença e não substitui a necessidade de hidratação venosa. O foco principal em pacientes do Grupo C deve ser a reposição volêmica imediata.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  },
+  {
+    "id": "AJUDA_1ad40e77-9667-4bc6-92ef-abb60288d8ae",
+    "originalId": "1ad40e77-9667-4bc6-92ef-abb60288d8ae",
+    "statement": "O Infarto Agudo do Miocárdio (IAM) é uma emergência médica caracterizada pela morte do tecido cardíaco devido à interrupção do suprimento sanguíneo, geralmente causada pela obstrução de uma artéria coronária. Assim:\n\nI. A Angina e o Infarto Agudo do Miocárdio sem Supradesnivelamento do Segmento ST (IAMSSST) tem fisiopatologias semelhantes, ambas resultando da isquemia miocárdica devido ao desbalanço entre a oferta e o consumo de oxigênio.\nII. No Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST), a ruptura de uma placa aterosclerótica leva a uma obstrução total do fluxo sanguíneo, resultando em morte celular e infarto transmural.\nIII. A presença de uma placa aterosclerótica estável é a principal causa de eventos cardiovasculares, independentemente de sua composição ou grau de estenose.\n\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das proposições:\n\nI. Correta. A Angina Instável e o Infarto Agudo do Miocárdio sem Supradesnivelamento do Segmento ST (IAMSSST) fazem parte do mesmo espectro clínico, conhecido como Síndrome Coronariana Aguda sem supra de ST. Ambas as condições decorrem de uma isquemia miocárdica resultante do desequilíbrio entre a oferta e a demanda de oxigênio, geralmente por um trombo suboclusivo. A diferença principal é que no IAMSSST já existe morte celular detectável por marcadores de necrose (troponina), enquanto na angina instável isso não ocorre.\n\nII. Correta. O IAM com Supradesnivelamento do Segmento ST (IAMCSST) é caracterizado pela ruptura ou erosão de uma placa aterosclerótica vulnerável, o que desencadeia uma cascata de coagulação e a formação de um trombo oclusivo (obstrução total). Essa interrupção completa do fluxo sanguíneo leva a uma isquemia grave que atinge toda a espessura da parede miocárdica (infarto transmural), refletindo-se no eletrocardiograma como o supradesnivelamento do segmento ST.\n\nIII. Incorreta. Placas ateroscleróticas estáveis são a base da doença coronariana crônica (Angina Estável) e não a causa principal de eventos agudos como o infarto. Os eventos cardiovasculares agudos são geralmente desencadeados por placas instáveis ou vulneráveis. Além disso, a composição da placa (espessura da capa fibrosa e volume do núcleo lipídico) é o fator determinante para a ruptura, e não apenas o grau de estenose, visto que muitos infartos ocorrem em placas previamente não obstrutivas.\n\nAnálise das alternativas:\n\na) Incorreta. A assertiva III é falsa.\nb) Incorreta. A assertiva I também está correta, não apenas a II.\nc) Correta. Apenas as assertivas I e II apresentam fundamentos fisiopatológicos corretos.\nd) Incorreta. A assertiva III torna a alternativa errada.\n\nGabarito: Letra (c).",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  },
+  {
+    "id": "AJUDA_1ae8fa7c-7741-4d06-8ff6-84826e01fa96",
+    "originalId": "1ae8fa7c-7741-4d06-8ff6-84826e01fa96",
+    "statement": "A puberdade é um período crítico de desenvolvimento que marca a transição da infância para a adolescência, sendo regulada por uma complexa interação hormonal. Sobre a puberdade e o eixo Hipotálamo-Hipófise-Gonadal (HHG), é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A mini-puberdade é observada apenas em meninas, estendendo-se até os dois anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A adrenarca é um evento que ocorre exclusivamente após a gonadarca e é dependente da ativação do eixo HHG.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O Hormônio Liberador de Gonadotrofinas (GnRH) tem uma meia-vida de dois a quatro minutos e estimula a secreção de Hormônio Luteinizante (LH) e Hormônio Folículo-estimulante (FSH) pela hipófise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A produção de esteroides sexuais pelos testículos e ovários ocorre independentemente da ação do LH e FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: A minipuberdade ocorre em ambos os sexos, e não apenas em meninas. Esse fenômeno é caracterizado por um aumento transitório dos níveis de gonadotrofinas (LH e FSH) e esteroides sexuais logo após o nascimento, devido à perda do feedback negativo dos hormônios placentários. Nos meninos, esse pico geralmente declina por volta dos 6 meses de idade, enquanto nas meninas pode persistir de forma intermitente até os 2 ou 3 anos.\n\nAlternativa (b) Incorreta: A adrenarca e a gonadarca são processos independentes. A adrenarca corresponde ao aumento da produção de andrógenos pela zona reticular da glândula adrenal (principalmente DHEA e DHEAS) e ocorre habitualmente entre os 6 e 8 anos de idade, frequentemente precedendo a gonadarca. Ela não é dependente da ativação do eixo hipotálamo-hipófise-gonadal (HHG).\n\nAlternativa (c) Correta: O GnRH (Hormônio Liberador de Gonadotrofinas) é um decapeptídeo sintetizado no hipotálamo e liberado de forma pulsátil no sistema porta-hipofisário. Ele possui uma meia-vida biológica curtíssima, variando entre 2 e 4 minutos, e sua função é estimular os gonadotrofos da adeno-hipófise a produzirem e liberarem o Hormônio Luteinizante (LH) e o Hormônio Folículo-estimulante (FSH).\n\nAlternativa (d) Incorreta: A produção de esteroides sexuais pelas gônadas é dependente da ação das gonadotrofinas. O LH estimula as células de Leydig nos testículos a produzirem testosterona e as células da teca nos ovários a produzirem andrógenos. O FSH estimula as células de Sertoli nos testículos (espermatogênese) e as células da granulosa nos ovários (conversão de andrógenos em estrogênios pela aromatase). Sem a sinalização do LH e FSH, a produção gonadal de esteroides fica severamente comprometida.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  },
+  {
+    "id": "AJUDA_1aed4a9a-49cd-4988-9d04-a17576f43c87",
+    "originalId": "1aed4a9a-49cd-4988-9d04-a17576f43c87",
+    "statement": "Homem, 28 anos, foi submetido a orquiectomia por tumoração sólida testicular direita que media 3,0cm. Durante o exame per-operatório de congelação, o patologista diagnosticou “neoplasia germinativa não-seminomatosa do testículo”. Pode-se afirmar que esse diagnóstico corresponde a um caso de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sarcoma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tumor de células de Leydig",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "coriocarcinoma",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "mesotelioma",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder a essa questão, é fundamental compreender a classificação das neoplasias testiculares. Os tumores de testículo são divididos em dois grandes grupos: os Tumores de Células Germinativas (que representam cerca de 95% dos casos) e os Tumores do Estroma e Cordão Sexual.\n\nOs Tumores de Células Germinativas são subdivididos em:\n1. Seminomas: Geralmente de crescimento mais lento e muito radiossensíveis.\n2. Não seminomas: Grupo que inclui o Carcinoma Embrionário, o Tumor do Saco Vitelino (ou do seio endodérmico), o Teratoma e o Coriocarcinoma.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O sarcoma é uma neoplasia maligna que se origina de tecidos mesenquimais (como tecido conjuntivo, muscular ou adiposo). No testículo, pode ocorrer no parênquima ou nas túnicas, mas não é classificado como uma neoplasia de células germinativas.\n\nAlternativa b) Incorreta. O tumor de células de Leydig é classificado como um tumor do estroma ou cordão sexual. Embora seja um tumor testicular, ele deriva das células intersticiais que produzem testosterona e não das células germinativas (precursoras dos espermatozoides).\n\nAlternativa c) Correta. O coriocarcinoma é um dos quatro subtipos clássicos de Neoplasia Germinativa Não Seminomatosa (junto com o carcinoma embrionário, o tumor do saco vitelino e o teratoma). É um tumor altamente agressivo, com tendência à disseminação hematogênica precoce e caracterizado pela produção elevada do marcador tumoral beta-HCG.\n\nAlternativa d) Incorreta. O mesotelioma é um tumor que se origina das células mesoteliais. No escroto, ele costuma surgir na túnica vaginal (a camada que reveste o testículo), não sendo uma neoplasia de origem germinativa.\n\nPortanto, diante do diagnóstico de neoplasia germinativa não seminomatosa, a única opção que corresponde a essa categoria histológica é o coriocarcinoma.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  },
+  {
+    "id": "AJUDA_1aede29b-0636-4e65-ad64-d23d820bf33f",
+    "originalId": "1aede29b-0636-4e65-ad64-d23d820bf33f",
+    "statement": "Menino de 14 anos vem a consulta visando liberação para a prática de atividade física. Irá iniciar aulas de jiu-jitsu e o professor solicitou um atestado. Não há relato de queixas, nem doenças prévias. Irmão mais velho fez uma cirurgia de troca valvar aórtica há 3 anos. Ao exame físico, você observa somente as seguintes alterações: pressão arterial em membro superior direito 110x40mmHg e sopro diastólico 2+/6 em foco aórtico. Ao passar o caso para a preceptoria, sua chefe recomenda que você reavalie os pulsos deste paciente.\nQual alteração se espera encontrar nos pulsos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diferença entre membros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pulsos em martelo d’água.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pulsos paradoxais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pulsos parvus et tardus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta um adolescente com achados clássicos de Insuficiência Aórtica crônica:\n1. Pressão arterial divergente (110x40 mmHg): a grande diferença entre a pressão sistólica e a diastólica ocorre devido ao aumento do volume ejetado na sístole e ao refluxo imediato de sangue para o ventrículo esquerdo durante a diástole.\n2. Sopro diastólico em foco aórtico: ausculta típica do refluxo valvar aórtico durante a fase de enchimento ventricular.\n3. Histórico familiar: a cirurgia valvar no irmão sugere etiologia congênita, como a valva aórtica bicúspide.\n\nDiante do quadro de insuficiência aórtica, a alteração semiológica esperada nos pulsos periféricos é o pulso em martelo d água (ou pulso de Corrigan / célere).\n\nANALISANDO AS ALTERNATIVAS:\n\nAlternativa a: Incorreta. A assimetria de pulsos ou de pressão arterial entre os membros superiores é encontrada em condições como dissecção aguda de aorta, coarctação de aorta, estenose de artéria subclávia ou arterite de Takayasu, não sendo o achado característico da insuficiência aórtica isolada.\n\nAlternativa b: Correta. O pulso em martelo d água (célere ou de Corrigan) é a marca semiológica da insuficiência aórtica. Ele é caracterizado por uma ascensão rápida e de grande amplitude na sístole (pelo alto volume ejetado), seguida por um colapso súbito na diástole (devido ao refluxo aórtico e ao escoamento periférico rápido).\n\nAlternativa c: Incorreta. O pulso paradoxal consiste na queda maior que 10 mmHg na pressão arterial sistólica durante a inspiração espontânea. É um sinal clássico de tamponamento cardíaco, além de poder ocorrer em crises graves de asma, DPOC e pericardite constritiva.\n\nAlternativa d: Incorreta. O pulso parvus et tardus (pequena amplitude e ascensão lenta) é o achado característico da Estenose Aórtica grave, na qual existe uma obstrução mecânica fixa que dificulta e lentifica a ejeção ventricular esquerda.\n\nGABARITO: Alternativa b.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  },
+  {
+    "id": "AJUDA_1af475b0-7efe-4748-9941-0de1baa6fa4b",
+    "originalId": "1af475b0-7efe-4748-9941-0de1baa6fa4b",
+    "statement": "Sobre adenoma hepático, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É mais comum em homens e não se associa ao uso de anticoncepcionais orais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O risco de transformação maligna é desprezível, independentemente do tamanho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adenomas hepáticos >5 cm devem ser ressecados devido ao risco de complicações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ressecção cirúrgica está contraindicada em mulheres jovens.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Adenomas hepáticos geralmente apresentam calcificações centrais típicas à imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O adenoma hepático é um tumor benigno raro do fígado, mas com grande importância clínica devido ao risco de complicações graves. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa A: Incorreta. O adenoma hepático é muito mais frequente em mulheres em idade fértil (cerca de 90% dos casos) e possui uma associação direta e bem estabelecida com o uso prolongado de anticoncepcionais orais. Outros fatores de risco incluem o uso de esteroides anabolizantes e doenças de depósito de glicogênio.\n\nAlternativa B: Incorreta. O risco de transformação maligna para carcinoma hepatocelular não é desprezível. Esse risco é maior em homens, em lesões maiores que 5 cm e especificamente no subtipo ativado pela beta-catenina. Por esse motivo, a conduta em adenomas em homens é geralmente a ressecção, independentemente do tamanho.\n\nAlternativa C: Correta. Adenomas com diâmetro maior que 5 cm apresentam um risco significativamente aumentado de complicações, principalmente a ruptura com hemorragia intraperitoneal (que pode levar ao choque hipovolêmico) e a transformação maligna. Por isso, a recomendação atual é a intervenção (cirúrgica ou por embolização) em lesões que persistem maiores que 5 cm após a suspensão de anticoncepcionais.\n\nAlternativa D: Incorreta. A ressecção cirúrgica não está contraindicada em mulheres jovens. Pelo contrário, se a paciente apresentar um adenoma maior que 5 cm que não regride após a interrupção do anticoncepcional, ou se houver sintomas ou sinais de complicações, a cirurgia está indicada para prevenir a ruptura.\n\nAlternativa E: Incorreta. Calcificações centrais não são achados típicos do adenoma hepático. Na imagem (tomografia ou ressonância), os adenomas frequentemente mostram sinais de gordura intratumoral ou focos de hemorragia. A presença de uma cicatriz central é uma característica clássica da Hiperplasia Nodular Focal (HNF), que é o principal diagnóstico diferencial benigno, e não do adenoma.\n\nResumo da conduta: Em mulheres, a primeira medida é suspender o anticoncepcional e observar por 6 meses. Se a lesão permanecer maior que 5 cm, a ressecção é indicada. Em homens, devido ao alto risco de malignização, a ressecção costuma ser indicada logo ao diagnóstico.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  },
+  {
+    "id": "AJUDA_1b0032d7-e9bb-404e-9205-a84315753aed",
+    "originalId": "1b0032d7-e9bb-404e-9205-a84315753aed",
+    "statement": "Casal procura avaliação após 18 meses de infertilidade. A paciente de 32 anos tem história de DIP tratada há 3 anos. A histerossalpingografia mostra obstrução bilateral distal com hidrossalpinge moderada. Considerando as melhores práticas para reprodução assistcida, qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indução de ovulação com coito programado por 6 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparoscopia para destamponamento tubário e tentativa de gravidez espontânea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fertilização in vitro (FIV) após salpingectomia bilateral prévia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "FIV sem intervenção cirúrgica, pois a hidrossalpinge não interfere na implantação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Inseminação intrauterina por 3 ciclos antes de FIV",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta infertilidade por fator tuboperitoneal claro, com história prévia de Doença Inflamatória Pélvica (DIP) e diagnóstico de obstrução distal bilateral com hidrossalpinge moderada. A hidrossalpinge é a dilatação da tuba uterina por acúmulo de secreções fluidas decorrente de um processo obstrutivo.\n\nPor que a alternativa (c) é a correta:\nA hidrossalpinge exerce um efeito negativo importante sobre os resultados da Fertilização in Vitro (FIV). O líquido acumulado na tuba é embriotóxico, prejudica a receptividade endometrial devido à presença de citocinas inflamatórias e pode causar um efeito mecânico de lavagem (refluxo) que dificulta a fixação do embrião no útero. Estudos demonstram que a presença de hidrossalpinge reduz em cerca de 50% as taxas de gravidez e aumenta o risco de abortamento na FIV. Portanto, a recomendação atual é a realização de salpingectomia bilateral (ou ligadura tubária proximal) antes de proceder com a transferência embrionária na FIV para eliminar esse fator deletério.\n\nAnálise das alternativas incorretas:\n\na) Indução de ovulação com coito programado por 6 meses: Incorreta. Como as tubas estão obstruídas bilateralmente, não há como ocorrer o encontro do espermatozoide com o ovócito. O tratamento de baixa complexidade não tem espaço diante de um fator tubário absoluto.\n\nb) Laparoscopia para destamponamento tubário e tentativa de gravidez espontânea: Incorreta. Embora a cirurgia tubária (neosalpingostomia) possa ser considerada em casos de obstrução distal muito leve, a presença de hidrossalpinge moderada geralmente indica dano ciliar e funcional importante na tuba. As taxas de sucesso de gravidez espontânea após a cirurgia são baixas e o risco de gravidez ectópica é muito elevado.\n\nd) FIV sem intervenção cirúrgica, pois a hidrossalpinge não interfere na implantação: Incorreta. Conforme explicado, há fartas evidências de que a hidrossalpinge interfere negativamente na implantação embrionária e no desenvolvimento gestacional inicial. Ignorar a hidrossalpinge antes da FIV compromete severamente as chances de sucesso do tratamento.\n\ne) Inseminação intrauterina por 3 ciclos antes de FIV: Incorreta. A inseminação intrauterina exige que a paciente tenha pelo menos uma das tubas uterinas pérvia e funcional para que a fecundação ocorra. Diante de uma obstrução bilateral confirmada, este procedimento é contraindicado.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:30.500Z"
+  }
+]

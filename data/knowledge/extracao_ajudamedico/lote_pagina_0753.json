@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_d1e3cba4-3347-429c-ab5a-14d520372c70",
+    "originalId": "d1e3cba4-3347-429c-ab5a-14d520372c70",
+    "statement": "Homem, 55 anos, refere estar há seis meses com quadro de furunculose de repetição, em região abdominal e infra-axilar. Já realizou inúmeros tratamentos com antimicrobianos, sem melhora. Coletada cultura de aspiração de conteúdo purulento, com crescimento de Staphylococcus aureus (Sensível à Clindamicina, Eritromicina, Sulfametoxazol-Trimetoprim e Vancomicina; resistente à Cefoxitina/Oxacilina). Tem Diabetes Mellitus tipo 2, em uso de Metformina 500 mg 12/12 horas. Além da cultura, trouxe exames: Colesterol Total 176 mg/dL, LDL 136 mg/dL, HDL 34 mg/dL, TG 198 mg/dL; glicemia de jejum 253 mg/dL; Hb Glicada 8,9%; Cr 1,0; Ur 30. No momento está assintomático.\n\nAssinale a melhor opção para controle da infecção de pele e partes moles.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar Sinvastatina 40 mg/dia, já que a hipercolesterolemia dificulta o tratamento da infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar Sulfametoxazol-Trimetoprim 800/160 mg, 12/12 horas, por 8 semanas, já que é necessário erradicar o patógeno isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar insulinoterapia com 0,1 UI/kg de Insulina NPH, 8/8 horas, já que é necessário o controle adequado do DM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Otimizar a dose da Metformina e associar Gliclazida 30 mg antes do café e almoço, já que é necessário atingir metas terapêuticas para o DM.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta um paciente com diabetes mellitus tipo 2 (DM2) mal controlado (HbA1c 8,9% e glicemia de jejum 253 mg/dL) que manifesta furunculose de repetição por MRSA (*Staphylococcus aureus* resistente à oxacilina). O ponto central para a resolução é entender que a recorrência de infecções de pele em diabéticos está diretamente relacionada ao ambiente de hiperglicemia, que prejudica a função dos neutrófilos (quimiotaxia e fagocitose) e facilita a proliferação bacteriana.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o paciente apresente uma dislipidemia leve (HDL baixo e TG levemente elevado), o foco para o controle de infecções de repetição é o controle glicêmico, e não o lipídico. A sinvastatina tem papel na redução do risco cardiovascular, mas não é o tratamento para quadros infecciosos recorrentes.\n\nb) Incorreta. O uso prolongado de antibióticos (8 semanas) para furunculose de repetição não é a conduta inicial nem definitiva. O paciente já realizou inúmeros tratamentos com antimicrobianos sem sucesso, pois o fator predisponente (diabetes descontrolado) permanece. Além disso, o uso indiscriminado de SMX-TMP favoreceria a seleção de resistência bacteriana e não resolveria a causa-base da imunodeficiência secundária.\n\nc) Incorreta. Apesar de o controle glicêmico ser necessário, a proposta de insulinoterapia com NPH de 8/8 horas não é o esquema padrão inicial para este perfil de paciente. A dose de 0,1 UI/kg é baixa para um esquema basal-bolus, e o fracionamento da NPH em três tomadas é incomum na prática clínica ambulatorial para início de tratamento em DM2 estável.\n\nd) Correta. Esta é a alternativa mais adequada porque foca na causa da recorrência da infecção. O paciente está usando uma dose subterapêutica de metformina (apenas 1.000 mg/dia, sendo que a dose plena é de 2.000 a 2.550 mg/dia). Otimizar a metformina e associar uma sulfonilureia de segunda geração (gliclazida) visam atingir a meta de HbA1c (geralmente < 7,0%). Com a glicemia controlada, a função leucocitária melhora, o que é fundamental para interromper o ciclo de furunculose de repetição. Vale ressaltar que o paciente está assintomático no momento, o que reforça que a prioridade não é tratar uma infecção aguda, mas sim prevenir novas recidivas através do ajuste metabólico.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Piodermites",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  },
+  {
+    "id": "AJUDA_d1e9f91e-078f-48b7-a998-592501e63043",
+    "originalId": "d1e9f91e-078f-48b7-a998-592501e63043",
+    "statement": "Puérpera, encontra-se no tempo de 3 horas após parto vaginal e inicia quadro de sangramento vaginal aumentado e persistente. Estável homodinamicamente.\nAssinale a alternativa que representa a primeira conduta a ser tomada diante do conhecimento da principal causa de hemorragia pós-parto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exame especular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ultrassom transvaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste do tubo seco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Massagem uterina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A principal causa de hemorragia pós-parto (HPP) é a atonia uterina, responsável por aproximadamente 70 a 80 por cento dos casos. O manejo inicial de qualquer sangramento vaginal aumentado no pós-parto deve priorizar a identificação e o tratamento dessa condição, que faz parte do primeiro T (Tono) do mnemônico dos 4 Ts (Tono, Trauma, Tecido e Trombina).\n\nAlternativa a: Incorreta. O exame especular é fundamental para diagnosticar lacerações de trajeto, que representam a causa Trauma. Embora seja um passo importante no protocolo de HPP, não é a primeira conduta voltada para a causa mais frequente, que é a atonia uterina.\n\nAlternativa b: Incorreta. A ultrassonografia pode auxiliar na identificação de restos placentários (causa Tecido), mas é um exame complementar. Em um quadro de sangramento agudo, a prioridade são as manobras clínicas imediatas e a estabilização da paciente, não sendo o primeiro passo.\n\nAlternativa c: Incorreta. O teste do tubo seco é utilizado para avaliar a formação de coágulo e a presença de coagulopatias (causa Trombina). Esta é a causa menos comum de hemorragia pós-parto e não deve ser a conduta inicial.\n\nAlternativa d: Correta. Diante da atonia uterina, que é a principal causa de HPP, a primeira medida manual é a massagem uterina bimanual (como a manobra de Hamilton). Essa ação estimula a contração das fibras miometriais e o fechamento dos vasos sanguíneos (ligaduras vivas de Pinard), sendo realizada simultaneamente à administração de ocitocina.\n\nAlternativa e: Incorreta. A laparotomia exploradora é uma intervenção cirúrgica invasiva de grande porte. Ela é reservada para casos graves e refratários ao tratamento conservador (massagem e drogas uterotônicas) ou medidas compressivas (como o balão de Bakri). Como a paciente está estável hemodinamicamente, condutas menos invasivas devem ser priorizadas primeiro.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  },
+  {
+    "id": "AJUDA_d2064c92-4b7c-4c02-b2cc-a7f96b5d959b",
+    "originalId": "d2064c92-4b7c-4c02-b2cc-a7f96b5d959b",
+    "statement": "Paciente com histórico de arritmias cardíacas graves, em uso há 1 ano de amiodarona e propafenona, evoluiu com tireotoxicose, com autoanticorpos tireoideanos negativos, associada à ultrassonografia de tireoide com doppler com resultado de ausência de nódulos de tireoide e escassa vascularização da tireoide. A medida isolada mais efetiva para resolução desta tireotoxicose é a administração de",
+    "options": [
+      {
+        "id": "A",
+        "text": "iodoterapia radioativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "corticoterapia sistêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "metimazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "propiluracil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "lugol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo da tireotoxicose induzida por amiodarona (TIA), uma complicação relativamente comum em pacientes que utilizam este antiarrítmico devido ao seu alto teor de iodo e efeito tóxico direto sobre a glândula.\n\nExistem dois tipos principais de tireotoxicose por amiodarona:\n\nO Tipo 1 ocorre em pacientes com patologia tireoidiana prévia (como bócio multinodular ou doença de Graves latente). O excesso de iodo da medicação serve como substrato para a síntese excessiva de hormônios (fenômeno de Jod-Basedow). Ao Doppler, observa-se aumento da vascularização.\n\nO Tipo 2 é uma tireoidite destrutiva causada pelo efeito tóxico direto da amiodarona nos folículos tireoidianos, levando à liberação de hormônios pré-formados na circulação. Ocorre em glândulas previamente normais. Ao Doppler, a vascularização é escassa ou ausente.\n\nNo caso clínico apresentado, o paciente não possui nódulos, tem autoanticorpos negativos e, fundamentalmente, apresenta escassa vascularização ao Doppler. Esses achados confirmam o diagnóstico de TIA Tipo 2.\n\nExplicação das alternativas:\n\nAlternativa (a) Incorreta. A iodoterapia radioativa é ineficaz nesses casos porque a glândula está saturada pelo iodo da amiodarona, o que impede a captação do iodo radioativo (I-131). Além disso, na TIA Tipo 2, não há hiperfunção glandular, mas sim destruição celular.\n\nAlternativa (b) Correta. Por se tratar de uma tireoidite inflamatória/destrutiva (TIA Tipo 2), o tratamento de escolha é a corticoterapia sistêmica (geralmente prednisona). Os corticoides reduzem a inflamação e estabilizam as membranas foliculares, sendo a medida mais efetiva para a resolução rápida do quadro.\n\nAlternativa (c) Incorreta. O metimazol é uma tionamida que bloqueia a síntese de novos hormônios. É o tratamento de escolha para a TIA Tipo 1. Na TIA Tipo 2, como o problema é a liberação de hormônios já prontos devido à destruição celular, o metimazol tem pouca ou nenhuma eficácia.\n\nAlternativa (d) Incorreta. O propiltiouracil, assim como o metimazol, é uma tionamida indicada para o Tipo 1. Embora também iniba a conversão periférica de T4 em T3, não é a droga de escolha para o processo inflamatório do Tipo 2.\n\nAlternativa (e) Incorreta. O Lugol é uma solução de iodo. Administrar mais iodo a um paciente que desenvolveu tireotoxicose justamente pelo excesso de iodo da amiodarona agravaria o quadro ou seria, no mínimo, contraproducente.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  },
+  {
+    "id": "AJUDA_d20e6935-b0a7-4f16-ab81-6382c87d541a",
+    "originalId": "d20e6935-b0a7-4f16-ab81-6382c87d541a",
+    "statement": "Homem de 72 anos é admitido na emergência com história de diarreia intensa e vômitos há três dias. Refere tontura ao levantar-se e redução importante do volume urinário nas últimas 24 horas. Ao exame físico, apresenta mucosas secas, pressão arterial de 88×56 mmHg, frequência cardíaca de 112 bpm e enchimento capilar lentificado. Os exames mostram creatinina de 2,2 mg/dL (basal de 1,0 mg/dL), ureia de 82 mg/dL, sódio de 138 mEq/L e potássio de 4,8 mEq/L.\nQual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar furosemida intravenosa para aumentar o débito urinário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar reposição volêmica com solução cristaloide isotônica, reavaliando a resposta clínica e hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Restringir líquidos para evitar sobrecarga volêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar hemodiálise de urgência apenas pela elevação da creatinina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar bicarbonato de sódio para prevenir lesão renal aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO\n\nO paciente em questão apresenta um quadro clássico de Choque Hipovolêmico associado a uma Lesão Renal Aguda (LRA) de etiologia pré-renal. \n\nOs pontos-chave para o diagnóstico são:\n1. Histórico de perdas gastrointestinais (diarreia e vômitos).\n2. Sinais clínicos de hipoperfusão e desidratação: hipotensão (88x56 mmHg), taquicardia (112 bpm), mucosas secas e tempo de enchimento capilar alentado.\n3. Disfunção renal: elevação da creatinina (dobrou em relação ao basal) e da ureia, com oligúria referida. A relação Ureia/Creatinina elevada (82/2,2 = 37) reforça a etiologia pré-renal, onde há maior reabsorção proximal de ureia devido à queda do fluxo sanguíneo renal.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. O uso de diuréticos de alça (furosemida) em um paciente com choque hipovolêmico e depleção severa de volume é contraindicado. A furosemida agravaria a desidratação e a hipotensão, podendo transformar uma lesão pré-renal funcional em uma necrose tubular aguda (NTA) por isquemia prolongada. O baixo débito urinário aqui é uma resposta fisiológica do rim tentando preservar volume.\n\nb) CORRETA. Esta é a conduta prioritária. O paciente apresenta instabilidade hemodinâmica por perda de fluido extracelular. A reposição com cristaloides isotônicos (como Soro Fisiológico 0,9% ou Ringer Lactato) visa restaurar o volume intravascular, melhorar o débito cardíaco e, consequentemente, a perfusão renal. A reavaliação contínua é fundamental para guiar o volume necessário e observar a melhora dos parâmetros vitais e do débito urinário.\n\nc) INCORRETA. A restrição hídrica é indicada em quadros de sobrecarga de volume (edema agudo de pulmão, insuficiência cardíaca descompensada ou anúria na LRA estabelecida). Neste caso, o paciente está severamente desidratado; restringir líquidos agravaria o choque e a falência renal.\n\nd) INCORRETA. A hemodiálise de urgência possui indicações precisas (o mnemônico AEIOU: Acidose refratária, Eletrólitos/Hipercalemia grave, Intoxicações, Overload/Sobrecarga volêmica refratária e Uremia grave com pericardite ou encefalopatia). Apenas a elevação isolada da creatinina, sem complicações metabólicas graves ou refratariedade ao tratamento clínico, não justifica o procedimento dialítico.\n\ne) INCORRETA. O bicarbonato de sódio não é uma terapia de primeira linha para LRA pré-renal. Ele é reservado para casos de acidose metabólica grave (geralmente pH inferior a 7,1-7,2) e não previne a lesão renal por si só. A prioridade é a correção da causa base (hipovolemia).\n\nCONCLUSÃO\nA abordagem inicial de qualquer paciente com sinais de choque e desidratação deve focar na restauração da estabilidade hemodinâmica através da expansão volêmica. No caso da LRA pré-renal, a correção da perfusão costuma normalizar a função renal rapidamente.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Choque",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  },
+  {
+    "id": "AJUDA_d20e7db3-55c3-4d9b-9852-c0eeb0917851",
+    "originalId": "d20e7db3-55c3-4d9b-9852-c0eeb0917851",
+    "statement": "Lucas, 2 dias de vida, é avaliado na maternidade após triagem neonatal indicar níveis elevados de 17-hidroxiprogesterona (17-OHP). Ao exame físico, apresenta genitália masculina aparentemente normal, sem sinais de virilização. No histórico familiar, há irmão com HAC clássica perdedora de sal. Exames laboratoriais e adicionais: 17-OHP: 15.000 ng/dL (elevada). Eletrólitos séricos: sódio 132 mEq/L, potássio 5,8 mEq/L. Cortisol sérico: baixo. Genotipagem: mutações em CYP21A2 confirmando HAC clássica, forma perdedora de sal. Teste de estímulo com ACTH: resposta deficiente de cortisol. A equipe inicia hidrocortisona e fludrocortisona para prevenção de crises adrenais, com ajuste das doses durante episódios de febre, vômitos ou cirurgias. Planeja-se acompanhamento a longo prazo para: Crescimento e puberdade. Equilíbrio eletrolítico. Prevenção de excesso de andrógenos. Educação familiar sobre manejo em situações de estresse. O plano inclui monitoramento genético e endócrino contínuo, além de suporte nutricional e orientação para evitar complicações metabólicas e psicológicas a longo prazo.\n\nCom base no caso clínico acima, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico de HAC depende exclusivamente da observação clínica de virilização; testes laboratoriais e genotipagem não são necessários",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Formas não clássicas de HAC em recém-nascidos sempre requerem doses máximas de hidrocortisona e fludrocortisona desde o nascimento, independentemente da gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em HAC clássica, o ajuste de doses durante febre ou cirurgia não é necessário, pois doses fixas previnem crises adrenais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em recém-nascidos com HAC identificada na triagem neonatal, genotipagem (CYP21A2) confirma o diagnóstico e permite estratificação de risco; o manejo inicial inclui reposição de glucocorticoide e mineralocorticoide, ajuste de doses durante estresse e monitoramento do crescimento, puberdade e complicações a longo prazo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Complicações a longo prazo, como excesso de andrógenos e crescimento acelerado, não podem ser prevenidas mesmo com monitoramento adequado e terapia hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Este caso clínico aborda a Hiperplasia Adrenal Congênita (HAC) por deficiência da enzima 21-hidroxilase, que é a causa mais comum de HAC (cerca de 90 a 95% dos casos). No recém-nascido masculino, a genitália costuma ser normal, o que torna a triagem neonatal e o histórico familiar fundamentais para o diagnóstico precoce antes que ocorra uma crise adrenal grave.\n\nAnálise das alternativas:\n\na) Incorreta. O diagnóstico de HAC não depende exclusivamente da clínica, especialmente em meninos, que não apresentam ambiguidade genital ao nascimento. Os testes laboratoriais (como a dosagem de 17-hidroxiprogesterona) são essenciais para o diagnóstico, e a genotipagem (estudo do gene CYP21A2) é uma ferramenta importante para confirmar a mutação e auxiliar na estratificação da gravidade da doença.\n\nb) Incorreta. As formas não clássicas de HAC geralmente são assintomáticas no período neonatal e podem não exigir tratamento imediato ou contínuo. Mesmo nas formas clássicas, as doses de hidrocortisona e fludrocortisona devem ser individualizadas e ajustadas de acordo com a superfície corporal e a resposta clínica/laboratorial do paciente, e não iniciadas em doses máximas para todos.\n\nc) Incorreta. O ajuste de dose durante situações de estresse biológico (febre acima de 38,5°C, vômitos, traumas ou cirurgias) é um pilar crítico no manejo da HAC clássica. Nessas situações, o organismo necessita de maiores níveis de cortisol; se a dose não for aumentada (geralmente triplicada), o paciente corre risco iminente de crise adrenal aguda, choque e óbito.\n\nd) Correta. Esta alternativa resume corretamente o manejo padrão. A triagem neonatal identifica o risco, e a genotipagem do gene CYP21A2 ajuda a confirmar o diagnóstico e prever o fenótipo (perdedora de sal vs. virilizante simples). O tratamento da forma clássica requer a reposição de glicocorticoide (hidrocortisona) e mineralocorticoide (fludrocortisona), além de educação familiar para o manejo de estresse e monitoramento rigoroso do crescimento e desenvolvimento para evitar complicações da própria doença ou do excesso de medicação.\n\ne) Incorreta. O objetivo principal do tratamento e do monitoramento contínuo é justamente prevenir ou minimizar as complicações a longo prazo. O ajuste fino da medicação visa equilibrar a supressão dos andrógenos (evitando virilização excessiva e fechamento precoce das epífises ósseas) com a manutenção de níveis fisiológicos de glicocorticoide (evitando obesidade e baixa estatura iatrogênica). Com acompanhamento adequado, é possível otimizar o crescimento e a saúde metabólica do paciente.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Hiperplasia Adrenal Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  },
+  {
+    "id": "AJUDA_d20f1727-e606-4f0b-887e-605d5b80a464",
+    "originalId": "d20f1727-e606-4f0b-887e-605d5b80a464",
+    "statement": "Das situações a seguir, é compatível com insuficiência renal aguda (IRA) de causa pré-renal é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "fração de excreção de sódio (FeNa) > 2%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "osmolalidade urinária < 300 mOsm/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "densidade urinária baixa e sedimento com cilindros granulosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hipovolemia com FeNa < 1% e osmolalidade urinária > 500 mOsm/kg.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "proteinúria e hematúria persistentes em urina de 24h.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Insuficiência Renal Aguda (IRA) pré-renal é uma resposta fisiológica dos rins a uma perfusão inadequada. Como o tecido renal está preservado, o rim reage ativando mecanismos para reter água e sódio na tentativa de normalizar o volume sanguíneo e a pressão arterial.\n\nAlternativa a: Incorreta. A fração de excreção de sódio (FeNa) superior a 2 por cento indica que os túbulos renais estão lesados e não conseguem reabsorver o sódio filtrado, o que é típico da Necrose Tubular Aguda (IRA intrínseca). Na IRA pré-renal, como os túbulos estão intactos e sob ação da aldosterona, a FeNa é menor que 1 por cento.\n\nAlternativa b: Incorreta. Uma osmolalidade urinária baixa (menor que 300 mOsm/kg) reflete a perda da capacidade de concentrar a urina devido à lesão tubular. Na IRA pré-renal, o rim está funcionante e secreta o hormônio antidiurético (ADH) para poupar água, gerando uma urina muito concentrada, com osmolalidade geralmente maior que 500 mOsm/kg.\n\nAlternativa c: Incorreta. Cilindros granulosos são formados por detritos de células tubulares mortas e são o marco da Necrose Tubular Aguda. Já a densidade urinária baixa (isostenúria) indica falha na concentração. Na IRA pré-renal, o sedimento costuma ser inócuo (ou apresentar cilindros hialinos) e a densidade é elevada (maior que 1.020).\n\nAlternativa d: Correta. A hipovolemia é uma das principais causas de redução da perfusão renal (IRA pré-renal). Diante desse cenário, o rim íntegro reabsorve avidamente sódio para tentar restaurar o volume intravascular, resultando em uma FeNa menor que 1 por cento. Simultaneamente, há grande reabsorção de água mediada pelo ADH, o que torna a urina concentrada (osmolalidade maior que 500 mOsm/kg).\n\nAlternativa e: Incorreta. Proteinúria e hematúria significativas são achados sugestivos de lesão estrutural no parênquima renal, como ocorre nas glomerulonefrites, e não são características da IRA de etiologia puramente pré-renal (funcional).\n\nGabarito: Alternativa d.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  },
+  {
+    "id": "AJUDA_d215b817-e601-4b03-8183-9ca19199db59",
+    "originalId": "d215b817-e601-4b03-8183-9ca19199db59",
+    "statement": "Uma gestante de 28 semanas, G2P1, chega à maternidade com queixa de contrações regulares a cada 6 minutos há 2 horas. Ao exame, colo com 2 cm de dilatação, 50% de esvaecimento, membranas íntegras. A ultrassonografia transvaginal mostra comprimento cervical de 18 mm. Sem sinais de infecção. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar nifedipino para tocólise, iniciar corticóide para maturação pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar tocólise com indometacina, sem necessidade de corticoterapia por idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar corticoterapia, mas evitar tocolíticos pelo achado da ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar interrupção da gestação devido risco elevado de parto iminente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar antibiótico empírico e tocólise, mas não administrar sulfato de magnésio por idade gestacional <30 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve uma gestante de 28 semanas em trabalho de parto prematuro (TPP). O diagnóstico é firmado pela presença de contrações regulares associadas a alterações cervicais (dilatação de 2 cm e esvaecimento de 50%). Além disso, a ultrassonografia transvaginal revela um colo curto (18 mm), o que reforça o risco iminente de parto prematuro em pacientes sintomáticas.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Diante de um TPP entre 24 e 34 semanas, o objetivo principal é postergar o parto por pelo menos 48 horas para permitir a ação da corticoterapia. O nifedipino é um bloqueador de canais de cálcio amplamente utilizado como tocolítico de primeira linha devido à sua eficácia e baixo perfil de efeitos colaterais graves. O corticoide (betametasona ou dexametasona) é fundamental para reduzir a incidência de síndrome do desconforto respiratório, hemorragia intraventricular e enterocolite necrotizante no recém-nascido.\n\nAlternativa B (Incorreta): Embora a indometacina possa ser utilizada como tocolítico em gestações abaixo de 32 semanas, a afirmação de que não há necessidade de corticoterapia está errada. A maturação pulmonar fetal com corticoides é a intervenção que mais reduz a morbimortalidade neonatal na prematuridade extrema.\n\nAlternativa C (Incorreta): O achado de colo curto (18 mm) na ultrassonografia, em uma paciente com contrações, é justamente um critério que valida a necessidade de internação e conduta ativa para TPP, incluindo a tocólise para garantir o tempo de ação do corticoide.\n\nAlternativa D (Incorreta): Não há indicação de interrupção da gestação. Pelo contrário, o esforço deve ser voltado para a manutenção da gravidez (se possível) ou, no mínimo, para a preparação fetal (corticoide e neuroproteção) antes do nascimento, já que não há sinais de sofrimento fetal, infecção ovular ou sangramento materno.\n\nAlternativa E (Incorreta): O uso de antibiótico profilático para estreptococo do grupo B (GBS) seria indicado apenas se o parto fosse iminente ou em evolução. Quanto ao sulfato de magnésio, ele é indicado justamente para idades gestacionais precoces (geralmente abaixo de 32 semanas) com o objetivo de neuroproteção fetal para reduzir o risco de paralisia cerebral, tornando a alternativa incorreta ao sugerir sua não administração.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  },
+  {
+    "id": "AJUDA_d216d78c-b214-4c80-85f3-0831fe00ce66",
+    "originalId": "d216d78c-b214-4c80-85f3-0831fe00ce66",
+    "statement": "Paciente feminina, 27 anos, vai à consulta referindo dor na região do joelho desde que sofreu, na noite anterior, uma contusão jogando futebol. Ainda durante a noite, procurou uma emergência. Apresentava edema na região da patela, com movimentos preservados. Foi, então, solicitado um RX e prescrito um anti-inflamatório. A paciente traz, nessa consulta, um RX que não revelou fratura ou luxação, além de uma receita para uso de ibuprofeno 400mg, três vezes ao dia, por 5 dias. Durante a anamnese, a paciente conta que é portadora de transtorno bipolar e, por isso, faz uso de carbonato de lítio 1350mg/dia com uma litemia de 1,0mEq/L. Em função do quadro, o médico solicita uma ressonância magnética para avaliar melhor lesão de ligamento, lesão meniscal e derrame articular e também orienta a paciente em relação à prescrição anterior. Diante dessas informações, a orientação correta a ser dada pelo médico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter o uso de ibuprofeno na dose prescrita e associado ao lítio, pois não há interação medicamentosa entre eles.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar a dosagem de ibuprofeno, pois a associação com o lítio diminui o nível plasmático do anti-inflamatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diminuir a dose de lítio, pois o ibuprofeno aumenta o seu nível sérico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Retirar o lítio imediatamente, retornando seu uso apenas após o tempo de uso de ibuprofeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a interação farmacológica entre o carbonato de lítio, um estabilizador de humor com índice terapêutico estreito, e os anti-inflamatórios não esteroidais (AINEs), como o ibuprofeno. O lítio é excretado quase exclusivamente pelos rins e sua depuração depende diretamente da taxa de filtração glomerular.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Existe uma interação medicamentosa clinicamente muito relevante. O uso de AINEs associado ao lítio é uma das causas comuns de intoxicação por lítio em pacientes estáveis, não sendo recomendada a manutenção da dose sem vigilância ou ajuste.\n\nAlternativa b: Incorreta. A interação não ocorre sobre o nível plasmático do anti-inflamatório. O lítio não tem a capacidade de reduzir a biodisponibilidade ou aumentar o metabolismo do ibuprofeno a ponto de exigir aumento de dose do analgésico.\n\nAlternativa c: Correta. Os AINEs inibem a síntese de prostaglandinas renais (especialmente PGE2 e PGI2). No rim, essas prostaglandinas são responsáveis por manter a vasodilatação da arteríola aferente e promover a excreção de sódio e lítio. Ao inibi-las, o ibuprofeno causa vasoconstrição renal, reduzindo o fluxo sanguíneo e a taxa de filtração glomerular, além de aumentar a reabsorção de lítio nos túbulos renais. Isso eleva a concentração sérica de lítio (litemia). Como a paciente já apresenta uma litemia de 1,0 mEq/L (limite superior da faixa terapêutica usual de 0,6 a 1,2 mEq/L), qualquer aumento pode levar a sinais de toxicidade, como tremores grosseiros, ataxia, disartria e insuficiência renal aguda. Assim, se o uso do AINE for indispensável, a dose de lítio deve ser reduzida e a litemia monitorada. Na prática clínica, o mais comum seria substituir o ibuprofeno por analgésicos que não interferem na função renal, como paracetamol ou dipirona.\n\nAlternativa d: Incorreta. A retirada imediata do lítio em uma paciente com transtorno bipolar apresenta um risco elevado de recaída do quadro psiquiátrico (crise de mania ou depressão). O manejo de uma interação medicamentosa para um tratamento de curto prazo (5 dias de analgesia) deve ser feito com ajuste de dose ou troca da medicação sintomática, e não com a interrupção do tratamento de base da paciente.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  },
+  {
+    "id": "AJUDA_d21af990-314f-4136-ae81-61fd930f465f",
+    "originalId": "d21af990-314f-4136-ae81-61fd930f465f",
+    "statement": "Qual é a principal contribuição do componente estrogênico da pílula combinada para a eficácia contraceptiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suprimir a secreção de hormônio luteinizante (LH), prevenindo a ovulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suprimir a secreção do hormônio folículo-estimulante (FSH), prevenindo o surgimento de um folículo dominante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Produzir um endométrio não receptivo à implantação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Espessar o muco cervical, tornando-o impermeável ao transporte de espermatozoides.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender o mecanismo de ação da pílula anticoncepcional combinada, é fundamental distinguir os papéis do estrogênio e da progestina no eixo hipotálamo-hipófise-gônada.\n\nAlternativa (a) Incorreta. A supressão do Hormônio Luteinizante (LH) é a principal função do componente progestogênio da pílula. Ao inibir o pico de LH, o progestogênio impede a ovulação propriamente dita. Embora o estrogênio potencialize essa ação, não é sua contribuição principal e isolada.\n\nAlternativa (b) Correta. O componente estrogênico (geralmente o etinilestradiol) atua através de um feedback negativo na hipófise anterior, resultando na supressão do Hormônio Folículo-Estimulante (FSH). Sem o estímulo do FSH, não ocorre o recrutamento e o desenvolvimento de um folículo dominante, o que impede a maturação folicular e a subsequente produção endógena de estradiol. Essa é a base da eficácia do estrogênio na pílula combinada.\n\nAlternativa (c) Incorreta. As alterações no endométrio que o tornam hostil à implantação (atrofia endometrial e alteração do preparo glandular) são efeitos decorrentes predominantemente da ação do progestogênio, que antagoniza a proliferação endometrial induzida pelo estrogênio.\n\nAlternativa (d) Incorreta. O espessamento do muco cervical, tornando-o mais viscoso e impenetrável aos espermatozoides, é um mecanismo clássico de ação do progestogênio. O estrogênio, isoladamente, tende a tornar o muco mais fluido e filante (favorável à ascensão espermática).\n\nResumo: Enquanto o progestogênio é o grande responsável por bloquear a ovulação (via LH) e criar barreiras periféricas (muco e endométrio), o estrogênio garante a estabilidade do ciclo e potencializa a ação contraceptiva ao impedir o crescimento folicular (via FSH).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  },
+  {
+    "id": "AJUDA_d222d138-3a6b-47a7-a416-bdfc0f78255f",
+    "originalId": "d222d138-3a6b-47a7-a416-bdfc0f78255f",
+    "statement": "Paciente de 54 anos, menopausada aos 49 anos, nega uso de Terapia Hormonal, apresentou 2 episódios de sangramento vaginal no último mês. Qual das alternativas abaixo está incorreta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Atrofia vaginal é a principal hipótese diagnóstica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As neoplasias intra-epiteliais endometriais tem risco de malignidade de até 30%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ultrassonografia transvaginal é o um exame complementar para avaliação da queixa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pólipos endometriais é a patologia mais comum e devem sempre ser removidos pelo alto risco de malignização",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\nO sangramento uterino anormal na pós-menopausa é um sinal de alerta que exige investigação imediata. Embora a maioria das causas seja benigna, o objetivo principal é excluir a presença de carcinoma de endométrio.\n\nAlternativa A (Correta): A atrofia do trato genital (endometrial ou vaginal) é a principal causa de sangramento nesse período da vida, sendo responsável por cerca de 60% a 80% dos casos. O hipoestrogenismo torna os tecidos finos e friáveis, favorecendo pequenos sangramentos.\n\nAlternativa B (Correta): A Neoplasia Intraepitelial Endometrial (NIE), termo que substituiu a antiga classificação de hiperplasia endometrial atípica, possui um alto potencial de malignidade. Cerca de 30% a 40% das mulheres diagnosticadas com NIE já apresentam carcinoma de endométrio concomitante ou evoluem para ele em um curto período, justificando condutas mais agressivas, como a histerectomia.\n\nAlternativa C (Correta): A ultrassonografia transvaginal é o exame complementar inicial de escolha. Ela funciona como um rastreio: se a espessura do eco endometrial for menor ou igual a 4 mm, o risco de câncer é extremamente baixo. Se for superior a esse valor, é obrigatória a realização de investigação histológica (biópsia ou histeroscopia).\n\nAlternativa D (Incorreta - Gabarito): Esta alternativa contém erros conceituais. Primeiro, a patologia mais comum é a atrofia, não os pólipos. Segundo, embora a remoção de pólipos endometriais na pós-menopausa seja recomendada quando são sintomáticos (para diagnóstico diferencial), o risco de malignidade associado a eles é baixo, ocorrendo em aproximadamente 0,5% a 5% dos casos. Não se pode afirmar que possuem \"alto risco de malignização\".",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:39.825Z"
+  }
+]

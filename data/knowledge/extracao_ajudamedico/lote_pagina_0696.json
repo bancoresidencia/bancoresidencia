@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_c2c7db41-c464-4a5d-8471-cbb095dc8a9c",
+    "originalId": "c2c7db41-c464-4a5d-8471-cbb095dc8a9c",
+    "statement": "Considerando-se o diagnóstico da morte encefálica, podemos afirmar corretamente que o reflexo",
+    "options": [
+      {
+        "id": "A",
+        "text": "córneo-palpebral refere-se ao mesencéfalo (II aferente/III eferente).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "oculomotor refere-se à ponte (V aferente/VII eferente).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "óculo-cefálico refere-se ao mesencéfalo e à ponte (VIII aferente/III, IV, VI eferente).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "óculo-vestibular refere-se ao bulbo (IX aferente/X eferente).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para o diagnóstico de morte encefálica, é obrigatória a constatação de coma não perceptivo e a ausência de reflexos do tronco encefálico, que compreende o mesencéfalo, a ponte e o bulbo. Cada reflexo testado avalia a integridade de diferentes níveis e nervos cranianos.\n\nAlternativa (a) Incorreta: O reflexo córneo-palpebral tem como via aferente o nervo trigêmeo (V par) e como via eferente o nervo facial (VII par), sendo um reflexo integrado na ponte. A descrição apresentada na alternativa (II aferente e III eferente) corresponde ao reflexo fotomotor, que é integrado no mesencéfalo.\n\nAlternativa (b) Incorreta: O reflexo oculomotor não é uma nomenclatura padrão para os testes de morte encefálica, mas, se se referisse ao reflexo fotomotor, a via envolveria o II e o III pares. A via citada (V aferente e VII eferente) pertence ao reflexo córneo-palpebral, localizado na ponte.\n\nAlternativa (c) Correta: O reflexo óculo-cefálico (manobra dos olhos de boneca) avalia a integridade do tronco encefálico de forma integrada entre a ponte e o mesencéfalo. A via aferente é composta pelo nervo vestibulococlear (VIII par), que detecta a movimentação da cabeça, e a via eferente envolve os nervos motores oculares: oculomotor (III par), troclear (IV par) e abducente (VI par), que coordenam o movimento dos olhos em relação à cabeça.\n\nAlternativa (d) Incorreta: O reflexo óculo-vestibular (teste calórico) avalia os mesmos níveis que o reflexo óculo-cefálico (VIII aferente e III, IV e VI eferentes), localizados na ponte e no mesencéfalo. A descrição de IX par aferente (glossofaríngeo) e X par eferente (vago) refere-se ao reflexo de tosse ou ao reflexo nauseoso, que são integrados no bulbo.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Coma e Alterações da Consciência",
+      "Anatomia, Fisiologia e Semiologia Neurológica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  },
+  {
+    "id": "AJUDA_c2f196c5-7f56-4ebd-b359-2c013b1bb81b",
+    "originalId": "c2f196c5-7f56-4ebd-b359-2c013b1bb81b",
+    "statement": "Recém-nascido prematuro de 32 semanas, peso de nascimento 1100g, cuja mãe é HbsAg positiva. Qual deve ser a conduta adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Imunoglobulina para hepatite B nas primeiras 12h de vida e esquema vacinal conforme Programa Nacional de Imunizações, com doses de vacina contra hepatite B com 0, 2 e 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sorologia para hepatite B nas primeiras 12h de vida e esquema vacinal conforme Programa Nacional de Imunizações com doses de vacina contra hepatite B com 0, 1, 2 e 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Imunoglobulina para hepatite B nas primeiras 12h de vida e esquema vacinal conforme Programa Nacional de Imunizações, com doses de vacina contra hepatite B com 0, 1, 2 e 6 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Dosar sorologias da mãe e bebê, fazer imunoglobulina para hepatite B apenas se recém-nascido HbsAg positivo, esquema vacinal conforme Programa Nacional de Imunizações, com doses de vacina contra hepatite B com 0, 2 e 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O recém-nascido exposto à hepatite B por transmissão vertical (mãe HBsAg positiva) deve receber a primeira dose da vacina contra hepatite B e a Imunoglobulina Humana Anti-Hepatite B (IGHAHB) o mais precocemente possível, preferencialmente nas primeiras 12 horas de vida, administradas em locais anatômicos diferentes. \n\nPara recém-nascidos prematuros com idade gestacional menor que 33 semanas ou peso de nascimento inferior a 2.000 g (como o caso em questão: 32 semanas e 1.100 g), a imunogenicidade da primeira dose pode ser reduzida. Por essa razão, o Programa Nacional de Imunizações (PNI) preconiza o esquema vacinal com 4 doses, administradas nas idades de 0 (ao nascer), 1, 2 e 6 meses de vida.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora acerte a administração da imunoglobulina nas primeiras 12 horas, traz o esquema vacinal com 3 doses (0, 2 e 6 meses), que é o padrão para recém-nascidos a termo e com peso maior ou igual a 2.000 g. Prematuros com menos de 33 semanas ou peso menor que 2.000 g necessitam de 4 doses (0, 1, 2 e 6 meses).\n\nAlternativa b: Incorreta. A conduta pós-exposição não depende da realização prévia de sorologia no recém-nascido. A imunoglobulina específica e a vacina devem ser aplicadas imediatamente devido ao elevado risco de infecção crônica.\n\nAlternativa c: Correta. Contempla a conduta completa e preconizada: administração da imunoglobulina específica nas primeiras 12 horas de vida associada ao esquema vacinal ampliado em 4 doses (0, 1, 2 e 6 meses), específico para recém-nascidos prematuros menores de 33 semanas e/ou com peso inferior a 2.000 g.\n\nAlternativa d: Incorreta. A imunoprofilaxia não deve ser condicionada ao resultado sorológico do bebê, pois a transmissão deve ser prevenida ativamente antes do estabelecimento da infecção. Além disso, o esquema com apenas 3 doses não é adequado para este perfil de prematuro.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  },
+  {
+    "id": "AJUDA_c2f1c86a-9e22-451e-807d-fcda13300992",
+    "originalId": "c2f1c86a-9e22-451e-807d-fcda13300992",
+    "statement": "A vacinação contra a poliomielite no Brasil, após recente atualização, é administrada com",
+    "options": [
+      {
+        "id": "A",
+        "text": "dose VIP (vacina injetável polimielite) única e dose de reforço única com VOPb (vacina oral polimielite bivalente).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "três doses VIP, seguidas de duas doses de reforço com VOPb, havendo previsão de substituição das doses de reforço VOPb por dose de reforço única injetável (VIP) para novembro de 2024.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "duas doses VIP e duas doses de reforço com VOPb.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "duas doses VIP e duas doses de reforço com VIP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "duas doses VOPb e dose única de reforço VIP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A explicação para esta questão baseia-se nas recentes atualizações do Programa Nacional de Imunizações (PNI) do Ministério da Saúde do Brasil a respeito da vacinação contra a poliomielite em 2024.\n\nAlternativa a: Incorreta. O esquema primário de vacinação contra a poliomielite no Brasil é composto por três doses iniciais (administradas aos 2, 4 e 6 meses de idade) e não por uma dose única.\n\nAlternativa b: Correta. Esta alternativa descreve o cenário de transição atual do PNI. Até então, o calendário brasileiro utilizava a VIP (vacina inativada poliomielite, injetável) nas três doses do esquema primário (2, 4 e 6 meses) e duas doses de reforço com a VOPb (vacina oral poliomielite bivalente, a \"gotinha\") aos 15 meses e aos 4 anos. O Ministério da Saúde publicou diretrizes confirmando que, a partir de novembro de 2024, a VOPb será totalmente descontinuada e substituída pela VIP. Com isso, o novo esquema passará a ser 3 doses de VIP no esquema primário e apenas uma dose de reforço com VIP aos 15 meses, eliminando o segundo reforço que era feito aos 4 anos.\n\nAlternativa c: Incorreta. O esquema básico atual e o futuro exigem três doses de VIP (2, 4 e 6 meses) para garantir a imunidade primária adequada, e não apenas duas doses.\n\nAlternativa d: Incorreta. Embora o futuro esquema utilize apenas a vacina injetável (VIP), a previsão do Ministério da Saúde é de que haja apenas um reforço aos 15 meses de idade, e não dois reforços. Além disso, a alternativa desconsidera que, no momento atual da transição, os reforços ainda são realizados com a VOPb.\n\nAlternativa e: Incorreta. Esta alternativa inverte a lógica de segurança do PNI. Desde 2016, o Brasil utiliza a VIP (vírus inativado) nas primeiras doses para evitar casos raros de paralisia associada à vacina (VAPP), que podem ocorrer com a administração da VOP (vírus vivo atenuado) em crianças que nunca tiveram contato prévio com o antígeno. Portanto, a VOPb nunca deve preceder a VIP.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  },
+  {
+    "id": "AJUDA_c2f785ac-07f0-4247-b1b9-b6442a3ca17a",
+    "originalId": "c2f785ac-07f0-4247-b1b9-b6442a3ca17a",
+    "statement": "Os pais e muitos profissionais que trabalham com jovens têm dificuldade de compreender e saber lidar com os adolescentes. Torna-se difícil estabelecer o limite entre o normal e o patológico em relação ao comportamento, Como, nesta fase da vida, estão passando por muitos desafios devido às transformações biopsicossociais, observa-se uma situação de desestabilidade. Neste contexto, o comportamento do adolescente considerado \"normal\" pelos profissionais de saúde envolve:",
+    "options": [
+      {
+        "id": "A",
+        "text": "agressividade e violência, tentando se impor e se defender frente aos conflitos próprios da idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "isolamento social, pela dificuldade de integração aos grupos de jovens da sua idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "autolesões, pela identificação com os colegas que se comportam dessa maneira para lidar com as dificuldades da vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "afastamento progressivo dos pais, com momentos de desobediência e de rebeldia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender o que é considerado comportamento normal na adolescência, devemos recorrer aos conceitos do desenvolvimento biopsicossocial. Nessa fase, ocorre o que a literatura pediátrica e psiquiátrica muitas vezes chama de Síndrome da Adolescência Normal, um período de transição necessário para a formação da identidade adulta.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora a irritabilidade e as flutuações de humor sejam comuns, a violência e a agressividade patológica não são comportamentos esperados ou saudáveis. O adolescente pode apresentar comportamentos de oposição, mas a violência estruturada indica uma falha na regulação emocional ou transtornos de conduta, exigindo intervenção especializada.\n\nAlternativa B: Incorreta. O isolamento social é um importante sinal de alerta (*red flag*) na adolescência. O desenvolvimento normal nesta fase é marcado pela migração do eixo afetivo da família para o grupo de pares (amigos). O jovem que se isola e não consegue se integrar a grupos da sua idade pode estar apresentando quadros de depressão, fobia social ou outros transtornos mentais.\n\nAlternativa C: Incorreta. As autolesões (como o *cutting*) são sempre indicativas de sofrimento psíquico agudo e dificuldade em manejar emoções. Jamais devem ser naturalizadas ou consideradas normais, mesmo que ocorram por \"contágio\" ou identificação com o grupo. São comportamentos de risco que demandam avaliação de saúde mental imediata.\n\nAlternativa D: Correta. O afastamento progressivo dos pais é um processo normativo chamado de individuação-separação. Para construir sua própria identidade, o adolescente precisa desidealizar as figuras parentais e questionar a autoridade. A desobediência e a rebeldia moderadas são manifestações dessa busca por autonomia e independência. É através desse distanciamento do núcleo familiar que o jovem fortalece seus vínculos com a sociedade e com seus próprios valores.\n\nPortanto, o comportamento descrito na alternativa (D) é o que melhor representa o desenvolvimento esperado para essa etapa da vida, refletindo a transição da dependência infantil para a autonomia adulta.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  },
+  {
+    "id": "AJUDA_c3001188-cf32-442f-aa32-14e1bfdd9303",
+    "originalId": "c3001188-cf32-442f-aa32-14e1bfdd9303",
+    "statement": "Uma das fases críticas da vida da mulher é o climatério e todo médico deve saber as alterações decorrentes desse período. Assinale a alternativa correta em relação a esse período.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No decorrer da fase reprodutiva, ocorre depleção dos folículos ovarianos nos sucessivos ciclos menstruais, e a intensidade desse desaparecimento se acentua com a diminuição da liberação do FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A concentração de estradiol, após 12 a 24 meses da última menstruação, varia entre 10 e 20 pg/mL, em comparação com a média do menacme, que é cerca de 550 pg/mL.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Um grande e marcado sintoma é o fogacho ou ondas de calor, que se deve ao hipoestrogenismo e que acomete cerca de 20% a 30% das mulheres nessa fase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A administração de estrogênio no climatério, para todas mulheres que apresentem fogachos, é uma premissa importante, pois é o melhor tratamento e melhora também outros sintomas que possam apresentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A associação de estrógeno com progestagênio faz com que se possa administrar a terapia hormonal para todas as mulheres no climatério.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as alterações fisiológicas e clínicas que ocorrem durante o climatério e a menopausa. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta. Embora a depleção folicular seja o evento central do climatério, ela não se acentua com a diminuição do FSH. Pelo contrário, com a falência ovariana e a consequente queda nos níveis de estrogênio e inibina B, ocorre a perda do feedback negativo sobre a hipófise. Isso resulta em um aumento acentuado e progressivo dos níveis de FSH (hormônio folículo-estimulante), que é um marcador laboratorial clássico da transição menopausal.\n\nAlternativa (b) Correta. Após a menopausa (definida retrospectivamente após 12 meses de amenorreia), a produção de estradiol pelos folículos ovarianos cessa quase completamente. Os níveis circulantes caem drasticamente, fixando-se geralmente abaixo de 20 a 30 pg/mL. Durante o menacme (fase reprodutiva), os níveis de estradiol variam conforme o ciclo, podendo atingir picos pré-ovulatórios elevados (em torno de 300 a 600 pg/mL), o que valida a comparação apresentada na alternativa.\n\nAlternativa (c) Incorreta. Os fogachos (sintomas vasomotores) são, de fato, decorrentes do hipoestrogenismo, que causa uma disfunção no centro termorregulador hipotalâmico. No entanto, a prevalência citada está subestimada. Estima-se que os fogachos acometam entre 60% e 80% das mulheres no climatério, sendo o sintoma mais comum e o principal motivo de busca por assistência médica.\n\nAlternativa (d) Incorreta. A terapia hormonal (TH) com estrogênio é o tratamento padrão-ouro para fogachos, mas não pode ser administrada a \"todas\" as mulheres. Existem contraindicações absolutas importantes, como histórico de câncer de mama, câncer de endométrio estrogênio-dependente, doença hepática ativa, sangramento vaginal de causa desconhecida, porfiria e eventos tromboembólicos ou cardiovasculares prévios.\n\nAlternativa (e) Incorreta. A associação do progestagênio ao estrogênio tem como objetivo principal a proteção endometrial (prevenção de hiperplasia e câncer de endométrio) em mulheres que possuem útero. No entanto, essa associação não anula as contraindicações gerais da terapia hormonal mencionadas na alternativa anterior. Portanto, a TH continua não sendo indicada para \"todas\" as mulheres, devendo ser individualizada com base na relação risco-benefício.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  },
+  {
+    "id": "AJUDA_c3006f3d-d2ea-48c1-b0da-ea5714950ef9",
+    "originalId": "c3006f3d-d2ea-48c1-b0da-ea5714950ef9",
+    "statement": "Em um forest plot, um estudo individual apresenta um quadrado pequeno com um intervalo de confiança amplo. Isso sugere que o estudo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tem um grande peso na estimativa combinada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tem uma amostra pequena e baixa precisão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "É o mais significativo estatisticamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apresenta um efeito de grande magnitude.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender essa questão, é fundamental conhecer os componentes de um *forest plot* (gráfico de floresta) em uma metanálise:\n\n1. Tamanho do quadrado (Estimativa pontual): O tamanho do quadrado central representa o peso (*weight*) que aquele estudo individual exerce sobre o resultado final da metanálise. Estudos com amostras maiores e mais eventos têm quadrados maiores.\n2. Largura da linha horizontal (Intervalo de Confiança – IC): A linha que atravessa o quadrado representa o intervalo de confiança. Quanto mais larga for a linha, maior é a incerteza sobre o resultado e menor é a precisão estatística do estudo.\n\nAnálise das alternativas:\n\na) Incorreta. Um estudo com grande peso na estimativa combinada seria representado por um quadrado grande e, geralmente, por um intervalo de confiança estreito (indicando alta precisão e grande tamanho amostral).\n\nb) Correta. Em estatística, a precisão está inversamente relacionada à largura do intervalo de confiança. Se o intervalo for amplo, a precisão será baixa. Isso ocorre tipicamente em estudos com amostras pequenas, onde a variabilidade dos dados é proporcionalmente maior, resultando também em um quadrado pequeno (baixo peso no gráfico).\n\nc) Incorreta. A significância estatística é determinada pelo fato de o intervalo de confiança cruzar ou não a linha de nulidade (o valor 1 para razões de chance/risco ou 0 para diferenças de médias). Um intervalo de confiança muito amplo tem, na verdade, maior chance de cruzar a linha de nulidade e ser considerado não significativo.\n\nd) Incorreta. A magnitude do efeito é indicada pela posição do quadrado no eixo horizontal (o quanto ele está afastado da linha central de nulidade). O tamanho do quadrado e a largura do intervalo de confiança referem-se à confiabilidade e ao peso do estudo, e não ao tamanho do efeito observado.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  },
+  {
+    "id": "AJUDA_c30c69c4-8328-4468-aa3c-9d043b955677",
+    "originalId": "c30c69c4-8328-4468-aa3c-9d043b955677",
+    "statement": "Recém-nascido, sexo masculino, com 30 horas de vida, nascido de parto normal sem intercorrências, com peso de nascimento de 2 980 g, é submetido ao teste do coraçãozinho protocolado na maternidade. A aferição da saturação em membro superior direito foi de 94% e, no membro inferior esquerdo, foi de 93%. Ambos os membros estavam bem perfundidos.\nDe acordo com as atuais orientações da Sociedade Brasileira de Pediatria, assinale a alternativa correta sobre essa situação clínica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os valores devem ser desconsiderados, pois foram obtidos fora do tempo recomendado para a realização do teste do coraçãozinho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os valores devem ser desconsiderados, pois o teste foi realizado com técnica incorreta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O teste deverá ser repetido em 1 hora, com a mesma técnica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O teste deve ser considerado negativo e deve-se seguir o acompanhamento de rotina da criança.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deverá ser realizado um ecocardiograma dentro de 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Teste do Coraçãozinho (triagem neonatal para cardiopatias congênitas críticas) deve ser realizado em todo recém-nascido com idade gestacional superior a 35 semanas, entre 24 e 48 horas de vida, antes da alta hospitalar. A técnica consiste na aferição da oximetria de pulso no membro superior direito (pré-ductal) e em um dos membros inferiores (pós-ductal).\n\nPara interpretar o teste, seguimos os seguintes critérios:\n\n1. Teste Negativo (Normal): Saturação maior ou igual a 95% em ambos os membros e diferença entre os membros menor que 4% (ou seja, no máximo 3%).\n2. Teste Positivo (Alterado): Saturação menor que 89% em qualquer um dos membros.\n3. Resultado Duvidoso: Saturação entre 90% e 94% em qualquer um dos membros OU diferença entre os membros maior ou igual a 4%.\n\nNo caso clínico apresentado, o recém-nascido tem 30 horas de vida e as saturações foram de 94% no membro superior e 93% no membro inferior. Como houve um valor de 94%, o resultado é considerado duvidoso. Segundo o protocolo da Sociedade Brasileira de Pediatria (SBP) e do Ministério da Saúde, nessa situação, o teste deve ser repetido em 1 hora. Se o resultado permanecer duvidoso após duas reavaliações (totalizando três medidas com intervalo de 1 hora entre elas), o teste é considerado positivo e um ecocardiograma deve ser solicitado.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O tempo recomendado para a realização do teste é entre 24 e 48 horas de vida. O recém-nascido tem 30 horas, portanto, está no período ideal.\n\nAlternativa b) Incorreta. A técnica de aferir no membro superior direito e em um membro inferior está correta. O membro superior direito capta o sangue pré-ductal, essencial para a comparação.\n\nAlternativa c) Correta. Como os valores encontrados (94% e 93%) se enquadram no critério de resultado duvidoso (saturação entre 90% e 94%), a conduta imediata é repetir o teste em 1 hora.\n\nAlternativa d) Incorreta. Para ser considerado negativo (normal), ambos os valores deveriam ser maiores ou iguais a 95% e a diferença entre eles menor que 4%. No caso, os valores estão abaixo de 95%.\n\nAlternativa e) Incorreta. O ecocardiograma só deve ser solicitado de imediato se a saturação for menor que 89% ou se, após as repetições de hora em hora (até a terceira aferição), os valores continuarem na faixa de dúvida (90% a 94% ou diferença maior ou igual a 4%).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  },
+  {
+    "id": "AJUDA_c310a3ba-fa1c-455a-b4a3-8df439f5da9b",
+    "originalId": "c310a3ba-fa1c-455a-b4a3-8df439f5da9b",
+    "statement": "A Coordenação de IST/AIDS de um município brasileiro analisou a série histórica de indicadores epidemiológicos relativos à infecção pelo HIV no período de 2019 a 2023. Nesse intervalo, houve ampla expansão da oferta de diagnóstico e implementação de novos protocolos, com medicamentos de maior eficácia e menor toxicidade. A população do município permaneceu estável em aproximadamente 100 mil habitantes. A tabela a seguir apresenta os dados consolidados do período.\n\n| Ano | Casos novos de HIV diagnosticados no ano | Total de pessoas vivendo com HIV (PVHA) em 31 de dezembro | Óbitos relacionados à AIDS no ano |\n| :---: | :---: | :---: | :---: |\n| 2019 | 120 | 600 | 50 |\n| 2020 | 125 | 670 | 35 |\n| 2021 | 118 | 780 | 15 |\n| 2022 | 122 | 890 | 5 |\n| 2023 | 120 | 1.005 | 4 |\n\nConsiderando-se a relação entre as medidas de frequência e a dinâmica demográfica, a elevação da prevalência da infecção no período analisado é consequência",
+    "options": [
+      {
+        "id": "A",
+        "text": "da crescente virulência das cepas virais circulantes, indicada pela estabilidade da taxa de incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "do aumento da duração média da doença, resultante da redução da letalidade observada na série.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "da ineficácia das estratégias de prevenção primária, demonstrada pelo acúmulo de casos ativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "da variação de exposição de risco da infecção, o que gera diagnósticos superiores à capacidade de resolução do sistema.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão cobra a relação clássica entre prevalência, incidência e duração da doença: P ≈ I × D. Essa fórmula vale em população estável e em situação próxima do estado estacionário.\n\nAnálise dos dados\n\nIncidência: com cerca de 120 casos novos por ano em 100 mil habitantes, a taxa fica em torno de 120 por 100 mil por ano. Ela permaneceu praticamente estável em todo o período.\n\nPrevalência: passou de 600 para 1.005 PVHA, ou seja, de 6 para cerca de 10 por mil habitantes. Houve aumento de aproximadamente 67%.\n\nÓbitos: caíram de 50 para 4. A letalidade anual entre as PVHA caiu de cerca de 8,3% (50/600) para cerca de 0,4% (4/1.005).\n\nDinâmica do \"reservatório\" de prevalentes: a prevalência é como uma caixa d'água. A incidência é a torneira que enche, e os óbitos e as curas são o ralo que esvazia. No HIV não há cura, então a saída é praticamente só o óbito.\n\nCom a entrada estável e a saída reduzida drasticamente, os casos se acumulam. Por exemplo, de 2022 para 2023: 890 + 120 − 4 = 1.006, valor praticamente igual ao observado. A terapia antirretroviral mais eficaz e menos tóxica prolonga a sobrevida, isto é, aumenta a duração média da condição, e isso eleva a prevalência mesmo sem aumento da incidência.\n\nAlternativas\n\na) Incorreta. Uma incidência estável não indica aumento de virulência. Cepas mais virulentas, aliás, tenderiam a aumentar a mortalidade, e a série mostra o oposto: queda acentuada dos óbitos.\n\nb) Correta. A redução da letalidade, efeito dos novos protocolos de TARV, aumentou a sobrevida e, portanto, a duração média da infecção. Com a incidência constante, a prevalência sobe como consequência direta da relação P ≈ I × D.\n\nc) Incorreta. A prevenção primária atua sobre a incidência, que se manteve estável. Pode-se discutir que ela não reduziu os casos novos, mas não houve aumento de incidência que explique a elevação da prevalência. O acúmulo de casos reflete a maior sobrevida, não falha da prevenção.\n\nd) Incorreta. A estabilidade dos casos novos não sugere variação relevante da exposição de risco. Também não há nos dados nenhum indício de sobrecarga do sistema. Ao contrário, a queda dos óbitos indica boa capacidade de resolução.\n\nMensagem para a prova: aumento de prevalência com incidência estável deve fazer pensar em aumento da duração da doença, seja por maior sobrevida ou por tratamento que controla sem curar. Em doenças crônicas tratáveis, como HIV, diabetes e câncer, a melhora terapêutica eleva a prevalência.\n\nGabarito: B",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  },
+  {
+    "id": "AJUDA_c3199aa7-97cc-4c60-8cf5-19f43136b391",
+    "originalId": "c3199aa7-97cc-4c60-8cf5-19f43136b391",
+    "statement": "A Política Nacional de Atenção Integral à Saúde do Homem (PNAISH) orienta-se por diretrizes que visam superar as barreiras de acesso e reconhecer as especificidades da população masculina. Para operacionalizar esse cuidado, a Política estabelece eixos temáticos fundamentais que norteiam as ações nos diferentes níveis de atenção. Considerando o disposto na PNAISH, assinale a alternativa que apresenta CORRETAMENTE os eixos temáticos que a compõem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acessibilidade e equidade; paternidade e cuidado; humanização e integralidade; planejamento familiar e fertilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Acessibilidade e equidade; paternidade e cuidado; humanização e integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paternidade e cuidado; planejamento familiar e fertilidade; prevenção de violências e agravos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acessibilidade e equidade; humanização e integralidade; vigilância em saúde do trabalhador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Planejamento familiar e fertilidade; paternidade e cuidado; atenção à saúde mental e uso de álcool.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Política Nacional de Atenção Integral à Saúde do Homem (PNAISH), instituída pela Portaria nº 1.944/2009, foi criada para enfrentar o fato epidemiológico de que os homens acessam menos os serviços de saúde e morrem precocemente por causas evitáveis. Para fins de prova, é fundamental memorizar os 5 eixos temáticos que estruturam a política.\n\nOs eixos oficiais são:\n1. Acesso e Acolhimento (também referido como Acessibilidade e Equidade).\n2. Saúde Sexual e Saúde Reprodutiva (inclui Planejamento Familiar e Fertilidade).\n3. Paternidade e Cuidado (fomenta o envolvimento ativo do homem no ciclo gravídico-puerperal).\n4. Doenças Prevalentes na População Masculina.\n5. Prevenção de Violências e Acidentes.\n\nAnálise das alternativas:\n\nAlternativa A (CORRETA): Apresenta quatro dos componentes fundamentais. Embora existam cinco eixos no total, esta alternativa é a única que lista termos que pertencem estritamente à nomenclatura oficial da PNAISH. \"Acessibilidade e equidade\" refere-se ao primeiro eixo; \"paternidade e cuidado\" ao terceiro; \"humanização e integralidade\" são princípios transversais presentes no texto da política que qualificam o eixo de acolhimento; e \"planejamento familiar e fertilidade\" compõem o eixo de saúde sexual e reproutiva.\n\nAlternativa B (INCORRETA): Embora os termos citados estejam corretos e presentes na PNAISH, a alternativa está incompleta em comparação à letra A, não mencionando o eixo fundamental da saúde reprodutiva (planejamento familiar), que é um dos pilares da operacionalização da política.\n\nAlternativa C (INCORRETA): Cita eixos corretos, porém está incompleta e não abrange o eixo primordial de \"Acesso e Acolhimento\", que é a principal diretriz para superar a barreira cultural de que o homem não frequenta a atenção primária.\n\nAlternativa D (INCORRETA): O termo \"vigilância em saúde do trabalhador\" não é um eixo temático específico da PNAISH. Embora a saúde do trabalhador seja correlatada à saúde do homem, ela possui política própria (PNST) e não define os eixos estruturantes da PNAISH.\n\nAlternativa E (INCORRETA): O termo \"atenção à saúde mental e uso de álcool\" não constitui um eixo temático isolado na redação da política. Esses temas são abordados dentro do eixo de \"Doenças Prevalentes na População Masculina\", mas não recebem a nomenclatura de eixo temático principal como proposto na questão.\n\nDica para prova: O examinador buscou agrupar os conceitos principais da política. Lembre-se sempre que \"Paternidade e Cuidado\" é o eixo mais inovador da PNAISH, frequentemente cobrado para diferenciar esta política de outras estratégias de saúde pública.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  },
+  {
+    "id": "AJUDA_c31aba53-4050-4fd6-b782-0e78b3a8050a",
+    "originalId": "c31aba53-4050-4fd6-b782-0e78b3a8050a",
+    "statement": "Lactente de 9 meses é atendido em Unidade Básica de Saúde (UBS) em virtude do surgimento de crises epilépticas há 3 meses. Os eventos se caracterizam por espasmos em flexão dos membros superiores sobre o tronco, semelhantes a sustos, e ocorrem nos horários de maior sonolência da criança. História gestacional e de parto sem anormalidades. Ao exame físico, lactente interage com o observador, porém não consegue ficar sentado. Ausculta cardíaca e respiratória sem anormalidades. Apresenta várias manchas hipomelanóticas nos membros inferiores e no tronco. Ressonância magnética de crânio revelou duas áreas compatíveis com astrocitomas de células gigantes subependimárias.\nA principal hipótese diagnóstica é",
+    "options": [
+      {
+        "id": "A",
+        "text": "neurofibromatose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "esclerose tuberosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "síndrome de Sturge-Weber.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "doença de von Hippel-Lindau.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de Esclerose Tuberosa, uma facomatose (doença neurocutânea) de herança autossômica dominante. O diagnóstico baseia-se na combinação de achados dermatológicos, neurológicos e radiológicos específicos.\n\nAnálise das alternativas:\n\na) INCORRETA. A Neurofibromatose tipo 1 (NF1) apresenta como marcos principais as manchas café com leite, sardas axilares e inguinais (sinal de Crowe), nódulos de Lisch na íris e neurofibromas cutâneos. Embora possa causar convulsões, as manchas hipomelanóticas e o achado de astrocitoma de células gigantes subependimário não fazem parte do espectro clínico desta patologia.\n\nb) CORRETA. O paciente apresenta a tríade diagnóstica da Esclerose Tuberosa evidente no enunciado: \n1. Manifestações Neurológicas: Crises epilépticas caracterizadas como espasmos em flexão, típicos da Síndrome de West, que é frequentemente a primeira manifestação neurológica da doença em lactentes. O atraso no desenvolvimento (não sentar aos 9 meses) reforça o comprometimento neurológico.\n2. Manifestações Cutâneas: As manchas hipomelanóticas (conhecidas como manchas em folha de freixo) são as lesões de pele mais precoces e comuns da doença.\n3. Achado de Imagem: O Astrocitoma de Células Gigantes Subependimário (SEGA) é um tumor cerebral de crescimento lento, localizado próximo ao forame de Monro, e é considerado um critério maior e patognomônico para o diagnóstico de Esclerose Tuberosa.\n\nc) INCORRETA. A Síndrome de Sturge-Weber é caracterizada pela mancha vinho do porto na face (geralmente no território do nervo trigêmeo), angiomatose leptomeníngea e glaucoma. O caso descrito não apresenta a característica mancha vascular facial, nem os achados radiológicos típicos de calcificações corticais em \"trilho de trem\" da Sturge-Weber.\n\nd) INCORRETA. A doença de von Hippel-Lindau manifesta-se principalmente por hemangioblastomas na retina e no sistema nervoso central (especialmente cerebelo e medula), além de carcinomas de células renais e feocromocitomas. Não há associação com manchas hipomelanóticas ou com o tipo de astrocitoma descrito no exame de imagem do lactente.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": 85.17771021979036,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:32.516Z"
+  }
+]

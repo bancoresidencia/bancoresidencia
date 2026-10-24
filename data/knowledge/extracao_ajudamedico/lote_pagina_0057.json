@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_0eaa0d4b-3971-4ba1-89a3-af10560b4dae",
+    "originalId": "0eaa0d4b-3971-4ba1-89a3-af10560b4dae",
+    "statement": "Em relação ao teste de oximetria realizado para triagem neonatal de cardiopatias congênitas, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dever ser realizado preferencialmente na sala de parto ou nas primeiras 12 horas de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pode ser realizado em membro superior e inferior independentemente da lateralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É considerado normal quando o resultado está acima de 95% no membro superior e no membro inferior, com diferença < 5% entre as duas medidas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Em caso de resultado anormal, uma nova aferição deve ser feita após uma hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O teste de oximetria de pulso, popularmente conhecido como Teste do Coraçãozinho, é uma ferramenta de triagem neonatal fundamental para o diagnóstico precoce de cardiopatias congênitas críticas ducto-dependentes. Abaixo, a análise de cada alternativa:\n\nAlternativa a: Incorreta. O teste deve ser realizado, obrigatoriamente, entre 24 e 48 horas de vida do recém-nascido, antes da alta hospitalar. A realização precoce (nas primeiras 12 ou 24 horas) aumenta significativamente o número de resultados falso-positivos, pois o recém-nascido ainda está em fase de transição da circulação fetal para a neonatal, com instabilidade na resistência vascular pulmonar e fechamento funcional do canal arterial.\n\nAlternativa b: Incorreta. A lateralidade é fundamental na execução deste exame. O sensor deve ser colocado, obrigatoriamente, no membro superior direito (que representa a saturação pré-ductal) e em um dos membros inferiores (que representa a saturação pós-ductal). O membro superior esquerdo não deve ser utilizado como padrão, pois, em algumas variações anatômicas, ele pode apresentar saturação já influenciada pelo canal arterial.\n\nAlternativa c: Correta. Esta alternativa descreve os parâmetros de normalidade para que o teste seja considerado negativo. Segundo as diretrizes, o recém-nascido passa na triagem se apresentar saturação de oxigênio maior ou igual a 95% em ambas as medidas (mão direita e pé) e se a diferença entre essas duas medidas for pequena. Embora a Sociedade Brasileira de Pediatria e o Ministério da Saúde especifiquem uma diferença menor ou igual a 3% como ideal, a alternativa define o conceito geral de normalidade aplicado na prática clínica e em protocolos internacionais.\n\nAlternativa d: Incorreta. Nem todo resultado anormal autoriza ou exige a repetição após uma hora. Se a saturação de oxigênio for inferior a 89% em qualquer um dos membros aferidos (mão direita ou pé), o teste é considerado imediatamente positivo/alterado. Nesses casos, o protocolo exige a realização de um ecocardiograma em até 24 horas, sem necessidade de reteste. A nova aferição após uma hora só é indicada se o resultado for intermediário: saturação entre 90% e 94% ou diferença entre os membros maior ou igual a 4%.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  },
+  {
+    "id": "AJUDA_0eac4691-1580-41d2-8416-26859971b3e5",
+    "originalId": "0eac4691-1580-41d2-8416-26859971b3e5",
+    "statement": "O câncer de próstata é uma das neoplasias mais comuns entre homens, e seu tratamento varia conforme o risco e o estágio da doença. A escolha terapêutica deve considerar não apenas o estágio do câncer, mas também as características individuais do paciente, como idade e saúde geral. A opção de tratamento recomendada para pacientes com câncer de próstata em estágio de risco intermediário desfavorável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas radioterapia externa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prostatectomia radical (com linfadenectomia).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Vigilância ativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vigilância ativa para todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da Questão:\nO tratamento do câncer de próstata é guiado pela estratificação de risco (NCCN ou D'Amico). O grupo de risco intermediário desfavorável é caracterizado por apresentar pelo menos um dos seguintes critérios: mais de um fator de risco intermediário (PSA entre 10 e 20 ng/mL, estágio T2b ou T2c, ou escore de Gleason 7), padrão de Gleason 4+3=7 (em vez de 3+4=7), ou uma alta porcentagem de fragmentos de biópsia positivos (mais de 50%). Para esse grupo, o tratamento deve ser definitivo e agressivo.\n\nAlternativa (a) Incorreta: A radioterapia externa isolada não é a recomendação ideal para o risco intermediário desfavorável. Quando se opta pela radioterapia nesse perfil de paciente, as diretrizes recomendam a associação obrigatória de terapia de privação androgênica (hormonioterapia) por um período de 4 a 6 meses, ou a combinação de radioterapia externa com braquiterapia. A monoterapia com radioterapia externa costuma ser reservada para casos de risco baixo ou intermediário favorável.\n\nAlternativa (b) Correta: A prostatectomia radical é uma das opções terapêuticas padrão para pacientes com risco intermediário desfavorável que apresentam boa expectativa de vida (geralmente acima de 10 anos). Nesse grupo, a realização da linfadenectomia pélvica é recomendada durante o procedimento cirúrgico, pois existe um risco significativo de acometimento linfonodal oculto que precisa ser avaliado para o correto estadiamento e controle da doença.\n\nAlternativa (c) Incorreta: A vigilância ativa é a estratégia de eleição para pacientes com câncer de próstata de risco muito baixo ou baixo. No caso do risco intermediário, ela é aceitável apenas para pacientes selecionados no grupo \"favorável\". Para o risco intermediário desfavorável, a vigilância ativa é contraindicada na maioria das vezes devido ao alto potencial de progressão da doença para estágios metastáticos, sendo o tratamento ativo mandatório.\n\nAlternativa (d) Incorreta: Afirmar que a vigilância ativa serve para todos os casos é um erro conceitual grave. O tratamento do câncer de próstata é individualizado. Pacientes com risco intermediário desfavorável, alto risco ou doença localmente avançada necessitam de intervenções definitivas (cirurgia ou radioterapia associada a bloqueio hormonal) para reduzir a mortalidade específica pela doença.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  },
+  {
+    "id": "AJUDA_0eaf3068-bc30-44b8-91f1-25f80102a6b9",
+    "originalId": "0eaf3068-bc30-44b8-91f1-25f80102a6b9",
+    "statement": "Um paciente de 55 anos, com histórico epidemiológico positivo para doença de Chagas na infância e disfagia progressiva para sólidos e líquidos há 3 anos, realiza uma manometria de alta resolução (HRM) como parte da investigação diagnóstica. O exame revela: Pressão de Relaxamento Integrada (IRP) consistentemente elevada (> 15 mmHg). 100% de falha peristáltica (ausência de contrações esofágicas normais). Pressurização panesofágica (pressurização simultânea de todo o esôfago) em 30% das deglutições avaliadas.\nCom base na Classificação de Chicago versão 4.0 e na apresentação clínica típica de um megaesôfago chagásico, qual é o tipo de acalasia e a conduta clínica inicial mais apropriada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acalasia Tipo I; Esofagectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acalasia Tipo I; Injeção de toxina botulínica no EEI ou dilatação pneumática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acalasia Tipo II; Miotomia de Heller.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Acalasia Tipo II; Tratamento medicamentoso com nitratos sublinguais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Acalasia Tipo III; Miotomia endoscópica peroral (POEM) como primeira escolha devido ao espasmo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro clínico e manométrico compatível com acalasia, que no Brasil tem a doença de Chagas como uma causa epidemiológica fundamental. Segundo a Classificação de Chicago versão 4.0, o diagnóstico de acalasia requer a Pressão de Relaxamento Integrada (IRP) elevada (acima de 15 mmHg na maioria dos equipamentos), indicando obstrução ao fluxo na transição esofagogástrica, associada à ausência de peristaltismo normal.\n\nA diferenciação em tipos baseia-se no padrão de pressurização do corpo esofágico:\n1. Tipo I (Acalasia Clássica): Ausência total de pressurização no corpo esofágico.\n2. Tipo II (Pressurização Panesofágica): Presença de pressurização que comprime toda a extensão do esôfago simultaneamente em pelo menos 20 por cento das deglutições.\n3. Tipo III (Espástica): Presença de contrações espásticas (prematuras) em pelo menos 20 por cento das deglutições.\n\nNo caso em questão, o paciente apresenta pressurização panesofágica em 30 por cento das deglutições, o que define a acalasia tipo II. Este subtipo é clinicamente relevante por ser o que apresenta a melhor taxa de sucesso terapêutico.\n\nAnálise das alternativas:\n\na) Incorreta. O diagnóstico manométrico é tipo II, não tipo I. Além disso, a esofagectomia é uma cirurgia de grande porte reservada apenas para estágios terminais da doença (megaesôfago grau IV ou dolicomegaesôfago), quando o órgão perdeu completamente sua função e diâmetro, o que não é a conduta inicial padrão.\n\nb) Incorreta. O diagnóstico está incorreto. Quanto à conduta, a toxina botulínica é uma opção paliativa e temporária, indicada apenas para pacientes muito idosos ou com graves comorbidades que contraindicam cirurgia ou dilatação, o que não parece ser o caso de um paciente de 55 anos.\n\nc) Correta. A presença de pressurização panesofágica em mais de 20 por cento das deglutições sela o diagnóstico de acalasia tipo II. A miotomia de Heller, geralmente associada a uma fundoplicatura para evitar o refluxo, é o tratamento cirúrgico padrão com ótimos resultados para este tipo de acalasia.\n\nd) Incorreta. Embora o diagnóstico do tipo esteja correto, o tratamento medicamentoso com nitratos ou bloqueadores de canal de cálcio é pouco eficaz, tem efeitos colaterais frequentes (como cefaleia) e não deve ser a conduta inicial para um paciente com disfagia progressiva e diagnóstico manométrico confirmado.\n\ne) Incorreta. Para ser classificada como tipo III, seriam necessárias contrações espásticas (definidas por uma latência distal curta na manometria), o que não foi relatado. O achado de pressurização simultânea em toda a extensão esofágica é patognomônico do tipo II. O POEM é, de fato, uma excelente indicação para o tipo III, mas o diagnóstico aqui é outro.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  },
+  {
+    "id": "AJUDA_0eb15b1f-a2b3-4be5-b115-878840d10b7c",
+    "originalId": "0eb15b1f-a2b3-4be5-b115-878840d10b7c",
+    "statement": "Homem transgênero de 25 anos, ainda não submetido à cirurgia de redesignação de gênero, comparece à consulta com queixa de corrimento e prurido genital intenso. Em amenorreia desde o início do uso de testosterona há 6 meses. Ao exame físico cuidadoso, presença de escoriações em vulva, conteúdo vaginal amarelo fluido abundante, hipotrofismo e presença de múltiplas diminutas erosões esparsas, orifício externo do colo puntiforme, pH alcalino. A hipótese diagnóstica mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "vaginose bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tricomoníase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vaginite aeróbia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "vaginose citolítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o diagnóstico diferencial dos corrimentos vaginais em uma população específica: homens transgêneros em uso de testosterona. O uso de testosterona promove um estado de hipoestrogenismo, levando à atrofia (hipotrofismo) da mucosa vaginal, o que altera a microbiota local e o pH vaginal, predispondo a condições inflamatórias.\n\nAnálise das características clínicas apresentadas:\n1. Conteúdo vaginal amarelo fluido abundante.\n2. Sinais de inflamação intensa (prurido, escoriações e erosões).\n3. Hipotrofismo da mucosa (devido ao uso de testosterona).\n4. pH alcalino.\n\nExplicação das alternativas:\n\na) Vaginose bacteriana: Incorreta. Embora a vaginose bacteriana apresente pH alcalino, ela é uma \"vaginose\" e não uma \"vaginite\", o que significa que não há sinais inflamatórios significativos. O conteúdo costuma ser acinzentado, com odor fétido característico, e não costuma causar erosões ou prurido intenso.\n\nb) Tricomoníase: Incorreta. A tricomoníase é uma infecção sexualmente transmissível que causa corrimento amarelo-esverdeado, bolhoso e inflamação. No entanto, o sinal clássico no colo é o aspecto de \"morango\" (colpite focal), diferente das \"múltiplas diminutas erosões esparsas\" e do hipotrofismo marcante descrito, que direcionam o diagnóstico para a vaginite aeróbia em pacientes hipoestrogênicos.\n\nc) Vaginite aeróbia: Correta. Esta condição é caracterizada por uma disbiose na qual os lactobacilos são substituídos por bactérias aeróbias (como E. coli, estreptococos do grupo B e S. aureus). É comum em estados de hipoestrogenismo (como na menopausa ou no uso de testosterona). Os achados típicos incluem corrimento amarelado ou esverdeado, pH bastante elevado (alcalino), sinais inflamatórios exuberantes e, crucialmente, a presença de áreas de erosão e descamação na mucosa vaginal (vaginite descamativa), exatamente como descrito no caso.\n\nd) Vaginose citolítica: Incorreta. Esta condição é o oposto da descrita. Na vaginose citolítica, há um excesso de lactobacilos, o que torna o pH extremamente ácido (geralmente abaixo de 4,5). O conteúdo vaginal é esbranquiçado e grumoso, semelhante ao da candidíase, sem a presença de erosões ou alcalinização do pH.\n\nEm resumo, o quadro de inflamação vaginal com erosões em uma mucosa hipotrófica (pelo uso de testosterona) e pH alcalino é a descrição clássica da vaginite aeróbia.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças de Vulva e Vagina",
+      "Vulvovaginites",
+      "Incongruência de Gênero"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  },
+  {
+    "id": "AJUDA_0eb4d300-ab64-4136-a407-c6a9942aa52f",
+    "originalId": "0eb4d300-ab64-4136-a407-c6a9942aa52f",
+    "statement": "Mulher de 67 anos será submetida à colectomia eletiva por câncer de cólon. É diabética controlada, IMC 31, e sem outras comorbidades. A equipe discute medidas baseadas em evidência para reduzir risco de infecção de sítio cirúrgico (ISC). Considerando as recomendações atuais, qual das condutas abaixo é comprovadamente eficaz para reduzir ISC em cirurgias colorretais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tricotomia no dia anterior da cirurgia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender banho pré-operatório com sabonete comum",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso rotineiro de curativos oclusivos por 72 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Profilaxia antibiótica por 48h no pós-op",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Preparação mecânica do cólon associada a antibiótico oral pré-operatório",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda as medidas de prevenção de Infecção de Sítio Cirúrgico (ISC) baseadas em evidências, especificamente no contexto da cirurgia colorretal. Vamos analisar cada alternativa tecnicamente:\n\nAlternativa A) Incorreta. A tricotomia, quando necessária para facilitar a técnica cirúrgica, deve ser realizada imediatamente antes do procedimento e, preferencialmente, com tricotomizador elétrico. A realização no dia anterior aumenta o risco de ISC, pois cria microabrasões na pele que servem como nicho para colonização bacteriana e desenvolvimento de infecção.\n\nAlternativa B) Incorreta. O banho pré-operatório é uma recomendação padrão. Embora o uso de soluções antissépticas (como clorexidina) seja amplamente discutido, o banho com sabão comum ou antisséptico é preconizado para reduzir a carga bacteriana da pele. Suspender o banho aumentaria os riscos potenciais.\n\nAlternativa C) Incorreta. Não existe evidência de que manter curativos oclusivos por 72 horas reduza a ISC em comparação com períodos menores ou feridas expostas após o fechamento epitelial inicial (geralmente 24 a 48 horas). O manejo da ferida operatória pós-fechamento primário foca mais em higiene e proteção física básica.\n\nAlternativa D) Incorreta. Este é um erro clássico em provas. A profilaxia antibiótica intravenosa deve ser administrada 30 a 60 minutos antes da incisão e, na imensa maioria das cirurgias limpo-contaminadas (incluindo as colorretais), deve ser encerrada imediatamente após o término do procedimento ou, no máximo, em 24h. Manter por 48h não reduz infecção e favorece a resistência bacteriana.\n\nAlternativa E) Correta. Historicamente, o preparo mecânico isolado foi questionado. No entanto, evidências robustas de grandes ensaios clínicos e diretrizes da OMS e da Sociedade Americana de Cirurgiões de Cólon e Reto (ASCRS) demonstram que a combinação do preparo mecânico intestinal (laxantes) com a administração de antibióticos orais não absorvíveis (como Neomicina e Eritromicina/Metronidazol) no dia anterior à cirurgia reduz drasticamente as taxas de ISC e deiscência de anastomose, sendo hoje o padrão-ouro na cirurgia colorretal eletiva.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Proctologia",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  },
+  {
+    "id": "AJUDA_0ec417c2-a700-4520-b84c-ec8a277aeffc",
+    "originalId": "0ec417c2-a700-4520-b84c-ec8a277aeffc",
+    "statement": "Paciente com doença renal crônica por doença renal diabética, estágio G3bA2, apresenta deficiência de ferro. Esta deficiência, nesse paciente, pode ser explicada por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "perda de sangue na hemodiálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "diminuição da absorção de ferro pelo aumento de hepcidina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "aumento da perda renal de ferro por diminuição da reabsorção tubular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "depósito de ferro nos tecidos por sua ligação ao paratormônio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da questão:\nO paciente apresenta doença renal crônica (DRC) no estágio G3bA2. Isso indica uma taxa de filtração glomerular entre 30 e 44 mL/min/1,73 m² (estágio intermediário) e albuminúria moderada. É crucial observar que este paciente está em tratamento conservador e ainda não necessita de terapia renal substitutiva (hemodiálise).\n\nAlternativa a) Incorreta. Embora a perda de sangue no circuito extracorpóreo e as coletas frequentes de exames sejam causas principais de deficiência de ferro em pacientes renais, isso ocorre especificamente nos pacientes em estágio G5D (em diálise). O paciente do enunciado está no estágio G3b, o que exclui a hemodiálise como causa atual da perda de ferro.\n\nAlternativa b) Correta. A doença renal crônica é uma condição inflamatória sistêmica. A inflamação crônica eleva os níveis de citocinas (como a interleucina-6), que estimulam o fígado a produzir hepcidina. A hepcidina é o principal regulador negativo do ferro no organismo: ela se liga à ferroportina (canal de saída de ferro nas células), promovendo sua degradação. Isso resulta em dois mecanismos que levam à deficiência funcional e absoluta de ferro: a redução da absorção intestinal de ferro (bloqueio nos enterócitos) e o sequestro do ferro dentro das células de estoque (macrófagos e hepatócitos).\n\nAlternativa c) Incorreta. O ferro no plasma viaja ligado à transferrina, uma proteína que não é filtrada pelo glomérulo em condições normais devido ao seu tamanho. Mesmo em doenças com proteinúria, a perda renal de ferro não é quantitativamente significativa para explicar a deficiência de ferro na DRC. O problema principal na DRC é a absorção e a mobilização dos estoques, não a excreção urinária.\n\nAlternativa d) Incorreta. O paratormônio (PTH) está frequentemente elevado na DRC devido ao hiperparatireoidismo secundário. Embora níveis muito elevados de PTH possam contribuir para a anemia ao induzir fibrose na medula óssea (osteíte fibrosa cística), não existe um mecanismo de depósito de ferro nos tecidos mediado pela ligação direta ao PTH. O ferro se deposita nos tecidos na forma de ferritina ou hemossiderina, mas isso geralmente ocorre em estados de sobrecarga de ferro, e não como causa de deficiência.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Anemias",
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  },
+  {
+    "id": "AJUDA_0ec58d8d-2a5e-473c-97e7-257df3799357",
+    "originalId": "0ec58d8d-2a5e-473c-97e7-257df3799357",
+    "statement": "Situação-Problema: Mulher, 28 anos de idade, G2P1, 26 semanas de gestação, sem comorbidades prévias. História familiar de diabetes mellitus tipo 2 (pai). Ganho ponderal de 10 kg até o momento. Teste oral de tolerância à glicose (TOTG) 75 g: jejum 94 mg/dL; 1 h: 185 mg/dL; 2 h: 161 mg/dL. Relata alimentação rica em carboidratos simples e rotina sedentária por trabalho administrativo. Ultrassonografia obstétrica às 26 semanas: feto único, crescimento adequado (p60), líquido amniótico normal, doppler normal. Sem cetonúria. Não usa medicamentos. Solicita plano alimentar estruturado.\n\nSegundo as Diretrizes Nacionais da FEBRASGO, os dados clinicos e laboratoriais apresentados por essa paciente são compatíveis com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gestação normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diabetes mellitus gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pré-diabetes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diabetes prévio (diabetes melittus tipo 2).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Teste Oral de Tolerância à Glicose com 75g (TOTG 75g) é o exame padrão-ouro recomendado pela FEBRASGO e pelo Ministério da Saúde para o rastreio e diagnóstico de distúrbios glicêmicos entre 24 e 28 semanas de gestação.\n\nOs pontos de corte definidos pelas diretrizes atuais para o diagnóstico de Diabetes Mellitus Gestacional (DMG) no TOTG 75g são:\n- Glicemia de jejum: entre 92 e 125 mg/dL\n- Glicemia de 1 hora: maior ou igual a 180 mg/dL\n- Glicemia de 2 horas: entre 153 e 199 mg/dL\n\nA presença de apenas um valor igual ou superior a esses limites confirma o diagnóstico de DMG. A paciente do caso apresenta os três valores alterados (jejum de 94 mg/dL, 1h de 185 mg/dL e 2h de 161 mg/dL).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A gestação apresenta alteração no metabolismo dos carboidratos, comprovada pelos valores do TOTG acima do limite da normalidade para o período gestacional.\n\nAlternativa b: Correta. Os valores obtidos no TOTG 75g preenchem com clareza os critérios diagnósticos de Diabetes Mellitus Gestacional, necessitando de intervenção com plano alimentar, atividade física e automonitorização glicêmica.\n\nAlternativa c: Incorreta. A categoria de pré-diabetes não é aplicada durante a gestação. No ciclo gravídico-puerperal, a classificação divide-se em DMG ou Diabetes Mellitus prévio (Overt Diabetes).\n\nAlternativa d: Incorreta. O diagnóstico de Diabetes prévio (ou Overt Diabetes) diagnosticado na gestação requer critérios semelhantes aos de pacientes não grávidas: glicemia de jejum maior ou igual a 126 mg/dL ou glicemia de 2 horas no TOTG maior ou igual a 200 mg/dL. Os resultados da paciente estão elevados para a gravidez, mas abaixo desses limiares.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  },
+  {
+    "id": "AJUDA_0ec6be3c-189b-4e85-9398-5bf40e93c806",
+    "originalId": "0ec6be3c-189b-4e85-9398-5bf40e93c806",
+    "statement": "Em um adulto com alterações cognitivas, como desorientação, déficit de atenção e comprometimento da memória, o diagnóstico diferencial entre demência e deficiência intelectual deve ser estabelecido. \nConsiderando esse contexto, assinale a alternativa que apresenta a principal diferença entre esses dois quadros.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ambas as condições são transtornos do neurodesenvolvimento que afetam pessoas idosas acima de 55 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A deficiência intelectual é progressiva, enquanto a demência apresenta curso estável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A demência é uma condição presente desde o nascimento, enquanto a deficiência intelectual surge após a idade adulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A demência envolve a perda de habilidades previamente adquiridas, enquanto a deficiência intelectual caracteriza-se por limitações no desenvolvimento desde a infância.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para diferenciar demência de deficiência intelectual, o médico deve focar na trajetória temporal do desenvolvimento cognitivo do paciente.\n\nAlternativa a) Incorreta. Apenas a deficiência intelectual é classificada como um transtorno do neurodesenvolvimento. A demência, tecnicamente chamada de Transtorno Neurocognitivo Maior no DSM-5, é um transtorno adquirido. Além disso, a deficiência intelectual deve ser diagnosticada obrigatoriamente durante o período de desenvolvimento (infância ou adolescência), e não após os 55 anos.\n\nAlternativa b) Incorreta. Na verdade, ocorre o oposto na maioria dos casos clínicos. A demência (como na doença de Alzheimer) costuma ter um curso progressivo e degenerativo. Já a deficiência intelectual é considerada uma condição crônica e geralmente estável, sem uma perda contínua de funções, embora o funcionamento adaptativo possa variar conforme o suporte recebido.\n\nAlternativa c) Incorreta. A alternativa inverte os conceitos. A deficiência intelectual é que surge precocemente, durante as fases de maturação do sistema nervoso (nascimento ou infância). A demência é caracterizada por ocorrer após um período de funcionamento cognitivo normal, sendo muito mais frequente na idade adulta tardia e na senescência.\n\nAlternativa d) Correta. Esta alternativa define com precisão a distinção clínica. O diagnóstico de demência exige obrigatoriamente a evidência de um declínio cognitivo em relação a um nível prévio de desempenho. Ou seja, o paciente possuía habilidades (memória, linguagem, função executiva) e as perdeu. Na deficiência intelectual, o indivíduo apresenta limitações tanto no funcionamento intelectual quanto no comportamento adaptativo que se manifestam desde o início do desenvolvimento, o que significa que ele nunca atingiu o patamar cognitivo esperado para sua faixa etária.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Demências"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  },
+  {
+    "id": "AJUDA_0ed3e955-a066-4695-ba5f-df31ddd15d70",
+    "originalId": "0ed3e955-a066-4695-ba5f-df31ddd15d70",
+    "statement": "Qual sintoma mais comum da transição menopausal e pós menopausa inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dispareunia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Osteoporose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Distúrbios do sono",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sintomas vasomotores",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A transição menopausal, também conhecida como perimenopausa, e os primeiros anos da pós-menopausa são caracterizados por intensas flutuações hormonais e pela queda progressiva nos níveis de estrogênio. Os sintomas clássicos e mais prevalentes deste período são os sintomas vasomotores.\n\nAlternativa a) Incorreta. A dispareunia (dor na relação sexual) é um sintoma da síndrome geniturinária da menopausa, causada pela atrofia dos tecidos vaginais devido à falta de estrogênio. Embora muito frequente, ela costuma aparecer de forma mais tardia e progressiva em comparação aos sintomas vasomotores, conforme o tempo de privação hormonal aumenta.\n\nAlternativa b) Incorreta. A osteoporose é uma doença metabólica caracterizada pela diminuição da densidade mineral óssea. Ela é uma complicação crônica e silenciosa da menopausa, e não um sintoma. O diagnóstico costuma ser feito por exames de rastreio (densitometria óssea), pois a condição não gera sintomas até que ocorra uma fratura.\n\nAlternativa c) Incorreta. Os distúrbios do sono são queixas comuns no climatério, podendo estar relacionados a alterações de humor ou mudanças hormonais diretas. Entretanto, na maioria das vezes, a insônia nesta fase é secundária aos fogachos noturnos e à sudorese, que despertam a paciente, não sendo o sintoma primário mais prevalente.\n\nAlternativa d) Correta. Os sintomas vasomotores, representados pelas ondas de calor (fogachos) e sudorese, afetam cerca de 60% a 80% das mulheres durante a transição menopausal e na pós-menopausa inicial. Eles decorrem de uma alteração no centro termorregulador do hipotálamo induzida pela redução dos níveis de estrogênio, sendo as manifestações clínicas mais frequentes e o principal motivo de busca por terapia de reposição hormonal.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  },
+  {
+    "id": "AJUDA_0ed9785d-a9a9-4f22-80b9-1ab00a40c0a7",
+    "originalId": "0ed9785d-a9a9-4f22-80b9-1ab00a40c0a7",
+    "statement": "Considerando as recomendações atuais, conforme Nota Técnica conjunta de 2023 do Ministério da Saúde e Instituto Nacional do Câncer (INCA), bem como princípios da Prevenção Quaternária de sobrediagnóstico e sobretratamento, assinale a alternativa que contenha orientação CORRETA acerca do rastreamento populacional do Câncer de Próstata:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar rastreio de Câncer de Próstata em todas as pessoas com próstata acima dos 45 anos utilizando o PSA e/ou toque retal como estratégias de triagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar toque retal em todas as pessoas com próstata acima de 45 anos durante a campanha do Novembro Azul, para favorecer o acesso às políticas de saúde na Atenção Primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Utilizar o PSA como estratégia eficaz de rastreamento populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não realizar campanhas para convocar homens assintomáticos para a realização de rastreamento com PSA e/ou toque retal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda as diretrizes brasileiras atuais sobre o rastreamento do câncer de próstata, fundamentadas na Nota Técnica de 2023 do Ministério da Saúde e do INCA, além do conceito de Prevenção Quaternária.\n\nAlternativa (a) Incorreta: As recomendações do Ministério da Saúde e do INCA são contrárias ao rastreamento sistemático ou universal, independentemente da idade. Não se orienta a busca ativa de indivíduos assintomáticos para realizar PSA ou toque retal, pois as evidências científicas mostram que o balanço entre benefícios e danos dessa prática é desfavorável.\n\nAlternativa (b) Incorreta: Embora o Novembro Azul seja uma campanha consolidada, as diretrizes técnicas orientam que o foco da campanha deve ser a saúde integral do homem, e não a realização em massa de exames de rastreio. O toque retal indiscriminado em homens assintomáticos aumenta o risco de sobrediagnóstico (identificar tumores que nunca causariam sintomas ou morte) e sobretratamento.\n\nAlternativa (c) Incorreta: O uso do PSA como estratégia de rastreamento populacional não é considerado eficaz pelas autoridades de saúde brasileiras. Estudos demonstram que, embora o PSA possa detectar precocemente o câncer, ele resulta em um alto número de resultados falso-positivos e na detecção de cânceres indolentes, levando a intervenções cirúrgicas e radioterápicas desnecessárias que impactam negativamente a qualidade de vida (como impotência e incontinência urinária).\n\nAlternativa (d) Correta: Esta alternativa reflete exatamente o que preconiza a Nota Técnica de 2023 e os princípios da Prevenção Quaternária. A recomendação é não realizar campanhas de convocação de homens assintomáticos. A orientação atual foca no Diagnóstico Precoce (avaliação de homens que apresentam sinais ou sintomas sugestivos da doença) e na Decisão Compartilhada (quando o paciente solicita o exame, o médico deve explicar os potenciais riscos e benefícios, permitindo que o homem decida se deseja realizar o rastreio oportunista).\n\nEm suma, a Prevenção Quaternária atua aqui para proteger o paciente de intervenções médicas excessivas e danos iatrogênicos decorrentes do rastreamento populacional não fundamentado em evidências de redução de mortalidade.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Urologia",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:14.299Z"
+  }
+]

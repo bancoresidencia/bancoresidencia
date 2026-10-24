@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_f37f2d8f-4ea1-4b80-84e5-1dfc96ef5ef2",
+    "originalId": "f37f2d8f-4ea1-4b80-84e5-1dfc96ef5ef2",
+    "statement": "O médico de família de uma nova UBS precisa organizar os agendamentos das gestantes de baixo risco atendidas por sua equipe. Seguindo a rotina orientada pelo Ministério da Saúde e a última versão da Caderneta da Gestante, o cronograma de consultas recomendado é mensalmente até a",
+    "options": [
+      {
+        "id": "A",
+        "text": "36ª semana e semanalmente a partir da 36ª semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "32ª semana; quinzenalmente da 32ª até a 38ª semana; e semanalmente a partir da 38.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "28ª semana; quinzenalmente da 28ª até a 36ª semana; e semanalmente a partir da 36ª.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "28ª semana; quinzenalmente até a 36ª semana e semanalmente a partir da 36ª semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "32ª semana e quinzenalmente a partir da 32ª semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O acompanhamento pré-natal de baixo risco, conforme as diretrizes do Ministério da Saúde e a Caderneta da Gestante, deve seguir um cronograma de periodicidade crescente. O objetivo é aumentar a vigilância sobre o bem-estar fetal e a saúde materna conforme a gestação se aproxima do termo, período em que aumentam os riscos de intercorrências como síndromes hipertensivas e restrição de crescimento fetal.\n\nO esquema oficial recomendado é:\n- Até a 28ª semana: Consultas mensais.\n- Da 28ª até a 36ª semana: Consultas quinzenais (a cada 15 dias).\n- Da 36ª semana até o parto: Consultas semanais.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O erro está em estender o período de consultas mensais até a 36ª semana. Isso deixaria a gestante sem o acompanhamento quinzenal necessário no início do terceiro trimestre e retardaria a intensificação da vigilância.\n\nAlternativa b: Incorreta. Os marcos temporais apresentados não condizem com a norma técnica. O Ministério da Saúde estabelece a transição para o regime quinzenal na 28ª semana (e não na 32ª) e para o regime semanal na 36ª semana (e não na 38ª).\n\nAlternativa c: Correta. Esta alternativa reflete exatamente a recomendação dos manuais técnicos e da Caderneta da Gestante. A transição do regime mensal para o quinzenal deve ocorrer ao completar 28 semanas, e a transição do quinzenal para o semanal deve ocorrer na 36ª semana.\n\nAlternativa d: Incorreta. Apesar de citar a 28ª e a 36ª semanas, a redação é considerada menos precisa que a da alternativa c em termos de nomenclatura técnica e divisão dos períodos. A alternativa c descreve de forma mais clara os intervalos entre os marcos.\n\nAlternativa e: Incorreta. Sugere a manutenção do regime mensal por tempo excessivo (até a 32ª semana) e falha ao não prever a necessidade de consultas semanais a partir da 36ª semana, o que é essencial para o preparo e monitoramento próximo ao parto.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  },
+  {
+    "id": "AJUDA_f385316d-a511-4afa-af93-1c549f278867",
+    "originalId": "f385316d-a511-4afa-af93-1c549f278867",
+    "statement": "O Trabalho de Parto Prematuro (TPP) é definido como o início de contrações uterinas regulares que resultam em dilatação do colo do útero antes da 37ª semana de gestação. Assim, avalie as proposições: \n\nI. O histórico prévio de parto prematuro é o principal fator de risco para um novo parto prematuro, aumentando em 25% a chance de recorrência, geralmente na mesma idade gestacional. \nII. Infecções do sistema genital e urinário, como bacteriúria assintomática, cistite e pielonefrite, estão associadas a um maior risco de trabalho de parto prematuro. \nIII. A vaginose bacteriana foi relacionada não apenas ao parto prematuro, mas também ao abortamento espontâneo, à rotura prematura de membranas e à corioamnionite.\n\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das proposições:\n\nProposição I: Correta. O antecedente obstétrico de parto prematuro espontâneo é, isoladamente, o fator de risco individual mais importante para a recorrência em uma gestação atual. O risco de repetição varia de 15% a 30% (média de 25%) e existe uma tendência clínica de o novo evento ocorrer em idade gestacional semelhante à do parto anterior.\n\nProposição II: Correta. As infecções urinárias são causas clássicas de gatilho para o trabalho de parto prematuro. A presença de bactérias e a resposta inflamatória do hospedeiro liberam citocinas e prostaglandinas que estimulam a contratilidade uterina. Isso se aplica tanto às infecções sintomáticas (cistite e pielonefrite) quanto à bacteriúria assintomática, que deve ser sempre rastreada e tratada na gestação para evitar essa complicação.\n\nProposição III: Correta. A vaginose bacteriana caracteriza-se por um desequilíbrio da flora vaginal, com redução de lactobacilos e aumento de germes anaeróbios. Essa condição está fortemente associada a desfechos gestacionais negativos. A ascensão desses microrganismos pode causar enfraquecimento das membranas corioamnióticas (levando à rotura prematura), infecção do líquido amniótico (corioamnionite), além de desencadear o trabalho de parto prematuro e perdas gestacionais tardias (abortamento espontâneo do segundo trimestre).\n\nConclusão: Como todas as proposições apresentam informações tecnicamente precisas e amplamente aceitas na literatura obstétrica atual, a alternativa correta é a (d).",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  },
+  {
+    "id": "AJUDA_f38bfcc0-5b55-4b35-8bce-2ad86b0b0f2d",
+    "originalId": "f38bfcc0-5b55-4b35-8bce-2ad86b0b0f2d",
+    "statement": "Paciente 45 anos, portador de marcapasso, refere que apresenta história de febre reumática na infância, informa que nos últimos dias iniciou febre persistente e fadiga, foi então trazido ao pronto atendimento onde foi recebido com o seguinte exame clínico: FC: 140 bpm, FR: 17 irpm, PA: 100x55 mg, Escala de coma de Glasgow 14. Após medidas iniciais foi iniciado terapia antimicrobiana. Posteriormente hemoculturas mostraram crescimento de Staphylococcus aureus em três amostras. Sobre o manejo do paciente, a resposta CORRETA seria:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve ser retirado o marca passo desse paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Deve ser realizado ecocardiograma transtorácico para exclusão de endocardite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em se tratando de um paciente de comunidade pode ser tratada a infecção de corrente sanguínea com Oxacilina até resultado do antibiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paciente deve ser tratado com dez dias de antibiótico a partir da primeira cultura negativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nO ponto central desta questão é o manejo da bacteremia por Staphylococcus aureus em pacientes portadores de dispositivos eletrônicos cardíacos implantáveis (DECI), como o marca-passo.\n\nAlternativa A (Correta): Esta é a conduta preconizada pelas principais diretrizes nacionais e internacionais. O Staphylococcus aureus é um micro-organismo de alta virulência e grande capacidade de formação de biofilme em materiais protéticos. Em pacientes portadores de marca-passo que apresentam hemoculturas positivas para S. aureus, a recomendação é a remoção completa de todo o sistema (gerador e eletrodos), independentemente de haver vegetações visíveis ao ecocardiograma, pois a taxa de recidiva e mortalidade é muito alta se o dispositivo for mantido apenas com antibióticos.\n\nAlternativa B (Incorreta): O ecocardiograma transtorácico tem sensibilidade limitada para identificar vegetações nos cabos de marca-passo devido à interferência acústica do material e à localização dos eletrodos. O exame de escolha para essa avaliação seria o ecocardiograma transesofágico. Além disso, mesmo que o exame de imagem fosse negativo, ele não seria suficiente para \"excluir\" a necessidade de remoção do dispositivo diante de uma bacteremia persistente por S. aureus.\n\nAlternativa C (Incorreta): Na fase empírica do tratamento de uma bacteremia em paciente grave (com sinais de sepse, como taquicardia e hipotensão), deve-se considerar a cobertura para Staphylococcus aureus resistente à meticilina (MRSA). Portanto, o uso inicial de vancomicina ou daptomicina é o mais indicado até que o antibiograma confirme se a bactéria é sensível à oxacilina. O fato de ser uma infecção de origem comunitária não garante a sensibilidade à oxacilina, especialmente em pacientes com dispositivos invasivos.\n\nAlternativa D (Incorreta): O tempo de tratamento para bacteremia por Staphylococcus aureus deve ser de, no mínimo, 14 dias para casos considerados não complicados (contados a partir da primeira hemocultura negativa e após a remoção do foco). Caso seja confirmada endocardite infecciosa ou infecção profunda do dispositivo, o tratamento antibiótico deve ser estendido por 4 a 6 semanas. O período de dez dias mencionado é insuficiente para o tratamento seguro desta condição.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  },
+  {
+    "id": "AJUDA_f38e7995-b5b8-4159-a2a6-5bad881891bf",
+    "originalId": "f38e7995-b5b8-4159-a2a6-5bad881891bf",
+    "statement": "Em relação à trombose venosa profunda, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menos da metade dos pacientes com trombose venosa profunda restrita à panturrilha apresentam sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Devido à sua maior acurácia, a angioressonância magnética substituiu o ecodoppler na pesquisa da trombose venosa profunda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento anticoagulante deve ser mantido por seis meses devido às maiores taxas de recorrência que ocorrem entre o terceiro e o sexto mês após o evento inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A retirada precoce do leito e a manutenção do paciente sentado com membros inferiores pendentes são medidas importantes de profilaxia mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a): CORRETA. A maioria dos episódios de trombose venosa profunda (TVP) restrita às veias da panturrilha (veias distais) é clinicamente silenciosa. Estudos mostram que mais de 50% desses pacientes não apresentam os sintomas clássicos, como dor, edema ou empastamento da panturrilha, o que dificulta o diagnóstico baseado exclusivamente no exame físico.\n\nAlternativa (b): INCORRETA. O ecodoppler venoso (Duplex Scan) permanece como o exame padrão-ouro inicial e de escolha para o diagnóstico da TVP. Ele é preferido por ser um método não invasivo, de baixo custo, amplamente disponível e com alta sensibilidade e especificidade, especialmente em tromboses proximais. A angiorressonância magnética é um exame de exceção, reservado para casos específicos em que o ecodoppler é inconclusivo ou para avaliar tromboses em vasos pélvicos e abdominais.\n\nAlternativa (c): INCORRETA. Para um primeiro episódio de TVP provocado por um fator de risco cirúrgico ou transitório, o tempo de anticoagulação recomendado pelas principais diretrizes (como o CHEST) é de 3 meses, e não 6 meses. Além disso, a afirmação de que a recorrência é maior entre o terceiro e o sexto mês é clinicamente imprecisa; o risco de recorrência é maior nos primeiros meses após o evento inicial se o paciente não estiver adequadamente tratado, ou após a suspensão da anticoagulação em casos de alto risco.\n\nAlternativa (d): INCORRETA. Embora a retirada precoce do leito (deambulação) seja uma medida fundamental na profilaxia da TVP, manter o paciente sentado com os membros inferiores pendentes é contraproducente. Essa posição favorece a estase venosa por gravidade, um dos componentes da Tríade de Virchow, aumentando o risco de formação de trombos. A recomendação correta para profilaxia mecânica envolve a elevação dos membros inferiores acima do nível do coração e a movimentação ativa ou passiva, além do uso de métodos como meias de compressão graduada ou compressão pneumática intermitente.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  },
+  {
+    "id": "AJUDA_f398a75b-2173-4c34-819a-9b7f5ac2cfe9",
+    "originalId": "f398a75b-2173-4c34-819a-9b7f5ac2cfe9",
+    "statement": "Em uma revisão sistemática sobre a efetividade de um novo medicamento para hipertensão, foram incluídos apenas estudos publicados em inglês e que apresentaram resultados positivos. O pesquisador responsável defendeu que o novo medicamento é altamente eficaz com base nos resultados que foram obtidos no estudo. Com base nessa situação hipotética, o viés que pode estar presente nesse estudo, impactando a interpretação dos resultados é o viés de",
+    "options": [
+      {
+        "id": "A",
+        "text": "publicação, pois apenas estudos com resultados positivos e em inglês foram incluídos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "observador, por depender da avaliação dos pacientes sobre o uso do medicamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "memória, pois os participantes podem ter dificuldade em recordar informações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "seleção, pois não foram incluídos estudos com amostras de outros países.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "atrito, por conta da perda de participantes ao longo do estudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Gabarito: Alternativa (a)\n\nA questão aborda os conceitos de epidemiologia clínica aplicados à interpretação de revisões sistemáticas e os tipos de erros sistemáticos (vieses) que podem comprometer a validade dos resultados.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: O viés de publicação ocorre quando a probabilidade de um estudo ser publicado (ou incluído em uma revisão) é influenciada pela direção ou magnitude de seus resultados. Frequentemente, estudos com resultados positivos são mais facilmente publicados e citados do que estudos com resultados negativos ou inconclusivos. Ao restringir a busca apenas a resultados positivos e em língua inglesa (viés de linguagem), o pesquisador gera uma superestimativa da eficácia do medicamento, pois omite dados que poderiam contradizer sua conclusão.\n\nAlternativa (b) Incorreta: O viés do observador ocorre durante a fase de coleta de dados de um estudo primário, quando a expectativa do pesquisador influencia a forma como ele avalia ou registra os desfechos (por exemplo, ao aferir a pressão arterial de forma mais otimista em pacientes que ele sabe que tomaram o remédio). Não se aplica ao processo de seleção de estudos para uma revisão sistemática.\n\nAlternativa (c) Incorreta: O viés de memória (ou de recordação) é comum em estudos de caso-controle, ocorrendo quando os participantes não conseguem se lembrar com precisão de eventos ou exposições passadas. Não tem relação com o critério de inclusão de artigos em uma revisão sistemática.\n\nAlternativa (d) Incorreta: Embora o pesquisador tenha \"selecionado\" estudos, o termo \"viés de seleção\" em epidemiologia refere-se tipicamente a erros na composição da amostra de um estudo original (estudo primário), onde os grupos comparados não são semelhantes entre si. No contexto de revisões sistemáticas que privilegiam resultados favoráveis, o termo técnico correto e específico é viés de publicação.\n\nAlternativa (e) Incorreta: O viés de atrito (ou de perda de seguimento) acontece quando há uma perda significativa e desigual de participantes ao longo de um estudo clínico, o que pode distorcer os resultados finais. O enunciado foca na fase de busca e seleção de evidências para a revisão, e não na perda de pacientes dentro dos estudos selecionados.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  },
+  {
+    "id": "AJUDA_f39f5d30-f626-4b7d-8613-e74424666e76",
+    "originalId": "f39f5d30-f626-4b7d-8613-e74424666e76",
+    "statement": "Mulher 23 anos, solteira, sexo feminino, orientação sexual heterossexual, residente no município A, na zona urbana, centro, sem nenhum tipo de deficiência ou transtorno. Atendida no Hospital de Referência da Regional de Saúde para os casos agudos de violência sexual. A paciente refere ter sofrido violência sexual, sendo que o local de ocorrência foi a via pública e que a violência foi motivada por sexismo, sendo o meio da agressão a ameaça, a força corporal e o espancamento. Refere ter sido estuprada por um homem desconhecido de aproximadamente 45 anos. No atendimento médico realizado, conforme recomendações do Ministério da Saúde/2024, quais são os procedimentos e encaminhamentos corretos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Procedimentos: medidas de contracepção de emergência, profilaxias (com as vacina HPV e vacina hepatite B) e a coleta de material biológico realizada no atendimento. Notificação imediata (até 24h). Encaminhamentos: para Rede de Saúde para a UBS; Rede de atendimento a mulher e Delegacia de atendimento a mulher para fazer o Boletim de ocorrência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Procedimentos: medidas de contracepção de emergência, profilaxias (IST, HIV e hepatite B) e a coleta de material biológico e exame de corpo de delito. Encaminhamentos: para Rede de Saúde para a UBS; Rede de atendimento a mulher e Delegacia de atendimento a mulher para fazer o Boletim de ocorrência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Procedimentos: medidas de contracepção de emergência, profilaxias (IST, HIV e hepatite B) e a coleta de material biológico sejam realizadas oportunamente. Elaboração imediata pelo médico do Boletim de Ocorrência (até 24h). Encaminhamentos: para Rede de Saúde para a UBS; Rede de atendimento a mulher e Delegacia de atendimento a mulher.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Procedimentos: medidas de contracepção de emergência, profilaxias (IST, HIV e hepatite B) e a coleta de material biológico realizada no atendimento. Notificação compulsória imediata (até 24h). Encaminhamentos: para Rede de Saúde para a UBS; Rede de atendimento a mulher e Delegacia de atendimento a mulher com orientação para fazer o Boletim de ocorrência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O atendimento a vítimas de violência sexual baseia-se em protocolos rígidos do Ministério da Saúde para garantir a saúde física, mental e os direitos da paciente. O caso descreve uma mulher atendida em hospital de referência para casos agudos, o que exige ações imediatas.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora cite a vacina contra o HPV (recomendada para vítimas de violência até os 45 anos) e a hepatite B, esta alternativa é incompleta do ponto de vista clínico. Ela omite as profilaxias para o HIV (PEP — Profilaxia Pós-Exposição) e para outras infecções sexualmente transmissíveis (ISTs) não virais, como sífilis, gonorreia e clamídia, que são componentes fundamentais do kit de atendimento de urgência.\n\nAlternativa b) Incorreta. Esta alternativa descreve corretamente as profilaxias médicas, mas peca na parte administrativa e legal. O principal erro é não mencionar a Notificação Compulsória Imediata. Todo caso de violência sexual atendido em serviço de saúde deve ser notificado à autoridade de vigilância epidemiológica em até 24 horas. Além disso, o exame de corpo de delito formal é competência da perícia oficial (IML), embora o prontuário médico bem documentado sirva como prova.\n\nAlternativa c) Incorreta. Apresenta um erro técnico-legal grave: o médico não elabora o Boletim de Ocorrência (BO). O BO é um documento de natureza policial lavrado por uma autoridade policial em uma delegacia. Cabe ao médico apenas o preenchimento da ficha de notificação compulsória, do prontuário e a emissão de relatórios médicos, se solicitados, além de orientar a paciente sobre seus direitos.\n\nAlternativa d) Correta. Esta alternativa está em total consonância com as diretrizes do Ministério da Saúde de 2024. Ela abrange:\n1. Procedimentos Clínicos: Contracepção de emergência (idealmente em até 72 horas para maior eficácia) e as profilaxias completas para HIV, hepatite B e ISTs (geralmente envolvendo penicilina benzatina, azitromicina e ceftriaxona).\n2. Coleta de Material: A coleta de vestígios biológicos (esperma, DNA do agressor) deve ser feita durante o atendimento médico inicial para preservação de provas.\n3. Notificação Compulsória Imediata: Procedimento administrativo obrigatório em casos de violência sexual, que deve ocorrer em até 24 horas após o atendimento.\n4. Encaminhamentos: Garante a integralidade do cuidado através da rede de saúde (UBS para seguimento longitudinal e repetição de exames após 30, 90 e 180 dias), suporte psicossocial (rede de atendimento à mulher) e suporte jurídico (delegacia, com a devida orientação para que a paciente decida sobre a realização do BO).\n\nA alternativa d é a única que reúne os pilares clínico, epidemiológico e legal de forma precisa para um concurso médico.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  },
+  {
+    "id": "AJUDA_f3a7e157-e2b5-4a0e-8ed1-9f84a26a6ce6",
+    "originalId": "f3a7e157-e2b5-4a0e-8ed1-9f84a26a6ce6",
+    "statement": "Paciente de 33 anos com dor pélvica cíclica limitante, associada à dispareunia de profundidade, tentando engravidar há 2 anos sem sucesso. Investigação de infertilidade do parceiro sem alterações. Procurou o ginecologista que solicitou RNM de pelve evidenciando sinais de endometriose profunda em ligamentos útero sacros e fundo de saco posterior, aderências fixas entre útero e ovários na face posterior da pelve (“kissing ovaries”), além de imagens sugestivas de hidrossalpinge bilateralmente. Histerossalpingografia com teste de Cottè negativo. Dosagens hormonais dentro da normalidade, sugerindo manutenção da ovulação. A melhor conduta no caso seria:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estimulação ovariana seguida de punção para captação e congelamento de óvulos, cirurgia para ressecção de focos de endometriose e salpingectomia bilateral, pois assim, além de melhora dos sintomas, aumentaria a chance de sucesso de uma fertilização “in vitro” (FIV).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fertilização “in vitro” (FIV) como medida isolada, visto que as tubas já se encontram obstruídas e a possibilidade de gestação espontânea não existe, não havendo benefício com tratamento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia para tratamento da endometriose com ressecção de todos os focos, drenagem tubária bilateral e tentativa de gestação espontânea posteriormente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Análogo do GnRH seguida de fertilização “in vitro” (FIV) após 3 meses. Dessa forma é possível controle dos sintomas, além de maior taxa de sucesso da FIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Preparo endometrial com estrogênio isolado para aumentar a chance de implantação embrionária, visto que os exames hormonais se encontram sem alterações e a investigação do parceiro não evidenciou sinais de infertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente apresenta um quadro de endometriose profunda com sintomas álgicos importantes (dor pélvica cíclica e dispareunia de profundidade) e infertilidade há 2 anos. Os exames de imagem revelam uma doença avançada, com sinais de aderências graves entre os ovários (kissing ovaries) e hidrossalpinge bilateral, confirmada pela histerossalpingografia com teste de Cotte negativo (obstrução tubária).\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA\n\nEsta conduta é a mais abrangente para o caso por três motivos principais:\n1. Preservação da Reserva Ovariana: A realização da estimulação ovariana e captação de óvulos antes da cirurgia é uma estratégia prudente. A manipulação cirúrgica de ovários com aderências firmes (kissing ovaries) pode reduzir a reserva ovariana da paciente.\n2. Tratamento da Dor: A cirurgia para ressecção de focos de endometriose profunda é o padrão-ouro para o controle dos sintomas álgicos limitantes.\n3. Sucesso da Fertilização in Vitro (FIV): A salpingectomia bilateral (ou oclusão tubária) é recomendada antes da FIV em casos de hidrossalpinge. O conteúdo líquido da tuba dilatada é embriotóxico e possui fluxo retrógrado que prejudica a implantação embrionária, reduzindo as taxas de sucesso da FIV em cerca de 50%.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa B: Realizar a FIV isoladamente ignora o efeito negativo da hidrossalpinge sobre o endométrio e o embrião. Além disso, a conduta não trataria a dor pélvica e a dispareunia, que são queixas centrais da paciente.\n\nAlternativa C: A drenagem tubária apresenta altíssimas taxas de recidiva da hidrossalpinge. Em um contexto de endometriose profunda e aderências severas, a função ciliar e o transporte tubário estão permanentemente comprometidos, tornando a tentativa de gestação espontânea após a cirurgia pouco eficaz em comparação à FIV.\n\nAlternativa D: Embora o análogo do GnRH possa ser utilizado no manejo da endometriose para controle de sintomas e preparo para FIV, ele não substitui a necessidade de tratamento cirúrgico da hidrossalpinge para melhorar o desfecho gestacional.\n\nAlternativa E: O preparo endometrial com estrogênio é uma etapa técnica da transferência de embriões em ciclos de FIV, mas não aborda as causas da infertilidade (fator tubário) nem a doença de base (endometriose profunda).",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Endometriose",
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  },
+  {
+    "id": "AJUDA_f3ae6780-673b-425a-bd14-11a11dced60f",
+    "originalId": "f3ae6780-673b-425a-bd14-11a11dced60f",
+    "statement": "Paciente 14 anos, sexo masculino, levado a emergência por sua mae referindo dor testicular a esquerda. Exame físico difícil pois paciente estava pouco colaborativo, sendo observada a ectoscopia discreto edema de bolsa escrotal. Refere ter jogado bola no dia anterior mas nega história de trauma. A conduta mais acertada para esse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar exames complementares de imagem e urina para avaliar doença neoplásica ou infecção",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever anti-inflamatórios para o tratamento de orquiepididimite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observação do quadro considerando a hipótese de hidátide de Morgani",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "USG com doppler de urgência",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "RNM de bolsa escrotal considerando o risco de hematoma unilateral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro clássico de escroto agudo na adolescência. Diante de dor testicular súbita e edema em um jovem de 14 anos, a torção testicular é a principal hipótese a ser descartada, pois trata-se de uma emergência urológica onde o tempo de isquemia determina a viabilidade do órgão.\n\nAlternativa (a) Incorreta: A pesquisa de neoplasia não é prioridade no pronto-socorro para dor aguda, já que tumores testiculares costumam se manifestar como massas indolores. Já a infecção (orquiepididimite) é menos comum nessa faixa etária sem atividade sexual e o foco inicial deve ser sempre a exclusão de causas isquêmicas.\n\nAlternativa (b) Incorreta: Tratar empiricamente como orquiepididimite com anti-inflamatórios é um erro comum e perigoso. Se houver torção do cordão espermático, o atraso no diagnóstico definitivo causado pela falsa sensação de segurança do tratamento clínico levará à necrose testicular e perda do órgão.\n\nAlternativa (c) Incorreta: A torção da hidátide de Morgagni é um diagnóstico diferencial frequente e mais benigno, mas a conduta de apenas observação só é segura após o examinador ter certeza de que não há torção do testículo. Como o exame físico foi difícil e pouco colaborativo, a observação isolada é uma conduta negligente.\n\nAlternativa (d) Correta: O USG com Doppler de bolsa escrotal é o exame de escolha na emergência para diferenciar a torção testicular (caracterizada pela ausência ou redução acentuada de fluxo ao Doppler) de processos inflamatórios (onde o fluxo costuma estar aumentado). É um exame rápido, acessível e fundamental quando o exame físico é inconclusivo para definir a necessidade de intervenção cirúrgica imediata.\n\nAlternativa (e) Incorreta: A ressonância magnética (RNM) é um exame de alta complexidade, demorado e desnecessário para este cenário. No escroto agudo, a agilidade é essencial e o Doppler é superior em disponibilidade e rapidez. Além disso, o risco de hematoma é mínimo, dado que o paciente negou trauma.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  },
+  {
+    "id": "AJUDA_f3b0779d-4f29-4770-b2b4-bb43f695c8fc",
+    "originalId": "f3b0779d-4f29-4770-b2b4-bb43f695c8fc",
+    "statement": "Paciente de 22 anos procura o atendimento com desejo de usar um DIU de Cobre. Sobre este método contraceptivo é correto afirmar de acordo com o U.S. Medical Eligibility Criteria for Contraceptive Use, 2024:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A endometriose é uma contraindicação absoluta para o seu uso visto que está associada a cólicas menstruais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença de neoplasia intraepitelial cervical contraindica formalmente o método (categoria 4).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paciente com vaginose bacteriana são classificadas como categoria 2 (vantagens geralmente superam os riscos).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pacientes que receberam transplantes de órgãos possuem contraindicação absoluta para o uso do DIU de cobre.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é necessário revisar os Critérios de Elegibilidade Médica para Uso de Contraceptivos (US MEC), atualizados em 2024. Esses critérios classificam as condições clínicas em quatro categorias:\nCategoria 1: Não há restrição ao uso do método.\nCategoria 2: As vantagens geralmente superam os riscos.\nCategoria 3: Os riscos geralmente superam as vantagens.\nCategoria 4: Risco de saúde inaceitável (contraindicação absoluta).\n\nALTERNATIVA A: Incorreta. A endometriose é classificada como categoria 1 para o uso do DIU de cobre. Embora esse método possa estar associado a um aumento do fluxo menstrual e de cólicas em algumas mulheres, ele não agrava a endometriose e não há restrições médicas para sua inserção ou permanência.\n\nALTERNATIVA B: Incorreta. A presença de neoplasia intraepitelial cervical (NIC) é classificada como categoria 1 para o DIU de cobre. Pacientes com rastreio citopatológico alterado ou diagnóstico de NIC podem iniciar ou continuar o uso do método sem riscos adicionais à saúde. A contraindicação (categoria 4) se aplica apenas ao câncer de colo de útero iniciado enquanto a paciente já não estiver em uso do DIU (para início do método).\n\nALTERNATIVA C: Correta. Pacientes com vaginites, o que inclui a vaginose bacteriana e a tricomoníase, são classificadas como categoria 2 para a inserção (início) do DIU de cobre e categoria 1 para a continuação. Isso significa que os benefícios de prover a contracepção superam os riscos teóricos de uma doença inflamatória pélvica ascendente, embora o tratamento da infecção deva ser realizado.\n\nALTERNATIVA D: Incorreta. O transplante de órgãos sólidos não é uma contraindicação absoluta. Para o DIU de cobre, o transplante é classificado como categoria 2 quando não apresenta complicações. Em casos de transplantes complicados (com rejeição, falência do enxerto ou fibrose), a classificação passa para categoria 3 para o início do método, mas nunca categoria 4. Portanto, não há contraindicação absoluta generalizada para esse grupo.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  },
+  {
+    "id": "AJUDA_f3b11220-5ca9-4738-956f-b00dc871a31a",
+    "originalId": "f3b11220-5ca9-4738-956f-b00dc871a31a",
+    "statement": "“Prevenir significa, a grosso modo, agir ou comportar-se no presente para evitar eventos indesejáveis no futuro” (Brasil, 2024). Em relação à prevenção quaternária, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O rastreamento deve ser feito em qualquer faixa etária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É a ação realizada após o adoecimento e seus danos/lesões estarem já instalados, visando reabilitar, ressocializar e evitar complicações deles decorrentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É a ação que visa evitar danos iatrogênicos e medicalização excessiva decorrentes do intervencionismo biomédico, oferecendo alternativas eticamente aceitáveis a esses pacientes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Rastreio é sinônimo de diagnóstico precoce de sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ocorre antes do adoecimento e visa evitá-lo ou atenuá-lo, a vacinação é um exemplo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O conceito de Prevenção Quaternária foi proposto por Marc Jamoulle e está profundamente ligado à Ética Médica e ao princípio da não maleficência (Primum non nocere). O objetivo principal é proteger os pacientes de intervenções médicas desnecessárias e potencialmente danosas.\n\nAnálise das alternativas:\n\nA alternativa (a) está incorreta. O rastreamento não deve ser feito de forma indiscriminada em qualquer faixa etária. Ele faz parte da Prevenção Secundária e deve seguir critérios rigorosos de evidência científica, considerando idade, fatores de risco e a relação custo-benefício, para evitar justamente o excesso de diagnósticos desnecessários.\n\nA alternativa (b) está incorreta. Esta descrição refere-se à Prevenção Terciária. A Prevenção Terciária atua quando a doença já está estabelecida, buscando reduzir as incapacidades, prevenir complicações e promover a reabilitação e a reintegração social do indivíduo.\n\nA alternativa (c) está correta. Esta é a definição clássica de Prevenção Quaternária. Ela consiste na detecção de indivíduos em risco de intervenções excessivas (overmedicalization) ou diagnósticos desnecessários (overdiagnosis). O médico deve agir para proteger o paciente de iatrogenias e oferecer alternativas que respeitem a autonomia e a integridade do indivíduo, priorizando intervenções que realmente tragam benefícios comprovados.\n\nA alternativa (d) está incorreta. Existe uma diferença conceitual importante: o rastreio (screening) é realizado em populações ou indivíduos assintomáticos para detectar precocemente uma doença. O diagnóstico precoce de sintomas refere-se à identificação ágil de uma patologia que já começou a se manifestar clinicamente, o que não se confunde com o conceito de rastreamento.\n\nA alternativa (e) está incorreta. A descrição apresentada refere-se à Prevenção Primária. A Prevenção Primária ocorre no período de pré-patogênese, visando remover causas e fatores de risco de uma doença antes que ela ocorra. A vacinação e o incentivo ao uso de preservativos são exemplos clássicos dessa modalidade.",
+    "exam": "UFRB",
+    "year": 2026,
+    "banca": "UFRB",
+    "uf": "BA",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35674e2a8fdd600c4528186d032722b2534d565f8659f6d532a9977d76ec6035.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2f3a30ed0fd307a6a4fadc82fa84bd78995407514592af81b25948bee1e5d79f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:01.069Z"
+  }
+]

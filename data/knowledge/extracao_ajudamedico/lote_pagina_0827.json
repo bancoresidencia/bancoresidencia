@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_e65eeef1-095b-43a1-b40b-f2f917494488",
+    "originalId": "e65eeef1-095b-43a1-b40b-f2f917494488",
+    "statement": "R.T.B., 31 anos, GIII PII 2C A0, idade gestacional de 32 semanas, tipagem sanguínea (ABO Rh): O negativo, Coombs indireto negativo, deu entrada no PSO com quadro de sangramento vaginal vermelho-vivo, indolor. Ao exame físico e obstétrico: PA 120 x 70 mmHg, FC materna: 88 bpm. Abdome: Tônus uterino normal. Dinâmica uterina ausente. Batimentos cardiofetais de 144 bpm. Especular: colo uterino sem lesões, com moderada quantidade de sangue, coletado em fundo de saco posterior, sem sangramento ativo.\n\nDe acordo com o caso, assinale a alternativa que apresenta a conduta correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cesariana de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sulfato de magnésio dose de ataque e manutenção para neuroproteção fetal e parto cesariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ampicilina dose de ataque e manutenção e parto cesariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Imunoglobulina anti-D, repouso, observação clínica e controle de sangramento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Ampicicilina dose de ataque e manutenção, observação clínica e controle de sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clássico de placenta prévia: sangramento vaginal de cor vermelho-vivo, indolor, de início súbito, em uma gestante no terceiro trimestre (32 semanas). Os achados de exame físico confirmam a estabilidade materna (pressão arterial e frequência cardíaca normais) e a estabilidade fetal (batimentos cardiofetais normais), além da ausência de hipertonia uterina, o que afasta o diagnóstico de descolamento prematuro de placenta (DPP).\n\nUm detalhe fundamental para a conduta é a tipagem sanguínea da paciente: ela é Rh negativo e apresenta Coombs indireto negativo, o que significa que ela não está sensibilizada, mas corre o risco de isoimunização devido ao episódio de sangramento (hemorragia fetomaterna).\n\nCOMENTÁRIOS SOBRE AS ALTERNATIVAS\n\nAlternativa a: Incorreta. A cesariana de emergência é indicada em casos de instabilidade hemodinâmica materna, sofrimento fetal agudo ou sangramento profuso que não cessa, o que não ocorre neste caso. Como a gestação é de apenas 32 semanas e a paciente está estável, a conduta deve ser conservadora para ganhar maturidade fetal.\n\nAlternativa b: Incorreta. O sulfato de magnésio para neuroproteção fetal é indicado quando o parto é iminente ou planejado para ocorrer em breve em gestações abaixo de 32 ou 34 semanas (dependendo do protocolo). No caso em questão, a conduta é conservadora, visando à manutenção da gestação, e não o parto imediato.\n\nAlternativa c: Incorreta. Não há indicação de antibioticoterapia (ampicilina), pois não há sinais de ruptura prematura de membranas ou de processo infeccioso (corioamnionite). Além disso, o parto cesariano imediato é desnecessário diante da estabilidade do quadro.\n\nAlternativa d: Correta. Esta alternativa contempla os três pilares do atendimento para esta paciente. 1) Manejo da placenta prévia: observação clínica, repouso e controle do sangramento são a base da conduta conservadora em gestantes pré-termo e estáveis. 2) Profilaxia da isoimunização Rh: como a paciente é Rh negativo não sensibilizada, qualquer episódio de sangramento na gestação exige a administração de Imunoglobulina anti-D para evitar a formação de anticorpos.\n\nAlternativa e: Incorreta. Embora mencione a observação clínica e o controle do sangramento, a alternativa peca ao indicar o uso de ampicilina sem necessidade clínica e ao ignorar a necessidade vital de administração da Imunoglobulina anti-D para uma gestante Rh negativo com sangramento vaginal.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sagramento da Segunda Metade",
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.443Z"
+  },
+  {
+    "id": "AJUDA_e6698f84-d71d-4ad7-8197-b11e084a8991",
+    "originalId": "e6698f84-d71d-4ad7-8197-b11e084a8991",
+    "statement": "O Sistema de Informações Hospitalares do SUS (SIH/SUS) é um sistema, cujo principal instrumento é a Autorização de Internação Hospitalar (AIH). Sobre esse sistema, é CORRETO afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "é o sistema responsável por registrar os atendimentos de urgência e emergência realizados nas unidades de saúde do país.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sua principal finalidade é o controle e pagamento das internações hospitalares financiadas pelo SUS.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "sua base de dados contém informações detalhadas sobre o histórico médico de todos os usuários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é utilizado pelos hospitais para notificar as doenças e agravos de notificação compulsória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Sistema de Informações Hospitalares do SUS (SIH/SUS) é um dos sistemas de informação em saúde mais antigos e importantes do Brasil, tendo sua origem no antigo sistema de faturamento hospitalar do INAMPS. O seu funcionamento é centrado na Autorização de Internação Hospitalar (AIH), que é o documento que gera os dados para o sistema.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O SIH registra especificamente as internações. Os atendimentos de urgência, emergência e consultas ambulatoriais que não evoluem para uma internação hospitalar são registrados em outro sistema, o SIA/SUS (Sistema de Informações Ambulatoriais).\n\nAlternativa b: Correta. Esta é a finalidade precípua do SIH/SUS. Ele foi concebido como uma ferramenta de gestão financeira e administrativa para permitir o controle, a regulação e o pagamento das internações realizadas em hospitais públicos e privados conveniados ao SUS. Embora hoje seja amplamente utilizado para fins de pesquisa e vigilância epidemiológica, sua função primária permanece ligada ao financiamento e faturamento.\n\nAlternativa c: Incorreta. O SIH armazena informações sobre o diagnóstico que motivou a internação (CID-10), os procedimentos realizados e o desfecho (alta, óbito, transferência). No entanto, ele não é um prontuário eletrônico e não contém o histórico médico detalhado (exames laboratoriais detalhados, evoluções diárias ou histórico ambulatorial) dos usuários.\n\nAlternativa d: Incorreta. O sistema utilizado especificamente para a notificação de doenças, agravos e eventos de saúde pública de notificação compulsória é o SINAN (Sistema de Informação de Agravos de Notificação).\n\nAlternativa e: Incorreta, pois a alternativa b está correta.\n\nEm resumo, o SIH/SUS é o sistema que operacionaliza o processamento das AIHs, servindo como base para o pagamento da produção hospitalar e fornecendo dados valiosos sobre a morbidade hospitalar no país.\n\nGabarito: Alternativa b.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.443Z"
+  },
+  {
+    "id": "AJUDA_e67162ec-0eda-42df-8e0d-1824c0dd2561",
+    "originalId": "e67162ec-0eda-42df-8e0d-1824c0dd2561",
+    "statement": "No que consiste a tríade letal do trauma?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotermia, acidemia e hipercoagulabilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipertermia, hipoxemia e hemorragia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipotermia, acidemia e coagulopatia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipotermia, hipoxemia e coagulopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A tríade letal do trauma é um conceito fisiopatológico fundamental no atendimento ao paciente politraumatizado grave. Ela descreve um ciclo vicioso de deterioração clínica que, se não for interrompido precocemente, leva invariavelmente ao óbito. Os três componentes são interdependentes: a acidose e a hipotermia prejudicam a ação dos fatores de coagulação, enquanto a coagulopatia agrava o sangramento, piorando o choque, a acidose e a hipotermia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a hipotermia e a acidemia (acidose) façam parte da tríade, o terceiro componente é a coagulopatia. A hipercoagulabilidade é o oposto do que ocorre no trauma agudo grave, onde há uma falha no sistema de coagulação por consumo de fatores, diluição e disfunção enzimática.\n\nAlternativa b) Incorreta. O paciente traumatizado tende a evoluir com hipotermia (redução da temperatura corporal central) devido à perda de sangue, exposição ao ambiente e administração de fluidos frios, e não hipertermia. Hipoxemia e hemorragia são condições frequentes no trauma, mas não são os componentes que definem a tríade.\n\nAlternativa c) Correta. Esta alternativa lista os três pilares clássicos:\n1. Hipotermia: Define-se geralmente como a temperatura central abaixo de 35 graus Celsius. Ela inibe a cascata de coagulação e a função plaquetária.\n2. Acidemia (Acidose Metabólica): Decorre da hipoperfusão tecidual (choque), que obriga as células a realizarem metabolismo anaeróbio, gerando ácido lático. O pH baixo inibe as enzimas da coagulação e prejudica a contratilidade miocárdica.\n3. Coagulopatia: Caracteriza-se pela incapacidade de formar coágulos estáveis, sendo agravada pelos dois fatores anteriores e pela depleção de fatores de coagulação no sangramento ativo.\n\nAlternativa d) Incorreta. A hipotermia e a coagulopatia estão corretas, mas a hipoxemia não faz parte da definição da tríade letal. O componente que completa o grupo é a acidemia.\n\nAtualmente, alguns autores já discutem o Diamante Letal, incluindo a hipocalcemia como um quarto fator crítico, mas para fins de prova, a tríade letal permanece sendo composta por hipotermia, acidemia e coagulopatia.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.443Z"
+  },
+  {
+    "id": "AJUDA_e683a1e7-9c2d-42c1-b99c-21921c29fff5",
+    "originalId": "e683a1e7-9c2d-42c1-b99c-21921c29fff5",
+    "statement": "Adolescente, sexo feminino, após tentativa de suicídio com ingestão de comprimidos de antidepressivo tricíclico, apresentou parada cardiorrespiratória na sala de emergência. Durante a reanimação cardiopulmonar, observou-se o seguinte ritmo no monitor cardíaco:\n\nAssinale a alternativa que apresenta o diagnóstico correto da situação e a conduta relacionada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Taquicardia supraventricular, que será tratada com choque (no modo não sincronizado)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fibrilação ventricular, que será tratada com cardioversão (choque no modo sincronizado).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fibrilação ventricular, que será tratada com desfibrilação (choque no modo sincronizado).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Taquicardia ventricular, que será tratada com cardioversão (choque no modo sincronizado).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Taquicardia ventricular, que será tratada com adrenalina e, após, com desfibrilação (choque no modo não sincronizado).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da questão:\n\nO caso clínico descreve uma adolescente com intoxicação por antidepressivos tricíclicos (que são bloqueadores dos canais de sódio, causando alargamento do QRS e predisposição a arritmias ventriculares) em quadro de parada cardiorrespiratória (PCR). O eletrocardiograma (ECG) apresentado mostra um ritmo de complexos QRS largos, morfologia idêntica entre si (monomórfica) e extrema regularidade, com frequência cardíaca elevada.\n\nDiagnóstico Eletrocardiográfico: Taquicardia Ventricular (TV) Monomórfica.\n\nExplicação das alternativas:\n\na) Incorreta. A Taquicardia Supraventricular (TSV) geralmente se apresenta com complexo QRS estreito (inferior a 0,12 s). Na imagem, observamos claramente um QRS largo. Além disso, o tratamento da TSV instável seria a cardioversão sincronizada, e não o choque não sincronizado.\n\nb) Incorreta. A Fibrilação Ventricular (FV) é um ritmo caótico, totalmente irregular e desorganizado, no qual não se consegue distinguir complexos QRS, ondas P ou T. A imagem mostra um ritmo organizado e regular. Além disso, a FV é tratada obrigatoriamente com desfibrilação (choque não sincronizado), pois não há onda R para o aparelho sincronizar.\n\nc) Incorreta. Como mencionado acima, o ritmo não é de Fibrilação Ventricular. Adicionalmente, a alternativa apresenta uma contradição técnica: a desfibrilação é, por definição, um choque não sincronizado.\n\nd) Correta (conforme gabarito oficial). A imagem é compatível com Taquicardia Ventricular. Embora o enunciado cite \"parada cardiorrespiratória\" (o que tecnicamente exigiria desfibrilação/choque não sincronizado, por ser uma TV sem pulso), a alternativa foca no reconhecimento do ritmo de TV e na conduta clássica para ritmos organizados e instáveis. Em provas de residência, o reconhecimento da Taquicardia Ventricular monomórfica associado à cardioversão sincronizada é um binômio frequentemente cobrado, apesar da imprecisão terminológica entre \"PCR\" e \"instabilidade grave\" no enunciado.\n\ne) Incorreta. Embora identifique corretamente a Taquicardia Ventricular, a sequência de conduta está errada. No protocolo de PCR (ACLS/PALS) para ritmos chocáveis (TV sem pulso ou FV), a prioridade absoluta é a desfibrilação imediata. A adrenalina só é administrada após o segundo choque, caso o ritmo persista. Jamais se deve protelar o choque para administrar medicação em um ritmo chocável.\n\nResumo Didático:\nO ECG mostra uma Taquicardia Ventricular Monomórfica (ritmo regular, QRS largo e frequente em intoxicações por tricíclicos). O tratamento de escolha para TV monomórfica com pulso, porém instável, é a cardioversão elétrica sincronizada. Na PCR (TV sem pulso), utiliza-se a desfibrilação (não sincronizada). A alternativa D é a que melhor correlaciona diagnóstico e terapêutica elétrica dentro das opções oferecidas.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias",
+      "Intoxicações Exógenas",
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/bf94606a73f96ce7e3c701d9c9ff6a99eeaa7bd34a8600d1b13cab7bf0bfba57.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e683a1e7-9c2d-42c1-b99c-21921c29fff5_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.946Z"
+  },
+  {
+    "id": "AJUDA_e684b630-9dec-4f7e-bd25-f63390209864",
+    "originalId": "e684b630-9dec-4f7e-bd25-f63390209864",
+    "statement": "Paciente masculino, de 37 anos, veio à consulta na UBS por apresentar descamação no couro cabeludo de limites imprecisos, lesões descamativas na região do supercílio, na glabela, nos sulcos paranasais e mentoniano e nas regiões retroauriculares. Relatou que as lesões eram recorrentes e melhoravam no verão. Nunca fizera tratamento. Qual dos esquemas de tratamento abaixo é o mais apropriado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Creme e xampu de cetoconazol a 2%, por 4 semanas, na face e no couro cabeludo respectivamente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Itraconazol por via oral (200 mg/dia), por 7 dias, seguido de itraconazol por via oral (200 mg/dia), por 2 dias, no início de cada mês, por 3 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Isotretinoína (10 mg), por via oral, a cada 2 dias, por 3 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Xampu de cetoconazol a 2% por 4 semanas e dipropionato de betametasona (0,5 mg/g) + ácido salicílico tópico na face por 1 semana",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO:\nO quadro clínico descrito, com descamação e eritema em áreas ricas em glândulas sebáceas (couro cabeludo, supercílio, glabela, sulcos nasogenianos e região retroauricular), associado à melhora no verão e recorrência, é clássico de dermatite seborreica. Trata-se de uma condição inflamatória crônica, relacionada à presença do fungo Malassezia spp. e à produção de sebo.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (CORRETA): O tratamento de primeira linha para dermatite seborreica leve a moderada envolve o uso de antifúngicos tópicos, como o cetoconazol a 2%. O xampu é indicado para o tratamento do couro cabeludo, enquanto o creme é utilizado para as lesões faciais. O período de 4 semanas é o tempo padrão para o controle da fase aguda e redução da colonização fúngica e inflamação local.\n\nAlternativa B (INCORRETA): O itraconazol por via oral é uma opção terapêutica, porém é reservada para casos extensos, graves ou refratários ao tratamento tópico. Como o paciente nunca realizou tratamento anteriormente e apresenta um quadro localizado, a via oral não deve ser a conduta inicial.\n\nAlternativa C (INCORRETA): A isotretinoína oral em baixas doses pode ser considerada em casos de dermatite seborreica muito grave ou recalcitrante, pois reduz a produção sebácea. No entanto, devido ao perfil de efeitos colaterais e à necessidade de monitorização, não é uma escolha apropriada para um paciente que inicia o tratamento agora.\n\nAlternativa D (INCORRETA): Embora o xampu de cetoconazol esteja correto para o couro cabeludo, a combinação de dipropionato de betametasona com ácido salicílico é inadequada para a face. A betametasona é um corticoide de alta potência, cujo uso facial pode provocar efeitos adversos graves, como atrofia cutânea, telangiectasias e dermatite perioral. Além disso, o ácido salicílico é um queratolítico que pode ser excessivamente irritante para a pele da face na dermatite seborreica. Quando se opta por corticoides na face, devem ser utilizados os de baixa potência e por curtos períodos.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Dermatoses Eczematosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.946Z"
+  },
+  {
+    "id": "AJUDA_e69cd81d-8f83-4680-9771-41e7af4a144c",
+    "originalId": "e69cd81d-8f83-4680-9771-41e7af4a144c",
+    "statement": "Criança, resgatada de enchente, apresenta febre, mialgia em panturrilhas, conjuntivite não purulenta e icterícia progressiva. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Leptospirose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Malária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hepatite A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Febre tifoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Febre maculosa brasileira.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico que correlaciona história epidemiológica, sintomas sistêmicos e sinais físicos específicos. A associação de exposição a enchentes com a tríade de febre, icterícia e dor em panturrilhas é o ponto-chave para o raciocínio clínico.\n\nAlternativa (a) Correta: Leptospirose. Esta é a principal hipótese diagnóstica diante de um paciente com exposição a águas de inundação ou lama, onde há contato com a urina de roedores infectados pela bactéria Leptospira. O quadro descrito é típico da forma ictero-hemorrágica (Síndrome de Weil), caracterizada por: 1. Icterícia progressiva (frequentemente de tom rubínico/alaranjado); 2. Sufusão conjuntival (conjuntivite não purulenta, sinal muito sugestivo); e 3. Mialgia intensa, com predileção marcante pelas panturrilhas.\n\nAlternativa (b) Incorreta: Malária. Embora a malária cause febre e icterícia (devido à hemólise), ela costuma cursar com paroxismos febris, calafrios e esplenomegalia. A mialgia em panturrilhas e a sufusão conjuntival não são achados característicos, e a epidemiologia clássica envolve a picada do mosquito Anopheles em áreas endêmicas, não necessariamente o contexto de enchentes urbanas.\n\nAlternativa (c) Incorreta: Hepatite A. É uma doença de transmissão fecal-oral que pode aumentar em situações de saneamento precário, causando febre e icterícia. Contudo, a hepatite viral não justifica a sufusão conjuntival nem a mialgia intensa e específica nas panturrilhas, que são sinais patognomônicos da leptospirose nesse contexto.\n\nAlternativa (d) Incorreta: Febre tifoide. O quadro de febre tifoide geralmente apresenta febre prolongada, dor abdominal, dissociação pulso-temperatura (sinal de Faget), hepatoesplenomegalia e roséolas tíficas. A icterícia e a mialgia de panturrilha não são componentes típicos dessa patologia.\n\nAlternativa (e) Incorreta: Febre maculosa brasileira. Esta doença é transmitida pela picada do carrapato-estrela, com epidemiologia ligada a áreas rurais ou parques com presença de capivaras ou cavalos. O sinal característico é o exantema maculopapular que evolui para petéquias, iniciando-se nas extremidades (punhos e tornozelos), o que difere do quadro de icterícia progressiva e sufusão conjuntival após enchente.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Leptospirose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.946Z"
+  },
+  {
+    "id": "AJUDA_e69e4745-87d3-4b6c-87d3-1676c0daeac3",
+    "originalId": "e69e4745-87d3-4b6c-87d3-1676c0daeac3",
+    "statement": "Mulher de 21 anos comparece à consulta médica em Unidade Básica de Saúde (UBS) para avaliação de amenorreia há 4 meses, sendo descartada gravidez. Paciente relata que há 10 meses iniciou dieta para perder peso, tendo emagrecido nesse período aproximadamente 30 quilos. Há 2 dias relata desmaio durante prática de exercício físico e, por isso, realizou eletrocardiograma (ECG) que indicou alterações no segmento ST e na onda T. Paciente nega histórico de diagnóstico de transtorno mental, mora sozinha e sua família é de outra cidade. Afirma manter o padrão alimentar, pois ainda quer perder peso. Ao exame físico, apresenta palidez de mucosa e turgor cutâneo diminuído. Altura = 1 metro e 63 centímetros; peso = 39 quilogramas (IMC = 14,7 quilogramas por metro quadrado); pressão arterial = 80 por 60 milímetros de mercúrio; frequência cardíaca = 55 batimentos por minuto e frequência respiratória = 15 incursões respiratórias por minuto.\nQual é a conduta adequada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar internação em enfermaria de clínica médica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para internação em enfermaria de saúde mental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Continuar a investigação para causas da amenorreia na UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acompanhar em ambulatório do Centro de Atenção Psicossocial (CAPs).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo clínico de uma paciente com quadro clássico de anorexia nervosa e sinais de instabilidade clínica grave.\n\nO diagnóstico de anorexia nervosa é sugerido pela perda ponderal acentuada (30 kg em 10 meses), IMC muito baixo (14,7 kg/m²), amenorreia secundária e distorção da imagem corporal ou desejo persistente de perder peso, mesmo em estado de desnutrição grave.\n\nA decisão pela internação imediata baseia-se nos seguintes critérios de gravidade apresentados pela paciente:\n1. Instabilidade hemodinâmica: hipotensão arterial (80/60 mmHg) e bradicardia (55 bpm).\n2. Complicações cardíacas: relato de síncope (desmaio) e alterações no ECG (segmento ST e onda T), que sugerem distúrbios eletrolíticos (como hipocalemia) ou atrofia miocárdica.\n3. Desnutrição grave: IMC inferior a 15 kg/m².\n4. Fator social: a paciente mora sozinha e não possui rede de apoio local, o que dificulta o acompanhamento ambulatorial seguro.\n\nAnálise das alternativas:\n\na) Correta. A paciente apresenta critérios de urgência clínica. A internação em enfermaria de clínica médica é a prioridade para estabilização hemodinâmica, correção de distúrbios hidroeletrolíticos, monitorização cardíaca e início cauteloso da realimentação (para evitar a síndrome de realimentação). O tratamento psiquiátrico deve ocorrer de forma conjunta, mas o risco de morte imediata é de origem clínica/cardiológica.\n\nb) Incorreta. Embora a base da doença seja um transtorno mental, as enfermarias de saúde mental geralmente não possuem estrutura para monitorização cardíaca contínua ou suporte clínico intensivo necessários para tratar uma hipotensão sintomática e alterações eletrocardiográficas graves. A estabilização clínica deve preceder ou ocorrer simultaneamente em ambiente clínico.\n\nc) Incorreta. A causa da amenorreia é evidente (hipogonadismo hipogonadotrófico funcional devido à desnutrição severa). Retardar a internação para realizar a propedêutica da amenorreia em nível primário coloca a vida da paciente em risco, dada a instabilidade cardiovascular.\n\nd) Incorreta. O acompanhamento em regime ambulatorial (CAPS ou ambulatórios especializados) é indicado para pacientes estáveis. No caso em questão, a gravidade da desnutrição e os sinais vitais alterados contraindicam o tratamento puramente ambulatorial neste momento.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Transtornos Alimentares"
+    ],
+    "difficulty": 86.9967546971209,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.946Z"
+  },
+  {
+    "id": "AJUDA_e69fb871-227c-4db7-a58c-28609dde7867",
+    "originalId": "e69fb871-227c-4db7-a58c-28609dde7867",
+    "statement": "De acordo com o Guia de Vigilância em Saúde do Ministério da Saúde do Brasil, pacientes que apresentem exantema maculopapular pruriginoso acompanhado de um ou mais dos seguintes sinais e sintomas: febre; hiperemia conjuntival/conjuntivite não purulenta; artralgia/poliartralgia; edema periarticular, enquadram-se nos critérios de definição de caso suspeito de",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zika.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Dengue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Chikungunya.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rubéola.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão exige o conhecimento das definições de casos suspeitos das arboviroses e doenças exantemáticas conforme o Guia de Vigilância em Saúde do Ministério da Saúde do Brasil.\n\nAlternativa (a) Correta: O quadro descrito é a definição exata de caso suspeito de Zika Vírus. Segundo o guia, deve-se suspeitar de Zika em pacientes que apresentem o exantema maculopapular pruriginoso (sinal cardinal) acompanhado de pelo menos um dos seguintes sinais: febre (geralmente baixa ou ausente), hiperemia conjuntival não purulenta, artralgia/poliartralgia ou edema periarticular. O prurido intenso e a conjuntivite sem secreção são diferenciais clínicos fundamentais da Zika em relação às outras arboviroses.\n\nAlternativa (b) Incorreta: A definição de caso suspeito de Dengue exige a presença de febre, geralmente de início abrupto e com duração de 2 a 7 dias, associada a pelo menos dois outros sinais ou sintomas, como cefaleia, dor retro-orbitária, mialgia, artralgia, prostração ou exantema. Diferente da Zika, na Dengue a febre é o elemento central da suspeita e o exantema não costuma ser o sintoma inicial ou obrigatório para a definição de caso.\n\nAlternativa (c) Incorreta: Para Chikungunya, o critério de definição de caso suspeito foca na febre de início súbito (acima de 38,5 graus) e na artralgia ou artrite intensa de início agudo, que costuma ser incapacitante e simétrica. Embora o exantema possa ocorrer em cerca de metade dos casos, ele não é o componente principal da definição de suspeita, que é dominada pela dor articular severa.\n\nAlternativa (d) Incorreta: A Rubéola é caracterizada por um exantema maculopapular cefalocaudal acompanhado de febre baixa e, obrigatoriamente, linfadenopatia retroauricular, occipital ou cervical posterior. A presença de edema periarticular e hiperemia conjuntival não purulenta são características que direcionam o raciocínio clínico especificamente para as arboviroses, especialmente a Zika, e não para a Rubéola.\n\nConclusão: O conjunto de exantema maculopapular pruriginoso associado à conjuntivite não purulenta e envolvimento articular leve/moderado define, epidemiologicamente, o caso suspeito de Zika.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.946Z"
+  },
+  {
+    "id": "AJUDA_e6a04803-ca1d-4cb2-9fac-cd8fccb8019f",
+    "originalId": "e6a04803-ca1d-4cb2-9fac-cd8fccb8019f",
+    "statement": "Mulher de 32 anos, previamente hígida, se encontra internada em decorrência de dor abdominal, icterícia, disartria e distonia. Apresenta, ainda, distúrbio do sono e humor deprimido. Nega etilismo, tabagismo e uso de drogas ilícitas. Ao exame físico, se encontra hipocorada (2+/4+), ictérica (2+/4+) e com hepatoesplenomegalia, estando disártrica e com tremor de \"bater asas\". Laboratorialmente, observa-se hemoglobina de 8 g/dL, VCM de 88 fL, CHCM 32 g/dL, reticulócitos de 9%, ALT de 140 UI/L, AST de 420 UI/L e 120.000 plaquetas/mm³. Ultrassonografia de abdome confirma a presença de hepatoesplenomegalia. É realizada avaliação oftalmológica com exame de lâmpada de fenda que revela achado compatível com anéis de Kayser-Fleischer. \nDiante do exposto, a respeito do diagnóstico provável, infere-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "nesses pacientes, classicamente, há o aumento de ceruloplasmina sérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "espera-se encontrar aumento de fosfatase alcalina, devido à clássica estenose de vias biliares associada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "é comum tais pacientes apresentarem anemia hemolítica não-autoimune intermitente, ou seja, com teste de Coombs direto negativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "pacientes com tal doença podem até ser assintomáticos, porém nunca apresentam manifestações neuropsiquiátricas isoladas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO\nO quadro clínico descrito — paciente jovem com sinais de acometimento hepático (icterícia, hepatoesplenomegalia), alterações neurológicas (disartria, distonia, tremor de \"bater asas\" ou wing-beating tremor) e psiquiátricas (distúrbio do sono e humor deprimido) — é característico da Doença de Wilson (degeneração hepatolenticular). A presença dos anéis de Kayser-Fleischer no exame de lâmpada de fenda confirma o diagnóstico. A doença é causada por uma mutação no gene ATP7B, resultando no acúmulo patológico de cobre em diversos órgãos, principalmente fígado e cérebro.\n\nALTERNATIVA A (INCORRETA)\nNa Doença de Wilson, ocorre uma deficiência na incorporação do cobre à apoceruloplasmina para formar a ceruloplasmina, além de uma falha na sua excreção biliar. Por isso, o achado laboratorial clássico é a redução dos níveis séricos de ceruloplasmina (geralmente abaixo de 20 mg/dL), e não o seu aumento.\n\nALTERNATIVA B (INCORRETA)\nNão existe associação entre a Doença de Wilson e estenose de vias biliares. Um detalhe laboratorial importante é que, nos casos de insuficiência hepática aguda por Wilson, a fosfatase alcalina costuma estar baixa ou apresentar uma relação Fosfatase Alcalina/Bilirrubina Total menor que 4, o que ajuda a diferenciar de outras causas de hepatite aguda.\n\nALTERNATIVA C (CORRETA)\nA anemia hemolítica não autoimune (com teste de Coombs direto negativo) é uma manifestação bem descrita na Doença de Wilson. Ela ocorre devido à liberação maciça de cobre livre na corrente sanguínea, geralmente após necrose hepatocitária aguda. O cobre em excesso causa dano oxidativo direto às membranas das hemácias, levando à hemólise. Na questão, a anemia (Hb 8 g/dL) com reticulócitos elevados (9%) corrobora esse processo hemolítico.\n\nALTERNATIVA D (INCORRETA)\nAs manifestações da Doença de Wilson podem ser muito variadas. É perfeitamente possível que o paciente apresente manifestações neuropsiquiátricas isoladas por anos antes de desenvolver sintomas hepáticos evidentes. Em muitos casos, o diagnóstico é retardado porque os sintomas são confundidos com doenças psiquiátricas primárias ou distúrbios do movimento de outras etiologias.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Anemias",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.946Z"
+  },
+  {
+    "id": "AJUDA_e6a38692-29a1-4460-9528-ed1d837ee665",
+    "originalId": "e6a38692-29a1-4460-9528-ed1d837ee665",
+    "statement": "Qual dos seguintes métodos pode ser utilizado como contracepção de emergência?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Etonogestrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Medroxiprogesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DIU de cobre.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Etinilestradiol + Ciproterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A contracepção de emergência (CE) é uma medida de exceção que visa prevenir a gravidez após uma relação sexual desprotegida, falha do método contraceptivo em uso ou em casos de violência sexual. Os métodos reconhecidos para esse fim incluem o levonorgestrel (progestagênio isolado), o acetato de ulipristal (modulador seletivo do receptor de progesterona), o Método de Yuzpe (combinação de etinilestradiol e levonorgestrel) e o DIU de cobre.\n\nAlternativa a) Incorreta. O etonogestrel é um progestagênio de terceira geração utilizado em métodos contraceptivos de rotina, como o implante subdérmico e o anel vaginal. Ele não possui indicação, dosagem ou farmacocinética adequadas para o uso como contracepção de emergência.\n\nAlternativa b) Incorreta. A medroxiprogesterona, especificamente o acetato de medroxiprogesterona, é utilizada como anticoncepcional injetável de aplicação trimestral. Trata-se de um método de depósito com liberação lenta, não servindo para a necessidade de ação imediata requerida na contracepção de emergência.\n\nAlternativa c) Correta. O DIU de cobre é o método de contracepção de emergência mais eficaz disponível, com taxa de falha de aproximadamente 0,1%. Ele pode ser inserido em até 5 dias após o coito desprotegido (algumas diretrizes estendem esse prazo para até 7 dias se a ovulação puder ser estimada). O cobre causa uma reação inflamatória endometrial e possui efeitos citotóxicos para os gametas, impedindo a fertilização. Além da eficácia superior aos métodos hormonais, ele oferece a vantagem de prover contracepção contínua e reversível de longa duração após a sua inserção.\n\nAlternativa d) Incorreta. A combinação de etinilestradiol e ciproterona é um anticoncepcional oral combinado (AOC) comum, frequentemente prescrito por seus benefícios antiandrogênicos (tratamento de acne e hirsutismo). Embora o Método de Yuzpe utilize AOCs para emergência, ele exige especificamente a combinação de etinilestradiol com levonorgestrel em altas doses. Não há protocolos que utilizem a ciproterona para esta finalidade.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:04.946Z"
+  }
+]

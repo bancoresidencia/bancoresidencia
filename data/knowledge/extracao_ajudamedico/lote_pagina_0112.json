@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_1e3aeff1-8aac-4e05-b78e-ff2e78e42392",
+    "originalId": "1e3aeff1-8aac-4e05-b78e-ff2e78e42392",
+    "statement": "Assinale a alternativa que completa corretamente as lacunas abaixo.\n\nEntende-se sentença por valor preditivo positivo a probabilidade de um indivíduo avaliado e resultado __________ ser realmente __________.",
+    "options": [
+      {
+        "id": "A",
+        "text": "positivo / doente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "negativo / normal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "positivo / normal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "negativo / doente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "indefinido / doente",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender os testes diagnósticos, é fundamental diferenciar as características intrínsecas do teste das probabilidades aplicadas ao paciente no dia a dia. Enquanto a sensibilidade e a especificidade avaliam o desempenho do teste em relação a um estado de saúde já conhecido, os valores preditivos fazem o caminho inverso, que é o raciocínio utilizado na prática clínica após o recebimento de um exame.\n\nO Valor Preditivo Positivo (VPP) responde à seguinte pergunta: Diante de um resultado positivo, qual a chance de o paciente realmente ter a doença? Por isso, ele analisa o grupo de pessoas que tiveram resultado positivo e determina a proporção daqueles que são verdadeiramente doentes.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Preenche perfeitamente a definição. O Valor Preditivo Positivo é a probabilidade de um indivíduo com resultado POSITIVO ser realmente DOENTE.\n\nAlternativa b) Incorreta. Esta alternativa descreve o Valor Preditivo Negativo (VPN). O VPN é a probabilidade de um indivíduo com resultado negativo ser realmente saudável (normal/sem a doença).\n\nAlternativa c) Incorreta. Um indivíduo com resultado positivo que é normal (saudável) é considerado um falso positivo. O VPP busca a probabilidade do acerto (doente), e não do erro do teste.\n\nAlternativa d) Incorreta. Um indivíduo com resultado negativo que é doente é considerado um falso negativo. Isso representa uma falha do teste em detectar a patologia, não definindo o valor preditivo positivo.\n\nAlternativa e) Incorreta. A estatística epidemiológica clássica para cálculos de valores preditivos utiliza resultados binários (positivo ou negativo). O termo indefinido não compõe a definição de VPP.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  },
+  {
+    "id": "AJUDA_1e3e533a-822e-4079-8dc1-fdba07c94db4",
+    "originalId": "1e3e533a-822e-4079-8dc1-fdba07c94db4",
+    "statement": "Paciente feminino, 26 anos, história de acidente automobilistico na rodovia em alta velocidade com colisão frontal. Apresenta marca do cinto de segurança em abdome, queixando-se de dor abdominal. O exame físico demonstra dor à palpação profunda de mesogástrio, sem sinais de irritação peritoneal. Hemodinamicamente normal, com PA = 110X70mmHg, FC = 96 bpm, FR = 18 ipm e saturação de O₂ 97% em ar ambiente. A tomografia abdominal evidenciou uma lesão esplénica Grau IV, com escape de contraste em ramo polar inferior do baço, com moderada quantidade de líquido livre em cavidade peritoneal. Diante do achado tomográfico e do exame físico, qual a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia exploradora com esplenectomia total",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Videolaparoscopia exploradora com esplenectomia total",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Arteriografia com embolização de ramo de artéria esplénica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tratamento expectante com exame físico seríado em Unidade de Terapia Intensiva",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo do trauma abdominal fechado com lesão esplênica, um tema recorrente em provas de residência. Para definir a conduta correta, devemos analisar três pilares: estabilidade hemodinâmica, presença de irritação peritoneal e achados tomográficos.\n\nAnálise do caso clínico:\nA paciente está hemodinamicamente estável (PA 110x70 mmHg e FC 96 bpm) e não apresenta sinais de irritação peritoneal ao exame físico. No trauma abdominal fechado, a estabilidade hemodinâmica é o principal critério para indicar o tratamento não operatório (TNO). Contudo, a tomografia computadorizada (TC) revelou uma lesão de alto grau (Grau IV) com a presença de escape de contraste (\"blush\" arterial). O \"blush\" indica sangramento ativo no momento do exame, o que aumenta significativamente o risco de falha do tratamento puramente observacional.\n\nAnálise das alternativas:\n\na) Incorreta. A laparotomia exploradora com esplenectomia está indicada para pacientes com instabilidade hemodinâmica persistente, sinais de peritonite ou falha comprovada do tratamento conservador. Como a paciente está estável, deve-se priorizar métodos que preservem o baço para evitar complicações futuras, como a sepse pós-esplenectomia.\n\nb) Incorreta. A videolaparoscopia não é a conduta de escolha neste cenário. Embora possa ser usada em traumas penetrantes estáveis ou para diagnóstico de lesões diafragmáticas, na lesão esplênica grau IV com sangramento ativo, a intervenção necessária é o controle vascular ou a cirurgia aberta, caso haja instabilidade.\n\nc) Correta. A arteriografia com embolização é a conduta padrão-ouro para pacientes hemodinamicamente estáveis que apresentam \"blush\" na tomografia, independentemente do grau da lesão esplênica. Essa técnica permite o controle do foco de sangramento ativo de forma minimamente invasiva, aumentando as taxas de sucesso do tratamento não operatório e permitindo a preservação do órgão.\n\nd) Incorreta. O tratamento expectante isolado (apenas observação, repouso e exames seriados) é adequado para lesões esplênicas de baixo grau e sem evidência de sangramento ativo na TC. Na presença de escape de contraste, a observação pura está associada a um alto índice de necessidade de cirurgia de emergência posterior por ruptura tardia ou choque. Portanto, a intervenção por radiologia intervencionista (embolização) deve ser associada à observação na UTI.\n\nResumo da conduta:\nPaciente estável + Ausência de peritonite + Tomografia com \"blush\" = Arteriografia com embolização.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  },
+  {
+    "id": "AJUDA_1e5740b2-a837-48ab-8fd3-0159604aa82d",
+    "originalId": "1e5740b2-a837-48ab-8fd3-0159604aa82d",
+    "statement": "Um paciente masculino de 65 anos, tabagista pesado, com história de DPOC e angina estável (classe funcional II – CCS), é avaliado no ambulatório de cirurgia geral para uma colectomia eletiva por adenocarcinoma de cólon. Na consulta pré-anestésica, apresenta pressão arterial de 150/95 mmHg em uso irregular de anti-hipertensivos, saturação de O₂ em ar ambiente de 92% e ECG com sinais de isquemia subendocárdica antiga. O ecocardiograma mostra fração de ejeção de 40%.\nCom base nas recomendações atuais de avaliação pré-operatória e estratificação de risco, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O paciente deve obrigatoriamente realizar cinecoronariografia antes da cirurgia, uma vez que apresenta angina e disfunção ventricular esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso de beta-bloqueador deve ser iniciado em dose plena 24 horas antes da cirurgia para redução do risco cardiovascular perioperatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O exame de espirometria deve ser solicitado de rotina para todo paciente com DPOC candidato à cirurgia abdominal eletiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A presença de saturação basal de O₂ <94% contraindica a realização de cirurgia eletiva, devendo-se aguardar otimização clínica completa para agendamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A avaliação funcional com teste cardiopulmonar (VO₂ máximo e METs) pode ser útil para estimar o risco perioperatório, especialmente em pacientes com capacidade funcional incerta.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda a avaliação pré-operatória de um paciente com múltiplas comorbidades (DPOC, doença coronariana estável e disfunção ventricular) que será submetido a uma cirurgia de grande porte (colectomia). A estratificação de risco perioperatório é fundamental para guiar a conduta e minimizar complicações.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A cinecoronariografia (cateterismo) é um exame invasivo e não deve ser realizada de forma rotineira ou obrigatória antes de cirurgias não cardíacas, mesmo em pacientes com angina estável ou disfunção ventricular. A revascularização miocárdica profilática só está indicada se o paciente apresentar critérios de gravidade que justificariam o procedimento independentemente da cirurgia eletiva (ex.: angina instável ou lesão de tronco de coronária esquerda).\n\nAlternativa b) Incorreta. O início de betabloqueadores em doses plenas no período imediato (24 a 48 horas antes da cirurgia) é contraindicado. Estudos (como o POISE) demonstraram que essa prática aumenta a incidência de hipotensão, bradicardia e acidente vascular cerebral (AVC). Se houver indicação de iniciar betabloqueador, isso deve ser feito semanas antes da cirurgia, com titulação cuidadosa da dose.\n\nAlternativa c) Incorreta. Embora o paciente tenha DPOC, a espirometria não é solicitada de rotina para todos os pacientes que farão cirurgia abdominal. O melhor preditor de complicações pulmonares pós-operatórias é a avaliação clínica (história e exame físico) e a identificação do sítio cirúrgico (cirurgias próximas ao diafragma têm maior risco). A espirometria é reservada para casos de dúvida diagnóstica ou quando se considera ressecção pulmonar.\n\nAlternativa d) Incorreta. Uma saturação de O2 menor que 94% em um paciente com DPOC e tabagismo indica risco aumentado de complicações pulmonares, mas não é uma contraindicação absoluta para a cirurgia eletiva. O paciente deve ser otimizado (cessação do tabagismo, broncodilatadores, fisioterapia), mas o agendamento depende do equilíbrio entre o risco cirúrgico e a urgência do tratamento do adenocarcinoma.\n\nAlternativa e) Correta. A capacidade funcional é um dos principais determinantes do risco cirúrgico. Pacientes que não conseguem atingir 4 METs (equivalente a subir dois lances de escada ou caminhar rápido) apresentam maior risco de eventos cardiovasculares. Em pacientes com capacidade funcional incerta ou sabidamente baixa, testes funcionais, como o teste cardiopulmonar de exercício (CPET), podem ser utilizados para mensurar o VO2 máximo e estratificar com maior precisão o risco perioperatório.\n\nGabarito: Alternativa (e).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  },
+  {
+    "id": "AJUDA_1e5ee5bb-f753-4c7c-b504-ff7bc5470709",
+    "originalId": "1e5ee5bb-f753-4c7c-b504-ff7bc5470709",
+    "statement": "Situação-Problema: Uma Equipe Multidisciplinar de Saúde Indígena atua em uma aldeia de um povo originário localizada no semiárido nordestino. A comunidade mantém organização sociopolítica própria, com lideranças tradicionais reconhecidas e práticas de cuidado compartilhadas entre Agentes de Saúde Indígenas, parteiras e rezadores. Com o início da estação seca, o acesso à água potável torna-se mais difícil e a logística de deslocamento até o polo-base é limitada. A equipe identifica aumento de casos de infecções respiratórias, interrupções vacinais e a necessidade de cuidado pré-natal mais próximo. As lideranças da aldeia solicitam que o planejamento seja construído respeitando os rituais, o calendário cultural e as práticas tradicionais de cura, sem imposição externa.\n\nNa construção do cuidado compartilhado com pajés e parteiras tradicionais é recomendado que os profissionais de saúde privilegiem a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integração dialogada das práticas tradicionais que não apresentem risco identificado com as práticas científicamente comprovadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Educação para a saúde com substituição progressiva das práticas tradicionais por condutas biomédicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neutralidade frente às práticas culturais da comunidade, mantendo conduta técnica de forma independente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Restrição das práticas tradicionais aos espaços cerimoniais, sem utilização dos cenários de atenção clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a Política Nacional de Atenção à Saúde dos Povos Indígenas (PNASPI), com ênfase na atenção diferenciada e na interculturalidade em saúde.\n\nAlternativa A (Correta): A atuação com populações indígenas exige a construção de um diálogo intercultural horizontal. A equipe multidisciplinar deve articular os conhecimentos científicos biomédicos com os saberes e práticas de cura tradicionais (de pajés, rezadores e parteiras), desde que essas práticas não ofereçam riscos à saúde. Essa integração fortalece o vínculo, respeita a autonomia da comunidade e aumenta a adesão aos cuidados de saúde.\n\nAlternativa B (Incorreta): A ideia de substituição progressiva das práticas tradicionais reflete uma postura etnocêntrica e assimilacionista, que contraria as diretrizes do SUS e da PNASPI. O objetivo da saúde indígena é a complementariedade dos saberes, e não a erradicação da cultura local.\n\nAlternativa C (Incorreta): A neutralidade e a conduta técnica isolada desconsideram a determinação sociocultural da saúde. Adotar uma postura estritamente técnica e alheia ao contexto cultural inviabiliza a pactuação do plano de cuidado e prejudica o acesso da comunidade aos serviços de saúde.\n\nAlternativa D (Incorreta): Confinar as práticas tradicionais aos espaços cerimoniais e excluí-las do ambiente clínico fragmenta o cuidado. A cosmovisão indígena enxerga a saúde de maneira holística e integrada, sendo fundamental a colaboração direta entre profissionais de saúde e cuidadores tradicionais no próprio processo de assistência clínica.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  },
+  {
+    "id": "AJUDA_1e6605c9-ad77-4a3e-a926-55000a8f7208",
+    "originalId": "1e6605c9-ad77-4a3e-a926-55000a8f7208",
+    "statement": "Um homem de 28 anos vem à consulta para avaliação clínica e traz dúvidas em relação a exames pré-admissionais recentes. Refere sentir-se bem e estar assintomático. Nega história prévia de icterícia, uso de drogas intravenosas ou transfusão sanguínea.\nA sorologia para hepatite B revelou:\n• HBsAg: negativo;\n• Anti-HBs: positivo;\n• Anti-HBc: negativo;\n• HBeAg: negativo;\n• Anti-HBe: negativo.\nDentre as opções a seguir, assinale a que melhor descreve a situação sorológica desse paciente em relação à hepatite B.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infecção aguda pelo vírus da hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infecção crônica pelo vírus da hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infecção prévia resolvida por hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "História de vacinação contra hepatite B.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Suscetibilidade à infecção pelo vírus da hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a sorologia da hepatite B, é necessário analisar o significado de cada marcador individualmente e, depois, o conjunto dos resultados.\n\nAnálise dos marcadores do paciente:\n\n1. HBsAg (antígeno de superfície): Negativo. O HBsAg é o primeiro marcador a aparecer na infecção. Se ele está negativo, descartamos infecção atual (seja ela aguda ou crônica).\n2. Anti-HBs (anticorpo contra o antígeno de superfície): Positivo. Este anticorpo indica imunidade e proteção contra o vírus.\n3. Anti-HBc Total (anticorpo contra o core/núcleo do vírus): Negativo. Este é o ponto-chave da questão. O Anti-HBc indica que o indivíduo teve contato com o vírus real (selvagem). Se o Anti-HBc é negativo, o paciente nunca foi infectado pelo vírus da hepatite B.\n4. HBeAg e Anti-HBe: Negativos. Relacionam-se à replicação viral e mutações, sendo relevantes apenas quando há infecção ativa.\n\nAnálise das alternativas:\n\na) Incorreta. Para uma infecção aguda, o HBsAg deveria estar positivo. Além disso, o Anti-HBc (especialmente a fração IgM) estaria presente, e o Anti-HBs estaria negativo.\n\nb) Incorreta. A infecção crônica é definida pela persistência do HBsAg positivo por mais de seis meses. No caso em tela, o HBsAg é negativo.\n\nc) Incorreta. Na infecção prévia resolvida (cura natural), o paciente apresenta imunidade, ou seja, o Anti-HBs é positivo. No entanto, por ter tido contato real com o vírus, o Anti-HBc Total obrigatoriamente também seria positivo. A ausência do Anti-HBc exclui cicatriz sorológica por infecção natural.\n\nd) Correta. A vacina contra a hepatite B é composta apenas por frações do antígeno de superfície (HBsAg) recombinante. Portanto, o indivíduo vacinado desenvolve anticorpos apenas contra essa parte do vírus (Anti-HBs positivo). Como ele nunca teve contato com o vírus completo, os anticorpos contra o core (Anti-HBc) permanecem negativos. Este é o perfil clássico de imunidade vacinal.\n\ne) Incorreta. Um paciente suscetível é aquele que nunca teve contato com o vírus e não foi vacinado com sucesso. Nesse caso, todos os marcadores sorológicos (HBsAg, Anti-HBs e Anti-HBc) seriam negativos.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  },
+  {
+    "id": "AJUDA_1e6b8118-7ce9-48eb-9bb6-e723fef44778",
+    "originalId": "1e6b8118-7ce9-48eb-9bb6-e723fef44778",
+    "statement": "Visando facilitar o uso de recursos práticos de acesso rápido a evidências médicas de alta qualidade, um modelo de organizar tais recursos é a pirâmide de Haynes (ou “6s”), que propõe que se busque evidências de forma hierarquizada, iniciando no recurso disponível que esteja no mais alto nível da pirâmide. Sobre esse modelo, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os sistemas computadorizados de suporte à tomada de decisão ficam na base da pirâmide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artigos sobre ensaios clínicos randomizados ficam em nível acima das sinopses de sínteses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Seria indicado procurar evidências em revisões sistemáticas antes de procurar em diretrizes baseadas em evidências.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O nível dos sumários é um dos mais altos e refere-se aos guias de prática clínica baseados em evidência e com atualização regular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Os recursos dos níveis mais baixos da pirâmide contém evidências que passaram por maior filtragem e pré-avaliação do que os níveis mais acima.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A pirâmide de Haynes, também conhecida como modelo 6S, é uma ferramenta fundamental na Medicina Baseada em Evidências (MBE). Ela organiza as fontes de informação de forma que o médico encontre a melhor evidência disponível com o menor esforço possível, priorizando recursos que já passaram por síntese e análise crítica. A hierarquia, do topo para a base, é composta por: Sistemas, Sumários, Sinopses de Sínteses, Sínteses, Sinopses de Estudos e Estudos.\n\nAnálise das alternativas:\n\na) Incorreta. Os Sistemas (Systems) estão no topo, e não na base da pirâmide. Eles representam o nível ideal, onde as evidências são integradas eletronicamente ao prontuário do paciente para auxiliar a decisão clínica em tempo real.\n\nb) Incorreta. Ensaios clínicos randomizados individuais pertencem ao nível dos Estudos (Studies), que é a base da pirâmide (o nível mais baixo). As Sinopses de Sínteses estão no terceiro nível (de cima para baixo), portanto, acima dos estudos originais.\n\nc) Incorreta. Na pirâmide de Haynes, a busca deve começar pelo nível mais alto possível. As diretrizes baseadas em evidências fazem parte dos Sumários (segundo nível), enquanto as revisões sistemáticas são as Sínteses (quarto nível). Portanto, deve-se buscar primeiro nos Sumários/Diretrizes.\n\nd) Correta. O nível dos Sumários (Summaries) é o segundo nível da pirâmide e é considerado um dos mais altos e eficientes para a prática clínica. Ele engloba livros-texto baseados em evidências (como UpToDate e DynaMed) e guias de prática clínica (diretrizes) que sintetizam múltiplas evidências e são atualizados com frequência.\n\ne) Incorreta. É justamente o contrário. Os recursos nos níveis mais altos (topo da pirâmide) são os que passaram por maior filtragem, pré-avaliação e síntese por especialistas. Os níveis mais baixos, como o de Estudos, contêm evidências brutas que ainda não foram filtradas ou integradas a outras pesquisas.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  },
+  {
+    "id": "AJUDA_1e7b6026-0f5a-4d6c-a075-8d9824c9b98f",
+    "originalId": "1e7b6026-0f5a-4d6c-a075-8d9824c9b98f",
+    "statement": "João Vicente tem 68 anos. Ele tem uma insuficiência renal crônica de etiologia ainda não esclarecida há 4 meses, desde que começou a passar em consultas com diferentes médicos na UBS. Ele é hipertenso há cerca de 7 anos e nega diabetes mellitus. Hoje, veio ao pronto-socorro por estar com falta de ar e diminuição da diurese. Além disso, ele está com muita dor no braço direito há 2 dias, espontaneamente, após tentar alcançar um livro no alto de um armário. Seus exames laboratoriais acusam: creatinina de 5,2 mg/dl (valor referência: < 1,2 mg/dL), hemoglobina de 6,2 g%, hematócrito de 20%, GB de 4.200/mm3, sódio de 124 mmEq/L, potássio de 6,1 mEq/L, cálcio iônico de 7,0 mg/dL (valor referência: 4,5-5,6 mg/dL), paratormônio: 76 (Valor referência: 10-65 pcg/mL), albumina sérica diminuída e gamaglobulinas elevadas. No exame de urina constatava-se proteinúria de 250 mg/dL. Um RX simples do braço direito acusou pequena fratura em terço médio do úmero.\n\nBaseado nessas informações e, apesar da falta de exames confirmatórios, qual seria o diagnóstico mais provável desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperparatireoidismo secundário à insuficiência renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiperparatireoidismo primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mieloma múltiplo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Rabdomiólise.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um homem idoso com manifestações clássicas do mnemônico CRAB, que define lesão de órgão-alvo no Mieloma Múltiplo:\n\n- C (Cálcio elevado): Hipercalcemia (cálcio iônico de 7,0 mg/dL).\n- R (Renal): Insuficiência renal importante (creatinina de 5,2 mg/dL).\n- A (Anemia): Anemia normocítica importante (hemoglobina de 6,2 g/dL).\n- B (Bone / Osso): Fratura patológica em osso longo (úmero) após esforço mínimo.\n\nAlém disso, a presença de hipergamaglobulinemia com hipoalbuminemia evidencia o gap proteico, característico da produção monoclonal de imunoglobulinas (pico monoclonal), e a proteinúria reflete a nefropatia por cadeias leves (rim do mieloma).\n\nAnálise das alternativas:\n\na) Incorreta. O hiperparatireoidismo secundário decorre da doença renal crônica e cursa classicamente com hipocalcemia ou normocalcemia e níveis muito elevados de PTH. O paciente apresenta hipercalcemia grave, o que afasta essa hipótese como causa primária.\n\nb) Incorreta. O hiperparatireoidismo primário causa hipercalcemia e pode elevar o PTH, mas não justifica o conjunto de anemia grave, elevação marcante de gamaglobulinas, proteinúria isolada e deterioração renal aguda/subaguda dessa magnitude em um homem idoso com fratura patológica espontânea.\n\nc) Correta. O mieloma múltiplo preenche todos os critérios clínicos e laboratoriais apresentados (hipercalcemia por reabsorção osteoclástica, insuficiência renal, anemia grave e fratura patológica), além do padrão laboratorial de gamaglobulinas elevadas decorrente da proliferação de plasmócitos clonais.\n\nd) Incorreta. A rabdomiólise causa elevação de escórias e hipercalemia, mas classicamente evolui com hipocalcemia na fase inicial. Além disso, não há histórico de trauma importante ou compressão muscular prolongada, e o quadro não explicaria a anemia crônica nem a fratura após esforço leve.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Metabolismo Ósseo e Mineral",
+      "Distúrbios do Sódio",
+      "Distúrbios do Potássio",
+      "Mieloma Múltiplo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  },
+  {
+    "id": "AJUDA_1e8743a6-08a8-4fb4-b4ee-edce63c6c8f8",
+    "originalId": "1e8743a6-08a8-4fb4-b4ee-edce63c6c8f8",
+    "statement": "A avaliação pré-operatória de pacientes com Doença Pulmonar Obstrutiva Crônica (DPOC) ou asma visa estratificar o risco de complicações pulmonares pós-operatórias e otimizar a função respiratória. Acerca desse tema, registre V, para as afirmativas verdadeiras, e F, para as falsas:\n\n(__)Pacientes com DPOC devem ser orientados a cessar o tabagismo pelo menos 4 a 8 semanas antes da cirurgia eletiva para permitir a recuperação da função ciliar e redução do volume de escarro.\n(__)Em pacientes asmáticos, o uso de corticoides sistêmicos no pré-operatório é contraindicado devido ao alto risco de deiscência de anastomose e infecção do sítio cirúrgico, devendo-se manter apenas broncodilatadores inalatórios.\n(__)A espirometria pré-operatória é mandatória em todos os pacientes asmáticos ou com DPOC, independentemente da gravidade clínica ou do porte da cirurgia proposta.\n(__)O broncoespasmo intraoperatório em asmáticos pode ser precipitado pela intubação traqueal e o uso de agentes anestésicos voláteis, como o sevoflurano, é benéfico devido à sua ação broncodilatadora.\n\nAssinale a alternativa que apresenta a sequência correta, de cima para baixo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ITEM 1 (V): A orientação para cessação do tabagismo deve ocorrer, idealmente, de 4 a 8 semanas antes de um procedimento cirúrgico eletivo. Embora a suspensão por apenas 48 horas já reduza os níveis de carboxiemoglobina e melhore a oferta de oxigênio aos tecidos, o tempo de 4 a 8 semanas é o necessário para que ocorra a redução da secreção de muco e a recuperação da atividade ciliar do epitélio respiratório, reduzindo, efetivamente, o risco de complicações pulmonares pós-operatórias.\n\nITEM 2 (F): O uso de corticoides sistêmicos no pré-operatório de pacientes asmáticos não é contraindicado. Pelo contrário, se o paciente apresentar sintomas de asma não controlada ou se a função pulmonar (VEF1 ou pico de fluxo) estiver abaixo de 80% do previsto, recomenda-se um curso curto de corticoide sistêmico (ex.: prednisona, 40 a 60 mg/dia, por 5 a 7 dias) para otimizar o paciente e prevenir broncoespasmo grave durante a indução anestésica e a intubação.\n\nITEM 3 (F): A espirometria não é mandatória para todos os pacientes. Ela é reservada para situações específicas, como pacientes com diagnóstico clínico de DPOC ou asma sem tratamento prévio, pacientes que apresentam dispneia de causa não esclarecida ou aqueles que serão submetidos a cirurgias de grande porte, como ressecções pulmonares ou cirurgias abdominais altas e torácicas, caso o quadro clínico não esteja bem estabilizado. Em pacientes com asma bem controlada clinicamente, a espirometria pode ser dispensada.\n\nITEM 4 (V): A manipulação das vias aéreas, especialmente a intubação traqueal, é um dos principais estímulos para o broncoespasmo em pacientes hiper-reativos. Durante a manutenção da anestesia, os agentes inalatórios (halogenados), como o sevoflurano e o isoflurano, são amplamente utilizados justamente por possuírem propriedades broncodilatadoras potentes, auxiliando tanto na prevenção quanto no tratamento do broncoespasmo intraoperatório.\n\nA sequência correta, portanto, é Verdadeiro, Falso, Falso, Verdadeiro (V, F, F, V), correspondendo à alternativa D.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Asma",
+      "Perioperatório",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  },
+  {
+    "id": "AJUDA_1e9176aa-2636-4ae9-96d2-33940abfb559",
+    "originalId": "1e9176aa-2636-4ae9-96d2-33940abfb559",
+    "statement": "Um paciente de 21 anos de idade compareceu ao atendimento com dor intensa em região sacrococcígea, febre baixa e tumoração flutuante local. O exame mostrou FC = 96 bpm, FR = 18 irpm e saturação = 99%. Diagnóstico: cisto pilonidal com abscesso agudo. Qual é a melhor conduta no caso clínico apresentado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar ressecção ampla imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Proceder à incisão e à drenagem do abscesso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar antibioticoterapia exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar excisão completa com fechamento primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta um quadro clássico de abscesso pilonidal agudo, caracterizado por dor intensa, febre e presença de tumoração com flutuação na região sacrococcígea. Em casos de coleções purulentas agudas (abscessos), o princípio fundamental da cirurgia é o esvaziamento do conteúdo infectado.\n\nExplicação das alternativas:\n\nAlternativa (a) Incorreta: A ressecção ampla (cirurgia definitiva) não deve ser realizada na fase aguda. Operar um tecido intensamente inflamado e infectado aumenta significativamente o risco de complicações, como deiscência de sutura, infecção da ferida operatória e maiores taxas de recorrência. O tratamento definitivo deve ser programado após a resolução do processo inflamatório.\n\nAlternativa (b) Correta: A incisão e drenagem é a conduta de escolha para o abscesso pilonidal na fase aguda. Este procedimento promove o alívio imediato da dor, diminui a pressão local e controla a infecção. Pode ser realizado sob anestesia local em ambiente ambulatorial ou hospitalar, dependendo da extensão da lesão. Após a drenagem e a cicatrização da fase aguda, o paciente deve ser reavaliado para decidir sobre a necessidade de uma cirurgia eletiva posterior para tratar os trajetos fistulosos remanescentes.\n\nAlternativa (c) Incorreta: Antibióticos isoladamente não são eficazes para tratar abscessos, pois o medicamento não consegue penetrar na cavidade purulenta em concentrações terapêuticas. A drenagem é mandatória. O uso de antibióticos pode ser associado à drenagem apenas em casos específicos, como em pacientes imunossuprimidos, com celulite extensa ao redor da lesão ou com sinais de resposta inflamatória sistêmica.\n\nAlternativa (d) Incorreta: A excisão completa com fechamento primário em um campo infectado é contraindicada. O fechamento de uma ferida contaminada/infectada resulta em altíssimas taxas de infecção de sítio cirúrgico e falha do tratamento. Assim como na alternativa (a), procedimentos definitivos de excisão devem ser realizados apenas após a resolução do quadro agudo de abscesso.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  },
+  {
+    "id": "AJUDA_1e960237-0111-4322-9e9d-ff99810329d0",
+    "originalId": "1e960237-0111-4322-9e9d-ff99810329d0",
+    "statement": "A respeito do rastreio do câncer colorretal é INCORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para a população de risco habitual, recomenda-se rastreio para câncer colorretal a partir dos 45 anos. Em pacientes saudáveis e com expectativa de vida de mais de 10 anos, o rastreio deve continuar até os 75 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O câncer colorretal pode se desenvolver a partir de pólipos intestinais inflamatórios ou adenomatosos que evoluem para displasia e depois carcinoma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "São fatores de risco que devem indicar rastreio antes dos 45 anos: história familiar ou pessoal de câncer colorretal, diagnóstico de doença inflamatória intestinal (retocolite ulcerativa, doença de Chron), história familiar de Polipose Adenomatosa Familiar (PAF) e histórico pessoal de tratamento com radioterapia no abdome ou pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A colonoscopia é o método mais acurado para diagnóstico do câncer colorretal pois permite localizar e biopsiar lesões, além de remover pólipos e diagnosticar neoplasias sincrônicas. Define-se neoplasia sincrônica como o achado de dois ou mais tumores primários distintos diagnosticados simultaneamente ou com 06 meses de intervalo, separados por intestino normal e não por extensão direta ou metástase.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Correta. De acordo com as diretrizes mais recentes (como as da American Cancer Society e as adotadas por diversas sociedades brasileiras), a idade de início do rastreamento para a população de risco habitual foi reduzida de 50 para 45 anos. A recomendação é manter o rastreio sistemático até os 75 anos. Entre 76 e 85 anos, a decisão deve ser individualizada com base na expectativa de vida e no histórico de exames anteriores.\n\nAlternativa B: Incorreta (Gabarito). O erro da alternativa está em afirmar que o câncer colorretal se desenvolve a partir de pólipos inflamatórios. Pólipos inflamatórios, também chamados de pseudopólipos, são achados comuns em pacientes com doenças inflamatórias intestinais e não possuem potencial de malignização. O câncer colorretal surge majoritariamente da via adenoma-carcinoma (pólipos adenomatosos) ou da via serrilhada.\n\nAlternativa C: Correta. Pacientes que não se enquadram no risco habitual devem iniciar o rastreio precocemente. História familiar de primeiro grau, síndromes hereditárias como a Polipose Adenomatosa Familiar (PAF) ou a Síndrome de Lynch, diagnóstico de doença inflamatória intestinal (especialmente após 8 a 10 anos de doença) e histórico de radioterapia prévia em região abdominal ou pélvica são indicações clássicas para antecipar os exames.\n\nAlternativa D: Correta. A colonoscopia continua sendo o padrão-ouro por sua alta sensibilidade e especificidade, além do caráter terapêutico (polipectomia) e diagnóstico (biópsias). A definição de neoplasia sincrônica está tecnicamente correta: são dois ou mais tumores identificados ao mesmo tempo ou em um intervalo de até 6 meses, desde que não sejam extensões do mesmo tumor ou metástases, mas sim primários distintos. Se o segundo tumor for identificado após 6 meses, é classificado como metacrônico.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:29.066Z"
+  }
+]

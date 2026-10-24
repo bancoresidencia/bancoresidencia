@@ -1,0 +1,514 @@
+[
+  {
+    "id": "AJUDA_7bb1fddf-7ee8-43c0-ba9d-faa3a2225cf5",
+    "originalId": "7bb1fddf-7ee8-43c0-ba9d-faa3a2225cf5",
+    "statement": "A respeito de manejo de dor no pós-operatório, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A analgesia epidural torácica é utilizada no pós operatório em casos de cirurgias abdominais altas. Dentre suas vantagens, tem-se a diminuição do uso de opioides, melhora da função gastrointestinal e redução da perda sanguínea intraoperatória, devido ao bloqueio simpático e vasodilatação que reduzem a pressão venosa central.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Modalidades analgésicas não farmacológicas como acupuntura, Transcutaneous electrical nerve stimulation (TENS), habilidades de enfrentamento e meditação são pouco eficazes no tratamento de dor pós-operatória a curto e longo prazo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os opioides têm indicação precisa para uso no pós operatório imediato, e quando usados também no pré-operatório o paciente tem menos chance de desenvolver tolerância e dependência posteriormente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prurido, sonolência, retenção de urina e constipação não são efeitos adversos indesejados em pacientes que recebem morfina na prescrição pós-operatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Esta alternativa está correta e descreve com precisão os benefícios da analgesia epidural torácica em cirurgias de grande porte, como as abdominais altas. Esta técnica é um dos pilares da analgesia multimodal, pois permite o controle da dor de forma localizada e superior aos opioides sistêmicos. O bloqueio das fibras simpáticas (especialmente entre T5 e T11) inibe os reflexos que causam o íleo paralítico, favorecendo o retorno precoce da função gastrointestinal. Além disso, a vasodilatação induzida pelo bloqueio simpático reduz a pressão venosa central, o que pode diminuir o sangramento intraoperatório em procedimentos específicos, como ressecções hepáticas.\n\nAlternativa b: Esta alternativa está incorreta. Modalidades não farmacológicas, como a estimulação elétrica nervosa transcutânea (TENS), acupuntura e técnicas de manejo psicológico (meditação e enfrentamento), são recomendadas pelas principais diretrizes de dor pós-operatória. Elas funcionam como adjuvantes importantes que ajudam a reduzir a intensidade da dor e, consequentemente, diminuem o consumo total de opioides e seus efeitos colaterais.\n\nAlternativa c: Esta alternativa está incorreta. O uso de opioides no período pré-operatório não previne a tolerância; pelo contrário, pacientes que fazem uso crônico ou prévio dessas substâncias tendem a apresentar maior dificuldade no controle da dor pós-operatória, necessitando de doses mais elevadas. Além disso, o uso de opioides antes da cirurgia é um fator de risco conhecido para o desenvolvimento de uso persistente e dependência após a alta hospitalar.\n\nAlternativa d: Esta alternativa está incorreta. Os sintomas listados (prurido, sonolência, retenção urinária e constipação) são justamente os efeitos adversos mais comuns e indesejados da morfina e de outros opioides. Eles ocorrem devido à ativação de receptores mu-opioides em diversos sistemas do organismo (sistema nervoso central, pele e plexos nervosos intestinais) e são grandes limitadores da recuperação plena do paciente no pós-operatório.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:55.654Z"
+  },
+  {
+    "id": "AJUDA_7bb29615-546c-4cd6-a7e3-4483ae497deb",
+    "originalId": "7bb29615-546c-4cd6-a7e3-4483ae497deb",
+    "statement": "Mulher, 53 anos, com diagnóstico de doença de Graves há 2 meses, está em tratamento irregular com tapazol 30mg/dia. Há 72 horas, queixa-se de odinofagia e febre. Exames laboratoriais: hemoglobina (Hb) = 12g/dL; leucócitos = 1200/mm³ (40% de neutrófilos + basófilos + eosinófilos); plaquetas = 180.000/mL. A conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "manutenção da dose do tapazol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "suspensão do tapazol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "aumento da dose do tapazol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "redução da dose do tapazol",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito e os exames laboratoriais apontam para uma das complicações mais graves e temidas do tratamento com tionamidas (como o Tapazol/metimazol): a agranulocitose.\n\nA paciente apresenta febre e odinofagia (dor de garganta), que são os sintomas clássicos de alerta. Ao analisarmos o hemograma, observamos uma leucopenia importante (1.200 leucócitos/mm³). O cálculo dos granulócitos (neutrófilos + basófilos + eosinófilos) revela que eles representam 40% do total, o que equivale a 480 células/mm³ (1.200 x 0,4). A definição técnica de agranulocitose é a contagem absoluta de neutrófilos abaixo de 500/mm³.\n\nDiante da suspeita ou confirmação de agranulocitose induzida por antitireoidianos, a conduta deve ser imediata.\n\nAnálise das alternativas:\n\na) Incorreta. A manutenção da droga em um paciente com neutropenia grave e sintomas de infecção é um erro grave, pois a medicação continua suprimindo a medula óssea, podendo levar à sepse generalizada e ao óbito.\n\nb) Correta. A suspensão imediata do Tapazol é obrigatória. Uma vez que o paciente desenvolve agranulocitose com uma tionamida, o uso dessa classe de medicamentos deve ser interrompido definitivamente, e o tratamento do hipertireoidismo deve ser seguido por outras vias (como iodo radioativo ou cirurgia, após estabilização). O paciente também deve ser avaliado para internação e uso de antibióticos de amplo espectro.\n\nc) Incorreta. Aumentar a dose intensificaria a toxicidade sobre a medula óssea, acelerando a queda dos glóbulos brancos e agravando o risco de morte.\n\nd) Incorreta. A redução da dose não é suficiente para reverter o quadro. A agranulocitose por tionamidas é uma reação idiossincrática e grave que exige a interrupção total e definitiva do fármaco. Mesmo doses baixas podem manter a supressão medular neste cenário.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Tireoide",
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:55.654Z"
+  },
+  {
+    "id": "AJUDA_7bb43dc9-508a-4c9e-94d2-c1610ab92f62",
+    "originalId": "7bb43dc9-508a-4c9e-94d2-c1610ab92f62",
+    "statement": "O rastreamento do câncer do colo do útero no Brasil segue diretrizes específicas quanto à idade de início, periodicidade e população-alvo. A estratégia visa maximizar os benefícios da detecção de lesões precursoras e minimizar os danos do sobrediagnóstico e sobretratamento. Assinale a alternativa que apresenta a recomendação correta do Ministério da Saúde para o início do rastreamento com citologia oncótica (Papanicolau).",
+    "options": [
+      {
+        "id": "A",
+        "text": "O rastreamento deve começar aos 21 anos para todas as mulheres, independentemente da atividade sexual, seguindo o padrão internacional de prevenção primária do câncer cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O exame citopatológico deve ser iniciado logo após o início da atividade sexual (coimarca), independentemente da idade da paciente, para garantir a detecção precoce de lesões induzidas pelo HPV desde o primeiro contato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O rastreamento deve ser iniciado aos 25 anos de idade para mulheres que já iniciaram atividade sexual, sendo que antes dessa idade a prevalência de infecções por HPV é alta, mas a maioria regride espontaneamente, e o rastreamento precoce leva a intervenções desnecessárias em lesões de baixo grau.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A coleta de citologia deve ser iniciada aos 30 anos, juntamente com o teste de DNA-HPV, sendo desnecessário qualquer exame de rastreamento antes dessa idade devido à vacinação contra o HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A: INCORRETA. O padrão brasileiro definido pelo Ministério da Saúde e pelo INCA (Instituto Nacional de Câncer) estabelece o início do rastreamento aos 25 anos, e não aos 21. A recomendação de iniciar aos 21 anos é comum em diretrizes internacionais, como as norte-americanas, mas não é adotada na saúde pública do Brasil.\n\nAlternativa B: INCORRETA. O rastreamento não deve ser iniciado imediatamente após a primeira relação sexual (coitarca) se a paciente for menor de 25 anos. A infecção pelo HPV é extremamente comum logo após o início da vida sexual, mas na grande maioria das jovens o sistema imune elimina o vírus e as lesões de baixo grau regridem espontaneamente. O rastreamento precoce nessas pacientes levaria a procedimentos invasivos desnecessários.\n\nAlternativa C: CORRETA. Esta alternativa reflete as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero. O rastreamento é indicado para mulheres (ou homens trans e pessoas com útero) de 25 a 64 anos que já iniciaram atividade sexual. A justificativa para o início aos 25 anos baseia-se na evidência de que, antes dessa idade, o câncer cervical é raro e a prevalência de infecções transitórias por HPV é alta, o que causaria sobrediagnóstico e sobretratamento de lesões que não progrediriam para câncer.\n\nAlternativa D: INCORRETA. Embora o teste de DNA-HPV seja uma tendência tecnológica e esteja em processo de incorporação em algumas regiões, a diretriz nacional de rastreamento populacional ainda é baseada na citologia oncótica (Papanicolaou) a partir dos 25 anos. Além disso, a vacinação contra o HPV não substitui o rastreamento, pois as vacinas disponíveis não conferem proteção contra todos os tipos oncogênicos do vírus.\n\nRESUMO DAS DIRETRIZES DO MINISTÉRIO DA SAÚDE:\n\n- População-alvo: Mulheres entre 25 e 64 anos que já iniciaram atividade sexual.\n- Periodicidade: O exame deve ser realizado anualmente. Após dois exames consecutivos negativos (normais) com intervalo de um ano, o próximo exame deve ser feito a cada três anos.\n- Gestantes: Devem seguir as mesmas recomendações de idade e periodicidade, sendo a coleta segura em qualquer período da gestação (preferencialmente com espátula de Ayre e sem escova endocervical, embora o uso da escova não seja contraindicação absoluta).\n- Mulheres sem atividade sexual: Não há indicação de rastreamento.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:55.654Z"
+  },
+  {
+    "id": "AJUDA_7bc0d28a-2c2e-4755-86d9-db5abb3d844d",
+    "originalId": "7bc0d28a-2c2e-4755-86d9-db5abb3d844d",
+    "statement": "Paciente de 6 anos, foi à um aniversário infantil sem os responsáveis. 15 minutos após comer o bolo, apresentou placas urticariformes em todo corpo, edema de lábios e sialorreia. Paciente chega ao Pronto Atendimento trazido pelos pais do aniversariante, sem saber relatar história patológica pregressa e histórico de alergias. Ao monitorizar paciente, Pressão arterial normal para idade. Ao exame físico, sibilos esparsos, mantendo boa saturação. Qual a sua conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adrenalina Intramuscular",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Metilprednisolona Intramuscular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antihistamínico Intramuscular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adrenalina subcutânea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Metilprednisolona venosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO CASO\n\nO quadro clínico descrito é um exemplo clássico de anafilaxia. O paciente apresenta início agudo (15 minutos após ingestão de alimento) com envolvimento de pelo menos dois sistemas: cutâneo-mucoso (urticária e edema de lábios) e respiratório (sibilos e sialorreia, que pode indicar obstrução de vias aéreas superiores).\n\nO tratamento da anafilaxia deve ser imediato, pois a condição pode evoluir rapidamente para obstrução total de vias aéreas ou choque anafilático. A diretriz mundial (WAO) e a brasileira estabelecem a adrenalina como a droga de primeira escolha e a única capaz de reverter os sintomas fatais de forma rápida.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA adrenalina (epinefrina) por via intramuscular (IM) é o tratamento de eleição. Ela deve ser aplicada na face anterolateral da coxa (músculo vasto lateral), onde a absorção é mais rápida e segura. A adrenalina possui ação alfa-1 (vasoconstrição, reduzindo o edema), beta-1 (aumenta a contratilidade cardíaca) e beta-2 (broncodilatação e redução da liberação de mediadores inflamatórios), agindo diretamente na fisiopatologia da anafilaxia.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (b) e (e): A metilprednisolona é um corticosteroide. Os corticoides são considerados medicamentos de segunda linha na anafilaxia. Eles possuem início de ação lento (levam de 4 a 6 horas para agir) e são usados principalmente para prevenir a fase tardia ou reações bifásicas. Não devem ser a primeira conduta em um quadro agudo.\n\nAlternativa (c): Os anti-histamínicos são medicamentos de segunda linha. Eles ajudam a controlar os sintomas cutâneos, como o prurido e a urticária, mas não tratam o broncoespasmo (sibilos), o edema de glote ou a hipotensão. O uso isolado de anti-histamínicos atrasa a administração da adrenalina, o que aumenta o risco de óbito.\n\nAlternativa (d): A adrenalina por via subcutânea não é mais recomendada para o tratamento inicial da anafilaxia. Estudos demonstram que a absorção por essa via é mais lenta e errática quando comparada à via intramuscular. Na emergência, a via IM atinge picos plasmáticos de forma muito mais eficiente e rápida.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:55.654Z"
+  },
+  {
+    "id": "AJUDA_7bc43884-eb5a-4a37-bc62-872013e01bfd",
+    "originalId": "7bc43884-eb5a-4a37-bc62-872013e01bfd",
+    "statement": "Em um município, forma-se um movimento de pequenos agricultores com o objetivo de buscar subsídios para o cultivation sem agrotóxicos. O prefeito decide mobilizar recursos para que os agricultores recebam orientações para esse cultivo e passa a adquirir alimentos desses agricultores para as escolas e as creches, além de promover feiras regionais onde os produtos possam ser vendidos diretamente ao consumidor. Com base na situação hipotética, assinale a alternativa correta sobre ações adequadas que poderiam ser desenvolvidas pelo setor da Saúde para contribuir com a iniciativa.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacitar todos os profissionais da UBS sobre os benefícios dos alimentos orgânicos para que as ações de saúde incorporem o conhecimento adquirido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A iniciativa do prefeito não tem relação direta com ações de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar alguns endocrinologistas do SUS como referências para darem aulas noturnas à população sobre doenças relacionadas ao alimento com agrotóxicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Contratar toxicologistas para prepararem aulas gravadas acessíveis à população para que informações científicas sejam disseminadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do tema: A questão aborda os conceitos de intersetorialidade e promoção da saúde, fundamentais para a gestão no Sistema Único de Saúde (SUS). Iniciativas que integram agricultura sustentável, segurança alimentar e educação são exemplos claros de intervenção nos Determinantes Sociais de Saúde, exigindo que o setor saúde atue de forma integrada com as demais secretarias municipais.\n\nAlternativa a: Está correta. A Unidade Básica de Saúde (UBS) é o centro da rede de atenção e possui o maior vínculo com o território. Capacitar a equipe multiprofissional (médicos, enfermeiros, técnicos e agentes de saúde) sobre os benefícios dos orgânicos permite que essa informação seja disseminada de forma transversal. O tema passa a compor as orientações em consultas de pré-natal, puericultura, acompanhamento de diabéticos e grupos de educação em saúde, tornando a iniciativa do prefeito uma ação de saúde pública sustentável e capilarizada.\n\nAlternativa b: Está incorreta. A saúde não é meramente a ausência de doenças, mas o resultado de condições de alimentação, meio ambiente e trabalho, entre outros fatores. O cultivo livre de agrotóxicos reduz o risco de intoxicações crônicas, neoplasias e distúrbios endócrinos, além de promover uma dieta mais nutritiva, estando totalmente relacionada às ações de saúde.\n\nAlternativa c: Está incorreta. Esta opção falha ao restringir a ação a uma única especialidade (endocrinologia) e a um formato pedagógico pouco acessível (aulas noturnas). A promoção da saúde deve ser democrática, multidisciplinar e inserida no cotidiano da população, e não isolada em uma visão puramente subespecializada da medicina.\n\nAlternativa d: Está incorreta. O uso de aulas gravadas por toxicologistas foca em um modelo de transmissão de informação tecnicista e passivo. A educação em saúde no SUS é mais efetiva quando baseada no diálogo, na troca de saberes e na proximidade com a realidade local, papel que é melhor desempenhado pelas equipes da Estratégia Saúde da Família do que por especialistas distantes.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:55.654Z"
+  },
+  {
+    "id": "AJUDA_7bccd301-8a4f-4c12-840b-601b0d18b41d",
+    "originalId": "7bccd301-8a4f-4c12-840b-601b0d18b41d",
+    "statement": "Assinale a alternativa que contém a classificação correta de uma hérnia diafragmática que contém o deslocamento cefálico do fundo gástrico com o cárdia em posição normal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tipo I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tipo II",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tipo III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tipo IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tipo V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "As hérnias de hiato ocorrem devido a uma falha no hiato esofágico do diafragma, permitindo a passagem de conteúdo abdominal para a cavidade torácica. Para responder corretamente a questões sobre esse tema, o aluno deve focar em dois marcos anatômicos principais: a Junção Esofagogástrica (JEG ou cárdia) e o Fundo Gástrico.\n\nAnálise das alternativas:\n\nAlternativa A (Tipo I): Incorreta. É a hérnia por deslizamento, o tipo mais comum (cerca de 95% dos casos). Nela, a JEG (cárdia) desliza para cima do diafragma através do hiato. O fundo gástrico não roda paralelamente ao esôfago; ele apenas segue o deslocamento vertical do cárdia.\n\nAlternativa B (Tipo II): Correta. Esta é a chamada hérnia paraesofágica verdadeira. A característica patognomônica é que a junção esofagogástrica (cárdia) permanece em sua posição anatômica normal (abaixo do diafragma), enquanto o fundo gástrico hernia (\"rola\") para o tórax, situando-se paralelamente ao esôfago distal. É exatamente o que descreve o enunciado.\n\nAlternativa C (Tipo III): Incorreta. É a hérnia mista, que combina elementos dos tipos I e II. Nela, tanto a JEG (cárdia) quanto o fundo gástrico estão deslocados para cima do diafragma. Como o enunciado especifica que o cárdia está em posição normal, esta opção é invalidada.\n\nAlternativa D (Tipo IV): Incorreta. É uma hérnia hiatal complexa e volumosa. Além de grande parte do estômago estar no tórax, há a presença de outros órgãos abdominais herniados, como o cólon transverso, baço ou intestino delgado.\n\nAlternativa E (Tipo V): Incorreta. A classificação clássica das hérnias hiatais, amplamente utilizada em cirurgia e gastroenterologia (como nas diretrizes da SAGES), reconhece apenas quatro tipos (I a IV). O \"Tipo V\" não possui fundamentação na literatura médica padrão.\n\nResumo para Prova:\n- Tipo I (Deslizamento): O cárdia sobe.\n- Tipo II (Paraesofágica): O cárdia fica, o fundo gástrico sobe.\n- Tipo III (Mista): O cárdia e o fundo sobem.\n- Tipo IV (Gigante): Outros órgãos (cólon, baço) sobem.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:55.654Z"
+  },
+  {
+    "id": "AJUDA_7bd17292-b2d7-4664-a2b7-0045a96c1b12",
+    "originalId": "7bd17292-b2d7-4664-a2b7-0045a96c1b12",
+    "statement": "Uma paciente de 73 anos apresentou dor abdominal no hipocôndrio direito há seis dias, associada a mudança no padrão alimentar e perda de peso. Ao dar entrada no pronto-socorro, os exames laboratoriais mostraram os seguintes resultados: Hemoglobina 12,3 g/dL, leucócitos 12.630/mm³, bilirrubina total 1,3 mg/dL, bilirrubina direta 0,94 mg/dL, INR 1,0, fosfatase alcalina 215 U/L, GGT 748 U/L, amilase 97 U/L, ALT (TGP) 676 U/L, AST (TGO) 349 U/L, PCR 13,7 mg/L (VR<1,0), ureia 50 mg/dL e creatinina 1,25 mg/dL. Foi submetida à colecistectomia videolaparoscópica e optou-se por realizar uma colangiografia intraoperatória que resultou na imagem a seguir. Assinale a alternativa que corresponde ao diagnóstico encontrado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tumor de papila.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesão de via biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coledocolitíase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sem alterações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colangite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise clínica e laboratorial: A paciente de 73 anos apresenta um quadro de dor abdominal associado a um perfil laboratorial de colestase (elevação de GGT 748 U/L e Fosfatase Alcalina 215 U/L). O aumento expressivo das transaminases (ALT 676 e AST 349) é comum em obstruções biliares agudas, onde ocorre um pico enzimático inicial devido à pressão retrógrada no parênquima hepático.\n\nAnálise da imagem: A colangiografia intraoperatória (CIO) é o padrão-ouro para avaliação da via biliar durante a colecistectomia. Na imagem apresentada, observa-se a opacificação da via biliar principal por contraste. Na porção distal do colédoco, junto à transição para o duodeno, nota-se uma imagem de falha de enchimento (área clara dentro da coluna de contraste) de contornos regulares, o que caracteriza a presença de um cálculo.\n\nAlternativa a) Incorreta. O tumor de papila (ampuloma) geralmente se manifesta com icterícia obstrutiva progressiva e importante perda ponderal. Na colangiografia, costuma apresentar o \"sinal do menisco\" ou \"taça invertida\", com uma obstrução abrupta e irregular, diferente da falha de enchimento móvel ou arredondada vista na imagem.\n\nAlternativa b) Incorreta. Lesões de via biliar iatrogênicas se manifestariam na colangiografia como extravasamento de contraste para o peritônio (em casos de laceração/secção) ou como uma interrupção súbita e completa do fluxo de contraste (em casos de ligadura ou clipagem acidental), o que não corresponde ao achado.\n\nAlternativa c) Correta. O diagnóstico de coledocolitíase é confirmado pela visualização direta da falha de enchimento intraluminal no colédoco distal. O quadro laboratorial de colestase com transaminases elevadas em paciente idosa é altamente sugestivo de migração de cálculo da vesícula para a via biliar.\n\nAlternativa d) Incorreta. A colangiografia está claramente alterada pela presença da falha de enchimento distal. Em um exame normal, o contraste deve preencher todo o colédoco uniformemente e fluir livremente para o duodeno.\n\nAlternativa e) Incorreta. A colangite é um diagnóstico clínico baseado na Tríade de Charcot (dor, icterícia e febre) ou Pêntade de Reynolds. Embora a coledocolitíase seja a causa mais comum de colangite, a imagem radiológica identifica o agente causal (o cálculo) e não o processo infeccioso em si. Além disso, a paciente não apresentava febre ou instabilidade descritas no enunciado.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/974e12c0a07d33506b0c556a3c7d56f4cccdb5463ca460ccec6b2aa1a19063d2.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_7bd17292-b2d7-4664-a2b7-0045a96c1b12_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:56.190Z"
+  },
+  {
+    "id": "AJUDA_7be87977-d26f-417e-aea8-a8ea39a734c1",
+    "originalId": "7be87977-d26f-417e-aea8-a8ea39a734c1",
+    "statement": "Criança, 3 anos de idade, é admitida na emergência com quadro de início súbito de tosse, dispneia e estridor inspiratório. A mãe refere que a criança estava brincando com peças pequenas momentos antes do início dos sintomas. Ao exame, está consciente, mas com esforço respiratório significativo, sentada e inclinada para frente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar uma dose de ceftriaxona e corticoide intravenoso para prevenir pneumonia aspirativa e reduzir o edema inflamatório da via aérea, respectivamente, antes de proceder à investigação endoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar imediatamente as manobras de desobstrução de via aérea (como a manobra de Heimlich), pois a presença de estridor e dispneia já classifica a obstrução como grave e requer uma intervenção imediata para salvar a vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter a criança em posição de conforto, minimizar a ansiedade evitando exames desnecessários no momento e acionar imediatamente a equipe de endoscopia/cirurgia para a remoção do objeto por broncoscopia rígida sob anestesia geral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar uma laringoscopia direta na sala de emergência com uma pinça de Magill na tentativa de visualizar e remover o objeto, caso ele esteja alojado na hipofaringe ou na glote.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar radiografias de tórax em inspiração e expiração forçada, além de uma radiografia cervical, para tentar localizar o objeto e avaliar a presença de aprisionamento aéreo antes de qualquer procedimento invasivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve um cenário clássico de aspiração de corpo estranho (ACE) em uma criança de 3 anos. Os sinais de início súbito de tosse e estridor inspiratório após brincar com objetos pequenos são altamente sugestivos. O fato de a criança estar consciente, mas com esforço respiratório, indica uma obstrução parcial das vias aéreas superiores ou da traqueia.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA conduta prioritária na suspeita de aspiração de corpo estranho com obstrução parcial é manter a estabilidade clínica e evitar a agitação da criança. Qualquer manipulação desnecessária ou estresse pode fazer com que o objeto se desloque, transformando uma obstrução parcial em total, ou desencadear um laringoespasmo. O padrão-ouro tanto para o diagnóstico definitivo quanto para o tratamento (remoção do objeto) é a broncoscopia rígida, que deve ser realizada por equipe especializada em ambiente controlado (centro cirúrgico) sob anestesia geral.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): Antibióticos como a ceftriaxona não têm indicação imediata, pois a obstrução é um evento mecânico e não infeccioso no primeiro momento. O corticoide pode ser usado posteriormente para reduzir o edema inflamatório após a retirada do objeto, mas não deve atrasar a intervenção definitiva de remoção.\n\nAlternativa (b): As manobras de desobstrução, como a manobra de Heimlich, são indicadas apenas em casos de obstrução grave ou total (quando a criança não consegue tossir, falar ou chorar, evoluindo para cianose e perda de consciência). Em crianças que ainda conseguem tossir ou emitir sons (obstrução parcial), essas manobras são contraindicadas, pois podem deslocar o objeto para uma posição mais crítica.\n\nAlternativa (d): A laringoscopia direta e o uso de pinça de Magill são úteis apenas se o corpo estranho estiver visível na orofaringe ou hipofaringe em pacientes que não oferecem resistência. Tentar esse procedimento em uma criança consciente e em sofrimento respiratório na sala de emergência é extremamente perigoso e pode agravar o quadro.\n\nAlternativa (e): Embora as radiografias possam auxiliar, elas frequentemente são normais (objetos radiolucentes) e não excluem o diagnóstico. Em uma criança com sinal clínico claro de desconforto respiratório e história típica, o exame de imagem não deve atrasar a transferência para a broncoscopia. Além disso, a manobra de expiração forçada é difícil de ser realizada de forma técnica em crianças tão pequenas e em sofrimento.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:56.190Z"
+  },
+  {
+    "id": "AJUDA_7bf0363b-f3ca-4858-9fba-fa534b81f272",
+    "originalId": "7bf0363b-f3ca-4858-9fba-fa534b81f272",
+    "statement": "Primigesta, 18 anos, idade gestacional de 38 semanas, gestação de risco usual, é internada em trabalho de parto. Exame físico geral sem alterações. Exame obstétrico: altura uterina de 35 cm, batimentos cardíacos fetais normais, 3 contrações de 30 segundos em 10 minutos de observação, colo uterino dilatado em 6 cm, apresentação cefálica, plano 0 de De Lee, bolsa íntegra. Exame cardiotocográfico: evidencia linha de base da frequência cardíaca fetal de 140 bpm, variabilidade moderada, presença de acelerações transitórias e desacelerações precoces. De acordo com estes dados, assinale a alternativa correta que contém, respectivamente, a classificação do exame cardiotocográfico e a conduta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Categoria I, traçado da FCF normal; conduzir de maneira habitual, com ausculta da FCF de 30/30 minutos no 1º estágio e 15/15 minutos no 2º estágio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Categoria II, traçado indeterminado da FCF; requer acompanhamento com ausculta da FCF contínua, perfil biofísico fetal e dopplervelocimetria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Categoria III, traçado anormal; requer medidas de ressuscitação intrauterina e resolução da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não reativa; continuar a avaliação da FCF durante 40 minutos e, não melhorando, realizar medidas de ressuscitação intrauterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Exame Cardiotocográfico:\n\nPara classificar um traçado de cardiotocografia (CTG) intraparto, seguimos os critérios estabelecidos por consensos internacionais (como o da FIGO e do ACOG), que dividem os achados em três categorias:\n\n1. Linha de base: 140 bpm (Normal: entre 110 e 160 bpm).\n2. Variabilidade: Moderada (Normal: oscilação entre 6 e 25 bpm), o que indica um sistema nervoso central fetal oxigenado e funcional.\n3. Acelerações transitórias: Presentes (Sinal clássico de reatividade e bem-estar fetal).\n4. Desacelerações precoces (DIP tipo I): São desacelerações graduais cujo nadir (ponto mais baixo) coincide com o acme (pico) da contração uterina. Elas ocorrem devido à compressão da cabeça fetal (reflexo vagal) e não indicam hipóxia ou sofrimento fetal.\n\nClassificação das Alternativas:\n\nAlternativa a) Correta. O traçado descrito é classificado como Categoria I (Normal). Os critérios para Categoria I são: linha de base normal, variabilidade moderada, ausência de desacelerações tardias ou variáveis, podendo ou não apresentar acelerações e desacelerações precoces. Em gestações de risco usual (baixo risco), a conduta preconizada pelo Ministério da Saúde e pela FEBRASGO é a monitorização fetal com ausculta intermitente a cada 30 minutos no primeiro estágio (dilatação) e a cada 15 minutos no segundo estágio (expulsivo).\n\nAlternativa b) Incorreta. A Categoria II (Indeterminada) inclui traçados que não são claramente normais, mas também não são preditores de acidemia fetal (ex: taquicardia, variabilidade mínima, ou desacelerações variáveis não repetitivas). O traçado da questão é totalmente normal. Além disso, Doppler e perfil biofísico são exames de avaliação da vitalidade fetal anteparto, raramente indicados durante o trabalho de parto ativo nesta configuração.\n\nAlternativa c) Incorreta. A Categoria III (Anormal) indica alta probabilidade de hipóxia e acidemia fetal. É caracterizada por variabilidade ausente associada a desacelerações tardias recorrentes, desacelerações variáveis recorrentes, bradicardia ou padrão sinusoidal. O quadro descrito na questão é o oposto de um sofrimento fetal.\n\nAlternativa d) Incorreta. O termo \"não reativa\" é utilizado principalmente na cardiotocografia anteparto (teste não estressante) para descrever a ausência de acelerações. No entanto, o enunciado afirma que há presença de acelerações transitórias e variabilidade moderada, o que caracteriza um traçado reativo. Adicionalmente, as medidas de ressuscitação intrauterina não são indicadas para traçados normais.\n\nGabarito: Letra (a).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:56.190Z"
+  },
+  {
+    "id": "AJUDA_7bf38ec5-453e-4a7d-b92b-2b6c11c74f34",
+    "originalId": "7bf38ec5-453e-4a7d-b92b-2b6c11c74f34",
+    "statement": "Um ensaio clínico randomizado estudou a associação entre o uso de sotatercept e morte em pacientes com hipertensão arterial pulmonar classes II e III. Os pacientes foram randomizados em dois grupos: 84 pacientes receberam sotatercept e 86 placebo, a cada três semanas, durante 11 meses. Os resultados do estudo encontram-se a seguir:\n\nConsiderando os dados da tabela, é necessário tratar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "15 pacientes com sotatercept para evitar a morte em um paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "53 pacientes com sotatercept para evitar a morte em um paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "84 pacientes com sotatercept para evitar mortes em 15% dos pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "84 pacientes com sotatercept para evitar a morte em 53% dos pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão exige o cálculo do Número Necessário para Tratar (NNT), que indica quantos pacientes precisam receber o tratamento experimental para que um desfecho desfavorável (neste caso, a morte) seja evitado.\n\nA partir dos dados da tabela apresentada na imagem:\n- Risco no grupo intervenção (Sotatercept): 7 mortes em 84 pacientes = 7 / 84 = 0,0833 (ou 8,33%).\n- Risco no grupo controle (Placebo): 13 mortes em 86 pacientes = 13 / 86 = 0,1511 (ou 15,11%).\n\nO cálculo da Redução Absoluta do Risco (RAR) é dado pela diferença entre os dois riscos:\nRAR = Risco Controle - Risco Intervenção = 0,1511 - 0,0833 = 0,0678 (ou 6,78%).\n\nO NNT é o inverso da RAR:\nNNT = 1 / RAR = 1 / 0,0678 = 14,74.\nArredondando para o número inteiro, obtém-se 15.\n\nAnálise das alternativas:\n\na) Correta. O NNT calculado é de aproximadamente 15, o que significa que é necessário tratar 15 pacientes com sotatercept para evitar uma morte a mais em relação ao placebo.\n\nb) Incorreta. O valor de 53 não corresponde ao NNT derivado dos dados da tabela.\n\nc) Incorreta. O número 84 representa apenas o total de participantes no grupo sotatercept e 15% aproxima-se da taxa isolada de morte do grupo placebo, misturando conceitos sem expressar o benefício clínico real do tratamento.\n\nd) Incorreta. Não existe cálculo epidemiológico a partir dos dados fornecidos que aponte prevenção de mortes em 53% dos pacientes tratados, uma vez que a redução absoluta de risco obtida foi de apenas 6,78%.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/a15aa270b80f0fa469206c2f676a301932cca72ea33ddc6218b3b67e26719264.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_7bf38ec5-453e-4a7d-b92b-2b6c11c74f34_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:56.641Z"
+  }
+]

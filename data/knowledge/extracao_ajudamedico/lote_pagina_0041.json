@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_0ab40925-0c13-449b-a2f1-1636f026a5ef",
+    "originalId": "0ab40925-0c13-449b-a2f1-1636f026a5ef",
+    "statement": "Em paciente politraumatizado com trauma abdominal contuso, hipotenso após reposição inicial e ultrassom FAST à beira-leito positivo para líquido livre, a conduta imediata que melhor preserva a sobrevida deve ser indicada com prioridade sobre exames de imagem avançados. Assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observação em sala de emergência com reavaliação seriada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lavado peritoneal diagnóstico para confirmar hemoperitônio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparotomia de urgência sem aguardar tomografia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tomografia computadorizada de abdome com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda um cenário clássico do atendimento ao trauma (baseado nos protocolos do ATLS - Advanced Trauma Life Support): o manejo do paciente com trauma abdominal contuso e instabilidade hemodinâmica.\n\nAnálise do quadro clínico:\nO paciente apresenta a tríade determinante para a tomada de decisão imediata:\n1. Trauma abdominal contuso.\n2. Hipotensão arterial persistente (choque) após reposição volêmica inicial.\n3. FAST positivo, indicando presença de líquido livre (sangue) na cavidade peritoneal.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A observação seriada é indicada apenas para pacientes hemodinamicamente estáveis em que se opta pelo tratamento conservador de lesões de órgãos sólidos. Em um paciente hipotenso com FAST positivo, a conduta expectante retarda o controle do sangramento, aumentando drasticamente a mortalidade.\n\nAlternativa B (Incorreta): O Lavado Peritoneal Diagnóstico (LPD) é um exame invasivo que busca identificar sangue ou conteúdo gastrointestinal na cavidade abdominal. Como o FAST já foi realizado e já confirmou a presença de líquido livre em um paciente instável, o LPD torna-se desnecessário e apenas posterga o tratamento definitivo.\n\nAlternativa C (Correta): Esta é a conduta preconizada pelo ATLS. Pacientes com trauma abdominal contuso, instabilidade hemodinâmica e evidência de líquido livre no FAST (ou LPD) têm indicação formal de laparotomia exploradora imediata. O objetivo é realizar o controle da hemorragia (\"damage control\") o mais rápido possível, pois o paciente não tem reserva fisiológica para aguardar outros exames.\n\nAlternativa D (Incorreta): A Tomografia Computadorizada (TC) de abdome é o padrão-ouro para avaliar lesões abdominais, mas exige obrigatoriamente que o paciente esteja hemodinamicamente ESTÁVEL. Levar um paciente hipotenso e com FAST positivo para a sala de tomografia é um erro grave, pois ele pode evoluir para parada cardiorrespiratória em um ambiente inadequado para reanimação e longe da equipe cirúrgica.\n\nResumo da conduta:\nInstável + FAST positivo = Laparotomia.\nEstável + FAST positivo = Tomografia para definir conduta.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  },
+  {
+    "id": "AJUDA_0aba5e8f-39e0-48ff-9afe-426c12841b19",
+    "originalId": "0aba5e8f-39e0-48ff-9afe-426c12841b19",
+    "statement": "Sobre os hormônios dos eixos enteroencefálico e enteroinsular e a cirurgia bariátrica, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A grelina é produzida pelas células parietais do corpo gástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "GLP-1 promove redução do esvaziamento gástrico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Após bypass gástrico, ocorre redução da expressão de PYY.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A liberação de NPY não é influenciada pela grelina circulante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa (a) INCORRETA: A grelina, conhecida como o hormônio da fome, é produzida principalmente pelas células oxínticas do tipo P/D1 localizadas no fundo gástrico, e não pelas células parietais. As células parietais têm como função principal a secreção de ácido clorídrico (HCl) e fator intrínseco. Na cirurgia de gastrectomia vertical (Sleeve), a retirada do fundo gástrico reduz drasticamente os níveis de grelina, auxiliando na perda de peso.\n\nAlternativa (b) CORRETA: O GLP-1 (peptídeo semelhante ao glucagon-1) é um hormônio da classe das incretinas, secretado pelas células L do íleo distal e cólon em resposta à presença de nutrientes. Entre suas ações fisiológicas, o GLP-1 estimula a secreção de insulina, inibe a secreção de glucagon, promove saciedade central e reduz a motilidade gastrointestinal, retardando o esvaziamento gástrico (efeito conhecido como freio ileal). Nas cirurgias bariátricas disabsortivas ou mistas (como o Bypass), o aumento precoce do GLP-1 é um dos principais fatores para a melhora rápida do diabetes tipo 2.\n\nAlternativa (c) INCORRETA: Após o bypass gástrico (Bypass em Y de Roux), ocorre, na verdade, um aumento significativo da expressão e dos níveis circulantes de PYY (Peptídeo YY). Como o alimento é desviado das porções proximais do intestino e chega mais rapidamente ao íleo distal, as células L são precocemente estimuladas a secretar PYY. Esse hormônio é um potente anorexígeno (reduz o apetite) e contribui para o sucesso ponderal da cirurgia.\n\nAlternativa (d) INCORRETA: A liberação e a ação do NPY (Neuropeptídeo Y) são diretamente influenciadas pela grelina. A grelina é o principal sinal periférico que ativa os neurônios que expressam NPY e AgRP no núcleo arqueado do hipotálamo. Essa ativação é o que dispara a sinalização de fome no sistema nervoso central. Portanto, a grelina circulante é um regulador positivo do NPY.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  },
+  {
+    "id": "AJUDA_0abe49e7-756d-4491-8f4c-699699342c61",
+    "originalId": "0abe49e7-756d-4491-8f4c-699699342c61",
+    "statement": "A abordagem clínica das lesões mamárias, sejam elas palpáveis ou não palpáveis, é complexa e multifatorial. Essa complexidade reflete a necessidade de condutas individualizadas, baseadas em aspectos clínicos e genéticos da paciente, nas características morfológicas e histológicas da lesão. Sobre a abordagem de lesões mamárias, associe os itens utilizando os códigos a seguir:\nI. Lesões Não Palpáveis (LNP)\nII. Nódulos\nIII. Fluxo Papilar\nIV. Distorção Arquitetural\n( ) Descrito como patológico quando espontâneo, unilateral, uniductal e de aparência cristalina ou sanguinolenta.\n( ) Podem ser identificados no exame clínico, são classificados como benignos (BI-RADS 2) ou suspeitos (BI-RADS 4 e 5), os benignos não necessitando intervenção e os suspeitos exigindo biópsia.\n( ) São detectados exclusivamente por mamografia, ultrassonografia ou ressonância magnética e classificadas pelo sistema BI-RADS.\n( ) Frequentemente benigna em casos pós-cirúrgicos, mas na ausência de histórico de cirurgia, é considerada suspeita (BI-RADS 4) e deve ser investigada.\nAssinale a alternativa que apresenta a sequência CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I - II - III - IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "III - II - I - IV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "IV - I - II - III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "III - I - IV - II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "II - III - I - IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DOS ITENS E ASSOCIAÇÃO:\n\n(III) Fluxo Papilar: A primeira descrição refere-se ao derrame papilar patológico. Para ser considerado suspeito, ele deve ser espontâneo (surge sem expressão), unilateral, originar-se de um único ducto (uniductal) e apresentar aspecto serossanguinolento (hemático) ou hialino (\"água de rocha\").\n\n(II) Nódulos: Nódulos são massas que podem ser detectadas tanto no exame clínico (palpação) quanto em exames de imagem. A conduta é guiada pela classificação BI-RADS, na qual lesões de categoria 2 (benignas) permitem apenas o controle de rotina, enquanto as categorias 4 e 5 indicam a necessidade de biópsia devido ao risco de malignidade.\n\n(I) Lesões Não Palpáveis (LNP): São alterações identificadas exclusivamente por métodos de imagem (mamografia, ultrassonografia ou ressonância magnética), sem tradução clínica ao exame físico. Podem se manifestar como microcalcificações, assimetrias ou pequenos nódulos não palpáveis.\n\n(IV) Distorção Arquitetural: Este achado radiológico caracteriza-se por linhas que convergem para um ponto, sem uma massa central definida. Após cirurgias mamárias, é um achado comum e benigno (cicatriz). No entanto, em mamas não operadas, é um sinal clássico de malignidade, classificado como BI-RADS 4, exigindo investigação imediata.\n\nANÁLISE DAS ALTERNATIVAS:\n\nA sequência correta da associação é III - II - I - IV.\n\na) Incorreta. Propõe que Lesões Não Palpáveis seriam descritas como fluxo papilar e que Fluxo Papilar seria descrito como lesão não palpável.\nb) Correta. Correlaciona adequadamente o fluxo papilar patológico, a conduta frente aos nódulos, a definição de lesões não palpáveis e o significado clínico da distorção arquitetural.\nc) Incorreta. Inverte completamente as definições, atribuindo a descrição de fluxo papilar à distorção arquitetural.\nd) Incorreta. Relaciona incorretamente as lesões não palpáveis com a descrição de nódulos que podem ser identificados no exame clínico.\ne) Incorreta. Associa nódulos à descrição específica de fluxo papilar patológico.\n\nGABARITO: Letra (b).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Doenças Benignas da Mama",
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  },
+  {
+    "id": "AJUDA_0ac0348b-e64e-46d9-859e-a2f100fe1d50",
+    "originalId": "0ac0348b-e64e-46d9-859e-a2f100fe1d50",
+    "statement": "Menino de 9 anos tem história de gripe há 15 dias com melhora espontânea. Há quatro dias iniciou quadro de febre alta (> 38,5ºC). Nos dias seguintes, evoluiu com exantema maculopapular, edema de mãos e pés e hiperemia ocular bilateral. Referia astenia, dor abdominal e diarreia. Ao exame físico, está hipotenso e com sinais de disfunção miocárdica. Os diagnósticos nesse caso são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "shigellose e vasculite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "síndrome do choque tóxico e farmacodermia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "varicela e complicações por disseminação viral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "síndrome inflamatória multissistêmica pediátrica e infecção por SARS-CoV-2",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente pediátrico com um quadro clássico de Síndrome Inflamatória Multissistêmica Pediátrica (SIM-P), uma condição grave que surge semanas após a infecção pelo SARS-CoV-2.\n\nAnálise do quadro clínico:\nO menino de 9 anos teve pródromos de \"gripe\" há 15 dias, o que cronologicamente coincide com o período de latência entre a infecção aguda pelo coronavírus (muitas vezes leve ou assintomática em crianças) e o surgimento da resposta inflamatória exacerbada. Os sintomas atuais incluem febre alta persistente, manifestações mucocutâneas (exantema, edema de extremidades e hiperemia ocular), sintomas gastrointestinais (dor abdominal e diarreia) e, crucialmente, instabilidade hemodinâmica (hipotensão e disfunção miocárdica). \n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A shigelose é uma enterocolite bacteriana que causa diarreia inflamatória (disenteria), febre e dor abdominal. Embora possa causar convulsões e complicações sistêmicas, ela não explica o exantema generalizado, a hiperemia ocular e a disfunção miocárdica grave associados ao antecedente viral de 15 dias.\n\nAlternativa b) Incorreta. A Síndrome do Choque Tóxico (causada por Staphylococcus aureus ou Streptococcus pyogenes) pode apresentar choque e exantema, mas a história de uma infecção viral prévia com intervalo de duas semanas e o padrão de acometimento multissistêmico no cenário epidemiológico atual direcionam especificamente para a SIM-P. Além disso, não há relato de uso de novos medicamentos que justifique farmacodermia.\n\nAlternativa c) Incorreta. A varicela apresenta um exantema polimórfico característico (pápulas, vesículas e crostas simultaneamente), o que não foi descrito. As complicações por disseminação viral da varicela costumam ocorrer na fase aguda da doença, e não 15 dias após uma melhora espontânea de sintomas gripais.\n\nAlternativa d) Correta. Este é o diagnóstico principal. A SIM-P é definida por: febre persistente, envolvimento de dois ou mais órgãos (pele/mucosa, cardiovascular, gastrointestinal, hematológico ou renal), marcadores inflamatórios elevados e evidência de infecção por SARS-CoV-2 (ou exposição). O paciente preenche critérios de acometimento cutâneo-mucoso (exantema, edema e conjuntivite), gastrointestinal (dor e diarreia) e cardiovascular (hipotensão e disfunção do miocárdio), fechando o diagnóstico clínico de forma precisa.\n\nEm resumo, a questão exige o reconhecimento da SIM-P como uma complicação pós-infecciosa do SARS-CoV-2 que mimetiza a Doença de Kawasaki, mas com maior incidência de choque cardiogênico e sintomas gastrointestinais em crianças em idade escolar.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Covid-19"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  },
+  {
+    "id": "AJUDA_0ac5839d-e626-4c67-98cd-9b285cbded67",
+    "originalId": "0ac5839d-e626-4c67-98cd-9b285cbded67",
+    "statement": "Na pelvimetria clínica, observa-se bacia com entrada aproximadamente arredondada, diâmetros conjugados e transverso equilibrados, arco púbico amplo, espinhas isquiáticas pouco proeminentes e sacro curto e curvo. O tipo de bacia obstétrica descrito é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Androide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antropoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Platipeloide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ginecoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação de Caldwell e Moloy é a base para o estudo da pelvimetria clínica, dividindo a bacia em quatro tipos fundamentais de acordo com o formato do estreito superior e suas características anatômicas.\n\nA alternativa (d) está correta porque a bacia ginecoide é o tipo feminino clássico e o mais favorável ao parto vaginal. Suas características descritas na questão são marcantes: o estreito superior é arredondado ou levemente ovalado, os diâmetros transverso e anteroposterior (conjugados) são bem equilibrados, o arco púbico é amplo (ângulo subpúbico aberto), as espinhas isquiáticas são rombas (não proeminentes) e o sacro é curto e côncavo, o que oferece maior espaço para a descida e rotação do feto.\n\nA alternativa (a) está incorreta. A bacia androide é o tipo masculino. Sua entrada tem formato triangular (ou de coração), o arco púbico é estreito (ângulo fechado), as paredes laterais são convergentes e as espinhas isquiáticas são muito proeminentes e pontiagudas, sendo o tipo de bacia menos favorável ao parto.\n\nA alternativa (b) está incorreta. A bacia antropoide caracteriza-se por um estreito superior de formato ovalado, porém no sentido anteroposterior. Isso significa que o diâmetro anteroposterior é muito maior que o transverso. É comum que o feto se insinue e desça em variedades de posição posteriores (como a occipitossacra).\n\nA alternativa (c) está incorreta. A bacia platipeloide é considerada uma bacia \"achatada\". Nela, o diâmetro transverso é muito maior que o anteroposterior. O estreito superior tem formato de um oval deitado (achatado), o que dificulta a insinuação da cabeça fetal, embora o arco púbico costume ser bastante largo.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  },
+  {
+    "id": "AJUDA_0ac7c16b-855d-4098-8b5b-d8e0deb2d35a",
+    "originalId": "0ac7c16b-855d-4098-8b5b-d8e0deb2d35a",
+    "statement": "A Bupropiona é um antidepressivo frequentemente utilizado, inclusive para cessação do tabagismo, como um dos medicamentos ofertados na Atenção Básica, que apresenta um perfil de efeitos colaterais distinto. O mecanismo de ação farmacológico principal desta droga baseia-se na:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inibição seletiva da recaptação de serotonina (ISRS).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inibição da recaptação de noradrenalina e dopamina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Antagonismo de receptores 5-HT2A e agonismo parcial 5-HT1A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibição da enzima monoaminoxidase (IMAO).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Bupropiona é um antidepressivo atípico que se destaca por não possuir ação direta sobre o sistema serotonérgico. Seu perfil farmacodinâmico é único entre os antidepressivos comumente usados na Atenção Básica, o que justifica sua indicação tanto para o transtorno depressivo quanto para o tratamento do tabagismo.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A inibição seletiva da recaptação de serotonina (ISRS) é o mecanismo de drogas como Fluoxetina, Sertralina e Escitalopram. A Bupropiona é notória justamente por não afetar a serotonina, o que explica a ausência de efeitos colaterais comuns aos ISRS, como a disfunção sexual e o ganho de peso.\n\nAlternativa b) Correta. A Bupropiona pertence à classe dos Inibidores da Recaptação de Noradrenalina e Dopamina (IRND). Ao aumentar a disponibilidade de dopamina nas fendas sinápticas, especialmente no sistema de recompensa cerebral, ela auxilia na redução da fissura (craving) e dos sintomas de abstinência de nicotina. O aumento da noradrenalina contribui para o seu efeito antidepressivo e ativador.\n\nAlternativa c) Incorreta. O antagonismo de receptores 5-HT2A e o agonismo parcial de 5-HT1A são características de outros grupos de antidepressivos e moduladores da serotonina, como a Trazodona ou drogas mais recentes como a Vilazodona e a Vortioxetina. Não se aplicam à Bupropiona.\n\nAlternativa d) Incorreta. A inibição da enzima monoaminoxidase (IMAO) é o mecanismo de uma classe específica de antidepressivos (como a Tranilcipromina e a Moclobemida). Esses fármacos impedem a degradação das monoaminas (serotonina, noradrenalina e dopamina) dentro do neurônio, o que é um processo diferente da inibição da recaptação na fenda sináptica.\n\nGabarito: Letra (b).",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  },
+  {
+    "id": "AJUDA_0accb36b-7a3b-444f-a1d9-35c434b67b19",
+    "originalId": "0accb36b-7a3b-444f-a1d9-35c434b67b19",
+    "statement": "Sobre as manifestações clínicas e laboratoriais do lúpus eritematoso sistêmico (LES), avalie as afirmativas a seguir.\nI. O envolvimento das membranas serosas, como pleurite ou pericardite, pode ocorrer como manifestação da doença.\nII. A trombocitose (plaquetas > 450.000/mm³) é considerada critério hematológico característico do LES.\nIII. A proteinúria persistente (> 0,5 g/24h) não é reconhecida como manifestação renal da doença.\nEstá correto o que se afirma em",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmação I: Está correta. A serosite, que se manifesta principalmente como pleurite (inflamação da membrana que envolve os pulmões) ou pericardite (inflamação da membrana que envolve o coração), é um dos critérios clínicos clássicos para o diagnóstico de Lúpus Eritematoso Sistêmico (LES), aparecendo tanto nos critérios do ACR (American College of Rheumatology) quanto nos critérios mais recentes do EULAR/ACR.\n\nAfirmação II: Está incorreta. O critério hematológico relacionado às plaquetas no LES é a trombocitopenia (redução do número de plaquetas para valores menores que 100.000/mm³) e não a trombocitose (aumento de plaquetas). Outras alterações hematológicas que compõem os critérios são a anemia hemolítica autoimune, a leucopenia (menor que 4.000/mm³) e a linfopenia (menor que 1.500/mm³).\n\nAfirmação III: Está incorreta. A proteinúria persistente acima de 0,5 g em 24 horas (ou superior a 3+ em exame de urina de rotina) é, na verdade, o principal marcador clínico de nefrite lúpica. Ela é amplamente reconhecida e validada como um dos critérios fundamentais para caracterizar o envolvimento renal na doença.\n\nConclusão: Como apenas a afirmativa I apresenta uma informação verdadeira sobre as manifestações do LES, a alternativa correta é a letra (a).",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  },
+  {
+    "id": "AJUDA_0acdcef7-c2a7-4290-90c6-3ac70e4188a8",
+    "originalId": "0acdcef7-c2a7-4290-90c6-3ac70e4188a8",
+    "statement": "Mulher, 55 anos, no climatério, apresenta sintomas vasomotores moderados a graves há 2 anos, impactando sua qualidade de vida e sono. Ela opta por não utilizar terapia hormonal devido a preferências pessoais e não apresenta contraindicações médicas para outras intervenções. O médico elaborou quatro recomendações baseadas em evidências científicas sobre o manejo não hormonal dos fogachos. Assinale a alternativa que apresenta a recomendação correta de acordo com o caso apresentado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Recomendar medicina herbal chinesa como primeira linha para reduzir a frequência dos fogachos, devido à sua eficácia comprovada em revisões sistemáticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar terapia cognitivo-comportamental, que demonstrou redução significativa dos sintomas vasomotores em ensaios clínicos e é recomendada por diretrizes internacionais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever acupuntura como tratamento principal, dado que revisões sistemáticas confirmaram sua eficácia sustentada no controle dos fogachos, inclusive em longo prazo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sugerir técnicas de relaxamento, como yoga ou tai chi, como primeira linha de tratamento, pois estudos mostraram melhora consistente nos sintomas vasomotores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso trata de uma paciente de 55 anos no climatério com sintomas vasomotores (fogachos) moderados a graves que opta por não utilizar terapia hormonal (TH). O objetivo é identificar a abordagem não hormonal com melhor respaldo em evidências científicas e diretrizes internacionais (como The Menopause Society/NAMS e NICE).\n\nAlternativa a: Incorreta. A medicina herbal chinesa não é indicada como primeira linha. Revisões sistemáticas e metanálises não demonstraram eficácia consistente superior ao placebo no controle dos fogachos. Além disso, essas formulações apresentam riscos de toxicidade hepática, falta de padronização nas doses e potenciais interações medicamentosas.\n\nAlternativa b: Correta. A Terapia Cognitivo-Comportamental (TCC) possui alto nível de evidência e é formalmente recomendada por diretrizes internacionais para o manejo não hormonal dos sintomas vasomotores. Ensaios clínicos comprovam que a TCC reduz significativamente o incômodo e o impacto dos fogachos na rotina da paciente, promovendo melhora expressiva na qualidade de vida e no sono.\n\nAlternativa c: Incorreta. A acupuntura não é recomendada como tratamento principal. Grandes revisões sistemáticas demonstram que a acupuntura tradicional não apresenta eficácia superior à acupuntura simulada (sham/placebo) na redução da frequência e da intensidade dos sintomas vasomotores a longo prazo.\n\nAlternativa d: Incorreta. Práticas integrativas como yoga, tai chi e técnicas de relaxamento são benéficas para o controle do estresse e para a saúde global, porém estudos clínicos controlados não demonstraram redução consistente e significativa na frequência ou intensidade dos fogachos. Por essa razão, não constituem tratamento de primeira linha para essa finalidade específica.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  },
+  {
+    "id": "AJUDA_0ad4ced9-dccc-4fda-8cbe-86b40d468310",
+    "originalId": "0ad4ced9-dccc-4fda-8cbe-86b40d468310",
+    "statement": "Mulher, 65 anos de idade, realizou exames que a ginecologista solicitou e preocupou-se ao ver o resultado da densitometria óssea cujo laudo apontou osteopenia em colo do fêmur. Ela passou a ter medo de quedas e fratura óssea. Qual é a orientação preventiva mais adequada em relação a medidas comportamentais para prevenção de queda?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Atividade física passiva e caminhar descalça com meia aderente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exercícios resistidos e proprioceptivos e usar calçados apropriados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Exercícios sem impacto e utilizar órteses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Atividades física aquática e reorganizar o ambiente doméstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a prevenção de quedas e fraturas em idosos, um tema fundamental na geriatria e ginecologia preventiva. A paciente apresenta osteopenia, o que aumenta o risco de fraturas caso ocorra um evento traumático. As intervenções preventivas devem focar simultaneamente no fortalecimento do sistema musculoesquelético, na melhora do controle motor e na segurança ambiental e do vestuário.\n\nAlternativa (b) - Correta: O treinamento resistido (musculação) é a intervenção mais eficaz para combater a sarcopenia e manter a saúde óssea, aumentando a força necessária para a estabilização postural. Os exercícios proprioceptivos treinam o equilíbrio e a coordenação, permitindo que a paciente reaja melhor a desníveis e evite quedas. Além disso, o uso de calçados apropriados (fechados, com solado antiderrapante e bem ajustados aos pés) é uma medida comportamental básica e altamente eficaz para garantir a segurança durante a marcha.\n\nAlternativa (a) - Incorreta: Atividades físicas passivas não promovem ganho de massa muscular nem melhora do equilíbrio dinâmico. Caminhar descalça ou apenas com meias (mesmo as aderentes) não é recomendado para idosos com risco de queda, pois esses hábitos não oferecem o suporte lateral e a estabilidade de um calçado fechado, além de aumentarem o risco de lesões em caso de impacto.\n\nAlternativa (c) - Incorreta: Exercícios sem impacto (como alongamentos leves) não são os mais indicados para quem tem osteopenia, pois o tecido ósseo necessita de carga e estímulo mecânico (impacto controlado ou resistência) para a sua remodelação e manutenção. As órteses são dispositivos de auxílio para correções de deformidades ou suporte pós-lesão, não sendo consideradas uma medida comportamental preventiva primária para uma paciente sem déficit funcional específico.\n\nAlternativa (d) - Incorreta: Atividades aquáticas são excelentes para condicionamento cardiovascular e para pacientes com osteoartrite grave, mas têm menos eficácia no ganho de densidade mineral óssea e no treino de equilíbrio terrestre quando comparadas aos exercícios de solo. Embora a reorganização do ambiente doméstico (retirar tapetes, instalar barras e melhorar a iluminação) seja uma recomendação vital, a alternativa (b) é considerada mais completa ao focar diretamente na capacidade física da paciente (força e equilíbrio) e no uso de equipamentos de proteção individual (calçados).\n\nConclusão: Para prevenir quedas em idosos, a combinação de fortalecimento muscular, treino de equilíbrio e uso de calçados firmes constitui o padrão-ouro das orientações comportamentais.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  },
+  {
+    "id": "AJUDA_0adc207d-eac9-4ddc-873c-147b2f9fa176",
+    "originalId": "0adc207d-eac9-4ddc-873c-147b2f9fa176",
+    "statement": "Em situações com risco de morte materna extremamente elevado, a gravidez é fortemente contraindicada. As condições listadas abaixo são contraindicações à gestação, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Eisenmenger.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Marfan com dilatação aórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Miocardiopatia periparto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Disfunção ventricular importante refratária a tratamento medicamentoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fibrilação atrial crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para responder a essa questão, devemos identificar quais condições clínicas se enquadram na Classificação de Risco Cardiovascular da Organização Mundial da Saúde (OMS) como Categoria IV, na qual o risco de morte materna é extremamente elevado e a gravidez é formalmente contraindicada.\n\nAlternativa (a) Incorreta: A Síndrome de Eisenmenger é o estágio final de cardiopatias congênitas com shunt esquerda-direita que evoluem para hipertensão pulmonar grave e inversão do fluxo (direita-esquerda). A mortalidade materna estimada varia de 30% a 50%. Devido a esse risco proibitivo, a gestação é absolutamente contraindicada.\n\nAlternativa (b) Incorreta: Na Síndrome de Marfan, a fragilidade do tecido conjuntivo aliada às alterações hemodinâmicas da gravidez predispõe à dissecção e ruptura da aorta. Quando há dilatação aórtica (especialmente acima de 40 a 45 mm), o risco de eventos fatais aumenta drasticamente, classificando a condição como contraindicação à gravidez.\n\nAlternativa (c) Incorreta: A miocardiopatia periparto é uma forma de insuficiência cardíaca que ocorre no final da gestação ou nos meses após o parto. Se a paciente mantém disfunção ventricular residual (fração de ejeção não normalizada), o risco de nova queda da função cardíaca e morte em uma gestação subsequente é muito alto, sendo a gravidez desaconselhada.\n\nAlternativa (d) Incorreta: Pacientes com disfunção ventricular importante (fração de ejeção de ventrículo esquerdo inferior a 30%) ou insuficiência cardíaca em classe funcional III ou IV (NYHA) refratária não possuem reserva hemodinâmica para suportar o aumento de 50% no volume plasmático e no débito cardíaco que ocorre na gestação. O risco de morte é proibitivo.\n\nAlternativa (e) Correta: A fibrilação atrial (FA) crônica, embora seja uma arritmia que exija acompanhamento rigoroso, controle de frequência cardíaca e manejo cuidadoso da anticoagulação (evitando-se o uso de varfarina no primeiro trimestre), não é uma contraindicação absoluta à gestação. Muitas mulheres com FA conseguem levar a gestação adiante com monitoramento adequado, desde que a função ventricular esteja preservada e a causa subjacente não seja uma das contraindicações listadas acima. Portanto, entre as opções, é a única que não representa risco de morte materna \"extremamente elevado\" a ponto de proibir a gravidez.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": 52.31314802996694,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:41.329Z"
+  }
+]

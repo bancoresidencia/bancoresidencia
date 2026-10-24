@@ -1,0 +1,476 @@
+[
+  {
+    "id": "AJUDA_f7e09d25-46df-4fb3-bd6b-c1757edca81e",
+    "originalId": "f7e09d25-46df-4fb3-bd6b-c1757edca81e",
+    "statement": "Médica de família e comunidade foi solicitada para preencher a declaração de óbito de um paciente que acompanhava regularmente em sua área adstrita. Esse paciente era hipertenso há 30 anos, e com histórico pessoal de acidente vascular encefálico (AVE) há 5 anos. Há 10 dias o paciente apresentou quadro gripal e há 1 dia teve agravamento dos sintomas respiratórios, com dispneia e cianose.\nA declaração de óbito deverá ser preenchida",
+    "options": [
+      {
+        "id": "A",
+        "text": "pelo Instituto Médico Legal e constar: Parte I: a) Insuficiência respiratória aguda grave (horas); b) Síndrome gripal (10 dias); c) Hipertensão arterial sistêmica (30 anos). Parte II: Acidente vascular encefálico (5 anos).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pela médica e constar: Parte I: a) Insuficiência respiratória aguda grave (horas); b) Pneumonia (1 dia); Síndrome gripal (10 dias). Parte II: a) Acidente vascular encefálico (5 anos); b) Hipertensão arterial sistêmica (30 anos).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "pelo Serviço Móvel de Atendimento de Urgência (SAMU) e constar: Parte I: a) Síndrome gripal (10 dias); b) Pneumonia (1 dia); c) Insuficiência respiratória aguda grave (horas). Parte II: a) Acidente vascular encefálico (5 anos); b) Hipertensão arterial sistêmica (30 anos).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pelo serviço de verificação de óbitos e constar: Parte I: a) Insuficiência respiratória aguda grave (horas); b) Acidente vascular encefálico (5 anos); c) Hipertensão arterial sistêmica (30 anos). Parte II: a) Pneumonia (1 dia); b) Síndrome gripal (10 dias).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O preenchimento da Declaração de Óbito (DO) é uma das atribuições do médico e deve seguir as normas estabelecidas pelo Ministério da Saúde e pelo Conselho Federal de Medicina. Para resolver essa questão, é necessário compreender quem é o responsável pela emissão do documento e a lógica de preenchimento das causas de morte.\n\n1. Responsabilidade pela emissão:\nEm casos de morte natural (causada por doenças), a responsabilidade de preencher a DO é do médico que prestava assistência ao paciente. No enunciado, a médica de família e comunidade acompanhava o paciente regularmente. Portanto, ela é a profissional indicada para atestar o óbito. O IML (Instituto Médico Legal) deve ser acionado apenas em casos de morte por causas externas (acidentes, homicídios, suicídios) ou mortes suspeitas. O SVO (Serviço de Verificação de Óbitos) é indicado para mortes naturais de causa desconhecida ou sem assistência médica.\n\n2. Preenchimento da Parte I (Causas Diretas e Antecedentes):\nA Parte I destina-se à causa terminal e à sucessão de eventos que levaram diretamente ao óbito. O preenchimento deve ser feito da causa mais recente (causa imediata) para a causa mais antiga (causa básica):\n- Linha (a): Causa terminal ou imediata (o evento final que interrompeu a vida).\n- Linhas (b) e (c): Causas intermediárias ou antecedentes que levaram à causa terminal.\n- Última linha preenchida: Causa básica (a doença ou lesão que iniciou a cadeia de eventos patológicos).\n\n3. Preenchimento da Parte II (Causas Contribuintes):\nNeste campo, devem ser anotadas outras doenças preexistentes e significativas que contribuíram para a morte, mas que não entraram na cadeia causal direta descrita na Parte I.\n\nAnálise das alternativas:\n\nAlternativa (a) INCORRETA: O IML não preenche DO de morte natural. Além disso, a Hipertensão Arterial não foi a causa básica que iniciou o quadro respiratório agudo neste episódio.\n\nAlternativa (b) CORRETA: A médica assistente deve emitir o documento. A Parte I descreve a sequência lógica e cronológica: a Síndrome Gripal (causa básica) evoluiu para uma Pneumonia (causa intermediária), que resultou em Insuficiência Respiratória Aguda (causa terminal). Na Parte II, estão corretamente listadas as comorbidades crônicas (AVE e Hipertensão) que, embora não tenham causado a gripe, contribuíram para a fragilidade do paciente.\n\nAlternativa (c) INCORRETA: O SAMU não é o responsável prioritário pelo preenchimento de DO de pacientes crônicos acompanhados por médico assistente em domicílio. Na Parte I, a ordem das causas está invertida (a Síndrome Gripal nunca deve aparecer na linha \"a\" se houver uma consequência posterior a ela).\n\nAlternativa (d) INCORRETA: O SVO é desnecessário neste caso, pois a médica assistente conhece o histórico, e o quadro clínico atual permite estabelecer a causa da morte. A sequência da Parte I também carece de lógica clínica, pois tenta vincular a Hipertensão de 30 anos atrás como causa direta da insuficiência respiratória aguda causada por um vírus ou infecção atual.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Sistemas de Informação em Saúde",
+      "Ética Médica"
+    ],
+    "difficulty": 27.874242430001843,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.249Z"
+  },
+  {
+    "id": "AJUDA_f7e9e86c-40ec-449d-ad6e-a56c7fddf721",
+    "originalId": "f7e9e86c-40ec-449d-ad6e-a56c7fddf721",
+    "statement": "A frequência respiratória (FR) deve sempre ser aferida em caso de criança com infecção respiratória aguda, visando o diagnóstico de pneumonia adquirida na comunidade.\nNa ausência de febre ou sibilância, no momento do exame físico, a FR classificada como taquipneia, de acordo com a faixa etária, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "≥ 60 irpm nos menores de 2 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "≥ 40 irpm naqueles entre 2 e 11 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "≥ 20 irpm naqueles entre 1 e 4 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "≥ 30 irpm naqueles entre 1 e 4 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "≥ 50 irpm nos menores de 2 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A frequência respiratória (FR) é o parâmetro clínico mais sensível para o diagnóstico de pneumonia em crianças, especialmente naquelas com menos de 5 anos. A Organização Mundial da Saúde (OMS) e o Ministério da Saúde utilizam critérios específicos de taquipneia baseados na faixa etária para triagem e manejo dessas infecções.\n\nAnálise das alternativas:\n\na) Correta. Em lactentes menores de 2 meses de idade, define-se taquipneia quando a frequência respiratória é igual ou superior a 60 incursões respiratórias por minuto (irpm). Esse valor elevado reflete a fisiologia respiratória normal dessa faixa etária, que possui uma frequência basal mais alta.\n\nb) Incorreta. Para crianças na faixa etária entre 2 e 11 meses de idade, a taquipneia é definida por uma frequência respiratória igual ou superior a 50 irpm. O valor de 40 irpm, mencionado na alternativa, é o critério para crianças acima de 1 ano.\n\nc) Incorreta. Em crianças entre 1 e 4 anos de idade, o ponto de corte para taquipneia é de 40 irpm ou mais. O valor de 20 irpm é considerado normal para crianças maiores ou adolescentes, mas não serve como critério de taquipneia para a faixa etária de 1 a 4 anos.\n\nd) Incorreta. Como mencionado anteriormente, para a faixa etária de 1 a 4 anos (na verdade, até 4 anos e 11 meses), o critério de taquipneia é uma frequência respiratória igual ou superior a 40 irpm. O valor de 30 irpm é insuficiente para classificar taquipneia nesta idade conforme os protocolos da OMS/AIDPI.\n\ne) Incorreta. O valor de 50 irpm é o critério de taquipneia para crianças entre 2 e 11 meses de idade. Para os menores de 2 meses, devido à maior imaturidade e padrão respiratório mais acelerado, o limite é mais alto, sendo 60 irpm.\n\nResumo dos critérios da OMS para Taquipneia:\n- Menores de 2 meses: maior ou igual a 60 irpm.\n- 2 a 11 meses: maior ou igual a 50 irpm.\n- 1 a 4 anos (até 59 meses): maior ou igual a 40 irpm.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.249Z"
+  },
+  {
+    "id": "AJUDA_f7ef5d87-2200-447e-94b0-0872625dd7c5",
+    "originalId": "f7ef5d87-2200-447e-94b0-0872625dd7c5",
+    "statement": "Homem, 58 anos, relata dor abdominal difusa iniciada há 24 horas, de intensidade moderada a forte, associada a náuseas e vômitos alimentares que evoluíram para biliosos. Refere parada de eliminação de gases há 12 horas e de fezes há 24 horas. Antecedentes cirúrgicos de laparotomia exploradora por trauma abdominal há 8 anos e apendicectomia há 20 anos. Ao exame físico, apresenta regular estado geral, FC 110 bpm, PA 110/70 mmHg e temperatura axilar de 37,7 °C. Abdome moderadamente distendido, com dor à palpação difusa, mais intensa em região periumbilical, sem sinais de irritação peritoneal. Ruídos hidroaéreos presentes, pouco aumentados. A TC de abdome com contraste endovenoso demonstra segmento de jejuno distal dilatado entre dois pontos de estreitamento, com espessura da parede de 4 mm e redução do realce parietal pelo contraste, pequena quantidade de líquido entre alças, dilatação do intestino delgado proximal e estômago, e ausência de pneumoperitônio. Considerando o quadro apresentado, qual é a conduta terapêutica mais indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proceder à abordagem cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Indicar nada por via oral (NPO), hidratação, sonda nasogástrica e manter conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar exame contrastado de trânsito do intestino delgado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Efetuar dosagem de lactato, gasometria arterial e LDH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O paciente apresenta um quadro clínico típico de abdome agudo obstrutivo (dor abdominal em cólica, vômitos biliosos, distensão e parada de eliminação de flatos e fezes) associado a antecedentes de cirurgias prévias, sugerindo bridas/aderências. \n\nNo entanto, a tomografia computadorizada de abdome traz dois achados de alarme fundamentais:\n1. Obstrução em alça fechada: segmento de jejuno dilatado entre dois pontos de estreitamento, situação com altíssimo risco de rápida progressão para necrose e perfuração.\n2. Sinais de sofrimento vascular (isquemia intestinal): redução do realce parietal pelo meio de contraste, espessamento de parede (4 mm) e líquido livre entre as alças.\n\nDiante de obstrução intestinal complicada por alça fechada e sinais tomográficos de isquemia, a indicação de intervenção cirúrgica de urgência é mandatória e imediata.\n\nAnalise das alternativas:\n\nAlternativa A (Correta): A abordagem cirúrgica de urgência (laparotomia exploradora ou laparoscopia, a depender da estabilidade e condições técnicas) é a conduta padrão. O objetivo é desfazer o ponto obstrutivo e avaliar a viabilidade da alça, evitando progressão para necrose transmural, sepse abdominal e perfuração.\n\nAlternativa B (Incorreta): A conduta conservadora com jejum, hidratação venosa e descompressão nasogástrica é reservada para obstruções simples por bridas, na ausência de sinais de estrangulamento, alça fechada, peritonite ou sofrimento de alça. Adotar conduta expectante neste paciente aumentaria o risco de necrose e óbito.\n\nAlternativa C (Incorreta): O estudo contrastado de trânsito delgado ou teste com contraste hidrossolúvel pode ser empregado para diagnóstico e auxílio terapêutico em obstruções mecânicas não complicadas. Em quadros com suspeita evidente de isquemia e alça fechada, o exame é contraindicado por atrasar a cirurgia e apresentar risco de complicações.\n\nAlternativa D (Incorreta): Exames laboratoriais como lactato e gasometria podem ser coletados durante o preparo operatório para avaliar a repercussão sistêmica, mas não devem ser considerados como a conduta principal ou motivo para postergar a indicação cirúrgica já definida pelos achados tomográficos e clínicos.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.249Z"
+  },
+  {
+    "id": "AJUDA_f7f2c008-d6a3-4f96-87cc-92b97b4dae9f",
+    "originalId": "f7f2c008-d6a3-4f96-87cc-92b97b4dae9f",
+    "statement": "Um paciente deu entrada na sala de trauma, vítima de acidente auto versus anteparo, com quadro de dispnéia importante além da perna esquerda com fratura exposta. Sinais vitais: pressão arterial (PA) 80x50 mmHg, frequência cardíaca (FC) 110 bpm, saturação de O2 90%. No exame físico, foi identificado murmúrio pulmonar abolido em hemitórax direito, desvio de traqueia observada na fúrcula esternal e hipertimpanismo torácico à direita, abdome sem alterações e perna esquerda com exposição óssea e sangramento em babação. A conduta imediata que deve ser tomada é realizar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "curativo compressivo no ferimento da perna, pois se trata de um choque hipovolêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "toda sequência do atendimento do Treinamento Suporte Avançado de Vida (ATLS), para depois corrigir os danos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "exame radiológico para confirmação de um pneumotórax hipertensivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "descompressão imediata com agulha de grosso calibre ou toracostomia, pois trata-se de um pneumotórax hipertensivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "curativo de 3 pontas para evitar que o pneumotórax aumente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO paciente apresenta um quadro clássico de pneumotórax hipertensivo, caracterizado por insuficiência respiratória (dispneia e saturação de 90%) associada a sinais de choque obstrutivo (hipotensão arterial e taquicardia). Os achados físicos de murmúrio pulmonar abolido à direita, hipertimpanismo à percussão e desvio de traqueia confirmam o diagnóstico. No atendimento ao trauma (ATLS), o pneumotórax hipertensivo é uma lesão identificada no passo B (Breathing/Respiração) que exige intervenção imediata, pois impede o retorno venoso ao coração, levando ao óbito rapidamente.\n\nExplicação das Alternativas:\n\nAlternativa a) Incorreta. Embora o paciente apresente uma fratura exposta, o sangramento é descrito como \"em babação\", o que não justifica o choque grave (PA 80x50 mmHg). A causa da hipotensão neste cenário é o choque obstrutivo pelo pneumotórax. No protocolo ABCDE, as alterações ventilatórias graves (B) devem ser resolvidas antes do tratamento de fraturas ou sangramentos não exsanguinantes (C).\n\nAlternativa b) Incorreta. O protocolo ATLS determina que uma ameaça à vida deve ser tratada no momento exato em que é diagnosticada durante a avaliação primária. Não se deve completar toda a sequência (A-B-C-D-E) para só então retornar e corrigir um problema identificado no passo B.\n\nAlternativa c) Incorreta. O diagnóstico de pneumotórax hipertensivo é clínico. É um erro grave e comum em provas e na prática médica solicitar exames de imagem (como radiografia de tórax) para confirmar este quadro em um paciente instável, pois o tempo de espera pelo exame pode levar à parada cardiorrespiratória.\n\nAlternativa d) Correta. Diante do diagnóstico clínico de pneumotórax hipertensivo, a conduta é a descompressão imediata. Isso pode ser feito por meio de toracostomia digital ou descompressão por agulha (geralmente no 5º espaço intercostal, entre as linhas axilar anterior e média em adultos) como medida temporária, seguida obrigatoriamente pela drenagem torácica em selo d'água.\n\nAlternativa e) Incorreta. O curativo de três pontas é a conduta inicial para o pneumotórax aberto (ferida torácica aspirante), onde existe uma comunicação direta do meio externo com a cavidade pleural. O caso em questão descreve um pneumotórax hipertensivo (fechado), onde o ar entra no espaço pleural mas não consegue sair, gerando pressão positiva.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.249Z"
+  },
+  {
+    "id": "AJUDA_f7f2c1b1-6c27-4951-ae87-de2802cc7af4",
+    "originalId": "f7f2c1b1-6c27-4951-ae87-de2802cc7af4",
+    "statement": "Um homem de 19 anos é encaminhado ao ambulatório de clínica médica devido a quadro de dor lombar. Refere início dos sintomas há seis meses. A dor é pior pela manhã e melhora ao longo do dia, com rigidez matinal de duas horas. Relata ainda episódios recorrentes de dor e vermelhidão em olho direito, que melhoram espontaneamente. Nega diarreia, corrimento genital ou artralgia de pequenas articulações. Exames laboratoriais evidenciam elevação de provas inflamatórias e leve anemia. Considerando o diagnóstico mais provável, um exame que deve ser solicitado e o tratamento inicial mais adequado, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "HLA B27 / corticosteroide",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "colonoscopia / infliximabe",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "fator reumatoide / metotrexato",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "radiografia de sacroilíacas / anti-inflamatório não esteroidal",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO:\nO paciente em questão é um homem jovem (19 anos) com um quadro clássico de dor lombar de ritmo inflamatório. As características que definem esse tipo de dor são: início antes dos 40 anos, duração superior a três meses, melhora com a atividade física, piora com o repouso e presença de rigidez matinal prolongada (neste caso, de duas horas). Além disso, o relato de dor e vermelhidão ocular recorrente sugere episódios de uveíte anterior aguda, a manifestação extra-articular mais comum das espondiloartrites. A ausência de sintomas gastrointestinais ou urogenitais afasta, inicialmente, artrite reativa ou enteropática, enquanto a ausência de acometimento de pequenas articulações e o perfil do paciente tornam a artrite reumatoide improvável. O diagnóstico mais provável é espondilite anquilosante.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) INCORRETA. Embora o HLA-B27 esteja presente em cerca de 90% dos pacientes brancos com espondilite anquilosante, ele não é um exame obrigatório para o diagnóstico se os critérios clínicos e radiológicos forem preenchidos. Além disso, o uso de corticosteroides sistêmicos não é recomendado para o tratamento da doença axial (coluna e sacroilíacas), pois não apresenta eficácia comprovada nesse sítio, diferentemente do que ocorre em outras doenças reumáticas.\n\nb) INCORRETA. A colonoscopia seria indicada se houvesse suspeita de doença inflamatória intestinal (como doença de Crohn ou retocolite ulcerativa) associada, mas o paciente nega diarreia ou outros sintomas digestivos. O infliximabe (anti-TNF) é uma excelente opção terapêutica para a espondilite anquilosante, porém é reservado para casos que não respondem ao tratamento inicial com anti-inflamatórios.\n\nc) INCORRETA. O fator reumatoide é um marcador da artrite reumatoide, doença que tipicamente poupa a coluna torácica e lombar, preferindo pequenas articulações periféricas de forma simétrica. O metotrexato é uma droga modificadora de doença (DMARD) eficaz para o acometimento periférico das espondiloartrites, mas não tem eficácia demonstrada para o tratamento da dor axial (coluna).\n\nd) CORRETA. O diagnóstico de espondilite anquilosante baseia-se nos Critérios de Nova York Modificados, que exigem a presença de evidência radiográfica de sacroileíte (identificada inicialmente por radiografia de sacroilíacas) associada a critérios clínicos (dor lombar inflamatória e limitação da mobilidade). Quanto ao manejo, os anti-inflamatórios não esteroidais (AINEs) são considerados a primeira linha de tratamento medicamentoso, devendo ser utilizados em doses plenas para o controle da dor e da rigidez. Somente após a falha de pelo menos dois AINEs diferentes por um período adequado é que se considera a progressão para agentes biológicos.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Espondiloartrites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.249Z"
+  },
+  {
+    "id": "AJUDA_f7f64556-472a-4418-a2a3-199fc7523d2d",
+    "originalId": "f7f64556-472a-4418-a2a3-199fc7523d2d",
+    "statement": "Paciente, 45 anos de idade, G3P1C1A1, procura a UBS para aconselhamento contraceptivo. Refere ciclos menstruais irregulares nos últimos 12 meses, variando de 25 a 60 dias, acompanhados de aumento do fluxo menstrual. Queixa-se de ondas de calor ocasionais. É tabagista de 15 cigarros/dia desde os 20 anos de idade e apresenta histórico de enxaqueca com aura visual. Exame físico: PA 128x80 mmHg, IMC 28 kg/m². Exame ginecológico sem alterações. Exames laboratoriais: 1ª coleta: FSH = 15 mUI/mL; LH = 10 mUl/mL, 2ª coleta (30 dias depois): FSH = 30 mUI/mL; LH = 25 mUl/mL. Considerando os critérios de elegibilidade médica da OMS, os sintomas apresentados e os exames laboratoriais, assinale a alternativa que apresenta, corretamente, o método contraceptivo adequado para essa paciente.",
+    "options": [],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige o conhecimento dos Critérios de Elegibilidade Médica da OMS para anticoncepção, aplicados a uma paciente com múltiplos fatores de risco cardiovascular e sintomas de perimenopausa.\n\nAnálise do perfil da paciente:\n1. Idade e Tabagismo: 45 anos e fumante de 15 cigarros/dia. Em mulheres com mais de 35 anos que fumam mais de 15 cigarros/dia, os métodos combinados (estrogênio + progestagênio) são contraindicados (Categoria 4 da OMS).\n2. Enxaqueca com aura: É uma contraindicação absoluta (Categoria 4) para o uso de qualquer método que contenha estrogênio, devido ao risco elevado de Acidente Vascular Cerebral (AVC).\n3. Fluxo menstrual aumentado: A paciente apresenta ciclos irregulares e aumento do volume sanguíneo, característicos da transição menopausal (confirmada pelos níveis elevados de FSH). O método ideal deve ajudar no controle desse sangramento.\n\nAnálise das alternativas e imagens:\n\n(a) Sistema Intrauterino de Levonorgestrel (SIU-LNG/Mirena) - CORRETA: A primeira imagem representa o SIU-LNG. É um método apenas com progestagênio, o que o torna seguro (Categoria 1) para pacientes com enxaqueca com aura e fumantes. Além disso, é o padrão-ouro para o tratamento do sangramento uterino anormal na perimenopausa, pois promove atrofia endometrial e reduz significativamente o fluxo menstrual.\n\n(b) Anel Vaginal - INCORRETA: A segunda imagem mostra um anel vaginal. Este é um método anticoncepcional hormonal combinado (contém etinilestradiol e etonogestrel). Devido à presença do estrogênio, é contraindicado (Categoria 4) para esta paciente pelo tabagismo e pela enxaqueca com aura.\n\n(c) Dispositivo Intrauterino (DIU) de Cobre - INCORRETA: A terceira imagem apresenta um DIU de cobre. Embora seja um método não hormonal e seguro do ponto de vista cardiovascular (Categoria 1), ele tem como efeito colateral frequente o aumento do volume e da duração do fluxo menstrual, além de poder piorar as cólicas. Como a paciente já se queixa de aumento do fluxo, este método não é a melhor escolha.\n\n(d) Adesivo Transdérmico - INCORRETA: A quarta imagem mostra um adesivo anticoncepcional. Assim como o anel vaginal, é um método combinado (estrogênio + progestagênio) e, portanto, absolutamente contraindicado (Categoria 4) pelos riscos de eventos tromboembólicos e vasculares nesta paciente.\n\n(e) SIU de Levonorgestrel (modelo menor/Kyleena) - INCORRETA: A quinta imagem mostra outra variante de SIU hormonal. Embora também seja seguro, a alternativa (a) costuma ser a resposta padrão em provas para o controle de fluxo aumentado na perimenopausa, referindo-se ao SIU de 52 mg de levonorgestrel (Mirena), que possui maior taxa de amenorreia e controle endometrial que as versões de menor dosagem.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Planejamento Familiar",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.250Z"
+  },
+  {
+    "id": "AJUDA_f800117c-998e-4a77-a8b9-fac90198bf5b",
+    "originalId": "f800117c-998e-4a77-a8b9-fac90198bf5b",
+    "statement": "A vacinação constitui umas das mais importantes estratégias na saúde pública na prevenção de doenças e redução de custos em saúde pública, devendo ser orientada e acompanhada por profissionais de saúde. O Ministério da Saúde oferece uma ampla cobertura vacinal para todas as faixas etárias, através do Programa Nacional de Imunizações. Neste contexto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os adolescentes entre 09 a 14 anos devem receber duas doses da vacina HPV Papilomavírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina contra Dengue (Qdenga®), inativada, está disponível para indivíduos de 4 a 60 anos de idade, em duas doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A primeira dose da vacina Rotavírus humano, atenuada, deve ser administrada no máximo até os 9 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aos 12 meses a criança deve receber: o reforço da Pneumocócica 10 valente, o reforço da Meningocócica C conjugada e dose única da Febre Amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A vacina Meningocócica ACWY está disponível para adolescentes entre 11 a 14 anos de idade, em dose única.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão exige conhecimento atualizado sobre as constantes mudanças no Calendário Nacional de Imunização do Ministério da Saúde (PNI). Para resolvê-la, é necessário estar atento às notas técnicas publicadas recentemente.\n\nAlternativa A) INCORRETA. Até o início de 2024, o esquema era de duas doses. No entanto, seguindo recomendações da OMS e da OPAS, o Ministério da Saúde adotou, pela Nota Técnica 41/2024, o esquema de dose única para meninos e meninas de 9 a 14 anos. O objetivo é simplificar a logística e aumentar a cobertura vacinal.\n\nAlternativa B) INCORRETA. A vacina Qdenga não é inativada, mas sim uma vacina de vírus vivo atenuado. Além disso, no âmbito do SUS, ela não é ofertada universalmente até os 60 anos; a estratégia pública foca em faixas etárias específicas (atualmente 10 a 14 anos) em municípios selecionados devido à disponibilidade limitada de doses.\n\nAlternativa C) INCORRETA. A vacina contra o Rotavírus (VORH) possui janelas de administração muito rígidas para garantir a segurança e evitar a intussuscepção intestinal. A primeira dose deve ser administrada obrigatoriamente entre 1 mês e 15 dias até, no máximo, 3 meses e 15 dias de vida. Aos 9 meses, o prazo para iniciar o esquema já expirou.\n\nAlternativa D) INCORRETA. Embora os reforços da Pneumocócica 10 e da Meningocócica C ocorram de fato aos 12 meses, a vacina da Febre Amarela tem um cronograma diferente: a primeira dose é aplicada aos 9 meses de idade e o reforço aos 4 anos. Aos 12 meses, o calendário prevê também a Tríplice Viral (D1).\n\nAlternativa E) CORRETA. Conforme as diretrizes atuais do PNI, a vacina Meningocócica ACWY (conjugada) é disponibilizada para adolescentes em dose única. A faixa etária preconizada é de 11 a 14 anos de idade. Esta medida visa proteger contra quatro sorogrupos da doença meningocócica, aproveitando o momento em que os adolescentes atuam como importantes reservatórios e transmissores da bactéria na comunidade.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.250Z"
+  },
+  {
+    "id": "AJUDA_f80b1190-bab3-4429-a480-04ed06f4514d",
+    "originalId": "f80b1190-bab3-4429-a480-04ed06f4514d",
+    "statement": "Homem, 67 anos de idade, possui antecedentes de hipertensão arterial sistêmica, doença renal crônica dialítica e cefaleia tensional. Está internado na enfermaria de clínica médica em término de tratamento de pneumonia. Durante a evolução, foram identificados, nos controles das últimas 48 horas, múltiplas aferições de pressão arterial próximas a 180×120 mmHg. Apresentou um episódio de sua cefaleia habitual. Assinale a alternativa que apresenta uma etapa do exame físico fundamental para a conduta imediata.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exame do fundo de olho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Medida do peso corpóreo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aferição da circunferência cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pesquisa de sopro abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente com Doença Renal Crônica (DRC) em terapia dialítica que apresenta elevação importante da pressão arterial (180x120 mmHg), acompanhada apenas de sua cefaleia habitual. Em pacientes renais crônicos dialíticos, a principal causa de descontrole pressórico agudo ou subagudo é a hipervolemia (hipertensão volume-dependente), decorrente do acúmulo de líquidos e do não atingimento do peso seco ideal.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A fundoscopia é indicada na suspeita de emergência hipertensiva com lesão aguda de órgão-alvo (como na hipertensão maligna ou encefalopatia hipertensiva). No caso, a cefaleia é descrita como habitual (tensional), afastando a suspeita de um evento neurológico agudo e tornando a avaliação volêmica a prioridade.\n\nAlternativa b: Correta. A pesagem do paciente dialítico é a etapa semiológica mais importante para avaliar a sobrecarga hídrica. A comparação entre o peso atual e o peso seco estimado permite diagnosticar a hipervolemia e determinar a conduta imediata, que consiste no ajuste da taxa de ultrafiltração na sessão de hemodiálise.\n\nAlternativa c: Incorreta. A medida da circunferência do pescoço é um método de rastreio para síndrome da apneia/hipopneia obstrutiva do sono (SAOS), uma causa de hipertensão secundária de investigação ambulatorial, sem relevância para a conduta imediata no ambiente hospitalar.\n\nAlternativa d: Incorreta. A ausculta de sopro abdominal busca identificar estenose de artéria renal (hipertensão renovascular). Trata-se de uma investigação crônica de hipertensão secundária, sem aplicabilidade prática ou imediata para um paciente que já possui falência renal terminal estabelecida.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.250Z"
+  },
+  {
+    "id": "AJUDA_f8183689-63cd-4ff6-9a80-9ffef96d5b97",
+    "originalId": "f8183689-63cd-4ff6-9a80-9ffef96d5b97",
+    "statement": "Paciente de 45 anos de idade do sexo masculino procurou atendimento médico na Unidade de Pronto Atendimento devido ao surgimento de dispneia aos grandes esforços associada a palpitações há 8 semanas, além de astenia progressiva. Negou febre, dispneia paroxística noturna, edemas, precordialgia, tosse, cianose, sibilos, dor torácica ou hemoptise. Informou que estava vivendo em situação de rua há 1 ano, período em que passou a ter alimentação muito precária, com consequente perda ponderal de 8 Kg. Negou histórico de comorbidades, tabagismo, uso de drogas ilícitas ou etilismo. Ao exame, apresentava-se emagrecido, lúcido e orientado, com mucosas pálidas, anictérico, acianótico e sem adenomegalias. Sem anormalidades no exame cardiovascular, pulmonar, abdominal e neurológico. O hemograma do paciente mostrou hemoglobina de 8,4 g/dL, VCM 112 fL, leucócitos 3.000/mL e plaquetas 115.000/mL. No esfregaço sanguíneo identificou-se a presença de hemácias macrocíticas e neutrófilos hipersegmentados.\n\nPacientes com quadros mais severos da mesma hipovitaminose do paciente do caso acima podem apresentar",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Wernicke-Korsakoff.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "icterícia por hiperbilirrubinemia indireta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "queilite angular, dermatite seborreica e vascularização da córnea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dermatite, diarreia e demência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "neuropatia com diminuição da sensação de vibração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico e laboratorial do paciente indica claramente uma anemia megaloblástica. Os principais achados que sustentam esse diagnóstico são: macrocitose (VCM 112 fL), pancitopenia (anemia, leucopenia e plaquetopenia) e a presença de neutrófilos hipersegmentados no esfregaço de sangue periférico (achado patognomônico). Esse tipo de anemia ocorre geralmente por deficiência de vitamina B12 (cobalamina) ou vitamina B9 (ácido fólico), ambas comuns em situações de desnutrição grave e privação alimentar, como relatado no caso.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A síndrome de Wernicke-Korsakoff é causada pela deficiência de vitamina B1 (tiamina), frequentemente associada ao etilismo crônico ou à desnutrição grave. Embora o paciente esteja desnutrido, os achados hematológicos de macrocitose e hipersegmentação de neutrófilos apontam especificamente para a carência de B12 ou folato.\n\nAlternativa B: Correta. Na anemia megaloblástica, ocorre um fenômeno chamado eritropoiese ineficaz. Devido ao defeito na síntese de DNA, os precursores das hemácias são anormais e acabam sendo destruídos ainda dentro da medula óssea (hemólise intramedular). Essa destruição libera hemoglobina, que é convertida em bilirrubina indireta, podendo levar ao surgimento de icterícia em casos mais graves, além da elevação de desidrogenase lática (DHL).\n\nAlternativa C: Incorreta. Queilite angular, dermatite seborreica e vascularização da córnea são manifestações clássicas da deficiência de vitamina B2 (riboflavina), que não se correlacionam com o quadro de anemia macrocítica e pancitopenia descrito.\n\nAlternativa D: Incorreta. Dermatite, diarreia e demência formam a tríade da pelagra (os \"3 Ds\"), causada pela deficiência de vitamina B3 (niacina). Não há relação direta com neutrófilos hipersegmentados ou macrocitose severa.\n\nAlternativa E: Incorreta. A neuropatia com diminuição da sensação de vibração e posição (degeneração combinada subaguda da medula) é exclusiva da deficiência de vitamina B12. No entanto, a questão apresenta um paciente com exame neurológico normal e uma história de desnutrição global na qual a deficiência de folato (que não causa esses sintomas neurológicos) é um diferencial importante. A alternativa B é considerada mais adequada para descrever a repercussão do quadro hematológico grave (hemólise intramedular) comum a ambas as hipovitaminoses que causam megaloblastose. Além disso, o enunciado pergunta sobre quadros severos da \"mesma hipovitaminose\", e a hiperbilirrubinemia indireta é uma consequência direta da gravidade da própria anemia megaloblástica.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.250Z"
+  },
+  {
+    "id": "AJUDA_f81ff570-fbd2-46fe-b948-f263e01efbb9",
+    "originalId": "f81ff570-fbd2-46fe-b948-f263e01efbb9",
+    "statement": "Lactente de 3 meses, peso de 4600g, está apresentando tosse há 11 dias, com episódios persistentes, chegando a apresentar vômito após alguns deles. Mãe nega febre no período. Procurou atendimento médico na primeira semana, sendo realizado painel viral negativo para coronavírus, influenza e sincicial respiratório. Está em uso de solução fisiológica para lavagem nasal, sem melhora do quadro. Volta hoje ao pronto atendimento devido a persistência da tosse e dificuldade para dormir. Antecedentes: mãe adolescente, não realizou pré-natal, teste rápido de HIV e VDRL maternos negativos no dia do parto; pesou 2650 g ao nascer; recebeu as vacinas de BCG e Hepatite B até o momento. Nega tossidores crônicos no domicílio. Apresenta saturação de oxigênio de 95% em ar ambiente, com queda durante episódios de tosse. Foi optado por internar a criança.\nQual a recomendação, quanto ao tipo de precaução, para o leito desta internação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "De contato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para gotículas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Para aerossóis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Padrão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um lactente de 3 meses com tosse paroxística há 11 dias, vômitos pós-tosse (êmese pós-tussígena), ausência de febre, painel viral respiratório negativo e atraso vacinal importante (não recebeu as vacinas de 2 meses, incluindo a pentavalente, que confere proteção contra coqueluche). Esse quadro clínico-epidemiológico é altamente sugestivo de coqueluche, infecção causada pela bactéria Bordetella pertussis.\n\nA Bordetella pertussis é transmitida por meio de gotículas respiratórias expelidas pela tosse, espirro ou fala. Dessa forma, além das precauções padrão, o paciente deve ser colocado sob precaução para gotículas, necessitando de quarto privativo (ou coorte) e uso de máscara cirúrgica pelos profissionais de saúde ao entrar no leito. O isolamento deve ser mantido até o quinto dia após o início do tratamento com macrolídeo ou por 21 dias após o início dos sintomas caso o paciente não receba antibioticoterapia apropriada.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A precaução de contato é indicada para patógenos transmitidos por contato direto com o paciente ou superfícies contaminadas, como bactérias multirresistentes, diarreias infecciosas (rotavírus, Clostridioides difficile) e infecções cutâneas disseminadas. A coqueluche não é transmitida primariamente por essa via.\n\nAlternativa B (Correta): A transmissão da coqueluche ocorre por gotículas (partículas maiores que 5 micrômetros que se depositam a curtas distâncias, geralmente até 1 a 2 metros). Portanto, a precaução recomendada é para gotículas.\n\nAlternativa C (Incorreta): A precaução para aerossóis é indicada para agentes infecciosos transportados por partículas menores que 5 micrômetros, que permanecem suspensas no ar por longos períodos e atingem distâncias maiores. É exigida em doenças como tuberculose pulmonar/laríngea ativa, sarampo e varicela, demandando quarto com pressão negativa e máscara N95/PFF2.\n\nAlternativa D (Incorreta): A precaução padrão consiste em medidas básicas (como higiene das mãos e uso de EPI dependendo do contato com fluidos) aplicadas a todos os pacientes. No entanto, diante de um caso suspeito ou confirmado de coqueluche, a precaução padrão é insuficiente, sendo mandatória a instituição de precaução específica para gotículas.\n\nGabarito: Letra B.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Coqueluche"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:32.250Z"
+  }
+]

@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_7c4b4d1b-afa5-4f76-8f1c-a4535f26a410",
+    "originalId": "7c4b4d1b-afa5-4f76-8f1c-a4535f26a410",
+    "statement": "Mulher, 56 anos, diabética tipo 2 em tratamento irregular, procura atendimento por lesões recorrentes na região inguinal há cerca de 18 meses. Refere prurido intenso, sensação de ardor e desconforto local, especialmente em dias quentes. Relata uso frequente de Dexametasona creme, com melhora parcial e recidiva ao suspender.\n\nQual achado laboratorial é o mais provável de ser encontrado neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pseudohifas à coloração com KOH.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Anatomopatológico com dermatite psoriasiforme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste de contato positivo para propilenoglicol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coloração vermelho coral à luz de Wood.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico e a imagem apresentada são característicos de intertrigo candidiásico (candidíase cutânea). Os principais fatores que sustentam este diagnóstico são: paciente com diabetes mellitus descompensado (fator de risco clássico para proliferação fúngica), acometimento de dobra cutânea (região inguinal) que piora com calor e umidade, e o uso de corticoide tópico (dexametasona), que atenua temporariamente a resposta inflamatória, mas promove proliferação fúngica e recidiva da infecção. A imagem evidencia uma placa eritematosa na raiz da coxa com as clássicas lesões satélites (pápulas e pústulas periféricas), patognomônicas da infecção por Candida spp.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): O exame micológico direto com hidróxido de potássio (KOH a 10-20%) é o teste de escolha rápido para confirmação diagnóstica de candidíase. O achado microscópico característico de Candida albicans e outras espécies é a presença de leveduras arredondadas ou ovaladas associadas a pseudohifas e blastoconídios em brotamento.\n\nAlternativa B (Incorreta): O padrão anatomopatológico de dermatite psoriasiforme com espessamento epidérmico regular é típico da psoríase. Embora a psoríase invertida ocorra em áreas de dobras, ela se apresenta como placas eritematosas bem delimitadas, sem a presença de pústulas ou pápulas satélites.\n\nAlternativa C (Incorreta): O teste de contato (patch test) avalia dermatite de contato alérgica por hipersensibilidade tipo IV. Embora o propilenoglicol seja um excipiente comum em formulações tópicas, a história clínica de diabetes, a topografia em dobras e a presença de lesões satélites na imagem apontam para etiologia infecciosa, e não alérgica.\n\nAlternativa D (Incorreta): A fluorescência vermelho-coral ao exame sob lâmpada de Wood é o achado clássico do eritrasma, uma infecção bacteriana superficial causada por Corynebacterium minutissimum. O eritrasma em dobras manifesta-se clinicamente como manchas acastanhadas ou avermelhadas finamente descamativas, geralmente assintomáticas e desprovidas de lesões satélites.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Infecciosas",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/e758903787a68edfc928c20d67781b73bbc1bab32e836d69522dcc0bcf1393dd.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_7c4b4d1b-afa5-4f76-8f1c-a4535f26a410_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  },
+  {
+    "id": "AJUDA_7c563f26-a930-47bd-880e-711939897c7e",
+    "originalId": "7c563f26-a930-47bd-880e-711939897c7e",
+    "statement": "Um homem de 70 anos comparece ao ambulatório da cirurgia geral com queixa de perda ponderal de 8 kg em 3 meses, associada a astenia e alteração recente do hábito intestinal, apresentando episódios de diarreia alternados com períodos de constipação prolongada. Refere ainda presença de sangue vivo nas fezes nas últimas semanas. Nega comorbidades prévias. Ao exame físico, apresenta-se emagrecido e com dor à palpação profunda da região hipogástrica.\nDiante da suspeita clínica e considerando os dados sobre a incidência e a mortalidade por neoplasias malignas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O câncer colorretal é a neoplasia de maior incidência entre os homens no mundo, superando o câncer de próstata, pulmão e fígado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A principal causa de morte por câncer entre os homens é o câncer de próstata, e sua taxa de mortalidade é superior à de pulmão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Embora mais incidente, o câncer colorretal é muito menos letal do que o câncer de pulmão em ambos os sexos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O câncer colorretal apresenta mortalidade mais elevada do que o câncer de pâncreas em números relativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A combinação de perda de peso e o sangramento nas fezes indicam, com alto grau de especificidade, câncer gástrico em estágio avançado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico descreve um paciente idoso com sinais de alerta (red flags) clássicos para neoplasia colorretal: perda ponderal, alteração do hábito intestinal e hematoquezia (sangue vivo nas fezes). A questão exige conhecimentos epidemiológicos sobre incidência e mortalidade das principais neoplasias malignas.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Globalmente, o câncer de próstata e o câncer de pulmão apresentam incidência superior ao câncer colorretal no sexo masculino. Segundo dados do INCA (Brasil) e da base GLOBOCAN (OMS), o câncer colorretal geralmente ocupa a segunda ou terceira posição em incidência, dependendo da região, mas não supera o de próstata em termos globais e nacionais no Brasil.\n\nAlternativa b) Incorreta. A principal causa de morte por câncer entre homens no mundo é o câncer de pulmão. Apesar de o câncer de próstata ser muito incidente, ele possui uma letalidade menor em comparação ao de pulmão, que frequentemente é diagnosticado em estágios avançados e possui biologia mais agressiva.\n\nAlternativa c) Correta. O câncer colorretal possui uma incidência elevada na população geral, sendo um dos tumores mais comuns. No entanto, quando comparado ao câncer de pulmão, sua letalidade é consideravelmente menor. O câncer de pulmão apresenta uma das menores taxas de sobrevida em cinco anos entre as grandes neoplasias, enquanto o câncer colorretal, especialmente se detectado precocemente por rastreamento, possui altas taxas de cura e controle.\n\nAlternativa d) Incorreta. O câncer de pâncreas é uma das neoplasias mais letais que existem. Em números relativos (taxa de letalidade ou relação mortalidade/incidência), o câncer de pâncreas é muito mais mortal que o colorretal. Quase a totalidade dos pacientes diagnosticados com câncer de pâncreas evolui para óbito em curto prazo, enquanto o câncer colorretal permite sobrevida prolongada em grande parte dos casos.\n\nAlternativa e) Incorreta. Embora a perda de peso seja comum a ambos, a presença de sangue vivo nas fezes (hematoquezia) e a alteração do hábito intestinal (diarreia e constipação) são sintomas altamente sugestivos de tumores do trato digestivo baixo (cólon e reto). O câncer gástrico costuma se manifestar com dor epigástrica, saciedade precoce e, em caso de sangramento, apresenta-se mais comumente como melena (sangue digerido, escuro e com odor fétido).",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Estatística Médica",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  },
+  {
+    "id": "AJUDA_7c7779f8-e133-4b69-9f36-0ed449838ebb",
+    "originalId": "7c7779f8-e133-4b69-9f36-0ed449838ebb",
+    "statement": "Assinale a assertiva correta sobre hipertensão arterial sistêmica em crianças e adolescentes.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em adolescentes e crianças a partir dos 3 anos, ou antes se houver fatores de risco, recomenda-se medir a pressão arterial anualmente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Para crianças e adolescentes de 1-18 anos, a determinação dos níveis normais de pressão arterial deve levar em consideração sexo, idade, altura e raça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "São fatores de risco para hipertensão arterial sistêmica: pielonefrites recorrentes, anemia falciforme e prematuros com menos de 36 semanas de idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para selecionar o tamanho correto do manguito, a parte inflável deve representar cerca de 60% da circunferência do braço, e a largura, cerca de 40% da circunferência do braço.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a (Correta): Esta assertiva reflete as recomendações atuais da Academia Americana de Pediatria (AAP) e da Sociedade Brasileira de Pediatria (SBP). A medida da pressão arterial (PA) deve ser realizada anualmente em todas as crianças a partir dos 3 anos de idade durante as consultas de rotina. Em crianças com menos de 3 anos, a aferição da PA não é obrigatória em todas as consultas, sendo reservada para situações específicas nas quais existam fatores de risco, como prematuridade (especialmente < 32 semanas), baixo peso ao nascer, cardiopatias congênitas, doenças renais ou uso de medicamentos que alterem a PA.\n\nAlternativa b (Incorreta): A determinação dos níveis normais de pressão arterial na infância e adolescência é feita por meio de tabelas de percentis. Os parâmetros necessários para consultar essas tabelas são: sexo, idade e estatura (percentil de altura). A raça não é um parâmetro utilizado para a definição dos níveis de normalidade da pressão arterial em pediatria.\n\nAlternativa c (Incorreta): Embora a anemia falciforme e as cicatrizes renais decorrentes de pielonefrites recorrentes sejam de fato causas de hipertensão secundária, o item está tecnicamente incorreto quanto ao critério de prematuridade. Para fins de rastreamento obrigatório da pressão arterial antes dos 3 anos de idade, as diretrizes consideram como fatores de risco a prematuridade extrema ou muito prematura (geralmente menores de 32 semanas de idade gestacional) ou recém-nascidos com complicações neonatais graves, e não apenas prematuros abaixo de 36 semanas.\n\nAlternativa d (Incorreta): Para a aferição correta da pressão arterial em crianças, o tamanho do manguito deve ser proporcional ao tamanho do braço do paciente. A largura da bolsa de borracha (parte inflável) deve corresponder a 40% da circunferência do braço (medida no ponto médio entre o acrômio e o olécrano). Já o comprimento da bolsa de borracha (a parte que envolve o braço) deve ser suficiente para cobrir de 80% a 100% da circunferência do braço, e não 60% como afirmado na alternativa. O uso de manguitos pequenos demais pode superestimar os valores da pressão arterial.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  },
+  {
+    "id": "AJUDA_7c7925d0-3a3c-4625-8ab4-9dc9fdf76d06",
+    "originalId": "7c7925d0-3a3c-4625-8ab4-9dc9fdf76d06",
+    "statement": "Uma paciente de 46 anos deu entrada no Pronto Socorro com história de cefaleia holocraniana de leve intensidade há duas semanas. Há uma semana, houve intensificação da cefaleia e surgimento de febre baixa diária. Ao exame, a paciente se encontrava febril, sonolenta e com rigidez de nuca leve. A tomografia computadorizada do crânio revelou discreto espessamento meníngeo. Em seguida, a paciente foi submetida à punção liquórica, sendo obtido líquido levemente turvo e xantocrômico, com pressão de abertura de 22 cm de água, 250 células/mm² (40% neutrófilos, 40% linfócitos e 20% monócitos), proteínas de 550 mg/dl e glicose de 10 mg/dl. Assinale a opção que contenha doenças que melhor justificam os achados liquóricos desta paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meningite viral e meningite fúngica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Meningite viral e meningite bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Meningite tuberculosa e meningite fúngica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Meningite tuberculosa e meningoencefalite herpética.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO E LIQUÓRICO\n\nA paciente apresenta um quadro de evolução subaguda (duas semanas de sintomas), o que afasta, inicialmente, as meningites bacterianas agudas comuns, que evoluem em poucas horas ou dias. O ponto-chave da questão está na interpretação dos achados do líquido cefalorraquidiano (LCR):\n\n1. Glicose de 10 mg/dL: Uma hipoglicorraquia (baixa glicose) tão acentuada indica consumo por agentes biológicos. É característica de bactérias, fungos e micobactérias. Meningites virais mantêm a glicose normal.\n2. Proteínas de 550 mg/dL: Uma hiperproteinorraquia (proteína alta) acentuada é típica de processos inflamatórios intensos e crônicos, como na tuberculose e em infecções fúngicas.\n3. Celularidade de 250 células/mm² com padrão misto: A celularidade moderada (entre 50 e 500) com equilíbrio entre neutrófilos e linfomononucleares reforça o caráter subagudo. Nas bacterianas agudas, a celularidade costuma ser muito superior a 1.000 com predomínio de neutrófilos (acima de 80%).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A meningite viral apresenta, obrigatoriamente, níveis de glicose normais (glicorraquia normal). Além disso, o aumento de proteínas nas meningites virais é leve (geralmente abaixo de 100 mg/dL). A meningite fúngica, por outro lado, se encaixaria nos achados.\n\nAlternativa B (Incorreta): Como mencionado, a meningite viral não reduz a glicose. A meningite bacteriana aguda apresenta um quadro clínico muito mais explosivo, celularidade muito mais elevada e predomínio nítido de neutrófilos, diferente do padrão misto e da evolução de duas semanas desta paciente.\n\nAlternativa C (Correta): Este é o diagnóstico clássico para o LCR descrito. A meningite tuberculosa e a meningite fúngica (especialmente a criptocócica) possuem instalação subaguda ou crônica. Ambas causam um \"líquor de consumo\" importante (glicose muito baixa), proteínas significativamente elevadas devido à barreira hematoencefálica lesada e pleocitose moderada com padrão que pode ser linfocitário ou misto. O aspecto xantocrômico (amarelado) também sugere alta concentração de proteínas ou sangramento prévio, comum na cronicidade dessas doenças.\n\nAlternativa D (Incorreta): A meningite tuberculosa está correta, porém a meningoencefalite herpética (HSV) geralmente apresenta glicose normal e um quadro clínico com alterações de comportamento, crises convulsivas e sinais de localização (acometimento do lobo temporal), além de frequentemente apresentar hemácias no líquor devido ao seu caráter necrosante.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  },
+  {
+    "id": "AJUDA_7c7d1440-f153-45a3-ae31-7889386b64e1",
+    "originalId": "7c7d1440-f153-45a3-ae31-7889386b64e1",
+    "statement": "Mulher 51 anos, utilizando DIU-LNG 52 mg há 4 anos, apresenta sintomas vasomotores intensos, alteração do sono e irritabilidade. Sem comorbidades. G1P1 e DUM: 50 anos. Exames físico e complementares sem alterações. Qual seria o melhor tratamento para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Remover DIU-LNG e iniciar estradiol 0,5 mg, oral, contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter DIU-LNG e iniciar testosterona 2mg, gel transdérmico, contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter DIU-LNG e iniciar acetato de noretisterona 35 mcg, oral, contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter DIU-LNG e iniciar estradiol 0,5 mg/dose, gel transdérmico, contínuo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Remover DIU-LNG e iniciar estradiol 1mg com didrogesterona 10mg, oral, cíclico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente de 51 anos apresenta sintomas clássicos de transição menopausal/pós-menopausa (fogachos intensos, insônia e irritabilidade). Ela possui o útero íntegro e já utiliza um sistema intrauterino liberador de levonorgestrel (DIU-LNG 52 mg) há 4 anos. O DIU-LNG é um método excelente para fornecer a proteção endometrial necessária na Terapia de Reposição Hormonal (TRH), pois age localmente, prevenindo a hiperplasia e o câncer de endométrio.\n\nComo a paciente tem útero, a TRH obrigatoriamente deve conter um estrogênio (para tratar os sintomas vasomotores) e um progestagênio (para proteção endometrial). Como ela já possui a proteção progestagênica através do DIU, basta adicionar o estrogênio.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Ao remover o DIU-LNG e iniciar apenas estradiol oral, a paciente ficaria com o útero desprotegido. O uso de estrogênio isolado em mulheres com útero aumenta significativamente o risco de hiperplasia e adenocarcinoma de endométrio.\n\nAlternativa b) Incorreta. A testosterona não é o tratamento de primeira linha para sintomas vasomotores (fogachos). Sua indicação principal na pós-menopausa é para o Transtorno do Desejo Sexual Hipoativo, após a otimização da terapia estrogênica.\n\nAlternativa c) Incorreta. O acetato de noretisterona é um progestagênio. A paciente já possui progestagênio via DIU e seus sintomas decorrem da deficiência de estrogênio. Adicionar mais progestagênio não tratará os sintomas vasomotores.\n\nAlternativa d) Correta. Esta é a conduta mais adequada e fisiológica. Mantém-se o DIU-LNG para garantir a proteção do endométrio e adiciona-se o estradiol por via transdérmica (gel). A via transdérmica é preferível por evitar o efeito de primeira passagem hepática, não aumentar o risco de tromboembolismo venoso e ser mais segura em termos cardiovasculares, especialmente em pacientes iniciando a terapia em torno dos 50 anos.\n\nAlternativa e) Incorreta. Não há necessidade de remover um DIU-LNG que ainda está no prazo de validade (pode ser usado por até 5 anos ou mais para proteção endometrial na TRH). Além disso, a paciente tem 51 anos e está há um ano sem menstruar (DUM aos 50 anos), o que indica pós-menopausa. O regime cíclico (que provoca sangramento de privação) não é a primeira escolha para mulheres na pós-menopausa, preferindo-se o regime contínuo para evitar sangramentos.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  },
+  {
+    "id": "AJUDA_7c879184-bf6f-4ddd-94f2-f9c3651b8c1e",
+    "originalId": "7c879184-bf6f-4ddd-94f2-f9c3651b8c1e",
+    "statement": "Paciente, sexo masculino, 62 anos, hipertenso, apresenta quadro súbito de hemiparesia à direita e afasia. A tomografia de crânio realizada 3 horas após o início dos sintomas não evidencia hemorragia ou lesão isquêmica aguda estabelecida. A conduta CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar ressonância magnética de crânio para confirmar isquemia antes de tratar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar AAS 300 mg e clopidogrel imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever heparina de baixo peso molecular em dose plena.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar trombólise intravenosa com alteplase (rt-PA).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nO quadro clínico descrito — início súbito de déficit neurológico focal (hemiparesia e afasia) em um paciente com fatores de risco cardiovascular — é altamente sugestivo de Acidente Vascular Cerebral Isquêmico (AVCI). A conduta deve ser guiada pelo tempo de início dos sintomas e pelos achados da imagem inicial.\n\nAnálise da alternativa correta:\n\nAlternativa (d): O paciente encontra-se dentro da janela terapêutica para trombólise endovenosa, que é de até 4,5 horas do início dos sintomas (o paciente tem 3 horas de evolução). A tomografia de crânio sem contraste é o exame de escolha inicial não para visualizar o infarto (que pode demorar até 24-48 horas para aparecer nitidamente), mas sim para excluir hemorragia intracraniana. Uma vez excluído o sangramento e estando dentro do tempo hábil, a terapia de reperfusão com alteplase (rt-PA) é a conduta padrão-ouro para tentar reverter o déficit e reduzir sequelas.\n\nAnálise das alternativas incorretas:\n\nAlternativa (a): A ressonância magnética (RM) é mais sensível que a tomografia para detectar isquemia precoce, porém o tempo necessário para sua realização atrasaria o tratamento definitivo. No manejo do AVCI agudo, adota-se o princípio de que tempo é cérebro. Se a tomografia já descartou hemorragia, não há necessidade de confirmar a isquemia por RM antes de iniciar a trombólise.\n\nAlternativa (b): O AAS e outros antiagregantes plaquetários são fundamentais na prevenção secundária do AVCI, mas não devem ser administrados imediatamente se o paciente for candidato à trombólise. Caso o trombolítico seja utilizado, o AAS deve ser evitado nas primeiras 24 horas pelo risco de transformação hemorrágica. Além disso, o tratamento de escolha para reperfusão é o trombolítico, e não a antiagregação isolada.\n\nAlternativa (c): O uso de heparina em dose plena (anticoagulação) na fase aguda do AVCI não demonstrou benefício em reduzir a mortalidade ou recorrência precoce e está associado a um risco aumentado de sangramento intracraniano grave. Portanto, não é uma conduta recomendada para o manejo inicial do déficit agudo.\n\nResumo da conduta:\nDiante de um déficit neurológico súbito com menos de 4,5 horas e tomografia de crânio normal (sem sangue), a prioridade absoluta é a trombólise química para restaurar o fluxo sanguíneo cerebral.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  },
+  {
+    "id": "AJUDA_7c8bcf1b-1bbe-4336-a51a-4c2d14885914",
+    "originalId": "7c8bcf1b-1bbe-4336-a51a-4c2d14885914",
+    "statement": "Um paciente de 52 anos, sem comorbidades conhecidas, é admitido ao pronto-socorro com hematêmese e sinais de hipotensão (PA 80/50 mmHg e FC 115 bpm). Ao exame físico, apresenta pele fria e sudoreica, tempo de enchimento capilar de 3s. A hemoglobina é de 8,4 g/dL. O paciente não apresenta histórico de etilismo ou uso de anticoagulantes, mas faz uso ocasional de anti-inflamatórios não esteroidais (AINEs), em virtude de dores em ombro direito. Qual dos itens abaixo é a estratégia mais adequada para o manejo inicial deste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar a endoscopia imediatamente, postergando otimização clínica, baseado no conceito “STOP THE BLEED\", e iniciar inibidor de bomba de prótons assim que possível, provavelmente por sonda nasoenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transferir o paciente para UTI e realizar a endoscopia após a estabilização completa, avaliando necessidade de terapia intravenosa com inibidor de bomba de prótons após endoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar ressuscitação volêmica, inibidor de bomba de prótons intravenoso em alta dose e realizar a endoscopia em até 24 horas para identificar e tratar a lesão responsável pela hemorragia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Postergar a endoscopia por 48 horas e focar na ressuscitação volêmica e hemotransfusão até a hemoglobina atingir 9g/dl, exceto se paciente cardiopata cujo alvo deve ser 12g/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de Hemorragia Digestiva Alta (HDA) grave, manifestada por hematêmese e choque hipovolêmico (hipotensão, taquicardia, pele fria e tempo de enchimento capilar prolongado). O histórico de uso de anti-inflamatórios não esteroidais (AINEs) sugere a úlcera péptica como a etiologia mais provável. Em pacientes com instabilidade hemodinâmica, a prioridade absoluta é a estabilização clínica antes de qualquer procedimento diagnóstico ou terapêutico invasivo.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) INCORRETA. A realização da endoscopia digestiva alta (EDA) \"imediatamente\", sem a prévia estabilização hemodinâmica, é contraindicada. O paciente chocado apresenta alto risco de complicações durante o procedimento, como aspiração pulmonar e colapso cardiovascular. A estabilização deve preceder a endoscopia. Além disso, o inibidor de bomba de prótons (IBP) no cenário de sangramento agudo deve ser administrado preferencialmente por via intravenosa, e não por sonda nasoenteral.\n\nAlternativa b) INCORRETA. Embora a estabilização seja necessária, a alternativa falha ao sugerir que a terapia com IBP intravenoso deva ser avaliada apenas após a endoscopia. As diretrizes recomendam o início do IBP intravenoso precocemente (pré-endoscopia), pois essa medida reduz a presença de estigmas de alto risco na lesão e a necessidade de terapia endoscópica durante o exame.\n\nAlternativa c) CORRETA. Esta alternativa descreve o manejo padrão recomendado pelos principais consensos internacionais (como o Consenso de Glasgow e as diretrizes da ESGE). A conduta sequencial deve ser: 1) Ressuscitação volêmica vigorosa com cristaloides para restaurar a pressão arterial e a perfusão; 2) Administração de IBP intravenoso em altas doses; 3) Realização da EDA precocemente (dentro de 24 horas), após o paciente estar clinicamente estável, para identificação da causa e tratamento hemostático.\n\nAlternativa d) INCORRETA. Aguardar 48 horas para realizar a endoscopia é um atraso excessivo que aumenta a morbimortalidade. Em relação à hemotransfusão, a recomendação atual para HDA não varicosa (estudo de Villanueva et al.) é uma estratégia restritiva, iniciando transfusão quando a hemoglobina (Hb) atinge valores inferiores a 7 g/dL, com alvo de Hb entre 7 e 9 g/dL. No caso do paciente, com Hb de 8,4 g/dL, a transfusão não seria a prioridade inicial imediata, a menos que houvesse perda maciça persistente. O alvo de 12 g/dL para cardiopatas é excessivo e não encontra respaldo nas evidências atuais.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  },
+  {
+    "id": "AJUDA_7ca20bf5-aa69-408a-bf77-4f7ecd56fa32",
+    "originalId": "7ca20bf5-aa69-408a-bf77-4f7ecd56fa32",
+    "statement": "Assinale a alternativa que preenche, correta e respectivamente, as lacunas do parágrafo abaixo.\nOs recursos financeiros do Sistema Único de Saúde, na esfera federal, são originários da .......... e fiscalizados pelo(a) ..........; as receitas geradas são creditadas diretamente no .......... .",
+    "options": [
+      {
+        "id": "A",
+        "text": "Saúde – Conselho de Saúde – Fundo Municipal de Saúde",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Seguridade Social – Conselho de Saúde – Fundo Nacional de Saúde",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Seguridade Social – Conferência de Saúde – Fundo Nacional de Saúde",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Previdência Social – Conferência de Saúde – Fundo Municipal de Saúde",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder corretamente a esta questão, é necessário dominar os conceitos de financiamento e controle social do Sistema Único de Saúde (SUS), fundamentados na Constituição Federal de 1988 e na Lei 8.142/90.\n\nAnálise das lacunas:\n\n1. Origem dos recursos: Na esfera federal, o financiamento da saúde provém do Orçamento da Seguridade Social. A Seguridade Social no Brasil é um conjunto integrado de ações que abrange a Saúde, a Previdência Social e a Assistência Social (o famoso tripé da seguridade). Portanto, os recursos não vêm apenas de uma pasta, mas do orçamento global da Seguridade.\n\n2. Fiscalização: O controle social e a fiscalização dos gastos em saúde são atribuições dos Conselhos de Saúde. Os Conselhos são órgãos colegiados, permanentes e deliberativos, compostos por representantes do governo, prestadores de serviços, profissionais de saúde e usuários (paritários). Eles atuam no controle da execução da política de saúde, inclusive nos aspectos financeiros.\n\n3. Crédito das receitas: Para garantir a transparência e a aplicação exclusiva na saúde, os recursos devem ser geridos por meio de um fundo. Na esfera federal, esse órgão gestor é o Fundo Nacional de Saúde (FNS), que recebe as receitas e operacionaliza os repasses (fundo a fundo) para Estados e Municípios.\n\nAnálise das alternativas:\n\na) Incorreta. Embora os recursos sejam para a área da saúde, a origem orçamentária técnica é a \"Seguridade Social\". Além disso, a questão trata da esfera federal; portanto, o crédito deve ocorrer no Fundo Nacional, e não no Fundo Municipal.\n\nb) Correta. A Seguridade Social é a fonte dos recursos federais, o Conselho de Saúde é o órgão responsável pela fiscalização e o Fundo Nacional de Saúde é onde as receitas são creditadas para gestão federal.\n\nc) Incorreta. O erro principal está na \"Conferência de Saúde\". As Conferências ocorrem a cada quatro anos com o objetivo de avaliar a situação de saúde e propor diretrizes para o planejamento. Elas não possuem a função de fiscalizar a execução financeira cotidiana, papel que pertence aos Conselhos.\n\nd) Incorreta. A Previdência Social é apenas um dos componentes da Seguridade Social, não a origem total do recurso. A alternativa também erra ao citar a Conferência de Saúde como fiscalizadora e o Fundo Municipal como destinatário direto dos recursos da esfera federal.\n\nGabarito: Letra (b).",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  },
+  {
+    "id": "AJUDA_7cab50d8-f451-4342-b2f1-071e49a0d8d5",
+    "originalId": "7cab50d8-f451-4342-b2f1-071e49a0d8d5",
+    "statement": "Paciente de 38 anos, é G4A3, com história de ex-tabagismo, relata ainda 2 cirurgias prévias para miomectomia (1 por histeroscopia e outra por via abdominal laparoscópica). Como já teve 3 abortamentos, tem muita preocupação em perder o bebê. Ela tem vontade de ter parto vaginal e é resistente à cesárea. Como está com 41 semanas, sem nenhum sinal de trabalho de parto, com feto em boas condições, o médico do pré-natal indicou indução do parto e ela veio à consulta para saber se pode ou não fazer a indução. Das orientações abaixo, qual é a mais adequada para a paciente, considerando sua condição?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A indução pode ser realizada desde que se use a metade da dose do misoprostol de 25mg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A indução é contra indicada em pacientes com cicatriz uterina anterior (miomectomia).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A indução pode ser realizada com o uso de Prostaglandinas até o nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A indução pode ser realizada ou não a depender da vontade da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A indução é contra indicada pela história de abortamento de repetição.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nO ponto central desta questão é a segurança da indução do parto em uma paciente com cicatriz uterina prévia. A paciente realizou uma miomectomia por via abdominal (laparoscópica), o que implica uma incisão no miométrio (camada muscular do útero). Cicatrizes uterinas decorrentes de cirurgias transmurais, como a miomectomia abdominal ou cesáreas prévias, criam uma área de fragilidade permanente na parede uterina.\n\nALTERNATIVA A - INCORRETA:\nO misoprostol é um análogo da prostaglandina E1. O uso de qualquer dose de prostaglandina para indução do parto em pacientes com cicatriz uterina prévia é formalmente contraindicado pelos principais protocolos obstétricos (como os da FEBRASGO e ACOG). Essas substâncias podem causar contrações intensas e descoordenadas (taquissistolia), elevando drasticamente o risco de ruptura uterina no local da cicatriz prévia.\n\nALTERNATIVA B - CORRETA:\nA presença de uma cicatriz de miomectomia abdominal (especialmente quando há manipulação profunda do miométrio ou entrada na cavidade endometrial) é considerada uma contraindicação para a indução do parto. Diferente de uma única cesárea anterior segmentar, onde se discute o uso cauteloso de ocitocina, a cicatriz de miomectomia é frequentemente mais irregular e menos resistente. O risco de ruptura uterina durante o trabalho de parto induzido é muito alto, o que torna a indução contraindicada para garantir a segurança materna e fetal.\n\nALTERNATIVA C - INCORRETA:\nConforme explicado na alternativa A, o uso de prostaglandinas é o principal fator de risco medicamentoso para ruptura uterina em úteros cicatrizados. Manter o uso até o nascimento seria expor a paciente a um risco contínuo de ruptura durante toda a evolução do parto.\n\nALTERNATIVA D - INCORRETA:\nEmbora a autonomia da paciente seja um pilar da bioética, ela não se sobrepõe à segurança clínica em situações de alto risco. A indução em um útero com cicatriz de miomectomia abdominal não é uma escolha eletiva baseada apenas na vontade, mas sim um procedimento tecnicamente contraindicado devido ao risco de vida associado à ruptura uterina.\n\nALTERNATIVA E - INCORRETA:\nA história de abortamento de repetição (G4A3) não é, por si só, uma contraindicação para a indução do parto. Pacientes com perdas gestacionais prévias podem ter partos induzidos normalmente, desde que não apresentem outros fatores de risco. O impedimento nesta paciente é exclusivamente a cicatriz cirúrgica uterina.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Indução do Parto e Pós-Datismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  },
+  {
+    "id": "AJUDA_7cbfc627-bc60-4afd-a9a8-ff70c944113c",
+    "originalId": "7cbfc627-bc60-4afd-a9a8-ff70c944113c",
+    "statement": "C.A.S.S., 10 meses, deu entrada na unidade de pronto atendimento acompanhada da mãe, a qual relata que há 3 dias menor iniciou quadro de febre com temperatura aferida variando entre 38-39oC, associada à diarreia leve. Hoje, já não apresentou mais febre, porém, mãe observou o surgimento de manchas vermelhas pelo corpo, que iniciaram no tronco e se espalharam, o que a deixou preocupada e por isso procurou o pronto atendimento, sem qualquer outra queixa associada. Ao exame físico, criança em bom estado geral, auscultas pulmonar e cardíaca dentro da normalidade; ao exame da pele, observa-se exantema máculo-papular, que desaparecem à compressão, presentes no tronco, membros e face, não descamativo e não pruriginoso. Após avaliação, qual o diagnóstico e agente etiológico correto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exantema súbito, herpes vírus humano 6.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Eritema infeccioso, herpes vírus humano 7.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Varicela, vírus varicela zoster.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rubéola, Rubella vírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve uma lactente de 10 meses com um quadro clássico de Exantema Súbito, também conhecido como Roséola Infantil. Os principais pontos que levam a esse diagnóstico são: a idade da paciente (comumente ocorre entre 6 e 15 meses), a presença de febre alta que desaparece subitamente (em crise) e o surgimento do exantema logo após a defervescência da febre.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Correta. O quadro de febre alta por 3 dias que cessa para dar lugar a um exantema máculo-papular que se inicia no tronco e se espalha para membros e face, em uma criança com bom estado geral, é a apresentação típica do Exantema Súbito. O principal agente etiológico é o Herpes-vírus Humano tipo 6 (HHV-6), embora o tipo 7 também possa causar a doença em uma menor porcentagem de casos.\n\nAlternativa b) Incorreta. O Eritema Infeccioso é causado pelo Parvovírus B19. Clinicamente, ele se manifesta em três fases: primeiro a face esbofeteada, seguida por um exantema rendilhado nos membros e, por fim, a recidiva do exantema com exposição ao sol ou ao calor. Não apresenta essa relação característica de desaparecimento da febre para o surgimento das manchas. Além disso, o agente citado na alternativa (HHV-7) está associado ao exantema súbito, não ao eritema infeccioso.\n\nAlternativa c) Incorreta. A Varicela (catapora), causada pelo vírus Varicela-Zóster, caracteriza-se por lesões polimórficas (máculas, pápulas, vesículas e crostas presentes simultaneamente) que são intensamente pruriginosas. No caso descrito, o exantema é máculo-papular, não vesicular, e não apresenta prurido.\n\nAlternativa d) Incorreta. A Rubéola apresenta um exantema que tipicamente começa na face e progride de forma cefalocaudal (para baixo), acompanhado frequentemente de linfonodomegalia retroauricular, occipital e cervical. Diferente do exantema súbito, na rubéola a febre costuma ser baixa e ocorre simultaneamente ao exantema, não desaparecendo antes de as manchas surgirem.\n\nResumo do diagnóstico:\nA sequência de febre alta que some subitamente seguida de exantema de início troncular em lactente é o sinal patognomônico do Exantema Súbito (HHV-6).",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:35.215Z"
+  }
+]

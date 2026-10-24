@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_a4797f33-a916-499b-bb57-2fc1b075677b",
+    "originalId": "a4797f33-a916-499b-bb57-2fc1b075677b",
+    "statement": "Um dos mais importantes indicadores em saúde pública é o coeficiente de mortalidade infantil. Seu cálculo, para uma determinada área e período de tempo, é feito estabelecendo-se a relação entre o número de óbitos de menores de",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 ano pelo número total de óbitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 mês pelo número total de partos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1 ano pelo número total de partos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1 ano pelo número de nascidos vivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "1 mês pelo número de nascidos vivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Coeficiente de Mortalidade Infantil (CMI) é um dos indicadores de saúde e desenvolvimento socioeconômico mais utilizados mundialmente. Ele estima o risco de um nascido vivo morrer antes de completar o primeiro ano de vida.\n\nPara entender a questão, devemos analisar a fórmula padrão do CMI:\n(Número de óbitos de menores de 1 ano de idade / Número total de nascidos vivos no mesmo período e local) x 1.000.\n\nAnálise das alternativas:\n\na) Incorreta. Ao dividir o número de óbitos de menores de 1 ano pelo número total de óbitos, estaríamos calculando a proporção de mortes infantis em relação ao total de mortes da população (mortalidade proporcional por idade), e não o coeficiente de mortalidade infantil, que mede o risco de morte para os nascidos.\n\nb) Incorreta. O período de 1 mês (especificamente 28 dias) refere-se à mortalidade neonatal. Além disso, o denominador \"número total de partos\" é tecnicamente impreciso, pois um parto pode resultar em mais de um nascido (gemelaridade) ou em natimortos.\n\nc) Incorreta. Embora o tempo (1 ano) esteja correto, o denominador \"número total de partos\" está errado. O indicador deve ser calculado sobre o número de nascidos vivos, excluindo-se os óbitos fetais (fetos que já nascem sem vida).\n\nd) Correta. Esta alternativa descreve exatamente os componentes do Coeficiente de Mortalidade Infantil. O numerador é composto pelos óbitos de crianças de 0 a 364 dias de vida (menores de 1 ano) e o denominador é o número de nascidos vivos naquela mesma área e período.\n\ne) Incorreta. A relação entre óbitos de menores de 1 mês (até 27 dias de vida) e o número de nascidos vivos define o Coeficiente de Mortalidade Neonatal, que é um subcomponente da mortalidade infantil, mas não representa o indicador em sua totalidade.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  },
+  {
+    "id": "AJUDA_a47fbf33-3d89-483b-81d7-a4baa17f93ee",
+    "originalId": "a47fbf33-3d89-483b-81d7-a4baa17f93ee",
+    "statement": "A inclusão social e a luta contra o estigma de doença mental são cruciais para a efetividade da psiquiatria social no Brasil. Garantir que pessoas com transtornos mentais possam viver de forma digna e integrada à sociedade é um objetivo central que demanda esforços contínuos de educação, sensibilização e políticas públicas eficazes. Assinale a alternativa que apresenta corretamente um serviço da comunidade que promove inclusão social de pessoas com transtornos mentais no Brasil.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hospital psiquiátrico, que oferece tratamento intensivo e prolongado, mas sem interação com a comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Clínica particular, que fornece atendimento psicológico e psiquiátrico, mas somente para pacientes com condições financeiras favorecidas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Unidade de pronto atendimento, que se concentra apenas em emergências psiquiátricas, sem acompanhamento contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Centro de Atenção Psicossocial (CAPS), que oferece terapia, atividades ocupacionais e suporte social em um ambiente comunitário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O tema central desta questão é a Reforma Psiquiátrica Brasileira, fundamentada na Lei 10.216/2001, que busca a substituição do modelo asilar (focado no isolamento) por uma Rede de Atenção Psicossocial (RAPS) de base comunitária e territorial.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O hospital psiquiátrico tradicional baseia-se no modelo de internação e segregação. O tratamento \"prolongado e sem interação com a comunidade\" é o oposto do que propõe a psiquiatria social, pois favorece a perda de vínculos sociais e o aumento do estigma, indo contra o objetivo de inclusão social.\n\nAlternativa (b) Incorreta. Embora clínicas particulares prestem assistência clínica, elas não constituem, por definição, um serviço de base comunitária voltado para a formulação de políticas públicas de inclusão. Além disso, a restrição por condições financeiras fere o princípio de universalidade do SUS e não resolve o problema da inclusão social em nível populacional.\n\nAlternativa (c) Incorreta. As Unidades de Pronto Atendimento (UPA) são pontos de atenção às urgências e emergências. Elas cumprem o papel de estabilização em crises agudas, mas não possuem a estrutura necessária para o acompanhamento longitudinal, a reabilitação psicossocial ou atividades de integração comunitária necessárias para a inclusão social.\n\nAlternativa (d) Correta. O Centro de Atenção Psicossocial (CAPS) é o dispositivo estratégico da Reforma Psiquiátrica. Ele é um serviço de saúde de porta aberta, inserido na comunidade, que conta com equipe multiprofissional (médicos, psicólogos, enfermeiros, terapeutas ocupacionais, assistentes sociais, entre outros). O CAPS foca na reabilitação psicossocial por meio de oficinas, grupos terapêuticos e suporte social, visando manter o indivíduo em seu território e promover sua autonomia e cidadania.\n\nGabarito: Letra (d).",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Social e Reforma Psiquiátrica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  },
+  {
+    "id": "AJUDA_a47fff88-5ad4-45bb-8da2-abd0129b9062",
+    "originalId": "a47fff88-5ad4-45bb-8da2-abd0129b9062",
+    "statement": "Homem, 52 anos, será submetido a colectomia subtotal devido a doença diverticular. O paciente tem hipertensão arterial e diabetes mellitus controlados com uso correto e regular de medicamentos. Qual a classificação pré-operatória desse paciente conforme os critérios de risco cirúrgico anestésico da Sociedade Americana de Anestesiologistas (ASA)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asa I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Asa III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Asa II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Asa IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "CONCEITO DA CLASSIFICAÇÃO ASA\n\nA classificação da Sociedade Americana de Anestesiologistas (ASA) é um sistema utilizado mundialmente para avaliar o estado físico do paciente no período pré-operatório. Essa escala varia de I a VI e ajuda a prever o risco de complicações e mortalidade durante e após o procedimento cirúrgico.\n\nANÁLISE DO CASO CLÍNICO\n\nO paciente em questão possui 52 anos e apresenta duas condições patológicas: hipertensão arterial e diabetes mellitus. O enunciado enfatiza que ambas estão controladas com o uso regular de medicamentos. Na classificação ASA, doenças sistêmicas bem controladas, que não limitam a atividade diária do paciente, são o critério fundamental para o enquadramento em uma categoria específica.\n\nANÁLISE DAS ALTERNATIVAS\n\na) ASA I: Incorreta. Esta categoria é exclusiva para pacientes saudáveis, não fumantes, que não fazem uso de medicações crônicas e não possuem doenças diagnosticadas. O paciente do caso possui comorbidades, o que o retira desta classificação.\n\nb) ASA III: Incorreta. O ASA III é destinado a pacientes com doença sistêmica grave que gera limitação funcional substantiva (por exemplo, diabetes ou hipertensão mal controlados, DPOC, obesidade mórbida ou insuficiência renal em diálise). Como o paciente do enunciado está com as doenças controladas e não apresenta limitações descritas, ele não atinge o nível de gravidade do ASA III.\n\nc) ASA II: Correta. O ASA II engloba pacientes com doença sistêmica leve a moderada, sem limitações funcionais, ou pacientes com fatores de risco específicos. Exemplos clássicos incluem fumantes, etilistas sociais, gestantes, obesos (IMC entre 30 e 40) e, como no caso da questão, portadores de hipertensão ou diabetes bem controlados por medicamentos.\n\nd) ASA IV: Incorreta. Esta categoria é reservada para pacientes com doenças sistêmicas graves que representam uma ameaça constante à vida (como infarto agudo do miocárdio ou AVC ocorrido há menos de 3 meses, isquemia cardíaca persistente ou disfunção valvular grave). O quadro do paciente é estável e controlado, não se aplicando a este nível de risco.\n\nGABARITO: Alternativa (c).",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  },
+  {
+    "id": "AJUDA_a4812f4b-e24e-4773-bdfa-9978261e6251",
+    "originalId": "a4812f4b-e24e-4773-bdfa-9978261e6251",
+    "statement": "Um paciente de 28 anos de idade procurou atendimento médico em razão de febre alta, tosse produtiva com expectoração purulenta, dor torácica unilateral e leucocitose significativa. A radiografia mostrou condensação lobar no lobo inferior direito. No caso, o tratamento mais adequado a ser iniciado nesse paciente é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "administração de corticosteroide isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitação de cultura de escarro seguida de antibiótico empírico adequado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "administração de antibiótico empírico intravenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "observação ambulatorial por 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente de 28 anos apresenta um quadro clássico de Pneumonia Adquirida na Comunidade (PAC), caracterizado por sintomas agudos (febre alta, tosse produtiva e dor torácica) associados a achados de exame de imagem (condensação lobar) e laboratoriais (leucocitose). O foco do tratamento da PAC é a introdução precoce de antibioticoterapia empírica.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O uso de corticosteroides isolados não tem papel no tratamento da pneumonia bacteriana. Embora possam ser usados como terapia adjuvante em casos muito graves de choque séptico, o tratamento mandatório é o antibiótico para combater o agente infeccioso.\n\nAlternativa B: Incorreta. O início do tratamento antibiótico na pneumonia não deve ser retardado para a solicitação ou coleta de exames de cultura. O tratamento deve ser empírico e imediato. Além disso, para pacientes jovens e previamente hígidos, a realização de cultura de escarro geralmente não é necessária, pois o Streptococcus pneumoniae é o principal agente e o tratamento empírico costuma ser eficaz.\n\nAlternativa C: Correta. O diagnóstico é de pneumonia bacteriana. O pilar do tratamento é a antibioticoterapia empírica, iniciada o mais rapidamente possível após a suspeita clínica e confirmação radiológica. Embora a via de administração (oral ou intravenosa) possa variar conforme a gravidade (avaliada por escores como o CURB-65), a alternativa aponta corretamente para a necessidade do antibiótico empírico como a conduta adequada entre as opções listadas.\n\nAlternativa D: Incorreta. A observação ambulatorial sem tratamento por 48 horas é contraindicada. A pneumonia é uma doença potencialmente grave que requer intervenção imediata. Postergar o início do antibiótico aumenta significativamente o risco de complicações, como insuficiência respiratória, sepse e empiema pleural.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  },
+  {
+    "id": "AJUDA_a484c979-9898-4ac5-88ac-60fb0bb822dc",
+    "originalId": "a484c979-9898-4ac5-88ac-60fb0bb822dc",
+    "statement": "Thales, 13 anos, comparece ao consultório pediátrico com queixa de que demora para pegar no sono, sente incômodo nas pernas, que piora ao deitar-se à noite e melhora com massagem ou quando se movimenta. Não apresenta outras queixas ou comorbidades. Qual é o exame complementar mais indicado nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Saturação de transferrina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dosagem de ferritina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dosagem de ferro sérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hemograma completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Receptor solúvel de transferrina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico: O quadro clínico descrito (desconforto nos membros inferiores que piora ao repouso e à noite, com alívio pelo movimento) é clássico da Síndrome das Pernas Inquietas (SPI), também conhecida como Doença de Willis-Ekbom. \n\nFisiopatologia e Investigação: A deficiência de ferro no sistema nervoso central desempenha um papel fundamental na patogênese da SPI, mesmo na ausência de anemia clínica. O ferro é um cofator essencial para a síntese de dopamina, e níveis baixos de ferro cerebral estão associados à gravidade dos sintomas. Por esse motivo, a primeira conduta na investigação complementar de um paciente com SPI é a avaliação dos estoques de ferro.\n\nAnálise das alternativas:\n\na) Incorreta. A saturação de transferrina é um parâmetro importante para avaliar a disponibilidade de ferro para a eritropoiese, mas não é o marcador isolado de escolha inicial para avaliar os estoques totais de ferro na Síndrome das Pernas Inquietas.\n\nb) Correta. A dosagem de ferritina sérica é o exame complementar mais indicado e o padrão-ouro inicial para avaliar as reservas corporais de ferro. Em pacientes com SPI, recomenda-se manter níveis de ferritina acima de 75 ng/mL (ou 50 ng/mL em alguns protocolos pediátricos), valores estes superiores aos limites de normalidade para a população geral, visando à melhora dos sintomas.\n\nc) Incorreta. O ferro sérico isolado sofre grandes flutuações diárias (ritmo circadiano, dieta) e não reflete com precisão os estoques de ferro do organismo, sendo insuficiente para o manejo da SPI.\n\nd) Incorreta. O hemograma completo pode identificar anemia ferropriva, mas um paciente pode ter deficiência de ferro significativa o suficiente para causar sintomas neurológicos (como a SPI) mesmo com níveis de hemoglobina e índices hematimétricos normais.\n\ne) Incorreta. O receptor solúvel de transferrina é um marcador útil para identificar deficiência de ferro em contextos de inflamação crônica (onde a ferritina pode estar falsamente elevada), mas não é o exame de primeira linha ou o mais indicado no protocolo inicial de investigação da SPI.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Distúrbios do Sono"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  },
+  {
+    "id": "AJUDA_a48792f8-ee95-4e26-be1c-8665a312d649",
+    "originalId": "a48792f8-ee95-4e26-be1c-8665a312d649",
+    "statement": "Paciente, 25 anos de idade, sexo masculino, apresenta quadro de dispneia progressiva, há cerca de 4 semanas, associada a dor torácica atípica e tosse seca. Realizou tomografia de tórax que evidenciou volumosa tumoração em mediastino anterior. Apresenta elevação importante da alfafetoproteína e beta-hcg séricos. Assinale a alternativa que apresenta, corretamente, o diagnóstico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bócio intratorácico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Linfoma não-Hodgkin.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paraganglioma mediastinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Timoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tumor de células germinativas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão descreve um paciente jovem, do sexo masculino, com sintomas compressivos intratorácicos (dispneia, dor e tosse) e uma massa volumosa no mediastino anterior. O ponto fundamental para a resolução do caso é a presença de marcadores tumorais elevados: alfafetoproteína (AFP) e beta-hCG.\n\nPara massas de mediastino anterior, utilizamos frequentemente a regra dos 4 Ts: Timoma, Teratoma (e outros tumores de células germinativas), Terrível Linfoma e Tireoide (bócio intratorácico).\n\nAnálise das alternativas:\n\na) Bócio intratorácico: O bócio mergulhante é uma causa importante de massa mediastinal, mas geralmente se localiza no mediastino superior, acomete pacientes mais velhos e não está associado à elevação de AFP ou beta-hCG.\n\nb) Linfoma não Hodgkin: É um diagnóstico diferencial comum em adultos jovens com massas mediastinais. No entanto, o linfoma costuma elevar o marcador LDH (desidrogenase lática) e apresentar sintomas sistêmicos (febre, perda de peso, sudorese noturna), não sendo responsável pela produção de AFP ou beta-hCG.\n\nc) Paraganglioma mediastinal: São tumores neuroendócrinos raros que, na maioria das vezes, localizam-se no mediastino posterior (junto à cadeia simpática). Quando funcionantes, secretam catecolaminas, causando hipertensão e taquicardia, mas não os marcadores citados na questão.\n\nd) Timoma: É o tumor mais comum do mediastino anterior em adultos (especialmente entre 40 e 60 anos). Pode estar associado a síndromes paraneoplásicas, como a miastenia gravis, mas não produz alfafetoproteína nem beta-hCG.\n\ne) Tumor de células germinativas: Esta é a alternativa correta. Em homens jovens com massa no mediastino anterior, os tumores de células germinativas (TCG) extragonadais devem sempre ser pesquisados. A elevação de alfafetoproteína (AFP) e beta-hCG é característica dos TCGs não seminomatosos (como o tumor do saco vitelino, carcinoma embrionário ou coriocarcinoma). O seminoma puro pode elevar discretamente o beta-hCG em alguns casos, mas nunca a AFP. Portanto, a combinação desses marcadores em um homem jovem com massa mediastinal anterior sela o diagnóstico clínico de tumor de células germinativas.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  },
+  {
+    "id": "AJUDA_a497ffce-7c4c-495a-873d-8e2ca750b2ff",
+    "originalId": "a497ffce-7c4c-495a-873d-8e2ca750b2ff",
+    "statement": "Um homem de 48 anos, sem comorbidades conhecidas, procura atendimento médico devido a sintomas de fadiga progressiva, febre baixa intermitente, e dores ósseas difusas há 2 meses. Ele também relata perda de apetite e perda de peso de 7 kg nesse período. Recentemente, notou sangramento gengival espontâneo e hematomas pelo corpo. Ao exame físico, apresenta palidez significativa, linfonodomegalias cervicais discretas e hepatomegalia palpável. O hemograma revela anemia (hemoglobina de 7,8 g/dL), leucocitose (72.000/mm³), com 35% de blastos circulantes, neutropenia e trombocitopenia (plaquetas de 45.000/mm³). A bioquímica apresenta elevação discreta de ácido úrico e desidrogenase láctica (LDH). Com base nesse caso clínico, assinale o diagnóstico mais provável e o exame essencial para confirmar esse diagnóstico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mieloma múltiplo; eletroforese de proteínas para detecção de pico monoclonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Leucemia aguda; biópsia de medula óssea com imunofenotipagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Linfoma não-Hodgkin; biópsia de linfonodo cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome mielodisplásica; realização de cariótipo para análise citogenética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "PTT; dosagem de ADAMTS13 e contagem de esquizócitos no sangue periférico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de falência medular aguda associado a sintomas de infiltração tecidual. Os principais achados são:\n1. Síndrome anêmica (palidez e fadiga).\n2. Síndrome hemorrágica (sangramento gengival e hematomas por trombocitopenia).\n3. Sintomas constitucionais (febre, perda de peso e anorexia).\n4. Sinais de infiltração de órgãos e tecidos (dores ósseas, hepatomegalia e linfonodomegalias).\n\nO dado fundamental do hemograma é a presença de 35% de blastos circulantes. Pela classificação da Organização Mundial da Saúde (OMS), a presença de 20% ou mais de blastos no sangue periférico ou na medula óssea é diagnóstica de leucemia aguda. A elevação de LDH e ácido úrico reflete o alto turnover celular (proliferação e destruição rápida de células neoplásicas).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O mieloma múltiplo é uma neoplasia de plasmócitos que geralmente se manifesta com a tríade de anemia, lesões ósseas líticas e disfunção renal (critérios CRAB). Embora cause dores ósseas, o mieloma não costuma cursar com 35% de blastos na corrente sanguínea, que é uma característica de leucemias. A eletroforese de proteínas busca o pico monoclonal, mas não é o exame para diagnóstico de leucemia aguda.\n\nAlternativa b) Correta. O quadro clínico de instalação rápida, febre, sangramentos e, principalmente, a presença de blastos acima de 20% no hemograma definem a leucemia aguda. O exame padrão-ouro para confirmação e classificação é o estudo da medula óssea (mielograma e/ou biópsia) associado à imunofenotipagem por citometria de fluxo, que permite diferenciar se a linhagem é mieloide (LMA) ou linfoide (LLA), essencial para definir o tratamento.\n\nAlternativa c) Incorreta. Embora linfomas possam apresentar linfonodomegalia e sintomas B (febre e perda de peso), o achado de 35% de blastos no sangue periférico indica que o processo primário está na medula óssea e no sangue (leucemização). A biópsia de linfonodo é útil para linfomas, mas não é o exame essencial quando há evidência clara de leucemia aguda no sangue periférico.\n\nAlternativa d) Incorreta. As síndromes mielodisplásicas (SMD) são distúrbios clonais que geram citopenias por hematopoese ineficaz, mas, por definição, apresentam contagem de blastos inferior a 20%. Quando o número de blastos atinge ou ultrapassa 20%, o diagnóstico passa a ser leucemia mieloide aguda. O cariótipo é importante para o prognóstico, mas não é o exame confirmatório principal neste contexto de blastose elevada.\n\nAlternativa e) Incorreta. A púrpura trombocitopênica trombótica (PTT) é uma emergência hematológica caracterizada por anemia hemolítica microangiopática e trombocitopenia severa. O quadro da PTT apresenta esquizócitos no sangue periférico e deficiência de ADAMTS13, mas não cursa com blastos circulantes nem com a leucocitose acentuada descrita no caso.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  },
+  {
+    "id": "AJUDA_a49de713-e0e9-4444-9ef9-d0abefd94e79",
+    "originalId": "a49de713-e0e9-4444-9ef9-d0abefd94e79",
+    "statement": "A vitamina D é considerada um pré-hormônio e apresenta papel crucial na homeostase do cálcio e, consequentemente, na saúde óssea. A maior fonte de vitamina D é a pele, em resposta à luz solar. Apenas pequenas quantidades dessa vitamina são encontradas em alguns alimentos, especialmente peixes gordurosos, o que faz com que a disponibilidade da vitamina D na dieta seja limitada. Estudos populacionais brasileiros demonstram que a prevalência da hipovitaminose D no nosso país é elevada.\nFERREIRA, C. E. et al., Jornal Brasileiro de Patologia e Medicina Laboratorial, v. 53, n, 6, 2017. Adaptado.\n\nBaseando-se nas evidências científicas atuais e na indicação correta de solicitação da dosagem de Vitamina D sérica, assinale a alternativa com os grupos de risco para hipovitaminose D.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diabéticos, hipertensos, adultos jovens e idosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gestantes, lactantes, portadores de doença renal crônica e doenças inflamatórias intestinais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Idosos, portadores de Hanseníase, Psoríase ou Lupus discoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Portadores de osteoporose, osteopenia, doença celíaca e pancreatite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A dosagem da vitamina D sérica (25(OH)D) não deve ser realizada como rastreamento populacional na população geral e saudável. Ela está indicada apenas para grupos específicos que apresentam alto risco de deficiência ou condições clínicas que podem ser agravadas pela hipovitaminose, conforme as diretrizes da Sociedade Brasileira de Endocrinologia e Metabologia (SBEM).\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta. Embora os idosos (acima de 65 anos) sejam um grupo de risco clássico devido à menor síntese cutânea e menor exposição solar, adultos jovens saudáveis e indivíduos apenas hipertensos ou diabéticos (sem outras complicações como doença renal) não possuem indicação formal de rastreio de rotina.\n\nAlternativa (b) Correta. Esta alternativa contempla grupos de alto risco estabelecidos pelos consensos médicos:\n- Gestantes e lactantes: Apresentam maior demanda metabólica de cálcio e vitamina D.\n- Portadores de Doença Renal Crônica (DRC): O rim é o local da segunda hidroxilação da vitamina D (transformando-a em sua forma ativa, o calcitriol). Além disso, a DRC altera todo o metabolismo mineral e ósseo.\n- Doenças Inflamatórias Intestinais (DII): Condições como a Doença de Crohn e a Retocolite Ulcerativa prejudicam a absorção de gorduras e vitaminas lipossolúveis (A, D, E, K), levando à deficiência.\n\nAlternativa (c) Incorreta. Idosos e portadores de lúpus (pelo uso crônico de corticoides e necessidade de fotoproteção rigorosa) são grupos de risco. No entanto, a hanseníase e a psoríase, embora possam ter relações imunológicas com a vitamina D, não constam nas listas principais de indicações de triagem laboratorial sistemática para hipovitaminose D.\n\nAlternativa (d) Incorreta. Portadores de osteoporose, osteopenia e doença celíaca (pela má absorção) são indicações corretas. Contudo, a alternativa cita \"pancreatite\" de forma genérica. Apenas a pancreatite crônica, que cursa com insuficiência pancreática exócrina e consequente má absorção intestinal, seria um fator de risco. A pancreatite aguda não é indicação para dosagem de vitamina D. Comparativamente, a alternativa (b) apresenta um conjunto de indicações mais sólido e frequente nas diretrizes clínicas.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  },
+  {
+    "id": "AJUDA_a49e98b7-f1fc-44d5-b6e8-cdeb154490ea",
+    "originalId": "a49e98b7-f1fc-44d5-b6e8-cdeb154490ea",
+    "statement": "A cobertura mínima preconizada pela OMS para a realização de exames preventivos de câncer de colo de útero em mulheres entre 35 e 59 anos, como forma de reduzir a morbimortalidade por este câncer, é de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "60%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "70%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "80%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "90%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O câncer do colo do útero é uma das neoplasias mais passíveis de prevenção e controle por meio de programas de rastreamento populacional organizados. Para que esses programas tenham um impacto real na saúde pública, reduzindo significativamente a incidência e a mortalidade da doença, a Organização Mundial da Saúde (OMS) define parâmetros técnicos específicos.\n\nA alternativa correta é a letra (c) 80%.\n\nA explicação detalhada segue abaixo:\n\nAlternativa a) 60%: Esta porcentagem é considerada baixa para um programa de rastreamento de base populacional. Embora qualquer nível de cobertura ajude indivíduos isoladamente, uma cobertura de apenas 60% não é suficiente para alterar de forma drástica o perfil epidemiológico de uma região ou país em relação ao câncer de colo uterino.\n\nAlternativa b) 70%: Este valor aparece em diretrizes mais recentes da OMS (Estratégia Global para Acelerar a Eliminação do Câncer do Colo do Útero), mas com um objetivo específico: garantir que 70% das mulheres sejam rastreadas com um teste de alto desempenho (como o teste de DNA-HPV) pelo menos duas vezes na vida (aos 35 e aos 45 anos) até 2030. No entanto, para o rastreamento convencional e contínuo, o marco histórico de eficácia mínima é superior.\n\nAlternativa c) 80%: Esta é a resposta correta. A OMS e os manuais de oncologia e saúde pública estabelecem que o rastreamento citopatológico (Papanicolau) deve atingir, no mínimo, 80% da população-alvo, com qualidade assegurada e seguimento adequado dos casos alterados. Somente a partir desse patamar de cobertura é que se observa uma redução sustentada e expressiva nas taxas de morbimortalidade pela doença na população. No Brasil, o Ministério da Saúde segue essa recomendação da OMS como meta para o controle do câncer do colo do útero.\n\nAlternativa d) 90%: O número de 90% é frequentemente citado nas metas da OMS para outras frentes, como a vacinação contra o HPV em meninas de até 15 anos e o tratamento de 90% das mulheres identificadas com lesões precursoras ou câncer invasor. Embora uma cobertura de 90% no rastreamento fosse ideal, ela não é definida como a cobertura mínima necessária para iniciar a queda da mortalidade, mas sim como uma meta de excelência e erradicação.\n\nEm resumo, para provas de residência e concursos, guarde o valor de 80% como a cobertura mínima necessária preconizada pela OMS para que o rastreamento do câncer do colo do útero seja considerado efetivo em termos de saúde coletiva.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  },
+  {
+    "id": "AJUDA_a4a1441b-157f-443c-821f-38335d17e33d",
+    "originalId": "a4a1441b-157f-443c-821f-38335d17e33d",
+    "statement": "Recebida no atendimento pré-natal, a gestante NAB, 30 anos, professora de ensino fundamental, primigesta, traz resultado da ultrassonografia morfológica de 2o trimestre. Ela está bastante preocupada, pois no 1o trimestre da gestação referiu ter ficado fortemente gripada e agora o bebê apresenta alterações. Resultado da ultrassonografia morfológica com 24 semanas, o feto apresenta restrição de crescimento fetal, ventriculomegalia e hepatomegalia. A placenta apresenta calcificações e placentomegalia. Qual a principal hipótese e conduta inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome da rubéola congênita - sorologia IgG e IgM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coronavírus – Swab nasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Toxoplasmose – PCR no líquido amniótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Citomegalovírus – sorologia IgG e IgM.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO:\nO quadro clínico descreve uma gestante que apresentou uma síndrome gripal no primeiro trimestre, período crítico para a organogênese e de maior risco de sequelas fetais graves decorrentes de infecções. Os achados da ultrassonografia morfológica do segundo trimestre são típicos de uma infecção congênita do grupo TORCH: a ventriculomegalia indica comprometimento do sistema nervoso central, a hepatomegalia indica disseminação sistêmica, e a placentomegalia com calcificações reflete a resposta inflamatória placentária à infecção viral.\n\nALTERNATIVA A: INCORRETA. A síndrome da rubéola congênita é classicamente caracterizada pela tríade de Gregg: catarata (ou outras alterações oculares), surdez neurossensorial e cardiopatia congênita (principalmente persistência do canal arterial). Embora possa haver restrição de crescimento e hepatomegalia, os achados placentários e a ventriculomegalia são mais marcantes na infecção por citomegalovírus. Além disso, a rubéola tornou-se rara devido ao sucesso das campanhas de vacinação.\n\nALTERNATIVA B: INCORRETA. O coronavírus (SARS-CoV-2) pode causar quadros gripais em gestantes e está associado a um risco aumentado de pré-eclâmpsia e parto prematuro. No entanto, até o momento, não existe um padrão de malformações congênitas ou alterações morfológicas fetais específicas, como ventriculomegalia e calcificações placentárias, diretamente atribuído ao vírus de forma sistemática, como ocorre nas infecções TORCH.\n\nALTERNATIVA C: INCORRETA. A toxoplasmose é um diagnóstico diferencial importante, pois também causa ventriculomegalia e calcificações. No entanto, a toxoplasmose materna costuma ser assintomática ou apresentar apenas linfonodomegalia cervical, sendo menos associada a quadros de \"forte gripe\". Outro ponto fundamental é que a questão solicita a conduta inicial. A PCR no líquido amniótico é um método invasivo realizado após a suspeita sorológica materna; portanto, não seria o primeiro passo no manejo.\n\nALTERNATIVA D: CORRETA. O citomegalovírus (CMV) é a infecção congênita mais frequente e a principal causa de surdez não hereditária e atraso no desenvolvimento neuropsicomotor. A primoinfecção materna frequentemente se manifesta como uma síndrome gripal ou de mononucleose. Os achados ultrassonográficos descritos (restrição de crescimento, ventriculomegalia, hepatomegalia e placentomegalia com calcificações) compõem o espectro clássico da infecção fetal pelo CMV. A conduta inicial diante da suspeita clínica é a avaliação da imunidade materna através das sorologias IgG e IgM.\n\nCONCLUSÃO:\nA combinação de sintomas maternos no primeiro trimestre com achados no sistema nervoso central e viscerais no feto torna o citomegalovírus a hipótese mais provável, exigindo triagem sorológica inicial para confirmação diagnóstica.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas",
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:35.614Z"
+  }
+]

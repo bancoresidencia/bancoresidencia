@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_09bc154d-1ae7-4d30-9230-d4954908ba43",
+    "originalId": "09bc154d-1ae7-4d30-9230-d4954908ba43",
+    "statement": "Homem, 34 anos, previamente hígido, residente em Salvador (BA), há 5 dias com febre alta contínua, cefaleia intensa, mialgia e artralgias. Hoje iniciou dispneia leve. Exame: PA 100 x 62 mmHg, FC 96 bpm, FR 28 irpm, SpO₂ 93% em ar ambiente, 38,7 °C. Hemograma: Hb = 15,1 g/dL, Ht = 46%, leucócitos = 3.900/mm³, plaquetas = 72.000/mm³. Ultrassom pulmonar: linhas B difusas bilaterais sem consolidação. A conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "alta com orientações de hidratação e hemograma diário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "alta com hemograma diário e prescrição de doxiciclina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "internação para monitoramento da contagem de plaquetas e observação clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "internação para tratamento com doxiciclina e observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "alta com prescrição de ácido acetilsalicílico para controle da dor, por provável dengue, e retorno ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro febril agudo (5 dias) acompanhado de cefaleia, mialgia e artralgia em Salvador, área endêmica para arboviroses. O hemograma revela leucopenia (3.900/mm³) e plaquetopenia (72.000/mm³), achados clássicos da dengue. \n\nO ponto fundamental para a resolução da questão é a evolução para dispneia, taquipneia (FR 28 irpm), hipoxemia (SpO2 93%) e a presença de linhas B difusas ao ultrassom pulmonar. Esses sinais indicam extravasamento plasmático para o interstício pulmonar (edema pulmonar não cardiogênico por aumento de permeabilidade capilar), o que classifica o paciente como dengue com sinais de alarme (Grupo C), conforme os protocolos do Ministério da Saúde.\n\nAlternativa a: Incorreta. Pacientes com sinais de alarme (como desconforto respiratório e extravasamento de líquidos) não podem receber alta. Eles devem obrigatoriamente ser internados para hidratação venosa imediata e monitorização.\n\nAlternativa b: Incorreta. A conduta de alta é perigosa devido à instabilidade respiratória e hemodinâmica iminente. Além disso, a doxiciclina é indicada para o tratamento de leptospirose ou riquetsiose. Embora a leptospirose seja um diferencial, ela costuma apresentar leucocitose com desvio à esquerda e neutrofilia, ao contrário da leucopenia observada neste caso.\n\nAlternativa c: Correta. A internação é a conduta obrigatória para casos de dengue com sinais de alarme (Grupo C). O objetivo é realizar a reposição volêmica assistida, monitorar o hematócrito (para avaliar hemoconcentração), acompanhar a contagem de plaquetas e observar a evolução clínica para evitar que o paciente progrida para o choque (Grupo D).\n\nAlternativa d: Incorreta. Embora a internação esteja indicada, a principal suspeita clínica baseada na leucopenia e no quadro de extravasamento plasmático é dengue, e não leptospirose. O tratamento da dengue é baseado em suporte e hidratação, não havendo indicação rotineira de doxiciclina sem forte suspeita de coinfecção ou diagnóstico alternativo bacteriano.\n\nAlternativa e: Incorreta. Esta opção apresenta dois erros graves: o primeiro é dar alta a um paciente com hipoxemia e taquipneia; o segundo é prescrever ácido acetilsalicílico (AAS). O AAS é estritamente contraindicado na dengue devido ao risco de sangramentos por sua ação antiagregante plaquetária irreversível e ao risco de Síndrome de Reye.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  },
+  {
+    "id": "AJUDA_09be10e5-f393-434a-9e8f-225ad367cdad",
+    "originalId": "09be10e5-f393-434a-9e8f-225ad367cdad",
+    "statement": "Uma explosão em um restaurante matou duas pessoas que trabalhavam na cozinha, feriu uma pessoa, que fazia uma entrega de alimento, e uma criança de 5 anos que passava na rua com sua mãe. Quais desses casos devem ser notificados no SINAN como acidentes de trabalho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todos os casos devem ser notificados como acidentes de trabalho no SINAN.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os casos devem ser notificados como acidentes de trabalho se a explosão for decorrente de negligência dos proprietários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Todos, com exceção da criança, devem ser notificados como acidentes de trabalho no SINAN.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Com exceção da criança, devem ser notificados os casos em que houver vínculo empregatício formal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, o primeiro passo é diferenciar o conceito previdenciário de acidente de trabalho do conceito utilizado pela vigilância em saúde (SINAN). No âmbito da saúde pública, a notificação de acidentes de trabalho deve ser feita para todo trabalhador, independentemente de ele ser formal (com carteira assinada), informal, autônomo ou estatutário.\n\nO acidente de trabalho é aquele que ocorre durante o exercício do trabalho, provocando lesão corporal ou perturbação funcional que cause a morte, a perda ou a redução da capacidade para o trabalho.\n\nAnálise das vítimas no cenário proposto:\n1. Trabalhadores da cozinha: estavam em pleno exercício de suas funções no momento da explosão. São casos clássicos de acidente de trabalho.\n2. Entregador de alimento: estava realizando uma tarefa profissional (entrega). Mesmo que não seja funcionário direto do restaurante, ele sofreu o agravo enquanto trabalhava. Portanto, configura acidente de trabalho para fins de notificação.\n3. Criança de 5 anos: estava apenas passando pela rua. Não possui qualquer vínculo laboral ou atividade produtiva relacionada ao evento. Trata-se de uma vítima civil de um acidente ambiental/urbano, mas não de um acidente de trabalho.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A criança não se enquadra na definição de trabalhador; portanto, seu caso não pode ser notificado como acidente de trabalho no SINAN.\n\nAlternativa B: Incorreta. A notificação compulsória no SINAN baseia-se na ocorrência do agravo e sua relação com o trabalho, e não na verificação de culpa ou negligência por parte do empregador. A vigilância epidemiológica busca o registro do fato para fins de políticas públicas e prevenção, independentemente de questões jurídicas de responsabilidade civil.\n\nAlternativa C: Correta. Os dois funcionários da cozinha e o entregador estavam em atividade laboral no momento do sinistro. A criança é a única que não estava trabalhando; logo, não entra na estatística de acidentes de trabalho.\n\nAlternativa D: Incorreta. Este é um erro comum em provas. O vínculo empregatício formal (carteira assinada) é necessário para a emissão da CAT (Comunicação de Acidente de Trabalho) junto ao INSS para fins previdenciários. No entanto, para a notificação no SINAN (Ministério da Saúde), o que importa é se a vítima é um trabalhador (formal ou informal). O entregador, mesmo que seja autônomo ou de aplicativo, deve ter seu caso notificado como acidente de trabalho no SINAN.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  },
+  {
+    "id": "AJUDA_09c18f90-3c76-403b-b69d-5543a8010bbb",
+    "originalId": "09c18f90-3c76-403b-b69d-5543a8010bbb",
+    "statement": "João, 5 anos de idade, referindo coriza, mialgia e petéquias em membros inferiores com piora há 24h. ausência de linfadenopatias, visceromegalias ou febre. Hemograma com 10.000 plaquetas, sem outras alterações. Família bem orientada e boa rede de apoio. A melhor conduta a ser tomada, neste caso, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "internação e início de corticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "internação e início de imunoglobulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "seguimento ambulatorial e reavaliação com hematologista em 24-48 h.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "seguimento ambulatorial e início imediato de corticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "seguimento ambulatorial após dose imediata de imunoglobulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO E MANEJO DA PÚRPURA TROMBOCITOPÊNICA IMUNE (PTI) NA INFÂNCIA\n\nAnálise do Quadro Clínico:\nJoão apresenta o fenótipo clássico da PTI pediátrica: uma criança de 5 anos com início agudo de manifestações hemorrágicas puramente cutâneas (petéquias) após um pródromo infeccioso viral (coriza e mialgia). O ponto fundamental para o raciocínio é a estabilidade clínica: não há febre, não há perda de peso e o exame físico descarta linfadenopatias e visceromegalias. O hemograma confirma a trombocitopenia isolada (10.000 plaquetas) sem outras alterações celulares, o que afasta neoplasias hematológicas (como leucemias) e coloca a PTI como principal hipótese diagnóstica.\n\nDiscussão da Conduta:\nHistoricamente, o valor de 10.000 plaquetas era um gatilho automático para internação e tratamento medicamentoso. Entretanto, as diretrizes modernas (como as da Sociedade Brasileira de Pediatria e da American Society of Hematology) preconizam que, na PTI, tratamos o paciente e não o número absoluto de plaquetas. Se o sangramento for restrito à pele (petéquias e equimoses), a conduta \"watch and wait\" (observar e aguardar) é a preferencial, desde que o paciente esteja estável e haja condições sociais favoráveis para o acompanhamento.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A internação e o uso de corticoides estariam indicados se houvesse sangramento mucoso importante (epistaxe volumosa, sangramento gastrointestinal) ou risco iminente de vida. Para quadros exclusivamente cutâneos em pacientes estáveis, a corticoterapia não altera o prognóstico de longo prazo nem a evolução para a forma crônica da doença.\n\nAlternativa B (Incorreta): A Imunoglobulina Humana (IGIV) é uma terapia de alto custo e com potenciais efeitos colaterais significativos, como meningite asséptica e reações anafiláticas. Sua indicação é restrita a casos de sangramento grave (emergência), necessidade de elevação imediata das plaquetas para procedimentos cirúrgicos ou quando há contraindicação absoluta ao uso de corticoides.\n\nAlternativa C (Correta): Esta é a conduta mais alinhada às evidências científicas atuais. Como João apresenta apenas manifestações cutâneas e a questão enfatiza que a família é bem orientada e possui boa rede de apoio (garantindo o retorno imediato se houver sangramentos de mucosas), o manejo ambulatorial com reavaliação precoce em 24 a 48 horas é seguro, eficaz e evita a iatrogenia de internações desnecessárias.\n\nAlternativa D (Incorreta): Embora o seguimento possa ser ambulatorial, a introdução de corticoterapia não é necessária para pacientes sem sangramento de mucosas. Além disso, existe o risco teórico de \"mascarar\" um diagnóstico de Leucemia Linfoide Aguda (LLA) caso o corticoide seja iniciado antes de uma avaliação rigorosa ou mielograma, caso houvessem outros sinais de alerta.\n\nAlternativa E (Incorreta): A imunoglobulina requer monitorização hospitalar durante sua infusão devido ao risco de reações infusionais e não deve ser aplicada como \"dose imediata\" em regime ambulatorial para casos de baixo risco hemorrágico (apenas pele).\n\nGabarito: Letra (c).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  },
+  {
+    "id": "AJUDA_09c41611-1f4b-41ff-8de1-4aa5bab29c34",
+    "originalId": "09c41611-1f4b-41ff-8de1-4aa5bab29c34",
+    "statement": "Assinale a alternativa que contém a técnica cirúrgica bariátrica, que tem o componente restritivo predominante em relação ao componente disabsortivo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sleeve gástrico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "By-pass gástrico em Y de Roux",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Duodenal switch",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Banda gástrica ajustável",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cirurgia de Scopinaro",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, o aluno deve classificar as cirurgias bariátricas de acordo com o seu mecanismo de ação: restritivas (reduzem o volume do estômago), disabsortivas (desviam o trajeto intestinal para diminuir a absorção) ou mistas (combinam ambos os mecanismos).\n\nA questão pede uma técnica onde o componente restritivo seja predominante sobre o disabsortivo. Isso nos direciona para as técnicas mistas, onde os dois componentes coexistem, mas a restrição gástrica fala mais alto.\n\nAnálise das alternativas:\n\na) Sleeve gástrico: Incorreta. Também chamada de gastrectomia vertical, é uma técnica puramente restritiva. Nela, o estômago é transformado em um tubo grampeado, removendo cerca de 80% do órgão. Como não há desvio de alças intestinais, não existe componente disabsortivo para ser comparado.\n\nb) By-pass gástrico em Y de Roux: Correta. É a principal representante das técnicas mistas com predomínio restritivo. Cria-se uma pequena bolsa gástrica (pouch) de 30 a 50 ml, conectada diretamente ao jejuno. Embora exista um desvio intestinal (Y de Roux) que gera um componente disabsortivo, o sucesso da perda de peso deve-se majoritariamente à saciedade precoce (restrição e mecanismos hormonais) e menos à má absorção.\n\nc) Duodenal switch: Incorreta. Trata-se de uma técnica mista, porém com predomínio disabsortivo. Combina uma gastrectomia vertical (Sleeve) com um grande desvio intestinal. O canal comum (onde ocorre a digestão de fato) é muito curto, fazendo com que a má absorção de gorduras seja o mecanismo principal de perda de peso.\n\nd) Banda gástrica ajustável: Incorreta. É uma técnica de restrição pura. Consiste em um anel de silicone colocado na parte superior do estômago. Não há qualquer alteração na anatomia intestinal nem interferência na absorção de nutrientes.\n\ne) Cirurgia de Scopinaro: Incorreta. É a derivação biliopancreática clássica. Embora envolva uma gastrectomia distal (retirada de parte do estômago), o componente disabsortivo é extremamente agressivo e dominante sobre a restrição gástrica. É considerada uma cirurgia predominantemente disabsortiva.\n\nConclusão: Entre as opções que possuem componentes de ambos os tipos, o By-pass gástrico em Y de Roux é o único que prioriza a restrição sobre a disabsorção.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  },
+  {
+    "id": "AJUDA_09c6901f-aef6-4fc4-a087-8d150c814aff",
+    "originalId": "09c6901f-aef6-4fc4-a087-8d150c814aff",
+    "statement": "A candidíase vulvovaginal é uma das principais causas de corrimento vaginal, gerando muito desconforto entre as mulheres. Em relação a este tema, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O agente etiológico mais comum é a Candida albicans.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10% a 20% das mulheres são colonizadas por Candida spp., de forma assintomática. Esta condição requer tratamento com creme imidazólico por via vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dentre os fatores que predispõem esta condição, estão o uso de contraceptivos orais, uso de antibióticos, Diabetes Mellitus descompensado e imunodeficiências.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para quadros recorrentes, uma opção eficaz de tratamento é com fluconazol 150mg semanalmente durante 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A candidíase vulvovaginal é uma patologia extremamente frequente na prática ginecológica. Vamos analisar cada uma das alternativas para identificar a incorreta, conforme solicitado pelo comando da questão:\n\nAlternativa a: Esta afirmação está correta. A Candida albicans é o agente etiológico mais prevalente, sendo responsável por aproximadamente 80% a 90% dos casos de candidíase vulvovaginal. Outras espécies, denominadas \"não-albicans\" (como Candida glabrata e Candida tropicalis), são menos comuns e muitas vezes associadas a quadros recorrentes ou com menor resposta aos tratamentos habituais.\n\nAlternativa b: Esta é a alternativa incorreta e o gabarito da questão. Embora seja verdade que cerca de 10% a 20% das mulheres em idade reprodutiva possam ser colonizadas por Candida de forma assintomática, a prática clínica e as diretrizes nacionais e internacionais (como as da FEBRASGO e do CDC) estabelecem que a colonização assintomática não deve ser tratada. O tratamento está indicado apenas para mulheres que apresentam sintomas (prurido, ardor, corrimento esbranquiçado grumoso) e sinais clínicos de inflamação vulvovaginal.\n\nAlternativa c: Esta afirmação está correta. Diversos fatores podem quebrar o equilíbrio da flora vaginal e predispor ao crescimento excessivo do fungo. Antibióticos de amplo espectro eliminam a flora de lactobacilos protetores; o diabetes mellitus descompensado eleva os níveis de glicogênio vaginal, favorecendo o fungo; o uso de contraceptivos orais com estrogênio e estados de imunodeficiência (como HIV ou uso de corticoides) também facilitam a infecção.\n\nAlternativa d: Esta afirmação está correta. A candidíase vulvovaginal recorrente é definida pela ocorrência de quatro ou mais episódios em um período de 12 meses. Para essas pacientes, o protocolo padrão envolve uma fase de indução seguida por uma fase de manutenção. O regime de manutenção mais comumente utilizado e eficaz é a administração de fluconazol 150 mg por via oral, uma vez por semana, durante o período de 6 meses.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  },
+  {
+    "id": "AJUDA_09cad89e-becb-4eec-9bdd-930016dc2cb9",
+    "originalId": "09cad89e-becb-4eec-9bdd-930016dc2cb9",
+    "statement": "Mulher, 29 anos de idade, com cólica menstrual e menstruação excessiva, apresenta diagnóstico confirmado de endometriose peritoneal por laparoscopia, ocasião em que as lesões peritoniais visíveis foram excisadas. Assinale a alternativa que apresenta a melhor conduta terapêutica neste momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anti-inflamatório não hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Contraceptivo hormonal oral combinado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dispositivo intrauterino de progestagênio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Análogo do GnRH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente do caso apresenta duas queixas principais: dismenorreia (cólica menstrual) e sangramento menstrual excessivo, associadas a um quadro de endometriose peritoneal recém-tratada cirurgicamente. O objetivo da terapia clínica adjuvante no pós-operatório é evitar a recidiva das lesões, controlar a dor residual e tratar os sintomas associados, como o fluxo aumentado.\n\nAlternativa A: Incorreta. Os anti-inflamatórios não hormonais atuam apenas no alívio sintomático da dor por inibição das prostaglandinas. Eles não interferem na progressão da doença, não previnem recidivas e não tratam o fluxo menstrual excessivo de forma contínua e definitiva.\n\nAlternativa B: Incorreta. Embora os contraceptivos orais combinados possam ser utilizados no manejo da endometriose, a presença marcante de sangramento menstrual excessivo faz com que métodos que causem maior atrofia endometrial local e amenorreia sejam superiores. Além disso, o estrogênio exógeno pode não ser a melhor opção em comparação com a ação puramente progestagênica.\n\nAlternativa C: Correta. O sistema intrauterino liberador de levonorgestrel (SIU-LNG) é a melhor escolha neste cenário. Ele atua diretamente na cavidade uterina promovendo acentuada atrofia endometrial, sendo altamente eficaz no controle do fluxo menstrual excessivo. Simultaneamente, fornece progestagênio que auxilia no controle da dor e na redução do risco de recorrência da endometriose peritoneal, com excelente perfil de adesão terapêutica por se tratar de um método de longa ação (LARC).\n\nAlternativa D: Incorreta. Os análogos do GnRH causam um estado de hipoestrogenismo profundo com sintomas semelhantes aos da menopausa (fogachos, redução de massa óssea e atrofia genital). Devido a esse perfil de efeitos colaterais e ao alto custo, são reservados para casos graves ou refratários a outras terapias, não sendo a primeira linha de manutenção pós-operatória em uma paciente jovem.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Endometriose"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  },
+  {
+    "id": "AJUDA_09ccae06-9a95-4408-a1f2-e4cc725d57e4",
+    "originalId": "09ccae06-9a95-4408-a1f2-e4cc725d57e4",
+    "statement": "A fisiopatologia central da bronquiolite viral aguda por Vírus Sincicial Respiratório (VSR) no lactente caracteriza-se por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Necrose de células epiteliais ciliadas dos bronquíolos, inflamação peribronquiolar e obstrução por muco e debris.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Broncoespasmo generalizado reversível mediado primariamente por IgE e hiper-reatividade de vias aéreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Destruição septal alveolar com formação de grandes cistos e diminuição da superfície de troca gasosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipertensão pulmonar primária por vasoconstrição arterial e remodelamento vascular irreversível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A bronquiolite viral aguda é a causa mais comum de hospitalização por doença respiratória inferior em lactentes, sendo o Vírus Sincicial Respiratório (VSR) o principal agente etiológico. A compreensão da sua fisiopatologia é fundamental para entender por que o tratamento é majoritariamente de suporte.\n\nAlternativa A: Correta. A fisiopatologia central envolve a invasão do epitélio dos bronquíolos pelo vírus, resultando em necrose das células epiteliais ciliadas. Esse dano celular provoca uma resposta inflamatória com infiltrado linfocitário e edema da submucosa. Ocorre então o acúmulo de débris celulares (restos de células mortas), fibrina e muco espesso no lúmen dos bronquíolos. Como as vias aéreas dos lactentes possuem diâmetro muito reduzido, essa combinação de edema e débris causa obstrução parcial ou total, levando ao aprisionamento de ar (hiperinsuflação) ou colapso alveolar (atelectasia).\n\nAlternativa B: Incorreta. Esta alternativa descreve a fisiopatologia da asma. Embora a bronquiolite cause sibilância, a obstrução na bronquiolite é predominantemente mecânica (por edema e secreção) e não por broncoespasmo primário da musculatura lisa. Por esse motivo, a resposta aos broncodilatadores na bronquiolite é, em geral, pobre ou ausente.\n\nAlternativa C: Incorreta. A destruição dos septos alveolares e a formação de cistos são características de doenças estruturais crônicas ou destrutivas, como o enfisema pulmonar ou fases avançadas de displasia broncopulmonar. A bronquiolite é uma doença das vias aéreas de condução (bronquíolos) e não uma doença alveolar destrutiva primária.\n\nAlternativa D: Incorreta. A hipertensão pulmonar primária e o remodelamento vascular irreversível são condições da vasculatura pulmonar. Na bronquiolite, pode haver hipoxemia devido ao distúrbio ventilação-perfusão, o que pode gerar uma vasoconstrição pulmonar reflexa e transitória, mas isso não constitui a base fisiopatológica da doença nem envolve alterações permanentes nos vasos.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  },
+  {
+    "id": "AJUDA_09d4b98f-764f-4f5e-ad71-b10d432ec3b9",
+    "originalId": "09d4b98f-764f-4f5e-ad71-b10d432ec3b9",
+    "statement": "Sobre o descolamento prematuro de placenta (DPP), analise as afirmativas e assinale a alternativa CORRETA.\n\nI. O diagnóstico é eminentemente clínico.\nII. Quadro clínico sugestivo inclui sangramento vaginal leve a moderado, dor abdominal e/ou lombar e anormalidades na frequência cardíaca fetal.\nIII. São fatores de risco: idade materna ≥ 35 anos e < 20 anos, tabagismo, uso de álcool ou drogas e diabetes pré-gestacional.\nIV. Fatores a serem considerados na conduta frente ao DPP: extensão e da classificação do DPP, comprometimento materno/fetal e idade gestacional.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a afirmativa I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas II, III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O descolamento prematuro de placenta (DPP) é uma das principais causas de hemorragia na segunda metade da gestação e representa uma emergência obstétrica. A seguir, analisamos cada afirmativa para justificar por que todas estão corretas:\n\nAfirmativa I: Correta. O diagnóstico do DPP é essencialmente clínico. A anamnese e o exame físico (presença de dor abdominal, hipertonia uterina e sangramento) são suficientes para fechar o quadro. Exames de imagem, como a ultrassonografia, apresentam baixa sensibilidade para detectar o descolamento agudo (cerca de 25 a 50%) e não devem retardar a conduta terapêutica se a suspeita clínica for forte. O ultrassom é mais útil para excluir outras causas, como placenta prévia.\n\nAfirmativa II: Correta. O quadro clássico envolve sangramento vaginal (presente em cerca de 80% dos casos, sendo oculto em 20%), dor abdominal súbita ou dor lombar e hipertonia uterina (útero de madeira). Devido à redução da área de troca placentária, é muito comum haver sofrimento fetal agudo, manifestado por anormalidades na frequência cardíaca fetal, ou até mesmo óbito fetal dependendo da extensão do descolamento.\n\nAfirmativa III: Correta. Diversos fatores estão associados ao aumento do risco de DPP. Os extremos de idade materna (abaixo de 20 ou acima de 35 anos) estão relacionados a piores desfechos vasculares. O tabagismo e o uso de drogas (especialmente a cocaína) causam vasoconstrição e lesão decidual. Doenças crônicas que afetam a vasculatura, como o diabetes pré-gestacional e, principalmente, a hipertensão arterial, são fatores de risco bem estabelecidos na literatura médica.\n\nAfirmativa IV: Correta. A conduta no DPP não é universal e depende de um binômio: estabilidade materna e vitalidade fetal. Se o feto estiver vivo e em sofrimento, a interrupção da gestação deve ser imediata (geralmente via cesariana, a menos que o parto seja iminente). Se o feto estiver morto, prioriza-se a estabilização materna e o parto vaginal costuma ser a via de escolha. A idade gestacional e a extensão do descolamento (classificação de Sher) também orientam se haverá conduta expectante em casos muito específicos e raros de descolamentos parciais em prematuros extremos com estabilidade absoluta.\n\nPortanto, todas as afirmativas estão corretas, o que valida a alternativa (d).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  },
+  {
+    "id": "AJUDA_09d5b9c2-7c1f-4c5d-86aa-01d36166760e",
+    "originalId": "09d5b9c2-7c1f-4c5d-86aa-01d36166760e",
+    "statement": "São fatores de risco para gravidez ectópica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endometriose, mioma submucoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tabagismo, uso de pílula de progesterona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Multiparidade, anticoncepção de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "DIU, Anticoncepcional combinada de baixa dose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender os fatores de risco para a gravidez ectópica, é necessário identificar condições que prejudicam o transporte do óvulo fertilizado através da trompa de Falópio ou que alteram o ambiente tubário, favorecendo a implantação extrauterina.\n\nAlternativa (a) Incorreta. A endometriose é um fator de risco real, pois pode causar aderências pélvicas e distorções anatômicas nas trompas. No entanto, o mioma submucoso não está associado à gravidez ectópica. Os miomas submucosos crescem para dentro da cavidade uterina e estão mais relacionados a quadros de infertilidade, sangramento uterino anormal e abortamentos de repetição.\n\nAlternativa (b) Correta. O tabagismo é um dos principais fatores de risco, pois a nicotina e outras substâncias reduzem a atividade ciliar e alteram a contratilidade da musculatura lisa das trompas, retardando o transporte do embrião. O uso de pílulas de progesterona isolada (minipílulas) também é um fator de risco clássico. A progesterona em doses baixas diminui a frequência das contrações tubárias e a motilidade dos cílios, o que pode fazer com que o embrião se implante na trompa antes de chegar ao útero.\n\nAlternativa (c) Incorreta. A multiparidade não aumenta o risco de gravidez ectópica; pelo contrário, a nuliparidade ou a dificuldade de engravidar são frequentemente citadas em prontuários de pacientes com ectópica. Sobre a anticoncepção de emergência, embora existam relatos isolados, os grandes estudos epidemiológicos não a consideram um fator de risco primário, uma vez que o método atua evitando a gravidez de forma global.\n\nAlternativa (d) Incorreta. Os anticoncepcionais combinados (estrogênio + progesterona) são fatores de proteção, pois inibem a ovulação, impedindo qualquer tipo de gestação. Sobre o DIU (Dispositivo Intrauterino), há um conceito importante para provas: o DIU é um excelente contraceptivo e reduz o risco ABSOLUTO de gravidez ectópica quando comparado ao de mulheres que não usam nenhum método. Porém, caso ocorra uma falha rara do DIU e a paciente engravide, o risco RELATIVO de essa gestação ser ectópica é maior. Como a alternativa cita o anticoncepcional combinado como fator de risco, ela se torna incorreta.\n\nEm resumo, a alternativa (b) concentra dois fatores que interferem diretamente na fisiologia tubária, facilitando a implantação fora do útero. Outros fatores importantes que o estudante deve lembrar são: história prévia de gravidez ectópica, cirurgia tubária anterior, doença inflamatória pélvica (DIP) e técnicas de reprodução assistida.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  },
+  {
+    "id": "AJUDA_09eecc61-a978-4b52-b7ab-2ecb7160172b",
+    "originalId": "09eecc61-a978-4b52-b7ab-2ecb7160172b",
+    "statement": "Com relação ao câncer de ânus, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É o mais comum do Trato Gastrointestinal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O melhor tratamento para o melanoma anal é a radioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O segundo tumor mais comum no ânus, após o carcinoma escamoso, é o linfoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os esquemas de tratamento utilizando a Mitomicina C têm resultados melhores no câncer de canal anal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O câncer de margem anal (perianal) é mais comumente tratado com quimioterapia e radioterapia, ao passo que o de canal anal é tratado, na maior parte dos casos, com excisão radical cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise detalhada das alternativas:\n\nAlternativa A: Incorreta. O câncer de ânus é uma doença relativamente rara, correspondendo a apenas 1% a 2% de todos os tumores colorretais e uma fração ainda menor de todo o trato gastrointestinal. O câncer colorretal (cólon e reto) é significativamente mais comum.\n\nAlternativa B: Incorreta. O melanoma anal é um tumor raro e extremamente agressivo. Ele é classicamente considerado radiorresistente. O tratamento principal é cirúrgico (excisão local ampla ou amputação abdominoperineal do reto), embora o prognóstico seja geralmente ruim independentemente da técnica utilizada.\n\nAlternativa C: Incorreta. O carcinoma espinocelular (CEC), ou escamoso, é o tipo mais frequente, responsável por cerca de 80% a 85% dos casos. O segundo tipo mais comum é o adenocarcinoma (que pode ser originário das glândulas anais ou de uma extensão de um tumor retal). O linfoma anal é raro, ocorrendo mais frequentemente em pacientes imunossuprimidos, como aqueles com HIV.\n\nAlternativa D: Correta. Esta alternativa refere-se ao Protocolo de Nigro, estabelecido na década de 1970. O esquema combina radioterapia com quimioterapia baseada em 5-fluorouracil (5-FU) e mitomicina C. Esse tratamento tornou-se o padrão-ouro para o carcinoma de canal anal por apresentar excelentes taxas de controle local e permitir a preservação do esfíncter anal, deixando a cirurgia radical (amputação do reto) apenas para casos de falha terapêutica ou recidiva.\n\nAlternativa E: Incorreta. A alternativa inverte os conceitos. O câncer de canal anal é tratado preferencialmente com quimiorradioterapia (preservação de órgão). Já o câncer de margem anal, por se assemelhar clinicamente ao câncer de pele não-melanoma, pode ser tratado apenas com excisão cirúrgica local com margens livres, desde que a lesão seja pequena, bem diferenciada e não envolva o aparelho esfincteriano. A quimiorradioterapia na margem anal é reservada para tumores maiores ou que invadem o esfíncter.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:13.439Z"
+  }
+]

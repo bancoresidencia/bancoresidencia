@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_3dd8e00c-6cbb-47d5-a744-160e1dcedc03",
+    "originalId": "3dd8e00c-6cbb-47d5-a744-160e1dcedc03",
+    "statement": "Homem de 65 anos queixa-se de claudicação intermitente há 6 meses, com piora da dor em membro inferior direito há 25 dias, ao caminhar cerca de 30 metros e aliviada com repouso. AP: ex-tabagista há 10 anos, DM2 em uso de metformina. Exame físico: pulsos femorais presentes bilateralmente, ausência de pulsos poplíteos, tibiais posteriores e tibiais anteriores bilateralmente. \n\nEm face do exposto, a conduta deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "angioplastia com colocação de stent na artéria ilíaca comum direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cilostazol e encaminhamento para reabilitação cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "angiografia do MID e programação de revascularização cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "analgésicos para controle da dor durante caminhadas supervisionadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro de Doença Arterial Obstrutiva Periférica (DAOP) manifestada por claudicação intermitente grave, uma vez que a dor surge após caminhar apenas 30 metros (distância inferior a 50-100 metros caracteriza limitação importante). O exame físico é fundamental para a localização da lesão: pulsos femorais presentes indicam que o território aortoilíaco está pérvio. A ausência de pulsos poplíteos e distais (tibiais) localiza a obstrução no segmento infrainguinal, provavelmente na artéria femoral superficial ou na artéria poplítea.\n\nAlternativa A: Incorreta. A angioplastia de artéria ilíaca comum seria indicada se o paciente apresentasse ausência ou diminuição importante dos pulsos femorais, o que não ocorre neste caso. Como os pulsos femorais estão presentes, o fluxo sanguíneo está chegando adequadamente até a transição entre a pelve e o membro inferior.\n\nAlternativa B: Incorreta. O tratamento clínico com cilostazol e reabilitação cardiovascular (exercícios supervisionados) é a conduta inicial para claudicação intermitente leve a moderada. No entanto, quando a claudicação é incapacitante (como no caso de 30 metros) ou quando há falha do tratamento conservador, a intervenção para revascularização é a conduta mais adequada para restaurar a funcionalidade do paciente.\n\nAlternativa C: Correta. O paciente apresenta uma claudicação intermitente grave/limitante (classificação de Fontaine IIb ou Rutherford 3). Devido à gravidade da limitação funcional e à localização da doença sugerida pelo exame físico (segmento femoropoplíteo), é necessário realizar um exame de imagem para mapeamento anatômico (angiografia, angiotomografia ou angiorressonância) e programar a revascularização do membro, que pode ser realizada por via cirúrgica (bypass) ou endovascular.\n\nAlternativa D: Incorreta. Analgésicos comuns não tratam a fisiopatologia da claudicação intermitente, que é a isquemia muscular por demanda de oxigênio superior à oferta. Além disso, o uso de analgésicos para \"mascarar\" a dor durante a caminhada não substitui a necessidade de tratamento medicamentoso específico (antiagregantes, estatinas e cilostazol) ou de intervenção nos casos graves.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  },
+  {
+    "id": "AJUDA_3def36b1-ff13-4844-9f3f-e03ac5240747",
+    "originalId": "3def36b1-ff13-4844-9f3f-e03ac5240747",
+    "statement": "Paciente de 7 meses de vida, encaminhada ao pronto atendimento devido suspeita de fratura de fêmur direito. O pai refere que a criança teve uma queda da própria altura há 1 dia. Ao exame físico a criança encontra-se chorosa, na inspeção apresenta lesões puntiformes tipo queimadura na região de dorso e membro superior, além de edema na região de joelho direito. Nas radiografias apresenta fratura de canto metafisário em fêmur distal direito, além de fraturas de arcos costais posteriores com sinais de calo ósseo. Assinale a alternativa correta sobre o diagnóstico e conduta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Osteogênese Imperfeita - Exames laboratoriais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspeita de maus tratos - Internação em enfermaria",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Fratura de fêmur - Tratamento cirúrgico com placa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fratura de fêmur - Tratamento cirúrgico com haste intramedular",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda um tema de extrema importância na prática pediátrica e em provas de residência: o diagnóstico de maus-tratos infantis (Síndrome de Silverman ou Síndrome da Criança Espancada).\n\nAnálise do quadro clínico:\nEstamos diante de um lactente de 7 meses, idade em que a criança geralmente ainda não anda, o que torna a história de queda da própria altura pouco plausível para causar uma fratura de fêmur. Além disso, o exame físico revela lesões cutâneas sugestivas de queimaduras por cigarro (lesões puntiformes no dorso e braço).\n\nAnálise radiológica:\nAs radiografias confirmam a suspeita de abuso com achados altamente específicos:\n1. Fratura de canto metafisário (ou em alça de balde): é uma lesão clássica de maus-tratos, causada por forças de tração ou torção brusca nos membros.\n2. Fraturas de arcos costais posteriores: são quase patognomônicas de abuso, pois resultam da compressão torácica vigorosa (sacudida), algo que quedas acidentais raramente provocam.\n3. Lesões em diferentes estágios de evolução: a presença de calo ósseo nas costelas associada a uma fratura aguda no fêmur indica que as agressões são recorrentes e não um evento isolado.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Embora a osteogênese imperfeita cause fragilidade óssea e fraturas frequentes, ela não explica as lesões cutâneas (queimaduras). Além disso, os padrões de fratura descritos (metafisária e arcos costais posteriores) são muito mais associados ao trauma não acidental do que a doenças ósseas metabólicas.\n\nAlternativa (b) Correta. O diagnóstico principal é a suspeita de maus-tratos. Diante dessa suspeita em um ambiente de pronto atendimento, a conduta imediata inclui a internação hospitalar. A internação cumpre dois objetivos fundamentais: garantir a proteção da criança (afastando-a do agressor em potencial) e permitir a realização de uma investigação multidisciplinar completa (exames de imagem, avaliação do serviço social e notificação aos órgãos competentes como o Conselho Tutelar).\n\nAlternativa (c) Incorreta. O tratamento de fraturas de fêmur em lactentes de 7 meses é predominantemente conservador (geralmente com gesso pélvico-podálico), e o foco principal desta questão não é a técnica ortopédica, mas o reconhecimento do abuso. O uso de placas não é a conduta padrão nessa faixa etária.\n\nAlternativa (d) Incorreta. Hastes intramedulares não são utilizadas em bebês de 7 meses devido ao risco de lesão das placas de crescimento e às dimensões reduzidas do canal medular. Além disso, ignora o diagnóstico sistêmico de maus-tratos.\n\nEm resumo, a incompatibilidade entre o mecanismo do trauma relatado e as lesões encontradas, somada à especificidade das fraturas (costais e metáfises) e à presença de lesões em diferentes fases de cicatrização, confirma a suspeita de abuso físico, exigindo proteção imediata da criança por meio da internação.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Maus Tratos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  },
+  {
+    "id": "AJUDA_3def6f40-5ae0-45a8-a054-a0bdd88197b7",
+    "originalId": "3def6f40-5ae0-45a8-a054-a0bdd88197b7",
+    "statement": "A escolha adequada da profilaxia antibiótica reduz a incidência de infecções de sítio cirúrgico. A respeito da escolha do esquema antibiótico profilático, relacione as colunas e assinale a sequência correspondente.\n\n(1) Cefazolina.\n(2) Cefazolina + Metronidazol.\n\n( ) Apendicectomia laparoscópica, por apendicite aguda não complicada.\n( ) Hernioplastia inguinal unilateral aberta com colocação de tela de polipropileno, por hérnia inguinal indireta não encarcerada, NYHUS tipo II.\n( ) Fundoplicatura de Nissen laparoscópica, por doença de refluxo gastroesofágico.\n( ) Retossigmoidectomia aberta, por neoplasia não obstrutiva da transição retossigmoide.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 - 1 - 2 - 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 - 2 - 2 - 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2 - 1 - 1 - 2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "2 - 2 - 1 - 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A escolha da profilaxia antibiótica em cirurgia baseia-se na classificação da ferida operatória e na flora bacteriana provável do sítio a ser operado. O objetivo é alcançar níveis terapêuticos do antibiótico no tecido durante todo o tempo em que a ferida estiver aberta. A cefazolina (cefalosporina de 1ª geração) é o padrão para cobrir germes de pele (gram-positivos). O metronidazol é adicionado quando há necessidade de cobertura contra germes anaeróbios, o que é comum em cirurgias do trato digestivo baixo (cólon e reto).\n\nAnálise dos itens da coluna:\n\n(2) Apendicectomia laparoscópica por apendicite aguda não complicada: Mesmo em casos não complicados, o procedimento envolve o apêndice cecal, que possui flora rica em gram-negativos e, principalmente, anaeróbios (como o *Bacteroides fragilis*). Portanto, a profilaxia exige a combinação de cefazolina com metronidazol (ou o uso de uma cefalosporina de 2ª geração com ação anaeróbia, como a cefoxitina).\n\n(1) Hernioplastia inguinal unilateral aberta com tela: Trata-se de uma cirurgia limpa, pois não há penetração em vísceras ocas (trato digestivo, respiratório ou urinário). O risco de infecção provém da microbiota da pele (*Staphylococcus aureus* e outros gram-positivos). A cefazolina isolada é o esquema de escolha.\n\n(1) Fundoplicatura de Nissen laparoscópica: É classificada como uma cirurgia potencialmente contaminada por abordar o trato digestivo superior (esôfago/estômago). Diferentemente do cólon, o trato digestivo alto possui uma carga muito menor de anaeróbios. As principais diretrizes recomendam o uso isolado de cefazolina para procedimentos esofágicos e gastroduodenais.\n\n(2) Retossigmoidectomia aberta: É uma cirurgia colorretal. O cólon e o reto são os segmentos do corpo com maior concentração de bactérias anaeróbias. Para prevenir infecções de sítio cirúrgico nessa região, a cobertura contra anaeróbios é obrigatória, justificando a associação cefazolina + metronidazol.\n\nA sequência correta é 2 - 1 - 1 - 2.\n\nAnálise das alternativas:\n\na) Incorreta. Indica apenas cefazolina para apendicectomia, o que deixaria o paciente desprotegido contra anaeróbios, e indica metronidazol para fundoplicatura, onde habitualmente não é necessário.\n\nb) Incorreta. Apresenta erros graves, como indicar cefazolina para apendicectomia e metronidazol para uma hernioplastia (cirurgia limpa), além de omitir o metronidazol na retossigmoidectomia.\n\nc) Correta. Relaciona adequadamente a necessidade de cobertura anaeróbia (metronidazol) para apêndice e cólon, e apenas cobertura para gram-positivos/pele (cefazolina) para hérnia e trato digestivo superior.\n\nd) Incorreta. Erra ao sugerir metronidazol para uma cirurgia limpa (hernioplastia) e ao sugerir apenas cefazolina para uma cirurgia colorretal (retossigmoidectomia), onde a cobertura anaeróbia é essencial.\n\nGabarito: Letra (c).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  },
+  {
+    "id": "AJUDA_3df77a2e-a9d6-45e3-9068-5caf03f5653f",
+    "originalId": "3df77a2e-a9d6-45e3-9068-5caf03f5653f",
+    "statement": "Paciente masculino de 26 anos de idade, vítima de acidente de moto contra anteparo fixo (árvore na via pública), em uso de capacete, com velocidade aproximada de 80 Km/h, foi socorrido por equipe especializada e encaminhado ao hospital. Recebido em sala de emergência, queixando-se de forte dor abdominal, realizado avaliação inicial, com via aérea pérvia, sem cervicalgia, mantido colar cervical, saturação de 94% em ar ambiente, frequência respiratória de 20 ipm, frequência cardíaca de 96 bpm, pressão arterial de 100/70 mmHg, abdome plano, tenso, com dor à palpação difusa, pior em quadrante superior esquerdo, escala de Glasgow 15, pupilas isofotorreagentes, ausência de lesões externas relacionadas ao trauma. Submetido a exames laboratoriais com hemoglobina em 12,9 g/dL, hematócrito 40%, demais sem outras alterações.\nAssinale a alternativa que apresenta a melhor conduta a ser realizada na sequência:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter paciente em observação por 4 horas, realizar analgesia e dar alta hospitalar após.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Intubar o paciente e solicitar avaliação do cirurgião.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Analgesia, solicitar radiografia de coluna cervical, tórax, abdome e pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Analgesia e solicitar tomografia computadorizada de corpo inteiro, sem contraste endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Analgesia e solicitar tomografia computadorizada de coluna cervical e tórax sem contraste e de abdome total com contraste endovenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO:\n\nO paciente em questão é jovem e foi vítima de um trauma de alta energia (colisão a 80 km/h contra anteparo fixo). Apesar de apresentar estabilidade hemodinâmica no momento da avaliação inicial (frequência cardíaca de 96 bpm, pressão arterial de 100/70 mmHg e hemoglobina normal), o quadro de dor abdominal difusa com piora em quadrante superior esquerdo é um sinal de alerta importante para lesões de órgãos sólidos, especialmente o baço. Em pacientes estáveis com mecanismo de trauma significativo, a propedêutica armada com exames de imagem é mandatória.\n\nPOR QUE A ALTERNATIVA (E) ESTÁ CORRETA:\n\nA conduta de escolha para pacientes hemodinamicamente estáveis que sofreram trauma contuso de alta energia é a realização de tomografia computadorizada (TC). A TC de abdome total deve ser feita obrigatoriamente com contraste endovenoso, pois ele é essencial para identificar lesões em órgãos sólidos (fígado, baço, rins), avaliar a vascularização e detectar extravasamento ativo de sangue (sangramento arterial). A avaliação da coluna cervical e do tórax por TC complementa o rastreio de lesões ocultas decorrentes do mecanismo de desaceleração.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS:\n\nAlternativa A: O mecanismo de trauma é grave e o paciente apresenta sintomas físicos (dor abdominal). A observação clínica isolada por apenas 4 horas seguida de alta é uma conduta insegura, pois lesões viscerais ou sangramentos internos podem não se manifestar laboratorialmente de imediato.\n\nAlternativa B: Não há indicação de intubação orotraqueal. O paciente está consciente (Glasgow 15), com via aérea pérvia e saturação de oxigênio aceitável. A prioridade é o diagnóstico das possíveis lesões abdominais.\n\nAlternativa C: As radiografias simples de tórax e pelve fazem parte da rotina inicial do ATLS, mas a radiografia de abdome tem baixíssima utilidade no trauma contuso. Em um paciente estável com forte suspeita de lesão intra-abdominal e acesso a exames de maior precisão, a tomografia é superior por oferecer maior sensibilidade e especificidade.\n\nAlternativa D: A realização de tomografia de abdome sem contraste endovenoso é inadequada no contexto de trauma. Sem o contraste, o examinador não consegue distinguir adequadamente entre tecidos lesionados, hematomas e sangramento ativo, o que invalida o objetivo principal do exame neste cenário.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  },
+  {
+    "id": "AJUDA_3df7d8db-bbbb-4465-8ff6-abe5d05bdf88",
+    "originalId": "3df7d8db-bbbb-4465-8ff6-abe5d05bdf88",
+    "statement": "Paciente, sexo feminino, branca, 66 anos de idade, comparece em consulta ginecológica de rotina sem queixas, com os seguintes exames: densitometria óssea fêmur proximal T score -2,7; coluna vertebral T score -1,1; cálcio, paratormônio, fosfatase alcalina, eletroforese de proteínas, TSH e creatinina, todos normais. Dosagem de 25 hidroxivitamina D: 27 ng/mL. Menopausada há 14 anos, nega fraturas por fragilidades, nega doenças. Nunca fez terapia de reposição hormonal, nega tabagismo ou etilismo. Segundo o inquérito alimentar realizado, a paciente ingere cerca de 1400 mg de cálcio elementar por dia.\nSegundo o mais recente Protocolo Clínico e Diretrizes Terapêuticas de Osteoporose, além das medidas não farmacológicas, assinale a alternativa que apresenta, corretamente, o tratamento indicado nesse momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ácido zoledrônico e colecalciferol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alendronato de sódio e colecalciferol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Carbonato de cálcio e calcitriol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Denosumabe e carbonato de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Terapia de reposição hormonal e citrato de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, devemos analisar os critérios diagnósticos e as recomendações do Protocolo Clínico e Diretrizes Terapêuticas (PCDT) de Osteoporose do Ministério da Saúde.\n\nAnálise do Diagnóstico:\nA paciente apresenta osteoporose, definida densitometricamente por um T-score menor ou igual a -2,5 (neste caso, -2,7 no fêmur proximal). Ela é uma mulher na pós-menopausa, sem contraindicações aparentes para o tratamento farmacológico.\n\nAnálise Laboratorial e Nutricional:\n1. Cálcio: A ingestão alimentar é de 1400 mg/dia. As diretrizes recomendam para essa faixa etária cerca de 1000 a 1200 mg/dia. Portanto, a paciente já atinge a meta nutricional, sendo desnecessária a suplementação medicamentosa de cálcio (carbonato ou citrato).\n2. Vitamina D: O valor de 27 ng/mL está abaixo do nível considerado ideal para pacientes com osteoporose (que deve ser mantido acima de 30 ng/mL). Assim, há indicação de suplementação de colecalciferol.\n\nAnálise da Conduta Farmacológica:\nDe acordo com o PCDT, os bisfosfonatos são a primeira linha de tratamento para osteoporose. O alendronato de sódio (via oral) é o medicamento de escolha inicial devido à sua eficácia comprovada na redução de fraturas e seu custo-benefício.\n\nPorque a alternativa (b) está correta:\nO Alendronato de sódio é a terapia antirreabsortiva de primeira linha recomendada pelo protocolo brasileiro. O Colecalciferol é necessário para elevar os níveis de vitamina D da paciente acima de 30 ng/mL. Como a ingestão dietética de cálcio é excelente (1400 mg), não se prescreve suplemento de cálcio.\n\nPorque as outras alternativas estão incorretas:\na) Ácido zoledrônico: Embora seja um bisfosfonato potente, é uma medicação de uso intravenoso geralmente reservada para pacientes que apresentam intolerância ou falha aos bisfosfonatos orais, ou em situações específicas de internação/pós-fratura de quadril imediata, não sendo a primeira escolha recomendada pelo PCDT para este perfil inicial.\n\nc) Carbonato de cálcio e calcitriol: A paciente não precisa de suplementação de cálcio, pois sua dieta já supre a necessidade. O calcitriol (forma ativa) não é a droga de escolha para suplementação padrão de vitamina D; prefere-se o colecalciferol (D3). Além disso, falta o agente principal para tratamento da densidade óssea (bisfosfonato).\n\nd) Denosumabe: É um anticorpo monoclonal (anti-RANKL) de alta eficácia, porém, segundo o fluxo do PCDT, é reservado para casos de falha terapêutica ou intolerância aos bisfosfonatos, não sendo a conduta inicial. Novamente, o cálcio é desnecessário aqui.\n\ne) Terapia de reposição hormonal (TRH): A TRH pode auxiliar na massa óssea, mas a paciente está na menopausa há 14 anos (aos 66 anos de idade), o que ultrapassa a \"janela de oportunidade\" para início seguro da TRH. Além disso, a paciente já consome cálcio suficiente na dieta.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  },
+  {
+    "id": "AJUDA_3e06eacf-a6d1-45fc-be29-fb97adc580f1",
+    "originalId": "3e06eacf-a6d1-45fc-be29-fb97adc580f1",
+    "statement": "Situação-Problema: Menina, 3 anos de idade, é levada ao Pronto Atendimento com história de manchas avermelhadas e pruriginosas pelo corpo, iniciadas 30 minutos após o almoço. A mãe relata que a criança comeu ovo mexido e camarão pela primeira vez. Ao exame físico, observam-se pápulas eritematosas e edematosas em tronco e membros, prurido intenso, sem sinais respiratórios ou hipotensão.\n\nCom base nos dados clínicos, indique o mecanismo fisiopatológico predominante, responsável pelo quadro descrito:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Liberação de histamina mediada por IgE após ativação de mastócitos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Liberação de bradicinina em resposta a estímulo farmacológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Formação de imunocomplexos e ativação do complemento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reação tardia mediada por linfócitos T CD8+.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nO quadro clínico apresentado é clássico de urticária aguda por alergia alimentar imediata (reação de hipersensibilidade do tipo I). Os fatores-chave para o diagnóstico são a exposição a alérgenos alimentares frequentes (ovo e camarão), o início rápido dos sintomas (30 minutos após a ingestão) e as lesões características (pápulas eritematosas, edematosas e intensamente pruriginosas).\n\nJustificativa das alternativas:\n\nAlternativa a (Correta): Trata-se de uma reação de hipersensibilidade do tipo I (imediata). Após a sensibilização prévia, os antígenos alimentares ligam-se a anticorpos IgE específicos fixados na superfície de mastócitos e basófilos. Isso desencadeia a degranulação celular e a liberação maciça de mediadores pré-formados, principalmente a histamina. A histamina age nos receptores H1 provocando vasodilatação (eritema), aumento da permeabilidade vascular (edema/pápula) e estimulação de terminações nervosas sensoriais (prurido intenso).\n\nAlternativa b (Incorreta): A liberação de bradicinina é o mecanismo central de quadros de angioedema não histaminérgico, como o angioedema hereditário ou o induzido por inibidores da ECA. Essas condições cursam tipicamente com edema de subcutâneo e mucosas sem a presença de urticas e sem prurido.\n\nAlternativa c (Incorreta): A formação de imunocomplexos com ativação da cascata do complemento é o mecanismo da hipersensibilidade do tipo III (como na doença do soro e em vasculites). Trata-se de uma resposta inflamatória subaguda que leva dias ou semanas para se manifestar, sendo incompatível com o tempo de 30 minutos.\n\nAlternativa d (Incorreta): A resposta mediada por linfócitos T define a hipersensibilidade do tipo IV (celular ou tardia). Esse mecanismo não envolve anticorpos e exige um tempo de latência de 24 a 72 horas para a manifestação clínica (como ocorre na dermatite de contato alérgica e no teste tuberculínico/PPD).",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  },
+  {
+    "id": "AJUDA_3e086879-a29e-4d11-a384-0b1168578060",
+    "originalId": "3e086879-a29e-4d11-a384-0b1168578060",
+    "statement": "Caso Clinico: Homem de 25 anos, chega ao Pronto Atendimento após sofrer colisão automobilística frontal. O exame físico apresenta PA 120/80 mmHg, dor em hipocôndrio direito. FAST será realizado. Assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliar pericárdio, estômago, retroperitônio e pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avaliar apenas esplenorrenal e pelve para reduzir tempo de exame.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Avaliar apenas o espaço hepatorrenal; demais janelas só se instável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avaliar pericárdio e hepatorrenal; demais janelas não são obrigatórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Avaliar pericárdio, espaço hepatorrenal, espaço esplenorrenal e fundo de saco pélvico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O exame FAST (Focused Assessment with Sonography for Trauma) é uma ferramenta essencial na avaliação inicial do paciente traumatizado, tanto estável quanto instável. O seu principal objetivo é identificar a presença de líquido livre (sangue) em cavidades serosas.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O FAST não é delineado para avaliar o estômago nem o retroperitônio. O ultrassom apresenta limitações importantes para visualizar estruturas retroperitoneais e vísceras ocas devido à presença de gases, sendo a Tomografia de Abdome o padrão-ouro para essas regiões.\n\nAlternativa (b) Incorreta. O exame deve ser sistemático e completo. Avaliar apenas o lado esquerdo (esplenorrenal) e a pelve deixaria de fora o espaço hepatorrenal (onde o líquido se acumula com mais frequência) e o pericárdio, podendo resultar em diagnósticos perdidos de hemoperitônio ou tamponamento cardíaco.\n\nAlternativa (c) Incorreta. Mesmo que a dor seja em hipocôndrio direito, o líquido livre pode migrar por toda a cavidade abdominal (pelas goteiras paracólicas). O protocolo exige a avaliação de todas as janelas padronizadas, independentemente da estabilidade hemodinâmica, para um rastreio eficaz.\n\nAlternativa (d) Incorreta. Todas as janelas do protocolo FAST são consideradas obrigatórias para que o exame seja validado como completo. A omissão das janelas esplenorrenal e pélvica compromete a sensibilidade do método.\n\nAlternativa (e) Correta. Esta alternativa descreve exatamente as quatro janelas clássicas do protocolo FAST:\n1. Janela Pericárdica (subxifoide): para avaliar derrame pericárdico/tamponamento.\n2. Espaço Hepatorrenal (Morison): entre o fígado e o rim direito.\n3. Espaço Esplenorrenal: entre o baço e o rim esquerdo.\n4. Fundo de saco pélvico (Suprapúbica): para avaliar líquido livre na pelve (ao redor da bexiga ou útero).\n\nPortanto, a alternativa (e) reflete o padrão de atendimento preconizado pelo ATLS (Advanced Trauma Life Support).",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  },
+  {
+    "id": "AJUDA_3e1e346c-8f14-47d5-9a55-7f8dd917abf2",
+    "originalId": "3e1e346c-8f14-47d5-9a55-7f8dd917abf2",
+    "statement": "Paciente de 29 anos, em tratamento psiquiátrico. Segundo familiares, vem apresentando diminuição do volume capilar. Há cerca de 48 horas é acometida de dor abdominal tipo cólica, distensão abdominal leve, vômitos fecaloides e diminuição do volume fecal. \n\nNesse caso, qual é o diagnóstico provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intoxicação por neurolépticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bezoar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Distúrbio hidroeletrolítico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Ogilvie.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro descreve uma paciente jovem com histórico psiquiátrico que apresenta sinais de obstrução intestinal mecânica (dor em cólica, distensão abdominal, vômitos fecaloides e parada de eliminação de fezes). O ponto-chave para a resolução da questão é o relato de diminuição do volume capilar. Em provas de residência, a associação de transtorno psiquiátrico, alopecia (perda de cabelo) e obstrução intestinal é o quadro clássico de tricotilomania (ato de arrancar os cabelos) seguida de tricotifagia (ato de comer os cabelos). Como o cabelo humano não é digerido pelo trato gastrointestinal, ele se acumula e forma uma massa denominada bezoar.\n\nAlternativa a: Incorreta. O uso de neurolépticos e outros fármacos psiquiátricos com efeito anticolinérgico pode causar constipação e, em casos graves, íleo paralítico. No entanto, essa condição não explica a perda de volume capilar nem costuma evoluir de forma tão aguda com vômitos fecaloides em uma paciente jovem, a menos que houvesse outros sinais de toxicidade grave.\n\nAlternativa b: Correta. O bezoar, especificamente o tricobezoar (formado por fibras de cabelo), é o diagnóstico mais provável. O cabelo ingerido vai se enovelando no estômago e pode se estender até o intestino delgado (conhecido como Síndrome de Rapunzel), causando uma obstrução mecânica completa ou parcial. A alopecia relatada pelos familiares é a prova semiológica da tricotifagia.\n\nAlternativa c: Incorreta. Distúrbios hidroeletrolíticos, como a hipocalemia ou a hipercalcemia, podem levar a uma diminuição da motilidade intestinal (íleo adinâmico). Contudo, eles geralmente aparecem como consequência de um quadro obstrutivo (devido aos vômitos e desidratação) e não explicariam a alopecia descrita no enunciado.\n\nAlternativa d: Incorreta. A Síndrome de Ogilvie, ou pseudo-obstrução colônica aguda, caracteriza-se por uma dilatação maciça do cólon sem a presença de um fator mecânico obstrutivo. Ela ocorre tipicamente em pacientes idosos, gravemente enfermos, hospitalizados ou no pós-operatório de cirurgias ortopédicas ou cardíacas, não condizendo com o perfil desta paciente.\n\nConclusão: A presença de sintomas de obstrução intestinal mecânica em uma paciente com sinais de alopecia e transtorno psiquiátrico direciona o diagnóstico para bezoar por ingestão de cabelos.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Transtornos Alimentares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  },
+  {
+    "id": "AJUDA_3e2072e0-88e4-4873-a50d-ab0e9880c475",
+    "originalId": "3e2072e0-88e4-4873-a50d-ab0e9880c475",
+    "statement": "Qual o diagnóstico nutricional de uma criança de quatro anos de idade que apresenta classificação de índice de massa corporal (IMC) de acordo com o escore Z da OMS de Escore Z < -3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Magreza acentuada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Risco de sobrepeso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IMC adequado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Magreza.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para responder a essa questão, devemos aplicar os critérios de classificação nutricional da Organização Mundial da Saúde (OMS), que são adotados pelo Ministério da Saúde por meio do Sistema de Vigilância Alimentar e Nutricional (SISVAN). O Índice de Massa Corporal (IMC) para a idade é um indicador fundamental para identificar desvios nutricionais, tanto de déficit quanto de excesso.\n\nPara crianças de 0 a 5 anos incompletos (como é o caso da criança de quatro anos citada), os pontos de corte para o escore Z do IMC para a idade são:\n\n- Escore Z abaixo de -3: Magreza acentuada.\n- Escore Z maior ou igual a -3 e menor que -2: Magreza.\n- Escore Z maior ou igual a -2 e menor ou igual a +1: Peso adequado (Eutrofia).\n- Escore Z maior que +1 e menor ou igual a +2: Risco de sobrepeso.\n- Escore Z maior que +2 e menor ou igual a +3: Sobrepeso.\n- Escore Z acima de +3: Obesidade.\n\nAnálise das alternativas:\n\na) Correta. Conforme os critérios técnicos, um valor de escore Z menor que -3 indica que a criança está em um estado de desnutrição grave em relação à sua estatura e idade, recebendo o diagnóstico de magreza acentuada.\n\nb) Incorreta. O risco de sobrepeso é uma classificação voltada para o excesso de peso, ocorrendo quando o escore Z está entre +1 e +2.\n\nc) Incorreta. O IMC é considerado adequado ou eutrófico quando o resultado se encontra na faixa de normalidade da curva, situada entre os escores Z -2 e +1.\n\nd) Incorreta. Na faixa etária de 0 a 5 anos, o diagnóstico de obesidade pelo IMC para a idade só é estabelecido quando o escore Z é superior a +3.\n\ne) Incorreta. Embora o termo pareça próximo, a classificação \"magreza\" é reservada especificamente para o intervalo entre os escores Z -3 e -2. Quando o valor é inferior a -3, a terminologia correta e oficial é magreza acentuada.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  },
+  {
+    "id": "AJUDA_3e21230a-81c2-44f6-a7ff-fe6986764015",
+    "originalId": "3e21230a-81c2-44f6-a7ff-fe6986764015",
+    "statement": "Recém-nascido, sexo masculino, 12 dias de vida, nascido a termo, aleitamento materno exclusivo, está em consulta de rotina. A mãe relata boa sucção e ganho de peso, sem queixas no momento. Mama a cada 3 horas, inclusive na madrugada. Relata diurese clara abundante e evacuações amareladas pastosas de 4 a 5 vezes ao dia.\nAo exame clínico, é notada icterícia visível até joelhos, sem outros achados relevantes.\nColhidos exames laboratoriais, com bilirrubina total: 13,8 mg/dL; bilirrubina indireta: 13,2 mg/dL; bilirrubina direta: 0,6 mg/dL; Coombs direto negativo; reticulócitos 2,0% (referência: 0,5–3%); TSH 2,5 µUI/mL (referência: 0,5–6,0 µUI/mL).\nPeso atual 3.380 g (ao nascer 3.250 g).\nQual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internar para fototerapia devido à persistência da icterícia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar ultrassonografia de abdome para programação cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter aleitamento materno exclusivo e acompanhamento clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Suspender o aleitamento por 48 horas e oferecer fórmula infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nEstamos diante de um recém-nascido (RN) a termo, com 12 dias de vida, apresentando icterícia tardia com predomínio de bilirrubina indireta (BI: 13,2 mg/dL). O estado geral do lactente é excelente: apresenta ganho de peso adequado (superou o peso de nascimento), boa aceitação do seio materno, diurese e evacuações normais. Os exames descartam hemólise (Coombs direto negativo e reticulócitos normais) e hipotireoidismo congênito (TSH normal).\n\nO diagnóstico mais provável é a Icterícia do Leite Materno. Ela ocorre tipicamente após a primeira semana de vida, em bebês saudáveis e com aleitamento materno bem estabelecido. A causa exata é incerta, mas acredita-se que substâncias no leite materno aumentem a circulação entero-hepática da bilirrubina. Diferencia-se da Icterícia do Aleitamento Materno (que ocorre na primeira semana por baixa ingestão calórica) porque, neste caso, o bebê está ganhando peso e mamando bem.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA conduta na icterícia do leite materno é expectante. Com um nível de bilirrubina total de 13,8 mg/dL em um RN a termo com 12 dias, não há indicação de tratamento invasivo. Segundo as curvas de referência (como as da Sociedade Brasileira de Pediatria e da Academia Americana de Pediatria), o nível para fototerapia nessa idade e em bebês sem fatores de risco é significativamente mais alto (geralmente acima de 20 mg/dL). Portanto, deve-se manter o aleitamento materno exclusivo e realizar apenas o acompanhamento clínico.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa a) Internar para fototerapia devido à persistência da icterícia.\nIncorreta. A indicação de fototerapia baseia-se no nível de bilirrubina total em relação à idade cronológica e presença de fatores de risco. Para um RN de 12 dias, saudável, o valor de 13,8 mg/dL é considerado seguro e não atinge o limiar para tratamento.\n\nAlternativa b) Solicitar ultrassonografia de abdome para programação cirúrgica.\nIncorreta. A investigação de causas cirúrgicas (como atresia de vias biliares) estaria indicada se houvesse colestase, caracterizada pelo aumento da bilirrubina direta (geralmente > 1,0 mg/dL ou > 20% da bilirrubina total). No caso, a bilirrubina direta é normal (0,6 mg/dL).\n\nAlternativa d) Suspender o aleitamento por 48 horas e oferecer fórmula infantil.\nIncorreta. Antigamente, utilizava-se a suspensão do leite materno como teste diagnóstico, pois os níveis de bilirrubina caem rapidamente. No entanto, essa prática caiu em desuso porque interfere no sucesso da amamentação e é desnecessária em níveis de bilirrubina moderados como o apresentado. O benefício do leite materno supera amplamente o risco de uma icterícia benigna e autolimitada.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:48.464Z"
+  }
+]

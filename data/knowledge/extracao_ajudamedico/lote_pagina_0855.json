@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_ed351d4a-8268-448c-bbe9-a9ee8d34e091",
+    "originalId": "ed351d4a-8268-448c-bbe9-a9ee8d34e091",
+    "statement": "Paciente com diagnóstico de Hipertensão arterial desde os 20 anos de idade, sem controle adequado apesar do uso regular de 4 classes de anti-hipertensivos, com doses otimizadas. Nega outras comorbidades. Foi submetido à investigação para hipertensão arterial secundária, com achado de assimetria renal na ultrassonografia de rins e vias urinárias. Qual hipótese diagnóstica mais provável e qual exame complementar indicado para confirmação diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença renal parenquimatosa; relação proteína/creatinina em amostra isolada de urina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estenose de artéria renal secundária à displasia fibromuscular; ultrassonografia com doppler de artérias renais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Estenose de artéria renal secundária à aterosclerose; ultrassonografia com doppler de artérias renais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperaldosteronismo primário; aldosterona sérica, atividade da renina plasmática e cálculo da relação aldosterona/renina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta hipertensão arterial de início precoce (20 anos) e critérios para hipertensão resistente (não controlado com 4 classes de anti-hipertensivos em doses otimizadas). Esse perfil exige a investigação de causas secundárias. O achado de assimetria renal na ultrassonografia é um sinal clássico de hipertensão renovascular, sugerindo que um dos rins está recebendo menos fluxo sanguíneo e, consequentemente, sofrendo atrofia isquêmica.\n\nAlternativa a) Incorreta. A doença renal parenquimatosa é uma causa de hipertensão secundária, mas geralmente cursa com alteração da função renal (elevação de ureia e creatinina) e alterações no sedimento urinário. A assimetria renal marcante é mais característica de doença vascular (estenose) do que de doença do parênquima, que costuma ser bilateral e difusa no caso de doenças crônicas.\n\nAlternativa b) Correta. A displasia fibromuscular é a causa mais comum de hipertensão renovascular em jovens e adultos jovens. Ela provoca estenoses nas artérias renais, levando à isquemia renal e ativação do sistema renina-angiotensina-aldosterona, o que explica a hipertensão grave e resistente. A isquemia crônica resulta na diminuição do tamanho do rim afetado, gerando a assimetria vista no ultrassom. O ultrassom com Doppler das artérias renais é um excelente exame inicial e confirmatório, pois permite visualizar a anatomia vascular e medir a velocidade do fluxo sanguíneo para identificar a estenose.\n\nAlternativa c) Incorreta. Embora a aterosclerose seja a principal causa de estenose de artéria renal na população geral, ela acomete tipicamente pacientes idosos ou com múltiplos fatores de risco cardiovascular (diabetes, tabagismo, dislipidemia). Para um paciente que iniciou o quadro aos 20 anos e sem outras comorbidades, a displasia fibromuscular é a hipótese obrigatória.\n\nAlternativa d) Incorreta. O hiperaldosteronismo primário é uma causa importante de hipertensão resistente, porém sua origem é na glândula adrenal (produção excessiva de aldosterona). Essa condição não provoca assimetria renal na ultrassonografia. A investigação com a relação aldosterona/renina seria indicada se houvesse suspeita de origem adrenal, o que não condiz com o achado de alteração no tamanho dos rins.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.084Z"
+  },
+  {
+    "id": "AJUDA_ed38fad7-c7b5-48ef-a0ea-6a46a687c8a8",
+    "originalId": "ed38fad7-c7b5-48ef-a0ea-6a46a687c8a8",
+    "statement": "Mulher com diagnóstico de hipercolesterolemia procurou a UBS mais próxima da casa de sua mãe para acompanhamento, sem outras queixas. Na recepção, foi orientada que, por não morar na região, deveria procurar uma UBS da sua região de moradia para realizar este acompanhamento. Em relação a esse cenário, indique se a recepção acertou ou errou e a respectiva justificativa.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acertou, porque a UBS de sua região de moradia é o local mais apropriado para o acompanhamento longitudinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Acertou, porque pessoas não cadastradas não podem ser atendidas nas UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Errou, porque o SUS é universal e a paciente deveria ter sido atendida pela unidade que procurou.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Errou, porque a Estratégia de Saúde da Família deve atender todos os familiares dos residentes da área de abrangência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os princípios organizativos e as diretrizes da Atenção Primária à Saúde (APS) no Brasil, fundamentados na Política Nacional de Atenção Básica (PNAB). O foco principal aqui é o conceito de territorialização e longitudinalidade do cuidado.\n\nAlternativa (a): Está correta. A Atenção Primária tem como uma de suas diretrizes a longitudinalidade, que pressupõe a continuidade da relação entre a equipe de saúde e o paciente ao longo do tempo. Para que isso ocorra de forma eficiente, o sistema é organizado por meio da territorialização, onde cada Unidade Básica de Saúde (UBS) é responsável pela população que reside em sua área de abrangência. Como a paciente buscava o acompanhamento de uma condição crônica (hipercolesterolemia) e não apresentava queixas agudas ou emergenciais, o correto é que ela seja acompanhada pela UBS de sua região de moradia, onde o vínculo e a coordenação do cuidado são estabelecidos.\n\nAlternativa (b): Está incorreta. O motivo do redirecionamento não é o \"bloqueio\" de pessoas não cadastradas, mas sim a necessidade de organizar o fluxo de atendimento e garantir que o cuidado continuado ocorra na unidade de referência do paciente. O SUS é universal e deve acolher a todos, mas o acompanhamento eletivo deve seguir as normas de territorialização.\n\nAlternativa (c): Está incorreta. Embora o SUS seja universal, ele também é regido pelos princípios da regionalização e hierarquização. A universalidade garante o acesso ao sistema, mas não significa que o paciente possa escolher qualquer unidade para realizar acompanhamentos de rotina ou de longo prazo sem seguir a organização territorial. O atendimento em qualquer unidade é obrigatório em casos de urgência e emergência, o que não era o caso da paciente (sem outras queixas).\n\nAlternativa (d): Está incorreta. A área de abrangência de uma equipe da Estratégia de Saúde da Família (ESF) é delimitada pelo local de residência dos usuários, e não por laços de parentesco com moradores da região. O fato de a mãe da paciente morar naquela área não confere à paciente o direito de acompanhamento longitudinal naquela UBS específica, caso ela resida em outro território.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.084Z"
+  },
+  {
+    "id": "AJUDA_ed3ba8d8-080d-4e44-ade7-d9e569dd1e90",
+    "originalId": "ed3ba8d8-080d-4e44-ade7-d9e569dd1e90",
+    "statement": "Uma menina de 8 anos apresenta febre há três dias, odinofagia e exantema micropapular difuso com aspecto de lixa, predominante em tronco e regiões de dobras, e palidez perioral, além de língua edemaciada. O tratamento de escolha nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "amoxicilina oral por dez dias",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "azitromicina oral por três dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cetocanazol oral por cinco dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "claritromicina oral por sete dias",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO\n\nO quadro clínico descrito é clássico de escarlatina, uma doença exantemática causada pelas toxinas pirogênicas do Streptococcus pyogenes (estreptococo beta-hemolítico do grupo A). A tríade de odinofagia, febre e exantema micropapular com textura de lixa é característica. A questão ainda traz sinais semiológicos patognomônicos: o sinal de Filatov (palidez perioral) e a língua em framboesa (edemaciada e com papilas proeminentes). O exantema que se intensifica em áreas de dobras (tronco e regiões flexoras) sugere a presença do sinal de Pastia.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Correta. O objetivo principal do tratamento da escarlatina é a erradicação do Streptococcus pyogenes da orofaringe para prevenir complicações não supurativas, especificamente a febre reumática. O tratamento de escolha consiste no uso de penicilinas. A amoxicilina oral por 10 dias é o esquema padrão recomendado devido à sua eficácia, segurança e facilidade de adesão em pediatria, garantindo o tempo necessário para a prevenção da febre reumática.\n\nAlternativa b: Incorreta. A azitromicina é um macrolídeo e não é a droga de primeira escolha. Seu uso é reservado para pacientes com alergia comprovada à penicilina. Além disso, o tempo de três dias é insuficiente para garantir a erradicação bacteriana visando à prevenção de sequelas tardias, conforme os protocolos clínicos vigentes.\n\nAlternativa c: Incorreta. O cetoconazol é um agente antifúngico. A escarlatina é uma infecção bacteriana; logo, o uso de antifúngicos não possui qualquer indicação ou eficácia neste caso.\n\nAlternativa d: Incorreta. Assim como a azitromicina, a claritromicina é um macrolídeo indicado apenas em casos de hipersensibilidade aos betalactâmicos. Não é o tratamento de escolha para uma criança sem histórico de alergias graves a penicilinas.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.084Z"
+  },
+  {
+    "id": "AJUDA_ed46fb9a-f4a2-4812-9af2-cce793abaf40",
+    "originalId": "ed46fb9a-f4a2-4812-9af2-cce793abaf40",
+    "statement": "A doença hepática esteatótica metabólica (DHEM) compreende um espectro de manifestações hepáticas associadas a distúrbios metabólicos e cardiovasculares. O FIB-4 (Índice de Fibrose-4) é um teste usado para avaliar a probabilidade e grau de fibrose hepática. Quais dados são levados em consideração para o cálculo do FIB-4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Idade, alanina aminotransferase, aspartato aminotransferase e contagem de plaquetas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Sexo, glicemia em jejum, albumina presença de esteatose hepática na ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sexo, glicemia em jejum, alanina aminotransferase, aspartato aminotransferase e esteatose hepática na ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Idade, alanina aminotransferase, aspartato aminotransferase, bilirrubinas totais e frações e albumina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O FIB-4 (Fibrosis-4 Index) é um dos biomarcadores não invasivos mais validados para a triagem de fibrose hepática em pacientes com Doença Hepática Esteatótica Metabólica (DHEM). Sua utilização é amplamente recomendada por diversas diretrizes médicas devido ao seu alto valor preditivo negativo para afastar fibrose avançada, utilizando exames laboratoriais simples e de baixo custo.\n\nPara o cálculo desse índice, utiliza-se a seguinte fórmula: (Idade em anos x AST) / (Contagem de Plaquetas x Raiz Quadrada de ALT). Portanto, os elementos necessários são exatamente quatro.\n\nAlternativa A: Está correta. A idade, os níveis das transaminases (AST/TGO e ALT/TGP) e a contagem de plaquetas são os únicos componentes da fórmula do FIB-4. A idade reflete o tempo de exposição à doença, as transaminases indicam o grau de atividade inflamatória/lesão hepatocelular e as plaquetas funcionam como um marcador indireto de hipertensão portal e evolução para cirrose.\n\nAlternativa B: Está incorreta. Parâmetros como sexo, glicemia de jejum e albumina não fazem parte do FIB-4. A glicemia e a albumina são utilizadas em outro escore conhecido como NFS (NAFLD Fibrosis Score). A ultrassonografia serve para o diagnóstico inicial da esteatose, mas não é uma variável do cálculo matemático deste índice de fibrose.\n\nAlternativa C: Está incorreta. Embora cite ALT e AST, a inclusão de sexo, glicemia e achados de imagem descaracteriza o FIB-4. O score foi desenhado para ser uma ferramenta puramente laboratorial e clínica simplificada.\n\nAlternativa D: Está incorreta. Bilirrubinas e albumina são parâmetros que avaliam a função de síntese do fígado e a excreção biliar, sendo fundamentais nos critérios de Child-Pugh e MELD (utilizados para estadiamento e prognóstico na cirrose já estabelecida), mas não compõem o FIB-4.\n\nGabarito: Letra A.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.084Z"
+  },
+  {
+    "id": "AJUDA_ed4a0a9d-d729-4327-8719-0085de453cd4",
+    "originalId": "ed4a0a9d-d729-4327-8719-0085de453cd4",
+    "statement": "Homem de 75 anos refere surgimento de tumoração cutânea na região poplítea direita há 8 meses, de crescimento rápido, sobre área de cicatriz de queimadura profunda aos 12 anos de idade, e que não recebera enxertia de pele. A fotografia representa a lesão ao exame físico atual.\n\nQual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Úlcera de Marjolin.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Melanoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ceratose seborreica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lesão por pressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve o surgimento de uma neoplasia cutânea agressiva de crescimento rápido sobre uma cicatriz de queimadura profunda antiga (ocorrida há mais de 60 anos) que cicatrizou por segunda intenção, sem enxertia prévia. A fotografia evidencia uma lesão tumoral exofítica, ulcerovegetante, com áreas de necrose e crostas, circundada por tecido cutâneo cicatricial, atrófico e hipocrômico na fossa poplítea. Essa apresentação clínica e epidemiológica é patognomônica da Úlcera de Marjolin.\n\nAnálise das alternativas:\n\na) Úlcera de Marjolin: Correta. O termo refere-se à transformação maligna (mais frequentemente em Carcinoma Espinocelular - CEC) que ocorre sobre cicatrizes crônicas, úlceras venosas de longa data, fístulas ou cicatrizes de queimaduras graves que não receberam enxertia adequada. Caracteriza-se por um longo período de latência (geralmente décadas) seguido de crescimento rápido e comportamento biológico agressivo, exatamente como observado no paciente.\n\nb) Melanoma: Incorreta. O melanoma origina-se de melanócitos e tipicamente se manifesta com alterações pigmentares seguindo a regra do ABCDE (assimetria, bordas irregulares, cores variadas, diâmetro maior que 6 mm e evolução). Embora possa surgir em qualquer sítio anatômico, a transformação clássica de cicatriz de queimadura antiga é para carcinoma espinocelular (Úlcera de Marjolin).\n\nc) Ceratose seborreica: Incorreta. É uma afecção epitelial benigna muito frequente em idosos, caracterizada por lesões verrucosas, hiperceratósicas e de aspecto \"colado à pele\". Apresenta crescimento indolente e não possui relação com cicatrizes profundas nem capacidade de invasão ou ulceração tumoral agressiva.\n\nd) Lesão por pressão: Incorreta. Trata-se de dano tecidual decorrente de isquemia prolongada provocada por pressão contínua sobre proeminências ósseas em pacientes imobilizados (como sacro e calcâneos). A lesão do caso é francamente proliferativa, vegetante e com histórico de evolução tumoral sobre área cicatricial, definindo malignidade.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)",
+      "Queimaduras",
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f1dd407c4ee0f671316d4fbbdf169998fb242acca6a9daaf1c82c72977dfd28b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ed4a0a9d-d729-4327-8719-0085de453cd4_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.584Z"
+  },
+  {
+    "id": "AJUDA_ed506488-c643-4229-aaa3-cb9e30878f0f",
+    "originalId": "ed506488-c643-4229-aaa3-cb9e30878f0f",
+    "statement": "Em um plantão na UPA, você atende um paciente do sexo masculino, 67 anos, previamente hígido, com cefaleia holocraniana em pressão há, aproximadamente, 24 horas, relato de febre termometrada acima de 38 graus e relatos de vômitos. Sem outras alterações à avaliação inicial.\nAo exame físico, apresenta abertura ocular ao chamado, movimenta-se ativamente e mantém diálogo organizado. Apresenta-se com rigidez de nuca discreta, sem papiledema à avaliação de fundo de olho e sem déficit focal. \nPA 138×78mmHg, FC: 105bpm, SatO2: 99% aa\nExames iniciais: Hb:13.3 GL:15800 (12% de células imaturas – bastonetes e meta) n: 9800 Plaq: 168000 Cr:1,1 Ur:42 Na:138 K:3,5 Glicemia:132\nQual a PRÓXIMA conduta, considerando as alternativas a seguir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TC de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar ceftriaxona + vancomicina + dexametasona e aguardar imagem para punção lombar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Punção lombar imediata, e logo Ceftriaxona EV + Ampicilina EV + dexametasona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aguardar painel viral de LCR para decidir terapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente de 67 anos com sinais e sintomas clássicos de síndrome meníngea: febre, cefaleia, vômitos e rigidez de nuca. Diante da suspeita de meningite bacteriana aguda, a agilidade no diagnóstico e no início do tratamento é fundamental para o prognóstico.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A realização de tomografia computadorizada (TC) de crânio antes da punção lombar não é indicada de rotina. Ela deve ser solicitada apenas se houver sinais de alerta para hipertensão intracraniana ou lesões de massa, como: déficit neurológico focal, papiledema ao fundo de olho, alteração importante do nível de consciência (Escala de Coma de Glasgow menor que 14), crises convulsivas de início recente ou estado de imunossupressão severa. O paciente em questão está lúcido, orientado, sem déficits focais e sem papiledema, portanto, a TC não deve atrasar a punção.\n\nAlternativa b) Incorreta. Esta alternativa erra em dois pontos principais. Primeiro, indica aguardar a imagem (TC) desnecessariamente, conforme explicado acima. Segundo, o esquema antibiótico sugerido (ceftriaxona + vancomicina) é insuficiente para a idade do paciente. Em adultos acima de 50 anos, há um risco aumentado de infecção por Listeria monocytogenes, o que exige a adição de ampicilina ao esquema empírico inicial.\n\nAlternativa c) Correta. Esta é a conduta padrão. Como o paciente não apresenta contraindicações clínicas para a punção lombar (ausência de sinais de herniação ou déficit focal), o procedimento deve ser realizado imediatamente para coleta de líquor e análise (bioquímica, citologia, Gram e culturas). Logo após a coleta, deve-se iniciar a antibioticoterapia empírica e a dexametasona. O esquema com ceftriaxona (cobertura para pneumococo e meningococo) somado à ampicilina (cobertura para Listeria, mandatória no idoso) é o correto para a faixa etária de 67 anos. A dexametasona deve ser administrada idealmente antes ou junto com a primeira dose do antibiótico para reduzir a morbidade inflamatória.\n\nAlternativa d) Incorreta. A meningite bacteriana é uma emergência médica com alta taxa de letalidade. Jamais se deve aguardar resultados de exames laboratoriais específicos ou painéis virais para iniciar o tratamento medicamentoso. O tratamento deve ser empírico e precoce, baseado na suspeita clínica e na epidemiologia (idade e fatores de risco).\n\nResumo da conduta: Em pacientes com suspeita de meningite sem sinais de alarme neurológico, realiza-se a punção lombar imediata seguida de antibioticoterapia empírica adequada à idade (incluindo ampicilina no idoso) e corticoterapia. Se houvesse contraindicação para a punção, os antibióticos deveriam ser iniciados antes mesmo de levar o paciente para a tomografia.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Cefaleias",
+      "Meningites",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.584Z"
+  },
+  {
+    "id": "AJUDA_ed56becd-358d-4b8c-a6a3-2425101e4ea5",
+    "originalId": "ed56becd-358d-4b8c-a6a3-2425101e4ea5",
+    "statement": "A Vigilância em Saúde é um processo contínuo de coleta, análise e interpretação de dados, essencial para o planejamento e a avaliação das práticas de saúde pública. Sobre os diferentes tipos de vigilância epidemiológica, analise as seguintes afirmativas:\nI. Na vigilância passiva, a notificação depende da iniciativa dos profissionais ou dos serviços de saúde, sem busca ativa pelos órgãos de vigilância, o que pode resultar em subnotificação.\nII. A vigilância ativa é caracterizada por busca sistemática de casos, com deslocamento dos técnicos da vigilância até as unidades notificadoras para garantir a completude das informações.\nIII. A vigilância sentinela utiliza uma rede de unidades de saúde selecionadas para monitorar eventos específicos, sendo útil para estimar a magnitude de um problema de saúde, quando a vigilância universal é inviável.\nIV. Um exemplo de vigilância sentinela é o sistema de notificação compulsória de doenças, como sarampo e dengue, que exige que todos os casos suspeitos sejam informados às autoridades.",
+    "options": [
+      {
+        "id": "A",
+        "text": "todas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "apenas três.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "apenas duas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apenas uma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "nenhuma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I (Correta): A vigilância passiva é o modelo mais comum no Brasil. Nela, a autoridade sanitária aguarda o envio das notificações pelos profissionais ou serviços de saúde. Como depende da iniciativa espontânea do notificador, esse modelo é altamente suscetível à subnotificação, já que o profissional pode esquecer ou negligenciar o preenchimento da ficha de notificação.\n\nAfirmativa II (Correta): A vigilância ativa ocorre quando a equipe de vigilância epidemiológica toma a iniciativa de buscar os dados. Os técnicos se deslocam periodicamente a fontes de dados, como hospitais, laboratórios e cartórios, para procurar casos que não foram notificados passivamente. É uma estratégia fundamental para o controle de doenças em processo de erradicação ou eliminação, garantindo que nenhum caso passe despercebido.\n\nAfirmativa III (Correta): A vigilância sentinela não busca a totalidade dos casos em todas as unidades de saúde. Ela utiliza unidades de saúde estrategicamente selecionadas (unidades sentinelas) para monitorar a tendência, o perfil epidemiológico e a gravidade de certas doenças ou agravos. É muito utilizada para doenças de alta prevalência nas quais a vigilância universal seria cara ou desnecessária, como no monitoramento do vírus influenza ou de doenças transmitidas por alimentos.\n\nAfirmativa IV (Incorreta): O sistema que exige a notificação de todos os casos suspeitos por todos os serviços de saúde, como ocorre com o sarampo e a dengue, é chamado de Vigilância Universal. A vigilância sentinela, como explicado anteriormente, baseia-se em uma amostra seletiva de unidades, e não na obrigatoriedade de notificação por toda a rede de saúde para todos os casos.\n\nConclusão: Como apenas as afirmativas I, II e III estão corretas, a alternativa correta é a letra (b).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.584Z"
+  },
+  {
+    "id": "AJUDA_ed582f81-726e-4ee6-8935-66a29d2e6144",
+    "originalId": "ed582f81-726e-4ee6-8935-66a29d2e6144",
+    "statement": "Carlos, 27 anos, vai à consulta médica com febre, exantema, gânglios retroauriculares aumentados, conjuntivite, artralgia e tosse. Em seu prontuário, não há registro de vacinação contra a rubéola. Ele declara não ter viajado recentemente, nem ter tido contato com pessoas confirmadas para rubéola. Contudo, sua região encontra-se no estado que registrou um surto da doença há 4 meses. Trata-se de um caso suspeito de rubéola.\nO melhor método para fazer a confirmação desse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "examinar se há vínculo epidemiológico com outros casos confirmados;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar a sorologia de anticorpos IgM e IgG contra rubéola;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "verificar a associação temporal com a vacinação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "considerar os critérios clínicos como suficientes, diante dos sinais e sintomas presentes;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "observar o caso por 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A rubéola é uma doença exantemática aguda de etiologia viral que apresenta sintomas frequentemente inespecíficos, o que torna o diagnóstico clínico pouco confiável isoladamente. Para a confirmação de um caso suspeito, o Ministério da Saúde estabelece critérios laboratoriais como padrão-ouro.\n\nAnálise das alternativas:\n\na) Incorreta. O vínculo epidemiológico (contato com um caso confirmado laboratorialmente nos últimos 21 dias) pode ser utilizado para confirmar casos em situações de surto em que a testagem de todos os indivíduos se torna inviável. Contudo, para o manejo individual e diagnóstico definitivo de um caso isolado, o método laboratorial é superior e prioritário.\n\nb) Correta. A realização da sorologia para detecção de anticorpos IgM e IgG é o método de escolha para a confirmação laboratorial. A presença de anticorpos IgM específicos indica infecção recente (fase aguda). Já a detecção de IgG é utilizada para avaliar a imunidade ou, em casos de pareamento de amostras (soroconversão ou aumento de títulos), também confirma a infecção. Em doenças exantemáticas, a confirmação laboratorial é essencial devido à semelhança clínica com sarampo, parvovírus B19 e dengue.\n\nc) Incorreta. Verificar a associação temporal com a vacinação serve apenas para descartar reações vacinais (que podem ocorrer entre o 7º e o 12º dia após a vacina). Como o paciente não possui registro de vacinação, essa investigação não confirma a doença natural por rubéola.\n\nd) Incorreta. Os critérios clínicos (febre, exantema maculopapular e linfonodomegalia retroauricular/occipital) são fundamentais para definir o caso como \"suspeito\", mas não são suficientes para a \"confirmação\" definitiva, dada a baixa especificidade dos sinais e sintomas, que podem ser mimetizados por diversos outros vírus.\n\ne) Incorreta. Observar o caso por 48 horas não contribui para o diagnóstico etiológico e retarda as medidas de vigilância epidemiológica e bloqueio vacinal de contatos, que devem ser iniciadas o mais precocemente possível diante da suspeita.\n\nPortanto, a sorologia (alternativa B) é o método diagnóstico mais indicado para confirmar a infecção pelo vírus da rubéola no cenário apresentado.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.584Z"
+  },
+  {
+    "id": "AJUDA_ed65210d-1f05-4153-867d-e7a2657f1148",
+    "originalId": "ed65210d-1f05-4153-867d-e7a2657f1148",
+    "statement": "Um homem de 50 anos, com histórico de doença pulmonar obstrutiva crônica (DPOC) há 15 anos, realiza um eletrocardiograma de rotina. O laudo menciona achados sugestivos de sobrecarga atrial direita. Identifique o achado eletrocardiográfico característico desta condição:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Onda P com duração > 120 ms e entalhe em DII (P mitrale).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Onda P com amplitude > 0,25 mV em DII (P pulmonale).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Porção final negativa da onda P em V1 com área > 40 ms x 0,1 mV (Índice de Morris).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desvio do eixo da onda P para a esquerda, entre –30° e –45°.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Onda P positiva e apiculada, seguida de segmento PR isoelétrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os achados eletrocardiográficos da Sobrecarga Atrial Direita (SAD), condição frequente em pacientes com DPOC devido ao aumento da resistência vascular pulmonar e consequente sobrecarga das cavidades direitas (cor pulmonale). No eletrocardiograma, a despolarização do átrio direito contribui principalmente para a primeira metade e para a amplitude (altura) da onda P.\n\nAlternativa (a) Incorreta: A descrição de onda P com duração aumentada (maior que 120 ms) e presença de entalhe é conhecida como P mitrale. Esse é um achado característico da sobrecarga atrial esquerda, comum em patologias como a estenose mitral.\n\nAlternativa (b) Correta: O achado cardinal da sobrecarga atrial direita é o aumento da voltagem da onda P nas derivações inferiores (DII, DIII e aVF), superando 0,25 mV ou 2,5 mm. Esse fenômeno é denominado P pulmonale, refletindo a sobrecarga gerada por doenças do parênquima pulmonar ou da circulação pulmonar, como o DPOC citado no enunciado.\n\nAlternativa (c) Incorreta: O Índice de Morris refere-se à porção final negativa da onda P na derivação V1. Quando essa área é aumentada (maior que 1 mm x 40 ms), indica sobrecarga atrial esquerda, e não direita. Na SAD, observa-se em V1 uma onda P com a fase inicial positiva e pontiaguda.\n\nAlternativa (d) Incorreta: Na sobrecarga atrial direita, o eixo da onda P costuma sofrer um desvio para a direita (eixo verticalizado), situando-se geralmente entre +75 e +90 graus, devido ao predomínio do vetor de despolarização do átrio direito.\n\nAlternativa (e) Incorreta: Embora a onda P na SAD seja positiva e apiculada, a alternativa B apresenta o critério diagnóstico numérico exato e consagrado pela literatura. O diagnóstico eletrocardiográfico de sobrecarga atrial baseia-se prioritariamente na morfologia, amplitude e duração da onda P, e não no comportamento do segmento PR.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Eletrocardiograma",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.584Z"
+  },
+  {
+    "id": "AJUDA_ed7126bd-fa3a-4620-8241-c3c9aef62f27",
+    "originalId": "ed7126bd-fa3a-4620-8241-c3c9aef62f27",
+    "statement": "Uma paciente de 44 anos, G1P1, apresenta sangramento uterino anormal há 9 meses, associado a irregularidade menstrual. Não usa TRH. A USG transvaginal mostra endométrio de 14 mm, heterogêneo, com imagem focal de 1,8 cm com fluxo ao Doppler. É realizada histeroscopia diagnóstica, que evidencia lesão polipoide pediculada, com área focal esbranquiçada e irregular na base, sugerindo atipia. Durante o exame há boa visibilidade e estabilidade hemodinâmica. Considerando boas práticas e segurança oncológica, qual é a melhor conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar polipectomia histeroscópica completa ambulatorial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar apenas biópsia dirigida e programar ressecção posterior em centro cirúrgico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Interromper o exame e solicitar histeroscopia cirúrgica com alça monopolar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar progestagênio contínuo até realização de nova histeroscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar curetagem uterina após o exame para complemento diagnóstico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta uma paciente de 44 anos com sangramento uterino anormal e achados ultrassonográficos e histeroscópicos altamente suspeitos de malignidade. A presença de uma lesão polipoide com área esbranquiçada e irregular na base sugere fortemente a existência de um processo neoplásico (câncer de endométrio). O desafio da questão é determinar a conduta que equilibra o diagnóstico preciso e a segurança oncológica.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a polipectomia ambulatorial seja possível para pólipos benignos e pequenos, diante de uma suspeita de atipia ou malignidade, a ressecção ambulatorial pode ser incompleta ou resultar em fragmentação excessiva da peça, o que prejudica a análise anatomopatológica da base da lesão (margem). Além disso, o ambiente ambulatorial oferece menos recursos caso ocorra uma intercorrência em uma lesão mais complexa e vascularizada.\n\nb) Correta. Esta é a conduta mais prudente e segura. Realizar a biópsia dirigida durante a histeroscopia diagnóstica permite confirmar a natureza da lesão (histopatologia). Uma vez confirmado o diagnóstico de atipia ou carcinoma, o planejamento cirúrgico definitivo (seja uma ressecção completa em ambiente hospitalar com melhores recursos ou o tratamento oncológico definitivo, como a histerectomia) será feito com maior segurança, respeitando os princípios de oncologia e garantindo a análise adequada da base da lesão.\n\nc) Incorreta. Interromper o exame sem colher nenhuma amostra é uma conduta inadequada, pois atrasa o diagnóstico. Já que o médico está visualizando a lesão e tem boa visibilidade, a biópsia dirigida deve ser realizada de imediato para guiar os próximos passos. A escolha entre alça monopolar ou bipolar é técnica e secundária à necessidade do diagnóstico histológico prévio.\n\nd) Incorreta. O uso de progestagênio é indicado para o tratamento de hiperplasias endometriais sem atipia ou como terapia hormonal em casos selecionados. No entanto, o tratamento nunca deve ser iniciado antes de um diagnóstico histopatológico definitivo, especialmente quando há suspeita visual de câncer de endométrio.\n\ne) Incorreta. A curetagem uterina é um procedimento \"às cegas\" e apresenta uma taxa de falha diagnóstica considerável para lesões focais (cerca de 10% a 25% das lesões podem não ser alcançadas pela cureta). A histeroscopia com biópsia dirigida é o padrão-ouro, pois permite visualizar a área mais suspeita (neste caso, a base da lesão) e retirar o material exatamente daquele local, sendo superior à curetagem.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)",
+      "Pólipos Uterinos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:38.584Z"
+  }
+]

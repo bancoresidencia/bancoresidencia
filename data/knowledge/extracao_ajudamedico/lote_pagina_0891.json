@@ -1,0 +1,514 @@
+[
+  {
+    "id": "AJUDA_f78273e6-9750-47a6-af2b-e983a7e571b4",
+    "originalId": "f78273e6-9750-47a6-af2b-e983a7e571b4",
+    "statement": "Um paciente de 27 anos de idade apresentou dor periumbilical migrando para FID. Ao exame, apresentou FC 90 = bpm, FR = 18 irpm e saturação = 98%. A tomografia mostrou apêndice de 11 mm, sem abscesso. Com base nesse caso clínico, assinale a alternativa que corresponde à conduta correta para esse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apendicectomia laparoscópica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Antibioticoprofilaxia e alta ambulatorial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tratamento clínico obrigatório",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Drenagem percutânea guiada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro clínico clássico de apendicite aguda, manifestado pela dor periumbilical que migra para a fossa ilíaca direita. Os sinais vitais indicam estabilidade hemodinâmica (frequência cardíaca de 90 bpm e frequência respiratória de 18 irpm). O achado tomográfico de um apêndice com 11 mm confirma o diagnóstico (considera-se alterado acima de 6 ou 7 mm), e a ausência de abscesso classifica o caso como uma apendicite aguda não complicada.\n\nExplicação das Alternativas:\n\nAlternativa A (Correta): A apendicectomia é o tratamento padrão-ouro para a apendicite aguda. A abordagem laparoscópica é preferível à via aberta, especialmente em adultos jovens, pois está associada a menos dor no pós-operatório, menor risco de infecção da ferida operatória, melhor resultado estético e retorno mais rápido às atividades habituais.\n\nAlternativa B (Incorreta): A antibioticoprofilaxia é uma medida auxiliar realizada rotineiramente antes da cirurgia para reduzir o risco de infecção de sítio cirúrgico, mas não substitui o tratamento definitivo. Dar alta ambulatorial para um paciente com apendicite aguda confirmada é um erro grave, pois a patologia pode evoluir para perfuração e peritonite.\n\nAlternativa C (Incorreta): O tratamento exclusivamente clínico (antibioticoterapia sem cirurgia) para apendicite não complicada é um tema debatido em estudos recentes, mas não é a conduta padrão e muito menos \"obrigatória\". A cirurgia continua sendo a recomendação principal devido às taxas de falha e de recorrência associadas ao tratamento apenas medicamentoso.\n\nAlternativa D (Incorreta): A drenagem percutânea guiada por imagem (ultrassonografia ou tomografia) é indicada apenas para casos de apendicite complicada, nos quais existe um abscesso volumoso (geralmente maior que 3 ou 4 cm) e bloqueado. Como o enunciado afirma explicitamente que o paciente não possui abscesso, não há indicação para esse procedimento.\n\nConclusão:\nDiante de um diagnóstico de apendicite aguda em fase inicial e sem complicações, a conduta correta é a intervenção cirúrgica imediata, preferencialmente por via laparoscópica.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.163Z"
+  },
+  {
+    "id": "AJUDA_f78a87d8-099d-499d-b1f7-20bf0f91cae4",
+    "originalId": "f78a87d8-099d-499d-b1f7-20bf0f91cae4",
+    "statement": "Um paciente de 60 anos de idade, com histórico de hipertensão e dislipidemia, compareceu à consulta com quadro de dor torácica intensa, sudorese e náusea. Ao exame físico, apresentou FC = 110 bpm, FR = 24 irpm e SatO2 = 92%. \n\nQual o diagnóstico mais provável nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Refluxo gastroesofágico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumonia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pericardite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infarto agudo do miocárdio",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito apresenta um paciente de 60 anos com múltiplos fatores de risco cardiovascular (hipertensão e dislipidemia) que manifesta sinais clássicos de uma emergência cardiológica. A dor torácica intensa associada a sintomas autonômicos, como sudorese e náuseas, além de alterações nos sinais vitais (taquicardia, taquipneia e leve hipoxemia), aponta diretamente para uma síndrome coronariana aguda.\n\nAlternativa (a) Incorreta. Embora o refluxo gastroesofágico possa mimetizar a dor torácica, ele geralmente se apresenta como queimação (pirose), tem relação com a alimentação ou posição supina e dificilmente evoluiria com sudorese intensa, náuseas e taquicardia em um contexto agudo.\n\nAlternativa (b) Incorreta. A pneumonia costuma cursar com febre, tosse produtiva e dor pleurítica (que piora com a respiração profunda). Apesar de poder causar taquipneia e queda na saturação de oxigênio, não é a hipótese principal para uma dor torácica súbita e intensa em um paciente com perfil de risco para aterosclerose.\n\nAlternativa (c) Incorreta. A pericardite apresenta dor torácica que tipicamente melhora quando o paciente se inclina para frente e piora na posição deitada ou com a inspiração profunda. Embora seja um diferencial, o perfil do paciente e os sintomas sistêmicos (sudorese e náuseas) tornam a isquemia miocárdica muito mais provável.\n\nAlternativa (d) Correta. O infarto agudo do miocárdio é a principal suspeita diante de dor torácica em pacientes idosos com fatores de risco cardiovascular. A presença de sudorese e náuseas indica uma resposta autonômica frequente no infarto. A taquicardia e a taquipneia podem refletir tanto a dor quanto uma possível insuficiência ventricular esquerda aguda decorrente da isquemia, o que justificaria também a saturação limítrofe de 92%. Diante deste cenário, a conduta imediata inclui a realização de um eletrocardiograma em até 10 minutos.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.163Z"
+  },
+  {
+    "id": "AJUDA_f79276eb-9951-4d56-8ba5-54123a0574bc",
+    "originalId": "f79276eb-9951-4d56-8ba5-54123a0574bc",
+    "statement": "Paciente de 58 anos com quadro de infarto agudo do miocárdio com supra de ST em parede anterior, com delta T de 2 h, candidato a angioplastia primária. Escolha de antiagregação/antitrombótico mais adequada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "AAS + clopidogrel; heparina não fracionada é contraindicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Evitar anticoagulação se houver stent farmacológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "AAS + inibidor seletivo P2Y12 + anticoagulação parenteral durante a intervenção coronária percutânea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Usar dupla antiagregação apenas após angiografia – aguardar definição da anatomia coronariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fibrinolítico deve preceder angioplastia sempre que disponível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST) de parede anterior, com tempo de evolução curto (2 horas). A conduta de escolha para a reperfusão, quando disponível em tempo hábil, é a Intervenção Coronária Percutânea (ICP) primária, também conhecida como angioplastia primária. Para este procedimento, a terapia antitrombótica de suporte é fundamental.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA base do tratamento farmacológico no IAMCSST que será submetido à angioplastia primária é a Tripla Terapia Inicial:\n1. AAS: Deve ser administrado o mais precocemente possível (dose de ataque de 150 a 300 mg).\n2. Inibidor do receptor P2Y12: Também deve ser administrado precocemente. As diretrizes preferem o Ticagrelor ou o Prasugrel em relação ao Clopidogrel para pacientes que vão para angioplastia, devido à maior potência e rapidez de ação.\n3. Anticoagulação parenteral: Essencial durante o procedimento de ICP para prevenir a formação de trombos nos cateteres e a oclusão aguda do vaso. A Heparina Não Fracionada (HNF) é o fármaco mais utilizado no laboratório de hemodinâmica.\n\nANÁLISE DAS ALTERNATIVAS INCORRETAS:\n\na) AAS + clopidogrel; heparina não fracionada é contraindicada.\nIncorreta. O Clopidogrel é uma opção válida, embora não seja a preferencial se houver disponibilidade de Ticagrelor ou Prasugrel. No entanto, a segunda parte da frase está errada: a Heparina Não Fracionada não é contraindicada, ela é o anticoagulante padrão-ouro utilizado durante a angioplastia primária.\n\nb) Evitar anticoagulação se houver stent farmacológico.\nIncorreta. A utilização de stent, seja ele farmacológico ou convencional, exige obrigatoriamente o uso de anticoagulação durante o procedimento e dupla antiagregação plaquetária após o implante para evitar a trombose do stent.\n\nd) Usar dupla antiagregação apenas após angiografia – aguardar definição da anatomia coronariana.\nIncorreta. No IAM com supra de ST, a dupla antiagregação deve ser iniciada assim que o diagnóstico é feito, idealmente ainda no pronto-atendimento ou na ambulância. Aguardar a definição da anatomia coronariana é uma estratégia que pode ser considerada em casos selecionados de infarto SEM supra de ST (pelo risco de necessidade de cirurgia de revascularização de urgência), mas não no IAM com supra.\n\ne) Fibrinolítico deve preceder angioplastia sempre que disponível.\nIncorreta. Esta estratégia é chamada de \"ICP facilitada\" e os estudos demonstraram que ela aumenta o risco de sangramento sem melhorar o prognóstico. Se a angioplastia primária estiver disponível dentro do tempo preconizado (atraso relacionado ao sistema inferior a 120 minutos), ela é superior ao fibrinolítico e deve ser realizada isoladamente. O fibrinolítico só é indicado quando a angioplastia não pode ser realizada em tempo hábil.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.163Z"
+  },
+  {
+    "id": "AJUDA_f796f496-8d40-4fe8-9f79-fb2005838f81",
+    "originalId": "f796f496-8d40-4fe8-9f79-fb2005838f81",
+    "statement": "Um lactente de 20 dias de vida, nascido pré‑termo tardio (36 semanas e 5 dias), com peso de nascimento de 2.200 g, foi levado para consulta de rotina.\n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a conduta adequada em relação à suplementação medicamentosa profilática de ferro.",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar 1 mg de ferro elementar/kg/dia, com início aos 30 dias de vida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar 1 mg de ferro elementar/kg/dia, iniciando imediatamente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar 2 mg de ferro elementar/kg/dia, com início aos 30 dias de vida",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "iniciar 2 mg de ferro elementar/kg/dia, iniciando imediatamente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar 2 mg de ferro elementar/kg/dia, com início aos 90 dias de vida",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos seguir as recomendações da Sociedade Brasileira de Pediatria (SBP) sobre a suplementação profilática de ferro em lactentes, que variam de acordo com o peso de nascimento e a idade gestacional.\n\nO paciente em questão é um prematuro tardio (36 semanas e 5 dias) e nasceu com baixo peso (2.200 g). Para prematuros ou recém-nascidos de baixo peso (abaixo de 2.500 g), a reserva de ferro é menor do que a de um recém-nascido a termo e com peso adequado, exigindo uma suplementação mais precoce e em doses maiores.\n\nDe acordo com as diretrizes da SBP:\n\n1. Recém-nascidos a termo, com peso adequado (maior do que 2.500 g), independentemente do tipo de aleitamento: devem receber 1 mg/kg/dia de ferro elementar a partir dos 3 meses (90 dias) de vida até os 2 anos.\n\n2. Prematuros ou recém-nascidos de baixo peso (abaixo de 2.500 g): a suplementação deve ser iniciada aos 30 dias de vida. A dose depende do peso de nascimento:\n- Se o peso estiver entre 1.500 g e 2.500 g: 2 mg/kg/dia durante o primeiro ano. Após o primeiro ano, 1 mg/kg/dia por mais um ano.\n- Se o peso estiver entre 1.000 g e 1.500 g: 3 mg/kg/dia durante o primeiro ano.\n- Se o peso for menor do que 1.000 g: 4 mg/kg/dia durante o primeiro ano.\n\nAnálise das alternativas:\n\na) Incorreta. A dose de 1 mg/kg/dia é indicada para lactentes a termo e com peso adequado, e o início nesse grupo ocorre aos 90 dias de vida. Para o paciente com 2.200 g, a dose correta é de 2 mg/kg/dia.\n\nb) Incorreta. A dose de 1 mg/kg/dia não se aplica ao peso de 2.200 g, e o início da suplementação profilática não é imediato ao nascimento, mas sim aos 30 dias para este grupo.\n\nc) Correta. Como o lactente nasceu com 2.200 g (baixo peso/prematuro), ele se enquadra na recomendação de 2 mg/kg/dia de ferro elementar, iniciando-se aos 30 dias de vida.\n\nd) Incorreta. Embora a dose de 2 mg/kg/dia esteja correta para o peso, o início não deve ser imediato, mas sim aos 30 dias de vida.\n\ne) Incorreta. O início aos 90 dias (3 meses) é reservado para recém-nascidos a termo e com peso superior a 2.500 g. Lactentes de baixo peso precisam da suplementação mais cedo (30 dias) devido ao maior risco de anemia ferropriva.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.163Z"
+  },
+  {
+    "id": "AJUDA_f7976c2a-505d-4a24-840c-88b4c44d2d6e",
+    "originalId": "f7976c2a-505d-4a24-840c-88b4c44d2d6e",
+    "statement": "Após uma gastrectomia subtotal por úlcera péptica complicada, o cirurgião precisa escolher o tipo de reconstrução. Sobre as vantagens e desvantagens da reconstrução em Billroth II comparada à reconstrução em Y-de-Roux, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Billroth II reduz significativamente o refluxo biliar em comparação ao Y-de-Roux.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Y-de-Roux está associado a maior incidência de síndrome da alça aferente do que Billroth II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Billroth II é tecnicamente mais simples, porém apresenta maior risco de gastrite alcalina e refluxo biliar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não existe diferença significativa no risco de câncer de coto gástrico entre as duas técnicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Billroth II é a técnica preferencial por causar menor distúrbio na absorção de ferro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é fundamental revisar a anatomia das reconstruções pós-gastrectomia. A técnica de Billroth II consiste em uma gastrojejunostomia em alça (anastomose da parte remanescente do estômago com o jejuno lateralmente), enquanto o Y-de-Roux envolve a divisão do jejuno e a criação de uma alça eferente longa, separando o trânsito alimentar das secreções biliopancreáticas.\n\nAnálise das alternativas:\n\na) Incorreta. O refluxo biliar (ou gastrite alcalina) é uma das principais complicações da reconstrução a Billroth II, pois o conteúdo do duodeno (bile e suco pancreático) passa diretamente pela boca da anastomose gástrica. O Y-de-Roux foi desenvolvido justamente para desviar esse fluxo, sendo superior na redução do refluxo.\n\nb) Incorreta. A síndrome da alça aferente é uma complicação biomecânica exclusiva do Billroth II (e do Billroth I em raras variações), ocorrendo pela obstrução da alça que traz as secreções biliopancreáticas. No Y-de-Roux, essa conformação anatômica de \"alça em alça\" é desfeita, eliminando o risco da síndrome da alça aferente clássica.\n\nc) Correta. A técnica de Billroth II exige apenas uma anastomose (gastrojejunal), o que a torna tecnicamente mais rápida e simples que o Y-de-Roux (que exige duas anastomoses: gastrojejunal e entero-enteral). No entanto, por permitir o contato direto da bile com a mucosa gástrica, o risco de gastrite de refluxo alcalino é significativamente maior.\n\nd) Incorreta. Existe evidência de que o Billroth II apresenta um risco maior de câncer no coto gástrico a longo prazo (geralmente após 15-20 anos) quando comparado a outras técnicas. Isso se deve à inflamação crônica e metaplasia intestinal causada pelo refluxo biliar persistente e contínuo sobre a mucosa gástrica remanescente.\n\ne) Incorreta. Embora o Billroth II mantenha a passagem de alguns nutrientes pelo intestino delgado inicial, ambas as técnicas (BII e Y-de-Roux) prejudicam a absorção de ferro. Isso ocorre pela exclusão do duodeno do trânsito alimentar e pela redução da acidez gástrica, necessária para converter o ferro para sua forma absorvível (ferroso). O Billroth II não é a técnica \"preferencial\" por este motivo metabólico, sendo o Y-de-Roux frequentemente preferido na prática moderna para evitar complicações inflamatórias.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.163Z"
+  },
+  {
+    "id": "AJUDA_f79cf4be-7637-44cf-9b37-2e1990497b4b",
+    "originalId": "f79cf4be-7637-44cf-9b37-2e1990497b4b",
+    "statement": "Uma gestante Gesta III / Para I (1 parto vaginal de natimorto há 4 anos) Aborto I (de primeiro trimestre), com idade gestacional de 33 semanas, procura atendimento muito preocupada pois realizou uma ultrassonografia de rotina e não está conseguindo falar com seu obstetra para mostrar o resultado. À ultrassonografia, evidência de feto cefálico, placenta fúndica grau 3, normodramnia, peso fetal estimado de 1.600 g (percentil 2) e biometria fetal compatível com 30 semanas. Doppler de artéria umbilical normal. Qual é a conduta mais apropriada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir dopplerfluxometria da artéria umbilical semanalmente e interrupção da gestação com 37 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Interromper imediatamente a gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar corticoide para maturação pulmonar fetal e interrupção da gestação após 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir dopplerfluxometria a cada 48 horas e interromper a gestação com 34 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Repetir dopplerfluxometria semanal e induzir o trabalho de parto com 40 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta uma gestação de 33 semanas com um feto cujo peso estimado está no percentil 2 para a idade gestacional. De acordo com os critérios atuais, fetos com peso abaixo do percentil 10 são classificados como Pequenos para a Idade Gestacional (PIG). Quando o peso está abaixo do percentil 3, ou quando há alterações no Doppler, o diagnóstico de Restrição de Crescimento Intrauterino (RCIU) é confirmado. No caso em questão, o peso no percentil 2 já define a Restrição de Crescimento (estágio 1 na classificação de Barcelona).\n\nO dado fundamental para a conduta é o Doppler de artéria umbilical, que está normal. Isso indica que, apesar de o feto ser pequeno, a função placentária ainda consegue manter uma troca gasosa e nutricional adequada, sem sinais de sofrimento fetal agudo ou redistribuição hemodinâmica (centralização).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Correta): Para fetos com restrição de crescimento (percentil menor que 3), mas que apresentam Doppler de artéria umbilical normal, a conduta recomendada pelos principais protocolos (como o da ISUOG e de Barcelona) é o acompanhamento ambulatorial com Doppler semanal. O objetivo é monitorar possíveis perdas de compensação placentária. A interrupção da gestação deve ser programada para quando o feto atingir o termo precoce (37 semanas), visando equilibrar os riscos da restrição de crescimento com os riscos da prematuridade.\n\nAlternativa B (Incorreta): Não há indicação de interrupção imediata com 33 semanas. O Doppler normal sugere que o ambiente intrauterino ainda é seguro. A prematuridade extrema traria mais riscos de morbimortalidade do que a manutenção da gestação sob vigilância.\n\nAlternativa C (Incorreta): O corticoide para maturação pulmonar é indicado quando o parto é iminente ou planejado para os próximos 7 dias devido à gravidade do quadro. Como o Doppler está normal, não há necessidade de interrupção imediata nem de corticoterapia neste momento.\n\nAlternativa D (Incorreta): A repetição do Doppler a cada 48 horas e a interrupção com 34 semanas são reservadas para casos de maior gravidade, como na Restrição de Crescimento estágio 2 (onde há alteração do fluxo na artéria umbilical, como diástole zero). Não se aplica ao caso de Doppler normal.\n\nAlternativa E (Incorreta): Embora o acompanhamento semanal esteja correto, aguardar até as 40 semanas em um feto com restrição de crescimento severa (percentil 2) é perigoso. O risco de morte intrauterina aumenta significativamente após a 37ª semana nesses casos; portanto, o parto não deve ser postergado além do termo.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Vitalidade Fetal",
+      "Restrição de Crescimento Fetal e Óbito Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.163Z"
+  },
+  {
+    "id": "AJUDA_f79f0fde-a487-478e-97e6-e69d4275e468",
+    "originalId": "f79f0fde-a487-478e-97e6-e69d4275e468",
+    "statement": "Mulher de 24 anos de idade apresenta fadiga, artralgias migratórias em mãos e punhos e febre baixa há três meses. A paciente relata lesão cutânea em região malar que piora com exposição solar e nega comorbidades prévias. No exame físico, apresenta artrite não deformante em pequenas articulações das mãos e rash malar eritematoso. Exames laboratoriais: hemoglobina: 10,8 g/dL; leucócitos: 3.200/mm³; plaquetas: 120.000/mm³; proteinúria: 1,2 g/24h; FAN (HEp-2) 1:640, padrão nuclear pontilhado; anti-DNA positivo e redução de C3 e C4. A conduta inicial deve ser administração de",
+    "options": [
+      {
+        "id": "A",
+        "text": "anti-inflamatórios não esteroidais e de corticoide, sem indicação de realização de biópsia renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "corticoides, apenas, sem indicação de realização de biópsia renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hidroxicloroquina e de corticoides e realização biópsia renal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "rituximabe e realização de biópsia renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "hidroxicloroquina, apenas, e realização de biópsia renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente de 24 anos apresenta um quadro clássico de Lupus Eritematoso Sistemico (LES) em atividade, preenchendo criterios clinicos (rash malar, fotossensibilidade, artrite nao deformante) e laboratoriais (leucopenia, plaquetopenia, FAN positivo em altos titulos, anti-DNA positivo e consumo de complemento C3 e C4).\n\nO achado de proteinuria de 1,2 g/24h evidencia acometimento renal (nefrite lupica). Segundo as diretrizes reumatologicas e nefrologicas, niveis de proteinuria superiores a 0,5 g/24h (ou presenca de sedimento urinario ativo) tornam a biopsia renal mandatória, pois a definicao da classe histologica (Classes I a VI) e crucial para o prognostico e para guiar a terapia imunossupressora definitiva.\n\nEm relacao a terapeutica medicamentosa:\n1. A hidroxicloroquina e o farmaco de base indicado para todos os pacientes com LES (salvo contraindicacao), reduzindo a mortalidade, os surtos de atividade e o dano organico cumulativo.\n2. Os corticoides sao fundamentais no momento inicial para o controle rapido da atividade inflamatoria sistemica e renal.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A realizacao da biopsia renal e obrigatoria diante de proteinuria clinicamente significativa (> 0,5 g/24h). Alem disso, o uso isolado de AINEs e corticoide desconsidera a indicacao formal de antimalaricos (hidroxicloroquina) como tratamento de base.\n\nAlternativa b: Incorreta. Alem de errar ao omitir a necessidade da biopsia renal, a monoterapia com corticoides desconsidera o uso essencial da hidroxicloroquina.\n\nAlternativa c: Correta. Contempla adequadamente a terapia de base para o LES (hidroxicloroquina), o controle agudo da inflamacao (corticoides) e a investigacao histopatologica indispensavel para a nefrite lupica (biopsia renal).\n\nAlternativa d: Incorreta. O rituximabe e um agente biologico reservado para casos refratarios as terapias convencionais ou para manifestacoes graves especificas nao responsivas, nao sendo a primeira linha terapeutica inicial.\n\nAlternativa e: Incorreta. O uso exclusivo de hidroxicloroquina e insuficiente para conter a fase aguda da nefrite lupica e os sintomas inflamatorios sistemicos, sendo mandatorio associar corticoides na fase de inducao.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Doenças Autoimunes do Tecido Conjuntivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.163Z"
+  },
+  {
+    "id": "AJUDA_f7a4ddaf-4c42-42b0-be25-1e4f21778835",
+    "originalId": "f7a4ddaf-4c42-42b0-be25-1e4f21778835",
+    "statement": "A obesidade, pelo seu caráter multifatorial e recidivante, precisa receber abordagem permanente e adequada, especialmente após o tratamento cirúrgico. Qual das alternativas abaixo representa um dos PRINCIPAIS fatores associados ao reganho de peso após a cirurgia bariátrica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome do intestino curto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não adesão a mudanças no estilo de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Complicações cirúrgicas precoces.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ressecção excessiva do estômago.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A obesidade é uma doença crônica, progressiva e recorrente. A cirurgia bariátrica é uma ferramenta potente para o controle do peso e das comorbidades, mas não representa a cura definitiva. O sucesso a longo prazo depende da manutenção de um balanço energético negativo e de mudanças comportamentais permanentes.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A síndrome do intestino curto ocorre quando há uma remoção extensa ou mau funcionamento de grande parte do intestino delgado, resultando em má absorção grave de nutrientes. Clinicamente, isso se manifesta com diarreia crônica, desnutrição e perda de peso acentuada, e não com o reganho de peso.\n\nAlternativa b) Correta. Este é o principal fator comportamental relacionado ao insucesso tardio da cirurgia bariátrica. O reganho de peso geralmente ocorre após o segundo ano de pós-operatório e está intimamente ligado ao retorno de hábitos alimentares inadequados (como o consumo de alimentos hipercalóricos e \"beliscos\" constantes), sedentarismo e falta de acompanhamento multiprofissional (nutricional e psicológico). A cirurgia altera a anatomia e a fisiologia, mas não impede a ingestão calórica excessiva se o paciente não aderir às mudanças no estilo de vida.\n\nAlternativa c) Incorreta. Complicações cirúrgicas precoces, como fístulas, deiscências de sutura, sangramentos ou infecções de sítio cirúrgico, ocorrem nos primeiros dias ou semanas após o procedimento. Elas aumentam a morbidade e mortalidade imediatas, mas não são causas de reganho de peso a longo prazo.\n\nAlternativa d) Incorreta. A ressecção excessiva do estômago (como em um Sleeve/gastrectomia vertical muito estreito) estaria associada a uma maior restrição alimentar, podendo causar intolerância alimentar, vômitos e perda de peso excessiva ou complicações como estenoses. O que poderia contribuir para o insucesso na perda de peso inicial ou reganho técnico seria uma ressecção insuficiente ou a dilatação posterior da bolsa gástrica, mas não a ressecção excessiva.\n\nResumo: O reganho de peso no pós-operatório de cirurgia bariátrica é um fenômeno complexo, mas a falha na manutenção da dieta e da atividade física (não adesão ao novo estilo de vida) permanece como o fator mais prevalente e determinante na prática clínica.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.163Z"
+  },
+  {
+    "id": "AJUDA_f7a9e333-986a-477a-b1d6-c02480906920",
+    "originalId": "f7a9e333-986a-477a-b1d6-c02480906920",
+    "statement": "Paciente de 76 anos, chega à Emergência com dor precordial típica, de início súbito, há duas horas. Apresenta sinais vitais estáveis. O médico foi informado que a sala de hemodinâmica estará disponível para a região somente daqui a 2 horas e meia. O eletrocardiograma do paciente pode ser visto abaixo.\n\nBaseado nessas informações, qual das alternativas abaixo expressa melhor o diagnóstico e a melhor conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infarto agudo do miocárdio de parede anterior e AAS 200 mg, Clopidogrel 75 mg e trombólise imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Infarto agudo do miocárdio de parede anterior, AAS 200 mg, Clopidogrel 300 mg enoxaparina 30 mg IV e trombólise imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infarto agudo do miocárdio de parede anterior, AAS 200 mg, Clopidogrel 300 mg, enviar para sala de hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infarto agudo do miocárdio de parede anterior, AAS 200 mg, Clopidogrel 300 mg, enviar para sala de hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Eletrocardiograma (ECG):\nA imagem mostra supradesnivelamento significativo do segmento ST nas derivações precordiais de V1 a V4 (com extensão a V5), caracterizando um Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST) de parede anterior.\n\nEstratégia de Reperfusão e Farmacoterapia:\n1. Tempo para Reperfusão: O paciente está na janela terapêutica (2 horas de dor). No entanto, o tempo estimado para a hemodinâmica estar disponível é de 2 horas e meia (150 minutos), ultrapassando a meta de 120 minutos estabelecida pelas diretrizes. Nesses casos, a estratégia de escolha é a fibrinólise imediata (tempo porta-agulha menor que 30 minutos).\n2. Ajuste por Idade (76 anos): Em pacientes com 75 anos ou mais submetidos à trombólise, não se deve realizar dose de ataque de Clopidogrel (utiliza-se apenas 75 mg) e não se realiza o bolus intravenoso de 30 mg de Enoxaparina, visando reduzir o risco de hemorragia grave e sangramento intracraniano.\n\nAnálise das alternativas:\n\na) Correta. Identifica adequadamente o infarto de parede anterior pelo traçado do ECG, prescreve a trombólise imediata devido ao tempo prolongado até a hemodinâmica (> 120 minutos) e ajusta a dose de clopidogrel para 75 mg (sem dose de ataque), respeitando a faixa etária do paciente (maior ou igual a 75 anos).\n\nb) Incorreta. Embora a indicação de trombólise esteja correta, as doses de ataque de clopidogrel (300 mg) e o bolus IV de enoxaparina (30 mg) são contraindicados para pacientes com 75 anos ou mais que serão submetidos à trombólise, pelo elevado risco hemorrágico.\n\nc) Incorreta. Aguardar a sala de hemodinâmica por 150 minutos atrasa indevidamente a abertura da artéria culpada, além de sugerir dose de ataque de clopidogrel inadequada para a estratégia fibrinolítica nessa idade.\n\nd) Incorreta. Apresenta o mesmo erro de indicar a transferência para hemodinâmica em detrimento da trombólise imediata quando o atraso previsto é superior a 120 minutos.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Eletrocardiograma"
+    ],
+    "difficulty": 100,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/8f9366c9da305d021379a180890872cd2792324ac60f5db0ba4b3290b4a0aa31.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f7a9e333-986a-477a-b1d6-c02480906920_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.713Z"
+  },
+  {
+    "id": "AJUDA_f7aedae8-5639-4bef-b9ce-83b20697e44f",
+    "originalId": "f7aedae8-5639-4bef-b9ce-83b20697e44f",
+    "statement": "Mulher de 48 anos, realizou endoscopia digestiva alta, que evidenciou uma lesão ovalada, projetada para o lúmen gástrico, recoberto por mucosa de aspecto normal, de consistência firme ao toque da pinça, medindo aproximadamente 3cm de diâmetro e localizada na parede posterior do corpo, sugestiva de tumor estromal. Considerando-se esta hipótese diagnóstica, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Níveis elevados do marcador HER 2 confirmam o diagnóstico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A mutação no proto-oncogene c-Kit está presente em 95% destas neoplasias",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A gastrectomia total com linfadenectomia é a cirurgia padrão para o tratamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A classificação em tipos intestinal e difuso tem importância na determinação prognóstica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta um caso clássico de Tumor Estromal Gastrointestinal (GIST), que é a neoplasia mesenquimal mais comum do trato digestivo. A descrição endoscópica de uma lesão submucosa (abaulamento com mucosa íntegra) e firme é muito característica dessa patologia.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O marcador HER2 (Human Epidermal Growth Factor Receptor 2) é utilizado na avaliação de prognóstico e na indicação de terapia-alvo em casos de adenocarcinoma gástrico e câncer de mama. Ele não possui relação com o diagnóstico ou manejo dos GISTs. O marcador imuno-histoquímico de escolha para o GIST é o CD117 (c-Kit).\n\nAlternativa B (Correta): A fisiopatologia do GIST está intimamente ligada a mutações nos genes que codificam receptores de tirosina-quinase. A mutação no proto-oncogene c-Kit está presente em cerca de 90% a 95% dos casos, levando à expressão da proteína KIT (CD117). Essa é a marca registrada da doença e o principal alvo terapêutico para medicamentos como o imatinibe.\n\nAlternativa C (Incorreta): Ao contrário do adenocarcinoma gástrico, o GIST raramente apresenta disseminação linfática (menos de 1% a 2% dos casos). Por isso, a linfadenectomia não é necessária. O tratamento cirúrgico padrão é a ressecção segmentar ou \"em cunha\" da lesão com margens livres (ressecção R0). A gastrectomia total é reservada apenas para casos em que a localização ou o tamanho do tumor impeçam uma cirurgia conservadora.\n\nAlternativa D (Incorreta): A classificação de Lauren, que divide os tumores em tipos intestinal e difuso, é exclusiva para o adenocarcinoma gástrico. Para o GIST, os fatores prognósticos mais importantes são o tamanho do tumor, o índice mitótico (número de mitoses por campo) e a localização do tumor (o estômago tem melhor prognóstico que o intestino delgado).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:55.713Z"
+  }
+]

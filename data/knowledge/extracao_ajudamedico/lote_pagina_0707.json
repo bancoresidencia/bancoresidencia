@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_c5c5ba56-460a-462e-8093-a7637b7fae9b",
+    "originalId": "c5c5ba56-460a-462e-8093-a7637b7fae9b",
+    "statement": "Lactente de 1 ano e 4 meses, com calendário vacinal atualizado até os 12 meses, é levada a uma Unidade Básica de Saúde para atualização vacinal. A mãe relata que a criança está em acompanhamento com a nefrologia pediátrica devido à síndrome nefrótica corticossensível. A paciente faz uso de prednisolona em dose imunossupressora há 5 semanas e, no momento, encontra-se assintomática. Considerando-se o calendário vacinal recomendado pelo Ministério da Saúde e a condição clínica da criança, a orientação adequada a ser fornecida pelo médico é",
+    "options": [
+      {
+        "id": "A",
+        "text": "adiar a vacinação até a suspensão do corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "adiar a aplicação da vacina tetraviral e aplicar as demais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "aplicar a vacina contra hepatite A e adiar as demais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aplicar todas as vacinas indicadas para a faixa etária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A criança tem 16 meses e está com o calendário em dia até os 12 meses. Portanto, estão pendentes as vacinas previstas para os 15 meses no calendário do Ministério da Saúde:\n- DTP, primeiro reforço;\n- reforço contra poliomielite (atualmente feito com VIP, vacina inativada);\n- hepatite A;\n- tetraviral (sarampo, caxumba, rubéola e varicela).\n\nO ponto central é o uso de corticoide em dose imunossupressora. O Manual dos Centros de Referência para Imunobiológicos Especiais (CRIE) considera imunossupressora a dose de prednisona ou equivalente igual ou maior que 2 mg/kg/dia, ou igual ou maior que 20 mg/dia em crianças acima de 10 kg, mantida por 14 dias ou mais. A paciente usa dose imunossupressora há 5 semanas e, por isso, preenche esse critério.\n\nNessa situação:\n- Vacinas de agentes vivos atenuados estão contraindicadas. Elas devem ser aplicadas somente pelo menos 1 mês após a suspensão do corticoide, pelo risco de doença causada pelo próprio agente vacinal.\n- Vacinas inativadas, de subunidades ou toxoides não oferecem esse risco e podem ser aplicadas normalmente. A resposta imune pode ser um pouco menor, mas não se deve atrasar a proteção da criança.\n- A tetraviral é a única vacina de vírus vivo atenuado pendente nesse momento. Por isso, deve ser adiada, e as demais devem ser aplicadas.\n- Caso houvesse indicação de VOP (vacina oral, de vírus vivo), ela também estaria contraindicada e seria substituída pela VIP.\n\nAnálise das alternativas:\n\na) Incorreta. Não há motivo para adiar todas as vacinas. As vacinas inativadas (DTP, VIP e hepatite A) são seguras em imunossuprimidos. Adiar tudo deixaria a criança desprotegida desnecessariamente, justamente num grupo mais vulnerável a infecções, como é o paciente nefrótico.\n\nb) Correta. A tetraviral é de vírus vivo atenuado e está contraindicada durante a corticoterapia em dose imunossupressora. Deve ser aplicada pelo menos 1 mês após a suspensão do corticoide. As demais vacinas pendentes são inativadas e devem ser aplicadas normalmente.\n\nc) Incorreta. A vacina contra hepatite A do calendário público é inativada e pode, de fato, ser aplicada. Porém, as demais vacinas inativadas, como DTP e VIP, também podem e devem ser aplicadas, de modo que não há razão para adiá-las.\n\nd) Incorreta. Aplicar todas as vacinas incluiria a tetraviral, que é de vírus vivo e está contraindicada em paciente sob imunossupressão. Há risco de doença vacinal disseminada, como varicela e sarampo vacinais.\n\nMensagem para a prova: em paciente com corticoide em dose imunossupressora, vacinas inativadas devem ser mantidas e vacinas vivas devem ser adiadas até pelo menos 1 mês após a suspensão. As vacinas vivas incluem tríplice viral, tetraviral, varicela, febre amarela, VOP, rotavírus e BCG.\n\nGabarito: letra B.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:12.626Z"
+  },
+  {
+    "id": "AJUDA_c5cdab82-7c84-4cb4-9a2f-b165132a2b44",
+    "originalId": "c5cdab82-7c84-4cb4-9a2f-b165132a2b44",
+    "statement": "Mulher de 72 anos, com história de hipertensão arterial e diabetes mellitus tipo 2, procura a unidade de emergência com quadro de palpitações iniciadas há 48 horas. Nega dor torácica, síncope ou dispneia. Ao exame, apresenta pressão arterial de 132x82mmHg, frequência cardíaca irregular de 84bpm e saturação periférica de oxigênio de 98% em ar ambiente. Não há sopros à ausculta cardíaca. O eletrocardiograma detectou ritmo de fibrilação atrial e o ecocardiograma não evidenciou alterações cardíacas estruturais. Nos exames laboratoriais, observa-se taxa de filtração glomerular estimada de 62mL/min/1,73m². Qual é a conduta recomendada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar rivaroxabana 20mg/dia e manter seguimento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Não iniciar anticoagulação, pois o escore CHA₂DS₂-VASc indica baixo risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar enoxaparina e varfarina, suspendendo a heparina quando RNI 2,0-3,0.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar varfarina com alvo de RNI 2,0-3,0 e seguimento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo da fibrilação atrial (FA) crônica ou de início indeterminado, focando especificamente na avaliação do risco tromboembólico e na escolha da terapia anticoagulante.\n\nAnálise do caso clínico:\nA paciente é uma mulher de 72 anos com hipertensão e diabetes. Para decidir sobre a anticoagulação, devemos calcular o escore CHA2DS2-VASc:\n1. Idade entre 65-74 anos: 1 ponto.\n2. Sexo feminino: 1 ponto.\n3. Hipertensão Arterial: 1 ponto.\n4. Diabetes Mellitus: 1 ponto.\nTotal: 4 pontos.\n\nDe acordo com as diretrizes atuais (SBC, ESC e AHA), pacientes do sexo feminino com escore CHA2DS2-VASc maior ou igual a 3 têm indicação formal (Classe I) de anticoagulação oral de longo prazo para prevenção de AVC. Como a paciente está hemodinamicamente estável, com frequência cardíaca controlada (84 bpm) e sem sinais de insuficiência cardíaca aguda, o manejo pode ser ambulatorial.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Iniciar rivaroxabana 20mg/dia e manter seguimento ambulatorial. Os Novos Anticoagulantes Orais (DOACs), como a rivaroxabana, são atualmente a primeira escolha para anticoagulação na FA não valvular (aquela que não envolve estenose mitral moderada/grave ou prótese metálica), superando a varfarina em segurança e conveniência. A dose de 20mg é a correta para pacientes com função renal preservada (taxa de filtração glomerular maior que 50 mL/min).\n\nAlternativa B (Incorreta): Não iniciar anticoagulação, pois o escore indica baixo risco. Como calculado, o escore é 4, o que representa um alto risco anual de eventos tromboembólicos, sendo a anticoagulação mandatória.\n\nAlternativa C (Incorreta): Iniciar enoxaparina e varfarina, suspendendo a heparina quando RNI 2,0-3,0. Esta estratégia (ponte de heparina) é utilizada em situações específicas ou quando se opta pela varfarina em pacientes de altíssimo risco. No entanto, os DOACs são preferíveis e não exigem o uso concomitante de heparina no início, pois já possuem efeito imediato.\n\nAlternativa D (Incorreta): Iniciar varfarina com alvo de RNI 2,0-3,0 e seguimento ambulatorial. Embora a varfarina seja uma opção terapêutica, as diretrizes modernas recomendam os DOACs (como a rivaroxabana) como prioridade devido à menor taxa de sangramento intracraniano e dispensa da monitorização constante do RNI. Portanto, entre as opções disponíveis, a alternativa A reflete a melhor prática médica atual.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:12.626Z"
+  },
+  {
+    "id": "AJUDA_c5cecb49-f6e7-4f48-aee6-4822350f3d6f",
+    "originalId": "c5cecb49-f6e7-4f48-aee6-4822350f3d6f",
+    "statement": "Um lactente de sete meses vem a emergencia trazido pelos pais apresentando quadro de tosse, chiado, dificuldade para respirar e taquipneia, sem cianose iniciado pela manhã. Qual seria o principal diagnóstico a ser pensado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IVAS",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumonia no lactente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "bronquiolite",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "OMA",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Infecção por Bordetella pertussis",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro descreve um lactente de sete meses apresentando sintomas de obstrução de vias aéreas inferiores, caracterizados por tosse, chiado (sibilância), taquipneia e sinais de esforço respiratório (dificuldade para respirar). Na prática pediátrica, o primeiro episódio de sibilância em uma criança com menos de dois anos de idade, frequentemente precedido por sintomas gripais, é a definição clássica de Bronquiolite Viral Aguda.\n\nAlternativa (a) IVAS: Incorreta. As Infecções de Vias Aéreas Superiores, como o resfriado comum, envolvem apenas o trato respiratório superior (nariz e garganta). Embora possam apresentar tosse e coriza, não cursam com chiado no peito, taquipneia ou desconforto respiratório, que são sinais de comprometimento das vias aéreas inferiores.\n\nAlternativa (b) Pneumonia no lactente: Incorreta. A pneumonia é uma causa importante de taquipneia e tosse em lactentes, mas o achado típico à ausculta pulmonar são os estertores finos (crepitantes) e não o chiado (sibilância) disseminado. A sibilância sugere obstrução brônquica, mais comum na bronquiolite.\n\nAlternativa (c) bronquiolite: Correta. Esta é a principal causa de sibilância e desconforto respiratório no primeiro ano de vida, sendo causada majoritariamente pelo Vírus Sincicial Respiratório (VSR). O quadro clínico de instalação aguda com chiado e taquipneia em um lactente de sete meses é a apresentação típica da doença.\n\nAlternativa (d) OMA: Incorreta. A Otite Média Aguda é uma infecção do ouvido médio que geralmente causa dor (otalgia), febre e irritabilidade. Não é uma patologia pulmonar e, portanto, não justifica os achados de chiado e dificuldade respiratória.\n\nAlternativa (e) Infecção por Bordetella pertussis: Incorreta. A coqueluche manifesta-se tipicamente com tosse paroxística (em acessos) seguida por um guincho inspiratório, podendo haver cianose ou vômitos pós-tosse. Embora possa causar desconforto, não se apresenta classicamente com o chiado (sibilância) descrito no enunciado.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:12.626Z"
+  },
+  {
+    "id": "AJUDA_c5da0c20-64a8-4d33-96f6-c399362fdb6c",
+    "originalId": "c5da0c20-64a8-4d33-96f6-c399362fdb6c",
+    "statement": "Durante atendimento a um paciente politraumatizado, foi identificado desconforto respiratório moderado, FR 30, sat O2 93% em ar ambiente. No exame físico, possuía expansão torácica assimétrica e murmúrio vesicular abolido em hemitórax esquerdo. Diante da necessidade de uma drenagem torácica, o melhor local para a inserção do dreno, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "no 2° espaço intercostal na linha hemiclavicular à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "no 5° espaço intercostal na linha hemiclavicular à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "no 5° espaço intercostal na linha axilar média à direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "no 5° espaço intercostal na linha axilar média à esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "no 3° espaço intercostal na linha axilar média à direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso: O quadro clínico descreve um paciente politraumatizado com sinais de comprometimento respiratório (taquipneia e queda de saturação) e achados de exame físico compatíveis com uma coleção pleural (pneumotórax ou hemotórax) no hemitórax esquerdo, evidenciados pela expansão assimétrica e abolição do murmúrio vesicular deste lado. O tratamento definitivo indicado é a drenagem torácica em selo d'água.\n\nAlternativa A: Incorreta. O 2º espaço intercostal na linha hemiclavicular é o local tradicionalmente indicado para a descompressão torácica por agulha (toracocentese de alívio) no caso de pneumotórax hipertensivo em adultos, e não para a inserção do dreno de tórax definitivo (drenagem tubular). Vale lembrar que as diretrizes atuais do ATLS (10ª edição) também preferem o 5º espaço intercostal para a descompressão por agulha.\n\nAlternativa B: Incorreta. A linha hemiclavicular no 5º espaço intercostal é uma localização muito anterior e medial. A inserção de um dreno nesta região aumenta consideravelmente o risco de lesão em estruturas vitais, como o coração (especialmente à esquerda) e os vasos mamários internos, além de ser tecnicamente inadequada para a drenagem de fluidos e ar.\n\nAlternativa C: Incorreta. O erro desta alternativa reside na lateralidade. O enunciado informa que o murmúrio vesicular está abolido no hemitórax ESQUERDO. Portanto, a drenagem deve ser feita obrigatoriamente à esquerda. Realizar o procedimento à direita em um pulmão sadio causaria um pneumotórax iatrogênico e agravaria drasticamente o estado do paciente.\n\nAlternativa D: Correta. O local padrão para a drenagem torácica é o chamado \"triângulo de segurança\", delimitado pela borda anterior do músculo latíssimo do dorso, borda lateral do músculo peitoral maior e uma linha horizontal acima do nível do mamilo. Na prática, isso corresponde ao 4º ou 5º espaço intercostal, entre a linha axilar anterior e a linha axilar média. Como os sinais clínicos estão no lado esquerdo, este é o local correto.\n\nAlternativa E: Incorreta. Além de estar no lado errado (direita), o 3º espaço intercostal na linha axilar média fica acima da recomendação padrão do ATLS, que preconiza o 5º espaço para evitar lesões em órgãos abdominais (como o fígado ou baço em casos de cúpula diafragmática elevada) e garantir a segurança técnica do procedimento.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:12.626Z"
+  },
+  {
+    "id": "AJUDA_c5e34a6f-3d05-405e-b197-54fd3b0db243",
+    "originalId": "c5e34a6f-3d05-405e-b197-54fd3b0db243",
+    "statement": "Em um paciente com cálculo ureteral proximal de 1,2 cm associado à hidronefrose, qual conduta deve ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Litotripsia extracorpórea por ondas de choque.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Terapia medicamentosa com tansulosina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ureterorrenolitotripsia semirrígida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ureterorrenolitotripsia flexível.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A conduta no tratamento da ureterolitíase (pedra no ureter) baseia-se primordialmente no tamanho do cálculo, na sua localização e na presença de complicações, como a hidronefrose ou sinais de infecção. No caso apresentado, temos um cálculo de 1,2 cm (12 mm) localizado no ureter proximal.\n\nAlternativa a) Incorreta. Embora a litotripsia extracorpórea por ondas de choque (LECO) seja uma opção para cálculos proximais, sua eficácia diminui significativamente em cálculos maiores que 1 cm e na presença de hidronefrose importante, que pode indicar um cálculo impactado. A taxa de sucesso (*stone-free*) é inferior à da ureteroscopia para este tamanho de cálculo.\n\nAlternativa b) Incorreta. A terapia medicamentosa expulsiva (TME) com tansulosina é indicada preferencialmente para cálculos distais (próximos à bexiga) e com dimensões menores que 10 mm. Cálculos maiores que 1 cm raramente são expelidos espontaneamente, e a presença de hidronefrose reforça a necessidade de intervenção cirúrgica para desobstrução da via urinária.\n\nAlternativa c) Incorreta. A ureterorrenolitotripsia semirrígida é o padrão-ouro para cálculos no ureter distal. No ureter proximal, o uso do aparelho semirrígido apresenta maior risco de complicações, como a migração do cálculo de volta para o rim (retropulsão) e maior chance de lesão ureteral devido à anatomia e à flexibilidade necessária para atingir essa região.\n\nAlternativa d) Correta. A ureterorrenolitotripsia flexível, associada ao uso de laser (Holmium:YAG ou Thulium), é a conduta preferencial para cálculos do ureter proximal maiores que 1 cm. Esta técnica permite navegar por toda a anatomia do ureter e até o interior do rim com segurança, oferecendo as maiores taxas de fragmentação completa e resolução do quadro em um único procedimento, sendo superior à LECO e à ureteroscopia semirrígida para esta localização específica.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:12.626Z"
+  },
+  {
+    "id": "AJUDA_c5e69a49-8572-4913-9bb0-4f7c25c05965",
+    "originalId": "c5e69a49-8572-4913-9bb0-4f7c25c05965",
+    "statement": "Um paciente de 45 anos apresenta história de pirose crônica, regurgitação ácida e tosse noturna persistente, sem melhora significativa após 6 meses de uso contínuo de inibidor de bomba de prótons (IBP) em dose plena. A pHmetria esofágica demonstrou refluxo ácido patológico, e a manometria revelou motilidade esofágica preservada.\n\nNesse caso, a melhor opção de tratamento cirúrgico é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cardiomiotomia de Heller com fundoplicatura parcial anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Esofagectomia subtotal com reconstrução em tubo gástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fundoplicatura de Nissen (360°) por videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Gastrectomia subtotal com reconstrução em Y de Roux.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fundoplicatura parcial posterior de Toupet (270°), independentemente da motilidade esofágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro clássico de Doença do Refluxo Gastroesofágico (DRGE) com indicação cirúrgica clara: falha do tratamento clínico (ausência de melhora após 6 meses de IBP em dose plena) e presença de sintomas extraesofágicos (tosse noturna). A pHmetria confirmou o refluxo ácido patológico e a manometria mostrou que o corpo esofágico funciona normalmente (motilidade preservada). Esse último dado é fundamental para a escolha da técnica.\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA?\n\nA Fundoplicatura de Nissen (total, 360 graus) realizada por videolaparoscopia é considerada o padrão-ouro para o tratamento cirúrgico da DRGE. Para que ela seja bem-sucedida e não cause disfagia (dificuldade para engolir) no pós-operatório, é essencial que o paciente tenha uma motilidade esofágica preservada, conforme descrito no enunciado. A técnica consiste em envolver completamente o esôfago distal com o fundo gástrico, criando uma nova zona de pressão que impede o refluxo.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: A cardiomiotomia de Heller é a técnica de escolha para o tratamento da acalasia (megaesôfago), em que o problema é a falta de relaxamento do esfíncter inferior e a ausência de peristalse. Não é o tratamento indicado para DRGE primária.\n\nAlternativa B: A esofagectomia subtotal é uma cirurgia de grande porte que envolve a retirada de parte do esôfago. É indicada para casos de câncer de esôfago ou megaesôfago avançado (estágio IV), sendo agressiva demais e inadequada para o refluxo refratário.\n\nAlternativa D: A gastrectomia com reconstrução em Y de Roux é uma opção para pacientes com DRGE que possuem obesidade mórbida associada (sendo o bypass gástrico a melhor escolha nesses casos) ou em casos de falhas graves de cirurgias de refluxo prévias, mas não é a conduta inicial padrão para um paciente não obeso com motilidade preservada.\n\nAlternativa E: As fundoplicaturas parciais, como a de Toupet (posterior, 270 graus) ou a de Lind/Dor (anterior), são indicadas especificamente quando o paciente apresenta distúrbios da motilidade esofágica na manometria. Como o enunciado afirma que a motilidade está preservada, a técnica total (Nissen) é superior por oferecer resultados mais duradouros no controle do refluxo. Além disso, a afirmação \"independentemente da motilidade esofágica\" torna a alternativa conceitualmente errada.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:12.626Z"
+  },
+  {
+    "id": "AJUDA_c5f5feca-7326-4ac2-b8ba-3b077021bbb2",
+    "originalId": "c5f5feca-7326-4ac2-b8ba-3b077021bbb2",
+    "statement": "Homem, 15 anos de idade, é levado ao pronto-socorro com história de tosse intensa, que começou há 15 dias. Nos últimos dias, a tosse tornou-se paroxística, ocorrendo em acessos seguidos de um som agudo na inalação. A mãe relata que ele teve sintomas gripais leves antes da tosse se intensificar. O exame físico revela taquipneia, porém ausculta sem alterações.\nConsiderando esse quadro clínico, assinale a alternativa que apresenta, corretamente, o agente etiológico do diagnóstico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coronavírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bordetella pertussis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Influenza.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mycoplasma pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Streptococcus pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO QUADRO CLÍNICO\n\nO quadro clínico descrito é clássico de Coqueluche (ou pertussis). A questão apresenta um paciente jovem com uma progressão de sintomas dividida em fases características:\n1. Fase Catarral: Sintomas gripais leves iniciais.\n2. Fase Paroxística: Tosse em acessos (paroxismos), seguida pelo \"guincho\" inspiratório (som agudo na inalação devido ao esforço respiratório contra a glote estreitada).\n3. Exame Físico: A ausência de alterações na ausculta pulmonar, apesar da gravidade da tosse, é um achado muito comum na coqueluche, ajudando a diferenciá-la de pneumonias bacterianas típicas.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. O Coronavírus costuma causar quadros de síndrome gripal ou síndrome respiratória aguda grave. Embora a tosse seja um sintoma comum, ela não apresenta o padrão paroxístico com guincho inspiratório característico da coqueluche.\n\nb) CORRETA. A Bordetella pertussis é um cocobacilo gram-negativo, agente etiológico da coqueluche. O quadro de tosse paroxística com duração prolongada (frequentemente chamada de \"tosse dos 100 dias\"), precedida por pródromos catarrais e finalizada com guincho ou vômitos pós-tussígenos, é a apresentação típica desta infecção, especialmente em adolescentes com esquema vacinal incompleto ou com perda da imunidade ao longo do tempo.\n\nc) INCORRETA. O vírus Influenza causa a gripe comum, marcada por início súbito de febre alta, mialgia, cefaleia e tosse seca. No entanto, a evolução da Influenza não costuma seguir o padrão de paroxismos e guincho inspiratório por 15 dias ou mais sem outros achados sistêmicos.\n\nd) INCORRETA. O Mycoplasma pneumoniae é o principal agente da pneumonia atípica. Embora cause tosse persistente e seca em adolescentes, geralmente vem acompanhado de alterações na ausculta (como estertores finos ou sibilos) e/ou alterações no raio-X de tórax (infiltrado intersticial), o que diverge do exame físico limpo apresentado na questão.\n\ne) INCORRETA. O Streptococcus pneumoniae (pneumococo) é o agente clássico da pneumonia bacteriana típica. O quadro esperado seria de início agudo com febre alta, tosse produtiva, dor torácica pleurítica e alterações nítidas na ausculta pulmonar (como crepitações localizadas e aumento do frêmito toracovocal), o que não corresponde à descrição do caso.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Coqueluche"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:12.626Z"
+  },
+  {
+    "id": "AJUDA_c5fab935-7ffb-42b8-93ab-dbb2e9c70dee",
+    "originalId": "c5fab935-7ffb-42b8-93ab-dbb2e9c70dee",
+    "statement": "85- A transição demográfica e epidemiológica no Brasil impõe um novo desafio aos sistemas de saúde, com o aumento da prevalência de condições crônicas e a coexistência de doenças infecciosas e causas externas. Essa tripla carga de doenças demanda uma reorganização do Sistema Único de Saúde (SUS). O modelo de Redes de Atenção à Saúde mostra-se eficaz no enfrentamento desse cenário complexo porque:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integra serviços de saúde de diferentes complexidades para responder de forma efetiva e eficiente às condições de saúde da população, seja ela aguda ou crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "É centrado em um modelo de atenção reativo, episódico e voltado prioritariamente para o enfrentamento de condições agudas e agudizações de condições crônicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Utiliza a Atenção Ambulatorial Especializada como porta de entrada e centro de comunicação para coordenar o cuidado ao longo do tempo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coloca o hospital como ponto principal da rede, em detrimento da Atenção Primária à Saúde e da Atenção Ambulatorial Especializada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Questão:\n\nA questão aborda a organização do Sistema Único de Saúde (SUS) por meio das Redes de Atenção à Saúde (RAS) frente aos desafios da transição demográfica e epidemiológica no Brasil. A tripla carga de doenças refere-se à coexistência de condições crônicas, doenças infecciosas e causas externas (acidentes e violência). O modelo das RAS visa superar a fragmentação do sistema para oferecer um cuidado contínuo e integral.\n\nAlternativa A (Correta): As Redes de Atenção à Saúde são arranjos organizativos de ações e serviços de saúde, de diferentes densidades tecnológicas, que, integradas por meio de sistemas de apoio técnico, logístico e de gestão, buscam garantir a integralidade do cuidado. Esse modelo permite responder tanto às demandas agudas quanto às crônicas de forma coordenada, eficiente e eficaz.\n\nAlternativa B (Incorreta): O modelo descrito nesta alternativa é o modelo tradicional fragmentado (hospitalocêntrico e focado na doença), que é reativo e episódico. As RAS propõem justamente o oposto: um modelo proativo, contínuo e focado na gestão de populações e condições crônicas.\n\nAlternativa C (Incorreta): No modelo das RAS, a porta de entrada preferencial, o centro de comunicação e o coordenador do cuidado é a Atenção Primária à Saúde (APS), e não a Atenção Ambulatorial Especializada. A APS tem a função de ordenar a rede e encaminhar o paciente para outros níveis de complexidade conforme a necessidade.\n\nAlternativa D (Incorreta): As RAS rompem com a visão de hierarquia verticalizada onde o hospital está no topo ou no centro do sistema. No modelo de rede, o sistema é considerado poliárquico, onde todos os pontos de atenção são igualmente importantes, sendo a Atenção Primária o ponto focal que organiza e coordena os fluxos, enquanto o hospital é um dos pontos de apoio para cuidados de maior complexidade.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Princípios e Diretrizes do SUS",
+      "Processos de Descentralização e Regionalização do SUS",
+      "Políticas de Saúde"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:12.626Z"
+  },
+  {
+    "id": "AJUDA_c5fe28ed-a9cd-4eba-b9c5-3e6b3e559078",
+    "originalId": "c5fe28ed-a9cd-4eba-b9c5-3e6b3e559078",
+    "statement": "Mulher de 55 anos foi submetida a tratamento de melanoma com pesquisa de linfonodo sentinela, conforme mostrado na figura. \n\nQual alternativa está correta em relação ao procedimento de biópsia de linfonodo sentinela (BLS) desta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A BLS somente está indicada para índice de Breslow maior que 1,2 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A BLS deve ser realizada para todo subtipo de melanoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se o exame anatomopatológico deste linfonodo for positivo para melanoma, esvazia-se a cadeia linfonodal correspondente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Se o exame anatomopatológico deste linfonodo for negativo para melanoma, considera-se que o paciente está curado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo cirúrgico do melanoma, focando na Biópsia de Linfonodo Sentinela (BLS). A primeira imagem apresentada é uma linfocintilografia, um exame de medicina nuclear onde um radiofármaco é injetado ao redor da lesão primária (local da injeção) para mapear o trajeto linfático e identificar o primeiro linfonodo que recebe a drenagem daquela área (linfonodo sentinela). A segunda imagem mostra a lesão cutânea sugestiva de melanoma.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O ponto de corte para indicação da BLS não é de 1,2 mm. Atualmente, as diretrizes internacionais (AJCC) recomendam considerar a BLS para pacientes com melanoma com índice de Breslow maior ou igual a 0,8 mm. Também pode ser indicada em lesões com Breslow menor que 0,8 mm se houver presença de ulceração (estádio pT1b), que é um fator de alto risco para micrometástases.\n\nAlternativa b: Incorreta. A BLS não é indicada para todos os subtipos de melanoma. O melanoma in situ (estádio Tis), por exemplo, não ultrapassa a membrana basal e não possui capacidade de invasão de vasos linfáticos; portanto, não há indicação de pesquisa de linfonodo sentinela nesses casos.\n\nAlternativa c: Correta. Este é o princípio clássico do estadiamento e tratamento cirúrgico do melanoma. Se o linfonodo sentinela contiver células tumorais (for positivo), a paciente é classificada como estádio III. Tradicionalmente, a conduta subsequente é a realização do esvaziamento linfonodal radical (linfadenectomia) da respectiva cadeia ganglionar para garantir o controle regional da doença. Vale notar que, embora estudos recentes como o MSLT-II discutam a possibilidade de apenas observar com ultrassom em casos específicos, o esvaziamento permanece como a resposta correta e padrão em concursos médicos quando o sentinela é positivo.\n\nAlternativa d: Incorreta. O resultado negativo na BLS é um excelente indicador prognóstico e sugere que a doença ainda está localizada. No entanto, ele não garante a cura definitiva. O paciente ainda pode apresentar recidiva local, metástases em trânsito ou metástases a distância por disseminação hematogênica, exigindo acompanhamento periódico rigoroso.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b9ea56f466e6dc52d33d6a88f2bd99484947cf966a2c7fc4b6e82f31845b9470.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c5fe28ed-a9cd-4eba-b9c5-3e6b3e559078_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/ef81db5995752702e9d722913ac41cb445521e069c059b92fa2886a230bdeeca.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c5fe28ed-a9cd-4eba-b9c5-3e6b3e559078_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:13.464Z"
+  },
+  {
+    "id": "AJUDA_c6059e39-4ae0-4389-b1e1-039eb2924553",
+    "originalId": "c6059e39-4ae0-4389-b1e1-039eb2924553",
+    "statement": "Um homem leucodérmico, de 26 anos, procurou atendimento médico por perceber a sua esclera ocular tornar-se amarelada, sem outras queixas. Ao exame físico, confirmou-se a icterícia e sua bilirrubina direta estava em 9 mg/dl, enquanto a indireta era de1,2 mg/dl. Em exames de imagem consecutivos, a ressonância magnética confirmou a doença de Carol, restrita ao segmento VI do fígado, com seu ducto biliar obstruído e sem outras anormalidades hepáticas. Qual é a conduta MAIS adequada nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Derivação ducto VI jejunal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hepatectomia direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exérese do segmento VI.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Colocação de prótese no ducto do segmento VI.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Doença de Caroli é uma condição rara, caracterizada por dilatações císticas congênitas dos ductos biliares intra-hepáticos (classificada como Todani Tipo V). O grande risco associado a essa patologia, além da formação de cálculos (litíase) e episódios recorrentes de colangite, é a sua elevada taxa de transformação maligna em colangiocarcinoma.\n\nNo caso descrito, o paciente apresenta a forma localizada da doença, restrita ao segmento VI, com evidência de obstrução biliar e icterícia obstrutiva (elevação predominante de bilirrubina direta). Quando a doença de Caroli é monolobar ou segmentar, o tratamento definitivo e padrão-ouro é a ressecção cirúrgica da área afetada.\n\nAlternativa a) Incorreta. A derivação ducto-jejunal visa apenas à drenagem biliar. No entanto, ela mantém o parênquima hepático com as dilatações císticas no local. Como a doença de Caroli possui um potencial carcinogênico significativo, manter o segmento doente predispõe o paciente ao surgimento futuro de câncer biliar, além de não resolver definitivamente o foco de estase e infecção.\n\nAlternativa b) Incorreta. A hepatectomia direita consiste na remoção dos segmentos V, VI, VII e VIII. Embora resolvesse o problema do segmento VI, ela é considerada uma cirurgia extensa e desnecessária para este caso, pois sacrificaria uma grande quantidade de parênquima hepático saudável, visto que a doença está limitada apenas ao segmento VI.\n\nAlternativa c) Correta. A exérese do segmento VI (segmentectomia) é a conduta mais adequada. Por ser uma doença localizada, a remoção completa do segmento afetado elimina o risco de colangites recorrentes e, fundamentalmente, remove o tecido com risco de transformação maligna. É o tratamento curativo para as formas localizadas da doença.\n\nAlternativa d) Incorreta. A colocação de prótese biliar é uma medida descompressiva, geralmente reservada para quadros agudos de colangite ou como tratamento paliativo em pacientes sem condições cirúrgicas. Ela não trata a malformação estrutural nem elimina o risco de neoplasia, sendo insuficiente como conduta definitiva em um paciente jovem e com doença segmentar ressecável.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:13.464Z"
+  }
+]

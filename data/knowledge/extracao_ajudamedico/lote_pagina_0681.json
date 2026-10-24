@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_be5bf059-7d3b-4516-97a1-44b75a7ff833",
+    "originalId": "be5bf059-7d3b-4516-97a1-44b75a7ff833",
+    "statement": "Paciente de 35 anos procura atendimento na unidade básica de saúde com ultrassonografia transvaginal que revela uma imagem cística anecóica, em seu ovário direito, medindo aproximadamente 6 cm no maior diâmetro, com contornos regulares e paredes finas, sem septações, conteúdo sólido ou vascularização interna. A paciente está assintomática, possui ciclos menstruais regulares e fluxo normal. Nega doenças crônicas ou cirurgias prévias. \n\nDiante dessa situação, a conduta adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar dosagem sanguínea do CA 125.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar acompanhamento ginecológico de rotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "indicar realização de ressonância magnética da pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "repetir a ultrassonografia transvaginal em até 12 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresenta uma mulher de 35 anos com um cisto ovariano simples de 6 cm. As características ultrassonográficas descritas (anecoico, paredes finas, sem septos, sem áreas sólidas e sem vascularização interna) são fortes indicadores de benignidade. Em pacientes na pré-menopausa (menacme), a imensa maioria desses achados corresponde a cistos funcionais, como o folicular ou o de corpo lúteo, que tendem a desaparecer espontaneamente.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A dosagem do marcador tumoral CA 125 não é recomendada para a avaliação inicial de cistos nitidamente simples em mulheres jovens. O CA 125 possui baixa especificidade na pré-menopausa, podendo estar elevado em diversas condições benignas, como endometriose, miomatose e processos inflamatórios pélvicos, o que pode levar a intervenções cirúrgicas desnecessárias.\n\nAlternativa b: Incorreta. O acompanhamento ginecológico de rotina (geralmente anual) é aceitável para cistos simples menores que 5 cm em pacientes assintomáticas. No entanto, para cistos entre 5 e 7 cm, as diretrizes internacionais recomendam um controle em curto prazo para confirmar a involução da imagem e descartar neoplasias benignas que não regridem sozinhas.\n\nAlternativa c: Incorreta. A ressonância magnética é um exame de alta complexidade indicado para caracterizar massas anexiais que permanecem indeterminadas ou suspeitas após a ultrassonografia. Como o ultrassom foi capaz de definir claramente as características de um cisto simples, a ressonância não traria benefício adicional neste momento.\n\nAlternativa d: Correta. Segundo os principais consensos de radiologia e ginecologia (como os da Society of Radiologists in Ultrasound), cistos simples entre 5 e 7 cm em mulheres em idade fértil devem ser reavaliados em 6 a 12 semanas. Este intervalo permite observar se o cisto é funcional (pois ele deverá regredir espontaneamente após um ou dois ciclos menstruais). Caso a imagem persista ou mude de característica, a estratégia de seguimento é modificada.\n\nGabarito: Letra d.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.188Z"
+  },
+  {
+    "id": "AJUDA_be6a9e19-607d-4c09-86da-f311eb39b334",
+    "originalId": "be6a9e19-607d-4c09-86da-f311eb39b334",
+    "statement": "Homem de 50 anos, queixando-se de astenia e constipação com fezes em fita. Há 15 dias apresenta edema de membros inferiores até a raiz da região crural, bilateralmente, com pouca melhora à elevação dos membros. Ele perdeu 10 quilogramas em 6 meses. Nega hipertensão arterial e diabetes mellitus e não faz uso de medicamento. Os exames do paciente apresentaram os seguintes resultados:\n\nDentre esses achados laboratoriais, quais são necessários para a definição da síndrome renal do paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proteína urinária de 24 horas = 3,6 gramas e albumina sérica = 1,8 gramas por decilitro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Proteína urinária de 24 horas = 3,6 gramas e triglicerídeos = 200 miligramas por decilitro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hematúria e triglicerídeos = 200 miligramas por decilitro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hematúria e albumina sérica = 1,8 gramas por decilitro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clínico de edema importante de membros inferiores e perda ponderal significativa. No contexto de um homem de 50 anos com alteração do hábito intestinal (fezes em fita) e emagrecimento, o médico deve suspeitar de uma síndrome nefrótica secundária, possivelmente como um fenômeno paraneoplásico de uma neoplasia oculta (como câncer colorretal).\n\nPara o diagnóstico da síndrome nefrótica em adultos, são necessários obrigatoriamente dois critérios laboratoriais fundamentais:\n\n1. Proteinúria em faixa nefrótica: definida como a excreção urinária de proteínas superior a 3,5 gramas em 24 horas.\n2. Hipoalbuminemia: caracterizada por níveis baixos de albumina no sangue (geralmente abaixo de 3,0 g/dL).\n\nOutros achados como edema, dislipidemia (aumento de colesterol e triglicerídeos) e lipidúria são frequentes, mas a definição da síndrome baseia-se na perda proteica maciça e na queda da albumina sérica.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Correta. De acordo com a tabela de exames fornecida, o paciente apresenta proteína urinária de 24 horas de 3,6 gramas (acima do ponto de corte de 3,5 g) e albumina sérica de 1,8 g/dL (muito abaixo do valor de referência de 3,8 a 4,8 g/dL). Esses dois parâmetros são os pilares necessários para definir a síndrome nefrótica.\n\nAlternativa b) Incorreta. Embora a tabela mostre triglicerídeos elevados (200 mg/dL), a dislipidemia é um achado secundário e não é um critério obrigatório para a definição da síndrome nefrótica, ao contrário da hipoalbuminemia.\n\nAlternativa c) Incorreta. A hematúria (presença de 5 hemácias por campo no sedimento urinário da imagem) é um achado clássico da síndrome nefrítica, não da nefrótica. Embora possa ocorrer hematúria microscópica em certas doenças nefróticas, ela não é um critério definidor. Os triglicerídeos também não definem a síndrome.\n\nAlternativa d) Incorreta. Como mencionado, a hematúria não compõe os critérios diagnósticos da síndrome nefrótica. Apesar de a albumina sérica estar corretamente identificada como baixa, a associação com hematúria invalida a alternativa como resposta para a definição da síndrome.\n\nASSOCIAÇÃO COM A IMAGEM\n\nOs dados da tabela de exames corroboram diretamente o diagnóstico de síndrome nefrótica ao destacar a proteinúria de 3,6 g/24h (valor de referência < 100 mg) e a hipoalbuminemia de 1,8 g/dL. Estes são exatamente os valores citados na alternativa A.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": 27.874242430001843,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/210a05f17c9fe799b0192aad723f7e1db5a8b67afe1403d60b41982d0ba8465c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_be6a9e19-607d-4c09-86da-f311eb39b334_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.671Z"
+  },
+  {
+    "id": "AJUDA_be727923-bf69-4c6d-80fd-f679568f640c",
+    "originalId": "be727923-bf69-4c6d-80fd-f679568f640c",
+    "statement": "Mulher de 58 anos, com diabetes mellitus tipo 2 há 8 anos, em uso de metformina, apresenta pressões arteriais de consultório persistentemente elevadas, com média de 162x98mmHg em quatro consultas consecutivas ao longo de quatro semanas. A monitorização residencial da pressão arterial (MRPA) confirmou média de 158x96mmHg. Exames laboratoriais demonstraram creatinina de 1,6mg/dL (VR: 0,7 - 1,3mg/dL), com TFG CKD-EPI de 35mL/min/1,73 m², potássio de 4,3mEq/L (VR: 3,5 - 5,1mEq/L), relação albumina/creatinina de 180mg/g (VR < 30mg/g) e hemoglobina glicada de 7,8% (VR: 4,0 - 5,6%). Qual deve ser a estratégia inicial para o tratamento da hipertensão dessa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento em monoterapia com hidroclorotiazida em dose máxima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Associação de enalapril com anlodipina em doses baixas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Associação de enalapril, anlodipino e hidroclorotiazida em doses baixas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Associação de anlodipino e hidroclorotiazida em doses baixas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta Hipertensão Arterial Estágio 2, definida por níveis de pressão arterial sistólica maiores ou iguais a 160 mmHg ou diastólica maiores ou iguais a 100 mmHg no consultório. No caso, as médias foram de 162 x 98 mmHg, confirmadas pela MRPA (158 x 96 mmHg). Além disso, a paciente possui Diabetes Mellitus tipo 2 e Doença Renal Crônica (TFG de 35 mL/min/1,73 m²) com albuminúria significativa (180 mg/g), o que a classifica em um grupo de alto risco cardiovascular.\n\nDe acordo com as diretrizes atuais de hipertensão, o tratamento inicial para pacientes em Estágio 2 ou de alto risco deve ser feito com a combinação de dois fármacos em doses baixas. Para pacientes diabéticos e com doença renal crônica associada à albuminúria (relação albumina/creatinina > 30 mg/g), é obrigatório o uso de medicamentos que bloqueiam o sistema renina-angiotensina-aldosterona, como os Inibidores da Enzima Conversora de Angiotensina (IECA) ou os Bloqueadores dos Receptores de Angiotensina (BRA), devido ao seu efeito nefroprotetor.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A monoterapia não é a estratégia preferencial para o estágio 2 de hipertensão. Além disso, o uso isolado de hidroclorotiazida não oferece a proteção renal necessária para uma paciente com albuminúria e diabetes. Vale ressaltar que diuréticos tiazídicos perdem eficácia quando a taxa de filtração glomerular é inferior a 30-40 mL/min.\n\nAlternativa b) Correta. A associação de um IECA (enalapril) com um Bloqueador dos Canais de Cálcio (anlodipino) é uma das combinações de primeira linha. O enalapril é essencial para reduzir a pressão intraglomerular e a albuminúria, retardando a progressão da doença renal. O anlodipino é um anti-hipertensivo potente e seguro para uso em pacientes com função renal reduzida, agindo de forma complementar ao enalapril.\n\nAlternativa c) Incorreta. A terapia tripla (uso de três classes de medicamentos simultaneamente) é geralmente reservada para pacientes que não alcançam as metas pressóricas com a terapia dupla otimizada ou em casos de hipertensão resistente. Não é a recomendação de estratégia inicial para este caso.\n\nAlternativa d) Incorreta. Embora utilize terapia combinada, esta opção omite o uso de IECA ou BRA. Em pacientes com diabetes e lesão de órgão-alvo (albuminúria), a ausência de um bloqueador do sistema renina-angiotensina prejudica o prognóstico renal da paciente, tornando a escolha clinicamente inadequada quando comparada à alternativa B.\n\nResumo da conduta:\nO tratamento de escolha baseia-se na necessidade de terapia dupla para o estágio da hipertensão e na obrigatoriedade do bloqueio do sistema renina-angiotensina para proteção renal em face da albuminúria e do diabetes.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.671Z"
+  },
+  {
+    "id": "AJUDA_be7612f3-56fe-4f37-bbe0-07d8514de721",
+    "originalId": "be7612f3-56fe-4f37-bbe0-07d8514de721",
+    "statement": "Criança de 2 anos e 4 meses apresenta febre de 39 graus, otalgia intensa e irritabilidade há 36 horas. A otoscopia mostra membrana timpânica abaulada, opaca e com mobilidade reduzida. Há também conjuntivite purulenta bilateral. Recebeu amoxicilina há 3 semanas por rinossinusite bacteriana. \nQual é a escolha terapêutica inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observação clínica isolada por 72 horas, pois a maioria dos casos é viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Amoxicilina em dose habitual, pois Streptococcus pneumoniae é sempre o principal alvo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amoxicilina associada a clavulanato pela síndrome otite-conjuntivite e uso recente de amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Azitromicina, pois cobre melhor Haemophilus influenzae produtor de beta lactamase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ciprofloxacino por via oral, pela maior penetração no ouvido médio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "EXAME DE QUESTÃO: OTITE MÉDIA AGUDA (OMA) E SÍNDROME OTITE-CONJUNUTIVITE\n\nEsta questão aborda o tratamento da Otite Média Aguda (OMA) em pediatria, focando na escolha do antibiótico ideal diante de fatores de risco para resistência bacteriana e etiologias específicas.\n\nAnálise das Alternativas:\n\na) Incorreta. A estratégia de observação clínica (wait-and-see) por 48-72 horas pode ser adotada em crianças acima de 2 anos com sintomas leves e bilaterais ou unilaterais, desde que haja seguimento garantido. No entanto, o paciente apresenta otalgia intensa, febre alta (39°C) e uma associação clínica (conjuntivite) que sugere fortemente etiologia bacteriana, tornando a antibioticoterapia imediata a conduta mais segura.\n\nb) Incorreta. A amoxicilina em dose habitual (45-50 mg/kg/dia) ou mesmo em dose dobrada (90 mg/kg/dia) como monoterapia falha em cobrir adequadamente o Haemophilus influenzae não tipável (HiNT) produtor de beta-lactamase. O uso de antibiótico nos últimos 30 dias é um critério clássico para indicar a necessidade de cobertura ampliada logo no início do tratamento.\n\nc) Correta. Esta é a alternativa padrão-ouro por dois motivos principais presentes no enunciado:\n1. Síndrome Otite-Conjuntivite: Quando a OMA ocorre simultaneamente à conjuntivite purulenta, o agente etiológico mais comum é o Haemophilus influenzae. Diferente do Pneumococo, o H. influenzae frequentemente produz enzimas beta-lactamases que inativam a amoxicilina isolada.\n2. Uso recente de antibiótico: O fato de a criança ter usado amoxicilina há 3 semanas aumenta significativamente o risco de colonização por germes resistentes, indicando a associação com clavulanato para restaurar a eficácia contra essas cepas.\n\nd) Incorreta. Macrolídeos como a azitromicina apresentam taxas de resistência crescentes tanto de S. pneumoniae quanto de H. influenzae. Além disso, a azitromicina não é superior à amoxicilina com clavulanato para a cobertura de Haemophilus produtores de beta-lactamase em quadros de OMA. Ela é reservada geralmente para pacientes com hipersensibilidade imediata (anafilaxia) aos beta-lactâmicos.\n\ne) Incorreta. O ciprofloxacino (quinolona) não é primeira linha para OMA em crianças devido ao seu espectro de ação e potenciais efeitos colaterais em cartilagens de crescimento, sendo reservado para situações específicas como otite externa ou otite média crônica supurativa com Pseudomonas aeruginosa.\n\nResumo Didático: \nSempre que o enunciado trouxer OMA associada a Conjuntivite Purulenta OU história de uso de amoxicilina nos últimos 30 dias, a resposta correta para o tratamento inicial será Amoxicilina + Clavulanato.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.671Z"
+  },
+  {
+    "id": "AJUDA_be77d17e-352f-4120-a487-eacfb82535f0",
+    "originalId": "be77d17e-352f-4120-a487-eacfb82535f0",
+    "statement": "Numa criança de 8 anos apresentando episódios de sangramento intestinal indolor com colonoscopia normal, a principal hipótese diagnostica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diverticulite aguda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Polipo infantil",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Intussuscepcao",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doenca de Crohn",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diverticulo de Meckel",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão descreve um caso clássico de sangramento intestinal baixo em pediatria. Os pontos-chave para o raciocínio clínico são a idade do paciente (8 anos), o caráter indolor do sangramento e o fato de a colonoscopia ser normal.\n\nAlternativa a) Diverticulite aguda: Incorreta. Esta é uma condição tipicamente observada em adultos e idosos, resultante da inflamação de divertículos colônicos. Manifesta-se com dor abdominal intensa (geralmente em quadrante inferior esquerdo), febre e alterações no hábito intestinal, o que não condiz com o quadro de sangramento indolor e colonoscopia normal em uma criança.\n\nAlternativa b) Pólipo infantil: Incorreta. Os pólipos juvenis são a causa mais comum de sangramento retal indolor na infância. No entanto, a grande maioria desses pólipos (cerca de 80% a 90%) está localizada no retossigmoide. Portanto, se o paciente apresentasse um pólipo, ele certamente teria sido visualizado durante a colonoscopia.\n\nAlternativa c) Intussuscepção: Incorreta. A intussuscepção intestinal é a causa mais comum de obstrução intestinal em lactentes (geralmente entre 5 e 12 meses de vida). O quadro clínico é agudo e dramático, caracterizado por dor abdominal em cólica intermitente, massa abdominal palpável e fezes com aspecto de \"geleia de morango\" (sangue misturado com muco). Não é um quadro de sangramento isolado e indolor.\n\nAlternativa d) Doença de Crohn: Incorreta. A doença de Crohn é uma doença inflamatória intestinal que pode afetar qualquer parte do trato gastrointestinal. Em crianças, costuma cursar com dor abdominal, diarreia crônica, perda de peso e atraso no crescimento. Além disso, a colonoscopia com ileoscopia geralmente revela sinais de inflamação, ulcerações ou o aspecto de \"pedras de calçamento\" na mucosa, o que contradiz a colonoscopia normal do enunciado.\n\nAlternativa e) Divertículo de Meckel: Correta. O divertículo de Meckel é a anomalia congênita mais comum do trato gastrointestinal, resultante da falha no fechamento do ducto onfalomesentérico. Sua apresentação clássica em crianças é o sangramento intestinal baixo, maciço e indolor. O sangramento ocorre porque o divertículo frequentemente contém mucosa gástrica ectópica que secreta ácido clorídrico, causando ulceração da mucosa ileal adjacente. Como o divertículo se localiza no íleo distal (intestino delgado), ele está fora do alcance habitual da colonoscopia convencional, o que explica por que o exame resulta normal. O diagnóstico padrão-ouro nesses casos é a cintilografia com tecnécio-99m (mapeamento de mucosa gástrica ectópica).",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.671Z"
+  },
+  {
+    "id": "AJUDA_be801cc6-f9ad-402a-bbd4-cc136594185f",
+    "originalId": "be801cc6-f9ad-402a-bbd4-cc136594185f",
+    "statement": "Criança, sexo masculino, 1 mês de vida, previamente hígida, é trazida à unidade de emergência após cair do trocador, há cerca de 30 minutos. Segundo a mãe, ela havia tirado a mão dele por alguns segundos para jogar a fralda no lixo e ele teria rolado e caído do trocador. Na admissão, o paciente estava inconsciente, sendo levado à sala de emergência. A seguir, os dados da avaliação sistematizada:\nA: pérvia\nB: murmúrio vesicular e expansibilidade diminuídos, FR de 8 irpm, SpO2 de 89% em ar ambiente;\nC: tempo de enchimento capilar < 1 segundo, pulsos presentes e simétricos, ausculta com 2BRNF sem sopros, PA de 108×70 mmHg;\nD: escala de coma de Glasgow 7, pupilas isofotorreagentes;\nE: hematoma subgaleal em região temporal direita.\n\nCom relação aos exames séricos coletados durante o atendimento inicial do paciente, assinale a alternativa que apresenta as alterações laboratoriais esperadas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "pH: 7.28, paO2: 58 mmHg, pCO2: 55 mmHg, HCO3: 24 mmol/L, SpO2: 89%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hb: 5.0 g/dL, Ht: 18%, Leucócitos: 12.000/mm3, Plaquetas: 310.000/µL",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Relação TTPA: 2.5 RNI, Tempo de Protrombina (TP): 1.1, Atividade TP: 76%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lactato arterial: 55 mg/dL, Ureia: 60 mg/dL, Creatinina: 0.7 mg/dL",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso descreve um lactente de 1 mês com traumatismo cranioencefálico (TCE) grave (Glasgow 7) e depressão respiratória central. Para essa faixa etária, a frequência respiratória normal varia entre 30 e 60 irpm. Uma frequência de 8 irpm associada à SpO2 de 89% evidencia hipoventilação alveolar aguda grave.\n\nJustificativa das alternativas:\n\na) CORRETA. A hipoventilação alveolar decorrente do rebaixamento do nível de consciência leva à retenção aguda de gás carbônico (hipercapnia, pCO2 de 55 mmHg) e à consequente queda do pH (acidose respiratória, pH 7,28), além de hipoxemia (paO2 de 58 mmHg e SpO2 de 89%). Por ser um evento agudo (ocorrido há 30 minutos), o bicarbonato sérico permanece em níveis basais normais (HCO3 24 mmol/L), pois ainda não houve tempo para a compensação renal.\n\nb) INCORRETA. Uma hemoglobina de 5,0 g/dL indicaria uma anemia aguda gravíssima por choque hemorrágico, o que não condiz com a avaliação circulatória da criança, que apresenta tempo de enchimento capilar menor que 1 segundo, pulsos simétricos e pressão arterial elevada para a idade (108x70 mmHg, compatível com o início de uma resposta de Cushing à hipertensão intracraniana).\n\nc) INCORRETA. Há um erro de conceito laboratorial na alternativa, pois o RNI é uma padronização do Tempo de Protrombina (TP) e não do TTPA. Além disso, a repercussão gasométrica decorrente da bradipneia é a alteração laboratorial direta e imediata esperada no caso.\n\nd) INCORRETA. O lactato elevado (55 mg/dL) sugere hipóxia tecidual e metabolismo anaeróbio decorrentes de choque, quadro incompatível com a excelente perfusão periférica e estabilidade hemodinâmica descritas no exame físico inicial. Ureia e creatinina elevadas também não são alterações esperadas nos primeiros 30 minutos pós-trauma em uma criança previamente hígida.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Emergências Pediátricas",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.671Z"
+  },
+  {
+    "id": "AJUDA_be8ce96a-bdeb-43ed-903e-484cc63d8690",
+    "originalId": "be8ce96a-bdeb-43ed-903e-484cc63d8690",
+    "statement": "Um jovem de 25 anos procura a unidade básica de saúde com febre alta há 4 dias, acompanhada de dores musculares intensas, cefaleia, dor retro-orbital e náuseas. Ele relata que, nos últimos dois dias, notou algumas manchas avermelhadas na pele, principalmente nos braços e nas pernas, além de ter sentido tontura ao levantar-se pela manhã. Ao exame físico, o paciente apresenta febre de 38,7 °C, erupções cutâneas, pressão arterial de 100/70 mmHg e pulso de 98 bpm. O hemograma revela uma queda no número de plaquetas (80000/mm³) e um hematócrito aumentado (45%). Assinale a alternativa que indica a correta classificação desse caso e a conduta a ser adotada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dengue grupo A. Hidratação oral vigorosa e orientar procurar o pronto atendimento em caso de sinais de alarme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dengue grupo B. Observação no domicílio com hidratação oral vigorosa e solicitar coleta de IgG no 6º dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dengue grupo D. Iniciar reposição volêmica intravenosa imediata e transferir para pronto-socorro para acompanhamento em UTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dengue grupo C. Iniciar reposição volêmica intravenosa imediata na UBS e transferir para unidade de referência para reavaliação do hematócrito.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente com sintomas clássicos de dengue (febre, mialgia, cefaleia, dor retro-orbital) que evoluiu com sinais clínicos e laboratoriais de alerta. A chave para a resolução da questão está na identificação dos sinais de alarme e na correta classificação de acordo com o protocolo do Ministério da Saúde.\n\nANÁLISE DO CASO\n\nO paciente apresenta dois sinais de alarme fundamentais:\n1. Tontura ao levantar-se: Indica hipotensão postural ou ortostatismo.\n2. Hematócrito aumentado (45 por cento): Indica hemoconcentração.\n\nA presença de qualquer sinal de alarme, mesmo com estabilidade hemodinâmica (pressão de 100/70 mmHg e pulso de 98 bpm), classifica o paciente automaticamente no Grupo C.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O Grupo A é destinado a pacientes sem sinais de alarme, sem comorbidades e sem riscos sociais. O tratamento é domiciliar com hidratação oral. A presença de tontura postural e aumento do hematócrito exclui essa classificação.\n\nAlternativa b) Incorreta. O Grupo B é voltado para pacientes que não têm sinais de alarme, mas possuem condições clínicas especiais (como gestantes, idosos ou diabéticos) ou sangramento espontâneo de pele (petéquias). O paciente em questão já apresenta sinais de alarme, o que o eleva para o Grupo C.\n\nAlternativa c) Incorreta. O Grupo D é a classificação para Dengue Grave. É definido pela presença de sinais de choque (como queda da pressão arterial, pulso fino, extremidades frias), desconforto respiratório ou disfunção grave de órgãos. Embora o paciente tenha tontura, sua pressão arterial de 100/70 mmHg ainda é considerada estável, não caracterizando choque no momento.\n\nAlternativa d) Correta. O paciente é classificado como Grupo C devido aos sinais de alarme identificados. A conduta preconizada é o início imediato da reposição volêmica por via intravenosa (20 ml/kg em duas horas com solução isotônica), que deve ser iniciada preferencialmente ainda na Unidade Básica de Saúde enquanto se providencia a transferência para um leito de observação hospitalar. O acompanhamento exige a reavaliação clínica constante e a monitorização do hematócrito para guiar a terapia de reposição.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.671Z"
+  },
+  {
+    "id": "AJUDA_be900698-9cec-4793-8916-d63084dd0959",
+    "originalId": "be900698-9cec-4793-8916-d63084dd0959",
+    "statement": "Considerando-se as hérnias inguinais oblíquas externas em crianças e adultos, pode-se dizer que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diferem quanto a etiologia, sendo congênitas nas crianças e adquiridas quando surgem em adultos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Guardam diferença quanto a relação do saco herniário com os vasos epigástricos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sugerem tratamento diferente quanto a altura de ligadura do saco herniário;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmações acima são verdadeiras",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Correta. Na infância, a hérnia inguinal oblíqua externa (indireta) tem etiologia congênita, decorrente da falha de obliteração do conduto peritoniovaginal. Já no adulto, embora possa existir uma patência prévia, a manifestação clínica decorre do enfraquecimento muscular/aponeurótico da parede abdominal e de fatores que elevam a pressão intra-abdominal ao longo da vida, sendo considerada adquirida.\n\nAlternativa B: Correta. Em crianças pequenas e lactentes, o canal inguinal é extremamente curto e os anéis inguinais interno e externo encontram-se praticamente sobrepostos, modificando a disposição espacial e a relação de obliquidade do trajeto herniário em relação aos vasos epigástricos inferiores em comparação com o canal inguinal alongado e bem desenvolvido do adulto.\n\nAlternativa C: Correta. O manejo cirúrgico difere de forma substancial. Na criança, o tratamento de escolha é apenas a herniotomia simples, com dissecação e ligadura alta do saco herniário no anel inguinal interno, sem necessidade de abertura rotineira do canal ou reforço da parede posterior. No adulto, a ligadura simples é insuficiente, sendo mandatória a correção anatômica com reforço da parede posterior (hernioplastia, habitualmente com tela livre de tensão).\n\nAlternativa D: Correta. Como as alternativas A, B e C apresentam conceitos corretos e complementares sobre as particularidades anatômicas, etiológicas e terapêuticas da afecção nas duas faixas etárias, esta é a alternativa que deve ser assinalada.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.671Z"
+  },
+  {
+    "id": "AJUDA_be95726a-4f63-4f58-90a1-80e6b6de09c3",
+    "originalId": "be95726a-4f63-4f58-90a1-80e6b6de09c3",
+    "statement": "O paciente com insuficiência cardíaca e seus familiares devem tomar conhecimento de alguns comportamentos em relação a seu tratamento para ter maior adesão e melhor qualidade de vida. Qual informação é verdadeira?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução da ingesta hídrica é necessária desde o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exercícios aeróbicos supervisionados são desejáveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A dieta é livre, em quantidade e qualidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A ingesta de álcool deve ser zero.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo não farmacológico da Insuficiência Cardíaca (IC), fundamental para a estabilidade clínica e a redução de internações.\n\nAlternativa (a) Incorreta: A restrição hídrica (geralmente entre 1.000 e 1.500 mL/dia) não é recomendada para todos os pacientes desde o diagnóstico. Ela é indicada principalmente para pacientes com sintomas graves (classe funcional NYHA III e IV), indivíduos com tendência à retenção de líquidos ou em casos de hiponatremia. Em pacientes com IC leve ou estável, a restrição rigorosa pode não trazer benefícios adicionais e pode prejudicar a adesão.\n\nAlternativa (b) Correta: O exercício físico é uma recomendação de classe I nas diretrizes de IC. Pacientes estáveis devem ser incentivados a realizar atividades aeróbicas, preferencialmente sob supervisão (reabilitação cardiovascular). O treinamento físico melhora a capacidade funcional, a qualidade de vida e a função endotelial, além de reduzir a taxa de hospitalização por IC.\n\nAlternativa (c) Incorreta: A dieta não é livre. O controle da ingestão de sódio é essencial para evitar a congestão e a descompensação do quadro clínico. Além disso, a qualidade da dieta (controle de gorduras saturadas e açúcares) é importante para o manejo de comorbidades como hipertensão, diabetes e aterosclerose, que frequentemente coexistem com a IC.\n\nAlternativa (d) Incorreta: Embora o consumo excessivo de álcool seja prejudicial e deva ser desestimulado, a abstinência absoluta (ingestão zero) é obrigatória especificamente nos casos de cardiomiopatia alcoólica. Para as demais etiologias da IC, as diretrizes costumam recomendar moderação extrema ou evitar o consumo, mas o termo \"deve ser zero\" como regra universal torna a alternativa menos adequada do que a letra (b), que representa uma conduta terapêutica ativa e desejável.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.671Z"
+  },
+  {
+    "id": "AJUDA_be9843ef-36f3-4bfb-9233-d122192f0953",
+    "originalId": "be9843ef-36f3-4bfb-9233-d122192f0953",
+    "statement": "No atendimento dentro da Unidade Básica de Saúde, cada profissional faz um recorte, um destaque de sintomas e informações, de acordo com seu núcleo de conhecimento profissional. A discussão de casos clínicos em equipe, principalmente os mais complexos, é um recurso clínico e gerencial importante. Este modelo corresponde a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "atenção no modelo biomédico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ação de gestão de conflitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "clínica ampliada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ações de macrogestão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a organização do processo de trabalho na Atenção Primária à Saúde, especificamente como os profissionais lidam com a complexidade dos casos clínicos por meio da interdisciplinaridade.\n\nAlternativa a) Incorreta. O modelo biomédico é centrado na doença, na cura e no profissional médico, tendo uma visão fragmentada e biologicista do indivíduo. Ele não prioriza a integração de diferentes saberes ou a discussão em equipe para compreender a complexidade subjetiva e social do paciente.\n\nAlternativa b) Incorreta. Embora a discussão em equipe possa ajudar a alinhar condutas e reduzir atritos, o foco do enunciado não é a resolução de problemas interpessoais entre os funcionários (gestão de conflitos), mas sim a busca por uma abordagem assistencial mais completa e eficaz para o usuário.\n\nAlternativa c) Correta. A Clínica Ampliada é uma diretriz da Política Nacional de Humanização (PNH) que propõe a articulação de diferentes saberes para além do diagnóstico puramente biológico. Ela reconhece que cada profissional tem um recorte de conhecimento (núcleo), mas que a soma desses olhares (campo) permite compreender o sujeito em sua totalidade. A discussão de casos em equipe e a elaboração de Projetos Terapêuticos Singulares são ferramentas fundamentais deste modelo para lidar com casos complexos.\n\nAlternativa d) Incorreta. As ações de macrogestão referem-se a decisões políticas e estruturais em níveis mais amplos do sistema de saúde (municipal, estadual ou federal), como a criação de leis e o financiamento do SUS. O enunciado descreve uma atividade de microgestão e gestão do cuidado realizada dentro da própria unidade de saúde.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:41:48.671Z"
+  }
+]

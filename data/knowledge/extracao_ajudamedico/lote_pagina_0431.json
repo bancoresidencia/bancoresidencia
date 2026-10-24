@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_78aaa956-6c28-4c37-adf4-05286cc67f82",
+    "originalId": "78aaa956-6c28-4c37-adf4-05286cc67f82",
+    "statement": "Uma UBS atende 7 trabalhadoras, entre 13 e 17 anos de idade, de uma empresa que fabrica pequenas peças de metal para uma empresa de roupas. Dessas, apenas duas eram registradas, enquanto as demais são chamadas somente quando a empresa tem que aumentar a produção acima do habitual. Elas apresentam pequenas queimaduras nas pernas, pois sua atividade de trabalho exige soldas de partes das peças de metal e, nesse dia, elas receberam 50% de peças a mais do que o habitual. Devido à pressa acabaram deixando cair pingos de metal fundido, que passaram pelos furos do avental que usavam para proteger as pernas. Considerando o relato, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nenhuma delas deve ter as queimaduras registradas como acidentes de trabalho no Sistema de Informação de Agravos de Notificação (SINAN).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as duas registradas como empregadas da empresa devem ter notificação no SINAN, pois as demais prestam serviços eventuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Por ser um dia em que a produção almejada era excepcional, as queimaduras não devem ser notificadas como decorrentes de acidentes de trabalho no SINAN.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas as menores de idade devem ter as queimaduras notificadas no SINAN como acidente do trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todas as trabalhadoras são vítimas de acidentes de trabalho e a UBS deve notificar os casos no SINAN.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Essa questão aborda os conceitos fundamentais de Saúde do Trabalhador e Vigilância Epidemiológica, especificamente sobre a notificação de acidentes de trabalho no Sistema de Informação de Agravos de Notificação (SINAN).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Acidentes de trabalho devem ser notificados obrigatoriamente quando atendidos no serviço de saúde. As queimaduras decorrentes do manuseio de metal fundido durante a jornada laboral configuram acidentes de trabalho típicos e, portanto, o registro é mandatório para fins de vigilância e planejamento de políticas públicas.\n\nAlternativa b) Incorreta. Esta alternativa tenta confundir o candidato entre a Comunicação de Acidente de Trabalho (CAT), que é um documento previdenciário voltado para trabalhadores celetistas (com carteira assinada), e a ficha de notificação do SINAN. Para o SINAN, que é um sistema de saúde pública, o vínculo empregatício é irrelevante. Todo trabalhador (formal, informal, autônomo ou eventual) que sofre um acidente de trabalho deve ser notificado pela unidade de saúde que presta o atendimento.\n\nAlternativa c) Incorreta. O fato de a produção ser excepcional ou de haver pressa no ambiente de trabalho não descaracteriza o acidente de trabalho. Pelo contrário, a pressão por produtividade e a falha em equipamentos de proteção individual (aventais furados) são determinantes causais do acidente que precisam ser devidamente registrados para que as autoridades de vigilância possam intervir no ambiente de trabalho.\n\nAlternativa d) Incorreta. No caso apresentado, todas as trabalhadoras são menores de idade (13 a 17 anos). Contudo, a obrigatoriedade da notificação no SINAN não se restringe aos menores de idade; qualquer trabalhador, independentemente da faixa etária, deve ter o acidente notificado. Vale ressaltar que o trabalho insalubre ou perigoso (como a solda) é proibido para menores de 18 anos no Brasil, o que torna a notificação ainda mais crítica para acionar os órgãos de proteção à criança e ao adolescente.\n\nAlternativa e) Correta. Todas as sete adolescentes sofreram lesões corporais (queimaduras) em decorrência do exercício do trabalho. O nexo causal está estabelecido entre a atividade de solda e o dano sofrido. Como o SINAN é um sistema universal de base epidemiológica do Sistema Único de Saúde (SUS), a UBS tem o dever de notificar todos os casos, garantindo a visibilidade do agravo e permitindo ações de fiscalização e prevenção, independentemente de as vítimas possuírem registro formal na empresa ou não.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sistemas de Informação em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  },
+  {
+    "id": "AJUDA_78b9c1c1-4a92-4c83-ba25-e4149316a6e7",
+    "originalId": "78b9c1c1-4a92-4c83-ba25-e4149316a6e7",
+    "statement": "Atualmente, o modelo mais utilizado para desprescrição de medicamentos é composto por fases sucessivas. A etapa que NÃO faz parte desse modelo processual é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "avaliar todos os medicamentos em uso, considerando dose, frequência, indicação, efeitos adversos e tempo de uso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "determinar a ordem de retirada dos medicamentos, observando risco/benefício, possíveis interações e a estabilidade clínica do paciente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "implementar a retirada dos fármacos potencialmente inadequados, mesmo que o paciente não esteja de acordo, podendo ou não ser de forma gradual",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "monitorar continuamente a desprescrição, observando efeitos adversos da retirada e oferecendo, quando necessário, opções não farmacológicas validadas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O processo de desprescrição é uma intervenção clínica fundamental, especialmente na geriatria, visando reduzir a polifarmácia e o uso de medicamentos potencialmente inadequados. O modelo mais aceito na literatura médica (baseado em autores como Scott e Reeve) propõe etapas lógicas para garantir a segurança e a eficácia da retirada.\n\nAnálise das alternativas:\n\na) Incorreta. Esta alternativa descreve perfeitamente a primeira etapa do processo. Para desprescrever, o médico deve realizar um inventário completo de todos os fármacos utilizados, avaliando a indicação atual de cada um, se a dose está correta para a função renal/hepática do paciente e se há efeitos adversos ocultos.\n\nb) Incorreta. Esta é a etapa de planejamento e priorização. Não se deve retirar todos os medicamentos simultaneamente. O médico deve estabelecer uma hierarquia, focando primeiro naqueles que trazem maior risco de danos (como quedas ou sangramentos) e menor benefício clínico, sempre respeitando a estabilidade da doença que o medicamento tratava.\n\nc) Correta (Gabarito). Esta alternativa está errada sob o ponto de vista técnico e ético, por isso é a resposta à questão. A desprescrição jamais deve ser imposta contra a vontade do paciente. O engajamento e a concordância do paciente ou de seus familiares são pilares essenciais do modelo. Sem a aliança terapêutica, o risco de baixa adesão ao plano de retirada ou de sofrimento psicológico (medo de que a doença piore sem o remédio) é muito alto. Além disso, a autonomia do paciente deve ser respeitada.\n\nd) Incorreta. Esta etapa fecha o ciclo do modelo. Após a suspensão ou redução da dose, é obrigatório monitorar o paciente para detectar sintomas de abstinência ou a recorrência da condição clínica original. A substituição por medidas não farmacológicas (como higiene do sono para substituir benzodiazepínicos) é uma estratégia recomendada para o sucesso da desprescrição.\n\nEm resumo, o erro da alternativa (c) reside na afirmação de que a retirada deve ser feita \"mesmo que o paciente não esteja de acordo\", o que contraria o princípio das decisões compartilhadas e os protocolos mundiais de desprescrição.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  },
+  {
+    "id": "AJUDA_78d2b627-cfe4-4d48-ad4c-41623229220d",
+    "originalId": "78d2b627-cfe4-4d48-ad4c-41623229220d",
+    "statement": "As condições de trabalho e o próprio trabalho que é realizado podem constituir fatores determinantes para a ocorrência de doenças, de agravos e de óbitos. Dessa forma, a exposição dos(as) trabalhadores(as) a situações e fatores de risco nos ambientes e processos de trabalho podem interferir na dinâmica saúde-doença, refletindo no aparecimento ou no aumento da frequência de doenças e de agravos, no surgimento precoce de certas patologias ou na potencialização da complexidade desses eventos. Assinale a alternativa com informações CORRETAS sobre saúde do trabalhador:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os riscos ocupacionais, capazes de causar danos à saúde dos (as) trabalhadores(as), podem ser classificados em físicos, químicos, biológicos, psicossociais, biomecânicos, sociais, ambientais e de acidentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A Vigilância em Saúde do Trabalhador (Visat), um dos componentes do Sistema Nacional de Vigilância em Saúde (SNVS), compreende um conjunto de ações que visam à promoção da saúde, à prevenção da morbimortalidade e à redução de riscos e vulnerabilidades na população trabalhadora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As ações de Visat devem ser realizadas de forma contínua e sistemática, ao longo do tempo, visando à detecção, conhecimento, pesquisa e análise dos fatores determinantes e condicionantes dos agravos à saúde relacionados aos processos e ambientes de trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A Política Nacional de Saúde do Trabalhador e da Trabalhadora (PNSTT) não é voltada para contemplar toda a população trabalhadora, pois destina-se às “pessoas e grupos em situação de maior vulnerabilidade”, a exemplo dos(as) trabalhadores(as) informais, trabalhadores(as) que desenvolvem atividades em situações precárias de trabalho e de maior risco para a saúde, além das condições de trabalho infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A PNSTT tem como um de seus objetivos integrar as ações de Vigilância em Saúde do Trabalhador com os demais componentes do Sistema Nacional de Vigilância em Saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão exige conhecimento sobre a Política Nacional de Saúde do Trabalhador e da Trabalhadora (PNSTT), instituída pela Portaria nº 1.823/2012, e os conceitos de Vigilância em Saúde do Trabalhador (Visat).\n\nAlternativa A: INCORRETA. A classificação oficial e mais utilizada de riscos ocupacionais, estabelecida pelo Ministério da Saúde e pelas Normas Regulamentadoras (como a NR-09), divide os riscos em cinco grupos: físicos, químicos, biológicos, ergonômicos e de acidentes (ou mecânicos). A alternativa mistura termos e inclui categorias como riscos sociais e ambientais de forma não padronizada para a classificação de agentes de risco no ambiente de trabalho. Riscos psicossociais e biomecânicos são, geralmente, classificados dentro do grupo de riscos ergonômicos.\n\nAlternativa B: INCORRETA. De acordo com o Artigo 5º da PNSTT, a Vigilância em Saúde do Trabalhador (Visat) é definida como um \"conjunto de práticas e saberes\", e não meramente um \"conjunto de ações\". Em provas de residência e concursos, a banca frequentemente troca esses termos para invalidar a alternativa com base na literalidade da lei. Além disso, a Visat deve ser integrada e transversal às demais ações de saúde.\n\nAlternativa C: INCORRETA. Embora a frase pareça correta, ela está incompleta em relação ao texto da PNSTT (Artigo 5º, parágrafo 1º). A legislação especifica que essas ações devem considerar os fatores determinantes e condicionantes em seus aspectos tecnológico, social, organizacional e epidemiológico. A omissão desses pilares fundamentais torna a alternativa incompleta quando comparada à precisão da alternativa E.\n\nAlternativa D: INCORRETA. A PNSTT segue o princípio da Universalidade do SUS. O Artigo 3º da Portaria deixa claro que a política se destina a todos os trabalhadores e trabalhadoras, independentemente de sua forma de inserção no mercado de trabalho (formal ou informal), de sua localização (rural ou urbana) ou de seu vínculo (público ou privado). Embora a política dê atenção especial aos grupos vulneráveis, ela não se restringe a eles.\n\nAlternativa E: CORRETA. Esta alternativa é a transcrição literal de um dos objetivos específicos da PNSTT, conforme o Artigo 7º, inciso II: integrar as ações de Vigilância em Saúde do Trabalhador com os demais componentes do Sistema Nacional de Vigilância em Saúde. Esse objetivo visa garantir que a saúde do trabalhador não seja tratada de forma isolada, mas sim de maneira articulada com a vigilância epidemiológica, sanitária, ambiental e a própria atenção à saúde.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  },
+  {
+    "id": "AJUDA_78d50ccb-0dad-478e-9d60-3a2acff1beb9",
+    "originalId": "78d50ccb-0dad-478e-9d60-3a2acff1beb9",
+    "statement": "Gestante de 39 semanas deu entrada na emergência em franco trabalho de parto, ao toque vaginal colo dilatado 4 cm com presença de líquido claro com grumos, contrações uterinas ritmadas com 3 cm 10 minutos. Durante a inspeção vulvar nota-se lesões sugestivas de herpes, ao ser questionada a paciente nega ocorrência anterior das lesões. Qual a melhor conduta a seguir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar a evolução do trabalho de parto, sendo possível o parto vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Observar o recém nato após o parto vaginal e se necessário fazer uso de aciclovir venoso no recém nato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar a paciente para cesariana de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Administrar penicilina na parturiente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aguardar exames laboratoriais para confirmar a suspeita diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta uma gestante a termo (39 semanas) em fase ativa de trabalho de parto (4 cm de dilatação e contrações rítmicas) que apresenta lesões vulvares sugestivas de herpes simples. Um ponto crucial é que a paciente nega episódios anteriores, o que sugere tratar-se de uma primoinfecção herpética. \n\nNa presença de lesões genitais ativas (vesículas ou úlceras) ou sintomas prodrômicos (queimação, dor) no momento do parto, a recomendação padrão é a realização de cesariana. O objetivo é evitar o contato direto do feto com o vírus no canal de parto, reduzindo drasticamente o risco de transmissão vertical e, consequentemente, de herpes neonatal, que possui alta taxa de morbimortalidade. O risco de transmissão na primoinfecção é de aproximadamente 50%, enquanto em casos recorrentes é inferior a 3%.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA: Permitir a evolução para o parto vaginal na presença de lesões herpéticas ativas expõe o recém-nascido ao vírus. Como a paciente provavelmente está em sua primeira infecção, a carga viral é alta e ela ainda não produziu anticorpos protetores suficientes para transferir ao feto, tornando o parto vaginal extremamente arriscado.\n\nb) INCORRETA: A conduta médica deve ser preventiva. Não se deve \"observar\" se o recém-nascido desenvolverá a doença se é possível evitar a exposição através da via de parto adequada (cesariana). O aciclovir venoso é reservado para o tratamento da infecção já instalada ou situações específicas de exposição de alto risco, mas não substitui a indicação de cesárea.\n\nc) CORRETA: A cesariana de urgência é a conduta de escolha para gestantes em trabalho de parto com lesões genitais ativas de herpes. Essa medida reduz o risco de herpes neonatal em mais de 90%. O fato de as membranas estarem íntegras (líquido claro com grumos indica amniorrexe recente ou bolsa íntegra, embora a descrição sugira presença de líquido) reforça ainda mais o benefício da cesárea antes que ocorra uma exposição prolongada.\n\nd) INCORRETA: A penicilina é utilizada na obstetrícia para a profilaxia da transmissão vertical do estreptococo do grupo B (GBS) ou para o tratamento de sífilis. Não possui qualquer ação contra o vírus herpes simplex (HSV).\n\ne) INCORRETA: O diagnóstico do herpes genital é predominantemente clínico. O trabalho de parto em fase ativa (4 cm) não permite aguardar resultados de exames laboratoriais (como cultura viral ou PCR), que podem levar dias. A decisão deve ser imediata baseada na inspeção vulvar para proteger o binômio mãe-filho.\n\nCONCLUSÃO: Diante de lesões herpéticas ativas no trabalho de parto, a via de parto abdominal (cesariana) é mandatória.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Infecções Congênitas na Gestação",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  },
+  {
+    "id": "AJUDA_78d585f9-5843-470c-a7da-c66ab1c36024",
+    "originalId": "78d585f9-5843-470c-a7da-c66ab1c36024",
+    "statement": "Homem, 32 anos de idade, previamente hígido, sofreu acidente de motocicleta há cerca de 40 dias com trauma cranioencefálico. Atendido em PS, recebeu prescrição de carbamazepina, que vem utilizando desde então. Há cerca de uma semana, apresenta lesões no corpo todo e febre. Exame físico: febril, com exantema rubeoliforme, edema de face e palpebral e linfonodomegalia generalizada. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DRESS",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Stevens-Johnson",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Eritema polimorfo minor",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Necrólise epidérmica tóxica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico de uma farmacodermia grave. O paciente iniciou o uso de carbamazepina há 40 dias e apresenta febre, exantema, edema facial e linfonodomegalia generalizada.\n\nA alternativa (a) está correta. A Síndrome de DRESS (Drug Reaction with Eosinophilia and Systemic Symptoms) é uma reação de hipersensibilidade tardia a drogas, ocorrendo tipicamente entre 2 e 8 semanas após o início da medicação (período compatível com os 40 dias do caso). Os critérios diagnósticos incluem o uso de medicação suspeita (carbamazepina é uma das principais causas), febre, exantema morbiliforme (ou rubeoliforme), linfonodomegalia e o edema de face, que é um sinal clínico muito característico e sugestivo desta síndrome. Laboratorialmente, costuma cursar com eosinofilia e alteração de transaminases, embora a questão foque nos achados clínicos e epidemiológicos.\n\nA alternativa (b) está incorreta. A Síndrome de Stevens-Johnson (SSJ) caracteriza-se clinicamente por lesões cutâneas que evoluem com descolamento epidérmico (menos de 10 por cento da superfície corporal) e, obrigatoriamente, acometimento de mucosas (oral, ocular ou genital) com formação de crostas hemorrágicas. O quadro descrito não menciona acometimento mucoso nem sinal de Nikolsky positivo ou descolamento de pele.\n\nA alternativa (c) está incorreta. O Eritema Polimorfo Minor é geralmente desencadeado por infecções (como o vírus Herpes Simplex) e apresenta lesões em alvo ou íris localizadas, preferencialmente em extremidades, sem o componente sistêmico grave, como a linfonodomegalia generalizada e o edema facial descritos.\n\nA alternativa (d) está incorreta. A Necrólise Epidérmica Tóxica (NET) é a forma mais grave do espectro SSJ, envolvendo descolamento de mais de 30 por cento da superfície corporal. É um quadro de falência cutânea aguda com grande instabilidade hemodinâmica, diferente do exantema rubeoliforme e da linfonodomegalia apresentados pelo paciente.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Farmacodermias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  },
+  {
+    "id": "AJUDA_78d6dd28-810d-449e-988e-6ce85f4bb7e7",
+    "originalId": "78d6dd28-810d-449e-988e-6ce85f4bb7e7",
+    "statement": "Assinale a alternativa que indica a principal estratégia de prevenção primária para redução da mortalidade por doenças cardiovasculares.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uso regular de estatinas em adultos com fatores de risco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Promoção de atividade física regular e alimentação saudável",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Monitoramento de pressão arterial em toda a população",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso de aspirina para prevenção de infarto do miocárdio",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O foco da questão é identificar a ação de prevenção primária mais abrangente e eficaz para reduzir a mortalidade por doenças cardiovasculares. A prevenção primária visa controlar os fatores de risco para evitar que o primeiro evento clínico (como infarto ou AVC) ocorra.\n\nAlternativa a) Incorreta. O uso de estatinas é uma intervenção farmacológica fundamental para indivíduos com risco cardiovascular elevado ou dislipidemia já diagnosticada. No entanto, o tratamento medicamentoso é uma estratégia complementar e direcionada a grupos específicos. Não é considerada a principal estratégia populacional, pois o manejo inicial e mais amplo deve sempre focar em mudanças comportamentais antes da ou juntamente com a farmacoterapia.\n\nAlternativa b) Correta. A adoção de hábitos de vida saudáveis, que incluem a prática regular de atividade física e uma alimentação equilibrada, é a base de todas as diretrizes nacionais e internacionais de cardiologia. Essas medidas atuam simultaneamente em diversos fatores de risco, como obesidade, hipertensão arterial, resistência à insulina e dislipidemias. Por ser uma intervenção de baixo custo, alta eficácia e aplicável a toda a população, é a principal estratégia de prevenção primária.\n\nAlternativa c) Incorreta. O monitoramento da pressão arterial é uma medida de rastreamento (screening). Sua função é identificar precocemente indivíduos que já desenvolveram hipertensão para que possam ser tratados. Embora seja essencial para a saúde pública, o monitoramento em si não impede o surgimento da doença; o que previne a doença são as ações que evitam que a pressão se eleve, como a redução do consumo de sal e o controle do peso.\n\nAlternativa d) Incorreta. O uso de aspirina (AAS) para prevenção primária caiu em desuso para a população geral. Diretrizes atuais (como as da SBC, AHA e ESC) restringem seu uso apenas a casos muito selecionados de altíssimo risco cardiovascular, devido ao aumento significativo do risco de sangramentos graves (especialmente gastrointestinais e intracranianos), que muitas vezes supera o benefício de proteção contra eventos isquêmicos.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  },
+  {
+    "id": "AJUDA_78eb8851-8328-4121-a467-ce266c746200",
+    "originalId": "78eb8851-8328-4121-a467-ce266c746200",
+    "statement": "A Síndrome de Gilbert se caracteriza por",
+    "options": [
+      {
+        "id": "A",
+        "text": "bilirrubinas totais aumentadas às custas de bilirrubina indireta, com transaminases, gama GT e fosfatase alcalina normais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "bilirrubinas totais aumentadas às custas de bilirrubina indireta, com transaminases normais e aumento de gama GT e fosfatase alcalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "bilirrubinas totais aumentadas às custas de bilirrubina direta, com transaminases, gama GT e fosfatase alcalina normais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "bilirrubinas totais aumentadas às custas de bilirrubina direta, com transaminases normais e aumento de gama GT e fosfatase alcalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Síndrome de Gilbert é uma condição genética benigna e relativamente comum, caracterizada por uma deficiência parcial na atividade da enzima uridina difosfoglicuronato-glicuronosiltransferase (UGT1A1). Essa enzima é a responsável por realizar a conjugação da bilirrubina no fígado, transformando a bilirrubina indireta (não conjugada) em bilirrubina direta (conjugada) para que possa ser excretada na bile.\n\nAlternativa a: Esta é a alternativa correta. Como a falha ocorre especificamente no processo de conjugação, há um acúmulo de bilirrubina indireta na corrente sanguínea. Como não existe lesão nas células do fígado (hepatócitos) nem obstrução das vias biliares, as transaminases (TGO e TGP), a gama-GT e a fosfatase alcalina permanecem com valores normais. O quadro clínico é geralmente assintomático, com episódios de icterícia leve desencadeados por jejum, estresse, infecções ou exercícios físicos.\n\nAlternativa b: Esta alternativa está incorreta. Embora a Síndrome de Gilbert apresente aumento da bilirrubina indireta, ela não cursa com elevação de gama-GT ou fosfatase alcalina. O aumento dessas enzimas canaliculares sugeriria uma doença colestática ou biliar, o que não é o caso.\n\nAlternativa c: Esta alternativa está incorreta. A Síndrome de Gilbert cursa obrigatoriamente com aumento da fração indireta (não conjugada). O aumento isolado da bilirrubina direta, mantendo as enzimas hepáticas normais, é característico de outras doenças hereditárias menos comuns, como a Síndrome de Dubin-Johnson e a Síndrome de Rotor.\n\nAlternativa d: Esta alternativa está incorreta. O aumento da bilirrubina direta acompanhado de elevação de gama-GT e fosfatase alcalina caracteriza um padrão laboratorial de colestase (interrupção ou diminuição do fluxo biliar). Esse padrão é observado em doenças como coledocolitíase, tumores de vias biliares ou cirrose biliar primária, sendo totalmente incompatível com a Síndrome de Gilbert.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  },
+  {
+    "id": "AJUDA_78eee74c-7362-43f8-aadf-a08cc53ef838",
+    "originalId": "78eee74c-7362-43f8-aadf-a08cc53ef838",
+    "statement": "Pode-se afirmar que a redução da expectativa de vida de 4,5 anos da população masculina e feminina brasileira, entre 2019 e 2021, como efeito da pandemia de Covid-19 é explicada pelo (a):",
+    "options": [
+      {
+        "id": "A",
+        "text": "aumento da mortalidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "redução da fecundidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aumento da razão de dependência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "redução do índice de envelhecimento",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CONCEITOS INICIAIS\n\nA expectativa de vida ao nascer (ou esperança de vida) é um indicador demográfico que estima a média de anos que um indivíduo viveria caso as taxas de mortalidade daquele período específico se mantivessem constantes ao longo de sua existência. Trata-se de uma medida-síntese que reflete as condições de saúde e de vida de uma população, sendo inversamente proporcional às taxas de mortalidade: quanto maiores as taxas de mortalidade em uma população, menor será a sua expectativa de vida.\n\nANÁLISE DAS ALTERNATIVAS\n\nALTERNATIVA A - CORRETA\nO cálculo da expectativa de vida é baseado diretamente nas tábuas de mortalidade (tábuas de vida). Durante os anos de 2020 e 2021, o Brasil e o mundo enfrentaram um fenômeno de excesso de mortalidade devido à pandemia de Covid-19. Esse aumento súbito e expressivo de óbitos em diversas faixas etárias — não apenas em idosos, mas também em adultos jovens — elevou a probabilidade de morte em todas as idades, resultando matematicamente na redução do indicador de expectativa de vida.\n\nALTERNATIVA B - INCORRETA\nA fecundidade diz respeito ao número médio de filhos por mulher e influencia o crescimento vegetativo e a estrutura etária da população (base da pirâmide). Embora mudanças na fecundidade alterem a dinâmica demográfica a longo prazo, elas não são responsáveis pela redução da expectativa de vida, que foca na sobrevivência e no risco de morte dos indivíduos já nascidos.\n\nALTERNATIVA C - INCORRETA\nA razão de dependência é um indicador que relaciona o segmento da população teoricamente inativo (menores de 15 anos e maiores de 65 anos) com a população em idade ativa (15 a 64 anos). Trata-se de um indicador de estrutura econômica e social. A pandemia pode até alterar essa razão (por exemplo, com o excesso de mortes de idosos, a razão de dependência senil poderia diminuir), mas ela é uma consequência da demografia e não a causa da queda na expectativa de vida.\n\nALTERNATIVA D - INCORRETA\nO índice de envelhecimento representa a relação entre a população idosa e a população jovem. Embora a Covid-19 tenha afetado severamente a população idosa, o que poderia desacelerar o índice de envelhecimento momentaneamente, esse indicador descreve a composição da pirâmide etária. A queda na expectativa de vida é explicada pelo aumento do risco de morrer (mortalidade) e não pela proporção de idosos na população.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  },
+  {
+    "id": "AJUDA_78f751b0-c13b-45a4-92fd-2413a169d2c8",
+    "originalId": "78f751b0-c13b-45a4-92fd-2413a169d2c8",
+    "statement": "Menina de 4 anos foi trazida à consulta por apresentar desenvolvimento de mamas e pelos pubianos, quadro iniciado há 3 meses segundo familiares. Ao exame físico, foram constatados mamas e pelos no estágio 3 de Tanner. Exames laboratoriais e funcionais levaram ao diagnóstico de puberdade precoce dependente de gonadotrofinas. Assinale a assertiva correta com base no diagnóstico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve ser iniciado imediatamente tratamento com agonistas do GnRH e hormônio do crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É necessário realizar ultrassonografia pélvica para excluir tumor ou cisto ovariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É necessário realizar ressonância magnética de crânio para investigar a possibilidade de tumor.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É possível uma abordagem conservadora, observando a evolução da puberdade nos próximos meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\nA paciente apresenta Puberdade Precoce Central (PPC), caracterizada pela ativação prematura do eixo hipotálamo-hipofisário-gonadal antes da idade fisiológica. Por ter apenas 4 anos e já apresentar caracteres sexuais no estágio 3 de Tanner, a investigação de causas orgânicas e a intervenção terapêutica são fundamentais.\n\nAlternativa A: Incorreta. O tratamento de escolha para a puberdade precoce central é feito com análogos do GnRH de ação prolongada (como a leuprorelina), que promovem a dessensibilização da hipófise. O hormônio do crescimento (GH) não deve ser iniciado de forma imediata ou rotineira; ele é reservado para casos selecionados em que há uma queda significativa na previsão de estatura final durante o tratamento com o análogo do GnRH.\n\nAlternativa B: Incorreta. A ultrassonografia pélvica auxilia na avaliação do volume uterino e ovariano para confirmar a exposição hormonal, mas não é o exame prioritário após o diagnóstico de puberdade central. Tumores ou cistos ovarianos são causas de puberdade precoce periférica (independente de gonadotrofinas), o que não é o caso descrito.\n\nAlternativa C: Correta. Em meninas com puberdade precoce central, a realização de Ressonância Magnética (RM) de crânio é obrigatória se o quadro se iniciar antes dos 6 a 8 anos de idade. O objetivo é descartar lesões no Sistema Nervoso Central (SNC), como hamartomas hipotalâmicos, gliomas ou outros tumores, que podem atuar como gatilho para a ativação precoce do eixo hormonal. Quanto mais jovem a criança, maior o risco de uma causa orgânica subjacente.\n\nAlternativa D: Incorreta. A conduta conservadora não é recomendada para uma criança de 4 anos com puberdade em estágio Tanner 3. A evolução rápida sem tratamento acarreta o avanço da idade óssea e o fechamento prematuro das epífises de crescimento, o que leva à perda de estatura na vida adulta, além do impacto psicossocial para a criança.\n\nGabarito: Letra (c).",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  },
+  {
+    "id": "AJUDA_78fe3d00-88fe-4993-b9b3-35ae2db82ba0",
+    "originalId": "78fe3d00-88fe-4993-b9b3-35ae2db82ba0",
+    "statement": "Gestante com 34 semanas, apresentando à avaliação ultrassonográfica presença de oligoidrâmnia moderada e centralização fetal. Qual o diagnóstico mais provável para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sofrimento fetal agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Amniorrexe prematura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sofrimento fetal crônico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Malformação fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO quadro clínico descreve uma gestante de 34 semanas com dois achados fundamentais ao exame ultrassonográfico com Doppler: oligoidramnia (redução do líquido amniótico) e centralização fetal (redistribuição do fluxo sanguíneo). Esses sinais indicam que o feto está sendo submetido a um ambiente de hipóxia persistente e está ativando mecanismos compensatórios para sobreviver.\n\nPor que a alternativa (c) está correta?\n\nO sofrimento fetal crônico é a consequência direta da insuficiência placentária crônica. Quando a placenta não consegue fornecer oxigênio e nutrientes de forma adequada ao longo do tempo, o feto reage de duas formas principais visualizadas no exame:\n1. Centralização Fetal: Para proteger os órgãos vitais, o feto promove uma vasodilatação em órgãos nobres (cérebro, coração e glândulas suprarrenais) e uma vasoconstrição em órgãos periféricos (músculos, pele e rins). No Doppler, isso é visto como uma redução da resistência na artéria cerebral média.\n2. Oligoidramnia: Como o sangue é desviado dos rins (vasoconstrição renal), ocorre uma diminuição da filtração glomerular e, consequentemente, uma menor produção de urina fetal. Como a urina é a principal fonte de líquido amniótico no terceiro trimestre, o volume de líquido diminui.\n\nAnálise das alternativas incorretas:\n\na) Sofrimento fetal agudo: Esta condição refere-se a uma interrupção brusca e súbita das trocas gasosas entre a mãe e o feto, geralmente ocorrendo durante o trabalho de parto ou em eventos catastróficos como o descolamento prematuro de placenta (DPP) ou prolapso de cordão. O diagnóstico é feito principalmente pela cardiotocografia (presença de desacelerações tardias, bradicardia ou perda de variabilidade) e não por alterações crônicas de adaptação circulatória como a centralização.\n\nb) Amniorrexe prematura: A ruptura prematura das membranas ovulares explica a perda de líquido amniótico (oligoidramnia por escoamento), mas não justifica a centralização fetal observada ao Doppler. A centralização é uma resposta hemodinâmica à hipóxia e não à perda mecânica de líquido.\n\nd) Malformação fetal: Algumas malformações, especificamente as do trato urinário (como agenesia renal ou válvulas de uretra posterior), podem causar oligoidramnia grave. No entanto, o achado de centralização fetal é um indicador específico de redistribuição de fluxo sanguíneo por hipóxia, o que aponta diretamente para uma causa placentária e não para uma anomalia estrutural isolada do feto.\n\nGabarito: Letra (c).",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:22.719Z"
+  }
+]

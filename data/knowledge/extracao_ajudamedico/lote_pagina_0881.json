@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_f4526f62-3100-46fd-a37f-13ce333b25b0",
+    "originalId": "f4526f62-3100-46fd-a37f-13ce333b25b0",
+    "statement": "Um paciente será submetido a cistectomia radical aberta e reconstrução urinária com conduto ileal à Bricker.\n\nQual é o momento adequado para realizar a profilaxia antimicrobiana?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Até uma hora antes da intubação orotraqueal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Até uma hora antes da incisão cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Imediatamente após instalar o acesso venoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Imediatamente após o paciente entrar na sala operatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O objetivo central da profilaxia antimicrobiana cirúrgica é garantir que o nível sérico e tecidual do antibiótico seja adequado e esteja no seu pico no momento em que a pele é rompida e o campo cirúrgico é exposto.\n\nConfira a análise de cada alternativa:\n\nAlternativa a) Incorreta. A intubação orotraqueal é um procedimento anestésico que precede a cirurgia. Embora ocorra antes da operação, o marco temporal utilizado mundialmente para a eficácia da profilaxia não é a intubação, mas sim o início da agressão tecidual (incisão).\n\nAlternativa b) Correta. De acordo com as diretrizes nacionais (Anvisa) e internacionais (CDC e OMS), a administração do antibiótico deve ocorrer preferencialmente dentro de 60 minutos antes da incisão cirúrgica. Esse intervalo permite que a droga seja distribuída pelos tecidos, oferecendo proteção máxima contra a colonização por patógenos durante o ato operatório. Para antibióticos com meia-vida mais longa ou que exigem infusão lenta (como vancomicina ou fluoroquinolonas), esse prazo pode ser estendido para até 120 minutos, mas a regra geral de 60 minutos antes da incisão permanece como o padrão-ouro para a maioria dos fármacos.\n\nAlternativa c) Incorreta. O acesso venoso pode ser instalado muito tempo antes do início da cirurgia, ainda na enfermaria ou na sala de pré-anestesia. Se o antibiótico for administrado nesse momento, os níveis teciduais podem estar abaixo da dose inibitória mínima quando a cirurgia de fato começar, deixando o paciente desprotegido.\n\nAlternativa d) Incorreta. A entrada do paciente na sala operatória é um marco administrativo e logístico. Entre a entrada na sala e a incisão real, ocorrem diversos processos, como a transferência para a mesa, a monitorização, a indução anestésica e o posicionamento cirúrgico. Esse intervalo pode ser longo e variável, não servindo como parâmetro seguro para a cronometragem da antibioticoterapia.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  },
+  {
+    "id": "AJUDA_f454ab45-aecc-4bd3-93eb-2236b6ba8e75",
+    "originalId": "f454ab45-aecc-4bd3-93eb-2236b6ba8e75",
+    "statement": "Um menino de 3 anos de idade apresenta quadro de diarreia aquosa intensa, irritabilidade e olhos fundos. Ao exame, o pulso é fraco, e o sinal da prega abdominal desaparece lentamente. Assinale a alternativa que apresenta o plano de reidratação recomendado segundo o fluxograma do Ministério da Saúde adotado pela SBP.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Plano A – prevenção de desidratação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Plano B – reidratação oral supervisionada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Plano C – reidratação endovenosa",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Plano D – antibiótico e antiemético",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Plano E – observação e dieta zero",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar os sinais clínicos apresentados e correlacioná-los com os Planos de Reidratação do Ministério da Saúde e da Sociedade Brasileira de Pediatria (SBP).\n\nO paciente apresenta irritabilidade e olhos fundos, além do sinal da prega que desaparece lentamente. Esses sinais, isoladamente, poderiam sugerir uma desidratação moderada. No entanto, o ponto-chave da questão é o relato de pulso fraco. De acordo com os protocolos vigentes (AIDPI/Ministério da Saúde), a presença de sinais de comprometimento circulatório, como pulso fraco ou ausente, enchimento capilar muito lento ou alteração grave do nível de consciência (letargia ou coma), classifica a desidratação como grave.\n\nAlternativa (a) Incorreta: O Plano A é destinado à prevenção da desidratação em crianças que apresentam diarreia, mas que, ao exame físico, não possuem sinais clínicos de perda de fluidos. O tratamento é domiciliar, focado no aumento da oferta de líquidos e manutenção da alimentação.\n\nAlternativa (b) Incorreta: O Plano B é indicado para crianças com sinais de desidratação (como irritabilidade, olhos fundos e sinal da prega que desaparece lentamente), mas que ainda não apresentam sinais de choque ou incapacidade de ingestão oral. O tratamento é realizado com Terapia de Reidratação Oral (TRO) sob supervisão médica na unidade de saúde. A presença do pulso fraco eleva a gravidade do caso, contraindicando a exclusividade do Plano B.\n\nAlternativa (c) Correta: O Plano C é o protocolo de reidratação emergencial por via parenteral (endovenosa), indicado para casos de desidratação grave. O achado de pulso fraco é um sinal clássico de choque hipovolêmico ou pré-choque, o que exige expansão volêmica imediata para restaurar a perfusão dos órgãos, conforme preconizado pelo fluxograma adotado pela SBP.\n\nAlternativa (d) Incorreta: Não existe a nomenclatura Plano D nos protocolos oficiais de reidratação para diarreia. Além disso, antibióticos não são indicados para diarreia aquosa rotineira, e antieméticos devem ser usados com cautela, nunca substituindo a prioridade, que é a reposição de volume.\n\nAlternativa (e) Incorreta: Não existe Plano E nos protocolos de manejo de desidratação. A conduta de dieta zero é contraindicada na diarreia aguda; a recomendação é manter a alimentação habitual (ou aleitamento materno) assim que o paciente estiver estabilizado e hidratado, para auxiliar na recuperação da mucosa intestinal.\n\nEm resumo, a presença de um sinal de gravidade hemodinâmica (pulso fraco) define a conduta como Plano C.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Diarreia",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  },
+  {
+    "id": "AJUDA_f462b6b1-2fb9-418a-b65d-916196255909",
+    "originalId": "f462b6b1-2fb9-418a-b65d-916196255909",
+    "statement": "Gestante, 28 anos, comparece à consulta do pré-natal com queixa de insônia, palpitações, fadiga, ansiedade e perda de peso. Na avaliação dos exames de pré-natal, observa-se que o valor do TSH está abaixo de 0,1 µUI/L e do T4L está igual a 4,0 ng/dL (acima do valor de referência do laboratório). Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertiroidismo clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tireotoxicose gravídica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipotiroidismo subclínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alterações fisiológicas da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome do eutireoideo doente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta um quadro clínico sugestivo de excesso de hormônios tireoidianos (tireotoxicose), caracterizado por insônia, palpitações, ansiedade e perda de peso (sintoma muito importante, visto que o esperado na gestação é o ganho ponderal). O diagnóstico laboratorial é confirmado pelo TSH suprimido (abaixo de 0,1 µUI/L) e pelo T4 Livre (T4L) elevado (4,0 ng/dL), que está bem acima dos valores de referência habituais.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\na) CORRETA. O hipertireoidismo clínico (ou manifesto) é definido laboratorialmente pela supressão do TSH associada à elevação do T4 livre e/ou T3 livre, acompanhada de sinais e sintomas clínicos. No caso descrito, a paciente preenche todos os critérios: TSH < 0,1, T4L nitidamente elevado e sintomatologia exuberante.\n\nb) INCORRETA. A tireotoxicose transitória da gestação (ou tireotoxicose gravídica) é causada pelo estímulo do receptor de TSH pela subunidade alfa do hCG (que é estruturalmente semelhante ao TSH). Embora seja um diagnóstico diferencial, ela costuma ocorrer no primeiro trimestre, frequentemente associada à hiperêmese gravídica, e geralmente apresenta sintomas mais leves ou ausentes. O T4L de 4,0 ng/dL é um valor muito elevado, mais característico de hipertireoidismo clínico (como a Doença de Graves) do que da forma transitória gestacional.\n\nc) INCORRETA. O hipotireoidismo subclínico caracteriza-se por um TSH elevado com níveis de T4 livre dentro da normalidade, o oposto do que foi apresentado no caso.\n\nd) INCORRETA. As alterações fisiológicas da gestação incluem um aumento da Globulina Ligadora de Tiroxina (TBG) e um estímulo leve da tireoide pelo hCG (que pode reduzir levemente o TSH no primeiro trimestre). No entanto, essas alterações não elevam o T4 livre a níveis tão altos (4,0 ng/dL) nem causam perda de peso e palpitações clínicas marcantes. Em uma gestação normal, o T4 livre deve permanecer dentro ou muito próximo da faixa de normalidade.\n\ne) INCORRETA. A síndrome do eutireoideo doente (ou síndrome da doença não tireoidiana) ocorre em pacientes com doenças sistêmicas graves e agudas. O padrão laboratorial típico é a redução do T3, com TSH e T4 que podem estar normais ou baixos, mas nunca com T4 livre francamente elevado.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  },
+  {
+    "id": "AJUDA_f464092f-7f75-4f38-bf98-5398e59f1e85",
+    "originalId": "f464092f-7f75-4f38-bf98-5398e59f1e85",
+    "statement": "Paciente masculino, 45 anos, procura a Unidade Básica de Saúde queixando-se de desânimo, fadiga e dificuldade de concentração há cerca de 2 meses. Ele relata perda de interesse em atividades que antes lhe davam prazer, além de insônia e perda de apetite. Para auxiliar no diagnóstico e avaliação da gravidade dos sintomas, o médico de família e comunidade decide aplicar a escala PHQ-9. O paciente obtém escore 12 na escala. Qual da interpretação deste resultado e a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Depressão leve; iniciar tratamento com antidepressivo em dose baixa e acompanhamento regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Depressão moderada; iniciar tratamento com antidepressivo em dose moderada e encaminhamento para psicoterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Depressão grave; iniciar tratamento com antidepressivo em dose alta e avaliação psiquiátrica urgente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ansiedade generalizada; prescrever benzodiazepínico e encaminhar para avaliação psicológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Transtorno bipolar; encaminhar para avaliação psiquiátrica para iniciar estabilizador de humor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O PHQ-9 (Patient Health Questionnaire-9) é um instrumento de rastreamento e avaliação de gravidade da depressão composto por nove critérios baseados no DSM. A interpretação da pontuação total é feita da seguinte forma:\n0 a 4 pontos: Sintomas mínimos ou ausência de depressão.\n5 a 9 pontos: Depressão leve.\n10 a 14 pontos: Depressão moderada.\n15 a 19 pontos: Depressão moderadamente grave.\n20 a 27 pontos: Depressão grave.\n\nNo caso apresentado, o paciente obteve 12 pontos, o que o classifica na categoria de depressão moderada.\n\nAlternativa a: Incorreta. A depressão é classificada como leve quando o escore do PHQ-9 está entre 5 e 9. Para depressão leve, as diretrizes sugerem frequentemente o monitoramento (vigilância cautelosa) ou psicoterapia, reservando o antidepressivo para casos específicos ou persistentes. O escore 12 já indica gravidade moderada.\n\nAlternativa b: Correta. Um escore de 12 pontos confirma o diagnóstico de depressão moderada. De acordo com os protocolos de manejo de saúde mental na Atenção Primária, para casos moderados a graves, a conduta recomendada é o início de tratamento farmacológico (antidepressivos) e/ou psicoterapia. A combinação de ambas as modalidades costuma oferecer melhores taxas de remissão.\n\nAlternativa c: Incorreta. A depressão é considerada grave quando a pontuação atinge 20 pontos ou mais. Embora o escore 12 demande tratamento, ele não caracteriza um quadro de gravidade extrema que exija, obrigatoriamente, doses altas iniciais ou encaminhamento psiquiátrico de urgência, exceto se houvesse risco de suicídio iminente, o que não foi citado.\n\nAlternativa d: Incorreta. Os sintomas relatados (perda de interesse, alteração de apetite e anedonia) e o uso da escala PHQ-9 são específicos para o rastreio de depressão, e não de ansiedade generalizada (para a qual utilizaríamos o GAD-7). Além disso, benzodiazepínicos não são o tratamento de primeira linha para transtornos afetivos ou de ansiedade crônicos.\n\nAlternativa e: Incorreta. O transtorno bipolar exige a presença de histórico de mania ou hipomania, informação que não consta no relato. O PHQ-9 avalia apenas a vertente depressiva. O encaminhamento direto para início de estabilizador de humor sem evidência de bipolaridade seria uma conduta precipitada.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  },
+  {
+    "id": "AJUDA_f4739e4f-526f-4c3a-9c4e-136e1db939e9",
+    "originalId": "f4739e4f-526f-4c3a-9c4e-136e1db939e9",
+    "statement": "Adolescente de 15 anos comparece à Unidade de Pronto Atendimento com queixa de mialgia, mal-estar e cansaço, iniciados há 1 semana, quadro que evoluiu, há 3 dias, com febre, dor de garganta e odinofagia. Exame físico: amígdalas hiperemiadas, com exsudato bilateral e linfoadenomegalia dolorosa em região cervical posterior bilateral de até 2 cm de diâmetro. É indicado o uso de sintomáticos, além de repouso e observação. Após 24 horas, não tem mais febre, porém apresenta erupção exantemática macular na face, no abdome e na região torácica.\nQual é o diagnóstico provável para esse caso clínico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amigdalite bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infecção pelo vírus Epstein-Barr.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Reação alérgica ao antitérmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rinofaringite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Gabarito: alternativa B (infecção pelo vírus Epstein-Barr).\n\nO caso descreve a mononucleose infecciosa clássica em um adolescente, faixa etária típica. Os achados que apontam para esse diagnóstico são:\n\n1. Pródromo arrastado: cerca de 1 semana de mal-estar, mialgia e fadiga antes da faringite. Esse início insidioso é característico do EBV, diferente do início abrupto da faringite estreptocócica.\n\n2. Tríade clássica: febre, faringoamigdalite exsudativa e linfadenopatia.\n\n3. Linfadenopatia cervical posterior bilateral: é o dado mais sugestivo. A faringite estreptocócica costuma acometer a cadeia cervical anterior, enquanto o EBV envolve com frequência a cadeia posterior, de forma bilateral e simétrica.\n\n4. Exantema maculopapular em face, tronco e abdome: ocorre espontaneamente em parte dos pacientes com mononucleose, mesmo sem antibiótico. Com aminopenicilinas (amoxicilina, ampicilina), a frequência sobe muito, o que é uma clássica \"pegadinha\" de prova. Aqui foram usados apenas sintomáticos, e o exantema faz parte da própria doença.\n\nPara a confirmação, os exames úteis são:\n- Hemograma com linfocitose e linfócitos atípicos (acima de 10%).\n- Elevação de transaminases.\n- Teste de anticorpos heterófilos (Paul-Bunnell/monoteste), que pode ser falso-negativo no início.\n- Sorologia específica: IgM anti-VCA.\n\nAo exame, vale procurar também esplenomegalia e edema palpebral.\n\nO tratamento é de suporte. O paciente deve evitar esportes de contato por pelo menos 3 a 4 semanas, pelo risco de ruptura esplênica.\n\nAnálise das alternativas:\n\na) Amigdalite bacteriana – Incorreta. A faringite estreptocócica tem início súbito, sem pródromo prolongado, e linfadenopatia cervical anterior. A escarlatina pode cursar com exantema, mas este é micropapular e áspero (\"lixa\"), com palidez perioral (sinal de Filatov), acentuação em dobras (sinal de Pastia) e língua em framboesa. Esse padrão não corresponde ao exantema macular descrito.\n\nb) Infecção pelo vírus Epstein-Barr – Correta. Reúne pródromo arrastado, faringoamigdalite exsudativa, linfadenopatia cervical posterior bilateral e exantema maculopapular em adolescente.\n\nc) Reação alérgica ao antitérmico – Incorreta. É possível, mas pouco provável e não explica o quadro como um todo, que é anterior ao uso da medicação. Antitérmicos comuns (dipirona, paracetamol) raramente causam esse padrão. O exantema associado a medicamento que as provas exploram na mononucleose é o induzido por amoxicilina, não usada aqui.\n\nd) Rinofaringite – Incorreta. O resfriado comum cursa com coriza, obstrução nasal, espirros e febre baixa ou ausente. Não costuma ter exsudato amigdaliano importante, linfadenopatia cervical posterior dolorosa nem exantema.\n\nMensagem para a prova: adolescente com faringoamigdalite exsudativa, linfadenopatia cervical posterior e fadiga importante deve levar a pensar em mononucleose por EBV. O surgimento de exantema, sobretudo após amoxicilina, reforça o diagnóstico.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  },
+  {
+    "id": "AJUDA_f47a405a-20a0-4a8b-a5d1-0f41e38438f3",
+    "originalId": "f47a405a-20a0-4a8b-a5d1-0f41e38438f3",
+    "statement": "Entre as causas abaixo, qual representa uma forma potencialmente reversível de demência?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Alzheimer",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Demência vascular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hidrocefalia de pressão normal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Demência frontotemporal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Doença de Corpos de Lewy.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. A Doença de Alzheimer é a causa mais frequente de demência no mundo e possui caráter neurodegenerativo. Ela é provocada pelo acúmulo de proteínas beta-amiloide e tau no tecido cerebral, levando à perda progressiva e irreversível de neurônios. Não há, atualmente, tratamento que reverta o dano cognitivo estabelecido.\n\nAlternativa b) Incorreta. A demência vascular é causada por lesões decorrentes de eventos isquêmicos ou hemorrágicos cerebrais (como múltiplos infartos ou doença de pequenos vasos). Embora o tratamento rigoroso dos fatores de risco cardiovascular (hipertensão, diabetes, dislipidemia) possa prevenir novos eventos e estabilizar o quadro, as áreas de infarto cerebral representam dano tecidual permanente, o que a impede de ser classificada como uma demência reversível.\n\nAlternativa c) Correta. A Hidrocefalia de Pressão Normal (HPN) é classicamente descrita como uma forma de demência potencialmente reversível. Ela se caracteriza pelo acúmulo de líquido cefalorraquidiano nos ventrículos cerebrais sem aumento significativo da pressão intracraniana. Manifesta-se pela tríade clínica de Hakim-Adams: distúrbio da marcha (marcha magnética/apráxica), incontinência urinária e demência. O diagnóstico correto e a intervenção cirúrgica oportuna, geralmente através da derivação ventrículo-peritoneal (DVP), podem levar à melhora ou reversão dos sintomas.\n\nAlternativa d) Incorreta. A demência frontotemporal refere-se a um grupo de doenças que causam a degeneração dos lobos frontal e temporal do cérebro. É marcada por alterações precoces de personalidade, comportamento e linguagem. Assim como as outras demências degenerativas, é progressiva e irreversível.\n\nAlternativa e) Incorreta. A demência por corpos de Lewy é a segunda causa mais comum de demência neurodegenerativa. É caracterizada por flutuações no nível de consciência, alucinações visuais vívidas e sinais extrapiramidais (parkinsonismo). É uma condição crônica, progressiva e incurável, não sendo passível de reversão.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Demências"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  },
+  {
+    "id": "AJUDA_f47cd290-960b-408b-bb8e-a47e9022beff",
+    "originalId": "f47cd290-960b-408b-bb8e-a47e9022beff",
+    "statement": "Paciente masculino, 45 anos, com IMC: 38 kg/m², previamente hígido, foi submetido a colecistectomia videolaparoscópica por colelitíase sintomática. O insuflador de gás carbônico aponta pressão de 14 mmHg e fluxo de 20 L/min. Sobre tais parâmetros é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pressão está baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fluxo alto; risco de barotrauma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Parâmetros adequados para o caso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pressão de 14 mmHg é contraindicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Vazão de 20 L/min é excessiva e causa acidose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é necessário revisar os conceitos fundamentais do pneumoperitônio em cirurgia videolaparoscópica, especificamente as configurações do insuflador de CO2.\n\nO pneumoperitônio é criado para permitir a visualização e a manipulação dos órgãos abdominais. Os dois parâmetros principais são a pressão intra-abdominal e o fluxo (vazão) de gás.\n\nAnálise da Pressão: A pressão padrão utilizada na maioria das cirurgias laparoscópicas varia entre 12 e 15 mmHg. No caso descrito, a pressão de 14 mmHg está dentro da faixa de normalidade e segurança. Para um paciente com IMC de 38 kg/m² (obesidade grau II), essa pressão é especialmente adequada, pois pacientes obesos possuem uma parede abdominal mais pesada e complacência reduzida, exigindo pressões no limite superior da normalidade para garantir um campo cirúrgico satisfatório.\n\nAnálise do Fluxo: O fluxo de 20 L/min refere-se à capacidade máxima de entrega de gás pelo insuflador para atingir ou manter a pressão preestabelecida. Insufladores modernos trabalham com fluxos altos (de 20 a 40 L/min) para compensar rapidamente perdas de gás que ocorrem durante a troca de pinças, uso de aspiradores ou pequenas fugas pelos trocartes. Ter um fluxo de 20 L/min disponível não significa que o gás entrará continuamente nessa velocidade, mas sim que o aparelho é capaz de repor o gás rapidamente se a pressão cair abaixo de 14 mmHg.\n\nAnálise das alternativas:\n\na) Incorreta. A pressão de 14 mmHg é considerada o padrão-ouro (\"gold standard\") para a maioria dos procedimentos, não sendo considerada baixa.\n\nb) Incorreta. O risco de barotrauma e repercussões hemodinâmicas graves está relacionado à pressão (mmHg) e não ao fluxo (L/min). O fluxo elevado apenas garante que a pressão-alvo seja mantida de forma estável.\n\nc) Correta. Ambos os parâmetros (14 mmHg de pressão e 20 L/min de fluxo) são adequados e rotineiramente utilizados na prática cirúrgica, inclusive em pacientes obesos.\n\nd) Incorreta. A pressão de 14 mmHg não é contraindicada; pelo contrário, é a pressão recomendada para garantir a segurança do paciente e o espaço de trabalho do cirurgião.\n\ne) Incorreta. A acidose na laparoscopia ocorre pela absorção sistêmica do CO2 através do peritônio (hipercapnia) ou por ventilação inadequada durante a anestesia, e não pela velocidade de fluxo (vazão) configurada no aparelho. Além disso, 20 L/min é uma vazão comum e segura nos equipamentos atuais.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  },
+  {
+    "id": "AJUDA_f484616d-22a6-4cf2-a67a-b24e9554776f",
+    "originalId": "f484616d-22a6-4cf2-a67a-b24e9554776f",
+    "statement": "Uma mulher de 22 anos apresenta sangramentos gengivais ao escovar os dentes, equimoses após pequenos traumas e menstruações prolongadas desde a adolescência. Ao exame, há petéquias e equimoses, sem hepatoesplenomegalia. O exame que avalia a hemostasia primária, cuja alteração explica o quadro clínico da paciente, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fibrinogênio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tempo de Protrombina (TP)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tempo de Tromboplastina parcial (TTPa)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tempo de Trombina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tempo de sangramento",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de distúrbio da hemostasia primária. A presença de sangramentos mucocutâneos (gengivorragia, menorragia, petéquias e equimoses) é característica de alterações no número ou na função das plaquetas, ou ainda de defeitos no Fator de von Willebrand. Diferente dos distúrbios da hemostasia secundária (fatores de coagulação), que costumam cursar com hematomas profundos e hemartroses, a hemostasia primária se manifesta com sangramentos superficiais e imediatos.\n\nAnálise das alternativas:\n\na) Fibrinogênio: Incorreto. O fibrinogênio é o Fator I da coagulação. Ele participa da hemostasia secundária, sendo convertido em fibrina para estabilizar o coágulo plaquetário. Sua dosagem não é o teste de triagem para avaliar a função plaquetária ou a interação inicial do vaso com a plaqueta.\n\nb) Tempo de Protrombina (TP): Incorreto. O TP é um exame que avalia a via extrínseca e a via comum da cascata de coagulação (hemostasia secundária). Ele é sensível a reduções nos fatores VII, X, V, II (protrombina) e I (fibrinogênio), sendo muito utilizado para monitorar o uso de anticoagulantes orais (varfarina) e avaliar a função hepática.\n\nc) Tempo de Tromboplastina parcial (TTPa): Incorreto. O TTPa avalia a via intrínseca e a via comum da hemostasia secundária. É alterado em deficiências de fatores como VIII, IX, XI e XII, além de ser usado para monitorar o uso de heparina não fracionada. Embora o Fator de von Willebrand ajude a estabilizar o fator VIII, o exame que avalia diretamente a hemostasia primária não é o TTPa.\n\nd) Tempo de Trombina: Incorreto. Este teste avalia especificamente a etapa final da cascata de coagulação: a conversão de fibrinogênio em fibrina mediada pela trombina. Não avalia a formação do tampão plaquetário inicial.\n\ne) Tempo de sangramento: Correto. O tempo de sangramento é o exame que avalia a integridade da hemostasia primária. Ele mede o intervalo necessário para que o sangramento pare após uma pequena incisão padronizada na pele. Este tempo depende da vasoconstrição reflexa, da quantidade de plaquetas e, fundamentalmente, da capacidade de adesão e agregação plaquetária. No caso clínico apresentado, onde a paciente apresenta sintomas desde a adolescência, o tempo de sangramento estaria prolongado, sugerindo condições como a Doença de von Willebrand ou disfunções plaquetárias (plaquetopatias).",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  },
+  {
+    "id": "AJUDA_f484e44b-a9f7-4c6c-89b8-f13d4ff31cab",
+    "originalId": "f484e44b-a9f7-4c6c-89b8-f13d4ff31cab",
+    "statement": "Quanto ao diagnóstico da restrição de crescimento fetal,",
+    "options": [
+      {
+        "id": "A",
+        "text": "a circunferência abdominal fetal é a medida de maior sensibilidade para sua detecção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a dopplervelocimetria não tem boa acurácia para a insuficiência placentária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a artéria umbilical pode apresentar redução do índice de pulsatilidade em casos de RCF por insuficiência placentária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "em casos de restrição precoce, a hipótese mais provável é a síndrome antifosfolípide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Correta. A medida da circunferência abdominal (CA) fetal é o parâmetro biométrico isolado mais sensível para a detecção da restrição de crescimento fetal (RCF). Isso ocorre porque o fígado é um dos primeiros órgãos a sofrer redução de volume devido à depleção dos estoques de glicogênio e ao desvio de fluxo sanguíneo para órgãos nobres (como o cérebro) em situações de insuficiência placentária. Como a circunferência abdominal reflete diretamente o tamanho do fígado, ela se altera antes de outros parâmetros, como o comprimento do fêmur ou o diâmetro biparietal.\n\nAlternativa b: Incorreta. A dopplervelocimetria é, na verdade, a ferramenta padrão-ouro para o diagnóstico e manejo da insuficiência placentária. O Doppler da artéria umbilical reflete a resistência vascular da placenta e possui alta acurácia para identificar fetos que estão sofrendo devido ao aporte inadequado de nutrientes e oxigênio, permitindo diferenciar o feto \"pequeno para a idade gestacional\" (PIG) constitucional do feto com restrição de crescimento patológica.\n\nAlternativa c: Incorreta. Em casos de RCF por insuficiência placentária, o índice de pulsatilidade (IP) da artéria umbilical apresenta um aumento, e não uma redução. O aumento do IP indica maior resistência à passagem do sangue no leito placentário. Em casos graves, essa resistência é tão alta que pode ocorrer a diástole zero ou diástole reversa. A redução do índice de pulsatilidade é observada na artéria cerebral média, fenômeno conhecido como centralização fetal (vasodilatação cerebral para proteção do órgão).\n\nAlternativa d: Incorreta. Embora a síndrome antifosfolípide (SAF) seja uma causa grave e bem estabelecida de RCF precoce, ela não é a hipótese mais provável ou comum. A maioria dos casos de restrição de crescimento precoce (aqueles diagnosticados antes das 32 semanas) está relacionada à insuficiência placentária primária decorrente de falha na segunda onda de invasão trofoblástica, frequentemente associada à pré-eclâmpsia, ou ainda a aneuploidias, malformações fetais e infecções congênitas (como citomegalovírus).",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Restrição de Crescimento Fetal e Óbito Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  },
+  {
+    "id": "AJUDA_f48b3217-48e2-4b1c-9050-90108c04b52d",
+    "originalId": "f48b3217-48e2-4b1c-9050-90108c04b52d",
+    "statement": "Mulher, 34 anos de idade, nuligesta, com endometriose tratada clinicamente no passado, retorna com queixa de infertilidade há 18 meses. Ressonância magnética: endometriose profunda com nódulo em septo retovaginal e distorção anatômica. Ciclos ovulatórios regulares e parceiro com espermograma normal. Diante do desejo de engravidar, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar inseminação intrauterina diretamente, sem abordagem cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar análogo de GnRH por 6 meses antes de liberar tentativas espontâneas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar cirurgia conservadora para remoção das lesões profundas antes da tentativa de gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Contraindicar gestação espontânea e indicar preservação de óvulos para FIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: Mulher de 34 anos com infertilidade primária (18 meses), parceiro com espermograma normal e ciclos ovulatórios. O diagnóstico principal é endometriose profunda com distorção anatômica evidenciada por ressonância magnética.\n\nAlternativa (a) Incorreta: A inseminação intrauterina (IIU) é uma técnica de baixa complexidade que exige, obrigatoriamente, integridade anatômica e funcional das tubas uterinas. A presença de endometriose profunda com distorção anatômica sugere um comprometimento mecânico e inflamatório grave (estágios III ou IV), o que torna a IIU pouco eficaz. Além disso, a técnica não resolve o problema estrutural causado pela doença.\n\nAlternativa (b) Incorreta: O tratamento medicamentoso da endometriose, incluindo o uso de análogos do GnRH, é eficaz para o manejo da dor, mas não possui benefício comprovado na melhora das taxas de fertilidade. O uso dessas medicações suspende a ovulação e \"desperdiça\" tempo reprodutivo da paciente, sem remover as lesões ou corrigir a distorção anatômica que impede a gestação.\n\nAlternativa (c) Correta: Diante de uma paciente jovem com distorção anatômica pélvica e fator masculino normal, a conduta mais adequada é a cirurgia conservadora (preferencialmente por laparoscopia). O objetivo é realizar a exérese dos focos de endometriose profunda, a lise de aderências e a restauração da anatomia pélvica e da relação entre as tubas e os ovários. Esse procedimento aumenta as chances de concepção espontânea e melhora os resultados de futuras técnicas de reprodução assistida, caso venham a ser necessárias.\n\nAlternativa (d) Incorreta: Não há motivo para contraindicar a gestação espontânea, uma vez que a correção cirúrgica da doença pode restaurar a fertilidade da paciente. A preservação de óvulos para fertilização in vitro (FIV) é uma estratégia válida para a preservação da reserva ovariana antes de cirurgias que possam comprometer o parênquima ovariano, mas a alternativa coloca isso como uma proibição à gestação espontânea, o que está incorreto para este cenário.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Endometriose",
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:31.652Z"
+  }
+]

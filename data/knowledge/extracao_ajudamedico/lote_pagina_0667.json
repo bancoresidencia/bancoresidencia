@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_b9fc87b8-6c63-4d70-be4e-665aceb81394",
+    "originalId": "b9fc87b8-6c63-4d70-be4e-665aceb81394",
+    "statement": "Paciente de 67 anos, submetido à gastrectomia subtotal por adenocarcinoma gástrico, encontra-se no terceiro dia de pós-operatório. Evolui com dispneia súbita, dor torácica pleurítica, taquicardia (FC 115 bpm), saturação de O₂ em 88% em ar ambiente. Exame físico revela murmúrio vesicular diminuído à direita e leve edema em membro inferior direito. Qual a hipótese diagnóstica MAIS provável e a conduta inicial MAIS adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonia nosocomial; iniciar antibiótico empírico e fisioterapia respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tromboembolismo pulmonar; solicitar angiotomografia de tórax e iniciar anticoagulação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Atelectasia pós-operatória; iniciar ventilação não invasiva e hidratação venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infarto agudo do miocárdio; solicitar ECG e enzimas cardíacas, iniciar nitrato e AAS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um paciente idoso no terceiro dia de pós-operatório de uma cirurgia de grande porte (gastrectomia) devido a uma neoplasia maligna (adenocarcinoma). Este cenário compõe a clássica Tríade de Virchow: estase venosa (imobilidade pós-operatória), lesão endotelial (cirurgia) e hipercoagulabilidade (câncer), o que eleva drasticamente o risco de fenômenos tromboembólicos. A instalação súbita de dispneia, dor pleurítica, taquicardia e hipoxemia, associada ao edema unilateral de membro inferior (sinal de trombose venosa profunda), aponta fortemente para o Tromboembolismo Pulmonar (TEP).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora a pneumonia nosocomial seja uma complicação comum em cirurgias abdominais altas, ela geralmente se manifesta com febre, tosse produtiva e leucocitose, tendo um início mais gradual. O quadro de dispneia súbita e o edema de membro inferior sugerem uma etiologia vascular, e não infecciosa.\n\nAlternativa b) Correta. O paciente apresenta alta probabilidade clínica para TEP (escore de Wells elevado devido a cirurgia recente, malignidade, taquicardia e sinais clínicos de TVP). Em pacientes hemodinamicamente estáveis, a Angiotomografia de Tórax é o exame de escolha para confirmação diagnóstica. Uma vez confirmado o diagnóstico, a anticoagulação deve ser iniciada para prevenir novos eventos embólicos e progressão do trombo.\n\nAlternativa c) Incorreta. A atelectasia é a complicação respiratória mais frequente no pós-operatório imediato, causada pela redução da expansibilidade pulmonar. No entanto, ela raramente provoca dor pleurítica súbita ou edema unilateral de membros inferiores. O tratamento baseia-se em fisioterapia respiratória e mobilização precoce, e não apenas em hidratação e ventilação não invasiva.\n\nAlternativa d) Incorreta. O Infarto Agudo do Miocárdio (IAM) deve sempre ser considerado no pós-operatório de idosos, mas a dor do IAM costuma ser opressiva e retroesternal, não pleurítica. Além disso, o IAM não explica o edema em membro inferior direito. Embora o ECG seja útil no diagnóstico diferencial do TEP (mostrando taquicardia sinusal ou sinais de sobrecarga de VD), a suspeita principal neste cenário é embólica.\n\nCONCLUSÃO\n\nDiante de um pós-operatório de cirurgia oncológica com dispneia súbita e sinais de TVP, o diagnóstico de Tromboembolismo Pulmonar é a prioridade absoluta. A conduta correta envolve a confirmação por imagem (Angio-TC) e a instituição de terapia anticoagulante. Portanto, a alternativa (b) é a correta.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  },
+  {
+    "id": "AJUDA_ba0ccee8-4c9c-49e2-a89e-772f3b75321a",
+    "originalId": "ba0ccee8-4c9c-49e2-a89e-772f3b75321a",
+    "statement": "Homem, 80 anos, internado na enfermaria de Clínica Médica devido dispneia a pequenos esforços, ortopneia e edema de membros inferiores. Exames laboratoriais revelam hemoglobina de 13g/dL, creatinina 1.2 mg/dL. com presença de proteinúria. Eletrocardiograma evidencia ritmo de fibrilação atrial, sem outras alterações. Ecocardiograma mostra função ventricular esquerda normal, com espessamento de septo e parede posterior (14 mm). Ressonância magnética cardíaca mostra realce tardio subendocárdico difuso. Para prosseguir a investigação diagnóstica, qual seria a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitação de cintilografia miocárdica com pirofosfato",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitação de imunofixação sérica e urinária e dosagem de cadeias leves livres",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realização de ultrassom de rins e vias urinárias, seguida de biópsia renal diagnóstica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realização de mielograma com biopsia de medula óssea",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um paciente idoso com insuficiência cardíaca de fração de ejeção preservada (ICFEP), sugerida pelo ecocardiograma com função normal, mas com hipertrofia ventricular (espessamento de septo e parede de 14 mm). O achado de realce tardio subendocárdico difuso na ressonância magnética é um sinal patognomônico de amiloidose cardíaca. Outro dado fundamental é a presença de proteinúria, que sugere o acometimento sistêmico da doença, especialmente nos rins.\n\nDiante da suspeita de amiloidose cardíaca, o primeiro e mais urgente passo é diferenciar entre os dois tipos principais: a amiloidose por cadeias leves (AL) e a amiloidose por transtirretina (ATTR). A amiloidose AL é uma emergência hematológica com necessidade de tratamento quimioterápico imediato, e a presença de proteinúria reforça essa possibilidade.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. A cintilografia miocárdica com pirofosfato de tecnécio (99mTc-PYP) é um exame excelente para diagnosticar a amiloidose por transtirretina (ATTR). No entanto, ela nunca deve ser interpretada isoladamente. Antes de realizar a cintilografia, é obrigatório excluir a presença de uma gamopatia monoclonal (amiloidose AL), pois a cintilografia pode apresentar captação positiva em até 20% a 30% dos casos de amiloidose AL, levando a um diagnóstico errado e ao atraso no tratamento de uma doença agressiva.\n\nb) CORRETA. Esta é a conduta inicial prioritária. A pesquisa de clones de células plasmáticas por meio da imunofixação de proteínas no sangue e na urina, somada à dosagem de cadeias leves livres no soro, apresenta uma sensibilidade superior a 99% para identificar a amiloidose AL. Dado o risco de morte rápida na forma AL e a presença de proteinúria (que indica lesão renal por cadeias leves), descartar ou confirmar essa forma é o passo mais adequado antes de prosseguir para exames de imagem específicos para ATTR.\n\nc) INCORRETA. Embora o paciente tenha proteinúria e a biópsia renal possa dar o diagnóstico de amiloidose ao corar positivamente pelo vermelho de Congo, este é um procedimento invasivo. A triagem laboratorial com exames de sangue e urina (conforme descrito na alternativa B) é o passo inicial preconizado pelos protocolos internacionais de cardiologia e hematologia, por ser menos invasivo e altamente sensível.\n\nd) INCORRETA. O mielograma e a biópsia de medula óssea são realizados para confirmar a presença de uma discrasia de plasmócitos (como o mieloma múltiplo) após a triagem laboratorial ter detectado a presença de proteínas monoclonais ou cadeias leves alteradas. Portanto, não é o primeiro passo na investigação da insuficiência cardíaca do paciente, mas sim uma etapa posterior, se os exames de triagem forem positivos.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Cardiomiopatias",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  },
+  {
+    "id": "AJUDA_ba0d6e62-e632-4bcb-9ec4-64eff4d8f01e",
+    "originalId": "ba0d6e62-e632-4bcb-9ec4-64eff4d8f01e",
+    "statement": "Paciente de 16 anos comparece ao ambulatório para mostrar os resultados dos exames complementares solicitados na consulta anterior. Está preocupada porque todas as colegas da mesma idade já menstruaram e ela não. O fenótipo é feminino, com pelos pubianos e axilares esparsos. Os exames complementares evidenciam ausência do útero à ultrassonografia pélvica, dosagem sérica do hormônio folículo estimulante (FSH) normal, dosagem de testosterona sérica compatível com níveis do sexo masculino e cariótipo 46 XY.\nCom base no quadro clínico e nos dados apresentados, a principal hipótese diagnóstica dessa paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "disgenesia gonadal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "malformação Mulleriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "obstrução do trato genital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "insensibilidade androgênica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda um caso clássico de amenorreia primária em uma paciente com fenótipo feminino, mas genótipo masculino (46, XY). Para resolver essa questão, devemos analisar sistematicamente os achados clínicos e laboratoriais: o cariótipo 46, XY indica que a paciente possui testículos; a ausência de útero confirma que houve ação do Hormônio Anti-Mülleriano (AMH), produzido pelos testículos fetais; os níveis de testosterona masculinos mostram que as gônadas são funcionais; e os pelos esparsos indicam uma falha na ação dos androgênios nos tecidos periféricos.\n\nAnálise das alternativas:\n\na) Incorreta. Na disgenesia gonadal (como na Síndrome de Swyer, que também apresenta cariótipo 46, XY), as gônadas não se desenvolvem adequadamente e são chamadas de gônadas em fita. Como não há produção de Hormônio Anti-Mülleriano, essas pacientes possuem útero e tubas uterinas. Além disso, os níveis de testosterona seriam baixos e o FSH estaria elevado devido à ausência de feedback negativo das gônadas.\n\nb) Incorreta. A malformação Mülleriana mais comum é a Síndrome de Mayer-Rokitansky-Küster-Hauser. Embora também curse com ausência de útero e amenorreia primária, o cariótipo nessas pacientes é 46, XX. Os níveis de testosterona são femininos e os caracteres sexuais secundários (incluindo pelos pubianos) desenvolvem-se normalmente, pois a função ovariana é preservada.\n\nc) Incorreta. Obstruções do trato genital, como hímen imperfurado ou septo vaginal transverso, ocorrem em pacientes com cariótipo 46, XX. Nessas condições, o útero está presente e é funcional; o problema é apenas a saída do fluxo menstrual. O exame físico e a ultrassonografia revelariam a presença do órgão, muitas vezes com acúmulo de sangue (hematocolpos/hematometra).\n\nd) Correta. A Síndrome de Insensibilidade Androgênica (ou Síndrome de Morris) explica perfeitamente o quadro. O indivíduo possui cariótipo 46, XY e testículos que produzem testosterona e AMH. O AMH promove a regressão dos ductos de Müller, por isso não há útero. A testosterona é produzida em níveis masculinos, mas, como os receptores de androgênio não funcionam, o corpo não se viriliza, resultando em genitália externa feminina e ausência ou escassez de pelos axilares e pubianos (que dependem da ação androgênica). A testosterona acaba sendo convertida perifericamente em estrogênio, o que promove o desenvolvimento das mamas.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": 56.620600207165545,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  },
+  {
+    "id": "AJUDA_ba0e5dcb-854a-41d0-afdc-2a365c03c99f",
+    "originalId": "ba0e5dcb-854a-41d0-afdc-2a365c03c99f",
+    "statement": "Durante o acompanhamento de crianças na Atenção Primária à Saúde (APS), o profissional deve integrar ações de promoção, prevenção e cuidado no contexto da puericultura e no manejo de agravos comuns, como diarreia e doenças respiratórias agudas (IRA). Sobre essas ações, analise as afirmativas abaixo: \n\nI. A puericultura é o momento ideal para monitorar o crescimento e o desenvolvimento infantil, revisar o calendário vacinal, avaliar o estado nutricional e orientar a família, fortalecendo o vínculo e a promoção da saúde. \nII. Em casos de diarreia aguda sem sinais de desidratação, a conduta prioritária é manter a alimentação habitual, garantir hidratação oral com Soro de Reidratação Oral (SRO) e orientar os sinais de alarme para retorno. \nIII. Em doenças respiratórias agudas leves, como resfriados comuns, recomenda-se realizar painel viral para se decidir na introdução ou não de oseltamivir. \nIV. A pneumonia é uma das principais causas de mortalidade infantil e deve ser suspeitada na presença de taquipneia e esforço respiratório, sendo o diagnóstico baseado em critérios clínicos na APS. \nV. O acompanhamento do desenvolvimento infantil deve incluir observação do comportamento, da linguagem e da interação social, permitindo identificar precocemente atrasos ou sinais de risco para transtornos do neurodesenvolvimento. \n\nEstá correto o que se afirma em",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II, IV e V, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "I, II e IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II, III e IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, III e V, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "I, II, III, IV e V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Afirmativa I: Correta. A puericultura é a base da atenção integral à saúde da criança na Atenção Primária. Ela envolve o acompanhamento sistemático do crescimento (peso, estatura, perímetro cefálico) e do desenvolvimento neuropsicomotor, além da vigilância vacinal, orientações nutricionais e o fortalecimento da rede de apoio familiar para a promoção da saúde.\n\nAfirmativa II: Correta. Esta conduta corresponde ao Plano A do manejo da doença diarreica aguda, preconizado pelo Ministério da Saúde e pela Organização Mundial da Saúde para crianças sem sinais de desidratação. O foco é a prevenção da desidratação mediante o aumento da oferta de líquidos, manutenção da dieta habitual e uso do Soro de Reidratação Oral (SRO) após as perdas, além da educação da família sobre sinais de alerta.\n\nAfirmativa III: Incorreta. O resfriado comum é uma infecção viral autolimitada e o seu manejo na APS é baseado no alívio de sintomas, como lavagem nasal e controle da febre. Não há indicação de realizar painel viral rotineiramente para casos leves, muito menos para decidir o uso de oseltamivir. O oseltamivir é indicado especificamente para o vírus Influenza em pacientes com Síndrome Gripal que apresentem fatores de risco para complicações ou em casos de Síndrome Respiratória Aguda Grave (SRAG).\n\nAfirmativa IV: Correta. A pneumonia permanece como uma importante causa de mortalidade infantil. No contexto da APS, o diagnóstico é clínico e fundamentado na presença de tosse ou dificuldade respiratória associada à taquipneia (aumento da frequência respiratória conforme a idade). A identificação de esforço respiratório (tiragem subcostal) indica gravidade e necessidade de encaminhamento ou tratamento imediato.\n\nAfirmativa V: Correta. O acompanhamento do desenvolvimento na puericultura deve ser multidimensional. Avaliar a linguagem, a interação social e o comportamento permite ao profissional identificar precocemente desvios da normalidade, como o Transtorno do Espectro Autista ou atrasos globais do desenvolvimento, possibilitando o encaminhamento para estimulação precoce e terapias especializadas.\n\nAnálise das alternativas: Apenas as afirmativas I, II, IV e V estão corretas. A afirmativa III está incorreta por sugerir exames desnecessários e conduta terapêutica inadequada para resfriados comuns. Portanto, a alternativa correta é a letra (a).",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Diarreia",
+      "Pneumonia na Infância",
+      "Atenção Primária à Saúde",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  },
+  {
+    "id": "AJUDA_ba0e9044-959b-44b8-8f8a-1c0e622656f2",
+    "originalId": "ba0e9044-959b-44b8-8f8a-1c0e622656f2",
+    "statement": "Um paciente de 60 anos, que foi submetido a uma ressecção gástrica subtotal, apresenta dor abdominal intensa, pré-sincope e mal-estar no segundo dia pós-operatório. Ao exame físico, o abdome está tenso, e não há peristalse. PA: 90 x 50mmHg, P: 120 bpm. T: 36 °C, TEC: 4 segundos. A complicação mais provável, dentre as elencadas abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemorragia intra-abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Perfuração do intestino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sepse intra-abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Íleo paralítico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Embolia pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente encontra-se no segundo dia de pós-operatório de uma cirurgia de grande porte (ressecção gástrica subtotal) e apresenta um quadro clínico compatível com choque hipovolêmico. Os sinais fundamentais para esse diagnóstico são a hipotensão (90 x 50 mmHg), a taquicardia (120 bpm) e o tempo de enchimento capilar (TEC) prolongado de 4 segundos, indicando má perfusão tecidual. A queixa de pré-síncope e mal-estar corrobora a instabilidade hemodinâmica. O fato de o abdome estar tenso e doloroso sugere um processo agudo intraperitoneal, sendo a hemorragia a causa mais provável para a queda pressórica súbita e a irritação peritoneal neste período.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Hemorragia intra-abdominal (Correta): É a complicação mais provável devido à tríade de instabilidade hemodinâmica (hipotensão e taquicardia), sinais de má perfusão periférica (TEC de 4 segundos) e sinais locais (abdome tenso e dor intensa). Em um pós-operatório recente de gastrectomia, o sangramento pode advir de vasos arteriais não ligados adequadamente ou da linha de sutura/anastomose. A ausência de febre (36 °C) afasta inicialmente um quadro infeccioso agudo e reforça a hipótese de choque hemorrágico.\n\nb) Perfuração do intestino: Embora possa causar dor e abdome tenso por peritonite, a perfuração intestinal costuma evoluir para um quadro de sepse abdominal. No segundo dia pós-operatório, uma perfuração geralmente apresentaria sinais inflamatórios mais evidentes, como febre, e a instabilidade hemodinâmica não seria tão súbita quanto na hemorragia, a menos que o paciente já estivesse em choque séptico avançado, o que é menos provável sem histórico de febre.\n\nc) Sepse intra-abdominal: A sepse é uma causa importante de choque no pós-operatório, mas geralmente se manifesta com febre (ou hipotermia), leucocitose e costuma ocorrer em um intervalo de tempo um pouco maior (3 a 5 dias após a cirurgia em casos de deiscência de anastomose). O quadro descrito é mais compatível com uma perda volêmica aguda (sangue) do que com uma resposta inflamatória sistêmica a uma infecção.\n\nd) Íleo paralítico: É uma condição comum e esperada após cirurgias abdominais, caracterizada pela ausência de peristalse e distensão abdominal. No entanto, o íleo paralítico isolado não justifica dor intensa, hipotensão severa, taquicardia nem TEC prolongado. Ele é um achado secundário ao trauma cirúrgico ou à própria irritação peritoneal causada pelo sangue (hemoperitônio), mas não é a causa da instabilidade do paciente.\n\ne) Embolia pulmonar: A embolia pulmonar (TEP) é uma complicação pós-operatória grave que pode causar taquicardia, hipotensão e síncope. Contudo, o TEP não explica o abdome tenso nem a dor abdominal intensa com ausência de peristalse. O foco dos sintomas de TEP seria primordialmente cardiorrespiratório (dispneia, dor torácica e queda de saturação de oxigênio).",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  },
+  {
+    "id": "AJUDA_ba12de85-a16b-4ea2-98da-cfe83c94e9ff",
+    "originalId": "ba12de85-a16b-4ea2-98da-cfe83c94e9ff",
+    "statement": "O primeiro relato de cura da raiva divulgado na literatura internacional data do ano de 2004, nos EUA, em paciente que não recebeu vacina e no qual foi aplicado um tratamento denominado Protocolo de",
+    "options": [
+      {
+        "id": "A",
+        "text": "Denver.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atlanta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Houston.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Milwaukee.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A raiva humana é uma das doenças infecciosas mais letais conhecidas pela medicina, com taxa de mortalidade de quase 100%. Historicamente, a sobrevivência só era possível através da profilaxia pós-exposição (vacina e soro) antes do surgimento dos sintomas. O caso citado na questão refere-se a Jeanna Giese, uma adolescente que, em 2004, tornou-se a primeira pessoa no mundo a sobreviver à raiva clínica sem ter recebido imunização prévia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O nome Denver é associado na medicina a outros contextos, como o Teste de Screening de Desenvolvimento de Denver (usado na pediatria) ou aos Critérios de Denver para trauma vascular cervical, não tendo relação com o tratamento da raiva.\n\nAlternativa b) Incorreta. Embora Atlanta seja a sede do CDC (Centers for Disease Control and Prevention), órgão que coordena as diretrizes de vigilância da raiva nos Estados Unidos, o protocolo terapêutico desenvolvido para o caso de 2004 não leva o nome desta cidade.\n\nAlternativa c) Incorreta. Não existe na literatura médica internacional um protocolo denominado Houston voltado para a cura da raiva humana.\n\nAlternativa d) Correta. O Protocolo de Milwaukee foi idealizado pelo Dr. Rodney Willoughby Jr. no Children's Hospital of Wisconsin, em Milwaukee. A base do tratamento consistiu na indução de um coma terapêutico profundo (utilizando drogas como cetamina e midazolam) e no uso de antivirais (como a ribavirina e amantadina). A premissa era \"desligar\" o cérebro para protegê-lo dos danos causados pelo vírus, permitindo que o sistema imunológico do próprio paciente tivesse tempo para produzir anticorpos e eliminar a infecção. No Brasil, uma versão modificada deste tratamento é conhecida como Protocolo de Recife. Cabe ressaltar que, apesar do marco histórico, a eficácia do protocolo é alvo de debates, já que a taxa de sucesso em tentativas posteriores ao redor do mundo permanece muito baixa.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  },
+  {
+    "id": "AJUDA_ba16e8f2-1b72-4f4f-8bfa-2c75f6957557",
+    "originalId": "ba16e8f2-1b72-4f4f-8bfa-2c75f6957557",
+    "statement": "A Bioética em Saúde Coletiva lida frequentemente com o conflito entre os direitos individuais e o interesse coletivo. Acerca dos princípios bioéticos aplicados à gestão sanitária, registre V, para as afirmativas verdadeiras, e F, para as falsas:\n\n(__) O princípio da Justiça Distributiva, baseado na equidade, justifica a alocação desigual de recursos para grupos mais vulneráveis (\"tratar desigualmente os desiguais\"), contrapondo-se ao igualitarismo estrito que daria a mesma quantia a todos independentemente da necessidade.\n(__) O Utilitarismo é uma corrente ética frequentemente utilizada em saúde pública para decisões de racionamento, preconizando que a ação correta é aquela que maximiza o bem-estar total (o maior bem para o maior número de pessoas), o que pode, em situações extremas, justificar o sacrifício de interesses de minorias.\n(__) O princípio da Autonomia individual é absoluto em saúde pública, impedindo qualquer medida compulsória (como vacinação ou isolamento em epidemias) que não tenha o consentimento livre e esclarecido do cidadão, mesmo que haja risco iminente de contágio coletivo.\n(__) A Proteção é um princípio essencial da bioética sanitarista, legitimando a intervenção do Estado para proteger indivíduos e populações que se encontram em situação de vulnerabilidade e não possuem meios para garantir sua própria saúde.\n\nAssinale a alternativa que apresenta a sequência correta, de cima para baixo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "EXPLICAÇÃO DA QUESTÃO\n\nPrimeira afirmativa (Verdadeira): O princípio da Justiça Distributiva, quando aplicado à saúde pública, está intimamente ligado ao conceito de equidade. A equidade pressupõe que, para alcançar a justiça, devemos tratar de forma diferente aqueles que possuem necessidades diferentes. Em um sistema de saúde como o SUS, isso significa direcionar proporcionalmente mais recursos e atenção às populações mais vulneráveis ou com maiores riscos epidemiológicos, o que se opõe ao igualitarismo matemático (dar exatamente o mesmo para todos), que acabaria por manter as desigualdades existentes.\n\nSegunda afirmativa (Verdadeira): O Utilitarismo é uma das correntes éticas mais influentes na gestão em saúde. Ele se baseia na premissa de que a melhor decisão é aquela que produz o maior benefício para o maior número de pessoas. Na prática da saúde coletiva, essa lógica é aplicada em situações de recursos limitados, como a definição de prioridades em campanhas de vacinação, protocolos de triagem em catástrofes ou a escolha de quais medicamentos serão incorporados ao sistema público, priorizando o impacto coletivo em detrimento de demandas individuais isoladas.\n\nTerceira afirmativa (Falsa): Nenhum princípio bioético é absoluto, incluindo a Autonomia. Na Bioética Sanitarista, o princípio da autonomia individual é frequentemente relativizado em favor do bem comum ou da proteção da coletividade. Casos de doenças infectocontagiosas de grande impacto, como a COVID-19 ou o sarampo, autorizam o Estado a implementar medidas compulsórias (vacinação, quarentena, isolamento). O direito de um indivíduo de recusar uma intervenção não pode sobrepor-se ao direito da sociedade de ser protegida contra um risco de morte ou contágio em massa.\n\nQuarta afirmativa (Verdadeira): A Bioética de Proteção é uma vertente essencial, especialmente em países com grandes desigualdades sociais. Ela estabelece que o Estado e as instituições de saúde têm o dever ético de intervir para garantir a saúde de sujeitos \"vulnerados\" (aqueles que, por condições sociais ou biológicas, não conseguem prover sua própria proteção). Esse princípio fundamenta políticas públicas de assistência social, segurança alimentar e programas de saúde específicos para grupos marginalizados.\n\nConclusão: A sequência correta das afirmativas é Verdadeira, Verdadeira, Falsa e Verdadeira.\n\nGabarito: Alternativa (d).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  },
+  {
+    "id": "AJUDA_ba1f129b-fbfa-44f8-aecc-0aaaf88f08a4",
+    "originalId": "ba1f129b-fbfa-44f8-aecc-0aaaf88f08a4",
+    "statement": "Paciente, 60 anos de idade, após 5 anos de menopausa, procura por atendimento médico referindo sangramento vaginal. A paciente é hipertensa crônica e obesa (IMC: 36 kg/m²). A ultrassonografia transvaginal revela espessamento endometrial de 10 mm. A biópsia endometrial confirma adenocarcinoma de endométrio.\nSobre o câncer de endométrio, considere as afirmativas a seguir.\nI. Levando em consideração os fatores de riscos para câncer de endométrio, a obesidade é um fator de risco relevante.\nII. O câncer endometrial do tipo I está associado a uma melhor resposta ao tratamento hormonal, além disso, apresenta melhor prognóstico.\nIII. O câncer endometrial do tipo II está associado a maior risco de desenvolver metástases linfáticas e peritoneais e, geralmente, apresenta pior prognóstico.\nIV. Dor pélvica intensa é um sintoma comum no câncer de endométrio em fase inicial.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender esta questão, devemos analisar as duas principais linhagens patogênicas do câncer de endométrio (Classificação de Bokhman) e a apresentação clínica da doença.\n\nAnálise das afirmativas:\n\nAfirmativa I (Correta): A obesidade é um dos principais fatores de risco para o câncer de endométrio tipo I (o mais comum). No tecido adiposo periférico, ocorre a conversão de androgênios em estrogênios (estrona) através da enzima aromatase. Esse hiperestrogenismo crônico, sem a contraposição da progesterona, causa a proliferação exacerbada do endométrio, podendo levar à hiperplasia e ao adenocarcinoma. A paciente do caso apresenta IMC de 36 kg/m2 (Obesidade Grau II), o que corrobora o quadro clínico.\n\nAfirmativa II (Correta): O câncer de endométrio Tipo I (Endometrióide) é dependente de estrogênio, geralmente precedido por hiperplasia, ocorre em mulheres mais jovens ou perimenopausadas e tende a ser bem diferenciado (G1 ou G2). Por expressar receptores hormonais (estrogênio e progesterona), apresenta boa resposta à terapia hormonal em casos selecionados e possui um prognóstico significativamente melhor que o Tipo II.\n\nAfirmativa III (Correta): O câncer de endométrio Tipo II compreende tipos histológicos não-endometrióides, como o carcinoma seroso e o de células claras. Eles surgem independentemente do estímulo estrogênico e geralmente em endométrios atróficos. São tumores agressivos, com alto grau de indiferenciação, que tendem a invadir o miométrio profundamente e apresentam alta propensão a metástases linfonodais e disseminação peritoneal precocemente, conferindo um pior prognóstico.\n\nAfirmativa IV (Incorreta): O principal sintoma do câncer de endométrio, presente em cerca de 90% dos casos, é o sangramento uterino anormal ou sangramento na pós-menopausa. A dor pélvica intensa não é um sintoma comum na fase inicial; quando ocorre, geralmente está associada a quadros avançados com compressão de estruturas adjacentes, metástases ou obstrução do colo uterino com formação de hematometra/piometra.\n\nAnálise das alternativas:\n\na) Incorreta. A afirmativa III também está correta.\nb) Incorreta. A afirmativa IV está incorreta.\nc) Incorreta. As afirmativas I e II também estão corretas e a IV está incorreta.\nd) Correta. Apenas as afirmativas I, II e III refletem o conhecimento atual sobre a patologia.\ne) Incorreta. A afirmativa I está correta e a IV está incorreta.\n\nGabarito: Letra (d).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Câncer do Corpo do Útero"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  },
+  {
+    "id": "AJUDA_ba241596-b99f-4185-ad10-cfb19560b78d",
+    "originalId": "ba241596-b99f-4185-ad10-cfb19560b78d",
+    "statement": "A estenose da artéria carótida é uma causa importante de Acidente Vascular Cerebral (AVC) isquêmico. A endarterectomia de carótida (EAC) é um procedimento preventivo estabelecido, mas suas indicações dependem do grau de estenose e da sintomatologia. Considerando as diretrizes para intervenção cirúrgica na doença carotídea extracraniana, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pacientes assintomáticos com estenose carotídea menor que 60% devem ser submetidos à angioplastia com stent profilática, devido ao alto risco de progressão súbita para oclusão total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A oclusão total (100%) da artéria carótida interna é a principal indicação para endarterectomia de urgência, visando recanalizar o vaso e restaurar o fluxo cerebral agudamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A endarterectomia de carótida é recomendada para pacientes sintomáticos (AVC prévio ou AIT) com estenose entre 70% e 99%, desde que o risco perioperatório de AVC ou morte seja baixo (<6%), superando o tratamento clínico isolado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A presença de estenose carotídea sintomática moderada (30-49%) exige intervenção cirúrgica imediata, pois o risco de novo evento embólico é superior aos riscos da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. Pacientes assintomáticos com estenose carotídea menor que 60% devem ser mantidos em tratamento clínico otimizado (antiagregantes plaquetários, estatinas e controle de fatores de risco). A intervenção (seja endarterectomia ou angioplastia) em pacientes assintomáticos só é considerada quando a estenose é superior a 60-70%, desde que a expectativa de vida seja maior que cinco anos e o risco de complicações da equipe cirúrgica seja muito baixo (menor que 3%). Não há indicação de angioplastia profilática para estenoses leves/moderadas assintomáticas.\n\nAlternativa b) Incorreta. A oclusão total (100%) da artéria carótida interna não é indicação para endarterectomia. Uma vez que o vaso está totalmente ocluído, o risco de realizar uma recanalização cirúrgica é extremamente alto (risco de embolia distal e transformação hemorrágica) e o benefício é nulo ou negativo comparado ao tratamento clínico. A cirurgia visa prevenir a oclusão ou embolias em vasos ainda pérvios.\n\nAlternativa c) Correta. Esta alternativa resume as principais evidências dos grandes estudos (como o NASCET). A endarterectomia de carótida é o padrão-ouro para pacientes sintomáticos (que apresentaram Acidente Vascular Cerebral ou Ataque Isquêmico Transitório nos últimos 6 meses) com estenose grave, entre 70% e 99%. O benefício da cirurgia é máximo neste grupo, superando o tratamento clínico, desde que a morbimortalidade perioperatória (risco de novo AVC ou morte em 30 dias) seja menor que 6%.\n\nAlternativa d) Incorreta. Pacientes sintomáticos com estenose considerada leve ou moderada inferior (menor que 50%) não possuem indicação cirúrgica. Nesses casos, o risco inerente ao procedimento cirúrgico é maior do que o risco de um novo evento isquêmico sob tratamento clínico. A intervenção cirúrgica em pacientes sintomáticos começa a ser discutida a partir de 50% de estenose, sendo fortemente recomendada acima de 70%.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Vascular",
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  },
+  {
+    "id": "AJUDA_ba24b5a3-534d-4568-ad1f-41f80de79283",
+    "originalId": "ba24b5a3-534d-4568-ad1f-41f80de79283",
+    "statement": "Gestante de 10 semanas realiza VDRL de rotina com resultado 1:32. Ela nega sífilis prévia. A conduta CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar teste treponêmico (FTA-ABS) e aguardar resultado, não tratar, visto que a paciente encontra-se assintomática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar Penicilina G Benzatina (2,4 milhões UI/semana por 3 semanas) imediatamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Repetir o VDRL em 30 dias para confirmar a ascensão dos títulos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratar apenas a parceira, pois o VDRL pode ser falso-positivo na gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o diagnóstico e a conduta imediata perante a sífilis na gestação. O cenário apresenta uma gestante de 10 semanas com VDRL de 1:32 e sem histórico de tratamento anterior.\n\nAnálise das alternativas:\n\nAlternativa A: INCORRETA. Na gestação, a sífilis é tratada como uma urgência terapêutica devido ao risco de transmissão vertical. O Ministério da Saúde recomenda que, diante de qualquer teste reagente (seja treponêmico ou não treponêmico), o tratamento seja iniciado imediatamente, sem aguardar o resultado do segundo teste confirmatório. O objetivo é garantir que a gestante receba o tratamento o mais rápido possível para proteger o feto.\n\nAlternativa B: CORRETA. Esta é a conduta preconizada. Diante de um VDRL reagente em gestante sem registro de tratamento prévio, deve-se iniciar a penicilina G benzatina de imediato. Como a paciente desconhece o tempo de infecção e nega histórico prévio, o caso é classificado como sífilis de duração ignorada (ou latente tardia). O esquema terapêutico indicado para essa fase é de 3 doses de 2,4 milhões de UI de penicilina G benzatina, por via intramuscular, com intervalo de uma semana entre cada dose.\n\nAlternativa C: INCORRETA. A conduta de repetir o exame para observar a evolução dos títulos retardaria o tratamento de uma infecção já evidenciada pelo título alto (1:32). Na gravidez, a prioridade absoluta é a intervenção precoce para evitar sequelas fetais e a sífilis congênita.\n\nAlternativa D: INCORRETA. Embora existam situações de falsos-positivos no VDRL, elas geralmente ocorrem em títulos baixos (como 1:2 ou 1:4). Um título de 1:32 é fortemente indicativo de infecção ativa. O tratamento deve obrigatoriamente incluir a gestante, pois a penicilina é a única medicação capaz de atravessar a barreira placentária e tratar o feto. O parceiro também deve ser avaliado e tratado para evitar a reinfecção da gestante, mas nunca deve ser o único a receber tratamento.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:47.861Z"
+  }
+]

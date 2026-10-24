@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_d5b5bf38-a1f5-4993-8cbc-8cd8c943a4e2",
+    "originalId": "d5b5bf38-a1f5-4993-8cbc-8cd8c943a4e2",
+    "statement": "Paciente com diagnóstico de lúpus eritematoso sistêmico apresenta febre, anemia e lesões renais. Qual exame é fundamental para avaliar o comprometimento renal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Biópsia renal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Eletrocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tomografia computadorizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Espirometria.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o manejo de um paciente com Lúpus Eritematoso Sistêmico (LES) que apresenta sinais de atividade da doença e manifestações renais (nefrite lúpica).\n\nA alternativa (a) está correta. A biópsia renal é considerada o padrão-ouro e o exame fundamental para a avaliação do comprometimento renal no lúpus. Ela não apenas confirma o diagnóstico de nefrite lúpica, mas é essencial para classificar a lesão de acordo com os critérios da ISN/RPS (Classes I a VI). Essa classificação é determinante para a escolha da estratégia terapêutica (como o uso de imunossupressores específicos) e para estabelecer o prognóstico, diferenciando lesões inflamatórias ativas de lesões crônicas cicatriciais.\n\nA alternativa (b) está incorreta. O eletrocardiograma (ECG) avalia a atividade elétrica do coração. Embora o lúpus possa causar manifestações cardíacas, como pericardite ou miocardite, este exame não tem utilidade na avaliação da função ou da morfologia renal.\n\nA alternativa (c) está incorreta. A tomografia computadorizada pode avaliar a anatomia macroscópica dos rins, identificar cálculos ou obstruções, mas não possui resolução ou sensibilidade para diagnosticar as alterações histopatológicas das glomerulonefrites lúpicas, que ocorrem em nível microscópico.\n\nA alternativa (d) está incorreta. A espirometria é um teste de função pulmonar que mede volumes e fluxos de ar. Ela é utilizada para avaliar o envolvimento pulmonar no lúpus (como a doença pulmonar restritiva), não tendo relação com o diagnóstico ou avaliação da nefrite lúpica.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Doenças Glomerulares",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:33.550Z"
+  },
+  {
+    "id": "AJUDA_d5bf9a2b-7ac3-40d8-90b2-756bf85c9fca",
+    "originalId": "d5bf9a2b-7ac3-40d8-90b2-756bf85c9fca",
+    "statement": "O câncer de mama é uma doença heterogênea, e a classificação molecular baseada na imuno-histoquímica é fundamental para o prognóstico e a definição terapêutica. Os subtipos intrínsecos (Luminal A, Luminal B, HER2 superexpresso e Triplo-negativo) apresentam comportamentos biológicos distintos. A alternativa que descreve corretamente o perfil imuno-histoquímico e a abordagem terapêutica sistêmica preferencial para o subtipo Luminal A é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O subtipo Luminal A é definido pela ausência de expressão de receptores hormonais (RE e RP negativos) e HER2 negativo, sendo a quimioterapia adjuvante a única opção sistêmica eficaz, uma vez que não há alvo para terapias biológicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O subtipo Luminal A caracteriza-se pela presença de Receptores de Estrogênio (RE) e/ou Progesterona (RP) positivos, superexpressão de HER2 negativa e baixo índice de proliferação celular (Ki67), sendo a hormonioterapia (endocrinoterapia) a base do tratamento sistêmico adjuvante, muitas vezes dispensando a quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O subtipo Luminal A apresenta Receptores de Estrogênio positivos, mas Receptores de Progesterona negativos e Ki67 elevado, exigindo tratamento agressivo com quimioterapia citotóxica combinada e imunoterapia devido ao alto risco de recorrência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O subtipo Luminal A caracteriza-se pela positividade simultânea para receptores hormonais e HER2 (triplo-positivo), beneficiando-se da terapia anti-HER2 (Trastuzumabe) associada à hormonioterapia, sem necessidade de quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O câncer de mama é classificado em subtipos moleculares que orientam o prognóstico e a terapia. O subtipo Luminal A representa o grupo de melhor prognóstico, com alta sensibilidade à manipulação hormonal e menor taxa de divisão celular.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A descrição refere-se ao subtipo Triplo-negativo, que não expressa receptores de estrogênio (RE), receptores de progesterona (RP) nem a proteína HER2. Nesses casos, a quimioterapia é a principal ferramenta sistêmica, pois não há alvos para hormonioterapia ou terapias anti-HER2.\n\nAlternativa b) Correta. O perfil imuno-histoquímico do Luminal A é marcado pela positividade dos receptores hormonais (RE e/ou RP), negatividade para o HER2 e, crucialmente, um baixo índice de proliferação celular, medido pelo Ki-67 (geralmente inferior a 14% ou 20%, dependendo do consenso utilizado). Por ser um tumor de crescimento lento e muito dependente de estímulo hormonal, a hormonioterapia (como tamoxifeno ou inibidores da aromatase) é a base do tratamento, e a quimioterapia é frequentemente dispensada devido ao baixo benefício adicional nesse cenário.\n\nAlternativa c) Incorreta. Um tumor com Ki-67 elevado e perda de receptores de progesterona é mais característico do subtipo Luminal B. O Luminal B tem comportamento biológico mais agressivo que o Luminal A e, na maioria das vezes, requer a associação de quimioterapia à hormonioterapia. A imunoterapia é reservada principalmente para casos específicos de tumores triplo-negativos com expressão de PD-L1.\n\nAlternativa d) Incorreta. A positividade simultânea para receptores hormonais e HER2 define o subtipo Luminal B HER2-positivo (também chamado de triplo-positivo). O tratamento para esse grupo deve obrigatoriamente incluir terapia anti-HER2 (como o trastuzumabe) associada à quimioterapia e, posteriormente, hormonioterapia. O subtipo Luminal A é, por definição, HER2-negativo.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:33.550Z"
+  },
+  {
+    "id": "AJUDA_d5c61372-fca5-4e63-b988-5380b9b15bb4",
+    "originalId": "d5c61372-fca5-4e63-b988-5380b9b15bb4",
+    "statement": "Paciente masculino, de 42 anos, foi trazido à Emergência após envolver-se em uma colisão automobilística. À admissão, estava consciente, agitado e com respiração rápida. Apresentava dor abdominal intensa e sinais de hipoperfusão, com pressão arterial de 80/40 mmHg e frequência cardíaca de 130 bpm. Referiu ter se alimentado pouco antes do acidente. Diante do quadro de instabilidade e necessidade iminente de controle de via aérea, a equipe optou por realizar intubação com técnica de sequência rápida. Sobre a abordagem anestésica nesse contexto, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ventilação com máscara facial deve ser realizada sistematicamente após a indução e antes da intubação, mesmo durante a sequência rápida, para garantir oxigenação adequada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bloqueador neuromuscular deve ser administrado após a perda de consciência clínica, sem necessidade de monitor de profundidade anestésica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pré-oxigenação não é imprescindível na sequência rápida, uma vez que o paciente já está hiperventilando espontaneamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Succinilcolina está contraindicada na sequência rápida devido à possibilidade de fasciculações e aumento da pressão intracraniana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa (a) Incorreta: Na sequência rápida de intubação (SRI), a ventilação com máscara facial após a indução e antes da passagem do tubo não deve ser realizada de forma sistemática. O objetivo principal da SRI é proteger a via aérea rapidamente para evitar a aspiração do conteúdo gástrico em pacientes com estômago cheio ou tempo de jejum desconhecido. A ventilação sob pressão positiva com máscara pode causar insuflação gástrica, aumentando o risco de regurgitação. Ela só é indicada em casos de hipoxemia grave em que a intubação não foi obtida de imediato.\n\nAlternativa (b) Correta: Na técnica de sequência rápida, administra-se o agente indutor e, imediatamente após a perda da consciência clínica (avaliada geralmente pela perda do reflexo palpebral ou ausência de resposta ao chamado), administra-se o bloqueador neuromuscular de ação rápida. Em cenários de emergência e trauma, a monitorização da profundidade anestésica (como o índice bispectral - BIS) não é necessária nem prática, sendo a avaliação clínica soberana para prosseguir com o bloqueio.\n\nAlternativa (c) Incorreta: A pré-oxigenação é considerada uma das etapas mais críticas da sequência rápida. Ela visa substituir o nitrogênio da capacidade residual funcional por oxigênio, permitindo um período de apneia segura mais prolongado durante as tentativas de laringoscopia. Mesmo que o paciente apresente taquipneia (respiração rápida), isso não garante a denitrogenização alveolar necessária, tornando a oferta de oxigênio a 100% indispensável.\n\nAlternativa (d) Incorreta: A succinilcolina continua sendo um fármaco padrão-ouro para a sequência rápida devido ao seu início de ação extremamente rápido e curta duração. Embora possa causar fasciculações e um aumento transitório da pressão intracraniana, esses efeitos raramente têm relevância clínica que contraindique seu uso no trauma agudo. As contraindicações reais da succinilcolina são história de hipertermia maligna, hipercalemia, ou lesões por esmagamento e queimaduras extensas após as primeiras 24 a 48 horas do evento.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Perioperatório",
+      "Trauma",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:33.550Z"
+  },
+  {
+    "id": "AJUDA_d5cca4ec-6580-45ce-9d8d-c7abcf94f56f",
+    "originalId": "d5cca4ec-6580-45ce-9d8d-c7abcf94f56f",
+    "statement": "Mulher de 47 anos, assintomática, procura a Unidade Básica de Saúde (UBS) trazendo consigo uma relação de exames laboratoriais e de imagem que pretende realizar por iniciativa própria, após pesquisa de conteúdo de saúde na internet. Refere desejar “detectar precocemente qualquer doença”, embora negue comorbidades, fatores de risco significativos ou história familiar relevante. Durante a consulta, o médico orienta a paciente sobre os potenciais danos da investigação desnecessária e propõe conduta alinhada às recomendações de rastreamento baseadas em evidências. Assinale a alternativa correta, com base no princípio da prevenção quaternária.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar todos os exames requisitados pela paciente com o objetivo de ampliar a detecção de doenças subclínicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Esclarecer sobre os riscos de sobrediagnóstico e sobretratamento, restringindo a solicitação aos exames de rastreamento preconizados para a faixa etária e perfil epidemiológico da paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever exames de imagem de corpo inteiro como abordagem preventiva, visando maximizar a detecção precoce de patologias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adiar qualquer orientação preventiva até que a paciente apresente sinais ou sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar a paciente a serviços de média complexidade para que a investigação diagnóstica de rotina seja conduzida por especialistas focalizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Tema central: prevenção quaternária, ou seja, a ação que identifica pacientes em risco de medicalização excessiva e os protege de intervenções médicas invasivas ou desnecessárias. Seu lema é \"primeiro, não causar dano\" (primum non nocere). Ela atua sobre o excesso de intervenção, o sobrediagnóstico, o sobretratamento e a cascata de exames, e se aplica inclusive a pessoas assintomáticas que pedem exames sem indicação.\n\nNo caso, a paciente tem 47 anos, é assintomática, sem comorbidades, sem fatores de risco e sem história familiar relevante. Ela deve receber apenas o rastreamento recomendado para sua idade e perfil de risco. Para essa faixa etária, os exemplos são mamografia (conforme a diretriz adotada, com decisão compartilhada), citopatológico de colo uterino, rastreamento de dislipidemia, diabetes e hipertensão conforme critérios, e rastreamento de câncer colorretal a partir dos 45 a 50 anos, conforme a diretriz. Exames sem benefício comprovado geram falsos-positivos, achados incidentais, biópsias e tratamentos desnecessários, ansiedade e custos.\n\nAnálise das alternativas:\n\na) Incorreta. Pedir todos os exames solicitados para detectar doença subclínica é exatamente o que a prevenção quaternária combate. Aumenta falsos-positivos, sobrediagnóstico e cascata diagnóstica, sem benefício comprovado em mortalidade ou qualidade de vida.\n\nb) Correta. Reúne os dois pilares da prevenção quaternária: informar a paciente sobre os danos potenciais (sobrediagnóstico e sobretratamento), respeitando sua autonomia por meio de decisão compartilhada, e limitar a solicitação aos rastreamentos baseados em evidências para idade, sexo e risco.\n\nc) Incorreta. Exames de imagem de corpo inteiro (check-up por imagem) em assintomáticos não têm benefício demonstrado. Geram muitos achados incidentais (incidentalomas), exposição à radiação quando se usa tomografia, novos exames e procedimentos invasivos e custos, além de ansiedade.\n\nd) Incorreta. Prevenção quaternária não significa omitir a prevenção. O rastreamento adequado e as orientações de promoção da saúde (atividade física, alimentação, tabagismo, vacinação) devem ser feitos mesmo em assintomáticos. Esperar sintomas seria negligenciar a prevenção primária e a secundária indicadas.\n\ne) Incorreta. Encaminhar sem indicação ao especialista focal fragmenta o cuidado, contraria o papel coordenador da atenção primária e tende a ampliar investigações e intervenções desnecessárias. Não há indicação de investigação por especialista numa paciente assintomática e de baixo risco.\n\nConclusão: a conduta alinhada à prevenção quaternária é a letra b.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Testes Diagnósticos",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:33.550Z"
+  },
+  {
+    "id": "AJUDA_d5cdba06-34a1-4fa0-91ef-e119d0b82071",
+    "originalId": "d5cdba06-34a1-4fa0-91ef-e119d0b82071",
+    "statement": "Mulher, 30 anos, refere que apresentou 3 episódios de candidíase no último ano causadas pela Candida albicans. É obesa e todos os episódios foram desencadeados após ter ido para a praia, referiu prurido intenso vulvo-vaginal e disúria com saída de corrimento tipo coalhada. O último episódio ocorreu há 5 dias. O diagnóstico mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "episódios isolados de candidíase simples.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "vaginose citolítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "candidíase complicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "candidíase de repetição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "infeção urinária de repetição.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para analisar esta questão, devemos recordar os critérios diagnósticos e as classificações da candidíase vulvovaginal. A paciente apresenta o quadro clínico clássico de candidíase: prurido intenso, disúria externa e corrimento esbranquiçado em grumos (tipo coalhada), com gatilhos claros (umidade e calor associados à ida à praia).\n\nAnálise das alternativas:\n\na) Correta. A candidíase é classificada como simples (ou não complicada) quando os episódios são esporádicos (menos de 4 vezes por ano), causados pela *Candida albicans*, em mulheres saudáveis e não gestantes, com sintomas de intensidade leve a moderada. Como a paciente refere 3 episódios no último ano, ela ainda não atinge o critério para candidíase de repetição.\n\nb) Incorreta. A vaginose citolítica é um diagnóstico diferencial que apresenta sintomas semelhantes (prurido e corrimento branco), mas é causada pelo crescimento excessivo de lactobacilos, o que leva à acidez vaginal extrema e citólise epitelial. O enunciado confirma que os episódios foram causados por *Candida albicans*, descartando esta opção.\n\nc) Incorreta. A candidíase é considerada complicada quando apresenta pelo menos um dos seguintes critérios: sintomas graves (eritema extenso, edema, fissuras), ocorrência em pacientes com comorbidades descontroladas (como *diabetes mellitus* ou imunossupressão), gravidez, infecção por espécies não albicans ou quando é recorrente (4 ou mais episódios por ano). Embora a paciente seja obesa, os episódios são descritos como isolados e desencadeados por fatores externos, não preenchendo critérios de gravidade ou recorrência para ser classificada como complicada.\n\nd) Incorreta. O critério clínico para o diagnóstico de candidíase de repetição (ou recorrente) é a presença de 4 ou mais episódios sintomáticos comprovados no período de 12 meses. A paciente apresentou 3 episódios, permanecendo na classificação de episódios isolados.\n\ne) Incorreta. A queixa principal é ginecológica (corrimento e prurido). A disúria referida é a chamada disúria externa, causada pelo contato da urina com a vulva inflamada, e não por uma infecção do trato urinário. Além disso, a presença de corrimento tipo coalhada direciona o diagnóstico para vulvovaginite.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:33.550Z"
+  },
+  {
+    "id": "AJUDA_d5d19b2d-5c51-4bb9-85a9-b3185485d4cd",
+    "originalId": "d5d19b2d-5c51-4bb9-85a9-b3185485d4cd",
+    "statement": "O conceito de “determinantes sociais da saúde” inclui fatores como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Condições econômicas, ambientais e sociais que influenciam a saúde das pessoas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Exclusivamente hábitos individuais, como dieta e atividade física.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas a genética da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fatores biológicos isolados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender o conceito de Determinantes Sociais da Saúde (DSS), é fundamental entender que a saúde de um indivíduo ou de uma população não é resultado apenas de processos biológicos ou escolhas individuais, mas sim do contexto em que as pessoas nascem, crescem, vivem, trabalham e envelhecem.\n\nAlternativa A (Correta): Esta alternativa define precisamente o conceito adotado pela Organização Mundial da Saúde (OMS). Os DSS são as condições sociais, econômicas, culturais, ambientais e comportamentais que influenciam a ocorrência de problemas de saúde e seus fatores de risco na população. O modelo de Dahlgren e Whitehead, amplamente utilizado, ilustra isso em camadas, indo desde fatores individuais até as condições socioeconômicas e ambientais gerais.\n\nAlternativa B (Incorreta): Embora os hábitos de vida façam parte dos determinantes, o conceito não se restringe a eles. O termo \"exclusivamente\" torna a opção errada. O estudo dos DSS busca entender como o meio social condiciona esses hábitos; por exemplo, a dificuldade de manter uma dieta saudável em regiões com desertos alimentares ou a impossibilidade de praticar exercícios em bairros sem segurança ou infraestrutura.\n\nAlternativa C (Incorreta): A genética é um determinante biológico individual e, no modelo de determinantes sociais, é considerada um fator fixo ou não modificável. Os DSS focam justamente nos fatores externos ao código genético que podem ser modificados por políticas públicas e ações sociais.\n\nAlternativa D (Incorreta): Fatores biológicos isolados remetem ao modelo biomédico tradicional (unicausal ou focado apenas na doença). O conceito de DSS surgiu para ampliar essa visão, demonstrando que a saúde é um fenômeno complexo e multicausal, em que o biológico interage constantemente com o meio social e econômico.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:33.550Z"
+  },
+  {
+    "id": "AJUDA_d5d61b85-4775-46b0-a5e0-bc8a34453bf7",
+    "originalId": "d5d61b85-4775-46b0-a5e0-bc8a34453bf7",
+    "statement": "Menino nasceu com idade gestacional de 33 semanas, de parto cesáreo por indicação materna (placenta prévia com sangramento) e evoluiu com desconforto respiratório desde o nascimento. No segundo dia de vida, apresentou pausa respiratória de 15 segundos acompanhada de FC = 80 bpm. Exame físico: mantém taquipneia sem outras alterações. RX de tórax com infiltrado intersticial bilateral com aumento de área cardíaca e hemograma com escore hematológico de Rodwell = 2. Qual droga pode beneficiar este recém-nascido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Furosemida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ampicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Surfactante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cafeína.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso descreve um recém-nascido prematuro (33 semanas) que apresenta, no segundo dia de vida, um episódio característico de apneia da prematuridade. A apneia da prematuridade é definida como a cessação da respiração por mais de 20 segundos ou interrupções de menor duração (como os 15 segundos do caso), desde que acompanhadas de bradicardia (frequência cardíaca abaixo de 100 bpm) ou cianose.\n\nAnálise das alternativas:\n\na) Incorreta. A furosemida é um diurético. Embora o raio X mostre infiltrado intersticial e aumento da área cardíaca, o que poderia sugerir um quadro de Taquipneia Transitória do Recém-Nascido ou congestão, o uso de diuréticos não é o tratamento indicado para essas condições respiratórias neonatais e não trata a causa da apneia relatada.\n\nb) Incorreta. A ampicilina seria utilizada em caso de suspeita de sepse neonatal precoce. No entanto, o escore hematológico de Rodwell é igual a 2, o que indica uma baixa probabilidade de infecção (o escore é considerado sugestivo de sepse quando maior ou igual a 3). O quadro é mais compatível com uma condição funcional da prematuridade.\n\nc) Incorreta. O surfactante é indicado para a Síndrome do Desconforto Respiratório (Doença da Membrana Hialina). O achado radiológico de infiltrado intersticial é mais comum na Taquipneia Transitória do que na Doença da Membrana Hialina (que tipicamente apresenta padrão de \"vidro fosco\" e broncogramas aéreos). Além disso, o foco da questão é o tratamento do evento de apneia e bradicardia.\n\nd) Correta. A cafeína (citrato de cafeína) é a droga de escolha para o tratamento da apneia da prematuridade. Ela atua estimulando o centro respiratório no bulbo, aumentando a sensibilidade ao gás carbônico (CO2) e melhorando a contratilidade diafragmática. É indicada para reduzir a frequência de episódios de apneia e a necessidade de ventilação mecânica em prematuros.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:33.550Z"
+  },
+  {
+    "id": "AJUDA_d5dd07d1-4d4f-45d8-a0a4-0233449facc7",
+    "originalId": "d5dd07d1-4d4f-45d8-a0a4-0233449facc7",
+    "statement": "Pré-escolar de 5 anos, previamente hígida, foi trazida à consulta por apresentar, há 3 dias, secreção nasal inicialmente hialina e, há 1 dia, espessa e esbranquiçada. A febre associada, de até 37,8º C, foi controlada com antitérmicos. À oroscopia, constataram-se leve hiperemia faríngea e gota pós-nasal; à rinoscopia, edema e hiperemia de mucosa, além de secreção turva e espessa bilateralmente. Com esses dados clínicos, qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rinossinusite aguda bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rinossinusite aguda viral",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Rinossinusite aguda pós-viral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rinossinusite aguda alérgica complicada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nA paciente de 5 anos apresenta um quadro de evolução curta (3 dias), com sintomas gripais clássicos. O ponto crucial da questão é a mudança no aspecto da secreção nasal. Na prática pediátrica, é comum que a secreção nasal inicie hialina (transparente) e torne-se espessa, esbranquiçada ou até esverdeada/amarelada entre o segundo e o quarto dia de evolução. Isso ocorre devido à migração de neutrófilos e descamação celular, sendo parte da história natural do resfriado comum, e não um sinal obrigatório de infecção bacteriana. A febre é baixa (37,8 °C) e o estado geral é bom, o que reforça uma etiologia viral.\n\nAnálise das alternativas:\n\na) Incorreta. A rinossinusite aguda bacteriana em crianças é diagnosticada clinicamente com base em três critérios principais: 1) sintomas persistentes (tosse e secreção nasal de qualquer cor) por mais de 10 dias sem melhora; 2) início severo com febre alta (acima de 39 °C) e secreção purulenta por pelo menos 3 dias consecutivos; ou 3) piora dos sintomas após uma melhora inicial (quadro bifásico). A paciente tem apenas 3 dias de evolução e febre baixa.\n\nb) Correta. O quadro clínico de 3 dias de evolução, com rinorreia que muda de aspecto, febre baixa e hiperemia de mucosa, é a descrição clássica da rinossinusite aguda viral, popularmente conhecida como resfriado comum. O diagnóstico é estritamente clínico e o tratamento é de suporte (lavagem nasal e antitérmicos).\n\nc) Incorreta. O termo rinossinusite aguda pós-viral é mais utilizado em consensos de rinossinusite (como o EPOS) para descrever quadros em que há persistência dos sintomas após 10 dias de evolução ou piora dos sintomas após o 5º dia, mas que ainda não preenchem critérios para a etiologia bacteriana. O tempo de 3 dias de sintomas da questão é muito curto para essa classificação.\n\nd) Incorreta. A rinite alérgica manifesta-se tipicamente com prurido nasal, espirros em salvas, coriza hialina e ausência de febre. O termo \"complicada\" não se aplica ao quadro agudo e febril descrito, que sugere claramente um processo infeccioso de vias aéreas superiores.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:33.550Z"
+  },
+  {
+    "id": "AJUDA_d5e11cb9-517d-4beb-bd9c-226155fa7267",
+    "originalId": "d5e11cb9-517d-4beb-bd9c-226155fa7267",
+    "statement": "A tendinite dos rotadores é a principal causa de dor no ombro e caracteriza-se, ao exame físico, por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento de volume da região deltoidea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atrofia da musculatura bicipital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Edema na articulação do ombro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Luxação da cabeça umeral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Dor à flexão do ombro contra resistência e à abdução ativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A tendinite do manguito rotador, que envolve principalmente os tendões dos músculos supraespinal, infraespinal, redondo menor e subescapular, é a causa mais comum de dor no ombro. O diagnóstico é eminentemente clínico, baseado na história de dor (especialmente noturna e ao elevar o braço) e nas manobras de exame físico que provocam dor ao tensionar ou comprimir as estruturas inflamadas.\n\nAnálise das alternativas:\n\na) Incorreta. O aumento de volume da região deltoidea não é um sinal de tendinite. Esse achado poderia sugerir processos inflamatórios articulares graves, grandes derrames, abscessos ou tumores. Na tendinite, o processo é interno aos tendões e não costuma gerar edema visível externamente na musculatura deltoide.\n\nb) Incorreta. A atrofia muscular, quando presente, ocorre geralmente nas fossas supra- e infraespinais em casos de rupturas crônicas e extensas do manguito rotador, e não na musculatura bicipital. A musculatura do bíceps pode ser afetada em casos de tendinite da cabeça longa do bíceps, mas não é a característica definidora da tendinite dos rotadores.\n\nc) Incorreta. O edema articular visível (derrame articular) é mais característico de artrites inflamatórias (como a artrite reumatoide) ou infecciosas. Na tendinite do manguito, o processo inflamatório é localizado nos tendões e na bursa subacromial, raramente apresentando-se como um edema articular generalizado detectável ao exame físico visual.\n\nd) Incorreta. A luxação da cabeça umeral é uma perda de contato entre as superfícies articulares, tratando-se de uma urgência ortopédica decorrente de trauma ou instabilidade crônica. Não é um achado de tendinite, que é uma patologia inflamatória/degenerativa dos tecidos moles.\n\ne) Correta. Esta é a descrição clássica do exame físico na tendinite do manguito. A dor é reproduzida quando solicitamos a contração muscular contra uma resistência imposta pelo examinador ou durante a abdução ativa do braço. O músculo supraespinal, o mais acometido, é testado justamente na abdução e na flexão. Quando o tendão inflamado é tensionado pela contração ou comprimido contra o arco acromial durante o movimento (arco doloroso entre 60 e 120 graus), o paciente relata a dor característica.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Doenças do Ombro e Cotovelo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:33.550Z"
+  },
+  {
+    "id": "AJUDA_d5f18c5d-63d5-4949-b75c-e7e9b634253d",
+    "originalId": "d5f18c5d-63d5-4949-b75c-e7e9b634253d",
+    "statement": "Mulher, 75 anos, apresenta palpitações taquicárdicas e dispneia há 3 horas. Sem outras queixas. Exame físico: consciente, orientada, ritmo cardíaco irregular em 3 tempos, bulhes hipofonéticas, sem sopros. Tempo de enchimento capilar menor que 3 segundos. Murmúrio vesicular presente e simétrico, com estertores finos em terços inferiores dos campos pulmonares. FC = 142 bpm, PA = 110 x 70 mmHg. Eletrocardiograma na figura abaixo: Qual das condutas abaixo é a mais apropriada para o atendimento inicial dessa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cardioversão elétrica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Amiodarona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manobra vagal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, o primeiro passo é identificar o ritmo eletrocardiográfico e avaliar a estabilidade clínica da paciente. O eletrocardiograma apresenta ondas F com aspecto em dentes de serra, claramente visíveis nas derivações inferiores (II, III e aVF) e em V1, o que confirma o diagnóstico de Flutter Atrial. A frequência cardíaca está elevada (142 bpm) e o ritmo é irregular devido à condução atrioventricular variável.\n\nO ponto crucial para a escolha da conduta é a presença de sinais de instabilidade. A paciente apresenta dispneia e estertores finos em terços inferiores dos campos pulmonares, o que indica congestão pulmonar (insuficiência cardíaca aguda). De acordo com as diretrizes de arritmias e o protocolo ACLS, a presença de insuficiência cardíaca aguda, hipotensão, alteração do nível de consciência ou dor torácica isquêmica em vigência de taquiarritmia caracteriza instabilidade hemodinâmica.\n\nAlternativa a: Está correta. A conduta de escolha para qualquer taquiarritmia que cause instabilidade é a cardioversão elétrica sincronizada imediata. No caso desta paciente, a congestão pulmonar define a necessidade de restaurar o ritmo ou controlar a frequência de forma imediata através do choque sincronizado.\n\nAlternativa b: Está incorreta. A amiodarona é um agente antiarrítmico que pode ser usado em pacientes estáveis para controle de ritmo ou em protocolos específicos de parada cardiorrespiratória. Em pacientes instáveis com pulso, o tratamento farmacológico não deve retardar a cardioversão elétrica.\n\nAlternativa c: Está incorreta. A manobra vagal é a conduta inicial para taquicardias de complexo estreito e ritmo regular (como a taquicardia por reentrada nodal) em pacientes estáveis. No flutter atrial, a manobra vagal raramente reverte o ritmo, podendo apenas aumentar o grau de bloqueio AV transitoriamente para fins diagnósticos.\n\nAlternativa d: Está incorreta. Os betabloqueadores são utilizados para o controle da frequência cardíaca em arritmias supraventriculares em pacientes estáveis. Nesta paciente, o uso de betabloqueadores é contraindicado no momento inicial devido aos sinais de insuficiência cardíaca descompensada (estertores pulmonares), pois seu efeito inotrópico negativo pode piorar agudamente o quadro de congestão e o débito cardíaco.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias",
+      "Eletrocardiograma",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/2e8dcac41033b43c87127ad156bad2064e37a4f11676dee7fe7952e63ebff3cb.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d5f18c5d-63d5-4949-b75c-e7e9b634253d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:34.327Z"
+  }
+]

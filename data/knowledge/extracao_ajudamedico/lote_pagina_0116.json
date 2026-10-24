@@ -1,0 +1,538 @@
+[
+  {
+    "id": "AJUDA_1fa53076-6244-440f-a869-99c7923ee57c",
+    "originalId": "1fa53076-6244-440f-a869-99c7923ee57c",
+    "statement": "Sobre puberdade precoce, é correto se afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "é definida quando os fenômenos puberais surgem antes dos 8 anos nas meninas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "tumores do SNC podem ser determinantes da antecipação da puberdade, considerada como puberdade precoce central constitucional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "na puberdade precoce central, os eventos puberais comumente apresentam a mesma cronologia da puberdade normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "na puberdade precoce idiopática, a complicação de maior importância é a associação com a osteoporose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o hipertireoidismo primário pode se associar à puberdade precoce pela semelhança de cadeias do TSH e LH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a): Correta. A definição clássica de puberdade precoce é o surgimento de caracteres sexuais secundários antes dos 8 anos de idade nas meninas e antes dos 9 anos de idade nos meninos. Esse critério cronológico é o ponto de partida para a investigação clínica.\n\nAlternativa (b): Incorreta. Quando a puberdade precoce central é causada por tumores do Sistema Nervoso Central (como hamartomas, astrocitomas ou germinomas), ela é classificada como puberdade precoce central orgânica ou secundária. O termo constitucional (ou idiopático) é reservado para os casos em que não se encontra uma causa estrutural ou lesão identificável após exames de imagem.\n\nAlternativa (c): Incorreta. Embora a puberdade precoce central (dependente de GnRH) tenda a seguir a sequência habitual de eventos (telarca seguida de pubarca e menarca nas meninas; aumento testicular seguido de virilização nos meninos), o termo cronologia refere-se ao tempo e à velocidade dos eventos. Na puberdade precoce, essa cronologia está alterada, pois os marcos ocorrem muito antes do esperado e, frequentemente, com uma velocidade de progressão maior do que na puberdade fisiológica. A alternativa (a) é a definição técnica mais precisa e aceita.\n\nAlternativa (d): Incorreta. A complicação de maior importância e impacto clínico na puberdade precoce é o prejuízo na estatura final. O excesso de esteroides sexuais promove o avanço rápido da idade óssea e a fusão prematura das epífises de crescimento, fazendo com que a criança pare de crescer antes do tempo e fique com uma estatura abaixo do seu potencial genético. A osteoporose é uma preocupação relacionada à falta de hormônios sexuais (hipogonadismo), não ao excesso precoce deles.\n\nAlternativa (e): Incorreta. O fenômeno descrito (interação entre hormônios pela semelhança das cadeias alfa) ocorre no hipotireoidismo primário grave e prolongado, e não no hipertireoidismo. No hipotireoidismo, os níveis muito elevados de TSH podem exercer um efeito de transbordamento (cross-reactivity) nos receptores de FSH (mais do que LH), levando à chamada Síndrome de Van Wyk-Grumbach, que se manifesta com telarca, sangramento vaginal e aumento ovariano, mas geralmente sem avanço da idade óssea.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:17.453Z"
+  },
+  {
+    "id": "AJUDA_1fa8a777-d808-42b4-a92c-e5e9389857e5",
+    "originalId": "1fa8a777-d808-42b4-a92c-e5e9389857e5",
+    "statement": "Homem, 58 anos, apresenta pirose de longa data, pior após refeições copiosas e associada à regurgitação. Refere perda de peso de 6 kg nos últimos 3 meses e disfagia progressiva para sólidos. Considerando a contextualização apresentada, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O carcinoma epidermoide de esôfago é mais prevalente em países ocidentais e está relacionado à obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A esofagite erosiva crônica não apresenta risco de evolução para neoplasia de esôfago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A endoscopia digestiva alta está indicada como rastreamento anual em todo paciente com pirose, mesmo sem sinais de alarme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A principal indicação cirúrgica no tratamento da Doença do Refluxo Gastroesofágico (DRGE) é a presença de pirose leve bem controlada com inibidores de bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O adenocarcinoma de esôfago está fortemente associado ao esôfago de Barrett, complicação da DRGE crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta um quadro clássico de Doença do Refluxo Gastroesofágico (DRGE) de longa data (pirose e regurgitação), que evoluiu com sinais de alarme: perda de peso e disfagia progressiva. Esses sinais sugerem fortemente uma complicação mecânica ou neoplásica, como estenose péptica ou adenocarcinoma de esôfago.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O carcinoma epidermoide (ou escamocelular) de esôfago está mais relacionado ao tabagismo e ao etilismo. Ele é o tipo histológico mais comum no mundo, mas, nos países ocidentais, o adenocarcinoma tem apresentado um crescimento expressivo. É o adenocarcinoma, e não o epidermoide, que possui forte associação com a obesidade e o refluxo crônico.\n\nAlternativa b) Incorreta. A esofagite erosiva crônica é o principal fator de risco para o desenvolvimento do Esôfago de Barrett. O Barrett, por sua vez, é uma condição pré-neoplásica que pode evoluir para displasia e, posteriormente, para o adenocarcinoma de esôfago. Portanto, existe, sim, um risco de evolução para neoplasia.\n\nAlternativa c) Incorreta. A Endoscopia Digestiva Alta (EDA) não deve ser feita como rastreamento anual para todos os pacientes com pirose. Ela está indicada em pacientes com sinais de alarme (como os apresentados por este paciente: perda de peso e disfagia), em homens com mais de 50 anos com sintomas crônicos de refluxo e outros fatores de risco (obesidade, história familiar), ou em casos refratários ao tratamento inicial. O rastreamento anual indiscriminado não tem custo-benefício e não é recomendado pelas diretrizes.\n\nAlternativa d) Incorreta. Se a pirose é leve e bem controlada com Inibidores da Bomba de Prótons (IBPs), a tendência é manter o tratamento clínico. As indicações clássicas para o tratamento cirúrgico (fundoplicatura) incluem: pacientes que não desejam fazer uso crônico de medicação, pacientes com efeitos colaterais aos IBPs, sintomas persistentes de regurgitação volumosa (que não responde bem ao IBP) ou complicações da DRGE, como estenoses recorrentes.\n\nAlternativa e) Correta. Esta alternativa descreve perfeitamente a história natural da complicação neoplásica da DRGE. O refluxo crônico leva à substituição do epitélio escamoso original por um epitélio colunar metaplásico (Esôfago de Barrett), que é o principal precursor do adenocarcinoma de esôfago. No caso clínico apresentado, o histórico de pirose de longa data somado aos sintomas atuais de disfagia e perda de peso aponta diretamente para essa patologia.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico",
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:17.453Z"
+  },
+  {
+    "id": "AJUDA_1fb12fe1-4280-4eec-900e-94ad70d591ae",
+    "originalId": "1fb12fe1-4280-4eec-900e-94ad70d591ae",
+    "statement": "O Modelo da Pirâmide de Riscos é uma ferramenta de gestão em saúde, popularizada pela Kaiser Permanente, baseada na estratificação dos riscos da população o que, por sua vez, define as estratégias de intervenção em autocuidado e em cuidado profissional. Sobre esse modelo, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "90% das pessoas portadoras de uma condição crônica estão no nível 1 e são pessoas que apresentam condição simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "40 % estão no nível 2 e são pessoas que apresentam condição complexa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1 a 5% estão no nível 3 e são pessoas que apresentam condição altamente complexa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "No nível 1, a maior parte do cuidado deve ser provida por uma equipe de Atenção Primária à saúde com apoio de especialistas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "No nível 4, está a subpopulação com necessidades altamente complexas e/ou pessoas usuárias frequentes de atenção não programada de emergência, ambulatorial ou hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Modelo da Pirâmide de Riscos, desenvolvido pela Kaiser Permanente, é uma ferramenta essencial na Gestão da Condição de Saúde. Ele estratifica a população com condições crônicas em três níveis distintos, relacionando a prevalência da condição com a complexidade do cuidado necessário.\n\nNível 1 (Base da pirâmide): Compreende a grande maioria dos pacientes crônicos (cerca de 70% a 80%). São pessoas com condições de baixo risco e maior estabilidade. A estratégia principal é o autocuidado apoiado, onde o paciente é capacitado para gerenciar sua própria saúde.\n\nNível 2 (Intermediário): Abrange cerca de 20% a 30% dos pacientes. São pessoas com risco moderado ou condições que exigem uma gestão da doença mais estruturada, geralmente conduzida pela Atenção Primária com apoio de especialistas.\n\nNível 3 (Topo da pirâmide): Representa a menor parcela da população (1% a 5%), porém são os pacientes de altíssima complexidade, com múltiplas comorbidades e alto risco de internações. A estratégia aqui é a gestão de caso, com cuidado intensivo e individualizado.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. No nível 1, o percentual estimado é de 70% a 80% da população com condições crônicas, e não 90%. O foco deste nível é o autocuidado.\n\nAlternativa B - Incorreta. O nível 2 corresponde a aproximadamente 20% a 30% da população, não 40%. A complexidade alta descrita na alternativa é característica do nível 3.\n\nAlternativa C - Correta. Esta alternativa define com precisão o topo da pirâmide de Kaiser. O grupo de 1% a 5% representa os pacientes de alta complexidade que consomem a maior parte dos recursos de saúde e exigem gerenciamento de caso intensivo.\n\nAlternativa D - Incorreta. No nível 1, a maior parte do cuidado é realizada pelo próprio paciente (autocuidado apoiado). O cuidado provido pela equipe de Atenção Primária com apoio de especialistas é a marca do nível 2 (gestão da doença).\n\nAlternativa E - Incorreta. O modelo original da Kaiser Permanente é composto por 3 níveis. A descrição de subpopulação com necessidades altamente complexas e usuários frequentes de serviços de emergência corresponde ao nível 3 da pirâmide.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:17.453Z"
+  },
+  {
+    "id": "AJUDA_1fb45f97-3a4d-4c86-b592-3f910b65a285",
+    "originalId": "1fb45f97-3a4d-4c86-b592-3f910b65a285",
+    "statement": "O principal risco associado ao uso de drenos abertos (ex.: Penrose) é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemorragia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infecção ascendente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Formação de fístulas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retardo na cicatrização por segunda intenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Necrose de pele por contato com o fluido drenado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O dreno de Penrose é um exemplo clássico de dreno aberto e passivo, que atua por capilaridade. Por ser um sistema aberto, ele estabelece uma comunicação direta entre o meio interno (cavidade ou espaço cirúrgico) e o meio externo (curativo ou bolsa coletora).\n\nAlternativa (a) Incorreta: A hemorragia é uma complicação cirúrgica potencial, mas não é causada pelo uso do dreno de Penrose. Na verdade, o dreno pode auxiliar no diagnóstico precoce de um sangramento ao exteriorizar o sangue, mas não é o fator causal do risco hemorrágico.\n\nAlternativa (b) Correta: Este é o principal risco dos sistemas abertos. Como não existe um sistema fechado ou de sucção, as bactérias presentes na pele e no ambiente podem colonizar o dreno e migrar para o interior da cavidade cirúrgica. Esse processo é conhecido como infecção ascendente ou retrógrada, sendo o motivo pelo qual o dreno de Penrose deve ser mantido pelo menor tempo possível e protegido com curativos estéreis.\n\nAlternativa (c) Incorreta: A formação de fístulas está mais associada a drenos rígidos que podem causar necrose por pressão em alças intestinais ou vasos sanguíneos. O dreno de Penrose é feito de látex macio, o que minimiza esse risco. Frequentemente, ele é usado justamente para drenar fístulas já existentes.\n\nAlternativa (d) Incorreta: O dreno é um corpo estranho e pode causar uma reação inflamatória local, mas sua função principal é evitar o acúmulo de fluidos (seromas e abscessos) que, se presentes, retardariam significativamente a cicatrização. Portanto, o dreno é colocado para favorecer a evolução favorável da ferida.\n\nAlternativa (e) Incorreta: Embora o fluido drenado (como bile ou suco gástrico) possa causar irritação ou dermatite peridreno se o curativo não for trocado com frequência, o termo necrose de pele é excessivo para a maioria dos casos. Além disso, o risco biológico da infecção ascendente é considerado mais crítico e característico do sistema aberto do que a irritação cutânea local.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:17.453Z"
+  },
+  {
+    "id": "AJUDA_1fb81c02-f834-4658-b1ac-dcb0b9db5c76",
+    "originalId": "1fb81c02-f834-4658-b1ac-dcb0b9db5c76",
+    "statement": "Paciente, 24 anos de idade, hígida, primigesta, compareceu ao ambulatório de obstetrícia para realização da primeira consulta de pré-natal com 11 semanas de gestação. Sem queixas e exame físico sem alterações. Segundo o Ministério da Saúde, os exames complementares a serem solicitados na primeira consulta de pré-natal de baixo risco são",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemograma, urina I, TGP",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "VDRL, FSH, tipagem sanguínea ABO",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "HBsAG, glicemia de jejum, urina I",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "FSH, LH e VDRL",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nA paciente é uma gestante de 24 anos, hígida (sem comorbidades), em sua primeira consulta de pré-natal com 11 semanas de gestação. De acordo com o Manual de Pré-natal de Baixo Risco do Ministério da Saúde do Brasil, a primeira consulta é o momento de solicitar uma bateria de exames para rastreamento de condições que podem afetar a saúde materna e fetal.\n\nLISTA DE EXAMES DE ROTINA NO PRIMEIRO TRIMESTRE (MINISTÉRIO DA SAÚDE):\n- Hemograma completo.\n- Tipagem sanguínea e fator Rh.\n- Glicemia de jejum.\n- Teste rápido para sífilis e/ou VDRL.\n- Teste rápido para HIV (Anti-HIV).\n- HBsAg (Rastreio para Hepatite B).\n- Sorologia para Toxoplasmose (IgG e IgM).\n- Urina tipo 1 (EAS) e Urocultura com antibiograma.\n- Exame de fezes (Protoparasitológico, se indicado).\n- Citopatológico de colo de útero (se houver indicação por idade e periodicidade).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: O Hemograma e a Urina I (EAS) estão corretos e fazem parte da rotina. No entanto, a TGP (Transaminase Glutâmico-Pirúvica ou ALT) é uma enzima hepática que não faz parte do rastreamento universal de gestantes de baixo risco. Ela é solicitada apenas em casos de suspeita de doenças hepáticas ou em protocolos específicos de investigação de síndrome de pré-eclâmpsia.\n\nAlternativa (b) INCORRETA: O VDRL e a Tipagem Sanguínea estão corretos. Contudo, o FSH (Hormônio Folículo-Estimulante) não tem utilidade no acompanhamento pré-natal. O FSH é utilizado para avaliar a reserva ovariana ou diagnosticar a menopausa, e seus níveis ficam suprimidos durante a gestação.\n\nAlternativa (c) CORRETA: Esta alternativa contempla três exames fundamentais e obrigatórios na primeira consulta: o HBsAg para detectar portadoras do vírus da Hepatite B (permitindo a profilaxia da transmissão vertical), a Glicemia de Jejum para rastrear diabetes (pré-gestacional ou gestacional precoce) e a Urina I para avaliar a presença de proteínas, hemácias ou sinais de infecção.\n\nAlternativa (d) INCORRETA: O VDRL é obrigatório para o rastreio da sífilis. Já o FSH e o LH (Hormônio Luteinizante) são gonadotrofinas hipofisárias que não possuem indicação de dosagem na gravidez, uma vez que o eixo hormonal reprodutor está fisiologicamente bloqueado pelos hormônios placentários.\n\nGABARITO: Letra (c).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:17.453Z"
+  },
+  {
+    "id": "AJUDA_1fb8b4b9-ebc5-4c12-b813-4dbf16fb5f1b",
+    "originalId": "1fb8b4b9-ebc5-4c12-b813-4dbf16fb5f1b",
+    "statement": "Mulher, 55 anos de idade, comparece ao ambulatório com queixa de astenia e intolerância ao exercício há 6 meses. Não tem outras queixas. Tem história de obesidade grau 2, hipertensão arterial e diabetes mellitus, estando em uso de enalapril, hidroclorotiazida, metformina, dapagliflozina e insulina NPH 10UI à noite. Adicionalmente, é tabagista ativa, com carga tabágica estimada de 22 maços/ano e consome 1 a 2 taças de vinho nos finais de semana. Ao exame, foi visto descoramento ++/4+ e alteração que pode ser vista na imagem a seguir: O hemograma confirmou a presença de anemia com elevação de VCM e RDW normal, sem alterações de leucócitos ou plaquetas. O esfregaço de sangue periférico apresentou as seguintes alterações: O diagnóstico mais provável da anemia da paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia sideroblástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome mielodisplásica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deficiência de vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Anemia associada ao álcool.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deficiência de ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico e laboratorial apresentado aponta diretamente para uma anemia megaloblástica. A paciente apresenta anemia macrocítica (VCM elevado) e as imagens fornecidas são fundamentais para o diagnóstico: a primeira imagem mostra uma glossite atrófica (língua careca ou de Hunter), caracterizada pela perda das papilas linguais; a segunda imagem, do esfregaço de sangue periférico, revela macro-ovalócitos e, crucialmente, um neutrófilo hipersegmentado (com 6 ou mais lobos nucleares), que é um achado patognomônico de processos megaloblásticos.\n\nO ponto-chave para diferenciar a etiologia é a história medicamentosa. A paciente faz uso crônico de metformina, um fármaco associado à redução da absorção de vitamina B12 no íleo terminal por interferir na homeostase do cálcio necessária para a absorção do complexo B12-fator intrínseco.\n\nAnálise das alternativas:\n\na) Incorreta. A anemia sideroblástica geralmente cursa com um quadro microcítico ou dimórfico (populações de células pequenas e grandes). No aspirado de medula óssea, observaríamos sideroblastos em anel, o que não condiz com os achados de hipersegmentação neutrofílica e glossite.\n\nb) Incorreta. A síndrome mielodisplásica (SMD) pode causar macrocitose, mas é tipicamente acompanhada de outras citopenias (leucopenia, plaquetopenia) ou alterações displásicas como neutrófilos hipossegmentados (anomalia de Pseudo-Pelger-Huët), o oposto do que vemos na imagem. Além disso, a glossite não é característica da SMD.\n\nc) Correta. A deficiência de vitamina B12 justifica perfeitamente a anemia macrocítica, a glossite de Hunter e a presença de neutrófilos hipersegmentados. O uso da metformina é o fator epidemiológico decisivo que reforça essa hipótese diagnóstica, tornando a carência de B12 mais provável que a de folato neste cenário clínico.\n\nd) Incorreta. O álcool pode causar macrocitose por toxicidade direta à medula ou por deficiência secundária de folato. No entanto, o consumo relatado (1 a 2 taças de vinho nos finais de semana) é muito baixo para justificar tal alteração hematológica. Além disso, a associação com o uso de metformina direciona o raciocínio para a vitamina B12.\n\ne) Incorreta. Embora a deficiência de ácido fólico também cause anemia megaloblástica com neutrófilos hipersegmentados, ela não possui uma associação direta com o uso de metformina. Em provas de residência, a presença de metformina no enunciado é uma \"deixa\" clássica para a deficiência de vitamina B12.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/1f98d0dd838b4c9b7d596f5cc65a8a6f5aa418f593a64c869709839d3aa91437.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1fb8b4b9-ebc5-4c12-b813-4dbf16fb5f1b_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/8c90ddad0e11e5ec9ae0f6df920c3831a199d344858c8979f164c9bbb5822e80.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1fb8b4b9-ebc5-4c12-b813-4dbf16fb5f1b_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:21.748Z"
+  },
+  {
+    "id": "AJUDA_1fc072c3-a2c6-4159-ad3e-d65b44638732",
+    "originalId": "1fc072c3-a2c6-4159-ad3e-d65b44638732",
+    "statement": "Homem, 57 anos de idade, com peso de 74 kg, passa em atendimento ambulatorial. Ele tem hipotireoidismo e faz uso de 225 µg/dia de levotiroxina. Descreve que há 8 meses tem episódios progressivos de dor abdominal. A dor é em cólica, difusa, de intensidade leve a moderada. Associa episódios de evacuações amolecidas. Nunca teve saída de sangue, muco ou pus. Nega tenesmo. Acredita que os episódios têm relação com a alimentação, mas não percebe refeições ou alimentos claramente relacionados. Ele é tabagista (24 anos-maço), etilista social ocasional. Nega sibilos, prurido nasal ou congestão nasal. Os sinais vitais e o exame clínico são normais. Traz consigo uma enterotomografia normal.\n\n• Exames laboratoriais:\nHb: 10,1 g/dL\nVCM: 67 fL\nHCM: 30 pg\nLeucócitos: 6.750/mm3\nPlaquetas: 490 mil/mm3\n\nUma biópsia tecidual do trato gastrointestinal deste paciente, mais provavelmente, identificaria a presença de",
+    "options": [
+      {
+        "id": "A",
+        "text": "granuloma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "H. pylori.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "infiltrado linfocítico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "infiltrado eosinofílico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de síndrome de má absorção secundária à Doença Celíaca, o que pode ser deduzido pelos seguintes pontos:\n\n1. Refratariedade ao tratamento do hipotireoidismo: O paciente pesa 74 kg e faz uso de 225 mcg/dia de levotiroxina. A dose habitual de reposição é em torno de 1,6 mcg/kg/dia (aproximadamente 120 mcg/dia para o seu peso). O uso de uma dose muito acima da habitual indica má absorção gastrointestinal do fármaco. Além disso, a doença celíaca tem forte associação com outras condições autoimunes, como a tireoidite de Hashimoto.\n2. Anemia microcítica: O hemograma mostra anemia microcítica (Hb 10,1 g/dL e VCM 67 fL) e trombocitose reacional (plaquetas 490 mil/mm3), padrão clássico de anemia ferropriva decorrente da perda da capacidade absortiva no duodeno.\n3. Sintomas gastrointestinais e exames de imagem: Os episódios de dor abdominal em cólica e fezes amolecidas, com enterotomografia normal, afastam processos inflamatórios transmurais grosseiros e reforçam uma enteropatia mucosa difusa.\n\nNa doença celíaca, a biópsia de intestino delgado (duodeno) é o padrão-ouro e evidencia, pela classificação de Marsh, a presença de infiltrado linfocítico intraepitelial (linfocitose intraepitelial), hiperplasia de criptas e atrofia de vilosidades.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A presença de granulomas não caseificantes é característica da Doença de Crohn. A enterotomografia normal e o quadro altamente sugestivo de doença celíaca tornam essa opção improvável.\n\nAlternativa b: Incorreta. O Helicobacter pylori coloniza a mucosa gástrica e relaciona-se com gastrite crônica, úlcera péptica e linfoma MALT, não justificando a má absorção intestinal difusa com necessidade de megadoses de levotiroxina.\n\nAlternativa c: Correta. O infiltrado linfocítico intraepitelial aumentado (linfocitose intraepitelial) é o achado histopatológico inicial e definidor da enteropatia por sensibilidade ao glúten (Doença Celíaca).\n\nAlternativa d: Incorreta. O infiltrado eosinofílico é característico da gastroenterite eosinofílica. O enunciado afasta atopia (nega sibilos, prurido ou congestão nasal) e não há eosinofilia no leucograma, tornando a hipótese improvável.\n\nGabarito: Letra c.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Distúrbios Disabsortivos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:21.748Z"
+  },
+  {
+    "id": "AJUDA_1fd3ba4a-13d1-40a0-b6a4-2c674ab8e156",
+    "originalId": "1fd3ba4a-13d1-40a0-b6a4-2c674ab8e156",
+    "statement": "Uma paciente apresentou-se na consulta de pré natal com glicemia de jejum de 95 no terceiro trimestre. Sobre o acompanhamento da diabetes gestacional (DMG) e os cuidados associados ao parto, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se o controle glicêmico for satisfatório a gestação pode ser acompanhada até 42 semanas e a via de parto é obstétrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Após o parto, a insulina, para a maioria dos casos de DMG, a insulina deverá ser suspensa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Se o controle glicêmico for insatisfatório, pode se considerar a resolução eletiva da gestação a partir de 32 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Recomenda-se nova avaliação glicêmica após aproximadamente 14 dias do parto com TOTG 100g.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta glicemia de jejum de 95 mg/dL no terceiro trimestre, confirmando o diagnóstico de Diabetes Mellitus Gestacional (DMG), definido por valores de glicemia de jejum entre 92 e 125 mg/dL na gestação.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. Embora a via de parto seja definida por indicacoes obstétricas, a gestacao de uma paciente com DMG bem controlada nao deve ultrapassar a 40ª ou 41ª semana. Prolongar a gravidez até 42 semanas eleva expressivamente os riscos de macrossomia, insuficiencia placentaria e óbito fetal intrauterino.\n\nAlternativa b: Correta. A hiperglicemia e a resistencia insulinica na DMG sao mantidas principalmente por hormonios diabetogenicos de origem placentaria, como o lactogenio placentario humano. Com a saida da placenta (dequitacao), os niveis desses hormonios caem de forma abrupta. Consequentemente, a maioria das pacientes que necessitou de insulinoterapia durante a gestacao deve ter a insulina suspensa no pós-parto imediato, mantendo-se apenas o monitoramento glicemico.\n\nAlternativa c: Incorreta. A interrupcao eletiva com 32 semanas expoe o concepto aos graves riscos da prematuridade. Em gestantes com DMG e controle glicemico inadequado, a indicacao de parto programado costuma ocorrer entre 37 e 39 semanas, ou excepcionalmente no pré-termo tardio (36 a 37 semanas) na vigencia de complicacoes fetais ou maternas graves, nunca de forma rotineira com 32 semanas.\n\nAlternativa d: Incorreta. O reteste glicemico no puerpério deve ser realizado entre 6 e 12 semanas pós-parto (apos a resolucao completa das alteracoes hormonais gravídicas). O teste preconizado é o Teste Oral de Tolerancia a Glicose (TOTG) com sobrecarga de 75g de glicose (com dosagem em jejum e 2 horas após), e nao TOTG com 100g nem no prazo de 14 dias.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto",
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:21.748Z"
+  },
+  {
+    "id": "AJUDA_1fd40617-afbe-48e1-ae31-b9684718ab7b",
+    "originalId": "1fd40617-afbe-48e1-ae31-b9684718ab7b",
+    "statement": "Escolar de 8 anos é trazido à emergência com queixa de inapetência, “urina escura e inchaço nas pernas e face”, de início há uma semana, associados à oligúria. Realizou tratamento para impetigo duas semanas antes do início dos sintomas. Ao exame, encontra-se em regular estado geral, com edema em membros inferiores e periorbitário, e hipertensão arterial.\nA hipótese diagnóstica, nesse caso, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "síndrome nefrótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "glomerulonefrite aguda pós-estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "vasculite por IgA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pielonefrite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "nefropatia por IgA.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descrito é a apresentação clássica da Síndrome Nefrítica, caracterizada pela tríade: hematúria (urina escura), edema e hipertensão arterial. O paciente é uma criança em idade escolar (8 anos) que apresenta esses sintomas associados à oligúria, surgindo cerca de duas semanas após o tratamento de uma infecção cutânea (impetigo). Esse intervalo entre a infecção inicial e o surgimento dos sintomas renais é chamado de período de latência e é um dado fundamental para o raciocínio diagnóstico.\n\nANALISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A síndrome nefrótica se caracteriza primordialmente por proteinúria maciça (na faixa nefrótica), hipoalbuminemia importante e edema generalizado (anasarca). Embora o paciente apresente edema, a presença de hipertensão arterial e hematúria macroscópica (urina escura) fala fortemente contra um quadro puramente nefrótico e direciona para uma síndrome nefrítica.\n\nAlternativa (b) CORRETA: A Glomerulonefrite Aguda Pós-Estreptocócica (GNPE) é a causa mais comum de síndrome nefrítica na infância. Ela ocorre como uma resposta imunológica após uma infecção pelo estreptococo beta-hemolítico do grupo A (Streptococcus pyogenes). O período de latência observado no caso (2 semanas após impetigo) é típico para infecções de pele, que geralmente variam de 2 a 4 semanas (enquanto na faringite a latência é de 1 a 3 semanas). O quadro de escolar com edema, hipertensão e hematúria pós-piodermite é o cenário clássico da GNPE.\n\nAlternativa (c) INCORRETA: A vasculite por IgA (antiga Púrpura de Henoch-Schönlein) é uma vasculite de pequenos vasos que se manifesta com uma tétrade: púrpura palpável (obrigatória para o diagnóstico, geralmente em glúteos e membros inferiores), artralgia ou artrite, dor abdominal e comprometimento renal. A ausência de lesões purpúricas e sintomas gastrointestinais torna esta hipótese improvável.\n\nAlternativa (d) INCORRETA: A pielonefrite aguda é uma infecção bacteriana do trato urinário superior. Clinicamente, manifesta-se com febre, calafrios, dor lombar (sinal de Giordano positivo) e, por vezes, sintomas de cistite (disúria e polaciúria). Edema e hipertensão arterial não são achados característicos de uma pielonefrite isolada.\n\nAlternativa (e) INCORRETA: A nefropatia por IgA (Doença de Berger) é a glomerulopatia primária mais comum do mundo. Entretanto, sua apresentação típica é de hematúria macroscópica recorrente que ocorre simultaneamente ou pouquíssimos dias após uma infecção respiratória (hematúria sinfaringítica), sem o período de latência prolongado. Além disso, ela raramente cursa com o quadro completo de síndrome nefrítica (edema e hipertensão) logo na primeira apresentação e não tem associação típica com impetigo.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Doenças Glomerulares",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:21.748Z"
+  },
+  {
+    "id": "AJUDA_1fe36083-0222-40f7-b19a-83fffd7a0d68",
+    "originalId": "1fe36083-0222-40f7-b19a-83fffd7a0d68",
+    "statement": "Gestante de 32 anos, G2P1, com diagnóstico prévio de diabetes mellitus tipo 2 há 3 anos, fazia uso de metformina 850 mg, 2x/dia, mas suspendeu a medicação ao descobrir a gestação. Encontra-se com 10 semanas, em acompanhamento pré-natal, relatando boa adesão a dieta fracionada e que realiza atividade física regularmente. Apresenta o seguinte perfil glicêmico capilar (mg/dL) nos últimos 10 dias:\n\nCom base nesses dados, qual é a conduta mais apropriada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reiniciar metformina oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar insulina NPH associada à insulina regular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar insulina NPH em dose noturna isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reorientar dieta e manter vigilância semanal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar insulina NPH isolada dividida em três doses diárias",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nA paciente é uma gestante com Diabetes Mellitus tipo 2 pré-gestacional (DM2) que, apesar de manter boa adesão à dieta e atividade física, apresenta um perfil glicêmico fora das metas terapêuticas recomendadas para a gestação. Segundo as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da FEBRASGO, os alvos glicêmicos na gestação são:\n- Jejum: menor que 95 mg/dL.\n- 1 hora após as refeições: menor que 140 mg/dL.\n- 2 horas após as refeições: menor que 120 mg/dL.\n\nAo analisarmos a tabela de monitorização capilar da paciente:\n1. Glicemias de Jejum: estão quase todas alteradas (variando entre 95 e 105 mg/dL), quando o limite é 95.\n2. Glicemias 2h pós-prandiais: estão consistentemente elevadas, especialmente após o almoço e o jantar (chegando a 149 mg/dL), ultrapassando o limite de 120 mg/dL.\n\nComo as mudanças de estilo de vida não foram suficientes para atingir as metas, é necessário iniciar a terapia farmacológica.\n\nAnálise das Alternativas:\n\na) Incorreta. Embora a metformina seja, por vezes, utilizada em casos selecionados de DM2 ou SOP, o padrão-ouro para o tratamento do diabetes na gestação (especialmente o pré-gestacional), quando a dieta falha, é a insulinoterapia. Além disso, a paciente já fazia uso de metformina anteriormente e, mesmo com dieta, os níveis atuais estão significativamente alterados, sugerindo a necessidade de uma medicação com maior potência e ajuste fino, como a insulina.\n\nb) Correta. Esta é a conduta mais adequada. A paciente apresenta tanto a glicemia de jejum elevada quanto as glicemias pós-prandiais alteradas. A insulina NPH atua no controle do jejum e dos períodos entre as refeições (componente basal), enquanto a insulina Regular atua no controle dos picos glicêmicos que ocorrem após a ingestão de alimentos (componente prandial). Como há falha em ambos os momentos, a associação é necessária.\n\nc) Incorreta. O uso de insulina NPH isolada apenas ao deitar (*bedtime*) seria indicado se apenas a glicemia de jejum estivesse alterada. Como a paciente apresenta hiperglicemias importantes após as refeições (pós-prandiais), ela necessita de cobertura para esses horários também.\n\nd) Incorreta. A paciente já relatou boa adesão à dieta e prática de exercícios físicos por 10 dias, e os resultados mostram que essas medidas isoladas não foram suficientes para alcançar o controle rigoroso exigido na gestação. Retardar o início da medicação aumenta os riscos de complicações materno-fetais (como macrossomia e pré-eclâmpsia).\n\ne) Incorreta. A insulina NPH é uma insulina de ação intermediária. Embora sua divisão em três doses possa ajudar no perfil basal, ela não possui o início de ação rápido o suficiente para controlar especificamente os picos glicêmicos que ocorrem logo após as refeições nesta paciente. Para o controle pós-prandial alterado, o uso de insulina de ação rápida ou ultrarrápida (como a Regular ou análogos) associada à NPH é o esquema mais eficaz.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/06b3854ebd4815ad2b742e87d71a243e526bd32ef0445ab6777e698c2f2d122b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1fe36083-0222-40f7-b19a-83fffd7a0d68_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:22.109Z"
+  }
+]

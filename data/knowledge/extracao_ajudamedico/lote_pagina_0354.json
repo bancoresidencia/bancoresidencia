@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_6203a0b2-1691-4d6f-b7a2-e912cc0c6b53",
+    "originalId": "6203a0b2-1691-4d6f-b7a2-e912cc0c6b53",
+    "statement": "Homem, 72 anos, previamente independente, tabagista cessado há 10 anos, HAS. Há 24 h com tosse produtiva, febre e dispneia. Ao dar entrada no PS: T 38,3°C, FR 32 irpm, FC 104 bpm, PA 118/68 mmHg, SpO₂ 90% em ar ambiente. Está lúcido e orientado. Radiografia de tórax: consolidação no lobo inferior direito. Exames: ureia 58 mg/dL, creatinina 1,1 mg/dL, Na 134 mEq/L, leucócitos 13.200/mm³. Com base no CURB-65, qual a melhor conduta quanto ao local de tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CURB-65 = 2 (idade e FR): liberar para tratamento ambulatorial com antibiótico VO e reavaliação em 48h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "CURB-65 = 4: necessidade de intubação orotraqueal imediata e UTI, independentemente da gasometria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "CURB-65 = 3: indicar internação hospitalar com início de antibiótico EV e avaliar necessidade de UTI conforme evolução.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "CURB-65 = 1 (apenas idade): alta com azitromicina VO por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "CURB-65 = 3, porém sem hipotensão ou confusão, podendo tratar em observação na UPA com antibiótico VO.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos aplicar o escore CURB-65, que é uma ferramenta validada para estratificar a gravidade da Pneumonia Adquirida na Comunidade (PAC) e decidir o local de tratamento.\n\nCada letra do acrônimo CURB-65 soma 1 ponto:\n\nC - Confusão mental: O paciente está lúcido e orientado (0 pontos).\nU - Ureia maior ou igual a 50 mg/dL: O paciente apresenta ureia de 58 mg/dL (1 ponto).\nR - Respiração (frequência respiratória maior ou igual a 30 irpm): O paciente apresenta 32 irpm (1 ponto).\nB - Blood Pressure (pressão arterial sistólica < 90 mmHg ou diastólica menor ou igual a 60 mmHg): O paciente apresenta 118/68 mmHg (0 pontos).\n65 - Idade maior ou igual a 65 anos: O paciente tem 72 anos (1 ponto).\n\nCálculo total: 0 (C) + 1 (U) + 1 (R) + 0 (B) + 1 (65) = 3 pontos.\n\nInterpretação do CURB-65:\n- 0 a 1 ponto: Baixo risco. Tratamento ambulatorial.\n- 2 pontos: Risco intermediário. Considerar internação hospitalar curta ou observação rigorosa.\n- 3 a 5 pontos: Risco elevado. Internação hospitalar mandatória. Se o escore for 4 ou 5, deve-se considerar a Unidade de Terapia Intensiva (UTI).\n\nAnálise das alternativas:\n\na) Incorreta. O cálculo do CURB-65 está errado, pois ignora o critério da ureia elevada (58 mg/dL). Com pontuação 3, o tratamento ambulatorial é contraindicado devido ao risco de mortalidade.\n\nb) Incorreta. O cálculo está errado (é 3, e não 4). Além disso, a indicação de intubação orotraqueal baseia-se no exame físico e na insuficiência respiratória grave, não apenas no escore isolado; o paciente, apesar da taquipneia, não apresenta sinais imediatos de falência respiratória que exijam o procedimento sem antes avaliar a resposta terapêutica.\n\nc) Correta. O paciente pontua 3 no escore (ureia, FR e idade). Pela diretriz, pacientes com CURB-65 igual a 3 devem ser internados para tratamento hospitalar. O uso de antibiótico endovenoso (EV) é a conduta padrão inicial na internação, e a vigilância sobre a necessidade de UTI deve ser contínua.\n\nd) Incorreta. O cálculo está errado. O paciente pontua em três critérios, e não apenas na idade. A alta com azitromicina seria negligente para um paciente com taquipneia e ureia elevada.\n\ne) Incorreta. Embora o escore esteja correto (3), a conduta de manter em observação na UPA com antibiótico por via oral é inadequada para a gravidade apresentada. Um CURB-65 de 3 indica necessidade de suporte hospitalar completo. Além disso, a hipoxemia (SpO2 90%) reforça a necessidade de internação para suporte de oxigênio e monitorização.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  },
+  {
+    "id": "AJUDA_6208de0a-dbbf-4c85-954a-f2c1c0415ebe",
+    "originalId": "6208de0a-dbbf-4c85-954a-f2c1c0415ebe",
+    "statement": "João tem 8 anos, e Maria tem 11 anos. Ao exame físico, foi constatado que João apresenta crescimento testicular e aumento do comprimento peniano. Em Maria, nota-se a presença de broto mamário. Como são classificados os achados descritos em relação à escala de Turner (G e M) e às suas idades?",
+    "options": [
+      {
+        "id": "A",
+        "text": "João – Turner 3, com achados de puberdade precoce para a sua idade; Maria – Turner 2, com achados normais de puberdade para a sua idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "João – Turner 4, com achados de puberdade precoce para a sua idade; Maria – Turner 2, com achados de atraso puberal para a sua idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "João – Turner 3, com achados normais de puberdade para a sua idade; Maria – Turner 1, com achados normais de puberdade para a sua idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "João – Turner 4, com achados normais de puberdade para a sua idade; Maria – Turner 1, com achados de atraso puberal para a sua idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, devemos avaliar dois aspectos fundamentais: o estadiamento de maturação sexual (Escala de Tanner) e a cronologia (idade) de início da puberdade.\n\nAnálise de João (8 anos):\nNa Escala de Tanner para o sexo masculino (G), o estágio G1 é o estado pré-púbere. O estágio G2 marca o início da puberdade, caracterizado principalmente pelo aumento do volume testicular (igual ou superior a 4 ml). O estágio G3 é definido pelo aumento do comprimento peniano e pelo crescimento adicional dos testículos. Em relação à idade, a puberdade no menino é considerada precoce quando se inicia antes dos 9 anos. Como João tem 8 anos e já apresenta aumento do comprimento peniano, ele é classificado como Tanner G3, apresentando puberdade precoce.\n\nAnálise de Maria (11 anos):\nNa Escala de Tanner para o sexo feminino (M), o estágio M1 é o estado pré-púbere. O estágio M2 é caracterizado pelo aparecimento do broto mamário (telarca), que é o marco inicial da puberdade feminina. A puberdade fisiológica em meninas ocorre entre os 8 e 13 anos de idade. Como Maria tem 11 anos, ela está no estágio Tanner M2, e seus achados são considerados normais para a sua idade.\n\nAnálise das alternativas:\n\na) Correta. João está no estágio G3 (aumento do comprimento peniano) e, por ter 8 anos (menos de 9), apresenta puberdade precoce. Maria está no estágio M2 (broto mamário) e, aos 11 anos, está dentro da faixa de normalidade (8 a 13 anos).\n\nb) Incorreta. O estágio G4 envolveria o aumento do diâmetro do pênis e o desenvolvimento da glande, o que não foi descrito. Além disso, Maria não apresenta atraso puberal, pois o atraso em meninas é definido pela ausência de mamas após os 13 anos.\n\nc) Incorreta. Os achados de João não são normais para a idade de 8 anos, mas sim precoces. Maria não pode ser classificada como M1, pois o estágio M1 representa a ausência de tecido mamário palpável.\n\nd) Incorreta. João não atende aos critérios de G4, e sua puberdade não é normal para a idade. Maria possui desenvolvimento mamário (não é M1) e não apresenta atraso puberal.\n\nNota: Embora o enunciado utilize o termo \"Escala de Turner\", a questão refere-se claramente à Escala de Tanner, utilizada para o estadiamento da puberdade. Além disso, o termo \"Turner\" costuma ser associado à Síndrome de Turner, uma condição genética, o que reforça que houve um erro de digitação na elaboração da questão original, mas que não impede a sua resolução técnica baseada nos critérios de Tanner.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  },
+  {
+    "id": "AJUDA_620bc6e8-6cec-4c0d-9cb7-fe20a8893782",
+    "originalId": "620bc6e8-6cec-4c0d-9cb7-fe20a8893782",
+    "statement": "Paciente sexo feminino, 38 anos, procurou o pronto atendimento devido à febre alta (39℃) há 4 dias, acompanhada de tosse produtiva com expectoração amarelada, cansaço progressivo e dor torácica em região lateral direita, que piora ao respirar profundamente. Relata também falta de ar nos últimos dois dias, especialmente ao realizar atividades leves, como subir escadas. Nega episódios semelhantes no passado. Pacientes é previamente hígida. Ao exame febril (38,5℃), frequência cardíaca de 110 bpm, frequência respiratória de 19 irpm, pressão arterial 125/80 mmHg, saturação de O2: de 93% em ar ambiente. Ausculta pulmonar: Presença de crepitações na base do hemitórax direito e diminuição do murmúrio vesicular na mesma região. Exames: Hb:11,8 GL:17900 neutrófilo de 13480 e Plaquetas 112000. Ureia: 38 Cr:0,98. PCR:2,8 procalcitonina negativa, Radiografia de tórax: Opacidade em base de pulmão direito, sugestiva de consolidação lobar. Sobre o diagnóstico e tratamento, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente possui indicação de tratamento hospitalar sendo necessário inicio de Ceftriaxone e Vancomicima",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A paciente tem diagnóstico de pneumonia adquirida na comunidade devendo iniciar terapia oral, sendo uma opção Levofloxacin. O tratamento deve ser ambulatorial por cinco dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A paciente tem provável diagnóstico de pneumonia viral, devendo ser internada e avaliado inicio de Oseltamivir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A paciente deve ser admitida, coletadas hemoculturas e iniciado Amoxicilina com Clavulanato e Azitromicina venosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\nO caso descreve uma paciente de 38 anos, previamente hígida, com quadro clássico de Pneumonia Adquirida na Comunidade (PAC): febre, tosse produtiva, dor pleurítica e consolidação lobar na radiografia de tórax. Para definir a conduta (internação ou tratamento ambulatorial), utiliza-se habitualmente o escore CURB-65.\n\nCálculo do CURB-65:\nC (Confusão mental): Ausente (0 pontos).\nU (Ureia > 43 mg/dL): A ureia da paciente é 38 (0 pontos).\nR (Frequência respiratória >= 30 irpm): A frequência é 19 (0 pontos).\nB (Pressão arterial < 90 mmHg sistólica ou <= 60 mmHg diastólica): A pressão é 125/80 (0 pontos).\n65 (Idade >= 65 anos): A paciente tem 38 anos (0 pontos).\nPontuação total: 0 pontos.\n\nInterpretação do CURB-65:\nEscore 0 ou 1: Baixo risco, tratamento ambulatorial (em casa).\nEscore 2: Considerar internação hospitalar ou observação rigorosa.\nEscore 3 ou mais: Internação hospitalar, considerar UTI se escore 4 ou 5.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Pelo escore CURB-65 de 0, a paciente não tem indicação de tratamento hospitalar. Além disso, o uso de Vancomicina é reservado para suspeita de Staphylococcus aureus resistente à meticilina (MRSA), o que não se aplica a uma paciente hígida sem fatores de risco específicos.\n\nAlternativa b) Correta. O diagnóstico é de pneumonia adquirida na comunidade. Como o escore de gravidade é baixo (0), o tratamento deve ser ambulatorial. As quinolonas respiratórias, como o Levofloxacin, são opções terapêuticas válidas, especialmente em esquemas de monoterapia. O tempo de tratamento de cinco dias é adequado para casos não complicados com boa resposta clínica inicial.\n\nAlternativa c) Incorreta. Embora a procalcitonina esteja negativa (o que às vezes pode confundir), a presença de leucocitose importante com desvio para neutrófilos, febre alta e, principalmente, a imagem de consolidação lobar na radiografia são características típicas de pneumonia bacteriana. Pneumonias virais costumam se manifestar com infiltrado intersticial bilateral e não consolidação lobar.\n\nAlternativa d) Incorreta. A admissão hospitalar e a terapia venosa com Amoxicilina/Clavulanato e Azitromicina seriam indicadas para pacientes com escore CURB-65 mais elevado ou que necessitassem de internação por outros motivos clínicos (como incapacidade de ingestão oral), o que não é o caso desta paciente estável.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  },
+  {
+    "id": "AJUDA_622776be-eff2-4868-917e-332c07cb75bc",
+    "originalId": "622776be-eff2-4868-917e-332c07cb75bc",
+    "statement": "Mulher de 64 anos de idade refere dispneia aos moderados esforços há dois anos. Ela relata piora dos sintomas há duas semanas, estando atualmente com dispneia aos mínimos esforços, além de ortopneia e edema em membros inferiores. AP: HAS em uso de enalapril e furosemida. Radiografia de tórax: cardiomegalia e derrame pleural à direita. Foi realizada toracocentese, que mostrou, em sua análise, relação entre proteína pleural e proteína sérica de 0,68, achado que pode representar falso-positivo em caso de",
+    "options": [
+      {
+        "id": "A",
+        "text": "relação entre DHL do líquido pleural e DHL sérico de 0,68.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "gradiente albumina sérico-líquido pleural de 0,9 g.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "triglicérides de 200 mg/dL no líquido pleural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "colesterol do líquido pleural de 85 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "NT-proBNP do líquido pleural de 3.000 pg/mL.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro clínico apresentado (dispneia progressiva, ortopneia, edema de membros inferiores, cardiomegalia e uso de enalapril e furosemida) é típico de Insuficiência Cardíaca Descompensada. O derrame pleural decorrente de insuficiência cardíaca é fisiopatologicamente um transudato. \n\nContudo, a paciente faz uso de diurético de alça (furosemida), o que promove a reabsorção preferencial de água em relação a macromoléculas no espaço pleural. Isso concentra as proteínas e a desidrogenase láctica (DHL), fazendo com que o líquido preencha os Critérios de Light (relação proteína pleural/sérica maior que 0,5), gerando um \"falso exsudato\" (falso-positivo para exsudato).\n\nAnálise das Alternativas:\n\nAlternativa A - Incorreta. Uma relação entre DHL pleural e sérico de 0,68 é maior que 0,6, preenchendo mais um critério clássico de Light para exsudato. Esse achado reforça a classificação laboratorial de exsudato pelos critérios padrão, não servindo para demonstrar que se trata de um falso-positivo.\n\nAlternativa B - Incorreta. O gradiente de albumina soro-líquido pleural é utilizado para identificar falsos exsudatos em pacientes com insuficiência cardíaca ou cirrose em uso de diuréticos. Um gradiente maior que 1,2 g/dL reclassifica o líquido como transudato. O valor apresentado de 0,9 g/dL (menor que 1,2 g/dL) mantém a classificação de exsudato verdadeiro.\n\nAlternativa C - Incorreta. Níveis de triglicérides no líquido pleural superiores a 110 mg/dL são diagnósticos de quilotórax, que é uma etiologia exsudativa verdadeira, não justificando um falso-positivo decorrente de insuficiência cardíaca.\n\nAlternativa D - Incorreta. O colesterol do líquido pleural acima de 45 a 60 mg/dL é um critério adicional utilizado para definir exsudato. O valor de 85 mg/dL corrobora o padrão de exsudato verdadeiro.\n\nAlternativa E - Correta. A dosagem de NT-proBNP no líquido pleural é uma ferramenta de alta acurácia para confirmar a etiologia cardíaca do derrame. Valores de NT-proBNP pleural superiores a 1.500 pg/mL possuem sensibilidade e especificidade elevadas para insuficiência cardíaca. Portanto, o achado de 3.000 pg/mL confirma a origem hemodinâmica (cardíaca) do derrame, demonstrando que a relação de proteínas elevada pelos Critérios de Light se tratava de um resultado falso-positivo decorrente da terapia diurética.\n\nGabarito: Alternativa E.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Derrame Pleural",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  },
+  {
+    "id": "AJUDA_622a1dd9-6e21-4286-ba4a-e35c8b3de2da",
+    "originalId": "622a1dd9-6e21-4286-ba4a-e35c8b3de2da",
+    "statement": "De acordo com a Política Nacional de Atenção Básica definida na Portaria nº 2.436/2017, é uma atribuição específica do médico de família e comunidade na Estratégia Saúde da Família:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Implementar e manter atualizados rotinas, protocolos e fluxos relacionados à sua área de competência na UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Responsabilizar-se pelo acompanhamento da população adscrita ao longo do tempo no que se refere às múltiplas situações de doenças e agravos, e às necessidades de cuidados preventivos, permitindo a longitudinalidade do cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar a necessidade de internação hospitalar ou domiciliar, mantendo a responsabilização pelo acompanhamento da pessoa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar ações de educação em saúde à população adscrita, conforme planejamento da equipe e utilizando abordagens adequadas às necessidades desse público.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental distinguir as atribuições comuns a todos os profissionais da equipe de Atenção Básica das atribuições específicas de cada categoria profissional, conforme detalhado na Política Nacional de Atenção Básica (PNAB), estabelecida pela Portaria nº 2.436/2017.\n\nAlternativa (a) Incorreta: Implementar e manter atualizados rotinas, protocolos e fluxos é uma atribuição comum a todos os profissionais da equipe de Atenção Básica, e não exclusiva do médico. O objetivo é que toda a equipe participe da organização dos processos de trabalho na Unidade Básica de Saúde (UBS).\n\nAlternativa (b) Incorreta: A responsabilização pelo acompanhamento da população ao longo do tempo (longitudinalidade) e o cuidado preventivo são diretrizes da Atenção Básica e devem ser operacionalizados por todos os membros da equipe (médicos, enfermeiros, técnicos de enfermagem, agentes comunitários, etc.). Portanto, trata-se de uma atribuição comum.\n\nAlternativa (c) Correta: De acordo com a PNAB 2017, no item que descreve as atribuições específicas do médico, consta expressamente a responsabilidade de indicar a necessidade de internação hospitalar ou domiciliar, mantendo a responsabilização pelo acompanhamento da pessoa. Esta é uma competência clínica e legal do profissional médico dentro do arranjo da Estratégia Saúde da Família.\n\nAlternativa (d) Incorreta: A realização de ações de educação em saúde é uma atribuição comum a todos os profissionais da equipe de Atenção Básica. O trabalho educativo deve ser transversal e realizado por todos os integrantes, utilizando abordagens adequadas para promover a autonomia dos usuários.\n\nEm resumo, enquanto as alternativas A, B e D descrevem responsabilidades compartilhadas por toda a equipe multiprofissional, a alternativa C aponta uma função diagnóstica e decisória específica da prática médica dentro do sistema de saúde.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  },
+  {
+    "id": "AJUDA_622ae796-ebad-4ec5-887e-8a89321a59d3",
+    "originalId": "622ae796-ebad-4ec5-887e-8a89321a59d3",
+    "statement": "Médico faz assistência de recém-nascido (RN), cuja mãe realizou, na sala de parto, teste rápido de HIV, com resultado positivo. No acompanhamento pré-natal, as sorologias para HIV e demais doenças infecciosas pesquisadas foram todas negativas e a mãe não utilizou qualquer medicamento nessa gestação. A respeito da profilaxia para o HIV desse RN, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está contraindicada profilaxia antirretroviral ou qualquer outra medicação profilática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O RN deve receber profilaxia com tenofovir, lamivudina e dolutegravir a partir do primeiro dia de vida e usar tais medicações até completar 1 ano de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O RN deve iniciar profilaxia com zidovudina, lamivudina e raltegravir e manter tais medicações até as 4 cargas virais do HIV do bebê virem negativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O RN deve receber profilaxia com zidovudina, lamivudina e raltegravir por 4 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O RN deve receber profilaxia por meio de monoterapia com zidovudina por 4 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um recém-nascido (RN) exposto ao HIV em uma situação de alto risco de transmissão vertical. A mãe apresentou sorologia negativa durante o pré-natal, mas testou positivo no parto e não utilizou antirretrovirais durante a gestação. Isso significa que a carga viral materna no momento do nascimento é desconhecida e, provavelmente, elevada, o que exige uma intervenção profilática agressiva no RN.\n\nCLASSIFICAÇÃO DE RISCO E PROTOCOLO\n\nDe acordo com as diretrizes do Ministério da Saúde (PCDT de Transmissão Vertical), a profilaxia do RN exposto é dividida em:\n\n1. Baixo Risco: RN de mãe que usou terapia antirretroviral (TARV) adequadamente e apresenta carga viral indetectável (menor que 50 cópias) por pelo menos as últimas 4 semanas de gestação. Conduta: Zidovudina (AZT) por 4 semanas.\n\n2. Alto Risco: RN de mãe que não realizou o pré-natal, ou não usou TARV, ou iniciou tardiamente, ou apresenta carga viral detectável/desconhecida no momento do parto. Conduta: Terapia combinada com três fármacos (Zidovudina + Lamivudina + Raltegravir) por 4 semanas.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A profilaxia é fundamental e deve ser iniciada preferencialmente nas primeiras 4 horas de vida para reduzir o risco de soroconversão do bebê.\n\nAlternativa b) Incorreta. O Tenofovir e o Dolutegravir são utilizados preferencialmente no tratamento de adultos e crianças maiores, não compondo o esquema padrão de profilaxia para o recém-nascido. O tempo de 1 ano também está incorreto, já que a profilaxia dura 4 semanas.\n\nAlternativa c) Incorreta. Embora cite os medicamentos corretos para alto risco, a duração da profilaxia é fixa (4 semanas). Não se deve manter a medicação até o resultado das cargas virais, que fazem parte do protocolo de diagnóstico tardio do RN e não da profilaxia imediata.\n\nAlternativa d) Correta. O RN é classificado como alto risco porque a mãe não fez tratamento durante a gravidez. A recomendação atual para esses casos é o uso de Zidovudina (AZT), Lamivudina (3TC) e Raltegravir (RAL) pelo período de 4 semanas (28 dias).\n\nAlternativa e) Incorreta. A monoterapia com Zidovudina (AZT) é indicada apenas para RNs de baixo risco (mães com carga viral indetectável comprovada). No caso em questão, a falta de tratamento materno impõe a necessidade de terapia tripla.\n\nGabarito: Alternativa d.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  },
+  {
+    "id": "AJUDA_62326716-6626-4c5b-9e5c-10404a29a35f",
+    "originalId": "62326716-6626-4c5b-9e5c-10404a29a35f",
+    "statement": "Em relação aos retalhos cutâneos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A inclusão da fáscia melhora a perfusão de um retalho cutâneo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Retalhos cutâneos, por possuírem circulação própria, podem ser confeccionados longos e estreitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Retalhos cutâneos precisam de leito com boa circulação para integrarem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suturas tensas e situações clínicas, que facilitam hipóxia, não alteram a viabilidade de retalhos cutâneos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Um retalho cutâneo arterial precisa ter base alargada e comprimento limitado ao da base.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): A inclusão da fáscia profunda ao retalho (transformando-o em um retalho fasciocutâneo) melhora significativamente a sua vascularização. A fáscia possui plexos vasculares importantes (pré-fascial e subfascial) que emitem ramos perfurantes para a pele. Ao incluir essa camada, o cirurgião garante um aporte sanguíneo mais robusto e confiável, permitindo a criação de retalhos mais longos com menor risco de necrose em comparação aos retalhos cutâneos simples (ao acaso).\n\nAlternativa B (Incorreta): Retalhos cutâneos do tipo \"ao acaso\" (random) dependem de plexos subdérmicos e não de uma artéria específica. Por isso, eles são estritamente limitados pela relação entre comprimento e largura (geralmente 1:1 ou 2:1, dependendo da região do corpo). Se forem feitos de forma muito estreita e longa, a pressão de perfusão não será suficiente para atingir a extremidade distal, resultando em isquemia e necrose.\n\nAlternativa C (Incorreta): Esta alternativa descreve a fisiologia dos enxertos, não dos retalhos. Os enxertos são segmentos de tecido desprovidos de suprimento sanguíneo próprio e precisam obrigatoriamente de um leito receptor bem vascularizado para \"pegar\" (integrar). Os retalhos, por possuírem seu próprio pedículo vascular, podem ser utilizados justamente para cobrir áreas com má circulação, como ossos sem periósteo ou tendões sem paratendão.\n\nAlternativa D (Incorreta): A viabilidade de um retalho é altamente dependente das condições clínicas e da técnica cirúrgica. Suturas com tensão excessiva comprimem os vasos capilares e dificultam o fluxo sanguíneo, sendo uma das principais causas de necrose. Da mesma forma, situações de hipóxia sistêmica, tabagismo (que causa vasoconstrição e trombose microvascular) e diabetes descompensada prejudicam severamente a sobrevivência do retalho.\n\nAlternativa E (Incorreta): Os retalhos arteriais (ou axiais) são desenhados ao longo do eixo de uma artéria cutânea conhecida. Diferentemente dos retalhos ao acaso, a sua viabilidade não depende da largura da base, mas sim da integridade do vaso arterial que o nutre. Por terem um suprimento arterial direto, eles podem ser longos e possuir uma base (pedículo) muito estreita, desde que o vaso esteja preservado.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Plástica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  },
+  {
+    "id": "AJUDA_62348ae7-1dfb-444c-aaca-4dc0c32d40d1",
+    "originalId": "62348ae7-1dfb-444c-aaca-4dc0c32d40d1",
+    "statement": "Um lactente de 10 meses de vida foi levado à consulta ambulatorial. A mãe referiu alimentação predominante com leite de vaca integral desde os quatro meses, bem como palidez progressiva. Ao exame, o paciente mostrava-se ativo, com palidez cutânea leve, sem sopros; FC = 124 bpm, FR = 30 irpm, SpO2 = 98%, e peso e estatura adequados. Hemograma mostrou Hb = 8,7 g/dL; VCM = 68 fL e RDW aumentado. A estratégia mais efetiva para prevenção desse tipo de anemia é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "introdução de leite de vaca integral a partir dos dois meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "introdução de ferro na dieta após seis meses, com alimentos ricos e suplementação, quando indicada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "restrição completa de carnes por um ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "redução de ingestão de frutas cítricas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro clássico de anemia ferropriva, a causa mais comum de anemia na infância. Os dados que corroboram esse diagnóstico são: a idade (10 meses), a exposição precoce ao leite de vaca integral (desde os 4 meses), a palidez progressiva e os achados laboratoriais de anemia (Hb 8,7 g/dL), microcitose (VCM 68 fL) e anisocitose (RDW aumentado). O leite de vaca integral é pobre em ferro, tem baixa biodisponibilidade deste mineral e pode causar micro-hemorragias na mucosa intestinal, agravando a depleção de ferro.\n\nAnálise das Alternativas:\n\nAlternativa A: Incorreta. A introdução de leite de vaca integral antes dos 12 meses de vida é um dos principais fatores de risco para anemia ferropriva. O recomendado é o aleitamento materno exclusivo até os 6 meses e a manutenção do leite materno ou uso de fórmulas infantis adequadas até pelo menos 1 ano de idade.\n\nAlternativa B: Correta. Esta é a estratégia fundamental para a prevenção. Após os 6 meses, as reservas de ferro do lactente (acumuladas durante a gestação) começam a se esgotar, tornando necessária a ingestão de alimentos complementares ricos em ferro (como carnes e leguminosas). Além disso, a Sociedade Brasileira de Pediatria recomenda a suplementação profilática de ferro elementar para lactentes, visando garantir o aporte necessário para o crescimento e desenvolvimento neuropsicomotor.\n\nAlternativa C: Incorreta. A carne é a melhor fonte de ferro heme, que é a forma de ferro mais facilmente absorvida pelo corpo humano. A restrição de carnes na dieta da criança aumenta drasticamente o risco de anemia ferropriva e outras deficiências nutricionais.\n\nAlternativa D: Incorreta. As frutas cítricas são ricas em vitamina C (ácido ascórbico), que atua como um potente facilitador da absorção do ferro não-heme (encontrado em vegetais e leguminosas). Portanto, a recomendação correta é incentivar o consumo de frutas cítricas logo após as principais refeições para otimizar a absorção do ferro.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Aleitamento Materno",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  },
+  {
+    "id": "AJUDA_62392cd5-b111-40f4-8a41-31cd75fc2633",
+    "originalId": "62392cd5-b111-40f4-8a41-31cd75fc2633",
+    "statement": "Paciente de 40 anos comparece à consulta obstétrica pré-concepção. Encontra-se com obesidade grau I e diabetes tipo 2 há 8 anos, em uso de metformina. Os exames realizados recentemente mostram funções renal e cardíaca adequadas, fundo de olho sem alterações e hemoglobina glicada de 9,6 %. O quadro em questão pode elevar o risco das seguintes anomalias fetais:",
+    "options": [
+      {
+        "id": "A",
+        "text": "agenesia renal e deleção de falanges.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hipertelorismo e implantação baixa de orelha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cisto de plexo coroide e estenose uretral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "defeito de septo interventricular e síndrome da regressão caudal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto central desta questão é o impacto da hiperglicemia materna durante o período de organogênese (primeiras 8 semanas de gestação). Pacientes com diabetes mellitus pré-gestacional (tipo 1 ou tipo 2) mal controlado, como evidenciado pela hemoglobina glicada (HbA1c) de 9,6%, apresentam um risco significativamente aumentado de malformações congênitas. O ideal para uma programação gestacional seria uma HbA1c abaixo de 6,5%.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a agenesia renal possa ocorrer na embriopatia diabética, a deleção de falanges não é um achado clássico ou frequente associado ao diabetes materno. Malformações de extremidades no diabetes costumam envolver mais a parte distal da coluna e membros inferiores (como na regressão caudal).\n\nb) Incorreta. Hipertelorismo (aumento da distância entre os olhos) e implantação baixa de orelhas são dismorfismos faciais mais comumente associados a cromossomopatias (como a síndrome de Down ou de Turner) ou outras síndromes genéticas específicas, não sendo marcadores típicos do diabetes pré-gestacional descompensado.\n\nc) Incorreta. O cisto do plexo coroide é considerado um \"marcador suave\", frequentemente transitório ou associado à trissomia do cromossomo 18 (síndrome de Edwards). A estenose uretral também não figura entre as malformações urogenitais mais prevalentes relacionadas ao diabetes, que seriam a agenesia renal, duplicação ureteral e hidronefrose.\n\nd) Correta. Esta alternativa apresenta dois exemplos clássicos da embriopatia diabética:\n1. Defeitos cardíacos: são as malformações mais comuns no diabetes pré-gestacional, sendo a comunicação interventricular (defeito de septo interventricular) e a transposição de grandes artérias bastante frequentes.\n2. Síndrome da regressão caudal: é a malformação mais específica (patognomônica) do diabetes materno. Embora rara na população geral, sua ocorrência está fortemente ligada ao diabetes mal controlado, caracterizando-se por graus variáveis de agenesia lombossacra e alterações em membros inferiores.\n\nEm resumo, a hiperglicemia atua como um teratógeno potente. Quanto maior o nível da hemoglobina glicada no período periconcepcional, maior a probabilidade de malformações, especialmente cardíacas e do sistema esquelético/tubo neural.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus Tipo 2",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  },
+  {
+    "id": "AJUDA_623c0c61-00e9-4f4a-864e-3851f2348959",
+    "originalId": "623c0c61-00e9-4f4a-864e-3851f2348959",
+    "statement": "Em relação ao manejo da hipertensão arterial resistente, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A causa secundária mais comum de hipertensão resistente é a apneia obstrutiva do sono.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O uso de antagonista de aldosterona, como a espironolactona, é indicado em casos refratários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se associar inibidor da ensima conversora de angiotensina (ECA) com betabloqueador como primeira linha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A combinação de três anti-hipertensivos em doses máximas garante controle em todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Definição de Hipertensão Arterial Resistente (HAR): Considera-se hipertenso resistente o paciente que mantém a pressão arterial acima das metas (geralmente acima de 140/90 mmHg) mesmo com o uso de três classes de anti-hipertensivos em doses otimizadas, sendo obrigatoriamente uma delas um diurético. Também é considerado resistente o paciente que atinge a meta, mas necessita de quatro ou mais medicamentos para isso.\n\nAlternativa (a) CORRETA: De acordo com as principais diretrizes, como a Diretriz Brasileira de Hipertensão Arterial, a Apneia Obstrutiva do Sono (AOS) é identificada como a causa secundária mais prevalente em pacientes com hipertensão resistente, estando presente em mais de 60% a 80% desses casos. O tratamento da AOS com CPAP pode auxiliar significativamente no controle tensional.\n\nAlternativa (b) INCORRETA: Embora o antagonista da aldosterona (espironolactona) seja o medicamento de escolha como quarto fármaco no tratamento da hipertensão resistente, a alternativa utiliza o termo \"casos refratários\". Na nomenclatura atual, a Hipertensão Arterial Refratária é um subgrupo ainda mais grave da HAR, definido como o não controle da pressão mesmo com o uso de cinco ou mais fármacos, incluindo a espironolactona e um diurético tiazídico de longa ação. Portanto, a espironolactona é o tratamento para transformar a HAR em hipertensão controlada, e não um recurso exclusivo para o estágio já definido como refratário.\n\nAlternativa (c) INCORRETA: A terapia de primeira linha para o tratamento da hipertensão resistente consiste na combinação tripla de um Inibidor da Enzima Conversora de Angiotensina (IECA) ou Bloqueador dos Receptores de Angiotensina (BRA), associado a um Bloqueador de Canais de Cálcio (BCC) e a um Diurético Tiazídico (preferencialmente clortalidona ou indapamida). O betabloqueador geralmente entra como quinta opção de tratamento, a menos que o paciente possua uma indicação específica (como insuficiência cardíaca ou coronariopatia).\n\nAlternativa (d) INCORRETA: O uso de três anti-hipertensivos não garante o controle em todos os casos. Por definição, se o paciente utiliza três drogas em doses máximas e a pressão permanece elevada, ele entra na classificação de hipertensão resistente. Nesses casos, é necessário investigar causas secundárias, falta de adesão ao tratamento, efeito do jaleco branco ou prosseguir com a adição de novos fármacos (como a espironolactona). Na medicina, afirmações que utilizam termos absolutos como \"garante em todos os casos\" raramente são verdadeiras.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:51:52.590Z"
+  }
+]

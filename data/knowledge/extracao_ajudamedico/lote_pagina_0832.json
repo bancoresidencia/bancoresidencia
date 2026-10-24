@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_e7cfbe40-deb2-4ad8-9661-e8c5377383a0",
+    "originalId": "e7cfbe40-deb2-4ad8-9661-e8c5377383a0",
+    "statement": "Em um programa de rastreamento de câncer de colo uterino, 200 mulheres foram testadas com um exame de DNA-HPV. Após confirmação diagnóstica, obteve-se a seguinte tabela:\n\nQual é a sensibilidade do teste de DNA-HPV neste cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "47,5%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "75%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "90%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "92,5%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão de epidemiologia aplicada à clínica, é fundamental compreender o conceito de sensibilidade. A sensibilidade define a capacidade de um teste diagnóstico de identificar corretamente os indivíduos que realmente possuem a doença. Em termos práticos, é a proporção de resultados positivos entre todos os doentes.\n\nA fórmula para o cálculo da sensibilidade é: Sensibilidade = Verdadeiros Positivos (VP) / Total de Doentes (VP + Falsos Negativos).\n\nAnalisando a tabela fornecida:\n1. Identificamos os Verdadeiros Positivos (VP): são as mulheres que possuem a doença e tiveram o teste positivo. De acordo com a primeira célula da tabela, esse valor é 36.\n2. Identificamos o Total de Doentes: é a soma da coluna \"Doença Presente\" (36 com teste positivo + 4 com teste negativo), resultando em 40 mulheres doentes.\n3. Aplicamos o cálculo: 36 dividido por 40.\n4. 36 / 40 = 0,9. Multiplicando por 100 para obter a porcentagem, chegamos a 90%.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Este valor não corresponde a nenhum dos cálculos principais de acurácia diagnóstica (sensibilidade, especificidade, VPP ou VPN) baseados nos dados da tabela.\n\nAlternativa b) Incorreta. O valor de 75% corresponde ao Valor Preditivo Positivo (VPP) do teste. O VPP é calculado dividindo os Verdadeiros Positivos pelo total de testes positivos (36 / 48 = 0,75 ou 75%). O VPP indica a probabilidade de uma pessoa ter a doença, dado que seu teste foi positivo.\n\nAlternativa c) Correta. Como demonstrado no cálculo acima (36 / 40), a sensibilidade do teste de DNA-HPV neste cenário é de 90%. Isso significa que o teste foi capaz de detectar 90% das mulheres que efetivamente tinham a doença.\n\nAlternativa d) Incorreta. O valor de 92,5% corresponde à especificidade do teste. A especificidade é a capacidade do teste de identificar corretamente os indivíduos saudáveis (Verdadeiros Negativos / Total de Não Doentes). Calculando pela tabela: 148 / 160 = 0,925 ou 92,5%.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/775b2ce9690ee23de2ce14987d7e75afe15526767758d9679ee2dd419de18096.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e7cfbe40-deb2-4ad8-9661-e8c5377383a0_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  },
+  {
+    "id": "AJUDA_e7d479fc-9ce9-4d89-badf-249295327a36",
+    "originalId": "e7d479fc-9ce9-4d89-badf-249295327a36",
+    "statement": "Um homem de 25 anos recebeu há 2 semanas tratamento para uretrite gonocócica, com sucesso. Atualmente, procura atendi- mento médico por estar há 2 dias com febre, mal estar e lesões cutâneas eritematosas, máculas e pápulas, difusamente presentes no tórax, palma das mãos e planta dos pés, não pruriginosas e poliadenomegalia acometendo região cervical, axilas e inguinais. Não se lembra de ter apresentado ulceração na região genital, mas refere ter tido ulceração na mucosa oral que pensou ser uma afta. Resultado de exames sorológicos só estarão disponíveis em 72 horas. O médico opta por tratamento empírico baseado nos dados clínicos e de história. A conduta mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "penicilina benzatina 2,4 milhões U IM, dose única.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "penicilina G benzatina 2,4 milhões U IM, 1x por semana, durante 3 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ceftriaxona 2 g EV ou IM, 1x por dia, durante 3 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "azitromicina 1 g VO no primeiro dia e, a seguir, 500 mg/dia por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "doxiciclina 100 mg VO, 2x ao dia, por 1 semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico Clínico:\nO quadro clínico descrito é clássico de sífilis secundária. O paciente apresenta uma história recente de outra infecção sexualmente transmissível (uretrite gonocócica), o que aumenta o risco de coinfecções. A presença de uma ulceração prévia (oral, no caso), seguida de febre, poliadenomegalia e, crucialmente, exantema maculopapular que acomete palmas das mãos e plantas dos pés (sinal de Biett), é patognomônica de sífilis na fase secundária. A ausência de prurido nas lesões reforça esse diagnóstico.\n\nAnálise das Alternativas:\n\na) Correta. De acordo com os protocolos do Ministério da Saúde e órgãos internacionais (como o CDC), o tratamento de escolha para sífilis primária, secundária ou latente recente (com menos de um ano de evolução) é a penicilina G benzatina, na dose de 2,4 milhões de unidades, administrada por via intramuscular em dose única. Como o paciente apresenta sintomas claros de fase secundária iniciados há poucos dias, a dose única é a conduta padrão.\n\nb) Incorreta. O esquema de 2,4 milhões de unidades de penicilina benzatina, uma vez por semana, durante três semanas (totalizando 7,2 milhões de unidades), é indicado para casos de sífilis latente tardia (mais de um ano de evolução), sífilis latente de tempo indeterminado ou sífilis terciária. Não é o caso deste paciente, que apresenta uma fase aguda/recente bem definida.\n\nc) Incorreta. A ceftriaxona pode ser utilizada como uma opção de segunda linha em casos específicos (como neurossífilis ou em situações de alergia à penicilina em que a dessensibilização não é possível), mas a dose e a duração propostas na alternativa não correspondem ao tratamento padrão para sífilis secundária. A penicilina benzatina continua sendo o tratamento de primeira escolha e o mais eficaz.\n\nd) Incorreta. A azitromicina não é recomendada como tratamento de primeira linha para a sífilis devido aos altos índices de resistência do *Treponema pallidum* ao medicamento relatados em diversas regiões, além de não ser o esquema preconizado pelos protocolos vigentes.\n\ne) Incorreta. A doxiciclina (100 mg, via oral, duas vezes ao dia) é uma alternativa para pacientes alérgicos à penicilina. No entanto, para a sífilis primária, secundária ou latente recente, a duração do tratamento deve ser de 15 dias, e não de apenas uma semana como sugere a alternativa. Para sífilis tardia, a duração seria de 30 dias.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  },
+  {
+    "id": "AJUDA_e7e584fd-5bbc-4396-a3d5-59aefbdfc292",
+    "originalId": "e7e584fd-5bbc-4396-a3d5-59aefbdfc292",
+    "statement": "Sobre hemorragia digestiva alta, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A lesão de Dieulafoy não é causa de hemorragia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O balão de Sengstaken-Blakmore está indicado no tratamento definitivo da hemorragia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacientes que estão hemodinamicamente instáveis, apesar da reposição volêmica, e que ainda mantêm taquicardia, choque e sinais de hemorragia ativa, devem ser submetidos ao exame endoscópico de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pacientes com hemorragia digestiva alta que apresentam hipotensão após o uso de 2 bolsas de concentrado de hemácias devem ser submetidos a cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pacientes que não respondem ao tratamento clínico da hemorragia digestiva alta e mantêm o sangramento e hipotensão devem ser submetidos ao tratamento cirúrgico com laparotomia exploradora com gastrectomia total por não se saber o sítio do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta: A lesão de Dieulafoy é uma causa clássica de hemorragia digestiva alta, embora menos frequente que as úlceras pépticas. Ela consiste em uma artéria submucosa de calibre persistente que sofre erosão da mucosa, podendo causar sangramentos arteriais graves, localizando-se geralmente na pequena curvatura gástrica.\n\nAlternativa b) Incorreta: O balão de Sengstaken-Blakemore é uma medida de salvamento temporária, utilizada como ponte para estabilizar o paciente com sangramento por varizes esofágicas que não respondeu à terapia inicial. Ele não é um tratamento definitivo, pois o risco de ressangramento após a sua desinsuflação é alto, além de haver risco de necrose esofágica se permanecer por muito tempo.\n\nAlternativa c) Correta: A endoscopia digestiva alta (EDA) é o padrão-ouro tanto para o diagnóstico quanto para o tratamento da hemorragia digestiva alta. Em pacientes com instabilidade hemodinâmica persistente e sinais de sangramento ativo, a endoscopia de urgência deve ser realizada o mais breve possível, assim que houver uma estabilização mínima ou concomitante à ressuscitação, para tentar interromper o foco hemorrágico.\n\nAlternativa d) Incorreta: A indicação cirúrgica na hemorragia digestiva alta é reservada para casos específicos, como falha nas tentativas de hemostasia endoscópica (geralmente após duas tentativas), choque refratário a grandes volumes ou sangramento persistente que exige múltiplas transfusões (geralmente acima de 6 unidades em 24 horas). O uso de apenas 2 bolsas de sangue não é critério para indicar laparotomia.\n\nAlternativa e) Incorreta: A cirurgia \"às cegas\" com gastrectomia total é uma conduta inadequada. Caso o tratamento endoscópico falhe e o paciente precise de cirurgia, o cirurgião deve buscar identificar o local do sangramento através de manobras como a gastrotomia ampla para inspeção direta. A ressecção deve ser a mais econômica possível e direcionada ao sítio do sangramento, uma vez que a gastrectomia total possui altíssima morbimortalidade.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  },
+  {
+    "id": "AJUDA_e7ecefb2-4912-4080-977b-5072fd0c8012",
+    "originalId": "e7ecefb2-4912-4080-977b-5072fd0c8012",
+    "statement": "A toxoplasmose congênita pode causar sérias complicações fetais. Sobre o rastreamento e tratamento da toxoplasmose durante a gravidez, há as seguintes afirmativas:\n\nI. A pesquisa de toxoplasmose é obrigatória no Brasil.\nII. O tratamento da toxoplasmose iniciado nas primeiras três semanas de soroconversão reduz a transmissão entre mãe e o feto.\nIII. Não há evidências de que o tratamento da toxoplasmose durante a gravidez melhora os resultados neonatais.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, V, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das Afirmativas:\n\nAfirmativa I (Falsa): Embora o rastreamento da toxoplasmose seja rotina no pré-natal e preconizado pelos manuais do Ministério da Saúde e pela FEBRASGO, ele não é considerado obrigatório no Brasil sob o ponto de vista legal federal estrito. Diferente de outros exames que possuem legislação específica de obrigatoriedade universal, o rastreamento da toxoplasmose é uma recomendação de protocolo assistencial, o que torna a afirmação falsa em contextos de provas que exigem precisão terminológica.\n\nAfirmativa II (Verdadeira): A eficácia da intervenção na toxoplasmose gestacional depende diretamente do tempo. O tratamento com Espiramicina, quando instituído precocemente, idealmente nas primeiras três semanas após a soroconversão materna, é eficaz em reduzir a taxa de transmissão vertical, impedindo que o parasita atravesse a placenta e infecte o feto.\n\nAfirmativa III (Verdadeira): Esta é uma afirmação recorrente em questões de alto nível baseadas em medicina baseada em evidências. Apesar de o tratamento reduzir a transmissão da mãe para o filho (conforme a afirmativa II), grandes estudos e revisões sistemáticas (como o estudo SYROCOT) indicam que não existem evidências fortes e de alta qualidade demonstrando que o tratamento realizado durante a gravidez consiga melhorar o prognóstico clínico neonatal ou reduzir sequelas a longo prazo nos casos em que a infecção fetal já ocorreu. \n\nAnálise das Alternativas:\n\na) F, V, V. Alternativa correta. A primeira afirmativa peca pelo rigor legal, a segunda descreve corretamente a redução da transmissão pelo tempo de início do tratamento e a terceira reflete o estado atual da evidência científica sobre desfechos neonatais.\n\nb) V, V, V. Incorreta. A primeira afirmativa é falsa por não haver obrigatoriedade por lei federal.\n\nc) V, F, F. Incorreta. A afirmativa II é um conceito clássico de prevenção de transmissão vertical e a afirmativa III é reconhecida pelas principais metanálises sobre o tema.\n\nd) F, F, F. Incorreta. As afirmativas II e III são tecnicamente verdadeiras dentro da literatura médica especializada.\n\nGabarito: Alternativa (a).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  },
+  {
+    "id": "AJUDA_e7f8be39-8979-4acb-b93e-d552829c97c7",
+    "originalId": "e7f8be39-8979-4acb-b93e-d552829c97c7",
+    "statement": "Qual é a principal estratégia de prevenção da diabetes tipo 2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uso de medicamentos preventivos para pacientes com risco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prática regular de exercícios físicos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Monitoramento constante da glicemia em adultos saudáveis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Restrição total do consumo de carboidratos na dieta",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A prevenção do Diabetes Mellitus tipo 2 (DM2) fundamenta-se na intervenção sobre os fatores de risco modificáveis, sendo a Mudança de Estilo de Vida (MEV) a estratégia primordial. O objetivo central é combater a resistência à insulina e a disfunção das células beta pancreáticas, geralmente associadas ao excesso de peso e à inatividade física.\n\nAlternativa (a) Incorreta. O uso de medicamentos, como a metformina, pode ser indicado em casos específicos de pré-diabetes (especialmente em pacientes com IMC acima de 35 kg/m², idade inferior a 60 anos ou mulheres com história de diabetes gestacional). No entanto, não é a estratégia principal para a população geral. Estudos clínicos robustos demonstraram que as mudanças de hábito são superiores à intervenção farmacológica na redução da progressão para o diabetes.\n\nAlternativa (b) Correta. A atividade física regular é o pilar preventivo de maior impacto. O exercício atua por mecanismos diretos, como o aumento da translocação de transportadores de glicose (GLUT-4) para a membrana celular e a melhora da sensibilidade à insulina no músculo esquelético, e por mecanismos indiretos, como o auxílio no controle ponderal e a redução da gordura visceral, que é pró-inflamatória e indutora de resistência insulínica.\n\nAlternativa (c) Incorreta. O monitoramento da glicemia é uma ferramenta de rastreamento (screening) e diagnóstico. Embora essencial para identificar indivíduos em risco ou em estágios iniciais da doença, o ato de medir a glicose por si só não impede a fisiopatologia do diabetes se não houver uma intervenção comportamental associada.\n\nAlternativa (d) Incorreta. Não existe indicação de restrição total de carboidratos para a prevenção do diabetes. As diretrizes nutricionais recomendam uma dieta equilibrada, focada na redução da ingestão de açúcares simples e carboidratos refinados, priorizando alimentos ricos em fibras e com baixo índice glicêmico. A restrição total é nutricionalmente inadequada e de difícil manutenção a longo prazo.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  },
+  {
+    "id": "AJUDA_e808f116-b712-4fdc-973c-7ab9e1d9ff7f",
+    "originalId": "e808f116-b712-4fdc-973c-7ab9e1d9ff7f",
+    "statement": "Em relação à hipertensão arterial e suas complicações durante a gestação e o puerpério, atribua V (verdadeiro) ou F (falso) às afirmativas a seguir.\n( ) A pressão arterial atinge o pico de três a seis dias após o parto.\n( ) Acidentes vasculares cerebrais associados à gravidez têm maior probabilidade de ocorrer no período pós-parto.\n( ) Captopril e enalapril não podem ser usados em pacientes lactantes.\n( ) Metildopa é um agente anti-hipertensivo potente e tem um início de ação rápido.\n( ) Não se deve usar metoprolol, pois está associado à restrição de crescimento fetal.\nAssinale a alternativa que contém, de cima para baixo, a sequência correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, F, F, F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V, F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, F, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, V, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "F, F, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CORREÇÃO COMENTADA DA QUESTÃO\n\nEsta questão aborda o manejo farmacológico e a história natural da hipertensão na gestação e no puerpério, tópicos frequentes em provas de residência médica. Vamos analisar cada afirmativa para identificar a sequência correta.\n\n(V) A pressão arterial atinge o pico de três a seis dias após o parto: Esta afirmativa é verdadeira. No período pós-parto imediato, ocorre uma mobilização expressiva de fluidos do espaço extravascular para o intravascular, além da interrupção da circulação feto-placentária de baixa resistência. Estudos mostram que o pico da pressão arterial costuma ocorrer entre o 3º e o 6º dia após o nascimento, o que exige monitoramento rigoroso das puérperas, especialmente as que tiveram pré-eclâmpsia.\n\n(V) Acidentes vasculares cerebrais associados à gravidez têm maior probabilidade de ocorrer no período pós-parto: Verdadeiro. O risco de AVC hemorrágico e isquêmico aumenta significativamente no puerpério (especialmente nas primeiras 6 semanas), superando o risco durante a gestação propriamente dita. Isso se deve às variações hemodinâmicas abruptas e ao estado de hipercoagulabilidade persistente.\n\n(F) Captopril e Enalapril não podem ser usados em pacientes lactantes: Falso. Embora os Inibidores da Enzima Conversora de Angiotensina (IECA) sejam contraindicados durante a gestação (devido ao risco de malformações renais e oligodramnia), o Captopril e o Enalapril são considerados seguros durante a amamentação. Eles possuem baixa excreção no leite materno e são recomendados por diretrizes nacionais e internacionais para o tratamento da hipertensão pós-parto.\n\n(F) Metildopa é um agente anti-hipertensivo potente e tem um início de ação rápido: Falso. A Metildopa é um agonista alfa-2 adrenérgico de ação central. Embora seja a droga de escolha para o controle crônico da hipertensão na gestação devido ao seu perfil de segurança fetal, ela é considerada uma droga de potência leve a moderada e possui início de ação lento (demora cerca de 4 a 6 horas para agir). Por isso, nunca deve ser usada isoladamente em crises hipertensivas de urgência ou emergência.\n\n(F) Não se deve usar Metoprolol, pois está associado à restrição de crescimento fetal: Falso. O betabloqueador classicamente associado à restrição de crescimento fetal (RCF) e hipoglicemia neonatal é o Atenolol. O Metoprolol, por sua vez, é considerado seguro e pode ser utilizado na gestação quando indicado. Outro betabloqueador muito utilizado nesta fase é o Labetalol (embora menos disponível no Brasil sob forma oral).\n\nAnálise das Alternativas:\nA sequência correta é V, V, F, F, F.\n\nGabarito: Letra (a).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  },
+  {
+    "id": "AJUDA_e80dee79-bc0f-489a-b0b4-ec94a1f2f7b2",
+    "originalId": "e80dee79-bc0f-489a-b0b4-ec94a1f2f7b2",
+    "statement": "De acordo com parâmetros do Ministério da Saúde, a definição utilizada na vigilância da influenza e da covid-19 para determinar casos de síndrome respiratória aguda grave (SRAG) é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "indivíduo com febre, mesmo que referida, acompanhada de tosse ou dor de garganta e com início dos sintomas nos últimos sete dias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indivíduo com quadro respiratório agudo, caracterizado por pelo menos dois dos seguintes sinais e sintomas: febre (mesmo que referida), calafrios, dor de garganta, dor de cabeça, tosse, coriza, distúrbios olfativos ou distúrbios gustativos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "em crianças, além da febre (mesmo que referida), calafrios, dor de garganta, dor de cabeça, tosse, coriza, distúrbios olfativos ou distúrbios gustativos, também obstrução nasal, na ausência de outro diagnóstico específico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "em idosos, critérios específicos de agravamento como síncope, confusão mental, sonolência excessiva, irritabilidade e inapetência;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "indivíduo com síndrome gripal que apresenta dispneia/desconforto respiratório, ou pressão persistente no tórax, ou saturação de O2 ≤94% em ar ambiente ou coloração azulada dos lábios ou rosto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para a vigilância epidemiológica da Influenza e da COVID-19, o Ministério da Saúde estabelece dois conceitos fundamentais: Síndrome Gripal (SG) e Síndrome Respiratória Aguda Grave (SRAG). A compreensão da diferença entre eles é essencial para a correta notificação e manejo clínico.\n\nALTERNATIVA A - INCORRETA: Esta alternativa descreve uma definição simplificada de Síndrome Gripal (SG). A SG é a porta de entrada para a suspeita, mas a SRAG exige obrigatoriamente a presença de sinais que indiquem gravidade ou insuficiência respiratória, os quais não foram citados nesta opção.\n\nALTERNATIVA B - INCORRETA: Esta é a definição clássica de Síndrome Gripal (SG) adotada pelo Ministério da Saúde, especialmente após a pandemia de COVID-19. Ela descreve o quadro agudo com múltiplos sintomas (febre, tosse, cefaleia, distúrbios sensoriais), porém refere-se a casos leves ou moderados que não apresentam os critérios de gravidade respiratória.\n\nALTERNATIVA C - INCORRETA: Embora crianças apresentem particularidades na Síndrome Gripal, como a obstrução nasal, os sintomas listados nesta alternativa ainda se enquadram na definição de SG. Para crianças, a definição de SRAG incluiria sinais como batimento de asa de nariz, tiragem intercostal, cianose ou saturação de oxigênio reduzida.\n\nALTERNATIVA D - INCORRETA: Síncope, confusão mental e inapetência são, de fato, sinais de alerta cruciais em idosos com infecções respiratórias. No entanto, eles não compõem a definição técnica oficial de SRAG para fins de vigilância epidemiológica. A definição padrão de SRAG foca nos sinais de comprometimento do sistema respiratório.\n\nALTERNATIVA E - CORRETA: Esta alternativa apresenta a definição técnica exata de Síndrome Respiratória Aguda Grave (SRAG) conforme as diretrizes de vigilância. A SRAG é definida como um indivíduo com Síndrome Gripal que apresenta pelo menos um dos seguintes sinais de gravidade: dispneia ou desconforto respiratório; pressão ou dor persistente no tórax; saturação de oxigênio (SpO2) menor que 95% em ar ambiente; ou coloração azulada de lábios ou rosto (cianose). O valor de saturação menor ou igual a 94% é o ponto de corte clínico equivalente utilizado nos protocolos de notificação.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Covid-19",
+      "Influenza"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  },
+  {
+    "id": "AJUDA_e80f3f08-55a8-4043-8b75-a2616babfdbc",
+    "originalId": "e80f3f08-55a8-4043-8b75-a2616babfdbc",
+    "statement": "Recém-nascido filho de mãe vivendo com HIV, considerado de alto risco para infecção vertical, recebe profilaxia ao nascimento com 3 drogas antirretrovirais. Aos 14 dias de vida, apresenta carga viral de 80 cópias/mL em teste de PCR quantitativo. Qual é a conduta mais adequada diante desse resultado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender o tratamento preemptivo e iniciar tratamento antirretroviral definitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coletar imediatamente um DNA pró-viral ou uma nova carga viral para confirmação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar carga viral novamente em 30 dias e repetir em 2 semanas se o novo resultado for indetectável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Considerar o recém-nascido infectado e orientar o tratamento segundo a genotipagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender essa questão, devemos seguir as diretrizes do Ministério da Saúde sobre o diagnóstico de infecção pelo HIV em crianças expostas.\n\nO diagnóstico de infecção pelo HIV em crianças menores de 18 meses não pode ser realizado por testes sorológicos (como o ELISA), pois os anticorpos maternos (IgG) atravessam a placenta e podem permanecer na circulação do bebê por até um ano e meio. Portanto, utilizamos testes moleculares, como a carga viral (RNA-PCR) ou o DNA pró-viral.\n\nNo caso descrito, o recém-nascido é de alto risco e já está em profilaxia com três antirretrovirais (geralmente zidovudina, lamivudina e raltegravir ou nevirapina, dependendo do protocolo atual). O resultado de 80 cópias/mL aos 14 dias de vida é considerado um resultado detectável.\n\nA regra fundamental para o diagnóstico de HIV em crianças é a necessidade de confirmação. Um único resultado positivo não confirma a infecção. É necessário coletar uma segunda amostra imediatamente para afastar a possibilidade de falso positivo ou erro laboratorial.\n\nAnálise das alternativas:\n\na) Incorreta. Não se deve iniciar o tratamento definitivo (que possui critérios de dosagem e monitoramento diferentes da profilaxia) nem suspender o tratamento profilático/preemptivo sem a confirmação da infecção por uma segunda amostra. O diagnóstico ainda não está firmado.\n\nb) Correta. Diante de qualquer carga viral detectável em criança exposta ao HIV, a conduta imediata é a coleta de uma nova amostra (seja DNA pró-viral ou uma nova carga viral quantitativa) para confirmação diagnóstica. Se a segunda amostra também for detectável, o diagnóstico de infecção por HIV é confirmado.\n\nc) Incorreta. Aguardar 30 dias para uma nova coleta é um erro clínico grave. Se o recém-nascido estiver realmente infectado, o atraso no diagnóstico e no início do tratamento adequado aumenta significativamente a morbimortalidade, dada a rápida progressão da doença em lactentes.\n\nd) Incorreta. Não se pode considerar a criança infectada com apenas um exame de carga viral, especialmente com um valor baixo (80 cópias/mL). A genotipagem é um exame indicado para orientar a escolha da terapia em casos de falha terapêutica ou em situações específicas de transmissão vertical em que há suspeita de resistência materna, mas não é o exame de primeira escolha para confirmar o diagnóstico inicial neste cenário.\n\nResumo da conduta:\nPrimeiro teste positivo/detectável -> Repetir coleta imediatamente para confirmação -> Se segundo teste positivo -> Diagnóstico confirmado e início do tratamento antirretroviral (TARV) definitivo.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  },
+  {
+    "id": "AJUDA_e80fcb81-db8a-4019-8433-015325906355",
+    "originalId": "e80fcb81-db8a-4019-8433-015325906355",
+    "statement": "Lactente, masculino, 8 meses de idade, vai para consulta de puericultura. Ao checar o cartão de vacina, você observa que a criança só recebeu as vacinas no momento do parto. Quais vacinas indicadas para este bebê logo após a consulta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumocócica 10-valente, Meningocócica C, Pentavalente, VIP (vacina poliomielite inativada) e rotavírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumocócica 10-valente, Meningocócica C, Pentavalente e Febre amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Meningococica C, Pentavalente, VIP (vacina poliomielite inativada), Febre amarela e Rotavirus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pneumocócica 10-valente, Meningocócica C, Pentavalente e VIP (vacina poliomielite inativada).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, precisamos analisar o calendário vacinal do Programa Nacional de Imunizações (PNI) e as regras de atraso vacinal (resgate) para uma criança de 8 meses.\n\nO paciente recebeu apenas as vacinas de recém-nascido (BCG e Hepatite B). Estão atrasadas as vacinas de 2, 3, 4, 5 e 6 meses. No entanto, existem restrições de idade para algumas vacinas.\n\nA vacina contra o Rotavírus (VORH) possui um limite de idade rigoroso para a sua administração. A primeira dose deve ser aplicada obrigatoriamente até os 3 meses e 15 dias de vida. A segunda dose deve ser aplicada até os 7 meses e 29 dias. Como o lactente já tem 8 meses de idade, ele perdeu o prazo para iniciar ou completar o esquema do Rotavírus, não devendo recebê-la.\n\nA vacina da Febre Amarela, no calendário nacional, é indicada aos 9 meses de idade (primeira dose). Como o bebê tem 8 meses, ele ainda não atingiu a idade mínima para esta vacina no esquema de rotina.\n\nAs demais vacinas atrasadas devem ser aplicadas imediatamente para iniciar o esquema de resgate. São elas: Pentavalente (Difteria, Tétano, Coqueluche, Hepatite B e Hib), VIP (Poliomielite Inativada), Pneumocócica 10-valente e Meningocócica C. Estas vacinas não possuem o impedimento de idade que o Rotavírus possui para o início do esquema nessa faixa etária.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Inclui a vacina do Rotavírus, que não pode mais ser administrada aos 8 meses de idade por ter ultrapassado o prazo limite de 7 meses e 29 dias.\n\nAlternativa b: Incorreta. Inclui a vacina da Febre Amarela, que deve ser administrada apenas aos 9 meses de idade, e o bebê ainda tem 8 meses.\n\nAlternativa c: Incorreta. Comete dois erros ao incluir a vacina do Rotavírus (prazo expirado) e a da Febre Amarela (idade ainda não atingida), além de omitir a Pneumocócica 10-valente.\n\nAlternativa d: Correta. Lista exatamente as vacinas que estão em atraso e que podem ser administradas com segurança aos 8 meses de idade (Pneumocócica 10-valente, Meningocócica C, Pentavalente e VIP), respeitando a contraindicação por idade do Rotavírus e o calendário da Febre Amarela.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  },
+  {
+    "id": "AJUDA_e80fd1a2-e808-43f2-9cc4-fa7559795bec",
+    "originalId": "e80fd1a2-e808-43f2-9cc4-fa7559795bec",
+    "statement": "Uma mulher de 35 anos, sem comorbidades, procura aconselhamento genético após sua irmã de 38 anos receber diagnóstico de câncer de mama triplo-negativo. Sua mãe faleceu aos 44 anos por câncer de ovário seroso de alto grau. A paciente não possui filhos e ainda não realizou mamografia. O painel de NGS revelou uma variante patogênica em BRCA1. Exames físicos e laboratoriais são normais. Com base no risco genético e nas evidências disponíveis. A estratégia abaixo mais adequada neste momento, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "acompanhar anualmente apenas com mamografia a partir dos 40 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "recomendar Ressonância Mamária com contraste anual a partir de agora e considerar salpingooforectomia redutora a partir dos 35–40 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "iniciar quimioprevenção com tamoxifeno imediatamente, pois reduz câncer de mama associado a BRCA1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar PET-CT anual como estratégia de rastreamento em portadoras de BRCA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar mastectomia bilateral preventiva obrigatória antes dos 35 anos, independentemente de preferência da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo clínico de uma paciente portadora de uma variante patogênica no gene BRCA1, uma situação de altíssimo risco para câncer de mama e de ovário. O entendimento das diretrizes de rastreamento e prevenção é fundamental para a prática oncológica e mastológica.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O rastreamento apenas com mamografia e iniciado apenas aos 40 anos é insuficiente e tardio para portadoras de mutação no BRCA1. Para essas pacientes, o rastreamento deve começar muito antes (geralmente aos 25 anos com ressonância e aos 30 anos com mamografia associada) devido à alta incidência de câncer de mama em idades precoces e à maior agressividade dos tumores, que muitas vezes não são bem visualizados apenas pela mamografia em mamas densas.\n\nAlternativa b) Correta. Esta alternativa reflete as principais recomendações das diretrizes internacionais (como o NCCN). Para portadoras de BRCA1, a ressonância magnética (RM) das mamas com contraste é o exame mais sensível, devendo ser anual. Além disso, como não existe um método de rastreamento eficaz para o câncer de ovário, a recomendação padrão para redução de mortalidade é a salpingo-oforectomia redutora de risco, idealmente entre os 35 e 40 anos para portadoras de BRCA1, após completarem a prole.\n\nAlternativa c) Incorreta. O tamoxifeno é um modulador seletivo do receptor de estrogênio usado na quimioprevenção, mas sua eficácia é comprovada principalmente na redução de tumores receptores hormonais positivos. Como os cânceres de mama associados ao gene BRCA1 são predominantemente triplo-negativos (receptores de estrogênio, progesterona e HER2 negativos), o impacto da quimioprevenção com tamoxifeno é muito limitado ou incerto nesta população específica.\n\nAlternativa d) Incorreta. O PET-CT não é uma modalidade de rastreamento para câncer de mama ou ovário em pacientes assintomáticas, mesmo as de alto risco. O PET-CT é utilizado para estadiamento, avaliação de recidiva ou resposta ao tratamento em casos já diagnosticados. O rastreamento de imagem foca na ressonância magnética e mamografia.\n\nAlternativa e) Incorreta. Embora a mastectomia bilateral redutora de risco seja uma opção que reduz drasticamente a chance de câncer de mama (em cerca de 90 a 95%), ela nunca é \"obrigatória\" e jamais deve ser realizada \"independentemente da preferência da paciente\". A decisão deve ser compartilhada, respeitando a autonomia da mulher, após discussão dos riscos, benefícios e alternativas de vigilância ativa com exames de imagem. Além disso, a idade para a cirurgia deve ser individualizada.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:43.978Z"
+  }
+]

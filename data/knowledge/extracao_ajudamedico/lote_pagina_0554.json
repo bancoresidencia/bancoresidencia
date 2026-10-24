@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_9b2a54c2-17a4-4492-a7fc-bd8fe8bd23b4",
+    "originalId": "9b2a54c2-17a4-4492-a7fc-bd8fe8bd23b4",
+    "statement": "Gestante, com 14 semanas de gestação, veio para a segunda consulta de pré-natal, trazendo os resultados de exames solicitados na primeira consulta: glicose de jejum de 94 mg/dl e demais exames dentro dos padrões da normalidade. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar a paciente para pré-natal de alto risco, por se tratar de diagnóstico de diabetes melito gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar a paciente para pré-natal de alto risco, por se tratar de diagnóstico de diabetes melito na gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar dieta e realização de glicemia capilar 4 vezes/dia, diariamente; manter acompanhamento na Atenção Primária, com reavaliação em 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar tratamento com insulina NPH e orientar dieta; manter acompanhamento na Atenção Primária, com reavaliação em 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o diagnóstico e a conduta inicial do Diabetes Melito Gestacional (DMG), um tema recorrente e fundamental na obstetrícia.\n\nAnálise do Diagnóstico:\nDe acordo com os critérios da Organização Mundial da Saúde (OMS) e da FEBRASGO, o diagnóstico de Diabetes Melito Gestacional no início da gestação (antes de 20-24 semanas) é realizado através da glicemia de jejum. Os valores de referência são:\n1. Glicemia de jejum < 92 mg/dL: Normal (deve-se aguardar o Teste Oral de Tolerância à Glicose — TOTG entre 24 e 28 semanas).\n2. Glicemia de jejum entre 92 mg/dL e 125 mg/dL: Diabetes Melito Gestacional (DMG).\n3. Glicemia de jejum maior ou igual a 126 mg/dL: Diabetes Melito Pré-gestacional (ou \"Overt Diabetes\").\n\nNo caso apresentado, a paciente possui glicemia de jejum de 94 mg/dL, o que confirma o diagnóstico de Diabetes Melito Gestacional (DMG).\n\nAnálise das Alternativas:\n\nAlternativa (a) Incorreta: Embora o diagnóstico de DMG classifique a gestação como de alto risco, a conduta imediata não deve ser apenas o encaminhamento sem a instituição de medidas terapêuticas e orientações iniciais. Além disso, em muitas redes de saúde, o manejo inicial do DMG controlado apenas com dieta pode ser realizado ou iniciado na Atenção Primária antes da regulação definitiva.\n\nAlternativa (b) Incorreta: Esta alternativa confunde os conceitos. \"Diabetes melito na gestação\" (overt diabetes) é o termo usado para pacientes que atingem critérios de diabetes fora da gravidez (jejum maior ou igual a 126 mg/dL). A paciente do caso tem 94 mg/dL, o que caracteriza Diabetes Melito Gestacional (DMG).\n\nAlternativa (c) Correta: Esta é a conduta padrão-ouro inicial. Uma vez diagnosticado o DMG, o primeiro passo é o tratamento não farmacológico, que consiste em orientação dietética adequada e estímulo à atividade física (se não houver contraindicações). Para avaliar o sucesso da dieta, é obrigatória a realização do perfil glicêmico (glicemia capilar), geralmente solicitado 4 vezes ao dia (em jejum e 1 ou 2 horas após as principais refeições: café da manhã, almoço e jantar). O acompanhamento na Atenção Primária com reavaliação em curto prazo (2 semanas) permite observar se as metas glicêmicas serão atingidas apenas com a mudança de estilo de vida.\n\nAlternativa (d) Incorreta: O tratamento farmacológico com insulina só está indicado se, após 1 a 2 semanas de dieta e exercícios, os níveis glicêmicos permanecerem acima dos alvos terapêuticos (jejum < 95 mg/dL; 1h pós-prandial < 140 mg/dL ou 2h pós-prandial < 120 mg/dL). Não se inicia insulina imediatamente sem antes testar a eficácia da dieta em casos de DMG.\n\nResumo da Conduta:\nPaciente com glicemia de jejum na primeira consulta entre 92 e 125 mg/dL tem diagnóstico de DMG. A conduta é iniciar medidas higienodietéticas e monitoramento capilar rigoroso para decidir, na consulta de retorno, a necessidade ou não de insulinoterapia.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  },
+  {
+    "id": "AJUDA_9b2f2d58-0e80-43b7-889e-8d641fc11ddb",
+    "originalId": "9b2f2d58-0e80-43b7-889e-8d641fc11ddb",
+    "statement": "Mulher de 45 anos é internada em hospital de média complexidade com queixas de febre (em torno de 38 graus Celsius), mialgia, mal-estar e dor na região cervical anterior, irradiada para a mandíbula e orelhas. Há 2 semanas, iniciou quadro sugestivo de infecção viral respiratória alta, com evolução clínica lenta desde então, passando a sentir palpitações e tremores nos últimos 3 dias. Procurou atendimento na unidade de saúde. Ao exame físico, a paciente se encontra febril, com taquicardia desproporcional à temperatura corporal e tremores finos nas extremidades. À palpação da tireoide: glândula dolorosa, firme e levemente aumentada de tamanho, assimétrica, não nodular. As dosagens da velocidade de hemossedimentação e proteína C reativa se mostraram elevadas.\nConsiderando a principal hipótese diagnóstica para o caso, quais exames complementares a sustentariam e qual tratamento indicado, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução da captação tireoidiana de iodo radioativo; betabloqueador e anti-inflamatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Detecção de presença de nódulo quente à cintilografia de tireoide; tireoidectomia subtotal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Verificação de aumento nas dosagens séricas de TSH, T4 livre e TRAb; ablação com iodo radioativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Verificação de aumento das concentrações sanguíneas de TSH, T3 e T4 livre; oseltamivir + metimazol + atenolol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma mulher de 45 anos com dor na região cervical anterior que irradia para a mandíbula e as orelhas, precedida por uma infecção viral respiratória há duas semanas. Ela apresenta sinais sistêmicos de inflamação (febre, aumento de VHS e PCR) e sintomas de tireotoxicose (palpitações, tremores e taquicardia desproporcional à febre). Ao exame físico, a tireoide é dolorosa e firme.\n\nEssas características são patognomônicas da tireoidite subaguda de de Quervain (ou tireoidite granulomatosa). Nesta patologia, ocorre uma inflamação da glândula após um gatilho viral, levando à destruição dos folículos tireoidianos e à liberação inadvertida de hormônios pré-formados na circulação (fase de tireotoxicose por liberação, e não por hiperprodução).\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nNa tireoidite de de Quervain, as células foliculares estão inflamadas e lesionadas, perdendo a capacidade de captar iodo para a síntese hormonal. Portanto, o exame de captação de iodo radioativo (RAIU) mostrará valores muito baixos (geralmente menores que 5% em 24 horas), o que diferencia esta condição de outras causas de tireotoxicose, como a doença de Graves, onde a captação é elevada. \n\nO tratamento é voltado para o controle dos sintomas e da inflamação. Como não há excesso de produção hormonal (as células estão \"vazando\" o que já tinham estocado), não se usam antitireoidianos de síntese. Utilizam-se anti-inflamatórios não esteroidais (AINEs) ou corticosteroides para a dor e inflamação, e beta-bloqueadores (como o propranolol ou atenolol) para controlar os sintomas adrenérgicos da tireotoxicose (tremores e taquicardia).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (b): A detecção de nódulo quente à cintilografia e a tireoidectomia subtotal referem-se ao bócio multinodular tóxico ou adenoma tóxico (doença de Plummer). Nessas doenças, a glândula não costuma ser dolorosa, não há relação com infecção viral prévia e o VHS geralmente é normal.\n\nAlternativa (c): O TRAb é o anticorpo específico da doença de Graves. Na doença de Graves, a tireoide é indolor, o VHS é normal e a captação de iodo radioativo estaria aumentada, e não reduzida. Além disso, o TSH estaria suprimido (baixo), e não aumentado.\n\nAlternativa (d): Embora o uso de atenolol esteja correto para os sintomas, o metimazol (antitireoidiano) não tem eficácia na tireoidite subaguda, pois o problema não é a síntese aumentada de hormônio, mas sim a sua liberação por lesão tecidual. Além disso, em quadros de tireotoxicose, o TSH sérico deve estar suprimido (baixo), e não aumentado como sugere a alternativa. O oseltamivir é um antiviral para influenza e não é o tratamento indicado para a tireoidite em si.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": 59.643319213497826,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  },
+  {
+    "id": "AJUDA_9b32a60f-5417-4a5e-bd36-844f3da0bd2d",
+    "originalId": "9b32a60f-5417-4a5e-bd36-844f3da0bd2d",
+    "statement": "Mulher, 48 anos, é atendida com queixa de vômitos incoercíveis. Diagnosticado volvo gástrico. Durante o procedimento cirúrgico, observou-se que o volvo já havia se desfeito e o estômago não apresentava sinais de sofrimento vascular. A conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "gastropexia com ou sem gastrostomia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "terminar o procedimento sem nenhuma medida complementar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "gastrectomia parcial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "gastrectomia total",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO volvo gástrico é uma condição de emergência caracterizada pela rotação do estômago sobre o seu próprio eixo em mais de 180 graus, o que pode levar à obstrução e ao comprometimento vascular (isquemia e necrose). O tratamento baseia-se em três pilares fundamentais: a redução da torção, a avaliação da viabilidade do tecido gástrico e a prevenção de recorrências.\n\nAnálise das alternativas:\n\na) CORRETA. Mesmo que o volvo tenha se desfeito espontaneamente e o estômago apresente bom aspecto (sem isquemia), a cirurgia não deve ser encerrada sem uma medida de fixação. O risco de recorrência é extremamente alto devido à frouxidão dos ligamentos ou a defeitos anatômicos que permitiram a rotação inicial. A gastropexia (fixação do estômago à parede abdominal anterior) ou a realização de uma gastrostomia (que cumpre o papel de fixar o órgão) são as condutas-padrão para evitar que o estômago sofra uma nova torção.\n\nb) INCORRETA. Terminar o procedimento sem nenhuma medida complementar é uma conduta inadequada. Como os fatores anatômicos predisponentes ao volvo ainda estão presentes, a chance de o problema retornar a curto prazo é muito elevada, colocando a vida da paciente em risco novamente.\n\nc) INCORRETA. A gastrectomia parcial (retirada de parte do estômago) só estaria indicada se houvesse necrose gástrica, perfuração ou se o volvo fosse secundário a uma lesão tumoral. Como o enunciado afirma que o estômago não apresentava sinais de sofrimento vascular, a ressecção é desnecessária e acrescenta morbidade desnecessária ao caso.\n\nd) INCORRETA. A gastrectomia total é uma cirurgia de grande porte, indicada apenas em casos de necrose gástrica extensa (gangrena gástrica) que envolva todo o órgão. No cenário de um estômago viável e saudável, essa conduta é contraindicada.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  },
+  {
+    "id": "AJUDA_9b35b5db-b9a9-43c4-b95a-dbf86486ce61",
+    "originalId": "9b35b5db-b9a9-43c4-b95a-dbf86486ce61",
+    "statement": "Paciente de dois anos vem a consulta por estar apresentando espasmos de membros, com piora recente. Tem antecedentes de rabdomioma cardíaco ao nascimento e recentemente perda de algumas habilidades. Ao exame lesões cutâneas hipocrômicas em formato de folha. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neurofibromatose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nevo hipocrômico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Esclerose tuberosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hanseníase sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome de Lennox-Gastaut.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro clínico descreve uma criança com manifestações clássicas da Esclerose Tuberosa, uma facomatose (doença neurocutânea) de herança autossômica dominante. Os três pilares apresentados na questão são fundamentais para o diagnóstico: o rabdomioma cardíaco (frequentemente detectado ao nascimento ou no período pré-natal), as lesões cutâneas hipocrômicas em formato de folha (manchas hipomelanóticas ou \"ash-leaf spots\") e o comprometimento neurológico, manifestado por espasmos (possivelmente Síndrome de West) e regressão do desenvolvimento.\n\nAnálise das alternativas:\n\na) Incorreta. A Neurofibromatose tipo 1 apresenta-se tipicamente com manchas café-com-leite (lesões hiperpigmentadas), efélides axilares e inguinais (sinal de Crowe) e neurofibromas. Não há associação característica com rabdomiomas cardíacos ou manchas hipocrômicas em formato de folha.\n\nb) Incorreta. O nevo hipocrômico é uma marca de nascença estável e isolada, decorrente de uma alteração localizada na pigmentação. Ele não explica o quadro multissistêmico da paciente, como os tumores cardíacos e as crises convulsivas.\n\nc) Correta. A Esclerose Tuberosa é o diagnóstico mais provável. O rabdomioma cardíaco é um marcador tumoral altamente específico desta patologia na infância. As manchas hipocrômicas são, geralmente, os primeiros sinais dermatológicos a aparecer. Além disso, o envolvimento do Sistema Nervoso Central por túberes corticais e nódulos subependimários justifica os espasmos e a perda de habilidades e marcos do desenvolvimento (regressão neuropsicomotora).\n\nd) Incorreta. A hanseníase é uma doença infectocontagiosa rara em crianças tão jovens e se manifesta por lesões cutâneas com alteração de sensibilidade e comprometimento de nervos periféricos. Não possui relação com malformações tumorais cardíacas ou quadros de epilepsia grave.\n\ne) Incorreta. A Síndrome de Lennox-Gastaut é uma encefalopatia epiléptica caracterizada por uma tríade específica: múltiplos tipos de crises, retardo mental e padrão de ponta-onda lenta no eletroencefalograma. Embora a Esclerose Tuberosa possa ser uma causa subjacente que leve ao Lennox-Gastaut, a síndrome em si não explica os achados extracerebrais como o rabdomioma e as lesões cutâneas hipocrômicas.\n\nGabarito: Letra (c).",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Epilepsias",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  },
+  {
+    "id": "AJUDA_9b400c76-e1d1-4d02-8598-2419a72dbcee",
+    "originalId": "9b400c76-e1d1-4d02-8598-2419a72dbcee",
+    "statement": "Entre as combinações a seguir, a que classifica um recém-nascido como Pequeno para a Idade Gestacional (PIG), considerando a idade gestacional e peso ao nascer, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "34 semanas e 2500 g.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "38 semanas e 1900 g.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "36 semanas e 1800 g.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "40 semanas e 2100 g.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "AVISO: ESTA QUESTÃO FOI ANULADA.\n\nA anulação ocorreu porque, para definir se um recém-nascido (RN) é Pequeno para a Idade Gestacional (PIG), é obrigatório o uso de curvas de crescimento intrauterino padronizadas (como as curvas de Fenton ou Intergrowth-21st), que cruzam o peso com a idade gestacional exata em semanas e dias. Sem a disponibilização dessas curvas ou de uma tabela de percentis no enunciado, a questão torna-se subjetiva e passível de erro técnico.\n\nCONCEITO TÉCNICO:\nUm RN é classificado como PIG quando seu peso de nascimento está abaixo do percentil 10 para a sua idade gestacional. Inversamente, é AIG (Adequado) se estiver entre os percentis 10 e 90, e GIG (Grande) se estiver acima do percentil 90.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) 34 semanas e 2500 g:\nIncorreta. Um RN de 34 semanas (pretermuro moderado) com 2500 g está com um peso excelente para a idade, situando-se geralmente acima do percentil 50. Ele seria classificado como AIG. 2500 g é o limite inferior da normalidade para um RN a termo, mas para 34 semanas, é um peso alto.\n\nAlternativa b) 38 semanas e 1900 g:\nCorreta (do ponto de vista clínico). Um RN de 38 semanas (termo) com 1900 g está nitidamente abaixo do percentil 10. Pelas curvas de referência, o limite para PIG em 38 semanas costuma estar em torno de 2400-2500 g. Portanto, este bebê é PIG e apresenta baixo peso ao nascer (menor que 2500 g).\n\nAlternativa c) 36 semanas e 1800 g:\nCorreta (indicada como gabarito original). Um RN de 36 semanas com 1800 g também está significativamente abaixo do percentil 10 (que para esta idade gira em torno de 2200 g). Assim como a alternativa B, este RN é tecnicamente PIG.\n\nAlternativa d) 40 semanas e 2100 g:\nCorreta (do ponto de vista clínico). Um RN de 40 semanas (termo completo) com 2100 g é classicamente PIG, pois o percentil 10 para 40 semanas situa-se próximo de 2800-2900 g.\n\nPOR QUE A QUESTÃO FOI ANULADA?\nA questão apresenta três alternativas (b, c e d) que descrevem recém-nascidos com pesos muito abaixo do esperado para suas respectivas idades gestacionais. Todos os três exemplos representam bebês PIG de acordo com as curvas de crescimento universalmente aceitas na pediatria e neonatologia. A existência de múltiplas respostas corretas invalida o item, pois não há um critério único fornecido pela banca que justifique a escolha da alternativa (c) em detrimento das outras duas que também apresentam desvios ponderais graves.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Cuidados Neonatais"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  },
+  {
+    "id": "AJUDA_9b4a897e-c501-414a-8d70-2cbfcd1f04cf",
+    "originalId": "9b4a897e-c501-414a-8d70-2cbfcd1f04cf",
+    "statement": "O câncer de esôfago representa uma condição de elevada morbimortalidade e exige conhecimento sobre sua epidemiologia e fatores de risco. Em relação ao câncer esofágico, analise as assertivas a seguir:\n\nI. O adenocarcinoma esofágico é de 3 a 4 vezes mais prevalente em indivíduos do sexo masculino, e a cor da pele também parece desempenhar um papel importante. A incidência de adenocarcinoma é significativamente maior entre afro-americanos, mesmo após ajuste para fatores como status socioeconômico e consumo de tabaco e álcool.\nII. Estudos recentes demonstram que a associação entre HPV e carcinoma espinocelular de esôfago é amplamente prevalente, com impacto prognóstico e terapêutico bem estabelecido na prática clínica.\nIII. A duração dos sintomas de doença do refluxo gastroesofágico (DRGE) está associada ao risco de desenvolvimento de adenocarcinoma esofágico, porém a frequência desses sintomas não apresenta correlação significativa com tal risco.\n\nQuais estão INCORRETAS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das Assertivas:\n\nAssertiva I (Incorreta): O adenocarcinoma de esôfago é marcadamente mais comum em homens e em indivíduos brancos (caucasianos). O carcinoma espinocelular (CEC) é o tipo histológico com maior incidência relativa na população negra (afro-americanos).\n\nAssertiva II (Incorreta): O papel do HPV na gênese do carcinoma espinocelular de esôfago ainda é controverso e apresenta grande variabilidade geográfica. Ao contrário do que ocorre no câncer de orofaringe e de colo uterino, a presença do HPV no câncer esofágico não possui impacto prognóstico ou terapêutico estabelecido na prática médica.\n\nAssertiva III (Incorreta): O risco de adenocarcinoma esofágico correlaciona-se diretamente tanto com a duração dos sintomas de DRGE quanto com a sua frequência e gravidade. Indivíduos com pirose ou regurgitação frequentes (por exemplo, sintomas diários) têm risco significativamente maior do que aqueles com sintomas esporádicos.\n\nAnálise das Alternativas:\n\nAlternativa a: Incorreta, pois a assertiva III também está errada.\nAlternativa b: Incorreta, pois a assertiva II também está errada.\nAlternativa c: Incorreta, pois a assertiva I também está errada.\nAlternativa d: Correta, pois todas as três assertivas (I, II e III) contêm erros epidemiológicos e clínicos.\n\nGabarito: Letra d.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico",
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  },
+  {
+    "id": "AJUDA_9b4aa341-2cff-4ecb-9988-746da85ed04f",
+    "originalId": "9b4aa341-2cff-4ecb-9988-746da85ed04f",
+    "statement": "Uma criança de 1 ano e 10 meses de idade foi vítima de afogamento e levada por seus pais ao pronto-socorro. Ela não apresentou resposta ao ambiente e, no monitor, apresentou o ritmo de taquicardia ventricular. Com base nessa situação hipotética, assinale a alternativa que apresenta a conduta adequada para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "checar pulso no pulso carotídeo e, na ausência de pulso, realizar desfibrilação com 2 j/kg",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "checar pulso no pulso braquial e, na ausência de pulso, realizar cardioversão sincronizada com 1j/kg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "checar pulso no pulso carotídeo e, na ausência de pulso, iniciar adrenalina 0,01 mg/kg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "checar pulso no pulso braquial e, na ausência de pulso, realizar desfibrilação com 2 j/kg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "checar pulso no pulso braquial e, na ausência de pulso, realizar cardioversão sincronizada 0,5 j/kg",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do cenário clínico:\n\nA criança tem 1 ano e 10 meses de idade, o que a classifica, pelas diretrizes de Suporte Avançado de Vida em Pediatria (PALS), como criança (faixa que vai de 1 ano até a puberdade) e não mais como lactente (menor de 1 ano). O ritmo identificado no monitor é Taquicardia Ventricular (TV).\n\n1. Local de checagem do pulso:\nPara lactentes (menores de 1 ano), o local recomendado para checar o pulso é a artéria braquial. \nPara crianças acima de 1 ano, deve-se priorizar o pulso carotídeo ou o femoral. Como a paciente tem 1 ano e 10 meses, o pulso carotídeo é o local correto.\n\n2. Manejo da Taquicardia Ventricular (TV):\nAo identificar TV no monitor em um paciente que não responde, o próximo passo obrigatório é verificar a presença de pulso. \nSe houver pulso, a conduta depende da estabilidade hemodinâmica (podendo envolver cardioversão sincronizada ou medicamentos). \nSe não houver pulso (TV sem pulso), o caso é tratado como uma parada cardiorrespiratória em ritmo chocável, assim como a Fibrilação Ventricular (FV). A conduta imediata é a desfibrilação (choque não sincronizado).\n\n3. Carga de energia:\nNo protocolo pediátrico, a carga inicial para desfibrilação é de 2 joules por quilograma (2 J/kg).\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Identifica corretamente o local de checagem do pulso para a idade (carotídeo), reconhece que a ausência de pulso em ritmo de TV exige desfibrilação imediata e indica a carga correta de 2 J/kg.\n\nAlternativa b) Incorreta. O pulso braquial é indicado para menores de 1 ano. Além disso, na ausência de pulso, o choque deve ser não sincronizado (desfibrilação). A cardioversão sincronizada é usada apenas em ritmos com pulso.\n\nAlternativa c) Incorreta. Embora o pulso carotídeo esteja correto, a prioridade em ritmos chocáveis (TV sem pulso ou FV) é o choque imediato. A adrenalina é uma droga de segunda linha nesses ritmos, administrada após o segundo choque e início da RCP.\n\nAlternativa d) Incorreta. Erra na localização do pulso, que deveria ser carotídeo ou femoral para a idade da criança, apesar de citar corretamente a carga de desfibrilação.\n\nAlternativa e) Incorreta. O pulso braquial não é o preferencial para esta idade, a técnica de cardioversão não é aplicada em ritmos sem pulso e a carga de 0,5 J/kg é insuficiente para uma desfibrilação inicial.\n\nGabarito: Alternativa A.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  },
+  {
+    "id": "AJUDA_9b5560e4-0a76-48fa-abfb-fbee7582bb22",
+    "originalId": "9b5560e4-0a76-48fa-abfb-fbee7582bb22",
+    "statement": "Sobre a utilização das ferramentas genograma e ecomapa na Atenção Primária à Saúde, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O ecomapa tem como foco a representação gráfica dos vínculos e relações da família com o meio externo (escola, trabalho, serviços de saúde, grupos religiosos), enquanto o genograma organiza a estrutura familiar em, pelo menos, três gerações",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O genograma é um instrumento que representa graficamente as relações de um indivíduo com instituições, grupos sociais e recursos da comunidade, enquanto o ecomapa descreve a estrutura interna da família e suas relações de parentesco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O uso de genograma está restrito a consultas médicas especializadas, enquanto o ecomapa é um instrumento de gestão em saúde coletiva, sem aplicação em atendimentos individuais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tanto o genograma quanto o ecomapa representam apenas os laços biológicos familiares, não incluindo aspectos emocionais, sociais ou de apoio",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a).\n\nO genograma e o ecomapa são ferramentas fundamentais na abordagem familiar dentro da Atenção Primária à Saúde. Eles auxiliam o profissional de saúde a compreender a dinâmica, a estrutura e o contexto social dos indivíduos e suas famílias.\n\nAlternativa (a): CORRETA. Esta alternativa define com precisão o papel de cada ferramenta. O genograma é uma representação gráfica da árvore genealógica que, por convenção, deve abranger ao menos três gerações, permitindo identificar padrões de doenças hereditárias, comportamentos e ciclos de vida. O ecomapa, por sua vez, complementa o genograma ao focar nas relações da família (ou de um indivíduo) com o meio externo, evidenciando o suporte social, redes de apoio e possíveis pontos de conflito ou estresse na comunidade.\n\nAlternativa (b): INCORRETA. A alternativa inverteu os conceitos. O genograma é o que descreve a estrutura interna e as relações de parentesco (árvore genealógica), enquanto o ecomapa é o instrumento que representa as relações com instituições, grupos sociais e recursos comunitários.\n\nAlternativa (c): INCORRETA. Ambas as ferramentas são típicas da prática clínica na Atenção Primária à Saúde, sendo amplamente utilizadas por médicos de família e comunidade, enfermeiros e equipes multiprofissionais. Elas não são restritas a especialistas focais, nem servem apenas para gestão; são instrumentos de uso cotidiano no atendimento individual e familiar para a elaboração de planos terapêuticos mais eficazes.\n\nAlternativa (d): INCORRETA. O principal valor dessas ferramentas é justamente ir além do aspecto biológico. O genograma utiliza símbolos específicos para descrever a qualidade dos vínculos emocionais (como relações conflituosas, harmoniosas ou distantes). O ecomapa é desenhado especificamente para incluir os aspectos sociais e de apoio, mapeando como a família se conecta com o mundo ao seu redor.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  },
+  {
+    "id": "AJUDA_9b5a9b0c-15b7-42b0-9772-28c5a996364d",
+    "originalId": "9b5a9b0c-15b7-42b0-9772-28c5a996364d",
+    "statement": "Paciente M.E.R. Masculino e 50 anos, foi submetido a uma ressecção intestinal devido a hérnia inguinal encarcerada. No 7º dia de pós operatório apresentando 38.6 ºC, FC = 110 bpm, FR = 26 ipm, SpO2 = 89%, PA = 90/45 mmHg, leucócitos de 12.600 mm3 leucócitos, confuso e torporoso. Foi administrado cerca de 2000 ml de SF 0,9% em bolus de 250 ml e o2 por cateter nasal a 3 litros min. E após essa administração, paciente com presença de confusão mais leve, PA de 80 /45 mmHg, FC de 98 bpm e sat de 95%. Nesse contexto, qual o diagnóstico desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome da resposta inflamatória sistêmica (SIRS).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Choque séptico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sepse com disfunção orgânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sepse",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve um paciente em pós-operatório de cirurgia abdominal (fator de risco para infecção) com sinais claros de resposta inflamatória e disfunção orgânica. Para chegar ao diagnóstico correto, devemos analisar a evolução clínica e a resposta terapêutica.\n\n1. Contexto Clínico: O paciente está no 7º dia de pós-operatório de ressecção intestinal, apresentando febre (38,6 °C), taquicardia (110 bpm), taquipneia (26 ipm) e leucocitose (12.600/mm³). Esses sinais sugerem um foco infeccioso abdominal.\n\n2. Identificação de Sepse: O paciente apresenta disfunções orgânicas graves: alteração do nível de consciência (confusão e torpor), hipotensão (90/45 mmHg) e disfunção respiratória (SpO2 89%). Pela definição atual (Sepsis-3), a sepse é uma disfunção orgânica ameaçadora à vida, causada por uma resposta desregulada do hospedeiro à infecção.\n\n3. Resposta à Volemia (Ponto-Chave): O paciente recebeu 2.000 mL de soro fisiológico em bolus. Após essa expansão volêmica significativa, a pressão arterial não apenas deixou de normalizar, como caiu para 80/45 mmHg. A definição clínica de choque séptico é a presença de sepse com hipotensão persistente que requer vasopressores para manter a PAM ≥ 65 mmHg e lactato > 2 mmol/L, após a ressuscitação volêmica adequada.\n\nAnálise das alternativas:\n\na) Incorreta. A Síndrome da Resposta Inflamatória Sistêmica (SIRS) é definida por critérios de sinais vitais e exames laboratoriais (temperatura, FC, FR e leucócitos). Embora o paciente preencha os critérios de SIRS, esse diagnóstico é inespecífico e incompleto para um quadro que já apresenta falência hemodinâmica e disfunção de órgãos.\n\nb) Correta. O paciente apresenta evidência de infecção e disfunção orgânica (sepse), e a hipotensão persistiu (e até piorou) mesmo após a infusão de 2 litros de cristaloides. Essa refratariedade à reposição volêmica caracteriza o choque séptico.\n\nc) Incorreta. Nas definições atuais, o termo \"sepse\" já substituiu a antiga nomenclatura de \"sepse grave\" (que era usada para sepse com disfunção orgânica). Além disso, o quadro evoluiu para choque devido à persistência da hipotensão pós-volume.\n\nd) Incorreta. O diagnóstico de sepse está contido no quadro, mas é uma resposta incompleta. Quando a hipotensão não é revertida com a reposição de fluidos, o diagnóstico obrigatório e mais preciso é o de choque séptico.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Sepse",
+      "Choque"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  },
+  {
+    "id": "AJUDA_9b5c4a26-4b90-4923-a90f-02b21c699968",
+    "originalId": "9b5c4a26-4b90-4923-a90f-02b21c699968",
+    "statement": "A osteoporose é caracterizada por baixa massa óssea e uma deterioração microarquitetural do tecido ósseo, levando ao aumento da fragilidade óssea e a um consequente aumento no risco de fraturas, mesmo com pouco ou nenhum trauma. Em relação à sua fisiopatologia, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menarca tardia é responsável por ossos com maior densidade e um aumento nos componentes microestruturais, melhorando a qualidade óssea, que persiste até a menopausa, estando associado à maior proteção e diminuindo o risco de fraturas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mulheres que apresentam amenorreia durante a adolescência têm uma prevalência aumentada de osteoporose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A suplementação de cálcio em meninas pré-púberes e púberes melhora o acúmulo ósseo, um efeito importante que pode ter consequências benéficas duradouras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mesmo com a perda óssea na coluna vertebral ocorrendo a partir da década dos 20 anos, a alteração geral é pequena até a menopausa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão solicita a alternativa incorreta sobre a fisiopatologia da osteoporose, focando na relação entre o desenvolvimento ósseo, hábitos e hormônios.\n\nAlternativa A (Incorreta / Gabarito): Esta afirmação está errada porque a menarca tardia é, na verdade, um fator de risco para o desenvolvimento de baixa densidade óssea e osteoporose. O estrogênio é fundamental para a mineralização e o ganho de massa óssea durante a puberdade. Quando a menarca ocorre tardiamente, o esqueleto fica exposto por menos tempo aos efeitos protetores do estrogênio durante o período crítico de formação do pico de massa óssea. Consequentemente, essas mulheres tendem a atingir uma densidade mineral óssea menor em comparação com aquelas que tiveram menarca em idade normal, o que aumenta o risco de fraturas no futuro.\n\nAlternativa B (Correta): Mulheres com amenorreia na adolescência apresentam um estado de hipoestrogenismo em uma fase em que deveriam estar acumulando massa óssea. Sem o estímulo estrogênico adequado, o pico de massa óssea não é atingido, o que resulta em ossos mais frágeis e uma prevalência aumentada de osteoporose e fraturas por estresse já em idades jovens ou precocemente após a menopausa.\n\nAlternativa C (Correta): O cálcio é o principal componente mineral da matriz óssea. Durante a infância e a adolescência, o balanço ósseo é positivo (a formação supera a reabsorção). A oferta adequada de cálcio nesse período garante que o processo de mineralização ocorra de forma otimizada, permitindo que o indivíduo atinja o maior pico de massa óssea possível, o que funciona como uma reserva para as perdas que ocorrerão no envelhecimento.\n\nAlternativa D (Correta): O pico de massa óssea é geralmente atingido por volta da terceira década de vida. A partir dos 20 a 25 anos, já pode haver uma perda óssea muito sutil e lenta na coluna vertebral e em outros sítios. No entanto, essa perda só ganha velocidade e relevância clínica significativa nas mulheres após a menopausa, quando a carência de estrogênio acelera drasticamente o processo de reabsorção óssea. Portanto, até a menopausa, a alteração estrutural acumulada costuma ser pequena.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:42.607Z"
+  }
+]

@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_e5d836e9-29af-4452-b72b-e240c6b090e2",
+    "originalId": "e5d836e9-29af-4452-b72b-e240c6b090e2",
+    "statement": "Uma mulher de 27 anos, sexualmente ativa, relata dor abdominal inferior há 3 dias, febre e corrimento vaginal purulento. Ao exame, paciente encontra-se estável hemodinamicamente, sendo observado dor à palpação em hipogástrio, secreção endocervical purulenta e dor à mobilização do colo uterino. Qual é a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar laparoscopia diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antibioticoterapia empírica ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aguardar cultura vaginal antes de iniciar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internar para antibioticoterapia venosa e avaliação cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar ultrassonografia transvaginal com doppler.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — mulher jovem, sexualmente ativa, com dor abdominal inferior, febre, corrimento purulento e dor à mobilização do colo uterino — é patognomônico de Doença Inflamatória Pélvica (DIP). O diagnóstico da DIP é fundamentalmente clínico, baseado na presença de critérios mínimos (dor no hipogástrio, dor à palpação anexial e dor à mobilização do colo).\n\nA conduta inicial mais apropriada é o início imediato do tratamento para evitar sequelas a longo prazo, como infertilidade, gravidez ectópica e dor pélvica crônica.\n\nAnálise das alternativas:\n\na) Solicitar laparoscopia diagnóstica: Incorreta. Embora a laparoscopia seja o padrão-ouro para o diagnóstico de DIP, ela é um procedimento invasivo e de alto custo. É reservada para casos de dúvida diagnóstica (ex.: exclusão de apendicite) ou quando a paciente não apresenta melhora clínica após 48 a 72 horas de antibioticoterapia adequada.\n\nb) Iniciar antibioticoterapia empírica ambulatorial: Correta. De acordo com os protocolos do Ministério da Saúde e do CDC, diante da suspeita clínica de DIP, o tratamento deve ser iniciado imediatamente e de forma empírica (cobrindo *Neisseria gonorrhoeae*, *Chlamydia trachomatis* e anaeróbios). Como a paciente está hemodinamicamente estável e não apresenta critérios de gravidade, o manejo ambulatorial com antibióticos orais e intramusculares é a conduta de escolha.\n\nc) Aguardar cultura vaginal antes de iniciar antibiótico: Incorreta. O tratamento da DIP não deve ser retardado por exames laboratoriais. As culturas podem demorar dias, e o atraso no início do antibiótico está diretamente relacionado ao aumento do risco de danos permanentes às tubas uterinas.\n\nd) Internar para antibioticoterapia venosa e avaliação cirúrgica: Incorreta. A internação é indicada apenas em situações específicas, como: gestantes, pacientes que não toleram a via oral (vômitos), estado geral grave (sepse, febre muito alta), suspeita de abscesso tubo-ovariano ou falha no tratamento ambulatorial. A paciente do caso encontra-se estável, o que permite o tratamento em casa.\n\ne) Solicitar ultrassonografia transvaginal com Doppler: Incorreta. A ultrassonografia é um exame complementar útil para avaliar complicações, como o abscesso tubo-ovariano, ou para auxiliar em diagnósticos diferenciais. No entanto, ela não é necessária para fechar o diagnóstico clínico inicial e não deve ser considerada a conduta prioritária antes do início do tratamento em um quadro tão típico.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.244Z"
+  },
+  {
+    "id": "AJUDA_e5d8fe71-c406-497f-83f1-3068e6e6b204",
+    "originalId": "e5d8fe71-c406-497f-83f1-3068e6e6b204",
+    "statement": "Um homem de 72 anos, vítima de atropelamento, foi submetido a múltiplas cirurgias nos últimos dias incluindo craniectomia descompressiva devido à hematoma subdural agudo, bem como fixação do anel pélvico devido à fratura em livro aberto. No segundo dia de pós-operatório, evolui com edema importante no membro inferior esquerdo. A ultrassonografia com doppler venoso à beira leito confirmou extensa trombose venosa profunda iliofemoral à esquerda. Qual é a conduta mais adequada em relação à prevenção de embolia pulmonar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar filtro de veia cava.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Iniciar anticoagulação plena imediatamente com heparina não fracionada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar uso de meia de compressão pneumática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trombólise sistêmica com alteplase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aguardar resolução espontânea da trombose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resumo do caso: paciente politraumatizado, idoso, com TVP proximal extensa (iliofemoral) no 2º dia de pós-operatório de craniectomia descompressiva por hematoma subdural agudo e de fixação de fratura pélvica. A TVP proximal tem alto risco de embolia pulmonar (EP). O tratamento padrão, a anticoagulação, está contraindicado de forma absoluta neste momento, pelo sangramento intracraniano recente e pelo trauma pélvico com cirurgia recente. Por isso, a conduta recomendada é o filtro de veia cava inferior.\n\nPrincípio central: o filtro de veia cava é indicado na TVP/EP aguda quando há contraindicação absoluta à anticoagulação (sangramento ativo ou de alto risco, neurocirurgia recente, hemorragia intracraniana), falha da anticoagulação ou complicação que a impeça. Ele deve ser preferencialmente recuperável e retirado assim que for possível anticoagular, o que costuma ocorrer dentro de algumas semanas.\n\nAnálise das alternativas:\n\na) Correta. Há TVP proximal extensa com contraindicação absoluta à anticoagulação (hematoma subdural agudo operado, múltiplos procedimentos, fratura pélvica). O filtro protege contra EP de forma mecânica, sem aumentar o risco hemorrágico. Deve-se reiniciar a anticoagulação assim que a neurocirurgia liberar e remover o filtro depois.\n\nb) Incorreta. A heparina não fracionada plena é o tratamento de escolha em geral, mas aqui há alto risco de ressangramento intracraniano e pélvico. Está contraindicada.\n\nc) Incorreta. A compressão pneumática intermitente é medida de profilaxia, não de tratamento. Em TVP extensa já estabelecida, pode até ser desaconselhada no membro acometido, pelo risco teórico de mobilizar o trombo. Não protege contra EP neste cenário.\n\nd) Incorreta. A trombólise sistêmica tem risco hemorrágico muito alto e é absolutamente contraindicada após cirurgia intracraniana e hemorragia intracraniana recentes, além do trauma e das cirurgias. Seria reservada a EP maciça com instabilidade, quando não há contraindicação.\n\ne) Incorreta. Aguardar resolução espontânea deixa o paciente sem proteção. A TVP iliofemoral não tratada tem alto risco de EP potencialmente fatal e de síndrome pós-trombótica.\n\nPonto-chave: TVP proximal + contraindicação absoluta à anticoagulação = filtro de veia cava inferior (preferencialmente recuperável).",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Vascular",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.244Z"
+  },
+  {
+    "id": "AJUDA_e5e0c185-c8e0-4531-a9bc-5cdd217e7083",
+    "originalId": "e5e0c185-c8e0-4531-a9bc-5cdd217e7083",
+    "statement": "Em um ensaio clínico randomizado sobre uso de estatinas em prevenção primária, 15% dos pacientes do grupo controle passaram a tomar estatina por conta própria. Os autores mantiveram esses pacientes no grupo original da randomização. É correto afirmar que essa decisão:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Introduz viés de aferição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Distorce os resultados, tornando-os estatisticamente nulos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É compatível com a análise por intenção de tratar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Exige reclassificação dos pacientes por grupo de exposição real.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto central desta questão é o conceito de Análise por Intenção de Tratar (Intention-to-Treat ou ITT) em ensaios clínicos randomizados.\n\nAlternativa a: Incorreta. O viés de aferição ou informação está relacionado a erros na mensuração dos desfechos ou na coleta de dados, frequentemente minimizado pelo cegamento. A decisão de manter os indivíduos no grupo original diz respeito à estratégia de análise estatística, não à forma de medir os desfechos.\n\nAlternativa b: Incorreta. A contaminação (pacientes do grupo controle utilizando o tratamento experimental) pode reduzir a magnitude da diferença observada entre os grupos (efeito dilucional), tornando o estudo mais conservador. Contudo, isso não torna os resultados compulsoriamente nulos do ponto de vista estatístico.\n\nAlternativa c: Correta. O princípio da análise por intenção de tratar estabelece que todos os participantes randomizados devem ser analisados nos grupos aos quais foram originalmente alocados, independentemente de adesão, desvios de protocolo, perdas de seguimento ou contaminação. Essa estratégia preserva o equilíbrio obtido pela randomização entre variáveis conhecidas e desconhecidas e reflete melhor o impacto da intervenção no cenário da prática médica real.\n\nAlternativa d: Incorreta. Reclassificar os participantes de acordo com o tratamento que de fato receberam caracteriza a análise conforme tratado (as-treated), uma abordagem que quebra a randomização inicial e reintroduz vieses de seleção e fatores de confusão.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.244Z"
+  },
+  {
+    "id": "AJUDA_e5e62b1d-44f9-43d2-b200-69ecb1c608dc",
+    "originalId": "e5e62b1d-44f9-43d2-b200-69ecb1c608dc",
+    "statement": "Uma adolescente de 14 anos, do sexo feminino, previamente hígida, foi ao pronto atendimento, acompanhada da mãe, com relato de ter sido vítima de violência sexual, por um agressor desconhecido, em um único episódio, ocorrido há cerca de 12 horas. Ela teve menarca há dois anos e apresenta ciclos menstruais regulares. Possui calendário vacinal atualizado com 3 doses contra Hepatite B.\nDe acordo com as orientações do Ministério da Saúde, assinale a alternativa que contém uma conduta correta frente a esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Restringir a conversa nesse momento à prevenção das infecções sexualmente transmissíveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar quimioprofilaxia para Sífilis, Gonorreia, Tricomoníase, Cancro Mole e Clamídia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever anticoncepção de urgência somente se a adolescente vier a apresentar exame de βHCG positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coletar primeira sorologia de HIV, sífilis, Hepatite B e C após 30 dias da exposição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar a Imunoglobulina Humana Anti-Hepatite B em até 24 horas, não sendo necessária administração da vacina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A (Incorreta): O acolhimento e o manejo da vítima de violência sexual exigem uma abordagem integral e multiprofissional. Além da profilaxia de infecções sexualmente transmissíveis (ISTs), é mandatório oferecer anticoncepção de emergência, suporte psicológico e social, cuidados com lesões físicas e orientação médico-legal.\n\nAlternativa B (Correta): O Ministério da Saúde recomenda a profilaxia pós-exposição imediata para ISTs não virais, cobrindo Sífilis (Penicilina G Benzatina), Gonorreia (Ceftriaxona), Clamídia e Cancro Mole (Azitromicina) e Tricomoníase (Metronidazol), visando prevenir infecções comumente transmitidas nesse contexto.\n\nAlternativa C (Incorreta): A anticoncepção de emergência (levonorgestrel) deve ser administrada o mais precocemente possível, preferencialmente nas primeiras 72 horas (podendo ser usada em até 120 horas), com o intuito de prevenir a gestação resultante da violência. Um exame de beta-HCG positivo com 12 horas de evento indicaria gravidez preexistente, situação em que o método não teria efeito.\n\nAlternativa D (Incorreta): As sorologias e testes rápidos para HIV, sífilis e hepatites virais devem ser coletados imediatamente no atendimento inicial (tempo zero), com o objetivo de registrar o status sorológico basal da paciente antes da agressão. O seguimento com novas coletas é realizado posteriormente, nos intervalos de 30, 90 e 180 dias.\n\nAlternativa E (Incorreta): Como a adolescente possui comprovação vacinal completa com 3 doses para Hepatite B, ela é considerada imunizada, não necessitando de doses de reforço da vacina e nem do uso da Imunoglobulina Humana Anti-Hepatite B (IGHAHB).",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.244Z"
+  },
+  {
+    "id": "AJUDA_e5f20983-cec6-44ea-ae11-c22d8b88adaa",
+    "originalId": "e5f20983-cec6-44ea-ae11-c22d8b88adaa",
+    "statement": "Sobre perfuração de úlceras pépticas podemos afirmar que o(a)",
+    "options": [
+      {
+        "id": "A",
+        "text": "perfuração tem baixa taxa de mortalidade comparada às outras complicações das úlceras pépticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "perfuração ocorre geralmente na pequena curvatura do antro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "perfuração ocorre geralmente na parede anterior gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "reparo de Graham é uma das técnicas utilizadas nas operações de emergência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "raio x de tórax não tem importância no diagnóstico do pneumoperitônio da perfuração da úlcera péptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão aborda as complicações das úlceras pépticas, focando especificamente na perfuração, uma emergência cirúrgica que exige diagnóstico rápido e intervenção precisa.\n\nAlternativa A (Incorreta): A perfuração não apresenta baixa taxa de mortalidade. Pelo contrário, é uma das complicações mais graves da doença ulcerosa péptica, com taxas de mortalidade que podem variar de 10% a 30%, dependendo da idade do paciente, comorbidades e tempo decorrido entre o início dos sintomas e a cirurgia. A mortalidade costuma ser maior do que a observada na hemorragia digestiva alta em diversos serviços.\n\nAlternativa B (Incorreta): Embora as úlceras gástricas ocorram frequentemente na pequena curvatura, o local mais comum de perfuração por úlcera péptica é a parede anterior da primeira porção do duodeno, e não o antro gástrico.\n\nAlternativa C (Incorreta): Semelhante à alternativa anterior, a estatística clínica mostra que as úlceras duodenais perfuram com mais frequência do que as úlceras gástricas. Portanto, a perfuração ocorre mais comumente na parede anterior do duodeno.\n\nAlternativa D (Correta): O reparo de Graham, também conhecido como \"patch de Graham\" ou técnica do tampão de epíplon, é o procedimento cirúrgico padrão para o fechamento de úlceras duodenais perfuradas. A técnica consiste em posicionar um segmento livre ou pediculado de omento (epíplon) sobre a perfuração e fixá-lo com pontos seromusculares, permitindo a vedação do orifício sem a necessidade de suturas primárias que poderiam estenosar o lúmen duodenal.\n\nAlternativa E (Incorreta): O raio X de tórax em posição ortostática (em pé) é fundamental e de suma importância no diagnóstico. Ele é o exame inicial de escolha para pesquisar o pneumoperitônio, que é visualizado como uma lâmina de ar abaixo da cúpula diafragmática em cerca de 75% a 80% dos casos de perfuração. A ausência de ar no raio X não exclui o diagnóstico, mas sua presença confirma a necessidade de intervenção.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.244Z"
+  },
+  {
+    "id": "AJUDA_e5fc739e-48d4-4dbf-97f8-438d44b25cd4",
+    "originalId": "e5fc739e-48d4-4dbf-97f8-438d44b25cd4",
+    "statement": "Pode-se afirmar que a medida que, com maior efetividade, diminui a taxa de infecção da ferida operatória é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso de propés na sala cirúrgica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realização de tricotomia 24 horas antes do procedimento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aplicação de campos plásticos adesivos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "degermação com antisséptico no pré-operatório imediato",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. O uso de propés na sala cirúrgica é uma medida de higiene ambiental e proteção individual do profissional, mas não possui impacto comprovado na redução das taxas de infecção do sítio cirúrgico. Estudos demonstram que o tráfego de pessoas e a ventilação da sala são fatores ambientais muito mais relevantes do que o uso de coberturas para calçados.\n\nAlternativa b: Incorreta. A tricotomia realizada com lâmina e com grande antecedência (como 24 horas antes) aumenta significativamente o risco de infecção. Isso ocorre porque a lâmina causa microabrasões na pele que são colonizadas por bactérias. A recomendação atual é não realizar tricotomia, a menos que os pelos interfiram tecnicamente no procedimento. Caso seja necessária, deve ser feita com tricotomizador elétrico imediatamente antes da cirurgia.\n\nAlternativa c: Incorreta. Embora os campos plásticos adesivos busquem isolar a pele da incisão, as evidências científicas não demonstram que seu uso reduza a incidência de infecção. Em alguns casos, o descolamento parcial do adesivo durante a cirurgia pode até favorecer o acúmulo de umidade e a migração de bactérias para a ferida.\n\nAlternativa d: Correta. A preparação da pele do paciente no pré-operatório imediato, utilizando antissépticos adequados (como clorexidina ou PVPI), é uma das medidas de maior efetividade para reduzir a carga microbiana local. Essa prática atua diretamente sobre a principal fonte de patógenos que causam infecções de ferida operatória: a microbiota da própria pele do paciente. A redução da colonização no local da incisão diminui drasticamente a probabilidade de contaminação dos tecidos profundos durante o ato operatório.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.244Z"
+  },
+  {
+    "id": "AJUDA_e606c66d-f65a-4b67-9463-9538dad03345",
+    "originalId": "e606c66d-f65a-4b67-9463-9538dad03345",
+    "statement": "As infecções constituem uma causa comum de morte e uma causa ainda mais comum de morbidade em pacientes que apresentam ampla variedade de neoplasias malignas – a depender do tipo de neoplasia, os óbitos relacionados a infecção podem chegar a 50% dos casos. A evolução da abordagem na prevenção e no tratamento das complicações infecciosas do câncer tem diminuído as taxas de mortalidade associadas às infecções e provavelmente continuará a fazê-lo. Julgue as alternativas a seguir e aponte a correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacinas de vírus vivos (ou de bactérias vivas) não devem ser administradas a pacientes durante a quimioterapia intensiva, devido ao risco de infecção disseminada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Na neutropenia febril em terapia inicial sem foco definido, recomenda-se o uso empírico de vancomicina, reavaliando a manutenção deste tratamento após resultados de culturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacientes com febre e neutropenia devem receber terapia intravenosa com cobertura de amplo espectro contra bactérias gram-negativas e gram-positivas e pseudomonas; o tratamento ambulatorial com antibióticos via oral nesta situação é contraindicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os esquemas de antibióticos recomendados empiricamente para o tratamento de pacientes febris nos quais se espera uma neutropenia de longa duração (> 7 dias) incluem cefalosporina de terceira geração, macrolídeo e sulfametoxazol/trimetoprima, frequentemente em associação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cateteres intravenosos que são usados na quimioterapia estão propensos a causar infecção e representam um problema importante no tratamento destes pacientes; infecções de cateteres são tratadas com antibióticos e é contraindicada a remoção cirúrgica, tanto pela necessidade de via terapêutica para quimioterapia quanto pelo risco de disseminação séptica na manipulação dos mesmos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Analise detalhada das alternativas:\n\nAlternativa (a) CORRETA: Pacientes em quimioterapia intensiva apresentam um estado de imunossupressão profunda, o que impede uma resposta imune adequada para controlar até mesmo formas atenuadas de patógenos. A administração de vacinas de vírus vivos ou bactérias vivas (como febre amarela, tríplice viral ou BCG) nesses pacientes carrega o risco de replicação descontrolada do micro-organismo, levando a infecção disseminada e grave. Portanto, essas vacinas são contraindicadas durante o tratamento quimioterápico ativo e períodos de imunossupressão grave.\n\nAlternativa (b) INCORRETA: A vancomicina não deve ser utilizada de forma rotineira no esquema empírico inicial da neutropenia febril. O seu uso está indicado apenas em situações específicas, como: instabilidade hemodinâmica ou sinais de choque séptico, suspeita clínica de infecção grave relacionada ao cateter, infecção de pele ou tecidos moles, pneumonia clinicamente documentada ou se o paciente for sabidamente colonizado por Staphylococcus aureus resistente à meticilina (MRSA). Se iniciada empiricamente, sua manutenção deve ser reavaliada após 48 a 72 horas com base nos resultados de culturas.\n\nAlternativa (c) INCORRETA: O tratamento ambulatorial com antibióticos via oral não é contraindicado. Pacientes com neutropenia febril classificados como de baixo risco, geralmente utilizando o escore MASCC (Multinational Association for Supportive Care in Cancer) com pontuação igual ou maior que 21, podem ser tratados com segurança fora do ambiente hospitalar. O esquema oral comum envolve a combinação de Ciprofloxacino com Amoxicilina/Clavulanato, desde que o paciente apresente estabilidade clínica e tenha condições de retorno imediato, se necessário.\n\nAlternativa (d) INCORRETA: O tratamento empírico para neutropenia de longa duração deve focar obrigatoriamente na cobertura de Pseudomonas aeruginosa. Cefalosporinas de terceira geração (como a Ceftriaxona) não cobrem Pseudomonas e, portanto, não são recomendadas como monoterapia inicial. Os esquemas recomendados são a monoterapia com Cefepime, Piperacilina/Tazobactam ou Carbapenêmicos (Meropenem ou Imipenem). Macrolídeos e Sulfametoxazol/Trimetoprima não fazem parte do protocolo inicial padrão para neutropenia febril.\n\nAlternativa (e) INCORRETA: A remoção cirúrgica (retirada) do cateter não é contraindicada e, em muitos casos, é o tratamento definitivo necessário para o controle da infecção. A remoção está indicada em infecções causadas por Staphylococcus aureus, Pseudomonas aeruginosa, fungos (como Candida), micobactérias, ou quando há infecção do túnel subcutâneo, do orifício de saída com sinais de gravidade, ou ainda em casos de persistência da febre e culturas positivas após 72 horas de tratamento venoso adequado. A ideia de que a manipulação do cateter é contraindicada por risco de disseminação séptica é incorreta na prática clínica.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Imunizações",
+      "Neutropenia Febril",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.244Z"
+  },
+  {
+    "id": "AJUDA_e60872a6-575c-4c8e-b7c0-ba5410a91958",
+    "originalId": "e60872a6-575c-4c8e-b7c0-ba5410a91958",
+    "statement": "Uma paciente primigesta com atraso menstrual de 12 semanas procura a Unidade de Saúde para iniciar seu pré-natal. Durante o primeiro atendimento, apresentou teste rápido positivo para sífilis. Posteriormente, realizou exame de VDRL com titulação de 1:256. Negou tratamento prévio ou conhecimento do diagnóstico desta infecção sexualmente transmissível, e não apresentava nenhuma alteração no exame físico. Sobre o caso, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente está na fase secundária da doença, e provavelmente adquiriu a infecção há cerca de 60 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para iniciar o tratamento, é necessário um terceiro teste treponêmico, que deve ser documentado na caderneta de pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento adequado para esta paciente é com benzilpenicilina benzatina 2,4 milhões UI, intramuscular, semanalmente (1,2 milhão UI em cada glúteo) por 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O acompanhamento é realizado com a dosagem mensal de VDRL após o tratamento, sendo considerada resposta adequada quando há a queda de duas diluições em três meses, ou de quatro diluições em seis meses após a conclusão do tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente em questão é uma gestante (primigesta, 12 semanas) com diagnóstico de sífilis estabelecido por dois testes positivos: um teste treponêmico (teste rápido) e um teste não treponêmico (VDRL 1:256). Como ela nega sintomas e não possui registros de exames anteriores ou tratamento prévio, o quadro é classificado como sífilis latente de duração ignorada.\n\nALTERNATIVA A: INCORRETA. A classificação de sífilis secundária exige a presença de sinais e sintomas clínicos, como roséolas, sifílides cutâneas, acometimento palmoplantar ou linfonodomegalia. Como a paciente é assintomática ao exame físico, ela se encontra na fase latente. Não é possível afirmar o tempo de evolução da doença (como os 60 dias citados) apenas pelo valor da titulação do VDRL.\n\nALTERNATIVA B: INCORRETA. Para o diagnóstico de sífilis, a combinação de um teste treponêmico e um não treponêmico é conclusiva. Na gestante, a agilidade é fundamental para prevenir a transmissão vertical. Não existe a recomendação de um terceiro teste treponêmico para iniciar o tratamento; uma vez que ambos os testes realizados foram reagentes, o tratamento deve ser iniciado imediatamente.\n\nALTERNATIVA C: INCORRETA. O tratamento para sífilis latente de duração ignorada ou sífilis tardia consiste em 3 doses de benzilpenicilina benzatina 2,4 milhões UI, por via intramuscular, com intervalo semanal entre elas (totalizando 7,2 milhões UI). O esquema de duas semanas (duas doses) mencionado na alternativa não está previsto nos protocolos oficiais para casos de duração desconhecida.\n\nALTERNATIVA D: CORRETA. Esta alternativa descreve corretamente o seguimento da gestante. O monitoramento do VDRL durante o pré-natal deve ser mensal. A resposta imunológica é considerada adequada quando há uma queda de dois títulos ou duas diluições em três meses (por exemplo, de 1:256 para 1:64) ou de quatro diluições em seis meses (por exemplo, de 1:256 para 1:16) após o término do tratamento. Vale lembrar que a gestante só é considerada adequadamente tratada se terminar o esquema de penicilina pelo menos 30 dias antes do parto.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.244Z"
+  },
+  {
+    "id": "AJUDA_e60fac91-302e-4fb9-aed5-8c9f40a819ff",
+    "originalId": "e60fac91-302e-4fb9-aed5-8c9f40a819ff",
+    "statement": "Mulher 26 anos de idade, atendida na Unidade Básica de Saúde, refere que desde que menstruou a primeira vez aos 13 anos apresenta dores tipo cólica menstrual de forte intensidade, aos 16 anos de idade iniciou vida sexual e passou a usar contraceptivo hormonal oral com melhoras das dores Devido diminuição da libido e cefaleia optou por parar com o uso do contraceptivo hormonal e está usando coito interrompido há oito meses. Porém as dores voltaram com aumento da intensidade, dificultando as atividades laborais, passando a sentir dor à profundidade durante a relação sexual. Ao exame físico ginecológico, no toque vaginal observa-se a presença de útero em retroversoflexão (RVF), com pouca mobilidade e doloroso com nodulações de consistência endurecida em região do fórnice vaginal posterior. Trouxe resultado de exame de ultrassom pélvico abdominal e endovaginal realizado há dois meses, porém esqueceu o laudo, tendo em mãos somente a imagem ao lado. Qual a sua hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endometriose Peritoneal Profunda e Endometrioma Ovariano Bilateral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Síndrome do Ovários Policísticos com Microcistos Ovarianos Bilateral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença Inflamatória Pélvica com Abcesso Tubo Ovariano Bilateral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dor Pélvica Aguda com Hidrossalpinge Bilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresenta uma paciente jovem com a tríade clássica da endometriose: dismenorreia de forte intensidade, dispareunia de profundidade e achados de exame físico altamente sugestivos, como o útero em retroversoflexão com pouca mobilidade e a presença de nodulações endurecidas no fórnice vaginal posterior. Esses achados físicos indicam o comprometimento do compartimento posterior e dos ligamentos uterossacrais, características da endometriose profunda.\n\nAnálise da imagem: A imagem de ultrassonografia demonstra estruturas císticas com conteúdo hipoecoico e homogêneo, apresentando ecos internos finos que conferem o aspecto clássico de vidro fosco. Esse padrão é característico do endometrioma ovariano. Como há duas estruturas semelhantes, trata-se de um quadro bilateral.\n\nAlternativa (a) - Correta: A história clínica de dor pélvica crônica que melhora com o uso de anticoncepcional hormonal e piora após a suspensão, associada aos nódulos palpáveis no toque vaginal e à imagem ultrassonográfica de cistos com aspecto de vidro fosco, confirma o diagnóstico de endometriose profunda e endometriomas ovarianos bilaterais.\n\nAlternativa (b) - Incorreta: A Síndrome dos Ovários Policísticos (SOP) apresenta-se com múltiplos microcistos periféricos (geralmente menores que 10 mm) e não costuma cursar com dor pélvica intensa, dispareunia de profundidade ou nódulos no fórnice posterior. A imagem mostrada exibe cistos volumosos com ecogenicidade interna, o que não corresponde aos folículos da SOP.\n\nAlternativa (c) - Incorreta: Embora a Doença Inflamatória Pélvica (DIP) possa causar dor e massas anexiais (abscessos), o quadro clínico é geralmente agudo ou subagudo, acompanhado de febre, corrimento vaginal e sinais de infecção. Ultrassonograficamente, o abscesso tubo-ovariano é uma massa complexa e heterogênea, diferente do conteúdo fino e homogêneo visto nos endometriomas.\n\nAlternativa (d) - Incorreta: A hidrossalpinge refere-se à dilatação da tuba uterina por líquido. Na ultrassonografia, ela aparece como uma estrutura tubular, alongada e anecoica (preta), frequentemente com septos incompletos. A imagem da questão mostra estruturas arredondadas com ecos internos (vidro fosco), típicas de ovários com endometriomas, e não de tubas dilatadas.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/07febcd193afcfba5a6c298dd9cfdce00a5ee1136d98e2e2d9752a5a34580f6d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e60fac91-302e-4fb9-aed5-8c9f40a819ff_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.791Z"
+  },
+  {
+    "id": "AJUDA_e623f6dc-3102-48da-98b5-627695eb9d42",
+    "originalId": "e623f6dc-3102-48da-98b5-627695eb9d42",
+    "statement": "Uma paciente de seis anos e quatro meses de idade foi encaminhada à avaliação por início de broto mamário há cerca de quatro meses, sem pelos pubianos nem odor axilar. A mãe referiu que a velocidade de crescimento aumentou discretamente no último ano. Ao exame físico, mostrou estadiamento M2, P1; peso no p50 e estatura no p60. A radiografia de mão e punho realizada evidenciou idade óssea compatível com sete anos e seis meses. O teste de estímulo com GnRH revelou pico de LH em 7,2 UI/L. Considerando o quadro e a fisiopatologia envolvida, qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Início de análogo de GnRH para bloqueio da puberdade central.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitação de ultrassonografia pélvica e suspensão de qualquer investigação adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acompanhamento clínico sem intervenções, pois o quadro é compatível com variante normal da puberdade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Introdução de antiestrogênio para evitar progressão da telarca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta é uma questão clássica sobre Puberdade Precoce Central (PPC). Para resolver casos clínicos de desenvolvimento puberal em meninas, devemos analisar a idade de início, o ritmo de progressão e os critérios bioquímicos.\n\nAnálise do quadro clínico e laboratorial:\n1. Idade de início: A paciente tem 6 anos e 4 meses. A puberdade é considerada precoce em meninas quando se inicia antes dos 8 anos de idade.\n2. Sinais clínicos: Apresenta telarca (M2), que é o primeiro sinal de puberdade, além de aceleração da velocidade de crescimento.\n3. Idade óssea (IO): A IO está em 7 anos e 6 meses, apresentando um avanço superior a 1 ano em relação à idade cronológica. O avanço da idade óssea sugere exposição significativa a esteroides sexuais, o que pode comprometer a estatura final por fechamento precoce das epífises.\n4. Teste de estímulo com GnRH: O pico de LH de 7,2 UI/L é o dado decisivo. Em crianças, um pico de LH pós-estímulo acima de 5,0 UI/L (ou entre 3,3 e 5,0, dependendo do ensaio) confirma a ativação do eixo hipotálamo-hipófise-gonadal, caracterizando a Puberdade Precoce Central.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Uma vez confirmado o diagnóstico de Puberdade Precoce Central (clínica + idade óssea avançada + LH elevado), o tratamento de escolha é o uso de análogos do GnRH de depósito (como o acetato de leuprolida). O objetivo é dessensibilizar a hipófise, interromper a progressão dos caracteres sexuais secundários, normalizar a velocidade de crescimento e preservar o potencial de estatura final da criança.\n\nAlternativa b) Incorreta. A ultrassonografia pélvica pode auxiliar na avaliação do volume uterino e ovariano, mas não substitui a necessidade de tratamento. Suspender a investigação ou a conduta terapêutica diante de um diagnóstico de PPC confirmado levaria ao prejuízo estatural da paciente e à progressão precoce da menarca.\n\nAlternativa c) Incorreta. O quadro não é uma variante do desenvolvimento normal (como a telarca precoce isolada). Na telarca precoce isolada, não há aceleração da velocidade de crescimento, a idade óssea é compatível com a idade cronológica e o teste de estímulo com GnRH revela um LH pré-puberal (baixo).\n\nAlternativa d) Incorreta. Os antiestrogênios não são o tratamento de primeira linha para a Puberdade Precoce Central. O bloqueio deve ser feito no nível da hipófise, através dos análogos de GnRH, para interromper o estímulo central sobre as gônadas. Além disso, o foco não é apenas evitar a telarca, mas sim controlar todo o eixo hormonal e o avanço da idade óssea.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Puberdade",
+      "Hipófise"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:50.791Z"
+  }
+]

@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_438c1db0-f008-4501-9746-1e6163aaa7d1",
+    "originalId": "438c1db0-f008-4501-9746-1e6163aaa7d1",
+    "statement": "94- Uma médica de família e comunidade realiza visita domiciliar para Dona Elza, 85 anos, portadora de diabetes mellitus tipo 2 e hipertensão arterial, acamada há 2 meses após uma queda com fratura de fêmur. Durante a visita, a médica identifica uma úlcera por pressão em estágio II na região sacral. A filha de Dona Elza, sua única cuidadora, trabalha durante o dia e relata estar sobrecarregada e ansiosa sobre como realizar o curativo e avaliar a piora da lesão. Ao final da consulta, a filha pergunta: “E então, doutora, quando a senhora volta para nos ver?”. Diante desta situação clínica e social, como deve ser a decisão sobre a frequência de acompanhamento de D. Elza?",
+    "options": [
+      {
+        "id": "A",
+        "text": "\"Voltarei em 15 dias para reavaliá-la. A agenda da unidade já definiu essa data como padrão para retornos.\"",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "\"Essa é uma ótima pergunta. Vamos conversar sobre os sinais de alerta que precisamos observar nos próximos dias. Com base nisso, e na sua disponibilidade, podemos definir juntos a melhor data para o meu retorno.\"",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "\"Vamos ver como ela evolui. Qualquer coisa, é só ligar para a unidade de saúde e falar com o agente comunitário de saúde para marcar um novo dia.\"",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "\"Eu não precisarei voltar. O mais importante agora é o acompanhamento da equipe de enfermagem para a troca de curativos. Eles entrarão em contato para agendar as visitas deles.\"",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda princípios fundamentais da Medicina de Família e Comunidade (MFC) e do Método Clínico Centrado na Pessoa, focando especificamente na organização da assistência domiciliar e no apoio ao cuidador.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O planejamento da assistência na Atenção Primária, especialmente em visitas domiciliares para pacientes acamados e complexos, não deve seguir um padrão rígido e burocrático de agenda. A frequência das visitas deve ser baseada na estratificação de risco clínico e na vulnerabilidade social da família, e não em uma data fixa predefinida pela unidade sem considerar as particularidades do caso.\n\nAlternativa b) Correta. Esta resposta demonstra a aplicação do Método Clínico Centrado na Pessoa ao validar a dúvida da cuidadora e envolvê-la no plano de cuidado (decisão compartilhada). Ao discutir os sinais de alerta, a médica capacita a cuidadora (educação em saúde) para identificar precocemente complicações da úlcera por pressão ou descompensações das doenças de base. Além disso, ao considerar a disponibilidade da filha, a médica reconhece a sobrecarga da cuidadora e pactua um acompanhamento que seja viável e seguro para ambas as partes.\n\nAlternativa c) Incorreta. Esta conduta é passiva e transfere toda a responsabilidade da vigilância para uma cuidadora que já relatou estar sobrecarregada e ansiosa. Em casos de idosos acamados com lesões de pele e doenças crônicas, o monitoramento deve ser proativo por parte da equipe de saúde para garantir a continuidade e a integralidade do cuidado.\n\nAlternativa d) Incorreta. Embora a equipe de enfermagem tenha um papel crucial no tratamento de feridas e na realização de curativos, o acompanhamento médico é indispensável para uma paciente de 85 anos com múltiplas comorbidades (diabetes e hipertensão) e uma fratura de fêmur recente. O médico deve monitorar o controle metabólico, o manejo da dor e a evolução global da paciente, trabalhando de forma interdisciplinar com a enfermagem, e não delegando totalmente o caso.\n\nEm resumo, a alternativa B é a que melhor reflete a prática da Medicina de Família e Comunidade, focando na autonomia da família, na prevenção de agravos e na construção de um vínculo terapêutico sólido.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:21.916Z"
+  },
+  {
+    "id": "AJUDA_4393ea56-b10f-4c6a-9c7a-535cba4b16b1",
+    "originalId": "4393ea56-b10f-4c6a-9c7a-535cba4b16b1",
+    "statement": "A Pseudomonas aeruginosa é uma bactéria causadora de infecções graves em pediatria, como exemplo, a osteomielite que se segue a um ferimento puntiforme nos pés quando o objeto perfurante atravessa um calçado emborrachado antes de penetrar no calcâneo. Qual das cefalosporinas possui a melhor cobertura para este patógeno?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefdinir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefepime.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ceftaroline.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cefotaxime.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa questão aborda o tratamento farmacológico de uma infecção bacteriana específica por Pseudomonas aeruginosa, frequentemente associada a ferimentos puntiformes nos pés que atravessam calçados com sola de borracha. A umidade e o ambiente interno desse tipo de calçado favorecem a colonização por Pseudomonas, tornando-a um patógeno clássico em casos de osteomielite pós-perfuração nesta topografia.\n\nAnálise das alternativas:\n\na) Cefdinir: É uma cefalosporina de 3ª geração de uso oral. Embora seja eficaz para infecções respiratórias e de pele causadas por patógenos comuns (como S. pyogenes e S. pneumoniae), ela não apresenta atividade contra Pseudomonas aeruginosa.\n\nb) Cefepime: Esta é uma cefalosporina de 4ª geração. Sua principal característica clínica é o espectro ampliado, que mantém uma boa cobertura para cocos Gram-positivos e estende a cobertura para uma vasta gama de bacilos Gram-negativos, incluindo obrigatoriamente a Pseudomonas aeruginosa. Por isso, é a opção correta entre as listadas.\n\nc) Ceftaroline: É classificada como uma cefalosporina de 5ª geração (ou de espectro avançado). Sua grande diferenciação é a atividade contra o Staphylococcus aureus resistente à oxacilina (MRSA). Contudo, a Ceftaroline não possui cobertura contra Pseudomonas aeruginosa, sendo esta uma de suas principais limitações em relação à 4ª geração.\n\nd) Cefotaxime: É uma cefalosporina de 3ª geração de uso parenteral. Apesar da excelente cobertura para diversos Gram-negativos e boa penetração no sistema nervoso central, a Cefotaxime (assim como a Ceftriaxone) não é ativa contra Pseudomonas aeruginosa. Dentro da 3ª geração, a principal representante com ação antipseudomonas é a Ceftazidime.\n\nConclusão: Para o tratamento de infecções graves ou específicas por Pseudomonas aeruginosa, como a osteomielite descrita, o Cefepime (4ª geração) é o fármaco de escolha entre as opções apresentadas devido ao seu perfil farmacodinâmico direcionado a esse patógeno.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:21.916Z"
+  },
+  {
+    "id": "AJUDA_4399289d-9c66-40ec-8221-df264b6e7884",
+    "originalId": "4399289d-9c66-40ec-8221-df264b6e7884",
+    "statement": "Para realizar cesariana em paciente com síndrome HELLP apresentando plaquetopenia acentuada, a anestesia de escolha é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "raquidiana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "peridural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "geral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A síndrome HELLP é uma complicação grave do espectro da pré-eclâmpsia, caracterizada por hemólise, elevação de enzimas hepáticas e plaquetopenia (baixa contagem de plaquetas). O ponto central desta questão é o manejo anestésico diante de uma coagulopatia ou contagem de plaquetas insuficiente para garantir a segurança de bloqueios neuroaxiais.\n\nAlternativa a) Incorreta. A anestesia raquidiana envolve a punção do espaço subaracnoideo. Em pacientes com plaquetopenia acentuada, existe um risco elevado de desenvolvimento de hematoma espinhal ou epidural. Esse hematoma pode comprimir a medula ou as raízes nervosas, levando a danos neurológicos permanentes. A maioria das diretrizes estabelece um limite de segurança de pelo menos 75.000 a 80.000 plaquetas/mm³ para a realização dessa técnica.\n\nAlternativa b) Incorreta. A anestesia peridural é considerada ainda mais arriscada que a raquidiana em pacientes com plaquetopenia. Isso ocorre porque a agulha utilizada é de maior calibre e o trauma vascular no espaço epidural é mais provável. Além disso, a presença de um cateter peridural aumenta o risco de sangramento na inserção ou na retirada. Portanto, é terminantemente contraindicada em casos de plaquetopenia acentuada.\n\nAlternativa c) Incorreta. A anestesia local não é uma técnica viável para a realização de uma cesariana. O procedimento exige o bloqueio de múltiplos planos teciduais, manipulação de vísceras e relaxamento muscular, o que não é alcançado apenas com infiltração local, tornando o procedimento tecnicamente impossível e extremamente doloroso para a paciente.\n\nAlternativa d) Correta. A anestesia geral é a conduta de escolha quando há contraindicação para os bloqueios regionais (raqui ou peridural). No contexto de síndrome HELLP com plaquetopenia severa, a anestesia geral evita o risco de hematoma no canal vertebral. Embora apresente desafios, como a necessidade de controle rigoroso da pressão arterial durante a laringoscopia e o manejo de uma via aérea potencialmente difícil, ela garante a segurança neurológica da paciente e permite a realização rápida do parto.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:21.916Z"
+  },
+  {
+    "id": "AJUDA_43a544b4-df0d-47da-817d-ed916f7e1b78",
+    "originalId": "43a544b4-df0d-47da-817d-ed916f7e1b78",
+    "statement": "Um operário estava trabalhando em um edifício em construção, quando sofreu uma queda do 3º pavimento. Vítima de múltiplos traumatismos nos membros inferiores, ele permaneceu internado durante 25 dias, tendo sido submetido a duas cirurgias ortopédicas. No 23º dia, foi diagnosticado hematoma subdural, tendo o paciente sido transferido para unidade de terapia intensiva. O quadro evoluiu com gravidade, vindo o paciente a falecer dentro de 36 horas.\n\nDiante dessas informações, a declaração de óbito deve ser fornecida pelo",
+    "options": [
+      {
+        "id": "A",
+        "text": "médico do serviço de Ortopedia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Instituto Médico Legal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "médico do serviço de Neurologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Serviço de Verificação de Óbito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto central para resolver esta questão é identificar a natureza da causa da morte. De acordo com a legislação brasileira e as normas do Conselho Federal de Medicina (CFM) e do Ministério da Saúde, a responsabilidade pela emissão da Declaração de Óbito (DO) varia conforme a circunstância do falecimento (causa natural ou causa externa).\n\nNeste caso, o paciente sofreu uma queda de altura (acidente de trabalho), o que caracteriza uma morte por causa externa (violenta ou acidental). Em situações de causas externas, a competência para a realização da necropsia e emissão da DO é exclusiva do Instituto Médico Legal (IML), independentemente do tempo decorrido entre o evento inicial e o óbito. Mesmo que o paciente tenha ficado internado por 25 dias e morrido por uma complicação tardia (como o hematoma subdural), a causa básica permanece sendo a queda.\n\nAnálise das alternativas:\n\na) Incorreta. O médico assistente (ortopedista ou qualquer outro) não deve assinar a DO em casos de morte por causa externa. Se ele o fizer, estará assumindo uma responsabilidade legal que não lhe cabe e dificultando investigações policiais ou solicitações de seguros (como o DPVAT ou seguros de vida), que exigem o laudo do IML.\n\nb) Correta. O Instituto Médico Legal é o órgão responsável por constatar óbitos decorrentes de causas não naturais (homicídios, suicídios e acidentes). A queda do 3º pavimento é um acidente; portanto, o corpo deve obrigatoriamente ser encaminhado ao IML para perícia, mesmo que o óbito tenha ocorrido dentro de um hospital após longo período de internação.\n\nc) Incorreta. Assim como o ortopedista, o neurologista ou o intensivista que assistiu ao paciente na UTI não pode assinar a DO. Embora o hematoma subdural tenha sido a complicação final, ele é consequência direta ou indireta do traumatismo sofrido na queda.\n\nd) Incorreta. O Serviço de Verificação de Óbito (SVO) destina-se exclusivamente a mortes de causa natural (doenças) em que não houve assistência médica ou em que a causa do óbito é mal definida. O SVO nunca deve receber casos de morte por causas externas (trauma/violência).\n\nResumo: Morte por causa externa (acidente, homicídio, suicídio) = IML. Morte por causa natural mal definida = SVO. Morte por causa natural com assistência médica = Médico assistente.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:21.916Z"
+  },
+  {
+    "id": "AJUDA_43abfe59-a6bb-4f67-8677-44680c7f9aa8",
+    "originalId": "43abfe59-a6bb-4f67-8677-44680c7f9aa8",
+    "statement": "Mulher, 69 anos de idade, foi submetida à laparotomia exploradora para reconstrução de trânsito intestinal 6 meses após retossigmoidectomia com colostomia terminal devido à diverticulite aguda. No intraoperatório foi necessário realizar lise de aderências de intestino. O procedimento foi realizado sem intercorrências com duração de 6 horas e a paciente foi encaminhada para enfermaria. Desde o primeiro dia pós-operatório, estava deambulando. No terceiro dia pós-operatório, evoluiu com distensão abdominal e vômitos. Neste momento, foi realizada a passagem de sonda nasogástrica com saída de 900 mL. No sexto dia pós-operatório, manteve débito elevado pela sonda (> 1000 mL/dia). Ainda não evacuou e sem eliminação de gases. Ao exame físico, encontra-se em bom estado geral, FC de 80 bpm e PA de 130x80 mmHg, hidratada, abdome com ferida de bom aspecto, distendido, ruídos diminuídos e pouca dor à palpação profunda, sem sinais de irritação peritoneal. Dreno com débito seroso (média de 80 mL/dia). \n\n• Exames laboratoriais: \nHb: 10,1 g/dL \nHt: 31% \nLeucograma: 8.120/mm³ \nCreatinina: 0,9 mg/dL \nUreia: 54 mg/dL \nPCR: 41 mg/L (prévio de dois dias atrás 81 mg/L) \n\nAssinale a principal hipótese diagnóstica para este caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Íleo paralítico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Gastroparesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Obstrução por brida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deiscência de anastomose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve uma paciente idosa no 6º dia pós-operatório (PO) de uma cirurgia abdominal de grande porte e longa duração (6 horas), que envolveu manipulação intestinal intensa (lise de aderências). Ela apresenta um quadro de parada de eliminação de gases e fezes, distensão abdominal e vômitos (confirmados pelo alto débito da sonda nasogástrica).\n\nA análise das alternativas fundamenta-se na diferenciação entre causas funcionais e mecânicas/inflamatórias no pós-operatório:\n\na) Íleo paralítico: ESTÁ CORRETA. O íleo paralítico (ou íleo adinâmico) é a falha temporária da motilidade intestinal após a cirurgia. Embora o esperado seja a resolução em 3 a 5 dias, ele pode se prolongar em cirurgias extensas, demoradas e com muita manipulação de alças, como foi o caso. O exame físico mostra ruídos hidroaéreos diminuídos e ausência de sinais de irritação peritoneal. Um ponto fundamental aqui é a estabilidade clínica e laboratorial: a paciente está em bom estado geral, hidratada, sem taquicardia e com queda expressiva da PCR (de 81 para 41 mg/L), o que afasta processos infecciosos ou inflamatórios agudos graves.\n\nb) Gastroparesia: ESTÁ INCORRETA. A gastroparesia refere-se especificamente ao retardo do esvaziamento gástrico. Embora explique os vômitos e o débito da sonda nasogástrica, ela não justifica a distensão abdominal generalizada nem a ausência completa de eliminação de gases e fezes por seis dias, o que aponta para um acometimento de todo o trato intestinal (íleo).\n\nc) Obstrução por brida: ESTÁ INCORRETA. Embora a obstrução mecânica por bridas seja um diagnóstico diferencial importante no pós-operatório, ela geralmente se manifesta com dor abdominal em cólica e ruídos hidroaéreos aumentados (metálicos) na fase inicial. No íleo paralítico, os ruídos estão diminuídos ou ausentes. Além disso, no pós-operatório precoce, a distinção clínica entre íleo prolongado e obstrução mecânica é difícil, mas o contexto de manipulação cirúrgica extensa favorece inicialmente a hipótese funcional (íleo).\n\nd) Deiscência de anastomose: ESTÁ INCORRETA. Esta é uma complicação grave que normalmente ocorre entre o 5º e 7º dia PO, mas costuma cursar com sinais de sepse ou peritonite: febre, taquicardia, dor abdominal súbita e intensa, queda do estado geral e elevação de marcadores inflamatórios (leucocitose e aumento da PCR). No caso, a paciente está clinicamente bem, a PCR está em queda e o débito do dreno é seroso, o que torna essa hipótese improvável no momento.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:21.916Z"
+  },
+  {
+    "id": "AJUDA_43b26c9f-a856-495c-8d48-fc118645e8f5",
+    "originalId": "43b26c9f-a856-495c-8d48-fc118645e8f5",
+    "statement": "Homem de 24 anos é atendido no serviço de emergência 20 minutos após ferimento por arma de fogo. O orifício de entrada do projetil localiza-se 2 cm lateralmente à linha hemiclavicular direita, ao nível do quarto espaço intercostal. O paciente apresenta pressão arterial de 120 x 82 mmHg, frequência cardíaca de 110 bpm e frequência respiratória de 19 irpm. O médico que o atende observa o seguinte: paciente normocorado e cooperativo; murmúrios vesiculares diminuídos em hemitórax direito; macicez diffusa à percussão; e ausência do frêmito tóraco-vocal nesse mesmo lado do tórax. Durante a avaliação inicial, é realizada reposição volêmica, oferta-se oxigênio suplementar, são colhidos exames laboratoriais e é administrado ácido tranexâmico. \n\nNessa situação, assinale a alternativa que apresenta o procedimento adequado a ser realizado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Toracotomia exploradora para retirada do projetil alojado no tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Toracocentese com agulha grossa, no segundo espaço intercostal direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Drenagem pleural no quinto espaço intercostal, entre linha axilar anterior e média.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Drenagem pleural por meio do orifício de entrada do projétil, em aspiração contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um trauma torácico penetrante por projétil de arma de fogo. Os achados do exame físico são fundamentais para o diagnóstico: a diminuição do murmúrio vesicular associada à macicez à percussão e à ausência de frêmito toracovocal no hemitórax direito aponta diretamente para a presença de líquido no espaço pleural. Em um contexto de trauma, esse quadro clínico define um hemotórax. O paciente encontra-se hemodinamicamente estável (PA 120 x 82 mmHg), apesar da leve taquicardia, o que permite a abordagem inicial preconizada pelo protocolo ATLS.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. A toracotomia exploradora de urgência no trauma está indicada em situações específicas, como o hemotórax maciço (saída imediata de mais de 1.500 ml de sangue após a drenagem ou débito contínuo maior que 200 ml/h por 2 a 4 horas) ou em casos de instabilidade hemodinâmica grave que não responde à reposição. No caso descrito, o paciente está estável e o tórax ainda nem sequer foi drenado para quantificar a perda volêmica. Além disso, a simples retirada do projétil não é o objetivo primário da cirurgia de trauma.\n\nAlternativa b) Incorreta. A toracocentese com agulha (ou descompressão por agulha) é o tratamento imediato para o pneumotórax hipertensivo. No entanto, o achado na percussão foi de macicez (sugerindo sangue/líquido) e não de timpanismo (que sugeriria ar). Portanto, a manobra não teria utilidade clínica para este paciente.\n\nAlternativa c) Correta. O tratamento padrão para o hemotórax é a drenagem pleural fechada em selo d'água. O local correto para a inserção do dreno de tórax é no quinto espaço intercostal, entre a linha axilar anterior e a linha axilar média (conhecido como triângulo de segurança), preferencialmente logo acima da borda superior da costela inferior para evitar o feixe vasculonervoso intercostal. Este procedimento permitirá a expansão pulmonar e a monitorização do volume de sangue perdido.\n\nAlternativa d) Incorreta. Jamais se deve realizar a drenagem pleural através do orifício de entrada do projétil. A drenagem deve ser feita em local estéril, com técnica cirúrgica adequada e em local anatômico que garanta a eficácia do procedimento. Utilizar o trajeto da bala aumenta drasticamente o risco de infecção (empiema) e não garante o posicionamento correto do dreno no espaço pleural.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Trauma",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:21.916Z"
+  },
+  {
+    "id": "AJUDA_43bd70e8-3c42-4b48-bcb2-e14f4209de41",
+    "originalId": "43bd70e8-3c42-4b48-bcb2-e14f4209de41",
+    "statement": "Paciente 59 anos, portador de estenose mitral moderada, é internado na enfermaria de Clínica Médica com diagnóstico de endocardite infecciosa de valva mitral (vegetação confirmada em ecocardiograma), em uso de ceftriaxona e vancomicina (empiricamente, aguardando resultado de culturas). No 3º dia de internação evolui com palidez cutânea, hipotensão, bradicardia, com o seguinte eletrocardiograma (abaixo). Sobre o caso assinale o diagnóstico e a conduta mais adequados:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um bloqueio atrioventricular (BAV) 2:1, esperado nos quadros de endocardite e geralmente com resolução espontânea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de um bloqueio atrioventricular total (BAVT), mas neste caso não é indicada a colocação de marcapasso temporário, pois há risco de embolização séptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de um bloqueio atrioventricular total (BAVT) por possível abscesso valvar, sendo indicado marcapasso temporário e cirurgia de troca valvar de urgência",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de bloqueio atrioventricular (BAV) de 1º grau, sendo indicada observação em leito de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico\n\nO quadro descreve um paciente com endocardite infecciosa (EI) que apresenta uma complicação aguda grave. A tríade de endocardite, nova bradicardia/hipotensão e alteração no eletrocardiograma (ECG) é um sinal clássico de extensão perivalvar da infecção.\n\nAnálise do Eletrocardiograma (ECG)\n\nAo observar o traçado, notamos que as ondas P aparecem de forma regular, mas não guardam relação fixa com os complexos QRS. Há uma dissociação atrioventricular completa: a frequência atrial é consideravelmente maior que a ventricular, e nenhum impulso atrial é conduzido aos ventrículos. Esse achado é diagnóstico de Bloqueio Atrioventricular Total (BAVT).\n\nAnálise das Alternativas\n\nAlternativa a) Incorreta. O ECG não mostra um bloqueio 2:1 (em que uma onda P conduz e a outra não), mas sim uma dissociação total. Além disso, o surgimento de bloqueios na endocardite nunca é considerado esperado ou de resolução espontânea; pelo contrário, é um sinal de alerta para complicações graves.\n\nAlternativa b) Incorreta. Embora identifique o BAVT, a conduta está errada. Em um paciente com instabilidade hemodinâmica (hipotensão e palidez), o marca-passo temporário é mandatório para estabilização clínica imediata. O risco de embolização por conta do eletrodo de marca-passo é mínimo frente ao risco iminente de morte pela bradicardia extrema e choque.\n\nAlternativa c) Correta. O BAVT em um paciente com endocardite indica que a infecção ultrapassou os folhetos valvares e atingiu o sistema de condução (feixe de His ou nó atrioventricular), geralmente devido à formação de um abscesso perivalvar. Essa é uma das complicações mais temidas da EI. A conduta correta envolve a estabilização hemodinâmica com marca-passo temporário e a indicação de cirurgia cardíaca de urgência, pois o tratamento clínico com antibióticos isolados não é capaz de drenar ou curar abscessos miocárdicos.\n\nAlternativa d) Incorreta. O bloqueio de 1º grau é caracterizado apenas pelo aumento do intervalo PR (> 200 ms), com todas as ondas P seguidas por um QRS. O traçado mostra uma gravidade muito maior (BAVT), e a simples observação seria fatal para o paciente.\n\nConclusão\n\nO aparecimento de um novo distúrbio de condução no contexto de endocardite infecciosa é um critério diagnóstico importante para abscesso de anel valvar (frequente na valva aórtica, mas possível na mitral). A instabilidade clínica exige intervenção rápida (marca-passo) e definitiva (cirurgia).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Bradiarritmias",
+      "Endocardite Bacteriana",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/0d914b854f17db0f584dc91d0901ad89a21519ac63fe4a5f28b3adb9567e1334.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_43bd70e8-3c42-4b48-bcb2-e14f4209de41_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:22.459Z"
+  },
+  {
+    "id": "AJUDA_43c842cd-19d3-4a95-9bd0-882cae863723",
+    "originalId": "43c842cd-19d3-4a95-9bd0-882cae863723",
+    "statement": "Um estudo de coorte avaliou a associação entre consumo diário de carne processada e câncer colorretal, encontrando Risco Relativo (RR) = 1,18 (IC95% 1,02 – 1,37). Com base nesse resultado, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O consumo de carne processada reduz o risco de câncer em 18%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O risco de câncer no grupo exposto é 37% maior do que no grupo não exposto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O resultado é inválido, pois o valor do RR é inferior a 2,0, indicando ausência de causalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Há associação estatisticamente significativa, mas o risco é de pequena magnitude clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para interpretar os dados do estudo, devemos analisar a estimativa pontual do Risco Relativo (RR = 1,18) e seu Intervalo de Confiança de 95% (IC95% 1,02 - 1,37). O RR mede a força da associação e o IC95% indica a precisão e a significância estatística, cujo valor nulo para medidas de razão é 1,0.\n\nAlternativa A - Incorreta: O RR de 1,18 indica um aumento de 18% no risco de câncer colorretal no grupo exposto (1,18 - 1,0 = 0,18 ou 18%), funcionando como fator de risco. Para indicar redução (fator de proteção), o RR deveria ser menor que 1,0.\n\nAlternativa B - Incorreta: O risco no grupo exposto é 18% maior (estimativa pontual do RR). O valor de 37% (1,37) representa apenas o limite superior do intervalo de confiança, que reflete a margem de erro amostral, e não a estimativa central do efeito.\n\nAlternativa C - Incorreta: O resultado é perfeitamente válido. Não existe regra que exija RR maior que 2,0 para definir validade ou causalidade. Embora uma associação mais forte aumente a probabilidade de causalidade (critérios de Bradford Hill), associações de menor intensidade são comuns e válidas na epidemiologia.\n\nAlternativa D - Correta: Há significância estatística porque o IC95% (1,02 a 1,37) não inclui o valor nulo (1,0), com o limite inferior acima da unidade (p menor que 0,05). Ao mesmo tempo, um aumento de 18% no risco relativo (RR = 1,18) é classificado como de pequena magnitude clínica do ponto de vista do risco individual.\n\nAlternativa E - Incorreta: A alternativa D traz a análise correta dos achados epidemiológicos apresentados.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:22.459Z"
+  },
+  {
+    "id": "AJUDA_43c9c604-5f70-426d-930c-cf5946780a53",
+    "originalId": "43c9c604-5f70-426d-930c-cf5946780a53",
+    "statement": "Homem, 47 anos, sem comorbidades, apresenta lesão na região malar (Figura) muito pruriginosa com períodos de exacerbações e períodos de melhora, em especial quando usa cremes com corticoide. Relata que quando usa perfume as lesões ardem e ficam exsudativas. \n\nQual exame complementar é o mais indicado neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dosagem de IgE total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Testes de alergia a glúten.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste de Puntura (Prick Test).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste de contato (Patch Test).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A história clínica e a imagem apresentada são compatíveis com dermatite de contato alérgica em fase aguda a subaguda. A imagem evidencia placa eritematosa na região malar com presença de microvesículas, exsudação e crostas melicéricas, caracterizando um quadro eczematoso clássico desencadeado por cosméticos (perfumes) e responsivo a corticoides. A dermatite de contato alérgica é uma reação de hipersensibilidade do tipo IV (tardia ou celular).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A dosagem de IgE sérica total é um marcador inespecífico associado a doenças atópicas e parasitoses, refletindo reações mediadas por IgE (tipo I de Gell e Coombs), não tendo papel diagnóstico na dermatite de contato alérgica.\n\nAlternativa b: Incorreta. A história clínica e a apresentação anatômica apontam para contato com agentes exógenos tópicos (perfumes). Não há manifestações gastrointestinais ou lesões típicas de dermatite herpetiforme (que costuma acometer superfícies extensoras e tronco) para justificar a investigação de sensibilidade ao glúten.\n\nAlternativa c: Incorreta. O teste de puntura (Prick Test) é indicado para avaliar reações de hipersensibilidade imediata do tipo I, mediadas por IgE, como asma alérgica, rinite, alergias alimentares e reações a venenos de insetos. Não é o exame adequado para reações do tipo IV.\n\nAlternativa d: Correta. O teste de contato (Patch Test) é o padrão-ouro para o diagnóstico etiológico da dermatite de contato alérgica. Ele avalia a resposta imune celular retardada (tipo IV) após a aplicação de fitas adesivas contendo substâncias padronizadas (incluindo fragrâncias e conservantes) no dorso do paciente, com leituras realizadas habitualmente em 48 e 96 horas.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Eczematosas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b9014e79476a498065c786935ed71351bf1a4eddc8909c629eb6870fc734b727.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_43c9c604-5f70-426d-930c-cf5946780a53_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:22.860Z"
+  },
+  {
+    "id": "AJUDA_43d05971-80f7-4371-8155-0dfec469e0ac",
+    "originalId": "43d05971-80f7-4371-8155-0dfec469e0ac",
+    "statement": "Recém-nascido a termo, sexo masculino, nascido de parto normal sem intercorrências. Ao primeiro exame, foram detectadas lesões vesicopustulosas em região perineal e no tórax. As lesões não apresentavam eritema ao redor, e o recém-nascido estava em bom estado geral. A mãe apresentou duas infecções urinárias tratadas no pré-natal, sendo a última um mês antes do parto. Sorologias maternas negativas. Com 24 horas de vida, o recém-nascido encontrava-se bem, sugando bem ao seio e com duas vesicopústulas na região glútea. As outras haviam rompido, permanecendo descamação em colarete e mancha hipercrômica.\nA conduta, nesse caso, deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "observação clínica, por se tratar de melanose pustulosa transitória neonatal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "avaliação com hemograma e PCR, e iniciar antibiótico, por se tratar de impetigo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "observação clínica e orientação de que se trata de eritema tóxico sem complicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aciclovir EV pela história de lesões ao nascimento, com aspecto de herpes congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "avaliação com hemograma e PCR, e iniciar antibiótico, por se tratar, possivelmente, de uma acne neonatal disseminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito é clássico de Melanose Pustulosa Transitória Neonatal (MPTN), uma dermatose benigna e idiopática que acomete recém-nascidos.\n\nAnálise das características do caso:\nAs lesões da MPTN caracterizam-se por três estágios evolutivos que podem coexistir: 1) pequenas pústulas superficiais que se rompem facilmente; 2) um colarete de descamação fina ao redor da base da pústula rompida; e 3) máculas hipercrômicas (manchas escuras) residuais. Diferentemente de outras condições, a MPTN não apresenta halo eritematoso (vermelhidão) ao redor das pústulas, e as lesões costumam estar presentes já no momento do nascimento. O estado geral do recém-nascido é sempre bom.\n\nAnálise das alternativas:\n\na) Correta. A descrição de vesicopústulas sem eritema que evoluem para descamação em colarete e manchas hipercrômicas é patognomônica da melanose pustulosa transitória neonatal. Por ser uma condição benigna e autolimitada, a conduta correta é apenas a observação clínica e a orientação dos pais, já que as manchas desaparecem espontaneamente em semanas ou meses.\n\nb) Incorreta. O impetigo neonatal (geralmente causado por *Staphylococcus aureus*) costuma apresentar pústulas sobre uma base eritematosa, pode evoluir com crostas melicéricas e o recém-nascido pode apresentar sinais de instabilidade clínica. A evolução para manchas hipercrômicas após a ruptura da pústula não é o padrão esperado para impetigo.\n\nc) Incorreta. O eritema tóxico neonatal é o principal diagnóstico diferencial, mas difere da melanose pustulosa em pontos fundamentais: as lesões do eritema tóxico raramente estão presentes ao nascimento (surgem geralmente entre 24-48h de vida) e apresentam-se como pápulas ou pústulas sobre uma base intensamente eritematosa (aspecto de picada de inseto). Além disso, o eritema tóxico não deixa manchas hipercrômicas após a resolução.\n\nd) Incorreta. O herpes neonatal tipicamente se manifesta com vesículas agrupadas sobre base eritematosa. Embora possa haver lesões ao nascimento (herpes congênito), o quadro costuma ser grave, com comprometimento sistêmico ou do sistema nervoso central. A presença de manchas hipercrômicas residuais e o excelente estado geral do paciente afastam essa hipótese.\n\ne) Incorreta. A acne neonatal surge habitualmente por volta da terceira semana de vida, raramente estando presente ao nascimento. Localiza-se predominantemente na face (bochechas, testa e queixo) e consiste em pápulas e pústulas, mas sem a característica de deixar manchas hipercrômicas residuais ou descamação em colarete em um padrão disseminado pelo corpo logo no primeiro dia de vida.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Outros Distúrbios do Período Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:22.860Z"
+  }
+]

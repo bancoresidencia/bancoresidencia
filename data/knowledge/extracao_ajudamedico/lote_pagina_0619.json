@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_ad7a3821-2bc8-4d24-b0bb-6a1fed1b7381",
+    "originalId": "ad7a3821-2bc8-4d24-b0bb-6a1fed1b7381",
+    "statement": "Mulher, 55 anos, casada, G=3 P=3 partos normais, com vida sexual ativa, vem ao ambulatório de Ginecologia com queixa de perda urinária contínua pela vagina após ter sido submetida a histerectomia abdominal total por miomatose uterina. A conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar com Oxibutinina oral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teste com injeção de azul de metileno intravesical",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar a paciente para estudo urodinâmico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar Ultrassonografia vaginal e reavaliação após",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO ponto-chave desta questão é a queixa de perda urinária contínua que se iniciou logo após uma cirurgia pélvica de grande porte (histerectomia abdominal total). Em ginecologia, quando uma paciente apresenta perda de urina constante (dia e noite, independente de esforço) no período pós-operatório, a principal suspeita diagnóstica é a fístula urogenital, sendo a fístula vesicovaginal a mais comum nessas circunstâncias.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: A oxibutinina é um agente anticolinérgico indicado para o tratamento da bexiga hiperativa (incontinência urinária de urgência). O quadro da paciente não é de urgência miccional, mas sim de perda contínua por um trajeto anatômico anormal (fístula), portanto, a medicação não tem indicação neste caso.\n\nAlternativa (b) Correta: O teste com instilação de azul de metileno (ou índigo carmim) por meio de uma sonda vesical é o passo diagnóstico inicial fundamental para confirmar a presença de uma fístula vesicovaginal. O procedimento consiste em introduzir o corante na bexiga e colocar um tampão vaginal. Se o tampão sair corado de azul, confirma-se a comunicação entre a bexiga e a vagina. Se o tampão estiver molhado com urina, mas não corado, a suspeita recai sobre uma fístula ureterovaginal (pois a urina que vem do rim não passaria pela bexiga tingida).\n\nAlternativa (c) Incorreta: O estudo urodinâmico é o padrão-ouro para avaliar a função da bexiga e da uretra, sendo essencial no diagnóstico de incontinência urinária de esforço e bexiga hiperativa. No entanto, ele não é o exame de escolha para identificar fístulas, que são defeitos anatômicos adquiridos após trauma cirúrgico.\n\nAlternativa (d) Incorreta: A ultrassonografia vaginal tem baixíssima sensibilidade para detectar trajetos fistulosos pequenos. O diagnóstico de fístulas urogenitais é essencialmente clínico (história de perda contínua) e confirmado por testes de corante, cistoscopia ou exames de imagem contrastados (como a urografia excretora ou tomografia com contraste).\n\nRESUMO DA CONDUTA\nDiante de uma suspeita de fístula pós-histerectomia, o primeiro passo é o exame físico com o teste do corante (azul de metileno) para localizar a abertura e diferenciar se a comunicação é vesical ou ureteral.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  },
+  {
+    "id": "AJUDA_ad86f9ea-d18c-45a9-9948-1750046f11a5",
+    "originalId": "ad86f9ea-d18c-45a9-9948-1750046f11a5",
+    "statement": "Homem, de 38 anos de idade, pedreiro, procura a Unidade Básica de Saúde por dor na lombar “no centro das costas, embaixo”, há cerca de 8 meses. Dor em peso/fadiga, que piora ao final do dia e melhora com repouso, banho quente e analgésico comum que ele compra na farmácia. Refere formigamento ocasional em nádega direita “quando força muito”, mas nega perda de força ou queda do pé. Nega antecedentes pessoais ou familiares relevantes. Diz que “precisa fazer uma ressonância da coluna”, porque acha que pode estar com “bico de papagaio” e ter algo sério que o deixe \"travado\". Relata que está há 3 dias sem conseguir trabalhar por causa da dor e teme ser despedido: “Se eu travo, o patrão já arruma outro”.\n\nEm qual das situações abaixo seria indicada a solicitação de exames de imagem para complementar a investigação do quadro de dor lombar em caráter ambulatorial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspeita de fratura ou luxação associada a traumatismo recente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Concomitância com infecção por HIV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Suspeita de infecção óssea ativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anestesia em sela.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A abordagem da dor lombar na prática clínica, especialmente na Atenção Primária, baseia-se na identificação de sinais de alerta, conhecidos como Red Flags. O paciente do caso apresenta uma dor lombar crônica de padrão mecânico, associada a fatores psicossociais (Yellow Flags), como o medo de perder o emprego e a crença de que algo sério está acontecendo. Para este paciente específico, não haveria indicação imediata de imagem. No entanto, a questão pergunta em qual das situações listadas o exame seria indicado em caráter ambulatorial.\n\nAlternativa A: Incorreta. Embora a suspeita de fratura ou luxação exija exames de imagem, essa condição está ligada a eventos agudos e traumáticos. O manejo inicial de traumatismos deve ser realizado em serviços de urgência e emergência para estabilização e diagnóstico rápido, e não como uma complementação ambulatorial de rotina.\n\nAlternativa B: Correta. A imunossupressão, incluindo a infecção pelo HIV, é um sinal de alerta clássico. Pacientes com HIV têm maior predisposição a infecções de tecidos profundos e ossos (como espondilodiscite infecciosa ou tuberculose vertebral) e a certas neoplasias. Assim, a presença dessa comorbidade justifica a investigação com exames de imagem no ambiente ambulatorial para excluir causas secundárias graves, mesmo que a dor pareça inicialmente mecânica.\n\nAlternativa C: Incorreta. Uma infecção óssea ativa é uma condição clínica grave que geralmente se manifesta com febre, calafrios e comprometimento do estado geral. Devido ao risco de sepse e destruição óssea rápida, o manejo é prioritariamente hospitalar ou de urgência, não sendo compatível com o fluxo habitual de solicitação de exames complementares ambulatoriais eletivos.\n\nAlternativa D: Incorreta. A anestesia em sela (perda de sensibilidade na região perineal e perianal) é um sinal de alarme crítico para a Síndrome da Cauda Equina. Esta condição é uma emergência neurocirúrgica que exige encaminhamento imediato para o hospital e avaliação especializada, dada a necessidade de descompressão cirúrgica rápida para evitar sequelas neurológicas permanentes. Portanto, não é uma investigação ambulatorial.\n\nEm resumo, a alternativa B é a que melhor representa uma condição de risco que exige investigação diagnóstica complementar dentro do fluxo de acompanhamento ambulatorial para evitar o atraso diagnóstico de doenças graves ocultas.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Doenças da Coluna Vertebral",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  },
+  {
+    "id": "AJUDA_ad8cba49-3cd7-407d-ab8b-1dda0c8a0b27",
+    "originalId": "ad8cba49-3cd7-407d-ab8b-1dda0c8a0b27",
+    "statement": "Assinale a alternativa que preenche, correta e respectivamente, as lacunas do parágrafo abaixo.\n\nO uso de anticoncepcional oral combinado para o tratamento da síndrome dos ovários policísticos melhora os sinais e sintomas de hiperandrogenismo por .......... as proteínas carreadoras dos hormônios sexuais (SHBG) e, consequentemente, .......... o estímulo de LH sobre as células da .......... .",
+    "options": [
+      {
+        "id": "A",
+        "text": "diminuir - aumentar - teca",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aumentar - diminuir - teca",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "diminuir - aumentar - granulosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aumentar - diminuir - granulosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender o mecanismo de ação dos anticoncepcionais orais combinados (AOC) no tratamento da Síndrome dos Ovários Policísticos (SOP), é necessário analisar três processos fisiológicos fundamentais:\n\n1. Estímulo à síntese hepática de SHBG: O componente estrogênico do anticoncepcional (geralmente o etinilestradiol) estimula o fígado a aumentar a produção da globulina carreadora de hormônios sexuais (SHBG). O aumento dessa proteína faz com que mais testosterona livre se ligue a ela, tornando-se biologicamente inativa. Isso reduz os níveis de testosterona livre circulante, melhorando os sintomas de hiperandrogenismo, como acne e hirsutismo.\n\n2. Feedback negativo e redução do LH: Os esteroides contidos no anticoncepcional exercem um feedback negativo no eixo hipotálamo-hipófise. Isso causa uma diminuição na secreção das gonadotrofinas, especialmente do hormônio luteinizante (LH), que costuma estar em níveis elevados e pulsáteis na SOP.\n\n3. Local de ação ovariana: De acordo com a teoria das duas células, o LH atua especificamente nas células da teca para estimular a síntese de androgênios (androstenediona e testosterona). Ao diminuir a secreção de LH, o anticoncepcional reduz o estímulo sobre as células da teca, resultando em menor produção ovariana de androgênios. As células da granulosa, em contraste, são o alvo principal do FSH para o processo de aromatização.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O anticoncepcional aumenta a produção de SHBG e diminui (em vez de aumentar) o estímulo de LH sobre o ovário.\n\nAlternativa b) Correta. O parágrafo é preenchido corretamente: o uso do anticoncepcional melhora o hiperandrogenismo por aumentar as proteínas carreadoras (SHBG) e, consequentemente, diminuir o estímulo de LH sobre as células da teca.\n\nAlternativa c) Incorreta. O fármaco promove o aumento da SHBG e a diminuição do LH. Além disso, o LH atua na teca para produzir androgênios, enquanto a granulosa é responsável pela conversão desses androgênios em estrogênios sob influência do FSH.\n\nAlternativa d) Incorreta. Embora os dois primeiros termos (aumentar e diminuir) estejam corretos conforme a fisiologia do tratamento, o LH exerce seu papel na produção de androgênios nas células da teca, e não nas células da granulosa.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  },
+  {
+    "id": "AJUDA_ad90808e-0fa1-44a2-b7ae-865b1e3a1a75",
+    "originalId": "ad90808e-0fa1-44a2-b7ae-865b1e3a1a75",
+    "statement": "Homem de 32 anos estava internado para tratamento de criptococose encefálica. Durante a internação, relatou ao seu médico ser pessoa vivendo com HIV (PVHIV) e portador de tuberculose, sem tratamentos, e entregou-lhe documento em que solicitava que sua condição de saúde não fosse revelada a nenhum familiar, inclusive para sua mãe e seu companheiro. Ainda durante a internação, devido a derrame pleural tuberculoso volumoso, necessitou ser submetido à drenagem pleural. No sétimo dia após o procedimento, apresentou sangramento intenso pelo dreno de tórax, sendo submetido à toracotomia de urgência. Foi identificada lesão aórtica com sangramento ativo e impossível de ser contido. Apesar de todos os esforços da equipe médica, o paciente evoluiu a óbito intraoperatório.\nAssinale a alternativa que apresenta o correto preenchimento da declaração de óbito nessa situação, na ordem da causa terminal para a básica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemorragia torácica, choque hipovolêmico, rotura aórtica, tuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Choque hipovolêmico, rotura aórtica, tuberculose, PVHIV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tuberculose, PVHIV, criptococose encefálica, choque hipovolêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rotura aórtica, choque hipovolêmico, PVHIV, criptococose encefálica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Gabarito: letra B (choque hipovolêmico, rotura aórtica, tuberculose, PVHIV).\n\nConceitos-chave\n\n1. Estrutura da Parte I da declaração de óbito (DO). A Parte I é preenchida em sequência causal, de cima para baixo:\n- Linha a: causa terminal ou imediata, isto é, a condição que levou diretamente à morte.\n- Linhas b e c: causas intermediárias (consequenciais).\n- Última linha preenchida (d): causa básica, a doença ou lesão que iniciou a cadeia de eventos.\n\nCada linha deve ser consequência da linha abaixo dela. A Parte II recebe condições significativas que contribuíram para o óbito, mas não fazem parte da cadeia direta. Exemplo neste caso: a criptococose encefálica.\n\n2. Sigilo médico e DO. O pedido do paciente para não revelar seu diagnóstico à família não autoriza omitir ou falsear informações na DO. A DO é documento oficial de interesse epidemiológico e legal, e deve conter a verdade. O sigilo continua valendo para a comunicação com familiares, mas não justifica preencher o documento de forma incorreta.\n\nCadeia causal do caso\n- PVHIV sem tratamento: imunossupressão que favorece a tuberculose. É a causa básica.\n- Tuberculose: derrame pleural volumoso, que exigiu a drenagem pleural.\n- Rotura aórtica: lesão identificada na toracotomia, ocorrida no contexto da drenagem da tuberculose pleural.\n- Choque hipovolêmico: sangramento maciço e incontrolável, que é a causa terminal.\n\nOrdem correta (terminal para básica): choque hipovolêmico, rotura aórtica, tuberculose, PVHIV.\n\nObservação: em rigor técnico, uma lesão iatrogênica decorrente de procedimento pode ser codificada como complicação de assistência médica (causa externa). A banca, porém, adotou a cadeia fisiopatológica a partir da doença de base, que é o raciocínio esperado na questão.\n\nAnálise das alternativas\n\na) Incorreta. \"Hemorragia torácica\" e \"choque hipovolêmico\" são redundantes, descrevendo o mesmo processo terminal. Além disso, a alternativa omite o HIV e coloca a tuberculose como causa básica, ignorando que a imunossupressão pelo HIV é o que inicia a cadeia.\n\nb) Correta. Respeita a sequência causal: o choque decorre da rotura aórtica, que ocorreu no contexto da tuberculose pleural (drenagem), que por sua vez decorre da imunossupressão pelo HIV, a causa básica.\n\nc) Incorreta. A ordem está invertida: o choque hipovolêmico, causa terminal, aparece como causa básica. Também inclui a criptococose na cadeia, embora ela não tenha participado do mecanismo do óbito. A criptococose deveria constar na Parte II.\n\nd) Incorreta. Coloca a rotura aórtica acima do choque, sendo que o choque é consequência da rotura. Também aponta a criptococose como causa básica, quando ela não iniciou a cadeia que levou à morte.\n\nMensagem final: a causa terminal é o choque hipovolêmico e a causa básica é a infecção pelo HIV. O desejo de sigilo do paciente não modifica o preenchimento correto da DO.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "HIV",
+      "Sistemas de Informação em Saúde",
+      "Ética Médica",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  },
+  {
+    "id": "AJUDA_ad918c27-691d-4c14-94da-a2b15c8a50a7",
+    "originalId": "ad918c27-691d-4c14-94da-a2b15c8a50a7",
+    "statement": "Sem nada referir anteriormente, lactente de 8 meses dá entrada em serviço de emergência com quadro de vômitos, urticária e angioedema ocular bilateral, iniciados imediatamente após a ingestão de ovo cozido. A criança encontra-se eutrófica, sem história de outras condições patológicas e vem sendo amamentada ao seio materno sem qualquer restrição alimentar da nutriz. Administrada adrenalina intramuscular com resolução dos sintomas e mantida em observação por algumas horas. Em relação às recomendações necessárias no momento da alta, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacinas cultivadas em embrião de galinha não devem ser administradas, caso da tríplice viral, influenza e febre amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A baixa idade contraindica a realização de testes para avaliação de IgE específica para o ovo, que deve ser completamente excluído da dieta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico deve ser necessariamente confirmado por meio de teste de provocação oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há necessidade de restringir as proteínas do ovo da dieta da mãe nutriz, que manterá o aleitamento materno.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve um lactente de 8 meses com uma reação de hipersensibilidade imediata (vômitos, urticária e angioedema) logo após a ingestão de ovo. O envolvimento de mais de um sistema (gastrointestinal e cutâneo-mucoso) após a exposição a um provável alérgeno caracteriza um episódio de anafilaxia, corretamente tratado com adrenalina intramuscular. Trata-se de uma alergia alimentar mediada por IgE.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA recomendação atual, baseada em evidências, indica que, se a criança vinha sendo amamentada exclusivamente e não apresentava sintomas, não há necessidade de restringir o alimento da dieta materna após o diagnóstico de alergia alimentar no lactente por ingestão direta. A passagem de proteínas do ovo pelo leite materno ocorre em quantidades mínimas, geralmente insuficientes para desencadear reações em crianças que toleravam o aleitamento sem sintomas prévios. A restrição desnecessária na dieta da nutriz pode comprometer seu estado nutricional e a adesão ao aleitamento materno.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Esta alternativa está incorreta porque generaliza a contraindicação. A vacina tríplice viral (sarampo, caxumba e rubéola), embora cultivada em fibroblastos de embrião de galinha, não contém quantidades significativas de proteína do ovo, sendo segura para pacientes alérgicos. Quanto à influenza e à febre amarela, a maioria dos pacientes com alergia ao ovo pode receber a vacina contra influenza sem restrições ou em ambiente controlado, dependendo da gravidade. A vacina contra febre amarela exige cautela e avaliação especializada (teste cutâneo com a vacina ou fracionamento), mas não é uma contraindicação absoluta inicial para todos os casos.\n\nAlternativa B: Está incorreta porque não existe idade mínima para a realização de testes de IgE específica, seja por testes cutâneos (*prick test*) ou exames de sangue (IgE sérica específica). Embora a interpretação em lactentes muito jovens exija cautela, os testes podem ser realizados para auxiliar no diagnóstico e no acompanhamento da sensibilização.\n\nAlternativa C: O teste de provocação oral (TPO) é considerado o padrão-ouro para o diagnóstico de alergias alimentares; porém, ele é desnecessário e contraindicado quando há uma história clínica clara de reação imediata grave (anafilaxia) logo após a ingestão isolada do alimento, como no caso descrito. O risco de uma nova reação grave durante o teste supera o benefício diagnóstico imediato. O TPO será útil futuramente para avaliar a aquisição de tolerância.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Imunizações",
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  },
+  {
+    "id": "AJUDA_ad94c872-86b7-4d21-be4a-5298d8619334",
+    "originalId": "ad94c872-86b7-4d21-be4a-5298d8619334",
+    "statement": "No SUS, o planejamento da saúde é ascendente e integrado, do nível local até o federal, ouvidos os respectivos Conselhos de Saúde, compatibilizando-se as necessidades das políticas de saúde com a disponibilidade de recursos financeiros. Com base nesse contexto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O planejamento da saúde em âmbito estadual deve ser realizado de maneira regionalizada, a partir das determinações do Ministério da Saúde, considerando o estabelecimento de metas de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O planejamento da saúde é obrigatório para os municípios com mais de 100 mil habitantes e facultativo para os demais e deve ser seguido pelos serviços da iniciativa privada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O Ministério da Saúde deve estabelecer as diretrizes a serem seguidas na elaboração dos planos de saúde, de acordo com as características epidemiológicas e da organização de serviços nos entes federativos e nas Regiões de Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A compatibilização mencionada no enunciado deve ser efetuada no âmbito dos planos de saúde, os quais são resultado do planejamento integrado dos entes federativos, e devem conter metas de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as diretrizes de planejamento do Sistema Único de Saúde (SUS), fundamentadas principalmente na Lei nº 8.080/1990 e no Decreto nº 7.508/2011.\n\nAlternativa (a) incorreta: O planejamento no SUS é caracterizado por ser ascendente. Isso significa que ele deve partir das necessidades locais e regionais para os níveis estadual e federal. A alternativa erra ao sugerir que o planejamento estadual ocorre meramente a partir de determinações verticais do Ministério da Saúde, ignorando a construção que vem da base (municípios e regiões).\n\nAlternativa (b) incorreta: O planejamento da saúde é uma obrigação legal para todos os entes federativos (municípios, estados, Distrito Federal e União), independentemente do porte populacional. Municípios com menos de 100 mil habitantes também devem realizar seu planejamento para receber recursos e organizar o sistema. Além disso, o planejamento do SUS não é impositivo para o funcionamento interno de toda a iniciativa privada, mas sim para o setor público e para os serviços privados que atuam de forma complementar ao SUS.\n\nAlternativa (c) incorreta: O erro reside na compreensão da lógica ascendente. Embora o Ministério da Saúde participe da formulação de políticas nacionais, as diretrizes do planejamento são pactuadas e devem refletir as necessidades detectadas nas Regiões de Saúde. O planejamento não é uma imposição do Ministério sobre as características locais, mas sim uma integração dessas realidades locais na esfera federal.\n\nAlternativa (d) correta: Esta alternativa está em perfeita consonância com o Artigo 36 do Decreto nº 7.508/2011. O planejamento da saúde deve ser ascendente e integrado. O instrumento que formaliza esse processo é o Plano de Saúde, que deve conter as metas de saúde e garantir que as ações propostas sejam compatíveis com a disponibilidade orçamentária e financeira de cada ente federativo. O Plano de Saúde é o documento norteador de cada gestão para o período de quatro anos.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  },
+  {
+    "id": "AJUDA_ada0831c-c58c-4b51-a8da-3cce47e265e9",
+    "originalId": "ada0831c-c58c-4b51-a8da-3cce47e265e9",
+    "statement": "Uma gestante de 32 semanas apresentou queixa de redução dos movimentos fetais nas últimas 24 horas. O cardiotocograma mostrou variabilidade moderada e presença de acelerações episódicas, o que evidencia padrão",
+    "options": [
+      {
+        "id": "A",
+        "text": "sugestivo de acidemia fetal intraparto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "compatível com sofrimento fetal agudo iminente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "compatível com bem-estar fetal no momento do exame.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "indicativo de ausência de atividade autonômica fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A cardiotocografia (CTG) é um método biofísico utilizado para avaliar a vitalidade fetal, analisando o comportamento da frequência cardíaca fetal (FCF). Para interpretar corretamente o exame, devemos observar parâmetros como a linha de base, a variabilidade, a presença de acelerações e a ocorrência de desacelerações.\n\nNo caso descrito, os dois achados principais são a variabilidade moderada e a presença de acelerações episódicas. A variabilidade moderada (definida como uma flutuação da linha de base entre 6 e 25 batimentos por minuto) é o indicador mais fidedigno de que o sistema nervoso central do feto está devidamente oxigenado e que não há acidemia metabólica no momento. As acelerações, por sua vez, indicam reatividade fetal. Juntos, esses parâmetros classificam o traçado como Categoria I (normal).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A acidemia fetal intraparto manifesta-se na cardiotocografia através da perda da variabilidade (variabilidade ausente ou mínima) associada a desacelerações recorrentes (tardias ou variáveis). O padrão descrito na questão é o oposto de um quadro de acidemia.\n\nAlternativa b) Incorreta. O sofrimento fetal agudo iminente seria caracterizado por traçados não tranquilizadores (Categoria III), com ausência de variabilidade e presença de desacelerações tardias, variáveis complicadas ou bradicardia mantida. A presença de variabilidade moderada e acelerações é um sinal de segurança e boa reserva fetal.\n\nAlternativa c) Correta. A combinação de variabilidade moderada e presença de acelerações é a definição de um traçado reativo e normal. Isso assegura ao examinador que o feto apresenta boa oxigenação e integridade do sistema nervoso autônomo, sendo compatível com o bem-estar fetal no momento do exame.\n\nAlternativa d) Incorreta. A variabilidade da frequência cardíaca fetal é o resultado da interação contínua entre os sistemas simpático e parassimpático (sistema nervoso autônomo) sobre o nó sinusal do coração fetal. Portanto, a presença de variabilidade moderada e de acelerações é uma prova direta da integridade e do pleno funcionamento da atividade autonômica fetal, e não de sua ausência.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  },
+  {
+    "id": "AJUDA_ada5b24d-24a5-43d6-b407-ec6f73a3ccd0",
+    "originalId": "ada5b24d-24a5-43d6-b407-ec6f73a3ccd0",
+    "statement": "Homem de 48 anos, tabagista, deu entrada no PS, conduzido pelo SAMU, com quadro de palpitações há duas horas aproximadamente. Foi encaminhado à sala de emergência para monitorização, acesso venoso e oxigenioterapia. O ritmo apresentado, no monitor é uma taquicardia com complexo QRS largo (0,12s), a PA está 110x70 e a oximetria de 90%. Não houve resposta à manobra vagal.\n\nDiante disso, qual a intervenção farmacológica mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adenosina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Amiodarona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atropina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Trata-se de um paciente apresentando taquicardia de complexo QRS largo (maior ou igual a 0,12s), clinicamente e hemodinamicamente estavel (pressao arterial preservada de 110x70 mmHg, sem sinais de choque, dor toracica isquemica ou alteracao do nivel de consciencia). \n\nDe acordo com o protocolo de Taquicardia com Pulso do ACLS (Advanced Cardiovascular Life Support), diante de uma taquicardia de complexo largo, regular e monomorfica em paciente estavel que nao respondeu a manobra vagal, a adenosina e a intervencao farmacologica de primeira escolha.\n\nAnalise das alternativas:\n\nAlternativa a (Correta): A adenosina e a droga de primeira linha nesse cenario. Ela atua como ferramenta diagnostica e terapeutica: se o ritmo for uma taquicardia supraventricular com conducao aberrante (que se manifesta com QRS largo), a adenosina pode interromper o circuito de reentrada no no atrioventricular e reverter a arritmia. Em casos de taquicardia ventricular monomorfica estavel, seu uso e considerado seguro como teste inicial antes de outras drogas antiarritmicas.\n\nAlternativa b (Incorreta): A amiodarona e uma droga antiarritmica indicada para taquicardias ventriculares monomorficas estaveis, mas seu uso e reservado para etapas posteriores caso a adenosina nao reverta a arritmia ou o ritmo persista indefinido/refratario.\n\nAlternativa c (Incorreta): A atropina e um farmaco anticolinergico com indicacao restrita a bradiarritmias sintomaticas. Sua utilizacao em qualquer quadro de taquicardia e contraindicada, pois aumentaria ainda mais a frequencia cardiaca.\n\nAlternativa d (Incorreta): A adrenalina e um vasopressor e inotropico utilizado em parada cardiorrespiratoria, choque anafilatico ou choque refratario. Administra-la em um paciente com taquicardia e pulso presente agravaria o consumo de oxigenio miocardico e poderia precipitar uma arritmia fatal.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  },
+  {
+    "id": "AJUDA_ada6eb09-2ce8-4a0a-b4e2-6a3e67db31f2",
+    "originalId": "ada6eb09-2ce8-4a0a-b4e2-6a3e67db31f2",
+    "statement": "Um paciente apresenta dor súbita em andar superior do abdome com irradiação dorsal, náuseas e vômitos, sinais inflamatórios e instabilidade inicial. Estabeleça os elementos necessários para firmar o diagnóstico de pancreatite aguda no atendimento inicial:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar colangiopancreatografia endoscópica retrógrada (CPRE) imediata como único parâmetro para confirmação etiológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Priorizar ultrassonografia hepática isolada para concluir o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar testes de gordura fecal para fundamentar o diagnóstico agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Confirmar por TC contrastada sempre antes de qualquer outro exame laboratorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reconhecer o quadro clínico típico e demonstrar elevação de amilase ou lipase ≥ 3× o limite superior, associando método de imagem compatível quando indicado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O diagnóstico da pancreatite aguda baseia-se nos Critérios de Atlanta revisados, que exigem a presença de pelo menos dois dos três critérios a seguir: dor abdominal sugestiva (epigástrica com irradiação dorsal), elevação de amilase ou lipase acima de três vezes o limite superior da normalidade e achados característicos em exames de imagem (tomografia, ressonância ou ultrassonografia).\n\nAlternativa (a) Incorreta. A colangiopancreatografia endoscópica retrógrada (CPRE) é um procedimento invasivo e terapêutico, indicado para casos de pancreatite biliar associada a colangite ou obstrução biliar persistente. Não é um parâmetro inicial de confirmação diagnóstica da pancreatite em si.\n\nAlternativa (b) Incorreta. A ultrassonografia abdominal é o exame inicial de escolha para identificar a etiologia (como cálculos biliares), mas não é o exame isolado para concluir o diagnóstico de pancreatite, uma vez que o gás intestinal pode dificultar a visualização do pâncreas.\n\nAlternativa (c) Incorreta. A pesquisa de gordura fecal serve para avaliar a insuficiência exócrina pancreática, sendo um teste utilizado no contexto da pancreatite crônica e não no diagnóstico de um quadro agudo.\n\nAlternativa (d) Incorreta. A tomografia computadorizada (TC) com contraste não deve ser realizada de forma rotineira e imediata para todos os pacientes. Ela é reservada para casos de dúvida diagnóstica ou para avaliar complicações locais após 48 a 72 horas do início dos sintomas. O diagnóstico clínico-laboratorial frequentemente precede a imagem.\n\nAlternativa (e) Correta. Esta alternativa descreve exatamente os pilares diagnósticos preconizados mundialmente: a combinação da clínica típica (dor em barra no abdome superior) com a confirmação laboratorial (amilase ou lipase ≥ 3x o valor normal). O exame de imagem é associado para confirmar o diagnóstico quando os dois primeiros critérios não são suficientes ou para definir a gravidade e etiologia.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica",
+      "Abdome Agudo Hemorrágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  },
+  {
+    "id": "AJUDA_adabd190-4c9c-405e-bca6-72dcb3b59181",
+    "originalId": "adabd190-4c9c-405e-bca6-72dcb3b59181",
+    "statement": "Maria, 38 anos, residente em zona urbana periférica, tem histórico de transtorno depressivo recorrente há 10 anos. Nos últimos três meses, apresentou piora do humor, isolamento social e pensamentos de inutilidade. Ela já foi internada duas vezes em hospital psiquiátrico (2009 e 2016) por risco de suicídio. Atualmente, procura a Unidade Básica de Saúde (UBS) da sua comunidade, onde a equipe de saúde da família (enfermeiro, agente comunitário e médico de família) a recebe. Durante a consulta, o médico de família identifica risco moderado de suicídio, mas sente insegurança para iniciar farmacoterapia antidepressiva e para conduzir o plano de segurança. Ele registra o caso no prontuário eletrônico da UBS e solicita apoio matricial ao CAPS II da região. Dentro de 48 h, um psiquiatra do CAPS realiza teleconsulta, orienta a equipe quanto à escolha do antidepressivo, define critérios de monitoramento diário e indica que a enfermeira da UBS faça visitas domiciliares para aferir adesão e sinais de alerta. Além disso, o CAPS oferece treinamento presencial de 4 h para toda a equipe da UBS sobre manejo de crises suicidas. Uma semana depois, Maria inicia o tratamento na própria comunidade, com acompanhamento diário pela enfermeira, consultas mensais com o médico de família e supervisão semanal do psiquiatra do CAPS via telemedicina. Não houve necessidade de nova internação. A alternativa que sintetiza o papel do apoio matricial nesse cenário é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o apoio matricial consiste apenas em encaminhar o paciente da UBS ao CAPS para internação, deixando a equipe da atenção básica responsável apenas pelo registro administrativo do caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "através do apoio matricial, a equipe da atenção básica recebeu orientação clínica, capacitação pontual e suporte técnico contínuo do CAPS, permitindo que o tratamento fosse mantido no território, evitando nova internação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o apoio matricial implica que o CAPS assuma integralmente o cuidado de Maria, substituindo a equipe da UBS por profissionais especializados, enquanto a equipe da atenção básica passa a exercer somente funções de vigilância sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a estratégia de apoio matricial limita-se à realização de um único treinamento presencial, sem necessidade de acompanhamento clínico posterior, pois a competência da equipe da UBS já seria suficiente após a capacitação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o apoio matricial tem como objetivo principal a coleta de indicadores epidemiológicos sobre depressão na comunidade, não influenciando diretamente as decisões terapêuticas individuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O conceito central dessa questão é o Apoio Matricial (ou matriciamento), uma ferramenta fundamental na articulação entre a Atenção Primária à Saúde (APS) e a Atenção Especializada (neste caso, o CAPS). O objetivo do matriciamento é oferecer suporte técnico-pedagógico e clínico-assistencial às equipes de referência (Saúde da Família), permitindo que casos complexos sejam manejados no próprio território do paciente, aumentando a resolutividade da rede.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O apoio matricial é justamente o oposto do encaminhamento burocrático. No modelo tradicional de referência e contrarreferência, o médico apenas \"passa o caso adiante\". No matriciamento, a responsabilidade pelo paciente é compartilhada entre a UBS e o CAPS. A equipe da UBS não é apenas um registro administrativo; ela é a protagonista do cuidado longitudinal.\n\nAlternativa b) Correta. Esta alternativa descreve com precisão as duas dimensões do apoio matricial. A dimensão clínico-assistencial ocorreu na teleconsulta e na definição do plano terapêutico conjunto. A dimensão técnico-pedagógica ocorreu no treinamento de 4 horas e na supervisão contínua, que capacitou a equipe da UBS para lidar com crises futuras. O resultado foi a manutenção da paciente em seu território, evitando a estigmatização de uma nova internação psiquiátrica.\n\nAlternativa c) Incorreta. O apoio matricial não visa à substituição da equipe da UBS pelo especialista. Pelo contrário, ele busca fortalecer a equipe da UBS para que ela não perca o vínculo com o paciente. A UBS nunca deixa de ser responsável pelo cuidado de Maria, pois ela é a porta de entrada e o centro coordenador do cuidado. Atribuir funções de \"vigilância sanitária\" à equipe de Saúde da Família nesse contexto é um erro conceitual grave.\n\nAlternativa d) Incorreta. O matriciamento não é uma intervenção pontual ou um curso isolado. Trata-se de um processo contínuo de retaguarda especializada e supervisão. Como o caso apresenta risco moderado de suicídio e histórico de internações, o suporte precisa ser sustentado ao longo do tempo, conforme descrito no enunciado (supervisão semanal via telemedicina).\n\nAlternativa e) Incorreta. Embora o monitoramento de dados seja importante para a gestão em saúde, o objetivo precípuo do apoio matricial é assistencial e educacional. Ele foca na resolução direta de problemas clínicos e na qualificação das práticas de cuidado da equipe de Saúde da Família, influenciando diretamente as decisões terapêuticas individuais para garantir a segurança e a saúde do paciente.\n\nGabarito: Letra (b).",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Transtornos do Humor",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:11.875Z"
+  }
+]

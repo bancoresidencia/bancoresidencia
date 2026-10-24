@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_f6b688b0-75d7-4256-8309-cdc007e9c63a",
+    "originalId": "f6b688b0-75d7-4256-8309-cdc007e9c63a",
+    "statement": "Homem de 52 anos, branco, solteiro, comparece à consulta agendada na Unidade Básica de Saúde (UBS) desejando realizar revisão clínica e exames laboratoriais. Desde os 35 anos não faz acompanhamento de saúde. Relata história familiar de diabetes e hipertensão, e a mãe faleceu com câncer de pulmão. Sem história familiar de câncer de próstata. Fuma cerca de 2 maços por dia há 21 anos. Exame físico: pressão arterial de 120 por 80 milímetros de mercúrio, índice de massa corporal de 23 quilogramas por metro quadrado, sem outras alterações.\nConsiderando as recomendações de rastreamento para esse paciente, o médico de família e comunidade deve",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar exames de colesterol total e frações, hemograma, glicemia de jejum, creatinina, PSA, radiografia de tórax, colonoscopia, realizar toque retal; orientar sobre a prática de atividade física regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar exames de colesterol total, glicemia de jejum, pesquisa de sangue oculto nas fezes, PSA, ofertar anti-HIV e HBsAg, realizar toque retal; orientar sobre participação no grupo na UBS para abandono do tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "abordar mudanças no estilo de vida e cessação do tabagismo; acompanhar, em consultas longitudinais, as futuras possibilidades de exames complementares, quando o paciente atingir faixa etária para investigações adicionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar exames de colesterol total, HDL e triglicerídeos, glicemia de jejum, pesquisa de sangue oculto nas fezes, ofertar testes rápidos para HIV, sífilis e hepatites B e C; realizar abordagem sobre possibilidade de cessação do tabagismo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A análise desta questão exige conhecimento sobre as diretrizes de rastreamento (*screening*) em adultos na Atenção Primária à Saúde, baseando-se principalmente nas recomendações do Ministério da Saúde do Brasil e da USPSTF (*U.S. Preventive Services Task Force*).\n\nO paciente em questão é um homem de 52 anos, tabagista (carga tabágica de 42 maços-ano) e assintomático. Vamos analisar as alternativas:\n\nAlternativa a) Incorreta. O rastreamento de câncer de próstata por meio de PSA e toque retal não é recomendado de forma rotineira pelo Ministério da Saúde e pelo INCA para pacientes assintomáticos, devido ao risco de sobrediagnóstico e sobretratamento. Além disso, a radiografia de tórax não é um exame de rastreamento para câncer de pulmão (o exame indicado para grupos de alto risco seria a tomografia de baixa dose). Hemograma e creatinina também não fazem parte dos protocolos de rastreamento para pacientes assintomáticos sem comorbidades prévias.\n\nAlternativa b) Incorreta. Assim como na alternativa anterior, o erro principal reside na solicitação rotineira de PSA e toque retal para rastreamento de câncer de próstata. Embora a abordagem do tabagismo e o rastreamento de câncer colorretal estejam corretos, a inclusão do rastreamento prostático invalida a alternativa frente aos protocolos de saúde pública vigentes.\n\nAlternativa c) Incorreta. Esta alternativa peca pela omissão. O paciente já possui 52 anos, idade em que diversos rastreamentos já estão indicados, como o de câncer colorretal (que deve iniciar aos 50 anos pelo Ministério da Saúde ou aos 45 anos por diretrizes internacionais), dislipidemias e diabetes melito. Afirmar que ele deve aguardar faixas etárias futuras para investigações adicionais é negligenciar o cuidado preventivo atual.\n\nAlternativa d) Correta. Esta alternativa contempla as principais ações de saúde preventiva para um homem desta faixa etária na Unidade Básica de Saúde:\n1. Cardiovascular e Metabólico: O rastreamento de dislipidemia (colesterol e frações) é indicado para homens acima de 35-40 anos. A glicemia de jejum é indicada para rastreio de diabetes melito tipo 2 em adultos acima de 35 ou 45 anos (dependendo da diretriz) ou antes, se houver fatores de risco.\n2. Câncer Colorretal: A pesquisa de sangue oculto nas fezes é o método de rastreamento inicial preconizado pelo Ministério da Saúde para pessoas entre 50 e 75 anos.\n3. Doenças Infectocontagiosas: A oferta de testes rápidos para HIV, sífilis e hepatites B e C é uma recomendação de rotina na Atenção Primária para adultos sexualmente ativos, independentemente da idade.\n4. Tabagismo: A abordagem para cessação do tabagismo é obrigatória, dada a alta carga tabágica do paciente (42 maços-ano), visando reduzir o risco cardiovascular e de neoplasias.\n\nResumo dos rastreamentos indicados para este paciente:\n- Câncer Colorretal: Sim (52 anos).\n- Dislipidemia e Diabetes: Sim (pela idade e histórico familiar).\n- ISTs e Hepatites: Sim (oferta de rotina).\n- Tabagismo: Intervenção comportamental/clínica imediata.\n- Câncer de Próstata: Não recomendado como rastreio populacional (decisão compartilhada apenas se o paciente manifestar o desejo após esclarecimento de riscos).",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 25.508218987128668,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  },
+  {
+    "id": "AJUDA_f6b7008b-958f-4385-8f01-1953b7d2f111",
+    "originalId": "f6b7008b-958f-4385-8f01-1953b7d2f111",
+    "statement": "Primigesta comparece à segunda consulta de pré-natal em 12.03.24. Ultrassom: idade gestacional compatível com a data da última menstruação (DUM: 26.01.24).\nA idade gestacional e a data provável do parto (DPP) são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 semanas e 4 dias; 01.11.24.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "7 semanas e 2 dias; 30.10.24.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "6 semanas e 5 dias; 26.10.24.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "7 semanas; 26.10.24.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, precisamos realizar dois cálculos obstétricos fundamentais: a Idade Gestacional (IG) e a Data Provável do Parto (DPP), atentando para o fato de que o ano de 2024 é bissexto.\n\nCÁLCULO DA IDADE GESTACIONAL (IG):\n\nA IG é calculada somando-se o número de dias decorridos entre a Data da Última Menstruação (DUM: 26.01.24) e a data da consulta (12.03.24).\n\n1. Janeiro: Restam 5 dias (31 menos 26).\n2. Fevereiro: 2024 é ano bissexto, portanto, possui 29 dias.\n3. Março: 12 dias (data da consulta).\n\nTotal de dias: 5 + 29 + 12 = 46 dias.\n\nPara converter em semanas: 46 dividido por 7 resulta em 6 semanas e sobra o resto 4.\nLogo, a IG é de 6 semanas e 4 dias.\n\nCÁLCULO DA DATA PROVÁVEL DO PARTO (DPP):\n\nA DPP corresponde ao dia em que a gestação completa 40 semanas (280 dias) a partir da DUM. Podemos usar a Regra de Naegele adaptada ou a contagem direta de dias.\n\nPela Regra de Naegele: Somamos 7 dias ao primeiro dia da DUM e somamos 9 meses ao mês da DUM (ou subtraímos 3 meses).\nDia: 26 + 7 = 33. Como janeiro tem 31 dias, o dia passa para 02 e somamos 1 mês ao resultado final.\nMês: 01 + 9 = 10 (Outubro). Com o ajuste do dia, passamos para o mês 11 (Novembro).\nO resultado padrão seria 02/11/2024. No entanto, por ser ano bissexto e a gestação atravessar o dia 29 de fevereiro, a DPP ocorre um dia antes no calendário civil para totalizar os mesmos 280 dias de desenvolvimento fetal.\n\nContagem exata de 280 dias:\nJaneiro: 5 dias\nFevereiro: 29 dias\nMarço: 31 dias\nAbril: 30 dias\nMaio: 31 dias\nJunho: 30 dias\nJulho: 31 dias\nAgosto: 31 dias\nSetembro: 30 dias\nOutubro: 31 dias\nSoma até 31 de outubro: 279 dias.\nO 280.º dia (40 semanas) será 01.11.24.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Correta. Apresenta o cálculo exato da IG (46 dias = 6 semanas e 4 dias) e a DPP correta considerando o ano bissexto (280 dias após a DUM).\n\nb) Incorreta. A IG de 7 semanas e 2 dias (51 dias) está errada; esse erro geralmente ocorre se o examinador não subtrair corretamente os dias de janeiro ou errar a soma total. A DPP de 30.10.24 também não corresponde aos 280 dias regulamentares.\n\nc) Incorreta. A IG de 6 semanas e 5 dias (47 dias) erra por apenas um dia o cálculo do intervalo. A DPP 26.10.24 ignora a regra de somar os 7 dias ao dia da DUM, apenas somando 9 meses diretos.\n\nd) Incorreta. A IG de 7 semanas (49 dias) está incorreta. Assim como na alternativa C, a DPP 26.10.24 está errada por não aplicar corretamente a Regra de Naegele (falta a adição dos 7 dias).",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  },
+  {
+    "id": "AJUDA_f6b71645-ee66-4f2f-a168-60f644dac00f",
+    "originalId": "f6b71645-ee66-4f2f-a168-60f644dac00f",
+    "statement": "A expectativa de vida ou esperança de vida é calculada utilizando-se a tábua de vida, que se baseia em dados demográficos, como as taxas de mortalidade de uma população por cada idade. Dentre os países, assinale o que exibe a maior expectativa de vida ao nascer atualmente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "EUA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Japão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Finlândia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "África do Sul.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A expectativa de vida ao nascer é um indicador sintético fundamental em saúde pública e demografia, pois reflete as condições gerais de vida, saneamento, nutrição e a eficácia do sistema de saúde de uma nação. Ela representa a média de anos que um grupo de recém-nascidos viveria se as taxas de mortalidade específicas por idade observadas no ano de seu nascimento permanecessem constantes.\n\nAlternativa a) Incorreta. Embora os Estados Unidos sejam a maior economia do mundo e possuam tecnologia médica de ponta, o país não lidera o ranking de expectativa de vida. Nos últimos anos, os EUA têm enfrentado uma estagnação e até declínios pontuais nesse indicador devido a fatores como a crise de sobredosagem por opioides, altos índices de obesidade, violência por armas de fogo e desigualdades persistentes no acesso aos cuidados de saúde.\n\nAlternativa b) Correta. O Japão é reconhecido mundialmente por possuir uma das maiores expectativas de vida ao nascer do planeta. Esse fenômeno é multifatorial, envolvendo um sistema de saúde universal eficiente com foco em medicina preventiva e controle de doenças crônicas (como a hipertensão), uma dieta tradicional equilibrada e de baixa densidade calórica, além de fatores socioculturais que incentivam o envelhecimento ativo e a manutenção de laços comunitários.\n\nAlternativa c) Incorreta. A Finlândia, assim como outros países nórdicos, apresenta indicadores de bem-estar social exemplares e uma alta expectativa de vida. No entanto, quando comparada diretamente ao Japão em séries estatísticas globais (como as da Organização Mundial da Saúde e do Banco Mundial), a longevidade média da população japonesa ainda se mantém superior.\n\nAlternativa d) Incorreta. A África do Sul apresenta a menor expectativa de vida entre as alternativas citadas. O país enfrenta desafios epidemiológicos severos, incluindo a alta prevalência de doenças infecciosas, com destaque para a epidemia de HIV/AIDS e tuberculose, além de altas taxas de mortalidade por causas externas e doenças relacionadas à desigualdade socioeconômica.\n\nPortanto, entre as opções apresentadas, o Japão é o país que exibe a maior expectativa de vida ao nascer atualmente.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  },
+  {
+    "id": "AJUDA_f6bd6e01-c4ac-4f14-b1aa-4d40755aad1f",
+    "originalId": "f6bd6e01-c4ac-4f14-b1aa-4d40755aad1f",
+    "statement": "João, lactente, seis meses, começou a apresentar sintomas como diarreia frequente, vômitos e irritabilidade após a introdução de fórmulas à base de leite de vaca em sua dieta. Sua mãe notou que os sintomas pioravam sempre que ele consumia esses produtos. Preocupada, levou João ao pediatra que suspeitou de Alergia à Proteína do Leite de Vaca (APLV), e recomendou a exclusão também dos derivados de sua alimentação. Em contrapartida, Ana, adolescente, 15 anos, começou a sentir desconforto abdominal, inchaço e diarreia sempre que consumia leite ou produtos lácteos. Após consulta, foi diagnosticada com Intolerância à lactose, sendo aconselhada a seguir uma dieta isenta desse nutriente. O que distingue corretamente a APLV da Intolerância à lactose é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A APLV é mediada pela Imoglubina E (IgE), enquanto a Intolerância à lactose é causada pela ausência da enzima lactase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A APLV provoca sintomas apenas gastrointestinais, enquanto a Intolerância à lactose pode causar sintomas sistêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A APLV é uma condição que geralmente melhora com a idade, enquanto a Intolerância à lactose tende a surgir na infância tardia ou na adolescência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ambos os casos são comuns em lactentes jovens e apresentam sintomas apenas gastrointestinais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A principal diferença entre a Alergia à Proteína do Leite de Vaca (APLV) e a Intolerância à Lactose reside na fisiopatologia de cada condição: uma é uma reação imunológica às proteínas, enquanto a outra é um problema digestivo/metabólico relacionado ao carboidrato (açúcar).\n\nAnálise das alternativas:\n\nAlternativa a: CORRETA. Esta alternativa define a essência da distinção. A APLV é uma resposta do sistema imunológico contra as proteínas do leite (como caseína, alfalactoalbumina e betalactoglobulina). Embora possa ser mediada por mecanismos IgE, não IgE ou mistos, a menção à Imunoglobulina E (IgE) caracteriza o processo imunológico. Já a Intolerância à Lactose é a incapacidade de digerir o açúcar do leite (lactose) devido à deficiência ou ausência da enzima lactase na borda em escova do intestino delgado.\n\nAlternativa b: INCORRETA. Na verdade, ocorre o oposto. A APLV, por ser uma reação imunológica, frequentemente apresenta sintomas sistêmicos e em outros órgãos, como manifestações cutâneas (urticária, dermatite atópica), respiratórias (sibilância, rinite) e até anafilaxia. A Intolerância à Lactose apresenta sintomas quase exclusivamente gastrointestinais (distensão, flatulência, cólicas e diarreia osmótica) devido à fermentação da lactose não digerida pelas bactérias colônicas.\n\nAlternativa c: INCORRETA. Embora o enunciado traga informações clinicamente verdadeiras sobre a epidemiologia (a APLV costuma ser transitória na infância e a intolerância primária surge mais tarde), isso não é o que \"distingue\" as patologias em sua natureza. Além disso, existem exceções, como a intolerância secundária em lactentes após gastroenterites e casos de APLV que persistem na vida adulta. A definição de uma doença não se baseia apenas na idade de início ou na evolução, mas no seu mecanismo básico.\n\nAlternativa d: INCORRETA. A Intolerância à Lactose primária é extremamente rara em lactentes jovens (visto que a natureza prepara o bebê para o aleitamento). Sintomas relacionados ao leite nessa faixa etária, como os de João, apontam fortemente para APLV. Além disso, como mencionado na alternativa B, a APLV não se restringe a sintomas gastrointestinais.\n\nConclusão: Para provas de residência, é fundamental memorizar que APLV é uma resposta à PROTEÍNA (imunológica) e Intolerância à Lactose é uma resposta ao CARBOIDRATO (enzimática).",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios Disabsortivos",
+      "Alergia Alimentar"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  },
+  {
+    "id": "AJUDA_f6c51f2b-2445-49a7-9f44-338ba8f4835f",
+    "originalId": "f6c51f2b-2445-49a7-9f44-338ba8f4835f",
+    "statement": "Um homem de 70 anos procura atendimento médico ambulatorial devido à abaulamento na região inguinal direita há cerca de 03 anos. Relata que a tumoração permanece fixa, sem redução espontânea ou à tentativa de redução manual. Refere desconforto local, mas nega náuseas, vômitos ou alterações recentes do hábito intestinal. Ao exame, exibe protusão volumosa na região inguinocrural à direita. A palpação abdominal é indolor, e os ruídos hidroaéreos são audíveis, inclusive na região inguinal. O médico refere não ser possível a palpação digital do anel inguinal devido ao volume da região. Qual a conduta mais adequada para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhamento ao pronto atendimento para avaliação cirúrgica de urgência por tratar-se de emergência médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Instituir tratamento não operatório com uso de cintas elásticas e analgesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Complementação diagnóstica com angiotomografia para avaliação da viabilidade do pedículo vascular herniado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avaliação pré-operatória e de risco cirúrgico para programação de herniorrafia eletiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Manobras vigorosas de redução manual e encaminhamento ao pronto atendimento para avaliação se não houver sucesso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Resumo do caso: idoso com hérnia inguinocrural volumosa há 3 anos, irredutível (encarcerada crônica, ou \"incarcerada\"), sem sinais de complicação. Não há dor, náuseas, vômitos nem parada de eliminação. O abdome é indolor e os ruídos hidroaéreos estão presentes, inclusive no conteúdo herniário. Isso indica trânsito intestinal preservado, sem obstrução nem estrangulamento.\n\nConceitos-chave:\n- Hérnia redutível: o conteúdo retorna à cavidade abdominal.\n- Hérnia encarcerada (incarcerada): o conteúdo não reduz, mas não há comprometimento vascular ou obstrução aguda. Pode ser crônica e assintomática ou oligossintomática.\n- Hérnia estrangulada: há isquemia do conteúdo. Cursa com dor intensa, hiperemia ou cianose local, sinais de irritação, febre, leucocitose e geralmente obstrução intestinal. É emergência cirúrgica.\n- Toda hérnia inguinocrural sintomática, ou com risco de complicação, tem indicação de correção cirúrgica. A hérnia crural tem maior risco de encarceramento e estrangulamento, o que reforça a indicação de correção. No encarceramento crônico sem sinais de complicação, a cirurgia é programada de forma eletiva, após avaliação clínica e de risco cirúrgico.\n\nAnálise das alternativas:\n\na) Incorreta. Não é emergência. Faltam dor, sinais flogísticos, obstrução e sinais de sofrimento de alça. O quadro é crônico e estável, com ruídos hidroaéreos presentes. A urgência só se justificaria se surgissem dor intensa, vômitos, distensão, parada de eliminação ou alterações cutâneas locais.\n\nb) Incorreta. Cintas ou bandagens não são tratamento adequado, pois não curam e não previnem complicações. Em hérnia irredutível, volumosa e com risco de complicação, podem até ser prejudiciais. O manejo não operatório (watchful waiting) só se aplica a hérnias inguinais pequenas e assintomáticas em homens, e não a este caso.\n\nc) Incorreta. A angiotomografia não é necessária. Não há suspeita de isquemia mesentérica ou estrangulamento, e o diagnóstico é clínico. A tomografia de abdome e pelve, quando muito, poderia ajudar no planejamento de hérnias complexas, mas não seria uma angiotomografia para avaliar o pedículo vascular.\n\nd) Correta. É um caso de hérnia encarcerada crônica, sem sinais de estrangulamento ou obstrução. A conduta é avaliação pré-operatória (comorbidades, cardiológica, anestésica) e programação de herniorrafia eletiva. Por ser volumosa, a hérnia pode exigir técnica mais complexa, e o paciente deve ser otimizado antes da cirurgia.\n\ne) Incorreta. Manobras vigorosas de redução são contraindicadas. Em hérnia crônica irredutível há aderências, e a manipulação forçada pode causar lesão de alça, reduzir conteúdo isquêmico (redução \"en masse\") ou perfurar vísceras. Além disso, a tentativa de redução não é recomendada em hérnia que está irredutível há anos.\n\nPonto de prova: diferencie encarceramento sem sofrimento, que leva à cirurgia eletiva, de estrangulamento, que leva à cirurgia de urgência. Ruídos hidroaéreos presentes e ausência de dor, vômitos e sinais inflamatórios indicam que a cirurgia pode ser programada.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  },
+  {
+    "id": "AJUDA_f6cae0dd-eb34-441b-958e-aeccd7682bd8",
+    "originalId": "f6cae0dd-eb34-441b-958e-aeccd7682bd8",
+    "statement": "Homem de 65 anos, hipertenso e portador de doença renal crônica estágio 3 (TFG estimada de 48 mL/min/1,73 m²), procura atendimento por dor intensa, edema e vermelhidão no hálux direito iniciados há 24 horas. Relata episódio semelhante há dois anos e refere ingestão de cerveja e carne vermelha na véspera do início dos sintomas. Ao exame físico, apresenta artrite da primeira articulação metatarsofalangeana direita, sem febre, sem sinais de infecção e sem comprometimento de outras articulações. Não faz uso de alopurinol, febuxostate ou colchicina.\nQual das seguintes medicações está indicada para o tratamento da crise aguda de gota nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alopurinol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Probenecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colchicina em baixa dose, com ajuste para a função renal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Febuxostate.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Benzbromarona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de podagra (artrite da primeira articulação metatarsofalangeana), característica da gota, exacerbada por gatilhos dietéticos. O ponto central da questão é a escolha da terapia anti-inflamatória em um paciente com Doença Renal Crônica (DRC) estágio 3.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA colchicina é uma das opções de primeira linha para o tratamento da crise aguda de gota. No entanto, ela é excretada pelos rins e possui uma janela terapêutica estreita. Em pacientes com taxa de filtração glomerular (TFG) reduzida, o risco de toxicidade (neuropatia e mielossupressão) aumenta significativamente. Portanto, o uso é permitido, mas obrigatoriamente em doses baixas e com ajuste conforme a função renal. O esquema habitual de ataque (1,2 mg seguido de 0,6 mg) deve ser cauteloso, e a dose de manutenção deve ser reduzida ou espaçada em pacientes com TFG entre 30-50 mL/min.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a) Alopurinol: É um inibidor da xantina oxidase utilizado para a terapia de redução de urato (terapia de manutenção). Iniciar o alopurinol durante a fase aguda da inflamação pode causar a mobilização de cristais de urato e piorar ou prolongar a crise. Ele deve ser iniciado apenas após a resolução completa dos sintomas inflamatórios (geralmente 2 semanas após a crise), sempre sob cobertura de anti-inflamatórios ou colchicina.\n\nAlternativa (b) Probenecida: É um agente uricosúrico. Assim como o alopurinol, não tem papel no tratamento da dor aguda. Além disso, a probenecida perde eficácia em pacientes com insuficiência renal (geralmente ineficaz quando a TFG é inferior a 50 mL/min), sendo contraindicada para este paciente.\n\nAlternativa (d) Febuxostate: É outro inibidor da xantina oxidase indicado para a redução crônica dos níveis de ácido úrico. Não possui propriedades anti-inflamatórias para o tratamento da crise aguda.\n\nAlternativa (e) Benzbromarona: É um agente uricosúrico. Assim como os anteriores, é usado para o controle da hiperuricemia a longo prazo e não para o tratamento da artrite aguda. Uricosúricos são contraindicados em pacientes com história de nefrolitíase e perdem eficácia na DRC avançada.\n\nCONSIDERAÇÕES ADICIONAIS\n\nVale lembrar que os Anti-inflamatórios Não Esteroidais (AINEs), que seriam outra opção de primeira linha para crises de gota, devem ser evitados ou usados com extrema cautela neste paciente devido à Doença Renal Crônica estágio 3, pelo risco de nefrotoxicidade adicional e descompensação da função renal. Corticosteroides (orais ou intra-articulares) seriam uma excelente alternativa caso a colchicina fosse contraindicada.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Artrites Microcristalinas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  },
+  {
+    "id": "AJUDA_f6d4603f-0668-480b-ab2d-cf2d7a12d2c7",
+    "originalId": "f6d4603f-0668-480b-ab2d-cf2d7a12d2c7",
+    "statement": "Pré-escolar de 4 anos, sexo feminino, em acompanhamento por artrite idiopática juvenil (AIJ) em atividade. A mãe notou palidez progressiva nos últimos 2 meses. Os exames laboratoriais mostram os dados a seguir: Hemoglobina: 9,4 g/dL (referência 11,0 – 14,0) VCM: 71 fL (referência 74 – 88) RDW: 14,1% (referência < 14,5%) Ferritina: 45 ng/mL Ferro sérico: 48 μg/dL (referência 50 – 150) CTLF (TIBC): 275 μg/dL (referência 300 – 400) PCR: 52 mg/L Plaquetas: 480.000/mm3 (referência 150.000 – 450.000) De acordo com a fisiopatologia das anemias microcíticas, embora a anemia por deficiência de ferro possa coexistir com a anemia por doença crônica, assinale a alternativa que representa uma interpretação correta dos achados laboratoriais e a interpretação diagnóstica para essa criança.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia ferropriva – o RDW normal é o marcador mais específico para diferenciar ferropriva de doença crônica, independentemente dos valores de ferritina e CTLF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anemia de doença crônica – a ferritina de 45 ng/mL está acima do ponto de corte ajustado para deficiência de ferro na presença de inflamação (< 30 ng/mL para < 5 anos com PCR elevada), e a CTLF está reduzida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anemia ferropriva associada a anemia de doença crônica – a ferritina normal (45 ng/mL) descarta o diagnóstico isolado de doença crônica, e o RDW dentro dos limites de normalidade confirma o componente ferroprivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anemia de doença crônica – a plaquetose (> 450.000/mm3) é um marcador obrigatório para o diagnóstico, e sua ausência afastaria essa hipótese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anemia ferropriva – a ferritina de 45 ng/mL está abaixo do ponto de corte populacional tradicional de 50 ng/mL, confirmando depleção de estoques independentemente dos níveis de PCR.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resumo do caso: pré-escolar com AIJ ativa, anemia microcítica leve (Hb 9,4; VCM 71), RDW normal, ferritina 45 ng/mL, ferro sérico baixo, CTLF (TIBC) baixa (275), PCR elevada (52 mg/L) e plaquetose discreta. É o padrão típico de anemia de doença crônica (inflamação).\n\nFisiopatologia:\n- A inflamação crônica aumenta IL-6, que estimula a hepcidina. A hepcidina bloqueia a ferroportina e retém o ferro nos macrófagos e enterócitos. O resultado é ferro sérico baixo com estoques preservados (hipoferremia funcional).\n- A ferritina é proteína de fase aguda e sobe com a inflamação. Por isso, um valor de 45 ng/mL com PCR elevada não indica depleção de estoques.\n- Na deficiência de ferro verdadeira, a transferrina e a CTLF aumentam (>400). Na doença crônica, a transferrina é reduzida (proteína de fase aguda negativa) e a CTLF fica baixa ou normal-baixa.\n- Em inflamação, o ponto de corte de ferritina para deficiência de ferro em crianças pequenas sobe de <12-15 para <30 ng/mL, segundo a OMS. Aqui a ferritina está acima desse limite e a CTLF está reduzida, o que favorece anemia de doença crônica.\n\nAnálise das alternativas:\n\na) Incorreta. O RDW normal sugere população homogênea de hemácias e favorece doença crônica ou talassemia, mas não é o marcador mais específico. Na ferropenia o RDW costuma estar elevado, e nenhum índice isolado supera ferritina e CTLF interpretadas no contexto inflamatório. A expressão \"independentemente da ferritina e da CTLF\" torna a afirmação errada.\n\nb) Correta. A ferritina de 45 está acima do corte ajustado para inflamação (<30 ng/mL em menores de 5 anos com PCR elevada), e a CTLF está reduzida. Isso aponta para anemia de doença crônica, com ferro sérico baixo por sequestro mediado pela hepcidina.\n\nc) Incorreta. Uma ferritina normal não descarta doença crônica; ela é esperada nessa condição. O RDW normal não confirma componente ferroprivo, pois a ferropenia tende a aumentar o RDW. Além disso, a coexistência de ferropenia é possível, mas os dados não a demonstram.\n\nd) Incorreta. A plaquetose é achado frequente de inflamação (trombocitose reativa), mas não é critério obrigatório. Sua ausência não afasta a hipótese diagnóstica.\n\ne) Incorreta. O corte de 50 ng/mL não é o tradicional para deficiência de ferro em crianças, que usa valores próximos de 12-15 ng/mL, ajustados para <30 na inflamação. Além disso, a ferritina não pode ser interpretada independentemente da PCR, pois é reagente de fase aguda.\n\nPonto-chave: na AIJ ativa com PCR elevada, interprete a ferritina com o ponto de corte ajustado e use a CTLF para diferenciar. Ferritina acima de 30 com CTLF baixa indica doença crônica. Ferritina baixa com CTLF alta indica ferropenia.\n\nGabarito: letra b.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Artrite Idopática Juvenil (AIJ)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  },
+  {
+    "id": "AJUDA_f6f28f48-02f9-45ff-9e7d-4e37fc7d3742",
+    "originalId": "f6f28f48-02f9-45ff-9e7d-4e37fc7d3742",
+    "statement": "O Ministério da Saúde iniciou recentemente a implementação de mudanças no rastreamento e prevenção do Câncer de Colo de Útero no Sistema Único de Saúde (SUS). Nesse sentido, Dona Maria comparece na unidade básica de saúde (UBS) com seus 3 filhos, um menino de 8 anos, uma menina de 12 anos e uma menina de 13 anos, buscando orientações quanto à vacinação contra o HPV. Diante desse quadro, qual a orientação correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O menino e as meninas podem receber dose única nessa visita e necessitam de mais 1 dose em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O menino e as meninas podem receber a primeira dose nessa visita e agendar a segunda dose em 60 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As meninas não devem ser vacinadas e o menino poderá receber a primeira dose ao completar 11 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As meninas podem ser vacinadas em dose única nessa visita e não há indicação para que o filho seja vacinado agora.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O tema da questao e a atualizacao do esquema vacinal contra o HPV pelo Ministerio da Saude do Brasil (adotada em 2024 via Nota Informativa nº 41/2024), que estabeleceu a estrategia de dose unica para a populacao de rotina, composta por meninas e meninos na faixa etaria de 9 a 14 anos (14 anos, 11 meses e 29 dias).\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. O esquema de duas doses com intervalo de 6 meses era a recomendacao anterior e foi substituido pela dose unica. Alem disso, o menino de 8 anos nao deve ser vacinado no momento, pois a idade minima recomendada pelo PNI e de 9 anos.\n\nAlternativa b: Incorreta. Nao ha indicacao de esquema de duas doses com intervalo de 60 dias para a populacao pediatrica saudavel. O esquema de rotina e realizado em dose unica.\n\nAlternativa c: Incorreta. As meninas estao dentro da faixa etaria de rotina (9 a 14 anos) e devem ser vacinadas. Alem disso, a idade para o menino receber a vacina e a partir dos 9 anos, e nao aos 11 anos.\n\nAlternativa d: Correta. As meninas de 12 e 13 anos estao na faixa etaria indicada (9 a 14 anos) e devem receber a vacina em dose unica. O filho de 8 anos nao tem indicacao no momento, devendo aguardar completar 9 anos para ser vacinado.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Imunizações",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  },
+  {
+    "id": "AJUDA_f6fc2793-f908-4e47-9adc-61401c4dd5bb",
+    "originalId": "f6fc2793-f908-4e47-9adc-61401c4dd5bb",
+    "statement": "Dentre as alternativas a seguir, quais são as alterações mais precoces encontradas na retinopatia diabética?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ingurgitamento venoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exsudatos duros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Micro-hemorragias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Microaneurismas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A retinopatia diabética é uma complicação microvascular decorrente da hiperglicemia crônica, que provoca danos ao endotélio e aos perícitos dos vasos retinianos. A identificação da sequência evolutiva das lesões é fundamental para o correto estadiamento da patologia.\n\nAlternativa a) Incorreta. O ingurgitamento venoso, juntamente com o rosariamento venoso (venous beading), é um sinal de isquemia retiniana significativa. Essas alterações são encontradas na retinopatia diabética não proliferativa em estágios mais avançados (classificada como grave ou pré-proliferativa), indicando progressão da doença.\n\nAlternativa b) Incorreta. Os exsudatos duros são depósitos de lipídios e proteínas que ocorrem devido ao aumento da permeabilidade vascular e extravasamento crônico. Embora comuns, eles surgem após as alterações estruturais iniciais dos capilares.\n\nAlternativa c) Incorreta. As micro-hemorragias ocorrem devido ao dano capilar ou à ruptura de microaneurismas. Apesar de serem sinais precoces, a literatura oftalmológica e os estudos histopatológicos estabelecem que os microaneurismas precedem o aparecimento das hemorragias na história natural da doença.\n\nAlternativa d) Correta. Os microaneurismas são a alteração clínica mais precoce e o primeiro sinal visível ao exame de fundo de olho na retinopatia diabética. Eles representam pequenas dilatações saculares na parede dos capilares retinianos. Esse processo ocorre principalmente devido à perda de perícitos (células de sustentação vascular) induzida pela hiperglicemia, o que enfraquece a parede do vaso e permite a formação dessas microdilatações.\n\nEm resumo, a presença de microaneurismas isolados é o critério que define a retinopatia diabética não proliferativa leve, marcando o início das manifestações clínicas da doença na retina.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Doença do Polo Posterior",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  },
+  {
+    "id": "AJUDA_f6ff8868-4385-4d06-af53-85c68a461589",
+    "originalId": "f6ff8868-4385-4d06-af53-85c68a461589",
+    "statement": "Durante uma cirurgia pélvica, o cirurgião deve identificar corretamente os principais vasos sanguíneos da região para evitar complicações. Com relação à anatomia vascular da pelve, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A artéria epigástrica inferior é um ramo da artéria ilíaca interna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A artéria pudenda interna é ramo da artéria ilíaca externa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A veia ilíaca comum esquerda situa-se medialmente à artéria ilíaca comum esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A veia ovariana direita drena principalmente para a veia renal direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A artéria epigástrica inferior é, na verdade, um ramo da artéria ilíaca externa. Ela se origina logo acima do ligamento inguinal e sobe pela parede abdominal anterior, servindo como um importante marco anatômico para diferenciar as hérnias inguinais diretas das indiretas.\n\nAlternativa b: Incorreta. A artéria pudenda interna é um dos ramos terminais da divisão anterior da artéria ilíaca interna. A artéria ilíaca externa não emite ramos significativos para a região pélvica profunda ou períneo, destinando-se principalmente ao suprimento do membro inferior após tornar-se artéria femoral.\n\nAlternativa c: Correta. Na organização vascular da pelve e do abdome inferior, as veias geralmente situam-se posterior e medialmente às suas artérias correspondentes. A veia ilíaca comum esquerda localiza-se medialmente à artéria ilíaca comum esquerda em seu trajeto para se unir à veia ilíaca comum direita e formar a veia cava inferior. Um detalhe anatômico importante é que a veia ilíaca comum esquerda passa por baixo da artéria ilíaca comum direita, local onde pode sofrer compressão (Síndrome de May-Thurner).\n\nAlternativa d: Incorreta. Existe uma assimetria clássica na drenagem venosa das gônadas. A veia ovariana direita (assim como a testicular direita) drena diretamente para a veia cava inferior. É a veia ovariana esquerda que drena para a veia renal esquerda. Essa diferença explica, por exemplo, por que processos patológicos de drenagem venosa são mais comuns no lado esquerdo.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:43.415Z"
+  }
+]

@@ -1,0 +1,517 @@
+[
+  {
+    "id": "AJUDA_eb1ad567-1ede-41ef-bdae-5f2c9cf9006c",
+    "originalId": "eb1ad567-1ede-41ef-bdae-5f2c9cf9006c",
+    "statement": "Paciente 60 anos, hipertensa em uso de hidroclorotiazida e losartana, internada para biopsia de nódulo pulmonar. A admissão queixava-se de mal estar, náuseas, cefaleia e letargia. Sem sinais de infecção, tomografia de crânio normal, glicemia 90mg/dl, ureia 38 mg/dl/, creatinina 0,9 mg/dl, cálcio 9 mg/dl, sódio 119 mg/dl. cálcio 9 mg/dl. A conduta inicial no caso acima é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspensão do diurético e restrição hídrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infusão de solução salina 3% lentamente, ajustar a infusão para elevação do sódio de 4 a 6 mEq/l nas 24h, monitorar sódio de 4 em 4 horas, suspender tiazídicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Manter a correção até atingir sódio sérico 135 mEq/l.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infusão imediata de Nacl 20% (150 ml) em bolus (20 minutos), com meta de elevar 5mEq/l nas primeiras 2 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Suspender diurético e hidratação com solução salina a 0,9%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\n\nA paciente é uma idosa de 60 anos com hiponatremia grave (sódio de 119 mEq/L) e sintomática (cefaleia, náuseas e letargia). O uso de diuréticos tiazídicos, como a hidroclorotiazida, é uma das causas mais comuns de hiponatremia em idosos, pois esses medicamentos interferem na diluição urinária no túbulo distal sem afetar o mecanismo de concentração medular, favorecendo a retenção de água livre. O manejo deve focar na interrupção do fator causal e na correção segura dos níveis de sódio para evitar a síndrome de desmielinização osmótica (mielinólise pontina).\n\nExplicação das alternativas:\n\nAlternativa A: Incorreta. Embora a suspensão do diurético e a restrição hídrica sejam partes do tratamento da hiponatremia, essas medidas isoladas são indicadas para casos leves ou assintomáticos. Com sódio abaixo de 120 mEq/L e presença de sintomas neurológicos (letargia e cefaleia), há necessidade de intervenção ativa com solução hipertônica para prevenir o agravamento do edema cerebral.\n\nAlternativa B: Correta. Esta alternativa apresenta a conduta mais segura e adequada. A suspensão do tiazídico é o primeiro passo para interromper a perda de sódio e a retenção de água. A reposição com solução salina a 3% é indicada pela gravidade e pelos sintomas. A meta de elevação de 4 a 6 mEq/L nas primeiras 24 horas é prudente e minimiza o risco de lesão cerebral por correção excessivamente rápida. O monitoramento frequente (a cada 4 horas) é essencial para ajustar a velocidade da infusão e garantir que as metas de segurança não sejam ultrapassadas.\n\nAlternativa C: Incorreta. Corrigir o sódio até atingir níveis de normalidade (135 mEq/L) de forma contínua ou rápida é perigoso. O objetivo da terapia de urgência é elevar o sódio apenas o suficiente para cessar o risco de complicações agudas (geralmente um aumento de 5 a 6 mEq/L ou até atingir cerca de 125-130 mEq/L). Após a melhora dos sintomas e a saída da zona de risco, a correção deve prosseguir de forma muito lenta ou espontânea.\n\nAlternativa D: Incorreta. A solução de NaCl a 20% é extremamente concentrada e não deve ser administrada em bolus de 150 mL; a solução utilizada para protocolos de bolus em emergências é a salina a 3%. Além disso, o tratamento com bolus é reservado para sintomas neurológicos gravíssimos, como crises convulsivas, coma ou sinais de herniação cerebral, o que não é o caso da paciente, que apresenta letargia e cefaleia.\n\nAlternativa E: Incorreta. A solução salina a 0,9% (isotônica) não é o tratamento de escolha para hiponatremias graves e sintomáticas. Em casos onde há secreção inapropriada de ADH (ou efeito similar causado por tiazídicos), a administração de soro fisiológico pode inclusive piorar a hiponatremia, pois o corpo retém a água livre e excreta o sódio na urina concentrada. O uso de solução hipertônica (3%) é necessário para garantir o balanço positivo de sódio em relação à água.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.132Z"
+  },
+  {
+    "id": "AJUDA_eb1f8ac1-b33c-4c1c-8d6f-99767f7ca8e9",
+    "originalId": "eb1f8ac1-b33c-4c1c-8d6f-99767f7ca8e9",
+    "statement": "Paciente com fibrilação atrial, com quadro de dor abdominal e história de colecistectomia prévia. A dor iniciou em epigástrio e irradiou para a região umbilical e fossa ilíaca direita. Apresenta temperatura axilar 37,5°C, acompanhada de náuseas e vômitos. Ao exame físico, apresentou dor à palpação abdominal e presença de sinal de Blumberg. Qual é a hipótese diagnóstica mais provável no caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome intestinal inflamatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença de Crohn.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trombose mesentérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa correta é a letra (d).\n\nO quadro clínico descrito é a apresentação clássica da apendicite aguda. O ponto fundamental para o diagnóstico reside na cronologia da dor, conhecida como cronologia de Murphy: a dor inicia-se na região epigástrica ou periumbilical e, após algumas horas, migra para a fossa ilíaca direita. Esse padrão de migração é altamente sugestivo de apendicite. Febre baixa (37,5 °C), náuseas e vômitos são sintomas acompanhantes comuns. No exame físico, o sinal de Blumberg (dor à descompressão súbita no ponto de McBurney) indica irritação peritoneal localizada, reforçando a hipótese. A história de colecistectomia prévia serve para afastar a colecistite aguda como diagnóstico diferencial.\n\nPor que as outras alternativas estão incorretas?\n\na) Síndrome intestinal inflamatória: este é um termo genérico que engloba condições como a doença de Crohn e a retocolite ulcerativa. Embora possam causar dor abdominal, geralmente apresentam um quadro mais crônico, com episódios de diarreia, muco ou sangue nas fezes e perda de peso, diferindo da evolução aguda e migratória relatada.\n\nb) Doença de Crohn: a doença de Crohn pode acometer o íleo terminal e simular uma apendicite (ileíte terminal). No entanto, o padrão de dor que migra tipicamente do epigástrio para a fossa ilíaca direita, associado ao sinal de Blumberg em um paciente sem histórico prévio de alterações intestinais, torna a apendicite aguda muito mais provável em uma prova de residência.\n\nc) Trombose mesentérica: esta alternativa é o principal distrator da questão. O examinador cita a fibrilação atrial para confundir o candidato, já que esta arritmia é um importante fator de risco para embolia mesentérica. Contudo, a isquemia ou trombose mesentérica costuma apresentar uma dor abdominal intensa e difusa que é desproporcional ao exame físico (abdome inicialmente inocente, sem sinais de irritação peritoneal). O quadro descrito tem localização e migração muito específicas, características da apendicite.\n\nd) Apendicite aguda: como detalhado, a apresentação clínica com dor migratória (do epigástrio para a fossa ilíaca direita), sintomas gastrointestinais e sinal de irritação peritoneal no ponto de McBurney (Blumberg positivo) compõe o diagnóstico clássico desta patologia.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.132Z"
+  },
+  {
+    "id": "AJUDA_eb24d79b-912e-4d1b-aa79-d207f821dd2f",
+    "originalId": "eb24d79b-912e-4d1b-aa79-d207f821dd2f",
+    "statement": "Sobre o uso clínico do carbonato de lítio em transtornos mentais, considere as afirmativas a seguir. \n\nI. Embora o lítio possa levar a poliúria e polidipsia, retenção de água e edema, com ganho rápido de peso, os efeitos colaterais com o seu uso são inexistentes. \nII. Medicamentos que interagem aumentando o nível sérico de lítio incluem diuréticos tiazídicos, inibidores da ECA e anti-inflamatórios não esteroidais. \nIII. O risco de insuficiência renal maior com uso crônico de lítio é baixa, especialmente se os níveis forem mantidos mais abaixo da margem de toxicidade. \nIV. O uso de lítio dispensa o monitoramento de função hepática, visto que seu uso não causa hepatotoxicidade ou elevação de transaminases. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Afirmativa I: Incorreta. A assertiva é contraditória, pois lista diversos efeitos colaterais reais do lítio (poliúria, polidipsia, edema e ganho de peso) para, em seguida, afirmar que os efeitos colaterais são inexistentes. O carbonato de lítio é conhecido justamente por ter um índice terapêutico estreito, o que frequentemente causa efeitos adversos e exige monitoramento constante da litemia.\n\nAfirmativa II: Correta. O lítio é excretado quase totalmente pelos rins e seu manejo renal é semelhante ao do sódio. Os diuréticos tiazídicos aumentam a reabsorção de lítio no túbulo proximal. Os anti-inflamatórios não esteroidais (AINEs), ao inibirem as prostaglandinas, reduzem o fluxo sanguíneo renal e a filtração do lítio. Os inibidores da ECA (IECA) também podem reduzir a depuração renal do fármaco. Todas essas interações elevam o nível sérico do lítio, aumentando o risco de toxicidade.\n\nAfirmativa III: Correta. Embora o uso crônico de lítio possa causar alterações na função renal, como o diabetes insípido nefrogênico e a nefrite tubulointersticial crônica, a evolução para insuficiência renal terminal é considerada baixa (estimada entre 0,5% e 1,5% dos pacientes em uso prolongado). Esse risco é significativamente reduzido quando se mantém o monitoramento rigoroso e níveis séricos dentro ou abaixo da margem de toxicidade.\n\nAfirmativa IV: Correta. O lítio é um íon que não sofre metabolismo hepático; ele circula livremente no plasma e é eliminado de forma inalterada pelos rins. Por não passar pelo metabolismo do sistema citocromo P450 ou outras vias hepáticas, ele não causa elevação de transaminases ou hepatotoxicidade, tornando o monitoramento da função hepática desnecessário para este medicamento específico.\n\nConclusão: Como as afirmativas II, III e IV estão corretas, a alternativa correta é a letra (e).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.132Z"
+  },
+  {
+    "id": "AJUDA_eb273e17-6484-4608-a13b-7d7283d6b54d",
+    "originalId": "eb273e17-6484-4608-a13b-7d7283d6b54d",
+    "statement": "Paciente de 58 anos, hipertensa, foi internada devido a quadro de pneumonia comunitária. No segundo dia de internação, ela referiu redução do débito urinário, mas não havia sinais de retenção urinária. A creatinina sérica era de 0,9 mg/dL na admissão. Após dois dias, a creatinina aumentou para 1,6 mg/dL. O débito urinário foi de aproximadamente 400 mL em 24 horas. Não há evidências de choque ou uso de medicamentos nefrotóxicos. Segundo o KDIGO para lesão renal aguda, o caso dessa paciente",
+    "options": [
+      {
+        "id": "A",
+        "text": "não se trata de lesão renal aguda, pois o aumento da creatinina é inferior a 100%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trata-se de lesão renal aguda porque a paciente apresenta creatinina acima de 1,5 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "não se trata de lesão renal aguda, pois o débito urinário está acima de 300 mL em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não se trata de lesão renal aguda, pois a paciente não tem evidências de choque ou uso de nefrotóxicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "trata-se de lesão renal aguda porque houve um aumento da creatinina maior que 50% em relação ao basal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O diagnóstico de Lesão Renal Aguda (LRA), segundo as diretrizes do KDIGO (Kidney Disease: Improving Global Outcomes), fundamenta-se em três critérios principais, sendo que a presença de apenas um deles já confirma a condição:\n\n1. Aumento da creatinina sérica maior ou igual a 0,3 mg/dL em um período de 48 horas.\n2. Aumento da creatinina sérica maior ou igual a 1,5 vezes o valor basal (o que equivale a um aumento de 50%) nos últimos 7 dias.\n3. Débito urinário inferior a 0,5 mL/kg/h por um período de pelo menos 6 horas.\n\nAo analisarmos os dados da paciente:\n- Creatinina basal: 0,9 mg/dL.\n- Creatinina no segundo dia: 1,6 mg/dL.\n- Variação absoluta: 0,7 mg/dL (superior a 0,3 mg/dL).\n- Variação percentual: 1,6 / 0,9 = 1,77 (um aumento de 77% em relação ao basal).\n\nComo a paciente apresentou um aumento de 77% na creatinina em dois dias, ela preenche os critérios para Lesão Renal Aguda Estágio 1.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O aumento necessário para definir LRA é de 50% (1,5 vezes o basal) ou um ganho absoluto de 0,3 mg/dL. O valor de 100% (dobro da creatinina) já classificaria a paciente no Estágio 2 do KDIGO.\n\nAlternativa b) Incorreta. O diagnóstico de LRA não é feito com base em um valor absoluto isolado de creatinina (como estar acima de 1,5 mg/dL), mas sim na comparação com o valor prévio da própria paciente ou na queda do débito urinário.\n\nAlternativa c) Incorreta. O débito urinário de 400 mL em 24 horas é geralmente considerado oligúria para um adulto médio (limite de 400-500 mL/dia). Mesmo que o débito fosse normal, o critério da creatinina já seria suficiente para o diagnóstico.\n\nAlternativa d) Incorreta. Embora choque e medicamentos nefrotóxicos sejam causas comuns de LRA, a ausência deles não descarta o quadro. A própria pneumonia comunitária pode causar lesão renal através de mecanismos inflamatórios ou sepse.\n\nAlternativa e) Correta. A paciente preenche o critério diagnóstico do KDIGO, pois houve um aumento da creatinina superior a 50% (1,5 vezes) em relação ao seu valor basal de internação em um intervalo inferior a 7 dias.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.132Z"
+  },
+  {
+    "id": "AJUDA_eb28f6f4-53d4-4803-9369-01fcc629089d",
+    "originalId": "eb28f6f4-53d4-4803-9369-01fcc629089d",
+    "statement": "Quanto à classificação de Hinchey para diverticulite aguda, o estágio que corresponde a abscesso peri cólico limitado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hinchey I",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hinchey II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hinchey III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hinchey IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não faz parte da classificação",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A classificação de Hinchey é a ferramenta mais utilizada na prática médica para estratificar a gravidade da diverticulite aguda complicada, orientando tanto o prognóstico quanto a conduta terapêutica. Ela divide a doença em quatro estágios principais, baseados na extensão do processo inflamatório e infeccioso.\n\nAnálise das alternativas:\n\na) Hinchey I: Esta é a alternativa correta. O estágio I de Hinchey caracteriza-se pela presença de um abscesso pericólico ou mesentérico pequeno e localizado, ou seja, a coleção purulenta está restrita à vizinhança do segmento de cólon inflamado. Algumas subdivisões modernas (classificação de Hinchey modificada por Kaiser) ainda dividem este estágio em IA (fleimão ou inflamação pericólica sem abscesso) e IB (abscesso pericólico propriamente dito).\n\nb) Hinchey II: Incorreta. O estágio II refere-se a abscessos que não estão mais limitados à região pericólica. São abscessos distantes, que podem ser pélvicos, retroperitoneais ou intra-abdominais, geralmente decorrentes da extensão de um processo que não ficou contido localmente.\n\nc) Hinchey III: Incorreta. Este estágio representa uma complicação mais grave: a peritonite purulenta generalizada. Ocorre quando um abscesso se rompe na cavidade peritoneal livre, mas não há comunicação persistente com a luz do cólon para a saída de fezes, havendo apenas pus espalhado pelo abdome.\n\nd) Hinchey IV: Incorreta. É o estágio de maior gravidade, caracterizado pela peritonite fecal generalizada. Neste caso, há uma perfuração livre do divertículo, permitindo que o conteúdo fecal extravase diretamente para a cavidade abdominal, o que configura uma emergência cirúrgica clássica.\n\ne) Não faz parte da classificação: Incorreta. A classificação de Hinchey é o padrão-ouro para a descrição cirúrgica e radiológica da diverticulite aguda complicada desde sua criação, em 1978, e suas posteriores modificações.\n\nResumo da Classificação de Hinchey:\nEstágio I: Abscesso pericólico ou mesentérico (limitado).\nEstágio II: Abscesso pélvico ou à distância (distal).\nEstágio III: Peritonite purulenta generalizada.\nEstágio IV: Peritonite fecal generalizada.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.132Z"
+  },
+  {
+    "id": "AJUDA_eb2f0c14-a9fc-4029-a91b-134201c5462e",
+    "originalId": "eb2f0c14-a9fc-4029-a91b-134201c5462e",
+    "statement": "RN nasceu de parto vaginal, com APGAR 5 e 6, apresentando desconforto respiratório de imediato, caracterizado por gemência, tiragem subcostal e taquipneia. A idade gestacional pela DUM foi de 31 semanas. RN foi levado à UTI neonatal, com piora importante do desconforto respiratório, necessitando de intubação orotraqueal. Neonatologista solicitou RX de tórax.\n\nGenitora relatou perda de líquido vaginal um dia antes do parto, porém, como foi em pequena quantidade e não teve contrações, decidiu ficar em casa. Somente foi à maternidade 20 horas após a ruptura das membranas, em função da forte intensidade e da elevada frequência das contrações. RN nasceu cerca de duas horas após admissão da gestante na maternidade. Dados pré-natais: Gesta IV/ Aborto II. O cartão da gestante mostrou apenas quatro consultas, com exames realizados somente no primeiro trimestre (todos normais).\nSobre esse paciente, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A antibioticoterapia deve ser evitada no momento, para não selecionar flora bacteriana resistente, visto que a clínica e a imagem excluem a possibilidade de pneumonia bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A prematuridade e o padrão radiológico tornam a Síndrome do Desconforto Respiratório um dos principais diagnósticos desse paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O RN deverá receber uma dose de surfactante exógeno o mais rapidamente possível. Estudos recentes mostram a ineficácia de doses subsequentes de surfactante, além do elevado risco de pneumotórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hipóxia perinatal, prematuridade e ausência de corticoide pré-natal são fatores de risco para uma produção insuficiente de surfactante pelos pneumócitos tipo I ainda na vida intrauterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Considerando a idade gestacional de 31 semanas e a hipóxia, a meta terapêutica na ventilação mecânica deve ser a de manter a saturação de oxigênio (SatO2) permanentemente entre 96 e 98%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro clínico descreve um recém-nascido (RN) pré-termo de 31 semanas com desconforto respiratório precoce e grave. A história materna destaca uma ruptura prolongada de membranas (22 horas no total) e assistência pré-natal precária. A imagem radiológica anexada é característica, apresentando infiltrado reticulogranular difuso (aspecto de vidro fosco) e presença de broncogramas aéreos, o que corrobora o diagnóstico de Síndrome do Desconforto Respiratório (SDR) ou Doença da Membrana Hialina.\n\nAlternativa a: Incorreta. Embora a SDR seja a principal hipótese pela prematuridade, o risco de sepse neonatal precoce e pneumonia bacteriana é elevado devido à ruptura prolongada de membranas (superior a 18 horas) e à ausência de triagem para Estreptococo do grupo B. Na prática, o quadro clínico e radiológico da pneumonia neonatal é frequentemente indistinguível da SDR, justificando o início de antibioticoterapia empírica até que se obtenham resultados de culturas.\n\nAlternativa b: Correta. A prematuridade (abaixo de 34 semanas) é o principal fator de risco para a SDR devido à deficiência quantitativa e qualitativa de surfactante. O padrão radiológico exibido na imagem é o padrão-ouro para essa patologia, caracterizado por pulmões com volume reduzido, opacidade granular fina e broncogramas aéreos que ultrapassam a silhueta cardíaca.\n\nAlternativa c: Incorreta. O surfactante exógeno é o tratamento de escolha, mas não se limita a uma única dose. Caso o RN apresente piora clínica ou necessidade persistente de parâmetros ventilatórios elevados (geralmente FiO2 maior que 30 a 40%), doses subsequentes podem ser administradas (normalmente com intervalo de 6 a 12 horas). O uso de surfactante, ao melhorar a complacência pulmonar, na verdade reduz o risco de pneumotórax.\n\nAlternativa d: Incorreta. Esta alternativa contém um erro anatômico/fisiológico clássico em provas: o surfactante é produzido e secretado pelos pneumócitos tipo II, e não pelos pneumócitos tipo I. Os pneumócitos tipo I são responsáveis principalmente pela barreira alvéolo-capilar e trocas gasosas.\n\nAlternativa e: Incorreta. Em recém-nascidos prematuros, a oferta excessiva de oxigênio é prejudicial devido ao estresse oxidativo. Manter a saturação entre 96 e 98% aumenta significativamente o risco de Retinopatia da Prematuridade (ROP) e Displasia Broncopulmonar. As metas recomendadas de saturação de oxigênio para esses pacientes situam-se geralmente entre 90 e 95%.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Rotura Prematura de Membranas (RPM)",
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/108cb8ccf1ac1558f8bb6855514b8258fdfb7250cbd99518f17fef660cb57fbc.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_eb2f0c14-a9fc-4029-a91b-134201c5462e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.585Z"
+  },
+  {
+    "id": "AJUDA_eb312ac7-f3a5-4eef-831e-e14ee58a9766",
+    "originalId": "eb312ac7-f3a5-4eef-831e-e14ee58a9766",
+    "statement": "Em relação à Política Nacional de Promoção da Saúde (PNPS), avalie as seguintes situações: 1 - Pessoa portadora de diabetes mellitus com hemoglobina glicada de 9%, IMC 30kg/m² tem retorno agendado para três meses, enquanto que outra pessoa portadora de hipertensão arterial com hemoglobina glicada de 7%, sem outras comorbidades, tem retorno agendado para seis meses II - Mulher com 18 anos de idade comparece à consulta para acompanhamento de transtorno ansioso depressivo (TAD). Durante a anamnese, relatou início de atividade sexual. Ao final da consulta, além de programar o acompanhamento do TAD, foram dadas orientações sobre métodos contraceptivos e sua disponibilidade no SUS- III Em uma pequena cidade do sul de Minas Gerais em reunião local do Conselho de Saúde, um líder da comunidade solicita a alteração do horário de funcionamento do centro de saúde, em alguns dias da semana, para facilitar as consultas dos trabalhadores da lavoura de café. São representações dos princípios da PNPS:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II, apenas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e III, apenas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I, II e III",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "II e III, apenas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, devemos analisar as situações à luz dos princípios da Política Nacional de Promoção da Saúde (PNPS), que visa promover a qualidade de vida e reduzir vulnerabilidades e riscos à saúde.\n\nA situação I exemplifica o princípio da Equidade. A equidade consiste em tratar de forma diferenciada os desiguais, oferecendo maior atenção a quem possui maior necessidade. No caso, o paciente com diabetes descompensada (hemoglobina glicada de 9%) e obesidade (IMC 30) apresenta maior risco cardiovascular e metabólico do que o paciente com parâmetros controlados. Portanto, o agendamento em um intervalo menor (três meses versus seis meses) direciona os recursos do SUS de forma proporcional ao risco, garantindo o cuidado necessário para evitar complicações.\n\nA situação II ilustra os princípios da Integralidade e da Autonomia. A integralidade pressupõe que o profissional de saúde deve enxergar o indivíduo como um todo, não se limitando à queixa principal (no caso, o transtorno ansioso-depressivo). Ao abordar a saúde sexual e reprodutiva e informar sobre métodos contraceptivos, o médico promove a saúde de forma ampla. Além disso, ao fornecer informações e acesso aos métodos no SUS, fortalece a autonomia da paciente para tomar decisões sobre sua própria vida e corpo.\n\nA situação III representa os princípios da Participação Social e da Territorialidade. O Conselho de Saúde é a instância máxima de controle e participação da comunidade na gestão do SUS. A solicitação do líder comunitário para adequar o horário de funcionamento do posto à realidade dos trabalhadores da lavoura demonstra o exercício do controle social e o reconhecimento das especificidades do território e do contexto socioeconômico local. Adaptar o serviço às necessidades de quem trabalha no campo é uma estratégia fundamental de promoção da saúde e garantia de acesso.\n\nAnálise das alternativas:\n\nA alternativa (a) está incorreta, pois exclui a situação III, que é um exemplo clássico de participação social, princípio fundamental da PNPS.\n\nA alternativa (b) está incorreta, pois exclui a situação II, que demonstra a visão integral do cuidado e a promoção da autonomia, também centrais na política.\n\nA alternativa (c) é a correta, pois as três situações descritas refletem a aplicação prática dos princípios da Política Nacional de Promoção da Saúde: equidade (I), integralidade/autonomia (II) e participação social/territorialidade (III).\n\nA alternativa (d) está incorreta, pois exclui a situação I, que é uma representação direta do princípio da equidade no manejo de condições crônicas.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Princípios e Diretrizes do SUS",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.585Z"
+  },
+  {
+    "id": "AJUDA_eb320d08-1843-434c-bec6-fcac63b6db4b",
+    "originalId": "eb320d08-1843-434c-bec6-fcac63b6db4b",
+    "statement": "A prematuridade é a principal causa de mortalidade neonatal, sendo responsável por até 50% dos casos de alterações neurológicas tardias. Sobre esta patologia analise as sentenças a seguir:\n\nI. Parto pré-termo é aquele que ocorre com menos de 36 semanas de idade gestacional, não se enquadrando no período definido como de abortamento.\nII. As principais contraindicações para o uso da tocólise são: malformação fetal grave, vitalidade fetal alterada, quadros hipertensivos graves (incluindo pré-eclâmpsia com achados graves), sangramento com instabilidade hemodinâmica, corioamnionite e doenças cardíacas graves.\nIII. A tocólise é recomendada para pacientes em trabalho de parto pré-termo com menos de 36 semanas e o tocolítico de primeira escolha é o salbutamol (beta mimético).\nIV. A pesquisa do estreptococo do grupo B (EGB) é contraindicada no início da tocólise, pois sua identificação precoce aumenta o risco de sepse neonatal.\nV. O sulfato de magnésio é usado como neuroprotetor fetal reduzindo a gravidade e o risco de paralisia cerebral sendo administrado em caso de falha da tocólise e iminência de parto.\n\nAssinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente a sentença I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As sentenças I, III, V estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As sentenças I, II e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As sentenças II e V estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Apenas a sentença II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreendermos a questão, vamos analisar cada uma das sentenças individualmente, fundamentando-as com os protocolos atuais de obstetrícia e neonatologia:\n\nSentença I (Incorreta): A definição de parto pré-termo, segundo a Organização Mundial da Saúde (OMS) e as principais diretrizes nacionais (FEBRASGO), é aquele que ocorre entre 20 ou 22 semanas até 36 semanas e 6 dias de gestação. Portanto, o limite é abaixo de 37 semanas completas, e não 36 semanas como afirmado.\n\nSentença II (Correta): A tocólise (inibição do trabalho de parto) tem como objetivo principal ganhar tempo para a administração de corticoides para maturação pulmonar fetal e para o transporte da gestante para um centro de referência. Ela é contraindicada quando a manutenção da gestação representa um risco maior que a prematuridade. São contraindicações clássicas: corioamnionite (infecção ovular), instabilidade hemodinâmica materna (sangramentos graves, como descolamento prematuro de placenta), sofrimento fetal agudo (vitalidade alterada), malformações incompatíveis com a vida e quadros de pré-eclâmpsia grave ou eclâmpsia, onde o parto é a solução definitiva.\n\nSentença III (Incorreta): A recomendação habitual para a tocólise é para gestações entre 24 e 34 semanas. Após 34 semanas, os riscos da inibição costumam superar os benefícios, pois a maturidade pulmonar já é mais provável e os efeitos colaterais das drogas são significativos. Além disso, o salbutamol (betamimético) não é mais a primeira escolha devido aos seus diversos efeitos colaterais maternos (taquicardia, edema agudo de pulmão). Atualmente, a nifedipina (bloqueador de canais de cálcio) ou o atosiban (antagonista da ocitocina) são as drogas de primeira linha.\n\nSentença IV (Incorreta): A pesquisa ou a profilaxia para o estreptococo do grupo B (EGB) é mandatória em casos de trabalho de parto prematuro. Se a gestante entra em trabalho de parto pré-termo e o status de colonização é desconhecido, deve-se iniciar a antibioticoterapia profilática para reduzir o risco de sepse neonatal precoce. A coleta do *swab* não aumenta o risco de sepse; pelo contrário, o objetivo é identificar e tratar para prevenir a infecção.\n\nSentença V (Correta): O sulfato de magnésio é amplamente utilizado na obstetrícia moderna com a finalidade de neuroproteção fetal em gestantes com risco de parto iminente abaixo de 32 semanas de idade gestacional. Estudos comprovam que sua administração reduz significativamente a incidência de paralisia cerebral e disfunções motoras graves no recém-nascido prematuro. Ele é indicado justamente quando a tocólise falha ou quando o parto é inevitável por outros motivos.\n\nAnálise das alternativas:\nComo as sentenças II e V estão corretas, a alternativa que as engloba é a letra (d).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.585Z"
+  },
+  {
+    "id": "AJUDA_eb32e9d9-80fb-4567-8bbc-0b2d29c640fb",
+    "originalId": "eb32e9d9-80fb-4567-8bbc-0b2d29c640fb",
+    "statement": "Um homem de 34 anos de idade sofreu colisão automobilística frontal utilizando cinto de segurança. Chegou ao pronto atendimento consciente, porém referindo dor em hemitórax inferior esquerdo e dor abdominal difusa. Ao exame físico, apresentou FC = 122 bpm, FR = 24 irpm, PA = 102 mmHg X 68 mmHg, SpO2 = 96%, temperatura = 36,8 °C; abdome doloroso difusamente, com maior sensibilidade em quadrante superior esquerdo. FAST positivo para líquido livre em cavidade. Considerando o quadro hemodinâmico e o achado de FAST positivo, qual é a melhor conduta para o caso apresentado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitação de tomografia de abdome com contraste e observação até liberação do exame",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administração de volume e reavaliação em 12 horas para decidir a conduta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicação imediata de laparotomia exploradora por instabilidade hemodinâmica associada a FAST positivo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Punção diagnóstica do líquido livre para determinar a origem, antes da cirurgia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente em questão é vítima de trauma abdominal fechado de alta energia (colisão frontal) e apresenta sinais claros de choque circulatório. A frequência cardíaca de 122 bpm (taquicardia) associada a uma pressão arterial limítrofe (102 x 68 mmHg) em um paciente jovem sugere um estado de choque hemorrágico Classe II ou III, em que os mecanismos compensatórios ainda tentam manter a perfusão. O achado de FAST positivo confirma a presença de líquido livre (sangue) na cavidade abdominal.\n\nPor que a alternativa (c) está correta?\nSegundo as diretrizes do ATLS (Advanced Trauma Life Support), o manejo de pacientes com trauma abdominal fechado que apresentam instabilidade hemodinâmica e evidência de líquido livre no FAST é a laparotomia exploradora imediata. O objetivo é o controle rápido da fonte de sangramento (provavelmente esplênico, dada a dor no quadrante superior esquerdo e no hemitórax inferior). Em pacientes instáveis, o tempo é o fator determinante para a sobrevivência, e a cirurgia não deve ser retardada.\n\nPor que as outras alternativas estão incorretas?\n\nAlternativa (a): A tomografia computadorizada (TC) de abdome é o exame de escolha para detalhar lesões em órgãos sólidos, porém ela é contraindicada para pacientes com instabilidade hemodinâmica. O transporte e o tempo de execução do exame em um ambiente fora do centro cirúrgico ou da sala de emergência colocam a vida do paciente em risco. A TC é reservada para pacientes estáveis.\n\nAlternativa (b): A administração de volume (cristaloides e hemoderivados) faz parte da ressuscitação inicial, mas a conduta de \"aguardar 12 horas\" é incorreta e perigosa. Se há líquido livre e sinais de choque, existe um sangramento ativo ou uma lesão grave que requer intervenção imediata, e não apenas observação.\n\nAlternativa (d): A punção diagnóstica ou o Lavado Peritoneal Diagnóstico (LPD) têm indicações semelhantes ao FAST na detecção de sangue. Como o FAST já foi realizado e resultou positivo para líquido livre em um cenário de instabilidade, não há necessidade de outro exame para confirmar o que já foi visto. Isso apenas retardaria o tratamento definitivo.\n\nAssociação com o mecanismo de trauma:\nA dor no hemitórax inferior esquerdo e no quadrante superior esquerdo, somada ao uso do cinto de segurança em colisão frontal, aponta fortemente para uma lesão esplênica (baço), que é uma das causas mais comuns de hemoperitônio e choque em traumas abdominais fechados.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.585Z"
+  },
+  {
+    "id": "AJUDA_eb35a521-73f9-4171-88fb-ac83d528a191",
+    "originalId": "eb35a521-73f9-4171-88fb-ac83d528a191",
+    "statement": "Lactente, 14 meses de idade, retorna ao pronto-socorro 48 horas após alta hospitalar. Esteve internado por 10 dias para tratamento de pneumonia, necessitando de oxigenoterapia por 72 horas e em uso de ampicilina por cateter venoso central. Atualmente apresenta febre (39°C), aspecto toxemiado, taquicardia (FC: 156 bpm), sopro sistólico 4+/6+, hepatomegalia (fígado 4 cm abaixo do RCD), saturação de O2 94% e ausculta pulmonar sem alterações. Além da radiografia de tórax, qual exame de imagem é fundamental para esclarecer a hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eletrocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressonância pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tomografia pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado é altamente sugestivo de Endocardite Infecciosa (EI). O lactente apresenta fatores de risco importantes: internação prolongada recente e uso de cateter venoso central (porta de entrada para patógenos, especialmente *Staphylococcus aureus*). Os achados atuais de febre alta, toxemia, taquicardia, um sopro sistólico de alta intensidade (4+/6+) — que sugere uma nova lesão valvar ou agravamento de uma preexistente — e sinais de insuficiência cardíaca (hepatomegalia) direcionam o diagnóstico para uma infecção do endocárdio.\n\nAlternativa (a) Incorreta: O eletrocardiograma é um exame complementar que pode mostrar arritmias ou bloqueios de condução (como o prolongamento do intervalo PR em casos de abscesso perivalvar), mas ele não visualiza vegetações ou danos estruturais nas válvulas, não sendo o exame fundamental para o diagnóstico inicial de endocardite.\n\nAlternativa (b) Incorreta: A ressonância pulmonar não tem indicação neste cenário. O foco da investigação, diante de um novo sopro cardíaco importante e sinais de insuficiência cardíaca após uso de cateter central, deve ser o coração, e não o parênquima pulmonar.\n\nAlternativa (c) Correta: O ecocardiograma é o exame fundamental e de escolha. Ele permite a visualização direta de vegetações, abscessos miocárdicos, novas regurgitações valvares ou deiscência de próteses. A presença de vegetação ao ecocardiograma é um dos critérios maiores de Duke, utilizados mundialmente para o diagnóstico de Endocardite Infecciosa. Além disso, auxilia na avaliação da função ventricular e das repercussões hemodinâmicas.\n\nAlternativa (d) Incorreta: Embora a tomografia de tórax pudesse identificar complicações como infartos pulmonares ou abscessos (êmbolos sépticos), ela não é o exame de escolha para diagnosticar a origem do problema, que é a infecção nas válvulas cardíacas. Como a ausculta pulmonar está normal e a queixa principal envolve um sopro cardíaco novo, o ecocardiograma precede qualquer avaliação tomográfica.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:11.585Z"
+  }
+]

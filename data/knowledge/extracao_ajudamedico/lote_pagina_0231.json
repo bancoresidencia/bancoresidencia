@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_4060f698-8045-4d05-8d0d-0f6941e28779",
+    "originalId": "4060f698-8045-4d05-8d0d-0f6941e28779",
+    "statement": "Paciente de 10 meses de idade, previamente hígido, é levado ao pronto atendimento com história de febre de até 39 °C há dois dias. Responsável refere que não está aceitando nenhum alimento sólido desde o início do quadro febril, apenas seio materno. Apresenta cerca de 4 diureses por dia. Ao exame físico, encontra-se em bom estado geral, mantendo mucosas úmidas, sem alterações cardíaca, pulmonar e abdominal; otoscopia e oroscopia conforme imagens a seguir:\n\nApós manejo adequado, o paciente ainda manteve febre por mais dois dias, com melhora após este período e sem recorrência. Nos dias subsequentes, evoluiu com inapetência, vômitos e hipoatividade, sintomas que foram piorando progressivamente. Foi levado ao pronto-socorro, novamente, após cerca de 10 dias do atendimento anterior. Na admissão, o paciente estava letárgico e pálido, sendo levado à sala de emergência. A seguir, encontra-se a descrição da avaliação sistematizada, os dados de monitorização e a imagem da ultrassonografia pulmonar, com o padrão observado em todos os campos pulmonares: \n\nA: pérvia\nB: murmúrio vesicular presente, com estertores bilateralmente, FR 55 ipm, saturação 93%, tiragem subdiafragmática\nC: bulhas rítmicas, 2 tempos, normofonéticas, sem sopros, tempo de enchimento capilar de 6 segundos, pulsos finos, fígado a 5 cm\ndo rebordo costal direito\nD: abertura ocular e resposta verbal ao estímulo doloroso; localiza dor; glicemia capilar 75 mg/dL\nE: nada digno de nota, fontanela anterior normotensa\nConsiderando a principal hipótese diagnóstica, qual é a conduta inicial indicada para estabilizar o paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Introduzir cefalosporina de 3ª geração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Expandir com solução cristaloide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acoplar em ventilação não invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar inotrópico em bomba de infusão contínua.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um lactente de 10 meses que, após um quadro inicial compatível com uma infecção viral (herpangina/mão-pé-boca, sugerida pelas vesículas na orofaringe da primeira imagem), evoluiu após 10 dias com um quadro de choque cardiogênico, provavelmente secundário a uma miocardite viral.\n\nA análise da avaliação sistematizada e das imagens é fundamental:\n\n1. Oroscopia inicial: Presença de vesículas em palato mole e pilares amigdalianos, indicando infecção por enterovírus (Coxsackie).\n2. Pulmão (B): O murmúrio com estertores bilaterais, a taquipneia e a imagem de ultrassom pulmonar com múltiplas \"Linhas B\" (caudas de cometa) indicam síndrome intersticial-alveolar, ou seja, edema agudo de pulmão.\n3. Circulação (C): Taquicardia importante (184 bpm no monitor), hipotensão (68/36 mmHg), tempo de enchimento capilar muito prolongado (6 segundos) e hepatomegalia (fígado a 5 cm do rebordo costal). Esse conjunto de sinais — choque com sinais de congestão sistêmica (hepatomegalia) e congestão pulmonar (estertores e linhas B) — define o choque cardiogênico.\n\nDiante desse diagnóstico, a conduta inicial deve focar no suporte inotrópico.\n\nExplicação das alternativas:\n\na) Incorreta. A introdução de antibióticos seria indicada se a principal suspeita fosse choque séptico. Embora o choque séptico possa causar disfunção miocárdica, os sinais de congestão importante (fígado muito aumentado e edema pulmonar no USG) logo no início do quadro direcionam para a etiologia cardiogênica (miocardite pós-viral).\n\nb) Incorreta. No choque cardiogênico com sinais de sobrecarga volêmica e insuficiência cardíaca descompensada, a expansão volêmica com cristaloide é contraindicada, pois pode agravar rapidamente o edema agudo de pulmão e a falência cardíaca.\n\nc) Incorreta. Embora a ventilação não invasiva possa auxiliar no trabalho respiratório e no manejo do edema pulmonar, ela não resolve a causa primária da instabilidade hemodinâmica (a falência da bomba cardíaca e a hipotensão). O paciente está letárgico e em choque grave, necessitando primeiro de estabilização circulatória.\n\nd) Correta. O início de inotrópico (como dobutamina ou milrinona, ou mesmo adrenalina em doses baixas a depender do protocolo) é a medida prioritária para aumentar a contratilidade miocárdica, melhorar o débito cardíaco e reverter o estado de choque cardiogênico. É a droga de escolha quando há sinais claros de falência de bomba e congestão.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/20650468780136930649cc92b9b7fe4dbd93ce3e79dde34e7d49b2da1695449b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4060f698-8045-4d05-8d0d-0f6941e28779_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/3f5c3f1dc66d0b0c880e76abc68daa734df0cbe2723f6a2b508105a36e55f197.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4060f698-8045-4d05-8d0d-0f6941e28779_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/b49f62aac3632f0c607d5a958ff55cf8f69f007aea108f51485edd00c46b3a05.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4060f698-8045-4d05-8d0d-0f6941e28779_img_2.webp"
+      },
+      {
+        "order": 3,
+        "originalUrl": "https://files.ajudamedico.com/files/9bc4be9ce3daacb18ea69a7e6f90742ba3e4bbdd3e93fd55c164ef5096030339.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4060f698-8045-4d05-8d0d-0f6941e28779_img_3.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  },
+  {
+    "id": "AJUDA_4074a1fd-33ac-4b5e-b889-e2cfa12a7f28",
+    "originalId": "4074a1fd-33ac-4b5e-b889-e2cfa12a7f28",
+    "statement": "A definição correta de Especificidade de um teste diagnóstico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Probabilidade de um indivíduo ter a doença dado que o teste foi positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Capacidade do teste de identificar corretamente os indivíduos que não possuem a doença (Verdadeiros Negativos).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Capacidade do teste de identificar corretamente os indivíduos que possuem a doença (Verdadeiros Positivos).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Probabilidade de um indivíduo não ter a doença dado que o teste foi negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário dominar os conceitos básicos de estatística aplicada aos testes diagnósticos, diferenciando as propriedades intrínsecas do teste (sensibilidade e especificidade) das probabilidades pós-teste (valores preditivos).\n\nAnálise das alternativas:\n\na) Incorreta. Esta alternativa descreve o Valor Preditivo Positivo (VPP). O VPP não é uma característica intrínseca do teste, pois varia conforme a prevalência da doença na população testada. Ele responde à pergunta: \"Meu teste deu positivo, qual a chance de eu realmente estar doente?\".\n\nb) Correta. A especificidade define a capacidade de um teste diagnóstico de identificar corretamente os indivíduos sadios, ou seja, de fornecer um resultado negativo naqueles que realmente não apresentam a patologia (verdadeiros negativos). Matematicamente, é calculada dividindo-se os verdadeiros negativos pelo total de indivíduos sadios (verdadeiros negativos + falsos-positivos). Um teste com alta especificidade apresenta poucos resultados falsos-positivos, sendo ideal para confirmar um diagnóstico.\n\nc) Incorreta. Esta é a definição de sensibilidade. A sensibilidade é a capacidade do teste de identificar corretamente os indivíduos que possuem a doença (verdadeiros positivos). Um teste muito sensível é excelente para triagem (*screening*), pois um resultado negativo em um teste de alta sensibilidade ajuda a excluir a doença com segurança (poucos falsos-negativos).\n\nd) Incorreta. Esta alternativa define o Valor Preditivo Negativo (VPN). O VPN indica a probabilidade de um indivíduo não ter a doença após ter recebido um resultado negativo no teste. Assim como o VPP, o valor preditivo negativo também é influenciado pela prevalência da doença na população.\n\nResumo didático:\n- Sensibilidade: Capacidade de detectar os doentes (evita falsos-negativos).\n- Especificidade: Capacidade de detectar os sadios (evita falsos-positivos).\n- VPP/VPN: Probabilidades baseadas no resultado do teste e na prevalência.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  },
+  {
+    "id": "AJUDA_4078adf4-339b-4515-bf9e-9f54255be8c5",
+    "originalId": "4078adf4-339b-4515-bf9e-9f54255be8c5",
+    "statement": "Em consulta de rotina com pediatra no Centro de Saúde, mãe comparece com bebê de exatos 2 meses de idade, em aleitamento materno exclusivo. Realizada aferição de dados antropométricos e constatado ganho de 1,6kg de peso e 4cm de comprimento. Ao exame físico, observada palidez cutânea 1+/4+, sem demais alterações. Exibe hemograma que realizou por conta própria com o seguinte resultado: Hb:10g/dL Ht:35% VCM:96fl HCM:30pg CHCM:33g/dL Leucócitos: 12.500/mm³ (segmentados 40% linfócitos 50% monócitos 8% eosinófilos 2%) Plaquetas 280.000/mm³. Com base no cenário acima, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O ganho de peso e estatura está adequado e o hemograma sugere anemia fisiológica do lactente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O ganho de peso e estatura está inadequado e o hemograma sugere anemia por deficiência de vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O ganho de peso e estatura está inadequado e o hemograma sugere anemia por deficiência de ferro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O ganho de peso e estatura está adequado e o hemograma sugere anemia hemolítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DOS DADOS ANTROPOMÉTRICOS:\nO lactente ganhou 1,6 kg em 2 meses, o que representa uma média de 800 g por mês (ou cerca de 26 g por dia). No primeiro trimestre de vida, espera-se um ganho ponderal entre 700 g e 900 g por mês ou 25 g a 30 g por dia. Em relação ao comprimento, o ganho de 4 cm em dois meses (2 cm/mês) também está dentro da faixa esperada para o período (aproximadamente 3 cm/mês no primeiro trimestre). Portanto, o crescimento do bebê está adequado.\n\nANÁLISE DO HEMOGRAMA:\nO hemograma apresenta uma hemoglobina (Hb) de 10 g/dL em um lactente de 2 meses. Este achado é característico da Anemia Fisiológica do Lactente. Esse processo ocorre devido a três fatores principais: redução da vida média das hemácias neonatais, interrupção da eritropoiese pela elevada oferta de oxigênio aos tecidos após o nascimento (reduzindo a eritropoetina) e a rápida expansão do volume sanguíneo pelo crescimento corporal. O nadir (ponto mais baixo) da hemoglobina ocorre geralmente entre a 8ª e a 12ª semana de vida (2 a 3 meses), atingindo valores entre 9 e 11 g/dL em recém-nascidos a termo. O VCM de 96 fL é normal para a idade, já que as hemácias neonatais são macrocíticas e tendem a normalizar o tamanho progressivamente. A predominância de linfócitos (50%) sobre os segmentados (40%) é o padrão fisiológico esperado para esta faixa etária.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (CORRETA): O ganho de peso (800 g/mês) e de estatura estão condizentes com as curvas de crescimento para um lactente de 2 meses. A hemoglobina de 10 g/dL reflete o nadir fisiológico da série vermelha, não representando uma patologia, mas sim uma adaptação neonatal.\n\nAlternativa B (INCORRETA): O ganho de peso e de estatura está adequado, não inadequado. Além disso, a deficiência de vitamina B12 (anemia megaloblástica) causaria um VCM muito mais elevado e raramente se manifestaria de forma isolada aos 2 meses em bebê em aleitamento materno exclusivo, a menos que houvesse deficiência materna grave.\n\nAlternativa C (INCORRETA): O ganho de peso está adequado. A anemia por deficiência de ferro (ferropriva) é incomum aos 2 meses em lactentes a termo e com bom peso ao nascer, pois os estoques de ferro supridos pela mãe costumam durar até o 4º ou 6º mês de vida. Adicionalmente, a anemia ferropriva seria microcítica (VCM baixo), o que não condiz com o VCM de 96 fL apresentado.\n\nAlternativa D (INCORRETA): Embora o crescimento esteja adequado, não há evidências clínicas ou laboratoriais de hemólise. Na anemia hemolítica, esperar-se-ia um quadro de icterícia associado, além de alterações mais acentuadas no hemograma e possível reticulocitose. O valor de Hb de 10 g/dL aos 2 meses é perfeitamente explicado pela fisiologia do desenvolvimento.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Anemias",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  },
+  {
+    "id": "AJUDA_407e71b0-f835-4d34-bc31-c49324552418",
+    "originalId": "407e71b0-f835-4d34-bc31-c49324552418",
+    "statement": "Mulher, 28 anos, comparece à consulta por apresentar dismenorreia intensa, progressiva e dispareunia nos últimos anos. Relata que os sintomas pioram durante o fluxo menstrual. Qual é a melhor abordagem inicial para o tratamento dessa paciente, considerando a necessidade de alívio dos sintomas e a possibilidade de preservar sua fertilidade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento empírico com progestogênios contínuos, sem necessidade de confirmação diagnóstica por laparoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Uso de análogos do GnRH (hormônio liberador de gonadotrofinas) como primeira linha de tratamento para reduzir os níveis de estrogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realização de laparoscopia para confirmação diagnóstica e tratamento cirúrgico imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso de contraceptivos com pausa de 7 dias, após laparoscopia cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico de dismenorreia progressiva e dispareunia de profundidade em mulher jovem é clássico de endometriose. A abordagem moderna preconiza o controle dos sintomas álgicos e a preservação da fertilidade por meio do manejo clínico inicial, evitando procedimentos cirúrgicos invasivos de rotina.\n\nAlternativa A (Correta): De acordo com as diretrizes atuais (como FEBRASGO e ESHRE), a conduta inicial para pacientes com suspeita clínica de endometriose sem sinais de alarme é o tratamento clínico empírico. O uso de progestogênios isolados em regime contínuo (como o dienogeste ou medroxiprogesterona) induz anovulação, atrofia endometrial e redução da inflamação local, promovendo alívio sintomático eficaz sem a necessidade de laparoscopia prévia e sem comprometer a reserva ovariana.\n\nAlternativa B (Incorreta): Os análogos do GnRH são eficazes na supressão estrogênica, mas não constituem a primeira linha terapêutica. Eles são reservados como opções de segunda linha devido aos efeitos adversos associados ao hipoestrogenismo severo (fogachos, perda de densidade mineral óssea, secura vaginal) e ao alto custo.\n\nAlternativa C (Incorreta): A laparoscopia não é mais indicada rotineiramente como primeira abordagem apenas para confirmação diagnóstica. O tratamento cirúrgico imediato é invasivo e pode comprometer a reserva folicular ovariana (prejudicando a fertilidade futura). Fica reservado para casos refratários ao tratamento clínico, suspeita de malignidade ou complicações obstrutivas (trato urinário ou gastrointestinal).\n\nAlternativa D (Incorreta): O regime contraceptivo com pausa de 7 dias permite o sangramento por privação hormonal, o que pode desencadear episódios de dor pélvica e dismenorreia nessas pacientes, sendo preferível o uso contínuo. Além disso, a alternativa propõe erroneamente a realização prévia de laparoscopia cirúrgica.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  },
+  {
+    "id": "AJUDA_4080bad5-e3fd-4188-a11b-2914a76cb4e6",
+    "originalId": "4080bad5-e3fd-4188-a11b-2914a76cb4e6",
+    "statement": "Betina, 24 anos de idade , vem para consulta ginecológica com ausência de menstruação há 6 meses. Relata que vem passando por momentos muito estressantes em sua vida pesso e apresenta insônia/ irritabilidade. Realiza provas de triátlon e há 3 meses perdeu algumas competições importantes. Nega comorbidades e o exame físico e ginecológico foram normais. As dosagens hormonais resultaram FSH 4,26 mUI/mL (normal 7,7 – 21,5 mUI/mL), LH 5,68 mUI/mL (normal 11,4 – 95,6 mUI/mL) e Estradiol 3,28 pg/mL (normal 166 – 498 pg/mL). Sobre este caso, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "São exemplos de amenorreia hipotalâmica: amenorreia hipotalâmica funcional, a síndrome de Kalmann e a falência ovariana precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O teste de estrogênio positivo após teste de progesterona negativo pode ser compatível com valores de FSH acima de 40 mUI/mL e estradiol baixo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Em situações de estresse a corticotrofina provoca diminuição do GnRh e valores de altos de LH e FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A atleta em consequência à fadiga muscular há aumento de endorfinas pode apresentar aumento do fluxo menstrual, mas não amenorreia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta amenorreia secundária associada a estresse físico e emocional intenso (atleta de triatlo), com perfil laboratorial compatível com hipogonadismo hipogonadotrófico (FSH, LH e estradiol baixos). Esse cenário clínico e laboratorial é típico de amenorreia hipotalâmica funcional.\n\nAnálise das alternativas:\n\nAlternativa a (Incorreta): A falência ovariana precoce (ou insuficiência ovariana prematura) é uma causa ovariana (gonadal) de amenorreia, e não hipotalâmica. Nela, há elevação compensatória das gonadotrofinas (hipogonadismo hipergonadotrófico). Apenas a amenorreia hipotalâmica funcional e a síndrome de Kallmann são etiologias hipotalâmicas.\n\nAlternativa b (Correta): Na investigação diagnóstica da amenorreia secundária, o teste de estrogênio associado à progesterona avalia a integridade do trato de saída e a capacidade do endométrio de proliferar e descamar. Um teste positivo (com sangramento) após um teste de progesterona negativo confirma que o endométrio e o útero estão funcionais, mas que havia carência estrogênica prévia. A partir daí, a dosagem de FSH diferencia a causa dessa deficiência: valores de FSH elevados (acima de 40 mUI/mL) associados a estradiol baixo indicam insuficiência ovariana primária.\n\nAlternativa c (Incorreta): Em situações de estresse, ocorre ativação do eixo hipotálamo-hipófise-adrenal, elevando o hormônio liberador de corticotrofina (CRH) e o cortisol. Esses hormônios inibem a liberação pulsátil de GnRH pelo hipotálamo, o que resulta na diminuição dos níveis de LH e FSH, e não na sua elevação.\n\nAlternativa d (Incorreta): O exercício físico intenso e a fadiga muscular promovem aumento de endorfinas (opioides endógenos) e balanço energético negativo, os quais inibem diretamente a liberação de GnRH. Esse mecanismo suprime o eixo gonadal e leva à amenorreia (parte da tríade da mulher atleta), e não ao aumento do fluxo menstrual.\n\nGabarito: Letra b.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Ciclo Menstrual",
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  },
+  {
+    "id": "AJUDA_4082de18-cd97-4e8f-a70d-aac08c6d721b",
+    "originalId": "4082de18-cd97-4e8f-a70d-aac08c6d721b",
+    "statement": "Nulípara de 30 anos, com diagnóstico de lúpus eritematoso sistêmico e história recente de trombose venosa, apresenta ciclos menstruais prolongados de 8 a 10 dias, com intenso sangramento e cólicas fortes, busca orientação sobre métodos contraceptivos.\nConsiderando os critérios de elegibilidade para uso de anticoncepção e o quadro clínico, qual é a melhor opção de contracepção?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DIU de cobre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "DIU de levonorgestrel.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anticoncepcional injetável mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pílula anticoncepcional combinada contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A análise desta questão exige o conhecimento dos Critérios Médicos de Elegibilidade para Uso de Anticoncepcionais (OMS/FEBRASGO) e das características clínicas de cada método. A paciente apresenta dois desafios: um risco de segurança (história de trombose venosa e lúpus) e uma demanda terapêutica (controle de sangramento intenso e cólicas).\n\nAlternativa a) Incorreta. O DIU de cobre é um método não hormonal, sendo classificado como Categoria 1 (sem restrição) para pacientes com histórico de trombose. No entanto, seu principal efeito colateral é o aumento do volume do fluxo menstrual e a exacerbação de cólicas (dismenorreia). Como a paciente já apresenta ciclos de 8 a 10 dias com sangramento intenso e dor forte, o DIU de cobre agravaria os seus sintomas, sendo uma escolha clinicamente inadequada para este perfil.\n\nAlternativa b) Correta. O DIU de levonorgestrel (SIU-LNG) é a melhor opção porque atende a ambas as necessidades da paciente. Primeiro, em termos de segurança, métodos contendo apenas progestagênios são permitidos para mulheres com histórico de trombose venosa (Categoria 2), enquanto o estrogênio é proibido. Segundo, o levonorgestrel promove a atrofia do endométrio, sendo o tratamento padrão-ouro para o controle do sangramento uterino anormal e redução da dismenorreia, o que resolveria as queixas clínicas da paciente.\n\nAlternativa c) Incorreta. O anticoncepcional injetável mensal é um método combinado, o que significa que contém estrogênio em sua formulação. O uso de estrogênio é formalmente contraindicado (Categoria 4 – risco inaceitável) para mulheres com antecedente de trombose venosa ou portadoras de lúpus eritematoso sistêmico com anticorpos antifosfolípides (pelo risco aumentado de novos eventos vasculares).\n\nAlternativa d) Incorreta. A pílula anticoncepcional combinada, mesmo se utilizada de forma contínua, contém estrogênio. Assim como no caso do injetável mensal, a presença do estrogênio representa uma contraindicação absoluta (Categoria 4) devido ao histórico de trombose venosa da paciente. O fato de ser contínua ajudaria nos sintomas menstruais, mas o risco de um novo evento tromboembólico fatal contraindica o método.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 33.21790850427756,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  },
+  {
+    "id": "AJUDA_408396bd-883a-458f-9a98-e461d1558d03",
+    "originalId": "408396bd-883a-458f-9a98-e461d1558d03",
+    "statement": "Um pesquisador sergipano realizou um estudo em 2024 para determinar o número total de casos de Diabetes Mellitus tipo 2 em uma população adulta com 10 mil habitantes de um bairro de Aracaju. O resultado encontrado foi de 800 casos já existentes na data do estudo. Essa medida epidemiológica é um(a):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Risco relativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Razão de Chances (Odds Ratio).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prevalência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Taxa de Mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental diferenciar os conceitos básicos de bioestatística e epidemiologia descritiva, especificamente as medidas de frequência de doenças.\n\nO enunciado descreve a identificação do número total de casos existentes de uma patologia (diabetes mellitus tipo 2) em um ponto específico no tempo (ano de 2024) dentro de uma população definida (10.000 habitantes). Quando olhamos para o estoque de doentes em um determinado momento, estamos tratando de prevalência.\n\nAlternativa (a) Incorreta. O Risco Relativo é uma medida de associação, e não de frequência. Ele é utilizado em estudos longitudinais (como coortes e ensaios clínicos) para comparar a probabilidade de um evento ocorrer em um grupo exposto a um fator de risco em relação a um grupo não exposto.\n\nAlternativa (b) Incorreta. A Razão de Chances (Odds Ratio) também é uma medida de associação, muito utilizada em estudos de caso-controle. Ela estabelece a razão entre a chance de um indivíduo doente ter sido exposto a um fator e a chance de um indivíduo sadio ter sido exposto a esse mesmo fator.\n\nAlternativa (c) Correta. A Prevalência é a medida epidemiológica que indica a proporção de pessoas que apresentam uma doença em um momento ou período específico. Ela funciona como uma fotografia ou um estoque da situação de saúde. No caso apresentado, o cálculo seria: 800 casos existentes divididos por 10.000 habitantes, resultando em uma prevalência de 8% naquela população em 2024.\n\nAlternativa (d) Incorreta. A Incidência mede o número de casos novos que surgem em uma população anteriormente sadia (em risco) ao longo de um intervalo de tempo. Enquanto a prevalência foca nos casos já existentes, a incidência foca na velocidade de surgimento de novos diagnósticos. O enunciado é explícito ao citar \"casos já existentes\".\n\nAlternativa (e) Incorreta. A Taxa de Mortalidade mede a frequência de óbitos em uma população específica durante um período de tempo. O estudo em questão busca determinar o número de pessoas vivendo com a doença (morbidade), e não o número de mortes causadas por ela.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  },
+  {
+    "id": "AJUDA_408647c5-73ce-480c-bd3c-e1688f7926f2",
+    "originalId": "408647c5-73ce-480c-bd3c-e1688f7926f2",
+    "statement": "Preencha corretamente as lacunas com os nomes dos fármacos associados às seguintes descrições:\n__________ 1: Antibiótico macrolídeo de meia-vida longa, com alta penetração intracelular, que se liga à subunidade 50S do ribossomo e é usado em pneumonias atípicas e uretrite por Chlamydia trachomatis.\n__________ 2: Cefalosporina de 3ª geração com boa penetração no LCR e eliminação predominantemente biliar, indicada em meningite bacteriana e gonorreia.\nAs lacunas são corretamente preenchidas, respectivamente, por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "claritromicina, cefazolina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "eritromicina, meropenem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doxiciclina, cefepima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "roxitromicina, piperacilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "azitromicina, ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise da Lacuna 1:\nO fármaco descrito é a azitromicina. Ela é um macrolídeo que se diferencia dos demais (como eritromicina e claritromicina) por possuir uma meia-vida extremamente longa (aproximadamente 68 horas), o que permite regimes posológicos de dose única ou poucos dias de tratamento. Age ligando-se à subunidade 50S do ribossomo bacteriano, impedindo a síntese proteica. Sua alta penetração intracelular a torna ideal para o tratamento de patógenos intracelulares como a Chlamydia trachomatis (em casos de uretrite) e germes atípicos causadores de pneumonia (como Mycoplasma pneumoniae e Legionella pneumophila).\n\nAnálise da Lacuna 2:\nO fármaco é a ceftriaxona. Trata-se de uma cefalosporina de 3ª geração que apresenta excelente penetração na barreira hematoencefálica quando as meninges estão inflamadas, sendo pilar no tratamento das meningites bacterianas. Uma característica farmacocinética marcante é sua eliminação significativa por via biliar (cerca de 40% a 50%), além da renal. É também o tratamento de escolha para a gonorreia causada pela Neisseria gonorrhoeae.\n\nAnálise das alternativas:\n\na) Incorreta. A claritromicina é um macrolídeo, mas sua meia-vida é consideravelmente menor que a da azitromicina. A cefazolina é uma cefalosporina de 1ª geração, usada principalmente para profilaxia cirúrgica e infecções de pele, não possuindo penetração no LCR para tratar meningite.\n\nb) Incorreta. A eritromicina é o macrolídeo de primeira geração, com meia-vida curta e alta frequência de efeitos colaterais gastrointestinais. O meropenem é um carbapenêmico, não uma cefalosporina de 3ª geração.\n\nc) Incorreta. A doxiciclina pertence à classe das tetraciclinas e atua na subunidade 30S do ribossomo, não na 50S. O cefepime é uma cefalosporina de 4ª geração.\n\nd) Incorreta. A roxitromicina é um macrolídeo, mas a piperacilina é uma penicilina de amplo espectro (antipseudomonas), não uma cefalosporina.\n\ne) Correta. A azitromicina atende perfeitamente à descrição da primeira lacuna (macrolídeo, meia-vida longa, ação na 50S, cobertura para atípicos e clamídia). A ceftriaxona atende perfeitamente à segunda lacuna (cefalosporina de 3ª geração, penetração no LCR, eliminação biliar e uso em meningite/gonorreia).",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Antibióticos"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  },
+  {
+    "id": "AJUDA_4087aa97-8c27-4923-a371-f1d68adab3bb",
+    "originalId": "4087aa97-8c27-4923-a371-f1d68adab3bb",
+    "statement": "Lídia é usuária de uma UBS, tem 65 anos de idade, e faz acompanhamento de diabetes mellitus. Apresenta um abscesso na axila há 3 dias. Jonas, de 38 anos de idade, tem um lipoma na região do dorso e não tem outros pro blemas de saúde. Leo, de 28 anos de idade, está com cerúmen. Todos apresentam bom estado geral. Assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A drenagem do abscesso, a exerese do lipoma e a retirada do cerúmen podem ser realizadas na UBS, pois se tratam de procedimentos previstos para a Atenção Primária de Saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Embora todos os procedimentos possam ser feitos na UBS, Lídia deve ser encaminhada para um serviço especializado, pois é diabética e idosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A exerese de um lipoma, como no caso de Jonas, exige recursos inexistentes em uma UBS e deve ser feita sempre em serviço especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A exerese do lipoma e a lavagem auricular para retirada do cerúmen devem ser feitas em serviços especializados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Questão:\nO tema central desta questão é o escopo de procedimentos realizados na Atenção Primária à Saúde (APS). O objetivo é avaliar se o médico reconhece a Unidade Básica de Saúde (UBS) como um local resolutivo para procedimentos de baixa complexidade cirúrgica e clínica, fundamentais para garantir a acessibilidade e a integralidade do cuidado.\n\nAlternativa (a): Correta. A drenagem de abscesso, a exérese de lipoma e a remoção de cerúmen são procedimentos ambulatoriais de baixa complexidade que compõem a carteira de serviços recomendada para a Atenção Primária no Brasil. A realização desses atos na própria UBS é um exemplo da resolutividade deste nível de atenção, evitando filas desnecessárias em serviços de atenção secundária. Todos os pacientes descritos estão em bom estado geral, o que reforça a segurança para a execução dos procedimentos no ambiente ambulatorial da UBS.\n\nAlternativa (b): Incorreta. O fato de Lídia ser idosa e diabética exige um olhar atento quanto ao controle glicêmico e à monitorização da cicatrização, mas não é uma contraindicação para a drenagem de um abscesso simples na UBS. O encaminhamento para serviço especializado apenas por essas condições, sem sinais de gravidade ou complicações sistêmicas, fere o princípio da resolutividade da APS e sobrecarrega o sistema de saúde.\n\nAlternativa (c): Incorreta. A exérese de lipoma é classificada como uma pequena cirurgia cutânea. Os recursos necessários incluem basicamente kit de pequena cirurgia (porta-agulhas, tesouras, pinças e bisturi), anestésico local, material de sutura e técnica asséptica. Tais recursos são padronizados para o funcionamento de uma Unidade Básica de Saúde e não exigem suporte de serviços especializados.\n\nAlternativa (d): Incorreta. A lavagem auricular para retirada de cerúmen é um procedimento de rotina na APS, frequentemente realizado de forma rápida e segura. Assim como a exérese de lipoma, não há necessidade de encaminhamento para especialistas focais (como o otorrinolaringologista ou o cirurgião geral) se o quadro for simples e o profissional da APS estiver capacitado para o procedimento.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  },
+  {
+    "id": "AJUDA_408f603b-a749-4a7c-be70-55ea4e37e1f0",
+    "originalId": "408f603b-a749-4a7c-be70-55ea4e37e1f0",
+    "statement": "Gestante de 39 semanas chega em franco trabalho de parto ao centro obstétrico. Em sua carteira de pré-natal, consta resultado positivo para triagem de HTLV (teste ELISA) no segundo trimestre gestacional. As demais sorologias eram não reagentes. Considerando o caso apresentado, qual é a medida mais eficaz para prevenir a infecção do neonato pelo HTLV?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar parto por cesariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orientar o clampeamento imediato do cordão umbilical após o nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever zidovudina solução oral nos primeiros 28 dias do neonato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Contraindicar o aleitamento materno.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O HTLV (Vírus T-linfotrópico humano) é um retrovírus cuja principal via de transmissão vertical ocorre durante o período pós-natal, por meio do aleitamento materno, devido à presença de linfócitos infectados no leite materno. A transmissão intrauterina e intraparto é infrequente. Dessa forma, evitar a amamentação é a estratégia preventiva isolada de maior eficácia, reduzindo o risco de transmissão em cerca de 80% a 90%.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Ao contrário do que ocorre no manejo do HIV com carga viral elevada, a cesariana eletiva não reduz significativamente o risco de transmissão vertical do HTLV. A via de parto deve ser definida exclusivamente por indicações obstétricas.\n\nAlternativa b: Incorreta. O clampeamento imediato do cordão umbilical tem papel na redução de transfusão feto-materna em infecções como HIV e hepatites, mas não é a medida mais eficaz para o HTLV, pois o principal mecanismo de infecção neonatal ocorre pós-parto, pela ingestão do leite.\n\nAlternativa c: Incorreta. O uso de zidovudina (AZT) em solução oral para o neonato faz parte do protocolo de prevenção da transmissão vertical do HIV. Não existe recomendação ou evidência de benefício no uso de antirretrovirais profiláticos para recém-nascidos expostos ao HTLV.\n\nAlternativa d: Correta. A contraindicação formal e total do aleitamento materno (assim como a doação de leite ou amamentação cruzada), associada à alimentação do neonato com fórmula infantil, é a medida mais eficaz e a recomendação padrão das diretrizes do Ministério da Saúde para puérperas com HTLV.\n\nGabarito: Alternativa d.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Aleitamento Materno",
+      "Infecções Congênitas",
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:42.383Z"
+  }
+]

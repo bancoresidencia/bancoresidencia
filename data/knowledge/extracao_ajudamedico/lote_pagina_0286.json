@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_4f4a8030-916e-4da0-8e67-6e64c093c517",
+    "originalId": "4f4a8030-916e-4da0-8e67-6e64c093c517",
+    "statement": "Você está no pronto-socorro e subitamente a avó grita que o neto dela de 5 anos desmaiou e ela pede por ajuda. Ao exame físico, a impressão inicial é de uma criança sem respiração e sem pulso, configurando parada cardiorrespiratória (PCR). Nesse caso, a conduta apropriada, de acordo com as normas da AHA, é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar imediatamente a ressuscitação cardiorrespiratória pelas compressões torácicas, solicitar monitorização.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar monitorização oxigênio e veia, porque é a primeira medida a ser realizada em qualquer paciente gravemente enfermo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Checar a responsividade, chamar por ajuda e palpar o pulso central e a respiração simultaneamente por no mínimo 5 e no máximo 10 segundos; se o pulso estiver ausente e a criança não respirar ou na presença de gasping, chamar por ajuda e pedir ao DEA para iniciar as compressões torácicas e respiração boca a boca (30:2).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar imediatamente ventilação com pressão positiva e depois as compressões torácicas, considerando que a principal causa de PCR em pediatria é a hipóxia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Checar a responsividade, chamar por ajuda e palpar o pulso central e a respiração simultaneamente por no mínimo 5 e no máximo 10 segundos; se o pulso estiver ausente e a criança não respirar ou na presença de gasping, chamar por ajuda e pedir ao DEA para iniciar as compressões torácicas e respiração boca a boca (15:2).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nPara responder a essa questão com precisão, é necessário seguir as diretrizes da American Heart Association (AHA) para Suporte Básico de Vida (BLS) e Suporte Avançado de Vida em Pediatria (PALS). O ponto crucial do enunciado é que o diagnóstico de parada cardiorrespiratória (PCR) já foi estabelecido durante o exame físico inicial (ausência de respiração e de pulso).\n\nAlternativa a: Esta é a alternativa correta. De acordo com os protocolos atuais, uma vez identificada a PCR, a intervenção deve ser imediata. A sequência recomendada é a C-A-B (Compressões, Via Aérea e Ventilação). Portanto, o profissional deve iniciar as compressões torácicas de alta qualidade sem atrasos. No ambiente de pronto-socorro, a solicitação de monitorização, desfibrilador e auxílio da equipe deve ocorrer simultaneamente ao início das manobras de ressuscitação.\n\nAlternativa b: Incorreta. O protocolo MOV (Monitorização, Oxigênio e Veia) é a abordagem inicial para pacientes críticos que ainda apresentam sinais de circulação espontânea (estáveis ou instáveis). Na vigência de uma PCR confirmada, as manobras de reanimação cardiopulmonar têm prioridade absoluta sobre a monitorização formal ou a obtenção de acesso venoso.\n\nAlternativa c: Incorreta. Esta alternativa descreve as etapas de verificação e diagnóstico (checar responsividade, pulso e respiração), que o enunciado já informa terem sido realizadas. Além disso, para profissionais de saúde em ambiente hospitalar ou com dois socorristas, a relação compressão-ventilação correta em pediatria é de 15:2, e não 30:2. Outro erro conceitual é dizer que o DEA inicia compressões; o DEA apenas analisa o ritmo e indica o choque, enquanto as compressões são feitas pelo socorrista.\n\nAlternativa d: Incorreta. Embora a hipóxia (causa respiratória) seja a principal etiologia da PCR em crianças, a AHA padronizou a sequência C-A-B para todos os pacientes desde 2010. O objetivo é reduzir o tempo até a primeira compressão e garantir a perfusão de órgãos vitais. A ventilação com pressão positiva só seria a primeira medida em casos de reanimação neonatal em sala de parto.\n\nAlternativa e: Incorreta. Assim como na alternativa c, o texto foca em etapas de avaliação que já foram superadas, conforme o enunciado. Se o médico já constatou a ausência de pulso e respiração, a conduta correta é iniciar as compressões imediatamente. Reavaliar o que já foi diagnosticado gera atraso no início da ressuscitação, o que reduz as chances de sobrevivência do paciente. Além disso, a frase final sobre o DEA iniciar as compressões está incorreta.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  },
+  {
+    "id": "AJUDA_4f4c7efc-0e87-488e-803c-96c57b3899ac",
+    "originalId": "4f4c7efc-0e87-488e-803c-96c57b3899ac",
+    "statement": "Paciente do sexo masculino, 54 anos, casado, procurou serviço de endocrinologia com queixa de diminuição de libido associada à disfunção erétil, humor deprimido e sensação de falta de energia. Foram solicitados exames gerais e para avaliação do eixo hipotálamo-hipófise-gonadal.\n\nDe acordo com os guidelines da Endocrine Society, qual ponto de corte define baixo nível de testosterona total?",
+    "options": [
+      {
+        "id": "A",
+        "text": "150 ng/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "201 ng/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "264 ng/dl.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "300 ng/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o diagnóstico laboratorial do hipogonadismo masculino, especificamente o ponto de corte da testosterona total recomendado pela Endocrine Society (Sociedade Americana de Endocrinologia).\n\nAlternativa A: Incorreta. O valor de 150 ng/dL representa um nível severamente baixo de testosterona, indicando uma deficiência androgênica profunda. No entanto, ele não é utilizado como o limite superior para definir a normalidade ou para o rastreio inicial do hipogonadismo nas diretrizes clínicas.\n\nAlternativa B: Incorreta. O valor de 201 ng/dL não é reconhecido por nenhuma das principais sociedades internacionais (como a Endocrine Society, AUA ou ISA) como um ponto de corte técnico para a definição de baixos níveis de testosterona.\n\nAlternativa C: Correta. De acordo com o guideline de 2018 da Endocrine Society, o ponto de corte para definir a testosterona total baixa é 264 ng/dL (9,2 nmol/L). Este valor foi estabelecido com base em estudos de harmonização de amostras de homens jovens, saudáveis e não obesos, utilizando o programa de padronização hormonal do CDC (Centers for Disease Control and Prevention). Para o diagnóstico definitivo de hipogonadismo, a diretriz recomenda a presença de sintomas clínicos associados a níveis consistentemente abaixo deste valor em pelo menos duas dosagens realizadas pela manhã, em jejum.\n\nAlternativa D: Incorreta. O valor de 300 ng/dL é comumente utilizado em diretrizes da American Urological Association (AUA) e era o padrão em recomendações mais antigas da própria Endocrine Society. Contudo, a atualização mais recente da Endocrine Society especifica o valor de 264 ng/dL como o limite inferior da normalidade baseado na padronização laboratorial atual.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Hipófise"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  },
+  {
+    "id": "AJUDA_4f53654b-9a08-4926-adad-f3b4ea2203aa",
+    "originalId": "4f53654b-9a08-4926-adad-f3b4ea2203aa",
+    "statement": "Primigesta, 28 anos, com 40 semanas e 2 dias de gestação, comparece ao hospital em trabalho de parto. Relata contrações uterinas regulares há 6 horas, com intervalos de 3 minutos e duração média de 60 segundos. Ao exame obstétrico, verifica-se dilatação cervical de 4 cm, esvaecimento (apagamento) completo do colo e bolsa íntegra. O líquido amniótico é claro, com grumos. A paciente está hemodinamicamente estável e sem sinais de sofrimento fetal. Após 4 horas de evolução, observa-se que a dilatação cervical permanece em 4 cm, apesar da manutenção das contrações regulares. Qual é a conduta mais adequada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar amniotomia para acelerar o trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar ocitocina para aumentar a intensidade das contrações uterinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diagnosticar como fase latente prolongada e aguardar evolução espontânea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Diagnosticar como trabalho de parto estacionado e indicar cesariana imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO ponto central da questão é o reconhecimento dos limites entre a fase latente e a fase ativa do primeiro período do trabalho de parto. Pelas diretrizes obstétricas contemporâneas (Organização Mundial da Saúde, Ministério da Saúde e ACOG), a fase ativa do trabalho de parto se inicia apenas a partir de 5 cm (ou 6 cm em alguns consensos) de dilatação cervical associada a contrações regulares. Como a paciente apresenta 4 cm de dilatação, ela ainda se encontra na fase latente. A ausência de evolução da dilatação por 4 horas durante a fase latente não configura distocia de dilatação ou falha de progressão, sendo a conduta expectante a mais adequada.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A amniotomia precoce na fase latente não demonstrou benefício clínico consistente na redução do tempo até o parto e acarreta riscos adicionais, como infecção intra-amniótica, prolapso de cordão e compressão funicular. O procedimento deve ser reservado para indicações específicas na fase ativa.\n\nAlternativa b: Incorreta. A paciente já apresenta uma dinâmica uterina eficiente e adequada (contrações a cada 3 minutos durando 60 segundos). O uso de ocitocina nesse contexto é desnecessário e eleva o risco de taquissistolia uterina e sofrimento fetal agudo.\n\nAlternativa c: Correta. A dilatação cervical de 4 cm mantém a paciente na fase latente do trabalho de parto. A fase latente tem duração variável (frequentemente ultrapassando 14 a 20 horas em primigestas) e variações na velocidade de dilatação são fisiológicas. Com vitalidade fetal preservada e estabilidade materna, a conduta é expectante, aguardando a evolução espontânea para a fase ativa com suporte e medidas de conforto.\n\nAlternativa d: Incorreta. Os diagnósticos de parada secundária da dilatação ou trabalho de parto obstruído/estacionado só podem ser firmados quando a paciente já se encontra na fase ativa (dilatação maior ou igual a 5 cm). Indicar cesariana na fase latente sem sinais de sofrimento fetal constitui indicação cirúrgica precoce e iatrogênica.\n\nGabarito: Letra c.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Partograma e Distocias",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  },
+  {
+    "id": "AJUDA_4f5aa132-4e97-4b33-b77e-b4429ac4294f",
+    "originalId": "4f5aa132-4e97-4b33-b77e-b4429ac4294f",
+    "statement": "Que sinal, dentre os abaixo, em um paciente adulto com insuficiência respiratória aguda, exige a avaliação imediata de via aérea para possível intubação orotraqueal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retração da musculatura intercostal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Taquipneia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sibilos expiratórios",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipocratismo digital",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A insuficiência respiratória aguda (IRA) é uma emergência médica em que o sistema respiratório falha em manter a oxigenação e/ou a ventilação adequadas. A decisão de realizar a intubação orotraqueal baseia-se na avaliação clínica do esforço respiratório, na proteção das vias aéreas e na resposta ao tratamento inicial.\n\nLetra a) Correta. A retração da musculatura intercostal, também conhecida como tiragem, é um sinal de uso intenso da musculatura acessória. Isso indica que o trabalho respiratório está muito elevado e que o paciente está em risco iminente de fadiga muscular e parada respiratória. Em um contexto de insuficiência respiratória aguda, a presença de tiragem é um marcador de gravidade extrema que exige avaliação imediata para suporte ventilatório invasivo, visando poupar a musculatura e garantir a ventilação.\n\nLetra b) Incorreta. A taquipneia (aumento da frequência respiratória) é um sinal clínico comum e precoce de estresse respiratório ou de compensação de outras desordens (como febre, dor ou acidose metabólica). Embora seja um dado importante, a taquipneia isolada não é uma indicação mandatória de intubação imediata, devendo ser avaliada em conjunto com a gasometria e a evolução clínica do paciente sob oxigenoterapia.\n\nLetra c) Incorreta. Sibilos expiratórios são ruídos adventícios que indicam estreitamento das vias aéreas inferiores, geralmente por broncoespasmo (como na asma ou DPOC). O manejo inicial desses casos é preferencialmente medicamentoso, com o uso de broncodilatadores e corticoides. A intubação só é considerada se houver falha no tratamento clínico ou sinais de exaustão respiratória (tórax silencioso).\n\nLetra d) Incorreta. O hipocratismo digital, ou baqueteamento digital, caracteriza-se pelo aumento da extremidade dos dedos e pela alteração do ângulo da unha. Este é um sinal de doença crônica, frequentemente associado a patologias como câncer de pulmão, fibrose pulmonar ou cardiopatias congênitas cianóticas. Por ser um achado de longa duração, ele não tem relevância para a decisão de intubação em um cenário de emergência aguda.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pneumologia Intensiva",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  },
+  {
+    "id": "AJUDA_4f5eb4a3-9b98-4bf1-878e-03347839e613",
+    "originalId": "4f5eb4a3-9b98-4bf1-878e-03347839e613",
+    "statement": "Criança, 10 anos de idade, refugiada, é atendida no pronto-socorro apresentando febre e deficiência motora flácida de início súbito. A situação vacinal é ignorada. Considerando a(s) hipótese(s) diagnóstica(s) mais provável(eis), a conduta adequada neste momento, em relação à vigilância epidemiológica, é notificar o caso às autoridades de saúde:",
+    "options": [
+      {
+        "id": "A",
+        "text": "após resultado positivo da cultura de líquor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "após resultado positivo da cultura de fezes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "em até 24 horas após o atendimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "após resultado positivo da cultura de fezes e líquor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta uma criança de 10 anos, com histórico vacinal desconhecido, que manifesta febre e paralisia motora flácida aguda. Diante desse quadro em um paciente com menos de 15 anos, a principal suspeita clínica é a paralisia flácida aguda (PFA), cujo diagnóstico diferencial obrigatoriamente inclui a poliomielite, especialmente considerando o contexto de paciente refugiado (vulnerabilidade e risco epidemiológico).\n\nA paralisia flácida aguda é uma síndrome de notificação compulsória imediata em todo o território nacional. O objetivo dessa vigilância rigorosa é manter a erradicação da poliomielite no Brasil, identificando precocemente qualquer caso suspeito para medidas de bloqueio e investigação.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A notificação de doenças sob vigilância epidemiológica rigorosa, como a PFA/poliomielite, deve ser feita com base na suspeita clínica, e não após confirmação laboratorial. Aguardar o resultado de exames para notificar atrasa as medidas de saúde pública necessárias. Além disso, a cultura de líquor não é o exame padrão para o diagnóstico de poliomielite.\n\nAlternativa b) Incorreta. Embora a coleta de fezes seja o padrão-ouro para o diagnóstico viral na investigação de PFA (preferencialmente nos primeiros 14 dias do início do déficit motor), a notificação deve ocorrer no momento da suspeita clínica, sem aguardar o processamento e resultado laboratorial.\n\nAlternativa c) Correta. Por se tratar de uma doença de notificação compulsória imediata, o prazo estabelecido pelo Ministério da Saúde para comunicar o caso às autoridades sanitárias (municipais, estaduais ou federais) é de até 24 horas a partir do atendimento ou suspeita diagnóstica. Isso permite o início imediato da investigação de campo e a coleta oportuna de amostras.\n\nAlternativa d) Incorreta. Assim como nas alternativas a e b, a notificação não deve ser condicionada a resultados laboratoriais. A vigilância epidemiológica trabalha com a definição de \"caso suspeito\" para disparar o gatilho da notificação, visando à rapidez na resposta do sistema de saúde.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  },
+  {
+    "id": "AJUDA_4f65c97d-ff96-458b-949f-11fc559e2d36",
+    "originalId": "4f65c97d-ff96-458b-949f-11fc559e2d36",
+    "statement": "Mulher, 47 anos de idade, antecedente de colelitíase, dá entrada no PS com queixa de dor epigástrica há 8 horas. Exame físico: estável hemodinamicamente, com abdômen distendido, doloroso difusamente no andar superior e DB negativa. Exames laboratoriais: leucograma 14.120 células/mm³ (80% de neutrófilos), PCR 32 mcg/dL e amilase 1.340 mcg/dL. Qual é a conduta nutricional mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dieta oral após melhora da dor e da amilase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dieta oral entre 24 a 48 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dieta enteral por sonda pós-pilórica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dieta parenteral por acesso venoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa paciente apresenta um quadro clínico clássico de pancreatite aguda de origem biliar (pelo antecedente de colelitíase e elevação significativa da amilase). Para definir a conduta nutricional, devemos primeiro classificar a gravidade do quadro. Como ela está hemodinamicamente estável e sem sinais de peritonite (DB negativa), trata-se, inicialmente, de uma pancreatite leve.\n\nAnálise das alternativas:\n\na) Incorreta. Antigamente, acreditava-se que era necessário aguardar a normalização das enzimas pancreáticas (amilase e lipase) e a resolução completa da dor para reiniciar a dieta. No entanto, as evidências atuais mostram que os níveis de amilase não têm correlação com a gravidade da doença ou com a tolerância à dieta. Esperar a normalização laboratorial prolonga desnecessariamente o jejum.\n\nb) Correta. Em casos de pancreatite aguda leve, as diretrizes internacionais (como as da Associação Internacional de Pancreatologia e da American Gastroenterological Association) recomendam o reinício precoce da dieta oral, geralmente dentro das primeiras 24 a 48 horas, assim que o paciente apresentar melhora clínica da dor e do apetite. A nutrição precoce ajuda a manter a barreira intestinal, prevenindo a translocação bacteriana e reduzindo complicações infecciosas e o tempo de internação.\n\nc) Incorreta. A dieta enteral por sonda (seja gástrica ou pós-pilórica) é reservada para casos de pancreatite grave, nos quais o paciente não tolera a via oral, ou quando a internação se prolonga além de 48-72 horas sem perspectiva de alimentação espontânea. Não há indicação inicial de sonda para uma paciente estável e com provável quadro leve.\n\nd) Incorreta. A nutrição parenteral deve ser a última opção, utilizada apenas quando a via oral e a via enteral não são possíveis ou falharam. Ela está associada a um maior risco de complicações infecciosas (sepse por cateter) e à atrofia da mucosa intestinal, não sendo indicada no manejo inicial da pancreatite aguda.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica",
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  },
+  {
+    "id": "AJUDA_4f6aadda-9206-483e-ab69-bcf72a6270f0",
+    "originalId": "4f6aadda-9206-483e-ab69-bcf72a6270f0",
+    "statement": "29. Na Doença de Addison, as características clínicas encontradas incluem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hiponatremia, hipercalemia, hipotensão arterial e hiperpigmentação cutânea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "hipernatremia, alcalose metabólica e hipertensão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ganho ponderal, obesidade centrípeta e estrias violáceas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hiperglicemia persistente, pele fina e fraqueza muscular proximal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "excesso de cortisol sérico, com supressão de ACTH e perda ponderal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Doença de Addison, ou insuficiência adrenal primária, decorre da destruição do córtex da glândula adrenal, levando à deficiência de glicocorticoides (cortisol), mineralocorticoides (aldosterona) e androgênios.\n\nAlternativa (a): Correta. Esta alternativa descreve perfeitamente o quadro clínico-laboratorial da doença. A deficiência de aldosterona impede a reabsorção de sódio e a secreção de potássio nos túbulos renais, resultando em hiponatremia e hipercalemia. A perda de sódio e água, somada à falta do efeito permissivo do cortisol nas catecolaminas, causa hipotensão arterial. Além disso, a queda do cortisol retira o feedback negativo sobre a hipófise, gerando um aumento compensatório do ACTH. Como o ACTH e o hormônio estimulador de melanócitos (MSH) derivam da mesma molécula precursora (POMC), níveis elevados de ACTH estimulam os melanócitos, causando a hiperpigmentação cutânea característica.\n\nAlternativa (b): Incorreta. A hipernatremia, a alcalose metabólica e a hipertensão arterial são achados típicos do hiperaldosteronismo (como a Síndrome de Conn), que é o oposto funcional da Doença de Addison no que diz respeito aos mineralocorticoides.\n\nAlternativa (c): Incorreta. Ganho ponderal, obesidade centrípeta e estrias violáceas são sinais clássicos da Síndrome de Cushing (hipercortisolismo). Na Doença de Addison, ocorre justamente o contrário: perda ponderal acentuada e anorexia.\n\nAlternativa (d): Incorreta. A hiperglicemia e a pele fina (atrofia cutânea) são características do excesso de cortisol (Síndrome de Cushing). Pacientes com Addison têm tendência à hipoglicemia devido à falta do cortisol, que é um hormônio contrarregulador da insulina. Embora a fraqueza muscular possa ocorrer em ambas, o conjunto da alternativa aponta para o hipercortisolismo.\n\nAlternativa (e): Incorreta. A alternativa descreve uma contradição. A Doença de Addison caracteriza-se pela deficiência (e não excesso) de cortisol sérico. Por ser uma patologia primária da glândula, o ACTH estará elevado por falta de retroalimentação negativa, e não suprimido. A supressão de ACTH com baixo cortisol ocorreria na insuficiência adrenal secundária (hipofisária).",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  },
+  {
+    "id": "AJUDA_4f82c82b-7a99-49e8-b5c5-8596458204b5",
+    "originalId": "4f82c82b-7a99-49e8-b5c5-8596458204b5",
+    "statement": "Em um estudo epidemiológico, o intervalo de confiança de 95% para o risco relativo foi de 0,8 a 1,2.\nEsse resultado indica que",
+    "options": [
+      {
+        "id": "A",
+        "text": "há associação estatisticamente significativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o valor nulo está dentro do intervalo; logo, não há significância estatística.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a probabilidade de erro tipo II é de 5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a hipótese nula está comprovadamente correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a amostra não permite qualquer interpretação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O intervalo de confiança (IC) é fundamental para determinar a significância estatística de um resultado em epidemiologia. Para medidas de razão, como o Risco Relativo (RR) e a Razão de Chances (OR), o valor nulo (que indica ausência de diferença ou associação entre os grupos) é o número 1,0.\n\nAnálise das alternativas:\n\na) Incorreta. Para que houvesse significância estatística, o intervalo de confiança não poderia incluir o valor 1,0. Quando o intervalo cruza a unidade (1,0), como no caso de 0,8 a 1,2, dizemos que o resultado não é estatisticamente significativo para um nível de confiança de 95%.\n\nb) Correta. O valor nulo para o Risco Relativo é 1,0. Como o intervalo vai de 0,8 até 1,2, o número 1,0 está contido dentro desse intervalo. Isso demonstra que, do ponto de vista estatístico, o risco pode ser igual a 1 (sem diferença entre os grupos), invalidando a hipótese de uma associação real no nível de confiança adotado.\n\nc) Incorreta. Um IC de 95% está relacionado ao nível de significância (alfa) de 5%, que representa a probabilidade de erro tipo I. O erro tipo II (beta) está relacionado ao poder estatístico do estudo e não pode ser determinado apenas por essa informação do intervalo de confiança.\n\nd) Incorreta. Na ciência e na estatística, não se diz que a hipótese nula está \"comprovadamente correta\". O que ocorre é que \"falhamos em rejeitar a hipótese nula\". Além disso, a falta de significância pode ser apenas reflexo de uma amostra pequena (baixo poder do estudo) e não da inexistência real de efeito.\n\ne) Incorreta. A amostra permite, sim, uma interpretação clara: os dados obtidos não fornecem evidência estatística suficiente para afirmar que existe associação entre a exposição e o desfecho estudado, pois o resultado é compatível com o acaso.\n\nGabarito: Letra (b).",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  },
+  {
+    "id": "AJUDA_4f864d77-349f-486a-8d52-608f0645ca42",
+    "originalId": "4f864d77-349f-486a-8d52-608f0645ca42",
+    "statement": "Mulher, 28 anos de idade, 2G1A, com 10 semanas de gestação, procura pronto atendimento por vômitos persistentes há 10 dias, com dificuldade para manter líquidos e alimentos. Refere dor abdominal discreta e perda de 5 kg no período. Nega febre e perdas vaginais. Traz cartão de pré-natal com rotina de exames sem alterações. Relata ter iniciado dimenidrinato oral há cerca de 5 dias, prescrito em outro serviço, mas sem melhora significativa dos sintomas. Ao exame físico, apresenta-se em BEG, PA de 100×60 mmHg, FC de 104 bpm, mucosa oral levemente seca. Abdome flácido, levemente doloroso em epigástrio, sem visceromegalias.\n\n• Exames laboratoriais:\nTGO/AST: 58 U/L\nTGP/ALT: 65 U/L\nBilirrubina total: 0,9 mg/dL\nβ-hCG: 215.000 mUI/mL\nUrina tipo 1: cetonúria ++/4+\nTSH: 0,05 mUI/L\nT4 livre: 1,1 ng/dL\n\nAssinale a alternativa que apresenta a interpretação e conduta mais adequadas para o caso descrito.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cetoacidose diabética; solicitar glicemia, gasometria e eletrólitos e iniciar hidratação endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiperêmese gravídica com hipertiroidismo transitório; hidratação venosa e otimização dos antieméticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hepatite medicamentosa por uso de dimenidrinato; suspender a medicação e iniciar corticoide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipertireoidismo autoimune associado à hepatopatia; iniciar propiltiouracil e monitorar função hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nTrata-se de uma gestante de 10 semanas com quadro de hiperêmese gravídica, caracterizado por vômitos incoercíveis, perda ponderal expressiva (5 kg), desidratação (mucosa seca e taquicardia) e cetonúria (decorrente do jejum prolongado e catabolismo lipídico). \n\nOs exames complementares mostram alterações típicas da hiperêmese gravídica:\n1. Elevação discreta de transaminases (TGO e TGP), achado comum em até 50% dos casos graves, sem relação com hepatite primária, normalizando com a hidratação e controle dos sintomas.\n2. TSH suprimido com T4 livre normal, configurando hipertireoidismo transitório da gestação. Isso ocorre pela homologia estrutural entre a subunidade alfa do beta-hCG (muito elevado, 215.000 mUI/mL) e o TSH, estimulando temporariamente os receptores tireoidianos. Não requer drogas antitireoidianas.\n\nA conduta baseia-se em internação, hidratação intravenosa, reposição de eletrólitos/tiamina e otimização dos antieméticos por via parenteral, já que a paciente falhou ao tratamento oral.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A cetonúria decorre do jejum prolongado (cetose de inanição) e não de cetoacidose diabética. A paciente não apresenta história de diabetes ou sinais de descompensação glicêmica.\n\nAlternativa B - Correta. Apresenta o diagnóstico preciso de hiperêmese gravídica associada ao hipertireoidismo transitório gestacional induzido por altos níveis de beta-hCG, além de indicar a conduta adequada de hidratação parenteral e escalonamento dos antieméticos.\n\nAlternativa C - Incorreta. O dimenidrinato é seguro na gravidez e raramente causa lesão hepática. A discreta elevação das transaminases é secundária à própria hiperêmese gravídica e não há indicação de corticoterapia neste momento.\n\nAlternativa D - Incorreta. Não se trata de doença autoimune (doença de Graves), mas de uma alteração fisiopatológica transitória mediada pelo hCG que se resolverá espontaneamente. O propiltiouracil é contraindicado nessa situação, além de apresentar risco adicional de hepatotoxicidade.\n\nGabarito: Letra B.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Tireoide",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  },
+  {
+    "id": "AJUDA_4f8eeba9-47d8-4a98-9577-d1b918e77512",
+    "originalId": "4f8eeba9-47d8-4a98-9577-d1b918e77512",
+    "statement": "No que se refere a saúde ocupacional assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A doença profissional é aquela adquirida ou desencadeada em função de condições especiais em que o trabalho é realizado sendo necessário a comprovação do nexo causal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O acidente de trabalho típico é a aquele que ocorre com o trabalhador no local do trabalho ou no percurso do mesmo de sua residência /local de trabalho/residência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ofensa física intencional de terceiros por motivos de disputa relacionada ao trabalho que ocorram no local e horário do trabalho é um evento que se equipara ao acidente de trabalho.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A Perda auditiva induzida pelo ruído, que é relacionada ao trabalho, é maior nos primeiros 5 anos de exposição, podendo ser ou não neurossensorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A Comunicação de Acidente de Trabalho (CAT) deve ser preenchida pela empresa da vítima do acidente no prazo de até cinco dias úteis após o ocorrido.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão exige o conhecimento da Lei 8.213/1991, que dispõe sobre os Planos de Benefícios da Previdência Social e define os conceitos de acidente de trabalho, doenças ocupacionais e os procedimentos administrativos correlatos.\n\nAlternativa A (Incorreta): A alternativa inverte os conceitos. Doença profissional (ergopatia) é aquela produzida ou desencadeada pelo exercício do trabalho peculiar a determinada atividade e constante da relação elaborada pelo Ministério do Trabalho e da Previdência Social; nela, o nexo causal é presumido. A descrição da alternativa refere-se à Doença do trabalho (mesopatia), que é aquela adquirida ou desencadeada em função de condições especiais em que o trabalho é realizado e com ele se relacione diretamente, exigindo a comprovação do nexo causal.\n\nAlternativa B (Incorreta): O acidente de trabalho típico é aquele que ocorre durante a jornada de trabalho, no local de serviço, decorrente da atividade profissional. O acidente ocorrido no percurso entre a residência e o local de trabalho (e vice-versa) é classificado especificamente como acidente de trajeto. Embora ambos gerem os mesmos direitos previdenciários, tecnicamente não são a mesma categoria.\n\nAlternativa C (Correta - Gabarito): Conforme o Art. 21 da Lei 8.213/91, equipara-se também ao acidente do trabalho a ofensa física intencional, inclusive de terceiros, por motivo de disputa relacionada ao trabalho, ocorrida no local e no horário de serviço. É fundamental que a motivação seja laboral; agressões por motivos estritamente pessoais/particulares no ambiente de trabalho não possuem essa equiparação.\n\nAlternativa D (Incorreta): A Perda Auditiva Induzida por Ruído (PAIR) relacionada ao trabalho é, por definição patofisiológica, sempre do tipo neurossensorial, uma vez que decorre da destruição das células ciliadas da cóclea. O erro da alternativa está em dizer que ela pode \"ou não\" ser neurossensorial. Além disso, a perda é geralmente maior nos primeiros 10 a 15 anos de exposição, e não necessariamente nos primeiros 5 anos.\n\nAlternativa E (Incorreta): O prazo fixado pela legislação para que a empresa emita a Comunicação de Acidente de Trabalho (CAT) é até o primeiro dia útil seguinte ao da ocorrência. Em caso de morte do trabalhador, a comunicação deve ser imediata à autoridade competente. O prazo de cinco dias mencionado na alternativa não encontra amparo na Lei 8.213/91.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:11.468Z"
+  }
+]

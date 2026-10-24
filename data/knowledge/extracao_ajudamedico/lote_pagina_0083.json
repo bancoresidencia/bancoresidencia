@@ -1,0 +1,518 @@
+[
+  {
+    "id": "AJUDA_16455aef-62ab-43f9-b535-3758380fba2f",
+    "originalId": "16455aef-62ab-43f9-b535-3758380fba2f",
+    "statement": "Homem, 73 anos de idade, refere alteração do hábito intestinal há 4 meses, com constipação e necessidade progressiva de laxativos. Realizou colonoscopia que evidenciou lesão ulcerada no sigmoide intransponível ao aparelho. Procura o serviço de emergência devido a dor abdominal em cólica, distensão e parada de evacuação há 5 dias. Ao exame físico, encontra-se em regular estado geral, desidratado, abdome pouco distendido, fígado palpável até 4 cm abaixo do rebordo costal direito, doloroso à palpação profunda, sem irritação peritoneal. \n• Exames laboratoriais: \nHb: 10,8 g/dL\nHt: 30%\nUr: 43 mg/dL\nCr: 1,4 mgdL\nAlbumina: 3,3 mg/dL\nFoi realizada a tomografia, com o resultado apresentado na imagem a seguir:\n\nDiante da condição clínica do paciente e dos achados no exame de imagem, assinale a alternativa que apresenta a melhor conduta neste momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retossigmoidectomia com linfadenectomia com anastomose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Retossigmoidectomia com linfadenectomia sem anastomose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparotomia exploradora com colostomia em alça.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Laparotomia exploradora com ileostomia em alça.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico e das Imagens de Tomografia:\n\nO caso apresenta um paciente idoso com quadro de obstrução intestinal baixa por adenocarcinoma de sigmoide. Os cortes de tomografia computadorizada revelam:\n- Primeiro corte (nível hepático): Múltiplas lesões hipodensas bilaterais disseminadas pelo parênquima hepático, compatíveis com volumosas metástases hepáticas, correlacionando-se com a hepatomegalia dolorosa observada no exame físico. Trata-se de uma neoplasia de cólon estadio IV (metastática irressecável de imediato).\n- Cortes intermediários: Marcada distensão do cólon a montante, com fezes e ar acumulados.\n- Corte inferior (pelve): Presença do espessamento/massa tumoral no sigmoide promovendo a oclusão da luz.\n\nDiante de um paciente frágil, desidratado, desnutrido (albumina 3,3 g/dL), anêmico e com doença metastática avançada, o objetivo imediato na urgência é descompressivo e paliativo, priorizando menor morbimortalidade e rápida recuperação.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A ressecção com anastomose primária em contexto de obstrução aguda de cólon não preparado está contraindicada, especialmente em um paciente desnutrido e instável, devido ao altíssimo risco de deiscência de anastomose e sepse.\n\nAlternativa B (Incorreta): A ressecção tumoral com linfadenectomia (cirurgia de princípio oncológico curativo) agrega tempo cirúrgico e trauma desnecessários na urgência para um paciente com doença metastática hepática maciça e sem finalidade curativa neste momento.\n\nAlternativa C (Correta): A laparotomia com confecção de colostomia em alça (procedimento derivativo/descompressivo) é a melhor escolha. Trata-se de um procedimento rápido, de menor porte cirúrgico, que resolve imediatamente o quadro obstrutivo e permite a recuperação clínica do paciente para posterior introdução de terapia sistêmica paliativa (quimioterapia).\n\nAlternativa D (Incorreta): Embora a ileostomia também desobstrua o trato digestivo, a colostomia em alça no cólon transverso é mais adequada para descompressão direta de uma obstrução de cólon distal. Além disso, a ileostomia em alça pode produzir alto débito líquido, agravando a desidratação e os distúrbios hidroeletrolíticos em um paciente idoso e com função renal limítrofe.\n\nGabarito: Alternativa C.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Tumores Hepáticos",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/bf441b769074586dafb1b3ab9eca63b0f74ffe071f64390e4710370d5fd3b303.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_16455aef-62ab-43f9-b535-3758380fba2f_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/8e9ab4c37b50b8d893f43ced22f84e3a8562a987bb11cc422d2ed2437cfbf223.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_16455aef-62ab-43f9-b535-3758380fba2f_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/b9c4ef13f4a931415c1c74e3f1b5a1e3724de9f9c7f8daaf49ae06236cc1c53a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_16455aef-62ab-43f9-b535-3758380fba2f_img_2.webp"
+      },
+      {
+        "order": 3,
+        "originalUrl": "https://files.ajudamedico.com/files/536935744304dcb7f3de46b8a1189f8ca7226cdbbbe11e29d50479f46a1b5737.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_16455aef-62ab-43f9-b535-3758380fba2f_img_3.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  },
+  {
+    "id": "AJUDA_164653f7-3ebd-4f37-a4aa-ed28bbad7c6a",
+    "originalId": "164653f7-3ebd-4f37-a4aa-ed28bbad7c6a",
+    "statement": "Sobre o tratamento da Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr), analise as afirmações:\n\nI. Os Inibidores da Enzima Conversora de Angiotensina (IECA) e os betabloqueadores são indicados para todos os pacientes estáveis, visando à redução de mortalidade.\nII. A espironolactona é recomendada para pacientes sintomáticos (NYHA II-IV) com FEVE ≤ 35%, apesar do uso otimizado de IECA e betabloqueador.\nIII. A digoxina é a droga de primeira escolha para redução de mortalidade em pacientes com ritmo sinusal.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a proposição I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a proposição II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as proposições I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apenas as proposições I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das Proposições:\n\nProposição I: Correta. Os Inibidores da Enzima Conversora de Angiotensina (IECA) e os betabloqueadores compõem os pilares clássicos do tratamento da Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr). Ambas as classes de drogas demonstraram, em grandes ensaios clínicos, capacidade de reduzir significativamente a mortalidade e o número de internações hospitalares. Devem ser iniciados para todos os pacientes com FEVE reduzida, desde que estejam hemodinamicamente estáveis e sem contraindicações.\n\nProposição II: Correta. A espironolactona, um antagonista do receptor mineralocorticoide, é indicada para pacientes com ICFEr que permanecem sintomáticos (NYHA II-IV) apesar do tratamento inicial otimizado. Os critérios clássicos das diretrizes para sua introdução incluem a Fração de Ejeção do Ventrículo Esquerdo (FEVE) igual ou inferior a 35%. O uso dessa medicação visa reduzir a progressão da fibrose miocárdica e diminuir a mortalidade.\n\nProposição III: Incorreta. A digoxina não reduz a mortalidade em pacientes com insuficiência cardíaca e ritmo sinusal. O grande estudo DIG mostrou que ela é eficaz na redução de hospitalizações por descompensação da IC e na melhora dos sintomas, mas o impacto na sobrevida foi neutro. Portanto, não é droga de primeira escolha, sendo reservada para pacientes refratários ao tratamento padrão ou para controle de frequência na fibrilação atrial.\n\nExplicação das Alternativas:\n\na) Incorreta. A proposição II também está correta, não apenas a I.\nb) Incorreta. A proposição I também está correta, não apenas a II.\nc) Correta. Conforme analisado, as proposições I e II estão de acordo com as evidências científicas e diretrizes de cardiologia atuais (como as da Sociedade Brasileira de Cardiologia), enquanto a III apresenta um erro conceitual sobre a redução de mortalidade.\nd) Incorreta. A proposição III está errada, invalidando esta alternativa.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  },
+  {
+    "id": "AJUDA_1652b774-d479-41b0-a35e-ac7f95715346",
+    "originalId": "1652b774-d479-41b0-a35e-ac7f95715346",
+    "statement": "Um homem de 35 anos é levado ao departamento de emergência após uma briga de bar. Ele tem um ferimento por arma branca de 3 cm no hemitórax direito, de aproximadamente 5 cm lateralmente e logo acima do mamilo. Informa que o ferimento foi provocado por uma faca. Está consciente e orientado, embora embriagado, e reclama muito de dor no lado direito do tórax. Seus sinais vitais iniciais são: FC 96 bpm; PA 110/63 mmHg; FR 20 ipm e saturação de 98% em ar ambiente.\n\nSe o ferimento desse paciente estivesse localizado no pescoço, acima da cartilagem cricoide, mas abaixo do ângulo da mandíbula, qual dos seguintes testes diagnósticos seria indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nenhum, deve-se tratar com observação e internação para exames seriados;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Angiotomografia computadorizada do pescoço para avaliação dos vasos cervicais;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Angiotomografia ou angiografia, mais broncoscopia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Angiotomografia ou angiografia, broncoscopia e esofagogastroduodenoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ferimento descrito localiza-se na Zona II do pescoço, definida anatomicamente como o espaço entre a cartilagem cricoide (limite inferior) e o ângulo da mandíbula (limite superior). No manejo do trauma cervical penetrante que ultrapassa o músculo platisma, o objetivo principal é identificar ou excluir lesões em três sistemas vitais: vascular, respiratório e digestório.\n\nAlternativa a: Incorreta. A observação clínica isolada de ferimentos que penetram o platisma é considerada insegura. Estruturas profundas podem sofrer lesões que não se manifestam imediatamente de forma exuberante no exame físico inicial, como pequenas perfurações esofágicas ou lesões vasculares contidas. O atraso no diagnóstico dessas condições aumenta drasticamente a morbidade e a mortalidade.\n\nAlternativa b: Incorreta. A angiotomografia computadorizada do pescoço é o padrão-ouro atual para a avaliação inicial e para o rastreio de lesões vasculares (carótidas e jugulares). No entanto, ela não é suficiente para descartar com absoluta segurança lesões na via aérea e, principalmente, lesões no esôfago, que podem passar despercebidas em exames de imagem transversais.\n\nAlternativa c: Incorreta. Esta opção contempla a avaliação do sistema vascular e do sistema respiratório (por meio da broncoscopia). Embora seja uma investigação mais ampla, ela peca por omitir a avaliação do sistema digestório. O esôfago é uma estrutura de difícil avaliação e lesões não diagnosticadas nesta região podem levar a quadros graves de mediastinite.\n\nAlternativa d: Correta. Esta alternativa propõe a investigação completa e sistemática das estruturas nobres do pescoço, conhecida classicamente como estudo triplo. A angiotomografia ou angiografia serve para avaliar os vasos cervicais; a broncoscopia é utilizada para visualizar diretamente a integridade da árvore respiratória (laringe e traqueia); e a esofagogastroduodenoscopia (ou esofagograma) é essencial para descartar lesões esofágicas. Em pacientes estáveis, essa abordagem diagnóstica multimodal garante que nenhuma lesão silenciosa em estruturas críticas passe despercebida.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  },
+  {
+    "id": "AJUDA_16552d2d-47b3-4b29-92a6-7def4294c2d0",
+    "originalId": "16552d2d-47b3-4b29-92a6-7def4294c2d0",
+    "statement": "Paciente de 19 anos, vítima de acidente automobilístico, ao dar entrada na unidade de emergência apresenta-se francamente dispneico e hipotenso. Ao exame físico, além da hipotensão arterial crítica (68 x 40 mmHg), taquicardia (134 bpm), taquipneia (32 irpm) e dessaturação (saturação periférica de O2 de 88% em máscara de O2 com reservatório), há turgência jugular patológica e redução da expansibilidade torácica à direita, onde o murmúrio vesicular é inaudível e a percussão revela timpanismo local; as bulhas cardíacas são normofonéticas. A conduta indicada nesse momento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar intubação orotraqueal e iniciar ventilação mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "proceder imediatamente punção aspirativa do hemitórax direito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "encaminhar imediatamente ao centro cirúrgico para toracotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "providenciar exame radiográfico de tórax urgente para definir a conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO E FISIOPATOLOGIA:\n\nO quadro clínico descreve um caso clássico de Pneumotórax Hipertensivo à direita. O paciente apresenta a tríade de sinais que indicam choque obstrutivo no trauma: hipotensão arterial grave, turgência jugular (indicando dificuldade no retorno venoso ao coração) e sinais de comprometimento respiratório agudo. \n\nO diagnóstico é confirmado pelo exame físico do tórax: a redução da expansibilidade, a ausência de murmúrio vesicular e, fundamentalmente, o timpanismo à percussão no lado direito. O timpanismo indica a presença de ar sob pressão no espaço pleural. A menção de que as bulhas cardíacas estão normofonéticas é essencial para descartar o Tamponamento Cardíaco, que também causa hipotensão e turgência jugular, mas apresentaria bulhas abafadas e macicez à percussão.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. Realizar a intubação orotraqueal e iniciar ventilação mecânica com pressão positiva antes de descomprimir o tórax é perigoso. A pressão positiva enviada pelo ventilador para dentro do pulmão vai acelerar o acúmulo de ar no espaço pleural, aumentando a pressão intratorácica de forma ainda mais rápida, o que agrava o choque obstrutivo e pode levar à parada cardiorrespiratória imediata.\n\nAlternativa b) Correta. O pneumotórax hipertensivo é uma emergência médica que exige descompressão imediata. A punção aspirativa (ou toracocentese de alívio) com agulha calibrosa é o procedimento indicado para aliviar a pressão intratorácica rapidamente, transformando o pneumotórax hipertensivo em um pneumotórax simples. Isso estabiliza o paciente hemodinamicamente até que a conduta definitiva (drenagem torácica em selo d'água) possa ser realizada.\n\nAlternativa c) Incorreta. A toracotomia é uma cirurgia de grande porte. A grande maioria dos traumas torácicos (cerca de 85% a 90%) é resolvida com manobras simples, como a drenagem de tórax. A toracotomia de urgência teria indicações específicas, como hemotórax maciço ou lesões de grandes vasos, o que não é o caso descrito.\n\nAlternativa d) Incorreta. Esta é uma \"pegadinha\" comum em provas. O diagnóstico de pneumotórax hipertensivo é estritamente clínico. Em um paciente instável com esses sinais, não se deve perder tempo solicitando exames de imagem como a radiografia de tórax. O tempo gasto para realizar o exame pode ser o tempo em que o paciente evolui para o óbito. A conduta deve ser imediata e baseada no exame físico.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Trauma",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  },
+  {
+    "id": "AJUDA_16610fec-1ec2-4ec0-830b-0e83806cabf1",
+    "originalId": "16610fec-1ec2-4ec0-830b-0e83806cabf1",
+    "statement": "São causas frequentes de abdome agudo no paciente idoso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença celíaca e apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença diverticular e tuberculose intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Volvo intestinal e colecistite aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Intussuscepção e isquemia mesentérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O abdome agudo no idoso é um desafio diagnóstico devido à apresentação clínica frequentemente atípica, com poucos sinais de irritação peritoneal e ausência de febre ou leucocitose clara. As causas mais comuns nessa faixa etária envolvem doenças biliares, obstruções intestinais, diverticulite e complicações vasculares.\n\nAnálise das alternativas:\n\na) Incorreta. A apendicite aguda ocorre em idosos e é associada à maior taxa de perfuração, mas a doença celíaca é uma condição de má absorção crônica e não é causa de abdome agudo.\n\nb) Incorreta. A doença diverticular (especialmente a diverticulite aguda) é uma das principais causas de abdome agudo no idoso. No entanto, a tuberculose intestinal é uma patologia rara e de evolução crônica, não figurando entre as causas frequentes de urgência abdominal.\n\nc) Correta. A colecistite aguda (e outras doenças biliares) é a causa cirúrgica mais comum de abdome agudo em pacientes acima de 65 anos. O volvo intestinal, especialmente o volvo de sigmoide, também é frequente no idoso, muitas vezes relacionado ao megacólon, à constipação crônica e ao uso de medicações que alteram a motilidade intestinal.\n\nd) Incorreta. A isquemia mesentérica é, de fato, uma causa importante e grave de abdome agudo no idoso devido à alta prevalência de doenças cardiovasculares. Contudo, a intussuscepção intestinal é uma patologia clássica da faixa etária pediátrica; no adulto, é rara e geralmente secundária a neoplasias, não sendo considerada uma causa \"frequente\" em comparação com as citadas na alternativa C.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  },
+  {
+    "id": "AJUDA_1667abcb-1cf4-419b-bc53-d77068e5d41c",
+    "originalId": "1667abcb-1cf4-419b-bc53-d77068e5d41c",
+    "statement": "A vacinação contra doença meningocócica está indicada para pacientes",
+    "options": [
+      {
+        "id": "A",
+        "text": "portadores de HIV em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "com anemia falciforme em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "com anemia falciforme em 2 doses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "recrutas em alojamentos em 2 doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "viajantes para áreas endêmicas em dose única incluindo sorotipo B.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda as recomendações de vacinação para grupos de risco e situações epidemiológicas específicas, seguindo as diretrizes do Ministério da Saúde e do Centro de Referência para Imunobiológicos Especiais (CRIE).\n\nAlternativa (a) Incorreta. Pacientes vivendo com HIV/Aids são considerados um grupo de risco para doença meningocócica invasiva e têm indicação para a vacina meningocócica conjugada quadrivalente (ACWY). No entanto, o esquema vacinal primário para esses pacientes no CRIE consiste em 2 doses, com intervalo de 8 semanas (2 meses) entre elas, e não dose única.\n\nAlternativa (b) Incorreta. Pacientes com anemia falciforme apresentam asplenia funcional (fibrose do baço devido a sucessivos infartos esplênicos), o que aumenta drasticamente o risco de sepse por germes encapsulados, como o meningococo. Devido a essa condição, o esquema vacinal exige mais de uma dose para garantir uma resposta imune adequada.\n\nAlternativa (c) Correta. Conforme os protocolos de imunização para pacientes especiais, os indivíduos com asplenia anatômica ou funcional (incluindo anemia falciforme e outras hemoglobinopatias) devem receber a vacina meningocócica conjugada ACWY em um esquema de 2 doses, com intervalo de 2 meses entre elas. Além disso, esses pacientes devem receber reforços a cada 5 anos para manter os títulos de anticorpos protetores.\n\nAlternativa (d) Incorreta. Recrutas e militares vivendo em alojamentos são grupos prioritários para vacinação devido às condições de aglomeração que favorecem surtos de meningite. Entretanto, a recomendação para esse grupo (indivíduos jovens e geralmente saudáveis) é de dose única da vacina conjugada, caso não tenham sido vacinados previamente, e não 2 doses.\n\nAlternativa (e) Incorreta. Viajantes para áreas de risco (como o cinturão da meningite na África ou peregrinos para Meca) possuem indicação de vacinação com a vacina quadrivalente ACWY. A vacina contra o sorotipo B é um imunobiológico diferente, não costuma ser exigida para viagens internacionais e possui um esquema de 2 doses para adultos, o que torna a afirmação de \"dose única incluindo sorotipo B\" tecnicamente errada em ambos os aspectos.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": 74.2228561565159,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  },
+  {
+    "id": "AJUDA_1667b031-5adb-4b8e-8368-6f4123cf7375",
+    "originalId": "1667b031-5adb-4b8e-8368-6f4123cf7375",
+    "statement": "Entre as manifestações clínicas para o diagnóstico da Doença de Kawasaki, sempre há presença de febre com duração igual ou superior a cinco dias, associada a critérios maiores como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exantema, hepatomegalia, prurido, artralgia, icterícia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Edema de mãos e pés, exantema polimorfo e generalizado, e hiperemia ocular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Descamação palmo-plantar, hepatosplenomegalia, petéquias, artralgia, prurido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Piúria estéril, icterícia, PCR elevado, hiperemia ocular, artralgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Doença de Kawasaki é uma vasculite sistêmica que afeta vasos de médio calibre, sendo a principal causa de cardiopatia adquirida em crianças nos países desenvolvidos. O diagnóstico é estritamente clínico e exige a presença de febre por 5 dias ou mais, associada a pelo menos 4 dos 5 critérios maiores descritos abaixo:\n\n1. Alterações nas extremidades: Eritema (vermelhidão) e edema (inchaço) de mãos e pés na fase aguda, ou descamação periungueal na fase subaguda.\n2. Exantema polimorfo: Erupção cutânea de diversas formas, geralmente acometendo o tronco, sem presença de vesículas ou crostas.\n3. Hiperemia conjuntival bulbar bilateral: Vermelhidão nos olhos sem a presença de exsudato (secreção purulenta).\n4. Alterações na boca e lábios: Lábios avermelhados e rachados, língua em framboesa (ou morango) e eritema difuso da orofaringe.\n5. Linfadenopatia cervical: Aumento de linfonodo no pescoço, geralmente unilateral e com diâmetro superior a 1,5 cm.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Itens como hepatomegalia (fígado aumentado), prurido (coceira), artralgia (dor nas articulações) e icterícia não são considerados critérios maiores para o diagnóstico da doença, embora possam aparecer como sintomas acessórios em alguns casos.\n\nAlternativa b: Correta. Esta alternativa apresenta três dos critérios clínicos principais: alterações de extremidades (edema), o exantema característico e a conjuntivite não purulenta (hiperemia ocular).\n\nAlternativa c: Incorreta. Embora a descamação palmo-plantar seja um sinal da fase subaguda da doença, a hepatosplenomegalia, as petéquias e a artralgia não são critérios diagnósticos.\n\nAlternativa d: Incorreta. A piúria estéril (presença de leucócitos na urina sem bactérias) e a elevação de marcadores inflamatórios como o PCR (Proteína C Reativa) são achados laboratoriais muito frequentes que auxiliam no diagnóstico de casos incompletos, mas não são classificados como critérios clínicos maiores. A artralgia e a icterícia também não fazem parte dos critérios principais.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  },
+  {
+    "id": "AJUDA_16769326-054d-4f88-b2d7-2a8abba8b587",
+    "originalId": "16769326-054d-4f88-b2d7-2a8abba8b587",
+    "statement": "O SARS‑CoV‑2 faz parte de uma família de vírus que causam infecções respiratórias, e o novo agente do coronavírus que provoca a doença é chamado de covid‑19. Considerando essa informação, é correto afirmar que o tratamento recomendado para os casos leves deve considerar acompanhamento ambulatorial, monitoramento de sintomas e",
+    "options": [
+      {
+        "id": "A",
+        "text": "repouso, hidratação e uso de medicamentos sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "anticoagulação profilática com enoxiparina 40 mg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "azitromicina 500 mg/dia durante três dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ivermectina 6 mg/dia durante dez dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "dexametasona 6 mg/dia endovenosa durante dez dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o manejo clínico de pacientes com quadros leves de COVID-19. Por definição, casos leves são aqueles em que o paciente apresenta sintomas gripais (tosse, febre, dor de garganta), mas sem dispneia, sem sinais de desconforto respiratório e com saturação de oxigênio em ar ambiente preservada (geralmente maior ou igual a 95%).\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O tratamento para casos leves de COVID-19 é eminentemente de suporte. Como se trata de uma infecção viral autolimitada na maioria das pessoas, a conduta preconizada pelos órgãos de saúde (como a OMS e o Ministério da Saúde) envolve o repouso, a manutenção de uma boa hidratação e o uso de medicamentos sintomáticos, como analgésicos e antitérmicos (paracetamol ou dipirona), para controle da dor e da febre.\n\nAlternativa b) Incorreta. A anticoagulação profilática, como o uso de enoxaparina, não é indicada rotineiramente para casos leves tratados em regime ambulatorial. Seu uso é reservado para pacientes internados ou com critérios específicos de alto risco para tromboembolismo venoso, após avaliação criteriosa.\n\nAlternativa c) Incorreta. A azitromicina é um antibiótico da classe dos macrolídeos. O SARS-CoV-2 é um vírus, e antibióticos não possuem ação contra vírus. O uso de azitromicina não demonstrou benefício clínico no tratamento da COVID-19 em estudos controlados e não deve ser utilizada de forma rotineira, exceto se houver suspeita fundamentada de coinfecção bacteriana.\n\nAlternativa d) Incorreta. A ivermectina é um antiparasitário que, apesar de ter sido amplamente discutido no início da pandemia, não demonstrou eficácia clínica na redução de carga viral, tempo de internação ou mortalidade em pacientes com COVID-19 em estudos de alta qualidade (ensaios clínicos randomizados).\n\nAlternativa e) Incorreta. A dexametasona (corticoide) é um dos poucos medicamentos que demonstraram reduzir a mortalidade na COVID-19, porém apenas em pacientes que necessitam de suplementação de oxigênio ou ventilação mecânica. Em casos leves, o uso de corticoides pode ser prejudicial, pois pode retardar a eliminação do vírus pelo organismo nas fases iniciais da doença. Além disso, a via endovenosa é restrita ao ambiente hospitalar.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Covid-19"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  },
+  {
+    "id": "AJUDA_16796f57-e923-4336-9ca3-c3560e80baf1",
+    "originalId": "16796f57-e923-4336-9ca3-c3560e80baf1",
+    "statement": "Em relação à endometriose pélvica, qual tratamento apresenta melhor eficácia para melhora da dor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anti-inflamatório não hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estradiol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gestrinona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Testosterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Agonista GNRH.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A endometriose é uma doença inflamatória crônica estrogênio-dependente. O pilar do tratamento farmacológico para a dor consiste no bloqueio hormonal do ciclo ovariano e na indução de um ambiente de hipoestrogenismo, promovendo atrofia e inatividade dos focos ectópicos de endométrio.\n\nAlternativa a (Incorreta): Os anti-inflamatórios não hormonais (AINEs) inibem a síntese de prostaglandinas e podem amenizar a dismenorreia, porém atuam apenas sintomaticamente. Eles não alteram a fisiopatologia da doença nem causam regressão dos implantes endometrióticos, tendo eficácia inferior no controle global da dor quando comparados às terapias hormonais supressivas.\n\nAlternativa b (Incorreta): O estradiol é o hormônio responsável por estimular a proliferação, a vascularização e a atividade inflamatória dos implantes de endometriose. A sua administração isolada agrava a doença e piora o quadro doloroso.\n\nAlternativa c (Incorreta): A gestrinona é um esteroide sintético com efeitos androgênicos, antiestrogênicos e antiprogestagênicos. Embora promova alívio dos sintomas, apresenta eficácia inferior ou similar com pior tolerabilidade devido a efeitos colaterais androgênicos importantes (como acne, hirsutismo e ganho de peso), não sendo a opção de maior potência e eficácia em relação aos agonistas de GnRH.\n\nAlternativa d (Incorreta): A testosterona não é indicada no manejo da endometriose por não apresentar papel terapêutico estabelecido e causar virilização significativa.\n\nAlternativa e (Correta): Os agonistas do GnRH (como a leuprorrelina e a gosserrelina) provocam uma estimulação contínua dos receptores hipofisários, levando à dessensibilização (down-regulation) e consequente bloqueio da liberação de gonadotrofinas (FSH e LH). Esse mecanismo induz um estado de hipoestrogenismo profundo (pseudomenopausa), resultando em acentuada atrofia dos focos endometrióticos e demonstrando a mais alta eficácia clínica no alívio da dor pélvica associada à doença.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Endometriose"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  },
+  {
+    "id": "AJUDA_168d3dee-d0bc-460f-8d38-2c2ae3fc0929",
+    "originalId": "168d3dee-d0bc-460f-8d38-2c2ae3fc0929",
+    "statement": "Mulher de 45 anos foi levada para consulta na casa de saúde indígena da capital do estado, com febre (até 39°C), tosse, dor de garganta, cefaleia, mialgia e artralgia iniciados há cerca de 36 horas. Outros 5 pacientes da mesma comunidade indígena apresentaram quadro semelhante no mesmo período. No dia da consulta, a paciente começou a se queixar de leve falta de ar. Ao exame físico apresentava parâmetros dentro da normalidade, exceto pela febre (39 °C) e por estertores crepitantes na base pulmonar direita. Frequência respiratória de 22 irpm e pressão arterial é de 120 x 80 mmHg.\nConsiderando o caso apresentado, assinale a alternativa que indica, respectivamente, a hipótese diagnóstica e a conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonia viral; prescrever o uso de oseltamivir.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tuberculose; solicitar pesquisa de BAAR no escarro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pneumonia bacteriana; indicar o uso de ceftriaxona e amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Resfriado comum; recomendar o uso de medicações sintomáticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro clínico clássico de Síndrome Gripal (febre súbita, tosse, dor de garganta, mialgia, cefaleia e artralgia) com início há 36 horas. O contexto epidemiológico é fundamental, pois há um surto na comunidade indígena (outros 5 casos). A evolução para falta de ar (dispneia) e a presença de estertores crepitantes ao exame físico, mesmo com parâmetros vitais estáveis, caracterizam a Síndrome Respiratória Aguda Grave (SRAG).\n\nExplicação das alternativas:\n\na) Correta. A hipótese de pneumonia viral (causada pelo vírus Influenza) justifica o início súbito, os sintomas sistêmicos intensos e o padrão de surto comunitário. De acordo com o Protocolo de Tratamento de Influenza do Ministério da Saúde, pacientes com SRAG ou que pertencem a grupos de risco (populações indígenas são consideradas grupo de risco) devem receber fosfato de oseltamivir. O tratamento é mais eficaz quando iniciado nas primeiras 48 horas, e a paciente está no prazo (36 horas).\n\nb) Incorreta. A tuberculose é uma doença de evolução crônica ou subaguda. O quadro de 36 horas de evolução com febre alta e sintomas sistêmicos agudos em vários membros da comunidade simultaneamente não é compatível com a história natural da tuberculose.\n\nc) Incorreta. Embora a pneumonia bacteriana possa causar febre e estertores, o quadro descrito é sistêmico (mialgia, cefaleia, artralgia) e ocorre em forma de surto, o que aponta fortemente para etiologia viral. Além disso, o tratamento inicial prioritário na SRAG, especialmente em populações vulneráveis e em vigência de surto, é a cobertura para Influenza com antiviral.\n\nd) Incorreta. O resfriado comum é uma infecção viral leve, restrita às vias aéreas superiores, que não costuma cursar com febre tão alta (39°C), sintomas sistêmicos proeminentes, dispneia ou sinais de comprometimento do parênquima pulmonar (estertores). O manejo apenas com sintomáticos seria insuficiente e perigoso para uma paciente com sinais de gravidade respiratória.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas",
+      "Influenza"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:15.542Z"
+  }
+]

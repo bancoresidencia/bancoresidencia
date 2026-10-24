@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_376c0d56-0cf9-45b1-8c37-7fc9bcc9b95f",
+    "originalId": "376c0d56-0cf9-45b1-8c37-7fc9bcc9b95f",
+    "statement": "Homem de 75 anos com histórico de hipertensão e etilismo crônico encontra-se internado na enfermaria da cirurgia geral para tratamento de uma infecção de partes moles (erisipela). No segundo dia de internação, foi submetido à passagem de sonda nasoenteral devido à recusa alimentar. No 6º dia de internação, iniciou quadro de febre (38,9 ºC), taquipneia e alteração do nível de consciência. A ausculta torácica revela estertores crepitantes difusos. Radiografia de tórax mostra infiltrado pulmonar difuso bilateral.\nConsiderando o quadro clínico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de sonda nasoenteral representa um fator de risco para pneumonia nosocomial por facilitar broncoaspiração e translocação bacteriana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O quadro sugere pneumonia adquirida na comunidade, considerando que o paciente não foi submetido à ventilação mecânica nessa internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O quadro sugere pneumonia nosocomial de início precoce (< 7 dias), o que geralmente indica um pior prognóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A pneumonia associada à ventilação mecânica ocorre após 72 horas de ventilação mecânica invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O uso de inibidores da bomba de prótons poderia ter prevenido esse tipo de complicação em pacientes hospitalizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico: Trata-se de um paciente idoso, com comorbidades (etilismo e hipertensão), internado há seis dias. No segundo dia de internação, foi instalada uma sonda nasoenteral (SNE). No sexto dia, ele apresenta sinais sistêmicos de infecção (febre), insuficiência respiratória (taquipneia), alteração do sensório e achados radiológicos de infiltrado pulmonar. Como os sintomas surgiram após 48 horas da admissão hospitalar, o diagnóstico principal é de Pneumonia Nosocomial (ou Hospitalar).\n\nAlternativa A (Correta): A presença de dispositivos invasivos, como a sonda nasoenteral, é um fator de risco clássico para pneumonia no ambiente hospitalar. A sonda predispõe à broncoaspiração por manter o esfíncter esofágico inferior entreaberto, facilitando o refluxo do conteúdo gástrico. Além disso, a presença da sonda altera a microbiota local e pode facilitar a translocação bacteriana e a colonização da orofaringe por patógenos hospitalares.\n\nAlternativa B (Incorreta): A Pneumonia Adquirida na Comunidade (PAC) é aquela que se manifesta fora do ambiente hospitalar ou nas primeiras 48 horas da admissão. Como o paciente já está internado há seis dias, o quadro é classificado como pneumonia nosocomial, independentemente de o paciente estar ou não em ventilação mecânica.\n\nAlternativa C (Incorreta): A classificação de pneumonia nosocomial em precoce (geralmente até o 4º ou 5º dia) ou tardia (após o 5º dia) serve para prever o risco de agentes multidrogas-resistentes (MDR). Diferente do que afirma a alternativa, a pneumonia de início precoce costuma ter um melhor prognóstico, pois geralmente é causada por germes comunitários sensíveis a antibióticos comuns. As pneumonias de início tardio são as que possuem pior prognóstico devido à maior probabilidade de agentes resistentes.\n\nAlternativa D (Incorreta): A Pneumonia Associada à Ventilação Mecânica (PAV) é definida como aquela que surge após 48 horas (e não 72 horas) da instituição da ventilação mecânica invasiva (intubação orotraqueal ou traqueostomia). Além disso, o paciente do caso clínico não estava em ventilação mecânica no momento do início dos sintomas.\n\nAlternativa E (Incorreta): O uso de inibidores da bomba de prótons (IBP) é, na verdade, um fator de risco para o desenvolvimento de pneumonia hospitalar, e não um fator preventivo. Ao elevar o pH gástrico, o IBP permite a colonização do estômago por bactérias gram-negativas que, em situações de refluxo ou microaspiração (facilitadas pela sonda), podem atingir a árvore traqueobrônquica e causar infecção.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  },
+  {
+    "id": "AJUDA_37844740-7086-41d6-a134-ba6837b68470",
+    "originalId": "37844740-7086-41d6-a134-ba6837b68470",
+    "statement": "Em 2024, voltou ao debate nacional a dificuldade de fixar médicos em regiões remotas e vulneráveis do Brasil. Notícias destacaram a ampliação do Programa Mais Médicos e do Médicos pelo Brasil, voltados a suprir lacunas de profissionais na Atenção Básica. De acordo com a Política Nacional de Atenção Básica (PNAB) e os princípios da Estratégia Saúde da Família (ESF), qual é a forma CORRETA de compreender a organização da Atenção Primária no país?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Atenção Primária é um serviço de livre demanda, sem necessidade de definição territorial, voltado principalmente para atendimentos episódicos e de pronto atendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A organização da Atenção Primária é feita por hospitais gerais, que concentram o acompanhamento longitudinal e encaminham os casos de menor complexidade para as unidades de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O objetivo central da ESF é garantir apenas cobertura médica, podendo dispensar a atuação de outros profissionais da equipe de saúde no cuidado continuado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A PNAB estabelece que a Atenção Básica seja estruturada prioritariamente em unidades especializadas, voltadas a condições crônicas de alta complexidade, como diabetes avançado e insuficiência cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A Atenção Primária é a porta de entrada preferencial do SUS, organizada por meio de equipes multiprofissionais da ESF, com adscrição territorial e vínculo longitudinal com a população adscrita.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nEsta questão aborda os fundamentos da Política Nacional de Atenção Básica (PNAB) e as diretrizes da Estratégia Saúde da Família (ESF), que são os pilares do Sistema Único de Saúde (SUS). Para responder corretamente, é necessário dominar os atributos essenciais da Atenção Primária à Saúde (APS).\n\nPOR QUE A ALTERNATIVA (E) ESTÁ CORRETA?\n\nA alternativa (e) resume os conceitos fundamentais da APS no Brasil. De acordo com a PNAB, a Atenção Primária deve ser a porta de entrada preferencial e o centro comunicador da Rede de Atenção à Saúde. Sua organização baseia-se na Estratégia Saúde da Família, que utiliza equipes multiprofissionais (médico, enfermeiro, técnico de enfermagem e agentes comunitários de saúde). A adscrição territorial (definição da área de atuação) e o vínculo longitudinal (acompanhamento do paciente ao longo do tempo) são diretrizes obrigatórias para garantir a continuidade do cuidado e a resolutividade.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A Atenção Primária não pode ser vista apenas como serviço de livre demanda ou pronto atendimento para casos episódicos. Pelo contrário, ela exige territorialização (definição de base geográfica e populacional) e foco na prevenção e acompanhamento crônico, não apenas no atendimento de queixas agudas momentâneas.\n\nAlternativa (b): A Atenção Primária é estruturada em Unidades Básicas de Saúde (UBS), e não em hospitais gerais. No SUS, o fluxo correto é a Atenção Primária coordenar o cuidado e encaminhar casos de maior densidade tecnológica para os hospitais e especialistas, e não o inverso.\n\nAlternativa (c): A ESF é, por definição, multiprofissional. A PNAB estabelece uma composição mínima para a equipe, sendo impossível dispensar a atuação de enfermeiros, técnicos e agentes comunitários. O foco não é apenas a cobertura médica, mas o cuidado integral e interdisciplinar.\n\nAlternativa (d): A Atenção Básica deve ser capaz de manejar condições crônicas, como diabetes e insuficiência cardíaca, mas ela não é estruturada em unidades especializadas de alta complexidade. A APS caracteriza-se por tecnologias de baixa densidade (equipamentos) e alta complexidade clínica e relacional, sendo o nível primário, e não especializado, da assistência.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  },
+  {
+    "id": "AJUDA_378fe6f2-7477-4d75-9c61-a875804eb89f",
+    "originalId": "378fe6f2-7477-4d75-9c61-a875804eb89f",
+    "statement": "Mulher de 64 anos, submetida à biópsia excisional de melanoma em membro superior direito, com índice de Breslow de 3,7 milímetros sem a presença de ulceração e com índice mitótico de zero. Foi submetida à ampliação de margens de 2 centímetros e à pesquisa de linfonodo sentinela axilar direito, que revelou a presença de micrometástases. Quais as próximas condutas indicadas no tratamento desta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar uma segunda ampliação de margens de 1 cm e seguimento clínico da cadeia linfonodal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar uma segunda ampliação de margens de 1 cm e linfadenectomia axilar direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar o seguimento clínico da cadeia linfonodal, sem a necessidade de nova ampliação de margens.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar a linfadenectomia axilar direita, sem a necessidade de nova ampliação de margens.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente apresenta um melanoma com índice de Breslow de 3,7 mm (estadiamento T3a). Para lesões com Breslow superior a 2 mm, a recomendação atual das principais diretrizes (como as da Sociedade Brasileira de Dermatologia e o NCCN) é a realização de margens cirúrgicas de 2 cm. Como a paciente já foi submetida a uma ampliação de margens de 2 cm, o tratamento local da lesão primária está adequadamente concluído, não havendo indicação técnica para novas ampliações.\n\nQuanto ao manejo linfonodal, a pesquisa de linfonodo sentinela foi positiva para micrometástases. Historicamente, a conduta indicada seria a linfadenectomia radical (esvaziamento ganglionar) de complementação. No entanto, a conduta mudou significativamente após a publicação de grandes ensaios clínicos, especificamente os estudos MSLT-II e DeCOG-SLT. Esses estudos demonstraram que, em pacientes com linfonodo sentinela positivo, a linfadenectomia de complementação imediata aumenta o controle regional, mas não melhora a sobrevida específica pelo melanoma nem a sobrevida global quando comparada à observação ativa (vigilância com exame físico e ultrassonografia periódica). Portanto, o seguimento clínico da cadeia linfonodal é hoje a conduta preferencial.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A ampliação de margem já foi realizada conforme o protocolo (2 cm para Breslow acima de 2 mm). Uma segunda ampliação para totalizar 3 cm não é necessária e não traz benefícios comprovados. Embora o seguimento clínico da cadeia linfonodal esteja correto, o erro reside na conduta sobre a margem.\n\nAlternativa B: Incorreta. Apresenta o mesmo erro da Alternativa A em relação à ampliação de margem. Além disso, propõe a linfadenectomia axilar como conduta imediata, o que, conforme os estudos MSLT-II e DeCOG-SLT, não é mais a conduta obrigatória ou preferencial para casos de micrometástases no sentinela, devido à ausência de ganho em sobrevida global.\n\nAlternativa C: Correta. É a conduta mais atualizada e fundamentada nas evidências científicas. As margens de 2 cm já executadas são suficientes para um Breslow de 3,7 mm. Para a micrometástase no linfonodo sentinela, a vigilância ativa (seguimento clínico e por imagem) é a escolha padrão, evitando a morbidade de um esvaziamento axilar (como o linfedema) sem prejuízo à sobrevida da paciente.\n\nAlternativa D: Incorreta. Embora esteja correta ao afirmar que não é necessária uma nova ampliação de margens, a alternativa peca ao indicar a linfadenectomia axilar de rotina. Atualmente, a linfadenectomia é reservada para casos em que há doença linfonodal clinicamente detectável ou quando a vigilância ativa não pode ser realizada adequadamente.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  },
+  {
+    "id": "AJUDA_3792ce37-522c-45e7-9680-b637cab59e7a",
+    "originalId": "3792ce37-522c-45e7-9680-b637cab59e7a",
+    "statement": "A violência à mulher é uma importante questão de saúde pública. Existem vários tipos de atos violentos dos quais as mulheres podem ser vítimas. Considerando os tipos de comportamentos abusivos e as características descritas, relacione as colunas e assinale a sequência correspondente.\n\n(1) Violência doméstica.\n(2) Assédio sexual.\n(3) Estupro.\n\n( ) Neste tipo de violência, há uma ampla gama de comportamentos, que incluem linguagem abusiva, olhares, massagens, entre outros.\n( ) Neste tipo de violência, o abuso de álcool costuma estar envolvido na maioria das agressões. Muitos dos abusadores são cativantes em público, mas cruéis na intimidade.\n( ) Neste tipo de violência, mulheres jovens correm risco quatro vezes maior, do que qualquer outro grupo, de se tornarem vítimas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 - 2 - 3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2 - 1 - 3.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "2 - 3 - 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3 - 1 - 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO tema abordado é a violência contra a mulher, um tópico fundamental na Saúde Pública, Psiquiatria e Medicina Legal. Para relacionar as colunas corretamente, devemos analisar o perfil epidemiológico e as características comportamentais descritas em cada item.\n\nAnálise das lacunas:\n\nPrimeira descrição: (2) Assédio sexual.\nO assédio sexual é caracterizado por condutas de conotação sexual indesejadas pela vítima. Ele abrange uma ampla gama de comportamentos que não necessariamente envolvem o ato sexual em si, mas violam a liberdade e a dignidade da mulher. A descrição cita corretamente o uso de linguagem abusiva, olhares invasivos e contatos físicos não solicitados (como massagens), que visam constranger ou obter vantagem sexual.\n\nSegunda descrição: (1) Violência doméstica.\nEsta descrição foca em dois aspectos clássicos da violência por parceiro íntimo. Primeiro, o abuso de álcool é frequentemente identificado como um fator que desestabiliza o controle de impulsos e atua como gatilho para as agressões. Segundo, destaca-se o perfil psicológico do agressor doméstico, que costuma apresentar uma fachada de homem carismático e respeitável em ambiente social (cativante em público), mas exerce controle e agressividade no ambiente privado (cruel na intimidade).\n\nTerceira descrição: (3) Estupro.\nEpidemiologicamente, a violência sexual (estupro) atinge de forma desproporcional as mulheres mais jovens. Dados de saúde pública demonstram que adolescentes e jovens adultas estão em um grupo de vulnerabilidade no qual o risco de sofrer esse tipo de violência é significativamente maior (frequentemente citado como quatro vezes maior) do que em outras faixas etárias.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) 1 - 2 - 3. Incorreta. Esta opção inverte as definições de violência doméstica e assédio sexual. A violência doméstica não é definida primariamente pela gama de olhares e massagens, mas sim pelo contexto de convivência e perfil do agressor.\n\nAlternativa b) 2 - 1 - 3. Correta. Esta sequência preenche as lacunas respeitando as definições conceituais e os dados epidemiológicos discutidos na literatura médica sobre cada tipo de violência.\n\nAlternativa c) 2 - 3 - 1. Incorreta. O erro principal é associar o perfil de abusador cativante em público e cruel na intimidade ao estupro, quando esta é uma característica tipicamente descrita no ciclo da violência doméstica.\n\nAlternativa d) 3 - 1 - 2. Incorreta. Esta alternativa confunde a epidemiologia do estupro com as características do assédio sexual, invalidando a correlação lógica entre as colunas.\n\nGabarito: Alternativa (b).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  },
+  {
+    "id": "AJUDA_37939cc5-c419-41f3-8c64-8e3c1b741248",
+    "originalId": "37939cc5-c419-41f3-8c64-8e3c1b741248",
+    "statement": "Paciente feminina, de 52 anos, com hipertensão arterial sistêmica (em tratamento com hidroclorotiazida e enalapril) e dislipidemia (em tratamento com atorvastatina), trouxe à consulta resultados de exames laboratoriais de rotina, que identificaram elevação de aminotransferases (AST de 59 U/l e ALT de 74 U/l), glicemia de jejum de 184 de mg/dl, HbA1c de 6,1%, ferritina de 483 ng/ml, além de ultrassonografia abdominal, que revelou esteatose hepática moderada. Não tinha história de consumo de álcool, e as sorologias para hepatites B e C foram negativas. Estava assintomática. Ao exame físico, apresentava pressão arterial de 142/94 mmHg, circunferência abdominal de 102 cm, peso de 89 kg, altura de 165 cm (IMC de 32 kg/m2), abdômen globoso e hepatimetria de 14 cm na linha hemiclavicular. Com base no quadro, assinale a assertiva correta sobre MASLD (Metabolic disfunction-associated steatotic liver disease).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperferritinemia leve é incomum, devendo-se considerar hemocromatose hereditária o diagnóstico mais provável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A alteração de aminotransferases característica é AST > ALT, usualmente com níveis > 250 U/l.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A prevalência é maior em determinadas populações, podendo ser de aproximadamente 65% em indivíduos com diabetes melito tipo 2 e 90% em pacientes com obesidade grau 3.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A ultrassonografia abdominal apresenta elevada acurácia para o diagnóstico, com valor preditivo positivo de 90% e valor preditivo negativo de 98%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta o quadro clássico da Doença Hepática Esteatótica Associada à Disfunção Metabólica (MASLD, antiga DHGNA). O diagnóstico é corroborado pela presença de esteatose na ultrassonografia associada a fatores de risco metabólicos: obesidade (IMC de 32 kg/m²), circunferência abdominal aumentada (102 cm), hipertensão arterial e alteração da glicemia de jejum, além da exclusão de consumo abusivo de álcool e hepatites virais.\n\nALTERNATIVA A - INCORRETA\n\nA hiperferritinemia leve é, na verdade, muito comum em pacientes com MASLD, ocorrendo em cerca de um terço dos casos. Ela geralmente reflete o estado inflamatório sistêmico da síndrome metabólica e não necessariamente uma sobrecarga real de ferro (hemocromatose). Na hemocromatose hereditária, espera-se encontrar valores de ferritina muito mais elevados e, obrigatoriamente, uma saturação de transferrina elevada (geralmente acima de 45%), o que diferencia as duas condições.\n\nALTERNATIVA B - INCORRETA\n\nO padrão típico de alteração de aminotransferases na MASLD é a elevação leve de ALT (TGP) sobre a AST (TGO), ou seja, ALT maior que AST. A inversão dessa relação (AST maior que ALT) costuma sugerir progressão da doença para fibrose avançada ou cirrose, ou ainda apontar para etiologia alcoólica. Quanto aos valores, as transaminases na MASLD costumam ser inferiores a 200-300 U/l; níveis acima de 250 U/l são incomuns e devem levantar suspeita de outras hepatopatias agudas ou graves.\n\nALTERNATIVA C - CORRETA\n\nA prevalência da MASLD é diretamente proporcional à presença de componentes da síndrome metabólica. Estudos epidemiológicos confirmam que a doença atinge aproximadamente 60% a 70% dos pacientes com Diabetes Mellitus tipo 2. Em populações com obesidade grave (obesidade grau 3), a prevalência de esteatose hepática identificada em biópsias ou exames de imagem pode ultrapassar os 90%, tornando esta a assertiva correta.\n\nALTERNATIVA D - INCORRETA\n\nA ultrassonografia é o exame inicial de escolha por ser não invasivo e barato, mas sua acurácia não é tão elevada quanto a descrita. A sensibilidade do método cai consideravelmente quando o conteúdo de gordura no fígado é inferior a 20-30% ou em pacientes com IMC muito elevado, onde a atenuação do feixe de ultrassom dificulta a visualização. Os valores preditivos citados (90% e 98%) estão acima da performance real do método na prática clínica diária.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Cirrose Hepática",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  },
+  {
+    "id": "AJUDA_379e21ee-2194-4537-9032-8e3d8b5000b1",
+    "originalId": "379e21ee-2194-4537-9032-8e3d8b5000b1",
+    "statement": "Criança de 3 anos é internada para investigação de um quadro caracterizado por febre, fadiga, anorexia e dor em joelhos, iniciado há um mês. O exame físico mostra criança pálida, com sopro sistólico ++/6 audível em todo o precórdio, petéquias e púrpuras em membros inferiores, além de discretas linfadenopatia cervical e hepatoesplenomegalia. O exame osteoarticular revela artrite em joelhos. Os exames laboratoriais apresentam anemia, leucopenia, trombocitopenia e aumento da velocidade de hemossedimentação. A principal hipótese diagnóstica nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "leucemia linfoide aguda",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "púrpura trombocitopênica idiopática",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "artrite idiopática juvenil subtipo sistêmico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "vasculite por IgA (púrpura de Henoch Schonlein)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão apresenta um caso clínico clássico de uma criança com insuficiência medular e infiltração de tecidos, o que deve imediatamente levantar a suspeita de uma neoplasia hematológica.\n\nA alternativa (a) está correta, porque a Leucemia Linfoide Aguda (LLA) é o câncer mais comum na infância, com pico de incidência entre 2 e 5 anos de idade. O quadro clínico descrito é típico: a palidez, o sopro sistólico (secundário à anemia grave) e as petéquias/púrpuras (trombocitopenia) indicam a falência da medula óssea devido à ocupação por células blásticas. A linfadenopatia e a hepatoesplenomegalia indicam a infiltração dessas células em órgãos do sistema reticuloendotelial. Além disso, a dor óssea e a artrite são manifestações frequentes na LLA pediátrica, ocorrendo em cerca de 25% dos casos, muitas vezes confundindo o diagnóstico inicial com doenças reumatológicas. O hemograma confirmando a pancitopenia (anemia, leucopenia e trombocitopenia) associada a um marcador inflamatório alto (VHS) reforça essa hipótese.\n\nA alternativa (b) está incorreta, pois a Púrpura Trombocitopênica Idiopática (PTI) manifesta-se tipicamente como uma trombocitopenia isolada em uma criança que, nos demais aspectos, apresenta-se em bom estado geral. Na PTI, não se espera encontrar anemia, leucopenia, febre prolongada, hepatoesplenomegalia ou artrite.\n\nA alternativa (c) está incorreta porque, embora a Artrite Idiopática Juvenil (AIJ) sistêmica curse com febre, artrite e hepatoesplenomegalia, o perfil laboratorial é oposto ao do caso. Na AIJ sistêmica, observa-se geralmente leucocitose importante e trombocitose (elevação de plaquetas), e não a pancitopenia descrita. Além disso, o exantema da AIJ sistêmica é caracteristicamente macular e cor-de-salmão, diferente das petéquias e púrpuras (que indicam plaquetopenia).\n\nA alternativa (d) está incorreta, pois a Vasculite por IgA (antigamente chamada de Púrpura de Henoch-Schönlein) apresenta-se com púrpura palpável (principalmente em membros inferiores), artrite e dor abdominal. No entanto, os exames laboratoriais na vasculite por IgA costumam ser normais, especialmente a contagem de plaquetas, que está normal ou aumentada, nunca diminuída como no caso clínico apresentado.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  },
+  {
+    "id": "AJUDA_37a00cbd-5fab-4dbe-88d7-17ca5d5b620b",
+    "originalId": "37a00cbd-5fab-4dbe-88d7-17ca5d5b620b",
+    "statement": "Criança de 9 anos de idade, sexo masculino, procurou serviço médico pediátrico, com queixas de sinusite recorrente e vários episódios de pneumonia. Um exame de eletrólitos no suor mostrou resultado indeterminado. O diagnóstico diferencial a partir de agora inclui atopia, discinesia ciliar primária e:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Imunodeficiência primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aspergilose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fibrose Cística.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Doença de Kartagener.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Coccidioidomicose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta um escolar de 9 anos com quadro clínico clássico de infecções respiratórias de repetição (sinusites e pneumonias). Diante desse cenário, as principais hipóteses diagnósticas devem incluir fibrose cística (FC), discinesia ciliar primária, imunodeficiências primárias e atopia (asma/rinite).\n\nO ponto central da questão é o resultado \"indeterminado\" do teste do suor (dosagem de cloreto no suor). De acordo com as diretrizes atuais, os valores de referência para o cloreto no suor são:\n- Normal: menor ou igual a 29 mmol/L.\n- Indeterminado (ou limítrofe): entre 30 e 59 mmol/L.\n- Sugestivo de fibrose cística: maior ou igual a 60 mmol/L.\n\nQuando um paciente apresenta sintomas compatíveis e um teste do suor com resultado indeterminado, a fibrose cística não pode ser excluída. Pelo contrário, ela deve continuar sendo investigada como um dos principais diagnósticos diferenciais, exigindo a repetição do teste ou a realização de testes genéticos e de diferença de potencial nasal.\n\nAnálise das alternativas:\n\na) Imunodeficiência primária: Embora seja um diagnóstico diferencial importante para infecções de repetição, a questão foca na interpretação do teste do suor indeterminado. O teste do suor é específico para a investigação de fibrose cística. Além disso, em provas de residência, quando o enunciado cita um teste do suor inconclusivo, ele está direcionando o raciocínio para a manutenção da fibrose cística no rol de hipóteses.\n\nb) Aspergilose: A aspergilose broncopulmonar alérgica pode ocorrer em pacientes com fibrose cística ou asma, mas não é a causa primária das infecções de repetição desde a infância neste contexto clínico, nem guarda relação direta com a interpretação do teste do suor.\n\nc) Fibrose cística: Alternativa correta. Como o teste do suor resultou em um valor indeterminado (30-59 mmol/L), a doença permanece como uma forte suspeita diagnóstica. Muitos pacientes com mutações atípicas ou mais leves podem apresentar níveis de cloreto no suor nessa faixa limítrofe, necessitando de investigação complementar exaustiva para confirmar ou excluir o diagnóstico.\n\nd) Doença de Kartagener: Esta doença é um subtipo da discinesia ciliar primária (caracterizada pela tríade: situs inversus, bronquiectasias e sinusite). Como o enunciado já mencionou \"discinesia ciliar primária\" como parte do diferencial, a alternativa se torna redundante e menos abrangente que a opção (c).\n\ne) Coccidioidomicose: É uma infecção fúngica sistêmica endêmica em certas regiões, mas não se enquadra como um diagnóstico diferencial padrão para um quadro crônico de sinusites e pneumonias de repetição associado a uma investigação de cloreto no suor em uma criança de 9 anos.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Fibrose Cística"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  },
+  {
+    "id": "AJUDA_37a4128f-cee0-42a2-bc44-720a1027ce21",
+    "originalId": "37a4128f-cee0-42a2-bc44-720a1027ce21",
+    "statement": "Homem de 67 anos, portador de hipertensão arterial e doença coronariana, é admitido no pronto-socorro por quadro de dispneia intensa, ortopneia, confusão mental e oligúria.\nExame físico:\n• PA: 98/62 mmHg\n• FC: 118 bpm\n• FR: 28 irpm\n• SatO₂: 89% em ar ambiente\n• Extremidades frias, tempo de enchimento capilar >4s\n• Estertores crepitantes em bases pulmonares\n• Edema +++/4 em membros inferiores\nFoi iniciado oxigenoterapia e furosemida intravenosa, com diurese discreta.\nQual medida farmacológica pode ser associada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nitroprussiato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Noradrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dobutamina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Adrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Atropina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro de Insuficiência Cardíaca Aguda (ICA). Para definir a conduta, utilizamos a classificação hemodinâmica de Stevenson, que avalia a presença de congestão (quente vs. frio) e a qualidade da perfusão tecidual (seco vs. úmido).\n\nNo caso descrito:\n1. Sinais de congestão (ÚMIDO): Dispneia, ortopneia, estertores crepitantes e edema de membros inferiores.\n2. Sinais de baixa perfusão (FRIO): Confusão mental, oligúria, extremidades frias e tempo de enchimento capilar lentificado (>4s).\n\nPortanto, o paciente encontra-se no Perfil C (Úmido e Frio). Este é o perfil mais grave, pois combina a sobrecarga de volume com o baixo débito cardíaco. Embora a pressão arterial sistólica (98 mmHg) não esteja em níveis de choque profundo, há sinais evidentes de hipoperfusão tecidual.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Nitroprussiato: Incorreta. É um vasodilatador potente. Embora ajude a reduzir a pós-carga, seu uso em pacientes com sinais de baixa perfusão e pressão arterial limítrofe (abaixo de 100-110 mmHg) é arriscado, pois pode causar hipotensão severa e piorar a perfusão de órgãos vitais. É mais indicado no Perfil B (Úmido e Quente) com hipertensão.\n\nb) Noradrenalina: Incorreta. É um vasoconstritor potente com efeito inotrópico mínimo. Sua indicação principal é o choque distributivo ou casos de choque cardiogênico com hipotensão grave (PAS < 80-85 mmHg) para garantir a pressão de perfusão coronariana. No quadro atual, o foco deve ser a melhora da contratilidade cardíaca.\n\nc) Dobutamina: Correta. É a droga de escolha para o Perfil C (Úmido e Frio). Como um agente inotrópico positivo (estimulante beta-1), a dobutamina aumenta a contratilidade miocárdica e o débito cardíaco, melhorando a perfusão dos órgãos (ajudando a reverter a oligúria e a confusão mental) e facilitando a ação dos diuréticos, que já foram iniciados sem resposta satisfatória.\n\nd) Adrenalina: Incorreta. Possui forte ação inotrópica, mas também ação alfa-adrenérgica (vasoconstrição) e alto potencial arritmogênico. É reservada para situações de parada cardiorrespiratória ou choque refratário a outras medidas, não sendo a primeira escolha neste cenário de insuficiência cardíaca aguda.\n\ne) Atropina: Incorreta. É um anticolinérgico indicado para o tratamento de bradicardias sintomáticas. O paciente em questão já apresenta taquicardia (FC: 118 bpm) como mecanismo compensatório ao baixo débito.\n\nConclusão: O paciente necessita de suporte inotrópico para melhorar o débito cardíaco e a perfusão tecidual, sendo a Dobutamina a opção mais adequada.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Insuficiência Cardíaca",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  },
+  {
+    "id": "AJUDA_37aac83d-3683-4b55-bb6f-35ae74976682",
+    "originalId": "37aac83d-3683-4b55-bb6f-35ae74976682",
+    "statement": "Mulher de 25 anos chega ao ambulatório com queixa de corrimento claro, em pouca quantidade, sem prurido, com odor fétido, que se acentua durante a relação sexual e na menstruação, há um mês. Fez tratamento com fluconazol via oral sem melhora. Assinale a alternativa que apresenta corretamente o agente etiológico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trichomonas vaginalis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gardnerella vaginalis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Chlamydia trachomatis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Candida albicans.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nA paciente apresenta um quadro clássico de vaginose bacteriana. Os pontos-chave para o diagnóstico são: corrimento com odor fétido (descrito frequentemente como cheiro de peixe podre) que se acentua após o coito vaginal e durante o período menstrual. Esse fenômeno ocorre porque o sêmen e o sangue menstrual possuem pH alcalino, o que favorece a volatilização de aminas (como a putrescina e a cadaverina) produzidas por bactérias anaeróbias. Além disso, a ausência de sinais inflamatórios, como prurido ou dor, reforça o diagnóstico de vaginose em vez de vaginite.\n\nAnálise das Alternativas:\n\nAlternativa a) Trichomonas vaginalis: Incorreta. A tricomoníase é uma infecção sexualmente transmissível (IST) que causa uma vaginite inflamatória. O corrimento costuma ser abundante, amarelo-esverdeado, bolhoso e acompanhado de sintomas como prurido, disúria e dispareunia. Ao exame físico, é comum observar o colo com aspecto de framboesa (colpite focal).\n\nAlternativa b) Gardnerella vaginalis: Correta. É o principal agente etiológico associado à vaginose bacteriana. A condição não é considerada uma IST, mas sim um desequilíbrio da flora vaginal (disbiose), em que há redução dos lactobacilos (que mantêm o pH ácido) e um supercrescimento de bactérias anaeróbias, sendo a Gardnerella a mais prevalente. O quadro clínico descrito de odor fétido que piora com substâncias alcalinas é patognomônico dessa condição.\n\nAlternativa c) Chlamydia trachomatis: Incorreta. A clamídia é causa comum de cervicite (inflamação do colo do útero) e não de vaginose. Pode causar corrimento mucopurulento endocervical, dor pélvica ou ser assintomática, mas não se manifesta tipicamente com o odor fétido característico relatado no caso.\n\nAlternativa d) Candida albicans: Incorreta. A candidíase vulvovaginal manifesta-se com intenso prurido, ardor vaginal e corrimento branco, grumoso (aspecto de leite coalhado), sem odor fétido. A questão afirma explicitamente que a paciente não tem prurido e que o tratamento prévio com fluconazol (antifúngico de escolha para Candida) não teve sucesso, o que exclui essa hipótese.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  },
+  {
+    "id": "AJUDA_37bb92d2-7b65-49a7-bf0b-56f0ae3c2889",
+    "originalId": "37bb92d2-7b65-49a7-bf0b-56f0ae3c2889",
+    "statement": "Médico de 57 anos de idade veio trazido pela esposa à Unidade Básica de Saúde em virtude de alteração do comportamento há 2 anos. Antes disso, era uma pessoa funcional e não tinha doenças prévias diagnosticadas. O quadro se iniciou com irritabilidade e impulsividade, às vezes parecendo que havia \"perdido o freio mental\", falando o que \"vinha na cabeça\". Também passou a comer muito doce, algo que não era comum. Durante toda a consulta, o paciente demonstrava-se inquieto e, às vezes, fazia comentários jocosos. Na avaliação cognitiva, apresentava respostas impulsivas e estava um pouco desatento. Ao miniexame do estado mental, ele fez 26 pontos (perdeu 3 pontos nas subtrações seriadas e 1 no comando verbal). O exame clínico não tem outras alterações. Qual é a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Demência da doença de Alzheimer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno afetivo bipolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno de personalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Demência frontotemporal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão apresenta um caso clássico de Demência Frontotemporal (DFT), especificamente a variante comportamental. O paciente tem 57 anos, uma idade típica para o início das demências pré-senis (antes dos 65 anos). O quadro clínico é marcado por uma mudança progressiva na personalidade e na conduta social, sem que a memória seja o sintoma inicial ou predominante.\n\nA alternativa (d) está correta. A Demência Frontotemporal, variante comportamental, caracteriza-se por desinibição social (perda do \"freio mental\"), impulsividade, hiperoralidade (como a nova preferência por doces), comportamentos estereotipados ou repetitivos e perda de empatia ou tato social (comentários jocosos e inadequados). O fato de o paciente ser um médico anteriormente funcional reforça a quebra brusca com o padrão de personalidade prévio. No Miniexame do Estado Mental (MEEM), esses pacientes costumam ter uma pontuação relativamente alta no início, perdendo pontos em itens que exigem atenção e funções executivas (como o cálculo), enquanto a orientação e a memória imediata costumam estar preservadas, o que justifica os 26 pontos.\n\nA alternativa (a) está incorreta. Na Doença de Alzheimer, o sintoma inicial mais comum é o déficit de memória episódica (esquecimento de fatos recentes). Embora alterações comportamentais possam ocorrer, elas geralmente surgem em fases mais avançadas da doença. No caso relatado, a memória está relativamente preservada e o foco central são as alterações de comportamento e de controle de impulsos.\n\nA alternativa (b) está incorreta. O Transtorno Afetivo Bipolar geralmente se manifesta no início da vida adulta. O início de sintomas sugestivos de mania ou hipomania (irritabilidade, impulsividade, agitação) em um paciente de 57 anos, sem histórico psiquiátrico prévio e com caráter progressivo, deve sempre levantar a suspeita de uma causa orgânica/neurodegenerativa.\n\nA alternativa (c) está incorreta. Os transtornos de personalidade são padrões de comportamento e experiência interna persistentes que se iniciam na adolescência ou no início da idade adulta e permanecem estáveis ao longo da vida. Não se diagnostica transtorno de personalidade em um idoso ou adulto de meia-idade que era previamente funcional e apresentou uma mudança súbita e progressiva de comportamento.\n\nPortanto, o conjunto de idade de início precoce, desinibição social acentuada, alteração do hábito alimentar e preservação relativa das funções corticais globais (como visto no MEEM) aponta diretamente para a Demência Frontotemporal.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Demências",
+      "Saúde do Idoso"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:57.533Z"
+  }
+]

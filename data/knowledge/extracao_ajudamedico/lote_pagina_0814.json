@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_e2332233-8340-42b6-af66-a7c4dd9c32d5",
+    "originalId": "e2332233-8340-42b6-af66-a7c4dd9c32d5",
+    "statement": "Paciente, sexo masculino, 45 anos, chega ao pronto-socorro queixando-se de episódios recorrentes de dor de cabeça intensa, sudorese profusa e batimentos cardíacos acelerados. Ele relata que esses episódios ocorrem de forma súbita e duram cerca de 30 minutos, seguidos por uma sensação de fadiga. Ao exame físico, a pressão arterial do paciente é de 180/110 mmHg, e a frequência cardíaca é de 110 bpm. O paciente menciona que, nos últimos meses, tem sentido também palpitações. A principal suspeita diagnóstica com base nas informações do caso clínico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertensão essencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença cardíaca isquêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipotireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tumor secretor de catecolaminas (feocromocitoma).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta a tríade clássica composta por cefaleia, sudorese profusa e palpitações (taquicardia), ocorrendo de forma paroxística, ou seja, em episódios súbitos e recorrentes. Esse padrão é altamente sugestivo de uma descarga excessiva e intermitente de catecolaminas na circulação sanguínea.\n\nAlternativa a) Incorreta. A hipertensão essencial é a forma mais comum de pressão alta e costuma ser persistente e assintomática em suas fases iniciais. Embora possa apresentar picos de pressão, ela não justifica a ocorrência de crises súbitas com a tríade sintomática específica (cefaleia, sudorese e palpitações) e a duração curta seguida de exaustão relatada pelo paciente.\n\nAlternativa b) Incorreta. A doença cardíaca isquêmica manifesta-se tipicamente como dor ou desconforto torácico (angina), geralmente desencadeada por esforço físico ou estresse emocional. Embora a isquemia possa causar taquicardia e mal-estar, o quadro clínico de crises paroxísticas com sudorese profusa e cefaleia intensa não é o padrão típico dessa patologia.\n\nAlternativa c) Incorreta. O hipotireoidismo caracteriza-se por uma diminuição dos hormônios tireoidianos, levando a bradicardia (ritmo cardíaco lento), ganho de peso, intolerância ao frio e lentificação psicomotora. O quadro do paciente, com taquicardia e hipertensão, seria o oposto do esperado para essa condição. Mesmo o hipertireoidismo, que causa taquicardia, geralmente apresenta sintomas contínuos e não crises paroxísticas tão bem delimitadas como as descritas.\n\nAlternativa d) Correta. O feocromocitoma é um tumor produtor de catecolaminas (adrenalina e noradrenalina), geralmente localizado na medula da glândula adrenal. A liberação desses hormônios em jatos ou pulsos causa a tríade clássica descrita: cefaleia intensa, sudorese e palpitações/taquicardia, quase sempre acompanhada de hipertensão arterial severa durante as crises. O relato de que os sintomas duram cerca de 30 minutos e são seguidos por fadiga é um sinal patognomônico da exaustão pós-descarga adrenérgica, confirmando a principal suspeita diagnóstica.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  },
+  {
+    "id": "AJUDA_e2339dff-d47d-4081-949f-e630256f1328",
+    "originalId": "e2339dff-d47d-4081-949f-e630256f1328",
+    "statement": "Gestante de 22 anos, G3 P2 (normais), com gestação de 29 semanas e 3 dias, refere perda de líquido pela vagina, em grande quantidade, com odor de água sanitária, há 10 dias. Há 1 dia refere calafrios e mudança do odor do líquido para odor fétido. Ao exame REG, corada; desidratada; P: 120 ppm; PA: 80 x 65 mmHg; T: 38,2 ºC; BCF: 168 bpm; DU ausente; exame especular com saída de líquido com odor fétido pelo OE. Toque vaginal revela colo medianizado, amolecido, grosso e pérvio para 3,0 cm, cefálico com bolsa rôta. Ultrassom com anidramnio, peso no percentil 45 e Doppler normal. Hemograma com 18.500 leucócitos e 3 bastões. PCR 19. A conduta mais adequada para o caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "hidratação, antibioticoterapia e resolução por cesárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hidratação, antibioticoterapia, sulfato de magnésio e conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hidratação, antibioticoterapia, sulfato de magnésio e resolução por cesárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hidratação, antibioticoterapia e indução do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "hidratação, antibioticoterapia, sulfato de magnésio e indução do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descreve uma gestante de 29 semanas e 3 dias com Ruptura Prematura de Membranas Ovulares (RPMO) complicada por Corioamnionite clínica, evidenciada por febre (38,2 ºC), líquido amniótico fétido, taquicardia materna (120 bpm), taquicardia fetal (168 bpm), leucocitose e PCR elevada. A paciente também apresenta sinais de sepse (hipotensão e taquicardia).\n\nDiante de corioamnionite, a interrupção da gestação é mandatória, independentemente da idade gestacional. Os pilares do manejo incluem:\n1. Estabilização hemodinâmica com hidratação venosa;\n2. Antibioticoterapia venosa de amplo espectro imediata;\n3. Neuroproteção fetal com sulfato de magnésio, obrigatória para partos com menos de 32 semanas;\n4. Resolução da gestação, preferencialmente por via vaginal (indução), já que a cesárea aumenta significativamente a morbimortalidade infecciosa materna.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A corioamnionite não é indicação mandatória de cesariana; a via de escolha é a vaginal (indução), reservando a cesárea para indicações obstétricas clássicas. Além disso, a conduta omite a neuroproteção fetal com sulfato de magnésio.\n\nAlternativa B - Incorreta. A conduta expectante é formalmente contraindicada na vigência de infecção intra-amniótica, pois a manutenção da gestação perpetua o foco infeccioso e coloca em risco a vida materna e fetal.\n\nAlternativa C - Incorreta. A indicação de via de parto por cesárea como primeira escolha é inadequada. A via preferencial é a indução do parto vaginal, que apresenta menores taxas de complicações infecciosas maternas em comparação à cirurgia.\n\nAlternativa D - Incorreta. A conduta está incompleta, pois não prescreve o sulfato de magnésio para neuroproteção fetal, fundamental diante de parto iminente em gestação abaixo de 32 semanas para prevenção de paralisia cerebral.\n\nAlternativa E - Correta. Apresenta o conjunto de condutas adequado: hidratação venosa (estabilização hemodinâmica do quadro séptico), antibioticoterapia (combate à infecção intrauterina), sulfato de magnésio (neuroproteção em feto menor de 32 semanas) e indução do trabalho de parto (via preferencial de esvaziamento uterino na corioamnionite).",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  },
+  {
+    "id": "AJUDA_e23b6363-e148-4299-8915-335afbb276d2",
+    "originalId": "e23b6363-e148-4299-8915-335afbb276d2",
+    "statement": "Homem de 58 anos é diagnosticado com adenocarcinoma gástrico. A endoscopia digestiva alta mostra uma lesão úlcero-infiltrante localizada no terço proximal do estômago (cárdia e fundo gástrico), sendo procedida biópsia cujo laudo é compatível com adenocarcinoma. A tomografia computadorizada de abdome de estagiamento evidencia linfonodos regionais aumentados, sem sinais de metástases hepáticas ou peritoneais. O paciente tem bom estado clínico e função cardiopulmonar preservada. Considerando a localização tumoral e o objetivo de tratamento curativo, a estratégia cirúrgica mais adequada quanto à extensão da gastrectomia e do esvaziamento linfonodal seria:",
+    "options": [
+      {
+        "id": "A",
+        "text": "gastrectomia subtotal distal com linfadenectomia D1 (linfonodos perigástricos).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "gastrectomia proximal com linfadenectomia D1 (limitada aos linfonodos perigástricos).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "gastrectomia total com linfadenectomia D3, ou seja, incluindo os linfonodos para-aórticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "gastrectomia total com linfadenectomia D2, isto é, incluindo estações ao longo das artérias gástrica esquerda, esplênica e tronco celíaco.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso apresenta um paciente com adenocarcinoma gástrico no terço proximal (cárdia e fundo), com suspeita de acometimento linfonodal regional e bom estado clínico, o que indica uma conduta cirúrgica com intenção curativa.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A gastrectomia subtotal distal é indicada para tumores localizados no terço inferior (antro) do estômago. Para lesões no terço superior, essa técnica não permitiria margens de segurança oncológicas. Além disso, a linfadenectomia D1 (restrita aos linfonodos perigástricos) é considerada insuficiente em pacientes com potencial curativo e suspeita de metástases linfonodais.\n\nAlternativa b) Incorreta. Embora a gastrectomia proximal possa ser considerada em casos selecionados de tumores muito precoces do terço superior, ela frequentemente resulta em complicações como esofagite de refluxo grave. Da mesma forma que na alternativa anterior, a linfadenectomia D1 é considerada um esvaziamento incompleto para o tratamento padrão com intenção curativa no câncer gástrico avançado ou com linfonodos suspeitos.\n\nAlternativa c) Incorreta. A linfadenectomia D3 inclui a ressecção de linfonodos para-aórticos. Estudos clássicos (como o JCOG 9501) demonstraram que a extensão para o nível D3 aumenta a morbidade cirúrgica sem oferecer benefício de sobrevida global em comparação à técnica D2, não sendo recomendada como rotina.\n\nAlternativa d) Correta. Para tumores localizados no terço proximal (cárdia e fundo), a gastrectomia total é a cirurgia de escolha para garantir margens cirúrgicas livres. O esvaziamento linfonodal D2, que engloba tanto os linfonodos perigástricos (D1) quanto aqueles situados ao longo dos ramos do tronco celíaco (artérias gástrica esquerda, hepática comum, esplênica e o próprio tronco celíaco), é o padrão-ouro no tratamento do câncer gástrico com intenção curativa, pois oferece melhor controle regional e taxas de sobrevida superiores em pacientes com condições clínicas favoráveis.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  },
+  {
+    "id": "AJUDA_e24c9b05-94ba-42ca-8496-f6dfcc635ab4",
+    "originalId": "e24c9b05-94ba-42ca-8496-f6dfcc635ab4",
+    "statement": "Analisando-se grande número de pacientes com doença renal crônica, é mais provável nestes casos, dentre os abaixo, o achado de",
+    "options": [
+      {
+        "id": "A",
+        "text": "hipofosfatemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "plaquetopenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipoparatireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aumento da resistência à insulina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "redução do ânion gap.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. Na doença renal crônica (DRC), o que ocorre é a hiperfosfatemia. Com a queda da taxa de filtração glomerular, o rim perde a capacidade de excretar adequadamente o fósforo, levando ao seu acúmulo no sangue. Esse excesso de fósforo é um dos principais gatilhos para o distúrbio mineral e ósseo da DRC.\n\nAlternativa b) Incorreta. O distúrbio hematológico mais comum relacionado às plaquetas na uremia não é a redução do número (plaquetopenia), mas sim a disfunção qualitativa. As toxinas urêmicas prejudicam a adesão e a agregação plaquetária, resultando em um tempo de sangramento prolongado, mesmo com contagem de plaquetas frequentemente normal.\n\nAlternativa c) Incorreta. O achado clássico na DRC é o hiperparatireoidismo secundário. A retenção de fósforo, a redução dos níveis de cálcio livre e a deficiência de vitamina D ativa (calcitriol) estimulam as glândulas paratireoides a produzirem mais paratormônio (PTH) na tentativa de manter a homeostase mineral.\n\nAlternativa d) Correta. O aumento da resistência periférica à insulina é um achado metabólico muito comum em pacientes urêmicos. Esse fenômeno é multifatorial, envolvendo o acúmulo de toxinas urêmicas que interferem na sinalização intracelular do receptor de insulina, o estado inflamatório crônico característico da doença e alterações no metabolismo da vitamina D. Curiosamente, apesar da resistência, pacientes diabéticos que evoluem para insuficiência renal podem apresentar episódios de hipoglicemia, pois o rim também é responsável pela degradação da insulina exógena (prolongando sua meia-vida).\n\nAlternativa e) Incorreta. A DRC tipicamente causa acidose metabólica com ânion gap elevado (ou aumentado). Isso ocorre porque os rins deixam de excretar ânions não medidos, como fosfatos, sulfatos e outros ácidos orgânicos resultantes do metabolismo proteico, que acabam se acumulando na circulação.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  },
+  {
+    "id": "AJUDA_e253b8b8-9031-44b6-bbac-2add332bf097",
+    "originalId": "e253b8b8-9031-44b6-bbac-2add332bf097",
+    "statement": "Em relação aos exames complementares utilizados na pancreatite aguda, podemos afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "em casos de pancreatite leve, não é necessária a realização de tomografia computadorizada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a CPRE deve ser realizada de rotina para resolução da pancreatite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a amilase deve ser dosada diariamente para guiar a reintrodução de dieta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a ultrassonografia não apresenta boa sensibilidade para definição de etiologia da pancreatite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Esta alternativa está correta. O diagnóstico da pancreatite aguda é baseado no tripé: clínica compatível (dor abdominal em barra), alterações laboratoriais (amilase ou lipase superiores a três vezes o valor de referência) e exames de imagem. Se o paciente apresenta clínica e laboratório alterados, o diagnóstico já está firmado. Em casos de pancreatite leve, a tomografia computadorizada não traz benefícios iniciais, pois não altera a conduta e expõe o paciente à radiação e ao contraste desnecessários. A tomografia é reservada para casos de dúvida diagnóstica ou para avaliar complicações (como necrose) em pacientes que não apresentam melhora clínica após 48 a 72 horas de internação.\n\nAlternativa b: Esta alternativa está incorreta. A CPRE (Colangiopancreatografia Retrógrada Endoscópica) é um procedimento invasivo e possui riscos, inclusive o de agravar a pancreatite. Ela não deve ser feita de rotina. Sua indicação na pancreatite aguda biliar está restrita aos casos de colangite associada ou obstrução biliar persistente (icterícia progressiva).\n\nAlternativa c: Esta alternativa está incorreta. Os níveis séricos de amilase e lipase não guardam relação direta com a gravidade da doença nem com o tempo de recuperação do pâncreas. Uma vez estabelecido o diagnóstico, não há indicação de dosagens seriadas. A reintrodução da dieta deve ser baseada na clínica do paciente, observando-se a ausência de dor, a presença de ruídos hidroaéreos e o retorno do apetite.\n\nAlternativa d: Esta alternativa está incorreta. A ultrassonografia de abdome superior é, na verdade, o exame de escolha inicial para definir a etiologia da pancreatite. Ela possui alta sensibilidade para detectar cálculos na vesícula biliar (colelitíase), que é a causa mais comum de pancreatite aguda. Embora a visualização do pâncreas possa ser prejudicada por gases intestinais, o foco da ultrassonografia nesse contexto é a avaliação da via biliar.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  },
+  {
+    "id": "AJUDA_e2656796-5414-4aff-8c91-1ba1764f8bf2",
+    "originalId": "e2656796-5414-4aff-8c91-1ba1764f8bf2",
+    "statement": "Mulher de 38 anos, sem histórico de doenças relevantes, chega ao pronto-socorro com dor súbita e intensa no flanco esquerdo, associada a hematúria macroscópica. Não apresenta febre. Ao exame físico, apresenta dor a palpação na região do flanco esquerdo. A tomografia computadorizada mostra um cálculo de 6 mm no ureter distal esquerdo e uma leve dilatação do sistema coletor renal.\n\nQual é a melhor opção de manejo inicial para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cirurgia aberta para remoção do cálculo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação para observação e antibiótico profilático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Terapia medicamentosa expulsiva (por exemplo, com alfabloqueadores).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Litotripsia intracorpórea com laser.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico: Estamos diante de uma paciente jovem com quadro clássico de cólica nefrética (dor aguda em flanco e hematúria) causada por um cálculo ureteral de 6 mm localizado na porção distal do ureter. Não há sinais de complicações, como febre (que sugeriria infecção/pionefrose), insuficiência renal ou dor incoercível.\n\nAlternativa a) Incorreta. A cirurgia aberta para retirada de cálculos ureterais (ureterolitotomia aberta) caiu em desuso com o avanço das técnicas minimamente invasivas. Atualmente, é reservada apenas para casos excepcionais onde múltiplas tentativas endoscópicas falharam ou em situações anatômicas muito complexas. Um cálculo de 6 mm é pequeno e tem alta chance de eliminação com métodos menos invasivos.\n\nAlternativa b) Incorreta. A internação hospitalar é indicada em situações específicas: dor que não melhora com medicação venosa, presença de febre/infecção associada, rim único ou obstrução bilateral, e impossibilidade de hidratação oral por vômitos. No caso descrito, a paciente está estável e sem febre. O uso de antibiótico profilático não tem papel no tratamento de cálculos não infectados.\n\nAlternativa c) Correta. Esta é a conduta de escolha para cálculos ureterais distais entre 5 mm e 10 mm em pacientes clinicamente estáveis. A Terapia Medicamentosa Expulsiva (TME), geralmente realizada com alfabloqueadores (como a tansulosina), promove o relaxamento da musculatura lisa do ureter distal, facilitando a passagem do cálculo, aumentando as taxas de sucesso de eliminação espontânea e diminuindo a necessidade de analgésicos. Como o cálculo tem 6 mm e está bem localizado (ureter distal), a chance de eliminação é alta.\n\nAlternativa d) Incorreta. A litotripsia intracorpórea por ureteroscopia é um tratamento excelente e definitivo, porém é um procedimento invasivo que requer anestesia e ambiente cirúrgico. Pelas diretrizes urológicas atuais, em cálculos menores que 10 mm sem complicações, deve-se oferecer primeiro a chance de tratamento conservador (TME) por um período de 2 a 4 semanas antes de indicar uma intervenção cirúrgica.\n\nResumo do manejo: Para cálculos de ureter distal menores que 10 mm, sem sinais de infecção ou obstrução grave, a conduta inicial é analgesia e tentativa de eliminação espontânea auxiliada por bloqueadores alfa-adrenérgicos.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  },
+  {
+    "id": "AJUDA_e265a2a3-d469-4926-8d06-dd05f9b64c33",
+    "originalId": "e265a2a3-d469-4926-8d06-dd05f9b64c33",
+    "statement": "Na síndrome de hiperproliferação bacteriana intestinal são fatores de risco, a utilização de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sacarina e lactulose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Metoclorpropamida e domperidona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Clindamicina e amoxacilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Captopril e betabloqueadoes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Inibidores da bomba de hidrogênio e semaglutida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A Síndrome de Hiperproliferação Bacteriana Intestinal (conhecida pela sigla em inglês SIBO) ocorre quando há um aumento excessivo da população bacteriana no intestino delgado, que normalmente possui uma densidade bacteriana baixa. Para entender os fatores de risco, devemos lembrar que o organismo possui dois mecanismos principais de defesa contra esse sobrecrescimento: a acidez gástrica (que elimina bactérias ingeridas) e a motilidade intestinal (que promove uma \"limpeza\" mecânica através das ondas migratórias motoras).\n\nAlternativa (a) Incorreta. A sacarina é um edulcorante artificial e a lactulose é um açúcar não absorvível utilizado como laxante osmótico ou no tratamento da encefalopatia hepática. Embora a lactulose seja utilizada como substrato em testes expiratórios para o diagnóstico da SIBO, seu uso terapêutico habitual não é classificado como um fator de risco primário para o desenvolvimento da síndrome.\n\nAlternativa (b) Incorreta. A metoclopramida e a domperidona são agentes procinéticos. Eles estimulam a motilidade do trato gastrointestinal superior. Na verdade, drogas procinéticas são frequentemente utilizadas no tratamento e na prevenção da SIBO, pois auxiliam na depuração bacteriana ao evitar a estase intestinal.\n\nAlternativa (c) Incorreta. Clindamicina e amoxicilina são antibióticos. Embora o uso indiscriminado de antibióticos possa causar disbiose (desequilíbrio da flora), eles não são fatores predisponentes clássicos para a SIBO. Pelo contrário, o tratamento da hiperproliferação bacteriana baseia-se justamente no uso de antibióticos (como a rifaximina) para reduzir a carga bacteriana excessiva.\n\nAlternativa (d) Incorreta. O captopril (inibidor da ECA) e os betabloqueadores são medicamentos anti-hipertensivos. Eles não possuem efeitos diretos significativos na acidez gástrica ou na motilidade intestinal que justifiquem a predisposição ao sobrecrescimento bacteriano no intestino delgado.\n\nAlternativa (e) Correta. Esta alternativa contempla dois mecanismos fisiopatológicos centrais da SIBO:\n1. Inibidores da Bomba de Prótons (IBP): Medicamentos como o omeprazol reduzem drasticamente a produção de ácido clorídrico pelo estômago (hipocloridria). A ausência dessa barreira ácida permite que bactérias orofaríngeas e dietéticas sobrevivam e colonizem o intestino delgado.\n2. Semaglutida: É um agonista do receptor de GLP-1 que tem como um de seus efeitos colaterais marcantes o retardo do esvaziamento gástrico e a redução da motilidade intestinal. A estase (parada ou lentidão do fluxo do conteúdo intestinal) é um dos principais fatores que permitem a proliferação desordenada de bactérias.\n\nPortanto, a combinação de redução da defesa ácida e redução da motilidade torna os IBPs e os análogos de GLP-1 importantes fatores de risco a serem observados na prática clínica atual.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios Disabsortivos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  },
+  {
+    "id": "AJUDA_e267a3cc-d52c-4dd7-a5d2-8c2c907fdb38",
+    "originalId": "e267a3cc-d52c-4dd7-a5d2-8c2c907fdb38",
+    "statement": "A pontuação mínima no escore de Alvarado que indica a necessidade de intervenção cirúrgica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 pontos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "5 pontos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "7 pontos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "9 pontos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Escore de Alvarado, também conhecido pelo acrônimo MANTRELS, é uma escala de pontuação clínica desenhada para auxiliar no diagnóstico de apendicite aguda. A pontuação total vai de 0 a 10 pontos, baseada nos seguintes critérios:\n\n- Migração da dor para a fossa ilíaca direita (1 ponto)\n- Anorexia (1 ponto)\n- Náusea e/ou vômitos (1 ponto)\n- Dor à palpação na fossa ilíaca direita (2 pontos)\n- Descompressão dolorosa na fossa ilíaca direita (1 ponto)\n- Elevação da temperatura maior ou igual a 37,3 graus Celsius (1 ponto)\n- Leucocitose maior que 10.000/mm3 (2 pontos)\n- Desvio à esquerda no hemograma (1 ponto)\n\nA interpretação do escore direciona a conduta clínica:\n\nPontuação de 1 a 4: Baixa probabilidade de apendicite. A conduta costuma ser a investigação de outros diagnósticos ou observação domiciliar.\n\nPontuação de 5 a 6: Quadro equívoco ou possível apendicite. Recomenda-se a realização de exames de imagem (como tomografia ou ultrassonografia) ou observação hospitalar com reavaliação seriada.\n\nPontuação de 7 a 8: Alta probabilidade de apendicite (provável). É o ponto de corte utilizado para indicar a intervenção cirúrgica.\n\nPontuação de 9 a 10: Diagnóstico praticamente confirmado. Intervenção cirúrgica imediata.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Com 4 pontos, a probabilidade de apendicite é considerada baixa, não justificando a indicação cirúrgica imediata.\n\nAlternativa b) Incorreta. 5 pontos indicam um quadro equívoco. Antes de indicar cirurgia, o protocolo sugere exames complementares de imagem ou observação clínica.\n\nAlternativa c) Correta. O valor de 7 pontos é o limite mínimo definido pela literatura para classificar o quadro como alta probabilidade, sendo o indicativo clássico para a necessidade de intervenção cirúrgica.\n\nAlternativa d) Incorreta. Embora um paciente com 9 pontos certamente precise de cirurgia, o enunciado solicita a pontuação MÍNIMA para tal indicação, que é 7 pontos.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  },
+  {
+    "id": "AJUDA_e26c6757-3c7a-4271-98ab-eb51fc896969",
+    "originalId": "e26c6757-3c7a-4271-98ab-eb51fc896969",
+    "statement": "Uma mulher de 45 anos apresenta dor moderada e persistente no quadrante superior direito há algumas semanas, e o ultrassom abdominal diagnostica um hemangioma hepático periférico de 12,0 cm, com restante do fígado e vias biliares sem alterações. A abordagem mais indicada para a paciente deverá ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ressecção hepática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "embolização arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "terapia com radiofrequência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "transplante hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O hemangioma cavernoso é o tumor benigno mais comum do fígado. Na grande maioria dos casos, essas lesões são assintomáticas e diagnosticadas incidentalmente em exames de imagem, não necessitando de tratamento cirúrgico, independentemente do tamanho. No entanto, a intervenção torna-se indicada quando há a presença de sintomas importantes (como dor persistente ou efeito de massa) claramente atribuíveis à lesão, ou na ocorrência de complicações, como a ruptura (rara) ou a síndrome de Kasabach-Merritt.\n\nAlternativa A: Correta. A paciente apresenta um hemangioma gigante (definido por diâmetro superior a 4 ou 5 cm, neste caso, com 12 cm) e manifesta dor moderada e persistente. Uma vez que o restante do fígado e as vias biliares estão normais, a dor é atribuída ao efeito de massa ou à distensão da cápsula de Glisson pelo tumor. A ressecção hepática (seja por enucleação, que é o padrão-ouro por preservar o parênquima, ou hepatectomia formal) é o tratamento definitivo e indicado para pacientes sintomáticos com boa reserva funcional.\n\nAlternativa B: Incorreta. A embolização da artéria hepática pode ser utilizada em situações de urgência (como hemangioma roto com instabilidade hemodinâmica) ou como medida pré-operatória para reduzir o volume do tumor e o risco de sangramento intraoperatório. No entanto, não é considerada a terapia de escolha ou definitiva para um caso eletivo de hemangioma sintomático ressecável.\n\nAlternativa C: Incorreta. A terapia com radiofrequência (ablação térmica) é uma modalidade utilizada principalmente no tratamento de pequenas neoplasias malignas (como o carcinoma hepatocelular ou metástases selecionadas). Para hemangiomas gigantes de 12 cm, a radiofrequência é ineficaz, apresenta alto risco de complicações térmicas e risco de hemorragia devido à natureza vascular da lesão.\n\nAlternativa D: Incorreta. O transplante hepático é uma medida extrema e desproporcional para uma lesão benigna ressecável. Ele é reservado apenas para casos excepcionais de hemangiomatose massiva ou tumores gigantes irressecáveis que causem insuficiência hepática ou sintomas graves intratáveis que não podem ser resolvidos com a cirurgia convencional, o que não se aplica a este caso de lesão periférica.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  },
+  {
+    "id": "AJUDA_e26c974c-2eb9-4bd8-931b-8b9205662624",
+    "originalId": "e26c974c-2eb9-4bd8-931b-8b9205662624",
+    "statement": "Sobre as obstruções intestinais, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na obstrução intestinal por doença de Crohn agudizada, o tratamento cirúrgico está indicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No atendimento inicial, a hidratação deve ocorrer sem excesso, para evitar síndrome compartimental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Drenagem percutânea de abscesso intra-abdominal pode ser indicada para resolver quadro obstrutivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Na obstrução intestinal por enterite actínica, o tratamento cirúrgico é a opção de escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: Na fase aguda da doença de Crohn, a obstrução intestinal costuma ser causada por edema e processo inflamatório da parede do intestino. Nesses casos, o tratamento de escolha inicial é o manejo clínico com jejum, hidratação e corticoterapia sistêmica para reduzir o processo inflamatório. O tratamento cirúrgico é reservado para complicações como perfuração, isquemia ou obstruções causadas por estenoses fibróticas (cicatriciais), que não respondem ao tratamento medicamentoso.\n\nAlternativa (b) Incorreta: Pacientes com obstrução intestinal apresentam perdas volêmicas acentuadas devido a vômitos, sequestro de líquido para o lúmen intestinal e para o terceiro espaço (interstício). Portanto, a hidratação inicial deve ser vigorosa e agressiva para restaurar a perfusão tecidual e evitar a insuficiência renal pré-renal. Embora a monitorização seja necessária, o medo de síndrome compartimental não deve impedir a ressuscitação volêmica adequada no momento inicial.\n\nAlternativa (c) Correta: Abscessos intra-abdominais podem provocar obstrução intestinal por dois mecanismos: compressão extrínseca mecânica das alças adjacentes ou por meio de um íleo inflamatório (paralítico) localizado próximo à coleção. Em cenários selecionados, a drenagem percutânea guiada por imagem (ultrassonografia ou tomografia) permite o esvaziamento da coleção, reduzindo a resposta inflamatória e a pressão local, o que pode restaurar o trânsito intestinal sem a necessidade de uma laparotomia de urgência em um campo cirúrgico hostil.\n\nAlternativa (d) Incorreta: A enterite actínica é decorrente de danos teciduais por radioterapia, resultando em vasculite crônica e fibrose intensa. O tecido afetado é isquêmico e tem baixíssimo potencial de cicatrização. Devido ao alto risco de fístulas e deiscências de anastomoses no pós-operatório (abdome hostil), a cirurgia é evitada ao máximo, sendo o tratamento conservador a primeira opção. A intervenção cirúrgica é considerada o último recurso.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:14.088Z"
+  }
+]

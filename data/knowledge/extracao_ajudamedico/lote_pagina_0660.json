@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_b83d46ec-26c8-449e-91c6-1687eae16104",
+    "originalId": "b83d46ec-26c8-449e-91c6-1687eae16104",
+    "statement": "Homem de 44 anos, IMC 36 kg/m², apresenta esteatose hepática e dor crônica nos joelhos que limita suas atividades. Já tentou medidas de estilo de vida por 6 meses sem perda ponderal significativa. Segundo recomendações atuais, qual é a melhor conduta farmacológica inicial para tratamento da obesidade neste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever sibutramina como primeira escolha, por ser segura em pacientes com comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar agonista do receptor de GLP-1 (ex.: semaglutida), associado a mudanças de estilo de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Utilizar metformina isoladamente, mesmo sem diabetes, como principal estratégia de perda de peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar antidepressivos tricíclicos em baixas doses para reduzir o apetite e facilitar adesão à dieta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O paciente apresenta obesidade grau II (IMC de 36 kg/m²) e comorbidades associadas (esteatose hepática e dor articular crônica), além de falha documentada no tratamento não farmacológico (mudanças no estilo de vida) por 6 meses. Nesses casos, a introdução de farmacoterapia está formalmente indicada.\n\nAlternativa A: Incorreta. A sibutramina é um fármaco inibidor da recaptação de noradrenalina e serotonina que promove saciedade. Embora seja uma opção terapêutica, não é a primeira escolha neste cenário. Ela apresenta um perfil de efeitos colaterais mais robusto (como aumento da pressão arterial e da frequência cardíaca) e não possui os benefícios metabólicos específicos na esteatose hepática que outras classes mais modernas oferecem.\n\nAlternativa B: Correta. Os agonistas do receptor de GLP-1 (como a semaglutida e a liraglutida) são atualmente a primeira linha de tratamento farmacológico para obesidade em pacientes com o perfil descrito. Estudos clínicos (como os do programa STEP) demonstram que a semaglutida promove perda ponderal significativamente superior aos demais fármacos orais, além de atuar diretamente na redução da gordura hepática, tratando a esteatose do paciente. O impacto na perda de peso também auxilia na redução da carga mecânica sobre os joelhos.\n\nAlternativa C: Incorreta. A metformina é uma excelente medicação para o tratamento do diabetes mellitus tipo 2 e da resistência insulínica, mas não é considerada uma droga potente para o tratamento da obesidade. A perda de peso associada à metformina é modesta e não atende às necessidades de um paciente com IMC de 36 que precisa de redução ponderal expressiva.\n\nAlternativa D: Incorreta. Os antidepressivos tricíclicos não têm papel no tratamento da obesidade. Na verdade, a maioria dos fármacos desta classe, como a amitriptilina, tem como efeito colateral comum o ganho de peso e o aumento do apetite, o que seria prejudicial ao paciente em questão.\n\nEm resumo, a alternativa B é a correta, pois a semaglutida oferece a maior eficácia em perda de peso entre as opções citadas e traz benefícios adicionais para a esteatose hepática do paciente.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  },
+  {
+    "id": "AJUDA_b841db6c-04fd-44d9-9484-5bd8e2429116",
+    "originalId": "b841db6c-04fd-44d9-9484-5bd8e2429116",
+    "statement": "Mulher de 50 anos com diagnóstico de cirrose hepática, de etiologia não alcoólica e não viral, refere que há 1 semana evoluiu com melena e hematêmese de grande volume e realizou ligadura de varizes esofágicas há 5 dias. A melhor opção medicamentosa para profilaxia secundária para sangramento das varizes esofágicas neste caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "ácido tranexâmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fitomenadiona (vitamina K1).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "bloqueador de canal de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "nitrato.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve uma paciente cirrótica que apresentou um episódio de sangramento digestivo alto por varizes esofágicas. Uma vez que o sangramento agudo foi controlado (neste caso, com ligadura elástica há 5 dias), o próximo passo fundamental é instituir a profilaxia secundária, pois o risco de ressangramento em pacientes sem tratamento é superior a 60% em um ano.\n\nA recomendação atual dos consensos internacionais (como o Baveno VII) para a profilaxia secundária é a terapia combinada: associação de métodos endoscópicos (Ligadura Elástica de Varizes — LEV) e tratamento farmacológico com betabloqueadores não seletivos (como propranolol, nadolol ou carvedilol).\n\nExplicação das alternativas:\n\na) Incorreta. O ácido tranexâmico é um antifibrinolítico utilizado em sangramentos em outros contextos, como trauma ou cirurgias específicas. Não há evidência de benefício no seu uso para o manejo de hipertensão portal ou prevenção de ressangramento varicoso.\n\nb) Incorreta. A fitomenadiona (vitamina K1) é utilizada para corrigir distúrbios de coagulação em pacientes com deficiência desta vitamina. Embora cirróticos possam ter o tempo de protrombina alargado, a vitamina K não atua na redução da pressão portal, que é o mecanismo fisiopatológico responsável pelo sangramento das varizes.\n\nc) Incorreta. Bloqueadores de canal de cálcio são medicamentos anti-hipertensivos sistêmicos. Eles não possuem papel na redução da pressão venosa portal e não são indicados para a profilaxia de varizes esofágicas.\n\nd) Correta. Os betabloqueadores não seletivos (como o propranolol) são a base da terapia farmacológica. Eles agem por dois mecanismos principais: reduzem o débito cardíaco (via bloqueio beta-1) e provocam vasoconstrição esplâncnica (via bloqueio beta-2, permitindo a ação alfa-adrenérgica sem oposição). Isso resulta em uma diminuição significativa do fluxo sanguíneo para o sistema porta e, consequentemente, da pressão dentro das varizes, reduzindo o risco de novos episódios de hemorragia.\n\ne) Incorreta. Os nitratos (como o mononitrato de isossorbida) já foram utilizados no passado como terapia adjuvante para reduzir a pressão portal. No entanto, o seu uso isolado é inferior aos betabloqueadores e, atualmente, não são considerados a melhor opção medicamentosa inicial devido ao perfil de efeitos colaterais e à maior eficácia comprovada dos betabloqueadores associados à terapia endoscópica.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  },
+  {
+    "id": "AJUDA_b84565ed-9d9b-46e6-adaf-fa433f420e09",
+    "originalId": "b84565ed-9d9b-46e6-adaf-fa433f420e09",
+    "statement": "O método clínico centrado na pessoa constitui ferramenta imprescindível para o médico de família e comunidade e possui quatro componentes. Desenhar um ecomapa é um exemplo da aplicação de qual componente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1º componente: explorando a saúde, a doença e a experiência da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2º componente: entendendo a pessoa como um todo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "3º componente: elaborando um plano conjunto de manejo dos problemas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4º componente: fortalecendo a relação médico-paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Método Clínico Centrado na Pessoa (MCCP) é a base da Medicina de Família e Comunidade, estruturado atualmente em quatro componentes principais. Para responder corretamente a essa questão, é necessário identificar em qual desses pilares se encaixa o uso de ferramentas de abordagem familiar e comunitária, como o ecomapa.\n\nAlternativa a) Incorreta. O 1º componente foca em explorar a doença (o processo fisiopatológico) e a experiência da doença (o que o paciente sente). Aqui, utiliza-se o mnemônico SIFE: Sentimentos do paciente em relação ao problema, suas Ideias sobre o que está acontecendo, como o problema afeta seu Funcionamento (rotina) e quais são suas Expectativas com a consulta. O ecomapa vai além da experiência individual da doença.\n\nAlternativa b) Correta. O 2º componente busca entender a pessoa como um todo, inserida em seu contexto. Isso envolve compreender o estágio do ciclo de vida, a dinâmica familiar e o meio social em que o indivíduo vive. O ecomapa é justamente a representação gráfica das relações do indivíduo ou da família com o seu meio social (amigos, trabalho, igreja, serviços de saúde, lazer). Junto com o genograma, o ecomapa é uma das principais ferramentas para operacionalizar este segundo componente, permitindo visualizar a rede de apoio e as tensões sociais do paciente.\n\nAlternativa c) Incorreta. O 3º componente refere-se à elaboração de um plano conjunto de manejo. É a etapa da negociação, onde médico e paciente definem prioridades, estabelecem metas terapêuticas e decidem, de comum acordo, quais passos serão seguidos no tratamento. O ecomapa pode auxiliar a subsidiar decisões, mas sua construção em si faz parte da compreensão do contexto, e não da pactuação do plano.\n\nAlternativa d) Incorreta. O 4º componente trata de fortalecer a relação médico-paciente. Ele permeia toda a consulta e foca na continuidade do cuidado, na empatia, na confiança e no uso terapêutico da própria relação entre profissional e paciente. Embora o uso de ferramentas como o ecomapa possa demonstrar interesse e fortalecer o vínculo, sua classificação técnica dentro do método clínico é no componente de compreensão da pessoa no seu contexto social.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  },
+  {
+    "id": "AJUDA_b8458b2e-60aa-4c45-be8f-bedc83469bcc",
+    "originalId": "b8458b2e-60aa-4c45-be8f-bedc83469bcc",
+    "statement": "Menino, 4 anos, apresenta parada da eliminação de flatus e fezes há 4 dias. Evoluiu com distensão abdominal progressiva, inapetência e febre. Antecedentes: constipação intestinal desde o período neonatal. Eliminou mecônio com 16 horas de vida. Informante refere necessidade frequente de estímulo com supositório para evacuação. Nega eliminação de fezes explosivas ao toque. Três internações por enterocolite com 8 meses, 1 ano e 2 anos de idade. Exame físico: regular estado geral, febril (38°C), desidratado (+1/+4), corado, eupneico. Abdome: distendido, ruídos hidroaéreos diminuídos, sem sinais de irritação peritoneal. Timpânico à percussão. Após radiografia simples de abdome, o paciente foi internado. Prescrita lavagem intestinal, hidratação endovenosa e antibioticoterapia. Diagnóstico do plantonista foi de doença de Hirschsprung. Qual dado é mais compatível com o diagnostico de plantonista?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eliminação de mecônio após 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enterocolites de repetição.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ausência de fezes explosivas ao toque.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sexo masculino.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O diagnóstico clínico da Doença de Hirschsprung (ou megacólon agangliônico congênito) baseia-se na história de constipação intestinal de início precoce, frequentemente desde o nascimento, associada a episódios de obstrução intestinal e complicações inflamatórias. Abaixo, analiso cada alternativa com base no quadro clínico apresentado e nos critérios diagnósticos da patologia:\n\nAlternativa a) Incorreta. A maioria dos recém-nascidos saudáveis (cerca de 95 a 98%) elimina o mecônio nas primeiras 24 a 48 horas de vida. Na Doença de Hirschsprung, o dado clássico é o atraso na eliminação do mecônio para além das 48 horas. No caso clínico, o paciente eliminou com 16 horas, o que é considerado dentro do intervalo de normalidade, não reforçando o diagnóstico.\n\nAlternativa b) Correta. A enterocolite associada à Doença de Hirschsprung é a complicação mais grave e uma das principais causas de mortalidade nesses pacientes. Ela ocorre devido à estase fecal e ao supercrescimento bacteriano no segmento dilatado (proximal ao segmento agangliônico). A ocorrência de três internações prévias por enterocolite em uma criança com constipação crônica é um marcador clínico fortíssimo e altamente compatível com a Doença de Hirschsprung.\n\nAlternativa c) Incorreta. Um sinal físico clássico da Doença de Hirschsprung é o \"sinal do furador\" ou \"saída explosiva de fezes e gases\" após a realização do toque retal, devido à descompressão temporária do segmento obstruído. O enunciado afirma que a informante nega esse achado, portanto, a ausência de fezes explosivas não corrobora o diagnóstico; pelo contrário, é um dado que, se presente, ajudaria a confirmá-lo.\n\nAlternativa d) Incorreta. Embora a Doença de Hirschsprung seja significativamente mais comum no sexo masculino (proporção de aproximadamente 4:1), o sexo do paciente é apenas um dado epidemiológico. Em uma questão que busca o dado \"mais compatível\" entre achados clínicos e complicações, a presença de enterocolites de repetição (alternativa b) possui maior valor diagnóstico e gravidade clínica do que apenas o gênero do paciente.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Constipação Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  },
+  {
+    "id": "AJUDA_b87cb1d3-7788-4e8a-ab3a-1a6404a7b44f",
+    "originalId": "b87cb1d3-7788-4e8a-ab3a-1a6404a7b44f",
+    "statement": "Adolescente de 16 anos procura atendimento por ausência de menstruação. Refere desenvolvimento normal das mamas e nega história de dor pélvica cíclica. Ao exame físico, apresenta mamas em Tanner 5, ausência de pelos pubianos e axilares, genitália externa feminina com introito vaginal curto e fundo de saco cego. O exame ultrassonográfico não identifica útero nem ovários, mas evidencia estruturas ovaladas na topografia inguinal. Qual é o cariótipo compatível com o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "45,X.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "46,XX,+21.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "46,XX.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "46,XY.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "47,XXY.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta é uma questão clássica de amenorreia primária que exige a diferenciação entre as principais causas de ausência de útero em pacientes com fenótipo feminino. O diagnóstico mais provável para o caso clínico é a Síndrome de Insensibilidade Androgênica Completa (também conhecida como Síndrome de Morris).\n\nA paciente apresenta mamas bem desenvolvidas (Tanner 5), o que indica a presença de estrogênio. No entanto, a ausência de pelos pubianos e axilares é o \"pulo do gato\" da questão: isso sinaliza que o corpo não responde aos androgênios (testosterona). Na Síndrome de Morris, o indivíduo é geneticamente masculino (46,XY) e possui testículos (as estruturas ovaladas na região inguinal), que produzem testosterona e hormônio antimülleriano (HAM). O HAM impede o desenvolvimento do útero, das tubas e da porção superior da vagina. A testosterona produzida pelos testículos não consegue agir nos tecidos devido a um defeito nos receptores, mas é convertida perifericamente em estrogênio, o que promove o desenvolvimento das mamas.\n\nAnálise das alternativas:\n\na) 45,X: Corresponde à Síndrome de Turner. Pacientes com Turner geralmente apresentam baixa estatura, pescoço alado e gônadas em fita (disgenesia gonadal). Elas possuem útero (pois não há HAM) e não apresentam desenvolvimento mamário espontâneo (pela falta de estrogênio ovariano), a menos que façam reposição hormonal. Além disso, possuem pelos pubianos normais.\n\nb) 46,XX,+21: Corresponde à Síndrome de Down (trissomia do 21). Mulheres com Síndrome de Down possuem cariótipo feminino e anatomia reprodutiva interna e externa feminina convencional (presença de útero e ovários).\n\nc) 46,XX: Este cariótipo é encontrado na Síndrome de Mayer-Rokitansky-Küster-Hauser (agenesia mülleriana). É o principal diagnóstico diferencial deste caso. Assim como na Síndrome de Morris, a paciente com Rokitansky não possui útero e tem vagina curta. No entanto, em Rokitansky, a paciente possui ovários normais e receptores de androgênio funcionantes; portanto, ela apresenta pelos pubianos e axilares normais, ao contrário da paciente descrita no enunciado.\n\nd) 46,XY: Alternativa correta. Define a Síndrome de Insensibilidade Androgênica Completa. O indivíduo possui genótipo masculino, mas o fenótipo é feminino devido à incapacidade de resposta aos androgênios. A ausência de pelos, a presença de mamas, a ausência de útero (pela ação do HAM) e a presença de testículos inguinais confirmam esse diagnóstico.\n\ne) 47,XXY: Corresponde à Síndrome de Klinefelter. Indivíduos com esse cariótipo possuem fenótipo masculino, geralmente com estatura elevada, testículos pequenos e ginecomastia, o que não condiz com a genitália externa feminina e o quadro clínico relatado.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  },
+  {
+    "id": "AJUDA_b88e9eed-0506-43b4-be74-35a68bc8742b",
+    "originalId": "b88e9eed-0506-43b4-be74-35a68bc8742b",
+    "statement": "Um paciente com esquizofrenia em fase crônica apresenta progressivo isolamento social, ausência de iniciativa para realizar atividades, incapacidade de sentir prazer em atividades que antes o gratificavam e fala cada vez mais reduzida e monótona. Identifique o conjunto de sintomas negativos que caracteriza este padrão de apresentação clínica crônica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abulia, alogia, anedonia e embotamento afetivo com retração social e empobrecimento global da vida psíquica, cognitiva e social do indivíduo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apatia isolada sem comprometimento das funções linguísticas e mantendo capacidade de sentir prazer com atividades específicas do ambiente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sintomas positivos residuais com alucinações auditivas persistentes que explicam secundariamente o isolamento social observado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ausência de crítica com recusa absoluta de todas as formas de interação sem prejuízo da fluência verbal e produção de linguagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipomodulação afetiva restrita apenas à esfera emocional sem atingir aspectos volitivos ou da linguagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A esquizofrenia é uma patologia psiquiátrica complexa cujos sintomas são didaticamente divididos em dois grandes grupos: os sintomas positivos (delírios e alucinações) e os sintomas negativos. A questão foca especificamente no quadro clínico de um paciente crônico que apresenta o chamado déficit esquizofrênico, caracterizado pelo predomínio da sintomatologia negativa.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: Esta alternativa correlaciona perfeitamente os achados clínicos descritos no enunciado com a terminologia técnica correta. A ausência de iniciativa é denominada abulia; a fala reduzida e monótona caracteriza a alogia; a incapacidade de sentir prazer é a anedonia; e a redução da expressividade emocional é o embotamento afetivo. O conjunto desses sintomas resulta na retração social e no empobrecimento global do funcionamento do indivíduo, marcas da fase crônica ou residual da doença.\n\nAlternativa (b) Incorreta: A descrição do enunciado vai muito além de uma apatia isolada. Há um comprometimento evidente da linguagem (fala reduzida) e da capacidade de sentir prazer (anedonia), o que invalida a afirmação de que não haveria prejuízo nessas áreas.\n\nAlternativa (c) Incorreta: O enunciado descreve sintomas negativos. Sintomas positivos são caracterizados por excessos ou distorções das funções normais, como alucinações (percepções sem objeto) e delírios (crenças falsas e inabaláveis). Embora possam coexistir na fase crônica, o quadro descrito foca especificamente no déficit e não em sintomas produtivos.\n\nAlternativa (d) Incorreta: Embora o paciente possa ter perda de crítica sobre sua condição, a alternativa afirma erroneamente que não há prejuízo da fluência verbal e da produção de linguagem. O enunciado deixa claro que a fala está cada vez mais reduzida e monótona, o que caracteriza a alogia.\n\nAlternativa (e) Incorreta: O erro desta alternativa reside na restrição. A hipomodulação afetiva (embotamento) na esquizofrenia crônica raramente ocorre isolada; ela costuma estar intrinsecamente ligada ao prejuízo da vontade (aspectos volitivos) e ao empobrecimento do pensamento e da linguagem. O enunciado confirma que o paciente apresenta falta de iniciativa e redução da fala.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Transtornos Psicóticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  },
+  {
+    "id": "AJUDA_b8910f0e-3d2b-451b-8982-07ee8050e0c8",
+    "originalId": "b8910f0e-3d2b-451b-8982-07ee8050e0c8",
+    "statement": "Um usuário do SUS, ao enfrentar dificuldades persistentes para conseguir consulta na Unidade de Saúde, deseja registrar uma reclamação formal para que sua demanda individual seja processada e mediada pela gestão. Considerando os diferentes instrumentos de gestão participativa e controle social previstos na estrutura do Sistema Único de Saúde (SUS), qual é o canal institucional primário e mais apropriado para o acolhimento e tratamento deste tipo de manifestação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Conselho Municipal de Saúde, por ser a instância de controle social responsável pela deliberação e fiscalização das políticas públicas de saúde em nome da coletividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A Ouvidoria-Geral do SUS, por ser o canal de escuta ativa desenhado para mediar conflitos e processar manifestações individuais (reclamações, denúncias, sugestões) do cidadão perante a gestão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O Departamento Nacional de Auditoria do SUS (Denasus), por ser o órgão responsável por apurar irregularidades na aplicação de recursos financeiros e na conformidade dos serviços.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O Ministério Público Estadual, por ser a instituição jurídica externa ao SUS acionada para a judicialização de demandas de saúde e defesa de direitos coletivos ou individuais difusos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A Secretaria Municipal de Saúde, por ser o órgão gestor responsável pela organização, planejamento e execução das ações e serviços de saúde no âmbito do município.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa (b) – Correta: A Ouvidoria-Geral do SUS é o canal institucional especificamente desenhado para ser o instrumento de cidadania e o elo entre o usuário e a gestão. Sua função principal é acolher as manifestações individuais, como reclamações, denúncias, sugestões ou elogios, mediando conflitos e buscando soluções para problemas pontuais (como a dificuldade em marcar consultas). Além disso, a Ouvidoria transforma essas demandas em relatórios que auxiliam o gestor na tomada de decisões e na melhoria dos serviços.\n\nAlternativa (a) – Incorreta: O Conselho Municipal de Saúde é uma instância de controle social com caráter deliberativo e permanente. Sua função é atuar na formulação de estratégias, no controle da execução das políticas de saúde e na fiscalização financeira. O Conselho trata de questões coletivas e diretrizes gerais, não sendo o canal administrativo primário para o processamento de queixas individuais sobre a marcação de consultas.\n\nAlternativa (c) – Incorreta: O Denasus (Departamento Nacional de Auditoria do SUS) é o braço do Sistema Nacional de Auditoria. Sua finalidade é auditar e fiscalizar a aplicação dos recursos federais do SUS e a conformidade técnica dos serviços. Embora possa investigar irregularidades graves, ele não funciona como um serviço de atendimento ao cidadão para a resolução de demandas assistenciais individuais.\n\nAlternativa (d) – Incorreta: O Ministério Público é uma instituição jurídica externa ao SUS. Ele atua na defesa da ordem jurídica e dos interesses sociais e individuais indisponíveis. Embora o cidadão possa recorrer ao MP para garantir seu direito à saúde (judicialização), esta é uma via externa e geralmente utilizada após o esgotamento das vias administrativas institucionais ou em casos de omissão grave do Estado.\n\nAlternativa (e) – Incorreta: A Secretaria Municipal de Saúde é o órgão gestor responsável pela execução das ações de saúde. Embora seja a responsável final pela organização do serviço, a questão pede o \"canal institucional\" e \"instrumento de gestão participativa\" específico para o acolhimento da manifestação. Dentro da estrutura da Secretaria, esse canal é justamente a Ouvidoria. Portanto, a alternativa (b) é mais específica e tecnicamente correta.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  },
+  {
+    "id": "AJUDA_b89202f6-a8ae-41a5-a3ca-6906e0b9b224",
+    "originalId": "b89202f6-a8ae-41a5-a3ca-6906e0b9b224",
+    "statement": "A última doença erradicada no Brasil graças às campanhas de vacinação do Programa Nacional de Imunização (PNI) é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rubéola.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Varíola.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Poliomielite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão exige conhecimento sobre a cronologia de eliminação de doenças no Brasil e o status epidemiológico atual. É importante destacar que, tecnicamente, a única doença erradicada (extinta globalmente) é a varíola, enquanto as outras foram eliminadas (interrupção da transmissão em uma região específica). Contudo, as bancas de concursos frequentemente utilizam os termos como sinônimos.\n\nAlternativa A: Sarampo. Incorreta. O Brasil chegou a receber o certificado de eliminação do sarampo em 2016. Entretanto, devido à queda nas coberturas vacinais, o vírus voltou a circular de forma sustentada a partir de 2018, o que fez com que o país perdesse o status de país livre do sarampo em 2019. Atualmente, o sarampo é considerado uma doença endêmica no Brasil, aguardando novas ações para recuperação do certificado.\n\nAlternativa B: Rubéola. Correta. O Brasil recebeu a certificação internacional de eliminação da rubéola e da Síndrome da Rubéola Congênita (SRC) em abril de 2015, pela Organização Pan-Americana da Saúde (OPAS). Diferente do sarampo, o país tem mantido a interrupção da transmissão do vírus da rubéola desde então, sendo a conquista mais recente de eliminação definitiva listada nas alternativas.\n\nAlternativa C: Varíola. Incorreta. Foi a primeira doença a ser erradicada no mundo e no Brasil. O último caso em território brasileiro foi registrado em 1971 e a erradicação global foi declarada pela Organização Mundial da Saúde (OMS) em 1980.\n\nAlternativa D: Poliomielite. Incorreta. O último caso de poliomielite causado pelo vírus selvagem no Brasil ocorreu em 1989, na Paraíba. O certificado de eliminação da doença nas Américas foi concedido em 1994. Portanto, embora seja uma vitória do Programa Nacional de Imunização (PNI), sua eliminação ocorreu muito antes da rubéola.\n\nGabarito: Letra B.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Imunizações"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  },
+  {
+    "id": "AJUDA_b89bbcb1-75bf-497b-bb89-27f57094857d",
+    "originalId": "b89bbcb1-75bf-497b-bb89-27f57094857d",
+    "statement": "O trato urinário baixo feminino é inervado pelos três sistemas: o simpático, o parassimpático e o autônomo. Os nervos que representam cada um desses sistemas são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nervo hipogástrico; nervo pudendo; nervo pélvico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nervo pudendo; nervo hipogástrico; nervo pélvico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nervo pélvico; nervo pudendo; nervo hipogástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nervo hipogástrico; nervo pélvico; nervo pudendo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nervo pudendo; nervo pélvico; nervo hipogástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A fisiologia da micção e o controle do trato urinário baixo feminino dependem de uma coordenação precisa entre três componentes principais do sistema nervoso. Para responder a essa questão, é fundamental correlacionar cada sistema com seu respectivo nervo:\n\n1. Sistema Simpático: O principal mediador é o nervo hipogástrico. Suas fibras originam-se nos níveis de T10 a L2 da medula espinhal. Ele atua predominantemente na fase de enchimento vesical, promovendo o relaxamento do músculo detrusor (via receptores beta-adrenérgicos) e a contração do esfíncter uretral interno (via receptores alfa-adrenérgicos), impedindo a saída de urina.\n\n2. Sistema Parassimpático: O principal mediador é o nervo pélvico. Suas fibras originam-se nos níveis de S2 a S4 da medula sacral. Ele é o responsável pela fase de esvaziamento (micção), promovendo a contração do músculo detrusor através de receptores colinérgicos (muscarínicos M3).\n\n3. Sistema Somático (referido no enunciado como o terceiro sistema): O nervo representante é o nervo pudendo, que também se origina em S2-S4. Ele fornece a inervação voluntária para o esfíncter uretral externo e para a musculatura do assoalho pélvico, permitindo que a pessoa interrompa ou segure a micção conscientemente.\n\nObservação sobre o enunciado: Existe uma imprecisão terminológica na questão ao citar simpático, parassimpático e autônomo, uma vez que o sistema autônomo é o conjunto formado justamente pelo simpático e parassimpático. O terceiro sistema envolvido é o somático. Contudo, em concursos, deve-se buscar a tríade clássica de nervos: hipogástrico, pélvico e pudendo.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O nervo pudendo representa o sistema somático, não o parassimpático. O nervo pélvico representa o parassimpático, não o somático.\n\nAlternativa b) Incorreta. O nervo pudendo é somático, não simpático. O nervo hipogástrico é simpático, não parassimpático.\n\nAlternativa c) Incorreta. O nervo pélvico é parassimpático, não simpático. O nervo pudendo é somático, não parassimpático.\n\nAlternativa d) Correta. Apresenta a sequência exata solicitada: Simpático (Nervo Hipogástrico), Parassimpático (Nervo Pélvico) e o sistema de controle voluntário/esfincteriano (Nervo Pudendo).\n\nAlternativa e) Incorreta. O nervo pudendo é somático, não simpático. O nervo hipogástrico é simpático, não somático.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  },
+  {
+    "id": "AJUDA_b89c6e63-8242-4760-b436-c7166190ee84",
+    "originalId": "b89c6e63-8242-4760-b436-c7166190ee84",
+    "statement": "Mulher de 55 anos, previamente submetida à histerectomia total por miomatose uterina benigna, comparece à unidade básica de saúde solicitando agendamento de exame preventivo. Segundo as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (2025), qual deve ser a conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender o rastreamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar colposcopia anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar citologia vaginal anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter rastreamento a cada 3 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A conduta para o rastreamento do câncer do colo do útero em mulheres submetidas à cirurgia uterina baseia-se na presença ou ausência do colo do útero e no motivo que levou ao procedimento cirúrgico. No caso em questão, a paciente realizou uma histerectomia total (retirada do corpo e do colo uterino) por uma patologia benigna (miomatose).\n\nAlternativa a: Esta é a alternativa correta. De acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, mulheres que realizaram histerectomia total por lesões benignas, sem histórico de lesões precursoras de alto grau (NIC 2 ou NIC 3) ou de câncer cervical, devem ser excluídas do rastreamento. Como o órgão-alvo foi removido e não havia malignidade, o risco de desenvolvimento de neoplasia na cúpula vaginal é extremamente baixo, não justificando a continuidade dos exames.\n\nAlternativa b: Esta alternativa está incorreta. A colposcopia não é um método de rastreamento, mas sim um exame diagnóstico complementar indicado apenas quando há alterações na citologia oncótica ou suspeita clínica visual no colo do útero. Não existe indicação de colposcopia anual para pacientes sem colo uterino e com histórico de doença benigna.\n\nAlternativa c: Esta alternativa está incorreta. A citologia de cúpula vaginal é indicada apenas para mulheres que passaram por histerectomia como parte do tratamento de câncer do colo do útero ou de lesões precursoras de alto grau. Para pacientes operadas por miomatose (causa benigna) e com exames anteriores normais, a coleta vaginal não oferece benefícios comprovados e não é recomendada.\n\nAlternativa d: Esta alternativa está incorreta. O rastreamento a cada 3 anos (após dois exames anuais negativos) é a rotina preconizada para mulheres entre 25 e 64 anos que possuem colo do útero. Como a paciente teve o colo removido por uma condição benigna, ela não se enquadra mais nos critérios de rastreamento populacional.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:36.203Z"
+  }
+]

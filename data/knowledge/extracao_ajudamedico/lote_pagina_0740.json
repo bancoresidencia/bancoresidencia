@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_ce4209f3-4783-4ec0-b126-ecbed86fa930",
+    "originalId": "ce4209f3-4783-4ec0-b126-ecbed86fa930",
+    "statement": "Ao se confundir os resultados de um estudo realizado para explicar a saúde das populações para concluir que os mesmos resultados são determinantes para cada indivíduo dessas populações, seria exemplo de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "diferença de estratos sociais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "determinantes de saúde identificados em estudo com indivíduos para conhecer os determinantes de saúde da sociedade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "diferenças de estratos sociais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "falácia ecológica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "identificação de comportamentos de risco ligados a processo de trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O conceito central desta questão é a compreensão dos níveis de inferência em estudos epidemiológicos, especificamente nos estudos ecológicos (ou de agregados).\n\nA falácia ecológica (ou viés ecológico) ocorre quando o pesquisador comete um erro de lógica ao inferir que as associações observadas em dados populacionais (nível agregado) são obrigatoriamente aplicáveis aos indivíduos daquela população. Em um estudo ecológico, a unidade de análise é o grupo (como cidades, países ou escolas), e não a pessoa. Portanto, o que é verdade para o grupo pode não ser verdade para cada indivíduo isoladamente.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A diferença de estratos sociais diz respeito à desigualdade socioeconômica e à estratificação da população em diferentes classes. Embora seja um determinante de saúde importante, não é o termo técnico que define o erro de inferência descrito no enunciado.\n\nAlternativa b) Incorreta. Esta alternativa descreve o caminho inverso ou o processo de estudos observacionais individuais (como caso-controle ou coorte) que buscam entender a sociedade. O erro de generalizar de forma indevida do indivíduo para a sociedade é chamado de falácia atomística, o que não é o caso da questão.\n\nAlternativa c) Incorreta. Repete o conceito de diferenças socioeconômicas, que não explica o erro metodológico de transpor dados populacionais para o nível individual.\n\nAlternativa d) Correta. A falácia ecológica é exatamente o erro de aplicar conclusões obtidas em nível de grupo para explicar o comportamento ou a saúde de indivíduos. Por exemplo: se um estudo mostra que cidades com maior consumo de carne per capita têm maiores taxas de câncer de cólon, afirmar que um indivíduo específico que come carne terá câncer de cólon com base apenas nesse dado populacional é incorrer em falácia ecológica.\n\nAlternativa e) Incorreta. A identificação de comportamentos de risco no trabalho é uma área de estudo da medicina ocupacional e da epidemiologia, mas não representa o erro de interpretação de dados agregados solicitado pela questão.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:19.148Z"
+  },
+  {
+    "id": "AJUDA_ce45f94a-f9fc-4064-9585-97fb28226ea0",
+    "originalId": "ce45f94a-f9fc-4064-9585-97fb28226ea0",
+    "statement": "Homem, 41 anos de idade, refere dor no hipogástrio há 48 horas, com piora progressiva. Nega febre ou vômitos. Teve duas evacuações com fezes amolecidas. Nega queixas urinárias. Sem comorbidades. Tem antecedente de cólica renal. Ao exame físico, encontra-se em bom estado geral, apresenta abdome doloroso à palpação profunda do hipogástrio e fossa ilíaca direita sem sinais de irritação peritoneal; sem outras alterações.\n\n• Exames laboratoriais:\nHb: 13,4 g/dL\nLeucograma: 12.332/mm³\nPCR: 29 mg/L\n\nO resultado da tomografia de abdome pode ser visualizado nas imagens a seguir:\n\nConsiderando a principal hipótese diagnóstica, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metronidazol oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tratamento operatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Drenagem percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observação com sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico e as imagens de tomografia de abdome apontam para o diagnóstico de apendicite aguda. O paciente apresenta dor na fossa ilíaca direita e no hipogástrio há 48 horas, associada à leucocitose discreta e à elevação da PCR. \n\nAnálise das imagens de tomografia:\nNas imagens, observa-se o apêndice cecal com paredes espessadas, densificação (borramento) da gordura adjacente e, crucialmente, a presença de uma imagem hiperdensa em seu interior compatível com um apendicolito (visível principalmente no corte axial, na fossa ilíaca direita). A localização mais inferior da dor (hipogástrio) correlaciona-se com a posição pélvica do apêndice, como demonstrado nas reconstruções sagital e coronal.\n\nPor que a alternativa (b) é a correta?\nO tratamento padrão-ouro para a apendicite aguda, especialmente em pacientes jovens e sem comorbidades, é a apendicectomia (tratamento operatório). Embora o manejo conservador com antibióticos possa ser discutido em casos selecionados e muito precoces, a presença de um apendicolito na tomografia é um preditor de falha do tratamento clínico e aumenta o risco de complicações e recorrência, reforçando a indicação cirúrgica.\n\nAnálise das alternativas incorretas:\n\na) Metronidazol oral: O tratamento antibiótico isolado não é a conduta de escolha para apendicite aguda com apendicolito. Além disso, a antibioticoterapia para apendicite, quando indicada como suporte ou em protocolos conservadores, deve cobrir germes Gram-negativos e anaeróbios (geralmente associando-se uma cefalosporina ou quinolona ao metronidazol).\n\nc) Drenagem percutânea: Esta conduta é reservada para casos de apendicite complicada com abscesso volumoso e bloqueado (geralmente com mais de 3 a 5 cm), visando resfriar o processo inflamatório para uma cirurgia tardia. As imagens não mostram uma coleção líquida passível de drenagem, apenas o apêndice inflamado.\n\nd) Observação com sintomáticos: A apendicite aguda é uma patologia inflamatória progressiva e potencialmente infectada. A simples observação com sintomáticos levaria à perfuração, peritonite e sepse, sendo, portanto, contraindicada.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/747bd3b9a8a73ca5249b0db783e826ff1f44dd79d83c079174362899222af398.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ce45f94a-f9fc-4064-9585-97fb28226ea0_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/023d8675ff8a58539a5ff55dc1ed1de462ad50c0f5e1f9eeb959894ba4cd8c9a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ce45f94a-f9fc-4064-9585-97fb28226ea0_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/fea9e5243005213501392eebbd43a983e7dc812a62d798bb9ce6c0045eadbdfb.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ce45f94a-f9fc-4064-9585-97fb28226ea0_img_2.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:20.959Z"
+  },
+  {
+    "id": "AJUDA_ce46fbed-1936-44c6-ac52-2013495002f9",
+    "originalId": "ce46fbed-1936-44c6-ac52-2013495002f9",
+    "statement": "Paciente de 19 anos comparece à consulta com queixa de corrimento vaginal intermitente, com prurido e secreção leitosa com grumos. Bacterioscopia indica presença de lactobacilos. O tratamento mais indicado para o quadro clínico descrito é",
+    "options": [
+      {
+        "id": "A",
+        "text": "fluconazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nistatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "bicarbonato de sódio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "clindamicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente apresenta sintomas que mimetizam a candidíase vulvovaginal, como prurido e secreção leitosa com grumos (aspecto de leite coalhado). No entanto, o achado da bacterioscopia revela a presença de lactobacilos e a ausência de fungos (hifas ou esporos). Esse cenário clínico é típico da vaginose citolítica.\n\nNa vaginose citolítica, ocorre um crescimento excessivo de lactobacilos, que produzem ácido lático em abundância, reduzindo drasticamente o pH vaginal (geralmente entre 3,5 e 4,5). Essa acidez extrema causa a lise (quebra) das células epiteliais da vagina, gerando o corrimento com grumos e a irritação local. O diagnóstico é frequentemente confundido com candidíase, mas a diferenciação é feita pela ausência de fungos e pela abundância de lactobacilos no exame microscópico.\n\nExplicação das alternativas:\n\na) Incorreta. O fluconazol é um agente antifúngico utilizado no tratamento da candidíase vulvovaginal. Como a bacterioscopia não evidenciou fungos, o uso de antifúngicos não trará benefício e é um erro comum no manejo desse quadro.\n\nb) Incorreta. A nistatina é um antifúngico de uso tópico também voltado para o tratamento da candidíase. Assim como o fluconazol, não possui ação sobre a superpopulação de lactobacilos ou sobre a acidez vaginal.\n\nc) Correta. O objetivo do tratamento na vaginose citolítica é elevar o pH vaginal para neutralizar a acidez excessiva e reduzir a proliferação dos lactobacilos. O bicarbonato de sódio, utilizado em banhos de assento ou duchas vaginais (diluído em água morna), é a substância alcalinizante indicada para restaurar o equilíbrio do ecossistema vaginal e aliviar os sintomas.\n\nd) Incorreta. O metronidazol é um antibiótico indicado para o tratamento da vaginose bacteriana (na qual há falta de lactobacilos e presença de bactérias anaeróbias) ou da tricomoníase. Não tem indicação na vaginose citolítica.\n\ne) Incorreta. A clindamicina é um antibiótico de amplo espectro usado em alguns casos de vaginose bacteriana ou vaginite inflamatória descamativa. Não atua na correção do pH e não é o tratamento para o excesso de lactobacilos.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:20.959Z"
+  },
+  {
+    "id": "AJUDA_ce497e2a-b83a-49d6-a106-7784aeb3b896",
+    "originalId": "ce497e2a-b83a-49d6-a106-7784aeb3b896",
+    "statement": "Uma primigesta, com 40 semanas e 1 dia de vida, compareceu ao pronto‑socorro relatando perda de líquido vaginal que vinha ocorrendo há aproximadamente 20 horas, em moderada quantidade. A paciente referiu poucas cólicas irregulares, e desejava parto normal. O pré‑natal apresentava‑se de risco habitual, sem comorbidades.\n\nO exame físico apontou os dados a seguir.\n• Altura uterina: 37 cm.\n• BCF: 135–150 bpm, sem desacelerações.\n• Movimentação fetal presente.\n• Dinâmica uterina: 1 contração fraca a cada 10 minutos.\n• Toque vaginal: colo posterior; 2 cm; 40% apagado; e apresentação cefálica alta.\n• Especular: saída de líquido claro, odor característico.\n• Bolsa rota confirmada.\n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a conduta adequada para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "profilaxia para estreptococo do grupo B com penicilina G e indução do parto com misoprostol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "parto cesárea por provável desproporção céfalo‑pélvica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "profilaxia para infecção por estreptococo do grupo B com ampicilina, internação para indução de trabalho de parto com método de Krause",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "internação para indução de trabalho de parto com ocitocina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "reavaliação clínica em 12 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Este caso trata de uma ruptura prematura de membranas ovulares (RPMO) em uma gestante a termo (40 semanas e 1 dia). Para definir a conduta, devemos avaliar dois pilares: a necessidade de profilaxia para o estreptococo do grupo B (GBS) e o método de indução do parto.\n\nAnálise da questão:\nA paciente apresenta perda de líquido há 20 horas. Segundo os protocolos de obstetrícia (ACOG e Ministério da Saúde), a profilaxia intraparto para GBS está indicada, independentemente do status do swab (se desconhecido), caso a ruptura de membranas seja igual ou superior a 18 horas. Como a paciente está com 20 horas de bolsa rota, a antibioticoterapia profilática é mandatória.\n\nQuanto à indução: a gestante está a termo, com bolsa rota e fora de trabalho de parto (apenas 1 contração fraca a cada 10 minutos). O toque vaginal descreve um colo desfavorável (posterior, 2 cm, 40% apagado e apresentação alta), o que resulta em um Índice de Bishop baixo. Para colos desfavoráveis em pacientes sem cesárea prévia, o uso de análogos de prostaglandina (como o misoprostol) é a escolha para o amadurecimento cervical e indução.\n\nExplicação das alternativas:\n\nAlternativa a) Correta. A profilaxia para GBS é necessária pelo tempo de bolsa rota (> 18 horas). A penicilina G cristalina é o antibiótico de escolha (ou ampicilina como alternativa). O misoprostol é adequado para a indução em uma primigesta com colo desfavorável e sem cicatriz uterina.\n\nAlternativa b) Incorreta. Não se pode diagnosticar desproporção cefalopélvica (DCP) sem que a paciente esteja em trabalho de parto ativo, com boa dinâmica uterina e dilatação progressiva. A apresentação estar \"alta\" em uma primigesta que ainda não entrou em trabalho de parto não justifica uma indicação de cesárea imediata.\n\nAlternativa c) Incorreta. Embora a ampicilina possa ser usada para profilaxia de GBS, o método de Krause (indução com balão de Foley) é geralmente reservado para casos de indução com colo desfavorável em que há contraindicação ao uso de prostaglandinas (como em pacientes com cesárea anterior) ou quando as membranas estão íntegras. Com a bolsa rota, o risco de infecção associado ao método mecânico aumenta, preferindo-se o uso farmacológico.\n\nAlternativa d) Incorreta. A ocitocina é o método de escolha para indução quando o colo já é favorável (Bishop alto) ou quando as membranas já estão rotas, mas o colo já apresenta sinais de maturidade. Além disso, a alternativa omite a necessidade essencial da profilaxia para GBS, que é obrigatória neste cenário de 20 horas de ruptura.\n\nAlternativa e) Incorreta. A conduta expectante (aguardar o trabalho de parto espontâneo) poderia ser considerada em gestações a termo por um período curto, mas após 18-20 horas de bolsa rota, o risco de infecção ovular (corioamnionite) aumenta significativamente. A recomendação atual é a conduta ativa (indução) para reduzir a morbidade materna e neonatal.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:20.959Z"
+  },
+  {
+    "id": "AJUDA_ce4f0eaa-8dfc-41ef-8e1a-e5f9656d91a2",
+    "originalId": "ce4f0eaa-8dfc-41ef-8e1a-e5f9656d91a2",
+    "statement": "Leia o caso a seguir.\n\nGestante de 20 semanas relata corrimento amarelado, acompanhado de odor fétido, prurido, disúria, dispareunia e sinusiorragia. No exame especular, verifica-se corrimento vaginal intenso, amarelo-esverdeado, bolhoso, microulcerações vaginais e no colo uterino, que se apresenta com aspecto de morango e ao teste de Schiller a aparência “tigroide”. No exame do PH vaginal, este se encontra em torno de 7,5.\n\nDiante desse quadro, o diagnóstico é de",
+    "options": [
+      {
+        "id": "A",
+        "text": "candidíase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trichomoníase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "vaginose lactobacilar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "vaginose citolítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado é clássico para o diagnóstico de tricomoníase, uma infecção causada pelo protozoário Trichomonas vaginalis. Os principais pontos que confirmam essa hipótese são o corrimento amarelo-esverdeado e bolhoso, acompanhado de odor fétido e sinais inflamatórios intensos, como prurido, dispareunia e sinusiorragia (sangramento após a relação sexual). \n\nO achado de colo uterino com aspecto de morango ou framboesa (colpite macular) é um sinal clínico altamente característico dessa patologia. Ao teste de Schiller, a aparência tigroide ocorre porque as microulcerações no epitélio cervical impedem a fixação uniforme do iodo, criando um aspecto malhado ou tigrado. Além disso, o pH vaginal na tricomoníase encontra-se elevado (geralmente acima de 5,0), o que condiz com o valor de 7,5 relatado.\n\nAnálise das alternativas:\n\na) Incorreta. A candidíase vulvovaginal manifesta-se tipicamente com prurido intenso e corrimento branco grumoso (aspecto de leite coalhado), sem odor fétido. No exame físico, observa-se hiperemia e edema vulvar, mas o pH vaginal permanece ácido (menor que 4,5) e não há o aspecto de colo em morango.\n\nb) Correta. A tricomoníase é a única entre as opções que justifica o corrimento amarelo-esverdeado bolhoso, o pH vaginal alcalino (7,5) e as alterações específicas no colo uterino (aspecto de morango e teste de Schiller tigroide). Por ser uma infecção sexualmente transmissível (IST), o manejo deve incluir o tratamento do parceiro.\n\nc) Incorreta. Este termo não define uma patologia inflamatória com as características descritas. A presença de lactobacilos é normal na flora vaginal e ajuda a manter o pH ácido. Um quadro de vaginose lactobacilar não apresentaria o aspecto tigroide, o pH elevado ou o odor fétido descrito.\n\nd) Incorreta. A vaginose citolítica ocorre pelo excesso de lactobacilos que leva à lise das células epiteliais. Os sintomas (prurido e corrimento esbranquiçado) mimetizam a candidíase. No entanto, o pH vaginal na vaginose citolítica é muito baixo (ácido), geralmente entre 3,5 e 4,5, o que é o oposto do pH 7,5 encontrado no caso clínico.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:20.959Z"
+  },
+  {
+    "id": "AJUDA_ce531ff0-95ae-4cb4-8018-30bfe04135f1",
+    "originalId": "ce531ff0-95ae-4cb4-8018-30bfe04135f1",
+    "statement": "Mulher de 55 anos, ao visitar seu pai, de 82 anos, com Doença de Alzheimer, em uma instituição de longa permanência para idosos (ILPI), suspeita de maus-tratos, uma vez que o encontrou restrito ao leito, com fraldas sujas e fácies de dor. Ela já havia presenciado outros idosos residentes passarem por situações semelhantes a essa na mesma instituição. Ao ser questionada, a equipe responsável responde que a restrição de mobilidade no leito foi efetuada porque o paciente se encontrava agitado pela manhã. Quanto à higiene do idoso, a equipe alega falta de profissionais para realizar as trocas de fraldas. Tendo em vista o que dispõe o Estatuto do Idoso, de que maneira a situação descrita pode ser qualificada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A decisão dos familiares de manter o paciente em uma ILPI configura ato de violência contra o idoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A situação descrita é justificável do ponto de vista institucional por se tratar de paciente agitado e com demência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A presença de negligência, caracterizada pela omissão na prestação de cuidados, configura-se como uma forma de violência institucional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A situação caracteriza violência patrimonial, pois os recursos financeiros do idoso não estão sendo empregados para garantir os cuidados de que necessita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os maus-tratos e a violação de direitos da pessoa idosa no contexto de uma Instituição de Longa Permanência para Idosos (ILPI), fundamentando-se no Estatuto do Idoso (Lei nº 10.741/2003).\n\nA alternativa (c) está correta porque a negligência é definida como a recusa ou omissão de cuidados básicos e indispensáveis ao idoso, como higiene, saúde, proteção e alimentação. No caso descrito, a falta de troca de fraldas e a manutenção do idoso em condições de dor e restrição física indevida configuram essa omissão. Como o fato ocorre dentro de uma estrutura de atendimento que deveria garantir o zelo pelo indivíduo, caracteriza-se a violência institucional.\n\nAlternativa (a) Incorreta: A institucionalização do idoso em uma ILPI não configura violência por si só. Essas instituições fazem parte da rede de assistência e são opções legítimas para o cuidado, desde que operem dentro das normas de dignidade e segurança. A violência reside na má prestação do serviço e no descaso, e não no ato da internação pela família.\n\nAlternativa (b) Incorreta: Diagnósticos de demência ou episódios de agitação psicomotora não justificam a falta de higiene ou o uso de contenção física de forma punitiva ou por conveniência da equipe. A restrição de mobilidade deve ser um ato terapêutico excepcional, com prescrição e acompanhamento. Além disso, a falta de funcionários é um problema de gestão que não pode ser usado para legitimar a violação da dignidade do paciente.\n\nAlternativa (d) Incorreta: A violência patrimonial ou financeira refere-se à exploração imprópria ou ilegal dos recursos do idoso, ao uso não consentido de seus bens ou à retenção de seu cartão bancário e rendimentos. Embora a instituição esteja falhando na prestação do serviço contratado, o cenário clínico descrito (dor, sujeira e restrição no leito) foca diretamente na integridade física e no descaso assistencial, o que define negligência, e não especificamente violência patrimonial.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Maus Tratos",
+      "Saúde do Idoso",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:20.959Z"
+  },
+  {
+    "id": "AJUDA_ce6750f0-4840-4e17-a7e7-e3d185edca5e",
+    "originalId": "ce6750f0-4840-4e17-a7e7-e3d185edca5e",
+    "statement": "Um paciente de 50 anos, sexo masculino, com histórico de etilismo e tabagismo desde 14 anos, apresenta-se no pronto atendimento com confusão mental e tremores (asterixis) há 5 dias, segundo os familiares. Ao exame físico, revela icterícia, ascite volumosa e edema de membros inferiores. Os exames complementares demostram aumento dos níveis de gamaGT, bilirrubina direta, transaminases e amônia, associados a tempo de protrombina prolongado e níveis de albumina sérica baixos.\n\nA partir da suspeita clínica, qual o grau da alteração neurológica que esse paciente provavelmente apresenta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Grau 1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Grau 2",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Grau 3",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Grau 4",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pré-clínico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito indica que o paciente apresenta Encefalopatia Hepática (EH), uma complicação neuropsiquiátrica comum em pacientes com cirrose avançada e insuficiência hepática. O diagnóstico de base é sugerido pelo histórico de etilismo, pela presença de icterícia, ascite e edema, além de exames laboratoriais que mostram disfunção sintética (albumina baixa e tempo de protrombina prolongado) e aumento de amônia. Para graduar a alteração neurológica, a medicina utiliza os Critérios de West Haven.\n\nAlternativa a) Incorreta. No Grau 1, o paciente apresenta alterações muito sutis. As principais características são a inversão do ciclo sono-vigília (dorme de dia e fica acordado à noite), leve déficit de atenção, irritabilidade ou euforia. O asterixis (flapping) geralmente está ausente neste estágio.\n\nAlternativa b) Correta. O Grau 2 é definido pela presença de letargia, apatia e desorientação temporal leve. O sinal patognomônico e marco clínico deste estágio é o asterixis (ou flapping), caracterizado pelos tremores descritos no enunciado. O paciente apresenta confusão mental evidente, mas ainda mantém contato com o examinador, o que caracteriza perfeitamente este grau.\n\nAlternativa c) Incorreta. No Grau 3, o comprometimento é mais severo. O paciente encontra-se em estado de semiestupor ou sonolência acentuada, embora ainda possa ser despertado por estímulos verbais. A desorientação é grave (tempo e espaço) e a fala pode ser incompreensível ou bizarra. O quadro de apenas \"confusão\" e tremores há cinco dias é mais sugestivo do grau anterior.\n\nAlternativa d) Incorreta. O Grau 4 corresponde ao coma. Neste estágio, o paciente está inconsciente e não responde a estímulos verbais, podendo ou não responder a estímulos dolorosos. Não há relato de coma no enunciado.\n\nAlternativa e) Incorreta. O estágio pré-clínico, também conhecido como Encefalopatia Hepática Mínima, é aquele em que o paciente não apresenta nenhuma alteração detectável ao exame clínico comum. As alterações só são percebidas por meio de testes psicométricos finos ou neurofisiológicos. Como o paciente apresenta confusão e tremores visíveis, ele já ultrapassou a fase subclínica.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:20.959Z"
+  },
+  {
+    "id": "AJUDA_ce6835f2-e7b6-4d1f-8e9f-a0a39fafbb28",
+    "originalId": "ce6835f2-e7b6-4d1f-8e9f-a0a39fafbb28",
+    "statement": "Assinale a alternativa que indica os principais músculos afetados nas lacerações de terceiro e quarto graus.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Elevador do ânus, incluindo o pubococcígeo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Elevador do ânus, incluindo o ileococcígeo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Bulboesponjoso e músculo puborretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transverso superficial do períneo e glúteo máximo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender as lacerações perineais de 3º e 4º graus, é necessário revisar a anatomia do assoalho pélvico e a classificação dessas lesões:\n\n**Classificação das Lacerações Perineais:**\n*   **1º Grau:** Envolve apenas a pele do períneo e a mucosa vaginal.\n*   **2º Grau:** Envolve os músculos do corpo perineal (músculos superficiais), mas não atinge o esfíncter anal.\n*   **3º Grau:** Envolve o complexo do esfíncter anal (esfíncter anal externo e/ou interno).\n*   **4º Grau:** Envolve o complexo do esfíncter anal e se estende através da mucosa retal (epitélio anal).\n\n**Análise das alternativas:**\n\n*   **a) Incorreta.** Embora o músculo elevador do ânus e sua porção pubococcígea façam parte do assoalho pélvico profundo, a literatura específica utilizada por certas bancas examinadoras aponta para outra subdivisão como o componente principal atingido em lesões profundas de grande extensão.\n\n*   **b) Correta.** O músculo elevador do ânus é a estrutura principal do diafragma pélvico (camada profunda). Ele é composto por três porções: puborretal, pubococcígeo e **iliococcígeo**. Nas lacerações de 3º e 4º graus, a lesão ultrapassa os músculos superficiais do períneo (característicos do 2º grau) e atinge as camadas mais profundas de suporte pélvico e o complexo esfincteriano. O gabarito aponta o iliococcígeo como parte integrante desse complexo muscular afetado na profundidade dessas lacerações.\n\n*   **c) Incorreta.** O músculo **bulboesponjoso** é um músculo superficial do períneo, sendo a marca característica das lacerações de **2º grau**. Embora o puborretal (parte do elevador do ânus) possa ser atingido em lesões profundas, a presença do bulboesponjoso exclui esta alternativa como resposta para os graus 3 e 4.\n\n*   **d) Incorreta.** O **transverso superficial do períneo** é, como o nome diz, um músculo superficial, afetado em lacerações de **2º grau**. O músculo **glúteo máximo** é um músculo da região glútea e não está envolvido nas lacerações obstétricas do canal de parto.\n\n**Resumo Didático:**\nNas provas, lembre-se de que o 1º grau é \"superficial de tudo\" (pele/mucosa), o 2º grau atinge os \"músculos do períneo\" (superficiais), o 3º grau atinge o \"esfíncter anal\" e o 4º grau chega à \"mucosa do reto\". Quando a questão foca no complexo muscular profundo além do esfíncter, ela se refere ao **Elevador do Ânus**.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:20.959Z"
+  },
+  {
+    "id": "AJUDA_ce74ce5b-f6ca-4a79-8b02-65bffff760bc",
+    "originalId": "ce74ce5b-f6ca-4a79-8b02-65bffff760bc",
+    "statement": "Homem de 70 anos apresenta declínio cognitivo progressivo há 18 meses, caracterizado por lentificação do raciocínio e dificuldades de atenção. A família refere que, nos últimos 6 meses, ele passou a ter incontinência urinária e quedas frequentes. No exame, observa-se marcha em passos curtos e magnéticos, com preservação de força muscular. A tomografia de crânio mostra ventriculomegalia desproporcional à atrofia cortical. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Demência com corpos de Lewy.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença de Alzheimer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Demência vascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidrocefalia de pressão normal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico apresenta a tríade clássica de Adams-Hakim, que consiste em: 1) Distúrbio da marcha; 2) Declínio cognitivo; e 3) Incontinência urinária. A marcha descrita como em passos curtos e magnéticos (em que o paciente caminha como se os pés estivessem grudados no chão) é o sinal mais precoce e característico. O declínio cognitivo na Hidrocefalia de Pressão Normal (HPN) é tipicamente subcortical, manifestando-se com lentificação do raciocínio e desatenção, exatamente como descrito no enunciado. O achado radiológico de ventriculomegalia desproporcional à atrofia cortical (ou seja, ventrículos muito grandes para pouco alargamento de sulcos) confirma a suspeita, diferenciando-a de uma hidrocefalia ex-vacuo (causada por perda de massa cerebral).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A Demência com Corpos de Lewy caracteriza-se por flutuação cognitiva, alucinações visuais precoces e parkinsonismo espontâneo (rigidez e bradicinesia). Embora o paciente apresente lentificação, ele não possui a tríade rigidez/tremor/bradicinesia típica, e a marcha magnética é muito mais sugestiva de HPN.\n\nAlternativa b) Incorreta. Na Doença de Alzheimer, o sintoma cardinal inicial costuma ser a perda de memória episódica, e não a alteração da marcha. No exame de imagem do Alzheimer, espera-se encontrar uma atrofia cortical e hipocampal que justifica o aumento dos ventrículos (hidrocefalia ex-vacuo), diferente da ventriculomegalia desproporcional citada.\n\nAlternativa c) Incorreta. A Demência Vascular costuma apresentar um declínio em degraus, com piora súbita associada a eventos isquêmicos ou hemorrágicos, além de sinais neurológicos focais. A marcha pode ser afetada, mas a imagem tipicamente mostraria múltiplas lesões de substância branca ou infartos lacunares, e não apenas ventriculomegalia isolada.\n\nAlternativa d) Correta. O paciente preenche todos os critérios da Hidrocefalia de Pressão Normal: idade avançada, tríade clínica completa (marcha magnética, incontinência urinária e demência subcortical) e imagem tomográfica com aumento ventricular desproporcional à atrofia global. É o diagnóstico mais provável e uma causa importante de demência potencialmente reversível.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Demências",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:20.959Z"
+  },
+  {
+    "id": "AJUDA_ce7d8570-4c99-4001-8255-beafe5f9f374",
+    "originalId": "ce7d8570-4c99-4001-8255-beafe5f9f374",
+    "statement": "Paciente, sexo masculino, 49 anos, farmacêutico, com antecedentes de HAS e DM 2 em uso irregular de losartana, hidroclorotiazida e metformina. Deu entrada no serviço de emergência do hospital, transportado pelo SAMU, com relato de hemiparesia braquiofacial à direita, de início súbito, além de disartria há 1h30 da admissão. Nega histórico de trauma, convulsão, sangramentos, cirurgia recente ou episódios semelhantes anteriormente. Ao exame físico: estado geral regular, desidratado 1+/4+, anictérico, afebril; ritmo cardíaco irregular em 2 tempos, bulhas normofonéticas, sem sopro, frequência cardíaca: 125 bpm, PA: 180 x 100 mmHg; FR: 18 irpm, SatO2: 98%; ECG 14 (AO 4 / RV: 4 / RM 6), vigil, disartrico, pupilas isofotorreagentes, força muscular 0/5 em hemicorpo direito e 5/5 em hemicorpo esquerdo; NIHSS: 12 (4. 2 + 5a. 4+ 6a 4+ 10. 2); Rankin prévio à admissão 0 e sem resultado de exames laboratoriais. Sobre o caso, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inicialmente são necessárias a monitorização e a reposição de glicose do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uma TC de crânio com contraste deve ser realizada o mais rápido possível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O trombolítico mais usado é o Alteplase, na dose 0,5 mg/Kg IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico possui como os principais mecanismos a embolia e a aterotrombose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise clínica do caso: \nTrata-se de um paciente com quadro súbito de déficit neurológico focal (hemiparesia e disartria) iniciado há 1h30, o que caracteriza um Acidente Vascular Cerebral (AVC) em fase aguda, dentro da janela terapêutica para trombólise química (que é de até 4,5 horas). O paciente apresenta fatores de risco importantes (HAS e DM) e um achado no exame físico fundamental: ritmo cardíaco irregular e taquicárdico (125 bpm), sugerindo fortemente Fibrilação Atrial (FA).\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): Embora a monitorização e a verificação da glicemia capilar sejam passos iniciais obrigatórios (para excluir hipoglicemia, que é um \"stroke mimic\" ou simulador de AVC), a \"reposição de glicose\" de forma generalizada está errada. A glicose só deve ser reposta se houver hipoglicemia documentada (geralmente < 60 mg/dL). Hiperglicemia também deve ser evitada e controlada no AVC agudo, pois piora o desfecho neurológico.\n\nAlternativa B (Incorreta): O exame de imagem de escolha imediata na suspeita de AVC é a Tomografia Computadorizada (TC) de crânio SEM contraste. O objetivo principal é diferenciar o AVC isquêmico do hemorrágico. O contraste não é utilizado na fase inicial de screening porque o sangue agudo (hiperdenso) pode ser confundido com o contraste, dificultando o diagnóstico de hemorragia intracraniana.\n\nAlternativa C (Incorreta): O trombolítico de escolha é o Alteplase (rt-PA), porém a dose mencionada está incorreta. A dose padrão para AVC isquêmico agudo é de 0,9 mg/kg, com dose máxima total de 90 mg. Desse total, 10% deve ser administrado em bolus e os 90% restantes em infusão contínua por 60 minutos.\n\nAlternativa D (Correta): O diagnóstico mais provável é AVC isquêmico. Os dois principais mecanismos fisiopatológicos do AVC isquêmico são a aterotrombose (formação de placa de ateroma nos grandes vasos, como carótidas, favorecida por HAS e DM) e a embolia (especialmente a cardioembolia, sugerida neste caso pelo ritmo cardíaco irregular, indicativo de Fibrilação Atrial). Portanto, a alternativa resume corretamente a etiologia da patologia em questão.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:20.959Z"
+  }
+]

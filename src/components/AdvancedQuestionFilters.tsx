@@ -30,7 +30,9 @@ import {
   PieChart,
   Scale,
   Plus,
-  Minus
+  Minus,
+  Shuffle,
+  Clock
 } from 'lucide-react';
 import {
   clinicalHierarchy,
@@ -201,8 +203,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   // Estado local para quantidade a resolver
   const [resolveCount, setResolveCount] = useState<number>(50);
   const [showCustomQtd, setShowCustomQtd] = useState<boolean>(false);
-  const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(true);
-  const [isYearsOpen, setIsYearsOpen] = useState<boolean>(true);
+  const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(false);
+  const [isYearsOpen, setIsYearsOpen] = useState<boolean>(false);
 
   // Resumo dinâmico de opções selecionadas no card de Dificuldade, Formato e Opções
   const activeOptionsSummary = useMemo(() => {
@@ -1813,6 +1815,57 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     placeholder="Qtd"
                   />
                 )}
+              </div>
+
+              {/* Seletor Segmentado: Mais Recentes vs Aleatório */}
+              <div className="inline-flex items-center rounded-xl p-0.5 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (filters.aleatorizar) {
+                      onChange({
+                        ...filters,
+                        aleatorizar: false
+                      });
+                    }
+                  }}
+                  className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    !filters.aleatorizar
+                      ? 'text-white shadow-xs'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                  }`}
+                  style={{
+                    backgroundColor: !filters.aleatorizar ? accentConfig.primaryHex : undefined
+                  }}
+                  title="Modo Mais Recentes: prioriza e ordena pelas questões dos anos mais novos (2026, 2025...)"
+                >
+                  <Clock className="w-3.5 h-3.5" />
+                  <span>Mais Recentes</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (!filters.aleatorizar) {
+                      onChange({
+                        ...filters,
+                        aleatorizar: true
+                      });
+                    }
+                  }}
+                  className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    filters.aleatorizar
+                      ? 'text-white shadow-xs'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                  }`}
+                  style={{
+                    backgroundColor: filters.aleatorizar ? accentConfig.primaryHex : undefined
+                  }}
+                  title="Modo Aleatório: mistura completamente questões, anos e bancas de forma randômica"
+                >
+                  <Shuffle className="w-3.5 h-3.5" />
+                  <span>Aleatório</span>
+                </button>
               </div>
 
               <button

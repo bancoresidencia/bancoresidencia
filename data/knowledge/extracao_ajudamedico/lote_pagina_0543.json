@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_97f76e28-b37a-465c-837d-d92ef15d825e",
+    "originalId": "97f76e28-b37a-465c-837d-d92ef15d825e",
+    "statement": "Em relação às condutas terapêuticas em paciente internado por pancreatite aguda secundária à dislipidemia, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar a dieta zero e manter por no mínimo 3 dias para evitar o estímulo pancreático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A abordagem inicial consiste na hidratação venosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O uso de antibióticos de largo espectro está indicado nos pacientes com leucocitose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para a programação de alta hospitalar, é necessária a normalização dos valores de amilase e lipase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Na presença de sinal de Gobiet, o tratamento cirúrgico está indicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A pancreatite aguda, independentemente da sua etiologia (seja ela biliar, alcoólica ou por hipertrigliceridemia/dislipidemia), possui pilares de tratamento bem estabelecidos na literatura médica atual. Abaixo, analisamos detalhadamente cada uma das alternativas:\n\nAlternativa (a) Incorreta: A conduta de manter o paciente em jejum prolongado (dieta zero) por 3 dias está ultrapassada. Atualmente, as diretrizes recomendam o reinício precoce da dieta assim que tolerada pelo paciente (geralmente em 24 horas nos casos leves). Nos casos graves, a nutrição enteral precoce é preferível ao jejum total, pois ajuda a manter a barreira intestinal, reduzindo a translocação bacteriana e o risco de infecção da necrose pancreática.\n\nAlternativa (b) Correta: A hidratação venosa agressiva e precoce é o passo mais importante no tratamento inicial de qualquer pancreatite aguda. O objetivo é manter a perfusão tecidual e a microcirculação pancreática, prevenindo a evolução para necrose e disfunção de órgãos. Deve-se monitorar rigorosamente o débito urinário e os sinais vitais para guiar essa reposição volêmica.\n\nAlternativa (c) Incorreta: O uso de antibióticos profiláticos não é indicado na pancreatite aguda, mesmo na presença de leucocitose ou febre nas primeiras 48-72 horas, que costumam ser reflexos apenas da Resposta Inflamatória Sistêmica (SIRS). O antibiótico de largo espectro deve ser reservado para casos de infecção comprovada ou suspeita clínica e radiológica de necrose pancreática infectada.\n\nAlternativa (d) Incorreta: Os níveis séricos de amilase e lipase são fundamentais para o diagnóstico, mas não servem para monitorar a gravidade da doença ou decidir o momento da alta hospitalar. Frequentemente, as enzimas normalizam antes da resolução do quadro clínico ou permanecem alteradas mesmo com o paciente assintomático. Os critérios de alta são baseados na melhora da dor abdominal e na tolerância adequada à dieta via oral.\n\nAlternativa (e) Incorreta: O sinal de Gobiet refere-se à dilatação isolada do cólon transverso visualizada na radiografia de abdome, ocorrendo devido ao processo inflamatório adjacente que gera um íleo paralítico localizado. Assim como o sinal da \"alça sentinela\", é apenas um achado propedêutico de inflamação abdominal e não configura, de forma alguma, uma indicação de tratamento cirúrgico. A maioria dos casos de pancreatite é tratada de forma conservadora.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  },
+  {
+    "id": "AJUDA_980a8942-1578-44c0-9a78-6cb25cb9d0f8",
+    "originalId": "980a8942-1578-44c0-9a78-6cb25cb9d0f8",
+    "statement": "Qual é o agente etiológico da questão 53?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paramixovírus;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Togavírus;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Parvovírus humano B19;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Herpes vírus humano 6 e 7.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é necessário identificar a patologia descrita no enunciado anterior (questão 53), que, com base no gabarito apontando o Parvovírus B19, corresponde ao Eritema Infeccioso (também conhecido como Quinta Doença).\n\nAnálise das alternativas:\n\na) Incorreta. O Paramixovírus é a família do vírus do sarampo. O sarampo caracteriza-se clinicamente por um pródromo marcado por febre alta, tosse, coriza, conjuntivite e a presença das manchas de Koplik na mucosa oral, seguidas por um exantema maculopapular morbiliforme de progressão craniocaudal.\n\nb) Incorreta. O Togavírus (especificamente o gênero Rubivirus) é o agente etiológico da rubéola. A rubéola costuma apresentar um quadro clínico mais leve, com febre baixa e linfonodopatia retroauricular, occipital e cervical posterior, além do exantema maculopapular fino.\n\nc) Correta. O Parvovírus humano B19 é o agente causador do Eritema Infeccioso. Esta doença exantemática é típica da idade escolar e apresenta uma evolução clássica em três fases: 1) fase da \"face esbofetada\" (eritema malar bilateral poupando a região perioral); 2) exantema rendilhado ou reticulado em tronco e membros; 3) recidiva do exantema desencadeada por fatores como exposição solar, calor, exercício físico ou estresse. Vale lembrar que o Parvovírus B19 tem tropismo pelos precursores eritroides, podendo causar crise aplástica em pacientes com anemias hemolíticas crônicas.\n\nd) Incorreta. Os herpes-vírus humanos tipos 6 (mais comum) e 7 são os agentes do Exantema Súbito (ou Roséola Infantum). A característica marcante dessa doença é a febre alta que desaparece subitamente (em crise), sendo imediatamente seguida pelo surgimento do exantema maculopapular, que se inicia no tronco e progrede para pescoço e membros.\n\nPortanto, a alternativa C é a correta por associar o agente etiológico ao quadro clínico do Eritema Infeccioso sugerido pelo contexto.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  },
+  {
+    "id": "AJUDA_981f61f0-b67f-4530-bb9b-1f28a2ede5ee",
+    "originalId": "981f61f0-b67f-4530-bb9b-1f28a2ede5ee",
+    "statement": "Mulher de 60 anos é encaminhada para atendimento especializado por ter apresentado 4 episódios de sangramento vaginal. Ela está lúcida, orientada, sem queixas e com autonomia em sua vida pessoal e social. Apresentou uma ultrassonografia transvaginal com endométrio de 12 mm de espessura e heterogêneo. Foi indicada histeroscopia diagnóstica, mas a paciente recusa-se a fazer porque acha que o sangramento é normal. Nesse caso, o médico deve",
+    "options": [
+      {
+        "id": "A",
+        "text": "dizer à paciente que respeitará sua decisão e evitar discutir com ela o diagnóstico provável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "informar à paciente que existe a possibilidade de ser câncer e reforçar a necessidade do exame.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "esclarecer para a família a necessidade do exame, mas omitir o diagnóstico provável para a paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "orientar que, caso ela se recuse a fazer o exame, será necessário procurar outro serviço para acompanhamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda um cenário clássico de ginecologia geriátrica e ética médica, envolvendo o manejo do sangramento pós-menopausa e a autonomia da paciente.\n\nAnálise clínica: Uma paciente de 60 anos com sangramento vaginal na pós-menopausa e um espessamento endometrial de 12 mm (o ponto de corte habitual é de 4 a 5 mm) apresenta sinais de alerta significativos para hiperplasia endometrial ou câncer de endométrio. A investigação histopatológica, geralmente via histeroscopia com biópsia, é mandatória.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Embora a autonomia da paciente deva ser respeitada, o médico tem o dever ético de fornecer todas as informações necessárias para que a decisão da paciente seja informada. Omitir o diagnóstico provável (neoplasia) impede que a paciente compreenda a gravidade da situação e os riscos de sua recusa. O Código de Ética Médica veda ao médico deixar de informar ao paciente o diagnóstico, o prognóstico, os riscos e os objetivos do tratamento, salvo quando a comunicação direta possa lhe provocar dano.\n\nAlternativa (b) Correta: O princípio da autonomia só é plenamente exercido quando o paciente possui todas as informações relevantes. Neste caso, o médico deve explicar que o sangramento na pós-menopausa com endométrio espessado é um sinal de alerta para câncer de endométrio. Ao reforçar a necessidade do exame de forma empática e transparente, o médico busca a beneficência, garantindo que a paciente decida com base na realidade clínica e não em uma percepção equivocada de normalidade.\n\nAlternativa (c) Incorreta: Esta conduta viola o sigilo médico e a autonomia da paciente. Como a paciente está lúcida, orientada e possui autonomia, ela é a única detentora do direito de receber as informações sobre sua saúde. Revelar diagnósticos à família omitindo-os da paciente é uma prática paternalista inadequada e eticamente incorreta.\n\nAlternativa (d) Incorreta: A recusa de um exame não justifica o abandono do paciente ou a interrupção do acompanhamento. O médico deve continuar assistindo a paciente e tentar, por meio do diálogo e da educação em saúde, convencê-la da importância da investigação, mantendo a porta aberta para cuidados futuros, conforme previsto nos princípios fundamentais do Código de Ética Médica.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)",
+      "Ética Médica"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  },
+  {
+    "id": "AJUDA_9821cfe6-a31e-4de4-b795-0922a6d9ab0a",
+    "originalId": "9821cfe6-a31e-4de4-b795-0922a6d9ab0a",
+    "statement": "Homem de 63 anos retorna a determinada Unidade Básica de Saúde com os resultados de exames solicitados para investigação de perda de peso e tosse produtiva, iniciadas há cerca de 6 meses. Nega comorbidades, uso contínuo de medicações ou tratamento para qualquer patologia respiratória prévia. A radiografia de tórax apresenta consolidação em lobo superior direito, sem evidências de cavitação. Teste rápido molecular para tuberculose positivo; resistência à rifampicina não detectada; sorologia para HIV negativa.\nApós a prescrição do tratamento pertinente, com que frequência esse paciente deve ser monitorado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mensalmente até o término do tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Quando houver sintomas respiratórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No início e ao término do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Após 3 e 6 meses do início do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resposta correta: alternativa A (mensalmente até o término do tratamento).\n\nO paciente tem tuberculose pulmonar confirmada por teste rápido molecular (TRM-TB) positivo, sem resistência à rifampicina, HIV negativo e sem tratamento prévio. É, portanto, um caso novo de tuberculose pulmonar sensível. O tratamento é o esquema básico: 2 meses de RIPE (rifampicina, isoniazida, pirazinamida e etambutol) na fase intensiva, seguidos de 4 meses de RI (rifampicina e isoniazida) na fase de manutenção, totalizando 6 meses.\n\nSegundo o Manual de Recomendações para o Controle da Tuberculose do Ministério da Saúde, o acompanhamento deve ser mensal durante todo o tratamento. Cada consulta inclui:\n\n- Avaliação clínica: evolução dos sintomas, adesão e pesquisa de efeitos adversos, como hepatotoxicidade, neurite óptica pelo etambutol e neuropatia periférica pela isoniazida.\n- Pesagem mensal: as doses são calculadas por faixa de peso e precisam ser ajustadas conforme o paciente ganha peso.\n- Baciloscopia de escarro mensal: é o recomendado para tuberculose pulmonar, sendo indispensável ao menos nos meses 2, 4 e 6. Ela permite verificar a negativação e identificar falência terapêutica. O TRM-TB não serve para controle de tratamento, pois detecta DNA de bacilos mortos. Por isso, ao diagnóstico, deve-se colher também baciloscopia e cultura como base para o seguimento.\n- Estímulo ao tratamento diretamente observado (TDO).\n- Radiografia de tórax: pode ser repetida em momentos estratégicos, como o 2º mês e o fim do tratamento, principalmente em pacientes sem escarro.\n\nAnálise das alternativas:\n\na) Correta. O seguimento mensal até o término garante a vigilância da adesão, o ajuste de dose pelo peso, a detecção precoce de efeitos adversos e o controle bacteriológico. Todos esses fatores reduzem abandono, falência e resistência adquirida.\n\nb) Incorreta. Esperar sintomas respiratórios é inadequado. Muitos pacientes melhoram clinicamente nas primeiras semanas e tendem a abandonar o tratamento. Além disso, efeitos adversos e falência bacteriológica podem ocorrer sem sintomas respiratórios. O seguimento deve ser programado e ativo.\n\nc) Incorreta. Avaliar apenas no início e no fim deixa uma lacuna de 6 meses sem monitorar adesão, toxicidade, peso e negativação do escarro. Isso inviabiliza o diagnóstico precoce de falência e o ajuste terapêutico.\n\nd) Incorreta. Avaliações aos 3 e 6 meses são insuficientes. Elas ignoram a reavaliação do 2º mês, que marca o fim da fase intensiva, e o controle mensal preconizado.\n\nPonto-chave: na tuberculose, o acompanhamento é mensal, com consulta clínica, pesagem e baciloscopia de controle (no mínimo nos meses 2, 4 e 6), preferencialmente sob TDO, até a alta por cura.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  },
+  {
+    "id": "AJUDA_982c6f68-b2ad-43bb-907b-d4d85a067864",
+    "originalId": "982c6f68-b2ad-43bb-907b-d4d85a067864",
+    "statement": "O canal anal cirúrgico é a porção que",
+    "options": [
+      {
+        "id": "A",
+        "text": "compreende da margem anal até a linha pectínea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "é revestida por epitélio estratificado pavimentoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "compreende da borda anal até o anel anorretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é inervada pelo sistema nervoso somático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender esta questão, é fundamental diferenciar as duas definições clássicas do canal anal utilizadas na anatomia e na prática cirúrgica:\n\n1. Canal Anal Anatômico (ou Embriológico): Estende-se da margem anal até a linha pectínea (linha denteada). Possui cerca de 2 cm de comprimento.\n2. Canal Anal Cirúrgico (ou Funcional): Estende-se da margem anal até o anel anorretal (limite superior do músculo esfíncter interno e onde se localiza o músculo puborretal). Possui cerca de 4 cm de comprimento.\n\nAnálise das alternativas:\n\nAlternativa A (Correta conforme gabarito): Esta alternativa descreve o limite do canal anal anatômico. É importante notar que existe uma divergência técnica aqui: o enunciado pede a definição de canal cirúrgico, mas o gabarito oficial aponta a descrição do canal anatômico. Em provas de medicina, essa confusão de termos é comum. Para fins de prova, considere que a alternativa A define o segmento que vai da borda externa até a transição embriológica das criptas anais.\n\nAlternativa B (Incorreta): O revestimento do canal anal não é uniforme. Acima da linha pectínea, o epitélio é do tipo colunar simples (mucosa retal). O epitélio estratificado pavimentoso (anoderma) ocorre apenas abaixo da linha pectínea. Existe ainda uma zona de transição entre os dois tipos.\n\nAlternativa C (Incorreta tecnicamente, mas conceitualmente a definição de canal cirúrgico): De acordo com a literatura cirúrgica e proctológica (como os tratados de Sabiston ou Townsend), o canal anal cirúrgico vai da borda anal até o anel anorretal. Se o gabarito oficial da questão é a letra A, houve uma inversão de conceitos por parte da banca examinadora entre as definições de canal anatômico e cirúrgico.\n\nAlternativa D (Incorreta): A inervação do canal anal é dividida pela linha pectínea. A porção superior (acima da linha) tem inervação visceral pelo sistema nervoso autônomo (simpático e parassimpático), sendo insensível à dor. Apenas a porção inferior (abaixo da linha) é inervada pelo sistema nervoso somático (nervos retais inferiores), o que explica a sensibilidade dolorosa aguçada nesta região.\n\nResumo didático:\nSe a questão pede o limite do canal anal e o gabarito é a letra A, a banca considerou a linha pectínea como o marco divisório principal, embora na terminologia cirúrgica rigorosa o limite superior seja o anel anorretal (alternativa C). Em exames, sempre fique atento a essa possível confusão entre os termos anatômico e cirúrgico.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  },
+  {
+    "id": "AJUDA_9837315f-b3d2-43d8-8a71-45d9a0d6e871",
+    "originalId": "9837315f-b3d2-43d8-8a71-45d9a0d6e871",
+    "statement": "Mulher de 75 anos de idade, procura atendimento com queixa de bola na vagina que vem aumentando há 5 anos. Refere ter tido 3 partos normais e cirurgia para apendicite supurada. Utiliza anlodipino e metformina. Não consegue manter relações sexuais pois fica constrangida, apesar de ter vontade. Nega perda de urina. Ao exame, apresenta o ponto Ba em +5, Ponto C em +5, Ponto Bp em +4 e ponto D em +4. A paciente deve ser orientada que tem prolapso genital, cuja opção mais adequada de tratamento é",
+    "options": [
+      {
+        "id": "A",
+        "text": "histerectomia vaginal, colporrafia anterior e posterior e perineorrafia, orientando que poderá ficar com perda de urina aos esforços após a cirurgia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pessário vaginal, orientando a remoção diária para higienização e quando for ter relação sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sling retropúbico, perineorrafia e colpocleise, orientando que a atividade sexual poderá ficar prejudicada pelo estreitamento vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "colpocleise, orientando que poderá ter relação sexual desde que com adequada estrogenização vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "promontossacrofixação laparoscópica com inserção de sling profilático, orientando os riscos de retenção urinária posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente de 75 anos apresenta um Prolapso de Órgãos Pélvicos (POP) em estágio avançado. Por meio do sistema POP-Q, observamos que os pontos Ba (parede vaginal anterior), C (colo uterino ou cúpula), Bp (parede vaginal posterior) e D (fundo de saco de Douglas) estão todos em valores positivos (+4 e +5). Isso caracteriza um prolapso de estágio IV (panprolapso), pois os pontos estão além do hímen a uma distância maior que o comprimento vaginal total menos 2 cm.\n\nUm ponto fundamental para a escolha da conduta é o desejo da paciente: ela possui desejo sexual (\"apesar de ter vontade\"), mas sente-se constrangida pela \"bola na vagina\". Além disso, embora negue perda urinária no momento, prolapsos volumosos podem causar um efeito de acotovelamento da uretra, mascarando uma incontinência urinária de esforço (IUE oculta).\n\nAnálise das alternativas:\n\nAlternativa A (Correta): É o tratamento reconstrutivo padrão para uma paciente com prolapso uterino e de paredes vaginais anterior e posterior que deseja manter a função sexual. A histerectomia vaginal trata o prolapso uterino (ponto C), a colporrafia anterior trata a cistocele (ponto Ba), a colporrafia posterior trata a retocele (ponto Bp) e a perineorrafia reconstrói o corpo perineal. O alerta sobre a perda de urina aos esforços após a cirurgia é essencial, pois, ao reduzir o prolapso, a uretra é \"desdobrada\", podendo revelar uma incontinência que estava mascarada pelo efeito obstrutivo do próprio prolapso (IUE oculta).\n\nAlternativa B (Incorreta): O pessário vaginal é uma opção conservadora válida, especialmente para pacientes sem condições cirúrgicas. No entanto, o enunciado sugere a busca por uma solução definitiva para o desconforto que impede a vida sexual. Além disso, nem todos os pessários exigem remoção diária; alguns modelos podem permanecer por meses sob supervisão médica.\n\nAlternativa C (Incorreta): A colpocleise (cirurgia de Le Fort ou total) é uma cirurgia obliterativa, ou seja, ela fecha o canal vaginal. É indicada para pacientes idosas que não têm mais desejo sexual ou sem condições clínicas para cirurgias longas. Como a paciente manifestou desejo de manter relações sexuais, a colpocleise é contraindicada.\n\nAlternativa D (Incorreta): Assim como na alternativa anterior, a colpocleise impossibilita a relação sexual com penetração, independentemente da estrogenização vaginal. A estrogenização melhora a qualidade do tecido, mas não reabre um canal cirurgicamente fechado.\n\nAlternativa E (Incorreta): A promontossacrofixação é uma técnica excelente para prolapsos de cúpula ou uterinos, geralmente realizada por via abdominal (laparoscópica ou aberta). Contudo, a questão descreve um prolapso completo (anterior, apical e posterior). A cirurgia vaginal (alternativa A) é tradicionalmente a primeira escolha em provas de residência para o tratamento de panprolapso em idosas, e a alternativa A aborda especificamente o fenômeno da incontinência oculta, que é um tema clássico em provas de uroginecologia. Além disso, o sling profilático é mais discutido no contexto da correção da incontinência oculta, e não focado primariamente no risco de retenção urinária posterior.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  },
+  {
+    "id": "AJUDA_9838047e-fe09-4d36-a965-ea0b834af554",
+    "originalId": "9838047e-fe09-4d36-a965-ea0b834af554",
+    "statement": "Durante uma consulta de rotina, a mãe de uma criança de 2 anos de idade relata que ela ainda não fala, evita contato visual e não atende quando chamada pelo nome. Ao brincar, o filho não socializa e organiza os brinquedos de forma repetitiva. A mãe trabalha em período integral e a criança fica com a babá durante o dia. Nesse contexto, a conduta mais adequada, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "aguardar até os 3 anos de idade, pois para a idade atual não há sinais de alerta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar ressonância nuclear magnética de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "encaminhar para avaliação multidisciplinar e intervenção precoce.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "iniciar medicação para reduzir comportamentos repetitivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "orientar sobre estimulação domiciliar e reavaliar após 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta um quadro clínico típico de Transtorno do Espectro Autista (TEA) em uma criança de 2 anos. Os sinais descritos são clássicos: déficit na comunicação social (atraso na fala e não atender pelo nome), déficit na interação social (evitar contato visual e não socializar) e presença de comportamentos repetitivos e restritos (organizar brinquedos de forma repetitiva). Diante da suspeita de TEA, a conduta deve ser imediata.\n\nAlternativa a: Incorreta. O atraso na fala aos 2 anos, associado à falta de contato visual e ausência de resposta ao nome, já são sinais de alerta (\"red flags\"). Aguardar até os 3 anos é uma conduta inadequada que faz com que a criança perca o período de maior plasticidade cerebral para intervenções.\n\nAlternativa b: Incorreta. O diagnóstico do TEA é estritamente clínico e baseado na observação do comportamento e no relato dos cuidadores. Exames de imagem, como a ressonância magnética de crânio, não fecham o diagnóstico e só devem ser solicitados se houver suspeita de outras condições neurológicas associadas, como crises convulsivas ou déficits focais.\n\nAlternativa c: Correta. Esta é a conduta preconizada. Assim que detectados sinais de alerta para TEA, a criança deve ser encaminhada para uma avaliação com especialistas (como neuropediatra ou psiquiatra infantil) e iniciar precocemente terapias com equipe multidisciplinar (psicologia baseada em análise do comportamento, fonoaudiologia e terapia ocupacional). A intervenção precoce é o principal fator prognóstico para o desenvolvimento da criança.\n\nAlternativa d: Incorreta. Medicações no TEA não tratam o transtorno em si, mas sim comorbidades ou sintomas específicos, como agressividade extrema ou insônia grave. O tratamento de primeira linha para comportamentos repetitivos é a terapia comportamental, e não o uso de fármacos, especialmente em um paciente de apenas 2 anos.\n\nAlternativa e: Incorreta. Embora a orientação para os pais seja fundamental, apenas a estimulação domiciliar não é suficiente para uma criança que já apresenta sinais claros de atraso e isolamento social. Adiar a intervenção profissional por mais 6 meses prejudica o aproveitamento da janela de desenvolvimento neuropsicomotor.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  },
+  {
+    "id": "AJUDA_983a27cd-a30b-46a6-a856-0cd4fe0d471b",
+    "originalId": "983a27cd-a30b-46a6-a856-0cd4fe0d471b",
+    "statement": "Masculino, 25 anos, é admitido no pronto atendimento de emergência, apresenta quadro de alteração do estado mental há 01 semana, caracterizada como comportamento inadequado, com agressividade e agitação. Ontem, apresentou quadro de parada da contactuação com duração de alguns segundos, acompanhada de liberação esfincteriana. Previamente é tabagista importante, não usa medicações continuamente. Ao exame físico, FC: 101 bpm, PA: 120x80 mmhg, Glasgow 14 (confuso), dextro 81, sem déficits neurológicos focais, sinal de Kerning e Brudzinski negativos. Nos exames iniciais de emergência, laboratoriais séricos sem alterações significativas e tomografia de crânio dentro da normalidade. Qual conduta seria a mais adequada neste momento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coleta de liquor",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cintilografia Cerebral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressonância de Crânio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avaliação da Psiquiatria",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um paciente jovem com quadro agudo/subagudo de alteração do comportamento (sintomas neuropsiquiátricos) associado a um provável evento convulsivo (perda de contato e liberação esfincteriana). Diante de um quadro de encefalopatia a esclarecer em um paciente previamente hígido, a prioridade é afastar causas orgânicas, especialmente as infecciosas e inflamatórias.\n\nAlternativa (a) CORRETA: O paciente apresenta sinais de encefalopatia aguda/subaguda. Após a realização de uma tomografia de crânio normal (que afasta lesões expansivas e hemorragias), o próximo passo fundamental é a análise do líquido cefalorraquidiano (líquor). A coleta de líquor permite identificar sinais de inflamação (pleocitose, aumento de proteínas) e realizar testes específicos (como PCR para o vírus herpes simples ou pesquisa de anticorpos para encefalite autoimune, como a anti-NMDA, que é comum em jovens com sintomas psiquiátricos e crises convulsivas).\n\nAlternativa (b) INCORRETA: A cintilografia cerebral não possui indicação no manejo inicial de quadros de agitação e confusão mental aguda na emergência. Esse exame é mais utilizado em protocolos de morte encefálica ou em avaliações específicas de demências e focos epilépticos em ambiente ambulatorial.\n\nAlternativa (c) INCORRETA: Embora a ressonância magnética (RM) seja superior à tomografia (TC) para visualizar alterações precoces de encefalites (como no lobo temporal), na prática da emergência, o líquor é prioritário para iniciar o tratamento empírico e confirmar o processo inflamatório/infeccioso. A RM seria o próximo passo de imagem, mas a coleta do líquor é mais determinante para a conduta imediata.\n\nAlternativa (d) INCORRETA: Todo quadro psiquiátrico de início súbito em paciente sem histórico prévio, especialmente acompanhado de alteração do nível de consciência (Glasgow 14) e crise convulsiva (liberação esfincteriana), deve ser considerado de causa orgânica até que se prove o contrário. Encaminhar para a psiquiatria antes de uma investigação neurológica completa é um erro grave, pois retarda o diagnóstico de patologias potencialmente fatais ou com sequelas graves.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Coma e Alterações da Consciência",
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  },
+  {
+    "id": "AJUDA_983b79ca-f4ab-4a37-8fc8-143bc3f0287f",
+    "originalId": "983b79ca-f4ab-4a37-8fc8-143bc3f0287f",
+    "statement": "Homem 58 anos, obeso grau II, hérnia umbilical de 1,5 cm programada para reparo primário. Qual o principal fator de risco de recidiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obesidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sexo feminino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Idade > 60 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diálise peritoneal crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO TÉCNICO\n\nA questão foca nos fatores que influenciam o sucesso do reparo de uma hérnia umbilical. O paciente em questão possui obesidade grau II e uma hérnia de 1,5 cm, o que já indica um cenário de maior risco para falha cirúrgica, especialmente se for realizado um reparo primário (apenas com sutura, sem uso de tela).\n\nAlternativa (a): Correta. A obesidade é amplamente reconhecida na literatura cirúrgica como o principal fator de risco independente para a recidiva de hérnias da parede abdominal. Isso ocorre por três motivos principais: 1) Aumento constante da pressão intra-abdominal que força a linha de sutura; 2) Maior incidência de complicações no sítio cirúrgico, como seromas e infecções, que prejudicam a cicatrização; e 3) Alterações no metabolismo do colágeno e má qualidade dos tecidos aponeuróticos. Em pacientes obesos, a taxa de recidiva em reparos primários é significativamente maior do que em pacientes com IMC normal.\n\nAlternativa (b): Incorreta. O tabagismo é um fator de risco importante, pois prejudica a microcirculação e a síntese de colágeno, além de frequentemente causar tosse crônica, que aumenta a pressão abdominal. No entanto, estatisticamente, a obesidade tem um impacto mais direto e prevalente na falha do reparo de hérnias umbilicais do que o tabagismo isolado.\n\nAlternativa (c): Incorreta. O sexo feminino está muito ligado ao aparecimento de hérnias umbilicais devido às gestações, mas o sexo em si não é o principal fator de risco para a recidiva. Alguns estudos, inclusive, apontam taxas de recidiva maiores em homens.\n\nAlternativa (d): Incorreta. A idade avançada pode estar associada a uma cicatrização mais lenta e a tecidos mais frágeis, mas a idade de 58 ou 60 anos não é, isoladamente, o fator de maior peso para a recidiva quando comparada a condições que alteram a mecânica abdominal, como a obesidade.\n\nAlternativa (e): Incorreta. A diálise peritoneal crônica de fato aumenta muito o risco de recidiva devido à pressão hidrostática constante exercida pelo banho de diálise na cavidade abdominal. Entretanto, trata-se de um fator de risco específico para pacientes com insuficiência renal terminal em terapia substitutiva. Na análise global e no contexto do paciente obeso apresentado, a obesidade permanece como o fator de risco principal e mais comum.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  },
+  {
+    "id": "AJUDA_983bad0b-5303-4160-9ceb-1d1c1d6d0fc0",
+    "originalId": "983bad0b-5303-4160-9ceb-1d1c1d6d0fc0",
+    "statement": "Recém-nascido, sexo feminino, 2 dias de vida, foi transferido do alojamento conjunto para a uti neonatal devido a desconforto respiratório iniciado há poucas horas. Trata-se de criança nascida de termo (38 semanas), parto vaginal, Apgar 9/9, sem necessidade de manobras de reanimação.\nNa avaliação atual, apresenta cianose central persistente (SatO₂ 82% em ar ambiente), sem desconforto respiratório. Ausculta cardíaca com sopro sistólico e pulsos normais. Saturação pré-ductal: 83%; pós-ductal: 80%.\nGasometria arterial: pO₂ 44 mmHg (referência: > 60 mmHg) após 10 min de oferta de oxigênio a 100%.\nRadiografia de tórax: campos bem expandidos, área cardíaca normal.\nQuais são o diagnóstico mais provável e a conduta inicial correspondente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cardiopatia congênita cianótica – iniciar infusão de prostaglandina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Persistência da circulação fetal – iniciar ventilação mecânica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome do desconforto respiratório – iniciar CPAP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Taquipneia transitória – manter O₂ sob cateter nasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nEstamos diante de um recém-nascido de termo, com dois dias de vida, que apresenta cianose central persistente e refratária à oferta de oxigênio. O ponto-chave da questão é o resultado da gasometria após o teste de hiperóxia (oferta de O2 a 100% por 10 minutos): a pO2 de 44 mmHg (valor de referência maior que 60 mmHg, mas em neonatos saudáveis espera-se que ultrapasse 150-250 mmHg sob O2 a 100%) caracteriza um teste de hiperóxia negativo. Isso indica que a hipoxemia não é de origem pulmonar, mas sim decorrente de um shunt direita-esquerda anatômico, típico das cardiopatias congênitas cianóticas. Outro detalhe importante é a ausência de desconforto respiratório importante e a radiografia de tórax normal, o que afasta doenças do parênquima pulmonar.\n\nAlternativa A: Correta. A apresentação clínica (cianose em recém-nascido de termo sem angústia respiratória importante) e o teste de hiperóxia negativo são patognomônicos de cardiopatia congênita cianótica. O aparecimento dos sintomas aos dois dias de vida coincide com o fechamento fisiológico do canal arterial. Em muitas dessas cardiopatias, a sobrevivência depende da patência desse canal (cardiopatias ducto-dependentes). Portanto, a conduta inicial imediata é a infusão de prostaglandina E1 (Alprostadil) para reabrir ou manter o canal arterial aberto, garantindo a oxigenação sistêmica ou o fluxo pulmonar até a definição cirúrgica.\n\nAlternativa B: Incorreta. A persistência da circulação fetal (hipertensão pulmonar persistente do recém-nascido) costuma apresentar uma diferença significativa entre a saturação pré-ductal (mão direita) e pós-ductal (membros inferiores), geralmente superior a 5% a 10%. Na questão, a diferença é mínima (83% vs 80%). Além disso, a hipertensão pulmonar costuma estar associada a fatores de risco como asfixia, aspiração de mecônio ou sepse, o que não é o caso deste paciente de termo com Apgar 9/9.\n\nAlternativa C: Incorreta. A síndrome do desconforto respiratório (doença da membrana hialina) é uma patologia clássica do prematuro por deficiência de surfactante. O paciente em questão é de termo (38 semanas). Além disso, a radiografia mostraria campos pulmonares mal expandidos com padrão reticulogranular fino (vidro fosco), e não campos bem expandidos como descrito.\n\nAlternativa D: Incorreta. A taquipneia transitória do recém-nascido é uma condição benigna, geralmente associada a partos cesáreos sem trabalho de parto, causada por retardo na reabsorção do líquido pulmonar. Ela cursa com desconforto respiratório leve a moderado que melhora rapidamente com baixas frações de oxigênio. A pO2 de 44 mmHg sob oxigênio a 100% descarta essa hipótese, pois indica uma hipoxemia grave e refratária.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:02.123Z"
+  }
+]

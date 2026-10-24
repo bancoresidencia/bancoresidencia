@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import { Question, AdvancedFilterState } from '@/types';
+import { Question, AdvancedFilterState, QuestionReport, ReportStatus } from '@/types';
 import {
   sanitizePostgrestTerm,
   validateQuestionId,
@@ -12,6 +12,7 @@ import {
   generateStratifiedQuiz,
   fetchFacetedHierarchyCounts,
   hasRightCardActiveFilters,
+  shuffleArray,
   type FacetedHierarchyCountsResult
 } from './stratifiedQuizService';
 import { getQuestionCount } from '@/data/hierarchyCounts';
@@ -24,6 +25,7 @@ export {
   generateStratifiedQuiz,
   fetchFacetedHierarchyCounts,
   hasRightCardActiveFilters,
+  shuffleArray,
   type FacetedHierarchyCountsResult
 };
 
@@ -394,7 +396,27 @@ export async function fetchQuestionsFromSupabase(
     };
   }
 
-  const questions = (data || []).map(mapRowToQuestion);
+  let questions = (data || []).map(mapRowToQuestion);
+
+  // Se questionIds específicos foram fornecidos, respeita a lista solicitada
+  if (questionIds && questionIds.length > 0) {
+    const idMap = new Map(questions.map((q) => [q.id, q]));
+    const reordered: Question[] = [];
+    for (const id of questionIds) {
+      const q = idMap.get(id);
+      if (q) reordered.push(q);
+    }
+    if (!filters.aleatorizar) {
+      reordered.sort((a, b) => (b.year || 0) - (a.year || 0));
+    }
+    questions = reordered;
+  } else {
+    if (filters.aleatorizar) {
+      questions = shuffleArray(questions);
+    } else {
+      questions.sort((a, b) => (b.year || 0) - (a.year || 0));
+    }
+  }
 
   // Resolução de contagem do universo com base consolidada (132.965)
   let total: number = 132965;
@@ -873,27 +895,36 @@ export async function fetchAdminCurationStats(
 }
 
 /**
- * Registra denúncia ou apontamento de erro em questão
+ * Registra denúncia ou apontamento de erro em questão com comentários do estudante
  */
 export async function reportQuestionIssue(
   questionId: string,
   reason: string = 'Erro no gabarito ou enunciado',
-  details?: string
+  details?: string,
+  userMeta?: { id?: string; email?: string; name?: string }
 ): Promise<{ success: boolean; message: string }> {
   if (!questionId || typeof questionId !== 'string') {
     return { success: false, message: 'ID da questão inválido.' };
   }
 
-  // 1. Armazena localmente para conferência instantânea
+  const reportId = typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : `rep_${Date.now()}`;
+  const now = new Date().toISOString();
+
+  // 1. Armazena localmente para conferência instantânea e modo offline
   if (typeof window !== 'undefined') {
     try {
       const raw = localStorage.getItem('bancoresidencia_reported_questions');
       const list = raw ? JSON.parse(raw) : [];
-      list.push({
+      list.unshift({
+        id: reportId,
         questionId,
+        userId: userMeta?.id || null,
+        userEmail: userMeta?.email || null,
+        userName: userMeta?.name || 'Estudante',
         reason,
-        details,
-        timestamp: new Date().toISOString()
+        details: details || '',
+        status: 'pending',
+        createdAt: now
       });
       localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(list));
     } catch {
@@ -904,13 +935,20 @@ export async function reportQuestionIssue(
   // 2. Envia ao Supabase se disponível
   try {
     const { data: { user } } = await supabase.auth.getUser();
+    const finalUserId = userMeta?.id || user?.id || null;
+    const finalUserEmail = userMeta?.email || user?.email || null;
+    const finalUserName = userMeta?.name || user?.user_metadata?.full_name || 'Estudante';
+
     const { error } = await supabase.from('question_reports').insert({
+      id: reportId,
       question_id: questionId,
-      user_id: user?.id || null,
+      user_id: finalUserId,
+      user_email: finalUserEmail,
+      user_name: finalUserName,
       reason,
-      details,
+      details: details || '',
       status: 'pending',
-      created_at: new Date().toISOString()
+      created_at: now
     });
 
     if (error) {
@@ -920,7 +958,191 @@ export async function reportQuestionIssue(
     console.warn('Falha no envio remoto do report da questão:', err);
   }
 
-  return { success: true, message: 'Questão enviada para auditoria da banca médica.' };
+  return { success: true, message: 'Apontamento registrado com sucesso. A banca médica irá revisar!' };
+}
+
+interface QuestionReportDbRow {
+  id: string;
+  question_id: string;
+  user_id?: string | null;
+  user_email?: string | null;
+  user_name?: string | null;
+  reason: string;
+  details?: string;
+  status?: ReportStatus;
+  admin_notes?: string | null;
+  created_at?: string;
+  resolved_at?: string | null;
+  timestamp?: string;
+  questionId?: string;
+  userName?: string;
+  userEmail?: string;
+  adminNotes?: string | null;
+  createdAt?: string;
+  resolvedAt?: string | null;
+}
+
+/**
+ * Busca a lista de questões reportadas para o painel de auditoria do Administrador
+ */
+export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Promise<QuestionReport[]> {
+  const reportsMap = new Map<string, QuestionReport>();
+
+  // 1. Busca do Supabase
+  try {
+    let query = supabase
+      .from('question_reports')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if (statusFilter && statusFilter !== 'all') {
+      query = query.eq('status', statusFilter);
+    }
+
+    const { data, error } = await query.limit(200);
+    if (!error && data) {
+      (data as unknown as QuestionReportDbRow[]).forEach((row) => {
+        reportsMap.set(row.id, {
+          id: row.id,
+          questionId: row.question_id,
+          userId: row.user_id,
+          userEmail: row.user_email,
+          userName: row.user_name || 'Estudante',
+          reason: row.reason,
+          details: row.details || '',
+          status: row.status || 'pending',
+          adminNotes: row.admin_notes || null,
+          createdAt: row.created_at || new Date().toISOString(),
+          resolvedAt: row.resolved_at || null
+        });
+      });
+    }
+  } catch (err) {
+    console.warn('Erro ao carregar reports do Supabase:', err);
+  }
+
+  // 2. Mescla com reports locais (fallback robusto)
+  if (typeof window !== 'undefined') {
+    try {
+      const raw = localStorage.getItem('bancoresidencia_reported_questions');
+      if (raw) {
+        const localList = JSON.parse(raw);
+        if (Array.isArray(localList)) {
+          (localList as QuestionReportDbRow[]).forEach((item) => {
+            const id = item.id || `rep_${item.questionId || item.question_id}_${item.timestamp || item.createdAt}`;
+            if (!reportsMap.has(id)) {
+              if (!statusFilter || statusFilter === 'all' || item.status === statusFilter) {
+                reportsMap.set(id, {
+                  id,
+                  questionId: item.questionId || item.question_id,
+                  userId: item.user_id || null,
+                  userEmail: item.user_email || item.userEmail || null,
+                  userName: item.user_name || item.userName || 'Estudante',
+                  reason: item.reason,
+                  details: item.details || '',
+                  status: item.status || 'pending',
+                  adminNotes: item.admin_notes || item.adminNotes || null,
+                  createdAt: item.created_at || item.createdAt || item.timestamp || new Date().toISOString()
+                });
+              }
+            }
+          });
+        }
+      }
+    } catch {
+      // ignore
+    }
+  }
+
+  const reportsList = Array.from(reportsMap.values());
+  if (reportsList.length === 0) return [];
+
+  // 3. Enriquecer com dados das questões correspondentes (banca, ano, enunciado, etc.)
+  try {
+    const questionIds = Array.from(new Set(reportsList.map((r) => r.questionId)));
+    const { data: qData } = await supabase
+      .from('questions')
+      .select('id, code, institution, banca, year, especialidade, tema, statement, options, correct_answer')
+      .in('id', questionIds);
+
+    if (qData && qData.length > 0) {
+      const qMap = new Map(qData.map((q) => [q.id, q]));
+      reportsList.forEach((rep) => {
+        const qRow = qMap.get(rep.questionId);
+        if (qRow) {
+          rep.question = {
+            id: qRow.id,
+            code: qRow.code,
+            institution: qRow.institution,
+            banca: qRow.banca,
+            year: qRow.year,
+            especialidade: qRow.especialidade,
+            tema: qRow.tema,
+            statement: qRow.statement,
+            options: qRow.options,
+            correctAnswer: qRow.correct_answer
+          };
+        }
+      });
+    }
+  } catch (err) {
+    console.warn('Erro ao enriquecer reports com dados das questões:', err);
+  }
+
+  return reportsList;
+}
+
+/**
+ * Atualiza o status de uma denúncia/report pelo Administrador
+ */
+export async function updateQuestionReportStatus(
+  reportId: string,
+  status: ReportStatus,
+  adminNotes?: string
+): Promise<{ success: boolean; message: string }> {
+  const now = new Date().toISOString();
+
+  // 1. Atualiza no Supabase
+  try {
+    await supabase
+      .from('question_reports')
+      .update({
+        status,
+        admin_notes: adminNotes || null,
+        resolved_at: status === 'resolved' ? now : null
+      })
+      .eq('id', reportId);
+  } catch (err) {
+    console.warn('Falha ao atualizar status de report no Supabase:', err);
+  }
+
+  // 2. Atualiza no localStorage
+  if (typeof window !== 'undefined') {
+    try {
+      const raw = localStorage.getItem('bancoresidencia_reported_questions');
+      if (raw) {
+        const list = JSON.parse(raw);
+        if (Array.isArray(list)) {
+          const updated = (list as QuestionReportDbRow[]).map((item) => {
+            if (item.id === reportId || item.questionId === reportId) {
+              return {
+                ...item,
+                status,
+                adminNotes: adminNotes || item.adminNotes,
+                resolvedAt: status === 'resolved' ? now : item.resolvedAt
+              };
+            }
+            return item;
+          });
+          localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(updated));
+        }
+      }
+    } catch {
+      // ignore
+    }
+  }
+
+  return { success: true, message: `Status atualizado para "${status}".` };
 }
 
 /**

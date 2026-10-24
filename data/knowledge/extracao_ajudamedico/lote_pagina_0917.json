@@ -1,0 +1,516 @@
+[
+  {
+    "id": "AJUDA_fe6b39e8-b7c8-4c12-836f-f3f7e9b798c9",
+    "originalId": "fe6b39e8-b7c8-4c12-836f-f3f7e9b798c9",
+    "statement": "Mulher, 70 anos, há 8 meses com adinamia e dispneia progressiva. Exame físico: BEG, hipocorada 2+/4+, sem outras alterações. Hemograma completo: hemoglobina: 9,6 g/dl; VCM: 73 fl; glóbulos brancos: 5.300/μL; plaquetas: 425.000/μL; reticulócitos=0,3%. Ácido fólico: 3,6 ng/mL (VR: 3.0 a 17.0); Vitamina B12: 654 pg/mL (VR: 174,0 a 878,0); Ferritina: 1,5 ng/mL (VR: 10 a 291), ferro sérico: 25 ug/dL (VR: 50 a 170), capacidade latente de fixação de ferro: 460 ug/dL (VR: 250 a 425). Qual exame deve ser solicitado para complementar a avaliação da paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sangue oculto nas fezes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anticorpo anti célula parietal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Eletroforese de hemoglobina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Endoscopia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente de 70 anos apresenta um quadro clássico de anemia ferropriva, caracterizado por hemoglobina baixa (9,6 g/dL), microcitose (VCM de 73 fL), hipocromia e reticulócitos baixos (anemia hipoproliferativa). Os exames bioquímicos confirmam o diagnóstico: a ferritina está extremamente baixa (1,5 ng/mL), o ferro sérico reduzido e a capacidade de fixação de ferro aumentada.\n\nEm pacientes idosos (homens ou mulheres na pós-menopausa), o diagnóstico de anemia ferropriva exige obrigatoriamente a investigação de perda sanguínea pelo trato gastrointestinal, uma vez que as causas mais graves e frequentes nessa faixa etária são as neoplasias colorretais ou gástricas, além de lesões ulcerosas e angiodisplasias.\n\nAnálise das alternativas:\n\na) Incorreta. O teste de sangue oculto nas fezes é um método de rastreamento (screening) para câncer colorretal em pacientes assintomáticos. No caso desta paciente, a anemia ferropriva já é uma evidência indireta de perda sanguínea crônica. Portanto, não se deve perder tempo com o rastreamento, mas sim prosseguir diretamente para os exames diagnósticos que visualizam a mucosa digestiva.\n\nb) Incorreta. A pesquisa de anticorpo anticélula parietal é utilizada no diagnóstico da anemia perniciosa (gastrite atrófica autoimune), que causa deficiência de vitamina B12. No caso apresentado, a vitamina B12 está normal e a anemia é microcítica (na deficiência de B12, a anemia é macrocítica, com VCM elevado).\n\nc) Incorreta. A eletroforese de hemoglobina é o exame padrão para o diagnóstico de hemoglobinopatias, como as talassemias, que também cursam com microcitose. Entretanto, na talassemia, os estoques de ferro (ferritina) costumam estar normais ou aumentados, e não reduzidos como observado nesta paciente.\n\nd) Correta. Diante de uma idosa com anemia ferropriva, é imperativo investigar o trato digestivo alto e baixo. A endoscopia digestiva alta (EDA) e a colonoscopia são os exames de escolha para buscar a origem do sangramento (como câncer gástrico, câncer de cólon ou úlceras). Entre as opções dadas, a EDA é o procedimento diagnóstico invasivo correto para iniciar ou complementar essa propedêutica. No manejo clínico real, ambos os exames (EDA e colonoscopia) seriam indicados.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:58.116Z"
+  },
+  {
+    "id": "AJUDA_fe7693ce-9fbc-433c-b5f2-6ccfcba1c124",
+    "originalId": "fe7693ce-9fbc-433c-b5f2-6ccfcba1c124",
+    "statement": "Paciente 34 anos, sexo feminino, previamente assintomática, estava em propedêutica de uma fadiga leve, quando foi solicitado um eletrocardiograma. Qual sua PRINCIPAL hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "FA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TPS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tromboembolismo pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Taquicardia Sinusal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Eletrocardiograma (ECG):\n\nAo analisar o traçado fornecido, observamos os seguintes pontos fundamentais para o diagnóstico:\n\n1. Frequência Cardíaca: O intervalo entre as ondas R é de aproximadamente 2,6 quadrados grandes. Isso resulta em uma frequência cardíaca de cerca de 115 batimentos por minuto (bpm). Como a frequência está acima de 100 bpm, trata-se de uma taquicardia.\n2. Ritmo: O ritmo é regular, apresentando intervalos R-R constantes em todo o traçado.\n3. Onda P: Existe uma onda P precedendo cada complexo QRS, com intervalo PR constante. Essa onda P é claramente positiva em DI, DII e aVF, e negativa em aVR. Essas características definem, tecnicamente, um ritmo sinusal.\n4. Complexo QRS: O QRS é estreito (menor que 120 ms), indicando que a ativação ventricular ocorre de forma normal pelo sistema de condução.\n\nAnálise das Alternativas:\n\nAlternativa A - FA (Fibrilação Atrial): INCORRETA. A fibrilação atrial é definida por um ritmo \"irregularmente irregular\" e pela ausência de ondas P organizadas (substituídas por ondas f de alta frequência). No ECG da imagem, o ritmo é perfeitamente regular e as ondas P são bem visíveis.\n\nAlternativa B - TPS (Taquicardia Paroxística Supraventricular): INCORRETA. As taquicardias supraventriculares por reentrada costumam apresentar frequências cardíacas mais elevadas (geralmente acima de 150 bpm). Além disso, a onda P costuma estar ausente ou inserida logo após o complexo QRS (onda P retrógrada). O traçado mostra uma onda P sinusal precedendo o QRS.\n\nAlternativa C - Tromboembolismo Pulmonar (TEP): INCORRETA. Embora a taquicardia sinusal seja o achado eletrocardiográfico mais comum no TEP, a história clínica de uma paciente jovem com \"fadiga leve\" em investigação ambulatorial não condiz com a apresentação aguda do TEP. Além disso, o ECG não apresenta sinais de sobrecarga de câmaras direitas, como o clássico padrão S1Q3T3 ou inversão de onda T em V1-V3.\n\nAlternativa D - Taquicardia Sinusal: CORRETA. Esta é a principal hipótese, pois o ECG preenche todos os critérios: frequência cardíaca superior a 100 bpm com a presença de ondas P de morfologia sinusal (positivas em DII) precedendo cada complexo QRS em um ritmo regular. Em uma paciente com fadiga, esse achado direciona a investigação para causas como anemia, hipertireoidismo ou descondicionamento físico.\n\nGabarito: Letra D.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Taquiarritmias",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/73c05beb98fcafb685a6b6a5969f56edf1e5d9fe8e9cc7334597b7b149081efa.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_fe7693ce-9fbc-433c-b5f2-6ccfcba1c124_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:58.521Z"
+  },
+  {
+    "id": "AJUDA_fe858483-1ece-47d4-80ba-ebfe3b271f75",
+    "originalId": "fe858483-1ece-47d4-80ba-ebfe3b271f75",
+    "statement": "Um paciente de 32 anos, previamente saudável e sem histórico de doenças cardíacas ou fatores de risco cardiovascular, é admitido com diagnóstico de sepse urinária secundária à pielonefrite. Na avaliação inicial, ele está febril, taquicárdico e hipotenso, necessitando de reposição volêmica agressiva e uso de noradrenalina. A gasometria arterial revelou acidose metabólica com elevação do lactato. Durante a internação na UTI, exames laboratoriais demonstram elevação de troponina T de alta sensibilidade, com valores de 80 e 125 ng/L (normal < 14 ng/L). O eletrocardiograma (ECG) mostra taquicardia sinusal e alteração difusa da repolarização ventricular. O ecocardiograma apresenta fração de ejeção do ventrículo esquerdo de 55%, sem alterações segmentares de contratilidade. Qual o principal diagnóstico para o paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Miocardite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infarto sem supra ST",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Injúria miocárdica aguda",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Infarto do miocárdio sem coronariopatia obstrutiva (MINOCA)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico correto para o caso clínico apresentado é a letra (c) Injúria miocárdica aguda.\n\nA Quarta Definição Universal de Infarto do Miocárdio estabelece critérios claros para diferenciar a injúria miocárdica do infarto do miocárdio. A injúria miocárdica é definida pela presença de valores de troponina cardíaca acima do limite superior de referência (percentil 99). Ela é classificada como aguda quando há um padrão de aumento ou queda nos valores (curva), o que foi demonstrado pelos valores de 80 e 125 ng/L no paciente.\n\nNo contexto de pacientes críticos, como no caso de sepse urinária e choque séptico, a elevação da troponina é comum devido ao estresse metabólico, efeito direto de citocinas inflamatórias no miocárdio, taquicardia e uso de catecolaminas (noradrenalina).\n\nAbaixo, a explicação detalhada de por que cada alternativa foi descartada:\n\nAlternativa (a) Miocardite: A miocardite é uma inflamação do músculo cardíaco, geralmente de causa viral, que pode, sim, cursar com elevação de troponina e alterações de repolarização. No entanto, o quadro clínico do paciente é dominado por um foco infeccioso extracardíaco claro (pielonefrite) e choque séptico. A alteração cardíaca, neste caso, é secundária à doença sistêmica e não uma inflamação primária do coração, o que torna o termo injúria miocárdica aguda mais apropriado.\n\nAlternativa (b) Infarto sem supra de ST: Para o diagnóstico de infarto do miocárdio (IAM), é obrigatória a presença de injúria miocárdica (elevação de troponina) associada a evidências clínicas de isquemia miocárdica aguda. Essas evidências incluem sintomas de isquemia (dor torácica), novas alterações isquêmicas no ECG (como depressão de ST ou inversão de onda T em territórios coronarianos específicos) ou perda de tecido viável demonstrada por alterações segmentares de contratilidade no ecocardiograma. O paciente apresenta apenas alterações difusas e inespecíficas no ECG, e o ecocardiograma não mostra alterações segmentares, o que afasta o diagnóstico de IAM.\n\nAlternativa (c) Injúria miocárdica aguda: Esta é a alternativa correta. O paciente possui elevação dinâmica de troponina no contexto de uma doença aguda grave (sepse). Como não há evidências clínicas, eletrocardiográficas ou ecocardiográficas de isquemia miocárdica (desequilíbrio entre oferta e demanda com sinais localizados), o quadro é definido estritamente como injúria miocárdica.\n\nAlternativa (d) Infarto do miocárdio sem coronariopatia obstrutiva (MINOCA): O MINOCA é um diagnóstico clínico-angiográfico. Ele é aplicado quando o paciente preenche os critérios para infarto do miocárdio (injúria + isquemia), mas a cineangiocoronariografia (cateterismo) não demonstra obstruções arteriais iguais ou superiores a 50%. Como o paciente não preenche os critérios básicos para infarto (por falta de sinais de isquemia), não se pode falar em MINOCA. Além disso, o quadro é totalmente explicado pela sepse, sem necessidade de investigação de fenótipos de infarto com coronárias normais neste momento.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:58.521Z"
+  },
+  {
+    "id": "AJUDA_fe86acca-c8c3-4156-a417-165f42d377dc",
+    "originalId": "fe86acca-c8c3-4156-a417-165f42d377dc",
+    "statement": "Uma gestora municipal da Atenção Primária à Saúde (APS) prepara o planejamento financeiro anual. Ela sabe que, segundo a Portaria GM/MS n. 7.799/2025, o cofinanciamento federal do Piso da APS inclui, entre outras frentes, um conjunto chamado componentes, formado por três repasses específicos. Antes de orientar a equipe, a gestora deseja confirmar a nomenclatura oficial desses três repasses. Conforme a Portaria GM/MS n. 7.799/2025, o repasse que, juntamente com \"Vínculo e Acompanhamento Territorial\" e \"Qualidade\", integra os componentes do cofinanciamento federal da APS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Componente fixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Universalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Equidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Desempenho.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda as mudanças recentes no financiamento da Atenção Primária à Saúde (APS) no Brasil, consolidadas pela Portaria GM/MS nº 7.799/2025. Este modelo normativo atualizou a estrutura de repasses federais, organizando o cofinanciamento do Piso da APS em três pilares ou componentes principais: Vínculo e Acompanhamento Territorial, Qualidade e Equidade.\n\nAnálise das alternativas:\n\nAlternativa a) Componente fixo.\nIncorreta. O termo Componente Fixo, ou antigo PAB Fixo, remete a modelos de financiamento anteriores. No atual modelo estabelecido pela Portaria de 2025, a lógica de repasse baseada no território e na população sob responsabilidade das equipes é contemplada pelo componente de Vínculo e Acompanhamento Territorial, e não por um componente isolado com o nome \"fixo\".\n\nAlternativa b) Universalidade.\nIncorreta. A universalidade é um dos princípios doutrinários fundamentais do Sistema Único de Saúde (SUS), assegurando que todo cidadão tenha direito ao acesso às ações e serviços de saúde. Embora seja um pilar ético e jurídico do sistema, não é a nomenclatura técnica de um dos três componentes de repasse financeiro do Piso da APS definidos pela portaria mencionada.\n\nAlternativa c) Equidade.\nCorreta. O componente de Equidade é o terceiro pilar do novo financiamento. Ele tem o objetivo de direcionar recursos de forma diferenciada para compensar desigualdades socioeconômicas e demográficas. Esse repasse considera critérios como o perfil de vulnerabilidade da população, a presença de povos e comunidades tradicionais e as dificuldades de acesso geográfico de cada município.\n\nAlternativa d) Desempenho.\nIncorreta. O termo Pagamento por Desempenho era a nomenclatura central do modelo anterior (conhecido como Previne Brasil). Na transição para a nova regulamentação de 2025, a avaliação do alcance de metas e indicadores de saúde passou a ser integrada e reformulada dentro do componente denominado Qualidade. Portanto, \"Desempenho\" não é mais a nomenclatura oficial isolada para esse fim.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:58.521Z"
+  },
+  {
+    "id": "AJUDA_fe93cd01-b753-453c-b442-7e5f4966735a",
+    "originalId": "fe93cd01-b753-453c-b442-7e5f4966735a",
+    "statement": "Mulher de 51 anos, portadora de obesidade grau 1 e diabetes mellitus, procura atendimento por queixa de dor intermitente em hipocôndrio direito há 4 dias, associada à colúria e acolia fecal nas últimas 24 horas. Nega febre. Ao exame físico, apresenta-se ictérica (2+/4+), com dor à palpação em hipocôndrio direito e Murphy negativo. Exames laboratoriais: BT 5,2mg/dL (BD 4,3mg/dL), FA 420 U/L, GGT 610 U/L, TGO 86 U/L, TGP 104 U/L, amilase 30 U/L, lipase 55 U/L, leucometria 8.900/mm3. Realizou ultrassonografia de abdome que evidenciou vesícula biliar com múltiplos cálculos e dilatação de vias biliares com diâmetro máximo de 9mm, sem identificar fator obstrutivo. É, então, realizada a colangioressonância. Diante do achado da imagem, qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar antibioticoterapia e observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar tomografia computadorizada para estadiamento adequado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar drenagem biliar percutânea transhepática para descompressão de via biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar CPRE terapêutica com papilotomia e extração do cálculo, seguida de colecistectomia por videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Indicar colangioscopia para biópsia, seguida de quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve uma paciente com síndrome colestática obstrutiva, caracterizada por dor em hipocôndrio direito, icterícia com padrão direto (bilirrubina direta elevada), acolia fecal, colúria e elevação importante de enzimas canaliculares (fosfatase alcalina e GGT). A ausência de febre e de leucocitose afasta, no momento, o diagnóstico de colangite aguda. A ultrassonografia sugeriu a obstrução ao mostrar dilatação da via biliar principal (9 mm) e colelitíase. A imagem de colangioressonância (CPRM) apresentada é definitiva: ela demonstra uma falha de enchimento arredondada na porção distal do colédoco, compatível com um cálculo (coledocolitíase), além de múltiplos cálculos no interior da vesícula biliar.\n\nAnálise das alternativas:\n\na) Incorreta. A antibioticoterapia seria indicada se houvesse sinais de infecção sistêmica (colangite), o que não é o caso atual (paciente afebril e com leucograma normal). Além disso, a conduta expectante não resolve a obstrução mecânica causada pelo cálculo impactado.\n\nb) Incorreta. A tomografia computadorizada com foco em estadiamento é utilizada em suspeitas de neoplasias. O quadro clínico e a imagem de CPRM são clássicos para doença litiásica (pedras), não havendo sinais de massa ou perda ponderal que justifiquem a investigação de malignidade no momento.\n\nc) Incorreta. A drenagem biliar percutânea trans-hepática é um procedimento invasivo geralmente reservado para casos de obstrução biliar alta (hilar), quando a CPRE não é tecnicamente possível ou em casos de falha do acesso endoscópico. Para cálculos em colédoco distal, a via endoscópica é a preferencial.\n\nd) Correta. Esta é a conduta padrão-ouro para a coledocolitíase identificada. A colangiopancreatografia retrógrada endoscópica (CPRE) tem finalidade terapêutica para realizar a papilotomia e a remoção do cálculo que obstrui o colédoco, aliviando a icterícia. Após a limpeza da via biliar, deve-se realizar a colecistectomia videolaparoscópica na mesma internação para remover a fonte dos cálculos e evitar novos episódios de migração litiásica ou colecistite.\n\ne) Incorreta. A colangioscopia para biópsia e quimioterapia seriam condutas voltadas para o tratamento de tumores das vias biliares (colangiocarcinomas). A imagem da CPRM e o histórico de dor em cólica favorecem fortemente a etiologia litiásica (benigna), tornando essa alternativa inadequada para o caso.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/66888a7905a8164fe794b3fc3d33a496d6c455caf66cc686597cada35c9abfad.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_fe93cd01-b753-453c-b442-7e5f4966735a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:58.902Z"
+  },
+  {
+    "id": "AJUDA_fe94d914-f6ac-487f-95ac-ea2d01241558",
+    "originalId": "fe94d914-f6ac-487f-95ac-ea2d01241558",
+    "statement": "Lactente masculino, 6 meses de idade, é levado à emergência pediátrica por sua mãe devido ao surgimento de “caroços” em pescoço e na virilha há cerca de 1 mês. Nos últimos dias, refere que o menor está mais irritado, além de perceber a respiração mais “rápida”. Relata que a criança apresentou picos febris em alguns dias ao longo desse período.\nO exame físico chamou a atenção do pediatra nos seguintes aspectos:\n- Leve palidez; irritabilidade durante todo o exame físico; linfonodos palpáveis em regiões cervical e inguinais bilaterais, com os maiores medindo cerca de 3 cm; frequência respiratória de 60 incursões por minuto; fígado palpável a 4 cm do rebordo costal direito.\nSolicitados exames:\n- Hemograma: HGB 10,5 g/dL VCM 70 fL HCM 24 pg\n- Leucócitos 12.450 mm3 / Plaquetas 165.000 / mm3\n- RX tórax (vide imagem abaixo). *O laudo do radiologista evidenciou, entre outros achados, lesões osteolíticas em ambas as escápulas. Foi sugerido realizar RX de crânio (vide abaixo).\n\nQual a principal hipótese diagnóstica para esse lactente diante dos achados clínicos e laboratoriais/ imagem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Linfohistiocitose hemofagocítica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paracoccidioidomicose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Leucemia linfoide crônica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Histiocitose de células de Langerhans",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Granulomatose eosinofílica com poliangeíte",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta um lactente de 6 meses com um quadro sistêmico caracterizado por febre, irritabilidade, linfonodopatia generalizada, hepatomegalia e desconforto respiratório (taquipneia). O ponto fundamental para a resolução da questão reside nos achados de imagem. O RX de crânio revela múltiplas lesões osteolíticas bem delimitadas, sem esclerose marginal, conhecidas classicamente como lesões em \"saca-bocados\" (punched-out lesions). Além disso, o RX de tórax demonstra infiltrado pulmonar difuso e lesões ósseas nas escápulas.\n\nAnálise das alternativas:\n\na) Incorreta. A linfo-histiocitose hemofagocítica (LHH) é uma síndrome de ativação imune grave que se manifesta com febre alta persistente, hepatosplenomegalia e citopenias importantes (geralmente atingindo pelo menos duas linhagens celulares). Embora possa haver sobreposição clínica, a LHH não costuma cursar com as lesões ósseas líticas características descritas e visualizadas na imagem.\n\nb) Incorreta. A paracoccidioidomicose na sua forma juvenil (tipo agudo/subagudo) pode acometer crianças e causar linfonodopatia e hepatoesplenomegalia. No entanto, o padrão radiológico das lesões ósseas no crânio e o acometimento pulmonar em um lactente de 6 meses tornam essa hipótese muito menos provável que a histiocitose.\n\nc) Incorreta. A leucemia linfoide crônica (LLC) é uma neoplasia hematológica típica de adultos idosos e praticamente inexistente na faixa etária pediátrica. As leucemias na infância são predominantemente agudas (LLA ou LMA).\n\nd) Correta. A histiocitose de células de Langerhans (HCL) é uma doença rara caracterizada pela proliferação idiopática de células com características semelhantes às células de Langerhans. Em lactentes menores de 2 anos, é comum a forma multissistêmica (antigamente chamada de doença de Letterer-Siwe), que envolve pele, fígado, baço, linfonodos, medula óssea e pulmões. As lesões ósseas líticas no crânio (\"saca-bocados\") são achados patognomônicos que, somados ao infiltrado pulmonar e à hepatomegalia, confirmam a principal hipótese diagnóstica.\n\ne) Incorreta. A granulomatose eosinofílica com poliangeíte (antiga síndrome de Churg-Strauss) é uma vasculite de pequenos vasos associada a asma grave, eosinofilia periférica importante e infiltrados pulmonares transitórios. É extremamente rara em lactentes e não justifica as lesões ósseas descritas.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Doenças do Osso e da Cartilagem",
+      "Anemias",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/e3dd9bc96f3b129e9cb330686ea2b0771a8f3b939d926fdcd55f6a63599309eb.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_fe94d914-f6ac-487f-95ac-ea2d01241558_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/dfdb4d139fbbbbc92f7e5f921b28104028e77e7b04bfa2819bb06e5ca11bcad1.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_fe94d914-f6ac-487f-95ac-ea2d01241558_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:59.458Z"
+  },
+  {
+    "id": "AJUDA_fe957c8f-77f4-40f4-b7fb-55a786775d23",
+    "originalId": "fe957c8f-77f4-40f4-b7fb-55a786775d23",
+    "statement": "A respeito dos níveis de prevenção e sobre os critérios de Wilson e Jungner (1968) para a justificação ética e operacional de um programa de rastreamento populacional (screening), qual das seguintes afirmações é VERDADEIRA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A história natural da condição, incluindo o conhecimento de uma fase latente (pré-sintomática) e a progressão para a doença manifesta, é um requisito fundamental para definir a janela de oportunidade do rastreamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O teste de rastreamento deve ter uma especificidade perfeita (100%), pois qualquer resultado falso-positivo inviabiliza economicamente o programa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A doença deve obrigatoriamente ter um tratamento disponível, mas esse tratamento não precisa necessariamente ter sido demonstrado como mais eficaz quando aplicado na fase pré-sintomática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A disponibilidade de recursos e a relação custo-eficácia não são critérios de Wilson e Jungner, sendo considerados apenas em uma etapa posterior de planejamento político administrativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os critérios estabelecidos por Wilson e Jungner em 1968, que ainda são a base fundamental para a implementação de programas de rastreamento (screening) na saúde pública. O objetivo do rastreamento é identificar doenças em estágio inicial (prevenção secundária) em indivíduos assintomáticos, para que a intervenção precoce resulte em melhor prognóstico.\n\nAnálise das alternativas:\n\nAlternativa A (CORRETA): Para que um rastreamento seja justificável, é imprescindível conhecer a história natural da doença. Isso inclui identificar um período de latência ou uma fase pré-sintomática em que a doença possa ser detectada por testes. Sem o entendimento de como a patologia progride da fase latente para a manifesta, não é possível estabelecer a janela de oportunidade em que o diagnóstico precoce mudará o curso da doença.\n\nAlternativa B (INCORRETA): Não existe teste diagnóstico ou de rastreamento com especificidade de 100% na prática clínica. Embora se busque minimizar os falsos-positivos (para evitar custos e danos psicológicos/iatrogênicos), o critério de Wilson e Jungner exige que o teste seja aceitável pela população e que tenha uma acurácia adequada, mas não exige perfeição absoluta, o que tornaria o rastreamento impossível.\n\nAlternativa C (INCORRETA): Este é um ponto crucial. Não basta ter um tratamento disponível; é obrigatório que o tratamento na fase pré-sintomática seja comprovadamente mais eficaz ou resulte em melhores desfechos do que o tratamento iniciado após o surgimento dos sintomas. Se o desfecho final for o mesmo tratando cedo ou tarde, o rastreamento não traz benefício real ao paciente, apenas aumenta o tempo de diagnóstico (viés de antecipação ou lead-time bias).\n\nAlternativa D (INCORRETA): Ao contrário do que afirma a alternativa, a viabilidade econômica é um dos critérios explícitos de Wilson e Jungner. O custo da busca de casos (incluindo diagnóstico e tratamento) deve ser economicamente equilibrado em relação aos gastos médicos totais. Ou seja, a relação custo-eficácia e a disponibilidade de recursos são, sim, critérios fundamentais para a justificação ética e operacional de um programa de rastreamento.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Processo Saúde-Doença",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:59.458Z"
+  },
+  {
+    "id": "AJUDA_feab5160-02f4-4194-81b6-8f38ec1f5580",
+    "originalId": "feab5160-02f4-4194-81b6-8f38ec1f5580",
+    "statement": "Mulher de 65 anos, com antecedente de hipertensão arterial sistêmica e câncer de mama, iniciou quadro de dor abdominal em abdome inferior há 3 dias, associado a febre baixa de 37,9 ºC. Nega alterações de hábito intestinal no período ou previamente, bem como nega náuseas, vômitos, perda de peso e sintomas urinários. Refere episódio prévio de dor semelhante há 6 meses, com menor intensidade, com resolução espontânea. Ao exame físico, encontra-se em bom estado geral, com frequência cardíaca de 82 bpm e pressão arterial de 140 x 90 mmHg. Abdome globoso, normodistendido, ruídos hidroaéreos presentes, sem visceromegalias ou massas palpáveis, doloroso à palpação de hipogastro e fossa ilíaca esquerda, sem sinais de irritação peritoneal. Toque retal sem alterações. Exames laboratoriais iniciais: hemoglobina: 13,2 g/dL; hematócrito: 40%; leucograma: 12.770 µL; amilase: 69 µL (0-110); creatinina: 1,0 mg/dL.\n\nLevando em conta a principal hipótese diagnóstica, assinale a alternativa que apresenta a conduta correta nesse momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jejum, sintomáticos e preparo de cólon para colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Jejum, sintomáticos e tomografia computadorizada de abdome com contraste.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dieta leve sem resíduos, ceftriaxone e metronidazol e tomografia de abdome com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sintomáticos, orientações de sinais de alarme e investigação ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO E RACIOCÍNIO CLÍNICO\n\nO quadro clínico de uma paciente idosa (65 anos) com dor abdominal localizada em fossa ilíaca esquerda, febre baixa e leucocitose é a apresentação clássica da Diverticulite Aguda. Por ser uma inflamação de divertículos, geralmente no cólon sigmoide, é frequentemente referida como a \"apendicite à esquerda\". O histórico de episódio semelhante anterior reforça a hipótese de doença diverticular dos cólons.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA\n\nA Tomografia Computadorizada (TC) de abdome e pelve com contraste intravenoso é o exame padrão-ouro para o diagnóstico de diverticulite aguda. Ela permite confirmar a hipótese, excluir outros diagnósticos diferenciais e, principalmente, classificar a gravidade da doença (geralmente pela Classificação de Hinchey). O jejum é indicado no momento inicial para repouso intestinal e preparo para o exame, enquanto os sintomáticos garantem o conforto da paciente durante a investigação.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa (a): A colonoscopia e o preparo de cólon são formalmente contraindicados na fase aguda da diverticulite. A insuflação de ar necessária para o exame e a manipulação do aparelho aumentam drasticamente o risco de perfuração intestinal, já que a parede do cólon está fragilizada pelo processo inflamatório. O rastreio colonoscópico só deve ser feito 4 a 6 semanas após a resolução do quadro.\n\nAlternativa (c): Embora o uso de antibióticos (como Ceftriaxone e Metronidazol) e a TC façam parte do manejo, a alternativa (b) é mais precisa ao indicar o jejum inicial. Em pacientes com dor aguda e necessidade de imagem, o repouso intestinal (NPO) é a conduta de escolha até que se defina, pela tomografia, se o quadro é simples ou complicado e se haverá necessidade de intervenção.\n\nAlternativa (d): A presença de febre e leucocitose sugere uma resposta inflamatória sistêmica que exige investigação imediata no pronto-atendimento. Não é seguro liberar a paciente para investigação ambulatorial sem antes realizar um exame de imagem para descartar complicações graves, como abscessos ou perfurações bloqueadas, que necessitariam de internação hospitalar.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:59.458Z"
+  },
+  {
+    "id": "AJUDA_fedcfc4b-c0f3-4567-b2ee-c7effeb06aaf",
+    "originalId": "fedcfc4b-c0f3-4567-b2ee-c7effeb06aaf",
+    "statement": "Menina, 3 anos, apresenta artrite em joelho direito e tornozelo esquerdo, há 3 meses. Exame físico: normal, exceto pela presença do quadro articular. Exames laboratoriais: hemograma completo; velocidade de hemossedimentação e proteína C reativa normais. A pesquisa do fator reumatoide foi negativa e do fator antinuclear foi positiva (título 1:320, padrão pontilhado fino). Pode-se afirmar que o exame imprescindível a ser solicitado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "anticorpo anti-DNA nativo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "lâmpada de fenda",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "tomografia de coerência óptica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "elementos anormais e sedimento urinário",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta uma menina de 3 anos com artrite em duas articulações (joelho e tornozelo) há 3 meses, o que caracteriza uma oligoartrite crônica. Com exames de atividade inflamatória normais e Fator Antinuclear (FAN) reagente em títulos significativos (1:320), o diagnóstico principal é Artrite Idiopática Juvenil (AIJ) do subtipo oligoarticular.\n\nNesse perfil de paciente (sexo feminino, início precoce da doença e FAN positivo), existe um risco muito elevado para o desenvolvimento de uveíte anterior crônica (iridociclite). Esta condição é perigosa por ser frequentemente assintomática, não apresentando sinais como olho vermelho ou dor, mas podendo levar à cegueira se não detectada precocemente. Por isso, o rastreio oftalmológico periódico é obrigatório e imediato.\n\nAnálise das alternativas:\n\nA) anticorpo anti-DNA nativo: Incorreto. Este marcador é específico para o Lúpus Eritematoso Sistêmico (LES). Embora o FAN esteja positivo, o quadro de artrite isolada em uma criança de 3 anos é o quadro clássico de AIJ, e não de LES, que costuma apresentar outros critérios clínicos e sintomas sistêmicos.\n\nB) lâmpada de fenda: Correto. A biomicroscopia em lâmpada de fenda permite ao oftalmologista visualizar sinais de inflamação na câmara anterior do olho. É o exame imprescindível para o rastreio de uveíte assintomática em pacientes com AIJ oligoarticular, devendo ser realizado no momento do diagnóstico e repetido periodicamente.\n\nC) tomografia de coerência óptica: Incorreto. A OCT é um exame detalhado utilizado para avaliar doenças da retina e do nervo óptico. Não é o método de escolha nem o exame inicial para o rastreio de uveíte anterior em crianças com AIJ.\n\nD) elementos anormais e sedimento urinário: Incorreto. O exame de urina avalia funções renais, presença de proteínas ou infecções. Seria útil na suspeita de nefrite lúpica, mas não tem indicação como exame imprescindível no acompanhamento inicial da AIJ oligoarticular.\n\nO gabarito correto é a alternativa B.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Artrite Idopática Juvenil (AIJ)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:59.458Z"
+  },
+  {
+    "id": "AJUDA_feddc69c-6b31-4b04-abed-6d6282c1fe99",
+    "originalId": "feddc69c-6b31-4b04-abed-6d6282c1fe99",
+    "statement": "No tocante à reanimação em pediatria, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "No atendimento com apenas um socorrista, a proporção entre compressões e ventilações será de 30 para 2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A carga inicial para choques no caso de desfibrilações é de 10 joules por quilo, não se devendo exceder a carga máxima utilizada em adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Devido à grande ocorrência de paradas por hipoxia em crianças, pacientes desta população devem sempre receber cânula traqueal já no primeiro ciclo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de atropina deve sempre anteceder o uso de adrenalina em ritmos não chocáveis na população pediátrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Correta. De acordo com as diretrizes da American Heart Association (AHA) para Suporte Avançado de Vida em Pediatria (PALS), a proporção de compressões e ventilações em lactentes e crianças varia conforme o número de socorristas. Para um único socorrista, a relação é de 30:2, visando simplificar o procedimento. Quando há dois ou mais socorristas presentes, a proporção recomendada passa a ser de 15:2, priorizando uma maior oferta ventilatória, já que as causas respiratórias são as mais comuns nessa faixa etária.\n\nAlternativa b: Incorreta. A carga inicial para desfibrilação em pediatria é de 2 joules por quilo (J/kg). No segundo choque, a carga deve ser de 4 J/kg. Choques subsequentes devem ter carga mínima de 4 J/kg, podendo ser escalonados até um máximo de 10 J/kg ou a dose máxima para adultos, o que for menor. Portanto, 10 J/kg é o teto terapêutico, e não a carga inicial.\n\nAlternativa c: Incorreta. Apesar de a hipóxia ser a principal causa de parada cardiorrespiratória em pediatria, a obtenção de uma via aérea avançada (como a cânula traqueal) não é obrigatória no primeiro ciclo. O manejo inicial deve ser feito com ventilação bolsa-valva-máscara de forma eficaz. A intubação precoce pode gerar interrupções desnecessárias nas compressões torácicas e está associada a complicações se não for executada por pessoal extremamente treinado.\n\nAlternativa d: Incorreta. Em ritmos não chocáveis (assistolia e Atividade Elétrica sem Pulso – AESP), a medicação de primeira escolha e prioridade absoluta é a adrenalina (epinefrina), que deve ser administrada o mais rápido possível. A atropina não faz parte do protocolo de rotina da parada cardiorrespiratória pediátrica, sendo reservada para situações específicas de bradicardia sintomática (como em casos de bloqueio atrioventricular total ou aumento do tônus vagal).",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Emergências Pediátricas",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:59.458Z"
+  }
+]

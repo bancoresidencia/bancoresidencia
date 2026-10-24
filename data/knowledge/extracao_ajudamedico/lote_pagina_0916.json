@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_fe2123ef-13a8-4ebb-bf1a-e9ac4f30c701",
+    "originalId": "fe2123ef-13a8-4ebb-bf1a-e9ac4f30c701",
+    "statement": "Homem de 55 anos procura atendimento em unidade básica de saúde (UBS) para renovar prescrição de losartana. Durante a consulta, relata dispneia aos esforços físicos moderados. Além disso, refere tosse pouco produtiva há alguns anos, o que atribui ao uso de 20 cigarros por dia há 20 anos. Radiografia do tórax revela alargamento dos espaços intercostais, sem outras alterações. Espirometria apresenta os seguintes resultados: \n\nDiante dos achados, define-se doença pulmonar obstrutiva crônica. Nesse caso, de acordo com os critérios GOLD, a doença do paciente pode ser funcionalmente classificada em",
+    "options": [
+      {
+        "id": "A",
+        "text": "estágio 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estágio 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estágio 3.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "estágio 4.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para classificar a gravidade da limitação ao fluxo aéreo na Doença Pulmonar Obstrutiva Crônica (DPOC), utilizamos os critérios da Global Initiative for Chronic Obstructive Lung Disease (GOLD). O diagnóstico de DPOC é confirmado pela espirometria quando a relação VEF1/CVF pós-broncodilatador é menor que 0,70. Na tabela apresentada, a relação pós-broncodilatador do paciente é de 0,55, o que confirma a presença da doença.\n\nApós o diagnóstico, a classificação funcional (estadiamento GOLD 1 a 4) é feita com base no valor do VEF1 pós-broncodilatador comparado ao valor previsto para a idade, sexo e altura do paciente. \n\nDe acordo com os dados da imagem:\n- VEF1 encontrado (pós-broncodilatador): 1,73\n- VEF1 previsto: 3,65\n\nPara encontrar o percentual do previsto, dividimos o valor encontrado pelo previsto: 1,73 / 3,65 = 0,4739, ou seja, aproximadamente 47,4% do previsto.\n\nA classificação GOLD de gravidade da obstrução é dividida da seguinte forma:\n- GOLD 1 (Leve): VEF1 maior ou igual a 80% do previsto.\n- GOLD 2 (Moderada): VEF1 entre 50% e 79% do previsto.\n- GOLD 3 (Grave): VEF1 entre 30% e 49% do previsto.\n- GOLD 4 (Muito Grave): VEF1 menor que 30% do previsto.\n\nComo o paciente apresenta um VEF1 de 47,4%, ele se enquadra na classificação de estágio 3.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Para ser estágio 1, o VEF1 deveria ser maior ou igual a 80% do previsto (neste caso, maior que 2,92).\n\nAlternativa B: Incorreta. Para ser estágio 2, o VEF1 deveria estar entre 50% e 79% do previsto (neste caso, entre 1,82 e 2,91).\n\nAlternativa C: Correta. O valor calculado de 47,4% situa-se no intervalo de 30% a 49%, definindo o estágio 3 (grave).\n\nAlternativa D: Incorreta. Para ser estágio 4, o VEF1 deveria ser menor que 30% do previsto (neste caso, menor que 1,09).",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/164a53ba1781f20de4d1caf419bf857102d387c89337e69adac34063f61366ba.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_fe2123ef-13a8-4ebb-bf1a-e9ac4f30c701_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  },
+  {
+    "id": "AJUDA_fe22181d-7e68-4b7e-9bd3-1e3708150be6",
+    "originalId": "fe22181d-7e68-4b7e-9bd3-1e3708150be6",
+    "statement": "Entre os achados laboratoriais no hemograma sugestivos de anemia ferropriva em crianças, qual é característico dessa condição?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Microcitose, hipocromia e aumento da contagem de reticulócitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Normocitose, normocromia e leucocitose reativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Microcitose, hipocromia e aumento do RDW (red cell distribution width).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Macrocitose, hipocromia e aumento do VCM (volume corpuscular médio).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Normocitose, hipocromia e plaquetopenia leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender os achados laboratoriais da anemia ferropriva, é necessário entender a fisiopatologia da doença. A carência de ferro impede a síntese adequada de hemoglobina, resultando em hemácias menores e com menos cor.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: Embora apresente microcitose (VCM baixo) e hipocromia (HCM/CHCM baixos), a anemia ferropriva é uma anemia hipoproliferativa. Isso significa que a medula óssea não consegue produzir novas células de forma eficiente devido à falta de \"matéria-prima\" (ferro). Portanto, a contagem de reticulócitos está tipicamente baixa ou inadequadamente normal. Reticulócitos aumentados sugerem anemias regenerativas, como hemólise ou sangramento agudo.\n\nAlternativa (b) Incorreta: A anemia ferropriva clássica é microcítica e hipocrômica, não normocítica e normocrômica. Padrões normo/normo são comuns em anemias de doença crônica (em estágios iniciais) ou após perda sanguínea aguda recente. A leucocitose reativa também não é um achado característico desta condição.\n\nAlternativa (c) Correta: Esta alternativa descreve perfeitamente o perfil da anemia ferropriva instalada. A microcitose reflete o tamanho reduzido das hemácias e a hipocromia reflete a menor concentração de hemoglobina. O aumento do RDW (índice de anisocitose) é um dos primeiros sinais laboratoriais da deficiência de ferro, ocorrendo porque a medula passa a liberar hemácias progressivamente menores, gerando uma grande variação de tamanho entre as células novas (pequenas) e as antigas (normais).\n\nAlternativa (d) Incorreta: A macrocitose (aumento do VCM) é o oposto do que ocorre na ferropenia. Hemácias grandes são características de anemias megaloblásticas (deficiência de vitamina B12 ou ácido fólico). Na anemia ferropriva, o VCM está obrigatoriamente reduzido nas fases moderadas a graves.\n\nAlternativa (e) Incorreta: Além da questão da normocitose estar errada, a anemia ferropriva em crianças costuma cursar com trombocitose (aumento das plaquetas) reativa, e não plaquetopenia (redução das plaquetas). O mecanismo da trombocitose reativa envolve a estimulação da medula pela eritropoetina, que apresenta semelhança estrutural com a trombopoetina.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  },
+  {
+    "id": "AJUDA_fe3662ca-9205-45ac-bbc8-03aee756bd05",
+    "originalId": "fe3662ca-9205-45ac-bbc8-03aee756bd05",
+    "statement": "Pré-escolar 4 anos de idade é levado à emergência por apresentar edema palpebral bilateral e tosse há um dia. Ao exame está em bom estado geral, ausculta cardíaca normal. Pressão arterial de 130/90 mmHg (PA>p95 %). Nos pulmões, há presença de estertores subcrepitantes nas bases pulmonares. Abdome normotenso, fígado a 2 cm do rebordo costal direito. Edema de membros inferiores discreto e presença de pequenas lesões crostosas. Exames laboratoriais demonstram parcial de urina com densidade de 1.025, pH = 5,5; leucócitos 6.000/ml; hemácias 55.000/ml; albumina +. Ureia 20 mg/dl e creatinina 0,5 mg/dl. Raio X de tórax demonstra discreto aumento de área cardíaca.\n\nQual a principal hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertensão arterial essencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome nefrótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infecção urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Glomerulonefrite difusa aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um pré-escolar de 4 anos com a clássica síndrome nefrítica, caracterizada pela tríade de edema (palpebral e membros inferiores), hipertensão arterial (PA acima do percentil 95 para a idade) e hematúria (55.000 hemácias/ml no sumário de urina). A presença de lesões cutâneas crostosas aponta para um quadro prévio de piodermite por Streptococcus pyogenes, que é a causa mais comum de Glomerulonefrite Difusa Aguda (GNDA) pós-infecciosa na infância. Os achados de tosse, estertores subcrepitantes, hepatomegalia e aumento da área cardíaca refletem a sobrecarga hídrica e congestão circulatória decorrentes da retenção hidrossalina secundária à inflamação glomerular aguda.\n\nAnálise das alternativas:\n\na) Incorreta. A hipertensão arterial primária (essencial) é extremamente incomum em crianças pequenas de 4 anos. Na faixa etária pediátrica, a elevação pressórica é quase invariavelmente secundária, sendo as causas renais e parenquimatosas as mais prevalentes, como evidenciado pelos achados urinários e congestivos deste paciente.\n\nb) Incorreta. A síndrome nefrótica manifesta-se predominantemente por edema acentuado (muitas vezes anasarca) e proteinúria maciça (geralmente 3+ a 4+ no EAS ou maior que 50 mg/kg/dia). O paciente em questão apresenta proteinúria discreta (1+), com predomínio de hematúria, hipertensão e sinais de congestão, o que define a síndrome nefrítica.\n\nc) Incorreta. A infecção do trato urinário cursa classicamente com febre, sintomas urinários irritativos (disúria, polaciúria) e leucocitúria importante (piúria). O exame deste paciente não evidencia piúria expressiva nem quadro compatível com infecção bacteriana aguda da via urinária.\n\nd) Correta. A Glomerulonefrite Difusa Aguda (GNDA), classicamente pós-estreptocócica, é o diagnóstico definitivo. O quadro reúne histórico de infecção de pele recente (crostas), período de latência e o desenvolvimento de síndrome nefrítica aguda com hematúria, hipertensão e hipervolemia (edema, estertores e hepatomegalia).\n\nGabarito: Letra d.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente",
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  },
+  {
+    "id": "AJUDA_fe39c523-2e53-40ad-821a-bf5fd666d5fd",
+    "originalId": "fe39c523-2e53-40ad-821a-bf5fd666d5fd",
+    "statement": "Em paciente ambulatorial com delírio persistente, bem sistematizado, de ciúme conjugal, sem alucinações proeminentes e com preservação relativa do funcionamento fora do tema delirante, identifique o diagnóstico mais compatível:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno delirante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Esquizofrenia desorganizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno psicótico breve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno de personalidade paranoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a).\n\nO quadro clínico apresentado é característico do Transtorno Delirante. Esta patologia se define pela presença de um ou mais delírios que persistem por pelo menos um mês. Uma marca fundamental deste transtorno, que o diferencia de outras psicoses como a esquizofrenia, é que o funcionamento do paciente não é marcadamente prejudicado e o seu comportamento não é bizarro ou extravagante fora do tema do delírio. No caso descrito, o paciente apresenta o subtipo ciumento (também conhecido como Síndrome de Otelo), em que a crença delirante é focada na infidelidade do parceiro, mantendo-se organizado e funcional nas demais esferas da vida.\n\nAnálise das alternativas incorretas:\n\nb) Esquizofrenia desorganizada: Este diagnóstico exige a presença de desorganização acentuada do pensamento, do discurso e do comportamento, além de afeto embotado ou inapropriado. Na esquizofrenia, o prejuízo funcional é global e os delírios costumam ser fragmentados e mal sistematizados, o que contrasta com a preservação funcional e a sistematização relatadas no enunciado.\n\nc) Transtorno psicótico breve: Esta condição é caracterizada por sintomas psicóticos que duram pelo menos um dia, porém menos de um mês, com remissão total dos sintomas e retorno ao nível de funcionamento prévio. O enunciado descreve um delírio \"persistente\", o que exclui este diagnóstico devido ao tempo de evolução.\n\nd) Transtorno de personalidade paranoide: Trata-se de um padrão invasivo de desconfiança e suspeita generalizada em relação aos outros, que começa no início da idade adulta. Embora o indivíduo possa suspeitar de infidelidade, essas suspeitas não atingem o nível de um delírio fixo e inabalável. No transtorno de personalidade, a pessoa interpreta eventos reais de forma maliciosa, enquanto no transtorno delirante existe uma crença psicótica estruturada.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Transtornos Psicóticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  },
+  {
+    "id": "AJUDA_fe412859-22f6-4dc8-8fb3-e323436ab273",
+    "originalId": "fe412859-22f6-4dc8-8fb3-e323436ab273",
+    "statement": "Paciente feminina, 84 anos, apresenta massa renal esquerda de 14 cm, sugestiva de carcinoma de células claras, sem metástases à distância. É hipertensa controlada, perdeu 5 kg nos últimos 4 meses, refere fadiga e marcha lenta. Necessita de ajuda parcial nas atividades instrumentais de vida diária. No teste de levantar-se da cadeira 5 vezes, levou 18 segundos. Considerando o impacto da fragilidade sobre resultados cirúrgicos, qual das alternativas descreve a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar nefrectomia radical sem demora, pois a doença ameaça a sobrevida e a idade não contraindica cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar quimioterapia sistêmica antes da cirurgia, pois carcinoma renal localizado apresenta boa resposta inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adiar a cirurgia e optar por tratamento clínico, pois a fragilidade representa risco muito elevado para o procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar avaliação geriátrica ampla e medir fragilidade com instrumento validado, otimizando a paciente antes da decisão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Solicitar avaliação cardiológica como principal medida, pois o risco cardiovascular é o fator mais relevante no idoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo do paciente idoso com câncer sob a perspectiva da oncogeriatria. A paciente de 84 anos apresenta sinais claros de fragilidade, como perda de peso involuntária, fadiga, redução da velocidade de marcha (identificada no teste de levantar-se da cadeira) e dependência em atividades instrumentais de vida diária.\n\nLetra a) Incorreta. Embora a massa renal seja volumosa e a idade isoladamente não impeça a cirurgia, ignorar os sinais de fragilidade aumenta significativamente o risco de complicações graves, o tempo de internação prolongado e a perda de autonomia no pós-operatório. A indicação cirúrgica imediata sem avaliação prévia do status funcional é inadequada.\n\nLetra b) Incorreta. O carcinoma renal de células claras é conhecido por ser resistente à quimioterapia citotóxica convencional. O tratamento de escolha para doença localizada é cirúrgico. Terapias sistêmicas (como imunoterapia ou inibidores de tirosina quinase) são indicadas para doença metastática e não são usadas rotineiramente para \"preparar\" um paciente frágil para cirurgia de tumor renal localizado.\n\nLetra c) Incorreta. Assumir que a paciente não suportará nenhum tratamento apenas pela observação inicial é uma conduta excessivamente conservadora. Alguns componentes da fragilidade podem ser reversíveis ou minimizados com intervenções específicas. A decisão por tratamento puramente paliativo ou clínico deve ser tomada após uma avaliação estruturada.\n\nLetra d) Correta. Diante de um idoso com múltiplos sinais de fragilidade, a conduta mais adequada é realizar a Avaliação Geriátrica Ampla (AGA). A AGA utiliza instrumentos validados para analisar não apenas a doença física, mas também a cognição, o estado nutricional, a mobilidade, o suporte social e a polifarmácia. Isso permite a \"pré-habilitação\" (otimização do paciente antes da cirurgia) e auxilia na decisão compartilhada sobre os riscos e benefícios do procedimento cirúrgico.\n\nLetra e) Incorreta. A avaliação cardiológica faz parte do risco cirúrgico de rotina, mas, em pacientes muito idosos com sinais de declínio funcional, o status de fragilidade é um preditor de complicações pós-operatórias (como delirium e incapacidade funcional) muito mais robusto e relevante do que apenas a avaliação da reserva cardiovascular.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Urologia",
+      "Perioperatório",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  },
+  {
+    "id": "AJUDA_fe486a38-c426-4751-9d57-8c108a3aebb9",
+    "originalId": "fe486a38-c426-4751-9d57-8c108a3aebb9",
+    "statement": "100- Pesquisadores avaliaram a eficácia de um novo antibiótico para pneumonia comunitária em crianças. Para isso, selecionaram 200 pacientes elegíveis, que foram randomicamente alocados em dois grupos: um recebeu o novo antibiótico e o outro recebeu o tratamento convencional. Ambos foram acompanhados por 14 dias para comparação das taxas de cura clínica.\nCom base nessa descrição, trata-se de um estudo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudo de Caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estudo de Coorte prospectiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estudo de Ensaio Clínico Randomizado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Estudo Transversal Analítico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Enunciado:\n\nO estudo descrito apresenta três elementos fundamentais para a sua classificação:\n1. Intervenção: O pesquisador não apenas observa, mas interfere na realidade ao administrar um novo medicamento.\n2. Randomização: A alocação dos 200 pacientes foi feita de forma aleatória, o que garante que os grupos sejam comparáveis e minimiza vieses de seleção.\n3. Temporalidade: Trata-se de um estudo longitudinal e prospectivo, pois os pacientes são acompanhados por 14 dias para observar o desfecho (cura clínica).\n\nAnálise das Alternativas:\n\nAlternativa a) Estudo de Caso-controle: Está incorreta. O estudo de caso-controle é observacional e retrospectivo. Ele parte do desfecho (quem já está doente e quem não está) para buscar, no passado, a exposição a determinados fatores de risco. No caso da questão, os pesquisadores partem da intervenção e seguem para o desfecho.\n\nAlternativa b) Estudo de Coorte prospectiva: Está incorreta. Embora a coorte acompanhe grupos ao longo do tempo (prospectivo), ela é um estudo observacional. Na coorte, o pesquisador observa a exposição que ocorre naturalmente, sem intervir na escolha de quem recebe o tratamento ou realizar randomização. O fato de haver uma intervenção deliberada (novo antibiótico) e sorteio (randomização) descaracteriza a coorte.\n\nAlternativa c) Estudo de Ensaio Clínico Randomizado: Está correta. Este é o padrão-ouro para avaliar a eficácia de novas terapêuticas. Ele se define exatamente pela tríade presente no enunciado: intervenção (medicamento), presença de grupo controle (tratamento convencional) e alocação aleatória (randomização).\n\nAlternativa d) Estudo Transversal Analítico: Está incorreta. O estudo transversal é uma análise pontual, como uma fotografia de um momento específico, onde exposição e desfecho são avaliados simultaneamente. Não há acompanhamento dos pacientes ao longo do tempo (seguimento), o que invalida esta opção frente ao acompanhamento de 14 dias descrito.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Pneumonia na Infância",
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  },
+  {
+    "id": "AJUDA_fe5f2cf2-bfd3-41df-b7cf-0ceeaa9c840d",
+    "originalId": "fe5f2cf2-bfd3-41df-b7cf-0ceeaa9c840d",
+    "statement": "Um homem de 70 anos, com histórico de claudicação intermitente para menos de 200 metros, chega ao serviço de urgência referindo piora aguda da dor no pé direito nas últimas 8 horas, com dor mesmo em repouso. Ao exame, o pé encontra-se frio, pálido e com cianose de dedos. Os pulsos femorais são palpáveis, mas os pulsos poplíteo, tibiais e pediosos não são palpáveis e estão ausentes ao Doppler.\nQual é a hipótese diagnóstica mais provável para o agravamento agudo da condição do paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Embolia arterial aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Flegmasia cerulea dolens.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trombose arterial aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Insuficiência arterial crônica descompensada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é de uma Isquemia Arterial Aguda de membro inferior, caracterizada pelo início recente (8 horas) de dor em repouso associada a sinais clássicos de má perfusão: palidez, extremidade fria, cianose digital e ausência de pulsos distais ao exame físico e ao Doppler. O ponto central para definir a etiologia é a presença de doença arterial obstrutiva periférica prévia, evidenciada pela história de claudicação intermitente limitante (menos de 200 metros).\n\nAlternativa A (Incorreta): A embolia arterial aguda costuma ter instalação hiperaguda (em segundos ou minutos) e ocorre predominantemente em pacientes sem histórico prévio de claudicação, que possuem uma fonte emboligênica identificável (como fibrilação atrial, trombo ventricular pós-infarto ou próteses valvares). Nesses casos, o membro contralateral geralmente apresenta pulsos palpáveis e normais.\n\nAlternativa B (Incorreta): A flegmasia cerulea dolens é uma complicação grave decorrente de trombose venosa profunda (TVP) maciça e oclusiva dos eixos iliofemoral e colaterais. Cursa com edema acentuado e volumoso de todo o membro, dor intensa e cianose violácea difusa (membro túrgido e arroxeado), quadro diferente da palidez e isquemia arterial pura apresentadas pelo paciente.\n\nAlternativa C (Correta): A trombose arterial aguda ocorre pela oclusão trombótica sobreposta a uma placa aterosclerótica pré-existente complicada (erosão ou ruptura de placa). O histórico de claudicação intermitente confirma a existência de doença aterosclerótica crônica prévia. A instalação dos sintomas em horas (em vez de minutos) e a piora aguda com dor em repouso e ausência de pulsos confirmam a trombose aguda sobre doença arterial crônica como o evento causal.\n\nAlternativa D (Incorreta): Embora o paciente seja portador de doença arterial crônica, o termo insuficiência arterial crônica descompensada é descritivo e genérico, não definindo o mecanismo fisiopatológico do evento agudo de oclusão mecânica súbita, que é a trombose arterial aguda, a qual exige conduta intervencionista de urgência para salvar o membro.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  },
+  {
+    "id": "AJUDA_fe5fa468-946a-4ca7-a073-91ea009c7783",
+    "originalId": "fe5fa468-946a-4ca7-a073-91ea009c7783",
+    "statement": "Homem, 75 anos, hipertenso e diabético, com diagnóstico prévio de insuficiência cardíaca com fração de ejeção reduzida (FEVE = 32%) em uso de nifedipino 20mg/dia, furosemida 40mg/dia e metformina 850mg 3 vezes ao dia. Procura o pronto atendimento por palpitações e dispneia aos esforços moderados. Ao exame físico: pressão arterial 128/78 mmHg, frequência cardíaca irregular em torno de 112 bpm, estertores bibasais discretos, sem edema periférico. ECG confirma fibrilação atrial.\n\nCom base nos critérios de anticoagulação e no manejo da insuficiência cardíaca associado à fibrilação atrial, a conduta mais adequada para este paciente segundo diretrizes da SBC é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar anticoagulação oral e otimizar terapia para insuficiência cardíaca (betabloqueador, IECA/ARNI, antagonista de mineralocorticoide).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antiagregação plaquetária com AAS e clopidogrel, pois o risco embólico é intermediário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Utilizar controle da frequência com betabloqueador, sem anticoagulação, visto que o paciente não apresenta história prévia de AVC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever digoxina para controle da frequência e suspender outras medicações da insuficiência cardíaca, já que podem aumentar risco de hipotensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar ablação de fibrilação atrial como primeira linha, sem necessidade de anticoagulação, pois a reversão do ritmo elimina o risco de AVC.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro de insuficiência cardíaca com fração de ejeção reduzida (ICFER), confirmada pela fração de ejeção de 32%, associada a um episódio de fibrilação atrial (FA). Para resolver a questão, é necessário avaliar dois pontos principais: a indicação de anticoagulação e a otimização do tratamento da insuficiência cardíaca conforme as diretrizes da Sociedade Brasileira de Cardiologia (SBC).\n\n1. Cálculo do Risco Tromboembólico (Escore CHA2DS2-VASc):\n- Idade (75 anos): 2 pontos.\n- Hipertensão: 1 ponto.\n- Diabetes mellitus: 1 ponto.\n- Insuficiência cardíaca (ou disfunção ventricular moderada/grave): 1 ponto.\n- Total: 5 pontos.\nPara homens com pontuação maior ou igual a 2, a anticoagulação oral é mandatória (Classe I) para prevenir o acidente vascular cerebral (AVC).\n\n2. Manejo da ICFER:\nO paciente está subtratado. Ele utiliza nifedipino (um bloqueador de canal de cálcio que não reduz mortalidade na ICFER e pode até ser prejudicial) e apenas furosemida para controle de sintomas. Segundo a SBC, o tratamento padrão deve incluir o bloqueio neuro-humoral com os quatro pilares: betabloqueador, IECA ou BRA ou ARNI (sacubitril-valsartana), antagonista de mineralocorticoide (espironolactona) e inibidores do SGLT2.\n\nPOR QUE A ALTERNATIVA A ESTÁ CORRETA?\nEsta alternativa aborda as duas necessidades imediatas do paciente. A anticoagulação é necessária pelo alto risco embólico (escore 5) e a terapia da IC precisa ser instituída para melhorar o prognóstico e a função cardíaca. O betabloqueador, além de ser um pilar da IC, ajudará no controle da frequência cardíaca durante a fibrilação atrial.\n\nPOR QUE A ALTERNATIVA B ESTÁ INCORRETA?\nA antiagregação plaquetária (AAS e clopidogrel) não é eficaz para prevenir AVC em pacientes com fibrilação atrial. Os anticoagulantes orais são a única classe recomendada para esse fim. Além disso, o risco do paciente é alto (pontuação 5) e não intermediário.\n\nPOR QUE A ALTERNATIVA C ESTÁ INCORRETA?\nEmbora o controle de frequência seja importante, a ausência de história prévia de AVC não exclui a necessidade de anticoagulação. O escore de risco é utilizado justamente para prever e evitar o primeiro evento. Com 5 pontos, a anticoagulação é obrigatória.\n\nPOR QUE A ALTERNATIVA D ESTÁ INCORRETA?\nA digoxina pode ser usada para controle de frequência na IC, mas nunca como substituta dos medicamentos que comprovadamente reduzem a mortalidade (como betabloqueadores e IECA). Suspender as medicações da IC seria um erro, pois são elas que tratam a causa-base da descompensação e da própria arritmia.\n\nPOR QUE A ALTERNATIVA E ESTÁ INCORRETA?\nA ablação de FA pode ser considerada em pacientes com IC para melhorar a função ventricular em casos específicos, mas não é a conduta inicial antes da otimização clínica. Mais importante ainda: a reversão do ritmo ou a ablação NÃO isenta o paciente da necessidade de anticoagulação a longo prazo, dado que o escore CHA2DS2-VASc é elevado e o risco de recorrência subclínica da arritmia é alto.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  },
+  {
+    "id": "AJUDA_fe6146cf-65d2-489f-95fc-ef4430f0cc00",
+    "originalId": "fe6146cf-65d2-489f-95fc-ef4430f0cc00",
+    "statement": "Neonato do sexo masculino com quatro dias de vida nasceu com baixo peso e apresentou taquipneia transitória ao nascimento. Durante a gestação, foi identificado polidrâmnio e, após receber leite materno, apresentou tosse, dispneia, cianose e episódios de apneia. Ao exame físico, paciente em regular estado geral, taquipneico, com salivação excessiva e distensão abdominal. Apresenta ânus imperfurado com fístula perineal e anomalia radial do membro superior direito. Considerando-se o quadro clínico, assinale a alternativa que apresenta a melhor hipótese diagnóstica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Atresia esofágica com fístula distal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hérnia diafragmática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Membrana duodenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Refluxo gastroesofágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO recém-nascido apresenta sinais clássicos de atresia de esôfago associada a uma fístula traqueoesofágica distal. Os pontos-chave para o diagnóstico são:\n\n1. Sialorreia e engasgos: A salivação excessiva ocorre porque o esôfago termina em fundo cego, impedindo o bebê de deglutir a própria saliva. Ao tentar mamar, o leite se acumula na bolsa esofágica superior e transborda para a via aérea, causando tosse, cianose e apneia.\n\n2. Distensão abdominal: Este é o dado fundamental para diferenciar os tipos de atresia. A presença de ar no estômago e no intestino (causando a distensão) indica que existe uma comunicação entre a traqueia e o segmento distal do esôfago (fístula distal). Se não houvesse fístula, o abdome seria escavado.\n\n3. Polidrâmnio: Durante a gestação, o feto não consegue deglutir o líquido amniótico devido à obstrução esofágica, o que leva ao acúmulo de líquido na bolsa amniótica.\n\n4. Associação VACTERL: A questão menciona anomalia anorretal (ânus imperfurado) e anomalia de membros (radial). Essas malformações fazem parte do acrônimo VACTERL (Vertebral, Anal, Cardíaca, Traqueoesofágica, Renal e Limb/Membros), frequentemente associado à atresia de esôfago.\n\nAnálise das alternativas:\n\na) Correta. A atresia de esôfago com fístula distal (Tipo C) é a variante mais comum (cerca de 85% dos casos). Ela explica perfeitamente a incapacidade de deglutir (sialorreia/engasgos) e a entrada de ar no trato digestivo (distensão abdominal).\n\nb) Incorreta. Na hérnia diafragmática, as alças intestinais estão no tórax, o que geralmente resulta em um abdome escavado (murcho) e não distendido. O quadro respiratório costuma ser imediato ao nascimento por hipoplasia pulmonar.\n\nc) Incorreta. A membrana duodenal causa obstrução intestinal alta, levando a vômitos (frequentemente biliosos) e distensão abdominal localizada, mas não justifica a sialorreia excessiva nem os engasgos imediatos com a saliva.\n\nd) Incorreta. O refluxo gastroesofágico pode causar episódios de engasgo e tosse, mas não se apresenta com tamanha gravidade nos primeiros dias de vida, não causa sialorreia contínua e não justifica a associação com malformações anorretais e de membros.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  },
+  {
+    "id": "AJUDA_fe626045-3c4f-493d-96a9-d600b0a94957",
+    "originalId": "fe626045-3c4f-493d-96a9-d600b0a94957",
+    "statement": "Paciente de 71 anos comparece ao ambulatório, com queixa de dor abdominal em hipocôndrio e flanco direito há seis meses, associado à perda de 4 kg. Traz hemograma com hemoglobina de 9,5 g/dL e ultrassonografia evidenciando vesícula biliar de paredes finas, contendo cálculo de 2 cm de diâmetro. Qual conduta é mandatória nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhamento pré-operatório ao hematologista, para investigação de anemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitação de exames pré-operatórios, para programação de colecistectomia videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrição de Noripurum endovenoso e reavaliação com novo hemograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitação de colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto fundamental para resolver esta questão é o reconhecimento de sinais de alarme em um paciente idoso. Temos um homem de 71 anos com dor abdominal, perda de peso significativa (4 kg) e anemia importante (hemoglobina de 9,5 g/dL). Embora a ultrassonografia tenha revelado um cálculo biliar de 2 cm, as paredes da vesícula estão finas, o que sugere que não há um processo inflamatório agudo ou crônico agudizado que explique todo o quadro clínico, especialmente a perda ponderal e a anemia.\n\nEm pacientes idosos com anemia ferropriva e emagrecimento, a principal suspeita diagnóstica deve ser a neoplasia colorretal, especificamente no cólon direito. O câncer de cólon direito costuma ser insidioso, manifestando-se frequentemente por sangramento oculto (levando à anemia) e dor vaga no flanco ou hipocôndrio direito, exatamente como descrito no caso.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta: Encaminhar ao hematologista sem uma investigação primária é um erro de conduta. A anemia no idoso com sintomas gastrointestinais e perda de peso tem causa digestiva provável por perda sanguínea. O médico assistente deve primeiro descartar causas orgânicas tratáveis, como neoplasias, antes de pensar em doenças hematológicas primárias.\n\nAlternativa B - Incorreta: Embora o paciente tenha colelitíase, realizar a colecistectomia neste momento ignoraria os sinais de gravidade (anemia e emagrecimento). O cálculo biliar é provavelmente um achado incidental ou secundário. Operar o paciente sem investigar a causa da anemia e da perda de peso coloca-o em risco cirúrgico desnecessário e retarda o diagnóstico de uma possível neoplasia maligna.\n\nAlternativa C - Incorreta: Repor ferro (Noripurum) é um tratamento sintomático. Tratar a anemia sem investigar a sua causa em um paciente de 71 anos é uma falha grave, pois mascara o sinal de uma doença de base, como o câncer de cólon, permitindo que ela progrida.\n\nAlternativa D - Correta: A colonoscopia é o exame mandatório. Diante de um idoso com dor em flanco direito, anemia e perda de peso, o rastreamento de câncer de cólon é a prioridade absoluta. O tumor de ceco e cólon ascendente frequentemente se apresenta com esse tripé de sintomas, e a colelitíase visualizada no exame de imagem não justifica a anemia nem o emagrecimento do paciente.\n\nConclusão: O quadro clínico é um clássico exemplo de \"bandeira vermelha\" (red flag) para neoplasia gastrointestinal, tornando a investigação do cólon a conduta prioritária e obrigatória.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:50.851Z"
+  }
+]

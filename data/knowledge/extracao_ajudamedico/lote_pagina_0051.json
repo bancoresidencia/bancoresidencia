@@ -1,0 +1,519 @@
+[
+  {
+    "id": "AJUDA_0d178ebf-c956-4953-94f2-70b331773d5a",
+    "originalId": "0d178ebf-c956-4953-94f2-70b331773d5a",
+    "statement": "Um ensaio clínico randomizado é considerado \"duplo-cego\" quando são mascarados para o desfecho em questão: (Acesso direto)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Participantes e equipe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Participantes, equipe e avaliadores de desfecho.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Equipe e avaliadores de desfecho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Participantes e avaliadores de desfecho.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O objetivo principal do mascaramento ou cegamento em um ensaio clínico randomizado e controlado é reduzir a chance de ocorrência de vieses, especialmente o viés de aferição e o viés de performance. Quando falamos em cegamento, estamos tentando garantir que o conhecimento sobre qual intervenção o paciente está recebendo não influencie o comportamento das pessoas envolvidas ou a interpretação dos resultados.\n\nHistoricamente, os termos simples, duplo ou triplo-cego podem variar levemente entre autores, mas, para fins de provas de residência e concursos, a alternativa (b) é a correta pelas seguintes razões:\n\nAlternativa (a) Incorreta: Embora o mascaramento dos participantes e da equipe seja fundamental, se os avaliadores que analisam especificamente o desfecho (como quem interpreta um exame de imagem ou avalia uma escala clínica de melhora) souberem quem recebeu o tratamento, eles podem ser influenciados subjetivamente, comprometendo a validade do estudo.\n\nAlternativa (b) Correta: Esta é a definição mais completa e aceita pelas bancas examinadoras. O estudo duplo-cego ideal busca mascarar todos os envolvidos no processo clínico e avaliativo direto. Isso inclui quem recebe a intervenção (participantes), quem a administra e cuida do paciente (equipe) e quem mede se o desfecho ocorreu ou não (avaliadores de desfecho). Assim, evita-se que o efeito placebo influencie o paciente e que a expectativa do pesquisador influencie a coleta de dados. Em algumas literaturas, o cegamento do avaliador de desfecho é o que diferencia o duplo do triplo-cego, mas, na visão desta banca, todos esses atores compõem os dois polos que devem ser cegados para a classificação de duplo-cego.\n\nAlternativa (c) Incorreta: Se os participantes não forem mascarados, o estudo é considerado aberto para eles. Isso pode alterar a percepção subjetiva de melhora e a adesão ao tratamento, o que anula a premissa do duplo-cegamento.\n\nAlternativa (d) Incorreta: Se a equipe que presta assistência direta ao paciente souber o que está sendo administrado, ela pode, mesmo que inconscientemente, tratar os pacientes de grupos diferentes de forma distinta (viés de performance). Por exemplo, oferecendo mais cuidados ou exames adicionais para um grupo em relação ao outro.\n\nEm resumo, para que um ensaio clínico minimize distorções nos resultados, o segredo sobre a alocação dos grupos deve ser mantido tanto para o sujeito da pesquisa quanto para todos aqueles que interagem com ele ou avaliam seus resultados durante a condução do estudo. Por isso, a alternativa (b) é a mais adequada.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:10.610Z"
+  },
+  {
+    "id": "AJUDA_0d2a2081-7568-4086-8bda-fa9064b43b78",
+    "originalId": "0d2a2081-7568-4086-8bda-fa9064b43b78",
+    "statement": "Jovem de 24 anos, recém-chegado de outro estado e ainda sem vínculo formal de emprego, procura a UBS de seu novo bairro apresentando queixa de febre alta e artralgia há três dias. Ao tentar realizar o acolhimento, a recepção hesita em atendê-lo devido à ausência de comprovante de residência local e por ele não possuir carteira de trabalho assinada. À luz dos princípios doutrinários e organizativos que regem o Sistema Único de Saúde (SUS), o atendimento deve ser garantido imediatamente com base no princípio que assegura o acesso de todos os cidadãos às ações e aos serviços de saúde, sem privilégios ou barreiras. Qual princípio do SUS foi diretamente violado na recusa inicial desse atendimento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descentralização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Universalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Equidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Regionalização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c), Universalidade.\n\nContexto: o paciente tem 24 anos, chegou há pouco tempo ao bairro e apresenta febre alta e artralgia há três dias, quadro compatível com arboviroses como dengue, chikungunya e Zika. Ele foi barrado na recepção por não ter comprovante de residência nem carteira assinada. A Constituição de 1988 (art. 196) e a Lei 8.080/90 estabelecem que a saúde é direito de todos e dever do Estado. Por isso, o acesso não pode depender de vínculo empregatício, contribuição previdenciária, comprovante de endereço ou nacionalidade. Exigir esses documentos cria uma barreira de acesso, e o princípio violado é a universalidade.\n\nAnálise das alternativas:\n\na) Incorreta. A descentralização é uma diretriz organizativa que distribui responsabilidades e poder de decisão entre União, estados e municípios, com ênfase na gestão municipal. Ela trata de como o sistema se organiza, não de quem tem direito ao atendimento.\n\nb) Incorreta. A integralidade é o princípio doutrinário que prevê atenção ao indivíduo como um todo, com ações de promoção, prevenção, tratamento e reabilitação, em todos os níveis de complexidade. Ela não foi o foco da recusa, que ocorreu antes de qualquer avaliação clínica.\n\nc) Correta. A universalidade garante acesso a todos, sem discriminação, privilégios ou barreiras de qualquer natureza, inclusive documentais, econômicas ou de vínculo trabalhista. A recusa por falta de comprovante de residência e de carteira assinada fere diretamente esse princípio. O atendimento deve ser feito imediatamente, e o cartão SUS pode ser providenciado depois.\n\nd) Incorreta. A equidade busca tratar de forma desigual os desiguais, priorizando quem tem maior necessidade para reduzir desigualdades. É um princípio distinto: o enunciado fala em acesso para todos, e não em priorização conforme necessidade ou vulnerabilidade.\n\ne) Incorreta. A regionalização é uma diretriz organizativa que estrutura os serviços em territórios e redes regionais, com definição de referência e contrarreferência. Ela não autoriza negar atendimento a quem mora em outra área, especialmente em situação de urgência ou na porta de entrada da atenção básica.\n\nPonto-chave para a prova: se a questão fala em \"todos\", \"sem barreiras\" ou \"sem discriminação\" de acesso, pense em universalidade. Se fala em priorizar quem mais precisa, pense em equidade. Se fala em atenção global (promoção, prevenção, cura e reabilitação), pense em integralidade.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:10.610Z"
+  },
+  {
+    "id": "AJUDA_0d2ef7ba-e01d-4881-a8c1-aac72f63bea1",
+    "originalId": "0d2ef7ba-e01d-4881-a8c1-aac72f63bea1",
+    "statement": "Lactente de 1 ano e 9 meses dá entrada no sistema de pronto atendimento devido a quadro de placas urticariformes espalhadas em todo o corpo há 2 dias. Genitora refere que há 1 dia trouxe paciente com quadro semelhante após a ingestão de biscoito contendo leite. O paciente é portador de alergia à proteína do leite de vaca e estava com os avós, que ofereceram um biscoito sem verificar os ingredientes. No atendimento prévio, a criança foi medicada com corticoide e anti-histamínico e enviado para casa com medicações prescritas por cinco dias. Ele havia melhorado inicialmente, mas acordou novamente com placas vermelhas e elevadas pelo corpo, motivando a nova ida ao serviço de saúde. A criança estava dormindo durante o atendimento, tinha lesões urticariformes no corpo e discreto edema em lábios. Ausculta cardíaca e pulmonar dentro da normalidade e abdome sem alterações. Ela havia tomado sopa no jantar, com boa aceitação. \nDiante da hipótese diagnóstica e da recorrência do quadro, o que seria recomendado se fazer nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internar a criança devido ao risco iminente de gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter as medicações e orientar genitora sobre o quadro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar exames laboratoriais para auxílio diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar a realização de adrenalina intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar dose de corticoide venoso e internar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um lactente com diagnóstico conhecido de Alergia à Proteína do Leite de Vaca (APLV) que apresentou um quadro de urticária e angioedema discreto após ingestão acidental do alérgeno. É fundamental diferenciar uma reação alérgica cutânea/mucosa isolada de uma anafilaxia, que é uma emergência médica.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Não há sinais de gravidade iminente no momento do atendimento. A criança apresenta estabilidade hemodinâmica (ausculta cardíaca normal), estabilidade respiratória (ausculta pulmonar normal e sem sinais de desconforto) e está dormindo calmamente. A recorrência das lesões urticariformes é comum na fase aguda, mesmo em uso de medicações, e não justifica por si só a internação hospitalar.\n\nAlternativa b) Correta. O quadro clínico é de urticária e angioedema leve. A manutenção do tratamento já instituído (anti-histamínico e corticoide oral) é a conduta adequada, uma vez que essas medicações levam tempo para estabilizar os mastócitos e controlar a inflamação. A orientação à genitora sobre a natureza flutuante das lesões (que podem sumir e reaparecer em outros locais) e sobre a importância de evitar o alérgeno é o pilar do tratamento ambulatorial.\n\nAlternativa c) Incorreta. O diagnóstico de urticária aguda e angioedema por erro alimentar é eminentemente clínico. Exames laboratoriais de urgência não trazem benefícios para o manejo agudo e não auxiliariam na mudança da conduta imediata.\n\nAlternativa d) Incorreta. A adrenalina intramuscular é o tratamento de escolha para anafilaxia. Para diagnosticar anafilaxia, seria necessário o acometimento de dois ou mais sistemas (por exemplo: pele + respiratório; pele + gastrointestinal) ou hipotensão após contato com alérgeno conhecido. O paciente apresenta apenas sintomas cutâneo-mucosos (urticária e edema de lábio discreto), sem comprometimento sistêmico, o que não preenche critérios para o uso de adrenalina.\n\nAlternativa e) Incorreta. Não há necessidade de via endovenosa para o corticoide, visto que o paciente tem boa aceitação alimentar e estabilidade clínica. A eficácia do corticoide oral é equivalente à do venoso em casos de menor gravidade. Como mencionado, a internação não está indicada pela ausência de sinais de alerta respiratórios ou circulatórios.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:10.610Z"
+  },
+  {
+    "id": "AJUDA_0d32e34e-1f6f-4583-87df-2c5cb5d268ad",
+    "originalId": "0d32e34e-1f6f-4583-87df-2c5cb5d268ad",
+    "statement": "Mulher, 72 anos, com antecedente de histerectomia abdominal há 20 anos, procura o pronto-socorro com dor abdominal difusa de início progressivo, distensão abdominal, náuseas e vômitos biliosos há 48 horas, além de parada na eliminação de gases e fezes. Ao exame físico: abdome distendido, timpanismo difuso à percussão e ruídos hidroaéreos em aumento. Exames laboratoriais iniciais mostram leucocitose discreta, sem acidose metabólica. Nesse contexto, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento inicial definitivo da obstrução intestinal deve ser sempre cirúrgico, independentemente da etiologia e da gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A radiografia simples de abdome não possui valor na suspeita de obstrução intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A causa mais comum de obstrução intestinal em adultos são as hérnias encarceradas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A ausência de flatos e fezes em 48 horas é exclusiva da obstrução colônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O achado clínico de distensão abdominal com ruídos hidroaéreos em aumento sugere obstrução mecânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de uma síndrome de obstrução intestinal. A paciente possui fatores de risco (cirurgia abdominal prévia), sintomas típicos (dor, distensão, vômitos e parada de eliminação de flatos e fezes) e achados físicos característicos.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. O tratamento inicial da obstrução intestinal não é invariavelmente cirúrgico. Em casos de obstrução intestinal alta por bridas (aderências), que é a principal suspeita para esta paciente, o manejo inicial costuma ser conservador. Este inclui jejum, descompressão gástrica com sonda nasogástrica, hidratação venosa e correção de distúrbios hidroeletrolíticos. A cirurgia é reservada para casos de falha do tratamento clínico ou quando há sinais de estrangulamento (sofrimento de alça).\n\nAlternativa b) Incorreta. A radiografia simples de abdome (em pé e deitado) e a radiografia de tórax são exames fundamentais e geralmente os primeiros a serem solicitados. Elas possuem alto valor diagnóstico, permitindo identificar distensão de alças, níveis hidroaéreos e presença de pneumoperitônio, além de ajudar a diferenciar a obstrução alta (delgado) da baixa (cólon).\n\nAlternativa c) Incorreta. Em adultos, a causa mais comum de obstrução do intestino delgado são as bridas ou aderências decorrentes de cirurgias prévias (como a histerectomia da paciente). As hérnias encarceradas aparecem como a segunda causa mais frequente. Já na obstrução do intestino grosso (cólon), a causa principal é o câncer colorretal.\n\nAlternativa d) Incorreta. A parada de eliminação de gases e fezes é um sinal de interrupção do trânsito intestinal que pode ocorrer tanto em obstruções do intestino delgado (após o esvaziamento da porção distal ao obstáculo) quanto em obstruções colônicas. Não é um achado exclusivo da obstrução do cólon.\n\nAlternativa e) Correta. Este é o achado fisiopatológico clássico da obstrução mecânica. No início do quadro obstrutivo, o intestino aumenta o peristaltismo na tentativa de vencer o obstáculo físico, o que gera ruídos hidroaéreos aumentados, metálicos ou em surtos. Isso diferencia a obstrução mecânica do íleo paralítico (obstrução funcional), no qual os ruídos hidroaéreos estão reduzidos ou ausentes devido à falta de motilidade intestinal.\n\nEm resumo, a presença de dor abdominal, distensão e o aumento dos ruídos hidroaéreos (peristaltismo de luta) em uma paciente com cicatriz cirúrgica prévia aponta fortemente para um diagnóstico de obstrução intestinal mecânica por bridas.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:10.610Z"
+  },
+  {
+    "id": "AJUDA_0d364715-a509-401e-a5d1-0be7291df111",
+    "originalId": "0d364715-a509-401e-a5d1-0be7291df111",
+    "statement": "Gestante de 38 anos de idade inicia o pré-natal com 6 semanas. AP: G3P1A1; um aborto precoce e um parto vaginal no termo. Foram solicitados exames, cujos resultados estão no quadro a seguir:  \n\nAs condutas em relação a investigação de diabetes gestacional, toxoplasmose e HTLV são",
+    "options": [
+      {
+        "id": "A",
+        "text": "fazer GTT 75g entre 24 – 28 semanas, considerar a gestante imune para toxoplasmose e liberar o aleitamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "repetir a glicemia de jejum com 32 semanas, repetir a sorologia para toxoplasmose com 28 semanas e liberar o aleitamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "fazer GTT 75g entre 24 – 28 semanas, repetir a sorologia para toxoplasmose com 28 semanas e contraindicar o aleitamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "repetir a glicemia de jejum entre 24 – 28 semanas, considerar a gestante imune para toxoplasmose e contraindicar o aleitamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige o conhecimento dos protocolos de rastreamento no pré-natal de baixo risco. Vamos analisar os dados da tabela e as condutas adequadas:\n\nGlicemia de jejum: O valor apresentado é de 86 mg/dL. Na primeira consulta de pré-natal, valores de glicemia de jejum menores que 92 mg/dL são considerados normais (não diagnosticam diabetes preexistente nem gestacional precocemente). Nessas pacientes, a conduta padrão é realizar o Teste Oral de Tolerância à Glicose (TOTG 75g) entre a 24ª e 28ª semana de gestação para rastrear o diabetes gestacional.\n\nToxoplasmose: O quadro mostra IgG reagente e IgM não reagente. Isso caracteriza uma cicatriz sorológica, indicando que a gestante teve a infecção no passado e agora está imune. Portanto, não há risco de transmissão congênita nesta gestação e não há necessidade de repetir o exame ou realizar novas investigações para esta patologia.\n\nHTLV 1 e 2 e HIV: Os resultados são não reagentes. No Brasil, as duas principais contraindicações absolutas à amamentação por causas infecciosas são a infecção materna pelo HIV e pelo HTLV. Como a paciente testou negativo para ambos, o aleitamento materno está liberado e deve ser incentivado.\n\nAnálise das alternativas:\n\nAlternativa a: Está correta. Propõe o TOTG 75g no período recomendado (24-28 semanas), reconhece corretamente a imunidade para toxoplasmose baseada no perfil IgG+/IgM- e libera o aleitamento, dado que o HTLV é negativo.\n\nAlternativa b: Está incorreta. Para o rastreio de diabetes entre 24-28 semanas em pacientes com glicemia inicial normal, o exame de escolha é o TOTG 75g, e não a glicemia de jejum isolada. Além disso, pacientes imunes à toxoplasmose não precisam repetir a sorologia.\n\nAlternativa c: Está incorreta. Embora o TOTG esteja correto, a paciente já é imune à toxoplasmose (não requer repetição do exame) e não há motivo para contraindicar o aleitamento materno, uma vez que o HTLV e o HIV são negativos.\n\nAlternativa d: Está incorreta. O rastreio de diabetes entre 24-28 semanas deve ser feito com o TOTG 75g. A contraindicação ao aleitamento está errada, pois a paciente não apresenta infecção por HTLV ou HIV.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas na Gestação",
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": 33.113294339221014,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/dde98a14e278a19fbcae61c3833ba18c8b64ff7e4db3ab378d11812cf89abe7e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_0d364715-a509-401e-a5d1-0be7291df111_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:11.100Z"
+  },
+  {
+    "id": "AJUDA_0d410cf8-7f53-482f-81e5-21bdf0422ff9",
+    "originalId": "0d410cf8-7f53-482f-81e5-21bdf0422ff9",
+    "statement": "Homem, 27 anos, vítima de ferimento por arma branca em hipocôndrio direito, apresenta-se na emergência, pálido e confuso. Sinais vitais = PA: 82 x 48 mmHg; FC: 132 bpm; FR: 24 mrpm; extremidades frias, tempo de enchimento capilar lento. FAST positivo em espaço hepatorrenal (Morrison). Sem sinais de TCE. Já recebeu 1 litro de solução cristaloide no pré-hospitalar. Indicado controle cirúrgico imediato. Qual estratégia de ressuscitação pré-controle cirúrgico do sangramento é mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metas de PAS 110-120 mmHg, com 2 litros de cristaloide aquecido em bolus rápidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipotensão permissiva, visando PAS 80-90 mmHg até hemostasia, minimizando cristaloide e iniciando transfusão balanceada (1:1:1).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Infusão precoce de vasopressor (norepinefrina) para restaurar PAM ≥ 65 mmHg antes da laparotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administração rotineira de bicarbonato para lactato > 4 mmol/L no atendimento inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reposição exclusiva de concentrado de hemácias até Hb > 10 g/dL, adicionando plasma apenas se INR > 2,0.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resumo do caso: paciente com trauma penetrante em hipocôndrio direito, em choque hemorrágico classe III-IV (PA 82x48, FC 132, confusão, extremidades frias, enchimento capilar lento) e FAST positivo em Morrison. O sangramento é provavelmente hepático. Não há TCE, e a indicação cirúrgica é imediata. O princípio central é a ressuscitação de controle de danos: controlar o sangramento cirurgicamente e, até lá, repor sangue e hemostáticos, evitando a \"tríade letal\" (hipotermia, acidose e coagulopatia).\n\nAnálise das alternativas:\n\na) Incorreta. Metas de PAS 110-120 mmHg com 2 litros de cristaloide em bolus rápidos vão contra o ATLS atual e a ressuscitação de controle de danos. Grandes volumes de cristaloide diluem fatores de coagulação e hemácias, pioram a acidose hiperclorêmica e a hipotermia. Além disso, elevam a pressão e podem deslocar coágulos, aumentando o sangramento (efeito \"pop the clot\"). O paciente já recebeu 1 litro, e o ideal é limitar o cristaloide.\n\nb) Correta. Em trauma penetrante de tronco com hemorragia ativa e sem TCE, usa-se hipotensão permissiva (PAS cerca de 80-90 mmHg, ou PAM cerca de 50-60 mmHg) até a hemostasia cirúrgica. Mantém-se perfusão de órgãos nobres sem romper o coágulo inicial. Associa-se a isso o mínimo de cristaloide e o início precoce de transfusão balanceada (concentrado de hemácias, plasma e plaquetas em 1:1:1, ou protocolo de transfusão maciça). Também são importantes o aquecimento, o ácido tranexâmico precoce (até 3 horas) e a correção do cálcio. A hipotensão permissiva é contraindicada em TCE ou lesão medular, onde se precisa de pressão de perfusão, o que não é o caso aqui.\n\nc) Incorreta. Vasopressor no choque hemorrágico não trata a causa, que é a perda de volume e de capacidade de transporte de oxigênio. Causa vasoconstrição, piora a perfusão tecidual e pode aumentar o sangramento e a mortalidade. Reserva-se apenas para situações selecionadas, como hipotensão que ameaça a vida durante a reposição. Além disso, a meta de PAM ≥ 65 mmHg é típica de choque séptico, não de hemorragia não controlada.\n\nd) Incorreta. O bicarbonato não deve ser usado rotineiramente. A acidose láctica do choque hemorrágico se corrige restaurando perfusão e controlando o sangramento. O bicarbonato não melhora desfechos hemodinâmicos e pode causar hipernatremia, hipocalcemia e acidose intracelular paradoxal. O lactato é um marcador de gravidade e de resposta, não um alvo de tratamento isolado.\n\ne) Incorreta. A reposição exclusiva de hemácias, com plasma apenas se INR > 2,0, é uma estratégia reativa e ultrapassada. A coagulopatia do trauma se instala precocemente, e esperar exames laboratoriais atrasa a correção. A transfusão precoce em proporção balanceada com plasma e plaquetas reduz a mortalidade. Metas de hemoglobina também não guiam a ressuscitação na fase aguda de hemorragia ativa.\n\nConclusão: a estratégia mais adequada é hipotensão permissiva, cristaloide mínimo e transfusão balanceada precoce, enquanto o paciente segue para o controle cirúrgico imediato (letra b).",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Medicina Transfusional",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:11.100Z"
+  },
+  {
+    "id": "AJUDA_0d4c48f3-1003-415f-a007-34e7a3cf9dca",
+    "originalId": "0d4c48f3-1003-415f-a007-34e7a3cf9dca",
+    "statement": "Paciente masculino, 50 anos, procedente de Recife (PE), com “alergia” no corpo há uns oito meses. Nega comorbidades ou tratamentos prévios e refere áreas “dormentes” na pele. Frente ao diagnóstico mais provável, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento de eleição é feito com rifampicina, ofloxacina e minociclina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os surtos reacionais só ocorrem antes ou durante o tratamento com poliquimioterapia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quanto ao tratamento, as doses diárias são diferentes para o paucibacilar e o multibacilar;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico da patologia pode ocorrer sem lesões na pele.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — paciente de área endêmica com queixa de áreas dormentes e lesões de pele (placas eritematosas visíveis na imagem) — é clássico para o diagnóstico de hanseníase.\n\nAnálise das alternativas:\n\na) Incorreta. O tratamento de eleição (primeira linha) estabelecido pela Organização Mundial da Saúde e pelo Ministério da Saúde é a Poliquimioterapia Única (PQT-U), composta por rifampicina, dapsona e clofazimina. O esquema citado (ROM: rifampicina, ofloxacina e minociclina) é um esquema alternativo, utilizado apenas em casos específicos de intolerância ou resistência medicamentosa, não sendo a escolha inicial.\n\nb) Incorreta. Os episódios reacionais (Tipo 1 ou Reação Reversa e Tipo 2 ou Eritema Nodoso Hansênico) podem ocorrer em qualquer fase da doença: antes do diagnóstico, durante o tratamento ou, frequentemente, após a alta por cura (pós-PQT). Isso ocorre devido à persistência de antígenos bacilares no organismo, que desencadeiam respostas imunológicas.\n\nc) Incorreta. Com a adoção do esquema de Poliquimioterapia Única (PQT-U), as drogas e as doses diárias e mensais são as mesmas para pacientes paucibacilares (PB) e multibacilares (MB). A única diferença entre as classificações reside na duração do tratamento: 6 doses (meses) para PB e 12 doses (meses) para MB.\n\nd) Correta. A hanseníase pode se manifestar na forma neural pura. Nesses casos, o paciente apresenta comprometimento de troncos nervosos (espessamento neural, dor ou perda de sensibilidade e força motora no território do nervo afetado), mas não exibe nenhuma lesão cutânea visível ao exame físico. O diagnóstico, portanto, pode ser eminentemente clínico-neurológico.\n\nAssociação com a imagem: A foto mostra placas eritematosas infiltradas, algumas com aspecto anular. No contexto de áreas \"dormentes\", essas lesões indicam hanseníase virchowiana ou dimorfa, reforçando a necessidade de avaliação da sensibilidade térmica, dolorosa e tátil sobre as manchas.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Hanseníase"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/d21adb2b2c22a2064679fdde11354fb344f7514df19094c182b19799f23dbbf7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_0d4c48f3-1003-415f-a007-34e7a3cf9dca_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:11.619Z"
+  },
+  {
+    "id": "AJUDA_0d54bf89-7fc0-471a-9435-e43b6f65ec19",
+    "originalId": "0d54bf89-7fc0-471a-9435-e43b6f65ec19",
+    "statement": "A Doença do Refluxo Gastroesofágico (DRGE) é uma condição comum caracterizada pelo retorno do conteúdo gástrico ao esôfago, causando uma variedade de sintomas que podem ser classificados como típicos ou atípicos. O sintoma considerado típico da DRGE é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rouquidão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tosse crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hêmese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pirose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Doença do Refluxo Gastroesofágico (DRGE) apresenta um espectro clínico amplo, sendo didaticamente dividida em sintomas típicos (esofágicos) e atípicos (extraesofágicos). O diagnóstico clínico inicial baseia-se primordialmente na presença dos sintomas clássicos.\n\nAlternativa a) Incorreta. A rouquidão é classificada como um sintoma atípico ou extraesofágico. Ela ocorre devido à microaspiração do conteúdo gástrico ou pelo reflexo vagal, causando irritação direta na laringe (laringite por refluxo). Embora seja uma manifestação comum em consultórios de otorrinolaringologia, não é o sintoma definidor da síndrome típica.\n\nAlternativa b) Incorreta. A tosse crônica é outro sintoma atípico clássico da DRGE. Faz parte da \"tríade da tosse crônica\" (junto com a asma e a síndrome do gotejamento pós-nasal). Assim como a rouquidão, sua fisiopatologia envolve irritação laringofaríngea ou reflexos broncovagais, mas não é considerada um sintoma típico esofágico.\n\nAlternativa c) Incorreta. Êmese refere-se ao ato de vomitar (expulsão forçada do conteúdo gástrico). Na DRGE, o sintoma típico relacionado é a regurgitação, que é o retorno do conteúdo gástrico à cavidade oral ou faringe sem esforço muscular ou náuseas prévias. O vômito propriamente dito pode sugerir complicações ou outras patologias, como obstruções ou gastroparesia.\n\nAlternativa d) Correta. A pirose, descrita pelos pacientes como azia ou sensação de queimação retroesternal, é o sintoma cardeal e mais característico da DRGE. Quando acompanhada de regurgitação ácida, compõe a síndrome esofágica típica. A presença desses dois sintomas possui um alto valor preditivo positivo para o diagnóstico da doença, permitindo, em muitos casos, o início de teste terapêutico com inibidores de bomba de prótons (IBP) sem a necessidade imediata de exames complementares em pacientes sem sinais de alarme.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": 33.113294339221014,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:11.619Z"
+  },
+  {
+    "id": "AJUDA_0d561d92-6a43-4298-88b6-587133a88b87",
+    "originalId": "0d561d92-6a43-4298-88b6-587133a88b87",
+    "statement": "De acordo com a Diretriz Brasileira de Hipertensão da Sociedade Brasileira de Cardiologia (SBC) de 2016, a pressão arterial de um paciente que apresenta uma pressão sistólica de 155 mmHg e diastólica de 95 mmHg é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pré-hipertensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipertensão estágio 1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hipertensão estágio 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipertensão estágio 3.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a essa questão, devemos utilizar os critérios da 7ª Diretriz Brasileira de Hipertensão Arterial da Sociedade Brasileira de Cardiologia (2016), que classifica a pressão arterial (PA) em adultos (acima de 18 anos) com base nos níveis de pressão sistólica (PAS) e diastólica (PAD). Um ponto fundamental nessa classificação é que, quando a PAS e a PAD situam-se em categorias diferentes, a maior deve ser utilizada para definir o estágio.\n\nNo caso do paciente apresentado, temos:\nPAS: 155 mmHg\nPAD: 95 mmHg\n\nAnálise das alternativas:\n\na) Incorreta. A pré-hipertensão é definida por uma PAS entre 121 e 139 mmHg e/ou uma PAD entre 81 e 89 mmHg. Os valores de 155/95 mmHg do paciente já ultrapassam os limites dessa categoria, indicando hipertensão estabelecida.\n\nb) Correta. A hipertensão estágio 1 é caracterizada por uma PAS entre 140 e 159 mmHg e/ou uma PAD entre 90 e 99 mmHg. Como o paciente apresenta PAS de 155 (dentro do intervalo 140-159) e PAD de 95 (dentro do intervalo 90-99), ele preenche perfeitamente os critérios para o estágio 1.\n\nc) Incorreta. Para ser classificada como hipertensão estágio 2, a PAS deve estar entre 160 e 179 mmHg e/ou a PAD entre 100 e 109 mmHg. Os valores do paciente são inferiores a esses patamares.\n\nd) Incorreta. A hipertensão estágio 3 (forma mais grave) é definida por uma PAS maior ou igual a 180 mmHg e/ou uma PAD maior ou igual a 110 mmHg. O paciente está significativamente abaixo desses níveis pressóricos.\n\nEm resumo, de acordo com a tabela da SBC 2016, valores de 155 x 95 mmHg enquadram-se na Hipertensão Estágio 1. É importante lembrar que, embora as diretrizes mais recentes (como a de 2020) tenham mantido classificações semelhantes, a questão exige especificamente o conhecimento da diretriz de 2016.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:11.619Z"
+  },
+  {
+    "id": "AJUDA_0d583c6a-08dc-4ff0-9c87-cc0caf688cd0",
+    "originalId": "0d583c6a-08dc-4ff0-9c87-cc0caf688cd0",
+    "statement": "Determinantes sociais da saúde, conforme proposto por Thomas McKeown, são mais bem caracterizados por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Influência da assistência médica na redução da morbidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Relação causal entre fatores socioeconômicos (nutrição, habitação, trabalho) e saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Predominância de fatores genéticos na determinação da saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Interrelação entre meio ambiente e comportamentos de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Determinação da saúde pela estrutura social e relações de poder.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Thomas McKeown foi um médico e historiador da medicina britânico cuja tese central, conhecida como a Tese de McKeown, revolucionou o entendimento sobre a saúde pública. Ele defendeu que a queda histórica da mortalidade, especialmente por doenças infecciosas no século XIX e início do XX, ocorreu fundamentalmente antes do advento de intervenções médicas eficazes, como antibióticos e vacinas de massa.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. McKeown é famoso justamente por questionar o papel central da assistência médica curativa na redução da mortalidade e morbidade populacional. Ele demonstrou que a redução da carga de doenças começou muito antes da disponibilidade da maioria das tecnologias médicas modernas.\n\nAlternativa b) Correta. A essência do pensamento de McKeown é que a melhoria nas condições gerais de vida (o chamado *standard of living*), que engloba nutrição adequada, saneamento básico, habitação digna e melhores condições de trabalho, foi a principal responsável pelo aumento da expectativa de vida. Para ele, o desenvolvimento socioeconômico foi o motor da saúde.\n\nAlternativa c) Incorreta. A tese de McKeown foca em determinantes sociais, ambientais e nutricionais, e não na herança genética. O seu trabalho é um marco da epidemiologia social e histórica.\n\nAlternativa d) Incorreta. Embora o meio ambiente (especialmente o saneamento) seja um ponto importante em sua análise, o termo \"comportamentos de risco\" geralmente remete a escolhas individuais e estilos de vida. McKeown focava em melhorias estruturais da sociedade que impactavam a saúde independentemente da mudança de comportamento individual.\n\nAlternativa e) Incorreta. Embora a estrutura social influencie os determinantes citados por McKeown, o foco específico de sua obra foi o progresso material, nutricional e higiênico. A discussão sobre relações de poder é mais característica de teorias sociológicas críticas posteriores e do modelo de determinação social da saúde da corrente latino-americana.\n\nGabarito: Letra b.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:11.619Z"
+  }
+]

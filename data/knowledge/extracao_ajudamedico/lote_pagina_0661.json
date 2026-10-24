@@ -1,0 +1,521 @@
+[
+  {
+    "id": "AJUDA_b8a33b8b-f6e6-4dc9-8e3c-be73bf007962",
+    "originalId": "b8a33b8b-f6e6-4dc9-8e3c-be73bf007962",
+    "statement": "Paciente com feocromocitoma que sera submetido a cirurgia necessita de preparo em qual sequência?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidratacao – bloqueio alfa – bloqueio beta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bloqueio beta – bloqueio alfa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bloqueio alfa – bloqueio beta",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apenas bloqueio beta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Metilprednisolona – bloqueio beta",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O preparo pré-operatório do paciente com feocromocitoma é um tema clássico em provas de residência e baseia-se na fisiopatologia da secreção de catecolaminas (adrenalina e noradrenalina) pelo tumor. Essas substâncias atuam nos receptores alfa-adrenérgicos (promovendo vasoconstrição) e beta-adrenérgicos (promovendo aumento da frequência cardíaca e vasodilatação periférica).\n\nA regra de ouro é: o bloqueio alfa deve sempre preceder o bloqueio beta. Se iniciarmos um betabloqueador isoladamente, bloquearemos os receptores beta-2 (responsáveis pela vasodilatação), deixando os receptores alfa-1 totalmente livres para a ação das catecolaminas. Isso resulta em uma vasoconstrição periférica intensa e sem oposição, o que pode levar a uma crise hipertensiva grave e potencialmente fatal.\n\nPortanto, inicia-se o alfabloqueador (como fenoxibenzamina ou doxazosina) cerca de 7 a 14 dias antes da cirurgia. O betabloqueador (como o propranolol) só é adicionado posteriormente, caso o paciente apresente taquicardia ou arritmias, e somente após o bloqueio alfa estar efetivo.\n\nAnálise das alternativas:\n\na) Hidratação – bloqueio alfa – bloqueio beta: Embora a expansão volêmica com hidratação e dieta rica em sódio seja fundamental no preparo (pois esses pacientes costumam ter o volume intravascular contraído pela vasoconstrição crônica), a alternativa C é considerada a resposta mais direta e padrão para a sequência farmacológica de bloqueio adrenérgico exigida em concursos. Além disso, a hidratação vigorosa geralmente é intensificada após o início do alfabloqueio, quando a vasodilatação começa a ocorrer.\n\nb) Bloqueio beta – bloqueio alfa: Incorreta. Esta sequência é perigosa e contraindicada, pois o bloqueio beta inicial causaria uma crise hipertensiva por ação alfa-adrenérgica sem oposição.\n\nc) Bloqueio alfa – bloqueio beta: Correta. Esta é a sequência clássica e obrigatória para garantir a estabilidade hemodinâmica do paciente antes e durante o ato cirúrgico.\n\nd) Apenas bloqueio beta: Incorreta. O uso isolado de betabloqueadores no feocromocitoma pode precipitar crises hipertensivas graves.\n\ne) Metilprednisolona – bloqueio beta: Incorreta. Corticosteroides não fazem parte do protocolo de preparo para feocromocitoma e o uso de betabloqueador sem o prévio alfabloqueio está errado.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório",
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.063Z"
+  },
+  {
+    "id": "AJUDA_b8a67483-31bc-4897-bd46-6a4c63a1825b",
+    "originalId": "b8a67483-31bc-4897-bd46-6a4c63a1825b",
+    "statement": "Homem de 66 anos, pós-operatório de colectomia por tumor, apresenta febre persistente, dor abdominal difusa, distensão e piora hemodinâmica. Chega à UTI com PA 86/54 mmHg após 2 L de cristaloide, lactato 4,7 mmol/L, leucócitos 19.000/mm³ e PCR > 300 mg/L. Tomografia apresenta coleção sub-hepática de 6 cm com gás, sugerindo processo infeccioso ativo. Norepinefrina já em 0,15 mcg/kg/min com pouca melhora clínica.\nQual é a conduta imediata mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar vasopressor até normalizar PA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trocar antibiótico e observar por 24 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar controle de foco cirúrgico/percutâneo + antibiótico adequado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Usar corticoide em altas doses como primeira medida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aguardar evolução clínica para decidir intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um paciente em choque séptico de foco abdominal (provável deiscência de anastomose ou abscesso pós-operatório), evidenciado pela hipotensão refratária à reposição volêmica, necessidade de vasopressor (norepinefrina) e hiperlactatemia (lactato de 4,7 mmol/L). A tomografia confirma uma coleção com gás, o que indica um foco infeccioso ativo que precisa ser abordado.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. Embora o ajuste da dose do vasopressor seja necessário para manter a pressão arterial média (PAM) acima de 65 mmHg, o aumento isolado da medicação não resolve a causa-base da instabilidade. Sem o controle da fonte de infecção, o choque progredirá para falência múltipla de órgãos.\n\nAlternativa b) Incorreta. A troca de antibióticos é importante caso o esquema atual não cubra os patógenos prováveis, mas \"observar por 24 h\" em um paciente com choque séptico e foco cirúrgico evidente é uma conduta inadequada que aumenta drasticamente a mortalidade.\n\nAlternativa c) Correta. O manejo do choque séptico baseia-se em três pilares imediatos: ressuscitação hemodinâmica (fluidos e vasopressores), antibioticoterapia de amplo espectro precoce e controle do foco infeccioso (*source control*). No caso de uma coleção sub-hepática de 6 cm com gás no pós-operatório de colectomia, o controle do foco (seja por nova cirurgia ou drenagem percutânea, dependendo da estabilidade e viabilidade técnica) é a medida definitiva e essencial para a sobrevivência do paciente.\n\nAlternativa d) Incorreta. O uso de corticoides (como a hidrocortisona) pode ser considerado no choque séptico apenas quando há persistência da instabilidade hemodinâmica mesmo após ressuscitação volêmica adequada e uso de doses moderadas a altas de vasopressores. Além disso, não são utilizados em \"altas doses\" para este fim e nunca substituem a necessidade de controle do foco.\n\nAlternativa e) Incorreta. Aguardar a evolução clínica em um quadro de sepse abdominal grave e instabilidade hemodinâmica é uma conduta passiva que leva ao óbito. A intervenção deve ser imediata e agressiva.\n\nASSOCIAÇÃO COM IMAGEM: A tomografia citada no enunciado é o exame padrão-ouro para identificar complicações pós-operatórias abdominais. A presença de gás em uma coleção (gás extraluminal) é um sinal clássico de infecção por germes produtores de gás ou de perfuração/deiscência de víscera oca, reforçando a urgência da abordagem descrita na alternativa C.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Sepse",
+      "Ventilação Mecânica",
+      "Choque",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.063Z"
+  },
+  {
+    "id": "AJUDA_b8bf8885-091b-4da1-8b59-9bde8a5eb712",
+    "originalId": "b8bf8885-091b-4da1-8b59-9bde8a5eb712",
+    "statement": "Uma das competências da Atenção Primária à Saúde (APS) é o cuidado da gestante de forma integral. Durante o período da gravidez, é natural e esperado que a paciente apresente ganho de peso.\nSabe-se, no entanto, que se houver excesso de ganho de peso nesse período, aumenta o risco de Diabetes gestacional.\nO ganho de peso recomendado para uma mulher com IMC pré-gestacional entre 25 e 30 kg/m2, para todo o período gestacional, deve estar entre",
+    "options": [
+      {
+        "id": "A",
+        "text": "5,0 kg e 10,0 kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12,5 kg e 18,0 kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "7,0 kg e 11,5 kg.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "18,0 kg e 24,0 kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "10,5 kg e 16,0 kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O acompanhamento do ganho de peso gestacional é um pilar fundamental do pré-natal na Atenção Primária, pois tanto o ganho insuficiente quanto o excessivo estão associados a desfechos obstétricos e perinatais desfavoráveis, como diabetes gestacional, pré-eclâmpsia e macrossomia fetal.\n\nPara responder a essa questão, devemos utilizar os parâmetros recomendados pelo Ministério da Saúde e pela FEBRASGO, baseados no Instituto de Medicina (IOM). A recomendação do ganho de peso total varia de acordo com o Índice de Massa Corporal (IMC) pré-gestacional da paciente.\n\nNo caso proposto, a gestante possui um IMC entre 25 e 30 kg/m², o que a classifica na categoria de Sobrepeso.\n\nAnálise das alternativas:\n\na) Incorreta. A faixa de 5,0 kg a 9,0 kg (valor aproximado ao da alternativa) é a recomendação oficial para gestantes que iniciam a gravidez já na categoria de Obesidade (IMC maior ou igual a 30 kg/m²).\n\nb) Incorreta. O ganho entre 12,5 kg e 18,0 kg é recomendado especificamente para gestantes com Baixo Peso pré-gestacional (IMC menor que 18,5 kg/m²), visando recuperar o estado nutricional e garantir o crescimento fetal.\n\nc) Correta. Para gestantes com Sobrepeso (IMC entre 25,0 e 29,9 kg/m²), a recomendação de ganho de peso total durante toda a gestação é de 7,0 kg a 11,5 kg. Este intervalo busca equilibrar as necessidades fisiológicas da gestação sem aumentar excessivamente os riscos metabólicos.\n\nd) Incorreta. Valores de ganho de peso entre 18,0 kg e 24,0 kg são considerados excessivos para qualquer categoria de IMC em gestações únicas, estando associados a altas taxas de complicações materno-fetais.\n\ne) Incorreta. O intervalo de 11,5 kg a 16,0 kg é a recomendação para gestantes classificadas como Eutróficas (IMC entre 18,5 e 24,9 kg/m²), ou seja, com peso inicial dentro da normalidade.\n\nResumo das recomendações de ganho de peso total (IOM/Ministério da Saúde):\n- Baixo peso (IMC < 18,5): 12,5 a 18,0 kg.\n- Eutrofia (IMC 18,5 - 24,9): 11,5 a 16,0 kg.\n- Sobrepeso (IMC 25,0 - 29,9): 7,0 a 11,5 kg.\n- Obesidade (IMC >= 30,0): 5,0 a 9,0 kg.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.063Z"
+  },
+  {
+    "id": "AJUDA_b8c86336-5998-46a7-8b22-9229d37e714e",
+    "originalId": "b8c86336-5998-46a7-8b22-9229d37e714e",
+    "statement": "Paciente de 50 anos, com histórico de dispneia progressiva aos esforços, apresenta pressão arterial pulmonar média de 35 mmHg em repouso, medida por cateterismo cardíaco direito. Após investigação, é diagnosticada com Hipertensão Arterial Pulmonar (HAP) idiopática. Qual dos seguintes mecanismos fisiopatológicos é o principal responsável pela elevação da pressão arterial pulmonar na HAP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da pressão venosa pulmonar por disfunção ventricular esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento do débito cardíaco por shunt intracardíaco esquerda-direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Obstrução mecânica da vasculatura pulmonar por êmbolos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipoventilação alveolar com hipoxemia crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Vasoconstrição e remodelamento vascular pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Texto Original:\nA Hipertensão Pulmonar (HP) é definida hemodinamicamente por uma pressão arterial pulmonar média (PAPm) superior a 20 mmHg, medida pelo cateterismo cardíaco direito. O caso descreve uma paciente com PAPm de 35 mmHg e diagnóstico de Hipertensão Arterial Pulmonar (HAP) idiopática, que pertence ao Grupo 1 da classificação da Organização Mundial da Saúde.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O aumento da pressão venosa pulmonar decorrente de disfunção ventricular esquerda (sistólica ou diastólica) ou doenças valvares esquerdas define a HP do Grupo 2. Nesses casos, a hipertensão é \"pós-capilar\", ou seja, o problema é retrógrado ao leito vascular pulmonar.\n\nAlternativa b) Incorreta. O aumento do débito cardíaco por shunts da esquerda para a direita (como comunicações interatriais ou interventriculares) causa um estado de hiperfluxo. Embora o hiperfluxo crônico possa desencadear lesão vascular e HAP, ele não é o mecanismo fisiopatológico primário da forma idiopática.\n\nAlternativa c) Incorreta. A obstrução mecânica da vasculatura por êmbolos organizados é o mecanismo principal da Hipertensão Pulmonar Tromboembólica Crônica (HPTEC), que pertence ao Grupo 4.\n\nAlternativa d) Incorreta. A hipoventilação e a hipoxemia crônicas levam à vasoconstrição pulmonar hipóxica reflexa. Este mecanismo é a base da HP do Grupo 3, associada a doenças parenquimatosas pulmonares (como DPOC e fibrose pulmonar) ou distúrbios do sono.\n\nAlternativa e) Correta. A fisiopatologia da HAP idiopática (Grupo 1) envolve uma tríade clássica: vasoconstrição excessiva, remodelamento da parede vascular e trombose in situ. Há um desequilíbrio entre mediadores produzidos pelo endotélio, com redução de vasodilatadores (prostaciclinas e óxido nítrico) e aumento de vasoconstritores (endotelina-1). O remodelamento vascular inclui a proliferação de células musculares lisas, hipertrofia da camada média, fibrose da íntima e formação de lesões plexiformes, o que aumenta a resistência vascular pulmonar de forma progressiva e irreversível.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.063Z"
+  },
+  {
+    "id": "AJUDA_b8ce2a07-5b8e-4b64-a1fb-23fe262d34b1",
+    "originalId": "b8ce2a07-5b8e-4b64-a1fb-23fe262d34b1",
+    "statement": "Com relação à Semiologia Cardíaca, avalie as afirmativas a seguir e assinale (V) para a afirmativa verdadeira e (F) para a falsa.\n( ) Na estenose aórtica, o sopro é sistólico em diamante (crescendo–decrescendo), audível principalmente no foco aórtico, com irradiação típica para a fúrcula e as carótidas, podendo estar associado ao fenômeno de Gallavardin, presença de B4 e pulso parvus et tardus.\n( ) Na insuficiência aórtica, o sopro é diastólico aspirativo, melhor audível no foco aórtico acessório, com o paciente sentado e inclinado para frente (anteflexão do tronco) e em expiração forçada, com intensidade aumentada pela manobra de handgrip, podendo estar associado à B3, ao sopro de Austin Flint e a pulso em martelo d’água (Corrigan).\n( ) Na cardiomiopatia hipertrófica, o sopro é sistólico, audível em bordo esternal inferior esquerdo, com intensidade que aumenta durante a manobra de Valsalva ou ortostatismo e diminui com o agachamento, podendo estar associado à B4 e à presença de pulso bisferiens.\nAs afirmativas são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "V – V – F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V – F – V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V – V – V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F – V – V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "F – F – V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nPrimeira afirmativa (V): A estenose aórtica (EAo) clássica apresenta um sopro sistólico de ejeção, com formato em diamante (crescendo e decrescendo). O foco principal é o aórtico (segundo espaço intercostal direito), mas a irradiação para as carótidas e fúrcula esternal é um achado muito característico. O fenômeno de Gallavardin ocorre quando o componente de alta frequência do sopro é transmitido para o ápice cardíaco, podendo ser confundido com insuficiência mitral. A quarta bulha (B4) reflete a contração atrial contra um ventrículo esquerdo hipertrofiado e pouco complacente. O pulso parvus et tardus (pequeno e lento) é o sinal periférico clássico da EAo importante.\n\nSegunda afirmativa (V): Na insuficiência aórtica (IAo), o refluxo de sangue da aorta para o ventrículo durante a diástole gera um sopro diastólico aspirativo. Ele é melhor ouvido no foco aórtico acessório e com manobras que aproximam a base do coração da parede torácica (inclinação do tronco e expiração). O handgrip (preensão manual) aumenta a resistência vascular sistêmica, dificultando a saída de sangue pela aorta e, consequentemente, aumentando o volume regurgitante e a intensidade do sopro. A B3 surge na IAo grave por sobrecarga de volume. O sopro de Austin Flint é um ruído diastólico apical causado pelo jato de regurgitação aórtica que dificulta a abertura da valva mitral. O pulso de Corrigan ou martelo d’água reflete o grande volume sistólico e a queda rápida da pressão diastólica.\n\nTerceira afirmativa (V): Na cardiomiopatia hipertrófica (CMH) obstrutiva, o sopro é sistólico e decorre da obstrução dinâmica do fluxo de saída do ventrículo esquerdo. Ao contrário da maioria dos sopros cardíacos, as manobras que reduzem o retorno venoso (pré-carga) e o volume ventricular, como Valsalva e ortostatismo, aumentam a obstrução e, portanto, aumentam a intensidade do sopro. O agachamento aumenta o retorno venoso e a pós-carga, reduzindo a obstrução e o sopro. A B4 é frequente devido à hipertrofia ventricular. O pulso bisferiens (dois picos sistólicos) é um achado clássico desta patologia.\n\nCONCLUSÃO:\nComo todas as afirmativas descrevem corretamente os achados semiológicos das respectivas patologias valvulares e miocárdicas, a sequência correta é V – V – V.\n\nGABARITO: ALTERNATIVA (C).",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Semiologia Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.063Z"
+  },
+  {
+    "id": "AJUDA_b8cfc1b9-3919-42a0-968d-82f624dfd6b9",
+    "originalId": "b8cfc1b9-3919-42a0-968d-82f624dfd6b9",
+    "statement": "Homem, 52 anos, diabético, foi admitido em choque séptico por fasceíte necrosante perineal (gangrena de Fournier) e submetido a desbridamento cirúrgico inicial. No 3º dia pós-operatório, apresenta piora clínica e laboratorial: febre persistente, aumento da dor local, taquicardia e hipotensão com necessidade de vasopressores, leucocitose acentuada, PCR e lactato em ascensão. Ao exame, há ferida extensa no períneo (imagem), com celulite progressiva e focos de necrose residual.\n\nQual deve ser a conduta a seguir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Novo rastreamento infeccioso e escalonamento da antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Retorno ao centro cirúrgico para novo desbridamento e coleta de tecido para cultura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar oxigenoterapia hiperbárica e ampliação do espectro antibacteriano guiado por culturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fechamento da ferida com retalhos músculo cutâneos, para reduzir risco de infecção secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A gangrena de Fournier e uma fasceite necrosante da regiao perineal e urogenital, caracterizada por rapida progressao e alta letalidade. O pilar fundamental do tratamento e o controle agressivo de foco por meio de desbridamento cirurgico, associado a suporte intensivo e antibioticoterapia de amplo espectro. Na fasceite necrosante, o desbridamento inicial raramente e suficiente, sendo rotineira e mandataria a realizacao de reabordagens cirurgicas seriadas (second look) sempre que houver suspeita ou evidencia de infeccao em progressao. A imagem do paciente evidencia exposicao testicular e perineal com areas extensas de esfacelos, fibrina e necrose residual nos bordos e leito da ferida, justificando a deterioracao clinico-laboratorial e a refratariedade do choque septico.\n\nAnalise das alternativas:\n\nAlternativa A (Incorreta): O problema primario e a falta de controle mecanico/cirurgico do foco. Como os antibioticos nao conseguem penetrar nem atingir concentracoes terapeuticas em tecidos necrosados e desvitalizados, a simples troca ou escalonamento de antimicrobianos sem a remocao cirurgica da necrose nao contera a sepse.\n\nAlternativa B (Correta): Diante de piora clinica, elevacao de marcadores inflamatorios e presenca de necrose residual visivel ao exame fisico, a conduta imperativa e o retorno imediato ao centro cirurgico para novo desbridamento agressivo ate encontrar tecido viavel e sangrante. A coleta de fragmentos teciduais para cultura durante o procedimento e a conduta padrao-ouro para identificar os patogenos e guiar a terapia antimicrobiana definitiva.\n\nAlternativa C (Incorreta): A oxigenoterapia hiperbarica e uma terapia meramente adjuvante e controversa. Ela nunca deve postergar ou substituir o desbridamento cirurgico de urgencia em um paciente instavel com necrose evidente.\n\nAlternativa D (Incorreta): O fechamento ou reconstrucao com retalhos e uma etapa tardia da reabilitacao cirurgica, indicada apenas quando a ferida esta completamente limpa, sem necrose e com tecido de granulacao saudavel. Fechar uma ferida infectada sepultaria bacterias em planos profundos, levando a piora rapida da sepse e ao obito.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Sepse",
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/be1a18ca856579ae3c97ed9b34398a30aae1e8f3a15de9980535a0ae2dad87f0.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b8cfc1b9-3919-42a0-968d-82f624dfd6b9_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.440Z"
+  },
+  {
+    "id": "AJUDA_b8d53bc5-e550-4755-b2ed-aecab3d138a7",
+    "originalId": "b8d53bc5-e550-4755-b2ed-aecab3d138a7",
+    "statement": "Paciente com sintomas dispépticos de longa data, realizou endoscopia digestiva alta que revelou gastrite erosiva leve com anatomopatológico de mucosa gástrica, indicando presença de Helicobacter pylori. Realizou tratamento com IBP, amoxicilina e claritromicina por 14 dias, sem melhora dos sintomas. Após 3 meses, realizou nova endoscopia e biópsia, com manutenção da infecção pelo H. pylori. De acordo com o caso clínico deste paciente e, segundo o IV Consenso Brasileiro sobre Infecção por H. pylori, qual é a melhor alternativa terapêutica associada ao IBP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amoxicilina e levofloxacino por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Metronidazol e bismuto por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Metronidazol e levofloxacino por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Amoxicilina e metronidazol por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um paciente com falha terapêutica no tratamento de primeira linha para a infecção por *Helicobacter pylori*. O esquema inicial utilizado foi o padrão brasileiro de 14 dias: Inibidor de Bomba de Prótons (IBP) + Amoxicilina + Claritromicina. Segundo o IV Consenso Brasileiro sobre Infecção por *H. pylori*, quando há persistência da bactéria após o primeiro ciclo, deve-se instituir uma terapia de resgate (segunda linha) utilizando antibióticos diferentes dos usados anteriormente, especialmente evitando a claritromicina devido ao risco de resistência adquirida.\n\nAlternativa A: Correta. A associação de IBP + Amoxicilina (1 g de 12/12 h) + Levofloxacino (500 mg 1 vez ao dia) por 10 a 14 dias é a principal recomendação de segunda linha no Brasil. O levofloxacino, uma fluoroquinolona, apresenta boas taxas de erradicação em pacientes que falharam no esquema com claritromicina.\n\nAlternativa B: Incorreta. Embora o bismuto seja uma excelente opção para terapias de resgate, ele deve ser utilizado no esquema de terapia quádrupla (IBP + Bismuto + Tetraciclina + Metronidazol). A alternativa propõe apenas bismuto e metronidazol, o que não compõe um esquema terapêutico completo ou padronizado pelo consenso para este cenário.\n\nAlternativa C: Incorreta. Na terapia de resgate com levofloxacino, o antibiótico acompanhante de escolha é a amoxicilina, e não o metronidazol. A amoxicilina é mantida na segunda linha porque a resistência bacteriana do *H. pylori* a ela é raríssima no Brasil, garantindo maior eficácia ao tratamento quando combinada com uma nova droga (levofloxacino).\n\nAlternativa D: Incorreta. O esquema IBP + Amoxicilina + Metronidazol é geralmente utilizado como alternativa de primeira linha em pacientes que possuem contraindicação ou alergia à claritromicina. Após a falha do esquema tríplice clássico, as evidências apontam para uma maior taxa de sucesso com o uso do levofloxacino ou da terapia quádrupla com bismuto.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.440Z"
+  },
+  {
+    "id": "AJUDA_b8d9afb3-31c6-40c6-bf25-6ccf9a9fd64b",
+    "originalId": "b8d9afb3-31c6-40c6-bf25-6ccf9a9fd64b",
+    "statement": "Idoso de 81 anos, com diagnóstico de diabetes mellitus tipo 2 e síndrome de fragilidade, acamado e dependente de ajuda de terceiros para o autocuidado, com internações hospitalares no último ano por fratura de fêmur pós-queda da própria altura, pneumonia adquirida em comunidade e acidente vascular isquêmico com resultante demência vascular grave. Para este paciente, deve-se objetivar como metas de controle glicêmico, de acordo com as recentes diretrizes da Sociedade Brasileira de Diabetes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hba1c < 6,5%, glicemia de jejum entre 80 e 130 mg/dL, glicemia 2 horas após alimentação menor que 180 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hba1c < 7,5%, glicemia de jejum entre 90 e 150 mg/dL, glicemia 2 horas após alimentação menor que 180 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hba1c < 8,0%, glicemia de jejum entre 100 e 180 mg/dL, glicemia 2 horas após alimentação menor que 270 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hba1c < 10,0%, glicemia de jejum entre 100 e 270 mg/dL, glicemia 2 horas após alimentação menor que 270 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A hemoglobina glicada não deve ser uma meta em si, mas tem-se como objetivo evitar hipoglicemias e hiperglicemias.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O manejo do diabetes no idoso exige a individualização das metas glicêmicas, levando em conta a expectativa de vida, o estado cognitivo, a funcionalidade e a presença de comorbidades. A Sociedade Brasileira de Diabetes (SBD) classifica os idosos em categorias para definir esses alvos. O paciente em questão é classificado como muito complexo ou em estado de saúde muito pobre, devido à demência vascular grave, dependência total (acamado) e histórico de complicações graves.\n\nAlternativa a: Incorreta. Essas metas são extremamente rigorosas (HbA1c abaixo de 6,5%) e são indicadas para adultos jovens ou idosos hígidos com baixo risco de hipoglicemia. Em um idoso frágil e com demência, buscar esse controle aumentaria drasticamente o risco de hipoglicemias graves, quedas e eventos cardiovasculares.\n\nAlternativa b: Incorreta. Estas seriam metas razoáveis para um idoso considerado saudável (poucas comorbidades, bom estado cognitivo e funcional). Para o perfil clínico do paciente descrito, esses valores ainda são considerados muito baixos e perigosos.\n\nAlternativa c: Incorreta. Alvos de HbA1c menores que 8,0% e glicemias um pouco mais flexíveis são indicados para idosos com saúde intermediária (múltiplas doenças crônicas coexistentes ou comprometimento cognitivo/funcional leve a moderado). O paciente do caso possui um comprometimento muito mais profundo (demência grave e dependência total).\n\nAlternativa d: Incorreta. Embora o controle deva ser flexível, as diretrizes não estabelecem o valor de 10% como uma meta formal de hemoglobina glicada. Além disso, manter glicemias de jejum de até 270 mg/dL poderia resultar em desidratação, perda de peso e sintomas de hiperglicemia, o que prejudica a qualidade de vida.\n\nAlternativa e: Correta. De acordo com as diretrizes da SBD e de outras sociedades internacionais (como a ADA), para idosos com saúde muito pobre, demência avançada ou expectativa de vida limitada, o foco do tratamento deixa de ser a prevenção de complicações microvasculares a longo prazo (como retinopatia ou nefropatia) e passa a ser exclusivamente a segurança e o conforto. Nesses casos, a hemoglobina glicada perde sua utilidade como meta principal. O objetivo terapêutico é evitar a hipoglicemia (que é fatal e frequente nessa população) e evitar a hiperglicemia sintomática (que causa poliúria, desidratação e risco de infecções). Portanto, prioriza-se a qualidade de vida e a simplificação do esquema terapêutico.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.440Z"
+  },
+  {
+    "id": "AJUDA_b8df3587-0ddc-4369-ab64-d8ede8bd65f5",
+    "originalId": "b8df3587-0ddc-4369-ab64-d8ede8bd65f5",
+    "statement": "Após o diagnóstico da Sífilis latente e seu tratamento apropriado, indique o que se espera em relação ao controle:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Teste Rápido para Sífilis negativo em três meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Queda de, pelo menos, dois títulos nos próximos seis meses (de 1/16 para 1/2, por exemplo).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "VDRL com titulações maiores no próximo mês (de 1/4 para 1/8, por exemplo).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "VDRL de 1/2.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O acompanhamento da cura da sífilis deve ser realizado com a utilização de testes não treponêmicos, como o VDRL ou o RPR, de forma quantitativa. O objetivo é observar a redução dos títulos em relação aos valores obtidos no início do tratamento.\n\nAlternativa a: Incorreta. O teste rápido é um teste treponêmico. Esse tipo de exame costuma permanecer reagente pelo resto da vida na maioria dos indivíduos, mesmo após o tratamento adequado, fenômeno chamado de cicatriz sorológica. Portanto, o teste rápido não é utilizado para o controle de cura.\n\nAlternativa b: Correta. O critério laboratorial de cura e resposta imunológica adequada é a queda da titulação em pelo menos duas diluições (o que equivale a uma redução de quatro vezes no título) em um período de 6 meses para sífilis recente e até 12 meses para sífilis tardia ou latente. No exemplo citado, a queda de 1/16 para 1/2 representa uma redução de três diluições (passando por 1/8 e 1/4 até chegar a 1/2), o que preenche o critério de sucesso terapêutico.\n\nAlternativa c: Incorreta. O aumento das titulações após o tratamento indica uma possível falha terapêutica ou, o que é mais frequente na prática clínica, uma reinfecção. Para considerar uma nova infecção ou falha, utiliza-se o critério de aumento de dois títulos (ex.: de 1/4 para 1/16).\n\nAlternativa d: Incorreta. O sucesso do tratamento não é definido por um valor absoluto (como 1/2), mas sim pela queda proporcional em relação ao título inicial do diagnóstico. Um paciente que inicia o tratamento com VDRL 1/1 e permanece 1/2 após o tratamento, na verdade, apresentou um aumento do título, e não a cura. Além disso, muitos pacientes podem estabilizar seus títulos em valores baixos (como 1/1, 1/2 ou 1/4) permanentemente, mesmo estando curados.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.440Z"
+  },
+  {
+    "id": "AJUDA_b8df5ba9-80d6-4d36-acc0-eb1e885b5e33",
+    "originalId": "b8df5ba9-80d6-4d36-acc0-eb1e885b5e33",
+    "statement": "Mulher, 30 anos de idade, faz acompanhamento por lúpus eritematoso sistêmico com síndrome do anticorpo antifosfolípide. Teve atividade articular, cutânea e renal, além de duas tromboses venosas profundas. Faz uso atual de varfarina, prednisona, hidroxicloroquina e azatioprina. Está em remissão e deseja iniciar contracepção. Assinale a alternativa que apresenta a opção mais segura.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dispositivo intrauterino de cobre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dispositivo intrauterino com levonorgestrel.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pílula com etinilestradiol e levonorgestrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Contraceptivo transdérmico combinado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A escolha contraceptiva nesta paciente deve levar em consideracao dois pontos criticos: o diagnostico de Sindrome do Anticorpo Antifosfolipide (SAF) com historico de tromboses venosas e o uso continuo de anticoagulante oral (varfarina). De acordo com os Criterios de Elegibilidade da Organizacao Mundial da Saude (OMS), metodos que contem estrogenio sao contraindicados de forma absoluta (Categoria 4) pelo altissimo risco de novos eventos tromboembolicos. Alem disso, em pacientes anticoaguladas, devem ser priorizados metodos que controlem ou reduzam o fluxo menstrual para prevenir menorragia e anemia.\n\nAnalise das alternativas:\n\nAlternativa A - Incorreta. Embora o DIU de cobre nao contenha hormonios e seja seguro do ponto de vista vascular, ele frequentemente aumenta a intensidade do fluxo menstrual e as colicas. Em uma paciente sob anticoagulacao plena com varfarina, isso acarreta um risco elevado de sangramento uterino excessivo e anemia, tornando-o menos seguro do que as opcoes com progestagenio local.\n\nAlternativa B - Correta. O DIU com levonorgestrel e a melhor opcao. E um metodo livre de estrogenio, seguro em pacientes com SAF (isento de aumento relevante no risco trombotico), e atua localmente promovendo atrofia endometrial. Isso reduz significativamente o fluxo menstrual, funcionando como um fator protetor contra hemorragias em pacientes que fazem uso de anticoagulantes.\n\nAlternativa C - Incorreta. A pilula combinada contem etinilestradiol (estrogenio), substancia que eleva os fatores de coagulacao hepaticos. O seu uso e classificado como Categoria 4 da OMS (risco inaceitavel) para mulheres com anticorpos antifosfolipides ou historico de trombose venosa profunda.\n\nAlternativa D - Incorreta. O adesivo transdermico e uma formulacao hormonal combinada (estrogenio e progestagenio). A via de absorcao transdermica nao anula os efeitos pro-tromboticos do estrogenio, sendo igualmente contraindicada nesta paciente.\n\nGabarito: Letra B.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:44.440Z"
+  }
+]

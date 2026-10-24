@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_19c8530f-3f92-4f3a-8af6-57f4e6d9d5f7",
+    "originalId": "19c8530f-3f92-4f3a-8af6-57f4e6d9d5f7",
+    "statement": "O aleitamento materno é liberado sem restrições para mães que",
+    "options": [
+      {
+        "id": "A",
+        "text": "apresentam infecção por HTLV I/II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "apresentam tuberculose pulmonar ativa não tratada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estão em uso de varfarina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "apresentam infecção por HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "estão em tratamento com quimioterapia antineoplásica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O tema central desta questão são as contraindicações ao aleitamento materno, um assunto recorrente em provas de residência que exige o conhecimento de quais condições impedem a amamentação de forma temporária ou definitiva.\n\nLetra A - Incorreta. A infecção pelos vírus HTLV I e II (vírus T-linfotrópico humano) é uma contraindicação absoluta e definitiva à amamentação no Brasil. O vírus é transmitido através do leite materno e está associado ao desenvolvimento de doenças graves a longo prazo, como a leucemia/linfoma de células T do adulto e a paraparesia espástica tropical.\n\nLetra B - Incorreta. A tuberculose pulmonar ativa e não tratada é uma contraindicação temporária ao contato direto. A transmissão ocorre por via aérea (gotículas) e não pelo leite. No entanto, não se pode dizer que o aleitamento é \"sem restrições\", pois a mãe deve ser afastada do bebê ou usar máscara cirúrgica até que tenha completado pelo menos 15 dias de tratamento e apresente melhora clínica (tornando-se não bacilífera). O recém-nascido também deve receber quimioprofilaxia.\n\nLetra C - Correta. A varfarina é um anticoagulante oral considerado seguro e compatível com a amamentação. A molécula possui alta ligação às proteínas plasmáticas da mãe, o que impede sua passagem para o leite materno em quantidades clinicamente significativas. Estudos demonstram que não há alteração no tempo de protrombina ou risco de sangramento para o lactente cuja mãe utiliza varfarina.\n\nLetra D - Incorreta. A infecção pelo HIV é uma contraindicação absoluta e definitiva para a amamentação no Brasil. O risco de transmissão vertical do vírus pelo leite materno é alto, sendo obrigatória a substituição do leite materno por fórmula infantil e a inibição da lactação com cabergolina logo após o parto.\n\nLetra E - Incorreta. O tratamento com quimioterapia antineoplásica contraindica o aleitamento materno de forma absoluta. Os fármacos quimioterápicos são excretados no leite e possuem alto potencial de toxicidade, podendo causar supressão da medula óssea, citotoxicidade e outros efeitos adversos graves no desenvolvimento da criança.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  },
+  {
+    "id": "AJUDA_19ca7da2-49ee-4967-8059-0c3a1a9bb376",
+    "originalId": "19ca7da2-49ee-4967-8059-0c3a1a9bb376",
+    "statement": "Mulher de 75 anos apresenta há alguns meses dor epigástrica, plenitude pós-prandial e náuseas. Endoscopia digestiva alta mostra úlcera gástrica de 2,5 cm em pequena curvatura, bordas elevadas e friáveis. Biópsia revelou adenocarcinoma gástrico. Estadiamento inicial com TC mostra tumor restrito à parede gástrica, sem linfonodomegalias ou metástases.\n\nEm relação ao tratamento mais indicado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastrectomia parcial com linfadenectomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Quimioterapia exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radioterapia adjuvante isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ressecção endoscópica da mucosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gastrectomia total sem linfadenectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente apresenta um quadro clínico e endoscópico clássico de adenocarcinoma gástrico. O estadiamento inicial por tomografia (TC) sugere uma doença localizada (restrita à parede, sem linfonodomegalias ou metástases), o que direciona o manejo para o tratamento cirúrgico com intenção curativa.\n\nAnálise das alternativas:\n\na) CORRETA. O tratamento padrão para o adenocarcinoma gástrico ressecável é a cirurgia. A escolha entre gastrectomia total ou parcial (subtotal) depende da localização do tumor. Como a lesão está na pequena curvatura (geralmente no corpo ou antro), a gastrectomia parcial é técnica e oncologicamente adequada, desde que se obtenham margens livres (geralmente 5 a 6 cm). A linfadenectomia (preferencialmente a técnica D2) é obrigatória em cirurgias com intenção curativa para garantir a retirada dos linfonodos regionais e o estadiamento patológico correto.\n\nb) INCORRETA. A quimioterapia exclusiva é indicada para pacientes com doença metastática (paliação) ou para aqueles sem condições clínicas de suportar uma cirurgia. Para uma paciente com tumor localizado e sem contraindicações formais, a cirurgia é o pilar do tratamento.\n\nc) INCORRETA. A radioterapia não é utilizada como modalidade isolada de tratamento para o câncer gástrico. Ela pode ser utilizada como terapia adjuvante (após a cirurgia) em casos específicos para reduzir o risco de recidiva local, mas nunca substitui a ressecção cirúrgica do tumor primário.\n\nd) INCORRETA. A ressecção endoscópica da mucosa (REM) ou a dissecção endoscópica da submucosa (ESD) são reservadas para o câncer gástrico precoce (restrito à mucosa) que preenche critérios rigorosos: lesões pequenas (geralmente menores que 2 cm), não ulceradas e com histologia bem diferenciada. A lesão descrita possui 2,5 cm e apresenta bordas elevadas e friáveis (sugerindo ulceração/invasão), o que a exclui dos critérios de segurança para tratamento exclusivamente endoscópico.\n\ne) INCORRETA. A gastrectomia total é indicada para tumores localizados no terço superior (proximal) do estômago ou em casos de tumores do tipo difuso de Lauren que acometem grande parte do órgão. Para tumores distais ou de corpo médio, a gastrectomia parcial oferece a mesma sobrevida com melhor qualidade de vida pós-operatória. Além disso, a alternativa está incorreta ao propor a ausência de linfadenectomia, que é essencial no tratamento oncológico.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  },
+  {
+    "id": "AJUDA_19d0af57-bfb7-4873-86e6-5ec6d722bd86",
+    "originalId": "19d0af57-bfb7-4873-86e6-5ec6d722bd86",
+    "statement": "No que se refere aos estudos epidemiológicos, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O ensaio clínico randomizado é aquele na qual os indivíduos são alocados aleatoriamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O ecológico tem como unidade de análise indivíduos e o ambiente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O de coorte é aquele que um grupo de pessoas é identificado e a informação pertinente sobre a exposição de interesse é coletada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O de caso-controle é uma investigação que parte do efeito para elucidar as causas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O estudo transversal é aquele na qual relação exposição-doença é examinada, em uma dada população, em um particular momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento fundamental sobre os delineamentos de pesquisa em epidemiologia, focando principalmente na unidade de observação e na direção temporal dos estudos. O objetivo é identificar a alternativa INCORRETA.\n\nAnálise das alternativas:\n\na) CORRETA: O ensaio clínico randomizado é o padrão-ouro dos estudos experimentais. A randomização (alocação aleatória) é o processo que garante que cada participante tenha a mesma chance de pertencer ao grupo que recebe a intervenção ou ao grupo controle. Isso serve para distribuir de forma equilibrada as variáveis de confusão entre os grupos, permitindo que a diferença final nos resultados seja atribuída à intervenção testada.\n\nb) INCORRETA (Gabarito): O erro está na unidade de análise. No estudo ecológico, a unidade de análise NÃO é o indivíduo, mas sim o grupo, o aglomerado ou a população (por exemplo: comparar a incidência de câncer entre diferentes países ou a mortalidade infantil entre diferentes cidades). Como não temos dados individuais, não podemos afirmar que a exposição e a doença ocorrem na mesma pessoa, o que caracteriza a Falácia Ecológica.\n\nc) CORRETA: O estudo de coorte é do tipo observacional e prospectivo. Ele parte da causa (exposição) em direção ao efeito (doença). Seleciona-se um grupo de pessoas inicialmente sadias, que são classificadas em expostas ou não expostas a um fator, e acompanhadas ao longo do tempo para observar quem desenvolve o desfecho de interesse.\n\nd) CORRETA: O estudo de caso-controle é observacional e retrospectivo. Ele parte do efeito (pessoas já doentes - casos) e olha para o passado em busca das possíveis causas (exposição), comparando-as com um grupo de pessoas saudáveis (controles). É um método eficiente e rápido para estudar doenças raras ou com longo período de latência.\n\ne) CORRETA: O estudo transversal (ou seccional) funciona como uma fotografia instantânea. A coleta de dados sobre a exposição e sobre a doença ocorre em um único momento no tempo. É excelente para medir a prevalência e avaliar necessidades de saúde de uma população, mas é limitado para estabelecer relações de causa e efeito, pois muitas vezes não se sabe se a exposição precedeu a doença.\n\nResumo Didático:\n1. Analisam Indivíduos: Coorte, Caso-controle, Transversal e Ensaio Clínico.\n2. Analisam Grupos/Populações: Ecológico.\n3. Direção Causa -> Efeito: Coorte e Ensaio Clínico.\n4. Direção Efeito -> Causa: Caso-controle.\n5. Simultâneo (Foto): Transversal.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  },
+  {
+    "id": "AJUDA_19d10a0c-66db-45bb-8446-32aa02f07b74",
+    "originalId": "19d10a0c-66db-45bb-8446-32aa02f07b74",
+    "statement": "Paciente com sangramento uterino anormal, foi ao ginecologista com resultado de ultrassonografia transvaginal com diagnostico de mioma FIGO 0 (zero) de 18 mm. Qual o melhor método para a ressecção da lesão?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Robótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Histeroscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A resolução desta questão baseia-se no conhecimento da classificação da FIGO (Federação Internacional de Ginecologia e Obstetrícia) para os miomas uterinos e na indicação cirúrgica correspondente à localização da patologia.\n\nO mioma classificado como FIGO 0 é um mioma submucoso totalmente intracavitário, ou seja, ele está localizado inteiramente dentro da cavidade uterina, sendo geralmente pediculado. Por estar dentro da cavidade e ser a causa do sangramento uterino anormal, o objetivo é retirá-lo da forma menos invasiva possível, preservando a anatomia do órgão.\n\nAnálise das alternativas:\n\na) Robótica: A cirurgia robótica é uma modalidade de laparoscopia avançada. Embora seja excelente para miomas intramurais (FIGO 3 e 4) ou subserosos (FIGO 5, 6 e 7) volumosos e complexos, ela exige a abertura da parede uterina (miométrio) para acessar a cavidade. Para um mioma FIGO 0 de 18 mm, seria uma técnica excessivamente invasiva e desnecessária.\n\nb) Laparotomia: É a cirurgia aberta convencional. Assim como a robótica, exigiria uma incisão abdominal e uma histerotomia (corte no útero) para alcançar um mioma que está solto dentro da cavidade. Apresenta maior tempo de recuperação, maior dor pós-operatória e maiores riscos de aderências, sendo contraindicada para este caso específico.\n\nc) Laparoscopia: É a via de escolha para miomas subserosos e alguns intramurais. No entanto, para tratar um mioma FIGO 0 por via laparoscópica, o cirurgião teria que atravessar toda a musculatura do útero para chegar à cavidade. Isso aumenta o risco de sangramento e enfraquece a parede uterina sem necessidade.\n\nd) Histeroscopia: Esta é a alternativa correta e o padrão-ouro para o tratamento de miomas submucosos (FIGO 0, 1 e 2). O procedimento é realizado através da introdução de uma óptica pelo canal cervical (orifício natural), permitindo a visualização direta da cavidade uterina e a ressecção do mioma (miomectomia histeroscópica) sem realizar cortes abdominais. Como o mioma tem 18 mm (1,8 cm) e é totalmente intracavitário (FIGO 0), ele é o candidato ideal para a técnica de ressecção mecânica ou com uso de energia (ressectoscópio).\n\nResumo: Para miomas submucosos FIGO 0, 1 e 2, a via preferencial de abordagem é sempre a Histeroscopia.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  },
+  {
+    "id": "AJUDA_19d5d360-01b0-40a1-a239-831fcc878ce2",
+    "originalId": "19d5d360-01b0-40a1-a239-831fcc878ce2",
+    "statement": "Na avaliação de um teste diagnóstico, a fórmula: (1 – sensibilidade) / (especificidade) se relaciona ao cálculo da",
+    "options": [
+      {
+        "id": "A",
+        "text": "Razão de Verossimilhança Negativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Razão de Verossimilhança Positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acurácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Probabilidade pré-teste.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para entender essa questão, precisamos revisar os conceitos de epidemiologia clínica aplicados aos testes diagnósticos, especificamente as Razões de Verossimilhança (ou Likelihood Ratios).\n\nAs Razões de Verossimilhança (RV) indicam quanto um resultado de teste aumenta ou diminui a probabilidade pós-teste de uma doença.\n\nAlternativa A (Correta): Razão de Verossimilhança Negativa (RV-).\nA RV- expressa a probabilidade de um indivíduo doente ter um teste negativo dividida pela probabilidade de um indivíduo saudável ter um teste negativo. Matematicamente, o numerador é o complementar da Sensibilidade (1 - Sensibilidade, que representa os falsos-negativos) e o denominador é a própria Especificidade (os verdadeiros-negativos). Portanto, a fórmula (1 - Sensibilidade) / Especificidade define exatamente a RV-. Quanto menor esse valor (próximo de zero), melhor o teste para excluir uma doença quando o resultado vem negativo.\n\nAlternativa B (Incorreta): Razão de Verossimilhança Positiva (RV+).\nA RV+ indica quanto a probabilidade da doença aumenta após um teste positivo. Sua fórmula é o oposto lógico da RV-: Sensibilidade / (1 - Especificidade). Ou seja, é a razão entre a taxa de verdadeiros-positivos e a taxa de falsos-positivos.\n\nAlternativa C (Incorreta): Acurácia.\nA acurácia representa a proporção total de resultados corretos (verdadeiros-positivos somados aos verdadeiros-negativos) em relação ao total de testes realizados. A fórmula é: (VP + VN) / Total. Ela reflete a performance global do teste, mas não se relaciona com a fórmula apresentada no enunciado.\n\nAlternativa D (Incorreta): Probabilidade pré-teste.\nA probabilidade pré-teste é a chance de o paciente ter a doença antes mesmo da realização do exame, baseando-se geralmente na prevalência da doença naquela população ou no quadro clínico apresentado. Não é calculada por meio de fórmulas de Sensibilidade ou Especificidade do teste em si, mas sim um dado epidemiológico ou clínico prévio.\n\nEm resumo:\nRV Positiva = Sensibilidade / (1 - Especificidade)\nRV Negativa = (1 - Sensibilidade) / Especificidade",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  },
+  {
+    "id": "AJUDA_19dbdd95-73d6-44c8-8d83-e9f0aff0c991",
+    "originalId": "19dbdd95-73d6-44c8-8d83-e9f0aff0c991",
+    "statement": "Qual dos seguintes marcadores laboratoriais é mais específico para o diagnóstico de Lúpus Eritematoso Sistêmico (LES) em comparação com Artrite Reumatoide (AR)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anticorpo anti-DNA de cadeia dupla (anti-dsDNA).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fator reumatoide (FR).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anticorpos anti-núcleo (ANA).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anticorpos anticitrulinados (ACPA).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Proteína C-reativa (PCR).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O diagnóstico diferencial entre Lúpus Eritematoso Sistêmico (LES) e Artrite Reumatoide (AR) baseia-se em critérios clínicos e laboratoriais específicos. Abaixo, analisamos cada alternativa para identificar o marcador mais específico para o LES:\n\na) Correta. O anticorpo anti-DNA de cadeia dupla (anti-dsDNA) é um dos marcadores mais específicos para o LES, apresentando especificidade superior a 95%. Ele faz parte dos critérios classificatórios da doença e sua presença raramente é observada na Artrite Reumatoide ou em outras patologias autoimunes. Além disso, seus títulos costumam flutuar de acordo com a atividade da doença, especialmente na nefrite lúpica.\n\nb) Incorreta. O Fator Reumatoide (FR) é um anticorpo clássico da Artrite Reumatoide (presente em cerca de 70-80% dos casos), mas sua especificidade é baixa. O FR pode estar presente em aproximadamente 25-30% dos pacientes com LES, além de aparecer em diversas outras condições inflamatórias, infecciosas (como hepatites e endocardite) e até em indivíduos idosos saudáveis.\n\nc) Incorreta. O anticorpo antinúcleo (ANA ou FAN) é o teste de triagem inicial para o LES devido à sua altíssima sensibilidade (superior a 95%). No entanto, sua especificidade é muito baixa. O ANA pode ser positivo em cerca de 30-50% dos pacientes com Artrite Reumatoide, em outras colagenoses, em infecções e em uma parcela significativa da população geral sem doença autoimune.\n\nd) Incorreta. Os anticorpos anticitrulinados (ACPA), como o anti-CCP, são altamente específicos para o diagnóstico da Artrite Reumatoide (especificidade em torno de 95-98%). Portanto, este marcador é utilizado para confirmar a AR e não o LES. Embora possa ocorrer positividade em casos de sobreposição (Rhupus), ele define a característica reumatoide do quadro.\n\ne) Incorreta. A Proteína C-reativa (PCR) é um marcador de fase aguda inespecífico que indica inflamação sistêmica. Curiosamente, o LES em atividade muitas vezes cursa com PCR normal ou discretamente elevada (exceto em casos de serosite ou infecção associada), enquanto a AR costuma apresentar elevações mais consistentes. De qualquer forma, a PCR não possui especificidade para diagnosticar nenhuma doença autoimune isoladamente.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Artrite Reumatoide",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  },
+  {
+    "id": "AJUDA_19e21e5a-0a3e-49e8-bcfd-bc8a76cc6641",
+    "originalId": "19e21e5a-0a3e-49e8-bcfd-bc8a76cc6641",
+    "statement": "Mulher, 63 anos, apresenta tumor em ambos os ovários, ausência de doença na superfície ovariana ou tubária ou no líquido ou lavado peritoneais. Qual o estadiamento do câncer de ovário da paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IA",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IB",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "IC1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "IC2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "IC3",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O estadiamento do câncer de ovário é baseado nos critérios da FIGO (Federação Internacional de Ginecologia e Obstetrícia). O Estádio I é aquele em que o tumor está restrito aos ovários ou às tubas uterinas.\n\nAlternativa a) Incorreta. O Estádio IA é definido quando o tumor está limitado a apenas um ovário ou uma tuba uterina, com a cápsula íntegra, sem presença de células neoplásicas na superfície externa e com citologia peritoneal (lavado ou ascite) negativa. A paciente do caso apresenta acometimento bilateral.\n\nAlternativa b) Correta. O Estádio IB caracteriza-se pelo crescimento tumoral que envolve ambos os ovários ou ambas as tubas uterinas, mas que mantém as cápsulas íntegras, sem evidência de tumor nas superfícies externas e com resultado negativo para células malignas no líquido ascítico ou nos lavados peritoneais. Essas são exatamente as características descritas no enunciado.\n\nAlternativa c) Incorreta. O Estádio IC1 refere-se ao extravasamento cirúrgico, ou seja, quando ocorre a ruptura da cápsula do tumor durante a manipulação intraoperatória, o que altera o prognóstico e o estadiamento, independentemente de ser uni- ou bilateral.\n\nAlternativa d) Incorreta. O Estádio IC2 ocorre quando a cápsula ovariana já estava rompida antes da cirurgia ou quando existe a presença de células tumorais na superfície externa do ovário ou da tuba. O enunciado afirma explicitamente que não há doença na superfície ovariana ou tubária.\n\nAlternativa e) Incorreta. O Estádio IC3 é determinado pela presença de células malignas no líquido ascítico ou no lavado peritoneal. No caso clínico apresentado, o lavado e o líquido peritoneais estão livres de doença.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  },
+  {
+    "id": "AJUDA_19e2abd5-1b32-4172-99b0-96fddbc73c30",
+    "originalId": "19e2abd5-1b32-4172-99b0-96fddbc73c30",
+    "statement": "O divertículo de Meckel é a anomalia congênita mais encontrada no intestino delgado. Sobre ele, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "é encontrado na borda mesentérica do íleo, de 45 a 60 cm proximal à válvula ileocecal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o tecido heterotópico mais comum encontrado dentro do divertículo é o gástrico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o tratamento de um divertículo de Meckel sintomático pode ser conservador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a apresentação clínica mais comum é o quadro de obstrução intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o diagnóstico pode ser feito por Endoscopia Digestiva Alta (EDA).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O divertículo de Meckel é uma malformação decorrente do fechamento incompleto do ducto onfalomesentérico (ou ducto vitelino). Para compreender a questão, vamos analisar cada alternativa:\n\nAlternativa A (Incorreta): O divertículo de Meckel localiza-se na borda ANTIMESENTÉRICA do íleo distal. Embora a distância mencionada (cerca de 45 a 60 cm da válvula ileocecal) esteja correta e faça parte da famosa \"Regra dos 2\" (dois pés de distância da válvula), o erro reside na localização em relação ao mesentério. Por ser um remanescente embrionário, ele se projeta na borda oposta à chegada dos vasos sanguíneos (antimesentérica).\n\nAlternativa B (Correta): Esta é a resposta correta. O divertículo de Meckel frequentemente contém tecido heterotópico, ou seja, tecido que não deveria estar originalmente naquela localização. O tecido gástrico é o mais comum (encontrado em cerca de 50% a 60% dos casos), seguido pelo tecido pancreático. A presença de mucosa gástrica ectópica é clinicamente importante, pois ela secreta ácido clorídrico, o que pode causar ulceração da mucosa ileal adjacente e consequente sangramento.\n\nAlternativa C (Incorreta): Quando o divertículo de Meckel é sintomático (causando hemorragia, obstrução ou inflamação), o tratamento de escolha é cirúrgico. A conduta pode ser a diverticulectomia (remoção apenas do divertículo) ou a ressecção de um segmento do íleo que contenha a base do divertículo e as possíveis úlceras adjacentes. Não se recomenda tratamento conservador para casos sintomáticos devido ao risco de complicações graves.\n\nAlternativa D (Incorreta): A apresentação clínica mais comum, especialmente na população pediátrica, é a hemorragia digestiva baixa indolor (geralmente manifestada como hematoquezia). Embora a obstrução intestinal (por intussuscepção ou volvo) seja uma causa importante de sintomas, principalmente em adultos, o sangramento decorrente da mucosa gástrica heterotópica é a forma clássica e mais frequente de manifestação sintomática global descrita na literatura médica e cobrada em provas.\n\nAlternativa E (Incorreta): O diagnóstico não pode ser feito por endoscopia digestiva alta (EDA), pois este exame alcança apenas até a segunda ou terceira porção do duodeno. O divertículo de Meckel está localizado no íleo distal, muito além do alcance do endoscópio convencional. O exame padrão-ouro para diagnóstico em crianças é a cintilografia com tecnécio-99m (conhecida como mapeamento de Meckel), que identifica a presença de mucosa gástrica ectópica. Em adultos, o diagnóstico costuma ser mais difícil, podendo exigir tomografia computadorizada, enteroscopia ou mesmo ser um achado incidental em laparoscopia.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  },
+  {
+    "id": "AJUDA_19e5ee6d-1596-4094-946a-28dff9603415",
+    "originalId": "19e5ee6d-1596-4094-946a-28dff9603415",
+    "statement": "Um hospital público iniciou auditoria para avaliar a proporção de reinternações em até 30 dias após alta por insuficiência cardíaca. Esse indicador mede principalmente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eficiência do sistema de regulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Efetividade do cuidado prestado e continuidade assistencial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Taxa de letalidade hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acesso à atenção primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cobertura hospitalar por região.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A auditoria da taxa de reinternação em até 30 dias após a alta por insuficiência cardíaca (IC) é um indicador clássico de qualidade hospitalar. Esse parâmetro é amplamente utilizado para monitorar o desempenho dos serviços de saúde e a segurança do paciente durante a transição de cuidados.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A eficiência do sistema de regulação está relacionada à agilidade e adequação na alocação do paciente no recurso assistencial necessário (como a rapidez para conseguir uma vaga de UTI ou um exame especializado). Embora a regulação faça parte do fluxo, a reinternação precoce foca no que aconteceu durante e logo após a internação, e não na triagem inicial.\n\nAlternativa b) Correta. A reinternação em até 30 dias é um indicador direto da qualidade do tratamento recebido (efetividade) e da organização da alta. Se o paciente retorna em pouco tempo, entende-se que ele pode ter recebido alta sem estar clinicamente estável ou que o plano terapêutico para casa foi inadequado, faltando uma conexão eficiente com o acompanhamento ambulatorial (continuidade assistencial).\n\nAlternativa c) Incorreta. A taxa de letalidade hospitalar mede a proporção de óbitos ocorridos dentro do hospital entre os pacientes com determinada doença. O indicador de reinternação monitora o paciente que sobreviveu à alta, mas que precisou retornar por descompensação do quadro clínico.\n\nAlternativa d) Incorreta. O acesso à atenção primária é fundamental para o manejo crônico da insuficiência cardíaca e pode evitar internações a longo prazo. No entanto, o indicador específico de 30 dias após a alta é considerado um marcador de desempenho do hospital e da transição de cuidados (alta hospitalar articulada), sendo mais sensível ao processo que ocorreu no ambiente hospitalar.\n\nAlternativa e) Incorreta. A cobertura hospitalar refere-se à disponibilidade de infraestrutura, leitos e serviços de saúde em uma determinada área geográfica. É um indicador de oferta e capacidade instalada do sistema, não de qualidade clínica ou desfecho assistencial individual.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  },
+  {
+    "id": "AJUDA_19e7841f-e963-489e-bf0f-6e3fc48da2aa",
+    "originalId": "19e7841f-e963-489e-bf0f-6e3fc48da2aa",
+    "statement": "Homem, 65 anos de idade, tabagista, relata dor em panturrilhas após caminhar por 100 metros, aliviada com o repouso. O índice tornozelo-braquial é de 0,6 no membro inferior direito. Não há sinais de infecção ou necrose. Qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento clínico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Revascularização endovascular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amputação primária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Revascularização convencional",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito é clássico de Doença Arterial Periférica (DAP) manifestando-se como claudicação intermitente. O paciente apresenta dor muscular desencadeada pelo exercício (caminhada de 100 metros) e aliviada pelo repouso, o que caracteriza o estágio II da classificação de Fontaine ou categorias 1 a 3 de Rutherford. O Índice Tornozelo-Braquial (ITB) de 0,6 corrobora o diagnóstico de obstrução arterial (valores abaixo de 0,9 são diagnósticos).\n\nAbaixo, a análise detalhada de cada alternativa:\n\na) Tratamento clínico: Esta é a alternativa correta. Para pacientes com claudicação intermitente estável, sem dor de repouso ou lesões tróficas (isquemia crítica), a conduta inicial deve ser sempre o tratamento clínico conservador. Este baseia-se em três pilares: 1) Controle rigoroso dos fatores de risco, especialmente a cessação do tabagismo e controle da dislipidemia (uso de estatinas); 2) Antiagregação plaquetária (Aspirina ou Clopidogrel) para redução de eventos cardiovasculares; e 3) Programa de exercícios físicos supervisionados, que é a medida mais eficaz para aumentar a distância de caminhada. O uso de medicamentos como o Cilostazol também pode ser considerado nesta fase.\n\nb) Revascularização endovascular: Incorreta. A intervenção endovascular (como a angioplastia) está indicada na claudicação intermitente apenas se houver falha documentada do tratamento clínico inicial ou se os sintomas forem incapacitantes para a atividade laboral/cotidiana do paciente. Ela também é indicada em casos de isquemia crítica, o que não é o caso deste paciente.\n\nc) Amputação primária: Incorreta. A amputação é considerada apenas em casos de isquemia irreversível, necrose extensa, infecção grave sem controle ou dor intratável em membros sem possibilidade de revascularização. O paciente em questão tem um membro viável e sintomas apenas ao esforço.\n\nd) Revascularização convencional: Incorreta. Assim como a via endovascular, a revascularização convencional (cirurgia de bypass ou derivação) não é a conduta de primeira linha para claudicação intermitente leve a moderada. Reservamos as intervenções cirúrgicas para casos refratários ao tratamento clínico ou quando há ameaça iminente de perda do membro (isquemia crítica com dor de repouso ou lesão tecidual).",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:03.356Z"
+  }
+]

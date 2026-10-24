@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_5b12f474-435c-481d-986c-448975917b22",
+    "originalId": "5b12f474-435c-481d-986c-448975917b22",
+    "statement": "O Ministério da Saúde orienta o rastreamento de câncer de colo de útero em mulheres de 25 a 64 anos. Os dois primeiros exames devem ser realizados com intervalo anual e, se ambos os resultados forem negativos, os próximos devem ser realizados a cada",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "4 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "6 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, estabelecidas pelo Ministério da Saúde e pelo Instituto Nacional de Câncer (INCA).\n\nDe acordo com o protocolo oficial, o rastreamento é indicado para mulheres (e demais pessoas com colo do útero) na faixa etária de 25 a 64 anos que já iniciaram atividade sexual. A rotina recomendada consiste na realização de dois exames citopatológicos (Papanicolau) com intervalo anual. Se ambos apresentarem resultados normais, as próximas coletas devem ocorrer a cada 3 anos. O objetivo dessa estratégia é garantir a segurança da paciente, uma vez que a progressão de uma lesão precursora para o câncer invasivo é geralmente lenta, permitindo a detecção precoce mesmo com intervalos maiores após a confirmação de normalidade inicial.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O intervalo de 2 anos não é o preconizado pelo Ministério da Saúde para o rastreamento citopatológico. Embora seja um intervalo comum para outros tipos de rastreamento, como a mamografia em certas faixas etárias, não se aplica a este caso.\n\nAlternativa b) Incorreta. O intervalo de 5 anos é frequentemente associado ao rastreamento realizado por meio de testes de DNA para HPV (captura híbrida ou PCR), que é uma tecnologia em processo de implementação no SUS. Contudo, para o exame citopatológico convencional solicitado na questão, o intervalo correto é de 3 anos.\n\nAlternativa c) Correta. Esta alternativa está em total conformidade com as diretrizes do INCA e do Ministério da Saúde. Após dois resultados anuais negativos, a paciente entra na rotina de rastreio trienal (a cada 3 anos).\n\nAlternativa d) Incorreta. Não existe previsão nas normas técnicas brasileiras para um intervalo de 4 anos no rastreamento do câncer de colo de útero.\n\nAlternativa e) Incorreta. O intervalo de 6 anos é considerado excessivamente longo para o rastreamento baseado apenas em citologia, o que poderia comprometer a capacidade de detectar lesões de alto grau antes que evoluam para câncer.\n\nGabarito: Letra (c).",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.317Z"
+  },
+  {
+    "id": "AJUDA_5b19d9c4-8134-4fcf-b5f8-095673e19c0a",
+    "originalId": "5b19d9c4-8134-4fcf-b5f8-095673e19c0a",
+    "statement": "Um pediatra atende uma criança de 2 anos com diagnóstico de diarreia aguda aquosa, classificada como Plano A. Além da terapia de reidratação oral e manutenção da dieta, o médico avalia o uso de terapias coadjuvantes. Determine a conduta correta em relação ao uso de antieméticos e probióticos:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os antieméticos, como a Ondansetrona, não são recomendados pela OMS, mas a ESPGHAN considera seu uso para reduzir a frequência de vômitos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A OMS e o Ministério da Saúde (MS) do Brasil recomendam formalmente o uso de probióticos, como o Lactobacillus GG, para reduzir as perdas diarreicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A Loperamida é contraindicada, mas a Racecadotrila pode ser usada em menores de 3 meses para diminuir a motilidade intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de antibióticos está indicado em todos os casos de diarreia aquosa para diminuir a duração do quadro, assim como os probióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A ESPGHAN e a diretriz Ibero-Latinoamericana não recomendam probióticos, pois não há demonstração de que eles diminuam as perdas diarreicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo da diarreia aguda na infância, focando nas terapias adjuvantes conforme as principais diretrizes nacionais e internacionais. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Correta. A Organização Mundial da Saúde (OMS) e o Ministério da Saúde do Brasil historicamente não recomendam o uso de antieméticos no manejo da diarreia aguda devido ao risco de efeitos colaterais (especialmente com a metoclopramida e a clorpromazina) e por priorizarem a reidratação oral. No entanto, sociedades de especialistas, como a ESPGHAN (Sociedade Europeia de Gastroenterologia, Hepatologia e Nutrição Pediátrica), admitem o uso criterioso de uma dose única de ondansetrona em casos de vômitos persistentes para facilitar a aceitação da Terapia de Reidratação Oral (TRO) e reduzir a necessidade de internação para hidratação venosa.\n\nAlternativa b) Incorreta. Embora existam evidências de que certos probióticos podem reduzir a duração da diarreia, nem a OMS nem o Ministério da Saúde do Brasil incluem os probióticos em suas recomendações formais de rotina nos protocolos de manejo da diarreia. O foco desses órgãos permanece na oferta de soro de reidratação oral (SRO) e na suplementação de zinco por 10 a 14 dias.\n\nAlternativa c) Incorreta. A loperamida é, de fato, contraindicada em crianças devido ao risco de íleo paralítico e megacólon tóxico. Já a racecadotrila é um medicamento antissecretor (inibidor da encefalinase) e não um depressor da motilidade intestinal. Além disso, seu uso não é recomendado para lactentes com menos de 3 meses de idade por falta de estudos de segurança nessa faixa etária específica.\n\nAlternativa d) Incorreta. O uso de antibióticos é formalmente contraindicado em casos de diarreia aguda aquosa, que na grande maioria das vezes tem etiologia viral (como rotavírus ou norovírus). O uso de antibióticos deve ser restrito a casos específicos, como a suspeita de cólera com desidratação grave ou em casos de diarreia com sangue e muco (disenteria) com comprometimento do estado geral (geralmente por Shigella).\n\nAlternativa e) Incorreta. O erro desta alternativa é afirmar que a ESPGHAN e a diretriz Ibero-Latino-Americana não recomendam os probióticos. Na verdade, ambas as diretrizes reconhecem e recomendam o uso de probióticos específicos com evidência comprovada (como o Lactobacillus rhamnosus GG e o Saccharomyces boulardii) como adjuvantes para reduzir a duração do quadro diarreico em aproximadamente um dia.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.317Z"
+  },
+  {
+    "id": "AJUDA_5b1c09c8-5b90-4e1a-8b86-520e47504025",
+    "originalId": "5b1c09c8-5b90-4e1a-8b86-520e47504025",
+    "statement": "Lactente, do sexo feminino, 3 meses de idade, passou a apresentar sangramento vivo nas fezes 7 dias após a suspensão total do aleitamento materno e substituição por leite de vaca integral, adicionado de cereal infantil à base de arroz e aveia. Nasceu a termo, sem intercorrências no período perinatal. Está em bom estado geral, sem alterações ao exame clínico atual, pesando 5.830 g. Diante da impossibilidade de a paciente retornar ao aleitamento materno exclusivo, a primeira opção terapêutica, neste caso, será a substituição do leite atual por fórmula infantil à base de",
+    "options": [
+      {
+        "id": "A",
+        "text": "proteína de soja.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "proteína extensamente hidrolisada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "aminoácidos livres.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "leite de vaca isento de lactose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado é característico de Proctocolite Alérgica, uma das manifestações mais comuns da Alergia à Proteína do Leite de Vaca (APLV), geralmente do tipo não mediado por IgE. A paciente apresenta sangramento vivo nas fezes (hematoquezia) poucos dias após a introdução do leite de vaca, mas mantém bom estado geral, exame físico normal e ganho de peso adequado, o que é o padrão clássico desta condição.\n\nAlternativa a) Proteína de soja: Incorreta. A fórmula de soja não é recomendada para lactentes com menos de 6 meses de idade com diagnóstico de APLV. Além das preocupações nutricionais e da presença de isoflavonas (fitoestrógenos), existe um risco considerável de sensibilidade cruzada, na qual a criança passa a reagir também à proteína da soja, especialmente em quadros não mediados por IgE, como a proctocolite.\n\nAlternativa b) Proteína extensamente hidrolisada: Correta. Esta é a primeira escolha terapêutica para lactentes com APLV de gravidade leve a moderada quando o aleitamento materno não pode ser mantido. Nessas fórmulas, as proteínas do leite de vaca são submetidas a processos de hidrólise que as quebram em pequenos peptídeos, perdendo a maior parte de seu potencial de causar alergia (sua antigenicidade), sendo toleradas por mais de 90% das crianças com APLV.\n\nAlternativa c) Aminoácidos livres: Incorreta. As fórmulas de aminoácidos (elementares) são a opção mais restritiva e cara. Elas são reservadas para casos graves, como anafilaxia, falha de crescimento importante (FPIES crônico) ou para aqueles pacientes que não apresentaram melhora clínica após o uso da fórmula extensamente hidrolisada. Como a paciente está em bom estado geral e com peso adequado, não há indicação inicial para fórmula de aminoácidos.\n\nAlternativa d) Leite de vaca isento de lactose: Incorreta. Este é um erro comum de confusão entre alergia e intolerância. A APLV é uma reação imunológica às proteínas do leite (como caseína e beta-lactoglobulina). A intolerância à lactose é uma dificuldade digestiva relacionada ao açúcar do leite (lactose). O leite isento de lactose continua contendo todas as proteínas íntegras que causam a alergia, portanto, os sintomas de sangramento persistiriam.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Alergia Alimentar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.317Z"
+  },
+  {
+    "id": "AJUDA_5b26d522-6b06-4653-9bcf-4b4250de1449",
+    "originalId": "5b26d522-6b06-4653-9bcf-4b4250de1449",
+    "statement": "Mulher, 75 anos de idade, apresenta dor torácica e epigástrica aguda há 3 horas, acompanhada de vômitos. Refere histórico de hérnia de hiato. Exame físico: REG, FC 110 bpm, PA 80 x 40 mm Hg, FR 33 irpm, T 37 °C, com fácies de dor. Eletrocardiograma: normal. Radiografia de tórax com massa e nível hidroaéreo no mediastino posterior e inferior. Qual é a conduta mais adequada após estabilização clínica inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ecocardiograma transtorácico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Endoscopia digestiva alta",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Broncoscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ultrassonografia FAST",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma paciente idosa com dor torácica e epigástrica súbita, sinais de choque obstrutivo/distributivo (hipotensão e taquicardia) e um achado radiológico clássico: massa com nível hidroaéreo no mediastino posterior. Diante do histórico de hérnia de hiato, a principal suspeita diagnóstica é de uma hérnia paraesofágica complicada, possivelmente com volvo gástrico agudo. O volvo gástrico ocorre quando o estômago gira sobre seu próprio eixo, podendo levar a estrangulamento, isquemia e perfuração.\n\nAnálise das alternativas:\n\na) Incorreta. O ecocardiograma seria útil se a suspeita fosse de tamponamento cardíaco, disfunção ventricular aguda ou complicações de um infarto. Embora a paciente esteja instável, o eletrocardiograma normal e a imagem radiológica com nível hidroaéreo no mediastino direcionam o diagnóstico para uma etiologia gastrointestinal, e não primariamente cardíaca.\n\nb) Correta. Após a estabilização hemodinâmica inicial (reposição volêmica e descompressão gástrica, se possível), a endoscopia digestiva alta (EDA) é o próximo passo fundamental. A EDA possui papel diagnóstico e, por vezes, terapêutico. Ela permite avaliar a viabilidade da mucosa gástrica (identificando sinais de isquemia ou necrose), confirmar a rotação do estômago e, em alguns casos, realizar a descompressão e distensão do órgão, embora o tratamento definitivo para hérnias volumosas complicadas costume ser cirúrgico.\n\nc) Incorreta. A broncoscopia é utilizada para avaliar a árvore traqueobrônquica. Não há indicação neste caso, pois a patologia está localizada no espaço mediastinal posterior (esôfago/estômago) e não nas vias aéreas.\n\nd) Incorreta. O ultrassom FAST (Focused Assessment with Sonography for Trauma) é uma ferramenta desenhada para a detecção de líquido livre (sangue) na cavidade abdominal e pericárdica em pacientes vítimas de trauma. No cenário de abdome agudo não traumático com achados radiológicos torácicos específicos, o FAST não oferece informações diagnósticas relevantes para a patologia gástrica suspeita.\n\nEm resumo, o quadro de uma grande hérnia de hiato com sinais de sofrimento de alça (vômitos e choque) exige a visualização direta da mucosa via endoscopia para planejar a urgência da intervenção cirúrgica.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.317Z"
+  },
+  {
+    "id": "AJUDA_5b33d497-305d-4407-9965-ef022d7324d0",
+    "originalId": "5b33d497-305d-4407-9965-ef022d7324d0",
+    "statement": "O modelo utilizado para representar a prevalência de uma doença é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Modelo unicausal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Modelo da dupla ecológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Modelo da tríade ecológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Modelo sistêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender qual modelo representa a prevalência de uma doença, é necessário analisar como a epidemiologia evoluiu na explicação dos processos de saúde e enfermidade, saindo de visões simplistas para abordagens mais abrangentes.\n\nAlternativa a: Incorreta. O modelo unicausal, fundamentado na era bacteriológica, defendia que para cada doença havia um único agente causador específico. Esse modelo é insuficiente para explicar a prevalência, pois foca apenas na origem da doença e não leva em conta os múltiplos fatores que mantêm os casos ativos em uma população, como o acesso a tratamento e condições de vida.\n\nAlternativa b: Incorreta. O termo modelo da dupla ecológica não é um conceito padronizado na literatura epidemiológica. Os modelos ecológicos tradicionais são estruturados em tríades ou em teias de causalidade mais complexas.\n\nAlternativa c: Incorreta. O modelo da tríade ecológica explica a ocorrência da doença através da interação entre o agente, o hospedeiro e o meio ambiente. Embora seja útil para entender a etiologia e a transmissão (especialmente de doenças infectocontagiosas), ele foca na causa do evento e não na dinâmica de estoque de casos que caracteriza a prevalência.\n\nAlternativa d: Correta. O modelo sistêmico é o que melhor representa a prevalência. A prevalência é entendida como um estado ou um reservatório em um sistema dinâmico. Nesse modelo, o volume de casos (prevalência) é influenciado por fluxos de entrada, como a incidência de novos casos e a imigração de pessoas doentes, e por fluxos de saída, como a cura, o óbito ou a emigração. A abordagem sistêmica permite visualizar a doença como parte de um conjunto de elementos interconectados (biológicos, sociais e ambientais) que determinam a duração e a persistência do agravo na população.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.317Z"
+  },
+  {
+    "id": "AJUDA_5b3ec27b-0ce8-4ea3-b1fc-808d31a39cd7",
+    "originalId": "5b3ec27b-0ce8-4ea3-b1fc-808d31a39cd7",
+    "statement": "Durante assistência ao parto vaginal, após a descida e exteriorização do polo cefálico ,ocorre a retração da mesma e a exteriorização dos ombros não se realiza configurando a distocia de ombro. qual das manobras referidas abaixo deve ser realizada pelo médico assistente",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manobra de Kristeller",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manobra de McRoberts",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Manobra de Taxe",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manobra de Bracht",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manobra de Deventer-Muller",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A distocia de ombros é uma emergência obstétrica caracterizada pela dificuldade na saída dos ombros após a exteriorização da cabeça fetal, geralmente devido à impactação do ombro anterior na sínfise púbica materna. O sinal clínico clássico descrito no enunciado, em que a cabeça retrai contra o períneo, é conhecido como sinal da tartaruga. O manejo deve ser imediato e seguir uma sequência de manobras de menor para maior invasividade.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a: Incorreta. A Manobra de Kristeller consiste na aplicação de pressão no fundo uterino durante o período expulsivo. Ela é formalmente contraindicada nos casos de distocia de ombros, pois a pressão de cima para baixo agrava a impactação do ombro fetal contra o osso da bacia (sínfise púbica), aumentando drasticamente o risco de ruptura uterina e de lesões graves no plexo braquial do recém-nascido.\n\nAlternativa b: Correta. A Manobra de McRoberts é considerada a manobra de primeira linha no manejo da distocia de ombros devido à sua simplicidade e alta taxa de sucesso (cerca de 40 a 90%). Ela consiste na hiperflexão das coxas da paciente contra o seu próprio abdome. Esse movimento promove a retificação do sacro e a rotação cefálica da sínfise púbica, facilitando a passagem do ombro anterior. Frequentemente é associada à pressão suprapúbica (manobra de Rubin I ou Mazzanti).\n\nAlternativa c: Incorreta. A Manobra de Taxe é um procedimento utilizado na obstetrícia para tratar a inversão uterina aguda. Consiste na pressão manual exercida sobre o fundo uterino invertido para reposicioná-lo em sua localização anatômica correta dentro da cavidade pélvica. Não possui aplicação na distocia de ombros.\n\nAlternativa d: Incorreta. A Manobra de Bracht é utilizada exclusivamente no parto pélvico (quando o bebê nasce sentado). Ela consiste em elevar o corpo do feto em direção ao abdome materno após o desprendimento das escápulas, auxiliando na saída da cabeça derradeira sem exercer tração excessiva.\n\nAlternativa e: Incorreta. A Manobra de Deventer-Müller também é uma técnica aplicada ao parto pélvico. Ela visa facilitar a extração das espáduas (ombros) e dos braços do feto através de movimentos de rotação e tração para baixo e para cima, não sendo a manobra indicada para distocia de ombros em partos de apresentação cefálica.\n\nEm resumo, diante do diagnóstico de distocia de ombros, a primeira atitude deve ser pedir ajuda, suspender o esforço de puxo materno e iniciar a Manobra de McRoberts.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.317Z"
+  },
+  {
+    "id": "AJUDA_5b3ffaa7-aef0-491a-9238-37971662c418",
+    "originalId": "5b3ffaa7-aef0-491a-9238-37971662c418",
+    "statement": "Mulher de 40 anos refere sangramentos menstruais excessivos nos últimos 5 ciclos, que se apresentam com intervalo de 30 dias, duração de 7 dias e perda de coágulos. Nega comorbidades, uso de medicamentos, cirurgias prévias, alergias. Antecedente de 2 partos vaginais, último há 10 anos. Marido vasectomizado. No momento o sangramento é intenso, terceiro dia do ciclo. Ao exame clínico: frequência cardíaca de 90 bpm, PA 120 x 80 mmHg, abdome flácido indolor. Exame especular: colo epitelizado e grande quantidade de sangue na vagina com exteriorização pelo canal cervical. Exame pélvico com útero em anteversoflexão, não doloroso, tamanho normal, regiões anexiais livres.\nNeste momento, a medicação mais adequada para o controle do sangramento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "De-hidroepiandrosterona (DHEA).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diclofenaco sódico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ácido tranexâmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente de 40 anos apresenta um quadro de Sangramento Uterino Anormal (SUA), classificado como Sangramento Menstrual Excessivo. No momento da avaliação, ela se encontra em um episódio agudo e intenso, porém estável hemodinamicamente (frequência cardíaca e pressão arterial normais). O exame físico com útero de tamanho normal e anexos livres afasta, inicialmente, grandes massas ou miomas volumosos, sugerindo causas funcionais ou pequenas alterações endometriais. O objetivo terapêutico imediato é reduzir a perda sanguínea de forma rápida e segura.\n\nAlternativa a) Incorreta. A deidroepiandrosterona (DHEA) é um hormônio esteroide precursor de androgênios e estrogênios. Seu uso na prática médica está voltado para o tratamento de insuficiência adrenal ou, em alguns protocolos experimentais, para melhora da reserva ovariana em reprodução assistida. Não possui mecanismo de ação que justifique seu uso no controle de sangramento uterino agudo.\n\nAlternativa b) Incorreta. O diclofenaco sódico é um anti-inflamatório não esteroidal (AINE). Os AINEs atuam reduzindo a síntese de prostaglandinas no endométrio, o que promove vasoconstrição e reduz a perda sanguínea em cerca de 20% a 30%. Embora sejam úteis para o tratamento do sangramento crônico e da dismenorreia, não são a opção mais eficaz para o controle de um sangramento agudo e intenso como o descrito no caso.\n\nAlternativa c) Incorreta. A progesterona é utilizada no manejo do sangramento uterino para estabilização do endométrio, sendo muito eficaz no tratamento de longo prazo ou em sangramentos por disfunção ovulatória. No entanto, em um cenário de sangramento agudo em que se busca uma resposta imediata para reduzir o volume de perda, os antifibrinolíticos ou o uso de estrogênios em altas doses (quando não há contraindicação) são preferíveis. Além disso, a paciente já possui o marido vasectomizado, o que pode indicar preferência por métodos não hormonais.\n\nAlternativa d) Correta. O ácido tranexâmico é um agente antifibrinolítico que impede a degradação da fibrina ao inibir a ativação do plasminogênio em plasmina. No endométrio de mulheres com sangramento excessivo, há frequentemente um aumento da atividade fibrinolítica. Esta medicação é considerada padrão-ouro para o controle rápido e não hormonal do sangramento menstrual excessivo, conseguindo reduzir o volume de perda sanguínea em até 50% já no primeiro ciclo de uso. Pela estabilidade da paciente e intensidade do quadro, é a conduta medicamentosa mais adequada para o momento.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.317Z"
+  },
+  {
+    "id": "AJUDA_5b4a4ffc-0419-47ff-80be-2caee557b582",
+    "originalId": "5b4a4ffc-0419-47ff-80be-2caee557b582",
+    "statement": "Assinale a assertiva correta sobre lesão pulmonar associada a uso de cigarro eletrônico (EVALI).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Corticosteroide inalatório em dose alta está indicado para tratamento de casos refratários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Náusea, vômito e diarreia não fazem parte das manifestações clínicas descritas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico é clínico, não sendo necessários exames de imagem para investigação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pode evoluir para insuficiência respiratória com necessidade de ventilação mecânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Explicação das alternativas:\n\nAlternativa a) Incorreta. Nos casos de EVALI que apresentam gravidade ou hipoxemia, o tratamento de escolha baseia-se no uso de corticosteroides sistêmicos (via oral ou intravenosa), e não apenas inalatórios. O uso de corticoide sistêmico visa mitigar a resposta inflamatória aguda no parênquima pulmonar.\n\nAlternativa b) Incorreta. Sintomas gastrointestinais são extremamente frequentes na EVALI. Cerca de 80% a 90% dos pacientes relatam náusea, vômito, dor abdominal ou diarreia. Frequentemente, esses sintomas surgem antes mesmo das manifestações respiratórias, podendo confundir o diagnóstico inicial com quadros infecciosos gastrointestinais.\n\nAlternativa c) Incorreta. O diagnóstico não é puramente clínico; a confirmação de infiltrado pulmonar por meio de exames de imagem é um critério essencial. De acordo com as definições do CDC (Centers for Disease Control and Prevention), é necessária a presença de opacidades na radiografia de tórax ou tomografia computadorizada (comumente padrão de vidro fosco bilateral), além do histórico de uso de dispositivos eletrônicos de fumaça nos últimos 90 dias e a exclusão de causas infecciosas ou outros diagnósticos alternativos.\n\nAlternativa d) Correta. A EVALI pode variar de quadros leves a condições críticas de rápida progressão. Muitos pacientes evoluem com insuficiência respiratória grave e síndrome do desconforto respiratório agudo (SDRA), exigindo internação em unidade de terapia intensiva, oxigenoterapia de alto fluxo e, em casos graves, ventilação mecânica invasiva ou suporte por oxigenação por membrana extracorpórea (ECMO).",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.317Z"
+  },
+  {
+    "id": "AJUDA_5b5a623c-a643-4119-b9d7-13696450b2ae",
+    "originalId": "5b5a623c-a643-4119-b9d7-13696450b2ae",
+    "statement": "Você avalia em enfermaria paciente de 56 anos sexo masculino, com quadro febril persistente. Ao avaliar os exames o paciente encontra presença de esplenomegalia no nível da cicatriz umbilical esquerda, sem hepatomegalia. Paciente possui presença de edema assimétrico em membros inferiores. A avaliação das mãos apresenta a seguinte alteração. Exames da paciente Hb: 11,8 GL:1040 neutrófilos 350 Plaq:480000 PCR:190 Qual dos seguintes exames deveria fazer parte da investigação inicial, pensando em sua PRINCIPAL hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ECO transesofágico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anti-CCP.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mielograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ANCA.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A principal hipótese diagnóstica para este paciente é a Síndrome de Felty. Esta condição é caracterizada por uma tríade clássica: Artrite Reumatoide (AR), esplenomegalia e neutropenia.\n\nAnálise dos achados:\nA imagem das mãos é fundamental para a questão. Ela revela deformidades típicas de Artrite Reumatoide crônica e grave, como o desvio ulnar dos dedos e o aumento de volume (sinovite) das articulações metacarpofalangeanas. Os dados laboratoriais confirmam uma neutropenia grave (350 neutrófilos/mm³) e o exame físico descreve a esplenomegalia volumosa. O quadro febril e a PCR elevada são comuns nesses pacientes, seja pela própria atividade inflamatória da doença ou por infecções secundárias à baixa de neutrófilos.\n\nComo a Síndrome de Felty é uma manifestação extra-articular da Artrite Reumatoide (geralmente em casos de longa data e com sorologia positiva), a confirmação da doença de base é o passo inicial na investigação.\n\nAlternativa a: Incorreta. O ecocardiograma transesofágico é o padrão-ouro para o diagnóstico de endocardite infecciosa. Embora a febre e a esplenomegalia possam estar presentes na endocardite, elas não explicam as deformidades articulares crônicas visualizadas na imagem.\n\nAlternativa b: Correta. O Anti-CCP (anticorpo antipeptídeo citrulinado cíclico) é o marcador laboratorial mais específico para Artrite Reumatoide. Como a Síndrome de Felty ocorre quase exclusivamente em pacientes com AR soropositiva, a identificação do Anti-CCP ou do Fator Reumatoide é essencial para corroborar a principal hipótese diagnóstica.\n\nAlternativa c: Incorreta. O mielograma é indicado para investigar doenças hematológicas primárias, como leucemias ou linfomas, que também podem cursar com esplenomegalia e neutropenia. No entanto, diante do sinal patognomônico das mãos reumatoides, a Síndrome de Felty torna-se a hipótese inicial mais provável. O mielograma na Síndrome de Felty costuma mostrar uma medula hipercelular com parada de maturação mieloide.\n\nAlternativa d: Incorreta. O ANCA (anticorpo anticitoplasma de neutrófilos) é utilizado na investigação de vasculites sistêmicas, como a granulomatose com poliangiíte. Embora a AR possa causar vasculite reumatoide, o quadro de neutropenia associado à artrite e esplenomegalia define especificamente a Síndrome de Felty, não sendo o ANCA o exame inicial indicado.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Artrite Reumatoide"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/02d363a0400f2d9d705880cc5ce2a29a3736285eb3261f3e2e84a58624fe2b39.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5b5a623c-a643-4119-b9d7-13696450b2ae_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.712Z"
+  },
+  {
+    "id": "AJUDA_5b5f14db-2fb0-4b93-b623-d2b567bdddfe",
+    "originalId": "5b5f14db-2fb0-4b93-b623-d2b567bdddfe",
+    "statement": "Uma equipe da Estratégia Saúde da Família (ESF), em um município rural, identificou um aumento significativo de casos de diarreia aguda em uma comunidade local. Durante as visitas domiciliares, constatou-se que a maioria das famílias utilizava água de um poço sem tratamento, enquanto outras armazenavam água em recipientes destampados. A equipe notificou a vigilância ambiental, que realizou análises da água e confirmou a presença de coliformes fecais em níveis elevados. Com base no caso apresentado e considerando as ações integradas entre a vigilância ambiental e a Atenção Primária à Saúde (APS), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Vigilância Ambiental atua apenas na análise da qualidade da água, com pouca articulação com a equipe da APS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cabe à APS realizar intervenções como tratamento da água e orientações sobre o armazenamento correto, sem a participação presencial da Vigilância Ambiental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A atuação conjunta da Vigilância Ambiental e da APS deve incluir ações de educação em saúde, identificação de riscos ambientais e promoção de soluções para o abastecimento de água segura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A notificação do surto deve ser feita apenas após a confirmação laboratorial das condições da água, não sendo necessária qualquer ação imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A Vigilância Ambiental é responsável exclusivamente por atuar em áreas urbanas, não abrangendo comunidades rurais ou situações relacionadas à água.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a integração entre a Vigilância em Saúde e a Atenção Primária à Saúde (APS) no contexto do Sistema Único de Saúde (SUS), focando em doenças de veiculação hídrica e saneamento em áreas rurais.\n\nAlternativa A: Incorreta. No modelo de Vigilância em Saúde do SUS, a articulação entre os diferentes setores é essencial. A Vigilância Ambiental não se limita à análise técnica ou laboratorial; ela deve trabalhar em conjunto com a equipe da Estratégia Saúde da Família (ESF) para que os dados coletados se transformem em ações de intervenção no território.\n\nAlternativa B: Incorreta. A gestão de riscos ambientais não é responsabilidade exclusiva da APS. A Vigilância Ambiental possui competência técnica específica para atuar em campo, realizar vistorias e auxiliar no planejamento de intervenções estruturais. A colaboração presencial e técnica entre as equipes é o padrão esperado para a resolução de problemas complexos de saneamento.\n\nAlternativa C: Correta. Esta alternativa reflete o princípio da integralidade e da territorialização. A APS contribui com o vínculo com a comunidade e o conhecimento dos hábitos das famílias, enquanto a Vigilância Ambiental aporta o conhecimento técnico sobre os contaminantes e o meio ambiente. Juntas, elas desenvolvem ações educativas (orientando sobre o tratamento caseiro com hipoclorito, por exemplo), identificam os focos de contaminação e buscam soluções definitivas para o acesso à água potável.\n\nAlternativa D: Incorreta. Em casos de surto de doenças de notificação compulsória ou agravos inusitados, a notificação deve ser feita precocemente, muitas vezes baseada apenas na suspeita clínica e epidemiológica. Esperar a confirmação laboratorial para iniciar as ações de controle é uma conduta inadequada em saúde pública, pois permite a propagação da doença e o surgimento de novos casos.\n\nAlternativa E: Incorreta. A Vigilância Ambiental atua em todo o território nacional, incluindo áreas urbanas, rurais e comunidades tradicionais. Um dos seus principais programas é o VIGIAGUA (Vigilância da Qualidade da Água para Consumo Humano), que é fundamental justamente em áreas rurais onde o abastecimento costuma ser feito por soluções alternativas (poços, nascentes) sem o devido controle das concessionárias de água.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:59.712Z"
+  }
+]

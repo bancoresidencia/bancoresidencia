@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_77018cd5-0e99-4ca0-9352-22a7c4978b60",
+    "originalId": "77018cd5-0e99-4ca0-9352-22a7c4978b60",
+    "statement": "Um homem de 38 anos, anteriormente em boa saúde, desenvolve dor abdominal súbita e severa que irradia da região lombar esquerda até a região inguinal. Nunca apresentou episódio similar no passado. A dor vem acompanhada de náuseas e sudorese. Encontra-se agitado, revirando-se na cama. Apresenta FC de 105bpm. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "herpes-zoster",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cálculo ureteral esquerdo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "torção de testículo esquerdo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diverticulite complicada em sigmoide",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico de uma cólica nefrética, especificamente causada por um cálculo ureteral. Abaixo, analisamos os pontos-chave para o diagnóstico e por que as outras opções são menos prováveis.\n\nAnálise do quadro clínico:\nA dor de início súbito, com intensidade severa e irradiação da região lombar para a região inguinal, segue o trajeto anatômico do ureter. A agitação psicomotora (paciente que se revira na cama sem encontrar posição de alívio) é um sinal semiótico fundamental que diferencia dores de origem obstrutiva/visceral de dores de origem inflamatória/peritoneal (em que o paciente prefere ficar imóvel). Sintomas autonômicos como náuseas, sudorese e taquicardia são comuns devido à intensidade da dor.\n\nExplicação das alternativas:\n\na) Incorreta. O herpes-zóster manifesta-se tipicamente com dor de característica neuropática (queimação ou pontada) que segue um dermátomo específico, geralmente acompanhada ou seguida por erupções cutâneas vesiculares sobre base eritematosa. Embora possa haver dor antes do surgimento das lesões (fase prodrômica), ela raramente causa a agitação extrema e os sintomas sistêmicos descritos no caso.\n\nb) Correta. O cálculo ureteral esquerdo justifica perfeitamente a dor lombar com irradiação inguinal (referida nos dermátomos T11 a L2). A obstrução do fluxo urinário causa distensão da cápsula renal e do ureter, gerando a cólica renal. O comportamento de agitação do paciente é um \"marcador\" clássico dessa patologia em provas de residência.\n\nc) Incorreta. A torção de testículo é uma emergência urológica que causa dor súbita e intensa, mas a dor tem origem primária no escroto e irradia para a região inguinal/abdome inferior, e não o contrário (da região lombar para a inguinal). Além disso, o exame físico revelaria um testículo elevado, horizontalizado e extremamente doloroso à palpação, o que não foi mencionado.\n\nd) Incorreta. A diverticulite aguda do sigmoide geralmente apresenta dor localizada na fossa ilíaca esquerda, de caráter mais subagudo ou progressivo, frequentemente associada a alterações do hábito intestinal e febre. Em casos de diverticulite complicada (com perfuração e peritonite), o paciente apresenta sinais de irritação peritoneal e tende a permanecer o mais imóvel possível, pois qualquer movimento agrava a dor, ao contrário da agitação descrita no enunciado.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  },
+  {
+    "id": "AJUDA_770ef91a-9acf-4dd4-b6eb-70ec4f13d225",
+    "originalId": "770ef91a-9acf-4dd4-b6eb-70ec4f13d225",
+    "statement": "Paciente de 45 anos de idade, com exame ginecológico normal e assintomática, foi submetida à mamografia de rotina. O laudo concluiu como resultado BI‑RADS 3.\n\nCom base nesse caso clínico hipotético, assinale a opção correta a respeito da conduta a ser seguida.",
+    "options": [
+      {
+        "id": "A",
+        "text": "repetir a mamografia em um ano",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar biópsia guiada por ultrassonografia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar ressonância magnética das mamas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar ultrassonografia das mamas em seis meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "repetir a mamografia em seis meses",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A classificação BI-RADS 3 (Provavelmente Benigno) refere-se a achados com risco de malignidade muito baixo, maior que 0% e menor ou igual a 2%. O objetivo dessa categoria é evitar biópsias desnecessárias em lesões que têm alta probabilidade de serem benignas, mantendo, no entanto, uma vigilância mais rigorosa do que o rastreamento anual convencional.\n\nAlternativa a) Incorreta. O controle anual (a cada 12 meses) é a conduta padrão para pacientes com exames classificados como BI-RADS 1 (exame normal) ou BI-RADS 2 (achados comprovadamente benignos). No BI-RADS 3, o risco, embora baixo, exige um intervalo menor para a primeira reavaliação.\n\nAlternativa b) Incorreta. A biópsia é indicada para achados com suspeita de malignidade, classificados como BI-RADS 4 (subdivididos em 4A, 4B e 4C) ou BI-RADS 5 (altamente sugestivos de malignidade). No BI-RADS 3, opta-se inicialmente pelo acompanhamento radiológico.\n\nAlternativa c) Incorreta. A ressonância magnética das mamas possui indicações específicas (como rastreamento em pacientes de alto risco, avaliação de próteses ou planejamento cirúrgico de câncer já diagnosticado). Não é o exame de escolha para o seguimento de achados provavelmente benignos detectados na mamografia.\n\nAlternativa d) Incorreta. O seguimento de um achado BI-RADS 3 deve ser feito, preferencialmente, pelo mesmo método de imagem que identificou a alteração original. Como o caso descreve uma alteração vista na mamografia de rotina, o controle deve ser mamográfico. A ultrassonografia seria o método de seguimento apenas se o achado BI-RADS 3 tivesse sido identificado primariamente por ela.\n\nAlternativa e) Correta. A conduta padrão para o BI-RADS 3 é o controle radiológico em curto prazo. A recomendação é realizar uma nova mamografia da mama afetada em 6 meses (alguns protocolos sugerem mamografia bilateral aos 6 meses para comparação, mas o foco é a lesão). Se o achado permanecer estável nesse primeiro controle, o seguimento continua com intervalos de 6 ou 12 meses até completar 2 a 3 anos de estabilidade, quando então o achado pode ser reclassificado como BI-RADS 2.\n\nGabarito: Alternativa (e).",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  },
+  {
+    "id": "AJUDA_7710ab15-7f65-4eb3-aac2-a21f295d4b3b",
+    "originalId": "7710ab15-7f65-4eb3-aac2-a21f295d4b3b",
+    "statement": "Criança de 6 anos chega a emergência com quadro clinico de vômitos, sinais de desidratação, hálito cetônico, história de perda de peso, associada a poliúria e a polidipsia. Qual a conduta inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidratação venosa com solução salina isotônica e bicarbonato em infusão contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hidratação venosa com solução salina isotônica e, avaliar após HV a necessidade de insulina regular em infusão contínua.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar hidratação venosa com solução salina hipertônica e insulina NPH em bolus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar hidratação venosa com solução glicosada hipotônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar hidratação venosa com solução salina isotônica e glicose em infusão contínua",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO quadro descrito de uma criança de 6 anos com perda de peso, poliúria, polidipsia, vômitos, desidratação e hálito cetônico é a apresentação clássica da Cetoacidose Diabética (CAD), frequentemente como manifestação inicial do Diabetes Mellitus tipo 1. O manejo inicial da CAD segue protocolos rígidos para evitar complicações graves, como o edema cerebral.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\nA conduta inicial na cetoacidose diabética prioriza a estabilização hemodinâmica e a correção da desidratação. O primeiro passo é a expansão volêmica com solução salina isotônica (Soro Fisiológico 0,9%). A insulina só deve ser iniciada após a primeira hora de hidratação venosa. Isso ocorre porque a hidratação inicial ajuda a reduzir a glicemia e a osmolaridade plasmática de forma gradual, além de melhorar a perfusão renal. O início precoce da insulina junto com a hidratação pode causar uma queda brusca na osmolaridade, aumentando o risco de edema cerebral. Por isso, a conduta correta é iniciar a hidratação e avaliar a necessidade de insulina regular em infusão contínua sequencialmente.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\nAlternativa (a): O uso de bicarbonato de sódio é proscrito na rotina do tratamento da CAD pediátrica. Ele só é considerado em casos de acidose extrema (pH menor que 6,9) com comprometimento da contratilidade miocárdica, pois seu uso indiscriminado está associado ao aumento do risco de edema cerebral e hipocalemia.\n\nAlternativa (c): Soluções hipertônicas não são indicadas para a hidratação inicial; o padrão é a solução isotônica. Além disso, a insulina NPH tem ação intermediária e não deve ser usada no tratamento da CAD em ambiente de emergência, onde se utiliza exclusivamente a insulina regular (ação curta) por via venosa para um controle preciso. O uso de insulina em bolus também é contraindicado em crianças pelo risco de queda rápida da glicemia.\n\nAlternativa (d): Soluções glicosadas hipotônicas não devem ser usadas no início do tratamento. No começo, o paciente já apresenta hiperglicemia severa. O uso de soluções hipotônicas logo de cara favorece a entrada de água para o meio intracelular de forma rápida, o que pode levar ao edema cerebral.\n\nAlternativa (e): A glicose só é adicionada ao plano de hidratação venosa quando a glicemia atinge níveis próximos a 200-250 mg/dL. O objetivo de adicionar glicose nesse momento é manter a infusão de insulina para bloquear a cetogênese sem causar hipoglicemia. Portanto, não faz parte da conduta inicial imediata.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Emergências Pediátricas",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  },
+  {
+    "id": "AJUDA_7718e886-f600-48e2-bf2c-ab5d30880183",
+    "originalId": "7718e886-f600-48e2-bf2c-ab5d30880183",
+    "statement": "Gestante, com idade gestacional de 33 semanas, argumenta em consulta de acompanhamento pré-natal que leu sobre a vacina contra o vírus sincicial respiratório (VSR), liberada para uso no Brasil em 2025. Está preocupada porque acredita que deve ser “tarde demais” para receber a imunização. Em relação à vacinação contra o VSR (Abrysvo®) em gestantes, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É indicada apenas para gestantes com comorbidades ou com risco de parto prematuro, não sendo recomendada na rotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É indicada apenas até 28 semanas de gestação, devendo ser evitada no terceiro trimestre por risco aumentado de parto prematuro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É contraindicada após 32 semanas, devendo o recém-nascido receber imunoglobulina específica após o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pode ser administrada entre 24 e 36 semanas de gestação, sendo segura e eficaz para proteção passiva do recém-nascido nos primeiros meses de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A vacina contra o Vírus Sincicial Respiratório (VSR), comercializada sob o nome Abrysvo (Pfizer), é uma vacina bivalente de proteína recombinante aprovada para uso em gestantes com o objetivo de proteger o recém-nascido. O mecanismo principal é a imunização passiva: a gestante produz anticorpos que atravessam a placenta, conferindo proteção ao bebê nos primeiros meses de vida, período de maior risco para complicações graves, como a bronquiolite.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A vacinação contra o VSR é recomendada de forma universal (rotina) para as gestantes dentro da idade gestacional adequada, e não apenas para aquelas com comorbidades ou risco de parto prematuro. O objetivo é a saúde pública e a redução de internações de lactentes em geral.\n\nAlternativa (b) Incorreta: A recomendação não se limita às 28 semanas. O intervalo preconizado para a administração é justamente entre o final do segundo e o terceiro trimestres (24 a 36 semanas). Embora tenha havido uma vigilância rigorosa sobre partos prematuros nos estudos clínicos, a análise de segurança permitiu a aprovação do uso até a 36ª semana.\n\nAlternativa (c) Incorreta: A vacina não é contraindicada após 32 semanas. Na verdade, para a paciente do caso, que está com 33 semanas, ela está no período ideal para a imunização. A imunoglobulina específica (como o palivizumabe ou o nirsevimabe) é uma estratégia de imunização passiva direta no bebê, geralmente reservada para prematuros ou crianças com cardiopatias/pneumopatias específicas, e não substitui a indicação da vacina materna quando esta ainda pode ser feita.\n\nAlternativa (d) Correta: Esta alternativa reflete as diretrizes atuais. A vacina Abrysvo é administrada em dose única entre a 24ª e a 36ª semana de gestação. Estudos demonstraram que essa janela é segura para a mãe e para o feto, sendo altamente eficaz na redução de doenças graves do trato respiratório inferior causadas pelo VSR em lactentes desde o nascimento até os 6 meses de vida. Portanto, a paciente de 33 semanas não está \"atrasada\" e deve ser incentivada a vacinar-se.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  },
+  {
+    "id": "AJUDA_771b8422-4889-4498-9d1e-7f162bc02639",
+    "originalId": "771b8422-4889-4498-9d1e-7f162bc02639",
+    "statement": "As doenças hipertensivas representam a segunda causa de mortalidade materna obstétrica direta no mundo e, no Brasil, a hipertensão é a principal causa de óbitos maternos por complicações obstétricas. Por esse motivo é importante saber diagnosticar de forma adequada essa doença. Nesse quadro, assinale a alternativa correta com relação à pré-eclâmpsia.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Edema, proteinúria e hipertensão são os critérios atuais da tríade clássica do diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quanto maior a proteinúria, maior a gravidade da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A convulsão materna, em geral, ocorre após o décimo dia do parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O ácido úrico representa fator prognóstico da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A administração de sulfato de magnésio é utilizada no tratamento da doença principalmente para o controle pressórico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Incorreta. A tríade clássica composta por hipertensão, proteinúria e edema caiu em desuso. Atualmente, o edema não é mais considerado um critério diagnóstico por ser um sintoma inespecífico, presente em grande parte das gestações fisiológicas. O diagnóstico moderno baseia-se na presença de hipertensão arterial após a 20ª semana de gestação associada à proteinúria ou, na ausência desta, à presença de disfunções orgânicas (como trombocitopenia, insuficiência renal, alteração hepática, sintomas visuais ou cerebrais).\n\nAlternativa b) Incorreta. De acordo com os protocolos atuais (como os da FEBRASGO e ACOG), a magnitude da proteinúria não é mais utilizada para definir a gravidade da pré-eclâmpsia. Ter uma proteinúria maciça (ex.: acima de 5g em 24h) isoladamente não classifica mais a doença como \"pré-eclâmpsia com sinais de gravidade\", uma vez que o prognóstico materno e fetal está mais relacionado às disfunções orgânicas e aos níveis pressóricos do que à quantidade de proteína perdida na urina.\n\nAlternativa c) Incorreta. A eclâmpsia (convulsões) ocorre mais frequentemente no período anteparto e intraparto. Quando ocorre no pós-parto, geralmente acontece nas primeiras 48 a 72 horas. Casos de eclâmpsia tardia (após 48 horas do parto) podem ocorrer, mas a ocorrência após o décimo dia é extremamente rara e não representa a regra.\n\nAlternativa d) Correta. O ácido úrico é um marcador importante na pré-eclâmpsia. Seus níveis elevados (hiperuricemia) decorrem da redução do clearance renal de ácido úrico devido à endoteliose capilar glomerular, lesão renal típica da doença. O aumento dos níveis plasmáticos de ácido úrico correlaciona-se com a gravidade da doença, piora do prognóstico materno e resultados perinatais adversos, servindo como um bom preditor de complicações.\n\nAlternativa e) Incorreta. O sulfato de magnésio é a droga de escolha para a prevenção e o tratamento das crises convulsivas da eclâmpsia (profilaxia e tratamento da eclâmpsia). Ele possui propriedades anticonvulsivantes e neuroprotetoras, mas não tem função de controle pressórico. Para o controle da pressão arterial, são utilizadas drogas anti-hipertensivas de ação rápida (como hidralazina ou nifedipino) ou de manutenção (como a metildopa).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  },
+  {
+    "id": "AJUDA_7729e52b-e75d-452d-876b-79367087750d",
+    "originalId": "7729e52b-e75d-452d-876b-79367087750d",
+    "statement": "Sobre as hérnias hiatais paraesofágicas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os sintomas mais frequentes são saciedade precoce, disfagia, odinofagia e dor torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A decisão pelo reparo cirúrgico ou tratamento conservador está baseada nos sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Na hérnia hiatal tipo II, a junção esofagogástrica está situada acima do diafragma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na hérnia hiatal tipo III, ocorre migração do estômago e outras vísceras acima do hiato.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A (Incorreta): Embora a saciedade precoce, a disfagia e a dor torácica sejam sintomas possíveis nas hérnias paraesofágicas volumosas (devido à compressão extrínseca do esôfago ou à distensão gástrica), a odinofagia (dor ao engolir) não é um sintoma típico dessa patologia. Os sintomas mais comuns costumam estar relacionados ao efeito de massa no tórax, como plenitude pós-prandial e falta de ar, ou ainda à anemia ferropriva crônica causada por erosões na mucosa gástrica (úlceras de Cameron).\n\nAlternativa B (Correta): Esta é a conduta atual baseada em evidências. Antigamente, acreditava-se que todas as hérnias paraesofágicas deveriam ser operadas imediatamente devido ao risco de complicações graves, como o volvo gástrico e o estrangulamento. No entanto, estudos mostraram que o risco anual de complicações agudas é baixo (cerca de 1%). Por isso, as diretrizes atuais (como as da SAGES) recomendam que pacientes verdadeiramente assintomáticos possam ser observados com segurança. O reparo cirúrgico está indicado prioritariamente para pacientes sintomáticos ou que apresentem complicações.\n\nAlternativa C (Incorreta): Na hérnia hiatal tipo II, também chamada de paraesofágica \"pura\", a junção esofagogástrica (JEG) permanece fixa em sua posição anatômica normal, ou seja, abaixo do diafragma. O que ocorre é a herniação apenas do fundo gástrico para o tórax, rolando paralelamente ao esôfago. Se a JEG estivesse acima do diafragma junto com o fundo, seria classificada como tipo III (mista).\n\nAlternativa D (Incorreta): A descrição dada refere-se à hérnia hiatal tipo IV. A classificação correta é: tipo I (deslizamento da JEG), tipo II (rolamento do fundo gástrico com JEG tópica), tipo III (mista – JEG e fundo gástrico no tórax) e tipo IV (quando outros órgãos, como cólon, baço, pâncreas ou intestino delgado, também migram para o interior do saco herniário no tórax).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  },
+  {
+    "id": "AJUDA_7738339f-2a0a-443a-b14e-c69a768ee23b",
+    "originalId": "7738339f-2a0a-443a-b14e-c69a768ee23b",
+    "statement": "Paciente jovem, de 27 anos, previamente hígido, apresenta dor abdominal há 36 horas, iniciada em região periumbilical e migrada para fossa ilíaca direita, e refere febre baixa e anorexia. Ao exame físico: PA: 118 × 72 mmHg, FC: 104 bpm, T: 38,4 ºC, abdome: dor intensa em fossa ilíaca direita, defesa involuntária, sinal de Blumberg positivo, ruídos hipoativos. Exames complementares com hemograma: leucócitos 15.200/mm3 (neutrófilos 85%) e tomografia computadorizada de abdome: apêndice 12 mm, paredes espessadas, presença de líquido livre pericecal, sem abscesso.\n\nA conduta inicial deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "antibioticoterapia venosa isolada por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "laparotomia exploradora apenas se houver perfuração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "videolaparoscopia para apendicectomia com antibiótico profilático.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "observação clínica por 24 horas com analgésico e dieta zero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "drenagem percutânea guiada por imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de apendicite aguda: dor que migra para a fossa ilíaca direita, anorexia, febre baixa e sinal de Blumberg positivo, que indica irritação peritoneal. A tomografia computadorizada confirma o diagnóstico ao mostrar um apêndice dilatado (12 mm) e a presença de líquido livre, porém sem a formação de coleções organizadas (abscessos).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o tratamento conservador com antibióticos isolados seja discutido na literatura para casos muito selecionados de apendicite não complicada, a apendicectomia permanece o padrão-ouro, especialmente em pacientes jovens e hígidos. O tratamento apenas medicamentoso apresenta taxas consideráveis de falha e recorrência.\n\nAlternativa b) Incorreta. A cirurgia está indicada a partir do momento em que o diagnóstico é firmado. Aguardar a perfuração para operar elevaria desnecessariamente o risco de peritonite generalizada, sepse e complicações pós-operatórias graves.\n\nAlternativa c) Correta. A apendicectomia por videolaparoscopia é a conduta de escolha para o tratamento da apendicite aguda. O método oferece recuperação mais rápida, menor dor pós-operatória e menores taxas de infecção de parede. A antibioticoterapia profilática é necessária para cobrir a flora intestinal (Gram-negativos e anaeróbios) e deve ser administrada antes da incisão cirúrgica.\n\nAlternativa d) Incorreta. A observação clínica com dieta zero é reservada para casos de dúvida diagnóstica (o que não ocorre aqui, dado que o exame físico e a tomografia são conclusivos) ou para a fase inicial de preparação pré-operatória imediata. Manter a observação por 24 horas sem intervir em um diagnóstico confirmado aumenta o risco de complicações.\n\nAlternativa e) Incorreta. A drenagem percutânea guiada por imagem é reservada para casos de apendicite tardia (geralmente com mais de 5 a 7 dias de evolução) que evoluíram com a formação de abscessos bloqueados e volumosos. A tomografia deste paciente descartou explicitamente a presença de abscessos, tornando a drenagem inviável e desnecessária.\n\nGabarito: Letra (c).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  },
+  {
+    "id": "AJUDA_7746d121-f309-4017-b9dd-64d712cfeef9",
+    "originalId": "7746d121-f309-4017-b9dd-64d712cfeef9",
+    "statement": "Enedina, 60 anos, possui diagnóstico de câncer de mama triplo negativo metastático. O tumor é proveniente da mama direita e gerou múltiplos nódulos pulmonares. Paciente com queda progressiva da funcionalidade e do status nutricional nos últimos três meses, restrita ao leito, sem possibilidade de cirurgia, quimioterapia ou radioterapia. Evoluiu com dispneia progressiva neste período sem causas reversíveis aparentes.\nEm caso de insuficiência respiratória, assinale a alternativa mais apropriada em relação à indicação de intubação orotraqueal para esta paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O médico possui a obrigação de garantir o direito do paciente à vida, logo a intubação orotraqueal deve ser realizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O médico deve respeitar o direito do paciente e de sua família à autodeterminação – eles devem decidir se a intubação será realizada sem considerar a opinião do profissional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diante da irreversibilidade da doença, o médico deve se posicionar contrário à intubação em conversa franca sobre prognóstico com paciente e familiares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A intubação orotraqueal é um procedimento médico, como não há indicação de intubação para doenças terminais, não é necessário discutir a realização deste procedimento com paciente e familiares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma paciente com neoplasia metastática em estágio terminal, refratária a tratamentos modificadores da doença e com franca perda de funcionalidade. Nesse contexto de terminalidade, a abordagem deve ser pautada nos princípios dos cuidados paliativos, na proporcionalidade terapêutica e na prevenção da distanásia (obstinação terapêutica fútil).\n\nAlternativa A está incorreta. O Código de Ética Médica veda a distanásia. O dever do médico em situações de terminalidade e irreversibilidade não é prolongar a vida a qualquer custo por meio de suporte invasivo artificial, mas sim garantir a dignidade do paciente e o alívio de sintomas (ortotanásia).\n\nAlternativa B está incorreta. A autonomia do paciente e de seus familiares não é irrestrita. O médico não é obrigado a realizar procedimentos tecnicamente contraindicados, fúteis ou que aumentem o sofrimento sem trazer benefícios reais, mesmo que solicitados pela família.\n\nAlternativa C está correta. A intubação orotraqueal e a ventilação mecânica invasiva configuram procedimentos desproporcionais e fúteis neste cenário. Cabe ao médico explicar claramente a irreversibilidade e o prognóstico, posicionando-se de forma técnica contra a intubação e direcionando o plano de cuidados para o controle rigoroso de sintomas, como a dispneia, priorizando o conforto e a dignidade.\n\nAlternativa D está incorreta. Embora a indicação técnica de procedimentos caiba à equipe de saúde, a comunicação com a paciente e seus familiares é imprescindível. O diálogo transparente sobre metas de cuidado, prognóstico e plano terapêutico é fundamental para prevenir conflitos, alinhar expectativas e evitar que a família interprete a não intubação como desassistência ou abandono.\n\nGabarito: Alternativa C.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama",
+      "Ética Médica",
+      "Intubação"
+    ],
+    "difficulty": 52.31314802996694,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  },
+  {
+    "id": "AJUDA_77529cb0-9fdf-4993-bb54-d9e949ad1d92",
+    "originalId": "77529cb0-9fdf-4993-bb54-d9e949ad1d92",
+    "statement": "São características frequentemente observadas nas ultrassonografias do abdome nos casos de apendicite aguda não complicada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "espessamento de parede; aumento do diâmetro do apêndice; líquido livre",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "espessamento de parede; redução do diâmetro do apêndice; líquido livre",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "retração de parede; aumento do diâmetro do apêndice; linfonodomegalia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "retração de parede; redução do diâmetro do apêndice; linfonodomegalia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A apendicite aguda é uma das causas mais comuns de abdome agudo cirúrgico, e a ultrassonografia é frequentemente o exame de imagem inicial, especialmente em crianças e gestantes, por não envolver radiação ionizante.\n\nPara compreender os achados ultrassonográficos, é preciso lembrar da fisiopatologia da doença: o processo geralmente começa com a obstrução do lúmen apendicular, o que leva ao acúmulo de secreção, à proliferação bacteriana e ao aumento da pressão intraluminal. Isso resulta em edema da mucosa e comprometimento do retorno venoso e linfático.\n\nAnálise das alternativas:\n\nAlternativa A (CORRETA): Esta alternativa descreve os achados clássicos. O aumento do diâmetro do apêndice (geralmente superior a 6 mm no plano transverso) ocorre devido à distensão do órgão pela obstrução. O espessamento da parede (geralmente acima de 2-3 mm) é consequência do edema inflamatório. A presença de líquido livre na fossa ilíaca direita ou ao redor do apêndice reflete o exsudato inflamatório e a reação peritoneal local. Outros sinais comuns incluem o apêndice não ser compressível à manobra do transdutor e o aumento da ecogenicidade da gordura periapendicular.\n\nAlternativa B (INCORRETA): O erro está no termo \"redução do diâmetro\". Na apendicite aguda, o apêndice sofre distensão pelo acúmulo de muco e pus; portanto, o diâmetro aumenta. Um apêndice de diâmetro reduzido ou colapsado sugere normalidade.\n\nAlternativa C (INCORRETA): O termo \"retração de parede\" está incorreto. O processo inflamatório causa edema, o que leva ao espessamento, e não à retração das camadas da parede. Embora a linfonodomegalia (aumento de linfonodos mesentéricos) possa estar presente como uma resposta inflamatória reacional, ela não é o sinal cardinal da apendicite em si.\n\nAlternativa D (INCORRETA): Esta alternativa combina dois erros fundamentais: a retração da parede e a redução do diâmetro. Ambos são o oposto do que se espera encontrar em um processo inflamatório obstrutivo como a apendicite.\n\nResumo dos critérios ultrassonográficos positivos:\n1. Diâmetro transverso maior que 6 mm.\n2. Apêndice não compressível (sinal do alvo).\n3. Espessamento das paredes.\n4. Presença de apendicólito (fecalito hiperecogênico com sombra acústica posterior) em alguns casos.\n5. Líquido livre periapendicular.\n6. Aumento da vascularização ao Doppler (hiperemia da parede).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  },
+  {
+    "id": "AJUDA_775e5810-ec7d-4d00-bb9d-bc2399525347",
+    "originalId": "775e5810-ec7d-4d00-bb9d-bc2399525347",
+    "statement": "Sexo feminino, 86 anos, hipertensa, diabética insulinodependente e com histórico de coronariopatia, é admitida no Pronto Socorro com história de dor em hipocôndrio direito há 4 dias, com piora progressiva associada a febre.\nÀ entrada, estava anictérica, hidratada, contactuante, plastrão doloroso em hipocôndrio direito, sinal de Murphy positivo. Ultrassonografia mostrou vesícula hiperdistendida, com cálculo impactado no infundíbulo e paredes delaminadas, e líquido pericolecístico, sem coleções ou dilatação de vias biliares.\nExames laboratoriais com 21 mil leucócitos sem desvio, Plaquetas 95 mil, Proteína C Reativa 40mg/dL (VR<1,0). Bilirrubinas totais 1,5, Creatinina 1,8 mg/dL.\nAponte o fator mais importante para considerar como Colecistite Aguda Grave segundo critérios de Tokyo 2018, e a conduta preconizada neste caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Idade superior a 75 anos; Antibioticoterapia e Colangiopancreatografia Retrógrada Endoscópica em até 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vesícula com paredes delaminadas; colecistectomia Laparotômica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Leucocitose acima de 18 mil; antibioticoterapia, com colecistectomia após 4 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Proteína C Reativa > 100 mg/L (ou 10mg/dL); colecistectomia videolaparoscópica de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Plaquetas < 100 mil; colecistostomia por punção.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA questão aborda a classificação de gravidade da colecistite aguda e a respectiva conduta terapêutica baseada nas diretrizes internacionais conhecidas como Tokyo Guidelines 2018 (TG18). Para responder corretamente, é necessário identificar a presença de disfunção de órgãos e avaliar o risco cirúrgico da paciente.\n\nDe acordo com o TG18, a colecistite aguda é classificada em três graus:\nGrau I (Leve): Não preenche critérios de Grau II ou III. Geralmente em pacientes jovens e sem comorbidades.\nGrau II (Moderada): Apresenta pelo menos um dos seguintes: leucocitose maior que 18.000, massa palpável dolorosa, duração de sintomas maior que 72 horas ou marcadores de inflamação local grave (colecistite gangrenosa, enfisematosa, abscesso pericolecístico ou hepático).\nGrau III (Grave): Presença de disfunção de órgãos (cardiovascular, neurológica, respiratória, renal, hepática ou hematológica).\n\nNo caso descrito, a paciente apresenta 95.000 plaquetas/mm³. O critério para disfunção hematológica no Grau III é exatamente a presença de plaquetopenia abaixo de 100.000/mm³.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. Embora a idade avançada aumente o risco cirúrgico, ela não é o critério definidor de Colecistite Grau III pelo TG18. A CPRE (Colangiopancreatografia Retrógrada Endoscópica) é um procedimento voltado para o tratamento de obstruções na via biliar principal (como coledocolitíase ou colangite), e a ultrassonografia da paciente mostrou que não há dilatação de vias biliares.\n\nb) INCORRETA. Vesícula com paredes delaminadas e líquido pericolecístico sugerem inflamação local intensa, o que classificaria o caso como Grau II (Moderada). Entretanto, a disfunção hematológica (plaquetopenia) já eleva a classificação para Grau III. A colecistectomia por via aberta (laparotômica) não é a conduta de escolha inicial para pacientes com disfunção de órgãos e alto risco clínico.\n\nc) INCORRETA. A leucocitose de 21.000 (superior a 18.000) é um critério para o Grau II. Contudo, a plaquetopenia é um achado mais grave que define o Grau III. O manejo de apenas antibioticoterapia e cirurgia tardia pode não ser suficiente para uma paciente que já apresenta sinais de falência orgânica.\n\nd) INCORRETA. A Proteína C Reativa (PCR) elevada é um marcador de resposta inflamatória, mas não é o critério de definição de gravidade Grau III no TG18. Embora a videolaparoscopia seja o padrão-ouro, em pacientes idosas, coronariopatas e com disfunção orgânica instalada, a cirurgia imediata apresenta altíssima mortalidade.\n\ne) CORRETA. A contagem de plaquetas inferior a 100.000/mm³ caracteriza a disfunção hematológica, classificando a colecistite como Grau III (Grave). Segundo o fluxograma do TG18, para pacientes Grau III que possuem alto risco cirúrgico (86 anos, diabética insulinodependente, coronariopata e com alteração de função renal/creatinina 1,8), a conduta inicial mais segura é a estabilização clínica associada à drenagem da vesícula biliar (colecistostomia). Este procedimento alivia a hipertensão e a infecção dentro da vesícula com agressão mínima, permitindo a melhora do estado geral da paciente para uma futura cirurgia definitiva, se houver condições.\n\nGABARITO: Letra (e).",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:55.799Z"
+  }
+]

@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_7d244510-685e-4895-b1f5-a527063a6854",
+    "originalId": "7d244510-685e-4895-b1f5-a527063a6854",
+    "statement": "Paciente com 53 anos, portador de asma, chega na Emergência do Hospital de Ensino com a história de febre de 38,5° C há 1 dia, tosse seca, dor de garganta, mialgia, cefaleia e prostração. Foi feito diagnóstico de Sindrome Gripal com identificação no painel de patógenos respiratórios do vírus Influenza. Qual a conduta correta para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internar para solicitar a pesquisa de virus respiratório pelo Polymerase Chain Reaction (PCR) e notificar no SINAN",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever antitérmico, colher exame para a pesquisa de virus respiratório pelo Polymerase Chain Reaction (PCR) e retornar se dificuldade respiratória",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internar para introduzir antibiótico macrolideo injetável, pois a principal complicação de Sindrome Gripal em paciente com asma é a pneumonia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever oseltamivir, preferencialmente nas primeiras 48h. Orientar o paciente a retornar",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso apresenta um paciente com quadro clássico de Síndrome Gripal (febre, tosse, mialgia e cefaleia) e diagnóstico confirmado de Influenza. O ponto-chave para resolver a questão é identificar se o paciente possui indicação de tratamento antiviral específico com oseltamivir.\n\nDe acordo com as diretrizes do Ministério da Saúde, o uso de oseltamivir (Tamiflu) está indicado em dois cenários principais:\n1. Pacientes com Síndrome Respiratória Aguda Grave (SRAG), que apresentam sinais de gravidade como dispneia, queda de saturação de oxigênio ou desconforto respiratório.\n2. Pacientes com Síndrome Gripal (SG) que pertencem aos grupos de risco para complicações, independentemente de apresentarem sinais de gravidade no momento da consulta.\n\nO paciente em questão é portador de asma. A asma é uma doença respiratória crônica classificada como condição de risco para o agravamento da Influenza. Por isso, ele tem indicação formal de receber o antiviral.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Não há sinais de gravidade descritos (como taquipneia ou hipoxemia) que justifiquem a internação hospitalar. O diagnóstico já foi realizado pelo painel respiratório, tornando desnecessária nova solicitação de PCR para fins de conduta imediata. A notificação compulsória individual no SINAN é obrigatória para casos de SRAG ou surtos, não sendo a conduta padrão para um caso isolado de Síndrome Gripal ambulatorial.\n\nAlternativa (b) Incorreta. Embora o manejo de suporte (antitérmicos) e a orientação de retorno sejam corretos, a alternativa é incompleta. Ela falha ao não prescrever o tratamento antiviral para um paciente que, por ser asmático, possui indicação de oseltamivir para evitar a progressão da doença.\n\nAlternativa (c) Incorreta. A Influenza é uma infecção viral. Antibióticos como os macrolídeos não tratam o vírus e não devem ser usados de forma profilática. O uso de antibióticos só ocorreria se houvesse evidência de pneumonia bacteriana secundária associada. Além disso, a internação não é indicada para casos de Síndrome Gripal sem sinais de desconforto respiratório.\n\nAlternativa (d) Correta. Esta alternativa segue rigorosamente o protocolo de manejo da Influenza. O oseltamivir deve ser iniciado preferencialmente nas primeiras 48 horas do início dos sintomas, pois é nesse período que o medicamento demonstra maior eficácia em reduzir a replicação viral, o tempo de sintomas e o risco de complicações graves. A orientação de retorno é fundamental para monitorar a evolução clínica.\n\nPortanto, diante de um paciente do grupo de risco com Influenza, a prescrição do antiviral e o manejo ambulatorial com orientações de vigilância são a conduta adequada.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Influenza"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  },
+  {
+    "id": "AJUDA_7d3354ec-b397-4350-b5b7-922a44fafdbd",
+    "originalId": "7d3354ec-b397-4350-b5b7-922a44fafdbd",
+    "statement": "Um paciente de oito anos de idade, previamente saudável, foi levado ao hospital em razão de crise tônico-clônica generalizada que dura cerca de três minutos. Recuperou-se bem, porém, no mesmo dia, apresentou novo episódio semelhante. O exame neurológico entre as crises evidenciou-se normal. Não houve febre. A tomografia computadorizada realizada no pronto atendimento mostrou-se normal. O pediatra busca definir conduta inicial. Nesse caso, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta hospitalar sem medicações e seguimento ambulatorial tardio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Início imediato de benzodiazepínico de uso contínuo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitação de punção lombar para todos os casos de crises repetidas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Início de anticonvulsivante de manutenção após segunda crise não provocada",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é necessário identificar que o paciente apresenta crises convulsivas recorrentes e não provocadas. A ausência de febre, a tomografia normal e o exame neurológico preservado entre os episódios direcionam o raciocínio para o diagnóstico de epilepsia e a necessidade de tratamento profilático.\n\nAlternativa a: Incorreta. A alta sem medicação e o seguimento tardio são condutas inadequadas para um paciente que já apresentou recorrência de crises no mesmo dia. O risco de novos episódios é elevado, e a intervenção deve ser mais imediata para garantir a segurança da criança. Geralmente, a conduta expectante é reservada apenas para a primeira crise não provocada.\n\nAlternativa b: Incorreta. Embora os benzodiazepínicos (como diazepam ou midazolam) sejam eficazes para interromper crises agudas no pronto-socorro, eles não são indicados para o tratamento de manutenção contínuo. Para o controle crônico, utilizam-se fármacos antiepilépticos específicos (como carbamazepina, valproato ou levetiracetam) que apresentam melhor perfil de tolerabilidade e eficácia a longo prazo, sem os riscos de sedação excessiva e tolerância associados aos benzodiazepínicos.\n\nAlternativa c: Incorreta. A punção lombar não é um exame de rotina para todos os casos de crises repetidas. Ela deve ser solicitada apenas diante de suspeita clínica de infecção do sistema nervoso central, como meningite ou encefalite. No caso descrito, o paciente está afebril, recuperou a consciência plenamente e possui exame neurológico normal, o que torna esse procedimento invasivo desnecessário.\n\nAlternativa d: Correta. Esta é a conduta padrão. O início do anticonvulsivante de manutenção está indicado após a ocorrência da segunda crise não provocada. A repetição do evento convulsivo sem um fator desencadeante agudo (como distúrbios metabólicos, intoxicações ou febre) define o risco aumentado de novas crises, justificando a introdução da terapia medicamentosa para estabilizar a atividade elétrica cerebral e prevenir morbidades.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Epilepsias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  },
+  {
+    "id": "AJUDA_7d4f3410-9264-4a5a-bbf6-3a79c78fa9f4",
+    "originalId": "7d4f3410-9264-4a5a-bbf6-3a79c78fa9f4",
+    "statement": "No controle da Tuberculose, o Tratamento Diretamente Observado (TDO/DOTS) é a estratégia prioritária recomendada pelo Ministério da Saúde e pela OMS. A implementação correta do TDO na Atenção Básica implica que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O TDO é indicado exclusivamente para pacientes em situação de rua ou com histórico de abandono prévio, não sendo necessário para pacientes com residência fixa e bom suporte familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O medicamento deve ser ingerido pelo paciente sob a supervisão de um profissional de saúde ou pessoa capacitada (como o ACS), em pelo menos 3 observações semanais na fase de ataque e 1 na fase de manutenção, ou conforme protocolo local, para garantir a adesão e prevenir resistência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O paciente deve ficar internado compulsoriamente durante os primeiros 2 meses de tratamento (fase intensiva) para garantir a toma da medicação e o isolamento respiratório, recebendo alta apenas na fase de manutenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A medicação deve ser entregue mensalmente ao paciente na farmácia da unidade, e a supervisão ocorre apenas por meio da contagem de comprimidos restantes na cartela durante a consulta médica de retorno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO Tratamento Diretamente Observado (TDO), também conhecido mundialmente pela sigla DOTS, é o pilar central da estratégia de controle da tuberculose. Seu objetivo principal é fortalecer a adesão do paciente ao esquema terapêutico, reduzindo o risco de abandono e o desenvolvimento de resistência bacteriana, além de garantir maiores taxas de cura.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Embora o TDO seja fundamental para populações em situação de vulnerabilidade social (como pessoas em situação de rua, privadas de liberdade ou com histórico de abandono), a recomendação do Ministério da Saúde é que ele seja oferecido a todos os pacientes com tuberculose pulmonar ou laríngea, independentemente de sua condição socioeconômica ou suporte familiar. A estratégia visa ao sucesso do tratamento em nível coletivo.\n\nAlternativa (b) Correta: Esta alternativa descreve a essência do TDO. A observação da ingestão dos medicamentos deve ser feita por um profissional de saúde ou pessoa capacitada (como o Agente Comunitário de Saúde - ACS), que atesta o ato de engolir os comprimidos. O protocolo do Ministério da Saúde preconiza, no mínimo, 3 observações semanais na fase de ataque (fase intensiva) e 2 na fase de manutenção. No entanto, a flexibilização conforme a realidade local e a necessidade do paciente é prevista, tornando a alternativa correta ao mencionar a supervisão e o objetivo de prevenir resistência.\n\nAlternativa (c) Incorreta: O tratamento da tuberculose é, por regra, ambulatorial, realizado preferencialmente na Unidade Básica de Saúde mais próxima da residência do paciente. A internação hospitalar é reservada para casos graves, complicações clínicas severas, intolerância medicamentosa intratável em nível ambulatorial ou situações sociais extremas que impossibilitem o tratamento. O isolamento respiratório é necessário apenas nos primeiros dias de tratamento efetivo e pode ser realizado no domicílio.\n\nAlternativa (d) Incorreta: A simples entrega mensal da medicação na farmácia com contagem de comprimidos na consulta de retorno caracteriza o tratamento autoadministrado, e não o Tratamento Diretamente Observado. No TDO, a supervisão é presencial e frequente, não se limitando ao controle burocrático do estoque de comprimidos pelo paciente.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  },
+  {
+    "id": "AJUDA_7d4fb5dd-457b-4763-9be8-5c41fd26b573",
+    "originalId": "7d4fb5dd-457b-4763-9be8-5c41fd26b573",
+    "statement": "Um homem de 35 anos é admitido no pronto atendimento devido a quadro de hematêmese. Refere viagem recente para o litoral, com retorno há 3 dias, após a qual desenvolveu quadro de infecção intestinal aguda com diarreia e vômitos desde então. Refere piora recente dos quadros de vômitos nas últimas 24 horas. Encontra-se hemodinamicamente estável e sem sinais de peritonite. Foi submetido à endoscopia digestiva alta após estabilização inicial que identificou uma laceração linear na região da transição esofagogástrica, sem sangramento ativo.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A localização mais comum desse tipo de lesão é junto à grande curvatura gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A maioria dos casos apresenta sangramento recorrente, sendo indicada abordagem cirúrgica em caso de recorrência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A embolização angiográfica da lesão constitui a primeira linha de tratamento em caso de ressangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Durante a endoscopia, a realização de biópsias é imprescindível para afastar a suspeita de neoplasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A maioria dos casos é autolimitada e apresenta resolução espontânea após 72 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descrito — hematêmese após episódios repetidos de vômitos vigorosos, com endoscopia revelando uma laceração linear na transição esofagogástrica — é clássico da Síndrome de Mallory-Weiss. Esta condição consiste em uma laceração longitudinal da mucosa que ocorre devido ao aumento súbito da pressão intra-abdominal.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A localização mais comum das lacerações de Mallory-Weiss é na pequena curvatura gástrica, logo abaixo da junção esofagogástrica, e não na grande curvatura. Em alguns casos, a lesão pode se estender para o esôfago distal.\n\nAlternativa b) Incorreta. O sangramento na Síndrome de Mallory-Weiss é, em sua grande maioria, autolimitado. A taxa de ressangramento é baixa, variando entre 5% e 10%. A abordagem cirúrgica é raramente necessária, sendo reservada apenas para casos graves em que o tratamento endoscópico e a radiologia intervencionista falharam em controlar a hemorragia.\n\nAlternativa c) Incorreta. A primeira linha de tratamento para pacientes com sangramento ativo ou sinais de risco na endoscopia é a terapia endoscópica (como injeção de adrenalina, eletrocoagulação térmica ou uso de hemoclipes). A embolização angiográfica é considerada uma terapia de resgate quando a endoscopia não obtém sucesso.\n\nAlternativa d) Incorreta. A realização de biópsias não é recomendada no quadro agudo de Mallory-Weiss. O diagnóstico é eminentemente clínico e visual pela endoscopia. Além de desnecessária para o diagnóstico da laceração, a biópsia em uma área de lesão aguda pode aumentar o risco de sangramento e não há suspeita de neoplasia em uma lesão com características traumáticas claras após vômitos.\n\nAlternativa e) Correta. Esta é a característica principal da síndrome. Em cerca de 80% a 90% dos pacientes, o sangramento para espontaneamente com o manejo conservador, que inclui repouso gástrico, antieméticos e inibidores de bomba de prótons. As lacerações costumam cicatrizar rapidamente, geralmente dentro de 48 a 72 horas.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  },
+  {
+    "id": "AJUDA_7d55a781-e7a3-4d40-9a4e-39a029c47b2b",
+    "originalId": "7d55a781-e7a3-4d40-9a4e-39a029c47b2b",
+    "statement": "Menina de três anos, previamente hígida, apresenta quadro clínico compatível com meningite bacteriana aguda e glicemia de 90 mg%. Ao ser submetida à punção lombar, qual das opções de análise de seu líquor é tipicamente mais compatível com a situação apresentada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 células/mm³, glicose de 70 mg% e proteínas de 20 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1.000 células/mm³, com predomínio de 80% de polimorfonucleares neutrófilos, glicose de 10 mg% e proteinorraquia de 180 mg%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "80 células/mm³ com predomínio de linfócitos, proteinorraquia de 40 mg/dL e glicose de 74 mg%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "100 células/mm³, proteinorraquia de 80 mg/dL e glicose de 80 mg%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é fundamental conhecer o perfil liquórico clássico da meningite bacteriana aguda e compará-lo com os valores de normalidade e com outros tipos de meningite (como a viral).\n\nO quadro típico de uma meningite bacteriana apresenta:\n1. Pleocitose acentuada: Geralmente acima de 1.000 células/mm³.\n2. Predomínio de polimorfonucleares (neutrófilos): Comumente acima de 80%.\n3. Hipoglicorraquia: Glicose baixa no líquor, geralmente menor que 40 mg/dL ou menor que 50% a 60% da glicemia plasmática. No caso da paciente, com glicemia de 90 mg/dL, a glicose liquórica deveria estar abaixo de 45-54 mg/dL.\n4. Hiperproteinorraquia: Proteínas elevadas, frequentemente acima de 100 mg/dL, devido ao aumento da permeabilidade da barreira hematoencefálica e presença de exsudato inflamatório.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Estes valores (3 células/mm³, glicose de 70 mg/dL e proteínas de 20 mg/dL) representam um líquor dentro dos padrões da normalidade para uma criança dessa idade.\n\nAlternativa b) Correta. Esta alternativa descreve perfeitamente o perfil da meningite bacteriana aguda: intensa reação inflamatória (1.000 células), predomínio de neutrófilos (80%), consumo acentuado de glicose (10 mg/dL, o que é bem inferior à metade da glicemia de 90 mg/dL) e proteínas significativamente elevadas (180 mg/dL).\n\nAlternativa c) Incorreta. Um padrão com poucas células (80/mm³), predomínio de linfócitos e glicose normal (74 mg/dL) é característico de meningites virais ou quadros iniciais de outras patologias, não correspondendo à gravidade e ao perfil celular da meningite bacteriana aguda.\n\nAlternativa d) Incorreta. Embora apresente um leve aumento de células e proteínas, a glicose está muito alta (80 mg/dL), praticamente igual à glicemia plasmática (90 mg/dL). Na meningite bacteriana, as bactérias e as células de defesa consomem a glicose, resultando em valores baixos. Além disso, a contagem de células está baixa para o padrão bacteriano clássico.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Emergências Pediátricas",
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  },
+  {
+    "id": "AJUDA_7d6a83cd-4f42-4eb4-aae4-3a2742148dee",
+    "originalId": "7d6a83cd-4f42-4eb4-aae4-3a2742148dee",
+    "statement": "Mulher de 48 anos, previamente hígida, é admitida no pronto-socorro com quadro de dor abdominal em andar superior, náuseas e vômitos há 24 horas. Exames laboratoriais revelam elevação de amilase e lipase séricas, além de leve aumento de bilirrubinas e transaminases. A ultrassonografia de abdome mostra vesícula biliar com múltiplos cálculos, tendo o colédoco calibre normal. O diagnóstico de pancreatite aguda biliar leve é confirmado. A paciente evolui bem com tratamento clínico conservador, apresentando melhora progressiva do quadro. A conduta mais adequada em relação à possível indicação de colecistectomia no caso seria:",
+    "options": [
+      {
+        "id": "A",
+        "text": "não realizar colecistectomia, pois o tratamento clínico é suficiente na pancreatite biliar leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar colecistectomia somente se houver recorrência de novos episódios de pancreatite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar a colecistectomia durante a mesma internação, assim que houver resolução clínica da pancreatite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "adiar a colecistectomia por pelo menos 6 semanas após a alta hospitalar, para evitar complicações operatórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo cirúrgico da pancreatite aguda de etiologia biliar, um tema recorrente em provas de residência. A paciente apresenta um quadro clássico de pancreatite leve (sem falência orgânica ou complicações locais mencionadas) e a conduta definitiva visa prevenir a recorrência de eventos biliares.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o tratamento clínico (hidratação, analgesia e suporte) seja fundamental para a resolução do processo inflamatório agudo, a pancreatite biliar é causada pela passagem de cálculos da vesícula para a via biliar. Se a vesícula biliar não for removida, o paciente permanece sob alto risco de novos episódios de pancreatite, colecistite ou colangite.\n\nb) Incorreta. Não se deve aguardar a recorrência para indicar a cirurgia. O primeiro episódio de pancreatite biliar já é uma indicação formal de colecistectomia profilática para evitar complicações potencialmente graves no futuro.\n\nc) Correta. Em casos de pancreatite aguda biliar de intensidade leve, o padrão-ouro é a realização da colecistectomia durante a mesma internação hospitalar (internação de índice), assim que o paciente apresente melhora clínica (ausência de dor, retorno da dieta e normalização parcial ou total de marcadores). Estudos demonstram que postergar a cirurgia após a alta aumenta significativamente a taxa de readmissão por novas complicações biliares em um curto período de tempo.\n\nd) Incorreta. O adiamento da cirurgia por um período de 6 a 12 semanas é reservado para casos de pancreatite aguda grave ou com coleções peripancreáticas (como necrose ou pseudocistos). Nesses cenários, espera-se a resolução da resposta inflamatória sistêmica intensa e a organização ou reabsorção das coleções para tornar o procedimento cirúrgico mais seguro. Na pancreatite leve, esse atraso é desnecessário e perigoso.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Vesícula e Vias Biliares",
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  },
+  {
+    "id": "AJUDA_7d75ec40-a3e3-4ca6-97ef-089a9b73ed98",
+    "originalId": "7d75ec40-a3e3-4ca6-97ef-089a9b73ed98",
+    "statement": "Uma paciente de 34 anos de idade foi atendida pela primeira vez em uma unidade básica de saúde (UBS) após sentir dores de cabeça frequentes e pressão alta. A equipe de APS realizou uma avaliação inicial, orientou sobre a importância de mudanças no estilo de vida e agendou uma consulta de retorno para acompanhamento. Durante o atendimento, a paciente comentou que já esteve em uma emergência hospitalar por conta da pressão alta, mas que nunca conseguiu acompanhamento regular. Com base nessa situação hipotética, assinale a alternativa que apresenta um dos principais papéis da atenção primária à saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "acompanhar a paciente ao longo do tempo, coordenando seu cuidado e monitorando sua condição de saúde",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "enviar a paciente à emergência para resolver imediatamente o problema de pressão alta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar uma série de exames laboratoriais e de imagem para investigar todas as possíveis causas da hipertensão",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "limitar o atendimento às queixas atuais da paciente e aguardá-la buscar a unidade de saúde novamente no caso do retorno dos sintomas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "encaminhar a paciente para o especialista focal, em razão de quadros de hipertensão anteriormente apresentados",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a letra (a).\n\nA questão aborda os atributos essenciais da Atenção Primária à Saúde (APS), especificamente a longitudinalidade e a coordenação do cuidado, aplicados ao manejo de uma condição crônica prevalente como a hipertensão arterial.\n\nAlternativa (a) Correta: Um dos pilares da APS é a longitudinalidade, que pressupõe o acompanhamento do paciente ao longo do tempo pela mesma equipe, criando vínculo e permitindo um melhor controle de doenças crônicas. Além disso, cabe à APS a coordenação do cuidado, o que significa organizar a jornada do paciente dentro do sistema de saúde, garantindo que ele não perca o seguimento, conforme o histórico relatado de passagens prévias pela emergência sem acompanhamento regular.\n\nAlternativa (b) Incorreta: O encaminhamento à emergência hospitalar é reservado para crises hipertensivas com lesão de órgão-alvo ou risco iminente de morte. No caso descrito, a paciente apresenta um quadro crônico que deve ser estabilizado e monitorado ambulatorialmente na própria Unidade Básica de Saúde. O uso indiscriminado da emergência fragmenta o cuidado.\n\nAlternativa (c) Incorreta: A investigação clínica deve ser pautada na racionalidade diagnóstica e na prevenção quaternária (evitar danos causados por intervenções médicas desnecessárias). Solicitar uma bateria exaustiva de exames para \"todas as causas possíveis\" logo no início é ineficiente e não condiz com a prática da Medicina de Família e Comunidade, que prioriza a investigação das causas mais comuns (hipertensão essencial) antes de buscar causas secundárias raras.\n\nAlternativa (d) Incorreta: Esta alternativa descreve um modelo de assistência puramente reativo e fragmentado, que é o oposto do que se propõe na APS. O objetivo da equipe de saúde não é apenas resolver a queixa pontual, mas sim realizar a promoção da saúde e o gerenciamento de riscos a longo prazo.\n\nAlternativa (e) Incorreta: A hipertensão arterial é, em sua grande maioria, uma condição de manejo pleno pela Atenção Primária. O encaminhamento ao especialista (como cardiologista ou nefrologista) deve ser reservado para casos de hipertensão resistente, suspeita de hipertensão secundária ou lesões graves de órgãos-alvo que exijam intervenções de maior densidade tecnológica, o que não é a regra no atendimento inicial.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  },
+  {
+    "id": "AJUDA_7d7c2cc1-3fe2-45d0-ad2a-1786f7189a14",
+    "originalId": "7d7c2cc1-3fe2-45d0-ad2a-1786f7189a14",
+    "statement": "Apolinário, 86 anos, perfil 3 de funcionalidade, com Alzheimer em estágio avançado, hipertenso, diabético e com imobilidade grau IV, em uso de medicação para as doenças de base, é levado à consulta médica.\nSobre seu quadro clínico, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "deve ser feito controle rigoroso da hipertensão e diabetes, com vistas à reabilitação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "todas as medicações em uso certamente são essenciais e devem ser mantidas, independentemente de se configurar a polifarmácia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apolinário apresenta dependência parcial para as atividades básicas da vida diária;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "uma equipe multiprofissional deve ser acionada para reabilitação de Apolinário;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Apolinário é um paciente em cuidados paliativos prolongados ou em fase final de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A análise desta questão exige o conhecimento sobre geriatria, funcionalidade e critérios para cuidados paliativos.\n\nO paciente Apolinário apresenta um quadro de extrema fragilidade: 86 anos, Alzheimer em estágio avançado (o que implica perda cognitiva e funcional grave), imobilidade grau IV (estágio máximo de restrição ao leito ou poltrona) e perfil 3 de funcionalidade (que caracteriza dependência total).\n\nAnálise das alternativas:\n\na) Incorreta. Em pacientes com idade avançada, demência em estágio terminal e alta fragilidade, o controle rigoroso (metas estritas de PA e glicemia) é contraindicado. O foco deixa de ser a prevenção de eventos cardiovasculares a longo prazo e passa a ser o conforto, evitando hipoglicemias e hipotensão iatrogênica, que aumentam a morbimortalidade. Além disso, a reabilitação funcional plena não é um objetivo realista neste cenário de imobilidade grau IV.\n\nb) Incorreta. O manejo do paciente frágil envolve a prática da desprescrição. Muitas medicações perdem o sentido clínico (ex.: estatinas para prevenção primária ou controle glicêmico intensivo) quando a expectativa de vida é limitada e o risco de efeitos colaterais supera os benefícios. A polifarmácia deve ser combatida para priorizar a qualidade de vida.\n\nc) Incorreta. Apolinário apresenta dependência total, e não parcial. O estágio avançado do Alzheimer e a imobilidade grau IV indicam que o paciente necessita de auxílio para todas as Atividades Básicas da Vida Diária (ABVDs), como higiene, alimentação e transferência.\n\nd) Incorreta. Embora a equipe multiprofissional seja fundamental em qualquer estágio do cuidado geriátrico, o objetivo para um paciente com imobilidade grau IV e demência avançada não é a \"reabilitação\" no sentido de recuperação de funções perdidas, mas sim o manejo de sintomas, a prevenção de lesões por pressão e o suporte aos familiares.\n\ne) Correta. O quadro descrito preenche critérios para cuidados paliativos. O Alzheimer em estágio avançado é uma doença neurodegenerativa incurável e progressiva. A associação com a imobilidade total e a idade avançada coloca o paciente em uma trajetória de fim de vida ou cuidados paliativos prolongados, em que o foco terapêutico deve ser a dignidade, o controle de sintomas e o suporte psicossocial, em vez de medidas curativas ou preventivas agressivas.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  },
+  {
+    "id": "AJUDA_7d8461f5-adec-4b62-aec3-4830d1f0d07c",
+    "originalId": "7d8461f5-adec-4b62-aec3-4830d1f0d07c",
+    "statement": "Recentemente, houve um grande aumento da indicação da cirurgia bariátrica. Considerando esse contexto, analise as assertivas a seguir sobre a obesidade mórbida:\n\nI. Doença renal terminal está associada à obesidade mórbida.\nII. Obesidade mórbida está associada ao risco de câncer de próstata.\nIII. A alteração mais frequente em obesos mórbidos é artrite com doença articular degenerativa.\nIV. Alterações epigenéticas são frequentes no desenvolvimento da obesidade mórbida.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II, III e IV.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS ASSERTIVAS:\n\nItem I está correto: A obesidade grave é um fator de risco independente para doença renal crônica e progressão para doença renal terminal. Os mecanismos envolvem a hiperfiltração glomerular (glomerulopatia relacionada à obesidade, com padrão de glomeruloesclerose segmentar e focal secundária), além dos danos microvasculares associados à hipertensão arterial e ao diabetes mellitus tipo 2, que frequentemente coexistem nesses pacientes.\n\nItem II está correto: A obesidade está associada a múltiplos tipos de câncer, incluindo o câncer de próstata. Pacientes obesos apresentam maior risco de desenvolver formas mais agressivas e indiferenciadas da neoplasia, com pior prognóstico, mediado por alterações hormonais, resistência insulínica, aumento de IGF-1 e inflamação crônica de baixo grau.\n\nItem III está correto: A osteoartrite ou doença articular degenerativa é a complicação musculoesquelética mais frequente em indivíduos com obesidade mórbida. Decorre tanto da sobrecarga mecânica contínua sobre as articulações de carga (joelhos, quadris e coluna lombar) quanto da ação pró-inflamatória sistêmica de adipocinas que aceleram a degradação da cartilagem articular.\n\nItem IV está correto: A patogênese da obesidade envolve uma complexa interação entre fatores genéticos, ambientais e epigenéticos. Mecanismos como a metilação do DNA e modificações de histonas, influenciados pelo ambiente intrauterino e hábitos de vida, regulam a expressão de genes ligados ao apetite, gasto energético e metabolismo lipídico, predispondo à obesidade mórbida.\n\nANÁLISE DAS ALTERNATIVAS:\n\n- Alternativa a: Incorreta. As assertivas II e III também são verdadeiras.\n- Alternativa b: Incorreta. As assertivas I e IV também são verdadeiras.\n- Alternativa c: Incorreta. A assertiva IV também é verdadeira.\n- Alternativa d: Correta. Todas as quatro assertivas (I, II, III e IV) estão corretas e fundamentadas na fisiopatologia da obesidade mórbida.\n\nGabarito: Alternativa d.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  },
+  {
+    "id": "AJUDA_7d8ac081-8813-4f83-8d6b-0e911b42ed1e",
+    "originalId": "7d8ac081-8813-4f83-8d6b-0e911b42ed1e",
+    "statement": "Um novo morador do território de uma Unidade de Saúde da Família (USF) é visitado pelo agente comunitário de saúde (ACS) que oferece os serviços da unidade de saúde e a possibilidade de cadastramento, no sistema de saúde do município. Durante a visita, o morador pergunta para o ACS qual o horário de funcionamento da USF e é informado que ela funciona das 7:30 h até às 17:00 h. O morador, então, comenta que possivelmente não conseguirá usar este serviço de saúde, pois sai de casa às 7:00 h da manhã e só retorna do trabalho às 20:00 h. Considerando a atenção primária à saúde como porta preferencial do sistema de saúde, qual a dimensão da acessibilidade está prejudicada na situação descrita acima?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Econômica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Comodidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Disponibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aceitabilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário dominar o conceito de Acessibilidade na Atenção Primária à Saúde (APS), especificamente as dimensões propostas por Penchansky e Thomas, que analisam o ajuste entre o usuário e o sistema de saúde.\n\nA situação descrita foca no conflito entre o horário de trabalho do morador e o horário de funcionamento da Unidade de Saúde da Família (USF). Quando a organização dos serviços (horários, agendamentos, formas de contato) não é compatível com as possibilidades do usuário, estamos diante de um problema na dimensão da Comodidade (também chamada de Acomodação).\n\nAnálise das alternativas:\n\na) Econômica: Esta dimensão refere-se à capacidade do usuário de arcar com os custos do atendimento, que podem ser diretos (taxas) ou indiretos (custo do transporte, perda de um dia de trabalho). Embora o trabalho esteja envolvido, o foco da questão é a incompatibilidade de horários, e não a falta de recursos financeiros do morador para acessar a unidade.\n\nb) Comodidade (ou Acomodação): Esta é a alternativa correta. Ela avalia como o serviço está organizado para receber o usuário. Inclui o horário de funcionamento, a facilidade em marcar consultas, o tempo de espera no local e a capacidade do serviço de se adaptar às necessidades rotineiras da população. O fato de o morador trabalhar exatamente no período em que a unidade está aberta exemplifica uma falha nesta dimensão.\n\nc) Disponibilidade: Refere-se à relação entre a quantidade de serviços e profissionais existentes e a demanda da população. Questiona-se aqui se há médicos suficientes, se há vacinas ou se a unidade existe no território. No caso, a unidade existe e oferece serviços; o problema é \"quando\" eles são oferecidos.\n\nd) Aceitabilidade: Esta dimensão trata da relação interpessoal e cultural entre usuários e profissionais de saúde. Envolve a confiança no serviço, o respeito às crenças, o gênero do profissional e a satisfação com o atendimento. A questão não menciona barreiras culturais ou de relacionamento, apenas o impedimento logístico do horário.\n\nPortanto, a dificuldade de acesso gerada por horários rígidos que coincidem com a jornada de trabalho do cidadão é um prejuízo na dimensão da Comodidade.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:50.696Z"
+  }
+]

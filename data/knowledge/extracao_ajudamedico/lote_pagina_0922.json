@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_ffc54c62-41b6-440d-b7e8-afe27fb52b71",
+    "originalId": "ffc54c62-41b6-440d-b7e8-afe27fb52b71",
+    "statement": "Uma mulher de 26 anos apresenta um quadro pruriginoso, com ardência e vermelhidão nas pálpebras. Ela não faz uso de cosméticos na face, mas costuma sempre usar esmalte nas unhas. Não apresenta qualquer outra queixa de saúde. O médico desconfia que se trata de uma dermatite de contato por possível hábito de levar as mãos aos olhos. Em relação ao caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um diagnóstico compatível que deve ser notificado no Sistema de Informação de Agravos de Notificação (SINAN), imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O esmalte habitualmente não causa dermatite por contato, sendo esse um diagnóstico pouco provável, não devendo haver qualquer tipo de notificação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Qualquer dermatite é de notificação compulsória no SINAN e assim, mesmo sem a certeza diagnóstica, ela deve ser feita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de um diagnóstico compatível e, no caso, não é de notificação compulsória no SINAN, pois somente as dermatites ocupacionais o são.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda um cenário clássico da dermatologia clínica associado às normas de vigilância epidemiológica do Ministério da Saúde.\n\nAnálise do Diagnóstico Clínico:\nO quadro descrito é típico de uma dermatite de contato alérgica. O uso de esmaltes de unha é uma das causas mais comuns de dermatite nas pálpebras (dermatite ectópica), pois a pele dessa região é muito fina e sensível, reagindo a substâncias alérgenas (como formaldeído ou resinas) presentes no esmalte e que são levadas aos olhos pelo hábito de tocar o rosto.\n\nAnálise das Alternativas e Notificação (SINAN):\n\nAlternativa a) Incorreta. Embora o diagnóstico seja compatível, a dermatite de contato comum não consta na Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública. Portanto, não há obrigatoriedade de notificação imediata ou de qualquer outro tipo para este caso clínico isolado.\n\nAlternativa b) Incorreta. A primeira parte da afirmação está clinicamente errada, pois o esmalte é, comprovadamente, um agente frequente de dermatite de contato por sensibilização. A segunda parte acerta ao dizer que não deve haver notificação, mas o motivo não é a improbabilidade do diagnóstico, e sim as regras do sistema de vigilância.\n\nAlternativa c) Incorreta. Não são todas as dermatites que devem ser notificadas. O Sistema de Informação de Agravos de Notificação (SINAN) foca em doenças infectocontagiosas de interesse público, eventos-sentinela, violência e agravos relacionados especificamente ao trabalho.\n\nAlternativa d) Correta. O diagnóstico de dermatite de contato por esmalte é perfeitamente compatível com a história clínica da paciente. No contexto da saúde pública brasileira, as dermatoses só se tornam de notificação compulsória quando são classificadas como dermatoses ocupacionais (relacionadas ao trabalho), conforme estabelecido na lista de agravos à saúde do trabalhador. Como o caso em questão não apresenta nexo causal com a atividade profissional da paciente, não há indicação de notificação no SINAN.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Dermatoses Eczematosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  },
+  {
+    "id": "AJUDA_ffcb07c9-56c8-4183-80cd-cc1008e2c958",
+    "originalId": "ffcb07c9-56c8-4183-80cd-cc1008e2c958",
+    "statement": "Maria, 10 anos de idade, com história de febre há 5 dias, evoluindo há 24 horas com piora clínica, dispneia, do ventilatório dependente, sonolência, tosse produtiva. Ao exame físico: sonolenta, pálida, dispneica, hidratada, tiragem sub e intercostal\nAP: crepitações em hemitórax direito\nFR: 30 ipm\nSO2: 90% em ar ambiente\nFc: 165 bpm, ritmo sinusal\nPulsos periféricos finos\nPcp: 4 segundos\nPA: 80x40 mmhg\nEcg: 10\nAnte o exposto, o possível diagnóstico do quadro que a trouxe a urgência é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Choque cardiogênico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sepse",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Choque séptico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Abcesso pulmonar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, o segredo está em diferenciar o diagnóstico etiológico (a causa) do diagnóstico sindrômico (o estado clínico atual). Maria tem uma pneumonia, mas o que a traz à urgência com gravidade não é apenas a infecção no pulmão, mas sim a falência sistêmica decorrente dela.\n\nANÁLISE CLÍNICA DO CASO:\nA paciente apresenta um foco infeccioso evidente: febre há 5 dias, tosse produtiva e crepitações em base direita (Pneumonia). No entanto, o quadro evoluiu com disfunções orgânicas graves:\n1. Neurológica: Sonolência (alteração do nível de consciência).\n2. Respiratória: Hipoxemia (SatO2 90%) e esforço respiratório importante.\n3. Cardiovascular: Taquicardia (165 bpm), redução da perfusão periférica (pulsos finos e tempo de enchimento capilar de 4 segundos) e hipotensão arterial (80x40 mmHg).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): A pneumonia é a doença de base, o diagnóstico etiológico. No entanto, ela não define a gravidade sistêmica da paciente. Se o diagnóstico fosse apenas \"pneumonia\", esperaríamos uma paciente estável hemodinamicamente, o que não é o caso.\n\nAlternativa B (Incorreta): O choque cardiogênico ocorre por falha na bomba cardíaca. Embora o choque séptico possa ter um componente de depressão miocárdica, o histórico de febre e tosse produtiva antes do colapso aponta para uma etiologia infecciosa (sepse) como causa primária, e não uma cardiopatia primária.\n\nAlternativa C (Correta): Segundo as definições atuais (Sepsis-3), a sepse é uma disfunção orgânica potencialmente fatal causada por uma resposta desregulada do hospedeiro à infecção. Maria apresenta disfunção respiratória, neurológica e cardiovascular secundárias à pneumonia, o que caracteriza perfeitamente a Síndrome Séptica.\n\nAlternativa D (Incorreta): Clinicamente, Maria está em choque (hipotensão e má perfusão). Contudo, em provas de residência, o termo \"Choque Séptico\", por definição técnica, muitas vezes é reservado para o quadro que persiste após a ressuscitação volêmica adequada. Como o enunciado não descreve a resposta da paciente à infusão de líquidos, a alternativa \"Sepse\" torna-se o diagnóstico sindrômico mais abrangente e seguro para a banca.\n\nAlternativa E (Incorreta): O abscesso pulmonar é uma complicação local da pneumonia necrotizante. Ele explicaria a febre e a tosse, mas não justifica por si só a hipotensão, a sonolência e a má perfusão sistêmica.\n\nCONCLUSÃO:\nO examinador exige que o aluno identifique que a paciente ultrapassou os limites de uma infecção localizada e entrou em uma resposta sistêmica grave. A presença de disfunção de múltiplos órgãos (coração, pulmão e cérebro) em um contexto infeccioso confirma o diagnóstico de Sepse.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Sepse",
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  },
+  {
+    "id": "AJUDA_ffcba83e-b9da-4f24-9be6-35d2f7c06116",
+    "originalId": "ffcba83e-b9da-4f24-9be6-35d2f7c06116",
+    "statement": "Mulher de 62 anos, tabagista de longa data, portadora de HIV com carga viral indetectável e CD4 de 480, procura atendimento por dor anal progressiva há 4 meses, associada a sangramento ocasional e sensação de massa local. Ao exame proctológico, observa-se lesão ulcerovegetante de aproximadamente 3,5 cm localizada no canal anal, dolorosa à palpação, sem extensão aparente para a pele perianal. A palpação inguinal revela linfonodo de 1,5 cm à direita, móvel e doloroso. Biópsia da lesão confirma carcinoma espinocelular (CEC) de canal anal. A tomografia de pelve mostra espessamento tumoral sem invasão de estruturas adjacentes e linfonodo inguinal aumentado, sem outras metástases. Qual é o tratamento de escolha para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressecção local ampla com margens livres",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Amputação abdominoperineal (cirurgia de Miles)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quimiorradioterapia combinada com 5-FU e mitomicina C",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Radioterapia isolada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quimioterapia sistêmica exclusiva",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, o ponto central é identificar que o Carcinoma Espinocelular (CEC) de canal anal possui uma abordagem terapêutica radicalmente diferente da maioria dos outros tumores do trato gastrointestinal. Enquanto o câncer de reto frequentemente exige cirurgia, o padrão-ouro para o CEC de canal anal é o tratamento conservador com preservação do esfíncter.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A ressecção local ampla é reservada apenas para casos muito específicos de tumores pequenos (geralmente menores que 2 cm), bem diferenciados e localizados na margem anal (fora do canal anal propriamente dito), onde é possível obter margens livres sem comprometer a continência fecal. No caso descrito, a lesão tem 3,5 cm e está no canal anal.\n\nb) Incorreta. A Amputação Abdominoperineal (Cirurgia de Miles) já foi o tratamento de escolha no passado, mas hoje é reservada apenas como cirurgia de resgate para casos de falha do tratamento quimiorradioterápico ou em casos de recidiva tumoral. Não deve ser a conduta inicial.\n\nc) Correta. O tratamento de primeira linha para o CEC de canal anal é a Quimiorradioterapia combinada, baseada no consagrado Protocolo de Nigro, que utiliza 5-Fluorouracil (5-FU) e Mitomicina C. O objetivo é a cura com preservação da função esfincteriana. É importante notar que o status de HIV positivo da paciente não contraindica este tratamento, especialmente com carga viral indetectável e contagem de CD4 acima de 200, apresentando taxas de resposta similares às de pacientes soronegativos.\n\nd) Incorreta. A radioterapia isolada apresenta taxas de recidiva local significativamente maiores e menor sobrevida quando comparada à terapia combinada com quimioterapia. A quimioterapia atua como um radiossensibilizador, potencializando o efeito destrutivo sobre as células neoplásicas.\n\ne) Incorreta. A quimioterapia sistêmica exclusiva é utilizada em casos de doença metastática à distância (M1). Embora a paciente apresente linfonodo inguinal (que é considerado metástase regional para este sítio anatômico e não metástase à distância), o tratamento local e regional curativo ainda é a quimiorradioterapia.\n\nFUNDAMENTAÇÃO ADICIONAL: \nNo estadiamento deste caso, a presença do linfonodo inguinal (estadiamento N) não muda a indicação do Protocolo de Nigro; pelo contrário, reforça a necessidade da radioterapia cobrindo as cadeias drenantes inguinais e pélvicas associada à quimioterapia. O tabagismo e a infecção pelo HPV (frequentemente associada ao HIV) são os principais fatores de risco para essa patologia.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  },
+  {
+    "id": "AJUDA_ffcdb33c-29e3-4fc8-b8f5-50ae11e47cec",
+    "originalId": "ffcdb33c-29e3-4fc8-b8f5-50ae11e47cec",
+    "statement": "Homem, 72 anos, apresenta quadro de dor epigástrica há cerca de 90 dias. Na última semana, apresentou quadro de hemorragia digestiva baixa. EDA mostra lesão submucosa, com área de ulceração central, com cerca de 4 cm na região do corpo do estômago. Biópsia endoscópica não revela tumor. Tomografia computadorizada de abdome sugere diagnóstico de tumor do estroma gastrointestinal (GIST) de 8 cm no maior diâmetro. Considerando o caso apresentado, analise as assertivas a seguir:\n\nI. Biópsia percutânea guiada por tomografia computadorizada é o melhor método para definir o diagnóstico dessa lesão.\nII. O exame imunoistoquímico é fundamental para o diagnóstico desses tumores.\nIII. A profundidade da invasão na parede gástrica e a presença de linfonodos comprometidos são os principais fatores prognósticos para definir a sobrevida.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das assertivas:\n\nASSERTIVA I: INCORRETA. A realização de biópsia percutânea (guiada por tomografia ou ultrassonografia) é contraindicada em lesões suspeitas de GIST que são potencialmente ressecáveis. Isso ocorre porque esses tumores são extremamente friáveis e possuem uma cápsula delicada; a punção pode causar a ruptura da cápsula, levando ao extravasamento de células tumorais na cavidade abdominal (disseminação peritoneal ou seeding), além de aumentar o risco de hemorragia. O diagnóstico definitivo é geralmente obtido após a cirurgia. Se houver necessidade de confirmação prévia (para terapia neoadjuvante), o método de escolha é a ecoendoscopia com punção por agulha fina (FNA).\n\nASSERTIVA II: CORRETA. A imunoistoquímica é indispensável para confirmar o GIST e diferenciá-lo de outros tumores mesenquimais, como leiomiomas, leiomiossarcomas ou schwannomas. A grande maioria dos GISTs (cerca de 95%) expressa a proteína KIT (CD117). Outro marcador altamente sensível e específico utilizado é o DOG1.\n\nASSERTIVA III: INCORRETA. Os fatores utilizados para definir o prognóstico e o risco de recidiva no GIST são diferentes dos utilizados no adenocarcinoma gástrico. Para o GIST, os principais preditores de comportamento biológico são: o tamanho do tumor, o índice mitótico (quantidade de mitoses identificadas em 50 campos de grande aumento) e a localização da lesão (tumores gástricos costumam ter melhor prognóstico que os de intestino delgado). Diferente dos carcinomas, o GIST raramente apresenta disseminação linfonodal (menos de 5% dos casos), por isso a linfadenectomia não é realizada de rotina na cirurgia.\n\nConclusão: Apenas a assertiva II está correta, validando a alternativa (b).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  },
+  {
+    "id": "AJUDA_ffce3818-bd2e-4a7a-a013-426cb6492e60",
+    "originalId": "ffce3818-bd2e-4a7a-a013-426cb6492e60",
+    "statement": "Paciente, feminino, 68 anos de idade, tabagista ativa (30 anos-maço), apresenta-se com dispneia progressiva há 3 semanas, que piora aos esforços e melhora com o repouso. Ao exame físico, o médico identifica cianose discreta em extremidades e redução da expansibilidade torácica bilateral. Assinale a alternativa que apresenta, corretamente, o achado mais consistente com o diagnóstico de doença pulmonar obstrutiva crônica (DPOC).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crepitação fina inspiratória difusa com ausência de sibilos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Frêmito tátil aumentado com estertores crepitantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Macicez à percussão com broncofonia aumentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução do diâmetro anteroposterior do tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sibilos expiratórios e diminuição do murmúrio vesicular.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clínico altamente sugestivo de Doença Pulmonar Obstrutiva Crônica (DPOC), considerando a idade avançada, a carga tabágica significativa (30 anos-maço) e a dispneia progressiva aos esforços. A DPOC é caracterizada por uma limitação crônica ao fluxo aéreo, decorrente de uma combinação de doença de pequenas vias aéreas (bronquite obstrutiva) e destruição parenquimatosa (enfisema).\n\nDISTRIBUIÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Crepitações finas (estertores em velcro) são típicas de doenças pulmonares intersticiais, como a fibrose pulmonar idiopática. Na DPOC, quando existem estertores, eles costumam ser grossos e decorrentes de secreção em grandes vias aéreas, não sendo o achado mais consistente da patologia.\n\nAlternativa b) Incorreta. O frêmito tátil-vocal (FTV) encontra-se aumentado em situações de consolidação pulmonar (como na pneumonia), pois o som se propaga melhor em meios sólidos. Na DPOC, ocorre o aprisionamento de ar e a hiperinsuflação, o que atua como um isolante acústico, resultando em FTV diminuído ou normal.\n\nAlternativa c) Incorreta. A macicez à percussão e a broncofonia aumentada são sinais de consolidação ou presença de líquido no espaço pleural. Na DPOC, o achado clássico à percussão é o hipertimpanismo, reflexo do aumento do volume residual e da hiperinsuflação pulmonar.\n\nAlternativa d) Incorreta. Ocorre o oposto do descrito. Devido ao aprisionamento aéreo crônico e à perda da elasticidade pulmonar, há um aumento do diâmetro anteroposterior do tórax, configurando o chamado tórax em tonel ou tórax enfisematoso.\n\nAlternativa e) Correta. Esta alternativa descreve os achados semiológicos clássicos da obstrução ao fluxo aéreo e da hiperinsuflação. Os sibilos expiratórios ocorrem devido ao estreitamento das vias aéreas e a redução do murmúrio vesicular acontece pela destruição dos alvéolos (no enfisema) e pelo maior distanciamento entre o parênquima e a parede torácica causado pelo acúmulo de ar.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  },
+  {
+    "id": "AJUDA_ffd00eb3-f4a4-449c-b19f-20ec20f763ce",
+    "originalId": "ffd00eb3-f4a4-449c-b19f-20ec20f763ce",
+    "statement": "Qual dos testes abaixo NÃO pode ser utilizado no diagnóstico diferencial da rotura prematura das membranas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fern test",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alfa-1 microglobulina placentária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fibronectina fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manobra de Turnier",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fator de crescimento placentário",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para o diagnóstico da rotura prematura de membranas (RPM), o médico deve buscar evidências da presença de líquido amniótico no canal vaginal ou a visualização direta da saída do líquido pelo colo uterino. Abaixo, analisamos cada alternativa:\n\nAlternativa a) Incorreta. O Fern test, conhecido no Brasil como teste da cristalização, é um método clássico de diagnóstico. O líquido amniótico, devido à sua concentração de cloreto de sódio e proteínas, ao secar em uma lâmina de vidro à temperatura ambiente, forma um padrão microscópico que lembra folhas de samambaia.\n\nAlternativa b) Incorreta. A alfa-1-microglobulina placentária (PAMG-1) é uma proteína presente em altas concentrações no líquido amniótico e em concentrações mínimas no sangue ou secreções vaginais normais. Testes comerciais rápidos (como o AmniSure) utilizam anticorpos monoclonais para detectá-la, sendo altamente sensíveis e específicos para confirmar a rotura das membranas.\n\nAlternativa c) Incorreta. A fibronectina fetal é uma glicoproteína que atua como uma \"cola biológica\" entre as membranas fetais e a decídua uterina. Embora seja mais utilizada como preditor de parto prematuro em pacientes com membranas íntegras (sua ausência tem alto valor preditivo negativo para o parto em 7 a 14 dias), ela também é encontrada no líquido amniótico. Portanto, sua detecção na secreção vaginal pode ser utilizada no diagnóstico diferencial da rotura, embora seja menos específica que outros métodos.\n\nAlternativa d) Incorreta. A manobra de Tarnier é uma manobra clínica fundamental realizada durante o exame especular. O examinador realiza a compressão do fundo uterino ou o rechaço da apresentação fetal (empurrando a cabeça do bebê para cima através do abdome) para forçar a saída de líquido amniótico pelo orifício externo do colo uterino, permitindo a visualização direta.\n\nAlternativa e) Correta. O fator de crescimento placentário (PlGF) é uma proteína angiogênica produzida pela placenta. Na prática médica, o PlGF (isolado ou em relação ao sFlt-1) é utilizado como biomarcador para o rastreio e diagnóstico da pré-eclâmpsia e para avaliar a função placentária em casos de restrição de crescimento fetal. Ele não possui qualquer papel ou indicação no diagnóstico de rotura prematura de membranas, pois sua presença ou ausência na vagina não serve para identificar o líquido amniótico.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  },
+  {
+    "id": "AJUDA_ffeafa0b-7ad9-4bc0-b60a-613322e6b36f",
+    "originalId": "ffeafa0b-7ad9-4bc0-b60a-613322e6b36f",
+    "statement": "Mulher de 47 anos, previamente hígida, dá entrada no pronto-socorro com dor em hipocôndrio direito há 12 horas, irradiando para dorso, associada a náuseas. Nega febre. Ao exame físico, apresenta sinal de Murphy negativo e leve icterícia. Exames laboratoriais mostram bilirrubina total de 3,2 mg/dL (direta 2,4), fosfatase alcalina e GGT elevadas, além de transaminases discretamente aumentadas. A ultrassonografia de abdome revela múltiplos cálculos na vesícula e ducto colédoco medindo 9 mm, porém sem visualização direta de cálculo no colédoco. Não há sinais de colangite. A equipe cirúrgica discute a necessidade de investigação adicional. Considerando os critérios de estratificação de risco para coledocolitíase, qual deve ser a conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar colangiorressonância antes de qualquer intervenção",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar CPER imediatamente, pois a paciente apresenta critério de alto risco",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar colangiografia intraoperatória durante colecistectomia videolaparoscópica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observar evolução clínica e repetir exames laboratoriais em 24 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar ultrassom endoscópico (EUS) como primeiro exame",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, devemos utilizar as diretrizes fundamentais da ASGE (American Society for Gastrointestinal Endoscopy) sobre a estratificação de risco para coledocolitíase. O objetivo é decidir quem deve ir direto para a Colangiopancreatografia Retrógrada Endoscópica (CPER), quem precisa de exames adicionais ou quem pode ir direto para a cirurgia.\n\nANÁLISE DO CASO CLÍNICO:\nA paciente apresenta dor biliar, icterícia clínica (confirmada por BT de 3,2 mg/dL com predomínio de direta e elevação de canaliculares) e um dado ultrassonográfico crucial: ducto colédoco dilatado (9 mm, quando o normal é até 6 mm). \n\nESTRATIFICAÇÃO DE RISCO (ASGE):\n1. Preditores Fortes: Colédoco dilatado no USG (> 6 mm) ou Bilirrubina Total entre 1,8 e 4,0 mg/dL.\n2. Preditores Muito Fortes: Cálculo visualizado no colédoco pelo USG, Colangite ascendente ou BT > 4,0 mg/dL.\n\nA paciente possui DOIS preditores fortes: o colédoco dilatado (9 mm) E a Bilirrubina Total elevada (3,2 mg/dL). Segundo o consenso, a combinação de dois preditores fortes enquadra o paciente na categoria de ALTO RISCO (probabilidade > 50% de cálculo na via biliar).\n\nPOR QUE A ALTERNATIVA (B) É A CORRETA:\nA conduta para pacientes de ALTO RISCO é a CPER direta. A CPER é um procedimento invasivo e terapêutico; portanto, reservado para quando a probabilidade de doença é alta, evitando exames intermediários que apenas atrasariam o tratamento definitivo da obstrução biliar.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS:\n\na) Realizar colangiorressonância antes de qualquer intervenção: Incorreta. A colangiorressonância é o exame de escolha para pacientes de RISCO INTERMEDIÁRIO (aqueles que têm apenas um preditor forte ou apenas preditores moderados, como idade > 55 anos ou testes hepáticos alterados que não a bilirrubina). Como esta paciente é de alto risco, ela não precisa de exames de imagem adicionais para diagnóstico; ela precisa de tratamento.\n\nc) Realizar colangiografia intraoperatória durante colecistectomia videolaparoscópica: Incorreta. Esta conduta também costuma ser reservada para o risco intermediário, como alternativa à colangiorressonância ou ecoendoscopia, permitindo diagnosticar e, se necessário, tratar o cálculo no mesmo tempo cirúrgico. No alto risco, prefere-se limpar a via biliar via CPER antes da cirurgia.\n\nd) Observar evolução clínica e repetir exames laboratoriais em 24 horas: Incorreta. A paciente tem uma obstrução biliar manifesta (icterícia e colédoco dilatado). A conduta expectante não é indicada, pois há risco de evolução para colangite ou pancreatite biliar.\n\ne) Realizar ultrassom endoscópico (EUS) como primeiro exame: Incorreta. Assim como a colangiorressonância, o EUS é um excelente exame diagnóstico para o risco intermediário por ser menos invasivo que a CPER, mas não é a conduta inicial para quem já possui critérios de alto risco.\n\nRESUMO DIDÁTICO:\n- Baixo Risco: Colecistectomia direta.\n- Risco Intermediário: Investigação adicional (Colangiorressonância, Ecoendoscopia ou Colangiografia Intraoperatória).\n- Alto Risco (nosso caso): CPER direta.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  },
+  {
+    "id": "AJUDA_fff1a8ab-128b-4dca-8ed1-c233e737a3ae",
+    "originalId": "fff1a8ab-128b-4dca-8ed1-c233e737a3ae",
+    "statement": "Mulher de 49 anos refere irregularidade menstrual nos últimos doze meses, ondas de calor diárias, sudorese noturna e alteração de humor. Nega tabagismo e história pessoal ou familiar de câncer de mama ou trombose venosa. A paciente tem útero. Não apresenta alterações ao exame físico e tem IMC = 24kg/m². Em relação ao tratamento para essa paciente, a terapia hormonal:",
+    "options": [
+      {
+        "id": "A",
+        "text": "com estrogênio e progesterona é o tratamento mais eficaz para seus sintomas climatéricos, já que ela tem útero",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "não é eficaz para sintomas vasomotores, sendo recomendados, preferencialmente, antidepressivos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "com estrogênio isolado é suficiente para aliviar seus sintomas, considerando a presença de útero",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não deve ser considerada porque ela ainda não está na menopausa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente em questão apresenta um quadro clássico de transição menopausal (perimenopausa), caracterizado por irregularidade menstrual e sintomas vasomotores (ondas de calor e sudorese noturna), além de alterações de humor. Aos 49 anos, com ausência de contraindicações (não fuma, sem histórico de câncer de mama ou trombose) e presença de útero, a Terapia Hormonal (TH) é a conduta de escolha.\n\nAnálise das alternativas:\n\nAlternativa A: Correta. A Terapia Hormonal é o tratamento padrão-ouro e o mais eficaz para o alívio dos sintomas vasomotores (fogachos) do climatério. Como a paciente possui útero, é obrigatório associar a progesterona ao estrogênio. O estrogênio trata os sintomas, enquanto a progesterona tem a função exclusiva de proteger o endométrio contra a hiperplasia e o câncer de endométrio que seriam causados pelo estímulo estrogênico isolado.\n\nAlternativa B: Incorreta. A TH é reconhecidamente mais eficaz que os antidepressivos para o controle de sintomas vasomotores. Os inibidores seletivos da recaptação de serotonina (como paroxetina ou venlafaxina) são opções de segunda linha, indicadas apenas quando há contraindicação formal à TH ou quando a paciente opta por não utilizar hormônios.\n\nAlternativa C: Incorreta. O uso de estrogênio isolado só é permitido em mulheres histerectomizadas (sem útero). Em pacientes com útero presente, o uso de estrogênio sem a oposição da progesterona aumenta drasticamente o risco de patologias endometriais malignas.\n\nAlternativa D: Incorreta. Não é necessário aguardar a menopausa (definida como 12 meses de amenorreia) para iniciar o tratamento. A indicação da TH baseia-se na presença de sintomas que prejudicam a qualidade de vida da paciente durante o climatério, desde que não existam contraindicações e os benefícios superem os riscos. No caso dela, a irregularidade menstrual já indica a transição menopausal.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  },
+  {
+    "id": "AJUDA_fff49524-179f-4d07-8b24-4e0263027ee4",
+    "originalId": "fff49524-179f-4d07-8b24-4e0263027ee4",
+    "statement": "A moléstia inflamatória pélvica (MIPA) é considerada como um conjunto de processos inflamatórios da região pélvica devido à propagação de microrganismos a partir do colo do útero e da vagina para o endométrio, as tubas, o peritônio e as estruturas adjacentes. Uma de suas complicações é a presença de abscesso tubo-ovariano (ATO). Nesse contexto, torna-se obrigatória a abordagem cirúrgica se",
+    "options": [
+      {
+        "id": "A",
+        "text": "o maior diâmetro do ATO for maior que 5,0 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o ATO se romper.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o agente isolado for Chlamydia trachomatis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não houver resposta à antibioticoterapia por doze horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "TEMA: Doença Inflamatória Pélvica (DIP) e Abscesso Tubo-Ovariano (ATO).\n\nO abscesso tubo-ovariano é uma das complicações mais graves da Doença Inflamatória Pélvica (DIP/MIPA). Na maioria dos casos, o tratamento inicial é conservador, realizado em ambiente hospitalar com antibioticoterapia de amplo espectro por via venosa. Contudo, certas condições tornam a abordagem cirúrgica imediata imprescindível.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o tamanho do abscesso seja um fator prognóstico importante (abscessos maiores que 7 a 9 cm apresentam maior chance de falha no tratamento clínico), o diâmetro de 5,0 cm não é, por si só, um critério de obrigatoriedade cirúrgica. Muitos abscessos desse tamanho podem ser resolvidos apenas com antibióticos.\n\nAlternativa b) Correta. A ruptura do abscesso tubo-ovariano é uma emergência médica e cirúrgica absoluta. Quando o abscesso rompe, ocorre a disseminação de material purulento e microrganismos para a cavidade peritoneal, levando à peritonite generalizada e rápida evolução para o choque séptico. Nesses casos, a cirurgia imediata é obrigatória para a limpeza da cavidade e controle da infecção.\n\nAlternativa c) Incorreta. A Chlamydia trachomatis é um dos principais agentes etiológicos da DIP. No entanto, sua identificação não é indicação de cirurgia. O tratamento para esse microrganismo é feito com antibióticos específicos (como a doxiciclina), independentemente da presença de abscesso.\n\nAlternativa d) Incorreta. O tempo preconizado pela literatura para avaliar a resposta ao tratamento clínico (antibioticoterapia intravenosa) é de 48 a 72 horas. Se após esse período não houver melhora dos sintomas, redução da febre ou dos marcadores inflamatórios, a intervenção (cirúrgica ou drenagem guiada por imagem) deve ser considerada. O intervalo de 12 horas é considerado curto demais para determinar o insucesso terapêutico.\n\nGabarito: Alternativa (b).",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  },
+  {
+    "id": "AJUDA_fffddfd9-ad4d-4614-b45d-11156ffd4809",
+    "originalId": "fffddfd9-ad4d-4614-b45d-11156ffd4809",
+    "statement": "Paciente com uso crônico e pesado de álcool desenvolve déficit de memória anterógrada grave, com confabulações e relativa preservação de outras funções cognitivas; identifique o transtorno orgânico relacionado ao uso de substâncias",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno amnéstico alcoólico (síndrome de Korsakoff).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Transtorno de ansiedade generalizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno somatomorfo indiferenciado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno obsessivo-compulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a).\n\nO quadro clínico descrito é clássico da Síndrome de Korsakoff, também conhecida como Transtorno Amnéstico Alcoólico. Esta condição é uma manifestação crônica decorrente da deficiência grave de tiamina (vitamina B1), muito comum em indivíduos com uso pesado e crônico de álcool, devido à má absorção intestinal e dieta inadequada.\n\nAnálise das alternativas:\n\na) Correta. A Síndrome de Korsakoff caracteriza-se especificamente pelo transtorno da memória. O sintoma principal é a amnésia anterógrada (incapacidade de reter novas informações e eventos após o início da doença). Para compensar essas lacunas de memória, o paciente utiliza a confabulação, que consiste na criação de relatos falsos para preencher o vazio mnésico, sem a intenção deliberada de mentir. Outras funções cognitivas, como a inteligência global e o nível de consciência, permanecem relativamente intactas, o que diferencia este transtorno de quadros demenciais mais amplos.\n\nb) Incorreta. O Transtorno de Ansiedade Generalizada (TAG) é caracterizado por preocupação excessiva, persistente e de difícil controle, acompanhada de sintomas físicos como tensão muscular e inquietação. Não causa déficits de memória orgânica ou confabulações.\n\nc) Incorreta. O Transtorno Somatomorfo Indiferenciado envolve queixas físicas persistentes e inexplicáveis (como fadiga ou dores) que geram sofrimento, mas não apresentam relação com o comprometimento cognitivo ou o uso de substâncias descrito.\n\nd) Incorreta. O Transtorno Obsessivo-Compulsivo (TOC) é definido pela presença de obsessões (pensamentos intrusivos) e compulsões (comportamentos repetitivos). É uma patologia da esfera ansiosa/obsessiva e não possui vínculo com a fisiopatologia da perda de memória por deficiência de tiamina no alcoolismo.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:30.693Z"
+  }
+]

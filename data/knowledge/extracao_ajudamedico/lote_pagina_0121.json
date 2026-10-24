@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_21449e68-eafa-4581-a340-5211b6352e9c",
+    "originalId": "21449e68-eafa-4581-a340-5211b6352e9c",
+    "statement": "Mulher, 52 anos de idade, foi internada com hemorragia digestiva. Após investigação, foi diagnosticado câncer gástrico com indicação de gastrectomia total. Durante a internação, evoluiu com um edema assimétrico de membros inferiores. A ultrassonografia Doppler demonstrou extensa trombose venosa profunda iliacofemoral à esquerda. Assinale a alternativa que apresenta a conduta mais adequada para o caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter a operação; iniciar enoxaparina em dose plena, suspender 12 horas antes e reiniciar 48 horas após a operação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter a operação; passar filtro de cava no pré-operatório e iniciar enoxaparina em dose plena 48 horas após a operação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Adiar a operação em 4 semanas; passar filtro de cava no pré-operatório e iniciar enoxaparina em dose plena 48 horas após a operação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adiar a operação em 4 semanas; iniciar enoxaparina em dose plena, suspender 12 horas antes e reiniciar 48 horas após a operação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo de um paciente com Tromboembolismo Venoso (TEV) agudo que necessita de uma cirurgia de grande porte e alto risco hemorrágico (gastrectomia total por câncer gástrico).\n\nO ponto central do caso é que a paciente apresenta uma Trombose Venosa Profunda (TVP) proximal (iliofemoral) aguda, ocorrida durante a internação. O tratamento padrão para TVP é a anticoagulação plena. No entanto, a paciente será submetida a uma cirurgia oncológica de grande porte, o que contraindica a anticoagulação plena no período perioperatório imediato devido ao altíssimo risco de sangramento.\n\nAo mesmo tempo, uma TVP proximal aguda (com menos de 2 a 4 semanas de evolução) apresenta um risco muito elevado de se transformar em uma Embolia Pulmonar (TEP) maciça durante a manipulação cirúrgica e o período de imobilidade pós-operatória.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Manter a operação apenas com anticoagulação, suspendendo-a 12 horas antes, é perigoso. Em casos de TVP proximal muito recente (aguda), o trombo ainda está instável. A suspensão da anticoagulação para a cirurgia deixa a paciente desprotegida contra um TEP fatal durante o ato operatório e no pós-operatório imediato.\n\nAlternativa b) Correta. Esta é a conduta preconizada pelas diretrizes (como as do American College of Chest Physicians - ACCP). O implante de filtro de veia cava inferior (FVCI) está indicado de forma temporária quando existe uma contraindicação absoluta à anticoagulação em pacientes com TEV agudo (neste caso, a necessidade de cirurgia de grande porte). O filtro protegerá a paciente contra um TEP durante a cirurgia. A anticoagulação plena deve ser iniciada assim que a segurança hemodinâmica e a cicatrização permitirem, geralmente em torno de 48 a 72 horas após o procedimento.\n\nAlternativa c) Incorreta. Embora o adiamento da cirurgia pudesse permitir um tempo maior de anticoagulação antes do procedimento, estamos diante de uma patologia neoplásica (câncer gástrico) que já causou hemorragia digestiva. Adiar uma cirurgia oncológica curativa por 4 semanas pode prejudicar o prognóstico do câncer e aumentar o risco de novos sangramentos tumorais. O uso do filtro de cava permite realizar a cirurgia de forma segura sem o adiamento prolongado.\n\nAlternativa d) Incorreta. Pelos mesmos motivos citados acima, o adiamento por 4 semanas não é a melhor estratégia para uma paciente com câncer gástrico sintomático. Além disso, se a cirurgia for adiada por 4 semanas, o risco de TEP diminui consideravelmente (pois o trombo se torna mais aderido à parede do vaso), e a necessidade de filtro seria menor do que no cenário agudo, mas a questão foca na resolução do conflito entre o tratamento da trombose e a urgência da cirurgia do câncer.\n\nEm resumo, o filtro de veia cava funciona como uma ponte de proteção para pacientes com trombose aguda que não podem ser anticoagulados por causa de uma cirurgia iminente.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  },
+  {
+    "id": "AJUDA_21534f9e-7619-4287-85cd-a08cc2fa4134",
+    "originalId": "21534f9e-7619-4287-85cd-a08cc2fa4134",
+    "statement": "Em 1854 o médico inglês John Snow investigava se havia associação entre a água fornecida por duas companhias de abastecimento público e a epidemia de cólera em Londres. Suas palavras: “Os canos das duas companhias percorrem todas as ruas, entrando em praticamente todos os becos. Algumas casas são abastecidas por uma companhia e algumas pela outra (...). Em muitos casos, o abastecimento de uma casa é diferente das duas outras que lhe são vizinhas. Ambas as companhias abastecem tanto casas ricas como pobres, grandes ou pequenas; não há nenhuma diferença, nem na condição social, nem na ocupação das pessoas que delas recebem a água.\". Em termos epidemiológicos atuais pode-se dizer que a situação descrita por Snow se assemelha às condições obtidas em um estudo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "experimental.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "EXPLICAÇÃO DA QUESTÃO\n\nA situação descrita por John Snow é um exemplo clássico do que a epidemiologia moderna chama de experimento natural. O ponto central do texto é a observação de que a exposição (a água de diferentes companhias) ocorria de forma independente das características sociais ou geográficas dos indivíduos.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\nEm um estudo experimental (como um ensaio clínico), o pesquisador distribui os participantes em grupos de forma aleatória para garantir que a única diferença entre eles seja a intervenção testada, eliminando fatores de confusão. No relato, Snow enfatiza que as casas eram abastecidas por companhias diferentes independentemente de serem ricas ou pobres, grandes ou pequenas, ou da ocupação dos moradores. Essa distribuição \"cega\" e aleatória feita pelas companhias simulou as condições de um experimento controlado, permitindo que Snow isolasse o tipo de água como o único fator responsável pela doença.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nA) Caso-controle: Este desenho de estudo parte do desfecho (pessoas já doentes) e busca retroativamente a exposição. Embora Snow tenha analisado quem adoeceu, o trecho citado foca na forma como a população foi exposta à água, destacando a similaridade com a divisão de grupos em um experimento, e não na busca retrospectiva de fatores de risco a partir de doentes e saudáveis.\n\nB) Transversal: Estudos transversais realizam uma medição única de exposição e desfecho em um determinado momento (uma \"foto\"). Eles não descrevem a dinâmica de distribuição de um fator de risco ou intervenção da maneira quase controlada que o texto de Snow relata.\n\nD) Ecológico: O estudo ecológico analisa grupos ou populações de forma agregada (por exemplo, comparar a taxa de cólera de um bairro inteiro contra outro bairro). O texto de Snow, porém, faz questão de mencionar que a diferença ocorria de casa para casa, em nível individual, mesmo entre vizinhos próximos. Isso afasta a lógica puramente ecológica e aproxima a análise da precisão de um estudo experimental com base em indivíduos.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  },
+  {
+    "id": "AJUDA_215359e2-2248-463e-988b-c05aba36770b",
+    "originalId": "215359e2-2248-463e-988b-c05aba36770b",
+    "statement": "Paciente, 75 anos de idade, tabagista, hipertensa, dislipidêmica e com diagnóstico recente de artrite reumatoide, refere dor abdominal em epigástrio, iniciada às 4 horas, de forte intensidade. Ao exame físico, apresenta PA: 160/90, FC: 85 bpm, Sat: 95% em ar ambiente, FR: 18 IPM. Abdome plano, depressível, doloroso à palpação de todo o andar superior. Realizou radiografia de abdome.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angiotomografia de abdome e pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Descompressão endoscópica do cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Seriar exame físico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sondagem nasogástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nA paciente em questão apresenta um perfil de alto risco para complicações gastroduodenais. É idosa, tabagista e possui diagnóstico recente de artrite reumatoide, condição que frequentemente envolve o uso de anti-inflamatórios não esteroidais (AINEs) ou corticoides, principais fatores de risco para a formação de úlceras pépticas. O quadro de dor abdominal súbita e intensa em epigástrio é a apresentação clássica do abdome agudo perfurativo. Embora a imagem da radiografia mencionada não esteja visível, o contexto clínico e a resposta correta indicam que o exame revelou pneumoperitônio (presença de ar livre entre o fígado e o diafragma ou abaixo das cúpulas diafragmáticas), sinal patognomônico de perfuração de víscera oca.\n\nAnálise das Alternativas:\n\na) Incorreta. A angiotomografia de abdome e pelve é o padrão-ouro para o diagnóstico de isquemia mesentérica aguda ou aneurismas vasculares. Embora a paciente tenha fatores de risco cardiovascular, a dor súbita em andar superior associada ao provável achado radiográfico de pneumoperitônio direciona o diagnóstico para perfuração gastroduodenal, e não para causa vascular.\n\nb) Incorreta. A descompressão endoscópica do cólon é indicada em casos específicos de volvo de sigmoide (após manobra de desdobramento) ou na Síndrome de Ogilvie (pseudo-obstrução colônica). Não há indicação para esse procedimento em casos de abdome agudo perfurativo.\n\nc) Correta. Uma vez estabelecido o diagnóstico de abdome agudo perfurativo (pela clínica de dor súbita e presença de pneumoperitônio na radiografia), a conduta é a intervenção cirúrgica de urgência. O objetivo é a limpeza da cavidade abdominal e a correção da perfuração, geralmente realizada por meio de ulcerorrafia (costura da úlcera) associada à omentoplastia (tampão de omento).\n\nd) Incorreta. Seriar o exame físico é uma conduta de observação. No abdome agudo perfurativo, o atraso no tratamento cirúrgico leva à evolução para peritonite generalizada, sepse e aumento drástico da mortalidade. O diagnóstico aqui já é iminente através dos dados fornecidos.\n\ne) Incorreta. A sondagem nasogástrica pode ser utilizada como medida de suporte pré-operatório para descompressão do estômago e redução do conteúdo gástrico que extravasa para a cavidade peritoneal. No entanto, ela não é o tratamento definitivo nem a conduta prioritária diante da necessidade de resolução cirúrgica do foco de perfuração.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  },
+  {
+    "id": "AJUDA_21656ae7-b8a6-496a-83e8-f11c10cbfb8a",
+    "originalId": "21656ae7-b8a6-496a-83e8-f11c10cbfb8a",
+    "statement": "O uso da ultrassonografia endovaginal possibilitou o diagnóstico correto de uma gestação, antes mesmo do atraso menstrual, tornando-o cada vez mais precoce e preciso.\nAssinale a alternativa que representa, corretamente, os sinais ecográficos, em ordem cronológica de aparecimento e desenvolvimento na gestação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reação decidual, embrião, batimentos cardioembrionários, vesícula vitelínica e saco gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Saco gestacional, reação decidual, vesícula vitelínica, embrião e batimentos cardioembrionários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Batimentos cardioembrionários, vesícula vitelínica, embrião, saco gestacional e reação decidual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reação decidual, saco gestacional, vesícula vitelínica, embrião e batimentos cardioembrionários.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Saco gestacional, embrião, vesícula vitelínica, batimentos cardioembrionários e reação decidual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A ultrassonografia transvaginal de primeiro trimestre segue uma ordem cronológica rígida de aparecimento das estruturas, refletindo o desenvolvimento biológico do concepto. Compreender essa sequência é fundamental para datar a gestação e identificar precocemente gestações não evolutivas ou ectópicas.\n\nA sequência correta de aparecimento é:\n\n1. Reação Decidual: É o espessamento e o aumento da ecogenicidade do endométrio sob influência hormonal (progesterona), preparando o útero para a implantação. É o sinal mais precoce, visível antes mesmo da delimitação nítida de uma cavidade com líquido.\n2. Saco Gestacional: Primeira evidência direta da gestação, caracterizado por uma pequena coleção anecoica (líquida) envolta por um halo hiperecogênico, visível geralmente entre a 4ª e 5ª semana de gestação.\n3. Vesícula Vitelínica: É a primeira estrutura a surgir dentro do saco gestacional, por volta de 5 semanas a 5 semanas e meia. Sua presença confirma que a imagem visualizada é de fato um saco gestacional e não um pseudossaco (comum em prenhez ectópica).\n4. Embrião: Torna-se visível como um pequeno polo sólido adjacente à vesícula vitelínica por volta da 6ª semana.\n5. Batimentos Cardioembrionários: São detectados assim que o polo embrionário atinge dimensões mínimas (geralmente a partir de 2 mm de comprimento cabeça-nádega), ocorrendo simultaneamente ou logo após a visualização do embrião.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O embrião e os batimentos cardíacos não aparecem antes do saco gestacional e da vesícula vitelínica.\nAlternativa b: Incorreta. A reação decidual é um fenômeno endometrial que precede a visualização do saco gestacional.\nAlternativa c: Incorreta. Apresenta a ordem de forma quase invertida, colocando os batimentos (o último sinal da lista) como o primeiro a ser identificado.\nAlternativa d: Correta. Descreve exatamente a sequência cronológica baseada na embriologia e na física do ultrassom: reação decidual (preparação), saco gestacional (alocação), vesícula vitelínica (nutrição inicial), embrião (o concepto em si) e batimentos (viabilidade).\nAlternativa e: Incorreta. Coloca o embrião antes da vesícula vitelínica e a reação decidual como o último evento, o que é biologicamente impossível.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  },
+  {
+    "id": "AJUDA_2172c71e-da36-49c9-ab5c-72aac2824b8b",
+    "originalId": "2172c71e-da36-49c9-ab5c-72aac2824b8b",
+    "statement": "Homem de 28 anos procura a unidade de saúde para consulta ambulatorial. Ele é assintomático. Não há disfagia, rouquidão, dispneia, perda de peso, antecedente de irradiação cervical na infância ou histórico familiar de doenças tireoidianas. Durante a consulta, embora o exame físico cervical não revele alterações, ele traz exames feitos por conta própria. Os hormônios tireoidianos são normais e a ultrassonografia demonstra os seguintes achados: – Lobo direito: presença de um nódulo de 2,5 cm, isoecoico, com margens bem definidas, cuja arquitetura é caracterizada por múltiplas áreas microcísticas agregadas, ocupando mais de 50% do volume total da lesão (aspecto espongiforme). Ausência de calcificações ou fluxo central ao Doppler. – Lobo esquerdo: presença de um nódulo sólido de 1,2 cm, acentuadamente hipoecoico (mais escuro que a musculatura pré-tireoidiana), com margens irregulares, diâmetro anteroposterior maior que o transversal (formato mais alto que largo) e focos ecogênicos puntiformes (microcalcificações). Com relação ao caso descrito, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a abordagem diagnóstica inicial para o nódulo sólido suspeito deve consistir em uma biópsia por agulha grossa (core biopsy), por fornecer melhor avaliação da arquitetura tecidual em comparação à punção por agulha fina tradicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a combinação de formato mais alto que largo e focos ecogênicos puntiformes no nódulo menor confere um elevado risco estimado de malignidade, justificando a necessidade de avaliação citológica direcionada para essa alteração estrutural específica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ambos os nódulos apresentam critérios volumétricos suficientes para avaliação citológica, necessitando de punção aspirativa para estabelecer um diagnóstico tecidual definitivo antes de um possível planejamento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o paciente demanda uma cintilografia com radioiodo para determinar o status funcional do nódulo sólido de 1,2 cm, dado que essa modalidade de imagem representa o método mais acurado para selecionar lesões para análise citológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o tamanho absoluto do nódulo de 2,5 cm no lobo direito representa a indicação principal para a realização da punção, enquanto o nódulo menor de 1,2 cm possui dimensões insuficientes para a investigação citológica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resumo do caso: homem jovem, assintomático, função tireoidiana normal, com dois nódulos de aspectos ultrassonográficos opostos. Para classificá-los, usa-se o sistema ACR TI-RADS ou o da ATA.\n\nNódulo do lobo direito (2,5 cm): isoecoico, bem delimitado, espongiforme (microcistos agregados em mais de 50% da lesão), sem calcificações e sem fluxo central. O padrão espongiforme é praticamente patognomônico de benignidade (ATA: muito baixa suspeita, risco de malignidade menor que 3%). No ACR TI-RADS, a composição espongiforme vale 0 ponto, o que o torna TR1 ou TR2 (benigno ou não suspeito). Não há indicação de PAAF, mesmo com 2,5 cm. Se a ATA o classificar como muito baixa suspeita, a PAAF é opcional e o seguimento é conservador.\n\nNódulo do lobo esquerdo (1,2 cm): sólido, acentuadamente hipoecoico, margens irregulares, mais alto que largo e com microcalcificações. Corresponde à alta suspeita da ATA (risco de malignidade de 70 a 90%) e ao TR5 do ACR (pontuação de 7 ou mais). A PAAF é indicada a partir de 1 cm na ATA e de 1 cm no ACR TR5. Como mede 1,2 cm, deve ser puncionado. A suspeita é de carcinoma papilífero.\n\nAnálise das alternativas:\n\na) Incorreta. A abordagem inicial de nódulo tireoidiano suspeito é a PAAF guiada por ultrassonografia, avaliada pelo sistema Bethesda. A core biopsy é reservada a situações selecionadas, como resultados repetidamente não diagnósticos ou insatisfatórios, e não é a primeira escolha.\n\nb) Correta. Formato mais alto que largo e microcalcificações são achados de alta especificidade para malignidade. Combinados com hipoecogenicidade acentuada e margens irregulares, conferem risco elevado e justificam a citologia, que indica o nódulo suspeito para a punção.\n\nc) Incorreta. Apenas o nódulo de 1,2 cm tem indicação de punção. O nódulo espongiforme é benigno e não requer PAAF, independentemente do tamanho. Além disso, a PAAF não é \"diagnóstico definitivo\" em todos os casos, pois pode resultar em Bethesda indeterminado.\n\nd) Incorreta. A cintilografia só é indicada com TSH suprimido, para identificar nódulo hiperfuncionante (quente), que dispensa PAAF. Aqui a função tireoidiana é normal. A seleção de nódulos para citologia é feita pelas características ultrassonográficas, não pela cintilografia.\n\ne) Incorreta. Inverte a lógica: a indicação de punção depende do padrão ultrassonográfico associado ao tamanho de corte, e não apenas do tamanho. O nódulo de 2,5 cm é benigno e não precisa de PAAF, enquanto o de 1,2 cm ultrapassa o limite de 1 cm para alta suspeita.\n\nPonto-chave: o padrão ultrassonográfico define a conduta. Nódulo espongiforme dispensa punção, e nódulo de alta suspeita com 1 cm ou mais deve ser puncionado.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  },
+  {
+    "id": "AJUDA_2172df52-6fdb-40fa-a828-e6d6c35c587f",
+    "originalId": "2172df52-6fdb-40fa-a828-e6d6c35c587f",
+    "statement": "Homem, 70 anos, previamente assintomático, apresenta dor em fossa ilíaca esquerda, febre e leucocitose. Tomografia Computadorizada (TC) de abdome mostra área de espessamento na topografia do cólon sigmoide, compatível com o diagnóstico de diverticulite aguda não complicada. Com base nas informações fornecidas, considerando as opções abaixo, assinale a alternativa que apresenta a melhor conduta no caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento inicial deve ser clínico, com analgésicos, modificação na dieta e antibióticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Colonoscopia deve ser indicada na avaliação inicial, para descartar a presença de neoplasia maligna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve ser indicada cirurgia, pois a recorrência de crises é muito elevada apenas com o tratamento clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nos casos em que for indicada a cirurgia, deve ser realizada colostomia para diminuir o índice de complicações do procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um paciente com quadro típico de diverticulite aguda não complicada do sigmoide (dor em fossa ilíaca esquerda, febre, leucocitose e tomografia demonstrando apenas espessamento parietal, sem abscessos à distância, fístulas ou pneumoperitônio livre).\n\nAlternativa a: Correta. O tratamento padrão inicial para a diverticulite aguda não complicada é conservador, baseado em suporte clínico com ajuste dietético (dieta líquida ou repouso intestinal conforme a tolerância), analgesia e antibioticoterapia para cobertura de flora entérica (Gram-negativos e anaeróbios).\n\nAlternativa b: Incorreta. A colonoscopia é formalmente contraindicada na fase aguda da diverticulite pelo risco de perfuração intestinal secundária à insuflação em uma parede colônica inflamada e fragilizada. O rastreamento de neoplasia colorretal com colonoscopia deve ser realizado apenas de 6 a 8 semanas após a resolução do quadro agudo.\n\nAlternativa c: Incorreta. A indicação cirúrgica de urgência é restrita a casos complicados (como peritonite purulenta/fecal, obstrução intestinal ou falha do tratamento clínico). A maioria dos pacientes com primeiro episódio não complicado tem boa resposta ao tratamento conservador, não sendo indicada cirurgia precoce por risco de recorrência.\n\nAlternativa d: Incorreta. A realização de colostomia (como no procedimento de Hartmann) não é mandatória em todas as abordagens cirúrgicas. Na cirurgia eletiva, realiza-se habitualmente a ressecção do sigmoide com anastomose primária. Mesmo na urgência, em pacientes selecionados e estáveis, a anastomose primária (com ou sem estoma de proteção) é frequentemente factível.\n\nGabarito: Letra a.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel",
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  },
+  {
+    "id": "AJUDA_21839557-a00f-468f-a87c-3806441f7aa6",
+    "originalId": "21839557-a00f-468f-a87c-3806441f7aa6",
+    "statement": "Um médico de saúde da família e comunidade, ao observar o aumento de casos de ansiedade, depressão e estresse em uma comunidade vulnerável, identificou que muitos pacientes apresentam múltiplos fatores sociais associados, como desemprego, violência doméstica e isolamento social. Além disso, a unidade de saúde enfrenta limitações de recursos humanos e financeiros, dificultando o encaminhamento para serviços especializados.\n\nQual seria a abordagem mais abrangente e recomendada para lidar com essa situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Priorizar o encaminhamento dos casos mais graves para serviços especializados, enquanto os casos leves são tratados com medicação e acompanhamento na UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Implementar um programa comunitário de saúde mental, envolvendo capacitação de agentes comunitários, grupos de apoio e parcerias com ONGs locais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Focar no tratamento medicamentoso dos pacientes, considerando a falta de recursos para intervenções psicossociais, criar um protocolo de triagem para identificar os pacientes com maior risco de complicações e priorizar o atendimento psicológico para esses casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar campanhas educativas para reduzir o estigma das doenças mentais, sem intervenções diretas nos casos individuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O cenário apresentado descreve uma demanda frequente na Atenção Primária à Saúde (APS): o sofrimento mental associado a determinantes sociais da saúde, como desemprego, violência e isolamento social, em um contexto de escassez de recursos. O Médico de Família e Comunidade deve atuar com base na clínica ampliada e na abordagem comunitária, evitando a medicalização excessiva e promovendo a intersetorialidade.\n\nAlternativa A (Incorreta): Adota uma visão puramente biomédica e fragmentada. O tratamento medicamentoso indiscriminado para casos leves desconsidera a origem psicossocial dos sintomas, gerando medicalização da vida. Além disso, apoiar-se apenas no encaminhamento de casos graves não é resolutivo diante do gargalo estrutural já apontado no enunciado.\n\nAlternativa B (Correta): É a abordagem mais abrangente e alinhada às diretrizes da APS e da Rede de Atenção Psicossocial (RAPS). A capacitação dos Agentes Comunitários de Saúde potencializa a busca ativa e a identificação precoce no território. Os grupos de apoio e intervenções psicossociais coletivas oferecem suporte comunitário e quebram o isolamento social. Já as parcerias com ONGs e lideranças locais fortalecem a intersetorialidade, essencial para atuar sobre os determinantes sociais da saúde com otimização dos recursos disponíveis.\n\nAlternativa C (Incorreta): Restringir a atuação ao tratamento farmacológico em resposta a estressores sociais caracteriza a medicalização do sofrimento social. Além de ter baixa eficácia no longo prazo para problemas de base contextual, essa conduta sobrecarrega a unidade e negligencia as ferramentas terapêuticas não medicamentosas e comunitárias da APS.\n\nAlternativa D (Incorreta): Embora as campanhas educativas e a redução do estigma sejam importantes ações de promoção da saúde, são insuficientes isoladamente. Deixar de realizar intervenções diretas nos casos individuais e em grupos configuraria omissão de cuidado aos pacientes que já apresentam transtornos mentais instalados.\n\nPortanto, a alternativa B é a correta.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Psiquiatria Social e Reforma Psiquiátrica",
+      "Atenção Primária à Saúde",
+      "Transtornos de Ansiedade",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  },
+  {
+    "id": "AJUDA_2185f676-ee9a-49f2-81e6-ddd2da0596a9",
+    "originalId": "2185f676-ee9a-49f2-81e6-ddd2da0596a9",
+    "statement": "Um homem de 28 anos, admitido no pronto-socorro após um acidente automobilístico, apresenta ectoscopicamente sinais evidentes de trauma abdominal. Na avaliação neurológica inicial, está consciente, mas confuso. Seus sinais vitais são: pressão arterial de 85/60 mmHg, frequência cardíaca de 130 bpm, frequência respiratória de 28 ipm, saturação de oxigênio de 94% em ar ambiente. Sua pele está fria e pegajosa, com enchimento capilar prolongado. Refere dor intensa no abdômen. O abdômen está tenso e distendido, com dor à palpação e sem peristaltismo audível.\nOs exames complementares mostram hemoglobina 8 g/dL com hematócrito de 24%. Foi realizado um FAST (Focused Assessment with Sonography for Trauma), que mostrou líquido livre na cavidade peritoneal. Radiografia de tórax e pelve não mostrou fraturas.\nNesse momento, seu diagnóstico é de choque hipovolêmico grau III por hemorragia intra-abdominal.\nA conduta adotada deverá ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "administração de solução salina isotônica e monitoramento em observação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "transfusão sanguínea de hemoderivados na relação 1/1/1 e intervenção cirúrgica imediata;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "administração de medicamentos vasopressores para aumentar a pressão arterial;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "administração de diuréticos para reduzir a pressão intra-abdominal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realização de tomografia computadorizada (TC) de abdômen para avaliação adicional antes de qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente em questão apresenta um quadro clínico clássico de choque hipovolêmico hemorrágico grave (classificado na questão como grau III, mas com sinais que já sugerem transição para o grau IV, como a hipotensão e a confusão mental). Os pontos fundamentais para o diagnóstico e conduta são:\n1. Instabilidade hemodinâmica: Pressão arterial sistólica abaixo de 90 mmHg (85/60 mmHg) e taquicardia significativa (130 bpm).\n2. Sinais de má perfusão: Pele fria, pegajosa e enchimento capilar prolongado.\n3. Evidência de sangramento ativo: O FAST positivo demonstra líquido livre (sangue) na cavidade peritoneal em um contexto de trauma.\n4. Abdome cirúrgico: O exame físico revela um abdome tenso, distendido e doloroso, o que indica hemoperitônio volumoso.\n\nDe acordo com os protocolos do ATLS (Advanced Trauma Life Support), o paciente instável com foco de sangramento abdominal identificado pelo FAST deve ser encaminhado imediatamente para o controle definitivo da hemorragia.\n\nDISCUSSÃO DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. A administração isolada de solução salina e a observação são condutas perigosas para este paciente. No choque grau III/IV, a reposição volêmica deve ser feita preferencialmente com sangue e hemoderivados, e a observação atrasaria o tratamento definitivo de uma hemorragia interna ativa, aumentando a mortalidade.\n\nAlternativa B: Correta. Esta é a conduta padrão-ouro. Pacientes com instabilidade hemodinâmica e FAST positivo no trauma abdominal necessitam de laparotomia exploradora imediata para controle do sangramento. A ressuscitação deve ser feita com protocolo de transfusão maciça, utilizando a proporção balanceada de 1 unidade de concentrado de hemácias para 1 de plasma fresco congelado para 1 de plaquetas (1:1:1), visando evitar a coagulopatia, a acidose e a hipotermia (tríade da morte).\n\nAlternativa C: Incorreta. O uso de vasopressores (como noradrenalina) é contraindicado como medida inicial no choque hemorrágico puro. O problema do paciente é a falta de volume intravascular (sangue). O vasopressor causaria vasoconstrição em um sistema vazio, piorando a isquemia dos órgãos sem resolver a causa da hipotensão.\n\nAlternativa D: Incorreta. Não há qualquer indicação para diuréticos. O paciente está em choque hipovolêmico, e a administração de diuréticos reduziria ainda mais o volume circulante, podendo levar à parada cardiorrespiratória por colapso circulatório.\n\nAlternativa E: Incorreta. A Tomografia Computadorizada (TC) de abdome é o melhor exame para detalhar lesões em órgãos sólidos, mas ela exige que o paciente esteja hemodinamicamente ESTÁVEL. Levar um paciente instável (hipotenso e taquicárdico) para a sala de tomografia é um erro clássico em provas e na prática médica, frequentemente referido como o trajeto para a morte, pois atrasa a cirurgia necessária.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Trauma",
+      "Choque"
+    ],
+    "difficulty": 30.403439903417993,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  },
+  {
+    "id": "AJUDA_218a12c5-f72b-4d05-ba52-a17dc148387b",
+    "originalId": "218a12c5-f72b-4d05-ba52-a17dc148387b",
+    "statement": "Paciente de 22 anos, gênero feminino, procura atendimento ambulatorial para investigar quadro de astenia progressiva nos últimos 3 meses associado a oligomenorreia e episódios de dores abdominais difusas. Dentre as possibilidades diagnósticas foi pensado em doença celíaca. Considerando esta hipótese qual deveria ser o plano terapêutico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar anticorpo anti-transglutaminase IgA e IgA total",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar anticorpo anti-endomísio IgA e anticorpo anti-gliadina IgG",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar pesquisa HLA DQ2 ou DQ8 se auto-anticorpos negativos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar pesquisa HLA DQ2 ou DQ8 e endoscopia digestiva com biópsia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A investigação da Doença Celíaca (DC) deve ser iniciada sempre que houver suspeita clínica, como no caso da paciente que apresenta sintomas sistêmicos (astenia), gastrointestinais (dor abdominal) e ginecológicos (oligomenorreia), que podem refletir má absorção de nutrientes.\n\nEmbora o enunciado utilize a expressão \"plano terapêutico\", as alternativas focam na propedêutica diagnóstica, que é o primeiro passo necessário antes de instituir o tratamento (dieta isenta de glúten).\n\nAlternativa (a) CORRETA: O teste de escolha para o rastreamento inicial da Doença Celíaca em adultos é o anticorpo antitransglutaminase tecidual da classe IgA (tTG-IgA). Este exame apresenta elevada sensibilidade e especificidade. A solicitação da IgA total é indispensável porque a deficiência seletiva de IgA é significativamente mais comum em pacientes celíacos. Se o paciente possuir essa deficiência, os testes baseados em IgA serão falsos-negativos, exigindo a realização de testes baseados em IgG para um diagnóstico correto.\n\nAlternativa (b) INCORRETA: O anticorpo antigliadina (AGA) de primeira geração caiu em desuso para o rastreamento inicial devido à sua baixa acurácia quando comparado aos testes atuais. O anticorpo antiendomísio (EMA-IgA) é altamente específico, mas, por ser um exame mais caro e dependente de análise técnica (imunofluorescência), costuma ser utilizado para confirmar resultados de tTG-IgA duvidosos ou em protocolos específicos de confirmação sorológica.\n\nAlternativa (c) INCORRETA: A pesquisa de HLA DQ2 ou DQ8 possui um excelente valor preditivo negativo. Ou seja, sua principal utilidade é excluir a possibilidade de Doença Celíaca em casos de resultados conflitantes entre sorologia e biópsia. Se os autoanticorpos forem negativos em uma paciente com dieta normal (contendo glúten), a probabilidade de doença já é baixa, não sendo o HLA o próximo passo imediato na rotina ambulatorial.\n\nAlternativa (d) INCORRETA: A endoscopia digestiva alta com biópsias de duodeno é o padrão-ouro para o diagnóstico em adultos, porém, por ser um procedimento invasivo, deve ser solicitada após a triagem sorológica positiva. A pesquisa de HLA não é indicada como exame de primeira linha junto à endoscopia.\n\nEm resumo, a conduta inicial mais adequada e custo-efetiva para investigar Doença Celíaca é a realização da sorologia tTG-IgA combinada com a dosagem de IgA total.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios Disabsortivos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  },
+  {
+    "id": "AJUDA_218a7496-28cb-421e-ab7a-aa1f8298a21e",
+    "originalId": "218a7496-28cb-421e-ab7a-aa1f8298a21e",
+    "statement": "Segundo os critérios de ROMA IV para lactentes, escolares e adolescentes, na síndrome do intestino irritável:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a criança tem diarreia associada a perda ponderal nos últimos 2 meses;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a dor abdominal é aliviada após resolução da constipação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a dor abdominal é acompanhada de alteração na frequência das evacuações;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a criança tem evacuação Bristol 6 na primeira evacuação do dia, seguida por Bristol 1 nas demais evacuações;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "os sintomas acontecem por pelo menos 1 mês antes do diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder a essa questão, devemos relembrar os critérios de Roma IV para Distúrbios Funcionais Gastrointestinais em pediatria. A Síndrome do Intestino Irritável (SII) em crianças e adolescentes é definida pela presença de dor abdominal por pelo menos 4 dias por mês, por pelo menos 2 meses antes do diagnóstico, associada a um ou mais dos seguintes critérios: 1. Relação com a defecação (podendo haver melhora ou piora da dor); 2. Mudança na frequência das evacuações; 3. Mudança na forma ou aparência das fezes (Escala de Bristol). Além disso, os sintomas não podem ser explicados por outra condição médica após avaliação criteriosa.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A presença de perda ponderal (perda de peso) é considerada um sinal de alerta, também chamado de \"red flag\". Sinais de alerta sugerem a presença de doenças orgânicas, como Doença Inflamatória Intestinal, Doença Celíaca ou infecções, o que exclui o diagnóstico de um distúrbio puramente funcional, como a SII.\n\nAlternativa b: Incorreta. Esta é uma distinção importante no Roma IV. Se a dor abdominal da criança é resolvida assim que a constipação é tratada com sucesso, o diagnóstico deve ser de Constipação Funcional. Na SII, a dor persiste ou tem uma relação mais complexa com o hábito intestinal, não sendo apenas um reflexo do acúmulo de fezes.\n\nAlternativa c: Correta. Esta alternativa descreve exatamente um dos três critérios associados à dor abdominal para o diagnóstico de SII. A dor deve vir acompanhada de alteração na frequência (diarreia ou constipação) ou na consistência das fezes.\n\nAlternativa d: Incorreta. A Escala de Bristol é usada para caracterizar o tipo de fezes (em que Bristol 1 e 2 indicam constipação e 6 e 7 indicam diarreia). Embora a SII possa apresentar alternância de hábito, essa descrição específica de Bristol 6 seguido por Bristol 1 no mesmo dia não é um critério diagnóstico e é clinicamente pouco frequente.\n\nAlternativa e: Incorreta. O Consenso de Roma IV estabeleceu que, para crianças e adolescentes, os sintomas devem estar presentes por um período mínimo de 2 meses antes do diagnóstico. O prazo de 1 mês é insuficiente para preencher os critérios diagnósticos atuais.\n\nGabarito: Alternativa (c).",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Síndrome do Intestino Irritável",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:54.166Z"
+  }
+]

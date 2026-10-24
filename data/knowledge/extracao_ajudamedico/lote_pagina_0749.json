@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_d082ef20-03e4-4dc9-8af1-9e3083d89902",
+    "originalId": "d082ef20-03e4-4dc9-8af1-9e3083d89902",
+    "statement": "Paciente de 28 anos, G2P1, internada para cesariana eletiva a termo. Durante o ato cirúrgico, houve falha na checagem pré-operatória e foi realizada histerectomia total em vez de apenas a cesariana planejada. Após o procedimento, constatou-se que a paciente não apresentava nenhuma indicação para retirada do útero.\nA classificação correta desse evento, em termos de segurança do paciente, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "complicação inevitável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "acidente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "evento adverso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "evento sentinela.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "quase-erro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda os conceitos fundamentais de segurança do paciente, especificamente a classificação de incidentes e eventos adversos. O caso descreve um erro gravíssimo: a realização de um procedimento cirúrgico errado (histerectomia em vez de cesariana) devido a uma falha nos protocolos de conferência (checagem pré-operatória), resultando em dano irreversível (perda do útero em paciente jovem).\n\nAnálise das alternativas:\n\na) Incorreta. Uma complicação inevitável é aquela que ocorre mesmo quando todas as medidas preventivas e técnicas adequadas são seguidas (ex.: uma reação alérgica imprevisível a um medicamento corretamente indicado). O caso descreve uma falha de processo (erro de checagem), tornando o evento evitável.\n\nb) Incorreta. O termo \"acidente\" é genérico e não faz parte da taxonomia oficial da Organização Mundial da Saúde (OMS) para segurança do paciente, que prefere termos como incidente, evento adverso e quase-erro.\n\nc) Incorreta. Embora toda falha que gera dano ao paciente seja, tecnicamente, um evento adverso, a questão busca a classificação mais específica e grave para o caso. Quando o evento adverso resulta em morte ou perda funcional/anatômica permanente (como a retirada de um órgão por erro), ele recebe uma denominação especial.\n\nd) Correta. Um Evento Sentinela é um tipo de evento adverso grave que resulta em morte, dano físico ou psicológico grave, ou perda funcional permanente e irreversível que não esteja relacionada ao curso natural da doença do paciente. Erros de troca de procedimento ou cirurgia em local errado são exemplos clássicos de eventos sentinela. Eles recebem esse nome porque \"acendem um sinal de alerta\" (sentinela) sobre falhas críticas nos processos de segurança da instituição, exigindo investigação imediata.\n\ne) Incorreta. O quase-erro (near-miss) ocorre quando um erro é cometido, mas é detectado e interrompido antes de atingir o paciente. Exemplo: o cirurgião percebe o erro no prontuário antes de iniciar a incisão da histerectomia. No caso relatado, o erro atingiu a paciente e causou dano, logo não é um quase-erro.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  },
+  {
+    "id": "AJUDA_d08be245-80f5-4d22-94e5-e5135fc3f9de",
+    "originalId": "d08be245-80f5-4d22-94e5-e5135fc3f9de",
+    "statement": "Em uma cidade com aumento de casos de hipertensão e diabetes, a secretaria de saúde resolveu desenvolver um plano de ações de prevenção. Durante a reunião, uma proposta de intervenção comunitária foi sugerida. Com base nessa situação hipotética, assinale a alternativa que apresenta a ação que está alinhada à abordagem de promoção da saúde para prevenção de doenças crônicas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "fornecer medicamentos para hipertensão e diabetes gratuitamente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar consultas de acompanhamento a cada seis meses com pacientes diagnosticados",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "promover grupos de caminhada e atividades físicas nos parques da cidade, incentivando a participação de toda a comunidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "implantar uma triagem anual para identificar novos casos de hipertensão e diabetes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "distribuir panfletos informativos sobre as doenças nas unidades de saúde",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder corretamente a esta questão, é fundamental diferenciar os conceitos de prevenção de doenças e promoção da saúde. A promoção da saúde foca nos determinantes sociais e na criação de condições que favoreçam o bem-estar e a autonomia da coletividade, indo além da abordagem clínica individual.\n\nAlternativa a: Incorreta. O fornecimento de medicamentos é uma ação de assistência farmacêutica voltada para quem já possui a doença instalada. Trata-se de uma medida de tratamento e prevenção de complicações (prevenção terciária), e não de promoção da saúde.\n\nAlternativa b: Incorreta. O acompanhamento periódico de pacientes diagnosticados é uma ação de assistência clínica individual. O objetivo é monitorar a evolução da patologia e evitar desfechos negativos, o que caracteriza a prevenção secundária ou terciária, mas não a promoção da saúde em nível comunitário.\n\nAlternativa c: Correta. Esta alternativa descreve uma ação clássica de promoção da saúde. Ao incentivar a atividade física em espaços públicos para toda a comunidade, a intervenção atua sobre um dos principais fatores de risco das doenças crônicas (o sedentarismo), promove a socialização, o uso do espaço urbano e o incentivo a hábitos de vida saudáveis de forma abrangente e coletiva.\n\nAlternativa d: Incorreta. A triagem ou rastreamento (*screening*) visa ao diagnóstico precoce em indivíduos assintomáticos. Essa é uma estratégia de prevenção secundária. Embora essencial para a saúde pública, o foco é identificar a doença já existente, e não promover a saúde no sentido de fortalecer o bem-estar geral da população.\n\nAlternativa e: Incorreta. A distribuição de panfletos informativos em unidades de saúde é uma forma limitada de educação em saúde. A promoção da saúde exige ações mais robustas e participativas que modifiquem o contexto de vida das pessoas. Ações passivas de informação raramente geram mudanças de comportamento ou impacto nos determinantes sociais da saúde de forma isolada.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  },
+  {
+    "id": "AJUDA_d08f4ce1-b270-4a72-b59c-78297e9a4213",
+    "originalId": "d08f4ce1-b270-4a72-b59c-78297e9a4213",
+    "statement": "A principal diferença entre taxa e coeficiente é que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A taxa inclui apenas casos novos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O coeficiente considera também os casos antigos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A taxa tem tempo explícito no denominador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O coeficiente mede apenas prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ambas são sinônimos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A principal diferença entre taxa e coeficiente reside na dimensão temporal do cálculo. Na epidemiologia, esses termos são frequentemente confundidos no uso cotidiano, mas possuem distinções técnicas fundamentais para a interpretação correta de indicadores de saúde em provas e concursos.\n\nAlternativa a: Incorreta. A definição de medir apenas casos novos refere-se ao conceito de incidência. A incidência pode ser expressa tanto na forma de um coeficiente (incidência acumulada) quanto na forma de uma taxa (densidade de incidência). Portanto, o fato de incluir apenas casos novos não define o que é uma taxa em oposição a um coeficiente.\n\nAlternativa b: Incorreta. O indicador que engloba tanto casos novos quanto casos antigos é a prevalência. Tanto taxas quanto coeficientes podem ser aplicados a diferentes tipos de eventos, e a inclusão de casos antigos não é a característica que diferencia as duas terminologias.\n\nAlternativa c: Correta. Esta é a definição técnica precisa. Uma taxa é uma medida de mudança ou velocidade com que um evento ocorre em uma população. Para mensurar essa velocidade, o denominador deve conter obrigatoriamente uma unidade de tempo explícita (como pessoas-ano ou pessoas-mês). Já o coeficiente é uma medida de proporção que relaciona o número de eventos com a população exposta ao risco em um ponto ou período, mas sem a variável tempo integrada diretamente no denominador como uma unidade de medida.\n\nAlternativa d: Incorreta. O coeficiente é uma medida genérica de frequência. Ele é utilizado para expressar a prevalência, mas também é usado para calcular mortalidade, letalidade e incidência acumulada. Não existe essa restrição exclusiva à prevalência.\n\nAlternativa e: Incorreta. Embora na prática clínica e até em alguns textos técnicos os termos sejam usados como sinônimos, para fins acadêmicos e estatísticos, eles são conceitos distintos. A taxa representa um fluxo ou dinâmica (velocidade), enquanto o coeficiente representa uma proporção ou risco estático.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  },
+  {
+    "id": "AJUDA_d0a4c9a1-6cca-43d3-be5d-c8a7f2e978f4",
+    "originalId": "d0a4c9a1-6cca-43d3-be5d-c8a7f2e978f4",
+    "statement": "Uma médica atende uma paciente de 35 anos para uma consulta de rotina. A paciente está acompanhada por sua esposa e, ao iniciar o exame físico, a médica informa que a presença da esposa não é permitida no consultório por questões de privacidade e por não ter sido agendada previamente. A paciente insiste na permanência da esposa. Diante da situação, a médica deve",
+    "options": [
+      {
+        "id": "A",
+        "text": "insistir na saída da acompanhante, informando que a regra da unidade de saúde não permite a presença de terceiros sem autorização prévia da chefia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "adiar o atendimento, solicitando à paciente que agende a presença da acompanhante para uma próxima consulta, conforme o protocolo da unidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aceitar a presença da acompanhante, em caráter excepcional, somente se julgar que isso é importante para garantir o bem-estar da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "permitir a permanência da acompanhante, pois o direito da paciente de ser acompanhada é garantido por lei, independentemente da necessidade de notificação prévia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "solicitar que a esposa aguarde na sala de espera, pois a presença de uma pessoa pode constranger a equipe multiprofissional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o direito da mulher a ter acompanhante durante atendimentos de saúde, regulamentado pela Lei Federal nº 14.737/2023, que alterou a Lei Orgânica da Saúde (Lei nº 8.080/1990). A legislação assegura a toda mulher o direito de ser acompanhada por pessoa de sua livre escolha em consultas, exames e procedimentos realizados em serviços de saúde públicos ou privados, independentemente de aviso ou agendamento prévio.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Normas internas ou protocolos administrativos de serviços de saúde não têm poder de se sobrepor à legislação federal. Exigir autorização prévia da chefia para garantir um direito legalmente estabelecido é uma conduta irregular.\n\nAlternativa b: Incorreta. Adiar o atendimento sob a justificativa de necessidade de agendamento do acompanhante restringe indevidamente o acesso à saúde. O exercício desse direito não depende de notificação ou marcação prévia.\n\nAlternativa c: Incorreta. A presença do acompanhante não é uma concessão médica nem uma medida excepcional subordinada ao julgamento do profissional. Trata-se de um direito potestativo da paciente.\n\nAlternativa d: Correta. De acordo com a Lei nº 14.737/2023, a paciente tem o direito garantido por lei de ser acompanhada por pessoa de sua escolha durante a consulta e o exame físico, sem necessidade de autorização ou notificação prévia.\n\nAlternativa e: Incorreta. A alegação de constrangimento da equipe multiprofissional não encontra respaldo ético ou legal para impedir a presença do acompanhante. O atendimento deve respeitar a autonomia, a privacidade e os direitos da paciente.\n\nGabarito: Letra d.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  },
+  {
+    "id": "AJUDA_d0ae58dd-3fb7-430a-8402-5f8ddb99c60c",
+    "originalId": "d0ae58dd-3fb7-430a-8402-5f8ddb99c60c",
+    "statement": "Menino de 3 anos foi transportado até a UPA por ter apresentado episódio convulsivo, tônico-clônico, generalizado, em sua escola. A crise havia ocorrido há 1 hora e, segundo a professora, não durara mais de 4 minutos. O paciente, previamente hígido, apresentava desenvolvimento neuromotor normal. Ao exame físico admissional, estava febril, levemente taquicárdico, mas eupneico. Respondia adequadamente aos comandos verbais. O restante do exame físico não evidenciou alterações. Com base nas manifestações clínicas, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O paciente deve receber imediatamente diazepam intravenoso ou midazolan intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico mais provável é convulsão febril, devendo o paciente permanecer em observação clínica e fazer exame eletroencefalográfico após 24 horas da crise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pelo risco de recorrência do episódio e pela idade do paciente, deve-se prescrever o uso profilático de medicamento anticonvulsivante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A família deve ser informada sobre o fato de que a evolução clínica esperada é benigna, e o prognóstico, favorável.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um menino de 3 anos com um quadro clássico de crise febril simples. Os critérios para essa classificação incluem: idade entre 6 meses e 5 anos, crise de caráter generalizado, duração curta (menos de 15 minutos) e ausência de déficit neurológico pós-ictal ou anormalidades prévias no desenvolvimento. No momento da avaliação, o paciente já está consciente e estável.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O uso de benzodiazepínicos, como diazepam intravenoso ou midazolam intramuscular, é indicado apenas para interromper uma crise que esteja em atividade (geralmente aquelas que duram mais de 5 minutos). Como o paciente teve uma crise de 4 minutos que cessou espontaneamente há uma hora, não há indicação de medicação anticonvulsivante de emergência.\n\nAlternativa b) Incorreta. Embora o diagnóstico de convulsão febril esteja correto, a realização de eletroencefalograma (EEG) não é indicada de rotina para crises febris simples. O exame não tem valor preditivo para a recorrência de novas crises febris nem para o desenvolvimento futuro de epilepsia, não devendo ser solicitado nesta situação.\n\nAlternativa c) Incorreta. O tratamento profilático com anticonvulsivantes (seja contínuo ou intermitente) não é recomendado para crises febris simples. O risco de efeitos colaterais das medicações supera os benefícios, já que as crises febris simples não causam lesão cerebral, déficit intelectual ou sequelas neurológicas.\n\nAlternativa d) Correta. Esta é a conduta mais adequada. A crise febril simples é uma condição benigna e autolimitada. O papel do médico é tranquilizar a família, explicando que, apesar de ser um evento assustador para os pais, o prognóstico neurológico a longo prazo é excelente e o desenvolvimento da criança seguirá normal. A orientação deve focar no controle da febre para o conforto da criança e no manejo de suporte.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  },
+  {
+    "id": "AJUDA_d0b10bc1-bc85-46f1-80da-b7dbd4929a7a",
+    "originalId": "d0b10bc1-bc85-46f1-80da-b7dbd4929a7a",
+    "statement": "Um homem de 42 anos é encontrado inconsciente após ingerir bebida alcoólica artesanal de origem duvidosa. No pronto-socorro, apresenta taquipneia, confusão mental e visão borrada. O exame físico mostra hipotensão leve, respiração de Kussmaul e dor abdominal difusa. A gasometria revela: pH = 7,05; HCO3- = 8 mEq/L; pCO2 = 22 mmHg; lactato = 3 mmol/L; Ânion Gap 20. Com base nas informações acima, qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar glicose e tiamina para prevenir encefalopatia de Wernicke.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar lavagem gástrica e administrar carvão ativado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar bicarbonato de sódio, fomepizole e considerar hemodiálise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Administrar naloxona e flumazenil para reversão medicamentosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um paciente com acidose metabólica com ânion gap elevado (pH 7,05, HCO3 8, AG 20) associada a sintomas específicos: visão borrada e história de ingestão de bebida alcoólica artesanal. Essa combinação é patognomônica de intoxicação por metanol. O metanol, ao ser metabolizado pela enzima desidrogenase alcoólica, forma formaldeído e ácido fórmico, sendo este último o responsável pela toxicidade ocular (edema de papila e cegueira) e pela grave acidose metabólica.\n\nALTERNATIVAS\n\na) Incorreta. A administração de glicose e tiamina é o protocolo para prevenir a Encefalopatia de Wernicke em pacientes alcoolistas crônicos ou desnutridos. Embora seja uma medida comum no manejo de pacientes com rebaixamento do nível de consciência de causa indeterminada, ela não trata a causa-base desta emergência (intoxicação por metanol) nem a acidemia grave.\n\nb) Incorreta. A lavagem gástrica só tem utilidade se realizada em até 1 hora após a ingestão, o que raramente ocorre. Além disso, o carvão ativado não é eficaz para adsorver álcoois (metanol, etanol, etilenoglicol), não sendo indicado nesse cenário.\n\nc) Correta. O tratamento da intoxicação por metanol baseia-se em três pilares: 1) Bloqueio da metabolização do metanol em metabólitos tóxicos através da inibição da enzima desidrogenase alcoólica (usando fomepizol ou, na sua falta, etanol); 2) Correção da acidose com bicarbonato de sódio, que também ajuda a reduzir a penetração do ácido fórmico nos tecidos (especialmente retina); 3) Hemodiálise, que é o método mais eficaz para remover o metanol e seus metabólitos do sangue, além de corrigir rapidamente o equilíbrio acidobásico.\n\nd) Incorreta. A naloxona é utilizada para a reversão de intoxicação por opioides e o flumazenil para intoxicação por benzodiazepínicos. Nenhum desses quadros justifica a acidose metabólica grave com ânion gap elevado ou a alteração visual apresentada pelo paciente.\n\nGABARITO: Letra (c).",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  },
+  {
+    "id": "AJUDA_d0b23724-d1ea-4f00-8df9-510e59293209",
+    "originalId": "d0b23724-d1ea-4f00-8df9-510e59293209",
+    "statement": "Mulher, 43 anos de idade, foi admitida no Serviço de Emergência com dor abdominal há 6 dias. Refere que, desde o início do quadro, procurou duas vezes atendimento médico e foi liberada após analgesia e orientação de dieta. Tem diabetes melito e obesidade. Ao exame físico, encontra-se em regular estado geral; FC de 110 bpm; PA de 90x60 mmHg; FR de 18 ipm; ausculta torácica sem alterações; abdome: doloroso à palpação difusa com sinais de irritação peritoneal. \n\n• Exames laboratoriais: \nHb: 11,2g/dL \nHt: 35% \nLeucograma: 23.558/mm³ \nPCR: 271 mg/L \nCreatinina: 2,1 mg/dL \nUreia: 70 mg/dL \npH: 7,31 \nBE: - 8 \nLactato: 39 mg/dL \n\nFoi realizada tomografia de abdome que evidenciou líquido livre na cavidade em todos os quadrantes, decorrente de apendicite aguda. Na sala de emergência, foi realizada reanimação volêmica com 1 L de cristaloide e iniciada noradrenalina. Qual é o melhor esquema de antibiótico para o caso apresentado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meropenem + vancomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ertapenem + teicoplanina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ceftriaxone + metronidazol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ceftazidima + avibactam.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma paciente com um quadro de abdome agudo inflamatório (apendicite aguda) complicado por peritonite difusa e choque séptico (necessidade de noradrenalina após reanimação volêmica inicial). O foco da questão é a escolha da antibioticoterapia empírica adequada para uma infecção intra-abdominal de origem comunitária.\n\nANÁLISE DO CASO\n\nA paciente apresenta uma infecção originada na comunidade. Nessas situações, os principais patógenos envolvidos são os da flora do trato gastrointestinal:\n1. Gram-negativos entéricos (especialmente Escherichia coli).\n2. Anaeróbios (especialmente Bacteroides fragilis).\n\nDiferentemente de infecções hospitalares, em casos comunitários não se espera, rotineiramente, a presença de bactérias multirresistentes ou MRSA (Staphylococcus aureus resistente à meticilina).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. O Meropenem é um carbapenêmico de amplo espectro indicado para infecções por germes produtores de ESBL (Extended Spectrum Beta-Lactamase) ou em contextos de falha terapêutica e infecção hospitalar grave. A Vancomicina é utilizada para cobrir Gram-positivos resistentes (MRSA). No contexto de uma apendicite comunitária, o uso de Vancomicina não é indicado de rotina, pois o foco não é a pele ou cateteres, e o Meropenem seria um \"exagero\" terapêutico para um quadro inicial comunitário.\n\nb) INCORRETA. O Ertapenem é um carbapenêmico que cobre bem a flora abdominal comunitária (Gram-negativos e anaeróbios), porém a Teicoplanina, assim como a Vancomicina, foca em Gram-positivos resistentes (MRSA), o que não se justifica neste cenário clínico de infecção de origem intestinal.\n\nc) CORRETA. Este é o esquema clássico e recomendado para infecções intra-abdominais comunitárias. A Ceftriaxona (uma cefalosporina de 3ª geração) oferece excelente cobertura para Gram-negativos da comunidade (como E. coli e Klebsiella), enquanto o Metronidazol é o padrão-ouro para a cobertura de germes anaeróbios (como Bacteroides fragilis). Mesmo em pacientes com sepse ou choque séptico, se a infecção é comunitária e a paciente não possui fatores de risco específicos para germes multirresistentes, este esquema é eficaz e seguro.\n\nd) INCORRETA. A associação Ceftazidima + Avibactam é um antibiótico novo e de altíssimo custo, reservado estritamente para o tratamento de bactérias Gram-negativas multirresistentes, especificamente aquelas produtoras de carbapenemases (como a KPC). Utilizá-lo em uma apendicite comunitária sem evidência de resistência seria um erro grave de gestão de antibióticos (stewardship).\n\nRESUMO DIDÁTICO\n\nPara provas de residência, diante de infecção intra-abdominal comunitária (apendicite, colecistite, diverticulite perfurada):\n1. Sempre cubra Gram-negativos + Anaeróbios.\n2. Esquemas comuns: Ceftriaxona + Metronidazol OU Ciprofloxacino + Metronidazol OU Piperacilina/Tazobactam (em casos mais graves em alguns protocolos).\n3. Evite Vancomicina ou esquemas para MRSA, a menos que haja fator de risco claro.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  },
+  {
+    "id": "AJUDA_d0b8e24f-ba00-43b1-8a23-e81c85f64acd",
+    "originalId": "d0b8e24f-ba00-43b1-8a23-e81c85f64acd",
+    "statement": "As infecções sexualmente transmissíveis são temas constantes na atenção primária à saúde (APS). Sobre esse manejo, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "não há dados registrados de transmissão sexual do vírus da hepatite A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a vacinação contra a hepatite B não está indicada para todas as faixas etárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a prostatite é uma das complicações da uretrite gonocócica no homem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a ceftriaxona e a doxiciclina são a primeira opção de tratamento para casos de uretrite sem identificação para o agente etiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a donovanose é uma IST crônica progressiva causada pela bactéria Haemophilus ducreyi.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A: Incorreta. Embora a principal via de transmissão do vírus da hepatite A seja a fecal-oral, a transmissão sexual está bem documentada, ocorrendo principalmente através do contato oroanal. Surtos entre homens que fazem sexo com homens (HSH) são relatados com frequência na literatura médica e em boletins epidemiológicos.\n\nAlternativa B: Incorreta. No Brasil, conforme as diretrizes do Ministério da Saúde e do Programa Nacional de Imunizações (PNI), a vacinação contra a hepatite B é recomendada e disponibilizada para todas as pessoas, independentemente da idade ou de condições específicas de vulnerabilidade, desde 2016.\n\nAlternativa C: Correta. A uretrite gonocócica, quando não tratada adequadamente, pode levar à ascensão do patógeno pelo trato urogenital masculino. Isso resulta em complicações locais e sistêmicas, sendo a prostatite uma das principais complicações locais, juntamente com a epididimite, a orquite e a formação de abscessos.\n\nAlternativa D: Incorreta. O protocolo de manejo sindrômico das uretrites do Ministério da Saúde recomenda, como primeira opção para casos sem identificação de agente, a associação de ceftriaxona 500 mg (via intramuscular, dose única) para cobrir o gonococo e azitromicina 1 g (via oral, dose única) para cobrir a clamídia. A doxiciclina é considerada uma alternativa em esquemas específicos ou na impossibilidade de uso da azitromicina, mas não compõe a primeira escolha do esquema padrão atual.\n\nAlternativa E: Incorreta. A donovanose é, de fato, uma IST crônica e progressiva, porém é causada pela bactéria Klebsiella granulomatis (antigamente chamada de Calymmatobacterium granulomatis). A bactéria Haemophilus ducreyi é o agente etiológico do cancro mole (cancroide).",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Urologia",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  },
+  {
+    "id": "AJUDA_d0c27e29-b612-4f73-8915-be280f47373c",
+    "originalId": "d0c27e29-b612-4f73-8915-be280f47373c",
+    "statement": "O médico do trabalho, durante avaliação admissional de funcionários que laborem na área de processamento de alimentos, deverá solicitar como exames complementares obrigatórios, no mínimo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Parasitológico, colesterol e triglicérides",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Parasitológico, Glicemia, Triglicérides e Urina tipo I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hemograma, Glicemia, parasitológico e Urina tipo I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hemograma, urina I, parasitológico e cultura de fezes",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a conduta do médico do trabalho na avaliação admissional de manipuladores de alimentos. O foco principal desses exames, além de avaliar a saúde do trabalhador, é garantir a segurança alimentar e prevenir a transmissão de doenças de veiculação hídrica e alimentar para a população.\n\nAlternativa a: Incorreta. O exame parasitológico é relevante para detectar protozoários e helmintos transmissíveis. No entanto, a dosagem de colesterol e triglicérides compõe o perfil lipídico, utilizado para avaliar riscos metabólicos e cardiovasculares individuais, não possuindo relação com a segurança biológica do processamento de alimentos.\n\nAlternativa b: Incorreta. Assim como na alternativa anterior, a glicemia e os triglicérides são exames de rastreio para doenças crônicas não transmissíveis (diabetes e dislipidemias). Embora importantes para o acompanhamento da saúde geral do funcionário, não são exames obrigatórios ou específicos para o controle sanitário na área de alimentos.\n\nAlternativa c: Incorreta. O hemograma, o parasitológico e a urina tipo I são frequentemente solicitados, mas a inclusão da glicemia é desnecessária para a finalidade específica de triagem sanitária. Além disso, esta alternativa não contempla a coprocultura, que é essencial nesse contexto.\n\nAlternativa d: Correta. Este conjunto de exames é o padrão exigido por protocolos de vigilância sanitária (como os da Anvisa e órgãos estaduais/municipais) e pelo PCMSO (Programa de Controle Médico de Saúde Ocupacional) para esta função. O hemograma avalia o estado geral de saúde; a urina tipo I e o parasitológico de fezes buscam identificar infecções e parasitoses; e a cultura de fezes (coprocultura) é fundamental para identificar portadores assintomáticos de bactérias patogênicas, como Salmonella e Shigella, impedindo que esses trabalhadores contaminem os alimentos e causem surtos epidemiológicos.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  },
+  {
+    "id": "AJUDA_d0c327ea-1920-4810-87fc-34c77d83c381",
+    "originalId": "d0c327ea-1920-4810-87fc-34c77d83c381",
+    "statement": "Assinale a alternativa abaixo que apresenta indicações de tireoidectomia:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carcinoma medular da tireoide confirmado; nódulo benigno de 2 cm sem sintomas compressivos; bócio multinodular volumoso com extensão retroesternal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nódulo tireoidiano Bethesda V; Doença de Graves com intolerância ao iodo radioativo; bócio multinodular pequeno, assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nódulo benigno de 5 cm com disfagia progressiva; bócio multinodular volumoso com extensão retroesternal; carcinoma papilífero da tireoide de 3,5 cm sem metástases.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Nódulo tireoidiano Bethesda III de 1,5 cm sem fatores de risco adicionais; carcinoma medular da tireoide; Doença de Graves com oftalmopatia moderada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c). Para resolver essa questão, devemos identificar a alternativa em que todos os itens citados representam indicações clássicas para o tratamento cirúrgico da tireoide (tireoidectomia).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O carcinoma medular de tireoide é uma neoplasia maligna agressiva, sendo indicação absoluta de cirurgia. O bócio multinodular volumoso com extensão retroesternal também é indicação cirúrgica devido ao risco de compressão de estruturas mediastinais e dificuldade de acompanhamento clínico. No entanto, um nódulo benigno de apenas 2 cm e sem sintomas compressivos não tem indicação de cirurgia, devendo ser apenas acompanhado periodicamente com ultrassonografia.\n\nAlternativa (b) Incorreta. O nódulo Bethesda V tem alta probabilidade de malignidade (75 a 95 por cento), sendo indicação cirúrgica. A Doença de Graves com intolerância ao iodo radioativo ou em casos específicos (como grandes bócios ou desejo da paciente de engravidar em breve) também pode ser tratada com cirurgia. Contudo, um bócio multinodular pequeno e assintomático não requer intervenção cirúrgica, sendo manejado conservadoramente.\n\nAlternativa (c) Correta. Esta alternativa apresenta três indicações precisas: 1) Nódulo benigno de 5 cm com disfagia: nódulos maiores que 4 cm ou que causam sintomas compressivos (como dificuldade para engolir ou respirar) são indicações cirúrgicas, mesmo que a citologia seja benigna. 2) Bócio multinodular volumoso com extensão retroesternal: a presença de tecido tireoidiano atrás do esterno dificulta o exame físico, o seguimento por imagem e aumenta o risco de síndrome da veia cava superior ou compressão traqueal. 3) Carcinoma papilífero de 3,5 cm: neoplasias malignas confirmadas, especialmente maiores que 1 cm, são indicações formais de tireoidectomia.\n\nAlternativa (d) Incorreta. O carcinoma medular e a Doença de Graves com oftalmopatia moderada (em que o iodo radioativo pode piorar a condição ocular) são indicações cirúrgicas. Entretanto, um nódulo Bethesda III (Atipia de Significado Indeterminado) de 1,5 cm, sem outros fatores de risco ou suspeita ultrassonográfica grave, geralmente requer repetição da punção ou testes moleculares em vez de cirurgia imediata, apresentando um risco de malignidade relativamente baixo (5 a 15 por cento).",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:49.739Z"
+  }
+]

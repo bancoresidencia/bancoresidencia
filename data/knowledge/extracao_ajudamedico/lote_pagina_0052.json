@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_0d5efeb4-8241-4579-8cb7-abb355d76c54",
+    "originalId": "0d5efeb4-8241-4579-8cb7-abb355d76c54",
+    "statement": "Sobre as medidas de associação e desenhos de estudo, é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em estudo caso-controle, estima-se diretamente o risco relativo pela incidência acumulada nos expostos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em coorte, o risco relativo é estimável; quando o desfecho é raro, o odds ratio tende a se aproximar do RR.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Em estudo transversal, a medida de escolha para associação causal é o risco relativo de incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em ensaio clínico, a prevalência prévia do desfecho define o valor do risco relativo observado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a (Incorreta): No estudo de caso-controle, o pesquisador parte de indivíduos que já apresentam o desfecho (casos) e os compara com indivíduos saudáveis (controles) para investigar exposições passadas. Como não há acompanhamento de um grupo ao longo do tempo para observar o surgimento de novos casos, não é possível calcular a incidência. Por essa razão, a medida de associação utilizada é a Odds Ratio (Razão de Chances), e não o Risco Relativo (RR).\n\nAlternativa b (Correta): O estudo de coorte é um desenho longitudinal e prospectivo que permite o cálculo da incidência (casos novos) nos grupos expostos e não expostos, possibilitando a estimativa direta do Risco Relativo. Um conceito fundamental na epidemiologia é que, quando o desfecho estudado é raro (geralmente com frequência inferior a 10%), o valor da Odds Ratio (OR) se aproxima matematicamente do valor do Risco Relativo (RR).\n\nAlternativa c (Incorreta): O estudo transversal realiza uma coleta de dados em um único ponto no tempo (instantâneo), analisando simultaneamente a exposição e o desfecho. Como não há seguimento temporal, esse estudo não mede incidência, mas sim prevalência. Portanto, a medida de associação de escolha é a Razão de Prevalência. Além disso, a ausência de temporalidade dificulta o estabelecimento de uma relação de causalidade direta.\n\nAlternativa d (Incorreta): No ensaio clínico, o Risco Relativo é determinado pela comparação da incidência de eventos entre o grupo que recebeu a intervenção e o grupo controle durante o período do estudo. O valor do RR observado depende do efeito biológico ou terapêutico da intervenção testada, e não da prevalência prévia do desfecho na população. A prevalência prévia pode influenciar o poder estatístico do estudo, mas não define o valor do RR.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  },
+  {
+    "id": "AJUDA_0d736447-8cea-47d2-bf3f-ea3a545153de",
+    "originalId": "0d736447-8cea-47d2-bf3f-ea3a545153de",
+    "statement": "Homem de 32 anos é admitido no pronto-socorro após ser encontrado inconsciente em sua residência, ao lado de vários frascos de medicamentos e produtos de limpeza. Chegou trazido pelo SAMU, sem informações adicionais.\nExame físico inicial:\n• PA: 78/46 mmHg\n• FC: 52 bpm\n• FR: 10 irpm\n• SatO₂: 89% em ar ambiente\n• Temperatura: 35,6 °C\n• Exame neurológico: pupilas puntiformes, responsivas, Glasgow 8.\n• Pulmonar: estertores difusos bilaterais.\n• Cutâneo: pele fria, sudorese intensa.\nConsiderando os achados clínicos, qual é o agente tóxico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Organofosforados (ex.: inseticidas agrícolas).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Benzodiazepínicos (ex.: diazepam ou clonazepam).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anticolinérgicos (ex.: atropina ou difenidramina).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Opioides (ex.: morfina ou metadona).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Beta-bloqueadores (ex.: propranolol ou carvedilol).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o reconhecimento das síndromes tóxicas (toxidromes) no ambiente de emergência, um tema frequente em provas de residência. O paciente apresenta um quadro de depressão severa do sistema nervoso central e das funções vitais.\n\nAnálise do quadro clínico:\nO paciente manifesta a chamada tríade clássica da intoxicação por opioides: 1. Coma ou rebaixamento do nível de consciência (Glasgow 8); 2. Depressão respiratória (FR: 10 irpm e SatO2: 89%); 3. Miose (pupilas puntiformes). Além disso, apresenta sinais de gravidade como hipotensão, bradicardia, hipotermia e estertores pulmonares, que sugerem edema agudo de pulmão não cardiogênico, uma complicação descrita em overdoses por essa classe de substâncias.\n\nAnálise das alternativas:\n\na) Incorreta. Os organofosforados causam a síndrome colinérgica. Embora também provoquem miose, bradicardia e sudorese, o quadro costuma ser dominado por sinais de hipersecreção exócrina (salivação excessiva, lacrimejamento, diarreia, vômitos) e fasciculações musculares. O estertor pulmonar na síndrome colinérgica é geralmente decorrente de broncorreia (excesso de secreção brônquica) e não de edema pulmonar. Apesar de ser um diferencial importante, a tríade clássica de depressão respiratória e coma com miose em um cenário de frascos de medicamentos favorece a hipótese de opioides.\n\nb) Incorreta. Os benzodiazepínicos isoladamente causam depressão do nível de consciência, mas raramente provocam depressão respiratória acentuada, hipotensão grave ou miose puntiforme. As pupilas em intoxicações por benzodiazepínicos costumam estar em tamanho normal ou apenas levemente mióticas, mas não puntiformes.\n\nc) Incorreta. A síndrome anticolinérgica apresenta sinais clínicos opostos aos descritos: midríase (pupilas dilatadas), taquicardia, pele seca e quente, rubor facial e retenção urinária.\n\nd) Correta. A intoxicação por opioides explica perfeitamente o rebaixamento do nível de consciência, a redução da frequência respiratória e a miose puntiforme. A sudorese intensa descrita pode ocorrer em estados de choque circulatório (pele fria e pegajosa), e os estertores bilaterais indicam edema pulmonar agudo, uma manifestação clássica da toxicidade grave por agentes como a morfina ou heroína.\n\ne) Incorreta. Os betabloqueadores causam bradicardia e hipotensão importantes, podendo levar à alteração do nível de consciência por baixo débito cardíaco, mas não são causa típica de miose puntiforme ou de depressão respiratória primária.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  },
+  {
+    "id": "AJUDA_0d75e2b1-a3fd-4529-9766-679505e1d513",
+    "originalId": "0d75e2b1-a3fd-4529-9766-679505e1d513",
+    "statement": "Adolescente, 18 anos de idade, refere que nunca menstruou. Ao exame, observa-se IMC: 22 kg/m²; mamas desenvolvidas, pelos pubianos ausentes, vulva de aspecto normal. A hipótese diagnóstica mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Kallmann.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de insensibilidade androgênica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Disgenesia gonadal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anomalia mülleriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome de Rokitansky.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico: O quadro descreve uma adolescente com amenorreia primária (nunca menstruou aos 18 anos). Os achados fundamentais são a presença de mamas desenvolvidas, o que indica que houve ação do estrogênio no organismo, e a ausência completa de pelos pubianos, o que indica uma falha na ação ou na produção de androgênios.\n\nAlternativa (b) CORRETA: A Síndrome de Insensibilidade Androgênica, também conhecida como Síndrome de Morris, é o diagnóstico mais provável. Trata-se de um indivíduo com cariótipo 46,XY (genótipo masculino) que possui testículos. Esses testículos produzem testosterona e Hormônio Antimülleriano (AMH). O AMH causa a regressão dos ductos de Müller, por isso a paciente não tem útero nem tubas (causando a amenorreia). A testosterona é convertida perifericamente em estrogênio, o que garante o desenvolvimento das mamas. Porém, como há um defeito nos receptores de androgênios, o corpo não responde à testosterona, o que explica a ausência de pelos pubianos e axilares. A genitália externa é feminina porque a masculinização depende da ação androgênica.\n\nAlternativa (a) INCORRETA: A Síndrome de Kallmann é uma causa de hipogonadismo hipogonadotrófico (falha na produção de GnRH). Nesses casos, não há estímulo para os ovários produzirem estrogênio. Portanto, a paciente não apresentaria desenvolvimento mamário (infantilismo sexual). Além disso, costuma cursar com anosmia (ausência de olfato).\n\nAlternativa (c) INCORRETA: Na Disgenesia Gonadal, como na Síndrome de Turner, as gônadas não são funcionais e não produzem hormônios. O resultado é a falta de estrogênio, levando à ausência de mamas e amenorreia primária. Frequentemente associa-se à baixa estatura e outras malformações.\n\nAlternativa (d) INCORRETA: Anomalias müllerianas são defeitos de formação do trato reprodutivo. Embora possam causar amenorreia (por ausência de útero ou obstrução), a paciente teria cariótipo 46,XX e ovários normais, o que resultaria em desenvolvimento mamário e pelos pubianos normais, já que a ação dos androgênios não estaria afetada.\n\nAlternativa (e) INCORRETA: A Síndrome de Rokitansky (Agenesia Mülleriana) é caracterizada pela ausência de útero e dos dois terços superiores da vagina em pacientes 46,XX. Como os ovários são normais e funcionantes, a paciente apresenta caracteres sexuais secundários normais, incluindo mamas e pelos pubianos. A ausência de pelos descrita na questão afasta essa hipótese e direciona para a insensibilidade androgênica.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  },
+  {
+    "id": "AJUDA_0d83a7ef-af91-4744-9ed4-770913315aa5",
+    "originalId": "0d83a7ef-af91-4744-9ed4-770913315aa5",
+    "statement": "A maior parte das doenças infecciosas exantemáticas são provocadas por vírus. A escarlatina é uma das poucas infecções exantemáticas provocadas por bactérias. A respeito da escarlatina, considere as afirmativas a seguir. \n\nI. A droga de escolha para o seu tratamento é a penicilina. \nII. A grande maioria dos casos é provocada pelo estreptococo beta-hemolítico do grupo B (Streptococcus agalactie). \nIII. O exantema característico é provocado pela ação direta da bactéria na pele. \nIV. O comprometimento cutâneo manifesta-se por exantema micropapular áspero (aspecto de lixa) e, frequentemente, está associado à faringoamidalite. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I: Correta. O tratamento de escolha para a escarlatina continua sendo a penicilina (seja a penicilina V oral ou a penicilina benzatina intramuscular). O *Streptococcus pyogenes*, agente causador da doença, mantém uma excelente sensibilidade aos betalactâmicos. Em pacientes alérgicos à penicilina, utilizam-se macrolídeos como alternativa.\n\nAfirmativa II: Incorreta. A escarlatina é causada pelo estreptococo beta-hemolítico do grupo A de Lancefield, especificamente o *Streptococcus pyogenes*. O *Streptococcus agalactiae* pertence ao grupo B e é um agente frequentemente relacionado a infecções neonatais, como sepse e meningite, e não à escarlatina.\n\nAfirmativa III: Incorreta. O exantema da escarlatina não decorre da presença física da bactéria na pele, mas sim de uma reação de hipersensibilidade tardia às exotoxinas pirogênicas (toxinas eritrogênicas A, B ou C) produzidas por certas cepas do *Streptococcus pyogenes*. Portanto, é uma manifestação mediada por toxinas e não uma infecção direta do tecido cutâneo.\n\nAfirmativa IV: Correta. O quadro clínico clássico da escarlatina envolve faringoamigdalite estreptocócica associada a um exantema micropapular que confere à pele uma textura áspera, descrita classicamente como \"aspecto de lixa\". Outros sinais comuns incluem o sinal de Pastia (acentuação do exantema nas dobras cutâneas) e o sinal de Filatov (palidez perioral).\n\nConclusão: Como apenas as afirmativas I e IV estão corretas, a alternativa que atende ao enunciado é a letra (b).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  },
+  {
+    "id": "AJUDA_0d87ec0a-400b-4f74-bb1f-856481a51064",
+    "originalId": "0d87ec0a-400b-4f74-bb1f-856481a51064",
+    "statement": "Em relação à educação de crianças em situações especiais é ERRADO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crianças e adolescentes tem direito a monitor na sala de aula",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É uma meta a ser atingida que o aluno se adapte ao sistema educacional vigente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O atendimento deve ocorrer preferencialmente na rede regular de ensino",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os professores devem realizar cursos de capacitação para integração melhor desses alunos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os fundamentos da educação inclusiva e as diretrizes legais vigentes no Brasil (como a Lei de Diretrizes e Bases da Educação – LDB, o Estatuto da Criança e do Adolescente – ECA e a Lei Brasileira de Inclusão). O ponto central para resolvê-la é entender a mudança de paradigma do modelo de \"integração\" para o de \"inclusão\".\n\nAlternativa (a) CORRETA: De acordo com a Lei Brasileira de Inclusão (Lei 13.146/2015), o aluno com deficiência que apresente necessidade comprovada de apoio para atividades de higiene, alimentação, locomoção ou comunicação tem direito a um profissional de apoio escolar (monitor ou mediador) no ambiente escolar.\n\nAlternativa (b) INCORRETA (Gabarito): Esta afirmativa descreve o antigo conceito de \"integração\", no qual a criança deveria se esforçar para se \"ajustar\" aos padrões da escola comum. O conceito atual, e meta da educação especial, é a \"inclusão\". Na inclusão, são o sistema educacional, a escola, o currículo e os métodos de ensino que devem ser modificados e adaptados para acolher e atender às necessidades específicas de cada aluno, independentemente de sua condição. Portanto, a meta é a adaptação do sistema ao aluno, e não o contrário.\n\nAlternativa (c) CORRETA: Tanto a Constituição Federal quanto a LDB (Art. 58) e o ECA estabelecem que o atendimento educacional especializado aos portadores de deficiência deve ocorrer preferencialmente na rede regular de ensino, visando ao convívio social e à igualdade de oportunidades.\n\nAlternativa (d) CORRETA: A formação continuada e a capacitação docente são exigências legais e pedagógicas. Para que a inclusão seja efetiva, os professores devem receber treinamento adequado para lidar com as diversas deficiências e transtornos globais do desenvolvimento, desenvolvendo estratégias pedagógicas que facilitem o aprendizado e a permanência desses alunos na escola.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  },
+  {
+    "id": "AJUDA_0d88b5fa-35cf-4b26-8c2f-50a8797310d0",
+    "originalId": "0d88b5fa-35cf-4b26-8c2f-50a8797310d0",
+    "statement": "Paciente, sexo feminino, 28 anos, apresenta teste de HPV positivo e citologia com ASC-US. A abordagem mais adequada para esse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento excisional sem biópsia confirmatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir o teste de HPV após um ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar biópsia endocervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para colposcopia imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "EXPLICAÇÃO:\n\nA questão aborda a conduta frente a um resultado de rastreamento do câncer do colo do útero quando se utiliza o teste de biologia molecular (HPV) associado à citologia (citologia de triagem ou coteste).\n\nAlternativa (a) Incorreta: O tratamento excisional imediato, também chamado de estratégia Ver e Tratar, é reservado para casos em que há alta suspeita de lesão de alto grau, especificamente quando a citologia indica HSIL (Lesão Intraepitelial de Alto Grau) e a colposcopia revela achados maiores compatíveis, em pacientes com mais de 25 anos. O ASC-US é uma alteração citológica de significado indeterminado e baixo risco, não justificando um procedimento excisional sem biópsia prévia.\n\nAlternativa (b) Incorreta: Se a paciente tivesse apenas a citologia com ASC-US e menos de 30 anos, a recomendação seria repetir a citologia em 12 meses. No entanto, o enunciado informa que ela já possui um teste de HPV positivo. O teste de HPV funciona como um filtro: se ele for positivo e houver qualquer alteração na citologia (mesmo que seja apenas ASC-US), a investigação deve ser imediata.\n\nAlternativa (c) Incorreta: A biópsia endocervical ou curetagem de canal não é um exame de triagem inicial. Ela é um complemento da colposcopia em situações específicas, como quando a junção escamocolunar não é visível, quando a colposcopia é insatisfatória ou quando há suspeita de lesão dentro do canal cervical. A primeira abordagem é a visualização do colo por colposcopia.\n\nAlternativa (d) Correta: Segundo as diretrizes de rastreamento que incorporam o teste de DNA-HPV, a presença de HPV de alto risco associada a qualquer anormalidade citológica (ASC-US, LSIL ou superior) exige a realização de colposcopia imediata. O objetivo é identificar possíveis lesões precursoras que a citologia pode não ter detectado com precisão. Como o vírus está presente e já há alteração celular, o risco de uma lesão histológica subjacente é maior, justificando o encaminhamento.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  },
+  {
+    "id": "AJUDA_0d8ae21e-eb22-4c94-ad79-b37e70c053d1",
+    "originalId": "0d8ae21e-eb22-4c94-ad79-b37e70c053d1",
+    "statement": "F.V.B., GII PI 1N A0, idade gestacional de 37 semanas, vem ao pronto-socorro obstétrico, queixando-se de diminuição da movimentação fetal. Nega comorbidades. Refere ultrassom morfológico de primeiro e segundo trimestres, sem alterações. Submetida a ultrassom obstétrico: feto em apresentação cefálica, peso fetal no percentil < 3, Doppler normal, maior bolsão vertical: 4 cm, placenta anterior, grau II de Grannum. Perfil biofísico fetal: movimentos fetais e respiratórios presentes, tônus normal. Cardiotocografia normal. Ao exame físico: PA 130 x 80 mmHg, FC 85 bpm. Toque vaginal: colo impérvio, grosso e posterior. Dinâmica uterina ausente. Rotina pré-eclâmpsia: sem alterações.\n\nAssinale a alternativa que apresenta a nota do perfil biofísico fetal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "10",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O Perfil Biofísico Fetal (PBF) de Manning é uma ferramenta fundamental na avaliação da vitalidade fetal, composta por cinco parâmetros específicos. Para cada parâmetro que se apresenta normal ou presente, atribui-se 2 pontos. Se o parâmetro estiver alterado ou ausente, atribui-se 0 pontos. A soma total varia de 0 a 10.\n\nOs critérios avaliados são:\n\n1. Cardiotocografia (reatividade da frequência cardíaca fetal).\n2. Movimentos respiratórios fetais (pelo menos um episódio de 30 segundos em 30 minutos).\n3. Movimentos corporais fetais (pelo menos três movimentos amplos em 30 minutos).\n4. Tônus fetal (pelo menos um episódio de extensão e retorno à flexão de membros ou tronco).\n5. Volume de líquido amniótico (presença de pelo menos um bolsão vertical de 2 cm ou mais).\n\nAplicação ao caso clínico:\n\n- Cardiotocografia: O enunciado informa que está normal (2 pontos).\n- Movimentos respiratórios: Informados como presentes (2 pontos).\n- Movimentos fetais: Informados como presentes (2 pontos).\n- Tônus fetal: Informado como normal (2 pontos).\n- Líquido amniótico: O maior bolsão vertical é de 4 cm. Como o critério de normalidade é ser maior que 2 cm, o parâmetro está normal (2 pontos).\n\nSomando os pontos: 2 (respiração) + 2 (movimentos) + 2 (tônus) + 2 (líquido) + 2 (cardiotocografia) = 10 pontos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A nota 2 seria atribuída se apenas um dos cinco componentes estivesse normal. No caso descrito, todos os parâmetros avaliados estão preservados.\n\nAlternativa b) Incorreta. A nota 4 indicaria que três dos cinco parâmetros estão alterados, o que não corresponde aos achados de normalidade descritos no exame da paciente.\n\nAlternativa c) Incorreta. A nota 6 é considerada um resultado equívoco, indicando que dois parâmetros estão alterados. Como todos os itens estão normais, essa pontuação está errada.\n\nAlternativa d) Incorreta. A nota 8 indicaria a alteração de apenas um dos componentes (como a presença de oligoâmnio ou uma cardiotocografia não reativa). No feto em questão, todos os cinco itens pontuaram.\n\nAlternativa e) Correta. Todos os cinco critérios do perfil biofísico fetal foram atendidos e descritos como normais ou presentes no enunciado, totalizando a pontuação máxima de 10.\n\nÉ importante notar que, apesar de o feto apresentar um peso abaixo do percentil 3 (sugerindo restrição de crescimento fetal), o PBF avalia a condição de oxigenação e bem-estar no momento do exame. A restrição de crescimento isolada, com Doppler e vitalidade normais, não reduz a pontuação do perfil biofísico.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Restrição de Crescimento Fetal e Óbito Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  },
+  {
+    "id": "AJUDA_0d927812-ae21-4ed7-89a9-3d419fd5fbd8",
+    "originalId": "0d927812-ae21-4ed7-89a9-3d419fd5fbd8",
+    "statement": "Com queixa de dor de cabeça, Jéssica, 37 anos, diarista, vai pela primeira vez à unidade básica de saúde. Ela reporta: “Doutor, sinto essa dor há mais de 2 meses, desde que precisamos sair da nossa casa porque não dava mais para pagar o aluguel depois que meu marido foi demitido do emprego. Na minha casa somos eu, meu marido e três filhas de 4, 6 e 14 anos”.\nÉ exemplo de crise acidental do ciclo de vida familiar da família de Jéssica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "família com filho pequeno;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "família em estágio tardio;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "desemprego;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "família com criança em idade escolar;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "família com adolescente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, o candidato deve dominar os conceitos do Ciclo de Vida Familiar, frequentemente abordados na Medicina de Família e Comunidade com base nos estudos de Carter e McGoldrick. As crises familiares são classificadas em dois grandes grupos:\n\n1. Crises do Desenvolvimento (ou Normativas): São eventos previsíveis e esperados que ocorrem à medida que a família evolui e atravessa diferentes estágios, como o nascimento de um filho, a entrada das crianças na escola ou a adolescência.\n2. Crises Acidentais (ou Situacionais/Não Normativas): São eventos imprevistos, súbitos e que não fazem parte do desenvolvimento biológico ou social esperado da família. Envolvem situações traumáticas ou mudanças bruscas de contexto.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Uma família com filho pequeno (no caso, a filha de 4 anos) está vivenciando uma fase previsível do desenvolvimento humano e familiar. O desafio de criar crianças pequenas é uma crise normativa.\n\nAlternativa b) Incorreta. O estágio tardio refere-se ao envelhecimento dos membros da família, à aposentadoria e ao enfrentamento de perdas naturais dessa fase. É uma etapa esperada do ciclo vital.\n\nAlternativa c) Correta. O desemprego é o exemplo clássico de crise acidental. Não é um evento programado ou necessário para que a família mude de estágio. No caso clínico de Jéssica, a demissão do marido gerou uma cascata de eventos estressores (perda de renda e mudança de casa) que culminou no sintoma físico da paciente (dor de cabeça).\n\nAlternativa d) Incorreta. Ter uma criança em idade escolar (filha de 6 anos) marca a transição da família para a esfera social e educativa externa. É uma fase de desenvolvimento prevista no ciclo de vida.\n\nAlternativa e) Incorreta. A convivência com um adolescente (filha de 14 anos) é uma etapa de transição comum e esperada nas famílias, exigindo a redefinição de limites e autonomia, o que caracteriza uma crise do desenvolvimento.\n\nPortanto, enquanto as alternativas A, B, D e E descrevem estágios biológicos ou sociais previsíveis, apenas o desemprego (alternativa C) representa uma ruptura acidental e imprevisível na estabilidade da unidade familiar.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  },
+  {
+    "id": "AJUDA_0d95dc1f-1bf5-4411-9c5b-f0f25089c98f",
+    "originalId": "0d95dc1f-1bf5-4411-9c5b-f0f25089c98f",
+    "statement": "A linha de orientação da cefálica defletida de primeiro grau é denominada",
+    "options": [
+      {
+        "id": "A",
+        "text": "sutura sagital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sutura sagitometópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "sutura metópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "linha facial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "gradeado costal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário revisar a estática fetal, especificamente as variedades de apresentação cefálica e seus respectivos pontos de referência e linhas de orientação identificados ao toque vaginal.\n\nAs apresentações cefálicas são divididas em fletidas e defletidas (1º, 2º e 3º graus). Para cada uma, existe uma linha que orienta o examinador sobre a posição da cabeça fetal no canal de parto:\n\n1. Cefálica Fletida (Vértice ou Ocipital): É a mais comum. O ponto de referência é a fontanela posterior (lambda) e a linha de orientação é a sutura sagital.\n\n2. Cefálica Defletida de 1º Grau (Bregma): O feto apresenta uma leve extensão da cabeça. O ponto de referência é a fontanela anterior (bregma). A linha de orientação é a sutura sagitometópica (composta pela sutura sagital e pela sutura metópica, que se encontram no bregma).\n\n3. Cefálica Defletida de 2º Grau (Fronte): A deflexão é intermediária. O ponto de referência é a glabela (naso). A linha de orientação é a sutura metópica.\n\n4. Cefálica Defletida de 3º Grau (Face): É a deflexão máxima. O ponto de referência é o mento (queixo). A linha de orientação é a linha facial (composta pelo sulco sagital da face, nariz e boca).\n\nAnálise das alternativas:\n\na) Incorreta. A sutura sagital é a linha de orientação da apresentação cefálica fletida (de vértice).\n\nb) Correta. Na deflexão de 1º grau, o examinador palpa a fontanela bregmática, onde convergem as suturas sagital e metópica. Por isso, a linha de orientação é denominada sutura sagitometópica.\n\nc) Incorreta. A sutura metópica isoladamente é a linha de orientação da apresentação cefálica defletida de 2º grau (fronte).\n\nd) Incorreta. A linha facial é a linha de orientação da apresentação cefálica defletida de 3º grau (face).\n\ne) Incorreta. O gradeado costal pode ser palpado em apresentações transversas (situação transversa), mas não serve como linha de orientação para apresentações cefálicas. Na apresentação de ombro (córmica), o ponto de referência é o acrômio.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  },
+  {
+    "id": "AJUDA_0d9e7764-1537-40a7-8c22-e1e636bafb68",
+    "originalId": "0d9e7764-1537-40a7-8c22-e1e636bafb68",
+    "statement": "Sobre os Conselhos de Saúde, previstos na legislação do SUS, assinale a afirmativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "São órgãos consultivos que se reúnem a cada 4 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "São compostos apenas por representantes do Poder Público.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Devem ter caráter permanente e deliberativo, com composição paritária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Funcionam apenas em nível federal, vinculados ao Ministério da Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não têm poder de aprovar planos e relatórios de gestão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A fundamentação legal para esta questão encontra-se na Lei nº 8.142/1990, que dispõe sobre a participação da comunidade na gestão do Sistema Único de Saúde (SUS) e as transferências intergovernamentais de recursos financeiros.\n\nAlternativa (a) Incorreta. Os Conselhos de Saúde são órgãos deliberativos, o que significa que têm competência para tomar decisões, formular estratégias e controlar a execução da política de saúde, inclusive nos aspectos econômicos e financeiros. Além disso, os conselhos possuem reuniões ordinárias frequentes (geralmente mensais). O órgão que se reúne a cada quatro anos para avaliar a situação de saúde e propor diretrizes é a Conferência de Saúde.\n\nAlternativa (b) Incorreta. A composição dos Conselhos de Saúde é obrigatoriamente multissetorial. Eles não são formados apenas pelo Poder Público, mas sim por representantes de quatro segmentos: usuários, trabalhadores de saúde, representantes do governo e prestadores de serviços de saúde.\n\nAlternativa (c) Correta. Conforme o parágrafo 2º do artigo 1º da Lei nº 8.142/1990, o Conselho de Saúde possui caráter permanente (é um órgão de existência contínua) e deliberativo (tem poder de decisão). A composição é paritária, o que na legislação do SUS significa que o conjunto dos representantes dos usuários deve corresponder a 50% do total de membros, enquanto os outros 50% são distribuídos entre profissionais de saúde (25%) e gestores/prestadores de serviços (25%).\n\nAlternativa (d) Incorreta. Em conformidade com a descentralização do SUS, os Conselhos de Saúde funcionam em todas as esferas de governo. Existem o Conselho Nacional de Saúde (nível federal), os Conselhos Estaduais de Saúde e os Conselhos Municipais de Saúde.\n\nAlternativa (e) Incorreta. Uma das funções primordiais do Conselho de Saúde é justamente a fiscalização e o controle social. Isso inclui o poder e o dever de analisar e aprovar os planos de saúde e os relatórios de gestão. A aprovação desses documentos pelo Conselho é, inclusive, um requisito para que estados e municípios recebam repasses de recursos federais.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:05:18.952Z"
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_d41be2c0-ca10-493d-9477-628260c39177",
+    "originalId": "d41be2c0-ca10-493d-9477-628260c39177",
+    "statement": "Após um traumatismo torácico contuso, um paciente apresenta sinais de tamponamento cardíaco, incluindo hipotensão, taquicardia, aumento da turgência jugular e pulso fino.\nA conduta clínico-cirúrgica mais apropriada para esse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "realização de pericardiocentese emergencial;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ultrassonografia e punção aspirativa por agulha fina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "administração de fluidos intravenosos e monitoramento contínuo;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realização de toracotomia de emergência para drenagem do pericárdio;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "inserção de um tubo torácico para drenagem do espaço pleural esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito, caracterizado por hipotensão, turgência jugular e taquicardia (elementos da Tríade de Beck), associado ao pulso fino, é patognomônico de tamponamento cardíaco. No contexto de um trauma torácico contuso, o acúmulo de sangue no saco pericárdico gera um choque obstrutivo ao impedir o enchimento diastólico das câmaras cardíacas.\n\nAnálise das alternativas:\n\na) Incorreta. A pericardiocentese emergencial (punção de Marfan) pode ser utilizada como uma medida temporária de \"ponte\" em situações de extrema urgência para estabilização hemodinâmica quando a intervenção cirúrgica não está disponível de imediato. No entanto, no trauma, o sangue pericárdico frequentemente está coagulado, o que torna a aspiração por agulha pouco eficaz e perigosa, não sendo a conduta definitiva.\n\nb) Incorreta. A ultrassonografia (FAST) é fundamental para confirmar o diagnóstico de líquido no pericárdio, porém a \"punção por agulha fina\" não é o tratamento adequado para o tamponamento traumático, que exige drenagem de maior volume e possivelmente abordagem cirúrgica da lesão.\n\nc) Incorreta. A administração de fluidos intravenosos pode ser feita como suporte para tentar aumentar a pré-carga e manter o débito cardíaco temporariamente, mas não resolve a causa-base. O monitoramento isolado sem intervenção de descompressão levará inevitavelmente à parada cardiorrespiratória.\n\nd) Correta. A toracotomia de emergência (ou a esternotomia, dependendo do serviço e da localização da lesão) é a conduta clínico-cirúrgica de escolha. Ela permite a abertura rápida do pericárdio, a evacuação de coágulos e sangue, o alívio imediato do tamponamento e a identificação/sutura de eventuais lacerações cardíacas. Em pacientes com trauma torácico e sinais de tamponamento que apresentam deterioração hemodinâmica, a intervenção cirúrgica direta é a prioridade.\n\ne) Incorreta. A inserção de um tubo torácico (drenagem pleural) é o tratamento para hemotórax ou pneumotórax. O sangue no tamponamento cardíaco está retido dentro do saco pericárdico, que é um espaço anatômico distinto do espaço pleural. Portanto, um dreno de tórax não é capaz de descomprimir o coração.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  },
+  {
+    "id": "AJUDA_d41edccc-a474-4e56-be25-f1db71fdc2fb",
+    "originalId": "d41edccc-a474-4e56-be25-f1db71fdc2fb",
+    "statement": "Paciente, sexo masculino, 42 anos de idade, com queixas de diminuição da libido e potência sexual, há 6 meses, além de aparecimento de cefaleia holocraniana. Os exames laboratoriais demonstraram concentrações plasmáticas de prolactina = 280 mg/mL (vn 5-20 mg/mL), FSH 2,1 IU/L (vn 1,7-7,6 IU/L), LH 1,2 IU/L (vn 0,9-7,6 IU/L) e testosterona 110 ng/dL (vn 190-780 ng/dL). A ressonância nuclear magnética de sela túrcica revelou adenoma intrasselar medindo 8×6 mm.\nCom base nesses dados, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemianopsia bitemporal não é esperada nesse caso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pode-se considerar que esse paciente apresenta hipogonadismo hipergonadotrófico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de um adenoma hipofisário não funcionante com efeito de massa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A cirurgia transesfenoidal é a opção terapêutica de escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A reposição de testosterona intramuscular é a primeira medida terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro de macroprolactinemia laboratorial associado a sintomas de hipogonadismo secundário (diminuição da libido e potência) e cefaleia. Os exames mostram prolactina muito elevada (280 ng/mL), testosterona baixa (110 ng/dL) com gonadotrofinas (FSH e LH) em níveis inapropriadamente normais/baixos, caracterizando um hipogonadismo hipogonadotrófico. A Ressonância Magnética (RNM) identifica um adenoma de 8x6 mm, o que o classifica como um Microadenoma (lesões menores que 10 mm ou 1 cm).\n\nAnálise das Alternativas:\n\nAlternativa A (Correta): Para que ocorra a hemianopsia bitemporal (perda do campo visual periférico), é necessário que haja uma compressão mecânica do quiasma óptico. Como o adenoma descrito é um microadenoma (8x6 mm) e está restrito à sela túrcica (intrasselar), ele não possui dimensões suficientes para ascender e comprimir o quiasma, que se localiza acima da sela. Portanto, esse achado oftalmológico realmente não é esperado.\n\nAlternativa B (Incorreta): O paciente apresenta hipogonadismo hipogonadotrófico (ou secundário). No hipogonadismo hipergonadotrófico, esperaríamos encontrar FSH e LH elevados em uma tentativa da hipófise estimular gônadas falimentares. Aqui, a prolactina alta suprime a liberação de GnRH no hipotálamo, reduzindo a secreção de LH/FSH e, consequentemente, de testosterona.\n\nAlternativa C (Incorreta): O adenoma é claramente funcionante (prolactinoma), dado que os níveis de prolactina estão muito elevados (280 ng/mL). Níveis acima de 200-250 ng/mL são altamente sugestivos de prolactinoma verdadeiro e não apenas de \"efeito de haste\" (que ocorre em tumores não funcionantes que comprimem a haste hipofisária e elevam a prolactina geralmente abaixo de 100 ng/mL). Além disso, um adenoma de 8 mm não gera \"efeito de massa\" significativo em estruturas vizinhas.\n\nAlternativa D (Incorreta): O tratamento de primeira linha para prolactinomas (tanto micro quanto macroprolactinomas) é o tratamento clínico com agonistas dopaminérgicos, como a Cabergolina ou Bromocriptina. A cirurgia transesfenoidal é reservada para casos de intolerância ou resistência aos medicamentos, ou em urgências neurocirúrgicas (como apoplexia hipofisária com perda visual súbita), o que não é o caso.\n\nAlternativa E (Incorreta): A primeira medida terapêutica deve ser o tratamento da causa base (a hiperprolactinemia) com agonistas dopaminérgicos. Na grande maioria dos casos, a redução dos níveis de prolactina restaura o eixo gonadal e normaliza os níveis de testosterona endógena, não sendo necessária a reposição hormonal direta de imediato.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Hipófise"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  },
+  {
+    "id": "AJUDA_d425f7c2-c8d2-48a2-b26a-cd15f5c5b69f",
+    "originalId": "d425f7c2-c8d2-48a2-b26a-cd15f5c5b69f",
+    "statement": "As atribuições dos profissionais das equipes que atuam na Atenção Básica seguem normativas específicas do Ministério da Saúde, porém existem atribuições comuns a todos os membros das equipes. De acordo com as atribuições comuns a todos os componentes da equipe, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar procedimentos como administração de medicamentos, vacinas, coleta de material para exames, lavagem, preparação, esterilização de materiais, entre outras atividades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar e/ou supervisionar acolhimento com escuta qualificada e classificação de risco, de acordo com protocolos estabelecidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar estratificação de risco e elaborar plano de cuidados para as pessoas que possuem condições crônicas no território.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Participar do processo de territorialização e mapeamento da área de atuação da equipe.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão exige o conhecimento da Política Nacional de Atenção Básica (PNAB), que define as competências dos profissionais que atuam na Estratégia Saúde da Família. A PNAB divide as responsabilidades em atribuições comuns (que todos os membros da equipe devem realizar) e atribuições específicas (relacionadas à formação técnica de cada categoria profissional).\n\nAlternativa A: Incorreta. A execução de procedimentos como administração de medicamentos, vacinas, coleta de exames e esterilização de materiais é atribuição específica da equipe de enfermagem (enfermeiros, técnicos e auxiliares). Um médico ou um agente comunitário de saúde, por exemplo, não tem como atribuição comum a esterilização de materiais ou a coleta técnica de exames laboratoriais.\n\nAlternativa B: Incorreta. Embora o acolhimento deva ser uma postura ética de todos os funcionários da unidade, o acolhimento com classificação de risco e escuta qualificada é uma atribuição específica dos profissionais de nível superior (médicos e enfermeiros). Isso ocorre porque a classificação de risco demanda julgamento clínico para determinar a prioridade do atendimento e o potencial de agravamento do quadro do paciente.\n\nAlternativa C: Incorreta. A estratificação de risco e a elaboração de planos de cuidados detalhados para condições crônicas são atividades inerentes aos profissionais de nível superior da equipe. Estas tarefas exigem diagnóstico clínico, solicitação de exames e definição de condutas terapêuticas, competências que não são compartilhadas com os profissionais de nível médio ou agentes de saúde.\n\nAlternativa D: Correta. De acordo com a Portaria nº 2.436/2017, a participação no processo de territorialização e o mapeamento da área de atuação são atribuições comuns a todos os profissionais. Para que a Atenção Básica funcione, é fundamental que todos os membros da equipe (médicos, enfermeiros, técnicos, agentes de saúde e profissionais de saúde bucal) conheçam o território onde atuam, identifiquem as barreiras de acesso e compreendam o perfil epidemiológico e social da população adstrita.\n\nGabarito: Letra (d).",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  },
+  {
+    "id": "AJUDA_d4334979-208b-4c2c-8f04-a1b60de03d77",
+    "originalId": "d4334979-208b-4c2c-8f04-a1b60de03d77",
+    "statement": "Sobre a hemorragia digestiva baixa (HDB), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em até 25% dos pacientes com HDB, a fonte de sangramento é desconhecida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A cintilografia com tecnécio (Tc99m – labeled RBC) é o método mais preciso, mas pouco sensível para localizar o sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A principal causa de HDB em adultos jovens das 2ª e 3ª décadas de vida é a doença diverticular do cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A colonoscopia é preferencialmente realizada logo após a admissão do paciente para detecção precoce do sítio do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O tratamento cirúrgico imediato é indicado em todos os casos de HDB com instabilidade hemodinâmica inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Explicação da Questão: Hemorragia Digestiva Baixa (HDB)\n\nA Hemorragia Digestiva Baixa (HDB) refere-se ao sangramento originado abaixo do ligamento de Treitz (transição duodenojejunal). Embora a maioria dos casos cesse espontaneamente, o diagnóstico e o manejo adequados são fundamentais para reduzir a morbidade.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Em até 25% dos pacientes com HDB, a fonte de sangramento é desconhecida.\nMesmo com o avanço dos métodos diagnósticos (colonoscopia, angiotomografia, cintilografia e arteriografia), uma parcela significativa dos pacientes apresenta sangramento autolimitado ou intermitente, o que dificulta a identificação exata do sítio de sangramento. Estima-se que, em 10% a 25% dos casos, o diagnóstico etiológico não seja estabelecido durante o episódio agudo.\n\nAlternativa B (Incorreta): A cintilografia com tecnécio (Tc99m – labeled RBC) é o método mais sensível, porém o menos preciso para localizar o sangramento.\nA cintilografia é capaz de detectar taxas de sangramento muito baixas (0,1 a 0,5 mL/min), tornando-a altamente sensível. No entanto, sua precisão anatômica é baixa, pois o sangue marcado pode se mover dentro do lúmen intestinal (peristaltismo), dificultando a localização exata do ponto de origem para uma intervenção cirúrgica ou radiológica.\n\nAlternativa C (Incorreta): A principal causa de HDB em adultos jovens das 2ª e 3ª décadas de vida não é a doença diverticular.\nA doença diverticular do cólon é a principal causa de HDB em adultos idosos (geralmente acima de 60 anos). Em jovens (20 a 30 anos), as causas mais comuns são a doença hemorroidária, fissuras anais, doença inflamatória intestinal (como Retocolite Ulcerativa ou Doença de Crohn) e o divertículo de Meckel.\n\nAlternativa D (Incorreta): A colonoscopia não é realizada preferencialmente logo após a admissão sem preparo.\nEmbora a colonoscopia seja o padrão-ouro para diagnóstico e tratamento, ela exige estabilização hemodinâmica prévia do paciente e, idealmente, preparo de cólon com solução de polietilenoglicol (PEG) para garantir a visualização da mucosa. A realização da colonoscopia em um cólon repleto de fezes e sangue (sem preparo) reduz drasticamente a acurácia diagnóstica e a segurança do procedimento. O intervalo recomendado costuma ser entre 12 e 24 horas após a admissão, mediante o preparo.\n\nAlternativa E (Incorreta): O tratamento cirúrgico imediato não é indicado para todos os casos de instabilidade hemodinâmica.\nA abordagem inicial de qualquer paciente com instabilidade é a ressuscitação volêmica vigorosa com cristaloides e hemotransfusão. A cirurgia (colectomia) é reservada para casos de sangramento maciço persistente e refratário, nos quais as tentativas de controle por endoscopia ou radiologia intervencionista falharam e o paciente permanece instável. A maioria dos sangramentos para espontaneamente com medidas conservadoras.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Baixa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  },
+  {
+    "id": "AJUDA_d4355344-5f35-4949-aa65-a9faa118d5d7",
+    "originalId": "d4355344-5f35-4949-aa65-a9faa118d5d7",
+    "statement": "A teoria miasmática na febre amarela sustentava que a doença era causada por emanações pútridas ou \"miasmas\" provenientes de matéria orgânica em decomposição e condições ambientais insalubres, e não pela transmissão por agentes específicos. Para contestar essa teoria, dois sanitaristas se deixaram picar pelo mosquito. Os médicos que fizeram tal experimento se chamavam",
+    "options": [
+      {
+        "id": "A",
+        "text": "Emilio Ribas e Adolfo Lutz.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Oswaldo Cruz e Adolfo Lutz.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Carlos Chagas e Vital Brazil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Emílio Ribas e Vital Brazil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CONTEXTO HISTÓRICO\nA discussão sobre a transmissão da febre amarela no final do século XIX e início do século XX dividia a comunidade científica. A teoria miasmática acreditava que a doença surgia de gases emanados de matéria orgânica podre. Para refutar essa ideia e comprovar a tese de Carlos Finlay de que o mosquito Aedes aegypti era o vetor, Emílio Ribas e Adolfo Lutz realizaram um experimento rigoroso em 1903, no Hospital de Isolamento de São Paulo (hoje Instituto Emílio Ribas). Eles se deixaram picar por mosquitos infectados e, paralelamente, outros voluntários dormiram em camas com roupas sujas de pacientes com febre amarela para provar que a doença não era contagiosa nem causada por miasmas, mas sim transmitida pelo vetor.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Correta. Emílio Ribas, então diretor do Serviço Sanitário de São Paulo, e Adolfo Lutz, diretor do Instituto Bacteriológico, foram os médicos que se submeteram voluntariamente ao experimento. O sucesso desse teste foi crucial para que as políticas de saúde pública passassem a focar na eliminação dos focos do mosquito, abandonando as práticas ineficazes de desinfecção de roupas e objetos.\n\nAlternativa (b) Incorreta. Embora Oswaldo Cruz tenha sido o grande ícone do saneamento no Brasil e tenha implementado as brigadas \"mata-mosquitos\" no Rio de Janeiro com base na teoria vetorial, ele não foi um dos médicos que realizou o experimento de autoinoculação ao lado de Lutz em São Paulo.\n\nAlternativa (c) Incorreta. Carlos Chagas é mundialmente reconhecido pela descoberta do ciclo completo da tripanossomíase americana (Doença de Chagas). Vital Brazil é o patrono da toxinologia no Brasil, famoso por desenvolver soros antiofídicos específicos e fundar o Instituto Butantan. Nenhum dos dois participou do experimento específico sobre a transmissão da febre amarela mencionado no enunciado.\n\nAlternativa (d) Incorreta. Emílio Ribas de fato participou do experimento, mas seu parceiro principal nessa ação foi Adolfo Lutz. Vital Brazil, como mencionado anteriormente, focou sua carreira no estudo de venenos de animais peçonhentos e imunobiológicos.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  },
+  {
+    "id": "AJUDA_d43aa1a2-a02c-411b-ba36-46e2cdb055e6",
+    "originalId": "d43aa1a2-a02c-411b-ba36-46e2cdb055e6",
+    "statement": "A classificação da American Society of Anesthesiologists (ASA) é amplamente utilizada para estratificar o risco pré-operatório. Considere um paciente de 65 anos, hipertenso e diabético tipo 2 bem controlados com medicação oral, sem limitações funcionais significativas, escalado para uma colecistectomia videolaparoscópica eletiva. Qual é a classificação ASA correta e o impacto na mortalidade perioperatória esperada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ASA I; paciente saudável, pois as doenças estão controladas e não geram sintomas atuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ASA III; paciente com doença sistêmica grave, dado que diabetes e hipertensão são fatores de risco cardiovascular maiores independentemente do controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ASA IV; paciente com doença sistêmica grave que representa ameaça constante à vida, exigindo monitoramento intensivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ASA II; paciente com doença sistêmica leve a moderada, controlada, sem limitação funcional substancial; mortalidade baixa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA classificação da American Society of Anesthesiologists (ASA) é uma ferramenta fundamental na avaliação pré-anestésica, servindo para estratificar o estado físico do paciente e auxiliar na previsão do risco cirúrgico. No caso apresentado, o paciente possui duas patologias sistêmicas (Hipertensão e Diabetes Tipo 2), porém ambas estão bem controladas com medicação e o paciente não apresenta limitações funcionais (consegue realizar suas atividades diárias sem restrições).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: O ASA I é reservado exclusivamente para pacientes saudáveis, não fumantes e com consumo nulo ou mínimo de álcool. A presença de qualquer doença crônica, mesmo que controlada, exclui o paciente desta categoria.\n\nAlternativa (b) Incorreta: O ASA III é destinado a pacientes com doença sistêmica grave que gera limitação funcional substantiva (por exemplo, diabetes ou hipertensão mal controlados, obesidade mórbida, DPOC sintomática ou histórico de infarto há mais de 3 meses). Como o paciente do enunciado está bem controlado e sem limitações, ele não se enquadra aqui.\n\nAlternativa (c) Incorreta: O ASA IV descreve um paciente com doença sistêmica grave que representa uma ameaça constante à vida (como infarto agudo do miocárdio recente, disfunção valvar grave ou sepse). O quadro de hipertensão e diabetes controlados é estável e não oferece risco iminente de morte.\n\nAlternativa (d) Correta: O ASA II engloba pacientes com doença sistêmica leve a moderada, sem limitações funcionais. Exemplos clássicos incluem fumantes sociais, gestantes, obesidade leve (IMC entre 30 e 40), além de hipertensão arterial e diabetes mellitus bem controlados, exatamente como o caso descrito. Estatisticamente, pacientes ASA II apresentam taxas de mortalidade perioperatória muito baixas, próximas às de pacientes ASA I, o que valida a alternativa.\n\nRESUMO DA CLASSIFICAÇÃO ASA\n\nASA I: Saudável.\nASA II: Doença sistêmica leve, sem limitação funcional.\nASA III: Doença sistêmica grave, com limitação funcional.\nASA IV: Doença sistêmica grave com risco constante de morte.\nASA V: Moribundo, expectativa de vida menor que 24 horas com ou sem cirurgia.\nASA VI: Morte cerebral confirmada (doador de órgãos).\nSufixo E: Adicionado para cirurgias de emergência.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  },
+  {
+    "id": "AJUDA_d449047e-6fb8-4b99-9b4f-930389441a71",
+    "originalId": "d449047e-6fb8-4b99-9b4f-930389441a71",
+    "statement": "Paciente de 35 anos chega à unidade de atenção primária com queixa de dor intensa e edema localizado na região axilar há dois dias, onde nota uma área avermelhada e flutuante. Ao examinar, a médica de família e comunidade suspeita de um abscesso. Em relação ao cuidado de abscessos na atenção primária, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a antibioticoterapia é o tratamento de escolha para abscessos que não se resolvem espontaneamente após o uso de calor úmido e que estejam bem localizados",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "é necessário fechar bem a ferida após a drenagem do abscesso, garantindo que a pele seja o primeiro ponto a cicatrizar para evitar recidiva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a antissepsia tem papel menos importante na drenagem de abscessos do que nos ferimentos limpos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pode-se realizar, na drenagem de abscessos, o bloqueio anestésico de campo em casos de dor intensa",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Letra (a) Incorreta. O tratamento padrão-ouro para um abscesso cutâneo flutuante e bem localizado é a incisão e drenagem. A antibioticoterapia isolada não é o tratamento de escolha, pois o antibiótico apresenta baixa penetração na cavidade do abscesso. O uso de antibióticos é reservado para situações específicas, como presença de sinais sistêmicos (febre, taquicardia), celulite perilesional extensa, abscessos em locais de difícil drenagem ou em pacientes imunossuprimidos.\n\nLetra (b) Incorreta. Após a drenagem de um abscesso, a ferida deve ser mantida aberta para cicatrizar por segunda intenção. Se a pele for fechada precocemente, haverá acúmulo de secreção residual e detritos, o que leva invariavelmente à recidiva do abscesso. Em cavidades grandes, é comum o uso de um dreno ou preenchimento frouxo com gaze para garantir que a pele não feche antes que o fundo da cavidade tenha cicatrizado.\n\nLetra (c) Incorreta. A antissepsia é um passo fundamental em qualquer procedimento cirúrgico, mesmo em tecidos já infectados. Ela serve para reduzir a carga bacteriana da pele íntegra ao redor, evitando a introdução de novos patógenos na corrente sanguínea ou nos tecidos profundos durante a incisão, além de proteger a equipe de saúde e o ambiente.\n\nLetra (d) Correta. A realização de anestesia em abscessos é desafiadora, pois o pH ácido do tecido infectado inativa grande parte das moléculas do anestésico local, tornando a infiltração direta pouco eficaz e muito dolorosa. O bloqueio de campo, que consiste na infiltração do anestésico de forma circular ao redor da base do abscesso (em tecido saudável), é a técnica mais adequada para promover analgesia satisfatória e permitir a realização do procedimento com menor desconforto para o paciente.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  },
+  {
+    "id": "AJUDA_d44a3c3e-7ffa-4dbe-9e6a-f847b0eb440c",
+    "originalId": "d44a3c3e-7ffa-4dbe-9e6a-f847b0eb440c",
+    "statement": "No pronto-socorro de um hospital terciário, chega um homem de 72 anos com quadro de febre (38,5°C), dor em hipocôndrio direito há 2 dias e vômitos. O paciente é diabético e hipertenso, com antecedente de infarto agudo do miocárdio há 6 meses (em uso de beta bloqueador, AAS e clopidogrel) e apresenta doença pulmonar obstrutiva crônica em estágio avançado (usa oxigênio domiciliar). Ao exame, encontra-se taquicárdico (FC:115 bpm), PA 100x60 mmHg, sudoreico. Abdome com dor importante à palpação em hipocôndrio direito, sinal de Murphy positivo e defesa muscular local; leve icterícia (+/4). Ultrassonografia de abdome evidencia vesícula biliar distendida, com parede espessada (6 mm) e cálculo de 1,5 cm impactado no infundíbulo, além de moderada quantidade de líquido pericolecístico. Há dilatação discreta de vias biliares intra-hepáticas, sem cálculo visível no colédoco. Qual a melhor conduta terapêutica inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia venosa otimizada e suporte clínico, postergando a colecistectomia para 6 a 8 semanas após a resolução do quadro agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colecistectomia videolaparoscópica de emergência, com o máximo de suporte perioperatório em UTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colecistostomia por via cirúrgica aberta, sem remoção da vesícula, para drenagem do processo infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antibioticoterapia intravenosa de amplo espectro associada à drenagem percutânea da vesícula biliar guiada por imagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico e ultrassonográfico descreve uma colecistite aguda calculosa com sinais de gravidade sistêmica inicial (taquicardia, sudorese, febre e pressão arterial limítrofe). No entanto, o ponto central da questão reside no perfil do paciente: idoso de 72 anos com altíssimo risco cirúrgico e anestésico (infarto agudo do miocárdio recente há 6 meses, em uso de dupla antiagregação plaquetária com AAS e clopidogrel, e DPOC avançado oxigênio-dependente). Segundo as diretrizes internacionais de Tóquio (Tokyo Guidelines - TG18), pacientes com colecistite aguda que apresentam risco cirúrgico proibitivo ou contraindicações graves para anestesia geral se beneficiam da descompressão biliar minimamente invasiva associada à antibioticoterapia.\n\nAlternativa A (Incorreta): O tratamento exclusivamente clínico (apenas com antibióticos) apresenta altas taxas de falha em quadros de colecistite com repercussão sistêmica e líquido pericolecístico, além de não promover o controle mecânico da fonte infecciosa, aumentando o risco de perfuração e sepse em um paciente já fragilizado.\n\nAlternativa B (Incorreta): Embora a colecistectomia videolaparoscópica precoce seja o padrão-ouro para a maioria dos pacientes, neste caso ela impõe um risco perioperatório inaceitável. O pneumoperitônio e a ventilação mecânica seriam extremamente deletérios para o DPOC avançado, o infarto recente eleva exponencialmente o risco de novos eventos coronarianos e a dupla antiagregação traz alto risco de hemorragia intraoperatória.\n\nAlternativa C (Incorreta): A colecistostomia cirúrgica aberta é um procedimento mais invasivo, exigindo incisão na parede abdominal e, frequentemente, anestesia geral ou sedação profunda, o que acarreta maior morbimortalidade quando comparada à técnica percutânea. É reservada para situações excepcionais onde a via percutânea não está disponível ou é anatomicamente inviável.\n\nAlternativa D (Correta): A antibioticoterapia de amplo espectro combinada à colecistostomia percutânea guiada por ultrassonografia ou tomografia é a conduta de escolha. O procedimento é minimamente invasivo, realizado sob anestesia local, e permite o alívio imediato da hipertensão na vesícula biliar com drenagem do conteúdo infectado, controlando a sepse sem submeter o paciente ao estresse cirúrgico de grande porte.\n\nGabarito: Alternativa D.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  },
+  {
+    "id": "AJUDA_d44a58d9-e9bf-46e6-b7c4-70b68e722971",
+    "originalId": "d44a58d9-e9bf-46e6-b7c4-70b68e722971",
+    "statement": "Paciente, 32 anos de idade, sexo feminino, com relato de transtorno afetivo bipolar, em uso de lítio há 5 anos, foi admitida na urgência com piora do estado geral, tremor fino, náuseas e ataxia. Na avaliação, pálida, afebril, sinais de depleção ao exame físico, Glasgow 11 (3+3+5). Realizada sondagem vesical de demora, mais de 3 L de urina transparente nas últimas 12 horas. Exames séricos com: Ureia: 122 mg/dL; Creatinina: 3,2 mg/dL; Na+: 165 mEq/L; K+: 3,8 mEq/L; pH: 7,57; HCO3: 30 mEq/L; pCO2: 34 mmHg. Litemia: 5,2 mEq/L. Osmolaridade urinária 100 mOsm/kg. Sobre esse caso clínico, assinale a alternativa que apresenta, corretamente, a conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "DDAVP (Desmopressina) intranasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Expansão volêmica e suporte renal artificial extracorpóreo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Restrição hídrica e conivaptan endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste genético e acetazolamida via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ureia oral e sódio hipertônico endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Este caso clínico apresenta uma paciente com intoxicação grave por lítio, uma complicação clássica e potencialmente fatal do tratamento do transtorno afetivo bipolar. A litemia de 5,2 mEq/L é extremamente alta (o nível terapêutico geralmente é de 0,6 a 1,2 mEq/L), configurando uma emergência médica.\n\nA análise dos dados revela:\n1. Intoxicação Grave por Lítio: Manifestada por sintomas neurológicos (Glasgow 11, ataxia, tremor fino) e nível sérico de 5,2 mEq/L.\n2. Insuficiência Renal Aguda: Creatinina de 3,2 mg/dL e ureia de 122 mg/dL. Como o lítio é excretado exclusivamente pelos rins, a falha renal perpetua e agrava a toxicidade.\n3. Diabetes Insipidus Nefrogênico: O lítio causa resistência dos túbulos renais ao ADH. Isso explica a poliúria (> 3 L em 12 h) com urina diluída (osmolaridade de 100 mOsm/kg), resultando em hipernatremia grave (Na+ 165 mEq/L) e desidratação.\n\nAnálise das alternativas:\n\na) Incorreta. O DDAVP (desmopressina) é o tratamento para o Diabetes Insipidus Central. No caso do uso de lítio, o problema é periférico (os rins não respondem ao ADH), logo o DDAVP não teria efeito significativo. Além disso, essa conduta ignora a litemia crítica.\n\nb) Correta. A paciente apresenta sinais claros de depleção de volume, exigindo expansão volêmica inicial para restaurar a perfusão tecidual e tentar aumentar a depuração renal do lítio. Contudo, devido ao nível sérico de lítio ser superior a 4,0 mEq/L (ou > 2,5 mEq/L com sintomas graves e insuficiência renal), a indicação de suporte renal artificial extracorpóreo (hemodiálise) é absoluta. A hemodiálise é o método mais eficaz para remover o lítio da circulação.\n\nc) Incorreta. A restrição hídrica agravaria drasticamente a hipernatremia (165 mEq/L) e a desidratação. O conivaptan é um antagonista do receptor de vasopressina usado no tratamento da hiponatremia, o que é o oposto do quadro apresentado.\n\nd) Incorreta. Não há indicação de teste genético neste cenário de emergência toxicológica. A acetazolamida é um diurético que não trata a intoxicação por lítio nem o diabetes insipidus.\n\ne) Incorreta. O sódio hipertônico é utilizado para corrigir hiponatremia grave. Administrar sódio a uma paciente com Na+ de 165 mEq/L seria um erro gravíssimo, podendo levar a complicações neurológicas permanentes e morte. A ureia oral não tem papel neste manejo emergencial.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  },
+  {
+    "id": "AJUDA_d4546037-9431-4224-9778-779632ff55a9",
+    "originalId": "d4546037-9431-4224-9778-779632ff55a9",
+    "statement": "Uma mulher de 58 anos apresenta uma história de longa data de doença do refluxo gastroesofágico. Ela toma um inibidor da bomba de prótons duas vezes ao dia e reclama de crescente regurgitação nos últimos 6 meses. Ela tem um histórico de diabetes mellitus, obesidade mórbida e hipertensão. Ela nega o uso de álcool, atualmente fuma 1/2 pacote de cigarros por dia e é independente para todas as atividades da vida diária. No mais, ela está com boa saúde sem outros problemas. Seus sinais vitais são normais, o índice de massa corpora é de 39 kg/m² e o exame físico é normal.\nConsiderando o caso da mulher de 58 anos com obesidade mórbida (IMC 39 kg/m²) e DRGE refratária, qual é o próximo passo no tratamento desta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bypass gástrico laparoscópico em Y de Roux.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cessação de fumar e perda de peso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Reparo laparoscópico da hérnia hiatal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumentar a dose do inibidor da bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve uma paciente com Doença do Refluxo Gastroesofágico (DRGE) refratária ao tratamento medicamentoso otimizado, associada a dois importantes fatores agravantes modificáveis: obesidade (IMC de 39 kg/m²) e tabagismo ativo. \n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O bypass gástrico em Y de Roux laparoscópico é considerado a cirurgia de escolha para pacientes com DRGE associada à obesidade grave (IMC maior ou igual a 35 kg/m² com comorbidades). Contudo, a pergunta foca no próximo passo no manejo. Antes de indicar um procedimento cirúrgico invasivo, é essencial intervir nos fatores de risco comportamentais. Além disso, a cessação do tabagismo é uma exigência pré-operatória mandatória para reduzir o risco de complicações respiratórias e a formação de úlceras de boca anastomótica.\n\nAlternativa B (Correta): As modificações do estilo de vida representam a conduta inicial e indispensável no manejo de qualquer paciente com DRGE. O tabagismo diminui a pressão do esfíncter esofágico inferior e reduz a salivação protetora, enquanto a obesidade eleva a pressão intra-abdominal, promovendo o refluxo mecânico e a regurgitação. O controle desses fatores modificáveis por meio da cessação do fumo e da perda ponderal é a abordagem prioritária, segura e não invasiva.\n\nAlternativa C (Incorreta): O reparo isolado de hérnia de hiato ou a realização de fundoplicatura laparoscópica convencional (como a técnica de Nissen) são contraindicados de forma relativa em pacientes com obesidade significativa, pois apresentam elevadas taxas de falha e recidiva anatômica/sintomática devido à alta pressão intra-abdominal.\n\nAlternativa D (Incorreta): A paciente já está em uso de dose dobrada de inibidor da bomba de prótons (duas vezes ao dia), que é o regime medicamentoso máximo recomendado. Elevar a dose além desse limite não confere eficácia clínica adicional e não resolve a regurgitação, que é um sintoma mecânico de refluxo de volume, pouco responsivo ao simples bloqueio ácido.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:26.802Z"
+  }
+]

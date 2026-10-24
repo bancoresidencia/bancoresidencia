@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_b7d7c2a8-04d9-4d31-ba34-bda07ce337c9",
+    "originalId": "b7d7c2a8-04d9-4d31-ba34-bda07ce337c9",
+    "statement": "Gestante, na segunda consulta de pré-natal, traz resultado de ultrassom morfológico do 1º trimestre: feto único; BCF: 156; LA: volume normal; translucência nucal: 2,3 mm; presença de osso nasal; ausência de regurgitação em valva tricúspide; ducto venoso com onda A negativa. Cordão umbilical com duas artérias e uma veia. IG 12 sem e 3 dias. Dos marcadores ultrassonográficos de risco para aneuploidias, encontra-se alterado o seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "medida da translucência nucal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ducto venoso com onda A negativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ausência de regurgitação em valva tricúspide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "presença de osso nasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "cordão umbilical com duas artérias e uma veia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ultrassom morfológico de primeiro trimestre, realizado idealmente entre 11 semanas e 13 semanas e 6 dias (comprimento cabeça-nádega entre 45 e 84 mm), é fundamental no rastreamento de aneuploidias, como a Síndrome de Down, e malformações cardíacas.\n\nAnálise das alternativas:\n\nAlternativa A está incorreta. A translucência nucal (TN) é considerada normal quando se encontra abaixo do percentil 95 para a idade gestacional, adotando-se comumente na prática o ponto de corte de 2,5 mm. O valor de 2,3 mm apresentado no caso é normal.\n\nAlternativa B está correta. A dopplervelocimetria do ducto venoso avalia o fluxo sanguíneo em direção ao coração fetal. A onda A reflete a contração atrial (sístole atrial). O padrão fisiológico normal é a onda A positiva (fluxo anterógrado). A presença de onda A negativa (fluxo reverso) ou ausente é um marcador patológico de alto risco para aneuploidias (trissomias 21, 18 e 13) e cardiopatias congênitas.\n\nAlternativa C está incorreta. A ausência de regurgitação valvar tricúspide é o padrão de normalidade. O marcador de risco para cromossomopatias seria a presença de regurgitação (fluxo retrógrado durante a sístole ventricular).\n\nAlternativa D está incorreta. A presença do osso nasal é um achado normal de baixo risco. O marcador associado a aneuploidias é a ausência ou hipoplasia dos ossos nasais.\n\nAlternativa E está incorreta. A constituição vascular habitual do cordão umbilical é formada por duas artérias e uma veia. O achado patológico seria a artéria umbilical única (apenas uma artéria e uma veia).\n\nPortanto, o único marcador que se encontra alterado é o ducto venoso com onda A negativa (Alternativa B).",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  },
+  {
+    "id": "AJUDA_b7d953c3-47dc-4ab4-946b-29bc7730ea8e",
+    "originalId": "b7d953c3-47dc-4ab4-946b-29bc7730ea8e",
+    "statement": "Mulher de 60 anos, portadora de diabetes mellitus do tipo 2 há 15 anos, em uso irregular de insulina e sem controle glicêmico adequado, procura atendimento médico devido a queixas de náuseas, plenitude pós-prandial e distensão abdominal. Refere episódios de vômitos alimentares mesmo após longos períodos em jejum. Nos últimos 7 meses, evidenciou uma perda ponderal de 8 kg. Nega dor abdominal associada aos sintomas. Realizou duas endoscopias recentes que evidenciaram resíduos alimentares gástricos em grande quantidade, mas sem lesões expansivas ou estenosantes no antro gástrico, piloro ou duodeno.\nCom base no caso clínico clínico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O principal fator metabólico associado a essa disfunção é a hipoglicemia reacional em pacientes com uso irregular de insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se evitar o uso de metoclopramina, pois sua ação seletiva sobre os receptores dopaminérgicos pode piorar o quadro de distensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O manejo desses pacientes deve se iniciar com medidas de reeducação alimentar baseadas em dieta rica em fibras e gordura, que evitam oscilações abruptas nos índices glicêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A principal disfunção presente nesses pacientes é de ordem autonômica vagal, e a hiperglicemia crônica constitui a base de sua fisiopatologia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nos casos refratários, a cirurgia de escolha é a gastrojejunostomia aberta, pois tem melhores taxas de alívio sintomático em relação à piloromiotomia laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nA paciente apresenta um quadro clássico de gastroparesia diabética, uma complicação crônica do diabetes mellitus tipo 2 (DM2). Os principais pontos que sustentam esse diagnóstico são: longo tempo de doença (15 anos), controle glicêmico inadequado, sintomas de atraso no esvaziamento gástrico (plenitude, náuseas e vômitos de alimentos ingeridos há horas) e a presença de resíduos alimentares na endoscopia digestiva alta sem que haja uma obstrução mecânica (estenose ou tumor).\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. O fator metabólico central é a hiperglicemia crônica, e não a hipoglicemia. A hiperglicemia mantida leva ao estresse oxidativo e a danos neuronais. Vale lembrar que a hipoglicemia pode ser uma consequência da gastroparesia (pelo descompasso entre a ação da insulina e a absorção retardada dos alimentos), mas não a sua causa.\n\nAlternativa b) Incorreta. A metoclopramida é um dos principais medicamentos pró-cinéticos utilizados no tratamento da gastroparesia. Ela atua como antagonista dos receptores dopaminérgicos D2 e também possui ação colinérgica e serotoninérgica (5-HT4), auxiliando no esvaziamento gástrico e no controle dos vômitos. Seu uso deve ser monitorado devido ao risco de efeitos extrapiramidais, mas ela não piora a distensão.\n\nAlternativa c) Incorreta. As medidas dietéticas para pacientes com gastroparesia consistem em refeições pequenas, fracionadas e, crucialmente, pobres em fibras e gorduras. As fibras e as gorduras retardam naturalmente o esvaziamento gástrico, o que agravaria os sintomas de plenitude e vômitos nesta paciente.\n\nAlternativa d) Correta. A gastroparesia é uma forma de neuropatia autonômica. A hiperglicemia prolongada causa lesão nas fibras do nervo vago e também nas células intersticiais de Cajal (responsáveis pelo ritmo elétrico do estômago). Sem a sinalização adequada do vago, o estômago perde a capacidade de coordenar a motilidade antral e o relaxamento pilórico, resultando no quadro clínico descrito.\n\nAlternativa e) Incorreta. O tratamento cirúrgico é a última opção e reservado apenas para casos severos e refratários ao tratamento clínico e nutricional. A gastrojejunostomia não é a cirurgia de escolha; atualmente, preferem-se procedimentos menos invasivos, como a piloroplastia (que pode ser feita por via endoscópica — G-POEM) ou a instalação de estimulador elétrico gástrico. A cirurgia de derivação gástrica pode ser considerada em casos de obesidade associada, mas não é a conduta padrão descrita.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Gastroparesia"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  },
+  {
+    "id": "AJUDA_b7db40ea-eb34-4603-964c-83f3b28bdaa4",
+    "originalId": "b7db40ea-eb34-4603-964c-83f3b28bdaa4",
+    "statement": "Gestante de 32 anos, primigesta, iniciou o pré-natal com 13 semanas e chega ao pronto-socorro com gestação de 32 semanas e 3 dias. Nega alterações no seu acompanhamento pré-natal até então. Ao exame clínico, apresenta-se com PA: 145 x 93 mmHg (reaferida após 20 minutos, 148 x 95 mmHg), AU: 29 cm, BCF: 148, dinâmica uterina ausente, sem edema. Após avaliar a carteira de pré-natal, verifica-se que, na primeira consulta de pré-natal, a pressão arterial da paciente era 142 x 92 mmHg. Com essas informações e sem ter ainda o resultado de exames complementares, é correto afirmar que a paciente é portadora de qual diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertensão arterial crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hipertensão gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vaginose bacteriana e pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pré-eclâmpsia superajuntada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome HELLP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O diagnóstico das síndromes hipertensivas na gestação tem como marco temporal divisor a 20ª semana de gestação. Níveis pressóricos iguais ou superiores a 140 x 90 mmHg identificados antes de 20 semanas caracterizam a hipertensão arterial crônica, enquanto o surgimento de hipertensão após a 20ª semana aponta para hipertensão gestacional ou pré-eclâmpsia. \n\nNo caso apresentado, a paciente já apresentava níveis pressóricos elevados (142 x 92 mmHg) na primeira consulta, realizada com 13 semanas de gravidez, confirmando que a condição era pré-existente à gestação.\n\nAnálise das alternativas:\n\na) Correta. A paciente apresentou pressão arterial elevada (142 x 92 mmHg) com 13 semanas de idade gestacional (antes do marco de 20 semanas), o que define o diagnóstico de hipertensão arterial crônica.\n\nb) Incorreta. A hipertensão gestacional é caracterizada pelo surgimento de hipertensão arterial após a 20ª semana de gestação em uma mulher previamente normotensa, sem a presença de proteinúria ou sinais de disfunção orgânica.\n\nc) Incorreta. A vaginose bacteriana é uma disbiose vaginal sem relação com a regulação da pressão arterial. Além disso, a pré-eclâmpsia primária surge após 20 semanas de gestação.\n\nd) Incorreta. A pré-eclâmpsia superajuntada ocorre quando a gestante com hipertensão crônica desenvolve proteinúria após 20 semanas, piora súbita e refratária dos níveis pressóricos ou sinais de disfunção de órgãos-alvo. O enunciado relata que a paciente evoluiu sem queixas ou alterações no pré-natal e ainda não possui exames complementares que comprovem essa complicação.\n\ne) Incorreta. A síndrome HELLP é uma forma grave do espectro da pré-eclâmpsia definida por critérios laboratoriais específicos: hemólise, elevação de enzimas hepáticas e plaquetopenia. Não há dados clínicos ou laboratoriais que sustentem essa hipótese.\n\nGabarito: Letra A.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  },
+  {
+    "id": "AJUDA_b7dcb97c-ce1b-4dd9-b830-ebf477e53bfa",
+    "originalId": "b7dcb97c-ce1b-4dd9-b830-ebf477e53bfa",
+    "statement": "A predição do bem estar fetal pré-natal e durante o trabalho de parto incluem a prevenção de mortes fetais e de intervenções desnecessárias. Sobre esta avaliação fetal, está CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Movimentos fetais durante o exame ultrassonográfico bem como o tônus muscular do feto constituem parâmetros para a medida do \"perfil biofísico fetal\".",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "As acelerações dos batimentos cardíacos fetais na cardiotocografia basal durante os movimentos fetais são sinais de baixa reserva fetal, indicando extensão da propedêutica como a ultrassonografia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Seu valor preditivo positivo é superior ao valor preditivo negativo, tendo uma equivalência de mais de 90% para os testes anormais com os positivos verdadeiros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A somatória dos volumes de líquido amnióticos, o ILA, quando menor que 8 na gestação a termo, não pontua no PBF-perfil biofísico fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa (a) está correta. O Perfil Biofísico Fetal (PBF), descrito originalmente por Manning, é composto por cinco parâmetros específicos: a cardiotocografia (reatividade cardíaca fetal), os movimentos respiratórios fetais, os movimentos corporais globais, o tônus fetal e o volume do líquido amniótico. Portanto, tanto os movimentos quanto o tônus avaliados via ultrassonografia são componentes essenciais deste exame.\n\nA alternativa (b) está incorreta. As acelerações transitórias dos batimentos cardíacos fetais em resposta aos movimentos são sinais de reatividade e integridade do sistema nervoso central. Isso indica boa reserva fetal e bem-estar, sendo o resultado esperado em um feto saudável, e não um sinal de baixa reserva.\n\nA alternativa (c) está incorreta. Os testes de avaliação da vitalidade fetal, de forma geral, possuem um alto Valor Preditivo Negativo (VPN), que frequentemente supera 99%. Isso significa que, se o teste for normal, a chance de óbito fetal em curto prazo é mínima. No entanto, o Valor Preditivo Positivo (VPP) é baixo (muitas vezes inferior a 50%), o que significa que um teste alterado não necessariamente confirma sofrimento fetal, gerando muitos resultados falso-positivos.\n\nA alternativa (d) está incorreta. No Perfil Biofísico Fetal, a pontuação para o líquido amniótico é binária (0 ou 2 pontos). O parâmetro é considerado normal (2 pontos) se houver pelo menos um bolsão vertical de líquido maior que 2 cm. O Índice de Líquido Amniótico (ILA) igual a 8 cm é considerado normal na gestação a termo, pontuando normalmente no PBF. O ILA só seria preocupante e poderia zerar o parâmetro se estivesse abaixo de 5 cm (oligo-hidramnia).",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  },
+  {
+    "id": "AJUDA_b7e2e36b-56a7-49f8-a81b-c6e770598739",
+    "originalId": "b7e2e36b-56a7-49f8-a81b-c6e770598739",
+    "statement": "Gestante de 40 semanas evolui para parto vaginal. O líquido amniótico é meconial espesso. O recém-nascido nasce com choro vigoroso, bom tônus, respiração regular e frequência cardíaca de 150 bpm. Há disponibilidade de equipe treinada em reanimação neonatal. Qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intubação traqueal imediata para aspiração, por se tratar de mecônio espesso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aspiração profunda de boca, nariz e traqueia antes de secar o recém-nascido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cuidados de rotina junto à mãe, com manutenção da temperatura e observação, sem aspiração traqueal de rotina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ventilação com pressão positiva por 30 segundos, independentemente da respiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Oxigênio a 100 % por máscara, pois todo líquido meconial causa hipoxemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as diretrizes atuais de reanimação neonatal da Sociedade Brasileira de Pediatria (SBP) e do American Heart Association (AHA), especificamente no cenário de líquido amniótico meconial.\n\nAnálise da Questão:\nO caso descreve um recém-nascido (RN) a termo (40 semanas) com líquido amniótico meconial espesso, porém que apresenta boa vitalidade ao nascer: choro vigoroso, bom tônus muscular, respiração regular e frequência cardíaca normal (superior a 100 bpm).\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A intubação traqueal imediata para aspiração de mecônio caiu em desuso para RNs vigorosos há muitos anos. Atualmente, mesmo em RNs não vigorosos (deprimidos), a recomendação inicial é iniciar a Ventilação com Pressão Positiva (VPP) se necessário, e não a aspiração traqueal de rotina, que fica reservada apenas para casos de obstrução de via aérea evidente.\n\nAlternativa B (Incorreta): A aspiração profunda de orofaringe e nasofaringe de forma rotineira é desaconselhada. Ela pode causar estímulo vagal reflexo, levando a bradicardia e apneia, além de atrasar o início do contato pele a pele e da amamentação.\n\nAlternativa C (Correta): De acordo com os protocolos vigentes, se o RN nasce a termo, está respirando ou chorando e tem bom tônus muscular, ele é considerado um RN vigoroso. Independentemente da presença ou do aspecto do líquido amniótico (claro ou meconial), a conduta correta é o clampeamento tardio do cordão umbilical e o encaminhamento para os cuidados de rotina junto à mãe (contato pele a pele, aquecimento e amamentação na primeira hora). A presença de mecônio, por si só, não justifica aspiração ou separação da mãe se o bebê está bem.\n\nAlternativa D (Incorreta): A Ventilação com Pressão Positiva (VPP) é indicada apenas se o RN estiver em apneia, respiração irregular (gasping) ou com frequência cardíaca abaixo de 100 bpm após os passos iniciais. Como o RN do caso é vigoroso e respira bem, a VPP é contraindicada.\n\nAlternativa E (Incorreta): O uso de oxigênio a 100% é deletério ao RN devido ao estresse oxidativo. A reanimação neonatal em RNs a termo, quando necessária, deve ser iniciada com ar ambiente (21%). Além disso, o bebê da questão tem boa vitalidade e não apresenta sinais de hipoxemia que justifiquem suplementação de oxigênio.\n\nConclusão:\nPara RNs vigorosos, a presença de mecônio não altera a conduta de rotina. O foco deve ser a manutenção do calor e o vínculo materno-fetal imediato.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Reanimação Neonatal",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  },
+  {
+    "id": "AJUDA_b7e8a915-a4a2-41f4-b2b5-e5ad6cda9e77",
+    "originalId": "b7e8a915-a4a2-41f4-b2b5-e5ad6cda9e77",
+    "statement": "Primigesta, 24 anos, com 37 semanas gestacionais. Realizou pré-natal no posto de saúde sem intercorrências. Procura a maternidade por perda líquida vaginal há 2 horas, em episódio único. Nega febre, sangramento ou dores abdominais. Sinais vitais normais. Altura uterina: 34 cm. Atividade uterina ausente. Exame especular: conteúdo claro no fundo de saco em pequena quantidade. Testes auxiliares: pH de 7,5. Padrão microscópico de cristalização com ramificações secundárias. Índice de líquido amniótico: 2 cm. Toque vaginal: colo dilatado 2 cm, variedade de posição sacrotransversa esquerda, apresentação alta e móvel. Cardiotocografia: feto ativo e reativo. Qual é a melhor orientação para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação para indução do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alta hospitalar e aguardar início espontâneo do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internação para interrupção da gestação por via cesariana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Internação para versão cefálica externa e conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Internação, corticóide e cardiotocografia diária até início espontâneo do trabalho de parto",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\n\nEstamos diante de uma gestante primigesta de 37 semanas (gestação a termo) com diagnóstico confirmado de Ruptura Prematura de Membranas Ovulares (RPMO). O diagnóstico é corroborado pelo relato de perda líquida, visualização de conteúdo no especular, pH vaginal alcalino (7,5), teste de cristalização positivo e presença de oligoâmnio (ILA de 2 cm). O ponto crucial para a decisão terapêutica reside na avaliação do toque vaginal: a variedade de posição sacrotransversa esquerda indica que a apresentação é pélvica, e o fato de estar alta e móvel aumenta o risco de complicações.\n\nAlternativa A - INCORRETA: A indução do trabalho de parto é a conduta padrão para RPMO em gestações a termo quando o feto está em apresentação cefálica. No caso descrito, o feto está em apresentação pélvica (sacro). Em primigestas, a apresentação pélvica associada à bolsa rota é indicação de cesariana, devido ao risco de distocias e, principalmente, ao risco de prolapso de cordão umbilical, já que a apresentação não está encaixada.\n\nAlternativa B - INCORRETA: Não se deve dar alta para uma paciente com ruptura de membranas no termo. A conduta na RPMO após 37 semanas é a interrupção da gestação, pois a manutenção da gestante com membranas rotas aumenta o risco de infecção ovular (corioamnionite) sem trazer benefícios à maturidade fetal.\n\nAlternativa C - CORRETA: A interrupção da gestação é a conduta indicada pela idade gestacional (37 semanas). A via de escolha é a cesariana devido à apresentação pélvica em uma paciente primigesta. A situação de bolsa rota com apresentação alta e móvel torna o parto vaginal pélvico ainda mais arriscado, sendo a via alta a mais segura para o binômio mãe-feto.\n\nAlternativa D - INCORRETA: A versão cefálica externa (VCE) é a manobra para tentar virar o feto pélvico para cefálico. Contudo, ela é formalmente contraindicada na presença de ruptura de membranas e oligoâmnio (ILA de 2 cm), pois a escassez de líquido amniótico impede a movimentação fetal segura e aumenta o risco de descolamento de placenta e sofrimento fetal.\n\nAlternativa E - INCORRETA: A corticoterapia para maturidade pulmonar fetal é indicada apenas em gestações pré-termo, habitualmente até 34 semanas e 6 dias (ou até 36 semanas em protocolos específicos de corticoide tardio). Com 37 semanas, o feto já é considerado a termo. Além disso, a conduta expectante não se aplica neste cenário de malposição fetal e bolsa rota no termo.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  },
+  {
+    "id": "AJUDA_b7ec3fa8-5a7d-4652-a302-fb0d3f0de00c",
+    "originalId": "b7ec3fa8-5a7d-4652-a302-fb0d3f0de00c",
+    "statement": "PLINIO (23 a 79 D.C.), descreveu no ambiente nocivo das Minas de Carvão, Chumbo e Mercúrio, relatando que os trabalhadores utilizavam o Primeiro Equipamento de Proteção Individual (E.P.I.). descrito na literatura disponível. Qual foi o equipamento individual descrito:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Botas do tipo Coturno",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Membrana da bexiga do Carneiro",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Avental de raspa de couro de animais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Camisa de Algodão com Manga Cumprida",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige conhecimento sobre a história da Medicina do Trabalho. Plínio, o Velho, foi um dos primeiros estudiosos a documentar a relação entre o ambiente de trabalho e as doenças ocupacionais, focando especialmente na exposição dos mineradores a substâncias tóxicas.\n\nAlternativa a) Incorreta: O uso de botas resistentes ou coturnos não é o destaque histórico das observações de Plínio. Na Roma Antiga, o calçado comum era a sandália e, embora houvesse proteções para os pés, não houve uma descrição técnica de botas como inovação de saúde ocupacional nesse período específico.\n\nAlternativa b) Correta: Plínio descreveu que os trabalhadores das minas de cinábrio (de onde se extrai o mercúrio) utilizavam membranas de bexigas de animais, como o carneiro, amarradas sobre o rosto. O objetivo era criar uma barreira física que filtrasse a inalação de poeiras e vapores tóxicos. Por ser uma membrana translúcida, ela permitia que o trabalhador enxergasse enquanto protegia suas vias aéreas. Este relato é aceito na literatura médica como o primeiro registro histórico de um protetor respiratório, precursor do atual Equipamento de Proteção Individual (EPI).\n\nAlternativa c) Incorreta: Embora o couro fosse um material amplamente utilizado em diversas vestimentas romanas, o avental de raspa não é a peça descrita por Plínio como o equipamento específico utilizado para a proteção contra os agentes nocivos das minas de chumbo e mercúrio em seus relatos de higiene ocupacional.\n\nAlternativa d) Incorreta: O algodão não era a fibra têxtil de uso industrial predominante na Roma Antiga para fins de proteção. Além disso, a preocupação central relatada por Plínio era a toxicidade inalatória (vapores e poeiras de mercúrio e chumbo), o que tornava a proteção facial muito mais relevante do que o uso de mangas compridas para a preservação da saúde daqueles trabalhadores.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  },
+  {
+    "id": "AJUDA_b7f45a7c-b712-4157-8491-608f5e5781ef",
+    "originalId": "b7f45a7c-b712-4157-8491-608f5e5781ef",
+    "statement": "Adolescente de 16 anos pretende iniciar vida sexual e procura um médico para orientação contraceptiva. Sabe que deverá fazer uso de preservativo, porém não se sente segura somente com ele. Com base na história clínica descrita, assinale a alternativa correta sobre os métodos contraceptivos reversíveis de longa duração (LARC).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Associam estrogênios e progestagênios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os injetáveis trimestrais são os mais escolhidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não são considerados boas opções para a paciente referida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Devem ser incentivados entre as adolescentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda os Métodos Contraceptivos Reversíveis de Longa Duração (LARCs), que incluem os dispositivos intrauterinos (DIU de cobre e DIU de levonorgestrel) e o implante subdérmico de etonogestrel.\n\nAlternativa A: Incorreta. Os LARCs são métodos não combinados. O DIU de cobre não possui hormônios, enquanto o DIU de levonorgestrel e o implante subdérmico contêm apenas progestagênio. Nenhum dos métodos LARC utiliza estrogênio em sua composição.\n\nAlternativa B: Incorreta. Embora o injetável trimestral tenha uma duração maior que a pílula diária, ele não é classificado como um LARC. Os LARCs possuem duração de ação que varia de 3 a 10 anos. Além disso, o injetável trimestral exige uma nova aplicação a cada 90 dias, o que depende da disciplina da paciente, ao contrário dos LARCs, que, após inseridos, independem da ação da usuária por anos.\n\nAlternativa C: Incorreta. Os LARCs são considerados excelentes opções para adolescentes e mulheres jovens. Antigamente, existia o mito de que mulheres que nunca tiveram filhos (nulíparas) não poderiam usar DIU, mas as evidências atuais mostram que o uso é seguro e eficaz. Como a taxa de falha dos métodos tradicionais (pílula, camisinha, injetáveis) é maior em adolescentes, devido ao uso inconsistente ou ao esquecimento, os LARCs tornam-se a melhor escolha técnica.\n\nAlternativa D: Correta. Esta alternativa reflete a recomendação atual das principais sociedades de ginecologia e pediatria no mundo (como FEBRASGO, ACOG e AAP). Os LARCs devem ser incentivados e oferecidos como primeira linha para adolescentes, pois apresentam eficácia altíssima (equivalente à esterilização cirúrgica) e são totalmente reversíveis. O fato de serem métodos \"instale e esqueça\" remove o erro humano do processo, reduzindo significativamente as taxas de gravidez não planejada na adolescência.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  },
+  {
+    "id": "AJUDA_b7fb28a1-78ed-4156-bb9e-af8389092f42",
+    "originalId": "b7fb28a1-78ed-4156-bb9e-af8389092f42",
+    "statement": "Com relação à etiopatogenia da endometriose, é correto afirmar, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente 90% das mulheres apresentam líquido livre na pelve na época menstrual, sugerindo que ocorra um certo grau de refluxo tubário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesões de endometriose podem originar-se diretamente de tecidos normais através de um processo de diferenciação metaplásica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Predisposição genética associada a alterações no ambiente poderiam iniciar a doença nas suas diversas formas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os implantes de endometriose ocorrem pela influência de um ambiente hormonal favorável e de fatores imunológicos que não eliminam essas células desse local impróprio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fatores inflamatórios e estresse oxidativo não influenciam no surgimento da endometriose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda as principais teorias sobre a etiologia e a patogenia da endometriose, um tema clássico em ginecologia. Para resolvê-la, devemos identificar a alternativa incorreta.\n\nAlternativa a: Correta. Esta alternativa fundamenta a Teoria de Sampson, ou teoria da menstruação retrógrada. Estudos laparoscópicos demonstraram que a grande maioria das mulheres apresenta sangue e células endometriais na cavidade peritoneal durante o período menstrual. O que define quem desenvolverá a doença não é apenas a presença do refluxo, mas a capacidade dessas células de se implantarem e crescerem.\n\nAlternativa b: Correta. Refere-se à Teoria da Metaplasia Celômica (Teoria de Meyer). Ela sugere que o epitélio do peritônio (que tem a mesma origem embrionária do epitélio mülleriano) pode sofrer uma diferenciação e se transformar em tecido endometrial devido a estímulos inflamatórios ou hormonais. Essa teoria ajuda a explicar casos de endometriose em mulheres pré-púberes ou em locais onde o refluxo tubário não chegaria.\n\nAlternativa c: Correta. A endometriose é considerada uma doença multifatorial. Existe uma clara predisposição genética (maior risco em parentes de primeiro grau) que, somada a fatores epigenéticos e ambientais (exposição a poluentes, dieta, estilo de vida), pode desencadear o surgimento dos focos.\n\nAlternativa d: Correta. A endometriose é uma doença estrogênio-dependente, o que caracteriza o ambiente hormonal favorável mencionado. Além disso, falhas na imunidade celular, especificamente na ação de macrófagos e células Natural Killer (NK), impedem que esses restos menstruais sejam eliminados da cavidade pélvica, permitindo sua fixação e proliferação.\n\nAlternativa e: Incorreta. Esta é a alternativa que deve ser assinalada, pois afirma que fatores inflamatórios e estresse oxidativo não influenciam a doença. Na verdade, a endometriose é definida como uma doença inflamatória crônica. O microambiente peritoneal na paciente com endometriose é rico em citocinas pró-inflamatórias e espécies reativas de oxigênio (estresse oxidativo), que promovem a angiogênese, a sobrevivência celular e a dor característica da patologia.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  },
+  {
+    "id": "AJUDA_b7fec3e0-1915-4702-b3ce-0873a842523e",
+    "originalId": "b7fec3e0-1915-4702-b3ce-0873a842523e",
+    "statement": "Homem de 58 anos, com diabetes mellitus tipo 2 há 10 anos, apresenta pressão arterial de 150 x 92 mmHg em exame de monitorização ambulatorial de pressão arterial 24 horas. Não há história de doença cardiovascular prévia. Exames mostram função renal preservada (TFG > 60 mL/min/1,73 m2) e microalbuminúria positiva.\n\nQual a melhor conduta inicial, além de terapia de estilo de vida, para o controle da hipertensão neste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar betabloqueador em monoterapia, pela proteção cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar diurético tiazídico em monoterapia, pela boa eficácia em idosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar um inibidor da ECA e um bloqueador de canal de cálcio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Adiar tratamento farmacológico e recomendar apenas terapia de estilo de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O paciente apresenta hipertensão arterial estágio 1 (pressão arterial entre 140/90 e 159/99 mmHg) associada ao diabetes mellitus tipo 2 e à microalbuminúria. A presença de lesão de órgão-alvo (microalbuminúria) e do diabetes classifica-o como um paciente de alto risco cardiovascular. Para pacientes de alto risco, as diretrizes nacionais e internacionais recomendam o início imediato de terapia farmacológica, preferencialmente com a combinação de dois medicamentos, visando alcançar a meta pressórica (geralmente inferior a 130/80 mmHg em diabéticos) de forma mais rápida e eficaz.\n\nAlternativa a: Incorreta. Os betabloqueadores não são fármacos de primeira escolha para hipertensão arterial primária sem comorbidades específicas que os exijam, como insuficiência cardíaca com fração de ejeção reduzida ou angina. Em pacientes diabéticos, os betabloqueadores clássicos podem prejudicar a sensibilidade à insulina e dificultar a percepção de sinais de alerta em crises de hipoglicemia.\n\nAlternativa b: Incorreta. Embora os diuréticos tiazídicos sejam excelentes anti-hipertensivos e eficazes em idosos, a monoterapia não é a estratégia preferencial para um paciente de alto risco. Além disso, a presença de microalbuminúria torna imperativo o uso de uma droga que bloqueie o sistema renina-angiotensina-aldosterona, como um inibidor da ECA ou um bloqueador dos receptores de angiotensina, devido ao seu efeito de nefroproteção superior ao dos tiazídicos.\n\nAlternativa c: Correta. A combinação de um inibidor da ECA (ou BRA) com um bloqueador de canais de cálcio é uma das associações preferenciais no tratamento da hipertensão. O inibidor da ECA é fundamental neste caso, pois reduz a pressão intraglomerular e a proteinúria, retardando a evolução da nefropatia diabética. O bloqueador de canais de cálcio atua de forma sinérgica na vasodilatação periférica. A terapia combinada inicial é a recomendação padrão para pacientes com risco cardiovascular elevado ou PA acima de 140/90 mmHg.\n\nAlternativa d: Incorreta. Adiar o tratamento medicamentoso em um paciente com diabetes, microalbuminúria e pressão arterial de 150/92 mmHg está em desacordo com as evidências clínicas. O controle pressórico rigoroso é uma das intervenções mais importantes para prevenir complicações macro e microvasculares no paciente diabético, devendo ser iniciado simultaneamente às mudanças de estilo de vida.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:22.647Z"
+  }
+]

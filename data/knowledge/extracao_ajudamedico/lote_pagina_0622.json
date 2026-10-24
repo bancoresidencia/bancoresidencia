@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_ae35ee92-7e43-4a90-bece-de11748fdded",
+    "originalId": "ae35ee92-7e43-4a90-bece-de11748fdded",
+    "statement": "Mulher, 32 anos de idade, com história de obesidade (IMC 32 kg/m²), é admitida na enfermaria de clínica médica para investigação de edema generalizado de início há 3 semanas, progressivo, associado a ganho de peso de 8 kg. Ao exame, apresenta-se hipertensa (PA 150/95 mmHg), com edema ++/4+ em membros inferiores, edema periorbital e ascite. Exames laboratoriais revelam: creatinina 1,6 mg/dL, albumina sérica 1,8 g/dL, colesterol total 450 mg/dL, triglicerídeos 380 mg/dL. A proteinúria de 24 horas foi de 8,5 gramas. O sedimento urinário mostrou lipidúria e hematúria microscópica, sem leucocitúria significativa. As sorologias para hepatites B, C e HIV foram negativas, e o FAN foi não reagente.\n\nIdentifique as complicações mais provavelmente associadas ao quadro clínico dessa paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose metabólica com ânion gap elevado, hipertensão maligna, encefalopatia hipertensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipocalcemia sintomática, anemia hemolítica microangiopática e insuficiência cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Glomerulonefrite rapidamente progressiva, síndrome urêmica e hipercalemia grave",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trombose de veia renal, infecções por germes encapsulados e hiperlipidemia refratária.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clinico apresentado e classico de Sindrome Nefrotica, caracterizada pela presenca de proteinuria macica em niveis nefroticos (8,5 g/24h, sendo o ponto de corte superior a 3,5 g/24h), hipoalbuminemia grave (1,8 g/dL), edema generalizado com ascite e dislipidemia mista exuberante com lipiduria. A questao exige o reconhecimento das complicacoes fisiopatologicas decorrentes desse estado de perda proteica glomerular grave.\n\nAlternativa A - Incorreta. A acidose metabolica com anion gap elevado, sindrome uremica e hipercalemia sao complicacoes de perda avancada da taxa de filtracao glomerular (insuficiencia renal em estagio terminal), o que nao se aplica a esta paciente com creatinina de 1,6 mg/dL. A pressao arterial de 150/95 mmHg nao configura emergencia hipertensiva (hipertensao maligna ou encefalopatia).\n\nAlternativa B - Incorreta. A anemia hemolitica microangiopatica e caracteristica de microangiopatias tromboticas, como SHU e PTT. A reducao da albumina diminui o calcio total serico, mas o calcio ionizado geralmente permanece normal, tornando a hipocalcemia sintomatica rara. A insuficiencia cardiaca e causa, e nao complicacao primaria, de edema sistemico.\n\nAlternativa C - Incorreta. A Glomerulonefrite Rapidamente Progressiva (GNRP) e uma sindrome nefritica com perda abrupta da funcao renal em dias a semanas e sedimento urinario ativo (cilindros hematicos e hematuria dismorfica franca), diferente da sindrome nefrotica pura ou predominante observada aqui.\n\nAlternativa D - Correta. Aponta as tres complicacoes classicas da sindrome nefrotica:\n1. Fenomenos tromboembolicos, em especial a trombose de veia renal, decorrentes do estado de hipercoagulabilidade gerado pela perda urinaria de antitrombina III, proteina C e proteina S, alem do aumento hepatico de fibrinogenio e agregacao plaquetaria.\n2. Infeccoes por germes encapsulados (como Streptococcus pneumoniae), causadas pela perda de imunoglobulinas (IgG) e fatores do complemento na urina, prejudicando a opsonizacao bacteriana.\n3. Hiperlipidemia refrataria, que ocorre devido a estimulacao da sintese hepatica de lipoproteinas em resposta a baixa pressao oncotica plasmatica, sendo persistente e de dificil controle ate que a proteinuria seja resolvida.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.066Z"
+  },
+  {
+    "id": "AJUDA_ae38e155-2a84-428d-94a6-5e69b9e98276",
+    "originalId": "ae38e155-2a84-428d-94a6-5e69b9e98276",
+    "statement": "Lucas, 4 anos, é levado ao pediatra pelos pais devido a fadiga excessiva, palidez e perda de apetite nas últimas semanas. Ele frequenta creche e se queixa de fraqueza durante brincadeiras, mas não apresenta febre, icterícia ou sangramentos aparentes. A dieta é pobre em carnes e verduras. Exame físico: Palidez cutânea e de mucosas. Taquipneia leve, sem sopros cardíacos. Peso e altura dentro do percentil adequado. Sem linfonodomegalias ou esplenomegalia. Exames laboratoriais: Hemograma: Hb 8,5 g/dL (baixo), Ht 28%, VCM 68 fL (microcítica), HCM 22 pg. Reticulócitos: 1%. Ferritina: baixa. VHS e PCR normais.\n\nQual é a causa mais provável de anemia neste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia ferropriva por deficiência alimentar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Anemia hemolítica autoimune.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anemia aplástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anemia megaloblástica por deficiência de vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anemia secundária a doença crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O diagnóstico principal do paciente Lucas é anemia ferropriva, fundamentado tanto pela história clínica quanto pelos achados laboratoriais. Vamos analisar os pontos-chave para a resolução da questão:\n\nAnálise do quadro clínico e laboratorial:\n1. Epidemiologia e clínica: Lucas tem 4 anos e possui uma dieta pobre em carnes e verduras, principais fontes de ferro. Apresenta palidez e fadiga, sintomas típicos de síndrome anêmica, sem sinais de sangramento, febre ou icterícia.\n2. Hemograma: A hemoglobina de 8,5 g/dL confirma a anemia. O VCM (volume corpuscular médio) de 68 fL indica microcitose (hemácias pequenas) e o HCM (hemoglobina corpuscular média) de 22 pg indica hipocromia (hemácias pálidas).\n3. Reticulócitos: O valor de 1% mostra uma anemia hipoproliferativa, ou seja, a medula óssea não está conseguindo compensar a perda/falta de células por falta de \"matéria-prima\".\n4. Ferritina: O valor baixo é o achado mais específico para deficiência de ferro, pois reflete que os estoques corporais desse mineral estão exauridos.\n\nAnálise das alternativas:\n\na) CORRETA. A anemia ferropriva por deficiência alimentar é a principal causa de anemia na infância. O perfil laboratorial (microcítica, hipocrômica, ferritina baixa e reticulócitos baixos) associado à dieta inadequada confirma essa hipótese.\n\nb) INCORRETA. As anemias hemolíticas são anemias regenerativas, apresentando reticulocitose (aumento de reticulócitos) e, frequentemente, cursando com icterícia e esplenomegalia, sinais que o paciente não possui. Além disso, costumam ser normocíticas ou macrocíticas.\n\nc) INCORRETA. A anemia aplástica envolve a falência da medula óssea em produzir as três linhagens sanguíneas (pancitopenia), resultando em baixos níveis de hemácias, leucócitos e plaquetas. O paciente apresenta apenas anemia isolada e o padrão de tamanho das hemácias seria normocítico.\n\nd) INCORRETA. A deficiência de vitamina B12 ou ácido fólico causa anemia megaloblástica, que se caracteriza por ser uma anemia macrocítica, ou seja, com VCM elevado (geralmente acima de 100 fL), o oposto do que foi encontrado no exame de Lucas.\n\ne) INCORRETA. Na anemia de doença crônica, a ferritina costuma estar normal ou elevada (pois é uma proteína de fase aguda) e os marcadores inflamatórios, como VHS e PCR, estariam aumentados. No caso em questão, a ferritina está baixa e os marcadores inflamatórios estão normais, descartando essa hipótese.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.066Z"
+  },
+  {
+    "id": "AJUDA_ae3c7767-1bf6-4906-a1de-44116f29ceb4",
+    "originalId": "ae3c7767-1bf6-4906-a1de-44116f29ceb4",
+    "statement": "Paciente masculino, 20 anos, previamente hígido, procurou atendimento seis dias após inserção voluntária de corpo estranho no reto, referindo dor abdominal progressiva e ausência de evacuações. Ao exame, apresentava dor em fossa ilíaca esquerda, sem sinais de peritonite. O toque retal não mostrou palpação do corpo estranho ou lesões no reto, mas verificou-se secreção sero-sanguinolenta a retirada da luva. Tomografia evidenciou corpo estranho no retossigmoide, sem sinais de pneumoperitônio, clinicamente estável. Das indicações de abordagem cirúrgica abaixo, nesse contexto, a mais indicada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laxante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Extração transanal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A abordagem de corpos estranhos retossigmoides exige uma avaliação cuidadosa da estabilidade clínica e da integridade da alça intestinal. No caso descrito, o paciente está estável, sem sinais de peritonite, e a tomografia descartou pneumoperitônio (perfuração).\n\nAnálise das alternativas:\n\na) Incorreta. A laparotomia é um procedimento de alta morbidade e deve ser reservada para situações de emergência, como perfuração intestinal evidente, peritonite generalizada ou quando todas as tentativas de extração por via baixa (transanal) falharem.\n\nb) Incorreta. A videolaparoscopia pode ser utilizada em casos difíceis para auxiliar na ordenha (manobra de *milking*) do objeto de cima para baixo, facilitando a retirada pelo ânus. No entanto, ela ainda é mais invasiva que a tentativa inicial de extração transanal sob anestesia.\n\nc) Incorreta. O uso de laxantes ou enemas é absolutamente contraindicado na suspeita de obstrução por corpo estranho. O estímulo ao peristaltismo contra um objeto fixo aumenta drasticamente o risco de perfuração intestinal e translocação bacteriana.\n\nd) Correta. A extração transanal é a conduta inicial padrão para pacientes estáveis e sem sinais de perfuração. O procedimento deve ser realizado, preferencialmente, sob sedação profunda ou bloqueio anestésico (raquianestesia) para promover o relaxamento do esfíncter anal, permitindo a manipulação do objeto. Mesmo que o corpo estranho esteja no retossigmoide, como mostra a imagem da tomografia (que revela um objeto cilíndrico de grande volume e denso), o relaxamento muscular muitas vezes permite que o cirurgião alcance ou mobilize o objeto para retirá-lo pelo canal anal, sem necessidade de incisões abdominais.\n\ne) Incorreta. A colonoscopia pode ser útil para capturar objetos pequenos e cortantes ou para avaliar lesões na mucosa após a remoção. Contudo, para objetos grandes, pesados e lisos como o da imagem, os acessórios endoscópicos costumam ser insuficientes para garantir a preensão e a tração necessárias para a retirada.\n\nAssociação com a imagem: As imagens de tomografia computadorizada nos planos coronal e axial demonstram um corpo estranho sólido, cilíndrico e radiopaco, compatível com um frasco ou recipiente, ocupando o lúmen do retossigmoide. A ausência de ar livre extraluminal (pneumoperitônio) nas imagens reforça a segurança para a tentativa inicial de extração transanal.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/86158f273019ae4de4138071a5a8ccee04aa4bda4f7720d5e4bb29915dee5581.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ae3c7767-1bf6-4906-a1de-44116f29ceb4_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.583Z"
+  },
+  {
+    "id": "AJUDA_ae52dd94-3d25-4c09-aeb8-6bda2a8521fc",
+    "originalId": "ae52dd94-3d25-4c09-aeb8-6bda2a8521fc",
+    "statement": "Nas pacientes com êmese na gestação, o tratamento medicamentoso inicial considerado de primeira linha é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fenotiazina e doxilamina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Piridoxina e doxilamina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ondasetrona e piridoxina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doxilamina e ondasetrona",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A emese gravídica (náuseas e vômitos da gestação) é uma condição extremamente comum, atingindo até 80% das gestantes. O manejo segue uma escada terapêutica que prioriza a segurança fetal e a eficácia clínica.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. Embora a doxilamina seja um fármaco de primeira linha, as fenotiazinas (como a prometazina ou clorpromazina) são consideradas tratamentos de segunda ou terceira linha, reservadas para casos que não respondem à terapia inicial ou casos mais graves.\n\nAlternativa b) CORRETA. De acordo com as principais diretrizes nacionais (FEBRASGO) e internacionais (ACOG), a associação de piridoxina (vitamina B6) e doxilamina (um anti-histamínico de primeira geração) é o tratamento farmacológico inicial de primeira escolha. Essa combinação apresenta o maior perfil de segurança para o feto e eficácia comprovada na redução dos sintomas leves a moderados. A piridoxina isolada também pode ser utilizada como o primeiro passo antes da associação.\n\nAlternativa c) Incorreta. A piridoxina é de primeira linha, mas a ondansetrona (um antagonista dos receptores 5-HT3) é geralmente reservada para casos refratários aos tratamentos iniciais. Além disso, existe discussão na literatura sobre o uso da ondansetrona no primeiro trimestre devido a potenciais riscos (embora baixos) de malformações, como fendas palatinas.\n\nAlternativa d) Incorreta. Conforme explicado anteriormente, a ondansetrona não é considerada droga de primeira linha no tratamento inicial da emese gravídica, devendo ser utilizada apenas quando outras terapias falharem.\n\nRESUMO DO PROTOCOLO:\n1. Medidas dietéticas e mudança de estilo de vida (fracionamento das refeições, evitar gatilhos).\n2. Primeira linha farmacológica: piridoxina isolada ou associada à doxilamina.\n3. Segunda linha: anti-histamínicos (como o dimenidrinato) ou dopaminérgicos (metoclopramida).\n4. Terceira linha/Casos graves: ondansetrona ou corticosteroides (estes últimos apenas após a 10ª semana de gestação).",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.583Z"
+  },
+  {
+    "id": "AJUDA_ae5deb2b-45a0-486b-af9a-486d1263f489",
+    "originalId": "ae5deb2b-45a0-486b-af9a-486d1263f489",
+    "statement": "A monitorização com o estimulador de nervo periférico que utiliza a aceleromiografia é a melhor maneira de acompanhar o bloqueio neuromuscular após uso de agentes adespolarizantes usados por via venosa. De acordo com a resposta, o bloqueio neuromuscular pode ser classificado em quatro níveis: bloqueio intenso, bloqueio profundo, bloqueio moderado ou cirúrgico e fase de recuperação. Quais são os testes mais utilizados na anestesia clínica que avaliam o nível de bloqueio e a recuperação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TOF e estimulação simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Contagem pós tetânica e TOF.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Estímulo simples e estimulação tetânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estímulo duplo e simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A monitorização do bloqueio neuromuscular (BNM) é essencial para garantir a segurança anestésica, permitindo avaliar a profundidade da paralisia e o momento adequado para a reversão ou extubação. Para compreender a resposta correta, é necessário correlacionar os testes com os níveis de bloqueio mencionados no enunciado:\n\n1. Bloqueio Intenso: Nenhuma resposta ao TOF (0/4) e nenhuma resposta à Contagem Pós-Tetânica (PTC = 0).\n2. Bloqueio Profundo: Nenhuma resposta ao TOF (0/4), mas presença de pelo menos uma resposta à Contagem Pós-Tetânica (PTC ≥ 1).\n3. Bloqueio Moderado (ou Cirúrgico): Retorno das respostas ao TOF, geralmente entre 1 a 3 respostas (TOF 1/4 a 3/4).\n4. Fase de Recuperação: Presença das 4 respostas ao TOF (4/4), devendo-se avaliar a razão TOF (T4/T1) para confirmar a reversão completa (razão > 0,9).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O estímulo simples (*single twitch*) é utilizado principalmente para determinar o tempo de início de ação (*onset*) do relaxante muscular ou para estabelecer um valor de base (*baseline*) antes da administração da droga. Ele não consegue quantificar o bloqueio profundo de forma eficaz e não é o padrão para avaliar a recuperação fina da musculatura.\n\nAlternativa (b) Correta: Esta é a dupla de testes fundamental na anestesia moderna. O TOF (Sequência de Quatro Estímulos) é o teste mais utilizado universalmente para monitorar o bloqueio moderado e o início da recuperação. No entanto, o TOF possui uma limitação: ele não quantifica nada quando o bloqueio está profundo (zero respostas). Para preencher essa lacuna, utiliza-se a Contagem Pós-Tetânica (PTC), que é o único teste capaz de mensurar o nível de paralisia em níveis profundos, permitindo ao anestesiologista estimar em quantos minutos o paciente voltará a apresentar respostas no TOF.\n\nAlternativa (c) Incorreta: A estimulação tetânica isolada é raramente utilizada de forma independente na clínica, exceto como parte do protocolo de Contagem Pós-Tetânica. Ela é dolorosa e não oferece uma escala de gradação para os quatro níveis de bloqueio citados. O estímulo simples também carece de precisão para a fase de recuperação.\n\nAlternativa (d) Incorreta: O estímulo de duplo pulso (*Double Burst Stimulation* - DBS) foi criado especificamente para facilitar a detecção visual da fadiga (*fade*) na fase de recuperação, sendo mais sensível que o TOF para avaliação manual/visual. Entretanto, ele não avalia o bloqueio profundo. O estímulo simples, como já mencionado, tem utilidade restrita ao início do procedimento.\n\nPortanto, para cobrir todo o espectro do bloqueio neuromuscular (do intenso ao estágio de recuperação), a Contagem Pós-Tetânica e o TOF são os testes clínicos fundamentais.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.583Z"
+  },
+  {
+    "id": "AJUDA_ae6001cc-e4b2-4168-bc00-32ec2799964a",
+    "originalId": "ae6001cc-e4b2-4168-bc00-32ec2799964a",
+    "statement": "O ciclo menstrual é um processo fisiológico complexo e cíclico que ocorre nas mulheres em idade reprodutiva, com o objetivo de preparar o organismo para uma possível gravidez. Assim, avalie as proposições:\n\nI. A fase folicular inicia-se no primeiro dia da menstruação e se estende até o pico do Hormônio Luteinizante (LH), momento em que ocorre a ovulação.\nII. Durante a fase folicular, o aumento dos níveis do Hormônio Folículo-Estimulante (FSH) estimula o recrutamento e desenvolvimento dos folículos ovarianos, que passam a produzir estradiol e inibina B.\nIII. O folículo dominante, que se destaca durante o desenvolvimento folicular, possui uma maior quantidade de receptores de FSH e maior atividade da enzima aromatase, permitindo que ele continue seu desenvolvimento mesmo com a diminuição dos níveis de FSH.\n\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Proposição I: Correta. Didaticamente, o ciclo menstrual é dividido em fases ovarianas e uterinas. A fase folicular ovariana tem início no primeiro dia da menstruação, momento em que os níveis de progesterona e estrogênio estão baixos. Ela se estende por um período variável até que ocorra o pico de hormônio luteinizante (LH), que é o estímulo determinante para a ovulação (rompimento do folículo e liberação do óvulo), ocorrendo aproximadamente 34 a 36 horas após o início deste pico.\n\nProposição II: Correta. No final da fase lútea do ciclo anterior, a regressão do corpo lúteo causa a queda de estrogênio, progesterona e inibina A. Essa queda retira o feedback negativo sobre a hipófise, permitindo que o hormônio folículo-estimulante (FSH) suba nos primeiros dias do novo ciclo. O FSH atua nas células da granulosa, promovendo o recrutamento de uma coorte de folículos e estimulando a atividade da enzima aromatase, que converte androgênios em estradiol. Além disso, as células da granulosa produzem inibina B, que é o marcador da fase folicular.\n\nProposição III: Correta. Este é o mecanismo biológico de seleção do folículo dominante. Conforme os níveis de estradiol e inibina B sobem, eles exercem feedback negativo na hipófise, reduzindo a secreção de FSH. O folículo que se torna dominante (geralmente aquele que iniciou o desenvolvimento com maior sensibilidade ao FSH) possui uma maior concentração de receptores de FSH e uma maquinaria enzimática (aromatase) mais eficiente. Isso permite que ele sobreviva e continue crescendo em um ambiente de FSH decrescente, enquanto os demais folículos da coorte, que possuem menos receptores, sofrem atresia por privação hormonal.\n\nAnálise das Alternativas:\nComo as três proposições descrevem mecanismos fisiológicos fundamentais e precisos do ciclo menstrual, todas estão corretas.\n\nAlternativa a) Incorreta. Não apenas a III está correta.\nAlternativa b) Incorreta. Não apenas a II está correta.\nAlternativa c) Incorreta. A proposição II também é verdadeira.\nAlternativa d) Correta. Todas as proposições (I, II e III) estão tecnicamente corretas e se complementam na explicação da fase folicular.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.583Z"
+  },
+  {
+    "id": "AJUDA_ae633cbe-3e7f-4716-890c-a7d8bc204941",
+    "originalId": "ae633cbe-3e7f-4716-890c-a7d8bc204941",
+    "statement": "A escala A.P.G.A.R. Familiar é uma ferramenta rápida e de fácil aplicação utilizada para avaliação da funcionalidade familiar na APS. Os domínios avaliados por essa escala NÃO incluem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adesão (medida de quanto a família aceita as regras sociais).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Adaptação (medida de quanto a família utiliza recursos internos e externos em momentos de crise).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Companheirismo (medida de como a família compartilha responsabilidades e emoções).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Crescimento (medida de como a família apoia a autonomia e o amadurecimento de seus membros).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Afetividade (medida das relações de cuidado e afeto demonstradas na família).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O APGAR Familiar é um instrumento de rastreamento da funcionalidade familiar, desenvolvido por Gabriel Smilkstein em 1978. Ele avalia a satisfação dos membros da família em relação a cinco domínios básicos. Cada letra do acrônimo representa um desses critérios: Adaptation (Adaptação), Partnership (Companheirismo ou Participação), Growth (Crescimento), Affection (Afetividade) e Resolve (Capacidade Resolutiva ou Resolução).\n\nAlternativa (a) - Incorreta (Gabarito): O termo \"Adesão\" não compõe os domínios da escala APGAR. O primeiro \"A\" do acrônimo refere-se à Adaptação. Além disso, a escala foca na percepção de satisfação individual com a dinâmica interna da família, e não no cumprimento de regras sociais externas pela família, como sugere a descrição da alternativa.\n\nAlternativa (b) - Correta: A Adaptação avalia como a família utiliza seus recursos (tanto internos quanto externos, como apoio de amigos ou instituições) para lidar com situações de crise, estresse ou mudanças de ciclo de vida.\n\nAlternativa (c) - Correta: O Companheirismo (ou Participação/Partnership) mede a satisfação do indivíduo com a forma como as decisões são compartilhadas e como as responsabilidades são divididas entre os membros da família.\n\nAlternativa (d) - Correta: O Crescimento (Growth) avalia o suporte que a família oferece para que o indivíduo alcance sua autonomia e amadurecimento, tanto físico quanto emocional, permitindo que cada membro se desenvolva plenamente.\n\nAlternativa (e) - Correta: A Afetividade (Affection) foca na satisfação do membro em relação às demonstrações de carinho e cuidado, bem como à resposta emocional do grupo familiar frente a sentimentos como raiva, tristeza ou alegria.\n\nVale ressaltar que o domínio não citado nas alternativas é o Resolve (Capacidade Resolutiva), que avalia a satisfação com o tempo e o compromisso que os membros dedicam uns aos outros.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.583Z"
+  },
+  {
+    "id": "AJUDA_ae649834-c8b1-4548-b8b0-b4f93f212c09",
+    "originalId": "ae649834-c8b1-4548-b8b0-b4f93f212c09",
+    "statement": "Paciente, 31 anos de idade, nuligesta, procura atendimento com queixa de irregularidade menstrual nos últimos 5 meses, sem amenorreia completa. Refere desejo reprodutivo preservado. Nega cefaleia, alterações visuais ou galactorreia. Não faz uso de psicotrópicos, antieméticos ou anticoncepcionais. Exame físico: normal. Sem galactorreia à expressão mamária. IMC 23 kg/m². Exames laboratoriais (duas coletas matinais): β-hCG: negativo, TSH e T4L: normais, Prolactina sérica: 92 ng/mL em ambas as dosagens, FSH/LH compatíveis com fase folicular precoce, estradiol normal e RM de sela túrcica: hipófise com dimensões normais, sem evidência de adenoma. Diante desses achados, assinale a alternativa que apresenta, corretamente, a conduta diagnóstica adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar para laparoscopia diagnóstica, diante da infertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar cabergolina, para normalizar os níveis de prolactina e restaurar ciclos ovulatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar teste de estímulo com TRH, para confirmar hiperprolactinemia verdadeira.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir dosagem de prolactina em 30 dias, após suspensão de possíveis medicamentos indutores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar investigação de macroprolactina, para afastar macroprolactinemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Texto Original:\nO caso clínico apresenta uma paciente jovem com hiperprolactinemia moderada (92 ng/mL), confirmada em duas ocasiões, porém com exames de imagem (ressonância magnética) normais e ausência de causas secundárias comuns, como gestação, hipotireoidismo ou uso de medicamentos indutores. Um ponto fundamental é a dissociação entre o valor laboratorial e a clínica, que é frusta (apenas irregularidade menstrual leve, sem galactorreia e com exames de FSH, LH e Estradiol normais).\n\nAlternativa A - Incorreta. A laparoscopia é um procedimento invasivo indicado para a investigação de causas tuboperitoneais ou endometriose no contexto da infertilidade. A paciente apresenta uma alteração endócrina evidente que deve ser esclarecida primeiro. Além disso, não há tempo de tentativa de concepção relatado que defina formalmente a infertilidade.\n\nAlternativa B - Incorreta. O tratamento com agonistas dopaminérgicos (como a cabergolina) é indicado para tratar prolactinomas ou hiperprolactinemia verdadeira que cause sintomas clínicos significativos. Iniciar a medicação antes de confirmar se o excesso de prolactina é biologicamente ativo (monomérico) ou se é apenas um erro laboratorial por macroprolactina seria prematuro e poderia submeter a paciente a efeitos colaterais desnecessários.\n\nAlternativa C - Incorreta. O teste de estímulo com TRH (hormônio liberador de tireotrofina) já foi utilizado no passado para tentar diferenciar a causa da hiperprolactinemia, mas caiu em desuso na prática clínica atual. Ele não é capaz de distinguir a hiperprolactinemia verdadeira da macroprolactinemia.\n\nAlternativa D - Incorreta. A história clínica é clara ao afirmar que a paciente não faz uso de psicotrópicos, antieméticos ou anticoncepcionais. Portanto, não há medicamentos suspeitos para serem suspensos. Repetir a dosagem simples sem uma técnica de precipitação não resolveria a dúvida diagnóstica.\n\nAlternativa E - Correta. A macroprolactinemia ocorre quando a prolactina circula ligada a anticorpos IgG (formando a \"big-big prolactina\"). Esses complexos de alto peso molecular têm baixa atividade biológica (não conseguem atravessar a parede capilar para agir nos receptores), mas são detectados pelos métodos comuns de laboratório, gerando resultados falsamente elevados. A investigação de macroprolactina, geralmente realizada através do teste de precipitação com polietilenoglicol (PEG), é obrigatória quando há hiperprolactinemia em pacientes com poucos sintomas e exames de imagem normais. Se confirmada, a paciente é considerada funcionalmente normal e não requer tratamento medicamentoso.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Hipófise"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.583Z"
+  },
+  {
+    "id": "AJUDA_ae6a99f9-2980-453f-8325-faa5b59c5c47",
+    "originalId": "ae6a99f9-2980-453f-8325-faa5b59c5c47",
+    "statement": "A eclâmpsia é uma das complicações mais graves da hipertensão gestacional e da pré-eclâmpsia, caracterizando-se por convulsões tônico-clônicas generalizadas que ocorrem em gestantes e puérperas. Dessa forma, avalie as seguintes afirmações como verdadeiras (V) ou falsas (F).\n\nI. A eclâmpsia só pode ser diagnosticada durante o trabalho de parto, não havendo casos que ocorram antes ou após o parto.\nII. Convulsões focais são a apresentação mais comum da eclâmpsia, e casos de convulsões tônico-clônicas generalizadas não são típicos.\nIII. A eclâmpsia pode surgir mesmo antes do diagnóstico de pré-eclâmpsia e deve ser considerada em qualquer crise convulsiva na gestação na ausência de outras causas.\n\nAssim, a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das assertivas:\n\nI. Falsa. A eclâmpsia não ocorre exclusivamente durante o trabalho de parto. Ela pode se manifestar em três períodos distintos: anteparto (antes do início do trabalho de parto, em cerca de 50% dos casos), intraparto (durante o parto) ou pós-parto (puerpério). Ocorrendo no puerpério, manifesta-se geralmente nas primeiras 48 horas, mas existem casos de eclâmpsia tardia até 4 a 6 semanas após o nascimento.\n\nII. Falsa. A manifestação típica e característica da eclâmpsia são as convulsões tônico-clônicas generalizadas, semelhantes a uma crise de epilepsia do tipo grande mal. Convulsões focais não são comuns e, caso ocorram, o médico deve obrigatoriamente investigar outras causas neurológicas, como acidentes vasculares cerebrais, tumores ou malformações arteriovenosas.\n\nIII. Verdadeira. A eclâmpsia pode ser a primeira manifestação clínica de uma doença hipertensiva da gestação. Diversos estudos demonstram que uma porcentagem significativa de pacientes (entre 38% e 50%) não apresenta hipertensão ou proteinúria documentadas imediatamente antes da primeira convulsão. Por isso, toda crise convulsiva em gestante ou puérpera sem histórico prévio de epilepsia deve ser tratada como eclâmpsia até que se prove o contrário.\n\nAnálise das alternativas:\n\na) Incorreta. A afirmação I é falsa e a III é verdadeira.\nb) Incorreta. A afirmação III é verdadeira, o que invalida a sequência F, F, F.\nc) Incorreta. A afirmação I é falsa, embora a III esteja correta.\nd) Correta. A sequência reflete corretamente o julgamento técnico das afirmações: Falsa, Falsa e Verdadeira.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.583Z"
+  },
+  {
+    "id": "AJUDA_ae6b6072-c143-4b75-9c1c-cdaa6462e3f8",
+    "originalId": "ae6b6072-c143-4b75-9c1c-cdaa6462e3f8",
+    "statement": "Paciente primigesta, 28 anos de idade, com 25 semanas de gestação, sem comorbidades, está em consulta de seguimento em pré-natal referindo por vezes dispnéia leve, congestão nasal e pirose. A orientação correta quanto as queixas relatadas é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "explicar para a paciente que quadros de dispneia na gestação são graves, logo há necessidade de acompanhamento em pré natal de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "informar a paciente que por ação da progesterona na gestação, todo o aparelho digestivo permanece com tônus diminuído e a pirose é comum por isso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "orientar a paciente que as queixas de dispneia são comuns pela hiperventilação que leva a um quadro de acidose respiratória compensada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "orientar a paciente que é comum o sintoma de congestão nasal pela hipovascularização e edema da mucosa nasal na gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "alertar a paciente que a tríade de sintomas apresentados no momento é sinal de gravidade tanto materno quanto fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as alterações fisiológicas do organismo materno durante a gestação, um tema frequente em provas de obstetrícia. É fundamental que o médico saiba diferenciar sintomas fisiológicos de sinais de patologias graves.\n\nAlternativa A: Incorreta. A dispneia leve é um sintoma comum na gestação, relatada por até 75% das gestantes saudáveis. Ela ocorre principalmente devido ao estímulo do centro respiratório pela progesterona, que aumenta o volume corrente, e não indica necessariamente gravidade ou necessidade de encaminhamento para pré-natal de alto risco, desde que não haja outros sinais de alarme, como cianose, sibilância ou dor torácica.\n\nAlternativa B: Correta. Durante a gestação, os níveis elevados de progesterona promovem o relaxamento da musculatura lisa de diversos órgãos. No aparelho digestivo, isso resulta na diminuição do tônus do esfíncter esofágico inferior e no retardo do esvaziamento gástrico. Esses fatores facilitam o refluxo gastroesofágico, causando a pirose (azia), um sintoma extremamente comum e esperado.\n\nAlternativa C: Incorreta. A gestante, de fato, apresenta uma hiperventilação fisiológica devido ao aumento da sensibilidade ao dióxido de carbono mediada pela progesterona. No entanto, essa hiperventilação leva a uma queda na pressão parcial de CO2 (pCO2), resultando em uma alcalose respiratória compensada, e não em uma acidose respiratória.\n\nAlternativa D: Incorreta. A congestão nasal é frequente na gravidez, mas o mecanismo fisiopatológico está relacionado à hipervascularização (e não à hipovascularização), hiperemia e edema da mucosa nasal, processos estimulados principalmente pelos níveis elevados de estrogênio.\n\nAlternativa E: Incorreta. Os sintomas relatados (dispneia leve, congestão nasal e pirose) são queixas comuns e decorrentes das adaptações fisiológicas normais do organismo materno à gravidez. Portanto, não constituem uma tríade de gravidade materno-fetal.\n\nGabarito: Letra B.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Modificações Fisiológicas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:32:33.583Z"
+  }
+]

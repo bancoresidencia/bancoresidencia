@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_d18ad098-9a48-44ef-b505-63cf4e0fbe57",
+    "originalId": "d18ad098-9a48-44ef-b505-63cf4e0fbe57",
+    "statement": "Sobre hérnias de hiato, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A pressão relativamente positiva dentro do tórax facilita a migração visceral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A membrana frenoesofágica é uma continuação da fáscia endoabdominal que se ancora no esôfago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As hérnias paraesofágicas podem estar associadas à doença do refluxo gastroesofágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Qualquer tipo de hernia pode gerar sintomas clássicos de refluxo, porém a mais comum é a hérnia hiatal por deslizamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa INCORRETA é a letra (a). Abaixo, segue a análise detalhada de cada opção:\n\nAlternativa (a): Incorreta. Do ponto de vista fisiológico, a pressão dentro do tórax é negativa (subatmosférica), enquanto a pressão dentro do abdome é positiva. É justamente esse gradiente de pressão (a diferença entre a pressão positiva abdominal e a negativa torácica) que atua como uma força propulsora, facilitando a migração das vísceras abdominais para dentro da cavidade torácica quando há uma fragilidade no hiato diafragmático. Portanto, a afirmação está errada ao dizer que a pressão no tórax é positiva.\n\nAlternativa (b): Correta. A membrana frenoesofágica (também chamada de ligamento frenoesofágico) é a estrutura anatômica que fixa o esôfago ao diafragma no nível do hiato. Ela é formada pela fusão das fáscias endoabdominal (continuação da fáscia transversal) e endotorácica. O enfraquecimento ou a lassidão dessa membrana é um dos principais fatores fisiopatológicos para o desenvolvimento da hérnia de hiato por deslizamento.\n\nAlternativa (c): Correta. Embora a doença do refluxo gastroesofágico (DRGE) seja muito mais frequente e classicamente associada às hérnias por deslizamento (Tipo I), as hérnias paraesofágicas (Tipos II, III e IV) também podem apresentar refluxo. Isso ocorre especialmente nas hérnias do Tipo III (mistas), que combinam elementos de deslizamento e paraesofágicos, ou devido à distorção da anatomia da junção esofagogástrica provocada pelo componente herniado, o que pode comprometer a competência do esfíncter esofágico inferior.\n\nAlternativa (d): Correta. A hérnia por deslizamento (Tipo I) é a mais comum, correspondendo a cerca de 90% a 95% dos casos de hérnia hiatal. Nela, a junção esofagogástrica migra para cima do diafragma. Embora as hérnias paraesofágicas possam cursar com sintomas mecânicos (como disfagia, dor retroesternal ou plenitude pós-prandial), qualquer tipo de hérnia hiatal pode, potencialmente, causar sintomas de refluxo devido à perda dos mecanismos de barreira antirrefluxo do hiato diafragmático.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  },
+  {
+    "id": "AJUDA_d1a77389-e1c7-4c82-8243-12c42cd7cfbf",
+    "originalId": "d1a77389-e1c7-4c82-8243-12c42cd7cfbf",
+    "statement": "Mulher, 68 anos de idade, tabagista 75 anos-maço, apresenta dispneia e tosse há 2 anos. Fez espirometria, que mostrou VEF1 de 60% do predito e relação VEF1/VFC de 0,65. Apresentou um episódio de exacerbação da dispneia, com necessidade de internação hospitalar, uso de broncodilatadores e antibiótico há 4 meses.\n\nA terapia ambulatorial ideal é",
+    "options": [
+      {
+        "id": "A",
+        "text": "salmeterol + fluticasona, apenas se crise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "salmeterol + fluticasona, diariamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "salmeterol apenas, diariamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tiotrópio apenas, diariamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "umeclidínio/vilanterol, diariamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico:\nPaciente de 68 anos, tabagista pesada (75 anos-maço), com sintomas crônicos e espirometria revelando distúrbio ventilatório obstrutivo (VEF1/CVF de 0,65, que é menor que 0,70). O VEF1 de 60% a classifica, pelo critério espirométrico, como GOLD 2 (limitação moderada ao fluxo aéreo). O ponto decisivo para a escolha terapêutica é o histórico de uma exacerbação com necessidade de internação hospitalar nos últimos 12 meses.\n\nClassificação GOLD:\nDe acordo com as atualizações das diretrizes do GOLD (Global Initiative for Chronic Obstructive Lung Disease), os pacientes são classificados em grupos (A, B ou E) baseados no risco de exacerbação e sintomas. O Grupo E (Exacerbador) engloba qualquer paciente que tenha tido pelo menos uma exacerbação resultando em internação hospitalar ou duas ou mais exacerbações moderadas no último ano. Para este grupo, a recomendação de tratamento inicial é a terapia broncodilatadora dupla de longa ação.\n\nAnálise das alternativas:\n\na) Incorreta. O salmeterol (LABA) e a fluticasona (corticoide inalatório) são medicamentos para tratamento de manutenção e devem ser usados de forma contínua, nunca \"apenas se crise\". Medicamentos de resgate para crises são os broncodilatadores de curta ação (como o salbutamol).\n\nb) Incorreta. Embora a combinação LABA + corticoide inalatório possa ser usada na DPOC, ela não é a primeira escolha para o Grupo E. O corticoide inalatório é reservado para pacientes com contagem de eosinófilos no sangue acima de 300 células/uL ou com história de asma associada. O uso indiscriminado de corticoides inalatórios na DPOC aumenta o risco de pneumonia.\n\nc) Incorreta. O salmeterol isolado é um broncodilatador de longa ação (LABA). A monoterapia é insuficiente para uma paciente classificada como Grupo E (alto risco de exacerbação), na qual a combinação de dois mecanismos de broncodilatação é superior.\n\nd) Incorreta. O tiotrópio é um antagonista muscarínico de longa ação (LAMA). Embora o LAMA seja superior ao LABA isolado para prevenir exacerbações, as diretrizes atuais recomendam que, para pacientes do Grupo E, se inicie diretamente a combinação LAMA + LABA para otimizar a função pulmonar e reduzir o risco de novas internações.\n\ne) Correta. Esta alternativa apresenta uma combinação de LAMA (umeclidínio) e LABA (vilanterol). A terapia dupla broncodilatadora de longa ação (LAMA + LABA) é o padrão-ouro atual para o tratamento inicial de pacientes com DPOC do Grupo E, pois reduz de forma mais eficaz a frequência de exacerbações e melhora a qualidade de vida em comparação com as monoterapias.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  },
+  {
+    "id": "AJUDA_d1aaa01e-709f-48e1-83de-1c501735615b",
+    "originalId": "d1aaa01e-709f-48e1-83de-1c501735615b",
+    "statement": "Mulher de 57 anos, queixa-se de pirose e epigastralgia há 2 anos, nega disfagia e perda ponderal. Refere uso de omeprazol por mais de 6 meses sem melhora do quadro. AP: HAS e DM2 em tratamento. Exame físico: IMC de 29 kg/m². EDA (3 exames): gastrite enantematosa leve de antro gástrico. \n\nA hipótese e próximo exame para complementação diagnóstica são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "acalasia; manometria esofágica convencional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "doença do refluxo gastroesofágico; manometria esofágica de alta resolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença do refluxo gastroesofágico; pHmetria esofágica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "esofagite eosinofílica; nova endoscopia com biópsias esofágicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente apresenta um quadro clínico clássico de Doença do Refluxo Gastroesofágico (DRGE), caracterizado por pirose (queimação retroesternal) e epigastralgia. O fato de ela não apresentar sinais de alarme (disfagia ou perda ponderal) e possuir um IMC de 29 kg/m² (sobrepeso) reforça essa hipótese. No entanto, ela realizou três endoscopias digestivas altas (EDA) que não demonstraram lesões esofágicas (apenas gastrite leve), o que nos leva ao diagnóstico de DRGE não erosiva. Além disso, há falha terapêutica após o uso prolongado de inibidores da bomba de prótons (omeprazol).\n\nAnálise das alternativas:\n\na) Incorreta. A acalasia é um distúrbio motor do esôfago que se manifesta obrigatoriamente com disfagia de condução (dificuldade para engolir), muitas vezes acompanhada de regurgitação e perda de peso, sintomas que a paciente expressamente nega. A manometria seria o exame de escolha para acalasia, mas o quadro clínico não é compatível.\n\nb) Incorreta. Embora a hipótese de DRGE esteja correta, a manometria esofágica (seja convencional ou de alta resolução) não é o exame padrão para confirmar o diagnóstico de refluxo ácido. A manometria avalia a atividade motora do esôfago e a pressão dos esfíncteres, sendo indicada no pré-operatório de cirurgia antirrefluxo ou quando se suspeita de distúrbios motores esofágicos.\n\nc) Correta. Diante de sintomas típicos de DRGE com endoscopia normal (DRGE não erosiva) e ausência de resposta ao tratamento farmacológico inicial (refluxo refratário), o próximo passo fundamental é a confirmação diagnóstica objetiva do refluxo. A pHmetria esofágica de 24 horas é o padrão-ouro para diagnosticar o refluxo ácido, permitindo quantificar a exposição ácida do esôfago e correlacionar os sintomas da paciente com os episódios de refluxo.\n\nd) Incorreta. A esofagite eosinofílica é uma patologia com forte componente alérgico, que cursa predominantemente com disfagia e episódios de impactação alimentar, especialmente em pacientes mais jovens ou com história de atopia. Embora a endoscopia com biópsias seja o método diagnóstico, a história clínica da paciente (pirose e epigastralgia, sem disfagia) aponta fortemente para DRGE, e não há justificativa para repetir uma quarta endoscopia sem antes realizar uma avaliação funcional.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  },
+  {
+    "id": "AJUDA_d1ad3bc0-72a7-4878-bb39-f962abfc9dd1",
+    "originalId": "d1ad3bc0-72a7-4878-bb39-f962abfc9dd1",
+    "statement": "I.S.K., 28 anos, em PO3 de parto vaginal, sem intercorrências. Em amamentação exclusiva. Prole constituída. Solicita, ainda antes da alta, um método anticoncepcional. Nega comorbidades. Nega tabagismo.\nAssinale a alternativa que apresenta o método anticoncepcional mais adequado, em relação ao período de puerpério e a história clínica dessa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anticoncepcional combinado via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anel vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Implante com etonogestrel.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "DIU de levonorgestrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Injetável trimestral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a escolha do método anticoncepcional no puerpério imediato (3 dias após o parto) em uma paciente que amamenta exclusivamente. Para responder corretamente, devemos aplicar os Critérios Médicos de Elegibilidade da Organização Mundial da Saúde (OMS).\n\nAlternativa a: Incorreta. O anticoncepcional combinado contém estrogênio, que é contraindicado nas primeiras 6 semanas de pós-parto em mulheres que amamentam. O estrogênio aumenta o risco de tromboembolismo venoso, que já está elevado no puerpério, e pode interferir negativamente na produção e na composição do leite materno.\n\nAlternativa b: Incorreta. O anel vaginal também é um método combinado (estrogênio e progestogênio). Portanto, apresenta os mesmos riscos de trombose e interferência na lactação descritos para as pílulas combinadas, sendo contraindicado neste momento.\n\nAlternativa c: Correta. O implante de etonogestrel é um método que contém apenas progestogênio. Ele é classificado como seguro para uso imediato após o parto, mesmo para mulheres que amamentam, não afetando a produção de leite ou o desenvolvimento do bebê. Por ser um método de longa duração (LARC) e alta eficácia, é uma opção ideal para ser oferecida antes da alta hospitalar, garantindo a contracepção segura.\n\nAlternativa d: Incorreta. O momento da inserção do DIU (seja de levonorgestrel ou de cobre) é fundamental. A recomendação é que a inserção ocorra nas primeiras 48 horas após o parto ou somente após 4 semanas. Entre 48 horas e 4 semanas (período em que a paciente se encontra, no PO3), o risco de expulsão do dispositivo e de perfuração uterina é muito elevado devido à involução uterina, sendo classificado como Critério 3 da OMS (os riscos geralmente superam os benefícios).\n\nAlternativa e: Incorreta. O injetável trimestral contém apenas progestogênio e poderia ser utilizado. No entanto, em questões de prova que comparam progestogênios no puerpério, o implante e os métodos de longa duração costumam ser considerados superiores pela maior taxa de continuidade e eficácia. Além disso, existe uma discussão teórica sobre evitar o pico hormonal do injetável nos primeiros dias de vida do recém-nascido, preferindo-se métodos com liberação mais estável ou aguardando 6 semanas, embora a OMS o classifique como Critério 2 (os benefícios superam os riscos) para uso imediato. O implante permanece como a resposta mais robusta e adequada ao cenário clínico exposto.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  },
+  {
+    "id": "AJUDA_d1b286fc-cb55-43ba-a9d2-6eeb1cad07f5",
+    "originalId": "d1b286fc-cb55-43ba-a9d2-6eeb1cad07f5",
+    "statement": "Em relação aos conhecimentos atuais sobre as lombalgias, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "é essencial a realização de estudo de imagem",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a maioria das ciatalgias são causadas por radiculopatia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "em torno de 75-90% dos casos melhoram em até três meses",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "é raro haver lesão de coluna no exame de imagem de pessoas assintomáticas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Comentário sobre a questão de Lombalgia:\n\nAlternativa (a) Incorreta: A realização de exames de imagem (como radiografia, tomografia ou ressonância) não é essencial na maioria dos casos de lombalgia aguda. A indicação de exames complementares deve ser reservada para pacientes que apresentam sinais de alerta, conhecidos como \"red flags\", tais como: perda de peso inexplicada, febre, trauma importante, déficit neurológico focal e progressivo, ou histórico de neoplasia. O uso indiscriminado de imagem aumenta custos e pode levar a tratamentos desnecessários devido a achados incidentais.\n\nAlternativa (b) Incorreta: Embora a radiculopatia (geralmente por hérnia de disco) seja uma causa conhecida de ciatalgia, a maioria das dores que irradiam para os membros inferiores no contexto da atenção primária é do tipo referido, de origem musculoesquelética ou miofascial (pseudociatalgia), e não necessariamente uma compressão de raiz nervosa. A lombalgia inespecífica responde por cerca de 85% a 90% dos casos.\n\nAlternativa (c) Correta: Esta é uma característica fundamental da história natural da lombalgia. A grande maioria dos episódios de dor lombar aguda é autolimitada e apresenta um prognóstico favorável. Independentemente da intervenção terapêutica, cerca de 75% a 90% dos pacientes apresentam melhora significativa ou resolução completa dos sintomas em um período de até 12 semanas (três meses).\n\nAlternativa (d) Incorreta: Pelo contrário, é extremamente comum encontrar alterações nos exames de imagem (como desidratação discal, abaulamentos e até hérnias) em pessoas totalmente assintomáticas. Estudos mostram que a prevalência de degeneração discal em indivíduos sem dor aumenta com a idade, atingindo mais de 50% dos adultos jovens e mais de 80% dos idosos. Portanto, os achados de imagem devem sempre ser correlacionados com a clínica do paciente.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças da Coluna Vertebral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  },
+  {
+    "id": "AJUDA_d1b67e14-2f8f-43fb-af81-ec6c4511be30",
+    "originalId": "d1b67e14-2f8f-43fb-af81-ec6c4511be30",
+    "statement": "Costureira de 30 anos de idade apresenta dor em região lombar e cervical, sem irradiação, há quatro meses, com piora ao trabalho e despertar noturno por dor. Refere também dor na região glútea quando sentada ou deitada e em planta dos pés ao se levantar da cama e acorda com a coluna “travada”. AP: DM2, HAS; obesidade grau II; depressão e psoríase cutânea.\nA hipótese diagnóstica é",
+    "options": [
+      {
+        "id": "A",
+        "text": "fibromialgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hérnia discal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dor muscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "espondiloartrite.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma paciente jovem com dor axial (cervical e lombar) de caráter inflamatório. Os principais sinais que fundamentam essa suspeita são: dor com duração superior a três meses, despertar noturno devido à dor, rigidez matinal (coluna “travada”) e melhora ou piora relacionada ao repouso/atividade. Além disso, a presença de dor glútea (sugestiva de sacroiliite) e dor na planta dos pés (sugestiva de entesite, como a fasciite plantar) são marcas registradas das espondiloartrites. O antecedente pessoal de psoríase é o \"ponto-chave\" da questão, direcionando o diagnóstico para a Artrite Psoriásica, que faz parte do grupo das espondiloartrites.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. Embora a fibromialgia cause dor crônica e possa estar associada à depressão, ela se caracteriza por dor difusa em tecidos moles e pontos dolorosos específicos (tender points), sem causar o padrão de despertar noturno por dor inflamatória ou rigidez matinal prolongada. Além disso, a fibromialgia não explica a relação com a psoríase nem a presença de entesites (dor plantar) e sacroiliite (dor glútea).\n\nb) INCORRETA. A hérnia discal geralmente se manifesta com dor de padrão mecânico (piora ao movimento e melhora ao repouso) e frequentemente apresenta irradiação (radiculopatia), o que a paciente nega. O despertar noturno e a rigidez matinal não são achados típicos de compressões discais.\n\nc) INCORRETA. A dor muscular (miofascial) costuma ser localizada, relacionada a vícios posturais ou esforço repetitivo (comum em costureiras), mas tem caráter mecânico. Ela não justifica os sintomas sistêmicos e inflamatórios apresentados, como a dor na planta dos pés e a forte associação com a psoríase cutânea.\n\nd) CORRETA. O diagnóstico de espondiloartrite (neste caso, provavelmente uma Artrite Psoriásica com acometimento axial) é baseado nos critérios de dor lombar inflamatória em paciente com menos de 45 anos, presença de entesite (dor plantar), provável sacroiliite (dor glútea) e a presença de psoríase. O conjunto desses achados é altamente específico para este grupo de doenças, que compartilham o marcador genético HLA-B27 e a negatividade para o fator reumatoide.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Espondiloartrites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  },
+  {
+    "id": "AJUDA_d1b75ee1-bb5f-478c-96a8-a42ec5ffcab3",
+    "originalId": "d1b75ee1-bb5f-478c-96a8-a42ec5ffcab3",
+    "statement": "Menina de 5 anos de idade levada à Clínica da Família, com inapetência, dor abdominal e episódios ocasionais de diarreia há um mês. Família não tem água encanada em casa. Caso o exame parasitológico de fezes revelar Ascaris lumbricoides e Giardia lamblia. O melhor esquema terapêutico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "tiabendazol e praziquantel",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "albendazol e metronidazol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "itraconazol e secnidazol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "levamisol e praziquantel",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todos os anteriores, levando em consideração as fases da lua",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, devemos identificar os agentes etiológicos citados e correlacioná-los com as classes de medicamentos adequadas para o tratamento de cada um.\n\nO quadro apresenta uma infecção mista por dois tipos de parasitas:\n1. Ascaris lumbricoides: Um helminto (nematódeo), conhecido popularmente como lombriga.\n2. Giardia lamblia: Um protozoário flagelado.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O tiabendazol é um anti-helmíntico mais indicado para o tratamento de estrongiloidíase e larva migrans cutânea, sendo mais tóxico que outras opções para ascaridíase. O praziquantel é utilizado para o tratamento de trematódeos (como o Schistosoma mansoni) e cestódeos (como a Taenia), não tendo ação contra Ascaris ou Giardia.\n\nAlternativa b) Correta. O albendazol é um benzimidazólico de amplo espectro, sendo uma das drogas de primeira escolha para o tratamento da ascaridíase (Ascaris lumbricoides). O metronidazol é um derivado nitroimidazólico, considerado o tratamento clássico e eficaz para a giardíase (Giardia lamblia). Portanto, esta combinação cobre adequadamente ambos os parasitas identificados no exame.\n\nAlternativa c) Incorreta. O itraconazol é um medicamento antifúngico, não possuindo atividade contra helmintos ou protozoários intestinais. O secnidazol é um nitroimidazólico eficaz contra a Giardia, mas a presença do antifúngico torna a alternativa errada para o caso.\n\nAlternativa d) Incorreta. O levamisol é um agente imunomodulador que também possui ação anti-helmíntica específica contra o Ascaris lumbricoides. No entanto, o praziquantel, como mencionado anteriormente, é indicado para esquistossomose e teníase, não possuindo atividade contra a Giardia lamblia.\n\nAlternativa e) Incorreta. Esta alternativa apresenta um caráter não científico ao mencionar as fases da lua, o que não possui qualquer embasamento na prática médica baseada em evidências.\n\nResumo do tratamento:\nDiante de uma poliparasitose envolvendo helmintos e protozoários, a escolha terapêutica deve contemplar drogas com espectros de ação distintos ou uma droga de amplo espectro que cubra ambos (como a nitazoxanida). No contexto das alternativas oferecidas, a associação de albendazol e metronidazol é a conduta farmacológica mais precisa e consagrada na literatura médica.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  },
+  {
+    "id": "AJUDA_d1ccffc4-b9cf-421e-a9e8-e9b0722e1502",
+    "originalId": "d1ccffc4-b9cf-421e-a9e8-e9b0722e1502",
+    "statement": "De acordo com a Portaria MS/GM 6.734/2025, que alterar o Anexo 1 do Anexo V da Portaria de Consolidação GM/MS nº 4, de 28 de setembro 2017, uma doença foi incorporada à Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública nos serviços de saúde públicos e privados em todo o território nacional.\n\nEssa doença é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Botulismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Arenavírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Esporotricose humana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Riquetsiose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Toxoplasmose gestacional e congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda as atualizações periódicas da Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública. A Portaria mencionada consolidou a inclusão de uma patologia que apresentava crescimento epidemiológico importante no Brasil, especialmente devido à sua transmissão zoonótica.\n\nAlternativa (a) Incorreta. O botulismo é uma doença de notificação compulsória imediata (em até 24 horas) há bastante tempo, devido à sua gravidade e ao potencial de surtos por contaminação alimentar.\n\nAlternativa (b) Incorreta. As infecções por arenavírus (que podem causar febres hemorrágicas) já constavam na lista de notificação compulsória imediata por serem consideradas doenças graves e de alto potencial de disseminação.\n\nAlternativa (c) Correta. A esporotricose humana foi a doença incorporada recentemente à Lista Nacional de Notificação Compulsória. Anteriormente, a notificação era obrigatória apenas em alguns estados e municípios (notificação regionalizada). Devido à epidemia de esporotricose zoonótica (transmitida principalmente por gatos infectados pelo fungo Sporothrix brasiliensis) que se expandiu por quase todo o território brasileiro, o Ministério da Saúde tornou a notificação obrigatória em nível nacional para monitorar e controlar o avanço da doença.\n\nAlternativa (d) Incorreta. As riquetsioses, sendo a febre maculosa brasileira a mais conhecida entre elas, já faziam parte da lista de notificação compulsória devido à letalidade elevada e à necessidade de intervenção rápida.\n\nAlternativa (e) Incorreta. A toxoplasmose gestacional e a toxoplasmose congênita foram inseridas na lista nacional em 2016. Portanto, já eram eventos de notificação obrigatória antes da atualização referenciada na questão.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  },
+  {
+    "id": "AJUDA_d1ced9c2-5282-4072-9d4b-0a5acfbbfaec",
+    "originalId": "d1ced9c2-5282-4072-9d4b-0a5acfbbfaec",
+    "statement": "O., 32 anos, homem cisgênero, vive com HIV há 5 anos, com carga viral indetectável devido à terapia antiretroviral (TARV) a qual possui boa adesão. Seu monitoramento de carga viral e níveis de CD4 estão estáveis e dentro das faixas normais. Ele está atualmente em um relacionamento monogâmico com sua parceira T., mulher cis, 28 anos soronegativa para HIV, sem comorbidades. Ambos estão juntos há 1 ano e têm um relacionamento estável. O casal decidiu buscar aconselhamento médico sobre a possibilidade de iniciar a PrEP como uma medida adicional de proteção contra a transmissão do HIV. Embora ele tenha uma carga viral indetectável e seu tratamento seja correto, o casal deseja aumentar sua segurança. Qual é a alternativa CORRETA no que se refere à introdução de PrEP, para a paciente T.?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O uso de PrEP não é necessário pois o casal já possui relacionamento sexual ativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ela deve realizar testagem para HIV e outras ISTs, recebendo aconselhamento sobre práticas sexuais seguras, estando indicada PrEP caso esteja soronegativa para HIV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ela não precisa ser submetida a testes de HIV para confirmar que está soronegativa, podendo ser iniciado PrEP imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Caso elegível após a testagem, a paciente pode iniciar a PrEP, tomando o medicamento em dose única mensal conforme orientação médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os critérios para indicação e início da Profilaxia Pré-Exposição (PrEP) ao HIV em casais sorodiferentes, levando em conta o conceito de Indetectável = Intransmissível (I=I) e a autonomia do paciente.\n\nAlternativa a) Incorreta. Embora o risco de transmissão sexual do HIV seja insignificante quando o parceiro que vive com HIV está com carga viral indetectável há pelo menos seis meses (conceito I=I), a PrEP ainda pode ser indicada. A decisão de usar a profilaxia cabe à pessoa soronegativa, baseada em sua percepção de risco, desejo de maior segurança ou autonomia, independentemente de o casal já ter um relacionamento sexual ativo.\n\nAlternativa b) Correta. De acordo com o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para PrEP, antes de iniciar o medicamento, é obrigatório realizar a testagem para o HIV para garantir que a pessoa seja soronegativa. Isso é crucial para evitar o uso inadequado de antirretrovirais em alguém já infectado, o que poderia gerar resistência viral. Além disso, o protocolo exige a triagem para outras Infecções Sexualmente Transmissíveis (ISTs), como sífilis e hepatites B e C, além de aconselhamento sobre prevenção combinada.\n\nAlternativa c) Incorreta. É absolutamente contraindicado iniciar a PrEP sem a realização prévia de testes de HIV. A confirmação da soronegatividade é o primeiro passo do protocolo de segurança. O uso de tenofovir + entricitabina (drogas da PrEP) em uma pessoa com infecção estabelecida é insuficiente para o tratamento e pode selecionar mutações de resistência ao vírus.\n\nAlternativa d) Incorreta. O esquema de administração da PrEP oral no Brasil é de uso diário (uma dose por dia). Para mulheres cisgênero, como é o caso da paciente T., o esquema sob demanda (tomada medicamentosa próxima ao ato sexual) não é indicado devido à farmacocinética do medicamento nos tecidos vaginais. Não existe, até o momento, orientação para dose única mensal de PrEP oral. O cabotegravir injetável de longa duração é aplicado a cada dois meses, mas não é uma dose única mensal oral.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  },
+  {
+    "id": "AJUDA_d1dfa00a-fd77-4af8-8ff8-d3a61fc18c0d",
+    "originalId": "d1dfa00a-fd77-4af8-8ff8-d3a61fc18c0d",
+    "statement": "Qual é a estrutura embrionária que geralmente regride nos fetos femininos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ducto paramesonéfrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ducto mesonéfrico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Seio urogenital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cristas genitais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender o desenvolvimento do sistema reprodutor, é preciso lembrar que o embrião começa em um estágio indiferenciado com dois sistemas de ductos: os mesonéfricos (Wolff) e os paramesonéfricos (Müller).\n\nAlternativa a) Incorreta. Os ductos paramesonéfricos são as estruturas que se desenvolvem no feto feminino para formar o útero, as tubas uterinas e a parte superior da vagina. Eles regridem apenas nos fetos masculinos sob a ação do Hormônio Anti-Mülleriano (AMH) produzido pelos testículos.\n\nAlternativa b) Correta. Os ductos mesonéfricos precisam de testosterona para persistir e se diferenciar no sistema genital masculino (epidídimo, ducto deferente e vesículas seminais). Como o feto feminino não possui testículos produzindo testosterona em níveis elevados, esses ductos perdem o estímulo trófico e sofrem regressão quase total, restando apenas vestígios clínicos eventuais, como os cistos ou ductos de Gartner.\n\nAlternativa c) Incorreta. O seio urogenital é uma estrutura embrionária que não regride. Ele se diferencia em órgãos definitivos em ambos os sexos. No feto feminino, ele dá origem à bexiga, à uretra, ao vestíbulo da vagina e à porção inferior do canal vaginal.\n\nAlternativa d) Incorreta. As cristas genitais são as precursoras das gônadas. Elas não regridem; elas se diferenciam em ovários no sexo feminino (na ausência do gene SRY) ou em testículos no sexo masculino. Trata-se de uma estrutura que sofre especialização, e não atrofia ou regressão.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Anatomia e Embriologia do Trato Genital Feminino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:09.605Z"
+  }
+]

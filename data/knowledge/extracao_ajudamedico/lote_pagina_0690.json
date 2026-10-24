@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_c100b48c-4459-475f-abaa-991568d53246",
+    "originalId": "c100b48c-4459-475f-abaa-991568d53246",
+    "statement": "Durante a tragédia das enchentes no estado do Rio Grande do Sul em 2024, ocorreram vários casos de leptospirose que acometeram principalmente voluntários que atuaram no resgate da população atingida. \nA insuficiência renal causada pela doença tem como lesão histopatológica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "nefrite tubulointersticial;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "necrose tubular aguda;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "glomerulonefrite membranosa;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "glomerulonefrite rapidamente progressiva;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "glomeruloesclerose focal e segmentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A leptospirose é uma zoonose causada pela bactéria Leptospira interrogans. Na sua forma grave, conhecida como Síndrome de Weil, o acometimento renal é uma das complicações mais frequentes e determinantes para o prognóstico. A fisiopatologia da insuficiência renal nessa doença é peculiar, pois a bactéria apresenta tropismo pelo tecido renal, colonizando especificamente o interstício e as células tubulares.\n\nAnálise das alternativas:\n\na) Correta. A lesão histopatológica clássica e característica da insuficiência renal na leptospirose é a nefrite tubulointersticial aguda. Ocorre edema intersticial e infiltrado inflamatório (composto por células mononucleares e polimorfonucleares) que agride os túbulos. Uma característica clínica marcante que ajuda a confirmar essa predileção tubular é que a insuficiência renal na leptospirose costuma ser hipocalêmica (potássio baixo) e muitas vezes não oligúrica. Isso ocorre porque a bactéria inibe a reabsorção de sódio nos segmentos proximais e na alça de Henle, aumentando a oferta de sódio ao túbulo distal, o que estimula a secreção de potássio.\n\nb) Incorreta. A necrose tubular aguda (NTA) pode até ser encontrada em casos extremamente graves e terminais, geralmente como consequência secundária à instabilidade hemodinâmica (choque), desidratação ou sepse. No entanto, a NTA não é a lesão primária ou definidora da patogênese da leptospirose; o processo inflamatório intersticial é o que caracteriza a doença.\n\nc) Incorreta. A glomerulonefrite membranosa é uma causa de síndrome nefrótica decorrente do espessamento da membrana basal glomerular por depósitos de imunocomplexos. Está associada a doenças crônicas, neoplasias ou outras infecções (como hepatite B), mas não possui relação com a agressão aguda da leptospirose.\n\nd) Incorreta. A glomerulonefrite rapidamente progressiva (GNRP) é uma síndrome clínica caracterizada pela formação de \"crescentes\" nos glomérulos e perda súbita da função renal. É típica de doenças autoimunes, como vasculites sistêmicas ou síndrome de Goodpasture, e não faz parte do espectro histopatológico da leptospirose, que poupa os glomérulos na maioria dos casos.\n\ne) Incorreta. A glomeruloesclerose focal e segmentar (GEFS) é um padrão de lesão glomerular que leva à proteinúria maciça e síndrome nefrótica crônica. É uma lesão estrutural de cicatrização ou idiopática, sem qualquer ligação com o quadro infeccioso agudo e inflamatório intersticial da leptospirose.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Leptospirose"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:27.721Z"
+  },
+  {
+    "id": "AJUDA_c102b649-c06c-4a7c-ae1c-f7088db53aad",
+    "originalId": "c102b649-c06c-4a7c-ae1c-f7088db53aad",
+    "statement": "Qual das alternativas abaixo apresenta as alterações habituais que ocorrem para adaptação do organismo materno na gestação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Queda da osmolalidade plasmática;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hematúria;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Redução volumétrica do baço;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Elevação da capacidade residual respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) CORRETA: Durante a gestação, ocorre uma mudança no ajuste do centro da sede e no limiar de liberação do hormônio antidiurético (vasopressina). O organismo passa a reter água de forma mais acentuada do que retém sódio, resultando em uma hemodilução relativa. Esse processo leva a uma queda fisiológica da osmolalidade plasmática em cerca de 10 mOsm/kg, o que é uma adaptação metabólica e hídrica normal da gravidez.\n\nAlternativa (b) INCORRETA: A hematúria (sangue na urina) nunca é considerada uma alteração fisiológica ou habitual da gestação. Embora o sistema urinário sofra modificações anatômicas, como a dilatação dos ureteres e pelves renais, a presença de sangue na urina deve sempre ser investigada como sinal de patologia, como infecção do trato urinário ou cálculos renais.\n\nAlternativa (c) INCORRETA: Não existe redução volumétrica do baço na gestação. O que ocorre é uma grande expansão do volume plasmático (hipervolemia), que pode levar a um aumento discreto do volume esplênico ou à manutenção do seu tamanho normal, mas nunca à sua diminuição.\n\nAlternativa (d) INCORRETA: Com o crescimento do útero, o diafragma é elevado em cerca de 4 centímetros. Essa alteração mecânica reduz o volume de ar que permanece nos pulmões após uma expiração normal. Portanto, ocorre uma REDUÇÃO da Capacidade Residual Funcional e do Volume Residual. O que aumenta na gestação é o volume corrente (quantidade de ar que entra e sai em cada respiração), visando suprir a maior demanda de oxigênio.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:27.721Z"
+  },
+  {
+    "id": "AJUDA_c10c2030-61ea-4c8c-8080-3b334cfee5ce",
+    "originalId": "c10c2030-61ea-4c8c-8080-3b334cfee5ce",
+    "statement": "Em relação ao diagnóstico e avaliação dos pacientes com DAOP, qual dessas ferramentas não está indicada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Índice Tornozelo-Braquial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pletismografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Scan Duplex Arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Angiografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os métodos diagnósticos utilizados na avaliação da Doença Arterial Obstrutiva Periférica (DAOP). O objetivo é identificar qual dos exames listados não tem indicação direta para avaliar a patologia obstrutiva das artérias dos membros.\n\nLetra a: O Índice Tornozelo-Braquial (ITB) é a ferramenta inicial e o padrão-ouro para o rastreio e diagnóstico clínico da DAOP. Ele é obtido por meio da razão entre a maior pressão sistólica medida no tornozelo e a maior pressão sistólica do braço. É um método não invasivo, barato e com alta sensibilidade para identificar a presença de doença arterial.\n\nLetra b: A pletismografia é um exame que mede as variações de volume do membro ou as oscilações pressóricas durante o ciclo cardíaco. Ela gera ondas de pulso que ajudam a avaliar de forma funcional o fluxo sanguíneo arterial periférico, auxiliando na localização e na gravidade da obstrução.\n\nLetra c (Gabarito): O ecocardiograma é um exame de imagem focado exclusivamente na anatomia e função das estruturas cardíacas (como válvulas, ventrículos e átrios). Embora os pacientes com DAOP frequentemente possuam aterosclerose em outros sítios (como nas coronárias) e possam necessitar de avaliação cardíaca pré-operatória, o ecocardiograma não é uma ferramenta de diagnóstico ou avaliação da rede arterial periférica, não servindo para identificar obstruções nos membros.\n\nLetra d: O Scan Duplex Arterial (ultrassonografia com Doppler) combina a imagem em tempo real do vaso com a análise do fluxo sanguíneo. É essencial para localizar o ponto exato da estenose ou oclusão, avaliar o grau de estreitamento por meio da velocidade do fluxo e auxiliar no planejamento terapêutico de forma não invasiva.\n\nLetra e: A angiografia (ou arteriografia) é um método invasivo que utiliza contraste iodado e radioscopia para visualizar a luz das artérias. É considerada o padrão-ouro anatômico. Por ser invasiva, sua indicação principal não é o diagnóstico inicial, mas sim o mapeamento detalhado da árvore arterial quando há programação de intervenção cirúrgica ou endovascular.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:27.721Z"
+  },
+  {
+    "id": "AJUDA_c113e4cb-09eb-4958-b877-0e7d9f4291f3",
+    "originalId": "c113e4cb-09eb-4958-b877-0e7d9f4291f3",
+    "statement": "Mulher, 23 anos de idade, possui antecedente de lúpus eritematoso sistêmico com atividade prévia mucocutânea e articular em uso de hidroxicloroquina e prednisona, além de constipação crônica. Perdeu seguimento ambulatorial por 2 anos. Procura o departamento de emergência por cansaço inespecífico. Ao exame físico, apresentou PA de 152×88 mmHg, FC de 90 bpm, FR de 23 irpm, SpO2 de 94% em ar ambiente, ausculta cardiopulmonar sem alterações, hiperemia malar e em tronco. \n\n• Exames laboratoriais: \nHb: 8,9 mg/dL\nLeucócitos: 3.600l/mm3\nPlaquetas: 123 mil/mm3\nCr: 3,7 mg/dL\nUr: 127 mg/dL\nK+: 5,8 mEq/mL\nNa+: 135 mEq/mL\nFoi realizado o eletrocardiograma. \n\nCom base no caso clínico descrito, assinale a alternativa que apresenta a conduta imediata pertinente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gluconato de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Furosemida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Desmopressina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Poliestireno sulfonato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma mulher jovem com lúpus eritematoso sistêmico (LES) em atividade grave, manifestada por lesões cutâneas, pancitopenia e injúria renal aguda com hiperazoemia e retenção volêmica (hipertensão arterial e taquipneia), associada a hipercalemia moderada (K+ de 5,8 mEq/L).\n\nAo analisar o eletrocardiograma (ECG), observa-se ritmo sinusal com condução atrioventricular e intraventricular preservadas (intervalo PR e duração do QRS normais), sem perda de ondas P ou alargamento do complexo QRS. Embora haja ondas T relativamente proeminentes nas derivações precordiais (V2 a V4), não se observam alterações com iminência de arritmia maligna (como onda sinusoidal, ritmo juncional ou bloqueios avançados).\n\nAnálise das alternativas:\n\nAlternativa a (Incorreta): O gluconato de cálcio a 10% é indicado como estabilizador de membrana miocárdica em casos de hipercalemia grave ou quando há alterações eletrocardiográficas de risco iminente, como alargamento de QRS, perda de onda P ou arritmias ventriculares. Como o ECG não demonstra distúrbios graves de condução e o potássio sérico está em 5,8 mEq/L, a estabilização de membrana com cálcio não é a prioridade imediata neste cenário.\n\nAlternativa b (Correta): A furosemida é um diurético de alça que estimula a caliurese (excreção renal de potássio) e promove alívio da sobrecarga volêmica, comum em pacientes com nefrite lúpica e disfunção renal associada a hipertensão e taquipneia. Por atuar diretamente na eliminação do potássio e no controle da volemia, configura a conduta imediata mais adequada para o caso.\n\nAlternativa c (Incorreta): A desmopressina (DDAVP) é empregada para melhorar a hemostasia e a disfunção plaquetária secundária à uremia em situações de sangramento ativo ou previamente a procedimentos invasivos de alto risco. A paciente não apresenta manifestações hemorrágicas no momento.\n\nAlternativa d (Incorreta): O poliestireno sulfonato de sódio (resina de troca) tem início de ação lento, levando várias horas para reduzir os níveis de potássio, não sendo a escolha para conduta imediata. Além disso, a paciente apresenta constipação crônica, condição que aumenta o risco de complicações gastrointestinais graves associadas a essa droga, como necrose e perfuração intestinal.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Eletrocardiograma",
+      "Distúrbios do Potássio",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ed0badd85b3e4f1b2fe32bd16bffa2505c39d74edda0d5ed671ffb310f74b032.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c113e4cb-09eb-4958-b877-0e7d9f4291f3_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:28.324Z"
+  },
+  {
+    "id": "AJUDA_c11b0c98-9093-4689-9316-c32c7ec52243",
+    "originalId": "c11b0c98-9093-4689-9316-c32c7ec52243",
+    "statement": "Uma mulher com 28 semanas de gestação apresenta pressão arterial elevada e proteinúria. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertensão gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome HELLP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O diagnóstico de distúrbios hipertensivos na gestação é um tema fundamental em obstetrícia. A questão descreve uma gestante após a 20ª semana de gestação (28 semanas) com o binômio hipertensão e proteinúria.\n\nAnálise das alternativas:\n\na) Hipertensão gestacional: Incorreta. A hipertensão gestacional é definida pelo aparecimento de níveis pressóricos elevados (maiores ou iguais a 140/90 mmHg) após a 20ª semana de gestação, porém sem a presença de proteinúria ou outros sinais de disfunção orgânica. Como o enunciado cita expressamente a proteinúria, esta alternativa está descartada.\n\nb) Pré-eclâmpsia: Correta. É a definição clássica para o quadro apresentado. A pré-eclâmpsia é caracterizada pelo surgimento de hipertensão arterial após a 20ª semana de gravidez associada à proteinúria significativa (300 mg ou mais em urina de 24 horas, ou relação proteína/creatinina maior ou igual a 0,3). Vale lembrar que, em recomendações atuais, a pré-eclâmpsia pode ser diagnosticada mesmo na ausência de proteinúria, desde que existam outros sinais de gravidade ou lesão de órgão-alvo (como plaquetopenia, disfunção renal ou hepática).\n\nc) Eclâmpsia: Incorreta. A eclâmpsia ocorre quando uma paciente com pré-eclâmpsia evolui com convulsões tônico-clônicas generalizadas que não são causadas por outras condições neurológicas. O enunciado não menciona qualquer episódio convulsivo ou alteração do nível de consciência.\n\nd) Síndrome HELLP: Incorreta. A síndrome HELLP é uma complicação grave do espectro da pré-eclâmpsia e seu diagnóstico é estritamente laboratorial. Ela é definida pela presença de hemólise (H), elevação de enzimas hepáticas (EL) e baixas plaquetas (LP). Como não foram fornecidos exames laboratoriais, como hemograma, transaminases ou LDH, não se pode afirmar que a paciente possui tal síndrome.\n\nPortanto, diante de hipertensão e proteinúria após a 20ª semana, o diagnóstico mais provável e imediato é pré-eclâmpsia.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:28.324Z"
+  },
+  {
+    "id": "AJUDA_c12e1e38-7b70-4979-930b-93e3dd551c91",
+    "originalId": "c12e1e38-7b70-4979-930b-93e3dd551c91",
+    "statement": "Homem, 65 anos, diabético tipo 2 e hipertenso, chega à emergência com fraqueza muscular progressiva e palpitações. Encontra-se em uso de enalapril e espironolactona.\n\nExames laboratoriais:\n• Potássio sérico – 6,8 mEq/L.\n• Creatinina – 2,5 mg/dL (baseline 1,4).\n• pH arterial – 7,28.\n• ECG – ondas T apiculadas, alargamento do QRS.\n\nQual é a conduta mais adequada inicialmente para o paciente, considerando que ele apresenta hipercalemia grave e alteração eletrocardiográfica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar apenas diurético de alça (furosemida) para promover excreção renal do potássio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender a espironolactona e iniciar restrição dietética; repetir potássio em 12 horas antes de qualquer intervenção farmacológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar insulina regular com glicose IV, bicarbonato e gluconato de cálcio IV imediatamente, monitorando ECG; considerar remoção definitiva do potássio (diálise) se refratário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Administrar apenas bicarbonato IV, pois acidose metabólica é a principal causa do aumento do potássio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar beta-agonista inalatório isoladamente, porque é suficiente para correção do potássio sérico grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de hipercalemia grave (potássio sérico de 6,8 mEq/L) com repercussão eletrocardiográfica importante (ondas T apiculadas e alargamento do complexo QRS). A presença de alterações no ECG indica risco iminente de arritmias letais, como fibrilação ventricular ou assistolia. Além disso, o paciente apresenta lesão renal aguda (elevação da creatinina de 1,4 para 2,5 mg/dL), provavelmente agravada pelo uso de Enalapril e Espironolactona, que são poupadores de potássio.\n\nO tratamento da hipercalemia com alteração no ECG deve seguir três etapas fundamentais:\n1. Estabilização da membrana miocárdica (para evitar a parada cardíaca).\n2. Redistribuição do potássio para o meio intracelular (medidas de \"shift\").\n3. Remoção definitiva do excesso de potássio do organismo.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A furosemida promove a excreção renal de potássio, mas seu efeito é lento e depende da função renal residual, que está comprometida neste paciente. Não protege o coração contra as arritmias imediatas.\n\nAlternativa b) Incorreta. Suspender medicamentos e restringir a dieta são medidas de longo prazo. Diante de um ECG com QRS alargado, aguardar 12 horas sem intervenção farmacológica imediata coloca a vida do paciente em risco extremo.\n\nAlternativa c) Correta. Esta é a conduta preconizada para emergências hipercalêmicas:\n- Gluconato de cálcio IV: Estabiliza a membrana do cardiomiócito (antagoniza o efeito do potássio no potencial de ação), sendo a primeira medida a ser feita quando o ECG está alterado.\n- Insulina regular com glicose IV: Promove a entrada de potássio para dentro das células de forma rápida.\n- Bicarbonato de sódio IV: Auxilia no deslocamento intracelular do potássio, especialmente útil em pacientes com acidose (pH 7,28).\n- Diálise: É o tratamento definitivo para remover o potássio em pacientes com insuficiência renal ou casos refratários às medidas clínicas.\n\nAlternativa d) Incorreta. Embora a acidose contribua para a hipercalemia, o uso isolado de bicarbonato não é suficiente para tratar um potássio de 6,8 com alteração de ECG. Ele não substitui a necessidade de estabilização da membrana com cálcio.\n\nAlternativa e) Incorreta. Beta-agonistas inalatórios ajudam na entrada de potássio para a célula, mas nunca devem ser usados como terapia isolada em casos graves com alteração eletrocardiográfica. Além disso, em doses altas, podem causar taquicardia e palpitações, o que já é uma queixa do paciente.\n\nGabarito: Letra (c).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:28.324Z"
+  },
+  {
+    "id": "AJUDA_c12ffdd3-17de-4c87-bc8e-c04ff8caa47e",
+    "originalId": "c12ffdd3-17de-4c87-bc8e-c04ff8caa47e",
+    "statement": "O perfil hemodinâmico característico do choque cardiogênico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Débito cardíaco baixo, pressão venosa central baixa e resistência vascular sistêmica elevada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Débito cardíaco alto, pressão venosa central baixa e resistência vascular sistêmica baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Débito cardíaco baixo, pressão venosa central elevada e resistência vascular sistêmica elevada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Débito cardíaco normal, pressão venosa central normal e resistência vascular sistêmica baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para entender o choque cardiogênico, é fundamental pensar na falência da bomba cardíaca. O coração não consegue ejetar sangue de forma eficaz, o que gera uma cascata de alterações hemodinâmicas.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o débito cardíaco esteja baixo e a resistência vascular sistêmica esteja elevada, a pressão venosa central (PVC) baixa é característica do choque hipovolêmico. No choque hipovolêmico, falta volume dentro dos vasos, por isso a pressão de enchimento cai.\n\nb) Incorreta. Este perfil (débito alto e resistência baixa) é típico do choque distributivo, como o choque séptico em sua fase inicial (hiperdinâmica). No choque cardiogênico, o débito nunca está alto, pois o problema primário é justamente a incapacidade do coração de bombear o sangue.\n\nc) Correta. No choque cardiogênico, o evento primário é a queda do Débito Cardíaco (DC baixo). Como o coração não consegue bombear o sangue para frente, ocorre um acúmulo retrógrado de sangue nas câmaras cardíacas e no sistema venoso, o que aumenta a Pressão Venosa Central (PVC elevada) e a pressão de oclusão da artéria pulmonar (congestão). Para tentar manter a pressão arterial diante de um débito baixo, o organismo utiliza mecanismos compensatórios, como o sistema nervoso simpático, promovendo vasoconstrição periférica, o que eleva a Resistência Vascular Sistêmica (RVS elevada).\n\nd) Incorreta. No estado de choque, por definição, há uma falha na perfusão tecidual que geralmente envolve alteração no débito cardíaco ou na resistência vascular. Um débito e PVC normais com resistência baixa não definem o choque cardiogênico.\n\nResumo do Perfil Hemodinâmico no Choque Cardiogênico:\n1. Débito Cardíaco: Baixo (falência da bomba).\n2. Pressões de Enchimento (PVC / POAP): Elevadas (congestão por falha no esvaziamento).\n3. Resistência Vascular Sistêmica: Elevada (compensação reflexa para manter a pressão arterial).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:28.324Z"
+  },
+  {
+    "id": "AJUDA_c1305eb0-1790-45ab-a083-8dd031f3cb30",
+    "originalId": "c1305eb0-1790-45ab-a083-8dd031f3cb30",
+    "statement": "Chuvas mais fortes e calor intenso são previstos em decorrência de mudanças climáticas. Assinale a alternativa que apresenta corretamente casos de arboviroses relacionados ao fenômeno das mudanças climáticas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Oropouche, tuberculose e leptospirose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dengue, Zika e febre amarela.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Febre tifoide, febre amarela e malária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Raiva, Zika e oropouche.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, o candidato deve dominar o conceito de arbovirose e compreender como as mudanças climáticas impactam a dinâmica de transmissão dessas doenças. As arboviroses são doenças causadas por vírus transmitidos por artrópodes (como mosquitos e carrapatos). O aumento da temperatura acelera o ciclo de vida dos vetores e o período de incubação extrínseca do vírus, enquanto o regime de chuvas intensas favorece o acúmulo de água, ampliando os criadouros.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a febre de Oropouche seja uma arbovirose, a tuberculose é uma doença infectocontagiosa causada por uma bactéria (Mycobacterium tuberculosis) com transmissão respiratória. A leptospirose é uma doença bacteriana (Leptospira) transmitida pelo contato com água ou lama contaminadas por urina de animais infectados, especialmente ratos. Portanto, tuberculose e leptospirose não são arboviroses.\n\nb) Correta. Dengue, Zika e febre amarela são exemplos clássicos de arboviroses urbanas e silvestres. Todas são causadas por vírus e transmitidas por mosquitos (como o Aedes aegypti no ciclo urbano e Haemagogus ou Sabethes no ciclo silvestre da febre amarela). O aquecimento global e as chuvas intensas facilitam a expansão geográfica e a proliferação desses vetores, aumentando a incidência dessas patologias.\n\nc) Incorreta. A febre tifoide é uma doença bacteriana sistêmica causada pela Salmonella Typhi, transmitida por via fecal-oral (água e alimentos contaminados). A malária, embora seja transmitida por um vetor (mosquito Anopheles) e sofra influência do clima, é causada por protozoários do gênero Plasmodium, não sendo classificada como uma virose (arbovirose).\n\nd) Incorreta. Zika e Oropouche são arboviroses. No entanto, a raiva é uma zoonose viral transmitida pela saliva de mamíferos infectados (como cães, morcegos e gatos) através de mordeduras, arranhaduras ou lambeduras. A raiva não é transmitida por artrópodes, portanto, não é uma arbovirose.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:28.324Z"
+  },
+  {
+    "id": "AJUDA_c13bbd47-fc8a-4f4d-b7c9-e490b21ce3fd",
+    "originalId": "c13bbd47-fc8a-4f4d-b7c9-e490b21ce3fd",
+    "statement": "Puérpera apresenta temperatura axilar de 37,9 ºC. AP: sexto dia pós-parto cesariano (gestação de 39 semanas e parada secundária da descida com 12 horas de bolsa rota). Exame físico: BEG, temperatura sublingual: 37,2 ºC, FC: 72 bpm, mamas túrgidas, flácidas e sem sinais flogísticos, abdome semigloboso, depressível, indolor à palpação profunda, útero palpável 2 a 3 cm acima do bordo superior da sínfise púbica, ferida operatória sem sinais flogísticos, loquiação sem odor fétido. Toque vaginal: útero móvel, indolor à mobilização, colo pérvio: 1,5 cm. Hemograma: Ht: 33%, Hb: 11,2 g/dL, leucócitos: 12400/mm³, neutrófilos: 6800/mm³, bastões: 0/mm³.\nA conduta correta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "internação e antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "internação para rastreio infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "antibioticoterapia oral e reavaliação em 3 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "orientar curva térmica sublingual e retorno se necessário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é avaliar se a paciente realmente apresenta um quadro febril e se há sinais de infecção puerperal.\n\nAnálise Clínica:\nA paciente está no 6º dia de pós-parto. Embora tenha tido fatores de risco (bolsa rota por 12 horas e parto cesariano após parada de descida), o quadro clínico atual é de estabilidade. A temperatura axilar registrada foi de 37,9 °C, o que é considerado febrícula, não atingindo o critério clássico de febre puerperal (que seria uma temperatura superior a 38 °C em dois registros distintos, excluindo as primeiras 24 horas pós-parto). Além disso, a temperatura sublingual, que é mais fidedigna por não sofrer interferência direta do calor local das mamas (ingurgitamento mamário), está normal (37,2 °C).\n\nExame Físico e Laboratorial:\nO exame físico não revela focos infecciosos: as mamas não têm sinais flogísticos (afastando mastite aguda), o útero está involuído e indolor (afastando endometrite), a ferida operatória está limpa e a loquiação não tem odor fétido. O hemograma mostra leucócitos de 12.400/mm³ sem desvio à esquerda (0 bastões). No puerpério, uma leucocitose moderada é considerada fisiológica e não indica, isoladamente, infecção.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Não há diagnóstico de infecção estabelecido. A prescrição de antibióticos sem foco clínico e sem febre confirmada é uma conduta inadequada e contribui para a resistência bacteriana.\n\nAlternativa B: Incorreta. A internação para rastreio infeccioso é uma medida desproporcional para uma paciente em bom estado geral, com sinais vitais estáveis e exame físico normal. O rastreio, se necessário, poderia ser iniciado ambulatorialmente caso houvesse suspeita clínica real.\n\nAlternativa C: Incorreta. Da mesma forma que a alternativa A, o uso de antibioticoterapia oral sem evidência de doença (como uma infecção urinária ou mastite leve) é contraindicado.\n\nAlternativa D: Correta. Como a paciente apresenta apenas um pico isolado de temperatura axilar (que pode ser influenciado pela apojadura ou ingurgitamento mamário) e a temperatura sublingual está normal, a conduta mais adequada é a observação. Recomenda-se que a paciente monitore a temperatura de forma mais precisa (curva térmica) e retorne ao serviço de saúde caso surjam sintomas de alerta (febre persistente acima de 38 °C, dor abdominal ou loquiação fétida).\n\nConclusão:\nA ausência de sinais de irritação peritoneal, dor uterina e alterações na loquiação, somada a uma temperatura sublingual normal, afasta a necessidade de intervenção imediata, sendo a conduta expectante com orientação a melhor escolha.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:28.324Z"
+  },
+  {
+    "id": "AJUDA_c13d3353-f0bf-4a38-b527-c8ebfabddaa9",
+    "originalId": "c13d3353-f0bf-4a38-b527-c8ebfabddaa9",
+    "statement": "Mulher de 28 anos foi diagnosticada com sifilis durante o pre-natal de sua primeira gravidez. A conduta mais adequada para o tratamento da sifilis em gestantes e a prevencao de complicações no bebê é",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar o tratamento com doxiciclina e monitorar a gestante durante todo o pré-natal, fazendo o tratamento simultâneo do parceiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "prescrever penicilina benzatina e iniciar o tratamento imediato tanto na gestante quanto no parceiro, realizando seguimento rigoroso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "monitorar a evolução da sífilis sem necessidade de tratamento imediato, pois a transmissão congênita só ocorre nas fases tardias da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar exames de sangue mensais durante o pré-natal para observação sorológica, iniciando o tratamento de mãe e bebê logo após o parto para evitar complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tratar o parceiro da gestante, mas adiar o tratamento da mãe até o segundo trimestre, pois o tratamento farmacológico só é indicado após esse período gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O tema abordado nesta questão é o manejo da sífilis na gestação, um ponto crítico na assistência pré-natal para evitar a sífilis congênita. A base do tratamento reside na utilização da penicilina e na abordagem simultânea do parceiro sexual para evitar a reinfecção.\n\nAnálise das alternativas:\n\na) Incorreta. A doxiciclina é um antibiótico da classe das tetraciclinas e é absolutamente contraindicada durante a gestação, pois pode causar malformações ósseas e coloração permanente dos dentes do feto. Além disso, a doxiciclina não é eficaz para o tratamento do feto, não prevenindo a sífilis congênita.\n\nb) Correta. A penicilina benzatina é o único tratamento padrão-ouro e a única opção eficaz para atravessar a barreira placentária e tratar o feto. O tratamento deve ser iniciado imediatamente após o diagnóstico. O tratamento do parceiro é um componente essencial da estratégia para evitar o efeito \"pingue-pongue\" (reinfecção da gestante). O seguimento rigoroso com exames laboratoriais mensais (geralmente o VDRL) é obrigatório para garantir que houve queda na titulação e cura da infecção.\n\nc) Incorreta. A transmissão do Treponema pallidum para o feto pode ocorrer em qualquer fase da gestação (desde o primeiro trimestre) e em qualquer estágio da doença materna. A taxa de transmissão é maior nas fases iniciais da sífilis (primária e secundária), mas o risco existe sempre, exigindo tratamento imediato.\n\nd) Incorreta. O tratamento da sífilis durante o pré-natal visa justamente o tratamento \"in utero\" do feto. Aguardar o nascimento para tratar o bebê é uma conduta inadequada que permite a progressão da doença, podendo levar a abortamento, óbito fetal ou sequelas graves e permanentes para a criança.\n\ne) Incorreta. Não existe recomendação para adiar o tratamento da sífilis na gestação. Uma vez diagnosticada, a conduta deve ser imediata, independentemente da idade gestacional. Quanto mais precocemente a mãe é tratada, menores são as chances de complicações para o concepto. Além disso, para que o tratamento da gestante seja considerado adequado para o feto, ele deve ser finalizado pelo menos 30 dias antes do parto.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:28.324Z"
+  }
+]

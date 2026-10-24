@@ -1,0 +1,537 @@
+[
+  {
+    "id": "AJUDA_90c6236d-9cd6-4648-a91a-d91dd8464305",
+    "originalId": "90c6236d-9cd6-4648-a91a-d91dd8464305",
+    "statement": "Homem, 36 anos de idade, comparece à unidade de emergência com queixa de cefaleia holocraniana em peso há duas semanas. Relata que, no inicio, a dor era de leve intensidade (3/10), estando associada a astenia e febre (38,2°C). Nos últimos três dias, a intensidade da dor piorou, sendo de moderada intensidade no momento. Neste mesmo período, também passou a apresentar fotofobia, rigidez no pescoço, turvação visual e teve dois episódios de vômitos. Tem história de HIV há 10 anos, fazendo uso irregular da terapia antirretroviral. Ao exame, estava sonolento e desorientado, com temperatura de 38,6°C e redução de acuidade visual, predominantemente à direita. A tomografia de crânio obtida após a admissão pode ser vista na imagem a seguir: O resultado do exame do LCR pode ser visto na tabela e na imagem da microscopia a seguir. O diagnóstico eletrocardiográfico e a conduta que deve ser adotada neste momento, respectivamente, são: \n\n- Células: 32/mm³ (predomínio de monócitos)\n- Proteínas totais: 45 mg/dL\n- Glicose: 46 mg/dL\n- Glicose sérica: 90 mg/dL\n- ADA: 2 UI/L\n- DHL: 24 UI/L",
+    "options": [
+      {
+        "id": "A",
+        "text": "Criptococose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Neurotoxoplasmose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Criptosporidiase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Neurotuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Neurossifilis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um homem jovem com HIV e uso irregular de terapia antirretroviral, o que indica um estado de imunossupressão grave. Ele apresenta um quadro de meningite subaguda (duas semanas de evolução), caracterizado por febre, cefaleia, rigidez de nuca, fotofobia e sinais de hipertensão intracraniana, como vômitos, turvação visual e sonolência.\n\nAnálise das imagens e exames laboratoriais:\n\nA imagem de microscopia é o ponto-chave da questão. Ela mostra o exame direto do líquido cefalorraquidiano (LCR) preparado com a técnica de tinta da China (nanquim), evidenciando leveduras arredondadas e encapsuladas, identificadas pelo halo claro ao redor da célula fúngica. Este achado é patognomônico do fungo Cryptococcus neoformans.\n\nA tomografia computadorizada de crânio demonstra uma dilatação dos ventrículos laterais (hidrocefalia), uma complicação frequente na neurocriptococose. Isso ocorre porque os componentes da cápsula polissacarídica do fungo obstruem a reabsorção do líquor pelas granulações aracnoides.\n\nO exame do LCR corrobora o diagnóstico ao mostrar uma pleocitose leve com predomínio de monócitos e glicose reduzida (hipoglicorraquemia). O valor de ADA (adenosina desaminase) está normal (2 UI/L), o que é um dado fundamental para afastar a hipótese de tuberculose.\n\nAlternativa a) Correta. Os dados clínicos de meningite subaguda em paciente com AIDS, aliados à visualização direta de leveduras encapsuladas e ao achado de hidrocefalia na imagem, confirmam o diagnóstico de criptococose. Embora o enunciado mencione erroneamente \"diagnóstico eletrocardiográfico\" (um erro de digitação comum em provas, onde se pretendia escrever diagnóstico etiológico), a alternativa (a) é a única que corresponde aos achados.\n\nAlternativa b) Incorreta. A neurotoxoplasmose costuma se manifestar com déficits neurológicos focais (como fraqueza em um lado do corpo) e lesões expansivas com realce anelar de contraste na tomografia (abscessos), e não como uma meningite com líquor apresentando leveduras.\n\nAlternativa c) Incorreta. A criptosporidíase é uma infecção oportunista causada por um protozoário que ataca o trato gastrointestinal, provocando diarreia crônica e desidratação em pacientes com AIDS, sem relação com quadros de meningite.\n\nAlternativa d) Incorreta. A neurotuberculose é o principal diferencial da criptococose em quadros subagudos. Contudo, ela geralmente apresenta ADA elevado no LCR (acima de 9-10 UI/L) e a microscopia revelaria bacilos álcool-ácido resistentes (BAAR) ou seria negativa para fungos.\n\nAlternativa e) Incorreta. A neurossífilis pode causar meningite em pacientes HIV positivos, mas seu diagnóstico é baseado na sorologia e no teste de VDRL no líquor, não apresentando as leveduras encapsuladas vistas na imagem de tinta da China.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Micoses Invasivas",
+      "HIV",
+      "Meningites"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/2365a3564b408b045212c858f0fa5d3cb40cbc1e2fe865381b637e8a1f8aacfa.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_90c6236d-9cd6-4648-a91a-d91dd8464305_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/b4e94621084c4540694e9cb3439439add6f7a1d1510cc64c089894a3c4c362a7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_90c6236d-9cd6-4648-a91a-d91dd8464305_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.131Z"
+  },
+  {
+    "id": "AJUDA_90cbdf5f-70a3-40a9-9f2f-4c4d2ed7ae8c",
+    "originalId": "90cbdf5f-70a3-40a9-9f2f-4c4d2ed7ae8c",
+    "statement": "Uma criança de 3 anos chega ao pronto atendimento com suspeita de sepse grave. FC 170 bpm, com extremidades frias, pulsos finos, tempo de enchimento capilar > 4 segundos, hipotensão, oligúria e sensório rebaixado. Já recebeu 40 mL/kg de cristaloide com resposta mínima. Qual a intervenção mais adequada a se seguir neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar mais 20 ml/kg de cristaloide e aguardar estabilização antes de iniciar qualquer droga.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar noradrenalina como primeira escolha e aguardar hemograma, PCR e procalcitonina para iniciar antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar antibiótico e droga vasoativa - adrenalina em bomba de infusão contínua",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ajustar posição do paciente, infundir mais 40mL/kg de cristaloide e observar antes de qualquer intervenção adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar intubação traqueal, iniciar antibioticoterapia e fazer amiodarona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente de 3 anos apresenta sinais claros de choque séptico. Os achados de extremidades frias, tempo de enchimento capilar prolongado (maior que 4 segundos) e pulsos finos caracterizam o choque frio, que é o padrão mais comum na pediatria. O paciente já recebeu uma expansão volêmica inicial (40 mL/kg) e permanece com hipotensão, oligúria e alteração do nível de consciência, o que define um choque refratário a fluidos.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. Embora a reposição volêmica possa chegar a 60 mL/kg, aguardar a estabilização sem iniciar suporte farmacológico em um paciente com hipotensão e sinais de má perfusão grave é inadequado. O atraso no início de drogas vasoativas em pacientes que não respondem ao volume inicial aumenta significativamente a mortalidade.\n\nAlternativa b: Incorreta. No choque séptico pediátrico, a noradrenalina é a droga de escolha para o choque quente (vasodilatado). Para o choque frio, apresentado neste caso, a adrenalina é a primeira escolha devido ao seu efeito inotrópico e vasopressor. Além disso, a antibioticoterapia deve ser iniciada imediatamente na suspeita de sepse, na primeira hora, sem aguardar resultados de exames laboratoriais como PCR ou procalcitonina.\n\nAlternativa c: Correta. De acordo com as diretrizes internacionais (como o Surviving Sepsis Campaign para pediatria), quando o choque persiste após a administração de 40 a 60 mL/kg de cristaloides, deve-se iniciar a droga vasoativa. A adrenalina é o agente preferencial para o choque frio em crianças. O início do antibiótico de amplo espectro é fundamental e deve ser feito o mais rápido possível.\n\nAlternativa d: Incorreta. A conduta de apenas observar e infundir volumes excessivos sem suporte inotrópico em um paciente com falência circulatória progressiva é perigosa. O excesso de fluidos sem suporte vasoativo pode levar a sobrecarga hídrica grave e edema pulmonar sem corrigir a hipotensão.\n\nAlternativa e: Incorreta. A intubação pode ser necessária pelo rebaixamento do sensório, mas a amiodarona é um antiarrítmico sem indicação neste caso. A taquicardia de 170 bpm é uma resposta compensatória (taquicardia sinusal) à baixa perfusão e não uma arritmia que exija tratamento medicamentoso específico.\n\nResumo: Diante de um choque séptico frio refratário a fluidos na criança, a conduta imediata é o início de antibioticoterapia e suporte com droga vasoativa (adrenalina).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Emergências Pediátricas",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.131Z"
+  },
+  {
+    "id": "AJUDA_90dd64d7-22c9-4ff2-ae07-4055cbb29ace",
+    "originalId": "90dd64d7-22c9-4ff2-ae07-4055cbb29ace",
+    "statement": "Gestante, 24 anos, G3P2A0, com 12 semanas, com sorologia anti-HIV não reagente na última semana, procurou o serviço de urgência referindo que durante relação sexual há 26 horas, houve ruptura total do preservativo com ejaculado no canal anal. A paciente está muito ansiosa, pois seu parceiro vive com HIV, sem tratamento e sem controle clínico e laboratorial no último ano. O teste rápido para detecção do HIV da gestante foi negativo. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fazer profilaxia com lamivudina, tenofovir e dolutegravir.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Profilaxia pós exposição não está indicada nessa idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fazer profilaxia somente com zidovudina endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Após este tempo da exposição não está mais indicada a profilaxia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo da Profilaxia Pós-Exposição (PEP) ao HIV em uma gestante. Para resolver o caso, é necessário aplicar as recomendações do Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A paciente teve uma exposição de risco (relação anal com parceiro HIV-positivo sem tratamento) há 26 horas. A PEP está indicada quando o tempo decorrido é de, no máximo, 72 horas (sendo ideal o início nas primeiras 2 horas). O esquema preferencial atual, inclusive para gestantes, é a combinação de tenofovir (TDF) + lamivudina (3TC) + dolutegravir (DTG). O uso do dolutegravir em gestantes é considerado seguro e recomendado pelo Ministério da Saúde devido à sua alta eficácia e barreira genética, superando potenciais riscos teóricos discutidos no passado sobre defeitos no tubo neural.\n\nAlternativa b) Incorreta. A gestação não é uma contraindicação para a PEP. Pelo contrário, a profilaxia é fundamental para evitar a infecção aguda da gestante, período em que a carga viral costuma ser muito elevada, o que aumentaria drasticamente o risco de transmissão vertical do HIV para o feto.\n\nAlternativa c) Incorreta. A zidovudina (AZT) endovenosa é utilizada exclusivamente durante o trabalho de parto de gestantes que vivem com HIV e que possuem carga viral desconhecida ou acima de 1.000 cópias/mL no terceiro trimestre. Não é o esquema indicado para profilaxia pós-exposição sexual.\n\nAlternativa d) Incorreta. O prazo-limite para o início da PEP é de até 72 horas após a exposição. Como a paciente procurou o serviço 26 horas após o ocorrido, ela ainda está dentro da janela de oportunidade para que a profilaxia seja eficaz.\n\nEm resumo, diante de uma exposição de risco ocorrida há menos de 72 horas em paciente soronegativa, a PEP deve ser iniciada imediatamente com o esquema padrão de três antirretrovirais (TDF + 3TC + DTG), independentemente da idade gestacional.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.131Z"
+  },
+  {
+    "id": "AJUDA_90e64be2-3cdd-4489-a570-7b9a1e968324",
+    "originalId": "90e64be2-3cdd-4489-a570-7b9a1e968324",
+    "statement": "Um cirurgião geral está preparando a mesa cirúrgica para realização de excisão de cisto de pele sob anestesia local, em paciente de 70 anos. O paciente tem histórico de doença arterial coronariana com colocação de stent e hipertensão arterial de difícil controle. O cirurgião opta por usar solução de anestésico local sem epinefrina. O acadêmico de medicina que estava acompanhando o cirurgião lhe questiona o motivo para o uso de anestésico sem epinefrina. Qual foi o argumento CORRETO que provavelmente o cirurgião utilizou para justificar sua escolha, neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A epinefrina altera o pKa do anestésico local aumentando a latência anestésica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A epinefrina aumenta o pH do tecido, o que diminui a eficácia da anestesia local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A epinefrina pode causar necrose tecidual em qualquer área do corpo, independentemente da condição do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A epinefrina pode ter efeitos sistêmicos, como o aumento da frequência cardíaca e da pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o uso clínico de vasoconstritores associados a anestésicos locais em pacientes com comorbidades cardiovasculares.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O pKa (logaritmo negativo da constante de dissociação ácida) é uma propriedade química intrínseca de cada anestésico local e determina a proporção entre a forma ionizada e a forma não ionizada da droga em determinado pH. O pKa influencia a latência (tempo para início de ação), mas a epinefrina não altera o pKa da molécula do anestésico.\n\nAlternativa b) Incorreta. A adição de epinefrina tende a diminuir o pH da solução anestésica (tornando-a mais ácida) para evitar a oxidação do vasoconstritor, e não a aumentá-lo. O pH mais baixo da solução pode, na verdade, aumentar a latência da anestesia, mas não é esse o motivo da preocupação clínica no caso descrito.\n\nAlternativa c) Incorreta. O risco de necrose tecidual por vasoconstrição é um conceito classicamente associado ao uso em extremidades (como dedos, nariz e pênis), embora estudos modernos questionem essa proibição absoluta. Afirmar que a epinefrina causa necrose em qualquer área do corpo, independentemente da condição do paciente, é um erro conceitual grave.\n\nAlternativa d) Correta. Este é o argumento central. O paciente em questão apresenta alto risco cardiovascular (doença arterial coronariana com stent e hipertensão de difícil controle). A epinefrina é uma substância simpatomimética que, se absorvida sistemicamente, atua em receptores alfa e beta-adrenérgicos. Isso pode resultar em aumento da frequência cardíaca (cronotropismo positivo), aumento da força de contração cardíaca (inotropismo positivo) e vasoconstrição periférica, elevando a pressão arterial e o consumo de oxigênio pelo miocárdio. Em um paciente coronariopata e hipertenso, esses efeitos podem desencadear arritmias, crises hipertensivas ou até mesmo um evento isquêmico agudo (infarto). Portanto, a opção por um anestésico sem vasoconstritor visa à segurança cardiovascular do paciente.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.131Z"
+  },
+  {
+    "id": "AJUDA_90e768e7-5f50-4b00-8410-69e4869dc185",
+    "originalId": "90e768e7-5f50-4b00-8410-69e4869dc185",
+    "statement": "Um homem de 31 anos, previamente saudável, apresenta-se com uma história de 2 anos de disfagia intermitente, principalmente para alimentos sólidos. Relatou 2 episódios de impactação alimentar, com necessidade de endoscopia digestiva alta de urgência. Estava em uso de esomeprazol (40 mg ao dia) há 6 meses, sem melhora significativa dos sintomas de disfagia. Realizou recentemente nova endoscopia, em que a biópsia foi compatível com esofagite eosinofílica, sem estenose esofágica. Foi orientado a restringir alimentos que pudessem estar associados com essa forma de esofagite. Contudo, não houve resposta satisfatória. \nNesse caso, a estratégia de intervenção mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "associar sucralfato antes das refeições e à noite, antes de deitar;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trocar esomeprazol por outro bloqueador da bomba de prótons;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "encaminhar para tratamento com terapia biológica específica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "associar um procinético (como domperidona) antes das refeições;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "associar um esteroide tópico (como fluticasona ou budesonida) por via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO quadro clínico descreve um paciente com Esofagite Eosinofílica (EEo), uma doença inflamatória crônica do esôfago, imunomediada, caracterizada por sintomas de disfunção esofágica (como a disfagia para sólidos e a impactação alimentar) e infiltrado inflamatório rico em eosinófilos (pelo menos 15 eosinófilos por campo de grande aumento na biópsia).\n\nO tratamento da EEo baseia-se em três pilares principais, conhecidos como os três Ds: Drogas (Inibidores da Bomba de Prótons – IBP ou corticoides), Dieta e Dilatação (se houver estenose). No caso em questão, o paciente já realizou o teste terapêutico com IBP (esomeprazol) sem sucesso e tentou a restrição dietética, também sem resposta. O próximo passo lógico na linha de tratamento é o uso de corticoterapia tópica.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O sucralfato é um protetor da mucosa gástrica utilizado principalmente em casos de úlceras e gastrites. Ele não atua no processo inflamatório eosinofílico específico da EEo e não faz parte das diretrizes de tratamento para essa patologia.\n\nAlternativa b) Incorreta. O paciente já utilizou esomeprazol em dose plena (40 mg/dia) por 6 meses sem melhora clínica. Trocar por outro IBP dificilmente traria benefício, pois a falha terapêutica a essa classe já foi demonstrada. É necessário mudar o mecanismo de ação do tratamento.\n\nAlternativa c) Incorreta. Embora terapias biológicas (como o dupilumabe) tenham sido aprovadas recentemente para casos graves ou refratários de esofagite eosinofílica, elas não são a primeira escolha após a falha do IBP e da dieta. Antes de partir para biológicos, deve-se tentar o tratamento convencional com corticoides tópicos, que apresentam excelente taxa de resposta.\n\nAlternativa d) Incorreta. Procinéticos como a domperidona auxiliam no esvaziamento gástrico e podem ser usados no refluxo gastroesofágico associado à dismotilidade, mas não possuem efeito sobre a inflamação tecidual por eosinófilos característica da EEo.\n\nAlternativa e) Correta. Os esteroides tópicos (fluticasona ou budesonida) são considerados tratamentos de primeira linha para a EEo. A medicação deve ser administrada por via oral, mas de forma que entre em contato direto com a mucosa esofágica (engolindo o spray de fluticasona ou utilizando budesonida viscosa), agindo localmente para reduzir o infiltrado eosinofílico e a inflamação, melhorando os sintomas de disfagia. Como o paciente não respondeu ao IBP nem à dieta, o esteroide tópico é a estratégia de intervenção mais adequada.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Esofagite não péptica"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.131Z"
+  },
+  {
+    "id": "AJUDA_90f08ecc-9081-4a84-a0cd-0fc91f99398e",
+    "originalId": "90f08ecc-9081-4a84-a0cd-0fc91f99398e",
+    "statement": "Com relação a indicação de diálise de urgência, qual é incorreta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipervolemia refratária a diuréticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sinais e sintomas de encefalopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertensão arterial refratária às drogas hipotensoras VO.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Derrame Pericárdico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hiperpotassemia não controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder a essa questão, devemos recordar as indicações clássicas de diálise de urgência, frequentemente resumidas pelo mnemônico AEIOU. O objetivo é identificar qual das alternativas NÃO compõe esse grupo de indicações absolutas e imediatas.\n\nAnálise das alternativas:\n\na) Hipervolemia refratária a diuréticos: Correta. O excesso de volume (hipervolemia) que não responde a altas doses de diuréticos de alça coloca o paciente em risco iminente de edema agudo de pulmão e insuficiência respiratória, sendo uma indicação clássica de diálise (o \"O\" de overload no mnemônico).\n\nb) Sinais e sintomas de encefalopatia: Correta. A encefalopatia urêmica, manifestada por confusão mental, letargia ou até convulsões, é um sinal de toxicidade grave por escórias nitrogenadas no sistema nervoso central, exigindo depuração imediata (o \"U\" de uremia no mnemônico).\n\nc) Hipertensão arterial refratária às drogas hipotensoras VO: Incorreta. A hipertensão arterial, isoladamente, não é uma indicação de diálise de urgência. Mesmo que seja refratária a medicamentos por via oral (VO), o manejo inicial envolve o ajuste de doses ou o uso de medicações intravenosas. A diálise só seria considerada se a hipertensão fosse uma consequência direta de uma hipervolemia grave e refratária (conforme descrito na alternativa A), mas a resistência a drogas orais por si só não define a urgência dialítica. Por ser a afirmação incorreta, esta é a alternativa a ser marcada.\n\nd) Derrame pericárdico: Correta. O derrame pericárdico ou a pericardite urêmica são complicações graves da uremia. A presença de atrito pericárdico ou derrame em paciente urêmico indica risco de tamponamento cardíaco, sendo uma indicação absoluta de diálise imediata (também parte do \"U\" de uremia).\n\ne) Hiperpotassemia não controlada: Correta. Níveis elevados de potássio (geralmente acima de 6,5 mEq/L ou com alterações eletrocardiográficas) que não respondem às medidas clínicas iniciais (como glicoinsulinoterapia, bicarbonato ou resinas de troca) representam risco de parada cardiorrespiratória e exigem diálise de urgência (o \"E\" de eletrólitos no mnemônico).\n\nEm resumo, as indicações clássicas de urgência dialítica são: Acidose metabólica grave (refratária), Eletrólitos (hiperpotassemia refratária), Intoxicações (por substâncias dialisáveis), Overload (hipervolemia/edema agudo de pulmão refratário) e Uremia grave (pericardite, encefalopatia ou sangramentos). A hipertensão arterial isolada não preenche esses critérios.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.131Z"
+  },
+  {
+    "id": "AJUDA_90f170c9-4e1e-4d5b-b7af-e24674bebbaf",
+    "originalId": "90f170c9-4e1e-4d5b-b7af-e24674bebbaf",
+    "statement": "Uma gestante G2P1, com 24 anos de idade e 9 semanas de gestação, compareceu à primeira consulta de pré‑natal na UBS. A paciente negou comorbidades. Os exames indicaram PA de 110 × 70 mmHg e IMC de 23 kg/m². O exame físico estava sem alterações.\n\nCom base nesse caso clínico hipotético, assinale a opção correta, acerca da assistência de pré‑natal de baixo risco.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O início do pré‑natal é idealmente após 14 semanas, quando se confirma a vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O número mínimo de consultas recomendado é de 4, desde que uma seja no 3º trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A sorologia para sífilis é solicitada apenas na primeira consulta e, no caso de ser negativa, não precisará ser repetida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacinação contra dTpa é indicada entre 20 e 36 semanas, em todas as gestações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A sorologia para HIV deve ser solicitada apenas se a gestante referir fator de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. De acordo com as diretrizes do Ministério da Saúde e da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO), o início do pré-natal deve ser o mais precoce possível, idealmente até a 12ª semana de gestação (captação precoce). Iniciar após a 14ª semana prejudica o rastreamento de malformações, a datação precisa da idade gestacional e o início de suplementações e tratamentos preventivos.\n\nAlternativa b: Incorreta. O Ministério da Saúde recomenda um número mínimo de 6 consultas durante o pré-natal de baixo risco (idealmente 1 no primeiro trimestre, 2 no segundo e 3 no terceiro trimestre). Atualmente, seguindo recomendações da Organização Mundial da Saúde (OMS), busca-se um modelo de 7 a 8 consultas para garantir maior segurança materna e fetal.\n\nAlternativa c: Incorreta. O rastreamento para sífilis é obrigatório na primeira consulta (ou primeiro trimestre) e deve ser repetido no início do terceiro trimestre (por volta da 28ª semana) e novamente no momento da admissão para o parto ou em casos de abortamento. Isso ocorre devido ao alto risco de reinfecção e para prevenir a sífilis congênita.\n\nAlternativa d: Correta. A vacina dTpa (difteria, tétano e coqueluche acelular do tipo adulto) deve ser administrada em todas as gestações, a partir da 20ª semana, preferencialmente entre a 20ª e a 36ª semana. O objetivo é a produção de anticorpos maternos que serão transferidos via placenta para o feto, garantindo proteção contra a coqueluche nos primeiros meses de vida do bebê, antes que ele complete o esquema vacinal primário. A dose deve ser repetida em cada nova gravidez.\n\nAlternativa e: Incorreta. A sorologia para HIV é um exame de rotina universal para todas as gestantes, independentemente de história clínica ou fatores de risco. Deve ser solicitada na primeira consulta de pré-natal e repetida obrigatoriamente no terceiro trimestre, além de ser realizada novamente por meio de teste rápido no momento do parto.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.131Z"
+  },
+  {
+    "id": "AJUDA_90f8c81f-c68e-4188-932e-bc14bfa254da",
+    "originalId": "90f8c81f-c68e-4188-932e-bc14bfa254da",
+    "statement": "Uma mulher de 17 anos, G1P1, procura atendimento para iniciar método contraceptivo. Refere menstruações muito intensas e prolongadas (hipermenorragia) associadas a cólicas moderadas, com impacto na qualidade de vida. Relata dificuldade em lembrar de tomar medicamentos diariamente e tem muita preocupação com o ganho de peso. Está saudável, sem contraindicações clínicas. Qual o método mais adequado para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pílula combinada oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "DIU não hormonal (cobre).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DIU hormonal (levonorgestrel).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Implante subdérmico (etonogestrel).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente em questão apresenta três pontos fundamentais que devem guiar a escolha do método contraceptivo:\n1. Sintomas menstruais: Hipermenorragia (fluxo intenso e prolongado) e cólicas (dismenorreia).\n2. Comportamento e adesão: Dificuldade em se lembrar das tomadas diárias (baixa adesão a métodos de curta duração).\n3. Preocupações subjetivas: Medo de ganho de peso.\n\nPor ser uma paciente jovem e com dificuldade de adesão, os métodos de longa ação (LARCs), que incluem os DIUs e o implante, são os mais indicados pelas sociedades médicas internacionais e nacionais.\n\nAlternativa A (Pílula combinada oral): Incorreta. Embora os anticoncepcionais orais combinados ajudem no controle do fluxo menstrual e das cólicas, eles dependem estritamente da disciplina diária da paciente. Como a jovem relatou dificuldade em se lembrar de tomar os medicamentos todos os dias, o risco de falha do método (gravidez indesejada) é elevado. Além disso, as pílulas são métodos de curta duração, sendo menos recomendadas para adolescentes com esse perfil de esquecimento.\n\nAlternativa B (DIU não hormonal/cobre): Incorreta. O DIU de cobre é um método de longa duração (LARC) e não interfere no peso, o que seria positivo. No entanto, seus principais efeitos adversos são justamente o aumento do fluxo menstrual e a piora das cólicas. Como a paciente já sofre com hipermenorragia e dismenorreia, o DIU de cobre agravaria seus sintomas e diminuiria sua qualidade de vida.\n\nAlternativa C (DIU hormonal/levonorgestrel): Correta. Este é o método ideal para a paciente. O DIU hormonal é um LARC (não depende da memória da paciente), possui altíssima eficácia e é um dos tratamentos de primeira linha para a hipermenorragia, pois promove a atrofia do endométrio, reduzindo drasticamente o volume e a duração do sangramento (podendo levar à amenorreia). Também é excelente para o controle das cólicas. Em relação ao peso, os estudos mostram que o impacto é mínimo ou inexistente, atendendo à preocupação da paciente.\n\nAlternativa D (Implante subdérmico/etonogestrel): Incorreta. O implante também é um LARC de alta eficácia e ajuda no controle das cólicas. Contudo, seu principal efeito colateral é a imprevisibilidade do sangramento, podendo causar escapes frequentes (spotting), o que pode ser indesejado para uma paciente que já tem queixas sobre o fluxo. Além disso, entre as opções hormonais de longa duração, o implante é o que os pacientes mais frequentemente associam a queixas de ganho de peso (embora a relação causal seja debatida), o que gera maior resistência por parte da paciente com esse receio específico. O DIU hormonal oferece um controle superior do padrão de sangramento para casos de hipermenorragia.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.131Z"
+  },
+  {
+    "id": "AJUDA_90fbeb24-38cf-4c73-a312-8b5b61367ae6",
+    "originalId": "90fbeb24-38cf-4c73-a312-8b5b61367ae6",
+    "statement": "Ε.Τ.Ο, 53 anos, vem à consulta ambulatorial referindo fogachos intensos, irritabilidade, insônia e falha de memória. Hipertensão crônica controlada, em uso de IECA. IMC 30 kg/m². Hipercolesterolemia. Sem outras comorbidades. Nega alteração de libido. Histerectomia anterior por miomatose uterina. De acordo com o caso, assinale a alternativa que apresenta o tratamento correto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estrogênio e progesterona via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estrogênio, progesterona e testosterona via transdérmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estrogênio e testosterona via transdérmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estrogênio via transdérmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Cloridrato de desvenlafaxina via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nA paciente de 53 anos apresenta sintomas vasomotores (fogachos) e neurovegetativos (insônia, irritabilidade e falha de memória) clássicos do climatério, o que fundamenta a indicação de Terapia Hormonal (TH). Para definir o melhor esquema terapêutico, devemos considerar três pontos fundamentais deste caso: \n1. Presença ou ausência de útero: A paciente é histerectomizada. Nesses casos, a reposição deve ser feita exclusivamente com estrogênio. A progesterona é adicionada à TH apenas para proteção endometrial; se não há útero, não há necessidade de progesterona.\n2. Fatores de risco cardiovascular e metabólico: A paciente possui IMC de 30 kg/m² (obesidade grau I), hipertensão arterial e hipercolesterolemia. Essas condições elevam o risco cardiovascular e tromboembólico.\n3. Via de administração: Em pacientes com comorbidades, como hipertensão, obesidade, diabetes ou risco aumentado de trombose, a via transdérmica é preferível à via oral. A via transdérmica evita a primeira passagem hepática, não altera os níveis de triglicerídeos e não estimula a síntese hepática de fatores de coagulação, sendo mais segura do ponto de vista cardiovascular.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A progesterona é desnecessária em pacientes histerectomizadas. Além disso, a via oral deve ser evitada nesta paciente devido à obesidade e à hipertensão, pois aumenta o risco de eventos tromboembólicos em comparação à via transdérmica.\n\nAlternativa b) Incorreta. Como mencionado, a progesterona não tem indicação para quem não possui útero. A testosterona só deve ser considerada se houvesse queixa de desejo sexual hipoativo com impacto na qualidade de vida, o que a paciente nega expressamente (nega alteração de libido).\n\nAlternativa c) Incorreta. Embora a via transdérmica e o estrogênio estejam corretos para o perfil da paciente, a adição de testosterona é indevida, pois não há queixa de disfunção sexual (libido preservada).\n\nAlternativa d) Correta. Esta é a conduta ideal. O estrogênio isolado trata os fogachos e demais sintomas climatéricos. A via transdérmica é a escolha de segurança para uma paciente obesa e hipertensa, minimizando riscos metabólicos e tromboembólicos. A ausência de progesterona está correta pela histerectomia prévia.\n\nAlternativa e) Incorreta. A desvenlafaxina (um inibidor da recaptação de serotonina e noradrenalina) é uma alternativa não hormonal para o tratamento de fogachos. No entanto, ela é reservada para pacientes que possuem contraindicações formais à Terapia Hormonal (como histórico de câncer de mama ou eventos tromboembólicos prévios), o que não é o caso da paciente, que apresenta apenas fatores de risco controlados. A TH continua sendo o padrão-ouro para o alívio dos sintomas vasomotores.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.131Z"
+  },
+  {
+    "id": "AJUDA_90feb49c-fb6f-4184-9e62-e6ad4616fc48",
+    "originalId": "90feb49c-fb6f-4184-9e62-e6ad4616fc48",
+    "statement": "Paciente, sexo masculino, 25 anos de idade, comparece ao pronto-socorro por quadro de dor torácica intensa e dispneia súbita. Nega tosse, nega febre e nega tabagismo. Não faz uso de medicação. Esteve internado, há 1 semana, devido a um acidente de moto, com necessidade de cirurgia devido à fratura de fêmur direito. Ao exame físico, apresenta bom estado geral, orientado, eupneico em ar ambiente com saturação periférica de 96%, taquicardia 120 bpm, normotenso. Ausculta pulmonar e cardíaca sem alterações. Membros inferiores com edema bilateral, maior em perna direita. Foi realizado o exame a seguir.\n\nCom base nesse caso clínico e nesse exame, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dor torácica é mais provavelmente devido a uma síndrome coronariana aguda, dado o histórico de trauma e dor referida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A anticoagulação deve ser iniciada imediatamente, considerando o risco de complicações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Devido à presença de taquicardia, o ecocardiograma é desnecessário, indicando a trombólise imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O PESI é alto risco, portanto o paciente deve ser submetido à trombectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O quadro clínico é compatível com pneumonia, e a tomografia apresenta consolidação com broncograma aéreo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nO caso clínico descreve um paciente jovem com quadro súbito de dor torácica e dispneia, apresentando taquicardia (120 bpm) e edema de membros inferiores após cirurgia ortopédica de grande porte (fêmur) há uma semana. Estes são fatores de risco clássicos para Tromboembolismo Pulmonar (TEP). A imagem de tomografia computadorizada de tórax com contraste (Angiotomografia) confirma o diagnóstico ao demonstrar falhas de enchimento (trombos) nas artérias pulmonares, configurando um TEP agudo.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a dor torácica seja um sintoma de síndrome coronariana aguda, o perfil do paciente (jovem, sem comorbidades), o gatilho cirúrgico recente e a angiotomografia positiva para trombos nas artérias pulmonares fecham o diagnóstico de TEP, e não de infarto.\n\nb) Correta. Diante da confirmação diagnóstica de TEP e da estabilidade hemodinâmica do paciente (ele está normotenso e com boa saturação), o tratamento padrão é a anticoagulação imediata. Isso evita a progressão do coágulo e novos episódios embólicos, reduzindo o risco de complicações graves e morte.\n\nc) Incorreta. A trombólise (terapia fibrinolítica) é reservada para casos de TEP de alto risco, caracterizados por instabilidade hemodinâmica (choque ou hipotensão persistente). O paciente em questão está normotenso, portanto, não há indicação de trombólise imediata baseada apenas na taquicardia.\n\nd) Incorreta. O escore PESI (Pulmonary Embolism Severity Index) avalia a mortalidade em 30 dias. Dado que o paciente é jovem (25 anos), não possui comorbidades relatadas e está estável, seu risco pelo PESI tende a ser baixo ou intermediário. Além disso, a trombectomia é uma medida invasiva de exceção para casos graves com contraindicação à trombólise, o que não se aplica aqui.\n\ne) Incorreta. O quadro clínico de dor súbita e taquicardia após cirurgia é típico de TEP, não de pneumonia (que geralmente cursa com febre e tosse). A imagem apresentada mostra falhas de enchimento vasculares, típicas de tromboembolismo, e não consolidação parenquimatosa com broncograma aéreo.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/1286ef8d1b61be0f3c0b001eed398db8859b7540d73a117e234fcc19ad4bb62e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_90feb49c-fb6f-4184-9e62-e6ad4616fc48_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:58.510Z"
+  }
+]

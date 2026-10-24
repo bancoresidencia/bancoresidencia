@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_1489a116-f40d-4d25-bceb-2e39240cce06",
+    "originalId": "1489a116-f40d-4d25-bceb-2e39240cce06",
+    "statement": "Uma Unidade Básica de Saúde identificou, ao longo de duas semanas, aumento repen-tino de casos de gastroenterite aguda entre os moradores de um bairro abastecido por um único poço artesiano. Foram notificados 42 casos, dos quais 28 ocorreram em pessoas que consomem exclusivamente água desse poço, enquanto 14 ocorreram entre pessoas que utilizam apenas água encanada da rede pública.\nUm levantamento rápido mostrou:\nPopulação total do bairro: 4.000 pessoas\nUsuários do poço: 800 pessoas\nUsuários exclusivos da água da rede pública: 3.200 pessoas\nCom base nesses dados, a medida epidemiológica que MELHOR auxilia na identificação da possível fonte comum da doença é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calcular a prevalência de gastroenterite no bairro para avaliar a carga total da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Calcular e comparar a incidência da gastroenterite entre os usuários do poço e entre os usuários da rede pública.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aplicar teste de hipótese para determinar se a diferença entre os grupos é estatisticamente significativa, antes de qualquer ação sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Comparar a letalidade entre usuários do poço e da rede pública, para determinar o grupo de maior risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Avaliar o R0 da gastroenterite na população para inferir o potencial de transmissão comunitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO cenário descrito caracteriza a investigação de um surto de gastroenterite aguda com suspeita de fonte comum. Para identificar se um fator ambiental (neste caso, a água do poço artesiano) é o veículo de transmissão da doença, a epidemiologia utiliza o cálculo de medidas de frequência e de associação, comparando grupos expostos e não expostos.\n\nALTERNATIVA B (CORRETA): Esta é a conduta padrão em epidemiologia analítica durante a investigação de surtos. Ao calcular a incidência (também chamada de taxa de ataque nesse contexto) em ambos os grupos, podemos comparar os riscos. No grupo do poço, a incidência foi de 3,5% (28 casos em 800 usuários), enquanto no grupo da rede pública foi de aproximadamente 0,43% (14 casos em 3.200 usuários). Essa comparação permite verificar que o risco de adoecer é significativamente maior entre os usuários do poço, o que aponta este reservatório como a provável fonte comum da infecção.\n\nALTERNATIVA A (INCORRETA): A prevalência indica a proporção de pessoas doentes em um determinado momento, sendo uma medida estática útil para o planejamento de serviços de saúde e manejo de doenças crônicas. No entanto, para identificar a fonte de um surto agudo e estabelecer uma relação de causalidade ou exposição, a incidência (casos novos que surgem após a exposição ao fator de risco) é a medida recomendada.\n\nALTERNATIVA C (INCORRETA): Embora o teste de hipótese seja importante para confirmar se a diferença entre os grupos é estatisticamente significativa e não decorrente do acaso, a questão pede a medida epidemiológica que auxilia na identificação da fonte. Além disso, na prática de saúde pública, a adoção de medidas sanitárias não deve ser retardada por análises estatísticas complexas quando os dados descritivos já apontam um risco evidente para a população.\n\nALTERNATIVA D (INCORRETA): A letalidade mede o percentual de mortes entre os indivíduos que contraíram a doença (Número de Óbitos / Número de Doentes). Ela é um indicador da gravidade da doença e da eficácia do tratamento, mas não tem nenhuma utilidade para identificar a origem ou a fonte de um surto de gastroenterite.\n\nALTERNATIVA E (INCORRETA): O R0 (Número de Reprodução Básico) é uma medida que estima o potencial de propagação de um agente infeccioso em uma população totalmente suscetível (transmissão de pessoa para pessoa). Em surtos de fonte comum por veículo contaminado (como água ou alimentos), o foco principal é a identificação e interrupção da fonte através das taxas de ataque, e não o cálculo do potencial de transmissão comunitária.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:27.770Z"
+  },
+  {
+    "id": "AJUDA_14a96fb6-8aad-4a46-bf10-edce578e61b4",
+    "originalId": "14a96fb6-8aad-4a46-bf10-edce578e61b4",
+    "statement": "Em uma cidade industrializada do Sudeste brasileiro há aumento de casos de infarto do miocárdio e acidente vascular cerebral (AVC) em adultos expostos a níveis elevados de poluição do ar. Dados da UBS local indicam que 30% dos pacientes atendidos apresentam doenças cardiovasculares associadas à exposição ambiental. Qual estratégia a APS deve adotar para reduzir a morbimortalidade cardiovascular associada à poluição do ar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrição de medicamentos anti-hipertensivos para todos os pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhamento imediato para unidades de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Controle clínico rigoroso, monitoramento da qualidade do ar, educação comunitária e advocacy por políticas públicas de redução de emissões.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Incentivo à prática de exercícios físicos sem considerar a qualidade do ar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a atuação da Atenção Primária à Saúde (APS) diante de problemas de saúde pública causados por determinantes ambientais, especificamente a poluição do ar em centros urbanos e industrializados. A exposição crônica a poluentes atmosféricos, como o material particulado, está diretamente associada ao aumento de processos inflamatórios sistêmicos, estresse oxidativo e disfunção endotelial, o que eleva a incidência de infarto agudo do miocárdio e acidentes vasculares cerebrais.\n\nAlternativa (a) Incorreta: A prescrição de medicamentos deve ser sempre individualizada, baseada em critérios clínicos e diagnósticos precisos. O uso generalizado de anti-hipertensivos para toda a população, sem considerar os níveis tensionais de cada paciente, é uma conduta tecnicamente errada, antiética e submeteria indivíduos saudáveis a efeitos colaterais desnecessários sem evidência de benefício.\n\nAlternativa (b) Incorreta: O encaminhamento para Unidades de Terapia Intensiva (UTI) deve ocorrer apenas em casos de urgência e emergência com instabilidade clínica ou risco iminente de morte. A função da APS é o acompanhamento longitudinal, a prevenção e o controle de doenças crônicas, e não a transferência indiscriminada de pacientes com base apenas na exposição a riscos ambientais.\n\nAlternativa (c) Correta: Esta alternativa reflete o papel integral da APS e da Medicina de Família e Comunidade. O controle clínico rigoroso e o monitoramento reduzem o impacto dos fatores de risco nos pacientes já predispostos. A educação comunitária capacita a população a adotar medidas de proteção individual (como evitar atividades ao ar livre em dias de poluição crítica). Por fim, o advocacy por políticas públicas é uma função essencial da saúde coletiva para atuar sobre as causas fundamentais do problema (os determinantes sociais e ambientais), buscando a redução da emissão de poluentes na fonte.\n\nAlternativa (d) Incorreta: Embora o exercício físico seja fundamental para a saúde cardiovascular, a orientação deve ser cautelosa em áreas poluídas. A prática de atividades físicas intensas em locais e horários de alta concentração de poluentes aumenta a ventilação-minuto, fazendo com que o indivíduo inale uma carga maior de partículas nocivas, o que pode desencadear eventos cardiovasculares agudos em vez de preveni-los. A APS deve orientar a prática de exercícios em horários e locais com melhor qualidade do ar.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:27.770Z"
+  },
+  {
+    "id": "AJUDA_14b87a7f-2857-486f-a975-f4dcddfa7ab7",
+    "originalId": "14b87a7f-2857-486f-a975-f4dcddfa7ab7",
+    "statement": "Homem de 51 anos, sem comorbidades, foi diagnosticado com lesão vegetante em cólon ascendente de 3,0cm após realização de colonoscopia de rastreio para câncer colorretal. Biópsia evidenciou adenocarcinoma moderadamente diferenciado. Tomografias de estadiamento evidenciam múltiplos nódulos hipocaptantes bilobares em fígado, sugestivos de metástases. O paciente encontra-se assintomático, com performance ECOG 0 e sem icterícia. Qual é a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colectomia direita com linfadenectomia, seguida de quimioterapia adjuvante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressecção sincrônico do cólon e do fígado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar quimioterapia sistêmica com posterior avaliação de resposta tumoral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Radioterapia hepática para controle local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Abordagem paliativa exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um paciente de 51 anos com adenocarcinoma de cólon ascendente e metástases hepáticas sincrônicas. O ponto fundamental para a decisão clínica aqui é que o paciente está assintomático em relação ao tumor primário (sem sinais de obstrução, perfuração ou hemorragia grave) e apresenta uma carga metastática hepática considerável, evidenciada pela imagem de tomografia, que mostra múltiplos nódulos hipocaptantes distribuídos por ambos os lobos do fígado.\n\nAnálise das alternativas:\n\na) Incorreta. A realização da colectomia de urgência ou eletiva como primeiro passo em pacientes com doença metastática assintomática não demonstrou benefício na sobrevida global. Realizar a cirurgia agora postergaria o início do tratamento sistêmico, que é a prioridade para controlar a progressão da doença.\n\nb) Incorreta. A ressecção sincrônica (cólon e fígado no mesmo tempo cirúrgico) é reservada para casos selecionados, em que as metástases são facilmente ressecáveis e o paciente possui estabilidade clínica. A imagem da tomografia revela múltiplos nódulos bilobares, o que caracteriza, inicialmente, uma doença hepática irressecável ou de alta complexidade, tornando a quimioterapia de conversão a conduta mais prudente.\n\nc) Correta. Em pacientes com câncer colorretal estádio IV e tumor primário assintomático, a conduta inicial padrão é a quimioterapia sistêmica. O objetivo é o controle da doença micrometastática, a avaliação da biologia tumoral e a tentativa de conversão das metástases hepáticas para um cenário ressecável. A imagem anexa reforça essa necessidade, pois o fígado está amplamente acometido, exigindo resposta ao tratamento quimioterápico antes de qualquer planejamento cirúrgico.\n\nd) Incorreta. A radioterapia não é o tratamento inicial de escolha para metástases hepáticas múltiplas e difusas no câncer colorretal. Ela pode ser utilizada em cenários específicos de oligometástases ou para controle de dor em casos paliativos, mas não substitui a quimioterapia sistêmica.\n\ne) Incorreta. O paciente possui excelente performance status (ECOG 0) e é jovem (51 anos). A abordagem paliativa exclusiva é indicada apenas para pacientes sem condições clínicas de suportar o tratamento ou sem opções terapêuticas modificadoras da doença, o que não é o caso aqui.\n\nAssociação com a imagem: A tomografia computadorizada de abdome demonstra um fígado aumentado de volume com a presença de inúmeras lesões hipodensas (nódulos escuros em relação ao parênquima hepático) espalhadas por ambos os lobos. Esse achado confirma o estadiamento IV e justifica a priorização do tratamento sistêmico (alternativa c) em vez de uma abordagem cirúrgica local imediata, dada a extensão da disseminação hepática.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Tumores Hepáticos",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/26fc799eee5fef3f8799162f96c3f4f05aad98ff3296495dcadd5c339a129e6f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_14b87a7f-2857-486f-a975-f4dcddfa7ab7_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:28.121Z"
+  },
+  {
+    "id": "AJUDA_14b94443-2000-40e4-8077-ce7c310671b6",
+    "originalId": "14b94443-2000-40e4-8077-ce7c310671b6",
+    "statement": "De acordo com a Diretriz Brasileira para Diagnóstico e Tratamento Clínico da Nefrolitíase (SBN, 2024–2025), qual das condutas abaixo está CORRETAMENTE indicada para a prevenção de recorrência de cálculos renais de oxalato de cálcio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Restringir de forma rigorosa a ingestão de cálcio dietético para reduzir a excreção urinária de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Incentivar hidratação adequada com meta de diurese superior a 2,0–2,5 litros por dia, visando reduzir a supersaturação urinária de sais litogênicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Reduzir a ingestão de frutas cítricas, uma vez que aumentam a excreção urinária de oxalato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Utilizar diuréticos de alça de forma rotineira para todos os pacientes com hipercalciúria, independentemente de avaliação metabólica prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Com base na Diretriz Brasileira para Diagnóstico e Tratamento Clínico da Nefrolitíase (SBN, 2024–2025), a análise das alternativas é a seguinte:\n\nAlternativa A (Incorreta): A restrição rigorosa de cálcio na dieta é uma conduta ultrapassada e prejudicial. Estudos demonstram que a baixa ingestão de cálcio aumenta o risco de formação de cálculos de oxalato de cálcio. Isso ocorre porque o cálcio presente na dieta se liga ao oxalato no trato gastrointestinal, formando um complexo insolúvel que é eliminado nas fezes. Sem cálcio suficiente no intestino, o oxalato livre é mais absorvido, levando à hiperoxalúria (aumento de oxalato na urina) e, consequentemente, à formação de cálculos. A recomendação atual é manter uma ingestão normal de cálcio (cerca de 1.000 a 1.200 mg/dia).\n\nAlternativa B (Correta): O aumento da ingestão de líquidos é a medida preventiva mais importante e custo-efetiva em todos os tipos de nefrolitíase. O objetivo é manter uma diurese superior a 2,0–2,5 litros por dia, o que reduz a concentração urinária dos sais litogênicos (como o cálcio e o oxalato), mantendo-os abaixo do ponto de saturação e impedindo a cristalização.\n\nAlternativa C (Incorreta): As frutas cítricas, como limão e laranja, são na verdade recomendadas na prevenção da nefrolitíase. Elas são fontes naturais de citrato, um dos mais potentes inibidores da cristalização urinária. O citrato se liga ao cálcio na urina, formando um complexo solúvel e impedindo que o cálcio se ligue ao oxalato. Portanto, deve-se estimular, e não reduzir, o consumo dessas frutas.\n\nAlternativa D (Incorreta): Os diuréticos de alça (como a furosemida) aumentam a excreção urinária de cálcio, o que pode favorecer a formação de novos cálculos. Para o tratamento da hipercalciúria idiopática na prevenção de cálculos, os medicamentos indicados são os diuréticos tiazídicos (como a clortalidona ou hidroclorotiazida), pois eles promovem a reabsorção tubular de cálcio, reduzindo sua concentração na urina. Além disso, a terapia medicamentosa não deve ser rotineira para todos, mas sim baseada em uma avaliação metabólica prévia e falha das medidas dietéticas.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:28.121Z"
+  },
+  {
+    "id": "AJUDA_14baf213-515e-4621-a0ca-4f66424c38b0",
+    "originalId": "14baf213-515e-4621-a0ca-4f66424c38b0",
+    "statement": "Paciente de 52 anos, masculino, procura a UPA mais próxima após ferimento em antebraço esquerdo, com faca, enquanto trabalhava no açougue. Após sutura da lesão, o médico assistente providencia a o preenchimento da Comunicação de Acidente do Trabalho (CAT). Este formulário deve ser preenchido com qual finalidade? \nI. Para que o Acidente seja legalmente reconhecido pelo INSS \nII. Para que o trabalhador receba o auxílio-acidente se for o caso bem como, os benefícios que gerarem esse acidente. \nIII. Para que os serviços de saúda tenham informações sobre os acidentes e doenças e possam direcionar ações para redução de acidente do trabalho e doenças profissionais ou do trabalho. \nIV. Para conhecimento dos serviços de fiscalização que vão desencadear uma ação de investigação, evitando que acidente semelhante ou nas mesmas condições venham ocorrer. \nEstão corretas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "II e III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I, III e IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II, III e IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II, III e IV",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Comunicação de Acidente de Trabalho (CAT) é um documento fundamental na prática médica, especialmente no contexto da Medicina do Trabalho e da Saúde Coletiva. Suas finalidades são amplas e abrangem as esferas previdenciária, estatística, epidemiológica e fiscalizatória. Abaixo, a análise detalhada de cada item:\n\nItem I: Correto. A CAT é o instrumento formal para que o Instituto Nacional do Seguro Social (INSS) reconheça legalmente que o evento ocorrido foi um acidente de trabalho. Sem esse documento, o nexo causal entre a atividade laboral e o ferimento não é oficialmente estabelecido perante a Previdência Social.\n\nItem II: Correto. A emissão da CAT é condição necessária para que o trabalhador segurado possa pleitear e receber benefícios específicos, como o auxílio-doença acidentário (código B91). Este benefício difere do auxílio-doença comum, pois garante ao trabalhador a estabilidade provisória de 12 meses após a alta médica e a continuidade do depósito do FGTS durante o afastamento. Também serve de base para o auxílio-acidente em casos de sequelas permanentes.\n\nItem III: Correto. A CAT cumpre uma função epidemiológica essencial. Os dados coletados por meio deste formulário alimentam bancos de dados que permitem aos serviços de saúde e órgãos governamentais traçar perfis de risco e incidência de agravos. Essas informações são a base para o planejamento de ações preventivas e políticas públicas voltadas à redução de acidentes e doenças ocupacionais.\n\nItem IV: Correto. O preenchimento do documento permite que órgãos de fiscalização (como o Ministério do Trabalho e Emprego e as Vigilâncias em Saúde do Trabalhador) tomem conhecimento de condições inseguras de trabalho. Isso possibilita a realização de inspeções e investigações no ambiente laboral para corrigir falhas e evitar que outros trabalhadores sofram acidentes semelhantes.\n\nAnálise das alternativas:\n\na) Incorreta. Exclui os itens I e IV, que são funções fundamentais da CAT.\nb) Incorreta. Exclui o item II, ignorando a finalidade de garantia de benefícios previdenciários ao trabalhador.\nc) Incorreta. Exclui o item I, que trata do reconhecimento legal pelo INSS, um dos pilares da existência do documento.\nd) Correta. Todas as afirmações (I, II, III e IV) estão tecnicamente corretas e descrevem fielmente os objetivos da Comunicação de Acidente de Trabalho.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:28.121Z"
+  },
+  {
+    "id": "AJUDA_14bedb82-183e-4ede-81f9-7e4ac548662d",
+    "originalId": "14bedb82-183e-4ede-81f9-7e4ac548662d",
+    "statement": "Uma mulher de 68 anos com quadro de urgência urinária foi diagnosticada com bexiga hiperativa. Um tipo de tratamento medicamentoso que pode ser utilizado para essa condição é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "substâncias antiadrenérgicas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "medicamento colinérgico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "inibidores da aromatase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "toxina botulínica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A bexiga hiperativa é uma síndrome clínica caracterizada principalmente pela urgência urinária, frequentemente acompanhada de polaciúria (aumento da frequência) e noctúria, com ou sem incontinência de urgência. Fisiopatologicamente, ocorre devido a contrações involuntárias do músculo detrusor durante a fase de enchimento vesical. O tratamento visa reduzir essas contrações e aumentar a capacidade funcional da bexiga.\n\nAlternativa A: Incorreta. Substâncias antiadrenérgicas, especificamente os alfa-bloqueadores, agem relaxando a musculatura lisa do colo vesical e da uretra proximal. Eles são indicados para o tratamento de sintomas obstrutivos, como na hiperplasia prostática benigna (HPB), facilitando a saída da urina, e não para o controle da hiperatividade do detrusor. Para a bexiga hiperativa, o uso de agonistas beta-3 adrenérgicos (como a mirabegrona) seria uma opção para promover o relaxamento do detrusor, e não substâncias antiadrenérgicas.\n\nAlternativa B: Incorreta. Medicamentos colinérgicos (como o betanecol) estimulam a contração do músculo detrusor através dos receptores muscarínicos. Eles são indicados para quadros de hipotonia vesical ou retenção urinária não obstrutiva. Na bexiga hiperativa, o objetivo é o oposto: utilizam-se medicamentos anticolinérgicos (antimuscarínicos) para inibir as contrações involuntárias.\n\nAlternativa C: Incorreta. Os inibidores da aromatase são medicamentos que bloqueiam a conversão periférica de androgênios em estrogênios. São amplamente utilizados na oncologia para o tratamento do câncer de mama em mulheres na pós-menopausa, não possuindo papel no tratamento da bexiga hiperativa.\n\nAlternativa D: Correta. A aplicação intradetrusora de toxina botulínica tipo A é uma terapia de terceira linha consolidada para pacientes com bexiga hiperativa que não responderam ou que apresentam contraindicações/efeitos colaterais intoleráveis aos medicamentos orais (anticolinérgicos ou agonistas beta-3). A toxina bloqueia a liberação de acetilcolina nas terminações nervosas pré-sinápticas da junção neuromuscular, inibindo temporariamente a contração do músculo detrusor e reduzindo a sensibilidade aferente vesical, o que alivia significativamente a urgência e os episódios de incontinência.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:28.121Z"
+  },
+  {
+    "id": "AJUDA_14c51b1b-2a1a-49e7-9cd5-5f27ce32a3b0",
+    "originalId": "14c51b1b-2a1a-49e7-9cd5-5f27ce32a3b0",
+    "statement": "Homem de 49 anos está em acompanhamento regular com bom controle do diabetes. Durante consulta de rotina com médico de família e comunidade, é questionado sobre uma tosse produtiva identificada ao realizar o exame físico. O paciente diz que começou a tossir logo após a última consulta, há cerca de três meses, e que também vem apresentando sensação febril ao final da tarde (mas sem aferição) e sudorese noturna. No último mês, percebeu emagrecimento não intencional. Nega tabagismo e condição semelhante prévia. Ausculta pulmonar sem alterações. Considerando o diagnóstico mais provável, a conduta adequada é solicitar radiografia de tórax e:",
+    "options": [
+      {
+        "id": "A",
+        "text": "baciloscopia de escarro e encaminhar para a pneumologia para acompanhamento especializado, pois apresenta risco de complicações por ser diabético e não pode ser acompanhado somente na atenção primária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "teste tuberculínico e iniciar antibioticoterapia empírica com levofloxacino por cinco dias para tratamento de pneumonia bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "teste rápido molecular e baciloscopia de escarro e retornar para avaliação dos resultados com o médico de família e comunidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "teste tuberculínico, agendar consulta para reavaliação após resultado dos exames e indicar o tratamento",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: O quadro clínico apresentado é clássico para Tuberculose (TB) pulmonar: paciente sintomático respiratório (tosse há mais de três semanas), com sintomas sistêmicos como febre vespertina, sudorese noturna e emagrecimento. O fato de o paciente ser diabético reforça a suspeita, pois o diabetes é um importante fator de risco para o desenvolvimento da forma ativa da doença.\n\nAlternativa a: Incorreta. A baciloscopia de escarro é, de fato, um exame utilizado no diagnóstico, mas a afirmação de que o paciente não pode ser acompanhado na atenção primária por ser diabético está errada. A tuberculose é uma doença de manejo prioritário na Atenção Primária à Saúde (APS). O encaminhamento para especialista focal (pneumologista) deve ocorrer apenas em casos de tuberculose resistente, necessidade de esquemas especiais por toxicidade, formas extrapulmonares graves ou falha terapêutica.\n\nAlternativa b: Incorreta. O teste tuberculínico (PPD) é utilizado principalmente para o diagnóstico de infecção latente (ILTB) e tem valor limitado no diagnóstico de doença ativa em adultos sintomáticos. Quanto ao levofloxacino, o uso de quinolonas é contraindicado quando há suspeita de tuberculose e ainda não se confirmou o diagnóstico, pois essa classe de antibióticos possui atividade contra o Mycobacterium tuberculosis. Isso pode causar uma melhora clínica parcial, retardando o diagnóstico correto e favorecendo o surgimento de resistência bacteriana.\n\nAlternativa c: Correta. Segundo as diretrizes do Ministério da Saúde do Brasil, para o diagnóstico de tuberculose em adultos sintomáticos respiratórios, a conduta adequada é solicitar a radiografia de tórax (para avaliar a extensão da doença e padrões sugestivos) e o Teste Rápido Molecular para Tuberculose (TRM-TB), que detecta o DNA do complexo M. tuberculosis e a resistência à rifampicina. A baciloscopia de escarro também pode ser solicitada em conjunto. O acompanhamento deve continuar com o médico de família e comunidade na unidade básica de saúde.\n\nAlternativa d: Incorreta. O erro principal é indicar o teste tuberculínico como conduta diagnóstica para um quadro franco de doença ativa. O teste de escolha deve ser aquele que identifica o bacilo no escarro (TRM-TB ou baciloscopia). Além disso, o diabetes isoladamente não altera a necessidade de exames bacteriológicos/moleculares antes de indicar o tratamento.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:28.121Z"
+  },
+  {
+    "id": "AJUDA_14d9ce82-8a11-4eae-8cc1-58f416d102d3",
+    "originalId": "14d9ce82-8a11-4eae-8cc1-58f416d102d3",
+    "statement": "Augusto, 15 meses de idade, é levado à unidade básica de saúde para uma consulta de rotina e o pediatra indica a realização das vacinas preconizadas para essa idade. De acordo com o Programa Nacional de Imunizações, qual vacina deve receber, considerando-se que recebeu todas as vacinas recomendadas até os 12 meses de idade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reforço de antipneumocócica 10-valente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reforço de antimeningocócica C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reforço de antipoliomielite inativada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Reforço de anti-hemófilos B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reforço de febre amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Calendário Nacional de Imunização (PNI) para uma criança de 15 meses:\n\nDe acordo com o Ministério da Saúde, ao completar 15 meses de idade, a criança que está com o calendário em dia (tendo recebido as vacinas de 12 meses) deve receber o primeiro reforço da DTP (difteria, tétano e coqueluche), o primeiro reforço da poliomielite, a vacina contra a hepatite A (dose única) e a vacina tetraviral (que corresponde à segunda dose da tríplice viral mais a primeira dose da varicela).\n\nAlternativa (a) Incorreta: O reforço da vacina pneumocócica 10-valente é preconizado aos 12 meses de idade. O esquema básico dessa vacina é composto por duas doses iniciais (aos 2 e 4 meses) e uma dose de reforço após o primeiro ano de vida.\n\nAlternativa (b) Incorreta: A vacina meningocócica C (conjugada) tem seu reforço estabelecido para os 12 meses de idade. As doses do esquema primário são administradas aos 3 e 5 meses de idade.\n\nAlternativa (c) Correta: Aos 15 meses, está indicado o primeiro reforço contra a poliomielite. Vale destacar que, seguindo as atualizações mais recentes do PNI para a erradicação da doença, a vacina oral (VOP) está sendo substituída pela vacina inativada (VIP) em todo o esquema vacinal, incluindo os reforços de 15 meses e 4 anos.\n\nAlternativa (d) Incorreta: A proteção contra o Haemophilus influenzae tipo b é oferecida pela vacina pentavalente, aplicada aos 2, 4 e 6 meses de idade. O PNI não prevê um reforço isolado ou específico para o componente Hib aos 15 meses de idade.\n\nAlternativa (e) Incorreta: O esquema vacinal para febre amarela consiste em uma dose aos 9 meses de idade e um reforço aos 4 anos de idade. Dessa forma, não há indicação de vacinação contra febre amarela na consulta de 15 meses se o calendário prévio foi seguido corretamente.\n\nGabarito: Alternativa (c).",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:28.121Z"
+  },
+  {
+    "id": "AJUDA_14daec5e-3083-4514-998a-82deb24d3244",
+    "originalId": "14daec5e-3083-4514-998a-82deb24d3244",
+    "statement": "Um homem de 64 anos, com diagnóstico de insuficiência cardíaca com fração de ejeção reduzida (fração de ejeção de 35%), apresenta-se em consulta para seguimento ambulatorial. Ele faz uso de bisoprolol, losartana, hidroclorotiazida e espironolactona. Está clinicamente compensado, sem sinais de congestão ou edema periférico. Relata estar se sentindo bem e mantém uma rotina diária que inclui caminhadas leves. No entanto, ele questiona o que mais pode fazer, além da medicação, para manter sua condição estável e prevenir novas descompensações. Ao exame físico, sinais vitais normais, ausência de crepitações pulmonares e pulsos periféricos palpáveis. Qual orientação adicional não medicamentosa é mais apropriada para ajudar este paciente a manter-se compensado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacinar contra influenza e pneumococos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Priorizar realização de exercícios isométricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Evitar uso de sildenafila para atividade sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inserir a ingesta diária de 20ml de vinho tinto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo não farmacológico da Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr). O paciente encontra-se em estágio C (sintomático ou com história de sintomas), mas atualmente está clinicamente estável e compensado. O objetivo é identificar medidas que previnam novos episódios de descompensação.\n\nAlternativa a: Esta é a resposta correta. A vacinação contra influenza (anual) e contra o pneumococo é uma recomendação de classe I nas diretrizes de insuficiência cardíaca. Infecções respiratórias são gatilhos frequentes para a descompensação aguda da IC, pois aumentam a demanda metabólica, a frequência cardíaca e o estresse inflamatório. Manter o calendário vacinal atualizado reduz significativamente o risco de hospitalizações e a mortalidade cardiovascular nesses pacientes.\n\nAlternativa b: Esta opção está incorreta. Embora a atividade física seja recomendada para pacientes com IC estável, deve-se priorizar exercícios aeróbicos e de resistência dinâmica moderada. Exercícios puramente isométricos (como sustentar pesos de forma estática) provocam uma elevação súbita e importante da pressão arterial sistêmica e, consequentemente, da pós-carga. Em um coração com fração de ejeção de 35%, esse estresse agudo na parede ventricular pode ser prejudicial.\n\nAlternativa c: Esta opção está incorreta. Os inibidores da fosfodiesterase-5, como a sildenafila, não são contraindicados de forma absoluta para pacientes com insuficiência cardíaca estável. A restrição absoluta ocorre apenas se o paciente fizer uso concomitante de nitratos (como isossorbida ou nitroglicerina), devido ao risco de hipotensão grave. O paciente em questão não utiliza nitratos em seu esquema terapêutico, portanto, a orientação de evitar a sildenafila não é necessária para mantê-lo compensado.\n\nAlternativa d: Esta opção está incorreta. Não há recomendação médica para se iniciar o consumo de álcool com o intuito de manter a estabilidade da insuficiência cardíaca. O álcool possui efeitos inotrópicos negativos e pode exercer ação cardiotóxica direta, sendo a causa principal em casos de cardiomiopatia alcoólica. Pacientes com IC devem ser orientados a restringir ou eliminar o consumo de álcool, e nunca a iniciá-lo como medida preventiva.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:28.121Z"
+  },
+  {
+    "id": "AJUDA_14db5f38-2a65-419e-b273-55c71b06e6fe",
+    "originalId": "14db5f38-2a65-419e-b273-55c71b06e6fe",
+    "statement": "Uma médica atende em ambulatório um adolescente de 16 anos que relata fazer uso de álcool e maconha de forma ocasional. O jovem pede que a informação não seja compartilhada com os pais, pois teme punições em casa.\nDiante dessa situação, a conduta eticamente mais adequada da profissional é",
+    "options": [
+      {
+        "id": "A",
+        "text": "respeitar o sigilo do paciente, explicando os limites dessa confidencialidade e orientando sobre riscos e cuidados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "comunicar imediatamente os pais, pois toda informação de menores deve ser compartilhada com responsáveis legais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "registrar a queixa apenas de forma genérica no prontuário, omitindo os dados relevantes para evitar conflito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "encaminhar o caso diretamente à polícia, já que o uso de drogas ilícitas exige notificação obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "não registrar no prontuário as informações referentes ao uso de substâncias, evitando possíveis implicações legais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda um dos temas mais frequentes em Ética Médica: o sigilo profissional no atendimento ao adolescente. Para respondê-la corretamente, é necessário conhecer o Código de Ética Médica (CEM) e as normas do Conselho Federal de Medicina (CFM).\n\nFundamentação Ética: \nO adolescente tem o direito à confidencialidade e ao sigilo, desde que tenha capacidade de discernimento (compreensão de sua situação e das orientações dadas). O médico não deve revelar segredo do paciente menor de idade, inclusive aos pais ou responsáveis, exceto se a não revelação puder acarretar dano ao paciente ou a terceiros. No caso descrito, o uso é ocasional e não há menção a risco iminente de morte ou grave prejuízo à saúde que justifique a quebra do sigilo.\n\nAnálise das alternativas:\n\na) Correta. A conduta respeita a autonomia do adolescente e fortalece a relação médico-paciente. O médico deve manter o sigilo, mas é seu dever explicar que essa confidencialidade não é absoluta (pode ser quebrada se houver risco de vida ou violência) e realizar o aconselhamento preventivo sobre os danos das substâncias.\n\nb) Incorreta. O direito ao sigilo não é anulado apenas pela idade. O Código de Ética Médica veda ao médico a revelação de segredo confiado por menor de idade que tenha capacidade de discernimento, salvo quando a omissão possa causar dano ao próprio paciente. Comunicar imediatamente os pais sem necessidade clínica ou ética fere a autonomia do jovem.\n\nc) Incorreta. O prontuário médico deve ser preenchido de forma completa, fidedigna e clara. Omitir ou falsear informações clínicas é uma infração ética. O prontuário é um documento sigiloso por natureza; o fato de a informação estar registrada nele não significa que os pais terão acesso livre ao conteúdo discutido em confidencialidade, a menos que haja previsão legal ou risco.\n\nd) Incorreta. O uso de drogas, por si só, não é objeto de notificação policial por parte do médico assistente. A função do médico é de cuidado e assistência à saúde, e não repressora ou policial. Além disso, a quebra de sigilo para autoridades sem justa causa é crime previsto no Código Penal.\n\ne) Incorreta. O registro das informações no prontuário é um dever do médico e um direito do paciente. O prontuário serve para a continuidade da assistência e como defesa legal para o profissional. Não registrar dados relevantes sobre o uso de substâncias compromete a segurança do atendimento futuro e configura negligência documental.\n\nResumo: O médico deve sempre avaliar a capacidade de compreensão do adolescente. Se ele é capaz de entender seu problema e as orientações, o sigilo deve ser mantido, a menos que haja um perigo real e imediato que obrigue a intervenção dos responsáveis. No caso de uso ocasional relatado, a manutenção do segredo é o caminho ético correto.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:28.121Z"
+  }
+]

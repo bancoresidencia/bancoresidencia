@@ -14,7 +14,8 @@ import {
   PanelLeftClose,
   PanelLeftOpen,
   ShieldCheck,
-  AlertOctagon
+  AlertOctagon,
+  Flag
 } from 'lucide-react';
 import { ActiveTab, Modalidade } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
@@ -57,7 +58,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'stats', label: 'Meu Desempenho', icon: BarChart3 },
     { id: 'ranking', label: 'Ranking Oficial', icon: Trophy },
     { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Sliders },
-    ...(isAdmin ? [{ id: 'curadoria', label: 'Curadoria de Gabaritos', icon: ShieldCheck }] : [])
+    ...(isAdmin
+      ? [
+          { id: 'curadoria' as ActiveTab, label: 'Curadoria de Gabaritos', icon: ShieldCheck },
+          { id: 'reportes' as ActiveTab, label: 'Questões Reportadas', icon: Flag }
+        ]
+      : [])
   ];
 
   return (

@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_e3c93100-9524-4ede-a90e-cc5a9f7aed07",
+    "originalId": "e3c93100-9524-4ede-a90e-cc5a9f7aed07",
+    "statement": "Menina de 11 anos, com história de 3 meses apresenta quadro de poliúria, polidipsia e perda de peso. Na avaliação pediátrica foi suspeitado de Diabetes Melito. Quais exames complementares que podem reforçar o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glicemia de jejum de 130 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Glicemia ao acaso (aleatória) de 150 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Glicemia duas horas após teste de sobrecarga oral de glicose de 170 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hemoglobina glicada (HbA1c) de 6,0%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para o diagnóstico de diabetes melito (DM), as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da American Diabetes Association (ADA) estabelecem critérios laboratoriais claros. No caso clínico, a paciente apresenta a tríade clássica (poliúria, polidipsia e perda de peso), o que aumenta a suspeição clínica. Os critérios diagnósticos são: 1) glicemia de jejum maior ou igual a 126 mg/dL; 2) glicemia de 2 horas após sobrecarga oral de 75 g de glicose (TOTG) maior ou igual a 200 mg/dL; 3) hemoglobina glicada (HbA1c) maior ou igual a 6,5%; ou 4) glicemia ao acaso maior ou igual a 200 mg/dL em pacientes com sintomas inequívocos de hiperglicemia.\n\nAlternativa (a) correta: A glicemia de jejum de 130 mg/dL ultrapassa o limite de 126 mg/dL estabelecido para o diagnóstico. Em pacientes sintomáticos, esse achado é suficiente para confirmar a patologia.\n\nAlternativa (b) incorreta: A glicemia ao acaso (aleatória) só é considerada diagnóstica de diabetes melito se o valor for igual ou superior a 200 mg/dL na presença de sintomas. O valor de 150 mg/dL, embora alterado, não atende a esse critério.\n\nAlternativa (c) incorreta: No teste de sobrecarga oral de glicose (TOTG), o valor de 170 mg/dL após duas horas caracteriza a tolerância à glicose diminuída (pré-diabetes), que compreende a faixa entre 140 e 199 mg/dL. Para o diagnóstico de DM, o valor deve ser maior ou igual a 200 mg/dL.\n\nAlternativa (d) incorreta: O valor de 6,0% para a hemoglobina glicada (HbA1c) situa a paciente na faixa de risco para diabetes (pré-diabetes), que vai de 5,7% a 6,4%. O diagnóstico definitivo de diabetes melito por este método exige um valor de, no mínimo, 6,5%.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  },
+  {
+    "id": "AJUDA_e3d508a0-5bf7-4520-9f26-d80508d8b2e2",
+    "originalId": "e3d508a0-5bf7-4520-9f26-d80508d8b2e2",
+    "statement": "Quanto ao tratamento de injúria renal aguda (IRA), marque a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A furosemida é o principal medicamento capaz de acelerar recuperação na IRA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inibidor de SGLT2 está indicado para melhorar progressão da IRA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uremia e hipernatremia são as principais indicações de diálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para o diagnóstico de IRA considera-se elevação da creatinina em 0,3mg/dL em 48 horas ou 50% em 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Independente do status de hidratação, para pacientes oligúricos é preconizado o uso de furosemida em bolus como medida inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa (a) INCORRETA: A furosemida é um diurético de alça útil para o manejo da congestão e sobrecarga de volume, mas não possui a propriedade de acelerar a recuperação da função renal, reduzir o tempo de internação ou diminuir a mortalidade na Injúria Renal Aguda (IRA). Seu uso indiscriminado para \"forçar a diurese\" em pacientes sem sobrecarga hídrica pode, inclusive, piorar a função renal por desidratação.\n\nAlternativa (b) INCORRETA: Os inibidores de SGLT2 (gliflozinas) são medicamentos excelentes para a proteção renal na Doença Renal Crônica (DRC). No entanto, no cenário de IRA, eles não são indicados e geralmente devem ser suspensos. Isso ocorre porque eles promovem uma queda funcional inicial na taxa de filtração glomerular e podem aumentar o risco de desidratação e cetoacidose euglicêmica durante um quadro agudo.\n\nAlternativa (c) INCORRETA: As indicações clássicas de diálise de urgência são resumidas pelo mnemônico AEIOU: Acidose metabólica grave e refratária; Eletrólitos (especialmente a hipercalemia refratária ao tratamento clínico); Intoxicações por substâncias dialisáveis; Overload (hipervolemia/edema agudo de pulmão refratário a diuréticos); e Uremia sintomática (pericardite, encefalopatia ou sangramentos). A hipernatremia (sódio elevado) não é uma indicação clássica de diálise de urgência, sendo manejada com reposição de água livre.\n\nAlternativa (d) CORRETA: Esta alternativa reflete os critérios diagnósticos definidos pelo consenso internacional KDIGO (Kidney Disease: Improving Global Outcomes). A IRA é definida por qualquer um dos seguintes critérios: aumento da creatinina sérica maior ou igual a 0,3 mg/dL em 48 horas; OU aumento da creatinina sérica para mais de 1,5 vez o valor basal (50% de aumento) nos últimos 7 dias; OU débito urinário menor que 0,5 mL/kg/h por um período de pelo menos 6 horas.\n\nAlternativa (e) INCORRETA: O tratamento da IRA deve sempre levar em conta o status volêmico do paciente. Administrar furosemida em um paciente oligúrico que está desidratado (causa pré-renal) é contraindicado, pois agrava a hipovolemia e a isquemia renal. A medida inicial para pacientes oligúricos com sinais de desidratação é a expansão volêmica cautelosa, e não o uso de diuréticos.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  },
+  {
+    "id": "AJUDA_e3dc8026-1291-4e97-a25b-dbd5aa65f7c4",
+    "originalId": "e3dc8026-1291-4e97-a25b-dbd5aa65f7c4",
+    "statement": "Uma unidade de emergência do SUS recebe durante um período de uma hora os seguintes casos:\n1. Joel, que estava descansando em sua casa após o trabalho no campo e havia sido picado por uma cobra.\n2. Dina, empregada doméstica, que voltava para a sua casa após o trabalho e torceu o pé ao descer do ônibus.\n3. O motorista de taxi Sérgio, que havia colidido com outro carro no dia anterior, quando levava um passageiro ao aeroporto, começou a sentir dor no pescoço.\n4. Luciana, estudante de 14 anos de idade, que voltava da escola e caiu, contundindo o joelho.\n5. Leda, atendente de telemarketing, que havia caído no banheiro da empresa e torcido o pé.\nAssinale a alternativa correta sobre os casos a serem notificados ao SINAN.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nenhum dos casos é de notificação compulsória como acidente de trabalho ao SINAN, pois são todos provavelmente do mercado informal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Joel deve ter seu caso notificado por se tratar de acidente com animal peçonhento; e apenas Leda deve ter seu caso notificado como acidente de trabalho, por ter ocorrido na empresa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Joel deve ter seu caso notificado por se tratar de acidente com animal peçonhento; Dina, Sérgio e Leda devem ter seus casos notificados como acidente de trabalho.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Joel deve ter seu caso notificado por se tratar de acidente com animal peçonhento; e apenas Sérgio e Leda devem ter seus casos notificados como acidente de trabalho, por terem sido vítimas de acidente típico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todos devem ter seus casos notificados no SINAN; Joel por se tratar de acidente com animal peçonhento; Dina, Sérgio e Leda por serem vítimas de acidente de trabalho; e Luciana por ser menor de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, devemos analisar as normas do Ministério da Saúde sobre a Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública, além das definições legais de acidente de trabalho.\n\nJoel: Foi picado por uma cobra. Acidentes por animais peçonhentos (serpentes, escorpiões, aranhas, etc.) são de notificação compulsória imediata ou semanal ao SINAN em todo o território nacional.\n\nDina: Empregada doméstica que se acidentou no trajeto do trabalho para casa. Pela legislação brasileira (Lei nº 8.213/91), o acidente ocorrido no percurso da residência para o local de trabalho ou vice-versa, independentemente do meio de locomoção, é considerado um acidente de trabalho (chamado de acidente de trajeto).\n\nSérgio: Taxista que colidiu o veículo enquanto transportava um passageiro. Trata-se de um acidente de trabalho típico, pois ocorreu durante a execução do serviço e no exercício da atividade profissional.\n\nLeda: Atendente que caiu no banheiro da empresa. Também é considerado um acidente de trabalho típico, pois ocorreu dentro do ambiente laboral durante o período de trabalho.\n\nLuciana: Estudante que caiu ao voltar da escola. Este caso não se enquadra como acidente de trabalho (pois o estudo não é atividade laboral remunerada ou equiparada para fins de vigilância em saúde do trabalhador) e a contusão simples não é um agravo de notificação compulsória.\n\nAnálise das alternativas:\n\na) Incorreta. A notificação compulsória ao SINAN tem fins epidemiológicos e deve ser realizada independentemente de o vínculo empregatício ser formal ou informal. O objetivo é mapear os riscos à saúde da população trabalhadora como um todo.\n\nb) Incorreta. Esta alternativa falha ao excluir Dina e Sérgio. Ambos sofreram acidentes que são classificados legal e epidemiologicamente como acidentes de trabalho (trajeto e típico, respectivamente).\n\nc) Correta. Identifica corretamente a obrigatoriedade de notificar o acidente com animal peçonhento (Joel) e reconhece que Dina, Sérgio e Leda sofreram acidentes de trabalho, conforme as definições de acidente de trajeto e acidente típico.\n\nd) Incorreta. Exclui Dina da notificação de acidente de trabalho. O acidente de trajeto tem o mesmo status de notificação que o acidente típico para fins de vigilância em saúde.\n\ne) Incorreta. O erro está em incluir Luciana. A queda de uma estudante voltando da escola, sem outras complicações ou especificidades listadas na portaria de notificação, não é um evento que deva ser registrado no SINAN. Além disso, a menoridade por si só não torna qualquer queda uma notificação compulsória, a menos que houvesse suspeita de violência ou que se tratasse de um acidente de trabalho envolvendo menor.\n\nPortanto, a alternativa C está correta por abranger todos os casos que possuem previsão legal de preenchimento de ficha de notificação no sistema nacional.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  },
+  {
+    "id": "AJUDA_e3e3f05a-759a-4538-98c1-35605b38e14e",
+    "originalId": "e3e3f05a-759a-4538-98c1-35605b38e14e",
+    "statement": "Assinale a alternativa que apresenta os sinais clínicos mais comuns de sepse neonatal e o que a diferencia de outras condições.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotermia; irritabilidade; icterícia leve; ausência de apneia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Febre alta; convulsões; rigidez de nuca; vômitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Letargia; dificuldade respiratória; instabilidade térmica; apneia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tosse seca; taquicardia; sudorese; dor abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cianose; bradicardia; hipertonia; diarreia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A sepse neonatal é uma síndrome clínica caracterizada por sinais sistêmicos de infecção que ocorrem nos primeiros 28 dias de vida. O diagnóstico é desafiador porque as manifestações iniciais são frequentemente sutis, inespecíficas e podem ser confundidas com diversas outras patologias do período neonatal.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: Embora a hipotermia e a irritabilidade possam estar presentes, a afirmação de \"ausência de apneia\" está errada. A apneia é um dos sinais respiratórios mais comuns e importantes na sepse neonatal, especialmente em prematuros, sendo muitas vezes o primeiro sinal de alerta de que o recém-nascido não está bem.\n\nAlternativa (b) Incorreta: Febre alta é um achado menos frequente do que a instabilidade térmica ou a hipotermia no recém-nascido. Além disso, a rigidez de nuca, sinal clássico de meningite em crianças maiores e adultos, é raramente observada no período neonatal, mesmo quando há infecção do sistema nervoso central, devido à imaturidade neurológica e à presença de fontanelas abertas.\n\nAlternativa (c) Correta: Esta alternativa descreve o quadro clínico clássico e mais frequente da sepse neonatal. Os sinais são multissistêmicos e inespecíficos:\n1. Letargia (ou hipoatividade): O bebê fica \"largadinho\", responde pouco aos estímulos e apresenta sucção débil.\n2. Dificuldade respiratória: Manifesta-se por taquipneia, batimento de asa de nariz, gemência e retrações intercostais.\n3. Instabilidade térmica: O recém-nascido tem dificuldade em manter a temperatura corporal, podendo apresentar febre ou, muito comumente, hipotermia.\n4. Apneia: Pausas respiratórias prolongadas são frequentes e indicam gravidade.\n\nAlternativa (d) Incorreta: A tosse seca não é um sintoma típico de sepse ou pneumonia neonatal; o comprometimento respiratório no RN se dá por esforço e alteração da frequência. A sudorese também é um achado raro no neonato, cujas glândulas sudoríparas ainda são imaturas. A dor abdominal é um sintoma subjetivo impossível de ser avaliado diretamente nessa faixa etária, manifestando-se geralmente por distensão abdominal.\n\nAlternativa (e) Incorreta: Cianose e bradicardia são sinais de alerta que podem ocorrer em estágios avançados de choque séptico, porém a sepse neonatal cursa tipicamente com hipotonia (bebê \"mole\") e não com hipertonia. A diarreia pode ocorrer, mas não faz parte dos sinais clínicos primários ou mais comuns da patologia.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  },
+  {
+    "id": "AJUDA_e3e66299-8a62-4e73-ae17-f8865e6ae6ce",
+    "originalId": "e3e66299-8a62-4e73-ae17-f8865e6ae6ce",
+    "statement": "Lactente do sexo masculino com 2 meses chega à unidade de emergência trazido pela mãe, que se queixa de que o bebê se encontra com coriza e cansaço para mamar há dois dias. Nega febre ou sintomas associados. Ao exame físico, a criança está normocorada e hidratada, tendo ausculta pulmonar com sibilos difusos e esforço respiratório leve a moderado, com saturação periférica de oxigênio de 95%. \nA melhor orientação para o caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrever macrolídeo por via oral para início imediato ao nível do domicílio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "internar o paciente em CTI pediátrico e proceder acesso à via aérea definitiva, visando instituir ventilação invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "internar o paciente, prescrever resgate com salbutamol e oxigênio em máscara, se saturação de oxigênio abaixo de 94%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prescrever lavagem nasal com soro fisiológico seguida de aspiração nasal, orientando alta com tal conduta no domicílio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO E CONDUTA\n\nO quadro clínico descreve um lactente de 2 meses com pródromos virais (coriza) que evolui com o primeiro episódio de sibilância e desconforto respiratório. Essa é a apresentação clássica da Bronquiolite Viral Aguda (BVA), a infecção das vias aéreas inferiores mais comum em menores de 2 anos, sendo o Vírus Sincicial Respiratório (VSR) o principal agente etiológico.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA\n\nA base do tratamento da Bronquiolite Viral Aguda é o suporte clínico e a manutenção da hidratação e oxigenação. Lactentes pequenos são respiradores nasais preferenciais; portanto, a obstrução do nariz por muco é a principal causa de desconforto respiratório e de dificuldade para realizar a sucção (cansaço para mamar). A lavagem nasal com soro fisiológico e a aspiração frequente das secreções são as medidas mais eficazes para reduzir o esforço respiratório. Como o paciente apresenta saturação de oxigênio de 95% (acima do limite de corte para hipoxemia, que é 90 a 92%) e o esforço é leve a moderado, ele pode ser acompanhado no domicílio, desde que a mãe receba orientações claras sobre sinais de alerta e necessidade de retorno.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa (a): A Bronquiolite Viral Aguda é uma doença causada por vírus. O uso de antibióticos, como os macrolídeos, não tem indicação no tratamento de rotina, pois não altera o curso da doença nem previne complicações. O uso de antibióticos só deve ser considerado se houver evidência clara de infecção bacteriana secundária associada.\n\nAlternativa (b): O paciente está estável, com saturação de 95% em ar ambiente. A internação em CTI e a instituição de via aérea definitiva (intubação) são medidas extremas reservadas apenas para casos de insuficiência respiratória grave, apneias recorrentes ou exaustão respiratória iminente, o que não condiz com o quadro clínico relatado.\n\nAlternativa (c): As diretrizes nacionais e internacionais atuais (como as da Academia Americana de Pediatria e da Sociedade Brasileira de Pediatria) não recomendam o uso rotineiro de broncodilatadores, como o salbutamol, na bronquiolite. Isso ocorre porque o estreitamento da via aérea na BVA é causado por edema da mucosa, necrose celular e excesso de muco, e não por broncoespasmo (como ocorre na asma). Além disso, a saturação de 95% não justifica o uso de oxigenoterapia suplementar, que geralmente é indicada apenas quando a saturação cai abaixo de 90-92%.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  },
+  {
+    "id": "AJUDA_e3e97f21-801d-4e1b-a8f0-e09f8318bf36",
+    "originalId": "e3e97f21-801d-4e1b-a8f0-e09f8318bf36",
+    "statement": "Analise as assertivas a seguir a respeito de episódio depressivo na adolescência:\n\nI. Jovens tendem a apresentar inicialmente queixas físicas ou comportamentais que podem obscurecer os sintomas depressivos típicos observados em adultos.\nII. A apresentação clínica pode ser semelhante tanto na depressão unipolar como bipolar. A dificuldade diagnóstica ocorre em alguns casos, porque o transtorno bipolar geralmente se inicia com quadros depressivos, sem história prévia de sintomas maníacos, hipomaníacos ou mistos.\nIII. Algumas queixas como humor irritável ou rancoroso, tédio crônico ou perda de interesse em atividades previamente prazerosas, não querer mais sair com os amigos e queda na performance acadêmica devem alertar os clínicos para possível quadro depressivo.\nIV. Na depressão leve ou moderada, geralmente apresentam afeto reativo, ou seja, uma habilidade de se animar momentaneamente em resposta a eventos positivos, podendo, com certo esforço, esconder seus sintomas.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas I, III e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II, III e IV.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das assertivas:\n\nAssertiva I: Está correta. Diferentemente dos adultos, que costumam relatar tristeza e desânimo de forma mais direta, os adolescentes frequentemente manifestam o sofrimento psíquico por meio de sintomas somáticos (como dores de cabeça, tonturas ou dores abdominais) ou mudanças comportamentais. Esses sintomas podem desviar a atenção do diagnóstico de depressão para investigações de doenças físicas ou problemas de conduta, retardando o tratamento adequado.\n\nAssertiva II: Está correta. Na prática clínica, é um desafio distinguir um primeiro episódio de depressão unipolar de uma depressão bipolar de forma transversal. Estatisticamente, o transtorno bipolar em jovens costuma iniciar sua trajetória psicopatológica com episódios depressivos. Como os sintomas de mania ou hipomania podem surgir apenas anos mais tarde, o diagnóstico inicial acaba sendo de depressão unipolar.\n\nAssertiva III: Está correta. A irritabilidade é um sintoma cardinal e critério diagnóstico para depressão em crianças e adolescentes, podendo substituir o humor deprimido observado em adultos. O tédio crônico (muitas vezes confundido com falta de motivação), a anedonia (perda de interesse em atividades antes prazerosas), o isolamento social e o prejuízo no desempenho escolar são sinais de alerta fundamentais para o clínico.\n\nAssertiva IV: Está correta. A reatividade do afeto é comum em quadros de depressão leve a moderada na juventude. Isso significa que o adolescente consegue modular o humor e se animar momentaneamente diante de estímulos positivos ou eventos sociais, sendo capaz de esconder o sofrimento por curtos períodos. Essa característica pode levar pais e professores a subestimarem a gravidade do quadro, acreditando que o paciente está bem.\n\nConclusão: Como todas as assertivas apresentam informações tecnicamente precisas e condizentes com a semiologia psiquiátrica da adolescência, a alternativa correta é a letra (d).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Transtornos do Humor",
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  },
+  {
+    "id": "AJUDA_e3ee1132-f42b-4a6d-811d-39d8f869deda",
+    "originalId": "e3ee1132-f42b-4a6d-811d-39d8f869deda",
+    "statement": "O protocolo ERAS (Enhanced Recovery After Surgery) consiste em utilizar medidas para acelerar e melhorar a recuperação no pós-operatório. Pode-se afirmar que uma das medidas incluídas nesse protocolo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso de opioide com objetivo de melhorar o controle álgico no pós-operatório",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "uso de fluidoterapia guiada por metas durante o procedimento cirúrgico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "evitar anestesia peridural e bloqueio do plano transverso abdominal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "jejum mínimo de 8 horas para líquidos claros antes do procedimento cirúrgico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O protocolo ERAS (Enhanced Recovery After Surgery), adaptado no Brasil como protocolo ACERTO (Aceleração da Recuperação Total no Pós-Operatório), é um conjunto de medidas baseadas em evidências que visa a reduzir o estresse metabólico da cirurgia, diminuir complicações e acelerar a alta hospitalar.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa A: Incorreta. O protocolo preconiza a analgesia multimodal com o objetivo de poupar o uso de opioides (opioid-sparing). Os opioides, embora potentes analgésicos, estão associados a efeitos colaterais que retardam a recuperação, como náuseas, vômitos, sedação excessiva e, principalmente, o íleo paralítico pós-operatório (atraso no retorno da função intestinal).\n\nAlternativa B: Correta. O manejo hídrico intraoperatório é um pilar central do ERAS. A fluidoterapia guiada por metas (do inglês, Goal-Directed Fluid Therapy) utiliza parâmetros hemodinâmicos para ofertar a quantidade exata de líquidos necessária para manter a perfusão tecidual. O objetivo é evitar tanto a hipovolemia quanto a sobrecarga hídrica, que pode causar edema intersticial, prejuízo na cicatrização de anastomoses e complicações pulmonares.\n\nAlternativa C: Incorreta. O protocolo recomenda fortemente o uso de anestesia regional e bloqueios de nervos periféricos, como a anestesia peridural (especialmente em cirurgias abdominais abertas) e o bloqueio do plano transverso abdominal (TAP block). Essas técnicas fazem parte da estratégia de analgesia multimodal para reduzir a dor e a necessidade de opioides sistêmicos.\n\nAlternativa D: Incorreta. Um dos principais conceitos do ERAS é a abreviação do jejum pré-operatório. Para líquidos claros (água, chás, sucos sem polpa e bebidas com carboidratos), o tempo de jejum recomendado é de apenas 2 horas antes da indução anestésica. O jejum de 8 horas é reservado para refeições completas ou alimentos de lenta digestão. A abreviação do jejum reduz a resistência insulínica no pós-operatório e traz maior conforto ao paciente.\n\nGabarito: Letra (b).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  },
+  {
+    "id": "AJUDA_e3eea59f-74bd-40e8-b3db-3583a08dba1e",
+    "originalId": "e3eea59f-74bd-40e8-b3db-3583a08dba1e",
+    "statement": "Homem, 30 anos de idade, apresenta cálculo de 2 cm no polo inferior do rim esquerdo. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nefrolitotripsia percutânea",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Litotripsia extracorporea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nefrolitotripsia transureteroscópica flexivel",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alcalinização da urina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para definir a melhor conduta no tratamento da litíase renal, os dois principais fatores a serem considerados são o tamanho do cálculo e sua localização. No caso clínico, temos um cálculo de 2 cm (20 mm) situado no polo inferior do rim esquerdo.\n\nAnálise das alternativas:\n\na) Correta. A nefrolitotripsia percutânea (NLPC) é o tratamento padrão-ouro para cálculos renais maiores que 2 cm. Ela oferece as maiores taxas de fragmentação e retirada total dos cálculos (taxa de \"stone-free\") em um único procedimento. A indicação é ainda mais precisa quando o cálculo está no polo inferior, pois a anatomia local (ângulo infundibulopélvico) dificulta a saída de fragmentos por métodos menos invasivos.\n\nb) Incorreta. A litotripsia extracorpórea por ondas de choque (LECO) não é recomendada como primeira linha para cálculos maiores que 2 cm. Além do tamanho, a localização no polo inferior é um fator preditor de falha na LECO, pois a gravidade dificulta a eliminação dos fragmentos após a quebra.\n\nc) Incorreta. A ureterorrenoscopia flexível é uma excelente opção para cálculos renais, mas é preferencialmente indicada para cálculos menores que 2 cm. Para cálculos de exatos 2 cm ou maiores, a capacidade de carga de massa do cálculo costuma exceder a eficiência da fibra de laser na ureteroscopia, tornando a técnica percutânea (alternativa A) superior em termos de eficácia.\n\nd) Incorreta. A alcalinização da urina é uma terapia de dissolução química indicada exclusivamente para cálculos de ácido úrico (que são radiotransparentes). A questão não fornece dados que sugiram essa composição e, mesmo que fosse o caso, um cálculo de 2 cm no polo inferior geralmente exige intervenção cirúrgica devido ao risco de obstrução e baixa taxa de dissolução completa apenas com medicamentos.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  },
+  {
+    "id": "AJUDA_e3f9e781-0eda-4bfa-80ee-2d6adf742c15",
+    "originalId": "e3f9e781-0eda-4bfa-80ee-2d6adf742c15",
+    "statement": "Em uma cidade de médio porte, houve um aumento recente de casos de uma doença infecciosa de notificação obrigatória. A secretaria de saúde local precisou entender o perfil epidemiológico da doença e o comportamento de transmissão para implementar ações de controle e prevenção. Com base nessa situação hipotética, a estratégia adequada para realizar o monitoramento e o controle desse aumento de casos é",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar apenas um levantamento dos casos internados no hospital da cidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reforçar a notificação compulsória e realizar busca ativa de casos na comunidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "solicitar que cada unidade de saúde forneça relatórios mensais dos atendimentos sem envolver a vigilância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "esperar que os casos diminuam para, então, estudar o comportamento da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "encaminhar todos os casos para tratamento em uma cidade vizinha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as ações fundamentais da Vigilância Epidemiológica diante de um surto ou aumento de casos de doenças de notificação compulsória. O objetivo central da vigilância é a coleta e análise de dados para recomendar e adotar medidas de prevenção e controle de forma oportuna.\n\nAlternativa a: Incorreta. O levantamento apenas de casos internados gera um viés de gravidade. Muitos indivíduos com doenças infecciosas podem apresentar sintomas leves ou ser assintomáticos, mas continuam transmitindo o agente etiológico. Monitorar apenas o ambiente hospitalar impede a compreensão da real magnitude da transmissão na comunidade e não permite identificar os focos iniciais da doença.\n\nAlternativa b: Correta. Esta é a estratégia padrão em saúde pública. Reforçar a notificação compulsória garante que o fluxo de dados entre os serviços de saúde e a gestão seja contínuo e preciso. A busca ativa, por sua vez, consiste em ir a campo para identificar casos que não procuraram o serviço de saúde espontaneamente. Ambas as ações são essenciais para descrever o perfil epidemiológico (quem adoece, onde e quando) e para implementar medidas que interrompam a cadeia de transmissão.\n\nAlternativa c: Incorreta. Relatórios mensais são inadequados para o manejo de um aumento súbito de casos, que exige agilidade e monitoramento frequente (muitas vezes diário ou semanal). Além disso, a Vigilância Epidemiológica é o órgão técnico especializado para lidar com essas situações; excluí-la retira a inteligência sanitária necessária para o controle do agravo.\n\nAlternativa d: Incorreta. A saúde pública baseia-se no princípio da oportunidade. Esperar os casos diminuírem para estudar a doença é uma atitude passiva que resulta em perda de vidas e maior impacto econômico e social. O comportamento da doença deve ser estudado enquanto as ações de bloqueio são executadas.\n\nAlternativa e: Incorreta. A transferência de todos os casos é logisticamente inviável, eticamente questionável e não resolve a causa do aumento de casos na cidade de origem. Além disso, o transporte de pacientes infectados pode contribuir para a disseminação da doença para outras regiões, ampliando o problema epidemiológico.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  },
+  {
+    "id": "AJUDA_e406aae9-127d-4bb1-b1e2-f9db477ec366",
+    "originalId": "e406aae9-127d-4bb1-b1e2-f9db477ec366",
+    "statement": "Uma mulher de 73 anos dá entrada no pronto-socorro devido a febre alta (39°C), dor no quadrante superior direito e icterícia de início agudo. Nas últimas 12 horas, apresentou rebaixamento do nível de consciência e hipotensão (PA = 80X50mmHg), necessitando do uso de noradrenalina. Exames laboratoriais - Leucograma = 14.000/mm³ com neutrofilia, fosfatase alcalina = 600 U/L, bilirrubina total = 6,0mg/dl. A ultrassonografia do abdome mostra dilatação do ducto colédoco com cálculo impactado ao nível da ampola de Vater. De acordo com os critérios de Tóquio 2018, qual é o diagnóstico, a classificação e o manejo terapêutico correto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colangite moderada; internação em UTI e drenagem endoscópica precoce após estabilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colangite moderada; antibioticoterapia por via intravenosa por 7 dias e drenagem endoscópica eletiva após estabilização hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colangite grave; intervenção hemodinâmica imediata com suporte intensivo, antibioticoterapia e drenagem biliar emergencial por CPRE.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Colangite grave; antibioticoterapia com atenção a agentes multirresistentes e drenagem cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente apresenta a clássica Pêntade de Reynolds: febre, dor abdominal e icterícia (Tríade de Charcot), acrescidas de hipotensão arterial (necessitando de droga vasoativa) e alteração do nível de consciência. Esse quadro é altamente sugestivo de colangite aguda grave. Os exames laboratoriais confirmam o padrão colestático (elevação de bilirrubina e fosfatase alcalina) e o processo inflamatório (leucocitose). A ultrassonografia confirma a etiologia obstrutiva: um cálculo impactado na ampola de Vater, causando dilatação da via biliar.\n\nCLASSIFICAÇÃO PELOS CRITÉRIOS DE TÓQUIO 2018 (TG18)\n\nDe acordo com as diretrizes de Tóquio 2018, a colangite é classificada em três graus de gravidade:\n\nGrau I (Leve): Não preenche critérios de moderada ou grave. Responde bem ao tratamento inicial.\nGrau II (Moderada): Presença de dois dos seguintes critérios: leucocitose (> 12.000 ou < 4.000), febre alta (≥ 39 °C), idade ≥ 75 anos, bilirrubina total ≥ 5 mg/dL ou hipoalbuminemia.\nGrau III (Grave): Presença de disfunção orgânica em pelo menos um sistema (cardiovascular, neurológico, respiratório, renal, hepático ou hematológico).\n\nNo caso em questão, a paciente apresenta disfunção cardiovascular (hipotensão necessitando de noradrenalina) e disfunção neurológica (rebaixamento do nível de consciência), o que a classifica obrigatoriamente como colangite grau III (grave).\n\nMANEJO TERAPÊUTICO\n\nO tratamento da colangite grave exige suporte em Unidade de Terapia Intensiva (UTI), antibioticoterapia de largo espectro e, fundamentalmente, a descompressão biliar de urgência/emergência. A CPRE (Colangiopancreatografia Retrógrada Endoscópica) é o método de escolha por ser menos invasivo que a cirurgia e apresentar altas taxas de sucesso na drenagem.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. A classificação está errada. A presença de disfunção orgânica (choque e alteração neurológica) define a colangite como grave (Grau III), e não moderada. Além disso, em quadros graves, a drenagem deve ser emergencial.\n\nb) Incorreta. A classificação como moderada está incorreta. Além disso, a drenagem biliar na colangite grave nunca deve ser eletiva; o atraso na descompressão biliar em pacientes com choque séptico de origem biliar está associado a uma altíssima mortalidade.\n\nc) Correta. Identifica corretamente a gravidade (Grau III/Grave) devido às disfunções orgânicas. O manejo proposto segue rigorosamente o protocolo: estabilização hemodinâmica (suporte intensivo), início imediato de antibióticos e drenagem biliar de emergência por CPRE, que é o padrão-ouro.\n\nd) Incorreta. Embora acerte na classificação de gravidade, a drenagem cirúrgica imediata não é a primeira escolha. A cirurgia biliar em vigência de sepse grave apresenta mortalidade muito superior à drenagem endoscópica (CPRE) ou percutânea. A cirurgia é reservada para casos nos quais os métodos minimamente invasivos falham ou não estão disponíveis.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:39.655Z"
+  }
+]

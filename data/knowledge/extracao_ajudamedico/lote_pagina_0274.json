@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_4c1a5f7f-806d-4dc7-a4ea-a14a546a7768",
+    "originalId": "4c1a5f7f-806d-4dc7-a4ea-a14a546a7768",
+    "statement": "Paciente do sexo feminino, de 64 anos, com histórico de hipertensão e em uso de hidroclorotiazida, será submetida a colecistectomia eletiva. Nos exames pré-operatórios, o nível sérico de potássio é de 3,1mEq/L. Qual é o conduta MAIS APROPRIADA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar rapidamente potássio intravenoso, antes do início da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar a reposição de potássio por via oral e adiar a cirurgia até que os níveis de potássio se normalizem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Proceder a cirurgia e repor potássio por via intravenosa no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender o diurético no dia anterior à cirurgia e monitorar o potássio no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso apresenta uma paciente com hipocalemia moderada (potássio de 3,1 mEq/L, sendo o valor de referência normal entre 3,5 e 5,0 mEq/L), provavelmente secundária ao uso crônico de diurético tiazídico (hidroclorotiazida). Ela está programada para uma cirurgia eletiva, ou seja, um procedimento que não apresenta caráter de urgência ou emergência.\n\nA conduta em relação aos distúrbios hidroeletrolíticos no pré-operatório depende da gravidade da alteração e da natureza da cirurgia. Em procedimentos eletivos, a segurança do paciente é a prioridade. Níveis de potássio abaixo de 3,0 a 3,2 mEq/L estão associados a um risco aumentado de arritmias cardíacas intraoperatórias, além de potenciarem os efeitos de bloqueadores neuromusculares e predisporem ao íleo paralítico pós-operatório.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A administração rápida de potássio por via intravenosa é perigosa, podendo causar arritmias graves e parada cardíaca. Além disso, por se tratar de uma cirurgia eletiva, não há justificativa para assumir os riscos de uma reposição aguda e de uma anestesia com o paciente ainda instável.\n\nAlternativa b) Correta. Esta é a conduta padrão para cirurgias eletivas. Como não há urgência no procedimento, o mais seguro é adiar a cirurgia, iniciar a reposição de potássio preferencialmente por via oral (que é mais segura que a via intravenosa) e proceder com a operação somente após a normalização dos níveis séricos. Isso minimiza o risco cardiovascular durante a indução anestésica e o ato cirúrgico.\n\nAlternativa c) Incorreta. Proceder com a cirurgia com um nível de potássio de 3,1 mEq/L expõe a paciente a riscos desnecessários de arritmias malignas durante a anestesia. A reposição apenas no pós-operatório não corrige o risco aumentado durante o período crítico da cirurgia.\n\nAlternativa d) Incorreta. Suspender o diurético apenas um dia antes não é suficiente para normalizar os níveis de potássio que já estão baixos. É necessária a reposição ativa do íon. Além disso, apenas monitorar no pós-operatório ignora o perigo intraoperatório.\n\nEm resumo, em cirurgias eletivas, qualquer distúrbio metabólico ou eletrolítico significativo deve ser corrigido antes da intervenção para garantir a máxima segurança do paciente.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Perioperatório",
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  },
+  {
+    "id": "AJUDA_4c1a7708-a7af-42be-b198-7cdad83c4487",
+    "originalId": "4c1a7708-a7af-42be-b198-7cdad83c4487",
+    "statement": "Um Lactente de 8 meses de idade, previamente hígido, nascido a temo com peso adequado para a idade gestacional, é levado pelos pais ao pronto atendimento com história de tosse há 3 dias e febre de 38 ºC há um dia, medicado com paracetamol com boa resposta. Está se alimentando normalmente, sem vômitos ou diarreia. A mãe refere que é a primeira vez que o filho adoece e que as vacinas estão atualizadas. Ao exame físico apresenta bom estado geral, corado, hidratado, com coriza hialina e obstrução nasal leve. A expiração está prolongada e sem uso de musculatura acessória, FR: 48 ipm e saturação ao oxímetro em ar ambiente: 95%. O murmúrio vesicular está presente com sibilos em ambos os hemitórax. As bulhas cardíacas estão rítmicas em 2 tempos e sem sopros, FC: 120 bpm. Abdome globoso, flácido, sem visceromegalias. Tempo de enchimento capilar de 2 segundos e pulsos periféricos de amplitudes normais. Demais dados do exame físico normais. Realizado teste rápido para Influenza e Covid-19, que resultaram negativos, e teste rápido para Vírus Sincicial respiratório que resultou positivo.\n\nQual a conduta mais adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inalação com salbutamol por 3 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inalação com budesonida por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ozeltamivir oral por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Amoxicicilina oral por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lavagem nasal e inalação com soro fisiológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clinico apresentado e classico de Bronquiolite Viral Aguda (BVA) de curso leve: lactente menor de 2 anos, com primeiro episodio de sibilancia precedido por sintomas de vias aereas superiores (tosse, coriza e febre) e confirmacao etiologica de infeccao por Virus Sincicial Respiratorio (VSR). O paciente encontra-se em bom estado geral, hidratado, com frequencia respiratoria adequada para a idade e saturacao de oxigenio de 95% em ar ambiente, sem sinais de esforco respiratorio.\n\nSegundo as diretrizes da Sociedade Brasileira de Pediatria (SBP) e da Academia Americana de Pediatria (AAP), o manejo da bronquiolite viral aguda leve e estritamente de suporte, nao havendo indicacao para o uso de medicamentos especificos.\n\nAnalise das alternativas:\n\na) Incorreta. Broncodilatadores como o salbutamol (beta-2-agonistas) nao tem beneficio comprovado na fisiopatologia da BVA, caracterizada por necrose celular, edema de mucosa e tampao de muco nos bronquiolos, e nao por broncoespasmo muscular. O uso rotineiro nao e recomendado.\n\nb) Incorreta. Corticosteroides inalatorios (como a budesonida) ou sistemicos nao estao indicados no tratamento da BVA, pois nao diminuem o tempo de internacao, nao alteram o curso da doenca e nao reduzem a taxa de hospitalizacao.\n\nc) Incorreta. O oseltamivir e um antiviral inibidor da neuraminidase indicado exclusivamente para o virus Influenza, nao possuindo qualquer acao sobre o Virus Sincicial Respiratorio (VSR). O teste para Influenza do paciente foi negativo.\n\nd) Incorreta. A etiologia da bronquiolite e viral, nao havendo papel para antibioticos como a amoxicilina, salvo em casos raros de infeccao bacteriana secundaria documentada (como pneumonia bacteriana ou otite media aguda purulenta), o que nao ocorre neste caso.\n\ne) Correta. A conduta adequada para a BVA leve envolve medidas de suporte e desobstrucao de vias aereas superiores por meio de lavagem nasal com soro fisiologico, associada a inalacao com soro fisiologico para fluidificacao de secrecoes, alem de orientacoes aos pais quanto a sinais de alerta para retorno ao servico de saude.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  },
+  {
+    "id": "AJUDA_4c3687ee-815f-470f-bb11-56799294721a",
+    "originalId": "4c3687ee-815f-470f-bb11-56799294721a",
+    "statement": "Uma criança do sexo masculino, 4 anos, trazida pela avó materna, deu entrada na emergência do pronto-socorro infantil. A avó encontrou o menino no banheiro, caído no chão, pouco responsivo, com frasco de nafazolina vazio ao seu lado. Na emergência apresentava hipotermia, taquicardia, palidez, diaforese, sonolência e hipertensão. Em cerca de 20 minutos, evoluiu com hipotensão e bradicardia persistente. As medidas para o tratamento incluem monitorização, aquecimento,",
+    "options": [
+      {
+        "id": "A",
+        "text": "acesso venoso com hidratação basal, oferta de oxigênio inalatório se SO2 < 93%, aguardar melhora dos sintomas em 2 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "acesso venoso, expansão com soro fisiológico, atropina, oxigênio inalatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "acesso venoso, expansão com soro fisiológico, sonda gástrica, carvão ativado, oxigênio inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "e as medidas de suporte, que são suficientes para estabilização do quadro, e geralmente a melhora ocorre nas primeiras 4 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "acesso venoso, expansão com soro fisiológico, noradrenalina, sondagem vesical.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso clínico descreve uma intoxicação exógena por nafazolina em uma criança de 4 anos. A nafazolina é um derivado imidazolínico utilizado como descongestionante nasal que atua como agonista de receptores alfa-adrenérgicos. Em crianças, a absorção sistêmica ocorre rapidamente, seja por ingestão ou pela mucosa nasal, e a toxicidade é grave.\n\nA apresentação típica é bifásica:\n1. Fase inicial (curta): Pode ocorrer estimulação periférica com hipertensão e taquicardia.\n2. Fase de depressão (dominante): O efeito agonista alfa-2 central (semelhante à clonidina) reduz o fluxo simpático, levando a bradicardia, hipotensão, depressão do sistema nervoso central (sonolência, coma), hipotermia e depressão respiratória. O paciente em questão já evoluiu para esta fase de instabilidade hemodinâmica.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A - INCORRETA: A hidratação basal é voltada para manutenção e não para a correção de um quadro de choque (hipotensão). Além disso, um paciente com bradicardia persistente e hipotensão não deve apenas aguardar a melhora espontânea; ele requer intervenção ativa para garantir a perfusão tecidual.\n\nAlternativa B - CORRETA: O tratamento da intoxicação por imidazolínicos é de suporte e sintomático, pois não existe um antídoto específico. Diante da hipotensão, deve-se realizar a expansão volêmica com cristaloides (soro fisiológico). Para a bradicardia sintomática e persistente, a atropina é a droga de escolha. A monitorização, o aquecimento e a oferta de oxigênio completam o suporte básico necessário para a estabilização.\n\nAlternativa C - INCORRETA: Embora a descontaminação gástrica possa ser considerada em ingestões muito recentes, ela é contraindicada em pacientes com rebaixamento do nível de consciência (sonolência) sem proteção de via aérea, devido ao risco de aspiração. O foco principal no momento de instabilidade hemodinâmica deve ser a estabilização cardiovascular (pressão e frequência cardíaca).\n\nAlternativa D - INCORRETA: Afirmar que as medidas de suporte são suficientes sem citar quais são (como expansão e atropina) torna a questão incompleta para um cenário de emergência. Além disso, o tempo de recuperação é variável e pode exceder as 4 horas mencionadas, exigindo vigilância intensiva.\n\nAlternativa E - INCORRETA: A noradrenalina é um vasopressor potente reservado para choques refratários. O manejo inicial da hipotensão na intoxicação por nafazolina deve ser feito primeiramente com reposição de volume (expansão com soro fisiológico). A sondagem vesical é uma medida auxiliar, mas não é prioridade frente à bradicardia que exige atropina.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  },
+  {
+    "id": "AJUDA_4c36885e-f9f6-4f8a-8bbd-178ebcd1865d",
+    "originalId": "4c36885e-f9f6-4f8a-8bbd-178ebcd1865d",
+    "statement": "Gestante de 28 anos, G1P0, com 32 semanas de gestação, apresentou febre (38º C), calafrios, mialgia, astenia e dor retro-orbitária, quadro iniciado há 3 dias. No quarto dia, foram registradas hipotensão (pressão arterial de 80/50 mmHg), dor abdominal intensa, letargia e ascite. O hemograma indicou hemoglobina de 14,5 g/dl, hematócrito de 50%, leucócitos de 2.300/mm³, plaquetas de 70.000/mm³, AST de 35 U/l e creatinina de 0,9 mg/dl. Os batimentos cardiofetais estavam presentes (148 bpm). Qual a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar ressonância magnética abdominal e painel viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar hidratação intravenosa imediatamente com soro fisiológico a 0,9%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Usar rapidamente expansores plasmáticos (albumina) intravenosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Interromper a gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um quadro clínico clássico de dengue, caracterizado inicialmente por febre, mialgia e dor retro-orbitária. A evolução no quarto dia com hipotensão (80/50 mmHg), dor abdominal intensa, letargia e ascite configura o diagnóstico de dengue grave (classificada como Grupo D pelo Ministério da Saúde). Esses sintomas ocorrem tipicamente na fase de defervescência (queda da febre), na qual há o maior risco de extravasamento plasmático. O hemograma confirma a hemoconcentração (hematócrito de 50%) e a plaquetopenia (70.000/mm³).\n\nAlternativa a: Incorreta. Diante de um quadro de choque circulatório e sinais de alerta, a prioridade absoluta é a estabilização hemodinâmica. Solicitar exames de imagem complexos, como a ressonância, retardaria o tratamento vital. A ascite e a dor abdominal são explicadas pelo extravasamento de fluidos característico da fisiopatologia da dengue grave, não havendo indicação de investigação radiológica imediata para abdome agudo cirúrgico neste contexto.\n\nAlternativa b: Correta. A conduta imediata para pacientes no Grupo D (com sinais de choque ou desconforto respiratório) é a hidratação intravenosa imediata com cristaloides (soro fisiológico 0,9%). O protocolo preconiza uma expansão rápida para restaurar o volume intravascular, reduzir o hematócrito e garantir a perfusão de órgãos nobres, incluindo a perfusão placentária.\n\nAlternativa c: Incorreta. Os cristaloides (como o soro fisiológico 0,9%) são a primeira linha de tratamento. O uso de expansores plasmáticos coloides, como a albumina, é reservado apenas para casos refratários, ou seja, quando o paciente não responde adequadamente após as etapas iniciais de reposição com cristaloides.\n\nAlternativa d: Incorreta. A interrupção da gestação em uma paciente instável e com plaquetopenia grave aumenta significativamente o risco de hemorragia incontrolável e morte materna. A prioridade é estabilizar a gestante clinicamente. Como os batimentos cardiofetais estão normais (148 bpm), não há evidência de sofrimento fetal agudo que justifique uma intervenção obstétrica imediata antes da ressuscitação volêmica. Além disso, a dengue não é uma indicação isolada de parto ou cesárea.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  },
+  {
+    "id": "AJUDA_4c3993e3-298f-43bb-8e6a-ebd35f127673",
+    "originalId": "4c3993e3-298f-43bb-8e6a-ebd35f127673",
+    "statement": "Um pesquisador estima o Número Necessário para Tratar (NNT) a partir de um RR = 0,80 para um desfecho com risco de 10% no grupo controle. Qual é o valor mais próximo do NNT?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "8.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "20.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "50.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "100.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão de bioestatística, é necessário seguir três etapas lógicas: calcular o risco no grupo experimental, determinar a redução do risco absoluto e, por fim, calcular o NNT.\n\n1. Identificar o Risco do Grupo Controle (RC): A questão informa que o risco no grupo controle é de 10% (ou 0,10).\n\n2. Calcular o Risco do Grupo Experimental (RE): O Risco Relativo (RR) é a razão entre o risco do grupo tratado e o risco do grupo controle (RR = RE / RC). Para encontrar o RE, multiplicamos o RC pelo RR.\nCálculo: 10% × 0,80 = 8% (ou 0,08).\n\n3. Calcular a Redução do Risco Absoluto (RRA): A RRA é a diferença aritmética entre o risco do controle e o risco do grupo experimental.\nCálculo: 10% - 8% = 2% (ou 0,02).\n\n4. Calcular o Número Necessário para Tratar (NNT): O NNT é definido como o inverso da Redução do Risco Absoluto (1 / RRA). Ele representa quantos pacientes precisam ser tratados para prevenir um desfecho negativo.\nCálculo: 1 / 0,02 = 50.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Um NNT de 2 indicaria uma Redução do Risco Absoluto de 50% (1 / 0,5), o que é incompatível com os dados fornecidos.\n\nAlternativa b) Incorreta. O valor 8 (ou 8%) é o risco encontrado no grupo experimental após a aplicação do tratamento, mas não é o NNT.\n\nAlternativa c) Incorreta. Um NNT de 20 exigiria uma Redução do Risco Absoluto de 5% (1 / 0,05). Para isso ocorrer com um risco basal de 10%, o Risco Relativo deveria ser de 0,50.\n\nAlternativa d) Correta. Conforme os cálculos realizados, a redução absoluta de 2% (0,02) resultante de um RR de 0,80 sobre um risco basal de 10% gera um NNT de exatamente 50.\n\nAlternativa e) Incorreta. Um NNT de 100 exigiria uma Redução do Risco Absoluto de apenas 1% (1 / 0,01). Isso ocorreria se o Risco Relativo fosse de 0,90 (redução de apenas 10% do risco original).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  },
+  {
+    "id": "AJUDA_4c3d3667-531e-40b0-b9e7-4e04fcf4562c",
+    "originalId": "4c3d3667-531e-40b0-b9e7-4e04fcf4562c",
+    "statement": "Em relação à gestação gemelar, o achado característico da sequência TAPS é a presença de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "feto acárdico e feto bomba",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "anemia em um dos fetos e policitemia no outro",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "diferença de peso menor que 25% entre os fetos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "oligodramnia em um dos fetos e polidramnia no outro",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Sequência Anemia-Policitemia Gêmeo-Gêmeo (TAPS) é uma complicação específica das gestações monocoriônicas, resultante da transfusão sanguínea lenta e crônica entre os fetos através de anastomoses vasculares placentárias muito pequenas (geralmente menores que 1 mm). Diferentemente da Síndrome de Transfusão Feto-Fetal clássica, na TAPS não há uma discordância significativa no volume de líquido amniótico.\n\nAlternativa A: Incorreta. A descrição de feto acárdico (que não possui coração funcional) e feto bomba (que mantém a circulação de ambos) é característica da Sequência TRAP (Twin Reversed Arterial Perfusion), uma complicação grave e distinta da TAPS.\n\nAlternativa B: Correta. Esta é a definição clássica da TAPS. Devido à passagem lenta de sangue, o feto doador desenvolve anemia progressiva, enquanto o feto receptor desenvolve policitemia (excesso de glóbulos vermelhos). O diagnóstico pré-natal é feito pelo Doppler da artéria cerebral média, onde se observa o aumento da velocidade de pico sistólico no feto anêmico e a redução dessa velocidade no feto policitêmico.\n\nAlternativa C: Incorreta. A discordância de peso entre os fetos (geralmente considerada relevante acima de 20-25%) é um critério utilizado para o diagnóstico de Restrição de Crescimento Intrauterino Seletiva (RCIU-s). Embora possa ocorrer em conjunto com outras patologias, não é o achado que define a TAPS.\n\nAlternativa D: Incorreta. A presença da sequência oligodrâmnio (pouco líquido no doador) e polidrâmnio (excesso de líquido no receptor) é o achado patognomônico da Síndrome de Transfusão Feto-Fetal (STFF). Na TAPS, os volumes de líquido amniótico costumam estar normais em ambos os sacos gestacionais, o que a diferencia clinicamente da STFF.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  },
+  {
+    "id": "AJUDA_4c3f2df9-ab98-444b-ac0a-e0d06fc050f3",
+    "originalId": "4c3f2df9-ab98-444b-ac0a-e0d06fc050f3",
+    "statement": "Criança, 4 anos e 6 meses de idade, é levada à consulta devido a mudanças do padrão evacuatório. No início do quadro, há 6 meses, apresentava evacuação a cada 3 dias, associado a fezes endurecidas. No entanto, no último mês, a cueca fica suja de fezes líquidas de 2 a 3 vezes ao dia. Os pais observam que, antes das evacuações de maior volume, a criança fica ansiosa e corre para atrás do sofá. Nega queixas urinárias. Ao exame físico, peso e estatura próximos ao Z score 0, abdome distendido, dor leve à palpação de hipogástrio, com fezes palpáveis nessa região, fígado e baço não palpados. Assinale a alternativa que apresenta, corretamente, o manejo para esse quadro.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a ingestão de líquidos e limitar o consumo de fibras solúveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar tratamento com polietilenoglicol 4000 em dose de desimpactação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever o probiótico Saccharomyces Boulardii por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar dosagem de calprotectina fecal e colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tranquilizar os pais e esclarecer que o quadro é autolimitado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO CLÍNICO\n\nA criança apresenta um quadro clássico de constipação intestinal funcional, de acordo com os Critérios de Roma IV. O relato de que a criança fica ansiosa e se esconde atrás do sofá caracteriza o comportamento de retenção: a criança sente a vontade de evacuar, mas, por medo da dor, contrai o esfíncter e a musculatura pélvica para impedir a passagem das fezes. \n\nO surgimento de fezes líquidas na cueca (2 a 3 vezes ao dia) é chamado de escape fecal ou soiling. Isso ocorre por transbordamento: o reto está preenchido por uma massa fecal endurecida (fecaloma), e as fezes mais próximas, que ainda estão líquidas, passam ao redor desse bloqueio e saem de forma involuntária. A palpação de fezes no hipogástrio ao exame físico confirma a presença da impactação fecal.\n\nDISCUSSÃO DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. Embora a ingestão de fibras e líquidos seja importante na manutenção do tratamento, não se deve limitar o consumo de fibras solúveis. Além disso, mudanças na dieta isoladas não são capazes de desfazer um fecaloma já formado. O tratamento de uma criança impactada deve obrigatoriamente começar pela desimpactação medicamentosa.\n\nAlternativa b: Correta. Esta é a conduta de escolha. O manejo da constipação funcional crônica é dividido em: desimpactação (limpeza inicial), manutenção (para evitar nova formação de fecaloma) e treinamento de hábito intestinal. O Polietilenoglicol (PEG) 4000 é considerado o laxante osmótico de primeira escolha pela literatura internacional (como os consensos da NASPGHAN/ESPGHAN). Na presença de fecaloma palpável, inicia-se com a dose de desimpactação, que é mais elevada que a de manutenção.\n\nAlternativa c: Incorreta. O Saccharomyces boulardii é um probiótico indicado principalmente para diarreias agudas ou profilaxia de diarreia por antibióticos. Não há evidências científicas que comprovem o benefício de probióticos para a desimpactação ou para o tratamento da constipação funcional na infância.\n\nAlternativa d: Incorreta. O diagnóstico da constipação funcional é essencialmente clínico, baseado na anamnese e no exame físico. A calprotectina fecal e a colonoscopia são exames para investigar doenças orgânicas (como doença inflamatória intestinal). Como a criança apresenta crescimento adequado (Z score 0) e história clínica típica, exames invasivos são desnecessários e contraindicados neste momento.\n\nAlternativa e: Incorreta. A constipação funcional com escape fecal não é um quadro autolimitado. Se não houver intervenção médica e orientação familiar, o quadro tende a cronificar e piorar, gerando estresse psicossocial e dilatação permanente da ampola retal (megacólon funcional). O tratamento medicamentoso costuma ser prolongado, durando vários meses.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Constipação Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  },
+  {
+    "id": "AJUDA_4c54dc6b-1128-4188-b39c-665cf49f7845",
+    "originalId": "4c54dc6b-1128-4188-b39c-665cf49f7845",
+    "statement": "Você está avaliando um homem de 50 anos que apresenta dor abdominal e diarreia crônica. Refere também fadiga e dispneia aos esforços nos últimos dois meses. Ao exame físico, observa-se palidez cutaneomucosa ++/4+, sem icterícia, e fígado e baço não são palpáveis. O hemograma mostra anemia microcítica e hipocrômica com plaquetose. Assinale a alternativa que apresenta a conduta mais adequada para este caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar dosagem de ferro, ferritina, bilirrubinas e DHL, e iniciar sulfato ferroso junto às refeições.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar dosagem de ácido fólico, vitamina B12, contagem de reticulócitos e prescrever sulfato ferroso endovenoso devido à diarreia, reavaliando em três meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar imediatamente sulfato ferroso e solicitar eletroforese de hemoglobina para descartar traço talassêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar dosagem de ferro sérico e ferritina e iniciar investigação imediata da causa da anemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Solicitar pesquisa de anticorpos anti-célula parietal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO:\n\nO paciente apresenta um quadro de anemia microcítica e hipocrômica, associado a queixas gastrointestinais (dor abdominal e diarreia) e plaquetose reativa. Em um homem de 50 anos, este cenário clínico é altamente sugestivo de anemia ferropriva. O ponto fundamental para a prova de residência é entender que a anemia ferropriva em adultos não é um diagnóstico definitivo, mas um sinal de alerta que exige a descoberta da causa-base, que pode variar desde doenças malabsortivas (como doença celíaca ou doença de Crohn) até neoplasias do trato gastrointestinal.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A: Incorreta. Apesar de a dosagem de ferro e ferritina ser útil para confirmar a ferropenia, o erro da alternativa reside em focar apenas no tratamento medicamentoso e na dosagem de marcadores de hemólise (bilirrubinas e DHL), que não são a prioridade em uma anemia microcítica sem icterícia. O mais grave é não mencionar a investigação etiológica obrigatória para a idade do paciente.\n\nAlternativa B: Incorreta. A dosagem de ácido fólico e vitamina B12 é indicada para anemias macrocíticas (VCM elevado). O paciente em questão apresenta anemia microcítica. Além disso, a prescrição de ferro endovenoso e a reavaliação tardia (três meses) sem investigar a causa da diarreia e da dor abdominal são condutas inadequadas.\n\nAlternativa C: Incorreta. Iniciar o tratamento sem diagnóstico etiológico é um erro. A eletroforese de hemoglobina é usada para detectar talassemias, que são causas de anemia microcítica desde a infância. Em um paciente de 50 anos com sintomas de surgimento recente, a causa adquirida (perda de ferro ou malabsorção) é muito mais provável.\n\nAlternativa D: Correta. Esta alternativa segue os preceitos da boa prática clínica e do raciocínio propedêutico. Primeiro, confirmam-se os estoques de ferro (ferro sérico e ferritina). Simultaneamente, inicia-se a investigação imediata da causa da anemia, que neste paciente pode envolver exames como colonoscopia, endoscopia digestiva alta ou testes para síndromes malabsortivas, visando excluir patologias graves como o câncer colorretal.\n\nAlternativa E: Incorreta. A pesquisa de anticorpos anticélula parietal é utilizada na investigação de anemia perniciosa (deficiência de B12 por falta de fator intrínseco), que se manifesta como uma anemia macrocítica, o que não condiz com o hemograma apresentado (microcitose e hipocromia).",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  },
+  {
+    "id": "AJUDA_4c55a32f-949b-4fc8-a1d1-2b01b9c9dedb",
+    "originalId": "4c55a32f-949b-4fc8-a1d1-2b01b9c9dedb",
+    "statement": "Uma paciente apresenta-se com sangramento vaginal anormal e dor pélvica. A ultrassonografia revela espessamento endometrial. Qual é o diagnóstico inicial mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiperplasia endometrial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Miomatose uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adenomiose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. A endometriose é definida pela presença de tecido endometrial fora da cavidade uterina (como nos ovários, peritônio ou ligamentos uterinos). Os sintomas principais são dor pélvica crônica, dismenorreia intensa e infertilidade. Ao ultrassom, a endometriose manifesta-se tipicamente como endometriomas ovarianos ou nódulos em tecidos adjacentes, e não como um espessamento do endométrio dentro do útero.\n\nAlternativa b) Correta. A hiperplasia endometrial é a proliferação anormal das glândulas do endométrio, frequentemente causada pelo estímulo estrogênico persistente e sem a contraposição da progesterona. Clinicamente, manifesta-se com sangramento vaginal anormal. O achado ultrassonográfico clássico é o aumento da espessura da linha endometrial (espessamento endometrial), o que torna esta a principal suspeita diagnóstica inicial diante dos dados apresentados.\n\nAlternativa c) Incorreta. A miomatose uterina refere-se a tumores benignos originados no miométrio (músculo liso do útero). Embora causem sangramento uterino anormal e dor pélvica, o ultrassom identificaria nódulos sólidos, hipoecoicos e bem delimitados em diferentes localizações do útero (submucosos, intramurais ou subserosos), mas não se descreve primariamente como um espessamento endometrial.\n\nAlternativa d) Incorreta. A adenomiose ocorre quando há invasão de glândulas e estroma endometrial no miométrio. Os sintomas incluem dor e sangramento, porém os achados ultrassonográficos característicos envolvem o aumento global do volume uterino, assimetria entre as paredes uterinas, presença de pequenos cistos miometriais e perda da definição da zona juncional, diferenciando-se do espessamento isolado da camada interna (endométrio).",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  },
+  {
+    "id": "AJUDA_4c61abe4-ad94-4830-9c0f-73e4c496dc25",
+    "originalId": "4c61abe4-ad94-4830-9c0f-73e4c496dc25",
+    "statement": "A célula predominante na fase inflamatória tardia da cicatrização de feridas, responsável pelo desbridamento e secreção de fatores de crescimento essenciais para a fibroplasia, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neutrófilo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Macrófago.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Fibroblasto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Linfócito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A compreensão das fases da cicatrização é fundamental para a prática médica. O processo é dividido didaticamente em fases: inflamatória (precoce e tardia), proliferativa (ou de fibroplasia) e de maturação (ou remodelamento).\n\nA questão foca na fase inflamatória tardia e nas funções específicas de desbridamento e sinalização.\n\nAlternativa (a) Incorreta. Os neutrófilos são as primeiras células a chegar ao ferimento, predominando na fase inflamatória precoce (primeiras 24 a 48 horas). Sua principal função é o combate a microrganismos através da fagocitose e liberação de enzimas proteolíticas. Embora importantes, sua ausência não impede a cicatrização em feridas limpas, e eles não são os principais responsáveis pela transição para a fase de fibroplasia.\n\nAlternativa (b) Correta. O macrófago é considerado a célula-chave ou a \"maestrina\" da cicatrização. Ele surge na fase inflamatória tardia (atingindo o pico entre 48 e 72 horas) após a quimiotaxia dos monócitos sanguíneos. Suas funções são cruciais: realiza o desbridamento (limpeza de tecidos desvitalizados e restos de neutrófilos) e secreta diversos fatores de crescimento (como TGF-beta, PDGF e VEGF). Esses fatores são os sinais biológicos necessários para atrair fibroblastos e iniciar a produção de colágeno, caracterizando a transição para a fase proliferativa.\n\nAlternativa (c) Incorreta. O fibroblasto é a célula predominante da fase proliferativa (ou de fibroplasia), e não da fase inflamatória. Sua função principal é a síntese de colágeno e componentes da matriz extracelular para dar resistência estrutural à ferida. Ele responde aos estímulos enviados pelos macrófagos.\n\nAlternativa (d) Incorreta. Os linfócitos chegam tardiamente à ferida (por volta do 5º ao 7º dia). Embora desempenhem um papel na modulação do ambiente imunológico e na organização final da cicatriz, eles não são as células predominantes da fase inflamatória tardia, nem os principais responsáveis pelo desbridamento massivo ou pelo início da fibroplasia.\n\nEm resumo, o macrófago é a alternativa correta por ser a célula indispensável para a limpeza da ferida e para a emissão dos sinais químicos que permitem o início da fase de reconstrução tecidual.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:38.876Z"
+  }
+]

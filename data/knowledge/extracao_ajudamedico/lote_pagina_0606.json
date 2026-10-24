@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_a9beafcd-f7a1-4020-a081-a8ae4301f125",
+    "originalId": "a9beafcd-f7a1-4020-a081-a8ae4301f125",
+    "statement": "A relação entre densitometria óssea e fraturas é tão estreita que a Organização Mundial da Saúde (OMS) estabeleceu pontos de corte densitométricos para a classificação diagnóstica de osteoporose e osteopenia na população.\n\nAssinale a alternativa que representa informações corretas sobre o T-score.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É um parâmetro densitométrico que reflete risco absoluto em dez anos de ocorrer uma fratura osteoporótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É um parâmetro densitométrico que reflete risco relativo de ocorrer uma fratura osteoporótica em comparação com adultos da mesma idade e do mesmo sexo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É um parâmetro densitométrico que reflete risco relativo de ocorrer uma fratura osteoporótica em comparação com adultos jovens.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É um parâmetro densitométrico que reflete risco relativo em dez anos de ocorrer uma fratura osteoporótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quanto mais baixo (mais negativo) o T-score, maior a densidade óssea do paciente e menor o risco de fraturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a questão, é fundamental diferenciar os dois principais índices utilizados na densitometria óssea: o T-score e o Z-score.\n\nAlternativa (a) Incorreta. O parâmetro que reflete o risco absoluto de fraturas osteoporóticas em um período de dez anos é o FRAX (Fracture Risk Assessment Tool). O FRAX é um algoritmo que combina a densidade mineral óssea com diversos fatores de risco clínicos (como idade, histórico familiar e uso de corticoides) para estimar essa probabilidade. O T-score é apenas um dos componentes que podem ser inseridos nesse cálculo.\n\nAlternativa (b) Incorreta. A comparação da densidade óssea do paciente com a média esperada para pessoas da mesma idade, sexo e etnia define o Z-score. Este índice é particularmente importante na avaliação de crianças, adolescentes, mulheres na pré-menopausa e homens com menos de 50 anos, ajudando a identificar causas secundárias de perda óssea.\n\nAlternativa (c) Correta. O T-score é definido como o número de desvios-padrão acima ou abaixo da média da densidade mineral óssea de uma população de adultos jovens saudáveis (geralmente entre 20 e 30 anos, no pico de massa óssea) do mesmo sexo. De acordo com a Organização Mundial da Saúde (OMS), este é o parâmetro utilizado para o diagnóstico de osteopenia e osteoporose em mulheres na pós-menopausa e homens acima de 50 anos.\n\nAlternativa (d) Incorreta. O T-score não é uma medida de risco relativo temporal (dez anos). Ele é uma medida estatística de variação em relação a uma referência fixa (o pico de massa óssea). Embora um T-score baixo indique maior risco de fratura, ele não fornece, sozinho, uma porcentagem de risco em um intervalo de tempo específico.\n\nAlternativa (e) Incorreta. A relação é exatamente a oposta. O T-score é expresso em valores que podem ser negativos. Quanto mais baixo (ou seja, mais negativo, como -3,0 em comparação a -1,0) for o T-score, menor é a densidade óssea do paciente e, consequentemente, maior é a fragilidade óssea e o risco de fraturas.\n\nResumo dos critérios da OMS baseados no T-score:\nNormal: T-score até -1,0 desvio-padrão.\nOsteopenia: T-score entre -1,1 e -2,4 desvios-padrão.\nOsteoporose: T-score igual ou menor que -2,5 desvios-padrão.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  },
+  {
+    "id": "AJUDA_a9c409f2-e0ea-49af-9b0e-74613ae5810c",
+    "originalId": "a9c409f2-e0ea-49af-9b0e-74613ae5810c",
+    "statement": "Jovem de 17 anos, cuja coitarca foi há quatro anos, procura o atendimento ginecológico para orientação de anticoncepção. Desde o início de suas relações sexuais, ela sempre manteve coito com preservativo, e pretende manter essa prática. Porém, agora tem um namorado “mais firme”, e suas relações sexuais são mais frequentes. Assim, está preocupada com o risco de uma gestação indesejada. O detalhe é que seus pais não sabem dessa situação. Assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A indicação de método contraceptivo adicional poderá ser dispensada se houver o uso consistente de método de barreira;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nessa faixa etária, uma excelente indicação é a minipílula de progestagênio (nortisterona 0,35 mcg), pois não impacta no risco de tromboembolismo;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O método injetável de medroxiprogesterona de depósito, em injeções trimestrais, não deve ser indicado porque determina amenorreia e pode levar à esterilidade;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A inserção de endoceptivo liberador de levonorgestrel poderá ser efetuada após a assinatura do Termo de Assentimento, não sendo necessária a autorização dos pais ou responsáveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda dois temas fundamentais na ginecologia e na ética médica: a escolha de métodos contraceptivos em adolescentes e a autonomia desse grupo etário frente ao sigilo médico e à autorização dos pais.\n\nAlternativa A (Incorreta): Embora o preservativo seja essencial para a prevenção de Infecções Sexualmente Transmissíveis (ISTs), ele possui uma taxa de falha considerável no uso típico (cerca de 18%). Para uma jovem que busca evitar uma gestação indesejada e aumentou a frequência das relações, a estratégia de dupla proteção (preservativo somado a um método de alta eficácia) é a conduta ideal e recomendada.\n\nAlternativa B (Incorreta): A minipílula de noretisterona (0,35 mg) exige um rigor extremo no horário da tomada, com uma janela de tolerância de apenas 3 horas. Devido à rotina da maioria dos adolescentes, a taxa de falha por esquecimento ou atraso é elevada, não sendo a melhor indicação inicial. Se for escolhida uma pílula apenas de progestagênio, o desogestrel (75 mcg) seria preferível por permitir uma janela de 12 horas, mas ainda assim os métodos de longa duração (LARCs) seriam prioritários.\n\nAlternativa C (Incorreta): O injetável trimestral de medroxiprogesterona de depósito é um método eficaz que frequentemente causa amenorreia (ausência de menstruação), o que pode ser um benefício para muitas usuárias. No entanto, é falso afirmar que ele leva à esterilidade. O que ocorre é um possível atraso no retorno da fertilidade (em média de 6 a 10 meses após a última dose), mas o método é totalmente reversível.\n\nAlternativa D (Correta): De acordo com o Código de Ética Médica e o Estatuto da Criança e do Adolescente (ECA), o adolescente tem direito ao sigilo e à autonomia sobre sua saúde reprodutiva, desde que possua capacidade de discernimento para compreender sua condição e as orientações fornecidas. No caso de prescrição e inserção de métodos contraceptivos (incluindo o DIU ou endoceptivo de levonorgestrel), o médico deve garantir o sigilo e não é obrigatória a autorização ou presença dos pais, desde que o adolescente seja considerado capaz de decidir por si mesmo e que não haja risco de vida envolvido. O Termo de Assentimento é o documento no qual o menor de idade expressa sua concordância com o procedimento.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  },
+  {
+    "id": "AJUDA_a9d672f3-b957-4c9e-8872-2db9f132596e",
+    "originalId": "a9d672f3-b957-4c9e-8872-2db9f132596e",
+    "statement": "Diante de uma criança vítima de parada cardíaca com a identificação do ritmo chocável, a sequência de cargas a serem utilizadas para a reversão é a seguinte:\n\nO primeiro choque deve ser de ______. O segundo choque de ______, chegando a uma máxima de ______.\n\nAssinale a alternativa que apresenta a sequência correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1J/Kg, 2J/Kg, 5J/Kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2J/Kg, 4J/Kg, 8J/Kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2J/Kg, 4J/Kg, 10J/Kg.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1J/Kg, 2J/Kg, 4J/Kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "2J/Kg, 4J/Kg, 6J/Kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o Suporte Avançado de Vida em Pediatria (PALS), especificamente o manejo de ritmos chocáveis na parada cardiorrespiratória (PCR) infantil, que são a fibrilação ventricular (FV) e a taquicardia ventricular sem pulso (TVSP).\n\nDe acordo com as diretrizes da American Heart Association (AHA), a desfibrilação deve ser realizada seguindo uma progressão de carga para garantir a eficácia da reversão sem causar danos miocárdicos excessivos.\n\n1. Primeiro choque: a dose inicial recomendada é de 2 J/kg.\n2. Segundo choque: caso o ritmo persista, a carga deve ser aumentada para 4 J/kg.\n3. Choques subsequentes: para as tentativas seguintes, deve-se utilizar uma carga de pelo menos 4 J/kg, podendo ser aumentada progressivamente, respeitando-se, porém, o limite máximo de 10 J/kg ou a dose máxima recomendada para adultos.\n\nAnálise das alternativas:\n\na) Incorreta. A carga inicial de 1 J/kg é insuficiente para a desfibrilação pediátrica, e o valor máximo de 5 J/kg não corresponde ao limite estabelecido nos protocolos atuais.\n\nb) Incorreta. Embora os dois primeiros valores (2 e 4 J/kg) estejam corretos, o limite máximo indicado pela diretriz não é 8 J/kg, mas, sim, 10 J/kg.\n\nc) Correta. Esta alternativa reflete exatamente o que preconiza o protocolo PALS/AHA: início com 2 J/kg, progressão para 4 J/kg no segundo choque e um teto máximo de 10 J/kg para as cargas subsequentes.\n\nd) Incorreta. Assim como na alternativa A, inicia-se com uma carga muito baixa (1 J/kg) e apresenta-se uma progressão que termina precocemente em 4 J/kg.\n\ne) Incorreta. Os valores iniciais estão corretos, mas o limite de 6 J/kg está abaixo do potencial terapêutico máximo permitido (10 J/kg).\n\nGabarito: Alternativa (c).",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  },
+  {
+    "id": "AJUDA_a9d77701-dbbf-4850-8f8b-6eb7bb42aee1",
+    "originalId": "a9d77701-dbbf-4850-8f8b-6eb7bb42aee1",
+    "statement": "Acerca da condução do período expulsivo em partos cefálicos de baixo risco, assinale a alternativa que corresponde à correta intervenção nesse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realização de puxos espontâneos e proteção perineal, respeitando o tempo fisiológico do período expulsivo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Início de manobra de Kristeller para acelerar o período expulsivo quando houver progressão lenta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realização de puxos dirigidos e prolongados para otimizar o nascimento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realização sistemática de episiotomia para evitar lacerações graves do períneo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda as recomendações atuais para a assistência ao parto baseada em evidências científicas, focando na redução de intervenções desnecessárias e no respeito à fisiologia do nascimento.\n\nAlternativa (a) CORRETA: Esta alternativa está em total consonância com as diretrizes da Organização Mundial da Saúde (OMS) e do Ministério da Saúde. No período expulsivo de baixo risco, deve-se encorajar a mulher a seguir seus próprios impulsos de puxo (puxos espontâneos), em vez de comandos externos. A proteção perineal (técnicas para reduzir o risco de lacerações) e o respeito ao tempo biológico de cada binômio são pilares da assistência humanizada e segura, desde que a monitoração da vitalidade fetal esteja normal.\n\nAlternativa (b) INCORRETA: A manobra de Kristeller, que consiste na aplicação de pressão excessiva no fundo do útero, é considerada uma prática proscrita e não deve ser realizada. Ela não tem eficácia comprovada para acelerar o parto de forma segura e está associada a graves riscos, como rotura uterina, descolamento prematuro de placenta, traumas fetais e lacerações perineais graves.\n\nAlternativa (c) INCORRETA: O puxo dirigido (manobra de Valsalva orientada pelo profissional, com apneia prolongada) não é recomendado como rotina. Estudos demonstram que o puxo dirigido pode prejudicar a oxigenação fetal devido à redução do retorno venoso materno e aumentar o risco de danos ao assoalho pélvico e exaustão materna, sem oferecer vantagens reais sobre o puxo espontâneo.\n\nAlternativa (d) INCORRETA: A episiotomia sistemática (realizada em todos os partos ou na maioria deles) é contraindicada. A evidência científica atual demonstra que o uso rotineiro da técnica não previne lacerações graves e pode, inclusive, causar danos que não ocorreriam de forma espontânea. A recomendação é o uso restrito ou seletivo, indicado apenas em situações específicas (como necessidade de parto instrumentalizado ou sinais de sofrimento fetal agudo em que o períneo é o impedimento para o nascimento rápido).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  },
+  {
+    "id": "AJUDA_a9da1bfc-b797-432b-b519-afe0a96348f8",
+    "originalId": "a9da1bfc-b797-432b-b519-afe0a96348f8",
+    "statement": "O ultrassom é uma ferramenta de grande importância nas tomadas de decisão no pronto-socorro. Ao analisar um paciente em choque, encontrou-se um ventrículo esquerdo hiperdinâmico com sinal do Kissing Heart (Bomba); cava inferior de 19 mm com variação respiratória maior que 50% (tanque) e artérias sem alterações (canos).\nCom base nesses dados, assinale a alternativa que apresenta, correta e respectivamnete, a principal causa do choque e o provável protocolo utilizado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Choque hipovolêmico; RUSH.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Choque cardiogênico; FATE.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Choque distributivo; FATE.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Choque distributivo; POCUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Choque obstrutivo; POCUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\n\nPara compreender esta questão, devemos analisar os achados ultrassonográficos sob a ótica do Protocolo RUSH (Rapid Ultrasound for Shock and Hypotension), que foi desenhado especificamente para a diferenciação etiológica do choque no ambiente de emergência. O protocolo utiliza a mnemônica \"Pump, Tank, Pipes\" (Bomba, Tanque e Canos).\n\nAnálise dos dados do enunciado:\n\n1. Bomba (Ventrículo Esquerdo): O achado de ventrículo hiperdinâmico com o sinal do \"Kissing Heart\" ocorre quando as paredes ventriculares se tocam ao final da sístole devido à falta de volume intraventricular. Isso indica que o coração está funcionando com força máxima, mas está \"vazio\".\n2. Tanque (Veia Cava Inferior): Uma cava com diâmetro de 19 mm (limítrofe/normal) que apresenta colapsabilidade maior que 50% à inspiração é um marcador clássico de baixa pressão venosa central e responsividade a volume.\n3. Canos (Artérias): A ausência de alterações nas artérias (como aneurisma de aorta ou sinais de dissecção) exclui causas vasculares catastróficas óbvias de choque.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): O conjunto de coração hiperdinâmico (beijando as paredes) e veia cava colapsável é a tradução ultrassonográfica da hipovolemia severa. O protocolo que sistematiza a avaliação em Bomba, Tanque e Canos é exatamente o protocolo RUSH.\n\nAlternativa B (Incorreta): No choque cardiogênico, esperaríamos uma \"Bomba\" hipocontrátil (ventrículo com baixa fração de ejeção) e um \"Tanque\" cheio (veia cava superior a 20 mm e sem variação respiratória/pletórica). O protocolo FATE é focado em ecocardiografia direcionada, não abordando a tríade completa do RUSH.\n\nAlternativa C (Incorreta): No choque distributivo inicial (como na sepse), o coração pode estar hiperdinâmico, mas o protocolo RUSH é o nome específico da sistematização descrita (Bomba, Tanque, Canos). O FATE avalia principalmente função cardíaca e Focused Assessment with Sonography for Trauma (FAST) avalia líquido livre.\n\nAlternativa D (Incorreta): Embora o POCUS (Point-of-Care Ultrasound) seja o termo geral para o uso do ultrassom à beira leito, a questão pede o protocolo específico utilizado para manejo de choque que se divide em Bomba/Tanque/Canos, que é o RUSH. Além disso, os achados descritos são mais primariamente sugestivos de hipovolemia do que de um padrão distributivo puro.\n\nAlternativa E (Incorreta): No choque obstrutivo (como tamponamento cardíaco ou tromboembolismo pulmonar), os achados seriam diferentes: no tamponamento veríamos efusão pericárdica e colapso de câmaras direitas; no TEP, veríamos ventrículo direito dilatado. Em ambos, a veia cava estaria dilatada e não colapsável (Tanque cheio).\n\nConclusão: Os sinais clínicos de coração vazio (Kissing Heart) aliados a uma veia cava complacente definem o diagnóstico de choque hipovolêmico dentro da estruturação do protocolo RUSH.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  },
+  {
+    "id": "AJUDA_a9dbe8c4-ea98-4a17-92a6-33b38e9c06c9",
+    "originalId": "a9dbe8c4-ea98-4a17-92a6-33b38e9c06c9",
+    "statement": "Com relação à Síndrome nefrótica idiopática, assine a alternativa incorreta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acomete principalmente o pré-escolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acomete mais frequentemente o sexo masculino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Leva frequentemente ao consumo de complemento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Após o comprometimento podem ocorrer recidivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Síndrome Nefrótica Idiopática (SNI) na infância é representada majoritariamente pela Doença por Lesões Mínimas (DLM), correspondendo a cerca de 80% a 90% dos casos pediátricos.\n\nAnálise detalhada das alternativas:\n\nAlternativa a: Correta. A faixa etária clássica de acometimento da SNI é a idade pré-escolar, apresentando pico de incidência entre os 2 e 6 anos de idade.\n\nAlternativa b: Correta. Na infância, a doença acomete mais frequentemente o sexo masculino, com uma proporção em torno de 2 meninos para cada 1 menina. Essa diferença tende a se igualar na adolescência e na idade adulta.\n\nAlternativa c: Incorreta (Gabarito). A SNI por lesões mínimas cursa caracteristicamente com níveis séricos de complemento normais (C3 e C4 normais). A presença de consumo de complemento (hipocomplementemia) afasta o diagnóstico típico de SNI e direciona a investigação para outras glomerulopatias, como a Glomerulonefrite Difusa Aguda pós-estreptocócica (GNPE), a Nefrite Lúpica ou a Glomerulonefrite Membranoproliferativa.\n\nAlternativa d: Correta. Embora a maioria dos pacientes seja corticossensível e atinja remissão clínica inicial, o curso com recidivas é muito comum, ocorrendo em cerca de 60% a 80% das crianças ao longo do seguimento clínico.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  },
+  {
+    "id": "AJUDA_a9e4e4d7-463d-4ba8-b2b6-5d01725436f5",
+    "originalId": "a9e4e4d7-463d-4ba8-b2b6-5d01725436f5",
+    "statement": "O cálculo biliar pode ocasionar obstrução intestinal, principalmente, em qual segmento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "transição retossigmoideana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cólon transverso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cólon ascendente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "papila íleo-cecal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "jejuno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda uma complicação específica da colelitíase conhecida como íleo biliar. Essa condição ocorre quando um cálculo biliar de grandes dimensões (geralmente maior que 2,5 cm) migra da vesícula biliar para o trato gastrointestinal através de uma fístula colecistoentérica (mais comumente entre a vesícula e o duodeno).\n\nUma vez no lúmen intestinal, o cálculo progride distalmente até encontrar um local de estreitamento anatômico onde não consegue mais avançar, causando uma obstrução mecânica.\n\nAnálise das alternativas:\n\na) Incorreta. A transição retossigmoideana é um local comum de obstruções por outras causas, como volvo de sigmoide ou neoplasias, mas não é o local preferencial do íleo biliar. Para o cálculo chegar ao reto, ele teria que passar pela válvula ileocecal, que é muito mais estreita.\n\nb) Incorreta. O cólon transverso possui um lúmen significativamente maior que o do íleo terminal. Embora existam fístulas colecistocólicas, a maioria das obstruções por cálculo biliar ocorre antes de chegar ao intestino grosso.\n\nc) Incorreta. O cólon ascendente também apresenta um diâmetro levemente maior e não é o ponto de maior estreitamento do trajeto intestinal.\n\nd) Correta. A papila ou válvula ileocecal, juntamente com o íleo terminal, representa o segmento mais estreito de todo o intestino delgado. É neste local que cerca de 50% a 75% dos casos de íleo biliar ficam impactados, tornando-se o sítio clássico de obstrução nesta patologia.\n\ne) Incorreta. O jejuno possui um calibre maior que o íleo. Embora um cálculo muito volumoso possa ocasionalmente impactar no jejuno proximal, a anatomia favorece a progressão do cálculo até as porções mais distais e estreitas do intestino delgado (íleo).\n\nResumo: O quadro clínico clássico do íleo biliar inclui a Tríade de Rigler observada em exames de imagem: obstrução do delgado, pneumobilia (ar nas vias biliares) e visualização do cálculo biliar ectópico, sendo a região da válvula ileocecal o ponto de maior ocorrência.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  },
+  {
+    "id": "AJUDA_a9eee646-fa86-426b-80cb-1e2618eac071",
+    "originalId": "a9eee646-fa86-426b-80cb-1e2618eac071",
+    "statement": "A Política Nacional de Atenção Básica (PNAB) define os atributos essenciais e derivados da Atenção Primária à Saúde (APS). A longitudinalidade do cuidado (ou vínculo longitudinal) é um atributo central que se diferencia da continuidade do cuidado. A aplicação correta do conceito de longitudinalidade na prática da Estratégia Saúde da Família (eSF) ocorre quando:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A equipe de saúde assume a responsabilidade pelo acompanhamento do paciente ao longo do tempo, independentemente da presença ou ausência de doença, criando uma relação terapêutica de confiança e referência contínua.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O paciente é atendido pelo mesmo médico especialista focal sempre que apresenta a agudização de uma doença crônica específica, garantindo a coerência do tratamento farmacológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A unidade de saúde garante o atendimento de demanda espontânea no mesmo dia, assegurando o acesso imediato (primeiro contato) a todos os usuários que procuram o serviço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O sistema de prontuário eletrônico permite que o médico da Unidade de Pronto Atendimento (UPA) visualize as informações registradas pela equipe da UBS, garantindo a sequência das informações clínicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Gabarito: Alternativa (a)\n\nA longitudinalidade é um dos atributos essenciais da Atenção Primária à Saúde (APS) e se baseia no acompanhamento do paciente ao longo do tempo pela mesma equipe ou profissional de saúde. Diferente da simples continuidade do cuidado, que pode ser apenas uma sequência de consultas ou repasse de informações, a longitudinalidade pressupõe a existência de um vínculo interpessoal e de uma relação de confiança que se mantém independentemente da presença de doenças específicas.\n\nAlternativa (a): Correta. Esta alternativa descreve com precisão o conceito de longitudinalidade. O foco está na relação entre a equipe de saúde e a pessoa, e não apenas no tratamento de uma patologia. A equipe assume a responsabilidade pelo cuidado do indivíduo ao longo dos anos e em diferentes fases da vida, tornando-se a referência principal para suas necessidades de saúde.\n\nAlternativa (b): Incorreta. O atendimento por um especialista focal para tratar uma doença específica refere-se à continuidade do cuidado clínico especializado. A longitudinalidade da APS é exercida por uma equipe generalista (eSF) que cuida do paciente de forma integral, e não apenas de um sistema orgânico ou doença isolada.\n\nAlternativa (c): Incorreta. O atendimento de demanda espontânea e o acesso facilitado no mesmo dia caracterizam o atributo do Acesso ou Primeiro Contato. Embora o acesso seja necessário para que a longitudinalidade ocorra, eles não são sinônimos. O acesso garante a entrada no sistema, enquanto a longitudinalidade garante a permanência e o vínculo.\n\nAlternativa (d): Incorreta. O uso de prontuário eletrônico compartilhado entre diferentes pontos da rede, como a UPA e a UBS, é uma ferramenta que auxilia na Coordenação do Cuidado e na continuidade informacional. A longitudinalidade exige o contato humano e o vínculo temporal entre o paciente e sua equipe de referência na Unidade Básica de Saúde, o que não ocorre em um atendimento pontual de urgência.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  },
+  {
+    "id": "AJUDA_a9fde7fe-7a37-4b08-9505-d4adc46ef00c",
+    "originalId": "a9fde7fe-7a37-4b08-9505-d4adc46ef00c",
+    "statement": "A rotura uterina é uma complicação obstétrica rara, mas potencialmente fatal, que ocorre principalmente em mulheres com cesárea anterior, especialmente durante o trabalho de parto. O sinal ou sintoma que indica uma possível rotura uterina em uma gestante em trabalho de parto é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de contrações regulares e dor abdominal controlável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Distensão do segmento uterino e palpação do ligamento redondo retesado (sinal de Bandl-Frommel).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sangramento vaginal visível e dor abdominal leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento da frequência cardíaca materna sem alteração da pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO tema abordado é a rotura uterina, uma emergência obstétrica grave. É fundamental distinguir os sinais de iminência de rotura (quando o útero está prestes a romper) dos sinais de rotura consumada (quando a lesão já ocorreu). A questão foca nos sinais clínicos que precedem ou indicam a patologia durante o trabalho de parto.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: Contrações uterinas regulares e dor abdominal controlável são características fisiológicas de um trabalho de parto normal (eutócico). Na iminência de rotura, as contrações tornam-se excessivamente intensas (polissistolia) e a dor torna-se excruciante, mesmo entre as contrações, sinalizando que o segmento inferior do útero está sofrendo distensão excessiva.\n\nAlternativa (b) CORRETA: Esta alternativa descreve a Síndrome de Bandl-Frommel, que é o quadro clássico de iminência de rotura uterina. O sinal de Bandl (ou anel de Bandl) ocorre devido à distensão excessiva do segmento inferior do útero, criando um sulco visível e palpável que separa o corpo uterino (contraído) do segmento inferior (adelgaçado), dando ao útero um aspecto de ampulheta. O sinal de Frommel é a palpação dos ligamentos redondos retesados e deslocados para a face anterior do útero. Esses sinais indicam que a rotura é iminente e exigem intervenção imediata (geralmente cesariana de emergência).\n\nAlternativa (c) INCORRETA: Embora o sangramento vaginal possa ocorrer na rotura uterina, ele raramente é o sinal isolado e a dor abdominal associada à rotura nunca é classificada como leve. Na iminência de rotura, a dor é intensa; após a rotura consumada, a paciente pode referir uma dor súbita e lancinante (sinal de Clark), seguida por uma redução temporária da dor e parada das contrações, evoluindo rapidamente para choque hipovolêmico.\n\nAlternativa (d) INCORRETA: Alterações na frequência cardíaca materna e na pressão arterial são sinais tardios que indicam choque hipovolêmico decorrente de hemorragia interna após a rotura ter ocorrido (rotura consumada). Além disso, não são sinais específicos de rotura uterina, podendo ocorrer em outras complicações como descolamento prematuro de placenta ou hemorragias de outras causas. O sinal mais precoce de rotura uterina consumada, frequentemente, é a alteração da frequência cardíaca fetal (sofrimento fetal agudo).\n\nRESUMO DIDÁTICO:\n\nLembre-se da Síndrome de Bandl-Frommel para provas de residência:\n1. Sinal de Bandl: Útero em formato de ampulheta (anel de retração patológico).\n2. Sinal de Frommel: Ligamentos redondos retesados.\n\nEsses sinais indicam IMINÊNCIA de rotura. Se a rotura se CONSUMAR, os sinais principais passam a ser:\n- Sinal de Clark: Crepitação à palpação abdominal (enfisema subcutâneo).\n- Sinal de Reasens: Subida da apresentação fetal (o feto \"sobe\" ao sair da cavidade uterina para a abdominal).\n- Sofrimento fetal agudo e choque materno.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  },
+  {
+    "id": "AJUDA_aa1fb370-acdc-4222-a7bb-e949d4ebd020",
+    "originalId": "aa1fb370-acdc-4222-a7bb-e949d4ebd020",
+    "statement": "A febre representa uma das queixas mais frequentes nos atendimentos pediátricos. Estima-se que 20 % a 30 % das consultas pediátricas têm a febre como sintoma principal. No plantão da unidade de pronto atendimento, ao atender uma criança de 10 meses apresentando febre há dois dias (única queixa dos pais), o médico realiza exame físico completo buscando por sinais que possam ser utilizados para prever o grau de risco da doença. Nesta avaliação deve ser considerado como sinal de alerta, a presença de",
+    "options": [
+      {
+        "id": "A",
+        "text": "exantema maculopapular em tronco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "irritabilidade excessiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "frequência respiratória de 44 IRPM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "frequência cardíaca de 148 bpm.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a avaliação de uma criança com febre sem sinais localizatórios evidentes, focando na identificação de sinais de alerta (red flags) que indicam maior risco de doença bacteriana grave ou instabilidade clínica.\n\nAnálise das alternativas:\n\na) Incorreta. O exantema maculopapular no tronco, especialmente em lactentes, é frequentemente associado a quadros virais benignos, como o exantema súbito (roséola), que é muito comum nesta faixa etária após o desaparecimento da febre. O sinal de alerta cutâneo que indicaria gravidade seria a presença de petéquias ou púrpura (exantema não clareável à digitopressão), que pode sugerir meningococcemia ou outras sepses bacterianas.\n\nb) Correta. A irritabilidade excessiva, especialmente se for inconsolável ou alternada com letargia, é um marcador importante de toxicidade e comprometimento do sistema nervoso central ou sistêmico. Na avaliação pediátrica (Triângulo de Avaliação Pediátrica e Escala de Yale), o estado de alerta, a consolabilidade e a interação com os pais são critérios fundamentais para definir o risco da criança. Uma criança que não se acalma mesmo no colo dos pais apresenta um sinal clínico de alerta para doenças graves, como meningite ou sepse.\n\nc) Incorreta. Para uma criança de 10 meses (faixa etária de 2 a 12 meses), a Organização Mundial da Saúde define taquipneia como uma frequência respiratória maior ou igual a 50 incursões respiratórias por minuto (irpm). Portanto, 44 irpm está dentro da faixa de normalidade para a idade, especialmente considerando que a própria febre pode elevar levemente a frequência respiratória basal.\n\nd) Incorreta. A frequência cardíaca de 148 batimentos por minuto (bpm) é considerada normal para um lactente de 10 meses, cuja frequência cardíaca média varia entre 100 e 180 bpm quando acordado. Além disso, para cada grau de aumento na temperatura corporal, espera-se um aumento fisiológico na frequência cardíaca (cerca de 10 a 15 bpm por grau Celsius). Portanto, isoladamente, esse valor não indica sinal de alerta.\n\nConclusão: Entre as opções apresentadas, a alteração do estado mental e do comportamento (irritabilidade excessiva) é o parâmetro que mais fidedignamente aponta para um potencial risco de gravidade no quadro febril do lactente.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Febre na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:19.303Z"
+  }
+]

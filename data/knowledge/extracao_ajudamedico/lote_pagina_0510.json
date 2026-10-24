@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_8e13197d-1489-4f10-9e48-d91d68256940",
+    "originalId": "8e13197d-1489-4f10-9e48-d91d68256940",
+    "statement": "Que conduta, dentre as abaixo, é a mais adequada para um paciente de 80 anos com colecistite aguda moderada a grave, após drenagem percutânea da vesícula biliar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter tratamento clínico e contraindicar cirurgia devido à idade avançada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar colecistectomia se houver recorrência dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar colecistectomia precoce, preferencialmente dentro de 6-8 semanas após a drenagem percutânea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Adiar colecistectomia por, pelo menos, 6 meses, reduzindo os riscos cirúrgicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO caso descreve um paciente idoso com colecistite aguda que foi submetido à drenagem percutânea da vesícula biliar (colecistostomia). Essa medida é geralmente adotada como terapia de \"ponte\" para pacientes com quadros graves (Grau III de Tokyo) ou moderados (Grau II) que apresentam alto risco cirúrgico imediato ou falha no tratamento clínico inicial. O objetivo da drenagem é controlar a sepse e permitir o resfriamento do processo inflamatório.\n\nAlternativa A: Incorreta. A idade avançada não é, por si só, uma contraindicação para a cirurgia. O tratamento apenas clínico, sem a remoção da vesícula, está associado a altas taxas de recorrência (que podem chegar a 50% em pacientes idosos), muitas vezes com episódios mais graves que o inicial.\n\nAlternativa B: Incorreta. Esperar a recorrência dos sintomas é uma estratégia arriscada, pois submete um paciente já fragilizado a um novo estresse inflamatório e infeccioso agudo, o que aumenta a mortalidade. A conduta ideal é a programação da cirurgia em caráter eletivo após a melhora do quadro inicial.\n\nAlternativa C: Correta. Uma vez que o paciente estabilizou e o processo inflamatório agudo retrocedeu graças à drenagem e antibioticoterapia, a colecistectomia deve ser planejada. O intervalo de 6 a 8 semanas é o mais recomendado pela literatura e pelos consensos (como o de Tokyo - TG18). Esse período permite que a inflamação local diminua, facilitando a dissecção cirúrgica e reduzindo as chances de conversão para cirurgia aberta, além de dar tempo para a otimização das comorbidades do paciente.\n\nAlternativa D: Incorreta. Adiar a cirurgia por 6 meses é um tempo excessivo e desnecessário. Esse intervalo prolongado mantém o paciente em risco de novas complicações biliares (como colangite ou pancreatite) e obriga a manutenção do dreno de colecistostomia por um período que prejudica a qualidade de vida e aumenta o risco de infecções secundárias.\n\nRESUMO DIDÁTICO\nA colecistostomia percutânea é um procedimento temporário. Em pacientes que apresentam melhora clínica e ganham condições cirúrgicas, a colecistectomia videolaparoscópica deve ser realizada de forma programada (intervalar), preferencialmente entre 6 e 8 semanas após a drenagem, para prevenir a recorrência da doença biliar.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.016Z"
+  },
+  {
+    "id": "AJUDA_8e14abf1-61db-49ad-84aa-2e1e9001ab7b",
+    "originalId": "8e14abf1-61db-49ad-84aa-2e1e9001ab7b",
+    "statement": "Para obter informações sobre a detecção de casos de doenças tropicais negligenciadas referidas na questão 46 [“Um total de 583.960 casos de doenças tropicais negligenciadas (DTNs) foi detectado no quinquênio 2016-2020 no País...”], os pesquisadores utilizaram como fonte de dados:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Sistema de Informação de Agravos de Notificação (Sinan), destinado ao registro exclusivo de doenças tropicais negligenciadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O Sistema de Informação de Agravos de Notificação (Sinan), destinado ao registro de doenças e agravos de importância em saúde pública, dentre elas algumas doenças tropicais negligenciadas, constantes de Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O Sistema de Informações sobre Mortalidade (SIM), destinado ao registro de óbitos por doenças tropicais negligenciadas ocorridos em serviços públicos de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O Sistema de Informações Hospitalares do Sistema Único de Saúde (SIH/SUS), destinado ao registro de internações hospitalares em serviços privados de saúde, desde que o diagnóstico tenha sido uma doença tropical negligenciada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O Sistema de Informações Hospitalares do Sistema Único de Saúde (SIH/SUS), destinado ao registro de internações hospitalares em serviços públicos e privados de saúde, desde que o diagnóstico tenha sido uma doença tropical negligenciada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para a detecção de casos de doenças e agravos em saúde pública no Brasil, é fundamental conhecer os diferentes Sistemas de Informação em Saúde (SIS) e suas finalidades específicas.\n\nAlternativa (a) Incorreta: O Sistema de Informação de Agravos de Notificação (Sinan) é, de fato, o sistema utilizado para a vigilância epidemiológica, mas ele não é destinado ao registro exclusivo de doenças tropicais negligenciadas. O Sinan abrange uma lista extensa de doenças de notificação compulsória, que inclui desde doenças transmissíveis (como dengue, tuberculose e HIV) até agravos como violência e acidentes de trabalho.\n\nAlternativa (b) Correta: O Sinan é alimentado pela notificação e investigação de casos de doenças e agravos que constam na Lista Nacional de Notificação Compulsória. As doenças tropicais negligenciadas citadas (como hanseníase, doença de Chagas, leishmanioses, entre outras) fazem parte dessa lista oficial. Portanto, o Sinan é a fonte de dados correta para a obtenção de informações sobre a detecção (incidência e prevalência) desses casos no País.\n\nAlternativa (c) Incorreta: O Sistema de Informações sobre Mortalidade (SIM) tem como objetivo registrar os dados contidos nas Declarações de Óbito (DO). Embora seja essencial para calcular taxas de letalidade e mortalidade por doenças tropicais negligenciadas, ele não é a ferramenta para a detecção de casos novos em pacientes vivos. Além disso, o SIM registra óbitos ocorridos em qualquer local (domicílio, via pública ou hospitais), e não apenas em serviços públicos.\n\nAlternativa (d) Incorreta: O Sistema de Informações Hospitalares do SUS (SIH/SUS) registra as internações hospitalares financiadas pelo sistema público por meio da Autorização de Internação Hospitalar (AIH). O erro da alternativa está em afirmar que o sistema se destina ao registro em serviços privados de saúde (o SIH atende ao setor público e ao privado conveniado ao SUS) e no fato de ser um sistema focado em internações, o que deixaria de fora a grande maioria dos casos de doenças negligenciadas que são detectados e tratados em nível ambulatorial.\n\nAlternativa (e) Incorreta: Embora o SIH/SUS de fato registre internações em serviços públicos e privados conveniados, ele não é o sistema adequado para a detecção epidemiológica de casos de doenças tropicais negligenciadas. Muitas dessas patologias são crônicas, e o diagnóstico e o tratamento ocorrem na Atenção Primária ou em ambulatórios especializados, sem necessidade de hospitalização. Assim, o SIH captaria apenas uma parcela mínima e grave da doença, subestimando a real detecção de casos, tarefa que cabe ao Sinan.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.016Z"
+  },
+  {
+    "id": "AJUDA_8e1c5693-b7db-4ea2-a322-76c1446ca363",
+    "originalId": "8e1c5693-b7db-4ea2-a322-76c1446ca363",
+    "statement": "Menina, 6 anos de idade, apresenta telarca bilateral progressiva e aceleração da velocidade de crescimento. O exame físico mostra desenvolvimento mamário estágio M2 e a estatura no z-score +3 para a idade. Exame neurológico é normal. Assinale a alternativa que apresenta a conduta adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Análise do cariótipo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dosagem de hormônio do crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressonância magnética de SNC.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ultrassom pélvico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta puberdade precoce, definida pelo surgimento de caracteres sexuais secundários antes dos 8 anos de idade em meninas. A presença de telarca (M2 de Tanner) aos 6 anos, associada à aceleração da velocidade de crescimento (estatura no z-score +3), caracteriza uma puberdade precoce verdadeira e progressiva, com provável ativação prematura do eixo hipotálamo-hipófise-gonadal (Puberdade Precoce Central - PPC).\n\nEm meninas abaixo de 8 anos com puberdade precoce central progressiva (especialmente nas menores de 6 a 7 anos), a investigação por neuroimagem é mandatória para afastar lesões estruturais no sistema nervoso central, como hamartomas hipotalâmicos, gliomas ou outras neoplasias/malformações, mesmo na ausência de déficits neurológicos.\n\nJUSTIFICATIVA DAS ALTERNATIVAS:\n\nAlternativa A - Incorreta: A análise do cariótipo é indicada na investigação de atraso puberal associado a baixa estatura (como na Síndrome de Turner) ou em anomalias da diferenciação sexual (genitália ambígua), não tendo papel na propedêutica de puberdade precoce feminina típica.\n\nAlternativa B - Incorreta: O estirão de crescimento neste caso é mediado pelos esteroides sexuais (estrogênio), que estimulam o eixo somatotrófico e a proliferação da cartilagem de crescimento. A dosagem de GH não tem indicação na investigação de puberdade precoce.\n\nAlternativa C - Correta: A ressonância magnética do SNC (com foco na região hipotálamo-hipofisária) é o exame de escolha para identificar ou descartar causas orgânicas de puberdade precoce central. Embora a maioria dos casos em meninas seja idiopática, a idade precoce (6 anos) eleva a necessidade de descartar patologias estruturais.\n\nAlternativa D - Incorreta: O ultrassom pélvico pode demonstrar sinais de estímulo estrogênico (aumento do volume uterino e ovariano), ajudando a diferenciar puberdade precoce de telarca precoce isolada. Contudo, em uma puberdade já confirmada e progressiva, a prioridade máxima e o exame decisivo para definir a etiologia é a ressonância magnética do SNC.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.016Z"
+  },
+  {
+    "id": "AJUDA_8e207a76-e228-4662-81ff-72f8cbd35a37",
+    "originalId": "8e207a76-e228-4662-81ff-72f8cbd35a37",
+    "statement": "Em uma comunidade indígena atendida pela equipe de Saúde da Família, qual atuação da equipe promove a competência cultural e o cuidado efetivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integrar saberes tradicionais e biomedicina, construindo planos terapêuticos respeitando práticas culturais locais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Impor o modelo biomédico tradicional sem considerar as particularidades culturais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Evitar contato com as lideranças comunitárias para não influenciar decisões clínicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Padronizar protocolos usando somente as diretrizes clínicas nacionais, sem adaptação cultural.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o conceito de competência cultural e interculturalidade no contexto da saúde indígena, temas centrais para a atuação das equipes de Saúde da Família que trabalham com populações tradicionais no Brasil.\n\nAlternativa (a): Correta. A atuação efetiva em comunidades indígenas exige a prática da interculturalidade, que é o diálogo entre diferentes saberes. Integrar a biomedicina aos conhecimentos tradicionais (etnomedicina) permite a criação de um Plano Terapêutico Singular que faça sentido para o paciente dentro de sua cosmovisão. Isso aumenta a confiança na equipe e a adesão aos tratamentos propostos, respeitando a autonomia e os direitos desses povos.\n\nAlternativa (b): Incorreta. A imposição do modelo biomédico de forma isolada é uma prática etnocêntrica que desconsidera a cultura local. Essa postura cria barreiras de comunicação e distanciamento entre o serviço de saúde e a comunidade, resultando frequentemente em baixa adesão aos tratamentos e na negação do acesso à saúde de forma integral.\n\nAlternativa (c): Incorreta. A articulação com lideranças tradicionais, como caciques e pajés, é estratégica e necessária. Essas figuras exercem papel central na organização social e nos processos de cura da comunidade. O distanciamento das lideranças enfraquece o vínculo da equipe e impede a compreensão da dinâmica social da aldeia, prejudicando o planejamento das ações de saúde.\n\nAlternativa (d): Incorreta. Embora as diretrizes clínicas nacionais ofereçam a base científica para o cuidado, a aplicação rígida desses protocolos sem adaptação cultural é inadequada para povos indígenas. O Subsistema de Atenção à Saúde Indígena (SasiSUS) preconiza uma atenção diferenciada, que deve considerar as particularidades geográficas, linguísticas e culturais de cada etnia para garantir a equidade no atendimento.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.016Z"
+  },
+  {
+    "id": "AJUDA_8e24253b-8791-4d16-9f24-9c4dc56770ac",
+    "originalId": "8e24253b-8791-4d16-9f24-9c4dc56770ac",
+    "statement": "Roberto tem 80 anos e é um homem obeso, com hipertensão e diabetes, que tem uma vida ativa, sem limitações das suas atividades diárias, de idas ao clube, viagens aos fins de semana e acompanhamento de negócios junto aos filhos. Costuma fazer exame de rastreamento para câncer de próstata e, neste ano, voltou ao médico de família para solicitá-lo.\nAssinale a alternativa que descreve de forma completa as informações necessárias para decidir solicitar ou não o exame de rastreio, com base no conceito de prevenção quaternária.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Além da idade, é importante considerar a relação médico-paciente e compartilhar a decisão de realizar o rastreamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os antecedentes pessoais e familiares são suficientes para a decisão no caso específico de pacientes fora da faixa etária recomendada para o rastreamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É preciso avaliar expectativa de vida, além de comorbidades e antecedentes familiares, para ofertar a possibilidade de rastreamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Considerando as características do exame de PSA e a expectativa de vida, o rastreamento deve ser solicitado para o paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o rastreio do câncer de próstata em um idoso de 80 anos sob a ótica da prevenção quaternária. A prevenção quaternária define-se como a detecção de indivíduos em risco de intervenções médicas excessivas para protegê-los de novos danos médicos e sugerir-lhes alternativas eticamente aceitáveis. No contexto do câncer de próstata, o rastreamento é um tema sensível, pois o tratamento de tumores indolentes em pacientes com idade avançada pode causar mais prejuízos (como incontinência urinária e impotência) do que benefícios em sobrevida.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. Embora a relação médico-paciente e a decisão compartilhada sejam pilares da medicina de família, a alternativa é considerada incompleta para o que a questão pede. Para fundamentar a decisão técnica de oferecer ou não o rastreio, o médico precisa, primeiro, analisar parâmetros clínicos de prognóstico e sobrevida, que não são citados nesta opção.\n\nAlternativa b) Incorreta. Antecedentes pessoais e familiares são dados importantes, mas não são suficientes para a tomada de decisão em pacientes idosos. A idade avançada, por si só, já é um fator de risco para o câncer, mas o que define a utilidade do rastreio é se o paciente viverá o suficiente para se beneficiar do diagnóstico e tratamento precoces.\n\nAlternativa c) Correta. Esta alternativa é a mais completa e alinhada aos princípios da prevenção quaternária e às diretrizes de urologia e geriatria. O rastreio do câncer de próstata geralmente não é recomendado para homens com expectativa de vida inferior a 10 ou 15 anos. Roberto tem 80 anos e possui comorbidades (diabetes, obesidade e hipertensão). O médico deve avaliar se essas condições e sua idade limitam sua expectativa de vida de tal forma que um diagnóstico de câncer de próstata agora não alteraria sua mortalidade, evitando, assim, o sobrediagnóstico e o sobretratamento.\n\nAlternativa d) Incorreta. A alternativa afirma que o exame deve ser solicitado, o que é uma conduta precipitada. A maioria das diretrizes internacionais (como a USPSTF) e nacionais (como as do Ministério da Saúde) recomenda contra o rastreamento sistemático em homens acima de 75-80 anos, justamente porque o risco de danos supera os possíveis benefícios. O foco deve ser a discussão individualizada e não a solicitação automática.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.016Z"
+  },
+  {
+    "id": "AJUDA_8e2672e0-f976-4e49-b43a-4c5fdb70a19d",
+    "originalId": "8e2672e0-f976-4e49-b43a-4c5fdb70a19d",
+    "statement": "Paciente de 65 anos vem a consulta em pós-operatório de correção de fratura de quadril. Relata que há 2 meses escorregou enquanto realizava caminhada na rua e foi constatada fratura de fêmur. Fez a correção cirúrgica e está em reabilitação, com a fisioterapia. Nega comorbidades e etilismo. É tabagista de meia carteira há 20 anos. Relata menopausa aos 45 anos, sem uso de terapia de reposição hormonal. Estava em uso apenas de dipirona para dor. Ao exame físico, apresenta IMC de 27kg/m2. Ao realizar o FRAX 2.0, foi encontrado o gráfico a seguir: [Imagem de gráfico FRAX mostrando ponto na zona intermediária, logo abaixo do limite de intervenção]. Zona Intermediária: Mostra que os dados não foram suficientes para definir a indicação da terapia medicamentosa e sugere a necessidade de realização da densitometria óssea para aprimorar a avaliação. A conduta médica mais adequada para essa paciente, além de solicitar a densitometria óssea é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar resultado da densitometria para definir a conduta mais adequada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever um bifosfonato oral associado à suplementação de cálcio e vitamina D.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Incentivar a exposição ao sol, incentivar atividade física regular e cessar tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar suplementação de cálcio e vitamina D, associada a exercícios físicos de baixo impacto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto central para resolver esta questão não é a interpretação isolada do gráfico FRAX, mas sim o reconhecimento de um diagnóstico clínico evidente. De acordo com as diretrizes da National Osteoporosis Foundation (NOF) e da Associação Brasileira de Avaliação Óssea e Osteometabolismo (ABRASSO), o diagnóstico de osteoporose pode ser estabelecido de três formas: pela densitometria óssea (T-score igual ou inferior a -2,5), pelo alto risco no FRAX ou pela presença de uma fratura por fragilidade em sítio maior (fêmur ou vértebra), independentemente do resultado da densitometria.\n\nA paciente do caso tem 65 anos e sofreu uma fratura de fêmur ao escorregar na rua (trauma de baixo impacto), o que caracteriza uma fratura por fragilidade. Portanto, ela já tem o diagnóstico clínico de osteoporose e indicação formal de tratamento medicamentoso para reduzir o risco de novas fraturas, que é altíssimo nos primeiros dois anos após o evento inicial. O gráfico do FRAX na zona intermediária, neste contexto, serve apenas para reforçar a necessidade da densitometria para seguimento, mas não deve postergar o início da terapia.\n\nAnálise das alternativas:\n\na) Incorreta. Aguardar a densitometria atrasaria o tratamento de uma paciente que já possui diagnóstico clínico de osteoporose devido à fratura de quadril. O tratamento deve ser iniciado o quanto antes.\n\nb) Correta. A conduta padrão para pacientes com diagnóstico clínico de osteoporose por fratura de fragilidade é a introdução de terapia farmacológica (geralmente bifosfonatos como primeira linha, como o alendronato) associada à suplementação de cálcio e vitamina D, caso a ingestão dietética e os níveis séricos sejam insuficientes.\n\nc) Incorreta. Embora a cessação do tabagismo e a atividade física sejam fundamentais como medidas não farmacológicas, elas são insuficientes de forma isolada para uma paciente que já apresentou uma fratura maior de quadril.\n\nd) Incorreta. Apenas a suplementação de cálcio, vitamina D e exercícios não constituem o tratamento completo para osteoporose estabelecida com fratura prévia. É indispensável o uso de um agente antirreabsortivo (bifosfonato) para redução efetiva do risco de fraturas subsequentes. Além disso, exercícios de \"baixo impacto\" podem não ser tão eficazes para ganho de massa óssea quanto exercícios de resistência e carga, desde que supervisionados.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma Ortopédico",
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f69d9a055c48746e07f83fb1ae4b491ca7e026e083f11f5c9023dfed4ea39895.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_8e2672e0-f976-4e49-b43a-4c5fdb70a19d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.468Z"
+  },
+  {
+    "id": "AJUDA_8e2778d8-5ac6-429a-b863-2af0f0df3126",
+    "originalId": "8e2778d8-5ac6-429a-b863-2af0f0df3126",
+    "statement": "Uma paciente de 26 anos apresenta nódulo mamário único, móvel, fibroelástico, medindo 1,82 cm. A ultrassonografia evidencia lesão oval, paralela à pele, circunscrita e hipoecogênica, compatível com BI-RADS 3. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar acompanhamento com ultrassonografia a cada 6 meses por 2 anos, visando documentar estabilidade da lesão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Indicar core biopsy, pois toda lesão sólida palpável exige confirmação histológica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar mamografia para diferenciar fibroadenoma de tumor filoide, visto que o método tem alta acurácia para tumores fibroepiteliais em pacientes jovens.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar ressonância magnética para esclarecer discordância entre o exame clínico e a ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente descrita apresenta um quadro clínico e radiológico clássico de uma lesão provavelmente benigna, compatível com a classificação BI-RADS 3. A conduta em casos de nódulos mamários deve considerar a idade da paciente, as características físicas da lesão e os achados nos exames de imagem.\n\nAlternativa (a) Correta: A classificação BI-RADS 3 indica que a lesão tem um risco de malignidade inferior a 2%. Para esses casos, a conduta preconizada pelo Colégio Brasileiro de Radiologia e por diretrizes internacionais é o acompanhamento de curto prazo. O objetivo é documentar a estabilidade morfológica e dimensional da lesão. O protocolo padrão consiste em repetir o exame de imagem (no caso, a ultrassonografia) após 6 meses, seguido de novos controles aos 12 e 24 meses. Se a lesão permanecer estável por um período de 2 a 3 anos, ela pode ser reclassificada como BI-RADS 2 (benigna), retornando ao rastreamento habitual para a idade.\n\nAlternativa (b) Incorreta: A realização de biópsia (como a core biopsy) não é a conduta inicial mandatória para toda lesão sólida palpável. Se o exame físico é compatível com benignidade (móvel, fibroelástico) e o exame de imagem reforça essa impressão (BI-RADS 3), o acompanhamento é seguro. A biópsia seria reservada para lesões classificadas como BI-RADS 4 ou 5, ou se a lesão BI-RADS 3 apresentasse crescimento ou alteração de características durante o seguimento.\n\nAlternativa (c) Incorreta: A mamografia não é o exame de primeira linha para mulheres jovens (26 anos) devido à alta densidade glandular da mama nessa faixa etária, o que limita a sensibilidade do método. Além disso, a diferenciação entre fibroadenoma e tumor filoide é um desafio diagnóstico mesmo para patologistas, e a mamografia não possui acurácia superior à ultrassonografia para distinguir essas duas entidades fibroepiteliais, uma vez que ambas podem se apresentar como massas circunscritas.\n\nAlternativa (d) Incorreta: Não há discordância entre o exame clínico e a ultrassonografia neste caso. Ambos sugerem uma lesão benigna (provável fibroadenoma). A ressonância magnética é um exame de alta complexidade e custo, indicado para situações específicas como rastreamento de pacientes de alto risco genético, avaliação de implantes de silicone ou planejamento cirúrgico de câncer de mama confirmado, não sendo indicada para a avaliação de nódulos BI-RADS 3 em pacientes jovens sem fatores de risco.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doenças Benignas da Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.468Z"
+  },
+  {
+    "id": "AJUDA_8e387758-2e16-46b2-bf60-be198f904524",
+    "originalId": "8e387758-2e16-46b2-bf60-be198f904524",
+    "statement": "Pacientes politraumatizados em choque hemorrágico podem necessitar de um grande volume de transfusões num curto período. Como resultado, pode haver o acúmulo de substâncias presentes em cada bolsa que alterem a homeostasia do paciente. As alterações decorrentes do acúmulo de citrato presente nas hemotransfusões podem acarretar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hipernatremia e acidose metabólica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hipercalcemia e arritmias cardíacas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipocalcemia e distúrbios da coagulação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "hipermagnesemia e bradicardia acentuada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda as complicações metabólicas da transfusão maciça, especificamente o papel do citrato. O citrato é um conservante e anticoagulante padrão utilizado nas bolsas de sangue, cuja função principal é quelar o cálcio (ligar-se a ele) para impedir a coagulação do sangue estocado.\n\nAnálise das alternativas:\n\na) Incorreta. O acúmulo de citrato não causa hipernatremia. Quanto ao equilíbrio ácido-base, o metabolismo do citrato pelo fígado gera bicarbonato, o que pode levar, na verdade, a uma alcalose metabólica após a fase inicial de ressuscitação, e não à acidose metabólica (que costuma ser causada pelo choque e pela hipoperfusão tecidual do próprio trauma).\n\nb) Incorreta. O citrato é um quelante de cálcio. Portanto, ele se liga ao cálcio iônico circulante do paciente, reduzindo sua disponibilidade no sangue. O resultado é a hipocalcemia, e não a hipercalcemia. Embora arritmias cardíacas possam ocorrer devido aos distúrbios eletrolíticos (como o prolongamento do intervalo QT pela hipocalcemia), a premissa de hipercalcemia invalida a alternativa.\n\nc) Correta. Esta é a descrição clássica da toxicidade pelo citrato em transfusões de grande volume. O citrato em excesso liga-se ao cálcio iônico do paciente, provocando hipocalcemia. Como o cálcio é o Fator IV da cascata de coagulação, sua deficiência impede a formação adequada do coágulo, resultando em distúrbios de coagulação que agravam o sangramento do paciente politraumatizado (fazendo parte da chamada \"tríade letal\", junto com a acidose e a hipotermia).\n\nd) Incorreta. Além de quelar o cálcio, o citrato também pode se ligar ao magnésio, podendo levar à hipomagnesemia, e não à hipermagnesemia. A bradicardia não é o achado eletrocardiográfico primário esperado pela ação direta do citrato.\n\nResumo Didático:\nO citrato é o anticoagulante da bolsa de sangue. Ele funciona \"sequestrando\" o cálcio. Quando transfundimos muitas bolsas rapidamente, o fígado não consegue metabolizar o citrato com rapidez suficiente. Esse citrato livre no sangue do paciente \"sequestra\" o cálcio iônico dele. Sem cálcio iônico, o coração sofre (risco de arritmias e redução da contratilidade) e a coagulação para de funcionar, pois o cálcio é essencial para que as enzimas da coagulação atuem. Por isso, em protocolos de transfusão maciça, é rotina a reposição de cálcio (geralmente gluconato ou cloreto de cálcio).",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Trauma",
+      "Medicina Transfusional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.468Z"
+  },
+  {
+    "id": "AJUDA_8e446802-cccb-4a26-87cc-116fecbb3112",
+    "originalId": "8e446802-cccb-4a26-87cc-116fecbb3112",
+    "statement": "Você está trabalhando em uma Unidade de Pronto Atendimento e atende o paciente J., 48 anos, masculino, tabagista e obeso. Ele conta que, hoje pela manhã, pouco antes de sair para o trabalho, apresentou um quadro de dor torácica em aperto, de curta duração. Agora, no final do dia, a dor voltou com intensidade 9/10, irradiada para o braço esquerdo e acompanhada de sudorese e vômitos. Os sinais vitais e exame físico estão normais. O eletrocardiograma mostra bloqueio completo do ramo esquerdo do feixe de Hiss. O RX de tórax está normal. Das opções terapêuticas disponíveis abaixo, qual é a mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deixar em observação no leito da emergência com acesso venoso e oxigênio. Prescrever sintomáticos e aguardar resultados dos marcadores de necrose miocárdica para conduta definitiva;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever antitrombóticos e solicitar vaga de UTI;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever antitrombóticos e trombólise química (alteplase);",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar, via Central de Vagas, encaminhamento para avaliação com cardiologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é fundamental reconhecer um quadro clássico de Infarto Agudo do Miocárdio com Supradesnivelamento do segmento ST (IAMCSST) ou seu equivalente eletrocardiográfico. O paciente apresenta fatores de risco cardiovascular importantes (sexo masculino, idade, tabagismo e obesidade) e uma clínica típica de síndrome coronariana aguda: dor torácica intensa, em aperto, irradiada para o membro superior esquerdo, acompanhada de sintomas autonômicos (sudorese e vômitos).\n\nO ponto crucial da questão reside no achado do eletrocardiograma. De acordo com as diretrizes de cardiologia, a presença de Bloqueio de Ramo Esquerdo (BRE) novo, ou presumivelmente novo, em um paciente com dor torácica típica, deve ser interpretada como um equivalente de IAM com supra de ST. Nesses casos, a conduta deve ser a reperfusão imediata do miocárdio.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Diante de um paciente com clínica de infarto e equivalente de supra (BRE novo), nunca se deve aguardar o resultado dos marcadores de necrose miocárdica (como troponina) para iniciar o tratamento. O diagnóstico é clínico e eletrocardiográfico. A espera pelos exames laboratoriais atrasa a reperfusão e aumenta a mortalidade e as sequelas cardíacas.\n\nAlternativa b) Incorreta. Embora os antitrombóticos e a vaga em UTI sejam necessários, esta conduta é incompleta e passiva. O objetivo principal no IAMCSST ou BRE novo é abrir a artéria culpada por meio de terapia de reperfusão (química ou mecânica) o mais rápido possível.\n\nAlternativa c) Correta. Como o paciente está em uma Unidade de Pronto Atendimento (UPA) e apresenta um quadro de IAMCSST (pelo critério do BRE novo com dor típica), a terapia de reperfusão está indicada imediatamente. Caso o serviço não disponha de hemodinâmica para angioplastia primária em tempo hábil (geralmente até 120 minutos de transporte), a trombólise química com fibrinolíticos (como a alteplase), associada à dupla antiagregação plaquetária e anticoagulação, é a conduta de escolha para salvar o miocárdio.\n\nAlternativa d) Incorreta. O paciente está em uma emergência médica aguda. Encaminhá-lo via central de vagas para uma consulta ou avaliação posterior com cardiologista é uma conduta negligente, pois ignora a necessidade de intervenção imediata para desobstrução coronariana.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.468Z"
+  },
+  {
+    "id": "AJUDA_8e4639fa-1dfa-4a1f-91b7-ca115b7d1782",
+    "originalId": "8e4639fa-1dfa-4a1f-91b7-ca115b7d1782",
+    "statement": "A desidratação aguda na infância tem como causa principal perdas gastrointestinais por diarreia aguda. A introdução da terapêutica de hidratação oral (HO), associada com a melhora das condições sanitárias, nutricionais e vacinais, promoveram uma redução da morbimortalidade pela doença no Brasil. \n\nCom base nos conhecimentos médicos correlatos a respeito da desidratação e da terapêutica de hidratação oral, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na desidratação moderada, existem perdas de até 10% dos líquidos e sede intensa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Os parâmetros clínicos para avaliação do grau de desidratação são sede, mucosas, pele e presença de sangue nas fezes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Após uso da hidratação oral, deve-se suspender a dieta habitual e (ou) aleitamento materno da criança hidratada até a resolução completa do quadro diarreico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O objetivo do plano B é prevenir a desidratação no domicílio, e isso deve ser realizado pelos pais da criança.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) - Correta: A classificação do grau de desidratação na pediatria, adotada pelo Ministério da Saúde e pela Organização Mundial da Saúde (OMS), correlaciona os sinais clínicos com o percentual de perda de peso. A desidratação moderada (também chamada de \"algum grau de desidratação\") caracteriza-se por uma perda de peso estimada entre 5% e 10% em lactentes. Nesse estágio, a sede intensa é um dos sinais cardinais, observando-se que a criança bebe a solução de reidratação avidamente ou afoitamente.\n\nAlternativa (b) - Incorreta: Os parâmetros clínicos clássicos para avaliar a desidratação incluem o estado geral (alerta, irritado ou comatoso), os olhos (normais ou fundos), a presença de lágrimas, a umidade das mucosas (boca e língua), a sede e o sinal da prega (elasticidade da pele). A presença de sangue nas fezes caracteriza a disenteria, que é uma complicação infecciosa da diarreia, mas não é um sinal clínico utilizado para graduar a intensidade da perda de fluidos (desidratação).\n\nAlternativa (c) - Incorreta: As condutas atuais de manejo da diarreia aguda enfatizam que a alimentação deve ser mantida. O aleitamento materno nunca deve ser interrompido, devendo continuar inclusive durante a fase de reidratação oral. Para crianças que não mamam no peito, a dieta habitual deve ser reiniciada assim que a desidratação for corrigida, geralmente em 4 a 6 horas. Dietas restritivas ou \"de pausa\" são prejudiciais ao estado nutricional e não aceleram a cura.\n\nAlternativa (d) - Incorreta: Há uma inversão de conceitos nesta alternativa. O objetivo de prevenir a desidratação no domicílio pertence ao Plano A. O Plano B é indicado para tratar a criança que já apresenta sinais de desidratação. Por exigir observação clínica rigorosa e administração supervisionada da Solução de Reidratação Oral (SRO) em intervalos curtos, o Plano B deve ser obrigatoriamente realizado em uma unidade de saúde, e não no domicílio.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:31.468Z"
+  }
+]

@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_8460bb2c-700e-4e84-89c3-f29adf83bb90",
+    "originalId": "8460bb2c-700e-4e84-89c3-f29adf83bb90",
+    "statement": "Homem, 67 anos de idade, procurou PS com quadro de três dias febre, dor torácica em base direita ventilatório-dependente e tosse produtiva com expectoração esverdeada. Exame físico: REG, orientado, T axilar = 38 °C, PA = 110/70 mmHg, FC = 110 bpm, FR = 32 irpm, SpO2 = 95% em ar ambiente; expansibilidade torácica discretamente diminuída em hemitórax direito; na base direita, observa-se frêmito toracovocal aumentado, som respiratório abolido e broncofonia aumentada. Exames: glicemia = 420 mg/dL; ureia = 70 mg/dL; creatinina = 1,3 mg/dL; TGO = 24 U/L; TGP = 20 U/L; hemograma com 14.000 leucócitos com desvio à esquerda; PCR = 35 mg/dL. Aplique o escore de gravidade CURB-65 e indique o local de tratamento recomendado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "CURB-65 = 2; tratamento hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "CURB-65 = 4; tratamento em unidade de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "CURB-65 = 3; tratamento hospitalar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "CURB-65 = 2; tratamento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, devemos aplicar os critérios do escore CURB-65 ao quadro clínico apresentado. O CURB-65 é uma ferramenta de estratificação de risco para pacientes com Pneumonia Adquirida na Comunidade (PAC) que ajuda a definir o local de tratamento. Cada critério presente soma 1 ponto:\n\nC (Confusão mental): O paciente está orientado, portanto recebe 0 pontos.\nU (Ureia): O valor de 70 mg/dL está acima do ponto de corte (maior ou igual a 50 mg/dL), portanto recebe 1 ponto.\nR (Respiração): A frequência respiratória de 32 irpm é maior ou igual a 30, portanto recebe 1 ponto.\nB (Blood pressure / Pressão arterial): A pressão de 110/70 mmHg não atinge o critério de gravidade (que seria PAS menor que 90 ou PAD menor ou igual a 60 mmHg), portanto recebe 0 pontos.\n65 (Idade): O paciente tem 67 anos, atingindo o critério de 65 anos ou mais, portanto recebe 1 ponto.\n\nSomando os pontos: 0 (C) + 1 (U) + 1 (R) + 0 (B) + 1 (65) = 3 pontos.\n\nInterpretação do Escore:\n- 0 a 1 ponto: Baixo risco, tratamento ambulatorial.\n- 2 pontos: Risco moderado, considerar tratamento hospitalar.\n- 3 ou mais pontos: Alto risco, tratamento hospitalar obrigatório. Se a pontuação for 4 ou 5, deve-se avaliar a necessidade de Unidade de Terapia Intensiva (UTI).\n\nAnálise das alternativas:\n\na) Incorreta. O cálculo do escore resultou em 3 pontos, e não 2. Os pontos foram atribuídos pela ureia elevada, taquipneia e idade.\nb) Incorreta. O cálculo do escore resultou em 3 pontos. Embora o paciente precise de internação, o escore 4 ou 5 é o que mais frequentemente indica a necessidade de UTI pelo CURB-65 (além dos critérios da ATS/IDSA).\nc) Correta. O escore é 3 (Ureia + FR + Idade), e a recomendação padrão para essa pontuação é o tratamento em ambiente hospitalar devido ao maior risco de mortalidade.\nd) Incorreta. O cálculo do escore está errado (é 3), e o tratamento ambulatorial seria inadequado e inseguro para um paciente com essa pontuação e comorbidades (glicemia muito elevada).",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.330Z"
+  },
+  {
+    "id": "AJUDA_8467d166-afff-4531-aa8a-d0ca971214e6",
+    "originalId": "8467d166-afff-4531-aa8a-d0ca971214e6",
+    "statement": "Os tumores abdominais em crianças apresentam etiologia variada, cujo comportamento depende de sua histogênese, localização e relações com órgãos vizinhos. Sabendo disso, marque a alternativa mais viável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A história clínica e o exame físico, mesmo realizados com rigor, nunca fornecerão subsídios sobre a natureza do tumor, sendo necessários exames de imagem imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A avaliação de tumores abdominais não requer urgência, pois dificilmente a massa é maligna, mesmo quando comprime órgãos vitais e/ou quando existe a presença de hemorragia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No lactente e na criança existe um aumento significativo dos tumores benignos, sendo que sua localização no abdome já sugere benignidade, ocasionando grande tranquilidade para médico e família.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tumores ou massas detectados no período neonatal são, na grande maioria das vezes, de natureza benigna, correspondendo em sua quase totalidade a malformações e defeitos do desenvolvimento embrionário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão trata da abordagem diagnóstica e da epidemiologia das massas abdominais na faixa etária pediátrica, exigindo o conhecimento sobre as principais etiologias de acordo com a idade do paciente.\n\nAlternativa (a) Incorreta: A história clínica e o exame físico são fundamentais e fornecem subsídios valiosos. A idade da criança é um dos preditores mais importantes da etiologia. Ao exame físico, características como a mobilidade da massa, a consistência e o fato de cruzar ou não a linha média (típico do neuroblastoma e raro no tumor de Wilms) direcionam o raciocínio clínico antes mesmo da realização de exames de imagem.\n\nAlternativa (b) Incorreta: Massas abdominais em crianças exigem investigação célere. A possibilidade de malignidade é considerável em diversas faixas etárias. Além disso, complicações como compressão de estruturas vitais, hipertensão renovascular ou hemorragia intratumoral (comum em neuroblastomas ou rotura de tumores de Wilms) configuram situações de urgência.\n\nAlternativa (c) Incorreta: Embora existam muitos tumores benignos, a incidência de tumores sólidos malignos no abdome infantil é significativa. O diagnóstico de uma massa abdominal gera necessidade de investigação imediata e angústia familiar, não havendo espaço para \"grande tranquilidade\" até que a natureza da lesão seja esclarecida. A localização ajuda no diagnóstico diferencial, mas não é garantia de benignidade.\n\nAlternativa (d) Correta: No período neonatal, a maioria das massas abdominais palpáveis é de natureza benigna. Cerca de 75% dessas massas têm origem no trato geniturinário, sendo a hidronefrose e o rim multicístico displásico as causas mais frequentes. Essas condições representam malformações congênitas ou defeitos do desenvolvimento, e não processos neoplásicos malignos, que são muito mais raros nesta fase específica da vida quando comparados a crianças maiores.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.330Z"
+  },
+  {
+    "id": "AJUDA_846a3d50-efa4-4b82-9fca-4a82009a11fd",
+    "originalId": "846a3d50-efa4-4b82-9fca-4a82009a11fd",
+    "statement": "Hans Rosling, em suas análises sobre saúde global e desenvolvimento sustentável, enfatiza a importância de dados estatísticos na compreensão das desigualdades sociais. Qual das seguintes afirmações reflete corretamente um princípio central da teoria de Rosling sobre saúde global?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O aumento da renda per capita é o único determinante da melhoria na saúde pública.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As intervenções de saúde devem ser focadas exclusivamente em doenças infecciosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A educação e o acesso à informação são fundamentais para a redução das desigualdades em saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O crescimento econômico não influencia a longevidade da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A melhoria na saúde global é irrelevante para o desenvolvimento econômico dos países.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Hans Rosling foi um médico e estatístico sueco que revolucionou a forma como entendemos a saúde pública global, utilizando dados para combater preconceitos e visões obsoletas sobre o desenvolvimento das nações. A compreensão de sua teoria exige que o estudante reconheça que a saúde e o desenvolvimento não são fenômenos isolados ou puramente econômicos.\n\nAlternativa (a): Incorreta. Embora a renda per capita tenha uma correlação forte com a saúde, Rosling demonstrou que ela não é o único determinante. Países com o mesmo nível de renda podem apresentar indicadores de saúde drasticamente diferentes. Fatores como políticas públicas, acesso a serviços básicos e estabilidade política desempenham papéis cruciais.\n\nAlternativa (b): Incorreta. A abordagem de Rosling foca na transição epidemiológica. Ele enfatizava que, à medida que os países avançam nos níveis de renda, o perfil de doenças muda das infecciosas para as doenças crônicas não transmissíveis. Portanto, as intervenções devem ser adaptadas ao contexto específico de cada população e não focadas exclusivamente em um único grupo de doenças.\n\nAlternativa (c): Correta. Este é um princípio central da teoria de Rosling e de seu trabalho com a Fundação Gapminder. Ele defendia que o progresso social é impulsionado pelo conhecimento. A educação, especialmente a alfabetização feminina, tem um impacto direto na redução da mortalidade infantil e no controle da natalidade. Além disso, o acesso à informação baseada em dados reais (Factfulness) permite que gestores identifiquem onde as desigualdades são maiores e ajam de forma eficiente.\n\nAlternativa (d): Incorreta. Rosling utilizava gráficos de dispersão (bolhas) para mostrar que existe, sim, uma influência direta entre o crescimento econômico e a longevidade. Historicamente, à medida que os países enriquecem, a expectativa de vida tende a subir, embora ele ressaltasse que é possível alcançar ganhos em saúde mesmo com recursos limitados através de tecnologias simples como vacinas e saneamento.\n\nAlternativa (e): Incorreta. Na visão de Rosling, a saúde não é apenas um resultado do desenvolvimento, mas um motor para ele. Uma população saudável é mais produtiva, e a redução da mortalidade infantil é o primeiro passo para a estabilização demográfica, o que cria condições favoráveis para o crescimento econômico sustentável. Portanto, a saúde é extremamente relevante para o desenvolvimento econômico.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.330Z"
+  },
+  {
+    "id": "AJUDA_847ac520-0aeb-4100-b8d3-7c6b09bba234",
+    "originalId": "847ac520-0aeb-4100-b8d3-7c6b09bba234",
+    "statement": "Primigesta de 30 semanas de idade gestacional, em seguimento de pré-natal de alto risco devido ao diabetes mellitus tipo 2, retorna à consulta de pré-natal, sem queixas clínicas e obstétricas. \nPaciente em uso:\nInsulina Neutral Protamine Hagedorn (NPH): 16 UI às 7:00h, 14 UI às 12:00h, 14 UI às 22:00h \nInsulina Regular: 10 UI 30 minutos antes do café da manhã, 10 UI 30 minutos antes do almoço, 10 UI 30 minutos antes do jantar.\nTerapia nutricional: café da manhã às 7:00h, lanche da manhã às 10:00h, almoço às 12:00h, lanche da tarde às 16:00h, jantar às 18h30, lanche noturno às 22:00h.\nExame físico geral e obstétrico dentro dos padrões de normalidade. Ganho de peso de 150 gramas em 7 dias.\nA avaliação da monitorização glicêmica da última semana está demonstrada na figura abaixo:\n\nQual a conduta mais adequada em relação ao controle glicêmico desta paciente, além do reforço de orientação sobre terapia nutricional e programa de atividade física?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar insulina NPH no café da manhã, almoço e noturna, reduzir regular no café da manhã e jantar e aumentar do almoço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter as doses administradas atualmente de insulina NPH e de insulina regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar NPH noturna, reduzir no café da manhã e manter no almoço, aumentar regular no café da manhã e almoço e reduzir no jantar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Manter doses de insulina NPH em todos os horários e aumentar doses de insulina regular no café da manhã, almoço e reduzir no jantar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para ajustar a insulinoterapia na gestante com diabetes mellitus tipo 2, devemos correlacionar o perfil de monitorização contínua de glicose da imagem com o esquema terapêutico e os horários das refeições:\n\n1. Madrugada e jejum (00:00 às 06:00): Observa-se que a mediana da glicemia está elevada, ultrapassando o limite superior desejado. Isso indica necessidade de aumentar a dose de insulina NPH noturna (aplicada às 22:00).\n\n2. Período da manhã (08:00 às 12:00): O gráfico superior mostra pico glicêmico após o café da manhã, enquanto o gráfico inferior demonstra múltiplos eventos de hipoglicemia entre 08:00 e 12:00, momento em que ocorre o pico de ação da NPH matinal. Conduta: aumentar a insulina regular do café da manhã (para cobrir o pico pós-prandial) e reduzir a NPH das 07:00 (para evitar as hipoglicemias matinais tardias).\n\n3. Período do almoço e tarde (12:00 às 18:00): O gráfico superior registra uma elevação glicêmica importante após o almoço, enquanto a glicemia basal da tarde se mantém estável. Conduta: aumentar a insulina regular pré-almoço e manter a NPH das 12:00.\n\n4. Período pós-jantar (19:00 às 22:00): O gráfico inferior mostra novos episódios de hipoglicemia após a refeição noturna. Conduta: reduzir a insulina regular pré-jantar.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. Aumentar a NPH no café da manhã e reduzir a regular pioraria a hiperglicemia pós-prandial e agravaria as hipoglicemias matinais já existentes.\n\nAlternativa b: Incorreta. A paciente apresenta 32% do tempo acima da meta e 5% em hipoglicemia (9 eventos), o que exige ajuste terapêutico imediato para segurança materno-fetal.\n\nAlternativa c: Correta. Propõe exatamente a conduta adequada para cada período: aumentar a NPH noturna para controlar a glicemia de jejum; reduzir a NPH da manhã e a regular do jantar para cessar os episódios de hipoglicemia; e aumentar a regular no café e no almoço para controlar os picos pós-prandiais.\n\nAlternativa d: Incorreta. Manter as doses de NPH da manhã e da noite perpetuaria a hiperglicemia da madrugada e o risco de hipoglicemia no fim da manhã.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/36f36a5b70105c16edeca0929fc387eec98783b2f64163e992dfd6da386481d4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_847ac520-0aeb-4100-b8d3-7c6b09bba234_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.736Z"
+  },
+  {
+    "id": "AJUDA_84810e92-f072-4ba1-8958-70e36aec56e5",
+    "originalId": "84810e92-f072-4ba1-8958-70e36aec56e5",
+    "statement": "Em relação ao tratamento de transtornos depressivos em crianças e adolescentes, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para casos leves, em geral a recomendação não costuma incluir o uso de abordagens farmacológicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O principal grupo de antidepressivos utilizados na população pediátrica é o dos inibidores seletivos da recaptação da serotonina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Crianças e adolescentes com depressão apresentam uma resposta menos expressiva ao placebo em comparação à população adulta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Exceto pelo emprego de dosagens iniciais mais baixas para evitar efeitos colaterais, o uso de antidepressivos em crianças e adolescentes geralmente segue as mesmas doses utilizadas em adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa C é a incorreta e, portanto, o gabarito da questão. Na psiquiatria da infância e adolescência, observa-se que essa população apresenta uma resposta ao placebo significativamente ALTA em ensaios clínicos, muitas vezes superior à resposta observada em adultos. Esse fenômeno é um dos maiores desafios para demonstrar a eficácia superior dos antidepressivos em relação ao placebo em estudos com crianças e adolescentes, exigindo amostras maiores e desenhos de estudo mais rigorosos.\n\nA alternativa A está correta porque, em casos de depressão leve em crianças e adolescentes, as diretrizes clínicas recomendam inicialmente intervenções psicossociais, psicoterapia (como a Terapia Cognitivo-Comportamental ou Terapia Interpessoal) e monitoramento clínico. O tratamento farmacológico é geralmente reservado para casos moderados a graves ou quando não há resposta às intervenções iniciais.\n\nA alternativa B está correta. Os Inibidores Seletivos da Recaptação da Serotonina (ISRS) constituem a primeira linha de tratamento farmacológico para a depressão pediátrica. A fluoxetina, especificamente, é o fármaco com maior evidência de eficácia e segurança, sendo frequentemente a primeira escolha com aprovação de agências reguladoras para esta faixa etária.\n\nA alternativa D está correta. A recomendação prática é começar o tratamento com doses baixas (estratégia \"start low, go slow\") para monitorar a tolerabilidade e evitar efeitos colaterais como ativação psicomotora ou distúrbios gastrointestinais. No entanto, após o período de ajuste inicial, as doses terapêuticas necessárias para atingir a remissão dos sintomas em adolescentes costumam ser equivalentes às doses utilizadas em pacientes adultos, devido ao metabolismo hepático eficiente e à taxa de eliminação da droga nessa população.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Transtornos do Humor",
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.736Z"
+  },
+  {
+    "id": "AJUDA_8482aa69-52b6-4e2a-826e-62aa7fd9d7c7",
+    "originalId": "8482aa69-52b6-4e2a-826e-62aa7fd9d7c7",
+    "statement": "Uma mulher de 35 anos foi socorrida pelo resgate após incêndio no seu local de trabalho. A paciente trabalhava em um ambiente pequeno e fechado e foi retirada do local, agitada e confusa, após vinte minutos do início do incêndio. Sinais vitais no local: pressão arterial de 120 x 70 mmHg, frequência cardíaca de 95 bpm, frequência respiratória de 22 ipm, saturação de O2 de 96% em ar ambiente. Chega ao serviço de emergência em prancha rígida, com colar cervical e máscara de O2 com fluxo de 12 L/min. Queixa-se de dor em face e tórax. Respiração sem ruídos. Queimadura de face e região anterior e superior do tórax não circunferencial, saturação de O2 de 98%. Escala de coma de Glasgow: AO 4 RV 5 RM 6.\n\nDiante desse quadro, assinale a alternativa que descreve corretamente alteração(ões) do exame físico que é(são) indício(s) de gravidade e, respectivamente, a conduta prioritária no atendimento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cílios e vibrissas queimadas; a intubação orotraqueal é indicada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Escarro carbonáceo; a aspiração da orofaringe é necessária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rouquidão ao falar; a utilização de spray de lidocaína trata essa condição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fuligem em cavidade oral; a remoção mecânica reduz a inflamação local.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo inicial de um paciente vítima de queimadura com foco em lesão por inalação. O cenário descrito apresenta uma paciente que permaneceu em ambiente fechado durante um incêndio por tempo prolongado (vinte minutos) e apresenta queimaduras na face e no tórax. Esses fatores são indicadores clássicos de alto risco para lesão térmica das vias aéreas superiores e intoxicação por gases.\n\nAlternativa (a): Esta é a alternativa correta. Em vítimas de incêndio, a presença de cílios e vibrissas (pelos nasais) chamuscados, associada a queimaduras na face e história de confinamento, é um sinal clínico preditor de lesão térmica das vias aéreas superiores. Como o edema inflamatório nessas regiões é progressivo e pode levar à obstrução total da passagem de ar em poucas horas, a conduta recomendada é a intubação orotraqueal precoce (preventiva). Aguardar o surgimento de sinais de insuficiência respiratória pode tornar a intubação tecnicamente difícil ou impossível devido ao inchaço maciço.\n\nAlternativa (b): Incorreta. O escarro carbonáceo (presença de fuligem no muco expelido) é, de fato, um sinal de que houve inalação de produtos da combustão. No entanto, a conduta de realizar apenas a aspiração da orofaringe é insuficiente. O escarro carbonáceo é um indicativo para a avaliação da árvore traqueobrônquica e, frequentemente, para a proteção definitiva da via aérea, e não apenas para limpeza local de secreções.\n\nAlternativa (c): Incorreta. A rouquidão em um paciente queimado é um sinal de alerta de gravidade extrema, indicando que já existe edema nas cordas vocais ou na laringe. O uso de spray de lidocaína não trata o processo inflamatório nem o edema; ele é apenas um anestésico local. Diante de rouquidão ou estridor, a conduta imediata deve ser o estabelecimento de uma via aérea artificial.\n\nAlternativa (d): Incorreta. A presença de fuligem na cavidade oral confirma que a paciente foi exposta à fumaça, mas a remoção mecânica dessa fuligem não tem impacto na redução da inflamação local ou sistêmica causada pela queimadura. A inflamação é decorrente do dano térmico e químico tecidual, e a conduta prioritária deve focar na manutenção da patência respiratória e na estabilização hemodinâmica.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Queimaduras",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.736Z"
+  },
+  {
+    "id": "AJUDA_8488bc1a-166c-456a-89cb-a56622ed393e",
+    "originalId": "8488bc1a-166c-456a-89cb-a56622ed393e",
+    "statement": "Um lactente de 10 meses de vida foi levado à consulta ambulatorial. A mãe referiu alimentação predominante com leite de vaca integral desde os quatro meses, bem como palidez progressiva. Ao exame, o paciente mostrava-se ativo, com palidez cutânea leve, sem sopros; FC = 124 bpm, FR = 30 irpm, SpO2 = 98%, e peso e estatura adequados. Hemograma mostrou Hb = 8,7 g/dL; VCM = 68 fL e RDW aumentado. A conduta terapêutica inicial mais adequada para esse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "transfusão de concentrado de hemácias imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "início de suplemento de ácido fólico isoladamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "suplementação de ferro oral na dose terapêutica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "encaminhamento para investigação de doenças genéticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso:\nO paciente apresenta um quadro típico de anemia ferropriva, a causa mais comum de anemia na infância. Os pontos-chave para o diagnóstico são a idade (lactente), a história alimentar (uso de leite de vaca integral desde os 4 meses, que possui baixa biodisponibilidade de ferro e pode causar micro-hemorragias intestinais) e os achados laboratoriais: hemoglobina baixa (8,7 g/dL), microcitose (VCM de 68 fL) e anisocitose (RDW aumentado).\n\nAlternativa a) Incorreta. A transfusão de concentrado de hemácias é indicada apenas em casos de anemia grave (geralmente Hb menor que 7 g/dL) ou quando há sinais de instabilidade hemodinâmica e insuficiência cardíaca (como dispneia ou taquicardia extrema). O lactente está clínica e hemodinamicamente estável e ativo.\n\nAlternativa b) Incorreta. A suplementação de ácido fólico é o tratamento para anemia megaloblástica, que se caracteriza por macrocitose (VCM elevado). O quadro do paciente é de microcitose (VCM baixo), o que aponta para deficiência de ferro.\n\nAlternativa c) Correta. A conduta inicial para anemia ferropriva confirmada por erro alimentar é a reposição de ferro por via oral em dose terapêutica (geralmente de 3 a 6 mg/kg/dia de ferro elementar), associada à orientação nutricional para correção da dieta, como a suspensão do leite de vaca integral.\n\nAlternativa d) Incorreta. Investigações de causas genéticas, como talassemias, são passos secundários. Elas são consideradas se não houver resposta adequada ao tratamento com ferro ou se os índices hematimétricos sugerirem fortemente essas condições (como microcitose importante com RDW normal), o que não condiz com a história clínica de erro alimentar e RDW elevado deste paciente.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Aleitamento Materno",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.736Z"
+  },
+  {
+    "id": "AJUDA_8488d8d4-ef6f-4128-b012-fb4fa31fa701",
+    "originalId": "8488d8d4-ef6f-4128-b012-fb4fa31fa701",
+    "statement": "A endometriose é uma afecção clínica e recorrente, caracterizada pela presença de tecido endometrial fora da cavidade uterina. Em relação a essa doença, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O dionogeste tem efeito direto sobre focos de endometriose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Análogos do GnRH atuam diretamente sobre tecido endometrial ectópico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Levonorgestrel intrauterino apresenta efeito direto sobre endometriomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Etinil estradiol promove atrofia dos focos de endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Dispositivos intrauterinos de cobre/prata são eficazes na redução da dismenorreia em endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resposta correta: letra (a). O dienogeste (a questão grafa \"dionogeste\") tem efeito direto sobre os focos de endometriose.\n\nContexto: o tratamento clínico da endometriose busca controlar a dor e evitar a progressão da doença. Ele se baseia em supressão hormonal, seja por anovulação, por hipoestrogenismo ou por ação progestagênica direta sobre o implante. A diferença entre efeito direto (local, no tecido ectópico) e efeito indireto (central, por supressão do eixo hipotálamo-hipófise-ovário) é o ponto central da questão.\n\nAnálise das alternativas:\n\na) Correta. O dienogeste é um progestagênico de quarta geração, derivado da 19-nortestosterona, com forte atividade progestagênica e ação antiproliferativa sobre o endométrio. Seu efeito direto sobre os implantes é: decidualização e posterior atrofia do tecido endometriótico, redução da proliferação celular, efeito anti-inflamatório e antiangiogênico, e diminuição da expressão de aromatase e de citocinas locais. Além disso, suprime parcialmente o eixo, com estrogenemia moderada, sem causar hipoestrogenismo importante. Na dose de 2 mg/dia por via oral contínua, é eficaz para dor e para endometriomas.\n\nb) Incorreta. Os análogos do GnRH (leuprolida, goserelina, nafarelina) atuam na hipófise. Após um efeito \"flare\" inicial, ocorre dessensibilização e downregulation dos receptores de GnRH, com queda de FSH e LH. O resultado é um estado de hipoestrogenismo, um \"pseudomenopausa\", e a regressão dos focos é indireta, por privação estrogênica. Por isso causam fogachos e perda de massa óssea, o que exige add-back therapy.\n\nc) Incorreta. O SIU de levonorgestrel age principalmente localmente no endométrio eutópico e melhora a dor, sobretudo a dismenorreia e a adenomiose. Tem pouco ou nenhum efeito direto sobre endometriomas ovarianos, porque a concentração sistêmica é baixa e não atinge o cisto de forma significativa. Endometriomas geralmente exigem tratamento sistêmico ou cirúrgico.\n\nd) Incorreta. O etinilestradiol é um estrogênio, e o estrogênio estimula o crescimento dos focos. Nos contraceptivos combinados, o benefício vem da supressão da ovulação e do componente progestagênico, que causa decidualização e atrofia. O etinilestradiol isolado não promove atrofia.\n\ne) Incorreta. Os DIUs de cobre ou de prata não têm ação hormonal e não suprimem os focos. O cobre provoca reação inflamatória no endométrio e tende a aumentar o fluxo e a dismenorreia, podendo piorar os sintomas. Não são indicados como tratamento da dor da endometriose.\n\nResumo: a ação direta sobre os implantes é característica dos progestagênicos, como o dienogestcondutor desta questão. Os análogos do GnRH agem de forma indireta, por hipoestrogenismo. O estrogênio isolado estimula a doença. O DIU de cobre não trata a dor.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.736Z"
+  },
+  {
+    "id": "AJUDA_8489db40-47f8-4cad-8e83-2879e08d9bd4",
+    "originalId": "8489db40-47f8-4cad-8e83-2879e08d9bd4",
+    "statement": "Pólipos de vesícula biliar são achados comuns em ecografias. Assinale a alternativa que apresenta uma indicação para tratamento cirúrgico nesse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "História familiar de neoplasia de via biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Medida do pólipo acima de 8 milímetros.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Presença de pólipos em colón.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pólipos múltiplos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O manejo dos pólipos da vesícula biliar baseia-se na identificação de lesões com potencial de malignização. As indicações para colecistectomia (remoção cirúrgica da vesícula) são fundamentadas em características morfológicas, sintomas e fatores de risco do paciente.\n\nAlternativa A - INCORRETA: Embora o histórico familiar seja um dado clínico importante, ele não é considerado, isoladamente, uma indicação para tratamento cirúrgico de pólipos da vesícula nas principais diretrizes médicas (como as da ESGAR ou as do consenso europeu). Os fatores de risco individuais mais relevantes são idade superior a 50 ou 60 anos e presença de colangite esclerosante primária.\n\nAlternativa B - CORRETA: O tamanho do pólipo é o preditor mais fidedigno de malignidade. A indicação absoluta de cirurgia ocorre em pólipos maiores ou iguais a 10 milímetros. No entanto, pólipos entre 6 e 9 milímetros (faixa que engloba os 8 milímetros da alternativa) já indicam a necessidade de uma avaliação rigorosa. Em pacientes com fatores de risco associados, lesões desse tamanho podem ter indicação cirúrgica direta ou acompanhamento muito estreito, tornando esta a única alternativa que apresenta um critério técnico de gravidade e decisão terapêutica.\n\nAlternativa C - INCORRETA: A presença de pólipos no cólon não serve como critério para a indicação de colecistectomia. Embora algumas síndromes genéticas possam apresentar pólipos em diferentes órgãos, a conduta para o pólipo da vesícula biliar deve ser decidida a partir das características da própria lesão biliar.\n\nAlternativa D - INCORRETA: A multiplicidade de pólipos costuma ser um sinal de benignidade. Na maioria das vezes, pólipos múltiplos e pequenos (geralmente menores que 5 mm) são pólipos de colesterol, que não possuem potencial maligno. O maior risco de neoplasia está associado ao achado de um pólipo único (séssil e solitário), e não à presença de vários.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.736Z"
+  },
+  {
+    "id": "AJUDA_848d0819-b9be-4165-aef5-c0bcbb59b1d4",
+    "originalId": "848d0819-b9be-4165-aef5-c0bcbb59b1d4",
+    "statement": "Qual dos seguintes cenários exemplifica uma falácia ecológica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudos mostram que países com maior consumo de peixe têm menores taxas de doenças cardíacas. Conclui-se que indivíduos que consomem mais peixe são menos propensos a desenvolver doenças cardíacas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estudos observam que pessoas que consomem mais vegetais têm uma incidência menor de câncer. Afirma-se que aumentar o consumo de vegetais reduz o risco de câncer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pesquisas indicam que comunidades com maior atividade física têm menor prevalência de obesidade. Conclui-se que todos os indivíduos dessas comunidades são fisicamente ativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observações revelam que áreas com altos índices de poluição têm maior incidência de doenças respiratórias. Acredita-se que todos os residentes dessas áreas sofrerão de doenças respiratórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Definição de Falácia Ecológica:\n\nA falácia ecológica, também conhecida como viés ecológico, ocorre quando um pesquisador ou observador faz inferências sobre indivíduos baseando-se em associações observadas em dados de nível populacional ou de grupos (dados agregados). O erro fundamental é assumir que uma correlação existente entre variáveis em um grupo deve, necessariamente, aplicar-se a cada indivíduo pertencente a esse grupo.\n\nAnálise das alternativas:\n\nAlternativa a: Correta. Esta alternativa apresenta o exemplo clássico de falácia ecológica. Os dados iniciais são agregados por nações (países com maior consumo de peixe). A partir dessa observação de grupo, conclui-se algo sobre o risco individual (indivíduos que comem peixe têm menos doenças). Essa conclusão é falaciosa porque, sem dados individuais, não podemos afirmar que as mesmas pessoas que consomem peixe são as mesmas que não desenvolvem a doença. Outros fatores sociais, econômicos ou ambientais do país podem estar influenciando o desfecho, independentemente do consumo individual de peixe.\n\nAlternativa b: Incorreta. Neste cenário, a observação inicial já é feita em nível individual (pessoas que consomem mais vegetais). Se a premissa parte do comportamento individual e a conclusão também se refere ao risco individual, não há mudança de nível de análise. Portanto, não se configura uma falácia ecológica, embora a afirmação possa estar sujeita a outros tipos de vieses de seleção ou de confusão.\n\nAlternativa c: Incorreta. Concluir que todos os indivíduos de uma comunidade são fisicamente ativos apenas porque a comunidade tem alta atividade física é um erro de generalização excessiva ou erro de composição. A falácia ecológica, no contexto epidemiológico, refere-se especificamente à atribuição de uma associação de risco ou proteção (relação entre exposição e desfecho) do grupo para o indivíduo, e não apenas a uma estimativa de prevalência de um comportamento.\n\nAlternativa d: Incorreta. Semelhante à alternativa anterior, este é um caso de generalização determinística. Afirmar que todos os residentes sofrerão de uma doença é uma interpretação errônea de probabilidade e risco. A falácia ecológica trata da tradução de uma correlação estatística observada em grandes áreas para o risco de uma pessoa específica, o que é sutilmente diferente de uma previsão absoluta de que 100% da população será afetada.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:28.736Z"
+  }
+]

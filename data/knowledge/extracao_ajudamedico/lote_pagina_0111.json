@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_1e02723e-93db-4e08-9b59-02cf2bc4bef3",
+    "originalId": "1e02723e-93db-4e08-9b59-02cf2bc4bef3",
+    "statement": "J.S.A., 45 anos, técnico em informática, comparece à consulta com queixas de sonolência diurna excessiva, ansiedade e cefaleia cedo pela manhã. A esposa relata que ele ronca alto e tem episódios frequentes de pausas respiratórias durante o sono, seguidos por “engasgos” ou pequenos despertares. O paciente nega dor torácica, febre ou tosse. Os sintomas têm se intensificado nos últimos dois anos. Ele refere que costumava fazer pequenas caminhadas, mas agora se cansa com facilidade, mesmo em atividades leves como subir um lance de escadas ou caminhar no plano por poucos metros. Ele atribui a falta de ar ao “sedentarismo” e ao aumento de peso, que tem sido constante na última década. Ao exame físico apresenta Índice de Massa Corporal (IMC) de 47,4 kg/m², frequência cardíaca: 95 bpm. Frequência respiratória: 20 cpm. Saturação de O₂: 89% em ar ambiente. Pressão arterial: 145/90 mmHg. Em relação ao diagnóstico marque a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No indivíduo sadio, o nível arterial de dióxido de carbono (PaCO2) é mantido entre 27 e 33 mmHg ao nível do mar. Todos os distúrbios de ventilação resultam em alteração nas medições da PaCO2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na síndrome de hipoventilação por obesidade a carga da parede torácica é menor do que a força dos músculos ventilatórios, resultando em uma troca anormal de gases após input neural ser transmitido às bombas musculares da respiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ventilação não invasiva com pressão positiva (VNIPP) noturna tem sido usada com sucesso no tratamento da hipoventilação e das apneias obstrutivas, porém sem sucesso nas hipoventilações de origem central .",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico mais possível é de síndrome de hipoventilação por obesidade uma vez que o paciente possui IMC > 30 kg/m2, sintomas de hipoventilação crônica e evidência de distúrbio respiratório relacionado ao sono.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "As doenças que reduzem a ventilação-minuto ou aumentam o espaço morto podem ser classificadas em quatro categorias principais: doença do parênquima pulmonar e da parede torácica, distúrbio respiratório do sono, doença neuromuscular e cor pulmonale.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta o perfil clássico da Síndrome de Hipoventilação por Obesidade (SHO), também historicamente conhecida como Síndrome de Pickwick. Os marcos diagnósticos presentes são: obesidade grau III (IMC de 47,4 kg/m²), sinais de hipoventilação (saturação de O₂ de 89% em repouso e cefaleia matinal, que sugere retenção de CO₂ noturna) e sintomas de apneia obstrutiva do sono (roncos e pausas respiratórias).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Em um indivíduo sadio ao nível do mar, a pressão arterial de dióxido de carbono (PaCO₂) fisiológica varia entre 35 e 45 mmHg. Valores entre 27 e 33 mmHg indicam hipocapnia (alcalose respiratória), geralmente causada por hiperventilação, e não representam o estado de normalidade.\n\nAlternativa b) Incorreta. Na Síndrome de Hipoventilação por Obesidade, ocorre exatamente o oposto: a carga mecânica imposta à parede torácica pelo excesso de tecido adiposo é muito maior do que a capacidade de geração de força dos músculos ventilatórios. Esse desequilíbrio, somado a uma menor responsividade do centro respiratório ao acúmulo de CO₂, resulta na troca gasosa anormal.\n\nAlternativa c) Incorreta. A ventilação não invasiva com pressão positiva (VNIPP) é, de fato, o tratamento de escolha para a SHO e apneias obstrutivas. No entanto, ela também é utilizada com sucesso em diversos casos de hipoventilação de origem central (como na hipoventilação alveolar central primária ou após insultos neurológicos), embora os parâmetros e modos ventilatórios possam variar.\n\nAlternativa d) Correta. Esta alternativa descreve os critérios fundamentais para a suspeita diagnóstica da Síndrome de Hipoventilação por Obesidade. A definição clássica exige um IMC igual ou maior que 30 kg/m² associado à hipercapnia diurna (PaCO₂ > 45 mmHg) documentada por gasometria arterial, na ausência de outras causas que justifiquem a hipoventilação (como DPOC grave ou doenças neuromusculares). No caso clínico, a baixa saturação (89%) e a cefaleia matinal são fortes indícios dessa hipoventilação crônica.\n\nAlternativa e) Incorreta. Embora doenças do parênquima, da parede torácica e neuromusculares realmente afetem a ventilação, o *cor pulmonale* não é uma categoria causal, mas sim uma consequência tardia da hipertensão pulmonar crônica resultante da própria hipoventilação e hipoxemia. Além disso, as categorias principais que afetam o drive respiratório ou a mecânica pulmonar costumam incluir distúrbios do controle central da respiração, e não o *cor pulmonale* em si.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Distúrbios do Sono",
+      "Apneia do Sono",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.828Z"
+  },
+  {
+    "id": "AJUDA_1e033a7d-b5a8-4553-8190-72cb851c9751",
+    "originalId": "1e033a7d-b5a8-4553-8190-72cb851c9751",
+    "statement": "Menino, 12 anos de idade, comparece em consulta de rotina. Na avaliação clínica, a pressão arterial encontrada foi de 135/90 mmHg em três ocasiões distintas, utilizando método auscultatório adequado. Ele apresenta histórico de baixo peso ao nascer, transtorno do déficit de atenção e atualmente está acima do percentil 95 para Índice de massa corporal. Não há relato de cefaleia, convulsões ou alterações visuais. De acordo com o caso clínico relatado, qual é o fator modificável que pode ser abordado nessa situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Baixo peso ao nascer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno do déficit de atenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Obesidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Estirão do crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO paciente apresenta um quadro de hipertensão arterial, confirmado por três aferições distintas com valores de 135/90 mmHg. Para um menino de 12 anos, esses valores estão significativamente elevados (acima do percentil 95 para a idade). O enunciado pede para identificar, dentre as características citadas, aquela que pode ser modificada para auxiliar no controle da pressão arterial.\n\nAlternativa a) Incorreta. O baixo peso ao nascer é um fator de risco perinatal para o desenvolvimento de doenças metabólicas e hipertensão no futuro devido à programação fetal. Contudo, é um evento passado e imutável, não podendo ser abordado como intervenção terapêutica atual.\n\nAlternativa b) Incorreta. O transtorno do déficit de atenção (TDAH) é uma condição clínica do neurodesenvolvimento. Embora medicamentos usados no seu tratamento (como o metilfenidato) possam elevar a pressão arterial, o transtorno em si não é o alvo de modificação para controle pressórico direto. A obesidade é um fator muito mais impactante e passível de intervenção direta no estilo de vida.\n\nAlternativa c) Correta. A obesidade, identificada pelo IMC acima do percentil 95, é o principal fator de risco modificável relacionado à hipertensão arterial na pediatria. A redução do peso corporal por meio de hábitos alimentares saudáveis e exercício físico é a intervenção de primeira linha, sendo capaz de reduzir ou até normalizar os níveis tensionais nesta faixa etária sem a necessidade imediata de medicamentos.\n\nAlternativa d) Incorreta. O estirão do crescimento é um processo fisiológico inerente ao desenvolvimento puberal. Não é uma patologia nem um fator sobre o qual se possa ou se deva intervir para reduzir a pressão arterial.\n\nGabarito: Alternativa (c).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente",
+      "Obesidade na Infância e na Adolescência"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.829Z"
+  },
+  {
+    "id": "AJUDA_1e05ffd1-8a17-4d98-a5ee-316243fcdedc",
+    "originalId": "1e05ffd1-8a17-4d98-a5ee-316243fcdedc",
+    "statement": "A pneumonia em organização criptogênica (POC) tem sua forma idiopática de pneumonia em organização, anteriormente chamada de bronquiolite obliterante com pneumonia em organização (BOOP). É uma doença pulmonar intersticial difusa decorrente de lesão na parede alveolar tipicamente caracterizada por infiltrados pulmonares periféricos e difusos com áreas de preenchimento alveolar e responsividade a terapia sistêmica com glicocorticoides. A manifestação clínica é de uma pneumonia subaguda ou de difícil resolução, com tosse pouco produtiva, dispneia, febre baixa e fraqueza ou cansaço. No entanto, há diversas condições autoimunes, pneumonias de hipersensibilidade e efeitos colaterais que devem ser excluídos para que a POC seja dada como idiopática.\nEm uma análise mais profunda sobre a POC, o quadro descrito acima pode indicar pneumonia em organização caso se verifique(m):",
+    "options": [
+      {
+        "id": "A",
+        "text": "paciente com tosse, febre e dispneia há 3 semanas e imagem apical fibrótica e cavitação adjacente;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aspecto tomográfico reticulonodular difuso em paciente com dispneia importante iniciada há 1 semana;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aspecto radiográfico de consolidação lobar em paciente com febre alta de início recente;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aspecto tomográfico de consolidação irregular do espaço aéreo, opacidades em vidro fosco e pequenas opacidades nodulares em paciente usuário de cocaína;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "aspecto tomográfico com opacidades evanescentes, bronquiectasias e achados relacionados a impactação mucoide e obstrução brônquica em paciente com eosinofilia e broncoespasmo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Pneumonia em Organização (PO) é um padrão de resposta pulmonar a uma agressão alveolar, caracterizada pela presença de tecido de granulação dentro dos alvéolos e ductos alveolares. Quando a causa é idiopática, é denominada Pneumonia em Organização Criptogênica (POC). O diagnóstico clínico-radiológico baseia-se em um quadro subagudo e achados tomográficos específicos.\n\nAlternativa a: Incorreta. Achados de fibrose apical e cavitações são clássicos da tuberculose pulmonar ou de infecções fúngicas crônicas (como a paracoccidioidomicose). Na pneumonia em organização, as consolidações costumam ser periféricas, subpleurais e raramente apresentam cavitação ou localização puramente apical.\n\nAlternativa b: Incorreta. O padrão reticulonodular difuso é característico de outras doenças intersticiais, como a linfangite carcinomatosa, sarcoidose ou tuberculose militar. Além disso, o tempo de evolução de apenas uma semana é muito curto para o perfil típico da POC, que costuma se manifestar entre 2 e 6 semanas (quadro subagudo).\n\nAlternativa c: Incorreta. Uma consolidação lobar única associada a febre alta e início agudo é a apresentação clássica da Pneumonia Adquirida na Comunidade (PAC) de etiologia bacteriana (ex: Streptococcus pneumoniae). A pneumonia em organização geralmente se apresenta com múltiplas áreas de consolidação (\"em manchas\") e febre baixa ou persistente.\n\nAlternativa d: Correta. Esta alternativa descreve precisamente os achados tomográficos mais comuns da pneumonia em organização: consolidações irregulares do espaço aéreo, opacidades em vidro fosco e pequenos nódulos, muitas vezes com distribuição peribronquovascular ou subpleural. Embora a questão mencione a forma criptogênica (idiopática), o padrão de pneumonia em organização pode ser secundário a drogas e toxinas, sendo a cocaína um agente etiológico conhecido para esse tipo de lesão pulmonar.\n\nAlternativa e: Incorreta. Os achados descritos — opacidades evanescentes, bronquiectasias, impactação mucoide (sinal do dedo de luva), eosinofilia e asma (broncoespasmo) — definem o diagnóstico de Aspergilose Broncopulmonar Alérgica (ABPA). Embora as opacidades migratórias (evanescentes) possam ocorrer na pneumonia em organização, a presença de obstrução brônquica por muco e eosinofilia direciona o diagnóstico para a ABPA.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.829Z"
+  },
+  {
+    "id": "AJUDA_1e075049-fd99-4aae-b05b-262f2aaf9a71",
+    "originalId": "1e075049-fd99-4aae-b05b-262f2aaf9a71",
+    "statement": "A paracentese diagnóstica realizada no pronto atendimento, em um homem de 44 anos acompanhado ambulatorialmente por hepatite C crônica, hemodinamicamente estável, com icterícia, ascite, dor abdominal, febre e sonolência, mostrou líquido ascítico levemente turvo com presença de 900 células/mm³, sendo 30% leucocitos polimorfonucleares. A conduta mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar vancomicina e gentamicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aguardar cultura e iniciar antibioticoterapia empírica, se houver desestabilização do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar ampicilina, oxacilina e metronidazol EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "manutenção hidroeletrolítica e aguardar resultado da cultura e antibiograma do líquido ascítico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar cefalosporina de terceira geração EV.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO quadro clínico descreve um paciente com cirrose (secundária à hepatite C) apresentando sinais de descompensação: ascite, icterícia, dor abdominal, febre e sonolência (sugerindo encefalopatia hepática). Diante desse cenário, a principal suspeita clínica é de Peritonite Bacteriana Espontânea (PBE).\n\nO diagnóstico de PBE é confirmado pela análise do líquido ascítico quando a contagem de polimorfonucleares (PMN) é superior a 250 células/mm³. No caso apresentado, o líquido possui 900 células/mm³ com 30% de polimorfonucleares. Realizando o cálculo: 900 x 0,30 = 270 células/mm³. Como o valor é maior que 250, o diagnóstico de PBE está estabelecido.\n\nO tratamento de escolha para PBE deve ser iniciado imediatamente após a coleta da paracentese, de forma empírica, sem aguardar resultados de cultura, visando cobrir os germes mais comuns (Gram-negativos entéricos, como a *Escherichia coli*).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa a: A vancomicina é direcionada para germes Gram-positivos resistentes e a gentamicina (um aminoglicosídeo) é contraindicada como primeira linha neste contexto, pois é altamente nefrotóxica em pacientes cirróticos, podendo precipitar insuficiência renal e síndrome hepatorrenal.\n\nAlternativa b: O início do antibiótico na PBE é uma urgência médica. Aguardar a cultura ou a desestabilização clínica do paciente para tratar aumenta significativamente a mortalidade. Além disso, muitas vezes a cultura do líquido ascítico é negativa mesmo na presença de infecção (ascite neutrocítica), o que não exclui a necessidade de tratamento.\n\nAlternativa c: Este esquema antibiótico é inadequado. A oxacilina e a ampicilina não cobrem o espectro principal da PBE de forma otimizada. O metronidazol cobre anaeróbios, que raramente estão envolvidos na peritonite espontânea, sendo indicados apenas em casos de suspeita de peritonite secundária (perfuração de víscera).\n\nAlternativa d: O erro reside em aguardar o resultado da cultura e do antibiograma. Em pacientes com cirrose e ascite, a presença de mais de 250 PMN/mm³ é indicação absoluta de antibioticoterapia imediata devido ao alto risco de sepse e óbito.\n\nAlternativa e (CORRETA): As cefalosporinas de terceira geração (como a cefotaxima ou a ceftriaxona) representam o tratamento padrão-ouro para a PBE. Elas possuem excelente penetração no peritônio, cobrem os principais patógenos Gram-negativos e possuem baixo perfil de toxicidade renal quando comparadas a outras classes.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.829Z"
+  },
+  {
+    "id": "AJUDA_1e0d79d6-b5df-432b-a722-250b41b4911f",
+    "originalId": "1e0d79d6-b5df-432b-a722-250b41b4911f",
+    "statement": "Homem, 48 anos, assintomático, realizou exames admissionais e foi encaminhado para avaliação na emergência devido às alterações no hemograma.\nExame físico: Baço palpável a 5 cm do rebordo costal esquerdo.\nHemograma completo: Hb: 11,5 g/dl (VR: 13,9 - 17,7 g/dl); Glóbulos brancos: 78,5 x 10³/µL (VR: 3,8 -10,3 x 10³/µL); Plaquetas: 745 x 10³/µL (VR: 166 - 389 x 10³/µL); Blastos: 1%; Promielócitos: 3%; Mielócitos: 6%; Metamielócitos: 17%; Bastonetes: 15%; Neutrófilos segmentados: 44%; Linfócitos: 4%; Monócitos: 2%; Basófilos: 3%; Eosinófilos: 5%\nDentre os exames laboratoriais abaixo, qual está indicado para a investigação diagnóstica do caso nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sequenciamento do gene CARL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Imunofenotipagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pesquisa do rearranjo BCR::ABL1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "PCR para a mutação JAK2V617F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO quadro clínico apresenta um paciente assintomático com esplenomegalia e alterações hematológicas marcantes:\n1. Leucocitose importante (78.500/µL).\n2. Desvio escalonado à esquerda na linhagem granulocítica (presença de blastos, promielócitos, mielócitos, metamielócitos, bastões e segmentados em proporções decrescentes de imaturidade, com apenas 1% de blastos).\n3. Basofilia (3%) e eosinofilia (5%).\n4. Trombocitose e anemia leve.\n\nEsse padrão de desvio à esquerda completo associado à basofilia e esplenomegalia é clássico e altamente sugestivo de Leucemia Mieloide Crônica (LMC) em fase crônica.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A - Incorreta: A mutação no gene CALR (calreticulina) é investigada em neoplasias mieloproliferativas BCR-ABL1 negativas, principalmente na Trombocitemia Essencial e na Mielofibrose Primária quando a mutação JAK2 é negativa. Não é o exame inicial para o quadro clássico de LMC.\n\nAlternativa B - Incorreta: A imunofenotipagem por citometria de fluxo é fundamental no diagnóstico de leucemias agudas (para linhagem mieloide versus linfoide) e neoplasias linfoproliferativas crônicas. Na LMC, a confirmação diagnóstica depende de testes moleculares ou citogenéticos, e não da imunofenotipagem.\n\nAlternativa C - Correta: A Leucemia Mieloide Crônica é caracterizada pela translocação recíproca t(9;22)(q34;q11), que gera o cromossomo Philadelphia e o gene de fusão BCR::ABL1. A pesquisa do rearranjo BCR::ABL1 (por PCR, FISH ou citogenética convencional) é o teste padrão-ouro para o diagnóstico confirmatório e para guiar a terapia-alvo com inibidores de tirosina quinase.\n\nAlternativa D - Incorreta: A pesquisa da mutação JAK2V617F é indicada para avaliação das neoplasias mieloproliferativas BCR-ABL1 negativas (como Policitemia Vera, Trombocitemia Essencial e Mielofibrose Primária). Diante de leucocitose exuberante com desvio escalonado e basofilia, a principal hipótese diagnóstica é LMC, tornando a pesquisa de BCR::ABL1 a prioridade absoluta.\n\nGabarito: Letra C.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.829Z"
+  },
+  {
+    "id": "AJUDA_1e10dab6-5e3c-4e09-ae95-55085fe58de2",
+    "originalId": "1e10dab6-5e3c-4e09-ae95-55085fe58de2",
+    "statement": "Paciente de dois anos dá entrada no pronto socorro agitado, com quadro de tosse rouca, estridor acentuado em repouso, dispnéía, entrada de ar reduzida e retração na fúrcula esternal moderada. Mãe refere história de febre há três dias. Em relação ao caso, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A agitação e o choro podem piorar o quadro de obstrução na crupe viral",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A radiografia cervical é fundamental para diagnóstico do quadro de crupe",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se observar boa resposta terapêutica ao tratamento com corticosteroides nos casos de crupe de etiologia viral e bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de um caso de crupe cujo tratamento deve ser realizado ambulatorialmente com dexametasona oral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico: \nO paciente apresenta a tríade clássica da crupe viral (laringotraqueobronquite): tosse rouca (laringite), estridor inspiratório e rouquidão, precedidos por pródromos catarrais e febre. O quadro clínico atual é classificado como moderado a grave devido ao estridor em repouso, retração de fúrcula moderada e redução da entrada de ar.\n\nAlternativa A (Correta): \nA agitação e o choro aumentam o esforço respiratório e a demanda por oxigênio. Em uma via aérea que já se encontra estreitada pelo edema subglótico, o aumento da turbulência do ar causada pelo choro intensifica a obstrução e piora o estridor. Por isso, uma das medidas fundamentais no manejo da crupe é manter a criança calma no colo dos pais, evitando procedimentos desnecessários que causem estresse.\n\nAlternativa B (Incorreta): \nO diagnóstico da crupe viral é eminentemente clínico. A radiografia cervical pode mostrar o sinal da ponta do lápis ou sinal do campanário (estreitamento da coluna de ar subglótica), mas esse achado não é necessário para o diagnóstico e nem sempre está presente. O exame de imagem deve ser reservado para casos de dúvida diagnóstica ou suspeita de outras patologias, como aspiração de corpo estranho ou epiglotite.\n\nAlternativa C (Incorreta): \nOs corticosteroides (como a dexametasona) são o padrão-ouro no tratamento da crupe viral, reduzindo o edema da mucosa laríngea. No entanto, nos casos de crupe bacteriana (traqueíte bacteriana), o tratamento principal envolve antibioticoterapia venosa e, frequentemente, suporte ventilatório invasivo, pois a resposta aos corticoides e à adrenalina costuma ser pobre ou inexistente devido à presença de membranas purulentas e exsudato espesso na traqueia.\n\nAlternativa D (Incorreta): \nA presença de estridor em repouso, retração de fúrcula moderada e diminuição da entrada de ar indica uma obstrução significativa. Nesses casos (crupe moderada a grave), o tratamento imediato deve ser feito no pronto-socorro com nebulização com adrenalina (para efeito rápido de vasoconstrição e redução do edema) associada à dexametasona (via oral ou intramuscular). O paciente deve permanecer em observação hospitalar por pelo menos 2 a 4 horas para monitorar o efeito rebote da adrenalina, não sendo recomendado o tratamento puramente ambulatorial inicial.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.829Z"
+  },
+  {
+    "id": "AJUDA_1e11fd75-da10-4f09-86e4-ea047b1fb28f",
+    "originalId": "1e11fd75-da10-4f09-86e4-ea047b1fb28f",
+    "statement": "Mulher, 58 anos, realiza exame que mostra alça intestinal delgada encarcerada no saco da hérnia, sem ar livre, sem sinais claros de pneumatose ou de perfuração; sem coleta purulenta. Considerando as diretrizes e boas práticas para manejo de hérnia incisional complicada, a conduta mais apropriada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tentar redução manual sob sedação e alta com agendamento de reparo eletivo com tela sintética, se reduzir com sucesso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cirurgia de emergência com exploração e, se alça for viável, proceder reparo definitivo com colocação de tela sintética (preferencialmente retromuscular) na mesma cirurgia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Suspender analgesia e observar 24-48 horas com antibiótico empírico; operar somente se ocorrer peritonite ou sinais de falência da alça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar ressecção entérica imediata e fechamento primário da parede sem tela, independente do aspecto da alça, para reduzir risco infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Proceder a paracentese exploradora no saco herniário e, se não houver líquido purulento, programar correção eletiva em 2-3 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro descreve uma hérnia incisional complicada por encarceramento de alça de intestino delgado. A ausência de pneumatose, ar livre ou secreção purulenta sugere que, embora haja obstrução, pode não haver ainda necrose ou contaminação grosseira.\n\nAlternativa A: Incorreta. A tentativa de redução manual (taxia) em hérnias encarceradas de longa data ou com sinais clínicos importantes é arriscada. Existe o risco de redução \"em massa\" (o saco herniário é reduzido com a alça ainda estrangulada em seu interior) ou de retornar à cavidade uma alça já isquêmica que pode perfurar internamente, mascarando a gravidade do quadro.\n\nAlternativa B: Correta. Esta é a conduta padrão atual segundo as diretrizes da World Society of Emergency Surgery (WSES). O encarceramento exige intervenção cirúrgica de urgência para avaliar a viabilidade da alça. Se o intestino estiver viável e não houver contaminação (como pus ou fezes), o reparo com tela sintética é recomendado, pois reduz drasticamente a taxa de recidiva em comparação ao fechamento primário. A posição retromuscular (sublay) é a preferida por oferecer melhor integração biomecânica e menor risco de infecção de sítio cirúrgico.\n\nAlternativa C: Incorreta. O manejo de uma hérnia encarcerada é cirúrgico. Suspender a analgesia e observar por até 48 horas é uma conduta perigosa que permite a evolução de uma isquemia reversível para uma necrose intestinal franca, aumentando a morbimortalidade da paciente.\n\nAlternativa D: Incorreta. A ressecção entérica só deve ser realizada se a alça não for viável após manobras de aquecimento e avaliação da perfusão. Realizar a ressecção de uma alça viável é uma conduta iatrogênica. Além disso, o fechamento sem tela em hérnias incisionais está associado a taxas de recorrência de até 50%.\n\nAlternativa E: Incorreta. A paracentese do saco herniário não possui indicação diagnóstica ou terapêutica neste contexto. O procedimento é invasivo, apresenta alto risco de perfuração acidental da alça intestinal encarcerada e não resolve o problema mecânico da obstrução e do defeito na parede abdominal.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.829Z"
+  },
+  {
+    "id": "AJUDA_1e1ff3b4-1758-4e36-9b19-26408c1f43f6",
+    "originalId": "1e1ff3b4-1758-4e36-9b19-26408c1f43f6",
+    "statement": "Um paciente assintomático de 50 anos procura seu médico de família solicitando um check-up completo, incluindo dosagem de PSA (Antígeno Prostático Específico) e ressonância magnética de corpo inteiro, influenciado por notícias na internet. O médico, baseado nas evidências atuais que apontam para o risco de sobrediagnóstico e sobretratamento (overtreatment) em rastreamentos não indicados, opta por não solicitar os exames e realiza uma abordagem educativa sobre os riscos das intervenções desnecessárias. Essa conduta médica exemplifica a aplicação do conceito de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção Quaternária, que visa identificar e evitar intervenções médicas excessivas ou desnecessárias que possam causar danos iatrogênicos físicos ou psíquicos ao paciente, protegendo-o da medicalização abusiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prevenção Secundária, ao evitar a realização de exames diagnósticos precoces que não alterariam o prognóstico da doença em fase inicial, focando apenas no tratamento de casos sintomáticos avançados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prevenção Primordial, que foca na eliminação de padrões culturais e sociais que incentivam o consumo excessivo de tecnologias de saúde, atuando em nível populacional e não na consulta individual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prevenção Primária, pois atua na fase pré-patogênica evitando o surgimento de fatores de risco, como a ansiedade gerada pela realização de exames, impedindo assim a incidência da doença prostática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a).\n\nO caso clínico descreve uma situação clássica de embate entre a demanda do paciente por tecnologias de saúde e a prática médica baseada em evidências.\n\nAlternativa (a): Esta alternativa define corretamente a Prevenção Quaternária. Este nível de prevenção busca identificar pacientes em risco de excesso de medicalização e protegê-los de intervenções que trazem mais riscos do que benefícios. Ao negar exames de rastreamento sem indicação clínica clara (como a ressonância magnética de corpo inteiro em assintomáticos) e explicar os riscos de sobrediagnóstico e sobretratamento, o médico está exercendo o princípio da não maleficência e a prevenção quaternária. O objetivo é evitar o dano iatrogênico causado pelo próprio sistema de saúde.\n\nAlternativa (b): Incorreta. A Prevenção Secundária é o conjunto de ações destinadas ao diagnóstico precoce de doenças já instaladas, mas ainda em fase assintomática, como o rastreamento de câncer em populações-alvo específicas para diminuir a morbimortalidade. Na questão, o médico agiu no sentido oposto, decidindo não realizar o rastreamento por considerar que, para aquele perfil de paciente e exames solicitados, os danos superariam os benefícios.\n\nAlternativa (c): Incorreta. A Prevenção Primordial atua sobre as condições sociais, econômicas e ambientais que favorecem o surgimento de fatores de risco em nível populacional (exemplo: políticas públicas de combate ao tabagismo ou planejamento urbano para incentivar atividades físicas). Embora o desejo do paciente seja influenciado por padrões culturais de consumo, a conduta clínica individualizada no consultório visando evitar exames desnecessários é classificada como prevenção quaternária.\n\nAlternativa (d): Incorreta. A Prevenção Primária visa evitar a ocorrência da doença ao remover causas ou fatores de risco antes que a patologia se desenvolva (exemplo: vacinação, uso de preservativos ou cessação do tabagismo). Evitar a realização de um PSA ou de uma ressonância magnética não impede o surgimento da doença prostática em si, apenas evita as intervenções e complicações decorrentes de um processo diagnóstico que não possui indicação clínica.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.829Z"
+  },
+  {
+    "id": "AJUDA_1e260a53-890a-49a4-b279-11fb257b773c",
+    "originalId": "1e260a53-890a-49a4-b279-11fb257b773c",
+    "statement": "Uma criança com 4 meses de idade é trazida pelos pais ao pronto-socorro com coriza, espirro, obstrução nasal e febre baixa há 2 dias. Há 24 horas apresenta recusa alimentar, tosse e taquidispneia. Após atendimento inicial e internação, recebeu diagnóstico de bronquiolite viral aguda. O principal agente etiológico nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vírus Influenza.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Streptococcus pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vírus Sincicial Respiratório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Vírus Covid-19.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Enterovírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um lactente de 4 meses com uma progressão típica de Bronquiolite Viral Aguda (BVA). A doença inicia-se com um pródromo catarral (coriza, obstrução nasal e febre baixa) que, após 2 a 5 dias, evolui com sinais de comprometimento das vias aéreas inferiores, como tosse, taquidispneia (aumento da frequência respiratória e do esforço) e recusa alimentar devido à dificuldade respiratória. A BVA é definida clinicamente como o primeiro episódio de sibilância ou desconforto respiratório em crianças menores de 2 anos, precedido por sintomas de infecção das vias aéreas superiores.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O vírus Influenza pode causar infecções respiratórias graves em crianças e é capaz de provocar bronquiolite. No entanto, ele não é o agente mais frequente. O quadro de Influenza costuma vir acompanhado de sintomas sistêmicos mais proeminentes, como febre alta e prostração intensa.\n\nAlternativa b) Incorreta. O Streptococcus pneumoniae (pneumococo) é uma bactéria. A bronquiolite é uma patologia estritamente viral, conforme o próprio enunciado afirma ao dar o diagnóstico de bronquiolite viral aguda. O pneumococo é o principal agente etiológico da pneumonia bacteriana típica na infância, que apresenta achados clínicos e radiológicos diferentes da bronquiolite.\n\nAlternativa c) Correta. O Vírus Sincicial Respiratório (VSR) é o principal agente etiológico da Bronquiolite Viral Aguda em todo o mundo. Ele é isolado em cerca de 60% a 90% dos casos de internação por BVA em lactentes jovens. Sua prevalência é marcante nos períodos de sazonalidade (outono e inverno), sendo o conhecimento desse agente fundamental para a prática pediátrica e para provas de residência.\n\nAlternativa d) Incorreta. Embora o SARS-CoV-2 possa causar sintomas respiratórios em lactentes, ele não é o agente etiológico predominante da síndrome clássica da bronquiolite. O perfil epidemiológico da BVA continua sendo dominado pelo VSR, mesmo após o surgimento da COVID-19.\n\nAlternativa e) Incorreta. Os Enterovírus e os Rinovírus (muitas vezes agrupados por pertencerem à mesma família) são causas importantes de infecções respiratórias e sibilância. O Rinovírus é considerado a segunda causa mais comum de bronquiolite, mas ainda assim perde em prevalência e relevância clínica para o Vírus Sincicial Respiratório.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.829Z"
+  },
+  {
+    "id": "AJUDA_1e29ab65-8767-4d48-a4b5-3c9088401614",
+    "originalId": "1e29ab65-8767-4d48-a4b5-3c9088401614",
+    "statement": "Perda auditiva induzida por ruído (PAIR) caracteriza-se pela perda da audição por exposição prolongada a ruídos, que pode estar associada ou não, a substâncias químicas no ambiente de trabalho. Marque a alternativa correta em relação a PAIR.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A exposição contínua a ruídos é de menor risco do que a intermitente devido a maior resistência do nervo coclear.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A PAIR é reversível, e uma vez cessada a exposição, não há progressão e ocorre melhora da perda auditiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Todo caso de perda auditiva em que não foi identificado fator ou situação de risco em ambiente ou processo de trabalho após investigação epidemiológica também devem ser considerados como PAIR.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sintomas concomitantes a perda auditiva induzida por ruído são incaracterísticos e raros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O risco de ocorrência da PAIR aumenta consideravelmente quando a média da exposição ao ruído está acima de 85 dB (A) por oito horas diárias.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda a Perda Auditiva Induzida por Ruído (PAIR), uma patologia frequente na medicina do trabalho e otorrinolaringologia. Vamos analisar cada alternativa para compreender os critérios diagnósticos e as características desta condição:\n\nAlternativa a) Incorreta. A exposição contínua é, na verdade, mais prejudicial que a intermitente. O ruído intermitente permite períodos de repouso acústico, possibilitando uma recuperação metabólica parcial das células ciliadas da cóclea. Além disso, a lesão principal na PAIR ocorre nas células ciliadas do órgão de Corti, e não primariamente no nervo coclear.\n\nAlternativa b) Incorreta. Uma das características fundamentais da PAIR é ser uma perda auditiva do tipo neurossensorial irreversível. Embora a progressão da perda cesse quando a exposição ao ruído é interrompida, não ocorre melhora ou reversão dos limiares auditivos já atingidos, pois as células ciliadas lesionadas não se regeneram.\n\nAlternativa c) Incorreta. Para que uma perda auditiva seja classificada como PAIR (especialmente no contexto ocupacional), é indispensável estabelecer o nexo causal. Isso significa que deve haver comprovação de exposição a níveis de pressão sonora elevados ou substâncias ototóxicas no ambiente de trabalho. Se a investigação epidemiológica não identificar fatores de risco, o diagnóstico deve direcionar-se para outras causas de perda neurossensorial.\n\nAlternativa d) Incorreta. Sintomas concomitantes são muito comuns na PAIR. O zumbido (*tinnitus*) é um dos sintomas mais frequentes e, muitas vezes, é a queixa principal que leva o trabalhador ao médico. Outros sintomas incluem dificuldade de compreensão da fala em ambientes ruidosos, intolerância a sons intensos (recrutamento) e, em casos avançados, tontura.\n\nAlternativa e) Correta. Esta alternativa está em conformidade com as normas regulamentadoras (como a NR-15 no Brasil) e recomendações internacionais (como as da NIOSH). O limite de tolerância padrão para evitar danos auditivos significativos é de 85 decibéis (A) para uma jornada de 8 horas diárias. Exposições acima deste binômio (intensidade versus tempo) aumentam exponencialmente o risco de desenvolvimento de lesões definitivas no sistema auditivo.\n\nGabarito: Letra (e).",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras",
+      "Otoneurologia, Vertigens e Audiologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:14:22.829Z"
+  }
+]

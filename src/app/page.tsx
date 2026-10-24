@@ -45,6 +45,21 @@ const AdminCuradoriaGabaritos = dynamic(
   }
 );
 
+const AdminReportedQuestions = dynamic(
+  () => import('@/components/AdminReportedQuestions').then((mod) => mod.AdminReportedQuestions),
+  {
+    loading: () => (
+      <div className="p-8 text-center text-xs text-slate-500 flex items-center justify-center gap-2">
+        <div className="w-4 h-4 border-2 border-amber-500 border-t-transparent rounded-full animate-spin" />
+        <span>Carregando auditoria de reports...</span>
+      </div>
+    ),
+    ssr: false
+  }
+);
+
+import { ReportIssueDrawer } from '@/components/ReportIssueDrawer';
+
 const StatsDashboard = dynamic(
   () => import('@/components/StatsDashboard').then((mod) => mod.StatsDashboard),
   { ssr: false }
@@ -75,7 +90,6 @@ import {
 import {
   fetchQuestionsFromSupabase,
   fetchTotalQuestionsCount,
-  reportQuestionIssue,
   fetchQuestionIdsForListCriteria
 } from '@/services/questionService';
 import {
@@ -285,7 +299,8 @@ export default function Home() {
     tipoQuestao: 'Todas',
     ocultarAnuladasErro: false,
     ocultarRevisadas: false,
-    ultimos5Anos: false
+    ultimos5Anos: false,
+    aleatorizar: false
   });
 
   // Deep linking via URL Search Params (?tab=... e ?q=...)
@@ -294,7 +309,7 @@ export default function Home() {
     try {
       const params = new URLSearchParams(window.location.search);
       const tabParam = params.get('tab') as ActiveTab | null;
-      if (tabParam && ['home', 'banco', 'provas', 'desempenho', 'ranking', 'cadernos', 'curadoria'].includes(tabParam)) {
+      if (tabParam && ['home', 'banco', 'provas', 'desempenho', 'ranking', 'cadernos', 'curadoria', 'reportes'].includes(tabParam)) {
         setActiveTab(tabParam);
       }
       const qParam = params.get('q');
@@ -362,6 +377,8 @@ export default function Home() {
   const [questionTimer, setQuestionTimer] = useState<number>(0);
   const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
   const [reportedQuestionIds, setReportedQuestionIds] = useState<Record<string, boolean>>({});
+  const [isReportDrawerOpen, setIsReportDrawerOpen] = useState<boolean>(false);
+  const [questionToReport, setQuestionToReport] = useState<Question | null>(null);
   // Estados de ferramentas de leitura na barra superior
   const [activeHighlighterColor, setActiveHighlighterColor] = useState<HighlighterColor>('yellow');
   const [isTopHighlighterMenuOpen, setIsTopHighlighterMenuOpen] = useState<boolean>(false);
@@ -681,7 +698,7 @@ export default function Home() {
       return list;
     }
 
-    return list.filter((q) => {
+    const filtered = list.filter((q) => {
       // 1. Status da questão (userAnswers)
       const answer = userAnswers[q.id];
       const isResolved = !!answer;
@@ -725,6 +742,12 @@ export default function Home() {
 
       return true;
     });
+
+    if (!advancedFilters.aleatorizar) {
+      return [...filtered].sort((a, b) => (b.year || 0) - (a.year || 0));
+    }
+
+    return filtered;
   }, [
     supabaseQuestions,
     hasLoadedSupabaseOnce,
@@ -733,6 +756,7 @@ export default function Home() {
     advancedFilters.tipoQuestao,
     advancedFilters.ocultarAnuladasErro,
     advancedFilters.ocultarRevisadas,
+    advancedFilters.aleatorizar,
     userAnswers,
     sessionExclusionSnapshot,
     bancoMode,
@@ -751,13 +775,16 @@ export default function Home() {
       }
     }
 
-    // 2. Se estiver em resolução avulsa com IDs balanceados por cotas (Round-Robin)
+    // 2. Se estiver em resolução avulsa com IDs balanceados por cotas
     if (sessionQuestionIds && sessionQuestionIds.length > 0) {
       const questionMap = new Map(filteredQuestions.map((q) => [q.id, q]));
       const ordered = sessionQuestionIds
         .map((id) => questionMap.get(id))
         .filter((q): q is Question => Boolean(q));
       if (ordered.length > 0) {
+        if (!advancedFilters.aleatorizar) {
+          ordered.sort((a, b) => (b.year || 0) - (a.year || 0));
+        }
         return ordered.slice(0, 200);
       }
     }
@@ -765,7 +792,11 @@ export default function Home() {
     // 3. Se estiver em resolução avulsa com limite configurado pelo aluno (ex: 20, 50, 100 ou até 200)
     if (sessionQuestionLimit) {
       const targetCount = Math.min(filteredQuestions.length, Math.min(200, sessionQuestionLimit));
-      return filteredQuestions.slice(0, targetCount);
+      const slice = filteredQuestions.slice(0, targetCount);
+      if (!advancedFilters.aleatorizar) {
+        slice.sort((a, b) => (b.year || 0) - (a.year || 0));
+      }
+      return slice;
     }
 
     // 4. Padrão: Janela deslizante de 50 questões base + 1 a cada acerto/erro (teto 200)
@@ -777,8 +808,21 @@ export default function Home() {
         Math.max(50 + solvedInSession, currentQuestionIndex + 1)
       )
     );
-    return filteredQuestions.slice(0, targetCount);
-  }, [filteredQuestions, userAnswers, currentQuestionIndex, activeListId, lists, sessionQuestionLimit, sessionQuestionIds]);
+    const slice = filteredQuestions.slice(0, targetCount);
+    if (!advancedFilters.aleatorizar) {
+      slice.sort((a, b) => (b.year || 0) - (a.year || 0));
+    }
+    return slice;
+  }, [
+    filteredQuestions,
+    userAnswers,
+    currentQuestionIndex,
+    activeListId,
+    lists,
+    sessionQuestionLimit,
+    sessionQuestionIds,
+    advancedFilters.aleatorizar
+  ]);
 
   // Navegação e atalhos globais de questões pelo teclado
   useEffect(() => {
@@ -825,6 +869,17 @@ export default function Home() {
             ...prev,
             [currQ.id]: !prev[currQ.id]
           }));
+        }
+        return;
+      }
+
+      // Atalho R para reportar erro na questão atual
+      if (e.key === 'r' || e.key === 'R') {
+        const currQ = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)];
+        if (currQ) {
+          e.preventDefault();
+          setQuestionToReport(currQ);
+          setIsReportDrawerOpen(true);
         }
         return;
       }
@@ -1795,20 +1850,37 @@ export default function Home() {
 
                       <div className="pt-2 space-y-1">
                         {isAdmin && (
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setActiveTab('curadoria');
-                              setProfileDropdownOpen(false);
-                            }}
-                            className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50/50 dark:bg-indigo-950/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-all cursor-pointer"
-                          >
-                            <div className="flex items-center gap-2">
-                              <ShieldCheck className="w-3.5 h-3.5" />
-                              <span>Curadoria de Gabaritos</span>
-                            </div>
-                            <ChevronRight className="w-3.5 h-3.5" />
-                          </button>
+                          <>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setActiveTab('curadoria');
+                                setProfileDropdownOpen(false);
+                              }}
+                              className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50/50 dark:bg-indigo-950/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-all cursor-pointer"
+                            >
+                              <div className="flex items-center gap-2">
+                                <ShieldCheck className="w-3.5 h-3.5" />
+                                <span>Curadoria de Gabaritos</span>
+                              </div>
+                              <ChevronRight className="w-3.5 h-3.5" />
+                            </button>
+
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setActiveTab('reportes');
+                                setProfileDropdownOpen(false);
+                              }}
+                              className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-50/50 dark:bg-amber-950/30 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-all cursor-pointer"
+                            >
+                              <div className="flex items-center gap-2">
+                                <Flag className="w-3.5 h-3.5" />
+                                <span>Questões Reportadas</span>
+                              </div>
+                              <ChevronRight className="w-3.5 h-3.5" />
+                            </button>
+                          </>
                         )}
 
                         <button
@@ -1855,7 +1927,12 @@ export default function Home() {
                 { id: 'stats', label: 'Meu Desempenho' },
                 { id: 'ranking', label: 'Ranking Oficial' },
                 { id: 'configuracoes', label: 'Meu Perfil & Ajustes' },
-                ...(isAdmin ? [{ id: 'curadoria', label: 'Curadoria de Gabaritos' }] : [])
+                ...(isAdmin
+                  ? [
+                      { id: 'curadoria', label: 'Curadoria de Gabaritos' },
+                      { id: 'reportes', label: 'Questões Reportadas' }
+                    ]
+                  : [])
               ].map((item) => (
                 <button
                   key={item.id}
@@ -2515,15 +2592,11 @@ export default function Home() {
                               {filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)] && (
                                 <button
                                   type="button"
-                                  onClick={async () => {
+                                  onClick={() => {
                                     const currentQ = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)];
                                     if (!currentQ) return;
-                                    setReportedQuestionIds((prev) => ({
-                                      ...prev,
-                                      [currentQ.id]: true
-                                    }));
-                                    await reportQuestionIssue(currentQ.id, 'Apontamento de erro em questão');
-                                    success('Questão enviada para auditoria da banca médica.', 'Denúncia Registrada');
+                                    setQuestionToReport(currentQ);
+                                    setIsReportDrawerOpen(true);
                                   }}
                                   className={`p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer ${
                                     reportedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
@@ -2870,6 +2943,11 @@ export default function Home() {
           {activeTab === 'curadoria' && isAdmin && (
             <AdminCuradoriaGabaritos />
           )}
+
+          {/* ABA 9: AUDITORIA DE QUESTÕES REPORTADAS (PAINEL ADMINISTRATIVO) */}
+          {activeTab === 'reportes' && isAdmin && (
+            <AdminReportedQuestions />
+          )}
         </main>
 
         {/* Rodapé Moderno */}
@@ -2927,6 +3005,24 @@ export default function Home() {
       <KeyboardShortcutsModal
         isOpen={isShortcutsModalOpen}
         onClose={() => setIsShortcutsModalOpen(false)}
+      />
+
+      {/* Drawer Lateral de Apontamento e Reporte de Erro em Questão */}
+      <ReportIssueDrawer
+        isOpen={isReportDrawerOpen}
+        onClose={() => {
+          setIsReportDrawerOpen(false);
+          setQuestionToReport(null);
+        }}
+        question={questionToReport}
+        user={user}
+        onReportSuccess={(qId) => {
+          setReportedQuestionIds((prev) => ({
+            ...prev,
+            [qId]: true
+          }));
+          success('Apontamento enviado com sucesso para auditoria da banca médica!', 'Denúncia Registrada');
+        }}
       />
     </div>
   );

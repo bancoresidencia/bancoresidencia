@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_da101f94-38d3-4e12-b2e2-2221db693262",
+    "originalId": "da101f94-38d3-4e12-b2e2-2221db693262",
+    "statement": "Em relação à aferição da pressão arterial, analise as seguintes assertivas:\n\nI. O uso inapropriado de manguito pequeno subestima o valor da pressão arterial.\nII. Definem-se as pressões sistólica e diastólica, respectivamente, com o primeiro e o quinto sons de Korotkoff.\nIII. Em geral, o valor da pressão sistólica aumenta e o valor da diastólica diminui quando a aferição é feita em artérias mais distais.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das assertivas:\n\nItem I está incorreto. O uso de um manguito com dimensões menores do que o recomendado para a circunferência do braço exige uma pressão de insuflação maior para colabar a artéria braquial. Isso gera uma leitura falsamente elevada, ou seja, superestima (hiperestima) a pressão arterial. O manguito excessivamente grande é que subestima a medida.\n\nItem II está correto. De acordo com as diretrizes de hipertensão arterial e a propedêutica cardiovascular clássica, a pressão arterial sistólica corresponde ao surgimento do primeiro som (Fase I de Korotkoff) e a pressão arterial diastólica corresponde ao desaparecimento completo dos sons (Fase V de Korotkoff).\n\nItem III está correto. Pelo fenômeno de amplificação da onda de pulso periférica, decorrente da diminuição progressiva da complacência arterial e do reflexo das ondas nos ramos arteriais, o pico da pressão sistólica aumenta e a pressão diastólica tende a diminuir levemente à medida que a medida se distancia da aorta central em direção a artérias periféricas (como a radial). A pressão de pulso aumenta, enquanto a pressão arterial média se mantém discretamente menor.\n\nAnálise das alternativas:\n\na) Incorreta. A assertiva I está incorreta, pois o manguito pequeno superestima a pressão arterial.\nb) Incorreta. A assertiva I está incorreta e a assertiva II está correta, mas não foi incluída nesta opção.\nc) Correta. Apenas as assertivas II e III apresentam conceitos verdadeiros sobre a fisiologia cardiovascular e a técnica de aferição.\nd) Incorreta. A assertiva I é falsa, invalidando a opção que considera todas corretas.\n\nGabarito: Letra c.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  },
+  {
+    "id": "AJUDA_da134013-8d8a-4b01-89ec-5b607fec25c5",
+    "originalId": "da134013-8d8a-4b01-89ec-5b607fec25c5",
+    "statement": "Paciente 30 anos, primípara, com acompanhamento pré-natal de baixo risco bem realizado e sem intercorrências. Vem para acompanhamento pré-natal na 35ª semana de gravidez, quando é percebida uma AFU de 30 cm. Foi submetida a uma ultrassonografia que evidenciou uma circunferência abdominal entre o percentil 3 e 10, o índice de pulsatilidade da artéria cerebral média fetal no percentil 3 e da artéria umbilical no percentil 80. \nQual a conduta a ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indução do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cesariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Expectante, com reavaliação da dopplervelocimetria, cardiotocografia, perfil biofísico fetal e crescimento fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Expectante, com reavaliação apenas com a dopplervelocimetria e crescimento fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Expectante, sem necessidade de dopplervelocimetria, mas acompanhando o crescimento fetal até a 40ª semana de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso:\n\nO quadro clínico descreve uma gestação de 35 semanas (pré-termo) com um feto que apresenta a circunferência abdominal entre os percentis 3 e 10. De acordo com os critérios diagnósticos atuais para Restrição de Crescimento Fetal (RCF) tardia, a presença de um feto pequeno para a idade gestacional associada a alterações no Doppler (neste caso, o Índice de Pulsatilidade da artéria cerebral média no percentil 3, que é inferior ao percentil 5) confirma o diagnóstico. O achado na artéria cerebral média indica vasodilatação cerebral, um mecanismo de adaptação fetal à hipóxia crônica conhecido como centralização ou efeito brain-sparing.\n\nExplicando as alternativas:\n\nAlternativa (a) Incorreta: A indução do parto prematuro às 35 semanas não é indicada de imediato neste cenário. No RCF tardio com alteração isolada da artéria cerebral média (classificado como Estágio 1 de Barcelona), o objetivo é prolongar a gestação até as 37 semanas, desde que a vigilância fetal seja mantida e os exames de vitalidade estejam normais, evitando assim as complicações da prematuridade.\n\nAlternativa (b) Incorreta: A cesariana imediata não tem indicação clínica neste momento. Não há sinais de sofrimento fetal agudo ou de descompensação hemodinâmica grave, como diástole zero na artéria umbilical ou alteração no ducto venoso, que justificariam uma interrupção imediata por via alta.\n\nAlternativa (c) Correta: Esta é a conduta preconizada pelos principais protocolos obstétricos. Como o feto apresenta sinais de redistribuição hemodinâmica (centralização), mas ainda está abaixo de 37 semanas, deve-se adotar uma conduta de vigilância rigorosa. Isso inclui a dopplervelocimetria para acompanhar a função placentária, além da cardiotocografia e do perfil biofísico fetal para monitorar o bem-estar agudo, juntamente com o acompanhamento do crescimento. O parto será programado preferencialmente ao atingir o termo (37 semanas).\n\nAlternativa (d) Incorreta: A conduta está incompleta. Embora o Doppler e o crescimento sejam fundamentais, o acompanhamento do feto com RCF exige a avaliação da vitalidade fetal aguda através da cardiotocografia e/ou do perfil biofísico fetal. Esses exames são essenciais para detectar falhas nos mecanismos de compensação fetal que poderiam indicar a necessidade de antecipação do parto.\n\nAlternativa (e) Incorreta: É um erro técnico não utilizar o Doppler no acompanhamento de um feto com restrição de crescimento, pois ele é a ferramenta diagnóstica e de monitoramento mais importante para guiar o momento do parto. Além disso, aguardar até a 40ª semana sem vigilância adequada em um feto que já demonstra sinais de sofrimento crônico aumenta significativamente o risco de óbito intrauterino.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Vitalidade Fetal",
+      "Restrição de Crescimento Fetal e Óbito Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  },
+  {
+    "id": "AJUDA_da1a4224-fdd7-4885-8f70-5ba7819eeba0",
+    "originalId": "da1a4224-fdd7-4885-8f70-5ba7819eeba0",
+    "statement": "Gestante de 14 semanas procura atendimento referindo estupro ocorrido há 2 dias. Traz boletim de ocorrência, mas está emocionalmente abalada e não deseja realizar exame pericial antes do procedimento. Relata certeza da decisão de interrupção. Segundo a legislação e diretrizes éticas brasileiras, qual é a conduta adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A interrupção só pode ser realizada após exame pericial que comprove o estupro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A interrupção pode ser realizada, desde que haja BO e avaliação psiquiátrica confirmando capacidade de decisão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A interrupção pode ser realizada mesmo sem boletim de ocorrência ou exame pericial, desde que haja declaração da gestante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A interrupção só pode ser feita até 12 semanas em casos de estupro no Brasil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "É obrigatória autorização judicial antes da interrupção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os aspectos legais e éticos do aborto previsto em lei no Brasil, especificamente no caso de gravidez resultante de estupro. De acordo com o Código Penal Brasileiro (artigo 128) e as Normas Técnicas do Ministério da Saúde, o médico tem o dever de prestar assistência e realizar o procedimento quando solicitado pela gestante nessa situação.\n\nAlternativa A: Incorreta. Não existe a exigência legal de exame pericial (corpo de delito) ou prova do estupro para a realização do aborto legal. O relato da paciente e a sua palavra sobre o ocorrido são suficientes para que a equipe de saúde proceda ao protocolo de interrupção.\n\nAlternativa B: Incorreta. Embora a paciente na questão possua o Boletim de Ocorrência (BO), ele não é um documento obrigatório para o acesso ao serviço de saúde. Além disso, não há necessidade de avaliação psiquiátrica obrigatória para confirmar a capacidade de decisão, a menos que haja uma suspeita clínica específica de incapacidade mental, o que não é a regra.\n\nAlternativa C: Correta. Esta é a conduta fundamentada na Norma Técnica de Atenção Humanizada ao Abortamento do Ministério da Saúde. O acesso ao aborto legal no caso de estupro prescinde de Boletim de Ocorrência, de autorização judicial ou de laudo pericial do IML. A equipe de saúde deve basear-se na presunção de veracidade da palavra da mulher e realizar o preenchimento dos documentos internos (Termo de Relato Circunstanciado, Termo de Responsabilidade e Termo de Consentimento Livre e Esclarecido).\n\nAlternativa D: Incorreta. O Código Penal Brasileiro não estabelece um limite de idade gestacional para a realização do aborto em caso de estupro. Embora existam discussões técnicas sobre a viabilidade fetal (geralmente em torno de 20 a 22 semanas), a afirmação de que o limite é de 12 semanas não possui respaldo na legislação vigente.\n\nAlternativa E: Incorreta. O aborto em caso de estupro é um procedimento que não depende de alvará ou autorização judicial. A mulher tem o direito de ser atendida diretamente pelo serviço de saúde público ou privado que realize o procedimento, desde que preenchidos os requisitos éticos e os protocolos do Ministério da Saúde.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  },
+  {
+    "id": "AJUDA_da22a9f7-bb68-4d8a-b3a9-9e6f5b00f9e3",
+    "originalId": "da22a9f7-bb68-4d8a-b3a9-9e6f5b00f9e3",
+    "statement": "Assinale a alternativa que corresponde à doença crônica não transmissível (DCNT) de maior frequência no Brasil.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doenças infecciosas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Câncer",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença respiratória crônica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença do aparelho circulatório",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "As Doenças Crônicas Não Transmissíveis (DCNT) representam um dos maiores problemas de saúde pública no Brasil e no mundo. Elas são caracterizadas por uma etiologia multifatorial, longos períodos de latência e curso prolongado. No Brasil, o grupo das DCNT é responsável pela maior carga de morbimortalidade. Abaixo, analisamos cada alternativa:\n\nAlternativa a) Doenças infecciosas.\nEsta alternativa está incorreta por uma questão conceitual básica. As doenças infecciosas e parasitárias (como dengue, malária ou tuberculose) são classificadas como doenças transmissíveis. A questão solicita especificamente uma Doença Crônica Não Transmissível (DCNT). Embora algumas infecções possam se tornar crônicas (como o HIV ou a hepatite C), o grupo das DCNT, por definição epidemiológica, refere-se a condições como doenças cardiovasculares, câncer, diabetes e doenças respiratórias.\n\nAlternativa b) Câncer.\nEsta alternativa está incorreta. Embora as neoplasias malignas representem a segunda maior causa de morte por DCNT no Brasil e apresentem incidência crescente devido ao envelhecimento populacional, elas ainda não superam as doenças do aparelho circulatório em termos de frequência e mortalidade total na população brasileira.\n\nAlternativa c) Doença respiratória crônica.\nEsta alternativa está incorreta. As doenças respiratórias crônicas, como a asma e a doença pulmonar obstrutiva crônica (DPOC), são componentes importantes do grupo das DCNT e possuem alta prevalência. No entanto, estatisticamente, elas ocupam posições inferiores em comparação às doenças cardiovasculares e ao câncer, tanto em prevalência diagnóstica quanto em taxas de mortalidade.\n\nAlternativa d) Doença do aparelho circulatório.\nEsta alternativa está correta. As doenças do aparelho circulatório (que incluem a hipertensão arterial sistêmica, o infarto agudo do miocárdio e o acidente vascular cerebral) constituem o grupo de DCNT de maior frequência e impacto epidemiológico no Brasil. Segundo dados do Ministério da Saúde e do sistema de vigilância VIGITEL, a hipertensão arterial, isoladamente, é a condição crônica mais relatada pelos brasileiros. Além disso, as doenças cardiovasculares permanecem como a principal causa de óbito no país, refletindo a alta prevalência de fatores de risco como sedentarismo, obesidade e tabagismo na população.\n\nGabarito: Letra (d).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  },
+  {
+    "id": "AJUDA_da23e491-5892-486e-aae8-899c0ddf3ab3",
+    "originalId": "da23e491-5892-486e-aae8-899c0ddf3ab3",
+    "statement": "Homem, 53 anos, com histórico de pancreatite crônica associada ao consumo abusivo de bebida alcoólica, refere aumento da frequência de evacuações nos últimos 9 meses, fezes de aspecto gorduroso e com mau cheiro. Exame físico: emagrecido, sinais vitais normais, sem outras alterações. Qual deficiência de vitamina mais provavelmente pode ser encontrada nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vitamina C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vitamina A.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um paciente com pancreatite crônica de etiologia alcoólica que evoluiu com insuficiência pancreática exócrina. A queixa de perda de peso e esteatorreia (fezes gordurosas, volumosas e com mau cheiro) é o marco da deficiência de lipase pancreática. Quando a secreção de enzimas digestivas cai abaixo de 10% do normal, ocorre a má absorção de gorduras e, consequentemente, das vitaminas que dependem da gordura para serem transportadas e absorvidas: as vitaminas lipossolúveis (A, D, E e K).\n\nAlternativa a) Incorreta. A vitamina C (ácido ascórbico) é uma vitamina hidrossolúvel. Sua absorção ocorre por transporte ativo no intestino delgado e não depende da digestão de gorduras ou da ação de enzimas pancreáticas. Sua deficiência (escorbuto) está ligada à baixa ingestão de frutas e vegetais, não sendo uma complicação direta da esteatorreia.\n\nAlternativa b) Incorreta. Embora as enzimas pancreáticas (proteases) participem do metabolismo da vitamina B12 ao clivarem a ligação desta com a proteína R (permitindo que a B12 se ligue ao fator intrínseco), a deficiência de vitaminas lipossolúveis é muito mais frequente e classicamente associada ao quadro de má absorção de gorduras na insuficiência pancreática exócrina. Nas questões de prova, a esteatorreia é o gatilho principal para pensar em vitaminas A, D, E e K.\n\nAlternativa c) Correta. A vitamina A é uma das quatro vitaminas lipossolúveis. Na pancreatite crônica, a falta de lipase impede a quebra de triglicerídeos e a formação de micelas necessárias para o transporte dessas vitaminas para dentro dos enterócitos. Dentre as opções apresentadas, a vitamina A é a única que segue essa via de absorção dependente de gordura, tornando sua deficiência uma complicação provável e esperada neste paciente.\n\nAlternativa d) Incorreta. O ácido fólico é uma vitamina hidrossolúvel. Sua absorção ocorre principalmente no jejuno proximal por meio de transportadores específicos. Embora pacientes etilistas possam apresentar deficiência de folato por má alimentação ou interferência direta do álcool na absorção, ela não decorre do mecanismo de insuficiência exócrina e esteatorreia descrito no enunciado.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Distúrbios Disabsortivos",
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  },
+  {
+    "id": "AJUDA_da2565ed-c519-48a3-8aa2-a11e39ea883a",
+    "originalId": "da2565ed-c519-48a3-8aa2-a11e39ea883a",
+    "statement": "Filomena, de 12 meses de idade, previamente saudável, está apresentando diarreia líquida há sete dias, com fezes volumosas, sem sangue, eliminadas de forma explosiva acompanhada de distensão abdominal e assadura importante na região perianal. Ao exame físico, pesa 6Kg, está levemente enoftálmica, com sede, diurese diminuída. A perfusão de extremidades é de quatro segundos. Em uso de dieta normal para a idade e com fórmula alimentar habitual.\n\nDentre as medidas terapêuticas listadas abaixo, a MAIS INDICADA para o tratamento desta criança é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter a dieta e prescrever probiótico por cinco dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever antimicrobiano, azitromicina por três dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Substituir a fórmula à base de proteína do leite de vaca por hidrolisado proteico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender temporariamente a lactose da dieta",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta uma lactente de 12 meses com quadro de diarreia aguda que evoluiu com sinais clássicos de má absorção de carboidratos, especificamente a intolerância secundária à lactose. Os pontos-chave para o diagnóstico são: fezes explosivas e volumosas, distensão abdominal e a presença de assadura (dermatite amoniacal) importante, causada pela acidez das fezes resultante da fermentação do açúcar não absorvido pelas bactérias intestinais. Além disso, a paciente apresenta sinais de desidratação (enoftalmia, sede e tempo de enchimento capilar prolongado).\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): Embora os probióticos possam reduzir o tempo de duração de quadros de diarreia aguda viral, eles não tratam a causa fisiopatológica instalada no caso (a má absorção osmótica). Manter a dieta habitual com lactose em uma criança com sinais claros de intolerância secundária e assadura grave prolongaria o quadro e o desconforto.\n\nAlternativa B (Incorreta): O quadro clínico é compatível com diarreia osmótica/viral, e não invasiva. Não há relato de febre alta, toxemia ou presença de sangue nas fezes (disenteria) que justifique o uso de azitromicina ou qualquer outro antimicrobiano. O uso indiscriminado de antibióticos pode, inclusive, piorar a disbiose intestinal.\n\nAlternativa C (Incorreta): A substituição por hidrolisado proteico é indicada para casos de Alergia à Proteína do Leite de Vaca (APLV). A história clínica de Filomena (início súbito, fezes explosivas e distensão) direciona para uma deficiência transitória de lactase após um insulto infeccioso à mucosa intestinal, e não para uma etiologia alérgica mediada pela proteína do leite.\n\nAlternativa D (Correta): A suspensão temporária da lactose é a medida mais indicada. Lesões na borda em escova dos enterócitos (comuns após episódios de gastroenterite) reduzem a produção de lactase. A lactose não digerida exerce efeito osmótico (atraindo água para o lúmen) e é fermentada no cólon, gerando gases e ácidos orgânicos, o que explica as fezes explosivas, a distensão e a dermatite perianal química. A retirada temporária permite a recuperação da mucosa e a cessação rápida desses sintomas. Vale ressaltar que, em paralelo, a estabilização hemodinâmica e a reidratação da paciente devem ser priorizadas conforme os protocolos de manejo da desidratação.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  },
+  {
+    "id": "AJUDA_da276fa9-6335-459e-b472-1b235870431a",
+    "originalId": "da276fa9-6335-459e-b472-1b235870431a",
+    "statement": "Mulher de 52 anos de idade queixa-se de fogachos intensos, insônia e irritabilidade há 1 ano. AP: amenorreia há 14 meses; HAS controlada; nega tabagismo e histórico de trombose ou câncer. Exame físico: BEG; eutrófica; normotensa. Exame ginecológico: vagina pouco lubrificada; útero e ovários sem alterações ao toque vaginal.\nA conduta para alívio dos sintomas é prescrever",
+    "options": [
+      {
+        "id": "A",
+        "text": "estrogênio e progestagênio, após rastreio mamográfico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "estrogênio e progestagênio, após rastreio para osteoporose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estrogênio isolado, após rastreio para osteoporose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "estrogênio isolado, após rastreio mamográfico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nA paciente de 52 anos apresenta sintomas vasomotores intensos (fogachos) e sintomas neuropsíquicos (insônia e irritabilidade), com tempo de amenorreia de 14 meses, o que confirma o diagnóstico de menopausa (definida como 12 meses consecutivos de amenorreia). O exame físico revela sinais de atrofia genital (vagina pouco lubrificada). Não há contraindicações formais imediatas para a Terapia de Reposição Hormonal (TRH), visto que a hipertensão arterial está controlada, a paciente é eutrófica e nega tabagismo ou histórico de câncer e trombose.\n\nCritérios para a Terapia de Reposição Hormonal:\n\n1. Escolha do Esquema: A decisão entre usar apenas estrogênio ou a combinação de estrogênio e progestagênio depende exclusivamente da presença do útero. Mulheres com útero preservado, como é o caso desta paciente (descrito no exame ginecológico), devem obrigatoriamente receber a terapia combinada. O progestagênio é adicionado para proteger o endométrio contra a hiperplasia e o câncer endometrial, que seriam estimulados pelo uso de estrogênio isolado.\n\n2. Exames de Rastreio: Antes de iniciar a TRH, é obrigatório realizar o rastreio de câncer de mama através da mamografia. O uso de hormônios pode estimular tumores mamários pré-existentes ou ocultos, tornando esse exame o pré-requisito fundamental antes da prescrição.\n\nAnálise das Alternativas:\n\nAlternativa (a) CORRETA: Apresenta a conduta terapêutica adequada para uma mulher com útero (estrogênio + progestagênio) e indica o rastreio prévio mandatório (mamografia).\n\nAlternativa (b) INCORRETA: Embora o esquema hormonal esteja correto, o rastreio para osteoporose (densitometria óssea) não é o exame prioritário ou mandatório antes de iniciar a TRH. O rastreio de osteoporose rotineiro é indicado para mulheres acima de 65 anos ou antes disso se houver fatores de risco clínicos significativos.\n\nAlternativa (c) INCORRETA: O estrogênio isolado é contraindicado para mulheres com útero preservado pelo risco oncológico endometrial. Além disso, o foco do rastreio deve ser a mama e não a osteoporose para o início da terapia.\n\nAlternativa (d) INCORRETA: O rastreio mamográfico mencionado está correto, porém a prescrição de estrogênio isolado colocaria a paciente em risco de desenvolver câncer de endométrio, já que ela possui útero.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  },
+  {
+    "id": "AJUDA_da330baf-eae0-4317-bab3-b3764681caaf",
+    "originalId": "da330baf-eae0-4317-bab3-b3764681caaf",
+    "statement": "Leia o caso a seguir.\n\nPaciente do sexo masculino, 40 anos, ao fazer avaliação cardiológica, ao exame físico notou-se desdobramento da segunda bulha à ausculta, que ocorria somente durante a expiração quando solicitado apnéia, que desaparecia na inspiração profunda.\n\nEsse aspecto da ausculta cardíaca é conhecido como desdobramento",
+    "options": [
+      {
+        "id": "A",
+        "text": "fisiológico da segunda bulha, relacionado com a inspiração/expiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "paradoxal da segunda bulha, causado por comunicação interatrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "paradoxal da segunda bulha, causado por bloqueio do ramo esquerdo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "fisiológico da segunda bulha, mas piorado por estenose aórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, é fundamental revisar a dinâmica da segunda bulha cardíaca (B2), que é composta pelos componentes de fechamento da valva aórtica (A2) e da valva pulmonar (P2). Em condições normais, o fechamento da valva aórtica ocorre levemente antes da pulmonar.\n\nNo desdobramento fisiológico, durante a inspiração, ocorre um aumento do retorno venoso para o ventrículo direito, o que prolonga o tempo de ejeção desse ventrículo e retarda o fechamento da valva pulmonar (P2). Com isso, A2 e P2 se afastam e o examinador ouve dois sons distintos. Na expiração, o retorno venoso diminui, P2 ocorre mais cedo, aproximando-se de A2, e a bulha é ouvida como um som único.\n\nO caso descrito apresenta o fenômeno inverso: o desdobramento ocorre na expiração e desaparece na inspiração profunda. Esse achado é a definição semiológica do desdobramento paradoxal da segunda bulha. Ele ocorre quando há um atraso patológico no fechamento da valva aórtica (A2), fazendo com que ela ocorra após a valva pulmonar (P2). Assim, na inspiração, o atraso fisiológico de P2 faz com que este componente se aproxime do componente A2 que já está atrasado, fundindo os dois sons em um só. Na expiração, como o P2 ocorre mais precocemente, a distância entre P2 (que vem primeiro) e A2 (que vem depois) aumenta, tornando o desdobramento audível.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O desdobramento fisiológico é aquele que surge na inspiração e desaparece na expiração. O enunciado descreve exatamente o padrão oposto.\n\nAlternativa b: Incorreta. A comunicação interatrial (CIA) é a causa clássica do desdobramento fixo da segunda bulha. Nesse caso, o desdobramento não varia com a respiração, pois o shunt entre os átrios equaliza as variações de volume e pressão durante o ciclo respiratório.\n\nAlternativa c: Correta. O bloqueio do ramo esquerdo (BRE) provoca um atraso na despolarização e, consequentemente, na contração mecânica do ventrículo esquerdo. Isso retarda o fechamento da valva aórtica (A2). Como o componente A2 passa a ocorrer após o componente P2, cria-se o padrão de desdobramento paradoxal (audível na expiração e único na inspiração).\n\nAlternativa d: Incorreta. A estenose aórtica, quando importante, pode causar desdobramento paradoxal da segunda bulha devido ao prolongamento do tempo de ejeção do ventrículo esquerdo, o que atrasa o componente A2. Portanto, a alternativa erra ao classificar o fenômeno como fisiológico.\n\nConclusão: O quadro clínico de desdobramento da B2 em expiração que desaparece na inspiração é um desdobramento paradoxal, sendo o bloqueio de ramo esquerdo uma de suas causas mais frequentes na prática clínica.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Semiologia Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  },
+  {
+    "id": "AJUDA_da3726f3-2a9b-4e4a-b41c-96823e1b3f97",
+    "originalId": "da3726f3-2a9b-4e4a-b41c-96823e1b3f97",
+    "statement": "Homem, 49 anos, em tratamento quimioterápico por carcinoma pulmonar, procura o pronto-socorro por febre iniciada há 6 horas. Relata calafrios, mal-estar e queda do estado geral.\n\nExame físico: paciente febril, abatido, PA 90 x 60 mmHg, FC 110 bpm, FR 24 irpm, SpO₂ 92% em ar ambiente.\nExames laboratoriais: hemoglobina 9,3 g/dL, leucócitos 700/mm³ (neutrófilos 50%), plaquetas 97.000/mm³.\n\nDiante desse quadro, a conduta mais adequada é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como não há neutropenia importante, a decisão pelo antibiótico dependerá da presença de cateter venoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pode-se prescrever amoxicilina-clavulanato associada a ciprofloxacina, se a duração da neutropenia for curta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A antibioticoterapia deve ser postergada até o resultado de hemoculturas e identificação do foco infeccioso, para reduzir risco de resistência bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de cefepime é adequado, pois a cobertura contra Pseudomonas aeruginosa é mandatória em pacientes com febre e neutropenia grave.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Todo paciente em quimioterapia com febre deve receber de imediato os antibióticos mais potentes disponíveis, independentemente da situação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um paciente com neutropenia febril, uma emergência oncológica. O primeiro passo para a avaliação é calcular a Contagem Absoluta de Neutrófilos (CAN). Com 700 leucócitos/mm³ e 50% de neutrófilos, a CAN é de 350/mm³. A neutropenia febril é definida como uma temperatura oral única maior que 38,3 °C ou maior que 38,0 °C por mais de uma hora, associada a uma CAN menor que 500/mm³ (ou menor que 1.000/mm³ com previsão de queda para menos de 500/mm³ em 48 horas).\n\nAnálise das alternativas:\n\na) Incorreta. Existe, sim, uma neutropenia importante e grave (abaixo de 500/mm³). A decisão de iniciar o antibiótico não depende do cateter; o tratamento deve ser imediato em todos os casos de neutropenia febril. A presença de cateter venoso central poderia apenas sugerir a adição de cobertura para Gram-positivos (como vancomicina), mas não condiciona o início da terapia.\n\nb) Incorreta. O uso de antibióticos por via oral (como ciprofloxacina e amoxicilina-clavulanato) é reservado apenas para pacientes classificados como de baixo risco pelo escore MASCC (estáveis hemodinamicamente, sem disfunções orgânicas). Este paciente apresenta sinais de gravidade e instabilidade hemodinâmica (PA 90 x 60 mmHg, taquicardia e taquipneia), sendo classificado como de alto risco, o que exige internação e tratamento endovenoso.\n\nc) Incorreta. A antibioticoterapia na neutropenia febril deve ser iniciada o mais rápido possível, idealmente na primeira hora (a chamada \"hora de ouro\"). Postergar o tratamento para aguardar resultados de culturas aumenta significativamente a mortalidade por choque séptico.\n\nd) Correta. O paciente é de alto risco e apresenta neutropenia grave. Nestes casos, a terapia inicial deve ser feita com um antibiótico de amplo espectro que cubra obrigatoriamente a *Pseudomonas aeruginosa*. O cefepime é uma cefalosporina de quarta geração que possui essa cobertura e é amplamente recomendado como monoterapia inicial para pacientes de alto risco.\n\ne) Incorreta. Nem todo paciente em quimioterapia com febre está neutropênico ou em estado grave. A conduta depende da contagem de neutrófilos e da estratificação de risco. O uso indiscriminado dos \"antibióticos mais potentes disponíveis\" (como carbapenêmicos de reserva ou polimixinas) para todos os casos sem critério clínico promove resistência bacteriana desnecessária.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  },
+  {
+    "id": "AJUDA_da38ac0a-04a4-43e9-b0ca-3e9f4dce8a3b",
+    "originalId": "da38ac0a-04a4-43e9-b0ca-3e9f4dce8a3b",
+    "statement": "Homem de 34 anos, previamente hígido, é admitido no pronto-socorro em crise convulsiva tônico-clônica generalizada com duração de 8 minutos. Recebeu Diazepam 10 mg EV, com melhora inicial, mas recidiva em seguida. Após nova dose de benzodiazepínico, o paciente permanece com crise reentrante caracterizando status epilepticus. A equipe decide prosseguir o tratamento. Qual das condutas abaixo está CORRETA segundo as recomendações atuais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar fenitoína EV na dose de 15–20 mg/kg, em infusão lenta (máx. 50 mg/min), com monitorização contínua de ritmo cardíaco e pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administrar fenobarbital EV na dose de 20 mg/kg, em bolus rápido, para reduzir tempo de crise, sem necessidade de monitorização intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar fenitoína EV 1 g em bolus único, em infusão rápida em até 2 minutos, para atingir níveis séricos eficazes mais rapidamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar propafenona EV em dose de 30 mg/kg, em infusão de até 150 mg/min, visando encurtar o tempo total de administração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar fenitoína EV na dose de 15–20 mg/kg, em bolus rápido em até 2 minutos, para alcançar concentrações plasmáticas eficazes precocemente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo farmacológico do estado de mal epiléptico (*Status Epilepticus*), definido como uma crise convulsiva com duração superior a 5 minutos ou crises recorrentes sem recuperação do nível de consciência entre elas. O paciente em questão já falhou na terapia de primeira linha (benzodiazepínicos), entrando na fase de terapia de segunda linha.\n\nAlternativa A (Correta): De acordo com os principais protocolos nacionais e internacionais (como o da *American Epilepsy Society*), após a falha do benzodiazepínico, a próxima etapa é a administração de uma droga antiepiléptica de longa duração por via endovenosa. A fenitoína é uma das opções de escolha. A dose recomendada é de 15 a 20 mg/kg. Um ponto crucial é a velocidade de infusão: ela não deve exceder 50 mg/min em adultos para evitar complicações cardiovasculares, como hipotensão e arritmias (causadas tanto pela droga quanto pelo diluente propilenoglicol). Por isso, a monitorização do ritmo cardíaco e da pressão arterial é mandatória durante a infusão.\n\nAlternativa B (Incorreta): O fenobarbital é, sim, uma opção de segunda ou terceira linha. No entanto, ele não deve ser administrado em *bolus* rápido, pois apresenta alto risco de depressão respiratória e hipotensão severa. Além disso, a afirmação de que não há necessidade de monitorização intensiva está errada; todo paciente em estado de mal epiléptico e em uso de medicações sedativas/anticonvulsivantes potentes deve ser monitorado continuamente.\n\nAlternativa C (Incorreta): Administrar 1 g de fenitoína em apenas 2 minutos é extremamente perigoso. Como a velocidade máxima segura é de 50 mg/min, uma dose de 1 g (1000 mg) deveria levar, no mínimo, 20 minutos para ser infundida. A infusão rápida pode causar colapso cardiovascular e assistolia. Além disso, a dose deve ser preferencialmente calculada por peso (mg/kg) para garantir a eficácia terapêutica.\n\nAlternativa D (Incorreta): A propafenona é um agente antiarrítmico da classe IC, utilizado para o tratamento de taquiarritmias supraventriculares e ventriculares. Ela não possui indicação no tratamento de crises convulsivas ou estado de mal epiléptico. O examinador utilizou um nome de medicamento foneticamente semelhante a outros fármacos para confundir o candidato.\n\nAlternativa E (Incorreta): Esta alternativa repete o erro da letra C. A fenitoína nunca deve ser administrada em *bolus* rápido (2 minutos), pelo risco iminente de toxicidade cardíaca grave. O tempo de infusão deve ser respeitado para garantir a segurança hemodinâmica do paciente enquanto se atinge o nível terapêutico cerebral.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Epilepsias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:39.995Z"
+  }
+]

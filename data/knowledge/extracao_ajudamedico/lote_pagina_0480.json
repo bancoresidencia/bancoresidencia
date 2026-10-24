@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_86965a90-2aa4-4a1d-9e1c-3774ada8ea0a",
+    "originalId": "86965a90-2aa4-4a1d-9e1c-3774ada8ea0a",
+    "statement": "A ANVISA define que as ambulâncias utilizadas no transporte e atendimento de doentes deverão ser classificadas da seguinte forma:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Classe A - Ambulância de resgate; Classe B - Ambulância de suporte básico; Classe C - Ambulância de transporte; Classe D - Aeronaves de transporte médico; Classe E - Nave de transporte médico; Classe F - Ambulância de suporte avançado (U.T.I. móvel).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Classe A - Ambulância de transporte; Classe B - Ambulância de suporte básico; Classe C - Ambulância de resgate; Classe D - Ambulância de suporte avançado (U.T. I móvel); Classe E - Aeronaves de transporte médico; Classe F – Nave de transporte médico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Classe A - Ambulância de suporte básico; Classe B - Ambulância de transporte; Classe C - Ambulância de resgate; Classe D - Nave de transporte médico; Classe E - Aeronaves de transporte médico; Classe F - Ambulância de suporte avançado (U.T.I. móvel).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Classe A - Ambulância de resgate; Classe B - Ambulância de suporte básico; Classe C - Ambulância de transporte; Classe D - Ambulância de suporte avançado (U.T.I. móvel); Classe E - Nave de transporte médico; Classe F - Aeronaves de transporte médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A classificação das ambulâncias no Brasil é regida primordialmente pela Portaria nº 2.048/2002 do Ministério da Saúde, que padroniza os veículos de acordo com a complexidade do atendimento, equipamentos e equipe necessária. A ANVISA adota esses mesmos parâmetros para a fiscalização sanitária.\n\nA sequência correta estabelecida pela norma é a seguinte:\n\nTipo A - Ambulância de Transporte: Destinada ao transporte de pacientes que não apresentam risco de vida, para remoções simples e de caráter eletivo.\nTipo B - Ambulância de Suporte Básico: Destinada ao atendimento e transporte de pacientes com risco de vida conhecido, mas sem necessidade de intervenção médica invasiva no local.\nTipo C - Ambulância de Resgate: Destinada ao atendimento de urgências pré-hospitalares de vítimas de acidentes, com equipamentos de salvamento e imobilização.\nTipo D - Ambulância de Suporte Avançado (UTI Móvel): Destinada ao atendimento e transporte de pacientes de alto risco que necessitam de cuidados médicos intensivos e equipamentos de suporte avançado de vida.\nTipo E - Aeronave de Transporte Médico: Aeronave de asa fixa ou rotativa utilizada para o transporte aeromédico.\nTipo F - Nave de Transporte Médico: Embarcação destinada ao transporte por via marítima ou fluvial (transporte aquaviário).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Apresenta erro na classificação inicial, indicando o Resgate como Tipo A. Além disso, inverte as posições finais, colocando o Suporte Avançado como Tipo F, quando este deve ser o Tipo D.\n\nAlternativa b: Correta. Esta alternativa descreve perfeitamente a sequência normativa de A a F, começando pelo transporte simples e terminando nas embarcações (naves).\n\nAlternativa c: Incorreta. Troca o Suporte Básico pelo Transporte nas letras A e B e também inverte a posição das aeronaves e embarcações em relação à norma vigente.\n\nAlternativa d: Incorreta. Começa a sequência de forma errada ao atribuir Resgate à Classe A e Transporte à Classe C. Também inverte a ordem correta entre aeronaves e embarcações no final da lista.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:07.978Z"
+  },
+  {
+    "id": "AJUDA_869b46d4-8684-44cc-a532-4b3b42a60d07",
+    "originalId": "869b46d4-8684-44cc-a532-4b3b42a60d07",
+    "statement": "De acordo com as diretrizes do Ministério da Saúde e outros protocolos, é recomendado que gestações de risco habitual sejam acompanhadas antes de considerar a indução do parto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Até a 40ª semana de gestação, com indução imediata se não houver trabalho de parto espontâneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Até a 41ª semana de gestação, com indução se não houver trabalho de parto espontâneo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Até a 42ª semana de gestação, aguardando o trabalho de parto espontâneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Até a 43ª semana de gestação, com monitoramento semanal da vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A conduta frente à cronologia da gestação de risco habitual é um tema fundamental na obstetrícia. O objetivo principal é permitir que o parto ocorra de forma fisiológica, mas intervindo antes que o envelhecimento placentário aumente os riscos para o concepto.\n\nExplicação das alternativas:\n\nAlternativa A - INCORRETA: A 40ª semana corresponde à Data Provável do Parto (DPP). Em gestações de risco habitual, não há necessidade de indução imediata ao atingir esse marco, pois grande parte das mulheres entrará em trabalho de parto espontâneo nos dias seguintes. A conduta recomendada entre a 40ª e a 41ª semana é a vigilância da vitalidade fetal e do volume de líquido amniótico.\n\nAlternativa B - CORRETA: De acordo com as diretrizes do Ministério da Saúde e das principais sociedades de obstetrícia (como a FEBRASGO), o limite para a conduta expectante em gestações de risco habitual é de 41 semanas. A partir desse momento, a indução do parto deve ser oferecida e realizada. Essa estratégia visa evitar que a gestação atinja 42 semanas (pós-termo), reduzindo significativamente o risco de complicações como a síndrome de aspiração de mecônio, insuficiência placentária e óbito fetal evitável.\n\nAlternativa C - INCORRETA: Embora a definição técnica de gestação pós-termo seja aquela que atinge ou ultrapassa as 42 semanas, os protocolos clínicos modernos preconizam a intervenção (indução) ao completar 41 semanas. Aguardar até a 42ª semana de forma passiva aumenta desnecessariamente os riscos perinatais sem trazer benefícios comprovados para a mãe ou para o bebê.\n\nAlternativa D - INCORRETA: Aguardar até a 43ª semana é uma conduta proscrita. O risco de morte fetal e complicações graves por falência placentária é extremamente elevado nesse estágio. Nenhum protocolo assistencial atual respalda a manutenção de uma gestação até essa idade gestacional, mesmo com monitoramento da vitalidade.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Indução do Parto e Pós-Datismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:07.978Z"
+  },
+  {
+    "id": "AJUDA_869c1f4a-b3c9-4f57-9444-e397e28ca556",
+    "originalId": "869c1f4a-b3c9-4f57-9444-e397e28ca556",
+    "statement": "Janaína, 62 anos, diabética, apresenta polidipsia, poliúria, polifagia e perda de 6kg em dois meses. Glicemia capilar: 426mg/dL. Está hidratada, sem náuseas, vômitos ou confusão mental. Sabidamente diabética desde os 50 anos, busca atendimento na Unidade Básica de Saúde. Informa que faz uso regular de comprimidos para diabetes, mas não sabe dizer quais. De acordo com o quadro apresentado e considerando a Linha de Cuidado do Ministério da Saúde de Diabetes Mellitus, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente não apresenta sinais de urgência hiperglicêmica e o seu diabetes pode ser manejado ambulatorialmente na UBS, devendo ser avaliada a dosagem dos medicamentos, sem necessidade de insulinoterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A paciente tem sinais de catabolismo, mas não apresenta urgência hiperglicêmica e poderá ser manejada ambulatorialmente na UBS, com insulinoterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A paciente tem sinais de cetoacidose diabética e deverá ser transferida para UPA 24 horas via SAMU",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apesar de não ter sinais de cetoacidose diabética, a paciente deverá ser encaminhada para a urgência a fim de dosar o potássio e receber hidratação, além de insulina regular para controle da glicemia",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\nJanaina apresenta uma descompensação diabética importante, com glicemia capilar de 426 mg/dL e sinais de catabolismo (perda de peso significativa e sintomas de poliúria, polidipsia e polifagia). Apesar de estar clinicamente estável (hidratada e sem alteração de consciência), o nível glicêmico muito elevado requer uma conduta de segurança.\n\nAlternativa A: Incorreta. Níveis de glicemia acima de 300 mg/dL associados à perda ponderal não devem ser manejados apenas com ajuste de medicação oral na UBS. Esse quadro sugere falência da terapia oral e risco de complicações agudas, exigindo uma intervenção mais assertiva.\n\nAlternativa B: Incorreta. Embora a insulinoterapia seja indicada devido aos sinais de catabolismo, o manejo inicial de uma glicemia de 426 mg/dL deve ser feito com suporte laboratorial. Iniciar insulina em ambiente ambulatorial sem a devida monitorização de eletrólitos e estabilização prévia não é a conduta recomendada para níveis tão elevados.\n\nAlternativa C: Incorreta. A paciente não apresenta sinais clínicos de cetoacidose diabética, como desidratação, náuseas, vômitos ou alteração do nível de consciência. O quadro não configura uma emergência de transporte imediato via SAMU, mas sim uma urgência que permite o encaminhamento para avaliação.\n\nAlternativa D: Correta. De acordo com as diretrizes do Ministério da Saúde para o manejo da hiperglicemia na Atenção Básica, pacientes com glicemia capilar acima de 300 mg/dL devem ser encaminhados para uma unidade de urgência. Essa conduta é necessária para realizar exames complementares, principalmente a dosagem de potássio, pois a administração de insulina pode causar uma queda rápida nos níveis de potássio sanguíneo (hipocalemia), o que representa risco de arritmias. Na urgência, a paciente receberá hidratação e insulina regular sob supervisão até a estabilização dos níveis glicêmicos.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:07.978Z"
+  },
+  {
+    "id": "AJUDA_86afee54-6f4f-48fb-93d8-075489bc31c4",
+    "originalId": "86afee54-6f4f-48fb-93d8-075489bc31c4",
+    "statement": "Paciente, 59 anos, hipertenso, sedentário, obeso, em uso de enalapril 20 mg 12/12 horas, anlodipino 10 mg/dia, clortalidona 25 mg/dia, espironolactona 25 mg/dia e carvedilol 25 mg 12/12 horas. Apesar de ser aderente às medicações em uso, mantém pressão não controlada, com aferições acima de 140/90 mmHg. Com base no caso clínico, assinale a alternativa correta em relação ao manejo ambulatorial desse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Substituir a clortalidona por hidroclorotiazida, pois é o diurético de escolha em hipertensão resistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Associar diurético de alça, como a furosemida e encaminhar ao cardiologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender a espironolactona pela falha terapêutica e associar hidralazina 50 mg 8/8 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar exames para investigação de causas secundárias de hipertensão e associar clonidina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O paciente em questão apresenta um quadro de hipertensão arterial refratária. De acordo com as diretrizes atuais, a hipertensão resistente é definida quando a pressão arterial permanece acima das metas mesmo com o uso de três classes de anti-hipertensivos em doses otimizadas (sendo um deles, preferencialmente, um diurético) ou quando o controle só é alcançado com quatro medicações. Quando a pressão não é controlada mesmo com o uso de cinco ou mais fármacos (incluindo a espironolactona e um diurético tiazídico de longa duração), o quadro é classificado como hipertensão refratária.\n\nAnálise das alternativas:\n\na) Incorreta. A clortalidona é um diurético tiazídico-símile com meia-vida mais longa e maior potência do que a hidroclorotiazida. Em casos de hipertensão resistente ou refratária, a clortalidona é justamente o diurético de escolha. Substituí-la pela hidroclorotiazida seria um retrocesso terapêutico.\n\nb) Incorreta. Os diuréticos de alça, como a furosemida, são indicados no tratamento da hipertensão principalmente quando o paciente apresenta insuficiência renal (taxa de filtração glomerular abaixo de 30 mL/min) ou quadros de edema importante (insuficiência cardíaca). No caso descrito, não há menção a essas condições; logo, a manutenção do diurético tiazídico-símile (clortalidona) é mais adequada para o controle pressórico sustentado.\n\nc) Incorreta. A espironolactona é a droga de quarta linha padrão para o tratamento da hipertensão resistente, conforme demonstrado por grandes estudos (como o PATHWAY-2). Suspendê-la por \"falha terapêutica\" não é a conduta correta; o manejo da hipertensão refratária exige a adição de novos mecanismos de ação, e não a retirada de uma droga fundamental.\n\nd) Correta. Diante de um paciente com hipertensão refratária (não controlado com cinco classes de drogas, incluindo espironolactona e clortalidona), é imperativo investigar causas secundárias de hipertensão. Causas como apneia obstrutiva do sono, hiperaldosteronismo primário, estenose de artéria renal e doenças parenquimatosas renais devem ser pesquisadas. Do ponto de vista farmacológico, após o bloqueio do sistema renina-angiotensina-aldosterona, do canal de cálcio, dos receptores mineralocorticoides e do sistema simpático (com carvedilol), a associação de um fármaco de ação central, como a clonidina (agonista alfa-2), é uma opção recomendada para tentar atingir a meta pressórica.\n\nResumo do manejo: O caso exige a confirmação da adesão (já citada), a realização de exames para descartar lesões de órgãos-alvo e causas secundárias, além do escalonamento medicamentoso com drogas de reserva, como a clonidina ou vasodilatadores diretos.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:07.978Z"
+  },
+  {
+    "id": "AJUDA_86b0668b-f41c-4733-81b4-65e96a1b5acb",
+    "originalId": "86b0668b-f41c-4733-81b4-65e96a1b5acb",
+    "statement": "Dentre os germes abaixo, qual é o que causa mais frequentemente sepse neonatal precoce?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estafilo coagulase negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estreptococo beta hemolítico do grupo B.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hemófilo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Escherichia coli.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A sepse neonatal precoce e definida como aquela que se manifesta nas primeiras 48 a 72 horas de vida, decorrente de transmissao vertical a partir do trato genital materno (via ascendente ou durante o parto vaginal).\n\nAnalise das alternativas:\n\nAlternativa A: Incorreta. Os estafilococos coagulase-negativos (principalmente Staphylococcus epidermidis) sao os agentes mais frequentes na sepse neonatal tardia (apos 72 horas de vida), relacionados a infeccoes nosocomiais, internacao prolongada em UTI neonatal e uso de dispositivos invasivos como acessos vasculares.\n\nAlternativa B: Correta. O Streptococcus agalactiae (estreptococo beta-hemolitico do grupo B ou GBS) e o agente bacteriano mais frequentemente responsavel pela sepse neonatal precoce de forma global. Por colonizar o trato gastrointestinal e genital inferior materno, sua identificacao e prevencao por meio de rastreio gestacional e antibioticoprofilaxia intraparto sao condutas padronizadas na assistencia obstetrica.\n\nAlternativa C: Incorreta. O Haemophilus influenzae (geralmente nao tipavel) e uma causa possivel de infeccao neonatal, porem sua frequencia epidemiologica e consideravelmente menor em relacao ao GBS e as enterobacterias.\n\nAlternativa D: Incorreta. A Escherichia coli e o segundo patogeno mais frequente na sepse neonatal precoce em recem-nascidos a termo, assumindo papel de destaque e maior frequencia em prematuros extremos e recem-nascidos de muito baixo peso. Contudo, na populacao geral e de acordo com a literatura medica consagrada para provas, o estreptococo do grupo B e o principal agente.\n\nGabarito: Letra B.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:07.978Z"
+  },
+  {
+    "id": "AJUDA_86bf6b6d-57be-4d74-84d5-75b8b6cacdd0",
+    "originalId": "86bf6b6d-57be-4d74-84d5-75b8b6cacdd0",
+    "statement": "Mulher de 32 anos, parda, ensino fundamental incompleto, trabalhadora rural, diarista no plantio de morango, procura Unidade Básica de Saúde (UBS) com queixas de tonturas, dores de cabeça, cansaço, náuseas e falta de ar. Ela referiu que desde os 20 anos sofre com dores de cabeça frequentes, mas há 2 semanas, após uma pulverização de agrotóxicos, começou a apresentar os sintomas descritos. Disse ainda que sua colega de trabalho apresentava queixas similares. Ao ouvir esses relatos, a médica da UBS suspeita de intoxicação aguda por agrotóxicos.\nNessa situação, qual é a conduta adequada a ser adotada na assistência?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar como caso suspeito ao centro de referência em saúde do trabalhador estadual e formalizar denúncia ao Ministério Público do Trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estabelecer nexo causal entre os sintomas e os resultados de exames complementares, para confirmar diagnóstico de intoxicação por agrotóxicos, e notificar a Vigilância em Saúde municipal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tratar os sintomas, solicitar exames complementares, notificar o caso no Sistema de Notificação de Agravos e Doenças (Sinan), conceder atestado médico e solicitar matriciamento à Vigilância em Saúde do Trabalhador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Informar não ser responsável pelo preenchimento da comunicação de acidente de trabalho (CAT), por ser atribuição exclusiva da medicina do trabalho, no centro municipal de referência em saúde do trabalhador.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Essa questão aborda a conduta médica diante de um caso de suspeita de intoxicação aguda por agrotóxicos em uma trabalhadora rural, integrando clínica médica, saúde do trabalhador e vigilância epidemiológica.\n\nAlternativa a) Incorreta. Embora o Centro de Referência em Saúde do Trabalhador (CEREST) seja uma unidade de apoio especializado, o médico da Unidade Básica de Saúde (UBS) deve realizar o atendimento inicial e as notificações pertinentes. A denúncia ao Ministério Público do Trabalho não é uma conduta assistencial imediata do médico assistente; o foco inicial deve ser a assistência à paciente e a notificação nos sistemas de saúde.\n\nAlternativa b) Incorreta. Na suspeita de intoxicação por agrotóxicos, a notificação deve ser feita precocemente, não sendo necessário aguardar a confirmação por exames complementares ou a certeza do nexo causal. A notificação compulsória no Brasil deve ocorrer diante da suspeita do agravo, para que as medidas de vigilância no território sejam disparadas o quanto antes.\n\nAlternativa c) Correta. Esta alternativa descreve a conduta integral e adequada no nível de atenção primária:\n1. Assistência Clínica: Tratar os sintomas da paciente e solicitar exames complementares para suporte diagnóstico e avaliação de gravidade (como a dosagem de colinesterases, se indicada).\n2. Vigilância Epidemiológica: A intoxicação por agrotóxicos é um agravo de notificação compulsória. O preenchimento da ficha no Sinan (Sistema de Informação de Agravos de Notificação) é obrigatório para todo profissional de saúde.\n3. Proteção Social e Previdenciária: Conceder o atestado médico é essencial para o afastamento da exposição e recuperação da paciente.\n4. Articulação em Rede: O matriciamento junto à Vigilância em Saúde do Trabalhador permite que a equipe da UBS receba suporte técnico para investigar o ambiente de trabalho e intervir na fonte de exposição, visando proteger outros trabalhadores (como a colega citada no relato).\n\nAlternativa d) Incorreta. É um erro comum acreditar que a Comunicação de Acidente de Trabalho (CAT) é atribuição exclusiva do médico do trabalho ou do CEREST. Conforme a legislação brasileira e resoluções do Conselho Federal de Medicina, qualquer médico que preste assistência ao trabalhador, ao constatar indícios de doença profissional ou acidente de trabalho, deve preencher o laudo médico da CAT e orientar o paciente. Além disso, o médico assistente tem a responsabilidade de registrar o nexo causal no prontuário.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": 53.07358149396255,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:07.978Z"
+  },
+  {
+    "id": "AJUDA_86c26fef-1749-484c-a1db-a8562e226da9",
+    "originalId": "86c26fef-1749-484c-a1db-a8562e226da9",
+    "statement": "Paciente feminina de 68 anos, com dor em região inguinal direita e massa palpável abaixo do ligamento inguinal, é diagnosticada com hérnia femoral encarcerada. Não há sinais de peritonite, mas há náuseas e distensão abdominal leve. A paciente tem histórico de hipertensão e diabetes controlados. Sobre a hérnia femoral e suas abordagens cirúrgicas, qual das alternativas abaixo está mais ADEQUADA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A hérnia femoral é mais comum em homens e está classificada como Nyhus tipo II; a abordagem laparoscópica é contraindicada em casos encarcerados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A hérnia femoral é classificada como Nyhus tipo IIIb e deve ser tratada, preferencialmente, por via anterior com técnica de Shouldice.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A hérnia femoral é uma protrusão abaixo do ligamento inguinal e pode ser tratada com observação clínica em pacientes idosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hérnia femoral é classificada como Nyhus tipo IIIc, ocorre abaixo do ligamento inguinal, tem maior risco de encarceramento e estrangulamento, e pode ser tratada por via anterior, utilizando a técnica de McVay.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A hérnia femoral é uma patologia que requer conhecimento anatômico preciso e compreensão da classificação de Nyhus para a correta conduta cirúrgica. Abaixo, analisamos cada alternativa:\n\na) Incorreta. A hérnia femoral é mais comum em mulheres (embora a hérnia inguinal continue sendo a mais comum no sexo feminino, a femoral ocorre preferencialmente em mulheres devido à anatomia da bacia). Na classificação de Nyhus, o tipo II refere-se à hérnia inguinal indireta com anel inguinal interno dilatado e parede posterior preservada. Além disso, a laparoscopia não é contraindicada de forma absoluta em casos encarcerados, embora exija maior experiência técnica.\n\nb) Incorreta. A classificação de Nyhus IIIb refere-se a hérnias inguinais indiretas com fraqueza da parede posterior (hérnias por deslizamento ou inguinoescrotais). A técnica de Shouldice é um reparo anatômico por planos para hérnias inguinais, mas não aborda adequadamente o canal femoral.\n\nc) Incorreta. O diagnóstico de hérnia femoral é uma indicação cirúrgica imediata (ou programada com brevidade se for redutível). Devido à rigidez dos limites do canal femoral (ligamento lacunar, ligamento inguinal e ligamento pectíneo), o risco de encarceramento e estrangulamento é altíssimo, chegando a 40% no primeiro ano de diagnóstico. A observação clínica é contraindicada.\n\nd) Correta. Esta alternativa descreve perfeitamente as características da hérnia femoral. Ela é classificada como Nyhus IIIc (defeito na parede posterior, especificamente no canal femoral). Localiza-se abaixo do ligamento inguinal e é a que apresenta maior risco de complicações isquêmicas. A técnica de McVay é a abordagem clássica por via anterior que trata tanto o canal inguinal quanto o canal femoral, pois sutura o tendão conjunto (ou aponeurose do transverso) ao ligamento de Cooper (pectíneo), fechando o espaço por onde ocorre a protrusão femoral.\n\nResumo da Classificação de Nyhus:\nTipo I: Inguinal indireta (anel interno normal).\nTipo II: Inguinal indireta (anel interno dilatado, parede posterior normal).\nTipo III: Defeitos da parede posterior (a: direta; b: indireta gigante/deslizamento; c: femoral).\nTipo IV: Hérnias recidivantes.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:07.978Z"
+  },
+  {
+    "id": "AJUDA_86cd3103-e131-4310-b209-1631269d4de8",
+    "originalId": "86cd3103-e131-4310-b209-1631269d4de8",
+    "statement": "A miomatose uterina é uma doença que afeta grande número de mulheres em idade fértil e possui sintomas depletantes. Qual é o principal objetivo da histeroscopia cirúrgica em pacientes com miomas submucosos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar biópsia endometrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressecar o mioma para melhorar os sintomas e/ou fertilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Avaliar a permeabilidade tubária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Identificar anomalias congênitas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A miomatose uterina é uma das patologias mais prevalentes na ginecologia, sendo os miomas submucosos aqueles que se localizam logo abaixo do endométrio, distorcendo a cavidade uterina. Devido a essa localização, são os principais responsáveis por sintomas como sangramento uterino anormal e dificuldades reprodutivas. A histeroscopia cirúrgica é considerada o padrão-ouro para o manejo dessas lesões.\n\nAlternativa a: Incorreta. A biópsia endometrial é um procedimento diagnóstico que pode ser realizado por histeroscopia para investigar hiperplasias ou neoplasias. No entanto, quando já se sabe da existência de um mioma submucoso, a abordagem cirúrgica visa ao tratamento (ressecção) e não apenas à coleta de material para análise.\n\nAlternativa b: Correta. Este é o objetivo central da miomectomia histeroscópica. A remoção do mioma submucoso restaura a anatomia da cavidade endometrial, o que é essencial para cessar o sangramento excessivo (melhorando a anemia e a qualidade de vida) e para remover obstáculos mecânicos e processos inflamatórios locais que impedem a implantação embrionária, favorecendo a fertilidade.\n\nAlternativa c: Incorreta. A avaliação da permeabilidade das tubas uterinas é classicamente realizada por meio da histerossalpingografia (exame radiológico) ou pela cromotubagem durante uma videolaparoscopia. Através da histeroscopia, o cirurgião consegue apenas visualizar os óstios tubários, mas não consegue confirmar se a tuba está pérvia em toda a sua extensão.\n\nAlternativa d: Incorreta. Embora a histeroscopia seja útil para identificar e tratar malformações müllerianas, como o útero septado, o enunciado da questão delimita o quadro clínico à presença de miomas submucosos. Portanto, a indicação do procedimento está vinculada à patologia descrita e não à pesquisa de anomalias congênitas.\n\nGabarito: Letra (b).",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:07.978Z"
+  },
+  {
+    "id": "AJUDA_86d3f338-0f8a-4e67-9ed2-3d7e2986a9f9",
+    "originalId": "86d3f338-0f8a-4e67-9ed2-3d7e2986a9f9",
+    "statement": "Maria Helena, 58 anos de idade, professora, relata perda involuntária de urina há aproximadamente dois anos, predominando durante esforços como tossir, espirrar ou levantar peso. O quadro intensificou-se após a menopausa, associando-se a sensação de ressecamento vaginal. Nega disúria, hematúria e dor pélvica. No exame físico, evidencia-se discreta flacidez do assoalho pélvico, sem cistocele ou retocele relevantes, teste do cotonete positivo e perda de urina observada ao esforço. A paciente refere prejuízo importante à qualidade de vida, mas opta por tratamento clínico. \nConsiderando esse caso hipotético e conforme as diretrizes atuais, assinale a alternativa que indica a conduta inicial mais apropriada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever antibiótico profilático e solicitar urocultura mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar cirurgia imediata com tela sintética tipo sling transobturatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar fisioterapia do assoalho pélvico com treino muscular supervisionado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar anticolinérgico oral e encaminhar para urodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar terapia estrogênica sistêmica para melhora da mucosa vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente de 58 anos apresenta um quadro clássico de Incontinência Urinária de Esforço (IUE). Os principais pontos que confirmam esse diagnóstico são a perda de urina associada a aumentos da pressão intra-abdominal (tossir, espirrar, levantar peso) e o teste do cotonete positivo, que indica hipermobilidade uretral. Não há sintomas de urgência miccional, o que afasta o diagnóstico de bexiga hiperativa. O relato de ressecamento vaginal sugere Síndrome Geniturinária da Menopausa, condição comum nesta faixa etária que pode agravar os sintomas urinários, mas a queixa principal é a perda ao esforço.\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA?\n\nA conduta inicial para a Incontinência Urinária de Esforço, conforme preconizado por diretrizes nacionais e internacionais (como as da FEBRASGO e da Sociedade Brasileira de Urologia), deve ser o tratamento conservador. A fisioterapia do assoalho pélvico, que inclui o treinamento muscular supervisionado (exercícios de Kegel), é a primeira linha de tratamento clínico. Ela visa fortalecer a musculatura estriada periuretral e o suporte do assoalho pélvico, apresentando altos índices de melhora na qualidade de vida e redução dos episódios de perda, sendo exatamente o que a paciente solicitou ao optar pelo tratamento clínico.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: O uso de antibióticos e uroculturas seriadas não possui indicação neste caso, pois a paciente não apresenta sinais de Infecção do Trato Urinário (ITU) recorrente. A incontinência de esforço é um problema mecânico/anatômico, não infeccioso.\n\nAlternativa B: Embora as cirurgias de sling (como o transobturatório) sejam o padrão-ouro para o tratamento cirúrgico da IUE, a questão deixa claro que a paciente prefere o tratamento clínico inicialmente. Além disso, o manejo conservador deve ser sempre oferecido antes da intervenção cirúrgica em casos não complicados.\n\nAlternativa D: Os anticolinérgicos (como oxibutinina ou solifenacina) são utilizados no tratamento da Incontinência Urinária de Urgência ou Bexiga Hiperativa, e não na incontinência de esforço. O estudo urodinâmico, embora útil em casos complexos ou falha de tratamento, não é obrigatório para iniciar a conduta clínica em uma paciente com diagnóstico clínico claro de IUE.\n\nAlternativa E: A terapia estrogênica sistêmica não é o tratamento de escolha para a incontinência urinária. Para os sintomas de atrofia vaginal (ressecamento), o estrogênio tópico (cremes ou óvulos) seria mais indicado e seguro. No entanto, mesmo o estrogênio local seria um adjuvante, e não a terapia principal para a perda de urina ao esforço, que exige o fortalecimento muscular mencionado na alternativa C. Importante notar que alguns estudos sugerem que a terapia estrogênica sistêmica pode até piorar a incontinência urinária preexistente.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:07.978Z"
+  },
+  {
+    "id": "AJUDA_86dfcc98-ba25-42fb-bf11-fb1125d24d80",
+    "originalId": "86dfcc98-ba25-42fb-bf11-fb1125d24d80",
+    "statement": "Homem, 47 anos, se apresenta ao Pronto Socorro com dor em fossa ilíaca esquerda há 1 dia sem febre ou demais sintomas. Nega episódios semelhantes ou cirurgias prévias. No exame físico, está em bom estado geral, normocárdico, afebril, abdome flácido, com dor localizada em fossa ilíaca esquerda, sem dor à descompressão brusca. Hemoglobina 14,8 g/dL (normal 12-16g/dL), Leucócitos 8750 s/ desvio (normal 6-10 mil), Proteína C Reativa 9 mg/L (normal até 5 mg/L). Realizada Tomografia, que observou a seguinte imagem.\nAponte o tratamento mais adequado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "internação para antibioticoterapia venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "internação para procedimento cirúrgico de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "alta com antibioticoterapia oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "alta com sintomáticos por via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "alta com tamoxifeno por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico do caso é Apendagite Epiploica. Trata-se de uma condição clínica benigna e autolimitada causada pela torção ou trombose venosa espontânea de um apêndice epiploico (pequenas bolsas de gordura localizadas na superfície externa do cólon).\n\nAnálise da Imagem e Quadro Clínico:\nA tomografia computadorizada apresentada mostra uma imagem clássica: uma lesão ovalada com densidade de gordura (indicada pelo círculo), apresentando um halo periférico mais denso (sinal do anel hiperatenuante) e densificação da gordura ao redor (borramento inflamatório). Clinicamente, o paciente tem dor localizada, mas sem sinais de gravidade, como febre ou leucocitose, o que reforça o diagnóstico de um processo inflamatório/isquêmico local em vez de uma infecção bacteriana sistêmica, como a diverticulite.\n\nExplicação das Alternativas:\n\nAlternativa A: Incorreta. A antibioticoterapia venosa e a internação são reservadas para quadros infecciosos graves, como diverticulite aguda com abscessos ou peritonite. A apendagite epiploica é um fenômeno isquêmico e inflamatório estéril, não necessitando de antibióticos.\n\nAlternativa B: Incorreta. O procedimento cirúrgico de urgência não é indicado, pois a doença é autolimitada. Historicamente, muitos casos eram operados por confusão diagnóstica com apendicite ou diverticulite, mas hoje o manejo é estritamente clínico após a confirmação por imagem.\n\nAlternativa C: Incorreta. Pelo mesmo motivo da alternativa A, o uso de antibióticos por via oral é desnecessário, uma vez que não há um componente bacteriano primário na etiologia da apendagite.\n\nAlternativa D: Correta. O tratamento padrão para apendagite epiploica é conservador e ambulatorial. Consiste no controle da dor com analgésicos comuns e anti-inflamatórios não esteroidais (AINEs). A maioria dos pacientes apresenta resolução completa dos sintomas em um período de 3 a 14 dias.\n\nAlternativa E: Incorreta. O tamoxifeno é um medicamento utilizado no tratamento do câncer de mama ou, em situações específicas de patologia abdominal, para fibrose retroperitoneal ou tumores desmoides. Não possui nenhuma aplicação no tratamento da apendagite epiploica.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/6bd5ec9c13ad04a5536af2d7c465922418b870fb9bebce4d8c89ef121abc384f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_86dfcc98-ba25-42fb-bf11-fb1125d24d80_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:08.743Z"
+  }
+]

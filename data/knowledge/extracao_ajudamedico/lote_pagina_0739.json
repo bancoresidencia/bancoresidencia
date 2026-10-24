@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_ce003288-7c3a-4452-a257-f65371569958",
+    "originalId": "ce003288-7c3a-4452-a257-f65371569958",
+    "statement": "Um homem de 28 anos procura o pronto-socorro com dor torácica súbita à direita e dispneia. A radiografia de tórax evidencia pneumotórax espontâneo pequeno, sem sinais de instabilidade hemodinâmica. Após algumas horas de observação, novo exame demonstra aumento do pneumotórax e piora da dispneia. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta hospitalar e retorno precoce em 24 horas para novo controle radiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Drenagem pleural com cateter fino.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Observação clínica e controle radiológico em 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Videotoracoscopia imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anticoagulação plena.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão trata de um pneumotórax espontâneo primário (jovem de 28 anos, sem doença pulmonar prévia conhecida) que era pequeno e estável, mas apresentou progressão radiológica e piora clínica durante a observação. A conduta correta é a drenagem pleural, preferencialmente por cateter fino (pigtail, 8 a 14 Fr), com ou sem dispositivo de válvula de Heimlich.\n\nFundamentos:\n- Pneumotórax espontâneo primário pequeno (menos de 2-3 cm do ápice à cúpula, ou menos de 2 cm do hilo à parede, conforme a diretriz), sem dispneia importante e estável, pode ser tratado com observação, com ou sem oxigênio suplementar. Oxigênio em alto fluxo acelera a reabsorção do ar pleural.\n- Quando há sintomas importantes, aumento do pneumotórax ou instabilidade, indica-se o esvaziamento pleural. As diretrizes (BTS e ACCP) aceitam como primeira linha a aspiração simples com agulha ou cateter, ou a drenagem com cateter fino. A drenagem com dreno calibroso é reservada a casos selecionados, como hemopneumotórax ou paciente em ventilação mecânica.\n- A cirurgia (videotoracoscopia com bulectomia e pleurodese ou pleurectomia) não é a primeira abordagem. É indicada em recidiva, pneumotórax bilateral, fístula aérea persistente (mais de 3-5 dias), hemotórax associado, profissões de risco (piloto, mergulhador) ou falha do tratamento inicial.\n\nAnálise das alternativas:\n\na) Incorreta. A progressão radiológica com piora da dispneia contraindica a alta. Esse paciente não é mais candidato a manejo ambulatorial.\n\nb) Correta. Há falha do tratamento conservador, com aumento do pneumotórax e sintomas piores. O esvaziamento pleural com cateter fino é eficaz, menos doloroso e menos invasivo que o dreno torácico calibroso, com resultados semelhantes em pacientes estáveis.\n\nc) Incorreta. Já se observou o paciente e houve piora. Insistir na observação atrasaria o tratamento e arriscaria evolução para pneumotórax hipertensivo.\n\nd) Incorreta. A videotoracoscopia imediata não é a primeira escolha em um primeiro episódio, sem fístula persistente e sem instabilidade. Fica reservada para falha da drenagem, recidiva ou situações especiais.\n\ne) Incorreta. Anticoagulação não tem papel no pneumotórax e pode ser prejudicial, pois favorece sangramento pleural. Seria indicada em tromboembolismo pulmonar, que não é o diagnóstico aqui.\n\nPonto-chave: pneumotórax espontâneo primário que progride ou causa sintomas deve ser drenado (aspiração ou cateter fino). A cirurgia é reservada para falha terapêutica ou recidiva.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  },
+  {
+    "id": "AJUDA_ce0146b4-a42a-404b-95b3-0c07e34c3506",
+    "originalId": "ce0146b4-a42a-404b-95b3-0c07e34c3506",
+    "statement": "Sir Geoffrey Rose, renomado epidemiologista e estatístico britânico, desenvolveu a teoria da \"estratégia de alto risco\" e a \"estratégia populacional\" para prevenção de doenças. Qual das alternativas abaixo descreve o princípio fundamental da estratégia populacional proposta por Geoffrey Rose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Priorizar intervenções em indivíduos com maior risco de desenvolver a doença, através de identificação e tratamento precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Direcionar ações preventivas para grupos populacionais específicos, com base em características socioeconômicas e culturais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Focar na prevenção primária, com medidas de promoção da saúde e proteção contra fatores de risco, a fim de evitar o surgimento da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adotar medidas que visem reduzir a exposição da população como um todo aos fatores de risco, deslocando a curva de distribuição do fator de risco para a esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Concentrar esforços em ações de reabilitação e reinserção social de indivíduos que já desenvolveram a doença, minimizando suas sequelas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Geoffrey Rose foi um dos maiores nomes da epidemiologia moderna, e sua teoria baseia-se na distinção entre as causas de casos individuais e as causas da incidência em populações. Para entender a questão, é fundamental diferenciar as duas estratégias propostas por ele:\n\nAlternativa a) Incorreta. Esta descrição refere-se à \"Estratégia de Alto Risco\". Nela, o foco é o indivíduo que já apresenta um risco elevado (como alguém com hipertensão severa). A intervenção é clínica e personalizada, o que traz benefícios claros para aquele paciente específico, mas tem pouco impacto na saúde pública global, pois não atinge a massa da população onde a maioria dos casos (mesmo que de baixo risco individual) costuma surgir.\n\nAlternativa b) Incorreta. Embora o direcionamento para grupos vulneráveis seja uma prática comum em saúde pública (equidade), a estratégia populacional de Rose não se limita a nichos socioeconômicos ou culturais. Ela propõe intervenções que atinjam todos os indivíduos de uma sociedade, visando alterar o comportamento ou a exposição de toda a massa populacional.\n\nAlternativa c) Incorreta. A estratégia populacional é, de fato, uma forma de prevenção primária. No entanto, a alternativa define prevenção primária de forma genérica. O diferencial do pensamento de Rose, solicitado pela questão, é a abordagem estatística e epidemiológica de mudar a distribuição do risco em toda a população, e não apenas \"evitar o surgimento da doença\" por meio de proteção individual.\n\nAlternativa d) Correta. Esta alternativa define perfeitamente o princípio fundamental da \"Estratégia Populacional\". Rose observou que uma grande quantidade de pessoas expostas a um risco pequeno gera muito mais casos de doença do que uma pequena quantidade de pessoas expostas a um risco alto (o chamado Paradoxo da Prevenção). Assim, ao reduzir o nível médio de um fator de risco em toda a população (por exemplo, reduzir o consumo de sal em todos os alimentos processados), a curva de distribuição desse risco se desloca para a esquerda (em direção a níveis menores/mais saudáveis). Isso resulta em um benefício coletivo muito maior.\n\nAlternativa e) Incorreta. Esta alternativa descreve a prevenção terciária, focada em reabilitação e redução de danos após a doença já ter causado impacto. As teorias de Rose são focadas primordialmente em prevenção primária e no controle das causas de incidência antes que a doença ocorra.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  },
+  {
+    "id": "AJUDA_ce0fdf92-efc2-4e79-a74f-44dd228c2166",
+    "originalId": "ce0fdf92-efc2-4e79-a74f-44dd228c2166",
+    "statement": "Paciente do sexo masculino, 32 anos, diagnosticado com esquizofrenia há 10 anos, é acompanhado em ambulatório de saúde mental. Ele apresenta bom controle dos sintomas positivos (alucinações e delírios) com o uso de risperidona 6 mg/dia. No entanto, queixa-se intensamente de sintomas negativos proeminentes (abulia e embotamento afetivo) e de efeitos colaterais extrapiramidais. A equipe médica decide, então, pela troca do antipsicótico. Após 6 semanas da troca, observa-se uma melhora significativa tanto dos sintomas negativos quanto da tolerabilidade, com remissão dos efeitos extrapiramidais. Qual foi o antipsicótico de segunda geração mais provavelmente introduzido neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ziprasidona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Olanzapina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quetiapina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aripiprazol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das respostas anteriores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO paciente em questão apresenta um quadro clássico de esquizofrenia, em que os sintomas positivos (delírios e alucinações) estão controlados pela risperidona, mas os sintomas negativos (abulia e embotamento) e os efeitos colaterais extrapiramidais (como parkinsonismo ou acatisia) estão prejudicando sua qualidade de vida. A risperidona, embora seja de segunda geração, possui uma forte afinidade pelos receptores D2 de dopamina, comportando-se de forma muito semelhante aos de primeira geração em doses mais elevadas (como os 6 mg/dia do relato), o que justifica os efeitos extrapiramidais.\n\nExplicação das Alternativas:\n\na) Ziprasidona: É um antipsicótico de segunda geração que apresenta baixo risco de ganho de peso e síndrome metabólica. Embora cause menos efeitos extrapiramidais que a risperidona, sua principal característica clínica não é a melhora proeminente de sintomas negativos por meio do mecanismo de agonismo parcial. Além disso, exige administração com refeições calóricas para boa absorção.\n\nb) Olanzapina: É eficaz na melhora de sintomas negativos e tem menor taxa de efeitos extrapiramidais que a risperidona. No entanto, o seu principal limitador e característica marcante é o alto potencial de ganho de peso e alterações metabólicas (glicemia e colesterol), o que não foi mencionado na melhora da tolerabilidade do paciente.\n\nc) Quetiapina: É o antipsicótico com menor risco de sintomas extrapiramidais, sendo muito utilizado em pacientes com Doença de Parkinson que desenvolvem psicose. Contudo, possui um efeito sedativo muito acentuado e, para o tratamento da esquizofrenia, exige doses elevadas. Não é a droga de escolha principal quando o foco clínico relatado é a melhora específica da abulia e do embotamento através da modulação dopaminérgica.\n\nd) Aripiprazol (Alternativa Correta): O aripiprazol é classificado como um sistema estabilizador de dopamina. Diferente dos outros citados, ele é um agonista parcial dos receptores D2. Isso significa que, em vias cerebrais onde há excesso de dopamina (via mesolímbica — sintomas positivos), ele atua reduzindo essa atividade. Já em vias onde há falta de dopamina (via mesocortical — sintomas negativos), ele atua estimulando levemente os receptores. Esse mecanismo explica a melhora significativa dos sintomas negativos. Além disso, por não bloquear totalmente a via nigroestriatal, ele apresenta uma taxa baixíssima de efeitos extrapiramidais, o que condiz perfeitamente com a remissão desses efeitos relatada no caso após 6 semanas.\n\ne) Nenhuma das respostas anteriores: Incorreta, pois o aripiprazol preenche todos os critérios de melhora clínica e farmacológica descritos no enunciado.",
+    "exam": "UFRB",
+    "year": 2026,
+    "banca": "UFRB",
+    "uf": "BA",
+    "tags": [
+      "Transtornos Psicóticos",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35674e2a8fdd600c4528186d032722b2534d565f8659f6d532a9977d76ec6035.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2f3a30ed0fd307a6a4fadc82fa84bd78995407514592af81b25948bee1e5d79f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  },
+  {
+    "id": "AJUDA_ce1907cb-f257-4040-b702-d96c3ed129b4",
+    "originalId": "ce1907cb-f257-4040-b702-d96c3ed129b4",
+    "statement": "Homem de 39 anos procura atendimento por tristeza persistente, perda de interesse pelas atividades habituais, fadiga, insônia e dificuldade de concentração há cerca de dois meses. Os sintomas prejudicam seu desempenho profissional e suas relações familiares. Nega uso de álcool ou drogas, ideação suicida, sintomas psicóticos, catatonia e episódios prévios de mania ou hipomania. Exame clínico sem alterações relevantes. Foi diagnosticado episódio depressivo maior de intensidade moderada. Qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar para eletroconvulsoterapia como tratamento de primeira escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orientar apenas medidas de estilo de vida e reavaliar em seis meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar estabilizador de humor como monoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever benzodiazepínico como tratamento isolado prolongado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar antidepressivo de primeira linha, associado à psicoterapia quando disponível.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clínico clássico de Episódio Depressivo Maior (DSM-5), caracterizado por sintomas afetivos (tristeza, anedonia), somáticos (fadiga, insônia) e cognitivos (dificuldade de concentração) com duração superior a duas semanas e prejuízo funcional significativo. A ausência de sintomas de mania/hipomania descarta o Transtorno Bipolar, e a ausência de sintomas psicóticos ou ideação suicida imediata classifica o quadro como de intensidade moderada.\n\nPOR QUE A ALTERNATIVA (E) ESTÁ CORRETA?\nPara o tratamento do Transtorno Depressivo Maior de intensidade moderada a grave, as diretrizes internacionais (como CANMAT e NICE) recomendam o início imediato de farmacoterapia com antidepressivos de primeira linha (como Inibidores Seletivos da Recaptação de Serotonina - ISRS, Inibidores da Recaptação de Serotonina e Noradrenalina - ISRN ou fármacos atípicos como a Mirtazapina). A associação com psicoterapia (especialmente Terapia Cognitivo-Comportamental ou Interpessoal) apresenta evidências de sinergia, melhorando as taxas de remissão e prevenindo recaídas.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A eletroconvulsoterapia (ECT) é um tratamento altamente eficaz, porém, em diretrizes clínicas, é reservada para depressão grave com risco de suicídio, sintomas psicóticos, catatonia, depressão resistente a múltiplos tratamentos ou quando há necessidade de resposta terapêutica imediata. Não é a primeira escolha para um quadro moderado sem complicações.\n\nAlternativa (b): Medidas de estilo de vida (higiene do sono, atividade física) são adjuvantes importantes, mas a conduta de \"apenas observar e reavaliar em seis meses\" é inadequada para um quadro moderado com prejuízo profissional e familiar já estabelecido. A demora no tratamento aumenta o risco de cronificação e complicações.\n\nAlternativa (c): Estabilizadores de humor (como Lítio, Valproato ou Quetiapina) são a base do tratamento do Transtorno Bipolar. Como o enunciado nega explicitamente episódios prévios de mania ou hipomania, o diagnóstico é de Depressão Unipolar, onde a monoterapia com estabilizador de humor não é a conduta inicial padrão.\n\nAlternativa (d): Os benzodiazepínicos não possuem propriedades antidepressivas; eles agem apenas no alívio sintomático da ansiedade e insônia. O uso isolado e prolongado é contraindicado devido ao risco de dependência, tolerância, prejuízo cognitivo e por não tratar a etiologia da depressão.\n\nDICA PARA A PROVA:\nLembre-se da hierarquia do tratamento antidepressivo:\n1. Depressão leve: Psicoterapia ou medidas de estilo de vida podem ser tentadas inicialmente.\n2. Depressão moderada: Antidepressivo + Psicoterapia.\n3. Depressão grave/psicótica/refratária: Combinação de fármacos, antipsicóticos associados ou métodos de neuroestimulação (ECT).",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  },
+  {
+    "id": "AJUDA_ce1d02bb-eac2-4d2d-b305-42e24b4c118d",
+    "originalId": "ce1d02bb-eac2-4d2d-b305-42e24b4c118d",
+    "statement": "Paciente de 18 anos, nuligesta, com atraso menstrual de 3 dias, uso irregular de método contraceptivo de barreira, chega à emergência com queixa de dor em baixo ventre, mastalgia e discreto sangramento vaginal. O plantonista suspeita de gravidez, o que se confirma com BHCG positivo em teste rápido. Ultrassonografia transvaginal realizada detecta endométrio espessado e imagem heterogênea, hipoecogênica, com fluxo ao mapeamento doppler em região anexial esquerda, sugerindo gravidez extra uterina. Em relação a essa hipótese diagnóstica, são consideradas condições que permitem o tratamento medicamentoso com metrotexate na gestação ectópica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "BHCG < 10000, líquido livre em fundo de saco em pequena quantidade e BCF ausentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "BHCG < 5000, estabilidade clínica, e massa menor que 3-4 cm.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Massa maior do que 3-4 cm, líquido livre em fundo de saco em pequena quantidade e BCF ausentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desejo de nova gestação, BHCG < 20000 e BCF presentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ausência de abdome agudo, massa maior do que 5 cm, multiparidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A gravidez ectópica ocorre quando a implantação do blastocisto acontece fora da cavidade uterina, sendo a localização tubária a mais frequente. O tratamento medicamentoso com metotrexato é uma alternativa à cirurgia, visando à preservação da trompa, mas exige critérios específicos para garantir a segurança da paciente e o sucesso da terapia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O valor de BHCG é um dos principais preditores de sucesso do tratamento. Embora alguns protocolos aceitem valores maiores em regimes de doses múltiplas, o limite de segurança classicamente adotado é de 5.000 mUI/mL. Com 10.000 mUI/mL, o risco de falha terapêutica e de ruptura tubária durante o acompanhamento é significativamente mais alto.\n\nAlternativa b) Correta. Esta alternativa apresenta os critérios fundamentais para a indicação do metotrexato. A estabilidade clínica (hemodinâmica) é indispensável para descartar uma ruptura já ocorrida. O BHCG abaixo de 5.000 mUI/mL e a massa anexial menor que 3,5 a 4 cm são os parâmetros que, quando respeitados, conferem taxas de sucesso superiores a 90% no tratamento medicamentoso.\n\nAlternativa c) Incorreta. Uma massa anexial maior do que 4 cm representa uma distensão importante da trompa, o que aumenta consideravelmente o risco de rompimento espontâneo, sendo uma indicação clássica para intervenção cirúrgica.\n\nAlternativa d) Incorreta. A presença de atividade cardíaca fetal (BCF presentes) indica uma gestação com alta vitalidade, o que reduz drasticamente a eficácia do metotrexato sistêmico. Além disso, níveis de BHCG de 20.000 mUI/mL são proibitivos para o manejo clínico isolado.\n\nAlternativa e) Incorreta. Massas maiores que 5 cm são contraindicações formais ao tratamento clínico devido ao altíssimo risco de hemoperitônio. A paridade da paciente (ser nuligesta ou multípara) não é um critério de inclusão ou exclusão clínica, embora o tratamento conservador seja preferencial em mulheres que desejam gestações futuras.\n\nCritérios ideais para o tratamento com Metotrexato:\n1. Paciente hemodinamicamente estável.\n2. Nível de BHCG inicial menor que 5.000 mUI/mL.\n3. Ausência de atividade cardíaca embrionária ao ultrassom.\n4. Massa anexial (saco gestacional ectópico) com diâmetro máximo menor que 3,5 ou 4 cm.\n5. Ausência de contraindicações ao uso da droga (como alterações renais ou hepáticas).\n6. Garantia de que a paciente poderá comparecer aos retornos para controle laboratorial.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  },
+  {
+    "id": "AJUDA_ce1f1fe6-314d-4a5e-b1d6-c62fb8beabd2",
+    "originalId": "ce1f1fe6-314d-4a5e-b1d6-c62fb8beabd2",
+    "statement": "Mulher, 44 anos, foi submetida a gastrectomia vertical por obesidade mórbida há 1 ano. Em consulta de retorno, refere importante dor retroesternal, especialmente a noite. A principal hipótese diagnóstica e conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "esofagite / seriografia esofágica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hérnia de Petersen / TC do tórax e abdome",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença do refluxo gastroesofágico / endoscopia digestiva alta",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "hérnia interna / conversão cirúrgica para y-de-roux",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta uma paciente de 44 anos que realizou gastrectomia vertical (*Sleeve Gastrectomy*) há um ano e agora manifesta sintomas clássicos de pirose e dor retroesternal, com piora noturna. Este é um cenário clínico muito frequente no pós-operatório tardio dessa técnica específica.\n\nA gastrectomia vertical é considerada uma cirurgia \"pró-refluxo\" por diversos motivos anatômicos e fisiológicos: ocorre a perda do ângulo de His (mecanismo de válvula), há uma redução da complacência gástrica gerando maior pressão intraluminal no \"tubo\" gástrico e pode haver redução da pressão do esfíncter esofágico inferior. Diante de sintomas típicos de refluxo após essa cirurgia, a principal hipótese é a Doença do Refluxo Gastroesofágico (DRGE).\n\nAnálise das alternativas:\n\na) Incorreta. Embora a esofagite possa ser o achado clínico, a seriografia esofágica (exame contrastado) não é o melhor exame inicial para avaliar a mucosa esofágica e diagnosticar complicações da DRGE. A seriografia é mais útil para avaliar a anatomia do tubo gástrico, a presença de estenoses ou fístulas, mas perde para a endoscopia na avaliação de esofagite.\n\nb) Incorreta. A hérnia de Petersen é uma complicação específica do *Bypass* Gástrico em Y-de-Roux, ocorrendo pelo espaço criado no mesentério após a realização da anastomose. Na gastrectomia vertical (*Sleeve*), não há anastomoses entéricas nem abertura de mesentério; portanto, não existe risco de hérnia de Petersen. Além disso, a dor da hérnia interna costuma ser abdominal e aguda, não retroesternal noturna.\n\nc) Correta. A Doença do Refluxo Gastroesofágico (DRGE) é a principal complicação tardia da gastrectomia vertical, afetando uma parcela significativa dos pacientes (seja por surgimento de novo refluxo ou piora de um quadro preexistente). A conduta inicial padrão é a realização de Endoscopia Digestiva Alta (EDA) para avaliar o grau de lesão da mucosa (esofagite), pesquisar esôfago de Barrett e descartar outras complicações mecânicas.\n\nd) Incorreta. Como mencionado, a hérnia interna é uma complicação do *Bypass* e não do *Sleeve*. Embora a conversão do *Sleeve* para o *Bypass* em Y-de-Roux seja o tratamento cirúrgico indicado para casos de DRGE refratária pós-*Sleeve*, essa conduta só é tomada após confirmação diagnóstica, falha do tratamento clínico e avaliação criteriosa por exames (como a EDA, pHmetria e manometria), não sendo a conduta imediata baseada apenas na queixa clínica.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico",
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  },
+  {
+    "id": "AJUDA_ce34b88b-f7a2-40cb-8f91-2c9a28336331",
+    "originalId": "ce34b88b-f7a2-40cb-8f91-2c9a28336331",
+    "statement": "As causas de parada cardiorrespiratória (PCR) em bebês e crianças diferem da PCR em adultos de acordo com um número crescente de evidências científicas que vêm sendo analisadas e publicadas. Baseado nisso, a American Heart Association em 2020 lançou novas diretrizes para o Suporte Básico e Avançado de Vida em Pediatria. Considerando estas diretrizes, assinale a alternativa ERRADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crianças com miocardite aguda acompanhada de arritmias, bloqueio cardíaco, alterações do segmento ST ou baixo débito cardíaco têm alto risco de PCR, sendo necessário a transferência rápida para uma unidade de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Durante e após o atendimento da PCR, o paciente pode apresentar hipertensão pulmonar, sendo indicado sedar e evitar a intubação traqueal. O paciente deve ser mantido em leve acidemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O uso rotineiro de pressão cricoide não é recomendado durante a intubação endotraqueal de pacientes pediátricos, pois reduz as taxas de sucesso da intubação e não reduz a taxa de execução de regurgitação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quando houver recursos disponíveis, o monitoramento contínuo por eletroencefalografia é recomendado para a detecção de convulsões depois de uma PCR em pacientes com encefalopatia persistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão exige o conhecimento das Diretrizes de 2020 da American Heart Association (AHA) para Suporte Avançado de Vida em Pediatria (PALS). O objetivo é identificar a alternativa INCORRETA.\n\nAlternativa A (Correta): Esta afirmação é verdadeira. A miocardite aguda, especialmente quando associada a sinais de instabilidade elétrica (arritmias, bloqueios) ou hemodinâmica (baixo débito), representa um risco iminente de parada cardiorrespiratória (PCR). As diretrizes enfatizam que esses pacientes devem ser monitorados e tratados precocemente em ambiente de terapia intensiva pediátrica devido à sua alta complexidade e fragilidade miocárdica.\n\nAlternativa B (Incorreta - Gabarito): Esta é a alternativa errada, pois as recomendações para o manejo da hipertensão pulmonar são opostas ao que foi descrito. Em crises de hipertensão pulmonar, o objetivo é reduzir a resistência vascular pulmonar. A acidemia (pH baixo) é um potente vasoconstritor pulmonar e deve ser evitada; o ideal é manter um pH neutro ou levemente alcalino. Além disso, embora a intubação tenha riscos, ela é frequentemente necessária para garantir a oxigenação e ventilação adequadas, evitando a hipóxia e a hipercapnia, que também pioram a hipertensão pulmonar.\n\nAlternativa C (Correta): A recomendação atual da AHA 2020 é que a pressão cricoide (manobra de Sellick) não seja realizada de forma rotineira durante a intubação endotraqueal em pediatria. Estudos demonstraram que essa manobra pode dificultar a visualização da glote, reduzir as taxas de sucesso na primeira tentativa de intubação e que não há evidências sólidas de que ela realmente previna a aspiração de conteúdo gástrico em crianças.\n\nAlternativa D (Correta): Após o retorno da circulação espontânea, pacientes que permanecem com encefalopatia (alteração do nível de consciência) têm alto risco de apresentar crises não convulsivas. Por isso, a diretriz recomenda o monitoramento contínuo por eletroencefalografia (EEG) para detecção e tratamento imediato dessas crises, visando minimizar a lesão cerebral secundária.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  },
+  {
+    "id": "AJUDA_ce34cd0e-3863-4119-8a6f-99abfcffd6db",
+    "originalId": "ce34cd0e-3863-4119-8a6f-99abfcffd6db",
+    "statement": "Mulher de 26 anos, primípara, 7 semanas após parto vaginal sem intercorrências, refere que há 1 mês apresenta humor persistentemente deprimido, tem perda de interesse pelas atividades, sente culpa excessiva, fadiga, redução do apetite e insônia de manutenção.\nRefere dificuldade relevante para cuidar do recém-nascido e para retomar atividades habituais. Escore da Escala de Depressão Pós-natal de Edimburgo EPDS = 17 no dia de hoje. Nega uso de álcool ou drogas. Exame do estado mental: colaborativa, discurso coerente, orientada no tempo e no espaço, sem agitação psicomotora; sinais vitais normais.\nA conduta terapêutica mais apropriada, nesse momento, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "proceder à observação expectante, sem intervenção medicamentosa e reavaliar em 4-6 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "proceder à psicoterapia de suporte como única intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar antidepressivo com inibidor seletivo de recaptação de serotonina, com possibilidade de associação à psicoterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "prescrever carbonato de lítio em dose terapêutica plena.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "proceder à eletroconvulsoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico: A paciente apresenta um quadro clássico de Depressão Pós-Parto (DPP). É fundamental diferenciar esta condição da Disforia Puerperal (Baby Blues), que é um quadro leve, transitório, que surge nos primeiros dias após o parto e regride espontaneamente em até duas semanas. No caso descrito, a paciente está na sétima semana pós-parto, com sintomas persistentes há um mês, prejuízo funcional importante (dificuldade em cuidar do recém-nascido) e uma pontuação de 17 na Escala de Edimburgo (EPDS), em que valores acima de 12 ou 13 já sugerem depressão moderada a grave.\n\nAlternativa a: Incorreta. A observação expectante seria indicada se o quadro fosse de Baby Blues. Como há prejuízo funcional e os sintomas persistem além das duas primeiras semanas pós-parto, o diagnóstico é de depressão, exigindo intervenção ativa para evitar o agravamento do quadro e prejuízos ao binômio mãe-filho.\n\nAlternativa b: Incorreta. Embora a psicoterapia seja uma ferramenta essencial e possa ser usada isoladamente em casos muito leves, o quadro descrito apresenta gravidade moderada (EPDS 17 e dificuldade relevante nos cuidados básicos). Nesses casos, a introdução de farmacoterapia costuma ser necessária para uma remissão mais rápida e eficaz dos sintomas.\n\nAlternativa c: Correta. Os Inibidores Seletivos de Recaptação de Serotonina (ISRS) são a primeira linha de tratamento para a depressão pós-parto. Medicamentos como a sertralina são frequentemente escolhidos por possuírem baixo nível de excreção no leite materno, sendo seguros para a amamentação. A associação com a psicoterapia é a conduta padrão-ouro, potencializando os resultados terapêuticos.\n\nAlternativa d: Incorreta. O carbonato de lítio é um estabilizador de humor indicado para o Transtorno Afetivo Bipolar ou como potencializador em depressões refratárias. A paciente não apresenta histórico ou sintomas de mania ou hipomania que justifiquem o uso de lítio como primeira escolha. Além disso, o lítio requer monitoramento rigoroso e possui maiores restrições durante a amamentação.\n\nAlternativa e: Incorreta. A eletroconvulsoterapia (ECT) é um tratamento seguro e eficaz, porém é reservado para situações de maior gravidade, como depressão com sintomas psicóticos, risco iminente de suicídio ou infanticídio, catatonia, ou quando há resistência a múltiplos tratamentos medicamentosos. O exame do estado mental da paciente não indica tais urgências no momento.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  },
+  {
+    "id": "AJUDA_ce3cd963-06ee-4186-879c-663c9bcdc273",
+    "originalId": "ce3cd963-06ee-4186-879c-663c9bcdc273",
+    "statement": "Uma paciente de 32 anos de idade, comparece à clinica com queixa de dor, edema e eritema na base da unha do dedo anelar da mão esquerda, iniciado há 3 dias, após remover as cuticulas durante um procedimento de manicure. No exame fisico, observa-se discreto edema periungueal, calor local e presença de uma pequena coleção purulenta ao longo da borda lateral da unha. A paciente está afebril e não há sinais de linfadenopatia regional ou distorção anatômica do dedo. Diante deste quadro, qual é o diagnóstico provável e a conduta terapêutica apropriada, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paroniquia bacteriana; indicado a drenagem da coleção purulenta e o uso de ácido fusidico 2%, tópico, aplicado 3 vezes ao dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Celulite periungueal; indicado o uso de compressas quentes tópicas e ácido fusidico 2%, tópico, aplicado 3 vezes ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paroniquia bacteriana; indicado o uso de compressas quentes tópicas e cefalexina 500 mg, 1 comprimido 4 vezes ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cetutite periungueal; indicado a drenagem da coleção purulenta e o uso de cefalexina 500 mg. 1 comprimido 4 vezes ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E CONDUTA\n\nO quadro clínico descrito é clássico de paroníquia aguda bacteriana. Esta condição consiste na inflamação das dobras teciduais periungueais, geralmente desencadeada por pequenos traumas, como o hábito de roer unhas ou, como no caso da paciente, a remoção de cutículas durante a manicure. O trauma rompe a barreira protetora entre a prega ungueal e a placa ungueal, permitindo a entrada de patógenos, sendo o *Staphylococcus aureus* o agente mais comum.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) CORRETA. O diagnóstico é de paroníquia bacteriana. A presença de uma coleção purulenta (pus) é o ponto-chave para a conduta: quando há abscesso formado, a drenagem é obrigatória e representa o tratamento definitivo. A drenagem pode ser feita elevando-se a prega ungueal lateral com uma lâmina de bisturi ou agulha grossa. Em quadros localizados, sem sinais de gravidade (como febre ou linfadenopatia), o uso de antibióticos tópicos como o ácido fusídico ou a mupirocina é suficiente após a drenagem.\n\nAlternativa b) INCORRETA. O termo celulite periungueal é menos preciso que paroníquia para descrever a infecção localizada na borda da unha. Além disso, a conduta está incompleta, pois a presença de uma coleção purulenta exige drenagem cirúrgica, não sendo resolvida apenas com compressas e pomadas.\n\nAlternativa c) INCORRETA. Embora o diagnóstico de paroníquia esteja correto, a conduta falha em dois pontos. Primeiro, a compressa morna pode ajudar na fase inicial (inflamatória), mas não substitui a drenagem uma vez que o pus já está coletado. Segundo, o uso de cefalexina (antibiótico sistêmico) é geralmente reservado para casos com celulite extensa associada, febre, ou em pacientes imunossuprimidos/diabéticos, o que não se aplica a esta paciente afebril e sem sinais sistêmicos.\n\nAlternativa d) INCORRETA. O diagnóstico mais específico é paroníquia. Quanto à conduta, embora a drenagem esteja indicada para coleções, a prescrição de cefalexina (via oral) é considerada excessiva para uma paciente hígida com uma pequena coleção localizada e sem sinais de disseminação da infecção.\n\nRESUMO PARA FIXAÇÃO\n\n1. Paroníquia Aguda: Infecção da prega ungueal (geralmente por *S. aureus*).\n2. Clínica: Dor, edema, eritema e, frequentemente, abscesso na borda da unha.\n3. Tratamento sem abscesso: Compressas mornas, elevação e antibiótico tópico ou oral (se necessário).\n4. Tratamento com abscesso (coleção): Drenagem (essencial) + cuidados locais/antibiótico tópico.\n5. Antibiótico sistêmico: Reservado para casos com celulite extensa, linfangite, febre ou em pacientes de risco (ex: diabéticos).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Piodermites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  },
+  {
+    "id": "AJUDA_ce3df1c5-dc2b-4185-9939-c6f35b5c88fa",
+    "originalId": "ce3df1c5-dc2b-4185-9939-c6f35b5c88fa",
+    "statement": "Sobre a fisiologia do ciclo menstrual é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na fase folicular tardia os pulsos de GnRH aumentam a frequência e amplitude e na fase lútea ocorre prolongamento progressivo dos pulsos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O aumento da frequência de pulsos de GnRH diminui a secreção de LH e aumenta o FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As endorfinas estimulam a secreção de gonadotrofinas e tem seus níveis máximos durante a menstruação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A neuro-hipófise, traduz-se em um prolongamento do hipotálamo e é responsável pela produção de LH e FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): A regulação do ciclo menstrual depende da pulsatilidade do GnRH (hormônio liberador de gonadotrofinas). Na fase folicular inicial, os pulsos são mais lentos. À medida que se aproxima a ovulação (fase folicular tardia), sob influência do estradiol, ocorre um aumento tanto na frequência quanto na amplitude desses pulsos, o que culmina no pico de LH. Após a ovulação, na fase lútea, a progesterona passa a dominar o cenário hormonal e exerce um feedback negativo no hipotálamo, promovendo o prolongamento do intervalo entre os pulsos (diminuição da frequência).\n\nAlternativa B (Incorreta): Existe uma relação específica entre a frequência de pulsos de GnRH e a liberação das gonadotrofinas pela hipófise. Pulsos de alta frequência favorecem a secreção de LH, enquanto pulsos de baixa frequência favorecem a secreção de FSH. Portanto, o aumento da frequência aumenta o LH e não o diminui.\n\nAlternativa C (Incorreta): Os opioides endógenos, como as endorfinas, exercem um efeito predominantemente inibitório sobre a secreção de GnRH e, consequentemente, das gonadotrofinas. Além disso, seus níveis variam conforme o ciclo, atingindo o pico durante a fase lútea (devido à influência da progesterona) e não durante a menstruação, momento em que os hormônios esteroides estão em seus níveis mais baixos.\n\nAlternativa D (Incorreta): Embora a neuro-hipófise seja anatomicamente um prolongamento do hipotálamo, ela é responsável pelo armazenamento e liberação de ocitocina e vasopressina (ADH). A produção e secreção de LH e FSH ocorrem na adeno-hipófise (hipófise anterior), que possui origem embriológica distinta e se comunica com o hipotálamo através do sistema porta-hipofisário.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:12.238Z"
+  }
+]

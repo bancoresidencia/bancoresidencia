@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_fd00e4ef-847e-4141-9af9-cb4df9a5a35c",
+    "originalId": "fd00e4ef-847e-4141-9af9-cb4df9a5a35c",
+    "statement": "Homem de 72 anos, previamente sem comorbidades relevantes, encontra-se internado em enfermaria para reabilitação motora e controle álgico após politrauma ocorrido há 2 semanas. Há 2 dias, passou a apresentar febre diária de 38°C, e foi identificada hiperemia no óstio de cateter venoso central posicionado em veia jugular interna direita. O cateter foi prontamente retirado, com coleta subsequente de hemoculturas periféricas, que demonstraram crescimento de Escherichia coli em 10 horas. O antibiograma pode ser visto a seguir:\n\nQual tratamento antimicrobiano deve ser instituído neste momento, levando-se em conta o perfil de resistência do microrganismo identificado e o uso racional de antimicrobiano?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ceftazidima-avibactam 2,5g a cada 8 horas por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Piperacilina-tazobactam 4,5g a cada 6 horas por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Meropenem 1g a cada 8 horas por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cefepime 1g a cada 8 horas até hemoculturas negativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico e do antibiograma:\n\nO paciente apresenta uma infecção da corrente sanguínea associada a cateter venoso central por Escherichia coli. Ao analisar a imagem do antibiograma, observa-se que a bactéria é resistente (R) a ceftriaxona, ceftazidima, cefuroxima e aztreonam. No entanto, ela permanece sensível (S) ao meropenem e ao ertapenem. Esse padrão de resistência a cefalosporinas de terceira geração e ao aztreonam, mantendo sensibilidade aos carbapenêmicos, define o microrganismo como produtor de ESBL (Beta-lactamase de Espectro Estendido).\n\nAlternativa A - Incorreta. A ceftazidima-avibactam é uma combinação de alto custo e espectro muito ampliado, indicada principalmente para microrganismos produtores de carbapenemases (como a KPC). Como a bactéria em questão é sensível aos carbapenêmicos comuns (meropenem), utilizar esta droga viola o princípio do uso racional de antimicrobianos (stewardship), devendo ser poupada para casos de multirresistência extrema.\n\nAlternativa B - Incorreta. Embora a piperacilina-tazobactam apareça como sensível no antibiograma (CIM menor ou igual a 4), o estudo clínico MERINO demonstrou que o uso dessa droga em bacteremias por germes produtores de ESBL está associado a uma maior mortalidade em 30 dias quando comparado ao uso de carbapenêmicos. Portanto, ela não é a escolha preferencial para o tratamento definitivo de uma bacteremia por ESBL.\n\nAlternativa C - Correta. Os carbapenêmicos, como o meropenem, são o tratamento padrão-ouro para infecções graves (especialmente bacteremias) causadas por enterobactérias produtoras de ESBL. O meropenem apresenta excelente atividade contra esses germes e estabilidade frente à enzima. O tempo de tratamento de 7 dias é considerado adequado para bacteremias por gram-negativos em que o foco infeccioso (neste caso, o cateter venoso) foi removido precocemente.\n\nAlternativa D - Incorreta. O cefepime possui um CIM de 8 microgramas por ml no antibiograma apresentado. Em cepas produtoras de ESBL, o cefepime frequentemente apresenta resultados clínicos desfavoráveis devido ao efeito inóculo (perda de eficácia quando há alta carga bacteriana) e à hidrólise parcial pela enzima, mesmo que o laudo indique sensibilidade laboratorial. Além disso, a duração do tratamento baseada apenas na negativação de hemoculturas não é a prática padrão para essa condição.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/823efb143eb1e02849a876143a29b7f2f4c6f9c1094e14adf869c94b3cf0c949.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_fd00e4ef-847e-4141-9af9-cb4df9a5a35c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  },
+  {
+    "id": "AJUDA_fd0e16ef-3ed5-4896-97f7-6cfd0748ec4d",
+    "originalId": "fd0e16ef-3ed5-4896-97f7-6cfd0748ec4d",
+    "statement": "Criança, 5 anos de idade, sexo masculino, comparece com os pais para consulta de rotina. Atualmente, está sem queixas. A avaliação antropométrica atual encontra: Índice de Massa Corpórea (IMC) para idade e sexo está igual a Z score +1 e a estatura para idade (E/I) está no Z score <-2, mesmos valores registrados em uma consulta feita há 4 meses. Considerando essa avaliação atual, assinale a alternativa que apresenta, corretamente, o diagnóstico para essa criança.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Déficit de estatura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Déficit de peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Déficit de peso e estatura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Excesso de peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Peso e estatura adequados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para a resolução desta questão, é necessário aplicar os critérios de avaliação do estado nutricional da Organização Mundial da Saúde (OMS), amplamente utilizados na pediatria e em concursos médicos. Analisamos dois índices principais fornecidos no enunciado:\n\n1. Estatura para Idade (E/I):\nO enunciado informa que a criança apresenta um Z-score menor que -2 (Z < -2). Na classificação de crescimento e desenvolvimento:\n- Z-score maior ou igual a -2: Estatura adequada para a idade.\n- Z-score entre -3 e -2: Baixa estatura para a idade (ou déficit de estatura).\n- Z-score menor que -3: Muito baixa estatura para a idade.\nComo o paciente está com valor inferior a -2, o diagnóstico clínico é de déficit de estatura.\n\n2. Índice de Massa Corpórea (IMC) para Idade:\nO paciente apresenta um Z-score de +1. Para crianças de 5 anos de idade (ponto de transição nas curvas da OMS):\n- Entre Z-score -2 e +1: Peso adequado (eutrofia).\n- Entre Z-score +1 e +2: Sobrepeso (ou risco de sobrepeso, dependendo do mês exato).\nO valor +1 encontra-se no limite superior da normalidade/eutrofia. Portanto, não há evidência de desnutrição ou déficit de peso, que exigiria um Z-score abaixo de -2.\n\nAnálise das alternativas:\n\na) CORRETA. O índice Estatura/Idade inferior a Z-score -2 define tecnicamente o diagnóstico de baixa estatura ou déficit de estatura. Como os valores se mantiveram constantes nos últimos 4 meses, confirma-se um padrão de crescimento insuficiente em relação à população de referência.\n\nb) INCORRETA. O déficit de peso é caracterizado por um IMC ou Peso para Idade com Z-score abaixo de -2. A criança possui Z +1, o que descarta qualquer quadro de magreza ou déficit ponderal.\n\nc) INCORRETA. Existe o déficit de estatura, mas o peso é considerado adequado (eutrófico) para a idade e sexo, não havendo déficit de peso.\n\nd) INCORRETA. O excesso de peso (sobrepeso) em crianças de 5 anos é classicamente definido por um IMC para idade acima de Z-score +1 (até +2). O paciente está com Z exatamente igual a +1, situando-se no limite da normalidade. Clinicamente, o achado de estatura abaixo de Z -2 é muito mais relevante para o diagnóstico principal.\n\ne) INCORRETA. A estatura não está adequada. Qualquer valor de Z-score abaixo de -2 em gráficos de crescimento indica desvio para menos em relação à média esperada, caracterizando baixa estatura.\n\nGabarito: Alternativa (a).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Diagnóstico Nutricional",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  },
+  {
+    "id": "AJUDA_fd11977c-f539-4eaa-b435-3c2364b5c7f2",
+    "originalId": "fd11977c-f539-4eaa-b435-3c2364b5c7f2",
+    "statement": "A Rede Nacional de Atenção Integral à Saúde do Trabalhador e da Trabalhadora (RENASTT), no contexto da Rede de Atenção à Saúde, prevê ações junto à APS. Assinale a alternativa que apresenta corretamente algumas dessas ações.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicação de multas às empresas sob vigilância da APS que não corrigirem as condições inadequadas de trabalho e acolhimento dos trabalhadores com suspeitas de doenças relacionadas ao trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reconhecimento e mapeamento das atividades produtivas no território e realização de exames admissionais e periódicos de 6 em 6 meses em trabalhadores e trabalhadoras do mercado formal da área de abrangência da UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reconhecimento e identificação da população trabalhadora e seu perfil sócio-ocupacional no território e identificação da rede de apoio social aos trabalhadores e trabalhadoras no território.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Incorporação de conteúdos de saúde do trabalhador nas estratégias de capacitação e de educação permanente para as equipes da atenção primária em saúde e fiscalização dos processos de trabalho realizados nos domicílios.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Rede Nacional de Atenção Integral à Saúde do Trabalhador e da Trabalhadora (RENASTT) visa descentralizar as ações de saúde do trabalhador, integrando-as à rede assistencial do SUS, com destaque para a Atenção Primária à Saúde (APS).\n\nAlternativa a: Incorreta. As equipes da APS não detêm poder de polícia administrativa ou competência legal para aplicar multas a empresas. A fiscalização punitiva e a aplicação de sanções são atribuições das Vigilâncias (Sanitária e em Saúde do Trabalhador) e dos órgãos de inspeção do Ministério do Trabalho. O papel da APS é o acolhimento, a assistência e a vigilância epidemiológica.\n\nAlternativa b: Incorreta. Os exames admissionais e periódicos são obrigações legais do empregador, conforme as Normas Regulamentadoras (NR-7), e devem ser realizados por meio do PCMSO (Programa de Controle Médico de Saúde Ocupacional) da empresa. O SUS não deve substituir as responsabilidades financeiras e organizacionais do setor privado no que tange aos exames ocupacionais obrigatórios.\n\nAlternativa c: Correta. Uma das funções primordiais da APS é a territorialização. No contexto da saúde do trabalhador, isso se traduz em conhecer o perfil socio-ocupacional da população (saber quem trabalha, em que trabalha e sob quais riscos) e identificar a rede de suporte social (sindicatos, associações, centros de referência) para garantir a integralidade do cuidado e a articulação de ações intersetoriais.\n\nAlternativa d: Incorreta. Embora a educação permanente seja uma estratégia fundamental da RENASTT, a falha desta alternativa reside na \"fiscalização dos processos de trabalho\". Assim como mencionado na alternativa A, a fiscalização é uma atividade de vigilância com caráter regulatório e muitas vezes punitivo, o que foge ao escopo assistencial e promocional das equipes de Saúde da Família na APS.\n\nEm resumo, a APS atua na identificação das necessidades de saúde dos trabalhadores em seu território, utilizando ferramentas de mapeamento e suporte social para orientar o cuidado, enquanto funções de fiscalização e exames ocupacionais obrigatórios pertencem a outras esferas.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  },
+  {
+    "id": "AJUDA_fd154e09-50a5-48c5-b734-26c5963beccf",
+    "originalId": "fd154e09-50a5-48c5-b734-26c5963beccf",
+    "statement": "Ao entrar na Cavidade Abdominal, para execução de Vagotomias, a relação habitual dos dois Nervos Vagos é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Nervo Vago direito entra por trás do Esôfago e é distribuído para a superfície posterior do Estômago, enquanto o Nervo Vago esquerdo fica na face anterior;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O Nervo Vago direito fica na superfície anterior e o Nervo Vago esquerdo na face posterior;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ambos os Nervos Vago ficam na face posterior do Estômago;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ambos os Nervos Vago ficam na face anterior do Estômago;",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a disposição dos nervos vagos na transição esofagogástrica, deve-se recordar a embriologia do trato digestivo. Durante o desenvolvimento fetal, o estômago sofre uma rotação de 90 graus no sentido horário ao redor do seu eixo longitudinal. Com isso, as estruturas que eram originalmente esquerdas passam para a face anterior, e as que eram direitas passam para a face posterior. Assim, o nervo vago esquerdo torna-se o tronco vagal anterior, enquanto o nervo vago direito torna-se o tronco vagal posterior (mnemônico clássico: LARP - Left Anterior, Right Posterior).\n\nAnálise das alternativas:\n\nAlternativa a: Correta. Descreve exatamente a anatomia cirúrgica decorrente da rotação gástrica: o nervo vago esquerdo posiciona-se na face anterior do esôfago e estômago, enquanto o nervo vago direito entra por trás do esôfago e distribui-se pela face posterior.\n\nAlternativa b: Incorreta. Houve inversão da relação anatômica. O vago direito é posterior e o esquerdo é anterior.\n\nAlternativa c: Incorreta. Os dois nervos não se situam no mesmo plano; eles se distribuem em faces opostas (anterior e posterior) do esôfago abdominal e do estômago.\n\nAlternativa d: Incorreta. Como citado, devido à rotação gástrica de 90 graus, os nervos ocupam faces distintas, não ficando ambos na face anterior.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  },
+  {
+    "id": "AJUDA_fd1a672b-4fb6-4634-a2d9-a26e4a047ec6",
+    "originalId": "fd1a672b-4fb6-4634-a2d9-a26e4a047ec6",
+    "statement": "Primípara de 24 anos está em trabalho de parto com 41 semanas de gestação. Ocorre o desprendimento cefálico, porém há dificuldade para o desprendimento das espáduas. Analisando a condição obstétrica, é INCORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pode-se realizar a compressão do fundo uterino.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Deve-se proceder ao desprendimento do braço posterior pela manobra de Shrug.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A manobra de Mc Roberts está bem indicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A pressão suprapúbica pode ser realizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manobra de Wood.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA questão aborda o manejo da distocia de espáduas, uma emergência obstétrica que ocorre quando o ombro fetal (geralmente o anterior) fica impactado na sínfise púbica materna após a saída da cabeça. O diagnóstico é clínico, frequentemente identificado pelo sinal da tartaruga (retração da cabeça fetal contra o períneo). O manejo deve ser imediato e segue uma sequência de manobras específicas.\n\nAlternativa A (Incorreta/Gabarito): A compressão do fundo uterino (manobra de Kristeller) é absolutamente contraindicada na distocia de espáduas. Ao empurrar o feto de cima para baixo, a pressão aumenta a impactação do ombro anterior contra a sínfise púbica, não resolvendo a obstrução e elevando significativamente o risco de complicações graves, como a lesão definitiva do plexo braquial (paralisia de Erb-Duchenne) e a ruptura uterina.\n\nAlternativa B (Correta): O desprendimento do braço posterior é uma das manobras internas mais eficazes quando as manobras iniciais falham. Ao retirar o braço posterior, reduz-se o diâmetro biacromial do feto, permitindo que o ombro anterior se desvencilhe da sínfise púbica. A técnica envolve a flexão do cotovelo e o deslizamento do braço sobre o tórax fetal.\n\nAlternativa C (Correta): A manobra de McRoberts é o procedimento inicial de escolha. Consiste na hiperflexão das coxas da paciente sobre o abdome. Essa ação retifica a curvatura sacra, rotaciona a sínfise púbica superiormente e diminui o ângulo de inclinação pélvica, o que frequentemente é suficiente para liberar o ombro impactado sem necessidade de intervenções invasivas.\n\nAlternativa D (Correta): A pressão suprapúbica (manobra de Mazzanti) é realizada por um assistente enquanto o médico exerce uma tração axial suave na cabeça fetal. A pressão deve ser aplicada lateralmente sobre o ombro anterior para tentar rotacioná-lo ou aduzi-lo, facilitando sua passagem sob a sínfise púbica. É frequentemente realizada em conjunto com a manobra de McRoberts.\n\nAlternativa E (Correta): A manobra de Wood, ou manobra do parafuso de Wood, é uma técnica de rotação interna. O obstetra insere os dedos na vagina e aplica pressão na face anterior do ombro posterior, girando o feto em 180 graus (como um parafuso). O objetivo é transformar o ombro posterior em anterior, liberando a impactação.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  },
+  {
+    "id": "AJUDA_fd1c1a17-0be6-4a88-a820-c983f3c36f78",
+    "originalId": "fd1c1a17-0be6-4a88-a820-c983f3c36f78",
+    "statement": "De acordo com a Lei 8080/1990, “Serão criadas comissões intersetoriais de âmbito nacional, subordinadas ao Conselho Nacional de Saúde, integradas pelos Ministérios e órgãos competentes e por entidades representativas da sociedade civil. As comissões intersetoriais terão a finalidade de articular políticas e programas de interesse para a saúde, cuja execução envolva áreas não compreendidas no âmbito do Sistema Único de Saúde (SUS).”\n\nA articulação das políticas e programas, a cargo das comissões intersetoriais, abrangerá, em especial, as seguintes atividades, EXCETO,",
+    "options": [
+      {
+        "id": "A",
+        "text": "alimentação e nutrição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "saneamento e meio ambiente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vigilância sanitária e farmacoepidemiologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "recursos humanos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "financiamento nacional de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão fundamenta-se na Lei nº 8.080/1990, conhecida como a Lei Orgânica da Saúde, que dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes.\n\nPara responder corretamente, o candidato deve conhecer o artigo 13 desta lei, que lista especificamente as atividades que estarão a cargo das comissões intersetoriais subordinadas ao Conselho Nacional de Saúde. O objetivo dessas comissões é articular políticas e programas em áreas que não são exclusivas da saúde, mas que impactam diretamente o bem-estar da população.\n\nAbaixo, a análise de cada alternativa frente ao texto legal:\n\nAlternativa a) Alimentação e nutrição.\nEsta atividade está prevista no inciso I do artigo 13. A segurança alimentar envolve políticas de agricultura, abastecimento e assistência social, exigindo, portanto, uma articulação intersetorial para garantir o impacto positivo na saúde pública.\n\nAlternativa b) Saneamento e meio ambiente.\nEsta atividade está prevista no inciso II do artigo 13. O controle de doenças infectocontagiosas e a prevenção de riscos ambientais dependem diretamente de políticas de infraestrutura urbana e preservação ambiental geridas por outros órgãos governamentais.\n\nAlternativa c) Vigilância sanitária e farmacoepidemiologia.\nEsta atividade está prevista no inciso III do artigo 13. A regulação e o monitoramento de produtos, medicamentos e substâncias envolvem setores econômicos, industriais e de comércio, justificando a necessidade de uma comissão intersetorial.\n\nAlternativa d) Recursos humanos.\nEsta atividade está prevista no inciso IV do artigo 13. A formação, ordenação e capacitação de profissionais para o sistema de saúde dependem de uma articulação direta com o Ministério da Educação e outras instâncias de ensino, caracterizando uma ação entre diferentes setores.\n\nAlternativa e) Financiamento nacional de saúde.\nEsta é a alternativa correta, pois é a única que não consta na lista do artigo 13. Embora o financiamento seja um pilar fundamental do SUS, ele é tratado em capítulos e seções específicas da lei (como os artigos 31 a 35) e por legislação complementar (Lei Complementar nº 141/2012). O financiamento é uma atividade de gestão técnica e administrativa do próprio sistema de saúde e das instâncias governamentais, não fazendo parte das competências das comissões intersetoriais destinadas à articulação de políticas externas ao âmbito exclusivo do SUS.\n\nPara fins de revisão, as outras atividades citadas no artigo 13 que não apareceram nas alternativas são: Ciência e Tecnologia (inciso V) e Saúde do Trabalhador (inciso VI).",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  },
+  {
+    "id": "AJUDA_fd299b29-fd89-4450-ba90-0a5fd767de30",
+    "originalId": "fd299b29-fd89-4450-ba90-0a5fd767de30",
+    "statement": "Criança de 2 anos apresenta crise tônico-clônica generalizada com duração de 3 minutos, sem sinais de infecção do sistema nervoso central e com exame neurológico normal. Qual é a conduta mais adequada após o primeiro episódio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar ácido valpróico profilático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar tomografia computadorizada de crânio imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar EEG de rotina e iniciar fenobarbital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar os pais e não iniciar tratamento profilático.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Solicitar punção lombar em todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A conduta diante de uma primeira crise convulsiva na infância exige uma avaliação criteriosa do risco de recorrência versus os efeitos colaterais das medicações. No caso descrito, temos uma criança de 2 anos com uma crise tônico-clônica generalizada de curta duração (3 minutos) e exame neurológico perfeitamente normal, sem indícios de infecção.\n\nAlternativa (a) Incorreta: O uso de anticonvulsivantes profiláticos, como o ácido valproico, não é indicado após um único episódio de crise convulsiva generalizada com exame neurológico normal. O diagnóstico de epilepsia geralmente requer dois ou mais episódios não provocados, e o risco de efeitos colaterais da medicação supera os benefícios após um único evento isolado.\n\nAlternativa (b) Incorreta: A tomografia computadorizada de crânio não deve ser realizada de rotina em crianças que apresentam crise convulsiva única, breve, sem sinais focais e com exame neurológico normal. Deve-se evitar a exposição desnecessária à radiação ionizante, reservando os exames de imagem para casos de suspeita de trauma, sinais de hipertensão intracraniana, neurofibromatose ou déficits neurológicos persistentes.\n\nAlternativa (c) Incorreta: Embora o eletroencefalograma (EEG) possa ser solicitado ambulatorialmente para auxiliar na avaliação do risco de recorrência e na classificação de possíveis síndromes, ele não é uma urgência. O erro principal da alternativa é indicar o início do fenobarbital. Essa medicação possui perfil de efeitos colaterais cognitivos e comportamentais significativos em crianças, não se justificando após uma única crise curta e sem fatores de risco maiores.\n\nAlternativa (d) Correta: Esta é a conduta padrão-ouro. A maioria das crianças que apresenta uma primeira crise convulsiva única e breve não terá recorrências. A orientação aos pais sobre como proceder em caso de nova crise (manter a calma, colocar a criança em decúbito lateral, cronometrar a duração e não introduzir objetos na boca) é a intervenção mais adequada. Não há evidência de que o tratamento medicamentoso após a primeira crise altere o prognóstico neurológico de longo prazo.\n\nAlternativa (e) Incorreta: A punção lombar é um procedimento invasivo reservado para casos em que há suspeita clínica de meningite ou encefalite (como febre associada a sinais de irritação meníngea, prostração excessiva ou alteração persistente do nível de consciência). Como o enunciado afirma que não há sinais de infecção do sistema nervoso central e o exame neurológico é normal, a punção lombar está contraindicada.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Epilepsias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  },
+  {
+    "id": "AJUDA_fd4457fa-fd38-4a65-962c-5420a6ad200f",
+    "originalId": "fd4457fa-fd38-4a65-962c-5420a6ad200f",
+    "statement": "No primeiro trimestre, o amolecimento do istmo uterino, perceptível ao exame físico, corresponde a qual sinal clássico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sinal de Nobile-Budin.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sinal de MacDonald.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sinal de Piskacek.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sinal de Hegar.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O sinal solicitado na questão é o de Hegar, que é um dos sinais de probabilidade de gestação identificados durante o exame físico ginecológico no primeiro trimestre. Abaixo segue a explicação detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: O sinal de Nobile-Budin refere-se à percepção do preenchimento dos fundos de saco vaginais (fórnices laterais) pelo corpo uterino. À medida que o útero cresce e se torna mais globoso, ele passa a ocupar esses espaços, o que é detectado no toque vaginal.\n\nAlternativa (b) Incorreta: O sinal de McDonald caracteriza-se pela facilidade de flexionar o corpo do útero sobre o colo uterino. Embora ocorra devido às alterações gravídicas, não é a definição específica para o amolecimento isolado do istmo.\n\nAlternativa (c) Incorreta: O sinal de Piskacek consiste na percepção de uma assimetria uterina à palpação. Isso ocorre porque, no início da gestação, o útero pode apresentar um abaulamento ou amolecimento irregular no local onde o embrião se implantou (nidação), geralmente em um dos cornos uterinos.\n\nAlternativa (d) Correta: O sinal de Hegar é definido especificamente como o amolecimento da região do istmo uterino (a zona de transição entre o corpo e o colo do útero). Durante o toque bimanual, essa região torna-se tão macia e compressível que o examinador tem a sensação de que o corpo do útero e o colo são estruturas independentes ou que quase se tocam através da parede uterina. Esse sinal costuma estar presente entre a 6ª e a 8ª semana de gestação.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  },
+  {
+    "id": "AJUDA_fd46431d-b027-47e3-b6b6-020499f4feb2",
+    "originalId": "fd46431d-b027-47e3-b6b6-020499f4feb2",
+    "statement": "O teste da orelhinha ou exame de emissão otoacústica deve ser realizado em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em recém-nascidos com alterações crânio facial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em todos recém-nascido entre o 3º e 5º dia de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Em recém-nascido que tenha recebido ventilação respiratória por mais de 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em recém-nascidos que apresentam alterações clínicas sugestivas de infecção congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Exame de Emissões Otoacústicas Evocadas, popularmente conhecido como Teste da Orelhinha, é a ferramenta padrão para a Triagem Auditiva Neonatal Universal (TANU). O principal objetivo deste exame é a detecção precoce de alterações auditivas em recém-nascidos, permitindo intervenções oportunas que minimizem prejuízos no desenvolvimento da linguagem e da fala. No Brasil, a obrigatoriedade deste exame para todos os neonatos é garantida pela Lei Federal nº 12.303, de 2010.\n\nAlternativa a: Incorreta. As alterações craniofaciais são classificadas como Indicadores de Risco para Deficiência Auditiva (IRDA). Recém-nascidos com esses indicadores devem, obrigatoriamente, realizar a triagem, mas o exame não se restringe a eles. A triagem é universal, abrangendo bebês com ou sem riscos aparentes.\n\nAlternativa b: Correta. O teste deve ser realizado em todos os recém-nascidos. A recomendação de realização entre o 3º e o 5º dia de vida é estratégica, pois coincide com o período ideal para outros exames de triagem neonatal (como o Teste do Pezinho) e permite que o conduto auditivo esteja livre de vérnix ou restos de parto, o que reduz a taxa de resultados falso-positivos (quando o teste falha, mas a audição é normal).\n\nAlternativa c: Incorreta. O uso de ventilação mecânica por período superior a cinco dias é outro indicador de risco importante. Nestes casos específicos, as diretrizes costumam recomendar que a triagem seja feita preferencialmente por meio do Potencial Evocado Auditivo de Tronco Encefálico (PEATE ou BERA), pois esses bebês têm maior risco de neuropatia auditiva, que as emissões otoacústicas podem não detectar. De qualquer forma, a triagem não é exclusiva para eles.\n\nAlternativa d: Incorreta. Suspeitas ou confirmações de infecções congênitas (como citomegalovírus, rubéola, sífilis, toxoplasmose e herpes) são fatores de risco clássicos para perda auditiva. Assim como nos casos anteriores, esses bebês compõem o grupo de risco, mas o Teste da Orelhinha deve ser aplicado a toda a população neonatal, e não apenas aos sintomáticos ou com suspeita clínica.\n\nEm resumo, a questão exige o conhecimento do conceito de universalidade da triagem auditiva. Embora as alternativas a, c e d listem condições que aumentam a chance de surdez, o Teste da Orelhinha é um direito de todos os recém-nascidos no território nacional.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  },
+  {
+    "id": "AJUDA_fd5354c4-6f6f-4d1c-a13d-4efcdc3ffc59",
+    "originalId": "fd5354c4-6f6f-4d1c-a13d-4efcdc3ffc59",
+    "statement": "Uma paciente com 25 anos de idade dá entrada em unidade de urgência queixando-se de dor abdominal baixa, corrimento amarelado com odor desagradável e febre não aferida de início há 5 dias. Ao exame físico, paciente com temperatura axilar 38,2 °C, frequência cardíaca 102 bpm, pressão arterial 114 x 75 mmHg, frequência respiratória 19 irpm, saturação de oxigênio 98%, abdome plano, peristáltico, timpânico, doloroso principalmente em andar inferior e descompressão dolorosa. Ao toque vaginal, presença de dor à mobilização do colo uterino e palpação bimanual de anexos, além da ausência de massas palpáveis em cavidade pélvica. Diante da hipótese diagnóstica provável, qual é o tratamento mais indicado para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento ambulatorial com ceftriaxona 250 mg, via intramuscular, associada à azitromicina 1 g, via oral, ambas em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação hospitalar com administração de cefoxitina 2 g, via endovenosa, a cada 6 horas, associada à doxiciclina 100 mg, via oral, a cada 12 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tratamento ambulatorial com ceftriaxona 250 mg, via intramuscular, em dose única, associada à doxiciclina 100 mg, via oral, 2 vezes ao dia, por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrição de sintomáticos, analgésicos e antitérmicos, e orientação de retorno em 48 horas para reavaliação do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Internação hospitalar para realização de esquema antibiótico endovenoso e drenagem cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — dor abdominal baixa, febre, corrimento vaginal amarelado com odor desagradável, dor à mobilização do colo uterino e à palpação de anexos — é patognomônico de Doença Inflamatória Pélvica (DIP). A DIP é uma síndrome clínica decorrente da ascensão de microrganismos do trato genital inferior para o trato genital superior.\n\nPara definir a conduta, devemos classificar a gravidade da paciente, geralmente utilizando os critérios de Monif:\n- Grau I: DIP não complicada, sem sinais de irritação peritoneal.\n- Grau II: DIP com peritonite pélvica.\n- Grau III: Presença de abscesso tubo-ovariano íntegro.\n- Grau IV: Abscesso tubo-ovariano roto ou secreção purulenta em cavidade abdominal (peritonite generalizada).\n\nNesta questão, a paciente apresenta sinais de peritonite (descompressão dolorosa no abdome inferior) e sinais sistêmicos (febre de 38,2 °C e taquicardia de 102 bpm). Portanto, ela é classificada como Monif II.\n\nAs indicações de internação hospitalar para tratamento de DIP incluem:\n1. Sinais de peritonite (irritação peritoneal).\n2. Estado geral grave (náuseas, vômitos, febre alta).\n3. Suspeita de abscesso tubo-ovariano.\n4. Gravidez.\n5. Intolerância ou falha ao tratamento por via oral.\n6. Ausência de melhora clínica após 72 horas de tratamento ambulatorial.\n7. Dificuldade de seguimento ou aderência ao tratamento.\n\nComo a paciente apresenta sinais de irritação peritoneal, o tratamento deve ser obrigatoriamente hospitalar com antibioticoterapia endovenosa.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O tratamento ambulatorial é indicado apenas para casos leves (Monif I). Além disso, o esquema com azitromicina em dose única não é o padrão-ouro para DIP; o protocolo ambulatorial preconiza Ceftriaxona 500 mg (IM, dose única) + Doxiciclina 100 mg (VO, 12/12h por 14 dias) + Metronidazol 500 mg (VO, 12/12h por 14 dias).\n\nAlternativa (b) Correta. A paciente tem critérios de internação por apresentar sinais de irritação peritoneal. O esquema com Cefoxitina endovenosa associada à Doxiciclina (que pode ser oral se a paciente tolerar) é um dos regimes parenterais recomendados pelo Ministério da Saúde e pelo CDC para o tratamento hospitalar da DIP.\n\nAlternativa (c) Incorreta. Este esquema (Ceftriaxona + Doxiciclina) é voltado para o tratamento ambulatorial (Monif I). A presença de descompressão dolorosa no exame físico contraindica a alta imediata e exige vigilância hospitalar com medicação endovenosa inicial.\n\nAlternativa (d) Incorreta. A DIP é uma infecção bacteriana polimicrobiana (envolvendo principalmente Neisseria gonorrhoeae e Chlamydia trachomatis, além de anaeróbios). Prescrever apenas sintomáticos é um erro grave, pois a falta de antibioticoterapia pode levar a sequelas como infertilidade, dor pélvica crônica e gravidez ectópica.\n\nAlternativa (e) Incorreta. Embora a internação esteja correta, a drenagem cirúrgica imediata não está indicada. A cirurgia é reservada para casos de DIP Monif IV (abscesso roto), falha do tratamento clínico ou abscessos grandes que permitam drenagem guiada por imagem/laparoscopia se não houver melhora inicial. O exame físico desta paciente especificamente negou a presença de massas palpáveis.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T18:18:00.607Z"
+  }
+]

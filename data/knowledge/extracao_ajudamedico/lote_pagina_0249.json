@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_454fb97b-ff7b-44ee-ade1-14ae69692d97",
+    "originalId": "454fb97b-ff7b-44ee-ade1-14ae69692d97",
+    "statement": "Primípara, 19 anos, retorna ao Ambulatório de Obstetricia, no 28º dia pós-parto vaginal, e solicita método contraceptivo de inicio imediato. Encontra-se em aleitamento materno misto. O método contraceptivo mais adequado é",
+    "options": [
+      {
+        "id": "A",
+        "text": "DIU de levonogestrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "DIU de cobre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "drospirenona oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "etinilestradiol e etonogestrel vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "estradiol e nomegestrol oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os critérios de elegibilidade para métodos contraceptivos no período pós-parto, considerando o aleitamento materno e o risco de eventos tromboembólicos.\n\nAnálise do cenário clínico:\nA paciente está no 28º dia pós-parto (4 semanas), em aleitamento misto e deseja início imediato de anticoncepção.\n\nAlternativa a) DIU de levonorgestrel: Incorreta. Embora o DIU possa ser inserido no pós-parto imediato (até 48 horas) ou após 4 semanas, o período entre 48 horas e 4 semanas após o parto é classificado como Categoria 3 pela Organização Mundial da Saúde (OMS), devido ao elevado risco de expulsão do dispositivo. No 28º dia, ela está exatamente no limite. Além disso, em provas de residência, quando se busca um método de início imediato em consultório ambulatorial nesse período, os progestagênios orais costumam ser a resposta preferencial frente ao DIU, que muitas vezes requer agendamento ou condições técnicas específicas de involução uterina completa.\n\nAlternativa b) DIU de cobre: Incorreta. Segue a mesma lógica da alternativa anterior. O risco de expulsão é maior se inserido entre 48 horas e 4 semanas pós-parto. Apesar de tecnicamente ser Categoria 1 a partir de 4 semanas, a alternativa (c) é considerada mais adequada para o \"início imediato\" ambulatorial no contexto da amamentação.\n\nAlternativa c) Drospirenona oral: Correta. A drospirenona é um progestagênio isolado (pílula livre de estrogênio). Métodos contendo apenas progestagênio são a escolha ideal para mulheres que estão amamentando, pois não interferem na produção, no volume ou na composição do leite materno. Além disso, não aumentam o risco de tromboembolismo venoso, que ainda está elevado nos primeiros 42 dias após o parto. A drospirenona isolada permite o início imediato com segurança e eficácia.\n\nAlternativa d) Etinilestradiol e etonogestrel vaginal: Incorreta. Este é um método combinado (contém estrogênio). O uso de estrogênios é contraindicado (Categoria 4 da OMS se menos de 21 dias e Categoria 3 entre 21 e 42 dias com fatores de risco) durante a amamentação, pois o estrogênio reduz a produção de leite e aumenta significativamente o risco de trombose no puerpério.\n\nAlternativa e) Estradiol e nomegestrol oral: Incorreta. Assim como a alternativa anterior, trata-se de um anticoncepcional combinado. A presença do estradiol (estrogênio) contraindica o método para uma paciente em aleitamento materno exclusivo ou misto antes de 6 meses pós-parto, conforme os critérios de elegibilidade da OMS, devido ao risco de redução da lactação e risco vascular.\n\nResumo didático:\nNo puerpério e durante a lactação, priorizamos métodos que não contenham estrogênio. As opções seguras são os métodos de progestagênio isolado (minipílulas, implante, injeção trimestral ou pílula de drospirenona) e os métodos não hormonais (DIU de cobre). Entre eles, a pílula de progestagênio isolado (drospirenona) destaca-se pela facilidade de início imediato e segurança para o aleitamento.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  },
+  {
+    "id": "AJUDA_454fbcd5-a487-46f5-804b-8b1f5c02195d",
+    "originalId": "454fbcd5-a487-46f5-804b-8b1f5c02195d",
+    "statement": "A indicação de albumina humana no edema nefrótico grave deve ser individualizada, não sendo possível recomendar o seu uso sistemático.\nI – A infusão de albumina em pacientes hipervolêmicos deve ser feita com cautela.\nPORQUE\nII – Pode exacerbar a volemia, causando insuficiência cardíaca, edema pulmonar e piora da hipertensão arterial, sobretudo quando em infusão rápida.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ambas afirmativas estão corretas e a II é uma justificativa correta da I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ambas afirmativas estão corretas e a II não é uma justificativa correta da I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A afirmativa I está correta e a II incorreta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A afirmativa I está incorreta e a II correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ambas estão incorretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA questão aborda a fisiopatologia e o manejo terapêutico do edema na síndrome nefrótica, especificamente o uso da albumina humana. Na síndrome nefrótica, o edema pode ocorrer por dois mecanismos: o \"underfill\" (diminuição do volume arterial efetivo por baixa pressão oncótica) e o \"overfill\" (retenção primária de sódio e água pelos rins, gerando hipervolemia).\n\nAFIRMATIVA I: A infusão de albumina em pacientes hipervolêmicos deve ser feita com cautela.\nEsta afirmativa está correta. Pacientes com síndrome nefrótica que apresentam o perfil de \"overfill\" já possuem um volume intravascular expandido. A albumina é um expansor plasmático potente devido à sua alta pressão oncótica. Ao ser infundida, ela atrai o líquido que estava no interstício (edema) para dentro dos vasos sanguíneos. Em um paciente que já está hipervolêmico, esse aumento súbito do volume circulante pode ultrapassar a capacidade de complacência do sistema cardiovascular.\n\nAFIRMATIVA II: Pode exacerbar a volemia, causando insuficiência cardíaca, edema pulmonar e piora da hipertensão arterial, sobretudo quando em infusão rápida.\nEsta afirmativa também está correta. Ela detalha os riscos clínicos da expansão volêmica aguda. O aumento rápido da pré-carga (volume que chega ao coração) pode levar a uma descompensação cardíaca, resultando em congestão pulmonar e até edema agudo de pulmão. Além disso, o aumento do volume intravascular eleva a pressão arterial, o que pode agravar quadros de hipertensão preexistentes ou causar picos hipertensivos.\n\nRELAÇÃO ENTRE AS AFIRMATIVAS\nA afirmativa II é a justificativa direta da afirmativa I. A necessidade de cautela (I) existe justamente por causa dos riscos de complicações hemodinâmicas graves (II) decorrentes da expansão de volume.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Está correta. Ambas as afirmativas são verdadeiras e a segunda explica a razão pela qual a administração de albumina exige prudência e monitorização em pacientes hipervolêmicos.\n\nAlternativa b: Está incorreta. A afirmativa II é a justificativa lógica e fisiopatológica da afirmativa I. Sem o risco descrito na II, não haveria motivo para a cautela mencionada na I.\n\nAlternativa c: Está incorreta. A afirmativa II é cientificamente correta, descrevendo eventos adversos clássicos da expansão volêmica com coloides em pacientes com sobrecarga de volume.\n\nAlternativa d: Está incorreta. A afirmativa I é um preceito básico de segurança do paciente em nefrologia e terapia intensiva.\n\nAlternativa e: Está incorreta. Ambas as sentenças estão de acordo com as diretrizes clínicas de manejo da síndrome nefrótica severa.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  },
+  {
+    "id": "AJUDA_4559318f-fd64-4043-94e7-2f630b71c3a2",
+    "originalId": "4559318f-fd64-4043-94e7-2f630b71c3a2",
+    "statement": "O que melhor descreve um surto em epidemiologia é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uma doença que apresenta um aumento significativo do número de casos e se espalha rapidamente entre comunidades, países e continentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Um aumento inesperado no número de casos de uma doença em uma área específica durante um período de tempo definido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Uma doença constantemente presente em uma região específica e que eleva expressivamente o número de casos em um período determinado do ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uma doença que afeta uma grande parcela da população mundial, atravessando fronteiras e culturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Definição de Surto:\nNa epidemiologia, o surto é tecnicamente considerado uma epidemia de proporções geográficas limitadas. Ele se caracteriza pelo aparecimento de casos de uma doença acima do nível esperado em uma área restrita ou em um grupo específico de pessoas que compartilham uma exposição comum (como em uma escola, hospital, quartel ou um bairro específico).\n\nAnálise das Alternativas:\n\nAlternativa A: Incorreta. Esta descrição refere-se ao conceito de pandemia. A característica de se espalhar rapidamente entre diferentes países e continentes, atingindo uma escala global, é o que define o processo pandêmico, diferenciando-o do surto.\n\nAlternativa B: Correta. Esta alternativa apresenta a definição clássica de surto epidemiológico. Os pilares do conceito são: o aumento inesperado (acima do limiar endêmico ou da média histórica), em uma área geográfica delimitada e durante um período de tempo definido. É, essencialmente, uma epidemia localizada.\n\nAlternativa C: Incorreta. Uma doença constantemente presente em uma região geográfica é definida como endemia. Embora doenças endêmicas possam apresentar variações sazonais (aumento de casos em certas épocas do ano), a presença contínua e esperada na região é o marco da endemia, e não do surto.\n\nAlternativa D: Incorreta. Esta alternativa também descreve uma pandemia. O critério de afetar uma grande parcela da população mundial e atravessar fronteiras internacionais é específico para as pandemias, que representam o nível mais amplo de disseminação de uma doença.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  },
+  {
+    "id": "AJUDA_455ace10-b2b0-4552-8ac1-8bc015a3f8b2",
+    "originalId": "455ace10-b2b0-4552-8ac1-8bc015a3f8b2",
+    "statement": "Uma mulher de 65 anos, com histórico de pneumonia, apresenta febre, dor torácica pleurítica e dispneia. A radiografia de tórax mostra um grande derrame pleural loculado. A toracocentese revela fluido turvo com contagem elevada de glóbulos brancos e baixos níveis de glicose. Qual é o próximo passo do tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Toracostomia com drenagem pleural fechada;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Terapia antibiótica isolada;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Decorticação por videotoracoscopia;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Observação e controle radiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nO quadro clínico descreve um empiema pleural em sua fase fibrinopurulenta. A paciente apresenta critérios de gravidade no líquido pleural (aspecto turvo, glicose baixa e alta contagem de glóbulos brancos) associados a um achado radiológico fundamental: o derrame é loculado, o que significa a presença de septações.\n\nAlternativa (c) - CORRETA: Quando um derrame pleural parapneumônico evolui para a formação de septações e lojas (loculado), a drenagem simples por tubo costuma ser ineficaz, pois o dreno não consegue alcançar todas as coleções infectadas simultaneamente. A decorticação por videotoracoscopia (VATS) é o próximo passo indicado porque permite a lise de aderências, o desbridamento de tecidos necróticos e restos de fibrina, além da drenagem completa do espaço pleural. Isso garante a reexpansão pulmonar e o controle definitivo do foco infeccioso.\n\nAlternativa (a) - INCORRETA: A toracostomia com drenagem pleural fechada seria o tratamento de escolha para derrames complicados que ainda estivessem na fase fluida e livre (não loculados). No cenário de um derrame francamente loculado, o dreno isolado raramente é suficiente para resolver o problema, frequentemente necessitando de reintervenções ou evoluindo para falha terapêutica.\n\nAlternativa (b) - INCORRETA: O tratamento de coleções purulentas no espaço pleural segue o princípio cirúrgico de esvaziamento de abscessos. A antibioticoterapia isolada é incapaz de penetrar adequadamente em uma coleção loculada com pH baixo e não resolve a restrição mecânica imposta pela fibrina ao parênquima pulmonar.\n\nAlternativa (d) - INCORRETA: A conduta de observação é contraindicada. Diante de febre, dispneia e derrame pleural infectado/loculado, a falta de intervenção imediata leva ao agravamento da sepse, formação de casca pleural espessa e encarceramento pulmonar definitivo, o que exigiria cirurgias muito mais agressivas e invasivas no futuro.\n\nAssociação com imagem: Em casos como este, uma radiografia ou tomografia mostraria coleções de líquido com contornos convexos e que não se deslocam com a mudança de posição da paciente, confirmando que o líquido está aprisionado em lojas, o que justifica a abordagem por videotoracoscopia para limpeza do espaço pleural.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Derrame Pleural"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  },
+  {
+    "id": "AJUDA_4561a33b-61e9-498b-ab9f-2af6b485149c",
+    "originalId": "4561a33b-61e9-498b-ab9f-2af6b485149c",
+    "statement": "Paciente masculino, de 33 anos de idade com queixa de sangramento, dor e abaulamento anal há 5 semanas. Nega comorbidades. Refere pouca ingesta de fibras e 3 litros de água por dia. Hábito intestinal 1x por semana com fezes endurecidas. Ao exame, presença de plicoma na região posterior do ânus associado a ulceração, papila hipertrófica e hipertonia esfincteriana. \nCom base nesse caso clínico hipotético, assinale a opção que apresenta o tratamento correto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "tratamento tópico com diltiazen a 2%, óleo mineral 15 ml 2x ao dia, 40 gramas de fibra por dia e higiene com água após a evacuação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "tratamento tópico com Xilocaína a 4%, bisacodil 1 comprimido 1x ao dia, 20 gramas de fibra por dia e higiene com lenço umedecido após a evacuação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tratamento tópico com corticoide, tamarine 1 comprimido 2x ao dia, 30 gramas de fibra por dia e higiene com água após a evacuação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tratamento tópico com pomada contendo vitamina B, bisacodil 1 comprimido 3x ao dia, 40 gramas de fibra por dia e higiene com água após a evacuação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tratamento tópico com nifedipina, tamarine 1 comprimido ao dia, 30 gramas de fibra por dia e higiene com lenço umedecido após a evacuação seguido de banho de assento com água morna",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico: O quadro clínico descrito é clássico de Fissura Anal Crônica. A presença da tríade composta por ulceração, plicoma sentinela (região posterior) e papila anal hipertrófica, associada à hipertonia do esfíncter interno do ânus, confirma a cronicidade da lesão. O objetivo do tratamento é reduzir a pressão de repouso do canal anal (combater a hipertonia) e amolecer as fezes para evitar novos traumas.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: É o tratamento padrão inicial para fissura anal crônica. O diltiazem a 2% é um bloqueador de canal de cálcio que promove o relaxamento da musculatura lisa do esfíncter interno do ânus, melhorando a perfusão local e permitindo a cicatrização. O óleo mineral age como lubrificante e emoliente, facilitando a evacuação. A ingestão de 40 gramas de fibra é a recomendação ideal para garantir o volume fecal e a consistência adequada. A higiene com água evita o trauma mecânico do papel higiênico, que agravaria a lesão.\n\nAlternativa (b) Incorreta: A xilocaína é apenas um anestésico local que alivia a dor temporariamente, mas não trata a causa fisiopatológica (hipertonia esfincteriana). O bisacodil é um laxante estimulante que pode causar cólicas e não é a melhor escolha para uso contínuo no manejo da constipação crônica neste cenário. Além disso, o uso de lenços umedecidos pode causar irritação química ou dermatite de contato na região perianal já fragilizada.\n\nAlternativa (c) Incorreta: Corticoides tópicos não são indicados para o tratamento de fissuras anais, pois podem retardar a cicatrização e predispor a infecções locais. O Tamarine é um laxante que contém plantas irritativas (como o sene), não sendo a primeira escolha frente aos formadores de bolo fecal ou lubrificantes.\n\nAlternativa (d) Incorreta: Pomadas contendo vitamina B não possuem evidência científica no tratamento da hipertonia esfincteriana ou na cicatrização de fissuras anais. O uso de bisacodil três vezes ao dia é uma dose excessiva de um laxante estimulante, o que poderia causar diarreia e dor abdominal intensa, piorando o desconforto do paciente.\n\nAlternativa (e) Incorreta: Embora a nifedipina seja um bloqueador de canal de cálcio válido para o tratamento (similar ao diltiazem), o uso de lenços umedecidos é contraindicado devido ao potencial de irritação da pele. O tratamento ideal preconiza a higiene apenas com água e sabão neutro ou banhos de assento para promover relaxamento muscular e limpeza sem fricção excessiva. Além disso, o uso de laxantes estimulantes (Tamarine) é menos indicado do que o ajuste de fibras e lubrificantes.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  },
+  {
+    "id": "AJUDA_456301ea-eb4c-4b1d-b85b-2984535f2618",
+    "originalId": "456301ea-eb4c-4b1d-b85b-2984535f2618",
+    "statement": "No seguimento clínico da criança com sífilis congênita, as consultas oftalmológicas e audiológicas devem ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "bimestrais, por um ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "bimestrais, por seis meses e semestrais até três anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "trimestrais, no primeiro ano, e semestrais nos dois anos seguintes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "semestrais, por dois anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O acompanhamento da criança com diagnóstico de sífilis congênita é fundamental para a identificação precoce de sequelas tardias que podem não estar presentes ao nascimento, como a ceratite intersticial e a surdez neurossensorial (que compõem, junto com os dentes de Hutchinson, a Tríade de Hutchinson).\n\nDe acordo com o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST) do Ministério da Saúde, o seguimento clínico dessas crianças deve incluir consultas especializadas com periodicidade definida.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A frequência bimestral é muito curta para avaliações oftalmológicas e audiológicas de rotina no seguimento da sífilis, e o período de apenas um ano seria insuficiente para monitorar o desenvolvimento de sequelas que podem surgir mais tardiamente.\n\nAlternativa b) Incorreta. Não existe recomendação nos protocolos oficiais para essa alternância de prazos (bimestral nos primeiros seis meses) especificamente para os exames de audição e visão no contexto da sífilis congênita.\n\nAlternativa c) Incorreta. Embora o seguimento laboratorial (VDRL) ocorra em intervalos de 1, 3, 6, 12 e 18 meses, a avaliação especializada sensorial não segue o padrão trimestral sugerido nesta alternativa.\n\nAlternativa d) Correta. As diretrizes nacionais estabelecem que as consultas com oftalmologista e a avaliação audiológica devem ser realizadas semestralmente até os 2 anos de idade. Esse monitoramento é essencial para garantir que qualquer alteração visual ou auditiva decorrente da infecção treponêmica seja detectada e tratada oportunamente, minimizando prejuízos ao desenvolvimento da criança. Além dessas, o acompanhamento clínico geral (pediátrico) é mensal até o 6º mês e bimestral do 6º ao 12º mês.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  },
+  {
+    "id": "AJUDA_456c98f4-fd7e-47db-b140-60fb2a7209ef",
+    "originalId": "456c98f4-fd7e-47db-b140-60fb2a7209ef",
+    "statement": "Sobre o atendimento emergencial a mulheres vítimas de violência sexual, é INCORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É dispensável a apresentação do boletim de ocorrência policial da violência sofrida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dentre as infecções preveníveis através da profilaxia pós-exposição estão Gonorreia, sífilis, infecção por clamídia, tricomoníase e cancroide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se a vítima não for vacinada ou estiver com vacinação incompleta contra hepatite B, deve ser vacinada ou completar a imunização. Para pessoas presumidamente suscetíveis, expostas a pessoas infectadas pelo HBV (HBsAg reagente) ou pertencentes a grupos de alto risco de infecção pelo HBV, está indicada a administração de IGHAHB e vacina hepatite B recombinante (HB) o mais precocemente possível (preferencialmente nas primeiras 24 horas).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O esquema de profilaxia a infecções bacterianas sexualmente transmissíveis é composto de Penicilina benzatina 2400.000 UI em dose única+ azitromicina 1g em dose única+ceftriaxone 500mg IM em dose única+ Metronidazol 500mg 4 comprimidos em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Em gestantes vítimas de violência sexual, o metronidazol deve ser substituído pela clindamicina independente da idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda o protocolo de atendimento às vítimas de violência sexual, seguindo as diretrizes do Ministério da Saúde do Brasil e a legislação vigente.\n\nAlternativa a: Está correta. O atendimento médico às vítimas de violência sexual deve ser baseado no princípio da alteridade e na palavra da vítima. O acesso aos serviços de saúde, incluindo a profilaxia para ISTs, HIV e contracepção de emergência (ou aborto legal, se aplicável), é garantido sem a necessidade de apresentação de Boletim de Ocorrência (BO) ou qualquer outro documento de registro policial ou pericial, conforme determina a Lei 12.845/2013.\n\nAlternativa b: Está correta. O protocolo de profilaxia pós-exposição (PEP) para infecções sexualmente transmissíveis (IST) de etiologia não viral é desenhado para cobrir os patógenos mais prevalentes e clinicamente significativos em casos de violência, o que inclui Neisseria gonorrhoeae (gonorreia), Treponema pallidum (sífilis), Chlamydia trachomatis (clamídia), Trichomonas vaginalis (tricomoníase) e Haemophilus ducreyi (cancroide).\n\nAlternativa c: Está correta. A conduta para Hepatite B depende do histórico vacinal da vítima e do risco do agressor. Se a vítima não possui esquema vacinal completo, ela deve ser vacinada. A administração da Imunoglobulina Humana Anti-Hepatite B (IGHAHB) é indicada quando o agressor é sabidamente HBsAg reagente ou pertence a um grupo de alto risco, devendo ser administrada preferencialmente nas primeiras 24 horas, embora possa ser feita em até 14 dias após a exposição.\n\nAlternativa d: Está correta. O esquema terapêutico descrito reflete as recomendações atuais do Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para Atenção Integral às Pessoas com IST do Ministério da Saúde: Penicilina benzatina (sífilis), Azitromicina (clamídia e cancroide), Ceftriaxona (gonorreia) e Metronidazol (tricomoníase), todos em dose única para garantir a adesão e eficácia imediata.\n\nAlternativa e: Esta é a alternativa INCORRETA e, portanto, o gabarito. O metronidazol não é contraindicado para gestantes no contexto da profilaxia de violência sexual. Segundo os protocolos do Ministério da Saúde, o metronidazol pode ser utilizado em qualquer período da gestação em dose única de 2 g para a profilaxia da tricomoníase. A clindamicina não é a droga de escolha para substituição sistemática nesse protocolo de profilaxia pós-violência. Além disso, a clindamicina não apresenta a mesma eficácia que o metronidazol para o tratamento da tricomoníase.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  },
+  {
+    "id": "AJUDA_456cd716-8ba7-4fba-aca6-c1abeda246d5",
+    "originalId": "456cd716-8ba7-4fba-aca6-c1abeda246d5",
+    "statement": "As Infecções em Sítio Cirúrgico (ISC) são as maiores fontes de morbidade e mortalidade entre os pacientes submetidos a cirurgias. \n\nOs agentes mais frequentes de ISC são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enterococcus, Klebsiella e Proteus mirabilis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Candida, principalmente albicans e tropicalis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Staphylococcus aureus, Staphylococcus epidermidis e outros Staphylococcus coagulase negativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Escherichia coli e Pseudomonas aeruginosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Clostridium perfringens, Clostridium septicum, Clostridium histolyticum ou Clostridium novyi.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a microbiologia das Infecções em Sítio Cirúrgico (ISC). O conhecimento fundamental aqui é que a maioria das ISCs é causada pela flora endógena do próprio paciente, sendo a pele a principal fonte de contaminação no momento da incisão.\n\nAlternativa (a) Incorreta: Embora esses patógenos (Enterococcus e bacilos Gram-negativos como Klebsiella e Proteus) possam causar infecções, especialmente em cirurgias do trato gastrointestinal ou geniturinário, eles não são os agentes mais frequentes de forma global quando consideramos todos os tipos de procedimentos cirúrgicos.\n\nAlternativa (b) Incorreta: Fungos do gênero Candida são causas raras de infecção de sítio cirúrgico primária. Geralmente aparecem como agentes secundários em pacientes criticamente enfermos, imunossuprimidos ou que fizeram uso prolongado de antibióticos de amplo espectro.\n\nAlternativa (c) Correta: Os estafilococos são os principais agentes isolados em infecções de sítio cirúrgico em virtude de sua presença colonizadora na pele humana. O Staphylococcus aureus é, isoladamente, o patógeno mais comum em quase todas as séries históricas. Os estafilococos coagulase-negativos, como o Staphylococcus epidermidis, também apresentam alta frequência, especialmente em cirurgias que utilizam materiais protéticos (próteses ortopédicas, válvulas cardíacas, telas), devido à sua capacidade de adesão e formação de biofilme.\n\nAlternativa (d) Incorreta: A Escherichia coli e a Pseudomonas aeruginosa são agentes Gram-negativos importantes em infecções hospitalares. A E. coli é comum em cirurgias abdominais, mas, no cômputo geral das cirurgias (incluindo limpas, ortopédicas e cardíacas), elas não superam a incidência dos estafilococos.\n\nAlternativa (e) Incorreta: As espécies de Clostridium citadas são microrganismos anaeróbios responsáveis por quadros específicos e graves, como a gangrena gasosa (mionecrose clostridiana). Apesar da alta mortalidade associada, são causas raras de infecção de sítio cirúrgico na rotina hospitalar.\n\nGabarito: Letra (c).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  },
+  {
+    "id": "AJUDA_456e4553-8183-4de1-87fb-798ed2ed238a",
+    "originalId": "456e4553-8183-4de1-87fb-798ed2ed238a",
+    "statement": "Menina de 10 anos apresenta inapetência, palidez, sonolência, baixo rendimento escolar há 6 meses, diminuição da diurese há 5 dias. AP: infecções urinárias febris dos 4 aos 8 meses de idade; POT: correção de refluxo vesico-ureteral com 1 ano. Exame físico: peso e estatura no percentil 25, PA: 112 x 80 mmHg (PAS entre percentil 90 e 95 e PAD entre percentil 95 e 95+12 mmHg), REG, descorada +2/+4, sem edemas, sopro cardíaco +1/+6. Exames laboratoriais: GV: 2,34 x 10^6/mm^3, Hb: 7,5 g/dL, Ht: 24%, plaquetas: 136000/mm^3, Cr: 1,5 mg/dL, Ur: 50 mg/dL, urina: densidade de 1001, pH: 6,5, nitrito e leucoesterase negativos, proteína +2, leucócitos: 10/campo, hemácias: 8/campo. US de rins e vias urinárias: tamanhos diminuídos, não apresenta diferenciação córtico-medular. O diagnóstico e a causa básica são, correta e respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "injúria aguda do rim; glomerulonefrite rapidamente progressiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "injúria aguda do rim; síndrome hemolítica urêmica atípica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença renal crônica; hipertensão arterial sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "doença renal crônica; anomalias congênitas do trato urinário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A análise do caso clínico revela uma paciente de 10 anos com sinais claros de cronicidade. A queixa de inapetência, palidez e baixo rendimento escolar há 6 meses, associada a uma anemia importante (Hb: 7,5 g/dL) e déficit de crescimento (percentil 25 para a idade), aponta para um processo de longa data. O ponto crucial para o diagnóstico diferencial entre injúria aguda e doença crônica é o exame de imagem: o ultrassom mostra rins de tamanhos diminuídos e sem diferenciação córtico-medular, achados clássicos de Doença Renal Crônica (DRC). Além disso, a densidade urinária de 1001 indica perda da capacidade de concentração urinária, comum em doenças tubulointersticiais crônicas.\n\nAbaixo, a análise de cada alternativa:\n\na) Incorreta. A injúria renal aguda se manifestaria com rins de tamanho normal ou aumentados ao ultrassom e uma história clínica súbita. A glomerulonefrite rapidamente progressiva (GNRP) é uma síndrome nefrítica grave com perda rápida de função renal (dias ou semanas), geralmente apresentando hematúria dismórfica e proteinúria maciça, o que não condiz com a evolução de 6 meses e os achados estruturais crônicos nos rins.\n\nb) Incorreta. A síndrome hemolítica urêmica (SHU), seja típica ou atípica, é uma causa de injúria renal aguda. Caracteriza-se por anemia hemolítica microangiopática (presença de esquizócitos), trombocitopenia e insuficiência renal aguda. Embora a paciente tenha anemia e plaquetas no limite inferior, a imagem renal de rins reduzidos e a história pregressa de refluxo confirmam a natureza crônica da doença.\n\nc) Incorreta. Embora a paciente apresente Hipertensão Arterial Sistêmica (HAS), na faixa etária pediátrica, a hipertensão costuma ser secundária a uma doença de base. No caso em questão, a HAS é uma consequência da Doença Renal Crônica, e não a causa primária. A história de infecções urinárias e correção de refluxo direciona para uma etiologia malformativa.\n\nd) Correta. O diagnóstico é de Doença Renal Crônica (DRC) baseado nos sintomas constitucionais prolongados, anemia normocítica e normocrômica (por deficiência de eritropoietina) e, fundamentalmente, pelos rins diminuídos com perda de diferenciação no ultrassom. A causa básica são as anomalias congênitas do trato urinário (CAKUT), especificamente a nefropatia do refluxo. A paciente tem história de refluxo vésico-ureteral e infecções urinárias febris na primeira infância, que causaram cicatrizes renais e progressão para falência renal crônica. Esta é a principal causa de DRC na população pediátrica.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)",
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  },
+  {
+    "id": "AJUDA_45719e7f-2191-47db-8734-608f867a8263",
+    "originalId": "45719e7f-2191-47db-8734-608f867a8263",
+    "statement": "A Ultrassonografia na gestação é um exame de baixo risco materno-fetal e pode esclarecer hipóteses diagnósticas, rastrear mal formações e esclarecer situações de risco especial. Com relação ao uso deste exame, aponte a alternativa CORRETA dentre as citadas a seguir.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Durante a avaliação ultrassonográfica no primeiro trimestre, o bem-estar fetal deve ser observado pela presença de movimentos corporais e respiratórios, tônus e líquido amniótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os parâmetros que podem ser examinados para o rastreamento de anomalias cromossômicas no segundo trimestre incluem: medida da translucência nucal e avaliação do osso nasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Existem evidências de que a avaliação do colo uterino é útil na predição de parto prematuro. A avaliação do comprimento do colo uterino pode ser realizada pelas vias transabdominal e transvaginal. A avaliação pela via transabdominal apresenta maior acurácia e melhor reprodutibilidade do que a transvaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O melhor parâmetro ultrassonográfico de análise da datação da gestação é a medida do comprimento cabeça-nádegas no segundo trimestre de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A ultrassonografia obstétrica de rotina do terceiro trimestre pode ser realizada após 34 semanas de gestação. Nessa fase, é possível estimar e projetar o peso ao nascimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a) Incorreta. Os parâmetros citados (movimentos corporais, respiratórios, tônus e líquido amniótico) fazem parte do Perfil Biofísico Fetal (PBF). O PBF é uma ferramenta utilizada para avaliação da vitalidade fetal, especialmente em gestações de alto risco, para identificar hipóxia fetal aguda ou crônica. Ele é realizado tipicamente no terceiro trimestre, e não como parte da avaliação de rotina do primeiro trimestre, na qual o foco é a viabilidade e a datação.\n\nAlternativa b) Incorreta. O rastreamento de anomalias cromossômicas utilizando a translucência nucal e o osso nasal deve ser realizado obrigatoriamente no primeiro trimestre, idealmente entre 11 semanas e 13 semanas e 6 dias (comprimento cabeça-nádegas entre 45 mm e 84 mm). No segundo trimestre, o rastreamento de malformações é feito por meio do ultrassom morfológico do segundo trimestre (entre 20 e 24 semanas).\n\nAlternativa c) Incorreta. A via padrão-ouro para a avaliação do comprimento do colo uterino visando à predição de parto prematuro é a transvaginal. A via transabdominal apresenta menor acurácia e menor reprodutibilidade, pois pode ser prejudicada pela posição do feto, pela obesidade materna e pela necessidade de repleção vesical, que pode comprimir o segmento inferior do útero e falsear a medida do colo (fenômeno de \"alongamento artificial\").\n\nAlternativa d) Incorreta. O Comprimento Cabeça-Nádegas (CCN) é o melhor parâmetro para datação da gestação, porém sua acurácia máxima é restrita ao primeiro trimestre. No segundo trimestre, a variabilidade biológica aumenta e a datação passa a ser feita pela média de outros parâmetros biométricos (como diâmetro biparietal, circunferência cefálica e comprimento do fêmur), mas com uma margem de erro significativamente maior que a do CCN precoce.\n\nAlternativa e) Correta. A ultrassonografia de rotina no terceiro trimestre avalia o crescimento fetal, a posição do feto, a localização da placenta e o volume de líquido amniótico. Realizada geralmente entre 32 e 36 semanas, ela permite o cálculo do peso fetal estimado. Com base nesse peso e na curva de crescimento esperada para aquela idade gestacional, é possível projetar o peso ao nascimento, auxiliando na identificação de fetos com restrição de crescimento ou macrossomia.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:33.221Z"
+  }
+]

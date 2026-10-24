@@ -1,0 +1,524 @@
+[
+  {
+    "id": "AJUDA_99f32665-482e-479a-bd05-07231f52fbd0",
+    "originalId": "99f32665-482e-479a-bd05-07231f52fbd0",
+    "statement": "O mecanismo de ação da nitroglicerina como vasodilatador em doenças vasculares, incluindo sua aplicação clínica, é descrito corretamente por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A nitroglicerina é um antagonista dos receptores de angiotensina II, reduzindo a resistência vascular periférica e a pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A nitroglicerina atua como um bloqueador dos canais de cálcio, diminuindo a entrada de cálcio nas células musculares lisas e causando vasodilatação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A nitroglicerina é um inibidor da enzima fosfodiesterase-5 (PDE-5), aumentando os níveis de GMPc e promovendo a vasodilatação nas artérias coronárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A nitroglicerina é um doador de óxido nítrico (NO), que estimula a produção de GMPc nas células musculares lisas, levando à relaxação e vasodilatação dos vasos sanguíneos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A nitroglicerina atua como um bloqueador dos receptores beta-adrenérgicos, reduzindo a frequência cardíaca e promovendo a vasodilatação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A nitroglicerina é um fármaco da classe dos nitratos orgânicos, amplamente utilizado no tratamento da angina pectoris e na insuficiência cardíaca congestiva. Seu mecanismo de ação principal baseia-se na bioativação para a liberação de óxido nítrico (NO).\n\nAnálise das alternativas:\n\na) Incorreta. Os antagonistas dos receptores de angiotensina II (conhecidos como BRAs, como a losartana) atuam bloqueando os receptores AT1 da angiotensina II. A nitroglicerina não possui ação direta sobre o sistema renina-angiotensina-aldosterona.\n\nb) Incorreta. O bloqueio dos canais de cálcio é o mecanismo de ação de outra classe de anti-hipertensivos e antianginosos, como o anlodipino, nifedipino, verapamil e diltiazem. A nitroglicerina não atua bloqueando esses canais diretamente.\n\nc) Incorreta. Os inibidores da enzima fosfodiesterase-5 (PDE-5), como o sildenafil e a tadalafila, atuam impedindo a degradação do GMPc. Embora a nitroglicerina também eleve os níveis de GMPc, ela o faz através do estímulo à sua produção (via óxido nítrico) e não pela inibição da sua degradação. Inclusive, o uso concomitante de nitratos e inibidores da PDE-5 é contraindicado devido ao risco de hipotensão severa por efeito sinérgico no acúmulo de GMPc.\n\nd) Correta. A nitroglicerina atua como uma pró-droga que, após sofrer denitração enzimática (principalmente pela aldeído desidrogenase mitocondrial), libera óxido nítrico (NO). O NO ativa a enzima guanilato ciclase solúvel, que converte o GTP em GMP cíclico (GMPc). O aumento do GMPc intracelular promove a desfosforilação da cadeia leve da miosina e o sequestro de cálcio citosólico, resultando no relaxamento da musculatura lisa vascular. Clinicamente, isso causa vasodilatação venosa (reduzindo a pré-carga) e, em doses maiores, vasodilatação arterial (reduzindo a pós-carga e aumentando o fluxo coronariano).\n\ne) Incorreta. Os bloqueadores dos receptores beta-adrenérgicos (betabloqueadores, como o metoprolol) atuam antagonizando os receptores de catecolaminas. A nitroglicerina não interage com receptores adrenérgicos.\n\nGabarito: Alternativa (d).",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Doença Arterial Coronariana Estável (DAC Estável)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  },
+  {
+    "id": "AJUDA_99f5e1f1-767c-4232-9b4d-8c363c3adec6",
+    "originalId": "99f5e1f1-767c-4232-9b4d-8c363c3adec6",
+    "statement": "Pré-escolar de 3 anos, 14 kg, com miocardiopatia dilatada e em acompanhamento no serviço de cardiologia pediátrica. Durante a internação por descompensação da insuficiência cardíaca, na enfermaria, o paciente apresenta perda súbita de consciência. A enfermeira aciona o código azul. Ao chegar ao leito, o médico observa a monitorização cardíaca com o seguinte ritmo: taquicardia ventricular monomórfica – frequência de 200 bpm, QRS largo. Não é possível palpar pulso central em 10 segundos. Uma via aérea avançada já foi instalada e a equipe de enfermagem iniciou compressões torácicas de alta qualidade. Com base nas diretrizes do suporte avançado de vida, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diante de uma taquicardia ventricular com pulso e perfusão inadequada, a conduta inicial é cardioversão elétrica sincronizada com 0,5–1 J/kg, seguida de amiodarona EV (5 mg/kg) em caso de falha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O ritmo é chocável e a primeira carga deve ser de 2 J/kg com desfibrilador, seguida imediatamente de RCP por 2 minutos antes de reavaliar o ritmo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O tratamento inicial deve ser adenosina (0,1 mg/kg, em bolo IV rápido) para conversão da taquicardia ventricular, associada a cardioversão elétrica sincronizada com 1 J/kg, em caso de falha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A conduta prioritária é administrar amiodarona EV (5 mg/kg) em 20–60 minutos como primeira linha para reversão do ritmo, visto que a taquicardia ventricular é um ritmo de alta gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Por tratar-se de taquicardia ventricular com QRS largo, a droga de escolha é verapamil (0,1 mg/kg EV) para cardioversão química, associada à cardioversão elétrica sincronizada com 0,5 J/kg se mantiver instabilidade hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resumo do raciocínio: o paciente tem taquicardia ventricular (TV) sem pulso, ou seja, parada cardiorrespiratória em ritmo chocável, junto com a fibrilação ventricular (FV). Pelo PALS/AHA, a TV sem pulso é tratada como FV, com desfibrilação (choque não sincronizado) e não com cardioversão sincronizada. A cardioversão sincronizada é reservada à TV com pulso e sinais de choque ou instabilidade.\n\nSequência do algoritmo pediátrico de PCR em ritmo chocável:\n1. Iniciar RCP de alta qualidade e acoplar o monitor/desfibrilador.\n2. Primeiro choque de 2 J/kg (aqui, cerca de 28 J), seguido imediatamente de RCP por 2 minutos, sem checar pulso antes.\n3. Reavaliar o ritmo. Se ainda chocável, dar o segundo choque de 4 J/kg e retomar a RCP. Adrenalina 0,01 mg/kg (0,1 mL/kg da solução 1:10.000) é feita após o segundo choque, repetida a cada 3 a 5 minutos.\n4. Se o ritmo persistir chocável, aplicar choques subsequentes de 4 J/kg ou mais (máximo de 10 J/kg ou a dose de adulto) e dar amiodarona 5 mg/kg em bolo (ou lidocaína 1 mg/kg).\n5. Tratar as causas reversíveis (5 H e 5 T).\n\nAnálise das alternativas:\n\na) Incorreta. Cardioversão sincronizada com 0,5–1 J/kg é a conduta para TV com pulso e perfusão inadequada. Aqui não há pulso, então o tratamento é desfibrilação. Além disso, a amiodarona na PCR é dada em bolo, não como etapa pós-cardioversão de TV com pulso.\n\nb) Correta. Com TV sem pulso, o ritmo é chocável. O primeiro choque é de 2 J/kg, desfibrilação não sincronizada, seguido imediatamente de RCP por 2 minutos antes de reavaliar o ritmo.\n\nc) Incorreta. A adenosina é indicada para taquicardia supraventricular de QRS estreito, e não para TV. Em paciente sem pulso, retardar o choque é um erro grave.\n\nd) Incorreta. A amiodarona é antiarrítmico adjuvante, usado após choques refratários. Na PCR, é feita em bolo; a infusão em 20–60 minutos é usada em TV com pulso, estável. Não é primeira linha, pois o tratamento definitivo inicial é o choque.\n\ne) Incorreta. O verapamil é contraindicado em lactentes e crianças pequenas, pelo risco de hipotensão grave e colapso, e também em taquicardias de QRS largo. Não se usa em TV, e a cardioversão sincronizada não se aplica à TV sem pulso.\n\nPonto-chave: sem pulso, usar desfibrilação (2 J/kg, depois 4 J/kg) e RCP imediata. Com pulso e instável, usar cardioversão sincronizada (0,5–1 J/kg, podendo chegar a 2 J/kg).\n\n**Gabarito: letra b.**",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias",
+      "Parada Cardiorrespiratória (PCR)",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  },
+  {
+    "id": "AJUDA_99fe5995-0cda-45b0-9619-9b98c61cc99b",
+    "originalId": "99fe5995-0cda-45b0-9619-9b98c61cc99b",
+    "statement": "Homem, 32 anos, piloto de avião, procura o pronto socorro com dor leve em hemitórax direito há cerca de 2 horas, de início súbito, sem dispneia ou história de trauma. Na admissão, apresenta pouca dor, sem uso de musculatura acessória ou turgência jugular. Na suspeita de pneumotórax espontâneo, aponte a alternativa correta para este caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O exame padrão-ouro para diagnóstico é a radiografia simples de tórax em duas posições.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A ultrassonografia de tórax com transdutor linear de alta frequência tem valor preditivo negativo de até 100% para pneumotórax.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ao diagnóstico de pneumotórax, o tratamento imediato deve ser a inserção de agulha no segundo espaço costal ipsilateral, linha hemiclavicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A resolução do quadro em até 2 dias descarta necessidade de procedimento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A redução do murmúrio vesicular do lado afetado é essencial para o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO E ALTERNATIVAS:\n\nO caso clínico descreve um homem jovem, com quadro súbito de dor torácica e estabilidade clínica, o que é clássico para pneumotórax espontâneo primário. O fato de ele ser piloto de avião é um detalhe crucial para a conduta definitiva, devido ao risco de recorrência em situações de mudanças de pressão atmosférica.\n\nAlternativa A (Incorreta): Embora a radiografia simples de tórax seja o exame inicial mais comum na prática clínica, o padrão-ouro para o diagnóstico de pneumotórax é a Tomografia Computadorizada (TC) de tórax. A TC é mais sensível, permitindo identificar pequenos volumes de ar e quantificar o tamanho do pneumotórax com maior precisão.\n\nAlternativa B (Correta): A ultrassonografia de tórax (point-of-care) ganhou grande destaque no diagnóstico de pneumotórax. Quando realizada por examinador treinado, utilizando o transdutor linear (indicado para estruturas superficiais como a pleura), a presença do deslizamento pleural (lung sliding) exclui a presença de ar no espaço pleural naquele ponto. Portanto, o valor preditivo negativo (VPN) da ultrassonografia é altíssimo, chegando a 100% em diversos estudos, o que significa que, se houver deslizamento pleural, o diagnóstico de pneumotórax pode ser descartado naquele local.\n\nAlternativa C (Incorreta): A descompressão por agulha é o tratamento de emergência indicado apenas para o pneumotórax hipertensivo, situação em que há instabilidade hemodinâmica, desvio de traqueia e turgência jugular. O paciente em questão está estável, com dor leve e sem desconforto respiratório, tratando-se de um pneumotórax simples. O tratamento inicial seria observação, oxigenioterapia ou drenagem/aspiração, dependendo do tamanho.\n\nAlternativa D (Incorreta): A resolução espontânea do quadro não exclui a necessidade de cirurgia neste caso específico. Por ser piloto de avião, o paciente exerce uma profissão de risco. De acordo com as diretrizes de medicina aeroespacial e de cirurgia torácica, profissionais como pilotos e mergulhadores que apresentam um primeiro episódio de pneumotórax espontâneo têm indicação de tratamento cirúrgico definitivo (pleurodese/grampeamento de blebs) para minimizar o risco de recorrência durante o voo, o que seria catastrófico.\n\nAlternativa E (Incorreta): O exame físico pode ser completamente normal em pneumotórax de pequeno volume. A redução do murmúrio vesicular é um sinal clínico importante, mas não é \"essencial\" ou obrigatória para o diagnóstico, pois sua ausência não descarta a patologia. O diagnóstico depende fundamentalmente de exames de imagem.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  },
+  {
+    "id": "AJUDA_99ffc2fe-8fa5-4988-922a-fd1b5ab6467e",
+    "originalId": "99ffc2fe-8fa5-4988-922a-fd1b5ab6467e",
+    "statement": "Assinale a alternativa que apresenta fatores de risco para o desenvolvimento de câncer do colo do útero.",
+    "options": [
+      {
+        "id": "A",
+        "text": "nuliparidade, iniciação sexual precoce e diabetes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hipertensão, obesidade e diabetes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "multipariedade, elevado nível socioeconômico e antecedente familiar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "multiparidade, iniciação sexual precoce e baixo nível socioeconômico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "tabagismo, uso de drogas ilícitas e sedentarismo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa correta é a letra D.\n\nPara compreender os fatores de risco do câncer do colo do útero, é fundamental lembrar que a principal causa da doença é a infecção persistente por tipos oncogênicos do Papilomavírus Humano (HPV). Assim, a maioria dos fatores de risco está diretamente ligada à maior exposição ao vírus, à vulnerabilidade do epitélio cervical ou a condições que dificultam a eliminação do vírus pelo sistema imune.\n\nAlternativa A: Incorreta. A iniciação sexual precoce é um fator de risco real, pois aumenta o tempo de exposição ao HPV e ocorre em uma fase onde a zona de transformação do colo uterino está mais vulnerável. No entanto, a nuliparidade (não ter filhos) e o diabetes são fatores de risco típicos para o câncer de endométrio, e não para o de colo de útero.\n\nAlternativa B: Incorreta. Hipertensão, obesidade e diabetes compõem o perfil clássico de risco para o câncer de endométrio. Essas condições estão ligadas ao hiperestrogenismo e à síndrome metabólica, não possuindo relação direta com a patogênese do câncer cervical mediado pelo HPV.\n\nAlternativa C: Incorreta. Embora a multiparidade seja um fator de risco, o elevado nível socioeconômico funciona geralmente como um fator protetor, pois permite maior acesso à informação e a exames de rastreio (Papanicolau). Além disso, o antecedente familiar tem um papel muito limitado no câncer de colo de útero, diferentemente do que ocorre nos cânceres de mama ou ovário, já que a causa principal é infecciosa.\n\nAlternativa D: Correta. Esta alternativa reúne três fatores cruciais. A multiparidade (ter tido muitos filhos) está associada a alterações hormonais e imunológicas, além de microtraumas cervicais que facilitam a penetração do HPV. A iniciação sexual precoce aumenta a janela de exposição ao vírus em um colo ainda em fase de metaplasia intensa. O baixo nível socioeconômico é um marcador de risco importante, pois está associado à menor adesão aos programas de rastreamento e dificuldades de acesso ao sistema de saúde.\n\nAlternativa E: Incorreta. O tabagismo é um fator de risco estabelecido e importante, pois as substâncias do cigarro reduzem a imunidade local no colo do útero, favorecendo a persistência do HPV. Contudo, o uso de drogas ilícitas e o sedentarismo, embora prejudiciais à saúde geral, não são considerados fatores de risco específicos ou diretos para o desenvolvimento do câncer de colo uterino.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  },
+  {
+    "id": "AJUDA_9a121775-1f58-42a1-8ef4-878553ef8c6f",
+    "originalId": "9a121775-1f58-42a1-8ef4-878553ef8c6f",
+    "statement": "Mulher de 20 anos de idade, procura ambulatório de Planejamento Familiar para orientação sobre os métodos contraceptivos. Com relação ao Planejamento Familiar é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Planejamento familiar no Brasil ocorreu a partir de discussões e conferencias estaduais e foi oficializada a partir de 1968",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O Planejamento familiar não dá direito ao acesso aos métodos contraceptivos na rede pública e sim apenas orientações para a contracepção",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O desenvolvimento dos métodos contraceptivos e dos programas de planejamento familiar são os principais motivos para a diminuição dos índices de gravidez não planejada no Brasil",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O planejamento familiar consiste em um conjunto de ações criadas para estipular metas para o controle da população do país",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os fundamentos históricos, éticos e legais do planejamento familiar no Brasil. Vamos analisar cada alternativa para compreender a lógica por trás do gabarito:\n\nAlternativa A: Incorreta. O planejamento familiar como política pública de saúde no Brasil não foi oficializado em 1968. Na década de 1960, o país ainda vivia sob uma perspectiva pró-natalista ou sob a influência de entidades privadas (como a BEMFAM). O marco fundamental ocorreu com a criação do PAISM (Programa de Assistência Integral à Saúde da Mulher) em 1983/1984, seguido pela Constituição Federal de 1988 e, finalmente, pela Lei do Planejamento Familiar (Lei nº 9.263) em 1996.\n\nAlternativa B: Incorreta. O planejamento familiar é um direito constitucional e a Lei nº 9.263/96 estabelece que as instâncias do Sistema Único de Saúde (SUS) devem garantir não apenas a orientação e o aconselhamento, mas também a oferta de todos os métodos e técnicas de concepção e contracepção cientificamente aceitos que não coloquem em risco a vida e a saúde das pessoas.\n\nAlternativa C: Correta. A evolução tecnológica dos métodos contraceptivos (como o surgimento de métodos de longa duração – LARCs, pílulas de baixa dosagem e preservativos mais resistentes) e as políticas públicas que ampliam o acesso à informação e aos insumos são os pilares para a redução das taxas de gravidez não planejada. No Brasil, o aumento da prevalência do uso de métodos modernos nas últimas décadas correlaciona-se diretamente com a queda das taxas de fecundidade e de gestações indesejadas.\n\nAlternativa D: Incorreta. Existe uma diferença conceitual fundamental entre planejamento familiar e controle demográfico. O planejamento familiar baseia-se no direito à livre decisão do indivíduo ou do casal para planejar a prole, sendo vedada qualquer forma coercitiva por parte de instituições oficiais. O controle populacional/demográfico, por outro lado, visa atingir metas numéricas estatais, o que é expressamente proibido pela Constituição Federal (Art. 226, § 7º).\n\nPortanto, a alternativa C é a que descreve corretamente o impacto do desenvolvimento científico e das políticas públicas no cenário reprodutivo brasileiro.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  },
+  {
+    "id": "AJUDA_9a135dbd-4a11-480d-9bc0-8c8f31e461d1",
+    "originalId": "9a135dbd-4a11-480d-9bc0-8c8f31e461d1",
+    "statement": "Paciente do sexo masculino, 52 anos, com história de dispepsia crônica há vários anos que evoluiu com discreta piora há 3 meses associada a intolerância a alimentos sólidos, plenitude pós prandial e vômitos. Refere ter perdido cerca de 14kg no período e que após 1 episódio de hematêmese, procurou atendimento médico. Ao exame físico, o paciente se encontra hipocorado ++/4, eupneico, afebril, anictérico e hemodinamicamente estável. Abdome plano, flácido, simétrico e indolor à palpação, sem massas palpáveis ou ascite. Ausência de linfonodos palpáveis em região cervical e axilar. Traz consigo endoscopia que evidencia lesão úlcero-infiltrativa em região do antro gástrico, parcialmente obstruindo o piloro. O exame histopatológico revelou tratar-se de adenocarcinoma do tipo intestinal de Lauren. Sobre o estadiamento deste paciente, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por tratar-se de adenocarcinoma gástrico tipo Borrmann III, podemos afirmar que o estadiamento mínimo deste paciente é T3N2Mx.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A laparoscopia pode ser indicada no estadiamento deste paciente no intuito de realizar análise citológica peritoneal assim como coleta de ascite para estudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ultrassonografia endoscópica é atualmente o melhor método de avaliação do grau de infiltração tumoral na parede do estômago (T) e acometimento linfonodal adjacente (N).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apesar da tomografia computadorizada de abdome estar indicada para o estadiamento, sua acurácia para evidenciar linfonodos acometidos e pequenas metástases peritoneais não é adequada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta um caso clínico de câncer gástrico avançado em um paciente de 52 anos. Os sinais de alarme (perda ponderal, vômitos por obstrução pilórica e hematêmese) associados ao achado endoscópico de lesão úlcero-infiltrativa e histopatológico de adenocarcinoma tipo intestinal de Lauren direcionam para a necessidade de um estadiamento rigoroso.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta/Gabarito): Esta alternativa está errada por dois motivos principais. Primeiro, a classificação de Borrmann é uma descrição macroscópica (feita pela endoscopia) e não define, por si só, o estadiamento TNM (Tumor, Linfonodo, Metástase). Embora uma lesão Borrmann III (ulcerada e infiltrativa) sugira um tumor avançado (que ultrapassa a submucosa), não se pode afirmar categoricamente que o estadiamento mínimo é T3N2Mx apenas pela aparência visual. O envolvimento linfonodal (N) e a profundidade exata da invasão na parede gástrica (T) só podem ser determinados com precisão por exames de imagem específicos ou pela análise patológica da peça cirúrgica. Não existe uma correlação direta obrigatória entre Borrmann III e o estágio N2.\n\nAlternativa B (Correta): A laparoscopia de estadiamento é uma ferramenta fundamental em casos de câncer gástrico que parecem ser ressecáveis nos exames de imagem iniciais, mas que apresentam sinais de doença avançada (como tumores T3 ou T4). Ela é indicada para detectar metástases peritoneais que a tomografia não consegue visualizar (carcinomatose oculta). Durante o procedimento, realiza-se o lavado peritoneal para análise citológica; a presença de células neoplásicas no lavado é considerada doença metastática (M1), o que muda completamente a conduta terapêutica.\n\nAlternativa C (Correta): A ecoendoscopia (ultrassonografia endoscópica) é, de fato, o padrão-ouro para o estadiamento local do câncer gástrico. Ela possui alta acurácia para definir a profundidade da invasão do tumor nas camadas da parede do estômago (estadiamento T) e para avaliar linfonodos suspeitos imediatamente adjacentes ao órgão (estadiamento N), superando a tomografia computadorizada nesses quesitos específicos.\n\nAlternativa D (Correta): A tomografia computadorizada (TC) de abdome e pelve com contraste é o primeiro exame a ser solicitado para o estadiamento sistêmico. No entanto, ela possui limitações conhecidas: tem baixa sensibilidade para detectar implantes peritoneais pequenos (menores que 0,5 cm) e apresenta dificuldade em diferenciar linfonodos apenas aumentados de tamanho (reacionais) de linfonodos efetivamente acometidos por metástases. Por isso, a TC é frequentemente complementada pela laparoscopia e, em alguns casos, pela ecoendoscopia.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  },
+  {
+    "id": "AJUDA_9a144f24-87ad-4176-ac66-8cce37cfc4e2",
+    "originalId": "9a144f24-87ad-4176-ac66-8cce37cfc4e2",
+    "statement": "Um homem de 65 anos, com histórico de hipertensão e diabetes, foi diagnosticado com insuficiência cardíaca há 2 anos. Ele tem dispneia aos esforços moderados e edemas de membros inferiores. Nega tosse. No exame físico, apresenta pressão arterial de 130/80 mmHg, frequência cardíaca de 75 bpm, estertores pulmonares bibasais e edema de 2+/4+ em membros inferiores. Sua fração de ejeção ventricular esquerda é de 35%, confirmada em ecocardiograma recente. Atualmente, faz uso de furosemida e enalapril. Assinale a alternativa que representa a melhor abordagem terapêutica para otimizar o tratamento desse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a dose de furosemida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Associar digoxina ao esquema em uso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Associar bisoprolol e espironolactona ao esquema em uso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Associar a dapagliflozina se estiver com hiperglicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Suspender o enalapril e trocar por um bloqueador do receptor de angiotensina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro clínico e ecocardiográfico compatível com Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr), definida por uma fração de ejeção do ventrículo esquerdo (FEVE) menor ou igual a 40%. Atualmente, o paciente está subtratado, utilizando apenas um inibidor da enzima conversora de angiotensina (enalapril) e um diurético (furosemida). As diretrizes atuais de cardiologia preconizam o uso do quarteto terapêutico para reduzir a mortalidade e hospitalizações: betabloqueador, inibidor do sistema renina-angiotensina, antagonista do receptor mineralocorticoide e inibidor do SGLT2.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A furosemida é um diurético de alça focado no alívio de sintomas congestivos (edema e estertores). Embora o paciente apresente sinais de congestão, o aumento isolado da dose não melhora o prognóstico a longo prazo nem reduz a mortalidade. A prioridade é a introdução de medicamentos que alterem a história natural da doença.\n\nAlternativa b) Incorreta. A digoxina pode ser utilizada para controle de sintomas em pacientes que permanecem sintomáticos apesar do tratamento otimizado ou para controle de frequência na fibrilação atrial. Ela não reduz a mortalidade na insuficiência cardíaca e não é a escolha prioritária para otimização neste estágio.\n\nAlternativa c) Correta. O bisoprolol (betabloqueador) e a espironolactona (antagonista mineralocorticoide) são pilares fundamentais no tratamento da ICFEr. Ambas as classes possuem recomendação Classe I por reduzirem comprovadamente a mortalidade e o remodelamento cardíaco. Como o paciente já utiliza um inibidor da ECA, a adição dessas drogas é o passo mais adequado para otimizar o tratamento.\n\nAlternativa d) Incorreta. Embora os inibidores do SGLT2 (como a dapagliflozina) sejam indicados para pacientes com ICFEr, a alternativa está errada ao condicionar o uso à presença de hiperglicemia. O benefício desta classe na insuficiência cardíaca independe do controle glicêmico ou de o paciente ser diabético.\n\nAlternativa e) Incorreta. A troca de enalapril (iECA) por um bloqueador do receptor de angiotensina (BRA) é indicada apenas em casos de intolerância aos iECA, geralmente devido à tosse persistente. O enunciado afirma explicitamente que o paciente nega tosse, portanto, a troca não traria benefício adicional neste contexto.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  },
+  {
+    "id": "AJUDA_9a196539-1a3f-414c-9bbc-ec05314a6c9d",
+    "originalId": "9a196539-1a3f-414c-9bbc-ec05314a6c9d",
+    "statement": "As síndromes hipertensivas são a intercorrência clínica mais comum da gestação e representam a principal causa de morbimortalidade materna no mundo. Sobre esta patologia, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Pré-eclâmpsia é a identificação de hipertensão arterial, em gestante previamente normotensa, a partir da 20ª semana de gestação, nem sempre associada à proteinúria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A Pré-eclâmpsia com sinais de gravidade é caracterizada pela presença da síndrome HELLP, sinais de iminência de eclâmpsia, eclâmpsia, edema agudo de pulmão, dor torácica e pressão arterial (PA) sistólica ≤ 140 mmHg e/ou PA diastólica ≤ 90 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O aumento das enzimas hepáticas é a principal e mais precoce modificação laboratorial encontrada na síndrome HELLP, antecedendo a hemólise e a trombocitopenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É indicada a interrupção imediata da gestação através do parto operatório, logo após uma crise convulsiva tônico-clônica generalizada (eclâmpsia) para evitar um estado prolongado de hipoxemia e acidose para o feto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O sulfato de magnésio é o hipotensor de escolha a ser administrado quando há risco de convulsão, situação inerente aos quadros de PE com sinais de deterioração clínica e/ou laboratorial, iminência de eclâmpsia, eclâmpsia, síndrome HELLP e hipertensão de difícil controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a) CORRETA. De acordo com os consensos mais recentes, como os da FEBRASGO e do ACOG, a pré-eclâmpsia (PE) é definida como a hipertensão arterial (pressão arterial sistólica maior ou igual a 140 mmHg e/ou diastólica maior ou igual a 90 mmHg) identificada após a 20ª semana de gestação em mulheres previamente normotensas. Embora a proteinúria seja o achado clássico, o diagnóstico de PE pode ser firmado mesmo na ausência dela, desde que a hipertensão venha acompanhada de sinais de disfunção de órgãos-alvo (como insuficiência renal, alteração hepática, complicações neurológicas ou hematológicas) ou disfunção placentária (como a restrição de crescimento fetal).\n\nAlternativa b) INCORRETA. A alternativa comete um erro técnico ao descrever os valores de pressão arterial. A pré-eclâmpsia com sinais de gravidade é caracterizada por níveis pressóricos elevados (geralmente pressão arterial sistólica maior ou igual a 160 mmHg ou diastólica maior ou igual a 110 mmHg) ou pela presença de lesão de órgão-alvo, como a síndrome HELLP, edema agudo de pulmão e iminência de eclâmpsia. Dizer que a PA sistólica é menor ou igual a 140 mmHg e a diastólica menor ou igual a 90 mmHg descreve uma paciente normotensa ou com hipertensão leve, o que contradiz a classificação de gravidade proposta.\n\nAlternativa c) INCORRETA. Na síndrome HELLP (caracterizada por Hemólise, Enzimas hepáticas elevadas e Baixas plaquetas), não existe uma ordem cronológica obrigatória para o surgimento das alterações laboratoriais. A trombocitopenia e a hemólise (identificada pelo aumento de DHL, presença de esquizócitos e queda da haptoglobina) costumam ser marcadores precoces e fundamentais. Afirmar que o aumento das enzimas hepáticas é obrigatoriamente a modificação mais precoce é clinicamente incorreto.\n\nAlternativa d) INCORRETA. A ocorrência de uma crise convulsiva (eclâmpsia) exige estabilização materna imediata antes de qualquer decisão sobre a via de parto. As prioridades são: manutenção de vias aéreas, oxigenação, controle das convulsões com sulfato de magnésio e controle da hipertensão. O parto imediato durante ou logo após a crise, sem estabilização prévia, aumenta significativamente a morbimortalidade tanto materna quanto fetal. O feto frequentemente apresenta bradicardia transitória durante a crise, que tende a se recuperar após a estabilização da mãe.\n\nAlternativa e) INCORRETA. O erro aqui é a definição farmacológica do sulfato de magnésio. Ele é a droga de escolha para a profilaxia e o tratamento das convulsões na pré-eclâmpsia e eclâmpsia, agindo como anticonvulsivante. Contudo, ele não é um hipotensor. Embora possa causar uma vasodilatação leve e transitória, ele não deve ser utilizado com o objetivo de reduzir a pressão arterial. Para o controle da hipertensão, utilizam-se anti-hipertensivos como a hidralazina, o nifedipino ou o labetalol.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  },
+  {
+    "id": "AJUDA_9a2c9016-6908-44d3-a7ad-a0413beddc8b",
+    "originalId": "9a2c9016-6908-44d3-a7ad-a0413beddc8b",
+    "statement": "Dentre as alternativas a seguir, aquela que contém o sinal de certeza de gestação é",
+    "options": [
+      {
+        "id": "A",
+        "text": "Piskasek.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nobile-Budin.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Puzzos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Osiander.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Jacquemier-Kluge.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a questão, é fundamental revisar a classificação diagnóstica da gestação, que se divide em três grupos de sinais: presunção, probabilidade e certeza.\n\nSinais de presunção: São sintomas sistêmicos ou alterações em órgãos distantes do útero, como náuseas, amenorreia e mastalgia.\nSinais de probabilidade: São alterações anatômicas e fisiológicas do útero, vagina e vulva.\nSinais de certeza: São aqueles que confirmam a presença do feto. Atualmente, os sinais de certeza clássicos são: percepção de movimentos fetais pelo examinador (após 18-20 semanas), ausculta dos batimentos cardiofetais (Sonar ou Pinard) e o sinal do rechaço fetal.\n\nAnálise das alternativas:\n\na) Piskacek: Incorreta. É um sinal de probabilidade. Caracteriza-se por uma assimetria uterina à palpação, decorrente do crescimento do útero no local onde ocorreu a implantação do ovo (nidação).\n\nb) Nobile-Budin: Incorreta. É um sinal de probabilidade. Ocorre quando, ao toque vaginal, o examinador percebe o preenchimento dos fundos de saco vaginais pelo corpo uterino, que se torna globoso na gestação inicial.\n\nc) Puzos: Correta. Também conhecido como sinal do rechaço fetal intra-abdominal. É um sinal de certeza. Durante o toque vaginal bimanual, o examinador empurra o útero (ou o feto) e sente o retorno do corpo fetal batendo contra seus dedos após o deslocamento no líquido amniótico. Geralmente é perceptível da 14ª à 16ª semana.\n\nd) Osiander: Incorreta. É um sinal de probabilidade. Consiste na percepção da pulsação das artérias vaginais nos fundos de saco laterais ao toque vaginal, devido ao aumento da vascularização pélvica.\n\ne) Jacquemier-Kluge: Incorreta. É um sinal de probabilidade. O sinal de Jacquemier refere-se à coloração azulada/violácea da vulva, vestíbulo e mucosa vaginal. O sinal de Kluge refere-se à mesma coloração azulada observada no colo do útero. Ambas as alterações ocorrem por conta da congestão venosa local.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  },
+  {
+    "id": "AJUDA_9a3558c7-be96-4add-9963-ca860714f42a",
+    "originalId": "9a3558c7-be96-4add-9963-ca860714f42a",
+    "statement": "Paciente em ventilação mecânica apresenta hipoxemia refratária (PaO₂/FiO₂ < 100) apesar de PEEP elevada. A estratégia com maior impacto em mortalidade é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento do volume corrente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manobra de recrutamento alveolar repetida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ventilação em posição prona",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Óxido nítrico inalatório",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Inalação de salbutamol de horário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo da Síndrome do Desconforto Respiratório Agudo (SDRA) em sua forma grave, definida por uma relação PaO2/FiO2 inferior a 100. O objetivo é identificar a intervenção que efetivamente reduz a mortalidade nesse cenário clínico.\n\nAlternativa a: Incorreta. Na SDRA, a estratégia correta é a ventilação protetora, que utiliza volumes correntes baixos, em torno de 6 mL/kg de peso predito. Aumentar o volume corrente provoca volutrauma e barotrauma, o que, comprovadamente, aumenta a mortalidade dos pacientes ao causar maior lesão pulmonar.\n\nAlternativa b: Incorreta. Embora as manobras de recrutamento alveolar possam melhorar a oxigenação temporariamente, o uso de manobras agressivas e repetidas foi associado a um aumento na mortalidade em grandes ensaios clínicos, como o estudo ART. Tais manobras podem causar instabilidade hemodinâmica grave e barotrauma.\n\nAlternativa c: Correta. A ventilação em posição prona é a intervenção que demonstrou redução robusta de mortalidade em pacientes com SDRA grave (relação PaO2/FiO2 menor que 150). O principal estudo que sustenta essa conduta é o PROSEVA, que mostrou benefício na sobrevida quando a prona é mantida por períodos prolongados, geralmente acima de 16 horas por dia. A posição melhora a relação ventilação-perfusão e reduz a lesão induzida pelo ventilador ao distribuir as pressões de forma mais homogênea pelo parênquima pulmonar.\n\nAlternativa d: Incorreta. O óxido nítrico inalatório é um vasodilatador pulmonar seletivo utilizado como terapia de resgate para melhorar a oxigenação em casos desesperadores. No entanto, metanálises demonstram que ele não reduz a mortalidade e pode estar associado a um risco aumentado de insuficiência renal aguda.\n\nAlternativa e: Incorreta. O uso de broncodilatadores como o salbutamol não tem papel no tratamento da SDRA e não impacta a mortalidade. Estudos clínicos demonstraram que o uso de agonistas beta-2 em pacientes com lesão pulmonar aguda pode ser ineficaz ou até prejudicial.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Síndrome do Desconforto Respiratório Agudo",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:51.391Z"
+  }
+]

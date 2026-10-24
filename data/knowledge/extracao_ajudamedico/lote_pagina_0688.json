@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_c046e954-1f02-4292-85cf-03748e3d65c1",
+    "originalId": "c046e954-1f02-4292-85cf-03748e3d65c1",
+    "statement": "Lactente de 1 ano e 2 meses, previamente hígido, é levado ao pronto-socorro por crise convulsiva. A mãe relata que a criança apresentou febre (temperatura axilar de 38,8 ºC) medida após a crise. A convulsão foi tônico-clônica generalizada, com duração aproximada de 3 minutos, e cessou espontaneamente. Ao chegar ao PS, a criança está sonolenta, porém reativa, sem sinais focais ao exame neurológico. A mãe nega crises anteriores e nega antecedentes de epilepsia. A criança não apresenta sinais de irritação meníngea. Assinale a alternativa que melhor descreve a classificação e a conduta inicial mais adequada para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de crise convulsiva febril atípica (complexa), pois a criança tem menos de 18 meses e a febre foi identificada apenas após a crise. Deve-se realizar punção lombar para excluir meningite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de crise convulsiva febril típica (simples), com boa evolução. Deve-se investigar e tratar o foco infeccioso, orientar a família sobre a natureza benigna do quadro e o manejo de novas crises, além de prescrever antitérmicos; nenhum exame é necessário para a investigação de epilepsia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de epilepsia desencadeada por febre, pois a crise foi generalizada e a febre não foi identificada antes do início da convulsão. Está indicado iniciar anticonvulsivante profilático (fenobarbital ou valproato) para evitar recorrência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de crise convulsiva febril atípica (complexa) por ser uma crise generalizada em criança acima de 12 meses. Deve-se realizar tomografia de crânio de urgência para descartar lesão estrutural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de crise convulsiva febril típica (simples), mas está indicada punção lombar obrigatória em crianças com menos de 24 meses e primeira crise febril, mesmo sem sinais meníngeos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resumo do caso: lactente de 14 meses, previamente hígido, com crise tônico-clônica generalizada de 3 minutos, que cessou espontaneamente, com febre de 38,8 ºC, sem sinais focais e sem sinais meníngeos. Esse quadro é uma crise febril típica (simples).\n\nConceitos essenciais:\n- Crise febril ocorre entre 6 meses e 5 anos, associada a febre sem infecção do SNC, em criança sem crise afebril prévia.\n- Crise febril simples: generalizada, com duração menor que 15 minutos, sem recorrência em 24 horas e sem déficit focal pós-ictal.\n- Crise febril complexa: focal, duração maior que 15 minutos, recorrência em 24 horas ou déficit neurológico pós-ictal prolongado.\n- A idade menor que 18 meses não define crise complexa. Ela é fator de risco para recorrência e aumenta a atenção para meningite, mas não muda a classificação.\n- A febre costuma ser percebida após a crise, pois a crise pode ser a primeira manifestação da febre. Isso não altera a classificação.\n- Na crise febril simples, não se indicam exames de neuroimagem nem EEG para investigação de epilepsia, nem profilaxia anticonvulsivante contínua.\n- A conduta consiste em identificar e tratar o foco infeccioso, tranquilizar e orientar a família (natureza benigna, risco de recorrência de cerca de 30%, baixo risco de epilepsia) e ensinar o manejo de novas crises (decúbito lateral, não colocar nada na boca, procurar o serviço se a crise durar mais de 5 minutos). Os antitérmicos são usados para conforto, mas não previnem recorrência.\n\nAnálise das alternativas:\n\na) Incorreta. Ter menos de 18 meses e febre percebida após a crise não tornam a crise complexa. A punção lombar não é obrigatória aqui, pois não há sinais meníngeos, a criança está reativa e o quadro é típico. Ela é considerada em crianças com sinais meníngeos, estado geral comprometido, crise complexa ou vacinação incompleta contra Hib e pneumococo, e em quem usou antibiótico previamente.\n\nb) Correta. Classifica corretamente como crise febril simples e descreve a conduta adequada: tratar o foco, orientar a família, usar antitérmicos para conforto e não investigar epilepsia com exames.\n\nc) Incorreta. Não é epilepsia. A crise ocorreu com febre, e o momento em que a febre foi detectada é irrelevante. Profilaxia com fenobarbital ou valproato não é indicada, pois os riscos superam os benefícios e não há redução do risco de epilepsia.\n\nd) Incorreta. Crise generalizada em maior de 12 meses não é critério de crise complexa. A tomografia de urgência não é indicada em crise febril simples.\n\ne) Incorreta. A classificação está certa, mas não existe punção lombar obrigatória em menores de 24 meses sem sinais meníngeos. A indicação é individualizada, com base na clínica e na situação vacinal.\n\nResposta: letra b.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:12.517Z"
+  },
+  {
+    "id": "AJUDA_c0474eb1-6dd2-410c-a01f-aab84fbfe05f",
+    "originalId": "c0474eb1-6dd2-410c-a01f-aab84fbfe05f",
+    "statement": "Pode-se afirmar, ao analisar o partograma a seguir, que ele indica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "fase ativa prolongada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "parada secundária de dilatação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "parada secundária de descida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "período pélvico prolongado",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para analisar o partograma e identificar o distúrbio funcional do trabalho de parto, devemos observar as curvas de dilatação cervical (representada pelos triângulos) e de descida da apresentação fetal (representada pelos círculos).\n\nAnálise do gráfico:\nAo observar os registros entre as 6h e as 10h, nota-se que a dilatação cervical permanece estagnada em 5 cm. Mais adiante, entre as 12h e as 16h, a dilatação volta a estacionar, desta vez em 6 cm. Pelos critérios diagnósticos clássicos, a manutenção do mesmo grau de dilatação em dois toques sucessivos com intervalo de 2 horas ou mais, após o início da fase ativa, caracteriza o quadro apresentado.\n\nAnálise das alternativas:\n\na) Incorreta. A fase ativa prolongada ocorre quando a dilatação progride de forma muito lenta, em uma velocidade inferior a 1 cm por hora, mas sem interromper totalmente a evolução. No gráfico, a linha da dilatação não é apenas lenta, ela se torna horizontal, indicando interrupção.\n\nb) Correta. A parada secundária de dilatação é definida pela cessação da progressão da dilatação cervical por 2 horas ou mais durante a fase ativa do trabalho de parto. O partograma mostra claramente que a dilatação parou em 5 cm por quatro horas (das 6h às 10h) e depois em 6 cm por mais quatro horas (das 12h às 16h).\n\nc) Incorreta. A parada secundária de descida ocorre durante o segundo estágio do trabalho de parto (fase de expulsão), quando a dilatação já está completa (10 cm) e a descida do polo cefálico cessa por 1 hora ou mais. No gráfico, a paciente ainda está na fase de dilatação.\n\nd) Incorreta. O período pélvico prolongado (também chamado de descida protraída) caracteriza-se pela descida excessivamente lenta da apresentação fetal durante o segundo estágio do parto. Como a dilatação ainda não atingiu 10 cm, não podemos classificar o distúrbio como sendo do período pélvico.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c3c270e36321e64ead936ae0c3750c74bff0553b07afb1f3403e77b4f62f2ec7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c0474eb1-6dd2-410c-a01f-aab84fbfe05f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:13.068Z"
+  },
+  {
+    "id": "AJUDA_c048fae9-d20b-4197-8ffa-77329262d827",
+    "originalId": "c048fae9-d20b-4197-8ffa-77329262d827",
+    "statement": "Paciente de 67 anos, hipertenso e com história de colectomia prévia, chega à emergência com dor abdominal difusa, vômitos biliosos, distensão e parada de flatos há 24h. Ao exame, abdome distendido, timpanismo difuso e ruídos metálicos, sem sinais de peritonite. Lactato 3,1 mmol/L e leucócitos 15.800/mm³. TC com contraste mostra distensão de delgado com ponto de transição e ingurgitamento mesentérico, sem pneumoperitônio. Após 6 horas de hidratação, analgesia e sonda nasogástrica, permanece taquicárdico, oligúrico e com dor intensa. Qual a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter tratamento conservador por até 72 horas, já que a ausência de peritonite permite conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar radiografia seriada e aguardar redução do lactato antes de decidir sobre intervenção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar tomografia com contraste oral e retomar conduta conservadora caso o contraste progrida pelo intestino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar antibiótico e manter observação clínica por mais 24h, pois lactato até 3,5 mmol/L não indica gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro clínico clássico de obstrução intestinal mecânica (provavelmente por bridas, dado o histórico de colectomia). Embora o tratamento inicial para obstrução por bridas possa ser conservador, este caso apresenta diversos sinais de alerta que indicam gravidade e sofrimento de alça (estrangulamento).\n\nOs pontos-chave para a decisão terapêutica são:\n1. Sinais laboratoriais de gravidade: Leucocitose (15.800/mm³) e lactato elevado (3,1 mmol/L).\n2. Achados de imagem: A tomografia mostra ingurgitamento mesentérico, que sugere sofrimento vascular.\n3. Falha do tratamento conservador: Após 6 horas de medidas iniciais (hidratação, analgesia e sonda nasogástrica), o paciente não melhorou. Pelo contrário, apresenta sinais de má perfusão e instabilidade, como dor intensa persistente, taquicardia e oligúria (baixa produção de urina).\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA?\n\nA laparotomia exploradora é a conduta imediata e correta. A presença de sinais de sofrimento de alça (isquemia/estrangulamento) ou a falha do tratamento conservador em um curto período (geralmente avaliado entre 6 a 24 horas, ou imediatamente se houver piora) são indicações absolutas de cirurgia. A taquicardia e a oligúria indicam que o paciente está entrando em um quadro de choque ou resposta inflamatória sistêmica grave.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: O limite de 48 a 72 horas para o tratamento conservador só é seguro em pacientes que permanecem estáveis, sem dor intensa e sem sinais de sofrimento de alça. Manter a conduta expectante em um paciente que deteriora clinicamente aumenta drasticamente o risco de necrose intestinal e óbito.\n\nAlternativa B: A radiografia é um exame menos sensível que a tomografia já realizada. Além disso, o lactato é um marcador de hipoperfusão; esperar que ele reduza sem tratar a causa da obstrução e da isquemia é tecnicamente incorreto e perigoso.\n\nAlternativa D: O uso de contraste oral (como o Gastrografin) serve para prever se a obstrução vai se resolver espontaneamente em casos estáveis. Ele é contraindicado quando há sinais evidentes de estrangulamento ou necessidade de cirurgia imediata, como é o caso deste paciente.\n\nAlternativa E: O valor de corte do lactato para gravidade varia, mas 3,1 mmol/L em um contexto de dor abdominal aguda é altamente preocupante. Antibióticos podem ser parte do tratamento, mas não substituem a necessidade de descompressão cirúrgica quando há sofrimento vascular. Aguardar 24 horas em um paciente oligúrico e taquicárdico é uma conduta inadequada.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:13.068Z"
+  },
+  {
+    "id": "AJUDA_c04f5c37-0712-44f6-9f0a-3982a026026c",
+    "originalId": "c04f5c37-0712-44f6-9f0a-3982a026026c",
+    "statement": "Menina de 6 anos, há 15 dias apresentando tosse, adinamia e anorexia, evoluindo nos últimos quatro dias com febre baixa e com piora clínica progressiva. Foi iniciado Ceftriaxona endovenosa na origem e transferida hospital de referência. À radiografia de tórax evidenciado consolidação extensa a esquerda, com pequeno derrame pleural. Foi realizado toracocentese, sem necessidade de drenagem pleural. Recebeu dois esquemas antibióticos amplos para germes comuns e atípicos durante o período de 15 dias, evoluindo sem melhora clínico radiológica. A conduta adequada para essa paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar exame do escarro para identificar a presença do bacilo da tuberculose e iniciar o tratamento somente se o resultado for positivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar o tratamento da tuberculose se a prova tuberculínica mostrar uma reação na pele de 10 mm ou maior, pois nesse caso o diagnóstico é muito provável",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Manter esquema antibiótico ampliado e investigar imunodeficiência devido à falta de resposta a antibioticoterapia prolongada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar uma tomografia de tórax para avaliar a extensão da pneumonia e do derrame pleural e a indicação de toracocentese",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\nA questão apresenta uma criança de 6 anos com um quadro respiratório subagudo (15 dias de evolução) e sintomas constitucionais (adinamia e anorexia). O ponto crucial é a falha terapêutica: a paciente não respondeu a antibióticos de amplo espectro para germes comuns (ceftriaxona) nem para germes atípicos. Em pediatria, quando uma pneumonia não responde ao tratamento convencional e apresenta evolução lenta, a principal hipótese diagnóstica no Brasil deve ser a tuberculose (TB).\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\nO diagnóstico de tuberculose na infância é eminentemente clínico-radiológico. Como as crianças são geralmente paucibacilares (baixa carga de bacilos) e têm dificuldade para expectorar, o Ministério da Saúde adota um sistema de pontuação para o diagnóstico que dispensa a confirmação bacteriológica em muitos casos.\n\nO escore considera:\n1. Quadro clínico (tosse, febre, perda de peso): 15 pontos.\n2. Radiografia de tórax (consolidação, padrão intersticial ou adenomegalia): 15 pontos.\n3. Teste tuberculínico/PPD (PT): se for maior ou igual a 10 mm (ou 5 mm em alguns contextos), soma 15 pontos.\n4. História de contato com adulto bacilífero: 10 pontos.\n5. Estado nutricional: 5 pontos.\n\nUma pontuação de 30 a 35 pontos indica diagnóstico \"possível\", e acima de 40 pontos o diagnóstico é \"muito provável\", autorizando o início do tratamento. Esta paciente já possui 30 pontos apenas pela clínica e radiologia (15 + 15). Se o PPD for maior ou igual a 10 mm, ela atingirá 45 pontos, tornando o diagnóstico extremamente provável e o tratamento indicado.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): Incorreta. A baciloscopia (exame de escarro) em crianças tem sensibilidade muito baixa (frequentemente inferior a 15%). Condicionar o início do tratamento à positividade desse exame em uma criança com forte suspeita clínica e radiológica é um erro, pois atrasa o tratamento em uma fase paucibacilar.\n\nAlternativa (c): Incorreta. A paciente já foi submetida a 15 dias de antibioticoterapia de amplo espectro sem melhora. Insistir na mesma estratégia (apenas ampliando o espectro para bactérias comuns), ignorando a hipótese de tuberculose, é uma conduta inadequada em termos de saúde pública e manejo clínico. A investigação de imunodeficiência pode até ser feita posteriormente, mas não é a conduta imediata prioritária.\n\nAlternativa (d): Incorreta. A tomografia pode ser útil para identificar linfonodomegalias mediastinais, mas a questão pede a \"conduta adequada\" diante da suspeita de TB após falha terapêutica. A tomografia e uma nova toracocentese não definiriam o tratamento de forma tão direta e protocolar quanto a realização do PPD para fechamento do escore diagnóstico de TB. Além disso, o enunciado informa que a toracocentese já foi realizada e não houve necessidade de drenagem.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:13.068Z"
+  },
+  {
+    "id": "AJUDA_c05caa34-e6d0-408e-a21f-09e9c8c66363",
+    "originalId": "c05caa34-e6d0-408e-a21f-09e9c8c66363",
+    "statement": "Na forma da Lei nº 8.142 (de 28.12.1990), o Conselho Municipal de Saúde, de caráter permanente e deliberativo, atua na formulação de estratégias e no controle da execução da política de saúde, cujas decisões serão homologadas",
+    "options": [
+      {
+        "id": "A",
+        "text": "pelo gestor municipal de saúde (secretário ou equivalente).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pela Comissão Intergestores Regional (CIR).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pelo chefe do poder executivo municipal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "pelo dirigente do Departamento Regional de Saúde (DRS).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a Lei nº 8.142/1990, que é um dos marcos fundamentais do Sistema Único de Saúde (SUS), tratando especificamente da participação da comunidade e das transferências de recursos.\n\nDe acordo com o Artigo 1º, parágrafo 2º, desta lei, o Conselho de Saúde, em caráter permanente e deliberativo, atua na formulação de estratégias e no controle da execução da política de saúde na instância correspondente. A legislação é explícita ao afirmar que as decisões do conselho serão homologadas pelo chefe do poder legalmente constituído em cada esfera de governo.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O gestor municipal de saúde (secretário) é o responsável pela execução direta das políticas e, muitas vezes, participa das reuniões do conselho. No entanto, a lei exige que a homologação das decisões colegiadas venha da autoridade máxima do Poder Executivo local, e não do gestor da pasta.\n\nAlternativa b) Incorreta. A Comissão Intergestores Regional (CIR) é uma instância de pactuação entre diferentes gestores municipais de uma mesma região de saúde para organizar a rede de atenção. Ela não possui competência legal para homologar decisões de Conselhos Municipais de Saúde.\n\nAlternativa c) Correta. Como a questão refere-se ao Conselho Municipal de Saúde, o \"chefe do poder legalmente constituído\" naquela esfera é o Prefeito (Chefe do Poder Executivo Municipal). É ele quem deve homologar as decisões do conselho para que estas produzam seus efeitos oficiais, conforme determina a literalidade da Lei nº 8.142/1990.\n\nAlternativa d) Incorreta. O dirigente do Departamento Regional de Saúde (DRS) representa uma estrutura administrativa do Estado em determinadas regiões. Ele não possui autoridade sobre o controle social do município ou sobre a homologação de suas diretrizes.\n\nResumo: Guarde para a prova que, no SUS, as decisões dos Conselhos (sejam municipais, estaduais ou nacionais) devem ser homologadas pelo respectivo chefe do Executivo (Prefeito, Governador ou Presidente). Se o chefe do Executivo não homologar nem apresentar justificativa em tempo hábil, o conselho pode recorrer ao Ministério Público para garantir o cumprimento da deliberação.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:13.068Z"
+  },
+  {
+    "id": "AJUDA_c065c1e8-75f7-41bc-ac3f-8ec8d6469498",
+    "originalId": "c065c1e8-75f7-41bc-ac3f-8ec8d6469498",
+    "statement": "Mulher de 55 anos, hipertensa em uso de losartana 50 mg/dia, procura pronto atendimento relatando que há meses não aferia sua pressão. Refere estar muito preocupada pois aferiu a pressão em casa e estava elevada, mas nega sintomas como cefaleia, dor torácica, dispneia, déficit neurológico ou alteração visual. Ao exame físico, apresenta PA de 190x110 mmHg, ausculta cardíaca e pulmonar sem alterações, exame neurológico sem déficits focais e fundo de olho sem sinais de retinopatia aguda.\nDe acordo com a Última diretriz Americana (2025 AHA/ACC Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults), qual a conduta mais adequada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ajustar o tratamento anti-hipertensivo oral, reforçar a aderência e programar seguimento ambulatorial, sem necessidade de reduzir a pressão de forma imediata no PA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administrar captopril 25 mg por via sublingual, devido ao efeito rápido esperado para controle da pressão arterial, repetir a dose até que atinja PA Sistólica de 160mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever anlodipino 5 mg por via oral, uma vez que apresenta início de ação imediato, mantendo observação por 3 horas para avaliar resposta inicial ao tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar infusão de nitroprussiato em bomba, visando redução imediata de 25% da pressão arterial sob monitorização contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ofertar atenolol 50 mg via oral em dose única, devido ao efeito anti-hipertensivo imediato e ação protetora cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso:\nA paciente apresenta uma elevação acentuada da pressão arterial (190x110 mmHg), porém permanece assintomática e não demonstra sinais de lesão aguda de órgão-alvo ao exame físico (fundo de olho, exame neurológico e auscultas normais). Segundo a diretriz 2025 AHA/ACC, este quadro é definido como Hipertensão Grave Assintomática.\n\nAlternativa (a) CORRETA: Em pacientes com pressão arterial sistólica igual ou superior a 180 mmHg ou diastólica igual ou superior a 120 mmHg, mas que não apresentam sintomas ou sinais de lesão aguda de órgão-alvo, não há indicação de redução pressórica imediata no pronto atendimento. A conduta correta baseia-se em ajustar ou reiniciar a terapia anti-hipertensiva por via oral, reforçar a importância da adesão ao tratamento e garantir que o paciente tenha um seguimento ambulatorial breve (em dias ou poucas semanas). Reduções bruscas da pressão em pacientes crônicos podem levar a eventos isquêmicos por hipoperfusão.\n\nAlternativa (b) INCORRETA: O uso de captopril sublingual para baixar a pressão rapidamente no pronto atendimento em pacientes assintomáticos é uma conduta comum na prática antiga, mas hoje é desencorajada pelas principais diretrizes. A via sublingual tem absorção imprevisível e a queda rápida da pressão arterial não reduz o risco de eventos cardiovasculares imediatos nestes casos, podendo, inclusive, ser prejudicial.\n\nAlternativa (c) INCORRETA: O anlodipino é um bloqueador dos canais de cálcio de ação prolongada, cujo efeito pleno demora dias para ser atingido; ele não possui início de ação imediato. Além disso, a estratégia de manter o paciente em observação no pronto atendimento por várias horas para monitorar a queda da pressão arterial em quadros assintomáticos não é recomendada pela nova diretriz, pois o foco deve ser o controle ambulatorial de longo prazo.\n\nAlternativa (d) INCORRETA: O nitroprussiato de sódio é um medicamento intravenoso potente reservado para emergências hipertensivas, onde há risco iminente de morte ou lesão orgânica grave (como dissecção da aorta ou edema agudo de pulmão). Utilizá-lo em uma paciente assintomática é um erro grave, pois a redução agressiva e imediata da pressão pode causar infarto do miocárdio ou acidente vascular cerebral isquêmico devido à autorregulação do fluxo sanguíneo cerebral.\n\nAlternativa (e) INCORRETA: O atenolol não é uma droga de primeira linha para o tratamento de hipertensão na ausência de indicações específicas (como insuficiência cardíaca ou controle de frequência cardíaca). O uso de dose única de betabloqueador oral no pronto atendimento não é a estratégia recomendada para o manejo da hipertensão grave assintomática.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:13.068Z"
+  },
+  {
+    "id": "AJUDA_c0674610-97b0-4df0-84ff-55d174d8602f",
+    "originalId": "c0674610-97b0-4df0-84ff-55d174d8602f",
+    "statement": "Mulher de 28 anos comparece à unidade de emergência com história de atraso menstrual há 2 meses, referindo que fez teste de beta-hCG sérico com resultado positivo. Relata sangramento vaginal e dor em baixo ventre do tipo cólica. Ao exame físico, apresenta abdome doloroso à palpação profunda em hipogástrio, sem sinais de irritação peritoneal; toque vaginal com orifício cervical interno aberto, com sangramento vaginal de moderada quantidade. Foi realizada ultrassonografia transvaginal na unidade de emergência, sendo evidenciada imagem sugestiva de restos ovulares. \nO diagnóstico correto do caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "neoplasia trofoblástica gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "abortamento incompleto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "abortamento completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "gravidez ectópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta um quadro clássico de complicação hemorrágica da primeira metade da gestação, caracterizado por atraso menstrual, teste de gravidez positivo, dor abdominal e sangramento vaginal. Para diferenciar os tipos de abortamento e outras patologias desse período, devemos focar no exame do colo uterino e nos achados da ultrassonografia.\n\nAlternativa (b) Correta: O diagnóstico de abortamento incompleto é definido quando ocorre a expulsão apenas parcial do conteúdo gestacional. Os achados que confirmam essa condição no caso são: o orifício cervical interno aberto (indicando que parte do material já passou ou está passando pelo canal cervical) e a ultrassonografia transvaginal revelando a presença de restos ovulares ainda no interior do útero.\n\nAlternativa (a) Incorreta: A neoplasia trofoblástica gestacional (mola hidatiforme) manifesta-se geralmente com sangramento vaginal persistente, níveis de beta-hCG muito elevados para a idade gestacional e, frequentemente, um volume uterino maior do que o esperado para as semanas de amenorreia. O aspecto ultrassonográfico característico é de vesículas, frequentemente descrito como \"tempestade de neve\" ou \"cachos de uva\", o que difere da descrição de restos ovulares comuns.\n\nAlternativa (c) Incorreta: No abortamento completo, ocorre a expulsão total do conteúdo uterino. Clinicamente, a paciente costuma relatar uma diminuição importante da dor e do sangramento após a saída do material. Ao exame físico, o colo uterino já se encontra fechado e, na ultrassonografia, a cavidade uterina aparece vazia, com endométrio fino e sem restos ovulares.\n\nAlternativa (d) Incorreta: A gravidez ectópica ocorre quando o embrião se implanta fora da cavidade uterina (mais comum nas trompas). Embora cause dor e sangramento, o colo uterino permanece fechado ao toque vaginal. O achado ultrassonográfico típico seria um útero vazio associado a uma massa anexial ou saco gestacional extrauterino, e não a presença de restos dentro do útero.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:13.068Z"
+  },
+  {
+    "id": "AJUDA_c07e9c3e-7fb3-484e-9651-a044f83f2fce",
+    "originalId": "c07e9c3e-7fb3-484e-9651-a044f83f2fce",
+    "statement": "Um homem de 50 anos é levado à sala de emergência após uma colisão entre veículos a motor. Ele está reclamando de uma leve dor torácica e tem alguns hematomas na região do esterno. Ele é um homem saudável e sem história cardíaca. A tomografia computadorizada não apresenta alterações, exceto por uma fratura do corpo do esterno. O eletrocardiograma apresenta taquicardia sinusal com uma frequência cardíaca de 110 batimentos por minutos. Sua dor está bem controlada e parece não haver outras razões para sua taquicardia. Qual é a conduta mais apropriada para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Admitir na unidade de terapia intensiva com monitoramento contínuo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Admitir para observação com monitoramento contínuo e fazer um ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alta hospitalar com instruções para retornar ao hospital se os sintomas piorarem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir a tomografia computadorizada do tórax em 12 horas e se não houver novas alterações, alta para casa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: Trata-se de uma vítima de trauma torácico contuso com fratura de esterno que apresenta alteração no eletrocardiograma (taquicardia sinusal de 110 bpm inexplicada por dor ou outras causas). Esse quadro levanta a forte suspeita de lesão cardíaca contusa (contusão miocárdica).\n\nAlternativa a: Correta. Pacientes vítimas de trauma torácico contuso que apresentam qualquer alteração no eletrocardiograma de admissão (incluindo arritmias, bloqueios, alterações de repolarização ou taquicardia sinusal persistente não explicada) devem ser admitidos para monitorização eletrocardiográfica contínua em leito monitorizado/UTI por 24 a 48 horas. Essa conduta visa detectar e tratar precocemente arritmias graves e disfunções mecânicas que costumam surgir nas primeiras horas pós-trauma.\n\nAlternativa b: Incorreta. A necessidade de monitorização contínua está correta, mas o ecocardiograma não é indicado de rotina para todos os pacientes. O ecocardiograma é reservado para casos com instabilidade hemodinâmica (hipotensão), suspeita de lesão valvar aguda, tamponamento cardíaco ou alterações eletrocardiográficas persistentes que sugiram dano estrutural.\n\nAlternativa c: Incorreta. A alta hospitalar só seria segura se o eletrocardiograma de admissão fosse rigorosamente normal, situação em que o valor preditivo negativo para complicações cardíacas graves é próximo de 100%. Como o ECG está alterado, a liberação do paciente é contraindicada pelo risco de eventos arrítmicos tardios.\n\nAlternativa d: Incorreta. Repetir a tomografia de tórax após 12 horas não altera a conduta nem traz benefício clínico. A lesão óssea já foi diagnosticada e o risco iminente ao paciente é de natureza elétrica e funcional (arritmias cardíacas), o que demanda vigilância do ritmo e não nova imagem anatômica.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:13.068Z"
+  },
+  {
+    "id": "AJUDA_c07eefe9-6cef-4274-95de-eb8075b096d2",
+    "originalId": "c07eefe9-6cef-4274-95de-eb8075b096d2",
+    "statement": "A vigilância epidemiológica em saúde do trabalhador (Vesat) é um dos componentes da vigilância em saúde do trabalhador. Pode-se afirmar que entre os seus objetivos está:",
+    "options": [
+      {
+        "id": "A",
+        "text": "identificar e analisar as atividades produtivas de maior risco dentro do perfil produtivo do seu território",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "orientar medidas de prevenção e controle para impedir a ocorrência de novos casos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "articular com outras vigilâncias (sanitária, epidemiológica, ambiental), no sentido de garantir maior eficiência das ações",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar a inspeção sanitária em saúde do trabalhador para mapeamento ou identificação dos riscos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Vigilância em Saúde do Trabalhador (VISAT) é estruturada em dois eixos complementares: a vigilância sobre os ambientes e processos de trabalho (foco sanitário) e a vigilância sobre os agravos à saúde (foco epidemiológico). A questão foca especificamente na Vigilância Epidemiológica em Saúde do Trabalhador (Vesat).\n\nAlternativa a) Incorreta. Identificar e analisar o perfil produtivo e as atividades de maior risco de um território é uma etapa preparatória e de planejamento que engloba a VISAT como um todo. É o mapeamento que permite direcionar onde todas as vigilâncias devem atuar, não sendo um objetivo exclusivo ou definitivo da vigilância epidemiológica.\n\nAlternativa b) Correta. Por definição, a vigilância epidemiológica consiste em um conjunto de ações que proporcionam o conhecimento, a detecção ou a prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde. No caso da Vesat, o objetivo é utilizar as informações sobre doenças e acidentes relacionados ao trabalho para desencadear medidas de intervenção que visem ao controle dos riscos e, consequentemente, impeçam que novos trabalhadores fiquem doentes ou sofram acidentes.\n\nAlternativa c) Incorreta. A articulação entre as diferentes vigilâncias (sanitária, epidemiológica e ambiental) é uma diretriz e uma estratégia operacional do SUS para garantir a integralidade das ações. Embora seja fundamental para a eficiência do sistema, trata-se de um método de trabalho, e não do objetivo final da Vesat.\n\nAlternativa d) Incorreta. A inspeção sanitária e o mapeamento de riscos nos postos de trabalho são atividades típicas da Vigilância Sanitária em Saúde do Trabalhador. Enquanto a Vesat atua a partir do \"efeito\" (o trabalhador doente ou acidentado), a vigilância sanitária atua na \"causa\" (os perigos presentes no ambiente de trabalho).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:13.068Z"
+  },
+  {
+    "id": "AJUDA_c0840070-22b8-4eb9-b815-eb5655eddecb",
+    "originalId": "c0840070-22b8-4eb9-b815-eb5655eddecb",
+    "statement": "Paciente masculino de 52 anos, portador de DPOC em tratamento há 2 anos com vilanterol-umeclidínio, vinha mantendo dispneia habitual mMRC 1. Fez uso de amoxacilina-clavulanato para uma exacerbação da doença há aproximadamente 8 meses, mas sem necessidade de internação hospitalar. Paciente também é hipertenso em uso de losartana, dislipidêmico em uso de rosuvastatina, diabético em uso de empaglifozina + linagliptina. Paciente procura o pronto atendimento por queixa de piora da dispneia há 1 dia, atualmente mMRC 3. Costuma apresentar habitualmente expectoração hialina em pequena quantidade e nega aumento do volume do catarro agora, mas refere que hoje expectorou secreção clara com alguns laivos de sangue. Nega dor torácica. Ao exame físico, paciente encontra-se em regular estado geral, corado, hidratado, anictérico, cianótico, afebril, lúcido e orientado. Sinais vitais: frequência cardíaca de 115 bpm, frequência respiratória de 26 ipm, PA = 110 x 70 mmHg, SpO2 = 86% em ar ambiente, glicemia capilar de 102 g/dL. Bulhas rítmicas hipofonéticas em 2 tempos sem sopros, estase jugular 2+/4. Murmúrio vesicular presente, mas reduzido em ápices, discretos estertores crepitantes em bases. Abdome globoso, ruídos hidroaéreos presentes, fígado palpável a 2 cm do rebordo costal direito, espaço de Traube livre. Presença de edema em membros inferiores, pulsos presentes e simétricos. Quanto ao quadro clínico descrito, todas as medidas a seguir devem ser adotadas nesse momento, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar exame de imagem do tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar D-dímero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar oxigenoterapia suplementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar corticoterapia sistêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Este caso clínico apresenta um paciente com Doença Pulmonar Obstrutiva Crônica (DPOC) que manifesta uma descompensação respiratória aguda, mas com sinais que fogem ao padrão de uma exacerbação brônquica típica. Os pontos-chave para a resolução são a presença de taquicardia (115 bpm), hipoxemia importante (SpO2 86%), estase jugular, fígado palpável, edema de membros inferiores e hemoptise (laivos de sangue). Esses achados, associados à ausência de aumento de volume ou de purulência da secreção habitual, apontam fortemente para o diagnóstico de Tromboembolismo Pulmonar (TEP) ou Insuficiência Cardíaca Direita (cor pulmonale agudizado), e não para uma exacerbação infecciosa ou inflamatória clássica da DPOC.\n\nA alternativa (a) está correta porque a solicitação de exame de imagem do tórax, como uma radiografia, é um passo inicial indispensável na avaliação de qualquer dispneia aguda no pronto atendimento. Ela auxilia na diferenciação de diagnósticos como pneumonia, pneumotórax ou sinais de congestão pulmonar.\n\nA alternativa (b) está correta porque o D-dímero é um teste de triagem fundamental na investigação de Tromboembolismo Pulmonar. Como o paciente possui fatores de risco e sinais clínicos compatíveis (taquicardia, hipoxemia e hemoptise), a investigação para TEP deve ser iniciada prontamente.\n\nA alternativa (c) está correta porque o paciente encontra-se em insuficiência respiratória aguda com saturação de 86% em ar ambiente. A oxigenoterapia suplementar é uma medida de suporte imediata e obrigatória para garantir a estabilidade clínica e evitar a hipóxia tecidual, com alvo de saturação geralmente entre 88% e 92% para pacientes com DPOC.\n\nA alternativa (d) é a incorreta e, portanto, o gabarito. A corticoterapia sistêmica é o tratamento padrão para exacerbações da DPOC que envolvem inflamação das vias aéreas e broncoespasmo. Entretanto, o paciente não preenche os critérios de Anthonisen (não há aumento de volume ou purulência do escarro) que justificariam o diagnóstico de exacerbação infecciosa/inflamatória típica. Diante da forte suspeita de TEP ou de uma causa cardiológica, o foco deve ser a investigação diagnóstica e a estabilização hemodinâmica. O uso de corticoide não é a conduta prioritária neste momento e não trata a causa provável da descompensação.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:13.068Z"
+  }
+]

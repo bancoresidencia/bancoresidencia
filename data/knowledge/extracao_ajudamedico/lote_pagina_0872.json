@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_f22f0042-e75a-43d6-8e69-46a1bcc52611",
+    "originalId": "f22f0042-e75a-43d6-8e69-46a1bcc52611",
+    "statement": "No manejo do íleo paralítico pós-operatório prolongado, qual das seguintes condutas tem maior evidência de benefício comprovado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retirada precoce de sonda nasogástrica e mobilização precoce.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Uso rotineiro de neostigmina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administração de metoclopramida..",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Jejum absoluto e hidratação parenteral por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reposição de cálcio endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Explicação do Gabarito:\n\nO íleo paralítico pós-operatório é uma interrupção temporária e não mecânica da motilidade intestinal após uma cirurgia. Quando esse quadro se prolonga, torna-se um desafio clínico que aumenta o tempo de internação e os custos hospitalares. Atualmente, o manejo é baseado em protocolos de recuperação otimizada, como o ERAS (Enhanced Recovery After Surgery), que priorizam medidas fisiológicas e multimodais em vez de intervenções farmacológicas isoladas.\n\nAlternativa (a): Correta. Esta conduta possui o maior nível de evidência científica. A retirada precoce da sonda nasogástrica evita a distensão gástrica por aerofagia e melhora o conforto do paciente, enquanto a deambulação ou mobilização precoce estimula a motilidade intestinal por mecanismos reflexos e reduz a resistência ao fluxo intestinal, sendo pilares na prevenção e tratamento do íleo prolongado.\n\nAlternativa (b): Incorreta. A neostigmina é um inibidor da acetilcolinesterase com indicações muito específicas, sendo o tratamento de escolha para a Síndrome de Ogilvie (pseudo-obstrução colônica aguda). Seu uso rotineiro no íleo paralítico pós-operatório não é recomendado devido ao risco de efeitos colaterais graves, como bradicardia, broncoespasmo e sialorreia.\n\nAlternativa (c): Incorreta. A metoclopramida é um antagonista dopaminérgico com efeito procinético focado principalmente no esvaziamento gástrico. Diversas meta-análises demonstraram que ela não tem eficácia comprovada em reduzir a duração do íleo paralítico global ou o tempo para a primeira evacuação no pós-operatório.\n\nAlternativa (d): Incorreta. Manter o paciente em jejum absoluto por 5 dias é uma conduta ultrapassada. As evidências mostram que a nutrição enteral precoce (oral ou por sonda) é benéfica, pois estimula a secreção de hormônios gastrointestinais e mantém a barreira mucosa, ajudando na resolução do íleo. O jejum prolongado, na verdade, retarda a recuperação funcional do intestino.\n\nAlternativa (e): Incorreta. O equilíbrio eletrolítico é essencial para a função muscular intestinal. No entanto, os eletrólitos mais frequentemente associados ao íleo paralítico são o potássio (hipocalemia) e o magnésio (hipomagnesemia). A reposição isolada de cálcio, sem uma deficiência específica documentada, não é uma conduta com evidência de benefício para reverter o íleo pós-operatório.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  },
+  {
+    "id": "AJUDA_f2396e19-4040-4d99-9328-a5a94b57f434",
+    "originalId": "f2396e19-4040-4d99-9328-a5a94b57f434",
+    "statement": "Lactente de 33 dias foi trazida à consulta de puericultura. Era filha de pais não consanguíneos e tinha 2 irmãos hígidos; a mãe de 37 anos não apresentou intercorrências no pré-natal. Ao exame, foi identificada hipotonia generalizada. Suspeitou-se de síndrome genética. O teste de triagem neonatal, coletado na UBS, não revelou alterações. Com base no caso, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pregas epicânticas e prega palmar única são pouco frequentes na trissomia do 21.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para o diagnóstico de trissomia do 21, é mandatória a realização de cariótipo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Para o acompanhamento de puericultura em pacientes com trissomia do 21, não são necessárias curvas de crescimento específicas, podendo ser utilizadas as curvas da Organização Mundial da Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na presença de hipotonia, síndrome de Prader-Willi e atrofia muscular espinhal estão entre os diagnósticos diferenciais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o raciocínio clínico diante de um lactente com hipotonia generalizada e suspeita de síndrome genética, com foco especial na Síndrome de Down (Trissomia 21) e diagnósticos diferenciais.\n\nAlternativa (a) Incorreta: As pregas epicânticas (pregas de pele no canto interno dos olhos) e a prega palmar única (também chamada de prega simiesca) são sinais dismórficos clássicos e muito frequentes na Síndrome de Down. A prega palmar única, por exemplo, está presente em cerca de 40% a 50% dos pacientes com a trissomia, uma frequência muito superior à da população geral.\n\nAlternativa (b) Incorreta: Embora o cariótipo seja o exame padrão para confirmar a trissomia e, principalmente, determinar o mecanismo genético envolvido (trissomia simples, translocação ou mosaicismo) — o que é essencial para o aconselhamento genético familiar —, o diagnóstico da Síndrome de Down é clínico. Na presença de um fenótipo exuberante, o médico já inicia a propedêutica de rastreio de malformações associadas antes mesmo do resultado citogenético. Além disso, outras técnicas, como o FISH ou o CGH-Array, também podem identificar a presença do cromossomo 21 extra.\n\nAlternativa (c) Incorreta: Crianças com Síndrome de Down apresentam um padrão de crescimento estatural e de ganho ponderal diferente do de crianças hígidas. Utilizar exclusivamente as curvas da Organização Mundial da Saúde (OMS) pode gerar diagnósticos errôneos de déficit de crescimento ou desnutrição. Por isso, no acompanhamento de puericultura, devem ser utilizadas curvas de crescimento específicas para a Síndrome de Down.\n\nAlternativa (d) Correta: O quadro de \"bebê hipotônico\" (floppy infant) exige a distinção entre causas centrais (sistema nervoso central) e periféricas (unidade motora). A Síndrome de Prader-Willi é uma causa genética importante de hipotonia central neonatal severa, frequentemente associada a dificuldades de sucção. Já a Atrofia Muscular Espinhal (AME tipo 1) é a causa neuromuscular (periférica) mais comum de hipotonia grave no lactente, caracterizada por fraqueza muscular progressiva e arreflexia. Ambas são diagnósticos diferenciais obrigatórios em qualquer lactente com hipotonia a esclarecer.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  },
+  {
+    "id": "AJUDA_f2412db8-466b-4000-b775-d96c0f74805a",
+    "originalId": "f2412db8-466b-4000-b775-d96c0f74805a",
+    "statement": "Recém-nascido, 38 semanas, cuja mãe desenvolveu diabetes gestacional, com difícil controle na gestação, nascido de parto cesáreo, com 4.350 g, apresenta, com 2 horas de vida, tremores finos de extremidades e glicemia capilar confirmada de 35 mg/dL.\n\nQual é a conduta correta nessa situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar push de glicose intravenoso com 200 mg/kg.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Oferecer imediatamente leite materno, com repetição da glicemia em 30 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Oferecer fórmula infantil, com repetição da glicemia em 1 hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oferecer gel de dextrose e repetir a glicemia em 30 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Proceder à introdução de infusão contínua de glicose, com velocidade de 3 mg/kg/min.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\nO recém-nascido apresenta dois fatores de risco importantes para hipoglicemia: é filho de mãe diabética com mau controle glicêmico e é grande para a idade gestacional (macrosômico, com 4.350 g). O excesso de glicose materna durante a gestação gera um estado de hiperinsulinismo fetal. Após o clampeamento do cordão umbilical, o aporte de glicose cessa bruscamente, mas os níveis de insulina permanecem elevados, levando à queda da glicemia. O paciente em questão está com 2 horas de vida, apresenta glicemia de 35 mg/dL e, fundamentalmente, está sintomático (apresenta tremores).\n\nA conduta na hipoglicemia neonatal depende da presença ou ausência de sintomas. De acordo com as diretrizes da Academia Americana de Pediatria (AAP) e da Sociedade Brasileira de Pediatria (SBP), qualquer recém-nascido com hipoglicemia sintomática deve ser tratado imediatamente com glicose intravenosa.\n\nAlternativa A (Correta): Para pacientes sintomáticos, a conduta imediata é o fornecimento de glicose por via intravenosa através de um \"bolus\" ou \"push\". A dose recomendada é de 200 mg/kg de glicose (equivalente a 2 mL/kg de soro glicosado a 10%). Essa medida visa elevar rapidamente os níveis glicêmicos e cessar os sintomas neurológicos.\n\nAlternativa B (Incorreta): O aleitamento materno é a primeira escolha para a prevenção de hipoglicemia em recém-nascidos de risco ou para o tratamento de hipoglicemia leve em pacientes assintomáticos. No entanto, a presença de sintomas (tremores) torna a via oral insuficiente e perigosa, exigindo correção venosa imediata.\n\nAlternativa C (Incorreta): Assim como o leite materno, a fórmula infantil seria indicada apenas para casos assintomáticos nos quais o leite materno não está disponível. Além disso, o tempo de reavaliação de 1 hora é excessivo para um paciente que já manifesta sinais clínicos de hipoglicemia.\n\nAlternativa D (Incorreta): O gel de dextrose a 40% tem sido utilizado em protocolos recentes para o manejo da hipoglicemia em recém-nascidos assintomáticos, visando evitar a separação da mãe e o uso de fórmulas. Contudo, em casos de hipoglicemia sintomática, o tratamento padrão-ouro permanece sendo a glicose intravenosa.\n\nAlternativa E (Incorreta): A introdução de uma infusão contínua de glicose (VIG — Velocidade de Infusão de Glicose) é necessária e deve ser iniciada logo após o \"push\" de glicose para manter a estabilidade glicêmica. No entanto, o enunciado pergunta a conduta para o quadro agudo de tremores e glicemia de 35 mg/dL. O primeiro passo é o \"push\" (bolus) para correção rápida, seguido, então, pela manutenção com VIG de 5 a 8 mg/kg/min (o valor de 3 mg/kg/min citado na alternativa é, inclusive, baixo para um filho de mãe diabética, que geralmente requer taxas maiores devido ao hiperinsulinismo).",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Outros Distúrbios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  },
+  {
+    "id": "AJUDA_f24389f1-df71-493d-9e5a-e5c6ca45a5d6",
+    "originalId": "f24389f1-df71-493d-9e5a-e5c6ca45a5d6",
+    "statement": "Homem, 35 anos de idade, em tratamento para câncer colorretal, relata que sua mãe faleceu aos 40 anos devido a câncer de endométrio e que seu avô materno teve câncer do trato urotelial aos 50 anos. O quadro clínico e história familiar sugerem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "herança autossômica recessiva e variante germinativa em homozigose em genes de predisposição a câncer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "herança ligada ao X com possível envolvimento de variante somática em gene de predisposição a câncer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "herança autossômica dominante e variante germinativa em heterozigose em genes de predisposição a câncer.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "herança multifatorial com variante germinativa em heterozigose composta em genes de predisposição a câncer",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descrito apresenta um paciente jovem (35 anos) com câncer colorretal e uma história familiar significativa: mãe com câncer de endométrio aos 40 anos e avô materno com câncer do trato urotelial aos 50 anos. Essa tríade de tumores (colorretal, endométrio e urotelial) ocorrendo em idade jovem e em diferentes gerações é característica da Síndrome de Lynch, também conhecida como Câncer Colorretal Hereditário Não Poliposo (HNPCC).\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA\n\nA Síndrome de Lynch é causada por variantes germinativas patogênicas em genes de reparo de pareamento incorreto do DNA (genes MMR, como MLH1, MSH2, MSH6 e PMS2). A herança é autossômica dominante, o que significa que a presença de apenas um alelo mutado (heterozigose) herdado de um dos pais é suficiente para conferir a predisposição ao câncer. A transmissão vertical (geração após geração) observada no relato (avô, mãe e filho) confirma esse padrão de herança dominante.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa a: A herança autossômica recessiva exigiria que o indivíduo herdasse duas cópias mutadas do gene (homozigose) para manifestar a predisposição, o que geralmente não apresenta um padrão de transmissão vertical em todas as gerações como visto no caso. Embora exista a Deficiência Constitucional de Reparo de Pareamento (CMMRD), que é recessiva, ela se manifesta com tumores na infância e manchas café com leite, o que não condiz com a idade dos pacientes citados.\n\nAlternativa b: A herança ligada ao X implicaria uma distribuição diferente entre os sexos na árvore genealógica (por exemplo, homens afetados transmitindo para filhas portadoras, mas não para filhos homens). Além disso, as variantes que causam síndromes de câncer hereditário são germinativas (presentes em todas as células do corpo desde o nascimento) e não apenas somáticas (restritas ao tumor).\n\nAlternativa d: A herança multifatorial refere-se a doenças causadas pela combinação de múltiplos fatores genéticos e ambientais, sem um padrão de herança mendeliana clara. O caso em questão aponta fortemente para uma síndrome de gene único devido à precocidade e especificidade dos tumores. A heterozigose composta ocorre quando há duas mutações diferentes no mesmo locus gênico, o que é típico de doenças recessivas, não se aplicando ao padrão dominante da Síndrome de Lynch.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  },
+  {
+    "id": "AJUDA_f24b2d08-4922-4e07-96bc-5c25f7ea9ca2",
+    "originalId": "f24b2d08-4922-4e07-96bc-5c25f7ea9ca2",
+    "statement": "No choque hemorrágico pediátrico decorrente de trauma, a hipotensão arterial é um sinal tardio e ominoso. A classificação do choque baseia-se na perda volêmica estimada e nos sinais clínicos. Considere uma criança vítima de trauma abdominal fechado (lesão esplênica) que apresenta taquicardia acentuada, taquipneia, tempo de enchimento capilar > 4 segundos, pulsos periféricos finos e hipotensão sistólica para a idade, com alteração do nível de consciência (torpor). Considerando a situação descrita, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O paciente está em Choque Classe I (perda < 15% da volemia), uma vez que a hipotensão em crianças ocorre precocemente, logo após pequenas perdas sanguíneas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de Choque Compensado Classe II (perda de 15-30% da volemia), pois a taquicardia é o único sinal confiável, e a hipotensão é apenas uma variação fisiológica do estresse.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A classificação é Choque Irreversível Classe IV (perda > 45%), e nenhuma medida de reanimação volêmica será eficaz, devendo-se iniciar cuidados paliativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Este quadro corresponde ao Choque Compensado Classe III (perda de 30-40% da volemia), onde a hipotensão surge como marco da falência dos mecanismos compensatórios, exigindo transfusão de hemoderivados além de cristaloides.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender esta questão, é fundamental recordar a fisiologia pediátrica no trauma. A criança possui uma excelente reserva fisiológica, conseguindo manter a pressão arterial sistólica dentro da normalidade mesmo após perdas de até 30% do volume sanguíneo total, utilizando mecanismos como taquicardia e vasoconstrição periférica intensa. Por esse motivo, a hipotensão na pediatria é um sinal tardio, indicando que os mecanismos compensatórios falharam e que a perda volêmica é crítica.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: No Choque Classe I, a perda volêmica é inferior a 15% e os sinais clínicos são mínimos, como uma leve taquicardia. A afirmação está errada ao dizer que a hipotensão ocorre precocemente em crianças; na verdade, ela é um dos últimos sinais a aparecer, surgindo apenas após perdas vultosas.\n\nAlternativa (b) Incorreta: O Choque Classe II (perda de 15 a 30%) é o choque compensado clássico. Nele, observamos taquicardia, taquipneia e redução da pressão de pulso, mas a pressão arterial sistólica ainda está preservada. O paciente do enunciado já apresenta hipotensão e alteração de consciência (torpor), o que o retira da classificação de choque compensado Classe II.\n\nAlternativa (c) Incorreta: O Choque Classe IV envolve perda superior a 45% do volume sanguíneo. Embora seja uma situação de extrema gravidade com risco iminente de morte, não deve ser classificado como irreversível de imediato, nem justifica cuidados paliativos como conduta inicial. O protocolo padrão exige reanimação agressiva, transfusão maciça e controle cirúrgico do sangramento (esplenectomia ou rafia, se indicado).\n\nAlternativa (d) Correta: O quadro descrito apresenta o tripé do choque descompensado/grave: hipotensão arterial, alteração do nível de consciência (torpor) e sinais de má perfusão periférica acentuada (tempo de enchimento capilar > 4 segundos). Isso correlaciona-se com a Classe III, que envolve perda de 30% a 40% da volemia. O surgimento da hipotensão é o marco da falência compensatória. Em crianças nesse estágio, a reposição volêmica deve ser feita não apenas com cristaloides, mas com a introdução precoce de hemoderivados (sangue) para garantir o transporte de oxigênio.\n\nNota sobre a nomenclatura: Embora a alternativa utilize o termo \"Choque Compensado Classe III\", a presença de hipotensão define clinicamente o choque como \"Descompensado\". No entanto, os valores de perda volêmica (30-40%) e a conduta (transfusão) citados na letra (d) estão em perfeita concordância com os manuais de trauma (ATLS), tornando-a a resposta correta.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Trauma",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  },
+  {
+    "id": "AJUDA_f255dd1b-1d8d-4ca0-9a5f-69e761b8e109",
+    "originalId": "f255dd1b-1d8d-4ca0-9a5f-69e761b8e109",
+    "statement": "Lactente de um ano é levado a atendimento em unidade básica de saúde para atendimento de rotina. Durante o atendimento, a mãe informa que eles moram numa comunidade e devido à seca estavam sem acesso à UBS de referência desde em 1 mês de idade. No trajeto até o atendimento, o barco que estavam afundou e eles perderam tudo, inclusive o cartão vacinal. Exame físico: presença de cicatriz vacinal em braço direito e sem alterações nos demais aparelhos. O médico decide, corretamente, atualizar a situação vacinal do menino e escreve no prontuário todas as vacinas que deverão ser atualizadas até o primeiro ano de, com exceção de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Febre amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "BCG e tríplice viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Varicela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "BCG e Rotavírus.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental aplicar as normas do Programa Nacional de Imunizações (PNI) do Ministério da Saúde para situações de perda do cartão vacinal e atualização de atrasos em lactentes.\n\nA estratégia para pacientes sem comprovante vacinal é considerar a pessoa como não vacinada, com exceção daquelas vacinas que deixam marcas comprobatórias ou seguem critérios clínicos específicos.\n\nAnálise das alternativas:\n\na) Febre amarela: Incorreta. Pelo calendário nacional, a primeira dose da vacina contra febre amarela deve ser aplicada aos 9 meses de idade. Como o lactente tem um ano e não há registro de vacinação, ele deve receber esta dose agora.\n\nb) BCG e tríplice viral: Incorreta. Embora a BCG não deva ser repetida (conforme explicado abaixo), a tríplice viral tem sua primeira dose prevista exatamente aos 12 meses (1 ano). Portanto, ela faz parte da atualização vacinal necessária para este paciente.\n\nc) Varicela: Incorreta. A vacina da varicela está incluída no calendário básico. Atualmente, a primeira dose é aplicada aos 15 meses (como tetraviral) e a segunda aos 4 anos, mas, em casos de atraso ou situações epidemiológicas, ela entra no cronograma de atualizações da criança a partir de 1 ano de idade.\n\nd) BCG e Rotavírus: Correta. Esta é a alternativa que apresenta as vacinas que NÃO serão atualizadas. \n1. BCG: O exame físico identificou a presença da cicatriz vacinal no braço direito. Segundo a norma técnica, a presença da cicatriz é comprovação de vacinação prévia, não havendo indicação de revacinação, mesmo com a perda do cartão.\n2. Rotavírus (VORH): Esta vacina possui prazos rigorosos de idade para aplicação devido ao risco de intussuscepção intestinal. A primeira dose deve ser administrada até os 3 meses e 15 dias, e a segunda dose deve ser administrada até, no máximo, os 7 meses e 29 dias. Como o lactente já tem 1 ano de idade, ele ultrapassou a idade-limite e não pode mais iniciar ou completar o esquema contra rotavírus.\n\nPortanto, por possuir a cicatriz de BCG e ter ultrapassado a idade-limite para a vacina contra o rotavírus, essas duas vacinas não serão administradas no plano de atualização.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  },
+  {
+    "id": "AJUDA_f258392a-34ea-4113-8ab2-c1adc9e6ad40",
+    "originalId": "f258392a-34ea-4113-8ab2-c1adc9e6ad40",
+    "statement": "Mulher de 40 anos, com história pregressa de infarto do miocárdio, evolui com disfunção moderada de ventrículo esquerdo (VE). Faz tratamento com carvedilol e losartana, e uso irregular de diurético. Há 15 dias houve piora da dispneia, tosse, queda do estado geral e mal-estar. O exame físico é compatível com derrame pleural a direita. Na toracocentese, os achados do líquido pleural mostram proteína = 4g/dL, LDH = 350UI/L, glicose = 50mg/dL e citologia = 1.000 células/mm³, sendo 50% de células mononucleares. No sangue, verifica-se hemoglobina = 9g/dL, leucócitos = 8.000/mm³, VHS = 60mm/h, proteína = 7g/dL e LDH = 350UI/L. A melhor conduta, nesse caso, será:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar diurético, associado com nitrato-hidralazina, e objetivar balanço hídrico negativo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar adenosina deaminase pleural, gama-interferon sérico e biópsia da pleura",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "iniciar diurético em dose alta e objetivar balanço hídrico negativo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar sorologias virais como CMV, Ebstein-Barr e HIV",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico\n\nA paciente apresenta um quadro de insuficiência cardíaca crônica agudizada, mas a análise do líquido pleural é fundamental para definir a etiologia do derrame. O primeiro passo é aplicar os Critérios de Light para diferenciar transudato de exsudato:\n\n1. Relação Proteína pleural / Proteína sérica: 4 dividido por 7 é igual a 0,57 (Valor > 0,5 indica exsudato).\n2. Relação LDH pleural / LDH sérico: 350 dividido por 350 é igual a 1,0 (Valor > 0,6 indica exsudato).\n3. LDH pleural: 350 UI/L (Geralmente > 200 ou > 2/3 do limite superior do soro indica exsudato).\n\nConclusão: O líquido pleural é um exsudato. \n\nA insuficiência cardíaca tipicamente causa transudato. A presença de um exsudato com predomínio de células mononucleares, glicose reduzida (50 mg/dL), anemia (Hb 9 g/dL) e marcadores inflamatórios elevados (VHS 60 mm/h) aponta para uma etiologia inflamatória ou infecciosa crônica, sendo a Tuberculose Pleural a principal hipótese diagnóstica no Brasil.\n\nAnálise das Alternativas\n\nAlternativa A (Incorreta): Embora a paciente tenha disfunção ventricular, a combinação de nitrato e hidralazina é uma terapia para insuficiência cardíaca, mas não resolve a causa do derrame pleural exsudativo. O foco no momento deve ser a investigação do exsudato, que não é causado apenas pela congestão passiva.\n\nAlternativa B (Correta): Diante de um exsudato mononuclear (linfocítico), a investigação de Tuberculose Pleural é mandatória. A dosagem de Adenosina Deaminase (ADA) no líquido pleural tem alta sensibilidade e especificidade para o diagnóstico. A biópsia de pleura é o exame com maior rendimento para visualização do granuloma e confirmação etiológica. O gama-interferon é outro marcador inflamatório que corrobora o diagnóstico.\n\nAlternativa C (Incorreta): O uso de diuréticos em altas doses visa tratar a sobrecarga volêmica (transudato). Como os Critérios de Light confirmaram que se trata de um exsudato, o tratamento isolado da insuficiência cardíaca seria insuficiente e retardaria o diagnóstico da doença pleural de base.\n\nAlternativa D (Incorreta): Infecções virais podem causar derrames pleurais, mas o quadro de tosse há 15 dias, queda do estado geral, VHS muito elevado e as características do líquido pleural tornam a Tuberculose muito mais provável que as etiologias virais citadas, tornando a alternativa B a conduta inicial mais adequada.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Derrame Pleural"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  },
+  {
+    "id": "AJUDA_f25c1c52-94cd-4e61-9174-9ba65fe46d59",
+    "originalId": "f25c1c52-94cd-4e61-9174-9ba65fe46d59",
+    "statement": "Um jovem de 24 anos, estudante, procura atendimento devido à queixa de dor em região sacrococcígea com início há 07 dias. Refere aumento do volume local e saída de secreção purulenta e fétida de forma intermitente da região afetada. Nos últimos meses, teve episódios semelhantes, mas com menos dor e com melhora espontânea, motivo pelo qual não procurou atendimento médico. Ao exame físico, observa-se região endurecida e dolorosa na linha média da região interglútea, sobre o cóccix. Há um orifício cutâneo com drenagem de secreção. O paciente é hirsuto e possui sobrepeso (IMC 32 kg/m2).\nQual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fístula anorretal crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cisto dermoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Abscesso isquiorretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidradenite supurativa perianal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cisto pilonidal infectado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O diagnóstico principal é cisto pilonidal (ou doença pilonidal), especificamente em sua fase aguda de abscesso/infecção. O caso clínico apresenta a descrição clássica desta patologia: um homem jovem, com fatores de risco importantes (hirsutismo — excesso de pelos — e obesidade), apresentando uma lesão inflamatória na linha média da região sacrococcígea (sulco interglúteo).\n\nA doença pilonidal ocorre devido à penetração de pelos no tecido subcutâneo, gerando uma reação inflamatória de corpo estranho que pode infectar, formando abscessos e fístulas com orifícios cutâneos.\n\nAnálise das alternativas:\n\na) Incorreta. A fístula anorretal crônica tem sua origem geralmente em glândulas do canal anal (criptoglandular), e o orifício externo costuma se localizar na região perianal, e não especificamente na região sacrococcígea superior. Além disso, a fístula anorretal costuma ter relação com histórico prévio de abscesso perianal.\n\nb) Incorreta. O cisto dermoide é uma malformação congênita que pode ocorrer na linha média, mas é uma condição muito menos comum que a doença pilonidal e raramente apresenta esse quadro de drenagem purulenta intermitente e recidivante associada a fatores como hirsutismo e obesidade no adulto jovem.\n\nc) Incorreta. O abscesso isquiorretal é uma infecção profunda do espaço isquiorretal (lateral ao reto e ânus). Ele causa dor intensa e abaulamento na região glútea ou perianal lateral, e não na linha média sobre o cóccix. O exame retal costuma ser muito doloroso nesses casos.\n\nd) Incorreta. A hidradenite supurativa é uma doença inflamatória crônica das glândulas apócrinas. Embora possa ocorrer na região perianal e inguinal, ela se manifesta habitualmente com múltiplos nódulos, abscessos recorrentes e cicatrizes em áreas de dobras, raramente limitando-se a um único orifício na linha média sacrococcígea.\n\ne) Correta. O quadro clínico é soberano para cisto pilonidal infectado. A localização (região sacrococcígea/interglútea), o perfil do paciente (jovem, obeso e hirsuto) e a presença de orifícios com drenagem de secreção fétida são patognomônicos. O fato de ser recorrente (\"episódios semelhantes nos últimos meses\") reforça o diagnóstico de cronicidade da doença pilonidal com agudizações infecciosas.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  },
+  {
+    "id": "AJUDA_f25ca13b-c974-4e57-a62e-b74d2b039321",
+    "originalId": "f25ca13b-c974-4e57-a62e-b74d2b039321",
+    "statement": "A Lei nº 8.080/1990 estabelece os princípios e diretrizes fundamentais que norteiam o Sistema Único de Saúde (SUS) no Brasil, visando a promoção, proteção e recuperação da saúde de toda a população. Um dos princípios essenciais dessa legislação, que assegura um atendimento abrangente e contínuo aos indivíduos, desde a prevenção até a reabilitação, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acesso restrito aos serviços de saúde para grupos vulneráveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Foco exclusivo na assistência hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Integralidade da assistência, considerando ações preventivas e curativas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prestação de serviços de saúde apenas pelo setor privado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nA Lei nº 8.080/1990, em seu Artigo 7º, define os princípios que regem o Sistema Único de Saúde (SUS). O enunciado descreve especificamente o princípio da Integralidade.\n\nAnálise da alternativa correta (c):\nA Integralidade da assistência é entendida como um conjunto articulado e contínuo de ações e serviços preventivos e curativos, individuais e coletivos, exigidos para cada caso em todos os níveis de complexidade do sistema. Esse princípio garante que o paciente seja visto como um todo, recebendo desde orientações de promoção à saúde e vacinação até procedimentos cirúrgicos complexos e reabilitação, conforme sua necessidade.\n\nAnálise das alternativas incorretas:\n\nAlternativa (a): Incorreta. Um dos princípios fundamentais do SUS é a Universalidade, que garante o acesso a todos os cidadãos em todos os níveis de assistência, sem qualquer tipo de restrição. O sistema busca a equidade para tratar desigualmente os desiguais, mas jamais o acesso restrito.\n\nAlternativa (b): Incorreta. O SUS não possui foco exclusivo na assistência hospitalar. Pelo contrário, o sistema é estruturado em uma rede regionalizada e hierarquizada onde a Atenção Primária à Saúde (unidades básicas) deve ser a porta de entrada preferencial e a ordenadora do cuidado, priorizando ações de promoção e prevenção sobre o modelo hospitalocêntrico.\n\nAlternativa (d): Incorreta. O SUS é um sistema público e gratuito. O setor privado participa do sistema apenas de forma complementar, quando a rede pública é insuficiente para garantir o atendimento à população. Essa participação deve ocorrer mediante contrato de direito público ou convênio, com preferência para entidades filantrópicas e sem fins lucrativos.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  },
+  {
+    "id": "AJUDA_f265708c-5141-465d-9f66-75c1616c5aae",
+    "originalId": "f265708c-5141-465d-9f66-75c1616c5aae",
+    "statement": "Gestante 20 anos, primigesta e nulípara, veio para nova consulta pré-natal, no dia 11 de janeiro de 2026, referindo que está no 5º mês de gestação e assintomática. Fez várias ultrassonografias e refere ainda que tinha ciclos regulares e sabia o momento da sua ovulação todos os meses. Abaixo seguem os dados informados pela paciente e as ultrassonografias anteriores com suas idades gestacionais na época do exame:\n\n• Primeiro dia da última menstruação: 16 de agosto de 2025.\n• Último dia da última menstruação: 19 de agosto de 2025.\n• Data da última ovulação: 30 de agosto de 2025.\n• Data da 1ª ultrassonografia: 27 de setembro de 2025 (calculada pelo diâmetro médio do saco gestacional – 4 semanas).\n• Data da 2ª ultrassonografia: 31 de outubro de 2025 (IG: calculada pela média do diâmetro biparietal, circunferência abdominal e comprimento do fêmur – 11 semanas).\n• Data da 3ª ultrassonografia: 20 de novembro de 2025 (IG: calculada pelo comprimento céfalo-nádegas – 13 semanas e 6 dias).\n• Data da 4ª ultrassonografia: 06 de dezembro de 2025 (IG: 17 semanas).\n\nDiante desses dados, qual a idade gestacional CORRETA para acompanhamento da gravidez no dia da consulta de pré natal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "19 semanas e 1 dia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "21 semanas e 1 dias",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "20 semanas e 5 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "21 semanas e 2 dia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "22 semanas e 1 dia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para definir a idade gestacional (IG) correta para o acompanhamento pré-natal, devemos seguir as diretrizes da Federação Internacional de Ginecologia e Obstetrícia (FIGO) e do Ministério da Saúde. O parâmetro mais confiável para datar uma gestação é a Data da Última Menstruação (DUM), desde que a paciente tenha ciclos regulares e a DUM seja confirmada por uma ultrassonografia (USG) precoce.\n\nPasso 1: Determinar a IG pela DUM\nA DUM informada é 16 de agosto de 2025. Vamos calcular o tempo decorrido até o dia da consulta (11 de janeiro de 2026):\n- Agosto: 15 dias (31 - 16)\n- Setembro: 30 dias\n- Outubro: 31 dias\n- Novembro: 30 dias\n- Dezembro: 31 dias\n- Janeiro: 11 dias\nTotal de dias: 15 + 30 + 31 + 30 + 31 + 11 = 148 dias.\nConvertendo para semanas: 148 dividido por 7 = 21 semanas e 1 dia.\n\nPasso 2: Validar a DUM com as ultrassonografias\nA regra de ouro diz que a USG de primeiro trimestre, especificamente a que mede o comprimento céfalo-nádegas (CCN), é a mais precisa (margem de erro de 5 dias).\n- USG 3 (20/11/2025): Mediu o CCN e datou 13 semanas e 6 dias.\n- No mesmo dia (20/11), pelo cálculo da DUM, a paciente estaria com 13 semanas e 5 dias.\nA diferença entre a DUM e a USG mais precisa é de apenas 1 dia. Como a diferença é menor que 5 a 7 dias no primeiro trimestre, a DUM (16/08/2025) deve ser mantida como a referência oficial para o acompanhamento.\n\nAnálise das alternativas:\n\na) 19 semanas e 1 dia: Incorreta. Este valor está subestimado em duas semanas. Provavelmente ignora o cálculo correto do calendário ou utiliza parâmetros de exames tardios e menos precisos.\n\nb) 21 semanas e 1 dia: Correta. É o resultado do cálculo exato de dias transcorridos desde a DUM (16/08/2025), que foi validada pela ultrassonografia de primeiro trimestre (CCN), apresentando uma discrepância desprezível de apenas um dia.\n\nc) 20 semanas e 5 dias: Incorreta. Este valor poderia surgir de erros de contagem de meses de 30 dias fixos ou pelo uso de ultrassonografias menos precisas, como a 4ª USG (17 semanas em 06/12), que já possui margem de erro maior.\n\nd) 21 semanas e 2 dias: Incorreta. Erro de cálculo por apenas um dia. Se o examinador considerasse a data da 3ª USG como absoluta em vez da DUM, o cálculo daria 21 semanas e 2 dias (pois em 20/11 ela tinha 13s6d, somando-se os 52 dias restantes até 11/01). Contudo, na prática obstétrica, mantemos a DUM quando a concordância é alta.\n\ne) 22 semanas e 1 dia: Incorreta. Valor superestimado, sem respaldo nos dados cronológicos ou ultrassonográficos apresentados na questão.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:12:02.277Z"
+  }
+]

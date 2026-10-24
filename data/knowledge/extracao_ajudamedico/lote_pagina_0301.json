@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_53640eb1-11f3-4cbb-9618-7c2b2c759a6f",
+    "originalId": "53640eb1-11f3-4cbb-9618-7c2b2c759a6f",
+    "statement": "Paciente de 38 anos com sangramento uterino anormal e desejo gestacional (tem duas falhas de fertilizações in vitro no último ano) é submetida a procedimento histeroscópico com biopsia dirigida de endométrio. O exame anatomopatológico é de hiperplasia simples sem atipia. Qual é a conduta mais adequada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Curetagem uterina mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Histerectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de progestogêneos via oral e reavaliação histeroscópica após 3 a 6 meses de uso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Repetir ecografia pós-menstrual imediatamente, pois pode ser consequência das duas fertilizações, o que não necessitaria de nenhum tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo da hiperplasia endometrial sem atipia em uma paciente jovem com desejo reprodutivo. O diagnóstico foi obtido por biópsia dirigida via histeroscopia, que é o padrão-ouro para avaliação da cavidade uterina.\n\nAnálise das alternativas:\n\na) Incorreta. A curetagem uterina mecânica é um procedimento predominantemente diagnóstico ou utilizado para controle de hemorragias agudas. Ela não trata a causa hormonal (excesso de estrogênio sem oposição da progesterona) que leva à hiperplasia endometrial. Portanto, não é considerada uma conduta terapêutica definitiva para essa patologia.\n\nb) Incorreta. A histerectomia seria um tratamento definitivo e desproporcional para uma hiperplasia simples sem atipia, que possui um baixo risco de progressão para câncer (cerca de 1% a 3%). Além disso, a paciente tem 38 anos e desejo gestacional explícito, o que contraindica a remoção do útero neste momento.\n\nc) Correta. O tratamento de escolha para hiperplasia endometrial sem atipia em pacientes que desejam preservar a fertilidade é o uso de progestogênios (via oral ou sistema intrauterino de levonorgestrel). A progesterona atua opondo-se ao efeito proliferativo do estrogênio no endométrio, promovendo a sua diferenciação e regressão da hiperplasia. A reavaliação com nova biópsia (preferencialmente por histeroscopia) após 3 a 6 meses é obrigatória para confirmar a resolução do quadro antes de liberar a paciente para novas tentativas de fertilização in vitro.\n\nd) Incorreta. Embora os ciclos de fertilização in vitro envolvam estimulação hormonal, uma vez diagnosticada a hiperplasia por exame anatomopatológico, o tratamento médico é necessário. A simples repetição da ecografia não substitui o tratamento com progesterona, e a conduta expectante não é adequada, pois a persistência da hiperplasia pode dificultar a implantação embrionária e aumentar o risco de progressão da doença.\n\nResumo do Manejo: Diante de hiperplasia sem atipia e desejo de gravidez, utiliza-se progesterona para \"limpar\" o endométrio e realiza-se o controle histológico após alguns meses para garantir a cura antes da gestação.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.368Z"
+  },
+  {
+    "id": "AJUDA_536418c1-9149-46a6-9524-8bae7df6e21e",
+    "originalId": "536418c1-9149-46a6-9524-8bae7df6e21e",
+    "statement": "A hemorragia pós-parto (HPP) é uma das principais causas de morbimortalidade materna no mundo, correspondendo a 25% do total de óbitos maternos mundiais, e a segunda causa de morte materna no Brasil. Analise as sentenças a seguir:\n\nI. A HPP é a perda sanguínea acima de 1000 mL após parto vaginal ou acima de 2000 mL após parto cesárea, independentemente de sinais de instabilidade hemodinâmica.\nII. A compressão uterina bimanual deve ser a primeira manobra do tratamento não cirúrgico durante o quadro de atonia uterina, a fim de se obter controle transitório do sangramento.\nIII. O misoprostol é a droga de escolha para tratar a atonia uterina na hemorragia pós-parto.\nIV. A principal causa de hemorragia pós-parto (HPP) consiste na retenção de tecido placentário após o delivramento da placenta.\nV. Reconhecer fatores de risco para HPP no pré-natal e durante a assistência ao parto pode constituir-se no primeiro passo para evitar morte materna por HPP.\n\nAssinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente a sentença I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As sentenças I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As sentenças I, II, III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente a sentença III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "As sentenças II e V estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise detalhada das sentenças:\n\nSentença I: Incorreta. A definição clássica de Hemorragia Pós-Parto (HPP) é a perda sanguínea superior a 500 mL após parto vaginal ou superior a 1000 mL após parto cesárea. Atualmente, diversas diretrizes (como as da ACOG e da OPAS/OMS) consideram a HPP como qualquer perda sanguínea acima de 1000 mL, independentemente da via de parto, ou qualquer volume que cause instabilidade hemodinâmica. Os valores citados na alternativa (1000 mL para vaginal e 2000 mL para cesárea) estão incorretos e superestimados.\n\nSentença II: Correta. A compressão bimanual do útero (manobra de Hamilton) é uma manobra mecânica fundamental e deve ser iniciada prontamente no manejo da atonia uterina. Ela permite o controle temporário do sangramento por compressão direta dos vasos uterinos, ganhando tempo para que as medicações uterotônicas façam efeito ou para que intervenções mais invasivas sejam preparadas.\n\nSentença III: Incorreta. A droga de escolha (padrão-ouro) tanto para a prevenção quanto para o tratamento inicial da atonia uterina é a ocitocina. O misoprostol é uma prostaglandina (E1) utilizada como medicação adjuvante ou de segunda linha, sendo muito importante em locais com poucos recursos, mas não é a droga de primeira escolha.\n\nSentença IV: Incorreta. A principal causa de HPP é a atonia uterina (representando cerca de 70% a 80% dos casos), que faz parte do mnemônico dos \"4 Ts\" (Tônus, Trauma, Tecido e Trombina). A retenção de tecido placentário é uma causa importante, mas ocupa o segundo lugar em frequência, não sendo a principal.\n\nSentença V: Correta. A identificação precoce de fatores de risco (como gestação múltipla, polidrâmnio, macrossomia, trabalho de parto prolongado ou história prévia de HPP) permite que a equipe esteja preparada para intervir rapidamente. A antecipação e o manejo ativo do terceiro estágio do parto são os pilares para a redução da mortalidade materna por essa causa.\n\nConclusão: Estão corretas apenas as sentenças II e V.\n\nAlternativa correta: Letra (e).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.368Z"
+  },
+  {
+    "id": "AJUDA_53679589-37f2-4c6a-bb26-c73e897cefee",
+    "originalId": "53679589-37f2-4c6a-bb26-c73e897cefee",
+    "statement": "Em relação aos tumores de pele, assinale entre as afirmativas abaixo a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como princípio básico da cirurgia para tratamento do carcinoma espinocelular, o cirurgião deve ter em mente o cuidado em não fazer margens muito amplas pela dificuldade na reconstrução, devendo ser mais econômico possível",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pacientes com carcinoma espinocelular TO e T1 diagnosticados em biopsia incisional não podem ser tratados com curetagem e cauterização pelos péssimos índices de sucesso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O carcinoma espinocelular tem prevalência menor em pacientes transplantados em uso de imunossupressor, já que a medicação inibe o crescimento do tumor",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os tumores que se desenvolvem em cicatrizes de queimaduras geralmente comportam-se de maneira mais agressiva com maior índice de metástases",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. No tratamento cirúrgico do carcinoma espinocelular (CEC), o objetivo primordial é a cura oncológica por meio da exérese com margens de segurança adequadas. A dificuldade na reconstrução não deve justificar a redução dessas margens, pois margens insuficientes ou econômicas elevam significativamente o risco de recidiva local e progressão da doença.\n\nAlternativa b: Incorreta. Embora a excisão cirúrgica convencional ou a cirurgia de Mohs sejam os tratamentos de escolha, a curetagem e a eletrocoagulação podem ser utilizadas em casos selecionados de CEC de baixo risco, pequenos e superficiais (como o CEC in situ ou T1 bem-diferenciados em áreas de baixo risco). Portanto, não é correto afirmar que possuem índices de sucesso péssimos para todos os casos iniciais.\n\nAlternativa c: Incorreta. Pacientes transplantados e em uso de imunossupressores possuem um risco drasticamente aumentado de desenvolver câncer de pele não melanoma, especialmente o carcinoma espinocelular. Nesses pacientes, o CEC não apenas é mais frequente, como também costuma ser mais agressivo e apresentar crescimento mais rápido devido à falha na vigilância imunológica.\n\nAlternativa d: Correta. O carcinoma espinocelular que se desenvolve sobre cicatrizes de queimaduras antigas, úlceras crônicas ou processos inflamatórios prolongados é conhecido como úlcera de Marjolin. Esses tumores são classicamente mais agressivos, possuem maior grau de indiferenciação e apresentam um risco de metástase significativamente maior quando comparados aos carcinomas espinocelulares que surgem em pele sã ou apenas fotoexposta.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.368Z"
+  },
+  {
+    "id": "AJUDA_536a11a6-5187-4434-8cb1-94f6b9a164f3",
+    "originalId": "536a11a6-5187-4434-8cb1-94f6b9a164f3",
+    "statement": "Homem de 52 anos foi internado por causa de icterícia progressiva, iniciada há duas semanas, astenia intensa, febre e dor abdominal difusa. Refere que utilizou três comprimidos de paracetamol 750 mg nas últimas 24 horas para controle da febre. Nega uso de outros medicamentos e comorbidades. É etilista desde os 20 anos de idade e ingere cerca de 300mL de cachaça ao dia. Ao exame físico, apresenta icterícia, hepatomegalia dolorosa e discreto edema de membros inferiores. EXAMES DE LABORATÓRIO: AST 220U/L; ALT 95U/L; bilirrubina total 8,4mg/dL; bilirrubina direta 6,5mg/dL; GGT 320U/L; RNI 1,3; albumina 2,5g/dL; leucocitos 15.000/mm³; neutrófilos 9.840/mm³; sódio 138mEq/L; potássio 4,2mEq/L; cálcio total corrigido 9,2mg/dL; magnésio 2,0mg/dL; creatinina 0,9mg/dL; não reagente para HBsAg, anti-HBc IgM, anti-HAV IgM, anti-HCV, anti-HEV IgM, FAN, anti-LKM e anti-músculo liso; saturação de transferrina 12%; ceruloplasmina 25mg/dL e alfa-1-antitripsina 127mg/dL. Ultrassonografia abdominal: hepatomegalia difusa, sem dilatação de vias biliares ou lesões hepáticas focais. Assinale a alternativa que apresenta a conduta terapêutica MAIS ADEQUADA nesse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliar a prescrição de prednisolona",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar o cadastro imediato para transplante hepático de urgência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever ácido ursodesoxicólico e colestiramina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever N-acetilcisteína",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO:\nO quadro clínico e laboratorial aponta para Hepatite Alcoólica Grave. Os pontos-chave para esse diagnóstico são: história de etilismo pesado (300 mL de cachaça/dia equivale a mais de 100 g de etanol), icterícia de início recente, febre, hepatomegalia dolorosa e leucocitose com neutrofilia (reação leucemoide). Laboratorialmente, o padrão de transaminases é clássico: AST e ALT elevadas, porém abaixo de 500 U/L, com a relação AST/ALT maior que 2:1 (a piridoxina, necessária para a ALT, é deficiente em alcoólatras). Outras causas como hepatites virais, autoimunes e doenças metabólicas (Wilson, alfa-1) foram descartadas pelos exames negativos.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Correta): A prednisolona (40 mg/dia) é o tratamento de escolha para pacientes com hepatite alcoólica grave. A gravidade é classicamente definida pelo Índice de Função Discriminante de Maddrey (DF) maior ou igual a 32. Embora o cálculo exato do DF exija o tempo de protrombina em segundos, a combinação de bilirrubina total elevada (8,4 mg/dL) e o alargamento do RNI em um contexto de insuficiência hepática aguda sobre crônica sugere alta gravidade, justificando a avaliação para o uso de corticoide para reduzir a inflamação hepática e a mortalidade a curto prazo.\n\nAlternativa B (Incorreta): O transplante hepático não é a conduta imediata para este caso. Para pacientes com doença hepática alcoólica, a maioria dos centros exige um período mínimo de seis meses de abstinência documentada antes de considerar o transplante (regra dos 6 meses). Embora o transplante precoce possa ser discutido em protocolos de pesquisa para casos selecionados que não respondem ao tratamento clínico, ele nunca é a primeira conduta imediata sem antes tentar a terapia medicamentosa e estabilização.\n\nAlternativa C (Incorreta): O ácido ursodesoxicólico e a colestiramina são utilizados no manejo de doenças colestáticas crônicas (como Cirrose Biliar Primária) ou para alívio do prurido decorrente da colestase. Eles não têm papel no tratamento da fisiopatologia inflamatória da hepatite alcoólica.\n\nAlternativa D (Incorreta): A N-acetilcisteína (NAC) é o antídoto para a intoxicação por paracetamol. O paciente relatou o uso de apenas 2,25 g de paracetamol (três comprimidos de 750 mg) em 24 horas, dose que está bem abaixo do limite de toxicidade para adultos (geralmente acima de 7,5 g a 10 g). Embora alguns estudos avaliem o uso da NAC associada ao corticoide na hepatite alcoólica para reduzir a síndrome hepatorrenal, ela isoladamente não é a conduta principal nem a mais adequada para o tratamento da hepatite alcoólica por si só.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.368Z"
+  },
+  {
+    "id": "AJUDA_53712345-a4e6-4477-8aa5-c303da9e842f",
+    "originalId": "53712345-a4e6-4477-8aa5-c303da9e842f",
+    "statement": "Dor crônica difusa, subjetividade dos sintomas, preponderância em mulheres e falta de dados objetivos de imagem e de exames laboratoriais fazem com que a principal suspeita clínica seja de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Artrite reumatoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Polimialgia reumática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fibromialgia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Depressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. A artrite reumatoide (AR) caracteriza-se por inflamação articular objetiva (sinovite), geralmente simétrica, atingindo pequenas articulações das mãos e pés. Diferentemente do enunciado, a AR apresenta marcadores laboratoriais objetivos, como aumento de provas de atividade inflamatória (VHS e PCR) e presença de autoanticorpos (fator reumatoide e anti-CCP), além de alterações radiológicas como erosões ósseas.\n\nAlternativa b) Incorreta. A polimialgia reumática ocorre tipicamente em pacientes acima de 50 anos e manifesta-se com dor e rigidez nas cinturas escapular e pélvica. O diagnóstico depende fundamentalmente de dados objetivos: a elevação acentuada de marcadores inflamatórios no sangue (VHS e PCR). Sem essa alteração laboratorial, o diagnóstico de polimialgia reumática é pouco provável.\n\nAlternativa c) Correta. A fibromialgia é uma síndrome de dor crônica generalizada que se encaixa perfeitamente na descrição. Ela acomete majoritariamente mulheres (proporção de até 9 para 1) e o quadro é marcado pela subjetividade, incluindo sintomas como fadiga, distúrbios do sono e alterações de memória. Uma característica diagnóstica fundamental é a ausência de alterações em exames de imagem ou laboratoriais que justifiquem a dor, sendo o diagnóstico puramente clínico.\n\nAlternativa d) Incorreta. A depressão pode cursar com sintomas somáticos e dor crônica, além de estar frequentemente associada à fibromialgia. No entanto, a depressão é um transtorno do humor. Quando o enunciado destaca a \"dor crônica difusa\" como o elemento central e a falta de dados objetivos para explicar essa dor, a questão está direcionando o raciocínio para a fibromialgia dentro do contexto das doenças reumatológicas.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Síndromes Dolorosas Crônicas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.368Z"
+  },
+  {
+    "id": "AJUDA_537f0bd6-8b8c-4773-bf09-2a16972a4452",
+    "originalId": "537f0bd6-8b8c-4773-bf09-2a16972a4452",
+    "statement": "A Síndrome da Imunodeficiência Adquirida (AIDS) começou a ser reconhecida no início da década de 1980. É uma doença crônica que representa um problema de saúde pública. O HIV pode ser transmitido por via sexual, parenteral, vertical e pelo leite materno. Nas pessoas vivendo com HIV (PVHIV), as principais células infectadas são os linfócitos, que sofrem uma diminuição quantitativa progressiva ao longo da doença. Atualmente, é utilizada a Terapia Antirretroviral (TARV). Nesse sentido, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As infecções oportunistas costumam aparecer com contagem de linfócitos T CD8+ menor que 200.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Conforme o PCDT, recomenda-se início precoce da TARV, pois considera, além dos claros benefícios relacionados a redução da morbimortalidade, diminuição da transmissão da infecção, o impacto na redução da tuberculose e a disponibilidade de opções terapêuticas mais cômodas e bem toleradas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A contagem de linfócitos T CD8+ é o principal marcador da imunodeficiência do HIV/AIDS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A SRA (síndrome retroviral aguda) é um conjunto de manifestações clínicas aguda específicas relacionadas ao HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não há correlação entre a contagem de linfócitos T CD4+ e determinadas infecções oportunistas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. O erro da alternativa está em citar os linfócitos T CD8+. Na verdade, as infecções oportunistas costumam aparecer quando a contagem de linfócitos T CD4+ (e não CD8+) está abaixo de 200 células/mm³. O CD4+ é o principal alvo do vírus HIV e o marcador utilizado para definir o estágio de imunodeficiência.\n\nAlternativa b) Correta. Esta alternativa reflete o atual Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde. Atualmente, adota-se a estratégia de Tratamento para Todos, recomendando o início da Terapia Antirretroviral (TARV) imediatamente após o diagnóstico, independentemente da contagem de CD4. Os objetivos são reduzir a morbimortalidade do paciente, tornar a carga viral indetectável (o que impede a transmissão sexual, conceito I = I) e reduzir a incidência de doenças como a tuberculose. Além disso, os esquemas atuais (como o uso de dolutegravir) são muito mais toleráveis e simples do que no passado.\n\nAlternativa c) Incorreta. O principal marcador laboratorial para monitorar a progressão da imunodeficiência e o risco de infecções oportunistas na PVHIV é a contagem de linfócitos T CD4+. Os linfócitos T CD8+ (citotóxicos) atuam na resposta ao vírus, mas não são o parâmetro padrão para definir a gravidade da Aids.\n\nAlternativa d) Incorreta. A Síndrome Retroviral Aguda (SRA) caracteriza-se por manifestações clínicas inespecíficas, e não específicas. Os sintomas costumam mimetizar uma síndrome gripal ou mononucleose, apresentando febre, cefaleia, astenia, faringite, linfoadenopatia e exantema morbiliforme. Por serem sintomas comuns a várias viroses, o diagnóstico clínico nessa fase é difícil se não houver alto índice de suspeição.\n\nAlternativa e) Incorreta. Existe uma correlação muito estreita e bem estabelecida na literatura médica entre o nível de linfócitos T CD4+ e o surgimento de patógenos específicos. Por exemplo: a pneumocistose geralmente ocorre com CD4 abaixo de 200; a toxoplasmose cerebral e a criptococose com CD4 abaixo de 100; e infecções por citomegalovírus (CMV) ou complexo Mycobacterium avium (MAC) com CD4 abaixo de 50 células/mm³.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "HIV"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.368Z"
+  },
+  {
+    "id": "AJUDA_53895dee-1022-41bd-9aed-205776a67bec",
+    "originalId": "53895dee-1022-41bd-9aed-205776a67bec",
+    "statement": "Homem, 67 anos, tabagista 60 anos-maço, previamente assintomático. Há dois meses com dor ventilatório dependente em hemitórax direito e há uma semana com edema de face e em membros superiores, associado à presença de circulação colateral em parede torácica anterior bilateral. Piora clínica, com dispneia em repouso e necessidade de oxigênio suplementar. Radiografia de tórax abaixo. \n\nConsiderando a rápida evolução clínica e necessidade de rápida conduta, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de paciente com síndrome de veia cava superior por provável neoplasia pulmonar, rapidamente infiltrativa do mediastino. Medidas incluem administração de corticoide e provável radioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Maior probabilidade de tratar-se de tuberculose pulmonar, mostrada clinicamente pela rápida evolução e pelo aparecimento da síndrome de veia cava superior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicada cirurgia imediata, com finalidade diagnóstica e de alívio da insuficiência respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicação de quimioterapia de urgência, para descompressão da veia cava superior, seguida de cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito é clássico da Síndrome da Veia Cava Superior (SVCS). O paciente apresenta a tríade característica: edema na face e nos membros superiores (edema em \"pelerine\"), cianose e presença de circulação colateral visível na parede torácica anterior (como observado na primeira imagem). O histórico de tabagismo pesado (60 anos-maço) e a imagem radiológica revelando um grande alargamento do mediastino apontam fortemente para uma etiologia neoplásica, sendo o câncer de pulmão a causa mais comum.\n\nAnálise das alternativas:\n\na) CORRETA. A principal causa da SVCS em adultos é a neoplasia maligna (especialmente o carcinoma brônquico de pequenas células e o adenocarcinoma). O tratamento inicial visa ao alívio sintomático e à redução da obstrução. O uso de corticosteroides (como a dexametasona) ajuda a reduzir o edema peritumoral, enquanto a radioterapia é uma medida de urgência eficaz para promover a citorredução e a descompressão da veia cava na maioria dos tumores sólidos.\n\nb) INCORRETA. Embora a tuberculose possa causar linfonodomegalias mediastinais, ela raramente evolui com uma Síndrome da Veia Cava Superior tão aguda e exuberante em um paciente com carga tabágica tão elevada. O perfil epidemiológico e a gravidade do quadro sugerem fortemente malignidade.\n\nc) INCORRETA. A cirurgia não é a conduta inicial para SVCS de origem neoplásica. O procedimento cirúrgico em um mediastino infiltrado e com alta pressão venosa é de altíssimo risco e não oferece o alívio rápido que a radioterapia ou a terapia endovascular (stent) proporcionariam. Além disso, a presença de SVCS geralmente indica doença avançada, muitas vezes fora de proposta cirúrgica curativa.\n\nd) INCORRETA. A quimioterapia pode ser utilizada como tratamento inicial em tumores muito quimiossensíveis, como o câncer de pulmão de pequenas células ou linfomas. No entanto, a afirmação de que seria \"seguida de cirurgia\" está incorreta, pois a infiltração do mediastino e a própria Síndrome da Veia Cava Superior costumam classificar o tumor de pulmão como inoperável (estádio avançado).\n\nAssociação com as imagens:\nA foto clínica demonstra nitidamente a circulação colateral torácica, que surge como tentativa do organismo de desviar o fluxo sanguíneo obstruído na veia cava superior. A radiografia de tórax confirma o diagnóstico ao exibir uma massa volumosa no mediastino superior e médio, comprimindo as estruturas vasculares centrais.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pulmonares"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/e6913e45f8f84ff24e70e048bff4a56dea26c6345a421d14d0c6f8b4ae9e8705.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_53895dee-1022-41bd-9aed-205776a67bec_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/b892064789ae2651513fa47feba58fb134454cf24c6c2a5d79a8481244269674.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_53895dee-1022-41bd-9aed-205776a67bec_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.768Z"
+  },
+  {
+    "id": "AJUDA_53980171-f289-46e4-af38-c5a83f925b8d",
+    "originalId": "53980171-f289-46e4-af38-c5a83f925b8d",
+    "statement": "Em uma Unidade Básica de Saúde (UBS), a equipe local, preocupada com a alta prevalência de hipertensão arterial sistêmica (HAS) entre os pacientes, decidiu realizar um estudo epidemiológico para investigar possíveis fatores de risco associados à doença. Os pesquisadores selecionaram cerca de 50 pacientes com diagnóstico recente de HAS e 80 pacientes sem a doença, pareados por idade e sexo, que frequentavam a mesma UBS. Com base em entrevistas e em revisão de prontuários, foram coletadas informações sobre histórico familiar de HAS, nível de atividade física e padrão alimentar desses pacientes nos últimos 5 anos.\nQual foi o tipo de estudo realizado nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caso-controle.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Série temporal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O estudo descrito é um caso-controle. O ponto de partida é o desfecho: os pesquisadores selecionaram pessoas que já têm a doença (casos: 50 pacientes com HAS recente) e pessoas sem a doença (controles: 80 pacientes sem HAS). A partir daí, olharam para trás e investigaram a exposição prévia a possíveis fatores de risco: histórico familiar, atividade física e padrão alimentar nos últimos 5 anos.\n\nTrês elementos da questão confirmam esse desenho:\n1. A seleção foi feita pela presença ou ausência da doença, e não pela exposição.\n2. A coleta da exposição foi retrospectiva, por entrevistas e revisão de prontuários.\n3. Houve pareamento por idade e sexo, recurso típico do caso-controle para controlar variáveis de confusão.\n\nNesse desenho, a medida de associação adequada é a odds ratio (razão de chances). Não se calcula incidência nem risco relativo, porque o número de casos e controles é definido pelo pesquisador. O caso-controle também é especialmente útil para doenças de alta prevalência ou de longa latência, pois é rápido e barato. Sua principal limitação é o viés de memória (recordação), relevante aqui porque os dados de hábitos dos últimos 5 anos vieram de entrevistas.\n\nAnálise das alternativas:\n\na) Caso-controle – CORRETA. O estudo parte do desfecho (com HAS e sem HAS) e investiga retrospectivamente a exposição aos fatores de risco. A comparação entre grupos com e sem a doença, com pareamento, é a marca desse desenho.\n\nb) Coorte – INCORRETA. A coorte parte da exposição: indivíduos sem a doença são classificados como expostos ou não expostos e acompanhados ao longo do tempo para observar quem desenvolve o desfecho. Isso permite calcular incidência e risco relativo. Mesmo uma coorte retrospectiva (histórica) seleciona os participantes pela exposição, e não pela doença, como ocorreu na questão.\n\nc) Ecológico – INCORRETA. No estudo ecológico, a unidade de análise é um grupo populacional (municípios, países, regiões), com dados agregados. Não há informação individual que ligue exposição e desfecho na mesma pessoa, daí o risco de falácia ecológica. Na questão, os dados são individuais.\n\nd) Série temporal – INCORRETA. É um tipo de estudo ecológico que analisa a variação de um indicador populacional ao longo do tempo, por exemplo a taxa de HAS no município ano a ano. Não envolve a comparação de indivíduos com e sem a doença.\n\nDica de prova: identifique por onde o estudo começa. Se começa pela doença e investiga exposições passadas, é caso-controle. Se começa pela exposição e acompanha até o desfecho, é coorte. Se usa dados agregados de populações, é ecológico.\n\nGabarito: letra A.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.768Z"
+  },
+  {
+    "id": "AJUDA_539c2650-598c-4b92-a6ed-3e6484ec8dbc",
+    "originalId": "539c2650-598c-4b92-a6ed-3e6484ec8dbc",
+    "statement": "Um casal formado por um homem de 28 anos de idade e uma mulher nuligesta de 27 anos idade, refere 2 anos de tentativas de gestação. Ele, com histórico de uretrite tratada, exame físico sem alterações e espermograma normal. Ela, saudável, com ciclos menstruais regulares, sem queixas de dismenorreia ou dispareunia e com exame físico sem alterações. Qual é o próximo exame na investigação da infertilidade desse casal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliação hormonal para ele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressonância magnética de pelve para ela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Histerossalpingografia para ela.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cariótipo para ambos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A investigação básica da infertilidade conjugal deve ser iniciada após um ano de tentativas sem sucesso (ou seis meses se a mulher tiver mais de 35 anos). O protocolo inicial busca avaliar os três pilares principais: o fator masculino, o fator ovulatório e o fator tuboperitoneal/uterino. No caso clínico apresentado, o fator masculino já foi avaliado pelo espermograma, que apresentou resultado normal. A regularidade dos ciclos menstruais da paciente sugere que o fator ovulatório está preservado. Portanto, o próximo passo lógico é a avaliação da integridade anatômica das tubas e do útero.\n\nAlternativa a) Incorreta. A avaliação hormonal masculina (dosagem de testosterona, FSH e LH) só é indicada quando o espermograma apresenta alterações importantes, como uma concentração de espermatozoides muito baixa (oligozoospermia grave) ou ausência total (azoospermia). Como o espermograma do parceiro é normal, não há justificativa para este exame agora.\n\nAlternativa b) Incorreta. A ressonância magnética da pelve não é um exame de primeira linha na propedêutica da infertilidade. Ela costuma ser solicitada como um exame complementar para detalhar achados já identificados em exames iniciais, como a suspeita de malformações uterinas complexas, adenomiose ou mapeamento de endometriose profunda. Como a paciente tem exame físico normal e não apresenta sintomas como dismenorreia, a ressonância não é o próximo passo.\n\nAlternativa c) Correta. A histerossalpingografia é o exame padrão-ouro inicial para a avaliação do fator tuboperitoneal. Ela permite verificar se as tubas uterinas estão pérvias (abertas) e se há alterações na cavidade endometrial que possam impedir a nidação. Dado que o fator masculino e o provável fator ovulatório já foram considerados, investigar a causa mecânica/anatômica é a prioridade diagnóstica. Vale ressaltar que o histórico de uretrite do parceiro, embora tratado, acende um alerta para infecções por clamídia ou gonococo, que podem ser transmitidas e causar doença inflamatória pélvica subclínica na mulher, levando à obstrução tubária.\n\nAlternativa d) Incorreta. O estudo do cariótipo de banda G para o casal não faz parte da triagem inicial da infertilidade. Esse exame é reservado para contextos específicos, como casos de abortamento de repetição (perda de duas ou mais gestações) ou quando o homem apresenta alterações severas na produção de espermatozoides, o que não condiz com o quadro de um casal com ciclos regulares e espermograma normal.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.768Z"
+  },
+  {
+    "id": "AJUDA_539f8629-c09d-4ce2-a1bd-84bd450b9bb0",
+    "originalId": "539f8629-c09d-4ce2-a1bd-84bd450b9bb0",
+    "statement": "Paciente masculino, 46 anos, etilista pesado, com diagnóstico de hepatite alcoólica grave (DF 33), inicia corticosteroides. Recebe suporte nutricional, reposição de tiamina, acetilcisteína, além da abstinência alcoólica. Após 7 dias, Lille score é 0,21. Qual a conduta adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender corticosteroides, pois Lille <0,25 sugere má resposta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter corticosteroides até completar 28 dias, pois Lille indica boa resposta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Interromper o tratamento, pois DF não indicava o tratamento com corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Substituir corticosteroides por pentoxifilina para otimizar resposta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A hepatite alcoólica grave é definida por um índice de Maddrey (DF – Discriminant Function) igual ou superior a 32 ou pelo escore MELD superior a 20. No caso do paciente, com DF de 33, a indicação de iniciar a corticoterapia (geralmente prednisolona 40 mg/dia) está correta e bem fundamentada.\n\nA avaliação da resposta ao tratamento é obrigatória e deve ser feita no sétimo dia de terapia através do escore de Lille. Esse escore utiliza dados como idade, albumina, bilirrubina (inicial e no dia 7), creatinina e tempo de protrombina para prever o risco de mortalidade e a utilidade da continuidade do corticoide.\n\nO ponto de corte principal do escore de Lille é 0,45:\n- Lille menor que 0,45: Indica boa resposta ao tratamento. O paciente tem ganho de sobrevida com a medicação.\n- Lille maior ou igual a 0,45: Indica falha terapêutica (não respondedor). O corticoide deve ser suspenso para evitar riscos desnecessários de infecção e sepse, pois não altera o prognóstico nesses casos.\n\nAnálise das alternativas:\n\na) Incorreta. Um escore de Lille de 0,21 é considerado baixo (menor que 0,45), o que indica que o paciente é um \"respondedor\" ao tratamento. Portanto, a conduta é manter a medicação, e não suspendê-la.\n\nb) Correta. Como o paciente apresenta um Lille de 0,21, ele demonstra boa resposta laboratorial. O protocolo preconizado é completar o ciclo total de 28 dias de corticosteroide para reduzir a mortalidade a curto prazo.\n\nc) Incorreta. O DF (índice de Maddrey) de 33 é o critério exato que indica a gravidade e a necessidade de tratamento medicamentoso. Valores de DF iguais ou superiores a 32 justificam o uso de corticoides.\n\nd) Incorreta. A pentoxifilina não é mais recomendada como terapia de resgate ou de otimização. Estudos robustos (como o ensaio STOPAH) mostraram que a pentoxifilina não oferece benefício na sobrevida de pacientes com hepatite alcoólica. Além disso, não faz sentido substituir uma medicação que está funcionando (conforme indicado pelo escore de Lille).",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:16.768Z"
+  }
+]

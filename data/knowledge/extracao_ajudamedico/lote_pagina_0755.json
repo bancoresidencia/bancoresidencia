@@ -1,0 +1,520 @@
+[
+  {
+    "id": "AJUDA_d279bf11-b55f-4def-a09f-2651648471a4",
+    "originalId": "d279bf11-b55f-4def-a09f-2651648471a4",
+    "statement": "Paciente 48 anos, sexo masculino, admitido com relato de estar apresentando urina mais concentrada nos últimos dias além de uma perda de sensibilidade na ponta dos dedos, foi referido pelo Posto de Saúde devido a picos pressóricos. No pronto atendimento foi admitido hipocorado e ictérico. Observaram-se lesões em membros inferiores com padrão livedóide. Seguem os exames: Hb:7,1g/dL Ht: 16% GL:9800/mm Plaq:90000 Cr:7,1mg/dL, Ur: 167 PCR: 140,0 TGO:16 TGP:26 FA: 32 GGT: 42 Alb: 3,1 BT: 5,1 BI: 4,6 Haptoglobina: 24 EAS: Proteinúria 4+, Hematúria 3+, Com base do quadro clínico, quais os próximos exames, mais direcionados, a serem realizados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dosar ANCA e anti-membrana basal glomerular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dosar Fator Reumatóide e anti-CCP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dosagem de Crioglobulinas séricas e sorologia para Hepatite C.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Dosar FAN, C3, C4, CH50 e VHS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro sistêmico grave com acometimento de múltiplos órgãos, caracterizado por:\n\n1. Glomerulonefrite: Insuficiência renal aguda grave (creatinina de 7,1 mg/dL) com sedimento urinário ativo (hematúria e proteinúria maciça de 4+).\n2. Anemia Hemolítica: Hemoglobina de 7,1 g/dL associada a icterícia por bilirrubina indireta (4,6 mg/dL) e haptoglobina baixa (24 mg/dL), indicando destruição de hemácias.\n3. Vasculite: Sugerida pelas lesões com padrão livedoide em membros inferiores.\n4. Neuropatia periférica: Manifestada pela perda de sensibilidade na ponta dos dedos.\n\nEsta combinação de vasculite cutânea, neuropatia periférica e glomerulonefrite (frequentemente do tipo membranoproliferativa) é a apresentação clássica da Vasculite Crioglobulinêmica. Esta condição é causada pela precipitação de crioglobulinas nos vasos e tem uma associação extremamente forte (em cerca de 70% a 90% dos casos) com a infecção crônica pelo vírus da Hepatite C (HCV).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A dosagem de ANCA é direcionada para as vasculites associadas ao ANCA (como a Poliangeíte Microscópica e a Granulomatose com Poliangeíte), que tipicamente apresentam comprometimento pulmonar (síndrome pulmão-rim). O anti-MBG é usado para diagnosticar a doença de Goodpasture, que cursa com hemorragia alveolar e glomerulonefrite, mas não explica bem as lesões livedoides e a neuropatia.\n\nAlternativa (b) INCORRETA: O Fator Reumatoide e o anti-CCP são marcadores para Artrite Reumatoide. Embora a Artrite Reumatoide possa causar vasculite em casos graves, ela não é a causa principal de um quadro de insuficiência renal aguda tão agressivo com hemólise. Vale ressaltar que o Fator Reumatoide pode estar positivo na crioglobulinemia, mas o anti-CCP é específico para a artrite.\n\nAlternativa (c) CORRETA: Diante da forte suspeita de Vasculite Crioglobulinêmica (pela tríade de lesões cutâneas, neuropatia e glomerulonefrite), a confirmação diagnóstica exige a dosagem de crioglobulinas séricas. A investigação da sorologia para Hepatite C é indispensável, pois o tratamento da vasculite, em muitos casos, passa pelo controle da infecção viral subjacente.\n\nAlternativa (d) INCORRETA: FAN e o estudo do complemento (C3, C4 e CH50) são exames para o Lúpus Eritematoso Sistêmico (LES). Embora o LES possa causar anemia hemolítica e nefrite, o conjunto de achados (idade, sexo masculino e padrão de vasculite) torna a crioglobulinemia uma hipótese muito mais provável e direcionada para os achados descritos. Na crioglobulinemia, observa-se classicamente um consumo isolado ou muito mais acentuado de C4 em relação ao C3.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Hepatites Virais",
+      "Vasculites",
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:51.459Z"
+  },
+  {
+    "id": "AJUDA_d27f8b26-22d0-4ac2-9ef2-d3b96c81f3a3",
+    "originalId": "d27f8b26-22d0-4ac2-9ef2-d3b96c81f3a3",
+    "statement": "Uma mulher de 52 anos é internada com insuficiência renal aguda rapidamente progressiva, acompanhada de artralgias, púrpura palpável em membros inferiores e fadiga intensa há duas semanas. Relata também parestesia distal, episódios de fenômeno de Raynaud no inverno e uma história de hepatite C crônica tratada irregularmente. Ao exame físico, apresenta PA 160/100 mmHg sem sinais pulmonares relevantes. Abdome sem hepatoesplenomegalia. Presença de púrpuras não trombocitopênicas nas pernas. Exames laboratoriais: creatinina: 3,1mg/dL; C4: indetectável; C3: baixo; Fatores reumatoides e FAN: negativos; Anti-dsDNA: negativo; ANCA: negativo; PCR: elevada; Anti-HCV positivo. Exame de urina: hemácias dismórficas, proteinúria 2g/24h. A biópsia renal revela: Glomerulonefrite membranoproliferativa com hipercelularidade e depósitos subendoteliais. Imunofluorescência: IgM e C3 em padrão granular, além de depósitos de C1q, formando aspecto “em mosaico” (pseudotrombos); presença de trombos intraluminais PAS-positivos compatíveis com crioclobs. O diagnóstico mais provável, neste caso, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glomerulonefrite lúpica classe IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Granulomatose com poliangiite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Granulomatose eosinofílica com poliangiite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Crioglobulinemia mista associada ao HCV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Glomerulonefrite pós-estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nO quadro descrito apresenta uma paciente com a tríade clássica de Meltzer, composta por púrpura palpável, artralgia e fadiga. A presença de manifestações sistêmicas como o fenômeno de Raynaud, parestesias (sugerindo vasculite de vasa nervorum) e insuficiência renal aguda com sedimento urinário ativo (hemácias dismórficas e proteinúria) aponta para uma vasculite de pequenos vasos. O antecedente de hepatite C crônica e a hipocomplementemia severa, especificamente com C4 indetectável, são os achados laboratoriais mais sugestivos para o diagnóstico.\n\nAlternativa a: Incorreta. A glomerulonefrite lúpica classe IV (proliferativa difusa) pode cursar com padrão histológico membranoproliferativo e consumo de complemento (C3 e C4). Entretanto, a paciente apresenta FAN e anti-dsDNA negativos, o que torna o diagnóstico de Lúpus Eritematoso Sistêmico improvável. Além disso, a história de hepatite C e a presença de pseudotrombos intraluminais na biópsia são característicos da crioglobulinemia.\n\nAlternativa b: Incorreta. A granulomatose com poliangiite é uma vasculite associada ao ANCA que tipicamente envolve o trato respiratório superior e inferior. No caso descrito, o ANCA foi negativo e não há sinais de acometimento pulmonar ou de vias aéreas superiores. O padrão de depósitos de imunocomplexos na imunofluorescência também afasta as vasculites pauci-imunes.\n\nAlternativa c: Incorreta. A granulomatose eosinofílica com poliangiite caracteriza-se por asma brônquica, eosinofilia importante no sangue periférico e vasculite. A paciente não apresenta antecedentes atópicos ou asmáticos, e o quadro laboratorial de hipocomplementemia e a biópsia com pseudotrombos não são compatíveis com essa patologia.\n\nAlternativa d: Correta. O diagnóstico é de Crioglobulinemia Mista associada ao vírus da hepatite C (HCV). O HCV é o principal fator etiológico desta condição, onde há formação de crioglobulinas (imunoglobulinas que se precipitam em baixas temperaturas). O perfil laboratorial marcante é o consumo de C4 (frequentemente indetectável) com C3 baixo ou normal. Na biópsia renal, o achado de glomerulonefrite membranoproliferativa associado a trombos intraluminais PAS-positivos (compostos por agregados de crioglobulinas), também chamados de pseudotrombos, é patognomônico da doença.\n\nAlternativa e: Incorreta. A glomerulonefrite pós-estreptocócica (GNPE) é uma causa comum de síndrome nefrítica com consumo de complemento, porém o consumo ocorre predominantemente pela via alternativa, resultando em C3 baixo e C4 normal. Além disso, a GNPE não costuma cursar com púrpura palpável crônica ou vasculite sistêmica, e sua histologia clássica apresenta depósitos subepiteliais conhecidos como corcovas ou humps.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Hepatites Virais",
+      "Vasculites",
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:51.459Z"
+  },
+  {
+    "id": "AJUDA_d2801ce3-b643-4ada-a167-9c6b4242c525",
+    "originalId": "d2801ce3-b643-4ada-a167-9c6b4242c525",
+    "statement": "Homem de 50 anos apresenta quadro clínico compatível com doença do refluxo gastroesofágico. Retorna ao consultório com endoscopia digestiva alta com a seguinte descrição: esôfago de calibre, peristalse e mucosa normais, exceto na porção distal em que se observam múltiplas erosões multiformes que confluem na altura da junção esofagogástrica, ocupando mais de 75% da circunferência do órgão. A junção esofagogástrica é móvel e está 3cm acima do pinçamento diafragmático. Presença de refluxo espontâneo durante o exame. O grau de esofagite desse paciente, segundo a classificação endoscópica de Los Angeles, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "B",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "C",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "D",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação de Los Angeles é o sistema mais utilizado para graduar a gravidade da esofagite erosiva durante a endoscopia digestiva alta. Ela se baseia na extensão das erosões e na sua capacidade de confluir entre as pregas mucosas e ao redor da circunferência do esôfago.\n\nOs critérios são os seguintes:\n\nGrau A: Uma ou mais erosões (lesões de mucosa) de até 5 mm em sua maior extensão, que não se estendem entre o topo de duas pregas mucosas.\n\nGrau B: Pelo menos uma erosão com mais de 5 mm de extensão, mas que ainda não é contínua entre o topo de duas pregas mucosas.\n\nGrau C: Erosões que se estendem entre o topo de duas ou mais pregas mucosas (confluentes), mas que ocupam menos de 75% da circunferência total do esôfago.\n\nGrau D: Erosões que se estendem entre o topo de duas ou mais pregas mucosas e que ocupam 75% ou mais da circunferência esofágica.\n\nAnálise das alternativas:\n\na) Incorreta. No grau A, as erosões são puntiformes ou lineares muito curtas (até 5 mm) e obrigatoriamente isoladas, sem confluência. O quadro descrito é muito mais grave.\n\nb) Incorreta. No grau B as lesões podem ser longas, mas a principal característica é que elas permanecem isoladas no topo das pregas, sem se unir (confluir) com lesões de pregas vizinhas.\n\nc) Incorreta. No grau C já existe a confluência descrita no enunciado, porém o limite máximo de acometimento da circunferência é de 75%. O paciente em questão apresenta ocupação de \"mais de 75%\".\n\nd) Correta. A descrição de erosões que confluem na altura da junção esofagogástrica e ocupam mais de 75% da circunferência do órgão preenche exatamente os critérios para o grau D de Los Angeles, que representa a forma mais severa de esofagite erosiva.\n\nInformação adicional: O fato de a junção esofagogástrica estar 3 cm acima do pinçamento diafragmático indica a presença de uma hérnia de hiato, condição que frequentemente predispõe a quadros de refluxo mais intensos e esofagites mais graves como a descrita.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:51.459Z"
+  },
+  {
+    "id": "AJUDA_d2863843-b282-4bbd-a963-c244d4c80e68",
+    "originalId": "d2863843-b282-4bbd-a963-c244d4c80e68",
+    "statement": "Gestante, com 25 semanas de idade gestacional, queixando-se de dor suprapúbica, disúria, polaciúria e urgência miccional. Exame físico: colo e vagina sem lesões, muco cervical cristalino, conteúdo vaginal fisiológico; Giordano negativo bilateralmente. Paciente nega episódios anteriores deste mesmo quadro clínico. Neste contexto, logo após coletar urocultura, a conduta mais adequada dentre as opções abaixo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tratar após resultado de urocultura, conforme sensibilidade aos antibióticos testados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "antibioticoterapia oral ambulatorial sem necessidade de profilaxia com antibiótico após tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "antibioticoterapia intravenosa em ambiente hospitalar sem necessidade de profilaxia com antibiótico após tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "antibioticoterapia oral ambulatorial, iniciando profilaxia com antibiótico após tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "antibioticoterapia intravenosa em ambiente hospitalar, iniciando profilaxia com antibiótico após tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clássico de cistite aguda (infecção do trato urinário – ITU baixa). Os sintomas de disúria, polaciúria e dor suprapúbica, somados ao exame físico com sinal de Giordano negativo (ausência de dor à punho-percussão lombar), confirmam o acometimento apenas da bexiga, sem sinais de pielonefrite (ITU alta). Por se tratar de uma gestante, a conduta deve ser imediata devido aos riscos de prematuridade, ruptura prematura de membranas e progressão para sepse.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Na gestação, tanto a bacteriúria assintomática quanto a cistite devem ser tratadas assim que diagnosticadas. Não se deve aguardar o resultado da urocultura para iniciar a antibioticoterapia; deve-se coletar o exame e iniciar o tratamento empírico imediatamente, ajustando-o posteriormente, se necessário, conforme o antibiograma.\n\nAlternativa b) Correta. A cistite é uma infecção baixa e, na ausência de sinais de gravidade (como febre, queda do estado geral ou vômitos), o tratamento de escolha é a antibioticoterapia oral em regime ambulatorial (ex.: nitrofurantoína, fosfomicina ou cefalexina). A profilaxia medicamentosa (uso de antibiótico em dose baixa até o final da gestação) só está indicada em casos de ITU recorrente (dois ou mais episódios de cistite) ou após um único episódio de pielonefrite. Como a paciente nega episódios anteriores, a profilaxia não é necessária neste momento.\n\nAlternativa c) Incorreta. A via intravenosa e a internação hospitalar são reservadas para casos de pielonefrite, gestantes com sinais de sepse, instabilidade hemodinâmica ou aquelas que não toleram a via oral devido a vômitos. A cistite não complicada é tratada por via oral.\n\nAlternativa d) Incorreta. Embora o tratamento inicial seja ambulatorial e por via oral, a indicação de quimioprofilaxia está errada para este caso. A profilaxia só deve ser iniciada se a paciente apresentar recorrência do quadro clínico ou se tiver tido uma pielonefrite. Para um primeiro episódio de cistite, faz-se apenas o tratamento curativo e o acompanhamento com uroculturas de controle mensais.\n\nAlternativa e) Incorreta. Esta alternativa associa dois erros para o caso em questão: a necessidade de internação/medicação venosa (desnecessária para cistite) e a indicação de profilaxia (desnecessária para um primeiro episódio de infecção baixa).",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "ITU - Infecção do Trato Urinário",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:51.459Z"
+  },
+  {
+    "id": "AJUDA_d29ecc84-3b56-4800-bdc6-b136c0563032",
+    "originalId": "d29ecc84-3b56-4800-bdc6-b136c0563032",
+    "statement": "Em um plantão na terapia Intensiva, você acaba de avaliar um paciente do sexo masculino, de 74 anos, portador de DPOC e diabetes mellitus tipo 2, internado há 5 dias em UTI, por acidente vascular cerebral isquêmico, atualmente em VM com TOT em redução de parâmetros até então. Durante o plantão, evolui com febre de 38,9 °C, secreção traqueal purulenta e seguinte imagem:\n\nA unidade tem prevalência de MRSA 25 % e alta taxa de bacilos gram-negativos multirresistentes.\nQual o esquema empírico inicial MAIS indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ceftriaxona e azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Piperacilina-tazobactam e linezolida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Piperacilina-tazobactam.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Meropenem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um paciente com Pneumonia Associada à Ventilação Mecânica (PAV), definida como pneumonia que ocorre após 48 a 72 horas da intubação endotraqueal. O diagnóstico é sustentado pela tríade: febre, secreção traqueal purulenta e surgimento de novo infiltrado pulmonar na radiografia de tórax. Na imagem apresentada, observa-se a presença do tubo orotraqueal e uma consolidação/infiltrado evidente no terço médio e inferior do pulmão esquerdo, confirmando o foco infeccioso pulmonar em um paciente ventilado.\n\nPara a escolha do esquema antibiótico empírico, deve-se considerar os fatores de risco do paciente e a microbiologia local da unidade. No caso, a questão informa que a unidade possui prevalência de MRSA (*Staphylococcus aureus* resistente à meticilina) de 25% e alta taxa de gram-negativos multirresistentes. De acordo com as diretrizes atuais (como as da IDSA/ATS), se a prevalência de MRSA na unidade for superior a 10-20%, a cobertura empírica para esse patógeno é obrigatória. Além disso, a presença de gram-negativos resistentes exige cobertura de amplo espectro, preferencialmente com atividade antipseudomonas.\n\nAnálise das alternativas:\n\na) Ceftriaxona e azitromicina: Incorreta. Este é um esquema clássico para pneumonia comunitária grave. Não oferece cobertura para *Pseudomonas aeruginosa* nem para MRSA, sendo insuficiente para o contexto de uma PAV em ambiente com alta resistência bacteriana.\n\nb) Piperacilina-tazobactam e linezolida: Correta. A piperacilina-tazobactam é um antibiótico de amplo espectro com excelente ação contra bacilos gram-negativos, incluindo a *Pseudomonas aeruginosa*. A linezolida é adicionada para cobrir o MRSA, o que é mandatório nesta UTI devido à prevalência de 25% (acima do limite de 10-20% recomendado para iniciar cobertura empírica).\n\nc) Piperacilina-tazobactam: Incorreta. Embora a piperacilina-tazobactam trate adequadamente a maioria dos gram-negativos e a *Pseudomonas*, o esquema está incompleto por não cobrir o MRSA em uma unidade onde sua prevalência é sabidamente elevada.\n\nd) Meropenem: Incorreta. O meropenem é um carbapenêmico de espectro muito amplo, indicado em casos de suspeita de germes produtores de ESBL (*Extended-spectrum beta-lactamase*). No entanto, de forma isolada, ele não possui cobertura contra MRSA. Assim como na alternativa C, o esquema peca por não tratar o estafilococo resistente em uma unidade de alto risco.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica",
+      "Pneumonias Bacterianas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9945f4f83192ee15763e67026b82aeb60f99c5e62925ea7087f20e4a50ace276.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d29ecc84-3b56-4800-bdc6-b136c0563032_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:52.046Z"
+  },
+  {
+    "id": "AJUDA_d2a7d3be-38ea-46aa-b5a8-224a35b0b660",
+    "originalId": "d2a7d3be-38ea-46aa-b5a8-224a35b0b660",
+    "statement": "Situação-Problema: Mulher, 28 anos de idade, G2P1, 26 semanas de gestação, sem comorbidades prévias. História familiar de diabetes mellitus tipo 2 (pai). Ganho ponderal de 10 kg até o momento. Teste oral de tolerância à glicose (TOTG) 75 g: jejum 94 mg/dL; 1 h: 185 mg/dL; 2 h: 161 mg/dL. Relata alimentação rica em carboidratos simples e rotina sedentária por trabalho administrativo. Ultrassonografia obstétrica às 26 semanas: feto único, crescimento adequado (p60), líquido amniótico normal, doppler normal. Sem cetonúria. Não usa medicamentos. Solicita plano alimentar estruturado.\n\nIndique os níveis glicêmicos desejáveis como metas, no acompanhamento dessa paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glicemias de Jejum < 110 mg/dL",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Glicemias de Jejum entre 65 - 95 mg/dL",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Glicemias Pós-prandiais (2h) < 160 mg/dL",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Glicemias de Jejum < 100 mg/dL e Pós-prandiais (2h) < 180 mg/dL",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente do caso clínico apresenta Diabetes Mellitus Gestacional (DMG), diagnosticada pelo teste de tolerância oral à glicose de 75g realizado entre 24 e 28 semanas, no qual todos os valores ultrapassaram os limites de corte (jejum maior ou igual a 92 mg/dL, 1h maior ou igual a 180 mg/dL e 2h maior ou igual a 153 mg/dL).\n\nApós o diagnóstico, o automonitoramento glicêmico é essencial para guiar a terapia nutricional e avaliar a necessidade de insulinoterapia. Segundo as diretrizes da Sociedade Brasileira de Diabetes (SBD), FEBRASGO e American Diabetes Association (ADA), os alvos glicêmicos recomendados na gestação são:\n- Glicemia de jejum e pré-prandial: menor que 95 mg/dL (com limite inferior de segurança geralmente fixado entre 60 e 65 mg/dL para evitar hipoglicemias).\n- Glicemia 1 hora pós-prandial: menor que 140 mg/dL.\n- Glicemia 2 horas pós-prandial: menor que 120 mg/dL.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O valor de 110 mg/dL para o jejum é excessivo no contexto gestacional e está associado a maior risco de macrossomia fetal, polidrâmnio e hiperinsulinismo fetal.\n\nAlternativa b: Correta. A faixa de 65 a 95 mg/dL contempla o teto preconizado para a glicemia de jejum (menor que 95 mg/dL), mantendo uma margem de segurança inferior para evitar eventos hipoglicêmicos maternos.\n\nAlternativa c: Incorreta. A meta para a glicemia medida 2 horas após as refeições deve ser menor que 120 mg/dL. O valor de 160 mg/dL é muito tolerante e reflete descontrole metabólico.\n\nAlternativa d: Incorreta. Ambas as metas propostas estão inadequadas para a gravidez. Na gestação, os limites são mais rigorosos do que na população geral não gestante: o jejum deve ser menor que 95 mg/dL e a glicemia de 2 horas pós-prandial menor que 120 mg/dL.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:52.047Z"
+  },
+  {
+    "id": "AJUDA_d2aa485d-10b2-49a4-aaba-b2bbcab944d3",
+    "originalId": "d2aa485d-10b2-49a4-aaba-b2bbcab944d3",
+    "statement": "Homem, 63 anos de idade, foi admitido no Serviço de Emergência com dor na região inguinal à direita e com abaulamento local há 8 horas, acompanhados de distensão abdominal e dois episódios de vômitos. Tem antecedente de doença pulmonar obstrutiva crônica em uso de oxigênio domiciliar. Ao exame físico, encontrava-se em regular estado geral e desidratado, ausculta pulmonar e cardíaca sem alterações; abdome distendido, sem dor à palpação profunda e sem sinais de irritação peritoneal; região inguinal direita com abaulamento local endurecido de 4 cm, sem hiperemia e doloroso à palpação. \n\nExames laboratoriais: \nHb: 17,1 g/dL \nHt: 51% \nLeucograma: 8.274/mm³\nCreatinina: 1,9 mg/dL \nUreia: 91 mg/dL \n\nAlém da hidratação e suporte clínico, qual é a melhor conduta neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inguinotomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Laparotomia mediana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução manual da hérnia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO E CENÁRIO CLÍNICO:\nO quadro clínico descreve um homem de 63 anos com uma hérnia inguinal direita encarcerada há 8 horas, apresentando sinais de obstrução intestinal (vômitos e distensão abdominal). O paciente possui doença pulmonar obstrutiva crônica (DPOC) grave, dependente de oxigênio, o que aumenta significativamente o risco anestésico e cirúrgico. Laboratorialmente, apresenta sinais de desidratação e hemoconcentração (Ht e Hb elevados, além de azotemia pré-renal). Não há sinais claros de peritonite (irritação peritoneal) ou de sofrimento de alça avançado (ausência de febre, leucocitose ou hiperemia local), mas a obstrução intestinal indica que o conteúdo herniário está comprometido.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Laparoscopia): INCORRETA. Embora a laparoscopia possa ser utilizada em hérnias eletivas ou para avaliar a viabilidade da alça após redução, ela não é a conduta inicial padrão neste caso. Além disso, o paciente tem DPOC grave com uso de oxigênio domiciliar; o pneumoperitônio necessário na laparoscopia pode comprometer seriamente a função respiratória desse paciente, sendo preferível uma via que não demande pressões abdominais elevadas.\n\nAlternativa B (Inguinotomia): CORRETA. A via inguinal (inguinotomia) é a abordagem de escolha para o tratamento de uma hérnia inguinal encarcerada. Ela permite o acesso direto ao saco herniário, sua abertura para avaliação do conteúdo (se há sofrimento de alça ou necrose) e a correção do defeito anatômico. Em pacientes de alto risco cirúrgico, como este com DPOC grave, a inguinotomia pode inclusive ser realizada sob bloqueio regional ou anestesia local e sedação, minimizando riscos.\n\nAlternativa C (Laparotomia mediana): INCORRETA. A laparotomia mediana é uma cirurgia de grande porte e muito invasiva. Ela estaria indicada apenas se houvesse sinais claros de peritonite generalizada, perfuração intestinal ou se, durante a inguinotomia, não fosse possível reduzir ou tratar adequadamente uma alça necrótica. Utilizá-la como primeira opção aumentaria desnecessariamente a morbidade e o risco respiratório do paciente.\n\nAlternativa D (Redução manual da hérnia): INCORRETA. A tentativa de redução manual (manobra de Taxe) é contraindicada quando há sinais de obstrução intestinal (vômitos e distensão) ou quando o tempo de encarceramento é prolongado (neste caso, 8 horas), devido ao risco de reduzir para dentro da cavidade abdominal uma alça intestinal já isquêmica ou necrótica, o que levaria a uma peritonite tardia e sepse (redução \"em bloco\").\n\nGABARITO: A alternativa correta é a letra (b).",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:52.047Z"
+  },
+  {
+    "id": "AJUDA_d2b4526b-2c75-4da2-b5df-adf630500b19",
+    "originalId": "d2b4526b-2c75-4da2-b5df-adf630500b19",
+    "statement": "Criança do sexo masculino, 7 anos, é levada aos pais à consulta pediátrica. Eles trazem como queixa que acham o filho muito pequeno para a idade e estão preocupados. Durante anamnese, relatam que paciente nasceu termo, peso do nascimento: 3,1 Kg, negaram problemas na gestação e durante o parto. Teve um internamento prévio por pneumonia com 1 ano, mas sem necessidade de UTI. Quanto à alimentação, cuidadores relatavam um cardápio variado, com recusa para alguns alimentos, principalmente frutas e legumes. \nAo exame físico, não identificada nenhuma alteração. Desenvolvimento puberal de Tanner: G1P1. Dados antropométricos: Peso = 25 Kg, Altura = 110 cm, Altura materna: 151 cm, Altura paterna: 165 cm. \nPais não lembravam sobre dados da puberdade. \nCom base nos dados clínicos, qual seria sua conduta inicial para a queixa dos pais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tranquilizaria os pais quanto à possível hipótese de baixa estatura familiar, solicitaria radiografia de mão e punho esquerdo para avaliar idade óssea e definir necessidade de prosseguir investigação, e acompanharia velocidade de crescimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Como escolar com baixa estatura de acordo com a curva de crescimento, solicitaria exames laboratoriais para descartar doenças inflamatórias e endócrinas e acompanharia velocidade de crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diante da possibilidade de retardo constitucional do crescimento, aguardaria o paciente iniciar a puberdade para avaliar a velocidade de crescimento e acompanhar a recuperação da estatura com o estirão dessa faixa etária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminharia paciente à endocrinologia pediátrica para a condução do caso por especialista e avaliação de intervenções hormonais, pois paciente abaixo do seu alvo genético e velocidade de crescimento alterada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Paciente com estatura adequada para a idade, não sendo necessária nenhuma investigação adicional. Orientar apenas o acompanhamento mensal da velocidade de crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, o primeiro passo é analisar o crescimento da criança em relação aos padrões normais e ao seu potencial genético (alvo genético).\n\n1. Análise do gráfico de crescimento: Ao observarmos a imagem fornecida (gráfico de Estatura por Idade da OMS para meninos de 5 a 19 anos), cruzamos a idade de 7 anos com a altura de 110 cm. Notamos que o ponto se encontra abaixo da linha do escore-z -2 (que estaria em aproximadamente 112 cm). Portanto, a criança apresenta baixa estatura por definição técnica (estatura para a idade abaixo do escore-z -2).\n\n2. Alvo Genético: O cálculo do alvo genético para meninos é feito pela fórmula: (Altura do Pai + Altura da Mãe + 13) / 2. No caso clínico: (165 + 151 + 13) / 2 = 164,5 cm. Observamos que ambos os pais possuem estatura baixa, o que direciona o raciocínio clínico para uma variante fisiológica do crescimento, especificamente a Baixa Estatura Familiar.\n\n3. Diagnóstico Diferencial e Conduta: As duas principais variantes fisiológicas da baixa estatura são a Baixa Estatura Familiar (BEF) e o Retardo Constitucional do Crescimento e Puberdade (RCCP). Na BEF, a idade óssea costuma ser compatível com a idade cronológica e a criança cresce dentro do seu canal familiar. No RCCP, a idade óssea é atrasada em relação à cronológica. A conduta inicial padrão para investigar baixa estatura é a solicitação da radiografia de mão e punho esquerdos para avaliação da idade óssea e o acompanhamento rigoroso da velocidade de crescimento.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Esta é a conduta inicial mais adequada. Como os pais são baixos e o alvo genético é baixo, a hipótese de Baixa Estatura Familiar é muito provável. A radiografia para avaliar a idade óssea é o exame subsidiário de escolha para iniciar a investigação e diferenciar as variantes fisiológicas das patológicas.\n\nAlternativa b) Incorreta. Embora exames laboratoriais (como hemograma, função renal, tireoidiana e triagem para doença celíaca) façam parte da investigação de baixa estatura, eles geralmente são solicitados em um segundo momento ou se houver sinais de doença sistêmica ou alteração na velocidade de crescimento. O primeiro passo diagnóstico é a idade óssea.\n\nAlternativa c) Incorreta. O diagnóstico de Retardo Constitucional do Crescimento e Puberdade não pode ser assumido apenas pela observação clínica inicial sem a realização de uma idade óssea, que deveria estar atrasada. Além disso, a conduta de apenas aguardar sem nenhuma investigação básica (como a idade óssea) é inadequada para uma criança que já se encontra abaixo do escore-z -2 no gráfico.\n\nAlternativa d) Incorreta. O manejo inicial da baixa estatura é de competência do pediatra geral. O encaminhamento ao endocrinologista pediátrico e a consideração de intervenções hormonais são reservados para casos em que a velocidade de crescimento é nitidamente patológica, quando há um desvio muito acentuado do alvo genético (o que não é o caso, já que o paciente segue o padrão dos pais) ou quando a triagem inicial aponta doenças endócrinas.\n\nAlternativa e) Incorreta. Ao analisar o gráfico da OMS anexado à questão, 110 cm para um menino de 7 anos está abaixo da linha de -2 desvios-padrão (escore-z -2). Portanto, a estatura não é considerada adequada para a idade, exigindo, no mínimo, a investigação inicial com idade óssea e cálculo da velocidade de crescimento.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c8a68acec286c2bd10d2fbca20e284ac99bc042988f3761b03a5e24bda1927c1.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d2b4526b-2c75-4da2-b5df-adf630500b19_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:52.509Z"
+  },
+  {
+    "id": "AJUDA_d2b6d500-fbc7-440b-bf8f-f6f05be2c9d6",
+    "originalId": "d2b6d500-fbc7-440b-bf8f-f6f05be2c9d6",
+    "statement": "Paciente, masculino, 56 anos de idade, queixando de fraqueza e dor lombar há 6 meses, vem a consulta médica com exames que mostram lesões líticas em coluna e quadril, anemia, plaquetopenia, hipercalcemia onde é internado. Creatinina na admissão é de 0,9 mg/dL e evolui em 48 horas para 3,9 mg/dL e diurese de 150 mL nas últimas 24 horas. Neste caso específico, as principais hipóteses diagnósticas são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "IRA KDIGO 1 e microangiopatia trombótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IRA KDIGO 2 e vasculite renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IRA KDIGO 3 e mieloma múltiplo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "DRC e hiperparatireoidismo secundário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico sugestivo de Mieloma Múltiplo, uma neoplasia de plasmócitos. Os achados clínicos e laboratoriais preenchem os critérios conhecidos pelo acrônimo CRAB:\nC (Cálcio): Hipercalcemia relatada.\nR (Renal): Insuficiência renal aguda.\nA (Anemia): Anemia e plaquetopenia (indicando infiltração da medula óssea).\nB (Bone/Osso): Lesões líticas em coluna e quadril.\n\nA dor lombar crônica (6 meses) evoluindo com lesões líticas e perda súbita de função renal é a apresentação típica da nefropatia por cilindros no mieloma.\n\nCLASSIFICAÇÃO KDIGO DA LESÃO RENAL AGUDA (IRA)\n\nPara definir o estágio da IRA, observamos a creatinina e o débito urinário:\n1. Valor basal de creatinina: 0,9 mg/dL.\n2. Valor após 48 horas: 3,9 mg/dL.\n3. Débito urinário: 150 mL em 24 horas.\n\nO aumento da creatinina foi de 4,3 vezes em relação ao valor basal (3,9 / 0,9 = 4,33). O critério para KDIGO 3 é um aumento maior ou igual a 3 vezes o valor basal, ou creatinina absoluta maior ou igual a 4,0 mg/dL, ou débito urinário menor que 0,3 mL/kg/h por 24 horas ou anúria por 12 horas. O paciente preenche os critérios para KDIGO 3 tanto pelo aumento da creatinina (superior a 3x) quanto pela oligúria severa (150 mL/dia).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O KDIGO 1 exige um aumento de apenas 1,5 a 1,9 vezes a creatinina basal. A microangiopatia trombótica até poderia causar anemia, plaquetopenia e lesão renal, mas não explicaria as lesões líticas ósseas e a hipercalcemia.\n\nAlternativa b) Incorreta. O KDIGO 2 exige um aumento de 2,0 a 2,9 vezes a creatinina basal. As vasculites renais costumam se apresentar como uma síndrome nefrítica (hematúria e proteinúria) e não causam lesões líticas.\n\nAlternativa c) Correta. O paciente está no estágio mais grave da lesão renal aguda (KDIGO 3) devido ao aumento expressivo da creatinina (mais de 3x o basal) e ao baixo débito urinário. O diagnóstico de Mieloma Múltiplo é a hipótese principal diante da associação de lesões líticas, anemia e hipercalcemia.\n\nAlternativa d) Incorreta. Embora o paciente tenha sintomas há 6 meses, a evolução da creatinina em 48 horas (0,9 para 3,9) caracteriza uma Lesão Renal Aguda (IRA) e não uma Doença Renal Crônica (DRC) isolada. O hiperparatireoidismo secundário é uma consequência da DRC prolongada e não a causa primária de lesões líticas agudas e anemia neste contexto clínico. Além disso, no hiperparatireoidismo secundário à doença renal, o cálcio tende a ser baixo ou normal, e não elevado.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Mieloma Múltiplo",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:52.509Z"
+  },
+  {
+    "id": "AJUDA_d2ba7d4c-616f-417a-98f2-a8627da5b5df",
+    "originalId": "d2ba7d4c-616f-417a-98f2-a8627da5b5df",
+    "statement": "Analise o gráfico a seguir, que representa a variação das concentrações hormonais, no ciclo menstrual normal. No gráfico, os números 1, 2, 3 e 4 representam, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "LH; Estrógeno; Progesterona e FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "LH; Estrógeno; FSH e Progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "FSH; LH; Estrógeno e Progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "LH; Progesterona; FSH e Estrógeno.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é necessário identificar o comportamento dos quatro principais hormônios do ciclo menstrual ao longo dos 28 dias representados no gráfico.\n\nO número 1 representa o LH (Hormônio Luteinizante). Sua principal característica é o pico agudo e de grande magnitude que ocorre cerca de 10 a 12 horas antes da ovulação (dia 14). Esse surto de LH é o gatilho biológico indispensável para a ruptura do folículo e a liberação do óvulo.\n\nO número 2 representa a Progesterona. No gráfico, nota-se que seus níveis são muito baixos na primeira metade do ciclo (fase folicular). Após a ovulação, com a formação do corpo lúteo, há uma produção maciça desse hormônio, gerando uma curva larga que atinge seu ponto máximo por volta do dia 21, decaindo caso não ocorra a fertilização.\n\nO número 3 representa o FSH (Hormônio Folículo-Estimulante). Ele é responsável pelo recrutamento e pelo crescimento dos folículos ovarianos no início do ciclo. No gráfico, ele apresenta um pico de menor intensidade que ocorre simultaneamente ao pico de LH no meio do ciclo.\n\nO número 4 representa o Estrógeno (Estradiol). Este hormônio apresenta um padrão bimodal. Ele aumenta progressivamente na fase folicular, atingindo um pico antes da ovulação (o que estimula o feedback positivo para o LH). Após a ovulação, ele apresenta um segundo pico, menos elevado que o primeiro, durante a fase lútea, também produzido pelo corpo lúteo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A alternativa identifica o número 2 como estrógeno e o número 4 como FSH. No entanto, o hormônio que atinge seu ápice exclusivamente na fase lútea (número 2) é a progesterona, enquanto o hormônio com dois picos (número 4) é o estrógeno.\n\nAlternativa b: Incorreta. Inverte a função dos hormônios ovarianos. O número 2 não pode ser estrógeno, pois não apresenta o pico característico da fase folicular tardia. O número 4 não pode ser progesterona, pois a progesterona não tem níveis elevados antes da ovulação.\n\nAlternativa c: Incorreta. Identifica o número 1 como FSH e o 2 como LH. Fisiologicamente, o pico de LH é significativamente maior do que o de FSH durante a ovulação; logo, o número 1 deve ser obrigatoriamente o LH. Além disso, inverte os hormônios ovarianos nos itens 3 e 4.\n\nAlternativa d: Correta. Associa corretamente cada curva hormonal: o pico ovulatório principal (1 - LH), a elevação exclusiva da fase lútea (2 - Progesterona), o pico menor concomitante à ovulação (3 - FSH) e a curva de dois picos (4 - Estrógeno).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/693afe5e9e9687a2b1510bd669360857d45d4bdd3b315ec1fe7172533e851119.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d2ba7d4c-616f-417a-98f2-a8627da5b5df_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:53:52.898Z"
+  }
+]

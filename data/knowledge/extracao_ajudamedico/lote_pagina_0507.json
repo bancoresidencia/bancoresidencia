@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_8d2b9656-2443-4077-b9ed-1333e0a9e141",
+    "originalId": "8d2b9656-2443-4077-b9ed-1333e0a9e141",
+    "statement": "Um pesquisador deseja investigar a associação entre exposição ocupacional a agrotóxicos e o desenvolvimento de uma doença rara na população geral. Para testar essa hipótese com o melhor custo-benefício e viabilidade temporal, qual desenho de estudo epidemiológico deve ser escolhido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudo de caso-controle.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estudo de coorte prospectiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ensaio clínico randomizado duplo-cego.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transversal com inquérito populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Revisão sistemática com metanálise.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A escolha do desenho de estudo em epidemiologia depende crucialmente de dois fatores mencionados no enunciado: a raridade do desfecho (a doença) e a eficiência (custo-benefício e tempo).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Estudo de caso-controle (CORRETA): Este é o desenho clássico para investigar doenças raras. Em vez de esperar que a doença ocorra (como na coorte), o pesquisador parte de indivíduos que já possuem a doença (casos) e os compara com indivíduos saudáveis (controles), olhando para trás no tempo para verificar a exposição aos agrotóxicos. É um estudo rápido, barato e que exige um número muito menor de participantes para atingir significância estatística em doenças raras.\n\nb) Estudo de coorte prospectiva: Incorreto. Para doenças raras, uma coorte seria inviável. O pesquisador teria que acompanhar milhares ou milhões de pessoas por décadas para que apenas alguns poucos casos da doença surgissem, gerando um custo altíssimo e enorme perda de tempo.\n\nc) Ensaio clínico randomizado duplo-cego: Incorreto. Além de eticamente inaceitável (não se pode expor intencionalmente pessoas a agrotóxicos para ver se adoecem), o custo e o tempo seriam proibitivos para uma doença rara.\n\nd) Transversal com inquérito populacional: Incorreto. Estudos transversais medem a causa e o efeito no mesmo momento. Como a doença é rara, a probabilidade de encontrar indivíduos doentes em uma amostra aleatória da população em um único ponto no tempo é mínima, o que impossibilita a análise estatística de associação.\n\ne) Revisão sistemática com metanálise: Incorreto. Embora seja o topo da pirâmide de evidência, a revisão sistemática é um estudo secundário que sintetiza estudos primários já existentes. O enunciado pede o desenho de um estudo original que o pesquisador \"deseja investigar\". Além disso, o gabarito oficial indicado (alternativa E) está tecnicamente equivocado perante a literatura epidemiológica padrão para este cenário, onde o Caso-Controle é a resposta padrão-ouro para doenças raras.\n\nNOTA SOBRE O GABARITO: Há uma divergência importante aqui. Na literatura médica e em provas de residência, o desenho de escolha para doenças raras e baixo custo é, invariavelmente, o Estudo de Caso-Controle (Alternativa A). A Revisão Sistemática (Alternativa E) requer que outros estudos já tenham sido realizados previamente para serem compilados, não sendo um desenho de investigação primária para testar uma hipótese nova de exposição ocupacional. Caso o gabarito oficial da banca tenha sido a letra E, a questão caberia recurso por não se tratar de uma investigação original e viável para o cenário proposto. A alternativa A é a resposta clinicamente e epidemiologicamente correta.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  },
+  {
+    "id": "AJUDA_8d2bb3a3-f3f6-4f90-9082-82de794d750b",
+    "originalId": "8d2bb3a3-f3f6-4f90-9082-82de794d750b",
+    "statement": "Paciente etilista ativo, com cirrose alcoólica e ascite refratária, em acompanhamento ambulatorial, com uso de espironolactona 100 mg/d, furosemida 40 mg/d e propranolol, chega ao pronto atendimento por dor abdominal, febre de 38,2 ºC e confusão leve. Realizada a paracentese diagnóstica com aspecto turvo, contagem de polimorfonucleares de 320/mm3, proteínas: 1,0 g/dL; cultura pendente. Diante do quadro atual, a indicação terapêutica é",
+    "options": [
+      {
+        "id": "A",
+        "text": "suspender diuréticos e administrar albumina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "piperacilina-tazobactam oral e retirada de diuréticos apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realização de shunt portossistêmico intra-hepático transjugular (TIPS) de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ceftriaxona endovenosa e albumina endovenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "terlipressina sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta cirrose alcoólica e ascite, evoluindo com um quadro sugestivo de infecção: dor abdominal, febre e confusão mental (encefalopatia hepática). A paracentese diagnóstica revelou uma contagem de polimorfonucleares (PMN) de 320/mm³. Como o valor de corte para o diagnóstico de Peritonite Bacteriana Espontânea (PBE) é ≥ 250 PMN/mm³, o diagnóstico de PBE está confirmado, independentemente do resultado da cultura.\n\nAnálise das Alternativas:\n\na) Incorreta. Embora a suspensão de diuréticos seja recomendada em casos de disfunção renal ou encefalopatia grave associada à PBE, a prioridade absoluta no tratamento da PBE é o uso de antibioticoterapia sistêmica. Apenas administrar albumina e suspender diuréticos não trata o foco infeccioso.\n\nb) Incorreta. A piperacilina-tazobactam é um antibiótico de uso exclusivamente hospitalar/endovenoso, não existindo formulação oral. Além disso, o tratamento padrão-ouro inicial para PBE adquirida na comunidade costuma ser uma cefalosporina de 3ª geração. A alternativa também omite a necessidade de albumina para prevenção de síndrome hepatorrenal.\n\nc) Incorreta. O TIPS (Shunt Portossistêmico Intra-hepático Transjugular) é um procedimento indicado para o manejo de ascite refratária ou hemorragia varicosa recorrente. Em um quadro de infecção ativa e confusão mental (encefalopatia), o TIPS é contraindicado, pois pode agravar drasticamente a encefalopatia e não trata a causa aguda do paciente.\n\nd) Correta. O tratamento da PBE baseia-se em dois pilares principais: 1) Antibioticoterapia precoce com cefalosporina de 3ª geração (ceftriaxona ou cefotaxima) para cobrir germes Gram-negativos entéricos; 2) Profilaxia de síndrome hepatorrenal com albumina humana endovenosa (1,5 g/kg no 1º dia e 1,0 g/kg no 3º dia). Esta conduta reduz a mortalidade e o risco de insuficiência renal.\n\ne) Incorreta. A terlipressina é um vasoconstritor esplâncnico indicado para o tratamento da síndrome hepatorrenal (SHR) ou para o controle de varizes esofágicas sangrantes. Embora o paciente tenha risco de evoluir com SHR, a conduta imediata para a PBE é o antibiótico e a albumina profilática, e não a terlipressina de forma isolada ou inicial.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  },
+  {
+    "id": "AJUDA_8d2c7d52-d7e7-4d89-9fd4-5a80e874587c",
+    "originalId": "8d2c7d52-d7e7-4d89-9fd4-5a80e874587c",
+    "statement": "Paciente, sexo feminino, 32 anos, gestante com histórico de duas cesarianas anteriores e placenta de implantação anterior baixa. A conduta recomendada para o diagnóstico e planejamento do parto é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar a avaliação ultrassonográfica apenas no terceiro trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar a avaliação ultrassonográfica entre 18 e 24 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Planejar o parto para 37 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Evitar o uso de corticosteroides antenatais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro descreve uma paciente com elevado risco para o Espectro da Placenta Acreta (EPA), devido à associação de duas cesáreas prévias e placenta de implantação baixa. Nessa condição, o tecido placentário pode invadir o miométrio de forma anormal na região da cicatriz uterina, o que exige diagnóstico precoce e planejamento cirúrgico rigoroso.\n\nAlternativa a) Incorreta. O rastreamento não deve ser protelado até o terceiro trimestre. A identificação precoce de sinais de acretismo é fundamental para que a gestante seja referenciada a tempo para um centro de alta complexidade com equipe multidisciplinar (obstetras experientes, urologistas, cirurgiões pélvicos e suporte de UTI), garantindo segurança no manejo.\n\nAlternativa b) Correta. O ultrassom morfológico do segundo trimestre, realizado entre 18 e 24 semanas, é o momento recomendado para o rastreamento sistemático de sinais de acretismo em pacientes com fatores de risco. Nessa fase, examinadores experientes já conseguem identificar marcadores como lacunas placentárias, perda da zona hipoecoica retroplacentária e irregularidades na interface entre a bexiga e o útero.\n\nAlternativa c) Incorreta. O planejamento do parto no acretismo placentário visa equilibrar a maturidade fetal com o risco de sangramento materno grave. Por isso, a recomendação internacional é de que o parto eletivo seja agendado entre 34 semanas e 0 dias e 35 semanas e 6 dias. Aguardar até as 37 semanas aumenta significativamente o risco de a paciente entrar em trabalho de parto espontâneo ou apresentar hemorragias catastróficas, o que transformaria uma cirurgia controlada em uma emergência de altíssimo risco.\n\nAlternativa d) Incorreta. Como o parto é planejado para o período pré-termo tardio (antes de 37 semanas), o uso de corticosteroides antenatais é fortemente recomendado para auxiliar na maturação pulmonar fetal e reduzir a morbidade respiratória neonatal, não havendo motivo para evitar seu uso nesse contexto.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Sagramento da Segunda Metade",
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  },
+  {
+    "id": "AJUDA_8d3cda2e-f18f-4c7f-86c7-3a5621505dff",
+    "originalId": "8d3cda2e-f18f-4c7f-86c7-3a5621505dff",
+    "statement": "No Brasil, observam-se mudanças no perfil da população e dos agravos, tanto na transição demográfica (TD) quanto na transição epidemiológica (TE). Na transição demográfica, a variável considerada preponderante é o(a)",
+    "options": [
+      {
+        "id": "A",
+        "text": "idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "estado civil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "escolaridade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "renda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ocupação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, é fundamental diferenciar os conceitos de transição demográfica e transição epidemiológica, temas recorrentes em provas de Medicina Preventiva e Saúde Coletiva.\n\nA Transição Demográfica (TD) diz respeito às mudanças na dinâmica populacional, especificamente na forma como a população se estrutura. Historicamente, o Brasil passou de um cenário de altas taxas de natalidade e mortalidade para um cenário de baixas taxas. O resultado direto e mais visível dessa mudança é o envelhecimento populacional. Portanto, a estrutura por idade é a variável central para observar essa mudança no perfil.\n\nAlternativa (a): Correta. A transição demográfica é caracterizada pela alteração na pirâmide etária. Com a queda da fecundidade (menos nascimentos) e o aumento da esperança de vida (menor mortalidade em idades avançadas), a base da pirâmide estreita e o topo se alarga. A idade, portanto, é a variável que melhor reflete esse novo perfil da população brasileira.\n\nAlternativa (b): Incorreta. O estado civil é uma variável demográfica, mas não é o foco das grandes mudanças estruturais de uma população. Ele não define as fases de transição nem explica o impacto dos agravos à saúde no contexto macroeconômico ou social do país.\n\nAlternativa (c): Incorreta. A escolaridade é considerada um determinante social da saúde. Embora níveis mais elevados de instrução influenciem o comportamento reprodutivo (contribuindo indiretamente para a transição demográfica), a escolaridade em si não é a variável que define o perfil populacional na TD, mas sim um fator que a impulsiona.\n\nAlternativa (d): Incorreta. A renda é uma variável socioeconômica. Embora o desenvolvimento econômico possa estar associado a mudanças demográficas, a transição é medida por indicadores vitais e pela estrutura da população (quem são as pessoas e quantos anos elas têm), e não pelo seu poder de compra.\n\nAlternativa (e): Incorreta. A ocupação descreve a inserção da população no mercado de trabalho. Assim como a renda e a escolaridade, é um fator determinante, mas não é a variável preponderante que caracteriza o perfil de transição da pirâmide populacional brasileira.\n\nEm resumo, enquanto a Transição Epidemiológica foca na mudança do perfil de doenças (saída das doenças infectocontagiosas para o predomínio das doenças crônicas não transmissíveis e causas externas), a Transição Demográfica foca na estrutura da população, sendo a idade o marcador primordial desse processo.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  },
+  {
+    "id": "AJUDA_8d4444e4-1d9c-4ffd-b559-33a320af6c0b",
+    "originalId": "8d4444e4-1d9c-4ffd-b559-33a320af6c0b",
+    "statement": "Um lactente de 2 meses, filho de mãe portadora de HIV positivo em tratamento, não amamentado ao seio materno, chega para vacinação. A melhor conduta vacinal para esse bebê é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender todas as vacinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Contraindicar BCG.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vacinar conforme calendário de rotina, incluindo BCG.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aguardar sorologia negativa para iniciar vacinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Adiar vacinas com vírus vivos até os 12 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a imunização de lactentes expostos ao HIV. De acordo com o Programa Nacional de Imunizações (PNI) e as diretrizes do Ministério da Saúde, crianças nascidas de mães soropositivas (expostas) devem seguir o calendário vacinal habitual, com atenção especial às vacinas de agentes vivos.\n\nAlternativa a: Incorreta. Não se deve suspender todas as vacinas. As vacinas inativadas, como a VIP (Poliomielite inativada) e a Pentavalente, não oferecem risco de replicação do agente e são fundamentais para a proteção da criança.\n\nAlternativa b: Incorreta. A vacina BCG (Bacilo Calmette-Guérin) é indicada para crianças expostas ao HIV e deve ser administrada o mais precocemente possível, preferencialmente na maternidade. A vacinação só seria adiada ou contraindicada caso a criança apresentasse sinais clínicos de imunodeficiência (sintomas sugestivos de AIDS), o que não é o caso de um lactente assintomático de 2 meses.\n\nAlternativa c: Correta. A conduta padrão para o lactente exposto, porém assintomático, é seguir o calendário de rotina. Isso inclui a BCG e a vacina contra rotavírus (que é de vírus vivo atenuado), além das vacinas inativadas. Em crianças expostas, o benefício da proteção contra doenças graves supera o risco teórico de complicações vacinais, desde que não haja evidência de imunossupressão grave.\n\nAlternativa d: Incorreta. O diagnóstico definitivo de infecção pelo HIV em lactentes pode levar meses devido à permanência de anticorpos maternos. Aguardar a sorologia negativa para iniciar a vacinação deixaria o bebê vulnerável a diversas doenças imunopreveníveis durante o período de maior risco.\n\nAlternativa e: Incorreta. Nem todas as vacinas de vírus vivos são adiadas. A vacina do rotavírus, por exemplo, é iniciada aos 2 meses. O adiamento ou a avaliação rigorosa para vacinas de vírus vivos geralmente se aplica a crianças que já possuem diagnóstico confirmado de HIV com contagem de linfócitos T CD4 abaixo dos limites de segurança, ou para vacinas administradas mais tardiamente, como a Tríplice Viral.\n\nEm resumo, o lactente exposto ao HIV sem sinais de doença deve ser vacinado normalmente conforme o calendário básico de vacinação da criança.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  },
+  {
+    "id": "AJUDA_8d532e72-9c9e-41cf-aeb9-15effff60799",
+    "originalId": "8d532e72-9c9e-41cf-aeb9-15effff60799",
+    "statement": "Uma equipe técnica do Ministério da Saúde está avaliando os efeitos da redução do ponto de corte da medida de PA sistólica de 130 mmHg para 120 mmHg para o diagnóstico de hipertensão arterial (HA). Considerando-se as mudanças nos valores de referência, o que se espera em relação ao diagnóstico de HA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento na detecção da HA e redução na frequência de falsos positivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento na detecção da HA e aumento na frequência de falsos positivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Redução na detecção da HA e redução na frequência de falsos positivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução na detecção da HA e aumento na frequência de falsos positivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão trata da relação entre ponto de corte de um teste diagnóstico, sensibilidade e especificidade.\n\nConceito central:\nQuando o resultado de um teste é uma variável contínua, como a PA sistólica, o ponto de corte define quem é considerado \"doente\" (positivo) e quem é \"não doente\" (negativo). As distribuições de valores da população doente e da não doente se sobrepõem. Por isso, qualquer mudança no ponto de corte gera uma troca entre sensibilidade e especificidade.\n\nAo reduzir o ponto de corte de 130 para 120 mmHg, o critério fica menos rigoroso. Assim, mais pessoas passam a ser classificadas como hipertensas.\n\nConsequências:\n- Mais verdadeiros doentes são detectados. Aumentam os verdadeiros positivos e diminuem os falsos negativos. A sensibilidade aumenta.\n- Indivíduos não doentes com PA entre 120 e 129 mmHg também passam a ser rotulados como positivos. Aumentam os falsos positivos e diminuem os verdadeiros negativos. A especificidade diminui.\n- Com mais falsos positivos, o valor preditivo positivo tende a cair. Com menos falsos negativos, o valor preditivo negativo tende a subir.\n\nRegra prática: baixar o ponto de corte de um teste em que \"valor alto = doença\" aumenta a sensibilidade e reduz a especificidade. Elevar o ponto de corte produz o efeito inverso.\n\nAnálise das alternativas:\n\na) Incorreta. A detecção de fato aumenta, mas os falsos positivos não diminuem. Com um critério mais permissivo, mais pessoas sem a doença são classificadas como positivas.\n\nb) Correta. O ponto de corte mais baixo amplia o número de diagnósticos, o que aumenta a sensibilidade e a detecção de HA. O preço é a perda de especificidade, com aumento dos falsos positivos.\n\nc) Incorreta. A redução da detecção com menos falsos positivos é o que ocorreria se o ponto de corte fosse elevado, por exemplo de 130 para 140 mmHg. É o oposto do cenário proposto.\n\nd) Incorreta. Essa combinação não é coerente com uma simples mudança de ponto de corte. Detectar menos casos e, ao mesmo tempo, gerar mais falsos positivos não ocorre ao deslocar o limiar em uma única direção.\n\nGabarito: letra B.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  },
+  {
+    "id": "AJUDA_8d55798a-d0d9-40e8-97a2-7e4fb171e5e0",
+    "originalId": "8d55798a-d0d9-40e8-97a2-7e4fb171e5e0",
+    "statement": "Luana, de 30 anos, vai à consulta; contém em seu prontuário apenas um atendimento na UBS no ano anterior, com a enfermeira da equipe para coleta de citologia oncótica. A paciente foi apenas à UPA da região várias vezes nos últimos seis meses, sempre com queixa de dor. Luana se mostra um pouco apreensiva no início da consulta, mas logo revela que o motivo de estar ali é que está com muita dor no rosto. Ao olhar para a paciente, você nota dois hematomas: em região palpebral e região maxilar. Quando questionada sobre o que aconteceu, Luana conta que apanhou do marido há dois dias porque o deixou irritado. Considere as assertivas abaixo: Nesse caso, o médico deve",
+    "options": [
+      {
+        "id": "A",
+        "text": "orientar Luana para procurar o Serviço Social da UBS, o qual é responsável por avaliar a necessidade de eventual encaminhamento ao serviço de psicologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "notificar no SINAN se houver concordância do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "deve acionar a defensoria pública a fim de investigar se Luana sofreu outros tipos de violência, como patrimonial, psicológica, sexual ou moral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "instrui Luana a fazer o boletim de ocorrência e, caso ela se recuse, deve acionar a polícia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "esclarecer a Luana que ela pode fazer de denúncia da violência sofrida, sem que seja necessária a abertura de boletim de ocorrência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Explicação das alternativas:\n\nAlternativa a) Incorreta. O atendimento a mulheres em situação de violência deve ser interdisciplinar e compartilhado por toda a equipe de saúde. O médico não deve apenas transferir a responsabilidade ao Serviço Social; ele é o responsável pelo acolhimento inicial, pelo manejo das lesões físicas e pela notificação do caso. A avaliação de demandas psicológicas é uma competência compartilhada, e não exclusiva de um único setor após encaminhamento.\n\nAlternativa b) Incorreta. A notificação de violência contra a mulher é compulsória em todo o território nacional, conforme a Lei nº 10.778/2003. Ela possui fins epidemiológicos e de vigilância em saúde, devendo ser realizada pelo profissional de saúde mesmo sem a concordância da paciente adulta e capaz. É importante não confundir a notificação compulsória (administrativa/sanitária) com a denúncia policial.\n\nAlternativa c) Incorreta. O médico deve prestar assistência integral e identificar, por meio da anamnese, se existem outros tipos de violência associados (como a psicológica ou patrimonial). No entanto, não compete ao médico acionar diretamente a Defensoria Pública para realizar investigações. O papel do profissional de saúde é clínico, assistencial e de notificação aos órgãos de vigilância, além de orientar a paciente sobre onde buscar suporte jurídico.\n\nAlternativa d) Incorreta. Essa conduta fere o princípio da autonomia da paciente e o sigilo médico. O médico deve orientar a paciente sobre a importância do boletim de ocorrência e sobre seus direitos, mas não pode obrigá-la ou acionar a polícia contra a sua vontade, exceto em situações muito específicas de risco iminente de morte ou quando houver dever legal explícito (como em casos envolvendo menores de idade ou idosos). Forçar a intervenção policial pode, inclusive, aumentar o risco de retaliação do agressor contra a vítima.\n\nAlternativa e) Correta. Esta alternativa foca no acolhimento, na educação em saúde e no empoderamento da paciente. O médico deve esclarecer que a rede de proteção à mulher (como o Ligue 180 e os Centros de Referência de Atendimento à Mulher) pode ser acionada para suporte, acolhimento e denúncia, e que a paciente tem autonomia para decidir como proceder judicialmente. O esclarecimento de que o apoio da rede de enfrentamento não depende estritamente da abertura imediata de um boletim de ocorrência ajuda a construir um vínculo de confiança e segurança para que a mulher saia do ciclo de violência.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  },
+  {
+    "id": "AJUDA_8d5aaa88-c7e7-45d1-9b02-886d894d2eff",
+    "originalId": "8d5aaa88-c7e7-45d1-9b02-886d894d2eff",
+    "statement": "Uma paciente de 59 anos de idade apresenta perda urinária insensível, associada a urgência miccional, sem queixas de esvaziamento vesical associado. Ao exame clínico, mostra-se em bom estado geral, sem demais alterações, com FC = 90 bpm, PA = 120 mmHg x 80 mmHg, FR = 17 irpm, SatO2 = 95%, POP-Q tópico.\n\n No caso clínico citado, qual seria a indicação para se realizar o estudo urodinâmico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Confirmação diagnóstica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exame prévio ao tratamento cirúrgico de sling",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não há indicação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na refratariedade aos tratamentos de segunda linha",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clínico de bexiga hiperativa, caracterizado por urgência miccional e perda urinária insensível (incontinência urinária de urgência). O exame físico é normal, sem prolapsos significativos (POP-Q tópico) e sem sinais de esforço. Em casos de bexiga hiperativa não complicada, o diagnóstico é essencialmente clínico, baseado na anamnese e no diário miccional.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. A confirmação diagnóstica da bexiga hiperativa é clínica. O estudo urodinâmico tem baixa sensibilidade para detectar contrações não inibidas do detrusor (pode estar normal em até 50% das pacientes com sintomas) e não deve ser solicitado rotineiramente como primeira linha apenas para confirmar o que a clínica já sugere.\n\nb) Incorreta. O tratamento com sling é indicado para a Incontinência Urinária de Esforço (IUE), que não é a queixa principal desta paciente. Embora muitos cirurgiões solicitem a urodinâmica antes de uma cirurgia de sling para excluir hiperatividade do detrusor associada ou disfunções de esvaziamento, no caso em questão, a sintomatologia é de urgência, e o tratamento inicial não é cirúrgico.\n\nc) Incorreta. Existe, sim, indicação para o estudo urodinâmico, mas ele é reservado para momentos específicos da evolução clínica ou em casos complexos/duvidosos.\n\nd) Correta. De acordo com os consensos da Sociedade Brasileira de Urologia e de sociedades internacionais (como AUA e SUFU), o estudo urodinâmico é indicado na suspeita de bexiga hiperativa quando há falha no tratamento conservador inicial (primeira linha: mudança de estilo de vida e fisioterapia; segunda linha: anticolinérgicos ou beta-3-agonistas). Se a paciente for refratária a essas medidas, o exame torna-se necessário para melhor avaliação funcional da bexiga antes de partir para tratamentos de terceira linha, como toxina botulínica ou neuromodulação sacral.\n\nRESUMO\n\nO estudo urodinâmico é um exame invasivo e desconfortável. Em quadros clássicos de urgência miccional sem sinais de complicação ou prolapsos, iniciamos o tratamento clínico. A urodinâmica é reservada para casos de refratariedade ao tratamento medicamentoso, dúvida diagnóstica, presença de sintomas de esvaziamento ou antes de procedimentos invasivos/cirúrgicos específicos.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  },
+  {
+    "id": "AJUDA_8d66a8ee-d7e1-46a0-95b6-e421875247c0",
+    "originalId": "8d66a8ee-d7e1-46a0-95b6-e421875247c0",
+    "statement": "Sexo masculino, 16 anos, sem comorbidades, faz uso inadvertido de diclofenaco sódico devido a dores musculares frequentes após treinos em academia. Dá entrada na emergência cirúrgica devido a queda no banheiro há 12 horas, apresentando sinais de traumatismo cranioencefálico leve. Está consciente e orientado, tem pequeno ferimento corto-contuso em supercílio direito, sem necessidade de sutura, pálido 2+/4+. Sinais vitais: PA = 80X40mmHg, FC = 130bpm. O abdome é flácido, indolor a palpação. Toque retal é positivo para melena. Diante do provável diagnóstico e considerando os índices de estratificação de risco, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Shock index = 1,6 e pontuação de Glasgow-Blatchford de pelo menos 4 pontos indicam a necessidade de endoscopia digestiva alta em até 36 horas da admissão hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Shock index = 1,6 e pontuação de Glasgow-Blatchford de pelo menos 7 pontos indicam a necessidade de endoscopia digestiva alta urgente após a estabilização hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Shock index = 1,8 e pontuação de Glasgow-Blatchford de pelo menos 3 pontos indicam a realização de tomografia de crânio seguida de angiotomografia do abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Shock index = 1,8 e pontuação de Glasgow-Blatchford de pelo menos 12 pontos indicam a necessidade de tomografia do abdome com contraste endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um adolescente com quadro de Hemorragia Digestiva Alta (HDA), provavelmente secundária ao uso crônico e inadvertido de anti-inflamatórios não esteroidais (AINEs), manifestada por melena, síncope (queda no banheiro) e choque hipovolêmico evidente.\n\nAnálise dos Índices:\n\n1. Shock Index (Índice de Choque): É calculado pela divisão da Frequência Cardíaca (FC) pela Pressão Arterial Sistólica (PAS). \nCálculo: 130 bpm / 80 mmHg = 1,625 (aproximadamente 1,6). \nUm valor acima de 0,9 indica instabilidade hemodinâmica e necessidade de intervenção imediata.\n\n2. Escore de Glasgow-Blatchford (GBS): Utilizado na triagem inicial da HDA para prever a necessidade de intervenção hospitalar (transfusão, endoscopia ou cirurgia). \nPontuação do paciente baseada nos dados clínicos: \n- PAS de 80 mmHg: 3 pontos. \n- Frequência Cardíaca de 130 bpm (maior ou igual a 100): 1 ponto. \n- Apresentação com melena: 1 ponto. \n- Apresentação com síncope (queda no banheiro por provável hipoperfusão): 2 pontos. \nTotal parcial: 7 pontos (sem contar os valores de hemoglobina e ureia, que não foram fornecidos, mas que certamente elevariam ainda mais o escore devido à palidez 2+/4+).\n\nAnálise das Alternativas:\n\na) Incorreta. Embora o Shock Index esteja correto (1,6), o escore de Glasgow-Blatchford de 7 (mínimo) indica alto risco. O prazo de 36 horas para a realização da endoscopia digestiva alta (EDA) é excessivo para um paciente com instabilidade hemodinâmica; nesses casos, a EDA deve ser realizada em caráter de urgência (preferencialmente nas primeiras 24 horas) logo após a estabilização hemodinâmica.\n\nb) Correta. O Shock Index de 1,6 reflete o estado de choque (FC/PAS). O escore de Glasgow-Blatchford é de pelo menos 7 pontos considerando apenas os critérios clínicos (PAS < 90 = 3; FC > 100 = 1; melena = 1; síncope = 2). Pacientes com GBS elevado e instabilidade hemodinâmica necessitam prioritariamente de estabilização (reposição volêmica vigorosa) seguida de endoscopia digestiva alta de urgência para diagnóstico e eventual tratamento da fonte do sangramento.\n\nc) Incorreta. O cálculo do Shock Index está errado (130/80 = 1,6 e não 1,8). Além disso, a conduta prioritária na suspeita de HDA com melena e choque não é a tomografia de crânio ou angiotomografia de abdome, mas sim a estabilização hemodinâmica e a endoscopia digestiva alta. A tomografia de crânio só seria discutível após a estabilização se houvesse dúvida sobre o trauma, mas o quadro clínico é claramente de choque hipovolêmico por sangramento digestivo.\n\nd) Incorreta. O cálculo do Shock Index está errado (1,8). Embora um GBS de 12 fosse possível após os exames laboratoriais, a conduta de realizar tomografia de abdome com contraste não é o padrão-ouro nem a conduta inicial para HDA. O exame de escolha para diagnóstico e tratamento é a endoscopia digestiva alta.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  },
+  {
+    "id": "AJUDA_8d77ea7f-7792-4bcc-ad2c-97e6350767d3",
+    "originalId": "8d77ea7f-7792-4bcc-ad2c-97e6350767d3",
+    "statement": "Homem, 30 anos de idade, apresenta cefaleia e rigidez de nuca. Coleta líquido cefalorraquidiano, que mostra:\n\n• Pressão de abertura discretamente elevada\n• Células: 300/mm³ – predomínio linfomononuclear\n• Proteína: 450 mg/dL (normal: 15 a 60 mg/dL)\n• Glicose: 35 mg/dL (normal: 50 a 80 mg/dL)\n\nEsses achados sugerem qual etiologia da meningite?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meningocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tuberculose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Herpética.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é necessário correlacionar os achados do exame do líquido cefalorraquidiano (LCR) com os padrões clássicos das meningites. O caso apresenta um paciente com sinais de irritação meníngea e um líquor com as seguintes características: pleocitose moderada (300 células/mm³), predomínio linfomononuclear, hiperproteinorraquia acentuada (450 mg/dL) e hipoglicorraquia (35 mg/dL).\n\nAlternativa a) Meningocócica.\nIncorreta. A meningite causada pela Neisseria meningitidis é uma infecção bacteriana aguda. O padrão típico no LCR é de uma meningite purulenta, caracterizada por pleocitose acentuada (geralmente superior a 1.000 células/mm³) com predomínio de polimorfonucleares (neutrófilos). Embora haja consumo de glicose, o predomínio celular linfomononuclear do caso afasta essa hipótese.\n\nAlternativa b) Pneumocócica.\nIncorreta. Assim como na meningocócica, a infecção pelo Streptococcus pneumoniae gera um perfil de LCR purulento. Espera-se encontrar um número de células muito elevado, com franca predominância de neutrófilos e proteínas elevadas, mas raramente atingindo níveis tão discrepantes quanto os da tuberculose sem o predomínio neutrofílico associado.\n\nAlternativa c) Viral.\nIncorreta. As meningites virais apresentam, de fato, um predomínio de células linfomononucleares. No entanto, o diferencial fundamental é que, nas etiologias virais, a glicose costuma estar normal (glicorraquia normal) e a proteína está normal ou apenas discretamente elevada. A hipoglicorraquia e a proteína de 450 mg/dL observadas no caso são incompatíveis com o padrão viral típico.\n\nAlternativa d) Tuberculose.\nCorreta. O padrão de LCR da meningite tuberculosa é clássico: pleocitose moderada (geralmente entre 100 e 500 células/mm³), predomínio de linfócitos e monócitos (linfomononuclear), hipoglicorraquia (devido ao consumo pelo Mycobacterium tuberculosis e pelo processo inflamatório) e uma hiperproteinorraquia muito importante. Valores de proteína acima de 100-200 mg/dL são muito sugestivos de tuberculose ou fungos, sendo que 450 mg/dL é um valor fortemente indicativo dessa etiologia devido ao exsudato inflamatório espesso na base do crânio.\n\nAlternativa e) Herpética.\nIncorreta. A meningite ou meningoencefalite por Herpes simplex apresenta predomínio linfomononuclear, mas a glicose geralmente permanece em níveis normais. Além disso, o quadro herpético costuma cursar com a presença de hemácias no líquor (devido ao caráter necro-hemorrágico da lesão cerebral) e sinais de acometimento focal (lobo temporal), o que não foi descrito no enunciado.\n\nEm resumo, a combinação de predomínio linfomononuclear com glicose baixa e proteína muito elevada é o tripé diagnóstico laboratorial para meningite tuberculosa ou fúngica. Entre as opções apresentadas, a tuberculose é a resposta correta.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tuberculose",
+      "Meningites"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:09.560Z"
+  }
+]

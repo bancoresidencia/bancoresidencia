@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_b331d198-0765-491a-a7c1-2aed7d575677",
+    "originalId": "b331d198-0765-491a-a7c1-2aed7d575677",
+    "statement": "Paciente masculino, de 47 anos, consultou por linfadenomegalia cervical. Informou ser tabagista moderado há 18 anos, não ter tosse, nem apresentar febre ou perda de peso. Ao exame físico, identificou-se nódulo palpável, firme, indolor, com aproximadamente 2,0 cm de diâmetro, na região cervical IIa (grupo jugular superior anterior). Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar punção-biópsia com agulha fina e solicitar exame citopatológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar ultrassonografia para confirmar o diagnóstico diferencial de massa cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Excluir causas infecciosas com exames sorológicos e avaliar cavidade oral, faringe e laringe.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Agendar biópsia do linfonodo e solicitar imunofenotipagem da peça.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente é um homem de 47 anos, tabagista, apresentando uma linfadenomegalia cervical de 2,0 cm no nível IIa (jugular superior), com características de malignidade (nódulo firme e indolor) e sem sintomas constitucionais ou infecciosos evidentes. Em um paciente com essa faixa etária e histórico de tabagismo, a principal hipótese diagnóstica é metástase cervical de um carcinoma espinocelular (CEC) originado nas vias aerodigestivas superiores.\n\nAlternativa a: Incorreta. Embora a punção-biópsia por agulha fina (PAAF) seja um excelente método diagnóstico e frequentemente realizada na investigação de massas cervicais, ela não deve ser a única conduta inicial isolada. Antes de realizar procedimentos invasivos no nódulo, é imperativo realizar um exame físico completo em busca do sítio primário do tumor, o que direcionará melhor o diagnóstico e o estadiamento.\n\nAlternativa b: Incorreta. A ultrassonografia é um exame complementar útil para avaliar as características morfológicas do linfonodo (forma, hilo, vascularização), mas, diante de um paciente de alto risco para câncer de cabeça e pescoço, o foco principal deve ser a avaliação das mucosas das vias aerodigestivas superiores para localizar uma possível neoplasia primária.\n\nAlternativa c: Correta. Esta alternativa descreve a abordagem semiológica correta. Em adultos com linfonodos cervicais suspeitos, deve-se realizar uma investigação sistemática. Primeiro, excluem-se causas infecciosas e inflamatórias comuns. Simultaneamente, devido ao risco de neoplasia em pacientes tabagistas, é obrigatória a avaliação minuciosa da cavidade oral, faringe e laringe (através de inspeção, palpação e exames endoscópicos como a nasofibrolaringoscopia). Localizar o tumor primário é fundamental para o diagnóstico definitivo e para o planejamento terapêutico.\n\nAlternativa d: Incorreta. A biópsia de linfonodo (biópsia excisional) é formalmente contraindicada como conduta inicial em casos de suspeita de metástase de carcinoma espinocelular. A realização de uma biópsia cirúrgica antes da investigação do tumor primário pode romper as barreiras anatômicas, disseminar células tumorais no plano cervical e comprometer o prognóstico e a técnica de um futuro esvaziamento cervical radical. A imunofenotipagem é mais voltada para a investigação de linfomas, que não é a principal suspeita clínica inicial dada a epidemiologia e localização do nódulo neste paciente.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Neoplasias Benignas e Malignas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  },
+  {
+    "id": "AJUDA_b331fc67-f85f-403e-a6dd-0437402ad419",
+    "originalId": "b331fc67-f85f-403e-a6dd-0437402ad419",
+    "statement": "Em um programa de rastreamento populacional para câncer de colo do útero, uma estratégia importante é garantir que o teste utilizado apresente boa capacidade de identificar corretamente indivíduos com a doença. Essa característica do teste é conhecida como",
+    "options": [
+      {
+        "id": "A",
+        "text": "valor preditivo positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "especificidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "acurácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a questão, devemos focar nos conceitos de bioestatística aplicados à epidemiologia e aos testes diagnósticos. O enunciado pede o termo técnico que define a capacidade de um teste de identificar corretamente as pessoas que possuem a doença.\n\nAlternativa (a) Incorreta. O Valor Preditivo Positivo (VPP) indica a probabilidade de um indivíduo realmente ter a doença quando o seu resultado de teste é positivo. Diferente da sensibilidade, o VPP é influenciado pela prevalência da doença na população estudada.\n\nAlternativa (b) Incorreta. A Especificidade é a capacidade do teste de identificar corretamente os indivíduos saudáveis, ou seja, de dar um resultado negativo naqueles que não apresentam a patologia (verdadeiros-negativos). Ela é fundamental para testes confirmatórios, evitando tratamentos desnecessários em quem não está doente.\n\nAlternativa (c) Correta. A Sensibilidade é definida como a proporção de indivíduos verdadeiramente doentes que apresentam teste positivo. Em programas de rastreamento (screening), como o de câncer de colo do útero, busca-se um teste com alta sensibilidade para garantir que o maior número possível de casos seja detectado, minimizando a ocorrência de resultados falsos-negativos. Se um teste é altamente sensível, um resultado negativo torna a presença da doença muito improvável.\n\nAlternativa (d) Incorreta. A Acurácia representa o desempenho global do teste. É a proporção de resultados corretos (soma de verdadeiros-positivos e verdadeiros-negativos) em relação ao total de testes realizados. Ela indica a proximidade do resultado do teste com o valor real, mas não foca especificamente na identificação dos doentes, como solicitado no enunciado.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  },
+  {
+    "id": "AJUDA_b33fb880-9b46-4297-a2e3-a21df243a45c",
+    "originalId": "b33fb880-9b46-4297-a2e3-a21df243a45c",
+    "statement": "O calendário geral de vacinação do Ministério da Saúde do Brasil para 2024 recomenda vacinação contra papilomavírus",
+    "options": [
+      {
+        "id": "A",
+        "text": "prioritariamente para a faixa etária de 4 a 9 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "para meninas, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prioritariamente para adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "para ambos os sexos em dose única, na faixa etária de 9 a 14 anos e para quaisquer pessoas com imunocomprometimento ou vítimas de abuso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "para ambos os sexos, sendo duas doses aos 9 e 10 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Em abril de 2024, o Ministério da Saúde do Brasil implementou uma mudança histórica no Programa Nacional de Imunizações (PNI), adotando a estratégia de dose única para a vacina contra o HPV. Essa decisão seguiu recomendações da Organização Mundial da Saúde (OMS) e visa aumentar a adesão e a cobertura vacinal.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A faixa etária para a vacinação de rotina contra o HPV no Brasil começa aos 9 anos e vai até os 14 anos (14 anos, 11 meses e 29 dias). Não há recomendação para crianças de 4 anos no calendário geral.\n\nAlternativa (b) Incorreta. A vacina é universal para ambos os sexos. Os meninos foram incluídos gradualmente no calendário nacional a partir de 2017, pois a vacinação masculina ajuda na redução indireta do câncer do colo do útero (imunidade de rebanho) e na prevenção direta de cânceres de pênis, ânus e orofaringe, além de verrugas genitais.\n\nAlternativa (c) Incorreta. O foco prioritário da vacinação é a população pré-púbere e os adolescentes, preferencialmente antes do início da vida sexual, momento em que a vacina atinge sua eficácia máxima por não ter havido exposição prévia aos tipos de HPV contidos no imunizante.\n\nAlternativa (d) Correta. Esta alternativa descreve a atualização de 2024. O esquema passou a ser de dose única para meninos e meninas de 9 a 14 anos. Além disso, o PNI mantém a indicação para grupos prioritários, que incluem pessoas com imunocomprometimento (como pessoas vivendo com HIV/aids, transplantados e pacientes oncológicos) na faixa etária de 9 a 45 anos, e vítimas de violência sexual. É importante notar que, para os imunocomprometidos, o esquema permanece em três doses, mas a alternativa está correta ao listar esses grupos como beneficiários do programa.\n\nAlternativa (e) Incorreta. Até março de 2024, o esquema era de duas doses com intervalo de seis meses. Com a nova diretriz, o esquema de duas doses foi descontinuado para o público geral de 9 a 14 anos, sendo substituído pela dose única.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  },
+  {
+    "id": "AJUDA_b33ff0d9-6270-4c8e-b34d-1feba284934f",
+    "originalId": "b33ff0d9-6270-4c8e-b34d-1feba284934f",
+    "statement": "Menina de 12 anos foi trazida pela mãe à Emergência por dor articular e cansaço. Relatou a ocorrência de dor sequencial no joelho direito, tornozelo esquerdo, tornozelo direito, cotovelo esquerdo e punhos bilateralmente na última semana e de dispneia há 2 dias. Descreveu episódio de “dor de garganta” há 3 semanas. Ao exame físico, encontrava-se febril (38,5° C), com artrite nos sítios referidos, rash no tronco com margens eritematosas circulares e centro pálido e sopro sistólico em foco mitral com irradiação axilar. Em relação à principal hipótese diagnóstica, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Linfadenomegalia, hepatoesplenomegalia, FAN não reagente e elevação de transaminases confirmam o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A pesquisa de anticorpos no soro apresenta maior sensibilidade do que a cultura por swab de orofaringe neste momento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Elevação discreta de VSG (VHS), proteinúria, cilindros hemáticos e resposta insatisfatória a aspirina são achados esperados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fator reumatoide e FAN reagentes, redução de complementos e elevação de PCR devem indicar avaliação por oftalmologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico de febre reumática (FR) aguda em uma paciente de 12 anos. Os elementos fundamentais para o diagnóstico são o período de latência de 3 semanas após uma orofaringite e a presença de critérios maiores de Jones: poliartrite migratória, cardite (sopro de insuficiência mitral e dispneia) e eritema marginatum (rash com margens circulares e centro pálido).\n\nAnálise das alternativas:\n\na) INCORRETA. Linfadenomegalia, hepatoesplenomegalia e alteração de transaminases não fazem parte dos critérios diagnósticos de Jones para febre reumática. Esses achados poderiam sugerir outras patologias, como mononucleose infecciosa ou formas sistêmicas de artrite idiopática juvenil, mas não confirmam FR. O diagnóstico de FR é clínico, baseado nos critérios de Jones (maiores e menores), associado à evidência de infecção estreptocócica prévia.\n\nb) CORRETA. Para o diagnóstico de febre reumática, é obrigatória a comprovação de infecção prévia pelo estreptococo do grupo A (exceto na coreia isolada ou cardite tardia). Como a febre reumática é uma complicação tardia (imunomediada) que ocorre cerca de 2 a 4 semanas após a dor de garganta, o agente infeccioso geralmente já foi depurado da orofaringe, tornando a cultura de swab pouco sensível (frequentemente negativa). Por outro lado, os títulos de anticorpos, como a antiestreptolisina O (ASLO), atingem seu pico justamente no momento em que os sintomas de FR aparecem, apresentando maior sensibilidade diagnóstica neste estágio.\n\nc) INCORRETA. Na febre reumática, espera-se uma elevação importante (e não discreta) das provas de atividade inflamatória, como o VHS e a PCR. Além disso, a artrite da FR é caracterizada por uma resposta dramática e rápida ao uso de aspirina ou outros anti-inflamatórios não esteroides (AINEs); a falta de resposta costuma inclusive levar o médico a questionar o diagnóstico. Proteinúria e cilindros hemáticos são marcadores de acometimento renal (glomerulonefrite pós-estreptocócica), que raramente ocorre de forma simultânea à febre reumática.\n\nd) INCORRETA. Fator reumatoide e FAN reagentes com queda de complemento são marcadores de doenças autoimunes sistêmicas, como o lúpus eritematoso sistêmico ou artrite reumatoide, e não são achados da febre reumática. A avaliação oftalmológica de rotina em busca de uveíte é indicada na artrite idiopática juvenil (AIJ), especialmente em pacientes com FAN positivo, mas não faz parte do acompanhamento padrão da febre reumática.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Febre Reumática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  },
+  {
+    "id": "AJUDA_b346fa73-a9fc-4d2f-8a21-75015881a96c",
+    "originalId": "b346fa73-a9fc-4d2f-8a21-75015881a96c",
+    "statement": "Quanto a Obesidade infantil, analise as afirmativas abaixo.\nI. A obesidade infantil já é considerada uma pandemia.\nII. A obesidade é causada pela interação de fatores genéticos, ambientais e comportamentais.\nIII. O tempo gasto com telas de dispositivos eletrônicos (televisão, smartphone, tablete, videogame, computador) pode contribuir para obesidade infantil.\nIV. Crianças que não dormem o suficiente podem ter dificuldades em várias áreas, inclusive no desenvolvimento de maus hábitos alimentares.\nV. Como medida preventiva, cabe as sociedades médicas atualizar os associados com programas de educação continuada sobre prevenção e tratamento da obesidade.\nA alternativa que contém todas as afirmativas corretas é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II, IV e V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II, III, IV e V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II, III e IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II, III,IV e V",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "I, III, IV e V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a obesidade infantil sob uma perspectiva multidisciplinar, exigindo do candidato conhecimento sobre epidemiologia, fisiopatologia, comportamento e políticas de saúde pública.\n\nAnálise das Afirmativas:\n\nAfirmativa I (Correta): A obesidade infantil atingiu proporções globais, com um aumento dramático na prevalência em quase todos os países nas últimas décadas. A Organização Mundial da Saúde (OMS) utiliza o termo pandemia para descrever esse cenário, visto que a doença afeta um número elevado de indivíduos em diversas regiões geográficas simultaneamente, tornando-se um dos maiores desafios de saúde pública do século XXI.\n\nAfirmativa II (Correta): A etiologia da obesidade é complexa e multifatorial. Existe uma base genética que determina a suscetibilidade do indivíduo, mas o fenótipo obeso é geralmente desencadeado por fatores ambientais (o chamado \"ambiente obesogênico\") e comportamentais, como o consumo excessivo de alimentos densamente calóricos e a redução do gasto energético.\n\nAfirmativa III (Correta): O uso excessivo de telas (televisão, smartphones e videogames) está diretamente associado ao ganho de peso. Esse comportamento contribui para a obesidade por três vias principais: substituição de atividades físicas por comportamento sedentário, aumento da ingestão de alimentos ultraprocessados durante o uso dos aparelhos e exposição a publicidade de alimentos não saudáveis.\n\nAfirmativa IV (Correta): A privação do sono causa um desequilíbrio neuroendócrino importante. A redução das horas de sono diminui os níveis de leptina (hormônio da saciedade) e aumenta os níveis de grelina (hormônio da fome). Além disso, crianças cansadas tendem a ser mais sedentárias e a buscar alimentos ricos em açúcar e gordura como fonte de energia rápida (mecanismo de recompensa).\n\nAfirmativa V (Correta): A prevenção e o tratamento da obesidade exigem que os profissionais de saúde estejam alinhados com as evidências científicas mais recentes. Sociedades médicas (como a Sociedade Brasileira de Pediatria e a ABESO) desempenham papel fundamental ao fornecer diretrizes, protocolos e programas de educação continuada para capacitar o médico na abordagem clínica e preventiva.\n\nAnálise das Alternativas:\n\na) Incorreta. Exclui a afirmativa III, que é um fator de risco comprovado.\nb) Incorreta. Exclui a afirmativa I, ignorando o caráter pandêmico da doença.\nc) Incorreta. Exclui as afirmativas I e V, importantes para o contexto epidemiológico e institucional.\nd) CORRETA. Todas as cinco afirmativas apresentam conceitos verdadeiros e consensuais na literatura médica atual.\ne) Incorreta. Exclui a afirmativa II, que descreve corretamente a natureza multifatorial da doença.\n\nGabarito: Letra (d).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Obesidade na Infância e na Adolescência"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  },
+  {
+    "id": "AJUDA_b353c9fd-e2e6-47ed-a843-ac9f4aa6679f",
+    "originalId": "b353c9fd-e2e6-47ed-a843-ac9f4aa6679f",
+    "statement": "Mulher de 48 anos procurou uma Unidade Básica de Saúde (UBS) devido a dor crônica generalizada persistente. Relata que, em consulta com outro médico, recebeu o diagnóstico de fibromialgia e que, desde então, tem feito diversos tratamentos, mas sem resultados. Diante disso, a paciente solicita a prescrição de Cannabis medicinal.\nQual é o papel do médico da UBS em relação ao uso da Cannabis medicinal nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrevê-la, visto que ela consta na relação nacional de medicamentos excepcionais do SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar autorização do Conselho Regional de Medicina para sua prescrição no SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Informar que faltam evidências que sustentem seu uso e sua prescrição no SUS.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Comunicar que seu uso e sua prescrição no SUS devem ocorrer mediante autorização judicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Resposta correta: letra C.\n\nContexto clínico e regulatório\nA fibromialgia é uma síndrome de dor crônica generalizada cujo tratamento se apoia principalmente em medidas não farmacológicas: educação em dor, exercício físico aeróbico e de fortalecimento progressivo, higiene do sono e terapia cognitivo-comportamental. Os fármacos são adjuvantes, com destaque para amitriptilina, ciclobenzaprina, duloxetina e pregabalina.\n\nOs canabinoides não têm evidência robusta de benefício na fibromialgia. Os estudos disponíveis são poucos, pequenos, de curta duração e de baixa qualidade metodológica, com efeitos adversos frequentes (tontura, sonolência, alterações cognitivas). Por isso, as diretrizes nacionais e internacionais não recomendam seu uso nessa condição.\n\nNo âmbito regulatório:\n- Os produtos de Cannabis são regulados pela RDC 327/2019 da Anvisa. Ela permite a prescrição por médico, com receituário específico, quando outras opções terapêuticas se esgotaram.\n- Esses produtos não fazem parte da RENAME nem do Componente Especializado da Assistência Farmacêutica (CEAF). Não há Protocolo Clínico e Diretrizes Terapêuticas (PCDT) que os incorpore para fibromialgia.\n- A Conitec não recomendou a incorporação de canabinoides ao SUS por insuficiência de evidências.\n\nAssim, o papel do médico da UBS é acolher a paciente e explicar, com base em evidências, que não há sustentação científica nem previsão no SUS para esse uso. Em seguida, deve reavaliar o diagnóstico e otimizar o tratamento recomendado, com ênfase nas medidas não farmacológicas e na abordagem multiprofissional.\n\nAnálise das alternativas\n\na) Incorreta. A Cannabis medicinal não consta da RENAME nem do componente especializado (antigos \"medicamentos excepcionais\") do SUS. Não há base para prescrevê-la por essa via.\n\nb) Incorreta. O Conselho Regional de Medicina não autoriza prescrições individuais. A regulação dos produtos de Cannabis cabe à Anvisa, e a incorporação ao SUS depende da Conitec e do Ministério da Saúde.\n\nc) Correta. Faltam evidências de qualidade que sustentem o uso de canabinoides na fibromialgia, e não há incorporação desses produtos ao SUS. Cabe ao médico informar isso à paciente e conduzir o tratamento baseado em evidências.\n\nd) Incorreta. A autorização judicial não é requisito para uso ou prescrição. A judicialização é uma via que pacientes eventualmente buscam para obter acesso, mas não é uma conduta a ser orientada pelo médico. Além disso, ela não muda o fato central: falta evidência que justifique o uso nesse caso.\n\nPonto-chave: na fibromialgia, o tratamento de primeira linha é não farmacológico, com destaque para o exercício físico. Os canabinoides não têm evidência suficiente nem estão incorporados ao SUS para essa indicação.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Dolorosas Crônicas",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  },
+  {
+    "id": "AJUDA_b364a8c4-b737-4933-a7bc-83ebc37ef65c",
+    "originalId": "b364a8c4-b737-4933-a7bc-83ebc37ef65c",
+    "statement": "Lactente, sexo masculino, 14 meses de idade, é levado ao Pronto-Socorro pelos pais devido a tosse rouca, febre baixa e dificuldade para respirar, que piora à noite. Os sintomas começaram há dois dias, com coriza e febre leve, mas evoluíram para uma tosse “latido” e estridor inspiratório. Ao exame físico, observa-se desconforto respiratório moderado com retrações intercostais. A ausculta pulmonar revela estridor inspiratório, mas sem sibilos ou crepitações. A saturação de oxigênio está em 94% em ar ambiente.\nQual é o diagnóstico mais provável e o tratamento inicial apropriado para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bronquiolite; administração de broncodilatadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Asma; administração de corticosteroides inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laringite viral; nebulização com epinefrina e corticoide por via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pneumonia bacteriana; antibiótico por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Corpo estranho na via aérea; broncoscopia urgente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de laringotraqueobronquite viral aguda, também conhecida como crupe viral. Os elementos fundamentais para o diagnóstico são: a faixa etária (lactente), o pródromo viral (coriza e febre baixa) e a instalação de tosse metálica (em latido), rouquidão e estridor inspiratório, com a característica piora noturna e na agitação.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A bronquiolite viral aguda é uma infecção que acomete as vias aéreas inferiores (bronquíolos). Clinicamente, manifesta-se com taquipneia, sibilos e estertores, e não com estridor. O estridor é um ruído tipicamente inspiratório decorrente da obstrução da via aérea superior. Além disso, o uso de broncodilatadores não é a conduta inicial recomendada para obstrução laríngea.\n\nAlternativa b: Incorreta. A asma brônquica é uma doença inflamatória crônica das vias aéreas inferiores que cursa com episódios de sibilância expiratória e dispneia. Embora possa haver tosse, ela não apresenta o timbre rouco ou metálico característico da laringite, e o estridor não é um achado da asma.\n\nAlternativa c: Correta. O diagnóstico é de laringite viral (crupe). Para pacientes que apresentam sinais de desconforto respiratório moderado (como as retrações intercostais observadas e estridor em repouso), o tratamento inicial indicado é a administração de corticoides (como a dexametasona), que reduzem o edema inflamatório da região subglótica, associada à nebulização com epinefrina (adrenalina). A epinefrina promove vasoconstrição local e alívio imediato da obstrução da via aérea.\n\nAlternativa d: Incorreta. A pneumonia bacteriana apresenta-se habitualmente com febre alta, comprometimento do estado geral e alterações focais na ausculta pulmonar, como estertores crepitantes ou redução do murmúrio vesicular. O estridor inspiratório e a tosse latidosa não fazem parte do quadro clínico de pneumonia.\n\nAlternativa e: Incorreta. A aspiração de corpo estranho deve ser suspeitada em casos de início súbito de sufocação e estridor, geralmente sem sintomas infecciosos prévios. No caso relatado, o paciente apresentava coriza e febre há dois dias, o que direciona o diagnóstico para uma etiologia infecciosa viral.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  },
+  {
+    "id": "AJUDA_b3680d50-8182-4056-b17b-b756449d80cb",
+    "originalId": "b3680d50-8182-4056-b17b-b756449d80cb",
+    "statement": "Criança, 8 meses de idade, sexo feminino, é levada ao pronto-socorro por febre há 2 dias, irritabilidade e recusa alimentar. Não há sintomas respiratórios. Ao exame físico, apresenta temperatura de 38,8 °C, sem sinais de meningismo. O exame de urina mostra piúria e bacteriúria significativa. A ultrassonografia das vias urinárias evidencia dilatação pielocalicial moderada à direita. De acordo com o caso clínico relatado, qual é a conduta a ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratar com antibiótico oral ambulatorial, sem necessidade de investigação complementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar antibioticoterapia e investigar refluxo vesicoureteral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever antipirético e observar em domicílio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coletar material para urocultura e aguardar resultado para tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nEstamos diante de uma lactente de 8 meses com um quadro clássico de infecção do trato urinário (ITU) febril, comumente associada à pielonefrite nesta faixa etária. Os sintomas de irritabilidade, febre e recusa alimentar são sinais sistêmicos importantes. O exame de urina confirma a infecção (piúria e bacteriúria), e a ultrassonografia revela uma alteração anatômica (dilatação pielocalicial), o que exige uma conduta ativa tanto no tratamento quanto na investigação diagnóstica.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. Embora o tratamento com antibiótico seja necessário, a afirmação de que não há necessidade de investigação complementar está errada. Segundo as principais diretrizes (como as da Sociedade Brasileira de Pediatria e da Academia Americana de Pediatria), lactentes com o primeiro episódio de ITU febril devem realizar triagem com ultrassonografia. No caso em questão, como a ultrassonografia já foi feita e apresentou alteração (dilatação), é obrigatório prosseguir a investigação para descartar anomalias estruturais ou refluxo.\n\nAlternativa B: Correta. O tratamento imediato com antibioticoterapia é fundamental para prevenir cicatrizes renais e complicações sistêmicas. Além disso, a presença de dilatação no trato urinário superior identificada na ultrassonografia é uma indicação clássica para a realização de exames complementares adicionais, geralmente a uretrocistografia miccional, para investigar o refluxo vesicoureteral (RVU) ou outras malformações do trato urinário.\n\nAlternativa C: Incorreta. Diante de uma infecção bacteriana confirmada em uma criança de 8 meses com febre alta e sintomas sistêmicos, a conduta expectante apenas com antipirético é inadequada e perigosa. O atraso no início do antibiótico aumenta significativamente o risco de lesão renal permanente e sepse.\n\nAlternativa D: Incorreta. A coleta de urocultura é indispensável e deve ser feita antes do início do antibiótico para confirmar o agente e sua sensibilidade. No entanto, em um lactente febril e sintomático, não se deve aguardar o resultado da cultura (que demora de 48 a 72 horas) para iniciar o tratamento. A conduta correta é iniciar a antibioticoterapia empírica logo após a coleta do material.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  },
+  {
+    "id": "AJUDA_b37329ec-9e8e-48e5-9b07-2380d3ccdaa6",
+    "originalId": "b37329ec-9e8e-48e5-9b07-2380d3ccdaa6",
+    "statement": "Hilda, 48 anos, usuária frequente da UBS, apresenta tristeza crônica, humor lábil, comportamento dramático e ameaça de suicídio sem plano estruturado. Nega alucinações ou delírios. Faz uso de Fluoxetina 20mg (2-0-0) + Clonazepam 2 mg (0-0-1) e relata que tem utilizado o medicamento além do prescrito, pois tem “vontade de dormir e não acordar mais”, porém apresenta cartelas completas dos medicamentos e, mesmo assim, demanda renovação de receita. Considerando a Linha de Cuidado em Saúde Mental do Ministério da Saúde, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Considerar episódio depressivo grave com sintomas psicóticos e encaminhar a paciente para serviço de urgência psiquiátrica via SAMU",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Considerar episódio depressivo grave sem sintomas psicóticos e encaminhar a paciente para serviço de urgência psiquiátrica via SAMU",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Considerar transtorno afetivo bipolar, episódio atual depressivo com risco suicida, prescrever um estabilizador do humor e encaminhar a paciente para serviço de urgência psiquiátrica via SAMU",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Considerar transtorno de personalidade histriônica, monitorizar risco suicida, otimizar dose de antidepressivo e encaminhar a paciente para psicoterapia, sem necessidade de atendimento imediato em serviço de urgência psiquiátrica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão exige conhecimento sobre o diagnóstico diferencial em saúde mental e a correta condução de casos na Atenção Primária, conforme as diretrizes do Ministério da Saúde. \n\nAnálise do caso clínico: Hilda apresenta um quadro de longa data (tristeza crônica) associado a traços marcantes de personalidade, como o comportamento dramático e a labilidade afetiva. O ponto fundamental para o raciocínio clínico é a incoerência entre o relato e a realidade: ela afirma usar a medicação em excesso para \"não acordar mais\", mas apresenta as cartelas completas e pede novas receitas. Isso, somado à ausência de um plano suicida estruturado e à negação de sintomas psicóticos, sugere que as ameaças de autoextermínio fazem parte de um padrão de comportamento para obter atenção ou ganhos secundários, comum em certos transtornos de personalidade.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O enunciado afirma explicitamente que a paciente nega alucinações ou delírios, o que descarta sintomas psicóticos. Além disso, não há critérios de urgência imediata que justifiquem o acionamento do SAMU, visto que o risco de suicídio não é iminente nem estruturado.\n\nAlternativa (b) Incorreta: Embora a paciente apresente tristeza, o quadro é crônico e permeado por traços de personalidade dramática. O manejo de episódios depressivos na UBS, mesmo que graves, deve primeiro avaliar a rede de apoio e o risco real. O encaminhamento via SAMU é reservado para crises agudas com risco de vida imediato, o que não se aplica ao comportamento crônico de Hilda.\n\nAlternativa (c) Incorreta: Não há elementos na história que sugiram Transtorno Afetivo Bipolar, como episódios prévios de mania ou hipomania (euforia, taquipsiquismo, redução da necessidade de sono). O uso de estabilizadores do humor sem diagnóstico claro e o encaminhamento de urgência estão incorretos para este cenário.\n\nAlternativa (d) Correta: O diagnóstico de Transtorno de Personalidade Histriônica é sugerido pelo comportamento dramático, busca de atenção e labilidade. Nestes casos, as ameaças de suicídio devem ser monitoradas com cautela, mas frequentemente são gestos sem intenção letal imediata. A conduta adequada na Linha de Cuidado é o acompanhamento longitudinal na UBS, a otimização do tratamento medicamentoso para sintomas depressivos/ansiosos adjacentes e, principalmente, o encaminhamento para psicoterapia, que é a base do tratamento para transtornos de personalidade. Não há indicação de internação ou emergência psiquiátrica no momento.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Transtornos de Personalidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  },
+  {
+    "id": "AJUDA_b3791dfa-7265-4414-8e63-ef6f812565fe",
+    "originalId": "b3791dfa-7265-4414-8e63-ef6f812565fe",
+    "statement": "Em qual segmento intestinal o adenocarcinoma ocorre com maior frequência?",
+    "options": [
+      {
+        "id": "A",
+        "text": "jejuno-íleo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cólon ascendente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cólon transverso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "cólon descendente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "retossigmoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O adenocarcinoma colorretal representa a grande maioria dos cânceres de intestino. A distribuição anatômica desses tumores revela que, embora possam surgir em qualquer parte do intestino grosso, existe uma concentração maior em áreas específicas.\n\nAlternativa a: Incorreta. O adenocarcinoma de intestino delgado (jejuno e íleo) é raro, respondendo por uma fração mínima dos casos de câncer gastrointestinal, geralmente menos de 5 por cento. Fatores como a rapidez do trânsito intestinal, o conteúdo mais líquido e a menor carga bacteriana ajudam a explicar essa baixa incidência em comparação ao intestino grosso.\n\nAlternativa b: Incorreta. O cólon ascendente é o sítio de aproximadamente 15 a 20 por cento dos casos de câncer colorretal. Embora exista uma tendência epidemiológica moderna de aumento na incidência de tumores no cólon direito (conhecida como migração proximal), este segmento ainda não supera a frequência do segmento distal.\n\nAlternativa c: Incorreta. O cólon transverso é um dos locais de menor incidência para o surgimento do adenocarcinoma, sendo acometido em cerca de 10 por cento das vezes.\n\nAlternativa d: Incorreta. O cólon descendente isoladamente possui uma frequência de acometimento relativamente baixa, girando em torno de 5 a 10 por cento dos diagnósticos.\n\nAlternativa e: Correta. O segmento retossigmoide, que compreende o cólon sigmoide e o reto, é a localização mais comum do adenocarcinoma intestinal. Historicamente, mais de 50 por cento de todos os tumores malignos colorretais se localizam nessa região distal. O reto, especificamente, é o segmento mais afetado isoladamente, seguido pelo cólon sigmoide. Devido a essa alta prevalência, o rastreamento e a investigação diagnóstica dão grande importância ao exame endoscópico dessa região.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:33.707Z"
+  }
+]

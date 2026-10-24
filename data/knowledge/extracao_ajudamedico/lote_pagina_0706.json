@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_c5912801-f0fb-4f5d-ba5b-bbfa599cbf47",
+    "originalId": "c5912801-f0fb-4f5d-ba5b-bbfa599cbf47",
+    "statement": "Menina, 7 meses, é trazida pelos pais com relato de vários episódios de choro intenso durante a madrugada, com períodos de acalmia. O que preocupou os responsáveis foi a presença de grande quantidade de sangue na fralda, observado há cerca de 2 horas. Não sabem informar sobre o início preciso dos sintomas, pois ambos trabalham durante o dia e a criança fica sob a guarda de uma vizinha. A principal hipótese diagnóstica e a avaliação complementar melhor indicada são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "doença inflamatória intestinal / colonoscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "alergia alimentar / teste de sensibilidade cutânea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "abuso sexual / exame de corpo de delito",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "invaginação intestinal / US abdominal total",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é clássico para invaginação intestinal (ou intussuscepção), sendo a causa mais comum de obstrução intestinal em lactentes entre 3 meses e 2 anos de idade. A tríade clássica consiste em dor abdominal paroxística (choro intenso que alterna com períodos de letargia ou acalmia), vômitos e fezes em \"geleia de morango\" (sangue misturado com muco).\n\nAnálise das alternativas:\n\na) Incorreta. As doenças inflamatórias intestinais (como doença de Crohn ou retocolite ulcerativa) são extremamente raras em lactentes de 7 meses. Além disso, costumam apresentar um quadro mais crônico, com diarreia persistente, perda de peso e atraso no desenvolvimento, o que difere do início agudo e paroxístico apresentado pela paciente.\n\nb) Incorreta. A alergia à proteína do leite de vaca (APLV) pode causar proctocolite alérgica com presença de sangue nas fezes. No entanto, o sangramento costuma ser em menor quantidade (estrias de sangue) e não costuma vir acompanhado de dor abdominal aguda tão intensa e intermitente quanto a descrita. O teste de sensibilidade cutânea não é o exame indicado para o diagnóstico inicial de proctocolite alérgica.\n\nc) Incorreta. Embora o abuso sexual deva ser sempre uma preocupação diagnóstica em pediatria diante de lesões genitais ou sangramentos inexplicados, o padrão da dor (episódios de choro intenso com acalmia) é muito sugestivo de cólica intestinal por obstrução. Na invaginação, o sangramento ocorre por isquemia da mucosa intestinal e eliminação de muco sanguinolento, e não por trauma perineal.\n\nd) Correta. A hipótese de invaginação intestinal é reforçada pela idade da paciente (7 meses) e pela descrição da dor em crises. O \"sangue na fralda\" em grande quantidade sugere o aspecto de \"geleia de morango\", sinal de sofrimento de alça. O ultrassom (US) abdominal total é o padrão-ouro para o diagnóstico inicial, apresentando sinais patognomônicos como o \"sinal do alvo\" ou \"sinal do pseudorrim\", com sensibilidade e especificidade próximas a 100% em mãos experientes. Além de diagnóstico, em alguns casos, o procedimento de enema (opaco ou aéreo) pode ser também terapêutico.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Infantil",
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  },
+  {
+    "id": "AJUDA_c59a2927-a31b-4ba8-b780-25b4ab7e5a56",
+    "originalId": "c59a2927-a31b-4ba8-b780-25b4ab7e5a56",
+    "statement": "Assinale a alternativa que contém a correta classificação de Borrmann de uma lesão gástrica ulceroinfiltrativa.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Borrmann Tipo I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Borrmann Tipo II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Borrmann Tipo III",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Borrmann Tipo IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Borrmann Tipo V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Classificação de Borrmann é o padrão ouro na descrição macroscópica do câncer gástrico avançado (aqueles que invadem a camada muscular da parede gástrica). Para dominar o tema, é fundamental diferenciar o grau de delimitação e a presença de ulceração em cada tipo.\n\nAlternativa A (Incorreta): Borrmann Tipo I. Esta é a forma polipoide ou vegetante. Caracteriza-se por uma massa bem definida que se projeta para a luz do estômago, sem ulceração central. É o tipo menos frequente.\n\nAlternativa B (Incorreta): Borrmann Tipo II. É a forma ulcerada circunscrita. Existe uma úlcera central profunda, mas as suas bordas são elevadas e perfeitamente delimitadas da mucosa adjacente. Não há infiltração visível além da borda da lesão.\n\nAlternativa C (Correta): Borrmann Tipo III. É a forma ulceroinfiltrativa. Esta lesão combina uma ulceração com a infiltração das camadas gástricas situadas ao redor. Diferente do Tipo II, suas bordas são irregulares e mal definidas, tornando difícil identificar visualmente onde o tumor termina e a mucosa saudável começa. É a apresentação mais comum nos serviços de oncologia e cirurgia.\n\nAlternativa D (Incorreta): Borrmann Tipo IV. É a forma infiltrativa difusa. O tumor se espalha extensamente pelas camadas da parede gástrica (principalmente a submucosa e a muscular) sem formar uma massa ou úlcera evidente. Quando o estômago se torna rígido e com capacidade reduzida devido a essa infiltração, recebe o nome de linite plástica.\n\nAlternativa E (Incorreta): Borrmann Tipo V. Refere-se ao câncer gástrico avançado inclassificável, que não se encaixa perfeitamente em nenhum dos padrões anteriores (I a IV).\n\nResumo para Provas:\nTipo I: Polipoide/Vegetante (bem delimitado).\nTipo II: Ulcerado (limites nítidos).\nTipo III: Ulceroinfiltrativo (limites imprecisos).\nTipo IV: Infiltrativo Difuso (linite plástica).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  },
+  {
+    "id": "AJUDA_c59f857f-41d5-4b24-ac1b-098a25f03bff",
+    "originalId": "c59f857f-41d5-4b24-ac1b-098a25f03bff",
+    "statement": "A rasburicase, fármaco muito utilizado na onco-hematologia, é utilizada para reduzir o nível sérico de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fósforo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cálcio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Triglicerídeos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ácido úrico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Sódio",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A rasburicase é uma enzima urato-oxidase recombinante. Sua principal aplicação clínica ocorre no contexto da Oncologia e Hematologia, especificamente na prevenção e no tratamento da Síndrome de Lise Tumoral (SLT). A SLT é uma emergência oncológica causada pela destruição maciça de células neoplásicas, resultando na liberação de grandes quantidades de potássio, fósforo e ácidos nucleicos (que são metabolizados em ácido úrico) na circulação.\n\nMecanismo de ação: A rasburicase catalisa a oxidação do ácido úrico em alantoína. A alantoína é um metabólito significativamente mais solúvel que o ácido úrico (cerca de 5 a 10 vezes mais), o que facilita sua excreção renal e previne a nefropatia por urato, uma das complicações graves da lise tumoral. Diferente do alopurinol, que apenas inibe a formação de novo ácido úrico, a rasburicase promove a degradação do ácido úrico já presente no plasma.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o fósforo aumente drasticamente na Síndrome de Lise Tumoral (hiperfosfatasemia) devido à ruptura celular, a rasburicase não possui ação sobre esse mineral. O controle do fósforo é feito com hidratação e quelantes.\n\nb) Incorreta. Na lise tumoral, ocorre frequentemente hipocalcemia (redução do cálcio) secundária à precipitação do fósfato de cálcio nos tecidos. A rasburicase não atua no metabolismo do cálcio.\n\nc) Incorreta. Os triglicerídeos não estão relacionados ao mecanismo de ação da rasburicase nem são marcadores típicos da Síndrome de Lise Tumoral.\n\nd) Correta. A rasburicase é utilizada especificamente para reduzir os níveis de ácido úrico, convertendo-o em alantoína, sendo a terapia de escolha em casos de hiperuricemia severa ou em pacientes de alto risco para SLT.\n\ne) Incorreta. O sódio não sofre ação direta da rasburicase. Alterações de sódio em pacientes oncológicos costumam estar relacionadas a outras condições, como a SIADH ou volemia, e não ao metabolismo do urato.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  },
+  {
+    "id": "AJUDA_c5a2c42b-eb93-4346-bf56-4c60dd311f85",
+    "originalId": "c5a2c42b-eb93-4346-bf56-4c60dd311f85",
+    "statement": "Mulher de 76 anos apresenta massa dolorosa logo abaixo do ligamento inguinal, em raiz da coxa esquerda, que se evidencia com os esforços. O diagnóstico mais provável é hérnia",
+    "options": [
+      {
+        "id": "A",
+        "text": "inguinal direta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "femoral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "inguinal indireta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "obturadora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "de Spiegel.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto fundamental para resolver esta questão é a localização anatômica da massa em relação ao ligamento inguinal.\n\nA alternativa (b) está correta. A hérnia femoral (também chamada de crural) ocorre quando o conteúdo abdominal se protrui através do canal femoral. Sua principal característica clínica é apresentar-se como um abaulamento ou massa logo abaixo do ligamento inguinal, na raiz da coxa, medialmente aos vasos femorais. É uma condição muito mais comum em mulheres idosas, como no caso da paciente de 76 anos, devido à anatomia da pelve feminina, que é mais larga. Além disso, as hérnias femorais possuem um alto risco de encarceramento e estrangulamento, o que justifica a queixa de dor relatada.\n\nAs demais alternativas estão incorretas pelos seguintes motivos:\n\na) Inguinal direta: Ocorre devido a uma fraqueza na parede posterior do canal inguinal (triângulo de Hesselbach). Clinicamente, o abaulamento surge acima do ligamento inguinal.\n\nc) Inguinal indireta: É o tipo mais comum de hérnia e decorre da persistência do conduto peritoneovaginal. Assim como a direta, ela se manifesta acima do ligamento inguinal, entrando pelo anel inguinal interno.\n\nd) Obturadora: É uma hérnia rara que ocorre através do canal obturador. Geralmente não é visível ou palpável externamente de forma clara, manifestando-se frequentemente como obstrução intestinal ou dor na face interna da coxa (sinal de Howship-Romberg) por compressão do nervo obturador.\n\ne) De Spiegel: Ocorre através da linha semilunar, na borda lateral do músculo reto abdominal, geralmente na altura da linha arqueada de Douglas. Sua localização é na parede abdominal anterior, bem acima da região inguinal ou da coxa.\n\nEm resumo: Massa ABAIXO do ligamento inguinal em mulher idosa é o quadro clássico de Hérnia Femoral.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  },
+  {
+    "id": "AJUDA_c5a3eea9-72b1-432c-a2d4-c5eb301135c6",
+    "originalId": "c5a3eea9-72b1-432c-a2d4-c5eb301135c6",
+    "statement": "As doenças vasculares encefálicas se manifestam como múltiplas síndromes clínicas que recebem a denominação genérica de AVC (Acidente Vascular Cerebral). Qual o mecanismo fisiopatológico que predomina nos AVCs isquêmicos de médios/grandes vasos e pequenos vasos, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Embolia cardiogênica e aneurismas de Charcot Bouchard.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Embolia cardiogênica e embolia arterio-arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aterosclerose e arteriolosclerose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aterosclerose e angiopatia amilóide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a fisiopatologia do Acidente Vascular Cerebral Isquêmico (AVCI), exigindo o conhecimento sobre os processos patológicos que acometem diferentes calibres de vasos sanguíneos no sistema nervoso central.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a embolia cardiogênica seja uma causa importante de AVCI em grandes e médios vasos (como a artéria cerebral média), os aneurismas de Charcot-Bouchard não estão relacionados ao AVC isquêmico. Eles são pequenas dilatações em artérias perfurantes associadas à hipertensão arterial sistêmica e estão classicamente vinculados ao AVC hemorrágico (hemorragia intraparenquimatosa em núcleos da base).\n\nb) Incorreta. A embolia cardiogênica e a embolia artério-arterial são mecanismos que resultam na oclusão de vasos de médio ou grande calibre. A embolia artério-arterial ocorre quando um fragmento de uma placa aterosclerótica de uma artéria proximal (como a carótida) se desprende e obstrui um vaso distal. Nenhuma das duas opções explica o mecanismo intrínseco da doença de pequenos vasos (infartos lacunares).\n\nc) Correta. Este é o par que define perfeitamente as bases fisiopatológicas. A aterosclerose é o principal processo que acomete vasos de médio e grande calibre (como carótidas, vertebrais e as grandes artérias do Polígono de Willis), caracterizada pela formação de placas de ateroma que podem causar estenose ou trombose in situ. Já a arteriolosclerose (especificamente a lipo-hialinose e a microateromatose) é o processo degenerativo das pequenas artérias perfurantes (ramos profundos), geralmente causado por hipertensão crônica e diabetes, resultando nos chamados infartos lacunares.\n\nd) Incorreta. A aterosclerose está correta para vasos de médio/grande calibre, mas a angiopatia amiloide é uma condição em que ocorre o depósito de proteína beta-amiloide na camada média e adventícia de pequenas e médias artérias corticais e leptomeníngeas. Assim como os aneurismas de Charcot-Bouchard, a angiopatia amiloide é uma causa clássica de AVC hemorrágico (especialmente o lobar em idosos), e não a base dos AVCs isquêmicos de pequenos vasos.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  },
+  {
+    "id": "AJUDA_c5a6f930-6055-4851-9deb-7c6cb1ad2921",
+    "originalId": "c5a6f930-6055-4851-9deb-7c6cb1ad2921",
+    "statement": "Na fisiopatogenia da Síndrome dos Ovários Policísticos (SOP), a inter-relação entre a disfunção neuroendócrina e o metabolismo da insulina gera manifestações clínicas e laboratoriais características. Sobre esses mecanismos e sua semiologia, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A hipersecreção de FSH em relação ao LH é o evento primário que leva à hiperplasia das células da teca e consequente anovulação crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A resistência insulínica compensatória leva à hiperinsulinemia, que atua no fígado inibindo a síntese de globulina transportadora de hormônios sexuais (SHBG), resultando em aumento da fração livre da testosterona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O hiperandrogenismo clínico na SOP decorre exclusivamente da produção adrenal de S-DHEA, sendo a produção ovariana de androstenediona irrelevante para o quadro de hirsutismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A imagem ultrassonográfica de ovários com aspecto policístico é mandatória para o diagnóstico, mesmo na presença de anovulação e hiperandrogenismo (Critérios de Rotterdam), e reflete a atresia folicular mediada pela progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a fisiopatogenia da Síndrome dos Ovários Policísticos (SOP), é fundamental analisar as alterações endócrinas e metabólicas que se retroalimentam. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. Na SOP, o evento neuroendócrino característico é o aumento da frequência dos pulsos do hormônio liberador de gonadotrofinas (GnRH), o que resulta em uma hipersecreção de LH (hormônio luteinizante) em relação ao FSH (hormônio folículo-estimulante). É o LH elevado que estimula as células da teca a produzirem androgênios em excesso. O FSH, por estar relativamente baixo, não consegue promover a conversão adequada desses androgênios em estrogênios nas células da granulosa, impedindo a maturação folicular.\n\nAlternativa b) Correta. Esta alternativa descreve perfeitamente um dos pilares da síndrome. A resistência à insulina gera uma hiperinsulinemia compensatória. Essa insulina elevada atua no fígado inibindo a produção da SHBG (globulina transportadora de hormônios sexuais). Com menos SHBG circulante, há menos proteína para se ligar à testosterona, resultando em um aumento da sua fração livre (que é a forma biologicamente ativa), o que agrava o hirsutismo e a acne. Além disso, a insulina atua diretamente no ovário, potencializando a ação do LH na produção de androgênios.\n\nAlternativa c) Incorreta. O hiperandrogenismo na SOP é predominantemente de origem ovariana. A produção de androstenediona e testosterona pelas células da teca, estimuladas pelo LH e pela insulina, é o fator central. Embora a glândula adrenal possa contribuir com um aumento modesto de S-DHEA (sulfato de deidroepiandrosterona) em cerca de 25 a 50% das pacientes, ela não é a fonte exclusiva nem a mais relevante na maioria dos casos.\n\nAlternativa d) Incorreta. Segundo os Critérios de Rotterdam (2003), o diagnóstico de SOP requer a presença de pelo menos dois dos três critérios: 1) Oligo ou anovulação crônica; 2) Sinais clínicos ou bioquímicos de hiperandrogenismo; 3) Ovários policísticos à ultrassonografia. Portanto, se a paciente apresentar anovulação e hiperandrogenismo, o ultrassom não é mandatório para o diagnóstico. Além disso, a imagem policística reflete o acúmulo de folículos que tiveram seu crescimento interrompido pelo ambiente rico em androgênios e pobre em FSH, e não uma atresia mediada pela progesterona (que, inclusive, costuma estar em níveis baixos devido à falta de ovulação e consequente ausência de corpo lúteo).",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  },
+  {
+    "id": "AJUDA_c5afc8ba-2738-489e-b3bd-b4ac98f40f3d",
+    "originalId": "c5afc8ba-2738-489e-b3bd-b4ac98f40f3d",
+    "statement": "Mulher de 47 anos apresenta quadro arrastado de astenia, soluços, náusea e edema de membros inferiores. Está pálida, a PA: 154 x 110 mmHg. Laboratorialmente apresenta ureia: 110 mg/dL, creatinina: 4,8 mg/dL e hemoglobina: 7,9 g/dL. Neste caso, são prováveis os seguintes achados:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperfosfatemia e alcalemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipocalcemia e hipofosfatemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipercalcemia e hiponatremia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pCO2 reduzido e anion-gap aumentado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Hipernatremia e hipercalemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nO quadro clínico descrito (astenia, soluços, náuseas, edema, hipertensão, anemia e elevação importante de ureia e creatinina) é clássico de Insuficiência Renal Crônica (IRC) em estágio avançado, manifestando-se como Síndrome Urêmica. A anemia (hemoglobina de 7,9 g/dL) em um contexto de doença renal sugere deficiência de eritropoietina, reforçando a cronicidade do processo.\n\nExplicação das Alternativas:\n\nAlternativa (a) Incorreta: Embora a hiperfosfatemia (elevação do fósforo) seja um achado esperado pela redução da filtração glomerular, a alteração ácido-básica típica da insuficiência renal é a acidose metabólica, e não a alcalemia (alcalose). O rim perde a capacidade de excretar íons hidrogênio e de regenerar bicarbonato.\n\nAlternativa (b) Incorreta: Na insuficiência renal avançada, o esperado é a hipocalcemia (devido à menor produção de vitamina D ativa e deposição de cálcio com fósforo) associada à hiperfosfatemia. O fósforo aumenta porque o rim não consegue mais excretá-lo adequadamente.\n\nAlternativa (c) Incorreta: O achado comum é a hipocalcemia, não a hipercalcemia. Quanto ao sódio, pacientes com IRC frequentemente apresentam dificuldade em excretar água livre, o que tende a gerar normonatremia ou hiponatremia dilucional, e não necessariamente hiponatremia como regra absoluta, mas a hipercalcemia invalida a questão.\n\nAlternativa (d) Correta: Na insuficiência renal avançada, ocorre acúmulo de ácidos orgânicos não mensuráveis (como sulfatos, fosfatos e uratos) que o rim não consegue filtrar. Isso resulta em uma Acidose Metabólica com ânion-gap aumentado. Como resposta compensatória a essa acidose, o centro respiratório é estimulado a aumentar a ventilação para \"lavar\" CO2, o que resulta em uma pCO2 reduzida (alcalose respiratória compensatória).\n\nAlternativa (e) Incorreta: A hiperkalemia (elevação do potássio) é um achado muito frequente e perigoso na IRC avançada. No entanto, a hipernatremia (elevação do sódio) não é característica; o mais comum é que o paciente retenha água e sódio proporcionalmente (edema) ou tenha hiponatremia por diluição. O erro principal da alternativa é a afirmação da hipernatremia como achado provável.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  },
+  {
+    "id": "AJUDA_c5bb7dda-4ab8-4bc6-830f-291ac35bb23b",
+    "originalId": "c5bb7dda-4ab8-4bc6-830f-291ac35bb23b",
+    "statement": "São causas ginecológicas de dor pélvica crônica, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "aderências pélvicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "miomatose uterina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "endometrite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "varizes pélvicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Adenomiose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A dor pélvica crônica (DPC) é definida como uma dor não cíclica, com duração de pelo menos seis meses, localizada na pelve anatômica e de intensidade suficiente para causar incapacidade funcional ou levar a paciente a procurar atendimento médico. Para resolver esta questão, é necessário identificar qual das patologias listadas não apresenta a dor crônica como uma manifestação clínica típica ou primária.\n\nAlternativa a) Incorreta. As aderências pélvicas são causas frequentes de dor pélvica crônica. Elas resultam de processos inflamatórios anteriores (como a Doença Inflamatória Pélvica - DIP), endometriose ou cicatrizes de cirurgias prévias. A dor ocorre devido à tração de tecidos, restrição da mobilidade dos órgãos pélvicos e envolvimento de terminações nervosas.\n\nAlternativa b) Correta (Gabarito). A miomatose uterina é a neoplasia benigna mais comum do trato genital feminino. Embora seja uma patologia muito prevalente, seus sintomas principais são o sangramento uterino anormal (hipermenorreia) e sintomas de efeito de massa (pressão na bexiga ou no reto). Os miomas raramente são a causa direta e isolada de dor pélvica crônica. Quando os miomas causam dor, ela costuma ser aguda (devido à degeneração ou torção de mioma pediculado) ou cíclica (dismenorreia). Por isso, na presença de dor pélvica crônica, deve-se sempre investigar outras etiologias antes de atribuí-la exclusivamente aos miomas.\n\nAlternativa c) Incorreta. A endometrite, especialmente em sua forma crônica, pode causar dor pélvica persistente e desconforto. Geralmente está associada a quadros de infecção pélvica subclínica ou persistente, gerando um ambiente inflamatório que contribui para o quadro de dor crônica na paciente.\n\nAlternativa d) Incorreta. As varizes pélvicas são a base fisiopatológica da Síndrome da Congestão Pélvica. A dilatação e o refluxo nas veias ovarianas e hipogástricas causam estase venosa, resultando em dor pélvica crônica. Esta dor tipicamente piora ao final do dia, após longos períodos em pé (ortostase) e após o contato sexual (dor pós-coital).\n\nAlternativa e) Incorreta. A adenomiose ocorre quando o tecido endometrial se infiltra no miométrio. É uma das causas ginecológicas mais clássicas de dor pélvica crônica e dismenorreia secundária (dor no período menstrual), frequentemente acompanhada de aumento do volume uterino e fluxo menstrual intenso.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  },
+  {
+    "id": "AJUDA_c5be3f83-286f-4c8b-8b6e-de4c9a0a5ffc",
+    "originalId": "c5be3f83-286f-4c8b-8b6e-de4c9a0a5ffc",
+    "statement": "O “processo contínuo e sistemático de coleta, consolidação, análise de dados e disseminação de informações sobre eventos relacionados à saúde, visando o planejamento e a implementação de medidas de saúde pública, incluindo a regulação, intervenção e atuação em condicionantes e determinantes da saúde, para a proteção e promoção da saúde da população, prevenção e controle de riscos, agravos e doenças” (Resolução do Conselho Nacional de Saúde nº 588/2018) corresponde ao conceito de",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vigilância em Saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Vigilância Epidemiológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Universalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige do candidato o conhecimento técnico sobre as definições contidas na Política Nacional de Vigilância em Saúde (PNVS), instituída pela Resolução do Conselho Nacional de Saúde (CNS) nº 588/2018.\n\nA alternativa correta é a (b) Vigilância em Saúde.\n\nExplicação detalhada:\n\nO enunciado traz a definição literal contida no Artigo 2º da Resolução CNS nº 588/2018. A Vigilância em Saúde é concebida como um modelo amplo que não se limita apenas ao controle de doenças, mas abrange a análise da situação de saúde da população e a intervenção sobre os determinantes e condicionantes (como saneamento, trabalho, ambiente e comportamento). Ela integra quatro áreas principais: a vigilância epidemiológica, a vigilância sanitária, a vigilância em saúde do trabalhador e a vigilância em saúde ambiental.\n\nAnálise das alternativas incorretas:\n\nAlternativa (a) Integralidade: Esta alternativa está incorreta, pois a Integralidade é um princípio doutrinário do Sistema Único de Saúde (SUS). Ela refere-se à garantia de que o cidadão seja atendido em todas as suas necessidades, desde a prevenção até a alta complexidade, considerando o indivíduo como um todo. Não é um processo de coleta e análise sistemáticas de dados, como descrito no texto.\n\nAlternativa (c) Vigilância Epidemiológica: Esta alternativa está incorreta, porque a Vigilância Epidemiológica é apenas um dos componentes da Vigilância em Saúde. Enquanto a vigilância epidemiológica foca especificamente na detecção e prevenção de doenças e agravos transmissíveis e não transmissíveis, o conceito de Vigilância em Saúde (letra b) é muito mais abrangente, incluindo também as ações sobre o meio ambiente, produtos, serviços e saúde do trabalhador.\n\nAlternativa (d) Universalidade: Esta alternativa está incorreta, pois a Universalidade é outro princípio fundamental do SUS, que estabelece que a saúde é um direito de todos e dever do Estado, assegurando o acesso de toda a população aos serviços de saúde. Não se refere a um processo técnico-operacional de monitoramento de informações de saúde.\n\nGabarito: Letra (b).",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  },
+  {
+    "id": "AJUDA_c5c4e65e-0776-4dfb-b00c-8a39d15292ed",
+    "originalId": "c5c4e65e-0776-4dfb-b00c-8a39d15292ed",
+    "statement": "Um exemplo considerado como uma ferramenta de diagnóstico comunitário é",
+    "options": [
+      {
+        "id": "A",
+        "text": "o genograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o matriciamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o grupo comunitário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a estimativa rápida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico comunitário é um processo de coleta e análise de dados que visa identificar os problemas de saúde, as necessidades e as potencialidades de uma determinada população em seu território.\n\nAlternativa (a) Incorreta: O genograma é uma ferramenta essencial na Estratégia Saúde da Família, porém seu foco é a abordagem familiar. Ele representa graficamente a estrutura e a dinâmica das relações entre os membros de uma família ao longo de gerações, auxiliando no diagnóstico individual e familiar, e não no diagnóstico da comunidade como um todo.\n\nAlternativa (b) Incorreta: O matriciamento (ou apoio matricial) é um novo modo de produzir saúde em que duas ou mais equipes, num processo de construção compartilhada, criam uma proposta de intervenção pedagógico-terapêutica. É uma ferramenta de gestão e organização do cuidado, visando à retaguarda especializada e ao suporte técnico às equipes de referência, mas não é uma ferramenta de diagnóstico comunitário.\n\nAlternativa (c) Incorreta: O grupo comunitário é um espaço de participação social e execução de atividades coletivas. Embora a participação da comunidade seja fundamental para o diagnóstico, o \"grupo\" em si é uma forma de organização social ou estratégia de intervenção, e não uma ferramenta técnica e metodológica de diagnóstico de saúde pública.\n\nAlternativa (d) Correta: A estimativa rápida (ou Estimativa Rápida Participativa) é uma técnica de investigação utilizada para obter informações sobre a realidade local em um curto período. Ela utiliza dados secundários, observação direta do território e entrevistas com informantes-chave da comunidade para identificar problemas prioritários e recursos disponíveis. Por focar na coleta de dados territoriais e sociais de forma ágil para subsidiar o planejamento local, é o exemplo clássico de ferramenta de diagnóstico comunitário solicitado pela questão.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:06.667Z"
+  }
+]

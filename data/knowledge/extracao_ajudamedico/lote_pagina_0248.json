@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_451de6b5-0937-4d26-995a-219f22ea92e2",
+    "originalId": "451de6b5-0937-4d26-995a-219f22ea92e2",
+    "statement": "Assinale a alternativa que representa o principal mecanismo fisiopatológico envolvido na doença do refluxo gastroesofágico (DRGE).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipersecreção de ácido gástrico pelas células parietais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução da produção de muco protetor do estômago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento da motilidade do esôfago distal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Relaxamentos transitórios do esfíncter esofágico inferior.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Infecção por Helicobacter pylori no esôfago.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Doença do Refluxo Gastroesofágico (DRGE) é entendida como uma condição crônica decorrente do fluxo retrógrado de conteúdo gastroduodenal para o esôfago ou órgãos adjacentes. Embora seja uma doença multifatorial, a falha nos mecanismos de barreira na junção esofagogástrica é o ponto central.\n\nAlternativa a) Incorreta. A hipersecreção ácida não é a regra na DRGE. A maioria dos pacientes produz uma quantidade normal de ácido clorídrico; o problema reside no fato de esse ácido estar em um local inadequado (o esôfago) devido a falhas mecânicas. A hipersecreção é característica de condições raras, como a Síndrome de Zollinger-Ellison.\n\nAlternativa b) Incorreta. A redução da produção de muco e de bicarbonato é um mecanismo mais relacionado à fisiopatologia das gastrites e das úlceras pépticas gástricas e duodenais, nas quais há um desequilíbrio entre fatores agressores e protetores da própria mucosa do estômago.\n\nAlternativa c) Incorreta. O aumento da motilidade do esôfago distal ajudaria a limpar o ácido do esôfago (*clearance* esofágico) mais rapidamente. O que se observa em alguns pacientes com DRGE é, na verdade, a hipomotilidade ou ondas peristálticas ineficazes, o que prolonga o tempo de contato do material refluído com a mucosa esofágica.\n\nAlternativa d) Correta. Os relaxamentos transitórios do esfíncter esofágico inferior (RTEI) são episódios de relaxamento do esfíncter que ocorrem independentemente da deglutição e duram mais tempo que o relaxamento fisiológico induzido pelo alimento (geralmente mais de 10 segundos). Eles são desencadeados principalmente pela distensão gástrica e representam o principal mecanismo de refluxo tanto em indivíduos saudáveis quanto em pacientes com DRGE sem hérnia de hiato ou hipotonia severa do esfíncter.\n\nAlternativa e) Incorreta. O *Helicobacter pylori* é uma bactéria que coloniza a mucosa gástrica e está associada a gastrites, úlceras e câncer gástrico. Não há evidências de que cause DRGE. Inclusive, em alguns casos, a erradicação do *H. pylori* pode desmascarar ou piorar sintomas de refluxo em pacientes que desenvolvem gastrite de corpo gástrico com redução da produção ácida.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  },
+  {
+    "id": "AJUDA_452595f2-fb9c-42bc-a194-f7481be05e5b",
+    "originalId": "452595f2-fb9c-42bc-a194-f7481be05e5b",
+    "statement": "Homem, 68 anos, portador de cardiomiopatia isquêmica com ICFEr (FEVE 25%), chega ao pronto-socorro com dispneia em repouso, oligúria e piora do edema em membros inferiores. Ao exame: PA 85 x 55 mmHg, FC 118 bpm, FR 28 irpm, saturação 89% em O₂ nasal 2 L/min, turgência jugular aumentada, crepitações bibasais, extremidades frias e tempo de enchimento capilar prolongado. Considerando o perfil hemodinâmico do paciente como tipo C, qual conduta terapêutica inicial é mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar ieca ou bra e um antagonista de aldosterona em doses baixas e observar por 48h antes de outras intervenções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administrar betabloqueador em dose plena e iniciar vasodilatadores de ação prolongada para melhorar o débito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar diurético de alça intravenoso para reduzir a congestão e um inotrópico, como dobutamina, para melhorar a perfusão, monitorando de perto a resposta hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "restringir líquidos e sódio e apenas acompanhar a pressão arterial nas primeiras 24h antes de introduzir terapias medicamentosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar nitroprussiato/nitroglicerina em doses altas para rápida redução da pós-carga, apesar da hipotensão, sem suporte inotrópico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro de insuficiência cardíaca descompensada com sinais claros de dois fenômenos: congestão sistêmica/pulmonar (crepitações, turgência jugular, edema) e hipoperfusão tecidual (extremidades frias, tempo de enchimento capilar prolongado, oligúria e hipotensão). Essa combinação define o Perfil Hemodinâmico C (Úmido e Frio), que é o estágio mais grave e requer intervenção imediata para restaurar o débito cardíaco e reduzir a congestão.\n\nExplicação das Alternativas:\n\nAlternativa (a) Incorreta. Medicamentos que agem no sistema renina-angiotensina-aldosterona (IECA, BRA ou antagonistas da aldosterona) são fundamentais no tratamento crônico da ICFEr para redução de mortalidade. No entanto, na fase aguda com hipotensão e hipoperfusão (choque cardiogênico ou pré-choque), essas drogas são contraindicadas, pois podem piorar a função renal e reduzir ainda mais a pressão arterial.\n\nAlternativa (b) Incorreta. O uso de betabloqueadores é terminantemente proibido em pacientes com sinais de hipoperfusão ou necessidade de inotrópicos. Por serem cronotrópicos e inotrópicos negativos, eles reduziriam ainda mais o débito cardíaco, podendo levar ao óbito. Vasodilatadores de ação prolongada também não têm espaço no manejo da descompensação aguda com hipotensão.\n\nAlternativa (c) Correta. O Perfil C exige uma abordagem dupla. O inotrópico (como a dobutamina) é essencial para aumentar a contratilidade miocárdica, melhorar o débito cardíaco e, consequentemente, a perfusão dos órgãos (corrigindo a oligúria e o estado das extremidades). O diurético de alça intravenoso (furosemida) é necessário para tratar a congestão (o componente \"úmido\"). O monitoramento rigoroso é obrigatório devido ao risco de arritmias e necessidade de ajuste pressórico.\n\nAlternativa (d) Incorreta. A restrição hídrica e de sódio faz parte do manejo não farmacológico, mas é insuficiente para um paciente com sinais de choque e falência de bomba. Apenas observar a pressão por 24 horas em um quadro de hipoperfusão e oligúria retardaria um tratamento vital, permitindo a progressão para disfunção orgânica múltipla.\n\nAlternativa (e) Incorreta. Embora vasodilatadores como nitroprussiato ou nitroglicerina sejam usados no Perfil B (Úmido e Quente), eles são contraindicados quando a pressão arterial sistólica está abaixo de 90 mmHg (este paciente está com 85 mmHg). O uso de vasodilatadores sem o suporte de um inotrópico em um paciente hipotenso causaria um colapso circulatório grave.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  },
+  {
+    "id": "AJUDA_45316b9f-1418-4afc-977d-751f97947422",
+    "originalId": "45316b9f-1418-4afc-977d-751f97947422",
+    "statement": "Sobre os Tumores Estromais Gastrointestinais (GIST), analise as afirmações:\n\nI. Originam-se das células intersticiais de Cajal, as células \"marca-passo\" do trato gastrointestinal.\nII. A expressão imuno-histoquímica da proteína c-kit (CD117) é o principal marcador diagnóstico.\nIII. A ressecção cirúrgica completa é o tratamento de escolha para doença localizada.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a proposição I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a proposição III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as proposições I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS PROPOSIÇÕES:\n\nI. CORRETA: O GIST (Tumor Estromal Gastrointestinal) tem sua origem nas células intersticiais de Cajal. Essas células estão localizadas na parede do trato digestivo e funcionam como um marcapasso biológico, sendo responsáveis por coordenar a motilidade e as contrações rítmicas do sistema gastrointestinal.\n\nII. CORRETA: O diagnóstico do GIST depende fundamentalmente da análise imuno-histoquímica. A proteína c-kit, que é um receptor de tirosina quinase transmembrana, é expressa em cerca de 95 por cento desses tumores. O marcador utilizado para identificar essa proteína é o CD117, sendo este o principal pilar para a confirmação diagnóstica da patologia.\n\nIII. CORRETA: Para pacientes com GIST localizado e ressecável, a cirurgia é a modalidade terapêutica principal e de escolha. O objetivo é realizar uma ressecção completa da lesão com margens negativas (R0). Diferente de outros tumores gastrointestinais, como o adenocarcinoma, o GIST raramente apresenta disseminação para os linfonodos, o que torna a linfadenectomia de rotina desnecessária.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A proposição I está correta, mas as proposições II e III também estão.\n\nAlternativa b) Incorreta. A proposição III descreve o tratamento correto, mas as demais afirmações diagnósticas e histopatológicas também são verdadeiras.\n\nAlternativa c) Incorreta. Esta alternativa ignora a veracidade da proposição III, que trata da conduta cirúrgica padrão.\n\nAlternativa d) Correta. Todas as três proposições abordam conceitos fundamentais e atualizados sobre a origem, o diagnóstico e o tratamento dos tumores estromais gastrointestinais, estando todas corretas.\n\nGABARITO: LETRA D.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  },
+  {
+    "id": "AJUDA_453a0f91-e7b4-4315-9087-d44dc61d7b76",
+    "originalId": "453a0f91-e7b4-4315-9087-d44dc61d7b76",
+    "statement": "Em julho de 2024, o Ministério da Saúde publicou, em seu Informe Semanal da Secretaria de Vigilância em Saúde e Ambiente (informações referentes às Semanas Epidemiológicas 1 a 26), os dados a seguir.\n• 6.226.216 casos prováveis de Dengue.\n• 4.333 óbitos confirmados por Dengue.\n• Coeficiente de incidência de Dengue: 3066,4 casos/100 mil habitantes.\n• Coeficiente de mortalidade por Dengue: 2,24 óbitos/100 mil habitantes.\n• Coeficiente de letalidade por Dengue: 0,07%.\nCom base nessas informações, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No cálculo do coeficiente de incidência, são considerados todos os casos presentes da doença (antigos e novos) em uma determinada comunidade, em um período de tempo especificado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O coeficiente de incidência representa a ocorrência de novos casos e mede o risco de ocorrência de um agravo na população.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O coeficiente de letalidade representa o risco de óbito pela doença em uma população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O coeficiente de mortalidade indica a gravidade da doença; representa a proporção de óbitos entre os casos da doença e estima o risco de morte pela doença entre aqueles que têm a doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os óbitos confirmados em valor absoluto estimam o risco de morte pela doença dentro de uma população definida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\n    Texto Original:\n    Para compreender esta questão, é fundamental dominar os conceitos básicos de indicadores de saúde em epidemiologia, diferenciando incidência, prevalência, mortalidade e letalidade.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A descrição apresentada refere-se ao conceito de Prevalência. A prevalência engloba todos os casos (novos e antigos) em um ponto ou período do tempo. A Incidência, por outro lado, foca exclusivamente nos casos novos que surgiram em um intervalo de tempo determinado.\n\nAlternativa B: Correta. A incidência é o principal indicador para medir a velocidade de propagação de uma doença e o risco de adoecimento. No cálculo, utilizamos o número de casos novos dividido pela população exposta no período. Portanto, ela representa fielmente o risco de ocorrência de um agravo na população.\n\nAlternativa C: Incorreta. O coeficiente que representa o risco de óbito pela doença em uma população geral é o Coeficiente de Mortalidade. A letalidade tem um foco diferente: ela mede o risco de morte entre as pessoas que já estão doentes, ou seja, avalia a virulência do agente ou a gravidade do quadro clínico.\n\nAlternativa D: Incorreta. A questão inverteu os conceitos. Quem indica a gravidade da doença e representa a proporção de óbitos entre os casos da doença é o Coeficiente de Letalidade. O coeficiente de mortalidade relaciona o número de mortos pela população total, e não apenas entre os que têm a doença.\n\nAlternativa E: Incorreta. Números absolutos (como \"4.333 óbitos\") servem para planejamento de recursos e dimensão do problema, mas não estimam risco. Para estimar risco, é obrigatório trabalhar com coeficientes (taxas), que utilizam um denominador (população sob risco) para permitir a comparação epidemiológica.\n\nResumo dos Indicadores Citados:\n- Incidência: Casos novos / População externa (Mede o Risco de Adoecer).\n- Letalidade: Óbitos / Casos confirmados (Mede a Gravidade da doença).\n- Mortalidade: Óbitos / População total (Mede o Risco de Morrer na população).\n\n    Sua tarefa é REVISAR e CORRIGIR o texto acima, focando especificamente em:\n    1. Erros de acentuação (muito importante).\n    2. Erros gramaticais de português.\n    3. Manter a formatação original.\n    4. Não alterar o sentido técnico da explicação.\n\n    Responda APENAS com o texto corrigido. Nada mais.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  },
+  {
+    "id": "AJUDA_453ed1d4-be25-4fc9-8a7c-a6419b297a76",
+    "originalId": "453ed1d4-be25-4fc9-8a7c-a6419b297a76",
+    "statement": "A respeito da anatomia cirúrgica da região cervical, analise as assertivas a seguir:\n\nI. A artéria tireóidea inferior se origina do tronco tireocervical, que é ramo da artéria subclávia.\nII. A artéria tireóidea superior se origina da artéria carótida interna.\nIII. O nervo laríngeo recorrente direito passa por baixo do ligamento arterioso no arco aórtico e segue no sulco traqueoesofágico até atingir a tireoide.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das assertivas:\n\nAssertiva I está correta. A artéria tireóidea inferior é o ramo terminal do tronco tireocervical, o qual emerge da primeira porção da artéria subclávia, medialmente ao músculo escaleno anterior. Na tireoidectomia, essa artéria é um ponto de referência cirúrgico fundamental para a identificação do nervo laríngeo recorrente.\n\nAssertiva II está incorreta. A artéria tireóidea superior é o primeiro ramo colateral da artéria carótida externa, e não da carótida interna. Vale lembrar que a artéria carótida interna não emite nenhum ramo na região cervical, ramificando-se apenas após atravessar a base do crânio.\n\nAssertiva III está incorreta. A assertiva descreve o trajeto do nervo laríngeo recorrente esquerdo, que cruza o mediastino, contorna o arco aórtico junto ao ligamento arterioso e sobe pelo sulco traqueoesofágico. O nervo laríngeo recorrente direito tem trajeto exclusivamente cervical/torácico alto, contornando a artéria subclávia direita.\n\nAnálise das alternativas:\n\na) Apenas I: Correta. É a única assertiva anatomicamente verdadeira.\nb) Apenas II: Incorreta. A assertiva II erra ao afirmar que a artéria tireóidea superior nasce da carótida interna.\nc) Apenas III: Incorreta. A assertiva III confunde a lateralidade e o trajeto anatômico do nervo laríngeo recorrente.\nd) Apenas II e III: Incorreta. Ambas as assertivas contêm erros conceituais de anatomia vascular e neurológica.\n\nGabarito: Letra a.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Tireoide",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  },
+  {
+    "id": "AJUDA_4543f921-9c93-408c-b95d-60c596bb1d83",
+    "originalId": "4543f921-9c93-408c-b95d-60c596bb1d83",
+    "statement": "Criança de 6 anos, previamente hígida, apresenta, em 24 horas, petéquias difusas, febre alta e sinais de choque (hipotensão, taquicardia, extremidades frias). Qual a hipótese diagnóstica e conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Púrpura de Henoch-Schönlein; corticoide oral imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sepse por meningococo; antibioticoterapia imediata com ceftriaxona EV e suporte intensivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dengue hemorrágica; reposição volêmica isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trombocitopenia imune; imunoglobulina EV imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE CLÍNICA DO CASO\n\nO quadro descreve uma criança de 6 anos com evolução hiperaguda (apenas 24 horas) caracterizada por febre alta, aparecimento de petéquias (lesões hemorrágicas que não desaparecem à digitopressão) e sinais nítidos de choque hemodinâmico (hipotensão, taquicardia e má perfusão periférica). Esta combinação de febre e púrpura em pediatria é uma emergência médica até que se prove o contrário, sendo o principal diagnóstico a meningococcemia (sepse meningocócica).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. A Púrpura de Henoch-Schönlein é uma vasculite de pequenos vasos mediada por IgA. Embora cause púrpura, as lesões são tipicamente palpáveis e localizadas em membros inferiores e nádegas. Além disso, a doença costuma ter um curso mais subagudo, acompanhada de dor abdominal e artralgia, sem evoluir com choque séptico e febre alta de forma tão fulminante. O corticoide não é a conduta imediata para casos de choque.\n\nAlternativa B: Correta. A apresentação é clássica de Meningococcemia. A bactéria Neisseria meningitidis pode causar uma sepse fulminante com purpura fulminans e choque séptico rapidamente progressivo. A conduta deve ser imediata: estabilização hemodinâmica (suporte intensivo com expansão volêmica e, se necessário, drogas vasoativas) e antibioticoterapia precoce com cefalosporina de terceira geração (Ceftriaxone), que possui excelente cobertura para o meningococo e penetração no sistema nervoso central.\n\nAlternativa C: Incorreta. Embora a Dengue possa evoluir com choque e fenômenos hemorrágicos, a dengue grave geralmente ocorre na fase de defervescência (quando a febre baixa), após alguns dias de doença. Um quadro tão súbito de petéquias difusas associado a febre alta e choque em 24 horas aponta fortemente para etiologia bacteriana. Além disso, o tratamento do choque exige suporte hemodinâmico completo, e a suspeita de sepse obriga o uso de antibióticos.\n\nAlternativa D: Incorreta. A Trombocitopenia Imune (PTI) se manifesta com petéquias e equimoses em uma criança que, fora os sangramentos, apresenta-se em bom estado geral. A PTI não causa febre alta nem choque hemodinâmico. A presença de sinais sistêmicos de gravidade exclui a PTI como hipótese principal.\n\nRESUMO DIDÁTICO\n\nDiante de uma criança com febre e petéquias/púrpuras, a prioridade absoluta é descartar e tratar precocemente a meningococcemia devido à sua alta letalidade. O tratamento não deve ser retardado por exames complementares ou punção lombar se o paciente estiver instável. A administração de antibiótico venoso na primeira hora e o suporte hemodinâmico são os pilares para a sobrevivência do paciente.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "Meningites",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  },
+  {
+    "id": "AJUDA_4544e5b6-11c1-4f81-8b20-2fa62da01ae6",
+    "originalId": "4544e5b6-11c1-4f81-8b20-2fa62da01ae6",
+    "statement": "Homem de 64 anos, agricultor, residente em zona rural, está em investigação em uma Unidade Básica de Saúde por insuficiência cardíaca com fração de ejeção reduzida. De antecedentes relevantes, informa 2 episódios de malária há 10 anos e hipertensão arterial controlada. A mãe faleceu de arritmia aos 48 anos. Exames laboratoriais descartam diabetes mellitus e dislipidemia. Eletrocardiograma apresenta bloqueio de ramo direito. Ecocardiograma mostra dilatação ventricular excêntrica bilateral.\n\nConsiderando-se a principal hipótese clínica e a fase da doença, qual método laboratorial é indicado para a confirmação diagnóstica nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exame parasitológico direto por gota espessa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Intradermo reação de Montenegro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sorologia por IgG em dois métodos distintos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Reação em cadeia da polimerase.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Principal hipótese: cardiomiopatia chagásica crônica, ou seja, doença de Chagas na fase crônica, forma cardíaca.\n\nElementos que sustentam a hipótese:\n- Epidemiologia: agricultor de 64 anos, residente em zona rural, área típica de exposição ao triatomíneo (barbeiro).\n- Clínica: insuficiência cardíaca com fração de ejeção reduzida, sem as causas habituais. Diabetes e dislipidemia foram descartados e a hipertensão está controlada, o que torna a etiologia isquêmica ou hipertensiva menos provável.\n- Bloqueio de ramo direito: é a alteração eletrocardiográfica mais característica da cardiopatia chagásica, frequentemente associada ao bloqueio divisional anterossuperior esquerdo.\n- Dilatação biventricular, compatível com miocardiopatia dilatada.\n- Morte materna por arritmia aos 48 anos: sugere transmissão vertical ou exposição familiar no mesmo ambiente. A morte súbita arrítmica é a principal causa de óbito na doença de Chagas.\n- A malária prévia é um distrator.\n\nRaciocínio diagnóstico por fase:\n- Na fase aguda há alta parasitemia. O diagnóstico é parasitológico direto: gota espessa, esfregaço ou métodos de concentração como Strout e micro-hematócrito.\n- Na fase crônica a parasitemia é baixa e intermitente. O diagnóstico é sorológico, com detecção de IgG anti-Trypanosoma cruzi por dois métodos de princípios distintos, como ELISA, imunofluorescência indireta ou hemaglutinação. Em caso de discordância, repete-se a testagem ou usa-se um terceiro método, como Western blot ou TESA-blot.\n\nAnálise das alternativas:\n\na) Exame parasitológico direto por gota espessa: incorreta. É o método da fase aguda de Chagas, quando há tripomastigotas abundantes no sangue. Na fase crônica a sensibilidade é muito baixa. Também serve para diagnosticar malária, mas o episódio ocorreu há 10 anos e não explica o quadro atual.\n\nb) Intradermorreação de Montenegro: incorreta. Avalia a resposta de hipersensibilidade tardia à Leishmania e era usada como apoio no diagnóstico da leishmaniose tegumentar. Não tem papel no diagnóstico de Chagas.\n\nc) Sorologia por IgG em dois métodos distintos: correta. É o padrão para confirmar a doença de Chagas na fase crônica, recomendado pelo Ministério da Saúde e pelo Consenso Brasileiro de Doença de Chagas. Usar dois métodos de princípios diferentes aumenta a sensibilidade e a especificidade e reduz falsos-positivos por reação cruzada, por exemplo com Leishmania.\n\nd) Reação em cadeia da polimerase: incorreta. A PCR tem sensibilidade variável na fase crônica devido à parasitemia intermitente e não é padronizada para diagnóstico de rotina. Seu uso fica restrito a situações específicas: transmissão congênita, reativação em imunossuprimidos, controle pós-tratamento e pesquisa.\n\nResposta: alternativa C.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Cardiomiopatias",
+      "Parasitoses",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  },
+  {
+    "id": "AJUDA_454810e5-0783-4fc4-8a17-439a720d583f",
+    "originalId": "454810e5-0783-4fc4-8a17-439a720d583f",
+    "statement": "Sobre a estratificação de risco cirúrgico da American Society of Anesthesiologists (ASA), assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "ASA 5 é um paciente com morte cerebral declarada cujos órgãos estão sendo removidos para fins de doação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ASA 3 é um paciente com doença sistêmica grave que está em constante ameaça à vida, não controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ASA 4 é um paciente moribundo que não deve sobreviver sem a operação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ASA 2 é paciente com doença sistêmica leve.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação da American Society of Anesthesiologists (ASA) é um dos pilares da avaliação pré-anestésica, estratificando o estado físico do paciente antes de um procedimento cirúrgico. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa a) Incorreta. O paciente com morte cerebral declarada cujos órgãos estão sendo removidos para fins de doação é classificado como ASA 6. O ASA 5 é definido como o paciente moribundo cuja sobrevivência não é esperada sem a realização da cirurgia.\n\nAlternativa b) Incorreta. O ASA 3 é o paciente com doença sistêmica grave que limita a funcionalidade, mas que não constitui uma ameaça constante à vida (por exemplo: diabetes mellitus mal controlado, DPOC estável ou passado de infarto há mais de 3 meses). A descrição de \"ameaça constante à vida\" refere-se ao ASA 4.\n\nAlternativa c) Incorreta. A definição de paciente moribundo que não deve sobreviver sem a operação corresponde ao ASA 5. O ASA 4 é o paciente com doença sistêmica grave que é uma ameaça constante à vida (por exemplo: infarto do miocárdio recente com menos de 3 meses, sepse ou disfunção orgânica grave).\n\nAlternativa d) Correta. O ASA 2 é, por definição, o paciente com doença sistêmica leve, sem limitações funcionais. Exemplos comuns incluem fumantes tabagistas (sem DPOC), gestantes, pacientes com obesidade leve (IMC entre 30 e 40) ou pacientes com doenças crônicas bem controladas, como hipertensão arterial ou diabetes mellitus controlado apenas com dieta ou medicação oral.\n\nGabarito: Letra (d).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  },
+  {
+    "id": "AJUDA_454b8b9f-5236-4efb-96de-e0c964f37ced",
+    "originalId": "454b8b9f-5236-4efb-96de-e0c964f37ced",
+    "statement": "Em pacientes com choque e ventilados mecanicamente, no modo volume controlado, pode-se afirmar que a medida dinâmica que sugere, com maior acurácia, uma resposta positiva a fluidoterapia é uma variação durante o ciclo respiratório de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "pressão de pulso < 10%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "volume sistólico > 12%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "pressão sistólica = 5mmHg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pressão diastólica < 12,5%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário revisar os conceitos de responsividade a fluidos na terapia intensiva. Em pacientes em choque, o objetivo da administração de líquidos é aumentar o volume sistólico e, consequentemente, o débito cardíaco. Os parâmetros dinâmicos são superiores aos estáticos (como a pressão venosa central), pois utilizam a interação coração-pulmão durante a ventilação mecânica para prever se o ventrículo direito e o esquerdo ainda possuem reserva funcional.\n\nAlternativa (a) Incorreta. A variação da pressão de pulso (VPP) é um excelente parâmetro, mas, para sugerir uma resposta positiva ao volume, seu valor deve estar elevado, geralmente acima de 12% a 13%. Um valor menor que 10% sugere que o paciente está na fase de platô da curva de Frank-Starling, ou seja, ele provavelmente não aumentará o débito cardíaco com a infusão de fluidos.\n\nAlternativa (b) Correta. A variação do volume sistólico (VVS) é uma medida dinâmica que avalia a flutuação do volume de sangue ejetado pelo coração durante o ciclo respiratório. Quando o paciente está em ventilação mecânica com volume controlado, as variações de pressão intratorácica influenciam o retorno venoso e o volume sistólico. Uma VVS superior a 12% possui alta acurácia para identificar pacientes que responderão positivamente à fluidoterapia com aumento do débito cardíaco.\n\nAlternativa (c) Incorreta. A medida de pressão sistólica isolada ou uma variação fixa em mmHg não é um índice dinâmico validado para prever responsividade volêmica. Os índices dinâmicos são expressos em percentuais de variação ao longo do ciclo respiratório, e não em valores absolutos de pressão tão baixos.\n\nAlternativa (d) Incorreta. A variação da pressão diastólica não é utilizada na prática clínica como preditor de responsividade a fluidos. A literatura médica foca na variação da pressão de pulso (que é a diferença entre a sistólica e a diastólica) e na variação do volume sistólico, que são os parâmetros com evidência robusta para guiar a ressuscitação volêmica.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Ventilação Mecânica",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  },
+  {
+    "id": "AJUDA_454d31e3-51be-48df-a7c6-069f4be0e47a",
+    "originalId": "454d31e3-51be-48df-a7c6-069f4be0e47a",
+    "statement": "Com relação ao carcinoma de células basais, analise as afirmativas e assinale a alternativa correta.\n\nI. É a neoplasia maligna cutânea mais comum.\nII. É mais frequente em áreas expostas ao sol, como a cabeça e o pescoço.\nIII. Caracteriza-se por infiltração local e raramente envia metástases.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a afirmativa I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a afirmativa II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas a afirmativa III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise detalhada das afirmativas:\n\nAfirmativa I: Está correta. O carcinoma basocelular (CBC) é a neoplasia maligna cutânea mais frequente no ser humano, superando o carcinoma espinocelular e o melanoma. Ele representa cerca de 75% a 80% de todos os casos de câncer de pele não melanoma.\n\nAfirmativa II: Está correta. O principal fator de risco para o desenvolvimento do CBC é a exposição à radiação ultravioleta (UV), especialmente a exposição intermitente e intensa que causa queimaduras solares. Por esse motivo, cerca de 80% das lesões surgem em áreas fotoexpostas, com predomínio absoluto na região da cabeça e do pescoço (como nariz, face e orelhas).\n\nAfirmativa III: Está correta. O CBC possui um comportamento biológico de malignidade local. Embora tenha capacidade de invadir e destruir tecidos adjacentes (incluindo cartilagem e osso em casos avançados), ele apresenta um baixíssimo potencial de disseminação a distância. As metástases são consideradas eventos raros na prática clínica, com taxas descritas na literatura inferiores a 0,1%.\n\nConclusão: Visto que todas as três proposições definem corretamente as características epidemiológicas e clínicas do carcinoma basocelular, a alternativa correta é a letra D.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:26.991Z"
+  }
+]

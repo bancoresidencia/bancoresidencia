@@ -1,0 +1,520 @@
+[
+  {
+    "id": "AJUDA_1440dc14-efdd-4f63-997b-c3b8e4fab63a",
+    "originalId": "1440dc14-efdd-4f63-997b-c3b8e4fab63a",
+    "statement": "O SAMU traz para o hospital uma paciente encontrada na rua com sangramento vaginal e pouco contactante. Ao exame físico a PA era de 90 x 70 mmHg, frequência cardíaca de 116 bpm, descorada, AU de 34 cm, palpação com feto em situação longitudinal, apresentação cefálica e FCF não audível ao sonar. Dinâmica ausente e tônus uterino aumentado. Ao toque, o colo estava grosso e dilatado para 1,5 cm, com membrana íntegra, apresentação cefálica e sangramento escuro. Diante o caso apresentado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A gestante não deveria ser submetida a toque vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uma hipótese de sangramento é a placenta prévia e, portanto, deve-se encaminhar a gestante para realizar ultrassonografia pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se induzir o trabalho de parto com misoprostol para que o nascimento se dê mais rapidamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se romper as membranas e realizar cesárea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Deve-se romper as membranas e induzir, pois o feto está morto e não se justifica uma cesárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico: O quadro clínico descrito é clássico de descolamento prematuro da placenta (DPP). Os sinais presentes são: sangramento vaginal escuro, hipertonia uterina (tônus aumentado), instabilidade hemodinâmica materna (hipotensão e taquicardia) e óbito fetal (FCF não audível). O DPP é uma emergência obstétrica na qual o diagnóstico é eminentemente clínico.\n\nAnálise das alternativas:\n\na) Incorreta. O toque vaginal é contraindicado na suspeita de placenta prévia antes da realização de uma ultrassonografia, para evitar o agravamento do sangramento. No entanto, no DPP, o toque é fundamental para avaliar a dilatação cervical e realizar a amniotomia, que faz parte do tratamento.\n\nb) Incorreta. A placenta prévia costuma apresentar sangramento vermelho-vivo, indolor, de início súbito e, principalmente, com útero relaxado (tônus normal). No caso, a paciente apresenta hipertonia e instabilidade, sugerindo fortemente DPP. Além disso, o DPP é um diagnóstico clínico; retardar o atendimento para realizar ultrassonografia em uma paciente instável aumenta a morbimortalidade.\n\nc) Incorreta. O misoprostol é utilizado para indução do parto, mas seu efeito não é imediato. Diante de uma paciente com sinais de choque hipovolêmico (PA 90 x 70 mmHg e FC 116 bpm), a prioridade é a estabilização hemodinâmica e o esvaziamento uterino rápido. A indução medicamentosa seria muito lenta para este cenário de urgência.\n\nd) Correta. No DPP com feto morto, a via de parto preferencial é a vaginal, desde que o parto ocorra em curto prazo e a mãe esteja estável. Contudo, esta paciente está em choque e tem apenas 1,5 cm de dilatação (previsão de parto prolongado). Nessas condições, a conduta correta é a amniotomia (que diminui a pressão intrauterina, melhora a hipertonia e reduz a infiltração de tromboplastina na circulação materna) seguida de parto pela via mais rápida, que, neste caso, é a cesárea, visando salvar a vida da mãe.\n\ne) Incorreta. Embora o feto esteja morto, a via vaginal só é indicada se a paciente estiver hemodinamicamente estável ou se o parto for iminente (dilatação avançada). A indução do parto em uma paciente instável com colo de 1,5 cm é perigosa e contraindicada, pois o tempo de espera pode levar ao agravamento do choque e a distúrbios de coagulação (coagulação intravascular disseminada).",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  },
+  {
+    "id": "AJUDA_145967c4-93ee-4dc5-9947-4ed0e3863083",
+    "originalId": "145967c4-93ee-4dc5-9947-4ed0e3863083",
+    "statement": "A troponina I cardíaca (TnIc) tem sensibilidade e especificidade clínica para o diagnóstico de infarto agudo do miocárdio (IAM), respectivamente, na ordem de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "80% e 90%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "85% e 90%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "90% e 90%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "90% e 97%",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A troponina I cardíaca (TnIc) é atualmente considerada o biomarcador padrão-ouro para o diagnóstico de infarto agudo do miocárdio (IAM) devido à sua excelente acurácia diagnóstica, superando marcadores mais antigos como a CK-MB.\n\nAlternativa a) Incorreta. Valores de 80% de sensibilidade e 90% de especificidade são considerados baixos para a troponina I. Esses parâmetros seriam mais próximos de marcadores menos específicos ou utilizados em janelas temporais inadequadas.\n\nAlternativa b) Incorreta. Embora a sensibilidade de 85% possa ocorrer em fases muito iniciais do quadro clínico, a especificidade de 90% ainda está abaixo do que a troponina I oferece na prática clínica e na literatura médica.\n\nAlternativa c) Incorreta. O valor de 90% para sensibilidade está correto e é amplamente aceito. No entanto, a especificidade de 90% é subestimada. A grande vantagem da troponina I é justamente sua alta especificidade para o músculo cardíaco, sendo raramente encontrada em outras situações que não envolvam lesão miocárdica.\n\nAlternativa d) Correta. Esta alternativa apresenta os valores que melhor definem o perfil da troponina I cardíaca. A sensibilidade de 90% demonstra que o teste identifica a vasta maioria dos pacientes com infarto. A especificidade de 97% é o grande diferencial: como a isoforma I é exclusiva do coração (ao contrário da troponina T, que pode apresentar pequenas expressões em músculos esqueléticos em doenças crônicas), ela garante que um resultado positivo seja altamente indicativo de necrose miocárdica, minimizando erros diagnósticos causados por lesões em outros tecidos musculares.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  },
+  {
+    "id": "AJUDA_146181ae-ebb6-4b13-9669-42d60d5d85fb",
+    "originalId": "146181ae-ebb6-4b13-9669-42d60d5d85fb",
+    "statement": "Na investigação diagnóstica de um paciente internado com anemia, em qual das seguintes situações clínicas a anemia ferropriva é a causa mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "mulher de 64 anos com glossite, disfagia e unhas em colher (coiloniquia).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "executivo de 50 anos com dispepsia crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "mulher multípara de 39 anos com sangramento vaginal irregular e fadiga progressiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "idosa de 72 anos com palidez, parestesia e dificuldade para marcha e equilíbrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "dor no hipocôndrio esquerdo, anemia em um homem de 30 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A (Incorreta): Esta descrição refere-se à Síndrome de Plummer-Vinson (ou Paterson-Kelly), caracterizada pela tríade de anemia ferropriva, disfagia (devido a membranas esofágicas) e glossite. Embora a coiloníquia (unhas em colher) seja um sinal clássico de deficiência de ferro crônica e grave, esta síndrome é uma manifestação rara. Além disso, a idade de 64 anos e os sintomas de disfagia tornariam necessário descartar neoplasias gastrointestinais como causa primária antes de selar o diagnóstico apenas como ferropriva.\n\nAlternativa B (Incorreta): Um executivo de 50 anos com dispepsia crônica pode ter gastrite ou úlcera péptica, que podem causar sangramento oculto. No entanto, a dispepsia isolada é um sintoma inespecífico e não é tão diretamente relacionada à etiologia da anemia ferropriva quanto a perda sanguínea visível ou a história ginecológica em mulheres na pré-menopausa.\n\nAlternativa C (Correta): Esta é a situação clínica clássica. Em mulheres em idade fértil, a causa mais comum de anemia ferropriva é a perda sanguínea por via ginecológica (hipermenorreia ou sangramento uterino anormal). A multiparidade também contribui para a depleção dos estoques de ferro (pelas demandas das gestações e da lactação). A fadiga progressiva é o sintoma clínico mais comum da síndrome anêmica. Portanto, diante de sangramento vaginal irregular, a anemia ferropriva é, estatisticamente, a causa mais provável.\n\nAlternativa D (Incorreta): A presença de palidez associada a sintomas neurológicos (parestesia, dificuldade de marcha e equilíbrio) em uma idosa é altamente sugestiva de anemia megaloblástica, especificamente por deficiência de vitamina B12 (cobalamina). A deficiência de B12 causa a degeneração combinada subaguda da medula espinhal, o que explica os sintomas de perda de sensibilidade vibratória e propriocepção (dificuldade de equilíbrio). A anemia ferropriva não cursa com sintomas neurológicos dessa natureza.\n\nAlternativa E (Incorreta): Dor no hipocôndrio esquerdo geralmente está associada a esplenomegalia (aumento do baço). Anemia acompanhada de esplenomegalia sugere causas como anemias hemolíticas, doenças linfoproliferativas ou hiperesplenismo, e não tipicamente uma anemia ferropriva isolada por deficiência nutricional ou sangramento crônico.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Anemias"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  },
+  {
+    "id": "AJUDA_1464ef5c-2f9a-4d71-a7b2-861cc1a9ecc3",
+    "originalId": "1464ef5c-2f9a-4d71-a7b2-861cc1a9ecc3",
+    "statement": "As doenças glomerulares são um grupo de condições que afetam o glomérulo renal, levando a alterações significativas na função renal e no sedimento urinário. Assim, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As doenças glomerulares podem ser causadas por condições limitadas ao rim ou doenças sistêmicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Leucocitúria sempre indica a presença de infecção urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A hematúria dismórfica é um achado típico da síndrome nefrótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A proteinúria em níveis nefróticos é definida como inferior a 0,5 g/24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa (a) está correta. As doenças glomerulares, ou glomerulopatias, são classificadas em primárias, quando a condição clínica e patológica está restrita ao rim, e secundárias, quando o acometimento glomerular é consequência de uma doença sistêmica que afeta diversos órgãos, como o lúpus eritematoso sistêmico, o diabetes mellitus, as vasculites ou infecções virais (hepatites B e C, HIV).\n\nA alternativa (b) está incorreta. Embora a leucocitúria seja um marcador frequente de infecção do trato urinário (ITU), ela não é patognomônica. A presença de leucócitos na urina pode ocorrer em diversas condições inflamatórias não infecciosas, como na nefrite tubulointersticial aguda, na litíase renal, em casos de contaminação vaginal ou na chamada piúria estéril (comum na tuberculose geniturinária).\n\nA alternativa (c) está incorreta. A hematúria dismórfica, caracterizada pela presença de hemácias com formas alteradas (como os acantócitos), é um marcador clássico de sangramento de origem glomerular, sendo o achado típico da síndrome nefrítica (caracterizada por inflamação, hipertensão e hematúria). Já a síndrome nefrótica define-se pela proteinúria maciça, edema e hipoalbuminemia, não tendo na hematúria dismórfica o seu achado principal ou definidor.\n\nA alternativa (d) está incorreta. A definição clássica de proteinúria em nível nefrótico para adultos é a excreção de proteínas na urina superior a 3,5 gramas em 24 horas (ou uma relação proteína/creatinina urinária superior a 3.000 a 3.500 mg/g). O valor de 0,5 g/24h citado na alternativa é considerado uma proteinúria leve e está muito abaixo do limiar nefrótico.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  },
+  {
+    "id": "AJUDA_1469e652-39ad-4cc6-90c8-3912ad8d8c5e",
+    "originalId": "1469e652-39ad-4cc6-90c8-3912ad8d8c5e",
+    "statement": "Mulher, 42 anos de idade, foi admitida no Serviço de Emergência com icterícia há 1 semana, acompanhada de queda do estado geral e dor abdominal há 2 dias. Relata a urina mais escurecida. Ao exame físico, encontra-se em regular estado geral, temperatura de 38,1 °C, ictérica, FC de 110 bpm, PA de 100x60 mmHg; abdome flácido, doloroso à palpação profunda do hipocôndrio direito, sem massas palpáveis; sem outras alterações. \n\n• Exames laboratoriais: \nHb: 13,9 g/dL \nHt: 40% \nLeucograma: 15.326/mm³ \nCreatinina: 1,5 mg/dL \nUreia: 60 mg/dL \nPCR: 180 mg/L \nTGO/AST: 269 U/L \nTGP/ALT: 211 U/L \nFA: 301 U/L \nGGT: 441 U/L \nBilirrubina total: 9,7 mg/dL \nBilirrubina direta: 8,5 mg/dL \nAmilase: 130 U/L \n\nFoi realizada ultrassonografia de abdome com os seguintes achados: vesícula biliar com múltiplos cálculos de até 0,5 cm, paredes finas e sem delaminação, via biliar extra-hepática com 1,1 cm, sem identificação de fatores obstrutivos evidentes ao método. Considerando a principal hipótese diagnóstica, qual é a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colangioressonância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colangiografia endoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Colecistectomia com colangiografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colecistostomia percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico da paciente é clássico para colangite aguda, caracterizado pela Tríade de Charcot: dor abdominal em hipocôndrio direito, febre (38,1 °C) e icterícia (notada há 1 semana e confirmada no exame físico e laboratorial).\n\nA análise laboratorial reforça o diagnóstico de obstrução biliar e infecção sistêmica, apresentando hiperbilirrubinemia direta (BD: 8,5 mg/dL), elevação de enzimas de colestase (FA e GGT), leucocitose e aumento da PCR. A alteração da função renal (creatinina: 1,5 mg/dL) e a hipotensão limítrofe sugerem uma gravidade que exige intervenção imediata para descompressão da via biliar. O ultrassom confirma a dilatação da via biliar extra-hepática (1,1 cm) e a presença de cálculos na vesícula, o que corrobora a etiologia obstrutiva litiásica.\n\nAnálise das alternativas:\n\na) Colangiorressonância: É um excelente exame diagnóstico para identificar cálculos na via biliar (coledocolitíase) em casos de dúvida. No entanto, nesta paciente, o diagnóstico de colangite já está firmado clinicamente e ela apresenta sinais de gravidade. Postergar o tratamento definitivo para realizar um exame de imagem adicional aumentaria o risco de evolução para choque séptico.\n\nb) Colangiografia endoscópica (CPRE): CORRETA. É o procedimento de escolha para a colangite aguda. A CPRE possui finalidade diagnóstica e, fundamentalmente, terapêutica, pois permite a descompressão imediata da via biliar através de papilotomia e retirada de cálculos ou colocação de drenos/stents, tratando a causa da infecção.\n\nc) Colecistectomia com colangiografia: A colecistectomia (retirada da vesícula) deve ser realizada após a resolução do quadro agudo de colangite. Operar um paciente com infecção ativa das vias biliares e instabilidade clínica aumenta significativamente a morbimortalidade. O foco inicial deve ser a descompressão da via biliar principal, e não a retirada da vesícula.\n\nd) Colecistostomia percutânea: É um procedimento de exceção indicado para casos de colecistite aguda em pacientes muito graves que não suportariam uma cirurgia. Não é o tratamento de escolha para colangite por obstrução do colédoco, pois a drenagem da vesícula pode não desobstruir a via biliar principal de forma eficaz.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  },
+  {
+    "id": "AJUDA_146b22a3-13be-440a-86a6-28bf2532d535",
+    "originalId": "146b22a3-13be-440a-86a6-28bf2532d535",
+    "statement": "Mulher de 22 anos de idade apresenta fraqueza muscular e palpitações há dois dias. Sem antecedentes mórbidos conhecidos, ela nega febre, tosse, disúria, dor abdominal, diarreia ou outros sintomas sugestivos de infecção recente. Exame físico: PA: 150 x 80 mmHg, sem demais alterações. Exames laboratoriais: hemoglobina: 10,5 g/dL; leucócitos: 10.550 células/mm³; plaquetas: 88.000/mm³; creatinina: 5,2 mg/dL; ureia: 120 mg/dL; potássio: 7,1 mEq/L; sumário de urina com proteinúria 2+/4+; hematúria e sem leucocitúria; proteinúria de 24 horas de 3,8 g. A hipótese diagnóstica é",
+    "options": [
+      {
+        "id": "A",
+        "text": "síndrome hemolítico-urêmica típica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "coagulação intravascular disseminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "crise renal esclerodérmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "síndrome de Bernard-Soulier.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "lúpus eritematoso sistêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico:\nO quadro descreve uma mulher jovem (22 anos) com fraqueza muscular e palpitações secundárias a uma hipercalemia grave (K+ 7,1 mEq/L), decorrente de insuficiência renal aguda/rapidamente progressiva (creatinina 5,2 mg/dL e ureia 120 mg/dL). O exame de urina evidencia acometimento glomerular com hematúria e proteinúria em faixa nefrótica (3,8 g/24h). O hemograma ainda revela citopenias (anemia e plaquetopenia). A combinação de doença glomerular com citopenias periféricas em mulher em idade fértil é altamente sugestiva de Lúpus Eritematoso Sistêmico (LES) com nefrite lúpica.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A síndrome hemolítico-urêmica (SHU) típica cursa com anemia hemolítica microangiopática, plaquetopenia e injúria renal aguda, porém está classicamente associada a pródromo de diarreia sanguinolenta (infecção por E. coli produtora de toxina Shiga), o qual foi expressamente negado pela paciente. Além disso, proteinúria nefrótica maciça não é o padrão típico da SHU.\n\nAlternativa b: Incorreta. A coagulação intravascular disseminada (CIVD) é um processo secundário a insultos sistêmicos graves, como choque séptico, grandes traumas ou emergências obstétricas, cursando com consumo maciço de fatores de coagulação, diátese hemorrágica e/ou trombose microvascular disseminada, o que não condiz com a história clínica descrita.\n\nAlternativa c: Incorreta. A crise renal esclerodérmica caracteriza-se por hipertensão arterial maligna/acelerada e disfunção renal aguda em pacientes com esclerose sistêmica. O sedimento urinário na crise renal esclerodérmica costuma ser brando (com proteinúria discreta e sem padrão nefrótico franco), diferindo do padrão apresentado de 3,8 g/24h.\n\nAlternativa d: Incorreta. A síndrome de Bernard-Soulier é uma desordem plaquetária congênita decorrente do déficit do complexo glicoproteico Ib-IX-V, levando a plaquetopenia e plaquetas gigantes, sem qualquer relação com glomerulopatia, proteinúria ou hipertensão.\n\nAlternativa e: Correta. O Lúpus Eritematoso Sistêmico acomete preferencialmente mulheres jovens e pode se manifestar de forma multissistêmica. A nefrite lúpica é uma complicação frequente e grave, manifestando-se como síndrome nefrítica, síndrome nefrótica ou glomerulonefrite rapidamente progressiva. As alterações hematológicas (anemia e plaquetopenia) e a disfunção renal grave com proteinúria nefrótica e hematúria preenchem os critérios clínicos típicos da doença.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios do Potássio",
+      "Doenças Glomerulares",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  },
+  {
+    "id": "AJUDA_147cc1aa-a714-4dbc-998f-bc4920a56b1f",
+    "originalId": "147cc1aa-a714-4dbc-998f-bc4920a56b1f",
+    "statement": "A nefropatia por IgA é uma das formas mais comuns de glomerulonefrite no mundo. Pode ocorrer em qualquer faixa etária, mas apresenta maior incidência entre a segunda e a terceira décadas de vida. O achado característico é a demonstração, na imunofluorescência da biópsia renal, de depósitos de IgA na região mesangial.\nEm relação ao tema, avalie as afirmativas a seguir.\nI. A hematúria microscópica é característica da doença, sendo tipicamente dismórfica à sedimentoscopia.\nII. Episódios de hematúria macroscópica podem ocorrer em associação com infecções de vias aéreas superiores.\nIII. A síndrome nefrótica constitui uma apresentação frequente da doença.\nEstá correto o que se afirma em",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "I, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A nefropatia por IgA, também conhecida como Doença de Berger, é a glomerulopatia primária mais comum no mundo. Para resolver esta questão, vamos analisar cada uma das afirmativas:\n\nAfirmativa I: Correta. A hematúria é o sinal clínico cardinal das glomerulopatias em geral e da Doença de Berger em particular. A hematúria microscópica persistente é o achado mais frequente entre os episódios de hematúria macroscópica. O termo \"dismórfica\" refere-se à deformação das hemácias ao atravessarem a membrana basal glomerular e os túbulos renais; encontrar eritrócitos dismórficos (como os acantócitos) na sedimentoscopia urinária confirma que o sangramento tem origem no glomérulo, e não nas vias urinárias baixas (como bexiga ou uretra).\n\nAfirmativa II: Correta. Esta é a apresentação clínica clássica da doença, muitas vezes chamada de hematúria sinfaringítica. Na nefropatia por IgA, episódios de hematúria macroscópica costumam ser desencadeados por infecções de vias aéreas superiores ou episódios de gastroenterite. O ponto crucial para o diagnóstico diferencial é o tempo: na Doença de Berger, a hematúria aparece simultaneamente ou apenas 24 a 48 horas após o início da infecção. Isso a diferencia da glomerulonefrite pós-estreptocócica (GNPE), que exige um período de incubação maior (7 a 21 dias).\n\nAfirmativa III: Incorreta. A síndrome nefrótica não é uma apresentação frequente desta patologia. A nefropatia por IgA manifesta-se tipicamente como hematúria isolada ou como uma síndrome nefrítica (hematúria, hipertensão e edema moderado). Embora a proteinúria possa estar presente e, em casos raros (menos de 10%), atingir níveis nefróticos, essa não é a regra e geralmente está associada a um pior prognóstico ou a variantes específicas da doença.\n\nDessa forma, como apenas as afirmativas I e II estão corretas, o gabarito é a alternativa (b).",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  },
+  {
+    "id": "AJUDA_147cf374-b565-4cf0-bb6e-4fd0ba1aae2a",
+    "originalId": "147cf374-b565-4cf0-bb6e-4fd0ba1aae2a",
+    "statement": "Um lactente de 9 meses de vida, previamente hígido, apresentou quadro de febre há 2 dias e irritabilidade e inapetência há 24 horas. Exame físico com abaulamento de fontanela anterior. A análise do LCR apresentou os seguintes dados: 300 células/mm³, com 85% de linfócitos; proteína 40 mg/dL; e glicose 48 mg/dl. (glicemia sérica: 70 mg/dl). Com base nessa situação hipotética, assinale a alternativa que apresenta a hipótese diagnóstica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É sugestivo de meningite viral, sendo o herpes vírus o agente mais comum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É sugestivo de meningite causada pelo Haemophilus influenzae tipo B, sendo necessário iniciar ampicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É sugestivo de meningite causado por enterovírus, sendo necessários observação e sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É sugestivo de meningite causado pela Neisseria meningitidis, sendo necessário iniciar ceftriaxone.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "É sugestivo de meningite tuberculosa, sendo necessária a realização de PPD antes de iniciar o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar o quadro clínico e, fundamentalmente, as características do líquido cefalorraquidiano (LCR). O paciente é um lactente com sinais de irritabilidade e abaulamento de fontanela, o que sugere fortemente o diagnóstico de meningite.\n\nAnálise do LCR:\n1. Celularidade: 300 células/mm³ caracteriza uma pleocitose leve a moderada. Nas meningites bacterianas agudas, esse valor costuma ser muito mais elevado (geralmente acima de 1.000).\n2. Diferencial: 85% de linfócitos indica um predomínio linfomonocitário. As meningites bacterianas agudas apresentam predomínio de polimorfonucleares (neutrófilos).\n3. Proteína: 40 mg/dL está dentro da faixa de normalidade ou levemente aumentada. Meningites bacterianas e tuberculosas costumam elevar significativamente as proteínas.\n4. Glicose: 48 mg/dL com glicemia sérica de 70 mg/dL resulta em uma relação LCR/soro de aproximadamente 0,68. Como a relação é superior a 0,6 (ou 2/3 da glicemia), a glicose é considerada normal. Meningites bacterianas e tuberculosas consomem glicose (hipoglicorraquia).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o perfil do LCR seja compatível com etiologia viral, o herpesvírus não é o agente mais comum das meningites virais. Além disso, a meningoencefalite herpética costuma apresentar alterações em exames de imagem e, por vezes, a presença de hemácias no LCR devido ao caráter necrotizante da lesão.\n\nAlternativa b) Incorreta. O Haemophilus influenzae tipo B é um agente bacteriano. O LCR de uma meningite bacteriana apresentaria predomínio de neutrófilos, hiperproteinorraquia e hipoglicorraquia marcada, o que não corresponde aos dados fornecidos.\n\nAlternativa c) Correta. O padrão de pleocitose linfocitária com glicose e proteínas normais é o clássico das meningites virais. Os enterovírus (como coxsackie e ecovírus) são os agentes etiológicos mais frequentes nessa faixa etária. O tratamento é de suporte, com observação clínica e sintomáticos.\n\nAlternativa d) Incorreta. A Neisseria meningitidis (meningococo) causa meningite bacteriana aguda. Como discutido anteriormente, o padrão do LCR apresentado afasta a etiologia bacteriana clássica devido à ausência de consumo de glicose e ao predomínio de linfócitos.\n\nAlternativa e) Incorreta. A meningite tuberculosa apresenta LCR com predomínio linfocitário, porém cursa com proteínas muito elevadas e glicose muito baixa (consumida). Além disso, o quadro clínico costuma ser mais arrastado (subagudo), e o tratamento não deve ser retardado pela realização do PPD, que inclusive pode ser negativo em casos de doença disseminada ou grave.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  },
+  {
+    "id": "AJUDA_14807cff-71d2-4c8a-a7b6-80ab081ce82d",
+    "originalId": "14807cff-71d2-4c8a-a7b6-80ab081ce82d",
+    "statement": "Qual é o critério diagnóstico para a intervenção cirúrgica em pacientes com hiperparatireoidismo assintomático?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipocalcemia grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Presença de fraturas osteoporóticas prévias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Densidade óssea com T-score entre –1.0 e –1.5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Níveis de cálcio urinário acima de 200 mg/24h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Níveis elevados de sódio no sangue.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A indicação cirúrgica no hiperparatireoidismo primário (HPP) assintomático segue critérios bem definidos por consensos internacionais, baseando-se no risco de complicações em órgãos-alvo, como rins e ossos.\n\nAlternativa A (Incorreta): O hiperparatireoidismo primário caracteriza-se pelo excesso de paratormônio (PTH), o que leva à hipercalcemia (aumento dos níveis de cálcio no sangue), e não à hipocalcemia. A hipocalcemia não é um critério de indicação cirúrgica nessa patologia.\n\nAlternativa B (Correta): A presença de fraturas osteoporóticas (ou fraturas por fragilidade), sejam elas detectadas clinicamente ou por exames de imagem (como uma fratura vertebral assintomática), indica que a doença já causou impacto estrutural significativo no esqueleto. Este é um dos critérios clássicos para a indicação de paratireoidectomia, mesmo em pacientes que não apresentam outros sintomas.\n\nAlternativa C (Incorreta): O critério densitométrico para intervenção cirúrgica é um T-score menor ou igual a -2,5 (indicativo de osteoporose) em qualquer um dos sítios avaliados: coluna lombar, quadril total, colo do fêmur ou rádio 33%. Um T-score entre -1,0 e -1,5 representa apenas osteopenia leve e não é suficiente, isoladamente, para indicar a cirurgia.\n\nAlternativa D (Incorreta): De acordo com as diretrizes mais recentes, o nível de cálcio urinário que sugere a necessidade de cirurgia é superior a 400 mg em 24 horas, especialmente se acompanhado de uma análise de risco para formação de cálculos renais (perfil de saturação urinária). O valor de 200 mg/24 h é considerado dentro da normalidade ou com elevação mínima, não sendo critério para intervenção.\n\nAlternativa E (Incorreta): As alterações nos níveis de sódio não possuem relação direta com a fisiopatologia do hiperparatireoidismo primário ou com seus critérios de gravidade. Os distúrbios eletrolíticos relevantes nessa condição envolvem principalmente o cálcio, o fósforo e, por vezes, o magnésio.\n\nResumo dos principais critérios para cirurgia no HPP assintomático:\n1. Cálcio sérico > 1,0 mg/dL acima do limite superior da normalidade.\n2. Evidência de fratura por fragilidade ou T-score menor ou igual a -2,5 na densitometria.\n3. Clearance de creatinina < 60 mL/min.\n4. Presença de nefrolitíase ou nefrocalcinose em exames de imagem, ou calciúria de 24 h > 400 mg/dia com risco de cálculos.\n5. Idade inferior a 50 anos.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  },
+  {
+    "id": "AJUDA_14873ae6-8bd6-4745-9d17-f2f1a9f4199a",
+    "originalId": "14873ae6-8bd6-4745-9d17-f2f1a9f4199a",
+    "statement": "Você atende uma paciente de 41 anos, que fez tratamento com quimioterapia para câncer de mama há 2 anos, foi tratada também com setorectomia da mama esquerda, radioterapia e atualmente está em uso de Tamoxifeno. Ela relata que há 7 meses iniciou com dificuldade para ter relação sexual, e que esta situação está gerando sofrimento especialmente no relacionamento dela com a parceria. Na anamnese dirigida, você identifica dificuldade de lubrificação vaginal, dispareunia e diminuição do desejo sexual. Não tem alergias, outras doenças e não usa outras medicações. No exame do órgão genital externo, não há alterações. No exame specular, ela possui colo uterino eptitelizado, atrofia de mucosa vaginal e conteúdo vaginal de aspecto fisiológico e escasso; no Toque vaginal bimanual, você não identifica nada digno de nota. Para o caso desta paciente, qual alternativa abaixo contem o tratamento mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Terapia hormonal com estrogênio e progestrerona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Terapia hormonal vaginal com estriol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de hidratantes vaginais a base de ácido hialurônico ou ácido poliacrílico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Orientações na consulta e nenhuma outra medida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Testosterona em gel.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente apresenta um quadro clássico de Síndrome Geniturinária da Menopausa (SGM), caracterizada por atrofia da mucosa vaginal, ressecamento (dificuldade de lubrificação) e dispareunia (dor na relação sexual). O ponto fundamental para a resolução da questão é o histórico de câncer de mama em uso de Tamoxifeno. Em sobreviventes de neoplasia mamária, a segurança oncológica é a prioridade, o que restringe o uso de terapias hormonais.\n\nALTERNATIVA A - INCORRETA\nA terapia hormonal sistêmica (estrogênio associado ou não à progesterona) é contraindicada para pacientes com antecedente de câncer de mama. O uso sistêmico de hormônios pode estimular células neoplásicas remanescentes e aumentar significativamente o risco de recidiva da doença.\n\nALTERNATIVA B - INCORRETA\nEmbora o estriol vaginal (estrogênio de baixa potência) apresente absorção sistêmica reduzida, ele ainda é considerado uma terapia hormonal. Segundo as diretrizes da FEBRASGO e de sociedades internacionais como a NAMS (North American Menopause Society), em pacientes com câncer de mama, o uso de hormônios tópicos deve ser reservado apenas para casos que não responderam aos tratamentos não hormonais, sempre com discussão prévia com a equipe de oncologia. Portanto, não é a conduta inicial mais adequada.\n\nALTERNATIVA C - CORRETA\nOs hidratantes vaginais não hormonais, à base de ácido hialurônico, ácido poliacrílico ou lipossomas, são o tratamento de primeira linha para a atrofia vaginal em sobreviventes de câncer de mama. Diferente dos lubrificantes, que são usados apenas no momento do coito, os hidratantes são aplicados de forma contínua (2 a 3 vezes por semana). Eles aderem à mucosa vaginal, promovem a retenção de água, restauram a umidade e o pH vaginal, melhorando os sintomas de forma segura, sem qualquer risco de estimulação hormonal.\n\nALTERNATIVA D - INCORRETA\nA paciente possui queixas clínicas importantes que geram sofrimento pessoal e conjugal, além de alterações objetivas no exame físico (mucosa atrofiada). Apenas orientar e não tratar seria negligenciar a qualidade de vida da paciente, uma vez que existem opções terapêuticas seguras e eficazes disponíveis.\n\nALTERNATIVA E - INCORRETA\nA testosterona não é o tratamento indicado para a atrofia vaginal. Além disso, seu uso em sobreviventes de câncer de mama é controverso e carece de dados de segurança a longo prazo, pois a testosterona pode sofrer aromatização (conversão em estrogênio) no tecido gorduroso e periférico, o que teoricamente poderia ser prejudicial para essa paciente.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama",
+      "Sexualidade",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:21.115Z"
+  }
+]

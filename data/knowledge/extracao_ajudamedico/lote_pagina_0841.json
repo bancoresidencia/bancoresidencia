@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_e9d83a97-89f2-4e42-b52f-f1d1ebf6a155",
+    "originalId": "e9d83a97-89f2-4e42-b52f-f1d1ebf6a155",
+    "statement": "O escore BISAP tem sido amplamente utilizado na avaliação prognóstica da pancreatite aguda.\nDentre os critérios abaixo, o único que NÃO faz parte desse escore é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "presença de derrame pleural;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "glicemia maior que 200 mg/dL;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ureia nitrogenada sérica maior que 25 mg/dL;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "idade maior que 60 anos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "alteração do estado mental.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O escore BISAP é uma ferramenta prognóstica simplificada para a pancreatite aguda, utilizada nas primeiras 24 horas de internação. O seu nome é um acrônimo em inglês que facilita a memorização dos cinco critérios avaliados: Blood urea nitrogen (B), Impaired mental status (I), SIRS (S), Age (A) e Pleural effusion (P). Cada critério presente soma 1 ponto, e uma pontuação igual ou maior que 3 indica maior risco de mortalidade.\n\nAlternativa a: Incorreta. A presença de derrame pleural faz parte do escore e corresponde à letra P (Pleural effusion) do acrônimo. Ele pode ser detectado por qualquer exame de imagem, como a radiografia de tórax.\n\nAlternativa b: Correta (Gabarito). A glicemia maior que 200 mg/dL não compõe o escore BISAP. Este parâmetro é classicamente utilizado em outro sistema de pontuação para pancreatite, os Critérios de Ranson (avaliado no momento da admissão).\n\nAlternativa c: Incorreta. A elevação da ureia nitrogenada sérica (BUN) acima de 25 mg/dL faz parte do escore e corresponde à letra B (Blood Urea Nitrogen). No Brasil, onde se mede comumente a ureia total, esse valor equivale a aproximadamente 53 mg/dL de ureia.\n\nAlternativa d: Incorreta. A idade maior que 60 anos é um dos componentes do escore, representado pela letra A (Age).\n\nAlternativa e: Incorreta. A alteração do estado mental faz parte do escore e corresponde à letra I (Impaired mental status). Clinicamente, isso é definido por uma Escala de Coma de Glasgow menor que 15.\n\nPara completar o acrônimo, o critério que não foi mencionado nas alternativas é a letra S, referente à SIRS (Síndrome de Resposta Inflamatória Sistêmica), definida pela presença de dois ou mais critérios de resposta inflamatória.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:07.284Z"
+  },
+  {
+    "id": "AJUDA_e9db6181-9b39-4b76-9965-1bfb01237eca",
+    "originalId": "e9db6181-9b39-4b76-9965-1bfb01237eca",
+    "statement": "Analise abaixo os gráficos que apresentam, respectivamente, a relação entre porcentagem de abortos espontâneos e idade materna, e entre a taxa de nascidos vivos e idade materna:\n\nConsiderando os gráficos acima e a relação entre idade feminina, infertilidade e abortamento, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Com o avanço da idade materna, há aumento nas taxas de abortamento espontâneo, devido à maior incidência de aneuploidias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A qualidade dos óvulos diminui com o avanço da idade materna, diminuindo as taxas de nascidos vivos em mulheres com mais de 35 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Com o avanço da idade materna, há redução das taxas de nascidos vivos em função da diminuição da reserva ovariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na fertilização in vitro, a idade materna e a qualidade dos óvulos têm menor relevância nas taxas de abortamento e de nascidos vivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A fertilidade da mulher diminui de forma drástica após os 40 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão exige a análise da relação entre a idade da mulher e os resultados reprodutivos, utilizando dois conceitos fundamentais em medicina reprodutiva: a reserva ovariana e a qualidade ovocitária.\n\nAnálise das alternativas:\n\nAlternativa a) Esta afirmação está correta. O primeiro gráfico mostra uma curva ascendente na taxa de abortos espontâneos conforme a idade materna avança, especialmente após os 35 anos. Isso ocorre porque o envelhecimento dos ovócitos aumenta a probabilidade de erros na disjunção cromossômica durante a meiose, levando a uma maior frequência de aneuploidias (como as trissomias), que são a principal causa de abortamento espontâneo.\n\nAlternativa b) Esta afirmação está correta. A qualidade dos ovócitos refere-se à sua competência para serem fertilizados e gerarem um embrião saudável capaz de evoluir até o parto. O segundo gráfico demonstra que a taxa de nascidos vivos cai significativamente após os 35 anos, refletindo não apenas a dificuldade em engravidar, mas também a dificuldade em manter a gestação até o final devido à piora na qualidade celular do ovócito.\n\nAlternativa c) Esta afirmação está correta. A mulher já nasce com todo o seu estoque de folículos, que sofre atresia contínua ao longo da vida. Com o passar dos anos, há uma redução quantitativa (reserva ovariana) e qualitativa desses folículos. Menos folículos disponíveis resultam em menores chances de ovulação bem-sucedida e, consequentemente, menores taxas de nascidos vivos, conforme ilustrado no segundo gráfico.\n\nAlternativa d) Esta afirmação está INCORRETA e é o gabarito da questão. O segundo gráfico é específico sobre ciclos de fertilização in vitro (IVF). Ele mostra claramente que a taxa de sucesso do procedimento (nascidos vivos) cai de cerca de 40% em mulheres com menos de 35 anos para menos de 5% em mulheres com mais de 44 anos. Portanto, a idade materna e a qualidade dos ovócitos são, na verdade, os principais fatores determinantes para o sucesso ou fracasso das técnicas de reprodução assistida.\n\nAlternativa e) Esta afirmação está correta. Ao observar ambos os gráficos, nota-se uma mudança drástica de inclinação nas curvas após os 40 anos. A taxa de aborto sobe para níveis próximos a 40-45% e a taxa de nascidos vivos em ciclos de fertilização cai para níveis muito baixos (abaixo de 15% e chegando perto de zero aos 45 anos), caracterizando o declínio acentuado da fertilidade nesse período.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b92ec448f0af62b808b02cd27ab2f1bdf99240c0008501c41b29b51d644ad640.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e9db6181-9b39-4b76-9965-1bfb01237eca_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/077b80a54558f748def1fc3c6ee7527aa4b5beac870dac0d292cb608e80953ea.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e9db6181-9b39-4b76-9965-1bfb01237eca_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:08.468Z"
+  },
+  {
+    "id": "AJUDA_e9dd76a7-558e-48a0-9d41-bbe65369a646",
+    "originalId": "e9dd76a7-558e-48a0-9d41-bbe65369a646",
+    "statement": "Gestante, 28 anos de idade, G2P1, com antecedente de recém-nascido que necessitou de exsanguineotrans-fusão por anemia hemolítica grave, realiza pré-natal atual com tipagem sanguínea materna O Rh negativo e parceiro O Rh positivo. O Coombs indireto realizado no início da gestação apresentou título de 1:64. Ultrassonografia obstétrica de 28 semanas revela sinais de ascite fetal discreta. Com base nessa história, sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a profilaxia com imunoglobulina anti-D está indicada nesta gestante, uma vez que apresenta alto risco de aloimunização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o título crítico do Coombs indireto geralmente é considerado ≥ 1:16, e sua elevação indica necessidade de monitorização da vitalidade fetal por doppler da artéria cerebral média.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a ascite fetal é sinal precoce e leve da doença, sem risco imediato, sendo indicada apenas vigilância ultrassonográfica mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a conduta diante de hidropsia fetal secundária à isoimunização é o parto imediato, independentemente da idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve uma gestante Rh-negativo já sensibilizada (aloimunizada), o que é confirmado pelo antecedente de recém-nascido com anemia hemolítica grave e pelo título de Coombs indireto atual de 1:64. O achado de ascite fetal às 28 semanas é um sinal de hidropisia, indicando que o feto já apresenta repercussões graves da anemia.\n\nAlternativa (b) - CORRETA: Em gestantes sensibilizadas, o título crítico do Coombs indireto é o valor a partir do qual aumenta consideravelmente o risco de hidropisia fetal. Na maioria dos protocolos, esse valor é definido como maior ou igual a 1:16. Uma vez atingido ou superado o título crítico, a conduta padrão é iniciar a avaliação fetal por meio do Doppler da artéria cerebral média (ACM). O objetivo é medir a velocidade de pico sistólico; se o valor ultrapassar 1,5 múltiplo do valor mediano (MoM) para a idade gestacional, há forte indicação de anemia fetal grave, exigindo intervenção.\n\nAlternativa (a) - INCORRETA: A imunoglobulina anti-D (vacina) é uma medida exclusivamente profilática, utilizada para evitar que a gestante se sensibilize. Ela deve ser aplicada em mulheres Rh-negativo com Coombs indireto negativo. No caso em questão, a paciente já está sensibilizada e apresenta títulos elevados de anticorpos (1:64), o que torna a imunoglobulina totalmente ineficaz, pois não há como \"reverter\" uma imunização já instalada.\n\nAlternativa (c) - INCORRETA: A ascite fetal é um dos sinais diagnósticos de hidropisia fetal (junto com derrame pleural, pericárdico ou edema de pele). Ela representa uma falha na compensação hemodinâmica do feto devido à anemia profunda e hipoalbuminemia. Portanto, é um sinal de gravidade extrema e estágio avançado da doença, e não um sinal leve ou precoce. A conduta deve ser de intervenção (transfusão intrauterina), e não apenas vigilância mensal.\n\nAlternativa (d) - INCORRETA: Embora a hidropisia seja grave, o parto imediato às 28 semanas para um feto anêmico e hidrópico resulta em altíssima mortalidade neonatal. A conduta preferencial antes das 34 semanas é a realização de cordocentese seguida de transfusão intravascular intrauterina. Esse procedimento visa corrigir a anemia e reverter a hidropisia ainda no útero, permitindo que a gestação prossiga para uma idade gestacional mais segura. O parto só é indicado se houver falha no tratamento invasivo ou se a idade gestacional for próxima ao termo.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:08.468Z"
+  },
+  {
+    "id": "AJUDA_e9e9f6a9-a981-4840-9c56-d2e1f3196496",
+    "originalId": "e9e9f6a9-a981-4840-9c56-d2e1f3196496",
+    "statement": "Homem, 55 anos, com sobrepeso, apresenta história de pirose retroesternal diária há 8 anos, associada à regurgitação ácida ocasional e desconforto pós-prandial. Apesar do uso intermitente de inibidor da bomba de prótons, os sintomas persistem. Foi submetido à endoscopia digestiva alta, que evidenciou metaplasia intestinal no epitélio esofágico distal, firmando o diagnóstico de Esôfago de Barrett (EB). Sobre o EB, analise as assertivas a seguir:\n\nI. Ocorre como consequência do refluxo ácido, não sendo observado em casos de refluxo alcalino.\nII. A identificação do EB constitui indicação absoluta para a realização de cirurgia antirrefluxo.\nIII. Pode ser classificado, conforme sua extensão, em longo (≥3 cm) ou curto (<3 cm).\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das assertivas:\n\nAssertiva I está incorreta: O Esôfago de Barrett é consequência da agressão crônica da mucosa esofágica na DRGE. Embora o refluxo ácido (ácido clorídrico e pepsina) seja o principal fator, o refluxo gastroduodenal ou alcalino (contendo bile e enzimas pancreáticas) também desempenha papel importante e pode ser ainda mais lesivo ao epitélio esofágico, favorecendo a metaplasia.\n\nAssertiva II está incorreta: O diagnóstico de Esôfago de Barrett não é uma indicação cirúrgica absoluta. O tratamento inicial baseia-se no controle dos sintomas com inibidores de bomba de prótons e seguimento endoscópico regular. A cirurgia antirrefluxo (como a fundoplicatura) é reservada para casos de falha do tratamento clínico ou intolerância medicamentosa, não eliminando a necessidade de vigilância endoscópica posterior.\n\nAssertiva III está correta: A classificação endoscópica clássica do Esôfago de Barrett quanto à extensão o divide em curto, quando a metaplasia é inferior a 3 cm, e longo, quando a extensão é maior ou igual a 3 cm. O segmento longo está associado a maior risco de progressão para adenocarcinoma.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta, pois a assertiva I é falsa.\nAlternativa b: Correta, pois apenas a assertiva III está correta.\nAlternativa c: Incorreta, pois as assertivas I e II são falsas.\nAlternativa d: Incorreta, pois a assertiva II é falsa.\n\nGabarito oficial: Letra b.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:08.468Z"
+  },
+  {
+    "id": "AJUDA_e9eb9365-60d1-494b-be35-7000fdfb1d07",
+    "originalId": "e9eb9365-60d1-494b-be35-7000fdfb1d07",
+    "statement": "Pré-escolar, desnutrido, indígena Ticuna, é levado a uma consulta ambulatorial devido ao surgimento de manchas escamosas, ressecadas e hiperceratóticas nos braços, pernas e nádegas. Ainda relata dificuldade de enxergar à noite ou em locais com pouca claridade. A hipótese diagnóstica mais provável é deficiência de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vitamina A.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tiamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Niacina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito apresenta dois pilares fundamentais para o diagnóstico: manifestações dermatológicas (hiperceratose folicular) e manifestações oculares (nictalopia ou cegueira noturna) em um contexto de vulnerabilidade nutricional.\n\nAlternativa a) Incorreta. A deficiência de ácido fólico (vitamina B9) manifesta-se predominantemente como anemia megaloblástica, que causa fadiga e palidez, e alterações em mucosas, como a glossite (inflamação da língua). Não é causa de distúrbios da visão noturna ou das lesões cutâneas hiperceratósicas descritas.\n\nAlternativa b) Correta. A vitamina A (retinol) desempenha um papel crucial na fisiologia da visão e na manutenção da integridade dos tecidos epiteliais. A dificuldade de enxergar em locais com pouca claridade (cegueira noturna) é um dos sinais mais precoces e característicos da sua carência, devido à falta de regeneração dos pigmentos visuais na retina. Além disso, a hipovitaminose A provoca xerodermia (pele seca) e hiperceratose folicular, condição também conhecida como frinodermia. Essas lesões consistem em pápulas ceratósicas que dão à pele um aspecto áspero (semelhante à \"pele de sapo\"), localizando-se tipicamente em superfícies extensoras de braços, pernas e nádegas. O contexto de desnutrição em populações vulneráveis, como a comunidade indígena citada, reforça a probabilidade deste diagnóstico.\n\nAlternativa c) Incorreta. A deficiência de tiamina (vitamina B1) é responsável pelo beribéri. O beribéri seco manifesta-se como neuropatia periférica, enquanto o beribéri úmido cursa com insuficiência cardíaca de alto débito e edema. Também pode causar a síndrome de Wernicke-Korsakoff em casos graves. Nenhuma dessas condições explica a cegueira noturna ou o quadro dermatológico de hiperceratose.\n\nAlternativa d) Incorreta. A deficiência de niacina (vitamina B3) resulta na pelagra, definida pela tríade clássica dos três \"Ds\": dermatite, diarreia e demência. Embora a pelagra cause lesões de pele, a dermatite é tipicamente fotossensível, ocorrendo em áreas de exposição solar (como o colar de Casal no pescoço), e a patologia não compromete a acuidade visual noturna.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:08.471Z"
+  },
+  {
+    "id": "AJUDA_e9f1cfc3-ceec-4aaf-892e-d3334c118e81",
+    "originalId": "e9f1cfc3-ceec-4aaf-892e-d3334c118e81",
+    "statement": "Paciente feminina de 68 anos de idade, procura o pronto socorro por quadro de vômitos escuros hoje e fezes pretas há 3 dias. Refere ser o primeiro episódio. Tem antecedente de Hipertensão Arterial, Diabetes Mellitus e Dislipidemia, faz uso contínuo de losartana, dapaglifozina e atorvastatina. Após avaliar e corrigir alterações hemodinâmica, assinale a alternativa com melhor sequência de atendimento inicial:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar toque retal, jejum via oral, iniciar inibidor de bomba de prótons com dose de ataque e solicitar endoscopia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Jejum via oral, iniciar inibidor de bomba de prótons e antibióticos para Helicobacter pylori, em caso de novo episódio de hematêmese solicitar endoscopia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar toque retal, iniciar procinéticos e antibióticos para Helicobacter pylori.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar toque retal, jejum via oral, iniciar antagonista H2, passar sonda nasogástrica para avaliar sangramento e solicitar colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar endoscopia e colonoscopia ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico de vômitos escuros (borra de café/hematêmese) e fezes pretas (melena) em uma paciente idosa é uma apresentação clássica de Hemorragia Digestiva Alta (HDA). De acordo com os protocolos atuais de manejo de hemorragia gastrointestinal, após a estabilização hemodinâmica (o \"ABC\" primário), deve-se proceder à confirmação diagnóstica e à preparação para a terapia definitiva.\n\nAlternativa a: Correta. O toque retal é uma etapa fundamental do exame físico para confirmar a presença de melena e descartar outras causas de fezes escurecidas. O jejum por via oral é necessário para a realização segura da endoscopia e para evitar aspiração. O uso de inibidor de bomba de prótons (IBP) em dose de ataque (como o omeprazol 80 mg em bolus) é preconizado para elevar o pH gástrico, o que favorece a agregação plaquetária e a estabilidade do coágulo, reduzindo a necessidade de intervenção cirúrgica e o risco de ressangramento. A Endoscopia Digestiva Alta (EDA) é o exame de escolha, devendo ser realizada preferencialmente nas primeiras 24 horas.\n\nAlternativa b: Incorreta. O tratamento para *Helicobacter pylori* (antibióticos) não é indicado na fase aguda do sangramento. Ele deve ser realizado apenas após a confirmação da infecção por testes específicos, geralmente após a estabilização do quadro. Além disso, aguardar um novo episódio de hematêmese para solicitar a endoscopia é uma conduta perigosa, pois o exame deve ser diagnóstico e terapêutico o mais breve possível.\n\nAlternativa c: Incorreta. Procinéticos (como eritromicina ou metoclopramida) podem ser utilizados em situações específicas para esvaziar o estômago de resíduos hemáticos antes da endoscopia, melhorando a visibilidade, mas não são o pilar principal do tratamento inicial quando comparados ao IBP. O erro principal aqui, novamente, é a indicação precoce de antibióticos para *H. pylori*.\n\nAlternativa d: Incorreta. Os antagonistas dos receptores H2 (como a ranitidina) são menos eficazes que os IBPs na manutenção do pH gástrico necessário para a estabilidade do coágulo. A passagem de sonda nasogástrica para avaliar sangramento não é mais recomendada rotineiramente, pois não altera o desfecho clínico e causa desconforto. Por fim, a colonoscopia avalia o trato digestivo baixo, enquanto a clínica da paciente (vômitos escuros) aponta claramente para uma origem alta (acima do ângulo de Treitz).\n\nAlternativa e: Incorreta. Pacientes com sinais de sangramento digestivo ativo ou recente (melena e hematêmese) devem ser investigados em ambiente hospitalar de urgência. O encaminhamento ambulatorial é contraindicado devido ao alto risco de instabilidade hemodinâmica, ressangramento e morte se não houver intervenção imediata.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:08.471Z"
+  },
+  {
+    "id": "AJUDA_e9ff66a0-0a18-4e95-9222-8bb0bf0ab981",
+    "originalId": "e9ff66a0-0a18-4e95-9222-8bb0bf0ab981",
+    "statement": "Paciente idosa e hipertensa, em acompanhamento na clínica da família, é examinada pelo médico que encontra massa pulsátil em região periumbilical. Solicitada tomografia de abdome que confirma a presença de um aneurisma de aorta abdominal medindo 6 cm em seu maior diâmetro, sendo necessário realizar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acompanhamento semestral para verificar se há estabilidade da lesão",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Controle isolado de duplo produto",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia eletiva",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Arteriografia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cineangiocoronariografia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma paciente idosa e hipertensa com aneurisma de aorta abdominal (AAA) de 6 cm de diâmetro. A decisão entre o acompanhamento clínico e a intervenção cirúrgica baseia-se no risco de ruptura do aneurisma comparado ao risco cirúrgico da paciente.\n\nPara pacientes assintomáticos, os critérios clássicos para indicação de cirurgia eletiva (seja por técnica aberta ou endovascular) são: diâmetro maior ou igual a 5,5 cm em homens ou maior ou igual a 5,0 cm em mulheres; ou, ainda, um crescimento rápido, definido como aumento maior que 0,5 cm em seis meses ou maior que 1,0 cm em um ano.\n\nAlternativa a: Incorreta. O acompanhamento semestral é indicado apenas para aneurismas que ainda não atingiram o limite de intervenção (geralmente entre 4,0 e 5,4 cm em homens). Como a paciente possui um aneurisma de 6 cm, o risco de ruptura é considerável, tornando a cirurgia a conduta imediata necessária.\n\nAlternativa b: Incorreta. O controle pressórico e da frequência cardíaca (duplo produto), bem como a cessação do tabagismo e o controle do colesterol, são medidas fundamentais para reduzir a expansão do aneurisma e o risco cardiovascular global. No entanto, essas medidas não anulam a necessidade de correção mecânica quando o vaso já atingiu um diâmetro crítico.\n\nAlternativa c: Correta. A paciente é mulher e apresenta um aneurisma de 6 cm, ultrapassando o limite de 5,0 cm recomendado para o sexo feminino. Nesta dimensão, a intervenção eletiva é a conduta padrão para prevenir a ruptura espontânea, que apresenta altíssima mortalidade.\n\nAlternativa d: Incorreta. A arteriografia não é o exame padrão para decidir a conduta ou medir o diâmetro do aneurisma. Como ela avalia apenas a luz do vaso, pode subestimar o tamanho real da lesão caso haja trombos murais (sangue coagulado na parede). A tomografia computadorizada já realizada é o padrão-ouro para o planejamento terapêutico.\n\nAlternativa e: Incorreta. A cineangiocoronariografia avalia as artérias coronárias no coração. Embora pacientes com aneurisma de aorta frequentemente possuam doença arterial coronariana associada devido aos fatores de risco comuns, este exame não é o tratamento nem a conduta direta para o problema na aorta abdominal.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:08.471Z"
+  },
+  {
+    "id": "AJUDA_ea08d7a3-4ceb-4b43-8e51-8f80978d3d1b",
+    "originalId": "ea08d7a3-4ceb-4b43-8e51-8f80978d3d1b",
+    "statement": "Assinale qual das alternativas abaixo representaram o eixo central que promoveu a extensão de cobertura de acesso às ações e programas de saúde:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Agência nacional de saúde suplementar (ANS),Política de medicamentos genéricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Programa de agentes comunitários (PACs), Programa de saúde da Família (PSF).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Política de medicamentos genéricos, Programa de agentes comunitários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "8ª Conferência nacional de saúde, Estratégia de Saúde da Família.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender o eixo central de expansão da cobertura do Sistema Único de Saúde (SUS), é preciso identificar os marcos operacionais que permitiram que o atendimento chegasse às casas dos brasileiros e às regiões mais remotas.\n\nAlternativa a) Incorreta. A Agência Nacional de Saúde Suplementar (ANS) é o órgão que regula os planos de saúde privados, não tendo relação direta com a expansão da cobertura universal pública. A Política de Medicamentos Genéricos (1999) foi fundamental para ampliar o acesso a tratamentos, mas é uma estratégia farmacêutica, e não o eixo organizador do sistema de saúde.\n\nAlternativa b) Correta. O Programa de Agentes Comunitários de Saúde (PACS), iniciado em 1991, e o Programa de Saúde da Família (PSF), lançado em 1994, representam a mudança do modelo assistencial no Brasil. O PACS introduziu o agente comunitário como elo entre a população e o serviço de saúde, enquanto o PSF (hoje Estratégia de Saúde da Família) estruturou equipes multiprofissionais para atuar em territórios específicos. Juntos, eles foram os principais responsáveis por levar ações de prevenção e promoção da saúde para fora dos hospitais, garantindo a extensão da cobertura de forma capilarizada.\n\nAlternativa c) Incorreta. Embora o PACS esteja correto como eixo de extensão, a Política de Medicamentos Genéricos não é o eixo central de programas e ações de saúde, mas sim uma medida de regulação do mercado farmacêutico para a redução de custos ao consumidor e ao Estado.\n\nAlternativa d) Incorreta. A 8ª Conferência Nacional de Saúde (1986) foi o marco político-ideológico que estabeleceu as diretrizes para a criação do SUS, mas não foi um programa operacional de extensão de cobertura. Já a Estratégia de Saúde da Família (ESF) está correta, mas a alternativa (b) é mais precisa ao citar a sequência histórica (PACS e PSF) que iniciou, de fato, a interiorização do sistema.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:08.471Z"
+  },
+  {
+    "id": "AJUDA_ea1354ad-6e58-4239-ba8d-18c6d62f8e32",
+    "originalId": "ea1354ad-6e58-4239-ba8d-18c6d62f8e32",
+    "statement": "Sobre as instâncias de participação social no SUS, avalie se as afirmativas são verdadeiras (V) ou falsas (F) e assinale a sequência correspondente.\n\n( ) Comissão Intergestores Tripartite.\n( ) Conferências de Saúde.\n( ) Conselhos de Saúde.\n( ) Conselhos de Secretários de Saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V - F - F - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F - V - V - F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "F - F - V - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V - V - F - F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é fundamental conhecer a Lei Federal nº 8.142/1990, que dispõe sobre a participação da comunidade na gestão do Sistema Único de Saúde (SUS). A legislação define especificamente duas instâncias colegiadas para o exercício do controle social.\n\nAnálise dos itens:\n\n(F) Comissão Intergestores Tripartite: Esta afirmativa é falsa no contexto da participação social. A CIT é uma instância de articulação, negociação e pactuação entre os gestores das três esferas de governo (federal, estadual e municipal). Ela é composta por representantes do Ministério da Saúde, do CONASS e do CONASEMS. Trata-se de uma instância de gestão, e não de controle social ou participação popular.\n\n(V) Conferências de Saúde: Esta afirmativa é verdadeira. Segundo a Lei nº 8.142/1990, a Conferência de Saúde é uma instância de participação social que se reúne a cada quatro anos com a representação dos vários segmentos sociais. Sua função é avaliar a situação de saúde e propor as diretrizes para a formulação da política de saúde nos níveis correspondentes.\n\n(V) Conselhos de Saúde: Esta afirmativa é verdadeira. Os Conselhos de Saúde são órgãos colegiados, permanentes e deliberativos, com composição paritária (50% de usuários, 25% de profissionais de saúde e 25% de representantes do governo e prestadores de serviço). Eles atuam na formulação de estratégias e no controle da execução da política de saúde, inclusive nos aspectos econômicos e financeiros.\n\n(F) Conselhos de Secretários de Saúde: Esta afirmativa é falsa. O Conselho Nacional de Secretários de Saúde (CONASS) e o Conselho Nacional de Secretarias Municipais de Saúde (CONASEMS) são instâncias que representam os gestores estaduais e municipais, respectivamente. Eles participam das comissões intergestores para pactuar fluxos administrativos e operacionais, mas não são instâncias de participação da sociedade civil.\n\nConclusão:\nA sequência correta é Falsa (CIT), Verdadeira (Conferências), Verdadeira (Conselhos) e Falsa (Secretários).\n\nA alternativa correta é a letra (b).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:08.471Z"
+  },
+  {
+    "id": "AJUDA_ea139933-370e-4427-951a-d7bd66d0dad0",
+    "originalId": "ea139933-370e-4427-951a-d7bd66d0dad0",
+    "statement": "Homem, 48 anos de idade, com antecedente de hipertensão arterial sistêmica, trouxe o resultado de exames de rotina com níveis de ácido úrico sérico de 8,5 mg/dL (VR: 3,4 a 7,0 mg/dL), sem outras alterações. Nega episódios de dor e edema articular. O anti-hipertensivo de escolha para este paciente, dentre os abaixo, deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Furosemida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enalapril.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atenolol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Losartana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Hidroclorotiazida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O foco desta questão é a escolha do tratamento anti-hipertensivo em um paciente que apresenta hiperuricemia (níveis elevados de ácido úrico no sangue), mesmo que assintomática. O ácido úrico elevado é um fator de risco metabólico e pode predispor à gota e a cálculos renais. Portanto, ao escolher um medicamento para a pressão arterial, devemos optar por um que não piore essa condição ou, idealmente, que ajude a reduzi-la.\n\nAnálise das alternativas:\n\na) Furosemida: Incorreta. É um diurético de alça. Assim como os diuréticos tiazídicos, a furosemida reduz a excreção renal de ácido úrico e pode elevar seus níveis séricos, sendo contraindicada ou devendo ser usada com cautela em pacientes com hiperuricemia ou gota.\n\nb) Enalapril: Incorreta. É um inibidor da enzima conversora de angiotensina (IECA). Embora seja um excelente anti-hipertensivo e não tenha um efeito negativo importante sobre o ácido úrico, ele não possui a propriedade específica de aumentar a excreção de urato como a alternativa correta.\n\nc) Atenolol: Incorreta. É um betabloqueador. Betabloqueadores, em geral, podem causar uma pequena elevação nos níveis de ácido úrico ou serem neutros, não sendo a escolha preferencial para um paciente que já apresenta níveis elevados.\n\nd) Losartana: Correta. A losartana é um bloqueador do receptor de angiotensina (BRA) que possui um efeito único em sua classe: ela é uricosúrica. Isso significa que ela inibe o transportador URAT1 nos túbulos renais, aumentando a excreção de ácido úrico pela urina e, consequentemente, reduzindo seus níveis no sangue. Por essa característica, é a droga de escolha para hipertensos com hiperuricemia.\n\ne) Hidroclorotiazida: Incorreta. É um diurético tiazídico. Esta classe é classicamente associada ao aumento dos níveis de ácido úrico, pois compete com a secreção de urato nos túbulos renais e aumenta sua reabsorção. É um dos principais gatilhos para crises de gota em pacientes predispostos.\n\nResumo: Em pacientes hipertensos com hiperuricemia, deve-se evitar diuréticos (tiazídicos e de alça) e preferir a losartana, devido ao seu efeito uricosúrico benéfico.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Artrites Microcristalinas",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:08.471Z"
+  }
+]

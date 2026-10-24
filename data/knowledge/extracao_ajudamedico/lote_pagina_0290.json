@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_50605c35-b868-475d-a000-a3be95764e17",
+    "originalId": "50605c35-b868-475d-a000-a3be95764e17",
+    "statement": "Parturiente, 2G 1P (vaginal), 38 semanas, sem complicações obstétricas. Encontra-se em trabalho de parto, sem analgesia, com sinais de exaustão materna. Altura uterina de 34 cm. Toque: dilatação total, bolsa rota, occito púbica, plano +4 de De Lee, bacia de dimensões normais. Em relação ao período de trabalho de parto, é correto afirmar que a parturiente encontra-se no",
+    "options": [
+      {
+        "id": "A",
+        "text": "1º período: período de dilatação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3º período: período expulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2º período: período de dequitação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2º período: período expulsivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "3° período: período de dequitação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental recordar a divisão clássica dos períodos clínicos do parto. O trabalho de parto é dividido em quatro fases principais:\n\n1. Primeiro período (Dilatação): Inicia-se com as contrações rítmicas e coordenadas que promovem o apagamento e a dilatação cervical, terminando quando a dilatação atinge 10 cm (dilatação total).\n2. Segundo período (Expulsivo): Inicia-se no momento da dilatação total e termina com a saída completa do feto.\n3. Terceiro período (Dequitação ou Secundamento): Compreende o intervalo entre o nascimento do feto e a saída da placenta e das membranas ovulares.\n4. Quarto período (Período de Greenberg): Corresponde à primeira hora após a saída da placenta, momento de observação rigorosa devido ao risco de hemorragias puerperais.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O primeiro período termina exatamente quando a dilatação se torna total. Como o enunciado afirma que a paciente apresenta dilatação total, ela já ultrapassou o período de dilatação.\n\nAlternativa (b) Incorreta: Existe um erro de nomenclatura nesta opção. O terceiro período é o de dequitação (saída da placenta), e não o expulsivo.\n\nAlternativa (c) Incorreta: O segundo período é o expulsivo. A dequitação ocorre no terceiro período.\n\nAlternativa (d) Correta: A paciente apresenta dilatação total e o feto encontra-se no plano +4 de De Lee (já bastante baixo na bacia, próximo ao introito vaginal). Esses achados definem clinicamente o segundo período do parto, também chamado de período expulsivo. A exaustão materna citada no caso é um sinal clínico comum que pode ocorrer justamente nesta fase de maior esforço físico.\n\nAlternativa (e) Incorreta: Embora o terceiro período seja, de fato, o de dequitação, a paciente ainda não deu à luz o feto (o toque ainda identifica o feto em plano +4), logo, ela não pode estar na fase de saída da placenta.\n\nEm resumo, a presença de dilatação total associada à apresentação fetal em plano avançado (+4 de De Lee) caracteriza o segundo período do parto (expulsivo).",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:39.502Z"
+  },
+  {
+    "id": "AJUDA_506172f3-3731-4786-b5ed-dfa58fe6f1f7",
+    "originalId": "506172f3-3731-4786-b5ed-dfa58fe6f1f7",
+    "statement": "A síndrome do choque tóxico estafilocócico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ocorre somente em pacientes colonizados por cepas de estafilococos resistentes à oxacilina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apresenta hipercalcemia por mecanismo desconhecido;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não pode ter a linezolida incluída no tratamento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pode ser amenizada pelo uso da clindamicina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A síndrome do choque tóxico (SCT) estafilocócica é uma condição aguda e grave mediada por superantígenos, principalmente a toxina 1 da síndrome do choque tóxico (TSST-1), produzida por certas cepas de *Staphylococcus aureus*. Esses superantígenos provocam uma ativação massiva e inespecífica de linfócitos T, resultando em uma tempestade de citocinas.\n\nAlternativa a: Incorreta. A ocorrência da síndrome não está vinculada à resistência bacteriana à oxacilina. A grande maioria dos casos de SCT é causada por cepas de *Staphylococcus aureus* sensíveis à oxacilina (MSSA) que possuem o gene para a produção da toxina TSST-1. Portanto, o fenótipo de resistência (como o MRSA) não é um pré-requisito para o desenvolvimento da síndrome.\n\nAlternativa b: Incorreta. Clinicamente, a SCT cursa frequentemente com hipocalcemia (diminuição dos níveis séricos de cálcio), e não hipercalcemia. Essa queda do cálcio é um marcador laboratorial comum e pode estar relacionada à hipoalbuminemia e à gravidade da resposta inflamatória sistêmica.\n\nAlternativa c: Incorreta. A linezolida é um antibiótico da classe das oxazolidinonas que inibe a síntese proteica bacteriana ao se ligar à subunidade 50S do ribossomo. Assim como a clindamicina, a linezolida tem a capacidade de suprimir a produção de toxinas (superantígenos) pelo estafilococo, podendo ser incluída no esquema terapêutico, especialmente em casos de alergia ou resistência a outras drogas.\n\nAlternativa d: Correta. O uso da clindamicina é uma recomendação clássica no manejo da síndrome do choque tóxico. Por ser um potente inibidor da síntese proteica, a clindamicina interrompe a produção das toxinas bacterianas de forma muito mais eficaz do que os antibióticos que agem apenas na parede celular (como as penicilinas). Ao reduzir a carga de toxinas circulantes, ela ajuda a mitigar a resposta inflamatória exacerbada e melhora o desfecho clínico.\n\nGabarito: Letra d.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Piodermites",
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:39.502Z"
+  },
+  {
+    "id": "AJUDA_5069c6b5-a597-4607-a1f9-66e84db7f65f",
+    "originalId": "5069c6b5-a597-4607-a1f9-66e84db7f65f",
+    "statement": "Uma paciente em uma casa de repouso com demência leve é internada com obstrução intestinal de alto grau. Ela é internada para repouso intestinal e monitoramento. Nas 24 horas seguintes, seu débito por sonda nasogástrica permanece bilioso, sua dor abdominal piora e seu lactato aumenta. Você determina que ela precisa ir urgentemente para o centro cirúrgico, mas quando ela é informada sobre a cirurgia, diz: \"Não quero cirurgia, quero ir para casa e preparar o jantar com meu marido\" e afirma que vai melhorar sozinha, sem cirurgia. Ela insiste em deixar o hospital e continua falando com o marido como se ele estivesse presente. Quando você liga para a casa de repouso, eles informam que o marido dela faleceu há décadas, que ela não possui Diretiva Antecipada de Vontade registrada, já que todos os seus irmãos faleceram e que ela não tem filhos. Você decide pela cirurgia e chama seu assistente para ajudar no caso. Ele informa que foi diagnosticado com HIV hoje. Quais das seguintes afirmações são verdadeiras?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se o cirurgião sabe que sua carga viral é > 5 × 10 cópias/mL, ele deve abster-se de operar até que a carga viral esteja mais bem controlada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O cirurgião precisa revelar seu estado ao paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O cirurgião não deve ser autorizado a operar devido a esse diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Devido ao diagnóstico recente, o risco de transmissão do profissional de saúde para o paciente é alto (>33%).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda aspectos bioéticos (capacidade de decisão e consentimento) e normas de biossegurança relacionadas a profissionais de saúde portadores do vírus HIV. \n\nNo caso da paciente, embora ela recuse a intervenção, o quadro de confusão mental e perda do teste de realidade (falar com o marido falecido há décadas) demonstra falta de capacidade para a tomada de decisões no momento. Diante de uma emergência cirúrgica (obstrução com suspeita de isquemia/estrangulamento, evidenciada pelo lactato elevado) e na ausência de representante legal ou diretivas antecipadas, a indicação cirúrgica é imperativa pelo princípio da beneficência.\n\nEm relação à situação do assistente recém-diagnosticado com HIV, a análise das alternativas é a seguinte:\n\nAlternativa a: Correta. Diretrizes internacionais (como CDC e SHEA) estabelecem que profissionais de saúde portadores de HIV podem realizar procedimentos cirúrgicos e invasivos com risco de exposição, desde que estejam sob acompanhamento médico e com carga viral adequadamente suprimida (geralmente indetectável ou abaixo do limiar estipulado pelas diretrizes de biossegurança). Se a carga viral estiver elevada ou não controlada, o profissional deve se abster de procedimentos invasivos de risco até atingir o controle virológico.\n\nAlternativa b: Incorreta. O profissional de saúde não é obrigado a revelar seu diagnóstico de HIV ao paciente. O direito ao sigilo e à privacidade do profissional é protegido por lei e pelo código de ética médica. A proteção do paciente é garantida pelo controle da carga viral e pela adesão rigorosa às precauções-padrão de biossegurança.\n\nAlternativa c: Incorreta. O diagnóstico de HIV não impede o exercício da medicina ou a prática cirúrgica de forma definitiva. Com o tratamento antirretroviral adequado e carga viral suprimida, o profissional pode realizar atos cirúrgicos com segurança.\n\nAlternativa d: Incorreta. O risco de transmissão do HIV de um cirurgião para o paciente durante procedimentos cirúrgicos é estimado como extremamente baixo (menos de 1 em centenas de milhares de procedimentos, ou cerca de 0,0003%). O valor de 33% (aproximadamente um terço) é totalmente irreal; a título de comparação, mesmo o risco de transmissão ocupacional após um acidente percutâneo com agulha infectada (paciente para profissional) é de apenas cerca de 0,3%.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Abdome Agudo Obstrutivo",
+      "Demências",
+      "Ética Médica"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:39.502Z"
+  },
+  {
+    "id": "AJUDA_507028a7-4961-41c2-9f05-983a6b23ffb3",
+    "originalId": "507028a7-4961-41c2-9f05-983a6b23ffb3",
+    "statement": "Situação-Problema: Criança, 2 anos de idade, com diagnóstico neonatal de Síndrome de Down e história de cardiopatia congênita corrigida cirurgicamente aos 8 meses de idade, acompanhada, inicialmente, em serviço de referência. Após a alta da equipe das especialidades, a família passou a comparecer de forma irregular à Unidade de Saúde da Família (USF). A mãe relata preocupação com atraso motor, pouca interação com outras crianças e dificuldades de acesso regular à fonoaudiologia e à fisioterapia. A criança não frequenta creche, passa a maior parte do tempo em casa sob o cuidado da avó e apresenta poucas oportunidades de estimulação. Os pais demonstram insegurança quanto às metas de desenvolvimento e pedem orientações claras.\n\nConsiderando as recomendações para acompanhamento sistemático de crianças com Sindrome de Down, indique os\nexames complementares a serem, prioritariamente, realizados pela Atenção Primária à Saúde:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glicemia de jejum trimestral para rastreio de diabetes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hemograma mensal para rastreio de leucemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste ergométrico anual para avaliação cardiorrespiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "TSH periódico e triagem auditiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O acompanhamento da criança com Síndrome de Down na Atenção Primária à Saúde envolve a vigilância ativa e o rastreamento periódico de comorbidades comuns que interferem diretamente no neurodesenvolvimento.\n\nAlternativa a (Incorreta): Embora indivíduos com Síndrome de Down apresentem maior risco de desenvolver doenças autoimunes, como o diabetes mellitus tipo 1, não há recomendação em diretrizes para a realização de glicemia de jejum trimestral em crianças assintomáticas. O rastreamento deve ser conduzido com base na vigilância de sinais e sintomas clínicos.\n\nAlternativa b (Incorreta): O risco de neoplasias hematológicas (como a leucemia mieloide aguda e a leucemia linfoblástica aguda) é significativamente maior nessa população. Entretanto, a realização de hemograma mensal não é preconizada, sendo um exame desnecessariamente invasivo e sem evidência de benefício quando feito com essa frequência em pacientes assintomáticos. A avaliação é primordialmente clínica, com solicitação de hemograma em intervalos maiores (como no primeiro ano de vida para triagem de anemia/policitemia ou quando houver suspeita clínica).\n\nAlternativa c (Incorreta): O teste ergométrico não é um exame de triagem para crianças com Síndrome de Down, além de ser tecnicamente inviável para a faixa etária de 2 anos. A abordagem cardiovascular prioritária é o ecocardiograma realizado ao nascimento e o seguimento clínico ambulatorial com foco na cardiopatia já corrigida.\n\nAlternativa d (Correta): O rastreamento de disfunção tireoidiana e a avaliação da acuidade auditiva são prioridades absolutas no seguimento da Síndrome de Down. O hipotireoidismo apresenta alta prevalência (tanto congênito quanto adquirido/autoimune) e, se não tratado, agrava o atraso motor e o déficit cognitivo, sendo indicada a dosagem de TSH periódica (no período neonatal, aos 6 meses, aos 12 meses e anualmente). Além disso, a triagem auditiva periódica é mandatória, visto que alterações anatômicas e otites de repetição levam frequentemente à perda auditiva condutiva ou neurossensorial, comprometendo o desenvolvimento da fala e a interação social da criança.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Atenção Primária à Saúde",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:39.502Z"
+  },
+  {
+    "id": "AJUDA_50745408-a7ab-4aac-9871-3eea72de9e31",
+    "originalId": "50745408-a7ab-4aac-9871-3eea72de9e31",
+    "statement": "Em qual dos cenários clínicos abaixo a cirurgia de revascularização do miocárdio é melhor em termos de mortalidade do que o tratamento percutâneo (angioplastia coronariana) na cardiopatia isquêmica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paciente com angina estável crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paciente com estenose de 50% na artéria descendente anterior sem isquemia ao teste funcional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paciente com estenose de 60% na artéria circunflexa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paciente com infarto agudo do miocárdio com 72 horas de evolução, assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Paciente com insuficiência cardíaca e fração de ejeção do ventrículo esquerdo de 30%, com lesão severa do tronco da coronária esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A escolha entre a cirurgia de revascularização do miocárdio (CRM) e a intervenção coronariana percutânea (angioplastia) baseia-se em evidências de redução de mortalidade, alívio de sintomas e complexidade da anatomia coronariana.\n\nA alternativa (a) está incorreta porque, no cenário da angina estável crônica, o objetivo primordial da revascularização é o controle dos sintomas anginosos. Grandes estudos, como o trial ISCHEMIA, demonstraram que uma estratégia invasiva inicial (seja por cirurgia, seja por angioplastia) não reduz a mortalidade total ou o risco de infarto do miocárdio quando comparada ao tratamento clínico otimizado na população geral de pacientes estáveis.\n\nA alternativa (b) está incorreta. Uma estenose de 50% em uma artéria coronária (com exceção do tronco da coronária esquerda) não é considerada hemodinamicamente significativa. Sem a presença de isquemia documentada em testes funcionais, não há indicação de revascularização, e muito menos benefício de sobrevida com a cirurgia.\n\nA alternativa (c) está incorreta. Uma lesão de 60% na artéria circunflexa, de forma isolada, não atinge os critérios para indicação cirúrgica visando à melhora de mortalidade. Nesses casos de doença arterial coronariana uniarterial que não envolvem a porção proximal da artéria descendente anterior, a angioplastia ou o tratamento clínico são as condutas de escolha.\n\nA alternativa (d) está incorreta. De acordo com o estudo OAT (Occluded Artery Trial), a revascularização de uma artéria culpada totalmente ocluída após 24 a 72 horas do infarto agudo do miocárdio, em pacientes que já estão estáveis e assintomáticos, não reduz a ocorrência de morte, reinfarto ou insuficiência cardíaca, não havendo indicação para o procedimento.\n\nA alternativa (e) está correta e representa o cenário clássico de benefício da cirurgia sobre a angioplastia. A presença de lesão severa no tronco da coronária esquerda associada à disfunção ventricular esquerda (fração de ejeção de 30%) é uma das principais indicações de classe I para a cirurgia de revascularização do miocárdio. Nesses pacientes de alto risco e com anatomia complexa, a cirurgia oferece uma proteção superior contra eventos isquêmicos e apresenta uma redução robusta na mortalidade a longo prazo em comparação ao tratamento percutâneo ou clínico, conforme sustentado pelos estudos STICH e SYNTAX.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Doença Arterial Coronariana Estável (DAC Estável)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:39.502Z"
+  },
+  {
+    "id": "AJUDA_507e1fea-4b91-455a-b516-74373d887b76",
+    "originalId": "507e1fea-4b91-455a-b516-74373d887b76",
+    "statement": "Um menino de 7 anos, morador da zona rural, é levado ao posto de saúde por fadiga, palidez e baixo rendimento escolar. A mãe refere que ele apresenta dor abdominal vaga, baixo ganho ponderal, e quando não está na escola, costuma brincar no quintal e no campo com os amigos. Ao exame apresentou sopro sistólico fraco em bordo esternal esquerdo. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ascaridíase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ancilostomíase",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tricuríase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Enterobíase",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito aponta para um diagnóstico de anemia ferropriva grave secundária a uma parasitose intestinal. O paciente apresenta palidez, fadiga, baixo rendimento escolar e um sopro sistólico funcional (sopro hêmico), que é característico de estados anêmicos graves devido ao estado hiperdinâmico da circulação. O fato de a criança morar em zona rural e brincar no campo sugere contato direto da pele com solo contaminado por larvas.\n\nAlternativa (a) Incorreta: A ascaridíase, causada pelo Ascaris lumbricoides, pode causar dor abdominal, náuseas e, em infestações maciças, obstrução intestinal (bolo de áscaris). Embora possa competir por nutrientes, não é a causa clássica de anemia ferropriva grave e espoliação sanguínea direta como a observada no caso.\n\nAlternativa (b) Correta: A ancilostomíase (causada pelo Ancylostoma duodenale ou Necator americanus) é a principal causa helmíntica de anemia ferropriva. Os vermes fixam-se à mucosa do intestino delgado e alimentam-se do sangue do hospedeiro, causando perda crônica de ferro. A infecção ocorre habitualmente pela penetração das larvas filarioides na pele (comumente nos pés, ao brincar descalço no solo). Os sintomas de fadiga, palidez, baixo ganho ponderal e o sopro sistólico por anemia grave formam o quadro clássico do amarelão.\n\nAlternativa (c) Incorreta: A tricuríase, causada pelo Trichuris trichiura, em infecções leves é assintomática. Em cargas parasitárias muito elevadas, pode causar diarreia crônica, colite e prolapso retal. Embora possa contribuir para a anemia em casos extremos, a correlação epidemiológica e clínica com a anemia espoliante severa é muito mais forte na ancilostomíase.\n\nAlternativa (d) Incorreta: A enterobíase (oxiuríase), causada pelo Enterobius vermicularis, tem como sintoma patognomônico o prurido anal noturno, que pode levar à irritabilidade e sono agitado. Não costuma causar anemia, dor abdominal importante ou déficit de crescimento.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Anemias",
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:39.502Z"
+  },
+  {
+    "id": "AJUDA_50818571-fa0e-4645-8015-03f498169494",
+    "originalId": "50818571-fa0e-4645-8015-03f498169494",
+    "statement": "Mulher de 42 anos anos informa ter migrânea, manifestando aura de hemiplegia. Relata que tem apresentado duas crises por semana de cefaleia intensa, com limitação das atividades de vida. É portadora de dismenorreia e hipertensão arterial sistêmica. Faz uso de ciproterona/etinilestradiol e losartana. Para o controle das crises de cefaleia, faz uso de anti-inflamatório não esteroidal. Ao exame físico, PA 152/94mmHg; FC 68bpm. Sem anormalidades outras. Assinale a alternativa ERRADA em relação à prevenção de acidente vascular encefálico nessa paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Otimizar o controle pressórico da paciente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever tratamento para a profilaxia das crises de cefaleia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever sumaptriptano para tratamento das crises agudas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Suspender o uso de ciproterona/etinilestradiol",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro de migrânea com aura hemiplégica, uma variante rara e grave de enxaqueca caracterizada por fraqueza motora durante a aura. Além disso, possui fatores de risco cardiovascular importantes: hipertensão arterial sistêmica não controlada (152/94 mmHg) e uso de anticoncepcional hormonal combinado (etinilestradiol), o que eleva substancialmente o risco de acidente vascular encefálico (AVE).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: O controle da pressão arterial é um dos pilares na prevenção de eventos vasculares cerebrais. A paciente apresenta níveis pressóricos acima da meta (152/94 mmHg), o que configura um fator de risco modificável prioritário. Otimizar a terapia anti-hipertensiva é conduta mandatória.\n\nAlternativa (b) CORRETA: A profilaxia das crises de cefaleia está indicada quando o paciente apresenta duas ou mais crises por mês que limitam as atividades de vida, ou em casos de subtipos específicos e graves, como a migrânea hemiplégica. O objetivo é reduzir a frequência, a intensidade e o risco de complicações neurológicas.\n\nAlternativa (c) INCORRETA (GABARITO): O sumatriptano, assim como outros triptanos e derivados de ergotamina, possui propriedades vasoconstritoras. Seu uso é formalmente contraindicado na migrânea hemiplégica e na migrânea com aura de tronco, devido ao risco teórico de isquemia cerebral durante a fase de aura. Além disso, a hipertensão arterial não controlada é uma contraindicação adicional ao uso de triptanos pelo risco de eventos coronarianos e vasculares.\n\nAlternativa (d) CORRETA: A suspensão de anticoncepcionais que contenham estrogênio (como o etinilestradiol) é obrigatória nesta paciente. A Organização Mundial da Saúde (OMS) classifica o uso de contraceptivos combinados em mulheres com migrânea com aura como Categoria 4 (risco inaceitável à saúde), devido ao aumento sinérgico e significativo do risco de AVE isquêmico.\n\nCONCLUSÃO\n\nA questão solicita a alternativa errada sobre a prevenção de AVE. O uso de sumatriptano (alternativa C) é a conduta contraindicada neste cenário clínico específico, tornando-a a resposta correta para o enunciado. Em crises de migrânea hemiplégica, o tratamento de resgate deve focar em outras classes, como anti-inflamatórios ou neurolépticos, evitando-se drogas vasoconstritoras.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Acidentes Vasculares Cerebrais",
+      "Cefaleias"
+    ],
+    "difficulty": 41.358293966692464,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:39.502Z"
+  },
+  {
+    "id": "AJUDA_5086146b-cd8d-4c37-9781-26d2eebbf30c",
+    "originalId": "5086146b-cd8d-4c37-9781-26d2eebbf30c",
+    "statement": "Paciente feminina, 73 anos, com antecedente de colelitíase, refere no pronto-socorro dor abdominal intensa em flanco inferior esquerdo, vômitos e inapetência há 4 dias. Seguem imagens da tomografia abdominal. O diagnóstico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ĺleo biliar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Obstrução intestinal por neoplasia de cólon direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apendicite complicada com abscesso pericecal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Neoplasia de apêndice.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Doença de Crohn com estenose ileocecal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico e as imagens de tomografia computadorizada apresentados são clássicos para o diagnóstico de íleo biliar. Esta é uma complicação rara da colelitíase, ocorrendo geralmente em pacientes idosos, na qual um cálculo biliar de grandes dimensões migra para o lúmen intestinal através de uma fístula colecistoentérica (comunicação anômala entre a vesícula biliar e o intestino, mais comumente o duodeno).\n\nAnálise das imagens e correlação diagnóstica:\nAs imagens da tomografia revelam a chamada Tríade de Rigler, que é patognomônica para o íleo biliar:\n1. Aerobilia: Observa-se a presença de ar na árvore biliar (destacada pelos círculos nas imagens superiores), indicando a existência de uma comunicação entre o sistema biliar e o trato digestivo.\n2. Obstrução intestinal: Há sinais de dilatação de alças de intestino delgado.\n3. Cálculo biliar ectópico: Nas imagens inferiores, observa-se uma estrutura arredondada, hiperatenuante (calcificada), impactada na luz do intestino delgado na região da transição ileocecal (destacada pelos círculos inferiores).\n\nAnálise das alternativas:\n\na) Correta. A paciente é idosa, possui antecedente de colelitíase e apresenta obstrução mecânica causada por um cálculo biliar que migrou e impactou no íleo distal, conforme evidenciado pela aerobilia e pelo cálculo ectópico na tomografia.\n\nb) Incorreta. Embora a neoplasia de cólon direito seja um diferencial para obstrução em idosos, os achados radiológicos de aerobilia e a presença de um cálculo calcificado intraluminal são específicos de íleo biliar e não de uma massa neoplásica primária do cólon.\n\nc) Incorreta. Uma apendicite complicada com abscesso poderia causar um efeito de massa e dor em fossa ilíaca, mas não explicaria a presença de ar dentro das vias biliares nem a imagem de cálculo biliar impactado no intestino.\n\nd) Incorreta. Assim como na alternativa B, uma neoplasia de apêndice não justifica a presença de aerobilia. Além disso, a imagem demonstra claramente um cálculo sólido e calcificado como causa da obstrução.\n\ne) Incorreta. A Doença de Crohn pode evoluir com estenose ileocecal e obstrução, porém costuma acometer pacientes mais jovens e apresenta sinais inflamatórios na parede da alça (espessamento parietal descontínuo), não cursando com a eliminação de cálculos biliares para o intestino ou aerobilia.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ce2933c1e3f97f37b5178148977142a311101240eb9963e7ebcff66702c58214.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5086146b-cd8d-4c37-9781-26d2eebbf30c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:40.273Z"
+  },
+  {
+    "id": "AJUDA_508c5b48-a949-4cae-92e2-467667108d9f",
+    "originalId": "508c5b48-a949-4cae-92e2-467667108d9f",
+    "statement": "Atualmente, verifica-se uma grande complexidade das pessoas que utilizam os serviços de saúde e com isso a limitação de uma prática centrada na doença, assim, é CORRETO afirmar que a clínica ampliada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não busca integrar várias abordagens para possibilitar um manejo eficaz da complexidade do trabalho em saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Propõe pensar seu objeto de trabalho em partes e em interação com seu meio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não modifica os instrumentos de trabalho intensamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Busca se constituir numa ferramenta de articulação e inclusão dos diferentes enfoques e disciplinas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Clínica Ampliada é uma proposta fundamental da Política Nacional de Humanização (PNH) que visa superar o modelo biomédico tradicional, centrado apenas na doença, para focar no sujeito e em sua singularidade.\n\nAlternativa a: Incorreta. A Clínica Ampliada busca exatamente o oposto: integrar diversas abordagens (biológicas, psicológicas, sociais e culturais) para lidar com a complexidade do processo saúde-doença. O manejo eficaz do trabalho em saúde exige essa integração para que o cuidado não seja fragmentado.\n\nAlternativa b: Incorreta. O modelo que pensa o objeto de trabalho em partes é a clínica tradicional ou fragmentada. A Clínica Ampliada propõe uma visão holística e integral do indivíduo, entendendo que o sujeito não pode ser reduzido à soma de seus órgãos ou patologias.\n\nAlternativa c: Incorreta. A Clínica Ampliada modifica profundamente os instrumentos de trabalho. Ela introduz novas ferramentas e metodologias, como o Projeto Terapêutico Singular (PTS), o apoio matricial, a escuta qualificada e o vínculo terapêutico, deslocando o foco de instrumentos puramente tecnicistas para instrumentos relacionais e interdisciplinares.\n\nAlternativa d: Correta. Esta alternativa define a essência da Clínica Ampliada. Ela atua como uma ferramenta de articulação que reconhece que o saber médico, sozinho, é insuficiente para dar conta da complexidade humana. Por isso, inclui diferentes enfoques (sociais, subjetivos) e diversas disciplinas (psicologia, serviço social, enfermagem, etc.) para construir um cuidado compartilhado e mais resolutivo.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:40.273Z"
+  },
+  {
+    "id": "AJUDA_508fc1cd-7ef2-4c90-b791-a1f0037c95de",
+    "originalId": "508fc1cd-7ef2-4c90-b791-a1f0037c95de",
+    "statement": "Mulher, 35 anos de idade, IIG II Partos cesáreas, refere perda urinária na corrida e urgência miccional ocasional, com piora progressiva há 6 meses. Exame físico: perda urinária em posição ortostática à manobra de Valsalva, Classificação POP-q: estádio IIA. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrição de solifenacina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fisioterapia do assoalho pélvico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia de sling retopúbico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Perineoplastia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta um quadro de incontinência urinária mista, caracterizado pelo relato de perda urinária ao esforço (corrida) associado a sintomas de urgência miccional. O exame físico confirma a incontinência urinária de esforço (perda à manobra de Valsalva) e identifica um prolapso de parede vaginal anterior estádio II (POP-Q IIA), que é considerado um prolapso leve.\n\nAlternativa a) Incorreta. A solifenacina é um fármaco anticolinérgico indicado para o tratamento da bexiga hiperativa e incontinência de urgência. Embora a paciente apresente urgência ocasional, a medicação não trata o componente de esforço (que foi confirmado no exame físico) e não é a conduta inicial de escolha para quadros mistos antes da terapia comportamental e física.\n\nAlternativa b) Correta. A fisioterapia do assoalho pélvico, por meio do treinamento dos músculos do assoalho pélvico, é a conduta de primeira linha recomendada para todos os tipos de incontinência urinária (esforço, urgência ou mista). Por ser um tratamento não invasivo e com alta eficácia em pacientes jovens e com sintomas recentes, deve sempre ser tentada antes de intervenções farmacológicas ou cirúrgicas.\n\nAlternativa c) Incorreta. O sling retropúbico é considerado o padrão-ouro para o tratamento cirúrgico da incontinência urinária de esforço. Contudo, em uma paciente de 35 anos com sintomas há apenas 6 meses, a cirurgia não deve ser a primeira opção. O tratamento cirúrgico é geralmente reservado para casos de falha do tratamento conservador ou quando há um impacto severo na qualidade de vida.\n\nAlternativa d) Incorreta. A perineoplastia é um procedimento cirúrgico destinado à correção de defeitos do corpo perineal e do compartimento posterior (como a retocele). Essa cirurgia não possui indicação para o tratamento da incontinência urinária nem para a correção de prolapsos da parede anterior (estádio IIA).",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Incontinência Urinária",
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:40.273Z"
+  }
+]

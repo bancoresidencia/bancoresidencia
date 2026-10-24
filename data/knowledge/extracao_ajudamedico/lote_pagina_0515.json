@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_8f76a80d-0b3e-4a0b-96a5-008df0d934a5",
+    "originalId": "8f76a80d-0b3e-4a0b-96a5-008df0d934a5",
+    "statement": "Mulher, 62 anos, diabética, em tratamento quimioterápico para neoplasia de colo de útero, evoluindo com dor e edema de membro inferior direito há cinco dias. Apresenta boa perfusão periférica e pulsos distais palpáveis, com dor à palpação da panturrilha e coxa. Exame de ultrassom, confirmado por angiotomografia pélvica, evidenciou imagem de trombo em veia ilíaca externa direita, associado à compressão extrínseca da mesma por gânglios linfáticos. Qual a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicado filtro de veia cava por contraindicação relativa ao uso de anticoagulantes e fibrinolíticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anticoagulação plena com heparina de baixo peso molecular ou anticoagulantes orais diretos (DOACs), por longo período.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trombólise local, seguido do uso de varfarina por longo período.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fibrinólise sistêmica e antiagregacão plaquetária por longo período.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma paciente de 62 anos com Trombose Venosa Profunda (TVP) proximal (veia ilíaca externa), no contexto de neoplasia ativa (colo do útero) e compressão extrínseca por linfonodomegalias. Estamos diante de um quadro de tromboembolismo venoso (TEV) associado ao câncer.\n\nAnálise das alternativas:\n\na) Incorreta. O filtro de veia cava está indicado prioritariamente quando existe contraindicação absoluta à anticoagulação (como um sangramento ativo grave ou cirurgia de grande porte iminente) ou em casos de falha terapêutica da anticoagulação (novo episódio de embolia mesmo com tratamento adequado). A presença de câncer, por si só, não contraindica a anticoagulação, sendo esta o pilar do tratamento.\n\nb) Correta. Esta é a conduta padrão para o tromboembolismo venoso associado ao câncer (CAT — Cancer-Associated Thrombosis). Historicamente, a heparina de baixo peso molecular (HBPM) era a primeira escolha absoluta. Atualmente, os anticoagulantes orais diretos (DOACs), como rivaroxabana, apixabana e edoxabana, também são recomendados por diretrizes internacionais (como as da ASCO e ISTH) para pacientes com câncer, devido à eficácia e à comodidade posológica. O tratamento deve ser por longo período (no mínimo 3 a 6 meses), devendo ser mantido enquanto a neoplasia estiver ativa ou o tratamento quimioterápico estiver em curso.\n\nc) Incorreta. A trombólise (local ou sistêmica) é reservada para casos graves de TVP com risco iminente de perda de membro (flegmasia cerulea dolens) ou em casos muito selecionados de TVP iliofemoral extensa em pacientes com baixo risco de sangramento e sintomas muito recentes. Além disso, a varfarina é considerada inferior às HBPM e aos DOACs no cenário oncológico, devido à maior taxa de recorrência de trombose e à dificuldade em manter a faixa terapêutica (INR) durante a quimioterapia.\n\nd) Incorreta. A fibrinólise sistêmica apresenta alto risco de complicações hemorrágicas e não é o tratamento de escolha para TVP. A antiagregação plaquetária (como o uso de aspirina) não é o tratamento adequado para eventos tromboembólicos venosos agudos, que exigem obrigatoriamente a anticoagulação para impedir a progressão do trombo e prevenir a embolia pulmonar.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:28.712Z"
+  },
+  {
+    "id": "AJUDA_8f78dda2-1ab1-46fe-a996-36b84565f13b",
+    "originalId": "8f78dda2-1ab1-46fe-a996-36b84565f13b",
+    "statement": "Uma prefeitura decide enfrentar o aumento da obesidade infantil no município. Para isso, promove parceria entre as Secretarias de Educação, Esporte, Saúde e Assistência Social. As ações incluem inserção de alimentação saudável no cardápio escolar, ampliação de espaços públicos para prática de atividade física, capacitação de professores sobre hábitos saudáveis e campanhas midiáticas contra o consumo excessivo de ultraprocessados.\nConsiderando o enfoque da promoção da saúde, essa experiência caracteriza-se principalmente como exemplo de",
+    "options": [
+      {
+        "id": "A",
+        "text": "atuação da atenção primária com ênfase na vigilância em saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "intervenção multiprofissional dentro do setor saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estratégia intersetorial para enfrentamento de determinantes sociais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "política pública setorial voltada ao controle de agravos específicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "prevenção secundária por meio de ações educativas escolares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O enunciado descreve uma iniciativa que articula diferentes áreas da gestão pública (Saúde, Educação, Esporte e Assistência Social) para abordar um problema complexo: a obesidade infantil. Esse cenário remete diretamente aos conceitos fundamentais da Promoção da Saúde e da Saúde Pública.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Embora a Atenção Primária participe do processo e a vigilância em saúde seja importante para monitorar os dados de obesidade, a questão descreve ações que extrapolam o setor da saúde. A colaboração com outras secretarias caracteriza algo maior do que apenas uma atuação interna da rede básica.\n\nAlternativa (b) Incorreta: O termo multiprofissional refere-se à atuação de diferentes categorias profissionais (médicos, nutricionistas, psicólogos etc.). No entanto, a questão enfatiza a articulação entre diferentes órgãos e pastas do governo (secretarias), o que configura a intersetorialidade, e não apenas uma divisão de tarefas entre profissionais dentro do setor da saúde.\n\nAlternativa (c) Correta: Esta é a alternativa que melhor define a situação. A intersetorialidade é a articulação de diversos setores da sociedade e do governo para intervir sobre os determinantes sociais da saúde (como acesso a alimentos saudáveis, educação, lazer e ambiente urbano). Ao envolver as secretarias de Esporte, Educação e Assistência Social, o município reconhece que a saúde não depende apenas de hospitais ou postos de saúde, mas de condições de vida e hábitos construídos socialmente.\n\nAlternativa (d) Incorreta: O termo setorial indica uma ação restrita a apenas um setor (neste caso, apenas a saúde). O enunciado descreve exatamente o oposto: uma ação transetorial ou intersetorial. Além disso, a promoção da saúde foca nos determinantes, e não apenas no controle de agravos já instalados.\n\nAlternativa (e) Incorreta: A prevenção secundária foca no diagnóstico precoce e no tratamento de doenças já existentes para evitar complicações (como o rastreamento). As ações descritas, como a alimentação escolar saudável e a ampliação de espaços para exercícios, são estratégias de promoção da saúde e prevenção primária, pois visam agir antes que o agravo se instale ou atuar sobre o bem-estar geral da população.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:28.712Z"
+  },
+  {
+    "id": "AJUDA_8f8809e6-0f60-4481-805a-fcd0a350cdb0",
+    "originalId": "8f8809e6-0f60-4481-805a-fcd0a350cdb0",
+    "statement": "Paciente vítima de trauma torácico grave, evoluindo com dor torácica, dispneia importante, taquicardia, hipotensão, ausência unilateral do murmúrio vesicular, distensão das veias do pescoço, quadro este compatível com pneumotórax hipertensivo. Este choque é denominado",
+    "options": [
+      {
+        "id": "A",
+        "text": "choque cardiogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "choque hipovolêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "choque neurogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "choque distributivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "choque obstrutivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descrito — dor torácica, dispneia grave, taquicardia, hipotensão, ausência de murmúrio vesicular unilateral e turgência jugular (distensão das veias do pescoço) — é a apresentação clássica do pneumotórax hipertensivo. No pneumotórax hipertensivo, o ar entra no espaço pleural, mas não consegue sair, criando um mecanismo de válvula que aumenta progressivamente a pressão intratorácica. Esse aumento de pressão desvia o mediastino para o lado oposto e comprime as grandes veias (veias cavas superior e inferior), impedindo o retorno venoso para o coração. Com menos sangue chegando ao ventrículo direito, o débito cardíaco cai drasticamente, levando ao choque.\n\nAnálise das alternativas:\n\na) Incorreta. O choque cardiogênico ocorre por uma falha intrínseca na bomba cardíaca (o coração não consegue contrair de forma eficaz), como no infarto agudo do miocárdio, arritmias graves ou miocardites. No pneumotórax hipertensivo, o problema não é a força de contração do músculo cardíaco, mas sim um fator externo que impede o enchimento do coração.\n\nb) Incorreta. O choque hipovolêmico é causado pela perda de volume (sangue ou fluidos), resultando em pré-carga baixa. Embora seja comum no trauma, o sinal clínico que o diferencia do pneumotórax hipertensivo é o estado das veias do pescoço: no choque hipovolêmico, as veias jugulares estão colabadas (murchas), e não distendidas.\n\nc) Incorreta. O choque neurogênico decorre da perda do tônus simpático devido a uma lesão medular alta, resultando em vasodilatação sistêmica. Caracteriza-se classicamente por hipotensão acompanhada de bradicardia (ou ausência de taquicardia compensatória) e pele quente, o que diverge do quadro de taquicardia e desconforto respiratório grave apresentado.\n\nd) Incorreta. O choque distributivo (como no caso da sepse ou anafilaxia) ocorre devido a uma vasodilatação periférica maciça e má distribuição do fluxo sanguíneo. Não há obstrução mecânica ao fluxo nem falha de bomba primária, e as jugulares geralmente não estão distendidas.\n\ne) Correta. O choque obstrutivo acontece quando há uma barreira física que impede o fluxo sanguíneo normal ou o enchimento das câmaras cardíacas. No pneumotórax hipertensivo, a pressão intrapleural elevada causa o colapso das veias cavas e a compressão direta do coração e vasos da base, obstruindo o retorno venoso (pré-carga). Outros exemplos clássicos de choque obstrutivo são o tamponamento cardíaco e o tromboembolismo pulmonar maciço. Portanto, o mecanismo fisiopatológico aqui é puramente obstrutivo.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:28.712Z"
+  },
+  {
+    "id": "AJUDA_8f935d27-2dbb-4f4b-a01c-b006ddb3e6b8",
+    "originalId": "8f935d27-2dbb-4f4b-a01c-b006ddb3e6b8",
+    "statement": "Lactente, sexo masculino, com 18 meses de idade é trazido ao pronto-socorro com história de 2 dias de coriza e febre baixa. Na madrugada, evoluiu subitamente com tosse “de cachorro”, rouquidão e estridor inspiratório. Ao exame físico, apresenta estridor audível em repouso, tiragem subcostal leve e está ativo e responsivo, sem cianose. A oximetria revela saturação de 94% e a temperatura axilar é de 38.5 ºC.\n\nConsiderando a apresentação clínica, qual é a conduta inicial mais apropriada para o manejo desse lactente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar inalação com soro fisiológico e liberar o paciente para casa, com orientação de retornar se houver piora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oferecer oxigênio em cateter nasal de alto fluxo, aquecido e umedecido, mantendo o paciente monitorado no pronto-socorro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar nebulização com broncodilatador (salbutamol) e corticosteroide inalatório (budesonida), mantendo o paciente em observação no pronto-socorro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever dexametasona e nebulização com adrenalina, mantendo o paciente em observação no pronto-socorro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Realizar inalação com soro fisiológico e iniciar antibioticoterapia oral (amoxicilina) para prevenir complicação bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — lactente com pródromo catarral evoluindo para tosse ladrante (de cachorro), rouquidão e estridor inspiratório — é clássico de laringotraqueobronquite viral aguda, popularmente conhecida como crupe viral. A presença de estridor em repouso e tiragem subcostal classifica o quadro como moderado.\n\nAlternativa a) Incorreta. A inalação apenas com soro fisiológico não trata o edema da região subglótica, que é a causa da obstrução respiratória no crupe. Além disso, um paciente com estridor em repouso não deve ser liberado imediatamente; ele necessita de tratamento farmacológico e observação clínica.\n\nAlternativa b) Incorreta. O cateter nasal de alto fluxo (CNAF) é uma modalidade de suporte ventilatório mais indicada para doenças das vias aéreas inferiores, como a bronquiolite obliterante ou a insuficiência respiratória hipoxêmica. No crupe, a prioridade é reverter a obstrução inflamatória da via aérea superior com medicação.\n\nAlternativa c) Incorreta. O salbutamol é um broncodilatador que atua nos receptores beta-2 dos pulmões, sendo indicado para quadros de broncoespasmo (como asma ou bronquiolite). No crupe, o problema é o edema na laringe/traqueia, onde o salbutamol não tem efeito. Embora a budesonida inalatória possa ser usada, a dexametasona é o corticoide de escolha e a nebulização com adrenalina é indispensável para o estridor em repouso.\n\nAlternativa d) Correta. Esta é a conduta padrão para o crupe moderado a grave. A dexametasona (via oral ou intramuscular) é o corticoide de escolha por sua longa meia-vida e eficácia em reduzir a inflamação glótica. A nebulização com adrenalina (epinefrina) promove vasoconstrição local, reduzindo rapidamente o edema e o estridor. O paciente deve permanecer em observação por, pelo menos, 2 a 4 horas após a adrenalina, devido ao risco de \"efeito rebote\" (retorno do estridor após o término do efeito da medicação).\n\nAlternativa e) Incorreta. O crupe é majoritariamente de etiologia viral (principalmente o vírus parainfluenza). O uso de antibióticos não é indicado de rotina e não previne complicações bacterianas. O tratamento deve ser focado no controle da inflamação e da obstrução respiratória.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:28.712Z"
+  },
+  {
+    "id": "AJUDA_8f95b6bd-2c93-4f95-91eb-1a6a4f4b2cf5",
+    "originalId": "8f95b6bd-2c93-4f95-91eb-1a6a4f4b2cf5",
+    "statement": "Na prática da medicina de família, qual das seguintes afirmações descreve corretamente o conceito de \"notificação compulsória\" em vigilância epidemiológica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Notificação compulsória é o processo de comunicação voluntária de doenças infecciosas entre médicos, garantindo a privacidade dos pacientes e sem necessidade de intervenção governamental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A notificação compulsória é um sistema de vigilância que utiliza exclusivamente técnicas laboratoriais para identificar e reportar surtos de doenças infecciosas, sem a necessidade de registros clínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Notificação compulsória é um método de vigilância passiva que depende da observação comunitária e relatos espontâneos de casos de doenças por indivíduos não profissionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Notificação compulsória é um sistema de coleta de dados anônimos sobre doenças crônicas, sem incluir doenças transmissíveis, para análise estatística em estudos epidemiológicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Notificação compulsória refere-se à exigência legal de comunicação de certas doenças e agravos à saúde às autoridades de saúde pública, permitindo a implementação de medidas de controle e prevenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Conceito de Notificação Compulsória:\nA notificação compulsória é um dos pilares da vigilância epidemiológica. Ela consiste na comunicação obrigatória à autoridade de saúde sobre a ocorrência de suspeita ou confirmação de doenças, agravos ou eventos de saúde pública. Essa lista é definida pelo Ministério da Saúde e pelas secretarias estaduais e municipais, visando ao controle de doenças e à proteção da coletividade.\n\nAnálise das alternativas:\n\na) Incorreta. A notificação não é um processo voluntário, mas sim obrigatório por lei para médicos e outros profissionais de saúde. Além disso, o objetivo central é justamente a intervenção governamental para o controle de surtos e epidemias, e não apenas uma troca de informações entre colegas médicos.\n\nb) Incorreta. Embora os resultados laboratoriais sejam fundamentais para a confirmação de muitos casos, a notificação compulsória deve ser feita com base na suspeita clínica, sem aguardar necessariamente a conclusão de exames. O sistema depende fortemente dos registros clínicos para permitir uma resposta rápida da vigilância.\n\nc) Incorreta. A notificação compulsória é uma responsabilidade técnica e legal de profissionais de saúde e gestores de unidades de saúde (públicas ou privadas). Embora a vigilância baseada na comunidade exista, o conceito formal de notificação compulsória refere-se ao dever profissional e institucional estabelecido na legislação.\n\nd) Incorreta. O sistema de notificação compulsória inclui prioritariamente doenças transmissíveis (como dengue, tuberculose e meningite), mas também abrange agravos como violência doméstica e acidentes por animais peçonhentos. O objetivo principal não é meramente estatístico para estudos, mas sim o desencadeamento de ações imediatas de bloqueio e prevenção.\n\ne) Correta. Esta alternativa define com precisão o conceito. A notificação compulsória é uma exigência legal (prevista na Lei nº 6.259/1975 e em portarias atualizadas do Ministério da Saúde). Ela estabelece que a comunicação deve ser feita às autoridades de saúde pública para que o Estado possa monitorar o perfil epidemiológico e implementar medidas urgentes de intervenção, controle e prevenção.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:28.712Z"
+  },
+  {
+    "id": "AJUDA_8fa8213d-5a9a-491e-8622-62594c2b944d",
+    "originalId": "8fa8213d-5a9a-491e-8622-62594c2b944d",
+    "statement": "Leia o caso e avalie a imagem a seguir:\nDiana tem 25 anos e fez tratamentos para acne desde o início da adolescência. Já utilizou diversos tratamentos tópicos e orais, mas de forma intermitente e curta (menos de trinta dias); logo que melhorava, parava o cuidado. Hoje ela foi à UBS pedindo para ser encaminhada para dermatologista porque quer dar fim ao problema. Atualmente trabalha e estuda, mora com os pais, está com vacinas em dia, não tem outras queixas, já tem prática sexual e faz uso de anticoncepcional oral (ACO), mas deseja passar para dispositivo intrauterino.\nSegue foto da paciente: \n\nConsiderando todas as informações ofertadas, assinale a alternativa que apresenta corretamente a conduta adequada para o caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar à dermatologia, pois é um caso de acne grave com história de falhas de tratamento, e orientar a não trocar ainda o ACO, pois ele ajuda no tratamento da acne.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reiniciar o tratamento para acne moderada, com uso de tetraciclina oral e tratamento tópico com retinoide por sessenta dias, e solicitar Papanicolau para avaliar troca de método anticoncepcional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar o tratamento com uso de doxiciclina oral por três meses, corticoide tópico e manutenção do método anticoncepcional no primeiro momento, com reavaliação em trinta dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar o tratamento para acne leve, com uso tópico de retinoide tópico e peróxido de benzoíla por sessenta dias; caso não haja melhora, a paciente deve ser encaminhada à dermatologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso e Imagem:\nA imagem apresenta uma face com múltiplas pápulas eritematosas e pústulas distribuídas principalmente nas regiões malar e mandibular. Não são observados nódulos exuberantes, cistos ou cicatrizes profundas, o que permite classificar o quadro como acne inflamatória moderada (graus II ou III). A história clínica revela má adesão terapêutica, com tratamentos interrompidos precocemente (menos de 30 dias), impedindo a remissão da doença, já que o ciclo de renovação celular e controle bacteriano exige mais tempo.\n\nAlternativa a: Incorreta. A classificação de acne grave é reservada para casos com nódulos, cistos e alto potencial cicatricial, o que não é o quadro predominante na imagem. Além disso, na Unidade Básica de Saúde (UBS), o médico deve instituir o tratamento para acne moderada antes de encaminhar a paciente ao especialista, especialmente quando ela nunca realizou um ciclo terapêutico completo e correto.\n\nAlternativa b: Correta. Para acne moderada com componente inflamatório (pústulas), as diretrizes recomendam a associação de antibióticos orais da família das tetraciclinas (como a própria tetraciclina, doxiciclina ou limeciclina) com agentes tópicos (retinoides, peróxido de benzoíla ou ácido azelaico). O período de sessenta dias é adequado para a primeira avaliação de resposta. A solicitação do Papanicolaou é uma conduta correta de medicina preventiva e saúde da mulher na atenção primária, sendo importante realizar o rastreamento citopatológico antes da troca do método contraceptivo (inserção do DIU).\n\nAlternativa c: Incorreta. Embora a doxiciclina seja uma opção válida, o uso de corticoide tópico é formalmente contraindicado no tratamento da acne vulgar, pois seu uso pode agravar as lesões ou causar erupções acneiformes. Além disso, trinta dias é um tempo muito curto para avaliar a eficácia real do tratamento antibiótico na acne.\n\nAlternativa d: Incorreta. A conduta descrita seria indicada para acne leve (grau I), predominantemente comedônica. A paciente da foto apresenta um componente inflamatório nítido com pústulas, o que exige uma abordagem mais robusta com o uso de medicação por via oral para o controle adequado do quadro.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Miscelânea"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/530bdde8f8f8e7168238c0eeb0e80d97bd228a2aa6ea299722d9b01094d2b4cd.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_8fa8213d-5a9a-491e-8622-62594c2b944d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:29.235Z"
+  },
+  {
+    "id": "AJUDA_8fab823c-9eb6-4d4c-b23c-291d8e45359c",
+    "originalId": "8fab823c-9eb6-4d4c-b23c-291d8e45359c",
+    "statement": "Durante avaliação de rotina, uma mulher de 63 anos, assintomática, realiza ultrassonografia abdominal que identifica imagem polipoide única na vesícula biliar, medindo 11 mm, sem sinais de colelitíase. A paciente não apresenta colangite esclerosante primária ou história familiar de câncer de vesícula. Exames laboratoriais estão normais. Com base nos critérios atuais, qual deve ser a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento com ácido ursodesoxicólico e acompanhar clinicamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir a ultrassonografia abdominal em 6 meses para avaliar crescimento da lesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar ressonância magnética das vias biliares para melhor caracterização do pólipo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar colecistectomia laparoscópica eletiva devido ao risco aumentado de malignidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Observar anualmente com exames de imagem, pois pólipos < 2 cm não exigem intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O manejo dos pólipos da vesícula biliar é fundamentado principalmente no risco de transformação maligna (adenocarcinoma). A conduta é definida com base no tamanho da lesão, na presença de sintomas e em fatores de risco associados. No caso apresentado, temos uma paciente de 63 anos, assintomática, com um pólipo de 11 mm.\n\nO ponto de corte internacionalmente aceito para indicação cirúrgica em pacientes assintomáticos, sem outros fatores de risco, é de 10 mm. Pólipos maiores ou iguais a 10 mm apresentam um risco significativamente maior de malignidade, justificando a intervenção.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O ácido ursodesoxicólico é utilizado para tentar a dissolução de cálculos de colesterol radiotransparentes ou no tratamento de certas doenças colestáticas. Não tem indicação ou eficácia no tratamento de pólipos vesiculares.\n\nAlternativa b) Incorreta. O acompanhamento com ultrassonografias seriadas é indicado para pólipos menores que 10 mm em pacientes sem fatores de risco. Para uma lesão de 11 mm, a conduta expectante pode retardar o diagnóstico de um câncer da vesícula em estágio inicial.\n\nAlternativa c) Incorreta. Embora a ressonância magnética ou a ecoendoscopia possam fornecer detalhes adicionais, a ultrassonografia transabdominal já é suficiente para medir a lesão. Uma vez atingido o critério de tamanho (11 mm), a indicação cirúrgica já está estabelecida, não havendo necessidade de postergar o tratamento com outros exames de imagem.\n\nAlternativa d) Correta. De acordo com as diretrizes da Sociedade Europeia de Endoscopia Gastrointestinal (ESGE) e outras sociedades de cirurgia, pólipos maiores ou iguais a 10 mm devem ser tratados com colecistectomia, independentemente da presença de sintomas, devido ao risco de neoplasia. A idade da paciente (63 anos) reforça a conduta, pois a idade acima de 50-60 anos é considerada um fator de risco adicional para malignização.\n\nAlternativa e) Incorreta. O limite de 2 cm mencionado na alternativa está equivocado. Pólipos maiores que 20 mm (2 cm) têm um risco altíssimo de serem malignos e geralmente já se apresentam como doença invasiva. O limite de segurança para indicar a cirurgia preventiva é de 10 mm (1 cm). Observar anualmente uma lesão de 11 mm seria uma conduta negligente perante o risco de câncer.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:29.235Z"
+  },
+  {
+    "id": "AJUDA_8fbb4091-cbd3-453d-854a-289e3cc270d2",
+    "originalId": "8fbb4091-cbd3-453d-854a-289e3cc270d2",
+    "statement": "A comunicação de notícias difíceis, como a de um diagnóstico ou óbito, é um elemento da relação médico-pessoa essencial na construção de planos terapêuticos e de seguimento. Qual das alternativas a seguir descreve uma técnica CORRETA a ser executada na comunicação de uma notícia difícil?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O médico deverá utilizar linguagem de alto conteúdo emocional (como gritos ou expressão facial de preocupação) na hora de comunicar uma notícia difícil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Após comunicar uma notícia difícil, o médico deve utilizar frases empáticas ou utilizar o silêncio funcional para permitir que o paciente acomode as emoções.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A comunicação de uma má notícia deve ser realizada com termos técnicos do jargão médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A informação de óbito a familiares deverá ser feita utilizando-se de metáforas (Ex: “o paciente já não está mais entre nós).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A comunicação de notícias difíceis é uma das habilidades clínicas mais fundamentais na prática médica, sendo frequentemente avaliada em provas de residência através do Protocolo SPIKES. Esse protocolo organiza o atendimento em seis etapas para garantir que a informação seja transmitida de forma humana e eficaz.\n\nAlternativa a: Incorreta. O papel do médico é transmitir segurança, acolhimento e profissionalismo. O uso de linguagem de alto conteúdo emocional, como gritos ou demonstrações de desespero, é inadequado, pois pode aumentar o sofrimento do paciente, gerar pânico e comprometer a clareza da mensagem. O médico deve modular sua expressão facial para demonstrar empatia e seriedade, mas sem perder o equilíbrio emocional.\n\nAlternativa b: Correta. A utilização de frases empáticas é fundamental para validar a resposta emocional do paciente (etapa E do protocolo SPIKES). Já o silêncio funcional é uma técnica essencial: após a transmissão de uma notícia impactante, o médico deve calar-se para permitir que o paciente processe a informação, sinta suas emoções e recupere o fôlego antes de prosseguir com explicações técnicas ou planos terapêuticos.\n\nAlternativa c: Incorreta. A comunicação eficaz exige que o médico adapte sua linguagem ao nível de compreensão do paciente. O uso de jargões médicos (como dizer \"neoplasia com metástase\" em vez de \"câncer espalhado\") cria barreiras, gera confusão e impede que o paciente entenda a gravidade da situação e participe das decisões sobre seu tratamento.\n\nAlternativa d: Incorreta. Em situações de óbito, a clareza é a regra de ouro. O uso de metáforas ou eufemismos pode causar ambiguidade e falsas interpretações, especialmente em momentos de choque emocional ou em diferentes contextos culturais e religiosos. O médico deve ser direto e sensível, utilizando termos claros como \"faleceu\" ou \"morreu\", garantindo que a família compreendeu que a vida cessou de forma definitiva.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:29.235Z"
+  },
+  {
+    "id": "AJUDA_8fc14900-9615-4e26-b293-998abe71bf4e",
+    "originalId": "8fc14900-9615-4e26-b293-998abe71bf4e",
+    "statement": "Um paciente de 22 anos de idade foi admitido no pronto socorro após ser vítima de ferimento por arma de fogo na região toracoabdominal esquerda. Na admissão, os sinais vitais eram PA = 85 mmHg X 60 mmHg, FC = 125 bpm, FR = 28 irpm, temperatura = 36,2 °C e SatO2 = 92% em ar ambiente. Ao exame físico, observou-se orifício de entrada na região lombar esquerda, hematoma palpável e em expansão na região lombar, abdome rígido, com sinais de peritonite, hematúria macroscópica e rebaixamento progressivo do nível de consciência. Realizou tomografia computadorizada com contraste, que evidenciou laceração extensa no parênquima do rim esquerdo, estendendo-se ao córtex, à medula e ao sistema coletor, com extravasamento de contraste, hematoma perirrenal volumoso e sinais de comprometimento vascular segmentar. O rim contralateral apresentava-se normal. A respeito da lesão renal traumática, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A hematúria é um indicador de pouca importância no trauma do sistema urinário, já que o primeiro volume urinado ou a amostra de urina cateterizada pode estar diluída e atrapalhar a interpretação do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O grau de hematúria não se correlaciona necessariamente com o grau de lesão. Mas, a combinação de choque sistêmico (pressão arterial sistólica < 90 mmHg) e hematúria microscópica se associa fortemente a lesões renais graves.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pacientes sem choque e com qualquer hematúria (macroscópica ou microscópica) devem realizar exames de imagem em razão do risco elevado de lesões renais significativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A minoria das lesões renais pode ser tratada de forma não operatória. Com estadiamento apropriado da lesão renal e seleção cuidadosa, apenas lesões de baixo grau podem ser tratadas clinicamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) Incorreta. A hematúria é o sinal clínico mais frequente no trauma renal e é um indicador fundamental. Embora a ausência de hematúria não exclua lesão (como em casos de avulsão do pedículo vascular ou obstrução por coágulos), ela nunca deve ser considerada de pouca importância. O primeiro jato ou amostra cateterizada é altamente valioso para o diagnóstico inicial.\n\nAlternativa (b) Correta. Esta alternativa descreve um conceito clássico do trauma urológico: não existe uma correlação linear entre a quantidade de sangue na urina e a gravidade da lesão. Uma laceração renal grave pode não apresentar hematúria se houver interrupção do fluxo sanguíneo ou do sistema coletor. Contudo, evidências mostram que a associação de choque sistêmico (PAS < 90 mmHg) com qualquer grau de hematúria (mesmo a microscópica) é um preditor fortíssimo de lesão renal maior, sendo uma indicação absoluta de investigação imediata por imagem.\n\nAlternativa (c) Incorreta. De acordo com os protocolos do ATLS e das sociedades de urologia (AUA/EAU), pacientes adultos, vítimas de trauma contuso, que estão hemodinamicamente estáveis e apresentam apenas hematúria microscópica isolada (sem mecanismo de desaceleração brusca), geralmente não necessitam de exames de imagem, pois a probabilidade de lesões significativas é extremamente baixa. A imagem é indicada em casos de hematúria macroscópica, hematúria microscópica associada ao choque ou traumas por desaceleração.\n\nAlternativa (d) Incorreta. Atualmente, a vasta maioria das lesões renais é tratada de forma não operatória (conservadora). Com o advento de melhores exames de imagem e técnicas de angioembolização, mesmo lesões de alto grau (Graus IV e V) podem ser manejadas clinicamente, desde que o paciente esteja hemodinamicamente estável. A cirurgia é reservada para casos de instabilidade persistente, hematoma expansivo ou pulsátil durante laparotomia por outras causas, ou avulsão completa do pedículo vascular.\n\nRESUMO DO CASO: Embora o paciente do enunciado apresente um quadro grave (trauma penetrante, choque, hematúria macroscópica e lesão renal extensa), a questão solicita o conhecimento das regras gerais de conduta e diagnóstico no trauma renal, nas quais a alternativa (b) é a tecnicamente correta. No caso específico deste paciente instável com ferimento por arma de fogo e sinais de peritonite, a conduta indicada seria a laparotomia exploradora imediata.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Urologia",
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:29.235Z"
+  },
+  {
+    "id": "AJUDA_8fc771aa-6e87-4231-a1b6-4f550a275a61",
+    "originalId": "8fc771aa-6e87-4231-a1b6-4f550a275a61",
+    "statement": "Um homem jovem procura o serviço de Atenção Primária à Saúde com queixa de icterícia, colúria e acolia. Ele relata relações sexuais desprotegidas com outros homens e refere vacinação incompleta. A sorologia revelou os seguintes resultados:\n• HCV: Não reagente\n• HBsAg: Não reagente\n• Anti-HBc total: Não reagente\n• Anti-HBs: Reagente\n• Hepatite A IgG: Reagente\n• Hepatite A IgM: Reagente\n• Epstein-Barr IgG: Reagente\n• Epstein-Barr IgM: Não reagente\nCom base nessas informações, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hepatite B aguda;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hepatite C crônica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hepatite A aguda;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mononucleose infecciosa aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise Clínica e Laboratorial:\n\nO paciente apresenta um quadro clássico de síndrome ictérica (icterícia, colúria e acolia fecal), o que direciona a investigação para hepatites virais agudas ou obstruções biliares. O histórico de relações sexuais desprotegidas e vacinação incompleta reforça a hipótese infecciosa.\n\nA interpretação da sorologia é a chave para resolver a questão:\n\n1. Hepatite A: O marcador IgM é o anticorpo de fase aguda. Como o Anti-HAV IgM é reagente, o diagnóstico de Hepatite A aguda está confirmado. O Anti-HAV IgG também está reagente, o que é comum no curso da infecção aguda ou indica imunidade permanente após o quadro.\n\n2. Hepatite B: O paciente possui HBsAg não reagente e Anti-HBc total não reagente, o que descarta infecção atual ou prévia. O Anti-HBs reagente de forma isolada indica que o paciente é imunizado via vacinação, apesar de ele referir vacinação incompleta (provavelmente recebeu as doses necessárias para gerar anticorpos ou não se recorda corretamente).\n\n3. Hepatite C: O HCV não reagente descarta a infecção pelo vírus C.\n\n4. Mononucleose (Epstein-Barr): O perfil de IgG reagente com IgM não reagente indica uma infecção passada (cicatriz sorológica), e não um quadro agudo no momento.\n\nAnálise das Alternativas:\n\na) Incorreta. Para Hepatite B aguda, o HBsAg deveria estar reagente e o Anti-HBc IgM também. O padrão do paciente (apenas Anti-HBs reagente) é de vacinação.\n\nb) Incorreta. O marcador para Hepatite C (HCV) resultou não reagente, invalidando esta hipótese. Além disso, a Hepatite C raramente se manifesta de forma aguda com icterícia exuberante.\n\nc) Correta. O diagnóstico de Hepatite A aguda é dado pela presença do marcador IgM reagente em um paciente com sintomas compatíveis. Atualmente, observa-se um aumento de casos de Hepatite A em adultos jovens devido à transmissão fecal-oral relacionada a práticas sexuais específicas.\n\nd) Incorreta. Embora o vírus Epstein-Barr possa causar hepatite e icterícia, o IgM não reagente descarta a fase aguda da mononucleose infecciosa. O IgG isolado aponta apenas contato prévio com o vírus.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:16:29.235Z"
+  }
+]

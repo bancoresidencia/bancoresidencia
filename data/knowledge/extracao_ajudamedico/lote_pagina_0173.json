@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_2fefa0c0-f6e7-44a6-8a04-65f9b07c8064",
+    "originalId": "2fefa0c0-f6e7-44a6-8a04-65f9b07c8064",
+    "statement": "Em relação à reanimação cardiopulmonar em crianças, podemos afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "em crianças em PCR, deve-se tentar dois acessos venosos periféricos rapidamente antes de tentar uma via intraóssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o uso de desfibrilador externo automático (DEA) em ambientes públicos somente está indicado para pacientes adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "as características das compressões torácicas adequadas durante a RCP incluem: compressões rápidas e fortes, mínimas interrupções entre as compressões, permitir uma completa reexpansão do tórax.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a abordagem do paciente em parada cardiorrespiratória deve seguir a ordem ABC (abertura de vias aéreas, boa respiração e compressões torácicas).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sempre devemos iniciar a PCR com uma dose de adrenalina intra-traqueal e massagem cardíaca com compressões adequadas e de forma ininterruptas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. Em pediatria, o acesso vascular pode ser desafiador. As diretrizes de suporte avançado de vida em pediatria (PALS) recomendam que, se o acesso venoso periférico não for obtido rapidamente (geralmente em menos de um minuto ou após duas tentativas), estabeleça-se imediatamente o acesso intraósseo (IO). Não se deve perder tempo tentando múltiplos acessos periféricos em uma situação de emergência.\n\nAlternativa b) Incorreta. O uso do desfibrilador externo automático (DEA) é recomendado para crianças e até mesmo para lactentes (menores de um ano) quando não há um desfibrilador manual disponível. Para crianças entre 1 e 8 anos, utilizam-se preferencialmente pás pediátricas com atenuador de carga, mas, na ausência destas, o DEA comum com pás adultas pode ser utilizado.\n\nAlternativa c) Correta. Esta alternativa descreve os pilares da RCP de alta qualidade. As compressões devem ser fortes (profundidade de pelo menos um terço do diâmetro anteroposterior do tórax) e rápidas (frequência de 100 a 120 compressões por minuto), permitindo o retorno total do tórax após cada compressão (reexpansão) para garantir o enchimento cardíaco, além de minimizar ao máximo as interrupções.\n\nAlternativa d) Incorreta. Desde a atualização das diretrizes da American Heart Association em 2010, a sequência de atendimento foi alterada de ABC para CAB (Compressões, Abertura de vias aéreas e Boa ventilação). O objetivo é priorizar o início imediato das compressões torácicas para manter a perfusão de órgãos nobres, como cérebro e coração.\n\nAlternativa e) Incorreta. A via intratraqueal para administração de adrenalina é considerada a última opção, sendo utilizada apenas quando não há acesso venoso ou intraósseo disponível, devido à sua absorção errática e menor eficácia. Além disso, a massagem cardíaca só é ininterrupta se o paciente estiver com via aérea avançada (intubado); caso contrário, deve-se manter a relação compressão-ventilação (15:2 com dois socorristas ou 30:2 com um socorrista).",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  },
+  {
+    "id": "AJUDA_2feff0b8-1620-4c6c-b663-e764f63da07f",
+    "originalId": "2feff0b8-1620-4c6c-b663-e764f63da07f",
+    "statement": "A obstrução intestinal funcional corresponde ao chamado íleo paralítico porque nessas circunstâncias o intestino perde sua capacidade contrátil.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Afirmação e razão corretas e se correspondem;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Afirmação e razão corretas, mas não se correspondem;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Afirmação correta, razão falsa;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Afirmação falsa, razão correta;",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A obstrução intestinal é dividida em mecânica e funcional. Na obstrução mecânica, há um obstáculo físico impedindo a progressão do conteúdo entérico (como bridas, tumores ou volvos). Na obstrução funcional (ou adinâmica), o lúmen intestinal está desobstruído, mas o trânsito é interrompido pela ausência ou incoordenação da motilidade e da atividade propulsiva da musculatura lisa intestinal, cujo exemplo clássico é o íleo paralítico (ou íleo adinâmico). \n\nA afirmação é correta ao definir a obstrução funcional como o íleo paralítico. A razão também é correta e justifica a afirmação, pois o mecanismo fisiopatológico que define o íleo paralítico como uma obstrução funcional é justamente a perda temporária ou permanente da capacidade contrátil e peristáltica do trato gastrointestinal, gerando estase e distensão abdominal sem que haja uma barreira anatômica. Portanto, há uma relação causal direta entre a afirmação e a razão.\n\nAnálise das alternativas:\n\nAlternativa a: Correta. A afirmação define adequadamente o íleo paralítico como obstrução funcional e a razão explica de forma precisa a sua fisiopatologia (perda da atividade contrátil), havendo total correspondência e nexo de causalidade entre ambas.\n\nAlternativa b: Incorreta. Existe uma correspondência direta entre as frases, já que a perda da capacidade contrátil é a razão exata pela qual o quadro é denominado funcional (decorrente de disfunção motora, e não de barreira mecânica).\n\nAlternativa c: Incorreta. A razão é verdadeira, pois a inibição da motilidade e a perda do tônus contrátil coordenado são a base fisiopatológica do íleo paralítico.\n\nAlternativa d: Incorreta. A afirmação é verdadeira, sendo o íleo paralítico o principal representante das causas de obstrução intestinal funcional na prática clínica.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  },
+  {
+    "id": "AJUDA_2ffcb273-3b98-4d8d-b889-4a18d998551f",
+    "originalId": "2ffcb273-3b98-4d8d-b889-4a18d998551f",
+    "statement": "Mulher, 34 anos, apresenta tosse seca e dispneia há 8 semanas, associadas à lesão cutânea infiltrada em asa nasal sugestiva de lúpus pérnio. Nega febre, calafrios e sudorese noturna. Radiografia de tórax sugestiva de alargamento da região hilar, complementada por tomografia computadorizada de tórax, que revela linfadenopatia mediastinal e nódulos com distribuição perilinfática nos lobos superiores.\nA prova de função pulmonar foi compatível com distúrbio restritivo leve. Na sequência da investigação, realizou-se broncoscopia com EBUS: o lavado broncoalveolar (BAL) foi negativo para BAAR, GeneXpert e prata-metenamina de Grocott (GMS).\nA punção aspirativa transbrônquica guiada por EBUS (EBUS-TBNA) de linfonodo mediastinal demonstrou granulomas epitelioides não caseosos, com células gigantes multinucleadas e ausência de necrose.\nCom base nos dados clínicos, radiológicos e histopatológicos, o diagnóstico mais provável é de",
+    "options": [
+      {
+        "id": "A",
+        "text": "tuberculose pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "histoplasmose disseminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "poliarterite nodosa (PAN).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sarcoidose pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "carcinoma broncogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma mulher jovem com sintomas respiratórios subagudos (8 semanas) e uma lesão cutânea específica chamada lupus pernio (placas infiltradas violáceas no nariz e região malar), que é um sinal altamente sugestivo de sarcoidose. A ausência de febre, calafrios e sudorese noturna reduz a probabilidade de doenças infecciosas como a tuberculose.\n\nACHADOS RADIOLÓGICOS E HISTOPATOLÓGICOS\n\nA tomografia de tórax revela linfadenopatia mediastinal e nódulos com distribuição perilinfática nos lobos superiores, achado radiológico clássico da sarcoidose. O ponto fundamental para o fechamento do diagnóstico é o resultado da biópsia por EBUS-TBNA: presença de granulomas epitelioides NÃO caseosos (sem necrose) com células gigantes. A investigação foi completada com a exclusão de agentes infecciosos (negativo para BAAR, GeneXpert e fungos), o que é indispensável para confirmar a sarcoidose.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA: A tuberculose pulmonar é a principal causa de doença granulomatosa no Brasil, porém seus granulomas são tipicamente caseosos (com necrose central). O quadro clínico geralmente apresenta sintomas constitucionais (febre e perda de peso) e os exames de biologia molecular e baciloscopia foram negativos.\n\nb) INCORRETA: A histoplasmose é uma infecção fúngica que pode formar granulomas e causar linfadenopatia. No entanto, a pesquisa de fungos pela coloração de prata-metenamina de Grocott (GMS) foi negativa, e o quadro de lupus pernio é exclusivo da sarcoidose.\n\nc) INCORRETA: A poliarterite nodosa (PAN) é uma vasculite de vasos de médio calibre que, classicamente, poupa o pulmão. Não se manifesta com adenopatia hilar bilateral ou formação de granulomas pulmonares.\n\nd) CORRETA: A sarcoidose é uma doença multissistêmica de etiologia desconhecida caracterizada pelo acúmulo de granulomas não caseosos nos órgãos afetados. O caso preenche os três critérios diagnósticos: apresentação clínica e radiológica compatível (lupus pernio, dispneia e adenopatia hilar), evidência histológica de granulomas não caseosos e exclusão de causas alternativas.\n\ne) INCORRETA: O carcinoma broncogênico (câncer de pulmão) poderia causar linfadenopatia e dispneia, mas não explicaria a presença de granulomas organizados nem a lesão cutânea de lupus pernio. Além disso, a paciente é jovem e o padrão de nódulos perilinfáticos bilaterais é mais típico de doença intersticial do que de neoplasia primária.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  },
+  {
+    "id": "AJUDA_3004e922-c4e0-4766-a125-70a67bf9e8f8",
+    "originalId": "3004e922-c4e0-4766-a125-70a67bf9e8f8",
+    "statement": "Sobre as manifestações clínicas do herpes simples, considere as afirmativas a seguir.\n\nI. O herpes gladiatorum, uma manifestação do herpes genital em homens, ocorre mais frequentemente a partir da quarta década de vida.\nII. A erupção variceliforme de Kaposi ocorre mais comumente em indivíduos imunossuprimidos e, geralmente, relacionados ao herpesvírus 2.\nIII. A primoinfecção do herpes genital causa uma balanite, vulvite ou vaginite dolorosas, que podem durar por 2 a 3 semanas se não tratadas.\nIV. No herpes simples não genital, a primoinfecção ocorre mais comumente em crianças, com manifestações mínimas ou assintomáticas, tornando-se o indivíduo portador do vírus.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise detalhada das afirmativas sobre o Herpes Vírus Simples (HSV):\n\nAfirmativa I (Incorreta): O herpes gladiatorum não é uma manifestação de herpes genital, nem é específico de homens na quarta década de vida. Trata-se de uma infecção cutânea causada pelo HSV-1, transmitida pelo contato direto pele a pele em esportes de alta proximidade física, como o jiu-jitsu e a luta livre (wrestling). As lesões costumam aparecer na cabeça, pescoço e braços, áreas que sofrem maior atrito durante os combates.\n\nAfirmativa II (Incorreta): A erupção variceliforme de Kaposi (ou eczema herpético) não está primariamente relacionada ao estado de imunossupressão sistêmica nem ao HSV-2. Ela ocorre pela disseminação do HSV-1 sobre uma barreira cutânea previamente danificada, sendo a Dermatite Atópica o principal fator de risco. Embora possa ocorrer em imunossuprimidos, a condição é clássica em crianças com pele atópica, independentemente do status imunológico celular.\n\nAfirmativa III (Correta): A primoinfecção genital pelo HSV (geralmente HSV-2, mas crescentemente HSV-1) é caracterizada por um quadro clínico exuberante e severo. Manifesta-se com múltiplas vesículas dolorosas que evoluem para erosões e úlceras na região da vulva, vagina ou glande (balanite). Acompanha-se frequentemente de sintomas sistêmicos (febre, mal-estar) e linfonodomegalia inguinal dolorosa. Sem tratamento antiviral, o ciclo das lesões e a excreção viral podem perdurar por 2 a 3 semanas.\n\nAfirmativa IV (Correta): Para o herpes simples não genital (labial/extra-genital), a primoinfecção ocorre predominantemente na infância. Na grande maioria dos casos, ela é assintomática ou apresenta-se como uma gengivostomatite leve que passa despercebida. Após esse contato inicial, o vírus migra pelos nervos sensoriais e estabelece latência nos gânglios neurais (como o gânglio trigêmeo), tornando o indivíduo um portador vitalício capaz de apresentar reativações futuras.\n\nConclusão: Como apenas as afirmativas III e IV estão corretas, a alternativa certa é a letra (c).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Úlceras Genitais",
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  },
+  {
+    "id": "AJUDA_30212e04-8a1c-4e35-a7f0-aa5c6c2921a1",
+    "originalId": "30212e04-8a1c-4e35-a7f0-aa5c6c2921a1",
+    "statement": "Uma primigesta, com idade gestacional de 39 semanas, encontrava‑se em trabalho de parto ativo e tinha apresentação cefálica com monitorização exibindo desacelerações tardias intermitentes. Após a ruptura espontânea das membranas, foi visualizado um prolapso de cordão umbilical. Nesse momento, a paciente estava com 6 centímetros de dilatação.\n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a conduta indicada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "cardiotocografia contínua e progressão natural conforme tríplice gradiente descendente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "posicionar a mãe em Trendelenburg, remover tração do cordão com toque vaginal e realizar uma cesareana de emergência",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "instalar ocitocina em bomba endovenosa para acelerar o parto vaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "administrar antibiótico endovenoso e realizar vacuoextração via vaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar episiotomia e locar fórcipe de alívio",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "EXPLICAÇÃO DO CASO CLÍNICO:\n\nO prolapso de cordão umbilical é uma emergência obstétrica definida pela presença do cordão à frente da apresentação fetal após a ruptura das membranas. A gravidade da situação reside na compressão do cordão entre a bacia materna e o feto, o que interrompe o fluxo sanguíneo (e consequentemente a oxigenação), levando à hipóxia fetal aguda, acidose e risco iminente de óbito. No caso em questão, as desacelerações tardias já indicavam sofrimento fetal, e a dilatação de apenas 6 centímetros impede o parto vaginal imediato.\n\nANÁLISE DAS ALTERNATIVAS:\n\nALTERNATIVA A: Incorreta. A conduta expectante ou a simples monitorização não têm lugar no prolapso de cordão. Aguardar a progressão natural do trabalho de parto em uma situação de interrupção do fluxo sanguíneo fetal levaria inevitavelmente ao óbito ou a sequelas neurológicas graves por anóxia.\n\nALTERNATIVA B: Correta. Esta alternativa descreve as manobras iniciais de salvatagem e a via de parto adequada. O posicionamento da mãe em Trendelenburg (com a pelve elevada em relação à cabeça) ou em posição genupeitoral ajuda a deslocar o feto para fora da pelve por gravidade. O toque vaginal deve ser realizado imediatamente para elevar a apresentação fetal e mantê-la elevada, retirando a pressão sobre o cordão até que o feto seja extraído. Como a paciente tem apenas 6 centímetros de dilatação, a cesariana de emergência é a única via segura e rápida para o nascimento.\n\nALTERNATIVA C: Incorreta. A instalação de ocitocina aumentaria a frequência e a intensidade das contrações uterinas. Cada contração aumenta a pressão da apresentação sobre o cordão, agravando o quadro de isquemia fetal. Não se deve tentar acelerar o parto vaginal se a dilatação não for total.\n\nALTERNATIVA D: Incorreta. O uso de antibióticos não trata a causa-base do sofrimento fetal agudo. A vácuo-extração é um procedimento de parto instrumental que exige, obrigatoriamente, que o colo uterino esteja com dilatação total (10 centímetros). Com 6 centímetros, o uso de vácuo é formalmente contraindicado.\n\nALTERNATIVA E: Incorreta. O uso de fórceps também exige critérios rigorosos, incluindo a dilatação cervical completa e a apresentação fetal em planos baixos da pelve (pelo menos plano +2 de DeLee). Tentar aplicar um fórceps com 6 centímetros de dilatação causaria danos maternos severos, como rotura uterina ou lacerações cervicais extensas, além de não ser viável para o nascimento imediato.\n\nRESUMO:\nNo prolapso de cordão, o tempo é o fator determinante. Se o parto vaginal não for iminente (dilatação total), a conduta é elevar a apresentação fetal manualmente para descomprimir o cordão e realizar a cesariana de emergência imediatamente.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  },
+  {
+    "id": "AJUDA_30221a74-a746-4e65-886a-a1ba89a58141",
+    "originalId": "30221a74-a746-4e65-886a-a1ba89a58141",
+    "statement": "Mulher, 32 anos de idade, previamente hígida procura pronto atendimento com queixas de poliartralgia migratória de grandes e pequenas articulações há 10 dias, após viagem de férias. No momento refere dor e limitação de movimento em punho direito. Nega trauma e febre. Exame físico: edema, eritema e dor em punho direito. Ultrassom: tenossinovite em punho direito. Considerando o diagnóstico mais provável, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ceftriaxona",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Oxacilina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prednisona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Metotrexato",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — mulher jovem, hígida, com poliartralgia migratória que evolui para uma tenossinovite localizada após período de viagem — é extremamente característico da Infecção Gonocócica Disseminada (IGD), causada pela bactéria *Neisseria gonorrhoeae*. A IGD manifesta-se classicamente de duas formas: uma tríade de tenossinovite, dermatite (lesões cutâneas) e artralgias migratórias, ou como uma artrite séptica purulenta localizada.\n\nAnálise das alternativas:\n\na) Ceftriaxona: Esta é a alternativa correta. O tratamento de escolha para a infecção gonocócica disseminada é a ceftriaxona, uma cefalosporina de terceira geração. Devido ao aumento da resistência do gonococo a outras classes de antibióticos, a ceftriaxona tornou-se o padrão-ouro para o tratamento inicial, geralmente por via parenteral.\n\nb) Oxacilina: Incorreta. A oxacilina é utilizada para tratar infecções por *Staphylococcus aureus* sensíveis à meticilina. Embora o *S. aureus* seja a causa mais comum de artrite séptica bacteriana em geral, ele costuma causar uma monoartrite aguda e destrutiva, sem o padrão de poliartralgia migratória ou a tenossinovite característica observada neste caso.\n\nc) Prednisona: Incorreta. A prednisona é um corticoide com ação anti-inflamatória e imunossupressora. Embora a paciente apresente sinais inflamatórios (dor, edema e eritema), a história clínica aponta fortemente para uma etiologia infecciosa. O uso de corticoides não trata a infecção bacteriana e pode mascarar ou agravar o quadro.\n\nd) Metotrexato: Incorreta. O metotrexato é uma droga modificadora do curso da doença (DMARD) indicada para doenças reumatológicas crônicas, como a artrite reumatoide. Não há indicação para seu uso em quadros agudos de suspeita infecciosa, e sua ação demora semanas para se iniciar.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Artropatias Infecciosas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  },
+  {
+    "id": "AJUDA_3026bba1-3368-493b-b66f-f4336ebf7ef5",
+    "originalId": "3026bba1-3368-493b-b66f-f4336ebf7ef5",
+    "statement": "Paciente, sexo masculino, 55 anos de idade, procura o ambulatório de cirurgia geral com queixa de ferida em perna direita há 4 meses após trauma contuso. O paciente relata que sofreu trauma contuso na região anterior da perna direita, que causou perda de pele. Nega dor ou outros sintomas no momento. Ao exame físico, bom estado geral; afebril; presença de ferida de cerca de 5x5cm na região ântero-lateral da perna direita, com perda da cobertura cutânea sem exposição óssea, sem sinais flogísticos, com leito avermelhado e algumas áreas esbranquiçadas, sem tecido necrótico. Diante desse caso clínico:\n\nIndique as citocinas e/ou fatores de crescimento que estão aumentados na ferida deste paciente neste momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "TNF-alfa, IL-1 e IL-6.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "IL-1, IL-4 e IL-6.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "TNF-alfa, TGF-beta e IL-10.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "EGF, TGF-beta e IL-14.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um paciente com uma ferida de 4 meses de evolução, o que a caracteriza como uma ferida crônica. Do ponto de vista da fisiologia da cicatrização, quando uma lesão não progride para o fechamento em um período de 4 a 6 semanas, considera-se que ela está estagnada na fase inflamatória.\n\nDiferentemente das feridas agudas, nas quais a inflamação é um estágio temporário e necessário para a limpeza do leito, nas feridas crônicas ocorre um desequilíbrio persistente. Há um aumento excessivo de citocinas pró-inflamatórias e de enzimas que degradam a matriz (metaloproteinases), enquanto os fatores de crescimento estão diminuídos ou inativados.\n\nAnálise das alternativas:\n\nAlternativa A: Esta é a alternativa correta. O TNF-alfa (fator de necrose tumoral), a IL-1 (interleucina-1) e a IL-6 (interleucina-6) são os principais mediadores da resposta inflamatória aguda e sistêmica. Em feridas crônicas, essas citocinas permanecem em níveis elevados, recrutando continuamente células inflamatórias e impedindo que a ferida avance para a fase proliferativa.\n\nAlternativa B: Incorreta. Embora apresente a IL-1 e a IL-6, a alternativa inclui a IL-4. A IL-4 é uma citocina relacionada à resposta imune do tipo Th2 e possui propriedades anti-inflamatórias, auxiliando na transição para o reparo tecidual, o que não é o quadro predominante em uma ferida estagnada há meses.\n\nAlternativa C: Incorreta. O TGF-beta (fator de crescimento transformador beta) e a IL-10 são mediadores que atuam, respectivamente, na promoção da fibrose/cicatrização e na redução da inflamação. Em uma ferida crônica inflamada, a bioatividade do TGF-beta costuma estar reduzida e a IL-10 não está aumentada o suficiente para frear o processo inflamatório causado pelo TNF-alfa.\n\nAlternativa D: Incorreta. O EGF (fator de crescimento epidérmico) e o TGF-beta são essenciais para a fase de proliferação, estimulando a reepitelização e a formação de colágeno. Em feridas crônicas, esses fatores de crescimento são frequentemente degradados pelas proteases em excesso no leito da ferida, estando, portanto, com sua atividade diminuída. A IL-14 não possui papel central ou característico no processo de cicatrização de feridas cutâneas.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  },
+  {
+    "id": "AJUDA_3028ddb0-8077-481e-a880-0cf8e7ee0bec",
+    "originalId": "3028ddb0-8077-481e-a880-0cf8e7ee0bec",
+    "statement": "Por definição, a doença do refluxo gastresofágico",
+    "options": [
+      {
+        "id": "A",
+        "text": "ocorre predominantemente em afro-americanos e asiáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "é uma doença crônica de manifestações clínicas típicas e atípicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "depende da secreção ácida suprafisiológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é mais frequente em crianças e adolescentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Doença do Refluxo Gastroesofágico (DRGE) é definida como uma afecção crônica decorrente do fluxo retrógrado de conteúdo gastroduodenal para o esôfago e/ou órgãos adjacentes, acarretando um espectro variável de sintomas (esofágicos ou extraesofágicos), com ou sem lesões teciduais.\n\nAlternativa a: Incorreta. Estudos epidemiológicos demonstram que a prevalência da DRGE é significativamente maior em países ocidentais (Europa e América do Norte) do que em países asiáticos. Não há evidências de que a doença seja predominantemente maior em afro-americanos quando comparados a caucasianos nas mesmas regiões.\n\nAlternativa b: Correta. A DRGE é, por natureza, uma condição crônica que exige manejo a longo prazo. Suas manifestações são divididas em síndrome esofágica típica (caracterizada por pirose e regurgitação ácida) e síndromes extraesofágicas ou atípicas (que incluem tosse crônica, laringite por refluxo, asma brônquica e erosões dentárias).\n\nAlternativa c: Incorreta. A fisiopatologia da DRGE está relacionada principalmente a falhas nos mecanismos de barreira antirrefluxo, como os relaxamentos transitórios do esfíncter esofágico inferior, e não a uma produção excessiva de ácido (suprafisiológica). A maioria dos pacientes com refluxo possui uma secreção ácida gástrica dentro dos limites da normalidade; o problema é o contato desse ácido com a mucosa esofágica.\n\nAlternativa d: Incorreta. Embora o refluxo possa ocorrer em todas as idades, inclusive em lactentes (nos quais muitas vezes é fisiológico), a doença estabelecida é muito mais comum em adultos. A prevalência tende a aumentar com a idade, especialmente após os 40 anos, devido a fatores como obesidade, mudanças na motilidade esofágica e maior frequência de hérnias de hiato.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  },
+  {
+    "id": "AJUDA_3033cc05-c0dd-4c0f-aba9-70a05426bb4c",
+    "originalId": "3033cc05-c0dd-4c0f-aba9-70a05426bb4c",
+    "statement": "Em agosto de 2025 entrou em vigor a Lei nº 15.139/2025, que institui a Política Nacional de Humanização do Luto Materno e Parental. A lei garante acolhimento humanizado nos serviços de saúde para famílias que vivenciaram perda gestacional, óbito fetal ou óbito neonatal. Considerando as disposições legais, qual das ações abaixo envolvendo mulheres que enfrentaram perda gestacional, por óbito fetal ou neonatal, mais se adequa aos termos desta lei?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É garantida licença médica de 30 dias a partir da data da alta hospitalar após o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A puérpera pode ser alocada no alojamento conjunto, desde que em quarto separado das demais puérperas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É garantido o registro do recém-nascido natimorto incluindo nome e, se possível, impressões plantares e digitais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A alta precoce deve ser priorizada para evitar o contato prolongado da mãe com o ambiente hospitalar após o óbito fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a Política Nacional de Humanização do Luto Materno e Parental, estabelecida pela Lei nº 15.139/2025. O objetivo dessa legislação é garantir dignidade, acolhimento e reconhecimento da perda sofrida por famílias em situações de óbito fetal ou neonatal, humanizando a assistência hospitalar e os trâmites burocráticos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A lei foca no acolhimento e no suporte emocional e assistencial. As regras de afastamento laboral e licença em casos de óbito fetal (quando o parto ocorre a partir da 20ª ou 23ª semana) seguem legislações trabalhistas e previdenciárias específicas, que garantem a licença-maternidade integral em casos de natimorto, e não um período fixo de 30 dias a partir da alta hospitalar como regra geral desta política de humanização.\n\nAlternativa b) Incorreta. Um dos princípios fundamentais da humanização do luto é evitar que a mulher que perdeu seu filho seja alocada em alas de alojamento conjunto, onde teria contato direto com outras puérperas e recém-nascidos saudáveis (ouvindo choros e observando a amamentação), o que intensifica o sofrimento psíquico. A recomendação é que ela seja acomodada em área separada da obstetrícia ou em quarto privativo, conforme a estrutura da unidade.\n\nAlternativa c) Correta. A garantia do registro do natimorto com nome e a coleta de lembranças simbólicas, como as impressões plantares (dos pés) e digitais, são pilares da Lei nº 15.139/2025. Essa medida visa validar a existência daquela criança e a identidade dos pais, auxiliando no processo de elaboração do luto e conferindo dignidade ao momento da despedida.\n\nAlternativa d) Incorreta. A alta não deve ser \"precoce\" com o intuito de apenas retirar a paciente do hospital. A alta deve ser planejada, segura e ocorrer no momento em que a paciente estiver clinicamente estável e tiver recebido o suporte psicológico e social necessário. Priorizar a saída rápida pode ser interpretado como negligência ou pressa em desocupar o leito, sem garantir o acolhimento devido.\n\nGabarito: Letra (c).",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Restrição de Crescimento Fetal e Óbito Fetal",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  },
+  {
+    "id": "AJUDA_30357671-f9d1-4140-bdaf-577dbdf90822",
+    "originalId": "30357671-f9d1-4140-bdaf-577dbdf90822",
+    "statement": "Paciente do sexo feminino, 8 anos, é trazida pela mãe para avaliação médica devido a dor e distensão abdominal associada a vômitos, há 2 dias. A dor parece ser intermitente, tipo cólica, progressiva, de média intensidade. Refere ainda parada de eliminação de gases e fezes e que a paciente não urina há 6 horas. Ao exame físico a paciente se encontra em REG, hipoativa, com fascies de dor, taquicárdica, taquipneica e levemente hipotensa. Seu abdome se apresenta distendido, hipertimpânico, com RHA de luta, difusamente doloroso à palpação, sem sinais de irritação peritoneal, com cicatriz em FID devido a apendicectomia prévia há 2 anos. Sobre o caso, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de cirurgia prévia sugere fortemente que a intussuscepção deve ser a principal hipótese diagnóstica, estando indicada a tentativa de redução via colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A tomografia computadorizada com duplo contraste é bastante útil nestes casos, uma vez que o contraste venoso auxilia no diagnóstico da patologia em questão e suas possíveis complicações, e o contraste oral solúvel em água pode ser terapêutico ou preditivo da falha do tratamento conservador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A sondagem nasogástrica é contraindicada neste caso devido a relevante aumento na incidência de broncoaspiração de secreções em crianças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A evolução progressiva do quadro sugere a necessidade de laparotomia imediata pelo elevado risco iminente de isquemia intestinal, confirmável com a radiografia simples de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve uma paciente de 8 anos com sinais clássicos de obstrução intestinal mecânica: dor abdominal em cólica, vômitos, distensão, parada de eliminação de gases/fezes e ruídos hidroaéreos de luta. O antecedente de apendicectomia há 2 anos é o dado crucial, apontando para bridas (aderências pós-operatórias) como a causa mais provável da obstrução.\n\nAlternativa A: Incorreta. A principal hipótese em pacientes com história de cirurgia abdominal prévia é a obstrução por bridas ou aderências. A intussuscepção intestinal é a causa mais comum de obstrução em lactentes (3 meses a 2 anos); em crianças maiores, quando ocorre, geralmente está associada a pontos de indução anatômicos. Além disso, a conduta inicial na intussuscepção não é a colonoscopia, mas sim a redução hidrostática ou pneumática guiada por radioscopia ou ultrassonografia.\n\nAlternativa B: Correta. A tomografia computadorizada (TC) é o padrão-ouro para o diagnóstico de obstrução intestinal, permitindo identificar a localização e a causa. O contraste venoso é essencial para avaliar a vitalidade das alças e detectar complicações como a isquemia. O uso de contraste oral hidrossolúvel tem um papel triplo no manejo das bridas: ajuda a identificar se a obstrução é total ou parcial, possui efeito terapêutico (sua alta osmolaridade atrai água para o lúmen e estimula o peristaltismo) e é um preditor de sucesso do tratamento clínico (se o contraste atingir o cólon em exames subsequentes, a cirurgia geralmente pode ser evitada).\n\nAlternativa C: Incorreta. A sondagem nasogástrica é uma medida fundamental no suporte inicial desses pacientes. Ela realiza a descompressão gástrica, o que reduz o desconforto, a distensão abdominal e, principalmente, diminui o risco de vômitos e a consequente broncoaspiração, protegendo a via aérea da criança.\n\nAlternativa D: Incorreta. Embora a paciente apresente sinais de instabilidade hemodinâmica (taquicardia e hipotensão) que exigem ressuscitação volêmica imediata, a ausência de sinais de irritação peritoneal sugere que não há, obrigatoriamente, necessidade de laparotomia imediata. O protocolo inicial para obstrução por bridas em pacientes sem sinais de estrangulamento é o tratamento conservador (jejum, hidratação e descompressão). Além disso, a radiografia simples de abdome é limitada para confirmar isquemia intestinal, sendo a tomografia muito mais precisa para esse diagnóstico.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:12.330Z"
+  }
+]

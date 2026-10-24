@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_e409010b-2d3f-462a-a9ac-b988f8a439bd",
+    "originalId": "e409010b-2d3f-462a-a9ac-b988f8a439bd",
+    "statement": "Vítima de ferimento por arma branca no tórax apresenta dispneia leve. A radiografia de tórax mostra pneumotórax laminar (< 2 cm) apical, sem derrame pleural. O paciente está estável. A conduta CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Toracoscopia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Drenagem torácica em selo d'água imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observação clínica e repetição da radiografia em 6 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Toracocentese de alívio com agulha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO caso descreve um pneumotórax traumático de pequeno volume (laminar, < 2 cm) em um paciente com estabilidade hemodinâmica e sintomas mínimos (dispneia leve). Segundo os protocolos atuais de trauma, como o ATLS (Advanced Trauma Life Support), nem todo pneumotórax traumático exige drenagem imediata. \n\nAnálise das alternativas:\n\na) Incorreta. A toracoscopia é um procedimento invasivo indicado para situações específicas, como a suspeita de lesão diafragmática em ferimentos transfixantes da transição toracoabdominal ou para o controle de hemotórax retido e sangramentos persistentes. Não há indicação para um pneumotórax laminar estável.\n\nb) Incorreta. Embora a drenagem de tórax tenha sido a conduta padrão para qualquer pneumotórax traumático no passado, as evidências atuais permitem o tratamento conservador em pacientes selecionados. Se o pneumotórax for pequeno (< 2 cm), o paciente estiver estável e não for submetido à ventilação mecânica ou ao transporte aéreo, a drenagem imediata pode ser evitada.\n\nc) Correta. A conduta expectante com observação clínica rigorosa e repetição do exame de imagem em 4 a 6 horas é a escolha mais adequada para pneumotórax estáveis e pequenos. Se não houver progressão do tamanho do pneumotórax na radiografia de controle e o paciente permanecer assintomático, a conduta conservadora é mantida.\n\nd) Incorreta. A toracocentese de alívio com agulha (descompressão torácica) é o tratamento de emergência exclusivo para o pneumotórax hipertensivo, situação em que há colapso cardiovascular, hipotensão e desvio de traqueia. Realizar este procedimento em um pneumotórax laminar estável é contraindicado e pode, inclusive, causar uma lesão pulmonar iatrogênica.\n\nResumo da conduta: Paciente estável + pneumotórax < 2 cm = Observação e controle radiológico em 6 horas. Se o pneumotórax aumentar ou o paciente instabilizar, aí sim procede-se à drenagem em selo d'água.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Trauma",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  },
+  {
+    "id": "AJUDA_e40ffed2-07f1-4a2d-aca7-1bd5b186be15",
+    "originalId": "e40ffed2-07f1-4a2d-aca7-1bd5b186be15",
+    "statement": "Em relação ao tratamento das hérnias, a indicação de cirurgia emergencial é obrigatória em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia umbilical sintomática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hérnia incisional grande.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hérnia inguinal estrangulada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hérnia inguinal redutível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hérnia de hiato tipo I (deslizamento).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para entender a indicação de cirurgia emergencial nas hérnias, é fundamental distinguir entre uma hérnia que pode ser operada de forma programada e aquela que apresenta complicações agudas com risco de vida ou perda de órgão/tecido.\n\na) Incorreta. A presença de sintomas em uma hérnia umbilical, como dor leve ou desconforto, é uma indicação para tratamento cirúrgico; porém, esse procedimento deve ser agendado de forma eletiva. A emergência só ocorreria se a hérnia estivesse encarcerada (irredutível) ou estrangulada.\n\nb) Incorreta. Hérnias incisionais grandes são casos complexos que exigem planejamento pré-operatório detalhado, muitas vezes incluindo exames de imagem e preparo da musculatura abdominal. Operá-las em caráter de emergência sem necessidade (ou seja, sem obstrução ou estrangulamento) aumenta drasticamente o risco de complicações e de falha do procedimento.\n\nc) Correta. A hérnia estrangulada é a principal urgência/emergência dentro da patologia das hérnias da parede abdominal. O estrangulamento significa que o suprimento sanguíneo do conteúdo herniado (geralmente gordura ou alça intestinal) está comprometido. A isquemia pode evoluir rapidamente para necrose e perfuração, exigindo intervenção cirúrgica imediata para tentar salvar o segmento afetado ou realizar a ressecção de tecidos desvitalizados.\n\nd) Incorreta. Uma hérnia redutível é aquela em que o conteúdo retorna para a cavidade abdominal espontaneamente ou através de manobras manuais. Embora a cirurgia seja recomendada para evitar complicações futuras, não há urgência, podendo ser realizada de maneira eletiva e segura.\n\ne) Incorreta. A hérnia de hiato tipo I (deslizamento) é muito comum e frequentemente associada à Doença do Refluxo Gastroesofágico (DRGE). O tratamento inicial costuma ser clínico (mudanças de hábitos e medicamentos). A cirurgia só é indicada em casos de falha do tratamento clínico ou de complicações específicas da DRGE, sendo sempre um procedimento eletivo. As hérnias de hiato que podem cursar com emergência (como o vólvulo gástrico) são as paraesofágicas (tipos II, III e IV), mas, ainda assim, são raras.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  },
+  {
+    "id": "AJUDA_e4121bc6-7962-4cc4-918c-a509453628c8",
+    "originalId": "e4121bc6-7962-4cc4-918c-a509453628c8",
+    "statement": "Homem, 21 anos, com quadro de alucinações auditivas e delírios persecutórios é levado à emergência. Como estava desconfiado e com comportamento desafiador, optou-se por administrar 1 ampola de haloperidol IM para buscar acalmá-lo. Em 30 minutos, necessitou mais uma dose. Duas horas após ter recebido a medicação, passou a ter sensação de desconforto, angústia e desassossego, mexendo o tronco, mantendo pés e braços agitados, e ficando mais ansioso e irritado. Referia não conseguir ficar parado, pedindo por socorro. Considerando o caso apresentado, qual é a possível hipótese diagnóstica e a conduta a ser tomada, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crise de pânico – administração de benzodiazepínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acatisia – administração de benzodiazepínico/propranolol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Agitação psicótica – administração de antipsicótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Delirium hiperativo – administração de antipsicótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro inicial de psicose (alucinações e delírios) e recebeu doses repetidas de haloperidol, um antipsicótico típico de alta potência e forte bloqueador dopaminérgico D2. Após duas horas, desenvolveu um quadro de intensa agitação psicomotora, caracterizada por uma sensação subjetiva de angústia e uma necessidade física irreprimível de se movimentar (não conseguir ficar parado). Este é o quadro clássico de acatisia, um efeito colateral extrapiramidal agudo comum com o uso de neurolépticos.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nA acatisia é definida por essa dualidade: o componente subjetivo (inquietação interna, desassossego) e o componente objetivo (movimentação constante de membros e tronco). Diferentemente da agitação psicótica, o paciente com acatisia muitas vezes percebe que o incômodo é físico e pede ajuda. O tratamento de escolha envolve a redução da dose do antipsicótico (quando possível) e o uso de betabloqueadores (o propranolol é o padrão-ouro) ou benzodiazepínicos para o controle dos sintomas.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Crise de pânico – administração de benzodiazepínico: Embora o paciente esteja ansioso e angustiado, o quadro surgiu nitidamente após o uso de um bloqueador dopaminérgico e apresenta a característica motora da inquietude física. O pânico costuma vir acompanhado de sintomas autonômicos mais exuberantes (taquicardia, sudorese, sensação de morte iminente) e não é um efeito colateral esperado do haloperidol.\n\nc) Agitação psicótica – administração de antipsicótico: Esta é a \"armadilha\" diagnóstica mais perigosa. Se o médico interpretar a acatisia como uma piora da psicose e administrar mais haloperidol, os sintomas de acatisia irão se agravar drasticamente, pois a causa é justamente o bloqueio de dopamina na via nigroestriatal. A agitação psicótica geralmente é direcionada por delírios ou alucinações, enquanto na acatisia a agitação é uma necessidade física de movimento.\n\nd) Delirium hiperativo – administração de antipsicótico: O delirium é uma síndrome confusional aguda que envolve alteração do nível de consciência, desorientação e déficits de atenção, geralmente associada a condições médicas gerais ou toxicidade por substâncias. O paciente do caso mantém a consciência preservada e o quadro é claramente induzido pelo medicamento, o que afasta a hipótese de delirium. Além disso, o tratamento do delirium hiperativo muitas vezes utiliza o próprio haloperidol, o que seria contraproducente aqui.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  },
+  {
+    "id": "AJUDA_e41504e6-e6a3-4be1-ac9a-76a0ec18f2fe",
+    "originalId": "e41504e6-e6a3-4be1-ac9a-76a0ec18f2fe",
+    "statement": "São elementos fundamentais na construção de um Genograma para abordagem familiar na Atenção Primária à Saúde, exceto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Informações sociodemográficas e epidemiológicas relevantes sobre os membros da família.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No mínimo duas gerações da família, incluindo informações relevantes sobre padrões de comportamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Símbolos que representem a qualidade das relações estabelecidas entre os membros da família.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Disposição dos símbolos de forma a representar os núcleos familiares (ex. núcleo parental).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O genograma é uma ferramenta essencial na Estratégia Saúde da Família, funcionando como uma representação gráfica da estrutura e da dinâmica familiar ao longo do tempo. Para responder a essa questão, é necessário identificar qual das alternativas descreve incorretamente as regras de construção desse instrumento.\n\nAlternativa (a): Incorreta para o exceto. O genograma não é apenas uma árvore genealógica; ele deve conter informações sociodemográficas (nomes, idades, ocupações, datas de nascimento e óbito) e dados epidemiológicos ou clínicos (presença de doenças crônicas, tabagismo, alcoolismo, causas de morte) que ajudem a equipe de saúde a compreender o contexto de vida e os riscos daquela família.\n\nAlternativa (b): Correta (Gabarito). Esta alternativa contém o erro técnico que a torna a resposta da questão. De acordo com a literatura de referência na Medicina de Família e Comunidade (como os trabalhos de McGoldrick e Gerson) e as diretrizes do Ministério da Saúde, o genograma deve representar, obrigatoriamente, no mínimo TRÊS gerações da família. A análise de apenas duas gerações é considerada insuficiente para identificar padrões transgeracionais de comportamento, doenças e relacionamentos, que são o objetivo principal da ferramenta.\n\nAlternativa (c): Incorreta para o exceto. A representação da qualidade das relações é um pilar do genograma. Utilizam-se símbolos e linhas específicas para indicar se as relações são muito próximas, conflitantes, distantes ou rompidas, permitindo visualizar o suporte social e o estresse familiar.\n\nAlternativa (d): Incorreta para o exceto. A disposição espacial dos símbolos é padronizada para permitir a leitura rápida da estrutura familiar. Os membros de uma mesma geração são colocados na mesma linha horizontal, e o núcleo familiar que reside na mesma casa deve ser delimitado por uma linha (geralmente pontilhada), separando claramente o núcleo parental do núcleo de filhos e outros agregados.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  },
+  {
+    "id": "AJUDA_e41f275e-a11a-4434-b883-d5e500dc019e",
+    "originalId": "e41f275e-a11a-4434-b883-d5e500dc019e",
+    "statement": "A causa mais frequente de hiperparatireoidismo primário é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperplasia de todas as quatro glândulas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adenoma único de paratireoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Carcinoma de paratireoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adenomas duplos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O hiperparatireoidismo primário caracteriza-se pela produção excessiva e autônoma do paratormônio (PTH) por uma ou mais glândulas paratireoides, resultando em hipercalcemia. A compreensão da frequência das causas é fundamental para o diagnóstico e manejo cirúrgico.\n\nAlternativa (a) Incorreta: A hiperplasia de todas as quatro glândulas é a segunda causa mais comum, ocorrendo em aproximadamente 10% a 15% dos casos. Esta condição é frequentemente observada em pacientes com síndromes hereditárias, como a Neoplasia Endócrina Múltipla tipo 1 (MEN 1) e tipo 2A (MEN 2A).\n\nAlternativa (b) Correta: O adenoma único de paratireoide é a causa mais frequente de hiperparatireoidismo primário, sendo responsável por cerca de 80% a 85% dos casos. Trata-se de um tumor benigno solitário que secreta PTH de forma independente dos níveis de cálcio circulante. Na maioria das vezes, a conduta é a remoção cirúrgica apenas da glândula acometida.\n\nAlternativa (c) Incorreta: O carcinoma de paratireoide é uma causa extremamente rara, ocorrendo em menos de 1% dos pacientes com hiperparatireoidismo primário. Clinicamente, costuma cursar com níveis de cálcio e PTH muito elevados, além de maior gravidade dos sintomas e, eventualmente, massa cervical palpável.\n\nAlternativa (d) Incorreta: Os adenomas duplos ocorrem quando duas glândulas estão acometidas de forma independente. Embora existam, são pouco frequentes, representando apenas cerca de 4% a 5% dos diagnósticos da doença.\n\nPortanto, diante de um quadro clínico e laboratorial de hiperparatireoidismo primário, a etiologia estatisticamente mais provável é a presença de um adenoma único.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  },
+  {
+    "id": "AJUDA_e42456e5-38ee-49c0-90f2-acf594ef5561",
+    "originalId": "e42456e5-38ee-49c0-90f2-acf594ef5561",
+    "statement": "Paciente feminina, de 55 anos, veio à consulta queixando-se de perda involuntária de urina associada à urgência, além de noctúria. Negou perda aos esforços. Qual dos exames abaixo deve ser solicitado para firmar o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Urocultura",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ultrassonografia abdominal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Avaliação urodinâmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste de Valsalva",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta uma paciente com sintomas clássicos de bexiga hiperativa ou incontinência urinária de urgência (urgência miccional, perda involuntária de urina e noctúria), sem queixas de perda aos esforços. Diante de qualquer quadro de incontinência urinária de início recente ou irritabilidade vesical, o primeiro passo fundamental é descartar causas secundárias e reversíveis.\n\nAlternativa (a) Correta: A infecção do trato urinário (ITU) é um dos principais diagnósticos diferenciais e uma causa comum de sintomas de urgência e incontinência. Antes de iniciar tratamentos para bexiga hiperativa ou solicitar exames invasivos, é obrigatório realizar a urocultura (ou ao menos um exame de urina simples) para descartar um processo infeccioso que esteja mimetizando ou exacerbando os sintomas. Somente após a confirmação de urina estéril podemos prosseguir com a investigação diagnóstica de distúrbios funcionais da bexiga.\n\nAlternativa (b) Incorreta: A ultrassonografia abdominal ou de vias urinárias pode ser útil para avaliar o resíduo pós-miccional ou identificar cálculos e tumores, mas não é o exame de escolha inicial para firmar o diagnóstico de incontinência de urgência, pois não avalia a funcionalidade vesical nem descarta infecção.\n\nAlternativa (c) Incorreta: A avaliação urodinâmica é um exame invasivo que demonstra a presença de contrações involuntárias do detrusor (hiperatividade do detrusor). No entanto, não deve ser solicitada como primeira linha na propedêutica básica, especialmente sem antes excluir infecção urinária. Ela é geralmente reservada para casos refratários ao tratamento clínico, incerteza diagnóstica ou antes de procedimentos cirúrgicos.\n\nAlternativa (d) Incorreta: O teste de Valsalva é utilizado para avaliar a incontinência urinária de esforço, visando observar a perda de urina sob aumento da pressão intra-abdominal. Como a paciente negou especificamente perdas aos esforços, este teste não contribui para o diagnóstico da queixa de urgência apresentada.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  },
+  {
+    "id": "AJUDA_e42ac5ef-2b03-4aff-9656-75eaf0a07834",
+    "originalId": "e42ac5ef-2b03-4aff-9656-75eaf0a07834",
+    "statement": "Mulher, 82 anos de idade, é admitida no pronto-atendimento por piora da dispneia, ortopneia, cefaleia e náuseas há 12 horas. Antecedentes pessoais: insuficiência cardíaca com fração de ejeção de 58%, hipertensão arterial sistêmica, diabetes mellitus e fibrilação atrial paroxística. Exame físico: PA= 180/120 mmHg em ambos os membros superiores, FC = 155 bpm, FR = 35 irpm, SpO2 = 85% em ar ambiente, tempo de enchimento capilar de 4 segundos, bulhas cardíacas arrítmicas sem sopros, ausculta pulmonar com estertores crepitantes em campos médio-inferiores bilateralmente. ECG: ritmo de fibrilação atrial e presença de strain lateral de ventrículo esquerdo. Qual é a estratégia terapêutica inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ventilação invasiva, dobutamina endovenosa e furosemida endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ventilação não invasiva, dobutamina endovenosa e captopril via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ventilação invasiva, metoprolol endovenoso e furosemida endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ventilação não invasiva, nitrato endovenoso e furosemida endovenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico: A paciente apresenta um quadro de Insuficiência Cardíaca Agudamente Descompensada (ICAD) com fenótipo de Edema Agudo de Pulmão (EAP) hipertensivo. Os achados clínicos principais são dispneia grave, ortopneia, taquipneia (35 irpm), hipoxemia (SpO2 85%), hipertensão arterial importante (180/120 mmHg) e presença de estertores crepitantes em campos médios e inferiores. O ritmo de fibrilação atrial com alta resposta ventricular (155 bpm) é o provável fator desencadeante da descompensação.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A ventilação invasiva (intubação orotraqueal) não é a primeira escolha terapêutica, devendo ser reservada para casos de falha da ventilação não invasiva ou instabilidade extrema com rebaixamento do nível de consciência. A dobutamina é um inotrópico indicado para estados de baixo débito com hipotensão (choque cardiogênico), o que é o oposto do quadro desta paciente, que está hipertensa. O uso de inotrópicos em pacientes hipertensos e taquicárdicos aumenta perigosamente o consumo de oxigênio miocárdico e a pressão arterial.\n\nAlternativa b: Incorreta. Embora a ventilação não invasiva (VNI) esteja indicada, a dobutamina é contraindicada pelo perfil hipertensivo e taquicárdico, como explicado anteriormente. O uso de captopril por via oral não é adequado para o manejo de emergência do edema agudo de pulmão, pois a absorção pode ser lenta e errática em quadros críticos; a preferência é por medicações endovenosas que permitam titulação rápida.\n\nAlternativa c: Incorreta. A ventilação invasiva não é a conduta inicial. O uso de betabloqueadores endovenosos (metoprolol) é contraindicado na fase aguda de uma insuficiência cardíaca descompensada com sinais de congestão pulmonar importante. O efeito inotrópico negativo do betabloqueador pode reduzir ainda mais a contratilidade miocárdica e piorar agudamente o edema pulmonar e a troca gasosa.\n\nAlternativa d: Correta. Esta alternativa descreve o tratamento padrão para o Edema Agudo de Pulmão hipertensivo. A ventilação não invasiva (VNI) é fundamental para melhorar a oxigenação, reduzir o trabalho respiratório e diminuir a pré-carga e a pós-carga cardíacas, reduzindo a taxa de intubação. O nitrato endovenoso (como nitroglicerina ou nitroprussiato) promove vasodilatação rápida, reduzindo a pós-carga (facilitando o trabalho do ventrículo esquerdo) e a pré-carga. A furosemida endovenosa auxilia na redução da congestão pulmonar por meio de seu efeito diurético e sua ação vasodilatadora venosa inicial.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Ventilação não invasiva (VNI)",
+      "Insuficiência Cardíaca",
+      "Hipertensão Arterial Sistêmica",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  },
+  {
+    "id": "AJUDA_e42e0580-105b-42e6-bc48-3b84e8d0a62b",
+    "originalId": "e42e0580-105b-42e6-bc48-3b84e8d0a62b",
+    "statement": "Homem, 25 anos, há 6 dias com febre de início súbito (até 39° C), cefaleia, mialgia intensa e mal-estar. Após 3 dias notou lesões de pele, não pruriginosas, nas mãos e pés, com posterior desenvolvimento de petéquias, sem prurido; edema de mãos e pés, sem outras alterações. Nega contato com animais silvestres ou domésticos. Frequentemente trabalha em áreas rurais aos finais de semana e noites. Nega uso de medicamentos. Exame físico: consciente, orientado, temperatura axilar 38,5°C, PA: 100 x 60 mmHg, frequência cardíaca: 120 bpm, frequência respiratória: 24 RPM, saturação de oxigênio: 93% em ar ambiente; exantema maculopapular difuso, com presença de petéquias, sem prurido; edema de mãos e pés, sem outras alterações. Exames laboratoriais: leucócitos: 3.000 células/ul, 85% neutrófilos, plaquetas: 150.000/ul. TGO: 240 U/L (VN: 10 a 49), TGP: 160 U/L (VN: 10 a 49). Teste rápido para HIV: negativo; Teste rápido para sífilis: negativo; Teste treponêmico: negativo; IgM para toxoplasmose: negativo; IgG para toxoplasmose: positivo; IM: negativo; Radiografia de tórax: sem alterações. Considerando a principal hipótese diagnóstica, qual o tratamento indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sulfametoxazol trimetoprim.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Itraconazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doxiciclina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é altamente sugestivo de Febre Maculosa Brasileira (FMB), uma riquéttsiose causada pela bactéria Rickettsia rickettsii e transmitida pela picada do carrapato-estrela (Amblyomma sculptum). Os principais pontos que levam a esse diagnóstico são:\n\n1. Perfil epidemiológico: Paciente jovem com histórico de trabalho em áreas rurais.\n2. Clínica clássica: Início súbito de febre alta, cefaleia e mialgia intensa (pródromo inespecífico). \n3. Evolução do exantema: O aparecimento de lesões maculopapulares que se iniciam em extremidades (mãos e pés), evoluem para petéquias e progridem de forma centrípeta (para o tronco) é o sinal patognomônico da doença. O edema de mãos e pés também é um achado frequente e característico.\n4. Gravidade: O paciente apresenta sinais de alerta e instabilidade hemodinâmica (taquicardia, hipotensão limítrofe, taquipneia e queda na saturação de oxigênio), o que reforça a necessidade de tratamento imediato, já que a FMB tem alta letalidade se não tratada precocemente.\n5. Laboratório: A leucopenia com desvio à esquerda e a elevação de transaminases (TGO e TGP) são achados comuns na fase inicial da doença.\n\nAnálise das alternativas:\n\na) Incorreta. O sulfametoxazol-trimetoprim não possui atividade contra a Rickettsia rickettsii. Curiosamente, o uso de sulfonamidas em pacientes com febre maculosa pode agravar o quadro clínico, sendo contraindicado.\n\nb) Incorreta. A penicilina benzatina seria o tratamento de escolha para sífilis primária ou secundária. Embora a sífilis possa cursar com lesões palmoplantares, os testes treponêmicos e não treponêmicos do paciente resultaram negativos, descartando essa hipótese.\n\nc) Incorreta. O itraconazol é um antifúngico utilizado em micoses sistêmicas ou subcutâneas (como esporotricose ou paracoccidioidomicose). O quadro agudo, febril e exantemático descrito não condiz com uma etiologia fúngica.\n\nd) Correta. A doxiciclina é o tratamento de escolha (padrão-ouro) para a Febre Maculosa Brasileira em pacientes de qualquer idade, incluindo crianças e gestantes (em situações de risco de vida), devido à alta eficácia e redução drástica da letalidade. O tratamento deve ser iniciado imediatamente após a suspeita clínica, sem aguardar a confirmação laboratorial, dada a rapidez da progressão da doença.\n\nGabarito: Alternativa (d).",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Sindome Febril Íctero-hemorrágica",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  },
+  {
+    "id": "AJUDA_e42f6cfd-7ea4-45ae-9d6e-ecf57def83d1",
+    "originalId": "e42f6cfd-7ea4-45ae-9d6e-ecf57def83d1",
+    "statement": "Homem de 52 anos, condutor, sofre acidente automobilístico de alta energia e é transportado ao pronto-socorro inconsciente, em choque grave. A equipe do SAMU relata que o volante estava deformado, e o paciente não estava contido no veículo. Após a avaliação inicial, foi indicada laparotomia por FAST positivo em espaço de Morrison e esplenorrenal.\n\nDurante a cirurgia abdominal extensa com hemorragia moderada, o anestesista nota queda da pressão arterial do paciente, que não responde totalmente à expansão volêmica. A monitorização mostra aumento súbito da pressão venosa central (PVC) e diminuição do débito cardíaco estimado.\n\nAssinale a alternativa que indica, corretamente, qual mecanismo fisiopatológico cardíaco é o mais provável nesse contexto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência ventricular esquerda por isquemia miocárdica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tamponamento cardíaco agudo por hemopericárdio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Embolia aérea na circulação arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Choque cardiogênico por infarto perioperatório, sem elevação de PVC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Disfunção ventricular direita por sobrecarga de pós-carga (embolia pulmonar maciça).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um paciente vítima de trauma contuso de alta energia com impacto toracoabdominal direto (evidenciado pelo volante deformado e ausência de cinto de segurança). No intraoperatório, o paciente desenvolve hipotensão refratária à reposição volêmica, queda do débito cardíaco e elevação súbita da pressão venosa central (PVC). Esse conjunto de achados caracteriza um choque obstrutivo, com restrição ao enchimento diastólico ventricular.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A insuficiência ventricular esquerda isolada por isquemia miocárdica cursa primariamente com aumento da pressão de oclusão da artéria pulmonar (congestão pulmonar) e só tardiamente elevaria a PVC de forma tão súbita. Além disso, o mecanismo de trauma contuso torácico direciona a suspeita para etiologia mecânica/traumática.\n\nAlternativa b: Correta. O hemopericárdio decorrente de trauma torácico contuso gera tamponamento cardíaco agudo. O acúmulo de sangue no saco pericárdico restringe a expansão e o enchimento das câmaras cardíacas na diástole, reduzindo o volume sistólico e o débito cardíaco (causando choque e hipotensão) e gerando represamento retrógrado de sangue no sistema venoso sistêmico, o que se traduz no aumento súbito da PVC.\n\nAlternativa c: Incorreta. A embolia gasosa arterial é uma complicação rara associada a procedimentos cirúrgicos específicos ou lesões vasculares abertas de grande porte com pressão negativa, não sendo a principal hipótese para o mecanismo de desaceleração e trauma contuso apresentado.\n\nAlternativa d: Incorreta. A alternativa se contradiz com o enunciado, pois afirma que ocorreria sem elevação de PVC, enquanto o caso clínico descreve explicitamente aumento súbito da PVC.\n\nAlternativa e: Incorreta. Embora a embolia pulmonar maciça possa cursar com elevação da PVC e choque, o desenvolvimento imediato intraoperatório logo após o resgate no trauma torna a lesão cardíaca traumática direta (tamponamento) muito mais provável e condizente com a cinemática do trauma do que um tromboembolismo pulmonar agudo.\n\nGabarito: Alternativa b.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Pericardiopatias",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  },
+  {
+    "id": "AJUDA_e43892e4-65d4-492c-994c-276f35ba8da0",
+    "originalId": "e43892e4-65d4-492c-994c-276f35ba8da0",
+    "statement": "Paciente de 44 anos, eumenorreica, assintomática, realizou mamografia e ultrassom de mamas que identificaram cistos simples bilaterais menores que 5 mm e calcificações redondas isoladas bilaterais. Exame físico normal. Realizou mamoplastia redutora (cirurgia estética) cujo resultado patológico identificou, em mama direita, neoplasia lobular in situ grau 3, com a margem cirúrgica lateral coincidente. Dentre as alternativas abaixo, a melhor conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quadrantectomia a direita e radioterapia adjuvante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mastectomia direita com biópsia do llinfonodo sentinela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Biópsia do linfonodo sentinela e radioterapia adjuvante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tamoxifeno 20 mg/dia por 5 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Controle clínico e ultrassonográfico anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Neoplasia Lobular in situ (NLIS) é classicamente considerada um marcador de risco para o desenvolvimento de câncer de mama invasivo em ambas as mamas, e não necessariamente uma lesão precursora direta e localizada, como ocorre no Carcinoma Ductal in situ (CDIS). Por esse motivo, o achado incidental de NLIS em uma cirurgia estética (mamoplastia redutora) exige uma abordagem voltada para a redução de risco global e acompanhamento rigoroso.\n\nAnálise das alternativas:\n\na) Incorreta. A quadrantectomia seguida de radioterapia é o tratamento padrão para o Carcinoma Ductal in situ (CDIS) ou para o carcinoma invasivo inicial. A NLIS, por ser um marcador de risco multicêntrico e bilateral, não se beneficia de tratamentos locais agressivos como a radioterapia, que não impede o surgimento de novas lesões em outros quadrantes ou na mama contralateral.\n\nb) Incorreta. A mastectomia com biópsia de linfonodo sentinela é uma conduta excessiva para um achado de neoplasia lobular in situ. A mastectomia redutora de risco (bilateral) poderia ser discutida apenas em casos selecionados de altíssimo risco genético associado, mas não é a conduta de escolha inicial. Além disso, não há indicação de avaliação axilar (linfonodo sentinela) para lesões lobulares in situ, pois elas não possuem potencial de metastatização linfonodal.\n\nc) Incorreta. Conforme mencionado, a biópsia de linfonodo sentinela não tem papel na NLIS. A radioterapia adjuvante também não é indicada, pois a NLIS é vista como um indicador de risco para ambos os parênquimas mamários, e não uma doença que exige controle local por radiação.\n\nd) Correta. O tamoxifeno, na dose de 20 mg/dia por 5 anos, é a conduta de escolha para a quimioprevenção em pacientes com lesões de alto risco, como a Neoplasia Lobular in situ. O uso desta medicação reduz significativamente (em cerca de 50%) o risco de desenvolvimento futuro de carcinoma invasivo em ambas as mamas. Como a paciente tem 44 anos (pré-menopausa), o tamoxifeno é o modulador seletivo do receptor de estrogênio indicado.\n\ne) Incorreta. Embora o controle clínico e mamográfico/ultrassonográfico seja obrigatório para essas pacientes, o enunciado pede a \"melhor conduta\" diante do diagnóstico histopatológico de uma lesão de alto risco. Apenas observar seria uma conduta passiva; a adição da quimioprevenção com tamoxifeno oferece um benefício adicional comprovado na redução da incidência de câncer de mama invasivo.\n\nEm relação à margem coincidente mencionada no enunciado: diferentemente do CDIS, na NLIS clássica, as margens cirúrgicas comprometidas ou coincidentes não exigem reexcisão, reforçando que o tratamento não foca na margem local, mas sim na redução do risco sistêmico das mamas. O termo \"Grau 3\" ou NLIS pleomórfica pode sugerir um comportamento mais agressivo, mas em um achado incidental de mamoplastia sem lesão radiológica residual, a quimioprevenção permanece como o pilar terapêutico.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:44.724Z"
+  }
+]

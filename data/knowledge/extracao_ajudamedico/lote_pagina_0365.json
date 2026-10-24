@@ -1,0 +1,522 @@
+[
+  {
+    "id": "AJUDA_64e898c9-ab7b-474d-ba22-10941bc2bc99",
+    "originalId": "64e898c9-ab7b-474d-ba22-10941bc2bc99",
+    "statement": "Assinale a alternativa que apresenta, corretamente, a ordem de aparecimento das estruturas embrionárias em um ultrassom obstétrico inicial.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Saco gestacional, vesícula vitelínica, embrião, batimentos cardioembrionários.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Vesícula vitelínica, embrião, batimentos cardioembrionários, saco gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Batimentos cardioembrionários, saco gestacional, vesícula vitelínica, embrião.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vesícula vitelínica, batimentos cardioembrionários, embrião, saco gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Saco gestacional, embrião, batimentos cardioembrionários, vesícula vitelínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o desenvolvimento cronológico da gestação inicial observado pela ultrassonografia transvaginal, um tema frequente em provas de obstetrícia. A compreensão dessa sequência é fundamental para datar a gestação e avaliar a viabilidade embrionária.\n\nAnálise da alternativa correta:\n\nAlternativa (a): Saco gestacional, vesícula vitelínica, embrião, batimentos cardioembrionários. \nEsta é a sequência correta e cronológica. \n1. Saco gestacional: É a primeira estrutura visível, geralmente entre 4,5 e 5 semanas de gestação. Aparece como uma pequena coleção líquida anecoica dentro do endométrio.\n2. Vesícula vitelínica: Surge por volta de 5 a 5,5 semanas. Sua presença confirma que a imagem vista anteriormente é de fato um saco gestacional e que a gravidez é intrauterina.\n3. Embrião: Torna-se visível por volta da 6ª semana, inicialmente como um pequeno espessamento adjacente à vesícula vitelínica (sinal do anel de diamante).\n4. Batimentos cardioembrionários: São detectados quase simultaneamente ou logo após a visualização do embrião, geralmente quando este atinge de 2 a 5 mm de comprimento cabeça-nádega (CCN), por volta de 6 a 6,5 semanas.\n\nAnálise das alternativas incorretas:\n\nAlternativa (b): Incorreta. A vesícula vitelínica não pode aparecer antes do saco gestacional, pois ela se localiza no interior deste. O saco gestacional é sempre o primeiro sinal ultrassonográfico da gravidez.\n\nAlternativa (c): Incorreta. Os batimentos cardioembrionários são o último evento da lista a ser detectado. Iniciar a sequência por eles inverte totalmente a lógica do desenvolvimento embrionário.\n\nAlternativa (d): Incorreta. Além de colocar a vesícula vitelínica antes do saco gestacional, a alternativa sugere que o saco gestacional seria a última estrutura a aparecer, o que é biologicamente impossível na cronologia da ultrassonografia.\n\nAlternativa (e): Incorreta. Embora comece corretamente pelo saco gestacional, esta alternativa inverte a ordem da vesícula vitelínica e do embrião. Na prática clínica, a vesícula vitelínica deve ser obrigatoriamente visualizada antes que o embrião e seus batimentos possam ser identificados de forma nítida.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:42.041Z"
+  },
+  {
+    "id": "AJUDA_65020e87-4f24-4fb2-8f29-f289678f3a00",
+    "originalId": "65020e87-4f24-4fb2-8f29-f289678f3a00",
+    "statement": "Homem de 72 anos, encaminhado a ambulatório especializado, com queixa de dor epigástrica, com irradiação em faixa para região dorsal há 3 meses e perda de 8 quilogramas. Queixa-se que na última semana está com prurido, icterícia, náuseas, colúria e acolia. Refere carga tabágica de 30 maços por ano e consumo de bebida alcoólica há 35 anos. Há 15 anos, trata de dislipidemia, hipertensão arterial e diabetes mellitus. Índice de massa corporal de 30 quilogramas por metro quadrado.\nCom base na principal hipótese diagnóstica, quais exames iniciais devem ser solicitados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ultrassonografia de abdome, dosagem de aminotransferases, bilirrubinas e sorologias para hepatites.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colangiopancreatografia endoscópica retrógrada e dosagem de aminotransferases e gama GT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressonância magnética de abdome e dosagem de amilase, lipase e cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tomografia de abdome com contraste e dosagem de CA 19.9.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um paciente idoso (72 anos) com sintomas clássicos de síndrome colestática obstrutiva (icterícia, colúria, acolia fecal e prurido) associada a sinais de alarme para neoplasia (perda ponderal significativa e dor epigástrica com irradiação para o dorso). Os fatores de risco são marcantes: tabagismo pesado, etilismo, obesidade e diabetes mellitus de longa data. \n\nDiante dessa apresentação, a principal hipótese diagnóstica é o adenocarcinoma de pâncreas (especificamente na cabeça do pâncreas, dada a icterícia precoce). Em provas de residência, o binômio \"Icterícia obstrutiva + Emagrecimento + Idoso\" deve sempre direcionar o raciocínio para neoplasias periampulares.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora a ultrassonografia de abdome seja frequentemente o primeiro exame solicitado em casos de icterícia na prática clínica geral para diferenciar causas obstrutivas de não obstrutivas, a questão pede os exames iniciais com base na principal hipótese diagnóstica (neoplasia de pâncreas). Além disso, a dosagem de sorologias para hepatites visa investigar causas parenquimatosas, o que não condiz com o quadro de emagrecimento e dor dorsal sugestivos de massa sólida.\n\nAlternativa b) Incorreta. A colangiopancreatografia endoscópica retrógrada (CPER) é um procedimento invasivo e com riscos (como pancreatite pós-CPER). Atualmente, sua indicação principal é terapêutica (descompressão biliar com colocação de stent ou retirada de cálculos) e não puramente diagnóstica. Para o diagnóstico e estadiamento da neoplasia, exames de imagem não invasivos são preferenciais.\n\nAlternativa c) Incorreta. A ressonância magnética (ou colangiorressonância) é um excelente exame para avaliar a via biliar, mas a tomografia computadorizada (TC) de abdome com protocolo para pâncreas ainda é o padrão-ouro inicial para o diagnóstico e avaliação de ressecabilidade. As dosagens de amilase e lipase são úteis na suspeita de pancreatite aguda, e o cálcio para avaliar causas metabólicas, o que não é o foco diante da suspeita de câncer.\n\nAlternativa d) Correta. A tomografia de abdome com contraste (especialmente a TC multislice com protocolo pancreático) é o melhor exame inicial para confirmar a presença de massa pancreática, avaliar a relação do tumor com vasos importantes (estadiamento) e detectar metástases. O CA 19.9 é o marcador tumoral de escolha para o adenocarcinoma de pâncreas; embora não seja usado isoladamente para diagnóstico (devido a falsos negativos em pacientes Lewis negativos), ele possui grande valor prognóstico e de seguimento após o tratamento.\n\nGABARITO: ALTERNATIVA D.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:42.041Z"
+  },
+  {
+    "id": "AJUDA_65088530-e142-49c7-8a19-bc2ab9caf545",
+    "originalId": "65088530-e142-49c7-8a19-bc2ab9caf545",
+    "statement": "- O Hospital Alberto Urquíza Wanderley iniciou, em 2024, um programa de vigilância para doenças respiratórias crônicas entre os pacientes atendidos no ambulatório de pneumologia. O objetivo era identificar padrões epidemiológicos associados a fatores modificáveis, como tabagismo, exposição ocupacional e condições ambientais. Como parte da análise inicial, a equipe de epidemiologia decidiu verificar se havia associação entre o hábito de fumar e a ocorrência de bronquite crônica na população atendida. Para isso, foram revisados 200 prontuários consecutivos de pacientes avaliados nos últimos três meses, todos acima de 18 anos e sem diagnóstico prévio de doença pulmonar obstrutiva grave.\nApós análise dos registros médicos e questionários padronizados preenchidos pelos pacientes, obtiveram-se os seguintes dados:\nO objetivo da equipe é determinar se existe associação estatisticamente significativa entre tabagismo e bronquite crônica nessa amostra de pacientes atendidos no hospital. Qual teste estatístico deve ser utilizado para essa análise?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Correlação de Pearson",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teste t de Student para amostras independentes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste exato de Fisher",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste qui-quadrado de independência",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Teste de Mann-Whitney",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é identificar a natureza das variáveis envolvidas no estudo. Temos duas variáveis qualitativas (categóricas) nominais: o hábito de fumar (Tabagista ou Não-tabagista) e a presença de bronquite crônica (Com Bronquite ou Sem Bronquite). Os dados estão organizados em uma tabela de contingência 2x2, conforme mostrado na imagem, que relaciona as frequências de cada grupo.\n\nQuando o objetivo é comparar proporções ou verificar a associação entre duas variáveis categóricas em amostras independentes, o teste estatístico de escolha é o Teste Qui-quadrado de Independência.\n\nAnálise das alternativas:\n\na) Correlação de Pearson: Incorreta. Este teste é utilizado para avaliar a força e a direção da relação linear entre duas variáveis quantitativas contínuas (como peso e altura), e não para variáveis categóricas.\n\nb) Teste t de Student para amostras independentes: Incorreta. É utilizado para comparar as médias de uma variável quantitativa entre dois grupos independentes (por exemplo, comparar a média da pressão arterial entre homens e mulheres). Na questão, não estamos comparando médias, mas sim frequências/proporções.\n\nc) Teste exato de Fisher: Incorreta. Embora também seja usado para tabelas de contingência 2x2 com variáveis categóricas, o teste de Fisher é indicado para amostras muito pequenas, especificamente quando os valores esperados em qualquer uma das células da tabela são menores que 5. Observando a imagem, as frequências observadas são 42, 58, 18 e 82, o que torna o Qui-quadrado perfeitamente aplicável.\n\nd) Teste qui-quadrado de independência: Correta. É o teste padrão para verificar se existe associação estatisticamente significativa entre duas variáveis qualitativas, comparando as frequências observadas na tabela com as frequências esperadas caso não houvesse associação.\n\ne) Teste de Mann-Whitney: Incorreta. É um teste não-paramétrico utilizado para comparar as distribuições de uma variável quantitativa ou ordinal entre dois grupos independentes. É o substituto do Teste t de Student quando os dados não seguem uma distribuição normal.\n\nPortanto, diante de uma tabela 2x2 com frequências adequadas relacionando variáveis categóricas, o Teste Qui-quadrado de Independência é a ferramenta correta.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/980041fef1eed21f47891429228cdc81d9bc168cac0521095c243ad26291892c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_65088530-e142-49c7-8a19-bc2ab9caf545_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:42.513Z"
+  },
+  {
+    "id": "AJUDA_6508a023-635a-4396-af85-98476c21533a",
+    "originalId": "6508a023-635a-4396-af85-98476c21533a",
+    "statement": "Mulher de 45 anos comparece ao atendimento ginecológico relatando lesões vulvares dolorosas há três dias, associadas a sensação de queimação, ardência e fisgadas no local. Refere que inicialmente surgiram bolhas, que evoluíram para essas feridas. Informa ter apresentado cinco episódios semelhantes no último ano. Ao exame, observa-se uma lesão ulcerada típica.\n\nConsiderando a principal hipótese diagnóstica, qual é o tratamento indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar o tratamento para o episódio atual com aciclovir 200mg, por via oral, 3 vezes ao dia por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar terapia supressiva com aciclovir 400mg, por via oral, 2 vezes ao dia por até 12 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar o uso de valaciclovir 500mg, por via oral, 2 vezes ao dia por 5 dias, sem necessidade de manutenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar o tratamento para o episódio atual com famciclovir 250mg, por via oral, 3 vezes ao dia por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE CLÍNICA\n\nO quadro clínico de vesículas que evoluem para úlceras vulvares dolorosas, precedidas por ardor e queimação, é característico de Herpes Simples Genital. A imagem corrobora o diagnóstico ao mostrar múltiplas úlceras superficiais, agrupadas, com fundo amarelado (fibrina), localizadas na região vulvar. O ponto determinante para a conduta nesta questão é a frequência das recidivas: a paciente apresenta 6 episódios no último ano (5 anteriores relatados mais o episódio atual). Segundo os protocolos de Infecções Sexualmente Transmissíveis (IST), a indicação de terapia supressiva deve ser considerada para pacientes que apresentam 6 ou mais episódios por ano, com o objetivo de reduzir a frequência das crises e a transmissão viral.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. Para o tratamento de um episódio agudo de recorrência com aciclovir 200mg, a posologia correta seria de 5 vezes ao dia por 5 dias. A administração apenas 3 vezes ao dia é insuficiente. Além disso, esta alternativa ignora a necessidade de terapia supressiva diante da alta taxa de recorrência da paciente.\n\nAlternativa B: Correta. Esta é a conduta de escolha para pacientes com alta frequência de recidivas (6 ou mais episódios ao ano). O esquema de aciclovir 400mg, via oral, duas vezes ao dia, funciona como terapia supressiva. O tratamento deve ser mantido por um período de 6 a 12 meses, podendo ser prolongado conforme a resposta clínica e o impacto na qualidade de vida da paciente.\n\nAlternativa C: Incorreta. Embora o valaciclovir 500mg, 2 vezes ao dia por 5 dias, seja um esquema eficaz para tratar o episódio agudo de herpes recorrente, a alternativa peca ao afirmar que não há necessidade de manutenção. Devido ao histórico de 6 crises em um ano, a terapia de manutenção (supressiva) é fundamental.\n\nAlternativa D: Incorreta. O tratamento com famciclovir por 10 dias é indicado para o primeiro episódio de herpes genital (primoinfecção), que possui um curso clínico mais longo e severo. Para episódios recorrentes, o tempo de tratamento é menor (geralmente 5 dias) e, novamente, a alternativa falha por não abordar a supressão necessária para o caso.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7509ca1f6158e935a0310062d6ca54fa44d6bdd9390eb131695727668bcd6fd5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_6508a023-635a-4396-af85-98476c21533a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:42.911Z"
+  },
+  {
+    "id": "AJUDA_650ab8a6-6247-4891-9ec5-3c86a46ee418",
+    "originalId": "650ab8a6-6247-4891-9ec5-3c86a46ee418",
+    "statement": "Gestante com hipertensão crônica sem uso de medicação inicia pré-natal com 12 semanas de gestação. Refere ter apresentado pré-eclâmpsia nas duas gestações anteriores, com interrupção da gravidez com 33 e 31 semanas. Visando à prevenção de novo quadro de pré-eclâmpsia, a medicação a ser prescrita é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "aspirina em baixa dose",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "sulfato de magnésio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hidralazina venosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "metildopa oral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a profilaxia da pré-eclâmpsia (PE) em uma gestante com alto risco clínico. A paciente apresenta dois critérios de risco elevado: diagnóstico de hipertensão arterial crônica e histórico de pré-eclâmpsia grave em gestações anteriores (com partos prematuros antes de 34 semanas).\n\nAlternativa (a): Correta. O uso de aspirina em baixa dose (variando de 81 a 150 mg/dia, dependendo do protocolo adotado) é a intervenção de escolha para reduzir o risco de desenvolvimento de pré-eclâmpsia em pacientes de alto risco. A medicação deve ser iniciada idealmente entre a 12ª e a 16ª semana de gestação. Seu mecanismo de ação na prevenção da PE envolve a inibição da síntese de tromboxano A2, o que melhora a perfusão placentária e reduz a inflamação endotelial.\n\nAlternativa (b): Incorreta. O sulfato de magnésio é utilizado para a prevenção e tratamento de convulsões em pacientes que já apresentam pré-eclâmpsia com sinais de gravidade ou eclâmpsia estabelecida. Ele é um medicamento de uso hospitalar para situações agudas e não possui indicação como profilaxia para evitar o surgimento da doença no início da gravidez.\n\nAlternativa (c): Incorreta. A hidralazina venosa é um vasodilatador potente indicado para o tratamento de emergências hipertensivas na gestação (picos pressóricos acima de 160x110 mmHg). Ela serve para baixar a pressão rapidamente e evitar complicações maternas imediatas, como o AVC, mas não previne a fisiopatologia da pré-eclâmpsia.\n\nAlternativa (d): Incorreta. A metildopa é um anti-hipertensivo de ação central usado para o controle da pressão arterial crônica durante a gestação. Embora seja a droga de escolha para manter os níveis tensionais controlados, o tratamento da hipertensão em si não impede que a paciente desenvolva pré-eclâmpsia sobreposta. Portanto, ela trata o sintoma (hipertensão), mas não atua na prevenção da doença trofoblástica.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:42.911Z"
+  },
+  {
+    "id": "AJUDA_650b4814-ffca-4133-b86c-972194a71331",
+    "originalId": "650b4814-ffca-4133-b86c-972194a71331",
+    "statement": "Código de Ética Médica contém as normas que devem ser seguidas pelos médicos no exercício de sua profissão, inclusive nas atividades relativas a ensino, pesquisa e administração de serviços de saúde, bem como em quaisquer outras que utilizem o conhecimento advindo do estudo da medicina. Segundo o Código de Ética Médica, é vedado ao médico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Recusar-se a atender paciente encaminhado pela regulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Garantir sigilo profissional mesmo após a morte do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Metodizar condutas baseadas em protocolos reconhecidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Participar de pesquisa com seres humanos com consentimento livre e esclarecido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Interromper o atendimento por falta de pagamento quando não houver risco iminente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. Embora o Código de Ética Médica (CEM) preveja a autonomia profissional em seu Artigo VII (o médico não é obrigado a prestar serviços a quem não deseje), essa autonomia não é absoluta. Em sistemas de saúde organizados, como o SUS ou redes conveniadas, a recusa em atender um paciente encaminhado pela regulação sem uma justificativa técnica ou ética válida pode ser interpretada como descumprimento de dever assistencial, especialmente se o médico for o único disponível ou se a recusa implicar em prejuízo ao acesso do paciente à saúde.\n\nAlternativa b) Incorreta. Garantir o sigilo profissional mesmo após a morte do paciente não é uma vedação, mas sim um dever obrigatório do médico. De acordo com o Artigo 73 do CEM, o sigilo deve ser mantido mesmo que o fato seja de conhecimento público ou que o paciente tenha falecido, salvo por justa causa, dever legal ou autorização por escrito dos responsáveis.\n\nAlternativa c) Incorreta. Metodizar condutas com base em protocolos reconhecidos é uma prática incentivada e correta. O médico deve utilizar o melhor do progresso científico em benefício do paciente e a utilização de protocolos baseados em evidências ajuda a garantir a segurança e a eficácia do tratamento, não constituindo qualquer tipo de proibição ética.\n\nAlternativa d) Incorreta. Participar de pesquisas com seres humanos é uma atividade permitida e regulamentada pelo CEM (Capítulo XII). O requisito fundamental para que a pesquisa seja ética é justamente a obtenção do consentimento livre e esclarecido do participante, além da aprovação por comitês de ética em pesquisa. Portanto, é uma atividade permitida e não vedada.\n\nAlternativa e) Correta. Esta alternativa baseia-se no princípio de que a medicina não pode ser exercida como comércio (Princípios Fundamentais, IX) e na proibição do abandono de paciente (Artigo 71). Segundo o Artigo 94 do CEM, é vedado ao médico interromper a assistência por falta de pagamento em casos de urgência e emergência. No entanto, o entendimento ético geral, amparado pelos Artigos 47 e 71, é de que o médico não pode interromper um atendimento em curso de forma abrupta e injustificada apenas por questões financeiras, mesmo em casos eletivos (sem risco iminente), sem que tenha havido a comunicação prévia ao paciente e a garantia de que a continuidade do tratamento seja assumida por outro profissional ou instituição. A interrupção sumária por falta de pagamento, sem o devido processo de encerramento da relação médico-paciente, configura abandono, o que é vedado pelo código.\n\nGABARITO: LETRA (E)",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:42.911Z"
+  },
+  {
+    "id": "AJUDA_6511cea9-18c7-475f-870c-18052bcdec0c",
+    "originalId": "6511cea9-18c7-475f-870c-18052bcdec0c",
+    "statement": "Um menino de 2 anos de idade, previamente saudável, apresenta febre e tosse há três dias, sendo diagnosticado com pneumonia adquirida na comunidade sem sinais de gravidade. Segundo o protocolo da SBP (2022), o tratamento antimicrobiano de primeira escolha é",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amoxicilina oral em dose de 50 mg/kg/dia por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ceftriaxona intramuscular por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Azitromicina oral por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Clindamicina oral em dose de 30 mg/kg/dia por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Claritromicina oral por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tema central desta questão é o tratamento ambulatorial da Pneumonia Adquirida na Comunidade (PAC) em pediatria, fundamentado nas diretrizes da Sociedade Brasileira de Pediatria (SBP).\n\nPonto fundamental: Em crianças acima de 2 meses de idade, o principal agente etiológico bacteriano da pneumonia é o Streptococcus pneumoniae (pneumococo). Por esse motivo, o tratamento deve ser direcionado para cobrir este patógeno.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): De acordo com o documento científico da SBP (2022), a amoxicilina por via oral é o antimicrobiano de primeira escolha para crianças com PAC sem sinais de gravidade tratadas ambulatorialmente. A dose recomendada é de 50 mg/kg/dia, dividida em duas ou três tomadas diárias. O tempo de tratamento preconizado para casos não complicados é de 7 dias, podendo variar de 5 a 10 dias conforme a evolução clínica.\n\nAlternativa B (Incorreta): A ceftriaxona é uma cefalosporina de terceira geração de uso parenteral (EV ou IM). Seu uso é reservado para pacientes hospitalizados, casos de falha terapêutica na primeira linha, pneumonia com sinais de gravidade ou quando há impossibilidade de ingestão por via oral. Não é a primeira escolha para PAC sem sinais de gravidade.\n\nAlternativa C (Incorreta): A azitromicina é um macrolídeo. Esta classe de antibióticos é indicada principalmente quando há suspeita de pneumonia atípica (causada por Mycoplasma pneumoniae ou Chlamydophila pneumoniae), o que é mais frequente em crianças maiores de 5 anos de idade. Em uma criança de 2 anos, o foco deve ser o pneumococo, para o qual a amoxicilina é superior.\n\nAlternativa D (Incorreta): A clindamicina não é medicação de primeira linha para PAC comunitária típica. Ela é geralmente utilizada em casos de suspeita de pneumonia estafilocócica (como em casos de complicações como abscesso pulmonar ou em regiões com alta prevalência de MRSA comunitário) ou como alternativa em pacientes com alergia grave à penicilina.\n\nAlternativa E (Incorreta): Assim como a azitromicina, a claritromicina é um macrolídeo indicado para germes atípicos. Além de não ser a primeira escolha para a faixa etária de 2 anos, o tempo de 10 dias e o espectro de ação não condizem com a recomendação inicial da SBP para casos típicos de PAC.\n\nResumo do tratamento para prova: \nPaciente hígido, sem sinais de gravidade, com suspeita de pneumonia bacteriana típica (febre alta, tosse, taquipneia, achados focais no exame físico) -> Amoxicilina oral 50 mg/kg/dia por 7 dias.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:42.911Z"
+  },
+  {
+    "id": "AJUDA_65295cf7-2000-4ae3-8959-00c465e5d0b4",
+    "originalId": "65295cf7-2000-4ae3-8959-00c465e5d0b4",
+    "statement": "Uma menina de 18 anos é trazida pelos pais devido a quadro de confusão mental e história de duas semanas de sede intensa e perda de 3 quilos. Sinais vitais na admissão: pressão arterial: 92/67mmHg; frequência cardíaca: 108/min; frequência respiratória: 30/min. Ela se apresentava desidratada. Foi iniciado expansão com fluídos. Qual a próxima terapia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bicarbonato de sódio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reposição de fósforo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reposição de potássio",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Insulina regular em bomba de infusão",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico de sede intensa, perda de peso, confusão mental, taquipneia (frequência respiratória de 30/min), hipotensão e taquicardia sugere o diagnóstico de Cetoacidose Diabética (CAD). Os exames laboratoriais confirmam a condição: glicemia muito elevada (870 mg/dL), cetonemia positiva e acidose metabólica (pH 7,10 e bicarbonato 10 mEq/L). \n\nDe acordo com os protocolos de manejo da CAD, após o início da expansão volêmica, o próximo passo crucial é avaliar o nível de potássio antes de iniciar a insulinoterapia.\n\nAnálise das alternativas:\n\na) Incorreta. O bicarbonato de sódio só é indicado no tratamento da cetoacidose diabética se o pH arterial estiver abaixo de 6,9. Como a paciente apresenta um pH de 7,10, a reposição de bicarbonato não está indicada e pode ser prejudicial, causando acidose paradoxal do sistema nervoso central e piora da hipocalemia.\n\nb) Incorreta. A reposição de fósforo não é realizada de forma rotineira. Ela é considerada apenas em casos de hipofosfemia grave (geralmente abaixo de 1,0 mg/dL) ou quando há evidência de disfunção muscular respiratória ou cardíaca. O valor de 2,8 apresentado na tabela está próximo da normalidade e não justifica a intervenção imediata como prioridade.\n\nc) Correta. Ao observar a tabela de exames, nota-se que o potássio da paciente é de 3,1 mEq/L, estando abaixo do limite inferior da normalidade. O protocolo de CAD determina que, se o potássio estiver abaixo de 3,3 mEq/L, a insulina NÃO deve ser iniciada. O potássio deve ser reposto primeiro. Isso ocorre porque a insulina promove a entrada de potássio para dentro das células, o que causaria uma queda ainda mais brusca nos níveis séricos, podendo levar a arritmias fatais e parada cardiorrespiratória. Portanto, a reposição de potássio é a terapia imediata necessária antes de qualquer outra medida.\n\nd) Incorreta. Embora a insulina regular em bomba de infusão seja o tratamento definitivo para reverter a cetogênese na CAD, ela está contraindicada neste momento específico devido ao valor do potássio (3,1 mEq/L). A insulina só deve ser iniciada após o potássio ser reposto e atingir um valor acima de 3,3 mEq/L para garantir a segurança da paciente.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios do Potássio",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b0ec0b50496ac37f372ba2a9383a73b81efeedec1c92d7210e152eb1be22d299.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_65295cf7-2000-4ae3-8959-00c465e5d0b4_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:43.207Z"
+  },
+  {
+    "id": "AJUDA_652e2440-df5b-4724-b10a-c4b3949c6fb1",
+    "originalId": "652e2440-df5b-4724-b10a-c4b3949c6fb1",
+    "statement": "Homem de 68 anos, com quadro de perda de consciência após picada de abelha, é levado a uma Unidade de Pronto Atendimento ainda confuso e com falta de ar. Vem realizando acompanhamento por hipertensão arterial, insuficiência cardíaca de fração de ejeção reduzida e glaucoma. Faz uso de propranolol, enalapril e espironolactona. O exame físico revela: paciente sonolento e confuso (escala de coma de Glasgow 13); presença de estridor inspiratório; PA 76 x 42 mmHg; FC 54 bpm; FR 28 irpm; temperatura axilar 35,9 °C e glicemia capilar 102 mg/dL. Após administração de 0,5 mg de adrenalina intramuscular, o paciente mantém o quadro descrito.\nQual é a próxima conduta medicamentosa para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glucagon.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Atropina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dopamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Trata-se de anafilaxia grave, com acometimento respiratório (estridor inspiratório, taquipneia), cardiovascular (hipotensão importante) e neurológico (rebaixamento de consciência), refratária à adrenalina intramuscular. O ponto-chave é o uso de propranolol, um betabloqueador não seletivo. O glaucoma reforça essa ideia, pois esses pacientes podem usar colírio de timolol, outro betabloqueador com absorção sistêmica.\n\nPor que o betabloqueador muda a conduta:\nO betabloqueio reduz a resposta à adrenalina. Isso aumenta o risco de anafilaxia grave e prolongada, com hipotensão e broncoespasmo refratários. Também explica a bradicardia relativa (FC de 54 bpm diante de choque), sinal que deve chamar a atenção. Além disso, com receptores beta bloqueados, a adrenalina tende a exercer efeito alfa predominante, com vasoconstrição e bradicardia reflexa, sem os benefícios beta (inotropismo, cronotropismo e broncodilatação).\n\nO glucagon ativa a adenilato ciclase por um receptor próprio, independente do receptor beta-adrenérgico. Assim, aumenta o AMPc intracelular e produz efeito inotrópico e cronotrópico positivo, além de algum relaxamento da musculatura lisa. Por isso é a medicação indicada na anafilaxia refratária à adrenalina em usuários de betabloqueador.\n\nDose habitual: 1 a 5 mg IV em 5 minutos, seguida de infusão de 5 a 15 mcg/min conforme a resposta. Náuseas e vômitos são efeitos adversos comuns, o que exige proteção da via aérea, sobretudo neste paciente com Glasgow 13.\n\nMedidas associadas: manejo da via aérea (estridor indica edema de laringe e possível necessidade de intubação precoce), oxigênio, decúbito com elevação de membros inferiores e expansão volêmica vigorosa com cristaloide. Novas doses de adrenalina ou adrenalina em infusão contínua continuam fazendo parte do manejo, mas a questão pede a conduta específica para o fator que explica a refratariedade.\n\nAnálise das alternativas:\n\na) Glucagon – CORRETA. É o tratamento de escolha na anafilaxia refratária em usuários de betabloqueador, pois contorna o bloqueio beta-adrenérgico e restaura inotropismo e cronotropismo.\n\nb) Atropina – INCORRETA. Pode ser usada em bradicardia sintomática, mas não trata o mecanismo central do quadro: a vasodilatação, o extravasamento capilar e a refratariedade à adrenalina causados pelo betabloqueio. Não reverte o choque anafilático nem o edema de via aérea.\n\nc) Adrenalina – INCORRETA como resposta. A adrenalina segue sendo a base do tratamento da anafilaxia e pode ser repetida a cada 5 a 15 minutos ou feita em infusão. Porém, o enunciado destaca a falha da adrenalina em paciente betabloqueado. Nesse cenário, insistir apenas nela tende a ser pouco eficaz, e a conduta diferencial esperada é o glucagon.\n\nd) Dopamina – INCORRETA. Age em parte por receptores beta-1, que estão bloqueados, e não é vasopressor de escolha no choque anafilático. Ela tem mais efeitos arritmogênicos e não supera a adrenalina. Em choque refratário, preferem-se adrenalina em infusão e, como adjuvantes, noradrenalina ou vasopressina, sempre associadas ao glucagon no usuário de betabloqueador.\n\nResposta: alternativa A (glucagon).",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Anafilaxia e Urticária",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:43.207Z"
+  },
+  {
+    "id": "AJUDA_653d8b43-3339-47b9-8375-9c46ae9b179b",
+    "originalId": "653d8b43-3339-47b9-8375-9c46ae9b179b",
+    "statement": "Quando se decide pela indução do trabalho de parto, é de fundamental importância a avaliação clínica das condições de maturidade do colo uterino. Para isso, utiliza-se o Índice de Bishop, que avalia, dentre outras coisas,",
+    "options": [
+      {
+        "id": "A",
+        "text": "consistência do colo, posição do colo e ângulo subpúbico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "altura da apresentação, integridade das membranas ovulares e dilatação do colo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ângulo subpúbico, dilatação do colo e esvaecimento do colo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "esvaecimento do colo, consistência do colo e altura da apresentação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "posição do colo, integridade das membranas ovulares e dilatação do colo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Índice de Bishop é uma ferramenta clínica utilizada para avaliar a maturidade do colo uterino e predizer o sucesso da indução do trabalho de parto. O escore analisa cinco parâmetros ao toque vaginal: dilatação cervical, esvaecimento (ou apagamento), consistência do colo, posição do colo e altura da apresentação fetal em relação aos planos de De Lee.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A consistência e a posição do colo compõem o índice, mas o ângulo subpúbico é um dado de pelvimetria clínica (avaliação da bacia óssea), não fazendo parte do escore de Bishop.\n\nAlternativa b: Incorreta. A altura da apresentação e a dilatação cervical são parâmetros verdadeiros, porém a integridade das membranas ovulares (bolsa rota ou íntegra) não é avaliada no Índice de Bishop.\n\nAlternativa c: Incorreta. Dilatação e esvaecimento pertencem ao índice, mas o ângulo subpúbico é uma medida pelvimétrica.\n\nAlternativa d: Correta. Esvaecimento, consistência cervical e altura da apresentação são três dos cinco critérios avaliados pelo Índice de Bishop.\n\nAlternativa e: Incorreta. Posição e dilatação do colo estão corretas, mas a integridade das membranas ovulares não integra o cálculo do escore.\n\nPortanto, a alternativa correta é a letra d.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Indução do Parto e Pós-Datismo"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:43.207Z"
+  }
+]

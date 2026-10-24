@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_3b783787-9c35-4160-a280-2049b70268b4",
+    "originalId": "3b783787-9c35-4160-a280-2049b70268b4",
+    "statement": "Recém-nascido apresenta meato uretral ventral, curvatura peniana ventral (chordee) e prepúcio dorsal excessivo. O diagnóstico e a contraindicação associada são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Epispádia; contraindicação à cateterização vesical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipospádia; contraindicação à circuncisão (postectomia).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Fimose fisiológica; contraindicação à retração prepucial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Válvula de uretra posterior; contraindicação à cistografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da Questão:\n\nO quadro clínico descrito – meato uretral em posição ventral (na face inferior do pênis), curvatura peniana para baixo (chordee) e prepúcio redundante na região dorsal (conhecido como capuz dorsal) – compõe a tríade clássica da hipospadia. Esta é uma das malformações congênitas genitais mais comuns no sexo masculino.\n\nAlternativa A: Incorreta. Na epispadia, o meato uretral abre-se na face dorsal (superior) do pênis, e não na ventral. Esta condição é menos comum que a hipospadia e geralmente está associada ao complexo extrofia vesical-epispadia. Não há contraindicação absoluta à cateterização vesical, embora ela possa ser tecnicamente difícil.\n\nAlternativa B: Correta. O diagnóstico é hipospadia. A principal orientação e contraindicação formal em recém-nascidos com esta condição é a não realização da circuncisão (postectomia) ou qualquer procedimento que remova o prepúcio. Isso ocorre porque a pele do prepúcio dorsal é ricamente vascularizada e essencial para ser utilizada como retalho ou enxerto nas cirurgias de reconstrução da uretra (uretroplastia) e correção da curvatura, realizadas geralmente após os 6 meses de vida.\n\nAlternativa C: Incorreta. A fimose fisiológica é a aderência natural do prepúcio à glande, presente na grande maioria dos recém-nascidos. Ela não apresenta alteração na posição do meato uretral nem curvatura peniana. Embora a retração prepucial forçada deva ser evitada para não causar traumas, o quadro clínico descrito é de uma malformação mais complexa.\n\nAlternativa D: Incorreta. A válvula de uretra posterior é uma membrana obstrutiva na uretra prostática (interna) que causa obstrução ao fluxo urinário infravesical. Não apresenta sinais anatômicos externos como meato ventral ou capuz dorsal. Além disso, a uretrocistografia miccional é o exame padrão-ouro para o diagnóstico desta patologia, não sendo, portanto, contraindicada.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:33.998Z"
+  },
+  {
+    "id": "AJUDA_3b7986a1-3d7f-496a-a16f-709d7f21b86c",
+    "originalId": "3b7986a1-3d7f-496a-a16f-709d7f21b86c",
+    "statement": "Paciente do sexo masculino, 72 anos, previamente hipertenso, chega à emergência com tosse produtiva, febre alta e dispneia há 3 dias. Ao exame físico: PA 86 x 54 mmHg, FC 112 bpm, FR 34 irpm, SatO2 86% em ar ambiente, Glasgow 13. Ausculta pulmonar: Estertores crepitantes difusos em terço médio basal à direita.\nExames complementares:\nUreia sérica = 56 mg/dL.\nHemograma: leucócitos 18.000/mm3, Hb 12,5 g/dL.\nRx de tórax a seguir:\n\nO esquema antibiótico inicial preconizado é",
+    "options": [
+      {
+        "id": "A",
+        "text": "amoxicilina VO isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ceftriaxona EV associada à azitromicina EV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ciprofloxacino VO em monoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "penicilina cristalina EV isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "vancomicina EV isolada como primeira escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um paciente de 72 anos com pneumonia adquirida na comunidade (PAC) grave. Para definir a conduta e o local de tratamento, utilizamos rotineiramente o escore CURB-65. Vamos calcular a pontuação deste paciente:\n\nC (Confusão mental): Presente (Glasgow 13). (1 ponto)\nU (Ureia maior ou igual a 50 mg/dL): Presente (56 mg/dL). (1 ponto)\nR (Frequência respiratória maior ou igual a 30 irpm): Presente (34 irpm). (1 ponto)\nB (Blood pressure/Pressão arterial): Baixa, PAS menor que 90 ou PAD menor ou igual a 60 mmHg: Presente (86 x 54 mmHg). (1 ponto)\n65 (Idade maior ou igual a 65 anos): Presente (72 anos). (1 ponto)\n\nO paciente soma 5 pontos no escore CURB-65, o que indica uma mortalidade muito elevada e necessidade mandatória de internação hospitalar, preferencialmente em Unidade de Terapia Intensiva (UTI), dado o choque relativo (hipotensão) e a insuficiência respiratória (SatO2 86%). \n\nO raio X de tórax confirma o diagnóstico ao demonstrar uma opacidade homogênea (consolidação) com limites imprecisos ocupando o terço médio e inferior do pulmão direito, achado clássico de pneumonia lobar.\n\nAnálise das alternativas:\n\na) Incorreta. A amoxicilina por via oral (VO) é indicada apenas para tratamento ambulatorial de pacientes hígidos e sem sinais de gravidade (CURB-65 entre 0 e 1). O paciente em questão apresenta instabilidade hemodinâmica e respiratória.\n\nb) Correta. Para casos de PAC grave com necessidade de internação, a diretriz brasileira recomenda a terapia combinada para ampliar o espectro de cobertura. A associação de um betalactâmico de amplo espectro (como a ceftriaxona) com um macrolídeo (como a azitromicina) por via endovenosa (EV) é o padrão-ouro. Essa combinação garante cobertura contra o *Streptococcus pneumoniae* (principal agente) e contra germes atípicos (como *Legionella* spp. e *Mycoplasma pneumoniae*), além de possuir efeito imunomodulador benéfico.\n\nc) Incorreta. O ciprofloxacino não é considerado uma quinolona respiratória, pois possui baixa atividade contra o *Streptococcus pneumoniae*. Além disso, a via oral e a monoterapia são inadequadas para a gravidade do caso.\n\nd) Incorreta. A penicilina cristalina isolada não oferece cobertura para germes atípicos e não é a escolha inicial empírica para pneumonias graves em pacientes idosos e com múltiplas comorbidades na prática clínica atual, sendo preferível o uso de cefalosporinas de terceira geração.\n\ne) Incorreta. A vancomicina é reservada para casos em que há forte suspeita de *Staphylococcus aureus* resistente à meticilina (MRSA), como em pacientes com pneumonia necrotizante, pós-influenza ou com fatores de risco específicos para colonização por MRSA. Não é a primeira escolha para o tratamento empírico geral da PAC.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/1e6d0dd005e8aa613314c5a0f4a017e9a931925122fb3ab5c964b5ef7233b6fe.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3b7986a1-3d7f-496a-a16f-709d7f21b86c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:34.577Z"
+  },
+  {
+    "id": "AJUDA_3b8113aa-31ba-4f5d-aeca-45de51dfaff2",
+    "originalId": "3b8113aa-31ba-4f5d-aeca-45de51dfaff2",
+    "statement": "Idoso com diabetes melitus e hipertensão arterial, apresentou dor abdominal difusa com evolução para abdômen agudo. Foi diagnosticado abscesso bloqueado em região de cólon E, que se encontrava com divertículo perfurado. Foi realizada colectomia parcial e colostomia. Foi indicada Internação em UTI e o paciente manteve íleo adinâmico. Usou ceftriaxona e metronidazol inicialmente, manteve leucocitose e febre, trocado para piperacilina tazobactam sem mudança no quadro febril. TC de abdômen revelou abscesso de parede abdominal extenso, abordado cirurgicamente, cultura evidenciou E, coli sensível a piperacilina tazobactam. Manteve quadro febril, distensão abdominal e evoluiu para sepsis. Hemocultura revelou Pseudomonas aeruginosa. Antibiograma em andamento.\nQual antibiótico, dentre as opções abaixo, deverá ser utilizado empiricamente até resultado do antibiograma?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefuroxima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ceftazidima.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ampicilina-sulbactam.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente em pós-operatório de cirurgia abdominal de urgência, internado em UTI, que evoluiu com sepse associada ao isolamento de Pseudomonas aeruginosa em hemoculturas. A Pseudomonas aeruginosa é um bacilo Gram-negativo não fermentador, associado a infecções nosocomiais graves e com mecanismos intrínsecos de resistência a múltiplos antibióticos. O tratamento empírico requer, obrigatoriamente, a escolha de um agente com atividade antipseudomonal comprovada.\n\nAnalise das alternativas:\n\nAlternativa a (Incorreta): A cefuroxima e uma cefalosporina de segunda geracao. Possui boa atividade contra cocos Gram-positivos e alguns bacilos Gram-negativos comunitarios, mas nao apresenta nenhuma acao contra Pseudomonas aeruginosa.\n\nAlternativa b (Correta): A ceftazidima e uma cefalosporina de terceira geracao que se destaca por ter excelente espectro de acao contra Pseudomonas aeruginosa. Dentre as opcoes listadas, e a unica droga com atividade antipseudomonal indicada para a cobertura empirica desse patogeno.\n\nAlternativa c (Incorreta): A ceftriaxona e uma cefalosporina de terceira geracao amplamente utilizada para bacterias comunitarias e enterobacterias, porem classicamente carece de acao contra Pseudomonas aeruginosa.\n\nAlternativa d (Incorreta): A ampicilina-sulbactam e eficaz contra cocos Gram-positivos, alguns Gram-negativos e anaerobios (alem de possuir atividade contra Acinetobacter baumannii), contudo nao cobre Pseudomonas aeruginosa.\n\nGabarito: Letra b.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "Diverticulite Aguda",
+      "Antibióticos"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:34.577Z"
+  },
+  {
+    "id": "AJUDA_3b864a80-4349-4b64-8701-2f8a5842cf12",
+    "originalId": "3b864a80-4349-4b64-8701-2f8a5842cf12",
+    "statement": "Homem de 48 anos busca atendimento na Unidade Básica de Saúde (UBS) para reiniciar tratamento para tuberculose. Paciente refere que iniciou o tratamento poliquimioterápico há 6 meses, quando foi diagnosticado com tuberculose; porém, há 2 meses, interrompeu o acompanhamento na sua unidade de origem devido ao uso de substâncias psicoativas. Ele se mudou para o território da unidade há 15 dias e foi visitado pelo agente comunitário, que o orientou a procurar atendimento médico para avaliação e retomada do tratamento. Foram solicitados, inicialmente, o teste rápido molecular para tuberculose (TRM-TB), baciloscopia de escarro e radiografia de tórax.\nQual a conduta adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se o TRM-TB for positivo, sem resistência à rifampicina, e a baciloscopia for negativa, reiniciar o esquema básico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Se o TRM-TB for negativo e a baciloscopia for positiva, reiniciar o esquema básico, desde que a resistência à rifampicina seja positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se o TRM-TB for negativo e a baciloscopia for positiva, solicitar cultura de escarro com teste de sensibilidade e reiniciar o esquema básico enquanto se aguarda a cultura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Se o TRM-TB for positivo, com resistência à rifampicina, e a baciloscopia for positiva, solicitar cultura de escarro com teste de sensibilidade e reiniciar o esquema básico enquanto se aguarda a cultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nO caso clínico descreve um paciente que retorna após abandono de tratamento da tuberculose (definido como interrupção por 30 dias ou mais). Em situações de retratamento, as diretrizes do Ministério da Saúde do Brasil estabelecem fluxos específicos para o diagnóstico e manejo.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Em pacientes que realizaram tratamento para tuberculose nos últimos dois anos, o TRM-TB (Teste Rápido Molecular) pode detectar DNA de bacilos mortos remanescentes do tratamento anterior. Por isso, um TRM-TB positivo com baciloscopia negativa, neste contexto de retratamento, não confirma obrigatoriamente doença ativa. O diagnóstico precisaria de confirmação por cultura ou avaliação clínica/radiológica criteriosa antes de reiniciar o esquema.\n\nAlternativa b) Incorreta. Existe uma inconsistência técnica nesta opção. Se o TRM-TB for negativo, significa que o teste não detectou o DNA do complexo Mycobacterium tuberculosis; portanto, ele não teria como informar que a resistência à rifampicina é positiva. Além disso, se houvesse resistência comprovada, o esquema básico (RIPE) não seria a conduta correta.\n\nAlternativa c) Correta. A baciloscopia positiva em um paciente sintomático confirma a presença de bacilos íntegros e, consequentemente, a atividade da doença. Como se trata de um caso de retratamento por abandono, a realização de cultura com teste de sensibilidade (TS) é obrigatória para identificar possíveis resistências adquiridas. Enquanto o resultado da cultura (que é mais demorada) não fica pronto, o médico deve reiniciar o esquema básico (RIPE) para tratar o paciente e interromper a cadeia de transmissão, ajustando o tratamento posteriormente se o teste de sensibilidade mostrar alguma resistência.\n\nAlternativa d) Incorreta. Se o TRM-TB for positivo e indicar resistência à rifampicina, o paciente é classificado como um caso de tuberculose drogarresistente (TB-DR). Nestes casos, é contraindicado iniciar o esquema básico. O paciente deve ser encaminhado para uma unidade de referência secundária ou terciária para iniciar um esquema especial (como o esquema para TB resistente), baseado no perfil de sensibilidade.\n\nResumo da conduta no retorno após abandono:\nSempre solicitar Baciloscopia + TRM-TB + Cultura com Teste de Sensibilidade. Se a baciloscopia for positiva, inicia-se o tratamento imediatamente. O TRM-TB serve primordialmente para triagem rápida de resistência à rifampicina. Se houver resistência detectada no TRM-TB, não se usa o esquema básico. Se não houver resistência detectada e a doença for confirmada, inicia-se o esquema básico enquanto se aguarda o resultado da cultura.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": 59.643319213497826,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:34.577Z"
+  },
+  {
+    "id": "AJUDA_3b891c05-7946-4dc7-acf6-8e912b9fe3e0",
+    "originalId": "3b891c05-7946-4dc7-acf6-8e912b9fe3e0",
+    "statement": "Menino de 6 meses, saudável, é levado para consulta de rotina. Ele está em aleitamento materno exclusivo e a mãe busca orientações sobre a introdução alimentar, pois se trata de seu primeiro filho.\nNesse caso, a conduta adequada é manter aleitamento materno e",
+    "options": [
+      {
+        "id": "A",
+        "text": "introduzir 1 refeição com composto lácteo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar 1 refeição minimamente processada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "oferecer suco de frutas e dar 2 papas de legumes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "introduzir 1 refeição principal e 1 porção de fruta.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda as diretrizes atuais para a introdução alimentar em lactentes que atingem os 6 meses de idade, baseando-se nas recomendações do Ministério da Saúde e da Sociedade Brasileira de Pediatria (SBP).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O composto lácteo não é recomendado para lactentes, especialmente para aqueles em aleitamento materno. Trata-se de um produto processado que muitas vezes contém açúcares e aditivos. A introdução alimentar deve ser feita com alimentos in natura e minimamente processados, não com substitutos do leite materno ou outros produtos lácteos desnecessários nesse estágio.\n\nAlternativa (b) Incorreta. Embora o termo \"minimamente processado\" esteja correto no que diz respeito à qualidade do alimento, a alternativa é incompleta e vaga. As diretrizes especificam a composição da transição alimentar inicial, que envolve diferentes grupos alimentares e momentos do dia, e não apenas \"uma refeição\" genérica.\n\nAlternativa (c) Incorreta. Atualmente, a oferta de suco de frutas é contraindicada para crianças menores de 1 ano de idade, mesmo que o suco seja natural. Isso se deve à perda de fibras no preparo e à alta carga glicêmica, sendo preferível oferecer a fruta in natura (amassada ou em pedaços). Além disso, o protocolo inicial geralmente começa com uma refeição principal, e não duas simultaneamente.\n\nAlternativa (d) Correta. Ao completar 6 meses, a criança deve iniciar a alimentação complementar de forma lenta e gradual, mantendo o leite materno sob livre demanda. A recomendação inicial padrão é a introdução de uma fruta (papa de fruta) e de uma refeição principal (papa principal/almoço), que deve conter alimentos de diferentes grupos: cereais ou tubérculos, leguminosas, proteínas animais e hortaliças (legumes e verduras). Com o passar das semanas e a aceitação da criança, introduz-se a segunda fruta e, posteriormente, o jantar.\n\nResumo do raciocínio:\nAos 6 meses, o aleitamento deixa de ser exclusivo e passa a ser complementado por alimentos sólidos. O esquema inicial preconizado para o primeiro mês de introdução consiste em: Leite Materno + 1 refeição de fruta + 1 refeição principal (papa salgada). A alternativa (d) reflete exatamente essa transição fisiológica e nutricional.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:34.577Z"
+  },
+  {
+    "id": "AJUDA_3b8d2d9f-bfe7-42a6-8c97-e221576e7c35",
+    "originalId": "3b8d2d9f-bfe7-42a6-8c97-e221576e7c35",
+    "statement": "Homem de 28 anos apresenta dificuldades em manter controle glicêmico adequado, com variações significativas da glicemia ao longo do dia, apesar do uso de múltiplas doses diárias de insulina e monitoramento contínuo da glicose. AP: DM1 sem complicações vasculares.\nNesse caso, a prescrição de inibidores da SGLT-2 para melhora do controle glicêmico",
+    "options": [
+      {
+        "id": "A",
+        "text": "está associada ao aumento de eventos de hipoglicemia grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "promove redução da glicemia por efeito mediado pela insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "está associada ao aumento do risco de cetoacidose diabética.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "promove aumento na taxa de filtração glomerular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o uso de inibidores do cotransportador sódio-glicose 2 (SGLT-2) como terapia adjuvante no Diabetes Mellitus Tipo 1 (DM1). Embora essas drogas sejam amplamente utilizadas no DM2, seu uso no DM1 exige cautela extrema.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Diferentemente da insulina e das sulfonilureias, os inibidores do SGLT-2 possuem um mecanismo de ação independente da insulina, agindo por meio da glicosúria. Estudos mostram que, quando associados à terapia insulínica, eles podem, inclusive, reduzir a variabilidade glicêmica e não estão tipicamente associados ao aumento de eventos de hipoglicemia grave.\n\nAlternativa (b) Incorreta: O efeito dos inibidores do SGLT-2 é puramente renal. Eles bloqueiam a reabsorção de glicose no túbulo contorcido proximal, levando à eliminação de glicose pela urina. Portanto, o mecanismo é independente da insulina, o que os torna uma opção teórica para reduzir a carga de insulina necessária no DM1.\n\nAlternativa (c) Correta: Este é o maior risco associado ao uso de gliflozinas em pacientes com DM1. O uso desses fármacos aumenta significativamente o risco de cetoacidose diabética (CAD), frequentemente com níveis glicêmicos não tão elevados (cetoacidose euglicêmica). Isso ocorre por dois motivos principais: primeiro, a redução da dose de insulina pelo paciente (devido à melhora dos níveis de glicose no sangue) pode ser excessiva, deixando os tecidos com níveis insuficientes de insulina para suprimir a cetogênese; segundo, a droga promove um aumento na relação glucagon/insulina e reduz o clearance renal de corpos cetônicos.\n\nAlternativa (d) Incorreta: Os inibidores do SGLT-2 promovem, inicialmente, uma redução da taxa de filtração glomerular (TFG). Isso acontece porque a maior oferta de sódio ao túbulo distal ativa o feedback tubuloglomerular, causando vasoconstrição da arteríola aferente. Esse mecanismo é responsável pelo efeito de nefroproteção a longo prazo, mas não causa aumento da filtração.\n\nEm resumo, o risco de cetoacidose diabética é o principal fator limitante para a prescrição dessa classe no contexto do DM1, exigindo monitoramento rigoroso de corpos cetônicos e educação do paciente.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:34.577Z"
+  },
+  {
+    "id": "AJUDA_3b8d5226-28d3-43f8-a2f3-530d3ee51725",
+    "originalId": "3b8d5226-28d3-43f8-a2f3-530d3ee51725",
+    "statement": "Mulher de 55 anos de idade, G2P2A0 (02 partos normais), pós menopausa há 3 anos (em uso de terapia de reposição hormonal combinada), procura atendimento ginecológico com queixa de perda urinária há 12 meses, que vem interferindo nas suas atividades diárias. Após medidas conservadoras, incluindo orientações comportamentais, nutricionais e exercícios de fortalecimento do assoalho pélvico, sem melhora significativa. O exame físico evidencia hipermobilidade uretral (sem prolapso de parede vaginal anterior e posterior), e o estudo urodinâmico mostra perda urinária associada ao aumento da pressão abdominal, sem contrações involuntárias do detrusor. Para o caso descrito, a melhor conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colporrafia anterior e posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Histerectomia total via vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar anticolinérgico oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever beta-3 agonista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar tratamento cirúrgico com sling suburetral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O caso clínico apresenta uma paciente de 55 anos com quadro clássico de Incontinência Urinária de Esforço (IUE). Os pontos fundamentais para o diagnóstico e conduta são: 1. História de perda urinária aos esforços que impacta a qualidade de vida; 2. Falha comprovada do tratamento conservador (fisioterapia e mudanças de hábitos); 3. Exame físico com hipermobilidade uretral e ausência de prolapsos genitais; 4. Estudo urodinâmico confirmando a perda de urina associada ao aumento da pressão abdominal, sem a presença de contrações involuntárias do detrusor (hiperatividade detrusora).\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A colporrafia anterior (correção de cistocele) e posterior (correção de retocele) são cirurgias indicadas para o tratamento de prolapsos da parede vaginal. O exame físico da paciente explicitamente descarta a presença de prolapsos, e essas técnicas não são o tratamento-padrão para a incontinência urinária de esforço.\n\nAlternativa B: Incorreta. A histerectomia vaginal é indicada para prolapso uterino ou patologias uterinas benignas. Não há indicação de retirada do útero para o tratamento da incontinência urinária isolada.\n\nAlternativa C: Incorreta. Os anticolinérgicos (como a oxibutinina ou solifenacina) são utilizados para o tratamento da bexiga hiperativa ou incontinência urinária de urgência, caracterizada pela contração involuntária do detrusor. O estudo urodinâmico da paciente descartou essa condição.\n\nAlternativa D: Incorreta. Os beta-3 agonistas (como a mirabegrona) também são indicados para o tratamento da urgência urinária e bexiga hiperativa. Assim como os anticolinérgicos, não possuem eficácia no tratamento da incontinência urinária de esforço pura.\n\nAlternativa E: Correta. O sling suburetral (atualmente os slings de uretra média, como o TVT ou TOT) é considerado o padrão-ouro para o tratamento cirúrgico da incontinência urinária de esforço por hipermobilidade uretral quando o tratamento conservador falha. A técnica oferece altas taxas de cura ao promover um suporte para a uretra média durante o aumento da pressão abdominal.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:34.577Z"
+  },
+  {
+    "id": "AJUDA_3b946ec7-9a7d-4d2b-a124-e4bbb159b1c3",
+    "originalId": "3b946ec7-9a7d-4d2b-a124-e4bbb159b1c3",
+    "statement": "Mulher de 52 anos encontrava-se internada para a realização de colecistectomia videolaparacoscópica. No 2º dia do pós operatório, apresentou dispneia, de início súbito e pré-síncope. Ao exame físico, PA 70/50mmHg, FC 134bpm, FR 32ipm e SpO2 86% (ar ambiente). A pele estava pálida e sudorética, e o tempo de enchimento capilar periférico era maior que 3 segundos. Após a ressuscitação volêmica com 1.000mL de solução cristaloide e administração de oxigênio pelo cateter nasal a 3L/min, os dados vitais eram PA 104/64mmHg, FC 118bpm, FR 20ipm e SpO2 94% (ar ambiente). A angioTC do tórax revelou falhas de enchimento nas artérias dos lobos inferiores de ambos os pulmões. A dosagem de troponina sérica resultou em 0,34ng/mL. O ecocardiograma revelou dilatação e hipocontratilidade do ventrículo direito. Cerca de oito meses depois, a paciente apresenta cinco episódios ao dia de evacuação com fezes líquidas, sem sangue, muco, pus ou restos alimentares. O sintoma iniciou logo após a alta hospitalar da internação para a cirurgia eletiva. As evacuações ocorrem predominantemente no período diurno, principalmente após as refeições. Nega emagrecimento. Desconhece comorbidades e nega uso de medicamentos. O estudo por endoscopia digestiva alta e colonoscopia não revelam anormalidades. EXAMES DE LABORATÓRIO: hemoglobina 15,2g/dL; leucócitos 6.300/mm³; proteína C reativa 3mg/L; antitransglutaminase tecidual IgA não reagente; IgA total 280mg/dL; anti-HIV não reagente; exame parasitológico de fezes: negativo. Assinale a alternativa que indica o tratamento MAIS ADEQUADO nesse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amitriptilina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colestiramina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Duspatalina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Loperamida",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nA questão apresenta uma paciente de 52 anos que evoluiu com um quadro de tromboembolismo pulmonar (TEP) de alto risco no pós-operatório de uma colecistectomia videolaparoscópica. No entanto, o foco da pergunta não é o evento cardiovascular, mas sim a sequela gastrointestinal que surgiu logo após a cirurgia: diarreia crônica (cinco evacuações líquidas ao dia, sem sinais de alarme, predominantemente pós-prandiais). Os exames complementares (colonoscopia, endoscopia, exames laboratoriais e sorologias) estão normais, o que afasta causas inflamatórias, infecciosas ou doença celíaca.\n\nDIAGNÓSTICO:\nO quadro é clássico de diarreia induzida por ácidos biliares (ou diarreia colerética), uma complicação que ocorre em cerca de 5% a 15% dos pacientes submetidos a colecistectomia. Sem a vesícula para armazenar e concentrar a bile, há um fluxo contínuo de ácidos biliares para o intestino delgado. Se a capacidade de reabsorção no íleo terminal for ultrapassada, esses ácidos chegam ao cólon, onde estimulam a secreção de água e eletrólitos, além de aumentar a motilidade colônica, resultando em diarreia.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Amitriptilina: Incorreta. É um antidepressivo tricíclico utilizado em baixas doses para o tratamento da Síndrome do Intestino Irritável com predomínio de diarreia (SII-D), devido aos seus efeitos anticolinérgicos que lentificam o trânsito intestinal. Embora pudesse reduzir a frequência evacuatória, não atua na causa fisiopatológica da paciente (excesso de ácidos biliares no cólon).\n\nb) Colestiramina: Correta. É o tratamento de escolha para a diarreia colerética. Trata-se de uma resina de troca que atua como sequestradora de ácidos biliares. Ela se liga aos ácidos biliares no lúmen intestinal, formando um complexo insolúvel que é excretado nas fezes, impedindo que esses ácidos irritem a mucosa do cólon e causem a diarreia. A resposta terapêutica à colestiramina é, inclusive, utilizada como critério diagnóstico-terapêutico.\n\nc) Duspatalina (Mebeverina): Incorreta. É um antiespasmódico musculotrópico indicado principalmente para o alívio de dores e desconfortos abdominais na Síndrome do Intestino Irritável. Não possui ação sobre a secreção induzida por ácidos biliares.\n\nd) Loperamida: Incorreta. É um agente opioide que reduz a motilidade intestinal (antidiarreico sintomático). Pode ser utilizada como terapia adjuvante em diversos quadros de diarreia, mas para o caso específico de má absorção de ácidos biliares pós-colecistectomia, a colestiramina é superior por tratar diretamente o mecanismo causador do sintoma.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Vesícula e Vias Biliares",
+      "Síndrome do Intestino Irritável"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:34.577Z"
+  },
+  {
+    "id": "AJUDA_3b9693e6-d80b-426e-9aba-3ee7dc260fbf",
+    "originalId": "3b9693e6-d80b-426e-9aba-3ee7dc260fbf",
+    "statement": "Um paciente de 45 anos chega com tosse crônica, febre vespertina e perda de peso em comunidade rural do Nordeste, com histórico de acesso limitado à saúde. O enfermeiro da APS identifica vários contatos de risco. Qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento supervisionado, rastrear contatos e promover melhorias ambientais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas prescrever antibióticos para sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não intervir por falta de recursos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar apenas para hospital de referência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta a tríade clássica da Tuberculose (TB): tosse crônica (por mais de 3 semanas), febre vespertina e emagrecimento. O contexto de zona rural e acesso limitado reforça a necessidade de uma intervenção robusta da Atenção Primária à Saúde (APS).\n\nAlternativa (a) - CORRETA:\nEsta alternativa contempla os três pilares do controle da Tuberculose no Brasil. 1) Tratamento supervisionado (TDO - Tratamento Diretamente Observado): é a estratégia recomendada pelo Ministério da Saúde para garantir a adesão do paciente, reduzir o abandono e evitar o surgimento de cepas multirresistentes. 2) Rastrear contatos: essencial para identificar outros doentes ou pessoas com infecção latente, interrompendo a cadeia de transmissão na comunidade. 3) Melhorias ambientais: a TB é uma doença com forte determinante social; ambientes ventilados e com luz solar direta ajudam a reduzir a carga de bacilos no ar.\n\nAlternativa (b) - INCORRETA:\nO tratamento da tuberculose exige um esquema específico de poliquimioterapia (Rifampicina, Isoniazida, Pirazinamida e Etambutol). Prescrever antibióticos comuns para sintomas seria uma conduta negligente, pois não trataria a causa base e permitiria a progressão da doença e a contaminação de outras pessoas.\n\nAlternativa (c) - INCORRETA:\nA falta de recursos não exime o profissional ou o sistema de saúde da responsabilidade. A Tuberculose é um grave problema de saúde pública e seu tratamento é gratuito e garantido pelo SUS em todo o território nacional. O papel da equipe de saúde é buscar meios para realizar o diagnóstico e o acompanhamento, mesmo em áreas remotas.\n\nAlternativa (d) - INCORRETA:\nA Tuberculose é, prioritariamente, uma doença de manejo da Atenção Primária. O encaminhamento para hospitais ou centros de referência deve ser feito apenas em situações específicas, como formas graves da doença (meningoencefalite, disseminada), intolerância medicamentosa grave, suspeita de resistência aos fármacos ou pacientes em situações clínicas muito debilitadas. Manter o cuidado na APS facilita o vínculo e a adesão ao tratamento.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:34.577Z"
+  },
+  {
+    "id": "AJUDA_3b9845e6-01cd-4306-aab4-852a88ab966f",
+    "originalId": "3b9845e6-01cd-4306-aab4-852a88ab966f",
+    "statement": "F.B.V., 27 anos, GIII PII 1N 1C há 2 anos A0, idade gestacional por ultrassom precoce de 34 semanas e 1 dia, hipertensa crônica, em uso de metildopa 2 g/dia. Veio encaminhada ao pronto-socorro obstétrico pela Medicina Fetal por apresentar ao ultrassom: feto em apresentação cefálica, peso fetal no percentil 2, placenta anterior, grau II de Grannum, Maior bolsão vertical: 3 cm, Doppler: artéria umbilical com diástole zero. Ao exame físico: normo-tensa, dinâmica uterina ausente, colo uterino impérvio, assintomática. Relação proteína na urina/creatinina na urina: 0,2. De acordo com o caso, assinale a alternativa que apresenta a conduta correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta com reavaliação da vitalidade fetal com cardiotocografia a cada 3 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação para indução do trabalho de parto com misoprostol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internação para preparo do colo uterino com sonda de Foley.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação para indução do trabalho de parto com ocitocina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Internação para interrupção da gestação por via alta.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender a conduta correta nesta questão, devemos analisar os três pilares do caso clínico: o diagnóstico materno-fetal, a vitalidade fetal e o histórico obstétrico.\n\n1. Diagnóstico Materno-Fetal: A paciente tem 34 semanas e 1 dia de gestação, é hipertensa crônica e apresenta um feto com Crescimento Intrauterino Restrito (CIUR), evidenciado pelo peso fetal no percentil 2.\n\n2. Vitalidade Fetal (Doppler): O achado de artéria umbilical com diástole zero indica uma resistência placentária severamente aumentada. Em gestações acima de 32 a 34 semanas, a presença de diástole zero na artéria umbilical é uma indicação clássica de interrupção da gestação, pois o risco de morte fetal intrauterina supera os riscos da prematuridade.\n\n3. Condições Obstétricas e Via de Parto: A paciente possui uma cicatriz uterina prévia (uma cesárea há 2 anos) e o colo uterino está impérvio (fechado e desfavorável). O feto com restrição de crescimento e alteração de Doppler possui baixa reserva funcional para suportar o estresse das contrações de um trabalho de parto induzido.\n\nAnálise das alternativas:\n\na) Incorreta. A alta hospitalar é contraindicada. A diástole zero é um sinal de gravidade que exige a interrupção imediata da gestação ou em curto prazo, sob regime de internação, devido ao alto risco de óbito fetal.\n\nb) Incorreta. O uso de misoprostol é formalmente contraindicado em pacientes com cicatriz uterina prévia (cesárea anterior), devido ao elevado risco de ruptura uterina durante a indução.\n\nc) Incorreta. Embora a sonda de Foley seja um método mecânico que poderia ser usado em colos desfavoráveis com cicatriz prévia, a gravidade do Doppler (diástole zero) em um feto de 34 semanas com crescimento restrito torna a indução do parto arriscada e prolongada. A maioria dos protocolos recomenda a via alta (cesárea) pela urgência relativa e baixa reserva fetal.\n\nd) Incorreta. A indução com ocitocina pressupõe um colo uterino favorável (índice de Bishop alto), o que não é o caso (colo impérvio). Além disso, o feto com diástole zero dificilmente toleraria a dinâmica uterina da indução sem apresentar sofrimento fetal agudo.\n\ne) Correta. Diante da maturidade gestacional (34 semanas), do diagnóstico de restrição de crescimento severa e, principalmente, do Doppler de artéria umbilical com diástole zero, a interrupção é mandatória. A via alta (cesárea) é a escolha mais adequada pela urgência do quadro, pelo colo uterino desfavorável, pela cicatriz de cesárea prévia e pelo comprometimento da reserva fetal, que torna o trabalho de parto de alto risco para esse conceito.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Restrição de Crescimento Fetal e Óbito Fetal",
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:34.577Z"
+  }
+]

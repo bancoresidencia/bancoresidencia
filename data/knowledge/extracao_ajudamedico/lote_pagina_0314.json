@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_56baad50-65ec-4751-9d2f-ab092d17474b",
+    "originalId": "56baad50-65ec-4751-9d2f-ab092d17474b",
+    "statement": "Um aluno de pós-graduação pretende estudar três diferentes aspectos do Transtorno do Estresse Pós-Traumático (TEPT) associados ao parto:\n\n1. Se a frequência de TEPT é maior em mulheres atendidas em serviços públicos do que privados;\n2. Se há relação causal entre história de abuso na infância e TEPT;\n3. Se TEPT aumenta o risco de ideação suicida anos após o parto.\n\nAssinale a alternativa que contempla os tipos de estudos apropriados para os objetivos 1, 2 e 3, respectivamente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coorte, caso-controle, ensaio de comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Descritivo, coorte, caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transversal, descritivo, coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transversal, caso-controle, coorte.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para determinar o desenho metodológico adequado para cada um dos objetivos propostos, deve-se avaliar o ponto de partida do pesquisador e a linha temporal do estudo:\n\nObjetivo 1: Avaliar a frequência (prevalência) de TEPT comparando serviços públicos e privados. Como o interesse é mensurar e comparar a ocorrência de uma condição em um momento pontual no tempo, sem necessidade de seguimento, o desenho mais apropriado é o Estudo Transversal (ou seccional).\n\nObjetivo 2: Avaliar a relação entre abuso na infância e TEPT. O pesquisador parte de indivíduos com o diagnóstico estabelecido (casos) e sem a doença (controles) e olha retrospectivamente para o passado em busca da exposição remota (abuso na infância). Portanto, o delineamento ideal é o Estudo de Caso-Controle.\n\nObjetivo 3: Avaliar se o TEPT pós-parto aumenta o risco de ideação suicida anos depois. O pesquisador seleciona grupos definidos pela exposição (mulheres com e sem TEPT) e os acompanha prospectivamente ao longo do tempo para verificar a incidência do desfecho futuro (ideação suicida). Este é o desenho clássico do Estudo de Coorte.\n\nAnálise das alternativas:\n\na) Incorreta. O primeiro objetivo não requer seguimento longitudinal de indivíduos sadios para justificar uma coorte, e o terceiro objetivo não envolve intervenção preventiva em nível populacional (ensaio comunitário), mas sim observação de risco futuro.\n\nb) Incorreta. Estudos puramente descritivos relatam características sem testar hipóteses analíticas ou grupos de comparação. Além disso, a ordem entre coorte e caso-controle está invertida para os objetivos 2 e 3.\n\nc) Incorreta. Estudos descritivos não são indicados para testar hipóteses de causalidade (objetivo 2), que exigem estudos observacionais analíticos como o caso-controle.\n\nd) Correta. Contempla com precisão os três desenhos metodológicos correspondentes a cada objetivo: Transversal para a estimativa de prevalência/frequência pontual, Caso-controle para investigar exposição remota a partir do desfecho, e Coorte para acompanhar a incidência de desfechos ao longo dos anos.\n\nGabarito: Letra d.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:37.236Z"
+  },
+  {
+    "id": "AJUDA_56bb23f4-307b-4f7c-96d3-8d5def857004",
+    "originalId": "56bb23f4-307b-4f7c-96d3-8d5def857004",
+    "statement": "Paciente do sexo feminino, 66 anos de idade, cursando há 2 dias com quadro de dor intensa em abdome superior, principalmente à direita, associado a febre aferida e icterícia discreta de início há 1 dia. Apresenta também calafrios e leve confusão mental. O diagnóstico e a conduta no momento são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colangite aguda; antibioticoterapia parenteral e CPRE.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Colecistite aguda; antibioticoterapia parenteral e colecistectomia videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pancreatite aguda; dieta zero, expansão volêmica e analgesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pancreatite aguda; dieta zero, antibioticoterapia parenteral, expansão volêmica e CPRE.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito é clássico e aponta diretamente para uma emergência biliar. A paciente apresenta dor abdominal em hipocôndrio direito, febre e icterícia, o que compõe a chamada Tríade de Charcot. Além disso, a presença de confusão mental (e possivelmente hipotensão; embora não citada explicitamente, a confusão sugere má perfusão cerebral ou sepse grave) completa a Pêntade de Reynolds.\n\nA Pêntade de Reynolds é um sinal patognomônico de colangite aguda grave (supurativa), uma infecção bacteriana das vias biliares geralmente secundária a uma obstrução (como a coledocolitíase).\n\nAnálise das alternativas:\n\na) Correta. O diagnóstico de colangite aguda é fundamentado na Tríade de Charcot presente na paciente. O tratamento exige a estabilização clínica com antibioticoterapia parenteral precoce para cobrir germes gram-negativos e anaeróbios, seguida obrigatoriamente da descompressão das vias biliares. A CPRE (Colangiopancreatografia Retrógrada Endoscópica) é o método de escolha por ser minimamente invasivo e permitir tanto o diagnóstico quanto o tratamento definitivo da obstrução.\n\nb) Incorreta. A colecistite aguda cursa com dor em hipocôndrio direito e febre (Sinal de Murphy positivo ao exame físico), mas a icterícia não é um achado comum, a menos que haja compressão do ducto hepático comum pelo cálculo no cístico (Síndrome de Mirizzi). Além disso, a confusão mental não faz parte do quadro típico de colecistite.\n\nc) Incorreta. A pancreatite aguda manifesta-se tipicamente com dor em faixa no abdome superior e vômitos. Embora possa haver icterícia se a causa for biliar, a combinação específica de febre, icterícia e confusão mental direciona o diagnóstico para a colangite. O tratamento da pancreatite envolve reposição volêmica e analgesia, mas a antibioticoterapia não é de rotina.\n\nd) Incorreta. Embora a CPRE possa ser utilizada na pancreatite de origem biliar quando há colangite associada ou obstrução persistente da via biliar, o quadro clínico da paciente — especialmente pela presença da Tríade de Charcot e evolução para Pêntade de Reynolds — define a colangite aguda como o diagnóstico primário e mais urgente a ser tratado. Além disso, a antibioticoterapia na pancreatite é reservada apenas para casos de necrose infectada confirmada.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Colecistite e Colangite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:37.236Z"
+  },
+  {
+    "id": "AJUDA_56be0c73-eed2-40d1-9cbc-46bd47ad131b",
+    "originalId": "56be0c73-eed2-40d1-9cbc-46bd47ad131b",
+    "statement": "Homem de 75 anos queixa-se de diminuição do jato urinário, dificuldade no esvaziamento vesical completo, polaciúria e noctúria iniciados há 11 meses. Realizou ultrassonografia de próstata que revelou próstata de volume e peso aumentados sem outros achados. O diagnóstico é de hiperplasia prostática benigna, e o médico deve iniciar um inibidor da 5-alfa-redutase associado a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "bloqueador de canal de cálcio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "betabloqueador",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "alfabloqueador",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "tadalafila",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um paciente de 75 anos com sintomas de esvaziamento (jato reduzido, dificuldade de esvaziamento) e de armazenamento (polaciúria, noctúria), compatíveis com Hiperplasia Prostática Benigna (HPB). O ultrassom confirma o aumento do volume glandular. No tratamento da HPB, o uso de inibidores da 5-alfa-redutase (como finasterida e dutasterida) visa reduzir o volume da próstata ao longo de meses, tratando o componente estático da obstrução.\n\nAlternativa a: Incorreta. Bloqueadores de canal de cálcio são medicamentos anti-hipertensivos que não possuem ação sobre a musculatura lisa prostática ou sobre o volume da glândula, não tendo indicação no manejo da HPB.\n\nAlternativa b: Incorreta. Os betabloqueadores são fármacos utilizados em cardiologia para controle de frequência cardíaca e hipertensão, não possuindo receptores-alvo na próstata que justifiquem seu uso para alívio de sintomas urinários.\n\nAlternativa c: Correta. Os alfabloqueadores (como tansulosina, doxazosina e terazosina) são a classe de escolha para associação com inibidores da 5-alfa-redutase. Eles atuam bloqueando os receptores alfa-1 adrenérgicos, promovendo o relaxamento da musculatura lisa do estroma prostático e do colo vesical (componente dinâmico da obstrução). Essa associação é o padrão-ouro para pacientes com próstatas volumosas e sintomas moderados a graves, pois oferece alívio sintomático rápido (alfabloqueador) enquanto o inibidor da 5-alfa-redutase trabalha na redução do tamanho da glândula a longo prazo, reduzindo o risco de retenção urinária aguda e necessidade de cirurgia.\n\nAlternativa d: Incorreta. A tadalafila (um inibidor da fosfodiesterase-5) é aprovada para o tratamento da HPB, sendo uma opção especialmente interessante quando há disfunção erétil associada. Contudo, em questões de prova que abordam a terapia combinada clássica para controle de progressão e sintomas em próstatas aumentadas, a associação com alfabloqueadores é a resposta correta e mais consolidada nas diretrizes urológicas.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:37.236Z"
+  },
+  {
+    "id": "AJUDA_56c3e1a0-f334-44f8-8110-aca398d0f652",
+    "originalId": "56c3e1a0-f334-44f8-8110-aca398d0f652",
+    "statement": "Homem de 61 anos, tabagista e etilista crônico, apresenta disfagia progressiva há 3 meses, inicialmente para sólidos e atualmente também para líquidos. Relata perda ponderal de 14 kg no período. Endoscopia digestiva alta mostra lesão vegetante e ulcerada no terço médio do esôfago, com estenose significativa. A biópsia confirmou carcinoma espinocelular.\n\nQual é a conduta inicial mais adequada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar quimioterapia exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar esofagectomia sem estadiamento adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar tomografia computadorizada de tórax e abdome com contraste.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar radioterapia isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colocar prótese endoscópica como tratamento definitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um paciente com diagnóstico confirmado de carcinoma espinocelular (CEC) de esôfago, apresentando sinais de doença avançada localmente (disfagia para líquidos e perda ponderal importante). Em oncologia, após o diagnóstico histopatológico, o passo obrigatório e imediato é o estadiamento clínico. Sem definir a extensão da doença (TNM), é impossível planejar o tratamento adequado.\n\nAnálise das alternativas:\n\na) Iniciar quimioterapia exclusiva: Incorreta. A quimioterapia exclusiva não é o tratamento padrão para o câncer de esôfago localizado ou locorregional. Além disso, a conduta terapêutica só deve ser decidida após o estadiamento completo para saber se o objetivo é curativo ou paliativo.\n\nb) Realizar esofagectomia sem estadiamento adicional: Incorreta. A esofagectomia é uma cirurgia de grande porte e alta morbidade. Jamais deve ser indicada sem antes descartar metástases a distância (estágio IV) ou invasão de estruturas vitais irressecáveis (T4b), o que contraindicaria o procedimento cirúrgico imediato.\n\nc) Solicitar tomografia computadorizada de tórax e abdome com contraste: Correta. Este é o passo inicial fundamental para o estadiamento sistêmico. A tomografia permite avaliar a extensão local do tumor, a presença de linfonodomegalias suspeitas e, principalmente, a existência de metástases a distância, frequentemente localizadas no fígado ou pulmões. A partir desse exame, decide-se se há necessidade de exames complementares (como PET-CT ou ultrassom endoscópico) ou se o paciente já segue para protocolos de neoadjuvância ou paliação.\n\nd) Indicar radioterapia isolada: Incorreta. Assim como a quimioterapia, a radioterapia isolada não é a conduta inicial padrão após o diagnóstico. Ela pode compor o tratamento definitivo (quimiorradioterapia exclusiva) em casos específicos ou ser usada para paliação, mas apenas após o estadiamento definir que o paciente não é candidato à cirurgia.\n\ne) Colocar prótese endoscópica como tratamento definitivo: Incorreta. As próteses endoscópicas têm papel paliativo para melhorar a disfagia em pacientes com doença incurável ou sem condições clínicas para tratamentos agressivos. Definir isso como \"tratamento definitivo\" antes mesmo de saber se a doença é passível de cura é uma conduta equivocada.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:37.236Z"
+  },
+  {
+    "id": "AJUDA_56c9dd4a-c9b6-4b1f-acdb-3f23b45a54bb",
+    "originalId": "56c9dd4a-c9b6-4b1f-acdb-3f23b45a54bb",
+    "statement": "Homem de 62 anos, previamente saudável, sofreu um acidente de trabalho em uma laje e caiu sobre um vergalhão, que transfixou a região cervical. Hemodinamicamente estável, apresenta barra metálica atravessando a região cervical direita, com ponto de entrada na zona II e saída na zona III retroauricular, sem sangramento ativo ou hematoma. Angiotomografia cervical abaixo. A conduta mais adequada, dentre as abaixo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Remover imediatamente o corpo estranho na sala de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Embolização arterial imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar o paciente ao centro cirúrgico, mantendo o corpo estranho fixo até sua retirada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Drenagem de tórax imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar traqueostomia de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um trauma cervical penetrante por empalamento. O manejo de objetos encravados segue um princípio fundamental no trauma: o corpo estranho nunca deve ser removido no ambiente da sala de emergência ou no local do acidente. Isso ocorre porque o objeto pode estar exercendo um efeito de tamponamento sobre grandes vasos (como a artéria carótida ou a veia jugular). A sua retirada inadvertida pode desencadear uma hemorragia maciça e incontrolável fora de um ambiente cirúrgico preparado.\n\nNas imagens de angiotomografia, observa-se o artefato metálico (imagem em estrela causada pelo metal) transfixando o pescoço. Embora o paciente esteja hemodinamicamente estável, a proximidade do vergalhão com estruturas vitais das zonas II e III exige cautela extrema.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A remoção imediata na sala de emergência é contraindicada pelo risco de sangramento catastrófico assim que o efeito de tamponamento do objeto for retirado.\n\nAlternativa (b) Incorreta. A embolização pode ser uma ferramenta útil em lesões vasculares de difícil acesso (especialmente na zona III profunda), mas o tratamento de escolha para um objeto empalado em um paciente estável é a exploração cirúrgica para remoção sob visão direta.\n\nAlternativa (c) Correta. Esta é a conduta padrão. O paciente deve ser levado ao centro cirúrgico, onde a equipe terá controle proximal e distal dos vasos cervicais antes de proceder à retirada do vergalhão. O objeto deve permanecer fixo durante o transporte para evitar lesões secundárias.\n\nAlternativa (d) Incorreta. Não há sinais clínicos ou radiológicos de pneumotórax ou hemotórax que justifiquem a drenagem de tórax. O trauma é cervical alto (zonas II e III), distante da pleura.\n\nAlternativa (e) Incorreta. A traqueostomia de emergência é indicada em casos de obstrução alta das vias aéreas em que a intubação orotraqueal não é possível. O paciente está estável e não apresenta, no relato, sinais de insuficiência respiratória iminente que justifiquem o procedimento de exceção neste momento.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/12b8121d88d40a671b142e19b7fda5500b44ccb26a4719806334cf0dc3f3af84.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_56c9dd4a-c9b6-4b1f-acdb-3f23b45a54bb_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:37.642Z"
+  },
+  {
+    "id": "AJUDA_56d494cb-ba80-43d2-892c-3bc49c055861",
+    "originalId": "56d494cb-ba80-43d2-892c-3bc49c055861",
+    "statement": "Uma boa técnica de aplicação, segundo as vias de administração dos imunobiológicos, é imprescindível para melhor resultado. Assim sendo, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na utilização da via intradérmica, a vacina é introduzida na hipoderme, que é a camada superficial da pele, cujo aporte sanguíneo é reduzido, proporcionando lenta absorção do imunobiológico administrado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na utilização da via subcutânea, a vacina é introduzida na derme, um tecido com menor vascularização e, consequentemente, absorção mais lenta do imunobiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As regiões anatômicas selecionadas para a injeção intramuscular devem estar distantes dos grandes nervos e próximos aos vasos sanguíneos maiores para melhor absorção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A aspiração no momento da administração do imunobiológico em tecido muscular está indicada para verificar se foi atingido vaso sanguíneo, com exceção da região dorsoglútea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A região ventroglútea é a melhor opção quanto à via de administração intramuscular, pois oferece a melhor espessura de músculo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda as técnicas e fundamentos anatômicos das vias de administração de imunobiológicos (vacinas e soros). Vamos analisar cada alternativa para entender o motivo do gabarito:\n\nAlternativa (a) Incorreta. A via intradérmica consiste na administração do imunobiológico na derme, que é a camada localizada logo abaixo da epiderme. A alternativa descreve incorretamente a hipoderme (tecido subcutâneo) como sendo a camada superficial da pele. Na verdade, a derme possui plexos vasculares, mas a absorção é lenta justamente pela densidade do tecido, e não por estar na hipoderme.\n\nAlternativa (b) Incorreta. Houve uma inversão de conceitos. Na via subcutânea, o imunobiológico é introduzido no tecido subcutâneo (hipoderme), e não na derme. A derme é o alvo da via intradérmica. O tecido subcutâneo é menos vascularizado que o tecido muscular, o que permite uma absorção mais lenta e contínua.\n\nAlternativa (c) Incorreta. As injeções intramusculares devem ser aplicadas em locais distantes de grandes nervos e também distantes de vasos sanguíneos calibrosos. O objetivo é evitar lesões nervosas e a administração intravascular inadvertida do imunobiológico, o que poderia causar efeitos adversos sistêmicos imediatos e comprometer a eficácia da vacina.\n\nAlternativa (d) Incorreta. De acordo com as normas técnicas atuais de imunização (como as do Ministério da Saúde e da Organização Mundial da Saúde), a aspiração antes da injeção de vacinas não é mais recomendada. Isso ocorre porque os locais selecionados para vacinação (deltoide, vasto lateral da coxa e ventroglúteo) não possuem vasos de grande calibre. Além disso, a não aspiração diminui o tempo de contato da agulha com o tecido, reduzindo a dor. O erro da alternativa é dizer que a aspiração é indicada, e ainda excluir a região dorsoglútea (que é justamente onde a aspiração era mais preconizada antigamente devido à proximidade com a artéria glútea).\n\nAlternativa (e) Correta. A região ventroglútea (técnica de Hochstetter) é considerada pela literatura científica como um dos locais mais seguros para a administração intramuscular. Ela oferece uma excelente espessura muscular (músculos glúteo médio e mínimo), possui uma camada de tecido adiposo geralmente mais fina que a região dorsoglútea e é livre de vasos sanguíneos e nervos importantes, sendo a via preferencial para administração de grandes volumes ou substâncias irritantes em adultos e crianças.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:37.642Z"
+  },
+  {
+    "id": "AJUDA_56e37000-875f-4a3c-8740-cecbe07ecf36",
+    "originalId": "56e37000-875f-4a3c-8740-cecbe07ecf36",
+    "statement": "Homem, 45 anos de idade, busca atendimento ambulatorial. Refere ter procurado o pronto-socorro 3 vezes nos últimos 4 meses, com crises de dor precordial, taquicardia, falta de ar, formigamento nas mãos e tontura. Durante as crises, que ocorriam quando ele estava em casa, ficava muito assustado achando que iria morrer. Nos atendimentos de urgência, realizou eletrocardiogramas, radiografias de tórax e exames de sangue de urgência que apresentaram resultados normais. Devido às crises, passou a evitar andar de elevador por ter medo de ter uma crise e não poder sair ou receber ajuda. Não há queixas descritas entre as crises. Além do transtorno de pânico, qual é o diagnóstico mais apropriado a partir dos sintomas descritos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Agorafobia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Claustrofobia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ansiedade generalizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fobia específica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O paciente apresenta episódios típicos de crise de pânico e desenvolveu um comportamento de esquiva situacional focado no medo de ter uma crise e não conseguir sair ou receber socorro imediato, o que define a agorafobia associada.\n\nAlternativa a: Correta. A agorafobia é caracterizada pelo medo ou ansiedade marcantes em situações das quais o escape pode ser difícil ou nas quais o auxílio pode não estar disponível caso a pessoa desenvolva sintomas semelhantes ao pânico ou outros sintomas incapacitantes/constrangedores. O paciente evita o elevador especificamente pelo medo da falta de socorro ou de escape durante uma crise, preenchendo esse critério diagnóstico.\n\nAlternativa b: Incorreta. A claustrofobia é o medo de espaços fechados em si. No caso apresentado, o motivo da esquiva não é o confinamento em si, mas sim a antecipação de ter uma nova crise de pânico sem a possibilidade de receber ajuda ou fugir, o que direciona o diagnóstico para a agorafobia.\n\nAlternativa c: Incorreta. O Transtorno de Ansiedade Generalizada (TAG) envolve preocupação e ansiedade excessivas, crônicas e difusas sobre múltiplos aspectos da vida diária (trabalho, finanças, família), com duração de pelo menos 6 meses. O paciente em questão não apresenta sintomas entre as crises (\"não há queixas descritas entre as crises\"), afastando o TAG.\n\nAlternativa d: Incorreta. A fobia específica refere-se ao medo desproporcional e circunscrito a um objeto ou situação específica (como animais, injeções ou altura). Quando a evitação de determinados locais surge no contexto do transtorno de pânico pelo medo de ter novos ataques e ficar desassistido, o diagnóstico prioritário é agorafobia, e não fobia específica.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Transtornos de Ansiedade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:37.642Z"
+  },
+  {
+    "id": "AJUDA_56ed0c0a-46f4-49be-a614-e00c08821435",
+    "originalId": "56ed0c0a-46f4-49be-a614-e00c08821435",
+    "statement": "Menino, 4 anos de idade, apresenta cansaço há 1 dia e tosse seca com piora há 3 horas. Paciente tem asma e parou a medicação de controle há 1 semana por estar sem crise há 2 meses. Exame físico: FR = 42 irpm, fala apenas frases curtas, SpO2 = 95% em ar ambiente. De acordo com o GINA (Global Initiative for Asthma), qual é a classificação da crise e a conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crise grave; beta-2 agonista de curta ação associado a brometo de ipratrópio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Crise moderada; beta-2 agonista de curta ação associado a brometo de ipratrópio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Crise moderada; indicação de beta-2 agonista de longa ação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Crise grave; indicação de beta-2 agonista de longa ação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o manejo da exacerbação asmática em pediatria, focando na classificação de gravidade e na conduta inicial baseada nas recomendações do GINA (*Global Initiative for Asthma*).\n\nAnálise do quadro clínico:\nO paciente tem 4 anos (faixa etária de 5 anos ou menos). Apresenta frequência respiratória (FR) de 42 irpm, o que é considerado elevado (taquipneia) para a idade, já que o ponto de corte para gravidade nessa faixa etária é FR maior que 40 irpm. Além disso, a capacidade de falar apenas frases curtas indica esforço respiratório significativo. Embora a saturação de oxigênio (SpO2) esteja em 95%, a presença de taquipneia importante e a limitação da fala classificam a crise como grave.\n\nAlternativa A: Correta. De acordo com o GINA, a presença de sinais de alerta, como FR maior que 40 irpm em crianças de 1 a 5 anos e o prejuízo na fala, classificam a crise como grave/com risco de vida. A conduta imediata para crises graves no ambiente de urgência inclui o uso de beta-2-agonista de curta ação (SABA), como o salbutamol, associado ao brometo de ipratrópio. Essa combinação na primeira hora de tratamento reduz as taxas de hospitalização. O uso de corticoide sistêmico também é indicado, mas a alternativa foca na terapia inalatória de resgate.\n\nAlternativa B: Incorreta. A classificação como moderada subestima a gravidade dos sinais vitais apresentados. No GINA para menores de 5 anos, uma FR de 42 irpm já coloca a criança no espectro de crise grave. Embora o tratamento proposto (SABA + ipratrópio) seja adequado para crises moderadas a graves, a classificação da alternativa invalida a opção.\n\nAlternativa C: Incorreta. Além de a classificação de gravidade estar inadequada para o quadro descrito, o uso de beta-2-agonista de longa ação (LABA), como salmeterol, não é indicado para o tratamento de resgate em crises agudas. O LABA é uma medicação de controle/manutenção.\n\nAlternativa D: Incorreta. Embora classifique a crise como grave, o erro reside na indicação do beta-2-agonista de longa ação (LABA). Na crise asmática aguda, o objetivo é a broncodilatação rápida, obtida com os agentes de curta ação (SABA). O ipratrópio entra como adjuvante para potencializar esse efeito na emergência.\n\nResumo da classificação GINA para menores de 5 anos:\n- Crise Leve/Moderada: Saturação maior que 92%, fala frases, frequência cardíaca e respiratória aumentadas, mas sem sinais de exaustão.\n- Crise Grave/Risco de vida: Saturação menor ou igual a 92%, fala apenas palavras isoladas, FR maior que 40, batimento de asas de nariz, retrações importantes ou cianose. Na prática de provas, uma FR acima do limite e a dificuldade de fala já direcionam para o manejo de crise grave.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:37.642Z"
+  },
+  {
+    "id": "AJUDA_56f1d7f9-00cd-47b6-b63e-5bf5ce730090",
+    "originalId": "56f1d7f9-00cd-47b6-b63e-5bf5ce730090",
+    "statement": "A Doença Arterial Obstrutiva Periférica (DAOP) e os Aneurismas de Aorta Abdominal (AAA) representam patologias vasculares de alta prevalência e risco. A compreensão de sua fisiopatologia e indicações cirúrgicas é essencial. Analise as afirmativas a seguir:\n\nI. No AAA infrarrenal, a indicação cirúrgica eletiva (aberta ou endovascular) baseia-se primariamente no diâmetro do aneurisma, sendo geralmente recomendada para diâmetros iguais ou superiores a 5,5 cm em homens e 5,0 cm em mulheres, ou em casos de crescimento rápido (>0,5 cm em 6 meses).\nII. A claudicação intermitente na DAOP é causada pela incapacidade do sistema arterial de aumentar o fluxo sanguíneo em resposta à demanda metabólica do exercício; o Índice Tornozelo-Braço (ITB) menor que 0,90 é diagnóstico e um marcador de risco cardiovascular sistêmico.\nIII. O tratamento da isquemia crítica de membro (dor em repouso ou lesão trófica) deve ser inicialmente conservador, com exercícios supervisionados e cilostazol, reservando a revascularização apenas para casos de gangrena extensa.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das Afirmativas:\n\nAfirmativa I: Correta. A indicação de intervenção no Aneurisma de Aorta Abdominal (AAA) assintomático baseia-se no balanço entre o risco de ruptura e o risco operatório. Os consensos internacionais estabelecem o ponto de corte de 5,5 cm para homens e 5,0 cm para mulheres, pois a partir desses diâmetros o risco de ruptura supera o risco da cirurgia (aberta ou endovascular). Além disso, o crescimento rápido, definido como aumento superior a 0,5 cm em 6 meses ou 1,0 cm em 12 meses, também é critério para tratamento eletivo.\n\nAfirmativa II: Correta. A claudicação intermitente é o sintoma clássico da DAOP, ocorrendo quando o fluxo sanguíneo é suficiente no repouso, mas insuficiente para suprir a demanda metabólica muscular durante o exercício. O Índice Tornozelo-Braço (ITB) é calculado pela razão entre a maior pressão sistólica no tornozelo e a maior pressão sistólica no braço. Valores menores que 0,90 são diagnósticos para DAOP e sinalizam a presença de aterosclerose em outros leitos vasculares, sendo um importante marcador de risco para infarto agudo do miocárdio e acidente vascular cerebral.\n\nAfirmativa III: Incorreta. A conduta na isquemia crítica (caracterizada por dor em repouso, úlceras isquêmicas ou gangrena) é radicalmente diferente da conduta na claudicação leve/moderada. Na isquemia crítica, existe risco iminente de perda do membro, e a revascularização (seja por bypass ou angioplastia) deve ser tentada sempre que possível para salvar a extremidade. O tratamento conservador com exercícios supervisionados e cilostazol é a primeira linha apenas para pacientes claudicantes (isquemia não crítica). Na isquemia crítica, postergar a revascularização aumenta a morbimortalidade e a taxa de amputações maiores.\n\nAnálise das alternativas:\n\na) I e II apenas: Esta é a alternativa correta, conforme a análise acima.\nb) III apenas: Incorreta, pois a afirmativa III descreve conduta errada para isquemia crítica.\nc) I apenas: Incorreta, pois a afirmativa II também está correta.\nd) II e III apenas: Incorreta, pois a afirmativa III está errada.\n\nGabarito: Alternativa (a).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:37.642Z"
+  },
+  {
+    "id": "AJUDA_56f21520-3e5c-4646-aa3f-7db0986c7641",
+    "originalId": "56f21520-3e5c-4646-aa3f-7db0986c7641",
+    "statement": "Durante colecistectomia pós pancreatite aguda leve, foi optado pela realização de colangiografia intraoperatória. A imagem do campo operatório pode ser observada a seguir:\n\nEm qual das estruturas, destacadas pelas setas e numeradas de 1 a 4, deve ser introduzido o cateter da colangiografia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "4.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A colangiografia intraoperatória durante a colecistectomia tem como objetivo avaliar a anatomia da árvore biliar e descartar a presença de coledocolitíase residual. Para realizá-la, deve-se identificar as estruturas do trígono hepatocístico e cateterizar o ducto cístico após uma pequena incisão em sua parede (cisticotomia).\n\nAlternativa A (Incorreta): O número 1 aponta para a artéria cística, estrutura vascular situada superiormente em relação ao ducto cístico. A canulação dessa estrutura resultaria em sangramento e injeção intravascular de contraste (arteriografia), não permitindo o estudo das vias biliares.\n\nAlternativa B (Incorreta): O número 2 indica a parede da vesícula biliar em direção ao leito hepático, tratando-se do corpo/fundo vesicular e da reflexão peritoneal, e não de uma estrutura ductal própria para cateterização.\n\nAlternativa C (Correta): O número 3 aponta diretamente para o ducto cístico, que conecta o infundíbulo da vesícula biliar ao ducto colédoco/hepático comum. É exatamente nessa estrutura tubular que se introduz o cateter de colangiografia para injetar o contraste radiopaco e visualizar a árvore biliar.\n\nAlternativa D (Incorreta): O número 4 destaca o linfonodo cístico (conhecido como linfonodo de Mascagni ou de Lund). Trata-se de uma estrutura linfática que serve como importante ponto de referência anatômico próximo à artéria cística, mas não possui luz para introdução de cateter.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares",
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/6245fffab6ed385b37ddbac9573316f632d57f17391b46b8d52e5171bb14238d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_56f21520-3e5c-4646-aa3f-7db0986c7641_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:45:38.111Z"
+  }
+]

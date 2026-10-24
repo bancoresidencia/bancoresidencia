@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_50f23c19-0aad-4873-8c7a-421a4f32fac6",
+    "originalId": "50f23c19-0aad-4873-8c7a-421a4f32fac6",
+    "statement": "Homem de 63 anos, portador de hepatite C crônica e cirrose Child-Pugh A, apresenta nódulo hepático de 2,8 cm detectado em exame de imagem. Ressonância magnética mostra lesão hipervascular na fase arterial com washout na fase venosa. Alfa-fetoproteína: 480 ng/mL. Não há sinais de hipertensão portal significativa.\n\nDiante desse quadro, qual é a melhor opção terapêutica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transplante hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressecção hepática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Quimioembolização transarterial (TACE).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Radiofrequência percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tratamento apenas com antivirais para hepatite C.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve um paciente com Carcinoma Hepatocelular (CHC), diagnosticado pelos critérios de imagem clássicos (hipervascularização arterial e washout na fase venosa em paciente cirrótico) e corroborado pela alfa-fetoproteína elevada. Para definir a conduta, utilizamos o sistema de estadiamento de Barcelona (BCLC).\n\nAnálise das alternativas:\n\na) Incorreta. O transplante hepático (critérios de Milão: nódulo único de até 5 cm ou até 3 nódulos de 3 cm) é uma excelente opção para o tratamento do CHC, pois trata o tumor e a cirrose subjacente. No entanto, ele é reservado preferencialmente para pacientes que possuem contraindicações à ressecção, como disfunção hepática importante (Child-Pugh B ou C) ou sinais de hipertensão portal significativa, o que não é o caso deste paciente.\n\nb) Correta. A ressecção hepática é o tratamento de escolha para pacientes BCLC estágio 0 (muito inicial) ou A (inicial) que apresentam função hepática preservada (Child-Pugh A) e ausência de hipertensão portal clinicamente significativa. Como o paciente tem um nódulo único de 2,8 cm, é Child A e não possui hipertensão portal, a cirurgia oferece a melhor chance de cura imediata, preservando o órgão.\n\nc) Incorreta. A quimioembolização transarterial (TACE) é o tratamento padrão para o estágio intermediário (BCLC B), que se caracteriza por lesões multinodulares em pacientes com função hepática preservada e bom status de performance. Não é a primeira escolha para lesões únicas passíveis de tratamento curativo.\n\nd) Incorreta. A radiofrequência (ablação por radiofrequência) é uma modalidade curativa indicada para pequenos nódulos (geralmente menores que 3 cm), especialmente no estágio 0 (nódulos < 2 cm) ou quando o paciente não tem condições cirúrgicas para ressecção. Embora fosse uma opção possível para um nódulo de 2,8 cm, a ressecção é tradicionalmente preferida em pacientes Child A sem hipertensão portal devido às menores taxas de recorrência local.\n\ne) Incorreta. O tratamento com antivirais para hepatite C é fundamental para o controle da doença de base e redução da progressão da cirrose, mas não trata o nódulo maligno já estabelecido. O tratamento do câncer é a prioridade imediata neste cenário.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  },
+  {
+    "id": "AJUDA_50fa38bf-c2b5-47f2-a5eb-8d53ca8ed473",
+    "originalId": "50fa38bf-c2b5-47f2-a5eb-8d53ca8ed473",
+    "statement": "Assinale a alternativa correta em relação à infecção cirúrgica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uma biópsia de mama é considerada uma cirurgia potencialmente contaminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Toda herniorrafia com prótese é uma cirurgia potencialmente contaminada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A colecistectomia por vídeolaparoscopia é uma cirurgia limpa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hemorroidectomia é uma cirurgia suja.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O desbridamento de uma fasceíte necrotizante é considerada uma cirurgia contaminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas com base na classificação de cirurgias quanto ao potencial de contaminação:\n\nAlternativa a: Incorreta. A biópsia de mama é realizada em tecidos moles sem a penetração nos tratos digestório, respiratório, urinário ou genital. Portanto, é classificada como uma cirurgia limpa, pois ocorre em condições assépticas e em tecidos inicialmente estéreis.\n\nAlternativa b: Correta. Embora uma herniorrafia convencional seja uma cirurgia limpa, a presença de uma prótese (como a tela de polipropileno) altera sua classificação em muitos protocolos de vigilância e concursos médicos. O uso de implantes em cirurgias limpas eleva o risco de infecção e a gravidade de suas consequências, fazendo com que o procedimento seja classificado como potencialmente contaminado para fins de indicação de antibioticoprofilaxia e monitoramento.\n\nAlternativa c: Incorreta. A colecistectomia envolve a manipulação e abertura controlada do trato biliar, que faz parte do trato digestório. Cirurgias que penetram em tratos colonizados sob condições controladas e sem contaminação macroscópica são classificadas como potencialmente contaminadas, e não limpas.\n\nAlternativa d: Incorreta. A hemorroidectomia ocorre em uma região com alta carga bacteriana (canal anal), porém sem a presença de infecção ativa ou pus no momento da incisão. Por envolver tecidos colonizados de difícil descontaminação, é classificada como uma cirurgia contaminada. A classificação de cirurgia suja é reservada para casos com infecção prévia evidente.\n\nAlternativa e: Incorreta. O desbridamento de uma fasceíte necrotizante lida com tecidos que apresentam infecção clínica ativa, supuração, necrose e alta carga bacteriana preexistente. Procedimentos realizados em tecidos infectados ou com presença de pus são classificados como cirurgias infectadas ou sujas.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  },
+  {
+    "id": "AJUDA_50fc0376-2860-4e22-88c0-1736062d2b6c",
+    "originalId": "50fc0376-2860-4e22-88c0-1736062d2b6c",
+    "statement": "Adolescente de 12 anos, sexo feminino, é levada à Unidade Básica de Saúde (UBS) para verificar se suas vacinas estão atualizadas. Até os 8 anos, todas as vacinas preconizadas pelo Ministério da Saúde para o biênio 2024-2025 foram feitas, sendo que tomou 1 dose da vacina contra febre amarela aos 9 meses.\nNesse momento, deve receber as vacinas",
+    "options": [
+      {
+        "id": "A",
+        "text": "HPV, reforço da hepatite B e dT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reforço da hepatite B, dT e SCR.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "HPV, meningocócica ACWY e febre amarela.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "SCR, meningocócica ACWY e febre amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar o Calendário Nacional de Vacinação do Ministério da Saúde para o período de 2024-2025, focando na faixa etária da adolescência e nas atualizações recentes.\n\nAnálise da paciente: 12 anos, sexo feminino. Histórico de vacinação completo até os 8 anos, tendo recebido apenas uma dose de febre amarela aos 9 meses de idade.\n\nAlternativa A: Incorreta. Não existe recomendação de reforço de rotina para a vacina contra hepatite B em adolescentes que já completaram o esquema primário na infância. A vacina dT (difteria e tétano) deve ter o reforço atualizado a cada 10 anos; como a criança completou o calendário até os 8 anos, ela provavelmente recebeu o reforço da DTP aos 4 anos; logo, a próxima dose de dT seria necessária apenas por volta dos 14 anos.\n\nAlternativa B: Incorreta. Assim como na alternativa anterior, o reforço contra hepatite B não é indicado. Além disso, a vacina SCR (sarampo, caxumba e rubéola) já deve ter sido completada na infância com duas doses (uma aos 12 meses e outra aos 15 meses de idade), não sendo rotina aos 12 anos se o esquema estiver completo.\n\nAlternativa C: Correta. Esta alternativa contempla as atualizações e necessidades atuais da paciente:\n1. HPV: Em 2024, o Ministério da Saúde passou a adotar a dose única para a vacina contra o HPV, voltada para meninos e meninas de 9 a 14 anos. Portanto, a paciente deve recebê-la.\n2. Meningocócica ACWY: Esta vacina é indicada em dose única ou reforço para adolescentes de 11 a 14 anos de idade.\n3. Febre Amarela: De acordo com a norma atual, crianças que receberam a primeira dose da vacina antes de completarem 5 anos de idade devem receber uma dose de reforço em qualquer momento da vida, independentemente da idade. Como a paciente tomou apenas a dose aos 9 meses, ela precisa do reforço agora.\n\nAlternativa D: Incorreta. Embora a meningocócica ACWY e a febre amarela estejam indicadas, a vacina SCR não faz parte das vacinas de rotina para um adolescente de 12 anos que já possui o esquema de infância completo (duas doses feitas antes dos 8 anos).\n\nResumo: Aos 12 anos, a paciente deve atualizar a proteção contra o HPV (dose única), receber a proteção contra quatro sorotipos de meningite (ACWY) e completar o esquema de febre amarela com o reforço que ficou pendente após a dose inicial aos 9 meses.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": 59.643319213497826,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  },
+  {
+    "id": "AJUDA_51067794-8c9c-46a4-aa1f-d509a7bc2506",
+    "originalId": "51067794-8c9c-46a4-aa1f-d509a7bc2506",
+    "statement": "Durante uma reunião de planejamento em uma Unidade Básica de Saúde (UBS), os integrantes da equipe debatem estratégias para ampliar o acesso e a qualidade do cuidado na comunidade local, especialmente para populações vulneráveis. Decidem elaborar um projeto baseado nos princípios da integralidade, equidade e participação social, com foco na prevenção de doenças e promoção da saúde. Essa abordagem está alinhada com as diretrizes de um marco internacional histórico, que pela primeira vez defendeu globalmente a Atenção Primária à Saúde (APS) como estratégia fundamental para se alcançar “Saúde para Todos no Ano 2000”. Esse marco foi",
+    "options": [
+      {
+        "id": "A",
+        "text": "a Declaração de Alma-Ata, de 1978.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o Relatório Flexner, dos Estados Unidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o Relatório Lalonde, do Canadá.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o Relatório Black, do Reino Unido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a criação da Organização Mundial da Saúde (OMS), em 1948.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta e a letra a.\n\nA questao aborda a Conferencia Internacional sobre Cuidados Primarios de Saude, realizada em Alma-Ata no ano de 1978, promovida pela Organizacao Mundial da Saude (OMS) e UNICEF. Foi esse marco que estabeleceu a Atencao Primaria a Saude como o eixo estruturante dos sistemas universais de saude e cunhou o celebre lema \"Saude para Todos no Ano 2000\", integrando promocao, prevencao e participacao social.\n\nAnalise detalhada das alternativas:\n\nAlternativa a: Correta. A Declaracao de Alma-Ata (1978) consolidou as bases da Atencao Primaria a Saude em nivel global, defendendo a equidade, a integralidade do cuidado e o acesso universal atraves de acoes comunitarias e preventivas.\n\nAlternativa b: Incorreta. O Relatorio Flexner (1910) promoveu uma reforma no ensino medico dos Estados Unidos, enfatizando o modelo biomedico, a tecnologia, a pesquisa laboratorial e a atencao hospitalocentrica/especializada, opondo-se ao foco comunitario da APS.\n\nAlternativa c: Incorreta. O Relatorio Lalonde (1974), publicado no Canada, foi fundamental para o movimento de Promocao da Saude ao introduzir o conceito de determinantes da saude (biologia humana, meio ambiente, estilo de vida e organizacao dos servicos), mas nao foi o evento fundador da APS global.\n\nAlternativa d: Incorreta. O Relatorio Black (1980), produzido no Reino Unido, teve como objetivo analisar as desigualdades sociais e a persistencia das disparidades de saude na populacao britanica, mesmo apos a consolidacao do National Health Service (NHS).\n\nAlternativa e: Incorreta. A fundacao da OMS em 1948 definiu o conceito ampliado de saude como um estado de completo bem-estar fisico, mental e social, mas a estrategia direcionada da APS e a meta para o ano 2000 foram formalizadas somente em 1978.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "História do SUS",
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  },
+  {
+    "id": "AJUDA_51120939-23c8-477a-b74e-780489b04a0f",
+    "originalId": "51120939-23c8-477a-b74e-780489b04a0f",
+    "statement": "Paciente feminina, de 24 anos, sem histórico de doenças crônicas e previamente assintomática, procurou a UBS por sentir-se fraca e cansada. Relatou quadro de congestão de vias aéreas superiores, tosse seca, dor no corpo e febre baixa não mensurada, ocorrido há 2 semanas. Na ocasião, fizera uso de 2 doses de dipirona (500 mg por via oral) e não procurara atendimento. Houve melhora dos sintomas das vias aéreas e cessação da sensação de febre. Ao exame clínico, os sinais vitais eram normais. Foram evidenciadas mucosas levemente descoradas; a ausculta pulmonar revelou sibilos expiratórios discretos, sem outros achados positivos. O hemograma indicou hemoglobina de 10 g/dl, hipocromia e microcitose, leucócitos totais de 3.400/mm3 (1.300 neutrófilos/mm3 e 1.100 linfócitos/mm3) e 98.000 plaquetas/mm3. Exames básicos de bioquímica tiveram resultados normais, e testes rápidos para hepatites e vírus da imunodeficiência humana, disponíveis na UBS, foram negativos. Em relação ao quadro clínico, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um quadro de pancitopenia atribuível a episódio prévio de infecção viral; por não apresentar sinais de alarme, a paciente deve ser reavaliada em 1-2 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Trata-se provavelmente de agranulocitose associada a uso de dipirona; pela gravidade do quadro, a paciente deve ser imediatamente encaminhada para centro especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os achados do hemograma são atribuíveis a anemia ferropriva, estando indicada reposição de ferro por via oral, sem necessidade de acompanhamento posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nesta faixa etária, a causa mais comum dos achados descritos são as deficiências nutricionais, como as de folato ou vitamina B12, ou consumo abusivo de álcool.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente apresenta pancitopenia, caracterizada pela redução das três séries do hemograma: anemia (Hb 10 g/dL), leucopenia (3.400/mm³, com neutropenia e linfopenia) e plaquetopenia (98.000/mm³). O histórico recente de uma infecção de vias aéreas superiores (provável quadro viral) sugere uma supressão medular transitória pós-infecciosa, fenômeno comum e geralmente autolimitado.\n\nAlternativa A: Correta. A causa mais provável para a queda global das linhagens celulares em uma paciente jovem, previamente hígida e com histórico infeccioso recente, é a supressão medular por vírus. Como a paciente está clinicamente estável, sem febre atual, sem sinais de sangramento e com neutrófilos acima de 1.000/mm³ (ausência de neutropenia grave), a conduta expectante com repetição do hemograma em curto prazo (1 a 2 semanas) é a mais adequada.\n\nAlternativa B: Incorreta. A agranulocitose é definida tecnicamente por uma contagem de neutrófilos inferior a 500/mm³. A paciente apresenta 1.300 neutrófilos/mm³, o que descaracteriza o diagnóstico. Além disso, a agranulocitose por dipirona costuma ser uma reação idiossincrática aguda e isolada da série branca, não justificando necessariamente a alteração nas outras linhagens de forma tão branda após duas semanas do uso.\n\nAlternativa C: Incorreta. Embora a microcitose e a hipocromia sejam características marcantes da anemia ferropriva, a deficiência de ferro isolada não explica a leucopenia e a plaquetopenia (pancitopenia). Diante de alterações em múltiplas linhagens, deve-se investigar causas sistêmicas ou centrais (medulares), e não apenas carências nutricionais isoladas de ferro. Além disso, o acompanhamento é indispensável em qualquer quadro de pancitopenia.\n\nAlternativa D: Incorreta. As deficiências de vitamina B12 e folato (vitamina B9) classicamente causam anemia megaloblástica, que se apresenta com macrocitose (VCM elevado), e não microcitose, como descrito no caso. O consumo abusivo de álcool pode causar toxicidade medular e pancitopenia, mas o quadro clínico de pródromo viral e a idade da paciente tornam a etiologia pós-viral muito mais provável epidemiologicamente.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  },
+  {
+    "id": "AJUDA_5117133d-f86d-4b25-b987-5d2df1f66f63",
+    "originalId": "5117133d-f86d-4b25-b987-5d2df1f66f63",
+    "statement": "Amaral, 74 anos, está internado há três dias devido a um quadro febril secundário à pneumonia. Mesmo sendo o terceiro dia da antibioticoterapia, o paciente encontra-se prostrado, em mau estado geral, e suas mucosas estão secas. Seus exames laboratoriais mostram valores de sódio de 166, 153 e 165 mEq/L (VR 135 a 145 mEq/L), respectivamente no primeiro, segundo e terceiro dia de internação. Para corrigir esse sódio plasmático, você irá hidratar esse paciente e para isso, há a necessidade de se guiar por alguns preceitos básicos sobre a velocidade de correção do valor do sódio plasmático. Sobre isso, qual das alternativas abaixo está CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O valor de sódio no sangue pode ser reduzido em, no máximo, 10 a 12 mEq/L ao dia;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O valor de sódio no sangue pode ser reduzido em, no máximo, 15 a 17mEq/L ao dia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O valor de sódio no sangue pode ser diminuído em 20 mEq/L nas 12 primeiras horas e o restante, nas próximas 24 horas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O valor de sódio no sangue deverá atingir os valores normais em, no máximo, 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O paciente em questão apresenta um quadro de hipernatremia grave (sódio de 165 mEq/L no terceiro dia de internação). Quando o sódio permanece elevado por um período prolongado (geralmente acima de 48 horas), o cérebro desenvolve mecanismos de adaptação por meio da produção de osmóis idiogênicos para evitar a desidratação neuronal. Se a correção desse sódio for feita de forma muito rápida, a água do compartimento extracelular entra bruscamente nas células cerebrais, causando edema cerebral, convulsões e potencial dano neurológico permanente.\n\nAlternativa a: Está correta. As principais diretrizes médicas e tratados de nefrologia recomendam que, na hipernatremia crônica ou de tempo indeterminado, a redução do sódio plasmático não deve ultrapassar 10 a 12 mEq/L em 24 horas. Uma meta comumente utilizada na prática clínica é a redução de 0,5 mEq/L por hora.\n\nAlternativa b: Está incorreta. Uma redução de 15 a 17 mEq/L ao dia é considerada excessiva e perigosa, aumentando significativamente o risco de edema cerebral iatrogênico.\n\nAlternativa c: Está incorreta. Reduzir 20 mEq/L em apenas 12 horas é uma velocidade extremamente agressiva. Mesmo em casos de hipernatremia aguda documentada (ocorrida em menos de 24 horas), as correções rápidas devem ser feitas com cautela e monitoramento rigoroso, nunca atingindo valores tão altos em um intervalo tão curto para um paciente idoso e combalido.\n\nAlternativa d: Está incorreta. A prioridade no tratamento da hipernatremia não é a normalização laboratorial imediata, mas sim a segurança neurológica do paciente. Para o Sr. Amaral, que está com 165 mEq/L, atingir a normalidade (abaixo de 145 mEq/L) em 24 horas exigiria uma queda de pelo menos 20 mEq/L, o que viola os preceitos de segurança clínica.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  },
+  {
+    "id": "AJUDA_511df67f-fd64-4c44-9d3c-0ea44317786b",
+    "originalId": "511df67f-fd64-4c44-9d3c-0ea44317786b",
+    "statement": "João, lactente, três meses, é levado ao consultório pela mãe devido a episódios frequentes de regurgitação após as mamadas. A mãe relata que as regurgitações ocorrem várias vezes ao dia, mas João está ganhando peso adequadamente e não apresenta irritabilidade. No exame físico, o lactente parece saudável, ativo e sem sinais de desidratação. A mãe menciona que, apesar das regurgitações, ele está se alimentando bem e não teve episódios de vômito bilioso ou hematêmese. Com relação a este caso, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As regurgitações de João são típicas de Refluxo Gastroesofágico (RGE) fisiológico e não requerem tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "João apresenta sinais de Doença do Refluxo Gastroesofágico (DRGE) e necessita de intervenção médica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "João deve ser submetido a exames para investigar a presença de alergia alimentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A condição de João sugere uma complicação grave, como estenose pilórica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\nO quadro clínico de João é o exemplo clássico do chamado \"golfador feliz\". Ele apresenta regurgitações frequentes, que são comuns nessa faixa etária (pico entre 3 e 4 meses), devido à imaturidade do esfíncter esofágico inferior e à dieta predominantemente líquida. O ponto crucial para o diagnóstico diferencial é a ausência de sinais de alerta: o lactente ganha peso adequadamente, não é irritável, alimenta-se bem e o exame físico é normal.\n\nAlternativa (a) CORRETA: As regurgitações de João caracterizam o Refluxo Gastroesofágico (RGE) fisiológico. Diferente da doença propriamente dita, o RGE fisiológico não causa danos à saúde da criança nem compromete seu desenvolvimento. A conduta correta é apenas a orientação familiar sobre a benignidade do quadro e medidas posturais, sem necessidade de exames complementares ou tratamento medicamentoso.\n\nAlternativa (b) INCORRETA: Para ser diagnosticado com Doença do Refluxo Gastroesofágico (DRGE), João precisaria apresentar complicações decorrentes do refluxo, como baixo ganho ponderal, esofagite (manifestada por irritabilidade e choro excessivo), recusa alimentar ou sintomas respiratórios recorrentes. Como ele está saudável e ganhando peso, esse diagnóstico é excluído.\n\nAlternativa (c) INCORRETA: A investigação para alergia alimentar, como a Alergia à Proteína do Leite de Vaca (APLV), seria indicada se houvesse outros sintomas associados, como diarreia, sangue nas fezes, dermatite atópica grave ou déficit de crescimento. No caso apresentado, não há justificativa clínica para suspeitar de alergia.\n\nAlternativa (d) INCORRETA: A estenose hipertrófica de piloro é uma condição cirúrgica que se manifesta geralmente entre a 3ª e a 6ª semana de vida. O sintoma principal são vômitos em jato (não apenas regurgitações), que ocorrem após quase todas as mamadas, levando rapidamente à desidratação e perda de peso, o que contradiz o estado clínico de João.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  },
+  {
+    "id": "AJUDA_512789e3-a337-4585-b2e9-ec8914b79941",
+    "originalId": "512789e3-a337-4585-b2e9-ec8914b79941",
+    "statement": "A Insuficiência Hepática Aguda (Hepatite Fulminante) é uma síndrome de rápida deterioração da função hepática. O reconhecimento precoce e a transferência para um centro de transplante são vitais. Os Critérios do King's College são amplamente utilizados para indicar o transplante hepático de emergência. Para casos de insuficiência hepática aguda de etiologia NÃO associada ao paracetamol (ex: viral, autoimune, drogas idiossincráticas), o critério que indica transplante imediato, independentemente do grau de encefalopatia, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bilirrubina total > 10 mg/dL, independentemente do INR ou da idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tempo de Protrombina (TP) > 100 segundos (ou INR > 6,5), isoladamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Presença de Encefalopatia Hepática grau III ou IV, mesmo com INR < 1,5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nível de lactato arterial > 2 mmol/L na admissão, sem necessidade de outros critérios.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Os Critérios do King's College são ferramentas prognósticas fundamentais para determinar a necessidade de transplante hepático de emergência em pacientes com Insuficiência Hepática Aguda. Esses critérios são divididos em dois grupos distintos, dependendo da etiologia: por intoxicação por paracetamol (acetaminofeno) ou por causas não relacionadas ao paracetamol (como hepatites virais, autoimunes ou reações idiossincráticas a drogas).\n\nPara as causas NÃO associadas ao paracetamol, o transplante é indicado se o paciente preencher um critério maior isolado ou três critérios menores associados.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: A bilirrubina total isolada não é um critério para transplante imediato. Nos critérios de King's College para causas não-paracetamol, a bilirrubina entra como um dos critérios menores (combinados), e o valor de corte utilizado é superior a 17,6 mg/dL (ou 300 micromol/L), e não 10 mg/dL.\n\nAlternativa (b) CORRETA: Este é o critério maior para casos não relacionados ao paracetamol. A presença de um Tempo de Protrombina (TP) superior a 100 segundos ou um INR superior a 6,5 é, por si só, uma indicação formal de transplante hepático de urgência, independentemente de qualquer outro fator, inclusive do grau de encefalopatia hepática. Isso ocorre porque uma coagulopatia dessa magnitude reflete uma necrose hepática maciça e uma perda crítica da função sintética do órgão.\n\nAlternativa (c) INCORRETA: A encefalopatia hepática é essencial para o diagnóstico de insuficiência hepática aguda (hepatite fulminante), mas sua presença ou grau não são critérios isolados para transplante no grupo não-paracetamol. No sistema de pontuação combinada (onde são necessários 3 de 5 critérios), o que se considera é o intervalo de tempo superior a 7 dias entre o início da icterícia e o aparecimento da encefalopatia, o que sugere um curso subagudo com pior prognóstico.\n\nAlternativa (d) INCORRETA: O nível de lactato arterial é um critério prognóstico validado e utilizado especificamente para a insuficiência hepática causada por paracetamol. Para causas não-paracetamol, o lactato não faz parte dos critérios clássicos do King's College para indicação de transplante. Nos casos de paracetamol, valores de lactato maiores que 3,0 mmol/L na admissão ou maiores que 3,5 mmol/L após a reposição volêmica são gatilhos para o transplante.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Transplante Hepático e Hepatite Fulminante"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  },
+  {
+    "id": "AJUDA_512d2b00-3a30-4e01-bc61-d0db7cff1a24",
+    "originalId": "512d2b00-3a30-4e01-bc61-d0db7cff1a24",
+    "statement": "Marcos do desenvolvimento são um conjunto de habilidades que a maioria das crianças adquire em uma determinada idade. De acordo com a tabelas dos marcos do desenvolvimento da caderneta da criança elaborada pelo Ministério da Saúde, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Duplicar sílabas é um marco adquirido entre 9-12m.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mudar de posição (rolar) é um marco adquirido entre 4-6 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deambular com apoio é um marco adquirido entre 7-9 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fazer o movimento de pinça é um marco adquirido entre 6-8 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os marcos do desenvolvimento infantil segundo as diretrizes do Ministério da Saúde (Caderneta da Criança), um tema recorrente em provas de pediatria. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A: Incorreta. Duplicar sílabas, também conhecido como balbucio reduplicado (ex.: \"mama\", \"dada\"), é um marco esperado para a faixa etária de 6 a 9 meses. No período de 9 a 12 meses, a criança já deve progredir para falar uma ou duas palavras com significado e atender a comandos simples.\n\nAlternativa B: Correta. Mudar de posição (rolar) é, de fato, o marco motor esperado para o intervalo entre 4 e 6 meses. Nesse período, a criança desenvolve tônus muscular e coordenação suficientes para girar o corpo sobre o próprio eixo, partindo da posição de decúbito dorsal para ventral e vice-versa.\n\nAlternativa C: Incorreta. Deambular com apoio (ou \"cruising\", quando a criança anda segurando-se nos móveis) é um marco típico da faixa de 9 a 12 meses. Entre os 7 e 9 meses, os marcos principais são sentar-se sem apoio e começar a se colocar de pé com auxílio, mas a marcha com apoio é uma evolução posterior.\n\nAlternativa D: Incorreta. O movimento de pinça refinada (utilizar as polpas do polegar e do indicador para pegar objetos pequenos) é um marco de motricidade fina que se consolida entre os 9 e 12 meses. Entre 6 e 9 meses, a criança ainda utiliza a preensão palmar ou uma pinça lateral imatura.\n\nResumo dos marcos citados conforme a Caderneta da Criança:\n- 4 a 6 meses: Rola (muda de posição).\n- 6 a 9 meses: Duplica sílabas e senta sem apoio.\n- 9 a 12 meses: Faz movimento de pinça e deambula com apoio.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  },
+  {
+    "id": "AJUDA_514006d0-626e-474e-a544-fc327f220754",
+    "originalId": "514006d0-626e-474e-a544-fc327f220754",
+    "statement": "Os Determinantes Sociais da Saúde (DSS) são as condições sociais em que as pessoas vivem e trabalham, que influenciam sua saúde. Segundo o modelo de Dahlgren & Whitehead, os Determinantes Intermediários incluem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Condições socioeconômicas, culturais e ambientais gerais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Idade, sexo e fatores genéticos e biológicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Redes sociais e comunitárias, estilo de vida individual e condições de trabalho.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Políticas macroeconômicas e de distribuição de renda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Apenas fatores ambientais como poluição do ar e da água.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O modelo de determinantes sociais da saúde de Dahlgren e Whitehead é representado graficamente como um arco-íris, organizado em camadas que vão do micro (individual) ao macro (socioestrutural). Para responder a essa questão, é preciso identificar quais fatores compõem as camadas situadas entre as características individuais e o contexto macroeconômico.\n\nAlternativa a) Incorreta. Estas condições estão localizadas na camada mais externa do modelo de Dahlgren e Whitehead. São chamadas de determinantes distais ou macroestruturais, pois representam o contexto geral em que a sociedade se organiza, influenciando todas as outras camadas de forma indireta.\n\nAlternativa b) Incorreta. Estes fatores ocupam o centro do modelo. São os determinantes individuais e biológicos, geralmente considerados não modificáveis (como a carga genética e a idade). Eles não são classificados como intermediários, mas sim como a base individual sobre a qual os determinantes sociais atuam.\n\nAlternativa c) Correta. Os determinantes intermediários situam-se entre os fatores individuais e as macroestruturas. No modelo de Dahlgren e Whitehead, isso engloba o estilo de vida individual (comportamentos), as redes sociais e comunitárias (apoio social) e as condições de vida e trabalho (que incluem habitação, acesso a serviços de saúde, saneamento, educação e ambiente de trabalho). Essa camada demonstra como o ambiente social e as escolhas de vida impactam diretamente a saúde das pessoas.\n\nAlternativa d) Incorreta. Assim como na alternativa A, as políticas macroeconômicas e de distribuição de renda são determinantes estruturais ou distais. Elas moldam as desigualdades sociais que, por sua vez, vão determinar as condições intermediárias de vida e trabalho.\n\nAlternativa e) Incorreta. Esta alternativa é excessivamente restritiva. Embora fatores ambientais locais (como saneamento ou poluição no trabalho) façam parte das condições de vida e trabalho, os determinantes intermediários são muito mais amplos, incluindo redes sociais, estilos de vida e diversos outros fatores socioeconômicos específicos.\n\nResumo: O gabarito é a letra C porque ela agrupa corretamente as camadas intermediárias do modelo (estilos de vida, redes sociais e condições de trabalho/vida), que fazem a ponte entre a biologia individual e a estrutura macroeconômica da sociedade.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:50.900Z"
+  }
+]

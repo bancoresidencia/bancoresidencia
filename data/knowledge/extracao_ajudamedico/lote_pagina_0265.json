@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_49a3b6ca-6fae-4c83-8552-b57ac346d587",
+    "originalId": "49a3b6ca-6fae-4c83-8552-b57ac346d587",
+    "statement": "Um paciente de 65 anos de idade, hipertenso e diabético, deu entrada no pronto-socorro com dor torácica de forte intensidade, iniciada há duas horas. Ao exame físico, encontra-se com FC = 105 bpm, FR = 20 irpm, SatO2 = 96% e PA = 160 mmHg X 100 mmHg. O eletrocardiograma mostrou supradesnivelamento de ST em DII, DIII e aVF. Qual é a conduta inicial mais indicada para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar ecocardiograma transtorácico imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar terapia fibrinolítica e transferir para hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar AAS, clopidogrel, heparina e encaminhar para angioplastia primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar biomarcadores de necrose miocárdica e repetir eletrocardiograma (ECG) após seis horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um paciente idoso, com múltiplos fatores de risco cardiovascular (hipertensão e diabetes), apresentando dor torácica típica e um eletrocardiograma com supradesnivelamento do segmento ST nas derivações DII, DIII e aVF. Esses achados confirmam o diagnóstico de Infarto Agudo do Miocárdio com Supradesnivelamento de ST (IAMCSST) de parede inferior.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O ecocardiograma transtorácico é útil para avaliar a função ventricular ou em casos de dúvida diagnóstica e complicações. No entanto, no IAMCSST, o diagnóstico é feito pelo ECG e pela clínica. Realizar um eco imediatamente atrasaria o tempo para a reperfusão, que é a prioridade absoluta.\n\nAlternativa b) Incorreta. A terapia fibrinolítica (trombolítico) é uma estratégia de reperfusão indicada apenas quando a angioplastia primária não pode ser realizada em tempo hábil (geralmente em até 120 minutos após o diagnóstico). A alternativa c é mais completa por listar a terapia medicamentosa adjuvante necessária antes de qualquer procedimento de reperfusão.\n\nAlternativa c) Correta. Esta alternativa resume o manejo inicial padrão-ouro para o IAMCSST. O paciente deve receber imediatamente a terapia antitrombótica, composta por dupla antiagregação plaquetária (AAS associado a um inibidor P2Y12, como o clopidogrel) e anticoagulação sistêmica (comumente heparina). A angioplastia primária é a estratégia de reperfusão preferencial por apresentar melhores resultados em comparação aos fibrinolíticos, devendo ser realizada o mais rápido possível.\n\nAlternativa d) Incorreta. No infarto com supradesnivelamento de ST, a conduta é imediata. Não se deve aguardar o resultado de biomarcadores de necrose miocárdica (como troponina) para iniciar o tratamento ou realizar a reperfusão. Esperar seis horas para repetir o ECG causaria a perda de uma janela preciosa para salvar o músculo cardíaco, aumentando drasticamente a morbimortalidade.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  },
+  {
+    "id": "AJUDA_49a5dd05-3aab-42b8-b0e0-c3a95d645d90",
+    "originalId": "49a5dd05-3aab-42b8-b0e0-c3a95d645d90",
+    "statement": "A infecção por Helicobacter pylori (H. pylori) é uma das principais causas de úlcera péptica, afetando milhões de pessoas em todo o mundo. O mecanismo essencial para a formação de úlceras pépticas associadas à infecção por H. pylori é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Produção aumentada de muco protetor pelo estômago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infecção exclusiva do corpo gástrico sem comprometimento do antro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hiperplasia das glândulas pilóricas e hipergastrinemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Diminuição da produção de gastrina e ácido clorídrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A compreensão da fisiopatologia da infecção pelo *Helicobacter pylori* é fundamental para entender a formação das úlceras pépticas. O mecanismo central envolve o desequilíbrio entre fatores agressores e protetores da mucosa gástrica e duodenal.\n\nAnálise das alternativas:\n\na) Incorreta. O *H. pylori* não aumenta a produção de muco. Pelo contrário, a bactéria produz diversas enzimas, como as proteases e as lipases, além de citotoxinas (CagA e VacA), que degradam a camada de muco protetor e danificam diretamente as células epiteliais, expondo a mucosa à ação corrosiva do ácido clorídrico.\n\nb) Incorreta. A infecção pelo *H. pylori* tipicamente se inicia ou é mais predominante no antro gástrico. Quando a infecção é restrita ao antro (gastrite antral), há um estímulo para a secreção ácida. Se a infecção progredir para o corpo gástrico de forma intensa (pangastrite), pode ocorrer atrofia da mucosa e redução da acidez, o que está mais relacionado ao câncer gástrico do que à úlcera duodenal clássica.\n\nc) Correta. Este é o mecanismo fisiopatológico clássico da úlcera duodenal associada ao *H. pylori*. A presença da bactéria no antro gástrico gera um processo inflamatório que reduz a população de células D (produtoras de somatostatina). Como a somatostatina é o \"freio\" natural da gastrina, sua redução leva à hipergastrinemia. A gastrina elevada estimula as glândulas oxínticas do corpo gástrico a produzirem mais ácido clorídrico (hipercloridria). Esse excesso de ácido atinge o duodeno, causando metaplasia gástrica e facilitando a formação da úlcera.\n\nd) Incorreta. O mecanismo que leva à úlcera péptica, especialmente a duodenal, é caracterizado pelo aumento (e não pela diminuição) da produção de gastrina e de ácido clorídrico. A redução da acidez gástrica (hipocloridria) ocorre apenas em fases avançadas de gastrite atrófica multifocal, o que não é o mecanismo primário da formação da úlcera péptica ativa pela bactéria.\n\nResumo do mecanismo: A infecção antral pelo *H. pylori* reduz a somatostatina -> ocorre hipergastrinemia secundária -> há aumento da secreção de ácido clorídrico pelas células parietais -> a carga ácida elevada agride a mucosa, resultando em ulceração.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  },
+  {
+    "id": "AJUDA_49a7dfb2-dab0-4da8-9b9a-118f99aa1177",
+    "originalId": "49a7dfb2-dab0-4da8-9b9a-118f99aa1177",
+    "statement": "Homem, 57 anos de idade, residente em uma área rural de difícil acesso, é portador de diabetes mellitus tipo 2 há 12 anos. Em visita domiciliar, ele relata usar metformina 850mg, 3 vezes ao dia, e não faz com frequência o controle de glicemia. Não tem usado a medicação, em virtude da dificuldade de comparecer à Unidade de Saúde. Nos últimos três meses, começou a notar uma ferida no pé esquerdo, que inicialmente era pequena, mas que tem aumentado de tamanho, com bordas endurecidas e exsudato purulento esporádico. Também apresenta dor de intensidade moderada que piora ao andar, mas continua trabalhando na lavoura. Ao exame físico, observa-se uma úlcera plantar com secreção amarela serosa, presença de pulsos periféricos diminuídos e uma área ao redor da lesão com edema discreto e rubor. Foi feita uma glicemia capilar: 240mg/dl no momento da consulta.\n\nCom relação à necessidade de antibioticoterapia sistêmica neste paciente, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ulceração descrita é compatível com lesão isquêmica, sem indicação no momento para o uso de antibióticos sistêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença de pulsos periféricos diminuídos e dor moderada justifica o início de antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A presença de exsudato, edema e rubor indica infecção, sendo necessário o início de antibioticoterapia sistêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A glicemia elevada (240mg/dl) é o principal critério que indica o uso de antibióticos sistêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro clássico de \"Pé Diabético\", uma complicação grave do Diabetes Mellitus tipo 2. Os pontos-chave para a resolução são a presença de uma úlcera plantar crônica associada a sinais inflamatórios locais e secreção. O diagnóstico de infecção no pé diabético é eminentemente clínico. Segundo os consensos internacionais (IWGDF) e a Sociedade Brasileira de Diabetes, a infecção é definida pela presença de pelo menos dois dos seguintes sinais: edema (induração), eritema (rubor), dor/sensibilidade local, calor ou exsudato purulento.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): Embora a diminuição de pulsos periféricos sugira um componente isquêmico (Doença Arterial Periférica), a descrição de exsudato purulento, edema e rubor confirma que há um processo infeccioso sobreposto. Uma lesão puramente isquêmica não explicaria a secreção purulenta. Portanto, a antibioticoterapia é, sim, necessária para tratar a infecção secundária.\n\nAlternativa B (Incorreta): A presença de pulsos diminuídos e dor ao caminhar (claudicação) são marcadores de insuficiência vascular, e não critérios para o uso de antibióticos. O antibiótico é indicado para tratar a invasão bacteriana dos tecidos, e não a deficiência de fluxo sanguíneo.\n\nAlternativa C (Correta): Esta alternativa descreve exatamente os critérios clínicos para o diagnóstico de infecção no pé diabético. A presença de exsudato purulento (pus), edema e rubor (eritema) ao redor da lesão caracteriza uma infecção cutânea/subcutânea. Nesses casos, o tratamento envolve cuidados locais, controle glicêmico e, obrigatoriamente, antibioticoterapia sistêmica para evitar a progressão para tecidos profundos, osteomielite ou sepse.\n\nAlternativa D (Incorreta): A glicemia de 240 mg/dL indica um mau controle metabólico, que é comum em pacientes com infecções agudas (o estresse infeccioso eleva o cortisol e a adrenalina, aumentando a glicemia). No entanto, o valor isolado da glicemia não é o critério para iniciar antibióticos; o que define a terapia antimicrobiana são os sinais flogísticos de infecção no exame físico da lesão.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Cirurgia Vascular",
+      "Medicina de Família e Comunidade",
+      "Diabetes Mellitus Tipo 2",
+      "Antibióticos"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  },
+  {
+    "id": "AJUDA_49a979a5-b1ce-42b6-ab19-09dea1a918cf",
+    "originalId": "49a979a5-b1ce-42b6-ab19-09dea1a918cf",
+    "statement": "Adolescente, sexo feminino, 15 anos de idade, veio à Unidade Básica de Saúde (UBS) acompanhada de uma prima para consulta de rotina. Ela entra na consulta sozinha para atendimento. Tem antecedente de asma e faz uso de corticoide inalatório em baixa dose associado a beta-2 de longa ação de forma contínua (formoterol 6 mcg + budesonida 200 mcg de 12 em 12 horas). Ela refere preocupação com tosse iniciada há uma semana, sem coriza ou febre. Ao questionar possíveis desencadeantes para a tosse, ela conta que tudo começou após fumar um cigarro de maconha na casa de um amigo há uma semana. Diz que foi uma única vez e que não pretende repetir, justamente por causa dessa tosse. Ela só demonstra preocupação com a reação dos pais se soubessem do evento e pede que essas informações não sejam compartilhadas com eles.\nDo ponto de vista ético, qual deve ser a conduta neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quebrar o sigilo e comunicar os pais sobre o uso de drogas, pois essa atitude comprometeu o controle de doença crônica (asma).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fazer o atendimento médico normalmente e, após liberação do paciente, fazer relatório ao Conselho Tutelar, por se tratar de crime (drogas ilícitas).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Garantir o atendimento e o sigilo, orientando os males dessa prática e prescrevendo medicação pertinente ao tratamento da tosse.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar a convocação dos pais e aguardar o comparecimento deles antes de prosseguir com o atendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda um tema fundamental da ética médica: o sigilo profissional no atendimento a adolescentes. O ponto central é entender que o adolescente tem direito à privacidade e ao sigilo, desde que tenha capacidade de discernimento para compreender sua situação e as orientações médicas, e que não haja risco iminente de morte ou dano grave a si mesmo ou a terceiros.\n\nA alternativa (c) é a correta, pois respeita o Código de Ética Médica e as normas do Conselho Federal de Medicina. A paciente tem 15 anos e demonstrou capacidade de compreensão ao correlacionar o sintoma (tosse) com o uso da substância e decidir não repetir o ato. Como não há risco de morte imediato ou situação de abuso/violência, o médico deve garantir o sigilo, orientar sobre os riscos à saúde e tratar a queixa clínica apresentada.\n\nA alternativa (a) está incorreta, porque o fato de o uso da droga ter afetado temporariamente o controle da asma não configura uma justificativa legal ou ética para a quebra de sigilo. A quebra de sigilo é uma medida de exceção, reservada para situações de risco grave e iminente, o que não se aplica a um episódio isolado de tosse após uso único de substância.\n\nA alternativa (b) está incorreta por dois motivos: primeiro, o médico não possui a função de denunciar usuários de drogas às autoridades policiais ou ao Conselho Tutelar, o que configuraria uma violação grave do sigilo profissional. Segundo, o consumo de drogas, por si só, não é motivo para acionar o Conselho Tutelar, a menos que a criança ou o adolescente esteja em situação de abandono, risco social ou vulnerabilidade extrema que o médico não consiga manejar no âmbito da saúde.\n\nA alternativa (d) está incorreta, porque o adolescente tem o direito garantido de ser atendido sozinho e de ter sua autonomia respeitada. Condicionar o atendimento à presença dos pais para um jovem que possui discernimento é uma barreira ao acesso à saúde e infringe as diretrizes de atendimento a essa faixa etária, que estimulam a criação de um vínculo de confiança entre médico e paciente.\n\nEm resumo, a conduta ética baseia-se em: acolher a adolescente, realizar o atendimento clínico, manter o sigilo solicitado e utilizar o momento para educação em saúde, fortalecendo a relação médico-paciente sem a necessidade de intervenção dos responsáveis neste cenário específico.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  },
+  {
+    "id": "AJUDA_49b03e81-091d-4ca9-bf16-bf65e3d121d3",
+    "originalId": "49b03e81-091d-4ca9-bf16-bf65e3d121d3",
+    "statement": "Casal tenta engravidar há 2 anos. Mulher 34 anos, ciclos regulares, reserva ovariana com AMH (Hormônio Anti-Mülleriano)= 0,7 ng/mL e AFC (Contagem de Folículos Antrais)= 4. Histerossalpingografia normal. Espermograma normal. Paciente deseja tentativa rápida devido ao tempo de infertilidade. Qual conduta inicial é mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coito programado por 6 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indução de ovulação leve com letrozol associada à inseminação intrauterina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fertilização in vitro, considerando idade e baixa reserva ovariana",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Histeroscopia diagnóstica antes de qualquer tratamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estimulação ovariana com gonadotrofinas sem reprodução assistida",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro de infertilidade há 2 anos, associado a marcadores de baixa reserva ovariana: Hormônio Anti-Mülleriano (AMH) de 0,7 ng/mL (valor de referência para baixa reserva geralmente abaixo de 1,1 ng/mL) e Contagem de Folículos Antrais (AFC) de 4 (valores abaixo de 5 a 7 sugerem baixa reserva). Apesar de ter tubas patentes (histerossalpingografia normal) e parceiro com espermograma normal, o tempo de infertilidade e a urgência devido à reserva ovariana reduzida direcionam a conduta.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA fertilização in vitro (FIV) é a conduta de escolha para casais com infertilidade de longa data (2 anos) e sinais claros de falência ovariana iminente ou reserva muito baixa. A FIV maximiza as chances de gravidez por ciclo, o que é crucial para uma paciente de 34 anos com AMH e AFC baixos, pois ela possui uma \"janela de oportunidade\" curta antes que a reserva se esgote ou a qualidade dos óvulos decline significativamente. Além disso, atende ao desejo da paciente por uma tentativa rápida e eficaz.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): O coito programado é uma técnica de baixa complexidade com taxas de sucesso reduzidas. Após 2 anos de tentativas frustradas e com baixa reserva ovariana, insistir nessa conduta por mais 6 meses posterga o tratamento efetivo e consome o tempo reprodutivo escasso da paciente.\n\nAlternativa (b): A inseminação intrauterina (IIU) exige permeabilidade tubária e espermograma normal (que a paciente possui), porém as taxas de sucesso da IIU são consideravelmente menores que as da FIV. Em casos de baixa reserva ovariana, o tempo é um fator determinante, e a IIU pode não ser eficiente o suficiente antes que os estoques de folículos se esgotem.\n\nAlternativa (d): A histeroscopia diagnóstica não é indicada de rotina como passo inicial se a histerossalpingografia é normal e não há suspeita clínica de patologia intracavitária (como pólipos ou miomas submucosos). Realizá-la agora apenas atrasaria o início do tratamento de reprodução assistida.\n\nAlternativa (e): A estimulação com gonadotrofinas para relações sexuais programadas aumenta o risco de gestação múltipla e não oferece o controle laboratorial e as altas taxas de êxito necessárias para um caso de baixa reserva ovariana e infertilidade prolongada. Não é a conduta mais apropriada para otimizar as chances de gravidez rápida neste cenário.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  },
+  {
+    "id": "AJUDA_49b5d67b-ea5c-482c-87af-b74eda049cfc",
+    "originalId": "49b5d67b-ea5c-482c-87af-b74eda049cfc",
+    "statement": "Paciente masculino, de 58 anos, com cirrose por HCV, sem história de etilismo, realizou tomografia computadorizada de abdômen contrastada. No laudo, constava: Há 2 nódulos hepáticos, um no segmento III medindo 2,7 cm e outro no segmento VI medindo 2,3 cm, ambos com realce heterogêneo pelo contraste na fase arterial e diminuição do realce pelo contraste nas fases portal e tardia. Não há sinais de invasão vascular ou linfonodomegalias intra-abdominais. Fígado de bordos rombos, ascite moderada, esplenomegalia (baço com 18 cm) e extensa circulação colateral porto-sistêmica. Tomografia computadorizada de tórax estava normal. Exames laboratoriais indicaram albumina de 2,2 g/dl (valor de referência - VR: 3,5-5,2 g/dl), INR de 1,6, bilirrubina total de 1,7 mg/dl (VR: 0,2-1,2 mg/dl) e alfafetoproteína de 87 ng/ml (VR: < 10 ng/ml). Considerando o quadro clínico, qual dos tratamentos abaixo está indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hepatectomia não regrada de ambas as lesões",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hepatectomia regrada do segmento III e do segmento VI do fígado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transplante hepático",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tratamento sistêmico com sorafenibe apenas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta um Carcinoma Hepatocelular (CHC), diagnosticado pelos achados típicos na tomografia computadorizada (realce arterial e washout nas fases portal e tardia) em um contexto de cirrose por hepatite C. Para definir a melhor conduta, devemos avaliar a função hepática, a presença de hipertensão portal e a extensão da doença oncológica.\n\n1. Estadiamento da Função Hepática e Hipertensão Portal:\nO paciente possui sinais evidentes de cirrose descompensada e hipertensão portal clinicamente significativa: ascite moderada, esplenomegalia, circulação colateral, albumina baixa (2,2 g/dl) e INR alargado (1,6). Calculando o escore de Child-Pugh, o paciente soma 3 pontos pela albumina, 2 pontos pela ascite, 1 ponto pela bilirrubina, 1 ponto pelo INR e 1 ponto pela ausência de encefalopatia, totalizando 8 pontos (Child-Pugh B). A presença de hipertensão portal e Child B contraindica a ressecção hepática (hepatectomia).\n\n2. Critérios de Milão:\nPara indicação de transplante hepático no CHC, o padrão-ouro são os Critérios de Milão: presença de nódulo único de até 5 cm OU até 3 nódulos de até 3 cm cada, sem invasão vascular ou doença extra-hepática. O paciente possui 2 nódulos (2,7 cm e 2,3 cm), sem invasão vascular e com TC de tórax normal. Portanto, ele preenche os Critérios de Milão.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A hepatectomia não regrada (ressecção em cunha) não deve ser realizada. Apesar dos nódulos serem pequenos, o fígado cirrótico com hipertensão portal e disfunção (Child B) não suporta a retirada de parênquima, apresentando altíssimo risco de insuficiência hepática pós-operatória.\n\nAlternativa B (Incorreta): A hepatectomia regrada (anatômica) é igualmente contraindicada. A limitação não é técnica ou anatômica, mas sim a reserva funcional do fígado remanescente e as complicações da hipertensão portal pré-existente.\n\nAlternativa C (Correta): O transplante hepático é o tratamento ideal. O paciente está dentro dos Critérios de Milão e apresenta disfunção hepática/hipertensão portal que impede outros tratamentos cirúrgicos. O transplante trata simultaneamente os tumores e a doença de base (cirrose).\n\nAlternativa D (Incorreta): O sorafenibe é uma terapia sistêmica indicada para casos de CHC avançado (estágio C de BCLC), que envolve invasão da veia porta ou metástases a distância, ou em casos de progressão após tratamentos locorregionais, desde que haja função hepática preservada (preferencialmente Child-Pugh A). Não se aplica a este paciente que possui proposta curativa com o transplante.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Transplante Hepático e Hepatite Fulminante",
+      "Cirrose Hepática",
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  },
+  {
+    "id": "AJUDA_49b9d1e0-0418-400e-bd05-9933183df5fb",
+    "originalId": "49b9d1e0-0418-400e-bd05-9933183df5fb",
+    "statement": "Lactante de 4 meses é trazida pela mãe para consulta de rotina na UBS. A criança está com o cartão de vacina atualizado, tendo recebido todas as vacinas previstas para a idade no Calendário Nacional de Vacinação do Ministério da Saúde. A mãe comenta que a avó da criança, com quem moram, foi recentemente diagnosticada com herpes zóster. Preocupada, ela pergunta se a criança corre algum risco e se há alguma vacina que ela possa tomar para se proteger. \nConsiderando o calendário vacinal vigente, a idade da paciente e a situação epidemiológica, a conduta mais adequada em relação à vacinação é",
+    "options": [
+      {
+        "id": "A",
+        "text": "administrar imediatamente a vacina varicela (atenuada) para proteger a criança contra o vírus varicela-zóster, mesmo fora da idade habitual do calendário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administrar a vacina influenza trivalente, pois o herpes zóster é uma complicação da influenza, e a vacina está indicada a partir dos 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "reforçar que a criança está adequadamente protegida pelas vacinas já recebidas e que não há uma vacina adicional indicada para essa situação específica na faixa etária de 4 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "administrar imediatamente a primeira dose da vacina meningocócica ACWY, pois ela confere proteção cruzada contra infecções herpéticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "postergar a administração das próximas vacinas de rotina (6 meses) e substituí-las pela vacina varicela, isoladamente, assim que a criança completar 6 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O herpes-zóster é causado pela reativação do vírus varicela-zóster (VVZ). Indivíduos com lesões ativas de herpes-zóster podem transmitir o vírus por contato direto para pessoas suscetíveis, que, se infectadas, desenvolverão varicela (catapora) e não zóster. \n\nNo caso de um lactente de 4 meses exposto, deve-se orientar o isolamento das lesões da avó (mantê-las cobertas e higienizar as mãos). Do ponto de vista vacinal, não há imunizante específico contra a varicela aprovado ou indicado para essa faixa etária, devendo-se manter o calendário de vacinação de rotina.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A vacina contra a varicela é composta por vírus vivos atenuados e só é administrada a partir dos 9 a 12 meses (no Programa Nacional de Imunizações - PNI, aos 15 meses como tetraviral ou varicela monovalente). Ela é contraindicada aos 4 meses de idade devido à imaturidade imunológica, à presença de anticorpos maternos circulantes que interferem na resposta vacinal e à ausência de dados de segurança nessa faixa etária.\n\nAlternativa b: Incorreta. O herpes-zóster não tem relação etiológica com a influenza. Trata-se de vírus de famílias completamente distintas (Herpesviridae e Orthomyxoviridae, respectivamente). Além disso, a vacina influenza é indicada apenas a partir dos 6 meses de vida.\n\nAlternativa c: Correta. O lactente está com a vacinação em dia para os 4 meses (tendo recebido as doses correspondentes de Pentavalente, VIP, Pneumocócica 10-valente e Rotavírus). Não existe indicação de vacina adicional ou antecipação de imunizantes para a situação apresentada nessa idade. \n\nAlternativa d: Incorreta. A vacina meningocócica ACWY protege contra a bactéria Neisseria meningitidis dos sorogrupos A, C, W e Y, não conferindo nenhuma imunidade cruzada contra infecções herpéticas ou virais.\n\nAlternativa e: Incorreta. O calendário vacinal básico deve ser rigorosamente seguido e não deve ser postergado ou substituído. As vacinas de 6 meses (Pentavalente e VIP) são fundamentais e a vacina contra a varicela não é indicada aos 6 meses no calendário de rotina.\n\nGabarito: Alternativa c.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Imunizações",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  },
+  {
+    "id": "AJUDA_49c5bf10-8904-4f0c-843f-13cfea455eae",
+    "originalId": "49c5bf10-8904-4f0c-843f-13cfea455eae",
+    "statement": "Acilino, 64 anos, portador de fibrose pulmonar idiopática, foi internado por dispneia progressiva após meses de piora funcional e sintomática sustentadas. Ele possui diretivas antecipadas de vontade contrárias ao uso de intubação orotraqueal e outras medidas de suporte artificial de vida. No exame físico, apresenta estertores em velcro nos campos pulmonares inferiores, retração de fúrcula e uso de musculatura acessória abdominal. Está utilizando máscara não reinalante a 12 l/min, com saturação de oxigênio de 96% e frequência respiratória de 32 ipm. Assinale a alternativa CORRETA referente à conduta para manejo de dispneia:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intubação orotraqueal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento do fluxo de oxigênio para 15 l/min;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrição de B2-agonista associado a anticolinérgico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrição de opioide.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta o caso de um paciente com Fibrose Pulmonar Idiopática (FPI) em estágio avançado, manifestando sinais claros de insuficiência respiratória e desconforto respiratório importante (taquipneia, uso de musculatura acessória e retração de fúrcula). O ponto crucial para a resolução é a presença de Diretivas Antecipadas de Vontade, nas quais o paciente expressa o desejo de não ser submetido a medidas invasivas de suporte de vida, como a intubação. Nesse cenário, o foco do tratamento deve ser o alívio sintomático e o conforto (cuidados paliativos).\n\nAnálise das alternativas:\n\na) Incorreta. A intubação orotraqueal (IOT) seria a conduta padrão em um quadro de insuficiência respiratória aguda em outros contextos. No entanto, o paciente possui diretivas antecipadas de vontade que contraindicam explicitamente esse procedimento. O respeito à autonomia do paciente é um pilar da bioética e deve ser mantido, focando-se em medidas de conforto.\n\nb) Incorreta. O paciente já apresenta uma saturação de oxigênio de 96% com 12 l/min em máscara não reinalante. O aumento do fluxo de oxigênio para 15 l/min não trará benefício adicional, pois o problema atual não é a hipoxemia (que está controlada), mas, sim, a mecânica respiratória prejudicada e a sensação subjetiva de dispneia decorrente da fibrose pulmonar progressiva.\n\nc) Incorreta. O uso de broncodilatadores (B2-agonistas e anticolinérgicos) é indicado para doenças pulmonares obstrutivas, como asma e DPOC, nas quais há broncoespasmo. Na Fibrose Pulmonar Idiopática, a patologia é restritiva e intersticial, não havendo indicação clínica para essas medicações, pois elas não aliviam a dispneia causada pela rigidez do parênquima pulmonar.\n\nd) Correta. Os opioides, especialmente a morfina, são o padrão-ouro para o manejo farmacológico da dispneia em pacientes em cuidados paliativos ou com doenças terminais. Eles atuam reduzindo a percepção subjetiva de falta de ar, diminuindo a resposta do centro respiratório ao estímulo da dispneia e reduzindo o consumo de oxigênio pelo miocárdio e pela musculatura respiratória, proporcionando conforto sem necessariamente acelerar o óbito quando titulados corretamente. No caso de Acilino, é a conduta mais adequada para respeitar seus desejos e garantir alívio do sofrimento.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  },
+  {
+    "id": "AJUDA_49c62430-fc62-4d69-bc04-cca4fd0fa61d",
+    "originalId": "49c62430-fc62-4d69-bc04-cca4fd0fa61d",
+    "statement": "Um menino que apresenta o pênis com maior comprimento, escroto já escuro e com tamanho acentuado, de acordo com a avaliação da puberdade, encontra-se no estágio",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a avaliação da maturação sexual masculina utilizando os estágios de Tanner, que classificam o desenvolvimento da genitália (G1 a G5). Para responder corretamente, é necessário identificar as características clínicas descritas e correlacioná-las com a fase correspondente.\n\nAlternativa a) Incorreta. O estágio 1 (G1) é a fase pré-puberal. Nele, os testículos, o escroto e o pênis possuem o mesmo aspecto e proporções da infância, sem sinais de maturação ou crescimento induzido por hormônios sexuais.\n\nAlternativa b) Incorreta. O estágio 2 (G2) marca o início da puberdade. O sinal principal é o aumento do volume testicular (maior ou igual a 4 mL), acompanhado de mudanças na textura da pele escrotal, que se torna mais fina e avermelhada. O pênis, nesta fase, apresenta pouca ou nenhuma alteração.\n\nAlternativa c) Incorreta. No estágio 3 (G3), ocorre um crescimento nítido do pênis, principalmente em comprimento. Os testículos e o escroto continuam a crescer, mas as características de pigmentação intensa e o desenvolvimento da largura do pênis com diferenciação da glande ainda não são predominantes.\n\nAlternativa d) Correta. O estágio 4 (G4) é caracterizado pelo crescimento acentuado do pênis, tanto em comprimento quanto em diâmetro (largura), e pelo desenvolvimento da glande. Além disso, o escroto torna-se significativamente maior e apresenta uma pigmentação mais escura (escurecimento escrotal), exatamente como descrito no enunciado da questão.\n\nNo estágio 5 (G5), que não consta nas alternativas mas completa a classificação, a genitália atinge o tamanho e a forma de um adulto, mantendo a pele escrotal pigmentada e os testículos volumosos. Portanto, a descrição de pênis com maior comprimento e escroto escuro/acentuado define o estágio 4.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  },
+  {
+    "id": "AJUDA_49cdbb83-ee8f-4263-8ac3-cb70c4739435",
+    "originalId": "49cdbb83-ee8f-4263-8ac3-cb70c4739435",
+    "statement": "Homem de 52 anos atua, há 25 anos, na aplicação de agrotóxicos em lavouras de grande escala. Ele relata contato frequente com defensivos dos grupos organofosforados e carbamatos, muitas vezes com equipamento de proteção individual inadequado. Nos últimos dois anos, vem apresentando fraqueza muscular progressiva, fasciculações, dores de cabeça persistentes e lapsos de memória. Ele evolui com episódio de tontura intensa, visão turva e dificuldade respiratória durante a jornada de trabalho, sendo hospitalizado. O exame físico revela: miose simétrica, bradicardia, salivação excessiva e tremores nas extremidades.\nConsiderando o quadro clínico e o histórico ocupacional apresentados, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a dosagem da atividade da acetilcolinesterase no plasma e nos eritrócitos, que se espera estar reduzida, constitui um exame laboratorial que confirma o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a principal hipótese diagnóstica é a de intoxicação crônica por agrotóxicos agonistas da colinesterase, com uma agudização recente do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a sintomatologia de tontura e visão turva sugere uma intoxicação por piretroides, que atuam principalmente nos canais de sódio do sistema nervoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o quadro neurológico com fraqueza muscular e fasciculações é compatível com a síndrome avançada medular, uma complicação conhecida nesse tipo de exposição ocupacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o tratamento, na fase aguda, inclui atropina para o controle dos efeitos muscarínicos e um agente quelante, como o EDTA, para remover os tóxicos da corrente sanguínea do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nO caso clínico descreve um trabalhador rural com exposição crônica e agudizada a organofosforados e carbamatos. Esses compostos agem inibindo a enzima acetilcolinesterase, responsável pela degradação do neurotransmissor acetilcolina. O acúmulo de acetilcolina nas fendas sinápticas gera a chamada síndrome colinérgica, que se manifesta por efeitos muscarínicos (miose, bradicardia, salivação excessiva, broncorreia) e efeitos nicotínicos (fasciculações, tremores, fraqueza muscular).\n\nAlternativa A (Correta): A confirmação laboratorial da intoxicação por esses agentes é feita por meio da mensuração da atividade das colinesterases. A colinesterase plasmática (pseudocolinesterase) é um marcador sensível de exposição recente, enquanto a colinesterase eritrocitária (colinesterase verdadeira) é mais específica e reflete a gravidade e a exposição crônica. Em casos de intoxicação por esses agrotóxicos, espera-se encontrar valores reduzidos dessas enzimas, confirmando o diagnóstico.\n\nAlternativa B (Incorreta): O erro técnico está na nomenclatura. Os organofosforados e carbamatos são inibidores (ou anticolinesterásicos) da enzima colinesterase, e não agonistas. Eles impedem o funcionamento da enzima, levando ao excesso de acetilcolina.\n\nAlternativa C (Incorreta): Embora piretroides possam causar sintomas neurológicos, a síndrome apresentada pelo paciente é clássica da toxicidade colinérgica (presença de miose, bradicardia e salivação intensa). Os piretroides atuam prolongando a abertura dos canais de sódio, mas não explicam o quadro muscarínico sistêmico descrito no enunciado.\n\nAlternativa D (Incorreta): Fraqueza muscular e fasciculações são sinais de hiperestimulação de receptores nicotínicos na junção neuromuscular devido ao excesso de acetilcolina. O termo \"síndrome avançada medular\" não é uma terminologia médica reconhecida para descrever as complicações dessa exposição. As complicações neurológicas conhecidas são a Síndrome Intermediária e a Polineuropatia Tardia Induzida por Organofosforados.\n\nAlternativa E (Incorreta): O tratamento na fase aguda realmente envolve a atropina para bloquear os efeitos muscarínicos (como a bradicardia e a salivação). No entanto, o EDTA é um agente quelante utilizado exclusivamente para intoxicações por metais pesados (como o chumbo). Para a intoxicação por organofosforados, utilizam-se as oximas (como a pralidoxima), que atuam na reativação da enzima acetilcolinesterase.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:10.045Z"
+  }
+]

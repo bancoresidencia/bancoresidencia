@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_8b80f5d2-ad2a-4517-aee9-37c60c59a1f1",
+    "originalId": "8b80f5d2-ad2a-4517-aee9-37c60c59a1f1",
+    "statement": "Recém-nascido, pequeno para idade gestacional, apresenta quadro de surdez, microcefalia, estenose pulmonar e catarata congênita. Diante do conjunto de alterações descritas, selecione a infecção congênita provável do caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Zika congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sífilis congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Toxoplasmose congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome da rubéola congênita.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico: O caso apresenta um recém-nascido com restrição de crescimento (pequeno para a idade gestacional) associada a um conjunto de malformações clássicas conhecido como Tríade de Gregg, composta por defeitos oculares (catarata), auditivos (surdez) e cardíacos (especialmente a estenose da artéria pulmonar e a persistência do canal arterial). Esse fenótipo é característico da infecção pelo vírus da rubéola durante a gestação.\n\nAlternativa a) Incorreta. A Síndrome de Zika congênita tem como marca principal a microcefalia grave, frequentemente acompanhada de calcificações subcorticais, excesso de pele no couro cabeludo e artrogripose (contraturas articulares). Embora possa causar alterações oculares, estas costumam ser cicatrizes coriorretinianas e atrofia óptica, e não catarata. Além disso, não é tipicamente associada a malformações cardíacas como a estenose pulmonar.\n\nAlternativa b) Incorreta. A sífilis congênita precoce manifesta-se tipicamente com rinite progressiva (coriza serossanguinolenta), lesões cutâneas (pênfigo palmo-plantar), hepatoesplenomegalia e alterações ósseas (periostite e osteocondrite). A Tríade de Hutchinson (dentes de Hutchinson, ceratite intersticial e surdez neurossensorial) é uma manifestação da sífilis tardia. A estenose pulmonar e a catarata congênita não são achados característicos desta infecção.\n\nAlternativa c) Incorreta. A toxoplasmose congênita é classicamente definida pela Tríade de Sabin, que inclui coriorretinite, hidrocefalia e calcificações intracranianas difusas. Diferentemente do quadro descrito, a microcefalia é rara na toxoplasmose (sendo a macrocefalia por hidrocefalia mais comum) e a estenose pulmonar não faz parte do quadro clínico habitual.\n\nAlternativa d) Correta. A Síndrome da Rubéola Congênita é a causa provável diante de um recém-nascido com surdez neurossensorial (a sequela mais frequente), catarata (que se manifesta como reflexo esbranquiçado na pupila ou leucocoria) e cardiopatia congênita. Entre as alterações cardíacas, a estenose periférica da artéria pulmonar e a persistência do canal arterial são as mais descritas. A microcefalia e o baixo peso ao nascer também são achados comuns quando a infecção ocorre no primeiro trimestre da gravidez.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas",
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  },
+  {
+    "id": "AJUDA_8b86c59c-86f1-4d04-a56c-7311ad3c66de",
+    "originalId": "8b86c59c-86f1-4d04-a56c-7311ad3c66de",
+    "statement": "Durante uma campanha de vacinação contra a gripe em um bairro, a equipe de saúde observou que muitos idosos com comorbidades não estavam participando. Com base nessa situação hipotética, assinale a alternativa que apresenta a ação indicada para aumentar a adesão desse grupo à vacinação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enviar mensagens de texto semanais com lembretes sobre a campanha",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar palestras semanais sobre a importância da vacina em locais públicos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "oferecer a vacinação em domicílio para os idosos com mobilidade reduzida",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "distribuir panfletos informativos nas farmácias e supermercados locais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "aumentar o número de dias da campanha de vacinação no posto de saúde",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é necessário aplicar os princípios da Atenção Primária à Saúde (APS), especialmente os conceitos de equidade e acessibilidade. O cenário descreve um grupo vulnerável (idosos com comorbidades) que apresenta baixa adesão a uma campanha vacinal. Em medicina preventiva e saúde pública, quando identificamos uma falha na cobertura vacinal de um subgrupo específico, devemos analisar as barreiras de acesso que impedem esse alcance.\n\nAnálise das alternativas:\n\na) Incorreta. Embora lembretes via SMS possam ser úteis para a população geral, muitos idosos possuem limitações no uso de tecnologias digitais (letramento digital). Além disso, o envio de mensagens resolve o problema do esquecimento, mas não resolve o problema físico de deslocamento, que é a principal barreira para idosos com comorbidades graves.\n\nb) Incorreta. Palestras em locais públicos pressupõem que o idoso tenha condições físicas de se deslocar até esses locais. Se o idoso já encontra dificuldade para ir ao posto de saúde se vacinar, ele provavelmente também terá dificuldade para comparecer a uma palestra. Esta ação foca na educação em saúde, mas ignora a barreira física.\n\nc) Correta. Esta alternativa aplica o princípio da equidade. Idosos com comorbidades frequentemente apresentam mobilidade reduzida ou fragilidade clínica. Ao oferecer a vacinação em domicílio, a equipe de saúde realiza a \"busca ativa\" e elimina a principal barreira de acesso: o deslocamento físico. No Sistema Único de Saúde (SUS), a atenção domiciliar é uma estratégia fundamental para garantir que indivíduos impossibilitados de comparecer à unidade básica recebam os cuidados necessários.\n\nd) Incorreta. A distribuição de panfletos é uma estratégia passiva de informação. Assim como as palestras, ela assume que o problema é a falta de conhecimento. No entanto, em campanhas de gripe, o problema costuma ser logístico ou de saúde física, e não apenas informacional. Além disso, o idoso com mobilidade reduzida pode nem sequer chegar à farmácia ou ao supermercado para retirar o panfleto.\n\ne) Incorreta. Aumentar o número de dias amplia a oferta temporal, o que ajuda quem trabalha ou tem horários rígidos. Contudo, para o idoso que não consegue caminhar até o posto ou que depende de transporte que não possui, o posto estar aberto por 5 ou 30 dias não altera sua capacidade de chegar até lá.\n\nConclusão: A ação mais eficaz para aumentar a adesão de idosos com comorbidades, focando na eliminação de barreiras de acesso físico, é a vacinação extramuros, especificamente a vacinação domiciliar para aqueles com limitação de locomoção.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  },
+  {
+    "id": "AJUDA_8b8aa568-e612-4c10-83f1-4636b96ff3b0",
+    "originalId": "8b8aa568-e612-4c10-83f1-4636b96ff3b0",
+    "statement": "Menino, 3 anos de idade, sabidamente alérgico ao leite de vaca, apresenta vômitos recorrentes, urticária e tosse após ingestão acidental de leite. Recebe adrenalina intramuscular no serviço de emergência, evoluindo satisfatoriamente, com regressão total dos sintomas. Qual é a conduta mais adequada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever anti-histamínico intramuscular e indicar internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever corticoide endovenoso e solicitar IgE específica para leite de vaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter observação clínica por 6 horas e prescrever corticoide oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Alta do serviço com prescrição de anti-histamínico oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve uma reação anafilática em uma criança com alergia alimentar conhecida. A anafilaxia é uma reação alérgica sistêmica grave, de início rápido, que envolve pelo menos dois sistemas (neste caso: gastrointestinal, cutâneo e respiratório). O tratamento de primeira linha é a adrenalina intramuscular, que já foi administrada com sucesso.\n\nA questão foca no manejo pós-crise imediata. O principal receio após a estabilização de uma anafilaxia é a reação bifásica, que consiste na recorrência dos sintomas horas após a resolução do quadro inicial, sem nova exposição ao alérgeno.\n\nAlternativa (a) Incorreta. Embora os anti-histamínicos auxiliem no controle de sintomas cutâneos (como a urticária), eles são medicações de segunda linha e não tratam a anafilaxia em si. Além disso, não há necessidade rotineira de internação hospitalar prolongada ou via intramuscular para o anti-histamínico em um paciente que já está estável e aceitando via oral. A observação em unidade de emergência é suficiente na maioria dos casos.\n\nAlternativa (b) Incorreta. O uso de corticoide endovenoso não é superior ao oral em pacientes estáveis que toleram a via oral. Além disso, solicitar IgE específica no momento da emergência é contraindicado. Os níveis de IgE podem estar temporariamente reduzidos logo após uma reação alérgica grave (período refratário), podendo gerar resultados falso-negativos. O diagnóstico da criança já é conhecido, e testes laboratoriais devem ser feitos ambulatorialmente após o período agudo.\n\nAlternativa (c) Correta. Esta é a conduta padrão. Todo paciente que apresenta anafilaxia deve permanecer em observação clínica por um período mínimo, geralmente entre 4 e 8 horas (dependendo da gravidade inicial e da resposta ao tratamento), para monitorar o risco de reação bifásica. O uso de corticoides por via oral é indicado como terapia adjuvante para ajudar a prevenir ou mitigar reações prolongadas ou tardias, embora seu papel na prevenção específica da reação bifásica ainda seja debatido na literatura.\n\nAlternativa (d) Incorreta. Dar alta imediata é perigoso devido ao risco da reação bifásica citada anteriormente. A criança deve ser monitorada obrigatoriamente por algumas horas antes de ser liberada com segurança. No momento da alta, além das medicações, o médico deve reforçar a necessidade de evitar o alérgeno e prescrever um plano de ação para emergências, incluindo o uso de adrenalina autoinjetável, se disponível.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  },
+  {
+    "id": "AJUDA_8b97998f-d2a5-488a-b5af-0660d4479e08",
+    "originalId": "8b97998f-d2a5-488a-b5af-0660d4479e08",
+    "statement": "Um feto apresenta comunicação interventricular (CIV) perimembranosa isolada, sem outras alterações estruturais e com rastreio sorológico de primeiro trimestre normal. A associação cromossômica mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alto risco para trissomia 21.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Alto risco para microdeleção 22q11.2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Risco global próximo ao da população geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Forte associação com trissomia 18.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicação obrigatória de cariótipo fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A comunicação interventricular (CIV) é a malformação cardíaca mais comum ao nascimento e também uma das mais diagnosticadas no período pré-natal por meio da ecocardiografia fetal. Quando uma CIV, especialmente a do tipo perimembranosa, é identificada no exame de imagem, ela funciona como um marcador de risco para anomalias cromossômicas, mesmo que não existam outras alterações estruturais visíveis.\n\nAnalise das alternativas:\n\nAlternativa A: Está correta. A trissomia do cromossomo 21 (Síndrome de Down) é a alteração cromossômica mais frequente associada a cardiopatias congênitas. Embora o defeito do septo atrioventricular (DSAV) seja a lesão cardíaca mais característica da Síndrome de Down, a CIV é, em termos absolutos, um achado extremamente prevalente nessa população. A presença de uma CIV no ultrassom morfológico eleva a razão de verossimilhança para a trissomia 21, tornando-a a associação mais provável entre as opções listadas.\n\nAlternativa B: Está incorreta. A microdeleção 22q11.2 (Síndrome de DiGeorge ou Síndrome Velocardiofacial) está classicamente relacionada a defeitos conotruncais. Isso inclui a Tetralogia de Fallot, o tronco arterial comum (truncus arteriosus) e a interrupção do arco aórtico. Embora a CIV possa fazer parte desses complexos, ela raramente é o único achado isolado em casos de microdeleção 22q11.2.\n\nAlternativa C: Está incorreta. A identificação de qualquer malformação estrutural maior, como uma CIV perimembranosa, altera o perfil de risco do feto. Mesmo que o rastreio sorológico do primeiro trimestre tenha sido normal, o achado morfológico é um dado novo que aumenta o risco global para aneuploidias em comparação com a população geral que não apresenta defeitos cardíacos.\n\nAlternativa D: Está incorreta. A trissomia do cromossomo 18 (Síndrome de Edwards) apresenta uma associação altíssima com cardiopatias (acima de 90%), incluindo a CIV. No entanto, a Síndrome de Edwards é quase sempre acompanhada de um conjunto de outras malformações graves e marcadores ultrassonográficos (como cistos de plexo coroide, mãos cerradas com sobreposição de dedos, micrognatia e restrição de crescimento), o que não condiz com a descrição de uma CIV isolada em um feto sem outras alterações.\n\nAlternativa E: Está incorreta. Na medicina fetal e na genética clínica, as decisões sobre procedimentos invasivos (como a amniocentese ou biópsia de vilo corial para cariótipo) são baseadas no aconselhamento genético e na autonomia da gestante. Embora o estudo citogenético possa ser oferecido devido ao achado da CIV, o termo obrigatório é inadequado, pois a conduta depende da combinação de riscos calculados e da vontade da família. Além disso, a questão foca na associação genética mais provável e não na conduta normativa.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  },
+  {
+    "id": "AJUDA_8b9d89d6-e30c-490d-a980-55ce7eab3df1",
+    "originalId": "8b9d89d6-e30c-490d-a980-55ce7eab3df1",
+    "statement": "Paciente de 54 anos, com história de dor torácica súbita, evoluindo com perda de consciência em casa. Os familiares iniciaram manobras de reanimação cardiopulmonar. O SAMU chegou após 6 minutos e evidenciou a presença do DEA do ritmo de fibrilação ventricular.\n\nApós retorno da circulação espontânea, 12 minutos após PCR, no ambiente hospitalar, o paciente permanece comatoso (Glasgow 6), ventilado e estável hemodinamicamente sob noradrenalina em dose baixa. Qual é a conduta recomendada para neuroproteção?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar imediatamente o manejo direcionado de temperatura (TTM), mantendoa entre 32–36 °C por no mínimo 24 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Resfriar o paciente de forma agressiva até < 30 °C por 48 horas, pois temperaturas mais baixas oferecem maior neuroproteção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter normotermia estrita (36–37,5 °C) apenas, evitando hipotermia, pois o benefício está em prevenir a febre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Utilizar corticoides em altas doses para reduzir edema cerebral em substituição ao controle de temperatura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os cuidados pós-parada cardiorrespiratória (PCR), especificamente a síndrome pós-PCR e as estratégias de neuroproteção em pacientes que permanecem em coma após o retorno da circulação espontânea (RCE).\n\nO paciente em questão apresenta os critérios clássicos para o Manejo Direcionado de Temperatura (TTM — Targeted Temperature Management): sofreu uma PCR em ritmo chocável (fibrilação ventricular) e permanece comatoso (Glasgow 6) após a estabilização inicial.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: O TTM é a intervenção padrão-ouro para neuroproteção pós-PCR. As diretrizes internacionais (AHA e ERC) recomendam que adultos que não respondem a comandos após o RCE sejam submetidos ao controle rigoroso de temperatura. A faixa recomendada situa-se entre 32 graus Celsius e 36 graus Celsius, devendo ser mantida de forma constante por, pelo menos, 24 horas. O objetivo é reduzir a taxa metabólica cerebral, diminuir a liberação de aminoácidos excitatórios e mitigar a lesão de reperfusão e o estresse oxidativo.\n\nAlternativa (b) Incorreta: Temperaturas abaixo de 30 graus Celsius caracterizam hipotermia moderada a grave e não são recomendadas. O resfriamento excessivo (abaixo de 32 graus Celsius) aumenta significativamente o risco de complicações graves, como arritmias cardíacas (bradicardia extrema, fibrilação ventricular), distúrbios de coagulação, infecções (pneumonia) e distúrbios hidroeletrolíticos, sem oferecer benefício neuroprotetor adicional comprovado em relação à faixa de 32-36 graus Celsius.\n\nAlternativa (c) Incorreta: Embora estudos recentes (como o TTM-2) discutam a eficácia da normotermia controlada (manter abaixo de 37,5 graus Celsius) em comparação com a hipotermia terapêutica a 33 graus Celsius, o consenso atual e a maioria dos protocolos de prova ainda preconizam a faixa de 32-36 graus Celsius como a conduta de escolha para neuroproteção ativa. Dizer que se deve apenas \"evitar a febre\" ignora a recomendação formal do manejo ativo da temperatura em pacientes comatosos dentro da janela terapêutica estabelecida.\n\nAlternativa (d) Incorreta: O uso de corticosteroides em altas doses não tem indicação para neuroproteção ou redução de edema cerebral após parada cardíaca. Não há evidências de que os corticoides melhorem o desfecho neurológico nesses pacientes, e seu uso pode estar associado a complicações como hiperglicemia e aumento do risco de infecções, não substituindo, em hipótese alguma, o manejo da temperatura.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  },
+  {
+    "id": "AJUDA_8ba31f86-f7f9-4efa-9108-c6c366155192",
+    "originalId": "8ba31f86-f7f9-4efa-9108-c6c366155192",
+    "statement": "Durante consulta de seguimento habitual de Hipertensão Arterial na Unidade Básica de Saúde, seu paciente masculino de 67 anos pede sua avaliação sobre ferimento em sua perna. Ele teve um trauma leve há cerca de 7 dias com área de 3 cm de afastamento de bordos cutâneos, com exposição de tecido subcutâneo. No momento, a ferida apresenta-se seca, bordos ligeiramente elevados e róseos claros, com uma crosta sobre cicatrização da ferida. Aponte a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Um curativo oclusivo sobre o ferimento proporciona um pH levemente ácido e com baixa tensão de oxigênio na superfície da ferida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A taxa de epitelização de ferida sob um curativo oclusivo é semelhante à de uma ferida deixada descoberta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Por manter a borda afastada mesmo após 7 dias, está indicado o fechamento primário para acelerar cicatrização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A profilaxia antitetânica é importante, mas como o paciente não apresenta ferimento causado por objeto enferrujado ou animal, não há risco de tétano neste caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Neste caso, há indicação de antibioticoterapia oral neste momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): O uso de curativos oclusivos é fundamentado no princípio da cicatrização em meio úmido. Esse método proporciona um microambiente com pH levemente ácido, o que inibe o crescimento bacteriano e otimiza a função das enzimas de reparo. Além disso, a baixa tensão de oxigênio na superfície da ferida (hipóxia local controlada) é um potente estímulo para a angiogênese (formação de novos vasos) e para a atividade dos fibroblastos na produção de colágeno, acelerando o processo cicatricial.\n\nAlternativa B (Incorreta): A taxa de epitelização em feridas sob curativos oclusivos é significativamente mais rápida (podendo chegar ao dobro da velocidade) em comparação com feridas deixadas secas ou expostas ao ar. A exposição ao ar resseca o leito da ferida e forma uma crosta espessa, o que obriga as células epiteliais a migrarem por camadas mais profundas para encontrar umidade, retardando o fechamento da lesão.\n\nAlternativa C (Incorreta): O fechamento primário (sutura) é indicado para feridas limpas e recentes, geralmente nas primeiras 6 a 12 horas após o trauma (período de ouro). Após 7 dias, a ferida já está colonizada e em pleno processo de cicatrização por segunda intenção, com formação de tecido de granulação e bordos fixos. Tentar uma sutura primária neste estágio aumentaria drasticamente o risco de infecção e deiscência da ferida.\n\nAlternativa D (Incorreta): O risco de tétano existe em qualquer solução de continuidade da pele, independentemente de o objeto ser enferrujado ou envolver animais. O Clostridium tetani é encontrado no solo e em diversos ambientes sob a forma de esporos. Em pacientes idosos (67 anos), a preocupação é ainda maior devido à possível perda da imunidade vacinal ao longo do tempo. A conduta correta seria avaliar o histórico vacinal para decidir sobre o reforço ou a aplicação de imunoglobulina.\n\nAlternativa E (Incorreta): A descrição do ferimento (seco, bordos róseo-claros e presença de crosta) é compatível com uma cicatrização fisiológica normal, sem sinais de infecção secundária como pus, calor local, rubor intenso ou edema. Portanto, não há indicação clínica para o uso de antibioticoterapia sistêmica neste momento.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  },
+  {
+    "id": "AJUDA_8ba397fb-6231-4182-bb75-c9c4180fa9a7",
+    "originalId": "8ba397fb-6231-4182-bb75-c9c4180fa9a7",
+    "statement": "Uma regressão logística ajustada em estudo observacional encontrou OR = 2,4 (IC 95%: 1,01-5,71) para tabagismo e doença periodontal. Qual crítica estatística se aplica ao caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Odds Ratio (OR) é inapropriado em estudos observacionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O intervalo de confiança é largo, sugerindo baixa precisão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A regressão logística não permite ajustes por confundidores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A presença de associação causal é comprovada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O intervalo de confiança não inclui a unidade, logo o efeito é nulo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a questão, devemos analisar os dois componentes principais do resultado apresentado: o Odds Ratio (OR) e o Intervalo de Confiança (IC 95%). O OR de 2,4 indica que há uma associação positiva entre tabagismo e doença periodontal. O IC de 95%, variando de 1,01 a 5,71, indica que o resultado é estatisticamente significativo (pois não inclui o valor 1,0), mas nos traz informações sobre a precisão do estudo.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O Odds Ratio é uma medida de associação amplamente utilizada em estudos observacionais, especialmente em estudos de caso-controle e em análises de regressão logística em estudos transversais ou de coorte.\n\nAlternativa B: Correta. A precisão de um estudo é refletida pela amplitude do seu intervalo de confiança. Um intervalo que vai de 1,01 (quase sem efeito) até 5,71 (um risco muito elevado) é considerado largo. Isso sugere que o tamanho da amostra pode ter sido pequeno, gerando uma estimativa pouco precisa de onde o verdadeiro valor da população realmente se encontra.\n\nAlternativa C: Incorreta. A grande utilidade da regressão logística é justamente permitir o ajuste de diversas variáveis simultaneamente, controlando, assim, os fatores de confusão. É uma das ferramentas estatísticas mais poderosas para esse fim.\n\nAlternativa D: Incorreta. A existência de uma associação estatística, por si só, não comprova causalidade. Para estabelecer um nexo causal em medicina, são necessários outros critérios (como os de Bradford Hill), incluindo temporalidade, plausibilidade biológica e consistência dos dados, o que um único estudo observacional raramente consegue encerrar.\n\nAlternativa E: Incorreta. Esta alternativa inverte o conceito estatístico. Se o intervalo de confiança NÃO inclui a unidade (o valor 1,0), o resultado é considerado estatisticamente significativo, ou seja, há uma associação detectada. O efeito só seria considerado nulo (sem significância estatística) se o intervalo incluísse o valor 1,0 (por exemplo, um IC de 0,80 a 3,50). No caso da questão, o intervalo começa em 1,01, portanto está fora da nulidade.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  },
+  {
+    "id": "AJUDA_8ba461b5-a502-4467-bbf8-34a862df4c68",
+    "originalId": "8ba461b5-a502-4467-bbf8-34a862df4c68",
+    "statement": "Paciente com fibrilação atrial permanente, CHA₂DS₂-VA = 4, HAS-BLED = 2, TFG 22 ml/min. A anticoagulação mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Varfarina com INR alvo 2–3",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Dabigatrana em dose plena",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rivaroxabana contraindicada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nenhuma anticoagulação está indicada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Apixabana 5 mg duas vezes ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO\n\nO paciente apresenta Fibrilação Atrial (FA) permanente e um escore CHA2DS2-VASc de 4, o que indica um alto risco tromboembólico e necessidade formal de anticoagulação (recomendada se escore maior ou igual a 2 em homens ou maior ou igual a 3 em mulheres). O escore HAS-BLED de 2 indica risco de sangramento moderado, o que exige cautela, mas não contraindica o tratamento. O ponto central da questão é a Taxa de Filtração Glomerular (TFG) de 22 ml/min, caracterizando uma Doença Renal Crônica (DRC) em estágio 4 (pré-dialítico grave).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Correta): A Varfarina é um antagonista da vitamina K com metabolismo predominantemente hepático e não depende da excreção renal para sua eliminação. Por esse motivo, é o anticoagulante mais tradicional e seguro para pacientes com disfunção renal grave (TFG abaixo de 30 ml/min), incluindo pacientes em diálise. O alvo terapêutico de INR para FA é entre 2 e 3. Embora alguns novos anticoagulantes (DOACs) já possuam recomendação de uso em bula para TFG entre 15-30 ml/min, a Varfarina permanece como a escolha clássica e mais consolidada em provas de residência para esse perfil de paciente.\n\nAlternativa B (Incorreta): A Dabigatrana é o anticoagulante oral direto (DOAC) com maior dependência de excreção renal (cerca de 80%). Por isso, ela é formalmente contraindicada para pacientes com TFG abaixo de 30 ml/min, devido ao alto risco de acúmulo da droga e sangramentos graves.\n\nAlternativa C (Incorreta): A Rivaroxabana não está estritamente contraindicada em uma TFG de 22 ml/min, mas a afirmação da alternativa é falsa porque ela pode ser utilizada com ajuste de dose (15 mg uma vez ao dia) em pacientes com clearance de creatinina entre 15 e 49 ml/min. No entanto, o enunciado busca a conduta \"mais adequada\", e a Varfarina tem maior respaldo histórico para esse nível de disfunção.\n\nAlternativa D (Incorreta): A anticoagulação está claramente indicada. Um escore CHA2DS2-VASc de 4 representa um risco anual de AVC isquêmico significativamente elevado, superando os riscos de sangramento associados ao HAS-BLED de 2. A presença de doença renal crônica, por si só, também aumenta o risco tanto de eventos tromboembólicos quanto de sangramentos, reforçando a necessidade de um manejo cuidadoso.\n\nAlternativa E (Incorreta): A Apixabana pode ser utilizada em pacientes com DRC, mas a dose de 5 mg duas vezes ao dia é a dose plena. Para o ajuste da Apixabana, considera-se o critério de dois dos três seguintes: idade maior ou igual a 80 anos, peso menor ou igual a 60 kg ou creatinina maior ou igual a 1,5 mg/dL. Um paciente com TFG de 22 ml/min muito provavelmente já atingiria o critério de creatinina elevada. Além disso, em estágios avançados de DRC (TFG 15-29 ml/min), a Varfarina ainda é frequentemente preferida em questões de prova frente ao uso de DOACs em dose plena.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  },
+  {
+    "id": "AJUDA_8ba657f7-2408-4234-8eee-fd382335b481",
+    "originalId": "8ba657f7-2408-4234-8eee-fd382335b481",
+    "statement": "Mulher de 67 anos de idade refere “bola saindo pela vagina”, sensação de peso pélvico e dificuldade para urinar. AP: G5P5A0C0, menopausa há 15 anos. Exame POP-Q (Quantificação de prolapso de órgão pélvico):\nPonto Aa: +2 cm\nPonto Ba: +3 cm\nPonto C (colo do útero): +4 cm\nPonto Ap: 0 cm\nPonto Bp: +1 cm\nTVL (comprimento total da vagina): 8 cm\nGH (hiato genital): 4 cm\nPB (corpo perineal): 3 cm\nO estágio de prolapso genital, segundo a classificação da Sociedade Internacional de Continência, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental compreender o sistema POP-Q (Pelvic Organ Prolapse Quantification), que é o padrão-ouro para a quantificação do prolapso de órgãos pélvicos. Esse sistema utiliza o hímen como ponto de referência (marco zero). Medidas acima do hímen (para dentro da vagina) são negativas, e medidas abaixo do hímen (para fora) são positivas.\n\nPasso a passo para a classificação:\n\n1. Identificação do ponto de maior prolapso (o valor mais positivo):\nAo observarmos os dados da paciente:\nAa: +2\nBa: +3\nC: +4 (ponto mais distal/avançado)\nAp: 0\nBp: +1\nO ponto mais avançado do prolapso é o ponto C (colo do útero), que está em +4 cm.\n\n2. Definição dos estágios segundo a Sociedade Internacional de Continência (ICS):\n\nEstágio 0: Sem prolapso. Os pontos Aa, Ap, Ba e Bp estão todos em -3 cm. O ponto C está entre o comprimento total da vagina (TVL) e (TVL - 2 cm).\nEstágio I: A porção mais distal do prolapso está a mais de 1 cm acima do hímen (valor < -1).\nEstágio II: A porção mais distal do prolapso está entre 1 cm acima e 1 cm abaixo do hímen (valor entre -1 e +1).\nEstágio III: A porção mais distal do prolapso está a mais de 1 cm abaixo do hímen (valor > +1), mas não chega a ser uma eversão completa. O limite máximo para o Estágio III é o valor de (TVL - 2 cm).\nEstágio IV: Eversão completa. A porção mais distal do prolapso está além de (TVL - 2 cm).\n\n3. Aplicação dos dados da questão:\nPonto de maior prolapso: +4 cm (Ponto C).\nComprimento Total da Vagina (TVL): 8 cm.\nCálculo para o limite do Estágio IV: TVL - 2 = 8 - 2 = 6 cm.\n\nComo o ponto mais avançado (+4 cm) é maior que +1 cm, mas é menor que o limite para o Estágio IV (+6 cm), a paciente encontra-se no Estágio III.\n\nAnálise das alternativas:\n\na) Incorreta. No Estágio 0 não há prolapso (pontos anteriores e posteriores em -3 cm). Aqui, todos os pontos (exceto Ap) estão em 0 ou valores positivos.\n\nb) Incorreta. No Estágio I, o ponto mais avançado deveria estar acima de -1 cm (ex: -2 cm). Aqui, o ponto mais avançado está em +4 cm.\n\nc) Incorreta. No Estágio II, o ponto mais avançado deve estar entre -1 e +1 cm. O ponto C está em +4 cm, ultrapassando esse limite.\n\nd) Correta. O ponto mais avançado (+4 cm) está além de +1 cm do hímen e não atinge o critério de Estágio IV (que seria maior ou igual a +6 cm, dado o TVL de 8 cm). Portanto, classifica-se como Estágio III.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  },
+  {
+    "id": "AJUDA_8ba854c3-4cac-4ea9-b931-15f74c4e81cc",
+    "originalId": "8ba854c3-4cac-4ea9-b931-15f74c4e81cc",
+    "statement": "Determinado município de 20 mil habitantes possui 2 Equipes de Saúde da Família; 1 Hospital geral com 10 leitos clínicos, 3 cirúrgicos, 3 obstétricos, 3 pediátricos e 6 psiquiátricos; e 1 Ambulatório de especialidades. Em 2022, apresentou taxa de mortalidade infantil de 14/1.000 nascidos vivos, predominantemente no componente pós-neonatal, e altas taxas de internação hospitalar por Condições Sensíveis à Atenção Primária à Saúde (hipertensão arterial sistêmica, gastroenterites e infecção do trato urinário em adultos e por asma nos com menos de 18 anos). Considerando que está sendo planejada a reestruturação de seu Plano Municipal de Saúde, assinale a alternativa que contempla o investimento na força de trabalho mais adequado para esse município.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 médico(a) neonatologista para sala de parto e 1 médico(a) pneumologista",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 médico(a) psiquiatra ou médico(a) com formação em saúde mental, 1 enfermeiro(a), 3 profissionais de nível superior: psicólogo(a), assistente social, terapeuta ocupacional ou pedagogo(a) para implantar um Centro de Atenção Psicossocial Infantil (CAPS i)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2 médicos(as) e 2 enfermeiros(as) (diurno e noturno) e Equipe Assistencial Multiprofissional com quantitativo de profissionais compatível com uma Unidade de Pronto-atendimento (UPA) Porte 1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2 médicos(as) de família e comunidade ou médicos(as) generalistas, 2 enfermeiros(as), 2 técnicos(as) de enfermagem e 2 agentes comunitários(as) de saúde compatíveis com a ampliação de 2 Equipes de Saúde da Família (ESF)",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A análise desta questão exige o conhecimento sobre a Política Nacional de Atenção Básica (PNAB) e a interpretação de indicadores de saúde pública, como as Condições Sensíveis à Atenção Primária (ICSAP) e a mortalidade infantil.\n\nAnálise dos dados do município:\nO município possui 20.000 habitantes e apenas 2 Equipes de Saúde da Família (ESF). Considerando que cada equipe deve cobrir, em média, de 2.000 a 3.500 pessoas, a cobertura atual é insuficiente (apenas cerca de 4.000 a 7.000 pessoas são assistidas). O principal problema identificado é a alta taxa de internações por Condições Sensíveis à Atenção Primária (hipertensão, asma, infecções urinárias e gastroenterites). Isso indica que a porta de entrada (Atenção Básica) não está sendo resolutiva ou não tem cobertura suficiente para evitar que agravos simples evoluam para internação. Além disso, a mortalidade infantil é predominantemente pós-neonatal, componente que está fortemente ligado a causas evitáveis por ações de saneamento, vacinação e acompanhamento básico de puericultura na rede primária.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A contratação de um neonatologista foca no componente neonatal da mortalidade infantil (até 27 dias de vida). O enunciado deixa claro que a mortalidade é predominantemente pós-neonatal (de 28 dias até 1 ano), que se combate com ações de Atenção Primária. Já o pneumologista atuaria na atenção secundária, enquanto a asma citada é uma condição sensível à Atenção Primária, devendo ser manejada preferencialmente pela ESF.\n\nAlternativa B: Incorreta. Embora o hospital possua leitos psiquiátricos, o quadro epidemiológico apresentado (alta taxa de ICSAP e mortalidade infantil) aponta para uma falha estrutural na Atenção Básica e não para uma demanda reprimida urgente por saúde mental especializada que justifique a implantação de um CAPS i (infantil) como prioridade de investimento frente ao déficit de cobertura de ESF.\n\nAlternativa C: Incorreta. A implantação de uma Unidade de Pronto Atendimento (UPA) reforça o modelo centrado na urgência e emergência. O problema do município não é a falta de atendimento agudo, mas sim a falta de controle de doenças crônicas e preventivas (hipertensão, asma), que estão gerando internações justamente por falta de acompanhamento ambulatorial contínuo na Atenção Básica.\n\nAlternativa D: Correta. Esta é a medida mais adequada e estratégica. O município tem um vazio assistencial de Atenção Básica para sua população de 20.000 habitantes. A ampliação do número de Equipes de Saúde da Família (ESF) ataca diretamente as causas dos problemas citados: aumenta a cobertura de pré-natal e puericultura (reduzindo a mortalidade pós-neonatal) e melhora o manejo clínico da hipertensão, asma e infecções (reduzindo as internações por ICSAP). A composição citada (médico, enfermeiro, técnico de enfermagem e ACS) respeita as diretrizes da PNAB para a formação de uma equipe multiprofissional.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:54.217Z"
+  }
+]

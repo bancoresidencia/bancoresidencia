@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_e73e8e2f-d375-49a9-8906-d6bb8c6cfa44",
+    "originalId": "e73e8e2f-d375-49a9-8906-d6bb8c6cfa44",
+    "statement": "Mulher de 25 anos, com quadro clínico com irregularidade menstrual e sinais de hiperandrogenismo, apresentando acantose nigricans. Não deseja engravidar e faz uso regular de Desogestrel (75 mcg/dia). Ao exame físico: IMC: 27,1 kg/m², Pressão Arterial: 130x85 mmHg, Índice de Ferriman Gallwey: 9, Glicemia de jejum:112mg/dL e Glicemia 2h após TOTG (75g):150 mg/dL. Qual o tratamento mais adequado para o quadro metabólico desta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metformina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Análogos de GLP 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sibutramina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: Trata-se de uma paciente jovem com Síndrome dos Ovários Policísticos (SOP), evidenciada por irregularidade menstrual e hirsutismo (índice de Ferriman-Gallwey de 9, sendo maior ou igual a 8 o ponto de corte). A acantose nigricans, associada à glicemia de jejum alterada (112 mg/dL) e à intolerância à glicose no TOTG (150 mg/dL), caracteriza resistência insulínica e pré-diabetes. Como a paciente já utiliza progestagênio para proteção endometrial e contracepção, o manejo farmacológico adicional deve focar nas alterações metabólicas.\n\nAlternativa a: Correta. A metformina é um sensibilizador de insulina amplamente indicado no contexto da SOP quando há distúrbios glicêmicos associados, como pré-diabetes, intolerância à glicose e acantose nigricans pronunciada. Ela atua reduzindo a gliconeogênese hepática e aumentando a captação periférica de glicose, sendo a primeira linha farmacológica para essa finalidade metabólica.\n\nAlternativa b: Incorreta. Os agonistas do receptor de GLP-1 têm indicação formal primária para o tratamento do diabetes mellitus tipo 2 e da obesidade. Embora sejam promissores na SOP associada à obesidade grave, a metformina permanece como a droga de primeira escolha para pré-diabetes e resistência à insulina em pacientes com sobrepeso (IMC de 27,1 kg/m²).\n\nAlternativa c: Incorreta. A sibutramina é um inibidor da recaptação de serotonina e noradrenalina voltado para a perda ponderal em quadros de obesidade. Ela não possui ação sensibilizadora de insulina direta para tratar o pré-diabetes e pode elevar a pressão arterial, que nesta paciente já se encontra limítrofe (130x85 mmHg).\n\nAlternativa d: Incorreta. As estatinas têm indicação primordial no controle da dislipidemia e redução do risco cardiovascular aterosclerótico. O enunciado não traz dados do perfil lipídico e foca nas alterações do metabolismo glicídico e na resistência insulínica, tornando a estatina uma opção incorreta para a queixa principal apresentada.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Síndromes dos Ovários Policísticos",
+      "Obesidade e Síndrome Metabólica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  },
+  {
+    "id": "AJUDA_e743a0bb-b063-431f-9067-77865f4d0337",
+    "originalId": "e743a0bb-b063-431f-9067-77865f4d0337",
+    "statement": "Um paciente de 24 anos sofreu um trauma abdominal contuso em uma briga. Na admissão, apresenta dor abdominal difusa, distensão e sinais de peritonite. PA: 85 x 55 mmHg, FC: 110 bpm, FR: 22 ipm. No hemograma há uma queda significativa do hematócrito em relação ao exame prévio. O diagnóstico mais provável, dentre os elencados abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ruptura do baço.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Lesão hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Perfuração de alça intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ruptura de bexiga.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hematoma retroperitoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um paciente jovem com quadro de choque hipovolêmico (hipotensão e taquicardia) e sinais de irritação peritoneal após trauma abdominal contuso. A queda expressiva do hematócrito confirma uma hemorragia aguda. O conjunto de sinais e sintomas aponta para um hemoperitônio volumoso.\n\nAlternativa (a) Correta: O baço é o órgão sólido mais frequentemente lesionado em traumas abdominais contusos. Sua ruptura causa sangramento intraperitoneal rápido e volumoso, o que justifica a instabilidade hemodinâmica (choque), a distensão abdominal e a queda do hematócrito. O sangue livre na cavidade peritoneal atua como um irritante, gerando os sinais de peritonite observados no exame físico.\n\nAlternativa (b) Incorreta: Embora a lesão hepática seja a segunda causa mais comum de hemoperitônio no trauma contuso e possa causar um quadro clínico idêntico ao da ruptura esplênica, estatisticamente o baço é o órgão mais acometido nesse tipo de mecanismo. Na ausência de dados que apontem especificamente para o hipocôndrio direito, a ruptura de baço é a hipótese diagnóstica primária em provas de residência.\n\nAlternativa (c) Incorreta: A perfuração de alça intestinal (víscera oca) resultaria em peritonite química e, posteriormente, bacteriana. No entanto, o quadro predominante seria de pneumoperitônio e sepse, e não de um choque hemorrágico agudo com queda rápida e significativa do hematócrito logo na admissão, como descrito no caso.\n\nAlternativa (d) Incorreta: A ruptura de bexiga ocorre geralmente associada a fraturas de pelve. Pode causar uroperitônio e dor abdominal, mas não costuma evoluir com queda súbita de hematócrito e choque hipovolêmico grave, a menos que haja lesões vasculares pélvicas associadas.\n\nAlternativa (e) Incorreta: O hematoma retroperitoneal geralmente está associado a fraturas de pelve ou lesões em órgãos retroperitoneais (como rins ou pâncreas). Embora possa causar choque, o sangue fica contido no espaço retroperitoneal, demorando mais para gerar sinais claros de peritonite difusa e distensão abdominal quando comparado ao sangramento intraperitoneal livre, como ocorre na ruptura esplênica.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  },
+  {
+    "id": "AJUDA_e74b26fd-c577-4291-be64-de24c5f92f13",
+    "originalId": "e74b26fd-c577-4291-be64-de24c5f92f13",
+    "statement": "Mulher de 25 anos com diagnóstico de doença inflamatória pélvica apresenta abscesso tubo-ovariano roto. A conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibiótico endovenoso e observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cirurgia de emergência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Drenagem por punção guiada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Corticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nO diagnóstico de abscesso tubo-ovariano (ATO) é uma complicação grave da Doença Inflamatória Pélvica (DIP). O manejo clínico depende fundamentalmente da integridade desse abscesso. Quando o abscesso está íntegro, o tratamento inicial costuma ser a internação para antibioticoterapia endovenosa. No entanto, a rotura do abscesso tubo-ovariano é uma emergência médica e cirúrgica absoluta. A liberação de conteúdo purulento e bactérias na cavidade peritoneal causa peritonite química e bacteriana, evoluindo rapidamente para sepse grave e choque séptico, com altas taxas de mortalidade se não houver intervenção imediata.\n\nAlternativa (a) Incorreta: O tratamento clínico com antibióticos e observação é reservado para casos de DIP sem abscesso ou para pacientes com abscesso tubo-ovariano íntegro e hemodinamicamente estáveis. No caso de rotura, a antibioticoterapia é um tratamento complementar indispensável, mas jamais deve ser a conduta isolada, pois não resolve o foco da infecção disseminada na cavidade abdominal.\n\nAlternativa (b) Correta: Diante de um abscesso tubo-ovariano roto, a cirurgia de emergência é mandatória. O objetivo do procedimento, que pode ser realizado por laparotomia ou laparoscopia (dependendo da estabilidade da paciente e da experiência da equipe), é realizar a lavagem exaustiva da cavidade peritoneal, a drenagem do pus e a remoção dos tecidos infectados (frequentemente anexectomia unilateral ou bilateral). Essa é a única medida capaz de interromper a progressão da sepse.\n\nAlternativa (c) Incorreta: A drenagem percutânea ou por punção guiada por imagem (ultrassonografia ou tomografia) pode ser considerada uma alternativa para abscessos íntegros que não respondem ao tratamento clínico ou que são de fácil acesso. Contudo, na rotura, o material infectado não está mais localizado em uma loja passível de punção simples, mas espalhado por todo o peritônio, exigindo abordagem cirúrgica ampla.\n\nAlternativa (d) Incorreta: Os corticoides não desempenham papel no tratamento da DIP ou do abscesso tubo-ovariano. O uso de corticoterapia em um quadro de infecção aguda grave é contraindicado, a menos que existam indicações muito específicas (como insuficiência adrenal na sepse refratária), e nunca substituiria a necessidade de controle cirúrgico do foco infeccioso.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  },
+  {
+    "id": "AJUDA_e75087c8-fe1a-4ecd-946a-ab2a854b2786",
+    "originalId": "e75087c8-fe1a-4ecd-946a-ab2a854b2786",
+    "statement": "Paciente do sexo feminino, 25 anos, procura a emergência devido a alterações visuais, sob as quais diz ver aranhas e ratos por todas as partes. Relata que abandonou seu tratamento para lúpus eritematoso sistêmico no último mês. A paciente fazia uso de azatioprina 100mg ao dia, associado à prednisona 5mg e hidroxicloroquina 5mg/kg/dia. Em relação ao acometimento de sistema nervoso central pelo lúpus, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A azatioprina não deve ser utilizada como terapia de indução para controle de quadros neuropsiquiátricos graves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento com medicações antipsicóticas em pacientes lúpicas faz-se desnecessário devido às características de origem imunológica das alterações psiquiátricas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O micofenolato de mofetil e a ciclofosfamida são as melhores alternativas como medicações poupadoras de corticosteroides para o tratamento de lúpus de sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Convulsões, alterações cognitivas, cefaleia e neurite óptica são algumas das alterações presentes em pacientes com lúpus neuropsiquiátrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o lúpus eritematoso sistêmico com manifestações no sistema nervoso central (lúpus neuropsiquiátrico), focando no manejo terapêutico e no reconhecimento clínico. O objetivo é identificar a alternativa incorreta.\n\nAlternativa A: Esta afirmação está correta. A azatioprina é um imunossupressor geralmente utilizado para a manutenção da remissão ou em casos de manifestações lúpicas menos graves. Em quadros neuropsiquiátricos graves, como a psicose lúpica aguda ou a mielite transversa, a terapia de indução padrão envolve o uso de doses elevadas de corticosteroides (geralmente pulsoterapia com metilprednisolona) associados a agentes mais potentes, como a ciclofosfamida.\n\nAlternativa B: Esta alternativa é a INCORRETA e, portanto, o gabarito. Embora a causa das alterações psiquiátricas no lúpus seja imunológica (inflamação, autoanticorpos ou vasculopatia), o tratamento sintomático é indispensável. Pacientes com psicose lúpica que apresentam alucinações e agitação precisam de medicações antipsicóticas para controle imediato dos sintomas, garantindo a segurança dos pacientes e permitindo que o tratamento imunossupressor de base tenha tempo para agir. O tratamento é, portanto, combinado: imunossupressão para a causa e psicotrópicos para os sintomas.\n\nAlternativa C: Esta afirmação está correta. O micofenolato de mofetil e a ciclofosfamida são as principais escolhas como agentes poupadores de corticoide no lúpus grave. Eles são fundamentais para controlar a atividade da doença no sistema nervoso central e permitem que a dose de prednisona seja reduzida gradualmente, evitando as complicações de longo prazo do uso de altas doses de esteroides.\n\nAlternativa D: Esta afirmação está correta. O lúpus neuropsiquiátrico engloba um espectro muito amplo de manifestações. O Colégio Americano de Reumatologia (ACR) lista 19 síndromes neuropsiquiátricas associadas ao lúpus, que incluem desde quadros comuns, como cefaleia e disfunção cognitiva leve, até quadros graves, como convulsões, neurite óptica, psicose e acidente vascular cerebral. Todas as citadas na alternativa fazem parte desse espectro.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  },
+  {
+    "id": "AJUDA_e75dfd42-37e2-45d7-bb06-4cfff40f5311",
+    "originalId": "e75dfd42-37e2-45d7-bb06-4cfff40f5311",
+    "statement": "Qual é um dos principais fatores de risco associados à taquipneia transitória do recém-nascido (TTRN)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Parto normal com trabalho de parto completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Idade gestacional superior a 37 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cesárea eletiva sem trabalho de parto prévio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Presença de líquido amniótico meconial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Taquipneia Transitória do Recém-Nascido (TTRN), também chamada de Síndrome do Pulmão Úmido, é uma condição benigna causada pelo atraso na reabsorção do líquido pulmonar fetal após o nascimento. Durante a gestação, os pulmões são preenchidos por líquido; no momento do parto, esse líquido deve ser rapidamente reabsorvido para permitir as trocas gasosas.\n\nAlternativa a) Incorreta. O parto normal com trabalho de parto é um fator protetor. Durante as contrações uterinas, ocorre um pico de catecolaminas e outros mediadores hormonais na circulação fetal. Esses hormônios sinalizam para as células pulmonares interromperem a secreção de líquido e ativarem os canais de sódio (ENaC), que promovem a reabsorção ativa do líquido alveolar. Além disso, a passagem pelo canal de parto gera uma compressão mecânica do tórax que auxilia na expulsão de parte desse líquido.\n\nAlternativa b) Incorreta. A idade gestacional superior a 37 semanas (recém-nascido a termo) não é um fator de risco isolado. Na verdade, a prematuridade e a prematuridade tardia (entre 34 e 36 semanas) são fatores de risco mais significativos, pois os mecanismos enzimáticos e hormonais de reabsorção do líquido pulmonar são menos eficientes quanto mais jovem for o feto.\n\nAlternativa c) Correta. A cesariana eletiva realizada sem trabalho de parto prévio é um dos principais fatores de risco para a TTRN. Como o bebê não é exposto às alterações hormonais típicas das contrações uterinas, os canais de reabsorção de líquido nos pulmões não são ativados adequadamente. O resultado é a permanência de líquido nos alvéolos e no interstício pulmonar após o nascimento, levando ao desconforto respiratório e ao aumento da frequência respiratória para compensar a menor área de troca gasosa.\n\nAlternativa d) Incorreta. A presença de líquido amniótico meconial é o principal fator de risco para a Síndrome de Aspiração Meconial (SAM). Embora ambas as condições causem desconforto respiratório no período neonatal, a SAM envolve obstrução mecânica das vias aéreas, pneumonite química e inativação do surfactante pelo mecônio, enquanto a TTRN é puramente um distúrbio de reabsorção hídrica.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  },
+  {
+    "id": "AJUDA_e75e84c4-c2c7-431c-b69e-0a674b009850",
+    "originalId": "e75e84c4-c2c7-431c-b69e-0a674b009850",
+    "statement": "Em intervalos cada vez menores, o conhecimento médico se renova, novas práticas substituem as antigas e o que se sabe hoje pode facilmente ser considerado proscrito em menos de 5 anos. É imprescindível o profissional saber avaliar a certeza dos estudos com que entra em contato para não mudar sua prática sem maior garantia de benefício. De acordo com o sistema GRADE para avaliação de estudos científicos (Níveis \"Alto\", \"moderado, \"baixo\" e \"muito baixo\"), é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudos caso-controle tipicamente atingem certeza de evidência maior que Ensaios Clínicos Randomizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estudos observacionais podem ter um GRADE nível \"alto\", mesmo que comumente tenham diversas limitações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Por conta do tipo de estudo mais criterioso, as revisões sistemáticas têm um GRADE nivel \"moderado\" ou maior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Relatos de casos e séries de casos elaborados por instituições especializadas e renomadas tipicamente são classificados como GRADE nível \"moderado\".",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ensaios Clínicos Randomizados têm pouco potencial para atingir GRADE níveis \"moderado\" ou \"alto\".",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O sistema GRADE (Grading of Recommendations Assessment, Development and Evaluation) é uma abordagem estruturada para classificar a qualidade da evidência em quatro níveis: alto, moderado, baixo e muito baixo. Ele não avalia apenas o desenho do estudo, mas a confiança que temos de que os resultados observados representam a realidade.\n\nAlternativa (a) Incorreta: No GRADE, os ensaios clínicos randomizados (ECR) começam automaticamente com um nível de evidência alto, enquanto estudos observacionais (como caso-controle ou coorte) começam com um nível de evidência baixo. Portanto, é o contrário do que afirma a alternativa.\n\nAlternativa (b) Correta: Embora os estudos observacionais comecem com nível baixo por possuírem limitações intrínsecas e maior risco de viés, o sistema GRADE prevê situações em que essa pontuação pode ser aumentada (upgrade). Isso ocorre em três cenários: quando há uma magnitude de efeito muito grande (ex.: uso de insulina para cetoacidose), quando há um gradiente dose-resposta (quanto maior a exposição, maior o efeito) ou quando os fatores de confusão residuais tenderiam a reduzir o efeito observado, mas o efeito ainda assim é forte. Nesses casos, um estudo observacional pode chegar ao nível alto.\n\nAlternativa (c) Incorreta: A revisão sistemática é um método de síntese, e sua classificação GRADE depende da qualidade dos estudos primários que a compõem. Se uma revisão sistemática sintetizar apenas estudos observacionais de baixa qualidade ou ensaios clínicos com graves falhas metodológicas, a certeza da evidência será baixa ou muito baixa. O rigor da revisão em si não garante um nível moderado ou alto para a evidência final.\n\nAlternativa (d) Incorreta: Relatos de caso e séries de casos representam o nível inicial de evidência clínica e, no sistema GRADE, são sistematicamente classificados como nível muito baixo. O renome ou especialização da instituição que elabora o relato não altera essa classificação técnica, pois o desenho do estudo não permite estabelecer relações de causalidade robustas ou controlar vieses.\n\nAlternativa (e) Incorreta: Os ensaios clínicos randomizados são justamente os estudos que possuem o maior potencial para atingir os níveis moderado ou alto. Eles iniciam o processo de avaliação no nível alto e só perdem pontos (downgrade) se apresentarem falhas graves, como risco de viés, inconsistência entre resultados, evidência indireta, imprecisão nos dados ou viés de publicação.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  },
+  {
+    "id": "AJUDA_e766c0b9-f498-48da-a481-6a2c892a038b",
+    "originalId": "e766c0b9-f498-48da-a481-6a2c892a038b",
+    "statement": "A Coqueluche ainda continua sendo um problema de saúde pública. Qual das alternativas é correta para uma boa orientação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Após o esquema completo de vacinação contra a Bordetella Pertussis, que ocorre aos 15 meses, a criança é considerada imunizada e protegida contra a coqueluche, não sendo mais possível desenvolver a doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os adultos jovens são considerados a principal fonte de infecção para os lactentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Na fase paroxística da doença o tratamento com antimicrobiano β lactâmico e antitussígenos encurtam a duração da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os casos mais graves ocorrem nas crianças de 12 a 24 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. Nem a infecção natural nem a vacinação contra a Bordetella pertussis conferem imunidade permanente. Ocorre uma perda progressiva dos anticorpos protetores com o passar dos anos (geralmente entre 5 e 10 anos). Por esse motivo, mesmo indivíduos com esquema vacinal completo podem contrair a doença, embora frequentemente desenvolvam formas mais brandas ou atípicas. Além disso, o calendário inclui reforço aos 4 anos e recomendações de dTpa para gestantes e profissionais.\n\nAlternativa B: Correta. Devido à diminuição da imunidade com o tempo, adolescentes e adultos jovens tornam-se novamente suscetíveis. Nesses indivíduos, a coqueluche manifesta-se tipicamente como tosse prolongada e sem os acessos clássicos, fazendo com que não procurem atendimento ou não sejam diagnosticados, tornando-se os principais reservatórios e fontes de transmissão para lactentes jovens não imunizados.\n\nAlternativa C: Incorreta. Os antimicrobianos de escolha para a coqueluche pertencem à classe dos macrolídeos (como azitromicina e claritromicina), e não aos beta-lactâmicos. Além disso, quando iniciado na fase paroxística, o antibiótico tem como objetivo principal erradicar a transmissão bacteriana, tendo pouco ou nenhum impacto no encurtamento dos sintomas clínicos já estabelecidos. Por fim, o uso de antitussígenos é contraindicado ou sem eficácia comprovada.\n\nAlternativa D: Incorreta. Os casos mais graves, que cursam com maiores taxas de hospitalização, complicações (como apneia, pneumonia e hipertensão pulmonar) e óbito, ocorrem predominantemente em lactentes menores de 6 meses de idade, em especial aqueles menores de 2 a 3 meses que ainda não completaram o esquema primário de vacinação.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas",
+      "Coqueluche"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  },
+  {
+    "id": "AJUDA_e76aae4f-2b93-43c8-9960-50df2b5a5c3e",
+    "originalId": "e76aae4f-2b93-43c8-9960-50df2b5a5c3e",
+    "statement": "Um estudo epidemiológico buscou analisar a prevalência de transtornos mentais comuns, como depressão e ansiedade, em diferentes grupos populacionais. Os resultados evidenciaram maior prevalência desses transtornos em indivíduos com baixa renda, menor escolaridade e em situação de desemprego. Considerando os determinantes sociais da saúde mental, qual a principal conclusão que pode ser inferida a partir desses resultados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fatores genéticos e hereditários são os principais responsáveis pela maior prevalência de transtornos mentais em populações vulneráveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As condições socioeconômicas desfavoráveis atuam como fator de risco para o desenvolvimento de transtornos mentais, evidenciando a necessidade de ações intersetoriais para promoção da saúde mental.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A maior prevalência de transtornos mentais em grupos vulneráveis se deve à falta de acesso a serviços de saúde mental especializados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os transtornos mentais são mais prevalentes em indivíduos com baixa escolaridade devido à dificuldade de compreensão das informações sobre saúde mental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O desemprego aumenta o risco de transtornos mentais por causar isolamento social e perda do convívio familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão aborda o impacto dos Determinantes Sociais da Saúde (DSS) na saúde mental. Os dados apresentados no estudo (baixa renda, baixa escolaridade e desemprego) são marcadores clássicos de vulnerabilidade social que influenciam diretamente o processo saúde-doença de uma população.\n\nAlternativa a) Incorreta. O estudo citado foca em variáveis socioeconômicas, e não em biomarcadores ou histórico familiar. Embora a hereditariedade tenha papel em diversos transtornos mentais, a conclusão lógica de um estudo que observa renda e emprego deve ser voltada aos fatores ambientais e sociais, e não genéticos.\n\nAlternativa b) Correta. Esta alternativa sintetiza corretamente o conceito de Determinantes Sociais da Saúde. Condições de vida precárias aumentam a exposição a estressores crônicos, o que eleva a prevalência de transtornos mentais comuns. A menção à intersetorialidade é fundamental, pois indica que, para melhorar a saúde mental dessas populações, é necessário agir em áreas como educação, geração de renda, habitação e assistência social, indo além do cuidado clínico isolado.\n\nAlternativa c) Incorreta. A falta de acesso a serviços especializados é um entrave para o tratamento e controle de danos, mas o enunciado foca na prevalência (presença da doença na população). O adoecimento desses grupos é provocado pelas condições adversas de vida (causalidade social), e não apenas pela ausência de serviços de saúde.\n\nAlternativa d) Incorreta. A relação entre baixa escolaridade e transtornos mentais é complexa e envolve a inserção precária no mercado de trabalho e menores recursos socioeconômicos. Atribuir o problema exclusivamente à dificuldade de compreensão de informações é uma análise reducionista e ignora o peso das privações materiais.\n\nAlternativa e) Incorreta. O desemprego é um fator de risco multicausal. Embora possa gerar isolamento, seu impacto principal na saúde mental advém da insegurança financeira, perda de propósito, privação de necessidades básicas e queda no status social. A alternativa restringe o impacto do desemprego a apenas um aspecto (convívio familiar/social), tornando-a incompleta perante a abrangência do problema.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Social e Reforma Psiquiátrica",
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  },
+  {
+    "id": "AJUDA_e7812dee-0d7a-412f-a492-425becae18be",
+    "originalId": "e7812dee-0d7a-412f-a492-425becae18be",
+    "statement": "Adolescente de 17 anos, vítima de queimadura de 2º grau superficial com álcool em região lateral e inferior da coxa direita há 2 horas, relata dor local de intensidade 8 em uma escala de 10. \n\nAlém da limpeza local com soro fisiológico, a conduta inicial a ser adotada deve ser analgesia",
+    "options": [
+      {
+        "id": "A",
+        "text": "intravenosa e antibiótico via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "via oral e colagenase tópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "intravenosa e curativo com sulfadiazina de prata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "intravenosa e antibiótico intravenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O manejo inicial de um paciente queimado baseia-se no controle da dor e na prevenção de infecções locais. No caso apresentado, o paciente possui uma queimadura de 2.º grau superficial e relata dor de forte intensidade (nota 8 em 10), o que direciona as escolhas terapêuticas.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A analgesia intravenosa é adequada para o nível de dor relatado (8/10), pois oferece alívio rápido e permite titulação. No entanto, o uso de antibiótico sistêmico (via oral ou venosa) de forma profilática não é indicado em queimaduras. Essa prática não reduz a incidência de infecção da ferida e pode selecionar microrganismos resistentes.\n\nAlternativa B: Incorreta. A analgesia por via oral tem absorção e início de ação mais lentos, sendo muitas vezes insuficiente para o manejo imediato de dores intensas na fase aguda. Além disso, a colagenase é uma enzima voltada para o desbridamento químico de tecidos necróticos e esfacelos. Em uma queimadura de 2.º grau superficial, o objetivo é a proteção da derme exposta, e não o desbridamento enzimático.\n\nAlternativa C: Correta. Esta alternativa contempla os dois pilares do atendimento inicial ao queimado:\n1. Controle da dor: para dores de moderada a forte intensidade (acima de 7 na escala visual analógica), a via intravenosa é a preferencial no ambiente de urgência.\n2. Tratamento local: a sulfadiazina de prata a 1% é o agente tópico mais utilizado no Brasil. Ela atua como um excelente antimicrobiano de amplo espectro, prevenindo a colonização da ferida, além de manter o leito da lesão úmido, o que facilita a reepitelização.\n\nAlternativa D: Incorreta. Assim como na alternativa A, embora a analgesia intravenosa esteja correta para a dor aguda intensa, a antibioticoterapia intravenosa profilática é contraindicada. Antibióticos sistêmicos no paciente queimado devem ser reservados apenas para casos com sinais clínicos e laboratoriais de infecção estabelecida ou sepse.\n\nPortanto, a conduta correta une a potência da analgesia venosa com a proteção tópica e antimicrobiana da sulfadiazina de prata.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  },
+  {
+    "id": "AJUDA_e784426a-3c5d-4a05-a469-4da3e9d0bc00",
+    "originalId": "e784426a-3c5d-4a05-a469-4da3e9d0bc00",
+    "statement": "O câncer colorretal é o mais incidente dentre as neoplasias malignas gastrointestinais. Sua incidência tem aumentado em muitos países dentre os jovens. Quanto ao rastreamento para câncer colorretal, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "colonoscopia pode ser utilizada não somente como exame diagnóstico, mas também como intervenção terapêutica em alguns casos de câncer colorretal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pacientes com doença de Crohn devem iniciar rastreamento para câncer colorretal antes dos 45 anos, enquanto pacientes com retocolite ulcerativa seguem a mesma estratégia de rastreio que a população geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "colonoscopia virtual pode ser utilizada como exame de rastreio, caso o paciente seja relutante em realizar exames, tais como sangue oculto nas fezes ou colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a grande limitação da colonoscopia como exame de rastreamento para câncer colorretal populacional é que este é um exame de baixa sensibilidade, apesar de alta especificidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A (Correta): A colonoscopia é considerada o padrão-ouro no rastreio do câncer colorretal justamente por sua versatilidade. Como método diagnóstico, permite a visualização direta da mucosa e a realização de biópsias. Como intervenção terapêutica, possibilita a realização de polipectomias e mucosectomias, removendo lesões pré-neoplásicas (adenomas) e interrompendo a sequência adenoma-carcinoma, o que reduz efetivamente a incidência e a mortalidade pela doença. Em casos selecionados de câncer in situ ou intramucoso, a ressecção endoscópica pode ser, inclusive, curativa.\n\nAlternativa B (Incorreta): Pacientes com Doenças Inflamatórias Intestinais (DII), o que inclui tanto a Doença de Crohn quanto a Retocolite Ulcerativa (RCU), apresentam risco aumentado para câncer colorretal. Portanto, a RCU não segue a estratégia de rastreio da população geral. Para ambas as condições, o rastreio (vigilância) geralmente se inicia após 8 a 10 anos de evolução da doença, com colonoscopias periódicas e biópsias seriadas, independentemente da idade de 45 ou 50 anos preconizada para o risco habitual.\n\nAlternativa C (Incorreta): A colonografia por tomografia computadorizada (colonoscopia virtual) pode ser uma opção em casos específicos, mas não é a recomendação principal para pacientes relutantes. O teste de sangue oculto nas fezes (preferencialmente o imunoquímico — FIT) é a alternativa de primeira linha para quem recusa métodos invasivos. É importante lembrar que a colonoscopia virtual também exige preparo intestinal rigoroso e, se houver qualquer achado suspeito, o paciente precisará obrigatoriamente realizar uma colonoscopia convencional para biópsia ou retirada da lesão.\n\nAlternativa D (Incorreta): A colonoscopia é o exame de maior sensibilidade e especificidade disponível para o câncer colorretal, sendo capaz de detectar a vasta maioria das lesões malignas e pré-malignas. As limitações do exame para o rastreamento populacional em larga escala não são de acurácia, mas sim de custo, necessidade de infraestrutura especializada, necessidade de preparo intestinal, uso de sedação e o caráter invasivo do procedimento.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:27.775Z"
+  }
+]

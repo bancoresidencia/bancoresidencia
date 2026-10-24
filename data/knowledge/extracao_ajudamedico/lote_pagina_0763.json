@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_d4eb7da7-6fe0-44e1-8eee-096fc2d50bba",
+    "originalId": "d4eb7da7-6fe0-44e1-8eee-096fc2d50bba",
+    "statement": "Pode-se afirmar que a condição mais frequentemente associada a piúria é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "síndrome nefrótica pura",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nefropatia diabética",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "glomerulonefrite pós-estreptocócica aguda",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "glomerulopatia membranosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A piúria refere-se à presença de leucócitos na urina e indica um processo inflamatório em curso no sistema urinário. No contexto das doenças glomerulares, ela é um componente frequente do chamado sedimento urinário ativo, sendo um marcador de inflamação aguda do parênquima renal.\n\nAlternativa A: Incorreta. A síndrome nefrótica pura caracteriza-se por uma alteração na permeabilidade capilar glomerular que leva à perda maciça de proteínas, hipoalbuminemia e edema. O sedimento urinário nessas condições costuma ser pobre em células, sendo frequentemente chamado de sedimento limpo ou inexpressivo. O achado microscópico típico é a lipidúria (corpos ovalados de gordura), e não a piúria.\n\nAlternativa B: Incorreta. A nefropatia diabética é uma doença crônica, degenerativa e esclerosante dos glomérulos. Embora cause proteinúria progressiva e perda de função renal, ela não se caracteriza por uma resposta inflamatória aguda exsudativa. Portanto, a presença de leucócitos na urina não faz parte do quadro clínico habitual da doença renal causada pelo diabetes.\n\nAlternativa C: Correta. A glomerulonefrite pós-estreptocócica aguda (GNPE) é o protótipo da síndrome nefrítica. Sua fisiopatologia envolve a deposição de imunocomplexos no glomérulo, o que desencadeia uma intensa resposta inflamatória com ativação do sistema complemento. Esse processo atrai neutrófilos e monócitos para o tufo glomerular (fase exsudativa). Como consequência dessa inflamação aguda e agressiva, o sedimento urinário torna-se ativo, apresentando frequentemente hematúria dismórfica, cilindros hemáticos e piúria (leucocitúria). Dentre as opções, é a condição em que a inflamação é o mecanismo central e mais exuberante.\n\nAlternativa D: Incorreta. A glomerulopatia membranosa é uma das principais causas de síndrome nefrótica em adultos. O dano renal ocorre pelo espessamento da membrana basal glomerular devido à deposição de imunocomplexos *in situ*, mas sem o recrutamento maciço de células inflamatórias para o glomérulo. Assim como em outras síndromes nefróticas, o sedimento urinário não costuma apresentar piúria significativa.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:12.082Z"
+  },
+  {
+    "id": "AJUDA_d4f0645a-2a7f-4fb5-8bfa-f629e1257a10",
+    "originalId": "d4f0645a-2a7f-4fb5-8bfa-f629e1257a10",
+    "statement": "Adolescente de 15 anos chega ao pronto socorro com relato de Náuseas e vômitos + Dor abdominal difusa+ Cefaleia + Tontura e Fraqueza. Relata que há 4 horas ingeriu bebida alcoólica e percebe piora progressiva do quadro. Após 12 h da admissão, relata visão turva, seguida de crise convulsiva. Exames de laboratório evidenciam acidose metabólica com GAP aniônico elevado, aumento de escorias nitrogenadas e discreta elevação de transaminases. Ante o exposto, assinale a hipótese diagnóstica e tratamento adequado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "insuficiência renal => correção de acidose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "intoxicação por metanol => etanol + hemodiálise",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pancreatite => jejum e medidas de suporte",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "arritmias => cardioversao elétrica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sepse => antibioticoterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta um quadro clássico de intoxicação por álcool tóxico, especificamente o metanol. Os pontos fundamentais para o diagnóstico são: história de ingestão de bebida alcoólica (frequentemente adulterada ou de procedência duvidosa), um período de latência até o surgimento dos sintomas graves, acidose metabólica com hiato aniônico (*Anion Gap*) elevado e, como sinal patognomônico, a alteração visual (visão turva).\n\nAnálise das alternativas:\n\na) Incorreta. A insuficiência renal aguda pode gerar acidose metabólica com hiato aniônico elevado devido ao acúmulo de ácidos orgânicos não mensuráveis. No entanto, ela não explica a alteração visual súbita nem a crise convulsiva logo após a ingestão alcoólica em um paciente jovem. O aumento das escórias nitrogenadas observado nos exames é, na verdade, uma consequência da toxicidade sistêmica do metanol e de seus metabólitos nos rins.\n\nb) Correta. O metanol é metabolizado pela enzima álcool desidrogenase em formaldeído e, posteriormente, em ácido fórmico. O ácido fórmico é o grande vilão: ele inibe a respiração mitocondrial, causa acidose metabólica grave e possui toxicidade direta ao nervo óptico, levando à visão turva e à cegueira. O acometimento do sistema nervoso central justifica a cefaleia e as convulsões. O tratamento padrão envolve o bloqueio da enzima álcool desidrogenase para impedir a formação de novos metabólitos tóxicos (utilizando etanol ou fomepizol) e a realização de hemodiálise para remover o metanol e o ácido fórmico já circulantes.\n\nc) Incorreta. A pancreatite aguda pode ser causada pelo consumo excessivo de álcool e se manifesta com dor abdominal e vômitos. Entretanto, ela não costuma cursar com turvação visual ou acidose metabólica com hiato aniônico tão acentuada de forma isolada, a menos que o paciente evolua para choque séptico ou falência múltipla de órgãos, o que não é o quadro inicial descrito.\n\nd) Incorreta. Arritmias poderiam explicar tontura e fraqueza, mas não guardam relação direta com a acidose metabólica de hiato aniônico elevado e os sintomas visuais específicos relatados após 12 horas da admissão.\n\ne) Incorreta. Embora a sepse cause acidose lática (que eleva o hiato aniônico), o histórico de ingestão de álcool associado especificamente à perda visual e à convulsão direciona o raciocínio clínico para causas toxicológicas, e não para um processo infeccioso sistêmico primário.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:12.082Z"
+  },
+  {
+    "id": "AJUDA_d4f40887-f554-49b1-a8e9-401907590eab",
+    "originalId": "d4f40887-f554-49b1-a8e9-401907590eab",
+    "statement": "Paciente, 49 anos de idade, diagnosticada com carcinoma invasivo de mama. Imunohistoquímica: receptores de estrogênio (RE) fortemente positivos, receptores de progesterona (RP) positivos, HER2 negativo, Ki-67 = 8%. Considerando os subtipos moleculares do câncer de mama, sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o perfil descrito corresponde ao subtipo luminal A, caracterizado por RE e/ou RP positivos, baixo índice proliferativo (Ki-67 baixo) e HER2 negativo, geralmente associado a melhor prognóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o subtipo luminal B apresenta sempre RE negativos e HER2 positivos, sendo de pior prognóstico que o triplo-negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o câncer de mama HER2-enriquecido caracteriza-se por RE e RP positivos, HER2 negativo e alto índice proliferativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o subtipo triplo-negativo é definido por RE, RP e HER2 positivos, e está associado a melhor resposta à hormonoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender a classificação molecular do câncer de mama baseada na imuno-histoquímica, que orienta o prognóstico e a estratégia terapêutica.\n\nAnálise do caso clínico:\nA paciente apresenta receptores hormonais positivos (RE e RP), HER2 negativo e um Ki-67 de 8%. O Ki-67 é um marcador de proliferação celular; valores abaixo de 14% a 20% (dependendo da referência utilizada) são considerados baixos, indicando um crescimento tumoral mais lento.\n\nAnálise das alternativas:\n\nAlternativa (a): Correta. O subtipo Luminal A é definido exatamente pela presença de receptores de estrogênio e/ou progesterona, ausência de superexpressão de HER2 e baixo índice de proliferação celular (Ki-67 baixo). No caso clínico, o Ki-67 de 8% confirma a baixa atividade mitótica. Entre os subtipos moleculares, o Luminal A é o que apresenta o melhor prognóstico clínico e excelente resposta à hormonoterapia.\n\nAlternativa (b): Incorreta. O subtipo Luminal B obrigatoriamente apresenta receptores de estrogênio positivos (daí o termo luminal). Ele pode ser HER2 negativo (apresentando Ki-67 elevado ou receptores de progesterona baixos/negativos) ou HER2 positivo. Além disso, embora o Luminal B tenha um prognóstico pior que o Luminal A, ele geralmente apresenta desfechos melhores que o subtipo triplo-negativo.\n\nAlternativa (c): Incorreta. O câncer de mama HER2-enriquecido é caracterizado pela superexpressão ou amplificação do gene HER2, sendo tipicamente negativo para receptores de estrogênio e progesterona (RE e RP negativos).\n\nAlternativa (d): Incorreta. O subtipo triplo-negativo recebe esse nome justamente por ser negativo para os três marcadores: RE negativo, RP negativo e HER2 negativo. Por não possuir receptores de estrogênio e progesterona, este subtipo não tem indicação e não responde ao tratamento com hormonoterapia, sendo a quimioterapia o pilar do tratamento sistêmico.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:12.082Z"
+  },
+  {
+    "id": "AJUDA_d4f8b262-d34f-4386-812f-9e2343a8076a",
+    "originalId": "d4f8b262-d34f-4386-812f-9e2343a8076a",
+    "statement": "O rastreamento do câncer de mama no Brasil é feito principalmente por meio da mamografia, sendo que as recomendações variam entre as diretrizes oficiais do Ministério da Saúde e as de entidades médicas, como a Sociedade Brasileira de Mastologia. O objetivo é detectar a doença em estágio inicial, aumentando as chances de cura. Em setembro de 2025, o Ministério da Saúde atualizou a recomendação para o rastreamento do câncer de mama no Brasil, alinhando-se a orientações internacionais. Sobre o rastreamento mamográfico no SUS, segundo o protocolo do Ministério da Saúde, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para mulheres entre 50 e 69 anos a mamografia bienal (a cada dois anos) é recomendada como estratégia populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para mulheres entre 40 e 49 anos a mamografia é garantida pelo SUS mediante avaliação e indicação médica, considerando os riscos e benefícios individuais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mulheres com histórico familiar de câncer de mama devem realizar mamografia de rastreamento anualmente, independentemente da idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O Ministério da Saúde não recomenda rastreamento mamográfico de rotina para mulheres acima de 70 anos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A realização de mamografia de rastreamento deve ser feita somente em mulheres que apresentam sinais ou sintomas suspeitos de câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Comentário sobre a questão:\n\nO tema central é o rastreamento do câncer de mama no Brasil, focando na atualização hipotética de setembro de 2025 do Ministério da Saúde, que busca alinhar o SUS às tendências internacionais (como as do USPSTF e das sociedades brasileiras de especialidades).\n\nAlternativa (a) Incorreta: Tradicionalmente, o Ministério da Saúde recomendava o rastreamento populacional apenas para mulheres de 50 a 69 anos, a cada dois anos. No entanto, o enunciado destaca uma atualização em 2025 para alinhamento internacional. Com essa mudança, a faixa etária de 50 a 69 anos deixa de ser a única ou a principal referência exclusiva da estratégia populacional, tornando a alternativa defasada frente à nova diretriz mencionada.\n\nAlternativa (b) Correta: Esta alternativa reflete a principal mudança nas políticas de saúde pública recentes e na atualização de 2025. O reconhecimento de que mulheres entre 40 e 49 anos também se beneficiam do rastreamento, desde que a decisão seja compartilhada entre médico e paciente (avaliando riscos como resultados falsos-positivos e benefícios como detecção precoce), é o ponto-chave. O SUS garante o acesso ao exame para essa faixa etária mediante a indicação médica baseada nessa análise individualizada.\n\nAlternativa (c) Incorreta: O rastreamento em mulheres com alto risco (histórico familiar ou mutações genéticas) segue protocolos específicos e intensificados, muitas vezes começando aos 30 ou 35 anos e incluindo outros exames como a ressonância magnética. No entanto, não é feito de forma anual \"independentemente da idade\" (não se inicia na infância ou adolescência, por exemplo).\n\nAlternativa (d) Incorreta: Embora o rastreamento populacional rotineiro tenha um limite de idade superior (geralmente até 69 ou 74 anos), as diretrizes modernas e as atualizações internacionais indicam que o rastreamento pode continuar enquanto a mulher tiver uma boa expectativa de vida (geralmente acima de 10 anos) e ausência de comorbidades graves. Dizer que \"não recomenda\" de forma genérica está incorreto após as atualizações.\n\nAlternativa (e) Incorreta: Esta alternativa confunde os conceitos de rastreamento e diagnóstico. A mamografia de rastreamento é, por definição, realizada em mulheres assintomáticas (sem sinais ou sintomas), com o objetivo de detectar lesões não palpáveis. Mulheres que já apresentam sinais ou sintomas (como nódulos palpáveis ou descarga papilar) devem realizar a mamografia diagnóstica.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:12.082Z"
+  },
+  {
+    "id": "AJUDA_d4fb6ece-ea01-4f6e-a46f-76d5a0eb8583",
+    "originalId": "d4fb6ece-ea01-4f6e-a46f-76d5a0eb8583",
+    "statement": "Uma paciente de 36 anos, nuligesta, tabagista (25 cigarros/dia), portadora de migrânea com aura frequente e hipertensão arterial controlada, solicita método contraceptivo seguro. Relata preocupação com ganho de peso e prefere um método que não exija lembrança diária, recusando dispositivos intrauterinos por receio do procedimento de inserção. Considerando os Critérios de Elegibilidade Médica da Organização Mundial da Saúde (OMS) e o perfil clínico apresentado, assinale a alternativa correta que indica uma opção contraceptiva classificada como Categoria 1 ou 2 e o respectivo racional fisiológico que fundamenta sua indicação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O implante subdérmico de etonogestrel é a escolha ideal (Categoria 1 ou 2), pois é um método apenas de progestogênio que não apresenta contraindicação para tabagistas acima de 35 anos ou pacientes com migrânea com aura, oferecendo alta eficácia independente da adesão diária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O adesivo transdérmico de norelgestromina e etinilestradiol é classificado como Categoria 1, uma vez que a absorção cutânea mantém níveis séricos estáveis, evitando picos que desencadeiam a aura migranosa e eventos tromboembólicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O contraceptivo oral combinado de baixa dose (20 mcg de etinilestradiol) é Categoria 2, sendo aceitável porque a dose hormonal reduzida minimiza o risco trombótico associado ao tabagismo e à migrânea, superando os riscos cardiovasculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O injetável mensal combinado (valerato de estradiol + enantato de norethisterona) é a melhor opção, pois evita a primeira passagem hepática, reduzindo o impacto nos fatores de coagulação e sendo seguro para hipertensas tabagistas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta três contraindicações absolutas (Categoria 4 da OMS) ao uso de qualquer método que contenha estrogênio:\n1. Idade acima de 35 anos associada ao tabagismo pesado (mais de 15 cigarros/dia).\n2. Migrânea (enxaqueca) com aura em qualquer idade.\n3. Hipertensão arterial (que isoladamente já seria Categoria 3 ou 4 para métodos combinados).\n\nAlternativa A (Correta):\nO implante de etonogestrel é um método apenas de progestogênio e de longa duração (LARC). De acordo com os Critérios de Elegibilidade Médica da OMS, métodos de progestogênio isolado são classificados como Categoria 2 para mulheres com migrânea com aura e Categoria 1 para tabagistas, independentemente da idade ou carga tabágica. O racional fisiológico é que a ausência do componente estrogênico evita o aumento de fatores de coagulação e o risco aumentado de acidente vascular cerebral (AVC) e eventos tromboembólicos arteriais. Como a paciente recusa o DIU e deseja um método que não dependa de memória diária, o implante é a melhor indicação.\n\nAlternativa B (Incorreta):\nO adesivo transdérmico é um método contraceptivo combinado (estrogênio + progestogênio). Mesmo com a absorção cutânea, ele é classificado como Categoria 4 para mulheres com mais de 35 anos que fumam e para quem possui migrânea com aura. O risco de eventos cardiovasculares graves é inaceitável neste perfil de paciente.\n\nAlternativa C (Incorreta):\nO contraceptivo oral combinado de baixa dose (20 mcg de etinilestradiol) continua sendo Categoria 4. A redução da dosagem de estrogênio não elimina a contraindicação formal em pacientes com aura migranosa ou fumantes com mais de 35 anos, pois o risco sinérgico para tromboembolismo e AVC permanece elevado.\n\nAlternativa D (Incorreta):\nO injetável mensal é um método combinado. Embora contenha valerato de estradiol (um estrogênio mais natural) e evite a primeira passagem hepática, as regras de elegibilidade da OMS para métodos combinados são as mesmas: é Categoria 4 para fumantes acima de 35 anos e para portadoras de migrânea com aura, não sendo considerado uma opção segura.\n\nConclusão:\nDiante das múltiplas contraindicações ao estrogênio e da recusa da paciente ao DIU, os métodos apenas de progestogênio de longa ação, como o implante, são a escolha de eleição, garantindo segurança cardiovascular e alta eficácia.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:12.082Z"
+  },
+  {
+    "id": "AJUDA_d514ea83-dece-4352-9794-0d4600c53ad8",
+    "originalId": "d514ea83-dece-4352-9794-0d4600c53ad8",
+    "statement": "Criança, sexo feminino, 8 anos de idade, portadora de asma, comparece à consulta na unidade básica de saúde referindo que, nas últimas 4 semanas, apresenta tosse e cansaço pelo menos uma vez por semana. Despertou à noite por cansaço apenas uma vez. Tem utilizado medicação de resgate para realizar aula de educação física (3 vezes por semana), conseguindo fazer a aula junto aos seus colegas, sem problemas. Faz uso diário de beclometasona HFA partícula padrão 50 µg, 2 jatos por via inalatória de 12/12horas, com técnica de aplicação repetida por duas vezes, conforme imagem a seguir:\n\nQual a conduta na consulta de hoje, conforme recomendações do GINA 2025?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Associar salbutamol 100 µg 4 jatos de 12/12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ajustar beclometasona para 200 µg 1 jato de 12/12horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Corrigir técnica de administração, sem alterar medicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Referenciar paciente ao serviço de pneumologia pediátrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para definir a conduta adequada, deve-se primeiro avaliar o nível de controle da asma da paciente de acordo com os critérios do GINA para a faixa etária de 6 a 11 anos, considerando as últimas 4 semanas:\n\n1. Sintomas diurnos mais de duas vezes por semana: Nao (apresenta pelo menos 1 vez por semana).\n2. Despertar noturno devido a asma: Sim (despertou 1 vez).\n3. Uso de medicacao de resgate mais de duas vezes por semana: Sim (utiliza 3 vezes por semana para a aula de educacao fisica).\n4. Limitacao de atividades: Nao.\n\nCom 2 criterios presentes (despertar noturno e uso de resgate mais de 2 vezes por semana), a asma e classificada como Parcialmente Controlada. \n\nAssociacao com a Imagem:\nA sequencia de fotos demonstra a realizacao de uma tecnica inalatoria correta com inalador pressurizado dosimetrado e espacador valvulado: a paciente realiza a expiracao previa ao dispositivo, acopla o bocal e inala o farmaco, mantem apneia pos-inalatoria por 10 segundos para permitir a deposicao pulmonar do medicamento e, por fim, expira. Como a tecnica esta correta e ha boa adesao, o descontrole decorre da necessidade de ajuste na dose da medicacao (step-up).\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. O salbutamol e um broncodilatador de curta acao (SABA) e nao deve ser prescrito em horario fixo para manutencao. Seu uso regular e continuo leva a dessensibilizacao dos receptores beta-2 adrenergicos, aumento da hiper-responsividade bronquica e nao trata a inflamacao subjacente da asma.\n\nAlternativa b: Correta. A crianca esta na Etapa 2 (Step 2) do tratamento, utilizando dose baixa de corticoide inalatorio (beclometasona HFA particula padrao 50 microgramas, 2 jatos de 12 em 12 horas, totalizando 200 microgramas ao dia). Estando a asma parcialmente controlada com tecnica correta, a progressao para a Etapa 3 preconiza o aumento para dose media de corticoide inalatorio (beclometasona 200 microgramas, 1 jato de 12 em 12 horas, totalizando 400 microgramas ao dia) ou a associacao de um LABA.\n\nAlternativa c: Incorreta. A imagem evidencia execucao impecavel da tecnica inalatoria, incluindo a preparacao, a inalacao e a pausa inspiratoria de 10 segundos. Nao ha erro tecnico a ser corrigido que justifique manter o esquema terapeutico inalterado.\n\nAlternativa d: Incorreta. O manejo da asma parcialmente controlada nas etapas iniciais e de competencia da Atencao Primaria a Saude. O encaminhamento ao pneumologista pediatrico e reservado para casos refratarios de dificil controle, etapas avancadas (Etapas 4 ou 5) ou duvida diagnostica.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/41e7348bc918242af5b01daf6bfac7f64e08c2c2eaeaccc81c3a2374df25ab2b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d514ea83-dece-4352-9794-0d4600c53ad8_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:12.583Z"
+  },
+  {
+    "id": "AJUDA_d5183bc6-9dd6-4900-a512-facc528319e2",
+    "originalId": "d5183bc6-9dd6-4900-a512-facc528319e2",
+    "statement": "Paciente de 42 anos, grávida de 38 semanas e quatro dias, foi admitida na maternidade com queixa de contrações. Foi internada e acompanhada segundo partograma abaixo: Trata-se de gestação única, o feto encontra-se cefálico e o peso fetal estimado pela ultrassonografia há dois dias foi 3705g. É hipertensa e diabética, e a gravidez se deu após tratamento de FIV (fertilização in vitro). As comorbidades estão bem controladas e não houve intercorrências durante o pré natal. O exame físico e os exames laboratoriais não tinham alterações dignas de nota, Assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A evolução do trabalho de parto está dentro da normalidade e na hora de registro 8 a dilatação do colo uterino está completa tendo sido evidenciado que a variedade de posição do polo cefálico foi de ODT (occípito direita transversa) para OP (occípito púbica), após a rotação interna.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A evolução do trabalho de parto está dentro da normalidade e na hora de registro 8 o polo cefálico ainda não alcançou o plano zero de De Lee porque ainda não realizou a rotação interna e a variedade de posição está indo de OET (occipito esquerda transversa) para OS (occípito sacra).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A evolução do trabalho de parto não está dentro da normalidade porque, embora a paciente esteja com dilatação de 10cm na hora de registro 8, a variedade de posição não está adequada para o nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A evolução do trabalho de parto não está dentro da normalidade, pois não houve mudança da dilatação nas primeiras horas de registro e o polo cefálico insinuou na pelve materna transverso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Partograma:\n\nO partograma é a representação gráfica do trabalho de parto. No eixo vertical esquerdo, observamos a dilatação cervical (representada pelos triângulos); no eixo vertical direito, acompanhamos a descida da apresentação fetal (planos de De Lee, representados pelos círculos que indicam a variedade de posição).\n\nAlternativa A (Correta): Ao analisar os triângulos, nota-se que a dilatação cervical atinge os 10 cm (dilatação completa) na hora 8 do registro. A curva de dilatação permanece sempre à esquerda da linha de alerta, o que caracteriza um trabalho de parto com evolução normal (eutócica). Em relação à estática fetal, os símbolos iniciais (horas 1 e 2) mostram a sutura sagital disposta horizontalmente com o lambda à direita da pelve materna, caracterizando a variedade occipitodireita transversa (ODT). No registro final (hora 8), o círculo mostra a sutura sagital verticalizada com o lambda voltado para a sínfise púbica, confirmando que houve a rotação interna para occipitopúbica (OP).\n\nAlternativa B (Incorreta): O polo cefálico na hora 8 já ultrapassou o plano zero de De Lee há bastante tempo. Pelos registros, ele se encontra em planos baixos (+3 ou +4), indicando que a descida ocorreu de forma satisfatória. Além disso, a imagem mostra a rotação para a posição anterior (púbica) e não sacra.\n\nAlternativa C (Incorreta): A evolução é tecnicamente perfeita e dentro da normalidade, pois a progressão da dilatação acompanhou o tempo esperado sem cruzar a linha de alerta. A variedade de posição occipitopúbica (OP) é justamente a posição ideal e mais comum para o desprendimento do feto no parto vaginal.\n\nAlternativa D (Incorreta): O fato de a dilatação ter permanecido em 3 cm nas duas primeiras horas pode representar o final da fase latente ou o início da fase ativa. O critério de normalidade no partograma é definido principalmente após os 4 cm de dilatação; como a curva progrediu de forma constante após esse ponto, sem atrasos, a evolução é normal. Além disso, a insinuação do polo cefálico em variedade transversa (como ODT ou OET) é um mecanismo fisiológico frequente, especialmente em bacias ginecoides ou platipeloides, não configurando distocia.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Partograma e Distocias",
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c9704bca579aeda9c7471fdd4b82bd6bf17607b2875fc9ca17b0871718f5ac43.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d5183bc6-9dd6-4900-a512-facc528319e2_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:13.005Z"
+  },
+  {
+    "id": "AJUDA_d5195574-6e43-4652-b349-286cd1825ac1",
+    "originalId": "d5195574-6e43-4652-b349-286cd1825ac1",
+    "statement": "Joana, 36 anos, gestante com idade gestacional de 12 semanas apresenta-se na unidade báisca de saúde para iniciar a rotina pré natal. Sobre o atendimento pré natal adequado, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Recomenda-se a ingestão de dois comprimidos por dia de carbonato de cálcio (1000mg de cálcio elementar) para todas as gestantes com dieta pobre em cálcio, para prevenção de pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Durante a anamnese, a identificação de fatores de alto risco para pré eclampsia, obriga a manutenção do ácido fólico desde o primeiro trimestre até o final da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A aspirina em alta dose deve ser introduzida em mulheres identificadas como com risco aumentado de pré-eclâmpsia, devendo ser iniciada antes das 16 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Artérias uterinas com incisura protodiastólica ao doppler e índice de pulsatilidade médio acima do percentil 95 para a idade gestacional no ultrassom morfológico do 1º trimestre evidenciam baixo risco de pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Gabarito: Alternativa A\n\nAlternativa A (Correta): A Organização Mundial da Saúde (OMS) e o Ministério da Saúde recomendam a suplementação de cálcio (1.000 a 2.000 mg de cálcio elementar por dia) para gestantes pertencentes a populações com baixa ingestão dietética desse mineral, com o objetivo de reduzir o risco de desenvolvimento de pré-eclâmpsia.\n\nAlternativa B (Incorreta): O ácido fólico é indicado primariamente para a prevenção de defeitos de fechamento do tubo neural, devendo ser utilizado no período periconcepcional até o término do primeiro trimestre (12 semanas). A identificação de alto risco para pré-eclâmpsia indica a prescrição de ácido acetilsalicílico em baixas doses e suplementação de cálcio, e não a manutenção obrigatória do ácido fólico até o parto.\n\nAlternativa C (Incorreta): O uso de ácido acetilsalicílico (AAS) para prevenção de pré-eclâmpsia em pacientes de alto risco deve ser feito em baixa dose (geralmente entre 100 mg e 150 mg ao dia), iniciado preferencialmente antes de 16 semanas. O emprego de altas doses aumenta os riscos materno-fetais de sangramento sem oferecer benefício adicional.\n\nAlternativa D (Incorreta): O achado de índice de pulsatilidade médio das artérias uterinas acima do percentil 95 e a presença de incisura protodiastólica refletem elevada resistência vascular e má adaptação placentária (falha na invasão trofoblástica), caracterizando alto risco para pré-eclâmpsia e restrição de crescimento intrauterino, e não baixo risco.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Síndromes Hipertensivas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:13.005Z"
+  },
+  {
+    "id": "AJUDA_d52f1347-dacb-49d5-be05-42ca0c3a7bab",
+    "originalId": "d52f1347-dacb-49d5-be05-42ca0c3a7bab",
+    "statement": "Paciente de 67 anos, feminina, deu entrada em um serviço de emergência com dor torácica prolongada, hemodinamicamente estável, referindo três episódios nas últimas 12 horas. Pressão arterial de 100/60/mmHg e frequência cardíaca de 95 bpm. Referia antecedentes de hipertensão, tabagismo e diabetes. O eletrocardiograma de entrada mostrava infradesnivelamento do segmento ST de 2 mm. Iniciada nitroglicerina endovenosa com melhora completa da dor. O resultado do exame de troponina foi positivo e a paciente apresentava creatinina de 1,7 mg/dL. Diante desse quadro, qual o risco isquêmico e em quanto tempo idealmente ela deve ser submetida à cineangiocoronariografia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Risco muito alto, < 2 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Risco alto, < 24 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Risco intermediário, entre 25 a 72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Risco Baixo. Realizar teste não invasivo antes de indicar a cineangiocoronariografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito caracteriza uma Síndrome Coronariana Aguda sem Supradesnivelamento do Segmento ST (SCASST), especificamente um Infarto Agudo do Miocárdio sem Supra de ST (IAMSSST), devido à presença de troponina positiva e alterações isquêmicas no eletrocardiograma (infradesnivelamento de ST de 2 mm). A conduta em relação ao tempo para a realização da cineangiocoronariografia (cateterismo) baseia-se na estratificação de risco do paciente.\n\nAnálise das alternativas:\n\na) Incorreta. A estratégia invasiva imediata (em menos de 2 horas) é reservada para pacientes de muito alto risco. Os critérios incluem: instabilidade hemodinâmica ou choque cardiogênico, dor torácica refratária ao tratamento medicamentoso, arritmias potencialmente fatais, complicações mecânicas do infarto, insuficiência cardíaca aguda relacionada à isquemia ou alterações dinâmicas recorrentes do segmento ST. A paciente em questão estabilizou a dor com nitroglicerina e mantém estabilidade hemodinâmica, não preenchendo esses critérios.\n\nb) Correta. A paciente é classificada como de alto risco, o que indica uma estratégia invasiva precoce em até 24 horas. Os principais critérios para essa classificação presentes no caso são a elevação de biomarcadores de necrose miocárdica (troponina positiva) e a alteração dinâmica do segmento ST (infradesnivelamento de 2 mm), mesmo que assintomática no momento. Além disso, a paciente possui pontuação elevada em escores de risco (como o GRACE > 140) devido à idade, à presença de diabetes e à alteração renal (creatinina 1,7 mg/dL).\n\nc) Incorreta. A categoria de risco intermediário (estratégia invasiva em até 72 horas) era mais utilizada em diretrizes antigas ou para pacientes que não possuem critérios de alto risco, mas apresentam condições como diabetes mellitus, insuficiência renal crônica (clearance de creatinina < 60), fração de ejeção reduzida (< 40%) ou angina pós-infarto precoce. No entanto, a presença de troponina positiva associada ao infradesnivelamento do segmento ST \"carimba\" a paciente como de alto risco, exigindo o cateterismo em até 24 horas pelas diretrizes atuais (ESC e SBC).\n\nd) Incorreta. O baixo risco é atribuído a pacientes sem recorrência de dor, com eletrocardiograma normal e troponinas seriadas negativas. Nesses casos, a conduta inicial é a realização de testes não invasivos (como teste ergométrico ou cintilografia) para pesquisa de isquemia antes de se decidir por um procedimento invasivo. A paciente do caso já apresenta marcadores de lesão e alteração de ECG, o que exclui o baixo risco.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:13.005Z"
+  },
+  {
+    "id": "AJUDA_d535707b-f719-45a2-b836-576ae4757fe3",
+    "originalId": "d535707b-f719-45a2-b836-576ae4757fe3",
+    "statement": "Sobre o tratamento da síndrome dos ovários policísticos (SOP), assinale a alternativa que preenche as lacunas abaixo corretamente.\n\nO tratamento de primeira linha para mulheres com SOP que não tentam engravidar consiste em _______________ para regular os ciclos menstruais e diminuir os andrógenos séricos, aumentando os níveis de ____________________.",
+    "options": [
+      {
+        "id": "A",
+        "text": "contraceptivos hormonais à base de progestágeno isolado | progesterona sérica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "contraceptivos hormonais combinados | globulina de ligação aos hormônios sexuais",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "espironolactona | subunidade alfa dos hormônios glicoproteicos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "metformina | hormônio antimulleriano",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DO PROFESSOR\n\nA Síndrome dos Ovários Policísticos (SOP) é uma desordem endócrina comum, cujos pilares diagnósticos envolvem o hiperandrogenismo (clínico ou laboratorial) e a disfunção ovulatória (geralmente manifestada por irregularidade menstrual). O tratamento deve ser individualizado conforme as queixas da paciente.\n\nANÁLISE DA ALTERNATIVA B (CORRETA)\n\nPara mulheres com SOP que não têm desejo imediato de gravidez, os contraceptivos hormonais combinados (que contêm estrogênio e progestagênio) representam o tratamento de primeira linha. Eles atuam de duas formas principais para reduzir o hiperandrogenismo:\n1. O componente estrogênico estimula o fígado a produzir maiores quantidades de SHBG (Globulina de Ligação aos Hormônios Sexuais). Com mais SHBG circulante, há uma maior ligação da testosterona livre, o que diminui a sua fração biologicamente ativa na corrente sanguínea, melhorando sintomas como acne e hirsutismo.\n2. O componente progestagênio inibe a secreção de LH (hormônio luteinizante) pela hipófise, o que reduz a produção de andrógenos pelas células da teca nos ovários. Além disso, o progestagênio promove a descamação cíclica do endométrio, prevenindo a hiperplasia endometrial decorrente da ação estrogênica sem oposição.\n\nANÁLISE DAS ALTERNATIVAS INCORRETAS\n\nAlternativa A: O uso de progestagênio isolado pode ser uma opção para proteger o endométrio em pacientes que não podem usar estrogênio, mas não é a primeira linha para o controle do hiperandrogenismo. Isso ocorre porque o progestagênio isolado não aumenta a SHBG de forma significativa; em alguns casos, pode até diminuí-la. A progesterona sérica elevada não é o mecanismo para a redução de andrógenos na SOP.\n\nAlternativa C: A espironolactona é um diurético com potente ação antiandrogênica, mas é considerada uma terapia de segunda linha ou adjuvante. Ela deve ser iniciada preferencialmente após 6 meses de uso de contraceptivos combinados caso os resultados estéticos não sejam satisfatórios. Não é utilizada para regular o ciclo menstrual e não atua sobre a subunidade alfa dos hormônios glicoproteicos no contexto deste tratamento.\n\nAlternativa D: A metformina é um agente sensibilizador de insulina. Sua indicação na SOP está voltada para o tratamento de comorbidades metabólicas, como intolerância à glicose ou diabetes tipo 2, e pode ser usada como coadjuvante na indução da ovulação. Contudo, ela é menos eficaz que os contraceptivos combinados para regular o ciclo menstrual e tratar o hirsutismo. O hormônio antimülleriano (AMH) está elevado em mulheres com SOP, mas o tratamento de primeira linha não foca no aumento desse hormônio.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:13.005Z"
+  }
+]

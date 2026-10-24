@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_ec072c13-d5b5-469a-965b-ed8ac8462b00",
+    "originalId": "ec072c13-d5b5-469a-965b-ed8ac8462b00",
+    "statement": "Foi realizado um estudo transversal de base populacional na cidade de Pelotas, no sul do Brasil. Todos os indivíduos com idades entre 10 e 19 anos de idade que residiam nas moradias selecionadas foram convidados a participar do estudo. Para identificar depressão, foi aplicado o instrumento PHQ-9 (Patient Health Questionnaire – 9). Foram avaliados 359 adolescentes do sexo masculino e 384 do sexo feminino, dos quais 50 meninos e 76 meninas foram diagnosticados com depressão, conforme tabela a seguir:\n\nSuponha que, nesse estudo, a taxa de recusas para participar tenha sido de 50% entre os homens e 10% entre as mulheres. Nesse caso hipotético, que tipo de viés poderia ter afetado os resultados deste estudo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Confundimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Causalidade reversa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Viés de seleção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Viés de informação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da Questão:\nO enunciado descreve um cenário em que há uma diferença significativa na taxa de recusas entre os sexos (50% nos homens contra 10% nas mulheres). Quando a participação em um estudo não ocorre de forma equilibrada e certos grupos deixam de compor a amostra final de maneira sistemática, ocorre um problema na composição da amostra.\n\nAlternativa (c) - Correta: O viés de seleção ocorre quando há uma distorção na estimativa dos resultados decorrente dos procedimentos utilizados para selecionar os participantes ou de fatores que influenciam a participação voluntária. No caso descrito, a alta taxa de recusa entre os homens (50%) indica que os 359 meninos que participaram podem não representar fielmente a população total de meninos da cidade. Se os meninos que recusaram participar tivessem níveis de depressão diferentes daqueles que aceitaram, a prevalência calculada estaria errada. A recusa diferencial (ou viés de não resposta) é uma forma clássica de viés de seleção.\n\nAlternativa (a) - Incorreta: O viés de confundimento acontece quando uma variável externa está associada tanto à exposição quanto ao desfecho, distorcendo a associação observada. O problema central apontado pelo enunciado não é a interferência de uma terceira variável, mas sim o fato de que metade da população masculina convidada não chegou a entrar no estudo.\n\nAlternativa (b) - Incorreta: A causalidade reversa é um problema comum em estudos transversais nos quais, por se medir exposição e desfecho simultaneamente, não se sabe qual surgiu primeiro. Por exemplo, não se sabe se a depressão causou o isolamento social ou se o isolamento causou a depressão. O enunciado, porém, foca na taxa de recusas, o que remete à seleção da amostra, e não à temporalidade dos fatos.\n\nAlternativa (d) - Incorreta: O viés de informação (ou de aferição) ocorre após o participante entrar no estudo, durante a coleta dos dados. Seria o caso de erros na aplicação do questionário PHQ-9 ou falhas de memória dos entrevistados. A questão trata de quem deixou de participar (recusas), o que caracteriza um erro na etapa de seleção, antes da coleta de informações.\n\nConexão com a Imagem: A tabela apresenta os dados dos adolescentes que efetivamente participaram. A coluna final com interrogações mostra a prevalência calculada (13,9% para o sexo masculino e 19,8% para o feminino). O viés de seleção mencionado no enunciado coloca em dúvida a validade desses 13,9%, uma vez que esse número foi obtido ignorando os 50% de meninos que se recusaram a responder à pesquisa.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b93f79576c6c562f47e7c03f7e5075f245f94960b984ee1e9084cf871281548e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ec072c13-d5b5-469a-965b-ed8ac8462b00_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.457Z"
+  },
+  {
+    "id": "AJUDA_ec276170-9658-4b51-b4cd-485f04b1d347",
+    "originalId": "ec276170-9658-4b51-b4cd-485f04b1d347",
+    "statement": "Paciente de 16 anos de idade do sexo feminino procurou atendimento em Unidade de Pronto Atendimento com queixas de febre de 38,3 °C há 7 dias, acompanhada de tosse seca, odinofagia alta, mialgias, otalgia à esquerda e, há 2 dias, surgimento de lesões cutâneas com prurido ocasional. O exame físico mostrou a presença de eritema leve na orofaringe, hiperemia timpânica à esquerda. Exames cardiovascular e pulmonar normais. Apresentava lesões maculopapulares simétricas de aspecto “em alvo” na face e nos membros superiores e inferiores. A radiografia de tórax revelou infiltrado intersticial difuso bilateralmente.\n\nEm casos como esse, pacientes podem apresentar também",
+    "options": [
+      {
+        "id": "A",
+        "text": "elevação dos níveis séricos das transaminases em mais de 10 vezes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dissociação pulso-temperatura ou sinal de Faget.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "boa resposta terapêutica às aminopenicilinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "elevação dos níveis séricos de crioaglutininas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "formação de derrame pleural volumoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito aponta para uma pneumonia atípica causada pela bactéria Mycoplasma pneumoniae. Os principais indícios são: a idade da paciente (adolescente), a presença de pródromos respiratórios (tosse seca, odinofagia, mialgia), a otalgia associada à hiperemia timpânica (sugerindo miringite bolhosa, clássica do Mycoplasma), o infiltrado intersticial bilateral no raio X de tórax e, fundamentalmente, as lesões dermatológicas em \"alvo\" (eritema multiforme), que é a manifestação extrapulmonar mais característica desta infecção.\n\nAlternativa A (Incorreta): A elevação acentuada de transaminases (acima de 10 vezes o valor de referência) é típica de hepatites virais agudas ou lesões tóxico-farmacológicas, e não é um achado esperado na pneumonia por Mycoplasma.\n\nAlternativa B (Incorreta): A dissociação pulso-temperatura (Sinal de Faget) ocorre quando o paciente apresenta febre alta sem o aumento proporcional da frequência cardíaca. É um sinal clássico de febre amarela, febre tifoide e da pneumonia por Legionella pneumophila, mas não é o achado mais característico do Mycoplasma.\n\nAlternativa C (Incorreta): O Mycoplasma pneumoniae é uma bactéria que não possui parede celular. Como as aminopenicilinas (como amoxicilina e ampicilina) agem justamente impedindo a síntese da parede celular bacteriana, elas não possuem eficácia contra esse agente. O tratamento de escolha envolve macrolídeos (como azitromicina) ou tetraciclinas.\n\nAlternativa D (Correta): Cerca de 50% a 75% dos pacientes com pneumonia por Mycoplasma pneumoniae desenvolvem crioaglutininas (anticorpos IgM que aglutinam hemácias em baixas temperaturas). Esses anticorpos podem causar anemia hemolítica autoimune e são um marcador laboratorial clássico, embora inespecífico, associado a essa patologia.\n\nAlternativa E (Incorreta): O Mycoplasma costuma causar um padrão de infiltrado intersticial com pouco ou nenhum derrame pleural. Derrames pleurais volumosos são mais comuns em pneumonias bacterianas típicas (como pelo Streptococcus pneumoniae) ou em quadros de tuberculose pleural.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.457Z"
+  },
+  {
+    "id": "AJUDA_ec2c573c-3b06-49c9-91d9-3ee1edd78cdb",
+    "originalId": "ec2c573c-3b06-49c9-91d9-3ee1edd78cdb",
+    "statement": "Sobre o bloqueio de fase II do suxametônio, sabe-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "apresenta fadiga e facilitação pós-tetânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o uso de anticolinesterásicos está proscrito para reversão do bloqueio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pode acelerar recuperação do bloqueio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é comum de ocorrer com o uso de doses únicas de 1 mg/Kg de succinilcolina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O suxametônio (succinilcolina) é um bloqueador neuromuscular despolarizante que atua mimetizando a acetilcolina na junção neuromuscular. O bloqueio de fase II, também conhecido como bloqueio dual, ocorre quando a fibra muscular deixa de responder à despolarização contínua e passa a apresentar um comportamento semelhante ao dos bloqueadores adespolarizantes.\n\nAlternativa (a): Correta. Esta é a característica marcante do bloqueio de fase II. Diferentemente do bloqueio de fase I (onde a resposta aos estímulos é constante e não há facilitação), na fase II a membrana torna-se dessensibilizada. Isso faz com que o monitor de transmissão neuromuscular apresente \"fade\" (fadiga ou decaimento da resposta) durante estímulos de sequência de quatro (TOF) ou tetânicos, além de apresentar facilitação pós-tetânica.\n\nAlternativa (b): Incorreta. No bloqueio de fase I, o uso de anticolinesterásicos (como a neostigmina) é contraindicado porque potencializa o bloqueio. Entretanto, uma vez estabelecido o bloqueio de fase II, os anticolinesterásicos podem ser utilizados para tentar a reversão, agindo de forma semelhante à reversão dos bloqueadores adespolarizantes, embora a resposta possa ser imprevisível.\n\nAlternativa (c): Incorreta. O desenvolvimento do bloqueio de fase II está associado a um prolongamento do tempo de bloqueio neuromuscular e a um atraso na recuperação espontânea do paciente, e não a uma aceleração do processo.\n\nAlternativa (d): Incorreta. O bloqueio de fase II raramente ocorre com doses únicas padrão de 1 mg/kg em pacientes com atividade normal da pseudocolinesterase. Ele é tipicamente observado após doses cumulativas elevadas (geralmente acima de 4 a 5 mg/kg), infusões contínuas prolongadas ou em pacientes com variantes genéticas da pseudocolinesterase plasmática que impedem a metabolização rápida da droga.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.457Z"
+  },
+  {
+    "id": "AJUDA_ec35b3af-6d77-46a3-8c41-443d0334ec76",
+    "originalId": "ec35b3af-6d77-46a3-8c41-443d0334ec76",
+    "statement": "Sobre a avaliação de nódulos tireoidianos (Sistema Bethesda), analise as sentenças:\n\n1. Bethesda I indica amostra insatisfatória e requer repetição da PAAF.\n2. Bethesda II indica nódulo benigno e a conduta é o seguimento clínico.\n3. Bethesda VI indica malignidade comprovada e requer tireoidectomia.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-V, 2-F, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1-V, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1-F, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1-V, 2-V, 3-F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Sistema Bethesda é a padronização internacional utilizada para descrever os resultados citopatológicos obtidos através da Punção Aspirativa por Agulha Fina (PAAF) de nódulos tireoidianos. Ele correlaciona o achado microscópico com o risco de malignidade e sugere a conduta clínica mais adequada.\n\nAnálise das sentenças:\n\n1. Bethesda I indica amostra insatisfatória e requer repetição da PAAF: Verdadeira. Esta classificação é utilizada quando o material coletado não possui critérios de qualidade ou quantidade suficientes para uma análise segura (como falta de células foliculares ou excesso de sangue). A conduta padrão é a repetição da PAAF, geralmente após algumas semanas, preferencialmente guiada por ultrassonografia para aumentar a precisão.\n\n2. Bethesda II indica nódulo benigno e a conduta é o seguimento clínico: Verdadeira. Esta categoria engloba nódulos coloides, cistos e tireoidites. O risco de malignidade é extremamente baixo (0% a 3%), permitindo que o paciente seja apenas monitorado com exames clínicos e ultrassonográficos periódicos, sem necessidade de cirurgia imediata, salvo em casos de sintomas compressivos ou crescimento significativo.\n\n3. Bethesda VI indica malignidade comprovada e requer tireoidectomia: Verdadeira. Nesta categoria, as células apresentam características citológicas clássicas de câncer, mais comumente o carcinoma papilífero. O valor preditivo positivo para malignidade é de 97% a 99%. Portanto, o diagnóstico é considerado definitivo de câncer, e o tratamento de escolha é a intervenção cirúrgica (tireoidectomia total ou parcial).\n\nAnálise das alternativas:\n\na) Incorreta. Afirma que a sentença 2 é falsa, mas Bethesda II é de fato a categoria benigna com seguimento clínico.\n\nb) Correta. Como demonstrado na análise acima, todas as três afirmações estão tecnicamente corretas e seguem as diretrizes vigentes do Sistema Bethesda.\n\nc) Incorreta. Afirma que a sentença 1 é falsa, porém Bethesda I define justamente a amostra não diagnóstica/insatisfatória que exige nova punção.\n\nd) Incorreta. Afirma que a sentença 3 é falsa, mas o Bethesda VI é a classificação de malignidade que direciona para a cirurgia.\n\nConclusão: Todas as sentenças são verdadeiras (V, V, V), tornando a alternativa B a resposta correta.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.457Z"
+  },
+  {
+    "id": "AJUDA_ec3acb4a-3c42-46ff-99da-bbe42d67f0d3",
+    "originalId": "ec3acb4a-3c42-46ff-99da-bbe42d67f0d3",
+    "statement": "Um adulto hígido de 28 anos de idade compareceu ao pronto atendimento devido a uma mordedura de um cão. O paciente compareceu ao hospital 8 horas após o acidente e informou que o animal era de seu vizinho. O homem não apresentou qualquer mudança clínica recente, estava sob vigilância em domicilio e não possuía comprovação vacinal. A ferida estava localizada na mão esquerda, e se mostrava profunda e com exposição de tecido subcutâneo.\n\nAssinale a opção que apresenta a conduta adequada na avaliação inicial deste paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar inspeção da ferida, buscando sinais de infecção; avaliar função neurovascular e articular; investigar corpo estranho; considerar microbiologia provável para possível infecção (Pseudomonas aerouginosa, Escherichia coli, Proteus mirabilis, Staphylococcus e anaeróbios)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar inspeção da ferida, buscando sinais de infecção; avaliar função neurovascular e articular; investigar corpo estranho; considerar microbiologia provável para possível infecção (Pasteurella spp., Capnocytophaga canimorsus, Streptococcus, Staphylococcus, anaeróbios)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "realizar inspeção da ferida, buscando sinais de infecção; avaliar função neurovascular e articular; investigar corpo estranho; iniciar corticoesteroides e antialérgicos e considerar microbiologia provável para possível infecção (Pasteurella spp., Capnocytophaga canimorsus, Streptococcus, Staphylococcus, anaeróbios)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar apenas limpeza superficial, sem necessidade de avaliação da função articular ou neurovascular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "rescrever corticosteroide para reduzir edema local, sem necessidade de investigação microbiológica adicional por agora",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA abordagem inicial de uma mordedura canina, especialmente em áreas nobres como a mão, exige uma avaliação minuciosa devido ao alto risco de complicações infecciosas e funcionais. A mão possui diversas estruturas nobres (tendões, nervos e articulações) em um espaço reduzido, o que torna qualquer ferida profunda potencialmente grave.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a parte clínica da avaliação esteja correta (inspeção, avaliação neurovascular e busca por corpos estranhos), a microbiologia descrita não é a típica de mordedura de cães. Pseudomonas aeruginosa, Escherichia coli e Proteus mirabilis não compõem a flora oral habitual desses animais.\n\nAlternativa b) Correta. Esta alternativa descreve a conduta padrão. A inspeção em busca de sinais de infecção é fundamental, assim como a avaliação da integridade de nervos, vasos e da função articular (essencial em feridas de mão). A investigação de corpos estranhos (como dentes do animal) é obrigatória em feridas profundas. Além disso, cita corretamente os patógenos mais comuns: Pasteurella spp. (presente em mais de 50% dos casos), Capnocytophaga canimorsus (importante pela gravidade potencial), além de cocos Gram-positivos (Streptococcus e Staphylococcus) e anaeróbios.\n\nAlternativa c) Incorreta. O erro reside na indicação de corticosteroides e antialérgicos. O uso de corticoides em feridas agudas com alto risco de contaminação é contraindicado, pois pode prejudicar a resposta imune local e a cicatrização, facilitando a progressão de uma infecção bacteriana.\n\nAlternativa d) Incorreta. Uma limpeza superficial é insuficiente para uma ferida profunda com exposição de tecido subcutâneo. Além disso, negligenciar a avaliação neurovascular e articular em uma mordedura na mão é um erro grave, pois lesões de tendões ou nervos podem resultar em sequelas permanentes se não forem diagnosticadas precocemente.\n\nAlternativa e) Incorreta. Assim como na alternativa c, o uso de corticosteroides não tem indicação para redução de edema em feridas traumáticas infectadas. A investigação microbiológica (conhecimento da flora provável) é indispensável para a escolha correta da antibioticoterapia profilática ou terapêutica (geralmente amoxicilina com clavulanato).\n\nPontos complementares para a prova:\n1. Localização: Mordeduras na mão são consideradas de alto risco de infecção.\n2. Profilaxia da raiva: Como o cão é conhecido e pode ser observado, a conduta inicial envolve observar o animal por 10 dias. Se ele permanecer sadio, o esquema profilático não é necessário ou pode ser interrompido.\n3. Profilaxia do tétano: Deve ser avaliada conforme o histórico vacinal do paciente.\n4. Fechamento da ferida: Em mordeduras de cães na mão, o fechamento primário (sutura) é geralmente evitado ou feito de forma frouxa, priorizando-se a cicatrização por segunda intenção ou fechamento tardio devido ao risco de abscesso.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.457Z"
+  },
+  {
+    "id": "AJUDA_ec40e750-3f43-4ea2-8e6d-d316cf3f790d",
+    "originalId": "ec40e750-3f43-4ea2-8e6d-d316cf3f790d",
+    "statement": "A pré-eclâmpsia é uma doença multissistêmica que costuma ocorrer na segunda metade da gestação, sendo a doença mais importante na obstetrícia e a maior causa de mortalidade materna e perinatal. Sobre essa doença, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A doença é caracterizada pela hipertensão e proteinúria, com aumento da pressão arterial, associada à creatinina elevada (maior que 1,1mg/dl) e na ausência da proteinúria é considerada hipertensão gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A pré-eclâmpsia com restrição de crescimento intrauterino está associada somente a disfunções epiteliais maternos e história familiar, não tendo influência das artérias placentárias ou ao sistema imunológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A síndrome HELLP pode se desenvolver gradativamente, com a piora da proteinúria, sendo critério prognóstico para a gestante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento da pré-eclâmpsia na forma grave, com mais de 34 semanas de gestação, consiste em internação hospitalar para estabilização do quadro com sulfato de magnésio e interrupção da gravidez.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Incorreta. Atualmente, o diagnóstico de pré-eclâmpsia não depende exclusivamente da proteinúria. Ela é definida como hipertensão arterial surgida após a 20ª semana de gestação acompanhada de proteinúria OU de disfunções orgânicas (como creatinina acima de 1,1 mg/dL, plaquetopenia, alteração de enzimas hepáticas, entre outros). Portanto, se houver hipertensão e creatinina elevada, o diagnóstico é de pré-eclâmpsia, e não de hipertensão gestacional, mesmo sem proteinúria.\n\nAlternativa B: Incorreta. A fisiopatologia da pré-eclâmpsia, especialmente quando associada à restrição de crescimento intrauterino, está intimamente ligada à falha na segunda onda de invasão trofoblástica. Isso resulta em um remodelamento inadequado das artérias espirais, gerando isquemia placentária. Além disso, há uma importante influência do sistema imunológico na interface materno-fetal, não se limitando apenas a fatores epiteliais ou história familiar.\n\nAlternativa C: Incorreta. A Síndrome HELLP é uma complicação grave da pré-eclâmpsia caracterizada por hemólise (H), elevação de enzimas hepáticas (EL) e plaquetopenia (LP). Embora a proteinúria faça parte do espectro da pré-eclâmpsia, o valor isolado da proteinúria ou sua piora progressiva não são critérios diagnósticos para a síndrome HELLP, nem são os principais marcadores de prognóstico clínico para interrupção imediata em comparação aos parâmetros laboratoriais da síndrome.\n\nAlternativa D: Correta. Diante de um quadro de pré-eclâmpsia com sinais de gravidade, a conduta depende da idade gestacional. Se a gestante possui 34 semanas ou mais, a recomendação é a interrupção da gestação após a estabilização materna. Essa estabilização inclui o controle dos níveis tensionais e, obrigatoriamente, a administração de sulfato de magnésio para a prevenção de eclâmpsia (neuroproteção materna), uma vez que os riscos de manter a gestação superam os benefícios para o binômio.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.457Z"
+  },
+  {
+    "id": "AJUDA_ec421d7b-3204-4cab-b682-1917a6c9ffe1",
+    "originalId": "ec421d7b-3204-4cab-b682-1917a6c9ffe1",
+    "statement": "Um homem de 62 anos, advogado, com hipertensão arterial, diabetes mellitus tipo 2 e dislipidemia, começou a apresentar fraqueza muscular progressiva nos membros superiores, especialmente nas mãos, com dificuldade para segurar objetos e realizar tarefas manuais finas. Além disso, desenvolveu espasmos musculares e fasciculações visíveis nos braços. O paciente relatou também perda de peso. Nos últimos meses, progrediu para membros inferiores, comprometendo sua capacidade de caminhar. Durante o exame neurológico, foram observados reflexos tendinosos exacerbados, sinal de Babinski bilateral e atrofia muscular. A função sensitiva estava preservada. Com base nesse quadro clínico, qual o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esclerose múltipla",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Polineuropatia diabética",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Guillain-Barré",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Esclerose lateral amiotrófica (ELA)",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico central desse caso clínico baseia-se na identificação de uma síndrome motora pura, caracterizada pelo acometimento simultâneo do neurônio motor superior (NMS) e do neurônio motor inferior (NMI). No exame físico, os sinais de lesão do NMS são a hiper-reflexia (reflexos exacerbados) e o sinal de Babinski bilateral. Já os sinais de lesão do NMI são a atrofia muscular e as fasciculações (espasmos musculares visíveis). A preservação da função sensitiva é um dado crucial que direciona para doenças do neurônio motor.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A esclerose múltipla (EM) é uma doença inflamatória e desmielinizante do sistema nervoso central. Embora cause sinais de neurônio motor superior, ela tipicamente afeta adultos mais jovens e costuma apresentar sintomas sensitivos (parestesias), visuais (neurite óptica) e cerebelares (ataxia). A EM não justifica o achado de fasciculações e atrofia muscular proeminente, que são sinais de comprometimento do corno anterior da medula (neurônio motor inferior).\n\nAlternativa (b) Incorreta. A polineuropatia diabética é a complicação neuropática mais comum do diabetes, mas sua apresentação é predominantemente sensitiva, com dor e perda de sensibilidade em padrão de bota e luva. Por ser uma lesão de nervo periférico, ela causa hiporreflexia ou arreflexia (diminuição ou ausência de reflexos), o que contradiz a hiper-reflexia e o sinal de Babinski observados no paciente.\n\nAlternativa (c) Incorreta. A síndrome de Guillain-Barré é uma polirradiculoneuropatia inflamatória aguda. Ela se manifesta com uma paralisia flácida ascendente e arreflexia. O quadro clínico do paciente é crônico e progressivo, apresentando sinais de neurônio motor superior (espasticidade/hiper-reflexia), o que torna o diagnóstico de Guillain-Barré incompatível.\n\nAlternativa (d) Correta. A Esclerose Lateral Amiotrófica (ELA) é a principal doença neurodegenerativa que causa a morte de neurônios motores superiores e inferiores. O quadro clínico clássico envolve fraqueza muscular progressiva iniciada frequentemente em extremidades (como as mãos, dificultando tarefas finas), acompanhada de atrofia e fasciculações. A presença de sinais piramidais (Babinski e hiper-reflexia) em um território muscular que também apresenta atrofia e fasciculação é o marco diagnóstico da ELA. A preservação da sensibilidade e a perda de peso (decorrente do hipermetabolismo e da perda de massa muscular) corroboram perfeitamente a hipótese.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.458Z"
+  },
+  {
+    "id": "AJUDA_ec42c7e5-8405-48b6-959f-3c749ae2f13d",
+    "originalId": "ec42c7e5-8405-48b6-959f-3c749ae2f13d",
+    "statement": "Assinale a alternativa correta em relação à anatomia da região inguinal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O canal inguinal se estende da sínfise púbica à espinha ilíaca antero superior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O anel inguinal interno é superficial e o anel inguinal externo é profundo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O canal inguinal na mulher contém os vasos epigástricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O cordão espermático contém, entre outras estruturas, ramos do músculo cremaster e o ramo genital do nervo genitofemoral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O cremaster é proveniente de fibras do músculo oblíquo externo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. A descrição apresentada refere-se, de forma aproximada, ao posicionamento do ligamento inguinal (que se estende da espinha ilíaca anterossuperior ao tubérculo púbico) e não ao canal inguinal propriamente dito. O canal inguinal é um trajeto oblíquo de aproximadamente 4 cm que atravessa as camadas da parede abdominal anterior.\n\nAlternativa b: Incorreta. A alternativa inverteu as nomenclaturas. O anel inguinal interno (ou profundo) é uma abertura na fáscia transversalis, sendo, portanto, a porção profunda. O anel inguinal externo (ou superficial) é uma abertura na aponeurose do músculo oblíquo externo, sendo a porção superficial.\n\nAlternativa c: Incorreta. No sexo feminino, o conteúdo principal do canal inguinal é o ligamento redondo do útero. Os vasos epigástricos inferiores localizam-se no espaço pré-peritoneal, situando-se medialmente ao anel inguinal profundo, servindo como marco anatômico para diferenciar hérnias diretas de indiretas, mas não compõem o conteúdo interno do canal.\n\nAlternativa d: Correta. O cordão espermático é um conjunto de estruturas que passam pelo canal inguinal no homem. Ele contém o ducto deferente, a artéria do ducto deferente, a artéria testicular, o plexo pampiniforme (venoso), vasos linfáticos, o ramo genital do nervo genitofemoral e o músculo cremáster (com seus respectivos vasos e nervos).\n\nAlternativa e: Incorreta. O músculo cremáster é originado a partir de fibras do músculo oblíquo interno e, ocasionalmente, do músculo transverso do abdome. O músculo oblíquo externo contribui apenas com a formação da fáscia espermática externa, que é a camada mais superficial que reveste o cordão espermático.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.458Z"
+  },
+  {
+    "id": "AJUDA_ec4455aa-9253-4e0a-8db1-59b49f5a0278",
+    "originalId": "ec4455aa-9253-4e0a-8db1-59b49f5a0278",
+    "statement": "Homem de 62 anos com história de diabetes mellitus e dislipidemia é atendido na emergência com queixa de dor torácica em aperto retroesternal com irradiação para membro superior esquerdo, iniciada há 40 minutos durante atividade física leve. O eletrocardiograma realizado 8 minutos após admissão evidencia elevação do segmento ST de 3 mm em V2 e V3, e de 1,5 mm em V4, V5 e V6. Identifique a classificação do quadro e a localização da parede cardíaca acometida:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infarto agudo do miocárdio com supradesnivelamento de ST; parede lateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome coronariana aguda sem supradesnivelamento de ST; parede anterosseptal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infarto agudo do miocárdio com supradesnivelamento de ST; parede anterior extensa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome coronariana aguda sem supradesnivelamento de ST; parede inferior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Infarto agudo do miocárdio com supradesnivelamento de ST; parede inferolateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Quadro Clínico e Eletrocardiográfico:\nO paciente em questão apresenta um perfil de alto risco cardiovascular (idade avançada, diabetes e dislipidemia) e chega à emergência com um quadro de dor torácica típica (angina), desencadeada por esforço. O ponto crucial para a resolução da questão é a interpretação do eletrocardiograma (ECG).\n\nO ECG revela supradesnivelamento do segmento ST em várias derivações contíguas: V2, V3, V4, V5 e V6. De acordo com a definição universal de infarto, a presença de supradesnivelamento do segmento ST em duas ou mais derivações contíguas em um contexto clínico de isquemia confirma o diagnóstico de Infarto Agudo do Miocárdio com Supradesnivelamento de ST (IAMCSST).\n\nLocalização da Parede Cardíaca:\nPara identificar a parede acometida, devemos correlacionar as derivações do ECG com a anatomia cardíaca:\n- V1 e V2: Parede septal.\n- V3 e V4: Parede anterior.\n- V5 e V6: Parede lateral baixa.\n- DI e aVL: Parede lateral alta.\n\nNo caso descrito, o supra de ST ocorre de V2 até V6. Quando o acometimento abrange as derivações precordiais desde o septo/parede anterior até a parede lateral (V1-V6), a classificação correta é de Parede Anterior Extensa. Isso geralmente indica uma obstrução proximal da artéria coronária descendente anterior (DA).\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. Embora as derivações V5 e V6 façam parte da parede lateral, o supradesnivelamento começa em V2 (parede septal/anterior). Portanto, chamar de apenas \"parede lateral\" é uma análise incompleta da extensão do infarto.\n\nAlternativa b) Incorreta. Esta alternativa afirma tratar-se de uma síndrome \"sem supra\", o que contradiz o enunciado, que descreve explicitamente elevações de 3 mm e 1,5 mm no segmento ST. Além disso, a parede anterosseptal envolveria apenas de V1 a V4.\n\nAlternativa c) Correta. Identifica adequadamente a classificação (IAM com supra de ST) e a topografia (parede anterior extensa), visto que o supra percorre as derivações V2, V3, V4, V5 e V6.\n\nAlternativa d) Incorreta. O quadro é \"com supra\" de ST, e não \"sem supra\". Adicionalmente, a parede inferior é representada pelas derivações DII, DIII e aVF, que não apresentaram alterações segundo o relato.\n\nAlternativa e) Incorreta. Não há evidências no enunciado de acometimento da parede inferior (DII, DIII e aVF). O eletrocardiograma aponta para alterações nas derivações precordiais (parede anterior e lateral).",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.458Z"
+  },
+  {
+    "id": "AJUDA_ec4a4cdc-730c-472b-bc5a-125d8f1bcaf5",
+    "originalId": "ec4a4cdc-730c-472b-bc5a-125d8f1bcaf5",
+    "statement": "No manejo da Parada Cardiorrespiratória por ritmo de Taquicardia Ventricular sem pulso / Fibrilação Ventricular refratária, a Amiodarona é indicada como medicamento de escolha em casos de não reversão após as manobras iniciais. Assinale a alternativa que apresenta o número de doses e a posologia correta para o uso desta medicação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Três doses: Primeira dose 300mg, segunda dose 300mg, terceira dose 150mg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Duas doses: Primeira dose 300mg, segunda dose 150 mg",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Duas doses: Primeira dose 300mg, segunda dose 300 mg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Três doses: Primeira dose 300 mg, segunda dose 150 mg, Terceira dose 150 mg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não se deve administrar Amiodarona no contexto de Parada Cardiorrespiratória por se tratar de droga cronotrópica negativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o protocolo de Suporte Avançado de Vida Cardiovascular (ACLS) para o manejo de ritmos chocáveis (fibrilação ventricular e taquicardia ventricular sem pulso).\n\nDe acordo com as diretrizes da American Heart Association (AHA), a administração de antiarrítmicos está indicada quando a arritmia persiste após o terceiro choque. A amiodarona é a droga de escolha preferencial, embora a lidocaína também seja uma alternativa aceitável.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O protocolo prevê apenas duas doses de amiodarona durante a ressuscitação na fase de parada cardiorrespiratória. Além disso, a segunda dose deve ser de 150 mg, e não de 300 mg.\n\nAlternativa b) Correta. Conforme o algoritmo do ACLS, a primeira dose de amiodarona deve ser de 300 mg em bolus (geralmente administrada após o terceiro choque). Caso o ritmo persista após novo ciclo e choque, uma segunda dose de 150 mg em bolus deve ser administrada (geralmente após o quinto choque).\n\nAlternativa c) Incorreta. Embora a primeira dose esteja correta (300 mg), a segunda dose deve ser a metade da inicial (150 mg), e não uma repetição da dose plena de 300 mg.\n\nAlternativa d) Incorreta. O protocolo oficial recomenda apenas duas doses durante o atendimento da parada. A administração de doses subsequentes não faz parte do algoritmo padrão de ressuscitação para ritmos chocáveis.\n\nAlternativa e) Incorreta. A amiodarona é amplamente indicada e fundamental no manejo da FV/TVsp refratária. Embora possua efeitos cronotrópicos e inotrópicos negativos, seu benefício na estabilização elétrica do miocárdio em casos de arritmias letais supera esses riscos no contexto da PCR.\n\nResumo do protocolo para amiodarona na PCR:\n- Momento: Após o 3º choque.\n- 1ª dose: 300 mg (diluída em 20 ml de soro glicosado 5% ou soro fisiológico, em bolus rápido).\n- 2ª dose: 150 mg (se o ritmo persistir).",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:39.458Z"
+  }
+]

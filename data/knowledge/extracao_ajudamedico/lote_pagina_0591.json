@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_a503d459-1ecc-4b92-83e6-78593134cdc4",
+    "originalId": "a503d459-1ecc-4b92-83e6-78593134cdc4",
+    "statement": "Uma mulher de 65 anos apresenta-se ao departamento de emergência com estado mental alterado. A família relata que ela estava reclamando da dor no quadrante superior direito do abdome, antes de tornar-se alterada mentalmente. Na chegada, ela tem uma temperatura de 39°C, frequência cardíaca de 112 batimentos por minuto e a pressão arterial sistólica é de 80 mmHg, apesar da infusão de cristaloides. No exame físico, ela está visivelmente ictérica e apresenta dor no quadrante superior direito do abdome. Iniciou-se Piperacilina/Tazobactam e foi admitida na unidade de terapia intensiva para monitoramento invasivo e suporte com vasopressores. Em relação ao tratamento da colangite séptica causada por coledocolitíase nesta paciente, qual das seguintes opções está correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A descompressão urgente do trato biliar por meio de CPRE: colangiopancreatografia retrógrada endoscópica é bem-sucedida em 95% dos casos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A CPTH: colangiografia percutânea trans-hepática é viável para extração de cálculos esfincterotomia e colocação de “stent\" .",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A CPRE com esfincterotomia é equivalente à colecistectomia para reduzir as taxas de recorrência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Caso a CPRE e a CPTH falhem, ou não sejam viáveis, apenas a coledocotomia laparoscópica e a colocação de tubo em T devem ser realizadas devido ao risco da cirurgia aberta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta a Pêntade de Reynolds (dor no hipocôndrio direito, icterícia, febre, choque séptico refratário a volume e alteração do nível de consciência), o que diagnostica uma colangite aguda grave (Grau III pelas Diretrizes de Tokyo). Além do suporte de terapia intensiva e antibioticoterapia de amplo espectro, a descompressão biliar urgente é o tratamento definitivo e mandatório para salvar a vida da paciente.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): A colangiopancreatografia retrógrada endoscópica (CPRE) é o procedimento padrão-ouro e de primeira escolha para a descompressão biliar na colangite aguda grave. Quando realizada por endoscopistas experientes, a taxa de sucesso técnico para canulação e drenagem efetiva da via biliar atinge aproximadamente 90% a 95%, apresentando menor morbimortalidade em relação à cirurgia.\n\nAlternativa B (Incorreta): A colangiografia percutânea trans-hepática (CPTH) é um procedimento de resgate/segunda linha, indicado quando a CPRE falha ou não é viável (como em anatomia cirúrgica pós-gastrectomia em Y de Roux). A esfincterotomia é um procedimento clássico da via endoscópica (CPRE) e não é realizada rotineiramente por via percutânea.\n\nAlternativa C (Incorreta): A CPRE com papilotomia/esfincterotomia trata a coledocolitíase aguda, mas não substitui a colecistectomia na prevenção a longo prazo. Como a vesícula biliar permanece com cálculos, a taxa de recorrência de eventos biliares (como nova coledocolitíase ou colecistite aguda) é significativamente maior se a colecistectomia não for realizada eletivamente após a resolução do quadro séptico.\n\nAlternativa D (Incorreta): Caso a abordagem endoscópica (CPRE) e a percutânea (CPTH) falhem, a cirurgia aberta não está proibida. Em pacientes instáveis e em situações de emergência onde a laparoscopia pode ser tecnicamente difícil ou arriscada, a coledocotomia aberta com colocação de dreno de Kehr (tubo em T) é um procedimento salvador e amplamente aceito.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  },
+  {
+    "id": "AJUDA_a5094b87-ab70-4116-b4e0-650ce80c3f77",
+    "originalId": "a5094b87-ab70-4116-b4e0-650ce80c3f77",
+    "statement": "Homem 40 anos, HIV+, dispneia progressiva, tosse seca, febre baixa. Rx: infiltrado intersticial difuso bilateral. Diagnóstico provável:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonia bacteriana típica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumocistose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tuberculose militar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Histoplasmose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado é clássico para pneumocistose (causada pelo fungo *Pneumocystis jirovecii*), que permanece como uma das infecções oportunistas definidoras de AIDS mais comuns em pacientes com contagem de linfócitos CD4+ abaixo de 200 células/mm³.\n\nAnálise das alternativas:\n\na) Incorreta. A pneumonia bacteriana típica (causada por patógenos como *Streptococcus pneumoniae*) geralmente apresenta um início agudo, com febre alta, calafrios e tosse produtiva. No raio X, o padrão esperado é de consolidação lobar ou segmentar única, e não um infiltrado intersticial difuso e bilateral.\n\nb) Correta. A tríade de dispneia progressiva (instalação subaguda), tosse seca e febre baixa em um paciente HIV-positivo é fortemente sugestiva de pneumocistose. O achado radiológico de infiltrado intersticial bilateral simétrico, partindo da região hilar (aspecto em asa de borboleta ou vidro fosco), corrobora o diagnóstico. Frequentemente, esses pacientes apresentam uma dissociação clínico-radiológica, com ausculta pulmonar limpa apesar da imagem e da hipoxemia acentuadas.\n\nc) Incorreta. A tuberculose miliar é uma forma de disseminação hematogênica da doença que também ocorre em imunossuprimidos. No entanto, o padrão radiológico característico é o \"miliar\", composto por múltiplos micronódulos de 1 a 3 mm distribuídos uniformemente por ambos os campos pulmonares (aspecto de sementes de milho), o que difere do infiltrado intersticial difuso inespecífico descrito.\n\nd) Incorreta. Embora a histoplasmose possa causar pneumonia em pacientes com HIV, ela é menos frequente que a pneumocistose na epidemiologia das provas de residência para este quadro respiratório. A histoplasmose disseminada costuma cursar com outros achados sistêmicos, como hepatosplenomegalia, linfonodopatia e lesões cutâneas, e o padrão radiológico tende a ser micronodular ou reticulonodular.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  },
+  {
+    "id": "AJUDA_a50a6067-80ab-403a-90f7-48d49d2752c6",
+    "originalId": "a50a6067-80ab-403a-90f7-48d49d2752c6",
+    "statement": "Mulher de 50 anos apresenta astenia associada a fadiga, náuseas, vômitos e emagrecimento de 6kg em 12 meses. No exame físico, a PA = 90x60mmHg sentada e 80x50mmHg em pé, com hiperpigmentação em face e pescoço, dorso da mão e lábios. Nos exames laboratoriais, verificam-se hemoglobina = 11g/dL, leucócitos = 8.000/mm³, eosinófilos = 8%, ureia = 60mg/dL, creatinina = 1,3mg/dL, cálcio = 10,5mg/dL, sódio = 130mEq/L, potássio = 5,8meq/L e cloro = 90meq/L. O próximo exame para elucidação diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "TC de abdômen",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "angio-RM abdominal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "teste de estimulação com ACTH",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "dosagem de cortisol plasmático",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nA paciente apresenta um quadro clássico de Insuficiência Adrenal Primária, também conhecida como Doença de Addison. Os principais achados que conduzem a esse diagnóstico são:\n\n1. Clínica: Astenia, emagrecimento e sintomas gastrointestinais (náuseas e vômitos).\n2. Exame Físico: Hipotensão arterial com componente postural (queda da pressão ao ficar em pé) e hiperpigmentação cutâneo-mucosa (face, pescoço, dorso das mãos e lábios). A hiperpigmentação ocorre porque o aumento do ACTH, na tentativa de estimular a adrenal, leva a uma produção excessiva de pró-opiomelanocortina (POMC), que é clivada em hormônio melanócito-estimulante (MSH).\n3. Laboratório: Hiponatremia (sódio baixo) e hipercalemia (potássio alto) devido à deficiência de aldosterona; eosinofilia; e azotemia pré-renal (elevação de ureia e creatinina por desidratação).\n\nAnálise das Alternativas:\n\na) Incorreta. A Tomografia Computadorizada (TC) de abdome é um exame de imagem indicado para investigar a etiologia da doença (como tuberculose adrenal, hemorragia, fungos ou neoplasias) somente após a confirmação bioquímica da insuficiência adrenal. Não é o exame inicial para elucidação diagnóstica do funcionamento da glândula.\n\nb) Incorreta. A angio-RM abdominal é utilizada para avaliar a vascularização de órgãos abdominais. Não possui papel no diagnóstico funcional ou etiológico da insuficiência adrenal.\n\nc) Correta. O teste de estimulação com ACTH sintético (cosintropina ou sinactena) é considerado o padrão-ouro para confirmar o diagnóstico de insuficiência adrenal. O teste avalia a reserva funcional da glândula: administra-se ACTH e mede-se o cortisol após 30 ou 60 minutos. Se a adrenal estiver doente (causa primária), ela não será capaz de elevar os níveis de cortisol acima de um valor de corte (geralmente 18 a 20 mcg/dL), confirmando o diagnóstico.\n\nd) Incorreta. A dosagem isolada do cortisol plasmático basal (pela manhã) pode ser utilizada como triagem inicial, mas possui uma \"zona cinzenta\" onde valores intermediários não confirmam nem excluem a doença. Em uma questão que pede o exame para elucidação diante de um quadro clínico e laboratorial tão característico, o teste de estimulação é a conduta mais definitiva e correta.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  },
+  {
+    "id": "AJUDA_a50aae48-2855-43d1-a96d-cce450fb5959",
+    "originalId": "a50aae48-2855-43d1-a96d-cce450fb5959",
+    "statement": "Menino, 3 anos de idade, tem diagnóstico de anemia falciforme a partir da triagem neonatal e acompanhamento ambulatorial. Tem hemoglobina basal de 9 g/dL e vacinação em dia, realizada em Centro de Imunobiológicos Especiais. É atendida em UPA por recusa alimentar e dor abdominal generalizada. Ao exame está afebril, pálida, descorada +++/+4, com FC = 124 bpm, FR = 36 mrm, SatO2 = 92%. Ausculta cardíaca com soprossistólico sem irradiação, ausculta pulmonar sem alterações. Abdome levemente globoso, com RHA diminuídos doloroso à palpação. Fígado palpável a 2 cm do RCD e baço a 5 cm do RCE. A hemoglobina atual é de 5,2 g/dL.\n\nO diagnóstico provável para o quadro descrito é",
+    "options": [
+      {
+        "id": "A",
+        "text": "crise álgica por vaso-oclusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trombose de vasos mesentéricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pródromos de gastroenterite com paresia e distensão de alças intestinais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "insuficiência cardíaca por anemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sequestro esplênico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descrito apresenta uma emergência hematológica clássica em crianças pequenas com anemia falciforme: o sequestro esplênico agudo. Esta condição ocorre quando uma grande quantidade de sangue fica subitamente represada no baço, levando a uma queda rápida dos níveis de hemoglobina e ao risco de choque hipovolêmico.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. As crises vaso-oclusivas são as manifestações mais comuns da doença e podem causar dor abdominal (crise infartante). No entanto, elas não explicam a queda acentuada da hemoglobina (de 9 g/dL para 5,2 g/dL) nem o aumento súbito do volume do baço observado no exame físico.\n\nAlternativa b) Incorreta. A trombose de vasos mesentéricos é uma complicação rara nesta faixa etária e, embora cause dor abdominal intensa, não justifica a esplenomegalia volumosa e a anemia aguda grave apresentadas pelo paciente.\n\nAlternativa c) Incorreta. Sintomas como recusa alimentar e dor abdominal poderiam ocorrer em quadros infecciosos gastrointestinais, mas a gastroenterite não causa um aumento agudo do baço associado a uma queda de quase 4 g/dL na hemoglobina basal.\n\nAlternativa d) Incorreta. O paciente apresenta sinais de insuficiência cardíaca de alto débito (taquicardia, taquipneia e sopro sistólico), porém estes achados são consequências da anemia grave instalada e não a causa primária do quadro. A insuficiência cardíaca isolada não explicaria o baço palpável a 5 cm do rebordo costal.\n\nAlternativa e) Correta. O diagnóstico de sequestro esplênico é baseado na tríade: queda da hemoglobina superior a 2 g/dL em relação ao valor basal, evidência de regeneração eritroide (reticulocitose) e esplenomegalia aguda. O paciente tem 3 anos, idade em que o baço ainda é funcional e passível de sequestrar sangue antes que ocorra a autoesplenectomia (fibrose do órgão por infartos repetidos). A dor abdominal é causada pela distensão rápida da cápsula esplênica, e os sinais vitais alterados indicam a gravidade da anemia e a redução do volume circulante efetivo.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  },
+  {
+    "id": "AJUDA_a50eb01d-d7db-4825-9f73-28c862714bea",
+    "originalId": "a50eb01d-d7db-4825-9f73-28c862714bea",
+    "statement": "Assinale a alternativa que apresenta o(s) marco(s) do desenvolvimento neuropsicomotor que ocorre (m) na maioria dos lactentes aos 9 meses de vida.",
+    "options": [
+      {
+        "id": "A",
+        "text": "olhar quando chamado pelo nome e sentar-se sem suporte",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "dar alguns passos por conta própria e usar os dedos para se alimentar com um pouco de comida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tentar dizer uma ou duas palavras além de \"mama\" ou \"dada\"",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apontar para pedir algo ou para obter ajuda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "imitar outras crianças enquanto brinca",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A análise do desenvolvimento neuropsicomotor é fundamental na pediatria, seguindo marcos cronológicos bem definidos. Abaixo, a análise detalhada de cada alternativa para o lactente aos 9 meses:\n\nAlternativa (a): Correta. Sentar-se sem suporte é um marco motor que geralmente se consolida entre os 6 e 7 meses, sendo obrigatoriamente esperado aos 9 meses. No domínio da linguagem e social, o lactente nesta idade já apresenta a capacidade de localizar a fonte sonora e responder prontamente quando chamado pelo próprio nome, demonstrando interação social ativa.\n\nAlternativa (b): Incorreta. Dar passos por conta própria (marcha independente) é um marco esperado para os 12 meses de vida, embora algumas crianças possam iniciar entre os 11 e 15 meses. O uso dos dedos para pinçar alimentos (pinça imatura) até começa por volta dos 9 meses, mas a marcha independente exclui esta alternativa para esta faixa etária.\n\nAlternativa (c): Incorreta. Aos 9 meses, a criança apresenta o balbucio e pode emitir sons como \"mama\" ou \"dada\" de forma inespecífica (sem direcionar exatamente ao pai ou à mãe). O uso de uma ou duas palavras com significado, além de \"papai\" e \"mamãe\", é um marco típico de 1 ano de idade (12 meses).\n\nAlternativa (d): Incorreta. O gesto de apontar para pedir algo ou para mostrar interesse em um objeto (atenção compartilhada) é uma habilidade que se desenvolve mais tarde, geralmente entre os 12 e 15 meses. Aos 9 meses, a criança pode usar as mãos para alcançar objetos, mas o uso do dedo indicador para apontar ainda não está bem estabelecido.\n\nAlternativa (e): Incorreta. A imitação de outras crianças durante o brincar envolve um nível de interação social e observação mais complexo, típico de crianças maiores, geralmente a partir dos 18 aos 24 meses (fase do jogo paralelo e imitação social). Aos 9 meses, a imitação é restrita a gestos simples feitos por adultos, como bater palmas ou dar \"tchau\".",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  },
+  {
+    "id": "AJUDA_a5152182-620a-4e43-a5f9-7341a5892ca5",
+    "originalId": "a5152182-620a-4e43-a5f9-7341a5892ca5",
+    "statement": "A seguinte frase definidora “alguém que, em seus pensamentos, trabalhos e ações, é capaz de seguir estas normas que ele escolheu como pró prias, sem constrangimentos ou coerção externas por outros” contém a essência do que os profissionais de saúde devem considerar como consentimento informado. A frase está definindo que tipo de pessoa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Otimista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mediadora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Autônoma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Performática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Individualista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda um dos pilares fundamentais da Bioética: o Princípio da Autonomia. No contexto da prática médica, o consentimento informado é a ferramenta que assegura o respeito a esse princípio, permitindo que o paciente tome decisões sobre sua saúde de acordo com seus próprios valores e normas, desde que esteja devidamente informado e livre de pressões ou coerções.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O otimismo refere-se a uma disposição emocional ou expectativa positiva quanto aos resultados futuros. Não possui relação com a capacidade técnica, ética ou jurídica de um indivíduo tomar decisões independentes e fundamentadas sobre sua própria vida ou tratamentos médicos.\n\nAlternativa b: Incorreta. Uma pessoa mediadora é aquela que atua como intermediária em conflitos ou facilita a comunicação entre diferentes partes. O enunciado, por outro lado, foca na capacidade interna do sujeito de autogoverno e na ausência de influência externa controladora, o que não se confunde com o ato de mediar.\n\nAlternativa c: Correta. A frase define a essência da Autonomia. Etimologicamente, autonomia deriva do grego *autos* (próprio) e *nomos* (lei/norma), significando aquele que dá a sua própria lei. Na Bioética, ser autônomo significa ter a capacidade de autogoverno, agindo conforme escolhas e convicções próprias, sem ser dominado por influências externas ou limitações que impeçam uma escolha deliberada. Para que o consentimento informado seja válido, é indispensável que o paciente seja um agente autônomo.\n\nAlternativa d: Incorreta. O termo performático está ligado à performance, ao desempenho ou à execução de uma ação de forma expressiva. Não é um critério ético utilizado para definir a capacidade de compreensão, julgamento e escolha do paciente no processo de tomada de decisão em saúde.\n\nAlternativa e: Incorreta. Embora a autonomia proteja o direito do indivíduo, o individualismo é uma postura sociológica ou comportamental voltada para o interesse próprio em detrimento do coletivo. A autonomia médica é um conceito ético de liberdade de escolha e respeito à dignidade humana, não devendo ser confundida com o traço de personalidade individualista ou egoísta.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  },
+  {
+    "id": "AJUDA_a51c903c-8dca-465f-a081-61643b3e2a55",
+    "originalId": "a51c903c-8dca-465f-a081-61643b3e2a55",
+    "statement": "Menina de 18 meses é levada ao atendimento de urgência. Mãe relata que, há 30 minutos, criança estava brincando em casa, sem supervisão, quando a escutou tossir e chorar subitamente. Iniciou sialorreia logo a seguir. Nega febre, sintomas gripais ou vômitos. Na entrada, a criança se encontrava pouco chorosa, mantendo sialorreia, eupneica, com murmúrios vesiculares presentes e simétricos, sem ruídos adventícios. Frequência cardíaca de 120 bpm, saturação de Oxigênio de 97% em ar ambiente, frequência respiratória de 28 ipm. Com relação à investigação, qual a recomendação que aumenta o poder diagnóstico do exame de imagem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar radiografias de abdome seriadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar radiografia com contraste iodado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fazer duas incidências do tórax, incluindo perfil.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aguardar 6 a 8 horas para realizar a radiografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito — uma criança de 18 meses com início súbito de tosse, choro e sialorreia (salivação excessiva) após brincar sem supervisão — é altamente sugestivo de ingestão de corpo estranho. A sialorreia, na ausência de desconforto respiratório importante, aponta para uma provável obstrução esofágica, impedindo a deglutição da saliva.\n\nAnálise das alternativas:\n\na) Incorreta. Radiografias de abdome seriadas podem ser úteis para acompanhar a progressão de corpos estranhos que já passaram pelo estômago (como pilhas ou objetos pontiagudos). No entanto, a prioridade inicial é localizar o objeto. Como os sintomas sugerem localização no esôfago, o foco deve ser o tórax e a região cervical, e não o abdome de forma seriada neste momento.\n\nb) Incorreta. O uso de contraste iodado ou baritado deve ser evitado inicialmente. O contraste aumenta o risco de aspiração para os pulmões (caso haja obstrução completa do esôfago) e pode dificultar a visualização direta do objeto e da mucosa durante uma eventual endoscopia terapêutica posterior.\n\nc) Correta. A realização de radiografias em duas incidências (frente e perfil) é o padrão-ouro inicial para aumentar o poder diagnóstico. Duas incidências permitem confirmar se o objeto é radiopaco, identificar se há mais de um objeto sobreposto (como duas moedas juntas) e, principalmente, diferenciar a localização: se o objeto está no esôfago ou na traqueia. Por exemplo, uma moeda no esôfago geralmente se posiciona no plano coronal (aparece de frente na incidência anteroposterior), enquanto na traqueia ela tende a se posicionar no plano sagital (aparece de lado na incidência anteroposterior).\n\nd) Incorreta. Diante da suspeita de corpo estranho esofágico com sintomas clínicos (sialorreia), a investigação deve ser imediata. Aguardar de 6 a 8 horas posterga o diagnóstico e aumenta o risco de complicações, como a aspiração de saliva para a via aérea ou lesões na mucosa esofágica por compressão prolongada.\n\nResumo do raciocínio: Em pediatria, a suspeita de corpo estranho exige radiografia de pescoço, tórax e abdome. As duas incidências de tórax (frente e perfil) são fundamentais para localizar a altura e o compartimento (digestivo x respiratório) onde o objeto se encontra.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Ingestão de corpo estranho",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  },
+  {
+    "id": "AJUDA_a5202f70-ed15-4c3e-a0f2-d2ebdd98840d",
+    "originalId": "a5202f70-ed15-4c3e-a0f2-d2ebdd98840d",
+    "statement": "Homem, 70 anos de idade, com doença diverticular do cólon, apresenta-se estável hemodinamicamente, com dor abdominal intensa, febre e leucocitose. A tomografia computadorizada mostra um abscesso pericólico de 5 cm associado a diverticulite aguda. Qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibióticos intravenosos e observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colectomia segmentar de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia laparoscópica para drenagem e lavagem peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Drenagem percutânea do abscesso guiada por imagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental aplicar a Classificação de Hinchey, utilizada para graduar a gravidade da diverticulite aguda e guiar o tratamento.\n\nO paciente apresenta um abscesso pericólico de 5 cm e está hemodinamicamente estável. De acordo com os principais consensos mundiais, como os da Sociedade Americana de Cirurgiões de Cólon e Reto (ASCRS), a conduta varia conforme o tamanho da coleção:\n\n1. Abscessos pequenos (geralmente menores que 3 a 4 cm), classificados como Hinchey I, podem ser tratados inicialmente apenas com antibioticoterapia intravenosa e observação.\n2. Abscessos maiores que 3 a 4 cm, classificados como Hinchey II, em pacientes estáveis, devem ser submetidos à drenagem percutânea guiada por imagem (tomografia ou ultrassonografia) associada a antibióticos.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora os antibióticos façam parte do tratamento, o tamanho do abscesso (5 cm) é o ponto determinante. Coleções desse volume apresentam menor taxa de resolução apenas com medicamentos, exigindo a intervenção para controle do foco infeccioso.\n\nAlternativa B: Incorreta. A colectomia segmentar de urgência (como a cirurgia de Hartmann) é indicada em casos de peritonite generalizada purulenta ou fecal (Hinchey III ou IV) ou quando o paciente apresenta instabilidade hemodinâmica e falha nas medidas conservadoras. Não é a conduta inicial para um paciente estável com abscesso localizado.\n\nAlternativa C: Incorreta. A laparoscopia para lavagem e drenagem é uma alternativa cirúrgica que pode ser considerada em casos de peritonite purulenta, mas é mais invasiva que a drenagem percutânea. Para um abscesso pericólico acessível em paciente estável, a via percutânea é preferível por apresentar menor morbidade.\n\nAlternativa D: Correta. A drenagem percutânea guiada por imagem é o padrão-ouro para abscessos diverticulares maiores que 3 a 4 cm em pacientes estáveis. Essa conduta permite o resfriamento do processo inflamatório, melhora rápida dos sintomas e possibilita que uma eventual cirurgia definitiva seja realizada de forma eletiva, com menor risco de complicações e maior chance de anastomose primária (sem necessidade de colostomia).\n\nGabarito: Letra D.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel",
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  },
+  {
+    "id": "AJUDA_a522b629-de0e-4523-bbc3-776a8210f567",
+    "originalId": "a522b629-de0e-4523-bbc3-776a8210f567",
+    "statement": "Menino, 8 anos de idade, é filho de mãe diagnosticada com tuberculose bacilífera há 2 semanas. Tem vacinação completa para idade, fez BCG id com 15 dias de vida. Foi diagnosticado com pneumonia aos 2 e aos 4 anos de idade, medicado ambulatorialmente. Realizou radiografia de tórax, sem alterações e teste tuberculínico, lido com 72 horas, 12 mm.\n\nA conduta indicada para essa criança é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "isoniazida 10 mg/kg, 270 doses em 9 a 12 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "isoniazida 20 mg/kg por 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "rifampicina 20 mg/kg por 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "rifampicina 20 mg/kg por 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "isoniazida 10 mg/kg e rifampicina 10 mg/kg, 180 doses em 6 a 9 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda a conduta diante de uma criança que é contato de um paciente com tuberculose (TB) bacilífera. Vamos analisar os achados para chegar ao diagnóstico e à conduta:\n\n1. Diagnóstico: A criança tem 8 anos, está assintomática (implícito pela ausência de queixas e histórico de pneumonias resolvidas), possui radiografia de tórax normal e Teste Tuberculínico (PT/PPD) de 12 mm. Em contatos de TB, considera-se o PT positivo quando maior ou igual a 5 mm. Como a radiografia é normal e a criança não tem sintomas, o diagnóstico é de Infecção Latente por Tuberculose (ILTB).\n\n2. Conduta para ILTB: O tratamento visa evitar a progressão para a forma ativa da doença. As opções principais no Brasil são a isoniazida ou a rifampicina.\n\nAnálise das alternativas:\n\na) Correta. A isoniazida na dose de 5 a 10 mg/kg/dia é o tratamento clássico para ILTB. O protocolo do Ministério da Saúde prevê dois esquemas possíveis: 180 doses (realizadas entre 6 e 9 meses) ou 270 doses (realizadas entre 9 e 12 meses). A alternativa apresenta a dose correta (10 mg/kg) e o esquema de 270 doses, que garante maior eficácia protetora.\n\nb) Incorreta. A dose de 20 mg/kg de isoniazida é excessiva e aumenta o risco de toxicidade hepática. Além disso, 3 meses é um tempo insuficiente para o tratamento da ILTB com isoniazida isolada.\n\nc) Incorreta. A rifampicina é, de fato, uma opção para o tratamento da ILTB, especialmente em crianças menores de 10 anos ou adultos acima de 50 anos. No entanto, o tempo de tratamento correto com rifampicina é de 4 meses (120 doses), e não 6 meses.\n\nd) Incorreta. O erro aqui também reside no tempo de administração. Embora a rifampicina seja utilizada para ILTB, o tempo preconizado pelo Ministério da Saúde é de 4 meses (120 doses), não 3 meses.\n\ne) Incorreta. A associação de isoniazida e rifampicina é utilizada no esquema básico para o tratamento da tuberculose-doença (forma ativa). Para a infecção latente (ILTB), a recomendação atual em protocolos nacionais para contatos nessa faixa etária é a monoterapia (apenas um fármaco). Além disso, o número de doses e o tempo sugeridos nesta alternativa não correspondem ao tratamento padrão da ILTB em crianças.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tuberculose na Infância"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  },
+  {
+    "id": "AJUDA_a524dea4-eb80-442d-8f03-70c4266c277a",
+    "originalId": "a524dea4-eb80-442d-8f03-70c4266c277a",
+    "statement": "Durante o exame físico da articulação acromioclavicular, a presença de uma elevação da extremidade distal da clavícula que retorna à posição inicial após compressão, lembrando o movimento de uma tecla de piano, indica",
+    "options": [
+      {
+        "id": "A",
+        "text": "lesão do tendão do supraespinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "luxação esternoclavicular posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "luxação acromioclavicular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ruptura do tendão do bíceps braquial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O sinal descrito no enunciado é conhecido na semiologia ortopédica como sinal da tecla ou sinal da tecla de piano. Esse achado é indicativo de instabilidade na articulação acromioclavicular.\n\nAlternativa (a) Incorreta: A lesão do tendão do supraespinal faz parte das patologias do manguito rotador. Clinicamente, manifesta-se com dor no ombro, dor noturna e fraqueza na abdução, sendo avaliada por testes de impacto e força, como o teste de Jobe. Não apresenta instabilidade com elevação da clavícula distal.\n\nAlternativa (b) Incorreta: A luxação esternoclavicular ocorre na junção da clavícula com o esterno, ou seja, na extremidade medial da clavícula. A luxação posterior é uma emergência médica devido ao risco de compressão de estruturas vitais no mediastino (vasos, traqueia e esôfago), mas o sinal da tecla é um fenômeno típico da extremidade lateral (distal) da clavícula.\n\nAlternativa (c) Correta: Na luxação acromioclavicular, ocorre a ruptura dos ligamentos que estabilizam essa articulação (ligamentos acromioclaviculares e coracoclaviculares). Com a perda da sustentação ligamentar, o peso do membro superior desloca o acrômio para baixo, fazendo com que a extremidade distal da clavícula pareça elevada. Ao pressionar essa extremidade para baixo, ela se reduz momentaneamente, mas retorna à posição elevada assim que a pressão é removida, simulando o movimento de uma tecla de piano. Esse sinal é comum em luxações de maior grau (grau III ou superior na classificação de Rockwood).\n\nAlternativa (d) Incorreta: A ruptura do tendão do bíceps braquial, geralmente da cabeça longa, manifesta-se com o sinal de Popeye, que é um abaulamento muscular na região média do braço devido à retração do ventre muscular. Não há acometimento ou deformidade na articulação acromioclavicular.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Fraturas e Luxações",
+      "Doenças do Ombro e Cotovelo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:50.453Z"
+  }
+]

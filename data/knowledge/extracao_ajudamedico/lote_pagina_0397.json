@@ -1,0 +1,516 @@
+[
+  {
+    "id": "AJUDA_6e2b782e-e070-4a0f-b168-da89567584eb",
+    "originalId": "6e2b782e-e070-4a0f-b168-da89567584eb",
+    "statement": "Uma mulher de 84 anos é levada à UBS por alteração do comportamento há 36 horas, com momentos de apatia alternando com agitação noturna. Nega febre, tosse ou dor torácica. Sem queixas urinárias. Refere constipação há cinco dias. Medicações atuais: enalapril 10 mg/d; amitriptilina 25 mg à noite (iniciada há dez dias para dor neuropática); oxibutinina 5 mg 2x/d para bexiga hiperativa; difenidramina 50 mg à noite “para dormir” nas últimas cinco noites; ciclobenzaprina ocasional. Ao exame físico, apresenta: PA: 138 x 82 mmHg; FR: 18 rpm; SatO2: 96% em ar ambiente; afebril; mucosas ressecadas; abdome timpânico com fecaloma palpável; sem sinais neurológicos focais. Teste 4AT: 6 (alteração de alerta, inatenção e curso flutuante).\nQual é a conduta mais apropriada para o manejo inicial do caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar haloperidol em baixa dose para controle da agitação e programar reavaliação em 24 a 48 horas com TC de crânio se não houver melhora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corrigir hidratação e tratar constipação, suspender amitriptilina, introduzir benzodiazepínico de curta ação e reavaliar em 24 a 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar medidas de reorientação, mobilização precoce e hidratação, suspender difenidramina e amitriptilina, revisar oxibutinina e reavaliar em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar urocultura e TC de crânio, tratar bacteriúria assintomática se presente e adiar mudanças no esquema medicamentoso até estabilização clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\nO quadro clínico descreve uma paciente idosa com um início agudo de alteração do comportamento, curso flutuante (apatia e agitação) e prejuízo da atenção (confirmado pelo escore 4AT igual a 6). Essas características são diagnósticas de delirium. No idoso, o delirium é frequentemente multifatorial. Nesta paciente, destacam-se dois gatilhos principais: o uso de múltiplas medicações com forte efeito anticolinérgico (amitriptilina, oxibutinina, difenidramina e ciclobenzaprina) e causas orgânicas reversíveis (constipação/fecaloma e provável desidratação evidenciada pelas mucosas ressecadas).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. O uso de antipsicóticos como o haloperidol deve ser reservado para casos de agitação grave que coloque em risco a paciente ou terceiros, e sempre na menor dose possível pelo menor tempo. O manejo inicial deve focar na identificação e tratamento das causas subjacentes. A TC de crânio não é o exame de primeira escolha para um quadro de delirium com gatilhos óbvios e sem sinais neurológicos focais ou história de trauma.\n\nAlternativa B: Incorreta. Embora a hidratação e o tratamento da constipação estejam corretos, a introdução de benzodiazepínicos em idosos com delirium é contraindicada na maioria das vezes (exceto em casos de abstinência alcoólica ou de benzodiazepínicos), pois essas drogas podem causar sedação excessiva, piorar a confusão mental e aumentar o risco de quedas.\n\nAlternativa C: Correta. Esta alternativa aborda os pilares do tratamento do delirium: 1) Medidas não farmacológicas, como reorientação constante, mobilização precoce e higiene do sono; 2) Tratamento dos fatores precipitantes, como a hidratação; 3) Revisão rigorosa da polifarmácia, suspendendo as drogas com maior potencial tóxico. No caso, a amitriptilina e a difenidramina foram iniciadas recentemente e possuem altíssima carga anticolinérgica, sendo os principais suspeitos do gatilho medicamentoso. A oxibutinina também contribui para essa carga e deve ser revisada.\n\nAlternativa D: Incorreta. A conduta de adiar mudanças no esquema medicamentoso é inadequada, pois a toxicidade medicamentosa é a causa mais provável do quadro. Tratar bacteriúria assintomática em idosos não previne nem trata delirium e contribui para a resistência bacteriana. A TC de crânio, como mencionado anteriormente, não é necessária de imediato neste contexto clínico específico.\n\nCONCLUSÃO\nA base do manejo do delirium no idoso é a identificação e remoção de fatores precipitantes. A retirada de medicações inapropriadas (especialmente anticolinérgicos e sedativos) e o manejo ambiental e clínico (hidratação e tratamento do fecaloma) são as condutas prioritárias.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.379Z"
+  },
+  {
+    "id": "AJUDA_6e2d1e71-1d35-4191-bdb9-9166c4f28a27",
+    "originalId": "6e2d1e71-1d35-4191-bdb9-9166c4f28a27",
+    "statement": "Paciente do sexo masculino de 19 anos de idade procura atendimento por queixa de crises de tosse, sibilos e falta de ar que tem acontecido de maneira quase diária. Tem antecedente pessoal apenas de asma e, apesar de fazer uso adequado de dispositivo inalatório de salbutamol – única medicação de que faz uso –, não tem tido controle de sintomas, o que já motivou duas idas à unidade de pronto atendimento nos últimos 6 meses, com uso de corticoterapia oral. Nunca foi intubado ou internado por crise. Ao exame, encontra-se bem, exceto pela ausculta pulmonar com sibilos difusos, sem desconforto respiratório em repouso e sem fala entrecortada, sem tiragens. Sinais vitais: pressão arterial: 128 x 67 mmHg, frequência cardíaca: 87 bpm, frequência respiratória: 17 ipm, saturação de oxigênio: 98%.\n\nQual a melhor estratégia terapêutica nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reorientação da técnica de uso de dispositivo inalatório e prescrição de salbutamol 100 mcg/dose, 4 puffs, se necessário até a cada 20 minutos por 3 doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administração de hidrocortisona 300 mg via endovenosa dose única e manutenção de salbutamol 100 mcg/dose, 2 puffs via inalatória, se necessário até a cada 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Introdução de formoterol-budesonida 6-200 mcg, 1 puff via inalatória, se necessário até a cada 4 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrição de Omalizumab 300 mg via subcutânea a cada 4 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico: Trata-se de um paciente jovem com asma não controlada. Ele apresenta sintomas quase diários e já teve duas exacerbações nos últimos 6 meses que exigiram corticoterapia oral, o que o classifica como de alto risco para novas crises. Atualmente, ele utiliza apenas o salbutamol (um beta-2-agonista de curta duração ou SABA) sob demanda. Segundo as diretrizes mais recentes da GINA (Global Initiative for Asthma), o uso de SABA isoladamente não é mais recomendado para nenhum estágio da asma, pois não trata a inflamação das vias aéreas e aumenta o risco de exacerbações graves e morte.\n\nAlternativa A: Incorreta. Essa conduta descreve o manejo de uma crise asmática aguda em ambiente de emergência. Embora o paciente apresente sibilos à ausculta, ele está clinicamente estável, com frequência respiratória normal, boa saturação de oxigênio e sem sinais de desconforto. O maior problema deste paciente não é a crise atual, mas a falta de um tratamento de manutenção adequado. Manter o salbutamol isolado, mesmo reorientando a técnica, mantém o paciente em risco.\n\nAlternativa B: Incorreta. A hidrocortisona endovenosa é indicada para crises graves ou para pacientes que não toleram a via oral. O quadro clínico atual não justifica o uso de corticoide sistêmico por via parenteral. Além disso, manter o salbutamol como única terapia inalatória a cada 6 horas não resolve a inflamação crônica da asma.\n\nAlternativa C: Correta. Esta alternativa segue a recomendação preferencial da GINA (conhecida como Track 1). Para pacientes com sintomas frequentes ou em risco de exacerbação, a introdução de uma combinação de corticoide inalatório (Budesonida) com um broncodilatador de longa duração e início rápido (Formoterol) é a melhor estratégia. Essa combinação pode ser usada tanto para o alívio dos sintomas quanto para a manutenção, tratando a inflamação toda vez que o paciente utiliza o medicamento para alívio. Isso reduz significativamente o risco de crises graves em comparação ao uso de salbutamol isolado.\n\nAlternativa D: Incorreta. O Omalizumabe é uma terapia biológica (anti-IgE) indicada especificamente para casos de asma grave alérgica que permanecem não controlados mesmo com o uso de altas doses de corticoide inalatório e LABA (Step 5 da GINA). Não há indicação para iniciar um medicamento de alto custo e alta complexidade antes mesmo de tentar o tratamento padrão com corticoterapia inalatória.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.379Z"
+  },
+  {
+    "id": "AJUDA_6e313b89-ed17-49e6-943e-c3de9eab22d2",
+    "originalId": "6e313b89-ed17-49e6-943e-c3de9eab22d2",
+    "statement": "O Sistema Único de Saúde (SUS) prevê a participação e controle social para sua organização e funcionamento, portanto participação popular é parte indispensável do processo contínuo e dinâmico de adequação do SUS, desde o nível local até nacional. Em 2013, foi instituída a Política Nacional de Educação Popular em Saúde no âmbito do Sistema Único de Saúde (PNEPS-SUS), a qual traz a educação popular como parte de suas estratégias. Sobre a PNEPS-SUS e Educação Popular em Saúde, na Atenção Primária à Saúde (APS), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O encontro de saberes (populares, tradicionais, culturalmente diversos, científico) é secundário na Educação Popular em Saúde e ocorre de maneira expositiva, conforme previsto na PNEPS-SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O espaço onde deve ocorrer a Educação Popular em Saúde é o espaço formal e acadêmico, possibilitando a desmistificação de pensamentos não científicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O protagonismo, a participação e o controle social são fundamentais para a execução da PNEPS-SUS e na prática da Educação Popular em Saúde, sendo a troca de saberes, as experiências pessoais e sociais, com base na realidade local e no território, pilares de todo esse processo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tanto a PNEPS-SUS quanto a Educação Popular em Saúde têm foco unissetorial, ou seja, as discussões se embasam em questões de saúde, ocorrem no setor da saúde, e o produto dela é aplicado também na saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ambas são estratégias para levar o conhecimento científico à população leiga e letrá-la sobre o cuidado em saúde ofertado no SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a Política Nacional de Educação Popular em Saúde (PNEPS-SUS), instituída pela Portaria nº 2.761/2013. A Educação Popular em Saúde é fundamentada no pensamento de Paulo Freire e busca romper com o modelo tradicional de ensino verticalizado (\"transmissão de conhecimento\"), propondo um diálogo horizontal entre os profissionais de saúde e a comunidade.\n\nAlternativa a) Incorreta. O encontro de saberes é o elemento central e estruturante da Educação Popular em Saúde, e não algo secundário. Além disso, a PNEPS-SUS preconiza que esse encontro ocorra de forma dialógica e participativa, rejeitando o modelo puramente expositivo ou unilateral.\n\nAlternativa b) Incorreta. Embora possa ocorrer em qualquer local, a Educação Popular em Saúde privilegia os territórios vivos, as comunidades e os espaços sociais informais, aproximando-se da realidade cotidiana das pessoas. O objetivo não é desmistificar o saber popular em favor do acadêmico, mas sim promover um diálogo de respeito mútuo entre essas diferentes formas de conhecimento.\n\nAlternativa c) Correta. A PNEPS-SUS baseia-se em princípios como a dialogicidade, o protagonismo dos sujeitos, a autonomia e a participação popular. Na Atenção Primária à Saúde, a prática é focada na realidade local e no território, utilizando as experiências pessoais e sociais da população como base para construir ações de saúde que façam sentido para aquela comunidade específica. Isso fortalece o controle social e a democratização da gestão.\n\nAlternativa d) Incorreta. A Educação Popular em Saúde possui um foco intersetorial. Ela compreende que a saúde é resultado de determinantes sociais (moradia, educação, trabalho, lazer); portanto, as discussões e intervenções envolvem diversos setores da sociedade e não ficam restritas apenas ao setor saúde ou a questões puramente biológicas.\n\nAlternativa e) Incorreta. Esta alternativa descreve o modelo de educação em saúde tradicional ou \"bancária\", no qual o profissional \"deposita\" o conhecimento científico na população considerada leiga. A Educação Popular em Saúde critica essa visão, propondo que o saber científico dialogue com o saber popular, de forma que ambos se transformem no processo, visando à emancipação dos sujeitos e não apenas ao letramento passivo.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.379Z"
+  },
+  {
+    "id": "AJUDA_6e45a065-9c57-41db-8bd7-a432023cf749",
+    "originalId": "6e45a065-9c57-41db-8bd7-a432023cf749",
+    "statement": "Mulher, 31 anos, no 20º dia pós-parto, que ocorreu na 32ª semana da gestação, foi submetida a apendicectomia de urgência e permaneceu internada em antibioticoterapia endovenosa por 7 dias sem amamentar. Nesse período, o bebê foi alimentado com leite artificial por mamadeira em domicilio, com dificuldade de sucção. Quer muito amamentar seu bebê uma vez que manteve boa produção de leite. A conduta mais indicada nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar o processo da translactação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "realizar o processo da relactação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estimular aleitamento materno fisiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "utilizar bico de silicone nos mamilos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "retirar o leite com bomba e oferecer na mamadeira.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda um desafio comum no manejo do aleitamento materno: a reintrodução da amamentação após um período de separação entre mãe e bebê e o uso de bicos artificiais (mamadeira).\n\nAnálise do caso:\nA paciente é puérpera de um prematuro (32 semanas) e ficou afastada por 7 dias devido a uma cirurgia e antibioticoterapia. Nesse intervalo, o bebê usou mamadeira e agora apresenta dificuldade de sucção, um fenômeno conhecido como confusão de bicos. O ponto crucial é que a mãe manteve boa produção de leite e deseja amamentar.\n\nExplicação das alternativas:\n\nAlternativa A (Correta): A translactação é a técnica indicada quando a mãe possui produção de leite, mas o bebê apresenta dificuldades para sugar diretamente a mama ou precisa ser reintroduzido ao peito. O procedimento consiste em oferecer o leite materno ordenhado através de uma sonda (cateter fino) fixada ao mamilo e conectada a um recipiente com o leite. Assim, enquanto o bebê suga a sonda para receber o leite, ele também suga o mamilo, estimulando a mama e reaprendendo a pega correta sem a frustração de não obter fluxo imediato.\n\nAlternativa B (Incorreta): Embora os termos sejam frequentemente confundidos, a relactação é a técnica utilizada quando a mãe não tem produção de leite ou a produção é insuficiente (por exemplo, em casos de amamentação adotiva ou após o desmame total). Nela, utiliza-se a sonda com fórmula infantil ou leite humano de banco de leite para estimular a volta da lactação. Como a paciente do caso já possui boa produção de leite, o termo técnico mais preciso é translactação.\n\nAlternativa C (Incorreta): Estimular apenas o aleitamento fisiológico (colocar o bebê direto no peito sem auxílio) tende ao fracasso nesse cenário. O bebê já experimentou a facilidade do fluxo da mamadeira e apresenta dificuldade de sucção. Sem uma técnica de transição, ele pode chorar, rejeitar o peito e a mãe pode desanimar.\n\nAlternativa D (Incorreta): O bico de silicone é geralmente contraindicado, pois pode interferir na dinâmica da sucção, diminuir a transferência de leite e prejudicar o esvaziamento da mama, além de não resolver o problema da confusão de bicos causada pela mamadeira.\n\nAlternativa E (Incorreta): Retirar o leite com bomba e oferecer na mamadeira mantém a nutrição do bebê e a produção da mãe, mas não atende ao desejo da paciente de amamentar diretamente no peito. Além disso, perpetua o uso da mamadeira, que é a causa da dificuldade de sucção do bebê.\n\nResumo: Para um bebê com dificuldade de sucção após uso de mamadeira, mas cuja mãe tem leite, a translactação é o método padrão-ouro para a relactação, pois une o estímulo da mama ao treinamento de sucção do bebê com o próprio leite da mãe.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.379Z"
+  },
+  {
+    "id": "AJUDA_6e45f316-96d4-43fc-98a7-e42120d9f076",
+    "originalId": "6e45f316-96d4-43fc-98a7-e42120d9f076",
+    "statement": "Pré-escolar, sexo masculino, 3 anos de idade, é levado ao Pronto-Socorro com febre alta, persistente há seis dias, que não responde adequadamente a antipiréticos. Os pais relatam que a criança está irritada e tem apresentado “vermelhidão na pele”. Ao exame físico, além de um exantema róseo disseminado, observa-se hiperemia conjuntival bilateral sem secreção, lábios inchados e avermelhados, língua em aspecto de “morango” e edema nas mãos com descamação periungueal. Os exames laboratoriais mostram elevação dos marcadores inflamatórios, como proteína C-reativa e velocidade de hemossedimentação. A criança estava usando, em razão da febre, uma dose elevada de dipirona.\nEm face do exposto, o diagnóstico mais provável para essa condição é",
+    "options": [
+      {
+        "id": "A",
+        "text": "escarlatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "doença de Kawasaki.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "síndrome de Stevens-Johnson.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "eritema difuso devido à farmacodermia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "síndrome de choque tóxico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico da doença de Kawasaki, uma vasculite sistêmica primária que acomete preferencialmente vasos de médio calibre e ocorre predominantemente em crianças menores de 5 anos.\n\nPara o diagnóstico da forma completa da doença de Kawasaki, o critério obrigatório é a presença de febre persistente por, no mínimo, cinco dias, associada a, pelo menos, quatro dos cinco critérios clínicos seguintes:\n1. Alterações nas extremidades (edema e eritema de mãos e pés na fase aguda ou descamação periungueal na fase subaguda).\n2. Exantema polimorfo (geralmente maculopapular).\n3. Hiperemia conjuntival bilateral não exsudativa (sem secreção).\n4. Alterações nos lábios e na cavidade oral (lábios fissurados/eritematosos, língua em morango, orofaringe hiperemiada).\n5. Linfadenopatia cervical (geralmente unilateral, maior que 1,5 cm).\n\nNo caso descrito, a criança apresenta febre há seis dias, exantema, hiperemia conjuntival sem secreção, alterações orais (lábios inchados e língua em morango) e alterações nas extremidades (edema e descamação). Portanto, o diagnóstico é preenchido com clareza.\n\nAnálise das alternativas:\n\na) Incorreta. A escarlatina, causada pelo *Streptococcus pyogenes*, também pode cursar com língua em morango e exantema. No entanto, o exantema da escarlatina tem aspecto de lixa (micropapular) e é acompanhado de faringite exsudativa e palidez perioral (sinal de Filatov), além de não apresentar a hiperemia conjuntival característica do caso.\n\nb) Correta. O paciente preenche os critérios diagnósticos para a doença de Kawasaki: febre prolongada (6 dias) + conjuntivite não purulenta + alterações orais + alterações nas extremidades + exantema. A irritabilidade é um sintoma muito comum e característico dessa patologia.\n\nc) Incorreta. A síndrome de Stevens-Johnson é uma reação de hipersensibilidade grave, geralmente induzida por fármacos (como a dipirona citada). Caracteriza-se por necrose e descolamento da epiderme, com acometimento de mucosas (erosões e crostas hemorrágicas), o que difere das alterações inflamatórias descritas na questão.\n\nd) Incorreta. Embora a criança tenha usado dipirona, o quadro é sistêmico demais para ser apenas uma farmacodermia. A presença de conjuntivite, língua em morango e o tempo de febre direcionam especificamente para a vasculite de Kawasaki, e não apenas para uma reação cutânea à droga.\n\ne) Incorreta. A síndrome do choque tóxico (estafilocócica ou estreptocócica) cursa com febre, exantema e descamação, mas o quadro clínico é marcado por instabilidade hemodinâmica grave (choque), falência de múltiplos órgãos e progressão muito mais rápida e fulminante do que a descrita no enunciado.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.379Z"
+  },
+  {
+    "id": "AJUDA_6e545bdb-5251-4c53-bcbc-155024987060",
+    "originalId": "6e545bdb-5251-4c53-bcbc-155024987060",
+    "statement": "Qual dos seguintes achados é mais característico do hipertireoidismo por Doença de Graves?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exoftalmia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Bradicardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mixedema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiponatremia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Doença de Graves é uma patologia autoimune e a causa mais frequente de hipertireoidismo na prática clínica. Ela se caracteriza pela produção de anticorpos que estimulam o receptor do TSH (TRAb), resultando em uma superprodução de hormônios tireoidianos. Além dos sintomas comuns a qualquer quadro de tireotoxicose, a doença de Graves apresenta manifestações extratireoidianas únicas.\n\nAlternativa A: Esta é a alternativa correta. A exoftalmia (proptose ocular) faz parte da oftalmopatia de Graves, um achado altamente específico desta doença. Ela ocorre devido a um processo inflamatório mediado por anticorpos que causa o acúmulo de glicosaminoglicanos e gordura nos tecidos retro-orbitais, empurrando o globo ocular para a frente. É o sinal que melhor diferencia a doença de Graves de outras causas de hipertireoidismo, como o bócio multinodular tóxico.\n\nAlternativa B: Esta alternativa está incorreta. O excesso de hormônios tireoidianos aumenta a sensibilidade dos receptores adrenérgicos e o metabolismo basal, o que leva à taquicardia (batimentos cardíacos acelerados) e não à bradicardia. A bradicardia é um achado clássico do hipotireoidismo.\n\nAlternativa C: Esta alternativa está incorreta. O termo mixedema, quando usado de forma isolada, refere-se habitualmente ao edema generalizado e à aparência infiltrada do paciente com hipotireoidismo grave. Embora exista o mixedema pré-tibial (dermopatia) na doença de Graves, ele é um achado raro (ocorre em menos de 5% dos pacientes), enquanto a exoftalmia é muito mais frequente e emblemática para o diagnóstico em provas.\n\nAlternativa D: Esta alternativa está incorreta. A hiponatremia (baixo nível de sódio no sangue) não é uma característica clínica do hipertireoidismo. Alterações nos níveis de sódio são mais frequentemente observadas no hipotireoidismo severo ou em outras disfunções endócrinas, como a insuficiência adrenal.\n\nGabarito: Letra A.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.379Z"
+  },
+  {
+    "id": "AJUDA_6e5bf39e-5d6a-4276-9d75-f5301b31f7d7",
+    "originalId": "6e5bf39e-5d6a-4276-9d75-f5301b31f7d7",
+    "statement": "Parturiente chega ao hospital com bolsa rota há 1 hora e contrações frequentes. Refere que o primeiro parto foi vaginal, pesando 3.300 g, sem dificuldades. Ao exame, a altura uterina é 30 cm, BCF: 150 bpm, colo pérvio para 8 cm. Palpa-se o braço fetal insinuado. Nesse momento, a melhor indicação para essa paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "cesárea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "manobra de Bracht com alça de cordão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "manobra de Mauriceau com extração podálica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "versão externa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "versão interna.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda uma distócia de situação fetal durante o trabalho de parto. A descrição \"palpa-se o braço fetal insinuado\" caracteriza uma situação transversa com procidência de membro superior. Em uma gestação a termo ou próxima do termo, com o feto em situação transversa e em trabalho de parto avançado, o parto vaginal é mecanicamente impossível, configurando uma indicação absoluta de interrupção pela via alta.\n\nAnálise das alternativas:\n\na) Correta. A cesariana é a conduta de eleição e a mais segura para a mãe e para o feto. Na situação transversa, o eixo longitudinal do feto é perpendicular ao eixo longitudinal da mãe. Com a dilatação avançada (8 cm) e a bolsa rota, há um risco iminente de compactação do ombro no estreito superior da bacia (situação transversa negligenciada), o que pode levar à ruptura uterina e óbito fetal se não for realizada a cesárea imediatamente.\n\nb) Incorreta. A manobra de Bracht é utilizada no parto pélvico para auxiliar a saída do corpo e braços do feto, consistindo na rotação do corpo fetal sobre o dorso materno. Não tem aplicação na situação transversa.\n\nc) Incorreta. A manobra de Mauriceau também é exclusiva do parto pélvico, servindo para promover a flexão e a saída da cabeça derradeira. Como o feto está atravessado (transversa), não há como aplicar manobras de parto pélvico. A extração podálica mencionada na alternativa é uma manobra de força que não se aplica a este cenário inicial.\n\nd) Incorreta. A versão externa é a tentativa de transformar uma situação transversa ou pélvica em cefálica através de manobras manuais sobre o abdome materno. É contraindicada em pacientes em trabalho de parto avançado, com bolsa rota e contrações frequentes, devido ao alto risco de descolamento de placenta e ruptura uterina.\n\ne) Incorreta. A versão interna é uma manobra obstétrica agressiva e praticamente proscrita na obstetrícia moderna para fetos únicos. Consiste em introduzir a mão inteira no útero para buscar os pés do feto e virá-lo. Atualmente, sua única indicação excepcional e discutível seria no segundo gemelar (em gravidez gemelar) logo após o nascimento do primeiro, caso o segundo mude para situação transversa e não haja possibilidade de cesárea imediata. No caso de feto único e 8 cm de dilatação, o risco de ruptura uterina é altíssimo.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Partograma e Distocias",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.379Z"
+  },
+  {
+    "id": "AJUDA_6e5c437f-56bc-4ed2-a8a5-7cc4a6ab0249",
+    "originalId": "6e5c437f-56bc-4ed2-a8a5-7cc4a6ab0249",
+    "statement": "Lactente, 5 meses de idade, com história de internações prévias devido a infecção urinária aos 20 dias de vida e aos 3 meses. Hoje apresenta febre intermitente, inapetência e vômitos. Exame de urina: nitrito (+), urocultura colhida por sondagem vesical com mais de 100 000 UFC/ml de E. coli, tratado com antimicrobiano com remissão dos sintomas. Realizadas ultrassonografias abdominal e de rins e vias urinárias que não verificaram alterações. O exame padrão-ouro para elucidar esse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "cintilografia renal com DMSA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "urografia excretora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "uretrocistografia miccional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ressonância magnética de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tomografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso:\nO paciente é um lactente de 5 meses com um quadro de infecção do trato urinário (ITU) de repetição, apresentando o terceiro episódio documentado. A ultrassonografia de rins e vias urinárias normal é um achado comum, pois este exame tem baixa sensibilidade para detectar tanto o refluxo vesicoureteral quanto as cicatrizes renais. O objetivo principal na investigação de ITUs recorrentes na infância é identificar se há lesão no parênquima renal (cicatrizes), que pode levar a complicações futuras como hipertensão arterial e insuficiência renal crônica.\n\nAlternativa a) Está correta. A cintilografia renal com DMSA (ácido dimercaptossuccínico marcado com Tecnécio-99m) é o exame padrão-ouro para o diagnóstico de pielonefrite aguda e, fundamentalmente, para a identificação de cicatrizes renais crônicas. Na estratégia de investigação conhecida como top-down, o DMSA é priorizado para identificar se a infecção atingiu o rim e causou dano. Se o parênquima estiver íntegro, o risco de sequelas a longo prazo é drasticamente menor, independentemente da presença de refluxo.\n\nAlternativa b) Está incorreta. A urografia excretora é um exame radiológico que utiliza contraste iodado e fornece imagens da anatomia coletora. Atualmente, é considerada obsoleta na pediatria para esta finalidade, pois oferece alta carga de radiação e menor precisão diagnóstica em comparação aos métodos modernos como a cintilografia e a ecografia com Doppler.\n\nAlternativa c) Está incorreta. A uretrocistografia miccional é o exame padrão-ouro para o diagnóstico de refluxo vesicoureteral (RVU) e para avaliar a anatomia da uretra. Embora seja frequentemente solicitada em casos de ITU de repetição, ela não avalia o parênquima renal. Portanto, não é o exame para detectar cicatrizes ou dano renal já estabelecido, que é o foco para \"elucidar\" a gravidade e o impacto das múltiplas infecções neste lactente.\n\nAlternativa d) Está incorreta. A ressonância magnética de abdome pode identificar alterações renais, mas não é o exame de escolha ou padrão-ouro para pesquisa de cicatrizes em lactentes. É um exame caro, de difícil acesso em muitos serviços e que exige sedação profunda da criança, não sendo prático ou indicado como primeira linha nesta investigação.\n\nAlternativa e) Está incorreta. A tomografia computadorizada de abdome não é o método padrão para avaliar cicatrizes renais em crianças. Além de possuir menor sensibilidade que o DMSA para lesões corticais, expõe o lactente a níveis elevados de radiação ionizante e necessita do uso de contraste iodado, que é nefrotóxico.\n\nResumo: O foco da questão é a detecção de sequelas parenquimatosas (cicatrizes renais) em um contexto de infecções urinárias recorrentes. Para este fim específico, a cintilografia renal com DMSA é a referência diagnóstica absoluta.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.379Z"
+  },
+  {
+    "id": "AJUDA_6e5cb94f-01ef-45d9-9d66-79246f1e266f",
+    "originalId": "6e5cb94f-01ef-45d9-9d66-79246f1e266f",
+    "statement": "Um estudo de coorte detectou incidência de 24% da doença D entre expostos a um fator de risco. Sabendo que o exame diagnóstico para detectar essa incidência tinha sensibilidade de 100% e especificidade de 80%, qual teria sido a verdadeira incidência de D nessa coorte?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5,0%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "19,2%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "24,0%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "31,6%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, devemos entender que a incidência detectada (24%) é a incidência aparente, composta tanto pelos verdadeiros positivos quanto pelos falsos positivos. O objetivo é isolar a incidência real da doença.\n\nDados fornecidos:\nIncidência observada (aparente) = 24% ou 0,24.\nSensibilidade (S) = 100% ou 1,0.\nEspecificidade (E) = 80% ou 0,8.\n\nLógica do cálculo:\nA incidência observada é o resultado da soma de:\n1. Doentes que testaram positivo (verdadeiros positivos). Como a sensibilidade é 100%, todos os doentes testam positivo.\n2. Não doentes que testaram positivo (falsos positivos). Como a especificidade é 80%, a taxa de falsos positivos é de 20% (100% menos 80%).\n\nSe chamarmos a incidência real de P:\n0,24 = (P vezes sensibilidade) + ((1 - P) vezes taxa de falsos positivos)\n0,24 = (P vezes 1,0) + ((1 - P) vezes 0,20)\n0,24 = P + 0,20 - 0,20P\n0,24 - 0,20 = P - 0,20P\n0,04 = 0,80P\nP = 0,04 / 0,80\nP = 0,05 ou 5%\n\nAnálise das alternativas:\n\na) Correta. Se a incidência real for de 5%, em um grupo de 100 pessoas, 5 estão doentes. Com sensibilidade de 100%, todas as 5 testam positivo. As outras 95 pessoas são saudáveis; com especificidade de 80%, 20% delas (19 pessoas) terão resultados falsos positivos. Somando os 5 verdadeiros positivos com os 19 falsos positivos, obtemos 24 positivos, o que corresponde à incidência de 24% detectada no estudo.\n\nb) Incorreta. Este valor não decorre da aplicação correta das fórmulas de prevalência/incidência real baseada em sensibilidade e especificidade. Poderia surgir de erros matemáticos ao tentar subtrair diretamente a especificidade do valor observado.\n\nc) Incorreta. 24,0% é a incidência aparente (o que o teste mostrou). Como o teste não é perfeitamente específico (80%), sabemos que ele superestimou a doença ao incluir pessoas saudáveis no grupo dos \"positivos\". A incidência real deve ser necessariamente menor que a observada.\n\nd) Incorreta. Uma incidência real de 31,6% é impossível neste cenário. Se a sensibilidade é de 100%, o teste detectaria no mínimo todos os 31,6% doentes, resultando em uma incidência observada maior do que a relatada de 24%.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.379Z"
+  },
+  {
+    "id": "AJUDA_6e67d061-c7ea-4919-b5c0-fde110d47271",
+    "originalId": "6e67d061-c7ea-4919-b5c0-fde110d47271",
+    "statement": "Paciente, sexo masculino, 32 anos de idade, é admitido no pronto-socorro, encaminhado pelo SAMU, vítima de dois ferimentos por projétil de arma de fogo (FPAF). Durante a avaliação primária, apresentava:\n• via aérea pérvia com colar cervical e prancha rígida;\n• murmúrio vesicular presente bilateralmente, saturação de oxigênio de 92% com máscara de alto fluxo;\n• FC: 130 bpm, PA: 85x65 mmHg, FAST: líquido livre na cavidade abdominal;\n• escala de coma de Glasgow 12, pupilas isocóricas e fotorreagentes;\n• ferimento por arma de fogo transfixante de abdome e ferimento de entrada em região inguinal direita, conforme imagem a seguir.\n\nCom base nesse caso clínico, assinale a alternativa que apresenta, corretamente, a conduta inicial recomendada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reposição volêmica com duas bolsas de sangue O negativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Reposição volêmica com 1000 mL de solução fisiológica aquecida, solicitar tipagem sanguínea e reserva de concentrado de hemácias e plasma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reposição volêmica com 1000 mL de solução fisiológica aquecida e iniciar droga vasoativa até transfusão de sangue tipo específico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reposição volêmica com 1000 mL de rínger lactato e iniciar droga vasoativa até transfusão de sangue tipo específico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Punção de dois acessos venosos calibrosos seguido de reposição volêmica com 2000 mL de rínger lactato e tipagem sanguínea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nO quadro clínico descreve um paciente jovem com trauma penetrante (FPAF) em abdome e região inguinal, apresentando sinais inequívocos de choque hipovolêmico grau IV (FC 130 bpm, PA 85x65 mmHg, Glasgow 12) e FAST positivo. De acordo com as diretrizes atuais do ATLS (10ª edição), a abordagem do choque hemorrágico grave prioriza a ressuscitação hemostática e o controle precoce da hemorragia.\n\nAnálise das alternativas:\n\na) CORRETA. Em pacientes com choque hemorrágico grave (Classe IV) decorrente de trauma, a reposição imediata com hemoderivados é a conduta padrão. Como não há tempo para tipagem sanguínea (prova cruzada demora cerca de 45-60 min), utiliza-se o sangue universal, que é o O negativo (ou O positivo para homens em situações de extrema urgência, dependendo do protocolo local). O uso de sangue precoce reduz a coagulopatia induzida pelo trauma e a hemodiluição causada por cristaloides.\n\nb) INCORRETA. A administração de grandes volumes de soluções cristaloides (como 1000 mL de SF) em um paciente com sangramento ativo e choque grave contribui para a tríade da morte (acidose, coagulopatia e hipotermia) devido à diluição de fatores de coagulação e plaquetas. A tendência moderna é a \"ressuscitação com baixo volume de cristaloide\" e priorização de sangue.\n\nc) INCORRETA. No choque hipovolêmico, o problema é a falta de volume intravascular, não a falha na bomba cardíaca ou no tônus vascular periférico. O uso de drogas vasoativas (como noradrenalina) antes da reposição volêmica adequada é contraindicado, pois aumenta a isquemia orgânica e não trata a causa base.\n\nd) INCORRETA. Assim como a alternativa anterior, o uso de droga vasoativa está incorreto para este cenário de choque hemorrágico por trauma transfixante. Além disso, embora o Ringer Lactato seja preferível ao Soro Fisiológico (por evitar acidose hiperclorêmica), a prioridade absoluta aqui é o sangue.\n\ne) INCORRETA. Esta alternativa segue recomendações obsoletas (versões antigas do ATLS). O volume de 2000 mL de cristaloide hoje é considerado excessivo e prejudicial no trauma agudo, pois aumenta o sangramento por desprendimento de coágulos formados (aumento da pressão hidrostática) e agrava a coagulopatia dilucional.\n\nConclusão: Diante de um paciente chocado, com FAST positivo e trauma penetrante, a conduta inicial mais adequada para a manutenção da perfusão e prevenção da coagulopatia é a transfusão imediata de sangue O negativo (sangue universal) enquanto se prepara o Centro Cirúrgico para a laparotomia exploradora (controle da fonte).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9cd721d20c3bf6f6bbe8ae82c8d07213ed873c7ae142eb52602d1b8c29c67970.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_6e67d061-c7ea-4919-b5c0-fde110d47271_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:21.858Z"
+  }
+]

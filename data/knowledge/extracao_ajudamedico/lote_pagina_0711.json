@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_c6a0c992-1aea-4644-8b94-ab7140d5f73f",
+    "originalId": "c6a0c992-1aea-4644-8b94-ab7140d5f73f",
+    "statement": "Uma gestante de 32 semanas e 5 dias vai ao PSO referindo quadro de perda de líquido pela vagina há cerca de cinco horas, em moderada quantidade, com odor de água sanitária. Nega sangramento vaginal ou dor. Ao exame clínico: sinais vitais sem alterações e afebril. Ao exame especular: não identificado líquido em vagina. Ausência de perda de líquido à manobra de Valsalva. Teste do forro: negativo. Com base nesse contexto, assinale a alternativa que apresenta corretamente o exame de maior sensibilidade e especificidade na exclusão do diagnóstico de rotura prematura de membranas ovulares.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Teste do papel de nitrazina (pH vaginal).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teste da fibronectina fetal (fFN).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prova do fenolsulfonftaleína (Fenol).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Identificação da PAMG-1 (placental alpha microglobulin-1).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta uma gestante com história sugestiva de Rotura Prematura de Membranas Ovulares (RPMO), porém com exame físico inicial (especular, manobra de Valsalva e teste do forro) inconclusivo. Quando a suspeita clínica persiste apesar do exame físico negativo, devemos recorrer a testes bioquímicos ou métodos complementares de maior acurácia.\n\nAbaixo, a análise de cada alternativa:\n\na) Teste do papel de nitrazina (pH vaginal): Este teste baseia-se na diferença de pH entre a secreção vaginal normal (ácida, entre 3,8 e 4,5) e o líquido amniótico (alcalino, entre 7,0 e 7,5). O papel de nitrazina muda de cor (torna-se azul) na presença de substâncias alcalinas. O grande problema deste teste é a baixa especificidade, pois apresenta muitos resultados falsos-positivos na presença de sangue, sêmen, sabões ou infecções vaginais (como vaginose bacteriana).\n\nb) Teste da fibronectina fetal (fFN): A fibronectina fetal é uma proteína que atua como uma \"cola\" entre o saco gestacional e o útero. Sua principal utilidade clínica é na avaliação do risco de parto prematuro em pacientes com membranas íntegras. Embora tenha um alto valor preditivo negativo para o parto em 7 a 14 dias, não é o teste padrão-ouro ou o de maior acurácia especificamente para o diagnóstico de rotura de membranas.\n\nc) Prova da fenolsulfonftaleína (Fenol): Este é um método invasivo que consiste na injeção intra-amniótica de corantes (como o carmim-de-índigo ou a fenolsulfonftaleína) através de uma amniocentese, seguida da observação da saída do corante pela vagina. Embora seja um método definitivo, é invasivo, apresenta riscos e não é utilizado rotineiramente na prática clínica, especialmente quando existem testes bioquímicos não invasivos de alta performance disponíveis.\n\nd) Identificação da PAMG-1 (placental alpha microglobulin-1): Esta é a alternativa correta. A PAMG-1 é uma proteína expressa em altas concentrações no líquido amniótico e em concentrações mínimas nas secreções vaginais normais. Os testes imunocromatográficos que detectam essa proteína (como o AmniSure) possuem sensibilidade e especificidade muito elevadas, frequentemente superiores a 98-99%. Devido a essa alta acurácia, é o exame de escolha para confirmar ou excluir o diagnóstico de RPMO quando o exame clínico é duvidoso, sendo superior ao teste de nitrazina e ao teste da cristalização.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  },
+  {
+    "id": "AJUDA_c6a2f194-f8d5-4bce-972a-f2f10b4747d6",
+    "originalId": "c6a2f194-f8d5-4bce-972a-f2f10b4747d6",
+    "statement": "Paciente com dor intensa no quadrante inferior direito e diagnóstico de apendicite é tratado com apendicectomia. Qual é a complicação mais comum?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infecção de ferida cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Peritonite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fístula entérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstrução intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A apendicite aguda é a causa mais comum de abdome agudo cirúrgico no mundo, e a apendicectomia é o tratamento padrão. As complicações pós-operatórias estão diretamente relacionadas ao estágio da doença (se a apendicite é simples ou complicada) e à técnica cirúrgica utilizada.\n\nAlternativa a) Correta. A infecção de ferida cirúrgica (infecção do sítio cirúrgico) é, estatisticamente, a complicação mais frequente após uma apendicectomia. A incidência varia significativamente conforme o grau de contaminação: é baixa em apendicites iniciais, mas aumenta consideravelmente em casos de apendicite gangrenosa ou perfurada, onde a ferida é exposta ao conteúdo purulento ou fecal durante o procedimento.\n\nAlternativa b) Incorreta. A peritonite é geralmente a condição clínica que leva à cirurgia (nos casos de perfuração apendicular) ou uma complicação da evolução natural da doença não tratada. Embora abscessos intra-abdominais possam ocorrer no pós-operatório, eles são classificados como infecções de sítio cirúrgico de órgão/espaço e ocorrem com menor frequência que a infecção superficial da ferida.\n\nAlternativa c) Incorreta. A fístula entérica (ou fístula cecal) é uma complicação considerada rara. Ela ocorre principalmente quando há deiscência do coto apendicular devido à inflamação intensa da base do ceco, necrose tecidual ou em pacientes com doenças inflamatórias intestinais, como a doença de Crohn.\n\nAlternativa d) Incorreta. A obstrução intestinal pode ocorrer de forma precoce, devido ao íleo paralítico (funcional), ou tardiamente, devido à formação de bridas e aderências (mecânica). Apesar de ser uma complicação importante em qualquer cirurgia abdominal, sua frequência global é menor que a das infecções da ferida operatória.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Apendicite Aguda",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  },
+  {
+    "id": "AJUDA_c6b31360-67ed-43c6-8774-32f6c2e04cf1",
+    "originalId": "c6b31360-67ed-43c6-8774-32f6c2e04cf1",
+    "statement": "Na paciente com rotura prematura de membranas ovulares, em que condição necessariamente é preciso realizar antibioticoterapia profilática para profilaxia de infecção por estreptococo do grupo B de imediato?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na paciente abaixo de 37 semanas, sem resultado de cultura de estreptococo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Na paciente com resultado de cultura de estreptococo com resultado negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na paciente com história de cultura de urina positiva para Proteus durante o pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na presença de taquicardia fetal, associada a febre intraparto e secreção vaginal com odor fétido.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA profilaxia para o Estreptococo do Grupo B (S. agalactiae) tem como objetivo principal prevenir a transmissão vertical da bactéria para o recém-nascido, evitando casos de sepse neonatal precoce. A indicação da antibioticoterapia depende da identificação da colonização materna ou da presença de fatores de risco específicos durante o trabalho de parto ou na rotura de membranas.\n\nAlternativa a: Esta é a alternativa correta. Segundo os protocolos do CDC e ACOG, se uma paciente apresenta rotura prematura de membranas com menos de 37 semanas de gestação e seu status de colonização por GBS é desconhecido (ou seja, a cultura ainda não foi realizada ou o resultado não está disponível), a profilaxia deve ser iniciada de imediato. A prematuridade é um fator de risco importante que justifica o início do antibiótico na ausência de uma cultura negativa recente.\n\nAlternativa b: Esta alternativa está incorreta. Se a paciente possui um resultado de cultura vaginal e retal negativo para Estreptococo do Grupo B, realizada nas últimas cinco semanas de gestação, a profilaxia não é indicada. O resultado negativo indica que o risco de transmissão é muito baixo, tornando o antibiótico desnecessário nesse contexto.\n\nAlternativa c: Esta alternativa está incorreta. A presença de Proteus na urina indica uma infecção ou colonização por esse agente específico, e não pelo Estreptococo do Grupo B. O critério urinário que obriga a profilaxia para GBS no momento do parto é o achado de GBS na urina (bacteriúria por GBS) em qualquer fase da gestação atual, independentemente da cultura de rastreio vaginal/retal.\n\nAlternativa d: Esta alternativa está incorreta. O quadro de febre materna, taquicardia fetal e secreção vaginal com odor fétido define clinicamente a corioamnionite (infecção intra-amniótica). Nessa situação, a conduta não é apenas a profilaxia para GBS, mas sim o tratamento antibiótico terapêutico de amplo espectro para tratar a infecção já estabelecida, geralmente utilizando a combinação de ampicilina e gentamicina, além da programação do parto. Embora o GBS possa estar envolvido, o manejo clínico aqui vai muito além da simples profilaxia.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  },
+  {
+    "id": "AJUDA_c6bc77af-2912-4cc1-89e9-2ae3771976e0",
+    "originalId": "c6bc77af-2912-4cc1-89e9-2ae3771976e0",
+    "statement": "Mulher, 60 anos, diabética e hipertensa há 15 anos. Peso 65,4Kg e altura 1,55m. Em uso de metformina 2g/dia, insulina NPH 40U cedo e 20U antes do jantar. Queixa-se de tonturas e fome intensa antes das refeições. Exames: glicemia de jejum 90mg/dL e creatinina 1,9mg/dL (eGFR=25mL/min/1,73m2). Sua orientação será:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduzir a dose total de insulina para 0,7U/Kg/dia e manter 2g de metformina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter a dose de insulina e reduzir a metformina para 1g/dia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reduzir a dose de insulina para 0,4U/Kg/dia e suspender a metformina;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aumentar a dose total de insulina para 1U/Kg/dia e suspender a metformina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A análise desta questão exige o conhecimento sobre o manejo do diabetes mellitus em pacientes com doença renal crônica avançada.\n\nO ponto central da questão é a taxa de filtração glomerular estimada (eGFR) da paciente, que é de 25 mL/min/1,73 m². De acordo com as diretrizes da Sociedade Brasileira de Diabetes (SBD) e do KDIGO, o uso da metformina é contraindicado quando a eGFR é inferior a 30 mL/min/1,73 m², devido ao risco aumentado de acidose lática. Portanto, a suspensão da metformina é mandatória.\n\nAlém disso, a paciente apresenta sintomas típicos de hipoglicemia (tonturas e fome intensa antes das refeições). Na insuficiência renal avançada, a meia-vida da insulina é prolongada, pois os rins são responsáveis pela degradação de cerca de 30% a 80% da insulina exógena. Com a redução da função renal, a depuração de insulina diminui, aumentando o risco de eventos hipoglicêmicos. Por isso, é necessária uma redução significativa na dose total de insulina.\n\nAnálise das alternativas:\n\na) Incorreta. A metformina deve ser obrigatoriamente suspensa, pois a eGFR (25 mL/min) está abaixo do limite de segurança de 30 mL/min. Além disso, manter uma dose de 0,7 U/kg/dia ainda pode ser excessivo para uma paciente que já apresenta sintomas de hipoglicemia e perda de função renal.\n\nb) Incorreta. A metformina não deve ser apenas reduzida, mas sim suspensa. Manter a dose atual de insulina (que é de aproximadamente 0,9 U/kg/dia) é perigoso, dado o quadro clínico de hipoglicemia e a falência renal.\n\nc) Correta. Esta alternativa atende aos dois critérios necessários: suspende a metformina devido à contraindicação absoluta pela função renal (eGFR < 30) e reduz a dose de insulina para um patamar mais seguro (0,4 U/kg/dia). Em pacientes com eGFR entre 10 e 50 mL/min, recomenda-se geralmente uma redução de pelo menos 25% na dose de insulina, mas em casos de hipoglicemia sintomática, uma redução mais agressiva, como para 0,4 U/kg, é tecnicamente adequada para garantir a segurança do paciente.\n\nd) Incorreta. Aumentar a dose de insulina para 1 U/kg/dia em uma paciente que já está sofrendo hipoglicemias e possui doença renal estágio 4 seria um erro grave, aumentando drasticamente o risco de um evento hipoglicêmico severo ou fatal.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  },
+  {
+    "id": "AJUDA_c6be88bf-00ff-4318-a034-985d3dbb039c",
+    "originalId": "c6be88bf-00ff-4318-a034-985d3dbb039c",
+    "statement": "Qual é o distúrbio eletrolítico clássico da estenose hipertrófica do piloro não tratada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose metabólica hiperclorêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alcalose metabólica hipoclorêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hipercalemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiponatremia com acidose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alcalose metabólica hipoclorêmica e hipocalêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A estenose hipertrófica do piloro é uma patologia comum em lactentes, caracterizada pela hipertrofia da musculatura do piloro, o que impede a passagem do conteúdo gástrico para o duodeno. O quadro clínico clássico envolve vômitos não biliosos em jato, que levam a alterações metabólicas específicas devido à perda de conteúdo gástrico.\n\nO suco gástrico é rico em ácido clorídrico (HCl). Quando o paciente apresenta vômitos persistentes, ocorre uma perda massiva de íons hidrogênio (H+) e íons cloreto (Cl-). A perda de H+ resulta no aumento do pH sanguíneo, configurando uma alcalose metabólica. Simultaneamente, a perda de Cl- gera a hipocloremia. Portanto, a tríade bioquímica inicial e fundamental é a alcalose metabólica hipoclorêmica.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A perda de secreção gástrica (ácida) resulta em alcalose, e não em acidose. A acidose metabólica hiperclorêmica é observada em outras condições, como diarreias graves ou perdas de fluidos pancreáticos e biliares, que são básicos.\n\nAlternativa b) Correta. Esta alternativa descreve as alterações primárias decorrentes da perda de ácido clorídrico pelo vômito. É o distúrbio eletrolítico e ácido-básico que define a fisiopatologia inicial da estenose de piloro não tratada.\n\nAlternativa c) Incorreta. Na estenose de piloro, ocorre hipocalemia (baixo nível de potássio), e não hipercalemia. O potássio é perdido tanto pelo vômito quanto pela via renal. Quando o bebê fica desidratado, o rim tenta reabsorver sódio e água; para isso, ele acaba excretando potássio e hidrogênio (fenômeno que leva à acidúria paradoxal).\n\nAlternativa d) Incorreta. Conforme explicado, o distúrbio é de alcalose devido à perda de ácido clorídrico, e não de acidose.\n\nAlternativa e) Incorreta (conforme o gabarito indicado). Embora a hipocalemia (baixa de potássio) frequentemente acompanhe o quadro em estágios mais avançados devido aos mecanismos de compensação renal, o enunciado pede o distúrbio clássico. Em muitas provas, se a alternativa B estiver presente, ela é considerada a resposta por focar no componente mais direto da perda de suco gástrico (H+ e Cl-). Se o gabarito oficial indica a letra B, a banca entende que a alcalose hipoclorêmica é a característica patognomônica primária, sendo a hipocalemia uma consequência secundária à desidratação e à ativação do sistema renina-angiotensina-aldosterona.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  },
+  {
+    "id": "AJUDA_c6c15460-9ccf-4b35-a937-d8297f1f3cbc",
+    "originalId": "c6c15460-9ccf-4b35-a937-d8297f1f3cbc",
+    "statement": "Considere uma gestante que manipula alimentos frescos em seu local de trabalho, onde auxilia os cozinheiros no preparo das refeições. No pré-natal, foi advertida quanto aos riscos de contrair algumas doenças, bem como comportamentos que atuam na prevenção desses agravos. Dentre esses agravos, a médica atendente reforçou cuidados em relação à toxoplasmose. Assinale a alternativa CORRETA sobre essa doença:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Numa gestação de 10 semanas, o resultado de avidez elevada sugere que a toxoplasmose aguda ocorreu antes da gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Para evitar a toxoplasmose deve-se afastar essa gestante da manipulação de alimentos cujo preparo envolva ovos e leite não pasteurizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste de avidez se aplica a casos de toxoplasmose com IgM positivo e IgG negativo, para confirmar se a infecção é recente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Toxoplasma gondii é uma bactéria de vida intracelular obrigatória, que pode ser transmitida ao feto na gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): O teste de avidez do IgG é utilizado para estimar o tempo de infecção pela toxoplasmose quando a gestante apresenta IgM e IgG positivos no início do pré-natal. Uma avidez elevada indica que a produção de anticorpos IgG já está madura, o que ocorre geralmente após 12 a 16 semanas da infecção inicial. Se a gestante estiver com 10 semanas de gestação e o teste de avidez for alto, conclui-se que a infecção ocorreu há pelo menos 12 semanas, ou seja, antes do período da concepção, o que exclui o risco de transmissão vertical para o feto.\n\nAlternativa B (Incorreta): As recomendações para prevenção da toxoplasmose focam em evitar o consumo de carnes cruas ou malpassadas, lavar rigorosamente frutas e hortaliças e evitar o contato com fezes de felinos ou terra contaminada. O consumo de ovos e leite não pasteurizado está mais comumente associado a outros patógenos, como *Salmonella* (ovos) e *Listeria* ou *Brucella* (leite), não sendo o foco principal da prevenção da toxoplasmose.\n\nAlternativa C (Incorreta): O teste de avidez avalia a força de ligação dos anticorpos da classe IgG aos antígenos do parasita. Portanto, é imprescindível que o IgG esteja positivo para que o teste seja realizado. Em casos de IgM positivo e IgG negativo, a hipótese é de uma infecção aguda muito recente (na fase de \"janela\" de viragem do IgG) ou um resultado falso-positivo de IgM. Nesses casos, a conduta correta é repetir a sorologia em duas a três semanas para observar a soroconversão, e não solicitar avidez.\n\nAlternativa D (Incorreta): O *Toxoplasma gondii* é um protozoário parasita intracelular obrigatório, e não uma bactéria. Embora a afirmação de que ele pode ser transmitido ao feto durante a gestação (transmissão vertical) esteja correta, o erro na classificação biológica do agente torna a alternativa incorreta.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  },
+  {
+    "id": "AJUDA_c6c568aa-c0a6-4618-a049-d875678170dc",
+    "originalId": "c6c568aa-c0a6-4618-a049-d875678170dc",
+    "statement": "Um paciente de 5 anos, dá entrada no Hospital com história de febre alta de até 39 graus nos últimos 3 dias, associado a mialgia, dor retro orbitária e cefaleia. Evolui nas últimas 24 horas com exantema difuso e dor abdominal contínua desde ontem e vômitos cerca de 6 episódios, sem conseguir ingerir líquidos. Ao exame físico: REG, corada, desidratada 2+/4+, acianótica e afebril. Ausculta cardíaca: Bulhas rítmicas, normofonéticas sem sopros FC: 95 bpm PA: 100x60 mmHG. Ausculta pulmonar: murmúrio vesicular presente bilateralmente sem sinais de desconforto respiratório, FR: 22 ipm Sat 02: 96% em ar ambiente. Abdome: dor a palpação difusa, sem sinais de irritação peritoneal. Extremidades: boa perfusão periférica, pulsos amplos. Qual a melhor hipótese diagnóstica e conduta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caso suspeito de dengue, classificação de gravidade: grupo A; Sem indicação de internação, manter hidratação via oral em domicílio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Caso suspeito de dengue, classificação de gravidade: grupo D; Indicada hidratação endovenosa com coloide (albumina). Coleta de hemograma, exames de disfunção orgânica e exames confirmatórios do dengue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caso suspeito de dengue, classificação de gravidade: grupo B; Hidratação via oral supervisionada em unidade de pronto - atendimento (50-100ml/kg em 4-6 horas). Coleta de hemograma para controle de hematócrito. Coleta de exames confirmatórios do dengue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Caso suspeito de dengue, classificação de gravidade: grupo C. Indicada hidratação endovenosa em ambiente hospitalar, fase de expansão (alíquotas 20ml/kg em 2 horas), controle hematimétrico e hidratação venosa de manutenção após estabilidade clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico de dengue em uma criança de 5 anos, caracterizado por febre alta, mialgia, dor retro-orbitária e cefaleia. O ponto crucial para a resolução é a identificação dos sinais de alarme e a correta classificação de gravidade de acordo com o protocolo do Ministério da Saúde.\n\nAnálise do caso clínico:\nO paciente apresenta sinais de alarme claros: dor abdominal contínua e vômitos persistentes (6 episódios), além da impossibilidade de ingestão de líquidos (intolerância oral). Apesar de estar desidratado, o exame físico mostra estabilidade hemodinâmica (PA 100 x 60 mmHg, pulsos amplos e boa perfusão), o que afasta, no momento, a classificação de choque (Grupo D).\n\nClassificação e Conduta:\n- Grupo A: Sem sinais de alarme, sem condições especiais.\n- Grupo B: Sem sinais de alarme, mas com condições especiais (idade < 2 anos, gestantes, comorbidades) ou risco social.\n- Grupo C: Presença de pelo menos um sinal de alarme (dor abdominal, vômitos persistentes, hipotensão postural, letargia, aumento do hematócrito, entre outros).\n- Grupo D: Sinais de choque, desconforto respiratório ou disfunção grave de órgãos.\n\nAlternativa (a) Incorreta: O paciente não pode ser classificado como Grupo A porque apresenta sinais de alarme (dor abdominal e vômitos) e intolerância oral, o que contraindica o tratamento domiciliar.\n\nAlternativa (b) Incorreta: O Grupo D é reservado para casos de dengue grave (choque). Este paciente mantém boa perfusão e pressão arterial normal para a idade. Além disso, o uso de coloides (albumina) não é a conduta inicial; a expansão deve ser feita com cristaloides (soro fisiológico ou Ringer lactato).\n\nAlternativa (c) Incorreta: O Grupo B se aplica a pacientes sem sinais de alarme, mas com situações clínicas ou sociais específicas. Como o paciente já apresenta sinais de alarme, ele sobe obrigatoriamente para a categoria C. Além disso, a hidratação no Grupo C deve ser obrigatoriamente intravenosa inicial, e não apenas oral supervisionada.\n\nAlternativa (d) Correta: O diagnóstico é de dengue com sinais de alarme (Grupo C). A conduta preconizada é a internação hospitalar imediata para reposição volêmica intravenosa. O protocolo de expansão para o Grupo C consiste em alíquotas de 10 mL/kg na primeira hora (ou, como citado na alternativa, mantendo a proporção de 20 mL/kg em 2 horas), seguido de reavaliação clínica e laboratorial (hematócrito) para guiar a manutenção.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  },
+  {
+    "id": "AJUDA_c6d378d8-5905-4936-ac77-cea70debaadd",
+    "originalId": "c6d378d8-5905-4936-ac77-cea70debaadd",
+    "statement": "Na abordagem laparoscópica de endometriose, assinale a opção que NÃO é uma indicação comum para o procedimento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dor pélvica crônica refratária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Endometriose em mulheres pós-menopausa assintomáticas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Infertilidade associada à endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diagnóstico de endometriose profunda infiltrativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O objetivo da questão é identificar a situação em que a intervenção cirúrgica por laparoscopia não é recomendada de rotina na prática clínica da endometriose.\n\nAlternativa A: Incorreta. A dor pélvica crônica que não responde ao tratamento clínico (analgésicos, anti-inflamatórios e bloqueio hormonal) é uma das principais indicações de abordagem laparoscópica. O objetivo é a exérese dos focos e a lise de aderências para a melhora da qualidade de vida da paciente.\n\nAlternativa B: Correta (Gabarito). A endometriose é uma doença dependente de estrogênio. Na pós-menopausa, com a queda dos níveis hormonais, as lesões tendem a regredir ou a se tornar latentes. Se a mulher for assintomática, não há indicação para realizar um procedimento cirúrgico invasivo, como a laparoscopia, a menos que haja suspeita de malignização de uma massa anexial (o que foge do quadro de endometriose puramente assintomática).\n\nAlternativa C: Incorreta. A infertilidade é uma indicação clássica para a laparoscopia. O procedimento pode ajudar a restaurar a anatomia pélvica, remover endometriomas que prejudicam a reserva ovariana ou tratar focos peritoneais, aumentando as chances de gestação espontânea ou otimizando os resultados de técnicas de reprodução assistida.\n\nAlternativa D: Incorreta. Embora exames de imagem, como o ultrassom com preparo intestinal e a ressonância magnética, sejam excelentes para o mapeamento da endometriose profunda, a laparoscopia permanece como o padrão-ouro para a confirmação diagnóstica e o tratamento definitivo das lesões infiltrativas que causam sintomas compressivos ou dor intensa.\n\nEm resumo: A conduta na endometriose deve ser guiada pelos sintomas e pelo desejo reprodutivo da paciente. Mulheres assintomáticas após a menopausa não se beneficiam da cirurgia, tornando a Alternativa (B) a resposta que não constitui uma indicação comum para o procedimento.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  },
+  {
+    "id": "AJUDA_c6d477ff-90b3-4c9b-9221-21605fb49582",
+    "originalId": "c6d477ff-90b3-4c9b-9221-21605fb49582",
+    "statement": "Mulher de 24 anos, nulípara, com história familiar de câncer de mama e ovário em parentes de primeiro grau, realizou testagem genética que confirmou mutação patogênica no gene BRCA1. Está assintomática e deseja saber quais medidas pode adotar para reduzir seu risco de câncer de mama.\nDas opções a seguir, assinale a que representa a estratégia de prevenção primária mais eficaz do câncer de mama para essa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar rastreamento anual precoce com ressonância magnética das mamas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar mastectomia bilateral redutora de risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Utilizar tamoxifeno como quimioprevenção, após os 35 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar salpingo-ooforectomia redutora de risco, após completar desejo reprodutivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar mamografia anual, a partir dos 30 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto central desta questão é identificar a diferença entre prevenção primária e secundária, além de reconhecer a estratégia de maior impacto na redução da incidência de câncer de mama em pacientes de alto risco genético (mutação no gene BRCA1).\n\nA prevenção primária visa impedir que a doença ocorra, enquanto a prevenção secundária foca no diagnóstico precoce em indivíduos já doentes ou com lesões precursoras.\n\nAlternativa A - INCORRETA: O rastreamento com ressonância magnética das mamas é uma estratégia de prevenção secundária. Embora seja fundamental para pacientes com mutação BRCA1, seu objetivo é detectar o câncer em estágios iniciais, e não impedir o seu surgimento. Além disso, a questão pede a medida \"mais eficaz\".\n\nAlternativa B - CORRETA: A mastectomia bilateral redutora de risco é a estratégia de prevenção primária mais eficaz disponível para portadoras de mutação patogênica no gene BRCA1. Estudos demonstram que essa cirurgia reduz o risco de desenvolvimento de câncer de mama em pelo menos 90% a 95%. Por eliminar a quase totalidade do tecido glandular sob risco, ela supera qualquer outra intervenção em termos de eficácia absoluta na redução da incidência.\n\nAlternativa C - INCORRETA: O uso de tamoxifeno é considerado uma quimioprevenção (prevenção primária). No entanto, sua eficácia em pacientes BRCA1 é limitada e controversa, pois esse grupo frequentemente desenvolve tumores triplo-negativos (que não expressam receptores de estrogênio), sobre os quais o tamoxifeno não atua. De qualquer forma, mesmo em cânceres responsivos, a eficácia do tamoxifeno é muito inferior à da mastectomia.\n\nAlternativa D - INCORRETA: A salpingo-ooforectomia redutora de risco (SORR) é a principal medida de prevenção primária para o câncer de ovário. Embora a SORR também possa reduzir o risco de câncer de mama (pela redução da exposição hormonal, especialmente se feita antes da menopausa), essa redução é significativamente menor do que a proporcionada pela mastectomia bilateral.\n\nAlternativa E - INCORRETA: Assim como a ressonância magnética, a mamografia é uma ferramenta de prevenção secundária (rastreamento). Em pacientes jovens e com mutações de alto risco, a mamografia isolada é insuficiente devido à alta densidade mamária e à rapidez de crescimento dos tumores nesses casos, sendo sempre associada à ressonância ou substituída por ela. Além disso, não é uma medida que \"evita\" o câncer.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  },
+  {
+    "id": "AJUDA_c6dc6208-8b83-470d-8000-7314b5f80481",
+    "originalId": "c6dc6208-8b83-470d-8000-7314b5f80481",
+    "statement": "Mãe leva sua filha de 2 anos e 10 meses de idade na Unidade Básica de Saúde para consulta de puericultura, pois o Agente Comunitário de Saúde constatou atraso vacinal. Família vive em uma comunidade ribeirinha e não estavam conseguindo vir à cidade por conta da seca severa. As últimas vacinas que ela havia recebido rinha sido com um ano de idade. O médico disse que a criança estava bem e não tinha contraindicação para ser vacinada, sendo orientada a procurar o setor de imunizações com a finalidade de atualização. Qual a melhor conduta para atualizar a caderneta de vacinas da criança, segundo o PNI-MS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicar agora a Tetraviral (S,R,C,V), hepatite A, VOP e DPT.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aplicar agora a Hepatite B, VOP, Tetraviral (S,R,C,V).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicar agora a VOP e DPT, esperar 15-30 dias para administrar Tetraviral (S,R,C,V).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicar agora a hepatite A, PNM10V e Meningo C.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é necessário analisar o calendário vacinal do Programa Nacional de Imunizações (PNI) para uma criança que está com 2 anos e 10 meses e que recebeu as últimas vacinas aos 12 meses (1 ano) de idade.\n\nAs vacinas que compõem o esquema de 15 meses de idade, e que estão em atraso nesta criança, são:\n1. Primeiro reforço da DTP (Difteria, Tétano e Coqueluche).\n2. Primeiro reforço da VOP (Vacina Oral de Pólio).\n3. Hepatite A (dose única).\n4. Tetraviral (Sarampo, Rubéola, Caxumba e Varicela).\n\nAlternativa a: Está correta. Ela contempla exatamente o bloco de vacinas previsto para os 15 meses de idade. Como a criança já passou dessa idade e ainda não atingiu os 4 anos (quando ocorreria o próximo bloco de reforços), essas são as vacinas que devem ser aplicadas agora para atualizar a caderneta.\n\nAlternativa b: Está incorreta. A vacina contra Hepatite B é administrada ao nascimento e como componente da vacina Pentavalente aos 2, 4 e 6 meses de idade. Como a criança estava com o esquema em dia até 1 ano de idade, ela já completou o esquema primário contra Hepatite B, não havendo indicação de dose isolada agora.\n\nAlternativa c: Está incorreta. Não há necessidade técnica de aguardar um intervalo entre a aplicação de vacinas inativadas (como DTP) e vacinas de vírus vivos atenuados (como VOP e Tetraviral). O PNI recomenda a administração simultânea de diversas vacinas no mesmo dia em locais de aplicação diferentes para otimizar a imunização e evitar que a família precise retornar várias vezes à unidade de saúde, o que é fundamental em contextos de difícil acesso como o descrito.\n\nAlternativa d: Está incorreta. Os reforços das vacinas Pneumocócica 10-valente e Meningocócica C são realizados aos 12 meses de idade. O enunciado informa que a criança recebeu as vacinas de 1 ano, portanto, estas doses já foram administradas e não precisam ser repetidas agora.\n\nDessa forma, a conduta correta para atualizar a caderneta de vacinas dessa criança de acordo com o PNI é a aplicação das doses em atraso referentes aos 15 meses, conforme descrito na alternativa A.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:38.709Z"
+  }
+]

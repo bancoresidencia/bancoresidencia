@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_3937be2c-1817-4177-b9c7-124f94c623b5",
+    "originalId": "3937be2c-1817-4177-b9c7-124f94c623b5",
+    "statement": "No eletrocardiograma, o Índice de Morris, definido como o produto da duração da fase negativa da onda P em V1 pela amplitude da mesma onda de pelo menos 40 mseg x mm está relacionado com",
+    "options": [
+      {
+        "id": "A",
+        "text": "a sobrecarga atrial direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a sobrecarga atrial esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o bloqueio atrioventricular do primeiro grau.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o bloqueio sinoatrial do primeiro grau.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Índice de Morris é um dos critérios eletrocardiográficos mais específicos para o diagnóstico de sobrecarga atrial esquerda (SAE). Para compreendê-lo, deve-se observar a onda P na derivação V1. Nesta derivação, a onda P é habitualmente bifásica: a primeira parte (positiva) corresponde à despolarização do átrio direito e a segunda parte (negativa) corresponde à despolarização do átrio esquerdo.\n\nQuando o átrio esquerdo está aumentado, o vetor de despolarização terminal (que se dirige para trás e para a esquerda) torna-se mais potente e duradouro. Isso faz com que a fase negativa da onda P em V1 aumente de tamanho. O Índice de Morris é o produto da largura (duração) pela profundidade (amplitude) dessa fase negativa. O critério é considerado positivo quando esse produto é maior ou igual a 40 ms x mm (ou 0,04 s x mm).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A sobrecarga atrial direita (SAD) manifesta-se no eletrocardiograma principalmente pelo aumento da voltagem da onda P nas derivações inferiores (DII, DIII e aVF), onde a onda P torna-se alta e pontiaguda (maior que 2,5 mm), recebendo o nome de *P pulmonale*. Em V1, a SAD costuma gerar uma fase inicial positiva proeminente, e não uma fase negativa terminal aumentada.\n\nb) Correta. Conforme descrito, o Índice de Morris avalia especificamente a porção final da onda P em V1, que representa o átrio esquerdo. Portanto, sua alteração indica sobrecarga atrial esquerda.\n\nc) Incorreta. O bloqueio atrioventricular (BAV) de primeiro grau caracteriza-se por um retardo na condução do impulso dos átrios para os ventrículos. No ECG, isso é visualizado como um prolongamento fixo do intervalo PR (maior que 200 ms ou 0,20 s), sem relação com a morfologia da onda P ou com o Índice de Morris.\n\nd) Incorreta. O bloqueio sinoatrial (BSA) de primeiro grau ocorre quando há um atraso na saída do impulso do nó sinusal para o átrio. Esse fenômeno não pode ser diagnosticado no eletrocardiograma de superfície convencional de 12 derivações, pois a atividade elétrica do nó sinusal não gera ondas visíveis no traçado; vemos apenas o resultado da despolarização atrial (onda P).\n\nConclusão: O Índice de Morris é um marcador clássico de sobrecarga atrial esquerda.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:07.814Z"
+  },
+  {
+    "id": "AJUDA_39380408-56a0-4d38-a9be-7972ef18d0bf",
+    "originalId": "39380408-56a0-4d38-a9be-7972ef18d0bf",
+    "statement": "Sobre o manejo farmacológico da parada cardiorrespiratória, no contexto do Suporte Avançado de Vida em Cardiologia (SAVC, ACLS), considere as afirmativas a seguir. \n\nI. O uso da epinefrina na PCR aumenta as taxas de retorno da circulação espontânea e da sobrevida global, além de maiores taxas de sobrevida com desfecho neurológico favorável. \nII. Vasopressina isolada ou em associação com epinefrina pode ser considerada no contexto de PCR, mas não oferece vantagem como substituta à epinefrina. \nIII. Em cenário de PCR e ritmo chocável, é razoável administrar epinefrina após tentativas iniciais falhas de desfibrilação. \nIV. Amiodarona ou lidocaína podem ser consideradas em casos de fibrilação ventricular (FV) ou taquicardia ventricular (TV) sem pulso que não respondem a desfibrilação. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Gabarito: Alternativa (e).\n\nAnálise detalhada das afirmativas:\n\nAfirmativa I (Incorreta): Embora o uso da epinefrina (adrenalina) esteja bem estabelecido no protocolo SAVC/ACLS, sua eficácia é debatida em relação ao desfecho neurológico. Estudos robustos, como o ensaio PARAMEDIC2, demonstraram que a epinefrina realmente aumenta as taxas de Retorno à Circulação Espontânea (RCE) e a sobrevida global (alta hospitalar). No entanto, não houve evidência de melhora na sobrevida com desfecho neurológico favorável (Escala de Rankin Modificada). Em muitos casos, o uso da droga aumentou o número de sobreviventes com sequelas neurológicas graves, o que torna a afirmação tecnicamente incorreta segundo as diretrizes atuais da American Heart Association (AHA).\n\nAfirmativa II (Correta): A vasopressina foi retirada do algoritmo oficial de PCR em 2015. As diretrizes atuais da AHA afirmam que a vasopressina, isolada ou combinada com a epinefrina, não oferece vantagem clínica superior ao uso isolado de epinefrina. Portanto, para simplificar o algoritmo, ela não é mais recomendada como substituta, embora historicamente tenha sido considerada.\n\nAfirmativa III (Correta): No ritmo chocável (Fibrilação Ventricular ou Taquicardia Ventricular sem pulso), a prioridade absoluta é a desfibrilação e as compressões de alta qualidade. A epinefrina deve ser administrada apenas após as tentativas iniciais de desfibrilação falharem (geralmente após o segundo choque), conforme o ciclo do protocolo.\n\nAfirmativa IV (Correta): Para ritmos chocáveis que não respondem à desfibrilação e ao vasopressor (FV/TV sem pulso refratários), o uso de antiarrítmicos é indicado. Tanto a amiodarona quanto a lidocaína são opções recomendadas pelas diretrizes de 2020 da AHA para o tratamento dessas arritmias durante a PCR, após o terceiro choque.\n\nConclusão: Como as afirmativas II, III e IV estão corretas e a I está incorreta devido à questão do desfecho neurológico, a alternativa (e) é a resposta correta.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:07.814Z"
+  },
+  {
+    "id": "AJUDA_39382771-acc8-4cf8-9117-89c16c1ff868",
+    "originalId": "39382771-acc8-4cf8-9117-89c16c1ff868",
+    "statement": "Homem de 23 anos de idade, vítima de acidente motociclístico, apresenta síndrome isquêmica traumática relacionada a luxação do joelho esquerdo, ocasionada por trauma vascular. O paciente será submetido a revascularização do membro por ponte, sendo a melhor opção de substituto vascular a",
+    "options": [
+      {
+        "id": "A",
+        "text": "prótese de politetrafluoroetileno (PTFE).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "prótese de Dacron.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "veia safena magna contralateral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "veia safena magna ipsilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O tratamento de lesões arteriais traumáticas, como a que ocorre na luxação do joelho envolvendo a artéria poplítea, exige rapidez e a escolha do melhor conduto para garantir a patência do vaso e a salvaguarda do membro.\n\nAlternativas (a) e (b) Incorretas: As próteses sintéticas, sejam de PTFE (politetrafluoroetileno) ou de Dacron, não são a primeira escolha em traumas de extremidades. Em vasos de calibre médio e pequeno, como os do joelho para baixo, o material sintético apresenta maior risco de trombose (menor patência) em comparação aos enxertos venosos. Além disso, traumas costumam ser cirurgias potencialmente contaminadas, e o uso de material sintético aumenta significativamente o risco de infecção do enxerto, o que pode levar a hemorragias graves ou à necessidade de amputação.\n\nAlternativa (d) Incorreta: Embora a veia safena magna seja o melhor substituto vascular, utilizar a veia do mesmo membro que sofreu o trauma (ipsilateral) é uma escolha inadequada. Em uma luxação de joelho com síndrome isquêmica, o sistema venoso profundo pode estar comprometido ou comprimido pelo edema e pelo trauma local. Retirar a veia safena desse membro lesionado prejudicaria ainda mais o retorno venoso superficial e profundo, aumentando a pressão compartimentar e o risco de edema grave e de síndrome compartimentar no pós-operatório.\n\nAlternativa (c) Correta: A veia safena magna contralateral (da perna sadia) é o padrão-ouro para revascularização no trauma. Por ser um enxerto autólogo (do próprio paciente), oferece a melhor biocompatibilidade, maior resistência a infecções e excelentes taxas de patência. A escolha do lado contralateral é fundamental para não comprometer o já prejudicado retorno venoso do membro traumatizado, garantindo que o fluxo de drenagem seja preservado enquanto a circulação arterial é restaurada.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:07.814Z"
+  },
+  {
+    "id": "AJUDA_394134f8-20ae-4ea8-8aa8-386c69fa6ef1",
+    "originalId": "394134f8-20ae-4ea8-8aa8-386c69fa6ef1",
+    "statement": "Gestante de 28 anos, 32 semanas, apresenta múltiplos condilomas acuminados vulvoperineais por HPV aguardando genotipagem. Não há sangramento, infecção secundária e o exame físico não demonstra obstrução do canal de parto. Segundo o Ministério da Saúde, qual é a melhor conduta quanto à via de parto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Definir a via de parto por critérios obstétricos, pois a cesariana não reduz a transmissão vertical do HPV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Indicar cesariana eletiva para reduzir o risco de transmissão vertical e papilomatose respiratória no recém-nascido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar cesariana devido a presença de condilomas múltiplos, ainda que sem repercussão clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Programar cesariana se o teste de HPV for positivo para tipos de alto risco, mesmo sem lesões obstrutivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a conduta obstétrica diante de uma gestante com condilomas acuminados (verrugas genitais) causados pelo HPV. O ponto central é entender quando a presença dessas lesões altera a via de parto, baseando-se nas diretrizes do Ministério da Saúde e da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO).\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: Segundo o Ministério da Saúde, a via de parto em gestantes com HPV deve ser baseada em critérios puramente obstétricos. A presença de condilomas, por si só, não justifica uma cesariana. Isso ocorre porque a cesariana não previne a transmissão vertical do vírus nem o desenvolvimento da papilomatose respiratória recorrente no recém-nascido, que é uma complicação rara, mas grave. Portanto, se não houver obstrução ou risco de sangramento, o parto vaginal é permitido.\n\nAlternativa (b) Incorreta: Diferente do que ocorre no HIV ou no herpes simples com lesão ativa, a cesariana eletiva no HPV não demonstrou eficácia na redução da transmissão vertical ou na prevenção da papilomatose laríngea no bebê. O vírus pode ser transmitido por via transplacentária ou no período pós-natal.\n\nAlternativa (c) Incorreta: A quantidade de condilomas (\"múltiplos\") não é o critério para a indicação de cesárea. A cirurgia só está indicada se as lesões forem de tal magnitude que causem obstrução mecânica do canal de parto (impedindo a passagem do feto) ou se houver risco de hemorragia intensa devido à friabilidade das lesões durante o desprendimento fetal. O enunciado afirma explicitamente que não há obstrução.\n\nAlternativa (d) Incorreta: A genotipagem do HPV (identificação de tipos de alto ou baixo risco) não influencia a escolha da via de parto. A decisão é clínica e baseada na morfologia e localização das lesões. Tipos de alto risco estão mais ligados à oncogênese cervical, enquanto os tipos 6 e 11 (baixo risco) são os principais responsáveis pelos condilomas e pela papilomatose respiratória, mas nenhum deles exige cesariana profilática.\n\nResumo da conduta: A via de parto é de indicação obstétrica, exceto se houver lesões volumosas que obstruam o canal de parto ou que apresentem risco de sangramento profuso.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Assistência ao Parto",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:07.814Z"
+  },
+  {
+    "id": "AJUDA_394773ca-2a73-49b5-ac84-22cbff20cd7c",
+    "originalId": "394773ca-2a73-49b5-ac84-22cbff20cd7c",
+    "statement": "Homem de 70 anos, antecedentes de hipertensão arterial e tabagismo de longa data (parou há 15 anos). Antecedente de câncer de próstata tratado há 5 anos com cirurgia e radioterapia. Procurou atendimento devido a alterações do hábito intestinal. Refere que há 4 meses iniciou quadro de constipação alternado com evacuações líquidas em grande quantidade, de odor fétido. Refere ainda que são frequentes episódios de empachamento e dor hipogástrica leve. Observa ainda sensação de urgência evacuatória, mas ao ir ao banheiro, frequentemente não apresenta evacuação, mesmo após esforço. No período, observou perda ponderal de 5 kg, mesmo sem alterações do apetite. Nega sangramento nas fezes, mas refere astenia aos esforços e desânimo crescente. Ao exame: abdome doloroso à palpação do hipogástrio, sem sinais de peritonite e toque retal sem presença de sangue ou fezes.\nQual o diagnóstico mais provável desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colite pseudomembranosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença diverticular não complicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença inflamatória intestinal (retocolite ulcerativa).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adenocarcinoma da transição retossigmoideana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Retopatia actínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar o quadro clínico do paciente em conjunto com sua faixa etária e fatores de risco. O paciente tem 70 anos e apresenta sinais de alerta (*red flags*) clássicos para neoplasia colorretal: alteração do hábito intestinal, perda ponderal inexplicada (5 kg) e astenia (que sugere anemia ferropriva por sangramento oculto).\n\nA queixa de constipação alternada com evacuações líquidas é característica do chamado \"falso quadro diarreico\" ou diarreia paradoxal. Isso ocorre quando uma massa tumoral obstrui parcialmente o lúmen intestinal; apenas o conteúdo fecal líquido consegue ultrapassar a barreira, enquanto as fezes sólidas ficam retidas. A sensação de urgência evacuatória sem sucesso (tenesmo) e a dor hipogástrica reforçam a localização da lesão na porção distal do cólon ou na transição retossigmoidiana.\n\nAnálise das alternativas:\n\na) Incorreta. A colite pseudomembranosa é causada pela toxina da bactéria *Clostridioides difficile*, geralmente após o uso prévio de antibióticos. Apresenta-se como um quadro agudo de diarreia profusa, febre e dor abdominal, o que diverge da evolução crônica de 4 meses e do caráter consumptivo deste paciente.\n\nb) Incorreta. A doença diverticular não complicada costuma ser assintomática ou cursar com dor abdominal crônica no flanco esquerdo, mas não justifica a perda de peso significativa, a astenia e a alteração persistente do hábito intestinal com características obstrutivas.\n\nc) Incorreta. A retocolite ulcerativa (RCU) manifesta-se tipicamente com diarreia sanguinolenta, muco e fezes com pus. Embora possa causar tenesmo, o diagnóstico de adenocarcinoma é muito mais provável em um paciente de 70 anos com perda de peso e sem histórico prévio de doença inflamatória.\n\nd) Correta. O adenocarcinoma do cólon esquerdo e da transição retossigmoidiana é a principal hipótese para um idoso com alteração do hábito intestinal e perda ponderal. O tumor tende a ser infiltrativo e estenosante (formato em \"anel de guardanapo\"), explicando a dor tipo cólica, o empachamento e a diarreia paradoxal descritos.\n\ne) Incorreta. A retopatia actínica é uma complicação da radioterapia pélvica (usada no tratamento do câncer de próstata deste paciente). Contudo, suas manifestações principais são a hematoquezia (sangramento retal vivo) e o tenesmo por inflamação da mucosa. Ela não costuma causar perda ponderal de 5 kg nem astenia acentuada, que são marcadores de malignidade.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:07.814Z"
+  },
+  {
+    "id": "AJUDA_394fb45e-bbc3-4009-b6ca-4d65094f08a6",
+    "originalId": "394fb45e-bbc3-4009-b6ca-4d65094f08a6",
+    "statement": "Criança, sexo masculino, 6 anos de idade, portadora de asma não controlada, foi admitida na unidade de emergência em insuficiência respiratória devido à exacerbação asmática. O paciente recebeu corticosteroide sistêmico, salbutamol inalatório a cada 20 minutos por três vezes e sulfato de magnésio. Teve melhora, apenas discreta, e agora está recebendo β2-agonista endovenoso contínuo. Na evolução, o monitor do paciente começou a sinalizar alteração dos sinais vitais. As imagens a seguir apresentam os dados de monitorização dos últimos cinco minutos (prévio) e o do momento atual.\n\nPrévio: (primeira foto)\nAtual: (segunda foto)\n\nAssinale a alternativa que ilustra, corretamente, o procedimento de urgência a ser realizado no paciente descrito.",
+    "options": [],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico e monitorização:\n\nO paciente de 6 anos com crise asmática grave em uso de beta-2-agonista endovenoso apresentou deterioração clínica aguda demonstrada no monitor:\n- Frequência cardíaca: subiu de 144 bpm para 198 bpm, com ritmo regular e QRS estreito sem ondas P nítidas, compatível com Taquicardia Supraventricular (TSV). Para crianças maiores de 1 ano, frequências iguais ou superiores a 180 bpm sugerem fortemente TSV.\n- Pressão arterial: caiu de 88/49 mmHg para 77/38 mmHg, configurando hipotensão para a faixa etária (limite inferior da normalidade: 70 + duas vezes a idade em anos = 82 mmHg).\n- Oximetria de pulso: perda da curva de pletismografia e leitura indeterminada (interrogação), traduzindo má perfusão periférica grave.\n\nO quadro define uma Taquicardia Supraventricular Instável (com sinais de choque/hipotensão). Segundo as diretrizes do PALS (Suporte Avançado de Vida em Pediatria), a conduta imediata para taquiarritmias com instabilidade hemodinâmica e pulso presente é a Cardioversão Elétrica Sincronizada (dose inicial de 0,5 a 1 J/kg).\n\nAnálise das alternativas:\n\n- Alternativa (a) Incorreta: A imagem mostra a realização de manobra vagal com uso de seringa (técnica de sopro para aumento da pressão intratorácica). As manobras vagais são reservadas exclusivamente para pacientes com TSV hemodinamicamente estáveis, não devendo atrasar a intervenção elétrica no paciente instável.\n\n- Alternativa (b) Incorreta: A imagem ilustra a laringoscopia para intubação orotraqueal. Apesar de o paciente ter histórico de crise asmática, a descompensação aguda atual decorre do colapso hemodinâmico secundário à taquiarritmia. A prioridade imediata é restabelecer o débito cardíaco revertendo a arritmia; a intubação sem estabilização elétrica prévia pode agravar criticamente a hipotensão.\n\n- Alternativa (c) Incorreta: A imagem demonstra a punção torácica com agulha (toracocentese de alívio para pneumotórax hipertensivo). Embora seja uma complicação descrita na asma, o monitor mostra uma taquiarritmia paroxística primária com ritmo regular rápido em QRS estreito, associada ao uso de droga pró-arrítmica (beta-2-agonista), e não um quadro de choque obstrutivo isolado por pneumotórax.\n\n- Alternativa (d) Correta: A imagem ilustra o posicionamento das pás do desfibrilador/cardioversor no tórax da criança para a realização de Cardioversão Elétrica Sincronizada. É a conduta mandatória e prioritária de urgência para reverter a taquiarritmia instável e restaurar a perfusão tecidual.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Taquiarritmias",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5221e398169eaebb2ac65a40d26e5d86e46e8d202a74e0f0ba5d3aa6729c89a2.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_394fb45e-bbc3-4009-b6ca-4d65094f08a6_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/2966e4f414fab709c97c46ab237acdb5bb4ad2349f007ade2f5ce1059050c992.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_394fb45e-bbc3-4009-b6ca-4d65094f08a6_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:08.645Z"
+  },
+  {
+    "id": "AJUDA_395d1a1d-05c6-4f24-abde-e612b2e554e4",
+    "originalId": "395d1a1d-05c6-4f24-abde-e612b2e554e4",
+    "statement": "Homem, 68 anos, apresenta dor súbita e intensa em membro inferior direito. Ao exame, o membro encontra-se pálido, frio, com ausência de pulsos distais. Paciente com Hipertensão Arterial Sistêmica (HAS), em uso de enalapril e beta bloqueador para fibrilação atrial. Sobre o caso apresentado, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de quadro de obstrução arterial crônica, com indicação de revascularização na ausência de resposta ao tratamento clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de aterosclerose com formação de placas estáveis, a principal causa de obstrução arterial aguda em pacientes idosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O exame inicial de escolha deve ser sempre o Doppler venoso, para avaliar trombose venosa profunda como diagnóstico diferencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A anticoagulação deve ser iniciada de forma imediata antes da confirmação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O tratamento cirúrgico deve sempre ser trombólise intra-arterial, independentemente do tempo de evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise Clínica do Caso:\n\nO paciente apresenta um quadro clássico de Isquemia Arterial Aguda (IAA) de membro inferior direito, caracterizado pelos 5 ou 6 Ps: Pain (dor), Pallor (palidez), Pulselessness (ausência de pulso), Paresthesia (parestesia), Paralysis (paralisia) e Poikilothermia (resfriamento). A instalação súbita e a presença de Fibrilação Atrial (FA) sugerem fortemente uma etiologia embólica: um trombo se formou no átrio esquerdo e embolizou para a circulação periférica, obstruindo o fluxo sanguíneo subitamente.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. O quadro é agudo (instalação súbita), e não crônico. A doença arterial obstrutiva crônica apresenta-se tipicamente com claudicação intermitente, dor em repouso de longa data e alterações tróficas de instalação lenta, o que difere totalmente do caso descrito.\n\nAlternativa b) Incorreta. Placas estáveis de aterosclerose causam estreitamento progressivo da artéria (quadro crônico). A obstrução arterial aguda ocorre ou por embolia (como no caso da FA deste paciente) ou por trombose sobre uma placa preexistente que se tornou instável. Em pacientes com FA e sem histórico de claudicação prévia, a embolia é a causa mais provável.\n\nAlternativa c) Incorreta. O quadro clínico é nitidamente arterial (membro pálido, frio e sem pulsos). O Doppler venoso avalia o sistema venoso e seria útil na suspeita de Trombose Venosa Profunda (TVP), que se manifesta com edema, calor e cianose, e não com ausência de pulsos e palidez. O diagnóstico diferencial pode ser feito clinicamente.\n\nAlternativa d) Correta. Diante da suspeita clínica de Isquemia Arterial Aguda, a conduta inicial imediata é a anticoagulação plena, geralmente com heparina não fracionada endovenosa. Isso serve para evitar a propagação do trombo (crescimento do coágulo para ramos distais e proximais) e proteger a microcirculação enquanto se planeja a intervenção definitiva (cirurgia ou trombólise). A anticoagulação não deve aguardar exames de imagem se a suspeita for alta.\n\nAlternativa e) Incorreta. A trombólise intra-arterial é uma das opções terapêuticas, mas não é a regra para todos os casos. Ela é geralmente reservada para quadros de isquemia menos graves (Rutherford I ou IIa) e com tempo de evolução mais longo ou em oclusões de enxertos. Em casos de embolia com isquemia grave e ameaça imediata ao membro, a embolectomia cirúrgica com cateter de Fogarty costuma ser a escolha mais rápida e eficaz. Além disso, o tempo de evolução é determinante para a escolha da conduta.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:08.645Z"
+  },
+  {
+    "id": "AJUDA_396d3336-3aa8-4c3c-acbe-c71b4f116426",
+    "originalId": "396d3336-3aa8-4c3c-acbe-c71b4f116426",
+    "statement": "Paciente do sexo masculino, de 63 anos é submetido a ressecção de tumor cerebral e, no segundo dia pós-operatório, apresenta letargia, confusão mental e convulsões. Os exames laboratoriais revelam sódio sérico de 118mEq/L, osmolaridade plasmática de 240mOsm/kg, potássio sérico de 4,3mEq/L e osmolaridade urinária de 450mOsm/kg. O balanço hídrico é positivo. Qual é a causa MAIS PROVÁVEL da hiponatremia deste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiponatremia dilucional por administração excessiva de soro glicosado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Insuficiência adrenal aguda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de perda cerebral de sal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome da secreção inapropriada de hormônio antidiurético",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente com hiponatremia grave (sódio de 118 mEq/L) e hipotônica (osmolaridade plasmática de 240 mOsm/kg) no período pós-operatório de neurocirurgia. Para o diagnóstico diferencial das hiponatremias, devemos avaliar a osmolaridade urinária e o estado volêmico (balanço hídrico).\n\nA osmolaridade urinária de 450 mOsm/kg indica que a urina está inadequadamente concentrada. Em um cenário de plasma diluído, o esperado seria o rim excretar urina maximamente diluída (geralmente abaixo de 100 mOsm/kg) para eliminar o excesso de água livre. A urina concentrada comprova que o hormônio antidiurético (ADH) está agindo de forma inapropriada.\n\nAlternativa a) Incorreta. A administração excessiva de soro glicosado 5% (que se comporta como água livre após o metabolismo da glicose) causa hiponatremia por diluição. No entanto, em um indivíduo com função renal e hormonal normal, o corpo responderia suprimindo o ADH e produzindo uma urina muito diluída para compensar o excesso de fluido. A osmolaridade urinária elevada (450 mOsm/kg) invalida essa hipótese como causa isolada.\n\nAlternativa b) Incorreta. A insuficiência adrenal aguda (crise addisoniana) pode causar hiponatremia, mas tipicamente está associada à hipercalemia (potássio elevado), devido à deficiência de aldosterona, e à hipotensão arterial severa por hipovolemia. O paciente apresenta potássio normal (4,3 mEq/L) e balanço hídrico positivo.\n\nAlternativa c) Incorreta. A Síndrome de Perda Cerebral de Sal (CSW) é o principal diagnóstico diferencial da SIADH em pacientes com lesões intracranianas. Ambas cursam com hiponatremia e urina concentrada. A diferença fundamental reside na volemia: na CSW, há uma perda primária de sódio pelos rins, levando à desidratação e ao balanço hídrico negativo (hipovolemia). Como o enunciado afirma que o paciente tem balanço hídrico positivo, essa opção é descartada.\n\nAlternativa d) Correta. A Síndrome da Secreção Inapropriada de Hormônio Antidiurético (SIADH) é frequentemente desencadeada por tumores, cirurgias ou traumas no Sistema Nervoso Central. Os critérios diagnósticos presentes no caso são: hiponatremia hipotônica, osmolaridade urinária superior a 100 mOsm/kg, ausência de disfunção renal, adrenal ou tireoidiana, e estado de euvolemia ou leve hipervolemia (caracterizada pelo balanço hídrico positivo). O excesso de ADH retém água livre, diluindo o sódio sérico e concentrando a urina.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:08.645Z"
+  },
+  {
+    "id": "AJUDA_396f8d93-45b6-4778-8c83-d791be005fac",
+    "originalId": "396f8d93-45b6-4778-8c83-d791be005fac",
+    "statement": "Considerando que a puberdade marca a transição entre a infância e a maturidade sexual, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A principal causa de puberdade precoce é idiopática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A pubarca é o primeiro evento de uma puberdade normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A puberdade é considerada tardia quando a menarca não ocorre até os 13 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A puberdade é considerada precoce quando o desenvolvimento dos caracteres sexuais secundários ocorre antes dos 10 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A idade óssea maior que 3 desvios-padrão é considerada aceitável, numa puberdade cronológica normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a) Correta. A puberdade precoce de origem central (dependente de GnRH) é a forma mais comum de desenvolvimento sexual antecipado. Na grande maioria dos casos, especialmente no sexo feminino (cerca de 80% a 90%), não se encontra uma causa orgânica subjacente, sendo classificada como idiopática. Nos meninos, embora as causas orgânicas sejam mais frequentes do que nas meninas, a etiologia idiopática ainda possui relevância epidemiológica no contexto geral das puberdades precoces.\n\nAlternativa b) Incorreta. O primeiro evento clínico da puberdade normal no sexo feminino é a telarca (surgimento do broto mamário), que geralmente ocorre entre os 8 e 13 anos. No sexo masculino, o primeiro sinal é o aumento do volume testicular (igual ou superior a 4 ml). A pubarca (surgimento de pelos pubianos) costuma ser um evento subsequente, dependente da adrenarca.\n\nAlternativa c) Incorreta. A puberdade é considerada tardia quando há ausência dos sinais iniciais de desenvolvimento sexual nos limites cronológicos superiores. Para meninas, define-se pela ausência de telarca aos 13 anos. Para meninos, pela ausência de aumento testicular aos 14 anos. A menarca é um evento tardio da puberdade, ocorrendo em média 2 anos após a telarca. A ausência de menarca isoladamente é classificada como amenorreia primária (se não ocorrer até os 15 anos com caracteres presentes ou até os 13 anos sem caracteres).\n\nAlternativa d) Incorreta. Por convenção clássica, a puberdade é considerada precoce quando os caracteres sexuais secundários surgem antes dos 8 anos de idade nas meninas e antes dos 9 anos de idade nos meninos. O limite de 10 anos mencionado na alternativa está acima dos marcos estabelecidos pela literatura pediátrica e endocrinológica.\n\nAlternativa e) Incorreta. Em uma puberdade cronológica normal, a idade óssea deve estar compatível com a idade cronológica. Um desvio da idade óssea superior a 2 desvios-padrão (ou geralmente um avanço maior que 1 ano em relação à idade cronológica) é um sinal de alerta para exposição hormonal excessiva ou precoce. Esse avanço excessivo pode levar ao fechamento prematuro das epífises ósseas e comprometer a estatura final do indivíduo.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:08.645Z"
+  },
+  {
+    "id": "AJUDA_3971a536-4dcc-4769-8842-a76700d2bd28",
+    "originalId": "3971a536-4dcc-4769-8842-a76700d2bd28",
+    "statement": "Homem de 72 anos de idade apresenta febre alta, redução do nível de consciência e rigidez muscular há seis horas. AP: uso de haloperidol, sertralina, dipirona e metoclopramida. Exame físico: escala de coma de Glasgow: 12; PA: 160 x 80 mmHg; FC: 120 bpm; FR: 24 irpm; SatO2: 97% em ar ambiente; temperatura axilar: 40 ºC; rigidez muscular em membros superiores; reflexo patelar reduzido bilateralmente. Assinale a alternativa correta sobre o quadro descrito.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sua principal causa é o uso de sertralina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O bloqueio de receptores dopaminérgicos D2 está relacionado à sua patogênese.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A principal hipótese é síndrome de abstinência ao uso de cocaína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O valor de CPK está frequentemente reduzido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Benzodiazepínicos estão contraindicados no tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta a tétrade clássica da Síndrome Neuroléptica Maligna (SNM): hipertermia (40 ºC), rigidez muscular, alteração do nível de consciência (Glasgow 12) e instabilidade autonômica (taquicardia, hipertensão e taquipneia). O quadro foi desencadeado pelo uso de antagonistas dopaminérgicos (haloperidol e metoclopramida). O achado de reflexos patelares reduzidos (hiporreflexia) é fundamental para diferenciar a SNM da Síndrome Serotoninérgica, que classicamente se manifesta com hiperreflexia e clônus.\n\nAnálise das Alternativas:\n\nAlternativa A - Incorreta. A sertralina é um inibidor seletivo da recaptação de serotonina associado à Síndrome Serotoninérgica. Os principais responsáveis pelo quadro de SNM descrito são os bloqueadores de receptores de dopamina, no caso, o haloperidol e a metoclopramida.\n\nAlternativa B - Correta. A patogênese da Síndrome Neuroléptica Maligna baseia-se no bloqueio agudo e intenso dos receptores dopaminérgicos D2 no sistema nervoso central. O bloqueio no hipotálamo desregula o centro termorregulador e causa a hipertermia e disautonomia, enquanto o bloqueio na via nigroestriatal gera a rigidez muscular grave.\n\nAlternativa C - Incorreta. A síndrome de abstinência de cocaína é marcada por sintomas como fadiga extrema, sonolência, aumento do apetite e disforia (\"crash\"), não cursando com rigidez muscular em cano de chumbo, disautonomia grave ou febre alta.\n\nAlternativa D - Incorreta. Devido à intensa e sustentada contração muscular associada à rabdomiólise, os níveis séricos de creatinofosfoquinase (CPK) apresentam-se marcadamente elevados (frequentemente acima de 1.000 U/L), sendo um importante marcador laboratorial de gravidade.\n\nAlternativa E - Incorreta. Os benzodiazepínicos não estão contraindicados; ao contrário, constituem uma das medidas farmacológicas de primeira linha no suporte inicial para controle da agitação psicomotora, relaxamento muscular e atenuação da hiperatividade autonômica.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos Psicóticos",
+      "Distúrbios do Movimento",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:08.645Z"
+  }
+]

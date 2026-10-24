@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_cb71958e-bfe6-411f-970b-893a90a300c4",
+    "originalId": "cb71958e-bfe6-411f-970b-893a90a300c4",
+    "statement": "Homem, 78 anos, ensino médio completo, hipertenso e diabético, em uso de Losartana 50mg, 12/12h, Anlodipino 5mg, uma vez ao dia, e Metformina 850 mg, duas vezes ao dia. Paciente é independente para atividades básicas e instrumentais de vida diária. Filha traz paciente à consulta com geriatra, referindo que o pai está com perda de memória recente, às vezes fazendo mais de uma vez a mesma pergunta e esquecendo a panela no fogão aceso. O geriatra aplicou o Mini Exame do Estado Mental (MEEM), com pontuação de 16/30. Qual deve ser a próxima conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comunicar diagnóstico de Demência de Alzheimer e iniciar Inibidor de Acetilcolinesterase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Investigar Depressão com a Escala de Depressão Geriátrica (GDS).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar TSH, T4 livre, Vitamina B12, VDRL e Tomografia Computadorizada de Crânio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Orientar a filha de que se trata de alteração relacionada à idade e não deve se preocupar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um idoso de 78 anos, previamente independente, com queixas de perda de memória recente e prejuízo funcional (esquecer a panela no fogo), além de um escore de 16/30 no Mini-Exame do Estado Mental (MEEM). Para um paciente com ensino médio completo, essa pontuação está significativamente abaixo do ponto de corte esperado, caracterizando uma síndrome demencial que exige investigação.\n\nAlternativa (a) Incorreta: O diagnóstico de doença de Alzheimer é clínico e, fundamentalmente, de exclusão. Não se deve comunicar esse diagnóstico nem iniciar tratamento farmacológico com inibidores da acetilcolinesterase sem antes completar a propedêutica básica. É necessário descartar causas secundárias que podem mimetizar ou agravar o quadro cognitivo.\n\nAlternativa (b) Incorreta: A depressão no idoso pode se manifestar com déficits cognitivos, quadro conhecido como pseudodemência. Embora a aplicação da Escala de Depressão Geriátrica (GDS) possa fazer parte da avaliação global, ela não deve ser a única conduta. O protocolo diagnóstico para demência exige, obrigatoriamente, exames laboratoriais e de imagem.\n\nAlternativa (c) Correta: Esta é a conduta padrão estabelecida por diretrizes nacionais e internacionais. Diante de um paciente com declínio cognitivo e funcional, o médico deve buscar causas potencialmente reversíveis ou tratáveis. O TSH e o T4 livre rastreiam hipotireoidismo; a dosagem de vitamina B12 é essencial (especialmente em usuários crônicos de metformina, que pode causar má absorção dessa vitamina); o VDRL rastreia neurossífilis; e a tomografia de crânio é necessária para excluir causas estruturais, como tumores, hematoma subdural crônico ou hidrocefalia de pressão normal, além de avaliar padrões de atrofia.\n\nAlternativa (d) Incorreta: Esquecimentos que geram risco (como deixar o fogo aceso) e uma pontuação de 16 no MEEM para um paciente escolarizado não são alterações fisiológicas do envelhecimento (senescência). Trata-se de um quadro patológico (senilidade) que requer investigação imediata para definir a etiologia e o manejo adequado.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Demências"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  },
+  {
+    "id": "AJUDA_cb78e4e5-5741-4f04-9963-252f23b0381e",
+    "originalId": "cb78e4e5-5741-4f04-9963-252f23b0381e",
+    "statement": "Lactante de 3 semanas pós-parto apresenta mama direita hiperemiada, dolorosa e endurecida, com febre de 38,5°C e mal-estar. A conduta terapêutica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter a amamentação e iniciar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Suspender a amamentação na mama afetada e iniciar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar drenagem cirúrgica imediata da área endurecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas aplicar compressas frias e analgésicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda o quadro clássico de mastite puerperal, uma complicação comum que ocorre geralmente nas primeiras semanas de amamentação. O diagnóstico é clínico, caracterizado por sinais flogísticos localizados (dor, hiperemia e endurecimento) associados a sintomas sistêmicos (febre e mal-estar).\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: O tratamento da mastite puerperal baseia-se em dois pilares fundamentais: o esvaziamento mamário eficaz e a antibioticoterapia. Manter a amamentação é essencial porque a estase láctea é o principal fator de manutenção e piora do quadro infeccioso. O esvaziamento da mama, seja pela sucção do bebê ou por ordenha, auxilia na resolução do processo inflamatório. O antibiótico é indicado devido à presença de sintomas sistêmicos (febre) e deve cobrir preferencialmente o Staphylococcus aureus (como a cefalexina).\n\nAlternativa (b) Incorreta: A suspensão da amamentação na mama afetada é um erro de conduta. Interromper o fluxo de leite aumenta a congestão mamária, o que agrava a dor e predispõe a evolução da mastite para um abscesso mamário. O leite de uma mama com mastite não é prejudicial ao recém-nascido saudável.\n\nAlternativa (c) Incorreta: A drenagem cirúrgica está indicada apenas nos casos de abscesso mamário, que é a coleção purulenta flutuante. Na questão, a mama é descrita como endurecida, o que sugere um processo infeccioso difuso (celulite mamária) e não uma coleção purulenta organizada que exija drenagem imediata.\n\nAlternativa (d) Incorreta: Embora as medidas de suporte (analgésicos e compressas) auxiliem no conforto da paciente, elas são insuficientes de forma isolada para tratar uma mastite com repercussão sistêmica (febre de 38,5 °C). Sem o esvaziamento adequado e o uso de antibióticos, o risco de complicações e sepse aumenta significativamente.\n\nResumo do manejo:\n1. Esvaziamento mamário (amamentação ou ordenha).\n2. Antibioticoterapia (cefalosporinas de 1ª geração ou penicilinas resistentes à penicilinase).\n3. Analgesia e antitérmicos.\n4. Suporte emocional e correção da técnica de amamentação para evitar recidivas (fissuras como porta de entrada).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Aleitamento Materno",
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  },
+  {
+    "id": "AJUDA_cb79d182-d51f-4e15-9634-57167107b089",
+    "originalId": "cb79d182-d51f-4e15-9634-57167107b089",
+    "statement": "Um médico de Saúde da Família, ao consultar a Carteira de Serviços da Atenção Primária à Saúde proposta pelo Ministério da Saúde em 2019, deve se atentar para procedimentos inadequados a esse nível de atenção, segundo essa Carteira. Qual é um deles?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Biópsia/punção de tumores superficiais de pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cirurgia de unha (cantoplastia).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tratamento/cuidado do grande queimado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Remoção manual de fecaloma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Carteira de Serviços da Atenção Primária à Saúde (CaSAPS), publicada pelo Ministério da Saúde em 2019, é um documento que define as ações e procedimentos esperados neste nível de atenção, visando padronizar o cuidado e aumentar a resolutividade das Unidades Básicas de Saúde. Para responder à questão, deve-se identificar qual das opções descreve um atendimento que, pela sua complexidade e necessidade de recursos, não faz parte do escopo da Atenção Primária.\n\nAlternativa a) Incorreta. A biópsia de pele e a punção de tumores superficiais (como lipomas ou cistos sebáceos) são procedimentos ambulatoriais de pequeno porte expressamente listados na CaSAPS 2019. O médico de família deve ser capaz de realizar esses atos para fins diagnósticos ou terapêuticos, evitando encaminhamentos desnecessários para a Atenção Secundária.\n\nAlternativa b) Incorreta. A cirurgia de unha, como a cantoplastia (correção de onicocriptose ou unha encravada), é um procedimento cirúrgico básico e comum na rotina da Atenção Primária. Ela consta na lista de procedimentos da Carteira de Serviços como uma competência clínica esperada das equipes de Saúde da Família.\n\nAlternativa c) Correta. O tratamento do \"grande queimado\" envolve pacientes com extensas áreas do corpo atingidas, risco de choque hipovolêmico, distúrbios metabólicos graves e necessidade de desbridamentos complexos ou suporte de terapia intensiva. Devido à alta complexidade e necessidade de vigilância contínua, esses pacientes devem ser manejados em Centros de Tratamento de Queimados ou hospitais de alta complexidade. A Atenção Primária tem papel apenas no manejo de queimaduras pequenas, superficiais e de baixa gravidade. Por ser um procedimento inadequado para o nível primário segundo a Carteira de Serviços, esta é a alternativa a ser assinalada.\n\nAlternativa d) Incorreta. A remoção manual de fecaloma é uma intervenção clínica de baixa complexidade tecnológica, mas essencial para o alívio imediato do paciente em quadros de constipação severa. Este procedimento é perfeitamente compatível com a estrutura e a competência técnica das equipes que atuam na Atenção Primária à Saúde.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  },
+  {
+    "id": "AJUDA_cb7ad4c3-9e36-4a56-99f0-b574e6325ced",
+    "originalId": "cb7ad4c3-9e36-4a56-99f0-b574e6325ced",
+    "statement": "Paciente, após gestação e parto complicados, está em acompanhamento com endocrinologista com diagnóstico de síndrome de Sheehan. \nA complicação obstétrica que mais provavelmente ocorreu nesse caso foi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "diabetes gestacional em uso de insulina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "descolamento prematuro da placenta;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "rotura prematura de membranas ovulares;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "gestação gemelar monocoriônica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "restrição de crescimento intrauterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Síndrome de Sheehan é definida pelo hipopituitarismo decorrente da necrose isquêmica da glândula hipófise. Durante a gestação, a hipófise sofre uma hiperplasia das células lactotróficas, aumentando significativamente de tamanho e tornando-se extremamente vascularizada e metabolicamente ativa. Esse estado a torna muito vulnerável a episódios de hipotensão severa e choque hipovolêmico.\n\nO gatilho clássico para essa síndrome é uma hemorragia obstétrica grave e maciça durante o parto ou no pós-parto imediato. Entre as alternativas apresentadas, devemos buscar aquela que mais comumente evolui com perda sanguínea aguda e importante.\n\nAlternativa (a) Incorreta: O diabetes gestacional, mesmo em uso de insulina, está associado a complicações como macrossomia fetal, polidrâmnio e pré-eclâmpsia. Embora aumente o risco de atonia uterina pela sobredistensão do útero, não é a causa direta da necrose hipofisária.\n\nAlternativa (b) Correta: O descolamento prematuro da placenta (DPP) é uma das principais causas de hemorragia grave na segunda metade da gestação. Ele frequentemente cursa com sangramento volumoso (visível ou oculto), choque hipovolêmico e distúrbios de coagulação. Essa instabilidade hemodinâmica acentuada é o fator fisiopatológico necessário para causar a isquemia e a subsequente necrose da hipófise, levando à Síndrome de Sheehan.\n\nAlternativa (c) Incorreta: A rotura prematura de membranas ovulares (amniorrexe prematura) está relacionada principalmente ao risco de infecção (corioamnionite) e prematuridade, não sendo uma causa direta de hemorragia vultosa ou choque.\n\nAlternativa (d) Incorreta: A gestação gemelar monocoriônica aumenta o risco de síndrome de transfusão feto-fetal e outras complicações vasculares entre os fetos. Embora a gemelaridade aumente o risco de hemorragia pós-parto por atonia uterina, a alternativa (b) representa um evento agudo classicamente associado a perdas sanguíneas catastróficas.\n\nAlternativa (e) Incorreta: A restrição de crescimento intrauterino (RCIU) é uma complicação decorrente de insuficiência placentária crônica, afetando a nutrição e oxigenação fetal, mas não possui relação direta com episódios de choque hemorrágico materno no periparto.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto",
+      "Hipófise"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  },
+  {
+    "id": "AJUDA_cb7b3c5e-38e9-4b53-a01d-ec50a28c05af",
+    "originalId": "cb7b3c5e-38e9-4b53-a01d-ec50a28c05af",
+    "statement": "Paciente de 72 anos, comparece à Unidade de Pronto Atendimento com quadro de tosse produtiva há 01 semana. Familiares referem que hoje o paciente encontra-se mais sonolento e não reconheceu pessoas de seu convívio diário. Possui como comorbidades hipertensão e diabetes tipo 2.\n\nAo exame: Paciente em regular estado geral, consciente e algo desorientado, hipocorado 1+/4, anictérico, acianótico, febril ao toque, taquipneico ao repouso em ar ambiente.\nAusculta cardíaca: bulhas cardíacas normofonéticas, ritmo regular em 2 tempos sem sopros.\nAusculta pulmonar: murmúrio presente bilateralmente com estertores crepitantes em terço médio de hemitórax direito.\nAbdome: plano, flácido, sem visceromegalias, indolor à palpação superficial e profunda.\nSinais vitais: FC 87 bpm; FR 31 ipm; PA 120x90 mmHg e Sat: 94% em ar ambiente.\nExames laboratoriais: HB 12, HT 40%, leucócitos 11.050 seg 80%, ureia 20, cr 0,5.\n\nSobre o caso, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O paciente pode receber tratamento ambulatorial com quinolona respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefalosporina de 4ª geração deve ser a primeira escolha no tratamento hospitalar deste paciente, devido a ser idoso com comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em pacientes internados que evoluem com pneumonia hospitalar, faz-se uso de cultura de escarro para confirmação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O quadro clínico trata-se de uma pneumonia comunitária, com critério de hospitalização devido a pontuação no escore de risco CURB-65, com tratamento em leito de enfermaria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O quadro clínico trata-se de uma pneumonia comunitária, com critério de hospitalização devido a pontuação no escore de risco CURB-65, com tratamento em leito de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro clássico de pneumonia adquirida na comunidade (PAC), caracterizado por sintomas respiratórios (tosse produtiva), febre e sinais focais na ausculta pulmonar (estertores crepitantes). Para definir a conduta (tratamento ambulatorial, enfermaria ou UTI), utilizamos o escore de gravidade CURB-65. Vamos calculá-lo para este paciente:\n\nC (Confusão mental): Presente (paciente sonolento e desorientado). +1 ponto.\nU (Ureia > 43 ou 50 mg/dL): Ausente (ureia do paciente é 20 mg/dL). 0 pontos.\nR (Frequência respiratória >= 30 ipm): Presente (paciente tem 31 ipm). +1 ponto.\nB (Pressão arterial: sistólica < 90 ou diastólica <= 60 mmHg): Ausente (paciente tem 120/90 mmHg). 0 pontos.\n65 (Idade >= 65 anos): Presente (paciente tem 72 anos). +1 ponto.\n\nTotal: 3 pontos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Pelo escore CURB-65, pacientes com pontuação 0 ou 1 podem ser tratados ambulatorialmente. Com uma pontuação de 3, o risco de mortalidade é moderado a alto (cerca de 14%), o que exige obrigatoriamente a internação hospitalar.\n\nAlternativa b) Incorreta. As cefalosporinas de 4ª geração (como a cefepima) possuem espectro voltado para *Pseudomonas aeruginosa* e são reservadas para infecções hospitalares ou pacientes com fatores de risco específicos para germes multirresistentes. Para PAC em idosos com comorbidades na enfermaria, a recomendação costuma ser uma associação de beta-lactâmico com macrolídeo ou o uso de quinolona respiratória isolada.\n\nAlternativa c) Incorreta. O diagnóstico de pneumonia é clínico-radiológico. A cultura de escarro pode auxiliar na identificação do agente etiológico para guiar a antibioticoterapia (descalonamento), mas não é o método de \"confirmação diagnóstica\" da doença em si. Além disso, o caso descreve uma pneumonia comunitária, e não hospitalar.\n\nAlternativa d) Correta. O diagnóstico é de pneumonia comunitária. O escore CURB-65 totalizou 3 pontos (confusão mental + frequência respiratória + idade), o que indica a necessidade de hospitalização. Como o paciente não apresenta critérios de gravidade imediata para UTI (como necessidade de ventilação mecânica ou choque séptico), o manejo inicial em leito de enfermaria está correto.\n\nAlternativa e) Incorreta. Embora o escore 3 indique hospitalização, a indicação de UTI é geralmente reservada para pacientes com CURB-65 de 4 ou 5, ou que preencham os critérios da ATS/IDSA (1 critério maior ou 3 menores). O paciente em questão não preenche critérios maiores e, dentre os menores, apresenta apenas a taquipneia e a confusão mental (insuficiente para definir obrigatoriedade de UTI de imediato sem outros sinais de instabilidade).",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  },
+  {
+    "id": "AJUDA_cb815b4b-3aad-4c39-9426-a3a473b10d18",
+    "originalId": "cb815b4b-3aad-4c39-9426-a3a473b10d18",
+    "statement": "Em casos de hipertensão arterial de difícil controle em pacientes jovens, e em casos de investigação de hipertensão arterial secundária, deve-se descartar o hiperaldosteronismo primário. Segundo o último guideline de aldosteronismo primário publicado pela Endocrine Society em 2025, quais exames laboratoriais são recomendados como screening do hiperaldosteronismo primário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aldosterona e cortisol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aldosterona e renina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Renina e potássio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aldosterona e potássio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O hiperaldosteronismo primário (HAP) é uma das principais causas de hipertensão arterial secundária, sendo caracterizado pela produção excessiva e autônoma de aldosterona pelo córtex adrenal. Essa condição leva à supressão da atividade da renina, retenção de sódio e, frequentemente, excreção excessiva de potássio.\n\nPara o rastreio (screening) inicial em pacientes com suspeita clínica (como hipertensão de difícil controle, jovens ou com hipocalemia), as diretrizes da Endocrine Society recomendam a mensuração simultânea de dois componentes fundamentais para o cálculo da Relação Aldosterona/Renina (RAR).\n\nAnálise das alternativas:\n\na) Aldosterona e cortisol: Incorreta. A dosagem de cortisol é utilizada para o rastreio da Síndrome de Cushing. Embora existam raros tumores adrenais que secretam ambos os hormônios, o cortisol não faz parte do protocolo padrão de rastreio para o hiperaldosteronismo primário.\n\nb) Aldosterona e renina: Correta. Este é o padrão-ouro para o rastreio. A avaliação conjunta da Concentração Plasmática de Aldosterona (CPA) e da Atividade de Renina Plasmática (ARP) ou Concentração Plasmática de Renina (CPR) permite calcular a Relação Aldosterona/Renina (RAR). No HAP, o achado clássico é a aldosterona elevada (ou inadequadamente normal) acompanhada de uma renina suprimida.\n\nc) Renina e potássio: Incorreta. Embora a renina esteja suprimida no HAP, o potássio não é um marcador sensível o suficiente para o rastreio. Estudos mostram que uma parcela significativa dos pacientes com hiperaldosteronismo primário apresenta níveis normais de potássio (normocalêmicos). Portanto, o potássio é um dado clínico importante, mas não define o rastreio.\n\nd) Aldosterona e potássio: Incorreta. A dosagem isolada da aldosterona, sem a correlação com os níveis de renina, não permite diferenciar o hiperaldosteronismo primário do secundário. Além disso, conforme mencionado, o potássio normal não descarta a doença, não devendo ser usado como exame de screening principal.\n\nEm resumo, para o rastreio de hiperaldosteronismo primário, o médico deve solicitar a aldosterona plasmática e a renina (atividade ou concentração) para o cálculo da relação entre elas (RAR).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  },
+  {
+    "id": "AJUDA_cba59f8b-4208-4cf5-a45c-eab502238104",
+    "originalId": "cba59f8b-4208-4cf5-a45c-eab502238104",
+    "statement": "Mulher, 37 anos de idade, é admitida no PS com febre, disúria e lombalgia à direita. Exame físico: paciente torporosa, T = 38,4 °C, tempo de enchimento capilar de 4 segundos, PA = 88/46 mmHg, FC = 108 bpm, FR = 10 irpm, SpO2= 83%. Exames laboratoriais: creatinina = 1,4 mg/dL; sódio = 145 mEq/L; potássio = 4,7 mEq/L; cloro = 105 mmol/L; gasometria arterial com pH = 7,19, pCO2= 40 mmHg, pO2 = 79 mmHg, bicarbonato = 10 mEq/L. Qual é o distúrbio ácido-base observado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose respiratória com ânion-gap elevado e resposta metabólica compensatória não adequada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Equilíbrio ácido-base ajustado com resposta compensatória adequada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acidose metabólica com ânion-gap elevado e resposta respiratória compensatória não adequada",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Alcalose respiratória aguda com ânion-gap normal e resposta metabólica adequada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma paciente de 37 anos com quadro sugestivo de sepse/choque séptico de foco urinário (febre, disúria, lombalgia, hipotensão, tempo de enchimento capilar lentificado e alteração do nível de consciência). \n\nPara identificar o distúrbio ácido-base, devemos seguir três passos fundamentais:\n\n1. Avaliação do pH: O pH é 7,19, o que caracteriza uma acidemia (pH < 7,35).\n2. Avaliação do componente metabólico: O bicarbonato (HCO₃) está em 10 mEq/L, o que é um valor baixo (normal entre 22-26 mEq/L). Como o pH e o HCO₃ variam na mesma direção (ambos baixos), o distúrbio primário é uma acidose metabólica.\n3. Cálculo do ânion gap (AG): AG = Na - (Cl + HCO₃). AG = 145 - (105 + 10) = 145 - 115 = 30 mEq/L. O valor normal é de até 12 mEq/L. Portanto, trata-se de uma acidose metabólica com ânion gap elevado (provavelmente acidose lática pelo choque séptico).\n4. Avaliação da resposta respiratória compensatória: Em acidoses metabólicas, utilizamos a fórmula de Winter para calcular a pCO₂ esperada: pCO₂ esperada = (1,5 x HCO₃) + 8 (± 2).\npCO₂ esperada = (1,5 x 10) + 8 = 15 + 8 = 23 mmHg. O intervalo aceitável seria entre 21 e 25 mmHg. \nA pCO₂ medida na gasometria é de 40 mmHg. Como a pCO₂ real (40) está muito acima da esperada (23), a paciente não está compensando adequadamente. Ela apresenta uma acidose respiratória associada (distúrbio misto de acidose metabólica e respiratória). Clinicamente, isso é explicado pelo torpor e pela baixa frequência respiratória (FR = 10 irpm), que impedem a eliminação necessária de CO₂.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): O distúrbio primário não é uma acidose respiratória. Embora a pCO₂ esteja elevada para o grau de acidose metabólica, o HCO₃ muito baixo e a história clínica de choque apontam para a acidose metabólica como processo principal. Além disso, o termo \"ânion gap elevado\" é aplicado especificamente para caracterizar acidoses metabólicas, não respiratórias.\n\nAlternativa B (Incorreta): O equilíbrio não está ajustado. O pH de 7,19 indica uma acidemia grave e, como calculado acima, a resposta compensatória respiratória falhou completamente, pois a pCO₂ deveria estar em torno de 23 mmHg e encontra-se em 40 mmHg.\n\nAlternativa C (Correta): Conforme os cálculos realizados, a paciente apresenta uma acidose metabólica (pH e HCO₃ baixos). O ânion gap é de 30 mEq/L (elevado). A resposta respiratória é inadequada porque a pCO₂ medida (40 mmHg) é superior à pCO₂ esperada pela fórmula de Winter (23 mmHg), configurando um distúrbio misto por falha ventilatória.\n\nAlternativa D (Incorreta): O pH de 7,19 descarta qualquer possibilidade de alcalose. O ânion gap está francamente alterado (30 mEq/L), não sendo normal. Além disso, não há resposta metabólica adequada, pois o bicarbonato está consumido.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  },
+  {
+    "id": "AJUDA_cba8defc-0901-4500-9e37-98aa2489e669",
+    "originalId": "cba8defc-0901-4500-9e37-98aa2489e669",
+    "statement": "Um paciente de 22 anos de idade foi admitido no pronto socorro após ser vítima de ferimento por arma de fogo na região toracoabdominal esquerda. Na admissão, os sinais vitais eram PA = 85 mmHg X 60 mmHg, FC = 125 bpm, FR = 28 irpm, temperatura = 36,2 °C e SatO2 = 92% em ar ambiente. Ao exame físico, observou-se orifício de entrada na região lombar esquerda, hematoma palpável e em expansão na região lombar, abdome rígido, com sinais de peritonite, hematúria macroscópica e rebaixamento progressivo do nível de consciência. Realizou tomografia computadorizada com contraste, que evidenciou laceração extensa no parênquima do rim esquerdo, estendendo-se ao córtex, à medula e ao sistema coletor, com extravasamento de contraste, hematoma perirrenal volumoso e sinais de comprometimento vascular segmentar. O rim contralateral apresentava-se normal. Qual é a melhor conduta para o paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia exploradora com exploração precoce do hilo renal e da vasculatura antes do retroperitôneo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Laparotomia exploradora com exploração do hematoma retroperitoneal e rafia da laceração renal por planos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tratamento não operatório, com observação clínica e exames laboratoriais e de imagem seriados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Angiografia com embolização seletiva de artérias segmentares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para entender a conduta correta neste caso, devemos analisar o estado clínico do paciente e as características da lesão.\n\nAnálise do quadro clínico:\nO paciente apresenta instabilidade hemodinâmica clara (hipotensão e taquicardia), sinais de peritonite (abdome rígido) e um hematoma em expansão na região lombar decorrente de um ferimento por arma de fogo (trauma penetrante). A tomografia confirmou uma lesão renal grave (provável grau IV ou V na escala AAST), com extravasamento de contraste e comprometimento vascular.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Este paciente possui indicação absoluta de cirurgia imediata (laparotomia exploradora) devido à instabilidade hemodinâmica, ao mecanismo de trauma penetrante e aos sinais de peritonite. No trauma renal com indicação cirúrgica, o princípio técnico fundamental é o controle vascular precoce. Isso significa que o cirurgião deve acessar e pinçar o hilo renal (artéria e veia) antes de abrir a fáscia de Gerota e explorar o hematoma retroperitoneal. Essa manobra reduz significativamente o risco de hemorragia incontrolável e aumenta a chance de preservação do órgão (nefrectomia parcial ou rafia), evitando uma nefrectomia total por necessidade devido ao sangramento maciço ao abrir o hematoma.\n\nAlternativa B (Incorreta): Embora a laparotomia e a exploração do hematoma sejam necessárias, realizar a exploração e a rafia (costura) sem o controle vascular prévio do hilo renal é tecnicamente perigoso em lesões graves. Sem o controle dos vasos, a descompressão do hematoma pode levar a um sangramento exacerbadamente rápido, dificultando a visualização da lesão e frequentemente resultando em nefrectomia de emergência.\n\nAlternativa C (Incorreta): O tratamento não operatório (conservador) é a conduta de escolha para a maioria dos traumas renais, inclusive os de alto grau, desde que o paciente esteja hemodinamicamente estável. Neste caso, o paciente está instável, possui sinais de peritonite e rebaixamento do nível de consciência, o que contraindica terminantemente a observação clínica.\n\nAlternativa D (Incorreta): A angiografia com embolização é uma excelente opção para pacientes estáveis que apresentam sangramento ativo (blush arterial) na tomografia. Em um paciente com choque circulatório e sinais de peritonite por arma de fogo, o tempo necessário para o procedimento radiológico e a impossibilidade de tratar outras lesões abdominais associadas tornam essa opção inadequada e perigosa.\n\nResumo da conduta:\nDiante de um trauma abdominal penetrante com instabilidade hemodinâmica e evidência de lesão renal grave, a conduta é cirúrgica. O acesso aos vasos hilares antes da manipulação do rim é o padrão-ouro para o controle da hemorragia e a tentativa de salvamento do órgão.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Urologia",
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  },
+  {
+    "id": "AJUDA_cbae6aaf-8c21-44af-aca8-eb1c57224a2b",
+    "originalId": "cbae6aaf-8c21-44af-aca8-eb1c57224a2b",
+    "statement": "A descrição correta dos conceitos de polifarmácia e multimorbidade, respectivamente, com as implicações no manejo do paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso concomitante de múltiplos medicamentos por um paciente, o que pode aumentar o risco de interações medicamentosas e efeitos adversos / presença de várias condições crônicas simultâneas, o que pode complicar o manejo e o tratamento devido à interação entre as doenças e os medicamentos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "administração de medicamentos exclusivamente para condições raras / uso de uma única medicação para tratar várias doenças ao mesmo tempo. Ambos os conceitos são importantes para garantir a eficácia do tratamento em pacientes com condições complexas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "uso de múltiplos medicamentos por um paciente, independentemente da quantidade de condições de saúde / presença de várias doenças crônicas que são gerenciadas da mesma maneira que a polifarmácia, sem necessidade de ajuste dos medicamentos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "uso de múltiplos medicamentos para tratar uma única condição crônica / presença de várias doenças diferentes em um único paciente. A polifarmácia é benéfica, pois aumenta a eficácia do tratamento para condições complexas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda conceitos fundamentais da Geriatria e da Clínica Médica, focando na segurança do paciente e na gestão de doenças crônicas.\n\nAlternativa (a): Está correta. A polifarmácia é classicamente definida como o uso simultâneo de cinco ou mais medicamentos. Suas principais implicações são o aumento do risco de interações medicamentosas, reações adversas (iatrogenia) e menor adesão ao tratamento. Já a multimorbidade é a coexistência de duas ou mais doenças crônicas no mesmo indivíduo. Isso torna o manejo complexo, pois o tratamento de uma condição pode exacerbar outra ou gerar conflitos terapêuticos entre os fármacos prescritos para cada patologia.\n\nAlternativa (b): Está incorreta. A polifarmácia não tem relação com a raridade das doenças, mas sim com a quantidade de fármacos utilizados. Da mesma forma, multimorbidade não significa usar uma única medicação para várias doenças; pelo contrário, a multimorbidade costuma ser a principal causa da polifarmácia.\n\nAlternativa (c): Está incorreta. Embora a polifarmácia envolva o uso de muitos medicamentos, a afirmação sobre a multimorbidade está errada. Pacientes com multimorbidade exigem revisão constante e ajuste rigoroso da terapêutica (desprescrição), visando evitar a cascata iatrogênica, sendo o oposto do que sugere o texto ao dizer que não há necessidade de ajuste.\n\nAlternativa (d): Está incorreta. A polifarmácia é definida pelo número total de medicamentos que o paciente consome, independentemente de serem para uma ou várias condições. Além disso, na prática clínica, a polifarmácia é vista como um fator de risco e um desafio à saúde, e não como algo puramente benéfico, devido ao alto potencial de danos ao paciente idoso ou frágil.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  },
+  {
+    "id": "AJUDA_cbbedd61-b68a-49ca-9d04-462fdf5ee5a0",
+    "originalId": "cbbedd61-b68a-49ca-9d04-462fdf5ee5a0",
+    "statement": "Os sinais e sintomas de gravidez são tradicionalmente classificados em presunção, probabilidade e certeza. Qual das alternativas a seguir apresenta um achado que é classificado como SINAL DE PROBABILIDADE de gravidez?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Náuseas e vômitos matinais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sinal de Hegar (amolecimento do istmo uterino).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Percepção dos movimentos fetais pela gestante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Visualização do feto no ultrassom.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para o diagnóstico de gravidez, os achados clínicos são divididos em três grupos principais: Presunção, Probabilidade e Certeza.\n\nOs sinais de Presunção são aqueles relacionados a queixas subjetivas da paciente ou a alterações sistêmicas (fora do aparelho reprodutor). Exemplos: atraso menstrual, náuseas, vômitos, polaciúria (aumento da frequência urinária), mastalgia (dor nas mamas) e fadiga.\n\nOs sinais de Probabilidade referem-se a modificações anatômicas e fisiológicas do útero, da vagina e da vulva, que são observadas pelo examinador durante o exame físico. Exemplos: Sinal de Hegar (amolecimento do istmo uterino), Sinal de Chadwick (coloração arroxeada da vulva e vagina), Sinal de Goodell (amolecimento do colo uterino) e Sinal de Piskacek (assimetria uterina).\n\nOs sinais de Certeza são aqueles que provam a existência do feto. Exemplos: visualização do feto no ultrassom, ausculta dos batimentos cardíacos fetais (pelo sonar ou Pinard) e percepção de movimentos fetais pelo examinador.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Náuseas e vômitos matinais são sintomas sistêmicos relatados pela paciente; portanto, são classificados como sinais de presunção.\n\nAlternativa b: Correta. O Sinal de Hegar é um achado objetivo do exame físico pélvico (amolecimento do istmo uterino), sendo um dos clássicos sinais de probabilidade descritos na obstetrícia.\n\nAlternativa c: Incorreta. A percepção dos movimentos fetais pela gestante é um relato subjetivo e, por isso, é classificada como sinal de presunção. Se os movimentos fossem percebidos ou palpados pelo médico, seriam classificados como sinal de certeza.\n\nAlternativa d: Incorreta. A visualização do feto (ou do saco gestacional com embrião) no ultrassom é um sinal de certeza, pois fornece a prova direta da presença da gestação.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Modificações Fisiológicas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:38.386Z"
+  }
+]

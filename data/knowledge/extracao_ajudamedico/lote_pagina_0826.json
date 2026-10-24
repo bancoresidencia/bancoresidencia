@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_e627673e-1102-46a1-be4d-ee0f602fbb23",
+    "originalId": "e627673e-1102-46a1-be4d-ee0f602fbb23",
+    "statement": "Menina de 6 anos apresenta, há 2 dias, dor abdominal, inicialmente difusa e, agora, está mais localizada em fossa ilíaca direita. Está com apetite diminuído, com náuseas e vômitos. Há 1 dia, apresenta dor para urinar e um episódio de febre (37,8 ºC). Possui hábito intestinal regular, diário, sem esforço, mas está há 1 dia sem evacuar. Exame físico: prostrada, FC: 102 bpm, discretamente desidratada. Abdome: doloroso à palpação profunda difusamente, com sinal de Blumberg positivo. \n\nEm face do exposto, a conduta a ser adotada é realizar",
+    "options": [
+      {
+        "id": "A",
+        "text": "observação clínica por 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "drenagem de cavidade abdominal guiada por US.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "TC de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apendicectomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um caso clássico de abdome agudo inflamatório em uma criança de 6 anos. A descrição clínica é altamente sugestiva de apendicite aguda, que é a causa mais comum de abdome agudo cirúrgico na infância.\n\nA evolução da dor (que se iniciou difusa e se localizou na fossa ilíaca direita), acompanhada de anorexia, náuseas, vômitos e febre baixa, compõe a apresentação típica. A presença de dor ao urinar (disúria) em casos de apendicite geralmente ocorre quando o apêndice inflamado está em posição pélvica, irritando a bexiga ou o ureter. No exame físico, o sinal de Blumberg positivo (dor à descompressão súbita) é o achado crucial, pois indica irritação peritoneal, selando a necessidade de intervenção.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A observação clínica por 48 horas é contraindicada quando há sinais claros de peritonite (Blumberg positivo). Postergar o tratamento cirúrgico em um quadro evidente de apendicite aumenta significativamente o risco de perfuração, formação de abscesso e sepse.\n\nAlternativa b) Incorreta. A drenagem percutânea guiada por ultrassonografia (US) é reservada para casos de apendicite complicada com abscessos volumosos e bloqueados, geralmente com mais de 5 a 7 dias de evolução, em pacientes que podem ser estabilizados antes de uma cirurgia tardia. O quadro atual é de evolução curta (2 dias) e franca irritação peritoneal.\n\nAlternativa c) Incorreta. Embora a tomografia computadorizada (TC) seja um excelente exame de imagem, o diagnóstico da apendicite aguda em crianças é eminentemente clínico. Em provas de residência, quando o quadro é clássico e existe sinal de irritação peritoneal, a conduta deve ser a cirurgia imediata. Além disso, em pediatria, evita-se a radiação desnecessária da TC se o diagnóstico já pode ser estabelecido clinicamente ou por ultrassonografia.\n\nAlternativa d) Correta. Diante de um quadro clínico clássico de apendicite aguda com sinais de irritação peritoneal (peritonite), a conduta padrão-ouro é a apendicectomia de urgência. O objetivo é remover o foco infeccioso antes que a patologia evolua para complicações mais graves. O tratamento envolve hidratação venosa, antibioticoterapia e o procedimento cirúrgico.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.375Z"
+  },
+  {
+    "id": "AJUDA_e62f445a-af8b-437c-95ad-194f4a3dd707",
+    "originalId": "e62f445a-af8b-437c-95ad-194f4a3dd707",
+    "statement": "Na avaliação do derrame pleural, durante investigação clínica detalhada, a toracocentese diagnóstica tem papel fundamental na sua determinação etiológica. O líquido pleural, uma vez coletado, é enviado para análise laboratorial, em que são feitas cultura e antibiograma, pesquisa de BAAR, citologia oncótica, contagem e diferencial de leucócitos e dosagens bioquímicas.\nSobre a dosagem de glicose, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deverá estar em torno do dobro da glicemia e, quando em níveis maiores que o dobro no líquido pleural, sugere presença de micro-organismos, que provocam destruição celular e, assim, elevam a dosagem da glicose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na análise bioquímica do líquido pleural, não tem importância clínica significativa, sendo considerada importante para a pesquisa de suspeita de infecção, nesse líquido, apenas a cultura com antibiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No líquido pleural, deverá estar situada em torno da metade da glicemia e, quando nesses níveis, sugere presença de micro-organismos nesse líquido, que estariam consumindo a glicose presente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "No líquido pleural, é importante para a investigação de diabetes; uma vez estando em níveis acima de 50% da glicemia normal esperada para o paciente, essa suspeita de importante patologia metabólica deverá ser considerada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "No líquido pleural, quando menor que 50% da glicemia do paciente, sugere fortemente presença de afecção reumática pleural, como lúpus ou artrite reumatoide, que, ao causarem reação autoimune na pleura, consomem a glicose presente nesse líquido.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nPara compreender a bioquímica do líquido pleural, o primeiro conceito fundamental é que a glicose se desloca livremente do plasma para o espaço pleural. Em condições normais, a concentração de glicose no líquido pleural é semelhante à concentração plasmática (glicemia). Quando há um consumo excessivo de glicose no espaço pleural, geralmente por metabolismo bacteriano ou por intensa atividade fagocitária (leucócitos), seus níveis caem drasticamente.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A glicose no líquido pleural nunca deve estar no dobro da glicemia. Além disso, a presença de microrganismos e a atividade metabólica causam o consumo da glicose, levando à redução de seus níveis (hipoglicorraquia), e não à sua elevação.\n\nAlternativa B: Incorreta. A dosagem de glicose é um dos parâmetros bioquímicos mais importantes da análise pleural. Ela ajuda a diferenciar derrames exsudativos e é um marcador de gravidade em derrames parapneumônicos, além de ser fundamental na suspeita de artrite reumatoide e neoplasias.\n\nAlternativa C: Correta. Embora em condições de normalidade os níveis sejam próximos aos da glicemia, na prática clínica, valores significativamente baixos (geralmente definidos como menores que 60 mg/dL ou uma relação líquido pleural/soro menor que 0,5) indicam consumo. A presença de microrganismos (como no empiema) ou de um processo inflamatório intenso leva ao consumo da glicose, confirmando a lógica da alternativa.\n\nAlternativa D: Incorreta. A dosagem de glicose no líquido pleural não tem finalidade diagnóstica para Diabetes Mellitus. O diabetes é diagnosticado por exames de sangue periférico. Níveis altos de glicose no líquido pleural apenas refletem uma hiperglicemia sistêmica prévia no paciente.\n\nAlternativa E: Incorreta. Embora doenças reumáticas como lúpus e artrite reumatoide possam causar baixos níveis de glicose no líquido pleural (especialmente a artrite reumatoide, onde a glicose costuma ser inferior a 30 mg/dL), a alternativa generaliza a causa apenas para essas afecções. No entanto, a causa mais comum de glicose baixa no líquido pleural em provas de residência e na prática médica é o derrame parapneumônico complicado e o empiema, tornando a alternativa C mais abrangente e correta tecnicamente dentro do contexto inflamatório/infeccioso.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Derrame Pleural"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.376Z"
+  },
+  {
+    "id": "AJUDA_e62f78e3-538c-45cb-b5b7-e6e9b4435835",
+    "originalId": "e62f78e3-538c-45cb-b5b7-e6e9b4435835",
+    "statement": "A patologia relacionada ao pseudomixoma peritoneal é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tumor neuroendócrino do apêndice",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "neoplasia mucinosa do apêndice",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "neoplasia intraductal produtora de mucina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "adenocarcinoma gástrico com células em anel de sinete",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O pseudomixoma peritoneal é uma condição clínica caracterizada pelo acúmulo progressivo de ascite mucinosa (material gelatinoso) no interior da cavidade abdominal. Essa condição decorre da implantação de células neoplásicas produtoras de mucina na superfície peritoneal.\n\nAlternativa (a) Incorreta: Os tumores neuroendócrinos do apêndice (anteriormente chamados de tumores carcinoides) são as neoplasias mais frequentes deste órgão, porém eles se originam de células neuroendócrinas e não são produtores de muco. Portanto, não estão relacionados à gênese do pseudomixoma peritoneal.\n\nAlternativa (b) Correta: A grande maioria dos casos de pseudomixoma peritoneal (cerca de 90 a 95 por cento) tem origem em uma neoplasia mucinosa do apêndice cecal. O processo geralmente se inicia com uma neoplasia mucinosa apendicular de baixo grau (LAMN) que causa distensão e eventual ruptura do apêndice, liberando células produtoras de mucina na cavidade peritoneal. Essas células se redistribuem pelo abdome seguindo o fluxo do líquido peritoneal, colonizando as superfícies serosas e continuando a produção de muco, o que leva ao quadro típico.\n\nAlternativa (c) Incorreta: A neoplasia intraductal produtora de mucina (IPMN) é uma lesão pré-neoplásica que ocorre nos ductos pancreáticos. Embora produza mucina, essa substância permanece habitualmente contida no sistema ductal ou em cistos pancreáticos, não sendo a causa etiológica do pseudomixoma peritoneal clássico.\n\nAlternativa (d) Incorreta: O adenocarcinoma gástrico com células em anel de sinete é um tumor de comportamento agressivo que frequentemente cursa com disseminação peritoneal (carcinomatose). No entanto, essa disseminação costuma se apresentar na forma de implantes sólidos, nodulares e infiltrativos, e não com o acúmulo massivo de ascite gelatinosa e hipocelular que define o pseudomixoma peritoneal.\n\nEm resumo, diante de um quadro de pseudomixoma peritoneal, o foco primário deve ser buscado invariavelmente no apêndice cecal, sendo a neoplasia mucinosa deste órgão a patologia diretamente relacionada.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias do Apêndice Cecal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.376Z"
+  },
+  {
+    "id": "AJUDA_e631c511-c19c-4a1d-a6a9-b87fc91ed432",
+    "originalId": "e631c511-c19c-4a1d-a6a9-b87fc91ed432",
+    "statement": "Uma mulher de 29 anos de idade migrou da Bolívia para o Brasil há três anos. A jornada de trabalho era de 10 horas por dia, em um local fechado, com uma folga semanal. Recentemente, uma colega do trabalho iniciou tratamento para tuberculose pulmonar e, para isso, procurou atendimento na unidade básica de saúde, porque estava preocupada com uma possibilidade de contrair a doença. Ela apresentava bom quadro de saúde, não relatou doenças crônicas e, no momento, estava assintomática, sem tosse e com peso estável. \n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a conduta adequada para a situação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar exame clínico, solicitar prova tuberculínica ou IGRA e radiografia de tórax PA e perfil",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "tranquilizar a paciente, pois o risco de contrair tuberculose é baixo, uma vez que o contato não é domiciliar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar radiografia de tórax e indicar vacinação com BCG, uma vez que, na Bolívia, essa vacina não é rotineira",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "orientar retorno imediato, caso ocorra o surgimento de sintomas da tuberculose ativa (tosse, febre e perda de peso)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar quimioprofilaxia, pois o risco de contrair tuberculose é elevado",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo de um contato de um paciente com tuberculose (TB) pulmonar ativa. O cenário descreve uma mulher jovem, assintomática, mas que foi exposta de forma prolongada (10 horas diárias em local fechado) a uma colega de trabalho diagnosticada com a doença.\n\nAnálise das alternativas:\n\nAlternativa A: Correta. De acordo com as diretrizes do Ministério da Saúde e o Manual de Recomendações para o Controle da Tuberculose no Brasil, a conduta inicial para todo contato de TB pulmonar bacilífera é a investigação para descartar a doença ativa e identificar a Infecção Latente pelo *Mycobacterium tuberculosis* (ILTB). O exame clínico e a radiografia de tórax são fundamentais para descartar a TB ativa (mesmo em pacientes assintomáticos, para flagrar casos iniciais ou subclínicos). Já a Prova Tuberculínica (PPD) ou o IGRA são utilizados para verificar se houve infecção pelo bacilo, o que definiria a necessidade de tratamento preventivo da TB.\n\nAlternativa B: Incorreta. O risco não é baixo. Contatos em locais de trabalho fechados, com exposição prolongada (como as 10 horas diárias relatadas), são considerados contatos de alto risco, assemelhando-se aos contatos domiciliares. A proximidade e o tempo de exposição em ambiente mal ventilado favorecem a transmissão.\n\nAlternativa C: Incorreta. A Bolívia, assim como o Brasil, possui a vacinação com BCG em seu calendário vacinal de rotina. Além disso, a vacina BCG não tem indicação para adultos nessa situação de bloqueio epidemiológico ou contato; seu papel principal é prevenir formas graves de TB (miliar e meníngea) em crianças pequenas. O foco no adulto contato deve ser a triagem de infecção latente ou doença ativa.\n\nAlternativa D: Incorreta. A conduta expectante (apenas aguardar sintomas) é inadequada para contatos de TB. A estratégia de controle da doença baseia-se na busca ativa de novos casos e no tratamento da ILTB para evitar que o contato adoeça no futuro. Esperar o surgimento de sintomas significa perder a oportunidade de prevenção e permitir que a paciente continue a cadeia de transmissão, caso venha a desenvolver a forma bacilífera.\n\nAlternativa E: Incorreta. Não se inicia o tratamento preventivo (quimioprofilaxia) de forma imediata e empírica sem antes realizar os exames complementares. É obrigatório descartar a TB ativa (por meio de radiografia e avaliação clínica) antes de prescrever a medicação preventiva, pois, se a paciente já estiver doente, o uso de apenas um fármaco (como a isoniazida ou rifampicina isoladas) induzirá resistência bacteriana. Além disso, é necessário confirmar a infecção latente pelo PPD ou IGRA antes de indicar o tratamento.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.376Z"
+  },
+  {
+    "id": "AJUDA_e636f918-7ef0-4057-b0af-72ec7634b399",
+    "originalId": "e636f918-7ef0-4057-b0af-72ec7634b399",
+    "statement": "Dom João VI, que perdeu dois irmãos e um filho acometidos pela varíola, criou, ainda como Príncipe Regente, em 1811, o(a)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Junta Vacínica da Corte.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Instituto de Saúde Pública.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Academia Imperial de Medicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Serviço de Saneamento do Brasil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda a História da Saúde Pública no Brasil, especificamente as ações tomadas durante o período joanino (após a chegada da família real em 1808).\n\nAlternativa a: Correta. Em 1811, Dom João VI criou a Junta Vacínica da Corte, no Rio de Janeiro. A iniciativa tinha como objetivo institucionalizar e expandir a vacinação contra a varíola (método de Jenner) na colônia. O regente tinha um interesse pessoal e familiar na causa, visto que a doença havia vitimado seus irmãos e seu filho primogênito. A Junta foi um marco inicial nas políticas de imunização no país.\n\nAlternativa b: Incorreta. Embora tenham existido órgãos de fiscalização sanitária (como a Fisicatura-Mor), a nomenclatura \"Instituto de Saúde Pública\" remete a modelos de administração sanitária muito mais modernos e centralizados, que não correspondiam à estrutura administrativa de 1811.\n\nAlternativa c: Incorreta. A Academia Imperial de Medicina tem suas origens na Sociedade de Medicina do Rio de Janeiro, que foi fundada apenas em 1829, durante o Primeiro Reinado (governo de Dom Pedro I), e não em 1811.\n\nAlternativa d: Incorreta. O saneamento estruturado como serviço público nacional é um conceito que se desenvolveu bem mais tarde. As grandes reformas de saneamento e a criação de serviços específicos nessa área ganharam força apenas na virada do século XIX para o XX, destacadamente com as ações de Oswaldo Cruz e as reformas urbanas na República Velha.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "História do SUS"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.376Z"
+  },
+  {
+    "id": "AJUDA_e638281d-8551-4d10-91a3-79612df840c7",
+    "originalId": "e638281d-8551-4d10-91a3-79612df840c7",
+    "statement": "São direitos dos adolescentes, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "receber informações sobre qualquer aspecto relacionado à sexualidade e saúde reprodutiva além das imunizações comtempladas pelo MS, apenas na presença do responsável legal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "escolha de realizar consulta médica, procedimentos não invasivos como coleta de exames laboratoriais, sozinhos ou acompanhados por familiares, amigos ou parceiros, desde que o profissional reconheça que ele tem discernimento adequado de sua saúde e compreensão de seu autocuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "orientados por profissionais de saúde, inclusive por pediatra, podem e devem decidir pela escolha de métodos contraceptivos adequados para essa fase, para o exercício de uma vida sexual saudável e responsável: preservativos masculino e feminino, anticoncepcionais hormonais orais, anticoncepcional injetável, anticoncepcionais de longa duração e ou diafragma, DIU e, se necessária, a contracepção de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "testagem e entrega de exames anti-HIV - até os 12 anos recomenda-se que estes procedimentos ocorram com conhecimento e/ou presença dos pais ou responsáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "devem ser atendidos em toda a rede, pública ou privada, sem discriminação de gênero, raça, classe social.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da questão sobre Direitos dos Adolescentes e Ética Médica:\n\nO tema central desta questão é a Autonomia Progressiva do adolescente e o seu direito ao Sigilo Médico, fundamentados tanto no Estatuto da Criança e do Adolescente (ECA) quanto no Código de Ética Médica (CEM). O objetivo é identificar a conduta que fere esses direitos.\n\nAlternativa A (Incorreta/Gabarito): Esta é a alternativa incorreta porque condiciona o acesso à informação e à saúde à presença obrigatória do responsável legal. O adolescente que possui capacidade de discernimento tem o direito de receber orientações sobre sexualidade, saúde reprodutiva e vacinação de forma individualizada. A exigência de um acompanhante para esses fins viola o direito à privacidade e à autonomia, criando barreiras que podem afastar o jovem do sistema de saúde.\n\nAlternativa B (Correta): O adolescente tem o direito de optar por ser atendido sozinho ou acompanhado. A legislação brasileira e as normas éticas permitem que menores de 18 anos realizem consultas e exames laboratoriais sem os pais, desde que o médico identifique que o paciente tem maturidade suficiente para compreender as orientações e cuidar de sua própria saúde.\n\nAlternativa C (Correta): O acesso a métodos contraceptivos é um direito garantido para prevenção de gravidez não planejada e infecções sexualmente transmissíveis. O médico pode prescrever desde métodos de barreira até contraceptivos de longa duração (DIU e implantes) ou de emergência para o adolescente com vida sexual ativa, sem a necessidade de autorização ou comunicação aos pais, preservando o sigilo profissional.\n\nAlternativa D (Correta): As diretrizes de saúde utilizam o marco de 12 anos para diferenciar a criança do adolescente. Até os 12 anos incompletos, a entrega de resultados de exames sensíveis como o HIV deve ser feita aos responsáveis. A partir dessa idade, avalia-se a maturidade do jovem; se ele for considerado apto, tem o direito de solicitar o exame e receber o resultado com garantia de sigilo.\n\nAlternativa E (Correta): Esta alternativa reforça os princípios constitucionais do SUS e do ECA. O atendimento à saúde deve ser universal e equânime, proibindo-se qualquer tipo de discriminação por cor, gênero, orientação sexual ou condição socioeconômica.\n\nPonto fundamental para provas: O sigilo médico no atendimento ao adolescente é a regra. A quebra desse sigilo por parte do profissional só é permitida em situações excepcionais: quando o adolescente não possui discernimento para entender os riscos de sua condição, quando há risco iminente de morte ou dano grave (como ideação suicida) ou quando o adolescente é vítima de crime (como violência sexual), devendo o médico, nesses casos, comunicar aos responsáveis ou autoridades competentes.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Puberdade",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.376Z"
+  },
+  {
+    "id": "AJUDA_e644c474-8576-4239-94d3-e3f74b71ec6e",
+    "originalId": "e644c474-8576-4239-94d3-e3f74b71ec6e",
+    "statement": "O Raquitismo é a falha na mineralização da placa de crescimento. Assinale a alternativa correta sobre a distinção laboratorial entre Raquitismo Calcipênico (Carencial) e Hipofosfatêmico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A fosfatase alcalina encontra-se baixa ou normal em todas as formas de raquitismo ativo, sendo um marcador de recuperação óssea apenas após o início do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O rosário raquítico e o alargamento de punhos são exclusivos das formas carenciais, não ocorrendo nos distúrbios renais de perda de fosfato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No Raquitismo Carencial (deficiência de vitamina D), observa-se cálcio sérico normal ou baixo, fósforo baixo (pela ação do hormônio paratireoideo – PTH), fosfatase alcalina elevada e PTH muito elevado, caracterizando hiperparatireoidismo secundário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "No Raquitismo Hipofosfatêmico ligado ao X (X-Linked Hypophosphatemia – XLH), o defeito primário é renal, com perda de fósforo e níveis baixos de calcitriol; laboratorialmente, o hormônio paratireoideo (PTH) encontra-se suprimido e o cálcio sérico elevado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão aborda a diferenciação laboratorial entre as duas principais formas de raquitismo: o calcipênico (geralmente por deficiência de vitamina D) e o hipofosfatêmico (geralmente de origem genética/renal).\n\nAlternativa (a) Incorreta: A fosfatase alcalina (FA) é um marcador de atividade osteoblástica e de *turnover* ósseo. No raquitismo ativo, independentemente da causa, a fosfatase alcalina encontra-se marcadamente elevada. Ela é, inclusive, o marcador laboratorial mais sensível para o diagnóstico e para o acompanhamento da atividade da doença, caindo gradualmente com o sucesso do tratamento.\n\nAlternativa (b) Incorreta: O rosário raquítico (proeminência das junções condrocostais) e o alargamento de punhos e tornozelos são sinais clínicos resultantes do acúmulo de matriz cartilaginosa não mineralizada na placa de crescimento. Como a falha de mineralização é a via final comum de todos os tipos de raquitismo, esses sinais podem estar presentes tanto nas formas carenciais quanto nas formas hipofosfatêmicas/renais.\n\nAlternativa (c) Correta: No raquitismo carencial, a deficiência de vitamina D leva à menor absorção intestinal de cálcio. A queda (ou tendência de queda) do cálcio sérico estimula as paratireoides a produzirem PTH (hiperparatireoidismo secundário). O PTH elevado tenta normalizar o cálcio retirando-o do osso e aumentando a excreção renal de fósforo. O resultado laboratorial clássico é: cálcio normal ou baixo, fósforo baixo (devido à fosfatúria induzida pelo PTH), PTH elevado e fosfatase alcalina elevada (devido à atividade óssea intensa).\n\nAlternativa (d) Incorreta: No raquitismo hipofosfatêmico ligado ao X (XLH), o problema primário é a perda renal de fosfato e a regulação inadequada da vitamina D (devido ao excesso de FGF23). Laboratorialmente, o cálcio sérico é tipicamente normal e o fósforo é muito baixo. O PTH costuma estar normal ou discretamente elevado (pela conversão deficiente de vitamina D em calcitriol), mas nunca suprimido com cálcio elevado. Cálcio elevado com PTH suprimido não é compatível com o quadro de raquitismo hipofosfatêmico.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.376Z"
+  },
+  {
+    "id": "AJUDA_e64cfaae-a4be-478f-8a27-8144e7cdb4e4",
+    "originalId": "e64cfaae-a4be-478f-8a27-8144e7cdb4e4",
+    "statement": "Homem, 63 anos de idade, com histórico de hipertensão arterial crônica e uso ocasional de álcool, é trazido ao PS após sua esposa encontrá-lo caído no chão do banheiro. Ele está confuso, queixando-se de dor de cabeça intensa e apresenta fraqueza no lado direito do corpo. Exame Físico: PA = 190/110 mmHg, FC = 88 bpm; hemiparesia direita e afasia parcial. Não há sinais de trauma externo. Tomografia computadorizada de crânio realizada à admissão: hematoma intracerebral de aproximadamente 40 mL localizado no lobo temporal esquerdo, sem sinais de herniação ou edema cerebral significativo. Qual é a conduta mais adequada, considerando que está dentro de 3 horas do início dos sintomas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Controle intensivo da PA nas primeiras 24 horas e controle de temperatura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administração imediata de manitol intravenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elevação da cabeceira do leito a 30 graus e controle glicêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realização imediata de craniotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nO quadro clínico e a tomografia computadorizada de crânio confirmam o diagnóstico de Hemorragia Intracerebral (HIC) espontânea, provavelmente secundária à hipertensão arterial crônica. O paciente encontra-se na fase hiperaguda (dentro de 3 horas do início dos sintomas), momento em que o risco de expansão do hematoma é maior.\n\nAlternativa (a): Correta. O controle intensivo da pressão arterial (PA) é a intervenção mais importante na fase aguda do AVC hemorrágico para reduzir o risco de expansão do hematoma. As diretrizes atuais sugerem que, para pacientes com PAS entre 150 e 220 mmHg, a redução aguda para 140 mmHg é segura e pode melhorar o desfecho funcional. Além disso, o controle da temperatura é fundamental, pois a febre está associada a piores prognósticos e a uma maior lesão cerebral secundária.\n\nAlternativa (b): Incorreta. O manitol é um agente osmótico utilizado para o tratamento da hipertensão intracraniana e do edema cerebral grave com efeito de massa. A descrição da tomografia especifica que não há sinais de herniação ou edema cerebral significativo no momento; portanto, não há indicação para o uso imediato de manitol como conduta prioritária.\n\nAlternativa (c): Incorreta. Embora a elevação da cabeceira a 30 graus e o controle glicêmico façam parte dos cuidados gerais e de suporte de qualquer paciente com AVC, eles não representam a conduta mais robusta ou específica para o manejo inicial de um hematoma intracerebral de 40 mL na fase hiperaguda. O controle da PA (descrito na alternativa A) tem impacto clínico superior na prevenção da expansão da lesão.\n\nAlternativa (d): Incorreta. A indicação cirúrgica (craniotomia) para hematomas lobares é controversa e, segundo grandes estudos como o STICH e STICH II, a cirurgia precoce de rotina não demonstrou benefício superior ao tratamento clínico em pacientes sem sinais de herniação ou deterioração neurológica rápida. A cirurgia é geralmente reservada para hematomas cerebelares maiores que 3 cm ou casos com desvio de linha média e compressão de cisternas da base que não respondem ao tratamento clínico.\n\nEm resumo, o manejo clínico agressivo, focado na estabilização hemodinâmica (controle da PA) e neuroproteção (controle de temperatura e glicemia), é a conduta padrão-ouro inicial para este paciente.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.376Z"
+  },
+  {
+    "id": "AJUDA_e650d1cb-a2a8-43ba-9adf-7039db2a7780",
+    "originalId": "e650d1cb-a2a8-43ba-9adf-7039db2a7780",
+    "statement": "Criança de três anos, vem acompanhada da mãe, com quadro de prurido generalizado iniciado há dois dias que piora pela noite, com cefaleia, febre e sinais de desidratação moderada. Baseado neste caso, deve-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "investigar possível caso de violência física ou sexual contra criança.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "buscar doenças familiares de origem materna, doenças mitocondriais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "investigar se realizou o teste do pézinho, principalmente hemoglobinopatias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "buscar outras pessoas com quadro parecido na casa, vizinhança e escola.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "investigar se houve vacinações realizadas anteriores aos dois anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "PONTO CHAVE DO CASO CLINICO\n\nO diagnostico clínico sugerido pelo quadro é Escabiose (sarna humana). O \"sintoma patognomônico\" explorado pela questão é o prurido generalizado com intensificação noturna. A desidratação, febre e cefaleia mencionadas indicam que a criança provavelmente apresenta uma complicação comum: a infecção secundária das lesões de pele (impetiginização), geralmente por Staphylococcus aureus ou Streptococcus pyogenes, o que pode levar a um comprometimento do estado geral.\n\nANALISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): Embora a proteção à criança seja um dever médico, o quadro de coceira que piora à noite é um marcador clássico de infestação por Sarcoptes scabiei e não de sinais de violência física ou abuso sexual. O abuso manifesta-se mais comumente por traumas, lesões em partes íntimas ou alterações de comportamento.\n\nAlternativa B (Incorreta): Doenças mitocondriais são erros inatos do metabolismo que cursam com disfunções multiorgânicas graves, sintomas neurológicos crônicos, fraqueza muscular e atraso no desenvolvimento. Não apresentam prurido cutâneo agudo como manifestação principal.\n\nAlternativa C (Incorreta): O teste do pezinho identifica doenças como o hipotireoidismo congênito, fibrose cística e hemoglobinopatias. Embora a anemia falciforme aumente o risco de infecções graves, ela não causa o quadro dermatológico específico descrito (prurido noturno).\n\nAlternativa D (Correta): A escabiose é altamente contagiosa e a transmissão ocorre através do contato direto prolongado. Em pediatria, o tratamento só é eficaz se houver a quebra da cadeia de transmissão. Portanto, é obrigatório investigar se familiares, colegas de escola ou vizinhos possuem sintomas semelhantes, pois todos os contatos próximos devem ser tratados simultaneamente para evitar a reinfestação.\n\nAlternativa E (Incorreta): O histórico vacinal é importante em qualquer consulta pediátrica, mas não há vacina no calendário oficial que previna a escabiose ou que, se ausente, explicaria especificamente esse padrão de prurido generalizado.\n\nConclusão: Diante de uma suspeita de escabiose, o próximo passo epidemiológico fundamental é a investigação de comunicantes para controle do surto local.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.376Z"
+  },
+  {
+    "id": "AJUDA_e6511a24-075d-490d-8e4d-96b29aeb50ce",
+    "originalId": "e6511a24-075d-490d-8e4d-96b29aeb50ce",
+    "statement": "Menino de 6 anos está internado e em tratamento da leucemia linfoblástica aguda (LLA). Tem indicação de transplante de células-tronco hematopoiéticas — transplante de medula óssea (TMO). Com relação a essa modalidade de tratamento, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O encaminhamento desse paciente para o centro de referência para TMO deve ser realizado o quanto antes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A inscrição do paciente em centro de referência para TMO deve ser realizada tão logo seja detectada falha na terapia de indução.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O exame de compatibilidade em todos os familiares de 1º grau deve ser realizado antes da inscrição em centro de referência para TMO.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O encaminhamento desse paciente para centro de referência para TMO deve ser realizado somente após a alta hospitalar, via ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do transplante de células-tronco hematopoiéticas (TMO) na Leucemia Linfoblástica Aguda (LLA) pediátrica:\n\nAlternativa A: Incorreta. O encaminhamento para TMO não deve ser feito para todos os pacientes \"o quanto antes\" a partir do diagnóstico. Na pediatria, a grande maioria dos casos de LLA apresenta excelente resposta apenas com a quimioterapia convencional. O transplante é reservado para subgrupos específicos de alto risco ou casos de recaída.\n\nAlternativa B: Correta. A falha na terapia de indução (quando o paciente não atinge a remissão completa após a fase inicial da quimioterapia) é um marcador de péssimo prognóstico e uma indicação clássica de TMO. Nesses casos, a inscrição no centro de referência deve ser imediata para iniciar a busca por doadores compatíveis e organizar o procedimento, pois o tempo é um fator determinante para o sucesso antes que a doença progrida ou o paciente apresente complicações graves.\n\nAlternativa C: Incorreta. Embora a tipagem HLA dos irmãos seja o primeiro passo na busca por um doador, não é pré-requisito que todos os familiares de primeiro grau tenham exames prontos antes da inscrição no centro de referência. O próprio centro especializado coordena a investigação de doadores familiares e, se necessário, a busca em registros de doadores não aparentados (como o REDOME).\n\nAlternativa D: Incorreta. O critério para encaminhamento é a indicação clínica e a gravidade da doença, e não o status de internação. Se um paciente internado apresenta critérios para transplante, como a falha de indução mencionada na alternativa B, o processo de encaminhamento e avaliação pela equipe de TMO deve ser iniciado prontamente, sem aguardar uma alta hospitalar que pode ser tardia para o sucesso do tratamento.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:58.376Z"
+  }
+]

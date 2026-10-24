@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_46d7e609-4848-41c9-a05d-a732980b8b74",
+    "originalId": "46d7e609-4848-41c9-a05d-a732980b8b74",
+    "statement": "Em um surto de sarampo, a prioridade para a contenção da transmissão em uma área afetada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "ampliar a vacinação para a faixa etária de 6 a 12 meses de vida na área de surto",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "monitorar todos os casos notificados sem intervenções adicionais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar a vacinação somente após confirmação de todos os casos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "administrar antivirais a todos os casos suspeitos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "isolar apenas os pacientes sintomáticos e liberar os contatos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) CORRETA: Em situações de surto de sarampo, a estratégia prioritária para interromper a cadeia de transmissão e proteger os grupos mais vulneráveis é a vacinação de bloqueio e a antecipação da imunização. A chamada dose zero é recomendada para crianças de 6 meses a 11 meses e 29 dias em áreas de circulação do vírus. Essa faixa etária é particularmente suscetível a complicações graves e óbito, e a vacinação precoce atua como uma barreira imunológica crucial para o controle epidemiológico. Vale ressaltar que essa dose zero não substitui as doses de rotina do Calendário Nacional de Vacinação (aos 12 e 15 meses).\n\nAlternativa (b) INCORRETA: O sarampo é uma das doenças mais contagiosas conhecidas, com transmissão por aerossóis. Apenas monitorar os casos sem realizar intervenções ativas, como o bloqueio vacinal e a busca ativa de contatos, permitiria que o vírus se espalhasse de forma descontrolada na população.\n\nAlternativa (c) INCORRETA: As ações de controle, especialmente o bloqueio vacinal dos contatos, devem ser iniciadas imediatamente após a notificação de um caso suspeito, idealmente em até 72 horas. Aguardar a confirmação laboratorial de todos os casos causaria um atraso crítico, perdendo a janela de oportunidade para prevenir novos casos e conter o surto.\n\nAlternativa (d) INCORRETA: Não existe tratamento antiviral específico para o vírus do sarampo. O manejo clínico consiste em tratamento de suporte, hidratação e, fundamentalmente, a administração de vitamina A para reduzir o risco de complicações e mortalidade. O controle da transmissão é feito exclusivamente por medidas de imunização e isolamento.\n\nAlternativa (e) INCORRETA: Isolar o paciente sintomático é necessário, mas liberar os contatos sem intervenção é um erro técnico. Os contatos suscetíveis devem ser identificados e vacinados o mais rápido possível (profilaxia pós-exposição) para evitar que desenvolvam a doença e continuem a cadeia de transmissão. Em casos de contraindicação à vacina, pode-se indicar a imunoglobulina.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  },
+  {
+    "id": "AJUDA_46e5b25f-f409-4421-9720-82c7beff0c8f",
+    "originalId": "46e5b25f-f409-4421-9720-82c7beff0c8f",
+    "statement": "Qual é o distúrbio do equilíbrio ácido-base esperado nos casos de cetoacidose diabética?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose metabólica de ânion gap normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alcalose metabólica hiperclorêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acidose metabólica de ânion gap aumentado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Alcalose metabólica hipoclorêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alcalose mista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c): Acidose metabólica de ânion gap aumentado.\n\nPara compreender o distúrbio ácido-base na cetoacidose diabética (CAD), é necessário analisar a fisiopatologia da doença. A CAD ocorre devido a uma deficiência grave de insulina associada ao aumento dos hormônios contrarreguladores (glucagon, cortisol e catecolaminas). Essa condição estimula a lipólise excessiva, liberando ácidos graxos livres que, no fígado, são convertidos em corpos cetônicos: acetoacetato e beta-hidroxibutirato.\n\nEsses corpos cetônicos são ácidos orgânicos fortes que, ao se dissociarem, liberam íons H+ (que consomem o bicarbonato sérico, gerando acidose) e ânions não mensurados (os cetoânions). O Ânion Gap (AG) representa a diferença entre os cátions e ânions mensurados no plasma, calculado pela fórmula AG = Na - (Cl + HCO3). Como o bicarbonato é consumido para tamponar os cetoácidos e estes novos ânions não entram no cálculo rotineiro do cloro, o intervalo (gap) entre os cátions e ânions mensurados aumenta.\n\nAnálise das alternativas:\n\na) Incorreta. A acidose metabólica de ânion gap normal (também chamada de hiperclorêmica) ocorre tipicamente em situações de perda de bicarbonato (como diarreia) ou dificuldade de excreção de H+ (como acidose tubular renal), onde o cloro aumenta para compensar a queda do bicarbonato. Na fase inicial da CAD, o ânion gap está sempre aumentado devido aos cetoânions.\n\nb) Incorreta. A CAD cursa com acidose (queda do pH) e não com alcalose. Além disso, a hipercloremia não é a característica primária do distúrbio agudo, embora possa surgir durante o tratamento com grandes volumes de soro fisiológico 0,9%.\n\nc) Correta. É a descrição clássica do distúrbio na CAD. A produção de corpos cetônicos introduz ânions não mensurados na circulação, elevando o Ânion Gap acima dos valores de referência (geralmente > 12 mEq/L).\n\nd) Incorreta. A alcalose metabólica hipoclorêmica é observada em quadros de perdas gástricas (vômitos ou sucção nasogástrica), onde há perda de ácido clorídrico (HCl), o que é oposto ao quadro de cetoacidose.\n\ne) Incorreta. Alcalose mista envolveria uma combinação de alcalose metabólica e alcalose respiratória, elevando o pH sanguíneo, o que é incompatível com a gravidade da acidemia encontrada na cetoacidose diabética.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  },
+  {
+    "id": "AJUDA_46e91b38-9d5d-4a86-8f2f-93f93f4bf74b",
+    "originalId": "46e91b38-9d5d-4a86-8f2f-93f93f4bf74b",
+    "statement": "Primigesta, gestação gemelar, 30 anos, IMC de 31 kg/m², na 12ª semana de gestação, realizou Doppler de artéria uterina com índice de pulsatilidade no percentil 60. Qual a melhor conduta segundo o Manual da Rede Brasileira de Hipertensão e o Ministério da Saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter vigilância pressórica e orientação nutricional, reservando AAS para gestantes com história prévia de pré-eclâmpsia e Doppler alterado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Considerar o Doppler normal (< p95), não havendo indicação de iniciar medicação profilática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir o Doppler na época do exame morfológico do segundo trimestre (entre 20 –24 semanas) e, se alterado, iniciar AAS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar ácido acetilsalicílico (AAS) em baixa dose e suplementação de cálcio, independentemente do resultado do Doppler.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA questão apresenta uma gestante com múltiplos fatores de risco para o desenvolvimento de pré-eclâmpsia (PE). O principal fator de alto risco identificado é a gestação gemelar. Além disso, a paciente possui fatores de risco moderado: é primigesta e apresenta obesidade (IMC de 31 kg/m²). O Doppler de artérias uterinas, embora útil para rastreamento, apresenta resultado normal (percentil 60, sendo o corte de normalidade geralmente abaixo do percentil 95).\n\nDe acordo com as diretrizes do Ministério da Saúde, da Rede Brasileira de Hipertensão e da FEBRASGO, a profilaxia para pré-eclâmpsia deve ser iniciada com base em fatores de risco clínicos, independentemente do resultado do Doppler, se o risco for considerado elevado.\n\nA recomendação atual indica o uso de ácido acetilsalicílico (AAS) em dose baixa (100 a 150 mg) e suplementação de cálcio (1,5 a 2,0 g/dia, especialmente em populações com baixa ingestão dietética) para pacientes com:\n1. Pelo menos um fator de alto risco (gestação múltipla, pré-eclâmpsia em gestação anterior, hipertensão crônica, diabetes mellitus, doença renal ou doença autoimune).\n2. Dois ou mais fatores de risco moderado (primiparidade, obesidade, história familiar de PE, idade materna acima de 35 anos ou características sociodemográficas específicas).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A conduta expectante de apenas vigilância pressórica é insuficiente para esta paciente. O AAS não deve ser reservado apenas para casos de história prévia de PE ou Doppler alterado; a gemelaridade por si só já é indicação formal de profilaxia.\n\nAlternativa (b) INCORRETA: Embora o Doppler seja tecnicamente normal (abaixo do percentil 95), ele não anula o risco clínico. O rastreamento da pré-eclâmpsia é prioritariamente clínico. A presença da gestação gemelar impõe a necessidade de medicação profilática.\n\nAlternativa (c) INCORRETA: O momento ideal para iniciar a profilaxia com AAS é entre a 12ª e a 16ª semana de gestação, período em que ocorre a segunda onda de migração trofoblástica. Aguardar o morfológico do segundo trimestre (20-24 semanas) faria com que o tratamento perdesse sua eficácia na prevenção da doença.\n\nAlternativa (d) CORRETA: A alternativa descreve a conduta padrão-ouro para este caso. A gestação gemelar é um fator de alto risco que justifica o início do AAS e do cálcio. O fato de o Doppler estar normal não contraindica a medicação, pois a sensibilidade do exame isolado não substitui a análise do risco clínico no primeiro trimestre. O início deve ocorrer preferencialmente antes de 16 semanas para otimizar a placentação.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  },
+  {
+    "id": "AJUDA_46e96a27-ab8b-4a46-bb5c-37dc04686278",
+    "originalId": "46e96a27-ab8b-4a46-bb5c-37dc04686278",
+    "statement": "Uma gestante G2P1A0, com 28 semanas de gestação, comparece ao pré-natal com histórico de parto anterior com recém-nascido ictérico que necessitou de exanguinotranfusão. Na gestação atual, é Rh negativa, Coombs indireto positivo (título 1:64) e o parceiro é Rh positivo. A ultrassonografia obstétrica com Doppler mostra velocidade da artéria cerebral média (ACM) com pico sistólico de 1,65 MoM. Qual a conduta mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar imunoglobulina anti-D (Rhogan) e repetir o Doppler da ACM em 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar cordocentese para avaliação do hematócrito fetal e, se necessário, transfusão intrauterina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Antecipar o parto imediatamente, pois há risco iminente de óbito fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar corticoide antenatal e planejar parto com 32 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aguardar evolução espontânea, pois o valor de 1,65 MoM está dentro da normalidade para idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma gestante com aloimunização Rh (fator Rh negativo e Coombs indireto positivo com título 1:64), o que caracteriza uma gestação de alto risco para anemia fetal. O histórico de parto anterior com necessidade de exanguinotransfusão reforça a gravidade da sensibilização.\n\nO ponto crucial para a resolução desta questão é a interpretação do Doppler da Artéria Cerebral Média (ACM). Em fetos com anemia, há um aumento do débito cardíaco e uma diminuição da viscosidade sanguínea, o que resulta em um aumento da velocidade do fluxo sanguíneo cerebral. O valor de referência utilizado é o Múltiplo da Mediana (MoM). Valores de Pico de Velocidade Sistólica (PVS) da ACM acima de 1,5 MoM são preditores de anemia fetal grave com alta sensibilidade.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A imunoglobulina anti-D (RhoGAM) tem indicação profilática, ou seja, serve para evitar que a gestante se sensibilize. Uma vez que o Coombs indireto já é positivo e em título elevado (1:64), a paciente já está sensibilizada, e a administração da imunoglobulina não tem efeito terapêutico. Além disso, com um Doppler de 1,65 MoM, a conduta deve ser imediata, e não apenas repetir o exame em 2 semanas.\n\nAlternativa b) Correta. Diante de um resultado de Doppler da ACM maior que 1,5 MoM em uma gestação abaixo de 34-35 semanas, o diagnóstico de anemia fetal grave é muito provável. A conduta padrão-ouro é a realização da cordocentese, que permite a confirmação diagnóstica através da dosagem do hematócrito e da hemoglobina fetal. Caso a anemia seja confirmada (hematócrito abaixo de 30% ou dois desvios-padrão abaixo da média para a idade gestacional), realiza-se a transfusão intrauterina (TIU) no mesmo procedimento.\n\nAlternativa c) Incorreta. Embora o risco de óbito fetal exista devido à possibilidade de hidropisia, a idade gestacional de 28 semanas é de extrema prematuridade. O tratamento de escolha nesta fase é a transfusão intrauterina para permitir que o feto ganhe maturidade pulmonar e peso antes do nascimento, evitando as complicações da prematuridade extrema.\n\nAlternativa d) Incorreta. O corticoide antenatal é indicado quando há risco de parto prematuro, mas não substitui o tratamento da anemia fetal. Simplesmente planejar o parto para 32 semanas sem intervir na anemia atual (1,65 MoM) levaria, muito provavelmente, ao óbito fetal ou hidropisia grave muito antes da data planejada.\n\nAlternativa e) Incorreta. O valor de 1,65 MoM é patológico. Conforme estabelecido por Mari et al., o ponto de corte de 1,5 MoM é o limite superior para identificar fetos com anemia grave. Portanto, aguardar a evolução espontânea é contraindicado, pois o quadro tende a evoluir para insuficiência cardíaca fetal e hidropisia.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  },
+  {
+    "id": "AJUDA_46ebbcb0-9930-4bc6-95b8-08d85e7af7ea",
+    "originalId": "46ebbcb0-9930-4bc6-95b8-08d85e7af7ea",
+    "statement": "A confirmação diagnóstica laboratorial da dengue é feita por vários exames, dentre eles:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemograma e Elisa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PCR e pesquisa de antígeno NS1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ELISA e PCR.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ELISA e pesquisa de antígeno NS1.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico laboratorial da dengue é dividido em métodos diretos (detecção do vírus ou de suas partes) e métodos indiretos (detecção da resposta imunológica do hospedeiro). A escolha do exame depende do tempo de início dos sintomas.\n\nAlternativa a) Incorreta. O hemograma é um exame de suporte e monitoramento. Ele sugere o diagnóstico por meio de achados como leucopenia, trombocitopenia e hemoconcentração, mas não possui especificidade para confirmar a presença do vírus ou de anticorpos contra a dengue.\n\nAlternativa b) Incorreta. Tanto o PCR (que detecta o RNA viral) quanto a pesquisa do antígeno NS1 são exames confirmatórios de fase aguda (geralmente até o 5.º dia de sintomas). Embora ambos sejam confirmatórios, a literatura e as diretrizes de saúde pública frequentemente agrupam o NS1 e o ELISA (sorologia) como o par principal para cobrir tanto a fase inicial quanto a fase de convalescença.\n\nAlternativa c) Incorreta. O PCR é um método de biologia molecular altamente específico para a fase de viremia, e o ELISA é o método de escolha para sorologia. No entanto, o par antígeno NS1 e ELISA é a combinação mais clássica solicitada em provas para representar a confirmação em diferentes janelas temporais da doença.\n\nAlternativa d) Correta. Esta alternativa apresenta os dois métodos mais utilizados na rotina clínica para a confirmação diagnóstica. O antígeno NS1 é uma proteína secretada pelo vírus durante a fase de replicação, sendo detectável precocemente (do 1.º ao 5.º dia). O ELISA (Enzyme-Linked Immunosorbent Assay) é a técnica padrão utilizada para a detecção de anticorpos IgM e IgG, sendo fundamental para a confirmação diagnóstica após o 6.º dia de evolução, quando a carga viral diminui e a resposta imune se torna detectável.\n\nEm resumo, a confirmação laboratorial baseia-se na detecção de proteínas virais (NS1) na fase inicial ou na identificação da soroconversão ou da presença de anticorpos específicos (ELISA IgM) na fase posterior.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  },
+  {
+    "id": "AJUDA_470dc2b3-4b43-46ed-a94c-035d9e978a2b",
+    "originalId": "470dc2b3-4b43-46ed-a94c-035d9e978a2b",
+    "statement": "A enfermagem comunica ao médico que o teste do coraçãozinho de um RN com 37 semanas de idade gestacional fora feito com 26 horas de vida. O resultado foi 89% no membro superior direito e 92% no membro inferior esquerdo. Qual é a melhor conduta nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar ecocardiograma imediatamente para descartar cardiopatia congênita cianótica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar eletrocardiograma imediatamente para descartar alterações do ritmo cardíaco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir o teste do coraçãozinho em 1 hora e reavaliar resultado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não é necessária conduta adicional, já que a diferença de saturação entre os dois membros é de 3%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO teste do coraçãozinho (oximetria de pulso) é um rastreio obrigatório para identificar Cardiopatias Congênitas Críticas (dependentes de canal arterial) em recém-nascidos aparentemente saudáveis com idade gestacional acima de 34 semanas. O exame deve ser realizado entre 24 e 48 horas de vida, mensurando a saturação de oxigênio no membro superior direito (pré-ductal) e em um dos membros inferiores (pós-ductal).\n\nDe acordo com o protocolo da Sociedade Brasileira de Pediatria e do Ministério da Saúde, os critérios de interpretação são:\n\n1. Resultado Normal: Saturação maior ou igual a 95% em ambos os membros E diferença entre as medidas menor ou igual a 3%.\n2. Resultado Duvidoso: Saturação entre 90% e 94% OU diferença entre os membros maior ou igual a 4%. Conduta: Repetir o teste em 1 hora. Se o resultado persistir após três medidas, é considerado positivo.\n3. Resultado Positivo: Qualquer medida de saturação menor que 90%. Conduta: Realizar avaliação clínica e ecocardiograma.\n\nNo caso apresentado, o recém-nascido possui 89% de saturação no membro superior direito. Como esse valor é inferior a 90%, o teste é considerado positivo (alterado) de imediato.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Correta): Como o resultado foi menor que 90% em um dos membros, o protocolo define o teste como positivo. A conduta imediata é a avaliação médica detalhada seguida da realização do ecocardiograma para investigar anomalias estruturais cardíacas graves que necessitam de intervenção precoce.\n\nAlternativa B (Incorreta): O eletrocardiograma não é o exame indicado para o rastreio de cardiopatias congênitas estruturais no período neonatal. O ecocardiograma é o exame de escolha, pois permite a visualização da anatomia e do fluxo sanguíneo do coração.\n\nAlternativa C (Incorreta): A repetição do teste em 1 hora só deve ocorrer se os valores de saturação estivessem entre 90% e 94% ou se a diferença fosse maior ou igual a 4%. Valores abaixo de 90% já indicam falha direta no teste, sem necessidade de repetição para confirmação.\n\nAlternativa D (Incorreta): A conduta é necessária porque o valor absoluto de 89% é patológico. Para o teste ser considerado normal, a saturação deve ser obrigatoriamente igual ou maior que 95% nos dois locais de aferição, além de respeitar a diferença máxima de 3%. No caso, o paciente falhou no critério de valor absoluto mínimo.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  },
+  {
+    "id": "AJUDA_47153168-e0db-44f5-bd06-add7ffbb2d6b",
+    "originalId": "47153168-e0db-44f5-bd06-add7ffbb2d6b",
+    "statement": "O volvo gástrico é uma condição rara, mas potencialmente grave, caracterizada pela rotação do estômago ao longo de seu eixo, resultando em obstrução da saída gástrica. A manifestação clínica classicamente associada ao volvo gástrico agudo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tríade de Borchardt (dor intensa, vômitos severos, incapacidade de passar sonda).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Diarreia aquosa e desidratação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Icterícia e prurido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dor no quadrante inferior esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O volvo gástrico agudo é uma emergência cirúrgica que ocorre quando o estômago rotaciona sobre seu próprio eixo (seja no eixo organoaxial ou mesenteroaxial), levando a uma obstrução em alça fechada que pode evoluir para isquemia, necrose e perfuração.\n\nAlternativa a) Correta. A Tríade de Borchardt é o sinal clínico clássico associado ao volvo gástrico agudo, ocorrendo em cerca de 70% dos pacientes. Ela é composta por três achados fundamentais: 1. Dor epigástrica súbita e intensa; 2. Esforços de vômito repetidos, porém improdutivos (o paciente sente ânsia, mas não consegue expelir o conteúdo gástrico); 3. Incapacidade de progressão de uma sonda nasogástrica para o interior do estômago, devido à obstrução mecânica causada pela torção do órgão.\n\nAlternativa b) Incorreta. A diarreia não é um sintoma de volvo gástrico. Por se tratar de uma obstrução mecânica alta e severa, o trânsito intestinal é interrompido, impedindo a passagem de conteúdo para o trato digestivo distal.\n\nAlternativa c) Incorreta. Icterícia (amarelamento de pele e mucosas) e prurido (coceira) são sinais sugestivos de doenças hepatobiliares ou obstrução das vias biliares (colestase), como ocorre na coledocolitíase ou em tumores de cabeça de pâncreas, não tendo relação com a torção gástrica.\n\nAlternativa d) Incorreta. O estômago localiza-se no andar superior do abdome (epigástrio e hipocôndrio esquerdo). Portanto, a dor do volvo gástrico é superior e pode até irradiar para o tórax. Dor no quadrante inferior esquerdo é característica de afecções do cólon sigmoide (como diverticulite) ou problemas urológicos e ginecológicos.\n\nGabarito: Letra (a).",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  },
+  {
+    "id": "AJUDA_47259823-fd7f-4138-bf13-8d11808e91d5",
+    "originalId": "47259823-fd7f-4138-bf13-8d11808e91d5",
+    "statement": "Você atende uma paciente de 30 anos, nuligesta, com desejo de gestação, que veio à consulta de retorno da cirurgia de ooforectomia de ovário esquerdo, com o seguinte resultado no anátomo patológico: macroscopia - apresenta ovário esquerdo com tumor de 20 cm, unilocular com conteúdo fluido seroso com projeções papilares na parede interna. Microscopia apresenta diagnóstico de cistoadenoma seroso. Qual a conduta deverá ser seguida para a paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seguimento habitual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ooforectomia do ovário contralateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Congelamento de óvulos e ooforectomia do ovário contralateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ressonância magnética para estadiamento antes de seguir o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A análise desta questão exige o conhecimento sobre a natureza histopatológica dos tumores ovarianos e a conduta clínica baseada na benignidade ou na malignidade da lesão.\n\nO ponto fundamental para a resolução é o diagnóstico histopatológico: cistoadenoma seroso. O sufixo \"adenoma\" indica uma neoplasia benigna de origem epitelial. Embora o tumor apresentasse dimensões consideráveis (20 cm) e projeções papilares internas, o que poderia levantar suspeitas macroscópicas, o resultado microscópico definitivo confirmou ser uma lesão benigna.\n\nAnálise das alternativas:\n\na) Seguimento habitual: Esta é a alternativa correta. Uma vez que o tumor é benigno e a cirurgia de ooforectomia já foi realizada, o tratamento é considerado completo. Não há necessidade de intervenções adicionais invasivas ou terapias complementares. O acompanhamento ginecológico de rotina é suficiente para monitorar a saúde reprodutiva da paciente, que deseja engravidar.\n\nb) Ooforectomia do ovário contralateral: Incorreta. A realização de uma cirurgia radical em um ovário saudável seria um erro grave, especialmente em uma paciente de 30 anos, nuligesta e com desejo de gestação. Não se remove tecido ovariano funcional e saudável diante de um diagnóstico de patologia benigna no ovário oposto.\n\nc) Congelamento de óvulos e ooforectomia do ovário contralateral: Incorreta. O congelamento de óvulos é uma estratégia de preservação da fertilidade indicada antes de tratamentos gonadotóxicos (como quimioterapia) ou cirurgias mutiladoras por câncer. Como o diagnóstico é de cistoadenoma seroso (benigno), não há indicação para a retirada do outro ovário; logo, a preservação da fertilidade não exige medidas de exceção neste momento.\n\nd) Quimioterapia: Incorreta. A quimioterapia é uma modalidade terapêutica reservada para neoplasias malignas (câncer). Cistoadenomas não possuem comportamento invasivo nem capacidade de metástase; portanto, não respondem nem necessitam de tratamento quimioterápico.\n\ne) Ressonância magnética para estadiamento antes de seguir o tratamento: Incorreta. O estadiamento é o processo de determinar a extensão de uma doença maligna no organismo. Como o diagnóstico anatomopatológico confirmou que a lesão é benigna, o conceito de estadiamento não se aplica. O tratamento já foi finalizado com a exérese da lesão.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  },
+  {
+    "id": "AJUDA_4726fe88-6e2c-41fc-b74d-41b46d3d6593",
+    "originalId": "4726fe88-6e2c-41fc-b74d-41b46d3d6593",
+    "statement": "Homem, 62 anos, internado por pneumonia adquirida na comunidade, evolui com hipotensão persistente (PA – 78/50 mmHg) e taquicardia (FC – 128 bpm), apesar de reposição volêmica inicial com 30 mL/kg de cristaloide. Lactato sérico – 4,5 mmol/L. Exames laboratoriais indicam leucocitose e função renal levemente alterada. Qual é a conduta hemodinâmica inicial mais apropriada para o paciente, que apresenta choque séptico refratário à reposição volêmica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter reposição volêmica e aguardar normalização da pressão arterial antes de iniciar drogas vasoativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar norepinefrina como primeira droga vasoativa, ajustando a dose para atingir pressão arterial média ≥65 mmHg, enquanto continua suporte volêmico e monitoramento de perfusão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar dopamina em dose baixa para suporte renal preferencial, evitando norepinefrina inicialmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar fenilefrina como primeira linha, pois ela aumenta rapidamente a pressão arterial sem efeitos cardíacos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar apenas bolus adicional de cristaloides, sem uso de drogas vasoativas, até a normalização do lactato.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro clássico de choque séptico. Ele possui um foco infeccioso definido (pneumonia), hipotensão arterial persistente e hiperlactatemia (lactato de 4,5 mmol/L) mesmo após a reposição volêmica inicial adequada de 30 mL/kg de cristaloides. De acordo com as diretrizes internacionais da Surviving Sepsis Campaign, o choque séptico é definido pela necessidade de vasopressores para manter a Pressão Arterial Média (PAM) maior ou igual a 65 mmHg e lactato sérico maior que 2 mmol/L, após a reanimação volêmica.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Manter apenas a reposição volêmica em um paciente que já recebeu o volume inicial recomendado e permanece hipotenso aumenta o risco de sobrecarga hídrica, edema pulmonar e disfunção orgânica. O atraso no início da droga vasoativa está associado a maior mortalidade.\n\nAlternativa (b) Correta. A norepinefrina é o vasopressor de primeira escolha no choque séptico. Ela possui potente ação alfa-1 agonista, promovendo vasoconstrição e aumento da resistência vascular periférica, além de efeito beta-1 moderado, auxiliando no débito cardíaco. O objetivo é atingir uma PAM de pelo menos 65 mmHg para garantir a perfusão tecidual adequada, enquanto se monitora a resposta clínica e laboratorial (como a queda do lactato).\n\nAlternativa (c) Incorreta. A dopamina caiu em desuso como droga de primeira linha porque está associada a um maior índice de arritmias e maior mortalidade em subgrupos de choque séptico quando comparada à norepinefrina. O conceito de dose renal de dopamina para proteção do parênquima renal não tem base em evidências científicas sólidas.\n\nAlternativa (d) Incorreta. A fenilefrina é um agonista alfa-1 puro e não é recomendada como droga de primeira escolha. Seu uso é limitado a cenários específicos, como arritmias graves induzidas por outras catecolaminas ou em estados de débito cardíaco comprovadamente elevado com hipotensão refratária.\n\nAlternativa (e) Incorreta. Administrar apenas bolus adicionais de cristaloides pode ser prejudicial. No choque séptico, ocorre vasoplegia (perda do tônus vascular), e o uso de vasopressores é essencial para restaurar a pressão de perfusão. O lactato é um marcador de hipoperfusão, e sua normalização depende da restauração da pressão arterial e do fluxo sanguíneo, o que exige o uso de norepinefrina neste caso.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Sepse",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  },
+  {
+    "id": "AJUDA_4727b7b4-8389-42be-9b94-d12dd217ca09",
+    "originalId": "4727b7b4-8389-42be-9b94-d12dd217ca09",
+    "statement": "Paciente, feminino, 35 anos, foi levado ao HMS pela equipe do SAMU com relato de acidente de moto X carro. Após avaliação médica foi aventada a possibilidade de trauma de uretra. sobre o trauma de uretra, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em caso de trauma de uretra deve ser realizada sondagem de demora por profissional experiente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A fratura de bacia é associada à lesão de uretra membranosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A fratura de bacia está relacionada a lesão de uretra peniana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O exame ideal para diagnóstico de trauma de uretra é a cintilografia renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O diagnóstico de trauma de uretra é feito com radiografia de pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para dominar as questões de trauma urológico, o primeiro passo é a diferenciação anatômica. A uretra é dividida pelo diafragma urogenital em uretra posterior (prostática e membranosa) e uretra anterior (bulbar e peniana). No contexto de acidentes de alto impacto com fratura de pelve, a uretra posterior é a mais acometida.\n\nAnálise detalhada das alternativas:\n\nAlternativa A (Incorreta): Esta é a \"pegadinha\" mais comum em provas. Diante da suspeita de trauma de uretra (presença de sangue no meato, hematoma perineal ou retenção urinária), a sondagem vesical de demora é terminantemente contraindicada como manobra inicial. A passagem cega de uma sonda pode converter uma lesão parcial em lesão total, criar falsos trajetos e aumentar o risco de infecções e estenoses severas. A conduta correta é realizar primeiro a uretrocistografia retrógrada.\n\nAlternativa B (Correta): É a alternativa que descreve a correlação anatômica clássica. A uretra membranosa (parte da uretra posterior) atravessa o diafragma urogenital e está fixada à pelve óssea. Em traumas com fratura de bacia, especialmente aquelas que envolvem o anel pélvico anterior e ramos pubianos, as forças de cisalhamento rompem a uretra exatamente nesse ponto de fixação. Por isso, fratura de pelve é sinônimo de investigação para lesão de uretra membranosa.\n\nAlternativa C (Incorreta): A uretra peniana faz parte da uretra anterior. Seu mecanismo de lesão geralmente está ligado a traumas penetrantes, ferimentos por projétil de arma de fogo ou a fratura de pênis (trauma do corpo cavernoso durante o ato sexual). Não apresenta relação fixa com o anel ósseo da bacia como ocorre com a uretra posterior.\n\nAlternativa D (Incorreta): A cintilografia renal é um exame funcional para avaliar o parênquima renal, vascularização ou obstruções crônicas na junção ureteropélvica. Ela não possui resolução para avaliar a integridade da uretra. O exame padrão-ouro para o diagnóstico de trauma uretral é a uretrocistografia retrógrada, onde o contraste iodado é injetado pelo meato uretral e radiografias são obtidas para observar o extravasamento.\n\nAlternativa E (Incorreta): A radiografia de pelve é fundamental para diagnosticar o dano ósseo (a fratura de bacia), mas é um exame que não visualiza partes moles ou o trajeto uretral. Ela serve para levantar a suspeita clínica: se há fratura de bacia, o médico deve obrigatoriamente suspeitar de lesão de uretra posterior, mas o diagnóstico definitivo da lesão uretral depende da uretrocistografia.\n\nDestaques para memorização:\n- Tríade clássica: Sangue no meato + retenção urinária + bexiga distendida (bexigoma).\n- No toque retal: Próstata \"cefalizada\" ou \"flutuante\" (indica ruptura completa da uretra posterior).\n- Trauma \"em sela\" (queda sobre cano de bicicleta, por exemplo): Lesiona tipicamente a uretra bulbar (anterior).\n- Fratura de Bacia: Lesiona tipicamente a uretra membranosa (posterior).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Urologia",
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:38.782Z"
+  }
+]

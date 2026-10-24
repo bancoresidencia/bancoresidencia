@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_b52ca8f8-d8d6-4b9f-bd1a-7920c778152b",
+    "originalId": "b52ca8f8-d8d6-4b9f-bd1a-7920c778152b",
+    "statement": "Uma paciente de 40 anos de idade, com histórico de asma e rinite alérgica, apresenta quadro de dispneia progressiva e sibilos. O exame físico mostrou FC = 100 bpm, FR = 26 irpm, SatO2 = 89%. \n\nQual é a conduta imediata a ser adotada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar broncodilatador de ação curta e observar a resposta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar radiografia de tórax para avaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever corticoide sistêmico imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para hospitalização em unidade de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente apresenta uma exacerbação aguda de asma com sinais de gravidade, evidenciados pela taquipneia (FR 26 irpm) e, principalmente, pela hipoxemia (SatO2 89%). O manejo imediato em qualquer crise asmática visa reverter a obstrução brônquica e estabilizar a oxigenação da paciente.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Correta: O uso de broncodilatadores beta-2-agonistas de curta ação (como o salbutamol ou fenoterol) é a conduta inicial padrão e prioritária. Esses medicamentos agem rapidamente na musculatura lisa dos brônquios, promovendo a broncodilatação e melhorando o fluxo de ar em poucos minutos. Na prática clínica, o tratamento é iniciado simultaneamente com a oferta de oxigênio suplementar para elevar a saturação. A avaliação da resposta a essa medida inicial é o que define os próximos passos terapêuticos.\n\nAlternativa b) Incorreta: A radiografia de tórax não é um exame de rotina na crise de asma. Sua solicitação deve ser reservada para situações específicas, como suspeita de complicações (pneumotórax, pneumomediastino ou pneumonia), em pacientes que necessitam de internação ou naqueles que apresentam falha na resposta à terapia inicial. Realizar o exame antes de medicar a paciente atrasa o tratamento de socorro.\n\nAlternativa c) Incorreta: O corticoide sistêmico é fundamental no tratamento de crises moderadas e graves para reduzir a inflamação das vias aéreas e prevenir recidivas. No entanto, ele não possui efeito broncodilatador imediato, levando de 4 a 6 horas para iniciar sua ação clínica. Portanto, embora deva ser administrado precocemente na emergência, não é a medida de alívio imediato para o broncoespasmo agudo.\n\nAlternativa d) Incorreta: A indicação de Unidade de Terapia Intensiva (UTI) é reservada para casos de asma quase fatal (caracterizada por tórax silencioso, cianose, bradicardia ou exaustão respiratória) ou para pacientes que não apresentam melhora após o tratamento agressivo na sala de emergência. A paciente em questão apresenta sinais de gravidade, mas deve primeiro ser submetida ao protocolo de tratamento de resgate antes de se considerar a transferência para a UTI.\n\nConclusão: Diante de uma crise asmática, a prioridade absoluta é a reversão da obstrução respiratória com broncodilatadores de ação curta.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:54.792Z"
+  },
+  {
+    "id": "AJUDA_b53802de-732c-4485-ab4a-786516adcfa6",
+    "originalId": "b53802de-732c-4485-ab4a-786516adcfa6",
+    "statement": "Um estudo (Lancet Planetary Health 2025;9: e410 - 20) investigou a associação entre a temperatura média diária em 300 grandes cidades russas de 2000 - 2019 e o risco relativo de óbito por qualquer causa, exceto causas externas, estratificado por sexo e faixa etária, em relação à temperatura ideal (a de menor risco). Parte dos resultados desse estudo está ilustrada na figura a seguir:\n\nFigura: Pooled cumulative exposure response associations between daily temperature and non accidental mortality for the 300 largest Russian cities in 2000 19, stratified by age group for females (C) and males (D). Dashed vertical lines denote the 1st and 99th percentiles of the temperature distributions. Solid vertical lines denote minimum mortality temperature for the subgroups. Shaded areas denote 95% confidence intervals of relative risks.\n\nConsiderando os resultados desse estudo, assinale a alternativa que melhor os interpretam.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O estudo evidencia a associação indireta entre o extremo calor e o risco de óbito, direta entre temperaturas frias e risco de óbito, que são distintas para os sexos e as faixas etárias estudadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O estudo evidencia a associação indireta entre os extremos de temperatura e o risco relativo de óbito, que é uniforme para ambos os sexos e as faixas etárias estudadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O estudo evidencia a associação direta entre os extremos de temperatura e o risco relativo de óbito, que é uniforme para ambos os sexos e as faixas etárias estudadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O estudo evidencia a associação direta entre extremo calor e risco de óbito, indireta entre temperaturas frias e risco de óbito, que são distintas para os sexos e as faixas etárias estudadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A interpretação correta dos gráficos de risco relativo de mortalidade em relação à temperatura baseia-se na análise das direções das curvas a partir da temperatura de menor risco (ponto mais baixo das curvas, em torno de 20 graus Celsius):\n\n1. Efeito do calor (à direita da temperatura ótima): Conforme a temperatura aumenta, o risco de óbito também aumenta. Quando duas grandezas variam no mesmo sentido (aumento da temperatura levando ao aumento do risco), a associação é direta (positiva).\n\n2. Efeito do frio (à esquerda da temperatura ótima): Conforme a temperatura diminui (torna-se mais negativa), o risco de óbito aumenta. Quando duas grandezas variam em sentidos opostos (redução da temperatura levando ao aumento do risco), a associação é indireta ou inversa.\n\n3. Estratificação por idade e sexo: As curvas mostram inclinações e magnitudes de risco diferentes para as três faixas etárias (0 a 59 anos, 60 a 74 anos e 75 anos ou mais), com maior vulnerabilidade nos idosos, além de sutis diferenças entre mulheres (gráfico C) e homens (gráfico D), indicando que os efeitos são distintos e não uniformes entre os grupos.\n\nAnálise das alternativas:\n\n- Alternativa a: Incorreta. Inverte a relação das variáveis ao classificar o calor como indireto e o frio como direto.\n- Alternativa b: Incorreta. O calor tem relação direta com o risco (e não indireta) e o risco não é uniforme, pois varia de forma evidente entre as diferentes faixas etárias e sexos.\n- Alternativa c: Incorreta. O frio tem relação indireta (a temperatura cai e o risco sobe) e o efeito não é uniforme entre as faixas etárias e sexos.\n- Alternativa d: Correta. Aponta com precisão a associação direta com o calor, a associação indireta com o frio e a existência de efeitos distintos conforme sexo e faixa etária.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5ba6c5280f599e39dac1c4def3be51ec302b0d5402ab7c145872b1e4486e4073.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b53802de-732c-4485-ab4a-786516adcfa6_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:55.507Z"
+  },
+  {
+    "id": "AJUDA_b546ca54-db54-4d05-89e6-b5e65e90d7fc",
+    "originalId": "b546ca54-db54-4d05-89e6-b5e65e90d7fc",
+    "statement": "A endometriose é uma doença ginecológica benigna comum, multifocal e de comportamento infiltrativo. Acomete mulheres na idade reprodutiva e pode causar dor e infertilidade. \n\nSobre essa afecção, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histórico familiar não é um fator de risco para o desenvolvimento da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mulheres obesas parecem apresentar mais endometriose do que mulheres altas e magras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A prevalência estimada da endometriose é de 70% em mulheres em idade reprodutiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As intervenções cirúrgicas podem comprometer a reserva ovariana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Os tratamentos medicamentosos da endometriose melhoram a fertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A: Incorreta. O histórico familiar é um dos fatores de risco mais bem estabelecidos para a endometriose. Mulheres que possuem parentes de primeiro grau (mãe ou irmãs) com a doença apresentam um risco de 7 a 10 vezes maior de desenvolvê-la em comparação com a população sem histórico familiar.\n\nAlternativa B: Incorreta. Estudos epidemiológicos demonstram uma associação inversa entre o Índice de Massa Corporal (IMC) e a endometriose. A doença é mais frequentemente diagnosticada em mulheres com baixo IMC (mulheres magras) e maior estatura. A obesidade parece atuar como um fator de proteção relativo ou estar associada a formas menos graves da doença.\n\nAlternativa C: Incorreta. A prevalência da endometriose na população feminina em idade reprodutiva é estimada em cerca de 10%. Embora a prevalência seja significativamente maior em grupos específicos — chegando a 30% a 50% em mulheres com infertilidade ou dor pélvica crônica —, o valor de 70% é excessivo e não representa a realidade epidemiológica global.\n\nAlternativa D: Correta. Esta é uma preocupação central na medicina reprodutiva. A intervenção cirúrgica para endometriomas (cistos ovarianos de endometriose), especialmente a técnica de cistectomia, pode resultar na remoção acidental de tecido ovariano sadio ou causar dano vascular e térmico ao córtex ovariano. Isso leva a uma redução da reserva ovariana, o que é comumente evidenciado pela queda nos níveis de Hormônio Antimülleriano (AMH) e na contagem de folículos antrais após o procedimento.\n\nAlternativa E: Incorreta. O tratamento medicamentoso (hormonal) da endometriose é eficaz para o controle da dor, mas não melhora as taxas de fertilidade. Medicamentos como anticoncepcionais orais, progestagênios e análogos do GnRH agem suspendendo o ciclo menstrual e a ovulação, funcionando como contraceptivos durante o uso. Estudos mostram que não há ganho de fertilidade espontânea após a suspensão dessas medicações; o manejo da infertilidade na endometriose envolve cirurgia para restauração da anatomia ou técnicas de reprodução assistida.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:55.507Z"
+  },
+  {
+    "id": "AJUDA_b55c8610-6e1d-4189-a440-27ff308ba6e3",
+    "originalId": "b55c8610-6e1d-4189-a440-27ff308ba6e3",
+    "statement": "Uma gestante de 14 semanas realizou exame de VDRL com resultado de 1/128, sem demais alterações nos exames de primeiro trimestre.\n\nQual é a indicação referente ao tratamento inicial da paciente, segundo o protocolo do Ministério da Saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento com penicilina benzina, 2,4 milhões, dose única, em todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não há necessidade de tratamento do parceiro por não ser transmissível na gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não há necessidade de solicitar nenhum teste confirmatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há necessidade de aguardar confirmação diagnóstica para início do tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo da sífilis na gestação, um tema prioritário nas políticas de saúde pública para a prevenção da sífilis congênita. O protocolo do Ministério da Saúde é rigoroso para garantir que o tratamento ocorra o mais precocemente possível.\n\nAnálise das alternativas:\n\na) Incorreta. O esquema de dose única (2,4 milhões de unidades de Penicilina G Benzatina) é indicado apenas para sífilis primária, secundária ou latente recente (com menos de um ano de evolução). No caso de sífilis de duração ignorada ou latente tardia, o tratamento requer três doses (7,2 milhões de unidades no total). Portanto, não se aplica a \"todos os casos\".\n\nb) Incorreta. O parceiro sexual deve ser sempre avaliado e tratado concomitantemente. A sífilis é uma Infecção Sexualmente Transmissível (IST) e a ausência de tratamento do parceiro leva à reinfecção da gestante, o que invalida o esforço terapêutico para proteger o feto e mantém o risco de sífilis congênita.\n\nc) Incorreta. O teste confirmatório (teste treponemal, como o Teste Rápido, FTA-ABS ou TPHA) deve ser solicitado para confirmar o diagnóstico, uma vez que testes não treponemais (VDRL) podem apresentar resultados falso-positivos em condições como colagenoses, infecções virais e a própria gestação.\n\nd) Correta. Esta é a recomendação central do Ministério da Saúde para o atendimento de gestantes. Devido ao risco de transmissão vertical e às graves sequelas da sífilis congênita, na presença de um teste reagente (seja treponemal ou não treponemal), o tratamento deve ser iniciado de imediato. Não se deve retardar a medicação aguardando o resultado do segundo teste. Caso o teste confirmatório resulte negativo posteriormente, a conduta pode ser reavaliada, mas o início precoce é fundamental para a proteção fetal. O título de 1/128 apresentado na questão é elevado e reforça a necessidade de intervenção imediata.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:55.507Z"
+  },
+  {
+    "id": "AJUDA_b5602f73-2989-4bb0-b689-c4b02d5fe3a1",
+    "originalId": "b5602f73-2989-4bb0-b689-c4b02d5fe3a1",
+    "statement": "Das situações abaixo, a que representa uma indicação clássica de transplante hepático é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esteatose hepática não alcoólica leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cirrose hepática descompensada por hepatite C com ascite refratária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Metástase hepática de câncer colorretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cisto hepático simples assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Adenoma hepático de 3 cm assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. A esteatose hepática não alcoólica leve é uma condição extremamente comum, caracterizada pelo acúmulo de gordura no fígado sem inflamação significativa ou fibrose avançada. O tratamento é baseado em mudanças no estilo de vida, como dieta e exercícios físicos. O transplante só seria cogitado se a doença evoluísse para cirrose terminal ou carcinoma hepatocelular, o que não é o caso de uma forma leve.\n\nAlternativa b) Correta. Esta é a indicação clássica de transplante hepático. A cirrose é considerada descompensada quando surgem complicações graves como ascite (especialmente a refratária ao tratamento medicamentoso), encefalopatia hepática, hemorragia digestiva por varizes esofágicas ou icterícia persistente. A ascite refratária indica uma falência funcional grave e hipertensão portal acentuada, conferindo um prognóstico reservado e prioridade na lista de transplante por meio do escore MELD.\n\nAlternativa c) Incorreta. Tradicionalmente, metástases hepáticas de câncer colorretal não são indicações clássicas para transplante. O tratamento padrão para metástases ressecáveis é a hepatectomia parcial associada à quimioterapia. Embora existam protocolos de pesquisa recentes avaliando o transplante para casos selecionados e irressecáveis, isso ainda não faz parte da prática clínica rotineira e não é considerado uma indicação \"clássica\".\n\nAlternativa d) Incorreta. Cistos hepáticos simples são lesões benignas muito comuns e, quando assintomáticos, não requerem nenhum tipo de intervenção ou acompanhamento especial. Jamais seriam indicação para um procedimento de alta complexidade como o transplante.\n\nAlternativa e) Incorreta. O adenoma hepático é um tumor benigno. O manejo de adenomas pequenos (menores que 5 cm) em mulheres geralmente envolve apenas a suspensão de anticoncepcionais orais e observação por imagem. A cirurgia de ressecção (e não o transplante) é reservada para adenomas maiores que 5 cm, em homens ou em lesões com mutações específicas, pelo risco de ruptura e transformação maligna. O transplante só seria considerado em casos raríssimos de adenomatose maciça que impossibilitasse a função hepática normal ou a ressecção parcial.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Transplante Hepático e Hepatite Fulminante"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:55.507Z"
+  },
+  {
+    "id": "AJUDA_b5607b97-88b1-40c2-9929-71e9180442b7",
+    "originalId": "b5607b97-88b1-40c2-9929-71e9180442b7",
+    "statement": "Sobre o tratamento cirúrgico da doença diverticular, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na sigmoidectomia de urgência, a preservação da artéria mesentérica inferior e do mesocólon não deve ser realizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tratamento de diverticulite aguda Hinchey III com lavagem laparoscópica tem maior risco de reoperação de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Na ressecção do sigmoide de forma eletiva, mesmo excluída neoplasia colorretal, deve ser realizada ligadura proximal da artéria mesentérica inferior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em pacientes com Hinchey IV e estabilidade hemodinâmica é seguro realizar sigmoidectomia com anastomose, mas ileostomia de proteção deve ser sempre realizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "É o tratamento de escolha na diverticulite aguda Hinchey I.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa (a) INCORRETA: Diferentemente da cirurgia oncológica (para câncer de cólon), na diverticulite, a ressecção é para uma doença benigna. Portanto, não há necessidade de linfadenectomia extensa. A preservação da artéria mesentérica inferior e a dissecção rente ao mesocólon são recomendadas para evitar lesões dos nervos autonômicos e garantir a vascularização do remanescente colônico e retal.\n\nAlternativa (b) CORRETA: O tratamento de diverticulite purulenta (Hinchey III) com lavagem laparoscópica foi amplamente estudado em ensaios clínicos (como os estudos LOLA e SCANDIV). Embora seja menos invasivo que a ressecção, os resultados demonstraram que a lavagem está associada a uma taxa significativamente maior de reintervenções cirúrgicas de urgência e falha no controle do foco infeccioso em comparação com a sigmoidectomia.\n\nAlternativa (c) INCORRETA: Na cirurgia eletiva para doença diverticular, se a neoplasia foi excluída por exames pré-operatórios (como colonoscopia), a ligadura da artéria mesentérica inferior deve ser feita distalmente, preservando a artéria cólica esquerda. Não há indicação de ligadura proximal (high tie) em patologias benignas, visando à preservação nervosa e ao aporte sanguíneo.\n\nAlternativa (d) INCORRETA: Em casos de Hinchey IV (peritonite fecal), a conduta clássica ainda é a cirurgia de Hartmann. Embora estudos recentes mostrem que a ressecção com anastomose primária (com ou sem estomia de proteção) pode ser segura em pacientes muito selecionados e estáveis, afirmar que a ileostomia de proteção deve ser \"sempre\" realizada torna a alternativa incorreta, pois a conduta depende da estabilidade do paciente e do julgamento do cirurgião, além de que a anastomose primária em peritonite fecal ainda é um tema de debate e não a regra absoluta.\n\nAlternativa (e) INCORRETA: A diverticulite Hinchey I (flegmão ou pequeno abscesso pericólico) é de manejo eminentemente clínico. O tratamento de escolha consiste em antibioticoterapia, dieta líquida ou jejum e observação. A cirurgia é reservada apenas para casos de falha do tratamento conservador ou complicações específicas.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:55.507Z"
+  },
+  {
+    "id": "AJUDA_b566b007-5b9e-4ea6-8c77-0c87a6852614",
+    "originalId": "b566b007-5b9e-4ea6-8c77-0c87a6852614",
+    "statement": "Considerando as principais causas de mortalidade masculina no Brasil, segundo os capítulos do CID 10, é importante incluir, prioritariamente nas Campanhas do “Novembro Azul”, o rastreamento de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso de álcool e outras substâncias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tabagismo e hipertensão arterial sistêmica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "sedentarismo e infecções sexualmente transmissíveis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "medidas de proteção individual no trabalho e no trânsito",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a Política Nacional de Atenção Integral à Saúde do Homem (PNAISH) e o perfil epidemiológico da mortalidade masculina no Brasil. Tradicionalmente, o Novembro Azul era voltado apenas ao câncer de próstata. No entanto, o Ministério da Saúde recomenda uma abordagem ampliada, pois as doenças neoplásicas não são a causa número um de morte entre os homens no país.\n\nEstatisticamente, as doenças do aparelho circulatório (Capítulo IX da CID-10), como infarto e AVC, lideram as causas de óbito na população masculina, seguidas pelas causas externas (Capítulo XX) e pelas neoplasias (Capítulo II). Portanto, para reduzir a mortalidade, as campanhas devem priorizar o controle dos fatores de risco cardiovascular.\n\nAlternativa a: Incorreta. Embora o uso de álcool e outras substâncias contribua significativamente para acidentes e doenças crônicas (como cirrose), esses fatores não constituem o principal alvo de rastreamento clínico para redução da mortalidade geral quando comparados aos fatores de risco para doenças circulatórias.\n\nAlternativa b: Correta. O tabagismo e a hipertensão arterial sistêmica são os principais fatores de risco modificáveis para as doenças do aparelho circulatório. Como essas doenças são a principal causa de morte em homens no Brasil, o rastreamento sistemático e o manejo desses fatores durante as consultas de rotina e campanhas como o Novembro Azul são as estratégias com maior potencial de impacto na redução dos óbitos masculinos.\n\nAlternativa c: Incorreta. O sedentarismo é um fator de risco comportamental relevante, mas o rastreamento da hipertensão e do tabagismo permite intervenções clínicas e farmacológicas mais diretas e imediatas. As infecções sexualmente transmissíveis (ISTs), apesar de sua importância para a saúde pública e morbidade, não figuram entre as principais causas de mortalidade masculina total no Brasil.\n\nAlternativa d: Incorreta. As causas externas, que incluem acidentes de trânsito e de trabalho, representam a segunda principal causa de morte masculina geral (e a primeira entre jovens). No entanto, o termo rastreamento é tradicionalmente aplicado na medicina à detecção precoce de doenças ou fatores de risco biológicos em indivíduos assintomáticos. Além disso, o volume de mortes por doenças cardiovasculares ainda supera as causas externas na estatística geral, validando a hipertensão e o tabagismo como prioridades clínicas.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:55.507Z"
+  },
+  {
+    "id": "AJUDA_b5678f33-74a4-4460-a001-a6aa1c04bc81",
+    "originalId": "b5678f33-74a4-4460-a001-a6aa1c04bc81",
+    "statement": "Um paciente de 2 anos, foi internado na unidade de terapia intensiva (UTI) Pediátrica com quadro de pneumonia comunitária há 2 dias, em ventilação mecânica invasiva. Os parâmetros ventilatórios são: pressão inspiratória 16 cmH2O (acima da PEEP) x PEEP 8 cmH2O x FR 25 irpm x tempo inspiratório 0,7 x FiO2 100%, gerando volume corrente de 7,5 mL/kg. Colhida a gasometria arterial: pH 7,30, pO2 90, pCO2 45, bicarbonato 18 mEq/L, Sat. O2 90%. Qual parâmetro ventilatório pode ser alterado para melhorar a oxigenação do paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduzir a frequência respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar o volume corrente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar a PEEP.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aumentar a pressão inspiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aumentar o tempo expiratório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender os determinantes da oxigenação na ventilação mecânica. A oxigenação depende basicamente de dois fatores: a Fração Inspirada de Oxigênio (FiO2) e a Pressão Média de Vias Aéreas (MAP – Mean Airway Pressure).\n\nNo caso apresentado, o paciente já está recebendo FiO2 de 100%, o que significa que esse parâmetro atingiu seu limite máximo. Portanto, para melhorar a oxigenação, devemos obrigatoriamente aumentar a Pressão Média de Vias Aéreas. A MAP é influenciada pela Pressão Inspiratória, pelo Tempo Inspiratório, pela Frequência Respiratória e, principalmente, pela PEEP (Pressão Expiratória Final Positiva).\n\nAnálise das alternativas:\n\na) Incorreta. Reduzir a frequência respiratória diminuiria a Pressão Média de Vias Aéreas (MAP) e poderia levar a um aumento da PaCO2 (acidose respiratória), prejudicando a oxigenação em vez de melhorá-la.\n\nb) Incorreta. O paciente já está ventilando com um volume corrente de 7,5 mL/kg. Em quadros de pneumonia grave ou lesão pulmonar aguda, a recomendação de ventilação protetora é manter volumes entre 5 e 8 mL/kg. Aumentar o volume corrente aumentaria o risco de volutrauma (lesão pulmonar induzida pelo ventilador).\n\nc) Correta. O aumento da PEEP é a manobra mais eficaz e indicada para melhorar a oxigenação quando a FiO2 já está otimizada. A PEEP aumenta a capacidade residual funcional, recruta alvéolos colapsados e aumenta a superfície de troca gasosa, elevando a Pressão Média de Vias Aéreas sem necessariamente aumentar o pico de pressão inspiratória ou o volume corrente de forma perigosa.\n\nd) Incorreta. Embora o aumento da pressão inspiratória eleve a MAP e possa melhorar a oxigenação, ele também aumentaria o volume corrente. Como o paciente já está em 7,5 mL/kg, aumentar a pressão inspiratória elevaria o risco de barotrauma e volutrauma, sendo uma opção menos segura que o ajuste da PEEP.\n\ne) Incorreta. Aumentar o tempo expiratório geralmente implica reduzir o tempo inspiratório ou a frequência respiratória. Ambas as ações tendem a reduzir a Pressão Média de Vias Aéreas, o que resultaria na piora da oxigenação. Além disso, não há sinais de aprisionamento aéreo (auto-PEEP) que justifiquem o aumento do tempo expiratório.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Pneumologia Intensiva",
+      "Emergências Pediátricas",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:55.507Z"
+  },
+  {
+    "id": "AJUDA_b567f5c9-d14b-4f12-9a58-7f976b110c31",
+    "originalId": "b567f5c9-d14b-4f12-9a58-7f976b110c31",
+    "statement": "Mulher de 35 anos, com obesidade grau III, realizou tomografia computadorizada (TC) de coluna torácica por escoliose, que evidenciou incidentaloma de 7cm em adrenal direita. Tem história prévia de disgerminoma ovariano operado aos 25 anos. Em relação à investigação diagnóstica, NÃO está indicada a realização de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "teste com supressão com 1mg de dexametasona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ressonância magnética (RM) com gadolíneo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "punção aspirativa por agulha fina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "teste de metanefrinas urinárias",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O manejo de um incidentaloma adrenal de grandes dimensões (7 cm) em uma paciente jovem deve focar em duas frentes principais: a avaliação da funcionalidade hormonal e a avaliação do potencial de malignidade.\n\nAlternativa A: O teste de supressão com 1 mg de dexametasona é o exame de rastreio inicial padrão para avaliar a secreção autônoma de cortisol. Ele é obrigatório em todos os casos de incidentaloma adrenal, independentemente do tamanho da lesão ou da presença de sintomas, para descartar a síndrome de Cushing subclínica. Portanto, está indicado.\n\nAlternativa B: A ressonância magnética (RM) com gadolínio é um método de imagem complementar importante. Ela auxilia na caracterização da lesão, permitindo avaliar o conteúdo de gordura intracitoplasmática (técnica de desvio químico ou *chemical shift*), a presença de necrose e a invasão de tecidos ou vasos adjacentes. Em massas de 7 cm, onde a suspeita de carcinoma adrenocortical é elevada, a RM ajuda no planejamento cirúrgico e no estadiamento local. Portanto, está indicada.\n\nAlternativa D: A dosagem de metanefrinas (urinárias ou plasmáticas) é fundamental para descartar feocromocitoma. Esta investigação é mandatória antes de qualquer procedimento ou cirurgia, pois a manipulação de um feocromocitoma não diagnosticado pode levar a crises hipertensivas graves e fatais. Mesmo em pacientes normotensos, a secreção de catecolaminas deve ser excluída. Portanto, está indicada.\n\nAlternativa C (Gabarito): A punção aspirativa por agulha fina (PAAF) NÃO está indicada neste cenário. Existem três razões principais para isso:\n1. A citologia obtida pela punção não consegue diferenciar com segurança um adenoma benigno de um carcinoma adrenocortical. O diagnóstico de malignidade em tumores primários da adrenal depende da análise histopatológica completa da peça cirúrgica (critérios de Weiss), observando invasão capsular, vascular e arquitetura tecidual.\n2. Existe um risco real de disseminação de células neoplásicas (semeadura) ao longo do trajeto da agulha em casos de carcinoma.\n3. A punção de um feocromocitoma sem bloqueio alfa-adrenérgico prévio pode desencadear uma crise catecolaminérgica maciça.\nA biópsia adrenal só é considerada em casos muito específicos: quando há suspeita de metástase de um câncer extra-adrenal conhecido (e a confirmação mudaria a conduta terapêutica) e somente após o feocromocitoma ter sido categoricamente excluído por exames laboratoriais. No caso descrito, uma massa de 7 cm tem indicação direta de ressecção cirúrgica pelo alto risco de malignidade.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:55.507Z"
+  },
+  {
+    "id": "AJUDA_b5680c35-3992-483f-9283-a7e2fa3249c4",
+    "originalId": "b5680c35-3992-483f-9283-a7e2fa3249c4",
+    "statement": "Homem, 20 anos de idade, em acompanhamento por transtorno bipolar, é avaliado em consulta devido a queixa de aumento da sede e da diurese. Exames laboratoriais séricos pertinentes: cálcio total = 15,1 mg/dL (VR 8,2-10,6 mg/dL), fósforo = 3,4 mg/dL (VR 2,5-4,5 mg/dL), creatinina = 0,95 mg/dL (VR 0,70-1,10 mg/dL), PTH = 10 pg/mL (VR 10-70 pg/mL). Qual é a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carcinoma de paratiroide",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de lítio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mutação inativadora do sensor de cálcio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Intoxicação por vitamina D",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta um paciente jovem com hipercalcemia grave (cálcio total de 15,1 mg/dL) associada a sintomas de polidipsia e poliúria (decorrentes do diabetes insípido nefrogênico induzido pelo excesso de cálcio). O ponto-chave para o diagnóstico diferencial das hipercalcemias é a dosagem do PTH. Neste paciente, o PTH está em 10 pg/mL, o que representa um valor no limite inferior da normalidade, estando, portanto, apropriadamente suprimido diante de uma hipercalcemia tão importante. Isso caracteriza uma hipercalcemia PTH-independente.\n\nAnálise das alternativas:\n\na) Incorreta. O carcinoma de paratireoide é uma causa de hipercalcemia PTH-dependente. Nesses casos, encontraríamos níveis de PTH extremamente elevados (geralmente várias vezes acima do limite superior da normalidade), o que é o oposto do que o exame do paciente demonstra.\n\nb) Incorreta. O uso de lítio (comum no tratamento do transtorno bipolar) pode causar hipercalcemia por elevar o *set-point* do sensor de cálcio nas paratireoides, simulando um hiperparatireoidismo primário. Contudo, nessa condição, o PTH estaria elevado ou seria \"inapropriadamente normal\" (alto para o nível de cálcio), e não suprimido como no caso clínico. Além disso, a hipercalcemia pelo lítio costuma ser leve a moderada.\n\nc) Incorreta. A mutação inativadora do sensor de cálcio (CaSR) está relacionada à Hipercalcemia Hipocalciúrica Familiar (FHH). Nesta doença, o cálcio é levemente elevado e o PTH costuma ser normal ou levemente aumentado, pois as paratireoides não \"percebem\" o cálcio sérico adequadamente. Um valor de 15,1 mg/dL de cálcio é muito atípico para essa condição.\n\nd) Correta. A intoxicação por vitamina D leva a uma absorção intestinal excessiva de cálcio e ao aumento da reabsorção óssea, resultando em hipercalcemia grave. Esse excesso de cálcio circulante exerce um *feedback* negativo nas glândulas paratireoides, suprimindo a secreção de PTH. Portanto, níveis elevados de cálcio com PTH baixo/suprimido sugerem causas não relacionadas à paratireoide, sendo a intoxicação por vitamina D a alternativa que melhor se encaixa no perfil laboratorial de hipercalcemia PTH-independente. No caso clínico, o fósforo está normal, o que pode ocorrer dependendo da fase da intoxicação ou do aporte dietético, mas o parâmetro decisivo é a supressão do PTH.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:55.507Z"
+  }
+]

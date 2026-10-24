@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_aeb945b0-977b-4b99-a07e-da880039a53f",
+    "originalId": "aeb945b0-977b-4b99-a07e-da880039a53f",
+    "statement": "Menino, com 13 anos e 9 meses de idade, consulta com queixa que é o menor entre os seus amigos. Não faz uso de medicação crônica. Mãe informa que com 12 anos e 3 meses de idade a estatura era de 157 cm. Pai com 181 cm (percentil 75) e mãe com 172 cm (percentil 90). Ao exame, paciente com 161 cm (percentil 50), 56 kg (percentil 75), IMC 22 (percentil 85), pubarca estágio 2 pela escala de Tanner e testículos com 2 ml pelo Orquidômetro de Prader. Qual o diagnóstico do caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retardo constitucional de crescimento e puberdade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença celíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Klinefelter.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deficiência de hormônio de crescimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Paciente não apresenta falha de crescimento, pois a estatura está no percentil 50.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental realizar a análise clínica e auxológica dos dados apresentados, focando no alvo genético, na velocidade de crescimento e no estado nutricional.\n\nCálculo do alvo genético: Para meninos, o cálculo é (Altura do pai + Altura da mãe + 13) / 2. No caso: (181 + 172 + 13) / 2 = 183 cm. O paciente está atualmente no percentil 50 (161 cm), o que está significativamente abaixo do seu potencial genético, que estaria entre os percentis 75 e 90.\n\nCálculo da Velocidade de Crescimento (VC): O paciente cresceu de 157 cm para 161 cm em um intervalo de 1 ano e 6 meses (1,5 anos). Portanto, 4 cm divididos por 1,5 anos resultam em uma velocidade de crescimento de 2,66 cm/ano. Para um menino na fase pré-puberal, uma VC abaixo de 4 cm/ano é considerada patológica.\n\nAnálise do desenvolvimento puberal: O paciente possui testículos de 2 ml pelo orquidômetro de Prader, o que indica que ele ainda é pré-púbere (a puberdade masculina inicia-se com volume testicular maior ou igual a 4 ml). Aos 13 anos e 9 meses, ele apresenta um atraso constitucional da puberdade associado ao déficit de crescimento.\n\nExplicação das alternativas:\n\na) Incorreta. No Retardo Constitucional do Crescimento e da Puberdade (RCCP), a velocidade de crescimento costuma estar no limite inferior da normalidade para a idade óssea, mas raramente é tão baixa quanto 2,6 cm/ano sem que haja uma patologia. Além disso, crianças com RCCP são tipicamente magras ou têm peso adequado para a estatura, enquanto este paciente tem IMC no percentil 85 (sobrepeso).\n\nb) Incorreta. Doenças sistêmicas, como a doença celíaca, costumam comprometer o ganho de peso antes de afetarem a estatura. O fato de o paciente ter um IMC elevado (percentil 85) torna causas gastrointestinais ou desabsortivas muito improváveis.\n\nc) Incorreta. A Síndrome de Klinefelter (47, XXY) geralmente cursa com estatura elevada ou normal, membros longos e atraso puberal, mas não com baixa velocidade de crescimento na infância ou pré-puberdade.\n\nd) Correta. A Deficiência de Hormônio de Crescimento (DGH) manifesta-se tipicamente com uma desaceleração importante da velocidade de crescimento. Uma característica clássica em provas de residência é a associação de baixa estatura (ou baixa velocidade de crescimento) com a manutenção do peso ou aumento do IMC (aspecto de boneco de gesso ou criança baixa e com sobrepeso), além do atraso na maturação puberal e na idade óssea.\n\ne) Incorreta. O diagnóstico de falha de crescimento não depende apenas da posição atual no gráfico de percentis, mas sim da dinâmica do crescimento. Uma velocidade de crescimento de 2,6 cm/ano é francamente patológica, e o fato de o paciente estar se distanciando do seu alvo genético (183 cm) confirma que há uma falha de crescimento em curso.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  },
+  {
+    "id": "AJUDA_aeb993b1-9f49-4f01-8af1-9b7c29177d6f",
+    "originalId": "aeb993b1-9f49-4f01-8af1-9b7c29177d6f",
+    "statement": "Paciente de 46 anos previamente hígida procura assistência médica devido à aumento do volume abdominal, associado à dor e constipação há 1 mês. Nega febre ou outros sintomas. Ao exame físico apresenta abdômen distendido, endurecido, doloroso à palpação difusa, sinal de piparote positivo. USG transvaginal com complementação abdominal evidenciando grande quantidade de líquido livre na cavidade, tumorações complexas bilateralmente em região de anexos, medindo 7cm à direita e 11cm à esquerda, septos grosseiros com vascularização com baixo índice de resistência, exibindo vegetações parietais no seu interior, útero de tamanho e morfologia dentro da normalidade. Traz exames de rotina ginecológica realizada 6 meses antes, sem alterações. Qual a hipótese diagnóstica e a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cisto ovariano hemorrágico roto / Ooforoplastia bilateral videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Câncer de ovário / videolaparoscopia diagnóstica com biópsia de congelação (ovariana ou de implantes peritoniais). Se biópsia positiva para malignidade, avaliar citorredução máxima R0 (“debulking”). Caso não seja tecnicamente possível, indicado quimioterapia neoadjuvente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Câncer de ovário / laparotomia exploradora para histerectomia total com salpingooforectomia bilateral. Aguardar resultado de biópsia de parafina para definição de adjuvância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Endometriose profunda com endometriomas bilaterais / Ooforoplastia bilateral videolaparoscópica com ressecção cirúrgica de focos de endometriose e inserção de DIU medicado com progesterona para bloqueio da menstruação e controle de sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cistadenoma mucinoso de ovário roto / Ooforectomia bilateral laparotômica, com lavagem exaustiva da cavidade. Risco de choque tireotóxico devido à mucina ter comportamento biológico semelhante ao hormônio tireoidiano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nA paciente de 46 anos apresenta um quadro clássico de suspeita de neoplasia maligna de ovário. Os pontos-chave são: a evolução rápida (exames normais há 6 meses), o aumento do volume abdominal com ascite volumosa (sinal de piparote positivo) e os achados ultrassonográficos de alta suspeição para malignidade. O ultrassom descreve massas complexas bilaterais, com septos grosseiros, vegetações internas e vascularização de baixo índice de resistência, o que indica neovascularização tumoral.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. Cistos hemorrágicos rotos manifestam-se habitualmente com dor pélvica aguda e sinais de irritação peritoneal súbita, sem o histórico de aumento progressivo do volume abdominal por um mês. Além disso, a ultrassonografia de um cisto hemorrágico não apresentaria vegetações parietais vascularizadas e septos grosseiros como os descritos.\n\nAlternativa b) Correta. Diante da alta suspeição de câncer de ovário (pontuação elevada em critérios como IOTA ou O-RADS), a conduta envolve o diagnóstico histopatológico e o estadiamento. A videolaparoscopia é uma excelente ferramenta inicial para avaliar a ressecabilidade da doença (índice de Fagotti). A biópsia de congelação permite a confirmação diagnóstica intraoperatória. O objetivo principal do tratamento cirúrgico é a citorredução máxima (R0), ou seja, a retirada de toda a doença macroscópica. Quando a cirurgia inicial não é tecnicamente capaz de atingir esse objetivo sem riscos excessivos para a paciente, indica-se a quimioterapia neoadjuvante seguida de cirurgia de intervalo.\n\nAlternativa c) Incorreta. Embora o diagnóstico de câncer de ovário esteja correto nesta alternativa, a conduta cirúrgica proposta é incompleta. O tratamento do câncer de ovário requer estadiamento completo (que inclui omentectomia, linfadenectomia e citologia/biópsias peritoneais) e citorredução, e não apenas a histerectomia com anexectomia. Além disso, aguardar o resultado de parafina para definir a conduta é inadequado, pois a biópsia de congelação deve guiar a extensão da cirurgia no mesmo ato operatório.\n\nAlternativa d) Incorreta. Endometriomas ovarianos possuem uma aparência ultrassonográfica característica de conteúdo hipoecoico homogêneo (aspecto de vidro fosco) e raramente apresentam ascite volumosa ou vegetações vascularizadas. O quadro clínico de aumento rápido de volume e constipação em uma paciente de 46 anos é um sinal de alerta para câncer, e não para endometriose.\n\nAlternativa e) Incorreta. O cistadenoma mucinoso pode romper e causar o pseudomixoma peritoneal, mas a afirmação sobre o choque tireotóxico está incorreta. A confusão teórica aqui se refere ao Struma ovarii, que é um teratoma altamente especializado composto por tecido tireoidiano que pode, raramente, causar tireotoxicose. A mucina não possui comportamento biológico semelhante ao hormônio tireoidiano.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  },
+  {
+    "id": "AJUDA_aebd80b9-e516-411b-854d-47189bdbe91b",
+    "originalId": "aebd80b9-e516-411b-854d-47189bdbe91b",
+    "statement": "Maria, 28 anos, procura atendimento ginecológico queixando-se de irregularidade menstrual há seis meses e crescimento de pelos em excesso na face e no peito. Ela menciona que a menstruação, antes regular, agora ocorre a cada dois ou três meses. Ao exame físico, notam-se pelos escuros e grossos na região do queixo e na linha média do abdômen. Sobre o hirsutismo e a Síndrome dos Ovários Policísticos (SOP), é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O hirsutismo pode ser diagnosticado mesmo com um escore normal se houver crescimento de pelos em áreas típicas, como a face.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Em pacientes hispânicas, considera-se hirsutismo um escore maior ou igual a seis no índice de Ferriman Gallwey.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O índice de Ferriman-Gallwey considera apenas a quantidade de pelos na face para o diagnóstico de hirsutismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O hirsutismo é sempre acompanhado de irregularidade menstrual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os critérios diagnósticos do hirsutismo e sua relação com disfunções endócrinas, como a Síndrome dos Ovários Policísticos (SOP). O hirsutismo é definido como a presença de pelos terminais (pelos grossos, pigmentados e longos) em áreas de distribuição tipicamente masculina na mulher.\n\nAnálise das alternativas:\n\nAlternativa A (CORRETA): O diagnóstico de hirsutismo é essencialmente clínico. Embora o Índice de Ferriman-Gallwey seja a ferramenta padronizada para quantificar a extensão do hirsutismo, a presença de pelos terminais em áreas altamente sensíveis aos andrógenos, como a face (queixo, buço) e o peito, é suficiente para o diagnóstico clínico. Em muitos casos, mesmo que a soma total das nove áreas do corpo não atinja o ponto de corte numérico rígido, a presença localizada de pelos terminais nessas áreas indica uma ação androgênica anômala que merece investigação e tratamento.\n\nAlternativa B (INCORRETA): O ponto de corte no Índice de Ferriman-Gallwey varia conforme a etnia. Para mulheres brancas (caucasianas), negras e hispânicas, o escore utilizado para definir hirsutismo é geralmente maior ou igual a 8. Escores mais baixos, como 2 ou 3, são reservados para populações que naturalmente possuem menor densidade de folículos pilosos, como as mulheres de etnia asiática (orientais).\n\nAlternativa C (INCORRETA): O Índice de Ferriman-Gallwey modificado é uma escala visual que avalia o crescimento de pelos em nove áreas distintas do corpo, e não apenas na face. As áreas são: lábio superior, queixo, tórax, abdômen superior, abdômen inferior, braços, coxas, dorso superior e região sacral (dorso inferior). Cada área recebe uma pontuação de 0 a 4, totalizando um escore máximo de 36.\n\nAlternativa D (INCORRETA): O hirsutismo não é obrigatoriamente acompanhado de irregularidade menstrual. No hirsutismo idiopático, por exemplo, a mulher apresenta excesso de pelos, mas mantém ciclos ovulatórios regulares e níveis de andrógenos circulantes normais. Isso ocorre devido a uma maior sensibilidade local dos folículos pilosos aos hormônios ou a um aumento da atividade da enzima 5-alfa-redutase na pele. Na SOP, a irregularidade menstrual é comum, mas não é uma regra universal para todos os casos de excesso de pelos.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  },
+  {
+    "id": "AJUDA_aec995a0-7af4-492d-8985-7918e07109d9",
+    "originalId": "aec995a0-7af4-492d-8985-7918e07109d9",
+    "statement": "Paciente masculino, 56 anos, vítima de politrauma, encontra-se em ventilação mecânica na UTI há 5 dias. Apresenta Glasgow 8, múltiplas fraturas costais e contusão pulmonar bilateral. A equipe prevê necessidade de ventilação mecânica por, no mínimo, 14 dias. Considerando as evidências atuais sobre traqueostomia em pacientes críticos, qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Optar pela traqueostomia somente se houver falha na extubação após o 14º dia de ventilação mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar traqueostomia percutânea precoce apenas se houver evidência de infecção de vias aéreas superiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar traqueostomia apenas no centro cirúrgico, visto que a percutânea apresenta maior risco de complicações graves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter intubação orotraqueal até o 14º dia, pois não há benefício comprovado na realização precoce de traqueostomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar traqueostomia precoce (até 7 dias), pois há evidência de redução de tempo de ventilação mecânica e permanência na UTI, mesmo sem impacto consistente na mortalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente em questão apresenta um quadro de politrauma grave com traumatismo cranioencefálico (Glasgow 8), múltiplas fraturas costais e contusão pulmonar. A equipe assistencial já prevê uma necessidade de ventilação mecânica prolongada (superior a 14 dias). Nesses casos, a discussão gira em torno do momento ideal para a realização da traqueostomia: precoce (geralmente até 7 dias) versus tardia (após 10 a 14 dias).\n\nAlternativa A - Incorreta: \nAguardar a falha de extubação após 14 dias para só então indicar a traqueostomia submete o paciente aos riscos de uma intubação orotraqueal prolongada desnecessariamente, como lesões laríngeas e estenose de traqueia. Em pacientes com previsão clara de ventilação prolongada, a conduta deve ser proativa e não apenas reativa à falha de extubação.\n\nAlternativa B - Incorreta: \nA indicação de traqueostomia no paciente crítico não está relacionada à presença de infecção de vias aéreas superiores. As indicações principais são a necessidade de ventilação mecânica prolongada, proteção de via aérea em pacientes com baixo nível de consciência e higiene brônquica facilitada.\n\nAlternativa C - Incorreta: \nA traqueostomia percutânea à beira-leito é um procedimento seguro e amplamente validado em Unidades de Terapia Intensiva. Quando realizada por profissionais treinados e em pacientes com anatomia favorável, apresenta taxas de complicações comparáveis ou até menores que a técnica cirúrgica convencional, além de evitar os riscos do transporte de um paciente crítico para o centro cirúrgico.\n\nAlternativa D - Incorreta: \nEmbora existam debates na literatura, grandes metanálises e estudos clínicos sugerem que a traqueostomia precoce traz benefícios. Dizer que não há nenhum benefício comprovado é incorreto, pois a redução do tempo de sedação e a facilitação do desmame ventilatório são vantagens observadas na prática clínica e em diversos estudos.\n\nAlternativa E - Correta (Gabarito): \nA tendência atual para pacientes com prognóstico de ventilação mecânica prolongada (como no caso de trauma torácico grave e neurológico) é a realização da traqueostomia precoce (em até 7 dias). As evidências demonstram que essa estratégia reduz os dias de ventilação mecânica, facilita o desmame da sedação (melhorando o conforto e a comunicação) e encurta a permanência na UTI. É importante ressaltar que, apesar desses benefícios logísticos e de conforto, a maioria dos estudos não conseguiu demonstrar uma redução consistente na mortalidade global, o que valida exatamente o texto da alternativa.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Trauma",
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  },
+  {
+    "id": "AJUDA_aecb7ce5-6fb7-4285-a9c1-9120ed27a62f",
+    "originalId": "aecb7ce5-6fb7-4285-a9c1-9120ed27a62f",
+    "statement": "Mulher de 27 anos com dor abdominal iniciada há 3 dias, refere dor epigástrica sem fator desencadeante com evolução para dor em andar inferior do abdome, associada a um pico febril de 38,5ºC. Nas últimas 6 horas refere piora da dor que se tornou difusa. No início do quadro procurou atendimento na UPA tendo sido medicada com ciprofloxacino (em uso há 48h) devido a diagnóstico de infecção urinária (sic). Antecedentes: cisto de ovário simples, D.U.M. há 7 dias, sem cirurgias prévias. Sem outras doenças. Ao exame físico: PA 100x60 mmHg, FC 95 bpm, dor à palpação abdominal difusamente, pior em hipogástrio, com dor à descompressão brusca difusamente. IMC: 38 kg/m². Laboratoriais: Hemograma: Hb 14 (VR: 12,0 - 15,5 g/dL), Leucócitos 15000 (VR: 3500 - 10500/mm³); PCR 22 (VR: até 0,5 mg/dL), restante sem alterações.\nQual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ultrassom transvaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Laparotomia mediana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Escalonar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma mulher jovem com dor abdominal de início epigástrico com migração para andar inferior e posterior difusão, associada a febre, leucocitose, elevação importante de PCR e, fundamentalmente, dor à descompressão brusca difusa (sinais de peritonite generalizada). A história de dor epigástrica migratória é clássica de apendicite aguda (cronologia de Murphy), que pode ter evoluído para perfuração, embora patologias ginecológicas complicadas (como abscesso tubo-ovariano roto ou DIP complicada) também façam parte do diagnóstico diferencial. Trata-se de um abdome agudo cirúrgico inflamatório/perfurativo em paciente obesa (IMC 38 kg/m2).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. Diante de um abdome agudo cirúrgico com peritonite generalizada e diagnóstico clínico definido de necessidade cirúrgica, postergar a intervenção para a realização de exames de imagem adicionais apenas atrasa o tratamento definitivo.\n\nAlternativa b: Correta. A videolaparoscopia é a conduta de escolha, pois atua de forma diagnóstica e terapêutica. Em mulheres jovens em idade fértil, permite diferenciar com precisão afecções ginecológicas de causas gastrointestinais (como apendicite). Além disso, na presença de obesidade (IMC 38 kg/m2), a via laparoscópica reduz expressivamente as complicações de ferida operatória, como infecção e hérnia incisional, além de proporcionar melhor visualização e menor tempo de recuperação.\n\nAlternativa c: Incorreta. A laparotomia mediana é mais invasiva e apresenta elevada taxa de complicações de parede (deiscências, infecções e hérnias), especialmente em pacientes com IMC elevado. Ela fica reservada para casos de choque/instabilidade hemodinâmica grave refratária ou contraindicações formais ao pneumoperitônio.\n\nAlternativa d: Incorreta. O quadro de peritonite difusa decorrente de perfuração de víscera ou abscesso roto exige controle cirúrgico do foco. O escalonamento isolado de antimicrobianos sem abordagem cirúrgica é insuficiente e aumenta a morbimortalidade da paciente.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Apendicite Aguda",
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  },
+  {
+    "id": "AJUDA_aecbd9fd-4b5b-4a68-b0ab-2635d0c42507",
+    "originalId": "aecbd9fd-4b5b-4a68-b0ab-2635d0c42507",
+    "statement": "Um serviço para ser considerado de Atenção Primária à Saúde necessita apresentar alguns atributos, os quais podem ser divididos em essenciais ou derivados. Em uma UBS em condições precárias de atendimento, tais como horário limitado de agendamento, ausência de prontuários para registro das consultas e não disponibilidade de materiais para procedimentos cirúrgicos ambulatoriais, quais atributos estão sendo comprometidos respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acesso, equidade e integralidade do cuidado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acesso, longitudinalidade e integralidade do cuidado",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Coordenação do cuidado, longitudinalidade e competência cultural",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coordenação do cuidado, longitudinalidade e orientação comunitária",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é fundamental conhecer os atributos da Atenção Primária à Saúde (APS) propostos por Bárbara Starfield. Eles são divididos em essenciais (Acesso de Primeiro Contato, Longitudinalidade, Integralidade e Coordenação) e derivados (Orientação Familiar, Orientação Comunitária e Competência Cultural).\n\nA questão descreve três problemas específicos em uma Unidade Básica de Saúde (UBS). Vamos analisá-los individualmente para identificar qual atributo está sendo prejudicado:\n\n1. Horário limitado de agendamento: Refere-se à acessibilidade e à capacidade da unidade de ser a porta de entrada preferencial do sistema. Quando o paciente não consegue agendar ou encontrar o serviço aberto no momento da necessidade, o atributo comprometido é o ACESSO (ou Acesso de Primeiro Contato).\n\n2. Ausência de prontuários para registro das consultas: O prontuário é a ferramenta essencial para manter a continuidade do cuidado ao longo do tempo. Sem o registro histórico das consultas, o médico não consegue acompanhar a evolução do paciente, o que fere o vínculo e a continuidade clínica. O atributo comprometido é a LONGITUDINALIDADE.\n\n3. Indisponibilidade de materiais para procedimentos cirúrgicos ambulatoriais: A APS deve ser capaz de resolver a grande maioria dos problemas de saúde da população, oferecendo uma ampla gama de serviços que vão desde a prevenção até pequenos procedimentos. Se a unidade não oferece o que é esperado para o seu nível de complexidade (como pequenas cirurgias), ela falha em oferecer um cuidado completo. O atributo comprometido é a INTEGRALIDADE.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o acesso e a integralidade apareçam, a equidade é um princípio doutrinário do SUS, não um atributo específico da APS conforme a taxonomia de Starfield. Além disso, a falta de prontuários está diretamente ligada à longitudinalidade, não à equidade.\n\nAlternativa b) CORRETA. Esta alternativa correlaciona exatamente os problemas citados com os atributos correspondentes: Horário limitado (Acesso), Ausência de prontuários (Longitudinalidade) e Falta de materiais para procedimentos (Integralidade).\n\nAlternativa c) Incorreta. A Coordenação do cuidado refere-se à capacidade da APS de organizar o fluxo do paciente dentro da rede de saúde (referência e contrarreferência). A Competência Cultural é um atributo derivado que diz respeito à adaptação do cuidado aos costumes e cultura da população local, o que não tem relação direta com a falta de materiais cirúrgicos.\n\nAlternativa d) Incorreta. Novamente, a coordenação não é o foco principal dos problemas descritos. A Orientação Comunitária refere-se ao conhecimento das necessidades de saúde da comunidade por meio de dados epidemiológicos, o que também não se encaixa na descrição da falta de materiais para procedimentos.\n\nPortanto, a sequência correta de atributos comprometidos pelas falhas estruturais e organizacionais da UBS apresentada é Acesso, Longitudinalidade e Integralidade.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  },
+  {
+    "id": "AJUDA_aed4c4cc-032b-406e-9404-2e4b84ce9482",
+    "originalId": "aed4c4cc-032b-406e-9404-2e4b84ce9482",
+    "statement": "Uma lactante vem à consulta com seu bebê de 2 meses, exclusivamente amamentado. O bebê tem episódio isolado de cólica há algumas semanas, mas está ganhando peso adequadamente e sem sinais dermatológicos, respiratórios ou gastrointestinais significativos. A mãe lê na internet que deve eliminar da dieta o leite de vaca e ovo para prevenir alergias no filho. Qual a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar restrição na dieta materna, excluindo leite de vaca e ovo, como forma profilática de prevenção de alergias nos primeiros meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter a amamentação exclusiva e incentivar uma dieta materna variada e equilibrada, sem restrições, pois não há evidência de benefício da restrição.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trocar para fórmula parcialmente hidrolisada para prevenir alergias, já que o bebê apresenta risco potencial por cólicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aconselhar introduzir fórmula de soja para diversificar a alimentação do bebê e prevenir alergias futuras.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um lactente de 2 meses, em aleitamento materno exclusivo, com adequado ganho de peso e desenvolvimento, sem sinais de alerta ou sintomas que sugiram alergia a proteínas alimentares. A queixa de cólica isolada é comum e compatível com a fisiologia dessa faixa etária (cólica do lactente). A presença de antígenos alimentares no leite materno é importante para a indução de tolerância oral pelo sistema imunológico da criança.\n\nAlternativa a: Incorreta. Não há respaldo em diretrizes nacionais ou internacionais (SBP, AAP, ESPGHAN) para a restrição profilática de alimentos potencialmente alergênicos (como leite de vaca, ovo, trigo ou soja) na dieta da nutriz. Essa prática não previne o desenvolvimento de alergias no bebê e pode prejudicar o estado nutricional da mãe, além de gerar estresse desnecessário.\n\nAlternativa b: Correta. A melhor conduta é tranquilizar a mãe, orientar sobre o caráter fisiológico e autolimitado das cólicas nessa fase, manter o aleitamento materno exclusivo até os 6 meses e estimular uma dieta materna saudável, variada e sem restrições alimentares prévias sem justificativa clínica.\n\nAlternativa c: Incorreta. O leite materno é o padrão-ouro nutricional e imunológico. Não há indicação de substituir o aleitamento por fórmula parcialmente hidrolisada, já que o bebê é saudável e tais fórmulas não têm indicação no contexto de prevenção para lactentes em aleitamento materno exclusivo.\n\nAlternativa d: Incorreta. A introdução de fórmulas de soja é contraindicada para menores de 6 meses (exceto em condições raras como galactosemia congênita). Fórmulas de soja não têm ação preventiva para alergias alimentares e não devem ser usadas para diversificação da dieta nessa faixa etária.\n\nGabarito: Letra b.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Alergia Alimentar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  },
+  {
+    "id": "AJUDA_aee21d97-49cf-4a2e-8432-4ba1cc6c81be",
+    "originalId": "aee21d97-49cf-4a2e-8432-4ba1cc6c81be",
+    "statement": "Uma idosa de 82 anos foi atropelada enquanto atravessava a rua e foi levada ao pronto socorro. Ela apresenta fraturas múltiplas, incluindo de pelve e costelas. A paciente está consciente, com 15 pontos na escala de Glasgow, mas com dor intensa. As prioridades no manejo inicial dessa paciente devem ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de antibióticos profiláticos para prevenir infecções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Controle da dor e observação em casa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estabilização das fraturas e encaminhamento para tomografia de corpo inteiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ventilação e circulação, seguida de controle da dor.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Avaliação ortopédica e do cirurgião de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A abordagem inicial de qualquer paciente politraumatizado, independentemente da idade, deve seguir rigorosamente a sistematização do ATLS (Advanced Trauma Life Support), fundamentada no mnemônico ABCDE. No caso de uma idosa de 82 anos com fraturas de costelas e pelve, o risco de complicações agudas é muito elevado.\n\nAlternativa a: Incorreta. A administração de antibióticos pode ser indicada em casos específicos, como fraturas expostas, mas nunca é considerada uma prioridade no manejo inicial do trauma. O foco primário deve ser a manutenção da vida e a estabilização das funções vitais.\n\nAlternativa b: Incorreta. Esta alternativa é tecnicamente perigosa. Uma paciente idosa, vítima de atropelamento com múltiplas fraturas, apresenta alto risco de instabilidade hemodinâmica, hemorragias ocultas e complicações respiratórias. Ela necessita de internação e monitorização intensiva, nunca observação domiciliar.\n\nAlternativa c: Incorreta. Embora a estabilização de fraturas (especialmente a de pelve) faça parte do manejo, a realização de tomografia de corpo inteiro (pan-TC) só deve ocorrer após a avaliação primária completa e estabilização hemodinâmica da paciente. O transporte para a radiologia antes de garantir o \"ABC\" pode ser fatal.\n\nAlternativa d: Correta. Esta alternativa reflete os princípios do ATLS. Em uma paciente com fraturas de costelas, a Ventilação (B) pode estar seriamente comprometida (risco de pneumotórax ou dor que impede a expansão torácica). A fratura de pelve é uma emergência no item Circulação (C), devido ao potencial de sangramento retroperitoneal massivo. O controle da dor é essencial, especialmente no idoso, para reduzir o estresse fisiológico e permitir uma melhor mecânica respiratória, prevenindo complicações como pneumonia.\n\nAlternativa e: Incorreta. As avaliações de especialistas como ortopedistas e cirurgiões torácicos fazem parte da avaliação secundária ou do tratamento definitivo. O médico emergencista deve realizar a estabilização inicial e garantir que a paciente sobreviva às primeiras horas antes de transferir a responsabilidade ou solicitar pareceres especializados.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Trauma Ortopédico",
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  },
+  {
+    "id": "AJUDA_aef1c3e4-9396-4cff-89e3-ec21287d93f3",
+    "originalId": "aef1c3e4-9396-4cff-89e3-ec21287d93f3",
+    "statement": "A Organização Mundial de Saúde apresenta critérios de elegibilidade médica para o início do uso de contraceptivos, informando se uma mulher que apresenta uma certa condição médica ou física é capaz de usar vários métodos contraceptivos em segurança e com eficácia. Em relação ao Dispositivo Intrauterino (DIU) de Cobre, assinale a opção que configura contraindicação ao método (categoria 4 – o método não pode ser usado):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diagnóstico histopatológico de neoplasia intraepitelial cervical grau 1 (NIC 1).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nuliparidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mioma subseroso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infecção por clamídia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Organização Mundial da Saúde (OMS) estabelece os Critérios Médicos de Elegibilidade para o uso de métodos contraceptivos, dividindo-os em quatro categorias. A Categoria 4 representa um risco inaceitável à saúde, sendo uma contraindicação absoluta para o uso do método.\n\nAlternativa (a) Incorreta: O diagnóstico de Neoplasia Intraepitelial Cervical (NIC 1) é classificado como Categoria 2 para o início do uso do DIU de cobre. Isso significa que, em geral, as vantagens do método superam os riscos. O dispositivo não interfere na história natural da lesão nem no seu tratamento ou monitoramento. Apenas o câncer de colo do útero diagnosticado e que ainda não foi tratado é considerado Categoria 4.\n\nAlternativa (b) Incorreta: A nuliparidade (mulheres que nunca deram à luz) é classificada como Categoria 2. Não há contraindicação absoluta; apenas observa-se que o risco de expulsão do dispositivo ou de dor durante a inserção pode ser ligeiramente maior em comparação com mulheres multíparas, mas o uso é seguro e amplamente recomendado.\n\nAlternativa (c) Incorreta: Miomas uterinos só representam contraindicação se causarem distorção da cavidade uterina a ponto de dificultar a inserção ou aumentar o risco de expulsão. Os miomas subserosos crescem para a parte externa do útero e não alteram a anatomia interna da cavidade endometrial. Portanto, são classificados como Categoria 1 (sem restrição ao uso).\n\nAlternativa (d) Correta: A presença de Infecção Sexualmente Transmissível (IST) atual, como a infecção por clamídia ou gonorreia, bem como a cervicite purulenta, configura Categoria 4 para o início do uso (inserção) do DIU. A inserção do dispositivo na vigência de uma infecção cervical ativa aumenta significativamente o risco de ascensão de patógenos para o trato genital superior, podendo causar Doença Inflamatória Pélvica (DIP). Nesses casos, deve-se primeiro tratar a infecção e, após a resolução clínica, realizar a inserção. Vale ressaltar que, se a mulher já utiliza o DIU e adquire a infecção, a classificação passa a ser Categoria 2 (pode-se tratar a infecção sem necessidade obrigatória de remover o dispositivo).",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  },
+  {
+    "id": "AJUDA_aef42607-2bc2-4713-9030-233351f68b64",
+    "originalId": "aef42607-2bc2-4713-9030-233351f68b64",
+    "statement": "Homem de 53 anos, em consulta a uma Unidade Básica de Saúde (UBS), vigilante, viúvo, relata que perdeu a esposa e um filho de 17 anos em uma tentativa de assalto, há 2 anos. Refere aumento progressivo do consumo de álcool e isolamento social desde o ocorrido. Informa que, durante a semana, ingere cerca de 2 latas de cerveja após o trabalho e, aos finais de semana, consome uma caixa de cerveja ao dia. Afirma também que, ultimamente, tem recebido reclamações do chefe, pois tem chegado atrasado ao trabalho. Nega episódios de “apagões”, agressões ou acidentes. Ao exame psíquico, apresenta humor deprimido e sono fragmentado. Nega plano suicida no momento. Não há sinais de abstinência aguda nem alterações ao exame físico.\nQual deve ser a abordagem inicial nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diagnosticar o abuso de álcool utilizando o questionário CAGE e prescrever antidepressivo tricíclico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Utilizar a abordagem de redução de danos no manejo do consumo de álcool e prescrever dissulfiran.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar intervenção breve e terapia multiprofissional na UBS para abordagem do consumo de álcool.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar paciente para internação hospitalar de curta duração e envolver os familiares no plano de cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Trata-se de um homem com consumo de risco ou nocivo de álcool, com padrão de binge aos finais de semana: uma caixa de cerveja tem cerca de 12 latas por dia, muito acima dos limites de baixo risco. Há prejuízo funcional inicial, com atrasos no trabalho, e o quadro se associa a luto complicado e sintomas depressivos, como humor deprimido, isolamento social e sono fragmentado.\n\nNão há sinais de gravidade que exijam nível de atenção mais complexo:\n- sem abstinência aguda;\n- sem complicações clínicas;\n- sem risco suicida iminente (nega plano);\n- sem \"apagões\", agressões ou acidentes.\n\nPortanto, o caso deve ser conduzido na própria Atenção Primária. A abordagem inicial recomendada é a intervenção breve, idealmente após rastreamento estruturado (AUDIT), associada ao cuidado multiprofissional na UBS. Esse cuidado inclui escuta qualificada, abordagem do luto e da depressão, apoio do NASF/eMulti e, se necessário, articulação com o CAPS.\n\nAnálise das alternativas:\n\na) Incorreta. O CAGE é um instrumento de rastreamento, não de diagnóstico. Além disso, é pouco sensível para consumo de risco e binge; o AUDIT é o mais indicado. Prescrever antidepressivo tricíclico como conduta inicial é inadequado: os tricíclicos têm maior risco de toxicidade em superdosagem (relevante em paciente deprimido), interagem com o álcool (potencializam sedação e cardiotoxicidade) e não são primeira escolha. Se houver indicação de antidepressivo, prefere-se um ISRS, e a conduta não deve ignorar a abordagem do álcool.\n\nb) Incorreta. A redução de danos é uma estratégia válida, mas o dissulfiram é incompatível com ela. O dissulfiram exige abstinência total, motivação e adesão do paciente, sob risco de reação grave caso ele beba. Não é conduta inicial nesse contexto, e sua prescrição contradiz a proposta de redução de danos.\n\nc) Correta. A intervenção breve é a abordagem inicial de escolha para uso de risco ou nocivo de álcool na Atenção Primária. Ela costuma seguir o modelo FRAMES: feedback, responsabilidade, aconselhamento, menu de opções, empatia e autoeficácia. Tem eficácia comprovada na redução do consumo. A terapia multiprofissional na UBS permite abordar também o luto e a depressão, mantendo o vínculo com a equipe de referência.\n\nd) Incorreta. A internação está reservada para situações como abstinência grave ou risco de delirium tremens, comorbidades clínicas ou psiquiátricas graves, risco suicida elevado ou falha do tratamento ambulatorial. Nada disso está presente. Envolver a família é desejável, mas não justifica a internação. O paciente, aliás, perdeu a esposa e o filho, o que limita sua rede familiar.\n\nResposta: alternativa C.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:13.532Z"
+  }
+]

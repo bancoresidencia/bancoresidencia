@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_f83929c4-450b-48b2-bf03-57c77e1a42fb",
+    "originalId": "f83929c4-450b-48b2-bf03-57c77e1a42fb",
+    "statement": "Uma das escalas mais utilizadas para avaliação de alta da sala de recuperação é a de Aldrete-Kroulik. Nela, os pacientes devem somar 9 pontos antes de receberem alta da SRPA. A American Society of Anesthesiologists (ASA) tornou obrigatório o uso de oxímetro de pulso e a escala de Aldrete-Kroulik foi revisada, passando a ser composta pela avaliação da",
+    "options": [
+      {
+        "id": "A",
+        "text": "intensidade de dor, respiração, circulação, coloração e saturação de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "consciência, respiração, circulação, coloração e saturação de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "atividade motora, respiração, intensidade de dor, consciência e saturação de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atividade motora, respiração, circulação, consciência e saturação de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A escala de Aldrete-Kroulik é o instrumento mais utilizado mundialmente para padronizar os critérios de alta da Sala de Recuperação Pós-Anestésica (SRPA), garantindo que o paciente tenha recuperado suas funções vitais básicas após a anestesia.\n\nOriginalmente proposta em 1970, a escala avaliava cinco parâmetros: atividade motora, respiração, circulação, consciência e cor da pele. Contudo, em 1995, a escala foi revisada para se adaptar à modernização da monitorização anestésica. A principal mudança foi a substituição do parâmetro \"Coloração\" (que era subjetivo e dependente da interpretação visual) pela \"Saturação de Oxigênio\", uma vez que a oximetria de pulso se tornou obrigatória e fornece um dado objetivo sobre a oxigenação do paciente.\n\nAnálise das alternativas:\n\na) Incorreta. A intensidade da dor, embora seja um parâmetro clínico fundamental avaliado na SRPA, não faz parte do cálculo da pontuação da escala de Aldrete-Kroulik. Além disso, a coloração foi o item substituído na versão revisada.\n\nb) Incorreta. Esta alternativa mantém o item \"coloração\", que foi justamente o critério removido na revisão da escala para a inclusão da oximetria de pulso. Também omite o parâmetro da atividade motora.\n\nc) Incorreta. Novamente, a intensidade da dor é citada erroneamente como parte da escala. O parâmetro \"circulação\" (estabilidade da pressão arterial) também foi omitido nesta alternativa.\n\nd) Correta. Esta alternativa descreve com precisão os cinco domínios da escala de Aldrete-Kroulik revisada (ou modificada):\n1. Atividade motora: Capacidade de mover os membros voluntariamente ou sob comando.\n2. Respiração: Capacidade de respirar profundamente e tossir.\n3. Circulação: Manutenção da pressão arterial em níveis próximos aos do pré-operatório.\n4. Consciência: Nível de alerta e orientação.\n5. Saturação de oxigênio: Avaliação objetiva via oximetria de pulso.\n\nCada um desses itens recebe uma pontuação de 0 a 2, totalizando no máximo 10 pontos. Geralmente, uma pontuação maior ou igual a 8 ou 9 é necessária para a alta segura da SRPA.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  },
+  {
+    "id": "AJUDA_f83fa1cb-61ab-4f5c-8e3b-30f96afb6911",
+    "originalId": "f83fa1cb-61ab-4f5c-8e3b-30f96afb6911",
+    "statement": "Medidas de tendência central são muito utilizadas e estudos epidemiológicos visam identificar um valor representativo em torno do qual se agrupam os valores observados em uma amostra. Nesse âmbito, a medida que NÃO sofre interferência de valores extremos é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A média.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A mediana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O desvio-padrão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O coeficiente de variação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Moda",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é fundamental diferenciar as principais medidas de tendência central e como elas se comportam diante de valores atípicos, conhecidos como outliers.\n\nAlternativa a: Incorreta. A média é a medida de tendência central mais sensível a valores extremos. Isso ocorre porque o seu cálculo utiliza o valor exato de cada observação da amostra (soma de todos os valores dividida pelo número de elementos). Se houver um único valor muito discrepante, ele puxará a média em sua direção, distorcendo a representatividade do grupo.\n\nAlternativa b: Correta. A mediana é uma medida de posição. Para encontrá-la, colocamos os dados em ordem crescente e selecionamos o valor que divide a amostra exatamente ao meio. Por depender apenas da ordem e não do valor numérico das extremidades, ela permanece inalterada se o maior valor da amostra aumentar ou se o menor valor diminuir. Por isso, é a medida preferencial para descrever dados com distribuição assimétrica.\n\nAlternativa c: Incorreta. O desvio-padrão não é uma medida de tendência central, mas sim uma medida de dispersão, que indica o quanto os dados variam em torno da média. Além disso, ele é altamente afetado por valores extremos, já que seu cálculo utiliza os desvios elevados ao quadrado.\n\nAlternativa d: Incorreta. O coeficiente de variação também é uma medida de dispersão (dispersão relativa). Ele é o resultado da divisão do desvio-padrão pela média. Como utiliza duas medidas que são sensíveis a valores extremos, o coeficiente de variação também sofre grande interferência desses valores.\n\nAlternativa e: Incorreta. A moda representa o valor que ocorre com maior frequência em um conjunto de dados. Embora ela não seja necessariamente alterada por um valor extremo isolado, ela não é a medida clássica de robustez estatística solicitada pela questão. Em muitas amostras médicas, a moda pode nem existir (amostra amodal) ou não estar no centro da distribuição, não sendo a ferramenta de escolha para lidar com o problema da interferência de outliers em estudos epidemiológicos quando comparada à mediana.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  },
+  {
+    "id": "AJUDA_f856c087-d900-469f-9ff6-66193300c37f",
+    "originalId": "f856c087-d900-469f-9ff6-66193300c37f",
+    "statement": "A escolha do fio de sutura adequado é vital para o sucesso da cirurgia, dependendo do tempo de absorção e da reação tecidual. Analise as afirmativas sobre as propriedades dos fios cirúrgicos:\n\nI. O Poliglecaprone 25 (Monocryl) é um fio monofilamentar absorvível de rápida absorção (perda de força tênsil em 14-21 dias), ideal para fechamento de pele subcuticular e tecidos que cicatrizam rapidamente.\nII. A Polidioxanona (PDS) é um fio monofilamentar absorvível de longa duração, mantendo força tênsil por até 6 semanas ou mais, sendo indicado para fechamento de aponeuroses em pacientes com risco de cicatrização lenta (ex: oncológicos, desnutridos).\nIII. O Algodão e a Seda são fios inabsorvíveis multifilamentares que provocam intensa reação inflamatória tecidual e têm maior capilaridade, aumentando o risco de infecção e formação de granulomas em feridas contaminadas.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS\n\nAfirmativa I: Está correta. O Poliglecaprone 25, conhecido pelo nome comercial Monocryl, é um fio sintético monofilamentar absorvível. Sua principal característica é a perda rápida da força tênsil, que cai para cerca de 50% a 60% na primeira semana e torna-se mínima entre 14 e 21 dias. Por ser monofilamentar, desliza facilmente pelos tecidos sem causar trauma adicional, sendo a escolha ideal para suturas intradérmicas (subcuticulares) e tecidos que recuperam sua força rapidamente.\n\nAfirmativa II: Está correta. A Polidioxanona (PDS) é um fio monofilamentar sintético de absorção lenta. Diferente de outros fios absorvíveis, ele mantém um suporte tênsil prolongado, retendo cerca de 50% de sua força aos 28-30 dias e mantendo suporte por até 6 semanas. Essa propriedade o torna indispensável para o fechamento de planos de grande tensão, como a aponeurose abdominal, especialmente em pacientes com cicatrização comprometida (oncológicos, desnutridos ou diabéticos), onde o risco de deiscência é maior.\n\nAfirmativa III: Está correta. O algodão e a seda são fios naturais e multifilamentares. Por serem compostos de proteínas ou fibras vegetais, desencadeiam uma reação inflamatória intensa do tipo corpo estranho. Além disso, a configuração multifilamentar (várias fibras trançadas ou torcidas) gera alta capilaridade, o que permite que bactérias se alojem nos interstícios do fio, protegidas das células de defesa. Isso aumenta significativamente o risco de infecção e a formação de granulomas em tecidos contaminados.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A afirmativa III também está correta.\nAlternativa b) Incorreta. A afirmativa I também está correta.\nAlternativa c) Incorreta. A afirmativa II também está correta.\nAlternativa d) Correta. Todas as afirmativas apresentam informações tecnicamente precisas sobre a composição, o comportamento biológico e as indicações clínicas dos fios de sutura mencionados.\n\nGabarito: Letra D.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  },
+  {
+    "id": "AJUDA_f858722d-b97e-4cdc-8c6f-d4040a681d13",
+    "originalId": "f858722d-b97e-4cdc-8c6f-d4040a681d13",
+    "statement": "Mulher, 59 anos de idade, foi submetida a colecistectomia laparoscópica devido a colecistite aguda há 1 dia. Na operação não foi realizada colangiografia intraoperatória e não houve colocação de dreno abdominal. Desde o pós-operatório imediato, apresentou vômitos de repetição sem aceitação da dieta e dor abdominal em tratamento com dipirona e tramadol. Ao exame físico, encontra-se em bom estado geral, eupneica, com FC de 95 bpm, PA de 120×70 mmHg, abdome doloroso à palpação profunda, sem sinais de irritação peritoneal.\n• Exames laboratoriais:\nHb: 12 g/dL\nLeucócitos: 13.412/mm3\nPCR: 90 mg/L\nBilirrubina total: 1,1 /dL\nFA: 91 U/L\nGGT: 110 U/L\nAmilase: 100 U/L\nLipase: 98 U/L\n\nAssinale a alternativa que apresenta a melhor conduta nesse momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender tramadol e passar sonda nasogástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender tramadol e administrar ondansetrona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar tomografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar colangiorressonância.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO:\n\nPaciente no 1º dia de pós-operatório de colecistectomia laparoscópica por colecistite aguda, apresentando náuseas e vômitos refratários e dor abdominal. \n\nAo exame físico e laboratorial, observa-se que a paciente está hemodinamicamente estável, sem sinais de peritonite, com enzimas canaliculares e bilirrubinas normais (afastando lesão iatrogênica de via biliar ou coledocolitíase residual) e enzimas pancreáticas normais (afastando pancreatite aguda). A discreta leucocitose e PCR elevada são compatíveis com o trauma cirúrgico e o quadro inflamatório prévio.\n\nO tramadol é um opioide fraco muito utilizado no manejo da dor pós-operatória, mas tem como efeito adverso clássico e muito frequente o desencadeamento de náuseas e vômitos. Portanto, a principal hipótese para o quadro emético é efeito colateral medicamentoso (náusea e vômito induzidos por opioide), e o manejo inicial deve ser conservador.\n\n\nANALISANDO AS ALTERNATIVAS:\n\nAlternativa a: Incorreta. Apesar da suspensão do tramadol ser correta, a passagem de sonda nasogástrica é um procedimento invasivo e desnecessário neste momento, reservado para quadros de distensão gástrica volumosa, íleo paralítico prolongado ou obstrução mecânica, o que não é o caso.\n\nAlternativa b: Correta. A conduta mais adequada e racional consiste em retirar o provável agente causal dos vômitos (suspender o tramadol, ajustando a analgesia) e associar um antiemético eficaz, como a ondansetrona (antagonista dos receptores 5-HT3).\n\nAlternativa c: Incorreta. A tomografia computadorizada de abdome seria indicada na suspeita de complicações cirúrgicas maiores, como coleções intra-abdominais, abscessos ou pneumoperitônio patológico com peritonite. A paciente não apresenta sinais clínicos de complicação intra-abdominal aguda que justifiquem imagem seccional imediata antes da otimização clínica.\n\nAlternativa d: Incorreta. A colangiorressonância é indicada para investigar complicações do trato biliar, como fístulas biliares ou coledocolitíase. Diante de bilirrubinas e fosfatase alcalina normais e abdome sem peritonite, essa hipótese é improvável no momento.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Vesícula e Vias Biliares",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  },
+  {
+    "id": "AJUDA_f86121a4-715e-42fc-8287-e116ff12b557",
+    "originalId": "f86121a4-715e-42fc-8287-e116ff12b557",
+    "statement": "Situação-Problema: Menina, 3 anos de idade, é levada ao Pronto Atendimento com história de manchas avermelhadas e pruriginosas pelo corpo, iniciadas 30 minutos após o almoço. A mãe relata que a criança comeu ovo mexido e camarão pela primeira vez. Ao exame físico, observam-se pápulas eritematosas e edematosas em tronco e membros, prurido intenso, sem sinais respiratórios ou hipotensão.\n\nSobre a epidemiologia dessa condição na infância, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É mais comum em adolescentes e raramente relacionada a alimentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tem curso superior a seis semanas, sendo frequentemente autoimune.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Afeta igualmente meninos e meninas e é sempre idiopática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É uma manifestação comum de reações alérgicas alimentares e virais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico do caso:\nO quadro clínico descrito (início súbito de pápulas eritematosas, edematosas e pruriginosas, sem repercussão sistêmica, logo após a introdução alimentar de ovo e camarão) é típico de urticária aguda. Trata-se de uma reação de hipersensibilidade do tipo I (mediada por IgE), muito comum nos prontos-atendimentos pediátricos.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta: A urticária aguda é bastante prevalente em lactentes e pré-escolares, não se restringindo ou sendo predominantemente mais comum em adolescentes. Além disso, alimentos com alto potencial alergênico (como leite, ovo, amendoim, frutos do mar e trigo) são gatilhos clássicos e frequentes na infância.\n\nAlternativa B - Incorreta: A duração superior a seis semanas define a urticária crônica, que muitas vezes possui mecanismo autoimune. O caso clínico em questão trata de uma urticária aguda, caracterizada por resolução em menos de seis semanas (geralmente dura de horas a poucos dias).\n\nAlternativa C - Incorreta: O erro está na generalização absoluta de que a condição é \"sempre idiopática\". Na infância, a urticária aguda comumente possui um agente causal identificável, sendo as infecções virais e os alérgenos alimentares/medicamentosos os mais frequentes.\n\nAlternativa D - Correta: Na população pediátrica, a urticária aguda é uma das queixas dermatológicas mais comuns. As infecções virais representam a principal causa de urticária aguda em crianças, seguidas de perto pelas reações alérgicas a alimentos e a medicamentos.\n\nGabarito: Letra D.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  },
+  {
+    "id": "AJUDA_f869d7cd-2142-4d70-a174-ee6617eba822",
+    "originalId": "f869d7cd-2142-4d70-a174-ee6617eba822",
+    "statement": "Durante consulta pediátrica, um lactente de 10 meses é trazido pelos pais devido a inchaço progressivo nos joelhos há cerca de 30 dias, percebido após o início do engatinhar. A criança não apresenta febre, dor intensa ou limitação importante dos movimentos. Ao exame físico, observa-se edema bilateral de joelhos, sem calor ou rubor, e demais sistemas sem alterações. Os exames laboratoriais mostram: Hemograma: normal. TAP: normal. TTPa: prolongado. Com base nesses achados, qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemofilia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Artrite reumatoide juvenil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sinovite transitória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Artrite séptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um lactente de 10 meses com aumento de volume articular (hemartrose) nos joelhos, iniciado após o estímulo mecânico de engatinhar. O ponto fundamental para a resolução da questão reside na interpretação dos exames laboratoriais de coagulação.\n\nAnálise das alternativas:\n\na) Correta. A Hemofilia (A ou B) é um distúrbio recessivo ligado ao X que resulta na deficiência dos fatores VIII ou IX da coagulação, respectivamente. Ambos os fatores compõem a via intrínseca da cascata de coagulação. Laboratorialmente, isso se traduz por um Tempo de Tromboplastina Parcial Ativada (TTPa) prolongado, com Tempo de Protrombina (TAP) e contagem de plaquetas normais. Clinicamente, a hemartrose é a manifestação hemorrágica mais característica, ocorrendo frequentemente quando a criança começa a se movimentar mais ativamente (engatinhar ou andar), gerando impacto nas articulações de carga, como os joelhos. O quadro costuma ser indolor inicialmente e sem sinais flogísticos (calor e rubor), o que afasta processos infecciosos agudos.\n\nb) Incorreta. A Artrite Idiopática Juvenil (antigamente chamada de reumatoide) pode causar edema articular crônico em crianças. No entanto, ela costuma apresentar marcadores inflamatórios alterados (como VHS e PCR elevados) e não justifica o prolongamento isolado do TTPa, que é um marcador de distúrbio da coagulação e não de inflamação autoimune.\n\nc) Incorreta. A Sinovite Transitória é uma causa comum de dor e claudicação em crianças, mas acomete preferencialmente a articulação do quadril, geralmente após um quadro de infecção viral das vias aéreas superiores. É um quadro agudo e autolimitado, e os exames de coagulação apresentam-se normais.\n\nd) Incorreta. A Artrite Séptica é uma emergência médica caracterizada por dor intensa, febre alta, recusa em movimentar o membro (pseudoparalisia), além de calor e rubor local. O hemograma tipicamente revelaria leucocitose com desvio à esquerda. O TTPa prolongado não faz parte do quadro clínico dessa patologia, a menos que houvesse uma evolução para sepse com coagulação intravascular disseminada, o que não condiz com o estado geral preservado da criança descrita.\n\nResumo do raciocínio:\nDiante de um sangramento articular (hemartrose) em um lactente do sexo masculino, associado a um TTPa prolongado com TAP normal, o diagnóstico obrigatório a ser investigado é a Hemofilia.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  },
+  {
+    "id": "AJUDA_f87c0cbe-c27f-473a-bc67-b2fd988de653",
+    "originalId": "f87c0cbe-c27f-473a-bc67-b2fd988de653",
+    "statement": "Homem de 56 anos apresenta icterícia progressiva, com colúria e acolia fecal há 10 dias. Ele não apresenta sintomas álgicos, mas refere emagrecimento de 15kg nos últimos três meses, com mudança da categoria de sobrepeso para um índice de massa corporal (IMC) de 24kg/m². USG evidenciou vesícula biliar normal e dilatação de vias biliares intra e extra-hepáticas. Realizou TC com contraste trifásico e a suspeita principal é de adenocarcinoma de cabeça do pâncreas. A imagem tomográfica típica dessa lesão será:",
+    "options": [
+      {
+        "id": "A",
+        "text": "captação periférica na fase arterial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hiperatenuante em todas as fases",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipoatenuante na fase portal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "isodensa na fase venosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nO paciente apresenta o quadro clássico de icterícia obstrutiva indolor (presença de colúria e acolia) associada a uma perda ponderal severa, o que aponta para uma etiologia neoplásica. A dilatação das vias biliares intra- e extra-hepáticas confirma que o obstáculo está localizado na porção distal da via biliar, reforçando a suspeita de adenocarcinoma de cabeça do pâncreas.\n\nCARACTERÍSTICA RADIOLÓGICA DO ADENOCARCINOMA:\nO adenocarcinoma ductal pancreático é uma lesão caracterizada histologicamente por ser hipovascular e possuir um estroma densamente fibrótico (reação desmoplásica). Por possuir poucos vasos sanguíneos em comparação ao tecido pancreático saudável, ele não retém o contraste da mesma forma que o restante do órgão.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\nNa fase portal (e também na fase arterial tardia ou pancreática), o parênquima pancreático normal sofre um realce intenso pelo contraste venoso, tornando-se mais claro (hiperatenuante). Como o tumor é hipovascular, ele não capta o contraste na mesma proporção, aparecendo como uma massa hipoatenuante (mais escura) em relação ao tecido vizinho. Essa diferença de densidade é o que permite a identificação da lesão.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa a): A captação periférica na fase arterial é uma característica clássica de lesões como o hemangioma (comumente hepático), que apresenta um preenchimento centrípeto (da periferia para o centro) ao longo das fases. Não é o padrão do câncer de pâncreas.\n\nAlternativa b): Lesões hiperatenuantes (que brilham mais que o órgão) são típicas de tumores hipervasculares. No pâncreas, esse padrão é característico dos tumores neuroendócrinos (como o insulinoma) ou de metástases de tumores como o de células claras do rim, mas não do adenocarcinoma ductal.\n\nAlternativa d): Se a lesão fosse isodensa (mesma densidade do órgão) na fase venosa, ela seria muito difícil de ser visualizada ou delimitada na tomografia. Embora uma pequena parcela dos tumores pancreáticos possa ser isodensa, a questão pede a imagem \"típica\", que é a hipovascular/hipoatenuante.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  },
+  {
+    "id": "AJUDA_f87cefdd-7ac7-4d07-9271-04d86c45e507",
+    "originalId": "f87cefdd-7ac7-4d07-9271-04d86c45e507",
+    "statement": "Uma paciente de 29 anos de idade procurou atendimento em razão de dismenorreia intensa, dor pélvica crônica e infertilidade há um ano. A ultrassonografia evidenciou imagem sugestiva de endometrioma ovariano de 3 cm. Acerca da abordagem terapêutica, assinale a alternativa que representa a conduta adequada considerando o desejo reprodutivo da paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Início de contraceptivo combinado contínuo como terapia de primeira linha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicação de cirurgia imediata para retirada do endometrioma, independentemente do tamanho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Início de agonista de GnRH como tratamento definitivo para infertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avaliação individualizada considerando manejo conservador e possível abordagem cirúrgica apenas se houver piora dos sintomas ou impacto na fertilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta uma paciente jovem com a tríade clássica da endometriose: dor pélvica, dismenorreia e infertilidade, acompanhada de um endometrioma ovariano de pequeno volume (3 cm). O grande desafio aqui é equilibrar o controle da dor e a preservação da reserva ovariana, uma vez que a paciente deseja engravidar.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Embora os contraceptivos combinados sejam excelentes para o controle da dor e considerados de primeira linha no tratamento clínico da endometriose, eles possuem efeito anovulatório. Como a paciente tem desejo reprodutivo imediato (está tentando há um ano sem sucesso), o uso de anticoncepcionais impediria a gestação, não sendo a conduta mais adequada para o seu objetivo principal de fertilidade.\n\nAlternativa (b) Incorreta: A cirurgia para endometrioma não deve ser indicada de forma indiscriminada. O procedimento cirúrgico (especialmente a cistectomia) pode reduzir significativamente a reserva ovariana devido à remoção inadvertida de tecido ovariano sadio e à cauterização do leito do cisto. Atualmente, a indicação cirúrgica para endometriomas costuma ser reservada para lesões maiores (geralmente acima de 4 a 6 cm), dor refratária ao tratamento clínico ou suspeita de malignidade.\n\nAlternativa (c) Incorreta: Os agonistas de GnRH promovem um estado de hipoestrogenismo profundo. Embora possam ser usados temporariamente no manejo da dor ou em protocolos específicos antes da fertilização in vitro, eles não são um \"tratamento definitivo\" para a infertilidade. Durante o uso, a paciente entra em menopausa medicamentosa, o que impossibilita a concepção natural.\n\nAlternativa (d) Correta: Esta é a alternativa que melhor reflete a medicina baseada em evidências e as diretrizes atuais (como as da ESHRE). O manejo da endometriose associada à infertilidade deve ser individualizado. Em pacientes com endometriomas pequenos e reserva ovariana que deve ser preservada, pode-se optar pelo acompanhamento conservador ou encaminhamento direto para técnicas de reprodução assistida. A cirurgia é considerada apenas se houver falha no controle da dor, crescimento rápido da lesão ou se o cisto estiver interferindo no acesso aos folículos durante uma eventual captação de óvulos. A decisão deve ser compartilhada com a paciente, pesando os riscos de danos à reserva ovariana versus os benefícios da remoção da doença.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  },
+  {
+    "id": "AJUDA_f87f7ad3-e5a6-4960-82a3-ef34382daf70",
+    "originalId": "f87f7ad3-e5a6-4960-82a3-ef34382daf70",
+    "statement": "O papilomavírus humano (HPV) é considerado o agente da infecção viral sexualmente transmissível mais prevalente em todo o mundo. A maioria dos indivíduos sexualmente ativos (mais de 80%) se infectará em algum momento da vida. Sobre o vírus HPV assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O vírus é composto por uma cápsula dentro da qual há um RNA em dupla fita de cerca de 8 mil pares de bases.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O genoma do HPV é dividido em áreas com funções determinadas: E (Early) e L (Late).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O HPV tem a capacidade de aderir de forma não integrada ao DNA celular (forma epissomal) ou se integrar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na maioria das lesões intraepiteliais escamosas de alto grau, o DNA viral se integra ao DNA do hospedeiro por uma quebra no nível de E2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os HPVs são classificados como de baixo e alto risco oncogênico, conforme sua associação com tumores invasivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige o conhecimento das características biológicas e moleculares do papilomavírus humano (HPV), um vírus de DNA fundamental na patogênese do câncer do colo uterino.\n\nAnálise das alternativas:\n\na) INCORRETA: O HPV não é um vírus de RNA. Ele é um vírus de DNA de fita dupla circular, composto por aproximadamente 8.000 pares de bases. Esta é uma distinção básica e fundamental na virologia. Os vírus que possuem RNA como material genético são de outras famílias, como os retrovírus (HIV) ou os vírus da hepatite C. Por solicitar a alternativa incorreta, esta é a resposta da questão.\n\nb) CORRETA: O genoma do HPV é funcionalmente dividido em três regiões: a região precoce ou inicial (E - Early), que codifica proteínas responsáveis pela replicação, transcrição e transformação celular (E1 a E7); a região tardia (L - Late), que codifica as proteínas estruturais do capsídeo (L1 e L2); e uma região não codificante chamada LCR (Long Control Region).\n\nc) CORRETA: Em infecções benignas ou produtivas, o DNA do HPV geralmente permanece de forma livre no núcleo da célula hospedeira, sem se misturar ao material genético humano, o que chamamos de forma epissomal. No entanto, o vírus tem a capacidade de se integrar ao DNA da célula do hospedeiro, processo frequentemente associado à progressão para neoplasias malignas.\n\nd) CORRETA: A integração do DNA viral ao genoma da célula hospedeira é um evento crucial para a carcinogênese. Geralmente, ocorre uma ruptura do anel de DNA viral no gene E2. Como a proteína E2 tem a função de controlar (reprimir) a expressão dos oncogenes E6 e E7, a sua interrupção leva à superexpressão dessas oncoproteínas, que degradam as proteínas supressoras de tumor p53 e pRb, respectivamente.\n\ne) CORRETA: O HPV é classificado clinicamente com base no seu potencial oncogênico. Os tipos de baixo risco (como 6 e 11) estão associados a lesões benignas e verrugas genitais (condilomas). Os tipos de alto risco (como 16 e 18) estão fortemente associados ao desenvolvimento de lesões precursoras de alto grau e câncer invasivo, especialmente no colo do útero, orofaringe, ânus e vulva.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  },
+  {
+    "id": "AJUDA_f88c4ad0-83da-42ab-9432-fb4eb583adc5",
+    "originalId": "f88c4ad0-83da-42ab-9432-fb4eb583adc5",
+    "statement": "Paciente de 27 anos apresenta corrimento mucopurulento e sangramento pós-coito. Testes para Chlamydia trachomatis e Neisseria gonorrhoeae (PCR) são negativos após tratamento empírico prévio. Persistindo sintomas, qual agente deve ser considerado e qual a terapêutica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mycoplasma genitalium — Azitromicina dose única",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ureaplasma urealyticum — Penicilina benzatina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Haemophilus ducreyi — Ceftriaxona intramuscular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mycoplasma genitalium — Esquema com moxifloxacino",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Trichomonas vaginalis — Metronidazol dose única",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clínico de cervicite, caracterizado por corrimento mucopurulento e sangramento ao contato (pós-coital). O ponto fundamental da questão é a persistência dos sintomas após um tratamento empírico inicial, associada a resultados negativos de biologia molecular (PCR) para os agentes mais comuns: Neisseria gonorrhoeae e Chlamydia trachomatis. Em casos de cervicites ou uretrites não gonocócicas e não clamidianas que não respondem à terapêutica convencional (geralmente ceftriaxona e azitromicina/doxiciclina), o principal agente etiológico a ser investigado é o Mycoplasma genitalium.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA: Embora o Mycoplasma genitalium seja o agente suspeito, a azitromicina em dose única não é a melhor escolha neste cenário. Existe uma taxa de resistência crescente deste microrganismo aos macrolídeos (muitas vezes superior a 50%). Se a paciente já falhou ao tratamento empírico prévio, que rotineiramente inclui a azitromicina, repetir a mesma droga é inadequado.\n\nb) INCORRETA: O Ureaplasma urealyticum pode estar associado a uretrites, mas não é o principal patógeno relacionado a cervicites persistentes com sangramento pós-coital. Além disso, os micoplasmas e ureaplasmas não possuem parede celular de peptideoglicano, o que torna a penicilina benzatina (que age na síntese da parede celular) totalmente ineficaz.\n\nc) INCORRETA: O Haemophilus ducreyi é o agente do cancro mole. Clinicamente, o cancro mole se manifesta por úlceras genitais múltiplas, dolorosas e com fundo purulento, frequentemente acompanhadas de linfadenopatia inguinal (bubão) que pode fistulizar. Não se apresenta tipicamente como uma cervicite isolada com corrimento mucopurulento.\n\nd) CORRETA: O Mycoplasma genitalium é reconhecido como uma das principais causas de cervicite e uretrite persistente ou recorrente. Devido à alta prevalência de mutações que conferem resistência aos macrolídeos, as diretrizes atuais (como as do CDC e manuais de IST do Ministério da Saúde) recomendam o uso de moxifloxacino (uma quinolona de quarta geração) para casos de falha terapêutica ou quando a resistência é suspeitada. O esquema geralmente envolve 400 mg por dia durante 7 a 14 dias.\n\ne) INCORRETA: O Trichomonas vaginalis é um protozoário que causa vaginite. O quadro típico inclui corrimento amarelado ou esverdeado, bolhoso, com odor desagradável e a presença de colpite macular (colo em framboesa). Embora possa causar sangramento, a persistência do quadro mucopurulento cervical após falha de esquema para clamídia e gonococo e a especificidade do tratamento de segunda linha apontam diretamente para o Mycoplasma genitalium.\n\nRESUMO DA CONDUTA\n\nDiante de uma cervicite persistente com exames negativos para gonococo e clamídia, deve-se considerar o Mycoplasma genitalium resistente. O tratamento indicado é o moxifloxacino. Portanto, a alternativa D é a correta.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Cervicites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:39.119Z"
+  }
+]

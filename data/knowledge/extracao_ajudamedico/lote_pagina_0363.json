@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_648bd5b5-a129-4464-aeaf-5d02974a6654",
+    "originalId": "648bd5b5-a129-4464-aeaf-5d02974a6654",
+    "statement": "Uma menina de 12 anos, que teve sua menarca há 6 meses, apresenta queixas de dismenorreia moderada, descrevendo dor no abdômen inferior que se inicia no primeiro dia da menstruação e dura cerca de 2 a 3 dias. Ultrassonografia sem alterações. Qual é a abordagem inicial adequada para o manejo dessa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar anti-inflamatório não esteroide antes do inicio da menstruação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para laparoscopia diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever anticoncepcional oral imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aguardar até que a menstruação se regularize naturalmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso:\n\nA paciente apresenta um quadro clássico de dismenorreia primária. Trata-se de uma adolescente jovem, com menarca recente, apresentando dor pélvica cíclica relacionada ao período menstrual, sem evidências de alterações estruturais na ultrassonografia. A fisiopatologia dessa condição está ligada à produção de prostaglandinas (principalmente PGF2-alfa) no endométrio durante a fase secretora. Quando o nível de progesterona cai, essas substâncias são liberadas, causando contrações uterinas intensas, isquemia miometrial e dor.\n\nAlternativa (a) Correta: Os anti-inflamatórios não esteroides (AINEs) são a primeira linha de tratamento para a dismenorreia primária. Eles atuam diretamente na causa do problema, inibindo a enzima ciclo-oxigenase e, consequentemente, reduzindo a síntese de prostaglandinas. Iniciar o medicamento pouco antes ou exatamente no início do fluxo menstrual ajuda a bloquear a cascata inflamatória de forma mais eficaz, controlando a dor de maneira rápida e segura.\n\nAlternativa (b) Incorreta: A laparoscopia diagnóstica é um método invasivo e não deve ser a conduta inicial. Ela é reservada para casos de suspeita de dismenorreia secundária (como endometriose) que não apresentam melhora após o tratamento clínico adequado com AINEs e terapia hormonal por um período de 3 a 6 meses.\n\nAlternativa (c) Incorreta: Os anticoncepcionais orais são eficazes no tratamento da dismenorreia, pois suprimem a ovulação e afinam o endométrio, reduzindo a produção de prostaglandinas. No entanto, em uma paciente de 12 anos que iniciou os ciclos há pouco tempo e busca apenas o alívio da dor, os AINEs são preferíveis como abordagem inicial por serem usados apenas durante os dias de dor, enquanto o anticoncepcional exige uso diário e possui mais efeitos sistêmicos. O anticoncepcional seria a próxima etapa caso os AINEs falhassem.\n\nAlternativa (d) Incorreta: A dismenorreia moderada impacta a qualidade de vida, podendo causar faltas escolares e limitação de atividades sociais. \"Aguardar\" não é uma conduta médica terapêutica para uma queixa de dor ativa. Embora os ciclos possam se tornar mais regulares com o tempo, a produção de prostaglandinas continuará ocorrendo nos ciclos ovulatórios, mantendo o sintoma doloroso se não houver intervenção.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:28.891Z"
+  },
+  {
+    "id": "AJUDA_6493dce6-ff71-4020-b5e5-023942d8e7c2",
+    "originalId": "6493dce6-ff71-4020-b5e5-023942d8e7c2",
+    "statement": "Os efeitos do aleitamento materno sobre a saúde da criança e da mulher que amamenta tem superioridade comprovada sobre outras formas de alimentar a criança pequena. Sobre os benefícios desse aleitamento materno, podemos dizer, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduz a mortalidade infantil por causas previníveis em 13%, considerando crianças menores de 5 anos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reduz a incidência e gravidade da diarréia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Melhora nutrição infantil, tanto que o crescimento da criança amamentada é a referência utilizada nas curvas de crescimento da OMS",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Protege a mãe que amamenta contra câncer de ovário, de mama e de trato digestório, além de efeito anticoncepcional",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Melhora o desenvolvimento cognitivo e inteligência",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda os benefícios do aleitamento materno, exigindo que o candidato identifique a alternativa incorreta (exceto).\n\nAlternativa (a) Correta: De acordo com estudos epidemiológicos clássicos, como a série do The Lancet sobre sobrevivência infantil, o aleitamento materno exclusivo tem o potencial de reduzir em até 13% a mortalidade por causas evitáveis em crianças menores de cinco anos. É considerado a intervenção isolada com maior impacto na redução da mortalidade infantil.\n\nAlternativa (b) Correta: O leite materno contém diversos fatores imunológicos, como a imunoglobulina A secretora (IgA), lactoferrina e oligossacarídeos que impedem a adesão de patógenos. Isso reduz significativamente tanto a incidência quanto a gravidade de episódios de diarreia, protegendo a criança contra infecções gastrointestinais.\n\nAlternativa (c) Correta: As curvas de crescimento da Organização Mundial da Saúde (OMS), publicadas em 2006 e amplamente utilizadas na pediatria, utilizaram como padrão de referência (o \"padrão-ouro\" de crescimento) crianças saudáveis que foram amamentadas conforme as recomendações internacionais. Portanto, o lactente amamentado é o modelo biológico de crescimento normal.\n\nAlternativa (d) Incorreta (Gabarito): Embora a amamentação proteja comprovadamente a mulher contra o câncer de mama e o câncer de ovário e possua um efeito anticoncepcional (através do Método da Amenorreia da Lactação - LAM), não há evidência científica sólida e estabelecida nas diretrizes de saúde pública que aponte a proteção contra cânceres do trato digestório para a mulher que amamenta. A inclusão dessa patologia torna a alternativa falsa.\n\nAlternativa (e) Correta: O aleitamento materno está associado a melhores índices de desenvolvimento cognitivo. Isso se deve tanto ao estímulo do vínculo afetivo quanto à presença de ácidos graxos poli-insaturados de cadeia longa (como o DHA e o ARA) no leite humano, que são essenciais para a mielinização e o desenvolvimento do sistema nervoso central.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:28.892Z"
+  },
+  {
+    "id": "AJUDA_649d5f39-4c3d-410f-967f-0a2f6f562bea",
+    "originalId": "649d5f39-4c3d-410f-967f-0a2f6f562bea",
+    "statement": "Homem, 28 anos de idade, com diagnóstico de anemia falciforme, em acompanhamento irregular, dá entrada no Pronto-Socorro com dor torácica pleurítica, de início súbito há 1 dia, associada à febre de 38,7 ºC, tosse produtiva e dispneia progressiva. Uso irregular de hidroxiureia e ácido fólico. Ao exame: FR 28 irpm, FC 115 bpm, temperatura 38,5 ºC, SpO2 88 % em ar ambiente; estertores crepitantes em base pulmonar direita e murmúrio vesicular diminuído; palidez acentuada e icterícia leve. Radiografia: novo infiltrado em lobo inferior direito. Hemograma: Hb 7,2 g/dL, Ht 21 %, leucócitos 18.500/mm³, plaquetas 320.000/mm³.\n\nIdentifique a fisiopatologia central envolvida no quadro atual do paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vaso-oclusão pulmonar por falcização de eritrócitos, infecção bacteriana e embolia gordurosa medular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tromboembolismo pulmonar recorrente por estado de hipercoagulabilidade crônica da anemia falciforme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lesão pulmonar aguda mediada por citocinas inflamatórias liberadas durante a hemólise intravascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipertensão pulmonar aguda por aumento súbito da resistência vascular pulmonar durante crise vaso oclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clinico de febre, dor toracica pleuritica, taquipneia, hipoxemia e o achado de novo infiltrado radiologico em paciente com anemia falciforme define o diagnostico de Sindrome Toracica Aguda (STA), uma das principais causas de mortalidade nessa populacao.\n\nAnalise das alternativas:\n\nAlternativa a: Correta. A fisiopatologia da Sindrome Toracica Aguda e multifatorial e classicamente descrita como um tripé que inclui: 1) vaso-oclusao da microvasculatura pulmonar gerada pela falcizacao das hemacias (favorecida por hipoxia e acidose local); 2) infeccoes respiratorias bacterianas (como pneumococo ou agentes atipicos como Mycoplasma e Chlamydia) ou virais, que desencadeiam inflamacao e hipoxemia; e 3) embolia gordurosa decorrente de infarto da medula ossea (frequente em crises osseas associadas), cujos acidos graxos causam dano endotelial e lesao alveolar grave.\n\nAlternativa b: Incorreta. Embora a anemia falciforme curse com estado de hipercoagulabilidade e maior risco de tromboembolismo pulmonar (TEP), o TEP isolado nao e o mecanismo fisiopatologico central responsavel pelo quadro de infiltrado alveolar e sindrome toracica aguda.\n\nAlternativa c: Incorreta. A hemolise intravascular e a deplecao de oxido nitrico participam da vasculopatia cronica da doenca, mas a liberacao isolada de citocinas pos-hemolise nao define a fisiopatologia da STA, que depende essencialmente do ciclo de vaso-oclusao local, infeccao e embolia gordurosa.\n\nAlternativa d: Incorreta. A hipertensao pulmonar e predominantemente uma complicacao cronica decorrente da hemolise e vasculopatia proliferativa. O aumento da resistencia vascular pulmonar em fases agudas e uma consequencia da hipoxemia e da vasoconstricao reflexa, e nao o evento fisiopatologico desencadeante.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:28.892Z"
+  },
+  {
+    "id": "AJUDA_64a5b76d-cd5b-4eb4-9275-c3b24283a269",
+    "originalId": "64a5b76d-cd5b-4eb4-9275-c3b24283a269",
+    "statement": "Homem de 64 anos de idade com histórico médico de hipertensão, hiperlipidemia, doença vascular periférica, diabetes tipo 2 e doença renal crônica com diálise iniciada há 3 semanas apresenta secreção purulenta proveniente de um cateter implantado na veia jugular interna direita. Ele apresenta febre há dois dias; a pressão arterial é de 95 x 40 mmHg; a contagem de leucócitos no sangue é de 24.000/mm³. O Gram da secreção purulenta do cateter mostra bastões Gram negativos e ausência de bactérias Gram positivas; amostras são enviadas para culturas. Culturas anteriores, realizadas no momento de sua amputação, há 2 meses, revelaram Enterobacteriaceae beta-lactamase de espectro estendido (ESBL). Nesse paciente, a antibioticoterapia inicial recomendada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "ampicilina/sulbactam.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cefepima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ceftriaxona/oxacilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "meropenem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "piperacilina/tazobactam.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Resposta correta: letra d (meropenem).\n\nContexto clínico: paciente em hemodiálise com cateter venoso central de curta permanência apresenta secreção purulenta no óstio, febre, hipotensão (PA 95x40 mmHg) e leucocitose de 24.000/mm³. Isso indica infecção de cateter com sepse ou choque séptico, provavelmente bacteremia associada ao cateter. O Gram mostra bacilos Gram negativos. Há colonização ou infecção prévia por Enterobacteriaceae produtoras de ESBL, um fator de risco claro para novo patógeno ESBL. Também pesam a internação e os procedimentos recentes, a diabetes, a doença renal crônica e a doença vascular periférica.\n\nPrincípio terapêutico: em infecção grave por Enterobacteriaceae ESBL, os carbapenêmicos (meropenem, imipenem, ertapenem) são a droga de escolha. As ESBL hidrolisam penicilinas, cefalosporinas de 1ª a 4ª geração e aztreonam. Os carbapenêmicos são estáveis a essas enzimas. O estudo MERINO mostrou desfecho pior com piperacilina/tazobactam do que com meropenem na bacteremia por ceftriaxona-resistente. Em paciente instável, o esquema empírico deve cobrir o germe mais provável com a droga mais confiável. Após a cultura e o antibiograma, pode-se escalonar ou descalonar. O cateter infectado com pus no óstio e instabilidade hemodinâmica deve ser removido.\n\nAnálise das alternativas:\n\na) Incorreta. Ampicilina/sulbactam é uma aminopenicilina com inibidor fraco. Tem alta taxa de resistência em bacilos Gram negativos, e as ESBL a hidrolisam. Não é adequada nem para infecção comunitária grave por Gram negativos.\n\nb) Incorreta. A cefepima é uma cefalosporina de 4ª geração e é instável frente às ESBL. Pode parecer sensível in vitro, mas há falha clínica, sobretudo com inóculo alto. Não deve ser usada em infecção grave por ESBL.\n\nc) Incorreta. A ceftriaxona é uma cefalosporina de 3ª geração, hidrolisada pelas ESBL. A oxacilina cobre estafilococo sensível à meticilina, e o Gram não mostrou Gram positivos. A combinação é inadequada em ambos os componentes.\n\nd) Correta. O meropenem tem excelente atividade contra Enterobacteriaceae ESBL e cobre também outros Gram negativos hospitalares, como Pseudomonas. É o tratamento empírico mais seguro em sepse com histórico de ESBL.\n\ne) Incorreta. A piperacilina/tazobactam pode parecer ativa in vitro, mas o inibidor de beta-lactamase é pouco confiável contra ESBL. Sua eficácia é inferior à dos carbapenêmicos em bacteremia grave, com maior mortalidade. Não é recomendada nesse cenário.\n\nPonto-chave: sepse com Gram negativos e antecedente de ESBL exige carbapenêmico empírico e retirada do cateter infectado.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:28.892Z"
+  },
+  {
+    "id": "AJUDA_64be6368-152c-4016-b565-00222a8f5e5d",
+    "originalId": "64be6368-152c-4016-b565-00222a8f5e5d",
+    "statement": "Homem de 55 anos, com índice de massa corporal (IMC) = 31kg/m², evoluiu com elevação da pressão arterial nos últimos anos. Seu nível tensional em aferições repetidas era de 150x105mmHg. O clearance de creatinina estimado era de 55mL/min e não havia sinais de falência cardíaca. O paciente tem história de tabagismo e asma brônquica bem controlada, em uso de beclometasona e formoterol. A melhor opção terapêutica será feita com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "clonidina e hidroclorotiazida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hidralazina e furosemida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "enalapril e anlodipino",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "losartana e atenolol",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente em questão apresenta Hipertensão Arterial Estágio 2 (150x105 mmHg), obesidade (IMC 31 kg/m²), tabagismo e doença renal crônica incipiente (Clearance de creatinina de 55 mL/min, o que o enquadra no estágio G3a). Além disso, possui asma brônquica controlada. As diretrizes atuais recomendam o início da terapia com combinação de dois fármacos para pacientes em estágio 2.\n\nAnálise das Alternativas:\n\na) Clonidina e hidroclorotiazida: Incorreta. A clonidina é um agonista alfa-2 central, considerada droga de terceira ou quarta linha, geralmente reservada para hipertensão resistente, devido aos seus efeitos colaterais no sistema nervoso central. A hidroclorotiazida é um diurético tiazídico eficaz, mas não é a melhor escolha inicial para este perfil de paciente quando comparada a outras classes.\n\nb) Hidralazina e furosemida: Incorreta. A hidralazina é um vasodilatador direto, também de terceira ou quarta linha, frequentemente associada a taquicardia reflexa e edema. A furosemida é um diurético de alça, indicado para hipertensão arterial apenas em casos de insuficiência renal avançada (clearance abaixo de 30 mL/min) ou em estados de hipervolemia/insuficiência cardíaca, o que não é o caso deste paciente.\n\nc) Enalapril e anlodipino: Correta. Esta é a combinação ideal para o paciente descrito. O enalapril (Inibidor da ECA) possui efeito nefroprotetor, sendo a droga de escolha para pacientes com doença renal crônica (clearance de 55 mL/min). O anlodipino (Bloqueador de Canais de Cálcio) é um potente anti-hipertensivo, metabolicamente neutro e eficaz na redução de eventos cardiovasculares. A associação de IECA com BCC é uma das mais recomendadas pelas diretrizes para o início do tratamento no estágio 2.\n\nd) Losartana e atenolol: Incorreta. Embora a losartana (Bloqueador do Receptor de Angiotensina) fosse uma excelente opção para a proteção renal, o atenolol é um betabloqueador. O uso de betabloqueadores não é recomendado como primeira linha para hipertensão sem indicações específicas (como insuficiência cardíaca ou coronariopatia). No caso deste paciente, o atenolol é formalmente contraindicado ou deve ser evitado devido ao histórico de asma brônquica, pois pode desencadear broncoespasmo.\n\nConclusão:\nA alternativa (c) oferece o melhor controle tensional com proteção de órgão-alvo (rins) e evita medicamentos que poderiam agravar a condição respiratória do paciente.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:28.892Z"
+  },
+  {
+    "id": "AJUDA_64bf2f53-6a17-4edb-ba1a-f7645f7879ed",
+    "originalId": "64bf2f53-6a17-4edb-ba1a-f7645f7879ed",
+    "statement": "Uma senhora feodérmica, com idade de 28 anos, em bom estado geral e sem doenças prévias, procurou o serviço médico para controle. Todos os exames laboratoriais estavam normais, mas os exames de imagem revelaram um cisto de 18 cm, paredes espessas e conteúdo amorfo em seu interior sugerindo cistoadenoma pancreático. Nesse caso, a conduta CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acompanhamento semestral por imagem para avaliar a evolução do cisto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pancreatectomia distal com a retirada do cisto, preservando o baço.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Drenagem do cisto para o estômago por endoscopia e biopsia de sua parede.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Punção biopsia do cisto por agulha fina para diagnóstico e orientação terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma paciente jovem (28 anos) com um cisto pancreático volumoso (18 cm), apresentando características de imagem como paredes espessas e conteúdo amorfo. Em mulheres jovens, diante de uma lesão cística no corpo ou na cauda do pâncreas, as principais hipóteses diagnósticas são o cistoadenoma mucinoso e o tumor sólido-pseudopapilar (tumor de Frantz). O cistoadenoma seroso também é uma possibilidade, porém costuma ter aspecto em favo de mel e comportamento mais benigno. Independentemente da linhagem exata, um cisto de 18 cm com paredes espessas possui indicação cirúrgica formal devido ao risco de malignização (no caso do tipo mucinoso) e pelo efeito de massa/sintomatologia iminente.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nA conduta para neoplasias císticas mucinosas do pâncreas ou tumores de Frantz é a ressecção cirúrgica. Como a maioria dessas lesões localiza-se no corpo e na cauda do pâncreas, o procedimento indicado é a pancreatectomia distal. Em pacientes jovens e em casos nos quais não há evidência clara de invasão maligna grosseira, tenta-se preservar o baço para evitar complicações infecciosas e hematológicas futuras (pancreatectomia distal com preservação esplênica), o que torna a alternativa B a conduta técnica mais adequada e completa.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: O acompanhamento por imagem (watch and wait) é reservado para cistos pequenos, assintomáticos, sem estigmas de alto risco e que sugerem cistoadenoma seroso ou cistos menores que 3 cm sem características preocupantes. Um cisto de 18 cm com paredes espessas é uma indicação absoluta de cirurgia.\n\nAlternativa C: A drenagem de um cisto para o estômago (cistogastroanastomose) é um tratamento indicado para pseudocistos pancreáticos (coleções inflamatórias decorrentes de pancreatite), e não para neoplasias císticas. Realizar a drenagem ou a biópsia da parede de uma neoplasia cística mucinosa pode causar a disseminação de células neoplásicas na cavidade abdominal (pseudomixoma peritoneal).\n\nAlternativa D: A punção por agulha fina (FNA) guiada por ecoendoscopia é uma ferramenta diagnóstica útil quando há dúvida sobre a natureza do cisto e quando o resultado pode mudar a conduta. No entanto, neste caso, o tamanho da lesão (18 cm) e as características das paredes já são indicações cirúrgicas por si sós. Além disso, a punção em cistos grandes apresenta risco de complicações e disseminação, não sendo necessária para indicar a cirurgia, que já está bem fundamentada pela imagem e pelo perfil da paciente.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:28.892Z"
+  },
+  {
+    "id": "AJUDA_64c10a74-77de-4361-a0f6-ad50d146912e",
+    "originalId": "64c10a74-77de-4361-a0f6-ad50d146912e",
+    "statement": "A respeito da anemia, analise as assertivas a seguir:\n\nI. A anemia associada a aumento na produção de reticulócitos, após ajuste para o grau de anemia, sugere ocorrência de perda de sangue ou hemólise.\nII. Deficiência de ferro ou de folato são situações em que, na presença de sangramento ou hemólise, pode não haver uma resposta apropriada dos reticulócitos.\nIII. O percentual de reticulócitos representa a porcentagem de eritrócitos que são reticulócitos, e não é necessário ajuste em relação ao grau de anemia para sua interpretação.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Analise das assertivas:\n\nAssertiva I: Correta. Os reticulocitos sao hemacias jovens recem-liberadas pela medula ossea. Na presenca de anemia, a hipoxia tecidual estimula a producao de eritropoietina, levando a medula ossea saudavel a aumentar a eritropoiese. Quando a contagem de reticulocitos encontra-se elevada apos a correcao para o grau de anemia, classifica-se o quadro como anemia hiperproliferativa (regenerativa), cujas principais etiologias sao a destruicao periferica (hemolise) ou a perda aguda de sangue (sangramento).\n\nAssertiva II: Correta. Para que a medula ossea consiga montar uma resposta reticulocitaria adequada frente a perda de sangue ou hemolise, e necessaria a presenca de substratos fundamentais para a sintese de hemoglobina e proliferacao celular, como ferro, acido folico e vitamina B12. Na falta desses nutrientes, a eritropoiese se torna ineficaz ou hipoproliferativa, impedindo a elevacao esperada dos reticulocitos.\n\nAssertiva III: Incorreta. O percentual de reticulocitos e uma relacao entre o numero de reticulocitos e o total de eritrocitos circulantes. Em pacientes anemicos, o denominador (numero total de hemacias) esta reduzido, o que pode gerar uma porcentagem falsamente elevada mesmo sem aumento real da producao medular. Portanto, e indispensavel realizar a correcao pelo hematocrito (Contagem Corrigida de Reticulocitos) e pelo tempo de maturacao periferica (Indice de Producao Reticulocitaria - IPR).\n\nAnalise das alternativas:\n\nAlternativa a: Correta. Contempla com exatidao as assertivas I e II como verdadeiras e exclui a assertiva III.\n\nAlternativa b: Incorreta. A assertiva III esta errada, pois a correcao para o grau de anemia e obrigatoria na pratica clinica.\n\nAlternativa c: Incorreta. A assertiva I esta correta e a assertiva III esta incorreta.\n\nAlternativa d: Incorreta. A presenca da assertiva III invalida a opcao de que todas estao corretas.\n\nGabarito: Letra a.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:28.892Z"
+  },
+  {
+    "id": "AJUDA_64c1270c-b838-4b1d-8a08-764865fd38fb",
+    "originalId": "64c1270c-b838-4b1d-8a08-764865fd38fb",
+    "statement": "Homem, 68 anos de idade, fumante atual (45 anos-maço), tem diagnóstico de DPOC. Começou a apresentar dispneia progressiva aos esforços, piora da tosse e aumento do volume de escarro. Iniciou uso de formoterol 12 mcg associado a budesonida 400 mcg a cada 12 horas via inalatória, sem melhora do quadro após 3 meses. Exame físico: corado e hidratado, FR = 14 irpm, SpO2 92% em repouso; ausculta pulmonar com sons pulmonares reduzidos e sem ruídos adventícios; sem outras alterações. Solicitada espirometria, cujo resultado está apresentado na tabela. Qual é a conduta farmacológica mais adequada? (LABA = agonistas beta2-adrenérgicos de longa duração; LAMA = broncodilatadores antagonistas muscarínicos de longa duração)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trocar os medicamentos inalatórios para uma associação LAMA/LABA e associar salbutamol de alívio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Manter os medicamentos inalatórios com formoterol/budesonida e associar salbutamol de alívio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trocar os medicamentos para uma associação de terapia tripla inalatória (LAMA/LABA/corticoide) e associar oxigenoterapia domiciliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trocar os medicamentos inalatórios para uma associação LAMA/LABA e associar oxigenoterapia domiciliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente é um idoso fumante com diagnóstico de DPOC e sintomas persistentes (dispneia progressiva e tosse), apesar do uso de uma combinação de LABA e corticoide inalatório (formoterol e budesonida). A espirometria apresentada na tabela confirma o diagnóstico e a gravidade da doença. A relação VEF1/CVF pós-broncodilatador de 0,41 (abaixo de 0,70) define a presença de obstrução fixa ao fluxo aéreo. O VEF1 pós-broncodilatador de 1,50 L representa 48% do valor previsto, o que classifica o paciente, segundo os critérios GOLD, como tendo uma limitação ao fluxo aéreo grave (GOLD 3).\n\nAnálise das alternativas:\n\nAlternativa a) Correta. De acordo com as diretrizes atuais (GOLD), a base do tratamento da DPOC é a broncodilatação. Para pacientes que permanecem sintomáticos em uso de monoterapia ou na associação de LABA com corticoide inalatório, a conduta preferencial é a transição para a dupla broncodilatação com LAMA (antagonista muscarínico de longa duração) e LABA (agonista beta-2 de longa duração). A associação LAMA/LABA é superior ao uso de corticoide inalatório para o controle de sintomas e redução da hiperinsuflação na DPOC. O salbutamol (SABA) deve ser mantido como medicação de alívio para uso conforme a necessidade.\n\nAlternativa b) Incorreta. Manter o tratamento atual não é adequado, pois o paciente não apresentou melhora clínica após três meses de uso correto. Na DPOC, o corticoide inalatório (budesonida) deve ser utilizado de forma criteriosa, sendo geralmente reservado para pacientes com histórico de asma, exacerbações frequentes ou contagem de eosinófilos elevada, o que não foi destacado no caso.\n\nAlternativa c) Incorreta. A terapia tripla (LAMA/LABA/corticoide) é um passo posterior, indicado para pacientes que mantêm exacerbações ou sintomas graves mesmo em uso de dupla terapia (especialmente se houver indicação para o corticoide). Além disso, a oxigenoterapia domiciliar é incorreta para este paciente, pois sua saturação de oxigênio (SpO2) em repouso é de 92%. Os critérios para oxigenoterapia domiciliar prolongada exigem SpO2 menor ou igual a 88% ou PaO2 menor ou igual a 55 mmHg (ou entre 56-59 mmHg se houver cor pulmonale ou policitemia).\n\nAlternativa d) Incorreta. Embora a troca para LAMA/LABA esteja correta para otimizar a função pulmonar, a associação com oxigenoterapia domiciliar não tem indicação clínica neste momento, conforme explicado anteriormente, devido aos níveis de oxigenação do paciente (SpO2 de 92%).",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5fffb2ed31d61aaa5821d70ffd39a749ea1c60437de358e855be61e2a497e7f7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_64c1270c-b838-4b1d-8a08-764865fd38fb_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:29.280Z"
+  },
+  {
+    "id": "AJUDA_64c3b74b-c74b-45eb-8e74-2cc4a6520b1b",
+    "originalId": "64c3b74b-c74b-45eb-8e74-2cc4a6520b1b",
+    "statement": "Em relação à reposição volêmica nas queimaduras extensas, assinale a alternativa CORRETA segundo a fórmula de Parkland:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Utiliza-se 4 mL/kg/% de SCQ de soro fisiológico, metade nas primeiras 24h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Utiliza-se 2 mL/kg/% de SCQ, sendo metade nas primeiras 8h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A diurese alvo é de 0,3 mL/kg/h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Utiliza-se 3 mL/kg/% de SCQ de Ringer lactato, metade nas primeiras 24h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Utiliza-se 4 mL/kg/% de SCQ de Ringer lactato, metade nas primeiras 8h.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A fórmula de Parkland é o protocolo tradicional para a ressuscitação volêmica nas primeiras 24 horas após uma queimadura grave (segundo e terceiro graus). Ela é fundamental para prevenir o choque hipovolêmico no grande queimado.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A fórmula de Parkland utiliza preferencialmente o Ringer Lactato, e não o soro fisiológico (cloreto de sódio 0,9%). O uso de grandes volumes de soro fisiológico pode levar à acidose metabólica hiperclorêmica. Além disso, a primeira metade do volume calculado deve ser infundida nas primeiras 8 horas contadas a partir do momento do trauma, e não nas primeiras 24 horas.\n\nAlternativa b: Incorreta. Embora o guia ATLS em sua 10ª edição tenha passado a recomendar o início da ressuscitação com 2 mL/kg/SCQ para queimaduras térmicas em adultos (visando evitar a hiper-hidratação ou fluid creep), a questão solicita especificamente a definição da Fórmula de Parkland clássica, que utiliza o coeficiente de 4 mL.\n\nAlternativa c: Incorreta. O débito urinário é o melhor parâmetro para monitorar a perfusão tecidual e ajustar a velocidade da infusão. A meta de diurese-alvo para adultos é de 0,5 mL/kg/h. O valor de 0,3 mL/kg/h é considerado baixo para este cenário clínico.\n\nAlternativa d: Incorreta. O volume padrão da fórmula de Parkland é de 4 mL. O tempo descrito para a infusão da primeira metade (24h) também está incorreto, pois o protocolo exige uma reposição mais agressiva no início (primeiras 8 horas).\n\nAlternativa e: Correta. A fórmula de Parkland define que o volume de Ringer Lactato a ser administrado nas primeiras 24 horas é de 4 mL x Peso (kg) x % de Superfície Corporal Queimada (SCQ). Desse total calculado, 50% (metade) deve ser infundido nas primeiras 8 horas após o momento do acidente e os outros 50% devem ser infundidos nas 16 horas subsequentes. O Ringer Lactato é a solução de escolha por ser mais isotônica e possuir lactato, que atua como tamponante.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:29.281Z"
+  },
+  {
+    "id": "AJUDA_64c96e5b-c8ec-4ddc-9f82-2687f017c248",
+    "originalId": "64c96e5b-c8ec-4ddc-9f82-2687f017c248",
+    "statement": "Paciente, 45 anos, portador de HIV, é acompanhado por Unidade Básica de Saúde (UBS), relata que não contou à família, pois “não quer preocupar ninguém”. Tempos depois, o agente de saúde comunica que ele está internado por pneumonia em um hospital de referência. A mãe comparece à UBS solicitando uma cópia do prontuário, pois deseja levá-lo ao hospital para que a equipe conheça os antecedentes pessoais do paciente. A conduta apropriada para o caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não fornecer uma cópia do prontuário, salvo em caso de óbito do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fornecer uma cópia do prontuário se houver solicitação do hospital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não fornecer uma cópia do prontuário sem autorização do paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Fornecer uma cópia do prontuário desde que a mãe tenha uma procuração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o dever de sigilo médico e o direito à privacidade do paciente, fundamentados no Código de Ética Médica (CEM). O prontuário é um documento do paciente, sob guarda da instituição de saúde, e as informações nele contidas são sigilosas.\n\nAlternativa a: Incorreta. O sigilo médico não termina com a morte do paciente; ele deve ser mantido mesmo após o óbito. Além disso, a alternativa ignora que o paciente, estando vivo e capaz, é quem detém o direito de autorizar o acesso aos seus dados.\n\nAlternativa b: Incorreta. A transferência de informações entre unidades de saúde deve ocorrer de forma técnica, por meio de relatórios de encaminhamento ou contrarreferência, garantindo que o sigilo seja preservado diante de familiares. Entregar o prontuário à mãe sem o consentimento do paciente viola a confidencialidade, especialmente em um caso de HIV, no qual o paciente expressou o desejo de manter o diagnóstico em segredo.\n\nAlternativa c: Correta. De acordo com o Código de Ética Médica, o médico é proibido de revelar informações de que tenha conhecimento em virtude de sua profissão, bem como de permitir o acesso de terceiros ao prontuário sem autorização do paciente, exceto por dever legal ou justa causa. Como o paciente tem 45 anos, é capaz e manifestou o desejo de privacidade, somente ele pode autorizar a entrega de documentos à família.\n\nAlternativa d: Incorreta. Embora uma procuração específica pudesse conferir poderes legais, em questões de prova e na ética médica, a regra primordial para pacientes capazes é a autorização direta. A existência de uma procuração não anula o conflito ético imediato apresentado no enunciado, que destaca a vontade do paciente em manter o sigilo perante os familiares.\n\nGabarito: Letra c.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:29.281Z"
+  }
+]

@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_1572276e-63e5-446d-b40b-9f7de5a0233d",
+    "originalId": "1572276e-63e5-446d-b40b-9f7de5a0233d",
+    "statement": "Uma mulher de 34 anos, obesa e tabagista, fraturou o tornozelo direito há 10 dias e está com uma imobilização. Deu entrada no pronto-socorro com quadro de dispneia súbita há 1 hora, com piora progressiva. Ao exame, constata-se diminuição do murmúrio vesicular à direita, esforço respiratório, SatO2: 80% em ar ambiente, pressão arterial 80x60mmhg, frequência cardíaca 120 bpm. Tomografia de tórax com contraste revela falha de enchimento em artéria pulmonar direita. Qual é o tratamento mais adequado para a paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anticoagulação terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trombólise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Anti-inflamatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Antiagregantes plaquetários.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, primeiro identificamos o diagnóstico: Tromboembolismo Pulmonar (TEP). A paciente apresenta fatores de risco clássicos (obesidade, tabagismo e imobilização prolongada por fratura de tornozelo) e um quadro clínico típico de dispneia súbita com hipóxia. O exame de imagem (angiotomografia de tórax) confirma o diagnóstico ao revelar falha de enchimento na artéria pulmonar.\n\nO ponto crucial para a escolha da conduta é a estratificação de risco. A paciente apresenta instabilidade hemodinâmica, caracterizada por hipotensão arterial (pressão arterial de 80x60 mmHg) associada a sinais de choque (esforço respiratório e taquicardia). Isso classifica o quadro como TEP de alto risco (também chamado de TEP maciço).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A anticoagulação terapêutica (geralmente iniciada com heparina de baixo peso molecular ou heparina não fracionada) é o tratamento de base para pacientes com TEP que estão hemodinamicamente estáveis. No entanto, diante de instabilidade hemodinâmica e choque obstrutivo, a anticoagulação isolada não é suficiente para desobstruir a circulação pulmonar de forma rápida.\n\nAlternativa b) Incorreta. Não há indícios de processo infeccioso, como pneumonia ou sepse, que justifiquem o uso de antibióticos. O quadro é nitidamente vascular agudo decorrente da imobilização prévia.\n\nAlternativa c) Correta. A trombólise sistêmica está indicada para todos os pacientes com TEP de alto risco (com hipotensão arterial definida por pressão arterial sistólica menor que 90 mmHg ou queda maior que 40 mmHg por mais de 15 minutos). O objetivo é promover a lise rápida do coágulo, reduzir a resistência vascular pulmonar, aliviar a sobrecarga do ventrículo direito e restaurar a pressão arterial.\n\nAlternativa d) Incorreta. Anti-inflamatórios não possuem papel no tratamento da obstrução mecânica e hemodinâmica causada pelo tromboembolismo pulmonar. Eles poderiam ser usados apenas para alívio de dor pleurítica em casos estáveis, mas nunca como tratamento principal.\n\nAlternativa e) Incorreta. Os antiagregantes plaquetários, como a aspirina, são fundamentais no manejo de doenças arteriais como o infarto agudo do miocárdio, mas não são o tratamento de escolha para eventos tromboembólicos venosos, onde a formação do trombo depende primordialmente da cascata de coagulação e da fibrina.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Ventilação Mecânica",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 55.80549204171814,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  },
+  {
+    "id": "AJUDA_157d58d6-215e-45f3-952b-110fd5c7b272",
+    "originalId": "157d58d6-215e-45f3-952b-110fd5c7b272",
+    "statement": "Homem, 65 anos, anorético com parada de eliminação de flatos, constipação e dor intensa em fossa ilíaca esquerda. Exame físico: mucosas coradas; taquicardia; sinais de descompressão dolorosa abdominal. A principal hipótese diagnóstica e o exame complementar mais adequado para elucidar o caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "pielonefrite aguda / urinocultura com antibiogram",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "diverticulite aguda complicada / TC abdominal e pélvica com contraste",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "aneurisma de aorta abdominal em expansão / angiotomografia abdominal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "nefrolitíase / US abdominal total",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO paciente em questão apresenta um quadro clássico de abdome agudo inflamatório. O ponto-chave para o diagnóstico é a localização da dor em fossa ilíaca esquerda (FIE) em um paciente idoso, associada a sinais de peritonite (descompressão dolorosa positiva). A anorexia e a parada de eliminação de flatos sugerem um íleo paralítico reflexo decorrente do processo inflamatório ou uma obstrução intestinal mecânica secundária à inflamação. A taquicardia e a dor intensa reforçam a gravidade do caso, indicando uma complicação.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A pielonefrite aguda manifesta-se tipicamente com febre alta, dor lombar (geralmente com sinal de Giordano positivo) e sintomas urinários (disúria, polaciúria). Embora a dor possa irradiar para o abdome, ela não costuma causar sinais de irritação peritoneal franca nem parada de eliminação de gases.\n\nAlternativa b) Correta. A diverticulite aguda é a principal causa de dor na fossa ilíaca esquerda no idoso, sendo popularmente conhecida como a \"apendicite do lado esquerdo\". O quadro clínico de dor localizada, constipação e sinais de irritação peritoneal (descompressão dolorosa) é altamente sugestivo. A presença de taquicardia e peritonite indica que se trata de uma diverticulite complicada (com abscesso ou perfuração). A tomografia computadorizada (TC) de abdome e pelve com contraste intravenoso é o exame padrão-ouro, pois confirma o diagnóstico, avalia a gravidade através da classificação de Hinchey e ajuda a excluir outros diagnósticos diferenciais.\n\nAlternativa c) Incorreta. Um aneurisma de aorta abdominal em expansão ou roto é uma emergência catastrófica que geralmente se manifesta com dor abdominal ou lombar súbita e intensa, podendo haver massa pulsátil e instabilidade hemodinâmica severa. Embora a angiotomografia seja o exame para avaliar a aorta, os sintomas intestinais (constipação e parada de flatos) e a localização específica da irritação peritoneal na FIE direcionam o diagnóstico para a diverticulite.\n\nAlternativa d) Incorreta. A nefrolitíase (cólica renal) causa dor aguda, em cólica, geralmente de início súbito e com irradiação para a região inguinal ou bolsa escrotal/grandes lábios. Não costuma evoluir com descompressão dolorosa abdominal (peritonite) ou sinais de oclusão intestinal. Além disso, o ultrassom abdominal tem sensibilidade limitada em comparação à tomografia para avaliação inicial de abdome agudo inflamatório no idoso.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  },
+  {
+    "id": "AJUDA_158a2856-c01f-403c-bb00-c47955b41f2b",
+    "originalId": "158a2856-c01f-403c-bb00-c47955b41f2b",
+    "statement": "Cerca de um ano e meio após o evento climático extremo de maio de 2024, sabe-se que parte da população gaúcha continuará apresentando, por um longo período, consequências psíquicas decorrentes das inundações. Assim, a nova geração de médicos que se forma e que atuará no Rio Grande do Sul, especialmente na atenção primária, precisa saber manejar esses sintomas. O transtorno de estresse pós-traumático (TEPT) está entre os transtornos psiquiátricos que podem persistir. Considerando o TEPT, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Após um ano do evento traumático, praticamente metade dos pacientes irão se recuperar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os inibidores duplos da recaptação de serotonina e noradrenalina são considerados tratamentos de primeira linha para o TEPT devido aos seus índices de eficácia, tolerabilidade e segurança.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O início rápido dos sintomas, a curta duração, o bom funcionamento pré-mórbido, o forte suporte social e a ausência de outros transtornos psiquiátricos configuram um bom prognóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em geral, pessoas mais jovens ou muito idosas apresentam maior dificuldade em lidar com eventos traumáticos do que aquelas na meia-idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o Transtorno de Estresse Pós-Traumático (TEPT), um tema de extrema relevância diante de desastres ambientais. O objetivo é identificar a alternativa incorreta sobre a patologia, seu tratamento e prognóstico.\n\nAlternativa a: Esta afirmação está correta. Dados epidemiológicos e clínicos clássicos indicam que, mesmo com a variabilidade de cada caso, aproximadamente 50% dos pacientes que desenvolvem TEPT apresentam remissão dos sintomas ou recuperação significativa dentro do primeiro ano após o evento traumático, especialmente quando há intervenção precoce.\n\nAlternativa b: Esta é a alternativa incorreta e, portanto, o gabarito. Embora os inibidores duplos da recaptação de serotonina e noradrenalina (como a venlafaxina) tenham eficácia comprovada e possam ser utilizados no tratamento do TEPT, eles não são a primeira linha absoluta. A primeira escolha farmacológica recomendada pelas principais diretrizes mundiais (como APA e NICE) e protocolos brasileiros são os Inibidores Seletivos da Recaptação de Serotonina (ISRS), como a sertralina, a paroxetina e a fluoxetina. Os ISRS são preferidos inicialmente pelo maior corpo de evidências científicas e perfil de tolerabilidade.\n\nAlternativa c: Esta afirmação está correta. O prognóstico do TEPT é influenciado por diversos fatores preditores. O início rápido dos sintomas (em oposição ao início tardio), a curta duração do quadro, um bom histórico de funcionamento social e ocupacional antes do trauma, a presença de uma rede de apoio sólida e a ausência de outras comorbidades psiquiátricas (como depressão ou abuso de substâncias) são fatores que favorecem uma evolução clínica positiva.\n\nAlternativa d: Esta afirmação está correta. Pessoas nos extremos de idade (crianças e idosos) tendem a apresentar maior vulnerabilidade ao trauma. Jovens podem não ter maturidade cognitiva e mecanismos de enfrentamento totalmente desenvolvidos, enquanto idosos podem ter menor resiliência biológica ou suporte social reduzido, o que torna o manejo do trauma mais complexo em comparação a adultos na meia-idade.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  },
+  {
+    "id": "AJUDA_15979f3d-f55d-4a7c-8b39-c0054e68874e",
+    "originalId": "15979f3d-f55d-4a7c-8b39-c0054e68874e",
+    "statement": "O GOLDEN MINUTE relaciona-se ao tempo máximo após o nascimento para iniciar",
+    "options": [
+      {
+        "id": "A",
+        "text": "aspiração de vias aéreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ventilação com pressão positiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "oferta de oxigênio suplementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "intubação traqueal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "massagem cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O conceito de Minuto de Ouro (Golden Minute) é um pilar fundamental das diretrizes de reanimação neonatal, preconizado por órgãos como a Sociedade Brasileira de Pediatria (SBP) e o ILCOR. Ele estabelece que os primeiros 60 segundos de vida são cruciais para a estabilização do recém-nascido. Se, após os passos iniciais (aquecer, posicionar a cabeça, aspirar se necessário e secar), o bebê permanecer em apneia, com respiração irregular ou com frequência cardíaca menor que 100 batimentos por minuto, a intervenção prioritária deve ser iniciada dentro deste primeiro minuto.\n\nAnálise das alternativas:\n\na) Incorreta. A aspiração de vias aéreas (boca e depois narinas) não é mais realizada de rotina em todos os recém-nascidos. Ela só é indicada se houver obstrução das vias aéreas por secreções ou mecônio que impeça a ventilação. Embora seja um passo inicial, não é o marco que define o sucesso do Minuto de Ouro.\n\nb) Correta. A Ventilação com Pressão Positiva (VPP) é a medida mais importante e eficaz na reanimação neonatal. O Minuto de Ouro foca especificamente em garantir que a VPP seja iniciada nos primeiros 60 segundos de vida para os bebês que não iniciaram a respiração espontânea efetiva, visando reverter a hipoxemia e a bradicardia o mais rápido possível.\n\nc) Incorreta. O uso de oxigênio suplementar não é a prioridade no primeiro minuto. Em recém-nascidos com idade gestacional maior ou igual a 34 semanas, a reanimação deve ser iniciada com ar ambiente (21% de oxigênio). O foco é a ventilação mecânica dos pulmões, e não a oferta isolada de oxigênio.\n\nd) Incorreta. A intubação traqueal é uma técnica avançada de via aérea. Ela é indicada quando a VPP com máscara facial e balão não está sendo efetiva ou em situações muito específicas (como hérnia diafragmática). Portanto, é uma etapa que geralmente ocorre após o Minuto de Ouro ter sido iniciado com máscara facial.\n\ne) Incorreta. A massagem cardíaca só deve ser iniciada se a frequência cardíaca permanecer abaixo de 60 bpm após 30 segundos de VPP técnica e efetiva (preferencialmente com via aérea avançada). Ou seja, a massagem é uma etapa tardia da reanimação e nunca a meta do primeiro minuto de vida.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Reanimação Neonatal",
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  },
+  {
+    "id": "AJUDA_159c702a-31cb-4523-9a96-4e915d3a5e72",
+    "originalId": "159c702a-31cb-4523-9a96-4e915d3a5e72",
+    "statement": "Em um caso de oclusão arterial aguda de membro inferior, qual é a causa mais comum da origem embólica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trauma torácico fechado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aneurisma de Aorta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cardiológica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Veias gastrocnêmicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A oclusão arterial aguda (OAA) de membros inferiores ocorre devido à interrupção abrupta do fluxo sanguíneo, podendo ser causada por trombose (formação de trombo no local da placa aterosclerótica) ou embolia (um fragmento de trombo que se desloca de um local distante). No caso da origem embólica, o coração é a principal fonte.\n\nAlternativa (a) Incorreta. O trauma torácico fechado não é uma causa prevalente de embolia arterial periférica. Embora traumas de alta energia possam causar lesões vasculares ou cardíacas, eles não representam a etiologia mais comum encontrada na prática clínica para oclusão arterial aguda.\n\nAlternativa (b) Incorreta. Aneurismas de aorta, assim como os aneurismas de artéria poplítea, podem ser fontes de êmbolos (microembolização ou macroembolização). No entanto, apesar de serem causas importantes, a frequência de embolia originada em aneurismas é substancialmente menor do que a de origem cardíaca.\n\nAlternativa (c) Correta. A fonte cardiológica é responsável por cerca de 80 por cento a 90 por cento de todos os casos de embolia arterial periférica. A fibrilação atrial (FA) é a condição mais frequentemente associada, devido à estase sanguínea no átrio esquerdo que facilita a formação de trombos. Outras fontes cardíacas incluem trombos murais pós-infarto agudo do miocárdio, miocardiopatias dilatadas, valvulopatias e endocardite.\n\nAlternativa (d) Incorreta. As veias gastrocnêmicas fazem parte do sistema venoso. Trombos originados no sistema venoso seguem em direção ao coração direito e são lançados na circulação pulmonar, causando tromboembolismo pulmonar (TEP). Para que um trombo venoso cause uma oclusão arterial periférica, seria necessária a presença de um shunt da direita para a esquerda (como o forame oval patente), caracterizando uma embolia paradoxal, que é um evento raro.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  },
+  {
+    "id": "AJUDA_15bcc69a-1bab-4c5a-aa0f-8c3f9e4ec6f5",
+    "originalId": "15bcc69a-1bab-4c5a-aa0f-8c3f9e4ec6f5",
+    "statement": "Um indivíduo XY apresenta mutação causando inativação do gene SRY (síndrome de Swyer). Assim, durante o desenvolvimento do sistema reprodutivo, este indivíduo apresentará:",
+    "options": [
+      {
+        "id": "A",
+        "text": "gônada masculina, genitália interna masculina e genitália externa feminina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "gônada feminina, genitália interna masculina e genitália externa masculina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "gônada masculina, genitália interna feminina e genitália externa masculina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "gônada feminina, genitália interna feminina e genitália externa feminina",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a Síndrome de Swyer, é fundamental revisar a cascata de diferenciação sexual embrionária. O sexo genético deste indivíduo é XY, porém a diferenciação do fenótipo depende da presença e do funcionamento do gene SRY (*Sex-determining Region Y*), localizado no cromossomo Y.\n\n1. Diferenciação Gonadal: O gene SRY é o principal responsável por sinalizar para que a gônada indiferenciada se torne um testículo. Se o gene SRY está inativado ou ausente, essa gônada não se desenvolve como testículo, tornando-se uma gônada disgenética (frequentemente chamada de gônada em fita). No contexto do desenvolvimento básico, na ausência do sinalizador masculino, a gônada segue o caminho fenotípico feminino.\n\n2. Genitália Interna: O desenvolvimento da genitália interna masculina depende da testosterona (produzida pelas células de Leydig) para o desenvolvimento dos ductos de Wolff, e do hormônio antimülleriano (AMH, produzido pelas células de Sertoli) para a regressão dos ductos de Müller. Na Síndrome de Swyer, como não há formação de testículos, não há produção de AMH nem de testosterona. Sem AMH, os ductos de Müller persistem e se diferenciam em útero, tubas uterinas e o terço superior da vagina. Sem testosterona, os ductos de Wolff regridem. Portanto, a genitália interna é feminina.\n\n3. Genitália Externa: A masculinização da genitália externa (formação do pênis e bolsa escrotal) depende da ação da di-hidrotestosterona (DHT), que é convertida a partir da testosterona. Sem a produção de testosterona pelos testículos, não há DHT. Na ausência desses estímulos androgênicos, a genitália externa segue o caminho de desenvolvimento padrão (*default*), que é o feminino, resultando em clitóris e lábios vulvares.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O indivíduo não apresentará gônada masculina nem genitália interna masculina, pois ambas dependem da função do gene SRY e da subsequente produção de testosterona e AMH.\n\nAlternativa b) Incorreta. Embora a gônada não seja testicular, a genitália interna e externa não serão masculinas, dada a completa ausência de andrógenos e AMH.\n\nAlternativa c) Incorreta. A gônada não será masculina devido à falha na diferenciação testicular por ausência de SRY ativo, e a genitália externa não será masculina por falta de estímulo hormonal.\n\nAlternativa d) Correta. Devido à inativação do gene SRY, a cascata de masculinização é interrompida no início. A gônada não se torna testículo, o útero e as tubas se desenvolvem pela falta de hormônio antimülleriano, e a genitália externa permanece feminina pela falta de testosterona e DHT. O resultado é um indivíduo com fenótipo feminino, porém com gônadas disgenéticas e cariótipo XY.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Anatomia e Embriologia do Trato Genital Feminino",
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  },
+  {
+    "id": "AJUDA_15c24953-0ac8-43e8-a4ae-b633c751764d",
+    "originalId": "15c24953-0ac8-43e8-a4ae-b633c751764d",
+    "statement": "Observe o encaminhamento realizado por um médico de família.\n“À cardiologia, Encaminho o Sr. J. L. S., de 56 anos, com diagnóstico de cardiopatia isquêmica, que sofreu um infarto agudo do miocárdio há 3 meses. Tem orientação para o uso de antiagregantes plaquetários, mas tem história de úlcera péptica e teve reação alérgica ao clopidogrel e à ticlopidina. Desta forma, solicito orientação quanto à conduta preventiva.”\nAo ser assistido pelo cardiologista, o paciente será atendido em qual nível de atenção e receberá que tipo de prevenção, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Primário; secundário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Secundário; secundário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Terciário; terciário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quaternário; terciário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento sobre os níveis de atenção à saúde no Sistema Único de Saúde (SUS) e os conceitos de níveis de prevenção em saúde.\n\nPara definir o nível de atenção:\nO paciente está sendo encaminhado de um médico de família (atenção primária) para um cardiologista (especialista focal). O atendimento especializado, geralmente realizado em ambulatórios de especialidades ou clínicas específicas, caracteriza o nível secundário de atenção. O nível terciário seria reservado para atendimentos de alta complexidade, como internações hospitalares em centros de referência ou cirurgias cardíacas.\n\nPara definir o nível de prevenção:\nA prevenção secundária consiste em ações realizadas para detectar precocemente uma doença ou para tratar uma patologia já instalada, visando evitar sua progressão ou recorrência. Como o paciente já sofreu um infarto agudo do miocárdio (doença manifesta) e a conduta solicitada (antiagregação plaquetária) visa prevenir um novo evento isquêmico, estamos diante de uma prevenção secundária.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O atendimento pelo cardiologista não é nível primário. A atenção primária é a porta de entrada, representada pelo médico de família no posto de saúde.\n\nAlternativa b) Correta. O cardiologista representa o nível secundário de atenção (especialidade) e o tratamento de um paciente que já teve um infarto para evitar recorrência é classificado como prevenção secundária.\n\nAlternativa c) Incorreta. O nível terciário de atenção refere-se a cuidados hospitalares de alta complexidade. Já a prevenção terciária foca na reabilitação do paciente para reduzir incapacidades após a doença ter causado danos (como fisioterapia ou reabilitação cardíaca pós-sequela), o que não é o foco principal do ajuste medicamentoso solicitado.\n\nAlternativa d) Incorreta. O nível quaternário de atenção envolve procedimentos de altíssima complexidade e tecnologia, muitas vezes experimentais ou de raridade extrema. A prevenção terciária, como dito acima, foca na reabilitação. Além disso, existe o conceito de prevenção quaternária, que visa evitar o excesso de intervenções médicas desnecessárias (iatrogenia), o que não se aplica ao caso de um paciente com indicação clara de terapia pós-infarto.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Princípios e Diretrizes do SUS",
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": 27.874242430001843,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  },
+  {
+    "id": "AJUDA_15c29aa2-8b44-44c2-af98-3b972c07083a",
+    "originalId": "15c29aa2-8b44-44c2-af98-3b972c07083a",
+    "statement": "Segundo as Diretrizes Brasileiras de Hipertensão Arterial 2020, a hipertensão do avental branco (HAB) é caracterizada por valores de pressão arterial (PA) elevados no consultório, mas normais fora dele. Já a hipertensão mascarada (HM) ocorre quando a PA é normal no consultório, mas elevada fora dele. Na HAB, os valores da PA fora do consultório tendem a ser mais elevados do que na normotensão verdadeira, o que pode explicar o aumento do risco de eventos cardiovasculares a longo prazo. Sobre o assunto, analise as afirmativas e assinale a alternativa correta.\n\nI. A HAB e a HM não são condições benignas, propiciando risco cardiovascular, conforme verificado por estudos transversais.\nII. As diretrizes clínicas devem ser fundamentadas no nível de confiança das evidências e na força das recomendações apresentadas por revisões sistemáticas.\nIII. A monitorização residencial da pressão arterial (MRPA) elimina o fenômeno do avental branco, proporcionando uma boa estimativa da PA normal durante o período da vigília.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a afirmativa I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a afirmativa II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas a afirmativa III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da Afirmativa I: Esta afirmativa está incorreta. Embora a Hipertensão do Avental Branco (HAB) e a Hipertensão Mascarada (HM) não sejam condições benignas e estejam associadas a um maior risco cardiovascular em relação aos normotensos, o aumento desse risco é comprovado por estudos longitudinais (de coorte), que acompanham os pacientes ao longo do tempo. Estudos transversais analisam apenas um ponto específico no tempo e não são adequados para determinar o risco de eventos futuros ou estabelecer prognóstico cardiovascular.\n\nAnálise da Afirmativa II: Esta afirmativa está correta. A elaboração das diretrizes médicas atuais utiliza os princípios da Medicina Baseada em Evidências. As recomendações são classificadas de acordo com a força da recomendação e o nível de evidência científica, priorizando dados obtidos por meio de revisões sistemáticas de ensaios clínicos randomizados e grandes estudos observacionais.\n\nAnálise da Afirmativa III: Esta afirmativa está correta. A Monitorização Residencial da Pressão Arterial (MRPA) é realizada pelo próprio paciente no ambiente doméstico, seguindo um protocolo específico. Por ocorrer fora do ambiente hospitalar ou de consultório, ela elimina a reação de alerta causada pela presença do profissional de saúde (fenômeno do avental branco). Como as medidas são feitas enquanto o paciente está acordado, o método fornece uma excelente estimativa da pressão arterial durante o período de vigília.\n\nAnálise das Alternativas:\nA alternativa (a) está incorreta porque a afirmativa I é falsa devido ao erro metodológico citado (estudos transversais).\nAs alternativas (b) e (c) estão incorretas por serem incompletas, já que tanto a afirmativa II quanto a III estão corretas.\nA alternativa (d) é a correta, pois identifica corretamente que apenas as proposições II e III são verdadeiras de acordo com as diretrizes e os conceitos de metodologia científica.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  },
+  {
+    "id": "AJUDA_15d6269e-8d09-4580-a52a-0cc7ff6bd793",
+    "originalId": "15d6269e-8d09-4580-a52a-0cc7ff6bd793",
+    "statement": "Mulher de 80 anos de idade apresenta hematoquezia há uma semana, com necessidade de reposição volêmica e suporte transfusional. Hábito intestinal: fezes formadas e sem esforço a cada dois dias. Toque retal: ausência de lesões e sangue vivo em moderada quantidade em dedo de luva.\n\nA causa mais provável do sangramento e a conduta são",
+    "options": [
+      {
+        "id": "A",
+        "text": "neoplasia de reto e amputação abdominoperineal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "neoplasia de cólon e colectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença diverticular dos cólons e suporte clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "angiectasia e coagulação com plasma de argônio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO:\n\nO caso descreve uma paciente idosa de 80 anos com hematoquezia (eliminação de sangue vivo pelo ânus) de início agudo e volume significativo, visto que houve necessidade de reposição volêmica e transfusão sanguínea. O hábito intestinal preservado e o toque retal normal (sem massas) são dados fundamentais que ajudam a direcionar o diagnóstico para causas não neoplásicas de sangramento agudo.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA doença diverticular dos cólons é a causa mais frequente de hemorragia digestiva baixa (HDB) volumosa e indolor em pacientes idosos. O sangramento ocorre devido à ruptura de uma vasa recta (pequena artéria) na cúpula ou no colo do divertículo. Embora a doença diverticular seja mais comum no cólon esquerdo, os divertículos do lado direito têm uma tendência maior a sangrar. Na grande maioria dos casos (cerca de 75% a 80%), o sangramento cessa espontaneamente apenas com medidas de suporte clínico, que incluem estabilização hemodinâmica e monitorização, tornando a conduta conservadora a mais adequada inicialmente.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: A neoplasia de reto geralmente apresenta sintomas como tenesmo (vontade constante de evacuar), alteração do calibre das fezes, muco e perda de peso. No exame físico, o toque retal costuma identificar a lesão em casos de tumores retais. Além disso, a amputação abdominoperineal (cirurgia de Miles) é um procedimento oncológico radical para tumores muito baixos e não é indicada como tratamento de urgência para um sangramento agudo sem diagnóstico prévio.\n\nAlternativa B: O câncer de cólon é uma causa importante de sangramento, mas ele costuma ser crônico, insidioso e em menor quantidade, manifestando-se frequentemente como anemia ferropriva ou sangue oculto. Sangramentos maciços que exigem transfusão imediata são raros em neoplasias. A colectomia só é indicada após a localização da lesão e falha de medidas menos invasivas.\n\nAlternativa D: A angiectasia (ou angiodisplasia) é a segunda causa mais comum de HDB em idosos. No entanto, ela costuma causar sangramentos de menor intensidade, de origem venosa ou capilar, muitas vezes recorrentes e crônicos. Embora a coagulação com plasma de argônio seja o tratamento de escolha via colonoscopia, a apresentação clínica de sangramento súbito e volumoso descrita na questão é mais típica da doença diverticular.\n\nCONCLUSÃO:\n\nEm pacientes idosos com hemorragia digestiva baixa aguda, volumosa e sem dor, a hipótese principal deve ser o sangramento diverticular, e a conduta imediata consiste no suporte clínico para estabilização da paciente.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel",
+      "Hemorragia Digestiva Baixa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  },
+  {
+    "id": "AJUDA_15e55676-d043-4d80-9bee-cd12dd4cd3cb",
+    "originalId": "15e55676-d043-4d80-9bee-cd12dd4cd3cb",
+    "statement": "Homem de 76 anos de idade apresenta febre alta, tosse produtiva e dispneia progressiva há três dias. AP: DM2, DPOC e DRC. Exame físico: confuso; PA: 82 × 48 mmHg; FC: 124 bpm; FR: 36 irpm; SatO2 84% em uso de máscara de O2 a 13 L/min; TEC > 5 segundos; extremidades frias e cianóticas. Exame laboratorial: lactato sérico 4,2 mmol/L. Apesar de adequada reposição volêmica, permanece hipotenso e anúrico, em uso de noradrenalina em bomba de infusão a 0,8 mcg/kg/min. Após nova avaliação, o paciente evolui com piora do nível de consciência (escala de coma de Glasgow 10 pontos) e sinais de fadiga respiratória.\nA conduta em relação ao manejo da via aérea é",
+    "options": [
+      {
+        "id": "A",
+        "text": "aguardar melhora hemodinâmica com vasopressores antes de realizar IOT e, se necessário, utilizar midazolam e succinilcolina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar IOT via sequência rápida com uso de etomidato e rocurônio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "contraindicar a IOT, oferecer VNI e aumentar noradrenalina até estabilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "adiar IOT até estabilização clínica e, se necessário, utilizar fentanil, midazolan e succinilcolina para a sequência rápida de intubação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de choque séptico grave, provavelmente de foco pulmonar (pneumonia), com sinais de disfunção de múltiplos órgãos: insuficiência respiratória (hipoxemia refratária e fadiga), instabilidade hemodinâmica (choque persistente com necessidade de altas doses de vasopressores), disfunção renal (anúria em paciente com DRC prévia) e disfunção neurológica (rebaixamento do nível de consciência com Glasgow 10).\n\nA indicação de intubação orotraqueal (IOT) é mandatória e imediata. O paciente tem sinais de falência respiratória iminente (fadiga e SatO2 de 84% mesmo com máscara de reservatório) e rebaixamento do nível de consciência, o que impede a proteção das vias aéreas. No choque séptico, a IOT precoce também ajuda a reduzir o trabalho respiratório e o consumo de oxigênio pela musculatura, direcionando o débito cardíaco para órgãos vitais.\n\nALTERNATIVA A - INCORRETA\nAguardar a melhora hemodinâmica é inviável e perigoso, pois o paciente já está em fadiga respiratória; a demora resultará em parada cardiorrespiratória por hipóxia. Além disso, o midazolam deve ser evitado em pacientes em estado de choque por ser um potente depressor cardiovascular (causa vasodilatação e depressão miocárdica). A succinilcolina é um bloqueador neuromuscular despolarizante que pode causar hipercalemia. Como o paciente tem doença renal crônica e está anúrico, o risco de uma elevação fatal do potássio sérico contraindica seu uso.\n\nALTERNATIVA B - CORRETA\nA sequência rápida de intubação (SRI) é o padrão-ouro na emergência. O etomidato é o indutor de escolha para pacientes com instabilidade hemodinâmica grave, pois possui perfil neutro, mantendo a estabilidade da pressão arterial e da frequência cardíaca. O rocurônio é o bloqueador neuromuscular não despolarizante ideal neste caso, pois não altera os níveis de potássio, sendo seguro para pacientes com insuficiência renal e anúria.\n\nALTERNATIVA C - INCORRETA\nA Ventilação Não Invasiva (VNI) é formalmente contraindicada em pacientes com instabilidade hemodinâmica grave (choque necessitando de altas doses de noradrenalina), rebaixamento do nível de consciência (Glasgow < 12) e necessidade iminente de intubação por fadiga. Insistir na VNI neste cenário posterga o tratamento definitivo e aumenta a mortalidade.\n\nALTERNATIVA D - INCORRETA\nAdiar a IOT em um paciente com sinais claros de exaustão respiratória é incorreto. O uso de fentanil e midazolam em doses habituais é perigoso no choque, pois ambos podem causar colapso circulatório por simpatectomia e depressão direta. A succinilcolina, como mencionado anteriormente, é contraindicada pelo risco de hipercalemia grave no contexto da insuficiência renal aguda sobre crônica com anúria.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:47.493Z"
+  }
+]

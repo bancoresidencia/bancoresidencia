@@ -80,7 +80,8 @@ export const ListManager: React.FC<ListManagerProps> = ({
     tipoQuestao: 'Todas',
     ocultarAnuladasErro: false,
     ocultarRevisadas: false,
-    ultimos5Anos: false
+    ultimos5Anos: false,
+    aleatorizar: false
   });
   const [filterError, setFilterError] = useState<string | null>(null);
   const [dynamicFilteredCount, setDynamicFilteredCount] = useState<number>(132965);

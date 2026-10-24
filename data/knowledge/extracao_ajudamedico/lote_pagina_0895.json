@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_f8910e6c-2ddf-4bd2-b9a7-8e8bb61f7fc6",
+    "originalId": "f8910e6c-2ddf-4bd2-b9a7-8e8bb61f7fc6",
+    "statement": "O projeto Acerto é um programa multimodal de cuidados perioperatórios, pioneiro no território nacional. Cuidados tradicionais são modificados nesse projeto, com base na evidência de estudos randomizados e meta-análises.\n\nOs 5 principais elementos desse projeto são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "educação e mobilização do paciente no pré-operatório; abreviamento do jejum pré-operatório e realimentação precoce; anestesia multimodal com foco em analgesia e controle de náuseas/vômitos; hidratação e nutrição balanceadas no intra e pós-operatório; mobilização precoce no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "uso de Equipamentos de Proteção Individual (EPIs); adoção de Barreiras Físicas e Contenção como áreas de trabalho isoladas e o descarte seguro de resíduos; implementação de Boas Práticas e Procedimentos Operacionais Padrão (POPs); higienização das mãos; vacinação adequada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "manter ferida operatória limpa e hidratada; dieta equilibrada rica em proteínas e vitaminas; proteção da pele da exposição solar; evitar traumas e seguir as orientações médicas sobre curativos; atividades físicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "assepsia rigorosa para prevenir infecções; hemostasia para evitar hematomas; adequação do fio e técnica ao tipo de ferida e tecidos envolvidos; aproximação correta das bordas sem gerar tensão excessiva para evitar isquemia; e a eliminação de espaços mortos para prevenir acúmulo de fluidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Projeto ACERTO (Aceleração da Recuperação Total Pós-Operatória) é um protocolo nacional baseado no programa europeu ERAS (Enhanced Recovery After Surgery). Ele visa otimizar a recuperação do paciente cirúrgico através da quebra de paradigmas tradicionais e da aplicação de condutas baseadas em evidências científicas.\n\nAlternativa A: Correta. Esta alternativa descreve os pilares fundamentais do projeto. O ACERTO foca na informação pré-operatória ao paciente para reduzir a ansiedade; no abreviamento do jejum (permitindo líquidos claros com carboidratos até 2 horas antes da cirurgia) e no retorno rápido da dieta após o procedimento; na anestesia multimodal para reduzir o uso de opioides e prevenir náuseas e vômitos; na restrição da hidratação venosa excessiva (evitando balanço hídrico muito positivo); e na mobilização ultraprecoce para reduzir complicações como trombose e perda de massa muscular.\n\nAlternativa B: Incorreta. Os itens listados (EPIs, descarte de resíduos, higienização das mãos e vacinação) referem-se a normas de biossegurança e protocolos de controle de infecção hospitalar de caráter geral, não sendo as diretrizes específicas de aceleração da recuperação pós-operatória do Projeto ACERTO.\n\nAlternativa C: Incorreta. Embora os cuidados com a ferida operatória e a dieta equilibrada sejam importantes no cuidado de qualquer paciente, os itens listados (especialmente proteção solar e evitar traumas) são orientações genéricas de cuidados domiciliares ou dermatológicos e não compõem o conjunto de medidas multimodais perioperatórias que definem o Projeto ACERTO.\n\nAlternativa D: Incorreta. Os pontos citados (assepsia, hemostasia, técnica de sutura e eliminação de espaços mortos) são conhecidos como os Princípios de Halsted. Eles representam a base da boa técnica cirúrgica clássica e devem ser seguidos em qualquer operação, mas não são as inovações ou os pilares propostos especificamente pelo protocolo ACERTO para a aceleração da recuperação do paciente.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  },
+  {
+    "id": "AJUDA_f89a5886-7152-480c-8a7a-6aafafcc21a6",
+    "originalId": "f89a5886-7152-480c-8a7a-6aafafcc21a6",
+    "statement": "Paciente, sexo feminino, 35 anos, assintomática e sem histórico familiar de doenças, solicita uma ressonância magnética de corpo inteiro para \"check-up\". O médico explica que o exame não é indicado e pode gerar danos por falsos-positivos e intervenções desnecessárias. O nível de prevenção aplicado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção Terciária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevenção Primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prevenção Quaternária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prevenção Secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nA questão aborda os conceitos fundamentais dos níveis de prevenção em saúde. O foco aqui é a atuação médica voltada para evitar o excesso de intervencionismo e a iatrogenia (dano causado pela intervenção médica).\n\nAlternativa a) Prevenção Terciária.\nIncorreto. A prevenção terciária é aplicada quando a doença já está estabelecida e se manifesta clinicamente. Seu objetivo é reduzir o impacto da enfermidade, prevenir complicações, realizar a reabilitação e melhorar a qualidade de vida do paciente. Exemplos incluem a fisioterapia pós-AVC ou o controle glicêmico rigoroso para evitar amputações em diabéticos. Não se aplica a uma paciente assintomática.\n\nAlternativa b) Prevenção Primária.\nIncorreto. A prevenção primária visa impedir o surgimento da doença. Ela atua no período pré-patogênico, controlando fatores de risco ou utilizando proteção específica. Exemplos clássicos são a vacinação, o uso de preservativos e o incentivo à atividade física e à alimentação saudável para evitar o desenvolvimento de patologias.\n\nAlternativa c) Prevenção Quaternária.\nCorreto. A prevenção quaternária consiste na detecção de indivíduos em risco de intervencionismo médico excessivo (sobremedicalização), visando protegê-los de novas invasões médicas desnecessárias e sugerir alternativas eticamente aceitáveis. Ao explicar que a ressonância de corpo inteiro não tem indicação e pode causar danos através de falsos-positivos (que levariam a biópsias ou cirurgias desnecessárias), o médico exerce a prevenção quaternária. O foco é o \"primum non nocere\" (primeiro não causar dano).\n\nAlternativa d) Prevenção Secundária.\nIncorreto. A prevenção secundária foca no diagnóstico precoce e no tratamento imediato de doenças que já estão presentes no organismo, mas ainda em fase assintomática (fase subclínica). Para isso, utilizam-se testes de rastreamento (screening) com validade científica comprovada, como o exame de Papanicolau ou a mamografia em faixas etárias específicas. A ressonância de corpo inteiro como \"check-up\" não é um método de rastreamento validado e, portanto, não se enquadra aqui.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  },
+  {
+    "id": "AJUDA_f89c988c-2ecb-4b49-b379-294620b90fba",
+    "originalId": "f89c988c-2ecb-4b49-b379-294620b90fba",
+    "statement": "Hérnia que tem um divertículo de Meckel no seu saco herniário é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "De Spinel;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "De Meckel;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "De Littre;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mcvay.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questao aborda os eponimos cirurgicos classicos das hernias da parede abdominal, focando no conteudo presente no saco herniario.\n\nAlternativa a: Incorreta. Faz referencia a hernia de Spiegel (grafada erroneamente como Spinel). A hernia de Spiegel e definida por sua localizacao anatomica, ocorrendo atraves da aponeurose de Spiegel (na linha semilunar, na borda lateral do musculo reto abdominal), e nao pelo conteudo do seu saco.\n\nAlternativa b: Incorreta. Trata-se de uma alternativa distratora. Meckel da nome ao diverticulo congenito (remanescente do ducto onfalomesenterico), mas a hernia que contem esse diverticulo no seu interior e denominada hernia de Littre.\n\nAlternativa c: Correta. A hernia de Littre e definida exatamente pela presenca de um diverticulo de Meckel dentro do saco herniario. E um eponimo classico cobrado em provas, ao lado da hernia de Amyand (apendice cecal na hernia inguinal) e da hernia de Richter (pinçamento apenas da borda antimesenterica da alca intestinal).\n\nAlternativa d: Incorreta. McVay nao e um tipo de hernia, mas sim uma tecnica cirurgica classica de herniorrafia, que consiste na fixacao do tendao conjunto ao ligamento de Cooper (ligamento pectineo), indicada tradicionalmente para o reparo de hernias femorais e inguinais.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel",
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  },
+  {
+    "id": "AJUDA_f8a875e2-d891-49b9-8a35-b7fbe2c7ab4f",
+    "originalId": "f8a875e2-d891-49b9-8a35-b7fbe2c7ab4f",
+    "statement": "Homem de 59 anos, diagnóstico de adenocarcinoma de reto baixo, a 4 cm da borda anal. Ressonância evidencia T3cN2, sem invasão de fáscia mesorretal, sem metástases. Após quimiorradioterapia neoadjuvante com capecitabina + radioterapia, apresenta resposta clínica completa ao exame físico, colonoscopia e ressonância.\n\nNesse caso, a conduta adequada, segundo a evidência mais atual, é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressecção abdominoperineal obrigatória, pela localização baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Proctectomia com excisão total do mesorreto e anastomose coloanal, independentemente da resposta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acompanhamento clínico rigoroso (“watch and wait”), com exames seriados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Radioterapia adjuvante adicional antes da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Proctocolectomia total por risco de carcinoma sincrônico oculto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um paciente com adenocarcinoma de reto baixo, inicialmente estadiado como localmente avançado (T3cN2), que apresentou Resposta Clínica Completa (cCR) após o tratamento neoadjuvante com quimiorradioterapia. A definição de resposta clínica completa é baseada na ausência de tumor residual ao toque retal, na visualização de apenas uma cicatriz esbranquiçada ou telangiectasias na colonoscopia e na ausência de sinal de tumor ativo na ressonância magnética (geralmente avaliada pela sequência de difusão).\n\nAlternativa a: Incorreta. A ressecção abdominoperineal (cirurgia de Miles) é um procedimento mutilante que exige colostomia definitiva. Antigamente, a localização baixa do tumor obrigava a essa conduta, mas a medicina moderna prioriza a preservação de órgão e da função esfincteriana quando há resposta completa ao tratamento inicial.\n\nAlternativa b: Incorreta. Embora a proctectomia com Excisão Total do Mesorreto (ETM) seja o padrão-ouro cirúrgico para o tratamento do câncer de reto, as evidências mais atuais (estudos como os da Dra. Angelita Habr-Gama e o estudo OPRA) demonstram que a cirurgia imediata pode ser evitada em pacientes com resposta clínica completa, sem prejuízo na sobrevida global e com ganho significativo em qualidade de vida.\n\nAlternativa c: Correta. A estratégia de Watch and Wait (Vigiar e Esperar) é a conduta de escolha atual para pacientes com resposta clínica completa após neoadjuvância. Ela consiste em um seguimento rigoroso com exames físicos, proctológicos, endoscópicos e de imagem em intervalos curtos. Caso ocorra uma recidiva local (regrowth), a cirurgia de resgate ainda pode ser realizada com bons índices de cura.\n\nAlternativa d: Incorreta. A radioterapia já foi realizada no esquema de neoadjuvância. Não existe protocolo fundamentado para adição de radioterapia extra antes de uma cirurgia em um paciente que já não apresenta evidência de doença macroscópica ou microscópica detectável pelos exames de controle.\n\nAlternativa e: Incorreta. A proctocolectomia total (retirada de todo o cólon e reto) é uma cirurgia extensa indicada para condições como polipose adenomatosa familiar ou doenças inflamatórias intestinais com displasia/câncer, não sendo a conduta para um adenocarcinoma de reto esporádico isolado, mesmo com risco de lesões sincrônicas (que devem ser excluídas por colonoscopia completa pré-tratamento).",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  },
+  {
+    "id": "AJUDA_f8b32044-5cb8-4d1c-b72e-d04e9b948570",
+    "originalId": "f8b32044-5cb8-4d1c-b72e-d04e9b948570",
+    "statement": "Durante o acolhimento à demanda espontânea na UBS, chegam simultaneamente quatro situações. A equipe precisa identificar quais delas exigem notificação compulsória imediata. \n\nI. Mulher de 26 anos relata que foi forçada a ter relação sexual pelo parceiro na noite anterior e apresenta lesões compatíveis com violência sexual.\nII. Homem de 18 anos chega acompanhado da mãe após ingerir grande quantidade de comprimidos em uma tentativa de suicídio. Está clinicamente estável.\nIII. Criança de 7 anos apresenta febre e tosse há 48h, sem sinais de gravidade.\nIV. Idoso de 72 anos procura a UBS para ajuste de medicação da hipertensão.\n\nConsiderando a legislação vigente, qual situação exige notificação compulsória IMEDIATA pela equipe da APS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A criança febril e o idoso hipertenso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas o paciente em tentativa de suicídio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas a mulher com suspeita de violência sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A mulher vítima de violência sexual e o paciente em tentativa de suicídio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental dominar a Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública, definida pelo Ministério da Saúde (Portaria de Consolidação nº 4/2016 e suas atualizações, como a Portaria GM/MS nº 217/2023).\n\nA notificação compulsória pode ser semanal ou imediata (feita em até 24 horas para as autoridades de saúde). Vamos analisar cada situação apresentada:\n\nSituação I: Mulher vítima de violência sexual. De acordo com a legislação vigente, os casos de violência doméstica e/ou outras violências são de notificação compulsória. Entretanto, quando se trata especificamente de violência sexual ou tentativa de suicídio, a notificação deve ser IMEDIATA (em até 24 horas) à autoridade de saúde local.\n\nSituação II: Homem em tentativa de suicídio. Assim como a violência sexual, a tentativa de suicídio e a violência autoprovocada são eventos que exigem notificação compulsória IMEDIATA. O objetivo é permitir a rápida intervenção da rede de cuidado e vigilância.\n\nSituação III: Criança com febre e tosse sem sinais de gravidade. Este quadro sugere uma síndrome gripal comum ou resfriado. Embora algumas doenças respiratórias específicas (como Influenza em casos graves ou COVID-19 em períodos de emergência) possam ser notificáveis, um quadro inespecífico e sem sinais de gravidade em uma UBS não exige notificação imediata.\n\nSituação IV: Idoso para ajuste de medicação de hipertensão. A hipertensão arterial sistêmica é uma condição crônica não transmissível e não consta na lista de doenças de notificação compulsória.\n\nAnálise das alternativas:\n\na) Incorreta. A criança febril (sem suspeita de doença específica grave) e o idoso hipertenso não se enquadram nos critérios de notificação compulsória imediata.\n\nb) Incorreta. Embora o paciente em tentativa de suicídio exija notificação imediata, a alternativa está incompleta, pois a vítima de violência sexual também exige.\n\nc) Incorreta. Da mesma forma que a alternativa B, está incompleta, pois ignora a obrigatoriedade imediata para a tentativa de suicídio.\n\nd) Correta. Tanto a violência sexual quanto a tentativa de suicídio são agravos que exigem a comunicação imediata (dentro de 24 horas) às autoridades sanitárias, visando a proteção da vítima e a organização de políticas de prevenção.\n\nPortanto, a resposta correta é a alternativa (d).",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  },
+  {
+    "id": "AJUDA_f8c3703c-1699-49ea-8b30-ef11f58a319e",
+    "originalId": "f8c3703c-1699-49ea-8b30-ef11f58a319e",
+    "statement": "Assinale a alternativa que contém as primeiras células infiltrantes que penetram no lugar da cicatrização das feridas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fibroblastos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Polimorfonucleares",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Macrófagos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Células endoteliais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Plaquetas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a cronologia da cicatrização e acertar esse tipo de questão, o estudante deve dividir o processo em fases: Hemostasia, Inflamação (composta pelas ondas de Neutrófilos e Macrófagos), Proliferação e Remodelação. O termo-chave da questão é \"células infiltrantes\", referindo-se ao recrutamento de células da corrente sanguínea para o tecido por meio da diapedese.\n\nAnálise das alternativas:\n\na) Incorreta. Os fibroblastos são os protagonistas da fase de Proliferação (fibroplasia). Eles começam a migrar para a ferida em resposta a fatores de crescimento por volta do 2º ou 3º dia, atingindo o pico entre o 5º e 7º dia. Sua função é a síntese de colágeno, e não a infiltração inicial.\n\nb) Correta. Os Polimorfonucleares (PMN), representados essencialmente pelos neutrófilos, são os primeiros leucócitos a infiltrar o leito da ferida. Eles chegam ao local poucos minutos após a lesão, atingindo o pico de concentração entre 24 e 48 horas. Sua função primordial é a limpeza de detritos e o combate a microrganismos por meio da fagocitose e liberação de enzimas proteolíticas.\n\nc) Incorreta. Os macrófagos originam-se dos monócitos sanguíneos e são considerados as \"células-tronco\" da cicatrização devido ao seu papel regulador. Embora fundamentais, eles chegam após os neutrófilos, tornando-se a população celular predominante apenas após 48 a 72 horas. São células infiltrantes secundárias.\n\nd) Incorreta. As células endoteliais atuam na fase de proliferação, especificamente no processo de angiogênese (formação de novos vasos). Elas se multiplicam e migram para formar o tecido de granulação, fornecendo aporte de oxigênio e nutrientes para o tecido novo, ocorrendo bem depois da infiltração inflamatória inicial.\n\ne) Incorreta. Esta é a pegadinha clássica. As plaquetas são os primeiros elementos a atuar na lesão para formar o tampão hemostático. No entanto, na histologia e na biologia celular, as plaquetas não são células propriamente ditas, mas fragmentos citoplasmáticos de megacariócitos. Além disso, o termo \"infiltrante\" na literatura médica acadêmica é comumente reservado aos leucócitos que realizam diapedese para sair do vaso e entrar no interstício.\n\nConclusão: Seguindo a ordem cronológica da cascata inflamatória, os Polimorfonucleares são os primeiros leucócitos a infiltrar a ferida.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  },
+  {
+    "id": "AJUDA_f8c52df7-39c2-4dc8-9b83-312a34d64694",
+    "originalId": "f8c52df7-39c2-4dc8-9b83-312a34d64694",
+    "statement": "Uma mulher de 29 anos, nuligesta, procura atendimento por dismenorreia progressiva, dispareunia profunda e dor pélvica cíclica há 18 meses. Exame físico revela sensibilidade à palpação dos ligamentos uterossacros, mas sem massas anexiais palpáveis. A paciente realizou ultrassonografia transvaginal no 14º dia do ciclo, com profissional experiente, segundo protocolo IDEA, que não identificou endometrioma ou nódulos profundos evidentes. Ela está muito ansiosa. Qual é a conduta mais adequada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar laparoscopia diagnóstica de imediato, pois exame físico normal ou inconclusivo já constitui indicação isolada de videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar tratamento mesmo sem confirmação cirúrgica ou exame de imagem, porque o manejo clínico melhora a qualidade de vida, ainda que empírico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar ressonância magnética para complementar a investigação, principalmente para pesquisa de focos profundos extra peritoneais e lesões atípicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir a ultrassonografia em fase folicular precoce, quando as condições anatômicas tendem a favorecer melhor definição de planos profundos e do compartimento posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da Questão: Endometriose e Manejo Clínico Inicial\n\nO caso descreve uma paciente com a tríade clássica sugestiva de endometriose: dismenorreia progressiva, dispareunia de profundidade e dor pélvica cíclica. O exame físico reforça a suspeita ao identificar dor nos ligamentos uterossacros, local comum de implantes da doença. Entretanto, exames de imagem (mesmo os realizados por especialistas com protocolo específico) podem não detectar focos de endometriose superficial ou pequenas lesões, o que não exclui o diagnóstico.\n\nAlternativa a) Incorreta. Antigamente, a videolaparoscopia era considerada o padrão-ouro e o primeiro passo para o diagnóstico definitivo. Atualmente, as diretrizes internacionais (como ESHRE e ACOG) e nacionais (FEBRASGO) recomendam evitar a cirurgia diagnóstica precoce. A laparoscopia deve ser reservada para casos de falha do tratamento clínico, presença de massas anexiais (endometriomas) suspeitas, obstruções de vias urinárias ou intestinais, ou quando o diagnóstico permanece incerto após falha terapêutica.\n\nAlternativa b) Correta. O tratamento empírico é a conduta inicial recomendada para pacientes com quadro clínico sugestivo de endometriose, mesmo na ausência de confirmação por imagem ou biópsia. Iniciar anticoncepcionais combinados, progestagênios isolados ou anti-inflamatórios visa o controle da dor e a melhora da qualidade de vida. Se houver melhora dos sintomas, o diagnóstico clínico é reforçado, evitando os riscos inerentes a um procedimento cirúrgico desnecessário e reduzindo a ansiedade da paciente através do alívio álgico.\n\nAlternativa c) Incorreta. A ressonância magnética (RM) tem acurácia diagnóstica muito similar à ultrassonografia transvaginal com preparo intestinal (protocolo IDEA) realizada por mãos experientes. Se um exame de alta qualidade já foi realizado e resultou negativo, a RM dificilmente alterará a conduta imediata, que deve ser o controle dos sintomas da paciente. A RM não substitui a necessidade de iniciar o tratamento clínico diante da suspeita sintomática.\n\nAlternativa d) Incorreta. Não há recomendação formal de que a fase folicular precoce aumente significativamente a sensibilidade do protocolo IDEA para detecção de focos que já não seriam vistos no 14º dia. A falha da ultrassonografia em detectar a doença em pacientes sintomáticas geralmente ocorre porque a endometriose superficial (peritoneal) está abaixo do limite de resolução dos métodos de imagem atuais, independentemente do dia do ciclo menstrual.\n\nConclusão: Diante de uma forte suspeita clínica de endometriose em uma paciente com exames de imagem normais, a conduta mais adequada e humanizada é o início imediato do tratamento clínico (terapia empírica) para controle da dor.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  },
+  {
+    "id": "AJUDA_f8c70b9c-7ff6-4990-85b9-ad8a73af8d3e",
+    "originalId": "f8c70b9c-7ff6-4990-85b9-ad8a73af8d3e",
+    "statement": "Mulher, 75 anos de idade, apresenta infecção por influenza, com evolução para síndrome do desconforto respiratório agudo e necessidade de intubação orotraqueal. Ventilação mecânica iniciada com fração inspirada de oxigênio de 80% e PEEP de 8 cmH2O. A relação PaO2/FiO2 está em 100, e há dificuldade em manter oxigenação adequada. Para melhora da saturação de oxigênio, opta-se por aumentar PEEP para 12 cmH2O e iniciar bloqueio neuromuscular (rocurônio).\n\nA pressão arterial média diminui de 70 mmHg para 60 mmHg após esse ajuste, o que ocorre por",
+    "options": [
+      {
+        "id": "A",
+        "text": "vasodilatação pelo bloqueador neuromuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "vasodilatação reflexa pelo aumento da PEEP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vasodilatação por liberação de citocinas inflamatórias pelo aumento da PEEP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "redução do débito cardíaco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "aumento do espaço morto e consequente vasodilatação das artérias e arteríolas pulmonares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve uma complicação hemodinâmica comum após ajustes na ventilação mecânica em pacientes com Síndrome do Desconforto Respiratório Agudo (SDRA). A elevação da PEEP (Pressão Expiratória Final Positiva) e o uso de bloqueadores neuromusculares podem impactar diretamente a estabilidade cardiovascular por meio de alterações nas pressões intratorácicas.\n\nAlternativa a: Incorreta. O rocurônio é um bloqueador neuromuscular do grupo dos aminoesteroides. Diferentemente de outros fármacos da classe dos benzilisoquinolínios (como o atracúrio), o rocurônio não provoca liberação significativa de histamina; portanto, não é uma causa direta de vasodilatação sistêmica ou hipotensão súbita nessas condições.\n\nAlternativa b: Incorreta. O aumento da pressão intratorácica causado pela PEEP não gera vasodilatação reflexa. Pelo contrário, a resposta fisiológica compensatória esperada à queda do débito cardíaco é uma ativação do sistema nervoso simpático, que tenta promover vasoconstrição periférica e taquicardia para manter a pressão arterial média.\n\nAlternativa c: Incorreta. O uso da PEEP na SDRA visa justamente proteger o pulmão contra o biotrauma (liberação de citocinas inflamatórias), ao evitar o colapso e a reabertura cíclicos dos alvéolos (atelectotrauma). Além disso, uma eventual liberação de citocinas não causaria uma queda pressórica tão imediata logo após o ajuste do ventilador.\n\nAlternativa d: Correta. O principal motivo da queda da pressão arterial após o aumento da PEEP é a redução do débito cardíaco. Isso ocorre fundamentalmente por dois mecanismos: 1) o aumento da pressão intratorácica comprime as veias cavas, dificultando o retorno venoso para o coração (redução da pré-carga); 2) a pressão positiva pode aumentar a resistência vascular pulmonar ao comprimir os capilares alveolares, o que eleva a pós-carga do ventrículo direito. O uso do bloqueador neuromuscular (rocurônio) potencializa esse efeito, pois, ao eliminar o tônus da musculatura torácica, permite que a pressão gerada pelo ventilador seja transmitida de forma mais integral ao espaço pleural e às estruturas cardíacas.\n\nAlternativa e: Incorreta. Embora níveis elevados de PEEP possam aumentar o espaço morto (por hiperdistensão alveolar), o efeito nos vasos sanguíneos pulmonares é de compressão mecânica, o que aumenta a resistência local. Não ocorre vasodilatação das artérias e arteríolas pulmonares nesse contexto; o efeito hemodinâmico sistêmico é derivado da redução do enchimento cardíaco e não de uma vasodilatação pulmonar.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Síndrome do Desconforto Respiratório Agudo",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  },
+  {
+    "id": "AJUDA_f8dd297e-c4d0-4b04-aa77-6687106949af",
+    "originalId": "f8dd297e-c4d0-4b04-aa77-6687106949af",
+    "statement": "Nos anos 90, após a criação do SUS e a partir da luta do movimento indígena, foi regulamentada a Lei Arouca, que instituiu o Subsistema de Atenção à Saúde dos Povos Indígenas (SasiSUS), com o objetivo de garantir aos povos indígenas o acesso à atenção integral à saúde e contemplando a diversidade social, cultural, geográfica, histórica e política. Como é estruturado o atendimento aos povos indígenas dentro do SasiSUS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É um sistema de saúde à parte do SUS, gerido pelo Ministério dos Povos Indígenas (MPI) e se organiza em Distritos Sanitários Especiais Indígenas (DSEI) que executam ações de atenção à saúde, saneamento básico, gestão, apoio técnico e apoio ao controle social dos povos indígenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "E gerido pela Fundação Nacional dos Povos Indígenas (FUNAI) e organiza o atendimento das populações indígenas por meio de missões periódicas realizadas por equipes multiprofissionais com objetivo de trazer as pessoas doentes para atendimento nos serviços do SUS mais próximos de seus territórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É gerido pelo Ministério dos Povos Indígenas (MPI) e prevê o atendimento das pessoas indígenas nos serviços de atenção primária, secundária, terciária e quaternária destinados à toda população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É gerido pela Secretaria de Saúde Indígena (SESAI) e se organiza em Distritos Sanitários Especiais Indígenas (DSEI) que executam ações de atenção à saúde, saneamento básico, gestão, apoio técnico e apoio ao controle social dos povos indígenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Lei Arouca (Lei nº 9.836/1999) instituiu o Subsistema de Atenção à Saúde dos Povos Indígenas (SasiSUS), que é parte integrante do Sistema Único de Saúde (SUS). O objetivo central é oferecer uma atenção diferenciada que respeite as especificidades culturais, geográficas e epidemiológicas dessas populações.\n\nAlternativa A - INCORRETA: O SasiSUS não é um sistema à parte do SUS; ele é um subsistema que funciona de forma integrada e complementar à rede nacional de saúde. Além disso, a gestão do SasiSUS não cabe ao Ministério dos Povos Indígenas (MPI), mas sim ao Ministério da Saúde, por meio de uma secretaria específica.\n\nAlternativa B - INCORRETA: Historicamente, a saúde indígena já esteve sob responsabilidade da FUNAI e, posteriormente, da Fundação Nacional de Saúde (FUNASA). No entanto, desde 2010, essa atribuição foi transferida para o Ministério da Saúde. O modelo de atendimento não se resume a missões periódicas para retirar doentes de seus territórios, mas sim a uma estruturação permanente de atenção primária dentro das áreas indígenas.\n\nAlternativa C - INCORRETA: Embora o indígena tenha direito ao atendimento em todos os níveis de complexidade do SUS (do primário ao quaternário), o SasiSUS possui uma estrutura organizacional própria e descentralizada para a atenção básica. Novamente, o erro reside em atribuir a gestão ao Ministério dos Povos Indígenas (MPI), quando o gestor federal da saúde indígena é o Ministério da Saúde.\n\nAlternativa D - CORRETA: Esta alternativa define com precisão a estrutura atual. A gestão federal é exercida pela Secretaria de Saúde Indígena (SESAI), vinculada ao Ministério da Saúde. A base da organização territorial e administrativa são os Distritos Sanitários Especiais Indígenas (DSEI). Cada DSEI é uma unidade de gestão descentralizada que conta com Equipes Multiprofissionais de Saúde Indígena (EMSI) para executar ações de atenção primária, saneamento ambiental, gestão de insumos e promoção do controle social, respeitando as práticas tradicionais de cada povo.\n\nEm resumo, para provas de residência, lembre-se: o SasiSUS é parte do SUS, é gerido pela SESAI (Ministério da Saúde) e sua unidade organizacional básica é o DSEI.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  },
+  {
+    "id": "AJUDA_f8e425be-1173-4511-bb1c-41f1d309ee98",
+    "originalId": "f8e425be-1173-4511-bb1c-41f1d309ee98",
+    "statement": "O transporte de substâncias por meio da placenta ocorre por meio dos seguintes mecanismos:\n\nI. Difusão simples.\nII. Transporte ativo.\nIII. Pinocitose.\n\nQuais estão corretos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A compreensão da fisiologia placentária é fundamental para entender como o feto recebe nutrientes e oxigênio, além de como elimina excretas. A placenta não é uma barreira passiva, mas sim um órgão dinâmico que utiliza diversos mecanismos de transporte.\n\nAnálise dos itens:\n\nItem I. Difusão simples: Está correto. É o mecanismo pelo qual substâncias se movem do meio de maior concentração para o de menor concentração, sem gasto de energia. É o principal meio de transporte de gases respiratórios (oxigênio e gás carbônico), água, a maioria dos eletrólitos e vitaminas lipossolúveis (A, D, E, K).\n\nItem II. Transporte ativo: Está correto. Ocorre quando substâncias são transportadas contra um gradiente de concentração, exigindo gasto de energia (ATP) e a presença de transportadores proteicos na membrana. Esse mecanismo garante que o feto receba nutrientes essenciais mesmo que os níveis maternos estejam baixos. Exemplos clássicos incluem o transporte de aminoácidos, cálcio, ferro, fósforo e vitaminas hidrossolúveis (complexo B e vitamina C).\n\nItem III. Pinocitose: Está correto. É um processo de endocitose em que a membrana celular da placenta engloba pequenas gotas de fluido extracelular contendo macromoléculas. Este mecanismo é vital para a transferência de moléculas grandes que não conseguiriam atravessar por outros meios, sendo o exemplo mais importante a passagem de imunoglobulinas (IgG), garantindo a imunidade passiva do recém-nascido.\n\nAnálise das alternativas:\n\na) Incorreta. A difusão simples ocorre, mas não é o único mecanismo.\nb) Incorreta. O transporte ativo ocorre, mas não isoladamente.\nc) Incorreta. A pinocitose é um mecanismo real, mas os outros também o são.\nd) Correta. Os três processos (difusão simples, transporte ativo e pinocitose) são mecanismos fisiológicos comprovados de trocas de substâncias entre a circulação materna e fetal. Além destes, vale lembrar que também ocorre a difusão facilitada (como no caso da glicose).\n\nPortanto, a alternativa (d) é a correta, pois todos os itens listados representam vias de transporte placentário.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T18:15:45.672Z"
+  }
+]

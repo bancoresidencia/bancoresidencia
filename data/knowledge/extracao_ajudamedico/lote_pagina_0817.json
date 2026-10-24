@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_e36ec719-b3f2-4958-807e-98b80e3d76cb",
+    "originalId": "e36ec719-b3f2-4958-807e-98b80e3d76cb",
+    "statement": "Durante a fase proliferativa da cicatrização de uma anastomose intestinal, a integridade da linha de sutura depende crucialmente da síntese e deposição de colágeno. O fator bioquímico que atua como cofator essencial para a enzima lisil-hidroxilase, permitindo a hidroxilação da prolina e lisina e, consequentemente, a formação das ligações cruzadas (cross-linking) que conferem força tênsil ao colágeno, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O ácido ascórbico (Vitamina C), cuja deficiência leva à produção de procolágeno instável e não secretado, resultando em maior risco de deiscência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A Vitamina A, que reverte os efeitos inibitórios dos corticosteroides na inflamação, mas não participa da reação de hidroxilação do colágeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O oxigênio molecular hiperbárico, que substitui a necessidade de vitaminas na hidroxilação em ambientes anaeróbicos de infecção grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O íon Zinco, que atua exclusivamente na fase inflamatória como estabilizador de membrana lisossômica, sem papel direto na estruturação do colágeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a cicatrização de feridas, especialmente em anastomoses intestinais, devemos focar na bioquímica do colágeno. O colágeno é a principal proteína responsável pela força tênsil da cicatriz. Durante sua síntese intracelular, as cadeias de polipeptídeos sofrem modificações pós-traducionais essenciais: a hidroxilação dos resíduos de prolina e lisina.\n\nAnálise das alternativas:\n\nAlternativa (a): Correta. O ácido ascórbico (vitamina C) atua como um agente redutor, mantendo o ferro da enzima hidroxilase no seu estado ferroso (Fe2+), sendo um cofator obrigatório para as enzimas prolil-hidroxilase e lisil-hidroxilase. Sem a vitamina C, a hidroxilação não ocorre adequadamente, resultando em cadeias de colágeno instáveis que não conseguem formar a tripla hélice de forma eficaz. Isso resulta em fibras de colágeno fracas e de baixa qualidade, elevando significativamente o risco de deiscência de anastomoses e feridas cirúrgicas.\n\nAlternativa (b): Incorreta. A vitamina A desempenha um papel importante na cicatrização por estimular a epitelização, aumentar a síntese de colágeno e, classicamente, por reverter os efeitos inibitórios dos corticosteroides na fase inflamatória. No entanto, ela não atua como cofator nas reações de hidroxilação da prolina e lisina.\n\nAlternativa (c): Incorreta. Embora o oxigênio molecular (O2) seja um substrato necessário para a reação de hidroxilação, ele não substitui a necessidade de vitaminas ou outros cofatores. O oxigênio hiperbárico é uma modalidade terapêutica para melhorar a oxigenação tecidual em feridas isquêmicas ou infectadas, mas a bioquímica da enzima exige especificamente o ácido ascórbico para funcionar.\n\nAlternativa (d): Incorreta. O zinco é um mineral essencial que atua como cofator para mais de 300 enzimas, incluindo a DNA-polimerase (importante para a proliferação celular) e as metaloproteinases da matriz (MMPs), que atuam na fase de remodelação da cicatriz. Embora sua deficiência prejudique a cicatrização global, ele não é o cofator da enzima lisil-hidroxilase nem participa diretamente da estruturação inicial das ligações cruzadas do colágeno na forma descrita.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  },
+  {
+    "id": "AJUDA_e37f6953-fec7-4a3f-84a7-c1c7352d3169",
+    "originalId": "e37f6953-fec7-4a3f-84a7-c1c7352d3169",
+    "statement": "Mulher, 25 anos de idade, comparece ao ambulatório de clínica médica geral encaminhada da unidade básica de saúde, pois desde os 15 anos de idade tem sinusites de repetição (aproximadamente 4 no último ano) e uma internação por pneumonia. Apresentou também diversos episódios de diarreia, sempre com exames coproparasitológicos positivos para Giárdia. Traz consigo tomografia computadorizada de tórax que demonstra bronquiectasias.\nQual alternativa traz o principal grupo de doenças a ser investigado e os exames que devem ser solicitados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Imunodeficiência de CD4 e dosagem de imunoglobulinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Imunodeficiência celular e imunofenotipagem de linfócitos T, B e NK.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deficiência de fagócitos e imunofenotipagem de linfócitos NK.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Imunodeficiência humoral e dosagem de imunoglobulinas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o raciocínio clínico diante de um quadro de infecções de repetição, um tema clássico em provas de residência médica.\n\nA paciente apresenta a tríade característica das imunodeficiências primárias (erros inatos da imunidade) com predomínio de deficiência de anticorpos:\n1. Infecções sinopulmonares de repetição (sinusites e pneumonia) por bactérias encapsuladas.\n2. Infecção persistente ou recorrente por *Giardia lamblia* (a imunidade humoral, especialmente a IgA, é fundamental para o controle deste protozoário no intestino).\n3. Sequelas estruturais (bronquiectasias) decorrentes do processo inflamatório crônico.\n\nO quadro clínico, iniciado na adolescência, é altamente sugestivo de Imunodeficiência Comum Variável (IDCV), que é a imunodeficiência primária sintomática mais comum no adulto.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a dosagem de imunoglobulinas esteja correta para a investigação inicial, a \"imunodeficiência de CD4\" (imunidade celular) não é o principal grupo de doenças a ser investigado neste caso. A deficiência de CD4 está mais associada a infecções oportunistas (fungos, vírus, micobactérias), o que difere do quadro de sinusites e giardíase apresentado.\n\nb) Incorreta. A imunodeficiência celular envolve defeitos nos linfócitos T. Pacientes com esse perfil apresentam quadros graves desde os primeiros meses de vida, com infecções por patógenos intracelulares, fungos e vírus, além de déficit de crescimento. A imunofenotipagem é um exame de segunda linha, após a triagem inicial.\n\nc) Incorreta. Defeitos de fagócitos (como a Doença Granulomatosa Crônica) costumam cursar com abscessos profundos, infecções cutâneas e infecções por microrganismos específicos (*Staphylococcus aureus*, *Aspergillus*, *Serratia*), o que não condiz com o relato de sinusites e giardíase.\n\nd) Correta. O quadro de infecções bacterianas sinopulmonares recorrentes associado à infecção por *Giardia lamblia* é o marcador clássico da imunodeficiência humoral (defeito na produção de anticorpos pelos linfócitos B). O primeiro passo diagnóstico obrigatório é a triagem por meio da dosagem sérica de imunoglobulinas (IgG, IgA, IgM e, por vezes, IgE). Caso as dosagens estejam baixas, prossegue-se a investigação para classificar o tipo específico de deficiência de anticorpos.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Diarreia",
+      "Parasitoses",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  },
+  {
+    "id": "AJUDA_e3a9e450-0a6a-4f67-813e-86f5375aa930",
+    "originalId": "e3a9e450-0a6a-4f67-813e-86f5375aa930",
+    "statement": "Sobre a Síndrome de Tourette, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os tiques motores são sempre complexos e iniciam-se na adolescência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico requer a presença de tiques motores e vocais por pelo menos 1 ano.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O transtorno está frequentemente associado ao autismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento de primeira linha é o uso de antidepressivos tricíclicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Síndrome de Tourette é um transtorno do neurodesenvolvimento caracterizado clinicamente por tiques motores e vocais. A análise das alternativas baseia-se nos critérios diagnósticos do DSM-5 e na farmacoterapia do transtorno:\n\nAlternativa A - Incorreta: Os tiques motores tipicamente iniciam-se na infância (idade média entre 4 e 6 anos), e não na adolescência. Além disso, costumam começar como tiques simples (ex.: piscar de olhos, movimentos de cabeça) e apenas posteriormente podem evoluir para formas complexas.\n\nAlternativa B - Correta: De acordo com os critérios diagnósticos formais, é obrigatória a presença de múltiplos tiques motores e pelo menos um tique vocal (que não precisam ocorrer simultaneamente), com persistência por mais de 1 ano desde o início dos primeiros sintomas e surgimento antes dos 18 anos de idade.\n\nAlternativa C - Incorreta: As comorbidades clássicas e mais frequentemente associadas à Síndrome de Tourette são o Transtorno do Déficit de Atenção com Hiperatividade (TDAH) e o Transtorno Obsessivo-Compulsivo (TOC). A associação primária com o espectro autista não é a mais representativa.\n\nAlternativa D - Incorreta: O tratamento inicial envolve medidas psicoeducacionais e terapias comportamentais (como a Intervenção Comportamental Abrangente para Tiques - CBIT). Quando a farmacoterapia é necessária, as opções de primeira linha incluem os agonistas alfa-2 adrenérgicos (clonidina, guanfacina) ou antipsicóticos de segunda geração (aripiprazol, risperidona). Antidepressivos tricíclicos não constituem primeira linha para controle de tiques.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Distúrbios do Movimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  },
+  {
+    "id": "AJUDA_e3acbf02-b86e-421c-b658-bb8b645b160f",
+    "originalId": "e3acbf02-b86e-421c-b658-bb8b645b160f",
+    "statement": "Qual lei brasileira define que os estados e municípios devem ter um Fundo de Saúde, um Conselho de Saúde com composição paritária (representantes do governo e da sociedade civil), um Plano de Saúde e relatórios de gestão para receberem os recursos federais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lei nº 3665, de 10 de outubro de 1990.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lei nº 8080, de 19 de setembro de 1990.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lei nº 8142, de 28 de dezembro de 1990.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Lei nº 8292, de 27 de março de 1992.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lei nº 13979, de 06 de fevereiro de 2020.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é fundamental conhecer as Leis Orgânicas da Saúde, que fundamentam o funcionamento do Sistema Único de Saúde (SUS). A questão aborda especificamente os requisitos burocráticos e democráticos para o repasse de verbas federais aos entes federados.\n\nAlternativa a) Incorreta. A Lei n.º 3.665/1990 não possui relação com o Sistema Único de Saúde. Ela trata de fiscalização de produtos controlados e questões administrativas que fogem ao escopo da gestão pública da saúde e das transferências intergovernamentais do SUS.\n\nAlternativa b) Incorreta. A Lei n.º 8.080, de 19 de setembro de 1990, é a primeira Lei Orgânica da Saúde. Ela dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços. Embora estabeleça os princípios e diretrizes do SUS (como universalidade e equidade), ela não detalha os mecanismos de transferência financeira nem a obrigatoriedade dos Conselhos e Planos de Saúde para o recebimento de recursos.\n\nAlternativa c) Correta. A Lei n.º 8.142, de 28 de dezembro de 1990, é a segunda Lei Orgânica da Saúde e foi criada justamente para preencher lacunas deixadas pela Lei n.º 8.080, especialmente no que diz respeito à participação da comunidade e às transferências de recursos financeiros. Em seu Artigo 4.º, ela estabelece de forma clara que, para receberem os recursos da União, os Estados, o Distrito Federal e os Municípios devem contar obrigatoriamente com: Fundo de Saúde, Conselho de Saúde (com composição paritária, ou seja, 50% de representantes dos usuários), Plano de Saúde, Relatórios de Gestão, contrapartida de recursos no orçamento próprio e Comissão de Elaboração do Plano de Carreira, Cargos e Salários (PCCS).\n\nAlternativa d) Incorreta. A Lei n.º 8.292/1992 trata de questões administrativas e cargos no âmbito da administração pública federal, não possuindo qualquer vínculo com as normas de gestão ou financiamento do sistema público de saúde brasileiro.\n\nAlternativa e) Incorreta. A Lei n.º 13.979, de 6 de fevereiro de 2020, é uma legislação muito posterior, conhecida como a Lei da Pandemia. Ela dispôs sobre as medidas para enfrentamento da emergência de saúde pública de importância internacional decorrente do coronavírus (Covid-19), como isolamento, quarentena e exames compulsórios, não sendo a lei que define a estrutura básica de gestão para repasse de recursos regulares do SUS.\n\nEm resumo, sempre que a questão mencionar participação popular (Conselhos e Conferências) ou condições para repasse de verba (Fundo, Plano e Relatório), a resposta correta será a Lei n.º 8.142/1990.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  },
+  {
+    "id": "AJUDA_e3b185b1-7797-4bd4-9794-689e7362e9b7",
+    "originalId": "e3b185b1-7797-4bd4-9794-689e7362e9b7",
+    "statement": "Assinale a opção correta, em relação a quantos pontos na escala de coma de Glasgow, corresponde à resposta motora compatível com decorticação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "1",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Escala de Coma de Glasgow (ECG) avalia o nível de consciência por meio de três parâmetros: abertura ocular, resposta verbal e resposta motora. No componente da resposta motora, a pontuação varia de 1 a 6 pontos. A questão solicita especificamente a pontuação correspondente à decorticação.\n\nA classificação da resposta motora é a seguinte:\n\n6 pontos: Obedece a comandos (o paciente realiza movimentos solicitados).\n5 pontos: Localiza a dor (o paciente move o braço acima da clavícula em direção ao estímulo).\n4 pontos: Flexão normal ou retirada (o paciente flete o braço para se afastar da dor, mas sem localizar o estímulo).\n3 pontos: Flexão anormal ou Decorticação (os braços fletem sobre o tórax com punhos cerrados e as pernas se estendem).\n2 pontos: Extensão anormal ou Descerebração (os membros superiores e inferiores se estendem e há rotação interna).\n1 ponto: Sem resposta (ausência de movimento motor).\n\nAnálise das alternativas:\n\na) 5: Incorreta. Esta pontuação é atribuída quando o paciente localiza o estímulo doloroso.\n\nb) 4: Incorreta. Corresponde à flexão inespecífica ou movimento de retirada ao estímulo doloroso.\n\nc) 3: Correta. A decorticação, ou flexão anormal, ocorre devido a lesões hemisféricas graves ou lesões acima do nível do tronco encefálico (especificamente acima do núcleo rubro), resultando na pontuação 3 na escala motora.\n\nd) 2: Incorreta. Esta pontuação refere-se à descerebração (extensão anormal), que geralmente indica um comprometimento neurológico mais grave, atingindo o tronco encefálico.\n\ne) 1: Incorreta. Representa a ausência total de resposta motora após o estímulo.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Coma e Alterações da Consciência"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  },
+  {
+    "id": "AJUDA_e3b1b7c9-f2e5-4fd3-9f1a-37b6c4b2b3b0",
+    "originalId": "e3b1b7c9-f2e5-4fd3-9f1a-37b6c4b2b3b0",
+    "statement": "Com relação a menopausa, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A menopausa está associada a um declínio acentuado no número de oócitos que é atribuível à atresia progressiva do complemento original de oócitos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A diminuição dos folículos em desenvolvimento é refletida em um aumento paralelo na concentração sérica de inibina B, que é provavelmente o marcador mais precoce e facilmente mensurável do declínio folicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Valores baixos de FSH e altos de estradiol podem sugerir menopausa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A menopausa antes dos 50 anos é considerada anormal e é referida como insuficiência ovariana primária (anteriormente chamada de insuficiência ovariana prematura).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) - Correta: A menopausa é definida fisiologicamente pelo esgotamento da reserva folicular dos ovários. A mulher nasce com um número determinado de oócitos (cerca de 1 a 2 milhões) que sofre um processo contínuo de atresia e degeneração, independentemente de gestações ou uso de métodos anticoncepcionais. Quando esse pool de folículos se reduz a um nível crítico, cessam as ovulações e a produção hormonal ovariana, caracterizando a menopausa.\n\nAlternativa (b) - Incorreta: O erro da alternativa está em afirmar que há um aumento da inibina B. Na verdade, com a diminuição dos folículos ovarianos, ocorre uma redução nos níveis de inibina B (que é produzida pelas células da granulosa). A queda da inibina B é um dos primeiros sinais laboratoriais do envelhecimento ovariano e é responsável pelo aumento secundário do FSH, já que a inibina exerce feedback negativo sobre a hipófise.\n\nAlternativa (c) - Incorreta: O perfil laboratorial clássico da menopausa é o hipogonadismo hipergonadotrófico. Isso significa que os níveis de estradiol estão baixos (devido à falência ovariana) e os níveis de FSH estão elevados (pela ausência de feedback negativo dos estrogênios e das inibinas sobre a hipófise). Geralmente, valores de FSH acima de 25 a 30 mUI/mL em mulheres com amenorreia há 12 meses confirmam o diagnóstico.\n\nAlternativa (d) - Incorreta: A idade-limite para definir a insuficiência ovariana primária (IOP), anteriormente chamada de falência ovariana prematura, é de 40 anos. A ocorrência da menopausa entre os 40 e 45 anos é classificada como menopausa precoce, e a idade média da menopausa na população geral gira em torno dos 50 aos 51 anos. Portanto, a menopausa aos 48 ou 49 anos, por exemplo, é considerada perfeitamente normal.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  },
+  {
+    "id": "AJUDA_e3b5a8bc-efbd-49d6-89e2-ad7eb9c9aff9",
+    "originalId": "e3b5a8bc-efbd-49d6-89e2-ad7eb9c9aff9",
+    "statement": "Um recém-nascido prematuro de 28 semanas de gestação é admitido na unidade de terapia intensiva neonatal com dificuldade respiratória progressiva nas primeiras horas de vida. Ao exame físico, o bebê apresenta taquipneia, retrações intercostais e uso de musculatura acessória para respirar. A oxigenoterapia é iniciada, mas a saturação de oxigênio permanece baixa. A radiografia de tórax revela a presença de infiltrados bilaterais difusos com áreas de opacidade, e a presença de um sinal de \"vidro fosco.\" Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aspiração Meconial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumonia Bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Membrana Hialina (Síndrome do Desconforto Respiratório Neonatal)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pneumotórax",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico principal para este caso é a Síndrome do Desconforto Respiratório (SDR), historicamente conhecida como Doença da Membrana Hialina. A condição é causada pela deficiência de surfactante pulmonar, substância essencial para reduzir a tensão superficial nos alvéolos e evitar o seu colapso ao final da expiração.\n\nAnálise das alternativas:\n\na) Aspiração Meconial: Incorreta. Essa patologia atinge quase exclusivamente recém-nascidos a termo ou pós-termo, pois a eliminação de mecônio intra-útero exige maturidade do sistema gastrointestinal, geralmente associada a episódios de asfixia. Radiologicamente, apresenta-se com infiltrados grosseiros, irregulares e áreas de hiperinsuflação, o que difere do padrão homogêneo de vidro fosco descrito.\n\nb) Pneumonia Bacteriana: Incorreta. Embora a pneumonia possa mimetizar a SDR clínica e radiologicamente, ela costuma estar associada a fatores de risco infecciosos, como ruptura prolongada de membranas ou febre materna. No contexto de um prematuro de 28 semanas sem histórico infeccioso citado, a deficiência de surfactante é a hipótese estatisticamente mais provável e condizente com o quadro progressivo.\n\nc) Membrana Hialina (Síndrome do Desconforto Respiratório Neonatal): Correta. A questão apresenta os três pilares diagnósticos clássicos: 1) Prematuridade extrema (28 semanas); 2) Desconforto respiratório de início precoce e progressivo; 3) Radiografia com padrão de vidro fosco (infiltrado reticulogranular fino bilateral) e redução do volume pulmonar. O vidro fosco na imagem representa o colapso alveolar difuso (microatelectasias) intercalado com alvéolos e bronquíolos dilatados.\n\nd) Pneumotórax: Incorreta. O pneumotórax caracteriza-se por uma desestabilização clínica súbita e aguda. Na radiografia, seria visualizada a presença de ar no espaço pleural, com ausência de trama vascular na periferia do pulmão acometido e possível desvio do mediastino para o lado oposto, e não um infiltrado bilateral difuso.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  },
+  {
+    "id": "AJUDA_e3b61a9a-2491-4ee3-b13e-b3d09c6609ae",
+    "originalId": "e3b61a9a-2491-4ee3-b13e-b3d09c6609ae",
+    "statement": "Na Atenção Primária à Saúde (APS), a assistência à saúde da pessoa idosa visa, principalmente, à manutenção da funcionalidade e independência do indivíduo. Para tanto, é possível a realização da avaliação multidimensional do idoso (AMI), cuja função é a avaliação de algumas funções-chave, frequentemente, não avaliadas em atendimentos gerais, e uma delas é a avaliação da função cognitiva. Ademais, em 2024, foi lançado o documento \"Identificação da Demência na Atenção Primária”, que contém escalas e ferramentas de triagem voltadas para o contexto da APS. Considerando essas informações, analise o caso da Dona Gertrudes, a seguir. Gertrudes, 66 anos de idade, compareceu à UBS para uma avaliação de rotina, referiu uma “saúde de ferro\", mas, como a saúde dos irmãos não é muito boa, foi na consulta para prevenir que algo passe despercebido e acabe ficando doente. No atendimento, foi realizada a AMI e Dona Gertrudes apresentou alerta na triagem de estado mental (lembrou apenas dois nomes de objetos) e na triagem de humor (relatou muito desânimo). Além disso, Dona Gertrudes relatou que está ficando muito esquecida ultimamente. Há 2 meses, quando agendou a consulta, comentou sobre os esquecimentos, e a auxiliar de enfermagem, Ana, aplicou o rastreio cognitivo 10-CS, no qual Dona Gertrudes obteve 8 pontos (normal). Diante desse caso, assinale a alternativa que apresenta, corretamente, o próximo passo da conduta na UBS.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perguntar sobre histórico familiar de demências, aplicar Questionário de Mudança Cognitiva (QMC8) e Escala de Depressão Geriátrica (GDS), iniciar antidepressivo e encaminhar à Psiquiatria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Perguntar sobre histórico familiar de demências, aplicar Questionário de Mudança Cognitiva (QMC8) e Escala de Depressão Geriátrica (GDS) e solicitar exames de sangue para investigação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Perguntar sobre histórico familiar de demências, solicitar exames de sangue para investigação e tomografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Perguntar sobre histórico familiar de demências, realizar Mini Exame do Estado Mental (MEEM), solicitar exames de sangue para investigação e encaminhar à Geriatria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Perguntar sobre histórico familiar de demências, realizar Mini Exame do Estado Mental (MEEM) e encaminhar à Neurologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o manejo inicial de uma idosa com queixa cognitiva na Atenção Primária à Saúde (APS), fundamentada no documento Identificação da Demência na Atenção Primária de 2024. Dona Gertrudes apresenta um alerta na triagem de memória (lembrou apenas dois nomes) e na triagem de humor (relato de desânimo), além da queixa subjetiva de esquecimento, o que exige uma investigação mais detalhada.\n\nAlternativa (a) Incorreta: Embora a aplicação da Escala de Depressão Geriátrica (GDS) seja indicada devido ao relato de desânimo, a conduta de iniciar antidepressivo e encaminhar imediatamente à Psiquiatria é precipitada. Na APS, o médico deve primeiro completar a investigação diagnóstica, excluir causas metabólicas ou nutricionais de declínio cognitivo e avaliar se o quadro de humor é a causa primária ou secundária antes de instituir tratamento farmacológico ou referenciar o caso.\n\nAlternativa (b) Correta: Esta alternativa segue o fluxograma de investigação da APS para casos de suspeita de declínio cognitivo. A investigação do histórico familiar é parte da anamnese. O Questionário de Mudança Cognitiva (QMC8) é uma ferramenta valiosa para ser aplicada a um acompanhante/informante, ajudando a identificar mudanças reais no cotidiano. A aplicação da GDS é fundamental para diferenciar quadros de depressão que mimetizam demência (pseudodemência). Por fim, a solicitação de exames de sangue (como TSH, vitamina B12, cálcio, função renal, hepática e sorologias) é o passo obrigatório para descartar causas reversíveis de esquecimento antes de fechar qualquer diagnóstico de demência.\n\nAlternativa (c) Incorreta: A solicitação de exames de sangue e tomografia de crânio faz parte da propedêutica de demências, porém esta alternativa ignora a avaliação do humor (GDS) e a coleta de dados com informantes (QMC8). No contexto da pessoa idosa, o rastreio de depressão é essencial, pois sintomas depressivos são grandes confundidores em avaliações cognitivas.\n\nAlternativa (d) Incorreta: O Mini Exame do Estado Mental (MEEM) é uma ferramenta conhecida, mas o protocolo atualizado enfatiza o uso de escalas como o 10-CS e o QMC8. Além disso, encaminhar à Geriatria neste momento é precoce. A APS deve realizar a triagem laboratorial completa e o rastreio de humor antes de decidir pela necessidade de compartilhamento de cuidado com um especialista.\n\nAlternativa (e) Incorreta: O encaminhamento direto à Neurologia sem realizar a investigação básica na UBS fere os princípios da APS. A maioria dos quadros cognitivos leves e a triagem inicial de causas reversíveis devem ser resolvidos na própria Unidade Básica de Saúde. Além disso, a alternativa não contempla a investigação de causas sistêmicas (exames de sangue) nem a avaliação de depressão.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Demências",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  },
+  {
+    "id": "AJUDA_e3b9a9b1-970b-448f-a266-a955ebd90533",
+    "originalId": "e3b9a9b1-970b-448f-a266-a955ebd90533",
+    "statement": "Homem 35 anos, febre alta, tosse com expectoração purulenta, dor torácica pleurítica. Rx: consolidação em lobo inferior direito. Agente mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mycoplasma pneumoniae",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Streptococcus pneumoniae",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Chlamydia pneumoniae",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pneumocystis jirovecii",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO: O quadro clínico descrito é clássico de uma pneumonia adquirida na comunidade (PAC) de padrão típico. Os sinais cardinais são o início agudo de febre alta, tosse produtiva (expectoração purulenta) e dor torácica pleurítica. No exame de imagem (Rx), a presença de consolidação lobar é o achado característico que direciona o diagnóstico para bactérias piogênicas.\n\nALTERNATIVA B (CORRETA): O *Streptococcus pneumoniae*, ou pneumococo, é o agente etiológico mais comum da pneumonia bacteriana em todas as faixas etárias adultas, sendo responsável pela maioria dos casos de PAC típica. Ele é o patógeno que mais frequentemente causa o padrão de consolidação lobar e a apresentação clínica aguda com calafrios e febre alta, preenchendo perfeitamente os critérios da questão.\n\nALTERNATIVA A: O *Mycoplasma pneumoniae* é um agente de pneumonia atípica. O quadro clínico costuma ser mais arrastado (subagudo), com tosse seca predominante, febre baixa e sintomas extrapulmonares (como mialgia e cefaleia). No raio X, o padrão mais comum é o infiltrado intersticial difuso, e não a consolidação lobar.\n\nALTERNATIVA C: A *Chlamydia pneumoniae* também é classificada como um patógeno atípico. Assim como o *Mycoplasma*, causa quadros clínicos menos graves e de evolução mais lenta, frequentemente chamados de pneumonia ambulante, com achados radiológicos que não costumam apresentar consolidação lobar franca.\n\nALTERNATIVA D: O *Pneumocystis jirovecii* é um fungo oportunista que causa pneumonia quase exclusivamente em pacientes imunocomprometidos (especialmente naqueles com HIV e contagem de CD4 baixa). O quadro é marcado por dispneia progressiva, tosse seca e hipoxemia severa. Radiologicamente, manifesta-se com infiltrado intersticial bilateral e difuso, poupando as periferias, o que é muito diferente da consolidação localizada descrita.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  },
+  {
+    "id": "AJUDA_e3c00748-3cd7-4902-ad53-06cd8709ec92",
+    "originalId": "e3c00748-3cd7-4902-ad53-06cd8709ec92",
+    "statement": "Uma criança de seis anos de idade, previamente hígida, apresentou lesões na face e nos membros inferiores, as quais se iniciaram como máculas eritematosas, evoluindo rapidamente para vesículas e pústulas, o que formou uma crosta melicérica com halo eritematoso havia já três dias. Negou‑se febre, e o estado geral do paciente manteve‑se bom. \n\nCom base nesse caso clínico hipotético e considerando a hipótese diagnóstica adequada, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o tratamento de escolha é o uso tópico de mupirocina ou ácido fusídico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o uso de antibiótico oral, como amoxicilina, deve ser prescrito, já que o Streptococcus pyogenes é responsável por 80% dos casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o uso de permanganato de potássio associado a cetoconazol é recomendado como primeira linha de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o tratamento indicado é com permetrina 5%, que será aplicada em todo o corpo em um intervalo de 8 a 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o uso de pomadas de corticoide isolado, como beclometasona, associado à hidratação local, é o tratamento de escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E QUADRO CLÍNICO\n\nO caso descreve um quadro clássico de Impetigo Não Bolhoso, a infecção cutânea bacteriana mais comum na infância. Os pontos-chave para o diagnóstico são:\n1. Lesões que evoluem de máculas para vesículas e pústulas.\n2. Formação de crostas melicéricas (aspecto de mel encrostado), que é o sinal patognomônico da doença.\n3. Localização comum em face e extremidades.\n4. Ausência de sintomas sistêmicos (sem febre e bom estado geral).\n\nOs agentes etiológicos mais comuns são o Staphylococcus aureus e o Streptococcus pyogenes (Estreptococo do grupo A).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): Para casos de impetigo localizado, com poucas lesões e sem comprometimento do estado geral, o tratamento de primeira escolha é a antibioticoterapia tópica. A mupirocina a 2% ou o ácido fusídico aplicados 3 vezes ao dia por 5 a 7 dias apresentam alta eficácia e baixos efeitos colaterais, cobrindo adequadamente os principais patógenos.\n\nAlternativa B (INCORRETA): Atualmente, o Staphylococcus aureus é isolado na maioria dos casos de impetigo, superando o Streptococcus pyogenes em prevalência. Além disso, a amoxicilina simples é frequentemente ineficaz contra o S. aureus devido à produção de beta-lactamases pelo micro-organismo. O tratamento por via oral é reservado para casos com lesões numerosas, extensas, em surtos escolares ou quando há envolvimento sistêmico.\n\nAlternativa C (INCORRETA): O cetoconazol é um agente antifúngico, não possuindo ação contra as bactérias causadoras do impetigo. O permanganato de potássio é um antisséptico com propriedades secativas que pode auxiliar na limpeza das crostas, mas não substitui o antibiótico como tratamento de primeira linha.\n\nAlternativa D (INCORRETA): A permetrina a 5% é um escabicida, indicado para o tratamento da escabiose (sarna), que se manifesta clinicamente com prurido intenso (especialmente noturno) e lesões papulares em áreas de dobras, diferente das crostas melicéricas descritas.\n\nAlternativa E (INCORRETA): O uso de corticoides (como a beclometasona) é contraindicado em infecções bacterianas primárias. O corticoide reduz a resposta inflamatória e a imunidade local, o que pode agravar a infecção e facilitar a disseminação das bactérias. O tratamento deve ser focado na eliminação do agente infeccioso.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Piodermites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:34.019Z"
+  }
+]

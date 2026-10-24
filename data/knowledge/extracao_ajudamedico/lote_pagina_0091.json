@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_18b6237a-6356-4e55-9949-bae4ad7ecf30",
+    "originalId": "18b6237a-6356-4e55-9949-bae4ad7ecf30",
+    "statement": "Uma criança de 6 anos de idade é trazida ao Pronto-Socorro pela avó, com queixa de urina escura, inchaço no rosto e nos tornozelos, e uma redução na quantidade de urina nos últimos dois dias. Avó relata que criança fez uso de antibióticos há 2 semanas, por um quadro febril. No exame físico, observa-se edema periorbital e de membros inferiores. A pressão arterial está elevada para a idade. Os exames laboratoriais revelam hematúria microscópica, proteinúria leve e pequeno aumento dos níveis de ureia e creatinina no sangue. O complemento C3 está diminuído.\nQual é o diagnóstico mais provável para essa condição?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome nefrótica idiopática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nefropatia por IgA (doença de Berger).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome nefrítica pós-infecção estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Glomerulonefrite membranoproliferativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome hemolítico-urêmica pós-infecciosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma criança com a tríade clássica da síndrome nefrítica: edema (periorbital e de membros inferiores), hipertensão arterial e hematúria (urina escura). O fato de os sintomas terem surgido 2 semanas após um quadro febril tratado com antibióticos estabelece o período de latência característico de uma reação imunomediada pós-infecciosa. O achado laboratorial de hipocomplementemia (C3 diminuído) é o principal marcador para confirmar a suspeita de glomerulonefrite pós-estreptocócica (GNPE) neste contexto.\n\nDISTRIBUIÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A síndrome nefrótica idiopática manifesta-se tipicamente com proteinúria maciça, hipoalbuminemia e edema intenso. Diferente do caso apresentado, na síndrome nefrótica os níveis de complemento (C3) estão normais e raramente ocorre hematúria ou hipertensão arterial significativa no início do quadro em crianças.\n\nAlternativa b) Incorreta. A Nefropatia por IgA (Doença de Berger) é uma causa comum de hematúria glomerular, mas diferencia-se da GNPE por dois motivos principais: o período de latência e o complemento. Na Doença de Berger, a hematúria é sinfaringítica (ocorre junto com a infecção respiratória, sem latência de semanas) e os níveis de C3 são rigorosamente normais.\n\nAlternativa c) Correta. A Síndrome Nefrítica Pós-Infecção Estreptocócica é a principal causa de síndrome nefrítica na infância. O perfil epidemiológico (criança em idade escolar), a clínica de início súbito (edema, hipertensão e hematúria), o período de latência de aproximadamente 1 a 3 semanas após uma faringite ou piodermite e a queda transitória do C3 são os pilares diagnósticos que se encaixam perfeitamente na descrição da questão.\n\nAlternativa d) Incorreta. A Glomerulonefrite Membranoproliferativa pode cursar com hipocomplementemia e síndrome nefrítica, porém é uma doença mais rara, com apresentação clínica muitas vezes mista (nefrítica e nefrótica) e de caráter mais persistente. Na GNPE, o C3 volta ao normal em até 8 semanas, enquanto na membranoproliferativa a queda é prolongada.\n\nAlternativa e) Incorreta. A Síndrome Hemolítico-Urêmica (SHU) é uma microangiopatia trombótica caracterizada pela tríade de anemia hemolítica microangiopática (presença de esquizócitos), trombocitopenia e insuficiência renal aguda. Geralmente é precedida por um quadro de diarreia sanguinolenta e não costuma cursar com queda do complemento C3 na sua forma típica.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  },
+  {
+    "id": "AJUDA_18b6c325-8cd2-425f-ab12-bded3119411e",
+    "originalId": "18b6c325-8cd2-425f-ab12-bded3119411e",
+    "statement": "Lactente de 16 meses é internado, devido a segundo episódio de sibilância (primeiro episódio aos 12 meses de idade), com taquipneia, esforço respiratório, tempo expiratório prolongado e sibilos expiratórios difusos, com resposta a beta 2 agonistas de curta duração. Segundo a mãe, o quadro iniciou após episódio de resfriado comum. Lactente previamente hígido, com teste do pezinho normal, sem internações, bom ganho pondero estatural. Pais e irmão possuem histórias de sibilância. Ao exame físico, exceto pelo aparelho respiratório, sem alterações. Sobre o quadro descrito, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de possível diagnóstico de asma, mas é necessário realização de espirometria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de possível diagnóstico de asma, mas é necessário realização de oscilometria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de possível diagnóstico de asma, não sendo necessário realização de exames complementares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de possível diagnóstico de asma, mas é necessário realização de ecocardiograma para exclusão de cardiopatia congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve um lactente de 16 meses com sibilância recorrente (dois episódios), desencadeada por quadros virais, com boa resposta a broncodilatadores e forte história familiar de asma/atopia. Esses elementos clínicos são fundamentais para o diagnóstico de asma na infância, muitas vezes baseado no Índice Preditivo de Asma (IPA).\n\nAlternativa (a) Incorreta: A espirometria é o exame de escolha para diagnosticar e monitorar a asma em adultos e crianças maiores. No entanto, ela requer a realização de manobras de expiração forçada coordenadas e dependentes da vontade do paciente. Crianças de 16 meses não possuem maturidade neuromuscular ou compreensão para realizar essas manobras, tornando a espirometria inviável nesta faixa etária (geralmente realizada apenas após os 5 ou 6 anos).\n\nAlternativa (b) Correta: A oscilometria (ou oscilometria de impulso) é uma técnica que avalia a função pulmonar por meio de ondas sonoras aplicadas durante a respiração tranquila (volume corrente). Como não exige manobras forçadas ou cooperação ativa do paciente, é o método de escolha para a avaliação funcional objetiva em lactentes e pré-escolares que não conseguem realizar a espirometria. Ela permite identificar a resistência e a reatividade das vias aéreas, auxiliando na confirmação do diagnóstico de asma.\n\nAlternativa (c) Incorreta: Embora o diagnóstico de asma em crianças menores de 5 anos seja eminentemente clínico devido às limitações técnicas, as diretrizes atuais recomendam, sempre que possível, a realização de exames complementares para documentar a limitação ao fluxo aéreo e a reversibilidade. No contexto acadêmico e de concursos, a oscilometria é reconhecida como o exame necessário para essa validação funcional em crianças pequenas.\n\nAlternativa (d) Incorreta: O ecocardiograma é utilizado para investigar causas cardíacas de sibilância (como insuficiência cardíaca ou anéis vasculares). Entretanto, o paciente em questão é hígido, apresenta crescimento adequado, teste do pezinho normal e uma história clínica e familiar clássica de asma. Não há sinais clínicos (sopros, cianose, má perfusão ou déficit ponderal) que justifiquem a solicitação rotineira de ecocardiograma neste cenário.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  },
+  {
+    "id": "AJUDA_18b7272f-4b96-497e-851e-5266b341b33d",
+    "originalId": "18b7272f-4b96-497e-851e-5266b341b33d",
+    "statement": "Paciente do sexo feminino, 9 anos de idade, é trazida pela mãe ao pronto socorro devido a quadro de dor abdominal. Refere que a dor iniciou em região periumbilical há 1 dia e migrou para a fossa ilíaca direita (FID), evoluindo com piora da sua intensidade e presença de astenia e vômito. Nega diarréia, febre e sintomas urinários. Ao exame físico, a paciente se apresenta em bom estado geral, afebril, eupneica e hemodinamicamente estável. Seu abdome é plano, flácido, doloroso à palpação profunda em FID, com descompressão brusca dolorosa. Leucograma: 12.000 com desvio à esquerda. Proteína C reativa: 48mg/dl. Sobre o caso, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Provavelmente esta paciente não terá indicação para drenagem da cavidade abdominal pós cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apesar dos dados clínicos e laboratoriais sugerirem adequadamente o diagnóstico, este deve ser confirmado mediante tomografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Caso a paciente seja submetida a abordagem cirúrgica imediata, provavelmente a dose única de ceftriaxona e metronidazol administrada até 2 horas antes da cirurgia será suficiente no seu tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Caso a abordagem cirúrgica não possa ser realizada imediatamente, seja por disponibilidade profissional ou material do hospital local, o tratamento inicial com antibióticos e a postergação de cirurgia por 12 horas provavelmente não acarretará grande prejuízo a este paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma apresentação clássica de apendicite aguda em uma criança: dor periumbilical que migra para a fossa ilíaca direita (cronologia de Murphy), presença de vômitos, sinal de Blumberg positivo (descompressão brusca dolorosa) e exames laboratoriais com leucocitose e desvio à esquerda, além de elevação de proteína C-reativa (PCR).\n\nAnálise das alternativas:\n\na) Correta: Na apendicite aguda não complicada (fases iniciais, sem perfuração ou abscesso organizado), como sugere o quadro da paciente, que se encontra em bom estado geral e afebril, não há indicação para o uso de drenos abdominais. O uso de drenagem fica reservado para casos de peritonite purulenta difusa ou abscessos em que o cirurgião julgue necessário monitorar o débito, o que não parece ser o caso.\n\nb) Incorreta (Gabarito): O diagnóstico de apendicite aguda é eminentemente clínico, especialmente quando a apresentação é tão característica quanto a descrita. Em crianças, devido aos riscos da radiação ionizante, a tomografia computadorizada não deve ser o exame de escolha inicial nem obrigatório. Caso haja dúvida diagnóstica, o primeiro exame de imagem indicado é a ultrassonografia de abdome. Portanto, afirmar que o diagnóstico \"deve ser confirmado mediante tomografia\" está incorreto.\n\nc) Correta: Para apendicite aguda não complicada, a antibioticoterapia profilática é a conduta padrão. Uma dose única de antibióticos de amplo espectro que cubram germes gram-negativos e anaeróbios (como a associação de ceftriaxona e metronidazol), administrada no momento da indução anestésica ou até duas horas antes da incisão, é suficiente. Não há necessidade de manter o antibiótico no pós-operatório se não houver perfuração ou gangrena.\n\nd) Correta: Estudos atuais e consensos (como as diretrizes de Jerusalém) demonstram que, em casos de apendicite não complicada e em pacientes estáveis, um atraso de curto prazo na cirurgia (geralmente de 12 a 24 horas), desde que o paciente receba suporte e antibioticoterapia inicial, não aumenta significativamente as taxas de perfuração ou complicações pós-operatórias. Isso permite a organização da escala cirúrgica sem prejuízo imediato à segurança da criança.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  },
+  {
+    "id": "AJUDA_18d5a6ce-a1fb-4776-8a5b-38a8f0428b62",
+    "originalId": "18d5a6ce-a1fb-4776-8a5b-38a8f0428b62",
+    "statement": "Nos ferimentos na face, é preferível a sutura por pontos simples e separados, utilizando pontos simples invertidos nos planos profundos, a fim de evitar a tensão da sutura final da pele. Para os planos profundos, dá-se preferência aos fios absorvíveis, como o monocryl® 4-0, enquanto que, na pele, utilizam-se fios inabsorvíveis, como o mononylon® 3-0. Os pontos de suturas devem ser realizados próximos às bordas da ferida, e não devem causar tensão tecidual, que pode resultar em isquemia e cicatrizes perpendiculares à ferida, por necrose tissular na área contida pelo fio. Em relação aos ferimentos corto-contusos na face, é correto afirmar",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sutura deve ser feita com pontos contínuos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não deve ser realizado sutura nos planos profundos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os pontos de sutura devem ser realizado distantes 1 cm da borda da ferida para não causar tensão tecidual",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na pele, deve ser usado mononylon® 5-0 ou 6-0.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "As cicatrizes perpendiculares à ferida não têm relação com o tipo de ponto, e, sim, com a gravidade do ferimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda os princípios fundamentais da síntese de tecidos em cirurgia reparadora e trauma facial, onde a estética e a funcionalidade são prioridades.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Em ferimentos de face, especialmente os corto-contusos que podem ser irregulares, prefere-se a sutura com pontos simples e separados. Isso permite um melhor alinhamento das bordas, controle individual da tensão de cada ponto e, se houver necessidade, a retirada de apenas alguns pontos para drenagem sem comprometer toda a sutura.\n\nAlternativa b) Incorreta. A sutura por planos é fundamental na face. O fechamento do plano profundo (subcutâneo/muscular) com fios absorvíveis reduz o espaço morto e, principalmente, retira a tensão da epiderme. Sem a sutura profunda, a cicatriz tende a alargar com o tempo devido à tração natural dos tecidos.\n\nAlternativa c) Incorreta. Pontos a 1 cm da borda são considerados muito distantes para a face. Na região facial, os pontos devem ser realizados próximos à borda da ferida (geralmente entre 1 a 3 mm), garantindo a eversão das bordas e evitando marcas profundas conhecidas como trilhos de trem. A distância de 1 cm aumentaria o risco de isquemia tecidual e cicatrizes grosseiras.\n\nAlternativa d) Correta. A face possui uma pele fina e é uma área de alta exigência estética. Por isso, utilizam-se fios inabsorvíveis monofilamentares muito finos, como o Mononylon 5-0 ou 6-0. O calibre 3-0, mencionado no enunciado da questão, é considerado muito grosso para a pele da face, sendo mais adequado para áreas como dorso ou extremidades.\n\nAlternativa e) Incorreta. As cicatrizes perpendiculares à ferida (marcas de sutura) estão diretamente relacionadas à técnica cirúrgica: uso de fios muito grossos, suturas com excesso de tensão que causam isquemia no tecido abraçado pelo fio, ou a permanência dos pontos por tempo prolongado (mais de 7 dias). Portanto, têm relação direta com o tipo de ponto e material utilizado, e não apenas com a gravidade do ferimento.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  },
+  {
+    "id": "AJUDA_18dfab6f-02e9-4795-bfac-94fc3df20616",
+    "originalId": "18dfab6f-02e9-4795-bfac-94fc3df20616",
+    "statement": "Paciente com dor intensa no hipocôndrio direito, febre e icterícia. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colelitíase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colecistite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colangite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pancreatite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado pelo paciente, caracterizado pela tríade de dor no hipocôndrio direito, febre e icterícia, é conhecido na literatura médica como Tríade de Charcot. Este conjunto de sinais e sintomas é o marcador clássico da colangite aguda, uma condição grave que envolve a infecção das vias biliares, geralmente decorrente de uma obstrução (como a coledocolitíase).\n\nAlternativa a) Incorreta. A colelitíase é apenas a presença de cálculos no interior da vesícula biliar. Na maioria dos casos, é assintomática. Quando causa sintomas, manifesta-se como cólica biliar (dor transitória após ingestão de gordura), mas não provoca febre nem icterícia, pois não há infecção ou obstrução do ducto colédoco.\n\nAlternativa b) Incorreta. A colecistite aguda é a inflamação/infecção da vesícula biliar, geralmente por obstrução do ducto cístico. O paciente apresenta dor persistente no hipocôndrio direito e febre, mas a icterícia não é um achado comum, ocorrendo em menos de 10% dos casos ou quando há compressão extrínseca do ducto hepático (Síndrome de Mirizzi).\n\nAlternativa c) Correta. A colangite aguda é a hipótese diagnóstica principal quando a Tríade de Charcot está presente. A obstrução do fluxo biliar permite a proliferação bacteriana e a translocação para a corrente sanguínea, justificando a febre. A icterícia ocorre pela obstrução do ducto colédoco e a dor pela distensão das vias biliares e pelo processo inflamatório.\n\nAlternativa d) Incorreta. A pancreatite aguda manifesta-se tipicamente com dor abdominal superior de início súbito, com irradiação para o dorso (em faixa), associada a náuseas e vômitos. Embora a pancreatite de origem biliar possa cursar com icterícia se houver um cálculo impactado na ampola de Vater, a descrição de dor no hipocôndrio direito, febre e icterícia direciona o examinador especificamente para a colangite.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  },
+  {
+    "id": "AJUDA_18e210ac-cbb4-485d-bee6-2056edc20224",
+    "originalId": "18e210ac-cbb4-485d-bee6-2056edc20224",
+    "statement": "Gestante com 8 semanas de gestação chega a consulta com resultado de exames de primeira rotina de pré natal , na qual a glicemia de jejum encontra-se 152mg/dl. Qual o diagnóstico provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diabetes mellitus gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não é possível definir diagnóstico sendo necessário fazer o teste de tolerância oral com 24 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se repetir a glicemia de jejum para definir diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diabetes Mellitus diagnosticado na gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "É necessário nova avaliação de glicemia de jejum após dieta adequada e exercício físico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental conhecer os critérios diagnósticos de hiperglicemia na gestação estabelecidos pelo Ministério da Saúde, pela FEBRASGO e pela Sociedade Brasileira de Diabetes.\n\nAnálise do caso clínico:\nA paciente está na 8ª semana de gestação (primeiro trimestre) e apresenta uma glicemia de jejum de 152 mg/dL.\n\nInterpretação da Glicemia de Jejum (GJ) no início da gestação:\n1. GJ menor que 92 mg/dL: Normal. A paciente deverá realizar o Teste Oral de Tolerância à Glicose (TOTG) entre a 24ª e a 28ª semana.\n2. GJ entre 92 mg/dL e 125 mg/dL: Diabetes Mellitus Gestacional (DMG).\n3. GJ maior ou igual a 126 mg/dL: Diabetes Mellitus diagnosticado na gestação (também chamado de Overt Diabetes).\n\nComo o valor encontrado foi 152 mg/dL, ela ultrapassa o ponto de corte de 126 mg/dL. Isso caracteriza um quadro de diabetes que provavelmente já existia antes da gravidez, mas que foi identificado apenas agora, no rastreio inicial do pré-natal.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O termo Diabetes Mellitus Gestacional é reservado para casos de hiperglicemia de menor intensidade diagnosticados na gestação (GJ entre 92 e 125 mg/dL) ou alterações no TOTG do segundo trimestre que não atingem os critérios de diabetes evidente.\n\nAlternativa b) Incorreta. Não se deve aguardar até as 24 semanas. O valor de 152 mg/dL já é diagnóstico. O TOTG de 24 a 28 semanas é indicado apenas para pacientes que tiveram glicemia de jejum normal (menor que 92 mg/dL) no primeiro trimestre.\n\nAlternativa c) Incorreta. Pelas diretrizes atuais de rastreamento de diabetes na gestação, um único valor de glicemia de jejum maior ou igual a 126 mg/dL no início da gravidez já é suficiente para o diagnóstico de Diabetes Mellitus diagnosticado na gestação, não sendo mandatória a repetição para confirmar a conduta clínica imediata.\n\nAlternativa d) Correta. Esta alternativa utiliza a nomenclatura técnica correta para gestantes que apresentam critérios de diabetes (como a glicemia de jejum maior ou igual a 126 mg/dL) logo na primeira avaliação laboratorial do pré-natal.\n\nAlternativa e) Incorreta. Dieta e exercícios físicos são pilares do tratamento, mas não são ferramentas diagnósticas. O diagnóstico é estabelecido pelos níveis glicêmicos encontrados no exame de rotina.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  },
+  {
+    "id": "AJUDA_18f27a83-7b3a-42c5-b604-7f15d74e9cd8",
+    "originalId": "18f27a83-7b3a-42c5-b604-7f15d74e9cd8",
+    "statement": "Um lactente de 12 meses recebe a vacina Tríplice Viral (sarampo, caxumba e rubéola). Os pais questionam sobre a aplicação da vacina contra a Varicela. Sobre a administração de vacinas de vírus vivos atenuados, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As vacinas de vírus vivos atenuados devem ser administradas simultaneamente ou com um intervalo mínimo de 28 dias (4 semanas) entre elas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A vacina Tríplice Viral e a vacina contra a Varicela não podem ser administradas no mesmo dia devido ao risco de interferência imunológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O intervalo de 30 dias é obrigatório apenas para vacinas orais de vírus vivos atenuados, como a Rotavírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O intervalo de 4 semanas é necessário apenas se a criança tiver recebido imunoglobulina recentemente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nO tema central desta questão é a recomendação sobre os intervalos de administração de vacinas de vírus vivos atenuados, um tópico frequente em provas de pediatria e saúde pública. A imunologia vacinal estabelece regras específicas para garantir que uma vacina não interfira na eficácia da outra.\n\nAlternativa A (Correta): Esta é a regra clássica da vacinação. Quando duas vacinas de vírus vivos atenuados (especialmente as injetáveis) não são administradas simultaneamente (no mesmo dia), deve-se aguardar um intervalo mínimo de 4 semanas (28 dias). Esse prazo é necessário porque a replicação do vírus da primeira vacina induz a produção de interferon, uma substância que pode impedir a replicação do vírus da segunda vacina se aplicada precocemente, reduzindo ou anulando a resposta imunológica.\n\nAlternativa B (Incorreta): A vacina Tríplice Viral e a vacina contra a Varicela podem, sim, ser administradas no mesmo dia. Inclusive, existe a vacina Tetraviral, que combina os quatro componentes em uma única aplicação. Caso não sejam aplicadas no mesmo dia, aí sim deve-se respeitar o intervalo de 28 dias.\n\nAlternativa C (Incorreta): O intervalo de 30 dias (ou 4 semanas) é fundamental justamente para as vacinas injetáveis de vírus vivos. As vacinas orais de vírus vivos, como a Rotavírus humano (VRH) e a Pólio oral (VOP), costumam ser exceções a essa regra de intervalo rígido em relação a outras vacinas de vírus vivos, podendo ser administradas com qualquer intervalo entre si ou entre outras vacinas de vírus vivos, conforme a maioria das diretrizes nacionais.\n\nAlternativa D (Incorreta): O uso de imunoglobulinas, sangue ou derivados exige, de fato, o ajuste de intervalos para a aplicação de vacinas de vírus vivos (pois os anticorpos prontos podem neutralizar o vírus vacinal). No entanto, a regra das 4 semanas entre duas vacinas de vírus vivos mencionada na questão é um princípio de interferência viral direta e independe do uso prévio de imunoglobulinas. São situações clínicas e critérios de precaução diferentes.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  },
+  {
+    "id": "AJUDA_18f6be4a-da3b-40df-bfbd-32fbcf74dcf0",
+    "originalId": "18f6be4a-da3b-40df-bfbd-32fbcf74dcf0",
+    "statement": "Mulher de 48 anos vem com queixa de nódulo cervical de aparecimento há 2 meses. Nega sintomas localizados, mas acredita estar havendo crescimento. Nega febre, sudorese noturna, perda de peso, infecções recentes, tabagismo ou etilismo. À palpação cervical, apresenta nódulo palpável em nível II direito de 2 cm, consistência firme, móvel, indolor e sem sinais flogísticos. Sem outras alterações palpáveis. Traz ultrassonografia solicitada pelo clínico geral descrevendo linfonodomegalia arredondada, única em nível II direito de 2,1 cm, com hilo central não caracterizado.\n\nSobre o caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ultrassonografia associada ao perfil da paciente torna a possibilidade de neoplasia baixa, estando indicada a investigação com sorologias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A ultrassonografia não é um exame adequado para investigação inicial desse caso, e deve ser solicitada tomografia computadorizada de face e pescoço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não há indicação de realização de oroscopia, uma vez que a paciente é não tabagista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se prosseguir a investigação diagnóstica, uma vez que há sinais de alarme para neoplasia nas informações apresentadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso:\nA questão apresenta uma paciente de 48 anos com uma linfonodomegalia cervical no nível II (região jugular superior), persistente há 2 meses e em crescimento. Em adultos nessa faixa etária, qualquer nódulo cervical que persista por mais de 3 semanas deve ser encarado com suspeita de neoplasia até que se prove o contrário, seja por tumor primário de cabeça e pescoço (metástase linfonodal) ou linfoma.\n\nAlternativa (a) Incorreta: O perfil da paciente (48 anos) associado aos achados ultrassonográficos aumenta consideravelmente a suspeita de neoplasia. Na ultrassonografia, os sinais de malignidade incluem o formato arredondado (em vez do habitual aspecto ovalado/reniforme) e, principalmente, a ausência ou desestruturação do hilo central gorduroso. Linfonodos reacionais ou infecciosos costumam manter o hilo visível e são mais comuns em pacientes jovens.\n\nAlternativa (b) Incorreta: A ultrassonografia é, sim, um excelente exame para a investigação inicial de massas cervicais. Ela é acessível, não utiliza radiação e possui alta sensibilidade para diferenciar linfonodos reacionais de linfonodos com características suspeitas de malignidade. Embora a tomografia computadorizada de face e pescoço seja fundamental para o estadiamento e para ajudar na busca do tumor primário, ela não invalida a utilidade da ultrassonografia como passo inicial.\n\nAlternativa (c) Incorreta: A ausência de tabagismo não exclui a necessidade de oroscopia e de um exame físico completo das vias aerodigestivas superiores. Atualmente, há uma incidência crescente de tumores de orofaringe relacionados ao HPV, que ocorrem frequentemente em pacientes mais jovens e não tabagistas, tendo como primeira manifestação clínica justamente a linfonodomegalia cervical (frequentemente no nível II).\n\nAlternativa (d) Correta: Esta é a conduta adequada. A paciente apresenta diversos sinais de alarme que obrigam a continuidade da investigação diagnóstica: idade acima de 40 anos, tempo de evolução prolongado (2 meses), crescimento progressivo, consistência firme ao exame físico e características ultrassonográficas de alta suspeição (formato arredondado e perda do hilo central). O próximo passo geralmente envolve a realização de uma Punção Aspirativa por Agulha Fina (PAAF) e exames endoscópicos (nasofibrolaringoscopia) para busca do sítio primário.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Benignas e Malignas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  },
+  {
+    "id": "AJUDA_1903abc2-914a-40d3-8b68-c4fe199418ed",
+    "originalId": "1903abc2-914a-40d3-8b68-c4fe199418ed",
+    "statement": "Adolescente de 13 anos de idade apresenta febre, artralgia migratória em grandes articulações e dor de garganta há três semanas. Exame físico: sopro cardíaco. ECG: prolongamento do intervalo PR. Exames laboratoriais: leucocitose; elevação de VHS e de PCR. Biópsia cardíaca: áreas de necrose fibrinoide cercadas por linfócitos, macrófagos ativados (células de Anitschkow) e plasmócitos. O diagnóstico provável e a estrutura acometida na histopatologia descrita são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "miocardite viral aguda; fibras musculares miocárdicas com degeneração vacuolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "febre reumática aguda; miocárdio com nódulos de Aschoff (granulomas reumáticos).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "lúpus eritematoso sistêmico; endocardite de Libman-Sacks com vegetações estéreis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "endocardite bacteriana subaguda; válvulas cardíacas com vegetações friáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO caso descreve um adolescente com quadro clássico de Febre Reumática (FR) aguda. De acordo com os Critérios de Jones, o paciente apresenta dois critérios maiores (artralgia migratória em grandes articulações e cardite, sugerida pelo sopro cardíaco) e três critérios menores (febre, prolongamento do intervalo PR no ECG e elevação de provas de atividade inflamatória, como VHS e PCR). O antecedente de dor de garganta há três semanas reforça a etiologia pós-estreptocócica (Streptococcus pyogenes).\n\nAchados Histopatológicos:\n\nA descrição da biópsia cardíaca é patognomônica. A presença de focos de necrose fibrinoide circundados por linfócitos, plasmócitos e, principalmente, macrófagos ativados com núcleos alongados em aspecto de lagarta (células de Anitschkow) define o Nódulo de Aschoff. Esses nódulos são granulomas específicos que ocorrem no miocárdio durante a fase aguda da Febre Reumática.\n\nAlternativa a) Incorreta. A miocardite viral aguda apresenta infiltrado inflamatório linfocitário difuso e lesão direta dos miócitos (degeneração vacuolar), mas não forma os nódulos de Aschoff nem apresenta as células de Anitschkow, que são achados específicos da febre reumática.\n\nAlternativa b) Correta. O diagnóstico clínico preenche os critérios para Febre Reumática aguda e a descrição histopatológica (necrose fibrinoide + células de Anitschkow) corresponde exatamente aos nódulos de Aschoff localizados no miocárdio, que são a lesão característica desta patologia.\n\nAlternativa c) Incorreta. O Lúpus Eritematoso Sistêmico (LES) pode causar artrite e febre. A endocardite de Libman-Sacks associada ao LES apresenta vegetações estéreis, pequenas e verrucosas em ambas as faces das valvas, mas não apresenta os nódulos de Aschoff descritos no enunciado.\n\nAlternativa d) Incorreta. A endocardite bacteriana subaguda caracteriza-se por vegetações friáveis compostas por fibrina, plaquetas e microrganismos aderidos às valvas cardíacas. O achado de biópsia com células de Anitschkow e granulomas organizados é específico do processo reumático imunomediado, não de uma infecção bacteriana direta.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Febre Reumática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  },
+  {
+    "id": "AJUDA_19104cea-7659-4f6c-839f-6d1813b284dc",
+    "originalId": "19104cea-7659-4f6c-839f-6d1813b284dc",
+    "statement": "Em epidemiologia, qual é a diferença entre Risco Relativo (RR) e Odds Ratio (OR), e em quais estudos cada um é mais comumente utilizado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O RR é usado para estudos de coorte, enquanto o OR é utilizado em estudos de caso-controle.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ambos são aplicáveis apenas em estudos transversais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O OR é utilizado para medir a prevalência de doenças, enquanto o RR mede a incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ambos são aplicáveis exclusivamente em estudos de intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CONCEITOS BÁSICOS\n\nO Risco Relativo (RR) e a Odds Ratio (OR), ou Razão de Chances, são medidas de associação que quantificam a relação entre um fator de exposição e a ocorrência de um desfecho (doença). A principal diferença entre eles reside na forma como os dados são coletados e na estrutura do desenho do estudo.\n\nRISCO RELATIVO (RR): É a razão entre a incidência do desfecho no grupo exposto e a incidência no grupo não exposto. Para calculá-lo, é obrigatório conhecer o número total de pessoas em risco e acompanhar essas pessoas ao longo do tempo para observar o surgimento de novos casos. Por isso, o RR é a medida típica dos Estudos de Coorte e Ensaios Clínicos.\n\nODDS RATIO (OR): É a razão entre a chance de exposição no grupo de doentes (casos) e a chance de exposição no grupo de não doentes (controles). Como o pesquisador já parte de pessoas doentes, ele não consegue medir a incidência real na população original. O OR funciona como uma estimativa do risco, sendo a medida de escolha para Estudos de Caso-Controle.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): Esta alternativa descreve a aplicação clássica em epidemiologia. O RR exige o acompanhamento de grupos (Coorte) para verificar quem adoece, enquanto o OR é calculado comparando quem já está doente com quem está saudável (Caso-Controle).\n\nAlternativa B (INCORRETA): Estudos transversais medem a prevalência em um único ponto no tempo. Neles, utiliza-se geralmente a Razão de Prevalência ou a Odds Ratio de Prevalência. O RR não pode ser calculado aqui, pois não há seguimento temporal para observar a incidência de casos novos.\n\nAlternativa C (INCORRETA): O RR realmente se baseia na incidência. Contudo, o OR não é a medida padrão para prevalência (que é a Razão de Prevalência). O erro principal da alternativa é ignorar que a definição de qual medida usar depende do desenho do estudo (retrospectivo vs. prospectivo) e não apenas da frequência da doença.\n\nAlternativa D (INCORRETA): Estudos de intervenção, como ensaios clínicos controlados, utilizam frequentemente o RR e a Redução do Risco Relativo. No entanto, tanto o RR quanto o OR são ferramentas fundamentais dos estudos observacionais, não sendo exclusivos de intervenções.\n\nGABARITO: ALTERNATIVA A",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:06.955Z"
+  }
+]

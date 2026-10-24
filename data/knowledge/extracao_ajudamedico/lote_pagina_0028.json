@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_074481b5-9e25-460a-b3b4-805aee5b5884",
+    "originalId": "074481b5-9e25-460a-b3b4-805aee5b5884",
+    "statement": "Gestante, 30 semanas de gestação, 32 anos de idade, G3P2, procura pronto atendimento por episódio súbito de sangramento vaginal vermelho vivo, indolor, de moderada intensidade. Nega dor abdominal ou contrações. Exame físico: PA 110/70 mmHg, FC 96 bpm, altura uterina 29 cm, BCF presente e regular. Toque vaginal não realizado. Ultrassonografia obstétrica mostra placenta inserida no segmento inferior, recobrindo parcialmente o orifício cervical interno. Com base no quadro clínico apresentado, sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o toque vaginal deve ser realizado com cuidado para confirmar a origem do sangramento e avaliar a dilatação cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a placenta prévia geralmente cursa com dor abdominal intensa e hipertonia uterina, diferindo do descolamento prematuro de placenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o diagnóstico é confirmado, preferencialmente, por ultrassonografia transvaginal, que é segura e mais acurada do que a via abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o tratamento definitivo da placenta prévia é o parto cesáreo, devendo ser realizado imediatamente após o primeiro episódio de sangramento, independentemente da idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO:\nO caso apresenta uma gestante de 30 semanas com sangramento vaginal indolor, vermelho-vivo e de início súbito, sem sinais de contração ou hipertonia uterina. Essas são as características clássicas da Placenta Prévia (PP), confirmada pela ultrassonografia ao mostrar a placenta recobrindo parcialmente o orifício cervical interno.\n\nALTERNATIVA A (INCORRETA): O toque vaginal é formalmente contraindicado em casos de suspeita de placenta prévia. A introdução do dedo no canal cervical pode traumatizar a placenta e desencadear uma hemorragia profusa e incontrolável. O exame físico deve se limitar à estabilização materna, avaliação da vitalidade fetal e exame especular cuidadoso para confirmar a origem do sangramento.\n\nALTERNATIVA B (INCORRETA): A dor abdominal intensa e a hipertonia uterina (útero lenhoso) são características do Descolamento Prematuro da Placenta (DPP), e não da placenta prévia. Na placenta prévia, o útero geralmente está indolor, relaxado e com tônus normal.\n\nALTERNATIVA C (CORRETA): A ultrassonografia transvaginal é o exame de escolha (padrão-ouro) para o diagnóstico de placenta prévia. Ela é superior à via abdominal por permitir uma visualização muito mais precisa da relação entre a borda placentária e o orifício cervical interno. O exame é seguro, pois o transdutor é inserido apenas até o fundo de saco vaginal, não entrando em contato com o colo uterino ou com a placenta.\n\nALTERNATIVA D (INCORRETA): A conduta na placenta prévia depende da estabilidade hemodinâmica materna, da vitalidade fetal e da idade gestacional. Em uma gestante de 30 semanas (prematura) que apresenta estabilidade e sangramento moderado, a conduta preferencial é a hospitalização e o manejo conservador (expectante). O objetivo é prolongar a gestação para reduzir riscos de prematuridade, utilizando corticoprofilaxia para maturidade pulmonar. A interrupção imediata só seria indicada em casos de hemorragia grave com risco materno ou sofrimento fetal.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  },
+  {
+    "id": "AJUDA_074c9a40-cf35-4ebc-8ce2-30275d81e5d7",
+    "originalId": "074c9a40-cf35-4ebc-8ce2-30275d81e5d7",
+    "statement": "Mulher de 38 anos de idade apresenta nódulo tireoideano. US: nódulo de 2,0 cm, sólido, hipoecogênico, com margens irregulares, mais alto que largo e com focos ecogênicos puntiformes, localizado em lobo direito, ausência de linfonodos cervicais suspeitos.\n\nSegundo as orientações do ACR TI-RADS, a classificação mais provável para esse nódulo e a conduta são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "TI-RADS 3; baixo risco; seguimento ultrassonográfico em um ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TI-RADS 4; risco moderado; punção aspirativa por agulha fina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "TI-RADS 5; alto risco; punção aspirativa por agulha fina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "TI-RADS 2; benigno; sem necessidade de seguimento ou biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos aplicar o sistema de pontuação do ACR TI-RADS (American College of Radiology Thyroid Imaging, Reporting and Data System), que avalia cinco categorias ultrassonográficas para determinar o risco de malignidade de um nódulo tireoidiano.\n\nAnálise da pontuação conforme os achados descritos:\n\n1. Composição: Sólido = 2 pontos.\n2. Ecogenicidade: Hipoecogênico = 2 pontos.\n3. Formato: Mais alto que largo = 3 pontos.\n4. Margens: Irregulares = 2 pontos.\n5. Focos ecogênicos: Focos ecogênicos puntiformes (sugestivos de microcalcificações) = 3 pontos.\n\nSomatória de pontos: 2 + 2 + 3 + 2 + 3 = 12 pontos.\n\nClassificação ACR TI-RADS baseada na pontuação:\n- TI-RADS 1 (Benigno): 0 pontos.\n- TI-RADS 2 (Não suspeito): 2 pontos.\n- TI-RADS 3 (Levemente suspeito): 3 pontos.\n- TI-RADS 4 (Moderadamente suspeito): 4 a 6 pontos.\n- TI-RADS 5 (Altamente suspeito): 7 ou mais pontos.\n\nCom 12 pontos, o nódulo é classificado como TI-RADS 5 (alto risco).\n\nConduta para TI-RADS 5:\n- Realizar Punção Aspirativa por Agulha Fina (PAAF) se o nódulo for maior ou igual a 1,0 cm.\n- Realizar seguimento ultrassonográfico se o nódulo for maior ou igual a 0,5 cm.\nComo o nódulo da paciente tem 2,0 cm, a conduta imediata é a PAAF.\n\nAnálise das alternativas:\n\na) Incorreta. A classificação TI-RADS 3 é para nódulos com apenas 3 pontos. O nódulo em questão apresenta múltiplas características de alta suspeição (mais alto que largo e focos puntiformes), totalizando 12 pontos.\n\nb) Incorreta. O TI-RADS 4 compreende a faixa de 4 a 6 pontos. Embora a conduta de PAAF fosse correta para um TI-RADS 4 de 2,0 cm (o limite para PAAF no TR4 é maior ou igual a 1,5 cm), a classificação pontuada ultrapassa essa categoria.\n\nc) Correta. O nódulo soma 12 pontos, enquadrando-se na categoria TI-RADS 5 (alto risco). Pelo tamanho de 2,0 cm (acima do ponto de corte de 1,0 cm), a indicação correta é a PAAF.\n\nd) Incorreta. O TI-RADS 2 é atribuído a nódulos com 2 pontos (como cistos simples ou nódulos espongiformes), o que não corresponde à descrição de um nódulo sólido, hipoecogênico e com margens irregulares.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  },
+  {
+    "id": "AJUDA_074dd480-2dad-4934-bc47-f2145e024e44",
+    "originalId": "074dd480-2dad-4934-bc47-f2145e024e44",
+    "statement": "Homem, 68 anos, foi submetido à colectomia total por megacólon tóxico. No pós-operatório, evoluiu com choque séptico e necessidade de ventilação mecânica, terapia com drogas vasoativas e hemodiálise. Apesar de suporte intensivo, apresenta piora progressiva, com elevação na pontuação SOFA e sinais de falência hepática aguda. Diante desse cenário, a conduta mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "discutir com a família sobre o prognóstico, objetivos de cuidado e possibilidade de limitar medidas fúteis, envolvendo equipe de cuidados paliativos e comitê de ética.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "suspender todas as medidas de suporte e iniciar sedação profunda, sem comunicação prévia com a família, para evitar prolongar sofrimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prosseguir com todas as medidas invasivas disponíveis, independentemente do prognóstico, para evitar acusação de omissão de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "transferir o paciente para outro serviço com maior disponibilidade tecnológica, sem discutir a situação clínica atual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar imediatamente suporte hepático extracorpóreo, mesmo sem evidência de benefício para este perfil de paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CONTEÚDO DA QUESTÃO E ANÁLISE CLÍNICA\n\nO caso apresenta um paciente idoso (68 anos) com falência múltipla de órgãos e sistemas (pulmonar, renal, cardiovascular e, agora, hepática) decorrente de choque séptico após cirurgia de grande porte. A piora progressiva do escore SOFA (Sequential Organ Failure Assessment), mesmo sob suporte intensivo máximo (ventilação mecânica, drogas vasoativas em altas doses e hemodiálise), indica que o paciente está entrando em uma fase de refratariedade terapêutica e possível terminalidade. O desafio aqui é ético e técnico: reconhecer a futilidade de medidas heroicas e priorizar a dignidade e o conforto do paciente.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: Quando a terapêutica curativa não apresenta mais resultados e a evolução para o óbito parece inevitável apesar do suporte máximo, a conduta adequada é a transição para cuidados paliativos ou a limitação de terapias desproporcionais (ortotanásia). Este processo deve ser baseado na transparência e no compartilhamento de decisões com a família, focando no alívio do sofrimento. O apoio de equipes de cuidados paliativos e, se necessário, do comitê de ética ajuda a garantir que os desejos do paciente e os princípios de beneficência e não maleficência sejam respeitados.\n\nAlternativa (b) INCORRETA: A suspensão de medidas de suporte de forma unilateral e sem comunicação com a família é uma violação grave dos preceitos éticos. O compartilhamento da situação clínica e o acolhimento dos familiares são obrigatórios no processo de decisão sobre limitação de esforço terapêutico. Além disso, a sedação deve ter o objetivo de controle de sintomas (como dor ou dispneia) e não ser utilizada de forma isolada como única medida de \"abreviação\" sem diálogo.\n\nAlternativa (c) INCORRETA: Manter todas as medidas invasivas em um cenário de clara irreversibilidade e sofrimento caracteriza a distanásia (prolongamento fútil do processo de morte). A prática médica deve evitar a obstinação terapêutica. O Código de Ética Médica respalda a limitação de tratamentos inúteis em casos de doenças terminais e graves, desde que assegurados os cuidados paliativos.\n\nAlternativa (d) INCORRETA: A transferência de um paciente em choque séptico refratário e falência multiorgânica é tecnicamente perigosa e eticamente questionável. Além do alto risco de morte durante o transporte, a transferência para busca de \"maior tecnologia\", quando não há benefício clínico esperado, apenas posterga o sofrimento e evita a abordagem necessária sobre o fim da vida.\n\nAlternativa (e) INCORRETA: O suporte hepático extracorpóreo (como o sistema MARS) não tem evidência de benefício ou melhora de sobrevida em pacientes com falência hepática no contexto de choque séptico e falência múltipla de órgãos. Iniciar uma medida invasiva e cara sem evidência de benefício configura obstinação terapêutica e desvio de conduta clínica adequada para o quadro de terminalidade.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Sepse",
+      "Ética Médica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  },
+  {
+    "id": "AJUDA_074fe91a-1623-4c8a-bef9-585edb84cba7",
+    "originalId": "074fe91a-1623-4c8a-bef9-585edb84cba7",
+    "statement": "Em relação aos efeitos das mudanças climáticas na saúde, avalie se as afirmativas são verdadeiras (V) ou falsas (F) e assinale a sequência correspondente.\n\n( ) Mulheres expostas a altas temperaturas e poluição do ar têm maior chance de sofrer consequências adversas na gravidez, como parto prematuro e baixo peso ao nascer a termo. Contudo, não há aumento do risco de natimortalidade.\n( ) Altas temperaturas estão associadas a aumento de mortes por afogamento, acidentes de trânsito e agressões.\n( ) Altas temperaturas estão associadas a maiores taxas de suicídio e violência doméstica.\n( ) Na prática clínica, muitos psicofármacos prescritos podem interferir na termorregulação do corpo. Por isso, o uso desses medicamentos confere risco adicional durante eventos de calor extremo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "F - V - V - V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V - F - F - F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F - V - V - F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V - F - F - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das assertivas:\n\nPrimeira assertiva (Falsa): De fato, a exposição a altas temperaturas e a poluição atmosférica estão associadas a desfechos obstétricos negativos, como o parto prematuro e o baixo peso ao nascer. Entretanto, ao contrário do que afirma a questão, estudos epidemiológicos robustos demonstram que o calor extremo também eleva significativamente o risco de natimortalidade (natimortos). Portanto, a exclusão desse risco torna a frase incorreta.\n\nSegunda assertiva (Verdadeira): O calor extremo altera o comportamento humano e aumenta a exposição a riscos. Há uma maior procura por atividades recreativas em águas para resfriamento, o que eleva estatisticamente os casos de afogamento. Além disso, o estresse térmico prejudica a cognição, o tempo de reação e o controle da impulsividade, fatores que contribuem diretamente para o aumento de acidentes de trânsito e atos de agressão interpessoal.\n\nTerceira assertiva (Verdadeira): Mudanças climáticas e ondas de calor possuem um impacto direto e documentado na saúde mental. Dados globais confirmam a correlação entre o aumento das temperaturas e o crescimento das taxas de suicídio. Da mesma forma, o estresse provocado pelo calor excessivo reduz o limiar de tolerância e aumenta a irritabilidade, o que se reflete estatisticamente no aumento dos índices de violência doméstica.\n\nQuarta assertiva (Verdadeira): Diversas classes de psicofármacos, como antipsicóticos, antidepressivos e estabilizadores de humor (como o lítio), interferem nos mecanismos fisiológicos de termorregulação do hipotálamo ou na resposta periférica. Alguns podem inibir a sudorese devido a efeitos anticolinérgicos, enquanto outros alteram a percepção de sede ou a hemodinâmica renal. Pacientes que utilizam essas medicações são considerados um grupo de risco adicional durante eventos de calor extremo.\n\nConclusão: A sequência correta é Falsa, Verdadeira, Verdadeira e Verdadeira (F - V - V - V).\n\nAlternativa correta: Letra A.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  },
+  {
+    "id": "AJUDA_0753006b-440b-4392-bfe4-49cc8a8758af",
+    "originalId": "0753006b-440b-4392-bfe4-49cc8a8758af",
+    "statement": "Um paciente residente em um município de pequeno porte foi diagnosticado com uma condição que exige cirurgia cardíaca eletiva de média complexidade, procedimento não disponível em sua cidade.\nNo contexto da organização das Redes de Atenção à Saúde (RAS) do SUS, o acesso desse usuário ao serviço necessário ocorre por meio do seguinte mecanismo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o acesso é garantido por ordem de chegada aos serviços de média complexidade, sendo necessário o paciente deslocar-se para o município-sede da região e aguardar na fila presencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o paciente deve procurar diretamente um hospital de referência em outra cidade que realize o procedimento e solicitar o agendamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o médico da atenção primária emite um documento de encaminhamento, e o próprio paciente assume a gestão do processo de cuidado, entrando em contato com outros serviços.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a secretaria municipal de saúde emite um voucher para que o paciente possa ser atendido pela rede privada, uma vez que o serviço não está disponível publicamente no município.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a Central de Regulação Municipal, integrada à regulação regional/estadual, é responsável por autorizar e agendar o procedimento no serviço de referência adequado dentro da RAS.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda o funcionamento do fluxo de atendimento no Sistema Único de Saúde (SUS), especificamente no que diz respeito aos mecanismos de referência e contrarreferência dentro das Redes de Atenção à Saúde (RAS).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O acesso aos serviços de média e alta complexidade no SUS não é baseado em ordem de chegada presencial em municípios vizinhos. Esse modelo geraria caos e feriria o princípio da equidade. O fluxo é planejado e agendado previamente para garantir que o paciente seja atendido conforme sua necessidade clínica e de forma organizada.\n\nAlternativa b: Incorreta. No SUS, a porta de entrada preferencial é a Atenção Primária. O paciente não pode procurar diretamente um hospital de referência (atenção secundária ou terciária) para agendar uma cirurgia por conta própria, pois o sistema é hierarquizado e requer encaminhamento oficial e regulação para garantir o uso eficiente dos recursos.\n\nAlternativa c: Incorreta. Embora o médico da Atenção Primária emita o encaminhamento, a gestão do processo de cuidado e do fluxo na Rede de Atenção à Saúde (RAS) é uma responsabilidade do gestor público e das equipes de saúde por meio do sistema de regulação. Atribuir ao paciente a tarefa de gerir sua própria vaga e contatar serviços especializados vai contra a diretriz de integralidade e organização do sistema.\n\nAlternativa d: Incorreta. O encaminhamento para serviços privados ocorre apenas de forma complementar quando a rede pública é insuficiente, mas isso é feito via contrato ou convênio preestabelecido e gerido pela Central de Regulação. O SUS não trabalha com o sistema de vouchers para que o paciente busque a rede privada por iniciativa própria.\n\nAlternativa e: Correta. A Central de Regulação é o mecanismo fundamental de gestão das Redes de Atenção à Saúde. Ela atua como um ordenador de fluxos, recebendo as solicitações da Atenção Primária, avaliando a prioridade clínica e agendando o procedimento no serviço de referência adequado (municipal, regional ou estadual). Isso garante que o paciente percorra a rede de forma segura, com garantia de vaga e conforme a complexidade exigida pelo seu caso.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Processos de Descentralização e Regionalização do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  },
+  {
+    "id": "AJUDA_0758e9b3-7cb5-469e-91af-9f8fad4a34de",
+    "originalId": "0758e9b3-7cb5-469e-91af-9f8fad4a34de",
+    "statement": "A investigação do Sangramento Uterino Anormal (SUA) segue a classificação PALM–COEIN (Pólipo, Adenomiose, Leiomioma, Malignidade e hiperplasia – Coagulopatia, Ovulatória, Endometrial, Iatrogênica e Não classificada), proposta pela Federação Internacional de Ginecologia e Obstetrícia (FIGO). Em relação aos métodos diagnósticos e às nuances dessa classificação, analise as sentenças a seguir e registre V, para Verdadeiro, e F, para Falso:\n\n(__) Na investigação do SUA em mulheres na pós-menopausa, a espessura endometrial ao ultrassom transvaginal acima de 4–5 mm, ou a persistência de sangramento mesmo com endométrio fino, indica a necessidade de biópsia endometrial (por histeroscopia ou pipelle) para exclusão de neoplasia.\n(__) O diagnóstico de Adenomiose (A) por ressonância magnética baseia-se principalmente no espessamento da zona juncional mioendometrial acima de 12 mm, na presença de focos hemorrágicos miometriais de alto sinal em T1 e na assimetria das paredes uterinas.\n(__) A pesquisa de Coagulopatias (C), como a Doença de von Willebrand, deve ser realizada rotineiramente em todas as mulheres com SUA, independentemente da história clínica, em razão da elevada prevalência de hemofilia A adquirida em mulheres multíparas.\n(__) A histeroscopia diagnóstica é considerada o padrão-ouro para a avaliação das causas estruturais intracavitárias (pólipos e leiomiomas submucosos), permitindo biópsia dirigida e a classificação topográfica dos miomas segundo a FIGO (tipos 0, 1 e 2), auxiliando no planejamento cirúrgico.\n\nAssinale a alternativa que apresenta a sequência correta dos itens acima, de cima para baixo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das sentenças:\n\nA primeira sentença é verdadeira. Na pós-menopausa, o principal objetivo da investigação do sangramento uterino anormal (SUA) é a exclusão de câncer de endométrio. O ultrassom transvaginal é utilizado como triagem inicial. Um endométrio com espessura igual ou menor a 4 ou 5 milímetros apresenta um alto valor preditivo negativo para malignidade. Entretanto, se a espessura for superior a esse limite, ou se o sangramento persistir mesmo com um endométrio fino (devido ao risco de lesões focais ou atrofia), torna-se necessária a avaliação histológica, preferencialmente por biópsia dirigida via histeroscopia ou por métodos como a curetagem ou o Pipelle.\n\nA segunda sentença é verdadeira. A ressonância magnética é um dos exames de imagem mais precisos para identificar a adenomiose. Os critérios diagnósticos clássicos incluem o espessamento da zona juncional mioendometrial acima de 12 milímetros, a presença de pequenos focos de alto sinal em T1 e T2 (que representam ectopia endometrial com micro-hemorragias) e a assimetria das paredes uterinas, que frequentemente se apresenta com um aumento global do volume uterino de forma globular.\n\nA terceira sentença é falsa. A triagem para coagulopatias não deve ser realizada de forma rotineira em todas as pacientes com SUA. De acordo com os protocolos da FIGO e da FEBRASGO, a investigação de distúrbios de coagulação deve ser direcionada apenas para mulheres com história clínica sugestiva. Os critérios de triagem incluem: sangramento menstrual excessivo desde a menarca, história de hemorragia pós-parto, sangramento relacionado a procedimentos cirúrgicos ou odontológicos, ou presença de sintomas como equimoses frequentes, epistaxe ou sangramento gengival. A hemofilia A adquirida é uma condição rara e não justifica o rastreio universal em multíparas.\n\nA quarta sentença é verdadeira. A histeroscopia é o exame padrão-ouro para o diagnóstico de causas estruturais intracavitárias (componentes PALM da classificação), pois permite a visualização direta do canal cervical e da cavidade endometrial. Ela é essencial para diferenciar pólipos de miomas submucosos e para aplicar a classificação topográfica da FIGO para miomas: Tipo 0 (totalmente intracavitário e pediculado), Tipo 1 (componente intramural menor que 50 por cento) e Tipo 2 (componente intramural de 50 por cento ou mais). Essa classificação é crucial para decidir se a ressecção pode ser feita por via histeroscópica.\n\nConclusão: A sequência correta é Verdadeiro (V), Verdadeiro (V), Falso (F) e Verdadeiro (V).\n\nAlternativa correta: Letra (d).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  },
+  {
+    "id": "AJUDA_075bbf60-fc77-4493-86c2-2b40c37b8781",
+    "originalId": "075bbf60-fc77-4493-86c2-2b40c37b8781",
+    "statement": "As cardiopatias congênitas estão entre as maiores causa de mortalidade neonatal no Brasil. Segundo o protocolo de Pré-Natal Mãe Curitibana Vale A Vida 2025 são indicações para realização de ecocardiografia fetal:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Arritmias cardíacas, alterações do líquido amniótico, gestação gemelar dicoriônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipotireoidismo, sífilis materna, transluscência nucal entre 1,5 e 3 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alcoolismo, hipertireoidismo e hipertensão arterial sistêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas as pacientes devem realizar ecocardiografia fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nEsta questão aborda as indicações para a ecocardiografia fetal, um exame especializado voltado para a detecção de malformações cardíacas e distúrbios funcionais no feto. O protocolo \"Mãe Curitibana Vale a Vida\" (versão 2024/2025) segue diretrizes específicas para a triagem e encaminhamento de gestantes de alto risco.\n\nAlternativa A: Incorreta. Embora as arritmias cardíacas sejam uma indicação clássica para o exame, a gestação gemelar dicoriônica (duas placentas e dois sacos amnióticos) não é, por si só, um fator de risco aumentado para cardiopatia congênita que justifique o exame de rotina. O risco é significativamente maior em gestações gemelares monocoriônicas, devido às comunicações vasculares placentárias e à síndrome de transfusão feto-fetal.\n\nAlternativa B: Incorreta. O hipotireoidismo e a sífilis materna não constam como indicações primárias para a realização de ecocardiografia fetal nos protocolos de rastreamento de cardiopatias. Além disso, uma translucência nucal (TN) entre 1,5 e 3 mm é geralmente considerada dentro dos limites da normalidade (o ponto de corte para alerta costuma ser acima de 2,5 mm ou 3,5 mm, dependendo da diretriz adotada).\n\nAlternativa C: Correta. De acordo com o protocolo específico mencionado, o alcoolismo materno é um fator teratogênico conhecido associado a defeitos de septação cardíaca. O hipertireoidismo materno e a hipertensão arterial sistêmica (especialmente a crônica ou com complicações) são incluídos como indicações de triagem para o ecocardiograma fetal devido ao risco de repercussões hemodinâmicas fetais, como insuficiência cardíaca fetal, distúrbios de ritmo ou hipertrofia miocárdica.\n\nAlternativa D: Incorreta. No sistema público de saúde brasileiro e nos protocolos de Curitiba, a ecocardiografia fetal não é um exame de rastreamento universal. Ela é indicada apenas para gestantes que apresentam fatores de risco específicos (maternos, familiares ou fetais) ou quando o ultrassom morfológico de rotina detecta alguma alteração na visualização das câmaras cardíacas.\n\nEm resumo, a alternativa (C) reflete o rol de patologias e condições maternas que, segundo o protocolo local, exigem uma avaliação detalhada da morfologia e função cardíaca do feto.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Cardiopatias Congênitas",
+      "Pré-Natal"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  },
+  {
+    "id": "AJUDA_07697a45-b9a8-43da-bde2-5fe7adb4b640",
+    "originalId": "07697a45-b9a8-43da-bde2-5fe7adb4b640",
+    "statement": "Considere as assertivas a seguir sobre as Conferências de Saúde do sistema único, em cada esfera de governo:\n\nI - Avaliam a situação de saúde;\nII- Propõem diretrizes para a formulação da política de saúde\nIII- Possuem caráter permanente e deliberativo.\n\nQuais delas estão de acordo com a legislação vigente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental o conhecimento da Lei Federal n.º 8.142/1990, que dispõe sobre a participação da comunidade na gestão do Sistema Único de Saúde (SUS) e define as instâncias colegiadas: as Conferências de Saúde e os Conselhos de Saúde.\n\nAnálise das assertivas:\n\nAssertiva I - Correta. De acordo com o Art. 1.º, § 1.º, da Lei n.º 8.142/90, a Conferência de Saúde deve se reunir a cada quatro anos com a representação dos vários segmentos sociais para avaliar a situação de saúde em sua respectiva esfera (municipal, estadual ou federal).\n\nAssertiva II - Correta. O mesmo dispositivo legal estabelece que, além de avaliar a situação de saúde, a Conferência tem a função de propor as diretrizes para a formulação da política de saúde nos níveis correspondentes. Ela funciona como um fórum de debates para nortear o planejamento das ações do SUS.\n\nAssertiva III - Incorreta. Esta assertiva descreve as características dos Conselhos de Saúde. Segundo o Art. 1.º, § 2.º, da mesma lei, o Conselho de Saúde é que possui caráter permanente e deliberativo, atuando na formulação de estratégias e no controle da execução da política de saúde. As Conferências, por sua vez, ocorrem periodicamente (ordinariamente a cada quatro anos), não sendo permanentes.\n\nAnálise das alternativas:\n\na) Incorreta. A assertiva II também está correta; portanto, a alternativa está incompleta.\nb) Incorreta. A assertiva I também está correta, tornando esta alternativa incompleta.\nc) Incorreta. A assertiva III é falsa, pois confunde as atribuições da Conferência com as do Conselho de Saúde.\nd) Correta. Apenas as assertivas I e II estão em conformidade com o texto da Lei n.º 8.142/90 no que tange às Conferências de Saúde.\ne) Incorreta. A inclusão da assertiva III torna a alternativa errada, uma vez que a Conferência não é permanente.\n\nGabarito: Letra (d).",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  },
+  {
+    "id": "AJUDA_076ae0de-51d0-4ab6-8169-30e276a44d54",
+    "originalId": "076ae0de-51d0-4ab6-8169-30e276a44d54",
+    "statement": "Homem de 68 anos, com hipertensão de difícil controle, procura o médico para ajuste do tratamento. Ele é obeso (IMC 32), tem diabetes mellitus tipo 2 controlado e doença renal crônica estágio 3a (TFG de 45 mL/min/1,73m²). Está em uso regular de três classes de anti-hipertensivos: enalapril 40 mg/dia, anlodipino 10 mg/dia e hidroclorotiazida 25 mg/dia. Ainda assim, sua pressão arterial permanece em torno de 160/100 mmHg nas últimas consultas. Exames laboratoriais mostram potássio sérico de 4,0 mEq/L e creatinina de 1,8 mg/dL. Qual a conduta mais adequada para o manejo deste paciente, segundo a última Diretriz Brasileira de Hipertensão Arterial Sistêmica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar espironolactona e solicitar MAPA 24hs.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Associar clonidina ao esquema atual e pedir polissonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Associar furosemida ao esquema e solicitar ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumentar a dose da hidroclorotiazida e pedir doppler de artérias renais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O paciente apresenta um quadro clínico de Hipertensão Arterial Resistente (HAR). A HAR é definida quando a pressão arterial permanece acima das metas recomendadas (≥ 140/90 mmHg) mesmo com o uso de três classes de anti-hipertensivos em doses otimizadas, preferencialmente incluindo um inibidor da enzima conversora de angiotensina (IECA) ou bloqueador do receptor de angiotensina (BRA), um bloqueador de canais de cálcio (BCC) e um diurético tiazídico. No caso, o paciente já usa enalapril, anlodipino e hidroclorotiazida em doses máximas ou habituais efetivas.\n\nAlternativa (a): Correta. Segundo a Diretriz Brasileira de Hipertensão Arterial, o quarto fármaco a ser adicionado ao esquema terapêutico da hipertensão resistente é a espironolactona (antagonista do receptor mineralocorticoide), baseada em evidências de estudos como o PATHWAY-2. O paciente possui potássio de 4,0 mEq/L e taxa de filtração glomerular de 45 mL/min, o que permite o uso seguro da medicação (geralmente evitada se K > 5,0 ou TFG < 30). Além disso, a solicitação do MAPA (Monitorização Ambulatorial da Pressão Arterial) de 24 horas é o passo fundamental para excluir a \"pseudorresistência\", causada principalmente pelo efeito do avental branco, confirmando se a pressão está realmente elevada durante as atividades habituais.\n\nAlternativa (b): Incorreta. A clonidina é um agonista alfa-2 de ação central e é considerada uma droga de linhas posteriores (quinta ou sexta escolha) no manejo da hipertensão. Embora a polissonografia seja importante para investigar a Apneia Obstrutiva do Sono (uma causa comum de hipertensão secundária), a prioridade diagnóstica e terapêutica imediata, conforme o algoritmo de resistência, aponta para o MAPA e a espironolactona.\n\nAlternativa (c): Incorreta. A substituição de diuréticos tiazídicos (hidroclorotiazida) por diuréticos de alça (furosemida) é recomendada na doença renal crônica quando a taxa de filtração glomerular é inferior a 30 mL/min (estágios 4 e 5), pois os tiazídicos perdem eficácia nesse patamar. Como o paciente tem TFG de 45 mL/min, a hidroclorotiazida ainda apresenta utilidade, e a conduta de escolha para resistência continua sendo a espironolactona. O ecocardiograma avalia hipertrofia ventricular esquerda (lesão de órgão-alvo), mas não define a conduta de ajuste para o controle pressórico imediato.\n\nAlternativa (d): Incorreta. Aumentar a dose da hidroclorotiazida acima de 25 mg costuma trazer pouco benefício adicional no controle da pressão arterial, mas aumenta significativamente o risco de distúrbios metabólicos e hidroeletrolíticos. O Doppler de artérias renais é um exame para investigar hipertensão secundária renovascular, que deve ser considerada, mas a confirmação da hipertensão resistente verdadeira via MAPA e o bloqueio da aldosterona com espironolactona precedem essa investigação na rotina de manejo da HAR.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  },
+  {
+    "id": "AJUDA_07806d2b-b6da-42e6-b7ba-a441dc7c4047",
+    "originalId": "07806d2b-b6da-42e6-b7ba-a441dc7c4047",
+    "statement": "Qual achado abaixo não é encontrado no pós-operatório imediato de uma gastrectomia total?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento de catecolaminas circulatórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Balanço nitrogenado negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Retenção hídrica e aumento aldosterona e ADH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperglicemia e aumento sérico de insulina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Pneumoperitoneo residual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para entender essa questão, é necessário analisar a Resposta Endócrina, Metabólica e Imunológica ao Trauma (REMOPA), que é o conjunto de alterações fisiológicas que o corpo apresenta após uma agressão, como uma gastrectomia total.\n\nAlternativa (a): Incorreta. O aumento de catecolaminas (adrenalina e noradrenalina) é uma das primeiras respostas ao estresse cirúrgico. Elas são liberadas pela medula adrenal e pelo sistema nervoso simpático para manter a estabilidade hemodinâmica e auxiliar na mobilização de substratos energéticos.\n\nAlternativa (b): Incorreta. O balanço nitrogenado negativo é um achado clássico no pós-operatório de grandes cirurgias. Devido ao estado catabólico, o organismo degrada proteína muscular para fornecer aminoácidos para a gliconeogênese e para a produção de proteínas de fase aguda. Como a excreção de nitrogênio pela urina torna-se maior que a ingestão proteica, o balanço fica negativo.\n\nAlternativa (c): Incorreta. A retenção hídrica é comum devido à liberação do Hormônio Antidiurético (ADH) pela neuro-hipófise, que aumenta a reabsorção de água nos rins. Simultaneamente, o sistema renina-angiotensina-aldosterona é ativado, levando ao aumento da aldosterona, que promove a retenção de sódio e a excreção de potássio e hidrogênio.\n\nAlternativa (d): Correta (Gabarito). Esta alternativa está incorreta porque, embora ocorra hiperglicemia no pós-operatório (devido ao aumento de cortisol, glucagon e catecolaminas), o perfil da insulina é diferente. No trauma, ocorre o que chamamos de resistência periférica à insulina e, na fase inicial (fase de choque ou fase de refluxo), a secreção de insulina pode estar inclusive diminuída pela ação das catecolaminas. Portanto, não se espera um aumento sérico eficaz de insulina que compense a glicemia elevada; o quadro é de uma diabetes transitória do trauma.\n\nAlternativa (e): Incorreta. O pneumoperitônio residual é um achado radiológico comum e esperado logo após cirurgias abdominais, sejam elas abertas ou laparoscópicas. Trata-se do ar que permanece na cavidade peritoneal após o fechamento da parede ou após a desinsuflação do CO2, sendo reabsorvido espontaneamente pelo organismo em alguns dias.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:05.955Z"
+  }
+]
